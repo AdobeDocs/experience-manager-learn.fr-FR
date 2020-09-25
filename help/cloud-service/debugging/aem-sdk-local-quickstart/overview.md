@@ -1,0 +1,46 @@
+---
+title: Débogage du SDK AEM
+description: aem SDK est l’environnement de développement Principal utilisé par les développeurs et prend en charge une multitude de méthodes de débogage des AEM et des applications déployées.
+feature: null
+topics: development
+version: cloud-service
+doc-type: tutorial
+activity: develop
+audience: developer
+kt: null
+translation-type: tm+mt
+source-git-commit: a3d3612713decefb5c7e1cf5b2d4d21afff0a2f5
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 0%
+
+---
+
+
+# Débogage du SDK AEM
+
+Le démarrage rapide local de AEM SDK est l&#39;environnement de développement Principal utilisé par les développeurs et prend en charge une multitude de méthodes de débogage des AEM et des applications déployées. Ce guide d’utilisation vous guide à travers les outils de débogage et les consoles les plus courants pour déboguer votre application sur le démarrage rapide local du SDK AEM.
+
+## Journaux
+
+Les journaux jouent le rôle de première ligne pour le débogage des applications AEM, mais dépendent d’une journalisation adéquate dans l’application AEM déployée.
+
+[Débogage du SDK AEM à l’aide de journaux](./logs.md)
+
+## Débogage à distance
+
+Le débogage à distance du code Java s’exécutant dans le démarrage rapide local du SDK AEM permet l’exécution du code en direct dans AEM à partir de votre IDE.
+
+[Débogage à distance du SDK AEM](./remote-debugging.md)
+
+## Consoles Web OSGi
+
+Le démarrage rapide local du SDK AEM dispose d’une console Web OSGi qui fournit un large éventail d’informations et d’introspections dans l’AEM d’exécution locale, utiles pour comprendre comment votre application est reconnue et fonctionne dans l’AEM.
+
+[Débogage du SDK AEM à l’aide de la console Web OSGi](./osgi-web-consoles.md)
+
+## Autres outils
+
+Divers autres outils peuvent vous aider à déboguer votre application sur le démarrage rapide local du SDK AEM.
+
+[Autres outils de débogage du SDK AEM](./other-tools.md)
