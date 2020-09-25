@@ -6,9 +6,9 @@ user-guide-description: Collection of AEM Forms resources for beginners and expe
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: c7ae9a51800bb96de24ad577863989053d53da6b
+source-git-commit: 9f8c858197e44de020ab195373f30e3d38dfd2cc
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '835'
 ht-degree: 3%
 
 ---
@@ -38,7 +38,8 @@ ht-degree: 3%
    + [Configuration d’un formulaire adaptatif pour déclencher AEM flux de travail - vidéo](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
    + [Flux de travail AEM PTO](handling-form-submissions/invoking-aem-workflow-on-form-submission-article-use.md)
    + [Personnaliser la notification d&#39;affectation de Tâche](handling-form-submissions/customize-assign-task-notification.md)
-
++ Intégrations utiles{#some-useful-integrations}
+   + [Authentification à deux facteurs](some-useful-integrations/two-factor-authentication.md)
 + Formulaires adaptatifs {#adaptive-forms}
    + [Installation de AEM Forms sous Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [Service de préremplissage dans Forms adaptatif](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
