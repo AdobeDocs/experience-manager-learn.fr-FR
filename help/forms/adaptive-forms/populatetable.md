@@ -10,7 +10,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: 4f51f7bf00827210d2631b9335768a9980f6655c
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -26,5 +26,5 @@ La ligne 1 est configurée pour augmenter en fonction des données renvoyées pa
 
 ## Déployez ceci sur votre serveur
 
-[Installer Tomcat comme indiqué ici](/help/forms/ic-print-channel-tutorial/partone.md)[Déployer le fichier SampleRest.war](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)[Installer les ressources ](assets/amortizationschedule.zip) à l’aide du gestionnaire de packagesAEM Ouvrir le formulaire[](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)de planification d’amortissement Saisissez la valeur appropriée et cliquez sur calculateAmortisation Schedule pour renseigner le formulaire
+[Installer Tomcat comme indiqué ici](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)[Déployer le fichier SampleRest.war](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)[Installer les ressources ](assets/amortizationschedule.zip) à l’aide du gestionnaire de packagesAEM Ouvrir le formulaire[](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)de planification d’amortissement Saisissez la valeur appropriée et cliquez sur calculateAmortisation Schedule pour renseigner le formulaire
 
