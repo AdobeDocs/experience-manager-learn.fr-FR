@@ -10,10 +10,10 @@ doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 3%
+source-wordcount: '224'
+ht-degree: 2%
 
 ---
 
@@ -37,18 +37,4 @@ En suivant ce didacticiel, vous aurez appris les éléments suivants :
 * Création de fragments de Document
 * Configuration de tableaux et de graphiques
 * Utilisez les dossiers de contrôle pour générer des documents en mode batch.
-
-## Tutoriel
-
-* [Configurer Tomcat](partone.md)
-* [Créer une source de données](parttwo.md)
-* [Créer un modèle de données de formulaire](partthree.md)
-* [Création d’une mise en page XDP à l’aide de Forms Designer](partfour.md)
-* [Créer un fragment de Document](partfive.md)
-* [Créer un Document de Canal d&#39;impression](partsix.md)
-* [ajouter du contenu aux zones de Cible](partseven.md)
-* [Configuration du graphique en courbes](parteight.md)
-* [ajouter le tableau au Canal d&#39;impression](partnine.md)
-* [Utilisation de Watched Folder pour générer des Documents d’impression](partten.md)
-* [Ouverture de l’interface utilisateur de l’agent lors de l’envoi du formulaire](parteleven.md)
 
