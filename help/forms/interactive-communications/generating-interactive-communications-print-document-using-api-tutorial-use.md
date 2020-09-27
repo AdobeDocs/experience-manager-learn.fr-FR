@@ -10,7 +10,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -110,7 +110,7 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **Pour tester cette fonctionnalité sur votre système local, suivez les instructions suivantes :**
 
-* Configurez Tomcat comme décrit dans cet [article.](/help/forms/ic-print-channel-tutorial/partone.md) Tomcat possède le fichier war qui génère les données d&#39;exemple.
+* Configurez Tomcat comme décrit dans cet [article.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat possède le fichier war qui génère les données d&#39;exemple.
 * Configurez le service comme utilisateur système, comme décrit dans cet [article](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
 Assurez-vous que cet utilisateur système dispose des autorisations de lecture sur le noeud suivant. Pour accorder les autorisations d&#39;accès à l&#39;administrateur [](https://localhost:4502/useradmin) utilisateur et rechercher les &quot;données&quot; de l&#39;utilisateur système et donner les autorisations de lecture sur le noeud suivant en appuyant sur l&#39;onglet permissions
    * /content/dam/formsanddocuments
