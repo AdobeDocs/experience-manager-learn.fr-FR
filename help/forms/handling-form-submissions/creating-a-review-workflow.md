@@ -1,0 +1,37 @@
+---
+title: Création d’un processus pour examiner les données envoyées
+description: Création d’un modèle de flux de travail AEM à l’aide des composants de flux de travail AEM Forms pour examiner les données envoyées.
+sub-product: formulaires
+feature: workflow
+topics: integrations
+audience: developer
+doc-type: article
+activity: setup
+version: 6.4,6.5
+kt: 4271
+thumbnail: 40242.jpg
+translation-type: tm+mt
+source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 4%
+
+---
+
+
+# Création d’un processus pour examiner les données envoyées
+
+Les workflows sont généralement utilisés pour acheminer les données envoyées pour révision et approbation. Les workflows sont créés à l’aide de l’éditeur de flux de travail dans AEM. Les Workflows peuvent être déclenchés lors de l’envoi du formulaire adaptatif.
+
+## Condition requise
+
+Assurez-vous d&#39;avoir une instance de travail d&#39;AEM Forms. Suivez le guide [d&#39;](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) installation pour installer et configurer AEM Forms.
+
+La vidéo suivante explique la création d’un processus de révision et d’approbation à l’aide des composants AEM Forms.
+>[!VIDEO](https://video.tv.adobe.com/v/40242/?quality=9&learn=on)
+
+
+Si, pour une raison quelconque, vous ne pouvez pas créer le flux de travaux, vous pouvez télécharger le flux de travaux terminé [ici](assets/review-submitted-data-workflow.zip) et importer le même flux à l’aide du gestionnaire de [packages](http://localhost:4502/crx/packmgr/index.jsp) dans votre instance AEM.
+
+
+
