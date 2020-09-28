@@ -1,0 +1,45 @@
+---
+title: Variables dans le flux de travail AEM[Partie2]
+seo-title: Variables dans le flux de travail AEM[Partie2]
+description: Utilisation de variables de type xml, json, arraylist, document dans le processus aem
+seo-description: Utilisation de variables de type xml, json, arraylist, document dans le processus aem
+feature: workflow
+topics: development
+audience: developer
+doc-type: tutorial
+activity: understand
+version: 6.5
+translation-type: tm+mt
+source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 0%
+
+---
+
+# Variables de type JSON dans AEM Workflow
+
+A compter de AEM Forms 6.5, nous pouvons désormais créer des variables de type JSON dans AEM Workflow. En règle générale, vous créez des variables de type JSON si vous envoyez une Forms adaptative basée sur le schéma JSON à un flux de travail AEM ou si vous souhaitez stocker les résultats d’une opération d’appel de modèle de données de formulaire. La vidéo suivante vous guide tout au long des étapes nécessaires pour créer et utiliser une variable de type JSON dans AEM flux de travail.
+>[!NOTE]
+
+**Si vous utilisez AEM Forms 6.5.0**
+
+Lorsque vous créez une variable de type JSON pour capturer les données envoyées dans votre modèle de processus, n’associez pas le schéma JSON à la variable. En effet, lorsque vous envoyez un formulaire adaptatif basé sur un schéma JSON, les données envoyées ne sont pas conformes au schéma JSON. Les données de plainte du schéma JSON sont incluses dans l’élément afData.afBoundData.data.
+
+**Si vous utilisez AEM Forms 6.5.1 ou version ultérieure**
+
+Vous pouvez mapper le schéma avec la variable de type JSON dans votre modèle de processus. Vous pouvez ensuite utiliser le navigateur de schéma pour mapper les éléments de schéma avec vos variables de chaîne/nombre dans votre modèle de processus.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26444?quality=12&learn=on)
+
+**La possibilité d’analyser les éléments de schéma et de mapper l’élément de schéma à la variable de flux de travail n’est disponible qu’avec AEM Forms 6.5.1 et les versions ultérieures.**
+
+>[!VIDEO](https://video.tv.adobe.com/v/28097?quality=12&learn=on)
+
+Pour que les ressources fonctionnent sur votre système, procédez comme suit :
+
+* [Téléchargement et importation des ressources dans AEM à l’aide du gestionnaire de packages](assets/jsonandstringvariable.zip)
+* [Explorez le modèle](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) de processus pour comprendre les variables utilisées dans le processus.
+* [Configuration du service de messagerie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
+* [Ouvrir le formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)
+* Renseignez les détails et envoyez le formulaire.
