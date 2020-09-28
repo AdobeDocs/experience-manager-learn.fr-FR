@@ -10,7 +10,7 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: c7ae9a51800bb96de24ad577863989053d53da6b
+source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 1%
@@ -133,7 +133,7 @@ Puisque nous utilisons un objet Document spécifique à AEM Forms, vous devez in
 
 #### Création et déploiement
 
-[Créez le lot comme décrit ici](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[Assurez-vous que le lot est déployé et en principal état](http://localhost:450/system/console/bundles)
+[Créez le lot comme décrit ici](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[Assurez-vous que le lot est déployé et en principal état](http://localhost:4502/system/console/bundles)
 
 Créer un modèle de processus. Faites glisser et déposez l’étape du processus dans le modèle de processus. Associez l’étape de processus à &quot;Enregistrer les pièces jointes de formulaire adaptatif dans le système de fichiers&quot;.
 
