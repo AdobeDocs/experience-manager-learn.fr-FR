@@ -1,0 +1,1624 @@
+---
+title: Comprendre les raisons de la mise à niveau
+description: Ventilation de haut niveau des principales fonctionnalités pour les clients qui envisagent de mettre à niveau vers la dernière version de Adobe Experience Manager.
+version: 6.5
+sub-product: ressources, cloud-manager, commerce, content-services, dynamic-media, forms, foundation, screens, sites
+topics: best-practices, upgrade
+audience: all
+activity: understand
+doc-type: article
+translation-type: tm+mt
+source-git-commit: 1519856731758ece2860615c06fc0d64edb104a5
+workflow-type: tm+mt
+source-wordcount: '3540'
+ht-degree: 4%
+
+---
+
+
+# Comprendre les raisons de la mise à niveau
+
+Ventilation de haut niveau des principales fonctionnalités pour les clients qui envisagent de mettre à niveau vers la dernière version de Adobe Experience Manager.
+
+## Principales fonctionnalités pour la mise à niveau vers AEM 6.5
+
++ [Notes de mise à jour de Adobe Experience Manager 6.5](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes.html )
+
+### Améliorations de la base
+
+Adobe Experience Manager 6.5 continue d&#39;améliorer la stabilité, les performances et la supportabilité du système en :
+
++ **Prise en charge de Java 11** (tout en conservant la prise en charge de Java 8).
+
+### Création et gestion de sites Web
+
+aem sites présente un certain nombre de fonctionnalités conçues pour accélérer la création et la création de sites Web :
+
++ **La prise en charge de l’éditeur** d’applications d’une seule page permet la création complète de l’application d’une seule page en AEM, ce qui permet une expérience de création riche et conviviale pour Marketer.
++_ SDK **JavaScript**, un kit de Début de projet SPA et des outils de création pris en charge, permettent aux développeurs frontaux de développer des applications de page unique compatibles avec l’éditeur SPA indépendamment de l’AEM.
++ **Les composants** principaux ajoutent une multitude de nouveaux composants, une bibliothèque **de** composants ainsi qu’une variété d’améliorations aux composants principaux existants.
++ D’autres **traductions** ont été améliorées afin de rationaliser la traduction de l’AEM Sites.
+
+### Expériences fluides
+
+aem continue d&#39;adopter les Expériences Fluid avec des outils nouveaux et améliorés qui facilitent l&#39;utilisation de contenu en dehors de l&#39;AEM.
+
++ **Les fragments** de contenu prennent en charge la comparaison/différenciation des versions et les annotations.
++ **aem Assets HTTP API** prend en charge l’exposition de fragments **de** contenu directement dans la gestion des actifs numériques en tant que **JSON**.
+   **Les fragments** d’expérience prennent en charge la recherche **** complète et l’invalidation **du cache du répartiteur** d’AEM pour le référencement des **pages**.
+
+### Gestion des ressources
+
+aem assets continue de tirer parti de ses nombreuses capacités de gestion des actifs pour améliorer l&#39;utilisation, la gestion et la compréhension de la gestion des actifs numériques. aem 6.5 continue d&#39;améliorer l&#39;intégration entre Adobe Creative Cloud et les workflows créatifs.
+
++ **adobe Asset Link** connecte les créatifs directement à AEM Assets à partir des outils Adobe Creative Cloud.
++ **L’intégration Adobe Stock** permet un accès direct aux images Adobe Stock directement à partir de l’expérience AEM Assets, ce qui crée une expérience de découverte de contenu transparente.
++ **aem Desktop App** sort la version 2.0 et se réinvente tout en améliorant les performances et la stabilité.
++ **Les ressources** connectées prennent en charge les instances AEM Sites distinctes pour accéder et utiliser facilement les ressources d’une autre instance AEM Assets.
++ Mise à jour de la prise en charge de la vidéo dans **Contenu multimédia** dynamique, y compris les miniatures vidéo **** 360 et **personnalisées**.
+
+### Intelligence du contenu
+
+aem continue de construire son intégration avec des technologies intelligentes, en exploitant l&#39;apprentissage automatique et l&#39;intelligence artificielle pour améliorer toutes les expériences.
+
++ **adobe Asset Link** ajoute la recherche **de similarité** visuelle, ce qui permet de découvrir et d’utiliser facilement des images similaires dans les outils **** Adobe Creative Cloud.
+
+### Intégrations
+
+aem est plus à même de s&#39;intégrer à d&#39;autres services d&#39;Adobe :
+
++ **Les fragments** d’expérience approfondissent leur intégration à **Adobe Target** en prenant en charge **Exporter en tant que JSON** vers Adobe Target et en permettant de **supprimer les offres** basées sur un fragment d’expérience de Adobe Target.****
+
+### AMS Cloud Manager
+
+[Cloud Manager](https://adobe.ly/2HODmsv), réservé aux clients Adobe Managed Services (AMS), offre les fonctionnalités suivantes :
+
++ Cloud Manager prend en charge l’extension de la prise en charge AEM déploiement d’AEM Sites à **AEM Assets**, y compris les tests de performances **automatisés du traitement** des ressources.
++ **La mise à l’échelle** automatique du niveau Publication AEM à des seuils prédéfinis garantit une expérience optimale pour l’utilisateur final.
++ **Les pipelines** de non-production permettent aux équipes de développement de tirer parti de Cloud Manager pour contrôler en permanence la qualité du code et le déployer vers des environnements plus faibles (développement et contrôle qualité).
++ **Les API** de pipeline CI/CD permettent aux clients de s&#39;engager par programmation avec Cloud Manager, ce qui renforce les possibilités d&#39;intégration avec l&#39;infrastructure de développement sur site.
+
+## Fonctions de base
+
+Vous trouverez ci-dessous une matrice des principales caractéristiques des fondations offertes par AEM. Certaines de ces fonctionnalités ont été introduites dans les versions précédentes, avec des améliorations incrémentielles ajoutées dans chaque version.
+
++ [Notes de mise à jour de AEM Foundation](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html)
+
+***Améliorations<sup>+</sup>significatives de cette fonctionnalité.***
+
+***<sup>SP</sup>indique que la fonction est disponible via un Service Pack ou Feature Pack.***
+
+<table>
+    <thead>
+        <tr>
+            <td>Fonction de base</td>
+            <td>5.6.x</td>
+            <td>6.0</td>
+            <td>6.1</td>
+            <td>6.2</td>
+            <td>6.3</td>
+            <td>6.4</td>
+            <td>6.5</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <strong>Prise en charge de Java 11 :</strong> aem prend en charge Java 11 (ainsi que Java 8).
+            </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="https://jackrabbit.apache.org/oak/docs/index.html" target="_blank">Référentiel</a>de contenu en chêne :</strong> Offre des performances et une évolutivité bien supérieures à celles du prédécesseur Jackrabbit 2.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/indexing-via-the-oak-run-jar.html">Prise en charge</a>de l’index oak-run.jar :</strong> Amélioration de la réindexation, de la collecte des statistiques et de la vérification de la cohérence des index Oak.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/queries-and-indexing.html" target="_blank">Index</a>de recherche personnalisés : </strong>
+                Possibilité d’ajouter des définitions d’index personnalisées pour optimiser les performances des requêtes et la pertinence des recherches.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">Nettoyage</a>de révision en ligne :</strong>
+                Effectuez la maintenance du référentiel sans temps d’arrêt du serveur.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/storage-elements-in-aem-6.html" target="_blank">Enregistrement</a>de référentiel TarMK ou MongoMK :</strong>
+                <br> Options permettant d’utiliser un enregistrement simple et performant basé sur des fichiers de TarMK (version de prochaine génération de TarPM) <br> ou d’effectuer une mise à l’échelle horizontale avec un référentiel soutenu par MongoDB avec MongoMK.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-with-mongodb.html" target="_blank">Performances et stabilité</a>de MongoMK :</strong>
+            Des améliorations continues ont été apportées à MongoMK depuis son introduction avec AEM 6.0.</td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/data-store-config.html#AmazonS3DataStore">amazon S3 DataStore</a>:</strong>
+            Tirez parti de la solution d’enregistrement de cloud extensible pour stocker des ressources binaires.</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong>Parité des fonctionnalités de l’interface utilisateur tactile :</strong>
+                Améliorations continues de l’interface utilisateur de création pour une vitesse accrue avec une productivité accrue et la parité des fonctionnalités avec l’interface utilisateur classique.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong>Omnisearch :</strong>
+                Recherchez rapidement et parcourez AEM.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html" target="_blank">Tableau de bord</a>des opérations :</strong>
+ Effectuez la maintenance, surveillez l'intégrité du serveur et analysez les performances depuis AEM.</td>
+            <td></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/upgrade.html" target="_blank">Améliorations</a>de la mise à niveau :</strong>
+            Les améliorations apportées à la mise à niveau permettent des mises à niveau plus simples et plus rapides des AEM.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/htl/using/overview.html" target="_blank">Langue</a>du modèle HTML :</strong>
+            Moteur de modélisation moderne qui sépare la présentation de la logique. Réduit considérablement le temps de développement des composants. Ajout de fonctionnalités incrémentielles à chaque version.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://sling.apache.org/documentation/bundles/models.html" target="_blank">Modèles</a>Sling :</strong>
+            Structure flexible permettant de modéliser les ressources JCR en objets métier et en logique métier. Ajout de fonctionnalités incrémentielles à chaque version.
+            </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://adobe.ly/2HODmsv" target="_blank">Cloud Manager</a>: </strong>
+                Exclusif pour les clients Adobe Managed Services (AMS), Cloud Manager accélère le développement et le déploiement via un pipeline de CI/CD ultramoderne.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+    </tbody>
+</table>
+
+## Fonctionnalités de sécurité
+
+Vous trouverez ci-dessous une matrice des principaux dispositifs de sécurité offerts par AEM. Certaines de ces fonctionnalités ont été introduites dans les versions précédentes, avec des améliorations incrémentielles ajoutées dans chaque version.
+
++ [Notes de mise à jour sur la sécurité](https://helpx.adobe.com/experience-manager/6-5/release-notes/wcm-platform.html#Security)
+
+***► indique que des améliorations importantes ont été apportées à la fonctionnalité de cette version.***
+
+***+<sup></sup>indique que la fonction est disponible via un Service Pack ou Feature Pack.***
+
+<table>
+    <thead>
+        <tr>
+            <td>Fonction de sécurité</td>
+            <td>5.6.x</td>
+            <td>6.0</td>
+            <td>6.1</td>
+            <td>6.2</td>
+            <td>6.3</td>
+            <td>6.4</td>
+            <td>6.5</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/security-service-users.html" target="_blank">Utilisateurs</a></strong><br> du service Compartimentalise les autorisations pour éviter l’utilisation inutile des privilèges d’administrateur.</td>
+        <td></td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+    </tr>
+    <tr>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">Key Store Management</a></strong><br> Trust Store Global, les certificats et les clés sont tous gérés dans le référentiel.</td>
+        <td></td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+    </tr>
+    <tr>
+        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/csrf-protection.html" target="_blank"><strong>Protection CSRF</strong><strong>Protection</strong></a><br> multisite par usurpation de requête non autorisée.</td>
+        <td></td>
+        <td></td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+    </tr>
+    <tr>
+        <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong>CORS</strong><strong>prend en charge</strong></a><br> le partage de ressources entre Origines pour une plus grande flexibilité d'application.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+    </tr>
+    <tr>
+        <td><strong><a href="https://docs.adobe.com/docs/en/aem/6-5/administer/security/saml-2-0-authenticationhandler.html" target="_blank">Amélioration de la prise en charge</a><br>de l'authentification SAML </strong>Amélioration de la redirection SAML, optimisation des informations de groupe et résolution des problèmes de chiffrement des clés.
+            <br>
+        </td>
+        <td></td>
+        <td></td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+    </tr>
+    <tr>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html" target="_blank">LDAP en tant que configuration</a><br>OSGi </strong>Simplifie la gestion et les mises à jour de l’authentification LDAP.</td>
+        <td></td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+    </tr>
+    <tr>
+        <td><strong>La prise en charge du chiffrement OSGi pour les mots de passe<br>en texte brut </strong>Les mots de passe et les autres valeurs sensibles peuvent être enregistrés sous forme chiffrée et automatiquement déchiffrés.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+    </tr>
+    <tr>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/user-group-ac-admin.html" target="_blank">Améliorations apportées</a><br>au CUG La mise en oeuvre du groupe d’ </strong>utilisateurs fermés a été réécrite afin de résoudre les problèmes de performances et d’évolutivité.</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>✔</td>
+        <td>✔<sup>+</sup></td>
+        <td>✔</td>
+    </tr>
+    <tr>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/platform-repository/using/ssl-wizard-technical-video-use.html" target="_blank">Interface utilisateur de l’Assistant</a></strong>SSL <br> pour simplifier la configuration et la gestion de SSL.</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+    </tr>
+    <tr>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/encapsulated-token.html" target="_blank">Prise en charge</a></strong>des jetons encapsulés <br> Plus nécessaire pour les sessions "collantes" afin de prendre en charge l’authentification horizontale entre les instances de publication.</td>
+        <td> </td>
+        <td> </td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
+    </tr>
+    <tr>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Prise en charge</a><br>de l’authentification IMS par Adobe </strong>exclusive à Adobe Managed Services (AMS), gèrent de manière centralisée l’accès aux instances d’auteur AEM via Adobe IMS (Identity Management System).</td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td>✔</td>
+        <td>✔</td>
+    </tr>
+</tbody>
+</table>
+
+## Fonctionnalités des sites
+
+Vous trouverez ci-dessous une matrice des principales fonctionnalités des sites offertes par AEM. Certaines de ces fonctionnalités ont été introduites dans les versions précédentes, avec des améliorations incrémentielles ajoutées dans chaque version.
+
++ [Notes de mise à jour d’AEM Sites](https://helpx.adobe.com/experience-manager/6-5/release-notes/sites.html)
+
+***Améliorations<sup>+</sup>significatives de cette fonctionnalité.***
+
+***<sup>SP</sup>indique que la fonction est disponible via un Service Pack ou Feature Pack.***
+
+<table>
+    <thead>
+        <tr>
+            <td><strong>Fonctionnalité Sites</strong></td>
+            <td>5.6.x</td>
+            <td>6.0</td>
+            <td>6.1</td>
+            <td>6.2</td>
+            <td>6.3</td>
+            <td>6.4</td>
+            <td>6.5</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/page-editor-feature-video-use.html" target="_blank">Création</a>de pages optimisée pour les écrans tactiles :</strong>
+            Permet aux éditeurs d'exploiter les tablettes et les ordinateurs avec écrans tactiles.</td>
+            <td></td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/authoring/using/responsive-layout.html" target="_blank">Création</a>de site réactive :</strong>
+                Le mode de mise en page permet aux éditeurs de redimensionner les composants en fonction de la largeur des périphériques pour les sites réactifs.</td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/template-editor-feature-video-use.html" target="_blank">Modèles</a>modifiables :</strong>
+            Permet aux auteurs spécialisés de créer et de modifier des modèles de page.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/core-components/user-guide.html" target="_blank">Composants</a>principaux :</strong>
+            Accélérer le développement du site. Disponible sur GitHub pour un calendrier et une flexibilité de publication fréquents.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/spa-overview.html" target="_blank">Editeur</a>d’application d’une seule page :</strong>
+            Créez des expériences Web pouvant être utilisées et conviviales à l’aide de structures d’application monopage (SPA) basées sur React ou Angular.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/release-notes/style-system-fp.html" target="_blank">Système</a>de style :</strong>
+            Augmentez la réutilisation des composants AEM en définissant leur apparence visuelle à l’aide du système de style contextuel.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔<sup>SP</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">Gestionnaire multisite (MSM)</a>:</strong>
+            Gérez plusieurs sites Web qui partagent du contenu commun (par exemple, plusieurs marques multilingues).</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Traduction</a>du contenu :</strong>
+            La structure Plug-and-Play s'intègre aux services de traduction tiers de pointe du secteur.</td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub.html" target="_blank">ContextHub</a>:</strong>
+            Cadre contextuel client de nouvelle génération pour la personnalisation du contenu.</td>
+            <td></td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/launches.html" target="_blank">Lancements</a>:</strong>
+            Développez du contenu pour une prochaine version sans perturber la création quotidienne.</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html" target="_blank">Fragments</a>de contenu :</strong>
+            Créez et traitez du contenu éditorial dissocié de la présentation pour une réutilisation facile.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/experience-fragments-feature-video-use.html" target="_blank">Fragments</a>d’expérience :</strong>
+            Créez des expériences et des variations réutilisables optimisées pour les canaux de bureau, mobiles et sociaux.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/release-notes/content-services-fragments-featurepack.html" target="_blank">Content Services</a>:</strong>
+            Exportez du contenu de l’AEM au format JSON pour l’utiliser sur divers périphériques et applications.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔<sup>SP</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong>Intégration Adobe Analytics et statistiques de contenu :</strong>
+                Intégration aisée de Adobe Analytics et de la gestion dynamique des balises. Affichez les informations de performances dans l’environnement d’auteur.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/authoring/using/content-targeting-touch.html" target="_blank">Intégration</a>Adobe Target :</strong>
+            Assistant pas à pas pour créer des expériences ciblées, créer des bibliothèques d’offres réutilisables.</td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaign.html" target="_blank">Intégration</a>Adobe Campaign :</strong>
+            Intégration aisée avec la solution de campagne par courrier électronique de nouvelle génération.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/using/aem_launch_adobeio_integration.html" target="_blank">Intégration</a>du lancement d'Adobe :</strong>
+            Intégration au service cloud de gestion des balises de prochaine génération de l’Adobe.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-screens-introduction.html" target="_blank">Ecrans</a>:</strong>
+            Gérez les expériences pour la signature numérique et les kiosques.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ecommerce.html" target="_blank">eCommerce</a>:</strong>
+            Proposez des expériences d’achat personnalisées et de marque sur des points de contact Web, mobiles et sociaux.
+            </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/overview.html" target="_blank">Communautés</a>:</strong>
+            Les forums, les commentaires filetés, les calendriers de événement et de nombreuses autres fonctionnalités permettent un engagement profond avec les visiteurs du site.</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+    </tbody>
+</table>
+
+## Fonctionnalités des ressources
+
+Vous trouverez ci-dessous une matrice des principales fonctionnalités d&#39;Actifs offertes par AEM. Certaines de ces fonctionnalités ont été introduites dans les versions précédentes, avec des améliorations incrémentielles ajoutées dans chaque version.
+
++ [Notes de mise à jour d’AEM Assets](https://helpx.adobe.com/experience-manager/6-5/release-notes/assets.html)
+
+***► indique que des améliorations importantes ont été apportées à la fonctionnalité de cette version.***
+
+***+<sup></sup>indique que la fonction est disponible via un Service Pack ou Feature Pack.***
+
+<table>
+    <thead>
+        <tr>
+            <td>Fonction Ressources</td>
+            <td>5.6.x</td>
+            <td>6.0</td>
+            <td>6.1</td>
+            <td>6.2</td>
+            <td>6.3</td>
+            <td>6.4</td>
+            <td>6.5</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/managing-assets-touch-ui.html" target="_blank">Interface utilisateur</a>optimisée pour les écrans tactiles :</strong>
+            Gérez les fichiers sur un ordinateur de bureau ou sur des périphériques tactiles.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/metadata.html" target="_blank">Gestion</a>avancée des métadonnées :</strong>
+            Modèles de métadonnées, Editeur de Schéma de métadonnées et Modification des métadonnées en bloc.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">Gestion des tâches</a> et des <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects-with-workflows.html" target="_blank">processus</a> :</strong>
+            Workflows et tâches prédéfinis pour la révision et l’approbation des ressources numériques exploitant des projets AEM.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong>Évolutivité et performances :</strong>
+            Amélioration de la prise en charge de l’assimilation, du transfert et de l’enregistrement à l’échelle.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html" target="_blank">API</a>HTTP Assets :</strong>
+            Interagir par programmation avec des ressources via HTTP et JSON.</td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/link-sharing.html" target="_blank">Lier le partage</a>:</strong>
+            Partage ad hoc simple des ressources numériques sans avoir à se connecter.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/brand-portal/using/brand-portal.html" target="_blank">Portail</a>de marques :</strong>
+            Solution SAAS du service Cloud pour un partage et une distribution transparents des ressources numériques.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/use-assets-across-connected-assets-instances.html" target="_blank">Ressources</a>connectées :</strong>
+            Les instances AEM Sites peuvent accéder et utiliser en toute transparence des ressources provenant d’une autre instance AEM Assets.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/touch-ui-asset-insights.html" target="_blank">Informations sur les</a>ressources :</strong>
+            Tirez parti de Adobe Analytics pour capturer l’interaction des clients des ressources numériques et de la vue en AEM.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/multilingual-assets.html" target="_blank">Ressources</a>multilingues :</strong>
+            Prise en charge automatique de la traduction des métadonnées de fichier avec les racines de langue.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/enhanced-smart-tags.html" target="_blank">Balises actives et modération</a>:</strong>
+            Utilisez Adobe Sensei pour baliser automatiquement les images à l’aide de métadonnées utiles.</td>
+            <td> </td>
+            <td></td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/assets/using/smart-translation-search-feature-video-use.html" target="_blank">Recherche</a>de traduction intelligente :</strong>
+            Traduire automatiquement les termes de recherche lors de la recherche d’AEM Assets.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/indesign.html" target="_blank">Intégration</a>Adobe InDesign Server :</strong>
+            Générez des catalogues de produits. Créez des brochures, des prospectus et des publicités imprimées à partir de modèles d’InDesign.</td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html" target="_blank">aem Desktop App</a>:</strong>
+            Synchronisez les ressources sur le bureau local pour les modifier avec les produits Creative Suite.
+            </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Bibliothèque</a>d'images d'Adobe :</strong>
+                <br> Bibliothèques PDF Photoshop et Acrobat utilisées pour la manipulation de fichiers de haute qualité.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html" target="_blank">Lien</a>de ressource Adobe :</strong>
+            Accédez directement à AEM Assets à partir des applications Adobe Create Cloud.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/aem-assets-adobe-stock.html" target="_blank">Intégration</a>Adobe Stock :</strong>
+            Accédez aux images Adobe Stock en toute transparence et utilisez-les directement depuis AEM.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔<sup>SP</sup></td>
+            <td>✔</td>
+        </tr>
+    </tbody>
+</table>
+
+### aem assets Dynamic Media
+
+***Améliorations<sup>+</sup>significatives de cette fonctionnalité.***
+
+***<sup>SP</sup>indique que la fonction est disponible via un Service Pack ou Feature Pack.***
+
+
+<table>
+    <thead>
+        <tr>
+            <td>Fonction Contenu multimédia dynamique</td>
+            <td>5.6.x</td>
+            <td>6.0</td>
+            <td>6.1</td>
+            <td>6.2</td>
+            <td>6,3 +FP</td>
+            <td>6.4</td>
+            <td>6.5</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets.html" target="_blank">Imagerie</a>:</strong>
+            Diffusez dynamiquement des images dans différents formats et tailles, y compris Smart Crop.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/video-profiles.html" target="_blank">Vidéo</a>:</strong>
+            Codage vidéo avancé et diffusion en flux continu de la vidéo adaptative</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/interactive-images.html" target="_blank">Médias</a>interactifs :</strong>
+            Créez des bannières interactives, des vidéos avec du contenu cliquable pour présenter des offres clés.
+            </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong>Visionneuses (<a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/image-sets.html" target="_blank">image</a>, <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/spin-sets.html" target="_blank">rotation</a>, supports <a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mixed-media-sets.html" target="_blank"></a>variés) :</strong>
+            Permet aux utilisateurs d’effectuer un zoom, un panoramique, une rotation et de simuler une expérience d’affichage à 360 degrés.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://docs.adobe.com/docs/en/aem/6-5/administer/content/dynamic-media/viewer-presets.html" target="_blank">Visionneuses</a>:</strong>
+            Lecteurs et paramètres prédéfinis de médias enrichis personnalisés avec prise en charge de différents écrans/périphériques.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/delivering-dynamic-media-assets.html" target="_blank">Diffusion</a>:</strong>
+            Options flexibles pour la liaison ou l’incorporation de contenu et de diffusion Contenu multimédia dynamique sur le protocole HTTP/2.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong>Mise à niveau de Scene7 vers Contenu multimédia dynamique :</strong>
+            Possibilité de migrer des fichiers originaux et de continuer à utiliser les URL S7 existantes.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+    </tbody>
+</table>
+
+## Fonctionnalités de Forms
+
+Vous trouverez ci-dessous une matrice des principales fonctions d&#39;Ajoute de l&#39;AEM Forms offertes par AEM. Certaines de ces fonctionnalités ont été introduites dans les versions précédentes, avec des améliorations incrémentielles ajoutées dans chaque version.
+
++ [Notes de mise à jour d’AEM Forms](https://helpx.adobe.com/experience-manager/6-5/release-notes/forms.html)
+
+***Améliorations<sup>+</sup>significatives de cette fonctionnalité.***
+
+***<sup>SP</sup>indique que la fonction est disponible via un Service Pack ou Feature Pack.***
+
+<table>
+    <thead>
+        <tr>
+            <td>Fonction Forms</td>
+            <td>5.6.x</td>
+            <td>6.0</td>
+            <td>6.1</td>
+            <td>6.2</td>
+            <td>6.3</td>
+            <td>6.4</td>
+            <td>6.5</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/introduction-forms-authoring.html" target="_blank">Éditeur</a>de Forms adaptatif :</strong>
+            Créez des formulaires adaptatifs, réactifs et attrayants en fonction des paramètres du périphérique et du navigateur.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html" target="_blank">Document d'enregistrement</a>:</strong>
+            Créez un document pour assurer l’enregistrement à long terme d’une expérience de capture de données ou d’une version prête à l’impression.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html" target="_blank">Éditeur</a>de thème :</strong>
+            Créez des thèmes réutilisables pour mettre en forme les composants et les panneaux d’un formulaire.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/template-editor.html" target="_blank">Éditeur</a>de modèle :</strong>
+            Normalisation et implémentation des meilleures pratiques pour les formulaires adaptatifs.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedintegrationwithAdobeSign" target="_blank">Intégration</a>Adobe Sign :</strong>
+            Permet le déploiement de scénarios de signature Adobe Sign intégrés à partir de formulaires.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/cm-overview.html" target="_blank">Correspondence Management</a>:</strong>
+            Avec AEM Forms, vous pouvez créer, gérer et fournir des correspondances client personnalisées et interactives.
+            </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#AEMFormsdataintegration" target="_blank">Intégration</a>de données tierces :</strong>
+            Grâce à l’intégration des données, les données sont extraites de sources de données disparates en fonction des entrées des utilisateurs dans un formulaire. Lors de l’envoi du formulaire, les données saisies sont enregistrées dans les sources de données.
+            </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#FormscentricAEMWorkflowsforAEMFormsonOSGi" target="_blank">Processus (sur OSGi) pour le traitement</a>Forms :</strong>
+            Déploiement simplifié des processus d’approbation des formulaires.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/user-guide.html?topic=/experience-manager/6-5/forms/morehelp/integrations.ug.js" target="_blank">Intégration au Marketing Cloud</a>:</strong>
+            Intégration avec Adobe Analytics et Adobe Target pour améliorer et mesurer les expériences client.</td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-managing-forms.html" target="_blank">Form Manager</a>:</strong>
+            Emplacement unique pour gérer tous les formulaires, documents et correspondances, tels que l’activation des analyses, la traduction, les tests A/B, les révisions et la publication.
+            </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/aem-forms-app.html" target="_blank">Application</a>AEM Forms :</strong>
+            Permet le traitement de formulaires en ligne/hors ligne dans une application sous iOS, Android ou Windows.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/adaptive-document.html" target="_blank">Communications</a>interactives :</strong>
+            Créez des communications enrichies, telles que des relevés ciblés, avec des éléments interactifs tels que des graphiques (anciennement appelés Documents adaptatifs).</td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/pdf/aem-forms/6-5/WorkbenchHelp.pdf" target="_blank">Workflow (J2EE) pour le traitement</a>Forms :</strong>
+            Créez des formulaires complexes/workflows centrés sur le document à l'aide d'un IDE intuitif.</td>
+            <td></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedDocumentSecurity" target="_blank">Sécurité</a>Document AEM Forms :</strong>
+            Accès sécurisé et autorisation des documents PDF et Office.
+            </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#Simplifiedauthoringexperience" target="_blank">Cadres</a>de test :</strong>
+            Utilisez la structure Calvin et le module externe Chrome pour prendre en charge et déboguer les formulaires adaptatifs.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+    </tbody>
+</table>
+
+## Fonctionnalités des communautés
+
+Vous trouverez ci-dessous une matrice des principales fonctions d&#39;Ajoute de l&#39;AEM Communities offertes par AEM. Certaines de ces fonctionnalités ont été introduites dans les versions précédentes, avec des améliorations incrémentielles ajoutées dans chaque version.
+
++ [aem communities - Récapitulatif des nouvelles fonctionnalités](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html#main-pars_text)
+
+***Améliorations<sup>+</sup>significatives de cette fonctionnalité.***
+
+***<sup>SP</sup>indique que la fonction est disponible via un Service Pack ou Feature Pack.***
+
+<table>
+    <thead>
+        <tr>
+            <td> </td>
+            <td>Communities Fonctionnalité</td>
+            <td>6.0</td>
+            <td>6.1</td>
+            <td>6.2</td>
+            <td>6.3</td>
+            <td>6.4</td>
+            <td>6.5</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="7">Fonctions de communautés</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/forum.html" target="_blank">Forums</a>:</strong> (Cadre des composants sociaux) Créez de nouvelles rubriques ou vue, suivez, recherchez et déplacez des rubriques existantes.</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>
+                <p><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/working-with-qna.html" target="_blank">QnA</a>:</strong>
+                Posez des questions, répondez à vos vues et répondez à vos questions.</p>
+            </td>
+            <td></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/blog-feature.html" target="_blank">Blogs</a>:</strong>
+                Créez des articles de blog et des commentaires du côté de la publication.
+            </td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/ideation-feature.html" target="_blank">Idée</a>:</strong>
+                Créer et partager des idées avec la communauté, ou vue, suivre et commenter les idées existantes.
+            </td>
+            <td> </td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/calendar.html" target="_blank">Calendrier</a>:</strong>
+                (Cadre des composantes sociales) Fournir des renseignements sur les événements communautaires aux visiteurs du site.
+            </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td>
+                <strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/file-library.html" target="_blank">Bibliothèque</a>de fichiers :</strong>
+                Téléchargez, gérez et téléchargez des fichiers sur le site de la communauté.</td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/users.html#AboutCommunityGroups" target="_blank">Groupes</a>d’utilisateurs :
+            </strong>Un ensemble d’utilisateurs peut appartenir à des groupes de membres et se voir attribuer collectivement des rôles.</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong> </strong></td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">Affectation</a>:</strong>
+            Créez et affectez des ressources d’apprentissage aux membres de la communauté.</td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td rowspan="5">Activation</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/catalog.html" target="_blank">Gestion des</a> catalogues et des <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">ressources</a>:</strong>
+            Accédez aux ressources d'activation à partir du catalogue.</td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resources.html#CreateaLearningPath" target="_blank">Gestion des</a>chemins d'apprentissage :</strong>
+            Gérez des cours ou des groupes de ressources d'activation.</td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/reports.html#main-pars_text_1739724213" target="_blank">Rapports</a>d'activation :</strong>
+            Rapports sur les ressources d’activation et les chemins d’apprentissage.</td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resources.html#main-pars_text_899882038" target="_blank">Engagement sur l'activation</a>:</strong>
+            ajoutez des commentaires sur les ressources d’activation.</td>
+            <td> </td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/analytics.html" target="_blank">Activation Analytics</a>:</strong>
+            Analyses vidéo, Rapports de progression et Rapports d’affectation</td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td rowspan="8">Commons</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/comments.html" target="_blank">Commentaires</a> et pièces jointes :</strong>
+            (Cadre des composantes sociales) En tant que membre de la communauté, il partage ses opinions et ses connaissances sur le contenu du site des communautés.</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong>Conversion de fragments de contenu :</strong>
+            Convertir les contributions UGC en fragments de contenu.</td>
+            <td> </td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/reviews.html" target="_blank">Critiques</a>:</strong>
+                (Cadre des composantes sociales) En tant que membre de la communauté, il examine un élément de contenu en combinant des commentaires et des fonctions d’évaluation.</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/rating.html" target="_blank">Notations</a>: /strong&gt; (Cadre des composantes sociales) En tant que membre de la communauté, il est possible d’évaluer un élément de contenu.</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/voting.html" target="_blank">Votes</a>:</strong>
+                (Cadre des composants sociaux) En tant que membre de la communauté, il vote ou rejette un élément de contenu.</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/tag-ugc.html" target="_blank">Balises</a>:</strong>
+            Joignez des balises (mots-clés ou étiquettes) au contenu pour localiser rapidement le contenu.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/search.html" target="_blank">Rechercher</a>:</strong>
+            Recherches prédictives et suggestives.</td>
+            <td> </td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/translate-ugc.html" target="_blank">Traduction</a>:</strong>
+            Traduction automatique du contenu généré par l’utilisateur.</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td rowspan="10">Administration</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/create-site.html" target="_blank">Gestion</a>du site :</strong>
+            Création de sites avec des fonctions de communautés.</td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/sites.html" target="_blank">Modèles</a>:</strong>
+                <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/sites.html" target="_blank">Modèles de site</a> et de <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/tools-groups.html" target="_blank">groupe</a> pour la création par assistant de sites communautaires entièrement fonctionnels.</td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong>Modèles modifiables :</strong>
+            Permet aux administrateurs de la communauté de créer des expériences enrichissantes à l’aide de modèles AEM modifiables.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/creating-groups.html" target="_blank">Groupes ou sous-communautés</a>:</strong>
+            Créez dynamiquement des sous-communautés dans les sites des communautés.
+            </td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/in-context.html" target="_blank">Modération</a>:</strong>
+            Modération du contenu généré par l’utilisateur.
+            </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/moderation.html" target="_blank">Modération</a>en masse :</strong>
+            Console de modération pour la gestion en bloc du contenu généré par l’utilisateur.</td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/moderate-ugc.html#CommonModerationConcepts" target="_blank">Filtres</a>de détection des messages indésirables et de rentabilité :</strong>
+            Détection automatique des spams.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/members.html" target="_blank">Gestion</a>des membres :</strong>
+            Gérez les profils utilisateur et les groupes à partir de la zone de gestion des membres.</td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/overview.html#main-pars_text_866731966" target="_blank">Conception</a>réactive :</strong>
+            Les sites AEM Communities sont réactifs.
+            </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/analytics.html" target="_blank">Analytics</a>:</strong>
+            Intégration avec Adobe Analytics pour obtenir des informations clés sur l’utilisation des sites des communautés.</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Membres</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/advanced.html" target="_blank">Scores et badge</a>:</strong>
+            (Évaluation avancée optimisée par Adobe Sensei) Identifiez les membres de la communauté comme des experts et récompensez-les.</td>
+            <td> </td>
+            <td> </td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/activities.html" target="_blank">activités</a> et <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/notifications.html" target="_blank">notifications</a>:</strong>
+            Vue des activités récentes, et être informé des événements d'intérêt.</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/configure-messaging.html" target="_blank">Messages</a>:</strong>
+            Messagerie directe destinée aux utilisateurs et aux groupes.</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔<sup>+</sup></td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/social-login.html" target="_blank">Connexions</a>sur les réseaux sociaux :</strong>
+            Connectez-vous avec leur compte Facebook ou Twitter.</td>
+            <td> </td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td rowspan="5">Plate-forme</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/working-with-srp.html" target="_blank">MSRP (Enregistrement Mongo)</a>:</strong>
+            Le contenu généré par l’utilisateur est conservé directement dans une instance MongoDB locale.</td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/working-with-srp.html" target="_blank">DSRP (Enregistrement de base de données)</a>:</strong>
+            Le contenu généré par l’utilisateur est conservé directement dans une instance de base de données MySQL locale.</td>
+            <td> </td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/working-with-srp.html" target="_blank">SRP (Enregistrement Cloud)</a>:</strong>
+                Le contenu généré par l’utilisateur est conservé à distance dans un service cloud hébergé et géré par Adobe.</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/working-with-srp.html" target="_blank"><strong>JSRP</a>:</strong>
+                Le contenu de la communauté est stocké dans le JCR et l’UGC est accessible depuis l’instance d’auteur (ou de publication) à laquelle il a été publié.</td>
+            <td> </td>
+            <td> </td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+        <tr>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/sync.html" target="_blank">Synchronisation</a>utilisateur et groupe :</strong>
+            Synchronisez les utilisateurs et les groupes entre les instances de publication lors de l’utilisation d’une topologie de batterie de publication.</td>
+            <td>✔<sup>+</sup></td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+        </tr>
+    </tbody>
+</table>
+
+aem communities ajoute [des améliorations](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html) par le biais de versions qui permettent aux entreprises d’engager et de permettre à leurs utilisateurs :
+
++ **Prise en charge de @mentions** dans le contenu généré par l’utilisateur.
++ Améliorations de l’accessibilité grâce à la navigation **par** clavier dans les composants **d’activation** .
++ Modération **** en bloc améliorée à l’aide de Filtres **** personnalisés.
++ **Modèles** modifiables pour permettre aux administrateurs de la communauté de créer des expériences de la communauté enrichies en AEM.
++ Les utilisateurs peuvent désormais envoyer des messages **directs en bloc** à tous les membres d’un groupe.
