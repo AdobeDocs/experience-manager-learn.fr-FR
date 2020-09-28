@@ -11,7 +11,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 1%
@@ -61,7 +61,7 @@ L’exemple d’assemblage utilise un alias appelé &quot;ares&quot; pour certif
    **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** comme illustré dans la capture d’écran ci-dessous
    ![User-Mapper](assets/user-mapper-service.PNG)
 * [Importer un exemple de formulaire adaptatif](assets/certify-pdf-af.zip)
-* [Importer la bibliothèque client et l’envoi personnalisé](assets/certify-document-assets.zip)
+* [Importer et installer l’envoi personnalisé](assets/custom-submit-certify.zip)
 * [Ouvrir le formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
 * Télécharger un document PDF qui doit être certifié
    **facultatif** - Indiquez le champ de signature à utiliser pour la certification du document.
