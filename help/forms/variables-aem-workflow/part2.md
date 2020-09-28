@@ -10,9 +10,9 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,17 @@ ht-degree: 0%
 # Variables de type JSON dans AEM Workflow
 
 A compter de AEM Forms 6.5, nous pouvons désormais créer des variables de type JSON dans AEM Workflow. En règle générale, vous créez des variables de type JSON si vous envoyez une Forms adaptative basée sur le schéma JSON à un flux de travail AEM ou si vous souhaitez stocker les résultats d’une opération d’appel de modèle de données de formulaire. La vidéo suivante vous guide tout au long des étapes nécessaires pour créer et utiliser une variable de type JSON dans AEM flux de travail.
->[!NOTE]
 
 **Si vous utilisez AEM Forms 6.5.0**
 
 Lorsque vous créez une variable de type JSON pour capturer les données envoyées dans votre modèle de processus, n’associez pas le schéma JSON à la variable. En effet, lorsque vous envoyez un formulaire adaptatif basé sur un schéma JSON, les données envoyées ne sont pas conformes au schéma JSON. Les données de plainte du schéma JSON sont incluses dans l’élément afData.afBoundData.data.
 
+>[!VIDEO](https://video.tv.adobe.com/v/26444?quality=12&learn=on)
+
+
 **Si vous utilisez AEM Forms 6.5.1 ou version ultérieure**
 
 Vous pouvez mapper le schéma avec la variable de type JSON dans votre modèle de processus. Vous pouvez ensuite utiliser le navigateur de schéma pour mapper les éléments de schéma avec vos variables de chaîne/nombre dans votre modèle de processus.
-
->[!VIDEO](https://video.tv.adobe.com/v/26444?quality=12&learn=on)
-
-**La possibilité d’analyser les éléments de schéma et de mapper l’élément de schéma à la variable de flux de travail n’est disponible qu’avec AEM Forms 6.5.1 et les versions ultérieures.**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28097?quality=12&learn=on)
 
