@@ -10,9 +10,9 @@ audience: developer
 kt: 5432
 thumbnail: kt-5432.jpg
 translation-type: tm+mt
-source-git-commit: 1eb15af3d9d2904856218aaad4d5c52233603a71
+source-git-commit: 7fd232d6821f91c342dd04fcdd04b9b505cb7250
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '990'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,12 @@ Les ID de capsule sont fournis dans chaque instruction de journal et permettent 
 
 + `cm-p<PROGRAM ID>-e<ENVIRONMENT ID>-aem-<author|publish>-<POD NAME>`
 + Exemple: `cm-p12345-e56789-aem-author-abcdefabde-98765`
+
+## Fichiers journaux personnalisés
+
+aem en tant que Cloud Services ne prend pas en charge les fichiers journaux personnalisés, mais il prend en charge la journalisation personnalisée.
+
+Pour que les journaux Java soient disponibles dans AEM en tant que Cloud Service (via [Cloud Manager](#cloud-manager) ou une interface de ligne de commande d&#39;E/S [Adobe](#aio)), les instructions de journal personnalisées doivent être écrites dans le `error.log`. Les journaux écrits dans des journaux nommés personnalisés, tels que `example.log`, ne seront pas accessibles depuis AEM en tant que Cloud Service.
 
 ## Journaux des services d’auteur et de publication AEM
 
@@ -54,7 +60,7 @@ Seul le répartiteur de publication AEM fournit les journaux du serveur Web et d
    + Évaluation: `WARN`
    + Production: `ERROR`
 
-## Cloud Manager
+## Cloud Manager{#cloud-manager}
 
 adobe Cloud Manager permet de télécharger les journaux par jour, via une action Télécharger les journaux de l’environnement.
 
@@ -62,7 +68,7 @@ adobe Cloud Manager permet de télécharger les journaux par jour, via une actio
 
 Ces journaux peuvent être téléchargés et inspectés à l&#39;aide de n&#39;importe quel outil d&#39;analyse des journaux.
 
-## CLI E/S Adobe avec module externe Cloud Manager
+## CLI E/S Adobe avec module externe Cloud Manager{#aio}
 
 adobe Cloud Manager prend en charge l’accès à l’AEM en tant que journal Cloud Service via l’interface de ligne de commande des E/S [Adobes](https://github.com/adobe/aio-cli) avec le module externe [Cloud Manager pour l’interface de ligne de commande des E/S des Adobes](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
