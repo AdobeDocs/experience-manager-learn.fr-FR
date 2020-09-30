@@ -6,10 +6,10 @@ user-guide-description: Collection of AEM Forms resources for beginners and expe
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 4c08b09f59be0eb6644aaec729807b92bc339e82
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -115,10 +115,11 @@ ht-degree: 3%
    + [Utilisation de modèles XDP avec Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
 + Variables dans le processus AEM{#variables-aem-workflow}
    + [Introduction - Variables dans le processus](variables-aem-workflow/introduction.md)
-   + [Variables XML](variables-aem-workflow/part1.md)
+   + [Envoi de variables XML](variables-aem-workflow/part1.md)
    + [Variables JSON](variables-aem-workflow/part2.md)
    + [Variables de document](variables-aem-workflow/part3.md)
    + [Variable ArrayList](variables-aem-workflow/part4.md)
+   + [Variable de modèle de données de formulaire](variables-aem-workflow/form-data-model.md)
    + [Éditeur de règles dans le processus AEM](variables-aem-workflow/part5.md)
 + Stockage et récupération des données de formulaire dans la base de données MySQL{#storing-and-retrieving-form-data}
    + [Présentation](storing-retrieving-form-data/introduction.md)
