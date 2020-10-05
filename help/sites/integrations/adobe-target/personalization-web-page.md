@@ -10,10 +10,10 @@ version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,40 +29,40 @@ Le site WKND a repensé sa page d&#39;accueil et souhaite rediriger ses visiteur
 ## Procédure de création d’un test A/B à l’aide du compositeur d’expérience visuelle
 
 1. Connectez-vous à Adobe Target et accédez à l’onglet Activités.
-2. Cliquez sur le bouton **Créer une Activité** , puis sélectionnez **activité de test** A/B.
+1. Cliquez sur le bouton **Créer une Activité** , puis sélectionnez **activité de test** A/B.
 
    ![Activité A/B](assets/ab-target-activity.png)
 
-3. Sélectionnez l’option Compositeur **d’expérience** visuelle, fournissez l’URL de l’Activité, puis cliquez sur **Suivant.**
+1. Sélectionnez l’option Compositeur **d’expérience** visuelle, fournissez l’URL de l’Activité, puis cliquez sur **Suivant.**
 
    ![URL d’Activité](assets/ab-test-url.png)
 
-4. Le compositeur d’expérience visuelle affiche deux onglets sur le côté gauche après avoir créé une activité : *Expérience A* et *Expérience B*. Sélectionnez une expérience dans la liste. Vous pouvez ajouter de nouvelles expériences à la liste à l’aide du bouton **Ajouter l’expérience** .
+1. Le compositeur d’expérience visuelle affiche deux onglets sur le côté gauche après avoir créé une activité : *Expérience A* et *Expérience B*. Sélectionnez une expérience dans la liste. Vous pouvez ajouter de nouvelles expériences à la liste à l’aide du bouton **Ajouter l’expérience** .
 
    ![Options d’expérience](assets/experience-options.png)
 
-5. Options de vue disponibles pour l’expérience A, puis sélectionnez l’option **Rediriger vers l’URL** et fournissez une URL pour la nouvelle page d&#39;accueil de site WKND.
+1. Options de vue disponibles pour l’expérience A, puis sélectionnez l’option **Rediriger vers l’URL** et fournissez une URL pour la nouvelle page d&#39;accueil de site WKND.
 
    ![URL de redirection](assets/redirect-url.png)
 
-6. Renommer *l’expérience A* en *nouvelle Page d&#39;accueil* WKND et *l’expérience B* en Page d&#39;accueil *WKND*
+1. Renommer *l’expérience A* en *nouvelle Page d&#39;accueil* WKND et *l’expérience B* en Page d&#39;accueil *WKND*
 
    ![Aventures](assets/new-experiences.png)
 
-7. Cliquez sur **Suivant** pour passer au ciblage et conserver une affectation manuelle du trafic de 50 à 50 entre les deux expériences.
+1. Cliquez sur **Suivant** pour passer au ciblage et conserver une affectation manuelle du trafic de 50 à 50 entre les deux expériences.
 
    ![Ciblage](assets/targeting.png)
 
-8. Pour Objectifs et paramètres, choisissez la source de Rapports comme Adobe Target et sélectionnez la mesure Objectif comme Conversion avec une action de vue de page.
+1. Pour Objectifs et paramètres, choisissez la source de Rapports comme Adobe Target et sélectionnez la mesure Objectif comme Conversion avec une action de vue de page.
 
    ![Goals](assets/goals.png)
 
-9. Attribuez un nom à votre activité et enregistrez.
-10. Activez votre activité enregistrée pour activer vos modifications.
+1. Attribuez un nom à votre activité et enregistrez.
+1. Activez votre activité enregistrée pour activer vos modifications.
 
    ![Goals](assets/activate.png)
 
-11. Ouvrez la page de votre site (URL de l’Activité de l’étape 3) dans un nouvel onglet et vous devriez pouvoir vue l’une des expériences (Page d&#39;accueil WKND ou nouvelle Page d&#39;accueil WKND) de notre activité de test A/B. `us/en.html` redirige vers `us/home.html`.
+1. Ouvrez la page de votre site (URL de l’Activité de l’étape 3) dans un nouvel onglet et vous devriez pouvoir vue l’une des expériences (Page d&#39;accueil WKND ou nouvelle Page d&#39;accueil WKND) de notre activité de test A/B. `us/en.html` redirige vers `us/home.html`.
 
    ![Goals](assets/redirect-test.png)
 
