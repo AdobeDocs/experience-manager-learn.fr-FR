@@ -9,10 +9,10 @@ doc-type: tutorial
 activity: use
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: e19e177589df7ce6a56c0be3f9d590cbca2f8ce7
+source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
 workflow-type: tm+mt
-source-wordcount: '3181'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -104,7 +104,7 @@ L&#39;objectif de ce didacticiel est d&#39;étendre l&#39;application de Journal
    >
    >Le tutoriel fonctionnera avec la branche **maître** avec la version **1.2.1-SNAPSHOT** du projet.
 
-2. La structure suivante doit être visible :
+1. La structure suivante doit être visible :
 
    ![Structure du dossier Projet](assets/spa-editor-helloworld-tutorial-use/folder-structure.png)
 
@@ -117,7 +117,7 @@ L&#39;objectif de ce didacticiel est d&#39;étendre l&#39;application de Journal
    * `react-app`: Application Web.Retail Journal React. Il s&#39;agit à la fois d&#39;un module Maven et d&#39;un projet webpack.
    * `angular-app`: Application angulaire du Journal We.Retail. Il s&#39;agit à la fois d&#39;un [!DNL Maven] module et d&#39;un projet webpack.
 
-3. Ouvrez une nouvelle fenêtre de terminal et exécutez la commande suivante pour créer et déployer l’application entière sur une instance AEM locale s’exécutant sur [http://localhost:4502](http://localhost:4502).
+1. Ouvrez une nouvelle fenêtre de terminal et exécutez la commande suivante pour créer et déployer l’application entière sur une instance AEM locale s’exécutant sur [http://localhost:4502](http://localhost:4502).
 
    ```shell
    $ cd <src>/aem-sample-we-retail-journal
@@ -132,22 +132,22 @@ L&#39;objectif de ce didacticiel est d&#39;étendre l&#39;application de Journal
    >
    > Si vous recevez une erreur lors de la création, [assurez-vous que votre fichier Maven settings.xml inclut le référentiel](https://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html)d’artefacts Maven d’Adobe.
 
-4. Accédez à:
+1. Accédez à:
 
    * [http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html)
    * [http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html)
 
    L’application de Journal We.Retail doit être affichée dans l’éditeur AEM Sites.
 
-5. En mode [!UICONTROL Edition] , sélectionnez un composant à modifier et mettez à jour le contenu.
+1. En mode [!UICONTROL Edition] , sélectionnez un composant à modifier et mettez à jour le contenu.
 
    ![Modification d’un composant](assets/spa-editor-helloworld-tutorial-use/editcontent.png)
 
-6. Sélectionnez l’icône Propriétés [!UICONTROL de la] page pour ouvrir les Propriétés [!UICONTROL de la]page. Sélectionnez [!UICONTROL Modifier le modèle] pour ouvrir le modèle de la page.
+1. Sélectionnez l’icône Propriétés [!UICONTROL de la] page pour ouvrir les Propriétés [!UICONTROL de la]page. Sélectionnez [!UICONTROL Modifier le modèle] pour ouvrir le modèle de la page.
 
    ![Menu Propriétés de page](assets/spa-editor-helloworld-tutorial-use/page-properties.png)
 
-7. Dans la dernière version de l’éditeur d’application d’une seule page, les modèles [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) modifiables peuvent être utilisés de la même manière que dans les implémentations traditionnelles de sites. Ceci sera réexaminé ultérieurement avec notre composant personnalisé.
+1. Dans la dernière version de l’éditeur d’application d’une seule page, les modèles [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html) modifiables peuvent être utilisés de la même manière que dans les implémentations traditionnelles de sites. Ceci sera réexaminé ultérieurement avec notre composant personnalisé.
 
    >[!NOTE]
    >
@@ -160,8 +160,8 @@ L&#39;objectif de ce didacticiel est d&#39;étendre l&#39;application de Journal
 Les itérations de développement d’une application d’une seule page se produisent indépendamment de l’AEM. Lorsque l’application d’une seule page est prête à être déployée AEM les étapes de haut niveau suivantes ont lieu (comme illustré ci-dessus).
 
 1. La version du projet AEM est appelée, ce qui déclenche à son tour une version du projet d’application d’une seule page. Le Journal We.Retail utilise le plug-in [****](https://github.com/eirslett/frontend-maven-plugin)frontend-maven.
-2. Le générateur [**aem-clientlib**](https://www.npmjs.com/package/aem-clientlib-generator) du projet SPA incorpore l’application d’une seule page comme bibliothèque cliente AEM dans le projet AEM.
-3. Le projet AEM génère un module AEM, y compris l’application d’une seule page, ainsi que tout autre code de prise en charge de l’AEM.
+1. Le générateur [**aem-clientlib**](https://www.npmjs.com/package/aem-clientlib-generator) du projet SPA incorpore l’application d’une seule page comme bibliothèque cliente AEM dans le projet AEM.
+1. Le projet AEM génère un module AEM, y compris l’application d’une seule page, ainsi que tout autre code de prise en charge de l’AEM.
 
 ## Créer un composant AEM {#aem-component}
 
@@ -197,8 +197,8 @@ A l’aide [!DNL Eclipse]ou d’autres [!DNL IDE], importez le projet Importatio
        </plugin>
    ```
 
-2. Dans le module **we-détaillant-journal-content** (`<src>/aem-sample-we-retail-journal/ui.apps`), créez un nouveau noeud sous le `ui.apps/jcr_root/apps/we-retail-journal/components` nom **helloworld** de type **cq:Component.**
-3. ajoutez les propriétés suivantes au composant **helloworld** , représenté en XML (`/helloworld/.content.xml`) ci-dessous :
+1. Dans le module **we-détaillant-journal-content** (`<src>/aem-sample-we-retail-journal/ui.apps`), créez un nouveau noeud sous le `ui.apps/jcr_root/apps/we-retail-journal/components` nom **helloworld** de type **cq:Component.**
+1. ajoutez les propriétés suivantes au composant **helloworld** , représenté en XML (`/helloworld/.content.xml`) ci-dessous :
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -217,8 +217,8 @@ A l’aide [!DNL Eclipse]ou d’autres [!DNL IDE], importez le projet Importatio
    >
    > Seuls AEM 6.5 et AEM 6.4 + **Service Pack 5** prennent en charge les modèles modifiables.
 
-4. Ensuite, une boîte de dialogue sera créée pour permettre la configuration d&#39;un message personnalisé pour le composant **Hello World** . Sous `/apps/we-retail-journal/components/helloworld` cet onglet, ajoutez un nom de noeud **cq:dialog** de **nt:unstructured**.
-5. La boîte de dialogue **** cq:dialog **[!DNL message]** affiche un seul champ de texte qui conserve le texte d’une propriété nommée. Sous la boîte de dialogue **cq:dialog** nouvellement créée, ajoutez les noeuds et propriétés suivants, représentés en XML ci-dessous (`helloworld/_cq_dialog/.content.xml`) :
+1. Ensuite, une boîte de dialogue sera créée pour permettre la configuration d&#39;un message personnalisé pour le composant **Hello World** . Sous `/apps/we-retail-journal/components/helloworld` cet onglet, ajoutez un nom de noeud **cq:dialog** de **nt:unstructured**.
+1. La boîte de dialogue **** cq:dialog **[!DNL message]** affiche un seul champ de texte qui conserve le texte d’une propriété nommée. Sous la boîte de dialogue **cq:dialog** nouvellement créée, ajoutez les noeuds et propriétés suivants, représentés en XML ci-dessous (`helloworld/_cq_dialog/.content.xml`) :
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -273,7 +273,7 @@ A l’aide [!DNL Eclipse]ou d’autres [!DNL IDE], importez le projet Importatio
 
    La définition de noeud XML ci-dessus crée une boîte de dialogue avec un seul champ de texte qui permet à un utilisateur de saisir un &quot;message&quot;. Notez la propriété `name="./message"` dans le `<message />` noeud. Il s’agit du nom de la propriété qui sera stockée dans le JCR dans AEM.
 
-6. Une boîte de dialogue de stratégie vide sera ensuite créée (`cq:design_dialog`). La boîte de dialogue Stratégie est nécessaire pour afficher le composant dans l’éditeur de modèles. Pour ce cas d&#39;utilisation simple, il s&#39;agira d&#39;une boîte de dialogue vide.
+1. Une boîte de dialogue de stratégie vide sera ensuite créée (`cq:design_dialog`). La boîte de dialogue Stratégie est nécessaire pour afficher le composant dans l’éditeur de modèles. Pour ce cas d&#39;utilisation simple, il s&#39;agira d&#39;une boîte de dialogue vide.
 
    Sous `/apps/we-retail-journal/components/helloworld` ajouter un nom de noeud `cq:design_dialog` de `nt:unstructured`.
 
@@ -285,7 +285,7 @@ A l’aide [!DNL Eclipse]ou d’autres [!DNL IDE], importez le projet Importatio
    jcr:primaryType="nt:unstructured" />
    ```
 
-7. Déployez la base de code vers AEM à partir de la ligne de commande :
+1. Déployez la base de code vers AEM à partir de la ligne de commande :
 
    ```shell
    $ cd <src>/aem-sample-we-retail-journal/content
@@ -309,7 +309,7 @@ Un élément [!DNL Sling Model] est ensuite créé pour sauvegarder le [!DNL Hel
 >En règle générale, les développeurs doivent s’efforcer d’utiliser [AEM composants](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) principaux lorsque cela est possible. Entre autres fonctionnalités, les composants principaux fournissent [!DNL Sling Models] une sortie JSON &quot;compatible SPA&quot;, ce qui permet aux développeurs de se concentrer davantage sur la présentation frontale.
 
 1. Dans l&#39;éditeur de votre choix, ouvrez le projet **nous-commerce-journal-biens** communs ( `<src>/aem-sample-we-retail-journal/bundles/commons`).
-2. Dans le package `com.adobe.cq.sample.spa.commons.impl.models`:
+1. Dans le package `com.adobe.cq.sample.spa.commons.impl.models`:
    * Créez une nouvelle classe nommée `HelloWorld`.
    * ajouter une interface d’implémentation pour `com.adobe.cq.export.json.ComponentExporter.`
 
@@ -331,7 +331,7 @@ Un élément [!DNL Sling Model] est ensuite créé pour sauvegarder le [!DNL Hel
     }
    ```
 
-3. ajoutez une variable statique nommée `RESOURCE_TYPE` pour identifier le type de ressource du [!DNL HelloWorld] composant :
+1. ajoutez une variable statique nommée `RESOURCE_TYPE` pour identifier le type de ressource du [!DNL HelloWorld] composant :
 
    ```java
     ...
@@ -343,7 +343,7 @@ Un élément [!DNL Sling Model] est ensuite créé pour sauvegarder le [!DNL Hel
     }
    ```
 
-4. ajoutez les annotations OSGi pour `@Model` et `@Exporter`. L&#39; `@Model` annotation enregistre la classe comme [!DNL Sling Model]une. L’ `@Exporter` annotation expose les méthodes sous forme de JSON sérialisé à l’aide de la [!DNL Jackson Exporter] structure.
+1. ajoutez les annotations OSGi pour `@Model` et `@Exporter`. L&#39; `@Model` annotation enregistre la classe comme [!DNL Sling Model]une. L’ `@Exporter` annotation expose les méthodes sous forme de JSON sérialisé à l’aide de la [!DNL Jackson Exporter] structure.
 
    ```java
    import org.apache.sling.api.SlingHttpServletRequest;
@@ -366,7 +366,7 @@ Un élément [!DNL Sling Model] est ensuite créé pour sauvegarder le [!DNL Hel
    ...
    ```
 
-5. Mettez en oeuvre la méthode `getDisplayMessage()` de renvoi de la propriété JCR `message`. Utilisez l’ [!DNL Sling Model] annotation de `@ValueMapValue` pour faciliter la récupération de la propriété `message` stockée sous le composant. L’ `@Optional` annotation est importante car, lorsque le composant est ajouté pour la première fois à la page, `message` il ne sera pas renseigné.
+1. Mettez en oeuvre la méthode `getDisplayMessage()` de renvoi de la propriété JCR `message`. Utilisez l’ [!DNL Sling Model] annotation de `@ValueMapValue` pour faciliter la récupération de la propriété `message` stockée sous le composant. L’ `@Optional` annotation est importante car, lorsque le composant est ajouté pour la première fois à la page, `message` il ne sera pas renseigné.
 
    Dans le cadre de la logique métier, une chaîne &quot;**Hello**&quot; sera ajoutée au message en préfixe.
 
@@ -401,7 +401,7 @@ Un élément [!DNL Sling Model] est ensuite créé pour sauvegarder le [!DNL Hel
 
    La méthode `getExportedType` est également importante. La valeur du composant `resourceType` sera utilisée pour &quot;mapper&quot; les données JSON au composant frontal (Angular / React). Nous étudierons cette question dans la section suivante.
 
-6. Implémentez la méthode `getExportedType()` pour renvoyer le type de ressource du `HelloWorld` composant.
+1. Implémentez la méthode `getExportedType()` pour renvoyer le type de ressource du `HelloWorld` composant.
 
    ```java
     @Override
@@ -412,7 +412,7 @@ Un élément [!DNL Sling Model] est ensuite créé pour sauvegarder le [!DNL Hel
 
    Le code complet de [**HelloWorld.java** se trouve ici.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/bundles/commons/HelloWorld.java)
 
-7. Déployez le code vers AEM à l’aide d’Apache Maven :
+1. Déployez le code vers AEM à l’aide d’Apache Maven :
 
    ```shell
    $ cd <src>/sample-we-retail-spa-content/bundles/commons
@@ -442,15 +442,15 @@ Ensuite, le composant Réagir sera créé. Ouvrez le module **réagir à l’app
 
    ![structure du fichier composant réactionnel](assets/spa-editor-helloworld-tutorial-use/react-components.png)
 
-2. ajoutez un nouveau fichier sous le dossier de composants nommé `HelloWorld.js`.
-3. Ouvrez `HelloWorld.js`. ajoutez une instruction d&#39;importation pour importer la bibliothèque de composants Réagir. ajoutez une deuxième instruction d&#39;importation pour importer l&#39; `MapTo` aide fournie par l&#39;Adobe. L’ `MapTo` assistance fournit un mappage du composant Réagir au fichier JSON du composant AEM.
+1. ajoutez un nouveau fichier sous le dossier de composants nommé `HelloWorld.js`.
+1. Ouvrez `HelloWorld.js`. ajoutez une instruction d&#39;importation pour importer la bibliothèque de composants Réagir. ajoutez une deuxième instruction d&#39;importation pour importer l&#39; `MapTo` aide fournie par l&#39;Adobe. L’ `MapTo` assistance fournit un mappage du composant Réagir au fichier JSON du composant AEM.
 
    ```js
    import React, {Component} from 'react';
    import {MapTo} from '@adobe/cq-react-editable-components';
    ```
 
-4. Sous les importations, créez une nouvelle classe nommée `HelloWorld` qui étend l&#39; `Component` interface Réagir. ajoutez la `render()` méthode requise à la `HelloWorld` classe.
+1. Sous les importations, créez une nouvelle classe nommée `HelloWorld` qui étend l&#39; `Component` interface Réagir. ajoutez la `render()` méthode requise à la `HelloWorld` classe.
 
    ```js
    import React, {Component} from 'react';
@@ -464,7 +464,7 @@ Ensuite, le composant Réagir sera créé. Ouvrez le module **réagir à l’app
    }
    ```
 
-5. L’ `MapTo` assistant inclut automatiquement un objet nommé `cqModel` dans le cadre des props du composant Réagir. Le `cqModel` comprend toutes les propriétés exposées par le [!DNL Sling Model].
+1. L’ `MapTo` assistant inclut automatiquement un objet nommé `cqModel` dans le cadre des props du composant Réagir. Le `cqModel` comprend toutes les propriétés exposées par le [!DNL Sling Model].
 
    Souvenez-vous que la méthode [!DNL Sling Model] créée précédemment contient une méthode `getDisplayMessage()`. `getDisplayMessage()` est converti en une clé JSON nommée `displayMessage` lors de la sortie.
 
@@ -488,7 +488,7 @@ Ensuite, le composant Réagir sera créé. Ouvrez le module **réagir à l’app
    }
    ```
 
-6. Mettez en oeuvre une méthode de modification de la configuration. Cette méthode est transmise via l’ `MapTo` assistant et fournit à l’éditeur AEM des informations pour afficher un espace réservé au cas où le composant serait vide. Cela se produit lorsque le composant est ajouté à l’application d’une seule page mais n’a pas encore été créé. ajoutez les éléments suivants sous la `HelloWorld` classe :
+1. Mettez en oeuvre une méthode de modification de la configuration. Cette méthode est transmise via l’ `MapTo` assistant et fournit à l’éditeur AEM des informations pour afficher un espace réservé au cas où le composant serait vide. Cela se produit lorsque le composant est ajouté à l’application d’une seule page mais n’a pas encore été créé. ajoutez les éléments suivants sous la `HelloWorld` classe :
 
    ```js
    ...
@@ -509,7 +509,7 @@ Ensuite, le composant Réagir sera créé. Ouvrez le module **réagir à l’app
    ...
    ```
 
-7. À la fin du fichier, appelez l&#39; `MapTo` assistance, en transmettant la `HelloWorld` classe et le `HelloWorldEditConfig`. Le composant Réagir sera alors mappé au composant AEM en fonction du type de ressource du composant AEM : `we-retail-journal/components/helloworld`.
+1. À la fin du fichier, appelez l&#39; `MapTo` assistance, en transmettant la `HelloWorld` classe et le `HelloWorldEditConfig`. Le composant Réagir sera alors mappé au composant AEM en fonction du type de ressource du composant AEM : `we-retail-journal/components/helloworld`.
 
    ```js
    MapTo('we-retail-journal/components/helloworld')(HelloWorld, HelloWorldEditConfig);
@@ -517,7 +517,7 @@ Ensuite, le composant Réagir sera créé. Ouvrez le module **réagir à l’app
 
    Le code complet pour [**HelloWorld.js** se trouve ici.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/react-app/components/HelloWorld.js)
 
-8. Open the file `ImportComponents.js`. On peut le trouver à `<src>/aem-sample-we-retail-journal/react-app/src/ImportComponents.js`.
+1. Open the file `ImportComponents.js`. On peut le trouver à `<src>/aem-sample-we-retail-journal/react-app/src/ImportComponents.js`.
 
    ajoutez une ligne pour exiger que la ligne soit `HelloWorld.js` associée aux autres composants du lot JavaScript compilé :
 
@@ -529,7 +529,7 @@ Ensuite, le composant Réagir sera créé. Ouvrez le module **réagir à l’app
    ...
    ```
 
-9. Dans le `components` dossier, créez un nouveau fichier nommé `HelloWorld.css` frère de `HelloWorld.js.` Renseigner le fichier avec ce qui suit pour créer une mise en forme de base pour le `HelloWorld` composant :
+1. Dans le `components` dossier, créez un nouveau fichier nommé `HelloWorld.css` frère de `HelloWorld.js.` Renseigner le fichier avec ce qui suit pour créer une mise en forme de base pour le `HelloWorld` composant :
 
    ```css
    /* HelloWorld.css to style HelloWorld component */
@@ -542,7 +542,7 @@ Ensuite, le composant Réagir sera créé. Ouvrez le module **réagir à l’app
    }
    ```
 
-10. rouvrez `HelloWorld.js` et mettez à jour sous les instructions d&#39;importation pour exiger `HelloWorld.css`:
+1. rouvrez `HelloWorld.js` et mettez à jour sous les instructions d&#39;importation pour exiger `HelloWorld.css`:
 
    ```js
    import React, {Component} from 'react';
@@ -553,14 +553,14 @@ Ensuite, le composant Réagir sera créé. Ouvrez le module **réagir à l’app
    ...
    ```
 
-11. Déployez le code vers AEM à l’aide d’Apache Maven :
+1. Déployez le code vers AEM à l’aide d’Apache Maven :
 
    ```shell
    $ cd <src>/sample-we-retail-spa-content
    $ mvn -PautoInstallSinglePackage clean install
    ```
 
-12. Dans [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/react/clientlibs/we-retail-journal-react/js/app.js) , ouvrez `/apps/we-retail-journal/react/clientlibs/we-retail-journal-react/js/app.js`. Effectuez une recherche rapide de HelloWorld dans app.js pour vérifier que le composant React a été inclus dans l’application compilée.
+1. Dans [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/react/clientlibs/we-retail-journal-react/js/app.js) , ouvrez `/apps/we-retail-journal/react/clientlibs/we-retail-journal-react/js/app.js`. Effectuez une recherche rapide de HelloWorld dans app.js pour vérifier que le composant React a été inclus dans l’application compilée.
 
    >[!NOTE]
    >
@@ -581,7 +581,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module d’application **
 
    ![Structure de fichier angulaire](assets/spa-editor-helloworld-tutorial-use/angular-file-structure.png)
 
-2. ajoutez un nouveau dossier sous le dossier de composants nommé `helloworld`. Sous le `helloworld` dossier, ajoutez de nouveaux fichiers nommés `helloworld.component.css, helloworld.component.html, helloworld.component.ts`.
+1. ajoutez un nouveau dossier sous le dossier de composants nommé `helloworld`. Sous le `helloworld` dossier, ajoutez de nouveaux fichiers nommés `helloworld.component.css, helloworld.component.html, helloworld.component.ts`.
 
    ```plain
    /angular-app
@@ -594,7 +594,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module d’application **
    +                    helloworld.component.ts
    ```
 
-3. Ouvrez `helloworld.component.ts`. ajoutez une instruction import pour importer les classes Angular `Component` et `Input` classes. Créez un nouveau composant, en pointant le `styleUrls` et `templateUrl` sur `helloworld.component.css` et `helloworld.component.html`. Enfin, exportez la classe `HelloWorldComponent` avec l&#39;entrée attendue de `displayMessage`.
+1. Ouvrez `helloworld.component.ts`. ajoutez une instruction import pour importer les classes Angular `Component` et `Input` classes. Créez un nouveau composant, en pointant le `styleUrls` et `templateUrl` sur `helloworld.component.css` et `helloworld.component.html`. Enfin, exportez la classe `HelloWorldComponent` avec l&#39;entrée attendue de `displayMessage`.
 
    ```js
    //helloworld.component.ts
@@ -617,7 +617,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module d’application **
    >
    > Si vous vous souvenez de la méthode [!DNL Sling Model] créée précédemment, il y avait une méthode **getDisplayMessage()**. Le JSON sérialisé de cette méthode sera **displayMessage**, que nous lisons maintenant dans l’application Angular.
 
-4. Ouvrez `helloworld.component.html` pour inclure une `h1` balise qui imprime la `displayMessage` propriété :
+1. Ouvrez `helloworld.component.html` pour inclure une `h1` balise qui imprime la `displayMessage` propriété :
 
    ```html
    <h1 *ngIf="displayMessage" class="cmp-helloworld_message">
@@ -625,7 +625,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module d’application **
    </h1>
    ```
 
-5. Mettez à jour `helloworld.component.css` pour inclure certains styles de base pour le composant.
+1. Mettez à jour `helloworld.component.css` pour inclure certains styles de base pour le composant.
 
    ```css
    :host-context {
@@ -643,7 +643,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module d’application **
    }
    ```
 
-6. Mettez à jour `helloworld.component.spec.ts` avec le banc d&#39;essai suivant :
+1. Mettez à jour `helloworld.component.spec.ts` avec le banc d&#39;essai suivant :
 
    ```js
    import { async, ComponentFixture, TestBed } from '@angular/core/testing';
@@ -673,7 +673,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module d’application **
    });
    ```
 
-7. Prochaine mise à jour `src/components/mapping.ts` pour inclure le `HelloWorldComponent`. ajoutez une balise `HelloWorldEditConfig` qui marquera l’espace réservé dans l’éditeur AEM avant que le composant n’ait été configuré. Enfin, ajoutez une ligne pour mapper le composant AEM au composant Angular avec l’ `MapTo` assistant.
+1. Prochaine mise à jour `src/components/mapping.ts` pour inclure le `HelloWorldComponent`. ajoutez une balise `HelloWorldEditConfig` qui marquera l’espace réservé dans l’éditeur AEM avant que le composant n’ait été configuré. Enfin, ajoutez une ligne pour mapper le composant AEM au composant Angular avec l’ `MapTo` assistant.
 
    ```js
    // src/components/mapping.ts
@@ -698,7 +698,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module d’application **
 
    Le code complet de [**mapping.ts** se trouve ici.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/angular-app/mapping.ts)
 
-8. Mettre à jour `src/app.module.ts` pour mettre à jour le **NgModule**. ajoutez la **`HelloWorldComponent`** comme une **déclaration** qui appartient à **AppModule**. Ajoutez également le `HelloWorldComponent` en tant que **entryComponent** afin qu’il soit compilé et dynamiquement inclus dans l’application au fur et à mesure que le modèle JSON est traité.
+1. Mettre à jour `src/app.module.ts` pour mettre à jour le **NgModule**. ajoutez la **`HelloWorldComponent`** comme une **déclaration** qui appartient à **AppModule**. Ajoutez également le `HelloWorldComponent` en tant que **entryComponent** afin qu’il soit compilé et dynamiquement inclus dans l’application au fur et à mesure que le modèle JSON est traité.
 
    ```js
    import { HelloWorldComponent } from './components/helloworld/helloworld.component';
@@ -737,14 +737,14 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module d’application **
 
    Le code complet pour [**app.module.ts** se trouve ici.](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/spa-helloworld-guide/src/angular-app/app.module.ts)
 
-9. Déployez le code vers AEM à l’aide de Maven :
+1. Déployez le code vers AEM à l’aide de Maven :
 
    ```shell
    $ cd <src>/sample-we-retail-spa-content
    $ mvn -PautoInstallSinglePackage clean install
    ```
 
-10. Dans [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js) , ouvrez `/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js`. Effectuez une recherche rapide de **HelloWorld** dans `main.js` pour vérifier que le composant Angular a été inclus.
+1. Dans [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js) , ouvrez `/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js`. Effectuez une recherche rapide de **HelloWorld** dans `main.js` pour vérifier que le composant Angular a été inclus.
 
    >[!NOTE]
    >
@@ -757,7 +757,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module d’application **
    * (angulaire) [http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html)
    * (Réaction) [http://localhost:4502/editor.html/conf/we-retail-journal/react/settings/wcm/templates/we-retail-react-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/react/settings/wcm/templates/we-retail-react-weather-template/structure.html)
 
-2. Sélectionnez le Conteneur  de mise en page principal et sélectionnez l’icône [!UICONTROL Stratégie] pour ouvrir sa stratégie :
+1. Sélectionnez le Conteneur  de mise en page principal et sélectionnez l’icône [!UICONTROL Stratégie] pour ouvrir sa stratégie :
 
    ![Sélectionner la stratégie de mise en page](assets/spa-editor-helloworld-tutorial-use/select-page-policy.png)
 
@@ -765,7 +765,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module d’application **
 
    ![Configuration de la stratégie de Conteneur de mise en page](assets/spa-editor-helloworld-tutorial-use/layoutcontainer-update.png)
 
-3. Après l’enregistrement, vous devriez voir le **[!DNL HelloWorld]** composant comme un composant autorisé dans le Conteneur [!UICONTROL de]mise en page.
+1. Après l’enregistrement, vous devriez voir le **[!DNL HelloWorld]** composant comme un composant autorisé dans le Conteneur [!UICONTROL de]mise en page.
 
    ![Composants autorisés mis à jour](assets/spa-editor-helloworld-tutorial-use/allowed-components.png)
 
@@ -784,7 +784,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module d’application **
    * [http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html)
    * [http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html)
 
-2. Recherchez le **[!DNL Hello World]** composant et faites-le glisser et déposez-le **[!DNL Hello World]** sur la page.
+1. Recherchez le **[!DNL Hello World]** composant et faites-le glisser et déposez-le **[!DNL Hello World]** sur la page.
 
    ![salut monde drag + drop](assets/spa-editor-helloworld-tutorial-use/fig7.png)
 
@@ -792,7 +792,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module d’application **
 
    ![Bonjour, titulaire de la place dans le monde](assets/spa-editor-helloworld-tutorial-use/fig10.png)
 
-3. Sélectionnez le composant et ajoutez un message dans la boîte de dialogue, par exemple &quot;Monde&quot; ou &quot;Votre nom&quot;. Enregistrez les modifications.
+1. Sélectionnez le composant et ajoutez un message dans la boîte de dialogue, par exemple &quot;Monde&quot; ou &quot;Votre nom&quot;. Enregistrez les modifications.
 
    ![composant rendu](assets/spa-editor-helloworld-tutorial-use/fig11.png)
 
