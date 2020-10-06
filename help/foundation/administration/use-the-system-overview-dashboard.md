@@ -9,7 +9,7 @@ audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: c9a11bcb01a5ec9f7390deab68e6d0e1dec273de
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
@@ -25,7 +25,7 @@ La fonction Aperçu  du système de Adobe Experience Manager (AEM) fournit une v
 
 1. Vous pouvez accéder à la présentation du système à partir de : **aem Début** > **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Aperçu **[!UICONTROL du système]**
 
-   Directement à **[!DNL <server-host>/libs/granite/operations/content/systemoverview.html]**
+   Directement à **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
 1. Vous pouvez exporter les informations de la Présentation [!UICONTROL du] système en cliquant sur le bouton [!UICONTROL Télécharger] . Les informations sont également exposées au moyen du [!DNL REST] point de terminaison suivant :
 1. Vous trouverez ci-dessous un exemple de sortie du fichier JSON qui est exporté depuis la Présentation [!UICONTROL du]système :
