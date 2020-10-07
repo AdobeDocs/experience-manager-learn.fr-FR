@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6286
 thumbnail: KT-6286.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Comme ce projet a été généré à l&#39;aide `aio app init` de l&#39; `Develo
 
 Pour effectuer un déploiement dans l’espace de travail défini dans le `.env` fichier de projets :
 
-1. Ouvrez la ligne de commande à la racine du projet d’application Asset Compute.
+1. Ouvrez la ligne de commande à la racine du projet Asset Compute.
 1. Exécutez la commande `aio app deploy`
 1. Exécutez la commande `aio app get-url` pour obtenir l’URL du programme de travail à utiliser dans l’AEM en tant que Profil de traitement du Cloud Service pour référencer ce programme de travail Asset Compute personnalisé. Si le projet contient plusieurs programmes de travail, des URL distinctes pour chaque programme de travail sont répertoriées.
 
@@ -54,11 +54,11 @@ La définition de variables d’environnement vraies remplace les valeurs des va
 L&#39;approche générale, généralement automatisée par un système de CI/CD, pour le déploiement sur les environnements d&#39;étape et de production est la suivante :
 
 1. Assurez-vous que le module Npm d&#39;interface de ligne de commande (CLI) [d&#39;Adobe et le module](../set-up/development-environment.md#aio) Asset Compute sont installés.
-1. Extraire l&#39;application Asset Compute à déployer à partir de Git
+1. Consulter le projet Asset Compute à déployer à partir de Git
 1. Définissez les variables d&#39;environnement avec les valeurs correspondant à l&#39;espace de travail de cible (Phase ou Production).
    + Les deux variables requises sont `AIO_runtime_namespace` et `AIO_runtime_auth` sont obtenues par espace de travail dans la console de développement des E/S d&#39;Adobe via la fonction __Télécharger tout__ de Workspace.
 
-![adobe Developer Console - Espace de nommage d&#39;exécution AIO et authentification](./assets/runtime/stage-auth-namespace.png)
+![Adobe Developer Console - Espace de nommage d&#39;exécution AIO et authentification](./assets/runtime/stage-auth-namespace.png)
 
 Les valeurs de ces clés peuvent être définies en exécutant des commandes d’exportation à partir de la ligne de commande :
 
@@ -74,7 +74,7 @@ Si vos collaborateurs de Asset Compute ont besoin d’autres variables, telles q
 1. Les URL de travail référencées par l’AEM en tant que Profil de traitement Cloud Service sont également disponibles via :
    + `aio app get-url`.
 
-Si la version de l’application Asset Compute change, les URL de travail changent également pour refléter la nouvelle version et l’URL doit être mise à jour dans les Profils de traitement.
+Si la version du projet Asset Compute change, les URL de travail changent également pour refléter la nouvelle version et l’URL doit être mise à jour dans les Profils de traitement.
 
 ## Approvisionnement de l’API Workspace{#workspace-api-provisioning}
 
