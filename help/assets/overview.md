@@ -5,9 +5,9 @@ description: Ensemble de vidéos et de didacticiels pour Adobe Experience Manage
 seo-description: Ensemble de vidéos et de didacticiels pour Adobe Experience Manager Assets
 sub-product: ressources, média dynamique
 translation-type: tm+mt
-source-git-commit: a2772bd8dd65e8bcb4caf660709f6aceb6e28eb4
+source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '244'
 ht-degree: 6%
 
 ---
@@ -18,6 +18,11 @@ ht-degree: 6%
 Adobe Experience Manager Assets est un outil de gestion d’actifs numériques sur la plateforme AEM qui permet aux utilisateurs de créer, gérer et partager leurs actifs numériques (images, vidéos, documents et clips audio) dans un référentiel Web. Ce guide d&#39;utilisation contient des vidéos et des didacticiels sur les nombreuses fonctionnalités et fonctionnalités d&#39;AEM Assets.
 
 ## Nouveautés
+
+* **[Filigranes (vidéo)](./advanced/watermarks.md)**
+
+   <br>
+   *Découvrez comment mettre en filigrane les rendus de ressources dans AEM en tant que Cloud Service*
 
 * **[Autorisations de base (vidéo)](./configuring/baseline-permissions.md)**
 
@@ -39,12 +44,6 @@ Adobe Experience Manager Assets est un outil de gestion d’actifs numériques s
    <br>
    *Découvrez comment les collections dans AEM Assets offrent de nouvelles méthodes pour organiser et découvrir des ressources*
 
-* **[Utilisation de la Tâche de révision (vidéo)](./collaboration/review-task.md)**
-
-   <br>
-   *Utilisez le processus de la Tâche de révision pour approuver (ou rejeter) rapidement et facilement des ressources*
-
-
 ## Sélection du personnel
 
 <table>
@@ -63,7 +62,7 @@ Adobe Experience Manager Assets est un outil de gestion d’actifs numériques s
 </td>
 <td>
    <a href="./advanced/asset-insights-launch-tutorial.md">
-   <img alt="aem assets Insights" src="./assets/overview/asset-insights.png"/>
+   <img alt="AEM Assets Insights" src="./assets/overview/asset-insights.png"/>
    </a>
    <div>
       <a href="./advanced/asset-insights-launch-tutorial.md">
@@ -94,6 +93,6 @@ Adobe Experience Manager Assets est un outil de gestion d’actifs numériques s
 * [Experience League - Explorez AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Documentation de l’AEM Assets](https://helpx.adobe.com/fr/experience-manager/6-5/assets/user-guide.html)
 * [aem en tant que Tutorials Cloud Service](/help/cloud-service/overview.md)
-* [tutorials AEM Sites](/help/sites/overview.md)
-* [tutorials AEM Forms](/help/forms/overview.md)
+* [Tutorials AEM Sites](/help/sites/overview.md)
+* [Tutorials AEM Forms](/help/forms/overview.md)
 * [tutorials de la Fondation AEM](/help/foundation/overview.md)
