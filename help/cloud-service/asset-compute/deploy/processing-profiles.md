@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
 translation-type: tm+mt
-source-git-commit: 59bfc9ae08acca6c41234f23eaa60f56e2eda890
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '778'
 ht-degree: 2%
 
 ---
@@ -76,6 +76,14 @@ Créez d’abord un nouveau Profil de traitement qui appellera le programme de t
 ## Terminé!
 
 Félicitations ! Vous avez terminé le [didacticiel](../overview.md) sur la façon d&#39;étendre l&#39;AEM en tant que microservices Cloud Service Asset Compute ! Vous devez désormais être en mesure de configurer, de développer, de tester, de déboguer et de déployer des agents de traitement d’actifs personnalisés pour une utilisation par votre AEM en tant que service d’auteur Cloud Service.
+
+### Examiner le code source complet du projet sur Github
+
+Le projet final Asset Compute est disponible sur Github à l&#39;adresse suivante :
+
++ [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
+
+_Github contient l&#39;état final du projet, entièrement renseigné avec les cas de travail et de test, mais ne contient aucune information d&#39;identification, c&#39;est-à-dire.`.env`,`.config.json`ou`.aio`._
 
 ## Résolution des incidents
 
