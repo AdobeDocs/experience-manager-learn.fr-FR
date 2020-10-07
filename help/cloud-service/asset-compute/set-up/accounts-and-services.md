@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Ce didacticiel nécessite que les services suivants soient fournis et accessible
 Tous les services d&#39;Adobe doivent être accessibles via le même Adobe Org, en utilisant votre Adobe ID.
 
 + [AEM as a Cloud Service](#aem-as-a-cloud-service)
-+ [adobe Projet FireFly](#adobe-project-firefly)
++ [Adobe Projet FireFly](#adobe-project-firefly)
    + La mise en service peut prendre entre 2 et 10 jours
 + Enregistrement cloud
    + [Enregistrement Blob Azure](https://azure.microsoft.com/en-us/services/storage/blobs/)
@@ -39,15 +39,15 @@ Tous les services d&#39;Adobe doivent être accessibles via le même Adobe Org, 
 
 ## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
-L’accès à un AEM en tant qu’environnement Cloud Service est requis pour configurer les Profils de traitement AEM Assets afin d’appeler l’application Asset Compute personnalisée.
+L’accès à un AEM en tant qu’environnement Cloud Service est requis pour configurer les Profils de traitement AEM Assets afin d’appeler le travailleur Asset Compute personnalisé.
 
 Idéalement, un programme sandbox ou un environnement de développement non sandbox peut être utilisé.
 
 Notez qu’un SDK AEM local n’est pas suffisant pour compléter ce didacticiel, car le SDK AEM local ne peut pas communiquer avec les microservices Asset Compute, au lieu de cela, un véritable  en tant qu’environnement Cloud Service est nécessaire.
 
-## adobe Projet Firefly{#adobe-project-firefly}
+## Adobe Projet Firefly{#adobe-project-firefly}
 
-La structure [Adobe Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) est utilisée pour créer et déployer des applications personnalisées sur Adobe I/O Runtime, plate-forme sans serveur d&#39;Adobe. Les applications AEM Asset Compute sont des applications Firefly spécialement conçues qui s’intègrent à AEM Assets via des Profils de traitement et permettent d’accéder aux fichiers binaires et de les traiter.
+La structure [Adobe Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly.html) est utilisée pour créer et déployer des actions personnalisées sur Adobe I/O Runtime, la plate-forme sans serveur de l&#39;Adobe. Les projets AEM Asset Compute sont des projets Firefly spécialement conçus qui s’intègrent à AEM Assets via des Profils de traitement et permettent d’accéder aux fichiers binaires et de les traiter.
 
 Pour accéder au projet Firefly, inscrivez-vous à la prévisualisation.
 
@@ -57,9 +57,9 @@ Pour accéder au projet Firefly, inscrivez-vous à la prévisualisation.
 
 ## Enregistrement cloud
 
-L’enregistrement Cloud est nécessaire pour le développement local des applications Asset Compute.
+L’enregistrement du cloud est nécessaire pour le développement local des projets Asset Compute.
 
-Lorsque les applications Asset Compute sont déployées sur Adobe I/O Runtime pour une utilisation directe par AEM en tant que Cloud Service, cet enregistrement de cloud n’est pas strictement requis car AEM fournit l’enregistrement de cloud à partir duquel la ressource est lue et le rendu écrit.
+Lorsque les employés Asset Compute sont déployés sur Adobe I/O Runtime pour une utilisation directe par AEM en tant que Cloud Service, cet enregistrement de cloud n’est pas strictement requis car AEM fournit l’enregistrement de cloud à partir duquel la ressource est lue et le rendu écrit.
 
 ### Stockage Microsoft Azure Blob{#azure-blob-storage}
 
