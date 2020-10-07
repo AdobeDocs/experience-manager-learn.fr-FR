@@ -1,6 +1,6 @@
 ---
 title: Création d’un projet Asset Compute pour l’extensibilité Asset Compute
-description: Les applications Asset Compute sont des projets Node.js, générés à l’aide de l’interface de ligne de commande des E/S Adobe, qui adhèrent à une certaine structure leur permettant d’être déployés dans Adobe I/O Runtime et intégrés à l’AEM en tant que Cloud Service.
+description: Les projets Asset Compute sont des projets Node.js, générés à l’aide de l’interface de ligne de commande des E/S Adobe, qui adhèrent à une certaine structure leur permettant d’être déployés dans Adobe I/O Runtime et intégrés à l’AEM en tant que Cloud Service.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
 translation-type: tm+mt
-source-git-commit: a71c61304bbc9d54490086b3313c823225fbe2e0
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Création d’un projet Asset Compute
 
-Les applications Asset Compute sont des projets Node.js, générés à l’aide de l’interface de ligne de commande des E/S Adobe, qui adhèrent à une certaine structure qui leur permet d’être déployés dans Adobe I/O Runtime et intégrés à l’AEM en tant que Cloud Service. Un seul projet Asset Compute peut contenir un ou plusieurs agents Asset Compute, chacun ayant un point de terminaison HTTP distinct référencé depuis un AEM en tant que Profil de traitement Cloud Service.
+Les projets Asset Compute sont des projets Node.js, générés à l’aide de l’interface de ligne de commande des E/S Adobe, qui adhèrent à une certaine structure qui leur permet d’être déployés dans Adobe I/O Runtime et intégrés à l’AEM en tant que Cloud Service. Un seul projet Asset Compute peut contenir un ou plusieurs agents Asset Compute, chacun ayant un point de terminaison HTTP distinct référencé depuis un AEM en tant que Profil de traitement Cloud Service.
 
 ## Générer un projet
 
@@ -51,7 +51,7 @@ Utilisez le module [d&#39;interface de ligne de commande d&#39;](../set-up/devel
 
 ## Examiner l&#39;anatomie du projet
 
-Le projet Asset Compute généré est un projet Node.js pour une application spécialisée Adobe Project Firefly. Les éléments suivants sont propres au projet Asset Compute :
+Le projet Asset Compute généré est un projet Node.js pour un projet d’Adobe spécialisé Firefly, les éléments suivants étant propres au projet Asset Compute :
 
 + `/actions` contient des sous-dossiers, et chaque sous-dossier définit un agent de traitement d’Asset Compute.
    + `/actions/<worker-name>/index.js` définit le script JavaScript exécuté pour effectuer le travail de ce collaborateur.
@@ -65,6 +65,14 @@ Le projet Asset Compute généré est un projet Node.js pour une application sp�
 + `/.env` définit des variables d’environnement dans une `key=value` syntaxe et contient des secrets qui ne doivent pas être partagés. Pour protéger ces secrets, ce fichier ne doit PAS être archivé dans Git et est ignoré par le `.gitignore` fichier par défaut du projet.
    + Les variables définies dans ce fichier peuvent être remplacées en [exportant des variables](../deploy/runtime.md) sur la ligne de commande.
 
-Pour plus de détails sur l&#39;examen de la structure du projet, consultez l&#39;application [](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application)Anatomie d&#39;un Adobe Project Firefly.
+Pour plus de détails sur l&#39;examen de la structure du projet, consultez l&#39; [Anatomie d&#39;un projet](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application)de luciole du projet Adobe.
 
 La majeure partie du développement a lieu dans le `/actions` dossier développant les implémentations des programmes de travail et dans les tests `/test/asset-compute` d’écriture pour les agents informatiques d’actifs personnalisés.
+
+## Projet Asset Compute sur Github
+
+Le projet final Asset Compute est disponible sur Github à l&#39;adresse suivante :
+
++ [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
+
+_Github contient l&#39;état final du projet, entièrement renseigné avec les cas de travail et de test, mais ne contient aucune information d&#39;identification, c&#39;est-à-dire.`.env`,`.config.json`ou`.aio`._
