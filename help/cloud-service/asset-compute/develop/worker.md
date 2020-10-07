@@ -1,6 +1,6 @@
 ---
 title: Développer un intervenant en calcul des ressources
-description: Les agents Asset Compute sont au coeur d’une application Asset Compute, car ils fournissent des fonctionnalités personnalisées qui exécutent, ou orchestrent, le travail effectué sur une ressource pour créer un rendu.
+description: Les travailleurs de Asset Compute sont au coeur des projets Asset Compute, car ils fournissent des fonctionnalités personnalisées qui exécutent, ou orchestrent, le travail effectué sur une ressource pour créer un rendu.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1508'
 ht-degree: 0%
 
 ---
@@ -20,26 +20,28 @@ ht-degree: 0%
 
 # Développer un intervenant en calcul des ressources
 
-Les agents Asset Compute sont au coeur d’une application Asset Compute, car ils fournissent des fonctionnalités personnalisées qui exécutent, ou orchestrent, le travail effectué sur une ressource pour créer un rendu.
+Les travailleurs de Asset Compute sont au coeur d’un projet Asset Compute, car ils fournissent des fonctionnalités personnalisées qui exécutent, ou orchestrent, le travail effectué sur une ressource pour créer un nouveau rendu.
 
 Le projet Asset Compute génère automatiquement un programme de travail simple qui copie le fichier binaire d’origine dans un rendu nommé, sans aucune conversion. Dans ce tutoriel, nous allons modifier ce collaborateur pour créer un rendu plus intéressant, pour illustrer la puissance des collaborateurs d&#39;Asset Compute.
 
-Nous allons créer un programme de travail de calcul de ressources qui génère un nouveau rendu d’image horizontal, qui couvre l’espace vide à gauche et à droite du rendu de ressource avec une version floue de la ressource. La largeur, la hauteur et le flou du rendu final seront paramétrés.
+Nous allons créer un programme de travail Asset Compute qui génère un nouveau rendu d’image horizontal, qui couvre l’espace vide à gauche et à droite du rendu de fichier avec une version floue de la ressource. La largeur, la hauteur et le flou du rendu final seront paramétrés.
 
-## Présentation de l&#39;exécution d&#39;un intervenant Asset Compute
+## Flux logique d&#39;un appel de travailleur Asset Compute
 
-Les agents d’Asset Compute mettent en oeuvre le contrat d’API de travail SDK Asset Compute qui est simplement :
+Les agents d’Asset Compute implémentent le contrat d’API de travail SDK Asset Compute dans la `renditionCallback(...)` fonction, qui est conceptuellement :
 
 + __Input :__ Fichier binaire et paramètres d’origine d’une ressource AEM
 + __Output :__ Un ou plusieurs rendus à ajouter à la ressource AEM
 
-![Flux d&#39;exécution du collaborateur Asset Compute](./assets/worker/execution-flow.png)
+![Flux logique de travail de calcul des ressources](./assets/worker/logical-flow.png)
 
 1. Lorsqu’un intervenant Asset Compute est appelé à partir du service Auteur AEM, il est affecté à une ressource AEM via un Profil de traitement. Le binaire d’origine de la ressource __(1a)__ est transmis au programme de travail par le biais du `source` paramètre de la fonction de rappel de rendu et __(1b)__ tout paramètre défini dans le Profil de traitement par le biais du `rendition.instructions` jeu de paramètres.
-1. Le code de travail Asset Compute transforme le binaire source fourni dans __(1a)__ en fonction de tous les paramètres fournis par __(1b)__ pour générer un rendu du binaire source.
+1. La couche SDK Asset Compute accepte la demande du profil de traitement et orchestre l’exécution de la `renditionCallback(...)` fonction personnalisée du programme de travail Asset Compute, en transformant le fichier binaire source fourni dans __(1a)__ en fonction des paramètres fournis par __(1b)__ pour générer un rendu du fichier binaire source.
    + Dans ce didacticiel, le rendu est créé &quot;en cours&quot;, ce qui signifie que le collaborateur compose le rendu. Toutefois, le binaire source peut être envoyé à d’autres API de service Web pour la génération de rendu.
 1. Le programme de travail Asset Compute enregistre la représentation binaire du rendu dans `rendition.path` laquelle il peut être enregistré dans le service Auteur AEM.
-1. Une fois l’opération terminée, les données binaires écrites sur `rendition.path` sont exposées via le service AEM Author en tant que rendu pour l’AEM de l’actif sur lequel le travailleur Asset Compute a été appelé.
+1. Une fois l’opération terminée, les données binaires écrites sur `rendition.path` sont transportées via le SDK Asset Compute et exposées via le service d’auteur AEM en tant que rendu disponible dans l’interface utilisateur AEM.
+
+Le diagramme ci-dessus exprime les préoccupations des développeurs d’Asset Compute et le flux logique vers l’appel des employés d’Asset Compute. Pour les curieux, les détails [internes de l’exécution](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) d’Asset Compute sont disponibles, mais seuls les contrats publics d’API SDK d’Asset Compute doivent être pris en compte.
 
 ## Anatomie d&#39;un travailleur
 
@@ -106,7 +108,7 @@ Il s&#39;agit du fichier JavaScript de l&#39;intervenant que nous allons modifie
 
 ## Installation et importation des modules npm de prise en charge
 
-En tant qu’applications Node.js, les applications Asset Compute bénéficient de l’écosystème [robuste des modules](https://npmjs.com)npm. Pour exploiter les modules npm, nous devons d&#39;abord les installer dans notre projet d&#39;application Asset Compute.
+Basés sur Node.js, les projets Asset Compute bénéficient de l’écosystème [robuste des modules](https://npmjs.com)npm. Pour exploiter les modules npm, nous devons d&#39;abord les installer dans notre projet Asset Compute.
 
 Dans ce programme de travail, nous utilisons le [jimp](https://www.npmjs.com/package/jimp) pour créer et manipuler l’image de rendu directement dans le code Node.js.
 
@@ -380,6 +382,12 @@ Ils sont lus dans le travailleur `index.js` via :
    ![Rendu PNG paramétré](./assets/worker/parameterized-rendition.png)
 
 1. Téléchargez d’autres images dans la liste déroulante des fichiers ____ source, puis essayez d’exécuter le programme de travail avec d’autres paramètres !
+
+## Worker index.js sur Github
+
+Le dernier `index.js` est disponible sur Github à l&#39;adresse :
+
++ [aem-guides-wknd-asset-compute/actions/worker/index.js](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/actions/worker/index.js)
 
 ## Résolution des incidents
 
