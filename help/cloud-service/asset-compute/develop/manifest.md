@@ -1,6 +1,6 @@
 ---
 title: Configuration du fichier manifest.yml d’un projet Asset Compute
-description: Le fichier manifest.yml du projet Asset Compute décrit tous les travailleurs de cette application à déployer.
+description: Le fichier manifest.yml du projet Asset Compute décrit tous les travailleurs de ce projet à déployer.
 feature: asset-compute
 topics: renditions, development
 version: cloud-service
@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
 translation-type: tm+mt
-source-git-commit: 50519b9526182b528047069f211498099e3a4c88
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Chaque collaborateur peut configurer les [limites](https://www.adobe.io/apis/exp
 
 Examinez les conseils [relatifs au dimensionnement des](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#sizing-workers) Adobes avant de fixer des limites. Les employés de Asset Compute peuvent manquer de mémoire lors du traitement des ressources, ce qui entraîne la mort de l’exécution Adobe I/O Runtime. Assurez-vous donc que le collaborateur est dimensionné de manière appropriée pour gérer toutes les ressources candidates.
 
-1. ajoutez une `inputs` section à la nouvelle entrée `wknd-asset-compute` Actions. Cela permet d&#39;ajuster les performances globales et l&#39;allocation des ressources du travailleur Asset Compute.
+1. Ajoutez une `inputs` section à la nouvelle entrée `wknd-asset-compute` Actions. Cela permet d&#39;ajuster les performances globales et l&#39;allocation des ressources du travailleur Asset Compute.
 
 ```yml
 packages:
@@ -93,6 +93,13 @@ packages:
         annotations:
           require-adobe-auth: true
 ```
+
+## manifest.yml sur Github
+
+Le dernier `.manifest.yml` est disponible sur Github à l&#39;adresse :
+
++ [aem-guides-wknd-asset-compute/manifest.yml](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/manifest.yml)
+
 
 ## Validation du fichier manifest.yml
 
