@@ -1,6 +1,6 @@
 ---
-title: Utilisation des rapports en AEM Assets
-description: 'aem assets fournit un cadre de rapports au niveau de l’entreprise qui évolue pour les grands référentiels grâce à une expérience utilisateur intuitive. '
+title: Rapports Ressources en AEM Assets
+description: 'AEM Assets fournit un cadre de rapports au niveau de l’entreprise qui évolue pour les grands référentiels grâce à une expérience utilisateur intuitive. '
 feature: reports
 topics: authoring, operations, performance, metadata
 audience: all
@@ -9,17 +9,17 @@ activity: use
 version: 6.3, 6.4, 6.5
 kt: 648
 translation-type: tm+mt
-source-git-commit: 3b5dd583a458393a41dbce1d8eeb0095a22db734
+source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '91'
 ht-degree: 2%
 
 ---
 
 
-# Utilisation des rapports en AEM Assets{#using-reports-in-aem-assets}
+# Rapports sur les ressources{#using-reports-in-aem-assets}
 
-aem assets fournit un cadre de rapports au niveau de l’entreprise qui évolue pour les grands référentiels grâce à une expérience utilisateur intuitive.
+AEM Assets fournit un cadre de rapports au niveau de l’entreprise qui évolue pour les grands référentiels grâce à une expérience utilisateur intuitive.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22140/?quality=12&learn=on)
 
