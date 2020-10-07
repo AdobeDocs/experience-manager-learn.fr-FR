@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
 translation-type: tm+mt
-source-git-commit: 06632b90e5cdaf80b9343e5a69ab9c735d4a70f1
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Ce cas de test affirme que l’entrée paramétrée (`params.json`) pour le fich
    }
    ```
    Il s&#39;agit des mêmes clés/valeurs transmises dans la définition [du profil](../develop/development-tool.md)Asset Compute de l&#39;outil de `worker` développement, moins laclé.
-1. ajoutez le fichier [de](./assets/test/success-parameterized/rendition.png) rendu attendu à ce cas de test et nommez-le `rendition.png`. Ce fichier représente la sortie attendue du travailleur pour l’entrée donnée `file.jpg`.
+1. Ajoutez le fichier [de](./assets/test/success-parameterized/rendition.png) rendu attendu à ce cas de test et nommez-le `rendition.png`. Ce fichier représente la sortie attendue du travailleur pour l’entrée donnée `file.jpg`.
 1. Dans la ligne de commande, exécutez les tests de la racine du projet en exécutant `aio app test`
    + Assurez-vous que [Docker Desktop](../set-up/development-environment.md#docker) et les images Docker prises en charge sont installées et démarrées.
    + Arrêt de toute instance de l’outil de développement en cours d’exécution
@@ -109,6 +109,12 @@ Ce cas de test est testé pour s’assurer que le programme de travail génère 
    + Arrêt de toute instance de l’outil de développement en cours d’exécution
 
 ![Test - Contraste d’erreur](./assets/test/error-contrast/result.png)
+
+## Tests de cas sur Github
+
+Les derniers essais sont disponibles sur Github à l&#39;adresse suivante :
+
++ [aem-guides-wknd-asset-computing/test/asset-computing/worker](https://github.com/adobe/aem-guides-wknd-asset-compute/tree/master/test/asset-compute/worker)
 
 ## Résolution des incidents
 
