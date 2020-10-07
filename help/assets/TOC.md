@@ -5,9 +5,9 @@ breadcrumb-title: AEM Assets Tutorials
 sub-product: ressources
 team: TM
 translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: 10784dce34443adfa1fc6dc324242b1c021d2a17
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '239'
 ht-degree: 29%
 
 ---
@@ -47,10 +47,11 @@ ht-degree: 29%
    + [Amplification de recherche](./search-and-discovery/search-boost.md)
 
 + Fonctionnalités avancées{#advanced}
-   + [Autorisations (CUG)](./advanced/closed-user-groups.md)
-   + [Rapports sur les ressources](./advanced/asset-reports.md)
-   + [Statistiques sur les ressources](./advanced/asset-insights-launch-tutorial.md)
    + [Sortie PDF Annotations](./advanced/customizing-annotations-pdf-output.md)
+   + [Statistiques sur les ressources](./advanced/asset-insights-launch-tutorial.md)
+   + [Rapports sur les ressources](./advanced/asset-reports.md)
+   + [Autorisations (CUG)](./advanced/closed-user-groups.md)
+   + [Filigranes](./advanced/watermarks.md)
 
 + Gestion avancée des métadonnées{#metadata}
    + [Métadonnées en cascade](metadata/cascade-metadata-feature-video-use.md)
