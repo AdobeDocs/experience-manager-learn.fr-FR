@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -59,7 +59,7 @@ _Clic publicitaire de débogage d’un intervenant Asset Compute à l’aide de 
 1. Dans le code VS, appuyez sur l’icône Débogage dans le volet de navigation de gauche.
    + Si vous y êtes invité, appuyez sur __créer un fichier launch.json > Node.js__ pour créer un nouveau `launch.json` fichier.
    + Sinon, appuyez sur l’icône __Engrenage__ à droite de la liste déroulante Programme __de__ lancement pour ouvrir l’élément existant `launch.json` dans l’éditeur.
-1. ajoutez la configuration d’objet JSON suivante sur le `configurations` tableau :
+1. Ajoutez la configuration d’objet JSON suivante sur le `configurations` tableau :
 
    ```json
    {
@@ -69,7 +69,7 @@ _Clic publicitaire de débogage d’un intervenant Asset Compute à l’aide de 
        "attachSimplePort": 0,
        "runtimeExecutable": "wskdebug",
        "args": [
-           "wkndAemAssetCompute-0.0.1/__secured_worker",  // Version must match your Asset Compute application's version
+           "wkndAemAssetCompute-0.0.1/__secured_worker",  // Version must match your Asset Compute worker's version
            "${workspaceFolder}/actions/worker/index.js",  // Points to your worker
            "-l",
            "--ngrok"
