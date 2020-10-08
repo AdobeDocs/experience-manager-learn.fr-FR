@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -25,6 +25,7 @@ Les projets Asset Compute sont des projets spécialement définis de Adobe Proje
 ## Création et configuration d&#39;une luciole de projet d&#39;Adobe dans la console de développement d&#39;Adobe{#set-up}
 
 >[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
+
 _Clic publicitaire de configuration de la luciole du projet d&#39;Adobe (sans audio)_
 
 1. Connectez-vous à [Adobe Developer Console](https://console.adobe.io) à l’aide de l’Adobe ID associé aux [comptes et services](./accounts-and-services.md)configurés. Vérifiez que vous êtes un administrateur ____ système ou que vous êtes dans le rôle __de__ développeur pour l’organisation d’Adobes appropriée.
