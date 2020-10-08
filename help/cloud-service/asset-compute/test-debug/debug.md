@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -45,6 +45,7 @@ Les instructions de journal suivantes peuvent faire l’objet d’une révision 
 Le module npm [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) prend en charge l&#39;association d&#39;un débogueur aux agents Asset Compute, y compris la possibilité de définir des points d&#39;arrêt dans le code VS et de parcourir le code.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40383/?quality=12&learn=on)
+
 _Clic publicitaire de débogage d’un intervenant Asset Compute à l’aide de wskdebug (sans audio)_
 
 1. Vérifier que les modules [wskdebug](../set-up/development-environment.md#wskdebug) et [ngrok](../set-up/development-environment.md#ngork) npm sont installés
