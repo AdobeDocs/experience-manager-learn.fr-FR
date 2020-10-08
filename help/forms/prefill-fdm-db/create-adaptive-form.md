@@ -10,7 +10,7 @@ version: 6.4,6.5
 kt: 5813
 thumbnail: kt-5813.jpg
 translation-type: tm+mt
-source-git-commit: fc85af36c7619783045f172ccd4b88c265a63166
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 2%
@@ -61,7 +61,8 @@ L’étape suivante consiste à lier les champs de texte du formulaire adaptatif
 | Nom de famille | /newhire/lastName |
 
 >[!NOTE]
-N’hésitez pas à ajouter des champs de texte supplémentaires et à les lier aux éléments de modèle de données de formulaire appropriés.
+>
+>N’hésitez pas à ajouter des champs de texte supplémentaires et à les lier aux éléments de modèle de données de formulaire appropriés.
 
 ## Configurer la table des bénéficiaires
 
