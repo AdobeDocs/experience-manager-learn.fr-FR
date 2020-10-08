@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 2%
@@ -68,6 +68,7 @@ Si vous n&#39;avez pas encore accès à l&#39;Enregistrement Blob Microsoft Azur
 Ce tutoriel utilisera l&#39;Enregistrement Azure Blob, cependant [Amazon S3](#amazon-s3) peut être utilisé en plus de quelques variantes mineures du tutoriel.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40377/?quality=12&learn=on)
+
 _Clic publicitaire de l&#39;Enregistrement Azure Blob de mise en service (sans audio)_
 
 
