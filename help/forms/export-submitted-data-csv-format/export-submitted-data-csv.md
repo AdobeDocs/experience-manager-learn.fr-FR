@@ -7,7 +7,7 @@ audience: developer
 doc-type: article
 activity: implement
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 1%
@@ -40,7 +40,8 @@ Le service OSGI suivant a été créé pour exporter les données envoyées au f
 * Ligne 89 : Il s’agit du point d’entrée du service. La méthode `getCSVFile(..)` utilise formName comme paramètre d’entrée et récupère les données envoyées relatives au nom de formulaire donné.
 
 >[!NOTE]
-Le code suppose que vous avez défini la connexion mise en pool de DataSource appelée &quot;aemformstutorial&quot; dans la console Web Felix. Le code suppose également que vous disposez d&#39;un schéma dans la base de données appelé aemformstutorial.
+>
+>Le code suppose que vous avez défini la connexion mise en pool de DataSource appelée &quot;aemformstutorial&quot; dans la console Web Felix. Le code suppose également que vous disposez d&#39;un schéma dans la base de données appelé aemformstutorial.
 
 ```java
 package com.aemforms.storeandexport.core;
