@@ -11,7 +11,7 @@ audience: developer
 kt: 4679
 thumbnail: 30603.jpg
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '1508'
 ht-degree: 2%
@@ -74,6 +74,7 @@ La version des outils du répartiteur diffère de celle du SDK AEM. Assurez-vous
 Notez que toutes les commandes publiées ci-dessous supposent que le répertoire de travail actuel contient le contenu des outils du répartiteur en expansion.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30601/?quality=12&learn=on)
+
 *Cette vidéo utilise macOS à des fins d’illustration. Les commandes Windows/Linux équivalentes peuvent être utilisées pour obtenir des résultats similaires.*
 
 ## Comprendre les fichiers de configuration du répartiteur
@@ -86,6 +87,7 @@ Les outils de répartiteur fournissent un ensemble de fichiers de configuration 
 Ces fichiers sont destinés à être copiés dans un projet Maven Experience Manager vers le `dispatcher/src` dossier, s’ils n’existent pas déjà dans le projet Maven Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30602/?quality=12&learn=on)
+
 *Cette vidéo utilise macOS à des fins d’illustration. Les commandes Windows/Linux équivalentes peuvent être utilisées pour obtenir des résultats similaires.*
 
 Une description complète des fichiers de configuration est disponible dans les outils du répartiteur non compressés sous `dispatcher-sdk-x.x.x/docs/Config.html`forme de fichier.
@@ -142,6 +144,7 @@ Pour exécuter les outils du répartiteur par rapport à la configuration du ré
    ```
 
 >[!VIDEO](https://video.tv.adobe.com/v/30603/?quality=12&learn=on)
+
 *Cette vidéo utilise macOS à des fins d’illustration. Les commandes Windows/Linux équivalentes peuvent être utilisées pour obtenir des résultats similaires.*
 
 ## Journaux des outils du répartiteur
@@ -177,6 +180,7 @@ Un ou plusieurs paramètres peuvent être transmis à `docker_run`
    ```
 
 >[!VIDEO](https://video.tv.adobe.com/v/30604/?quality=12&learn=on)
+
 *Cette vidéo utilise macOS à des fins d’illustration. Les commandes Windows/Linux équivalentes peuvent être utilisées pour obtenir des résultats similaires.*
 
 ## Quand mettre à jour les outils du répartiteur{#dispatcher-tools-version}
@@ -267,7 +271,7 @@ AH00016: Configuration Failed
 ## Ressources supplémentaires
 
 + [Télécharger AEM SDK](https://experience.adobe.com/#/downloads)
-+ [adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
++ [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Télécharger le Docteur](https://www.docker.com/)
 + [Télécharger le site Web de référence AEM (WKND)](https://github.com/adobe/aem-guides-wknd/releases)
 + [Documentation du répartiteur Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
