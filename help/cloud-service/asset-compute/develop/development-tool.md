@@ -10,7 +10,7 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -50,6 +50,7 @@ L’outil de développement est alors début à l’adresse __http://localhost:9
 ### Exécution d’un travailleur personnalisé
 
 >[!VIDEO](https://video.tv.adobe.com/v/40241?quality=12&learn=on)
+
 _Clic publicitaire pour exécuter un travail de calcul des ressources dans l’outil de développement (sans audio)_
 
 1. Assurez-vous que l’outil de développement d’Asset Compute est démarré à partir de la racine du projet à l’aide de la `aio app run` commande.
