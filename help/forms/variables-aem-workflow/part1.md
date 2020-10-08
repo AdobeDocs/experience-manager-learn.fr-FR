@@ -10,7 +10,7 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -29,14 +29,18 @@ La variable XML peut être utilisée pour prérenseigner le formulaire adaptatif
 La variable String peut être renseignée par Xpathing dans la variable XML. Cette variable de chaîne est ensuite généralement utilisée pour renseigner les espaces réservés du modèle de courrier électronique dans le composant Envoyer un courrier électronique.
 
 >[!NOTE]
-Si votre formulaire adaptatif n’est pas associé à XSD, XPath pour obtenir la valeur d’un élément ressemblera**à /afData/afUnboundData/data/submitterName.**
+>
+>Si votre formulaire adaptatif n’est pas associé à XSD, le XPath permettant d’obtenir la valeur d’un élément ressemblera à
+>
+>**/afData/afUnboundData/data/submitterName**
 
 Les données du formulaire adaptatif sont stockées sous l’élément de données comme illustré ci-dessus. **_Dans le XPath ci-dessus submitterName est le nom du champ de texte dans le formulaire adaptatif._**
 
 >[!NOTE]
-**aem forms 6.5.0** - Lorsque vous créez une variable de type XML pour capturer les données envoyées dans votre modèle de processus, n’associez pas le schéma XSD à la variable. En effet, lorsque vous envoyez un formulaire adaptatif basé sur XSD, les données envoyées ne sont pas conformes au schéma XSD. Les données de plainte XSD sont incluses dans l’élément /afData/afBoundData/.
-
-**aem forms 6.5.1** - Si vous associez XSD à votre variable XML, vous pouvez parcourir les éléments du schéma pour faire le mappage des variables. Vous ne pourrez pas accéder aux données de formulaire qui ne sont pas liées aux éléments de schéma. Si votre cas d&#39;utilisation consiste à accéder aux données liées aux éléments de schéma ainsi qu&#39;aux données non liées, ne liez pas le schéma à votre variable XML dans le flux de travail. Vous devrez utiliser l&#39;expression XPath appropriée pour obtenir les données dont vous avez besoin.
+>
+>**AEM Forms 6.5.0** - Lorsque vous créez une variable de type XML pour capturer les données envoyées dans votre modèle de processus, n’associez pas le schéma XSD à la variable. En effet, lorsque vous envoyez un formulaire adaptatif basé sur XSD, les données envoyées ne sont pas conformes au schéma XSD. Les données de plainte XSD sont incluses dans l’élément /afData/afBoundData/.
+>
+>**AEM Forms 6.5.1** - Si vous associez XSD à votre variable XML, vous pouvez parcourir les éléments du schéma pour faire le mappage des variables. Vous ne pourrez pas accéder aux données de formulaire qui ne sont pas liées aux éléments de schéma. Si votre cas d&#39;utilisation consiste à accéder aux données liées aux éléments de schéma ainsi qu&#39;aux données non liées, ne liez pas le schéma à votre variable XML dans le flux de travail. Vous devrez utiliser l&#39;expression XPath appropriée pour obtenir les données dont vous avez besoin.
 
 ## Création de variables XML
 
@@ -44,7 +48,8 @@ Les données du formulaire adaptatif sont stockées sous l’élément de donné
 
 ### Utilisation du Schéma avec une variable XML
 
-**Mappage d’une variable XML avec un schéma. Utilisez cette fonctionnalité avec AEM Forms 6.5.1 et versions ultérieures**
+**Mappage d’une variable XML avec un schéma. Utilisation de cette fonctionnalité avec AEM Forms 6.5.1 et versions ultérieures**
+
 >[!VIDEO](https://video.tv.adobe.com/v/28098?quality=9&learn=on)
 
 #### Utilisation de la variable dans l’envoi d’un courrier électronique
