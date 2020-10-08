@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 1e615d1c51fa0c4c0db335607c29a8c284874c8d
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 3%
@@ -38,8 +38,12 @@ Les Acroforms sont des formulaires créés à l’aide d’Acrobat. Vous pouvez 
 [document Balises de texte Adobe Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html)
 
 >[!NOTE]
-Assurez-vous que le nom du fichier acroform ne contient aucun espace. L&#39;exemple de code actuel ne gère pas les espaces.
-Les noms de champ de formulaire ne peuvent contenir que les éléments suivants :
-* espace unique
-* soulignement unique
-* Caractères alphanumériques
+>
+>Assurez-vous que le nom du fichier acroform ne contient aucun espace. L&#39;exemple de code actuel ne gère pas les espaces.
+>
+>Les noms de champ de formulaire ne peuvent contenir que les éléments suivants :
+>
+>* espace unique
+>* soulignement unique
+>* Caractères alphanumériques
+
