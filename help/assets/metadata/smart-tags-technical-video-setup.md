@@ -12,7 +12,7 @@ doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 43%
@@ -30,7 +30,7 @@ Fournit des instructions étape par étape pour intégrer Adobe Experience Manag
 
 >[!NOTE]
 >
-> Pour configurer Smart Content Service, vous devez disposer d’un compte Adobe ID avec des droits d’administrateur pour l’entreprise avec Smart Content Service activé.
+>Pour configurer Smart Content Service, vous devez disposer d’un compte Adobe ID avec des droits d’administrateur pour l’entreprise avec Smart Content Service activé.
 
 La vidéo détaille les tâches clés suivantes qui sont requises pour configurer Smart Content Service.
 
