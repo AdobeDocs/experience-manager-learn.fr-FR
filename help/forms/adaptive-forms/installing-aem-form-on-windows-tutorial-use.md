@@ -12,27 +12,33 @@ activity: setup
 version: 6.4,6.5
 discoiquuid: 1182ef4d-5838-433b-991d-e24ab805ae0e
 translation-type: tm+mt
-source-git-commit: 82127d5be9a4b969537738f9ba537efe07f38479
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 7%
 
 ---
 
+
 # Procédure simplifiée d’installation d’AEM Forms sous Windows
 
 >[!NOTE]
+>
 >Ne cliquez jamais sur l&#39;AEM JAR de Début rapide si vous avez l&#39;intention d&#39;utiliser AEM Forms.
+>
 >Assurez-vous également qu’il n’y a aucun espace dans le chemin d’accès du dossier d’installation AEM Forms.
+>
 >Par exemple, n’installez pas AEM Forms dans c:\jack and jill\AEM Forms folder
 
 >[!NOTE]
-Si vous installez AEM Forms 6.5, assurez-vous d&#39;avoir installé les redistributables Microsoft Visual C++ 32 bits suivants.
+>
+>Si vous installez AEM Forms 6.5, assurez-vous d&#39;avoir installé les redistributables Microsoft Visual C++ 32 bits suivants.
+>
+>* Redistribuable Microsoft Visual C++ 2008
+>* Redistribuable Microsoft Visual C++ 2010
+>* Redistribuable Microsoft Visual C++ 2012
+>* Redistribuable Microsoft Visual C++ 2013 (à partir de la version 6.5)
 
-* Redistribuable Microsoft Visual C++ 2008
-* Redistribuable Microsoft Visual C++ 2010
-* Redistribuable Microsoft Visual C++ 2012
-* Redistribuable Microsoft Visual C++ 2013 (à partir de la version 6.5)
 
 Bien que nous vous recommandons de suivre la documentation [](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) officielle pour installer AEM Forms. Pour installer et configurer AEM Forms sur l’environnement Windows, procédez comme suit :
 
@@ -80,11 +86,11 @@ Bien que nous vous recommandons de suivre la documentation [](https://helpx.adob
    * **Une fois que tous les lots sont principaux (sauf le lot AEMFD Signatures), redémarrez votre système pour terminer l’installation d’AEM Forms.**
 
 
-* ajouter `sun.util.calendar` le package à la liste autorisée :
+* Ajouter `sun.util.calendar` le package à la liste autorisée :
 
    1. Ouvrez la console Web Felix dans la fenêtre de votre [navigateur.](http://localhost:4502/system/console/configMgr)
    2. Recherchez et ouvrez la configuration du pare-feu de désérialisation: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
-   3. ajoute `sun.util.calendar` en tant que nouvelle entrée sous `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
+   3. Ajoute `sun.util.calendar` en tant que nouvelle entrée sous `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
    4. Enregistrez les modifications.
 
 Félicitations ! ! ! Vous avez maintenant installé et configuré AEM Forms sur votre système.
