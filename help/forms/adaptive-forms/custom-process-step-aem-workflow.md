@@ -10,7 +10,7 @@ doc-type: tutorial
 activity: understand
 version: 6.5
 translation-type: tm+mt
-source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 1%
@@ -129,7 +129,8 @@ Lignes 24-26 - Get ResourceResolver et ensuite la ressource pointant vers la pi�
 Le reste du code crée des objets de Document en effectuant une itération sur l&#39;objet enfant de la ressource pointant vers attachementFilePath à l&#39;aide de l&#39;API. Cet objet document est spécifique à AEM Forms. Nous utilisons ensuite la méthode copyToFile de l&#39;objet document pour enregistrer l&#39;objet document.
 
 >[!NOTE]
-Puisque nous utilisons un objet Document spécifique à AEM Forms, vous devez inclure la dépendance aemfd-client-sdk dans votre projet maven. L’ID de groupe est com.adobe.aemfd et l’ID artefact est aemfd-client-sdk.
+>
+>Puisque nous utilisons un objet Document spécifique à AEM Forms, vous devez inclure la dépendance aemfd-client-sdk dans votre projet maven. L’ID de groupe est com.adobe.aemfd et l’ID artefact est aemfd-client-sdk.
 
 #### Création et déploiement
 
@@ -143,5 +144,5 @@ Créez un formulaire adaptatif. Faites glisser le composant Pièces jointes vers
 
 Enregistrez les paramètres.
 
-Prévisualiser le formulaire. ajoutez quelques pièces jointes et envoyez le formulaire. Les pièces jointes doivent être enregistrées dans le système de fichiers à l’emplacement indiqué par vous dans le flux de travail.
+Prévisualiser le formulaire. Ajoutez quelques pièces jointes et envoyez le formulaire. Les pièces jointes doivent être enregistrées dans le système de fichiers à l’emplacement indiqué par vous dans le flux de travail.
 
