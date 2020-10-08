@@ -8,7 +8,7 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4
 translation-type: tm+mt
-source-git-commit: 1ba56ad44df4dc327cf37d39ac72539b5c7af4a2
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 2%
@@ -32,4 +32,5 @@ L’étape suivante consiste à créer un schéma à partir de l’Acroform cré
 Pour que cette démonstration fonctionne sur votre système, vous devez créer un dossier appelé `acroforms` en AEM Assets. Téléchargez l’Acroform dans ce `acroforms` dossier.
 
 >[!NOTE]
-L’exemple de code recherche l’acroformulaire dans ce dossier. L’acroformulaire est nécessaire pour fusionner les données envoyées du formulaire adaptatif.
+>
+>L’exemple de code recherche l’acroformulaire dans ce dossier. L’acroformulaire est nécessaire pour fusionner les données envoyées du formulaire adaptatif.
