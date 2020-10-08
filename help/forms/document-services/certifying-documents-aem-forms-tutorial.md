@@ -11,7 +11,7 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 translation-type: tm+mt
-source-git-commit: ca4a8f02ea9ec5db15dbe6f322731748da90be6b
+source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Cet article fournit un exemple de lot OSGI pour certifier des documents pdf à l
 
 Pour certifier des documents à l’aide d’AEM Forms, les étapes suivantes doivent être suivies :
 
-## ajouter un certificat au Trust Store {#adding-certificate-to-trust-store}
+## Ajouter un certificat au Trust Store {#adding-certificate-to-trust-store}
 
 Suivez les étapes mentionnées ci-dessous pour ajouter le certificat au fichier de stockage des clés dans AEM
 
@@ -49,8 +49,10 @@ Vous pouvez créer votre propre lot OSGi et utiliser le SDK client AEM Forms pou
 * [Utiliser l&#39;API Document Service](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 Vous pouvez également utiliser l’exemple de lot inclus dans les ressources de ce didacticiel.
+
 >[!NOTE]
-L’exemple d’assemblage utilise un alias appelé &quot;ares&quot; pour certifier les documents. Assurez-vous donc que votre alias s’appelle &quot;ares&quot; lors de l’utilisation de ce lot.
+>
+>L’exemple d’assemblage utilise un alias appelé &quot;ares&quot; pour certifier les documents. Assurez-vous donc que votre alias s’appelle &quot;ares&quot; lors de l’utilisation de ce lot.
 
 ## Test de l&#39;exemple sur votre système local
 
