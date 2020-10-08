@@ -10,10 +10,10 @@ version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
 translation-type: tm+mt
-source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
+source-git-commit: 7a830d5a04ce53014b86f9f05238dd64f79edffc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '457'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +21,10 @@ ht-degree: 0%
 # Personnalisation de l’expérience de la page Web complète {#personalization-fpe}
 
 Découvrez comment créer une activité pour rediriger les pages de votre site hébergées sur AEM vers une nouvelle page à l’aide de Adobe Target.
+
+Avant de créer une Activité dans Cible, vous devez effectuer la configuration :
+
+1. [Intégrer l&#39;Experience Platform Launch et l&#39;AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
 
 ## Présentation du scénario
 
