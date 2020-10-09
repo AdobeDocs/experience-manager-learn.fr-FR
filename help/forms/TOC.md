@@ -6,10 +6,10 @@ user-guide-description: Collection of AEM Forms resources for beginners and expe
 breadcrumb-title: AEM Forms Tutorials
 index: y
 translation-type: tm+mt
-source-git-commit: 4c08b09f59be0eb6644aaec729807b92bc339e82
+source-git-commit: 8aed732a0488aa9303ddf35f6c2065eb08ec0c4c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '843'
+ht-degree: 3%
 
 ---
 
@@ -25,8 +25,8 @@ ht-degree: 0%
    + [Créer un fragment de formulaire](creating-your-first-adaptive-form/create-form-fragment.md)
    + [Créer un formulaire adaptatif](creating-your-first-adaptive-form/create-adaptive-form.md)
    + [Configuration du panneau racine et ajout de panneaux enfants](creating-your-first-adaptive-form/configuring-root-panel-and-adding-child-panels.md)
-   + [ajouter des composants au panneau Personnes](creating-your-first-adaptive-form/adding-components-to-people-panel.md)
-   + [ajouter un tableau au panneau de revenu](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
+   + [Ajouter des composants au panneau Personnes](creating-your-first-adaptive-form/adding-components-to-people-panel.md)
+   + [Ajouter un tableau au panneau de revenu](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
    + [Configuration du panneau Ressources](creating-your-first-adaptive-form/configuring-assets-panel.md)
    + [Utilisation de fonctions personnalisées et d’un éditeur de code](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
 + Gestion des envois de formulaire {#handling-af-form-submissions}
@@ -82,7 +82,7 @@ ht-degree: 0%
    + [Modifier la configuration de la source de données](adaptive-forms/modify-data-source-configuration-settings-article.md)
    + [Préremplissage du Forms HTML5](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modèle de données de formulaire avec Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
-   + [ajouter dynamiquement des éléments au composant de choix](adaptive-forms/choice-group-items-adding-dynamically-article.md)
+   + [Ajouter dynamiquement des éléments au composant de choix](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + Préremplissage d’un formulaire adaptatif à l’aide du modèle de données de formulaire{#prefill-fdm-db}
    + [Présentation](prefill-fdm-db/introduction.md)
    + [Création de tables de base de données](prefill-fdm-db/create-database-tables.md)
@@ -91,7 +91,7 @@ ht-degree: 0%
    + [Créer un formulaire adaptatif](prefill-fdm-db/create-adaptive-form.md)
 + Personnalisation de la boîte de réception{#inbox-customization}
    + [Présentation](inbox-customization/introduction.md)
-   + [ajouter une colonne personnalisée](inbox-customization/add-married-column.md)
+   + [Ajouter une colonne personnalisée](inbox-customization/add-married-column.md)
    + [Utilisation d’un modèle de cadre](inbox-customization/use-sightly-template.md)
 
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 + Formulaires HTML5{#html5-forms}
    + [Créer un formulaire HTML5](html5-forms/create-html5-form.md)
    + [Gérer l’envoi de formulaire HTML5](html5-forms/handle-html5-form-submission.md)
-+ aem forms et Adobe Sign{#forms-and-sign}
++ AEM Forms et Adobe Sign{#forms-and-sign}
    + [Présentation](aem-forms-and-adobe-sign/introduction.md)
    + [Configurer SSL](aem-forms-and-adobe-sign/set-up-ssl.md)
    + [Création d’une application d’API Adobe Sign](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
@@ -115,7 +115,7 @@ ht-degree: 0%
    + [Utilisation de modèles XDP avec Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
 + Variables dans le processus AEM{#variables-aem-workflow}
    + [Introduction - Variables dans le processus](variables-aem-workflow/introduction.md)
-   + [Envoi de variables XML](variables-aem-workflow/part1.md)
+   + [Variables XML](variables-aem-workflow/part1.md)
    + [Variables JSON](variables-aem-workflow/part2.md)
    + [Variables de document](variables-aem-workflow/part3.md)
    + [Variable ArrayList](variables-aem-workflow/part4.md)
@@ -144,13 +144,13 @@ ht-degree: 0%
 + Liste des types de ressources personnalisés dans Forms Portal{#listing-custom-asset-types}
    + [Partie1-Enregistrement des types de ressource personnalisés](listing-custom-asset-types/part1.md)
    + [Partie2 - Création d&#39;un modèle personnalisé](listing-custom-asset-types/part2.md)
-+ aem forms avec Marketo{#aem-forms-with-marketo}
++ AEM Forms avec Marketo{#aem-forms-with-marketo}
    + [Partie 1 - Introduction](aem-forms-with-marketo/part1.md)
    + [Partie2 - Authentification personnalisée](aem-forms-with-marketo/part2.md)
    + [Partie 3 - Source de données](aem-forms-with-marketo/part3.md)
    + [Partie 4 - Tout assembler](aem-forms-with-marketo/part4.md)
 
-+ aem forms avec Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
++ AEM Forms avec Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
    + [Présentation](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
    + [Partie 1 - Génération de jetons](aem-forms-with-adobe-campaign/partone.md)
    + [Partie2 - Création d&#39;un Profil ACS sur l&#39;envoi de formulaire](aem-forms-with-adobe-campaign/parttwo.md)
@@ -169,7 +169,9 @@ ht-degree: 0%
    + [Appliquer les droits d’utilisation au format PDF sur un rendu XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [Appliquer les droits d’utilisation au PDF téléchargé](document-services/apply-reader-extension-rights-to-pdf.md)
    + [Certifier les Documents](document-services/certifying-documents-aem-forms-tutorial.md)
-+ Communications interactives pour le Canal de l&#39;impression {#ic-print-channel-tutorial}
+   + [Assemblage de pièces jointes de formulaire](document-services/assemble-form-attachments.md)
++ Communications interactives pour le Canal de l&#39;impression
+{#ic-print-channel-tutorial}
    + [Présentation](ic-print-channel-tutorial/introduction.md)
    + [Configurer Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
    + [Créer une source de données](ic-print-channel-tutorial/create-data-source.md)
@@ -177,9 +179,9 @@ ht-degree: 0%
    + [Création d’une mise en page XDP à l’aide de Forms Designer](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
    + [Créer un fragment de Document](ic-print-channel-tutorial/create-document-fragment.md)
    + [Créer un Document de Canal d&#39;impression](ic-print-channel-tutorial/create-print-channel-document.md)
-   + [ajouter du contenu aux zones de Cible](ic-print-channel-tutorial/add-content-to-target-areas.md)
+   + [Ajouter du contenu aux zones de Cible](ic-print-channel-tutorial/add-content-to-target-areas.md)
    + [Configuration du graphique en courbes](ic-print-channel-tutorial/configuring-line-chart.md)
-   + [ajouter le tableau au Canal d&#39;impression](ic-print-channel-tutorial/adding-table-to-print-channel.md)
+   + [Ajouter le tableau au Canal d&#39;impression](ic-print-channel-tutorial/adding-table-to-print-channel.md)
    + [Utilisation de Watched Folder pour générer des Documents](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
    + [Ouverture de l’interface utilisateur de l’agent lors de l’envoi du formulaire](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
 + Communications interactives {#interactive-communications}
@@ -199,7 +201,7 @@ ht-degree: 0%
    + [Création d&#39;un modèle de Document de Canal Web](ic-web-channel-tutorial/partfour.md)
    + [Création d’un fragment de Document](ic-web-channel-tutorial/partfive.md)
    + [Création d’un Document de communication interactif](ic-web-channel-tutorial/partsix.md)
-   + [ajouter du texte et des images](ic-web-channel-tutorial/partseven.md)
+   + [Ajouter du texte et des images](ic-web-channel-tutorial/partseven.md)
    + [Configuration du graphique en courbes](ic-web-channel-tutorial/parteight.md)
    + [Configuration du tableau](ic-web-channel-tutorial/partnine.md)
    + [Configuration du graphique à colonnes](ic-web-channel-tutorial/partten.md)
