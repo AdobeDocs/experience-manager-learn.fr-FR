@@ -10,9 +10,9 @@ version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
 translation-type: tm+mt
-source-git-commit: 8aed732a0488aa9303ddf35f6c2065eb08ec0c4c
+source-git-commit: a9fbd73f128998bb201ef8715e5e725e94ee1ede
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '619'
 ht-degree: 1%
 
 ---
@@ -137,7 +137,7 @@ Voici la structure de dossiers de charge utile après l’assemblage et le stock
 * Téléchargez le formulaire [](assets/assemble-form-attachments-af.zip) Assembler les pièces jointes du formulaire sur votre système local.
 * Importez le formulaire à partir[de la page Formulaires et Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) .
 * Téléchargez [le processus](assets/assemble-form-attachments.zip) et importez-le dans AEM à l’aide de Package Manager.
-* Télécharger le lot personnalisé(assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
+* Téléchargement du lot [personnalisé](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
 * Déploiement et début du lot à l’aide de la console [Web](http://localhost:4502/system/console/bundles)
 * Pointez votre navigateur sur le formulaire [AssembleAttachments.](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * Ajouter une pièce jointe dans le Document d’identification et quelques documents pdf à la section des relevés bancaires
