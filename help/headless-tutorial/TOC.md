@@ -1,7 +1,7 @@
 ---
-user-guide-title: Prise en main AEM sans en-tête
-user-guide-description: An end-to-end tutorial illustrating how to build-out and expose content using AEM Headless.
-breadcrumb-title: AEM Headless Tutorial
+user-guide-title: Prise en main d’AEM sans affichage
+user-guide-description: Tutoriel complet illustrant comment créer et exposer du contenu à l’aide d’AEM sans affichage.
+breadcrumb-title: Tutoriel AEM sans affichage
 version: 6.5
 sub-product: content-services
 doc-type: tutorial
@@ -14,13 +14,13 @@ index: y
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 2%
+source-wordcount: '64'
+ht-degree: 42%
 
 ---
 
 
-# Getting Started with AEM Headless{#getting-started-with-aem-headless}
+# Prise en main d’AEM sans affichage{#getting-started-with-aem-headless}
 
 + [Présentation](./overview.md)
 + [1 - Configuration du didacticiel](./chapter-1.md)
