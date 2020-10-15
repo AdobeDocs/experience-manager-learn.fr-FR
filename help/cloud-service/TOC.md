@@ -1,14 +1,14 @@
 ---
 user-guide-title: Tutoriels sur Adobe Experience Manager as a Cloud Service
-user-guide-description: A collection of tutorials for Adobe Experience Manager as a Cloud Service.
-breadcrumb-title: AEM as a Cloud Service Tutorials
+user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a Cloud Service.
+breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: service cloud
 team: TM
 translation-type: tm+mt
 source-git-commit: 50519b9526182b528047069f211498099e3a4c88
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 31%
+source-wordcount: '197'
+ht-degree: 38%
 
 ---
 
@@ -44,9 +44,9 @@ ht-degree: 31%
       + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
 + Accès aux AEM{#accessing}
    + [Présentation](./accessing/overview.md)
-   + [adobes utilisateurs IMS](./accessing/adobe-ims-users.md)
+   + [Adobes utilisateurs IMS](./accessing/adobe-ims-users.md)
    + [Groupes d’utilisateurs IMS Adobe](./accessing/adobe-ims-user-groups.md)
-   + [profils de produits IMS Adobe](./accessing/adobe-ims-product-profiles.md)
+   + [Profils de produits IMS Adobe](./accessing/adobe-ims-product-profiles.md)
    + [aem utilisateurs, groupes et autorisations](./accessing/aem-users-groups-and-permissions.md)
    + [Configuration de l’accès à AEM parcours](./accessing/walk-through.md)
 + Migration {#migration}
@@ -56,7 +56,7 @@ ht-degree: 31%
    + Configuration{#set-up}
       + [Approvisionnement des comptes et des services](./asset-compute/set-up/accounts-and-services.md)
       + [Environnement de développement local](./asset-compute/set-up/development-environment.md)
-      + [adobe Projet Firefly](./asset-compute/set-up/firefly.md)
+      + [Adobe Projet Firefly](./asset-compute/set-up/firefly.md)
    + Développer{#develop}
       + [Création d’un projet Asset Compute](./asset-compute/develop/project.md)
       + [Configuration des variables d’environnement](./asset-compute/develop/environment-variables.md)
