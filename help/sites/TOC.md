@@ -1,18 +1,18 @@
 ---
-user-guide-title: Vidéos et Tutorials AEM Sites
-user-guide-description: A collection of videos and tutorials for Adobe Experience Manager Sites.
-breadcrumb-title: AEM Sites Tutorials
+user-guide-title: Vidéos et tutoriels AEM Sites
+user-guide-description: Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Sites.
+breadcrumb-title: Tutoriels AEM Sites
 sub-product: sites
 translation-type: tm+mt
 source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 11%
+source-wordcount: '471'
+ht-degree: 16%
 
 ---
 
 
-# Vidéos et Tutorials AEM Sites {#sites}
+# Vidéos et tutoriels AEM Sites {#sites}
 
 + [Présentation](overview.md)
 + Création de pages {#page-authoring}
@@ -49,7 +49,7 @@ ht-degree: 11%
 + Développement {#developing}
    + [Archétype de projet AEM](developing/aem-project-archetype.md)
    + [Prise en main de AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-   + [Prise en main AEM sans en-tête](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
+   + [Prise en main d’AEM sans affichage](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [Prise en main de AEM SPA Editor et réaction](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
    + [Prise en main de AEM SPA Editor et Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [Extension des propriétés de la page](developing/page-properties-technical-video-develop.md)
@@ -65,7 +65,7 @@ ht-degree: 11%
    + [Utilisation de fragments d’expérience avec Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configuration de ContextHub](personalization/context-hub-technical-video-setup.md)
 + des applications sur une seule page ;{#spa-editor}
-   + [Utilisation de l’éditeur d’applications monopages](spa-editor/spa-editor-framework-feature-video-use.md)
+   + [Utilisation de SPA Editor](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Didacticiel Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [Prise en main de AEM SPA Editor et réaction](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
    + [Prise en main de AEM SPA Editor et Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
@@ -90,7 +90,7 @@ ht-degree: 11%
    + [Configuration des règles de traduction](translation/translation-rules-editor-technical-video-setup.md)
    + [Amélioration des traductions](translation/translation-enhancements-feature-video-use.md)
 + Intégrations {#integrations}
-   + experience platform launch {#experience-platform-launch}
+   + Experience Platform Launch {#experience-platform-launch}
       + [Présentation](integrations/experience-platform-launch/overview.md)
       + [Créer une propriété Launch](integrations/experience-platform-launch/create-launch-property.md)
       + [Connecter AEM avec lancement à l&#39;aide des E/S d&#39;Adobe](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
@@ -103,7 +103,7 @@ ht-degree: 11%
       + [Suivi du composant cliqué avec Adobe Analytics](integrations/analytics/track-clicked-component.md)
    + Adobe Target {#target}
       + [Présentation](integrations/adobe-target/overview.md)
-      + [ajouter l’Extension de la cible de lancement de la propriété](integrations/adobe-target/add-target-launch-extension.md)
+      + [Ajouter l’Extension de la cible de lancement de la propriété](integrations/adobe-target/add-target-launch-extension.md)
       + [Charger et déclencher un appel de Cible](integrations/adobe-target/load-and-fire-target.md)
       + [Créer un compte Cloud Service Adobe Target](integrations/adobe-target/setup-aem-target-cloud-service.md)
       + [Exporter le fragment d’expérience vers Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
