@@ -6,14 +6,14 @@ doc-type: tutorial
 activity: develop
 audience: developer
 user-guide-title: Prise en main du développement AEM Sites – Tutoriel WKND
-user-guide-description: A multi-part tutorial for developers new to AEM. Implement an AEM site for a fictitious lifestyle brand, the WKND.
-breadcrumb-title: AEM Sites WKND Tutorials
+user-guide-description: 'Un tutoriel en plusieurs parties pour les développeurs qui découvrent AEM. Implémentation d’un site AEM pour une marque de style de vie fictive : WKND.'
+breadcrumb-title: Tutoriels AEM Sites WKND
 index: y
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 72%
+source-wordcount: '56'
+ht-degree: 83%
 
 ---
 
