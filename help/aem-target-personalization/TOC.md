@@ -1,6 +1,6 @@
 ---
-user-guide-title: 'Prise en main de AEM et Adobe Target '
-user-guide-description: An end-to-end tutorial showing how to deliver personalized experiences using Experience Manager and Target.
+user-guide-title: 'Prise en main d’AEM et d’Adobe Target '
+user-guide-description: Tutoriel complet décrivant comment offrir des expériences personnalisées à l’aide d’Experience Manager et de Target.
 product: experience manager
 version: 6.5
 sub-product: sites
@@ -14,13 +14,13 @@ kt: 2214
 translation-type: tm+mt
 source-git-commit: bdb62b3361f20a0d0f27f5818cb82276980755d1
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 5%
+source-wordcount: '65'
+ht-degree: 36%
 
 ---
 
 
-# Prise en main de l’AEM et de la Cible {#aem-target-tutorial}
+# Getting Started with AEM and Target {#aem-target-tutorial}
 
 + [Présentation](./overview.md)
 + [Personnalisation à l’aide de fragments d’expérience AEM](./personalization-use-case-1.md)
