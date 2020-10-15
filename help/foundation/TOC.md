@@ -1,19 +1,19 @@
 ---
-user-guide-title: Vidéos AEM Foundation et Tutorials
-breadcrumb-title: AEM Foundation Tutorials
-user-guide-description: A collection of videos and tutorials for Adobe Experience Manager Foundation.
+user-guide-title: Vidéos et tutoriels d’AEM Foundation
+breadcrumb-title: Tutoriels d’AEM Foundation
+user-guide-description: 'Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Foundation. '
 sub-product: fondation
 index: y
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 4%
+source-wordcount: '156'
+ht-degree: 19%
 
 ---
 
 
-# Vidéos AEM Foundation et Tutorials {#foundation}
+# Vidéos et tutoriels d’AEM Foundation {#foundation}
 
 + [Présentation](./overview.md)
 + Administration {#administration}
@@ -26,7 +26,7 @@ ht-degree: 4%
    + [Configurer des clés publiques/privées à utiliser avec les E/S d&#39;Adobe](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
    + [Comprendre l&#39;authentification](authentication/authentication-support-article-understand.md)
    + [Comprendre l’authentification IMS sur AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
-+ adobe Cloud Manager{#cloud-manager}
++ Adobe Cloud Manager{#cloud-manager}
    + [Comprendre Adobe Cloud Manager](./cloud-manager/understand-cloud-manager-for-aem.md)
    + [Utiliser le pipeline CI/CD dans Adobe Cloud Manager](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
 + Développement {#development}
