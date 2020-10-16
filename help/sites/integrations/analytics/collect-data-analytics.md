@@ -10,17 +10,17 @@ version: cloud-service
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 translation-type: tm+mt
-source-git-commit: 97fe98c8c62f5472f7771bbc803b2a47dc97044d
+source-git-commit: 096cdccdf1675480aa0a35d46ce7b62a3906dad1
 workflow-type: tm+mt
-source-wordcount: '2402'
-ht-degree: 4%
+source-wordcount: '2414'
+ht-degree: 5%
 
 ---
 
 
 # Collecte de données de page avec Adobe Analytics
 
-Découvrez comment utiliser les fonctionnalités intégrées de la couche de données du client [Adobe avec les composants](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html) principaux AEM pour collecter des données sur une page dans Adobe Experience Manager Sites. [L’Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) et l’extension [](https://docs.adobe.com/content/help/fr-FR/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html) Adobe Analytics seront utilisés pour créer des règles permettant d’envoyer des données de page à Adobe Analytics.
+Learn to use the built-in features of the [Adobe Client Data Layer with AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html) to collect data about a page in Adobe Experience Manager Sites. [Experience Platform Launch et l’extension Adobe Analytics seront utilisés pour créer des règles permettant d’envoyer des données de page à Adobe Analytics.](https://www.adobe.com/experience-platform/launch.html)[](https://docs.adobe.com/content/help/fr-FR/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
 
 ## Ce que vous allez construire
 
@@ -38,8 +38,8 @@ Dans ce didacticiel, vous allez déclencher une règle de lancement basée sur u
 
 Les éléments suivants sont requis :
 
-* **experience platform launch** , propriété
-* **adobe analytics de la suite de rapports Test/dev** et du serveur de suivi. Consultez la documentation suivante pour [créer une suite](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)de rapports.
+* **Experience Platform Launch** , propriété
+* **Adobe Analytics de la suite de rapports Test/dev** et du serveur de suivi. Consultez la documentation suivante pour [créer une suite](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)de rapports.
 * [Extension de navigateur du débogueur](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) Experience Platform. Captures d’écran de ce didacticiel capturées dans le navigateur Chrome.
 * (Facultatif) AEM site avec la couche de données du client [Adobe activée](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation). Ce tutoriel utilisera le site public [https://wknd.site/us/en.html](https://wknd.site/us/en.html) mais vous êtes bienvenu pour utiliser votre propre site.
 
@@ -249,7 +249,7 @@ Les éléments de données seront mappés sur les `@type`, `dc:title`et `xdm:tem
 
    ![Éléments de données dans la règle](assets/collect-data-analytics/data-elements-page-rule.png)
 
-## ajouter l’extension Analytics
+## Ajouter l’extension Analytics
 
 Ajoutez ensuite l’extension Analytics à votre propriété Launch. Nous devons envoyer ces données quelque part !
 
@@ -271,13 +271,17 @@ Ajoutez ensuite l’extension Analytics à votre propriété Launch. Nous devons
    >
    >Nous vous recommandons d’utiliser l’option *Gérer la bibliothèque pour moi, car le paramètre Gestion des bibliothèques facilite la mise à jour de la* `AppMeasurement.js` bibliothèque.
 
+1. Cochez la case pour activer **Utiliser le Activity Map**.
+
+   ![Activer le Activity Map d’utilisation](assets/track-clicked-component/analytic-track-click.png)
+
 1. Sous **Général** > Serveur **de** suivi, entrez votre serveur de suivi, par ex. `tmd.sc.omtrdc.net`. Entrez votre serveur de suivi SSL si votre site prend en charge `https://`
 
    ![Entrer les serveurs de suivi](assets/collect-data-analytics/analytics-config-trackingServer.png)
 
 1. Cliquez sur **Enregistrer** pour enregistrer les modifications.
 
-## ajouter une condition à la règle Page chargée
+## Ajouter une condition à la règle Page chargée
 
 Ensuite, mettez à jour la règle **Page chargée** afin d’utiliser l’élément de données Type **de ressource de** composant pour vous assurer que la règle se déclenche uniquement lorsque le `cmp:show` événement est destiné à la **page**. D&#39;autres composants peuvent déclencher le `cmp:show` événement, par exemple le composant Carrousel le déclenche lorsque les diapositives changent. Il est donc important d’ajouter une condition pour cette règle.
 
@@ -320,7 +324,7 @@ Actuellement, la règle **Page chargée** génère simplement une instruction de
 
 1. Ensuite, ajoutez une action supplémentaire à droite de **Adobe Analytics - Set Variables** en appuyant sur l’icône **plus** :
 
-   ![ajouter une action de lancement supplémentaire](assets/collect-data-analytics/add-additional-launch-action.png)
+   ![Ajouter une action de lancement supplémentaire](assets/collect-data-analytics/add-additional-launch-action.png)
 
 1. Définissez le type **Extension** sur **Adobe Analytics** et le type **** Action sur **Envoyer la balise.** Puisqu’il s’agit d’une vue de page, conservez le suivi par défaut défini sur **`s.t()`**.
 
