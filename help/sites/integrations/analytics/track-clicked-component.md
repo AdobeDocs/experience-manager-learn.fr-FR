@@ -10,17 +10,17 @@ version: cloud-service
 kt: 6296
 thumbnail: KT-6296.jpg
 translation-type: tm+mt
-source-git-commit: 97fe98c8c62f5472f7771bbc803b2a47dc97044d
+source-git-commit: 096cdccdf1675480aa0a35d46ce7b62a3906dad1
 workflow-type: tm+mt
-source-wordcount: '1773'
-ht-degree: 2%
+source-wordcount: '1831'
+ht-degree: 4%
 
 ---
 
 
 # Suivi du composant cliqué avec Adobe Analytics
 
-Utilisez la couche de données client [Adobe pilotée par événement avec les composants](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html) principaux AEM pour effectuer le suivi des clics de composants spécifiques sur un site Adobe Experience Manager. Découvrez comment utiliser des règles dans l’Experience Platform Launch pour écouter les événements de clics, filtrer par composant et envoyer les données à un Adobe Analytics avec une balise de lien de suivi.
+Use the event-driven [Adobe Client Data Layer with AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html) to track clicks of specific components on an Adobe Experience Manager site. Découvrez comment utiliser des règles dans Experience Platform Launch pour écouter les événements de clics, filtrer par composant et envoyer les données à une instance Adobe Analytics avec une balise de lien de suivi.
 
 ## Ce que vous allez construire
 
@@ -39,10 +39,10 @@ L&#39;équipe marketing de WKND souhaite identifier les boutons d&#39;appel à l
 Ce didacticiel est la suite de la [collecte de données de page avec Adobe Analytics](./collect-data-analytics.md) et suppose que vous disposez des éléments suivants :
 
 * Une propriété **** Launch avec l’extension [](https://docs.adobe.com/content/help/fr-FR/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html) Adobe Analytics activée
-* **adobe analytics de la suite de rapports Test/dev** et du serveur de suivi. Consultez la documentation suivante pour [créer une suite](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)de rapports.
+* **Adobe Analytics de la suite de rapports Test/dev** et du serveur de suivi. Consultez la documentation suivante pour [créer une suite](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)de rapports.
 * [Extension de navigateur du débogueur](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) Experience Platform configurée avec votre propriété Launch chargée sur [https://wknd.site/us/en.html](https://wknd.site/us/en.html) ou sur un site AEM où la couche de données d’Adobe est activée.
 
-## inspect the Button and Teaser Schéma
+## Inspect the Button and Teaser Schéma
 
 Avant de créer des règles dans Lancement, il est utile de vérifier le [schéma du Bouton et du Teaser](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#item) et de les inspecter dans l’implémentation de la couche de données.
 
@@ -205,7 +205,7 @@ Créez ensuite un élément de données pour capturer l’ID et le titre du comp
 
    Enregistrez les modifications.
 
-## ajouter une condition à la règle de clic CTA
+## Ajouter une condition à la règle de clic CTA
 
 Ensuite, mettez à jour la règle **CTA cliqué** pour vous assurer que la règle se déclenche uniquement lorsque le `cmp:click` événement est déclenché pour un **Teaser** ou un **bouton**. Comme le CTA du Teaser est considéré comme un objet distinct dans la couche de données, il est important de vérifier le parent pour vérifier qu&#39;il provient d&#39;un Teaser.
 
@@ -255,19 +255,25 @@ Actuellement, la règle **CTA cliqué** génère simplement une instruction cons
 
    * `evar8` - `%Component ID%`
    * `prop8` - `%Component ID%`
-   * `event8` - `CTA Clicked`
+   * `event8`
 
    ![Définir la prop et les événements de l’eVar](assets/track-clicked-component/set-evar-prop-event.png)
 
+   >[!NOTE]
+   >
+   > Ici `%Component ID%` est utilisé, car il garantira un identifiant unique de la LTC sur lequel l&#39;utilisateur a cliqué. L’utilisation `%Component ID%` du rapport Analytics peut présenter un inconvénient : il contient des valeurs telles que `button-2e6d32893a`la valeur. L&#39;utilisation `%Component Title%` donnerait un nom plus convivial à l&#39;homme, mais la valeur pourrait ne pas être unique.
+
 1. Ensuite, ajoutez une action supplémentaire à droite de **Adobe Analytics - Set Variables** en appuyant sur l’icône **plus** :
 
-   ![ajouter une action de lancement supplémentaire](assets/track-clicked-component/add-additional-launch-action.png)
+   ![Ajouter une action de lancement supplémentaire](assets/track-clicked-component/add-additional-launch-action.png)
 
 1. Définissez le type **Extension** sur **Adobe Analytics** et le type **** Action sur **Envoyer la balise.**
 1. Sous **Suivi** , définissez le bouton radio sur **`s.tl()`**.
-1. Dans le champ Type **de** lien, choisissez Lien **** personnalisé et dans le champ Nom **du** lien, définissez la valeur sur le titre du **composant de l’élément de données :**
+1. Dans le champ Type **de** lien, choisissez Lien **** personnalisé et dans le champ Nom **du** lien, définissez la valeur sur : **`%Component Title%: CTA Clicked`**:
 
    ![Configuration de la balise Send Link](assets/track-clicked-component/analytics-send-beacon-link-track.png)
+
+   Cette opération combine la variable dynamique du titre **du** composant de l&#39;élément de données et la chaîne statique **CTA cliquée**.
 
 1. Enregistrez les modifications. La règle **CTA cliqué** doit maintenant avoir la configuration suivante :
 
