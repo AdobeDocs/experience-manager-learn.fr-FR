@@ -10,9 +10,9 @@ audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
 translation-type: tm+mt
-source-git-commit: ecbd4d21c5f41b2bc6db3b409767b767f00cc5d1
+source-git-commit: 4cfbf975919eb38413be8446b70b107bbfebb845
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1406'
 ht-degree: 1%
 
 ---
@@ -23,12 +23,6 @@ ht-degree: 1%
 Adobe Experience Manager (AEM) peut être exécuté localement à l’aide de l’AEM en tant que Jar de démarrage rapide du Cloud Service SDK. Cela permet aux développeurs de se déployer et de tester du code, des configurations et du contenu personnalisés avant de s&#39;engager dans le contrôle de code source et de le déployer sur un AEM en tant qu&#39;environnement Cloud Service.
 
 Notez qu’ `~` il est utilisé comme abrégé pour l’annuaire d’utilisateurs. Sous Windows, c&#39;est l&#39;équivalent de `%HOMEPATH%`.
-
->[!VIDEO](https://video.tv.adobe.com/v/32551/?quality=12&learn=on)
-
->[!NOTE]
->
-> Cette vidéo montre comment installer et exécuter une instance locale de Adobe Experience Manager en quelques minutes avec le démarrage rapide local du SDK AEM. Cette vidéo montre comment démarrer le démarrage rapide local du SDK AEM en cliquant sur le doublon sur le fichier Jar de démarrage rapide, mais cela ne fonctionnera pas dans Java 8 est installé sur l&#39;ordinateur. Vous pouvez également démarrer le démarrage rapide local du SDK AEM à partir de la ligne de commande à l’aide de la `java -jar ...` commande, comme [décrit sur cette page](#set-up-local-aem-author-service).
 
 ## Installer Java
 
@@ -55,9 +49,6 @@ L’AEM en tant que Cloud Service SDK, ou AEM SDK, contient le Jar de démarrage
 ## Extrayez le fichier Jar de démarrage rapide du fichier compressé AEM SDK
 
 1. Unzip the downloaded `aem-sdk-XXX.zip` file
-1. Assurez-vous que le fichier __license.properties__ du développeur Experience Manager est disponible.
-
-Notez que les mêmes fichiers Jar de démarrage rapide et license.properties sont utilisés pour début _à la fois_ AEM Author et Publish Services.
 
 ## Configuration du service AEM Author local{#set-up-local-aem-author-service}
 
@@ -65,7 +56,6 @@ Le service local d’auteur AEM offre aux développeurs une expérience locale q
 
 1. Create the folder `~/aem-sdk/author`
 1. Copiez le fichier JAR ____ Quickstart dans `~/aem-sdk/author` et renommez-le en `aem-author-p4502.jar`
-1. Copiez le fichier __license.properties__ dans  `~/aem-sdk/author`
 1. Début du service d’auteur AEM local en exécutant les éléments suivants à partir de la ligne de commande :
    + `java -jar aem-author-p4502.jar`
       + Fournissez le mot de passe d’administrateur sous la forme `admin`. Tout mot de passe d’administrateur est acceptable, mais il est recommandé d’utiliser la valeur par défaut pour le développement local afin de réduire la nécessité de reconfigurer.
@@ -78,7 +68,6 @@ Windows :
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\author
 $ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\author\aem-author-p4502.jar
-$ copy ../license.properties c:\Users\<My User>\aem-sdk\author
 $ cd c:\Users\<My User>\aem-sdk\author
 $ java -jar aem-author-p4502.jar
 ```
@@ -88,7 +77,6 @@ macOS / Linux :
 ```shell
 $ mkdir -p ~/aem-sdk/author
 $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/author/aem-author-p4502.jar
-$ cp ../license.properties ~/aem-sdk/author
 $ cd ~/aem-sdk/author
 $ java -jar aem-author-p4502.jar
 ```
@@ -99,7 +87,6 @@ Le service de publication AEM local fournit aux développeurs l’expérience lo
 
 1. Create the folder `~/aem-sdk/publish`
 1. Copiez le fichier JAR ____ Quickstart dans `~/aem-sdk/publish` et renommez-le en `aem-publish-p4503.jar`
-1. Copiez le fichier __license.properties__ dans  `~/aem-sdk/publish`
 1. Début du service de publication AEM local en exécutant les éléments suivants à partir de la ligne de commande :
    + `java -jar aem-publish-p4503.jar`
       + Fournissez le mot de passe d’administrateur sous la forme `admin`. Tout mot de passe d’administrateur est acceptable, mais il est recommandé d’utiliser la valeur par défaut pour le développement local afin de réduire la nécessité de reconfigurer.
@@ -112,7 +99,6 @@ Windows :
 ```shell
 $ mkdir -p c:\Users\<My User>\aem-sdk\publish
 $ copy aem-sdk-Quickstart-XXX.jar c:\Users\<My User>\aem-sdk\publish\aem-publish-p4503.jar
-$ copy ../license.properties c:\Users\<My User>\aem-sdk\publish
 $ cd c:\Users\<My User>\aem-sdk\publish
 $ java -jar aem-publish-p4503.jar
 ```
@@ -122,7 +108,6 @@ macOS / Linux :
 ```shell
 $ mkdir -p ~/aem-sdk/publish
 $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
-$ cp ../license.properties ~/aem-sdk/publish
 $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
@@ -225,6 +210,6 @@ Une fois le SDK Java 11 installé, vérifiez qu’il s’agit de la version prin
 ## Ressources supplémentaires
 
 + [Télécharger AEM SDK](https://experience.adobe.com/#/downloads)
-+ [adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
++ [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Télécharger le Docteur](https://www.docker.com/)
 + [Documentation du répartiteur Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
