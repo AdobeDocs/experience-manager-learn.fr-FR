@@ -4,9 +4,9 @@ user-guide-description: Ensemble de vidéos et de tutoriels pour Adobe Experienc
 breadcrumb-title: Tutoriels AEM Sites
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 55beee99b91c44f96cd37d161bb3b4ffe38d2687
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '476'
 ht-degree: 16%
 
 ---
@@ -101,6 +101,7 @@ ht-degree: 16%
    + Analyses {#analytics}
       + [Collecte de données de page avec Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Suivi du composant cliqué avec Adobe Analytics](integrations/analytics/track-clicked-component.md)
+      + [Analyser les données avec Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
       + [Présentation](integrations/adobe-target/overview.md)
       + [Ajouter l’Extension de la cible de lancement de la propriété](integrations/adobe-target/add-target-launch-extension.md)
