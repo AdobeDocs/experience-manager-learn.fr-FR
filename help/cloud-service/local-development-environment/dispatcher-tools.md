@@ -11,9 +11,9 @@ audience: developer
 kt: 4679
 thumbnail: 30603.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 1b4a927a68d24eeb08d0ee244e85519323482910
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1534'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,8 @@ Le répartiteur de Adobe Experience Manager (AEM) est un module de serveur Web A
 L’AEM en tant que SDK Cloud Service comprend la version recommandée des outils du répartiteur, qui facilite la configuration, la validation et la simulation locale du répartiteur. Les outils du répartiteur se composent des éléments suivants :
 
 + un ensemble de base de fichiers de configuration du serveur Web Apache HTTP et du répartiteur, situé dans `.../dispatcher-sdk-x.x.x/src`
-+ un outil CLI de validation de configuration, situé dans `.../dispatcher-sdk-x.x.x/bin/validator`
++ un outil d’interface de ligne de commande de la validation de configuration, situé à `.../dispatcher-sdk-x.x.x/bin/validate` (Dispatcher SDK 2.0.29+)
++ un outil CLI de génération de configuration, situé dans `.../dispatcher-sdk-x.x.x/bin/validator`
 + un outil d&#39;interface de ligne de commande pour le déploiement de la configuration, situé dans `.../dispatcher-sdk-x.x.x/bin/docker_run`
 + une image Docker qui exécute le serveur Web HTTP Apache avec le module Répartiteur
 
@@ -39,7 +40,7 @@ Notez qu’ `~` il est utilisé comme abrégé pour l’annuaire d’utilisateur
 ## Conditions préalables
 
 1. Les utilisateurs de Windows doivent utiliser Windows 10 Professionnel
-1. Installez [Experience Manager Publish QuickStart](./aem-runtime.md) sur l’ordinateur de développement local.
+1. Installez [Experience Manager Publish Quickstart Jar](./aem-runtime.md) sur l’ordinateur de développement local.
    + Vous pouvez éventuellement installer le dernier site [Web de référence](https://github.com/adobe/aem-guides-wknd/releases) AEM sur le service AEM Publish local. Ce site Web est utilisé dans ce didacticiel pour visualiser un répartiteur fonctionnel.
 1. Installez et début la dernière version de [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+) sur la machine de développement locale.
 
@@ -49,13 +50,10 @@ L&#39;AEM en tant que SDK Cloud Service, ou SDK AEM, contient les outils du rép
 
 Si l’AEM en tant que SDK Cloud Service a déjà été téléchargé pour [configurer l’exécution](./aem-runtime.md)AEM locale, il n’est pas nécessaire de le retélécharger.
 
-1. Log in to [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads) with your Adobe ID
-   + Notez que votre organisation d’Adobes __doit__ être configurée pour AEM en tant que Cloud Service pour télécharger l’AEM en tant que SDK Cloud Service.
-1. Accédez à l’ __AEM en tant que Cloud Service__ .
-1. Trier par date __de__ publication dans l’ordre __Descendant__
-1. Cliquez sur la dernière ligne __AEM résultat SDK__ .
-1. Examinez et acceptez le contrat de licence de l’utilisateur final, puis appuyez sur le bouton __Télécharger__ .
-1. Vérifier que les outils Dispatcher Tools v2.0.21+ du SDK AEM sont utilisés
+1. Log in to [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout liste&amp;p.offset=0&amp;p.limit=1) with your Adobe ID
+   + Votre organisation d’Adobes __doit__ être configurée pour AEM en tant que Cloud Service pour télécharger l’AEM en tant que SDK Cloud Service
+1. Cliquez sur la dernière ligne de résultat du SDK ____ AEM à télécharger.
+   + Assurez-vous que les outils Dispatcher Tools v2.0.29+ du SDK AEM sont indiqués dans la description du téléchargement.
 
 ## Extrayez les outils du répartiteur à partir du fichier compressé AEM SDK
 
@@ -92,20 +90,25 @@ Ces fichiers sont destinés à être copiés dans un projet Maven Experience Man
 
 Une description complète des fichiers de configuration est disponible dans les outils du répartiteur non compressés sous `dispatcher-sdk-x.x.x/docs/Config.html`forme de fichier.
 
+## Validation des configurations
+
+Si vous le souhaitez, les configurations du Répartiteur et du serveur Web Apache (via `httpd -t`) peuvent être validées à l&#39;aide du `validate` script (à ne pas confondre avec l&#39; `validator` exécutable).
+
++ Utilisation:
+   + Windows : `bin\validate src`
+   + macOS / Linux : `./bin/validate ./src`
+
 ## Exécuter le répartiteur localement
 
-Pour exécuter le répartiteur localement, les fichiers de configuration du répartiteur à utiliser pour le configurer doivent être validés à l&#39;aide de l&#39;outil `validator` CLI des outils du répartiteur.
+Pour exécuter le répartiteur localement, les fichiers de configuration du répartiteur doivent être générés à l&#39;aide de l&#39;outil `validator` CLI des outils du répartiteur.
 
 + Utilisation:
    + Windows : `bin\validator full -d out src`
    + macOS / Linux : `./bin/validator full -d ./out ./src`
 
-La validation est double :
+Cette commande transforme les configurations en un ensemble de fichiers compatible avec le serveur Web HTTP Apache du conteneur Docker.
 
-+ Valide les fichiers de configuration du serveur Web Apache HTTP et du répartiteur pour vérifier leur exactitude.
-+ Transforme les configurations en un ensemble de fichiers compatible avec le serveur Web HTTP Apache du conteneur Docker.
-
-Une fois validées, les configurations transposées sont utilisées pour exécuter le répartiteur localement dans le conteneur Docker. Il est important de s&#39;assurer que les dernières configurations ont été validées __et__ produites à l&#39;aide de l&#39; `-d` option du validateur.
+Une fois générées, les configurations transposées sont utilisées pour exécuter le répartiteur localement dans le conteneur Docker. Il est important de s&#39;assurer que les dernières configurations ont été validées à l&#39;aide `validate` et __de la sortie à l&#39;aide de l&#39;__ `-d` option du validateur.
 
 + Utilisation:
    + Windows : `bin\docker_run <deployment-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>`
