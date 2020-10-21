@@ -8,9 +8,9 @@ topics: development, authoring, configuring, renditions, images
 audience: all
 activity: use
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: 317fb625e7af57b7ad0079014c341eab9adda376
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '694'
 ht-degree: 5%
 
 ---
@@ -48,7 +48,7 @@ L’imagerie intelligente fonctionne avec les images diffusées sur HTTP, HTTPS 
 
 Smart Imaging est inclus dans votre licence existante de Dynamic Media Classic. Cette fonction n’entraîne aucun coût supplémentaire. Pour en profiter, vous devez satisfaire deux exigences : possèdent un CDN intégré à un Adobe et un domaine dédié. Vous devez ensuite l’activer pour votre compte, car il n’est pas automatiquement activé.
 
-Activation des débuts Smart Imaging pour envoyer une demande d&#39;assistance technique en envoyant un courrier électronique à l&#39;adresse [s7support@adobe.com](mailto:s7support@adobe.com). Ils collaboreront avec vous pour configurer un domaine personnalisé que vous associerez à Smart Imaging. Vous allez modifier un paramètre lié à la mise en cache (durée de vie ou TTL) et la prise en charge va effacer le cache. Vous pouvez également effectuer une étape intermédiaire facultative si vous le souhaitez avant de passer en production. Ensuite, lorsque Smart Imaging est activé, vous proposez aux clients des images de petite taille, mais avec la même qualité que celle demandée. Cela signifie qu&#39;ils connaissent des temps de chargement de page plus rapides — et tout cela est fait automatiquement parce que Adobe Sensei aide à choisir la taille la plus efficace possible.
+Activation des débuts d&#39;imagerie intelligente pour envoyer une demande d&#39;assistance technique en |création d&#39;un dossier de support| [https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Le support technique vous aidera à configurer un domaine personnalisé que vous associerez à Smart Imaging. Vous allez modifier un paramètre lié à la mise en cache (durée de vie ou TTL) et la prise en charge va effacer le cache. Vous pouvez également effectuer une étape intermédiaire facultative si vous le souhaitez avant de passer en production. Ensuite, lorsque Smart Imaging est activé, vous proposez aux clients des images de petite taille, mais avec la même qualité que celle demandée. Cela signifie qu&#39;ils connaissent des temps de chargement de page plus rapides — et tout cela est fait automatiquement parce que Adobe Sensei aide à choisir la taille la plus efficace possible.
 
 Une fois que vous avez activé Smart Imaging, vous devez vérifier qu’il fonctionne comme prévu.
 
