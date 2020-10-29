@@ -8,9 +8,9 @@ doc-type: technical video
 activity: setup
 version: 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '426'
 ht-degree: 25%
 
 ---
@@ -26,7 +26,7 @@ ContextHub est une structure pour stocker, manipuler et présenter des données 
 >
 >Nous utilisons le site de référence WKND pour cette vidéo et elle ne fait pas partie de AEM version. Vous pouvez télécharger la [dernière version ici](https://github.com/adobe/aem-guides-wknd/releases).
 
-ajoutez ContextHub sur vos pages pour activer les fonctionnalités ContextHub et pour créer un lien vers les bibliothèques JavaScript ContextHub. L’API JavaScript ContextHub permet d’accéder aux données contextuelles gérées par ContextHub.
+Ajoutez ContextHub sur vos pages pour activer les fonctionnalités ContextHub et pour créer un lien vers les bibliothèques JavaScript ContextHub. L’API JavaScript ContextHub permet d’accéder aux données contextuelles gérées par ContextHub.
 
 ## Ajout de ContextHub à un composant de page {#adding-contexthub-to-a-page-component}
 
@@ -40,7 +40,7 @@ To enable the ContextHub features and to link to the ContextHub JavaScript libra
 
 ## Configuration du site et segments ContextHub {#site-configuration-and-contexthub-segments}
 
-ContextHub propose un moteur de segmentation qui gère les segments et détermine les segments qui sont résolus pour le contexte actuel. Plusieurs segments sont définis. Vous pouvez utiliser l’API Javascript pour [déterminer les segments résolus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). Activez les segments ContextHub pour votre site sous [!UICONTROL Configuration Browser].
+ContextHub propose un moteur de segmentation qui gère les segments et détermine les segments qui sont résolus pour le contexte actuel. Plusieurs segments sont définis. Vous pouvez utiliser l’API Javascript pour [déterminer les segments résolus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). Activez les segments ContextHub pour votre site sous [[!UICONTROL Configuration Browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html).
 
 ## Création de segments {#create-segments}
 
@@ -55,6 +55,6 @@ Affectation du chemin de configuration Cloud, du chemin de segmentation et du ch
 Vous pouvez en savoir plus sur ContextHub et la segmentation ci-dessous :
 
 * [ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub.html)
-* [ajouter le concentrateur de contexte sur la page et accéder aux magasins](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html)
+* [Ajouter le concentrateur de contexte sur la page et accéder aux magasins](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html)
 * [Compréhension de la segmentation](https://helpx.adobe.com/experience-manager/6-5/sites/classic-ui-authoring/using/classic-personalization-campaigns-segmentation.html)
 * [Configuration de la segmentation avec ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/segmentation.html)
