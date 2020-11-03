@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Utilisez le module [d&#39;interface de ligne de commande d&#39;](../set-up/devel
 
 1. Dans la ligne de commande, accédez au dossier contenant le projet.
 1. Dans la ligne de commande, exécutez `aio app init` pour commencer l’interface de ligne de commande de génération de projet interactive.
-   + Cela peut engendrer un navigateur Web invitant à l&#39;authentification des E/S d&#39;Adobe. Si tel est le cas, fournissez vos informations d’identification d’Adobe associées aux produits et services [d’Adobe](../set-up/accounts-and-services.md)requis. Si vous ne pouvez pas vous connecter, suivez ces instructions pour générer un projet.
+   + Cela peut engendrer un navigateur Web invitant à l&#39;authentification des E/S d&#39;Adobe. Si tel est le cas, fournissez vos informations d’identification d’Adobe associées aux produits et services [d’Adobe](../set-up/accounts-and-services.md)requis. Si vous ne pouvez pas vous connecter, veuillez suivre [ces instructions pour générer un projet](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
 1. __Sélectionner une organisation__
    + Sélectionnez l&#39;organisation d&#39;Adobes pour laquelle AEM en tant que Cloud Service, Project Firefly est enregistré
 1. __Sélectionner le projet__
@@ -50,6 +50,16 @@ Utilisez le module [d&#39;interface de ligne de commande d&#39;](../set-up/devel
    + Utilisez le nom par défaut `worker`.
    + Si votre projet contient plusieurs collaborateurs qui effectuent différents calculs d’actifs, nommez-les sémantiquement.
 
+## Générer console.json
+
+A partir de la racine du projet Asset Compute nouvellement créé, exécutez la commande suivante pour générer un `console.json`fichier.
+
+```
+$ aio app use
+```
+
+Vérifiez que les détails actuels de l&#39;espace de travail sont corrects et jolies `Y` ou entrez pour générer un `console.json`espace de travail. Si `.env` et `.aio` sont détectés comme existants, appuyez `x` pour ignorer leur création.
+
 ## Examiner l&#39;anatomie du projet
 
 Le projet Asset Compute généré est un projet Node.js pour un projet d’Adobe spécialisé Firefly, les éléments suivants étant propres au projet Asset Compute :
@@ -62,8 +72,12 @@ Le projet Asset Compute généré est un projet Node.js pour un projet d’Adobe
    + `/test/asset-compute/worker`, qui représente une suite de tests pour un travailleur spécifique, contient des sous-dossiers représentant un cas de test spécifique, ainsi que l’entrée de test, les paramètres et la sortie attendue.
 + `/build` contient la sortie, les journaux et les artefacts des exécutions de cas de test d’Asset Compute.
 + `/manifest.yml` définit les employés Asset Compute fournis par le projet. Chaque implémentation de collaborateur doit être énumérée dans ce fichier pour être mise à la disposition de l&#39;AEM en tant que Cloud Service.
-+ `/.aio` contient les configurations utilisées par l’outil d’interface de ligne de commande aio. Ce fichier peut être configuré via la `aio config` commande.
-+ `/.env` définit des variables d’environnement dans une `key=value` syntaxe et contient des secrets qui ne doivent pas être partagés. Pour protéger ces secrets, ce fichier ne doit PAS être archivé dans Git et est ignoré par le `.gitignore` fichier par défaut du projet.
++ `/console.json` définit les configurations d&#39;E/S d&#39;Adobe
+   + Ce fichier peut être généré/mis à jour à l’aide de la `aio app use` commande.
++ `/.aio` contient les configurations utilisées par l’outil d’interface de ligne de commande aio.
+   + Ce fichier peut être généré/mis à jour à l’aide de la `aio app use` commande.
++ `/.env` définit des variables d’environnement dans une `key=value` syntaxe et contient des secrets qui ne doivent pas être partagés. Ceci peut être généré ou Pour protéger ces secrets, ce fichier ne doit PAS être archivé dans Git et est ignoré par le `.gitignore` fichier par défaut du projet.
+   + Ce fichier peut être généré/mis à jour à l’aide de la `aio app use` commande.
    + Les variables définies dans ce fichier peuvent être remplacées en [exportant des variables](../deploy/runtime.md) sur la ligne de commande.
 
 Pour plus de détails sur l&#39;examen de la structure du projet, consultez l&#39; [Anatomie d&#39;un projet](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application)de luciole du projet Adobe.
@@ -76,4 +90,5 @@ Le projet final Asset Compute est disponible sur Github à l&#39;adresse suivant
 
 + [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github contient l&#39;état final du projet, entièrement renseigné avec les cas de travail et de test, mais ne contient aucune information d&#39;identification, c&#39;est-à-dire.`.env`,`.config.json`ou`.aio`._
+_Github contient l&#39;état final du projet, entièrement renseigné avec les cas de travail et de test, mais ne contient aucune information d&#39;identification, c&#39;est-à-dire. `.env`, `console.json` ou `.aio`._
+
