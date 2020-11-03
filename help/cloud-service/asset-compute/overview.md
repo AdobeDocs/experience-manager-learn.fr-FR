@@ -10,9 +10,9 @@ audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '1028'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 aem en tant que Cloud Service Asset Compute les microservices prennent en charge le développement et le déploiement de travailleurs personnalisés utilisés pour lire et manipuler les données binaires des ressources stockées dans AEM, le plus souvent, pour créer des rendus de ressources personnalisés.
 
-Alors que dans AEM 6.x, les processus AEM de flux de travail personnalisés ont été utilisés pour lire, transformer et écrire des rendus d’actifs, dans l’ en tant que travailleurs Cloud Service Asset Compute répondent à ce besoin.
+Alors que dans AEM 6.x, les processus AEM de flux de travail personnalisés ont été utilisés pour lire, transformer et écrire des rendus de ressources, dans l&#39; en tant que travailleurs Cloud Service Asset Compute répondent à ce besoin.
 
 ## Ce que vous allez faire
 
@@ -112,7 +112,7 @@ Les agents Asset Compute fournissent divers niveaux de débogage, de la sortie t
 
 ## Déploiement
 
-Découvrez comment intégrer des employés de Asset Compute personnalisés à l’AEM en tant que Cloud Service, en les déployant d’abord dans Adobe I/O Runtime, puis en appelant à partir d’AEM en tant qu’auteur Cloud Service via les Profils de traitement AEM Assets.
+Découvrez comment intégrer des employés de Asset Compute personnalisés à l’AEM en tant que Cloud Service, en les déployant d’abord dans Adobe I/O Runtime, puis en appelant à partir d’AEM en tant qu’auteur Cloud Service via les Profils de traitement d’AEM Assets.
 
 ### Déploiement sur Adobe I/O Runtime
 
@@ -122,11 +122,17 @@ Les employés de Asset Compute doivent être déployés à Adobe I/O Runtime pou
 
 ### Intégrer les travailleurs au moyen de Profils de traitement AEM
 
-Une fois déployés à Adobe I/O Runtime, les employés de Asset Compute peuvent être enregistrés en AEM en tant que Cloud Service via les Profils [de traitement des](../../assets/configuring/processing-profiles.md)ressources. Les Profils de traitement sont, à leur tour, appliqués aux dossiers Ressources qui s’appliquent aux ressources qu’ils contiennent.
+Une fois déployés à Adobe I/O Runtime, les employés de Asset Compute peuvent être enregistrés en AEM en tant que Cloud Service via les Profils [de traitement des](../../assets/configuring/processing-profiles.md)ressources. Les Profils de traitement sont, à leur tour, appliqués aux dossiers de fichiers qui s’appliquent aux fichiers qu’ils contiennent.
 
 + [Intégration des Profils de traitement AEM](./deploy/processing-profiles.md)
 
-## Codébase du didacticiel sur Github
+## Avancé
+
+Ces didacticiels abrégés abordent des cas d&#39;utilisation plus avancés en s&#39;appuyant sur les connaissances fondamentales établies dans les chapitres précédents.
+
++ [Développement d’un intervenant](./advanced/metadata.md) de métadonnées Asset Compute qui peut réécrire des métadonnées dans
+
+## Codebase sur Github
 
 Le code de base du tutoriel est disponible sur Github à l&#39;adresse suivante :
 
@@ -142,14 +148,13 @@ Vous trouverez ci-dessous diverses ressources d’Adobe qui fournissent des info
 
 + [Documentation du service Asset Compute](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)
 + [Fichier Lisez-moi pour l&#39;outil de développement de calcul](https://github.com/adobe/asset-compute-devtool)
-
-### Autres exemples de code
-
 + [Exemples de travailleurs de calcul des ressources](https://github.com/adobe/asset-compute-example-workers)
 
 ### API et SDK
 
 + [SDK Asset Compute](https://github.com/adobe/asset-compute-sdk)
    + [Asset Compute Commons](https://github.com/adobe/asset-compute-commons)
+   + [XMP de calcul des ressources](https://github.com/adobe/asset-compute-xmp#readme)
 + [Bibliothèque Adobe Cloud Blobstore Wrapper](https://github.com/adobe/node-cloud-blobstore-wrapper)
 + [Adobe de la bibliothèque Récupération de la nouvelle tentative](https://github.com/adobe/node-fetch-retry)
++ [Exemples de travailleurs de calcul des ressources](https://github.com/adobe/asset-compute-example-workers)
