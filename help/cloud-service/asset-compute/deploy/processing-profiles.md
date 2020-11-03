@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '630'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Créez d’abord un nouveau Profil de traitement qui appellera le programme de t
    + __Extension :__ `png`
       + Extension du rendu qui sera généré. Défini sur `png` étant donné qu’il s’agit du format de sortie pris en charge par le service Web du collaborateur, ce dernier obtient un arrière-plan transparent derrière le cercle découpé.
    + __Point de terminaison :__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/worker`
-      + Il s’agit de l’URL du travailleur obtenu par `aio app get-url`. Assurez-vous que l’URL pointe vers l’espace de travail approprié en fonction de l’AEM en tant qu’environnement Cloud Service dans lequel le Profil de traitement est configuré. Notez que ce sous-domaine correspond à l’ `development` espace de travail.
+      + Il s’agit de l’URL du travailleur obtenu par `aio app get-url`. Assurez-vous que l’URL pointe vers l’espace de travail approprié en fonction de l’AEM en tant qu’environnement Cloud Service.
       + Assurez-vous que l’URL du collaborateur pointe vers l’espace de travail approprié. aem en tant que scène de Cloud Service doit utiliser l’URL de l’espace de travail de scène et AEM en tant que production de Cloud Service doit utiliser l’URL de l’espace de travail de production.
    + __Paramètres de service__
       + Appuyez sur Paramètre __d’Ajoute__
@@ -54,7 +54,7 @@ Créez d’abord un nouveau Profil de traitement qui appellera le programme de t
       + Ces paires clé/valeur sont transmises au programme de travail Asset Compute et disponibles par le biais d’un objet `rendition.instructions` JavaScript.
    + __Types MIME__
       + __Comprend :__ `image/jpeg`, `image/png`, `image/gif`, `image/bmp`, `image/tiff`
-         + Ces types MIME sont les seuls pris en charge par le service Web du collaborateur, ce qui limite les ressources qui peuvent être traitées par le collaborateur personnalisé.
+         + Ces types MIME sont les seuls modules npm du travailleur. Cette liste limite les ressources qui seront traitées par le programme de travail personnalisé.
       + __Exclure :__ `Leave blank`
          + Ne traitez jamais les ressources avec ces types MIME à l’aide de cette configuration de service. Dans ce cas, nous n&#39;utilisons qu&#39;une liste autorisée.
 1. Appuyez sur __Enregistrer__ en haut à droite.
@@ -83,26 +83,9 @@ Le projet final Asset Compute est disponible sur Github à l&#39;adresse suivant
 
 + [aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute)
 
-_Github contient l&#39;état final du projet, entièrement renseigné avec les cas de travail et de test, mais ne contient aucune information d&#39;identification, c&#39;est-à-dire.`.env`,`.config.json`ou`.aio`._
+_Github contient l&#39;état final du projet, entièrement renseigné avec les cas de travail et de test, mais ne contient aucune information d&#39;identification, c&#39;est-à-dire. `.env`, `.config.json` ou `.aio`._
 
 ## Résolution des incidents
 
-### Rendu personnalisé manquant dans le fichier
-
-+ __Erreur :__ Le nouveau traitement et le nouveau traitement des ressources ont réussi, mais le rendu personnalisé est absent
-
-#### Profil de traitement non appliqué au dossier ancêtre
-
-+ __Cause :__ La ressource n’existe pas sous un dossier avec le Profil de traitement qui utilise le programme de travail personnalisé.
-+ __Résolution :__ Appliquer le Profil de traitement à un dossier ancêtre de la ressource
-
-#### Profil de traitement remplacé par Profil de traitement inférieur
-
-+ __Cause :__ Le fichier se trouve sous un dossier auquel est appliqué le Profil de traitement du programme de travail personnalisé. Toutefois, un autre Profil de traitement qui n’utilise pas le programme de travail client a été appliqué entre ce dossier et le fichier.
-+ __Résolution :__ Combiner, ou réconcilier, les deux Profils de traitement et supprimer le Profil de traitement intermédiaire
-
-### Échec du traitement des ressources
-
-+ __Erreur :__ Balise Échec du traitement des ressources affichée sur la ressource
-+ __Cause :__ Une erreur s&#39;est produite dans l&#39;exécution du programme de travail personnalisé
-+ __Résolution :__ Suivez les instructions relatives au [débogage des activations](../test-debug/debug.md#aio-app-logs) Adobe I/O Runtime à l’aide de `aio app logs`.
++ [Rendu personnalisé absent de la ressource dans AEM](../troubleshooting.md#custom-rendition-missing-from-asset)
++ [Échec du traitement des ressources dans AEM](../troubleshooting.md#asset-processing-fails)
