@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ La structure des tests dans un projet Asset Compute est la suivante :
 ...
 /test/
   asset-compute/
-    <worker-name>/           <--- Test suite for the worker
+    <worker-name>/           <--- Test suite for the worker, must match the yaml key for this worker in manifest.yml
         <test-case-1>/       <--- Specific test case 
             file.jpg         <--- Input file (ie. `source.path` or `source.url`)
             params.json      <--- Parameters (ie. `rendition.instructions`)
@@ -118,21 +118,5 @@ Les derniers essais sont disponibles sur Github à l&#39;adresse suivante :
 
 ## Résolution des incidents
 
-### Aucun rendu généré
-
-Le cas de test échoue sans générer de rendu.
-
-+ __Erreur :__ Échec : Aucun rendu généré.
-+ __Cause :__ Le programme de travail n&#39;a pas pu générer de rendu en raison d&#39;une erreur inattendue, telle qu&#39;une erreur de syntaxe JavaScript.
-+ __Résolution :__ Examinez l&#39;exécution du test `test.log` à `/build/test-results/test-worker/test.log`. Localisez la section de ce fichier correspondant au cas de test d’échec et recherchez les erreurs.
-
-   ![Dépannage - Aucun rendu généré](./assets/test/troubleshooting__no-rendition-generated.png)
-
-### Le test génère un rendu incorrect
-
-Le cas de test ne génère pas un rendu incorrect.
-
-+ __Erreur :__ Échec : Rendition &#39;rendition.xxx&#39; pas comme prévu.
-+ __Cause :__ Le programme de travail génère un rendu différent de celui `rendition.<extension>` fourni dans le cas de test.
-   + Si le `rendition.<extension>` fichier attendu n&#39;est pas créé exactement de la même manière que le rendu généré localement dans le cas du test, le test peut échouer car il peut y avoir une différence dans les bits. Si le rendu attendu dans le cas de test est enregistré à partir de l’outil de développement, c’est-à-dire généré dans Adobe I/O Runtime, les bits peuvent être techniquement différents, ce qui peut entraîner l’échec du test, même si, d’un point de vue humain, les fichiers de rendu attendus et réels sont identiques.
-+ __Résolution :__ Examinez la sortie du rendu du test en accédant à `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`et comparez-la au fichier de rendu attendu dans le cas du test.
++ [Aucun rendu généré lors de l’exécution du test](../troubleshooting.md#test-no-rendition-generated)
++ [Le test génère un rendu incorrect](../troubleshooting.md#tests-generates-incorrect-rendition)
