@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -122,14 +122,5 @@ Pour début à Asset Compute Development Tool pour le projet Asset Compute :
 
 ## Résolution des incidents
 
-### Retrait YAML incorrect
-
-+ __Erreur :__ YAMLException : indentation incorrecte d&#39;une entrée de mappage à la ligne X, colonne Y : (via standard out from `aio app run` command)
-+ __Cause :__ Les fichiers Yaml sont sensibles à l’espacement blanc, il est probable que votre mise en retrait soit incorrecte.
-+ __Résolution :__ Vérifiez votre mise en retrait `manifest.yml` et assurez-vous que toutes les mises en retrait sont correctes.
-
-### MemorySize limit est trop faible
-
-+ __Erreur :__  OpenWhiskError du serveur de développement local : PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true renvoyé HTTP 400 (Requête incorrecte) —> &quot;Le contenu de la requête n’est pas correct : l’exigence a échoué : mémoire 64 Mo en dessous du seuil autorisé de 134217728 B&quot;
-+ __Cause :__ Une `memorySize` limite dans le manifeste a été définie en deçà du seuil minimum autorisé, tel que signalé par le message d’erreur en octets.
-+ __Résolution :__  Examinez les `memorySize` limites dans le `manifest.yml` et assurez-vous qu’elles sont toutes supérieures au seuil minimum autorisé.
++ [Retrait YAML incorrect](../troubleshooting.md#incorrect-yaml-indentation)
++ [MemorySize limit est trop faible](../troubleshooting.md#memorysize-limit-is-set-too-low)
