@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ L’outil de développement est alors début à l’adresse __http://localhost:9
 1. __Fichier source :__ La sélection du fichier source est utilisée pour :
    + Sélection du binaire de ressources qui sera le `source` binaire transmis au programme de travail de calcul de ressources
    + Téléchargement de fichiers source
-1. __Définition du profil de calcul des ressources :__ Définit le programme de travail Asset Compute à exécuter, y compris les paramètres : incluant le point de terminaison de l’URL du collaborateur, le nom du rendu résultant et tous les paramètres
+1. __Définition du ou des profils de calcul des ressources :__ Définit le programme de travail Asset Compute à exécuter, y compris les paramètres : incluant le point de terminaison de l’URL du collaborateur, le nom du rendu résultant et tous les paramètres
 1. __Exécuter :__ Le bouton Exécuter exécute le profil de calcul du fichier tel que défini dans l’éditeur de profil de configuration de Asset Compute.
 1. __Abandonner :__ Le bouton Abandonner annule une exécution initiée lorsque vous appuyez sur le bouton Exécuter.
 1. __Demande/réponse :__ Fournit la requête et la réponse HTTP au/à l’agent Asset Compute s’exécutant dans Adobe I/O Runtime. Cela peut s’avérer utile pour le débogage
@@ -84,24 +84,10 @@ Si vous modifiez le code du collaborateur pendant l’exécution de l’outil de
 
 ## Résolution des incidents
 
-### Liste déroulante des fichiers source incorrecte{#troubleshooting__dev-tool-application-cache}
-
-L’outil de développement de calcul de ressources peut entrer un état dans lequel il extrait les données obsolètes et est le plus visible dans la liste déroulante des fichiers ____ source affichant des éléments incorrects.
-
-+ __Erreur :__ La liste déroulante des fichiers source affiche des éléments incorrects.
-+ __Cause :__ L’état du navigateur en cache obsolète provoque la
-+ __Résolution :__ Dans votre navigateur, effacez complètement l’état de l’application de l’onglet du navigateur, le cache du navigateur, l’enregistrement local et l’agent de service.
-
-### Paramètre de requête devToolToken manquant ou non valide{#troubleshooting__devtooltoken}
-
-+ __Erreur :__ Notification &quot;non autorisée&quot; dans l’outil de développement de l’informatique d’actifs
-+ __Cause :__ `devToolToken` est absent ou non valide
-+ __Résolution :__ Fermez la fenêtre du navigateur de l’outil de développement Asset Compute, arrêtez les processus de développement d’outil lancés via la `aio app run` commande et rédébut de l’outil de développement (à l’aide `aio app run`).
-
-### Impossible de supprimer les fichiers source{#troubleshooting__remove-source-files}
-
-+ __Erreur :__ Il n’existe aucun moyen de supprimer les fichiers source ajoutés de l’interface des outils de développement.
-+ __Cause :__ Cette fonctionnalité n&#39;a pas été implémentée
-+ __Résolution :__ Connectez-vous à votre fournisseur d’enregistrements cloud à l’aide des informations d’identification définies dans `.env`. Recherchez le conteneur utilisé par les outils de développement (également indiqués dans `.env`), accédez au dossier __source__ et supprimez les images source. Vous devrez peut-être exécuter les étapes décrites dans la liste déroulante des fichiers [source incorrectes](#troubleshooting__dev-tool-application-cache) si les fichiers source supprimés continuent à s’afficher dans la liste déroulante car ils peuvent être mis en cache localement dans l’&quot;état de l’application&quot; des outils de développement.
-
-   ![Stockage Microsoft Azure Blob](./assets/development-tool/troubleshooting__remove-source-files.png)
++ [Retrait YAML incorrect](../troubleshooting.md#incorrect-yaml-indentation)
++ [MemorySize limit est trop faible](../troubleshooting.md#memorysize-limit-is-set-too-low)
++ [L&#39;outil de développement ne peut pas être début en raison de l&#39;absence de private.key](../troubleshooting.md#missing-private-key)
++ [Liste déroulante des fichiers source incorrecte](../troubleshooting.md#source-files-dropdown-incorrect)
++ [Paramètre de requête devToolToken manquant ou non valide](../troubleshooting.md#missing-or-invalid-devtooltoken-query-parameter)
++ [Impossible de supprimer les fichiers source](../troubleshooting.md#unable-to-remove-source-files)
++ [Le rendu est renvoyé partiellement dessiné/corrompu](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)
