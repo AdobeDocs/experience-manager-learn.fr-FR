@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -103,40 +103,9 @@ _Clic publicitaire de débogage d’un intervenant Asset Compute à l’aide de 
 
 ## Résolution des incidents
 
-### Le débogueur n’est pas joint
-
-+ __Erreur__: Erreur de traitement du lancement : Erreur : Impossible de se connecter à la cible de débogage à...
-+ __Cause__: Docker Desktop n&#39;est pas en cours d&#39;exécution sur le système local. Vérifiez ce point en examinant la console de débogage du code VS (Vue > Console de débogage), en confirmant que cette erreur est signalée.
-+ __Résolution__: Début [Docker Desktop et vérifiez que les images Docker requises sont installées](../set-up/development-environment.md#docker).
-
-### Points d’arrêt non suspendus
-
-+ __Erreur__: Lors de l&#39;exécution du programme de travail Asset Compute à partir de l&#39;outil de développement débogage, VS Code ne s&#39;arrête pas aux points d&#39;arrêt.
-
-#### Le débogueur de code VS n&#39;est pas joint
-
-+ __Cause :__ Le débogueur du code VS a été arrêté/déconnecté.
-+ __Résolution :__ Redémarrez le débogueur de code VS et vérifiez qu&#39;il est joint en regardant la console de sortie de débogage du code VS (Vue > Console de débogage).
-
-#### Débogueur de code VS attaché après le début de l&#39;exécution du programme de travail
-
-+ __Cause :__ Le débogueur du code VS n&#39;était pas joint avant d&#39;appuyer sur __Exécuter__ dans l&#39;outil de développement.
-+ __Résolution :__ Assurez-vous que le débogueur est joint en examinant la Console de débogage de VS Code (Vue > Console de débogage), puis réexécutez le programme de travail Asset Compute à partir de l&#39;outil de développement.
-
-### Le programme de travail expire lors du débogage
-
-+ __Erreur__: La console de débogage signale que &quot;l&#39;action va expirer dans -XXX millisecondes&quot; ou que la prévisualisation de rendu de l&#39;outil de développement [Asset Compute](../develop/development-tool.md) tourne indéfiniment ou
-+ __Cause__: Le délai d’expiration du programme de travail défini dans [manifest.yml](../develop/manifest.md) est dépassé pendant le débogage.
-+ __Résolution__: Augmentez temporairement le délai d’attente du collaborateur dans [manifest.yml](../develop/manifest.md) ou accélérez les activités de débogage.
-
-### Impossible d&#39;arrêter le processus de débogage
-
-+ __Erreur__: `Ctrl-C` sur la ligne de commande n&#39;arrête pas le processus de débogage (`npx adobe-asset-compute devtool`).
-+ __Cause__: Un bogue de la `@adobe/aio-cli-plugin-asset-compute` version 1.3.x `Ctrl-C` n&#39;est pas reconnu comme une commande d&#39;arrêt.
-+ __Résolution__: Mise à jour `@adobe/aio-cli-plugin-asset-compute` de la version 1.4.1+
-
-   ```
-   $ aio update
-   ```
-
-   ![Dépannage - Mise à jour d’aio](./assets/debug/troubleshooting__terminate.png)
++ [Le débogueur n’est pas joint](../troubleshooting.md#debugger-does-not-attach)
++ [Points d’arrêt non suspendus](../troubleshooting.md#breakpoints-no-pausing)
++ [Débogueur de code VS non joint](../troubleshooting.md#vs-code-debugger-not-attached)
++ [Débogueur de code VS attaché après le début de l&#39;exécution du programme de travail](../troubleshooting.md#vs-code-debugger-attached-after-worker-execution-began)
++ [Le programme de travail expire lors du débogage](../troubleshooting.md#worker-times-out-while-debugging)
++ [Impossible d&#39;arrêter le processus de débogage](../troubleshooting.md#cannot-terminate-debugger-process)
