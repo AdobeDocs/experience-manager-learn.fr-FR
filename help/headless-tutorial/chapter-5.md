@@ -2,7 +2,7 @@
 title: Chapitre 5 - Création de pages Content Services
 description: Le chapitre 5 du didacticiel AEM sans en-tête couvre la création des pages à partir des modèles définis au chapitre 4. Ces pages serviront de points de terminaison HTTP JSON.
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Le chapitre 5 du didacticiel AEM sans en-tête couvre la création de la page à
 
 ## Création de la page API Événement
 
-1. Accédez à **[!UICONTROL AEM]>[!UICONTROL Sites]>[!DNL WKND Mobile]>[!DNL English]>[!DNL API]**.
+1. Accédez à **[!UICONTROL AEM] > [!UICONTROL Sites] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**.
 1. **Appuyez sur le libellé de la page** API, puis sur le bouton **Créer** dans la barre d’actions supérieure et créez une page API Événements sous la page API.
    1. Appuyez sur **Créer** dans la barre d’actions supérieure.
    1. Sélectionner le modèle d&#39;API **** Événements
@@ -38,13 +38,13 @@ Le chapitre 5 du didacticiel AEM sans en-tête couvre la création de la page à
 > Le projet fournit une page CSS afin de fournir quelques styles de base pour l’expérience d’auteur.
 
 1. Modifiez la page API **** Événements en accédant à **AEM > Sites > WKND Mobile > Anglais > API**, en sélectionnant la page API **** Événements et en appuyant sur **Modifier dans la barre d’actions supérieure.**
-1. ajoutez une image **de** logo à afficher dans l’application en la faisant glisser depuis l’outil de recherche de ressources vers l’espace réservé du composant Image.
+1. Ajoutez une image **de** logo à afficher dans l’application en la faisant glisser depuis l’outil de recherche de ressources vers l’espace réservé du composant Image.
    * Utilisez le logo fourni figurant sur `/content/dam/wknd-mobile/images/wknd-logo.png`.
 
-1. ajoutez la ligne **de** balise pour qu’elle s’affiche au-dessus des événements.
+1. Ajoutez la ligne **de** balise pour qu’elle s’affiche au-dessus des événements.
    1. Modification du composant **Texte**
    1. Saisissez le texte:
-      1. `The WKND is here.`
+      * `The WKND is here.`
 
 1. Sélectionnez les **événements** à afficher :
    1. Définissez la configuration suivante dans l’onglet **Propriétés** :
