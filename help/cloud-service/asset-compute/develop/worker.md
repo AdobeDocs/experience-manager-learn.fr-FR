@@ -10,9 +10,9 @@ doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -30,18 +30,20 @@ Nous allons créer un programme de travail Asset Compute qui génère un nouveau
 
 Les agents d’Asset Compute implémentent le contrat d’API de travail SDK Asset Compute dans la `renditionCallback(...)` fonction, qui est conceptuellement :
 
-+ __Input :__ Fichier binaire et paramètres d’origine d’une ressource AEM
++ __Input :__ Paramètres binaires d’origine d’une ressource AEM et paramètres de Profil de traitement
 + __Output :__ Un ou plusieurs rendus à ajouter à la ressource AEM
 
 ![Flux logique de travail de calcul des ressources](./assets/worker/logical-flow.png)
 
-1. Lorsqu’un intervenant Asset Compute est appelé à partir du service Auteur AEM, il est affecté à une ressource AEM via un Profil de traitement. Le binaire d’origine de la ressource __(1a)__ est transmis au programme de travail par le biais du `source` paramètre de la fonction de rappel de rendu et __(1b)__ tout paramètre défini dans le Profil de traitement par le biais du `rendition.instructions` jeu de paramètres.
-1. La couche SDK Asset Compute accepte la demande du profil de traitement et orchestre l’exécution de la `renditionCallback(...)` fonction personnalisée du programme de travail Asset Compute, en transformant le fichier binaire source fourni dans __(1a)__ en fonction des paramètres fournis par __(1b)__ pour générer un rendu du fichier binaire source.
-   + Dans ce didacticiel, le rendu est créé &quot;en cours&quot;, ce qui signifie que le collaborateur compose le rendu. Toutefois, le binaire source peut être envoyé à d’autres API de service Web pour la génération de rendu.
-1. Le programme de travail Asset Compute enregistre la représentation binaire du rendu dans `rendition.path` laquelle il peut être enregistré dans le service Auteur AEM.
-1. Une fois l’opération terminée, les données binaires écrites sur `rendition.path` sont transportées via le SDK Asset Compute et exposées via le service d’auteur AEM en tant que rendu disponible dans l’interface utilisateur AEM.
+1. Le service Auteur AEM appelle le programme de travail Asset Compute, en fournissant le fichier binaire __(1a)__ original (`source` paramètre) et __(1b)__ tous les paramètres définis dans le Profil de traitement (`rendition.instructions` paramètre).
+1. Le SDK Asset Compute orchestre l’exécution de la `renditionCallback(...)` fonction de travail de métadonnées Asset Compute personnalisée, en générant un nouveau rendu binaire, basé sur le binaire original de la ressource __(1a)__ et les paramètres __(1b)__&#x200B;éventuels.
 
-Le diagramme ci-dessus exprime les préoccupations des développeurs d’Asset Compute et le flux logique vers l’appel des employés d’Asset Compute. Pour les curieux, les détails [internes de l’exécution](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) d’Asset Compute sont disponibles, mais seuls les contrats publics d’API SDK d’Asset Compute doivent être pris en compte.
+   + Dans ce didacticiel, le rendu est créé &quot;en cours&quot;, ce qui signifie que le collaborateur compose le rendu. Toutefois, le binaire source peut être envoyé à d’autres API de service Web pour la génération de rendu.
+
+1. Le programme de travail Asset Compute enregistre les données binaires du nouveau rendu dans `rendition.path`.
+1. Les données binaires écrites sur `rendition.path` sont transportées via le SDK Asset Compute vers le service d’auteur AEM et exposées sous la forme __(4a)__ d’un rendu de texte et __(4b)__ conservées dans le noeud de métadonnées de la ressource.
+
+Le diagramme ci-dessus exprime les préoccupations des développeurs d’Asset Compute et le flux logique vers l’appel des employés d’Asset Compute. Pour les curieux, les détails [internes de l’exécution](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) d’Asset Compute sont disponibles, mais seuls les contrats publics d’API SDK d’Asset Compute peuvent être dépendants.
 
 ## Anatomie d&#39;un travailleur
 
@@ -316,7 +318,7 @@ class RenditionInstructionsError extends ClientError {
 Maintenant que le code de travail est terminé et qu&#39;il a été précédemment enregistré et configuré dans [manifest.yml](./manifest.md), il peut être exécuté à l&#39;aide de l&#39;outil de développement de l&#39;informatique d&#39;actifs local pour afficher les résultats.
 
 1. A partir de la racine du projet Asset Compute
-1. Exécuter `app aio run`
+1. Exécuter `aio app run`
 1. Attente de l’ouverture de l’outil de développement Asset Compute dans une nouvelle fenêtre
 1. Dans la __liste déroulante Sélectionner un fichier...__ , sélectionnez un exemple d’image à traiter.
    + Sélectionnez un exemple de fichier image à utiliser comme fichier binaire source
@@ -391,11 +393,4 @@ Le dernier `index.js` est disponible sur Github à l&#39;adresse :
 
 ## Résolution des incidents
 
-### Le rendu est renvoyé partiellement tracé
-
-+ __Erreur__: Le rendu est rendu incomplet lorsque la taille totale du fichier de rendu est importante.
-
-   ![Dépannage - Le rendu est renvoyé partiellement](./assets/worker/troubleshooting__await.png)
-
-+ __Cause__: La `renditionCallback` fonction du collaborateur s’arrête avant que le rendu ne puisse être entièrement écrit `rendition.path`.
-+ __Résolution__: Vérifiez le code de travail personnalisé et assurez-vous que tous les appels asynchrones sont effectués de manière synchrone.
++ [Le rendu est renvoyé partiellement dessiné/corrompu](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)
