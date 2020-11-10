@@ -1,6 +1,6 @@
 ---
-title: Développement d’un intervenant de métadonnées de calcul de ressources
-description: Découvrez comment créer un outil de métadonnées Asset Compute qui dérive les couleurs les plus couramment utilisées dans un fichier d’image et réécrit les noms des couleurs dans les métadonnées du fichier dans AEM.
+title: Développement d’un agent de métadonnées d’Asset compute
+description: Découvrez comment créer un outil de métadonnées d’Asset compute qui dérive les couleurs les plus couramment utilisées dans un fichier d’image et réécrit les noms des couleurs dans les métadonnées du fichier dans AEM.
 feature: asset-compute
 topics: metadata, development
 version: cloud-service
@@ -10,49 +10,49 @@ doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: c2a8e6c3ae6dcaa45816b1d3efe569126c6c1e60
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1434'
 ht-degree: 1%
 
 ---
 
 
-# Développement d’un intervenant de métadonnées de calcul de ressources
+# Développement d’un agent de métadonnées d’Asset compute
 
-Les agents de traitement de l’actif personnalisé peuvent produire des données XMP (XML) qui sont renvoyées à AEM et stockées en tant que métadonnées sur un actif.
+Les agents d’Asset compute personnalisés peuvent produire des données XMP (XML) qui sont renvoyées à AEM et stockées en tant que métadonnées sur un fichier.
 
 Les cas d&#39;utilisation courants sont les suivants :
 
 + Intégrations à des systèmes tiers, tels qu’un PIM (Product Information Management System), dans lequel des métadonnées supplémentaires doivent être récupérées et stockées sur la ressource
 + Intégrations à des services d’Adobe, tels que Content and Commerce AI, afin d’enrichir les métadonnées de ressources par des attributs d’apprentissage automatique supplémentaires.
-+ Déplacement des métadonnées du fichier à partir de son fichier binaire et stockage de celui-ci en tant que métadonnées de fichier dans AEM en tant que Cloud Service
++ Dériver des métadonnées sur le fichier à partir de son fichier binaire et les stocker en tant que métadonnées de fichier dans AEM en tant que Cloud Service
 
 ## Ce que vous allez faire
 
 >[!VIDEO](https://video.tv.adobe.com/v/327313?quality=12&learn=on)
 
-Dans ce didacticiel, nous allons créer un programme de travail des métadonnées de calcul des ressources qui dérive les couleurs les plus couramment utilisées dans un fichier d&#39;image et écrit les noms des couleurs dans les métadonnées du fichier dans AEM. Bien que le programme de travail lui-même soit de base, ce didacticiel l’utilise pour explorer comment les collaborateurs d’Asset Compute peuvent être utilisés pour écrire des métadonnées sur des ressources en AEM en tant que Cloud Service.
+Dans ce didacticiel, nous allons créer un outil de métadonnées d&#39;Asset compute qui dérive les couleurs les plus couramment utilisées dans un fichier d&#39;image et écrit les noms des couleurs dans les métadonnées du fichier dans AEM. Bien que le collaborateur lui-même soit de base, ce didacticiel l’utilise pour explorer comment les collaborateurs d’Asset compute peuvent être utilisés pour écrire des métadonnées dans des ressources en AEM en tant que Cloud Service.
 
-## Flux logique d’un appel d’opérateur de métadonnées Asset Compute
+## Flux logique d’un appel d’opérateur de métadonnées d’Asset compute
 
-L’appel des opérateurs de métadonnées Asset Compute est presque identique à celui des opérateurs [générateurs de rendus](../develop/worker.md)binaires, la Principale différence étant que le type de retour est un rendu XMP (XML) dont les valeurs sont également écrites dans les métadonnées du fichier.
+L’appel des opérateurs de métadonnées d’Asset compute est presque identique à celui des opérateurs [générateurs de rendus](../develop/worker.md)binaires, la Principale différence étant que le type de retour est un rendu XMP (XML) dont les valeurs sont également écrites dans les métadonnées du fichier.
 
-Les agents d’Asset Compute implémentent le contrat d’API de travail SDK Asset Compute dans la `renditionCallback(...)` fonction, qui est conceptuellement :
+Les agents d’Asset compute implémentent le contrat d’API de travail du SDK d’Asset compute dans la `renditionCallback(...)` fonction, qui est conceptuellement :
 
 + __Input :__ Paramètres binaires d’origine d’une ressource AEM et paramètres de Profil de traitement
 + __Output :__ Un rendu XMP (XML) conservait la ressource AEM en tant que rendu et les métadonnées de la ressource.
 
-![Flux logique de travail de métadonnées de calcul des ressources](./assets/metadata/logical-flow.png)
+![Flux logique de travail de métadonnées d&#39;Asset compute](./assets/metadata/logical-flow.png)
 
-1. Le service Auteur AEM appelle le programme de travail des métadonnées Asset Compute, en fournissant le fichier binaire __(1a)__ original et __(1b)__ tous les paramètres définis dans le Profil de traitement.
-1. Le SDK Asset Compute orchestre l’exécution de la `renditionCallback(...)` fonction personnalisée du programme de travail des métadonnées Asset Compute, en dérivant un rendu XMP (XML), en fonction du binaire de la ressource __(1a)__ et des paramètres de Profil de traitement __(1b)__.
-1. Le programme de travail Asset Compute enregistre la représentation XMP (XML) dans `rendition.path`.
-1. Les données XMP (XML) écrites sur `rendition.path` sont transportées via le SDK Asset Compute vers le service d’auteur AEM et les exposent sous la forme __(4a)__ d’un rendu de texte et __(4b)__ conservées dans le noeud de métadonnées de la ressource.
+1. Le service Auteur AEM appelle le programme de travail des métadonnées de l’Asset compute, en fournissant le fichier binaire __(1a)__ original et __(1b)__ tous les paramètres définis dans le Profil de traitement.
+1. Le SDK d’Asset compute orchestre l’exécution de la `renditionCallback(...)` fonction de travail des métadonnées d’Asset compute personnalisée, en dérivant un rendu XMP (XML), en fonction du binaire de la ressource __(1a)__ et des paramètres de Profil de traitement __(1b)__.
+1. Le travailleur d’Asset compute enregistre la représentation XMP (XML) dans `rendition.path`.
+1. Les données XMP (XML) écrites sur `rendition.path` sont transportées via le SDK Asset compute vers le service d’auteur AEM et les exposent sous la forme __(4a)__ d’un rendu de texte et __(4b)__ conservées dans le noeud de métadonnées de la ressource.
 
 ## Configuration du fichier manifest.yml{#manifest}
 
-Tous les employés Asset Compute doivent être enregistrés dans [manifest.yml](../develop/manifest.md).
+Tous les travailleurs d&#39;Asset compute doivent être enregistrés dans le fichier [manifest.yml](../develop/manifest.md).
 
 Ouvrez le projet `manifest.yml` et ajoutez une entrée de collaborateur qui configure le nouveau collaborateur, dans ce cas `metadata-colors`.
 
@@ -87,11 +87,11 @@ Les et `limits` `require-adobe-auth` sont configurés séparément par travaille
 
 ## Développement d’un intervenant de métadonnées{#metadata-worker}
 
-Créez un nouveau fichier JavaScript de travail de métadonnées dans le projet Asset Compute à l’emplacement manifest.yml [défini par le chemin d’accès pour le nouveau collaborateur](#manifest), à l’emplacement `/actions/metadata-colors/index.js`
+Créez un fichier JavaScript de travail de métadonnées dans le projet d’Asset compute à l’emplacement manifest.yml [défini par le chemin d’accès pour le nouveau collaborateur](#manifest), à l’emplacement `/actions/metadata-colors/index.js`
 
 ### Installation des modules npm
 
-Installez les modules npm supplémentaires ([@adobe/asset-compute-xmp](https://www.npmjs.com/package/@adobe/asset-compute-xmp?activeTab=versions), [get-image-color](https://www.npmjs.com/package/get-image-colors)et [color-namer](https://www.npmjs.com/package/color-namer)) qui seront utilisés dans ce programme de travail Asset Compute.
+Installez les modules npm supplémentaires ([@adobe/asset-compute-xmp](https://www.npmjs.com/package/@adobe/asset-compute-xmp?activeTab=versions), [get-image-color](https://www.npmjs.com/package/get-image-colors)et [color-namer](https://www.npmjs.com/package/color-namer)) qui seront utilisés dans ce programme de travail d’Asset compute.
 
 ```
 $ npm install @adobe/asset-compute-xmp
@@ -180,14 +180,14 @@ function getColorName(colorsFamily, color) {
 
 ## Exécution locale du programme de travail des métadonnées{#development-tool}
 
-Une fois le code de travail terminé, il peut être exécuté à l’aide de l’outil de développement de l’informatique d’actifs local.
+Une fois le code de travail terminé, il peut être exécuté à l’aide de l’outil de développement d’Asset compute local.
 
-Comme notre projet Asset Compute contient deux collaborateurs (le rendu [](../develop/worker.md) cercle précédent et ce `metadata-colors` collaborateur), la définition de profil de l&#39;outil de développement de [](../develop/development-tool.md) Asset Compute liste des profils d&#39;exécution pour les deux collaborateurs. La deuxième définition du profil désigne le nouveau `metadata-colors` travailleur.
+Comme notre projet d&#39;Asset compute contient deux travailleurs (le précédent rendu [](../develop/worker.md) cercle et ce `metadata-colors` travailleur), la définition de profil de l&#39;outil de développement d&#39; [](../develop/development-tool.md) Assets compute liste les profils d&#39;exécution pour les deux travailleurs. La deuxième définition du profil désigne le nouveau `metadata-colors` travailleur.
 
 ![Rendu de métadonnées XML](./assets/metadata/metadata-rendition.png)
 
-1. A partir de la racine du projet Asset Compute
-1. Exécuter pour `aio app run` début l&#39;outil de développement de calcul des ressources
+1. A partir de la racine du projet d&#39;Asset compute
+1. Exécuter `aio app run` pour début de l&#39;outil de développement d&#39;Asset compute
 1. Dans la __liste déroulante Sélectionner un fichier...__ , sélectionnez un [exemple d’image](../assets/samples/sample-file.jpg) à traiter.
 1. Dans la seconde configuration de définition de profil, qui pointe vers le `metadata-colors` programme de travail, mettez à jour `"name": "rendition.xml"` lorsque ce programme de travail génère un rendu XMP (XML). Vous pouvez éventuellement ajouter un `colorsFamily` paramètre (valeurs prises en charge `basic`, `hex`, `html`, `ntc`, `pantone`, `roygbiv`).
 
@@ -208,9 +208,9 @@ Comme notre projet Asset Compute contient deux collaborateurs (le rendu [](../de
 
 ## Tester le collaborateur{#test}
 
-Les opérateurs de métadonnées peuvent être testés à l’aide de la [même structure de test Asset Compute que les rendus](../test-debug/test.md)binaires. La seule différence est que le `rendition.xxx` fichier dans le cas de test doit être le rendu XMP (XML) attendu.
+Les outils de métadonnées peuvent être testés à l’aide de la [même structure de test d’Asset compute que les rendus](../test-debug/test.md)binaires. La seule différence est que le `rendition.xxx` fichier dans le cas de test doit être le rendu XMP (XML) attendu.
 
-1. Créez la structure suivante dans le projet Asset Compute :
+1. Créez la structure suivante dans le projet d&#39;Asset compute :
 
    ```
    /test/asset-compute/metadata-colors/success-pantone/
@@ -239,7 +239,7 @@ Les opérateurs de métadonnées peuvent être testés à l’aide de la [même 
    <?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:wknd="https://wknd.site/assets/1.0/"><rdf:Description><wknd:colors><rdf:Seq><rdf:li>Silver</rdf:li><rdf:li>Black</rdf:li><rdf:li>Outer Space</rdf:li></rdf:Seq></wknd:colors><wknd:colorsFamily>pantone</wknd:colorsFamily></rdf:Description></rdf:RDF>
    ```
 
-5. Exécutez `aio app test` à partir de la racine du projet Asset Compute pour exécuter toutes les suites de tests.
+5. Exécutez `aio app test` à partir de la racine du projet d&#39;Asset compute pour exécuter toutes les suites de tests.
 
 ### Déployer le collaborateur sur Adobe I/O Runtime{#deploy}
 
@@ -304,15 +304,15 @@ Pour consulter les métadonnées des couleurs, associez deux nouveaux champs du 
 1. Accédez au dossier, ou sous-dossier, auquel le Profil de traitement est appliqué
 1. Téléchargez une nouvelle image (JPEG, PNG, GIF ou SVG) dans le dossier ou retraitez les images existantes à l’aide du Profil de [traitement mis à jour.](#processing-profile)
 1. Une fois le traitement terminé, sélectionnez le fichier, puis appuyez sur __les propriétés__ dans la barre d’actions supérieure pour afficher ses métadonnées.
-1. Examinez les champs `Colors Family` et `Colors` [](#metadata-schema) métadonnées des métadonnées écrits à partir du programme de travail de métadonnées Asset Compute personnalisé pour rechercher les métadonnées enregistrées.
+1. Examinez les champs `Colors Family` et `Colors` [](#metadata-schema) métadonnées des métadonnées écrits à partir du convertisseur de métadonnées d’Asset compute personnalisé pour connaître les métadonnées enregistrées.
 
-Ces métadonnées de couleur sont désormais disponibles pour être réécrites au format binaire sous forme de données XMP (sur la prochaine XMP de réécriture) ainsi que pour faciliter la découverte de ressources au moyen d’une recherche de texte intégral.
+Avec les métadonnées en couleur écrites sur les métadonnées de la ressource, sur la `[dam:Asset]/jcr:content/metadata` ressource, ces métadonnées sont indexées, ce qui augmente la capacité de découverte de la ressource à l’aide de ces termes via la recherche, et elles peuvent même être réécrites au fichier binaire de la ressource si le processus d’enregistrement __des métadonnées__ DAM est alors appelé dessus.
 
 ### Rendu des métadonnées en AEM Assets
 
 ![Fichier de rendu de métadonnées AEM Assets](./assets/metadata/cqdam-metadata-rendition.png)
 
-Le fichier XMP réel généré par le programme de travail des métadonnées Asset Compute est également stocké en tant que rendu distinct sur la ressource. Ce fichier n’est généralement pas utilisé, mais les valeurs appliquées au noeud de métadonnées du fichier sont utilisées, mais la sortie XML brute du programme de travail est disponible dans AEM.
+Le fichier XMP réel généré par le programme de travail des métadonnées de l’Asset compute est également stocké en tant que rendu distinct sur la ressource. Ce fichier n’est généralement pas utilisé, mais les valeurs appliquées au noeud de métadonnées du fichier sont utilisées, mais la sortie XML brute du programme de travail est disponible dans AEM.
 
 ## code de travail de métadonnées-couleurs sur Github
 
