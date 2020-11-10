@@ -1,14 +1,14 @@
 ---
-title: tutorials AEM Sites
-seo-title: tutorials AEM Sites
-description: 'Collection de vidéos et de didacticiels pour Adobe Experience Manager Sites. '
-seo-description: Collection de vidéos et de didacticiels pour l'Adobe Experience Manager Sites
+title: Tutoriels AEM Sites
+seo-title: Tutoriels AEM Sites
+description: 'Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Sites. '
+seo-description: Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Sites
 sub-product: sites, content-services
 translation-type: tm+mt
-source-git-commit: 2325132bc5fecf6637d6c105b66d4455e7edf485
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 7%
+ht-degree: 20%
 
 ---
 
@@ -19,34 +19,28 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
 
 ## Nouveautés
 
-* **[Prise en main de AEM SPA Editor and React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)(Didacticiel)**
+* **[Prise en main de AEM SPA Editor and React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html) (Didacticiel)**
 
-   <br>
-   *Guide de prise en main destiné aux développeurs pour l’intégration d’une application d’une seule page avec AEM à l’aide de React*
+   *Guide de prise en main pour les développeurs pour l&#39;intégration d&#39;une application d&#39;une seule page (SPA) avec AEM à l&#39;aide de React*
 
-* **[Prise en main de AEM SPA Editor et Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)(didacticiel)**
+* **[Prise en main de AEM SPA Editor et Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) (didacticiel)**
 
-   <br>
-   *Guide de prise en main destiné aux développeurs pour l’intégration d’une application d’une seule page avec AEM à l’aide d’Angular*
+   *Guide de prise en main pour les développeurs pour l’intégration d’une application d’une seule page (SPA) avec AEM à l’aide d’Angular*
 
 * **[Prise en main AEM sans en-tête (didacticiel)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)**
 
-   <br>
    *Comment exposer le contenu d’AEM à consommer par une application mobile native, dans un scénario CMS sans tête.*
 
 * **[Utilisation de fragments d’expérience (série de vidéos)](./experience-fragments/experience-fragments-feature-video-use.md)**
 
-   <br>
    *Découvrez les fragments d’expérience AEM pour la promotion de contenu entre canaux.*
 
 * **[Utilisation de fragments de contenu (série de vidéos)](./content-fragments/content-fragments-feature-video-use.md)**
 
-   <br>
    *Les fragments de contenu sont des éléments de contenu indépendants du canal qui peuvent être réutilisés.*
 
-* **[Utilisation de l’éditeur d’applications monopages (vidéo)](./spa-editor/spa-editor-framework-feature-video-use.md)**
+* **[Utilisation de SPA Editor (Vidéo)](./spa-editor/spa-editor-framework-feature-video-use.md)**
 
-   <br>
    *Découvrez les fonctionnalités d’édition AEM pour les applications d’une seule page (SPA).*
 
 ## Sélection du personnel
@@ -68,11 +62,11 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
   </td>
   <td>
     <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html">
-    <img alt="Prise en main AEM sans en-tête" src="./assets/aem-headless-tutorial.png" />
+    <img alt="Prise en main d’AEM sans affichage" src="./assets/aem-headless-tutorial.png" />
     </a>
     <div>
     <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html">
-    <strong>Prise en main AEM sans en-tête</strong>
+    <strong>Prise en main d’AEM sans affichage</strong>
     </a>
     </div>
     <p>
@@ -89,7 +83,7 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
       </a>
     </div>
     <p>
-    <em>Guide de prise en main destiné aux développeurs pour l’intégration d’une seule page d’applications (ZPS) à l’AEM.</em>
+    <em>Guide de prise en main destiné aux développeurs pour l’intégration d’une seule page d’applications (SPA) avec AEM.</em>
     <p>
   </td>
 </tr>
@@ -101,8 +95,8 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
 * [Documentation de création AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
 * [Documentation sur le développement d’AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [Documentation de l’administration AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
-* [aem sites Deploying Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
-* [aem en tant que Tutorials Cloud Service](/help/cloud-service/overview.md)
-* [tutorials AEM Assets](/help/assets/overview.md)
-* [tutorials AEM Forms](/help/forms/overview.md)
-* [tutorials de la Fondation AEM](/help/foundation/overview.md)
+* [AEM Sites Deploying Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
+* [Tutoriels d’AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutoriels AEM Assets](/help/assets/overview.md)
+* [Tutoriels AEM Forms](/help/forms/overview.md)
+* [Tutoriels d’AEM Foundation](/help/foundation/overview.md)
