@@ -1,13 +1,13 @@
 ---
-title: Vidéos AEM Foundation et Tutorials
-seo-title: Vidéos AEM Foundation et Tutorials
-description: 'Collection de vidéos et de didacticiels pour la Adobe Experience Manager Foundation. '
-seo-description: Une collection de vidéos et de didacticiels pour la Adobe Experience Manager Foundation
+title: Vidéos et tutoriels d’AEM Foundation
+seo-title: Vidéos et tutoriels d’AEM Foundation
+description: 'Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Foundation. '
+seo-description: Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Foundation
 translation-type: tm+mt
-source-git-commit: e19e177589df7ce6a56c0be3f9d590cbca2f8ce7
+source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 1%
+ht-degree: 22%
 
 ---
 
@@ -19,22 +19,15 @@ Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponib
 ## Nouveautés
 
 * **[Utilisation de la gestion du flux de travail dans AEM (vidéo)](./workflow/use-workflow-management.md)**
-
-   <br>
-   *aem permet d&#39;obtenir une visibilité sur les workflows en cours d&#39;exécution et facilite la gestion des[!DNL Workflow]définitions.*
+   *aem permet d&#39;obtenir une visibilité sur les workflows en cours d&#39;exécution et facilite la gestion des [!DNL Workflow] définitions.*
 
 * **[Comprendre Cloud Manager pour AEM (Vidéo)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
-   <br>
-
    *Cloud Manager pour AEM permet une gestion, une inspection et un libre-service aisés des environnements AEM.*
 
 * **[Configurer des clés publiques et privées à utiliser avec les E/S d&#39;Adobe (didacticiel)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   <br>
-   *Découvrez comment les clés et les fichiers de stockage de clés sont générés à l&#39;aide[!DNL openssl]d&#39;un système d&#39;E/S AEM et d&#39;Adobe.*
+   *Découvrez comment les clés et les fichiers de stockage de clés sont générés à l&#39;aide [!DNL openssl] d&#39;un système d&#39;E/S AEM et d&#39;Adobe.*
 
 * **[Utilisation du pipeline Cloud Manager CI/CD (vidéo)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
-   <br>
-
    *Découvrez comment utiliser le pipeline de CI/CD de Cloud Manager pour assurer des déploiements sûrs et cohérents.*
 
 ## Sélection du personnel
@@ -86,7 +79,7 @@ Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponib
 ## Ressources supplémentaires
 
 * [Experience League - Explorez AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [aem en tant que Tutorials Cloud Service](/help/cloud-service/overview.md)
-* [Vidéos et Tutorials AEM Sites](/help/sites/overview.md)
-* [Vidéos et Tutorials AEM Assets](/help/assets/overview.md)
-* [Vidéos et Tutorials AEM Forms](/help/forms/overview.md)
+* [Tutoriels d’AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [Vidéos et tutoriels AEM Sites](/help/sites/overview.md)
+* [Vidéos et tutoriels AEM Assets](/help/assets/overview.md)
+* [Vidéos et tutoriels AEM Forms](/help/forms/overview.md)
