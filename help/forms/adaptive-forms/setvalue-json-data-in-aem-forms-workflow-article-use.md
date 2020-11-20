@@ -12,7 +12,7 @@ activity: setup
 version: 6.4
 discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
 translation-type: tm+mt
-source-git-commit: f07680e73316efb859a675f4b2212d8c3e03f6a0
+source-git-commit: 233ad7184cb48098253a78c07a3913356ac9e774
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 2%
@@ -46,7 +46,7 @@ Pour déployer les ressources sur votre système local :
 
 * [Téléchargement et déploiement de DevelopingWitheServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-*[Téléchargez et déployez le lot](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Il s’agit du lot OSGI personnalisé qui vous permet de définir les valeurs d’un élément dans les données json envoyées.
+* [Téléchargez et déployez le lot](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Il s’agit du lot OSGI personnalisé qui vous permet de définir les valeurs d’un élément dans les données json envoyées.
 
 * [Téléchargement et extraction du contenu du fichier zip](assets/set-value-jsondata.zip)
    * Pointez votre navigateur sur le gestionnaire de [packages.](http://localhost:4502/crx/packmgr/index.jsp)
@@ -63,10 +63,8 @@ Pour déployer les ressources sur votre système local :
 * Les champs du premier panneau sont désactivés.
 * Vous pouvez constater que le groupe d’experts chargé d’approuver ou de rejeter la demande est maintenant visible.
 
-
-
 >[!NOTE]
-
+>
 >Etant donné que nous pré-renseignons le formulaire adaptatif à l’aide du profil d’utilisateur, assurez-vous que les informations sur le profil [d’utilisateur de l’administrateur ](http://localhost:4502/security/users.html). Au minimum, assurez-vous d’avoir défini les valeurs des champs Prénom, Nom et Adresse électronique.
 >Vous pouvez activer la journalisation du débogage en activant la journalisation pour com.aemforms.setvalue.core.SetValueInJson [à partir d’ici](http://localhost:4502/system/console/slinglog)
 
