@@ -1,6 +1,6 @@
 ---
 title: Présentation de l'AEM et de l'Adobe Target
-description: Découvrez comment créer et diffuser une expérience personnalisée en utilisant Adobe Experience Manager comme Cloud Service et Adobe Target
+description: Découvrez comment créer et diffuser une expérience personnalisée en utilisant Adobe Experience Manager comme Cloud Service et Adobe Target.
 feature: launch, experience-fragments, core-components, data-layer
 topics: integrations, personalization, administration, development
 audience: all
@@ -10,27 +10,40 @@ version: cloud-service
 kt: 6043
 thumbnail: 41241.jpg
 translation-type: tm+mt
-source-git-commit: 25ca90f641aaeb93fc9319692f3b099d6b528dd1
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 0%
+source-wordcount: '215'
+ht-degree: 3%
 
 ---
 
 
-# Présentation de l&#39;AEM et de l&#39;Adobe Target {#overview-aem-target}
+# aem et Adobe Target
 
-L&#39;AEM et la Cible sont deux solutions puissantes avec des capacités qui semblent se chevaucher. Les clients ont parfois du mal à comprendre comment et quand utiliser ces produits conjointement pour offrir une expérience personnalisée. Pour offrir une expérience optimisée à chaque utilisateur final, différentes équipes de votre entreprise doivent travailler en étroite collaboration et définir qui fait quoi.
+Adobe Experience Manager (AEM) et Adobe Target sont des solutions puissantes dotées de capacités complémentaires qui peuvent être mal interprétées comme concurrentes. Les clients ont parfois du mal à comprendre comment et quand utiliser ces produits conjointement pour offrir une expérience personnalisée. Pour offrir une expérience optimisée à chaque utilisateur final, différentes équipes de votre entreprise doivent travailler en étroite collaboration et définir qui fait quoi.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41241?quality=12&learn=on)
 
-Dans cette vidéo, nous abordons trois scénarios différents pour l&#39;AEM et la Cible, ce qui vous aide à comprendre ce qui fonctionne le mieux pour votre entreprise.
+Dans cette vidéo, nous abordons trois approches d&#39;utilisation de l&#39;AEM et de la Cible et nous vous aidons à comprendre ce qui fonctionne le mieux pour votre organisation.
 
-* Scénario 1 : Personnalisation à l’aide de fragments d’expérience AEM
-* Scénario 2 : Personnalisation à l’aide du compositeur d’expérience visuelle
-* Scénario 3 : Personnalisation des expériences de pages Web complètes
+* __Scénario 1 :__ Personnalisation à l’aide d’Offres de fragments d’expérience AEM
 
-**Pour mettre en oeuvre ce scénario, vous devez :**
+   1. [Ajouter Adobe Target sur votre site Web AEM](./add-target-launch-extension.md)
+   1. [Déclencher un appel Adobe Target à partir du lancement](./load-and-fire-target.md)
+   1. [Intégration du service AEM Author à Adobe Target](./setup-aem-target-cloud-service.md)
+   1. [Exportez des fragments d’expérience AEM vers Adobe Target](./export-experience-fragment-target.md)
+   1. [Personnalisation d’une partie d’une page Web à l’aide d’Offres de fragments d’expérience](./create-target-activity.md)
 
-* Intégration de l&#39;AEM et de Adobe Target à l&#39;aide des E/S de lancement et d&#39;Adobe
-* aem et Adobe Target à l’aide de Cloud Services hérités
+* __Scénario 2 :__ Personnalisation à l’aide du compositeur d’expérience visuelle
+
+   1. [Ajouter Adobe Target sur votre site Web AEM](./add-target-launch-extension.md)
+   1. [Déclencher un appel Adobe Target à partir du lancement](./load-and-fire-target.md)
+   1. [Personnalisation d’une partie d’une page Web à l’aide du compositeur d’expérience visuelle](./personalization-using-vec.md)
+
+* __Scénario 3 :__ Personnalisation des expériences de pages Web complètes
+
+   1. [Ajouter Adobe Target sur votre site Web AEM](./add-target-launch-extension.md)
+   1. [Déclencher un appel Adobe Target à partir du lancement](./load-and-fire-target.md)
+   1. [Personnaliser l&#39;intégralité de l&#39;expérience de la page Web](./personalization-web-page.md)
+
+
