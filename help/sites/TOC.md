@@ -4,10 +4,10 @@ user-guide-description: Ensemble de vidéos et de tutoriels pour Adobe Experienc
 breadcrumb-title: Tutoriels AEM Sites
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: 55beee99b91c44f96cd37d161bb3b4ffe38d2687
+source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
 workflow-type: tm+mt
 source-wordcount: '476'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 16%
    + [Comprendre les fragments de contenu par rapport aux fragments d’expérience](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + Développement {#developing}
    + [Archétype de projet AEM](developing/aem-project-archetype.md)
-   + [Prise en main de AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [Prise en main de AEM Sites](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Prise en main d’AEM sans affichage](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [Prise en main de AEM SPA Editor et réaction](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
    + [Prise en main de AEM SPA Editor et Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
@@ -59,12 +59,12 @@ ht-degree: 16%
    + [Implémentation de la recherche simple](developing/search-tutorial-develop.md)
    + [Partage sur les réseaux sociaux](developing/social-media-sharing-technical-video-use.md)
    + [Personnalisation des icônes de composant](developing/component-icons-technical-video-develop.md)
-+ Personnalisation   {#personalization}
++ Personnalisation  {#personalization}
    + [Intégration avec Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html)
    + [Configuration de fragments d’expérience et d’Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Utilisation de fragments d’expérience avec Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configuration de ContextHub](personalization/context-hub-technical-video-setup.md)
-+ des applications sur une seule page ;{#spa-editor}
++ Applications d’une seule page {#spa-editor}
    + [Utilisation de SPA Editor](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Didacticiel Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [Prise en main de AEM SPA Editor et réaction](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
@@ -107,7 +107,7 @@ ht-degree: 16%
       + [Ajouter l’Extension de la cible de lancement de la propriété](integrations/adobe-target/add-target-launch-extension.md)
       + [Charger et déclencher un appel de Cible](integrations/adobe-target/load-and-fire-target.md)
       + [Créer un compte Cloud Service Adobe Target](integrations/adobe-target/setup-aem-target-cloud-service.md)
-      + [Exporter le fragment d’expérience vers Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
+      + [Exportez des fragments d’expérience vers Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
       + [Création d’Activités de Cible à l’aide d’Offres de fragments d’expérience](integrations/adobe-target/create-target-activity.md)
       + [Personnalisation à l’aide du compositeur d’expérience visuelle](integrations/adobe-target/personalization-using-vec.md)
       + [Personnalisation de l’expérience de la page Web complète](integrations/adobe-target/personalization-web-page.md)
