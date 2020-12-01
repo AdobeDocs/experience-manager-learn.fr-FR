@@ -6,9 +6,9 @@ user-guide-description: Ensemble de ressources AEM Forms pour les développeurs 
 breadcrumb-title: Tutoriels AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 9d4e864f42fa6c0b2f9b895257db03311269ce2e
+source-git-commit: 787a79663472711b78d467977d633e3d410803e5
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 6%
 + [Présentation](overview.md)
 + [Meilleures pratiques à suivre](adaptive-forms/best-practices-adaptive-forms.md)
 + [Configuration de l’authentification OKTA avec AEM Author](adaptive-forms/single-sign-on-with-okta.md)
-+ Creating Your First Adaptive Form {#creating-your-first-adaptive-form}
++ Création de votre premier formulaire adaptatif {#creating-your-first-adaptive-form}
    + [Introduction et configuration](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [Créer un modèle de formulaire adaptatif](creating-your-first-adaptive-form/create-adaptive-form-template.md)
    + [Créer un fragment de formulaire](creating-your-first-adaptive-form/create-form-fragment.md)
@@ -34,7 +34,7 @@ ht-degree: 6%
    + [Configuration d’un formulaire adaptatif pour déclencher le processus](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [Affichage de la page de remerciement](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
    + [Envoi au point de terminaison externe](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
-   + [Envoi d’un courriel](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
+   + [Envoi d’un email](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
    + [Processus de demande d&#39;annulation de délai payant](handling-form-submissions/paid-time-off-request-workflow.md)
    + [Configuration d’un formulaire adaptatif pour déclencher AEM flux de travail - vidéo](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
    + [Personnaliser la notification d&#39;affectation de Tâche](handling-form-submissions/customize-assign-task-notification.md)
@@ -83,7 +83,7 @@ ht-degree: 6%
    + [Préremplissage du Forms HTML5](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modèle de données de formulaire avec Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Ajouter dynamiquement des éléments au composant de choix](adaptive-forms/choice-group-items-adding-dynamically-article.md)
-+ Préremplissage d’un formulaire adaptatif à l’aide du modèle de données de formulaire{#prefill-fdm-db}
++ Préremplissage du formulaire adaptatif à l’aide du modèle de données de formulaire{#prefill-fdm-db}
    + [Présentation](prefill-fdm-db/introduction.md)
    + [Création de tables de base de données](prefill-fdm-db/create-database-tables.md)
    + [Configuration du modèle de données de formulaire](prefill-fdm-db/configuring-form-data-model.md)
@@ -124,7 +124,7 @@ ht-degree: 6%
    + [Convertir un formulaire PDF en formulaire adaptatif](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurer un formulaire adaptatif converti](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Utilisation de modèles XDP avec Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
-+ Variables dans le processus AEM{#variables-aem-workflow}
++ Variables du flux de travail AEM{#variables-aem-workflow}
    + [Introduction - Variables dans le processus](variables-aem-workflow/introduction.md)
    + [Variables XML](variables-aem-workflow/part1.md)
    + [Variables JSON](variables-aem-workflow/part2.md)
@@ -135,8 +135,8 @@ ht-degree: 6%
 + Stockage et récupération des données de formulaire dans la base de données MySQL{#storing-and-retrieving-form-data}
    + [Présentation](storing-retrieving-form-data/introduction.md)
    + [Configurer la source de données](storing-retrieving-form-data/part1.md)
-   + [Servlet de stockage des données](storing-retrieving-form-data/part2.md)
-   + [Service pour récupérer les données](storing-retrieving-form-data/part3.md)
+   + [Service de stockage des données](storing-retrieving-form-data/part3.md)
+   + [Créer un servlet](storing-retrieving-form-data/part2.md)
    + [Bibliothèque cliente](storing-retrieving-form-data/part4.md)
    + [Modèle de formulaire adaptatif](storing-retrieving-form-data/part5.md)
    + [Déploiement de fichiers d’exemple](storing-retrieving-form-data/part6.md)
@@ -146,7 +146,7 @@ ht-degree: 6%
    + [Gestion de l’envoi PDF](offline-mobile-form-submission/part-two.md)
    + [Processus de révision du PDF](offline-mobile-form-submission/part-three.md)
    + [Déployer sur votre système](offline-mobile-form-submission/part-four.md)
-+ Interrogation des données envoyées{#querying-submitted-data}
++ Requête de données envoyées {#querying-submitted-data}
    + [Présentation](querying-submitted-data/introduction.md)
    + [Création d’un formulaire basé sur le Schéma JSON](querying-submitted-data/part1.md)
    + [Stocker les données envoyées](querying-submitted-data/part2.md)
@@ -204,7 +204,7 @@ ht-degree: 6%
    + [Utilisation du composant Tableau dans le Document Canal d&#39;impression AEM Forms](interactive-communications/table-in-print-channel-documents-video-use.md)
    + [Génération d&#39;un Document de communications interactives pour le Canal d&#39;impression à l&#39;aide de dossiers de contrôle](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
-+ Interactive Communications For Web Channel {#ic-web-channel-tutorial}
++ Communications Interactives Pour Le Canal Web {#ic-web-channel-tutorial}
    + [Présentation](ic-web-channel-tutorial/introduction.md)
    + [Configurer Tomcat](ic-web-channel-tutorial/partone.md)
    + [Créer une source de données](ic-web-channel-tutorial/parttwo.md)
