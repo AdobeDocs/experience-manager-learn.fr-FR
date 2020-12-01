@@ -8,10 +8,10 @@ doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 787a79663472711b78d467977d633e3d410803e5
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 6%
+source-wordcount: '278'
+ht-degree: 11%
 
 ---
 
@@ -23,17 +23,27 @@ ht-degree: 6%
 >Les éléments suivants sont nécessaires pour que cette opération s&#39;exécute sur votre système.
 >
 >* AEM Forms(version 6.3 ou ultérieure)
->* Base de données MYSQL
+>* Base de données MySql
 
 
 Pour tester cette fonctionnalité sur votre instance AEM Forms, procédez comme suit.
 
-* Téléchargez et décompressez les ressources [du](assets/store-retrieve-form-data.zip) didacticiel sur votre système local.
-* Déployez et début les lots techmarketingdemos.jar et mysqldriver.jar à l’aide de la console Web [Felix.](http://localhost:4502/system/console/configMgr)
-* Importez le fichier aemformstutorial.sql à l’aide de MYSQL Workbench. Vous allez créer le schéma et les tables nécessaires dans votre base de données pour que ce didacticiel fonctionne.
-* Importez StoreAndRetrieve.zip à l’aide de [AEM gestionnaire de packages.](http://localhost:4502/crx/packmgr/index.jsp) Ce package contient le modèle de formulaire adaptatif, la lib du client de composant de page et un exemple de configuration de formulaire adaptatif et de source de données.
-* Connectez-vous à [configMgr.](http://localhost:4502/system/console/configMgr) Recherchez &quot;Apache Sling Connection Pooled DataSource&quot;. Ouvrez l’entrée de source de données associée à aemformstutorial et saisissez le nom d’utilisateur et le mot de passe propres à votre instance de base de données.
-* Ouvrir le formulaire [adaptatif](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
+* Téléchargez et déployez les fichiers [Jar du pilote MySql](assets/mysqldriver.jar) à l’aide de la console Web [felix](http://localhost:4502/system/console/bundles).
+* Téléchargez et déployez le [lot OSGi](assets/SaveAndContinue.SaveAndContinue.core-1.0-SNAPSHOT.jar) à l’aide de la [console Web felix](http://localhost:4502/system/console/bundles).
+* Téléchargez et installez le [package contenant la lib client, le modèle de formulaire adaptatif et le composant de page personnalisé](assets/store-and-fetch-af-with-data.zip) à l’aide du [gestionnaire de packages](http://localhost:4502/crx/packmgr/index.jsp).
+* Importez l&#39;[exemple de formulaire adaptatif](assets/sample-adaptive-form.zip) à l&#39;aide de l&#39;interface [FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+
+* Importez le fichier [form-data-db.sql](assets/form-data-db.sql) à l’aide de MySql Workbench. Vous allez créer le schéma et les tables nécessaires dans votre base de données pour que ce didacticiel fonctionne.
+* Connectez-vous à [configMgr.](http://localhost:4502/system/console/configMgr) Recherchez &quot;Apache Sling Connection Pooled DataSource&quot;. Créez une nouvelle entrée de source de données mise en pool de connexion Apache Sling appelée **SaveAndContinue** à l’aide des propriétés suivantes :
+
+| Nom de la propriété | Valeur |
+------------------------|---------------------------------------
+| Datasource Name | SaveAndContinue |
+| Classe de pilote JDBC | com.mysql.cj.jdbc.Driver |
+| URI de connexion JDBC | jdbc:mysql://localhost:3306/aemformstutorial |
+
+
+* Ouvrez le [formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled).
 * Renseignez certains détails et cliquez sur le bouton &quot;Enregistrer et continuer plus tard&quot;.
 * Vous devez récupérer une URL contenant un GUID.
 * Copiez l’URL et collez-la dans un nouvel onglet du navigateur. **Assurez-vous qu’il n’y a pas d’espace vide à la fin de l’URL.**
