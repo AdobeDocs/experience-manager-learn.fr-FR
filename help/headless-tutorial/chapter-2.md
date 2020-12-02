@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
 workflow-type: tm+mt
 source-wordcount: '994'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -25,46 +25,46 @@ Ce chapitre porte sur l’activation et la définition des modèles de fragments
 
 ## Activation des modèles de fragment de contenu  
 
-Les modèles de fragment de contenu **doivent** être activés via l’explorateur **[de [!UICONTROL configuration]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)** AEM.
+Les modèles de fragment de contenu **doivent être activés via**[ AEM [!UICONTROL Navigateur de configuration]](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/configurations.html)**.**
 
-Si les modèles de fragment de contenu **ne sont pas** activés pour une configuration, le bouton **[!UICONTROL Créer] > Fragment [!UICONTROL de]** contenu n’apparaît pas pour la configuration AEM appropriée.
+Si les modèles de fragment de contenu **ne sont pas** activés pour une configuration, le bouton **[!UICONTROL Créer] > [!UICONTROL Fragment de contenu]** n’apparaît pas pour la configuration AEM appropriée.
 
 >[!NOTE]
 >
->Les configurations AEM représentent un ensemble de configurations [de client](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) contextuelles stockées sous `/conf`. En règle générale, les configurations AEM sont corrélées avec un site Web particulier géré à AEM Sites ou avec une unité opérationnelle responsable d&#39;un sous-ensemble de contenu (ressources, pages, etc.) en AEM.
+>Les configurations AEM représentent un ensemble de [configurations locataires tenant compte du contexte](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) stockées sous `/conf`. En règle générale, les configurations AEM sont corrélées avec un site Web particulier géré à AEM Sites ou avec une unité opérationnelle responsable d&#39;un sous-ensemble de contenu (ressources, pages, etc.) en AEM.
 >
->Pour qu’une configuration affecte une hiérarchie de contenu, la configuration doit être référencée via la `cq:conf` propriété de cette hiérarchie de contenu. (Ceci est réalisé pour la [!DNL WKND Mobile] configuration à l’ **étape 5** ci-dessous).
+>Pour qu&#39;une configuration affecte une hiérarchie de contenu, la configuration doit être référencée via la propriété `cq:conf` de cette hiérarchie de contenu. (Ceci est réalisé pour la configuration [!DNL WKND Mobile] dans **Étape 5** ci-dessous).
 >
->Lorsque la `global` configuration est utilisée, elle s’applique à tout le contenu et `cq:conf` n’a pas besoin d’être définie.
+>Lorsque la configuration `global` est utilisée, elle s&#39;applique à tout le contenu et `cq:conf` n&#39;a pas besoin d&#39;être définie.
 >
->See the [[!UICONTROL Configuration Browser] documentation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html) for more information.
+>Pour plus d’informations, consultez la [[!UICONTROL documentation du navigateur de configuration]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html).
 
 1. Connectez-vous à AEM Author en tant qu’utilisateur disposant des autorisations appropriées pour modifier la configuration appropriée.
-   * Pour ce didacticiel, l’utilisateur **administrateur** peut être utilisé.
-1. Accédez à **[!UICONTROL Outil] > [!UICONTROL Général] > Navigateur [!UICONTROL de configuration]**
-1. Appuyez sur l’icône **** de dossier en regard de **[!DNL WKND Mobile]** pour sélectionner, puis sur le bouton ** Modifier** en haut à gauche.
-1. Sélectionnez Modèles **[!UICONTROL de fragment de]** contenu, puis appuyez sur **[!UICONTROL Enregistrer et fermer]** dans le coin supérieur droit.
+   * Pour ce didacticiel, l&#39;utilisateur **admin** peut être utilisé.
+1. Accédez à **[!UICONTROL Outil] > [!UICONTROL Général] > [!UICONTROL Navigateur de configuration]**
+1. Appuyez sur l&#39;icône **dossier** en regard de **[!DNL WKND Mobile]** pour sélectionner, puis appuyez sur le bouton **[!UICONTROL Modifier]** en haut à gauche.
+1. Sélectionnez **[!UICONTROL Modèles de fragment de contenu]**, puis appuyez sur **[!UICONTROL Enregistrer et fermer]** dans le coin supérieur droit.
 
-   Cela permet d’utiliser les modèles de fragments de contenu dans les arborescences de contenu des dossiers d’actifs pour lesquelles la [!DNL WKND Mobile] configuration est appliquée.
+   Cela permet d’utiliser les modèles de fragments de contenu dans les arborescences de contenu des dossiers d’actifs pour lesquelles la configuration [!DNL WKND Mobile] est appliquée.
 
    >[!NOTE]
    >
-   >Cette modification de configuration n&#39;est pas réversible à partir de l&#39;interface Web de configuration  AEM. Pour annuler cette configuration :
+   >Cette modification de configuration n&#39;est pas réversible à partir de l&#39;interface utilisateur Web [!UICONTROL AEM Configuration]. Pour annuler cette configuration :
    >    
-   >    1. Open [CRXDE Lite](http://localhost:4502/crx/de)
+   >    1. Ouvrir [CRXDE Lite](http://localhost:4502/crx/de)
    >    1. Accédez à `/conf/wknd-mobile/settings/dam/cfm`.
-   >    1. Supprimer le `models` noeud
+   >    1. Supprimer le noeud `models`
 
    >    
-   >Tous les modèles de fragments de contenu existants créés sous cette configuration seront supprimés, ainsi que leurs définitions stockées sous `/conf/wknd-mobile/settings/dam/cfm/models`.
+   >Tout modèle de fragment de contenu existant créé dans cette configuration sera supprimé, ainsi que leurs définitions stockées sous `/conf/wknd-mobile/settings/dam/cfm/models`.
 
-1. Appliquez la **[!DNL WKND Mobile]** configuration au dossier **[!DNL WKND Mobile]** Ressources pour permettre la création de fragments de contenu à partir de modèles de fragments de contenu dans cette hiérarchie de dossiers Ressources :
+1. Appliquez la configuration **[!DNL WKND Mobile]** au dossier **[!DNL WKND Mobile]Ressources** pour permettre la création de fragments de contenu à partir de modèles de fragments de contenu dans cette hiérarchie de dossiers Ressources :
 
-   1. Accédez à **[!UICONTROL AEM] > [!UICONTROL Ressources] > [!UICONTROL Fichiers.]**
-   1. Sélectionnez le dossier **[!UICONTROL WKND Mobile] .**
-   1. Appuyez sur le bouton **[!UICONTROL Propriétés]** dans la barre d’actions supérieure pour ouvrir Propriétés du [!UICONTROL dossier.]
-   1. Dans Propriétés du dossier, appuyez sur l’onglet **[!UICONTROL Cloud Services]** .
-   1. Vérifiez que le champ Configuration **** Cloud est défini sur **/conf/wknd-mobile.**
+   1. Accédez à **[!UICONTROL AEM] > [!UICONTROL Ressources] > [!UICONTROL Fichiers]**
+   1. Sélectionnez le dossier **[!UICONTROL WKND Mobile]**.
+   1. Appuyez sur le bouton **[!UICONTROL Propriétés]** dans la barre d’actions supérieure pour ouvrir [!UICONTROL Propriétés du dossier].
+   1. Dans [!UICONTROL Propriétés du dossier], appuyez sur l&#39;onglet **[!UICONTROL Cloud Services]**.
+   1. Vérifiez que le champ **[!UICONTROL Cloud Configuration]** est défini sur **/conf/wknd-mobile**.
    1. Appuyez sur **[!UICONTROL Enregistrer et fermer]** dans l’angle supérieur droit pour conserver les modifications.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28336/?quality=12&learn=on)
@@ -81,31 +81,31 @@ Armé de la mise en correspondance, nous pouvons définir le fragment de contenu
 
 ## Création du modèle de fragment de contenu
 
-1. Navigate to **[!UICONTROL Tools] > [!UICONTROL Assets] > [!UICONTROL Content Fragment Models]**.
-1. Appuyez sur le **[!DNL WKND Mobile]** dossier pour l’ouvrir.
+1. Accédez à **[!UICONTROL Outils] > [!UICONTROL Ressources] > [!UICONTROL Modèles de fragments de contenu]**.
+1. Appuyez sur le dossier **[!DNL WKND Mobile]** pour l’ouvrir.
 1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’assistant de création de modèle de fragment de contenu.
-1. Saisissez **[!DNL Event]** comme titre **[!UICONTROL du]** modèle *(la description est facultative)* et appuyez sur **[!UICONTROL Créer]** pour enregistrer.
+1. Saisissez **[!DNL Event]** en tant que **[!UICONTROL Titre du modèle]** *(la description est facultative)* et appuyez sur **[!UICONTROL Créer]** pour enregistrer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28337/?quality=12&learn=on)
 
 ## Définition de la structure du modèle de fragment de contenu
 
-1. Navigate to **[!UICONTROL Tools] > [!UICONTROL Assets] > [!UICONTROL Content Fragment Models] >[!DNL WKND]**.
-1. Sélectionnez le modèle de fragment de **[!DNL Event]** contenu et appuyez sur **[!UICONTROL Modifier]** dans la barre d’actions supérieure.
-1. Dans l’onglet **[!UICONTROL Types] de** données situé à droite, faites glisser la saisie **[!UICONTROL de texte sur une ligne dans la zone de dépôt de gauche pour définir le]** **[!DNL Question]** champ.
-1. Assurez-vous que la nouvelle entrée **[!UICONTROL de texte sur une]** seule ligne est sélectionnée à gauche et que l’onglet ** Propriétés** est sélectionné à droite. Renseignez les champs Propriétés comme suit :
+1. Accédez à **[!UICONTROL Outils] > [!UICONTROL Ressources] > [!UICONTROL Modèles de fragments de contenu] >[!DNL WKND]**.
+1. Sélectionnez le **[!DNL Event]** modèle de fragment de contenu et appuyez sur **[!UICONTROL Modifier]** dans la barre d’actions supérieure.
+1. A partir de l&#39;onglet **[!UICONTROL Types de données]** sur la droite, faites glisser la **[!UICONTROL saisie de texte sur une seule ligne]** dans la zone de dépôt de gauche pour définir le champ **[!DNL Question]**.
+1. Assurez-vous que le nouveau **[!UICONTROL saisie de texte sur une seule ligne]** est sélectionné à gauche et que l&#39;onglet **[!UICONTROL Propriétés]** est sélectionné à droite. Renseignez les champs Propriétés comme suit :
 
    * [!UICONTROL Afficher comme] : `textfield`
    * [!UICONTROL Libellé du champ] : `Event Title`
    * [!UICONTROL Nom de la propriété] : `eventTitle`
-   * [!UICONTROL Longueur] max. : 25
-   * [!UICONTROL Obligatoire] : `Yes`
+   * [!UICONTROL Longueur]  max. : 25
+   * [!UICONTROL Obligatoire]  :  `Yes`
 
 Répétez ces étapes en utilisant les définitions d’entrée définies ci-dessous pour créer le reste du modèle de fragment de contenu de Événement.
 
 >[!NOTE]
 >
-> Les champs Nom **de la** propriété DOIVENT correspondre exactement, car l&#39;application Android est programmée pour masquer ces noms.
+> Les champs **Nom de la propriété** DOIVENT correspondre exactement, car l&#39;application Android est programmée pour la clé de ces noms.
 
 ### Description d’événement
 
@@ -119,7 +119,7 @@ Répétez ces étapes en utilisant les définitions d’entrée définies ci-des
 * [!UICONTROL Type de données] : `Date and time`
 * [!UICONTROL Libellé du champ] : `Event Date and Time`
 * [!UICONTROL Nom de la propriété] : `eventDateAndTime`
-* [!UICONTROL Obligatoire] : `Yes`
+* [!UICONTROL Obligatoire]  :  `Yes`
 
 ### Type d&#39;évmt
 
@@ -135,7 +135,7 @@ Répétez ces étapes en utilisant les définitions d’entrée définies ci-des
 * [!UICONTROL Libellé du champ] : `Ticket Price`
 * [!UICONTROL Nom de la propriété] : `eventPrice`
 * [!UICONTROL Type] : `Integer`
-* [!UICONTROL Obligatoire] : `Yes`
+* [!UICONTROL Obligatoire]  :  `Yes`
 
 ### Image événement
 
@@ -144,7 +144,7 @@ Répétez ces étapes en utilisant les définitions d’entrée définies ci-des
 * [!UICONTROL Libellé du champ] : `Event Image`
 * [!UICONTROL Nom de la propriété] : `eventImage`
 * [!UICONTROL Chemin racine] : `/content/dam/wknd-mobile/images`
-* [!UICONTROL Obligatoire] : `Yes`
+* [!UICONTROL Obligatoire]  :  `Yes`
 
 ### Nom du lieu
 
@@ -152,21 +152,21 @@ Répétez ces étapes en utilisant les définitions d’entrée définies ci-des
 * [!UICONTROL Afficher comme] : `textfield`
 * [!UICONTROL Libellé du champ] : `Venue Name`
 * [!UICONTROL Nom de la propriété] : `venueName`
-* [!UICONTROL Longueur] max. : 20
-* [!UICONTROL Obligatoire] : `Yes`
+* [!UICONTROL Longueur]  max. : 20
+* [!UICONTROL Obligatoire]  :  `Yes`
 
 ### Ville du lieu
 
 * [!UICONTROL Type de données] : `Enumeration`
 * [!UICONTROL Libellé du champ] : `Venue City`
 * [!UICONTROL Nom de la propriété] : `venueCity`
-* [!UICONTROL Options] : `Basel,London,Los Angeles,Paris,New York,Tokyo`
+* [!UICONTROL Options]  :  `Basel,London,Los Angeles,Paris,New York,Tokyo`
 
 >[!VIDEO](https://video.tv.adobe.com/v/28335/?quality=12&learn=on)
 
 >[!NOTE]
 >
->Le nom **[!UICONTROL de la]** propriété indique **à la fois** le nom de la propriété JCR où cette valeur sera stockée, ainsi que la clé du fichier JSON. Il doit s’agir d’un nom sémantique qui ne changera pas au cours de la vie du modèle de fragment de contenu.
+>Le **[!UICONTROL nom de la propriété]** indique **à la fois** le nom de la propriété JCR où cette valeur sera stockée, ainsi que la clé du fichier JSON. Il doit s’agir d’un nom sémantique qui ne changera pas au cours de la vie du modèle de fragment de contenu.
 
 Après avoir créé le modèle de fragment de contenu, vous devez obtenir une définition qui ressemble à ce qui suit :
 
@@ -175,6 +175,6 @@ Après avoir créé le modèle de fragment de contenu, vous devez obtenir une d�
 
 ## Étape suivante
 
-Vous pouvez éventuellement installer le package de contenu [com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) sur AEM Author via [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp). Ce package contient les configurations et le contenu décrits dans cette partie du didacticiel.
+Vous pouvez éventuellement installer le [com.adobe.aem.guides.wknd-mobile.content.chapter-2.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) package de contenu sur AEM Author via [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp). Ce package contient les configurations et le contenu décrits dans cette partie du didacticiel.
 
 * [Chapitre 3 - Création de fragments de contenu de Événement](./chapter-3.md)
