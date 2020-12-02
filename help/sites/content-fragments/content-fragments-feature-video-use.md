@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -23,25 +23,25 @@ Les fragments de contenu sont une abstraction de contenu dans AEM qui permet la 
 
 >[!NOTE]
 >
->La fonctionnalité AEM Fragment de contenu couverte par ces vidéos a été introduite pour la première fois dans [AEM 6.3 + FP 19008 et FP 19614](https://helpx.adobe.com/experience-manager/6-3/release-notes/content-services-fragments-featurepack.html).
+>La fonctionnalité AEM Fragment de contenu couverte par ces vidéos a été introduite dans [AEM 6.3 + FP 19008 et FP19614](https://helpx.adobe.com/experience-manager/6-3/release-notes/content-services-fragments-featurepack.html).
 
 
 Les fragments de contenu AEM sont un contenu éditorial texte qui peut inclure certains éléments de données structurées associés mais considérés comme du contenu pur sans informations de conception ou de mise en page. Les fragments de contenu sont généralement créés en tant que contenu indépendant du canal, destiné à être utilisé et réutilisé sur plusieurs canaux, ce qui à son tour encapsule le contenu dans un contexte spécifique.
 
-Cette série de vidéos couvre le cycle de vie de création de fragments de contenu en AEM. Vous trouverez des détails sur la [diffusion de fragments de contenu ici](content-fragments-delivery-feature-video-use.md).
+Cette série de vidéos couvre le cycle de vie de création de fragments de contenu en AEM. Vous trouverez des détails sur la [livraison de fragments de contenu ici](content-fragments-delivery-feature-video-use.md).
 
 1. Activation et définition de modèles de fragments de contenu
 2. Création de fragments de contenu
 3. Téléchargement de fragments de contenu
 4. Fonctionnalités éditoriales
 
-## Defining Content Fragment Models {#defining-content-fragment-models}
+## Définition de modèles de fragments de contenu {#defining-content-fragment-models}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-aem les modèles de fragments de contenu, les schémas de données des fragments de contenu, doivent être activés via AEM navigateur [[!UICONTROL de]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)configuration, ce qui permet de définir les modèles de fragments de contenu par configuration.
+aem les modèles de fragments de contenu, les schémas de données des fragments de contenu, doivent être activés via AEM [[!UICONTROL Navigateur de configuration]](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/configurations.html), ce qui permet de définir les modèles de fragments de contenu par configuration.
 
-## Création de fragments de contenu  {#creating-content-fragments}
+## Création de fragments de contenu   {#creating-content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22451/?quality=12&learn=on)
 
@@ -67,11 +67,11 @@ aem Fragments de contenu peuvent être téléchargés depuis l’auteur AEM sous
 
 >[!NOTE]
 >
-> L’annotation et la comparaison de versions pour les fragments de contenu ont été introduites dans [AEM Service Pack 2](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html) 6.4 et [AEM Service Pack 3](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes/sp3-release-notes.html)6.3.
+> L’annotation et la comparaison de versions pour les fragments de contenu ont été introduites dans [AEM Service Pack 2](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html) et [AEM 6.3 Service Pack 3](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes/sp3-release-notes.html).
 
 ## Étapes suivantes
 
-Découvrez comment [diffuser des fragments](content-fragments-delivery-feature-video-use.md)de contenu.
+Découvrez comment [fournir des fragments de contenu](content-fragments-delivery-feature-video-use.md).
 
 ## Ressources supplémentaires {#additional-resources}
 
