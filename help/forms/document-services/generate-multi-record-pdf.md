@@ -23,7 +23,8 @@ Voici la capture d’écran d’un fichier xml contenant plusieurs enregistremen
 
 ![multi-record-xml](assets/multi-record-xml.PNG)
 
-Le fichier XML de données contient 2 enregistrements. Chaque enregistrement est représenté par l’élément form1. Ce fichier xml est transmis à la méthode [OutputService](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) generatePDFOutputBatch pour obtenir la liste de documents pdf (un par enregistrement) La signature de la méthode generatePDFOutputBatch prend les paramètres suivants :
+Le fichier XML de données contient 2 enregistrements. Chaque enregistrement est représenté par l’élément form1. Ce fichier xml est transmis à la méthode OutputService [generatePDFOutputBatch](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) nous obtenons la liste de documents pdf (un par enregistrement).
+La signature de la méthode generatePDFOutputBatch utilise les paramètres suivants :
 
 * modèles - Carte contenant le modèle, identifié par une clé
 * données - Carte contenant des documents de données xml, identifiés par clé
@@ -73,7 +74,7 @@ Document zippedDocument = documentServices.generateMultiplePdfs(templateMap, dat
 ....
 ```
 
-### Code d’implémentation de l’interface{#Interface-Implementation-Code}
+### Code d&#39;implémentation de l&#39;interface{#Interface-Implementation-Code}
 
 Le code suivant génère plusieurs fichiers pdf à l’aide du generatePDFOutputBatch de OutputService et renvoie un fichier zip contenant les fichiers pdf à la servlet appelante.
 
@@ -124,14 +125,14 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 }
 ```
 
-### Déployer sur votre serveur{#Deploy-on-your-server}
+### Déployer sur votre serveur {#Deploy-on-your-server}
 
 Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-dessous :
 
-* [Téléchargez et extrayez le contenu du fichier zip dans votre système](assets/mult-records-template-and-xml-file.zip)de fichiers. Ce fichier zip contient le modèle et le fichier de données xml.
+* [Téléchargez et extrayez le contenu du fichier zip dans votre système](assets/mult-records-template-and-xml-file.zip) de fichiers. Ce fichier zip contient le modèle et le fichier de données xml.
 * [Pointez votre navigateur sur la console Web Felix.](http://localhost:4502/system/console/bundles)
 * [Déployez DevelopingWithServiceUser Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
-* [Déployer le lot](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)AEMFormsDocumentServices personnalisé.Groupe personnalisé qui génère les fichiers PDF à l’aide de l’API OutputService
+* [Déployer le lot](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar) AEMFormsDocumentServices personnalisé.Groupe personnalisé qui génère les fichiers PDF à l’aide de l’API OutputService
 * [Pointez votre navigateur sur le gestionnaire de packages.](http://localhost:4502/crx/packmgr/index.jsp)
 * [Importez et installez le package](assets/generate-multiple-pdf-from-xml.zip). Ce paquet contient une page html qui vous permet de supprimer le modèle et les fichiers de données.
 * [Pointez votre navigateur sur MultiRecords.html](http://localhost:4502/content/DocumentServices/Multirecord.html ?)
