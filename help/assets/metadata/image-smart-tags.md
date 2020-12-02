@@ -36,7 +36,7 @@ Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respe
 * L’organisation doit disposer d’un compte Adobe ID pourvu de droits d’administrateur
 * Le service de contenu dynamique est activé pour votre organisation
 
-La vidéo détaille les tâches suivantes requises pour configurer le service de contenu dynamique E/S d’Adobe utilisé pour les images de balises actives.
+La vidéo détaille les tâches suivantes requises pour configurer le service Adobe I/O Smart Content utilisé pour les images de balises actives.
 
 * Création d’une configuration de service de contenu dynamique dans AEM pour générer une clé publique. Obtenez un certificat public pour l’intégration d’OAuth.
 * Création d’une intégration dans Adobe I/O et téléchargement de la clé publique générée.
