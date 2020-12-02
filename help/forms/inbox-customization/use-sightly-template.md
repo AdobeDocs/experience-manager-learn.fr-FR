@@ -1,6 +1,6 @@
 ---
 title: Personnalisation de la boîte de réception
-description: ajouter des colonnes personnalisées pour afficher des données supplémentaires du flux de travail à l’aide d’un modèle proche
+description: Ajouter des colonnes personnalisées pour afficher des données supplémentaires du flux de travail à l’aide d’un modèle proche
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -18,13 +18,14 @@ ht-degree: 4%
 
 # Utilisation d’un modèle de rapport pour afficher les données de la boîte de réception
 
-Vous pouvez utiliser un modèle de rapport afin de formater les données à afficher dans les colonnes de la boîte de réception. Dans cet exemple, nous allons afficher des icônes de suie-corail en fonction de la valeur de la colonne de revenu. La capture d&#39;écran suivante montre l&#39;utilisation d&#39;icônes dans la colonne![de revenu icônes de revenu](assets/income-column.PNG)
+Vous pouvez utiliser un modèle de rapport afin de formater les données à afficher dans les colonnes de la boîte de réception. Dans cet exemple, nous allons afficher des icônes de suie-corail en fonction de la valeur de la colonne de revenu. La capture d&#39;écran suivante montre l&#39;utilisation d&#39;icônes dans la colonne de revenu
+![icônes de revenu](assets/income-column.PNG)
 
-[Le modèle](assets/sightly-template.zip) de bord utilisé pour afficher les icônes d’interface de corail personnalisées est fourni dans le cadre de cet article.
+[Le ](assets/sightly-template.zip) modèle de rapport serré utilisé pour afficher les icônes d’interface de corail personnalisées est fourni dans le cadre de cet article.
 
 ## Modèle direct
 
-Voici le modèle de rapport. Le code du modèle affiche une icône en fonction du revenu. Les icônes sont disponibles dans le cadre de la bibliothèque [d&#39;icônes de](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) corail ui fournie avec AEM.
+Voici le modèle de rapport. Le code du modèle affiche une icône en fonction du revenu. Les icônes sont disponibles dans le cadre de la [bibliothèque d’icônes d’interface utilisateur de corail](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) fournie avec AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -78,7 +79,7 @@ return val;
 
 >[!NOTE]
 >
->Cet article suppose que vous avez installé l’ [exemple de processus](assets/review-workflow.zip) et l’ [exemple de formulaire](assets/snap-form.zip) de l’article [](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) précédent de cette série.
+>Cet article suppose que vous avez installé l&#39;[exemple de flux de travaux](assets/review-workflow.zip) et [exemple de formulaire](assets/snap-form.zip) de l&#39;[article précédent](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) de cette série.
 
 * [Connexion à crx en tant qu’utilisateur administrateur](http://localhost:4502/crx/de/index.jsp)
 * [importer un modèle de rapport](assets/sightly-template.zip)
@@ -86,9 +87,9 @@ return val;
 * [Déploiement et début du lot de personnalisation de la boîte de réception](assets/income-column-customization.jar)
 * [Ouvrez votre boîte de réception](http://localhost:4502/aem/inbox)
 * Ouvrez le contrôle d’administration en cliquant sur la Vue de Liste en regard du bouton Créer
-* ajouter la colonne de revenu dans la boîte de réception et enregistrer vos modifications
+* Ajouter la colonne de revenu dans la boîte de réception et enregistrer vos modifications
 * [Prévisualiser le formulaire](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Sélectionnez l’état __ civil et envoyez le formulaire.
+* Sélectionnez l&#39;_état civil_ et envoyez le formulaire.
 * [Boîte de réception vue](http://localhost:4502/aem/inbox)
 
 L’envoi du formulaire déclenche le processus et une tâche est attribuée à l’utilisateur &quot;administrateur&quot;. Vous devriez voir l&#39;icône appropriée sous la colonne de revenu
