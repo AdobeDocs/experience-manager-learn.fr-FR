@@ -36,13 +36,15 @@ La première étape consiste à créer un projet d&#39;expert à l&#39;aide de l
 
 ### Créer une classe qui implémente WorkflowProcess
 
-Ouvrez le projet maven dans votre environnement de développement de l&#39;éclipse. Développez **projectname** > dossier **core** . Développez le dossier src/main/java. Vous devriez voir un paquet qui se termine par &quot;core&quot;. Créez une classe Java qui implémente WorkflowProcess dans ce package. Vous devez remplacer la méthode execute. La signature de la méthode execute est comme suit public void execute (WorkItem, WorkflowSession workflowSession, MetaDataMap processArguments)renvoie WorkflowExceptionLa méthode execute donne accès aux 3 variables suivantes
+Ouvrez le projet maven dans votre environnement de développement de l&#39;éclipse. Développez le dossier **projectname** > **core**. Développez le dossier src/main/java. Vous devriez voir un paquet qui se termine par &quot;core&quot;. Créez une classe Java qui implémente WorkflowProcess dans ce package. Vous devez remplacer la méthode execute. La signature de la méthode execute est la suivante :
+public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)renvoie WorkflowException
+La méthode execute donne accès aux 3 variables suivantes.
 
-**WorkItem**: La variable workItem donne accès aux données liées au processus. La documentation publique de l&#39;API est disponible [ici.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkItem** : La variable workItem donne accès aux données liées au processus. La documentation de l&#39;API publique est disponible [ici.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: Cette variable workflowSession vous permet de contrôler le flux de travaux. La documentation publique sur les API est disponible [ici](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkflowSession** : Cette variable workflowSession vous permet de contrôler le flux de travaux. La documentation de l’API publique est disponible [ici](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**MetaDataMap**: Toutes les métadonnées associées au processus. Tous les arguments de processus transmis à l&#39;étape de processus sont disponibles à l&#39;aide de l&#39;objet MetaDataMap.[Documentation d’API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
+**MetaDataMap** : Toutes les métadonnées associées au processus. Tous les arguments de processus transmis à l&#39;étape de processus sont disponibles à l&#39;aide de l&#39;objet MetaDataMap.[Documentation d’API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
 Dans ce didacticiel, nous allons écrire les pièces jointes ajoutées au formulaire adaptatif dans le système de fichiers dans le cadre du processus AEM.
 
@@ -134,7 +136,8 @@ Le reste du code crée des objets de Document en effectuant une itération sur l
 
 #### Création et déploiement
 
-[Créez le lot comme décrit ici](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)[Assurez-vous que le lot est déployé et en principal état](http://localhost:4502/system/console/bundles)
+[Créez le lot comme décrit ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)
+[iciAssurez-vous que le lot est déployé et en principal état](http://localhost:4502/system/console/bundles)
 
 Créer un modèle de processus. Faites glisser et déposez l’étape du processus dans le modèle de processus. Associez l’étape de processus à &quot;Enregistrer les pièces jointes de formulaire adaptatif dans le système de fichiers&quot;.
 
