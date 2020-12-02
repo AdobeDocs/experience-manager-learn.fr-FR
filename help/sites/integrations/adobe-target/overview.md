@@ -34,7 +34,7 @@ Dans cette vidéo, nous abordons trois approches d&#39;utilisation de l&#39;AEM 
    1. [Exportez des fragments d’expérience AEM vers Adobe Target](./export-experience-fragment-target.md)
    1. [Personnalisation d’une partie d’une page Web à l’aide d’Offres de fragments d’expérience](./create-target-activity.md)
 
-* __Scénario 2 :__ Personnalisation à l’aide du compositeur d’expérience visuelle
+* __Scénario 2 :__ Personnalisation à l’aide du compositeur d’expérience visuelle (VEC)
 
    1. [Ajouter Adobe Target sur votre site Web AEM](./add-target-launch-extension.md)
    1. [Déclencher un appel Adobe Target à partir du lancement](./load-and-fire-target.md)
