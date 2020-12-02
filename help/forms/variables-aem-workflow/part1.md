@@ -38,9 +38,9 @@ Les données du formulaire adaptatif sont stockées sous l’élément de donné
 
 >[!NOTE]
 >
->**AEM Forms 6.5.0** - Lorsque vous créez une variable de type XML pour capturer les données envoyées dans votre modèle de processus, n’associez pas le schéma XSD à la variable. En effet, lorsque vous envoyez un formulaire adaptatif basé sur XSD, les données envoyées ne sont pas conformes au schéma XSD. Les données de plainte XSD sont incluses dans l’élément /afData/afBoundData/.
+>**AEM Forms 6.5.0**  - Lorsque vous créez une variable de type XML pour capturer les données envoyées dans votre modèle de processus, n’associez pas le schéma XSD à la variable. En effet, lorsque vous envoyez un formulaire adaptatif basé sur XSD, les données envoyées ne sont pas conformes au schéma XSD. Les données de plainte XSD sont incluses dans l’élément /afData/afBoundData/.
 >
->**AEM Forms 6.5.1** - Si vous associez XSD à votre variable XML, vous pouvez parcourir les éléments du schéma pour faire le mappage des variables. Vous ne pourrez pas accéder aux données de formulaire qui ne sont pas liées aux éléments de schéma. Si votre cas d&#39;utilisation consiste à accéder aux données liées aux éléments de schéma ainsi qu&#39;aux données non liées, ne liez pas le schéma à votre variable XML dans le flux de travail. Vous devrez utiliser l&#39;expression XPath appropriée pour obtenir les données dont vous avez besoin.
+>**AEM Forms 6.5.1**  - Si vous associez XSD à votre variable XML, vous pouvez parcourir les éléments du schéma pour faire le mappage des variables. Vous ne pourrez pas accéder aux données de formulaire qui ne sont pas liées aux éléments de schéma. Si votre cas d&#39;utilisation consiste à accéder aux données liées aux éléments de schéma ainsi qu&#39;aux données non liées, ne liez pas le schéma à votre variable XML dans le flux de travail. Vous devrez utiliser l&#39;expression XPath appropriée pour obtenir les données dont vous avez besoin.
 
 ## Création de variables XML
 
@@ -48,7 +48,7 @@ Les données du formulaire adaptatif sont stockées sous l’élément de donné
 
 ### Utilisation du Schéma avec une variable XML
 
-**Mappage d’une variable XML avec un schéma. Utilisation de cette fonctionnalité avec AEM Forms 6.5.1 et versions ultérieures**
+**Mappage d’une variable XML avec un schéma. Utilisez cette fonctionnalité avec AEM Forms 6.5.1 à partir de**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28098?quality=9&learn=on)
 
@@ -59,7 +59,7 @@ Les données du formulaire adaptatif sont stockées sous l’élément de donné
 Pour que les ressources fonctionnent sur votre système, procédez comme suit :
 
 * [Téléchargement et importation des ressources dans AEM à l’aide du gestionnaire de packages](assets/xmlandstringvariable.zip)
-* [Explorez le modèle](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) de processus pour comprendre les variables utilisées dans le processus.
+* [Explorez le ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) modèle de processus pour comprendre les variables utilisées dans le processus.
 * [Configuration du service de messagerie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Ouvrir le formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled)
 * Renseignez les détails et envoyez le formulaire.
