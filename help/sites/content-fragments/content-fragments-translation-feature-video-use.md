@@ -17,7 +17,7 @@ ht-degree: 6%
 ---
 
 
-# Utilisation de la traduction avec AEM fragments de contenu{#using-translation-with-aem-content-fragments}
+# Utilisation de la traduction avec AEM Content Fragments{#using-translation-with-aem-content-fragments}
 
 aem 6.3 permet de traduire des fragments de contenu. Les ressources multimédias et les collections de ressources associées à un fragment de contenu peuvent également être extraites et traduites.
 
