@@ -18,9 +18,9 @@ ht-degree: 29%
 ---
 
 
-# Présentation [!DNL Dispatcher] {#introduction-dispatcher}
+# Introduction à [!DNL Dispatcher] {#introduction-dispatcher}
 
-Cette section présente les capacités et les caractéristiques de la [!DNL dispatcher] technologie dans le cadre de l&#39;architecture AEM.
+Cette section présente les fonctionnalités et les caractéristiques de [!DNL dispatcher] dans le cadre de l&#39;architecture AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32029/?quality=12&learn=on)
 
