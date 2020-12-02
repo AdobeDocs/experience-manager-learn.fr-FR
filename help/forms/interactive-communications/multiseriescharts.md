@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Graphiques multiséries
 
-aem forms 6.5 a introduit la possibilité de créer et de configurer plusieurs graphiques en série. Les graphiques à séries multiples sont généralement utilisés en association avec le type de graphique Ligne, Barre, Colonne. Le graphique suivant est un bon exemple de graphique à séries multiples. Le graphique montre la croissance de 10 000 dollars américains dans 3 fonds mutuels différents sur une période donnée. Pour pouvoir créer et utiliser des graphiques de ce type en AEM Forms, vous devez créer le modèle de données de formulaire approprié.
+AEM Forms 6.5 a introduit la possibilité de créer et de configurer plusieurs graphiques en série. Les graphiques à séries multiples sont généralement utilisés en association avec le type de graphique Ligne, Barre, Colonne. Le graphique suivant est un bon exemple de graphique à séries multiples. Le graphique montre la croissance de 10 000 dollars américains dans 3 fonds mutuels différents sur une période donnée. Pour pouvoir créer et utiliser des graphiques de ce type en AEM Forms, vous devez créer le modèle de données de formulaire approprié.
 
 ![multisérie](assets/seriescharts.jfif)
 
