@@ -17,8 +17,8 @@ ht-degree: 0%
 ---
 
 
-# Présentation de la pile d&#39;architecture AEM {#introduction-architecture}
+# Introduction à la pile d&#39;architecture AEM {#introduction-architecture}
 
-Présente les technologies de [!DNL OSGi], [!DNL JCR], [!DNL Oak]et [!DNL Sling] dans le cadre de la pile technologique Adobe Experience Manager.
+Présente les technologies [!DNL OSGi], [!DNL JCR], [!DNL Oak] et [!DNL Sling] dans le cadre de la pile technologique Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32034/?quality=12&learn=on)
