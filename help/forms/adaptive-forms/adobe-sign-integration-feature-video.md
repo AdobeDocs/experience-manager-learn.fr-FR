@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Using Adobe Sign with AEM Forms{#using-adobe-sign-with-aem-forms}
+# Utilisation de Adobe Sign avec AEM Forms{#using-adobe-sign-with-aem-forms}
 
 Utilisation de Adobe Sign avec AEM Forms
 
@@ -32,4 +32,4 @@ Utilisation de Adobe Sign avec AEM Forms
 >
 >Cette fonction est disponible uniquement à partir de AEM version 6.3.
 
-Consultez la page d&#39;exemples [](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
+Consultez la page [Exemples d&#39;AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
