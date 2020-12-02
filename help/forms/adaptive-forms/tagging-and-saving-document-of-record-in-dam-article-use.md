@@ -46,7 +46,7 @@ tagManager.setTags(metadata, tagArray, true);
 Pour que cet exemple fonctionne sur votre système, procédez comme suit :
 * [Déploiement du lot Developing withserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Téléchargez et déployez le lot](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Il s’agit du lot OSGI personnalisé qui définit les balises à partir des données de formulaire envoyées.
+* [Téléchargez et déployez le lot](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue. Il s’agit du lot OSGI personnalisé qui définit les balises à partir des données de formulaire envoyées.
 
 * [Téléchargement de l&#39;exemple de formulaire adaptatif](assets/tag-and-store-in-dam-assets.zip)
 
@@ -54,12 +54,12 @@ Pour que cet exemple fonctionne sur votre système, procédez comme suit :
 
 * Cliquez sur Créer | Téléchargement de fichier et téléchargement du fichier sampleadaptiveform.zip
 
-* [Importation des actifs](assets/tag-and-store-in-dam-assets.zip) de l’article à l’aide du gestionnaire de packages AEM
-* Ouvrez l’ [exemple de formulaire en mode](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled)prévisualisation. Renseignez la section Personnes et envoyez le formulaire.
+* [Importation des ressources de l’article ](assets/tag-and-store-in-dam-assets.zip) à l’aide d’AEM gestionnaire de packages
+* Ouvrez l&#39;[exemple de formulaire en mode prévisualisation](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Renseignez la section Personnes et envoyez le formulaire.
 * [Accédez au dossier Pic dans DAM](http://localhost:4502/assets.html/content/dam/Peak). Vous devriez voir le DE dans le dossier Pic. Vérifiez les propriétés du document. Il doit être balisé correctement.
 Félicitations ! ! L&#39;exemple a été installé sur votre système.
 
-* Examinons le [processus](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) qui est déclenché lors de l’envoi du formulaire.
+* Examinons le [flux de travaux](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) qui est déclenché lors de l’envoi du formulaire.
 * La première étape du processus crée un nom de fichier unique en concaténant le nom des candidats et le pays de résidence.
 * La deuxième étape du processus transmet la hiérarchie des balises et les éléments des champs de formulaire qui doivent être balisés. L’étape de processus extrait la valeur des données envoyées et construit le titre de la balise qui doit marquer le document.
 * Si vous souhaitez stocker un DE dans un autre dossier du DAM, vous devez spécifier l’emplacement du dossier à l’aide des propriétés de configuration, comme indiqué dans la capture d’écran ci-dessous.
