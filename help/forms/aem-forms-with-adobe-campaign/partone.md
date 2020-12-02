@@ -26,13 +26,13 @@ Cet article explique le code nécessaire à la génération de JWT et de Jeton d
 
 ## Générer un jeton Web JSON {#generate-json-web-token}
 
-La première étape de l’utilisation de l’API Adobe Campaign consiste à générer des fichiers JWT. Il existe de nombreux exemples de code sur la façon de générer JWT pour ACS. Vous pouvez suivre cet exemple [de code](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) java pour générer JWT.
+La première étape de l’utilisation de l’API Adobe Campaign consiste à générer des fichiers JWT. Il existe de nombreux exemples de code sur la façon de générer JWT pour ACS. Vous pouvez suivre cet [exemple de code java](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) pour générer JWT.
 
 Pour utiliser l&#39;API ACS avec AEM Forms, nous devons créer JWT dans un lot OSGi. Le fragment de code suivant a été utilisé pour générer des fichiers JWT dans cet exemple de lot OSGI. Les détails de l&#39;instance ACS sont extraits des propriétés de configuration OSGI définies comme illustré ci-dessus.
 
 ![configuration](assets/campaignconfiguration.gif)
 
-**A.** Les valeurs affichées ici sont des valeurs factices.
+**A.**  Les valeurs affichées ici sont des valeurs factices
 
 Le code suivant récupère les détails sur Adobe Campaign Server à partir de la configuration OSGI. Nous créons une clé privée des lignes 80 à 104.
 
