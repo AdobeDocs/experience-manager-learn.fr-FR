@@ -31,14 +31,14 @@ Les fonctionnalités de différences de page des sites AEM fournissent une vue r
 
 **Modifications HTML**
 
-* **Vert**: Nouveau contenu
-* **Rouge**: Contenu supprimé
+* **Vert** : Nouveau contenu
+* **Rouge** : Contenu supprimé
 
 **Modifications des composants**
 
-* **Vert**: Nouveau composant
-* **Rouge**: Composant supprimé
-* **Bleu**: Composant modifié
+* **Vert** : Nouveau composant
+* **Rouge** : Composant supprimé
+* **Bleu** : Composant modifié
 
 ## Comparaison des pages de lancement {#comparing-launch-pages}
 
