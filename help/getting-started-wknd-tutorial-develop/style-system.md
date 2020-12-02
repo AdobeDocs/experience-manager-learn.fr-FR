@@ -20,22 +20,22 @@ ht-degree: 2%
 ---
 
 
-# Développer avec le système de style {#developing-with-the-style-system}
+# Développement avec le système de style {#developing-with-the-style-system}
 
 Découvrez comment mettre en oeuvre des styles individuels et réutiliser les composants principaux à l’aide de Experience Manager Style System. Ce didacticiel porte sur le développement du système de style afin d’étendre les composants principaux à l’aide de CSS propres à la marque et de configurations de stratégie avancées de l’éditeur de modèles.
 
 ## Conditions préalables {#prerequisites}
 
-Examiner les outils et les instructions nécessaires pour la mise en place d&#39;un environnement [de développement](overview.md#local-dev-environment)local.
+Examinez les outils et les instructions nécessaires pour configurer un [environnement de développement local](overview.md#local-dev-environment).
 
-Il est également recommandé de consulter le didacticiel sur les bibliothèques côté [client et le flux de travail](client-side-libraries.md) frontal afin de comprendre les fondamentaux des bibliothèques côté client et les divers outils frontaux intégrés au projet AEM.
+Il est également recommandé de consulter le didacticiel [Bibliothèques côté client et Flux de travaux frontaux](client-side-libraries.md) afin de comprendre les fondamentaux des bibliothèques côté client et les divers outils frontaux intégrés au projet AEM.
 
 ### Projet de démarrage
 
 Consultez le code de ligne de base sur lequel le didacticiel s&#39;appuie :
 
-1. Clonez le référentiel [github.com/adobe/aem-guides-wknd](https://github.com/adobe/aem-guides-wknd) .
-1. Consulter la `style-system/start` branche
+1. Cloner le référentiel [github.com/adobe/aem-guides-wknd](https://github.com/adobe/aem-guides-wknd).
+1. Consultez la branche `style-system/start`
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd.git ~/code/aem-guides-wknd
@@ -50,7 +50,7 @@ Consultez le code de ligne de base sur lequel le didacticiel s&#39;appuie :
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-Vous pouvez toujours vue le code fini sur [GitHub](https://github.com/adobe/aem-guides-wknd/tree/style-system/solution) ou le retirer localement en passant à la branche `style-system/solution`.
+Vous pouvez toujours vue le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd/tree/style-system/solution) ou vérifier le code localement en passant à la branche `style-system/solution`.
 
 ## Intention
 
@@ -58,35 +58,35 @@ Vous pouvez toujours vue le code fini sur [GitHub](https://github.com/adobe/aem-
 1. Découvrez la notation BEM et comment elle peut être utilisée pour définir soigneusement les styles.
 1. Appliquez des configurations de stratégie avancées avec des modèles modifiables.
 
-## Ce que vous allez construire {#what-you-will-build}
+## Ce que vous allez créer {#what-you-will-build}
 
-Dans ce chapitre, nous utiliserons la fonction [Système de](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) style pour créer plusieurs variantes de composants utilisés sur la page Article. Nous utiliserons également le système de style pour créer des variations pour les éléments structuraux tels que l’en-tête/pied de page et le Conteneur de mise en page.
+Dans ce chapitre, nous utiliserons la fonction [Système de style](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) pour créer plusieurs variantes de composants utilisés sur la page Article. Nous utiliserons également le système de style pour créer des variations pour les éléments structuraux tels que l’en-tête/pied de page et le Conteneur de mise en page.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30386/?quality=12&learn=on)
 
 ## Arrière-plan {#background}
 
-Le système [](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/developing/components/style-system.html) Style permet aux développeurs et aux éditeurs de modèles de créer plusieurs variantes visuelles d’un composant. Les auteurs peuvent ensuite décider quel style utiliser lors de la composition d’une page. Nous utiliserons le système de style tout au long du reste du didacticiel pour obtenir plusieurs styles uniques, tout en exploitant les composants de base dans une approche à code faible.
+[Style System](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/developing/components/style-system.html) permet aux développeurs et éditeurs de modèles de créer plusieurs variantes visuelles d&#39;un composant. Les auteurs peuvent ensuite décider quel style utiliser lors de la composition d’une page. Nous utiliserons le système de style tout au long du reste du didacticiel pour obtenir plusieurs styles uniques, tout en exploitant les composants de base dans une approche à code faible.
 
 L&#39;idée générale avec le système de style est que les auteurs peuvent choisir différents styles de l&#39;aspect d&#39;un composant. Les &quot;styles&quot; sont soutenus par des classes CSS supplémentaires qui sont injectées dans la balise div externe d’un composant. Dans les bibliothèques clientes, les règles CSS sont ajoutées en fonction de ces classes de style afin que le composant change d’aspect.
 
-Vous trouverez ici [la documentation](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/developing/components/style-system.html)détaillée de Style System. Il y a aussi une grande vidéo [technique pour comprendre le système](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/style-system-technical-video-understand.html)de style.
+Vous trouverez [la documentation détaillée de Style System ici](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html). Il existe également une excellente [vidéo technique pour comprendre le système de style](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
 
-## Style du composant de titre {#title-component}
+## Style de composant de titre {#title-component}
 
-A ce stade, le composant [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/title.html) Titre a été ajouté par proxy au projet dans le cadre `/apps/wknd/components/content/title` du module **ui.apps** . Les styles par défaut des éléments d’en-tête (`H1`, `H2`, `H3`..) ont déjà été implémentés dans le module **ui.frontend** du `_elements.scss` fichier sous `ui.frontend/src/main/webpack/base/sass/_elements.scss`.
+À ce stade, le composant [Title](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/title.html) a été ajouté par proxy au projet sous `/apps/wknd/components/content/title` dans le cadre du module **ui.apps**. Les styles par défaut des éléments Titre (`H1`, `H2`, `H3`...) ont déjà été implémentés dans le module **ui.frontend** du fichier `_elements.scss` sous `ui.frontend/src/main/webpack/base/sass/_elements.scss`.
 
 ### Style de soulignement
 
-Les conceptions [d’article](assets/pages-templates/wknd-article-design.xd) WKND contiennent un style unique pour le composant Titre avec un trait de soulignement. Au lieu de créer deux composants ou de modifier la boîte de dialogue du composant, le système de style permet aux auteurs d’ajouter un style de soulignement.
+Les [conceptions d’article WKND](assets/pages-templates/wknd-article-design.xd) contiennent un style unique pour le composant Titre avec un trait de soulignement. Au lieu de créer deux composants ou de modifier la boîte de dialogue du composant, le système de style permet aux auteurs d’ajouter un style de soulignement.
 
 ![Style de soulignement - Composant de titre](assets/style-system/title-underline-style.png)
 
-### inspect Title Component Markup
+### Inspect Title Component Markup
 
 En tant que développeur frontal, la première étape pour mettre en forme un composant principal consiste à comprendre les balises générées par le composant.
 
-Dans le cadre du projet généré, l&#39;archétype intégré aux exemples **de composants** principaux. Pour les développeurs et les auteurs de contenu, cette section contient une référence facile pour comprendre toutes les fonctionnalités disponibles avec les composants principaux. Une version en direct est également [disponible](https://opensource.adobe.com/aem-core-wcm-components/library.html).
+Dans le cadre du projet généré, l&#39;archétype incorporait **les exemples de composants de base**. Pour les développeurs et les auteurs de contenu, cette section contient une référence facile pour comprendre toutes les fonctionnalités disponibles avec les composants principaux. Une version en direct est également [disponible](https://opensource.adobe.com/aem-core-wcm-components/library.html).
 
 1. Ouvrez un nouveau navigateur et vue le composant Titre :
 
@@ -121,9 +121,9 @@ Dans le cadre du projet généré, l&#39;archétype intégré aux exemples **de 
 
 ### Mise en oeuvre du style de soulignement - ui.frontend
 
-Ensuite, nous allons mettre en oeuvre le style Souligné en utilisant le module **ui.frontend** de notre projet. Nous utiliserons le serveur de développement webpack fourni avec le module **ui.frontend** pour prévisualisation des styles *avant* le déploiement sur une instance locale d’AEM.
+Nous allons ensuite mettre en oeuvre le style Souligné en utilisant le module **ui.frontend** de notre projet. Nous utiliserons le serveur de développement webpack fourni avec le module **ui.frontend** pour prévisualisation les styles *avant* déploiement sur une instance locale d&#39;AEM.
 
-1. Début du serveur de développement webpack en exécutant la commande suivante depuis le module **ui.frontend** :
+1. Début du serveur de développement webpack en exécutant la commande suivante à partir du module **ui.frontend** :
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
@@ -141,8 +141,8 @@ Ensuite, nous allons mettre en oeuvre le style Souligné en utilisant le module 
 
    ![Serveur de développement Webpack](assets/style-system/static-webpack-server.png)
 
-1. Dans Eclipse ou l&#39;IDE de votre choix, ouvrez le fichier `index.html` situé dans : `ui.frontend/src/main/webpack/static/index.html`. Il s’agit du balisage statique utilisé par le serveur de développement webpack.
-1. Dans `index.html` recherchez une instance du composant de titre à laquelle ajouter le style de soulignement en recherchant dans le document *cmp-title*. Choisissez le composant Titre avec le texte *&quot;Vans off the Wall Skatepark&quot;* (ligne 218). ajoutez la classe `cmp-title--underline` à la div environnante :
+1. Dans Eclipse ou l&#39;IDE de votre choix, ouvrez le fichier `index.html` situé à : `ui.frontend/src/main/webpack/static/index.html`. Il s’agit du balisage statique utilisé par le serveur de développement webpack.
+1. Dans `index.html`, recherchez une instance du composant de titre à laquelle ajouter le style de soulignement en recherchant *cmp-title* dans le document. Choisissez le composant Titre avec le texte *&quot;Vans off the Wall Skatepark&quot;* (ligne 218). Ajoutez la classe `cmp-title--underline` à la balise div environnante :
 
    ```html
     <!-- before -->
@@ -163,7 +163,7 @@ Ensuite, nous allons mettre en oeuvre le style Souligné en utilisant le module 
    ```
 
 1. Revenez au navigateur et vérifiez que la classe supplémentaire est reflétée dans l’annotation.
-1. Revenez au module **ui.frontend** et mettez à jour le fichier `title.scss` situé à l’emplacement suivant : `ui.frontend/src/main/webpack/components/content/title/scss/title.scss`:
+1. Revenez au module **ui.frontend** et mettez à jour le fichier `title.scss` situé à l&#39;emplacement suivant : `ui.frontend/src/main/webpack/components/content/title/scss/title.scss` :
 
    ```css
    /* Add Title Underline Style */
@@ -188,7 +188,7 @@ Ensuite, nous allons mettre en oeuvre le style Souligné en utilisant le module 
    >
    >Il est recommandé de toujours lier étroitement les styles de portée au composant de cible. Ainsi, les styles supplémentaires n’affectent pas les autres zones de la page.
    >
-   >Tous les composants principaux adhèrent à la notation **[](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)** BEM. Il est recommandé de cible de la classe CSS externe lors de la création d’un style par défaut pour un composant. Une autre bonne pratique consiste à cible les noms de classe spécifiés par la notation BEM du composant principal plutôt que par les éléments HTML.
+   >Tous les composants principaux adhèrent à la notation **[BEM](https://github.com/adobe/aem-core-wcm-components/wiki/css-coding-conventions)**. Il est recommandé de cible de la classe CSS externe lors de la création d’un style par défaut pour un composant. Une autre bonne pratique consiste à cible les noms de classe spécifiés par la notation BEM du composant principal plutôt que par les éléments HTML.
 
 1. Revenez à nouveau au navigateur et le style Souligné doit être ajouté :
 
@@ -196,7 +196,7 @@ Ensuite, nous allons mettre en oeuvre le style Souligné en utilisant le module 
 
 1. Arrêtez le serveur de développement webpack.
 
-### ajouter une stratégie de titre
+### Ajouter une stratégie de titre
 
 Ensuite, nous devons ajouter une nouvelle stratégie pour les composants Titre pour permettre aux auteurs de contenu de choisir le style Souligné à appliquer à des composants spécifiques. Pour ce faire, utilisez l’éditeur de modèles dans AEM.
 
@@ -207,19 +207,19 @@ Ensuite, nous devons ajouter une nouvelle stratégie pour les composants Titre p
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Accédez au modèle **de page de l’** article situé à l’emplacement suivant : [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. Accédez au **Modèle de page d’article** situé à l’adresse : [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
 
-1. En mode **Structure** , dans le Conteneur **de** mise en page principal, sélectionnez l’icône **Stratégie** en regard du composant **Titre répertorié sous Composants autorisés :****
+1. En mode **Structure**, dans le Conteneur principal **Mise en page**, sélectionnez l&#39;icône **Stratégie** en regard du composant **Titre** répertorié sous *Composants autorisés* :
 
    ![Configuration de la stratégie de titre](assets/style-system/article-template-title-policy-icon.png)
 
 1. Créez une nouvelle stratégie pour le composant Titre avec les valeurs suivantes :
 
-   *Titre de la politique **: **Titre WKND**
+   *Titre de la politique ** :  **Titre WKND**
 
-   *Propriétés* > Onglet ** Styles > *Ajouter un nouveau style*
+   *Propriétés*  > Onglet ** Styles >  *Ajouter un nouveau style*
 
-   **Souligner** : `cmp-title--underline`
+   **Souligner**  :  `cmp-title--underline`
 
    ![Configuration de la stratégie de style pour le titre](assets/style-system/title-style-policy.gif)
 
@@ -227,36 +227,36 @@ Ensuite, nous devons ajouter une nouvelle stratégie pour les composants Titre p
 
    >[!NOTE]
    >
-   > La valeur `cmp-title--underline` correspond à la classe CSS ciblée précédemment lors du développement dans le module **ui.frontend** .
+   > La valeur `cmp-title--underline` correspond à la classe CSS ciblée précédemment lors du développement dans le module **ui.frontend**.
 
 ### Appliquer le style de soulignement
 
 Enfin, en tant qu’auteur, nous pouvons choisir d’appliquer le style Souligné à certains composants de titre.
 
 1. Accédez à l&#39;article **La Skateparks** dans l&#39;éditeur AEM Sites à l&#39;adresse : [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
-1. En mode **Edition** , choisissez un composant Titre. Cliquez sur l’icône **pinceau** et sélectionnez le style **Souligné** :
+1. En mode **Modifier**, choisissez un composant Titre. Cliquez sur l&#39;icône **pinceau** et sélectionnez le style **Souligné** :
 
    ![Appliquer le style de soulignement](assets/style-system/apply-underline-style-title.png)
 
    En tant qu’auteur, vous devez pouvoir activer/désactiver le style.
 
-1. Cliquez sur l’icône Informations **sur la** page > **Vue telle que publiée** pour examiner la page en dehors de AEM éditeur.
+1. Cliquez sur l’icône **Informations sur la page** > **Vue telle que Publiée** pour inspecter la page en dehors de l’éditeur AEM.
 
    ![Afficher comme publié(e) ](assets/style-system/view-as-published.png)
 
-   Utilisez les outils de développement de votre navigateur pour vérifier que la classe CSS `cmp-title--underline` est appliquée à la balise autour du composant Title.
+   Utilisez les outils de développement de votre navigateur pour vérifier que la classe CSS `cmp-title--underline` appliquée à la balise externe div est affectée à la classe CSS du composant Title.
 
-## Style du composant de texte {#text-component}
+## Style de composant de texte {#text-component}
 
-Ensuite, nous répétons des étapes similaires pour appliquer un style unique au composant [de](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html)texte. Le composant Texte a été ajouté par proxy au projet sous `/apps/wknd/components/content/text` le module **ui.apps** . Les styles par défaut des éléments de paragraphe ont déjà été implémentés dans le module **ui.frontend** du `_elements.scss` fichier sous `ui.frontend/src/main/webpack/base/sass/_elements.scss`.
+Ensuite, nous répétons des étapes similaires pour appliquer un style unique au [composant de texte](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html). Le composant Text a été ajouté par proxy au projet sous `/apps/wknd/components/content/text` dans le cadre du module **ui.apps**. Les styles par défaut des éléments de paragraphe ont déjà été implémentés dans le module **ui.frontend** du fichier `_elements.scss` sous `ui.frontend/src/main/webpack/base/sass/_elements.scss`.
 
 ### Style de bloc de devis
 
-Les conceptions [d’article](assets/pages-templates/wknd-article-design.xd) WKND contiennent un style unique pour le composant Texte avec un bloc de guillemets :
+Les conceptions d’article [WKND](assets/pages-templates/wknd-article-design.xd) contiennent un style unique pour le composant Texte avec un bloc de guillemets :
 
 ![Style de bloc de devis - Composant de texte](assets/style-system/quote-block-style.png)
 
-### inspect Text Component Markup
+### Inspect Text Component Markup
 
 Une fois de plus, nous examinerons l&#39;annotation du composant de texte.
 
@@ -298,7 +298,7 @@ Instance AEM locale : [http://localhost:4502/editor.html/content/core-components
 
 Nous allons ensuite mettre en oeuvre le style Bloc de devis en utilisant le module **ui.frontend** de notre projet.
 
-1. Début du serveur de développement webpack en exécutant la commande suivante depuis le module **ui.frontend** :
+1. Début du serveur de développement webpack en exécutant la commande suivante à partir du module **ui.frontend** :
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
@@ -308,8 +308,8 @@ Nous allons ensuite mettre en oeuvre le style Bloc de devis en utilisant le modu
    > webpack-dev-server --open --config ./webpack.dev.js
    ```
 
-1. Dans Eclipse ou l&#39;IDE de votre choix, ouvrez le fichier `index.html` situé dans : `ui.frontend/src/main/webpack/static/index.html`. Il s’agit du balisage statique utilisé par le serveur de développement webpack.
-1. Recherchez `index.html` une instance du composant de texte en recherchant le texte *&quot;Jacob Wester&quot;* (ligne 210). ajoutez la classe `cmp-text--quote` à la div environnante :
+1. Dans Eclipse ou l&#39;IDE de votre choix, ouvrez le fichier `index.html` situé à : `ui.frontend/src/main/webpack/static/index.html`. Il s’agit du balisage statique utilisé par le serveur de développement webpack.
+1. Dans `index.html`, recherchez une instance du composant de texte en recherchant le texte *&quot;Jacob Wester&quot;* (ligne 210). Ajoutez la classe `cmp-text--quote` à la balise div environnante :
 
    ```html
     <!-- before -->
@@ -332,7 +332,7 @@ Nous allons ensuite mettre en oeuvre le style Bloc de devis en utilisant le modu
    ```
 
 1. Revenez au navigateur et vérifiez que la classe supplémentaire est reflétée dans l’annotation.
-1. Revenez au module **ui.frontend** et mettez à jour le fichier `text.scss` situé à l’emplacement suivant : `ui.frontend/src/main/webpack/components/content/text/scss/text.scss`:
+1. Revenez au module **ui.frontend** et mettez à jour le fichier `text.scss` situé à l&#39;emplacement suivant : `ui.frontend/src/main/webpack/components/content/text/scss/text.scss` :
 
    ```css
    /* WKND Text Quote style */
@@ -380,7 +380,7 @@ Nous allons ensuite mettre en oeuvre le style Bloc de devis en utilisant le modu
 
 1. Arrêtez le serveur de développement webpack.
 
-### ajouter une stratégie de texte
+### Ajouter une stratégie de texte
 
 Ajoutez ensuite une nouvelle stratégie pour les composants de texte.
 
@@ -391,21 +391,21 @@ Ajoutez ensuite une nouvelle stratégie pour les composants de texte.
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Accédez au modèle **de page de l’** article situé à l’emplacement suivant : [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. Accédez au **Modèle de page d’article** situé à l’adresse : [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
 
-1. En mode **Structure** , dans le Conteneur **de** mise en page principal, sélectionnez l’icône **Stratégie** en regard du composant **Texte répertorié sous Composants autorisés :****
+1. En mode **Structure**, dans le Conteneur principal **Mise en page**, sélectionnez l&#39;icône **Stratégie** en regard du composant **Texte** répertorié sous *Composants autorisés* :
 
    ![Configuration de la stratégie de texte](assets/style-system/article-template-text-policy-icon.png)
 
 1. Créez une nouvelle stratégie pour le composant Texte avec les valeurs suivantes :
 
-   *Titre de la politique **: **Texte WKND**
+   *Titre de la politique ** :  **Texte WKND**
 
-   *Plug-ins* > Styles *de* paragraphe > *Activer les styles de paragraphe*
+   *Plugins* > Styles *de* paragraphe>  *Activer les styles de paragraphe*
 
-   *Onglet* Styles > *Ajouter un nouveau style*
+   *Onglet*  Styles >  *Ajouter un nouveau style*
 
-   **Bloc** de devis : `cmp-text--quote`
+   **Bloc**  de devis :  `cmp-text--quote`
 
    ![Stratégie de composant de texte](assets/style-system/text-policy-enable-paragraphstyles.png)
 
@@ -416,11 +416,11 @@ Ajoutez ensuite une nouvelle stratégie pour les composants de texte.
 ### Appliquer le style de bloc de devis
 
 1. Accédez à l&#39;article **La Skateparks** dans l&#39;éditeur AEM Sites à l&#39;adresse : [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
-1. En mode **Edition** , choisissez un composant Texte. Modifiez le composant pour inclure un élément de devis :
+1. En mode **Modifier**, choisissez un composant Texte. Modifiez le composant pour inclure un élément de devis :
 
    ![Configuration des composants de texte](assets/style-system/configure-text-component.png)
 
-1. Sélectionnez le composant de texte, cliquez sur l’icône **pinceau** et sélectionnez le style Bloc **de** devis :
+1. Sélectionnez le composant de texte, cliquez sur l&#39;icône **pinceau** et sélectionnez le style **Bloc de devis** :
 
    ![Appliquer le style de bloc de devis](assets/style-system/quote-block-style-applied.png)
 
@@ -430,25 +430,25 @@ Ajoutez ensuite une nouvelle stratégie pour les composants de texte.
 
 Les Conteneurs de mise en page ont été utilisés pour créer la structure de base du modèle de page d’article et fournir les zones de dépôt aux auteurs de contenu pour ajouter du contenu sur une page. Les Conteneurs de mise en page peuvent également tirer parti du système de style, offrant aux créateurs de contenu davantage d’options pour la conception de mises en page.
 
-Actuellement, une règle CSS est appliquée à la page entière en appliquant une largeur fixe. Au lieu de cela, une approche plus souple consiste à créer un style de largeur **** fixe que les auteurs de contenu peuvent activer/désactiver.
+Actuellement, une règle CSS est appliquée à la page entière en appliquant une largeur fixe. En revanche, une approche plus souple consiste à créer un style **Largeur fixe** que les auteurs de contenu peuvent activer/désactiver.
 
 ### Mise en oeuvre du style de largeur fixe - ui.frontend
 
 Nous allons début de mettre en oeuvre le style Largeur fixe dans le module **ui.frontend** de notre projet.
 
-1. Début du serveur de développement webpack en exécutant la commande suivante depuis le module **ui.frontend** :
+1. Début du serveur de développement webpack en exécutant la commande suivante à partir du module **ui.frontend** :
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
    $ npm start
    ```
 
-1. Open the file `index.html` located at: `ui.frontend/src/main/webpack/static/index.html`.
+1. Ouvrez le fichier `index.html` situé à l&#39;emplacement suivant : `ui.frontend/src/main/webpack/static/index.html`.
 1. Nous voulons que le corps de notre modèle de page d’article soit doté d’une largeur fixe, ce qui laisse l’en-tête et le pied de page libres pour s’élargir. Par conséquent, nous voulons cible le 2e `<div class='responsivegrid aem-GridColumn aem-GridColumn--default--12'` (Conteneur de mise en page) entre les deux fragments d’expérience (ligne 136)
 
    ![Disposition du Conteneur principal du contenu](assets/style-system/main-body-layoutContainer.png)
 
-1. ajoutez la classe `cmp-layout-container--fixed` à celle `div` identifiée lors de l&#39;étape précédente.
+1. Ajoutez la classe `cmp-layout-container--fixed` sur `div` identifiée lors de l’étape précédente.
 
    ```html
    <!-- Experience Fragment Header -->
@@ -465,7 +465,7 @@ Nous allons début de mettre en oeuvre le style Largeur fixe dans le module **ui
    </div>
    ```
 
-1. Mettez à jour le fichier `container.scss` situé dans : `ui.frontend/src/main/webpack/components/content/container/scss/container.scss`:
+1. Mettez à jour le fichier `container.scss` situé à l&#39;adresse : `ui.frontend/src/main/webpack/components/content/container/scss/container.scss` :
 
    ```css
    /* WKND Layout Container - Fixed Width */
@@ -482,7 +482,7 @@ Nous allons début de mettre en oeuvre le style Largeur fixe dans le module **ui
    }
    ```
 
-1. Mettez à jour le fichier `_elements.scss` situé dans : `ui.frontend/src/main/webpack/base/sass/_elements.scss` et modifiez la `.root` règle pour que la nouvelle largeur maximale soit définie sur la variable `$max-body-width`.
+1. Mettez à jour le fichier `_elements.scss` situé à l&#39;adresse : `ui.frontend/src/main/webpack/base/sass/_elements.scss` et modifiez la règle `.root` pour qu’une nouvelle largeur maximale soit définie sur la variable `$max-body-width`.
 
    ```css
     /* Before */
@@ -529,19 +529,19 @@ Ensuite, nous allons ajouter le style Largeur fixe en mettant à jour les strat�
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Accédez au modèle **de page de l’** article situé à l’emplacement suivant : [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. Accédez au **Modèle de page d’article** situé à l’adresse : [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
 
-1. En mode **Structure** , sélectionnez le Conteneur **de** mise en page principal (entre l’en-tête et le pied de page du fragment d’expérience), puis sélectionnez l’icône **Stratégie** .
+1. En mode **Structure**, sélectionnez le **Conteneur de mise en page principal** (entre l’en-tête et le pied de page du fragment d’expérience), puis sélectionnez l’icône **Stratégie**.
 
    ![Configuration de la stratégie de conteneur de disposition du contenu principal](assets/style-system/layout-container-article-template-policy-icon.png)
 
-1. Mettez à jour la stratégie **WKND Site Default** pour inclure un style supplémentaire pour la largeur **** fixe avec une valeur de `cmp-layout-container--fixed`:
+1. Mettez à jour la stratégie **Valeur par défaut du site WKND** pour inclure un style supplémentaire pour **Largeur fixe** avec la valeur `cmp-layout-container--fixed` :
 
-   ![Mise à jour de la stratégie par défaut du site WKND ](assets/style-system/wknd-site-default-policy-update-fixed-width.png)
+   ![Mise à jour de la stratégie par défaut du site WKND  ](assets/style-system/wknd-site-default-policy-update-fixed-width.png)
 
    Enregistrez vos modifications et référencez la page Modèle de page d’article.
 
-1. Sélectionnez à nouveau le Conteneur **principal de** mise en page (entre l’en-tête et le pied de page du fragment d’expérience). Cette fois, l’icône **pinceau** doit apparaître et vous pouvez sélectionner **Largeur fixe** dans la liste déroulante des styles.
+1. Sélectionnez de nouveau le **Conteneur de mise en page** principal (entre l’en-tête et le pied de page du fragment d’expérience). Cette fois, l&#39;icône **pinceau** doit apparaître et vous pouvez sélectionner **Largeur fixe** dans la liste déroulante des styles.
 
    ![Appliquer un Conteneur de mise en page à largeur fixe](assets/style-system/apply-fixed-width-layout-container.png)
 
@@ -549,24 +549,24 @@ Ensuite, nous allons ajouter le style Largeur fixe en mettant à jour les strat�
 
 1. Accédez à l&#39;article **La Skateparks** dans l&#39;éditeur AEM Sites à l&#39;adresse : [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html). Le conteneur de largeur fixe doit s’afficher en action.
 
-## Header/Footer - Experience Fragment {#experience-fragment}
+## En-tête/Pied de page - Fragment d’expérience {#experience-fragment}
 
 Ensuite, nous allons ajouter des styles à l’en-tête et au pied de page pour terminer le modèle de page d’article. L’en-tête et le pied de page ont été mis en oeuvre en tant que fragment d’expérience, qui est un regroupement de composants au sein d’un conteneur. Nous pouvons appliquer une classe CSS unique aux composants du fragment d’expérience, tout comme les autres composants principaux du système de style.
 
 ### Mise en oeuvre du style d’en-tête - ui.frontend
 
-Les composants du composant d’en-tête sont déjà mis en forme pour correspondre aux conceptions [](assets/pages-templates/wknd-article-design.xd)AdobeXD. Seules quelques petites modifications de mise en page sont nécessaires.
+Les composants du composant d’en-tête sont déjà mis en forme pour correspondre aux [conceptions AdobeXD](assets/pages-templates/wknd-article-design.xd), seules quelques petites modifications de mise en page sont nécessaires.
 
-1. Début du serveur de développement webpack en exécutant la commande suivante depuis le module **ui.frontend** :
+1. Début du serveur de développement webpack en exécutant la commande suivante à partir du module **ui.frontend** :
 
    ```shell
    $ cd ~/code/aem-guides-wknd/ui.frontend/
    $ npm start
    ```
 
-1. Open the file `index.html` located at: `ui.frontend/src/main/webpack/static/index.html`.
-1. Recherchez la **première** instance du composant Fragment d’expérience en recherchant *class=&quot;experiencefragment* (ligne 48).
-1. ajoutez la classe `cmp-experiencefragment--header` à celle `div` identifiée lors de l&#39;étape précédente.
+1. Ouvrez le fichier `index.html` situé à l&#39;emplacement suivant : `ui.frontend/src/main/webpack/static/index.html`.
+1. Recherchez l’instance **first** du composant Fragment d’expérience en recherchant *class=&quot;experience efragment* (ligne 48).
+1. Ajoutez la classe `cmp-experiencefragment--header` sur `div` identifiée lors de l’étape précédente.
 
    ```html
        ...
@@ -578,7 +578,7 @@ Les composants du composant d’en-tête sont déjà mis en forme pour correspon
                ...
    ```
 
-1. Open the file `experiencefragment.scss` located at: `ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. Ajoutez les styles suivants au fichier :
+1. Ouvrez le fichier `experiencefragment.scss` situé à l&#39;emplacement suivant : `ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. Ajoutez les styles suivants au fichier :
 
    ```css
    /* Header Style */
@@ -621,20 +621,20 @@ Les composants du composant d’en-tête sont déjà mis en forme pour correspon
 
 ### Mise en oeuvre du style de pied de page - ui.frontend
 
-Le pied de page dans les conceptions [](assets/pages-templates/wknd-article-design.xd) AdobeXD comprend un arrière-plan noir avec du texte clair. Nous devrons mettre en forme le contenu dans notre Pied de page du fragment d’expérience pour refléter cette situation.
+Le pied de page des [conceptions AdobeXD](assets/pages-templates/wknd-article-design.xd) comprend un arrière-plan noir avec du texte clair. Nous devrons mettre en forme le contenu dans notre Pied de page du fragment d’expérience pour refléter cette situation.
 
-1. Open the file `index.html` located at: `ui.frontend/src/main/webpack/static/index.html`.
+1. Ouvrez le fichier `index.html` situé à l&#39;emplacement suivant : `ui.frontend/src/main/webpack/static/index.html`.
 
-1. Recherchez la **deuxième** instance du composant Fragment d’expérience en recherchant *class=&quot;experience fragment* (ligne 385).
+1. Recherchez l’instance **seconde** du composant Fragment d’expérience en recherchant *class=&quot;experience efragment* (ligne 385).
 
-1. ajoutez la classe `cmp-experiencefragment--footer` à celle `div` identifiée lors de l&#39;étape précédente.
+1. Ajoutez la classe `cmp-experiencefragment--footer` sur `div` identifiée lors de l’étape précédente.
 
    ```html
    <!-- add cmp-experiencefragment--footer -->
    <div class="experiencefragment cmp-experiencefragment--footer aem-GridColumn aem-GridColumn--default--12">
    ```
 
-1. Ouvrez de nouveau le fichier `experiencefragment.scss` situé à l’emplacement suivant : `ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. **Ajoutez** les styles suivants au fichier :
+1. Ouvrez de nouveau le fichier `experiencefragment.scss` situé à l’emplacement suivant : `ui.frontend/src/main/webpack/components/content/experiencefragment/scss/experiencefragment.scss`. **** Ajoutez les styles suivants au fichier :
 
    ```css
    /* Footer Style */
@@ -704,13 +704,13 @@ Ensuite, nous allons ajouter les styles En-tête et Pied de page en mettant à j
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Accédez au modèle **de page de l’** article situé à l’emplacement suivant : [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
+1. Accédez au **Modèle de page d’article** situé à l’adresse : [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page-template/structure.html).
 
-1. En mode **Structure** , sélectionnez Fragment **d’** expérience d’en-tête et sélectionnez l’icône **Stratégie** .
+1. En mode **Structure**, sélectionnez En-tête **Fragment d’expérience** et sélectionnez l’icône **Stratégie**.
 
    ![Configuration de la stratégie de fragment d’expérience](assets/style-system/experience-fragment-click-policy.png)
 
-1. Mettez à jour la stratégie Fragment d’expérience de site **WKND - En-tête** pour ajouter une classe **CSS** par défaut avec une valeur `cmp-experiencefragment--header`:
+1. Mettez à jour la stratégie **Fragment d’expérience du site WKND - En-tête** pour ajouter une classe CSS **par défaut** avec la valeur `cmp-experiencefragment--header` :
 
    ![Fragment d’expérience de site WKND - Mise à jour d’en-tête](assets/style-system/experience-fragment-header-policy-configure.png)
 
@@ -720,9 +720,9 @@ Ensuite, nous allons ajouter les styles En-tête et Pied de page en mettant à j
    >
    > Puisqu’il n’est pas nécessaire de basculer le style En-tête autre que sur le modèle, nous pouvons simplement le définir comme style CSS par défaut.
 
-1. Sélectionnez ensuite le fragment **d’** expérience de pied de page et cliquez sur son icône **Stratégie** pour ouvrir la configuration Stratégie.
+1. Sélectionnez ensuite le pied de page **Fragment d’expérience** et cliquez sur son icône **Stratégie** pour ouvrir la configuration de la stratégie.
 
-1. Mettez à jour la stratégie **WKND Site Experience Fragment - Pied de page** pour ajouter une classe **CSS** par défaut avec une valeur `cmp-experiencefragment--footer`:
+1. Mettez à jour la stratégie **Fragment d’expérience du site WKND - Pied de page** pour ajouter une classe CSS **par défaut** avec la valeur `cmp-experiencefragment--footer` :
 
    ![Fragment d’expérience du site WKND - Mise à jour du pied de page](assets/style-system/experience-fragment-footer-policy-configure.png)
 
@@ -744,9 +744,9 @@ Félicitations, la page d&#39;article est presque entièrement stylisée et vous
 
 ### Étapes suivantes {#next-steps}
 
-Découvrez les étapes de bout en bout pour créer un composant [AEM](custom-component.md) personnalisé qui affiche le contenu créé dans une boîte de dialogue et explore le développement d&#39;un modèle Sling pour encapsuler la logique métier qui remplit le code HTML du composant.
+Découvrez les étapes de bout en bout pour créer un [composant d&#39;AEM personnalisé](custom-component.md) qui affiche le contenu créé dans une boîte de dialogue et explore le développement d&#39;un modèle Sling pour encapsuler la logique métier qui renseigne le code HTML du composant.
 
-Vue le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd) ou passez en revue et déployez le code localement sur l&#39;embrayage Git `style-system/solution`.
+Vue le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd) ou passez en revue et déployez le code localement sur la brach Git `style-system/solution`.
 
-1. Clonez le référentiel [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd) .
-1. Regardez la `style-system/solution` branche.
+1. Cloner le référentiel [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd).
+1. Consultez la branche `style-system/solution`.
