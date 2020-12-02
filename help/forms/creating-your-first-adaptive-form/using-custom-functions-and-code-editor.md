@@ -22,11 +22,11 @@ ht-degree: 0%
 ---
 
 
-# Utilisation de fonctions personnalisées et d’un éditeur de code {#using-functions-and-code-editor}
+# Utilisation de fonctions personnalisées et d&#39;un éditeur de code {#using-functions-and-code-editor}
 
 Dans cette partie, nous utiliserons des fonctions personnalisées et l&#39;éditeur de code pour créer des règles de fonctionnement.
 
-vous avez déjà installé [ClientLib avec une fonction](assets/client-libs-and-logo.zip) personnalisée plus tôt dans ce didacticiel.
+vous avez déjà installé [ClientLib avec la fonction personnalisée ](assets/client-libs-and-logo.zip) plus tôt dans ce didacticiel.
 
 En règle générale, une bibliothèque cliente se compose de fichiers CSS et Javascript. Cette bibliothèque cliente contient un fichier javascript qui expose une fonction pour renseigner les valeurs des listes déroulantes.
 
