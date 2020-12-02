@@ -29,11 +29,11 @@ Après avoir créé et testé votre document de canal d&#39;impression, nous avo
 
 Lorsque vous configurez un dossier de contrôle dans AEM, vous associez un script ECMA ou un code Java qui est exécuté lorsqu’un fichier est déposé dans le dossier de contrôle. Dans cet article, nous allons nous concentrer sur le script ECMA qui va générer des documents de canal d&#39;impression et les enregistrer dans le système de fichiers.
 
-La configuration du dossier de contrôle et le script ECMA font partie des ressources importées au [début de ce didacticiel.](introduction.md)
+La configuration du dossier de contrôle et le script ECMA font partie des actifs que vous avez importés au [début de ce didacticiel](introduction.md).
 
 Le fichier d’entrée déposé dans le dossier de contrôle possède la structure suivante. Le script ECMA lit les numéros de compte et génère un document de canal d’impression pour chacun de ces comptes.
 
-Pour plus d’informations sur le script ECMA pour la génération de documents, [reportez-vous à cet article.](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
+Pour plus d&#39;informations sur le script ECMA pour la génération de documents, [reportez-vous à cet article](/help/forms/interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
 ```xml
 <accountnumbers>
