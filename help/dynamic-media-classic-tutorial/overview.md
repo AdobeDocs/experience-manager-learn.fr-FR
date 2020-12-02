@@ -42,7 +42,7 @@ Ce guide porte sur les principales fonctionnalités suivantes de Contenu multim�
 - **Vidéo.** Téléchargez les vidéos finales, publiez-les et téléchargez-les progressivement dans des visionneuses de vidéos configurables.
 - **Imagerie dynamique.** Technologie qui exploite les fonctionnalités d’IA Adobe Sensei et qui fonctionne avec les &quot;paramètres d’image prédéfinis&quot; existants pour améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité d’image en fonction des fonctionnalités du navigateur client.
 
-Pour découvrir d’autres fonctionnalités de la solution, consultez la [documentation de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
+Pour découvrir d’autres fonctionnalités de la solution, consultez la [Documentation pour Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
 
 ## Interface utilisateur de Dynamic Media Classic
 
@@ -64,7 +64,7 @@ _Interface utilisateur de Dynamic Media Classic_
 
 >[!IMPORTANT]
 >
->À côté de chaque ID de fichier se trouve le commutateur **Marquer pour publication** . Lorsque la bascule est activée (verte), cela indique que la ressource est marquée pour publication.
+>À côté de chaque ID de ressource se trouve le commutateur **Marquer pour publication**. Lorsque la bascule est activée (verte), cela indique que la ressource est marquée pour publication.
 
 ![image](assets/overview/overview-mark-for-publish.png)
 
@@ -72,4 +72,4 @@ _Interface utilisateur de Dynamic Media Classic_
 >
 >Cochez la case **Publier après le téléchargement** dans la boîte de dialogue Télécharger pour publier automatiquement les fichiers au moment du téléchargement.
 
-En savoir plus sur la [navigation dans l’interface utilisateur de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
+En savoir plus sur [la navigation dans l’interface utilisateur de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
