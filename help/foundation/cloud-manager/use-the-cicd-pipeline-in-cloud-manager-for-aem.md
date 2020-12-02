@@ -1,6 +1,6 @@
 ---
 title: Utiliser le pipeline CI/CD dans Adobe Cloud Manager
-description: adobe Cloud Manager fournit un pipeline de CD/CI en libre-service simple mais flexible qui permet à AEM équipes de projet de déployer rapidement, en toute sécurité et de manière cohérente du code sur tous les environnements AEM hébergés dans AMS. Cette série de vidéos explore la configuration et l'exécution du pipeline CI/CD de Cloud Manager dans les scénarios d'échec et de réussite.
+description: Adobe Cloud Manager fournit un pipeline de CD/CI en libre-service simple mais flexible qui permet à AEM équipes de projet de déployer rapidement, en toute sécurité et de manière cohérente du code sur tous les environnements AEM hébergés dans AMS. Cette série de vidéos explore la configuration et l'exécution du pipeline CI/CD de Cloud Manager dans les scénarios d'échec et de réussite.
 sub-product: cloud manager, foundation
 feature: pipelines, quality-gates
 topics: cicd, performance, best-practices, development, governance
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Utiliser le pipeline CI/CD dans Adobe Cloud Manager
 
-adobe Cloud Manager fournit un pipeline de CD/CI en libre-service simple mais flexible qui permet à AEM équipes de projet de déployer rapidement, en toute sécurité et de manière cohérente du code sur tous les environnements AEM hébergés dans AMS. Cette série de vidéos explore la configuration et l&#39;exécution du pipeline CI/CD de Cloud Manager dans les scénarios d&#39;échec et de réussite.
+Adobe Cloud Manager fournit un pipeline de CD/CI en libre-service simple mais flexible qui permet à AEM équipes de projet de déployer rapidement, en toute sécurité et de manière cohérente du code sur tous les environnements AEM hébergés dans AMS. Cette série de vidéos explore la configuration et l&#39;exécution du pipeline CI/CD de Cloud Manager dans les scénarios d&#39;échec et de réussite.
 
 ## Présentation
 
@@ -38,21 +38,21 @@ Cette vidéo explore la configuration du pipeline pour le Programme dans Cloud M
 
 ## Exécution d&#39;un pipeline en panne
 
-Cette vidéo explore l&#39;exécution du pipeline CI/CD à l&#39;aide d&#39;un code qui échoue aux contrôles qualité requis de Cloud Manager, à l&#39;aide de la branche **[!DNL yellow]** du référentiel.
+Cette vidéo explore l&#39;exécution du pipeline CI/CD à l&#39;aide d&#39;un code qui échoue aux contrôles qualité requis de Cloud Manager, en utilisant la branche de référentiel **[!DNL yellow]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23084/?quality=12&learn=on)
 
 ## Exécution réussie d’un pipeline
 
-Cette vidéo explore l&#39;exécution réussie du pipeline CI/CD à l&#39;aide du code qui transmet les vérifications de qualité requises de Cloud Manager, à l&#39;aide de la branche **[!DNL master]** du référentiel.
+Cette vidéo explore l&#39;exécution réussie du pipeline CI/CD à l&#39;aide du code qui transmet les contrôles qualité requis de Cloud Manager, en utilisant la branche de référentiel **[!DNL master]**.
 
-Cette vidéo aborde également la console [!UICONTROL Activité] dans Cloud Manager, qui permet de réintégrer des exécutions principales ou de passer en revue les exécutions terminées ou ayant échoué.
+Cette vidéo touche également la console [!UICONTROL Activité] de Cloud Manager, ce qui permet de réintégrer des exécutions principales ou de passer en revue les exécutions terminées ou ayant échoué.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23085/?quality=12&learn=on)
 
 ## Documents de support
 
 * [Guide de l’utilisateur de Cloud Manager](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)
-* [Téléchargement de [!DNL SonarQube] scanningrules de code](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
+* [Téléchargement de  [!DNL SonarQube] scanningrules de code](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
    * *XLSX disponible au bas de la section liée*
 * [[!DNL SonarQube] Index des règles Java](https://rules.sonarsource.com/java/)
