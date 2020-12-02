@@ -22,13 +22,13 @@ ht-degree: 0%
 
 Le modèle de données de formulaire peut être basé sur les sources RDBMS, RESTfull, SOAP ou OData. Ce cours est axé sur le pré-remplissage du formulaire adaptatif à l’aide du modèle de données de formulaire soutenu par la source de données RDBMS. Dans ce didacticiel, la base de données MYSQL a été utilisée. Nous avons créé les deux tableaux suivants pour montrer le cas d&#39;utilisation
 
-* **table newhire** - Cette table stocke les informations du newhire.
+* **** newhiretable : ce tableau stocke les informations du néwhire.
 
    ![newhire](assets/newhire-table.png)
 
 
-* **table des bénéficiaires** - Cette table stocke les bénéficiaires potentiels
+* **** bénéficiaires possibles - Ce système permet de stocker les bénéficiaires potentiels
 
    ![bénéficiaires](assets/beneficiaries-table.png)
 
-Vous pouvez importer le fichier [](assets/db-schema.sql) sql à l’aide de MySQL Workbench pour créer des tables contenant des données d’exemple.
+Vous pouvez importer le [fichier sql](assets/db-schema.sql) à l’aide de MySQL Workbench pour créer des tableaux contenant des données d’exemple.
