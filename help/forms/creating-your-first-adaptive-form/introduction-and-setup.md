@@ -20,7 +20,7 @@ ht-degree: 33%
 ---
 
 
-# Getting Started With Adaptive Forms {#getting-started-with-adaptive-forms}
+# Prise En Main De La Forms Adaptative {#getting-started-with-adaptive-forms}
 
 Ce didacticiel décrit les étapes de création d’un formulaire adaptatif à onglets multiples. Vous apprendrez à utiliser les tableaux, la mise en page en accordéon et l’éditeur de règles pour créer des règles de fonctionnement.
 
@@ -36,8 +36,8 @@ Vous aurez besoin des éléments suivants :
 
 * **On suppose que vous exécutez AEM Forms version 6.4 ou ultérieure sur localhost:4502.**
 
-* [Téléchargez le client-libs-and-logo](assets/client-libs-and-logo.zip) et le fragment [](assets/getting-started-fragment.zip) getting-started-fragment sur votre disque dur.
+* [Téléchargez le client-libs-and-](assets/client-libs-and-logo.zip) logoand  [getting-started-](assets/getting-started-fragment.zip) fragmenta sur votre disque dur.
 
-* Importation des fichiers zip dans AEM à l’aide du gestionnaire de [packages ](http://localhost:4502/crx/packmgr/index.jsp)
+* Importez les fichiers zip dans AEM à l’aide du gestionnaire de packages [](http://localhost:4502/crx/packmgr/index.jsp).
 
 
