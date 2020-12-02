@@ -24,12 +24,12 @@ Le formulaire **StoreAFWithAttachments** est le formulaire adaptatif principal. 
 
 ![formulaire de demande principal](assets/6552.JPG)
 
-Ce formulaire est associé aux bibliothèques clientes **bootboxjs540,storeAFWithAttachments** créées plus tôt dans le cours et à un processus AEM qui est déclenché lors de l’envoi du formulaire.
+Ce formulaire est associé aux bibliothèques client **bootboxjs540,storeAFWithAttachments** créées plus tôt dans le cours et à un processus AEM qui est déclenché lors de l’envoi du formulaire.
 
 
-* Les exemples de formulaires sont basés sur un modèle [de formulaire adaptatif](assets/custom-template-with-page-component.zip) personnalisé qui doit être importé dans AEM pour que les exemples de formulaires s’affichent correctement.
+* Les exemples de formulaires sont basés sur [modèle de formulaire adaptatif personnalisé](assets/custom-template-with-page-component.zip) qui doit être importé dans AEM pour que les exemples de formulaires s’affichent correctement.
 
-* Le formulaire [](assets/store-af-with-attachments-form.zip) StoreAfWithAttachments renseigné peut être téléchargé et importé dans votre instance AEM.
+* Le [formulaire StoreAfWithAttachments](assets/store-af-with-attachments-form.zip) terminé peut être téléchargé et importé dans votre instance AEM.
 
 * Le processus [AEM associé à ce formulaire](assets/workflow-model-store-af-with-attachments.zip) doit être importé dans votre instance AEM pour que le formulaire fonctionne.
 
