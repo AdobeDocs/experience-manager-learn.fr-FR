@@ -24,9 +24,9 @@ Les formulaires HTML5 peuvent être envoyés à la servlet hébergée dans AEM. 
 
 ## Créer votre gestionnaire d’envoi
 
-Une servlet simple peut être créée pour gérer l’envoi du formulaire HTML5. Les données envoyées peuvent ensuite être extraites à l’aide du code suivant. Cette [servlet](assets/html5-submit-handler.zip) vous est disponible dans le cadre de ce didacticiel. Veuillez installer la [servlet](assets/html5-submit-handler.zip) à l&#39;aide du gestionnaire de [packages.](http://localhost:4502/crx/packmgr/index.jsp)
+Une servlet simple peut être créée pour gérer l’envoi du formulaire HTML5. Les données envoyées peuvent ensuite être extraites à l’aide du code suivant. Ce [servlet](assets/html5-submit-handler.zip) est mis à votre disposition dans le cadre de ce didacticiel. Installez [servlet](assets/html5-submit-handler.zip) à l&#39;aide de [gestionnaire de packages](http://localhost:4502/crx/packmgr/index.jsp).
 
-Le code de la ligne 9 peut être utilisé pour appeler le processus J2EE. Assurez-vous d&#39;avoir configuré la configuration [du SDK client](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) Adobe LiveCycle si vous souhaitez utiliser le code pour appeler le processus J2EE.
+Le code de la ligne 9 peut être utilisé pour appeler le processus J2EE. Assurez-vous d&#39;avoir configuré [la configuration du SDK client du LiveCycle d&#39;Adobe](https://helpx.adobe.com/aem-forms/6/submit-form-data-livecycle-process.html) si vous avez l&#39;intention d&#39;utiliser le code pour appeler le processus J2EE.
 
 ```java
 StringBuffer stringBuffer = new StringBuffer();
@@ -60,15 +60,15 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ![submit-url](assets/submit-url.PNG)
 
-* Appuyez sur xdp et cliquez sur _Propriétés_->_Avancé._
+* Appuyez sur xdp et cliquez sur _Propriétés_->_Avancé_.
 * copier http://localhost:4502/content/AemFormsSamples/handlehml5formsubmission.html et coller ceci dans le champ de texte Envoyer l’URL
-* Cliquez sur le bouton _Enregistrer et fermer_ .
+* Cliquez sur le bouton _SaveAndClose_.
 
 ### Entrée d&#39;Ajoute dans les chemins d&#39;exclusion
 
 * Accédez à [configMgr](http://localhost:4502/system/console/configMgr).
-* Rechercher un filtre CSRF _Granite Adobe_
-* ajoutez l’entrée suivante dans la section Chemins exclus.
+* Rechercher _Adobe Granite CSRF Filter_
+* Ajoutez l’entrée suivante dans la section Chemins exclus.
 * _/content/AemFormsSamples/handlehml5formsubmission_
 * Enregistrez vos modifications
 
