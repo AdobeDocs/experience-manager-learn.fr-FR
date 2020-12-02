@@ -19,13 +19,13 @@ Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponib
 ## Nouveautés
 
 * **[Utilisation de la gestion du flux de travail dans AEM (vidéo)](./workflow/use-workflow-management.md)**
-   *aem permet d&#39;obtenir une visibilité sur les workflows en cours d&#39;exécution et facilite la gestion des [!DNL Workflow] définitions.*
+   *aem permet d&#39;obtenir une visibilité sur les workflows en cours d&#39;exécution et facilite la gestion des  [!DNL Workflow] définitions.*
 
 * **[Comprendre Cloud Manager pour AEM (Vidéo)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
    *Cloud Manager pour AEM permet une gestion, une inspection et un libre-service aisés des environnements AEM.*
 
-* **[Configurer des clés publiques et privées à utiliser avec les E/S d&#39;Adobe (didacticiel)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *Découvrez comment les clés et les fichiers de stockage de clés sont générés à l&#39;aide [!DNL openssl] d&#39;un système d&#39;E/S AEM et d&#39;Adobe.*
+* **[Configuration de clés publiques et privées à utiliser avec Adobe I/O (didacticiel)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
+   *Découvrez comment les clés et les keystores sont générés à l’aide  [!DNL openssl] de cette fonctionnalité avec AEM et Adobe I/O.*
 
 * **[Utilisation du pipeline Cloud Manager CI/CD (vidéo)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Découvrez comment utiliser le pipeline de CI/CD de Cloud Manager pour assurer des déploiements sûrs et cohérents.*
