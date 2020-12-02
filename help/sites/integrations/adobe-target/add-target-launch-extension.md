@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Ajouter l’Extension de la cible à une propriété Launch {#adobe-target-extension}
 
-Pour suivre cette vidéo, vous devez avoir déjà [intégré un Experience Platform Launch avec AEM](../experience-platform-launch/overview.md).
+Pour suivre cette vidéo, vous devez avoir déjà [Experience Platform Launch intégré avec AEM](../experience-platform-launch/overview.md).
 
 Découvrez comment activer Adobe Target sur votre site Web AEM à l’aide de l’Experience Platform Launch.
 
