@@ -29,7 +29,7 @@ Dans cette vidéo, nous étudions la gestion dynamique des couleurs dans les mé
 
 >[!NOTE]
 >
->[Activez Contenu multimédia](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) dynamique dans AEM pour utiliser cette fonctionnalité.
+>[Activez l’AEM ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) Média dynamique pour utiliser cette fonction.
 
 Cette fonctionnalité est disponible pour AEM versions 6.1 et 6.2 en tant que Feature Pack.
 
@@ -95,7 +95,7 @@ Voici le modèle XML pour le noeud de configuration Gestion des couleurs. Ce mod
 
 | Nom | Espace colorimétrique | Description |
 | ------------------- | ---------- | ------------------------------------- |
-| AdobeRGB | RVB | adobe rgb (1998) |
+| AdobeRGB | RVB | Adobe RGB (1998) |
 | AppleRGB | RVB | Apple RGB |
 | CIERGB | RVB | CIE RGB |
 | CoatedFogra27 | CMJN | FOGRA27 recouvert (ISO 12647-2:2004) |
@@ -120,7 +120,7 @@ Voici le modèle XML pour le noeud de configuration Gestion des couleurs. Ce mod
 | FeuillesNon couché | CMJN | U.S. Sheetfed Non couché v2 |
 | SMPTE | RVB | SMPTE-C |
 | sRVB | RVB sRGB | IEC61966-2.1 |
-| UncoatedFogra29 | CMJN | FOGRA29 non couché (ISO 12647-2:2004) |
+| Fogra29 non couché | CMJN | FOGRA29 non couché (ISO 12647-2:2004) |
 | WebCoated | CMJN | U.S. Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMJN | Web Coated FOGRA28 (ISO 12647-2:2004) |
 | WebCoatedGrade3 | CMJN | Papier de 3e année SWOP 2006 à revêtement Web |
