@@ -1,8 +1,8 @@
 ---
 title: Publication de pages avec AEM Sites
 seo-title: Publication de pages avec Adobe Experience Manager Sites
-description: adobe experience manager sites propose plusieurs options de publication et de dépublication de contenu. Cette vidéo explore les différentes méthodes et leurs capacités.
-seo-description: adobe experience manager sites propose plusieurs options de publication et de dépublication de contenu. Cette vidéo explore les différentes méthodes et leurs capacités.
+description: Adobe Experience Manager Sites propose plusieurs options de publication et de dépublication de contenu. Cette vidéo explore les différentes méthodes et leurs capacités.
+seo-description: Adobe Experience Manager Sites propose plusieurs options de publication et de dépublication de contenu. Cette vidéo explore les différentes méthodes et leurs capacités.
 topics: publishing
 audience: all
 doc-type: feature video
@@ -19,13 +19,13 @@ ht-degree: 1%
 ---
 
 
-# Publishing pages {#using-publication-management-with-aem-sites}
+# Publication de pages {#using-publication-management-with-aem-sites}
 
-aem sites propose plusieurs options de publication et de dépublication de contenu. Cette vidéo explore les différentes méthodes et leurs capacités.
+AEM Sites propose plusieurs options de publication et de dépublication de contenu. Cette vidéo explore les différentes méthodes et leurs capacités.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32193?quality=12&learn=on)
 
-aem sites propose plusieurs méthodes pour publier et annuler la publication de contenu, en fonction du processus de l’auteur.
+AEM Sites propose plusieurs méthodes pour publier et annuler la publication de contenu, en fonction du processus de l’auteur.
 
 * Publication de la page active à partir de l’éditeur de page AEM Sites
    * Publier la page active et autoriser la sélection facultative de références
