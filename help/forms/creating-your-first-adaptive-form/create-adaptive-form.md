@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Creating Adaptive Form {#creating-adaptive-form}
+# Création d’un formulaire adaptatif {#creating-adaptive-form}
 
 Dans la partie 1, nous allons créer un formulaire adaptatif basé sur le modèle créé dans la leçon précédente et configurer la barre d&#39;outils avec les boutons appropriés.
 
