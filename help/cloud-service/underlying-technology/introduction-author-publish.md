@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Présentation du niveau Auteur et Publication {#introduction-author-publish}
+# Présentation de l’élément Auteur et Publier au niveau {#introduction-author-publish}
 
 Présentation des niveaux Auteur et Publier dans le cadre de l’architecture de Adobe Experience Manager.
 
