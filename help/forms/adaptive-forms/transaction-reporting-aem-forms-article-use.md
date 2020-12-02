@@ -20,7 +20,7 @@ ht-degree: 2%
 ---
 
 
-# Utilisation du Rapports de transactions dans AEM Forms{#using-transaction-reporting-in-aem-forms}
+# Utilisation du Rapports de transaction dans AEM Forms{#using-transaction-reporting-in-aem-forms}
 
 Le rapports des transactions pour capturer le nombre d’envois de formulaires, le rendu de documents utilisant les services de document et le rendu de communications interactives (canaux Web et d’impression) a été introduit avec AEM Forms 6.4.1. Cette fonctionnalité s’adresse principalement aux clients qui souhaitent obtenir une licence du logiciel en fonction du nombre d’envois de formulaires et/ou de documents rendus. Cette fonctionnalité est actuellement disponible sur la pile AEM Forms OSGI uniquement.
 
@@ -35,7 +35,7 @@ Par défaut, l&#39;enregistrement des transactions est désactivé. Pour activer
 
 Une fois le rapports de transaction activé, vous pouvez envoyer un Forms adaptatif, générer des documents à l’aide des services de document ou générer des documents de communication interactive pour voir le rapports de transaction en action.
 
-## Affichage de l&#39;état des transactions {#viewing-transaction-report}
+## Affichage du rapport des transactions {#viewing-transaction-report}
 
 Pour vue du rapport de transactions, connectez-vous à AEM Forms en tant qu&#39;administrateur. Seuls les membres du groupe fd-Administrator peuvent vue l&#39;état de transaction.
 
@@ -49,9 +49,9 @@ Dans la capture d’écran ci-dessus, Document traité indique le nombre de docu
 
 Une transaction reste dans la mémoire tampon pendant une période spécifiée (durée de la mémoire tampon de vidage + temps de réplication inverse). Par défaut, il faut environ 90 secondes pour que le nombre de transactions se reflète dans l&#39;état de la transaction.
 
-Les actions telles que l’envoi d’un formulaire PDF, l’utilisation de l’interface utilisateur de l’agent pour prévisualisation une communication interactive ou l’utilisation de méthodes d’envoi de formulaire non standard ne sont pas comptabilisées comme des transactions. aem forms fournit une API pour enregistrer ces transactions. Appelez l’API depuis vos implémentations personnalisées pour enregistrer une transaction.
+Les actions telles que l’envoi d’un formulaire PDF, l’utilisation de l’interface utilisateur de l’agent pour prévisualisation une communication interactive ou l’utilisation de méthodes d’envoi de formulaire non standard ne sont pas comptabilisées comme des transactions. AEM Forms fournit une API pour enregistrer ces transactions. Appelez l’API depuis vos implémentations personnalisées pour enregistrer une transaction.
 
 Si vous consultez le rapport de transaction sur l’instance d’auteur, assurez-vous que la réplication inversée est configurée sur toutes les instances de publication.
 
-Pour en savoir plus sur le rapports de transactions, [cliquez ici](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
+Pour en savoir plus sur le rapports de transactions [veuillez cliquer ici](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html)
 
