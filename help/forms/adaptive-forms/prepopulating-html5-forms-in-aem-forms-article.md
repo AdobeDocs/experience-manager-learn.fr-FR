@@ -20,17 +20,17 @@ ht-degree: 2%
 ---
 
 
-# Renseigner HTML5 Forms à l’aide de l’attribut data {#prepopulate-html-forms-using-data-attribute}
+# PréRenseigner HTML5 Forms à l’aide de l’attribut de données {#prepopulate-html-forms-using-data-attribute}
 
-Consultez la page d&#39;exemples [](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
+Consultez la page [Exemples d&#39;AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
 
 Les modèles XDP générés au format HTML à l’aide d’AEM Forms sont appelés HTML5 ou Mobile Forms. Un cas d’utilisation courant consiste à préremplir ces formulaires lors de leur génération.
 
 Il existe deux façons de fusionner les données avec le modèle xdp lorsqu’elles sont rendues au format HTML.
 
-**dataRef**: Vous pouvez utiliser le paramètre dataRef dans l’URL. Ce paramètre spécifie le chemin absolu du fichier de données fusionné avec le modèle. Ce paramètre peut être une URL vers un service REST renvoyant les données au format XML.
+**dataRef** : Vous pouvez utiliser le paramètre dataRef dans l’URL. Ce paramètre spécifie le chemin absolu du fichier de données fusionné avec le modèle. Ce paramètre peut être une URL vers un service REST renvoyant les données au format XML.
 
-**data**: Ce paramètre spécifie les octets de données codés au format UTF-8 qui sont fusionnés avec le modèle. Si ce paramètre est spécifié, le formulaire HTML5 ignore le paramètre dataRef. En règle générale, il est recommandé d’utiliser l’approche des données.
+**data** : Ce paramètre spécifie les octets de données codés au format UTF-8 qui sont fusionnés avec le modèle. Si ce paramètre est spécifié, le formulaire HTML5 ignore le paramètre dataRef. En règle générale, il est recommandé d’utiliser l’approche des données.
 
 L’approche recommandée consiste à définir l’attribut de données dans la requête avec les données que vous souhaitez pré-remplir le formulaire.
 
@@ -38,7 +38,7 @@ slingRequest.setAttribute(&quot;data&quot;, content);
 
 Dans cet exemple, nous définissons l’attribut de données avec le contenu. Le contenu représente les données que vous souhaitez préremplir le formulaire. En règle générale, vous récupérez le &quot;contenu&quot; en lançant un appel REST à un service interne.
 
-Pour ce faire, vous devez créer un profil personnalisé. Les détails sur la création de profil personnalisé sont clairement documentés dans la documentation [AEM Forms ici](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
+Pour ce faire, vous devez créer un profil personnalisé. Les détails sur la création de profil personnalisé sont clairement documentés dans la [documentation AEM Forms ici](https://helpx.adobe.com/aem-forms/6/html5-forms/custom-profile.html).
 
 Une fois votre profil personnalisé créé, vous allez créer un fichier JSP qui récupérera les données en appelant votre système principal. Une fois les données extraites, vous utiliserez slingRequest.setAttribute(&quot;data&quot;, content); pour pré-remplir le formulaire
 
@@ -49,7 +49,8 @@ Lorsque le fichier XDP est rendu, vous pouvez également transférer certains pa
 Le JSP que vous écrivez aura accès au paramètre name via request.getParameter(&quot;name&quot;) . Vous pouvez ensuite transmettre la valeur de ce paramètre à votre processus principal pour récupérer les données requises.
 Pour que cette fonctionnalité fonctionne sur votre système, procédez comme suit :
 
-* [Téléchargement et importation des actifs dans AEM à l’aide du gestionnaire](assets/prepopulatemobileform.zip)de packages Le package va installer les éléments suivants
+* [Téléchargez et importez les ressources dans AEM à l&#39;aide de Package ](assets/prepopulatemobileform.zip)
+ManagerLe package va installer les éléments suivants :
 
    * Profil personnalisé
    * Exemple XDP
