@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Les ressources Adobe Experience Manager (AEM) vous permettent d’identifier les ressources qui partagent des attributs communs et de les marquer comme liées à l’aide de la nouvelle fonction Ressources connexes. Il permet également aux utilisateurs de définir une relation source/dérivée entre les ressources, ce qui permet aux utilisateurs d’identifier facilement l’origine d’une ressource. L’exécution du processus de traduction sur une ressource dérivée récupère toute ressource référencée par le fichier source et l’inclut pour la traduction, réduisant ainsi les efforts de maintenance de plusieurs sites.
 
-## Gestion de fichiers source multisite {#multisite-asset-source-file-management}
+## Gestion des fichiers source multisite {#multisite-asset-source-file-management}
 
 >[!VIDEO](https://video.tv.adobe.com/v/18331/?quality=9&learn=on)
 
