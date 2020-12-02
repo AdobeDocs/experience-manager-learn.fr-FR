@@ -22,30 +22,30 @@ ht-degree: 2%
 
 Jusqu&#39;à présent, nous avons créé les éléments suivants :
 
-* Base de données avec 2 tables - `newhire` et `beneficiaries`
+* Base de données avec 2 tables : `newhire` et `beneficiaries`
 * Source de données en pool de connexion Apache Sling configurée
 * Modèle de données de formulaire basé sur RDBMS
 
-L’étape suivante consiste à créer et à configurer un formulaire adaptatif pour utiliser le modèle de données de formulaire.  Pour obtenir le début direct, vous pouvez [télécharger et importer](assets/fdm-demo-af.zip) des exemples de formulaire. L’exemple de formulaire comporte une section qui affiche les détails de l’employé et une autre section destinée aux bénéficiaires de l’employé liste.
+L’étape suivante consiste à créer et à configurer un formulaire adaptatif pour utiliser le modèle de données de formulaire.  Pour obtenir le début principal, vous pouvez [télécharger et importer](assets/fdm-demo-af.zip) un exemple de formulaire. L’exemple de formulaire comporte une section qui affiche les détails de l’employé et une autre section destinée aux bénéficiaires de l’employé liste.
 
 ## Associer un formulaire au modèle de données de formulaire
 
 L’exemple de formulaire fourni avec ce cours n’est associé à aucun modèle de données de formulaire. Pour configurer le formulaire de manière à utiliser le modèle de données de formulaire, procédez comme suit :
 
 * Sélectionner le formulaire FDMDemo
-* Cliquez sur _Propriétés_->Modèle de _formulaire_
+* Cliquez sur _Propriétés_->_Modèle de formulaire_.
 * Sélectionnez Modèle de données de formulaire dans la liste déroulante
 * Recherchez et sélectionnez votre modèle de données de formulaire créé dans la leçon précédente.
-* Click on _Save &amp; Close_
+* Cliquez sur _Enregistrer et fermer_
 
 ## Configurer le service de préremplissage
 
 La première étape consiste à associer le service de préremplissage au formulaire. Pour associer le service de préremplissage, suivez les étapes mentionnées ci-dessous.
 
-* Sélectionner le `FDMDemo` formulaire
+* Sélectionnez le formulaire `FDMDemo`
 * Cliquez sur _Modifier_ pour ouvrir le formulaire en mode d’édition.
 * Sélectionnez Conteneur de formulaire dans la hiérarchie de contenu, puis cliquez sur l’icône en forme de clé à molette pour ouvrir sa feuille de propriétés.
-* Sélectionnez le service _Préremplissage de modèle de données de_ formulaire dans la liste déroulante Service de préremplissage.
+* Sélectionnez _Service de préremplissage du modèle de données de formulaire_ dans la liste déroulante Service de préremplissage.
 * Cliquez sur bleu pour enregistrer vos modifications.
 
 * ![préremplissage-service](assets/fdm-prefill.png)
@@ -95,9 +95,11 @@ Enfin, nous devons lier les cellules de ligne aux éléments de modèle de donn�
 
 ## Testez votre formulaire
 
-Nous devons maintenant ouvrir le formulaire avec empID approprié dans l’URL. Les 2 liens suivants renseigneront les formulaires avec des informations provenant du[formulaire de base de données avec empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)[Form avec empID=208.](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
+Nous devons maintenant ouvrir le formulaire avec empID approprié dans l’URL. Les 2 liens suivants renseigneront les formulaires avec des informations de la base de données
+[Formulaire avec empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)
+[Formulaire avec empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
 
-## Résolution des incidents
+## Dépannage
 
 Mon formulaire est vide et ne contient aucune donnée
 
