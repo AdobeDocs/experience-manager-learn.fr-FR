@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# Configuration d’un graphique en courbes pour votre premier document de communication interactif {#configuring-line-chart-for-your-first-interactive-communication-document}
+# Configuration d&#39;un graphique linéaire pour votre premier document de communication interactif {#configuring-line-chart-for-your-first-interactive-communication-document}
 
 Dans cette partie, nous allons ajouter un graphique linéaire pour afficher le solde du compte.
 
