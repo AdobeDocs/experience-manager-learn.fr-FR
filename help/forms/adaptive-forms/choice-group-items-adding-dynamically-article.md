@@ -1,8 +1,8 @@
 ---
-title: ajouter des éléments au composant de groupe de choix
-seo-title: ajouter des éléments au composant de groupe de choix
-description: ajouter dynamiquement les éléments au composant de groupe de choix
-seo-description: ajouter dynamiquement les éléments au composant de groupe de choix
+title: Ajouter des éléments au composant de groupe de choix
+seo-title: Ajouter des éléments au composant de groupe de choix
+description: Ajouter dynamiquement les éléments au composant de groupe de choix
+seo-description: Ajouter dynamiquement les éléments au composant de groupe de choix
 feature: adaptive-forms
 topics: authoring
 audience: developer
@@ -19,16 +19,16 @@ ht-degree: 3%
 
 
 
-# ajouter dynamiquement des éléments au composant de groupe de choix
+# Ajouter dynamiquement des éléments au composant de groupe de choix
 
-aem forms 6.5 permet d’ajouter dynamiquement des éléments à un composant de groupe de choix Adaptive Forms tel que CheckBox, Radio Button et Image Liste.
+AEM Forms 6.5 permet d’ajouter dynamiquement des éléments à un composant de groupe de choix Adaptive Forms tel que CheckBox, Radio Button et Image Liste.
 
 [Cette fonctionnalité est disponible en direct sur Samples Server](https://forms.enablementadobe.com/content/samples/samples.html?query=0). Recherchez la carte d&#39;éléments de case à cocher dynamique et cliquez sur &quot;Essayer&quot;.
 
 
 Vous pouvez ajouter des éléments à l’aide de l’éditeur visuel ainsi que de l’éditeur de code en fonction de votre cas d’utilisation.
 
-**Utilisation de l’éditeur visuel :** Vous pouvez renseigner les éléments du groupe de choix à partir des résultats d’un appel de fonction ou d’un appel de service. Par exemple, vous pouvez définir les éléments du groupe de choix en utilisant la réponse d’un appel à l’API REST.
+**Utilisation de l’éditeur visuel :** vous pouvez renseigner les éléments du groupe de choix à partir des résultats d’un appel de fonction ou de service. Par exemple, vous pouvez définir les éléments du groupe de choix en utilisant la réponse d’un appel à l’API REST.
 
 Dans la capture d&#39;écran ci-dessous, nous définissons les options de la Période de prêt(années) aux résultats d&#39;un appel de service appelé getLoanPeriods.
 
@@ -70,11 +70,11 @@ Les données envoyées sont les suivantes :
 </afUnboundData>
 ```
 
-**ajouter des éléments à l’aide de l’éditeur de règles**
+**Ajouter des éléments à l’aide de l’éditeur de règles**
 
 >[!VIDEO](https://video.tv.adobe.com/v/26847?quality=12&learn=on)
 
-**ajouter des éléments à l’aide de l’éditeur de code**
+**Ajouter des éléments à l’aide de l’éditeur de code**
 
 >[!VIDEO](https://video.tv.adobe.com/v/26848?quality=12&learn=on)
 
