@@ -31,9 +31,9 @@ Les fonctions d’importation et d’exportation des métadonnées AEM Assets pe
 
 >[!VIDEO](https://video.tv.adobe.com/v/21374/?quality=9&learn=on)
 
-Télécharger le dossier sports [WeRetail](assets/we-retail-sports.zip)
+Télécharger [le dossier sports WeRetail](assets/we-retail-sports.zip)
 
-Téléchargement du package de métadonnées [de fichier](assets/we-retail-sports-asset-metadata.zip)
+Télécharger [Package de métadonnées de ressources](assets/we-retail-sports-asset-metadata.zip)
 
 ## Format du fichier de métadonnées {#metadata-file-format}
 
@@ -42,7 +42,7 @@ Téléchargement du package de métadonnées [de fichier](assets/we-retail-sport
 #### Première rangée
 
 * La première ligne du fichier CSV définit le schéma de métadonnées.
-* La première colonne est définie par défaut sur `assetPath`, qui contient le chemin d’accès JCR absolu pour une ressource.
+* La première colonne prend par défaut la valeur `assetPath`, qui contient le chemin d’accès JCR absolu pour une ressource.
 
 * Les colonnes suivantes de la première ligne pointent vers d’autres propriétés de métadonnées d’un fichier.
 
@@ -59,9 +59,9 @@ Téléchargement du package de métadonnées [de fichier](assets/we-retail-sport
    * Incorrect :`Dc:Ttle {{String}}`
 
 * Le type de propriété n’est pas sensible à la casse
-* Tous les types [de propriétés](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) JCR valides sont pris en charge
+* Tous les types de propriétés [JCR valides](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) sont pris en charge
 
-* Format de propriété à plusieurs valeurs - `<metadata property name> {{<property type : MULTI }}`
+* Format de propriété de plusieurs valeurs - `<metadata property name> {{<property type : MULTI }}`
 
 #### Deuxième rangée à N lignes
 
