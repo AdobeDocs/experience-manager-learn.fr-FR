@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Pour le rendu avec positionnement uniquement (FPO){#for-placement-only-rendition}
+# Pour le rendu FPO (Placement uniquement){#for-placement-only-rendition}
 
 Découvrez comment créer et utiliser un rendu FPO (For Placement Only) pour AEM ressources.
 
