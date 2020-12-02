@@ -23,36 +23,42 @@ Comme AEM Content Services est créé à partir de Configuration (modèles de fr
 * Processus de révision et de traitement
 * et activation/désactivation pour la publication et l’extraction de contenu des points de terminaison AEM Content Services d’AEM Publish
 
-1. Assurez-vous que les packages **[!DNL WKND Mobile]** d’applications répertoriés dans le [chapitre 1](./chapter-1.md#wknd-mobile-application-packages)sont installés sur **AEM Publish** à l’aide de [!UICONTROL Package Manager.]
+1. Assurez-vous que les **[!DNL WKND Mobile]packages d’applications** répertoriés dans [Chapitre 1](./chapter-1.md#wknd-mobile-application-packages) sont installés sur **AEM Publish** à l’aide de [!UICONTROL Package Manager].
    * [http://localhost:4503/crx/packmgr](http://localhost:4503/crx/packmgr)
 
-1. Publication du modèle **[!DNL WKND Mobile Events API]modifiable**
-   1. Navigate to **[!UICONTROL AEM]>[!UICONTROL Tools]>[!UICONTROL General]>[!UICONTROL Templates]>[!DNL WKND Mobile]**
-   1. Select the **[!DNL Event API]** template
+1. Publier le **[!DNL WKND Mobile Events API]modèle modifiable**
+   1. Accédez à **[!UICONTROL AEM] > [!UICONTROL Outils] > [!UICONTROL Général] > [!UICONTROL Modèles] >[!DNL WKND Mobile]**
+   1. Sélectionnez le modèle **[!DNL Event API]**
    1. Appuyez sur **[!UICONTROL Publier]** dans la barre d’actions supérieure.
    1. Publiez le **modèle** et **toutes les références** (stratégies de contenu, mappages de stratégies de contenu et modèles).
 
-1. Publiez les fragments **[!DNL WKND Mobile Events]de** contenu.
+1. Publiez les fragments de contenu **[!DNL WKND Mobile Events]**.
 
 Notez que cela est nécessaire car l’API Événements utilise le composant Liste Fragment de contenu, qui ne fait pas spécifiquement référence aux fragments de contenu.
-1. Accédez à **[!UICONTROL AEM]>[!UICONTROL Ressources]>[!UICONTROL Fichiers]>[!DNL WKND Mobile]>  >  1. Sélectionnez tous les fragments de contenu 1. Appuyez sur le  Gérer les publications dans la barre d&#39;actions supérieure1. Quittez l&#39;action Publier par défaut telle quelle, appuyez sur Suivant dans la barre d&#39;actions supérieure1. Sélectionnez  tous les fragments de contenu 1. Appuyez sur Publier.  dans la barre d&#39;action supérieure* Le modèle de fragment de contenu de  et les images de Événement référencées sont automatiquement publiés avec les fragments de contenu.[!DNL English][!DNL Events]****[!DNL Event]***********************[!DNL Events]*
+1. Accédez à **[!UICONTROL AEM] > [!UICONTROL Actifs] > [!UICONTROL Fichiers] > [!DNL WKND Mobile] > [!DNL English] >[!DNL Events]**
+1. Sélectionnez tous les fragments de contenu **[!DNL Event]**.
+1. Appuyez sur **[!UICONTROL Gérer la publication]** dans la barre d’actions supérieure.
+1. Si vous laissez l&#39;action **Publier** par défaut en l&#39;état, appuyez sur **[!UICONTROL Suivant]** dans la barre d&#39;actions supérieure.
+1. Sélectionnez **tous** fragments de contenu.
+1. Appuyez sur **[!UICONTROL Publier]** dans la barre d’actions supérieure.
+* *Le [!DNL Events] modèle de fragment de contenu et les images de Événement de référence seront automatiquement publiés avec les fragments de contenu.*
 
-1. Publish the **[!DNL Events API]page**.
-   1. Accédez à **[!UICONTROL AEM]>[!UICONTROL Sites]>[!DNL WKND Mobile]>[!DNL English]>[!DNL API]**
-   1. Sélectionner la **[!DNL Events]** page
+1. Publiez la page **[!DNL Events API]**.
+   1. Accédez à **[!UICONTROL AEM] > [!UICONTROL Sites] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**
+   1. Sélectionnez la page **[!DNL Events]**
    1. Appuyez sur **[!UICONTROL Gérer la publication]** dans la barre d’actions supérieure.
    1. En laissant l’action **Publier** par défaut telle quelle, appuyez sur **[!UICONTROL Suivant]** dans la barre d’actions supérieure.
-   1. Sélectionner la **[!DNL Events]** page
-   1. Appuyez sur **[!DNL Publish]** la barre d’action supérieure.
+   1. Sélectionnez la page **[!DNL Events]**
+   1. Appuyez sur **[!DNL Publish]** dans la barre d’actions supérieure.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28343/?quality=12&learn=on)
 
 ## Vérification de la publication AEM
 
-1. Dans un nouveau navigateur Web, vérifiez que vous êtes déconnecté d’AEM Publish et demandez les URL suivantes (en remplacement `http://localhost:4503` de tout hôte : port sur lequel AEM Publish est exécuté).
+1. Dans un nouveau navigateur Web, vérifiez que vous êtes déconnecté d’AEM Publish et demandez les URL suivantes (en remplaçant `http://localhost:4503` par tout hôte : port sur lequel AEM Publish est exécuté).
 
    * [http://localhost:4503/content/wknd-mobile/en/api/events.model.json](http://localhost:4503/content/wknd-mobile/en/api/events.model.tidy.json)
-   Ces requêtes doivent renvoyer la même réponse JSON que lors de la révision des points de terminaison AEM Author correspondants. Dans le cas contraire, assurez-vous que toutes les publications ont réussi (vérifiez les files d’attente de réplication), le [!DNL WKND Mobile]`ui.apps` package est installé sur AEM Publish et vérifiez le `error.log` pour AEM Publish.
+   Ces requêtes doivent renvoyer la même réponse JSON que lors de la révision des points de terminaison AEM Author correspondants. Dans le cas contraire, assurez-vous que toutes les publications ont réussi (vérifiez les files d’attente de réplication), le package [!DNL WKND Mobile] `ui.apps` est installé sur AEM Publish et vérifiez le `error.log` pour AEM Publish.
 
 ## Étape suivante
 
