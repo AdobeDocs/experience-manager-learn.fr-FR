@@ -32,12 +32,12 @@ Le modèle XDP et les données à fusionner avec le modèle sont spécifiés ici
 
 ![flux de travail](assets/generate-pdf1.PNG)
 
-Le PDF généré est affecté à la variable de flux de travail nommée `submittedPDF`.
+Le PDF généré est affecté à la variable de flux de travail `submittedPDF`.
 
 ![flux de travail](assets/generate-pdf2.PNG)
 
 ### Affecter le fichier pdf généré pour révision et approbation
 
-Attribuer un composant de processus de tâche est utilisé ici pour affecter le PDF généré à des fins de révision et d’approbation. La variable `submittedPDF` est utilisée dans l’onglet Forms et Documents du composant Assign Tâche workflow.
+Attribuer un composant de processus de tâche est utilisé ici pour affecter le PDF généré à des fins de révision et d’approbation. La variable `submittedPDF` est utilisée dans l’onglet Forms et Documents du composant de flux de travail Attribuer la Tâche.
 
 ![flux de travail](assets/assign-task.PNG)
