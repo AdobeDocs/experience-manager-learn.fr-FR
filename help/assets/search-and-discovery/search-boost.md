@@ -19,7 +19,7 @@ ht-degree: 4%
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=12&learn=on)
 
-## Comprendre l&#39;essor de la recherche en AEM Assets{#understanding-search-boosting-in-aem-assets}
+## Présentation de l&#39;encouragement de la recherche en AEM Assets{#understanding-search-boosting-in-aem-assets}
 
 Un aperçu approfondi de l&#39;essor de la recherche AEM Assets et de son fonctionnement dans le contexte plus large de l&#39;AEM.
 
