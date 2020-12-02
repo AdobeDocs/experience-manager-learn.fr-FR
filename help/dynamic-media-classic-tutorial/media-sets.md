@@ -16,7 +16,7 @@ ht-degree: 2%
 ---
 
 
-# Visionneuses d’images, d’échantillons, à 360° et de supports variés {#media-sets}
+# Visionneuses d’images, d’échantillons, de panoramiques et de supports variés {#media-sets}
 
 Au-delà des images uniques pour le dimensionnement et le zoom dynamiques, les collections d’ensembles Dynamic Media Classic offrent une expérience en ligne plus riche. Cette section du didacticiel explique comment créer les visionneuses de supports enrichis suivantes dans Dynamic Media Classic :
 
@@ -49,8 +49,8 @@ L’URL de la visionneuse d’images ci-dessus peut apparaître comme suit :
 
 ![image](assets/media-sets/image-set-url-1.png)
 
-- En savoir plus sur les visionneuses d’images à l’aide du Début [rapide sur les visionneuses](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/quick-start-image-sets.html)d’images.
-- Découvrez comment [créer une visionneuse](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set)d’images.
+- Pour en savoir plus sur les visionneuses d’images, consultez la section [Début rapide aux visionneuses d’images](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
+- Découvrez comment [créer une visionneuse d’images](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
 
 ### Série d’échantillons
 
@@ -68,8 +68,8 @@ L’URL de la série d’échantillons ci-dessus peut apparaître comme suit :
 
 ![image](assets/media-sets/image-set_url.png)
 
-- En savoir plus sur les séries d’échantillons à l’aide de l’option Début [rapide aux séries](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html)d’échantillons.
-- Découvrez comment [créer une série](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set)d’échantillons.
+- Pour en savoir plus sur les séries d’échantillons, consultez la section [Début rapide aux séries d’échantillons](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
+- Découvrez comment [créer une série d’échantillons](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
 
 ### Visionneuse à 360°
 
@@ -85,8 +85,8 @@ L’URL de la visionneuse à 360° ci-dessus peut apparaître comme suit :
 
 ![image](assets/media-sets/spin-set.png)
 
-- En savoir plus sur les visionneuses à 360° à l’aide du Début [rapide des visionneuses à 360°](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
-- Découvrez comment [créer une visionneuse](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set)à 360°.
+- Pour en savoir plus sur les visionneuses à 360° avec le [Début rapide aux visionneuses à 360°](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
+- Découvrez comment [créer une visionneuse à 360°](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
 
 ## Visionneuse de médias mixtes
 
@@ -100,13 +100,13 @@ L’URL de la visionneuse de supports variés ci-dessus peut s’afficher comme 
 
 ![image](assets/media-sets/image-set-url-1.png)
 
-- En savoir plus sur les visionneuses de supports variés avec le Début [rapide des visionneuses](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html)de supports variés.
+- Pour en savoir plus sur les visionneuses de supports variés avec le [Début rapide aux visionneuses de supports variés](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
 
-- Découvrez comment [créer une visionneuse](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set)de supports variés.
+- Découvrez comment [créer une visionneuse de supports variés](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
 
 Pour afficher une image pour un zoom, une visionneuse ou une vidéo sur votre site Web, vous devez l’appeler &quot;visionneuse&quot; de Contenu de média dynamique classique. Dynamic Media Classic inclut des visionneuses de fichiers multimédias enrichis, tels que des séries d’échantillons, des visionneuses à 360°, des vidéos, etc.
 
-En savoir plus sur [les visionneuses pour AEM Assets et Dynamic Media Classic](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
+En savoir plus sur [Visionneuses pour AEM Assets et Dynamic Media Classic](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
 
 ## Paramètres prédéfinis d’ensemble par lot
 
@@ -114,7 +114,7 @@ Jusqu’à présent, nous avons discuté de la façon de créer manuellement des
 
 Chaque paramètre prédéfini est un ensemble d’instructions indépendant à nom unique qui définit comment créer la visionneuse à l’aide d’images qui correspondent aux conventions d’affectation de nom définies. Dans le paramètre prédéfini, vous définissez d’abord des conventions d’affectation de nom pour les fichiers que vous souhaitez regrouper dans une visionneuse. Un paramètre prédéfini d’ensemble par lot peut alors être créé pour référencer ces images.
 
-Bien qu’il soit possible de créer le paramètre prédéfini vous-même (il se trouve sous **Configuration > Configuration de l’application > Paramètres prédéfinis** d’ensemble par lot), il est recommandé de configurer votre équipe de conseil ou votre support technique pour qu’il soit configuré. Voici pourquoi :
+Bien qu’il soit possible de créer le paramètre prédéfini vous-même (il se trouve sous **Configuration > Configuration de l’application > Paramètres prédéfinis d’ensemble par lot** ), il est recommandé de configurer votre équipe de conseil ou votre support technique pour qu’il soit configuré. Voici pourquoi :
 
 - Les paramètres prédéfinis d’ensemble par lot peuvent être complexes à configurer. Ils sont alimentés par des expressions régulières et, à moins que vous ne soyez un développeur, cette syntaxe peut être inhabituelle ou déroutante.
 - Une fois créés, ils sont activés par défaut. Il n’existe pas de fonction &quot;Annuler&quot;. Si vous début de télécharger des milliers d’images et que votre paramètre prédéfini est mal configuré, vous risquez de rencontrer des centaines ou des milliers d’ensembles rompus que vous devez rechercher et supprimer manuellement.
@@ -123,17 +123,17 @@ Une convention d’affectation de nom simple a été suggérée plus tôt, qui s
 
 Les paramètres prédéfinis d’ensemble par lot ne sont appliqués qu’au téléchargement ; elles ne peuvent pas être exécutées une fois les images téléchargées. Il est donc important de planifier votre convention d’affectation de nom et de créer un paramètre prédéfini avant de début le chargement de toutes vos images.
 
-Une fois les paramètres prédéfinis créés, l’administrateur des Sociétés peut choisir s’ils sont principaux ou inactifs. Principal signifie qu’ils s’afficheront sur la page de téléchargement sous Options **** tâche, tandis que les paramètres prédéfinis inactifs resteront masqués.
+Une fois les paramètres prédéfinis créés, l’administrateur des Sociétés peut choisir s’ils sont principaux ou inactifs. Principal signifie qu’ils apparaîtront sur la page de téléchargement sous **Options tâche**, tandis que les paramètres prédéfinis inactifs resteront masqués.
 
-Découvrez comment [créer un paramètre prédéfini](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset)d’ensemble par lot.
+Découvrez comment [créer un paramètre prédéfini d’ensemble par lot](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
 
 ### Utilisation de paramètres prédéfinis d’ensemble par lot au téléchargement
 
 Voici comment vous utilisez les paramètres prédéfinis d’ensemble par lot lors du téléchargement après leur création :
 
-1. Cliquez sur **Télécharger** , puis sélectionnez **Depuis le bureau** ou **Via FTP**.
-2. Cliquez sur Options **** tâche.
-3. Ouvrez l’option Paramètres prédéfinis **d’ensemble** par lot, puis cochez ou décochez le paramètre prédéfini pour l’utiliser avec le téléchargement.
+1. Cliquez sur **Télécharger** et sélectionnez **De bureau** ou **Via FTP**.
+2. Cliquez sur **Options tâche**.
+3. Ouvrez l’option **Paramètres prédéfinis d’ensemble par lot**, puis cochez ou décochez le paramètre prédéfini pour l’utiliser avec le téléchargement.
 4. Une fois le téléchargement terminé, recherchez dans votre dossier les jeux terminés.
 
-En savoir plus sur les paramètres prédéfinis d’ensemble [par lot](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).
+En savoir plus sur [Paramètres prédéfinis d’ensemble par lot](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).
