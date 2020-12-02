@@ -29,11 +29,11 @@ Les aspects suivants de la gestion des flux de travail, introduits dans AEM 6.5,
 + Navigation facile vers la chronologie du workflow à partir de la vue de liste
 + Copier et coller un processus d&#39;optimisation existant pour personnaliser ou remplacer la fonctionnalité par défaut
 + Effectuez une publication rapide pour [!DNL Workflow Models] et [!DNL Launchers]
-+ Gérez la publication pour [!DNL Workflow Models] et [!DNL Launchers].
++ Gérer la publication pour [!DNL Workflow Models] et [!DNL Launchers].
 + Avertissez les utilisateurs avec une info-bulle d&#39;avertissement lorsqu&#39;ils essaient de modifier un modèle ou un lanceur de processus prête à l&#39;emploi.
 + Capacité à rétablir les modifications apportées à un modèle ou à des lanceurs de processus prêtes à l&#39;emploi.
 
-Cette vidéo est utilisée [!DNL Workflow models] pour démontrer cet ensemble de fonctionnalités, mais elles s&#39;appliquent également à [!DNL AEM Launchers].
+Cette vidéo utilise [!DNL Workflow models] pour démontrer cet ensemble de fonctionnalités, mais elles s&#39;appliquent également à [!DNL AEM Launchers].
 
 
 >[!NOTE]
