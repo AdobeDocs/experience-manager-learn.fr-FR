@@ -29,7 +29,7 @@ Cet article décrit les étapes nécessaires à la création d’une action d’
 * Connexion à crx
 * Créez un noeud de type &quot;sling:folder&quot; sous applications. Appelons ce noeud CustomSubmitHelpx.
 * Enregistrez le nouveau noeud.
-* ajouter les deux propriétés suivantes au noeud que vous venez de créer
+* Ajouter les deux propriétés suivantes au noeud que vous venez de créer
 * PropertyName       | Valeur de propriété
 * guideComponentType | fd/af/components/guidesubmittype
 * guideDataModel     | xfa,xsd,basic
@@ -53,7 +53,7 @@ Cet article décrit les étapes nécessaires à la création d’une action d’
 ```
 
 * Créez un fichier appelé addfields .jsp sous le noeud CustomSubmitHelpx. Ce fichier vous permet d&#39;accéder au document signé.
-* ajouter le code suivant dans ce fichier
+* Ajouter le code suivant dans ce fichier
 
 ```java
     <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
