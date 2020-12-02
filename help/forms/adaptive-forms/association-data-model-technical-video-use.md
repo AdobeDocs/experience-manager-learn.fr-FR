@@ -1,8 +1,8 @@
 ---
 title: Utilisation de modèles de données d’association avec AEM Forms
 seo-title: Utilisation de modèles de données d’association avec AEM Forms
-description: ajouter des associations entre des entités dans le modèle de données de formulaire
-seo-description: ajouter des associations entre des entités dans le modèle de données de formulaire
+description: Ajouter des associations entre des entités dans le modèle de données de formulaire
+seo-description: Ajouter des associations entre des entités dans le modèle de données de formulaire
 uuid: 82626632-3251-4f7b-9af1-43a9161107c2
 discoiquuid: e01e9bd4-5b47-4356-9884-6968f385bb20
 feature: adaptive-forms, form-data-model
