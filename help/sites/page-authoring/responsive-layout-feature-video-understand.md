@@ -20,9 +20,9 @@ ht-degree: 21%
 ---
 
 
-# Présentation réactive {#understanding-responsive-layout-with-aem-sites}
+# Présentation de la mise en page réactive {#understanding-responsive-layout-with-aem-sites}
 
-adobe experience manager sites permet à un auteur de gérer la largeur d’un composant en fonction de la largeur de l’appareil afin de faciliter la conception d’un site réactive. Grâce au mode de mise en page et au Conteneur de mise en page, les utilisateurs peuvent créer du contenu réactif pour différents périphériques et prévisualisation de l’expérience de l’utilisateur final, sans quitter l’interface utilisateur AEM.
+Adobe Experience Manager Sites permet à un auteur de gérer la largeur d’un composant en fonction de la largeur de l’appareil afin de faciliter la conception d’un site réactive. Grâce au mode de mise en page et au Conteneur de mise en page, les utilisateurs peuvent créer du contenu réactif pour différents périphériques et prévisualisation de l’expérience de l’utilisateur final, sans quitter l’interface utilisateur AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32012?quality=12&learn=on)
 
