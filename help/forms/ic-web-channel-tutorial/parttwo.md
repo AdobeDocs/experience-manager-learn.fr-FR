@@ -20,10 +20,10 @@ ht-degree: 0%
 ---
 
 
-# Création de la configuration des sources de données en AEM Forms{#creating-datasource-configuration-in-aem-forms}
+# Création de la configuration de DataSource en AEM Forms{#creating-datasource-configuration-in-aem-forms}
 
 Dans cette partie, nous allons créer une source de données soutenue par REST.  La vidéo suivante décrit les étapes de création de la source de données.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22344/?quality=9&learn=on)
 
-Veuillez utiliser le fichier swagger fourni dans le cadre des ressources liées à ce tutoriel. Les ressources sont disponibles en [introduction](introduction.md) de ce tutoriel.
+Veuillez utiliser le fichier swagger fourni dans le cadre des ressources liées à ce tutoriel. Les ressources sont disponibles dans [introduction](introduction.md) de ce didacticiel.
