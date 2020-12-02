@@ -20,7 +20,7 @@ ht-degree: 40%
 ---
 
 
-# Présentation des propriétés de la page {#understanding-page-properties-aem-sites}
+# Présentation des propriétés de page {#understanding-page-properties-aem-sites}
 
 La vidéo suivante présente les propriétés de page associées à une page dans Adobe Experience Manager.
 
@@ -53,7 +53,7 @@ Dans cette vidéo, les éléments de propriété de page suivants sont traités 
 * Miniature 
 * Partage sur les réseaux sociaux
 * Configuration de Cloud Services
-* Personnalisation  
+* Personnalisation 
    * Configurations ContextHub
    * Configuration du ciblage
 * Autorisations
