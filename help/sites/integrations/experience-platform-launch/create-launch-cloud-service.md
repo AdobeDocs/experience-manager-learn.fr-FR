@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Création d’une configuration de Cloud Service de lancement {#create-launch-cloud-service}
+# Créer une configuration de lancement de Cloud Service {#create-launch-cloud-service}
 
 Découvrez comment créer une nouvelle configuration de lancement de Cloud Services dans Adobe Experience Manager. aem la configuration du Cloud Service de lancement peut alors être appliquée à un site existant et le chargement des bibliothèques de lancement peut être observé dans les environnements Auteur et Publier.
 
