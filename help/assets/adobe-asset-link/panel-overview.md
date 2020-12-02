@@ -1,6 +1,6 @@
 ---
 title: Présentation du panneau Lien de ressource Adobe
-description: 'adobe Asset Link permet aux utilisateurs créatifs de parcourir, rechercher, extraire et archiver des ressources stockées dans AEM Assets à l’aide du panneau in-app d’InDesign, Photoshop et Illustrator. Découvrez l’interface utilisateur du panneau Lien d’actif d’Adobe et ses fonctionnalités. '
+description: 'Adobe Asset Link permet aux utilisateurs créatifs de parcourir, rechercher, extraire et archiver des ressources stockées dans AEM Assets à l’aide du panneau in-app d’InDesign, Photoshop et Illustrator. Découvrez l’interface utilisateur du panneau Lien d’actif d’Adobe et ses fonctionnalités. '
 sub-product: ressources
 feature: adobe-asset-link
 topics: authoring, collaboration, operations, sharing, metadata, images
@@ -19,8 +19,8 @@ ht-degree: 1%
 ---
 
 
-# Présentation du panneau Lien de ressource Adobe {#adobe-asset-link-panel-overview}
+# Présentation du panneau Lien de ressource d’Adobe {#adobe-asset-link-panel-overview}
 
-adobe Asset Link permet aux utilisateurs créatifs de parcourir, rechercher, extraire et archiver des ressources stockées dans AEM Assets à l’aide du panneau in-app d’InDesign, Photoshop et Illustrator. Découvrez l’interface utilisateur du panneau Lien d’actif d’Adobe et ses fonctionnalités.
+Adobe Asset Link permet aux utilisateurs créatifs de parcourir, rechercher, extraire et archiver des ressources stockées dans AEM Assets à l’aide du panneau in-app d’InDesign, Photoshop et Illustrator. Découvrez l’interface utilisateur du panneau Lien d’actif d’Adobe et ses fonctionnalités.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33734/?quality=12)
