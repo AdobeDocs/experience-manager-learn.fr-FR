@@ -27,11 +27,11 @@ Dans cette partie, nous allons créer un fragment de document pour contenir le n
 
 >[!VIDEO](https://video.tv.adobe.com/v/22350/?quality=9&learn=on)
 
-Les fragments de document contiennent le contenu textuel des documents de communication interactifs. Ce contenu de texte peut être du texte statique ou inséré à partir des valeurs des éléments de modèle de données sous-jacentes. Par exemple, **Cher _{nom}_**, où Cher est du texte statique et nom est le nom de l’élément de modèle de données de formulaire. Au moment de l&#39;exécution, cette résolution sera **Chère Gloria Rios**ou **Chère John Jacobs**selon la valeur de l&#39;élément name.
+Les fragments de document contiennent le contenu textuel des documents de communication interactifs. Ce contenu de texte peut être du texte statique ou inséré à partir des valeurs des éléments de modèle de données sous-jacentes. Par exemple **Cher _{name}_**, où Cher est du texte statique et où nom est le nom de l’élément de modèle de données de formulaire. Au moment de l’exécution, la résolution sera **Cher Gloria Rios**ou **Cher John Jacobs**selon la valeur de l’élément name.
 
 L’éditeur de texte enrichi est suffisamment intuitif pour qu’un utilisateur puisse créer du texte et insérer des éléments de données de formulaire. L’éditeur de fragments de document permet de mettre en forme du texte, de spécifier les types et les styles de police, d’insérer des caractères spéciaux et de créer des hyperliens.
 
-L’éditeur de fragments de document permet également d’insérer des conditions en ligne dans votre texte, comme le montre cette [vidéo.](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
+L’éditeur de fragments de document peut également insérer des conditions en ligne dans votre texte, comme le montre cette [vidéo](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
 
 >[!NOTE]
 >
