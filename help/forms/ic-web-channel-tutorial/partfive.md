@@ -30,7 +30,7 @@ Les fragments de document contiennent le contenu textuel des documents de commun
 
 L’éditeur de texte enrichi est suffisamment intuitif pour qu’un utilisateur puisse créer du texte et insérer des éléments de données de formulaire. L’éditeur de fragments de document permet de mettre en forme du texte, de spécifier les types et les styles de police, d’insérer des caractères spéciaux et de créer des hyperliens.
 
-L’éditeur de fragments de document peut également insérer des conditions en ligne dans votre texte, comme le montre cette [vidéo.](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
+L’éditeur de fragments de document peut également insérer des conditions en ligne dans votre texte, comme le montre cette [vidéo](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
 
 >[!NOTE]
 >
