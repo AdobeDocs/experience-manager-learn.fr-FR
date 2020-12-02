@@ -24,9 +24,9 @@ La vidéo suivante présente le processus de base de création d’un modèle de
 
 >[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
 
-Pour plus d’informations, reportez-vous à la documentation [sur les modèles de formulaires](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) adaptatifs.
+Pour plus d&#39;informations, consultez la [documentation relative au modèle de formulaire adaptatif](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html).
 
-Si nécessaire, vous pouvez télécharger le modèle [de formulaire](assets/peak-application-template.zip) adaptatif et l’importer dans AEM à l’aide du gestionnaire de [packages.](http://localhost:4502/crx/packmgr/index.jsp)
+Si nécessaire, vous pouvez télécharger le [modèle de formulaire adaptatif](assets/peak-application-template.zip) et l’importer dans AEM à l’aide du [gestionnaire de package](http://localhost:4502/crx/packmgr/index.jsp).
 
 
 
