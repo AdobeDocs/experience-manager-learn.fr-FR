@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 20%
+ht-degree: 34%
 
 ---
 
@@ -19,15 +19,15 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
 
 ## Nouveautés
 
-* **[Prise en main de AEM SPA Editor and React](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html) (Didacticiel)**
+* **[Prise en main de AEM SPA Editor and React](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-react-tutorial/overview.html)  (Didacticiel)**
 
    *Guide de prise en main pour les développeurs pour l&#39;intégration d&#39;une application d&#39;une seule page (SPA) avec AEM à l&#39;aide de React*
 
-* **[Prise en main de AEM SPA Editor et Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html) (didacticiel)**
+* **[Prise en main de AEM SPA Editor et Angular](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-angular-tutorial/overview.html)  (didacticiel)**
 
    *Guide de prise en main pour les développeurs pour l’intégration d’une application d’une seule page (SPA) avec AEM à l’aide d’Angular*
 
-* **[Prise en main AEM sans en-tête (didacticiel)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html)**
+* **[Prise en main AEM sans en-tête (didacticiel)](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-with-aem-headless/overview.html)**
 
    *Comment exposer le contenu d’AEM à consommer par une application mobile native, dans un scénario CMS sans tête.*
 
@@ -48,7 +48,7 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
 <table>
 <tr>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
+    <a href="https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
       <img alt="Prise en main du développement AEM Sites – Tutoriel WKND" src="./assets/aem-wknd-tutorial.png" />
     </a>
     <div>
