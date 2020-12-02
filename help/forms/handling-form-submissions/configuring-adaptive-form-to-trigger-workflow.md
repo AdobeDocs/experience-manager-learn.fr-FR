@@ -27,16 +27,16 @@ L’exemple de formulaire utilisé dans ce flux de travail est basé sur un mod�
 
 ### Obtention des modèles de formulaire adaptatif
 
-* Télécharger un modèle de formulaire [adaptatif](assets/af-form-template.zip)
+* Télécharger [Modèle de formulaire adaptatif](assets/af-form-template.zip)
 * [Importation du modèle à l’aide du gestionnaire de packages](http://localhost:4502/crx/packmgr/index.jsp)
 * Téléchargement et installation du modèle de formulaire adaptatif
 
 ### Obtention de l’exemple de formulaire adaptatif
 
-* Télécharger un formulaire [adaptatif](assets/peak-application-form.zip)
-* Accéder au [formulaire et aux Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Télécharger [Formulaire adaptatif](assets/peak-application-form.zip)
+* Accédez à [Formulaire et Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Cliquez sur Créer -> Télécharger le fichier
-* L’exemple de formulaire adaptatif sera placé dans un dossier appelé [Application Forms.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
+* L’exemple de formulaire adaptatif sera placé dans un dossier appelé [Application Forms](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
 La vidéo suivante explique comment configurer un formulaire adaptatif pour déclencher un flux de travail AEM
 >[!VIDEO](https://video.tv.adobe.com/v/40258/?quality=9&learn=on)
