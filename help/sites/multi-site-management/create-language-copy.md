@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Create a Language Copy {#create-language-copy}
+# Créer une copie de langue {#create-language-copy}
 
 Découvrez comment créer une copie de langue pour votre site AEM à l’aide de l’assistant Créer une copie de langue.
 
