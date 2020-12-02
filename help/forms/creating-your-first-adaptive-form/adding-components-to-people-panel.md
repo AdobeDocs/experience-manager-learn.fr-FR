@@ -1,6 +1,6 @@
 ---
-title: ajouter des composants au panneau Personnes
-seo-title: ajouter des composants au panneau Personnes
+title: Ajouter des composants au panneau Personnes
+seo-title: Ajouter des composants au panneau Personnes
 description: Configurez le panneau Personnes en ajoutant le fragment Détails de l’épouse. Une règle est créée pour afficher le fragment de détails sur le conjoint si le statut matrimonial du demandeur est marié.
 seo-description: Configurez le panneau Personnes en ajoutant le fragment Détails de l’épouse. Une règle est créée pour afficher le fragment de détails sur le conjoint si le statut matrimonial du demandeur est marié.
 uuid: be5d2cff-797b-44ea-90e9-2423f1ec8983
@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# ajouter des composants au panneau Personnes {#adding-components-to-people-panel}
+# Ajouter des composants au panneau Personnes {#adding-components-to-people-panel}
 
 Configurez le panneau Personnes en ajoutant le fragment Détails de l’épouse. Une règle est créée pour afficher le fragment de détails sur le conjoint si le statut matrimonial du demandeur est marié.
 
