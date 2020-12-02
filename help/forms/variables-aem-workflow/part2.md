@@ -37,7 +37,7 @@ Vous pouvez mapper le schéma avec la variable de type JSON dans votre modèle d
 Pour que les ressources fonctionnent sur votre système, procédez comme suit :
 
 * [Téléchargement et importation des ressources dans AEM à l’aide du gestionnaire de packages](assets/jsonandstringvariable.zip)
-* [Explorez le modèle](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) de processus pour comprendre les variables utilisées dans le processus.
+* [Explorez le ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) modèle de processus pour comprendre les variables utilisées dans le processus.
 * [Configuration du service de messagerie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Ouvrir le formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)
 * Renseignez les détails et envoyez le formulaire.
