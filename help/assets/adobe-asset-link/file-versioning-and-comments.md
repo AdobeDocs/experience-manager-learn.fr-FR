@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Versions des fichiers et commentaires{#file-versioning-and-comments}
+# Versioning des fichiers et commentaires{#file-versioning-and-comments}
 
 A l’aide du panneau Lien de ressources d’Adobe, vous pouvez accéder aux détails des fichiers dans AEM Assets, par exemple les miniatures, les métadonnées de base et les versions du panneau. Découvrez comment créer, prévisualisation et comparer des versions de fichiers.
 
