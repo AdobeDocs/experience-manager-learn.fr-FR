@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Création d&#39;un modèle de Document de Canal Web AEM Forms {#creating-web-channel-document-template-aem-forms}
+# Création du modèle de Document de Canal Web AEM Forms {#creating-web-channel-document-template-aem-forms}
 
 Dans cette partie, nous allons créer un modèle pour le document de canal Web.
 Création d’un modèle de Document de Canal Web dans AEM Forms 6.4
