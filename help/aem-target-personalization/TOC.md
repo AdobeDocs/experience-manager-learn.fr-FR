@@ -20,7 +20,7 @@ ht-degree: 36%
 ---
 
 
-# Getting Started with AEM and Target {#aem-target-tutorial}
+# Prise en main de l’AEM et de la Cible {#aem-target-tutorial}
 
 + [Présentation](./overview.md)
 + [Personnalisation à l’aide de fragments d’expérience AEM](./personalization-use-case-1.md)
@@ -28,5 +28,5 @@ ht-degree: 36%
 + [Personnalisation des expériences de pages Web complètes](./personalization-use-case-2.md)
 + Mise en œuvre {#aem-target-implementation}
    + [Présentation](./implementation.md)
-   + [aem et Adobe Target à l&#39;aide des E/S de lancement et d&#39;Adobe](./using-launch-adobe-io.md)
+   + [aem et Adobe Target à l’aide de Launch et Adobe I/O](./using-launch-adobe-io.md)
    + [aem et Adobe Target à l’aide de Cloud Services hérités](./using-aem-cloud-services.md)
