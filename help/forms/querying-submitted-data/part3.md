@@ -1,6 +1,6 @@
 ---
-title: aem forms avec Schéma et données JSON[Part3]
-seo-title: aem forms avec Schéma et données JSON[Part3]
+title: AEM Forms avec Schéma et données JSON[Part3]
+seo-title: AEM Forms avec Schéma et données JSON[Part3]
 description: Ce didacticiel en plusieurs parties vous explique comment créer un formulaire adaptatif avec le schéma JSON et interroger les données envoyées.
 seo-description: Ce didacticiel en plusieurs parties vous explique comment créer un formulaire adaptatif avec le schéma JSON et interroger les données envoyées.
 feature: adaptive-forms
