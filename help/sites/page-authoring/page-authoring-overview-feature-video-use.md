@@ -20,7 +20,7 @@ ht-degree: 17%
 ---
 
 
-# Authoring a page {#authoring-page-aem-sites}
+# Création d’une page {#authoring-page-aem-sites}
 
 Découvrez comment créer une page en Adobe Experience Manager Sites à l’aide de l’interface utilisateur de l’éditeur de site.
 
@@ -31,14 +31,14 @@ Dans cette vidéo, les fonctionnalités ou fonctionnalités suivantes sont abord
 * Création d’une page à partir d’un modèle
 * Présente différents modes de création pour une page
    * Modifier
-   * Mise en page
+   * Disposition
    * Développeur
-   * Timewarp  
+   * Distorsion du temps Timewarp 
 * Fonctionnalités de l’éditeur de page
    * Outil de recherche de composants
    * Outil de recherche de ressources
-* ajouter du contenu à un composant existant
-* ajouter un nouveau composant à votre page
+* Ajouter du contenu à un composant existant
+* Ajouter un nouveau composant à votre page
 * Propriétés de la page
    * Publier la page
    * Annulation de la publication de la page
