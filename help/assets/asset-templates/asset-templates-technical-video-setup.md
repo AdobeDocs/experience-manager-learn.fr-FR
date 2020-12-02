@@ -28,9 +28,9 @@ Les modèles de ressources permettent aux spécialistes du marketing de créer, 
 
 ## Télécharger la version d’évaluation de l’InDesign Server {#download-indesign-server-trial}
 
-Télécharger le site Web de téléchargement [d&#39;évaluation InDesign Server](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
+Télécharger [Site Web de téléchargement d’évaluation des InDesigns Server](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
 
-## Démarrage de l’InDesign Server {#starting-indesign-server}
+## InDesign Server de début {#starting-indesign-server}
 
 ```shell
 # macOS command
