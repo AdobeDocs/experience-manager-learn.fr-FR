@@ -28,5 +28,5 @@ Cette vidéo explique comment créer un modèle de données de formulaire basé 
 
 >[!NOTE]
 >
->Toute source de données RDBMS peut être utilisée, à condition que les pilotes de base de données requis soient déployés sur AEM en tant que lot OSGi. La configuration d’une source de données RDBMS dans AEM est traitée dans [Configuration de l’intégration des données avec AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
+>Toute source de données RDBMS peut être utilisée, à condition que les pilotes de base de données requis soient déployés sur AEM en tant que lot OSGi. La configuration d&#39;une source de données RDBMS dans AEM est traitée dans [Configuration de l&#39;intégration des données avec AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
 
