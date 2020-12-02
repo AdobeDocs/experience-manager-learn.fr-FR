@@ -1,6 +1,6 @@
 ---
-title: ajouter des composants au panneau Revenus
-seo-title: ajouter des composants au panneau Revenus
+title: Ajouter des composants au panneau Revenus
+seo-title: Ajouter des composants au panneau Revenus
 description: Nous allons ajouter un tableau au panneau Revenus. Configurez les lignes du tableau et utilisez l’éditeur de règles pour calculer le total général.
 seo-description: Nous allons ajouter un tableau au panneau Revenus. Configurez les lignes du tableau et utilisez l’éditeur de règles pour calculer le total général.
 uuid: d5c98561-c559-4624-976a-7a1486da7e69
@@ -22,11 +22,11 @@ ht-degree: 0%
 ---
 
 
-# ajouter des composants au panneau Revenus {#adding-components-to-income-panel}
+# Ajouter des composants au panneau Revenus {#adding-components-to-income-panel}
 
 Nous allons ajouter un tableau au panneau Revenus. Configurez les lignes du tableau et utilisez l’éditeur de règles pour calculer le total général.
 
-**ajouter et configurer le composant Tableau**
+**Ajouter et configurer le composant Tableau**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22198?quality=9&learn=on)
 
