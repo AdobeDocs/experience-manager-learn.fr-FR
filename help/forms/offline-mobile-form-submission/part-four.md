@@ -28,13 +28,13 @@ Pour que ce cas d&#39;utilisation fonctionne sur votre système local, procédez
 
 * Installez l’instance d’auteur AEM sur le port 4502 et l’instance de publication AEM sur le port 4503.
 * [Suivez les instructions indiquées dans le développement avec un utilisateur de service en AEM Forms](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). Veillez à créer l’utilisateur du service et à déployer le lot sur vos instances d’auteur et de publication AEM.
-* [Ouvrez la configuration osgi ](http://localhost:4503/system/console/configMgr).
+* [Ouvrez la configuration osgi  ](http://localhost:4503/system/console/configMgr).
 * Recherchez **Apache Sling Parrain Filter**. Assurez-vous que la case à cocher Autoriser les champs vides est activée.
-* [Déployez le lot](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)AEMFormDocumentService personnalisé.Ce lot doit être déployé sur votre instance de publication AEM. Ce lot comporte le code permettant de générer un PDF interactif à partir d’un formulaire pour périphériques mobiles.
+* [Déployez le lot](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar) AEMFormDocumentService personnalisé.Ce lot doit être déployé sur votre instance de publication AEM. Ce lot comporte le code permettant de générer un PDF interactif à partir d’un formulaire pour périphériques mobiles.
 * [Téléchargez et décompressez les ressources liées à cet article.](assets/offline-pdf-submission-assets.zip) Vous obtiendrez les éléments suivants :
-   * **offline-submission-profil.zip** - Ce package AEM contient le profil personnalisé qui vous permet de télécharger le fichier pdf interactif sur votre système de fichiers local. Déployez ce package sur votre instance de publication AEM.
-   * **xdp-form-and-workflow.zip** - Ce package AEM contient XDP, exemple de flux de travail, lanceur configuré sur le contenu de noeud/pdfSubmissions. Déployez ce package sur vos instances d’auteur et de publication AEM.
-   * **HandlePDFSubmission.HandlePDFSubmission.core-1.0-SNAPSHOT.jar** - Il s&#39;agit du lot AEM qui effectue la majeure partie du travail. Ce lot contient la servlet montée sur `/bin/startworkflow`. Cette servlet enregistre les données de formulaire envoyées sous le `/content/pdfsubmissions` noeud dans le référentiel AEM. Déployez ce lot sur vos instances d’auteur et de publication AEM.
+   * **offline-submission-profil.zip**  - Ce package AEM contient le profil personnalisé qui vous permet de télécharger le fichier pdf interactif sur votre système de fichiers local. Déployez ce package sur votre instance de publication AEM.
+   * **xdp-form-and-workflow.zip**  - Ce package AEM contient XDP, exemple de flux de travail, lanceur configuré sur le contenu de noeud/pdfSubmissions. Déployez ce package sur vos instances d’auteur et de publication AEM.
+   * **HandlePDFSubmission.HandlePDFSubmission.core-1.0-SNAPSHOT.jar**  - Il s&#39;agit du lot AEM qui effectue la majeure partie du travail. Ce lot contient la servlet montée sur `/bin/startworkflow`. Cette servlet enregistre les données de formulaire envoyées sous le noeud `/content/pdfsubmissions` dans le référentiel AEM. Déployez ce lot sur vos instances d’auteur et de publication AEM.
 * [Prévisualisation du formulaire mobile](http://localhost:4503/content/dam/formsanddocuments/testsubmision.xdp/jcr:content)
 * Renseignez plusieurs champs, puis cliquez sur le bouton de la barre d’outils pour télécharger le PDF interactif.
 * Renseignez le PDF téléchargé à l’aide d’Acrobat et cliquez sur le bouton Envoyer.
