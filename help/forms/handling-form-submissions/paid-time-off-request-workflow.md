@@ -27,7 +27,7 @@ Dans cet article, nous allons examiner un flux de travail simple utilisé pour d
 * L’administrateur ouvre le formulaire. L’administrateur ne doit pas pouvoir modifier les informations remplies par l’expéditeur.
 * La section Approbateur doit être visible pour l’approbateur (dans ce cas, il s’agit de l’utilisateur administrateur AEM).
 
-Pour accomplir cette exigence, nous utilisons un champ masqué appelé étape **** initiale dans le formulaire et sa valeur par défaut est Oui. Lorsque le formulaire est envoyé, la première étape du processus définit la valeur Non pour l’étape initiale. Le formulaire comporte des règles de fonctionnement pour masquer et afficher les sections appropriées en fonction de la valeur de l’étape initiale.
+Pour accomplir cette exigence, nous utilisons un champ masqué appelé **première étape** dans le formulaire et sa valeur par défaut est Oui. Lorsque le formulaire est envoyé, la première étape du processus définit la valeur de l&#39;étape initiale sur Non. Le formulaire comporte des règles de fonctionnement pour masquer et afficher les sections appropriées en fonction de la valeur de l’étape initiale.
 
 **Configurer le formulaire pour déclencher le processus AEM**
 
@@ -51,8 +51,8 @@ Pour tester ce processus sur votre système, suivez les étapes mentionnées ci-
 * [Téléchargement et déploiement de DevelopingWitheServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [Téléchargement et déploiement du lot OSGI personnalisé SetValue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)
 * [Importer les actifs liés à cet article dans AEM](assets/helpxworkflow.zip)
-* Ouvrez le formulaire [Demande de désactivation du délai](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Ouvrez le [Formulaire de demande de désactivation du temps](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 * Renseignez les détails et envoyez
-* Open the [inbox](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html). Une nouvelle tâche devrait être affectée. Ouvrez le formulaire. Les données de l’expéditeur doivent être en lecture seule et une nouvelle section d’approbateur doit être visible.
-* Explorez le modèle de [processus](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html)
+* Ouvrez la [boîte de réception](http://localhost:4502/mnt/overlay/cq/inbox/content/inbox.html). Une nouvelle tâche devrait être affectée. Ouvrez le formulaire. Les données de l’expéditeur doivent être en lecture seule et une nouvelle section d’approbateur doit être visible.
+* Explorez le [modèle de flux de travaux](http://localhost:4502/editor.html/conf/global/settings/workflow/models/helpxworkflow.html)
 * Explorez l’étape du processus. Il s’agit de l’étape qui définit la valeur de l’étape initiale sur Non.
