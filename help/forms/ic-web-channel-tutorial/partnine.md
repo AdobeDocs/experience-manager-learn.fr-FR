@@ -1,6 +1,6 @@
 ---
-title: ajouter le tableau au panneau de balance des comptes
-seo-title: ajouter le tableau au panneau de balance des comptes
+title: Ajouter le tableau au panneau de balance des comptes
+seo-title: Ajouter le tableau au panneau de balance des comptes
 description: Il s'agit de la partie 9 du didacticiel en plusieurs étapes pour créer votre premier document de communication interactif.Dans cette partie, nous allons ajouter un tableau au panneau Solde du compte.
 seo-description: Il s'agit de la partie 9 du didacticiel en plusieurs étapes pour créer votre premier document de communication interactif.Dans cette partie, nous allons ajouter un tableau au panneau Solde du compte.
 uuid: 8f268c73-c543-418d-b65e-5beaf9660e42
@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# ajouter le tableau au panneau de balance des comptes{#adding-table-to-account-balance-panel}
+# Ajouter la table au panneau d&#39;équilibrage de compte{#adding-table-to-account-balance-panel}
 
 Dans cette partie, nous allons ajouter un tableau au panneau Solde du compte.
 
