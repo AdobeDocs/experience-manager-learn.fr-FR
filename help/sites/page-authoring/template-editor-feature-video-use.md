@@ -27,15 +27,15 @@ Les modèles modifiables permettent aux auteurs spécialisés de créer et de me
 
 Les modèles modifiables sont la recommandation pour la création de nouvelles AEM Sites.
 
-**Expérience** de création cohérente : les améliorations apportées à la création AEM Sites sont transférées à l’édition de modèles, y compris le mode de mise en page intégré et le panneau Arborescence de contenu.
+**Expérience**  de création cohérente : les améliorations apportées à la création AEM Sites sont transférées vers l’édition de modèles, y compris le mode de mise en page intégré et le panneau Arborescence de contenu.
 
-**Configurations** de stratégie avancée - Ce qui suit illustre certaines configurations de stratégie avancées rendues disponibles avec des modèles modifiables :
+**Configurations**  de stratégie avancée - Ce qui suit illustre certaines configurations de stratégie avancées rendues disponibles avec des modèles modifiables :
 
-* **Conteneur** de mise en page : possibilité de configurer les composants autorisés, de gérer le mappage glisser-déposer des ressources et les colonnes Grille réactive.
-* **Composant** de texte : possibilité de configurer les modules externes de l’éditeur de texte enrichi avec une nouvelle interface utilisateur et de réutiliser les stratégies RTE entre les modèles.
-* **Composant** d&#39;image : possibilité d&#39;activer/désactiver des fonctionnalités telles que le recadrage, le téléchargement de fichiers sur ordinateur avec une nouvelle interface utilisateur et de réutiliser les stratégies d&#39;image dans tous les modèles.
+* **Conteneur**  de mise en page : possibilité de configurer les composants autorisés, de gérer le mappage glisser-déposer des ressources et les colonnes Grille réactive.
+* **Composant**  de texte : possibilité de configurer les modules externes de l’éditeur de texte enrichi avec une nouvelle interface utilisateur et de réutiliser les stratégies RTE entre les modèles.
+* **Composant**  d&#39;image : possibilité d&#39;activer/désactiver des fonctionnalités telles que le recadrage, le téléchargement de fichiers sur un ordinateur de bureau avec une nouvelle interface utilisateur et de réutiliser les stratégies d&#39;image dans tous les modèles.
 
-Les modèles modifiables se trouvent sous **Outils** `>` Général ****`>` **Modèles.**\
+Les modèles modifiables se trouvent sous **Outils** `>` **Général** `>` **Modèles**.\
 URL des modèles modifiables (instance d&#39;AEM locale) : [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 ## Ressources supplémentaires {#additional-resources}
