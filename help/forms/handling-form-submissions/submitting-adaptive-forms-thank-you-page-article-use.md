@@ -20,7 +20,7 @@ ht-degree: 5%
 ---
 
 
-# Envoi À La Page De Remerciements {#submitting-to-thank-you-page}
+# Envoyer à la page de remerciement {#submitting-to-thank-you-page}
 
 L’option Envoyer vers le point de terminaison REST transmet les données renseignées dans le formulaire à une page de confirmation configurée dans le cadre de la demande de GET HTTP. Vous pouvez ajouter le nom des champs à la requête. Le format de la requête est le suivant :
 
@@ -39,8 +39,8 @@ Vous pouvez également envoyer des données au point de terminaison externe par 
 
 Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-dessous :
 
-* Importez le fichier [d’actifs associé à cet article dans AEM à l’aide du gestionnaire de packages.](assets/submittingtorestendpoint.zip)
-* Pointez votre navigateur sur le formulaire de demande de [désactivation du délai.](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Importez le fichier [assets associé à cet article dans AEM à l’aide du gestionnaire de packages](assets/submittingtorestendpoint.zip).
+* Pointez votre navigateur sur le [Formulaire de demande de désactivation du délai](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 * Renseignez le champ requis et envoyez le formulaire.
 * Vous devriez obtenir la page de remerciement avec vos informations renseignées sur la page.
 
