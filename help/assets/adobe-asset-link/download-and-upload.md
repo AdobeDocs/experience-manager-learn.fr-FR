@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Téléchargement et téléchargement {#download-and-upload}
+# Télécharger et télécharger {#download-and-upload}
 
 Découvrez comment télécharger et télécharger des fichiers depuis et vers AEM Assets à l’aide du panneau Lien d’actif.
 
