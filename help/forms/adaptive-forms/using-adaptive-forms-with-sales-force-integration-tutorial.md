@@ -29,23 +29,23 @@ Cet article décrit le processus de création de sources de données avec Salesf
 Conditions préalables pour ce didacticiel :
 
 * Faites défiler cette page jusqu&#39;au bas de cette page et téléchargez le fichier swagger et enregistrez-le sur votre disque dur.
-* aem forms avec SSL activé
+* AEM Forms avec SSL activé
 
    * [Documentation officielle pour l’activation de SSL sur AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
    * [Documentation officielle pour l’activation de SSL sur AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
 * Vous devez disposer d&#39;un compte Salesforce.
-* Vous devez créer une application connectée. La documentation officielle de Salesforce pour la création de l&#39;application est répertoriée [ici](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
+* Vous devez créer une application connectée. Le formulaire de documentation officielle de Salesforce pour la création de l&#39;application est [ici](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
 * Fournir des étendues OAuth appropriées pour l’application (j’ai sélectionné toutes les étendues OAuth disponibles pour les tests)
 * Fournissez l’URL de rappel. Dans mon cas, l’URL de rappel était
 
    * Si vous utilisez **AEM Forms 6.3**, l’URL de rappel est https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. Dans cette en-tête d’URL créée, il y a le nom de mon modèle de données de formulaire.
 
-   * Si vous utilisez ** AEM Forms 6.4**, l’URL de rappel est [https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html](https://gbedekar-w7-1:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html)
+   * Si vous utilisez** AEM Forms 6.4**, l’URL de rappel est [https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html](https://gbedekar-w7-1:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html)
 
 Dans cet exemple gbedekar -w7-1:6443 est le nom de mon serveur et le port sur lequel AEM s&#39;exécute.
 
-Une fois que vous avez créé l’application connectée, notez le **Consumer key et la clé** secrète. Vous en aurez besoin lors de la création de la source de données en AEM Forms.
+Une fois que vous avez créé l’application connectée, notez la **clé de Consumer key et la clé secrète**. Vous en aurez besoin lors de la création de la source de données en AEM Forms.
 
 Maintenant que vous avez créé votre application connectée, vous devez créer un fichier swagger pour les opérations que vous devez effectuer dans Salesforce. Un exemple de fichier swagger est inclus dans les ressources téléchargeables. Ce fichier swagger vous permet de créer un objet &quot;Lead&quot; lors de l’envoi d’un formulaire adaptatif. Explorez ce fichier swagger.
 
@@ -70,14 +70,14 @@ L’étape suivante consiste à créer une source de données en AEM Forms. Suiv
 * Sélectionnez &quot;Fichier&quot; comme option pour votre fichier source swagger. Accédez au fichier que vous avez téléchargé précédemment
 * Sélectionnez le type d’authentification OAuth2.0.
 * Fournissez les valeurs ClientID et Client Secret.
-* L&#39;URL OAuth est - **https://login.salesforce.com/services/oauth2/authorize**
+* L’URL OAuth est - **https://login.salesforce.com/services/oauth2/authorize**
 * Actualiser l’URL du jeton - **https://na5.salesforce.com/services/oauth2/token**
 * **Url Du Jeu D&#39;Accès : https://na5.salesforce.com/services/oauth2/token**
-* Portée de l&#39;autorisation : ** api chatter_api id complet openid refresh_token visualforce web**
+* Portée de l&#39;autorisation : ** api   identifiant complet de chatter_api   openid   refresh_token visualforce web**
 * Gestionnaire d&#39;authentification : Responsable d&#39;autorisation
 * Cliquez sur &quot;Se connecter à OAUTH&quot;.Si tout se passe bien, vous ne devriez pas voir d&#39;erreurs.
 
-Une fois que vous avez créé votre modèle de données de formulaire à l’aide de Salesforce, vous pouvez créer l’intégration des données de formulaire à l’aide de la source de données que vous venez de créer. La documentation officielle pour la création de l’intégration des données de formulaire est [ici](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
+Une fois que vous avez créé votre modèle de données de formulaire à l’aide de Salesforce, vous pouvez créer l’intégration des données de formulaire à l’aide de la source de données que vous venez de créer. La documentation officielle relative à la création de l’intégration des données de formulaire est [ici](https://helpx.adobe.com/aem-forms/6-3/data-integration.html).
 
 Assurez-vous de configurer le modèle de données de formulaire pour inclure le service de POST afin de créer un objet Lead dans SFDC.
 
@@ -102,9 +102,9 @@ Après avoir créé le modèle de données de formulaire, vous pouvez créer un 
    * Recherchez et sélectionnez le fichier swagger que vous avez téléchargé à l’étape précédente.
    * Type d&#39;authentification : OAuth 2.0. Spécifiez les valeurs suivantes :
    * Fournissez les valeurs ClientID et Client Secret.
-   * L&#39;URL OAuth est - **https://login.salesforce.com/services/oauth2/authorize**
+   * L’URL OAuth est - **https://login.salesforce.com/services/oauth2/authorize**
    * Actualiser l’URL du jeton - **https://na5.salesforce.com/services/oauth2/token**
-   * jeton d&#39;accès **Url - https://na5.salesforce.com/services/oauth2/token**
+   * jeton d&#39;accès Ur **l - https://na5.salesforce.com/services/oauth2/token**
    * Portée de l&#39;autorisation : ** api chatter_api id complet openid refresh_token visualforce web**
    * Gestionnaire d&#39;authentification : Responsable d&#39;autorisation
    * Cliquez sur le bouton &quot;Se connecter à OAuth&quot;. Si vous constatez des erreurs, veuillez passer en revue les étapes précédentes pour vous assurer que toutes les informations ont été saisies avec précision.
