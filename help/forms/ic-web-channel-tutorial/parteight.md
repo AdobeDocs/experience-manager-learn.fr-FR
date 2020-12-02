@@ -30,9 +30,9 @@ Ouvrez le dossier 401KStatement.
 
 Ouvrez le 401KStatement en mode d&#39;édition.
 
-aem forms 6.4 a rendu très simple l&#39;affichage de données à l&#39;aide de différents types de graphiques. Nous allons utiliser un graphique linéaire pour afficher les soldes par année.
+AEM Forms 6.4 a rendu très simple l&#39;affichage de données à l&#39;aide de différents types de graphiques. Nous allons utiliser un graphique linéaire pour afficher les soldes par année.
 
-Appuyez sur la zone cible de progression **du** compte située à droite et cliquez sur l’icône &quot;+&quot; pour ouvrir la boîte de dialogue d’insertion de composant.
+Appuyez sur la zone de cible **Progrès du compte** située à droite et cliquez sur l&#39;icône &quot;+&quot; pour afficher la boîte de dialogue Insérer le composant.
 
 Sélectionnez Graphique pour insérer le composant de graphique.
 
