@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# Create Interactive Communication For Print Channel {#create-interactive-communication-for-print-channel}
+# Créer une communication interactive pour le Canal d&#39;impression {#create-interactive-communication-for-print-channel}
 
 Dans cette partie, le Document de communication interactive pour le canal d&#39;impression est créé.
 
