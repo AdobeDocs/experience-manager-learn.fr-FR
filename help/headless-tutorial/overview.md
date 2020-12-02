@@ -1,33 +1,58 @@
 ---
-title: Prise en main d’AEM sans affichage
-description: Tutoriel complet illustrant comment créer et exposer du contenu à l’aide d’AEM sans affichage.
+title: aem didacticiels sans en-tête
+description: Ensemble de didacticiels sur l’utilisation de Adobe Experience Manager en tant que CMS sans en-tête.
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 10%
+source-wordcount: '364'
+ht-degree: 5%
 
 ---
 
 
-# Prise en main d’AEM sans affichage
+# aem didacticiels sans en-tête
 
-Didacticiel de bout en bout illustrant comment créer et exposer du contenu à l’aide d’AEM et consommé par une application mobile native, dans un scénario CMS sans tête.
+Adobe Experience Manager propose plusieurs options pour définir des points de terminaison sans en-tête et diffuser son contenu au format JSON. Utilisez des didacticiels pratiques pour découvrir comment utiliser les différentes options et choisir ce qui vous convient.
 
->[!VIDEO](https://video.tv.adobe.com/v/28315/?quality=12&learn=on)
+## Didacticiel sur les API AEM GraphQL
 
-Ce didacticiel explique comment AEM Content Services peut être utilisé pour alimenter l’expérience d’une application mobile qui affiche des informations sur le Événement (musique, performances, art, etc.). c&#39;est l&#39;équipe du WKND qui en assure la gestion.
+>[!CAUTION]
+>
+> L’AEM API GraphQL pour la Diffusion de fragments de contenu sera publiée au début de 2021.
+> La documentation correspondante est disponible à des fins de prévisualisation.
 
-Ce didacticiel porte sur les sujets suivants :
+aem API GraphQL pour les fragments de contenu
+prend en charge les scénarios CMS sans tête dans lesquels les applications clientes externes effectuent le rendu d’expériences à l’aide de contenu géré dans AEM.
 
-* Création de contenu représentant un Événement à l’aide de fragments de contenu
-* Définition d’un point de terminaison AEM Content Services à l’aide des modèles et pages des sites AEM qui exposent les données de Événement au format JSON
-* Découvrez comment AEM composants principaux de la gestion de contenu Web peuvent être utilisés pour permettre aux spécialistes du marketing de créer des points de fin JSON.
-* Consommer AEM JSON Content Services à partir d’une application mobile
-   * L’utilisation d’Android est due au fait qu’il comporte un émulateur multiplate-forme que tous les utilisateurs (Windows, macOS et Linux) de ce didacticiel peuvent utiliser pour exécuter l’application native.
+Une API de diffusion de contenu moderne est la clé de l&#39;efficacité et des performances des applications frontales basées sur JavaScript. L’utilisation d’une API REST présente des défis :
 
-## Projet GitHub
+* Nombre important de requêtes pour récupérer un objet à la fois
+* Souvent, le contenu est &quot;trop diffusé&quot;, ce qui signifie que l’application reçoit plus que ce dont elle a besoin.
 
-Le code source et les packages de contenu sont disponibles sur le [AEM Guides - WKND Mobile GitHub Project](https://github.com/adobe/aem-guides-wknd-mobile).
+Pour surmonter ces défis, GraphQL fournit une API basée sur les requêtes qui permet aux clients de requête uniquement le contenu dont ils ont besoin et de recevoir un appel d&#39;API unique.
 
-Si vous rencontrez un problème avec le tutoriel ou le code, veuillez laisser un [problème GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
+* Découvrez comment utiliser AEM API GraphQL en suivant le didacticiel [Prise en main des API GraphQL AEM](./graphql/overview.md)
+
+## Didacticiel sur AEM Content Services
+
+aem Content Services utilise les pages AEM traditionnelles pour composer des points de terminaison d’API REST sans en-tête et les composants AEM définissent, ou référencent, le contenu à exposer sur ces points de terminaison.
+
+aem Content Services permet les mêmes abstractions de contenu utilisées pour la création de pages Web dans AEM Sites, pour définir le contenu et les schémas de ces API HTTP. L’utilisation de Pages AEM et de Composants AEM permet aux spécialistes du marketing de composer et de mettre à jour rapidement des API JSON flexibles capables d’alimenter n’importe quelle application.
+
+* Découvrez comment utiliser AEM Content Services en suivant le didacticiel [Prise en main d’AEM Content Services](./content-services/overview.md)
+
+## aem GraphQL et AEM Content Services
+
+|  | aem API GraphQL | aem Content Services |
+|--------------------------------|:-----------------|:---------------------|
+| Définition du schéma | Modèles de fragments de contenu structuré | Composants AEM |
+| Contenu | Fragments de contenu | Composants AEM |
+| Détection de contenu | Par requête GraphQL | Par page AEM |
+| Format de diffusion | JSON GraphQL | aem ComponentExporter JSON |
+
+## Autres didacticiels utiles
+
+Voici d&#39;autres didacticiels AEM relatifs aux concepts sans tête :
+
+* [Prise en main de l’Éditeur AEM SPA et d’Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [Prise en main de l’Éditeur AEM SPA et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
