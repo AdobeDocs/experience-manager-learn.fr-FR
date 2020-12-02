@@ -26,5 +26,5 @@ Une brève introduction au Nettoyage de la révision en ligne qui réduit le bes
 
 * [AEM [!DNL JMX MBean - SegmentRevisionGarbageCollection]](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+revision+garbage+collection%2Ctype%3DSegmentRevisionGarbageCollection)
 
-* [aem [!DNL OSGi Configuration] - Service NodeStore [!UICONTROL des segments en chêne]](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService)
+* [aem [!DNL OSGi Configuration]  - Service NodeStore  [!UICONTROL des segments en chêne]](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService)
 
