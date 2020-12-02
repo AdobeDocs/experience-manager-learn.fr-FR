@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Présentation de la copie de langue {#introduction-language-copy}
+# Introduction à la copie de langue {#introduction-language-copy}
 
 Bénéficiez d&#39;une présentation de la création d&#39;un site multilingue à l&#39;aide de la copie de langue en AEM Sites.
 
