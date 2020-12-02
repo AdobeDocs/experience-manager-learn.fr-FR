@@ -27,7 +27,7 @@ A compter de la version AEM Forms 6.5, nous pouvons désormais créer des modèl
 Pour concevoir un tel flux de travail, effectuez les étapes suivantes :
 
 1. Connexion à AEM
-1. Pointez votre navigateur sur le modèle de [processus.](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
+1. Pointez votre navigateur sur [modèle de flux de travaux](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html).
 1. Cliquez sur Créer | Créer un modèle pour Ajouter un modèle de processus
 1. Indiquez le nom et le titre appropriés au modèle de processus, puis cliquez sur Terminé.
 1. Ouvrez le nouveau modèle en mode d’édition.
@@ -39,7 +39,8 @@ Pour concevoir un tel flux de travail, effectuez les étapes suivantes :
 Il existe 3 manières de spécifier le chemin du formulaire
 
 1. Disponible à un chemin absolu : cela signifie que le processus sera étroitement associé au formulaire adaptatif. Ce n&#39;est pas ce que nous voulons ici.
-1. **Soumis au processus** : cela signifie que lorsque le formulaire adaptatif est envoyé, le moteur de workflow extrait le nom du formulaire à partir des données envoyées. Il s’agit de l’option qui doit être sélectionnée.
-1. Disponible dans un chemin d&#39;accès dans une variable : cela signifie que le formulaire adaptatif sera sélectionné dans la variable de flux de travail. La capture d&#39;écran suivante vous montre l&#39;option correcte que vous devez choisir pour le processus de découplage du formulaire adaptatif.
+1. **Soumis au processus**  : cela signifie que lorsque le formulaire adaptatif est envoyé, le moteur de workflow extrait le nom du formulaire à partir des données envoyées. Il s’agit de l’option qui doit être sélectionnée.
+1. Disponible à un chemin dans une variable : cela signifie que le formulaire adaptatif sera récupéré dans la variable de flux de travail.
+La capture d’écran suivante vous montre l’option appropriée que vous devez choisir pour le processus de découplage du formulaire adaptatif.
 
 ![workflow, modèle](assets/workflomodel.PNG)
