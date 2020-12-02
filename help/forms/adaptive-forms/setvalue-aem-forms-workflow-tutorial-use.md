@@ -44,18 +44,18 @@ Pour déployer les ressources sur votre système local, procédez comme suit :
 
 * [Déploiement du lot Developing withserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Déployez l’assemblage](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)d’exemples. Il s’agit du lot OSGI personnalisé qui vous permet de définir les valeurs d’un élément dans les données xml envoyées.
+* [Déployez l’assemblage](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) d’exemples. Il s’agit du lot OSGI personnalisé qui vous permet de définir les valeurs d’un élément dans les données xml envoyées.
 
 * [Téléchargement et extraction du contenu du fichier zip](assets/setvalueassets.zip)
-* Pointez votre navigateur sur le gestionnaire de [packages.](http://localhost:4502/crx/packmgr/index.jsp)
+* Pointez votre navigateur sur [gestionnaire de packages](http://localhost:4502/crx/packmgr/index.jsp).
 * Importez et installez le fichier setValueWorkflow.zip. Il s’agit de l’exemple de modèle de processus.
-* Pointez votre navigateur sur [Forms et Documents.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Pointez votre navigateur sur [Forms et Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 * Cliquez sur Créer | Téléchargement de fichier
 * Téléchargement du fichier TimeOfRequestForm.zip
-* Ouvrez le [formulaire TimeOffRequestform.](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
+* Ouvrez [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * Renseignez les 3 champs obligatoires et envoyez
 * Connectez-vous en tant qu’administrateur à l’AEM (si vous ne l’avez pas déjà fait).
-* Accéder à [&quot;AEM boîte de réception&quot;](http://localhost:4502/aem/inbox)
+* Accédez à [&quot;AEM Boîte de réception&quot;](http://localhost:4502/aem/inbox)
 * Ouvrez le formulaire &quot;Demande de désactivation du délai de révision&quot;.
 * Les champs du premier panneau sont désactivés. En effet, le formulaire est ouvert par le réviseur. De plus, notez que le groupe d’experts approuve ou rejette la demande est maintenant visible.
 
