@@ -32,7 +32,7 @@ Dans le cadre de cet article, nous vous montrerons les cas d&#39;utilisation sui
 1. Lors de l’envoi du formulaire, AEM processus est déclenché.
 1. Le processus AEM utilise le composant Envoyer un courrier électronique pour envoyer un courrier électronique avec le DE en tant que pièce jointe.
 
-Avant d’utiliser l’étape Envoyer un courriel, assurez-vous de configurer le service de messagerie Day CQ à partir de [configMgr](http://localhost:4502/system/console/configMgr). Indiquez les valeurs propres à votre environnement.
+Avant d’utiliser l’étape Envoyer un courrier électronique, assurez-vous de configurer le service Day CQ Mail Service à partir de [configMgr](http://localhost:4502/system/console/configMgr). Indiquez les valeurs propres à votre environnement.
 
 ![Configuration du service de messagerie Day CQ](assets/mailservice.png)
 
@@ -46,13 +46,13 @@ Pour que l&#39;exemple s&#39;exécute sur votre système, procédez comme suit :
 
 1. [Déploiement du lot Developing withserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-1. [Télécharger et installer le](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)lot setvalueCe lot contient le code permettant de créer les propriétés de métadonnées dans le cadre de l&#39;étape de processus du flux de travail.
+1. [Télécharger et installer le ](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)lot setvalueCe lot contient le code permettant de créer les propriétés de métadonnées dans le cadre de l&#39;étape de processus du flux de travail.
 1. [Configuration du service de messagerie Day CQ](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html)
 1. [Importer et installer les actifs associés à cet article à l’aide du gestionnaire de packages dans CRX](assets/emaildoraemformskt.zip)
-1. Lancez le formulaire [](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)adaptatif. Renseignez les champs obligatoires et envoyez-les.
+1. Lancez le [formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled). Renseignez les champs obligatoires et envoyez-les.
 1. Vous devez recevoir un e-mail avec DocumentOfRecord en tant que pièce jointe.
 
-Explorez le modèle de [processus](http://localhost:4502/editor.html/conf/global/settings/workflow/models/emaildor.html)
+Explorez le [modèle de flux de travaux](http://localhost:4502/editor.html/conf/global/settings/workflow/models/emaildor.html)
 
 Examinez l’étape de processus du processus. Le code personnalisé associé à l&#39;étape du processus crée des noms de propriété de métadonnées et définit ses valeurs à partir des données envoyées. Ces valeurs sont ensuite utilisées par le composant d&#39;envoi de courrier électronique.
 
@@ -60,5 +60,6 @@ Examinez l’étape de processus du processus. Le code personnalisé associé à
 >
 >Dans AEM Forms 6.5 et versions ultérieures, vous n’avez pas besoin de ce code personnalisé pour créer des propriétés de métadonnées. Utilisez la fonctionnalité de variables dans AEM Workflow.
 
-Assurez-vous que l’onglet Pièces jointes du composant Envoyer un courrier électronique est configuré selon la capture d’écran ci-dessous![](assets/sendemailcomponentconfigure.jpg)Onglet Envoyer les pièces jointes du courrier électroniqueLa valeur &quot;DOR.pdf&quot; doit correspondre à la valeur spécifiée dans le chemin d’accès au Document d’enregistrement spécifié dans les options d’envoi de votre formulaire adaptatif.
+Assurez-vous que l’onglet Pièces jointes du composant Envoyer un courrier électronique est configuré conformément à la capture d’écran ci-dessous.
+![Onglet Envoyer les pièces jointes du courrier électronique](assets/sendemailcomponentconfigure.jpg)La valeur &quot;DOR.pdf&quot; doit correspondre à la valeur spécifiée dans le chemin du Document d’enregistrement spécifié dans les options d’envoi de votre formulaire adaptatif.
 
