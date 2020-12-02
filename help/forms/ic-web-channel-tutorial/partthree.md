@@ -34,6 +34,6 @@ Le modèle de données de formulaire dépend d’une source de données correcte
 
 Modèle de données de formulaire est la base de toutes vos communications interactives. L&#39;opération Get/Read du modèle de données de formulaire récupère les données de votre source de données principale et est utilisée pour remplir le document de communications interactives.
 
-Pour plus d&#39;informations sur la configuration des sources de données, veuillez suivre ce [lien.&quot;](parttwo.md)
+Pour plus d&#39;informations sur la configuration des sources de données, veuillez suivre ce [lien`](parttwo.md)
 
 Une fois que vous avez créé un modèle de données de formulaire, vous pouvez l’utiliser comme base pour créer des fragments de document et des Documents de communication interactive.
