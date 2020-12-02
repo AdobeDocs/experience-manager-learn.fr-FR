@@ -1,5 +1,5 @@
 ---
-title: adobes utilisateurs et AEM IMS
+title: Adobes utilisateurs et AEM IMS
 description: Les utilisateurs nécessitant l’accès au service Auteur AEM sont gérés en tant qu’utilisateurs IMS Adobe dans le Admin Console Adobe. Découvrez ce que sont les utilisateurs Adobes du SGI et comment ils sont accédés et gérés en Admin Console.
 feature: users-and-groups
 topics: authentication
@@ -18,9 +18,9 @@ ht-degree: 12%
 ---
 
 
-# adobes utilisateurs IMS
+# Adobes utilisateurs IMS
 
-Les utilisateurs nécessitant l’accès au service Auteur AEM sont gérés en tant qu’utilisateurs [IMS](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html) Adobe dans le Admin Console [](https://adminconsole.adobe.com)Adobe. Découvrez ce que sont les utilisateurs Adobes du SGI et comment ils sont accédés et gérés en Admin Console.
+Les utilisateurs nécessitant l’accès au service Auteur AEM sont gérés en tant qu’[utilisateurs IMS d’Adobe](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html) dans [Admin Console d’Adobe](https://adminconsole.adobe.com). Découvrez ce que sont les utilisateurs Adobes du SGI et comment ils sont accédés et gérés en Admin Console.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39149/?quality=12&learn=on)
 
