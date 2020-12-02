@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Détermination de la structure de dossiers et de la convention d’attribution de noms de fichiers {#folder-structure-filenaming}
+# Détermination de la structure de votre dossier et de la convention d&#39;appellation des fichiers {#folder-structure-filenaming}
 
 Avant d’accéder au contenu et de le télécharger par début, il est recommandé de tenir compte de la structure de dossiers que vous utiliserez et en particulier de la convention d’affectation des noms de fichier. Cela vous fera sans doute gagner du temps et vous obligera à refaire des tâches plus tard. Il est préférable de coordonner ces décisions entre tous les groupes.
 
@@ -30,7 +30,7 @@ La hiérarchie des dossiers est importante pour vous et votre société à des f
 
 Le nombre de fichiers ou de dossiers à stocker dans chaque dossier est une autre considération importante. Si de nombreux fichiers sont stockés dans un dossier, les performances se dégradent lors de l’affichage des fichiers dans Contenu multimédia dynamique classique. Ne stockez pas des milliers de fichiers dans un dossier. Développez plutôt une hiérarchie organisationnelle contenant moins de 500 fichiers ou dossiers au sein d’une branche donnée de votre hiérarchie. Il ne s’agit pas d’une exigence stricte, mais elle permet de maintenir des temps de réponse acceptables lors de l’affichage ou de la recherche de ressources. En effet, la recommandation consiste à créer des hiérarchies larges et peu profondes plutôt que étroites et profondes.
 
-La méthode la plus simple pour créer vos dossiers consiste à télécharger l’intégralité de votre structure de dossiers à l’aide du protocole FTP et à activer l’option **Inclure les sous-dossiers**. Cette option entraîne la recréation de la structure de dossiers sur le site FTP dans Dynamic Media Classic.
+Le moyen le plus simple de créer vos dossiers consiste à télécharger la structure complète de dossiers à l’aide du protocole FTP et à activer l’option **Inclure les sous-dossiers**. Cette option entraîne la recréation de la structure de dossiers sur le site FTP dans Dynamic Media Classic.
 
 Nous voulons que vous preniez en compte la structure de vos dossiers avant de début télécharger tous vos fichiers, car il est beaucoup plus facile d’organiser et de gérer vos fichiers et dossiers localement sur votre ordinateur que dans Dynamic Media Classic. Par exemple, vous pouvez uniquement faire glisser et déposer des fichiers, mais pas des dossiers entiers, dans Contenu multimédia dynamique classique.
 
@@ -46,7 +46,7 @@ Pour votre stratégie de dossiers, tenez compte de ce qui a du sens pour votre e
 
 La manière dont vous choisissez de nommer vos fichiers est peut-être la décision la plus importante que vous prendrez au sujet de Contenu multimédia dynamique classique. Cela est dû au fait que tous les fichiers de Dynamic Media Classic doivent avoir des noms uniques, quel que soit l’emplacement où ils sont stockés dans le compte.
 
-Toutes les URL et transactions dans Dynamic Media Classic sont gérées par un ID de fichier, qui est l’identifiant unique d’un fichier dans la base de données. Lorsque vous téléchargez un fichier, l’ID de fichier est créé en prenant le nom de fichier et en supprimant l’extension. Par exemple, _896649.jpg_ obtient l’ _ID de ressource 896649_.
+Toutes les URL et transactions dans Dynamic Media Classic sont gérées par un ID de fichier, qui est l’identifiant unique d’un fichier dans la base de données. Lorsque vous téléchargez un fichier, l’ID de fichier est créé en prenant le nom de fichier et en supprimant l’extension. Par exemple, _896649.jpg_ obtient l’actif _ID 896649_.
 
 Règles relatives aux ID de fichier :
 
@@ -78,7 +78,7 @@ C&#39;est un système très simple, et bon si vous avez des besoins modestes. Ce
 | AA123 | Alt vues | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
 |  | Vues colorées | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
 |  | Échantillons | AA123_BLU_SW.tif | AA123_BLU_SW |
-|  | Visionneuse d’images ou de série d’échantillons |  | AA123 ou AA123_SET | -- |
+|  | Visionneuse d’images ou de série d’échantillons |  | AA123 ou AA123_SET | — |
 
 Lorsqu’il s’agit de collections définies, telles que les visionneuses d’images et les séries d’échantillons, la visionneuse elle-même doit également porter un nom unique. Dans ce cas, l’ensemble peut recevoir le SKU de base comme nom, ou le SKU avec une extension &quot;_SET&quot;.
 
