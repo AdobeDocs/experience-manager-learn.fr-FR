@@ -22,13 +22,13 @@ ht-degree: 4%
 
 # Utilisation des API de géolocalisation dans Forms adaptatif{#using-geolocation-api-s-in-adaptive-forms}
 
-Consultez la page d&#39;exemples [](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
+Consultez la page [Exemples d&#39;AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
 
 Dans cet article, nous allons examiner l&#39;utilisation de l&#39;API de géolocalisation de Google pour remplir les champs d&#39;un formulaire adaptatif. Ce cas d’utilisation est généralement utilisé lorsque vous souhaitez remplir les champs d’adresse actuels d’un formulaire.
 
 Les étapes suivantes ont été suivies pour utiliser l’API de géolocalisation dans Forms adaptatif.
 
-1. [Récupérez la clé](https://developers.google.com/maps/documentation/javascript/get-api-key) API de Google pour utiliser la plate-forme Google Maps. Vous pouvez obtenir une clé d&#39;évaluation valide pendant 1 an.
+1. [Récupérez un ](https://developers.google.com/maps/documentation/javascript/get-api-key) Keyboard API de Google pour utiliser la plate-forme Google Maps. Vous pouvez obtenir une clé d&#39;évaluation valide pendant 1 an.
 
 1. Un fragment de formulaire adaptatif a été créé avec des champs pour contenir l’adresse actuelle.
 
@@ -102,7 +102,7 @@ Pour activer cette fonctionnalité sur votre serveur, suivez les étapes ci-apr�
 * Installez et début le serveur AEM Forms.
 
 >!![NOTE] Cette fonctionnalité a été testée sur AEM Forms 6.3 et versions ultérieures.
-* [Obtenez la clé](https://developers.google.com/maps/documentation/javascript/get-api-key)API Google.
+* [Obtenez la clé](https://developers.google.com/maps/documentation/javascript/get-api-key) API Google.
 * [Importez les actifs liés à cet article dans AEM.](assets/geolocationapi.zip)
 * [Ouvrez le fragment de formulaire adaptatif en mode d’édition.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * Ouvrez l’éditeur de règles pour le composant Choix d’image.
