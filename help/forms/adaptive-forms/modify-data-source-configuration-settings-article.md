@@ -30,5 +30,7 @@ Les captures d’écran ci-dessous montrent les paramètres de configuration de 
 
 **Configuration de la source de données dans AEM 6.4**
 
-![64Configuration](assets/64release.gif)**de source de données modifiable dans la configuration de source de données AEM 6.5 et ultérieure**![65Configuration de source de données](assets/modifiabledatasource.jfif)
+![64Configuration de ](assets/64release.gif)
+**DataSourceConfiguration de source de données modifiable dans AEM configuration de DataSource 6.5 et ultérieure**
+![65Configuration de DataSource](assets/modifiabledatasource.jfif)
 
