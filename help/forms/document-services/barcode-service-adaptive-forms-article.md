@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Service De Codes À Barres Avec Forms Adaptatif{#barcode-service-with-adaptive-forms}
+# Service De Codes À Barres Avec Forms Adaptative{#barcode-service-with-adaptive-forms}
 
 Cet article montre l&#39;utilisation du service de codes à barres pour renseigner le formulaire adaptatif. Le cas d’utilisation est le suivant :
 
@@ -31,7 +31,7 @@ Cet article montre l&#39;utilisation du service de codes à barres pour renseign
 
 Le code suivant décode le code à barres et renseigne un objet JSON avec les valeurs décodées. La servlet renvoie ensuite l’objet JSON dans sa réponse à l’application appelante.
 
-Vous pouvez voir cette fonctionnalité en direct, consultez le portail [](https://forms.enablementadobe.com/content/samples/samples.html?query=0) exemples et recherchez la démonstration du service Barcode.
+Vous pouvez voir cette fonctionnalité en direct, consultez le [portail d’exemples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) et recherchez la démonstration du service de codes à barres.
 
 ```java
 public JSONObject extractBarCode(Document pdfDocument) {
@@ -146,11 +146,11 @@ Ligne 23 - Appelez la méthode extractBarCode de Document Services pour que l’
 
 Pour exécuter cette opération sur votre système, suivez les étapes ci-après.
 
-1. [Téléchargement de BarcodeService.zip](assets/barcodeservice.zip) et importation dans AEM à l’aide du gestionnaire de packages
+1. [Téléchargement de BarcodeService.](assets/barcodeservice.zip) zipet importation dans AEM à l’aide du gestionnaire de packages
 1. [Téléchargement et installation de l’offre groupée Document Services personnalisée](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 1. [Téléchargement et installation du lot DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Téléchargement de l’exemple de formulaire PDF](assets/barcode.pdf)
-1. Pointez votre navigateur sur l’ [exemple de formulaire adaptatif.](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
+1. Pointez votre navigateur sur l’[exemple de formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. Télécharger l’exemple de PDF fourni
 1. Vous devriez voir les formulaires renseignés avec les données
 
