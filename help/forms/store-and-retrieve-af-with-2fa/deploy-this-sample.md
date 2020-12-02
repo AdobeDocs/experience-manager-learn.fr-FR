@@ -29,7 +29,7 @@ Pour que ce cas d&#39;utilisation fonctionne sur votre système, suivez les inst
 
 ## Créer une base de données
 
-Cet exemple utilise la base de données MySQL pour stocker les données de formulaire adaptatif. Vous devez créer le schéma de [base de données en important le fichier](assets/data-base-schema.sql) de schéma dans MySQL Workbench.
+Cet exemple utilise la base de données MySQL pour stocker les données de formulaire adaptatif. Vous devez créer le schéma de base de données [en important le fichier de schéma](assets/data-base-schema.sql) dans MySQL Workbench.
 
 ## Créer une source de données
 
@@ -41,29 +41,31 @@ Le modèle de données de formulaire doit être créé en fonction de cette sour
 
 ## Créer un compte développeur avec nexmo
 
-Créez un compte développeur avec [Nexmo](https://dashboard.nexmo.com/) pour l&#39;envoi et la vérification de codes OTP. Notez la clé d&#39;API et la clé secrète d&#39;API. La source de données et le modèle de données de formulaire ont déjà été créés pour vous par rapport à ce service et sont inclus avec les ressources mentionnées à l’étape précédente.
+Créez un compte de développeur avec [Nexmo](https://dashboard.nexmo.com/) pour l&#39;envoi et la vérification des codes OTP. Notez la clé d&#39;API et la clé secrète d&#39;API. La source de données et le modèle de données de formulaire ont déjà été créés pour vous par rapport à ce service et sont inclus avec les ressources mentionnées à l’étape précédente.
 
 ## Déploiement des lots OSGi suivants
 
-Déployez le lot contenant le [code pour stocker et récupérer les données de la base de données](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)Déployez le lot [](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)DevelopingWithServiceUser.
+Déployez le lot contenant le code [pour stocker et récupérer les données de la base de données](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar).
+Déployez le [lot DevelopingWithServiceUser](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
 
 ## Déploiement de la bibliothèque cliente
 
-L’exemple utilise deux bibliothèques clientes. Importez ces bibliothèques [](assets/client-libraries.zip) clientes dans AEM.
+L’exemple utilise deux bibliothèques clientes. Importez ces [bibliothèques clientes](assets/client-libraries.zip) dans AEM.
 
 ## Importation du modèle de formulaire adaptatif personnalisé
 
-Les exemples de formulaires utilisés dans cette démonstration sont basés sur un modèle personnalisé. Importer le modèle [personnalisé dans AEM](assets/custom-template-with-page-component.zip)
+Les exemples de formulaires utilisés dans cette démonstration sont basés sur un modèle personnalisé. Importez le modèle personnalisé [dans AEM](assets/custom-template-with-page-component.zip)
 
 ## Importation des exemples de formulaires adaptatifs
 
 Les deux formulaires qui constituent cet exemple doivent être importés dans AEM. Les exemples de formulaires peuvent être [téléchargés ici](assets/sample-forms.zip)
 
-Open the [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) in edit mode. Spécifiez les valeurs de clé d’API et de clé secrète d’API dans les champs appropriés du formulaire adaptatif.
+Ouvrez le [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) en mode d’édition. Spécifiez les valeurs de clé d’API et de clé secrète d’API dans les champs appropriés du formulaire adaptatif.
 
 ## Test de la solution
 
-Prévisualisation du [StoreAFWithAttachments](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)Entrez votre numéro de mobile, y compris le code du pays, renseignez les détails de votre utilisateur et ajoutez des pièces jointes. Cliquez sur le bouton &quot;Enregistrer et quitter&quot; pour enregistrer le formulaire adaptatif et ses pièces jointes.
+Prévisualisation de [StoreAFWithAttachments](http://localhost:4502/content/dam/formsanddocuments/storeafwithattachments/jcr:content?wcmmode=disabled)
+Saisissez votre numéro de mobile, y compris le code du pays, renseignez les informations relatives à votre utilisateur et ajoutez des pièces jointes. Cliquez sur le bouton &quot;Enregistrer et quitter&quot; pour enregistrer le formulaire adaptatif et ses pièces jointes.
 
 
 ## Démonstration du cas d&#39;utilisation
