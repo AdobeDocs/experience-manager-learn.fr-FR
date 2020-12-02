@@ -29,7 +29,7 @@ Dans cet article, nous examinerons ce qui suit :
 * Output Service - Ce service est généralement utilisé pour fusionner des données xml avec un modèle xdp ou un fichier pdf afin de générer un fichier pdf aplati.
 * FormsService - Il s’agit d’un service très polyvalent qui vous permet d’exporter/d’importer des données de et dans un fichier PDF.
 
-L’API javadoc officielle pour AEM Forms est répertoriée [ici.](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+L’API javadoc officielle pour AEM Forms est répertoriée [ici](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 Le fragment de code suivant exporte les données du fichier PDF.
 
@@ -62,15 +62,21 @@ La ligne 6 exporte les xmlData du fichier PDF.
 1. Suivez les étapes mentionnées ci-dessous pour placer sur la liste autorisée les chemins mentionnés ci-dessus.
 1. [Connexion à configMgr](http://localhost:4502/system/console/configMgr)
 1. Rechercher un filtre CSRF Granite Adobe
-1. ajoutez les 3 chemins suivants dans les sections exclues et enregistrez
+1. Ajoutez les 3 chemins suivants dans les sections exclues et enregistrez
 1. /content/AemFormsSamples/mergedata
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
 1. Rechercher &quot;Sling Parrain filter&quot;
-1. Cochez la case &quot;Autoriser les champs vides&quot;. (Ce paramètre doit être utilisé à des fins de test uniquement) Il existe plusieurs méthodes pour tester l’exemple de code. Le plus rapide et le plus simple est d&#39;utiliser l&#39;application Postman. Postman vous permet d&#39;envoyer des demandes POST à votre serveur. Installez l’application Postman sur votre système.
+1. Cochez la case &quot;Autoriser les champs vides&quot;. (Ce paramètre doit uniquement être utilisé à des fins de test)
+Il existe plusieurs méthodes pour tester l’exemple de code. Le plus rapide et le plus simple est d&#39;utiliser l&#39;application Postman. Postman vous permet d&#39;envoyer des demandes POST à votre serveur. Installez l’application Postman sur votre système.
 Lancez l’application et saisissez l’URL suivante pour tester l’API d’exportation des données.
 
-Assurez-vous d&#39;avoir sélectionné &quot;POST&quot; dans la liste déroulante http://localhost:4502/content/AemFormsSamples/exportdata.htmlAssurez-vous de spécifier &quot;Autorisation&quot; comme &quot;Auth de base&quot;. Indiquez le nom d&#39;utilisateur et le mot de passe AEM ServerAccédez à l&#39;onglet &quot;Body&quot; (Corps) et spécifiez les paramètres de requête, comme illustré dans l&#39;image ci-dessous![export](assets/postexport.png), puis cliquez sur le bouton Envoyer.
+Vérifiez que vous avez sélectionné &quot;POST&quot; dans la liste déroulante.
+http://localhost:4502/content/AemFormsSamples/exportdata.html
+Veillez à spécifier &quot;Autorisation&quot; comme &quot;Auth de base&quot;. Indiquez le nom d’utilisateur et le mot de passe AEM Server.
+Accédez à l’onglet &quot;Corps&quot; et spécifiez les paramètres de requête, comme indiqué dans l’image ci-dessous.
+![exporter](assets/postexport.png)
+Cliquez ensuite sur le bouton Envoyer
 
 Le paquet contient 3 exemples. Les paragraphes suivants expliquent à quel moment utiliser le service de sortie ou Forms Service, l’URL du service, les paramètres d’entrée attendus par chaque service.
 
@@ -86,7 +92,7 @@ Le paquet contient 3 exemples. Les paragraphes suivants expliquent à quel momen
 
 **Importer des données dans un fichier PDF :**
 * Utilisation de FormsService pour importer des données dans un fichier PDF
-* **URL** du POST - http://localhost:4502/content/AemFormsSamples/mergedata.html
+* **URL**  du POST - http://localhost:4502/content/AemFormsSamples/mergedata.html
 * **Paramètres de la demande:**
 
    * pdffile : Le fichier pdf avec lequel vous souhaitez fusionner des données
