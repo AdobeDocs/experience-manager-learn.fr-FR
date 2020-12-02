@@ -26,7 +26,7 @@ Dans cet article, nous considérons le courriel comme un mécanisme de diffusion
 
 Examinons le fragment de code suivant. Ce code fait partie de GET.jsp qui est déclenché lorsque l’utilisateur clique sur le lien dans le courrier électronique pour vue au document du canal Web. Nous obtenons l&#39;utilisateur connecté à l&#39;aide de jackrabbit UserManager. Une fois que l’utilisateur est connecté, nous obtenons la valeur de la propriété accountNumber associée au profil de l’utilisateur.
 
-Ensuite, nous associons la valeur accountNumber à une clé nommée accountnumber dans le mappage. Le **numéro** de compte de clé est défini dans le module de données de formulaire sous la forme d’un attribut de requête. La valeur de cet attribut est transmise en tant que paramètre d’entrée à la méthode de service de lecture Modal de données de formulaire.
+Ensuite, nous associons la valeur accountNumber à une clé nommée accountnumber dans le mappage. La clé **accountnumber** est définie dans le module de données de formulaire comme attribut de requête. La valeur de cet attribut est transmise en tant que paramètre d’entrée à la méthode de service de lecture Modal de données de formulaire.
 
 Ligne 7 : Nous envoyons la demande reçue à une autre servlet, en fonction du type de ressource identifié par l&#39;URL du Document de communication interactive. La réponse renvoyée par cette seconde servlet est incluse dans la réponse de la première servlet.
 
@@ -49,4 +49,4 @@ Représentation visuelle du code de ligne 7
 Attribut de demande défini pour le service de lecture du module de données de formulaire
 
 
-[Exemple de package](assets/webchanneldelivery.zip)AEM.
+[Exemple de package](assets/webchanneldelivery.zip) AEM.
