@@ -30,12 +30,12 @@ Le cas d’utilisation consiste à déclencher un processus AEM sur un envoi de 
    * Importez le fichier StoreAFInDBWorkflow.zip dans AEM à l’aide du gestionnaire de packages. Le package comporte un exemple de flux de travaux qui stocke les données AF dans la base de données. Ouvrez le modèle de processus. Le processus ne comporte qu’une seule étape. Cette étape appelle le code écrit dans le lot pour stocker les données AF dans la base de données. Je ne transmets qu&#39;un seul argument au processus. Il s’agit du nom du formulaire adaptatif dont les données sont enregistrées.
    * Déployez le fichier insertdata.core-0.0.1-SNAPSHOT.jar à l’aide de la console Web Felix. Ce lot a le code pour écrire les données de formulaire envoyées dans la base de données.
 
-* Accéder à [ConfigMgr](http://localhost:4502/system/console/configMgr)
+* Accédez à [ConfigMgr](http://localhost:4502/system/console/configMgr)
 
    * Recherchez &quot;JDBC Connection Pool&quot;. Créez un pool de connexions JDBC Day Commons. Spécifiez les paramètres spécifiques à votre base de données.
 
    * ![pool de connexions jdbc](assets/jdbc-connection-pool.png)
-   * Rechercher &quot;**Insérer des données de formulaire dans la base de données**&quot;
+   * Rechercher &quot;**Insérer des données de formulaire dans DB**&quot;
    * Spécifiez les propriétés spécifiques à votre base de données.
       * DataSourceName : nom de la source de données que vous avez configurée précédemment.
       * NomTable : nom de la table dans laquelle vous souhaitez stocker les données AF
