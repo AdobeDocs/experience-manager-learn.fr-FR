@@ -1,5 +1,5 @@
 ---
-title: Service de conversion Forms automatisé
+title: automated forms conversion Service
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -15,9 +15,9 @@ ht-degree: 59%
 
 ---
 
-# Service de conversion Forms automatisé
+# automated forms conversion Service
 
-Cet article décrit comment un administrateur AEM peut configurer le service de conversion automatisée de Forms pour automatiser la conversion de ses PDF forms en formulaires adaptatifs. Cette aide est destinée aux administrateurs informatiques et AEM de votre entreprise. Cette aide s’adresse à un public familiarisé avec les technologies suivantes :
+Cet article décrit comment un administrateur AEM peut configurer un service d’Automated forms conversion pour automatiser la conversion de ses PDF forms en formulaires adaptatifs. Cette aide est destinée aux administrateurs informatiques et AEM de votre entreprise. Cette aide s’adresse à un public familiarisé avec les technologies suivantes :
 
 * installation, configuration et administration des packages Adobe Experience Manager et AEM ;
 * utilisation des systèmes d’exploitation Linux et Microsoft Windows ;
@@ -35,7 +35,7 @@ Pour utiliser le service de conversion automatisée de formulaires, les conditio
 >[!NOTE]
 >La vidéo suivante peut être suivie une fois que l’Adobe a activé l’accès pour votre organisation et qu’il a accordé les privilèges requis à l’administrateur. L’administrateur peut se connecter au Admin Console, créer un profil et ajouter des développeurs au profil. Les développeurs peuvent connecter une instance locale d’AEM Forms au service de conversion automatisée de formulaires sur Adobe Cloud.
 
-* La vidéo explique les étapes nécessaires pour connecter votre instance AEM Forms locale au service de conversion Forms automatisée sur Adobe Cloud.
+* La vidéo explique les étapes nécessaires pour connecter votre instance AEM Forms locale au service d’Automated forms conversion sur Adobe Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39493/?quality=9&learn=on)
 
