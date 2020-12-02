@@ -40,7 +40,7 @@ ht-degree: 0%
 
 * Sélectionnez l&#39;icône représentant un crayon pour modifier le texte par défaut.
 
-* Remplacez le texte par défaut par &quot;**Votre avenir du revenu de retraite&quot;.**
+* Remplacez le texte par défaut par &quot;**Votre perspective de revenu de retraite&quot;**
 
 **Configuration de la zone de cible du panneau droit**
 
@@ -52,23 +52,23 @@ ht-degree: 0%
 
 * Sélectionnez l&#39;icône représentant un crayon pour modifier le texte par défaut.
 
-* Remplacer le texte par défaut par &quot;Revenu de retraite mensuel **estimé&quot;**
+* Remplacez le texte par défaut par &quot;**Estimation du revenu mensuel de retraite&quot;**
 
-## Fragment de Document de l&#39;Outlook du revenu de retraite Ajouté {#add-retirement-income-outlook-document-fragment}
+## Fragment de Document de l&#39;évolution du revenu de retraite Ajouté {#add-retirement-income-outlook-document-fragment}
 
 * Cliquez sur l’icône Ressources et appliquez le filtre pour afficher les ressources de type &quot;Document Fragments&quot;. Faites glisser un fragment de document RetirementIncomeOutlook sur la zone cible du panneau de gauche.
 
-* Vous pouvez vous référer [à cette page](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) lors de l’ajout d’un fragment de document dans les zones de contenu.
+* Vous pouvez faire référence [à cette page](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) lors de l’ajout d’un fragment de document dans les zones de contenu.
 
-## ajouter le tableau des revenus mensuels estimés {#adding-estimated-monthly-income-chart}
+## Graphique du revenu mensuel estimé à Ajouter {#adding-estimated-monthly-income-chart}
 
 * Cliquez sur la zone de cible du panneau de droite sur la droite. Cliquez sur l&#39;icône &quot;+&quot; pour insérer le composant de graphique. Nous utiliserons un graphique à colonnes pour afficher le revenu mensuel estimé. Appuyez délicatement sur le composant de graphique nouvellement inséré. Sélectionnez l&#39;icône &quot;clé à molette&quot; pour ouvrir la feuille de propriétés de configuration.Configurez le graphique avec les propriétés suivantes, comme le montre la capture d&#39;écran ci-dessous.
 
-**aem forms 6.4 - Configuration du graphique à colonnes des revenus mensuels estimés**
+**AEM Forms 6.4 - Configuration du graphique à colonnes des revenus mensuels estimés**
 
 ![form64](assets/estimatedmonthlyincomechart.png)
 
-**aem forms 6.5 - Configuration du graphique à colonnes des revenus mensuels estimés**
+**AEM Forms 6.5 - Configuration du graphique à colonnes des revenus mensuels estimés**
 
 ![forms65](assets/estimatedmonthlyincomechart65.PNG)
 
