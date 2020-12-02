@@ -22,14 +22,14 @@ ht-degree: 0%
 
 # Liste des types de ressources personnalisés en AEM Forms {#listing-custom-asset-types-in-aem-forms}
 
-## Creating custom template {#creating-custom-template}
+## Création d&#39;un modèle personnalisé {#creating-custom-template}
 
 
 Aux fins de cet article, nous allons créer un modèle personnalisé pour afficher les types de ressource personnalisés et les types de ressource prêtes à l&#39;emploi sur la même page. Pour créer un modèle personnalisé, suivez les instructions ci-dessous.
 
 1. Créez un sling : sous /apps. Nommez-le &quot;composant myportal&quot;.
 1. Ajoutez une propriété « fpContentType ». Définissez sa valeur sur &quot;**/libs/fd/ fp/formTemplate&quot;.**
-1. ajoutez une propriété &quot;title&quot; et définissez sa valeur sur &quot;modèle personnalisé&quot;. Nom affiché dans la liste déroulante du composant Search and Lister
+1. Ajoutez une propriété &quot;title&quot; et définissez sa valeur sur &quot;modèle personnalisé&quot;. Nom affiché dans la liste déroulante du composant Search and Lister
 1. Créez un &quot;template.html&quot; sous ce dossier. Ce fichier contiendra le code à mettre en forme et affichera les différents types de fichier.
 
 ![appsfolder](assets/appsfolder_.png)
@@ -76,7 +76,7 @@ Le code suivant liste les différents types de ressources à l’aide du composa
 >
 >Pour liste du Forms adaptatif dans ce modèle, créez une nouvelle balise div et définissez son attribut de type de données sur &quot;guide&quot;. Vous pouvez copier et coller la balise div dont data-type=&quot;printForm&quot; et définir le type de données de la balise div récemment copiée sur &quot;guide&quot;.
 
-## Configure Search And Lister Component {#configure-search-and-lister-component}
+## Configurer le composant Search And Lister {#configure-search-and-lister-component}
 
 Une fois que nous avons défini le modèle personnalisé, nous devons maintenant associer ce modèle personnalisé au composant Search and Lister. Pointez votre navigateur [sur cette URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
@@ -112,6 +112,7 @@ Maintenant que vous avez configuré votre composant Search and Lister Portal, il
 
 >[!NOTE]
 >
->Si votre portail répertorie les types de ressource personnalisés sur un serveur de publication, veillez à accorder l’autorisation &quot;lecture&quot; à l’utilisateur &quot;fd-service&quot; au noeud **/apps/fd/fp/extensions/querybuilder.**
+>Si votre portail répertorie les types de ressource personnalisés sur un serveur de publication, veillez à accorder l’autorisation &quot;lecture&quot; à l’utilisateur &quot;fd-service&quot; au noeud **/apps/fd/fp/extensions/querybuilder**.
 
-![ressources](assets/assettypeslistings.png)types[Veuillez télécharger et installer ce package à l&#39;aide de Package Manager.](assets/customassettypekt1.zip) Il contient des exemples de documents mp4, de mots et de fichiers xdp qui seront utilisés comme types de ressource pour la liste à l’aide du composant search and lister.
+![](assets/assettypeslistings.png)
+[ressourcesVeuillez télécharger et installer ce package à l&#39;aide du gestionnaire de packages.](assets/customassettypekt1.zip) Il contient des exemples de documents mp4, de mots et de fichiers xdp qui seront utilisés comme types de ressource pour la liste à l’aide du composant search and lister.
