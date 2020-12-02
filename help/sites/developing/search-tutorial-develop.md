@@ -17,7 +17,7 @@ ht-degree: 10%
 
 # Guide de mise en oeuvre de la recherche simple{#simple-search-implementation-guide}
 
-The Simple search implementation are the materials from the **Adobe Summit lab AEM Search Demystified**. Cette page contient les matériaux de ce laboratoire. Pour une visite guidée du laboratoire, veuillez vue le cahier de travail du laboratoire dans la section Présentation de cette page.
+La mise en oeuvre de la recherche simple est le matériel du laboratoire **Adobe Summit AEM Recherche Demystified**. Cette page contient les matériaux de ce laboratoire. Pour une visite guidée du laboratoire, veuillez vue le cahier de travail du laboratoire dans la section Présentation de cette page.
 
 ![Présentation de l&#39;architecture de recherche](assets/l4080/simple-search-application.png)
 
@@ -39,7 +39,7 @@ The Simple search implementation are the materials from the **Adobe Summit lab A
 
 ### Chapitres {#chapters}
 
-*Les liens de chapitre ci-dessous supposent que les packages[](#initialpackages)initiaux sont installés sur AEM Author dans`http://localhost:4502`*
+*Les liens de chapitre ci-dessous supposent que les  [packages ](#initialpackages) initiaux sont installés sur AEM Author dans`http://localhost:4502`*
 
 * [Chapitre 1](http://localhost:4502/editor.html/content/summit/l4080/chapter-1.html)
 * [Chapitre 2](http://localhost:4502/editor.html/content/summit/l4080/chapter-2.html)
@@ -75,7 +75,7 @@ The Simple search implementation are the materials from the **Adobe Summit lab A
 * [Modèles Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Exportateur de modèle Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
 * [API QueryBuilder](https://docs.adobe.com/docs/en/aem/6-2/develop/search/querybuilder-api.html)
-* [aem Module externe](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode) Chrome (page[](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/)Documentation)
+* [aem Module externe](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)  Chrome (page[ ](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/)Documentation)
 
 ## Corrections et suivi {#corrections-and-follow-up}
 
@@ -83,16 +83,16 @@ Corrections et clarifications des discussions de laboratoire et réponses aux qu
 
 1. **Comment arrêter la réindexation ?**
 
-   La réindexation peut être arrêtée via le MBean IndexStats disponible via [AEM Web Console > JMX](http://localhost:4502/system/console/jmx)
+   La réindexation peut être arrêtée via le MBean IndexStats disponible via [AEM console Web > JMX](http://localhost:4502/system/console/jmx)
 
    * [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
-      * Exécuter pour abandonner `abortAndPause()` la réindexation. Cela verrouillera l&#39;index pour une nouvelle ré-indexation jusqu&#39;à ce qu&#39; `resume()` il soit appelé.
-      * L&#39;exécution `resume()` redémarre le processus d&#39;indexation.
+      * Exécutez `abortAndPause()` pour abandonner la réindexation. Cela verrouillera l&#39;index pour une nouvelle ré-indexation jusqu&#39;à ce que `resume()` soit appelé.
+      * L&#39;exécution de `resume()` redémarre le processus d&#39;indexation.
    * Documentation : [https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean](https://jackrabbit.apache.org/oak/docs/query/indexing.html#async-index-mbean)
 
 2. **Comment les index de chêne peuvent-ils supporter plusieurs locataires ?**
 
-   Oak prend en charge le placement des index dans l&#39;arborescence de contenu, et ces index ne s&#39;indexeront qu&#39;à l&#39;intérieur de cette sous-arborescence. Par exemple, **`/content/site-a/oak:index/cqPageLucene`** il est possible de créer pour indexer le contenu uniquement sous **`/content/site-a`.**
+   Oak prend en charge le placement des index dans l&#39;arborescence de contenu, et ces index ne s&#39;indexeront qu&#39;à l&#39;intérieur de cette sous-arborescence. Par exemple, **`/content/site-a/oak:index/cqPageLucene`** peut être créé pour indexer le contenu uniquement sous **`/content/site-a`.**
 
    Une approche équivalente consiste à utiliser les propriétés **`includePaths`** et **`queryPaths`** sur un index sous **`/oak:index`**. Par exemple :
 
@@ -102,7 +102,7 @@ Corrections et clarifications des discussions de laboratoire et réponses aux qu
    Cette approche tient compte des points suivants :
 
    * Les requêtes DOIVENT spécifier une restriction de chemin égale à l&#39;étendue de chemin de requête de l&#39;index, ou y être descendantes.
-   * Les index de portée plus large (par exemple `/oak:index/cqPageLucene`) indexent AUSSI les données, ce qui entraîne des frais d&#39;assimilation en double et d&#39;utilisation du disque.
+   * Les index à portée plus large (par exemple `/oak:index/cqPageLucene`) indexent ÉGALEMENT les données, ce qui entraîne l&#39;assimilation en double et le coût d&#39;utilisation du disque.
    * Peut nécessiter une gestion de configuration en double (ex. ajout de la même variable indexRules sur plusieurs index de clients s&#39;ils doivent satisfaire aux mêmes jeux de requêtes)
    * Cette approche est mieux servie sur le niveau de publication AEM pour la recherche de site personnalisée, car sur AEM Author, il est courant que les requêtes soient exécutées en hauteur dans l’arborescence de contenu pour différents locataires (par exemple, via OmniSearch). Différentes définitions d’index peuvent entraîner un comportement différent en fonction de la restriction de chemin d’accès.
 
@@ -118,7 +118,7 @@ Corrections et clarifications des discussions de laboratoire et réponses aux qu
 
 4. **Comment rechercher des pages et des ressources dans la même requête ?**
 
-   La nouvelle version de l’AEM 6.3 permet de requête pour plusieurs types de noeud dans la même requête fournie. La requête QueryBuilder suivante. Notez que chaque &quot;sous-requête&quot; peut se résoudre à son propre index. Dans cet exemple, la `cq:Page` sous-requête est résolue `/oak:index/cqPageLucene` et la `dam:Asset` sous-requête est résolue `/oak:index/damAssetLucene`.
+   La nouvelle version de l’AEM 6.3 permet de requête pour plusieurs types de noeud dans la même requête fournie. La requête QueryBuilder suivante. Notez que chaque &quot;sous-requête&quot; peut être résolue à son propre index. Dans cet exemple, la sous-requête `cq:Page` est réglée sur `/oak:index/cqPageLucene` et la sous-requête `dam:Asset` sur `/oak:index/damAssetLucene`.
 
    ```plain
    group.p.or=true
@@ -136,7 +136,7 @@ Corrections et clarifications des discussions de laboratoire et réponses aux qu
    PLAN: [cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* */ union [dam:Asset] as [a] /* lucene:damAssetLucene(/oak:index/damAssetLucene) *:* */
    ```
 
-   Explorez la requête et les résultats via le débogueur [](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) QueryBuilder et le module [Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)AEM.
+   Explorez la requête et les résultats via [Débogueur QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Ddam%3AAsset%0D%0A%23+add+all+asset+restrictions+to+this+group) et [AEM Module externe Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
 
 5. **Comment rechercher plusieurs chemins dans la même requête ?**
 
@@ -160,4 +160,4 @@ Corrections et clarifications des discussions de laboratoire et réponses aux qu
    PLAN: [cq:Page] as [a] /* traverse "/content/docs/en/6-2//*" where isdescendantnode([a], [/content/docs/en/6-2]) */ union [cq:Page] as [a] /* traverse "/content/docs/en/6-3//*" where isdescendantnode([a], [/content/docs/en/6-3]) */
    ```
 
-   Explorez la requête et les résultats via le débogueur [](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) QueryBuilder et le module [Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)AEM.
+   Explorez la requête et les résultats via [Débogueur QueryBuilder](http://localhost:4502/libs/cq/search/content/querydebug.html?_charset_=UTF-8&amp;query=group.p.or%3Dtrue%0D%0Agroup.1_group.type%3Dcq%3APage%0D%0Agroup.1_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-2%0D%0A%23+add+all+page+restrictions+to+this+group%0D%0Agroup.2_group.type%3Dcq%3APage%0D%0Agroup.2_group.path%3D%2Fcontent%2Fdocs%2Fen%2F6-3%0D%0A%23+add+all+asset+restrictions+to+this+group) et [AEM Module externe Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US).
