@@ -1,6 +1,6 @@
 ---
-title: ajouter du contenu de texte et d’image pour imprimer le document de canal
-seo-title: ajouter du contenu de texte et d’image pour imprimer le document de canal
+title: Ajouter du contenu de texte et d’image pour imprimer le document de canal
+seo-title: Ajouter du contenu de texte et d’image pour imprimer le document de canal
 description: 'Voici la partie 7 d''un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons ajouter des images et du contenu de texte aux zones de cible définies dans la mise en page (xdp). '
 seo-description: 'Voici la partie 7 d''un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons ajouter des images et du contenu de texte aux zones de cible définies dans la mise en page (xdp). '
 uuid: f20d6974-6faf-4b90-a7ff-8aa8a620fcaa
@@ -22,7 +22,7 @@ ht-degree: 0%
 ---
 
 
-# ajouter du contenu de texte et d’image pour imprimer le document de canal
+# Ajouter du contenu de texte et d’image pour imprimer le document de canal
 
 Dans cette partie, nous allons ajouter des images et du contenu de texte aux zones de cible définies dans la mise en page (xdp).
 
