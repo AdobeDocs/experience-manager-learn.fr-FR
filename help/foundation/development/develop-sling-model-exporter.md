@@ -29,7 +29,7 @@ Apache Sling fournit un exportateur JSON Jackson pour traiter le cas le plus cou
 
 >[!VIDEO](https://video.tv.adobe.com/v/16862/?quality=12&learn=on)
 
-[!DNL Sling Model Exporter] est une fonctionnalité du [!DNL Apache Sling] projet et n&#39;est pas directement liée au cycle de publication AEM produits. [!DNL Sling Model Exporter] est compatible avec AEM 6.3 et versions ultérieures.
+[!DNL Sling Model Exporter] est une fonctionnalité du  [!DNL Apache Sling] projet et n&#39;est pas directement liée au cycle de publication AEM produits. [!DNL Sling Model Exporter] est compatible avec AEM 6.3 et versions ultérieures.
 
 ## Le cas d’utilisation pour [!DNL Sling Model Exporter]
 
@@ -41,24 +41,24 @@ Apache Sling fournit un exportateur JSON Jackson pour traiter le cas le plus cou
 
 >[!VIDEO](https://video.tv.adobe.com/v/16864/?quality=12&learn=on)
 
-L&#39;activation [!DNL Exporter] de la prise en charge sur un [!DNL Sling Model] est aussi facile que l&#39;ajout de l&#39; `@Exporter` annotation à la classe Java.
+L&#39;activation de la prise en charge de [!DNL Exporter] sur [!DNL Sling Model] est aussi simple que l&#39;ajout de l&#39;annotation `@Exporter` à la classe Java.
 
 ## Application des options de Sling Model Exporter
 
 >[!VIDEO](https://video.tv.adobe.com/v/16865/?quality=12&learn=on)
 
-[!DNL Sling Model Exporter] prend en charge la transmission des options d’exportateur par modèle à l’implémentation d’exportateur afin de déterminer comment le modèle [!DNL Sling Model] est finalement exporté. Ces options s’appliquent généralement &quot;globalement&quot; à la manière dont l’ [!DNL Sling Model] objet est exporté, par rapport à chaque point de données pouvant être utilisé au moyen d’annotations intégrées décrites ci-dessous.
+[!DNL Sling Model Exporter] prend en charge la transmission des options d’exportateur par modèle à l’implémentation d’exportateur afin de déterminer comment le modèle  [!DNL Sling Model] est finalement exporté. Ces options s’appliquent généralement &quot;globalement&quot; à la manière dont [!DNL Sling Model] est exporté, par rapport à chaque point de données qui peut être effectué au moyen d’annotations intégrées décrites ci-dessous.
 
 [!DNL Jackson Exporter] sont disponibles :
 
 * [Options de fonction de mappage](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/MapperFeature.html)
 * [Options des fonctions de sérialisation](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/SerializationFeature.html)
 
-## Application [!DNL Jackson] d’annotations
+## Application des annotations [!DNL Jackson]
 
 >[!VIDEO](https://video.tv.adobe.com/v/16866/?quality=12&learn=on)
 
-Les implémentations d’exportateurs peuvent également prendre en charge des annotations qui peuvent être appliquées en ligne sur la [!DNL Sling Model] classe, ce qui peut fournir un niveau de contrôle plus précis sur la manière dont les données sont exportées.
+Les implémentations d&#39;exportateurs peuvent également prendre en charge les annotations qui peuvent être appliquées en ligne sur la classe [!DNL Sling Model], ce qui peut fournir un niveau de contrôle plus précis sur la manière dont les données sont exportées.
 
 * [[!DNL Jackson Exporter] annotations](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)
 
@@ -66,7 +66,7 @@ Les implémentations d’exportateurs peuvent également prendre en charge des a
 
 [SampleSlingModelExporter.java](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/models/SampleSlingModelExporter.java)
 
-## Documents de support {#supporting-materials}
+## Documents d&#39;appui {#supporting-materials}
 
 * [[!DNL Jackson Mapper] Fonction Javadoc](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/MapperFeature.html)
 * [[!DNL Jackson Serialization] Fonction Javadoc](https://static.javadoc.io/com.fasterxml.jackson.core/jackson-databind/2.8.5/com/fasterxml/jackson/databind/SerializationFeature.html)
