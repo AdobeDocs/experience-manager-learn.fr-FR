@@ -32,7 +32,7 @@ Dans cette partie, nous allons ajouter des diagrammes circulaires pour afficher 
 
 * Nous ajouterons 2 diagrammes circulaires pour représenter la combinaison actuelle et modèle d&#39;investissement du titulaire de compte.
 
-## Mélange de ressources actuel {#current-asset-mix}
+## Mélange d&#39;actifs actuel {#current-asset-mix}
 
 * Appuyez sur le panneau &quot;CurrentAssetMix&quot; sur le côté droit et sélectionnez l’icône &quot;+&quot; et insérez le composant de texte. Remplacez le texte par défaut par &quot;Current Asset Mix&quot;.
 
