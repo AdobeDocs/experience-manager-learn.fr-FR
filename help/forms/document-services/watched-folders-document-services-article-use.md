@@ -34,7 +34,7 @@ Le service Output est un service OSGi qui fait partie d’AEM Document Services.
 
 Pour en savoir plus sur le service de sortie, [veuillez cliquer ici](https://helpx.adobe.com/aem-forms/6/output-service.html).
 Pour configurer le dossier de contrôle sur votre système, procédez comme suit :
-* [Téléchargez et extrayez le contenu du fichier](assets/outputservicewatchedfolderkt.zip)zip. Ce fichier zip contient le package permettant de créer le dossier de contrôle et des fichiers d’exemple pour tester le service de sortie à l’aide du mécanisme du dossier de contrôle.
+* [Téléchargez et extrayez le contenu du fichier](assets/outputservicewatchedfolderkt.zip) zip. Ce fichier zip contient le package permettant de créer le dossier de contrôle et des fichiers d’exemple pour tester le service de sortie à l’aide du mécanisme du dossier de contrôle.
    * Système Windows
 
       * Importez le fichier outputservicewatchedfolder.zip dans AEM à l’aide du gestionnaire de packages.
