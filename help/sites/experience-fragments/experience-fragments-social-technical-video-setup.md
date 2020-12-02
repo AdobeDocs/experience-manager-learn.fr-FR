@@ -23,15 +23,15 @@ Les fragments d’expérience permettent aux spécialistes du marketing de publi
 
 >[!VIDEO](https://video.tv.adobe.com/v/20592/?quality=9&learn=on)
 
-*[Fragments]d’expérience - Configuration et configuration pour la publication sur les réseaux sociaux sur Facebook et Pinterest*
+*[Fragments]  d’expérience - Configuration et configuration pour la publication sur les réseaux sociaux sur Facebook et Pinterest*
 
 ## Liste de contrôle permettant de configurer des fragments d’expérience pour une publication sur Facebook et Pinterest
 
 1. L’instance d’auteur AEM s’exécute sur HTTPS.
 2. Compte Facebook + application de développement Facebook
 3. Compte Pinterest + application Pinterest Developer
-4. [!UICONTROL Configuration des services] AEM Cloud - Facebook
-5. [!UICONTROL Configuration des services] AEM Cloud - Pinterest
+4. [!UICONTROL aem Cloud ] ServicesConfiguration - Facebook
+5. [!UICONTROL aem Cloud ] ServicesConfiguration - Pinterest
 6. aem Fragment d’expérience avec des Cloud Services pour Facebook + Pinterest
 7. Variation de fragment d’expérience à l’aide d’un modèle Facebook
 8. Variation du fragment d’expérience à l’aide du modèle Pinterest
