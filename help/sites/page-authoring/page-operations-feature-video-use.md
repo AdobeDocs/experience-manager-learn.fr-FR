@@ -20,7 +20,7 @@ ht-degree: 11%
 ---
 
 
-# Opérations de base sur les pages {#basic-page-operations-aem-sites}
+# Opérations de page de base {#basic-page-operations-aem-sites}
 
 Découvrez comment effectuer des opérations de gestion des pages de base pour une page Adobe Experience Manager Sites.
 
