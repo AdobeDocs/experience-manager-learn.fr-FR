@@ -25,7 +25,7 @@ Reader Extensions permet de manipuler les droits d’utilisation sur les documen
 Pour tester cette fonctionnalité, vous pouvez essayer ce [lien](https://forms.enablementadobe.com/content/samples/samples.html?query=0). L’exemple de nom est &quot;Render XDP with RE&quot;.
 
 Pour ce faire, nous devons procéder comme suit :
-* ajoutez le certificat Reader Extensions à l’utilisateur &quot;fd-service&quot;. La procédure d’ajout d’informations d’identification des extensions de Reader est répertoriée [ici.](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
+* Ajoutez le certificat Reader Extensions à l’utilisateur &quot;fd-service&quot;. Les étapes permettant d’ajouter des informations d’identification d’extensions de Reader sont répertoriées [ici](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
 
 * Créez un service OSGi personnalisé qui appliquera des droits d’utilisation aux documents. Le code pour y parvenir est répertorié ci-dessous.
 
@@ -67,11 +67,11 @@ public Document applyUsageRights(Document pdfDocument,UsageRights usageRights) {
 }
 ```
 
-## Créer un servlet pour diffuser en continu le PDF {#create-servlet-to-stream-the-pdf}
+## Créer un servlet pour diffuser en continu le fichier PDF {#create-servlet-to-stream-the-pdf}
 
 L’étape suivante consiste à créer une servlet avec une méthode de POST pour renvoyer le PDF étendu Reader à l’utilisateur. Dans ce cas, l’utilisateur est invité à enregistrer le fichier PDF dans son système de fichiers. En effet, le PDF est rendu au format PDF dynamique et les visionneuses PDF fournies avec les navigateurs ne gèrent pas les fichiers PDF dynamiques.
 
-Voici le code de la servlet. La servlet sera appelée à partir de l’action d’envoi **** personnalisée du formulaire adaptatif.
+Voici le code de la servlet. La servlet sera appelée à partir de l&#39;action **customsubmit** du formulaire adaptatif.
 Servlet crée l’objet UsageRights et lui définit les propriétés en fonction des valeurs saisies par l’utilisateur dans le formulaire adaptatif. La servlet appelle ensuite la méthode **applyUsageRights** du service créé à cet effet.
 
 ```java
@@ -191,10 +191,10 @@ try {
 
 Pour tester cette fonctionnalité sur votre serveur local, procédez comme suit :
 1. [Téléchargement et installation du lot DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Téléchargez et installez le lot](assets/ares.ares.core-ares.jar)ares.ares.core-ares. Le service personnalisé et la servlet lui permettent d’appliquer des droits d’utilisation et de diffuser en continu le pdf.
+1. [Téléchargez et installez le lot](assets/ares.ares.core-ares.jar) ares.ares.core-ares. Le service personnalisé et la servlet lui permettent d’appliquer des droits d’utilisation et de diffuser en continu le pdf.
 1. [Importer les libs du client et l’envoi personnalisé](assets/applyaresdemo.zip)
 1. [Importation du formulaire adaptatif](assets/applyaresform.zip)
-1. ajouter le certificat Reader Extensions à l’utilisateur &quot;fd-service&quot;
+1. Ajouter le certificat Reader Extensions à l’utilisateur &quot;fd-service&quot;
 1. [Prévisualisation de formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
 1. Sélectionner les droits appropriés et télécharger le fichier PDF
 1. Cliquez sur Envoyer pour obtenir le PDF étendu Reader.
