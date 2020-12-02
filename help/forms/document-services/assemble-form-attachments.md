@@ -26,7 +26,7 @@ Lors de l’envoi du formulaire, assemblez les pièces jointes du formulaire pou
 
 ## Créer un composant OSGi qui implémente l’interface WorkflowProcess
 
-Créez un composant OSGi qui implémente l’interface [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html)com.adobe.granite.workflow.exec.WorkflowProcess. Le code de ce composant peut être associé au composant d’étape du processus dans le flux de travail AEM. La méthode execute de l’interface com.adobe.granite.workflow.exec.WorkflowProcess est implémentée dans ce composant.
+Créez un composant OSGi qui implémente l&#39;[com.adobe.granite.workflow.exec.WorkflowProcess interface](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). Le code de ce composant peut être associé au composant d’étape du processus dans le flux de travail AEM. La méthode execute de l’interface com.adobe.granite.workflow.exec.WorkflowProcess est implémentée dans ce composant.
 
 Lorsqu’un formulaire adaptatif est envoyé pour déclencher un processus AEM, les données envoyées sont stockées dans le fichier spécifié sous le dossier de charge utile. Par exemple, il s’agit du fichier de données envoyé. Nous devons assembler les pièces jointes spécifiées sous la marque de carte de crédit et de relevé de compte.
 ![submit-data](assets/submitted-data.JPG).
@@ -45,7 +45,7 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### Création de DDX à partir des noms de pièce jointe
 
-Nous devons ensuite créer un document XML (DDX) [de description de](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) Document qui est utilisé par le service Assembler pour assembler des documents. Voici le DDX qui a été créé à partir des arguments de processus. Notez que les éléments source PDF sont dans le bon ordre, comme indiqué dans les arguments de processus.
+Nous devons ensuite créer un document [DX (Document Description XML)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) qui est utilisé par le service Assembler pour assembler des documents. Voici le DDX qui a été créé à partir des arguments de processus. Notez que les éléments source PDF sont dans le bon ordre, comme indiqué dans les arguments de processus.
 
 ![ddx-xml](assets/ddx-xml.JPG)
 
@@ -134,15 +134,15 @@ Voici la structure de dossiers de charge utile après l’assemblage et le stock
 
 ### Pour que cette fonctionnalité fonctionne sur votre serveur AEM
 
-* Téléchargez le formulaire [](assets/assemble-form-attachments-af.zip) Assembler les pièces jointes du formulaire sur votre système local.
-* Importez le formulaire à partir[de la page Formulaires et Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) .
-* Téléchargez [le processus](assets/assemble-form-attachments.zip) et importez-le dans AEM à l’aide de Package Manager.
-* Téléchargement du lot [personnalisé](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
-* Déploiement et début du lot à l’aide de la console [Web](http://localhost:4502/system/console/bundles)
-* Pointez votre navigateur sur le formulaire [AssembleAttachments.](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
+* Téléchargez le [Formulaire d&#39;assemblage de pièces jointes de formulaire](assets/assemble-form-attachments-af.zip) sur votre système local.
+* Importez le formulaire à partir de la page [Forms And Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Téléchargez [workflow](assets/assemble-form-attachments.zip) et importez-le dans AEM à l’aide de Package Manager.
+* Téléchargez le [lot personnalisé](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
+* Déployez et début le lot à l’aide de la [console Web](http://localhost:4502/system/console/bundles).
+* Pointez votre navigateur sur [Formulaire AssembleAttachments](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled).
 * Ajouter une pièce jointe dans le Document d’identification et quelques documents pdf à la section des relevés bancaires
 * Envoyer le formulaire pour déclencher le processus
-* Vérifiez le dossier de [charge utile du flux de travail dans la zone crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) pour le fichier pdf assemblé.
+* Vérifiez le dossier de charge utile [du flux de travail dans crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) pour le fichier pdf assemblé.
 
 >[!NOTE]
 > Si vous avez activé la journalisation pour le lot personnalisé, le DDX et le fichier assemblé sont écrits dans le dossier de votre installation AEM.
