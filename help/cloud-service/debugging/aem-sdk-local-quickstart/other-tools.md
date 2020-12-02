@@ -30,7 +30,7 @@ CRXDE Lite est une interface Web permettant d’interagir avec le référentiel 
 Le CRXDE Lite se trouve à :
 
 + Outils > Général > CRXDE Lite
-+ ou directement sur [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
++ ou directement à [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
 
 ## Explication de la requête
 
@@ -57,9 +57,9 @@ Le débogueur QueryBuilder se trouve à l’emplacement suivant :
 
 ![Sling Log Tracer et AEM module externe Chrome](./assets/other-tools/log-tracer.png)
 
-[Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html), fourni avec le démarrage rapide local du SDK AEM, permet un suivi approfondi des requêtes HTTP, exposant des informations de débogage détaillées par requête. La configuration OSGi du [suivi des journaux doit être configurée](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1) pour activer cette fonctionnalité.
+[Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html), fourni avec le démarrage rapide local du SDK AEM, permet un suivi approfondi des requêtes HTTP, exposant des informations de débogage détaillées par requête. La configuration [Log Tracer OSGi doit être configurée](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1) pour activer cette fonctionnalité.
 
-Le module externe [Open Source](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US) AEM Chrome pour le navigateur [Web](https://www.google.com/chrome/)Google Chrome s’intègre à Log Tracer, exposant les informations de débogage directement dans les outils de développement de Chrome.
+Le module externe open source [AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US) pour le [navigateur Web Google Chrome](https://www.google.com/chrome/), s’intègre à Log Tracer, exposant les informations de débogage directement dans les outils de développement de Chrome.
 
 _Le module externe AEM Chrome est un outil open source et l’Adobe ne le prend pas en charge._
 
