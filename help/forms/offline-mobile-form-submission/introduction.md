@@ -27,7 +27,7 @@ Pour ce faire, nous devons effectuer les étapes suivantes :
 * Gérer l’envoi du PDF à partir de l’Acrobat/Reader
 * Déclenchez le processus Adobe Experience Manager (AEM) pour réviser le PDF envoyé.
 
-Ce didacticiel décrit les étapes nécessaires pour accomplir le cas d’utilisation ci-dessus. Des exemples de code et de ressources associés à ce didacticiel sont [disponibles ici.](part-four.md)
+Ce didacticiel décrit les étapes nécessaires pour accomplir le cas d’utilisation ci-dessus. L&#39;exemple de code et les ressources associés à ce didacticiel sont [disponibles ici.](part-four.md)
 
 La vidéo suivante présente un aperçu du cas d&#39;utilisation.
 
