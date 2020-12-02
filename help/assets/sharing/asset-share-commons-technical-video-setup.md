@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Configurer Asset Share Commons sur les AEM locales {#setup-asset-share-commons}
+# Configurer Asset Share Commons sur l&#39;AEM locale {#setup-asset-share-commons}
 
 Un bref guide pour obtenir que Asset Share Commons s’exécute sur une instance d’AEM locale.
 
