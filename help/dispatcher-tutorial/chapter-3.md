@@ -24,7 +24,7 @@ Il s&#39;agit de la partie 3 d&#39;une série de trois parties à la mise en cac
 
 ## Mise en cache en général
 
-[Les chapitres 1](chapter-1.md) et 2 [](chapter-2.md) de cette série se concentraient principalement sur le Répartiteur. Nous avons expliqué les bases, les limites et où vous devez faire certains compromis.
+[Les chapitres 1](chapter-1.md) et 2 [ ](chapter-2.md) de cette série se concentraient principalement sur le Répartiteur. Nous avons expliqué les bases, les limites et où vous devez faire certains compromis.
 
 La complexité et les complexités de la mise en cache ne sont pas des problèmes propres au Répartiteur. La mise en cache est difficile en général.
 
@@ -93,19 +93,19 @@ Mais où dans cette chaîne a-t-il du sens de mettre en cache ? Au début ? À l
 
 Pour vous donner une idée générale des facteurs que vous pouvez prendre en considération,
 
-**Temps de vie** - Si les objets ont un court temps de vie inhérent (les données de trafic peuvent avoir un temps de vie plus court que les données météorologiques), il peut ne pas être utile de les mettre en cache.
+**Temps de vie**  : si les objets ont un court temps de vie inhérent (les données de trafic peuvent avoir un temps de vie plus court que les données météorologiques), il peut ne pas être utile de les mettre en cache.
 
-**Coût de production -** Le coût (en termes de cycles d&#39;UC et d&#39;E/S) est la reproduction et la diffusion d&#39;un objet. S&#39;il s&#39;agit d&#39;une mise en cache bon marché peut ne pas être nécessaire.
+**Coût de production -** Le coût (en termes de cycles de processeur et d&#39;E/S) est la reproduction et la diffusion d&#39;un objet. S&#39;il s&#39;agit d&#39;une mise en cache bon marché peut ne pas être nécessaire.
 
-**Taille** : les objets volumineux nécessitent davantage de ressources pour être mis en cache. Cela pourrait être un facteur limitatif et doit être équilibré par rapport aux avantages.
+**Taille**  - Les objets volumineux nécessitent davantage de ressources pour être mis en cache. Cela pourrait être un facteur limitatif et doit être équilibré par rapport aux avantages.
 
-**Fréquence** d&#39;accès : si l&#39;accès aux objets est rarement effectué, la mise en cache peut ne pas être efficace. Ils resteraient obsolètes ou invalidés avant d&#39;accéder à la deuxième fois à partir du cache. De tels éléments bloqueraient simplement les ressources de mémoire.
+**Fréquence**  d&#39;accès - Si l&#39;accès aux objets est rarement effectué, la mise en cache peut ne pas être efficace. Ils resteraient obsolètes ou invalidés avant d&#39;accéder à la deuxième fois à partir du cache. De tels éléments bloqueraient simplement les ressources de mémoire.
 
-**Accès** partagé - Les données utilisées par plusieurs entités doivent être mises en cache plus loin dans la chaîne. En fait, la chaîne de mise en cache n&#39;est pas une chaîne, mais un arbre. Une partie des données du référentiel peut être utilisée par plusieurs modèles. Ces modèles peuvent à leur tour être utilisés par plusieurs scripts de rendu pour générer des fragments HTML. Ces fragments sont inclus dans plusieurs pages qui sont distribuées à plusieurs utilisateurs avec leurs caches privés dans le navigateur. Ainsi, &quot;partager&quot; ne signifie pas partager entre les gens seulement, mais plutôt entre des logiciels. Si vous souhaitez trouver un cache &quot;partagé&quot; potentiel, il vous suffit de retracer l&#39;arborescence jusqu&#39;à la racine et de trouver un ancêtre commun - c&#39;est là que vous devriez mettre en cache.
+**Accès**  partagé - Les données utilisées par plusieurs entités doivent être mises en cache plus loin dans la chaîne. En fait, la chaîne de mise en cache n&#39;est pas une chaîne, mais un arbre. Une partie des données du référentiel peut être utilisée par plusieurs modèles. Ces modèles peuvent à leur tour être utilisés par plusieurs scripts de rendu pour générer des fragments HTML. Ces fragments sont inclus dans plusieurs pages qui sont distribuées à plusieurs utilisateurs avec leurs caches privés dans le navigateur. Ainsi, &quot;partager&quot; ne signifie pas partager entre les gens seulement, mais plutôt entre des logiciels. Si vous souhaitez trouver un cache &quot;partagé&quot; potentiel, il vous suffit de retracer l&#39;arborescence jusqu&#39;à la racine et de trouver un ancêtre commun - c&#39;est là que vous devriez mettre en cache.
 
-**Distribution** géographique - Si vos utilisateurs sont répartis dans le monde entier, l&#39;utilisation d&#39;un réseau distribué de caches peut contribuer à réduire la latence.
+**Distribution**  géographique - Si vos utilisateurs sont répartis dans le monde entier, l&#39;utilisation d&#39;un réseau distribué de caches peut contribuer à réduire la latence.
 
-**Bande passante du réseau et latence** - En parlant de latence, qui sont vos clients et quel type de réseau utilisent-ils ? Peut-être que vos clients sont des clients mobiles dans un pays sous-développé qui utilisent la connexion 3G de smartphones de la génération précédente ? Envisagez de créer des objets plus petits et de les mettre en cache dans les caches du navigateur.
+**Bande passante du réseau et latence**  - En parlant de latence, qui sont vos clients et quel type de réseau utilisent-ils ? Peut-être que vos clients sont des clients mobiles dans un pays sous-développé qui utilisent la connexion 3G de smartphones de la génération précédente ? Envisagez de créer des objets plus petits et de les mettre en cache dans les caches du navigateur.
 
 Cette liste n&#39;est pas exhaustive, mais nous pensons que vous en avez l&#39;idée maintenant.
 
@@ -121,9 +121,9 @@ Chacune des couches introduites dans le dernier chapitre apporte une certaine va
 
 Il existe trois stratégies d&#39;invalidation de base :
 
-* **TTL, Temps de vie :** Un objet arrive à expiration après une durée fixe (par exemple, &quot;dans 2 heures&quot;).
-* **Date d&#39;expiration :** L’objet expire à une heure définie dans le futur (par exemple, &quot;17:00 PM le 10 juin 2019&quot;).
-* **Basé sur le événement :** L’objet est invalidé explicitement par un événement qui s’est produit sur la plateforme (par exemple, lorsqu’une page est modifiée et activée).
+* **TTL, Durée de vie :** un objet expire après une durée fixe (par exemple, &quot;dans 2 heures&quot;).
+* **Date d’expiration :** l’objet expire à une heure définie dans le futur (par exemple, &quot;17 h le 10 juin 2019&quot;).
+* **Basé sur le événement :** l’objet est invalidé explicitement par un événement qui s’est produit sur la plateforme (par exemple, lorsqu’une page est modifiée et activée).
 
 Vous pouvez maintenant utiliser différentes stratégies sur différentes couches de cache, mais il y en a quelques &quot;toxiques&quot;.
 
@@ -141,13 +141,13 @@ En d&#39;autres termes, les caches sont invalidés une par une après modificati
 
 Il suffit de garder une règle à l&#39;esprit :
 
-Toujours invalider du cache intérieur au cache extérieur. Si vous avez d’abord invalidé un cache externe, il est possible qu’il remette en cache le contenu obsolète d’un cache interne. Ne faites aucune supposition au moment où un cache est à nouveau en cache - assurez-vous qu&#39;il est bien. Mieux encore, en déclenchant l&#39;invalidation du cache externe _après_ l&#39;invalidation du cache interne.
+Toujours invalider du cache intérieur au cache extérieur. Si vous avez d’abord invalidé un cache externe, il est possible qu’il remette en cache le contenu obsolète d’un cache interne. Ne faites aucune supposition au moment où un cache est à nouveau en cache - assurez-vous qu&#39;il est bien. Mieux encore, en déclenchant l&#39;invalidation du cache externe _après_ invalidation du cache interne.
 
 Voilà la théorie. Mais en pratique, il y a un certain nombre de pièges. Les événements doivent être distribués - potentiellement sur un réseau. Dans la pratique, cela fait de la procédure d&#39;invalidation la plus difficile à mettre en oeuvre.
 
 #### Auto - Correctif
 
-Avec l&#39;invalidation fondée sur le événement, vous devriez avoir un plan d&#39;urgence. Que se passe-t-il si un événement d’invalidation est manqué ? Une stratégie simple pourrait être d&#39;invalider ou de purger après un certain temps. Donc - vous avez peut-être manqué ce événement et maintenant servir du contenu obsolète. Mais vos objets ont aussi un TTL implicite de plusieurs heures (jours) seulement. Finalement, le système se guérit automatiquement.
+Avec l&#39;invalidation fondée sur le événement, vous devriez avoir un plan d&#39;urgence. Que se passe-t-il si un événement d’invalidation est manqué ? Une stratégie simple pourrait être d&#39;invalider ou de purger après un certain temps. Donc - vous avez peut-être manqué ce événement et maintenant servir du contenu obsolète. Mais vos objets ont aussi un TTL implicite de plusieurs heures (jours) seulement. Finalement le système se guérit automatiquement.
 
 #### Invalidation pure basée sur TTL
 
@@ -223,7 +223,7 @@ Vous pouvez vous connecter à l’étape du processus de rendu pour ajouter des 
 
 #### Respect Contrôle d&#39;accès
 
-Les techniques décrites ici sont assez puissantes et _indispensables_ dans la boîte à outils de chaque développeur AEM. Mais ne soyez pas trop excités, utilisez-les sagement. En stockant un objet dans un cache et en le partageant avec d&#39;autres utilisateurs dans des demandes de suivi, cela signifie en fait contourner le contrôle d&#39;accès. En règle générale, ce n’est pas un problème sur les sites Web accessibles au public, mais cela peut se produire lorsqu’un utilisateur doit se connecter avant d’obtenir un accès.
+Les techniques décrites ici sont très puissantes et _doivent-avoir_ dans la boîte à outils de chaque développeur AEM. Mais ne soyez pas trop excités, utilisez-les sagement. En stockant un objet dans un cache et en le partageant avec d&#39;autres utilisateurs dans des demandes de suivi, cela signifie en fait contourner le contrôle d&#39;accès. En règle générale, ce n’est pas un problème sur les sites Web accessibles au public, mais cela peut se produire lorsqu’un utilisateur doit se connecter avant d’obtenir un accès.
 
 Envisagez de stocker les balises HTML d&#39;un menu principal de sites dans un cache mémoire afin de les partager entre différentes pages. En fait, c&#39;est un exemple parfait pour stocker du code HTML partiellement rendu, car la création d&#39;une navigation est généralement coûteuse car elle nécessite de parcourir de nombreuses pages.
 
@@ -247,7 +247,7 @@ Qu&#39;est-ce que cela signifie ?
 
 4. Même si vous créez un mince &quot;wrapper&quot; autour d&#39;une ressource d&#39;AEM, vous ne devez pas la mettre en cache - même si elle est la vôtre et immuable. L&#39;objet enveloppé serait une référence (que nous interdisons auparavant) et si nous avons l&#39;air pointu, cela crée essentiellement les mêmes problèmes que ceux décrits dans le dernier article.
 
-5. Si vous souhaitez mettre en cache, créez vos propres objets en copiant des données primitives dans vos propres objets shallo. Vous pouvez lier vos propres objets par référence, par exemple vous pouvez mettre en cache une arborescence d’objets. C&#39;est très bien, mais seulement des objets de cache que vous venez de créer dans la même requête, et aucun objet demandé ailleurs (même s&#39;il s&#39;agit de l&#39;espace nom de votre objet). _Copier des objets_ est la clé. Et veillez à purger la totalité de la structure des objets liés en même temps et à éviter les références entrantes et sortantes à votre structure.
+5. Si vous souhaitez mettre en cache, créez vos propres objets en copiant des données primitives dans vos propres objets shallo. Vous pouvez lier vos propres objets par référence, par exemple vous pouvez mettre en cache une arborescence d’objets. C&#39;est très bien, mais seulement des objets de cache que vous venez de créer dans la même requête, et aucun objet demandé ailleurs (même s&#39;il s&#39;agit de l&#39;espace nom de votre objet). _La copie d’_ objets est la clé. Et veillez à purger la totalité de la structure des objets liés en même temps et à éviter les références entrantes et sortantes à votre structure.
 
 6. Oui - et garder vos objets immuables. Propriétés privées, uniquement et sans paramètre.
 
@@ -259,13 +259,13 @@ Cette série porte sur la compréhension des concepts et vous permet de construi
 
 Nous ne promouvons aucun outil en particulier. Mais donnez-vous des indices pour les évaluer. Par exemple, AEM a un cache simple intégré avec un TTL fixe depuis la version 6.0. Voulez-vous l&#39;utiliser ? Probablement pas lors de la publication lorsqu’un cache basé sur un événement suit la chaîne (indice : Répartiteur). Mais cela pourrait être un choix décent pour un auteur. Il y a aussi un cache HTTP par Adobe ACS commons qui pourrait être utile à considérer.
 
-Ou vous créez votre propre structure, basée sur une structure de mise en cache mature comme [Ehcache](https://www.ehcache.org). Vous pouvez l’utiliser pour mettre en cache des objets Java et des balises rendues (`String` objets).
+Vous pouvez également créer votre propre structure, en fonction d’une structure de mise en cache mature telle que [Ehcache](https://www.ehcache.org). Vous pouvez l’utiliser pour mettre en cache des objets Java et des balises rendues (`String` objets).
 
 Dans certains cas simples, vous pouvez également vous habituer à utiliser des cartes de hachage simultanées - vous verrez rapidement des limites ici - soit dans l&#39;outil, soit dans vos compétences. La simultanéité est aussi difficile à maîtriser que l’attribution de noms et la mise en cache.
 
 #### Références
 
-* [Cache HTTP ACS Commons ](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
+* [Cache HTTP ACS Commons  ](https://adobe-consulting-services.github.io/acs-aem-commons/features/http-cache/index.html)
 * [Structure de mise en cache Ehcache](https://www.ehcache.org)
 
 ### Termes de base
@@ -274,7 +274,7 @@ Nous n&#39;entrerons pas dans la théorie de la mise en cache trop profonde ici,
 
 #### Expulsion du cache
 
-Nous avons beaucoup parlé d&#39;invalidation et de purge. _L’expulsion_ du cache est liée aux termes suivants : Après une entrée, elle est expulsée, elle n&#39;est plus disponible. Mais l&#39;expulsion ne se produit pas lorsqu&#39;une entrée est obsolète, mais lorsque le cache est plein. Les éléments plus récents ou &quot;plus importants&quot; poussent les éléments plus anciens ou moins importants hors du cache. Quelles entrées vous devrez sacrifier est une décision au cas par cas. Vous pouvez expulser les plus anciens ou ceux qui ont été utilisés très rarement ou pour la dernière fois depuis longtemps.
+Nous avons beaucoup parlé d&#39;invalidation et de purge. _Les_ expulsions de cache sont liées aux termes suivants : Après une entrée, elle est expulsée, elle n&#39;est plus disponible. Mais l&#39;expulsion ne se produit pas lorsqu&#39;une entrée est obsolète, mais lorsque le cache est plein. Les éléments plus récents ou &quot;plus importants&quot; poussent les éléments plus anciens ou moins importants hors du cache. Quelles entrées vous devrez sacrifier est une décision au cas par cas. Vous pouvez expulser les plus anciens ou ceux qui ont été utilisés très rarement ou pour la dernière fois depuis longtemps.
 
 #### Mise en cache préventive
 
@@ -357,7 +357,7 @@ Auparavant, lorsque vous utilisiez JSP comme moteur de création de modèles, il
 
 La balise personnalisée qui capturerait son corps et l&#39;écrirait dans le cache ou empêcherait l&#39;exécution de son corps et produirait plutôt la charge utile de l&#39;entrée de cache.
 
-La &quot;clé&quot; est le chemin d&#39;accès aux composants qu&#39;elle aurait sur la page d&#39;accueil. Nous n&#39;utilisons pas le chemin d&#39;accès du composant sur la page active, car cela créerait une entrée de cache par page, ce qui contredirait notre intention de partager ce composant. Nous n&#39;utilisons pas non plus uniquement les composants relatifs path (`jcr:conten/mainnavigation`), car cela nous empêcherait d&#39;utiliser des composants de navigation différents sur différents sites.
+La &quot;clé&quot; est le chemin d&#39;accès aux composants qu&#39;elle aurait sur la page d&#39;accueil. Nous n&#39;utilisons pas le chemin d&#39;accès du composant sur la page active, car cela créerait une entrée de cache par page, ce qui contredirait notre intention de partager ce composant. Nous n&#39;utilisons pas seulement le chemin relatif des composants (`jcr:conten/mainnavigation`), car cela nous empêcherait d&#39;utiliser différents composants de navigation sur différents sites.
 
 &quot;Cache&quot; est un indicateur indiquant où stocker l’entrée. En règle générale, vous disposez de plus d’un cache dans lequel vous stockez des éléments. Chacun d&#39;eux peut se comporter un peu différemment. Il est donc bon de différencier ce qui est stocké - même si au final ce ne sont que des chaînes.
 
@@ -377,7 +377,7 @@ Le cache de fragments est utilisé si vous disposez d’une constante (la naviga
 
 Mais vous avez peut-être aussi le contraire, un contexte relativement constant (une page qui change rarement) et certains fragments changeants sur cette page (par exemple, un télex en direct).
 
-Dans ce cas, vous pouvez donner une chance à [Sling Dynamic Inclut](https://sling.apache.org/documentation/bundles/dynamic-includes.html) . Il s’agit essentiellement d’un filtre de composant qui entoure le composant dynamique et, au lieu de le rendre dans la page, il crée une référence. Cette référence peut être un appel Ajax, de sorte que le composant soit inclus par le navigateur et que la page environnante puisse donc être mise en cache de manière statique. Ou - alternativement - Sling Dynamic Include peut générer une directive SSI (Server Side Include). Cette directive serait exécutée sur le serveur Apache. Vous pouvez même utiliser les directives ESI - Edge Side Include si vous utilisez le vernis ou un CDN qui prend en charge les scripts ESI.
+Dans ce cas, vous pouvez donner une chance à [Sling Dynamic Incluts](https://sling.apache.org/documentation/bundles/dynamic-includes.html). Il s’agit essentiellement d’un filtre de composant qui entoure le composant dynamique et, au lieu de le rendre dans la page, il crée une référence. Cette référence peut être un appel Ajax, de sorte que le composant soit inclus par le navigateur et que la page environnante puisse donc être mise en cache de manière statique. Ou - alternativement - Sling Dynamic Include peut générer une directive SSI (Server Side Include). Cette directive serait exécutée sur le serveur Apache. Vous pouvez même utiliser les directives ESI - Edge Side Include si vous utilisez le vernis ou un CDN qui prend en charge les scripts ESI.
 
 ![Diagramme de séquence d’une requête utilisant l’inclusion dynamique Sling](assets/chapter-3/sequence-diagram-sling-dynamic-include.png)
 
@@ -387,7 +387,7 @@ Dans ce cas, vous pouvez donner une chance à [Sling Dynamic Inclut](https://sli
 
 La documentation SDI indique que vous devez désactiver la mise en cache pour les URL se terminant par &quot;*.nocache.html&quot;, ce qui est logique, puisque vous traitez de composants dynamiques.
 
-Une autre option permet d’utiliser SDI : Si vous _ne désactivez pas_ le cache du répartiteur pour les inclusions, le répartiteur se comporte comme un cache-fragment semblable à celui que nous avons décrit dans le dernier chapitre : Les pages et les fragments de composants sont mis en cache de manière égale et indépendante dans le répartiteur et assemblés ensemble par le script SSI dans le serveur Apache lorsque la page est demandée. Ainsi, vous pouvez implémenter des composants partagés comme la navigation principale (étant donné que vous utilisez toujours la même URL de composant).
+Une autre option permet d’utiliser SDI : Si _ne_ désactivez pas le cache du répartiteur pour les inclusions, le répartiteur agit comme un cache de fragments semblable à celui que nous avons décrit dans le dernier chapitre : Les pages et les fragments de composants sont mis en cache de manière égale et indépendante dans le répartiteur et assemblés ensemble par le script SSI dans le serveur Apache lorsque la page est demandée. Ainsi, vous pouvez implémenter des composants partagés comme la navigation principale (étant donné que vous utilisez toujours la même URL de composant).
 
 Cela devrait marcher, en théorie. Mais...
 
@@ -413,7 +413,7 @@ Nous vous conseillons d&#39;étudier attentivement la documentation SDI. Il y a 
 
 Revoyons l&#39;affaire avec la navigation de nouveau. Nous supposions que chaque page nécessiterait la même annotation de la navigation.
 
-Mais ce n&#39;est peut-être pas le cas. Vous pouvez afficher différentes annotations pour l’élément dans la navigation qui représente la page __ active.
+Mais ce n&#39;est peut-être pas le cas. Vous souhaitez peut-être afficher différentes annotations pour l’élément dans la navigation qui représente la _page active_.
 
 ```
 Travel Destinations
@@ -444,7 +444,7 @@ News
 <is
 ```
 
-Il s&#39;agit de deux rendus complètement différents. Pourtant, l&#39;objet __ commercial - l&#39;arbre de navigation complet - est le même.  L&#39;objet __ métier ici serait un graphique d&#39;objets représentant les noeuds de l&#39;arborescence. Ce graphique peut être facilement stocké dans un cache mémoire. Rappelez-vous toutefois que ce graphique ne doit contenir aucun objet ni référencer aucun objet que vous n’avez créé vous-même, en particulier maintenant les noeuds JCR.
+Il s&#39;agit de deux rendus complètement différents. Pourtant, l&#39;objet commercial __ - l&#39;arborescence de navigation complète - est le même.  L&#39;_objet commercial_ ici serait un graphique d&#39;objets représentant les noeuds de l&#39;arborescence. Ce graphique peut être facilement stocké dans un cache mémoire. Rappelez-vous toutefois que ce graphique ne doit contenir aucun objet ni référencer aucun objet que vous n’avez créé vous-même, en particulier maintenant les noeuds JCR.
 
 #### Mise en cache dans le navigateur
 
@@ -474,7 +474,7 @@ Il n’y a qu’une chose que nous vous demandons de ne pas faire, lorsque vous 
 
 Ne rechargez pas les pages dans le navigateur !
 
-Un &quot;rechargement du navigateur&quot;, un rechargement __ simple ainsi qu’un rechargement __ forcé (&quot;_shift-reload_&quot;) ne sont pas identiques à une requête de page normale. Une requête de rechargement simple définit un en-tête
+Un &quot;rechargement du navigateur&quot;, un _simple-reload_ ainsi qu&#39;un _rechargement forcé_ (&quot;_shift-reload_&quot;) ne sont pas identiques à une requête de page normale. Une requête de rechargement simple définit un en-tête
 
 ```
 Cache-Control: max-age=0
@@ -508,13 +508,13 @@ La mise en cache est difficile, tout comme le test d&#39;un système qui repose 
 
 Nous pensons que vous devrez effectuer plusieurs tests et que vous devrez fournir plus d&#39;un indice de performance pour mesurer la qualité de votre solution.
 
-Si vous disposez déjà d’un site Web, mesurez le nombre de requêtes et leur mode de distribution. Essayez de modéliser un test qui utilise une distribution similaire de requêtes. ajouter un peu de hasard ne pouvait pas faire mal. Vous n&#39;avez pas à simuler un navigateur qui chargerait des ressources statiques comme JS et CSS - celles-ci n&#39;ont pas vraiment d&#39;importance. Ils sont éventuellement mis en cache dans le navigateur ou dans le Répartiteur et n’atteignent pas la charge de manière significative. Mais les images référencées ont leur importance. Recherchez également leur distribution dans les anciens fichiers journaux et modélisez un modèle de requête similaire.
+Si vous disposez déjà d’un site Web, mesurez le nombre de requêtes et leur mode de distribution. Essayez de modéliser un test qui utilise une distribution similaire de requêtes. Ajouter un peu de hasard ne pouvait pas faire mal. Vous n&#39;avez pas à simuler un navigateur qui chargerait des ressources statiques comme JS et CSS - celles-ci n&#39;ont pas vraiment d&#39;importance. Ils sont éventuellement mis en cache dans le navigateur ou dans le Répartiteur et n’atteignent pas la charge de manière significative. Mais les images référencées ont leur importance. Recherchez également leur distribution dans les anciens fichiers journaux et modélisez un modèle de requête similaire.
 
 Exécutez maintenant un test avec votre Répartiteur sans aucune mise en cache. C&#39;est votre pire scénario. Déterminez à quel niveau de charge votre système devient instable dans les pires conditions. Vous pouvez également aggraver la situation en supprimant quelques pattes Répartiteur/Publier si vous le souhaitez.
 
 Ensuite, exécutez le même test avec tous les paramètres de cache requis sur &quot;on&quot;. Augmentez lentement vos requêtes parallèles pour réchauffer le cache et voir combien votre système peut prendre dans ces meilleures conditions.
 
-Un scénario de cas moyen consisterait à exécuter le test avec le répartiteur activé, mais aussi avec certaines invalidations. Vous pouvez simuler cela en touchant les fichiers d’état par un travail de retouche ou en envoyant les demandes d’invalidation à intervalles irréguliers au Répartiteur. N&#39;oubliez pas également de purger de temps à autre certaines des ressources non-auto invalidées.
+Un scénario de cas moyen consisterait à exécuter le test avec le répartiteur activé mais aussi avec certaines invalidations. Vous pouvez simuler cela en touchant les fichiers d’état par un travail de retouche ou en envoyant les demandes d’invalidation à intervalles irréguliers au Répartiteur. N&#39;oubliez pas également de purger de temps à autre certaines des ressources non-auto invalidées.
 
 Vous pouvez varier le dernier scénario en augmentant les demandes d’invalidation et en augmentant la charge.
 
