@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Marquage des pages {#using-page-tagging-with-aem-sites}
+# Balisage de pages {#using-page-tagging-with-aem-sites}
 
 Découvrez comment gérer et organiser vos pages Web dans Adobe Experience Manager à l’aide du balisage.
 
