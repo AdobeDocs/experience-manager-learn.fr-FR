@@ -50,7 +50,7 @@ Connectez-vous à AEM Forms.
 * Veillez à enregistrer vos modifications.
    ![fdm](assets/requestattribute.gif)
 
-## Test de la Diffusion de courriel du Document de Canal Web {#test-email-delivery-of-web-channel-document}
+## Tester la Diffusion de courriel du Document de Canal Web {#test-email-delivery-of-web-channel-document}
 
 * [Installation des exemples de ressources à l’aide du gestionnaire de packages](assets/webchanneldelivery.zip)
 * [Connexion à crx](http://localhost:4502/crx/de/index.jsp#)
@@ -71,4 +71,4 @@ Connectez-vous à AEM Forms.
 
 >[!NOTE]
 >
->Veuillez consulter le fichier **/apps/AEMForms/fetchad/GET.jsp** dans crx. Assurez-vous que la variable String webChannelDocument pointe vers un chemin d&#39;document de communication valide.
+>Consultez le fichier **/apps/AEMForms/fetchad/GET.jsp** dans crx. Assurez-vous que la variable String webChannelDocument pointe vers un chemin d&#39;document de communication valide.
