@@ -25,19 +25,19 @@ Les balises actives personnalisées ou les balises actives améliorées peuvent 
 
 >[!VIDEO](https://video.tv.adobe.com/v/22254/?quality=12&learn=on)
 
-## Configuration de balises actives personnalisées pour les images pour AEM version 6.x{#set-up}
+## Configuration de balises actives personnalisées pour les images pour AEM 6.x{#set-up}
 
 >[!NOTE]
 > Les balises actives personnalisées pour les images sont automatiquement configurées pour AEM en tant que Cloud Service.
 
-Les balises actives personnalisées pour les images nécessitent des balises [dynamiques pour que les images soient configurées](./image-smart-tags.md#set-up).
+Les balises actives personnalisées pour les images nécessitent [des balises actives pour que les images soient configurées](./image-smart-tags.md#set-up).
 
-Découvrez comment configurer la formation des balises actives en AEM Assets à l’aide de Smart Content Service et des E/S d’Adobe. Balises dynamiques personnalisées pour les images
+Découvrez comment configurer la formation des balises actives en AEM Assets à l’aide de Smart Content Service et de Adobe I/O. Balises dynamiques personnalisées pour les images
 
 >[!VIDEO](https://video.tv.adobe.com/v/23405/?quality=12&learn=on)
 
 ## Ressources supplémentaires
 
-* aem 6.4 nécessite le Service Pack [le](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64)plus récent.
+* aem 6.4 requiert le Service Pack [le plus récent ](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
 
 
