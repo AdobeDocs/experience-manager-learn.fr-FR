@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: e13a5171fbeb9e1eb5f78d1c691bc8b4b896a998
 workflow-type: tm+mt
 source-wordcount: '775'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# Using the Adobe Client Data Layer with AEM Core Components {#overview}
+# Utilisation de la couche de données du client Adobe avec les composants principaux de AEM {#overview}
 
 La couche de données du client Adobe introduit une méthode standard pour collecter et stocker des données sur une expérience visiteuse sur une page Web, puis faciliter l&#39;accès à ces données. La couche de données client Adobe est indépendante de la plate-forme, mais elle est entièrement intégrée aux composants principaux pour l’utilisation avec AEM.
 
@@ -30,20 +30,20 @@ La couche de données du client Adobe introduit une méthode standard pour colle
 
 ## Explorer la couche de données
 
-Vous pouvez vous faire une idée de la fonctionnalité intégrée de la couche de données du client Adobe en utilisant les outils de développement de votre navigateur et le site [de référence](https://wknd.site/)WKND actif.
+Vous pouvez vous faire une idée de la fonctionnalité intégrée de la couche de données du client Adobe en utilisant les outils de développement de votre navigateur et le [site de référence WKND](https://wknd.site/) en direct.
 
 >[!NOTE]
 >
 > Captures d’écran ci-dessous extraites du navigateur Chrome.
 
 1. Accédez à [https://wknd.site](https://wknd.site)
-1. Ouvrez vos outils de développement et saisissez la commande suivante dans la **console**:
+1. Ouvrez vos outils de développement et saisissez la commande suivante dans la **console** :
 
    ```js
    window.adobeDataLayer.getState();
    ```
 
-   inspect la réponse pour afficher l’état actuel de la couche de données sur un site AEM. Vous devriez voir des informations sur la page et les composants individuels.
+   Inspect la réponse pour afficher l’état actuel de la couche de données sur un site AEM. Vous devriez voir des informations sur la page et les composants individuels.
 
    ![Réponse de la couche de données d&#39;Adobe](assets/data-layer-state-response.png)
 
@@ -60,7 +60,7 @@ Vous pouvez vous faire une idée de la fonctionnalité intégrée de la couche d
    });
    ```
 
-1. Exécutez à nouveau la commande `adobeDataLayer.getState()` et recherchez l&#39;entrée pour `training-data`.
+1. Exécutez à nouveau la commande `adobeDataLayer.getState()` et recherchez l&#39;entrée `training-data`.
 1. Ajoutez ensuite un paramètre de chemin pour renvoyer uniquement l’état spécifique d’un composant :
 
    ```js
@@ -92,13 +92,13 @@ Il est recommandé de déclencher tout code personnalisé basé sur un événeme
    }
    ```
 
-   Le code ci-dessus inspecte l&#39; `event` objet et utilise la `adobeDataLayer.getState` méthode pour obtenir l&#39;état actuel de l&#39;objet qui a déclenché le événement. La méthode de l&#39;aide inspectera alors les `filter` critères et elle ne sera renvoyée que si le filtre `dataObject` satisfait au filtre.
+   Le code ci-dessus inspectera l&#39;objet `event` et utilisera la méthode `adobeDataLayer.getState` pour obtenir l&#39;état actuel de l&#39;objet qui a déclenché le événement. La méthode d&#39;assistance examine ensuite les critères `filter` et elle est renvoyée uniquement si l&#39;élément `dataObject` actuel satisfait au filtre.
 
    >[!CAUTION]
    >
    > Il sera important de **ne pas** actualiser le navigateur tout au long de cet exercice, sinon le code JavaScript de la console sera perdu.
 
-1. Ensuite, saisissez un gestionnaire de événements qui sera appelé lorsqu’un composant **Teaser** s’affiche dans un **carrousel**.
+1. Ensuite, entrez un gestionnaire de événement qui sera appelé lorsqu&#39;un composant **Teaser** s&#39;affiche dans un **Carousel**.
 
    ```js
    function teaserShownHandler(event) {
@@ -110,9 +110,9 @@ Il est recommandé de déclencher tout code personnalisé basé sur un événeme
    }
    ```
 
-   Le `teaserShownHandler` système appelle la `getDataObjectHelper` méthode et transmet un filtre de `wknd/components/teaser` comme le pour `@type` filtrer les événements déclenchés par d&#39;autres composants.
+   `teaserShownHandler` appelle la méthode `getDataObjectHelper` et transmet un filtre `wknd/components/teaser` comme `@type` pour filtrer les événements déclenchés par d&#39;autres composants.
 
-1. Ensuite, poussez un écouteur de événement sur la couche de données pour écouter le `cmp:show` événement.
+1. Ensuite, poussez un écouteur de événement sur la couche de données pour écouter le événement `cmp:show`.
 
    ```js
    window.adobeDataLayer.push(function (dl) {
@@ -120,13 +120,13 @@ Il est recommandé de déclencher tout code personnalisé basé sur un événeme
    });
    ```
 
-   Le `cmp:show` événement est déclenché par de nombreux composants différents, comme lorsqu&#39;une nouvelle diapositive s&#39;affiche dans le **carrousel** ou lorsqu&#39;un nouvel onglet est sélectionné dans le composant **Tabulation** .
+   Le événement `cmp:show` est déclenché par de nombreux composants différents, comme lorsqu&#39;une nouvelle diapositive est affichée dans le **Carrousel** ou lorsqu&#39;un nouvel onglet est sélectionné dans le composant **Tabulation**.
 
 1. Sur la page, basculez les diapositives du carrousel et observez les instructions de la console :
 
    ![Basculer vers le carrousel et afficher l’écouteur de événement](assets/teaser-console-slides.png)
 
-1. Supprimez l’écouteur de événement de la couche de données pour arrêter l’écoute du `cmp:show` événement :
+1. Supprimez l’écouteur de événement de la couche de données pour arrêter d’écouter le événement `cmp:show` :
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -151,7 +151,7 @@ Il est recommandé de déclencher tout code personnalisé basé sur un événeme
 
    Notez que le type de ressource `wknd/components/page` est utilisé pour filtrer le événement.
 
-1. Ensuite, poussez un écouteur de événement sur la couche de données pour écouter le `cmp:show` événement, en appelant le `pageShownHandler`.
+1. Ensuite, poussez un écouteur de événement sur la couche de données pour écouter le événement `cmp:show`, en appelant `pageShownHandler`.
 
    ```js
    window.adobeDataLayer = window.adobeDataLayer || [];
@@ -164,16 +164,16 @@ Il est recommandé de déclencher tout code personnalisé basé sur un événeme
 
    ![Données d’affichage de page](assets/page-show-console-data.png)
 
-   Le `cmp:show` événement de la page est déclenché à chaque chargement de page tout en haut de la page. Vous pouvez demander pourquoi le gestionnaire de événements a-t-il été déclenché alors que la page a clairement déjà été chargée ?
+   Le événement `cmp:show` de la page est déclenché à chaque chargement de page tout en haut de la page. Vous pouvez demander pourquoi le gestionnaire de événements a-t-il été déclenché alors que la page a clairement déjà été chargée ?
 
    Il s&#39;agit de l&#39;une des caractéristiques uniques de la couche de données du client Adobe, en ce sens que vous pouvez enregistrer les écouteurs de événement **avant** ou **après** l&#39;initialisation de la couche de données. Il s&#39;agit là d&#39;une fonction essentielle pour éviter les conditions de concurrence.
 
-   La couche de données conserve un tableau de files d&#39;attente de tous les événements qui se sont produits dans l&#39;ordre. La couche de données déclenche par défaut des rappels de événement pour les événements qui se sont produits dans le **passé** ainsi que pour les événements dans le **futur**. Il est possible de filtrer les événements au-delà ou à l&#39;avenir. [Vous trouverez plus d&#39;informations dans la documentation](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
+   La couche de données conserve un tableau de files d&#39;attente de tous les événements qui se sont produits dans l&#39;ordre. Par défaut, la couche de données déclenche des rappels de événement pour les événements qui se sont produits dans **passé** ainsi que pour les événements dans **futur**. Il est possible de filtrer les événements au-delà ou à l&#39;avenir. [Vous trouverez plus d&#39;informations dans la documentation](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener).
 
 
 ## Étapes suivantes
 
-Consultez le didacticiel suivant pour savoir comment utiliser la couche de données client Adobe orientée événement pour [collecter des données de page et les envoyer à Adobe Analytics](../analytics/collect-data-analytics.md).
+Consultez le didacticiel suivant pour savoir comment utiliser la couche de données client Adobe pilotée par le événement pour [collecter des données de page et les envoyer à Adobe Analytics](../analytics/collect-data-analytics.md).
 
 
 ## Ressources supplémentaires {#additional-resources}
