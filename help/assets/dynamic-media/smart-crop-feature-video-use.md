@@ -21,7 +21,7 @@ ht-degree: 13%
 ---
 
 
-# Using Smart Crop with AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
+# Utilisation de la recadrage dynamique avec AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
 
 Smart Crop utilise Adobe Sensei pour éliminer les tâches fastidieuses et coûteuses de recadrage de contenu pour une conception adaptée.
 
