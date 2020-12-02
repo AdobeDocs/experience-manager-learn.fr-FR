@@ -44,7 +44,7 @@ Les tableaux sont utilisés pour afficher les données sous forme de tableaux. L
    * Document de communication interactive
    * sampleretirementaccountdata.json
 
-* Ouvrez le Document de communication interactive en mode [d’](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html)édition.
+* Ouvrez le Document de communication interactive en [mode d’édition](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
 
 * Ajoutez le fragment de disposition TableDemo dans la section des contributions.
 * Lier les cellules du tableau aux éléments appropriés du modèle de données de formulaire, comme le montre la vidéo
