@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Gérer l’héritage Live Copy sur un composant {#manage-live-copy-component}
+# Gérer l&#39;héritage Live Copy sur un composant {#manage-live-copy-component}
 
 Comprendre comment gérer l&#39;héritage entre une Live Copy et son plan directeur au niveau des composants.
 
