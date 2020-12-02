@@ -1,6 +1,6 @@
 ---
 title: Configuration de ContextHub pour la personnalisation avec AEM Sites
-description: ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles. L’API Javascript ContextHub vous permet d’accéder aux magasins pour créer, mettre à jour et supprimer des données si nécessaire. En tant que tel, ContextHub représente une couche de données sur vos pages. Cette page décrit comment ajouter un hub de contexte à vos pages de site AEM.
+description: ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles. L’API JavaScript ContextHub vous permet d’accéder aux magasins pour créer, mettre à jour et supprimer des données si nécessaire. En tant que tel, ContextHub représente une couche de données sur vos pages. Cette page décrit comment ajouter un hub de contexte à vos pages de site AEM.
 feature: context-hub
 topics: personalization
 audience: developer, architect
@@ -11,14 +11,14 @@ translation-type: tm+mt
 source-git-commit: 1faf22f2e664b775c11e16cb1dfa18b363a7316b
 workflow-type: tm+mt
 source-wordcount: '426'
-ht-degree: 25%
+ht-degree: 35%
 
 ---
 
 
 # Configuration de ContextHub pour la personnalisation {#set-up-contexthub}
 
-ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles. L’API Javascript ContextHub vous permet d’accéder aux magasins pour créer, mettre à jour et supprimer des données si nécessaire. En tant que tel, ContextHub représente une couche de données sur vos pages. Cette page décrit comment ajouter un hub de contexte à vos pages de site AEM.
+ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles. L’API JavaScript ContextHub vous permet d’accéder aux magasins pour créer, mettre à jour et supprimer des données si nécessaire. En tant que tel, ContextHub représente une couche de données sur vos pages. Cette page décrit comment ajouter un hub de contexte à vos pages de site AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23765/?quality=9&learn=on)
 
@@ -30,7 +30,7 @@ Ajoutez ContextHub sur vos pages pour activer les fonctionnalités ContextHub et
 
 ## Ajout de ContextHub à un composant de page {#adding-contexthub-to-a-page-component}
 
-To enable the ContextHub features and to link to the ContextHub JavaScript libraries, include the `contexthub` component in the `<head>` section of your web page. Le code HTML de votre composant de page ressemble à l’exemple suivant :
+Pour activer les fonctionnalités ContextHub et créer un lien vers les bibliothèques JavaScript ContextHub, incluez le composant `contexthub` dans la section `<head>` de votre page Web. Le code HTML de votre composant de page ressemble à l’exemple suivant :
 
 ```java
 <!--/* Include Context Hub */-->
@@ -40,9 +40,9 @@ To enable the ContextHub features and to link to the ContextHub JavaScript libra
 
 ## Configuration du site et segments ContextHub {#site-configuration-and-contexthub-segments}
 
-ContextHub propose un moteur de segmentation qui gère les segments et détermine les segments qui sont résolus pour le contexte actuel. Plusieurs segments sont définis. Vous pouvez utiliser l’API Javascript pour [déterminer les segments résolus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). Activez les segments ContextHub pour votre site sous [[!UICONTROL Configuration Browser]](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html).
+ContextHub propose un moteur de segmentation qui gère les segments et détermine les segments qui sont résolus pour le contexte actuel. Plusieurs segments sont définis. Vous pouvez utiliser l’API Javascript pour [déterminer les segments résolus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). Activez les segments ContextHub pour votre site sous [[!UICONTROL Navigateur de configuration]](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/configurations.html).
 
-## Création de segments {#create-segments}
+## Créer des segments {#create-segments}
 
 Créez AEM segments qui agissent comme des règles pour les teasers. Autrement dit, ils définissent quand le contenu d&#39;une bande-annonce apparaît sur une page Web. Le contenu peut cibler les besoins et centres d’intérêts spécifiques des visiteurs en fonction du ou des segments correspondants.
 
