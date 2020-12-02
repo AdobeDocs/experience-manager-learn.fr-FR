@@ -61,11 +61,11 @@ Pour tester cette fonctionnalité sur votre serveur
 
 * [Importez et installez les actifs associés à cet article à l’aide du gestionnaire de packages.](assets/launch-agent-ui.zip)
 * [Connexion à configMgr](http://localhost:4502/system/console/configMgr)
-* Rechercher un filtre CSRF _Granite Adobe_
-* ajouter _/content/getprintchannel_ dans les chemins exclus
+* Rechercher _Adobe Granite CSRF Filter_
+* Ajoutez _/content/getprintchannel_ dans les Chemins exclus.
 * Enregistrez vos modifications.
 * [Ouvrez POST.jsp](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Assurez-vous que la chaîne transmise à FormFieldRequestParameter est un documentId valide.(Ligne 19).
-* [Ouvrez la page](http://localhost:4502/content/OpenPrintChannel.html) Web, saisissez le numéro de compte et envoyez le formulaire.
+* [Ouvrez la page ](http://localhost:4502/content/OpenPrintChannel.html) Web, saisissez le numéro de compte et envoyez le formulaire.
 * L’interface utilisateur de l’agent doit s’ouvrir avec les données pré-renseignées spécifiques au numéro de compte saisi dans le formulaire.
 
 >[!NOTE]
