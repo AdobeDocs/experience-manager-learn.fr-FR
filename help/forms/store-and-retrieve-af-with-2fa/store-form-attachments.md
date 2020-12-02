@@ -31,7 +31,7 @@ Voici le FileMap qui est envoyé à la servlet. La clé est le champ de formulai
 }
 ```
 
-Voici le code qui extrait les pièces jointes de la requête et les stocke dans le dossier **/content/afattachments** .
+Le code suivant extrait les pièces jointes de la requête et les stocke dans le dossier **/content/afattachments**.
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {
