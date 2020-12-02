@@ -17,8 +17,8 @@ ht-degree: 7%
 ---
 
 
-# Présentation [!DNL Sling] {#introduction-sling}
+# Introduction à [!DNL Sling] {#introduction-sling}
 
-Une introduction à [!DNL Sling], un cadre [!DNL RESTful] web open-source qui fait partie de la pile technologique sous-jacente de Adobe Experience Manager.
+Une introduction à [!DNL Sling], un cadre Web open source [!DNL RESTful] qui fait partie de la pile technologique sous-jacente de Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32032/?quality=12&learn=on)
