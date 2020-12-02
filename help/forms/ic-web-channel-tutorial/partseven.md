@@ -1,6 +1,6 @@
 ---
-title: ajouter du contenu de texte et d’image au document de canal Web
-seo-title: ajouter du contenu de texte et d’image au document de canal Web
+title: Ajouter du contenu de texte et d’image au document de canal Web
+seo-title: Ajouter du contenu de texte et d’image au document de canal Web
 description: 'Voici la partie 7 d''un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons ajouter des images et du contenu de texte au panneau d’en-tête. '
 seo-description: 'Voici la partie 7 d''un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons ajouter des images et du contenu de texte au panneau d’en-tête. '
 uuid: 440f8b74-3be7-4e58-a46e-4110065b7705
@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# ajouter du contenu de texte et d’image au document de canal Web
+# Ajouter du contenu de texte et d’image au document de canal Web
 
 Dans cette partie, nous allons ajouter des images et du contenu de texte au panneau d’en-tête.
 
