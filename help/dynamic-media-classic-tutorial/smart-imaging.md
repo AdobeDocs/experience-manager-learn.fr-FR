@@ -34,7 +34,7 @@ Les images constituant la majeure partie du temps de chargement d’une page, l�
 
 Comme nous l’avons vu plus haut, Smart Imaging tire parti des fonctionnalités d’IA Adobe Sensei et travaille avec les paramètres d’image prédéfinis existants pour convertir automatiquement les images en formats d’image de nouvelle génération optimaux, tels que WebP, tout en conservant la fidélité visuelle.
 
-En savoir plus sur [le fonctionnement](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work)de l’imagerie intelligente, y compris les détails tels que les formats d’image pris en charge (et ce qui se passe si vous n’utilisez pas ces formats) et son impact sur les paramètres d’image prédéfinis existants en cours d’utilisation.
+En savoir plus sur [Fonctionnement de l’imagerie intelligente](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), y compris des détails tels que les formats d’image pris en charge (et ce qui se passe si vous n’utilisez pas ces formats) et son impact sur les paramètres d’image prédéfinis existants en cours d’utilisation.
 
 ## Impacts de l&#39;imagerie intelligente
 
@@ -52,8 +52,8 @@ Activation des débuts d&#39;imagerie intelligente pour envoyer une demande d&#3
 
 Une fois que vous avez activé Smart Imaging, vous devez vérifier qu’il fonctionne comme prévu.
 
-Vous avez probablement d’autres questions sur Smart Imaging. Nous avons compilé une liste de questions fréquentes (FAQ) avec des réponses. Lisez les [FAQ](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html).
+Vous avez probablement d’autres questions sur Smart Imaging. Nous avons compilé une liste de questions fréquentes (FAQ) avec des réponses. Consultez les [FAQ](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Ressources supplémentaires
 
-Regardez le webinaire à la demande du créateur [de compétences en optimisation des performances des pages de](https://seminars.adobeconnect.com/pzc1gw0cihpv) Dynamic Media Classic pour en savoir plus sur l’imagerie intelligente.
+Consultez le webinaire à la demande [Dynamic Media Classic Optimizing Page Performance Performance Builder](https://seminars.adobeconnect.com/pzc1gw0cihpv) pour en savoir plus sur l’imagerie intelligente.
