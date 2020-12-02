@@ -36,7 +36,7 @@ Les groupes d’utilisateurs fermés (CUG) sont une fonction utilisée pour rest
 
 Le groupe Membres We.Retail a été ajouté en tant que groupe d’utilisateurs fermé au dossier : /content/dam/we-commerce/fr/beta-products
 
-Un mixin de **rep:CugMixin** est appliqué au dossier **/content/dam/we-commerce/en/beta-products** . Un noeud de **rep:cugPolicy** est ajouté sous le dossier et nous-commerçants-membres est spécifié comme entité de sécurité. Un autre mixin de **granite:AuthenticationRequired** est appliqué au dossier bêta-products et la propriété** granite:loginPath** spécifie la page de connexion à utiliser si un utilisateur n’est pas authentifié et tente de demander une ressource sous le dossier **bêta-products** .
+Un mixin de **rep:CugMixin** est appliqué au dossier **/content/dam/we-commerce/en/beta-products**. Un noeud de **rep:cugPolicy** est ajouté sous le dossier et we-détaillant-members est spécifié comme entité de sécurité. Un autre mixin de **granite:AuthenticationRequired** est appliqué au dossier bêta-products et la propriété** granite:loginPath** spécifie la page de connexion à utiliser si un utilisateur n&#39;est pas authentifié et tente de demander une ressource sous le dossier **beta-products**.
 
 Description JCR ci-dessous :
 
@@ -56,11 +56,11 @@ Les groupes d’utilisateurs fermés (CUG) et les Listes de Contrôle d&#39;acc�
 
 |  | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Utilisation prévue | Configurez et appliquez des autorisations pour le contenu sur l’instance **AEM actuelle** . | Configurez les stratégies CUG pour le contenu sur AEM instance **d’auteur** . Appliquez des stratégies CUG pour le contenu sur AEM instance de **publication** . |
+| Utilisation prévue | Configurez et appliquez des autorisations pour le contenu sur l&#39;instance d&#39;AEM **active**. | Configurez les stratégies CUG pour le contenu sur l&#39;instance d&#39;AEM **auteur**. Appliquez des stratégies CUG pour le contenu sur AEM instance **publish**. |
 | Niveaux d’autorisation | Définit les autorisations accordées/refusées pour les utilisateurs/groupes pour tous les niveaux : Lisez, modifiez, créez, supprimez, lisez ACL, modifiez ACL, répliquez. | Accorde l’accès en lecture à un ensemble d’utilisateurs/de groupes. Refusent l’accès en lecture à tous les autres utilisateurs/groupes. |
 | Réplication | Les listes ACL ne sont pas répliquées avec le contenu. | Les stratégies CUG sont répliquées avec du contenu. |
 
-## Liens pris en charge {#supporting-links}
+## Liens de prise en charge {#supporting-links}
 
 * [Gestion des ressources et des groupes d’utilisateurs fermés](https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets-touch-ui.html#ClosedUserGroup)
 * [Création d’un groupe d’utilisateurs fermé](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/cug.html)
