@@ -24,7 +24,7 @@ ht-degree: 4%
 
 Générer un Document d’enregistrement (DOR) par programmation
 
-Cet article illustre l&#39;utilisation du `com.adobe.aemds.guide.addon.dor.DoRService API` pour générer **le Document d&#39;enregistrement** par programmation. [Document d’enregistrement](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) est une version PDF des données capturées dans le formulaire adaptatif.
+Cet article illustre l&#39;utilisation de `com.adobe.aemds.guide.addon.dor.DoRService API` pour générer par programme **Document d&#39;enregistrement**. [Document d&#39;](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) enregistrement est une version PDF des données capturées dans le formulaire adaptatif.
 
 1. Voici le fragment de code. La première ligne reçoit le service DOR.
 1. Définissez les options DoRO.
@@ -45,10 +45,10 @@ com.adobe.aemds.guide.addon.dor.DoROptions dorOptions =  new com.adobe.aemds.gui
 Pour essayer cela sur votre système local, suivez les étapes ci-dessous.
 
 1. [Téléchargement et installation des ressources de l’article à l’aide du gestionnaire de packages](assets/dor-with-api.zip)
-1. Assurez-vous d’avoir installé et démarré le lot DevelopingWithServiceUser fourni dans le cadre de l’article [Create Service User.](service-user-tutorial-develop.md)
+1. Vérifiez que vous avez installé et démarré le lot DevelopingWithServiceUser fourni dans le cadre de l&#39;[article Créer un utilisateur de service](service-user-tutorial-develop.md)
 1. [Connexion à configMgr](http://localhost:4502/system/console/configMgr)
 1. Recherchez Apache Sling Service User Mapper Service .
-1. Assurez-vous que l’entrée suivante _DevelopingWithServiceUser.core:getformsresourceresolver=fd-service_ figure dans la section Mappages de service.
+1. Assurez-vous que l’entrée suivante _DevelopingWithServiceUser.core:getformsresourceresolver=fd-service_ dans la section Mappages de service.
 1. [Ouvrir le formulaire](http://localhost:4502/content/dam/formsanddocuments/sandbox/1201-borrower-payments/jcr:content?wcmmode=disabled)
 1. Remplissez le formulaire et cliquez sur &quot;Vue PDF&quot;
 1. Vous devriez voir le DOR dans le nouvel onglet de votre navigateur.
@@ -59,7 +59,7 @@ Pour essayer cela sur votre système local, suivez les étapes ci-dessous.
 Le fichier PDF ne s’affiche pas dans le nouvel onglet du navigateur :
 
 1. Veillez à ne pas bloquer les fenêtres contextuelles dans votre navigateur.
-1. Effectuez les étapes décrites dans cet [article](service-user-tutorial-develop.md)
-1. Assurez-vous que le lot &quot;DevelopingWithServiceUser&quot; est à l&#39;état *principal.*
-1. Assurez-vous que les données de l&#39;utilisateur système disposent des autorisations de lecture, de modification et de création sur le noeud suivant. `/content/usergenerated/content/aemformsenablement`
+1. Effectuez les étapes décrites dans cet [article](service-user-tutorial-develop.md).
+1. Assurez-vous que le lot &quot;DevelopingWithServiceUser&quot; est à *principal état*.
+1. Assurez-vous que les données de l&#39;utilisateur système possèdent des autorisations de lecture, de modification et de création sur le noeud suivant `/content/usergenerated/content/aemformsenablement`.
 
