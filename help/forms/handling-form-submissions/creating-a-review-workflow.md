@@ -25,13 +25,13 @@ Les workflows sont généralement utilisés pour acheminer les données envoyée
 
 ## Condition requise
 
-Assurez-vous d&#39;avoir une instance de travail d&#39;AEM Forms. Suivez le guide [d&#39;](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) installation pour installer et configurer AEM Forms.
+Assurez-vous d&#39;avoir une instance de travail d&#39;AEM Forms. Suivez le [guide d&#39;installation](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) pour installer et configurer AEM Forms.
 
 La vidéo suivante explique la création d’un processus de révision et d’approbation à l’aide des composants AEM Forms.
 >[!VIDEO](https://video.tv.adobe.com/v/40242/?quality=9&learn=on)
 
 
-Si, pour une raison quelconque, vous ne pouvez pas créer le flux de travaux, vous pouvez télécharger le flux de travaux terminé [ici](assets/review-submitted-data-workflow.zip) et importer le même flux à l’aide du gestionnaire de [packages](http://localhost:4502/crx/packmgr/index.jsp) dans votre instance AEM.
+Si, pour une raison quelconque, vous ne pouvez pas créer le flux de travaux, vous pouvez télécharger le flux de travaux terminé à partir de [ici](assets/review-submitted-data-workflow.zip) et importer la même opération à l&#39;aide de [gestionnaire de packages](http://localhost:4502/crx/packmgr/index.jsp) dans votre instance AEM.
 
 
 
