@@ -19,16 +19,16 @@ ht-degree: 0%
 
 # Utilisation du Tableau de bord d&#39;aperçu du système
 
-La fonction Aperçu  du système de Adobe Experience Manager (AEM) fournit une vue de haut niveau de la configuration, du matériel et de l’intégrité de l’instance AEM, à partir d’un seul tableau de bord.
+Le module Adobe Experience Manager (AEM) [!UICONTROL System Overview] fournit une vue de haut niveau de la configuration, du matériel et de l&#39;état de l&#39;instance AEM à partir d&#39;un seul tableau de bord.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
-1. Vous pouvez accéder à la présentation du système à partir de : **aem Début** > **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Aperçu **[!UICONTROL du système]**
+1. Vous pouvez accéder à la présentation du système à partir de : **AEM Début** > **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Présentation du système]**
 
    Directement à **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
-1. Vous pouvez exporter les informations de la Présentation [!UICONTROL du] système en cliquant sur le bouton [!UICONTROL Télécharger] . Les informations sont également exposées au moyen du [!DNL REST] point de terminaison suivant :
-1. Vous trouverez ci-dessous un exemple de sortie du fichier JSON qui est exporté depuis la Présentation [!UICONTROL du]système :
+1. Les informations de [!UICONTROL Présentation du système] peuvent être exportées en cliquant sur le bouton [!UICONTROL Télécharger]. Les informations sont également exposées au moyen du point de terminaison [!DNL REST] suivant :
+1. Vous trouverez ci-dessous un exemple de sortie du fichier JSON exporté à partir de [!UICONTROL System Overview] :
 
    ```json
    {
