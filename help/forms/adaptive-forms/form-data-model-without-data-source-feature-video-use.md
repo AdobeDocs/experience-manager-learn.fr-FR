@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Creating Form Data Model Without Data Source {#creating-form-data-model-without-data-source}
+# Création d’un modèle de données de formulaire sans source de données {#creating-form-data-model-without-data-source}
 
 Depuis AEM Forms 6.4, nous pouvons désormais définir le modèle de données de formulaire (FDM) sans l’associer à une source de données. La vidéo suivante décrit les étapes de création de FDM sans source de données.
 
