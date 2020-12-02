@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # Débogage des AEM en tant que Cloud Service avec CRXDE Lite
 
-CRXDE Lite est __SEULEMENT__ disponible sur AEM en tant qu’environnements de développement Cloud Service (ainsi que le SDK AEM local).
+Le CRXDE Lite est __UNIQUEMENT__ disponible sur AEM en tant qu&#39;environnements de développement Cloud Service (ainsi que le SDK AEM local).
 
 ## Accès au CRXDE Lite sur l’auteur AEM
 
-Le CRXDE Lite est __accessible uniquement__ sur AEM en tant qu’environnements de développement Cloud Service et __non__ sur les environnements de production ou d’évaluation.
+Le CRXDE Lite est __accessible uniquement__ sur l&#39;AEM en tant qu&#39;environnements de développement Cloud Service et __n&#39;est pas__ disponible sur l&#39;étape ou les environnements de production.
 
 Pour accéder au CRXDE Lite sur AEM Author :
 
@@ -48,7 +48,7 @@ Notez que `/apps`, `/libs` et `/oak:index` sont immuables, ce qui signifie qu’
 ![CRXDE Lite - Débogage du contenu](./assets/crxde-lite/debugging-content.png)
 
 Les modifications apportées au contenu modifiable au moment de l’exécution en AEM en tant qu’environnements de développement Cloud Service via CRXDE Lite doivent être effectuées avec précaution.
-Tout changement apporté directement à AEM par l&#39;intermédiaire d&#39;un CRXDE Lite peut être difficile à suivre et à gouverner. Le cas échéant, assurez-vous que les modifications apportées par l&#39;intermédiaire du CRXDE Lite reviennent aux packages de contenu modifiable (`ui.content`) du projet AEM et sont engagées dans Git, afin de vous assurer que le problème est résolu. Idéalement, toutes les modifications de contenu d’application proviennent de la base de code et sont acheminées vers l’AEM par le biais de déploiements, plutôt que d’apporter des modifications directement à l’AEM par l’intermédiaire du CRXDE Lite.
+Tout changement apporté directement à AEM par l&#39;intermédiaire d&#39;un CRXDE Lite peut être difficile à suivre et à gouverner. Le cas échéant, assurez-vous que les modifications effectuées par l&#39;intermédiaire du CRXDE Lite reviennent aux packages de contenu modifiable du projet AEM (`ui.content`) et qu&#39;elles sont appliquées à Git, afin de vous assurer que le problème est résolu. Idéalement, toutes les modifications de contenu d’application proviennent de la base de code et sont acheminées vers l’AEM par le biais de déploiements, plutôt que d’apporter des modifications directement à l’AEM par l’intermédiaire du CRXDE Lite.
 
 ### Débogage des contrôles d&#39;accès
 
@@ -66,18 +66,18 @@ Pour accéder à la console de Contrôle d&#39;accès de test dans le CRXDE Lite
 
 Les résultats s’affichent ci-dessous :
 
-+ __Le chemin__ répète le chemin qui a été évalué
-+ __L’entité de sécurité__ répète à l’utilisateur ou au groupe que le chemin d’accès a été évalué pour
-+ __Principales__ liste toutes les entités dont fait partie l&#39;entité de sécurité sélectionnée.
++ ____ Pathre réitère le chemin qui a été évalué
++ ____ Principal rappelle à l’utilisateur ou au groupe que le chemin d’accès a été évalué pour
++ ____ Principales répertorie toutes les entités dont fait partie l&#39;entité de sécurité sélectionnée.
    + Ceci s’avère utile pour comprendre les appartenances de groupe transitoires qui peuvent fournir des autorisations via l’héritage.
-+ __Privilèges au chemin d&#39;accès__ liste toutes les autorisations JCR dont dispose l&#39;entité de sécurité sélectionnée sur le chemin d&#39;accès évalué.
++ __Privilèges chez__ Path répertorie toutes les autorisations JCR dont dispose l&#39;entité de sécurité sélectionnée sur le chemin d&#39;accès évalué.
 
 ### Activités de débogage non prises en charge
 
-Les activités de débogage suivantes ne peuvent __pas__ être exécutées dans le CRXDE Lite.
+Les activités de débogage suivantes peuvent __ne pas__ être exécutées dans le CRXDE Lite.
 
 ### Débogage des configurations OSGi
 
-Les configurations OSGi déployées ne peuvent pas être examinées par CRXDE Lite. Les configurations OSGi sont conservées dans le package de `ui.apps` code du projet AEM à `/apps/example/config.xxx`; toutefois, lors du déploiement sur AEM en tant qu&#39;environnements Cloud Service, les ressources de configuration OSGi ne sont pas conservées dans le JCR, donc ne sont pas visibles par CRXDE Lite.
+Les configurations OSGi déployées ne peuvent pas être examinées par CRXDE Lite. Les configurations OSGi sont conservées dans le package de code `ui.apps` du projet AEM à `/apps/example/config.xxx`. Toutefois, lors du déploiement vers AEM en tant qu&#39;environnements Cloud Service, les ressources de configuration OSGi ne sont pas conservées dans le JCR, donc ne sont pas visibles par CRXDE Lite.
 
-Utilisez plutôt la Console [développeur > Configurations](./developer-console.md#configurations) pour passer en revue les configurations OSGi déployées.
+Utilisez plutôt [Console développeur > Configurations](./developer-console.md#configurations) pour passer en revue les configurations OSGi déployées.
