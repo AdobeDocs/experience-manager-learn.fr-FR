@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Le démarrage rapide local du SDK AEM permet le débogage Java à distance à partir de votre IDE, ce qui vous permet de passer en revue l’exécution du code en direct dans AEM pour comprendre le flux d’exécution exact.
 
-Pour connecter un débogueur distant à AEM, le démarrage rapide local du SDK AEM doit être démarré avec des paramètres spécifiques (`-agentlib:...`) permettant à l’IDE de se connecter à celui-ci.
+Pour connecter un débogueur distant à AEM, le démarrage rapide local du SDK AEM doit être démarré avec des paramètres spécifiques (`-agentlib:...`) permettant à l&#39;IDE de se connecter à celui-ci.
 
 ```
 $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar aem-author-p4502.jar   
@@ -36,8 +36,8 @@ $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar a
 
 La plupart des IDE Java prennent en charge le débogage à distance des programmes Java, mais les étapes de configuration exactes de chaque IDE varient. Consultez les instructions de configuration du débogage à distance de votre IDE pour connaître les étapes exactes. En règle générale, les configurations IDE nécessitent :
 
-+ Le démarrage rapide local du SDK AEM hôte est à l’écoute, ce qui est `localhost`le cas.
-+ Le démarrage rapide local du SDK de port AEM écoute la connexion de débogage à distance, qui est le port spécifié par le `address` paramètre lors du démarrage rapide local du SDK AEM.
++ Le démarrage rapide local du SDK AEM hôte est à l’écoute, c’est-à-dire `localhost`.
++ Le démarrage rapide local du kit de développement AEM port écoute la connexion de débogage à distance, qui est le port spécifié par le paramètre `address` lors du démarrage rapide local du kit SDK AEM.
 + Occasionnellement, les projets Maven qui fournissent le code source au débogage distant doivent être spécifiés ; il s’agit de votre ou vos projets d’expert OSGi.
 
 ### Configuration des instructions
