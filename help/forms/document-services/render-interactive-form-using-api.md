@@ -26,7 +26,7 @@ Dans cet article, nous examinerons le service suivant :
 
 * FormsService - Il s’agit d’un service très polyvalent qui vous permet d’exporter/d’importer des données de et dans un fichier PDF et de générer des fichiers PDF interactifs en fusionnant des données xml dans un modèle xdp.
 
-L’API javadoc officielle pour AEM Forms est répertoriée [ici.](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+L’API javadoc officielle pour AEM Forms est répertoriée [ici](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 Le fragment de code suivant affiche un fichier pdf interactif à l’aide de l’opération renderPDFForm de FormsService. Le fichier schengen.xdp est un modèle utilisé pour fusionner les données xml.
 
@@ -60,13 +60,13 @@ Ligne 11 : Renvoie le pdf interactif généré à l’application appelante.
 
 1. [Connexion à configMgr](http://localhost:4502/system/console/configMgr)
 1. Rechercher un filtre CSRF Granite Adobe
-1. ajoutez le chemin suivant dans les sections exclues et enregistrez
+1. Ajoutez le chemin suivant dans les sections exclues et enregistrez
 1. /bin/generateinteractivepdf
 1. [Ouverture du formulaire pour périphériques mobiles](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
-1. Renseignez quelques champs, puis cliquez sur le ***Télécharger et remplissez ....*** button
+1. Renseignez quelques champs, puis cliquez sur le ***Télécharger et remplir ....*** button
 1. Le pdf interactif doit être téléchargé sur votre système local.
 
 
-L’exemple de module contient le profil personnalisé associé au formulaire pour périphériques mobiles. Explorez le fichier [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp) . Ce fichier jsp extrait les données du formulaire mobile et envoie une requête de POST à la servlet montée sur le chemin ***/bin/generateinteractivepdf*** . La servlet renvoie le pdf interactif à l’application appelante. Le code du fichier customtoolbar.jsp télécharge ensuite le fichier sur votre système local.
+L’exemple de module contient le profil personnalisé associé au formulaire pour périphériques mobiles. Explorez le fichier [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp). Ce fichier jsp extrait les données du formulaire mobile et envoie une requête de POST au servlet monté sur le chemin ***/bin/generateinteractivepdf***. La servlet renvoie le pdf interactif à l’application appelante. Le code du fichier customtoolbar.jsp télécharge ensuite le fichier sur votre système local.
 
 
