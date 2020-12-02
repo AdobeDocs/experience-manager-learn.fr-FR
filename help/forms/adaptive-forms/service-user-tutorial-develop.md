@@ -34,7 +34,7 @@ Cet article décrit la création d’un utilisateur système et la configuration
 1. Définissez le type d&#39;utilisateur comme &quot; données &quot; et cliquez sur l&#39;icône verte pour terminer le processus de création de l&#39;utilisateur système.
 1. [Ouvrir configMgr](http://localhost:4502/system/console/configMgr)
 1. Recherchez &quot;Service Apache Sling User Mapper Service&quot; et cliquez sur pour ouvrir les propriétés.
-1. Cliquez sur l’icône *+* (plus) pour ajouter le mappage de services suivant.
+1. Cliquez sur l’icône *+* (plus) pour ajouter le mappage de service suivant.
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
@@ -46,10 +46,10 @@ Dans la configuration ci-dessus, le paramètre DevelopingWithServiceUser.core es
 Nous pouvons également obtenir le résolveur de ressources pour le compte de l&#39;utilisateur du service fd. Cet utilisateur de service est utilisé pour les services de document. Par exemple, si vous souhaitez certifier/appliquer des droits d’utilisation, etc., nous utiliserons le résolveur de ressources de l’utilisateur du service fd pour effectuer les opérations.
 
 1. [Téléchargez et décompressez le fichier zip associé à cet article.](assets/developingwithserviceuser.zip)
-1. Navigate to [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
+1. Accédez à [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 1. Téléchargement et début du lot OSGi
 1. Vérifier que le lot est à principal état
-1. Vous avez maintenant créé un utilisateur ** système et déployé le groupe *d’utilisateurs du* service.
+1. Vous avez maintenant créé un *utilisateur système* et déployé également le *groupe utilisateur du service*.
 
    Pour fournir l&#39;accès à /content, accordez à l&#39;utilisateur système (&#39; data &#39;) des autorisations de lecture sur le noeud de contenu.
 
