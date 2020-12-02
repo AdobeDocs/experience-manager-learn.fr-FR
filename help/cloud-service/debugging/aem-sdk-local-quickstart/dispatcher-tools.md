@@ -28,9 +28,9 @@ Le débogage des journaux des outils du répartiteur et du contenu du cache peut
 
 ## Journaux des outils du répartiteur
 
-Les journaux des outils du répartiteur sont disponibles via la commande `stdout` ou la `bin/docker_run` commande, ou avec plus de détails, dans le conteneur Docker à `/etc/https/logs`.
+Les journaux des outils du répartiteur sont disponibles via la commande `stdout` ou `bin/docker_run`, ou avec plus de détails, dans le conteneur Docker à `/etc/https/logs`.
 
-Voir Journaux [du répartiteur](./logs.md#dispatcher-logs) pour obtenir des instructions sur la façon d&#39;accéder directement aux journaux du conteneur du Docker des outils du répartiteur.
+Voir [Journaux du répartiteur](./logs.md#dispatcher-logs) pour obtenir des instructions sur la façon d&#39;accéder directement aux journaux du conteneur Docker des outils du répartiteur.
 
 ## Cache des outils du répartiteur
 
@@ -56,7 +56,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### Copie des journaux Docker vers le système de fichiers local
 
-Les journaux du répartiteur peuvent être copiés hors du conteneur Docker sur `/mnt/var/www/html` le système de fichiers local pour inspection à l&#39;aide de vos outils favoris. Notez qu’il s’agit d’une copie instantanée et qu’elle ne fournit pas de mises à jour en temps réel au cache.
+Les journaux du répartiteur peuvent être copiés hors du conteneur Docker à `/mnt/var/www/html` vers le système de fichiers local pour inspection à l&#39;aide de vos outils favoris. Notez qu’il s’agit d’une copie instantanée et qu’elle ne fournit pas de mises à jour en temps réel au cache.
 
 ```shell
 $ docker ps
