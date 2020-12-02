@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 69c1767098cc9da8ec0ae2bd83d25417d330f393
 workflow-type: tm+mt
 source-wordcount: '970'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
@@ -30,7 +30,7 @@ Ce didacticiel en plusieurs parties a pour but d’apprendre à un développeur 
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-Le tutoriel est conçu pour fonctionner avec **AEM comme Cloud Service** et est rétrocompatible avec **AEM 6.5+** et **AEM 6.4.2+**. Le site est mis en oeuvre à l’aide des éléments suivants :
+Le tutoriel est conçu pour fonctionner avec **AEM en tant que Cloud Service** et est rétrocompatible avec **AEM 6.5+** et **l&#39;AEM 6.4.2+**. Le site est mis en oeuvre à l’aide des éléments suivants :
 
 * [Archétype de projet Maven AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
 * [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
@@ -47,7 +47,7 @@ The WKND est un magazine et blog fictif en ligne qui se concentre sur la vie noc
 
 ### Kit d’interface utilisateur Adobe XD
 
-Pour rapprocher ce tutoriel d&#39;un scénario réel, des designers UX talentueux du Adobe ont créé les maquettes pour le site à l&#39;aide d&#39; [Adobe XD](https://www.adobe.com/products/xd.html). Au cours du tutoriel, divers éléments des conceptions sont mis en oeuvre dans un site d&#39;AEM entièrement créateur. Remerciements particuliers à **Lorenzo Buosi** et **Kilian Amendola** qui ont créé le magnifique design pour le site WKND.
+Pour rapprocher ce didacticiel d&#39;un scénario réel, des concepteurs UX talentueux du Adobe ont créé les maquettes pour le site à l&#39;aide de [Adobe XD](https://www.adobe.com/products/xd.html). Au cours du tutoriel, divers éléments des conceptions sont mis en oeuvre dans un site d&#39;AEM entièrement créateur. Remerciements particuliers à **Lorenzo Buosi** et **Kilian Amendola** qui ont créé la belle conception pour le site WKND.
 
 Téléchargez les XD kits d’interface utilisateur :
 
@@ -66,47 +66,47 @@ En outre, chaque partie du tutoriel a sa propre branche dans GitHub. Un utilisat
 
 >[!NOTE]
 >
-> Si vous travailliez avec la version précédente de ce didacticiel, vous pouvez toujours trouver les packages [de](https://github.com/adobe/aem-guides-wknd/releases/tag/archetype-18.1) solution et le [code](https://github.com/adobe/aem-guides-wknd/tree/archetype-18.1) sur GitHub.
+> Si vous travailliez avec la version précédente de ce didacticiel, vous pouvez toujours trouver les [packages de solution](https://github.com/adobe/aem-guides-wknd/releases/tag/archetype-18.1) et [code](https://github.com/adobe/aem-guides-wknd/tree/archetype-18.1) sur GitHub.
 
 ## Environnement de développement local {#local-dev-environment}
 
 Un environnement de développement local est nécessaire pour compléter ce tutoriel. Les captures d’écran et les vidéos sont capturées à l’aide de l’AEM en tant que SDK Cloud Service s’exécutant sur un environnement Mac OS. Sauf indication contraire, les commandes et le code doivent être indépendants du système d&#39;exploitation local.
 
-**Vous êtes nouveau à AEM en tant que Cloud Service ?** Consultez le guide [suivant pour configurer un environnement de développement local à l’aide de l’AEM en tant que SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)Cloud Service.
+**Vous êtes nouveau à AEM en tant que Cloud Service ?** Consultez le guide  [suivant pour configurer un environnement de développement local à l’aide de l’AEM en tant que SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) Cloud Service.
 
-**Nouveau à AEM 6.5 ?** Consultez le guide [suivant pour la configuration d&#39;un environnement](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)de développement local.
+**Nouveau à AEM 6.5 ?** Consultez le guide  [suivant pour la configuration d&#39;un environnement](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) de développement local.
 
 ### Logiciels requis
 
 Les éléments suivants doivent être installés localement :
 
-* [aem en tant que SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk) Cloud Service ou [AEM 6.5](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/technical-requirements.html) ou [AEM 6.4 + SP2](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html)
-* [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html) (AEM 6.5+ uniquement)
-* [Apache Maven](https://maven.apache.org/) (version 3.3.9 ou ultérieure)
-* [Node.js v10+](https://nodejs.org/en/)
+* [aem en tant que ](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk) SDKou  [AEM Cloud Service 6.5](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/technical-requirements.html) ou  [AEM 6.4 + SP2](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html)
+* [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)  (AEM 6.5+ uniquement)
+* [Apache Maven](https://maven.apache.org/)  (3.3.9 ou version ultérieure)
+* [Node.js v10+](https://nodejs.org/fr/)
 * [npm 6+](https://www.npmjs.com/)
 * [Git](https://git-scm.com/)
 
 ### Environnement intégré de développement (IDE)
 
-Ce didacticiel utilise [Eclipse](https://www.eclipse.org/) avec le module externe [Outil de développement](https://eclipse.adobe.com/aem/dev-tools/) AEM comme IDE, mais tout IDE prenant en charge les projets Java et Maven peut être utilisé. Dans ce didacticiel, la dépendance à l&#39;égard de fonctionnalités IDE spécifiques est minime.
+Ce didacticiel utilise [Eclipse](https://www.eclipse.org/) avec le [AEM Developer Tool Plugin](https://eclipse.adobe.com/aem/dev-tools/) comme IDE, cependant tout IDE prenant en charge les projets Java et Maven peut être utilisé. Dans ce didacticiel, la dépendance à l&#39;égard de fonctionnalités IDE spécifiques est minime.
 
-Pour obtenir des instructions détaillées sur l&#39;utilisation d&#39;Eclipse ou d&#39;autres IDE tels que [Visual Studio Code](https://code.visualstudio.com/) ou [IntelliJ](https://www.jetbrains.com/idea/), [consultez le guide](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)suivant.
+Pour obtenir des instructions détaillées sur l&#39;utilisation d&#39;Eclipse ou d&#39;autres IDE tels que [Visual Studio Code](https://code.visualstudio.com/) ou [IntelliJ](https://www.jetbrains.com/idea/), [consultez le guide suivant](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 ## Site de référence {#reference-site}
 
 Une version finale du site WKND est également disponible à titre de référence : [https://wknd.site/](https://wknd.site/)
 
-Le tutoriel couvre les principales compétences de développement nécessaires pour un développeur AEM, mais *pas* la construction complète du site de bout en bout. Le site de référence terminé est une autre ressource formidable pour explorer et voir plus d&#39;AEM fonctionnalités prêtes à l&#39;emploi.
+Le tutoriel couvre les principales compétences de développement requises pour un développeur AEM, mais *ne* ne construira pas l&#39;ensemble du site de bout en bout. Le site de référence terminé est une autre ressource formidable pour explorer et voir plus d&#39;AEM fonctionnalités prêtes à l&#39;emploi.
 
 Pour tester le code le plus récent avant de passer au didacticiel, téléchargez et installez la **[dernière version de GitHub](https://github.com/adobe/aem-guides-wknd/releases/latest)**.
 
 ### Proposé par Adobe Stock
 
-La plupart des images du site Web de référence WKND proviennent d’ [Adobe Stock](https://stock.adobe.com/) et sont des documents de tiers, tels que définis dans les termes supplémentaires des ressources de démonstration, à l’adresse [https://www.adobe.com/legal/terms.html](https://www.adobe.com/fr/legal/terms.html). Si vous souhaitez utiliser une image Adobe Stock à d’autres fins que l’affichage de ce site Web de démonstration, par exemple en l’affichant sur un site Web ou dans du matériel marketing, vous pouvez acheter une licence sur Adobe Stock.
+La plupart des images du site Web de référence WKND proviennent d&#39;[Adobe Stock](https://stock.adobe.com/) et sont des documents de tierces parties, tels que définis dans les termes supplémentaires des ressources de démonstration à l&#39;adresse [https://www.adobe.com/legal/terms.html](https://www.adobe.com/fr/legal/terms.html). Si vous souhaitez utiliser une image Adobe Stock à d’autres fins que l’affichage de ce site Web de démonstration, par exemple en l’affichant sur un site Web ou dans du matériel marketing, vous pouvez acheter une licence sur Adobe Stock.
 
 Avec Adobe Stock, vous avez accès à plus de 140 millions d&#39;images de haute qualité, libres de droits, dont des photos, des graphiques, des vidéos et des modèles pour lancer vos projets créatifs.
 
 ## Étapes suivantes {#next-steps}
 
-Qu&#39;attendez-vous ? ! Début du didacticiel en accédant au chapitre Configuration [du](project-setup.md) projet et en apprenant à générer un nouveau projet Adobe Experience Manager à l&#39;aide de l&#39;archétype de projet AEM.
+Qu&#39;attendez-vous ? ! Début du didacticiel en accédant au chapitre [Configuration du projet](project-setup.md) et en apprenant comment générer un nouveau projet Adobe Experience Manager à l&#39;aide de l&#39;archétype de projet AEM.
