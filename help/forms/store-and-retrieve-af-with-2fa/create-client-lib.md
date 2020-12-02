@@ -19,7 +19,7 @@ ht-degree: 6%
 
 # Créer une bibliothèque cliente
 
-Créez une bibliothèque [](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/developing/introduction/clientlibs.html) cliente qui inclura le code pour appeler la méthode `doAjaxSubmitWithFileAttachment` de l&#39; `guideBridge` API sur le événement de clic du bouton identifié par le bouton **savebutton** de la classe CSS.  Nous transmettons les données du formulaire adaptatif, `fileMap`et le `mobileNumber` au point de terminaison en écoutant `**/bin/storeafdatawithattachments`
+Créez [client lib](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/developing/introduction/clientlibs.html) qui inclura le code pour appeler la méthode `doAjaxSubmitWithFileAttachment` de l&#39;API `guideBridge` sur le événement de clic du bouton identifié par la classe CSS **savebutton**.  Nous transmettons les données du formulaire adaptatif, `fileMap`, et `mobileNumber` au point de terminaison en écoutant `**/bin/storeafdatawithattachments`
 
 Une fois les données du formulaire enregistrées, un identifiant d’application unique est généré et présenté à l’utilisateur dans une boîte de dialogue. Lors de la fermeture de la boîte de dialogue, l’utilisateur est amené au formulaire qui lui permet de récupérer le formulaire adaptatif enregistré à l’aide de l’identifiant d’application unique.
 
@@ -67,6 +67,6 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> Nous avons utilisé la bibliothèque [javascript de](http://bootboxjs.com/examples.html) bootbox pour afficher la boîte de dialogue
+> Nous avons utilisé [bootbox javascript library](http://bootboxjs.com/examples.html) pour afficher la boîte de dialogue.
 
-Les bibliothèques clientes utilisées dans cet exemple peuvent être [téléchargées ici.](assets/client-libraries.zip)
+Les bibliothèques clientes utilisées dans cet exemple peuvent être [téléchargées ici](assets/client-libraries.zip)
