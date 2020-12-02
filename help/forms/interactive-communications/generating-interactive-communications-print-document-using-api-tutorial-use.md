@@ -28,17 +28,17 @@ Lorsque vous déposez un fichier dans le dossier de contrôle, un script associ�
 
 Le fichier déposé dans le dossier de contrôle possède la structure suivante. Le code génère des instructions pour tous les numéros de comptes répertoriés dans le document XML.
 
-&lt;numéros de comptes>
+&lt;accountnumbers>
 
-&lt;numéro de compte>509840&lt;/numéro de compte>
+&lt;accountnumber>509840&lt;/accountnumber>
 
-&lt;numéro de compte>948576&lt;/numéro de compte>
+&lt;accountnumber>948576&lt;/accountnumber>
 
 &lt;accountnumber>398762&lt;/accountnumber>
 
-&lt;numéro de compte>291723&lt;/numéro de compte>
+&lt;accountnumber>291723&lt;/accountnumber>
 
-&lt;/accountnuméros>
+&lt;/accountnumbers>
 
 Le code ci-dessous répertorie les éléments suivants :
 
@@ -111,8 +111,8 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 **Pour tester cette fonctionnalité sur votre système local, suivez les instructions suivantes :**
 
 * Configurez Tomcat comme décrit dans cet [article.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat possède le fichier war qui génère les données d&#39;exemple.
-* Configurez le service comme utilisateur système, comme décrit dans cet [article](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Assurez-vous que cet utilisateur système dispose des autorisations de lecture sur le noeud suivant. Pour accorder les autorisations d&#39;accès à l&#39;administrateur [](https://localhost:4502/useradmin) utilisateur et rechercher les &quot;données&quot; de l&#39;utilisateur système et donner les autorisations de lecture sur le noeud suivant en appuyant sur l&#39;onglet permissions
+* Configurez le service comme utilisateur système tel que décrit dans cet [article](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Assurez-vous que cet utilisateur système dispose des autorisations de lecture sur le noeud suivant. Pour ouvrir une session d&#39;autorisation pour [l&#39;utilisateur admin](https://localhost:4502/useradmin) et rechercher l&#39;utilisateur système &quot;data&quot; et donner les autorisations de lecture sur le noeud suivant en appuyant sur l&#39;onglet permissions
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
