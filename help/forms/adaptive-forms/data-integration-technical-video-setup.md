@@ -20,7 +20,7 @@ ht-degree: 11%
 ---
 
 
-# Configuration de l’intégration des données avec AEM Forms {#set-up-data-integration-with-aem-forms}
+# Configurer l&#39;intégration des données avec AEM Forms {#set-up-data-integration-with-aem-forms}
 
 Configuration de la connexion de données à une source de données JDBC
 
@@ -30,9 +30,9 @@ Configuration de la connexion de données à une source de données JDBC
 >
 >Les pilotes JDBC MySQL doivent être installés via des lots OSGi sur l’instance AEM.
 
-## Documents de support {#supporting-materials}
+## Documents d&#39;appui {#supporting-materials}
 
 * [Téléchargement du lot MySQL JDBC OSGi](https://dev.mysql.com/downloads/connector/j/)
 
-   * Téléchargez, décompressez et installez le fichier JAR via [AEM Web Console.](http://localhost:4502/system/console/bundles)
+   * Téléchargez, décompressez et installez le fichier JAR via [AEM Web Console](http://localhost:4502/system/console/bundles).
 
