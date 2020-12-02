@@ -1,6 +1,6 @@
 ---
-title: aem forms avec Marketo (partie 2)
-seo-title: aem forms avec Marketo (partie 2)
+title: AEM Forms avec Marketo (partie 2)
+seo-title: AEM Forms avec Marketo (partie 2)
 description: Didacticiel pour intégrer AEM Forms à Marketo à l’aide du modèle de données de formulaire AEM Forms.
 seo-description: Didacticiel pour intégrer AEM Forms à Marketo à l’aide du modèle de données de formulaire AEM Forms.
 feature: adaptive-forms, form-data-model
@@ -203,5 +203,5 @@ public class MarketoConfigurationService {
 ```
 
 1. Créez et déployez le lot sur votre serveur AEM.
-1. [Pointez votre navigateur sur configMgr](http://localhost:4502/system/console/configMgr) et recherchez &quot;Configuration du service d’identification de Marketo&quot;.
+1. [Pointez votre navigateur sur ](http://localhost:4502/system/console/configMgr) configMgrand pour rechercher &quot;Configuration du service d’informations d’identification du marketing&quot;.
 1. Spécifiez les propriétés appropriées spécifiques à votre instance de marketing.
