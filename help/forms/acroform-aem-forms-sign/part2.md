@@ -20,16 +20,16 @@ ht-degree: 2%
 
 L’étape suivante consiste à créer un schéma à partir de l’Acroform créé à l’étape précédente. Un exemple d’application est fourni pour créer le schéma dans le cadre de ce didacticiel. Pour créer le schéma, suivez les instructions suivantes :
 
-1. Connexion au [CRXDE Lite](http://localhost:4502/crx/de)
+1. Connexion à [CRXDE Lite](http://localhost:4502/crx/de)
 2. Ouvrir dans le fichier `/apps/AemFormsSamples/components/createxsd/POST.jsp`
-3. Modifiez le dossier `saveLocation` en un dossier approprié sur votre disque dur. Assurez-vous que le dossier dans lequel vous enregistrez est déjà créé.
+3. Remplacez `saveLocation` par un dossier approprié sur votre disque dur. Assurez-vous que le dossier dans lequel vous enregistrez est déjà créé.
 4. Pointez votre navigateur sur [Créer une page XSD](http://localhost:4502/content/DocumentServices/CreateXsd.html) hébergée sur AEM.
 5. Faites glisser et déposez l’Acroform.
 6. Vérifiez le dossier spécifié à l’étape 3. Le fichier de schéma est enregistré à cet emplacement.
 
 ## Téléchargement de l’Acroform
 
-Pour que cette démonstration fonctionne sur votre système, vous devez créer un dossier appelé `acroforms` en AEM Assets. Téléchargez l’Acroform dans ce `acroforms` dossier.
+Pour que cette démonstration fonctionne sur votre système, vous devez créer un dossier appelé `acroforms` en AEM Assets. Téléchargez l’Acroform dans ce dossier `acroforms`.
 
 >[!NOTE]
 >
