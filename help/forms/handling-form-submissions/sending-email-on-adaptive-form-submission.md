@@ -19,7 +19,7 @@ ht-degree: 2%
 ---
 
 
-# Envoi d’un courrier électronique à l’envoi d’un formulaire adaptatif {#sending-email-on-adaptive-form-submission}
+# Envoi d&#39;un courrier électronique à l&#39;envoi d&#39;un formulaire adaptatif {#sending-email-on-adaptive-form-submission}
 
 L’une des actions courantes consiste à envoyer un courriel de confirmation à l’expéditeur lors de l’envoi réussi d’un formulaire adaptatif. Pour ce faire, nous sélectionnerons &quot;Envoyer un courriel&quot; comme action d’envoi.
 
@@ -33,7 +33,7 @@ Lorsque le formulaire adaptatif est envoyé, le destinataire reçoit un courrier
 
 ## Configurations nécessaires {#configurations-needed}
 
-Vous devrez configurer le service Day CQ Mail. Ceci peut être configuré en pointant votre navigateur vers [Felix Configuration Manager.](http://localhost:4502/system/console/configMgr)
+Vous devrez configurer le service Day CQ Mail. Ceci peut être configuré en pointant votre navigateur vers [Felix Configuration Manager](http://localhost:4502/system/console/configMgr).
 
 La capture d’écran présente les propriétés de configuration d’adobe mail server.
 
@@ -41,7 +41,7 @@ La capture d’écran présente les propriétés de configuration d’adobe mail
 
 Pour essayer ceci sur votre serveur, suivez les instructions suivantes :
 
-* [Importez les actifs](assets/timeoffrequest.zip) associés à cet article dans AEM à l’aide du gestionnaire de packages.
+* [Importez les ](assets/timeoffrequest.zip) actifs associés à cet article dans AEM à l’aide du gestionnaire de packages.
 
 * Ouvrez le [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 
