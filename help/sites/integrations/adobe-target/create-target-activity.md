@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# Création d’une Activité Adobe Target à l’aide d’Offres de fragments d’expérience {#target-activity-experience-fragment}
+# Créer une Activité Adobe Target à l’aide des Offres de fragments d’expérience {#target-activity-experience-fragment}
 
 Découvrez comment créer et tester une Activité Adobe Target à l’aide d’Offres de fragment d’expérience AEM.
 
