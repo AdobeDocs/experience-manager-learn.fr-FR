@@ -1,6 +1,6 @@
 ---
 title: Arrivée
-description: adobe Asset Link vous permet d’extraire directement AEM Assets de l’application créative sur laquelle vous travaillez et de commencer immédiatement à apporter des modifications. Vous pouvez facilement archiver les fichiers en AEM Assets avec un contrôle de version et des commentaires corrects après les avoir modifiés dans votre application Creative Cloud.
+description: Adobe Asset Link vous permet d’extraire directement AEM Assets de l’application créative sur laquelle vous travaillez et de commencer immédiatement à apporter des modifications. Vous pouvez facilement archiver les fichiers en AEM Assets avec un contrôle de version et des commentaires corrects après les avoir modifiés dans votre application Creative Cloud.
 sub-product: ressources
 feature: adobe-asset-link
 topics: authoring, collaboration, operations, sharing, metadata, images, operations
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 # Arrivée {#check-in-check-out}
 
-adobe Asset vous permet d’extraire directement AEM Assets de l’application créative sur laquelle vous travaillez et de commencer immédiatement à apporter des modifications. Vous pouvez facilement archiver les fichiers en AEM Assets avec un contrôle de version et des commentaires corrects après les avoir modifiés dans votre application Creative Cloud.
+Adobe Asset vous permet d’extraire directement AEM Assets de l’application créative sur laquelle vous travaillez et de commencer immédiatement à apporter des modifications. Vous pouvez facilement archiver les fichiers en AEM Assets avec un contrôle de version et des commentaires corrects après les avoir modifiés dans votre application Creative Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33886/?quality=12)
