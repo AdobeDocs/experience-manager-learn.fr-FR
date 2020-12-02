@@ -31,7 +31,7 @@ Aux fins de ce cours, nous avons créé et fourni les éléments suivants :
 
 Ce faisant, notre code dans le fichier jsp personnalisé ne sera exécuté que lorsque le formulaire adaptatif basé sur ce modèle personnalisé est rendu.
 
-* [Importer le package](assets/template-page-component.zip) à l’aide du gestionnaire de [packages](http://localhost:4502/crx/packmgr/index.jsp)
+* [Importation du gestionnaire de ](assets/template-page-component.zip) packages à l’aide du gestionnaire de  [packages](http://localhost:4502/crx/packmgr/index.jsp)
 * [Ouvrez fdmrequest.jsp](http://localhost:4502/crx/de/index.jsp#/apps/fdmdemo/component/page/fdmdemo/fdmrequest.jsp)
 * Ne commentez pas les lignes de commentaires.
 * Enregistrez vos modifications
