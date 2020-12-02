@@ -92,7 +92,7 @@ Même dans un centre de données local, une topologie &quot;Scale Out&quot; avec
 
 #### Limites de la topologie de mise à l’échelle
 
-ajouter des serveurs proxy devrait normalement augmenter les performances. Il existe toutefois des scénarios où l&#39;ajout de serveurs peut en fait réduire les performances. Comment ? Prenons l&#39;exemple d&#39;un portail d&#39;actualités, où vous présentez de nouveaux articles et pages chaque minute. Un Répartiteur invalide par &quot;auto-invalidation&quot; : Chaque fois qu’une page est publiée, toutes les pages du cache du même site sont invalidées. Il s&#39;agit d&#39;une fonctionnalité utile - nous en avons parlé dans le [chapitre 1](chapter-1.md) de cette série - mais cela signifie aussi que lorsque vous avez des modifications fréquentes sur votre site Web, vous invalidez le cache assez souvent. Si vous n’avez qu’un seul répartiteur par instance de publication, le premier visiteur demandant une page, déclenche une nouvelle mise en cache de cette page. Le deuxième visiteur obtient déjà la version mise en cache.
+Ajouter des serveurs proxy devrait normalement augmenter les performances. Il existe toutefois des scénarios où l&#39;ajout de serveurs peut en fait réduire les performances. Comment ? Prenons l&#39;exemple d&#39;un portail d&#39;actualités, où vous présentez de nouveaux articles et pages chaque minute. Un Répartiteur invalide par &quot;auto-invalidation&quot; : Chaque fois qu’une page est publiée, toutes les pages du cache du même site sont invalidées. Il s&#39;agit d&#39;une fonctionnalité utile - nous l&#39;avons traitée dans [Chapitre 1](chapter-1.md) de cette série - mais cela signifie aussi que lorsque vous avez des modifications fréquentes sur votre site Web, vous invalidez le cache assez souvent. Si vous n’avez qu’un seul répartiteur par instance de publication, le premier visiteur demandant une page, déclenche une nouvelle mise en cache de cette page. Le deuxième visiteur obtient déjà la version mise en cache.
 
 Si vous avez deux Répartiteurs, le deuxième visiteur a 50 % de chances que la page ne soit pas mise en cache, et il connaîtrait alors une latence plus importante lorsque la page est rendue à nouveau. Le fait d’avoir encore plus de répartiteurs par publication rend les choses encore plus difficiles. Ce qui se passe, c’est que le serveur de publication reçoit plus de charge car il doit rendre à nouveau la page pour chaque répartiteur séparément.
 
@@ -108,11 +108,11 @@ Vous pouvez utiliser un enregistrement partagé central pour tous les Répartite
 
 Nous avons eu quelques expériences avec NFS - mais NFS introduit d&#39;énormes problèmes de performances à cause du verrouillage de contenu. Cela a en fait diminué les performances globales.
 
-**Conclusion** - Le partage d&#39;un système de fichiers commun entre plusieurs répartiteurs n&#39;est PAS une approche recommandée.
+**Conclusion**  - Le partage d&#39;un système de fichiers commun entre plusieurs répartiteurs n&#39;est PAS une approche recommandée.
 
 Si vous rencontrez des problèmes de performances, redimensionnez également les services Publier et Répartiteurs afin d’éviter une charge maximale sur les instances d’éditeur. Il n’existe pas de règle d’or concernant le ratio Publier/Répartiteur - il dépend fortement de la distribution des requêtes et de la fréquence des publications et des invalidations de cache.
 
-Si vous êtes également préoccupé par la latence d’un visiteur, envisagez d’utiliser un réseau de diffusion de contenu, de récupérer le cache, de le réchauffer de façon préventive, de définir un délai de grâce comme décrit au [chapitre 1](chapter-1.md) de cette série ou de vous référer à des idées avancées de la [partie 3](chapter-3.md).
+Si vous êtes également préoccupé par la latence d’un visiteur, envisagez d’utiliser un réseau de diffusion de contenu, la récupération du cache, le réchauffement préemptif du cache, la définition d’un délai de grâce comme décrit dans le [Chapitre 1](chapter-1.md) de cette série ou faites référence à quelques idées avancées de [Partie 3](chapter-3.md).
 
 ### Configuration de la connexion croisée
 
