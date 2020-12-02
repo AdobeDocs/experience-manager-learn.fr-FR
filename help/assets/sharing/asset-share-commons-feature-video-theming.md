@@ -80,7 +80,7 @@ Dans cette vidéo, un nouveau thème sera créé en fonction du thème &quot;Ass
 @msgWarningBackgroundColor: @yellow;
 ```
 
-Télécharger le thème de la bibliothèque client [personnalisée](assets/asc-theme-demo.zip)
+Télécharger [Thème de bibliothèque client personnalisé](assets/asc-theme-demo.zip)
 
 ## Ressources supplémentaires{#additional-resources}
 
