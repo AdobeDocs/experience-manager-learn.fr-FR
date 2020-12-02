@@ -22,7 +22,7 @@ L’interface utilisateur de configuration de traduction permet à un utilisateu
 
 >[!NOTE]
 >
-> La vidéo ci-dessous a été enregistrée sur AEM 6.3. AEM 6.4+ introduit une nouvelle structure de référentiel pour le stockage du fichier XML des règles de traduction. Lors de l’utilisation de l’interface utilisateur de configuration de traduction dans AEM version 6.4+, les règles sont enregistrées à l’emplacement `/conf/global/settings/translation/rules/translation_rules.xml`. Voir [Identification du contenu à traduire](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html) pour plus d’informations.
+> La vidéo ci-dessous a été enregistrée sur AEM 6.3. AEM 6.4+ introduit une nouvelle structure de référentiel pour le stockage du fichier XML des règles de traduction. Lors de l’utilisation de l’interface utilisateur de configuration de traduction dans AEM version 6.4+, les règles sont enregistrées à l’emplacement `/conf/global/settings/translation/rules/translation_rules.xml`. Voir [Identification du contenu à traduire](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html) pour plus de détails.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18135/?quality=9&learn=on)
 
@@ -36,7 +36,7 @@ Les règles de traduction identifient le contenu AEM à extraire pour la traduct
 
 Accédez à l’interface utilisateur de configuration de traduction :
 
-* **[!UICONTROL aem menu]Début >[!UICONTROL Outils]>[!UICONTROL Général]> Configuration[[!UICONTROL de traduction]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
+* **[!UICONTROL aem menu]  Début>  [!UICONTROL Outils] >  [!UICONTROL Général] > Configuration  [[!UICONTROL de traduction]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
 
 ## Avant AEM 6.3 {#prior-to-aem}
 
