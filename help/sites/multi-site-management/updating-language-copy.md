@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Mise à jour d’une copie de langue à l’aide de lancements {#update-language-copy-launch}
+# Mise à jour d&#39;une copie de langue avec des lancements {#update-language-copy-launch}
 
 Découvrez comment mettre à jour, réviser et approuver les modifications dans une copie de langue à l’aide de la section Lancements.
 
