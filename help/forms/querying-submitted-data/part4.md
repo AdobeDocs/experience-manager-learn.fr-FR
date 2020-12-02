@@ -1,6 +1,6 @@
 ---
-title: aem forms avec Schéma et données JSON[Part4]
-seo-title: aem forms avec Schéma et données JSON[Part4]
+title: AEM Forms avec Schéma et données JSON[Part4]
+seo-title: AEM Forms avec Schéma et données JSON[Part4]
 description: Ce didacticiel en plusieurs parties vous explique comment créer un formulaire adaptatif avec le schéma JSON et interroger les données envoyées.
 seo-description: Ce didacticiel en plusieurs parties vous explique comment créer un formulaire adaptatif avec le schéma JSON et interroger les données envoyées.
 feature: adaptive-forms
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 L’étape suivante consiste à requête des données envoyées et à afficher les résultats sous forme de tableaux. Pour ce faire, nous utiliserons les logiciels suivants :
 
-[QueryBuilder](https://querybuilder.js.org/) - Composant d&#39;interface utilisateur pour créer des requêtes
+[QueryBuilder](https://querybuilder.js.org/)  - Composant d&#39;interface utilisateur pour créer des requêtes
 
-[Tableaux](https://datatables.net/)de données : pour afficher les résultats de la requête sous forme de tableaux.
+[Tableaux](https://datatables.net/) de données : pour afficher les résultats de la requête sous forme de tableaux.
 
 L’interface utilisateur suivante a été créée pour permettre l’interrogation des données envoyées. Seuls les éléments marqués comme requis dans le schéma JSON sont mis à la disposition de la requête. Dans la capture d&#39;écran ci-dessous, nous demandons toutes les soumissions pour lesquelles le pref de livraison est SMS.
 
@@ -62,7 +62,7 @@ public JSONArray getData(String formName) throws SQLException, IOException {
  }
 ```
 
-Lorsque l&#39;utilisateur clique sur le bouton GetResult, un appel Get est effectué à **&quot;/bin/querydata&quot;**. Nous transmettons la requête générée par l’interface utilisateur de QueryBuilder à la servlet via le paramètre de requête. La servlet transforme ensuite cette requête en requête SQL qui peut être utilisée pour requête de la base de données. Par exemple, si vous recherchez tous les produits nommés &quot;Souris&quot;, la chaîne de requête du créateur de Requêtes sera $.productname = &#39;Souris&#39;. Cette requête sera ensuite convertie en :
+Lorsque l&#39;utilisateur clique sur le bouton GetResult, un appel Get est envoyé à **&quot;/bin/querydata&quot;**. Nous transmettons la requête générée par l’interface utilisateur de QueryBuilder à la servlet via le paramètre de requête. La servlet transforme ensuite cette requête en requête SQL qui peut être utilisée pour requête de la base de données. Par exemple, si vous recherchez tous les produits nommés &quot;Souris&quot;, la chaîne de requête du créateur de Requêtes sera $.productname = &#39;Souris&#39;. Cette requête sera ensuite convertie en :
 
 SÉLECTIONNEZ * dans aemformswithjson .  formSubmissions où JSON_EXTRACT( formSubmissions .formdata,&quot;$.productName &quot;)= &#39;Souris&#39;
 
