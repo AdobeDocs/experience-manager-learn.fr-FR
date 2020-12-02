@@ -31,5 +31,5 @@ Cette vidéo présente les points forts de AEM boîte de réception.
 * Console d’informations sur le flux de travaux
 * Création de tâches ad hoc
 * Visibilité des tâches et des éléments de travail
-* [!DNL Inbox] et [!DNL Omnisearch] intégration
-* [!DNL Inbox] et [!DNL AEM Projects] intégration
+* [!DNL Inbox] et  [!DNL Omnisearch] intégration
+* [!DNL Inbox] et  [!DNL AEM Projects] intégration
