@@ -24,7 +24,7 @@ Ce didacticiel décrit les étapes nécessaires à l’enregistrement et à la r
 
 * Appelez un POST à une servlet. Cette servlet stocke les données dans la base de données. Les données stockées sont associées à un GUID
 
-* Lorsque vous souhaitez renseigner le formulaire adaptatif avec les données stockées, vous récupérez les données associées au GUID et vous renseignez le formulaire adaptatif à l’aide de la méthode **request.setAttribute** .
+* Lorsque vous souhaitez renseigner le formulaire adaptatif avec les données stockées, vous récupérez les données associées au GUID et renseignez le formulaire adaptatif à l’aide de la méthode **request.setAttribute**.
 
 ## Démonstration du cas d&#39;utilisation
 
