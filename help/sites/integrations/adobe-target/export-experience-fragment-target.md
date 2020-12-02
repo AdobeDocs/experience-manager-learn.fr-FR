@@ -18,7 +18,7 @@ ht-degree: 6%
 ---
 
 
-# Export Experience Fragment to Adobe Target {#experience-fragment-target}
+# Exporter le fragment d’expérience vers Adobe Target {#experience-fragment-target}
 
 Découvrez comment exporter AEM fragment d’expérience en tant qu’Offres Adobe Target.
 
@@ -28,7 +28,7 @@ Découvrez comment exporter AEM fragment d’expérience en tant qu’Offres Ado
 
 + [Création d’une Activité de Cible à l’aide d’Offres de fragments d’expérience](./create-target-activity.md)
 
-## Résolution des incidents
+## Dépannage
 
 ### Echec de l’exportation de fragments d’expérience vers la Cible
 
@@ -38,16 +38,16 @@ L’exportation du fragment d’expérience vers Adobe Target sans les autorisat
 
     ![Erreur de l&#39;interface utilisateur de l&#39;API de Cible](assets/error-target-offer.png)
 
-... et les messages de journal suivants dans le `aemerror` journal :
+... et les messages de journal suivants dans le journal `aemerror` :
 
     ![Erreur de la console de l&#39;API de Cible](assets/target-console-error.png)
 
 #### Résolution
 
-1. Connectez-vous au [Admin Console](https://adminconsole.adobe.com/) avec des droits d’administration pour le Profil de produits Adobe Target utilisé mais l’intégration AEM
-2. Sélectionnez __Produits > Adobe Target > Profil de produit.__
-3. Sous l&#39;onglet __Intégrations__ , sélectionnez l&#39;intégration de votre AEM en tant qu&#39;environnement Cloud Service (même nom que le projet d&#39;E/S Adobe).
-4. Attribuer un rôle __Editeur__ ou __Approbateur__
+1. Connectez-vous à [Admin Console](https://adminconsole.adobe.com/) avec des droits d’administration pour le Profil de produits Adobe Target utilisé mais l’intégration AEM
+2. Sélectionnez __Produits > Adobe Target > Profil de produit__
+3. Sous l&#39;onglet __Intégrations__, sélectionnez l&#39;intégration de votre AEM en tant qu&#39;environnement Cloud Service (même nom que le projet Adobe I/O).
+4. Attribuer le rôle __Editor__ ou __approbateur__
 
    ![Erreur de l&#39;API de cible](assets/target-permissions.png)
 
