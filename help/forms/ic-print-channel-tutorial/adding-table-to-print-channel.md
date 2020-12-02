@@ -1,6 +1,6 @@
 ---
-title: ajouter le tableau à la section des contributions
-seo-title: ajouter le tableau à la section des contributions
+title: Ajouter le tableau à la section des contributions
+seo-title: Ajouter le tableau à la section des contributions
 description: Voici la partie 9 du didacticiel en plusieurs étapes pour créer votre premier document de communication interactif.Dans cette partie, nous allons ajouter un tableau à la section des contributions.
 seo-description: Voici la partie 9 du didacticiel en plusieurs étapes pour créer votre premier document de communication interactif.Dans cette partie, nous allons ajouter un tableau à la section des contributions.
 uuid: 9475e769-a3f8-4aec-9b46-e0dc182b78a0
@@ -22,10 +22,10 @@ ht-degree: 0%
 ---
 
 
-# ajouter le tableau à la section des contributions
+# Ajouter le tableau à la section des contributions
 
 Dans cette partie, nous ajouterons un tableau à la section des contributions.
-Pour plus d&#39;informations sur l&#39;utilisation de tableaux dans le document de canal imprimé, consultez [Utilisation de tableaux dans le Canal](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) d&#39;impression.
+Pour plus d&#39;informations sur l&#39;utilisation des tableaux dans le document du canal imprimé, consultez [Utilisation des tableaux dans le Canal d&#39;impression](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md).
 
 Connectez-vous à AEM Forms et accédez à Adobe Experience Manager > Forms > Forms &amp; Documents.
 
