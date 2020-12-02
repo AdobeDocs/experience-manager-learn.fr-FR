@@ -56,5 +56,5 @@ aem 6.5 prend désormais en charge les fonctionnalités de recherche de texte in
 
 >[!VIDEO](https://video.tv.adobe.com/v/27720/?quality=9&learn=on)
 
-* **Les auteurs** de contenu (recherche interne) peuvent désormais rechercher une partie de texte dans un fragment d’expérience et le résultat inclut les fragments d’expérience contenant le texte ainsi que la page qui référence le fragment d’expérience.
-* **Les utilisateurs** du site (recherche externe) peuvent désormais effectuer une recherche de texte intégral à l’aide du composant de recherche, et le résultat inclut les pages du site qui référencent le fragment d’expérience contenant le mot-clé de recherche.
+* **Les auteurs**  de contenu (recherche interne) peuvent désormais rechercher une partie de texte dans un fragment d’expérience et le résultat inclut les fragments d’expérience contenant le texte ainsi que la page qui référence le fragment d’expérience.
+* **Les utilisateurs**  du site (recherche externe) peuvent désormais effectuer une recherche de texte intégral à l&#39;aide du composant de recherche, et le résultat inclut les pages du site qui référencent le fragment d&#39;expérience contenant le mot-clé de recherche.
