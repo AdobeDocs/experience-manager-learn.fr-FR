@@ -61,7 +61,7 @@ Cette vidéo décrit comment le contenu multimédia est géré dans Adobe Experi
 >
 >La fonctionnalité présentée ici est disponible avec le mode d’exécution Dynamic Media DMS7, notre mode d’exécution actuellement pris en charge, pas nécessairement le mode d’exécution DMHybrid, que DMS7 a remplacé. Cette vidéo fait référence à des concepts décrits dans la vidéo de la partie 1 (Présentation des médias dynamiques).
 
-Cette vidéo décrit le processus de création simple d’une collection de fichiers multimédias de la visionneuse de supports variés, y compris une visionneuse à 360°, une vidéo et une collection d’images de produits. ajoutez du contenu à la visionneuse de supports variés et créez une visionneuse personnalisée à partir de laquelle vous pouvez faire votre choix dans le composant Copier l’URL ou AEM Sites final.
+Cette vidéo décrit le processus de création simple d’une collection de fichiers multimédias de la visionneuse de supports variés, y compris une visionneuse à 360°, une vidéo et une collection d’images de produits. Ajoutez du contenu à la visionneuse de supports variés et créez une visionneuse personnalisée à partir de laquelle vous pouvez faire votre choix dans le composant Copier l’URL ou AEM Sites final.
 
 * Créer une visionneuse à 360° à partir des photos de produit appropriées
 * Téléchargement et codage d’une vidéo de fond pour la vidéo de média dynamique
@@ -102,7 +102,7 @@ Cette vidéo décrit comment aller au-delà du redimensionnement des images pour
 
 Equilibrer la qualité de l’image jpeg par rapport à la taille de fichier résultante (en kilo-octets) afin d’améliorer la vitesse de chargement des pages, en utilisant 2 commandes pour ajuster les paramètres de compression jpeg. QLT définit la qualité d’image en ajustant les paramètres de qualité de compression JPEG. La commande Taille JPEG vous permet de désigner la taille de fichier à atteindre à l’aide de la compression.
 
-## ajouter le sous-titrage CC à la vidéo de support dynamique
+## Ajouter le sous-titrage CC à la vidéo de support dynamique
 
 >[!VIDEO](https://video.tv.adobe.com/v/28074/?quality=9&learn=on)
 
