@@ -24,4 +24,4 @@ La vidéo explique les différentes étapes nécessaires à la configuration d�
 
 Les ressources liées à cette vidéo peuvent être téléchargées à partir du lien suivant :
 
-* [Modification Du Formulaire Du Bénéficiaire ](assets/change-of-beneficiary-form.zip)
+* [Modification Du Formulaire Du Bénéficiaire  ](assets/change-of-beneficiary-form.zip)
