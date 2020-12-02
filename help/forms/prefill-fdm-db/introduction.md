@@ -25,11 +25,12 @@ Vous apprendrez à utiliser l’attribut de requête du modèle de données de f
 
 * Créer un modèle de données de formulaire avec RDBMS
 * Créer une association entre 2 entités
-* Remplir le tableau avec les données renvoyées par le service _get_ du modèle de données de formulaire
+* Renseignez le tableau avec les données renvoyées par le service _get_ du modèle de données de formulaire.
 * Utiliser l’attribut de requête du modèle de données de formulaire
 
 
-[Cliquez pour voir une démonstration en direct de la fonctionnalité](https://forms.enablementadobe.com/content/dam/formsanddocuments/fdmwithrequestparameterinurl/jcr:content?wcmmode=disabled&amp;empID=207)La vidéo suivante vous donne un aperçu du cours.
+[Cliquez pour voir une démonstration en direct de la ](https://forms.enablementadobe.com/content/dam/formsanddocuments/fdmwithrequestparameterinurl/jcr:content?wcmmode=disabled&amp;empID=207)
+fonctionnalitéLa vidéo suivante vous donne un aperçu du cours.
 >[!VIDEO](https://video.tv.adobe.com/v/36387/quality=9)
 
 ## Conditions préalables
