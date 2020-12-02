@@ -1,6 +1,6 @@
 ---
-title: aem forms avec Marketo (partie 4)
-seo-title: aem forms avec Marketo (partie 4)
+title: AEM Forms avec Marketo (partie 4)
+seo-title: AEM Forms avec Marketo (partie 4)
 description: Didacticiel pour intégrer AEM Forms à Marketo à l’aide du modèle de données de formulaire AEM Forms.
 seo-description: Didacticiel pour intégrer AEM Forms à Marketo à l’aide du modèle de données de formulaire AEM Forms.
 feature: adaptive-forms, form-data-model
