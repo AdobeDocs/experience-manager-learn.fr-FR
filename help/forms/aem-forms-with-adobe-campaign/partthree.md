@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ---
 
-# Préremplissage d’un formulaire adaptatif à l’aide d’un Profil ACS {#prefilling-adaptive-form-using-acs-profile}
+# Préremplissage du formulaire adaptatif à l’aide du Profil ACS {#prefilling-adaptive-form-using-acs-profile}
 
-Dans cette partie, nous allons pré-remplir le formulaire adaptatif avec les informations de profil extraites d&#39;ACS. aem forms dispose de cette puissante fonctionnalité de préremplissage des formulaires adaptatifs.
+Dans cette partie, nous allons pré-remplir le formulaire adaptatif avec les informations de profil extraites d&#39;ACS. AEM Forms dispose de cette puissante fonctionnalité de préremplissage des formulaires adaptatifs.
 
-Pour en savoir plus sur le préremplissage de formulaires adaptatifs, consultez ce [didacticiel](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+Pour en savoir plus sur le préremplissage des formulaires adaptatifs, consultez ce [didacticiel](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
 Pour préremplir le formulaire adaptatif en récupérant les données d&#39;ACS, nous supposons qu&#39;il y a un profil dans ACS qui contient le même courrier électronique que l&#39;utilisateur AEM connecté. Par exemple, si l&#39;ID d&#39;adresse électronique de la personne connectée à AEM est csimms@adobe.com, nous nous attendons à trouver un profil dans ACS dont l&#39;adresse électronique est csimms@adobe.com.
 
