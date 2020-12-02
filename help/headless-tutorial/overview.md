@@ -1,16 +1,16 @@
 ---
-title: Prise en main AEM sans en-tête
-description: Didacticiel de bout en bout illustrant comment créer et exposer du contenu à l’aide d’AEM Headless.
+title: Prise en main d’AEM sans affichage
+description: Tutoriel complet illustrant comment créer et exposer du contenu à l’aide d’AEM sans affichage.
 translation-type: tm+mt
 source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Prise en main AEM sans en-tête
+# Prise en main d’AEM sans affichage
 
 Didacticiel de bout en bout illustrant comment créer et exposer du contenu à l’aide d’AEM et consommé par une application mobile native, dans un scénario CMS sans tête.
 
@@ -30,4 +30,4 @@ Ce didacticiel porte sur les sujets suivants :
 
 Le code source et les packages de contenu sont disponibles sur le [AEM Guides - WKND Mobile GitHub Project](https://github.com/adobe/aem-guides-wknd-mobile).
 
-Si vous rencontrez un problème avec le tutoriel ou le code, veuillez laisser un problème [](https://github.com/adobe/aem-guides-wknd-mobile/issues)GitHub.
+Si vous rencontrez un problème avec le tutoriel ou le code, veuillez laisser un [problème GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
