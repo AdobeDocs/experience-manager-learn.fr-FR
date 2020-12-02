@@ -17,7 +17,7 @@ ht-degree: 2%
 ---
 
 
-# Rapports sur les ressources{#using-reports-in-aem-assets}
+# Rapports Ressources{#using-reports-in-aem-assets}
 
 AEM Assets fournit un cadre de rapports au niveau de l’entreprise qui évolue pour les grands référentiels grâce à une expérience utilisateur intuitive.
 
@@ -40,7 +40,7 @@ Les formules suivantes sont utilisées dans la vidéo pour générer le graphiqu
       LEFT(D2,(LEN(D2)-2))*1024*1024*1024*1024, 0))))
 ```
 
-### Nombre d’actifs par taille {#asset-count-by-size}
+### Nombre d&#39;actifs par taille {#asset-count-by-size}
 
 #### Moins de 200 Ko {#less-than-kb}
 
@@ -54,7 +54,7 @@ Les formules suivantes sont utilisées dans la vidéo pour générer le graphiqu
 =COUNTIFS(E2:E1000,">= 200000", E2:E1000,"<= 500000")
 ```
 
-#### Supérieur à 500 Ko {#greater-than-kb}
+#### Plus de 500 Ko {#greater-than-kb}
 
 ```
 =COUNTIFS(E2:E1000,"> 500000")
@@ -62,4 +62,4 @@ Les formules suivantes sont utilisées dans la vidéo pour générer le graphiqu
 
 ## Ressources supplémentaires{#additional-resources}
 
-Télécharger [tous les fichiers Excel avec le graphique](./assets/asset-reports/all-assets.xlsx)
+Télécharger [Tous les fichiers Excel avec le graphique](./assets/asset-reports/all-assets.xlsx)
