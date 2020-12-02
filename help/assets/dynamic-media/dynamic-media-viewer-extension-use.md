@@ -19,7 +19,7 @@ ht-degree: 32%
 ---
 
 
-# Using Dynamic Media Viewers with Adobe Analytics and Adobe Launch{#using-dynamic-media-viewers-adobe-analytics-launch}
+# Utilisation de visionneuses de médias dynamiques avec Adobe Analytics et lancement d’Adobe{#using-dynamic-media-viewers-adobe-analytics-launch}
 
 Pour les clients disposant de Contenu multimédia dynamique et d’Adobe Analytics, vous pouvez désormais suivre l’utilisation des Visionneuses de Contenu multimédia dynamique sur votre site Web à l’aide de l’extension Dynamic Media Viewer.
 
@@ -27,7 +27,7 @@ Pour les clients disposant de Contenu multimédia dynamique et d’Adobe Analyti
 
 >[!NOTE]
 >
-> Exécutez Adobe Experience Manager en mode Scene7 Contenu multimédia dynamique pour cette fonctionnalité. Vous devez également [intégrer Adobe Experience Platform Launch à votre instance](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)AEM.
+> Exécutez Adobe Experience Manager en mode Scene7 Contenu multimédia dynamique pour cette fonctionnalité. Vous devez également [intégrer Adobe Experience Platform Launch à votre instance AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html).
 
 Avec l’introduction de l’extension Visionneuse de médias dynamiques, Adobe Experience Manager offre désormais la prise en charge des analyses avancées pour les ressources fournies avec les visionneuses de médias dynamiques (5.13), ce qui permet un contrôle plus précis sur le suivi des événements lorsqu’une visionneuse de médias dynamiques est utilisée sur une page de sites.
 
