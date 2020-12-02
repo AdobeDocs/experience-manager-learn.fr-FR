@@ -26,8 +26,8 @@ Le site WKND a repensé sa page d&#39;accueil et souhaite rediriger ses visiteur
 
 Pour cet exercice, les utilisateurs suivants doivent être impliqués et pour exécuter certaines tâches, vous pouvez avoir besoin d’un accès administratif.
 
-* **Producteur de contenu/Editeur** de contenu (Adobe Experience Manager)
-* **Marketer** (Adobe Target / Équipe d’optimisation)
+* **Producteur de contenu/Editeur**  de contenu (Adobe Experience Manager)
+* **Marketer**  (Adobe Target / Équipe d’optimisation)
 
 ### Page d&#39;accueil du site WKND
 
@@ -36,42 +36,42 @@ Pour cet exercice, les utilisateurs suivants doivent être impliqués et pour ex
 ### Conditions préalables
 
 * **AEM**
-   * [aem instance](./implementation.md#getting-aem) d’auteur et de publication s’exécutant sur localhost 4502 et 4503, respectivement.
+   * [aem créez et publiez ](./implementation.md#getting-aem) instancerunning sur localhost 4502 et 4503, respectivement.
    * [aem intégré à Adobe Target à l&#39;aide de Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
-   * Accès à vos organisations Adobe Experience Cloud - <https://>`<yourcompany>`.experience ecloud.adobe.com
-   * experience cloud doté des solutions suivantes
+   * Accès à vos organisations Adobe Experience Cloud - <https://>`<yourcompany>`.experience encecloud.adobe.com
+   * Experience Cloud doté des solutions suivantes
       * [Adobe Target](https://experiencecloud.adobe.com)
 
 ## Activités de l’éditeur de contenu
 
 1. Le spécialiste du marketing lance la discussion sur la reconception de la Page d&#39;accueil WKND avec AEM Content Editor et détaille les exigences.
-   * ***Exigence*** : Reconcevoir la Page d&#39;accueil de site WKND avec une conception basée sur une carte.
+   * ***Exigence***  : Reconcevoir la Page d&#39;accueil de site WKND avec une conception basée sur une carte.
 2. En fonction des exigences, AEM Éditeur de contenu crée ensuite une nouvelle page d&#39;accueil de site WKND avec une conception basée sur une carte et publie la nouvelle page d&#39;accueil.
 
 ## Activités du marketeur
 
 1. Marketer crée une activité d’cible A/B avec l’offre de redirection comme expérience et alloue 100 % du trafic sur le site Web à la nouvelle page d&#39;accueil avec l’objectif de réussite et les mesures ajoutées.
-   1. Dans la fenêtre Adobe Target, accédez à l&#39;onglet **Activités** .
-   2. Cliquez sur le bouton **Créer une Activité** et sélectionnez le type d’activité en tant que test **A/B.**
+   1. Dans la fenêtre Adobe Target, accédez à l&#39;onglet **Activités**.
+   2. Cliquez sur le bouton **Créer une Activité** et sélectionnez le type d’activité **Test A/B**.
 
-      ![adobe target - Créer une Activité](assets/personalization-use-case-2/create-ab-activity.png)
-   3. Sélectionnez le canal **Web** et choisissez le compositeur d’expérience **** visuelle.
-   4. Saisissez l’URL **de l’** Activité et cliquez sur **Suivant** pour ouvrir le compositeur d’expérience visuelle.
-      ![adobe target - Créer une Activité](assets/personalization-use-case-2/create-activity-ab-name.png)
-   5. Pour que le compositeur **d’expérience** visuelle se charge, activez l’option **Autoriser le chargement des scripts** non sécurisés dans votre navigateur et rechargez votre page.
+      ![Adobe Target - Créer une Activité](assets/personalization-use-case-2/create-ab-activity.png)
+   3. Sélectionnez le canal **Web** et choisissez le **compositeur d’expérience visuelle**.
+   4. Saisissez l’**URL d’Activité** et cliquez sur **Suivant** pour ouvrir le compositeur d’expérience visuelle.
+      ![Adobe Target - Créer une Activité](assets/personalization-use-case-2/create-activity-ab-name.png)
+   5. Pour que **le compositeur d’expérience visuelle** se charge, activez **Autoriser le chargement des scripts non sécurisés** dans votre navigateur et rechargez votre page.
       ![Activité du ciblage d’expérience](assets/personalization-use-case-1/load-unsafe-scripts.png)
    6. Notez que la page d&#39;accueil de site WKND s’ouvre dans l’éditeur du compositeur d’expérience visuelle.
       ![VEC](assets/personalization-use-case-2/vec.png)
-   7. Passez la souris sur **l’expérience B** et sélectionnez vue d’autres options.
+   7. Passez la souris sur **Expérience B** et sélectionnez vue d’autres options.
       ![Expérience B](assets/personalization-use-case-2/redirect-url.png)
-   8. Sélectionnez l’option **Rediriger vers l’URL** et saisissez l’URL vers la nouvelle Page d&#39;accueil WKND. (http://localhost:4503/content/wknd/en1.html)
+   8. Sélectionnez l’option **Rediriger vers URL** et entrez l’URL vers la nouvelle Page d&#39;accueil WKND. (http://localhost:4503/content/wknd/en1.html)
       ![Expérience B](assets/personalization-use-case-2/redirect-url-2.png)
-   9. **Enregistrez** vos modifications et poursuivez les étapes suivantes de la création d’Activités.
-   10. Sélectionnez la méthode **d’affectation du** trafic comme manuelle et affectez 100 % du trafic à l’ **expérience B**.
+   9. **** Enregistrez vos modifications et poursuivez les étapes suivantes de la création d’Activités.
+   10. Sélectionnez la **méthode d’affectation du trafic** comme méthode manuelle et affectez 100 % de trafic à **l’expérience B**.
       ![Trafic de l’expérience B](assets/personalization-use-case-2/traffic.png)
-   11. Cliquez sur **Suivant**.
-   12. Indiquez des mesures **** d’objectif pour votre Activité et enregistrez et fermez votre test A/B.
+   11. Cliquez sur **Next** (Suivant).
+   12. Indiquez **Mesures d’objectif** pour votre Activité et enregistrez et fermez votre test A/B.
       ![Mesure des objectifs de test A/B](assets/personalization-use-case-2/goal-metric.png)
    13. Attribuez un nom (**WKND Page d&#39;accueil Redesign**) à votre Activité et enregistrez vos modifications.
    14. Dans l’écran Détails de l’Activité, veillez à **activer** votre activité.
