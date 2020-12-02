@@ -39,7 +39,7 @@ Dans cette partie, nous allons créer une communication interactive pour le Cana
 
    1. Décochez la case Imprimer le canal. Nous ne créons pas le document pour le canal imprimé.
    1. Web : Sélectionnez cette option pour générer le document pour le canal Web.
-   1. Communication interactive : Modèle : **global>** RetirementAccountStatement(Il s’agit du modèle créé à l’étape précédente)
+   1. Communication interactive : Modèle : **global>RetirementAccountStatemen** t(Il s’agit du modèle créé à l’étape précédente)
    1. Thème :** Thème de référence ->Canevas 2.0**
 
 1. Appuyez sur Créer
