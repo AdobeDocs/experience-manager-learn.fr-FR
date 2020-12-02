@@ -26,13 +26,13 @@ Chaque AEM en tant qu&#39;environnement Cloud Service dispose de sa propre Conso
 
 ## Accès à la Console développeur
 
-Pour accéder à la Console développeur et l&#39;utiliser, les autorisations suivantes doivent être attribuées à l&#39;Adobe ID du développeur via le Admin Console [](https://adminconsole.adobe.com)Adobe.
+Pour accéder à la Console développeur et l&#39;utiliser, les autorisations suivantes doivent être attribuées à l&#39;Adobe ID du développeur via [Adobe Admin Console](https://adminconsole.adobe.com).
 
 1. Assurez-vous que l’organisation d’Adobes qui a affecté Cloud Manager et AEM en tant que produits Cloud Service est principale dans le sélecteur d’organisation d’Adobes.
-1. Le développeur doit être membre du Profil __Développeur - Cloud Service__ du produit de Cloud Manager.
+1. Le développeur doit être membre du Profil de produits __Développeur - Cloud Service__ de Cloud Manager.
    + Si cet abonnement n&#39;existe pas, le développeur ne pourra pas se connecter à la Console développeur.
-1. Le développeur doit être membre du Profil produit Administrateurs ____ AEM du service AEM Author and Publish.
-   + Si cet abonnement n&#39;existe pas, les vidages d&#39; [état](#status) expirent avec une erreur 401 Non autorisé.
+1. Le développeur doit être membre du Profil de produits __AEM Administrateurs__ du service AEM Author and Publish.
+   + Si cet abonnement n&#39;existe pas, le [statut](#status) est vidé avec une erreur 401 Non autorisé.
 
 ### Dépannage de l’accès à la Console développeur
 
@@ -72,7 +72,7 @@ L’état fournit des options permettant de générer l’état d’exécution A
 
 ### Lots
 
-Bundles liste tous les lots OSGi dans AEM. Cette fonctionnalité est similaire aux offres groupées [OSGi de](http://localhost:4502/system/console/bundles) AEM SDK de démarrage rapide locales dans `/system/console/bundles`.
+Bundles liste tous les lots OSGi dans AEM. Cette fonctionnalité est semblable à [AEM SDK local quickstart&#39;s OSGi Bundles](http://localhost:4502/system/console/bundles) à `/system/console/bundles`.
 
 Bundler l’aide au débogage par :
 
@@ -82,7 +82,7 @@ Bundler l’aide au débogage par :
 
 ### Composants
 
-Composants liste tous les composants OSGi dans AEM. Cette fonctionnalité est similaire à celle des composants [OSGi de](http://localhost:4502/system/console/components) AEMSDK locaux quickstart dans `/system/console/components`.
+Composants liste tous les composants OSGi dans AEM. Cette fonctionnalité est similaire aux [Composants OSGi ](http://localhost:4502/system/console/components) du kit de développement rapide local &lt;a0/>AEM à `/system/console/components`.
 
 Les composants aident au débogage en procédant comme suit :
 
@@ -93,7 +93,7 @@ Les composants aident au débogage en procédant comme suit :
 
 ### Configurations
 
-Configurations liste toutes les configurations du composant OSGi (propriétés et valeurs OSGi). Cette fonctionnalité est similaire à celle du gestionnaire [de configuration OSGi de](http://localhost:4502/system/console/configMgr) AEM SDK local quickstart dans `/system/console/configMgr`.
+Configurations liste toutes les configurations du composant OSGi (propriétés et valeurs OSGi). Cette fonctionnalité est similaire à [AEM SDK local quickstart de l&#39;OSGi Configuration Manager](http://localhost:4502/system/console/configMgr) à `/system/console/configMgr`.
 
 Les configurations aident au débogage par :
 
@@ -102,7 +102,7 @@ Les configurations aident au débogage par :
 
 ### Index Oak
 
-Les index de chêne fournissent un vidage des noeuds définis en dessous `/oak:index`. Gardez à l’esprit que cela n’affiche pas les index fusionnés, qui surviennent lorsqu’un index AEM est modifié.
+Les index de chêne fournissent un vidage des noeuds définis sous `/oak:index`. Gardez à l’esprit que cela n’affiche pas les index fusionnés, qui surviennent lorsqu’un index AEM est modifié.
 
 Les index de chêne aident au débogage en :
 
@@ -110,7 +110,7 @@ Les index de chêne aident au débogage en :
 
 ### Services OSGi
 
-Composants liste tous les services OSGi. Cette fonctionnalité est similaire aux services [OSGi de](http://localhost:4502/system/console/services) AEMSDK locaux quickstart dans `/system/console/services`.
+Composants liste tous les services OSGi. Cette fonctionnalité est similaire à [AEM SDK local quickstart&#39;s OSGi Services](http://localhost:4502/system/console/services) sur `/system/console/services`.
 
 Les services OSGi vous aident à déboguer en :
 
@@ -118,7 +118,7 @@ Les services OSGi vous aident à déboguer en :
 
 ### Tâches Sling
 
-Sling Jobs liste toutes les files d’attente Sling Jobs. Cette fonctionnalité est similaire aux tâches [de démarrage rapide](http://localhost:4502/system/console/slingevent) local de `/system/console/slingevent`AEM SDK sur.
+Sling Jobs liste toutes les files d’attente Sling Jobs. Cette fonctionnalité est similaire à [AEM SDK local quickstart&#39;s Jobs](http://localhost:4502/system/console/slingevent) sur `/system/console/slingevent`.
 
 Aide de Sling Jobs dans le débogage par :
 
@@ -127,7 +127,7 @@ Aide de Sling Jobs dans le débogage par :
 
 ## Packages Java
 
-Les packages Java permettent de vérifier si un package Java et sa version sont disponibles en AEM en tant que Cloud Service. Cette fonctionnalité est la même que celle de l’outil de recherche [de dépendance](http://localhost:4502/system/console/depfinder) de `/system/console/depfinder`AEM SDK dansle guide de démarrage rapide local.
+Les packages Java permettent de vérifier si un package Java et sa version sont disponibles en AEM en tant que Cloud Service. Cette fonctionnalité est identique à celle de [AEM kit SDK de démarrage rapide local de l’outil de recherche de dépendance](http://localhost:4502/system/console/depfinder) à `/system/console/depfinder`.
 
 ![Console développeur - Packages Java](./assets/developer-console/java-packages.png)
 
@@ -136,11 +136,11 @@ Java Packages est utilisé pour empêcher le démarrage de lots en raison d&#39;
 + Assurez-vous que la version de la dépendance d&#39;API maven de votre projet correspond à la version de AEM version de l&#39;environnement (et si possible, mettez à jour tout le contenu jusqu&#39;à la dernière version).
 + Si des dépendances Maven supplémentaires sont utilisées dans le projet Maven
    + Déterminez si une autre API fournie par la dépendance d’API AEM SDK peut être utilisée à la place.
-   + Si la dépendance supplémentaire est requise, veillez à ce qu&#39;elle soit fournie sous la forme d&#39;un lot OSGi (plutôt que sous la forme d&#39;un lot Jar ordinaire) et à ce qu&#39;elle soit intégrée dans le package de code de votre projet (`ui.apps`), de la même manière que le lot OSGi principal est incorporé dans le `ui.apps` package.
+   + Si la dépendance supplémentaire est requise, assurez-vous qu’elle est fournie sous forme de lot OSGi (plutôt qu’un Jar ordinaire) et qu’elle est incorporée dans le package de code de votre projet (`ui.apps`), de la même manière que le lot OSGi principal est incorporé dans le package `ui.apps`.
 
 ## Servlets
 
-Servlets permet d’obtenir des informations sur la manière dont AEM résout une URL vers une servlet ou un script Java (HTL, JSP) qui gère finalement la requête. Cette fonctionnalité est la même que celle du Sling Servlet Resolver [du](http://localhost:4502/system/console/servletresolver) SDK local quickstart de Sling `/system/console/servletresolver`à.
+Servlets permet d’obtenir des informations sur la manière dont AEM résout une URL vers une servlet ou un script Java (HTL, JSP) qui gère finalement la requête. Cette fonctionnalité est identique à celle du &quot;Sling Servlet Resolver&quot; du kit de démarrage rapide [AEM du kit SDK local ](http://localhost:4502/system/console/servletresolver) à `/system/console/servletresolver`.
 
 ![Console développeur - Servlets](./assets/developer-console/servlets.png)
 
@@ -151,7 +151,7 @@ Les servlets aident à déterminer :
 
 ## Requêtes
 
-Les requêtes vous aident à identifier et comment les requêtes de recherche sont exécutées sur les AEM. Cette fonctionnalité est la même que celle de la console Outils > Performance de Requête du kit de développement [AEM locale, disponible dans la section Outils > ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) Console de gestion des performances de la .
+Les requêtes vous aident à identifier et comment les requêtes de recherche sont exécutées sur les AEM. Cette fonctionnalité est identique à la console [AEM SDK locale quickstart’s Tools > Requête Performance ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html).
 
 Les requêtes ne fonctionnent que lorsqu’un module spécifique est sélectionné, car elles ouvrent la console Web Requête Performance de ce module, ce qui nécessite que le développeur ait accès à la connexion au service AEM.
 
