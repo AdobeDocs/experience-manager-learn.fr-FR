@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Interactive Communications est une nouveauté de AEM Forms 6.4. Ce document vous guidera dans les étapes nécessaires pour créer une communication interactive pour le canal d&#39;impression.
 
-Consultez la page d&#39;exemples [](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
+Consultez la page [Exemples d&#39;AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
 
 ## Conditions préalables {#prerequistes}
 
