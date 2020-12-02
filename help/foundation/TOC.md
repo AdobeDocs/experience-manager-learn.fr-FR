@@ -23,7 +23,7 @@ ht-degree: 19%
    + [Utilisation du Tableau de bord d&#39;aperçu du système](./administration/use-the-system-overview-dashboard.md)
 + Authentification {#authentication}
    + [Authentification OAuth](authentication/oauth-code-sample-develop.md)
-   + [Configurer des clés publiques/privées à utiliser avec les E/S d&#39;Adobe](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
+   + [Configurer des clés publiques/privées à utiliser avec Adobe I/O](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
    + [Comprendre l&#39;authentification](authentication/authentication-support-article-understand.md)
    + [Comprendre l’authentification IMS sur AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
 + Adobe Cloud Manager{#cloud-manager}
