@@ -68,12 +68,15 @@ Voici les données issues de l’envoi du formulaire adaptatif. Le formulaire ad
 ```
 
 Pour initialiser la variable ArrayList de la chaîne de sous-type, vous pouvez utiliser le mode de mappage JSON Dot Notation ou XPath. La capture d&#39;écran suivante vous montre comment renseigner une variable ArrayList appelée CustomRoutes à l&#39;aide de la notation de point JSON. Assurez-vous de pointer vers un élément d&#39;un objet de tableau comme le montre la capture d&#39;écran ci-dessous. Nous renseignons le tableau CustomRoutes ArrayList avec les noms de l&#39;objet de tableau managerchain.
-Le tableau CustomRoutes ArrayList est ensuite utilisé pour renseigner les Routes dans le composant![AssignTask customroutes](assets/arraylist.jpg)Une fois que la variable CustomRoutes ArrayList est initialisée avec les valeurs des données envoyées, les Routes du composant AssignTask sont ensuite renseignées à l&#39;aide de la variable CustomRoutes. La capture d&#39;écran ci-dessous vous montre les itinéraires personnalisés dans une tâche AssignTask![asingtask](assets/customactions.jpg)
+La liste de tableaux CustomRoutes est ensuite utilisée pour renseigner les itinéraires dans le composant AssignTask
+![customroutes](assets/arraylist.jpg)
+Une fois que la variable CustomRoutes ArrayList est initialisée avec les valeurs des données envoyées, les Routes du composant AssignTask sont ensuite renseignées à l&#39;aide de la variable CustomRoutes. La capture d&#39;écran ci-dessous vous montre les itinéraires personnalisés dans une tâche AssignTask
+![asingtask](assets/customactions.jpg)
 
 Pour tester ce processus sur votre système, suivez les étapes ci-après.
 
 * Téléchargez et enregistrez le fichier ArrayListVariable.zip dans votre système de fichiers.
-* [Importez le fichier](assets/arraylistvariable.zip) zip à l’aide de l’AEM Package Manager.
+* [Importer le ](assets/arraylistvariable.zip) fichier zip à l’aide de l’AEM Package Manager
 * [Ouvrez le formulaire TravelExpenseReport.](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
 * Entrez deux ou trois dépenses et les deux noms du directeur
 * Cliquez sur le bouton Envoyer.
