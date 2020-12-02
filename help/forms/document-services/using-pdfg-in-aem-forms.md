@@ -24,19 +24,20 @@ ht-degree: 1%
 
 Démonstration de la fonctionnalité de glisser-déposer pour créer un fichier PDF à l’aide d’AEM Forms
 
-PDFG signifie PDF Generation. Cela signifie que vous pouvez convertir divers formats de fichier en PDF. Les documents Microsoft Office sont les plus courants. PDFG fait partie de l’AEM Forms depuis la version 6.1.[Le fichier javadoc pour l’API PDFG est répertorié ici.](https://helpx.adobe.com/experience-manager/6-3/forms/using/aem-document-services-programmatically.html#PDFGeneratorService)
+PDFG signifie PDF Generation. Cela signifie que vous pouvez convertir divers formats de fichier en PDF. Les documents Microsoft Office sont les plus courants. PDFG fait partie de l&#39;AEM Forms depuis la version 6.1.
+[L’API javadoc pour PDFG est répertoriée ici](https://helpx.adobe.com/experience-manager/6-3/forms/using/aem-document-services-programmatically.html#PDFGeneratorService)
 
 Les ressources associées à cet article vous permettront de faire glisser des documents MS Office ou JPG dans la zone de dépôt de la page HTML. Une fois le document supprimé, il appelle le service PDFG et convertit le document en PDF et l’enregistre sur le système de fichiers de AEM Server.
 
 Pour installer les ressources de démonstration, procédez comme suit :
 
-1. Configurez PDFG comme mentionné dans ce document [ici](https://helpx.adobe.com/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
+1. Configurez PDFG comme indiqué dans ce document [ici](https://helpx.adobe.com/experience-manager/6-4/forms/using/install-configure-pdf-generator.html).
 1. Veuillez suivre la documentation appropriée relative à votre version AEM Forms.
 1. [Importez et installez les actifs associés à cet article à l’aide du gestionnaire de packages.](assets/createpdfgdemov2.zip)
-1. [Accédez à post.jsp](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) dans votre CRX.
+1. [Accédez à post.](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) jspin dans CRX
 1. Modifier l&#39;emplacement de sauvegarde selon vos préférences (ligne 9)
 1. Enregistrez vos modifications.
-1. Ouvrez la page [](http://localhost:4502/content/DocumentServices/CreatePDFG.html) html pour faire glisser et déposer des fichiers en vue d’une conversion.
+1. Ouvrez la [ page html](http://localhost:4502/content/DocumentServices/CreatePDFG.html) pour faire glisser et déposer les fichiers en vue de la conversion.
 1. Déposez un fichier Word ou jpg dans la zone de dépôt.
 1. Le document d’entrée est converti en PDF et enregistré au même emplacement que celui spécifié au point 4.
 
