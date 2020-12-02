@@ -1,6 +1,6 @@
 ---
-title: ajouter les panneaux enfants au panneau racine
-seo-title: ajouter les panneaux enfants au panneau racine
+title: Ajouter les panneaux enfants au panneau racine
+seo-title: Ajouter les panneaux enfants au panneau racine
 description: Configuration de la disposition du panneau racine sur "Onglets à gauche" et ajout de panneaux enfants au panneau racine.
 seo-description: Configuration de la disposition du panneau racine sur "Onglets à gauche" et ajout de panneaux enfants au panneau racine.
 uuid: ef9f7c02-ead8-4f96-aabd-40d586127aa7
@@ -22,9 +22,9 @@ ht-degree: 0%
 ---
 
 
-# ajouter les panneaux enfants au panneau racine {#adding-child-panels-to-root-panel}
+# Ajouter les panneaux enfants au panneau racine {#adding-child-panels-to-root-panel}
 
-Lors de l’ajout de panneaux enfants au panneau racine, **veillez à passer en mode d’édition. Le bouton Modifier se trouve en haut à droite du navigateur.**
+Lorsque vous ajoutez des panneaux enfants au panneau racine, **Assurez-vous que vous êtes en mode d’édition. Le bouton Modifier se trouve en haut à droite du navigateur.**
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28536?quality=9&learn=on)
