@@ -1,8 +1,8 @@
 ---
 title: Utilisation de CAPTCHA avec AEM Forms adaptatif
 seo-title: Utilisation de CAPTCHA avec AEM Forms adaptatif
-description: ajouter et utiliser un CAPTCHA avec AEM Adaptive Forms.
-seo-description: ajouter et utiliser un CAPTCHA avec AEM Adaptive Forms.
+description: Ajouter et utiliser un CAPTCHA avec AEM Adaptive Forms.
+seo-description: Ajouter et utiliser un CAPTCHA avec AEM Adaptive Forms.
 feature: adaptive-forms
 topics: integrations
 audience: developer
@@ -22,9 +22,9 @@ ht-degree: 11%
 
 # Utilisation de CAPTCHA avec AEM Forms adaptatif{#using-captchas-with-aem-adaptive-forms}
 
-ajouter et utiliser un CAPTCHA avec AEM Adaptive Forms.
+Ajouter et utiliser un CAPTCHA avec AEM Adaptive Forms.
 
-Consultez la page d&#39;exemples [](https://forms.enablementadobe.com/content/samples/samples.html?query=0) AEM Forms pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
+Consultez la page [Exemples d&#39;AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
 
@@ -40,7 +40,7 @@ Consultez la page d&#39;exemples [](https://forms.enablementadobe.com/content/sa
 >
 >Configuration de reCaptach sur l’instance d’auteur
 >
->ouverture de la console [](http://localhost:4502/system/console/bundles) web felix sur l’instance d’auteur
+>ouvrez la console Web felix [web ](http://localhost:4502/system/console/bundles) sur l’instance d’auteur.
 >
 >recherchez le lot com.adobe.granite.crypto.file
 >
@@ -51,7 +51,7 @@ Consultez la page d&#39;exemples [](https://forms.enablementadobe.com/content/sa
 >* &lt;rép-install-aem-création>/crx-quickstart/launchpad/felix/bundle20/data
 * Copiez les fichiers HMAC et les fichiers principaux
 
-Ouvrez la console [Web](http://localhost:4502/system/console/bundles) felix sur votre instance de publication. Recherchez le lot com.adobe.granite.crypto.file. Notez l’ID du lot
+Ouvrez la [console Web felix](http://localhost:4502/system/console/bundles) sur votre instance de publication. Recherchez le lot com.adobe.granite.crypto.file. Notez l’ID du lot
 Accédez à l’ID d’assemblage sur le système de fichiers de votre instance de publication.
 * &lt;rép-install-aem-publication>/crx-quickstart/launchpad/felix/bundle20/data
 * supprimez les fichiers HMAC et master existants.
@@ -59,7 +59,7 @@ Accédez à l’ID d’assemblage sur le système de fichiers de votre instance 
 
 Redémarrez votre serveur de publication AEM
 
-## Documents de support {#supporting-materials}
+## Documents d&#39;appui {#supporting-materials}
 
 * [Google reCAPTCHA](https://www.google.com/recaptcha)
 
