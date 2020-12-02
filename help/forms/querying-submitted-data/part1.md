@@ -1,6 +1,6 @@
 ---
-title: aem forms avec Schéma et données JSON[Partie 1]
-seo-title: aem forms avec Schéma et données JSON[Part1]
+title: AEM Forms avec Schéma et données JSON[Partie 1]
+seo-title: AEM Forms avec Schéma et données JSON[Part1]
 description: Ce didacticiel en plusieurs parties vous explique comment créer un formulaire adaptatif avec le schéma JSON et interroger les données envoyées.
 seo-description: Ce didacticiel en plusieurs parties vous explique comment créer un formulaire adaptatif avec le schéma JSON et interroger les données envoyées.
 feature: adaptive-forms
@@ -21,7 +21,7 @@ ht-degree: 2%
 # Créer un formulaire adaptatif basé sur le Schéma JSON
 
 
-La possibilité de créer un Forms adaptatif basé sur le schéma JSON a été introduite avec la version AEM Forms 6.3. Les détails de la création d’une Forms adaptative avec le schéma JSON sont expliqués en détail dans cet [article](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html).
+La possibilité de créer un Forms adaptatif basé sur le schéma JSON a été introduite avec la version AEM Forms 6.3. Les détails sur la création d’une Forms adaptative avec le schéma JSON sont expliqués en détail dans cet [article](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html).
 
 Une fois que vous avez créé un formulaire adaptatif basé sur le schéma JSON, l’étape suivante consiste à stocker les données envoyées dans la base de données. À cette fin, nous utiliserons le nouveau type de données JSON introduit par divers fournisseurs de bases de données. Aux fins de cet article, nous utiliserons la base de données MySql 8 pour stocker les données envoyées.
 
