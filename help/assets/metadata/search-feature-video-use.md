@@ -26,6 +26,6 @@ Dans ces vidéos, nous examinons certaines améliorations apportées à la reche
 
 ## Configuration avancée des prédicats de recherche de balises et de valeurs multiples {#multi-value-tag-predicates}
 
-Le prédicat **de recherche à** plusieurs valeurs est disponible pour faciliter la correspondance de texte dans les résultats de la recherche. Plusieurs améliorations ont également été apportées au prédicat de balise pour un filtrage plus efficace des résultats de recherche d’actifs.
+Le **prédicat de recherche à plusieurs valeurs** est disponible pour une correspondance de texte simple dans les résultats de la recherche. Plusieurs améliorations ont également été apportées au prédicat de balise pour un filtrage plus efficace des résultats de recherche d’actifs.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16457/?quality=9&learn=on)
