@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Placer lié{#place-linked}
+# Emplacement lié{#place-linked}
 
 Découvrez comment utiliser les ressources d’AEM Assets à l’aide de l’opération Lier les emplacements.
 
