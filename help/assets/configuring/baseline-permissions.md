@@ -21,6 +21,6 @@ ht-degree: 2%
 
 # Autorisations de base
 
-La gestion de l’accès des utilisateurs sur les dossiers [de ressources de](./baseline-folders.md) base est un aspect essentiel de la gouvernance et garantit la prise en charge des processus.
+La gestion de l&#39;accès des utilisateurs dans les dossiers de ressources de base [](./baseline-folders.md) est un aspect essentiel de la gouvernance et garantit que les processus peuvent être correctement pris en charge.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37696/?quality=12&learn=on&hidetitle=true)
