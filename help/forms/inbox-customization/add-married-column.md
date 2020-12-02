@@ -1,6 +1,6 @@
 ---
 title: Personnalisation de la boîte de réception
-description: ajouter des colonnes personnalisées pour afficher des données supplémentaires du processus
+description: Ajouter des colonnes personnalisées pour afficher des données supplémentaires du processus
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -82,12 +82,12 @@ return isMarried(inboxItem);
 * [Connexion à AEM console Web](http://localhost:4502/system/console/bundles)
 * [Déploiement et début du lot de personnalisation de la boîte de réception](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [Ouvrez votre boîte de réception](http://localhost:4502/aem/inbox)
-* Ouvrez le contrôle d’administration en cliquant sur l’icône de Vue _de_ Liste en regard du bouton _Créer_ .
-* ajouter la colonne Marié dans la boîte de réception et enregistrer vos modifications
+* Ouvrez le contrôle d’administration en cliquant sur l’icône _Vue de Liste_ en regard du bouton _Créer_.
+* Ajouter la colonne Marié dans la boîte de réception et enregistrer vos modifications
 * [Accéder à l’interface utilisateur FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importez l’exemple de formulaire](assets/snap-form.zip) en sélectionnant _Fichier Télécharger_ dans le menu _Créer_ .
+* [Importez l’exemple de ](assets/snap-form.zip) formulaire en sélectionnant  _Fichier_ téléchargé depuis  __ Createmenu.
 * [Prévisualiser le formulaire](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Sélectionnez l’état __ civil et envoyez le formulaire.
+* Sélectionnez l&#39;_état civil_ et envoyez le formulaire.
    [Boîte de réception vue](http://localhost:4502/aem/inbox)
 
 L’envoi du formulaire déclenche le processus et une tâche est attribuée à l’utilisateur &quot;administrateur&quot;. Vous devriez voir une valeur sous la colonne Marié comme illustré dans cette capture d&#39;écran.
