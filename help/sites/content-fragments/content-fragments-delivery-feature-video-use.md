@@ -27,27 +27,27 @@ Les fragments de contenu Adobe Experience Manager (AEM) sont des contenus édito
 
 Les fragments de contenu, indépendamment de la mise en page, peuvent être utilisés directement en AEM Sites avec les composants principaux ou peuvent être distribués sans encombre aux canaux en aval.
 
-Cette série de vidéos présente les options de diffusion d’utilisation des fragments de contenu. Vous trouverez des détails sur la définition et la [création de fragments de contenu ici](content-fragments-feature-video-use.md).
+Cette série de vidéos présente les options de diffusion d’utilisation des fragments de contenu. Vous trouverez des détails sur la définition et la création de [fragments de contenu ici](content-fragments-feature-video-use.md).
 
 1. Utilisation de fragments de contenu sur des pages Web
 2. Exposition de fragments de contenu au format JSON à l’aide de AEM Content Services
 3. Utilisation de l’API HTTP Assets
 
-## Using Content Fragments in Web pages {#using-content-fragments-in-web-pages}
+## Utilisation de fragments de contenu dans des pages Web {#using-content-fragments-in-web-pages}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
 
-Les fragments de contenu peuvent être utilisés sur les pages AEM Sites ou, de la même manière, sur les fragments d’expérience, à l’aide du composant [Fragment de](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)contenu des composants principaux de WCM AEM.
+Les fragments de contenu peuvent être utilisés sur les pages AEM Sites ou, de la même manière, sur les fragments d’expérience, à l’aide du composant [Fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html) des composants principaux de la gestion de contenu Web &lt;a0/> de l’AEM.
 
 Les composants Fragment de contenu peuvent être mis en forme à l’aide de AEM Style System pour afficher le contenu selon les besoins.
 
-## Exposition de fragments de contenu en tant que JSON {#exposing-content-fragments-as-json}
+## Présentation des fragments de contenu en tant que JSON {#exposing-content-fragments-as-json}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22448/?quality=12&learn=on)
 
 aem Content Services facilite la création d’AEM points de terminaison HTTP basés sur les pages qui renvoient le contenu dans un format JSON normalisé.
 
-La vidéo ci-dessus utilise le composant [Fragment de](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html) contenu pour exposer des fragments de contenu individuels. Le composant [Liste de fragments de](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-list.html) contenu est un nouveau composant qui permet à un auteur de définir une requête qui renseigne dynamiquement la page avec une liste de fragments de contenu. Le composant Liste de fragments de contenu est préférable lorsque plusieurs fragments de contenu doivent être exposés.
+La vidéo ci-dessus utilise le [composant de fragment de contenu](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) pour exposer des fragments de contenu individuels. Le [composant de Liste de fragment de contenu](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-list.html) est un nouveau composant qui permet à un auteur de définir une requête qui renseigne dynamiquement la page avec une liste de fragments de contenu. Le composant Liste de fragments de contenu est préférable lorsque plusieurs fragments de contenu doivent être exposés.
 
 *Exemple de charge utile JSON de point de terminaison Content Services :*\
 **[athlètes.json](assets/athletes.json)**
@@ -58,7 +58,7 @@ La vidéo ci-dessus utilise le composant [Fragment de](https://docs.adobe.com/co
 
 Pour la première fois dans AEM 6.5, la prise en charge des fragments de contenu est améliorée avec l’API HTTP Assets. Cela permet aux développeurs d’exécuter facilement des opérations de création, de lecture, de mise à jour et de suppression (CRUD) sur des fragments de contenu.
 
-*Exemple de requêtes POSTMAN :*
+*Exemple de requête POSTMAN:*
 **[CRUD-CFM-API-We.Retail.postman_collection.json](assets/CRUD-CFM-API-We.Retail.postman_collection.json)**
 
 ## Méthode de diffusion à utiliser
@@ -79,7 +79,7 @@ Il existe deux options pour exposer le fragment de contenu au format JSON afin d
 
 * [Création de fragments de contenu](content-fragments-feature-video-use.md)
 * [Composants principaux WCM AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [Composant de fragment de contenu principal de gestion de contenu Web AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)
+* [Composant de fragment de contenu principal de gestion de contenu Web AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html)
 
 Pour télécharger et installer le package ci-dessous sur une instance AEM 6.4+ pour l’état final à partir de la série vidéo :\
 **[aem_demo_fluide-experience-content-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**
