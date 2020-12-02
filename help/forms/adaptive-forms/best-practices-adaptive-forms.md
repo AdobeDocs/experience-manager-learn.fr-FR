@@ -19,7 +19,7 @@ ht-degree: 7%
 
 # Bonnes pratiques
 
-Adobe Experience Manager (AEM) Forms vous permet de transformer des opérations complexes en de simples et remarquables expériences numériques. Le document suivant décrit quelques autres bonnes pratiques à suivre lors du développement d&#39;Adaptive Forms. Ce document doit être utilisé conjointement avec [ce document.](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
+Adobe Experience Manager (AEM) Forms vous permet de transformer des opérations complexes en de simples et remarquables expériences numériques. Le document suivant décrit quelques autres bonnes pratiques à suivre lors du développement d&#39;Adaptive Forms. Ce document est destiné à être utilisé conjointement avec [ce document](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview).
 
 ## Conventions de dénomination
 
@@ -33,10 +33,10 @@ Adobe Experience Manager (AEM) Forms vous permet de transformer des opération
    * Les noms peuvent contenir des lettres, des chiffres, des traits de soulignement et des signes dollar.
    * Les noms doivent commencer par une lettre
    * Les noms respectent la casse
-   * Les mots réservés (tels que les mots-clés JavaScript) ne peuvent pas être utilisés comme noms. Attention à d&#39;autres mots réservés spécifiques à AF tels que &quot;panneau&quot;, &quot;nom&quot;.
+   * Les mots réservés (tels que les mots-clés JavaScript) ne peuvent pas être utilisés comme noms. Attention aux autres mots réservés spécifiques à la FA tels que   comme &quot;panel&quot;,&quot;name&quot;.
    * N’incluez pas de tirets &quot;-&quot; dans vos noms.
 * **Développement de Forms**
-   * Les fragments de formulaire doivent être pris en compte lors du développement de formulaires volumineux. Activer le chargement différé des fragments de formulaire pour accélérer le chargement
+   * Les fragments de formulaire doivent être pris en compte lors du développement de formulaires volumineux. Activer le chargement différé des fragments de formulaire pour un chargement plus rapide   fois
    * **DataModel**
       * Il est recommandé d’associer un formulaire adaptatif au modèle de données approprié.
    * **Événements d’objet**
