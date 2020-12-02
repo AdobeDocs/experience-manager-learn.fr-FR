@@ -22,7 +22,7 @@ Ce chapitre présente brièvement l&#39;histoire et les mécanismes du répartit
 
 Le Répartiteur est un élément essentiel de la plupart des installations, sinon de toutes les installations AEM. Vous trouverez de nombreux articles en ligne qui expliquent comment configurer le Répartiteur ainsi que des conseils et astuces.
 
-Ces éléments d&#39;information, cependant, sont toujours débuts sur un niveau très technique - en supposant que vous savez déjà ce que vous voulez faire et donc fournir seulement des détails sur la façon de réaliser ce que vous voulez. Nous n&#39;avons jamais trouvé de documents conceptuels décrivant ce _qui est et pourquoi est_ quand il s&#39;agit de ce que vous pouvez et ne pouvez pas faire avec le répartiteur.
+Ces éléments d&#39;information, cependant, sont toujours débuts sur un niveau très technique - en supposant que vous savez déjà ce que vous voulez faire et donc fournir seulement des détails sur la façon de réaliser ce que vous voulez. Nous n&#39;avons jamais trouvé d&#39;articles conceptuels décrivant ce qui est _et pourquoi_ quand il s&#39;agit de ce que vous pouvez et ne pouvez pas faire avec le répartiteur.
 
 ### Antimotif : Répartiteur en tant qu&#39;après-pensée
 
@@ -34,7 +34,7 @@ Ce manque d&#39;informations de base conduit à un certain nombre de modèles an
 
 ### &quot;D&#39;abord faire en sorte qu&#39;il fonctionne - puis qu&#39;il soit rapide&quot; n&#39;a pas toujours raison
 
-Vous avez peut-être entendu le conseil de programmation _&quot;D&#39;abord, faites-le fonctionner, puis faites-le vite.&quot;_. Ce n&#39;est pas entièrement faux. Toutefois, sans le contexte approprié, il est généralement mal interprété et mal appliqué.
+Vous avez peut-être entendu le conseil de programmation _&quot;Commencez par le faire marcher, puis faites-le vite.&quot;_. Ce n&#39;est pas entièrement faux. Toutefois, sans le contexte approprié, il est généralement mal interprété et mal appliqué.
 
 Ce conseil doit empêcher le développeur d&#39;optimiser prématurément le code, qui ne peut jamais être exécuté - ou est exécuté si rarement, qu&#39;une optimisation n&#39;aurait pas un impact suffisant pour justifier l&#39;effort d&#39;optimisation. En outre, l&#39;optimisation pourrait conduire à un code plus complexe et ainsi introduire des bogues. Donc, si vous êtes développeur, ne passez pas trop de temps à la micro-optimisation de chaque ligne de code. Il vous suffit de choisir les structures de données, les algorithmes et les bibliothèques appropriés et d’attendre l’analyse de la zone réactive d’un profileur pour savoir où une optimisation plus poussée pourrait augmenter les performances globales.
 
@@ -95,7 +95,7 @@ Nous parlions de &quot;pages&quot; dans la dernière section. Mais le même sch�
 
 Le module Répartiteur utilise les installations fournies par le serveur Apache d&#39;hébergement. Les ressources telles que les pages HTML, les téléchargements et les images sont stockées sous la forme de fichiers simples dans le système de fichiers Apache. C&#39;est aussi simple que ça.
 
-Le nom de fichier est dérivé de l&#39;URL de la ressource demandée. Si vous demandez un fichier, `/foo/bar.html` il est stocké par exemple sous /`var/cache/docroot/foo/bar.html`.
+Le nom de fichier est dérivé de l&#39;URL de la ressource demandée. Si vous demandez un fichier `/foo/bar.html`, il est stocké par exemple sous /`var/cache/docroot/foo/bar.html`.
 
 En principe, si tous les fichiers sont mis en cache et donc stockés de manière statique dans le Répartiteur, vous pouvez extraire le module externe du système de publication et le Répartiteur servirait de serveur Web simple. Mais ceci n&#39;est que pour illustrer le principe. La vie réelle est plus compliquée. Vous ne pouvez pas tout mettre en cache et le cache n’est jamais complètement &quot;plein&quot; car le nombre de ressources peut être infini en raison de la nature dynamique du processus de rendu. Le modèle d&#39;un système de fichiers statique permet de générer une image approximative des capacités du répartiteur. Et cela aide à expliquer les limites du répartiteur.
 
@@ -127,17 +127,17 @@ Dans AEM,
 
 * `#fragment`, la partie de fragment d’une URL n’est pas transmise à AEM elle est utilisée uniquement dans le navigateur ; soit dans les cadres JavaScript sous la forme de &quot;paramètres de routage&quot;, soit pour accéder à une certaine partie de la page.
 
-Dans Apache (*faites référence au diagramme* ci-dessous),
+Dans Apache (*référencez le diagramme ci-dessous*),
 
 * `pagename.selectors.html` est utilisé comme nom de fichier dans le système de fichiers du cache.
 
-Si l’URL comporte un suffixe `path/suffix.ext` alors,
+Si l’URL comporte un suffixe `path/suffix.ext`,
 
 * `pagename.selectors.html` est créé en tant que dossier
 
-* `path` un dossier dans le `pagename.selectors.html` dossier
+* `path` un dossier dans le  `pagename.selectors.html` dossier
 
-* `suffix.ext` est un fichier du `path` dossier. Remarque : Si le suffixe n’a pas d’extension, le fichier n’est pas mis en cache.
+* `suffix.ext` est un fichier du  `path` dossier. Remarque : Si le suffixe n’a pas d’extension, le fichier n’est pas mis en cache.
 
 ![Disposition du système de fichiers après l’obtention des URL du répartiteur](assets/chapter-1/filesystem-layout-urls-from-dispatcher.png)
 
@@ -151,7 +151,7 @@ Le mappage entre une URL, la ressource et le nom de fichier est assez simple.
 
 Cependant, vous avez peut-être remarqué quelques pièges :
 
-1. Les URL peuvent devenir très longues. ajouter la partie &quot;chemin&quot; d&#39;un `/docroot` système de fichiers local pourrait facilement dépasser les limites de certains systèmes de fichiers. L&#39;exécution du répartiteur dans NTFS sous Windows peut s&#39;avérer difficile. Cependant, vous êtes en sécurité avec Linux.
+1. Les URL peuvent devenir très longues. Ajouter la partie &quot;path&quot; d&#39;un `/docroot` sur le système de fichiers local pourrait facilement dépasser les limites de certains systèmes de fichiers. L&#39;exécution du répartiteur dans NTFS sous Windows peut s&#39;avérer difficile. Cependant, vous êtes en sécurité avec Linux.
 
 2. Les URL peuvent contenir des caractères spéciaux et des valeurs cumulées. Ce n&#39;est généralement pas un problème pour le répartiteur. Cependant, gardez à l’esprit que l’URL est interprétée à de nombreux endroits de votre application. La plupart du temps, nous avons vu des comportements étranges d&#39;une application - juste pour découvrir qu&#39;une partie du code (personnalisé) rarement utilisé n&#39;a pas été soigneusement testée pour les caractères spéciaux. Tu devrais les éviter si tu peux. Et si vous ne pouvez pas, planifiez des tests minutieux.
 
@@ -163,17 +163,17 @@ Les URL doivent toujours avoir une extension. Bien que vous puissiez diffuser de
 
 **Exemples**
 
-`http://domain.com/home.html` est **mis en cache**
+`http://domain.com/home.html` est  **mis en cache**
 
-`http://domain.com/home` n&#39;est **pas mis en cache**
+`http://domain.com/home` n&#39;est  **pas mis en cache**
 
 La même règle s’applique lorsque l’URL contient un suffixe. Le suffixe doit avoir une extension pour pouvoir être mis en cache.
 
 **Exemples**
 
-`http://domain.com/home.html/path/suffix.html` est **mis en cache**
+`http://domain.com/home.html/path/suffix.html` est  **mis en cache**
 
-`http://domain.com/home.html/path/suffix` n&#39;est **pas mis en cache**
+`http://domain.com/home.html/path/suffix` n&#39;est  **pas mis en cache**
 
 Vous vous demandez peut-être, que se passe-t-il si la partie ressource n&#39;a pas d&#39;extension, mais que le suffixe en a une ? Dans ce cas, l&#39;URL n&#39;a aucun suffixe. Examinez l’exemple suivant :
 
@@ -181,7 +181,7 @@ Vous vous demandez peut-être, que se passe-t-il si la partie ressource n&#39;a 
 
 `http://domain.com/home/path/suffix.ext`
 
-Le `/home/path/suffix` chemin d&#39;accès à la ressource... de sorte qu&#39;il n&#39;y a aucun suffixe dans l&#39;URL.
+`/home/path/suffix` est le chemin d&#39;accès à la ressource... Il n&#39;y a donc aucun suffixe dans l&#39;URL.
 
 **Conclusion**
 
@@ -203,9 +203,9 @@ Alors... quel est le problème ?
 
 `home.html` dans un système de fichiers peut être un fichier ou un dossier. Pas les deux en même temps qu&#39;en AEM.
 
-Si vous le demandez `home.html` en premier, il sera créé sous la forme d&#39;un fichier.
+Si vous demandez d&#39;abord `home.html`, il sera créé sous la forme d&#39;un fichier.
 
-Les requêtes suivantes pour `home.html/suffix.html` renvoyer des résultats valides, mais comme le fichier `home.html` &quot;bloque&quot; la position dans le système de fichiers, `home.html` ne peut pas être créé une deuxième fois en tant que dossier et donc `home.html/suffix.html` n&#39;est pas mis en cache.
+Les requêtes suivantes envoyées à `home.html/suffix.html` retournent des résultats valides, mais comme le fichier `home.html` &quot;bloque&quot; la position dans le système de fichiers, `home.html` ne peut pas être créé une deuxième fois en tant que dossier et donc `home.html/suffix.html` n&#39;est pas mis en cache.
 
 ![Position de blocage des fichiers dans le système de fichiers empêchant la mise en cache des sous-ressources](assets/chapter-1/file-blocking-position-in-filesystem.png)
 
@@ -213,7 +213,7 @@ Les requêtes suivantes pour `home.html/suffix.html` renvoyer des résultats val
 
 <br> 
 
-Si vous le faites de l’autre côté, la demande initiale `home.html/suffix.html` est mise en cache sous un dossier `suffix.html` `/home.html` au début. Cependant, ce dossier est supprimé et remplacé par un fichier `home.html` lorsque vous demandez ultérieurement `home.html` en tant que ressource.
+Si vous le faites de l&#39;autre côté, demandez d&#39;abord `home.html/suffix.html` `suffix.html`, puis &lt;a1/> est mis en cache sous un dossier `/home.html` au début. Cependant, ce dossier est supprimé et remplacé par un fichier `home.html` lorsque vous demandez par la suite `home.html` en tant que ressource.
 
 ![Suppression d’une structure de chemin lorsqu’un parent est récupéré en tant que ressource](assets/chapter-1/deleting-path-structure.png)
 
@@ -264,11 +264,11 @@ Examinons un bref résumé du dernier chapitre et d&#39;autres exceptions. Le r�
 
 ### Présentation
 
-Le dernier chapitre répertorie un grand nombre d’exceptions lorsque le répartiteur ne peut pas mettre en cache une requête. Mais il y a plus à prendre en compte : Le fait que le Répartiteur _puisse_ mettre en cache une requête ne signifie pas nécessairement qu’il _devrait_ le faire.
+Le dernier chapitre répertorie un grand nombre d’exceptions lorsque le répartiteur ne peut pas mettre en cache une requête. Mais il y a plus à prendre en compte : Tout simplement parce que le Répartiteur _peut_ mettre en cache une requête, cela ne signifie pas nécessairement qu&#39;il _devrait_.
 
 L&#39;important est : La mise en cache est généralement facile. Le répartiteur doit simplement stocker le résultat d&#39;une réponse et le renvoyer la prochaine fois que la même requête est reçue. Droite? Faux !
 
-La partie difficile est l&#39; _invalidation_ ou le _vidage_ du cache. Le répartiteur doit savoir quand une ressource a changé et doit être rendu à nouveau.
+La partie difficile est l&#39;_invalidation_ ou _vidange_ du cache. Le répartiteur doit savoir quand une ressource a changé et doit être rendu à nouveau.
 
 Cela semble être une tâche triviale à première vue... mais ce n&#39;est pas le cas. Lisez plus loin et vous découvrirez quelques différences délicates entre des ressources simples et simples et des pages qui dépendent d&#39;une structure très maillée de plusieurs ressources.
 
@@ -309,7 +309,7 @@ Le répartiteur peut supprimer la ressource en toute sécurité avec tous les re
 
 `$ rm /content/dam/path/to/image.*`
 
-suppression `image.png` et `image.thumb.png` et tous les autres rendus correspondant à ce modèle.
+suppression de `image.png` et `image.thumb.png` et de tous les autres rendus correspondant à ce modèle.
 
 Très simple en effet... tant que vous n&#39;utilisez qu&#39;une seule ressource pour répondre à une demande.
 
@@ -344,7 +344,7 @@ Imaginez, vous avez publié votre site web. Le titre de votre page Canada est &q
 </div>
 ```
 
-*dans* la page d&#39;accueil. La page d&#39;accueil est stockée par le Répartiteur sous la forme d’un fichier .html statique, comprenant la bande annonce et le titre du fichier.
+** dans la page d&#39;accueil. La page d&#39;accueil est stockée par le Répartiteur sous la forme d’un fichier .html statique, comprenant la bande annonce et le titre du fichier.
 
 Le spécialiste du marketing a maintenant appris que les titres de bande dessinée devraient être exploitables. Il décide donc de changer le titre de &quot;Canada&quot; en &quot;Visite du Canada&quot; et met à jour l&#39;image.
 
@@ -364,7 +364,7 @@ La page &quot;Offre spéciale d&#39;hiver&quot; n&#39;a pas encore été rendue.
 
 Vous pensez peut-être que le Répartiteur suivrait toutes les ressources qu&#39;il touche tout en affichant et en vidant toutes les pages qui ont utilisé cette ressource, lorsque cette ressource change. Mais le Répartiteur ne rend pas les pages. Le rendu est effectué par le système de publication. Le Répartiteur ne sait pas quelles ressources vont dans un fichier .html rendu.
 
-Toujours pas convaincu ? Vous pourriez penser *&quot;il doit y avoir un moyen de mettre en oeuvre une sorte de suivi des dépendances&quot;*. Et bien il y en a, ou plus précisément il y en *avait*. Communiqué 3 l&#39;arrière-arrière-arrière-grand-père de AEM a fait mettre en place un outil de suivi des dépendances au cours de la _session_ qui a été utilisé pour rendre une page.
+Toujours pas convaincu ? Vous pouvez penser que *&quot;il doit y avoir un moyen d&#39;implémenter une sorte de suivi des dépendances&quot;*. Eh bien il y en a, ou plus précisément il *était*. Communiqué 3, l&#39;arrière-arrière-arrière-grand-père de AEM a eu un outil de suivi des dépendances mis en oeuvre dans la _session_ qui a été utilisée pour générer une page.
 
 Au cours d’une requête, chaque ressource acquise via cette session était suivie en tant que dépendance de l’URL actuellement générée.
 
@@ -410,7 +410,7 @@ Tous les fichiers du répartiteur, dont la date de création est antérieure au 
 
 <br> 
 
-Vous pouvez demander pourquoi il s&#39;appelle &quot;.stat&quot; ? Et peut-être pas &quot;.invalidé&quot; ? Eh bien, vous pouvez imaginer, avoir ce fichier dans votre système de fichiers aide le Répartiteur à déterminer quelles ressources pourraient être *statiquement* servies - tout comme un serveur web statique. Ces fichiers n’ont plus besoin d’être rendus dynamiquement.
+Vous pouvez demander pourquoi il s&#39;appelle &quot;.stat&quot; ? Et peut-être pas &quot;.invalidé&quot; ? Eh bien, vous pouvez imaginer, avoir ce fichier dans votre système de fichiers aide le Répartiteur à déterminer quelles ressources peuvent *statiquement* être servies - tout comme un serveur web statique. Ces fichiers n’ont plus besoin d’être rendus dynamiquement.
 
 La vraie nature du nom, cependant, est moins métaphorique. Il est dérivé de l&#39;appel système Unix `stat()`, qui renvoie l&#39;heure de modification d&#39;un fichier (entre autres propriétés).
 
@@ -450,7 +450,7 @@ Ce serait un peu plus que ce guide d&#39;entrer dans les détails, mais nous vou
 
 1. Sais vraiment ce que tu fais. Obtenir l&#39;invalidation correctement est vraiment difficile. C&#39;est l&#39;une des raisons pour lesquelles l&#39;auto-invalidation est si rigoureuse ; pour éviter de diffuser du contenu obsolète.
 
-2. Si votre agent envoie un en-tête HTTP `CQ-Action-Scope: ResourceOnly`, cela signifie que cette seule demande d’invalidation ne déclenche pas une invalidation automatique. Ce code ( [https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle](https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle)) peut être un bon point de départ pour votre propre agent de réplication.
+2. Si votre agent envoie un en-tête HTTP `CQ-Action-Scope: ResourceOnly`, cela signifie que cette demande d’invalidation unique ne déclenche pas une invalidation automatique. Cet élément de code ( [https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle](https://github.com/cqsupport/webinar-dispatchercache/tree/master/src/refetching-flush-agent/refetch-bundle)) peut être un bon point de départ pour votre propre agent de réplication.
 
 3. `ResourceOnly`, empêche uniquement l’invalidation automatique. Pour résoudre et invalider les dépendances nécessaires, vous devez déclencher vous-même les demandes d&#39;invalidation. Vous pouvez vérifier les règles de vidage du répartiteur de package ([https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-flush-rules/index.html)) pour savoir comment cela pourrait se produire.
 
@@ -476,7 +476,7 @@ Nous voulons maintenant appliquer ces mécanismes à un type de composants que v
 
 Illustrons un schéma commun (ou anti-schéma) d&#39;un composant avec des binaires interconnectés. Nous allons créer un composant &quot;respi&quot; - pour &quot;réactive-image&quot;. Ce composant doit pouvoir adapter l’image affichée au périphérique sur lequel elle s’affiche. Sur les ordinateurs de bureau et tablettes, il montre la résolution complète de l&#39;image, sur les téléphones une version plus petite avec un recadrage étroit - ou peut-être même un motif complètement différent (on appelle cela &quot;direction de l&#39;art&quot; dans le monde réactif).
 
-Les ressources sont téléchargées dans la zone DAM de l’AEM et uniquement _référencées_ dans le composant d’image réactive.
+Les ressources sont téléchargées dans la zone DAM de l’AEM et uniquement _référencées_ dans le composant réactive-image.
 
 Le composant respi-component s’occupe à la fois du rendu de l’annotation et de la diffusion des données image binaires.
 
@@ -490,7 +490,7 @@ Le terme original &quot;spooling&quot; fait en fait référence aux périphériq
 
 Voici comment notre composant d’image réactive est implémenté :
 
-Le composant comporte deux parties; la première partie effectue le rendu de l’annotation HTML de l’image, la seconde partie &quot;efface&quot; les données binaires de l’image référencée. Comme il s’agit d’un site Web moderne doté d’une conception adaptée, nous ne rendons pas une `<img src"…">` balise simple, mais un ensemble d’images dans une `<picture/>` balise. Pour chaque périphérique, nous téléchargeons deux images différentes dans le DAM et nous les référençons depuis notre composant d’image.
+Le composant comporte deux parties; la première partie effectue le rendu de l’annotation HTML de l’image, la seconde partie &quot;efface&quot; les données binaires de l’image référencée. Comme il s’agit d’un site Web moderne avec une conception adaptée, nous ne rendons pas une balise `<img src"…">` simple, mais un ensemble d’images dans la balise `<picture/>`. Pour chaque périphérique, nous téléchargeons deux images différentes dans le DAM et nous les référençons depuis notre composant d’image.
 
 Le composant comprend trois scripts de rendu (implémentés dans JSP, HTL ou en tant que servlet), chacun étant traité avec un sélecteur dédié :
 
@@ -599,7 +599,7 @@ Encore une fois, ceci est basé sur l&#39;expérience de la vie réelle. Nous av
 >
 >C&#39;est un anti-schéma. Ne l&#39;utilisez pas. Jamais.
 
-Avez-vous déjà vu des paramètres de requête comme `?ck=398547283745`? Ils sont appelés cache-killer (&quot;ck&quot;). L&#39;idée est que si vous ajoutez un paramètre de requête, la ressource ne sera pas récupérée. De plus, si vous ajoutez un nombre aléatoire en tant que valeur du paramètre (comme &quot;398547283745&quot;), l’URL devient unique et vous assurez qu’aucun autre cache entre le système AEM et votre écran ne peut être mis en cache. Habituellement, les suspects se retrouvent dans un cache &quot;vernis&quot; devant le Répartiteur, un CDN ou même le cache du navigateur. Encore : Ne fais pas ça. Vous souhaitez que vos ressources soient mises en cache autant et aussi longtemps que possible. Le cache est votre ami. Ne tuez pas d&#39;amis.
+Avez-vous déjà vu des paramètres de requête tels que `?ck=398547283745` ? Ils sont appelés cache-killer (&quot;ck&quot;). L&#39;idée est que si vous ajoutez un paramètre de requête, la ressource ne sera pas récupérée. De plus, si vous ajoutez un nombre aléatoire en tant que valeur du paramètre (comme &quot;398547283745&quot;), l’URL devient unique et vous assurez qu’aucun autre cache entre le système AEM et votre écran ne peut être mis en cache. Habituellement, les suspects se retrouvent dans un cache &quot;vernis&quot; devant le Répartiteur, un CDN ou même le cache du navigateur. Encore : Ne fais pas ça. Vous souhaitez que vos ressources soient mises en cache autant et aussi longtemps que possible. Le cache est votre ami. Ne tuez pas d&#39;amis.
 
 #### Invalidation automatique
 
@@ -619,19 +619,19 @@ Une empreinte URL ressemble à un tueur de cache. Mais ce n&#39;est pas le cas. 
 
 Un horodatage Unix est suffisant pour une implémentation dans le monde réel. Pour une meilleure lisibilité, nous utilisons un format plus lisible dans ce tutoriel : `2018 31.12 23:59 or fp-2018-31-12-23-59`.
 
-L’empreinte digitale ne doit pas être utilisée comme paramètre de requête, car les URL contenant des paramètres de requête ne peuvent pas être mises en cache. Vous pouvez utiliser un sélecteur ou le suffixe pour l’empreinte digitale.
+L’empreinte digitale ne doit pas être utilisée comme paramètre de requête, comme URL avec des paramètres de requête.   ne peut pas être mis en cache. Vous pouvez utiliser un sélecteur ou le suffixe pour l’empreinte digitale.
 
-Supposons que le dossier `/content/dam/flower.jpg` ait une date `jcr:lastModified` du 31 décembre 2018, 23:59. L&#39;URL avec l&#39;empreinte digitale est `/content/home/jcr:content/par/respi.fp-2018-31-12-23-59.jpg`.
+Supposons que le fichier `/content/dam/flower.jpg` ait une date `jcr:lastModified` du 31 décembre 2018, 23:59. L&#39;URL avec l&#39;empreinte digitale est `/content/home/jcr:content/par/respi.fp-2018-31-12-23-59.jpg`.
 
-Cette URL reste stable tant que le fichier de ressources (`flower.jpg`) référencé n’est pas modifié. Il peut donc être mis en cache pour une durée indéterminée et il n&#39;est pas un tueur de cache.
+Cette URL reste stable tant que le fichier de ressources référencées (`flower.jpg`) n’est pas modifié. Il peut donc être mis en cache pour une durée indéterminée et il n&#39;est pas un tueur de cache.
 
 Remarque : cette URL doit être créée et diffusée par le composant d’image dynamique. Ce n&#39;est pas une fonctionnalité AEM prête à l&#39;emploi.
 
 C&#39;est le concept de base. Il y a cependant quelques détails qui peuvent facilement être négligés.
 
-Dans notre exemple, le composant a été rendu et mis en cache à 23:59. Maintenant l&#39;image a été changée disons à 00:00.  Le composant _générerait_ une nouvelle URL d’empreinte digitale dans son balisage.
+Dans notre exemple, le composant a été rendu et mis en cache à 23:59. Maintenant l&#39;image a été changée disons à 00:00.  Le composant _génère_ une nouvelle URL d’empreinte digitale dans son balisage.
 
-Vous pourriez penser que ça _devrait_... mais ça ne l&#39;est pas. Comme seul le binaire de l’image a été modifié et que la page incluse n’a pas été modifiée, le rendu de l’annotation HTML n’est pas obligatoire. Ainsi, le répartiteur sert la page avec l&#39;ancienne empreinte, et donc l&#39;ancienne version de l&#39;image.
+Vous pourriez penser que _devrait_... mais ce n&#39;est pas le cas. Comme seul le binaire de l’image a été modifié et que la page incluse n’a pas été modifiée, le rendu de l’annotation HTML n’est pas obligatoire. Ainsi, le répartiteur sert la page avec l&#39;ancienne empreinte, et donc l&#39;ancienne version de l&#39;image.
 
 ![Composant d’image plus récent que l’image référencée, aucune empreinte nouvelle n’est rendue.](assets/chapter-1/recent-image-component.png)
 
@@ -649,9 +649,9 @@ Mais nous n&#39;avons pas activé la page d&#39;accueil, n&#39;est-ce pas ? Et p
 >
 >C&#39;est un anti-schéma. Utilisez-le seulement à court terme pour gagner du temps et trouver une solution plus sophistiquée.
 
-En règle générale, l’administrateur paresseux &quot;_définit l’auto-invalidation sur jpgs et le niveau du fichier statfile sur zéro - ce qui permet toujours de mettre en cache des problèmes de toutes sortes_&quot;. Vous trouverez ce conseil dans les forums technologiques, et il vous aidera à résoudre votre problème d&#39;invalidation.
+En règle générale, l’administrateur différé &quot;_définit l’auto-invalidation sur jpgs et le niveau du fichier statfile sur zéro - ce qui permet toujours de mettre en cache des problèmes de tous types_&quot;. Vous trouverez ce conseil dans les forums technologiques, et il vous aidera à résoudre votre problème d&#39;invalidation.
 
-Jusqu&#39;à présent, nous n&#39;avons pas discuté du niveau du fichier d&#39;état. En gros, l’invalidation automatique ne fonctionne que pour les fichiers de la même sous-arborescence. Cependant, le problème est que les pages et les ressources ne vivent généralement pas dans la même sous-arborescence. Les pages se trouvent quelque part en dessous `/content/mysite` tandis que les ressources vivent en dessous `/content/dam`.
+Jusqu&#39;à présent, nous n&#39;avons pas discuté du niveau du fichier d&#39;état. En gros, l’invalidation automatique ne fonctionne que pour les fichiers de la même sous-arborescence. Cependant, le problème est que les pages et les ressources ne vivent généralement pas dans la même sous-arborescence. Les pages sont quelque part en dessous de `/content/mysite` tandis que les ressources vivent en dessous de `/content/dam`.
 
 Le &quot;niveau de fichier de statistiques&quot; définit où se trouvent les noeuds racine de profondeur des sous-arbres. Dans l’exemple ci-dessus, le niveau serait &quot;2&quot; (1=/content, 2=/mysite, dam)
 
@@ -679,7 +679,7 @@ D&#39;une manière générale, il est préférable de faire correspondre les sit
 /content/site-b
 ```
 
-Ainsi, votre agent de vidage Dispatcher personnalisé peut facilement envoyer et invalider une demande à /content/site-a lorsqu&#39;il rencontre une modification le `/content/dam/site-a`jour même.
+Ainsi, votre agent de vidage Dispatcher personnalisé peut facilement envoyer et invalider une demande à /content/site-a lorsqu&#39;il rencontre une modification sur `/content/dam/site-a`.
 
 En fait, peu importe le chemin que vous dites au Répartiteur d&#39;invalider - tant qu&#39;il est dans le même site, dans la même &quot;sous-arborescence&quot;. Vous n&#39;avez même pas besoin d&#39;utiliser un véritable chemin de ressources. Il peut également être &quot;virtuel&quot; :
 
@@ -711,7 +711,7 @@ Le chemin,
 
 `/content/mysite/home/jcr:content/par/respi.img.fp-2018-31-12-23-59.jpg`
 
-ne concerne aucune des ressources invalidées. Mémoriser? Nous avons seulement invalidé une ressource &quot;factice&quot; et nous nous sommes appuyés sur l&#39;auto-invalidation pour considérer que &quot;maison&quot; n&#39;est pas valide. Il se peut que l’image elle-même ne soit jamais _physiquement_ supprimée. Ainsi, le cache grandira, grandira et grandira. Lorsque les images sont modifiées et activées, elles obtiennent de nouveaux noms de fichier dans le système de fichiers du répartiteur.
+ne concerne aucune des ressources invalidées. Mémoriser? Nous avons seulement invalidé une ressource &quot;factice&quot; et nous nous sommes appuyés sur l&#39;auto-invalidation pour considérer que &quot;maison&quot; n&#39;est pas valide. L’image elle-même ne peut jamais être _physiquement_ supprimée. Ainsi, le cache grandira, grandira et grandira. Lorsque les images sont modifiées et activées, elles obtiennent de nouveaux noms de fichier dans le système de fichiers du répartiteur.
 
 Il existe trois problèmes pour ne pas supprimer physiquement les fichiers mis en cache et les conserver indéfiniment :
 
@@ -745,9 +745,9 @@ Donc... au lieu de simplement utiliser l&#39;empreinte digitale comme un simple 
 
 Vous pouvez utiliser le schéma d’empreinte digitale non seulement pour les fichiers provenant du module DAM, mais également pour les fichiers JS- et CSS et les ressources connexes.
 
-[Versioned Clientlibs](https://adobe-consulting-services.github.io/acs-aem-commons/features/versioned-clientlibs/index.html) est un module qui utilise cette approche.
+[Versioned ](https://adobe-consulting-services.github.io/acs-aem-commons/features/versioned-clientlibs/index.html) Clientlibsis est un module qui utilise cette approche.
 
-Mais ici, vous pouvez faire face à une autre mise en garde avec des empreintes URL : Il lie l’URL au contenu. Vous ne pouvez pas modifier le contenu sans modifier également l’URL (c’est-à-dire, mettre à jour la date de modification). C&#39;est pour cela que les empreintes digitales sont conçues en premier lieu. Mais pensez à lancer une nouvelle version, avec de nouveaux fichiers CSS et JS et donc de nouvelles URL avec de nouvelles empreintes digitales. Toutes vos pages HTML contiennent toujours des références aux anciennes URL empreintes. Ainsi, pour que la nouvelle version fonctionne de manière cohérente, vous devez invalider toutes les pages HTML en même temps pour forcer un nouveau rendu avec des références aux fichiers nouvellement imprimés. Si vous avez plusieurs sites qui reposent sur les mêmes bibliothèques, cela peut être un grand nombre de rendus - et vous ne pouvez pas en tirer parti `statfiles`. Soyez donc prêt à voir les pics de charge sur vos systèmes de publication après un déploiement. Vous pouvez envisager un déploiement bleu-vert avec réchauffement du cache ou peut-être un cache basé sur TTL devant votre Répartiteur ... les possibilités sont infinies.
+Mais ici, vous pouvez faire face à une autre mise en garde avec des empreintes URL : Il lie l’URL au contenu. Vous ne pouvez pas modifier le contenu sans modifier également l’URL (c’est-à-dire, mettre à jour la date de modification). C&#39;est pour cela que les empreintes digitales sont conçues en premier lieu. Mais pensez à lancer une nouvelle version, avec de nouveaux fichiers CSS et JS et donc de nouvelles URL avec de nouvelles empreintes digitales. Toutes vos pages HTML contiennent toujours des références aux anciennes URL empreintes. Ainsi, pour que la nouvelle version fonctionne de manière cohérente, vous devez invalider toutes les pages HTML en même temps pour forcer un nouveau rendu avec des références aux fichiers nouvellement imprimés. Si vous avez plusieurs sites qui reposent sur les mêmes bibliothèques, cela peut être un grand nombre de retours. Ici, vous ne pouvez pas exploiter le `statfiles`. Soyez donc prêt à voir les pics de charge sur vos systèmes de publication après un déploiement. Vous pouvez envisager un déploiement bleu-vert avec réchauffement du cache ou peut-être un cache basé sur TTL devant votre Répartiteur ... les possibilités sont infinies.
 
 #### Bref saut
 
@@ -803,7 +803,7 @@ Notre exemple est facile à résoudre :
 
 Nous utilisons les ressources d&#39;origine des chemins de ressources pour générer les données. Si nous devons rendre l’image d’origine telle quelle, nous pouvons simplement utiliser AEM rendu par défaut pour les ressources.
 
-Si nous devons effectuer un traitement spécial pour un composant spécifique, nous enregistrerions une servlet dédiée sur ce chemin et un sélecteur pour effectuer la transformation au nom du composant. Nous l&#39;avons fait ici exemplaire avec le &quot;.respi&quot;. sélecteur. Il est recommandé de suivre les noms des sélecteurs utilisés dans l’espace URL global (par exemple `/content/dam`) et de disposer d’une convention d’affectation de nom efficace pour éviter les conflits d’affectation de nom.
+Si nous devons effectuer un traitement spécial pour un composant spécifique, nous enregistrerions une servlet dédiée sur ce chemin et un sélecteur pour effectuer la transformation au nom du composant. Nous l&#39;avons fait ici exemplaire avec le &quot;.respi&quot;. sélecteur. Il est recommandé de suivre les noms des sélecteurs utilisés dans l’espace URL global (tel que `/content/dam`) et de disposer d’une convention d’affectation de nom efficace pour éviter les conflits d’affectation de nom.
 
 Au fait, nous ne voyons aucun problème de cohérence du code. La servlet peut être définie dans le même package Java que le modèle sling des composants.
 
@@ -861,7 +861,7 @@ Dans le dernier chapitre, l’URL de l’image rendue par le composant ressembla
 
 `/content/dam/flower.respi.jpg`
 
-Tout ce qui manque, c&#39;est la valeur de la qualité. Le composant sait quelle propriété est saisie par l’auteur... Il peut facilement être transmis à la servlet de rendu d’image en tant que paramètre de requête lors du rendu de l’annotation, par exemple `flower.respi2.jpg?quality=60`:
+Tout ce qui manque, c&#39;est la valeur de la qualité. Le composant sait quelle propriété est saisie par l&#39;auteur... Il peut facilement être transmis à la servlet de rendu d&#39;image en tant que paramètre de requête lorsque l&#39;annotation est rendue, par exemple `flower.respi2.jpg?quality=60` :
 
 ```plain
   <div class="respi2">
@@ -901,7 +901,7 @@ C&#39;est bien mieux, mais souvenez-vous de ce méchant scénariste du dernier c
   …
 ```
 
-Cette fois encore, le cache est contourné et la charge est créée sur le système de publication. Donc, ça pourrait être une mauvaise idée. Vous pouvez atténuer ce problème en filtrant uniquement un petit sous-ensemble de paramètres. Vous ne voulez autoriser que `q-20, q-40, q-60, q-80, q-100`.
+Cette fois encore, le cache est contourné et la charge est créée sur le système de publication. Donc, ça pourrait être une mauvaise idée. Vous pouvez atténuer ce problème en filtrant uniquement un petit sous-ensemble de paramètres. Vous souhaitez n’autoriser que `q-20, q-40, q-60, q-80, q-100`.
 
 #### Filtrage des requêtes non valides lors de l’utilisation de sélecteurs
 
@@ -940,7 +940,7 @@ répondrait toujours à la même image que q-40 :
 
 Cette approche n&#39;aide en rien. Ces requêtes sont en fait des requêtes valides.  Ils consomment de la puissance de traitement et occupent de l&#39;espace dans le répertoire de cache du répartiteur.
 
-Mieux vaut retourner un `301 – Moved permanently`:
+Il est préférable de renvoyer un `301 – Moved permanently` :
 
 ```plain
   GET /content/dam/flower.respi.q-41.jpg
@@ -949,9 +949,9 @@ Mieux vaut retourner un `301 – Moved permanently`:
   Location: /content/dam/flower.respi.q-40.jpg
 ```
 
-Ici AEM dit au navigateur. &quot;Je n&#39;en ai pas `q-41`. Mais hé - vous pouvez me demander à propos de `q-40` &quot;.
+Ici AEM dit au navigateur. &quot;Je n&#39;ai pas `q-41`. Mais hé - vous pouvez me poser des questions sur `q-40` &quot;.
 
-Cela ajoute une boucle de réponse à la demande à la conversation, qui est un peu lourde, mais c&#39;est moins cher que d&#39;effectuer le traitement complet sur `q-41`. Et vous pouvez exploiter le fichier qui est déjà mis en cache sous `q-40`. Vous devez comprendre, cependant, que 302 réponses ne sont pas mises en cache dans le Répartiteur, nous parlons de logique qui est exécutée dans l&#39;AEM. Encore et encore. Donc vous feriez mieux de le rendre mince et rapide.
+Cela ajoute une boucle de réponse à la demande à la conversation, ce qui représente un peu de frais généraux, mais c&#39;est moins cher que d&#39;effectuer le traitement complet sur `q-41`. Vous pouvez également exploiter le fichier qui est déjà mis en cache sous `q-40`. Vous devez comprendre, cependant, que 302 réponses ne sont pas mises en cache dans le Répartiteur, nous parlons de logique qui est exécutée dans l&#39;AEM. Encore et encore. Donc vous feriez mieux de le rendre mince et rapide.
 
 Nous aimons personnellement le 404 répondre le plus. Cela rend très évident ce qui se passe. Il permet également de détecter les erreurs sur votre site Web lorsque vous analysez des fichiers journaux. 301 peut être prévu, où 404 doit toujours être analysé et éliminé.
 
@@ -1039,7 +1039,7 @@ Cela nous amène à la question. Pourquoi ne pouvons-nous pas simplement avoir l
 
 Nous devons admettre que nous n&#39;avons pas vu ça dans un vrai projet en direct. Mais osons de toute façon faire une petite expérience de pensée - comme point de départ pour votre propre solution.
 
-Nous appellerons ce motif le _spouleur_ inversé. Le spouleur inversé doit être basé sur la ressource d&#39;images, pour avoir toutes les propriétés d&#39;invalidation du cache sympa.
+Nous appellerons ce modèle le &lt; a0/>spouleur inversé&#x200B;_._ Le spouleur inversé doit être basé sur la ressource d&#39;images, pour avoir toutes les propriétés d&#39;invalidation du cache sympa.
 
 Mais il ne doit exposer aucun paramètre. Toutes les propriétés doivent être encapsulées dans le composant. Mais nous pouvons exposer le chemin des composants - comme une référence opaque aux propriétés.
 
@@ -1065,23 +1065,23 @@ Waouh... la discussion sur le spouleur est devenue plus longue et plus compliqu�
 
 #### Présentation
 
-Nous avons déjà brièvement mentionné le _fichier_ de statistiques auparavant. Il est lié à l’invalidation automatique :
+Nous avons déjà brièvement mentionné le _fichier_état_ précédemment. Il est lié à l’invalidation automatique :
 
-Tous les fichiers de cache du système de fichiers du répartiteur configurés pour être automatiquement invalidés sont considérés comme non valides si leur date de dernière modification est antérieure à la date de `statfile's` dernière modification.
+Tous les fichiers de cache du système de fichiers du répartiteur configurés pour être automatiquement invalidés sont considérés comme non valides si leur date de dernière modification est antérieure à la date de dernière modification `statfile's`.
 
 >[!NOTE]
 >
->La dernière date de modification dont nous parlons est le fichier mis en cache, c&#39;est la date à laquelle le fichier a été demandé au navigateur du client et finalement créé dans le système de fichiers. Ce n&#39;est pas la `jcr:lastModified` date de la ressource.
+>La dernière date de modification dont nous parlons est le fichier mis en cache, c&#39;est la date à laquelle le fichier a été demandé au navigateur du client et finalement créé dans le système de fichiers. Il ne s&#39;agit pas de la date `jcr:lastModified` de la ressource.
 
-La date de dernière modification du fichier d’état (`.stat`) est la date à laquelle la demande d’invalidation de l’AEM a été reçue sur le répartiteur.
+La date de dernière modification du fichier d&#39;état (`.stat`) est la date à laquelle la demande d&#39;invalidation de l&#39;AEM a été reçue sur le Répartiteur.
 
 Si vous avez plusieurs Répartiteurs, cela peut avoir des effets étranges. Votre navigateur peut avoir une version plus récente de Répartiteurs (si vous avez plusieurs Répartiteurs). Ou un Répartiteur peut penser que la version du navigateur qui a été émise par l&#39;autre Répartiteur est obsolète et envoie inutilement une nouvelle copie. Ces effets n&#39;ont pas d&#39;impact significatif sur les performances ou les exigences fonctionnelles. Et ils se stabiliseront au fil du temps, lorsque le navigateur aura la dernière version. Cependant, cela peut être un peu déroutant lorsque vous optimisez et déboguez le comportement de mise en cache du navigateur. Soyez donc avertis.
 
 #### Configuration de domaines d&#39;invalidation avec /statfileslevel
 
-Lorsque nous avons introduit l&#39;auto-invalidation et le fichier d&#39;état que nous avons dit, que *tous les* fichiers sont considérés comme non valides en cas de modification et que tous les fichiers sont de toute façon interdépendants.
+Lorsque nous avons introduit l&#39;auto-invalidation et le fichier d&#39;état que nous avons dit, que *tous* fichiers sont considérés comme non valides en cas de modification et que tous les fichiers sont interdépendants de toute façon.
 
-Ce n&#39;est pas tout à fait exact. En général, tous les fichiers qui partagent une racine de navigation principale commune sont interdépendants. Mais un exemple AEM peut héberger un certain nombre de sites web - des sites web *indépendants* . Ne pas partager une navigation commune - en fait, ne rien partager.
+Ce n&#39;est pas tout à fait exact. En général, tous les fichiers qui partagent une racine de navigation principale commune sont interdépendants. Mais une instance AEM peut héberger un certain nombre de sites Web - *indépendants*. Ne pas partager une navigation commune - en fait, ne rien partager.
 
 Ne serait-ce pas un gaspillage d&#39;invalider le site B parce qu&#39;il y a un changement dans le site A ? Oui, c&#39;est vrai. Et ça n&#39;a pas besoin d&#39;être comme ça.
 
@@ -1091,17 +1091,17 @@ Il s’agit d’un nombre qui définit à partir de quel niveau du système de f
 
 Examinons le cas par défaut où le niveau des états est 0.
 
-![/statfileslevel &quot;0&quot; : Le_ _.stat_ _est créé dans le point. Le domaine d&#39;invalidation couvre toute l&#39;installation, y compris tous les sites](assets/chapter-1/statfile-level-0.png)
+![/statfileslevel &quot;0&quot; : Le_  _.stat_ _est créé dans le point. Le domaine d’invalidation couvre toute l’installation, y compris tous les sites](assets/chapter-1/statfile-level-0.png)
 
-`/statfileslevel "0":` Le `.stat` fichier est créé dans le dossier. Le domaine d’invalidation couvre toute l’installation, y compris tous les sites.
+`/statfileslevel "0":` Le  `.stat` fichier est créé dans le dossier. Le domaine d’invalidation couvre toute l’installation, y compris tous les sites.
 
-Quel que soit le fichier invalidé, le `.stat` fichier situé tout en haut du point répartiteurs est toujours mis à jour. Ainsi, lorsque vous invalidez `/content/site-b/home`, tous les fichiers dans `/content/site-a` sont également invalidés, car ils sont maintenant plus anciens que le `.stat` fichier dans le docroot. Clairement pas ce dont vous avez besoin, quand vous invalidez `site-b`.
+Quel que soit le fichier invalidé, le fichier `.stat` situé tout en haut du docroot des répartiteurs est toujours mis à jour. Ainsi, lorsque vous invalidez `/content/site-b/home`, tous les fichiers de `/content/site-a` sont également invalidés, car ils sont désormais plus anciens que le fichier `.stat` dans le docroot. Clairement pas ce dont vous avez besoin, lorsque vous invalidez `site-b`.
 
-Dans cet exemple, vous préféreriez définir le paramètre `statfileslevel` sur `1`.
+Dans cet exemple, vous préférez définir `statfileslevel` sur `1`.
 
-Maintenant, si vous publiez - et donc invalidez `/content/site-b/home` ou toute autre ressource ci-dessous `/content/site-b`, le `.stat` fichier est créé à `/content/site-b/`.
+Désormais, si vous publiez - et par conséquent invalidez `/content/site-b/home` ou toute autre ressource inférieure à `/content/site-b`, le fichier `.stat` est créé à `/content/site-b/`.
 
-Le contenu ci-dessous `/content/site-a/` n’est pas affecté. Ce contenu serait comparé à un `.stat` fichier `/content/site-a/`. Nous avons créé deux domaines d&#39;invalidation distincts.
+Le contenu ci-dessous `/content/site-a/` n’est pas affecté. Ce contenu serait comparé à un fichier `.stat` à `/content/site-a/`. Nous avons créé deux domaines d&#39;invalidation distincts.
 
 ![Un niveau de fichier d’état &quot;1&quot; crée différents domaines d’invalidation.](assets/chapter-1/statfiles-level-1.png)
 
@@ -1109,7 +1109,7 @@ Le contenu ci-dessous `/content/site-a/` n’est pas affecté. Ce contenu serait
 
 <br> 
 
-Les grandes installations sont généralement structurées un peu plus complexes et plus profondes. Un schéma commun consiste à structurer les sites par marque, pays et langue. Dans ce cas, vous pouvez définir le niveau des états encore plus élevé. _1_ créerait des domaines d’invalidation par marque, _2_ par pays et _3_ par langue.
+Les grandes installations sont généralement structurées un peu plus complexes et plus profondes. Un schéma commun consiste à structurer les sites par marque, pays et langue. Dans ce cas, vous pouvez définir le niveau des états encore plus élevé. _1_ créerait des domaines d’invalidation par marque,  _2_ par pays et  _3_ par langue.
 
 ### Nécessité d&#39;une structure de site homogène
 
@@ -1138,11 +1138,11 @@ Pensez que votre portefeuille contient des marques qui ne sont vendues que sur q
   ..
 ```
 
-La première exigerait un nombre `statfileslevel` de _2_, tandis que la seconde exigerait _3_.
+La première exigerait un `statfileslevel` de _2_, tandis que la seconde exige _3_.
 
-Pas une situation idéale. Si vous la définissez sur _3_, l’invalidation automatique ne fonctionnera pas dans les sites plus petits entre les sous-branches `/home`, `/products` et `/about`.
+Pas une situation idéale. Si vous la définissez sur _3_, l&#39;invalidation automatique ne fonctionnerait pas dans les sites plus petits entre les sous-branches `/home`, `/products` et `/about`.
 
-La définition de ce paramètre sur _2_ signifie que dans les sites les plus volumineux, vous déclarez `/canada/en` et `/canada/fr` dépendez, ce qui n&#39;est peut-être pas le cas. Ainsi, chaque invalidation dans `/en` serait également invalidée `/fr`. Cela entraînera une légère baisse du taux d’accès au cache, mais reste préférable à la diffusion de contenu obsolète en cache.
+La définition de _2_ signifie que, dans les sites les plus volumineux, vous déclarez `/canada/en` et `/canada/fr` dépendants, ce qui n&#39;est peut-être pas le cas. Ainsi, chaque invalidation dans `/en` invaliderait également `/fr`. Cela entraînera une légère baisse du taux d’accès au cache, mais reste préférable à la diffusion de contenu obsolète en cache.
 
 La meilleure solution, bien sûr, est de rendre les racines de tous les sites aussi profondes :
 
@@ -1160,7 +1160,7 @@ La meilleure solution, bien sûr, est de rendre les racines de tous les sites au
 
 Quel est le bon niveau ? Cela dépend du nombre de dépendances que vous avez entre les sites. Les inclusions que vous résolvez pour le rendu d’une page sont considérées comme des &quot;dépendances dures&quot;. Nous avons démontré une telle _inclusion_ lorsque nous avons présenté le composant _Teaser_ au début de ce guide.
 
-_Les hyperliens_ sont une forme plus souple de dépendances. Il est très probable que vous utilisiez des hyperliens dans un site Web... et il n&#39;est pas improbable que vous ayez des liens entre vos sites Web. Les hyperliens simples ne créent généralement pas de dépendances entre les sites Web. Pensez simplement à un lien externe que vous avez défini de votre site à facebook... Vous n&#39;auriez pas à rendre votre page si quelque chose change sur facebook et vice versa, n&#39;est-ce pas ?
+_Les_ hyperliens sont une forme plus souple de dépendances. Il est très probable que vous utilisiez des hyperliens dans un site Web... et il n&#39;est pas improbable que vous ayez des liens entre vos sites Web. Les hyperliens simples ne créent généralement pas de dépendances entre les sites Web. Pensez simplement à un lien externe que vous avez défini de votre site à facebook... Vous n&#39;auriez pas à rendre votre page si quelque chose change sur facebook et vice versa, n&#39;est-ce pas ?
 
 Une dépendance survient lorsque vous lisez le contenu de la ressource liée (par exemple, le titre de navigation). De telles dépendances peuvent être évitées si vous vous contentez d’utiliser des titres de navigation entrés localement et ne les tracez pas à partir de la page de cible (comme vous le feriez avec les liens externes).
 
@@ -1201,7 +1201,7 @@ Tous les sites diffusaient en gros le même contenu. La seule différence majeur
 
 Les moteurs de recherche comme Google considèrent que le même contenu sur différentes URL est &quot;trompeur&quot;. Un utilisateur peut tenter d’être classé plus haut ou plus souvent en créant des fermes proposant un contenu identique. Les moteurs de recherche reconnaissent ces tentatives et classent en fait les pages plus basses qui recyclent simplement le contenu.
 
-Vous pouvez éviter d’être classé de bas niveau en rendant transparente, que vous disposez en fait de plusieurs pages avec le même contenu et que vous n’essayez pas de &quot;jouer&quot; au système (voir [&quot;Parlez à Google des versions localisées de votre page&quot;](https://support.google.com/webmasters/answer/189077?hl=en)) en définissant `<link rel="alternate">` des balises à chaque page associée dans la section d’en-tête de chaque page :
+Vous pouvez éviter d’être classé de bas niveau en rendant transparente, que vous avez en fait plusieurs pages avec le même contenu et que vous n’essayez pas de &quot;jouer&quot; au système (voir [&quot;Parlez à Google des versions localisées de votre page&quot;](https://support.google.com/webmasters/answer/189077?hl=en)) en définissant des balises `<link rel="alternate">` pour chaque page associée dans la section d’en-tête de chaque page :
 
 ```
 # URL: www.shiny-brand.fr/fr/home/produits.html
@@ -1247,13 +1247,13 @@ Vous pouvez éviter d’être classé de bas niveau en rendant transparente, que
 
 Certains experts de l&#39;optimisation du référencement prétendent même que cela pourrait transférer la réputation ou &quot;link-jus&quot; d&#39;un site web de haut niveau dans une langue vers le même site web dans une autre langue.
 
-Ce système a créé non seulement un certain nombre de liens mais aussi quelques problèmes. Le nombre de liens requis pour _p_ dans _n_ langues est _p x (n<sup>2</sup>-n) : Chaque page est liée à une autre page (_ n x n _) sauf à elle-même (_-n _)._ Ce schéma est appliqué à chaque page. Si nous avons un petit site en 4 langues avec 20 pages, chacune représente _240_ liens.
+Ce système a créé non seulement un certain nombre de liens mais aussi quelques problèmes. Le nombre de liens requis pour _p_ en _n_ langues est _p x (n<sup>2</sup>-n)_ : Chaque page est liée à une autre page (_n x n_) sauf à elle-même (_-n_). Ce schéma est appliqué à chaque page. Si nous disposons d&#39;un petit site en 4 langues avec 20 pages, chacune correspond à des liens _240_.
 
 Tout d&#39;abord, vous ne souhaitez pas qu&#39;un éditeur ait à gérer manuellement ces liens ; ils doivent être générés automatiquement par le système.
 
 Deuxièmement, ils devraient être précis. Chaque fois que le système détecte un nouveau &quot;parent&quot;, vous souhaitez le lier à partir de toutes les autres pages avec le même contenu (mais dans une langue différente).
 
-Dans notre projet, de nouvelles pages relatives apparaissaient fréquemment. Mais ils ne se sont pas matérialisés comme des liens &quot;alternatifs&quot;. Par exemple, lorsque la `de-de/produkte` page a été publiée sur le site allemand, elle n&#39;était pas immédiatement visible sur les autres sites.
+Dans notre projet, de nouvelles pages relatives apparaissaient fréquemment. Mais ils ne se sont pas matérialisés comme des liens &quot;alternatifs&quot;. Par exemple, lorsque la page `de-de/produkte` a été publiée sur le site Web allemand, elle n’était pas immédiatement visible sur les autres sites.
 
 La raison était que dans notre configuration les sites étaient censés être indépendants. Un changement sur le site allemand n&#39;a donc pas déclenché une invalidation sur le site français.
 
@@ -1263,7 +1263,7 @@ Dans notre cas, c&#39;était encore plus compliqué :
 
 Bien que nous disposions du même contenu, les noms de marque ne sont pas identiques dans chaque pays.
 
-`shiny-brand` a été appelé `marque-brillant` en France et `blitzmarke` en Allemagne :
+`shiny-brand` a été appelé  `marque-brillant` en France et  `blitzmarke` en Allemagne :
 
 ```
 /content/marque-brillant/france/fr
@@ -1273,7 +1273,7 @@ Bien que nous disposions du même contenu, les noms de marque ne sont pas identi
 …
 ```
 
-Cela aurait signifié de fixer le `statfiles` niveau à 1 - ce qui aurait eu pour résultat un domaine d&#39;invalidation trop énorme.
+Cela aurait signifié de définir le niveau `statfiles` sur 1, ce qui aurait abouti à un domaine d&#39;invalidation trop important.
 
 La restructuration du site aurait corrigé cela. Fusionner toutes les marques ensemble sous une seule racine commune. Mais nous n&#39;avions pas la capacité à l&#39;époque, et - cela nous aurait donné seulement un niveau 2.
 
@@ -1295,7 +1295,7 @@ Si vous installez un auteur AEM et une publication prêts à l’emploi, la topo
 
 Si un client demande ce contenu entre-temps, le répartiteur demande et stocke le contenu obsolète.
 
-Une configuration plus fiable envoie la demande d’invalidation des systèmes de publication _après_ la réception du contenu. L’article &quot;[Invalidation du cache du répartiteur à partir d’une instance](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)de publication&quot; décrit les détails.
+Une configuration plus fiable envoie la demande d’invalidation des systèmes de publication _après avoir reçu le contenu_. L’article &quot;[Invalidation du cache du répartiteur à partir d’une instance de publication](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#InvalidatingDispatcherCachefromaPublishingInstance)&quot; décrit les détails.
 
 **Références**
 
@@ -1305,9 +1305,9 @@ Une configuration plus fiable envoie la demande d’invalidation des systèmes d
 
 Auparavant, le Répartiteur ne stockait que des fichiers simples dans le système de fichiers. Si vous aviez besoin que des en-têtes HTTP soient distribués au client, vous l&#39;avez fait en configurant Apache en fonction des peu d&#39;informations que vous disposiez du fichier ou de l&#39;emplacement. Cela était particulièrement gênant lorsque vous implémentiez une application Web dans AEM qui dépendait fortement des en-têtes HTTP. Tout fonctionnait bien dans l&#39;instance AEM uniquement mais pas lorsque vous utilisiez un Répartiteur.
 
-Habituellement, vous avez commencé à réappliquer les en-têtes manquants aux ressources du serveur Apache avec `mod_headers` en utilisant les informations que vous pourriez dériver par le chemin et le suffixe des ressources. Mais cela n&#39;a pas toujours été suffisant.
+Habituellement, vous avez commencé à réappliquer les en-têtes manquants aux ressources du serveur Apache avec `mod_headers` en utilisant des informations que vous pourriez dériver par le chemin et le suffixe des ressources. Mais cela n&#39;a pas toujours été suffisant.
 
-Le fait que, même avec le Répartiteur, la première réponse _non mise en cache_ au navigateur provenait du système de publication avec une plage complète d’en-têtes était particulièrement gênant, tandis que les réponses suivantes étaient générées par le Répartiteur avec un ensemble limité d’en-têtes.
+Ce qui est particulièrement gênant, c&#39;est que même avec le Répartiteur la première réponse _non mise en cache_ au navigateur provenait du système de publication avec une plage complète d&#39;en-têtes, tandis que les réponses suivantes étaient générées par le Répartiteur avec un ensemble limité d&#39;en-têtes.
 
 À partir de Dispatcher 4.1.11, le Répartiteur peut stocker les en-têtes générés par les systèmes de publication.
 
@@ -1331,7 +1331,7 @@ Vous pouvez mettre en cache toutes les pages et images en général, mais vous p
   response.setHeader("Pragma: no-cache");
 ```
 
-Cache-Control et Pragma sont des en-têtes HTTP officiels, propagés et interprétés par les couches de mise en cache supérieures, telles qu’un CDN. L&#39; `Dispatcher` en-tête n&#39;est qu&#39;un indice que le Répartiteur ne doit pas mettre en cache. Il peut être utilisé pour indiquer au Répartiteur de ne pas mettre en cache, tout en permettant aux calques de mise en cache supérieure de le faire. En fait, il est difficile de trouver un cas où cela pourrait être utile. Mais nous sommes sûrs qu&#39;il y en a, quelque part.
+Cache-Control et Pragma sont des en-têtes HTTP officiels, propagés et interprétés par les couches de mise en cache supérieures, telles qu’un CDN. L&#39;en-tête `Dispatcher` n&#39;est qu&#39;un indice que le Répartiteur ne doit pas mettre en cache. Il peut être utilisé pour indiquer au Répartiteur de ne pas mettre en cache, tout en permettant aux calques de mise en cache supérieure de le faire. En fait, il est difficile de trouver un cas où cela pourrait être utile. Mais nous sommes sûrs qu&#39;il y en a, quelque part.
 
 **Références**
 
@@ -1343,43 +1343,43 @@ La réponse http la plus rapide est la réponse donnée par le navigateur lui-m�
 
 Vous pouvez aider le navigateur à décider quand demander au serveur une nouvelle version du fichier en définissant une date d&#39;expiration sur une ressource.
 
-Habituellement, vous faites cela de manière statique en utilisant Apache&#39;s `mod_expires` ou en stockant l&#39;en-tête Cache-Control et Expires qui viennent d&#39;AEM si vous avez besoin d&#39;un contrôle plus individuel.
+Habituellement, vous faites cela de manière statique en utilisant l&#39;élément `mod_expires` d&#39;Apache ou en stockant l&#39;en-tête Cache-Control et Expires qui vient d&#39;AEM si vous avez besoin d&#39;un contrôle plus individuel.
 
 Un document mis en cache dans le navigateur peut comporter trois niveaux d’actualité.
 
-1. _Actualité_ garantie - Le navigateur peut utiliser le document mis en cache.
+1. _Garanti frais_  - Le navigateur peut utiliser le document mis en cache.
 
-2. _Potentiellement obsolète_ : le navigateur doit d’abord demander au serveur si le document mis en cache est toujours à jour,
+2. _Potentiellement obsolète_  : le navigateur doit d’abord demander au serveur si le document mis en cache est toujours à jour,
 
-3. _Stale_ - Le navigateur doit demander au serveur une nouvelle version.
+3. _Stale_  - Le navigateur doit demander au serveur une nouvelle version.
 
 Le premier est garanti par la date d’expiration définie par le serveur. Si une ressource n&#39;est pas expirée, il n&#39;est pas nécessaire de demander de nouveau au serveur.
 
 Si le document a atteint sa date d&#39;expiration, il peut encore être neuf. La date d’expiration est définie lors de la livraison du document. Mais souvent vous ne savez pas à l&#39;avance quand de nouveaux contenus sont disponibles - c&#39;est donc une estimation prudente.
 
-Pour déterminer si le document dans le cache du navigateur est toujours identique à celui qui serait diffusé sur une nouvelle demande, le navigateur peut utiliser la `Last-Modified` date du document. Le navigateur demande au serveur :
+Pour déterminer si le document dans le cache du navigateur est toujours identique à celui qui serait diffusé sur une nouvelle demande, le navigateur peut utiliser la date `Last-Modified` du document. Le navigateur demande au serveur :
 
 &quot;_J&#39;ai une version du 10 juin... ai-je besoin d&#39;une mise à jour ?_&quot; Et le serveur peut répondre par
 
 &quot;_304 - Votre version est toujours à jour_&quot; sans retransmettre la ressource, ou le serveur peut répondre par
 
-&quot;_200 - Voici une version_ plus récente&quot; dans l’en-tête HTTP et le contenu actuel plus récent dans le corps HTTP.
+&quot;_200 - voici une version plus récente_&quot; dans l&#39;en-tête HTTP et le contenu actuel plus récent dans le corps HTTP.
 
-Pour que cette deuxième partie fonctionne, veillez à transmettre la `Last-Modified` date au navigateur afin qu’il dispose d’un point de référence pour demander des mises à jour.
+Pour que cette deuxième partie fonctionne, veillez à transmettre la date `Last-Modified` au navigateur afin qu’il dispose d’un point de référence pour demander des mises à jour.
 
-Nous avons expliqué plus tôt que lorsque la `Last-Modified` date est générée par le répartiteur, elle peut varier selon les requêtes, car le fichier mis en cache - et sa date - est généré lorsque le fichier est demandé par le navigateur. Une alternative serait d’utiliser des &quot;e-tags&quot;, c’est-à-dire des nombres qui identifient le contenu réel (par exemple en générant un code de hachage) au lieu d’une date.
+Nous avons expliqué plus tôt que lorsque la date `Last-Modified` est générée par le répartiteur, elle peut varier selon les requêtes, car le fichier mis en cache - et sa date - est généré lorsque le fichier est demandé par le navigateur. Une alternative serait d’utiliser des &quot;e-tags&quot;, c’est-à-dire des nombres qui identifient le contenu réel (par exemple en générant un code de hachage) au lieu d’une date.
 
-&quot;[Etag Support](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)&quot; du paquet __ ACS Commons utilise cette approche. Mais cela a un prix : Comme la balise E doit être envoyée sous forme d&#39;en-tête, mais que le calcul du code de hachage nécessite la lecture complète de la réponse, celle-ci doit être entièrement mise en mémoire tampon dans la mémoire principale avant d&#39;être livrée. Cela peut avoir un impact négatif sur la latence lorsque votre site Web est plus susceptible d’avoir des ressources non mises en cache et, bien sûr, vous devez garder un oeil sur la mémoire consommée par votre système AEM.
+&quot;[Prise en charge des balises ](https://adobe-consulting-services.github.io/acs-aem-commons/features/etag/index.html)&quot; du _progiciel ACS Commons_ utilise cette approche. Mais cela a un prix : Comme la balise E doit être envoyée sous forme d&#39;en-tête, mais que le calcul du code de hachage nécessite la lecture complète de la réponse, celle-ci doit être entièrement mise en mémoire tampon dans la mémoire principale avant d&#39;être livrée. Cela peut avoir un impact négatif sur la latence lorsque votre site Web est plus susceptible d’avoir des ressources non mises en cache et, bien sûr, vous devez garder un oeil sur la mémoire consommée par votre système AEM.
 
 Si vous utilisez des empreintes URL, vous pouvez définir des dates d’expiration très longues. Vous pouvez toujours mettre en cache les ressources empreintes digitales dans le navigateur. Une nouvelle version est marquée par une nouvelle URL et les versions plus anciennes n’ont jamais à être mises à jour.
 
-Nous avons utilisé des empreintes URL quand nous avons introduit le modèle de spouleur. Les fichiers statiques provenant du `/etc/design` (CSS, JS) sont rarement modifiés, ce qui en fait également de bons candidats à l&#39;utilisation comme empreintes digitales.
+Nous avons utilisé des empreintes URL quand nous avons introduit le modèle de spouleur. Les fichiers statiques provenant de `/etc/design` (CSS, JS) sont rarement modifiés, ce qui en fait également de bons candidats à l&#39;utilisation comme empreintes digitales.
 
 Pour les fichiers ordinaires, nous configurons généralement un schéma fixe, comme la réanalyse du code HTML toutes les 30 minutes, des images toutes les 4 heures, etc.
 
 La mise en cache du navigateur est extrêmement utile sur le système d’auteur. Vous souhaitez mettre en cache autant que possible dans le navigateur pour améliorer l’expérience de modification. Malheureusement, les ressources les plus coûteuses, les pages html ne peuvent pas être mises en cache... elles sont censées changer fréquemment sur l&#39;auteur.
 
-Les bibliothèques de granit, qui constituent AEM interface utilisateur, peuvent être mises en cache pendant pas mal de temps. Vous pouvez également mettre en cache les fichiers statiques de vos sites (polices, CSS et JavaScript) dans le navigateur. Même les images dans `/content/dam` la , peuvent généralement être mises en cache pendant environ 15 minutes, car elles ne sont pas modifiées aussi souvent que du texte copié sur les pages. Les images ne sont pas modifiées de manière interactive dans AEM. Ils sont d’abord modifiés et approuvés, avant d’être téléchargés vers AEM. Vous pouvez donc supposer qu’ils ne changent pas aussi souvent que du texte.
+Les bibliothèques de granit, qui constituent AEM interface utilisateur, peuvent être mises en cache pendant pas mal de temps. Vous pouvez également mettre en cache les fichiers statiques de vos sites (polices, CSS et JavaScript) dans le navigateur. Même les images de `/content/dam` peuvent généralement être mises en cache pendant environ 15 minutes, car elles ne sont pas modifiées aussi souvent que du texte copié sur les pages. Les images ne sont pas modifiées de manière interactive dans AEM. Ils sont d’abord modifiés et approuvés, avant d’être téléchargés vers AEM. Vous pouvez donc supposer qu’ils ne changent pas aussi souvent que du texte.
 
 La mise en cache des fichiers d’interface utilisateur, des fichiers de bibliothèque de sites et des images peut accélérer considérablement le rechargement des pages lorsque vous êtes en mode d’édition.
 
@@ -1415,11 +1415,11 @@ vous voudriez,
 
 Vous devez implémenter cette mise en correspondance sur AEM, car AEM doit savoir comment rendre les liens selon ce format tronqué.
 
-Mais ne comptez pas uniquement sur l&#39;AEM. Si vous le faites, vous aurez des chemins d’accès comme `/home.html` dans le répertoire racine de votre cache. Est-ce là la &quot;maison&quot; pour le site web finlandais, allemand ou canadien ? Et s&#39;il y a un fichier `/home.html` dans le Répartiteur, comment le Répartiteur sait-il que cela doit être invalidé lorsqu&#39;une demande d&#39;invalidation `/content/brand/fi/fi/home` arrive.
+Mais ne comptez pas uniquement sur l&#39;AEM. Si vous le faites, vous aurez des chemins d’accès tels que `/home.html` dans le répertoire racine de votre cache. Est-ce là la &quot;maison&quot; pour le site web finlandais, allemand ou canadien ? Et s&#39;il y a un fichier `/home.html` dans le Répartiteur, comment le Répartiteur sait-il que cela doit être invalidé lorsqu&#39;une demande d&#39;invalidation de `/content/brand/fi/fi/home` arrive.
 
 Nous avons vu un projet qui avait des docroots distincts pour chaque domaine. C&#39;était un cauchemar à déboguer et à entretenir - et en fait, nous ne l&#39;avons jamais vu fonctionner de manière impeccable.
 
-Nous pourrions résoudre les problèmes en réstructurant le cache. Nous avions un point unique pour tous les domaines et les demandes d’invalidation pouvaient être traitées 1:1 car tous les fichiers du serveur commençaient par `/content`.
+Nous pourrions résoudre les problèmes en réstructurant le cache. Nous avions un point unique pour tous les domaines et les demandes d&#39;invalidation pouvaient être traitées 1:1 car tous les fichiers du serveur commençaient par `/content`.
 
 La partie tronquée était aussi très facile.  aem a généré des liens tronqués en raison d&#39;une configuration conforme dans `/etc/map`.
 
@@ -1433,7 +1433,7 @@ Cette règle a été configurée de manière statique dans chaque configuration 
   RewriteRule "^(.\*\.html)" "/content/shiny-brand/finland/fi/$1"
 ```
 
-Dans le système de fichiers, nous avons maintenant des chemins `/content`simples, qui se trouveraient aussi sur l&#39;auteur et la publication - ce qui a beaucoup aidé à déboguer. Sans parler de l&#39;invalidation correcte - ce n&#39;était plus un problème.
+Dans le système de fichiers, nous avons maintenant des chemins simples basés sur `/content`, qui se trouvent également sur l&#39;auteur et la publication - ce qui a beaucoup aidé à déboguer. Sans parler de l&#39;invalidation correcte - ce n&#39;était plus un problème.
 
 Notez que nous avons fait cela uniquement pour les URL &quot;visibles&quot;, URL qui s’affichent dans l’emplacement URL du navigateur. Les URL des images, par exemple, étaient toujours des URL &quot;/content&quot; pures. Nous pensons que embellir l&#39;URL &quot;principale&quot; est suffisant en termes d&#39;optimisation des moteurs de recherche.
 
@@ -1453,13 +1453,13 @@ Avoir un point commun a aussi une autre caractéristique intéressante. Quand qu
 
 Dans AEM cours, vous apprenez à programme d’un gestionnaire d’erreurs dans Sling. Ce n&#39;est pas si différent de l&#39;écriture d&#39;un modèle habituel. Vous écrivez simplement un modèle dans JSP ou HTL, n&#39;est-ce pas ?
 
-Oui - mais c&#39;est la partie AEM, seulement. Rappelez-vous : le Répartiteur ne met pas en cache `404 – not found` ni `500 – internal server error` les réponses.
+Oui - mais c&#39;est la partie AEM, seulement. Rappelez-vous : le répartiteur ne met pas en cache les réponses `404 – not found` ou `500 – internal server error`.
 
 Si vous effectuez un rendu dynamique de ces pages pour chaque demande (ayant échoué), vous aurez une charge excessive inutile sur les systèmes de publication.
 
 Ce que nous avons trouvé utile, c&#39;est de ne pas rendre la page d&#39;erreur complète lorsqu&#39;une erreur se produit, mais seulement une version très simplifiée et petite - même statique de cette page, sans aucun ornement ou logique.
 
-Ce n&#39;est bien sûr pas ce que le client a vu. Dans le Répartiteur, nous nous sommes inscrits `ErrorDocuments` ainsi :
+Ce n&#39;est bien sûr pas ce que le client a vu. Dans le Répartiteur, nous nous sommes inscrits `ErrorDocuments` comme suit :
 
 ```
 ErrorDocument 404 "/content/shiny-brand/fi/fi/edocs/error-404.html"
@@ -1470,9 +1470,9 @@ Le système d&#39;AEM pouvait simplement avertir le Répartiteur que quelque cho
 
 Deux choses méritent d&#39;être notées ici.
 
-Tout d&#39;abord, la `error-404.html` même page est toujours la même. Il n&#39;y a donc pas de message personnel tel que &quot;Votre recherche de &quot;_produit_&quot; n&#39;a pas donné de résultat&quot;. Nous pourrions facilement vivre avec ça.
+Tout d&#39;abord, `error-404.html` est toujours la même page. Il n’existe donc aucun message personnel tel que &quot;Votre recherche de &quot;_produkten_&quot; n’a pas donné de résultat&quot;. Nous pourrions facilement vivre avec ça.
 
-Deuxièmement.. Eh bien, si nous voyons une erreur de serveur interne - ou pire encore nous rencontrons une panne du système AEM, il n&#39;y a aucun moyen de demander à AEM de rendre une page d&#39;erreur, n&#39;est-ce pas ? La demande ultérieure nécessaire, telle que définie dans la `ErrorDocument` directive, échouerait également. Nous avons contourné ce problème en exécutant une tâche cron qui récupérerait périodiquement les pages d&#39;erreur de leurs emplacements définis via `wget` et les stockerait dans des emplacements de fichiers statiques définis dans la `ErrorDocuments` directive.
+Deuxièmement.. Eh bien, si nous voyons une erreur de serveur interne - ou pire encore nous rencontrons une panne du système AEM, il n&#39;y a aucun moyen de demander à AEM de rendre une page d&#39;erreur, n&#39;est-ce pas ? La demande ultérieure nécessaire, telle que définie dans la directive `ErrorDocument`, échouerait également. Nous avons contourné ce problème en exécutant une tâche cron qui extrairait périodiquement les pages d&#39;erreur de leurs emplacements définis via `wget` et les stockait dans des emplacements de fichiers statiques définis dans la directive `ErrorDocuments`.
 
 **Références**
 
@@ -1494,12 +1494,12 @@ Et bien sûr, vous pouvez appliquer votre propre combinaison des trois approches
 
 >[!NOTE]
 >
->Ce modèle requiert une _passerelle_ qui _intercepte_ chaque demande et effectue l&#39; _autorisation_ réelle - l&#39;octroi ou le refus des demandes au Répartiteur. Si votre système d’authentification unique est un _authentificateur_, cela n’établit que l’identité d’un utilisateur que vous devez mettre en oeuvre l’option 3. Si vous lisez des termes tels que &quot;SAML&quot; ou &quot;OAauth&quot; dans le manuel de votre système d’authentification unique, c’est un indicateur puissant que vous devez implémenter l’option 3.
+>Ce modèle requiert une _passerelle_ que _intercepte_ chaque requête et exécute l&#39;autorisation _réelle_ - qui accorde ou refuse les requêtes au Répartiteur. Si votre système d’authentification unique est un _authentificateur_, cela n’établit que l’identité d’un utilisateur que vous devez implémenter l’option 3. Si vous lisez des termes tels que &quot;SAML&quot; ou &quot;OAauth&quot; dans le manuel de votre système d’authentification unique, c’est un indicateur puissant que vous devez implémenter l’option 3.
 
 
 **Option 2**. &quot;Ne pas mettre en cache&quot; est généralement une mauvaise idée. Si vous optez pour cette méthode, assurez-vous que le trafic et le nombre de ressources sensibles qui sont exclues sont faibles. Ou assurez-vous que le système de publication dispose d’un cache en mémoire pour que les systèmes de publication puissent gérer la charge qui en résulte - plus à ce sujet dans la partie III de cette série.
 
-**Option 3**. &quot;Mise en cache sensible aux autorisations&quot; est une approche intéressante. Le Répartiteur met en cache une ressource, mais avant de la distribuer, il demande au système AEM s&#39;il le peut. Cela crée une requête supplémentaire du répartiteur vers la publication, mais évite généralement au système de publication de restituer à nouveau une page si elle est déjà mise en cache. Cependant, cette approche nécessite une mise en oeuvre personnalisée. Pour plus d&#39;informations, reportez-vous à l&#39;article Mise en cache [sensible aux](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html)autorisations.
+**Option 3**. &quot;Mise en cache sensible aux autorisations&quot; est une approche intéressante. Le Répartiteur met en cache une ressource, mais avant de la distribuer, il demande au système AEM s&#39;il le peut. Cela crée une requête supplémentaire du répartiteur vers la publication, mais évite généralement au système de publication de restituer à nouveau une page si elle est déjà mise en cache. Cependant, cette approche nécessite une mise en oeuvre personnalisée. Pour plus d&#39;informations, reportez-vous à l&#39;article [Mise en cache sensible aux autorisations](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html).
 
 **Références**
 
@@ -1517,19 +1517,19 @@ Le diagramme ci-dessous illustre un timing possible lors de l’accès à une se
 
 <br> 
 
-Pour atténuer le problème de cette &quot;tempête d&#39;invalidation de cache&quot; comme on l&#39;appelle parfois, vous pouvez être moins rigoureux sur l&#39; `statfile` interprétation.
+Pour atténuer le problème de cette &quot;tempête d&#39;invalidation de cache&quot; comme on l&#39;appelle parfois, vous pouvez être moins rigoureux sur l&#39;interprétation de `statfile`.
 
-Vous pouvez définir le Répartiteur pour qu’il utilise un `grace period` pour l’invalidation automatique. Cela ajouterait en interne un peu de temps supplémentaire à la date de `statfiles` modification.
+Vous pouvez définir le Répartiteur pour qu’il utilise `grace period` pour l’invalidation automatique. Cela ajouterait en interne un peu de temps supplémentaire à la date de modification `statfiles`.
 
-Disons que votre heure `statfile` de modification est de 12h00 et que votre `gracePeriod` heure est de 2 minutes. Ensuite, tous les fichiers auto-invalidés seront considérés comme valides à 12h01 et à 12h02. Ils seront rendus à nouveau après 12h02.
+Supposons que votre `statfile` a une heure de modification d&#39;aujourd&#39;hui à 12h00 et que votre `gracePeriod` soit définie sur 2 minutes. Ensuite, tous les fichiers auto-invalidés seront considérés comme valides à 12h01 et à 12h02. Ils seront rendus à nouveau après 12h02.
 
-La configuration de référence propose une durée `gracePeriod` de deux minutes pour une bonne raison. Vous pourriez penser &quot;Deux minutes ? C&#39;est presque rien. Je peux facilement attendre 10 minutes pour que le contenu s&#39;affiche...&quot;.  Vous pourriez donc être tenté de définir une période plus longue - disons 10 minutes, en supposant que votre contenu s&#39;affiche au moins après ces 10 minutes.
+La configuration de référence propose un `gracePeriod` de deux minutes pour une bonne raison. Vous pourriez penser &quot;Deux minutes ? C&#39;est presque rien. Je peux facilement attendre 10 minutes pour que le contenu s&#39;affiche...&quot;.  Vous pourriez donc être tenté de définir une période plus longue - disons 10 minutes, en supposant que votre contenu s&#39;affiche au moins après ces 10 minutes.
 
 >[!WARNING]
 >
->Ce n&#39;est pas ainsi que `gracePeriod` fonctionne. La période de grâce _n&#39;est pas_ le moment où un document est garanti invalidé, mais un délai n&#39;est pas invalidé. Chaque invalidation subséquente qui entre dans ce cadre _prolonge_ le délai, qui peut être indéfiniment long.
+>`gracePeriod` ne fonctionne pas ainsi. La période de grâce est _non_ le moment après lequel un document est garanti invalidé, mais une période n&#39;est pas invalidée. Chaque invalidation subséquente qui se trouve dans ce cadre _prolonge_ la période, ce qui peut être indéfiniment long.
 
-Illustrons comment `gracePeriod` fonctionne réellement avec un exemple :
+Examinons comment `gracePeriod` fonctionne réellement avec un exemple :
 
 Supposons que vous gérez un site multimédia et que votre équipe de rédaction fournit régulièrement des mises à jour de contenu toutes les 5 minutes. Pensez à définir la période de grâce sur 5 minutes.
 
@@ -1541,19 +1541,19 @@ Nous allons début avec un exemple rapide à 12h00.
 
 12:05 - Un autre éditeur publie son article - prolongeant le temps de grâce d&#39;une autre période de grâce à 12:10.
 
-Et ainsi de suite... le contenu n&#39;est jamais invalidé. Chaque invalidation *au sein* de la période de grâce prolonge efficacement le délai de grâce. Le `gracePeriod` est conçu pour résister à la tempête d&#39;invalidation... mais vous devez sortir dans la pluie à la fin... donc, garder le `gracePeriod` considérablement court pour empêcher de se cacher dans le refuge pour toujours.
+Et ainsi de suite... le contenu n&#39;est jamais invalidé. Chaque invalidation *dans* la période de grâce prolonge efficacement le délai de grâce. Le `gracePeriod` est conçu pour résister à la tempête d&#39;invalidation... mais vous devez sortir par la pluie... donc, garder le `gracePeriod` considérablement court pour éviter de vous cacher à jamais dans l&#39;abri.
 
 #### Une période de grâce déterministe
 
 Nous aimerions vous présenter une autre idée de la façon dont vous pourriez traverser une tempête d&#39;invalidation. Ce n&#39;est qu&#39;une idée. Nous ne l&#39;avons pas essayé en production, mais nous avons trouvé le concept assez intéressant pour partager l&#39;idée avec vous.
 
-Le délai `gracePeriod` peut devenir beaucoup plus long si votre intervalle de réplication régulier est plus court que votre `gracePeriod`délai.
+`gracePeriod` peut devenir inéluctablement long si votre intervalle de réplication régulier est plus court que votre `gracePeriod`.
 
 L&#39;autre idée est la suivante : Invalider uniquement dans des intervalles de temps fixes. Le délai entre les deux signifie toujours la diffusion de contenu obsolète. L’invalidation arrivera un jour, mais un certain nombre d’invalidations sont collectées pour une invalidation &quot;en masse&quot;, de sorte que le Répartiteur a la possibilité de diffuser du contenu mis en cache entre-temps et de donner un peu d’air au système de publication.
 
 La mise en oeuvre se présenterait comme suit :
 
-Vous utilisez un &quot;script d’invalidation personnalisé&quot; (voir référence) qui s’exécuterait après l’invalidation. Ce script lirait la `statfile's` dernière date de modification et l&#39;arrondisserait à l&#39;arrêt de l&#39;intervalle suivant. La commande Unix shell `touch --time`, spécifiez une heure.
+Vous utilisez un &quot;script d’invalidation personnalisé&quot; (voir référence) qui s’exécuterait après l’invalidation. Ce script lit la date de la dernière modification `statfile's` et l&#39;arrondit à l&#39;intervalle suivant. La commande Unix shell `touch --time`, vous permet de spécifier une heure.
 
 Par exemple, si vous définissez la période de grâce sur 30 secondes, le Répartiteur arrondit la date de la dernière modification du fichier d’état aux 30 secondes suivantes. Les demandes d&#39;invalidation qui se produisent entre les deux ne font que définir le même 30 sec complet suivant.
 
@@ -1569,7 +1569,7 @@ Cette approche pourrait aider à définir des périodes de grâce plus longues s
 
 **Références**
 
-[helpx.adobe.com - Configuration du répartiteur](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html)
+[helpx.adobe.com - Configuration du répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
 ### Récupération automatique
 
@@ -1587,7 +1587,7 @@ Comme le cache n’est plus valide, toutes les requêtes envoyées à la page d&
 
 *Demandes parallèles à la même ressource sur le cache vide : Les requêtes sont transférées à la publication*
 
-Avec la récupération automatique, vous pouvez atténuer cela dans une certaine mesure. La plupart des pages invalidées sont toujours physiquement stockées sur le répartiteur après l’invalidation automatique. Ils ne sont que _considérés comme_ obsolètes. _La récupération_ automatique signifie que vous conservez ces pages obsolètes pendant quelques secondes tout en lançant _une seule_ requête au système de publication pour récupérer le contenu obsolète :
+Avec la récupération automatique, vous pouvez atténuer cela dans une certaine mesure. La plupart des pages invalidées sont toujours physiquement stockées sur le répartiteur après l’invalidation automatique. Ils sont seulement _considérés_ obsolètes. _La_ récupération automatique signifie que vous conservez ces pages obsolètes pendant quelques secondes tout en lançant  _une demande_ unique au système de publication pour récupérer à nouveau le contenu obsolète :
 
 ![Diffusion de contenu obsolète lors de la récupération en arrière-plan](assets/chapter-1/fetching-background.png)
 
@@ -1632,7 +1632,7 @@ Si vous cherchez dans le répertoire cache de votre répartiteur, vous verrez de
 
 ### Protection du système de publication
 
-Le répartiteur offre un peu de sécurité supplémentaire en protégeant le système de publication des requêtes qui ne sont destinées qu’à des fins de maintenance. Par exemple, vous ne souhaitez pas exposer vos `/crx/de` ou `/system/console` URL au public.
+Le répartiteur offre un peu de sécurité supplémentaire en protégeant le système de publication des requêtes qui ne sont destinées qu’à des fins de maintenance. Par exemple, vous ne souhaitez pas exposer au public les URL `/crx/de` ou `/system/console`.
 
 Il n&#39;est pas dangereux d&#39;avoir un pare-feu d&#39;application Web (WAF) installé sur votre système. Mais cela ajoute un nombre important à votre budget et tous les projets ne sont pas dans une situation où ils peuvent se permettre et - ne l&#39;oubliez pas - opérer et maintenir un WAF.
 
@@ -1667,7 +1667,7 @@ Vous pouvez d’abord affiner la liaison du gestionnaire. `SetHandler` il suffit
 
 Si vous faites cela, n&#39;oubliez pas de toujours lier le répartiteur-gestionnaire à l&#39;URL d&#39;invalidation du répartiteur - sinon vous ne pourrez pas envoyer de demandes d&#39;invalidation de l&#39;AEM au Répartiteur.
 
-Une autre alternative à l’utilisation du répartiteur comme filtre consiste à configurer les directives de filtrage dans la variable `dispatcher.any`
+Une autre alternative à l&#39;utilisation du répartiteur comme filtre consiste à configurer les directives de filtrage dans le `dispatcher.any`
 
 ```
 /filter {
@@ -1707,13 +1707,13 @@ Heureusement, cela a changé dans les versions ultérieures du Répartiteur. Vou
 
 Vous voyez la différence ?
 
-La version B utilise des guillemets simples `'` pour marquer un modèle _d’expression_ normal. &quot;N’importe quel caractère&quot; est exprimé à l’aide de `.*`.
+La version B utilise des guillemets simples `'` pour marquer un modèle d&#39;expression _normal_. &quot;N&#39;importe quel caractère&quot; est exprimé en utilisant `.*`.
 
-_Les modèles_ de Globbing, en revanche, utilisent des guillemets de doublon `"` et vous ne pouvez utiliser que des espaces réservés simples comme `*`les.
+_Les modèles_ de Globbing, en revanche, utilisent des guillemets de doublon  `"` et vous ne pouvez utiliser que de simples espaces réservés comme  `*`les autres.
 
 Si vous connaissez cette différence, c&#39;est trivial - mais si ce n&#39;est pas le cas, vous pouvez facilement mélanger les citations et passer un après-midi ensoleillé à déboguer votre configuration. Maintenant vous êtes prévenus.
 
-&quot;Je reconnais `'/url'` dans la configuration ... Mais qu&#39;est-ce que cela `'/glob'` dans le filtre que vous pouvez demander ?
+&quot;Je reconnais `'/url'` dans la configuration ... Mais qu&#39;est-ce que `'/glob'` dans le filtre que vous pouvez demander ?
 
 Cette directive représente l&#39;ensemble de la chaîne de requête, y compris la méthode et le chemin. Il pourrait être
 
@@ -1832,7 +1832,7 @@ Il est probable que vous ajouterez une nouvelle règle à l&#39;un des groupes -
 
 >[!WARNING]
 >
->Les configurations plus sophistiquées divisent les règles de filtrage en plusieurs fichiers, qui sont inclus dans le fichier de `dispatcher.any` configuration principal. Un nouveau fichier n&#39;introduit toutefois pas un nouvel espace de nommage. Ainsi, si vous avez une règle &quot;001&quot; dans un fichier et &quot;001&quot; dans un autre, vous obtiendrez une erreur. Encore plus de raisons de trouver des noms sémantiquement forts.
+>Les configurations plus sophistiquées divisent les règles de filtrage en plusieurs fichiers, qui sont inclus dans le fichier de configuration principal `dispatcher.any`. Un nouveau fichier n&#39;introduit toutefois pas un nouvel espace de nommage. Ainsi, si vous avez une règle &quot;001&quot; dans un fichier et &quot;001&quot; dans un autre, vous obtiendrez une erreur. Encore plus de raisons de trouver des noms sémantiquement forts.
 
 **Références**
 
@@ -1868,15 +1868,17 @@ CQ-Handle: <path-pattern>
 
 `CQ-Action: <action>` - Ce qui devrait se passer. `<action>` est :
 
-* `Activate:` supprime `/path-pattern.*`
-* `Deactive:` supprimer `/path-pattern.*`ET supprimer `/path-pattern/*`
-* `Delete:`   supprimer `/path-pattern.*`ET supprimer 
+* `Activate:` supprime  `/path-pattern.*`
+* `Deactive:` supprimer  `/path-pattern.*`
+ET supprimer  `/path-pattern/*`
+* `Delete:`   supprimer  `/path-pattern.*`
+ET supprimer 
 `/path-pattern/*`
 * `Test:`   Retourner &quot;ok&quot; mais ne rien faire
 
-`CQ-Handle: <path-pattern>` - Le chemin d&#39;accès de la ressource de contenu à invalider. Note, `<path-pattern>` est en fait un &quot;chemin&quot; et non un &quot;modèle&quot;.
+`CQ-Handle: <path-pattern>` - Le chemin d&#39;accès de la ressource de contenu à invalider. Remarque : `<path-pattern>` est en fait un &quot;chemin&quot; et non un &quot;modèle&quot;.
 
-`CQ-Action-Scope: ResourceOnly` - Facultatif : Si cet en-tête est défini, le `.stat` fichier n’est pas touché.
+`CQ-Action-Scope: ResourceOnly` - Facultatif : Si cet en-tête est défini, le  `.stat` fichier n’est pas touché.
 
 ```
 [Content-Type: Text/Plain]
@@ -1902,13 +1904,13 @@ Présentation et présentation de la mise en cache du répartiteur : [https://he
 
 Autres conseils et astuces d’optimisation : [https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html#use-ttls](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html#use-ttls)
 
-Documentation du répartiteur avec toutes les directives expliquées : [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html)
+Documentation du répartiteur avec toutes les directives expliquées : [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)
 
 Quelques questions fréquentes : [https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html)
 
 Enregistrement d&#39;un webinaire sur l&#39;optimisation du répartiteur - fortement recommandé : [https://my.adobeconnect.com/p7th2gf8k43?proto=true](https://my.adobeconnect.com/p7th2gf8k43?proto=true)
 
-Présentation &quot;Le pouvoir sous-estimé de l&#39;invalidation de contenu&quot;, conférence &quot;adaptTo()&quot; à Potsdam 2018 [https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html](https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html)
+Présentation &quot;Le pouvoir sous-estimé de l&#39;invalidation du contenu&quot;, conférence &quot;adaptTo()&quot; à Potsdam 2018 [https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html](https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html)
 
 Invalidation des pages mises en cache à partir des AEM : [https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)
 
