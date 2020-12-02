@@ -20,7 +20,7 @@ ht-degree: 3%
 ---
 
 
-# Création d’un Profil Campaign à l’aide du modèle de données de formulaire {#create-campaign-profile-using-form-data-model}
+# Créer un Profil Campaign à l’aide du modèle de données de formulaire {#create-campaign-profile-using-form-data-model}
 
 Étapes de création d’un profil Adobe Campaign Standard à l’aide du modèle de données de formulaire AEM Forms
 
@@ -105,7 +105,7 @@ private Logger log = LoggerFactory.getLogger(CampaignAuthentication.class);
 }
 ```
 
-## Create Data Source {#create-data-source}
+## Créer une source de données {#create-data-source}
 
 La première étape consiste à créer le fichier swagger. Le fichier swagger définit l’API REST qui va être utilisée pour créer un profil en Adobe Campaign Standard. Le fichier swagger définit les paramètres d’entrée et de sortie de l’API REST.
 
@@ -113,16 +113,17 @@ Une source de données est créée à l’aide du fichier swagger. Lors de la cr
 
 Un exemple de fichier swagger vous est fourni dans le cadre de l’élément lié à cet article.**Veillez à modifier l&#39;hôte et basePath dans le fichier swagger pour qu&#39;ils correspondent à votre instance ACS.**
 
-## Test de la solution {#test-the-solution}
+## Testez la solution {#test-the-solution}
 
 Pour tester la solution, procédez comme suit :
 * [Veillez à suivre les étapes décrites ici.](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Téléchargez et décompressez ce fichier pour obtenir le fichier swagger.](assets/create-acs-profile-swagger-file.zip)
-* Créer une source de données à l&#39;aide du fichier de swaggerCréer un modèle de données de formulaire et le baser sur la source de données créée à l&#39;étape précédente
+* Création d’une source de données à l’aide du fichier swagger
+Créer un modèle de données de formulaire et le baser sur la source de données créée à l’étape précédente
 * Créez un formulaire adaptatif basé sur le modèle de données de formulaire créé à l’étape précédente.
 * Faites glisser les éléments suivants de l’onglet Sources de données vers le formulaire adaptatif
 
-   * Email
+   * Courrier électronique
    * Prénom
    * Nom
    * Téléphone mobile
