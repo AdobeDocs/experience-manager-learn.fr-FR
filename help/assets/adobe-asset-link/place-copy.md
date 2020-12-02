@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Copie d’emplacement {#place-copy}
+# Copie d&#39;emplacement {#place-copy}
 
 Découvrez comment utiliser des ressources d’AEM Assets à l’aide de l’opération Importer une copie.
 
