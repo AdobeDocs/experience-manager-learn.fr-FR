@@ -26,7 +26,7 @@ aem en tant que Cloud Service, les fonctions de filigrane permettent aux rendus 
 
 ## Configuration OSGi
 
-Le stub de configuration OSGi suivant peut être mis à jour et ajouté au `ui.config` sous-projet de votre projet AEM.
+Le stub de configuration OSGi suivant peut être mis à jour et ajouté au sous-projet `ui.config` de votre projet AEM.
 
 `/apps/example/osgiconfig/config.author/com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json`
 
