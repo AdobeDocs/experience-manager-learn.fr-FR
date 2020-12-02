@@ -38,7 +38,7 @@ Un paramètre d’image prédéfini comporte un signe dollar ($) des deux côté
 >
 >Créez un paramètre d’image prédéfini par taille d’image unique sur votre site. Par exemple, si vous avez besoin d’une image de 350 x 350 pour la page des détails du produit, d’une image de 120 x 120 pour les pages de navigation/recherche et d’une image de 90 x 90 pour un article de vente croisée/incitatif, vous avez besoin de trois paramètres d’image prédéfinis, que vous disposiez de 5000 ou 50 0 0 0 0 0 000 00000000 000 000000000000000000000000000000000000000000000000000000000
 
-- En savoir plus sur les paramètres [d’](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html)image prédéfinis.
+- En savoir plus sur les [paramètres d’image prédéfinis](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
 - Découvrez comment [créer un paramètre d’image prédéfini](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
 
 ## Paramètres d’image prédéfinis et accentuation
@@ -61,12 +61,12 @@ Le graphique suivant présente trois niveaux d’accentuation. De droite à gauc
 
 Dynamic Media Classic permet trois types d’accentuation : Accentuation simple, mode de ré-échantillonnage et masquage flou.
 
-En savoir plus sur les options [d’accentuation](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image)Dynamic Media Classic.
+En savoir plus sur [les options d’accentuation classique du contenu multimédia dynamique](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Ressources supplémentaires
 
-[Guide](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf)des paramètres d’image prédéfinis. Paramètres à utiliser pour optimiser la qualité d’image et la vitesse de chargement.
+[Guide](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf) des paramètres d’image prédéfinis. Paramètres à utiliser pour optimiser la qualité d’image et la vitesse de chargement.
 
 [Image Is Everything Part 2 : Ce n&#39;est jamais juste un flou — la qualité contre la vitesse](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Publication de blog traitant de l’utilisation des paramètres d’image prédéfinis pour la diffusion d’images à chargement rapide et de haute qualité.
 
-[L’Image Est Tout Ce Qui Est Des Webinaires](https://dynamicmediaseries2019.enterprise.adobeevents.com/). Liens vers les enregistrements des trois webinars de la série _Image Is Everything_ . [Le webinaire 2](https://seminars.adobeconnect.com/p6lqaotpjnd3) traite des paramètres d’image prédéfinis.
+[L’Image Est Tout Ce Qui Est Des Webinaires](https://dynamicmediaseries2019.enterprise.adobeevents.com/). Liens vers les enregistrements des trois webinars de la série _Image Is Everything_. [Le webinaire 2](https://seminars.adobeconnect.com/p6lqaotpjnd3) traite des paramètres d’image prédéfinis.
