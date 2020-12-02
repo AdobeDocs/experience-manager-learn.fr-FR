@@ -1,6 +1,6 @@
 ---
-title: aem forms avec Marketo (partie 1)
-seo-title: aem forms avec Marketo (partie 1)
+title: AEM Forms avec Marketo (partie 1)
+seo-title: AEM Forms avec Marketo (partie 1)
 description: Didacticiel pour intégrer AEM Forms à Marketo à l’aide du modèle de données de formulaire AEM Forms.
 seo-description: Didacticiel pour intégrer AEM Forms à Marketo à l’aide du modèle de données de formulaire AEM Forms.
 feature: adaptive-forms, form-data-model
@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# aem forms avec Marketo
+# AEM Forms avec Marketo
 
 Marketo, qui fait partie de l’Adobe, fournit un logiciel d’automatisation du marketing axé sur le marketing basé sur les comptes, notamment les e-mails, les dispositifs portables, les réseaux sociaux, les annonces numériques, la gestion Web et les analyses.
 
