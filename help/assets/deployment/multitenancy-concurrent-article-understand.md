@@ -20,7 +20,7 @@ ht-degree: 1%
 ---
 
 
-# Comprendre la multiplicité et le développement simultané {#understanding-multitenancy-and-concurrent-development}
+# Comprendre le facteur multiplicateur et le développement simultané {#understanding-multitenancy-and-concurrent-development}
 
 ## Présentation {#introduction}
 
@@ -122,7 +122,7 @@ Si un consensus ne peut être atteint entre les différentes unités opérationn
 
 aem utilise des lanceurs de processus pour déclencher automatiquement l&#39;exécution du processus lorsque des modifications spécifiées sont apportées dans le référentiel. aem fournit plusieurs lanceurs prêts à l’emploi, par exemple, pour exécuter des processus de génération de rendu et d’extraction des métadonnées sur des ressources nouvelles et mises à jour. Bien qu&#39;il soit possible de laisser ces lanceurs en l&#39;état, dans un environnement à plusieurs locataires, si les locataires ont des exigences de lanceur et/ou de modèle de processus différentes, il est probable que des lanceurs individuels devront être créés et entretenus pour chaque locataire. Ces lanceurs devront être configurés pour s’exécuter sur les mises à jour de leurs locataires tout en ne modifiant pas le contenu des autres locataires. Pour ce faire, appliquez facilement des lanceurs à des chemins d&#39;accès de référentiel spécifiques au client.
 
-### URL de redirection vers un microsite  {#vanity-urls}
+### URL de redirection vers un microsite   {#vanity-urls}
 
 aem fournit des fonctionnalités d’URL de redirection qui peuvent être définies sur la base d’une page. Dans un scénario à clients multiples, cette approche soulève la préoccupation suivante : AEM ne garantit pas l’unicité entre les URL vanity configurées de cette manière. Si deux utilisateurs différents configurent le même chemin d’accès à la vanité pour des pages différentes, un comportement inattendu peut être rencontré. Pour cette raison, nous vous recommandons d’utiliser les règles mod_rewrite dans les instances du répartiteur Apache, qui permettent un point central de configuration en parallèle avec les règles de résolution de ressources sortantes uniquement.
 
