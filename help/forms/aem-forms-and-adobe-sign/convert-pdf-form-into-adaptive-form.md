@@ -19,7 +19,7 @@ ht-degree: 60%
 
 Le service de conversion automatisée de formulaires AEM Forms, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs compatibles avec divers appareils et réactifs. Que vous utilisiez des formulaires PDF non interactifs, des formulaires Acro ou des formulaires PDF basés sur XFA, le service de conversion automatisée de formulaires peut facilement convertir ces formulaires en formulaires adaptatifs.
 
-La vidéo suivante explique les étapes nécessaires pour convertir un formulaire PDF en formulaire adaptatif à l’aide du service de conversion Forms automatisé.
+La vidéo suivante explique les étapes nécessaires pour convertir un formulaire PDF en formulaire adaptatif à l’aide d’Automated forms conversion Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39495/?quality=9&learn=on)
 
