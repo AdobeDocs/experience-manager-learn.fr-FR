@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Create a Live Copy {#create-livecopy}
+# Créer une Live Copy {#create-livecopy}
 
 Découvrez comment créer une Live Copy pour votre site à partir d&#39;un plan directeur à l&#39;aide de l&#39;assistant de création de Live Copy.
 
