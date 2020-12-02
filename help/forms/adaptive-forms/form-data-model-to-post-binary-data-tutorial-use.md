@@ -46,24 +46,24 @@ Service Input
 
 >[!NOTE]
 >
->Conseils de prise de vue - Si, pour une raison quelconque, le fichier DOR.pdf n’est pas créé dans DAM, réinitialisez les paramètres d’authentification de la source de données en cliquant [ici](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Il s’agit des paramètres d’authentification AEM, qui par défaut est admin/admin.
+>Conseils de prise de vue - Si, pour une raison quelconque, le fichier DOR.pdf n’est pas créé dans DAM, réinitialisez les paramètres d’authentification de la source de données en cliquant sur [ici](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2Fglobal%2Fsettings%2Fcloudconfigs%2Ffdm%2Fpostdortodam). Il s’agit des paramètres d’authentification AEM, qui par défaut est admin/admin.
 
 Pour tester cette fonctionnalité sur votre serveur, procédez comme suit :
 
-1.[Déploiement du lot Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1.[Déployer le lot Developingwithserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-1. [Téléchargez et déployez le lot](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)setvalue. Ce lot OSGI personnalisé est utilisé pour créer une propriété de métadonnées et définir sa valeur à partir des données de formulaire envoyées.
+1. [Téléchargez et déployez le lot](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) setvalue. Ce lot OSGI personnalisé est utilisé pour créer une propriété de métadonnées et définir sa valeur à partir des données de formulaire envoyées.
 
-1. [Importez les actifs](assets/postdortodam.zip) associés à cet article dans AEM à l&#39;aide du gestionnaire de packages.Vous obtiendrez les éléments suivants :
+1. [Importez les ](assets/postdortodam.zip) actifs associés à cet article dans AEM à l&#39;aide du gestionnaire de packages.Vous obtiendrez les éléments suivants
 
    1. Modèle de processus
    1. Formulaire adaptatif configuré pour être envoyé au flux de travail AEM
    1. Source de données configurée pour utiliser le fichier PostToDam.JSON
    1. Modèle de données de formulaire qui utilise la source de données
 
-1. Pointez votre [navigateur pour ouvrir le formulaire adaptatif.](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+1. Pointez votre navigateur [pour ouvrir le formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 1. Remplissez le formulaire et envoyez-le.
 1. Vérifiez l’application Ressources si le Document d’enregistrement est créé et stocké.
 
 
-[Le fichier](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) Swagger utilisé pour créer la source de données est disponible à titre de référence.
+[Swagger ](http://localhost:4502/conf/global/settings/cloudconfigs/fdm/postdortodam/jcr:content/swaggerFile) Filused in creating data source is available for your reference (Échangeur utilisé lors de la création de la source de données est disponible pour votre référence)
