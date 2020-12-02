@@ -16,7 +16,7 @@ ht-degree: 2%
 ---
 
 
-# Améliorations de la traduction avec le gestionnaire multisite {#translation-enhancements}
+# Améliorations apportées à la traduction avec le gestionnaire multisite {#translation-enhancements}
 
 aem structure de traduction robuste permet de traduire en toute simplicité AEM contenu par des fournisseurs de traduction pris en charge.
 
@@ -26,13 +26,13 @@ aem structure de traduction robuste permet de traduire en toute simplicité AEM 
 
 aem version 6.5 améliorée de la traduction comprend :
 
-**Approbation automatique des tâches** de traduction : L’indicateur d’approbation dans la tâche de traduction est une propriété binaire. Il ne permet pas d’effectuer ou d’intégrer des workflows de révision et d’approbation prêts à l’emploi. Pour que le nombre d&#39;étapes d&#39;une tâche de traduction reste minimal, il est défini par défaut sur &quot;Approuver automatiquement&quot; dans les Propriétés  avancées d&#39;un projet de traduction. Si votre organisation doit approuver une tâche de traduction, vous pouvez désélectionner l’option &quot;Approuver automatiquement&quot; dans Propriétés  avancées d’un projet de traduction.
+**Approbation automatique des tâches** de traduction : L’indicateur d’approbation dans la tâche de traduction est une propriété binaire. Il ne permet pas d’effectuer ou d’intégrer des workflows de révision et d’approbation prêts à l’emploi. Pour que le nombre d&#39;étapes d&#39;une tâche de traduction reste minimal, il est défini par défaut sur &quot;approuver automatiquement&quot; dans [!UICONTROL Propriétés avancées] d&#39;un projet de traduction. Si votre organisation doit approuver une tâche de traduction, vous pouvez décocher l&#39;option &quot;approuver automatiquement&quot; dans [!UICONTROL Propriétés avancées] d&#39;un projet de traduction.
 
 **Supprimer automatiquement les lancements** de traduction : Plutôt que de supprimer manuellement les lancements de traduction dans l’administration Lancements après coup, il est désormais possible de supprimer automatiquement les lancements de traduction après leur promotion.
 
-**Exporter des objets Traduction au format** JSON : Les versions AEM 6.4 et antérieures prennent en charge les formats XML et XLIFF des objets de traduction. Vous pouvez désormais configurer le format d’exportation au format JSON à l’aide de votre console système [!UICONTROL Config Manager]. Recherchez Configuration [!UICONTROL de la plateforme de]traduction, puis vous pouvez sélectionner le format d’exportation JSON.
+**Exporter des objets Traduction au format** JSON : Les versions AEM 6.4 et antérieures prennent en charge les formats XML et XLIFF des objets de traduction. Vous pouvez désormais configurer le format d’exportation au format JSON à l’aide de votre console système [!UICONTROL Config Manager]. Recherchez [!UICONTROL Configuration de la plateforme de traduction], puis vous pouvez sélectionner le format d’exportation JSON.
 
-**Mettre à jour le contenu AEM traduit dans la mémoire de traduction (TMS)**: l’auteur local qui n’a pas accès à l’AEM peut mettre à jour le contenu traduit, qui a déjà été réassimilé en AEM, directement dans la TM (Translation Memory, in TMS), et mettre à jour les traductions dans l’AEM en renvoyant la tâche de traduction de TMS à l’.
+**Mettre à jour le contenu AEM traduit dans la mémoire de traduction (TMS)** : l’auteur local qui n’a pas accès à l’AEM peut mettre à jour le contenu traduit, qui a déjà été réassimilé en AEM, directement dans la TM (Translation Memory, in TMS), et mettre à jour les traductions dans l’AEM en renvoyant la tâche de traduction de TMS à l’.
 
 ## Améliorations apportées à la traduction dans AEM 6.4
 
