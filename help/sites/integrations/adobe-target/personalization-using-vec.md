@@ -35,19 +35,19 @@ La page d&#39;accueil du site WKND présente les activités locales ou la meille
 
 ## Procédure de création d’un test A/B à l’aide du compositeur d’expérience visuelle
 
-1. Connectez-vous à [Adobe Experience Cloud](https://experience.adobe.com/), appuyez sur __Cible__, accédez à l’onglet __Activités__ .
+1. Connectez-vous à [Adobe Experience Cloud](https://experience.adobe.com/), appuyez sur __Cible__, accédez à l&#39;onglet __Activités__.
 
-   + Si la __Cible__ ne s’affiche pas sur le tableau de bord Experience Cloud, assurez-vous que l’organisation d’Adobe appropriée est sélectionnée dans le sélecteur d’organisation situé en haut à droite et que l’accès à la Cible a été accordé à votre utilisateur dans [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Si __Cible__ ne s&#39;affiche pas sur le tableau de bord Experience Cloud, assurez-vous que l&#39;organisation d&#39;Adobe appropriée est sélectionnée dans le sélecteur d&#39;organisation situé en haut à droite et que l&#39;accès à la Cible a été accordé à votre utilisateur dans [Adobe Admin Console](https://adminconsole.adobe.com/).
 
-1. Cliquez sur le bouton **Créer une Activité** , puis sélectionnez **activité de test** A/B.
+1. Cliquez sur le bouton **Créer une Activité**, puis sélectionnez **Test A/B** activité.
 
    ![Activité A/B](assets/ab-target-activity.png)
 
-1. Sélectionnez l’option Compositeur **d’expérience** visuelle, fournissez l’URL de l’Activité, puis cliquez sur **Suivant.**
+1. Sélectionnez l’option **Compositeur visuel d’expérience**, indiquez l’URL de l’Activité, puis cliquez sur **Suivant**.
 
    ![URL d’Activité](assets/ab-test-url.png)
 
-1. Le compositeur d’expérience visuelle affiche deux onglets sur le côté gauche après avoir créé une activité : *Expérience A* et *Expérience B*. Sélectionnez une expérience dans la liste. Vous pouvez ajouter de nouvelles expériences à la liste à l’aide du bouton **Ajouter l’expérience** .
+1. Le compositeur d’expérience visuelle affiche deux onglets sur le côté gauche après avoir créé une activité : *Expérience A* et *Expérience B*. Sélectionnez une expérience dans la liste. Vous pouvez ajouter de nouvelles expériences à la liste à l’aide du bouton **Ajouter l’expérience**.
 
    ![Expérience A](assets/experience.png)
 
@@ -59,12 +59,12 @@ La page d&#39;accueil du site WKND présente les activités locales ou la meille
 
    ![Aventures](assets/adventures.png)
 
-1. Renommer *l’expérience A* en *aventure*
-1. De même, mettez à jour le texte sur l’ *expérience B* du *camping en Australie* occidentale pour *explorer la nature sauvage* australienne.
+1. Renommez *Expérience A* en *Aventure*.
+1. De même, mettez à jour le texte sur *Expérience B* de *Camping in Western Australia* à *Explore the Australian Wilderness*.
 
    ![Explorer](assets/explore.png)
 
-1. Cliquez sur **Suivant** pour passer au ciblage et conservons une affectation manuelle du trafic de 50 à 50 entre les deux expériences.
+1. Cliquez sur **Suivant** pour passer au ciblage et conservons une affectation manuelle du trafic comprise entre 50 et 50 entre les deux expériences.
 
    ![Ciblage](assets/targeting.png)
 
@@ -75,11 +75,11 @@ La page d&#39;accueil du site WKND présente les activités locales ou la meille
 1. Attribuez un nom à votre activité et enregistrez.
 1. Activez votre activité enregistrée pour activer vos modifications.
 
-   ![Goals](assets/activate.png)
+   ![Objectifs](assets/activate.png)
 
 1. Ouvrez la page de votre site (URL de l’Activité de l’étape 3) dans un nouvel onglet et vous devriez pouvoir vue l’une ou l’autre des expériences (Aventure ou Exploration) à partir de notre activité de test A/B.
 
-   ![Goals](assets/publish.png)
+   ![Objectifs](assets/publish.png)
 
 ## Résumé
 
