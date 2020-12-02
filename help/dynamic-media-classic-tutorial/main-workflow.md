@@ -32,7 +32,7 @@ Le flux de travaux des solutions Dynamic Media Classic se compose de trois étap
 
 Il s’agit du début du processus. Au cours de cette étape, vous rassemblez ou créez le contenu source qui correspond au flux de travaux que vous utilisez et vous le téléchargez dans Contenu multimédia dynamique classique. Le système prend en charge plusieurs types de fichiers pour les images, les vidéos et les polices, mais aussi pour PDF, Adobe Illustrator et Adobe InDesign.
 
-Consultez la liste complète des types [de fichiers](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats)pris en charge.
+Consultez la liste complète de [Types de fichiers pris en charge](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
 
 Vous pouvez télécharger du contenu source de différentes manières :
 
@@ -53,23 +53,20 @@ Les deux options de téléchargement les plus importantes sont activées par dé
 
 Quatre variantes de l’option Ecraser l’image peuvent être définies pour l’ensemble de votre société et elles sont souvent mal comprises. En bref, vous définissez les règles de sorte que les fichiers portant le même nom soient remplacés plus fréquemment ou que les remplacements se produisent moins fréquemment (auquel cas la nouvelle image sera renommée avec une extension &quot;-1&quot; ou &quot;-2&quot;).
 
-- **Ecraser dans le dossier actif, même nom/extension**d’image de base.
-Cette option est la règle de remplacement la plus stricte. Elle implique que vous chargiez l’image de remplacement dans le même dossier que l’original, et qu’elle ait la même extension que le fichier d’origine. Si ces conditions ne sont pas remplies, un doublon est créé.
+- **Ecraser dans le dossier actif, même nom/extension** d’image de base. Cette option est la règle de remplacement la plus stricte. Elle implique que vous chargiez l’image de remplacement dans le même dossier que l’original, et qu’elle ait la même extension que le fichier d’origine. Si ces conditions ne sont pas remplies, un doublon est créé.
 
 - **Ecraser dans le dossier actif, même nom de fichier de base, quelle que soit l’extension**.
 Requiert que vous téléchargiez l’image de remplacement dans le même dossier que l’image d’origine, mais l’extension de nom de fichier peut être différente de celle d’origine. Par exemple, chaise.tif remplace chaise.jpg.
 
-- **Ecraser dans n’importe quel dossier, même nom/extension**de fichier de base.
-Nécessite que l’image de remplacement ait la même extension de nom de fichier que l’image d’origine (par exemple, chaise.jpg doit remplacer chaise.jpg et non chaise.tif ). Vous pouvez néanmoins télécharger l’image de remplacement dans un dossier différent de celui de l’image d’origine. L’image mise à jour se trouve dans le nouveau dossier ; le fichier d’origine n’est plus disponible à l’emplacement d’origine..
+- **Ecraser dans n’importe quel dossier, même nom/extension** de fichier de base. Nécessite que l’image de remplacement ait la même extension de nom de fichier que l’image d’origine (par exemple, chaise.jpg doit remplacer chaise.jpg et non chaise.tif ). Vous pouvez néanmoins télécharger l’image de remplacement dans un dossier différent de celui de l’image d’origine. L’image mise à jour se trouve dans le nouveau dossier ; le fichier d’origine n’est plus disponible à l’emplacement d’origine..
 
-- **Ecraser dans n’importe quel dossier, même nom de fichier de base, quelle que soit l’extension**.
-Cette option est la règle de remplacement la plus inclusive. Elle vous permet de télécharger une image de remplacement dans un dossier autre que celui de l’image d’origine, de télécharger un fichier dont l’extension est différente de celle du fichier d’origine et de remplacer le fichier d’origine. Si le fichier d’origine se trouve dans un dossier différent, l’image de remplacement est enregistrée dans le nouveau dossier où elle a été téléchargée.
+- **Ecraser dans n’importe quel dossier, même nom de fichier de base, quelle que soit l’extension**. Cette option est la règle de remplacement la plus inclusive. Elle vous permet de charger une image de remplacement dans un dossier autre que celui de l’image d’origine, de charger un fichier dont l’extension est différente de celle du fichier d’origine et de remplacer le fichier d’origine. Si le fichier d’origine se trouve dans un dossier différent, l’image de remplacement est enregistrée dans le nouveau dossier où elle a été chargée.
 
-En savoir plus sur l’option [](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option)Remplacer les images.
+En savoir plus sur l&#39;option [Remplacer les images](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
 
 Bien qu’il ne soit pas nécessaire de procéder à un transfert en utilisant l’une des deux méthodes ci-dessus, vous pouvez spécifier les options de tâche pour ce transfert particulier. Par exemple, pour planifier un transfert périodique, définir les options de recadrage au moment du transfert, et bien d’autres. Cela peut être utile pour certains workflows, donc il est utile de se demander s&#39;ils peuvent l&#39;être pour le vôtre.
 
-En savoir plus sur les options [](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options)de tâche.
+En savoir plus sur [Options tâche](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 
 Le téléchargement est la première étape nécessaire d’un flux de travaux, car Contenu multimédia dynamique Classic ne peut pas fonctionner avec un contenu qui ne se trouve pas déjà dans son système. En arrière-plan lors du transfert, le système enregistre chaque fichier téléchargé dans la base de données dynamique classique centralisée, affecte un identifiant et le copie à l’enregistrement. En outre, le système convertit les fichiers d’image dans un format qui permet le redimensionnement et le zoom dynamiques et convertit les fichiers vidéo au format Web MP4.
 
@@ -98,7 +95,7 @@ De même, vous pouvez télécharger votre vidéo source originale dans Dynamic M
 
 **Bien qu’il n’y ait pas de minimum pour la taille de l’image, il est déconseillé de télécharger des images géantes.** Une image géante peut être considérée comme plus de 4 000 pixels. Le téléchargement d’images de cette taille peut présenter des défauts potentiels tels que des grains de poussière ou des poils dans l’image. De telles images occuperont également plus d’espace sur le serveur Dynamic Media Classic, ce qui peut vous faire dépasser les limites d’enregistrement que vous avez définies.
 
-En savoir plus sur le [téléchargement de fichiers](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
+En savoir plus sur [Téléchargement de fichiers](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
 ## Étape 2 : Auteur (et Publier)
 
@@ -128,7 +125,7 @@ Voici la syntaxe de l’URL d’une image, avec quelques exemples :
 
 Dans l’URL, tout à gauche du point d’interrogation est le chemin virtuel vers une image spécifique. Tout à droite du point d’interrogation est un modificateur Image Server, une instruction de traitement de l’image. Lorsque vous avez plusieurs modificateurs, ils sont séparés par des esperluettes.
 
-Dans le premier exemple, le chemin d&#39;accès virtuel à l&#39;image &quot;Backpack_A&quot; est `http://sample.scene7.com/is/image/s7train/BackpackA`. Les modificateurs Image Server redimensionnent l’image pour une largeur de 250 pixels (à partir de wid=250) et rééchantillonnent l’image à l’aide de l’algorithme d’interpolation Lanczos, qui l’accentue au fur et à mesure de son redimensionnement (à partir de resMode=sharp2).
+Dans le premier exemple, le chemin d’accès virtuel à l’image &quot;Backpack_A&quot; est `http://sample.scene7.com/is/image/s7train/BackpackA`. Les modificateurs Image Server redimensionnent l’image pour une largeur de 250 pixels (à partir de wid=250) et rééchantillonnent l’image à l’aide de l’algorithme d’interpolation Lanczos, qui l’accentue au fur et à mesure de son redimensionnement (à partir de resMode=sharp2).
 
 Le deuxième exemple applique ce que l’on appelle un &quot;paramètre d’image prédéfini&quot; à la même image Backpack_A, comme indiqué par $!_template300$. Les symboles $ de chaque côté de l’expression indiquent qu’un paramètre d’image prédéfini, un ensemble compressé de modificateurs d’image, est appliqué à l’image.
 
@@ -140,18 +137,18 @@ Les nouveaux fichiers téléchargés et publiés sont immédiatement visibles, t
 
 En règle générale, il ne s’agit pas d’un problème, sauf si une erreur s’est produite et que l’image/le fichier porte le même nom que la version précédemment publiée, mais qu’il existe un problème avec l’image. Par exemple, vous avez accidentellement téléchargé une version basse résolution ou votre directeur artistique n’a pas approuvé l’image. Dans ce cas, vous souhaitez rappeler l’image d’origine et la remplacer par une nouvelle version utilisant le même ID de fichier.
 
-Découvrez comment effacer [manuellement le cache des URL qui doivent être mises à jour](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
+Découvrez comment [effacer manuellement le cache des URL qui doivent être mises à jour](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
 
 >[!TIP]
 >
 >Pour éviter les problèmes de mise en cache, travaillez toujours à l’avance : une soirée, un jour, deux semaines, etc. Créez à temps pour l&#39;assurance qualité/l&#39;acceptation par les parties internes de votre travail de BAT avant de le publier au public. Même travailler une soirée avant vous permet d&#39;apporter des changements et de republier ce soir-là. Le matin, les 10 heures se sont écoulées et le cache se met à jour avec la bonne image.
 
-- En savoir plus sur la [création d’une tâche](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job)de publication.
-- En savoir plus sur [la publication](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html).
+- En savoir plus sur [la création d’une tâche de publication](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
+- En savoir plus sur [Publication](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html).
 
 ## Étape 3 : Livraison
 
-N’oubliez pas que le produit final d’un flux de travaux Contenu multimédia dynamique est une URL pointant vers la ressource. L’URL peut pointer vers une image individuelle, une visionneuse d’images, une visionneuse à 360° ou une autre collection ou vidéo de visionneuse d’images. Vous devez prendre cette URL et en faire quelque chose, par exemple modifier votre code HTML afin que les `<IMG>` balises pointent vers l’image Contenu multimédia dynamique au lieu de pointer vers une image provenant de votre site actuel.
+N’oubliez pas que le produit final d’un flux de travaux Contenu multimédia dynamique est une URL pointant vers la ressource. L’URL peut pointer vers une image individuelle, une visionneuse d’images, une visionneuse à 360° ou une autre collection ou vidéo de visionneuse d’images. Vous devez prendre cette URL et en faire quelque chose, par exemple modifier votre code HTML afin que les balises `<IMG>` pointent vers l’image Dynamic Media Classic au lieu de pointer vers une image provenant de votre site actuel.
 
 À l’étape Livraison, vous devez intégrer ces URL dans votre site Web, application mobile, campagne par courriel ou tout autre point de contact numérique sur lequel vous souhaitez afficher la ressource.
 
@@ -161,7 +158,7 @@ Exemple d’intégration de l’URL Dynamic Media Classic d’une image dans un 
 
 L’URL en rouge est le seul élément spécifique à Dynamic Media Classic.
 
-Votre équipe informatique ou votre partenaire d’intégration peut prendre la tête de la rédaction et de la modification du code pour intégrer des URL Dynamic Media Classic à votre site. adobe dispose d&#39;une équipe de consultants qui peut aider à cet effort, soit en fournissant des conseils techniques, créatifs ou généraux.
+Votre équipe informatique ou votre partenaire d’intégration peut prendre la tête de la rédaction et de la modification du code pour intégrer des URL Dynamic Media Classic à votre site. Adobe dispose d&#39;une équipe de consultants qui peut aider à cet effort, soit en fournissant des conseils techniques, créatifs ou généraux.
 
 Pour les solutions plus complexes telles que les visionneuses de zoom ou les visionneuses qui combinent le zoom à d’autres vues, en règle générale, l’URL pointe vers une visionneuse hébergée par Contenu multimédia dynamique classique, et cette URL contient également une référence à un ID de fichier.
 
@@ -175,14 +172,14 @@ Exemple d’un lien (en rouge) qui ouvrira une visionneuse d’images dans une v
 
 ## Aperçu des ressources
 
-Vous souhaiterez probablement prévisualisation les ressources que vous avez téléchargées ou que vous créez ou modifiez afin de vous assurer qu’elles apparaissent comme vous le souhaitez lorsque vos clients les vues. Vous pouvez accéder à la fenêtre de Prévisualisation en cliquant sur un bouton **Prévisualisation** , soit sur la miniature du fichier, en haut du panneau **de** navigation/création, soit en accédant à **Fichier > Prévisualisation**. Dans une fenêtre de navigateur, il prévisualisation le fichier qui se trouve actuellement dans le panneau, qu’il s’agisse d’une image, d’une vidéo ou d’un fichier généré comme une visionneuse d’images.
+Vous souhaiterez probablement prévisualisation les ressources que vous avez téléchargées ou que vous créez ou modifiez afin de vous assurer qu’elles apparaissent comme vous le souhaitez lorsque vos clients les vues. Vous pouvez accéder à la fenêtre de Prévisualisation en cliquant sur un bouton **Prévisualisation**, soit sur la miniature du fichier, en haut du **panneau de navigation/de création**, soit en accédant à **Fichier > Prévisualisation**. Dans une fenêtre de navigateur, il prévisualisation le fichier qui se trouve actuellement dans le panneau, qu’il s’agisse d’une image, d’une vidéo ou d’un fichier généré comme une visionneuse d’images.
 
 ### Prévisualisation Taille dynamique (paramètres d’image prédéfinis)
 
-Vous pouvez prévisualisation vos images en plusieurs tailles à l’aide de la prévisualisation **Tailles** . Cette opération charge une liste de vos paramètres d’image prédéfinis disponibles. Nous parlerons plus tard des paramètres d’image prédéfinis, mais pensez-y comme à des &quot;recettes&quot; pour charger votre image à une taille nommée avec des quantités spécifiques d’accentuation et de qualité d’image.
+Vous pouvez prévisualisation vos images en plusieurs tailles à l’aide de la prévisualisation **Tailles**. Cette opération charge une liste de vos paramètres d’image prédéfinis disponibles. Nous parlerons plus tard des paramètres d’image prédéfinis, mais pensez-y comme à des &quot;recettes&quot; pour charger votre image à une taille nommée avec des quantités spécifiques d’accentuation et de qualité d’image.
 
 ### Prévisualisation de zoom
 
 Vous pouvez également utiliser l’option **Zoom** pour prévisualisation votre image dans l’un des nombreux paramètres prédéfinis de zoom prédéfinis, qui reposent sur différentes visionneuses de zoom incluses.
 
-En savoir plus sur l’ [aperçu des ressources](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/previewing-asset.html).
+En savoir plus sur [la prévisualisation des ressources](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/previewing-asset.html).
