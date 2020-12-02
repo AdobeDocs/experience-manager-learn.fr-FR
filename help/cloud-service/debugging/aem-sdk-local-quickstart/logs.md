@@ -27,29 +27,29 @@ L’accès aux journaux AEM SDK, soit les Jar de démarrage rapide locaux AEM SD
 
 Les journaux jouent le rôle de première ligne pour le débogage des applications AEM, mais dépendent d’une journalisation adéquate dans l’application AEM déployée. L’Adobe recommande de maintenir le développement local et l’AEM en tant que configurations de journalisation du développement Cloud Service aussi semblables que possible, car il normalise la visibilité du journal sur le démarrage local du SDK AEM et l’ en tant qu’environnements de développement Cloud Service, ce qui réduit le chevauchement et le redéploiement de la configuration.
 
-L&#39;archétype [de projet](https://github.com/adobe/aem-project-archetype) AEMconfigure la journalisation au niveau DEBUG pour les packages Java de votre application AEM pour le développement local via la configuration OSGi de Sling Logger qui se trouve dans la section
+L&#39;[AEM Archétype de projet](https://github.com/adobe/aem-project-archetype) configure la journalisation au niveau DEBUG pour les packages Java de votre application AEM pour le développement local via la configuration OSGi du Sling Logger, qui se trouve à l&#39;adresse
 
 `ui.apps/src/main/content/jcr_root/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
-qui se connecte au `error.log`.
+qui se connecte à `error.log`.
 
-Si la journalisation par défaut est insuffisante pour le développement local, la journalisation ad hoc peut être configurée via la console web de prise en charge des journaux locale du SDK AEM, à l’adresse ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)). Cependant, les modifications ad hoc recommandées ne sont pas conservées sur Git, sauf si ces mêmes configurations de journalisation sont nécessaires sur AEM en tant qu’environnements de développement Cloud Service. N’oubliez pas que les modifications effectuées via la console de prise en charge des journaux sont conservées directement dans le référentiel de démarrage rapide local du SDK AEM.
+Si la journalisation par défaut est insuffisante pour le développement local, la journalisation ad hoc peut être configurée via la console web de prise en charge du journal locale du SDK, à l’adresse ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)). Toutefois, les modifications ad hoc recommandées ne sont pas conservées sur Git, sauf si ces mêmes configurations de journalisation sont également nécessaires sur AEM en tant qu’environnements de développement Cloud Service. N’oubliez pas que les modifications effectuées via la console de prise en charge des journaux sont conservées directement dans le référentiel de démarrage rapide local du SDK AEM.
 
-Les instructions du journal Java peuvent être vues dans le `error.log` fichier :
+Les instructions du journal Java peuvent être vues dans le fichier `error.log` :
 
 ```
 $ ~/aem-sdk/author/crx-quickstart/logs/error.log
 ```
 
-Souvent, il est utile de &quot;traîner&quot; le `error.log` qui transfère sa sortie vers le terminal.
+Souvent, il est utile de &quot;traîner&quot; le `error.log` qui envoie sa sortie au terminal.
 
 + macOS/Linux
    + `$ tail -f ~/aem-sdk/author/crx-quickstart/logs/error.log`
-+ Windows requiert des applications [externes](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) tierces ou l&#39;utilisation de la commande [Get-Content de](https://stackoverflow.com/a/46444596/133936)Powershell.
++ Windows requiert [des applications tierces](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) ou l&#39;utilisation de [la commande Get-Content de Powershell](https://stackoverflow.com/a/46444596/133936).
 
 ## Journaux du répartiteur
 
-Les journaux du répartiteur sont générés dans stdout lors de l&#39; `bin/docker_run` appel. Toutefois, les journaux peuvent être directement accessibles dans le contenu du Docker.
+Les journaux du répartiteur sont générés en stdout lorsque `bin/docker_run` est appelé, mais les journaux peuvent être directement accessibles avec dans le contenu du Docker.
 
 ### Accès aux journaux dans le conteneur Docker
 
@@ -75,7 +75,7 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 
 ### Copie des journaux Docker vers le système de fichiers local
 
-Les journaux du répartiteur peuvent être copiés en dehors du conteneur Docker `/etc/httpd/logs` au système de fichiers local pour inspection à l&#39;aide de votre outil d&#39;analyse de journal préféré. Notez qu’il s’agit d’une copie ponctuelle et qu’elle ne fournit pas de mises à jour en temps réel des journaux.
+Les journaux du répartiteur peuvent être copiés hors du conteneur Docker à `/etc/httpd/logs` vers le système de fichiers local pour inspection à l&#39;aide de votre outil d&#39;analyse de journal préféré. Notez qu’il s’agit d’une copie ponctuelle et qu’elle ne fournit pas de mises à jour en temps réel des journaux.
 
 ```shell
 $ docker ps
