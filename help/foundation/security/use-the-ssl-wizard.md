@@ -13,7 +13,7 @@ discoiquuid: 9e666741-0f76-43c9-ab79-1ef149884686
 translation-type: tm+mt
 source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ Adobe Experience Manager de l’assistant de configuration SSL pour faciliter la
 
 ## Clé privée et téléchargement de certificat autosigné
 
-Le fichier compressé suivant contient [!DNL DER] les fichiers [!DNL CRT] nécessaires à la configuration d’AEM SSL sur localhost et est destiné uniquement à des fins de développement local.
+Le fichier compressé suivant contient les fichiers [!DNL DER] et [!DNL CRT] nécessaires à la configuration AEM SSL sur localhost et destiné uniquement à des fins de développement local.
 
-Les fichiers [!DNL DER] et [!DNL CERT] les fichiers sont fournis à des fins pratiques et générés en suivant les étapes décrites dans la section Générer une clé privée et un certificat auto-signé ci-dessous.
+Les fichiers [!DNL DER] et [!DNL CERT] sont fournis à titre pratique et générés en suivant les étapes décrites dans la section Générer une clé privée et un certificat auto-signé ci-dessous.
 
 Si nécessaire, la phrase de passe de certificat est **admin**.
 
@@ -45,7 +45,7 @@ localhost - clé privée et fichier certificate.zip autosigné (expire en juille
 
 ## Génération de clés privées et de certificats autosignés
 
-La vidéo ci-dessus illustre la configuration et la configuration de SSL sur une instance d’auteur AEM à l’aide de certificats auto-signés. Les commandes ci-dessous utilisant [[ !DNL OpenSSL]](https://www.openssl.org/) peuvent générer une clé privée et un certificat à utiliser à l&#39;étape 2 de l&#39;Assistant.
+La vidéo ci-dessus illustre la configuration et la configuration de SSL sur une instance d’auteur AEM à l’aide de certificats auto-signés. Les commandes ci-dessous utilisant [[!DNL OpenSSL]](https://www.openssl.org/) peuvent générer une clé privée et un certificat à utiliser à l&#39;étape 2 de l&#39;Assistant.
 
 ```shell
 ### Create Private Key
