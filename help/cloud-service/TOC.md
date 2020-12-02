@@ -23,12 +23,12 @@ ht-degree: 38%
    + [Introduction à Sling](./underlying-technology/introduction-sling.md)
    + [Présentation du niveau Auteur et Publication](./underlying-technology/introduction-author-publish.md)
    + [Présentation du Dispatcher](./underlying-technology/introduction-dispatcher.md)
-+ Local Development Environment Set up {#local-development-environment-set-up}
++ Environnement de développement local configuré {#local-development-environment-set-up}
    + [Présentation](./local-development-environment/overview.md)
    + [Outils de développement](./local-development-environment/development-tools.md)
    + [Exécution AEM locale](./local-development-environment/aem-runtime.md)
    + [Outils du répartiteur local](./local-development-environment/dispatcher-tools.md)
-+ AEM de débogage{#debugging}
++ Débogage AEM{#debugging}
    + Débogage du SDK AEM{#debugging-aem-sdk}
       + [Présentation](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Journaux](./debugging/aem-sdk-local-quickstart/logs.md)
@@ -42,7 +42,7 @@ ht-degree: 38%
       + [Création et déploiement](./debugging/cloud-service/build-and-deployment.md)
       + [Developer Console](./debugging/cloud-service/developer-console.md)
       + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
-+ Accès aux AEM{#accessing}
++ Accès à AEM{#accessing}
    + [Présentation](./accessing/overview.md)
    + [Adobes utilisateurs IMS](./accessing/adobe-ims-users.md)
    + [Groupes d’utilisateurs IMS Adobe](./accessing/adobe-ims-user-groups.md)
@@ -51,14 +51,14 @@ ht-degree: 38%
    + [Configuration de l’accès à AEM parcours](./accessing/walk-through.md)
 + Migration {#migration}
    + [Outil de transfert de contenu](./migration/content-transfer-tool.md)
-+ Extensibilité du calcul des ressources{#asset-compute}
++ Extensibilité des Assets compute{#asset-compute}
    + [Présentation](./asset-compute/overview.md)
    + Configuration{#set-up}
       + [Approvisionnement des comptes et des services](./asset-compute/set-up/accounts-and-services.md)
       + [Environnement de développement local](./asset-compute/set-up/development-environment.md)
       + [Adobe Projet Firefly](./asset-compute/set-up/firefly.md)
    + Développer{#develop}
-      + [Création d’un projet Asset Compute](./asset-compute/develop/project.md)
+      + [Création d’un projet d’Asset compute](./asset-compute/develop/project.md)
       + [Configuration des variables d’environnement](./asset-compute/develop/environment-variables.md)
       + [Configuration du fichier manifest.yml](./asset-compute/develop/manifest.md)
       + [Développer un travailleur](./asset-compute/develop/worker.md)
