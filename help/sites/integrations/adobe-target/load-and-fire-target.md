@@ -26,19 +26,19 @@ Découvrez comment charger, transférer des paramètres à la demande de page et
 
 ## Règle de chargement de page
 
-La couche de données du client Adobe est une couche de données pilotée par événement. Lorsque la couche de données Page AEM est chargée, elle déclenche un événement `cmp:show` . Dans la vidéo, la `Launch Library Loaded` règle est appelée à l’aide d’un événement personnalisé. Vous trouverez ci-dessous les fragments de code utilisés dans la vidéo pour le événement personnalisé ainsi que pour les éléments de données.
+La couche de données du client Adobe est une couche de données pilotée par événement. Une fois la couche de données Page AEM chargée, elle déclenche un événement `cmp:show`. Dans la vidéo, la règle `Launch Library Loaded` est appelée à l’aide d’un événement personnalisé. Vous trouverez ci-dessous les fragments de code utilisés dans la vidéo pour le événement personnalisé ainsi que pour les éléments de données.
 
-### Événement Page personnalisée affichée{#page-event}
+### Page personnalisée affichée Événement{#page-event}
 
 ![Page affichée configuration de événement et code personnalisé](assets/load-and-fire-target-call.png)
 
-Dans la propriété Launch, ajoutez un nouveau **Événement** à la **règle**
+Dans la propriété Launch, ajoutez un nouveau **Événement** à la **règle**.
 
-+ __Extension :__ Core
-+ __type d&#39;événement :__ Code personnalisé
-+ __Nom :__ Gestionnaire de Événements d&#39;affichage de page (ou descriptif)
++ __Extension:__ Core
++ __type d&#39;événement:Code__ personnalisé
++ __Nom : gestionnaire de Événements d’affichage de__ page (ou descriptif)
 
-Appuyez sur le bouton __Ouvrir l’éditeur__ et collez-le dans le fragment de code suivant. Ce code __doit__ être ajouté à la configuration __du__ Événement et à une __action__ ultérieure.
+Appuyez sur le bouton __Ouvrir l’éditeur__ et collez-le dans le fragment de code suivant. Ce code __doit__ être ajouté à la __configuration de Événement__ et à une __action__ ultérieure.
 
 ```javascript
 // Define the event handler function
@@ -78,11 +78,11 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Une fonction personnalisée définit le composant `pageShownEventHandler`et écoute les événements émis par AEM Core Components, obtient les informations pertinentes du composant principal, les regroupe dans un objet événement et déclenche le Événement de lancement avec les informations de événement dérivées à sa charge utile.
+Une fonction personnalisée définit le `pageShownEventHandler` et écoute les événements émis par AEM Core Components, extrait les informations pertinentes du composant principal, les regroupe dans un objet événement et déclenche le Événement de lancement avec les informations de événement dérivées à sa charge utile.
 
-La règle de lancement est déclenchée à l’aide de la `trigger(...)` fonction de lancement qui est __uniquement__ disponible dans la définition de fragment de code personnalisé du Événement d’une règle.
+La règle de lancement est déclenchée à l&#39;aide de la fonction `trigger(...)` du lancement, __uniquement__ disponible dans la définition de fragment de code personnalisé du Événement de la règle.
 
-La `trigger(...)` fonction prend un objet événement comme paramètre qui, à son tour, est exposé dans les éléments de données de lancement, par un autre nom réservé dans Lancement nommé `event`. Les éléments de données du lancement peuvent désormais référencer les données de cet objet de événement à partir de l’ `event` objet à l’aide d’une syntaxe du type `event.component['someKey']`.
+La fonction `trigger(...)` prend un objet événement comme paramètre qui, à son tour, est exposé dans les éléments de données de lancement, par un autre nom réservé dans Lancement nommé `event`. Les éléments de données du lancement peuvent désormais référencer les données de cet objet de événement à partir de l&#39;objet `event` en utilisant une syntaxe telle que `event.component['someKey']`.
 
 Si `trigger(...)` est utilisé en dehors du contexte d&#39;un type d&#39;événement de code personnalisé de Événement (par exemple, dans une action), l&#39;erreur JavaScript `trigger is undefined` est générée sur le site Web intégré à la propriété Launch.
 
@@ -91,7 +91,7 @@ Si `trigger(...)` est utilisé en dehors du contexte d&#39;un type d&#39;événe
 
 ![Éléments de données](assets/data-elements.png)
 
-Les éléments de données de lancement d&#39;Adobe mappent les données de l&#39;objet de événement [déclenché dans le événement](#page-event) Page affichée personnalisé aux variables disponibles dans Adobe Target, via le type d&#39;élément de données Code personnalisé de l&#39;extension Core.
+Les éléments de données de lancement d&#39;Adobe mappent les données de l&#39;objet de événement [déclenché dans le événement Page affichée personnalisé](#page-event) aux variables disponibles dans Adobe Target, via le type d&#39;élément de données Code personnalisé de l&#39;extension de base.
 
 #### Elément de données d’ID de page
 
@@ -129,7 +129,7 @@ Ce code renvoie le titre de la page AEM.
 
 ![Titre de la page](assets/pagetitle.png)
 
-## Résolution des incidents
+## Dépannage
 
 ### Pourquoi mes mbox ne se déclenchent-elles pas sur mes pages Web ?
 
@@ -140,7 +140,7 @@ Ce code renvoie le titre de la page AEM.
 #### Solution
 
 Les clients cibles utilisent parfois des instances basées sur le cloud avec Cible pour effectuer des tests ou à des fins simples de BAT de concept. Ces domaines, et beaucoup d&#39;autres, font partie de la Liste du suffixe public.
-Les navigateurs modernes n’enregistrent pas les cookies si vous utilisez ces domaines, sauf si vous personnalisez le `cookieDomain` paramètre `targetGlobalSettings()`.
+Les navigateurs modernes n’enregistreront pas les cookies si vous utilisez ces domaines, sauf si vous personnalisez le paramètre `cookieDomain` à l’aide de `targetGlobalSettings()`.
 
 ```
 window.targetGlobalSettings = {  
