@@ -29,7 +29,7 @@ Les améliorations apportées à la visionneuse de médias dynamiques dans AEM v
 
 >[!NOTE]
 >
->La vidéo suppose que votre instance AEM s’exécute en mode Contenu multimédia dynamique S7.  [Vous trouverez ici](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)des instructions sur la configuration des AEM avec Contenu multimédia dynamique. Lorsque vous téléchargez une vidéo, par défaut, Contenu multimédia dynamique traite le métrage sous la forme d’une vidéo de 360, si son rapport L/H est de 2:1. c&#39;est-à-dire que le rapport largeur/hauteur est de 2:1.
+>La vidéo suppose que votre instance AEM s’exécute en mode Contenu multimédia dynamique S7.  [Vous trouverez ici](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html) des instructions sur la configuration des AEM avec Contenu multimédia dynamique. Lorsque vous téléchargez une vidéo, par défaut, Contenu multimédia dynamique traite le métrage sous la forme d’une vidéo de 360, si son rapport L/H est de 2:1. c&#39;est-à-dire que le rapport largeur/hauteur est de 2:1.
 
 >[!NOTE]
 >
