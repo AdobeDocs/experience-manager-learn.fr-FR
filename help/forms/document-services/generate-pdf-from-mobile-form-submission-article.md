@@ -20,11 +20,11 @@ ht-degree: 0%
 ---
 
 
-# Générer un fichier PDF à partir de l’envoi de formulaire HTML5 {#generate-pdf-from-htm-form-submission}
+# Générer un fichier PDF à partir de l’envoi de formulaire HTM5 {#generate-pdf-from-htm-form-submission}
 
 Cet article décrit les étapes nécessaires à la génération de pdf à partir d’un envoi de formulaire HTML5(ou Forms mobile). Cette démonstration explique également les étapes nécessaires pour ajouter une image au formulaire HTML5 et la fusionner dans le PDF final.
 
-Pour voir une démonstration en direct de cette fonctionnalité, consultez l’ [exemple de serveur](https://forms.enablementadobe.com/content/samples/samples.html?query=0) et recherchez &quot;Mobile Form To PDF&quot;.
+Pour voir une démonstration en direct de cette fonctionnalité, consultez l&#39;[exemple de serveur](https://forms.enablementadobe.com/content/samples/samples.html?query=0) et recherchez &quot;Mobile Form To PDF&quot;.
 
 Pour fusionner les données envoyées dans le modèle xdp, procédez comme suit :
 
@@ -84,7 +84,7 @@ $("#file1").click();
 });
 ```
 
-[Profil](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles)personnalisé. L’utilisation d’un profil personnalisé facilite la manipulation des objets DOM HTML du formulaire pour périphériques mobiles. Un élément de fichier masqué est ajouté au fichier HTML.jsp. Lorsque l’utilisateur clique sur &quot;Ajouter votre photo&quot;, nous déclenchons le événement de clic de l’élément de fichier. Cela permet à l&#39;utilisateur de parcourir et de sélectionner la photo à joindre. Nous utilisons ensuite l’objet javascript FileReader pour obtenir la chaîne codée en base64 de l’image. La chaîne d’image base64 est stockée dans le champ de texte du formulaire. Lorsque le formulaire est envoyé, nous extrayons cette valeur et l’insérons dans l’élément img du XML. Ce code XML est ensuite utilisé pour fusionner avec xdp afin de générer le fichier pdf final.
+[Profil](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles) personnalisé. L’utilisation d’un profil personnalisé facilite la manipulation des objets DOM HTML du formulaire pour périphériques mobiles. Un élément de fichier masqué est ajouté au fichier HTML.jsp. Lorsque l’utilisateur clique sur &quot;Ajouter votre photo&quot;, nous déclenchons le événement de clic de l’élément de fichier. Cela permet à l&#39;utilisateur de parcourir et de sélectionner la photo à joindre. Nous utilisons ensuite l’objet javascript FileReader pour obtenir la chaîne codée en base64 de l’image. La chaîne d’image base64 est stockée dans le champ de texte du formulaire. Lorsque le formulaire est envoyé, nous extrayons cette valeur et l’insérons dans l’élément img du XML. Ce code XML est ensuite utilisé pour fusionner avec xdp afin de générer le fichier pdf final.
 
 Le profil personnalisé utilisé pour cet article vous a été rendu disponible dans le cadre des ressources de cet article.
 
@@ -121,9 +121,9 @@ Pour tester cette fonctionnalité sur votre propre serveur, procédez comme suit
 
 * [Téléchargez et installez le package associé à cet article.](assets/pdf-from-mobile-form-submission.zip)
 
-* Assurez-vous que l’URL d’envoi et le profil de rendu HTML sont définis correctement en affichant la page de propriétés de [xdp.](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
+* Assurez-vous que l’URL d’envoi et le profil de rendu HTML sont définis correctement en affichant la page de propriétés de [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp).
 
 * [Prévisualisation du fichier XDP au format html](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
-* ajoutez une image dans le formulaire et envoyez-la. Vous devez récupérer le fichier PDF avec l’image qu’il contient.
+* Ajoutez une image dans le formulaire et envoyez-la. Vous devez récupérer le fichier PDF avec l’image qu’il contient.
 
