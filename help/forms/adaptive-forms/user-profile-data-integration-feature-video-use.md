@@ -20,7 +20,7 @@ ht-degree: 46%
 ---
 
 
-# Utilisation de l’intégration des données d’Profil utilisateur avec AEM Forms{#using-user-profile-data-integration-with-aem-forms}
+# Utilisation de l’intégration des données du Profil utilisateur avec AEM Forms{#using-user-profile-data-integration-with-aem-forms}
 
 L’intégration de données AEM Forms permet de configurer des sources de données disparates et de s’y connecter. La pris en charge est assurée par défaut pour ce qui suit. Toutefois, avec peu de personnalisation, vous pouvez intégrer d’autres sources de données.
 
