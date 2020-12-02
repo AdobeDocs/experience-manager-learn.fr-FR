@@ -27,19 +27,19 @@ La gestion avancée des métadonnées permet aux utilisateurs de créer des règ
 
 Il existe trois jeux de règles dynamiques qui peuvent être activés pour un champ de métadonnées donné :
 
-1. **Exigence** : un champ peut être marqué de manière dynamique comme requis pour être basé sur la valeur d’un autre champ déroulant.
+1. **Exigence**  : un champ peut être marqué de manière dynamique comme requis pour être basé sur la valeur d’un autre champ déroulant.
 
-2. **Visibilité** : peuvent toujours être visibles ou uniquement visibles en fonction de la valeur d’un autre champ déroulant.
+2. **Visibilité**  : peuvent toujours être visibles ou uniquement visibles en fonction de la valeur d’un autre champ déroulant.
 
-3. **Choix** : (applicable uniquement aux champs déroulants) filtrez les choix affichés à l’utilisateur en fonction de la valeur actuellement sélectionnée d’un autre champ déroulant.
+3. **Choix**  : (applicable uniquement aux champs déroulants) filtrez les choix affichés à l’utilisateur en fonction de la valeur actuellement sélectionnée d’un autre champ déroulant.
 
 >[!NOTE]
 >
 >Les règles en cascade peuvent SEULEMENT être créées en fonction des valeurs d’un champ déroulant. Il est possible d’appliquer les trois jeux de règles au même champ de métadonnées mais, en règle générale, il est recommandé de rendre chaque jeu de règles dépendant de la même liste déroulante de métadonnées.
 
-Téléchargement du package de métadonnées [personnalisées](assets/cascade-metadata-values-001.zip)
+Télécharger [Package de métadonnées personnalisées](assets/cascade-metadata-values-001.zip)
 
 ## Ressources supplémentaires{#additional-resources}
 
-Schéma de métadonnées personnalisées créé dans : `/conf/global/settings/dam/adminui-extension/metadataschema/custom`. Le package AEM ci-dessous applique un schéma personnalisé au dossier : `/content/dam/we-retail/en/activities`:
+Schéma de métadonnées personnalisées créé dans : `/conf/global/settings/dam/adminui-extension/metadataschema/custom`. Le package AEM ci-dessous applique un schéma personnalisé au dossier : `/content/dam/we-retail/en/activities` :
 
