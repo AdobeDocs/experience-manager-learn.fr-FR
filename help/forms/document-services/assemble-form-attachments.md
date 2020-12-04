@@ -10,9 +10,9 @@ version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
 translation-type: tm+mt
-source-git-commit: a9fbd73f128998bb201ef8715e5e725e94ee1ede
+source-git-commit: 3e8b820939c2d39ef9a17f7d7aaef87cd9cdbbbb
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '633'
 ht-degree: 1%
 
 ---
@@ -45,9 +45,9 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### Création de DDX à partir des noms de pièce jointe
 
-Nous devons ensuite créer un document [DX (Document Description XML)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) qui est utilisé par le service Assembler pour assembler des documents. Voici le DDX qui a été créé à partir des arguments de processus. Notez que les éléments source PDF sont dans le bon ordre, comme indiqué dans les arguments de processus.
+Nous devons ensuite créer un document [DX (Document Description XML)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) qui est utilisé par le service Assembler pour assembler des documents. Voici le DDX qui a été créé à partir des arguments de processus. L’élément NoForms vous permet d’aplatir les documents basés sur XFA avant qu’ils ne soient assemblés. Notez que les éléments source PDF sont dans le bon ordre, comme indiqué dans les arguments de processus.
 
-![ddx-xml](assets/ddx-xml.JPG)
+![ddx-xml](assets/ddx.PNG)
 
 ### Création d’une carte des documents
 
