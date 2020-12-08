@@ -8,12 +8,12 @@ doc-type: tutorial
 activity: develop
 audience: developer
 mini-toc-levels: 1
-kt: null
-thumbnail: null
+kt: 6386
+thumbnail: KT-6386.jpg
 translation-type: tm+mt
-source-git-commit: 2e0352b051bf25a491b67468a76522084e53a71f
+source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1590'
 ht-degree: 2%
 
 ---
@@ -67,6 +67,10 @@ Ce didacticiel utilise l&#39;AEM [en tant que SDK Cloud Service](https://experie
 1. Indiquez un mot de passe administrateur sous la forme `admin`. Tout mot de passe d’administrateur est acceptable, mais il est recommandé d’utiliser la valeur par défaut pour le développement local afin de réduire la nécessité de reconfigurer.
 1. Au bout de quelques minutes, l’instance AEM se termine et une nouvelle fenêtre du navigateur doit s’ouvrir à l’adresse [http://localhost:4502](http://localhost:4502).
 1. Connectez-vous avec le nom d’utilisateur `admin` et le mot de passe `admin`.
+
+>[!CAUTION]
+>
+> Pour continuer la configuration, la fonction GraphQL doit maintenant être activée manuellement sur le SDK Quickstart. Contactez votre Adobe pour obtenir d&#39;autres instructions. Cette étape manuelle n&#39;est nécessaire que jusqu&#39;à la sortie de la fonctionnalité en 2021.
 
 ## Installer un exemple de contenu{#wknd-site}
 
