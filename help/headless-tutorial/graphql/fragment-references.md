@@ -8,12 +8,12 @@ doc-type: tutorial
 activity: develop
 audience: developer
 mini-toc-levels: 1
-kt: null
-thumbnail: null
+kt: 6718
+thumbnail: KT-6718.jpg
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '849'
 ht-degree: 2%
 
 ---
@@ -239,6 +239,12 @@ Ensuite, mettez à jour les requêtes utilisées par la demande Réagir pour inc
 
    ![Contributeur Ajouté dans l’application](assets/fragment-references/contributor-added-detail.png)
 
+## Ressources supplémentaires
+
+Pour plus d’informations sur les fragments de contenu et GraphQL, voir les ressources suivantes :
+
+* [Diffusion de contenu sans en-tête utilisant des fragments de contenu avec GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
+* [aem API GraphQL à utiliser avec les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
 
 ## Félicitations !{#congratulations}
 
