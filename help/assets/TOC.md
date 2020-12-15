@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriels AEM Assets
 sub-product: ressources
 team: TM
 translation-type: tm+mt
-source-git-commit: 159e9d7ea363768f202db91a1d0555c2e57ebb13
+source-git-commit: aa349fba9e0f1df97316105ada62ff9b32501573
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 37%
+source-wordcount: '257'
+ht-degree: 36%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 37%
    + [Dossiers de base](configuring/baseline-folders.md)
    + [Autorisations de base](configuring/baseline-permissions.md)
    + [Balisage](configuring/tagging.md)
-   + [Schémas de métadonnées](configuring/metadata-schemas.md)
+   + [Des schémas de métadonnées](configuring/metadata-schemas.md)
    + [Profils de métadonnées](configuring/metadata-profiles.md)
    + [Schémas de dossiers de métadonnées](configuring/metadata-folder-schemas.md)
    + [Rail de recherche des administrateurs des ressources](configuring/assets-admin-search-rail.md)
@@ -87,7 +87,7 @@ ht-degree: 37%
    + [Recherche de ressources](./adobe-asset-link/asset-search.md)
 
 + Dynamic Media{#dynamic-media}
-   + [Présentation des médias dynamiques](dynamic-media/dynamic-media-overview-feature-video-use.md)
+   + [Présentation de Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Recadrage intelligent](dynamic-media/smart-crop-feature-video-use.md)
    + [Fragments d’expérience](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
    + [Vidéo interactive](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
@@ -100,8 +100,9 @@ ht-degree: 37%
    + [Visionneuses d’images panoramiques et verticales](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
    + [Visionneuses avec Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + [Application de bureau Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
-   + [Contenu multimédia dynamique 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + [Vidéo de recadrage dynamique avec médias dynamiques](dynamic-media/dynamic-media-smart-crop-video.md)
+   + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
+   + [Vidéo Dynamic Media Smart Crop](dynamic-media/dynamic-media-smart-crop-video.md)
+   + [Composants principaux de Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
 + Traduction {#translation}
    + [Traduction du fichier source](translation/source-file-translation-feature-video-use.md)
