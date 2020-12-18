@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6261
 thumbnail: 41195.jpg
 translation-type: tm+mt
-source-git-commit: e13a5171fbeb9e1eb5f78d1c691bc8b4b896a998
+source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '788'
 ht-degree: 8%
 
 ---
@@ -174,6 +174,8 @@ Il est recommandé de déclencher tout code personnalisé basé sur un événeme
 ## Étapes suivantes
 
 Consultez le didacticiel suivant pour savoir comment utiliser la couche de données client Adobe pilotée par le événement pour [collecter des données de page et les envoyer à Adobe Analytics](../analytics/collect-data-analytics.md).
+
+Ou apprendre à [personnaliser la couche de données du client Adobe avec les composants AEM](./data-layer-customize.md)
 
 
 ## Ressources supplémentaires {#additional-resources}
