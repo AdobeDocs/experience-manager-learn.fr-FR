@@ -5,10 +5,10 @@ description: 'Ensemble de vidéos et de tutoriels pour Adobe Experience Manager 
 seo-description: Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Sites
 sub-product: sites, content-services
 translation-type: tm+mt
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 34%
+source-wordcount: '337'
+ht-degree: 35%
 
 ---
 
@@ -19,21 +19,13 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
 
 ## Nouveautés
 
-* **[Prise en main de AEM SPA Editor and React](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-react-tutorial/overview.html)  (Didacticiel)**
+* **[Personnalisation de la couche de données du client Adobe avec les composants AEM](./integrations/adobe-client-data-layer/data-layer-customize.md)**
 
-   *Guide de prise en main pour les développeurs pour l&#39;intégration d&#39;une application d&#39;une seule page (SPA) avec AEM à l&#39;aide de React*
+   *Découvrez comment mettre à jour la couche de données du client Adobe avec le contenu des composants AEM personnalisés.*
 
-* **[Prise en main de AEM SPA Editor et Angular](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-angular-tutorial/overview.html)  (didacticiel)**
+* **[Prise en main de AEM GraphQL sans en-tête (didacticiel)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
 
-   *Guide de prise en main pour les développeurs pour l’intégration d’une application d’une seule page (SPA) avec AEM à l’aide d’Angular*
-
-* **[Prise en main AEM sans en-tête (didacticiel)](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-with-aem-headless/overview.html)**
-
-   *Comment exposer le contenu d’AEM à consommer par une application mobile native, dans un scénario CMS sans tête.*
-
-* **[Utilisation de fragments d’expérience (série de vidéos)](./experience-fragments/experience-fragments-feature-video-use.md)**
-
-   *Découvrez les fragments d’expérience AEM pour la promotion de contenu entre canaux.*
+   *Comment exposer le contenu d’AEM à consommer par une application mobile native à l’aide des API AEM GraphQL.*
 
 * **[Utilisation de fragments de contenu (série de vidéos)](./content-fragments/content-fragments-feature-video-use.md)**
 
@@ -48,12 +40,12 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
 <table>
 <tr>
   <td>
-    <a href="https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
+    <a href="https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
       <img alt="Prise en main du développement AEM Sites – Tutoriel WKND" src="./assets/aem-wknd-tutorial.png" />
     </a>
     <div>
       <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
-    <strong>Prise en main de AEM Sites</strong>
+    <strong>Prise en main d’AEM Sites</strong>
     </a>
     </div>
     <p>
@@ -61,7 +53,7 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
     <p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html">
+    <a href="https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-with-aem-headless/overview.html">
     <img alt="Prise en main d’AEM sans affichage" src="./assets/aem-headless-tutorial.png" />
     </a>
     <div>
@@ -74,7 +66,7 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
     </p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html">
+    <a href="https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-react-tutorial/overview.html">
       <img alt="Prise en main de AEM SPA Editor" src="./assets/aem-wknd-spa-editor-tutorial.png" />
     </a>
      <div>
