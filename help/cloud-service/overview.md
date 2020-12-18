@@ -4,9 +4,9 @@ description: Ensemble de didacticiels pour Adobe Experience Manager (AEM) en tan
 sub-product: sites, cloud manager, foundation, assets
 kt: 3289
 translation-type: tm+mt
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '265'
 ht-degree: 11%
 
 ---
@@ -20,6 +20,14 @@ Adobe Experience Manager (AEM) est désormais disponible en tant que Cloud Se
 
 ## Nouveautés
 
+* **[Importation en bloc (vidéo)](./migration/bulk-import.md)**
+
+   *Découvrez comment importer en masse des actifs dans AEM à partir d&#39;Azure Blob Enregistrement ou d&#39;Amazon S3*
+
+* **[Opérateur de métadonnées d&#39;Asset compute (didacticiel)](./asset-compute/advanced/metadata.md)**
+
+   *Découvrez comment réécrire des métadonnées de fichier à des AEM d&#39;un Asset compute*
+
 * **[Extension des microservices d&#39;Asset compute (didacticiel)](./asset-compute/overview.md)**
 
    *Apprenez à développer des Assets compute pour générer des rendus de ressources personnalisés*
@@ -31,14 +39,6 @@ Adobe Experience Manager (AEM) est désormais disponible en tant que Cloud Se
 * **[Débogage de l’AEM en tant que Cloud Service (didacticiel)](./debugging/cloud-service/overview.md)**
 
    *Découvrez comment déboguer AEM en tant que Cloud Service*
-
-* **[Débogage du SDK AEM (didacticiel)](./debugging/aem-sdk-local-quickstart/overview.md)**
-
-   *Explorez les différents outils utilisés pour déboguer votre application sur l&#39;AEM en tant que démarrage rapide local du kit SDK Cloud Service*
-
-* **[Configuration de l&#39;Environnement de développement local (didacticiel)](./local-development-environment/overview.md)**
-
-   *Découvrez comment configurer votre machine de développement local pour AEM en tant que développement Cloud Service*
 
 ## Sélection du personnel
 
