@@ -4,10 +4,10 @@ user-guide-description: Ensemble de vidéos et de tutoriels pour Adobe Experienc
 breadcrumb-title: Tutoriels AEM Sites
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: 16c73d19584eefff3c9551d2a3174b5b8ed6d427
+source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 33%
+source-wordcount: '447'
+ht-degree: 35%
 
 ---
 
@@ -48,12 +48,12 @@ ht-degree: 33%
    + [Fragments de contenu ou Fragments d’expérience](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + Développement {#developing}
    + [Archétype de projet AEM](developing/aem-project-archetype.md)
-   + [Prise en main de AEM Sites](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [Prise en main d’AEM Sites](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Prise en main d’AEM sans affichage](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [Prise en main de AEM SPA Editor et réaction](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-react-tutorial/overview.html)
    + [Prise en main de AEM SPA Editor et Angular](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [Extension des propriétés de la page](developing/page-properties-technical-video-develop.md)
-   + [Développer avec le système de style](developing/style-system-technical-video-understand.md)
+   + [Développement avec le système de style](developing/style-system-technical-video-understand.md)
    + [Meilleures pratiques du système de style](developing/style-organization-style-system-understand-article.md)
    + [Développement pour la différence de page](developing/page-diff-technical-video-develop.md)
    + [Implémentation de la recherche simple](developing/search-tutorial-develop.md)
@@ -98,6 +98,7 @@ ht-degree: 33%
       + [Débogage d’une implémentation de lancement](integrations/experience-platform-launch/debug-launch-implementation.md)
    + Couche de données client Adobe {#adobe-client-data-layer}
       + [Utilisation de la couche de données du client Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
+      + [Personnalisation de la couche de données du client Adobe](integrations/adobe-client-data-layer/data-layer-customize.md)
    + Analyses {#analytics}
       + [Collecte de données de page avec Adobe Analytics](integrations/analytics/collect-data-analytics.md)
       + [Suivi du composant cliqué avec Adobe Analytics](integrations/analytics/track-clicked-component.md)
