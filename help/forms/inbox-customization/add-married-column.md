@@ -17,7 +17,7 @@ ht-degree: 7%
 ---
 
 
-# Ajout de colonnes personnalisées 
+# Ajout de colonnes personnalisées
 
 Pour afficher les données de processus dans la boîte de réception, nous devons définir et renseigner les variables dans le processus. La valeur de la variable doit être définie avant qu’une tâche ne soit affectée à un utilisateur. Pour vous fournir un début principal, nous avons fourni un exemple de processus prêt à être déployé sur votre serveur AEM.
 
