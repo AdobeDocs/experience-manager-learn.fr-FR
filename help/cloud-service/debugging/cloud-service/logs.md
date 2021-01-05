@@ -60,7 +60,7 @@ Seul le répartiteur de publication AEM fournit les journaux du serveur Web et d
    + Évaluation: `WARN`
    + Production : `ERROR`
 
-## Cloud Manager{#cloud-manager}
+## Cloud Manager{#cloud-manager}
 
 Adobe Cloud Manager permet de télécharger les journaux par jour, via une action Télécharger les journaux de l’environnement.
 
