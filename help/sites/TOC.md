@@ -1,7 +1,7 @@
 ---
-user-guide-title: Vidéos et tutoriels AEM Sites
-user-guide-description: Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Sites.
-breadcrumb-title: Tutoriels AEM Sites
+user-guide-title: Vidéos et tutoriels d’AEM Sites
+user-guide-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Sites.
+breadcrumb-title: Tutoriels d’AEM Sites
 sub-product: sites
 translation-type: tm+mt
 source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
@@ -12,7 +12,7 @@ ht-degree: 35%
 ---
 
 
-# Vidéos et tutoriels AEM Sites {#sites}
+# Vidéos et tutoriels d’AEM Sites {#sites}
 
 + [Présentation](overview.md)
 + Création de pages {#page-authoring}
