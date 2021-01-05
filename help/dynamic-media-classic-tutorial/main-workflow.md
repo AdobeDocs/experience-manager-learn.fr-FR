@@ -1,6 +1,6 @@
 ---
-title: Flux de travail principal et aperçu des ressources de Dynamic Media Classic
-description: 'Découvrez le flux de travaux principal de Dynamic Media Classic, qui comprend les trois étapes suivantes : Créer (et Télécharger), Auteur (et Publier) et Livraison. Apprenez ensuite à prévisualisation des ressources dans Dynamic Media Classic.'
+title: Processus principal Dynamic Media Classic et aperçu des ressources
+description: 'Découvrez le processus principal de Dynamic Media Classic, qui comprend les trois étapes suivantes : Créer (et Télécharger), Auteur (et Publier) et Livraison. Apprenez ensuite à prévisualisation des ressources dans Dynamic Media Classic.'
 sub-product: dynamic-media
 feature: workflow
 doc-type: tutorial
@@ -16,13 +16,13 @@ ht-degree: 5%
 ---
 
 
-# Flux de travail principal et aperçu des ressources de Dynamic Media Classic {#main-workflow}
+# Processus principal Dynamic Media Classic et aperçu des ressources {#main-workflow}
 
 Dynamic Media prend en charge un processus de création (et de téléchargement), d’auteur (et de publication) et de diffusion. Vous pouvez début en téléchargeant des fichiers, puis en utilisant ces fichiers, par exemple en créant une visionneuse d’images et en finissant par les publier pour les rendre opérationnels. L’étape de création est facultative pour certains workflows. Par exemple, si vous souhaitez effectuer uniquement un zoom et un dimensionnement dynamiques sur les images ou convertir et publier de la vidéo en flux continu, il n’y a pas d’étapes de création nécessaires.
 
 ![image](assets/main-workflow/create-author-deliver.jpg)
 
-Le flux de travaux des solutions Dynamic Media Classic se compose de trois étapes principales :
+Le processus des solutions Dynamic Media Classic se compose de trois étapes principales :
 
 1. Créer (et télécharger) SourceContent
 2. Ressources de l’auteur (et de la publication)
@@ -30,7 +30,7 @@ Le flux de travaux des solutions Dynamic Media Classic se compose de trois étap
 
 ## Étape 1 : Créer (et télécharger)
 
-Il s’agit du début du processus. Au cours de cette étape, vous rassemblez ou créez le contenu source qui correspond au flux de travaux que vous utilisez et vous le téléchargez dans Contenu multimédia dynamique classique. Le système prend en charge plusieurs types de fichiers pour les images, les vidéos et les polices, mais aussi pour PDF, Adobe Illustrator et Adobe InDesign.
+Il s’agit du début du processus. Au cours de cette étape, vous rassemblez ou créez le contenu source qui correspond au flux de travaux que vous utilisez et vous le téléchargez dans Dynamic Media Classic. Le système prend en charge plusieurs types de fichiers pour les images, les vidéos et les polices, mais aussi pour PDF, Adobe Illustrator et Adobe InDesign.
 
 Consultez la liste complète de [Types de fichiers pris en charge](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
 
@@ -68,7 +68,7 @@ Bien qu’il ne soit pas nécessaire de procéder à un transfert en utilisant l
 
 En savoir plus sur [Options tâche](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 
-Le téléchargement est la première étape nécessaire d’un flux de travaux, car Contenu multimédia dynamique Classic ne peut pas fonctionner avec un contenu qui ne se trouve pas déjà dans son système. En arrière-plan lors du transfert, le système enregistre chaque fichier téléchargé dans la base de données dynamique classique centralisée, affecte un identifiant et le copie à l’enregistrement. En outre, le système convertit les fichiers d’image dans un format qui permet le redimensionnement et le zoom dynamiques et convertit les fichiers vidéo au format Web MP4.
+Le téléchargement est la première étape nécessaire dans un flux de travaux, car Dynamic Media Classic ne peut pas fonctionner avec un contenu qui ne se trouve pas déjà dans son système. En arrière-plan lors du transfert, le système enregistre chaque fichier téléchargé dans la base de données Dynamic Media Classic centralisée, affecte un identifiant et le copie à l’enregistrement. En outre, le système convertit les fichiers d’image dans un format qui permet le redimensionnement et le zoom dynamiques et convertit les fichiers vidéo au format Web MP4.
 
 ### Concept : Voici ce qui arrive aux images lorsque vous les téléchargez vers Dynamic Media Classic.
 
@@ -76,11 +76,11 @@ Lorsque vous téléchargez une image de n’importe quel type vers Dynamic Media
 
 ![image](assets/main-workflow/pyramid-p-tiff.png)
 
-Lors de la conversion de l’image, Dynamic Media Classic prend un &quot;instantané&quot; de la taille complète de l’image, la redimensionne de moitié et l’enregistre, la redimensionne de moitié et l’enregistre, etc. jusqu’à ce qu’elle soit remplie de multiples pairs de la taille d’origine. Par exemple, un P-TIFF de 2 000 pixels aura des tailles de 1 000, 500, 250 et 125 pixels (et plus petites) dans le même fichier. Le fichier P-TIFF est le format de ce qu’on appelle une &quot;image originale&quot; dans Dynamic Media Classic.
+Lorsque l’image est convertie, Dynamic Media Classic prend un &quot;instantané&quot; de la taille complète de l’image, la met à l’échelle de moitié et l’enregistre, la met à l’échelle de moitié et l’enregistre, etc. jusqu’à ce qu’elle soit remplie de multiples pairs de la taille d’origine. Par exemple, un P-TIFF de 2 000 pixels aura des tailles de 1 000, 500, 250 et 125 pixels (et plus petites) dans le même fichier. Le fichier P-TIFF est le format de ce qu&#39;on appelle une &quot;image originale&quot; dans Dynamic Media Classic.
 
-Lorsque vous demandez une image d’une certaine taille, la création du fichier P-TIFF permet au serveur d’images pour Dynamic Media Classic de trouver rapidement la taille supérieure suivante et de la réduire. Par exemple, si vous téléchargez une image de 2 000 pixels et demandez une image de 100 pixels, la version de 125 pixels de Dynamic Media Classic sera trouvée et redimensionnée à 100 pixels au lieu de passer de 2 000 à 100 pixels. Cela rend l&#39;opération très rapide. En outre, lorsque vous effectuez un zoom sur une image, la visionneuse de zoom ne peut demander qu’une mosaïque de l’image en cours de zoom, plutôt que l’image en pleine résolution. C’est ainsi que le format d’image originale, le fichier P-TIFF, prend en charge le dimensionnement dynamique et le zoom.
+Lorsque vous demandez une image d’une certaine taille, la création du P-TIFF permet au serveur d’images pour Dynamic Media Classic de trouver rapidement la taille supérieure suivante et de la réduire. Par exemple, si vous téléchargez une image de 2 000 pixels et demandez une image de 100 pixels, Dynamic Media Classic trouvera la version de 125 pixels et la réduira à 100 pixels au lieu de passer de 2 000 à 100 pixels. Cela rend l&#39;opération très rapide. En outre, lorsque vous effectuez un zoom sur une image, la visionneuse de zoom ne peut demander qu’une mosaïque de l’image en cours de zoom, plutôt que l’image en pleine résolution. C’est ainsi que le format d’image originale, le fichier P-TIFF, prend en charge le dimensionnement dynamique et le zoom.
 
-De même, vous pouvez télécharger votre vidéo source originale dans Dynamic Media Classic. Lors du téléchargement, Dynamic Media Classic peut automatiquement la redimensionner et la convertir au format Web MP4.
+De même, vous pouvez télécharger votre vidéo source originale vers Dynamic Media Classic et, au moment du téléchargement, Dynamic Media Classic peut automatiquement la redimensionner et la convertir au format MP4 compatible avec le Web.
 
 ### Règles d’utilisation pour déterminer la taille optimale des images téléchargées
 
@@ -89,11 +89,11 @@ De même, vous pouvez télécharger votre vidéo source originale dans Dynamic M
 - Si vous devez effectuer un zoom, téléchargez une image haute résolution de 1 500 à 2 500 pixels dans la dimension la plus longue. Tenez compte de la quantité de détails que vous souhaitez fournir, de la qualité de vos images source et de la taille du produit affiché. Par exemple, téléchargez une image de 1 000 pixels pour un tout petit anneau, mais une image de 3 000 pixels pour un centre de chambres entier.
 - Si vous n’avez pas besoin de zoomer, téléchargez-le à la taille exacte qui s’affichera. Par exemple, si vous avez des logos ou des images de démarrage/bannière à placer sur vos pages, téléchargez-les exactement à leur taille 1:1 et appelez-les exactement à cette taille.
 
-**Ne jamais suréchantillonner ou faire sauter vos images avant de les télécharger vers Dynamic Media Classic.** Par exemple, ne pas suréchantillonner une image plus petite pour en faire une image de 2 000 pixels. Ça n&#39;aura pas l&#39;air bien. Rendre vos images aussi proches que possible de la perfection avant de les télécharger.
+**Ne jamais suréchantillonner, ou faire sauter, vos images avant de les télécharger vers Dynamic Media Classic.** Par exemple, ne pas suréchantillonner une image plus petite pour en faire une image de 2 000 pixels. Ça n&#39;aura pas l&#39;air bien. Rendre vos images aussi proches que possible de la perfection avant de les télécharger.
 
 **Il n’existe pas de taille minimale pour le zoom, mais par défaut, les visionneuses n’effectuent pas un zoom supérieur à 100 %.** Si votre image est trop petite, elle n’effectue pas de zoom du tout ou n’effectue qu’un zoom minime pour éviter qu’elle ne s’affiche mal.
 
-**Bien qu’il n’y ait pas de minimum pour la taille de l’image, il est déconseillé de télécharger des images géantes.** Une image géante peut être considérée comme plus de 4 000 pixels. Le téléchargement d’images de cette taille peut présenter des défauts potentiels tels que des grains de poussière ou des poils dans l’image. De telles images occuperont également plus d’espace sur le serveur Dynamic Media Classic, ce qui peut vous faire dépasser les limites d’enregistrement que vous avez définies.
+**Bien qu’il n’y ait pas de minimum pour la taille de l’image, il est déconseillé de télécharger des images géantes.** Une image géante peut être considérée comme plus de 4 000 pixels. Le téléchargement d’images de cette taille peut présenter des défauts potentiels tels que des grains de poussière ou des poils dans l’image. De telles images occuperont également plus d’espace sur le serveur Dynamic Media Classic, ce qui peut vous faire dépasser les limites d’enregistrement contractuelles.
 
 En savoir plus sur [Téléchargement de fichiers](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
@@ -105,7 +105,7 @@ Après avoir créé et téléchargé votre contenu, vous créerez de nouveaux fi
 >
 >Assurez-vous que tous vos fichiers sont marqués pour publication. Bien que, par défaut, tous les fichiers soient automatiquement marqués pour publication au moment du téléchargement, tous les fichiers nouvellement créés à partir de votre contenu téléchargé devront également être marqués pour publication.
 
-Après avoir créé votre nouvelle ressource, vous exécuterez une tâche de publication. Vous pouvez le faire manuellement ou planifier une tâche de publication qui s’exécute automatiquement. La publication copie tout le contenu de la sphère privée, Dynamic Media Classic, vers la sphère publique du serveur de publication de l’équation. Le produit d’une tâche de publication de contenu multimédia dynamique est une URL unique pour chaque fichier publié.
+Après avoir créé votre nouvelle ressource, vous exécuterez une tâche de publication. Vous pouvez le faire manuellement ou planifier une tâche de publication qui s’exécute automatiquement. La publication copie tout le contenu de la sphère privée Dynamic Media Classic vers la sphère publique du serveur de publication de l’équation. Le produit d’une tâche de publication Dynamic Media est une URL unique pour chaque fichier publié.
 
 Le serveur sur lequel vous publiez dépend du type de contenu et du processus. Par exemple, toutes les images sont envoyées au serveur Image Server et la vidéo en flux continu au serveur FMS. Pour plus de commodité, nous parlerons d&#39;une &quot;publication&quot; comme un événement unique à un seul serveur.
 
@@ -115,9 +115,9 @@ La publication publie tout le contenu marqué pour publication, et pas seulement
 >
 >Automatisez vos tâches de publication et planifiez l’exécution d’une publication complète tous les jours à 00h00 ou en fin de soirée.
 
-### Concept : Présentation de l’URL de Dynamic Media Classic
+### Concept : Présentation de l’URL Dynamic Media Classic
 
-Le produit final d’un flux de travaux Contenu multimédia dynamique classique est une URL qui pointe vers la ressource (visionneuse d’images ou visionneuse de vidéos adaptative). Ces URL sont très prévisibles et suivent le même modèle. Dans le cas des images, chaque image est générée à partir de l’image originale P-TIFF.
+Le produit final d’un processus Dynamic Media Classic est une URL qui pointe vers la ressource (visionneuse d’images ou visionneuse de vidéos adaptative). Ces URL sont très prévisibles et suivent le même modèle. Dans le cas des images, chaque image est générée à partir de l’image originale P-TIFF.
 
 Voici la syntaxe de l’URL d’une image, avec quelques exemples :
 
@@ -129,7 +129,7 @@ Dans le premier exemple, le chemin d’accès virtuel à l’image &quot;Backpac
 
 Le deuxième exemple applique ce que l’on appelle un &quot;paramètre d’image prédéfini&quot; à la même image Backpack_A, comme indiqué par $!_template300$. Les symboles $ de chaque côté de l’expression indiquent qu’un paramètre d’image prédéfini, un ensemble compressé de modificateurs d’image, est appliqué à l’image.
 
-Une fois que vous avez compris comment assembler les URL de Dynamic Media Classic, vous comprenez comment les modifier par programmation et comment les intégrer plus profondément dans votre site et votre système principal.
+Une fois que vous avez compris comment les URL Dynamic Media Classic sont regroupées, vous comprenez comment les modifier par programmation et comment les intégrer plus profondément dans votre site et votre système principal.
 
 ### Concept : Comprendre le délai de mise en cache
 
@@ -148,19 +148,19 @@ Découvrez comment [effacer manuellement le cache des URL qui doivent être mise
 
 ## Étape 3 : Livraison
 
-N’oubliez pas que le produit final d’un flux de travaux Contenu multimédia dynamique est une URL pointant vers la ressource. L’URL peut pointer vers une image individuelle, une visionneuse d’images, une visionneuse à 360° ou une autre collection ou vidéo de visionneuse d’images. Vous devez prendre cette URL et en faire quelque chose, par exemple modifier votre code HTML afin que les balises `<IMG>` pointent vers l’image Dynamic Media Classic au lieu de pointer vers une image provenant de votre site actuel.
+N’oubliez pas que le produit final d’un processus Dynamic Media Classic est une URL pointant vers la ressource. L’URL peut pointer vers une image individuelle, une visionneuse d’images, une visionneuse à 360° ou une autre collection ou vidéo de visionneuse d’images. Vous devez prendre cette URL et en faire quelque chose, par exemple modifier votre code HTML afin que les balises `<IMG>` pointent vers l’image Dynamic Media Classic au lieu de pointer vers une image provenant de votre site actuel.
 
 À l’étape Livraison, vous devez intégrer ces URL dans votre site Web, application mobile, campagne par courriel ou tout autre point de contact numérique sur lequel vous souhaitez afficher la ressource.
 
-Exemple d’intégration de l’URL Dynamic Media Classic d’une image dans un site Web :
+Exemple d’intégration de l’URL Dynamic Media Classic pour une image dans un site Web :
 
 ![image](assets/main-workflow/example-url-1.png)
 
 L’URL en rouge est le seul élément spécifique à Dynamic Media Classic.
 
-Votre équipe informatique ou votre partenaire d’intégration peut prendre la tête de la rédaction et de la modification du code pour intégrer des URL Dynamic Media Classic à votre site. Adobe dispose d&#39;une équipe de consultants qui peut aider à cet effort, soit en fournissant des conseils techniques, créatifs ou généraux.
+Votre équipe informatique ou partenaire d’intégration peut prendre l’initiative de rédiger et de modifier du code pour intégrer des URL Dynamic Media Classic à votre site. Adobe dispose d&#39;une équipe de consultants qui peut aider à cet effort, soit en fournissant des conseils techniques, créatifs ou généraux.
 
-Pour les solutions plus complexes telles que les visionneuses de zoom ou les visionneuses qui combinent le zoom à d’autres vues, en règle générale, l’URL pointe vers une visionneuse hébergée par Contenu multimédia dynamique classique, et cette URL contient également une référence à un ID de fichier.
+Pour les solutions plus complexes telles que les visionneuses de zoom ou les visionneuses qui combinent le zoom à d’autres vues, en règle générale, l’URL pointe vers une visionneuse hébergée par Dynamic Media Classic, et cette URL contient également une référence à un ID de fichier.
 
 Exemple d’un lien (en rouge) qui ouvrira une visionneuse d’images dans une visionneuse dans une nouvelle fenêtre contextuelle :
 
@@ -168,7 +168,7 @@ Exemple d’un lien (en rouge) qui ouvrira une visionneuse d’images dans une v
 
 >[!IMPORTANT]
 >
->Vous devez intégrer les URL de Dynamic Media Classic à votre site Web, application mobile, courriel et autres points de contact numériques — Dynamic Media Classic ne peut pas le faire pour vous !
+>Vous devez intégrer des URL Dynamic Media Classic à votre site Web, application mobile, courrier électronique et autres points de contact numériques — Dynamic Media Classic ne peut pas le faire pour vous !
 
 ## Aperçu des ressources
 
