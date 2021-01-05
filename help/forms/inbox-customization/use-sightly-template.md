@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,7 @@ Vous pouvez utiliser un modèle de rapport afin de formater les données à affi
 
 ## Modèle direct
 
-Voici le modèle de rapport. Le code du modèle affiche une icône en fonction du revenu. Les icônes sont disponibles dans le cadre de la [bibliothèque d’icônes d’interface utilisateur de corail](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) fournie avec AEM.
+Voici le modèle de rapport. Le code du modèle affiche une icône en fonction du revenu. Les icônes sont disponibles dans le cadre de la [bibliothèque d’icônes d’interface utilisateur de corail](https://helpx.adobe.com/fr/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) fournie avec AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
