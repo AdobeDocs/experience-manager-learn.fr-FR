@@ -391,6 +391,6 @@ Le `index.js` final est disponible sur Github à l&#39;adresse suivante :
 
 + [aem-guides-wknd-asset-compute/actions/worker/index.js](https://github.com/adobe/aem-guides-wknd-asset-compute/blob/master/actions/worker/index.js)
 
-## Dépannage
+## Résolution des incidents
 
 + [Le rendu est renvoyé partiellement dessiné/corrompu](../troubleshooting.md#rendition-returned-partially-drawn-or-corrupt)
