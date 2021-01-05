@@ -101,7 +101,7 @@ _Clic publicitaire du débogage d’un intervenant d’Asset compute à l’aide
 
    ![journaux de l’application aio](./assets/debug/aio-app-logs.png)
 
-## Dépannage
+## Résolution des incidents
 
 + [Le débogueur n’est pas joint](../troubleshooting.md#debugger-does-not-attach)
 + [Points d’arrêt non suspendus](../troubleshooting.md#breakpoints-no-pausing)
