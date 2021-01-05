@@ -101,7 +101,7 @@ Vous trouverez ci-dessous les étapes de haut niveau effectuées dans la vidéo 
 
 Lors de la création d’une page, vous devez sélectionner un modèle. C’est la base pour la création de la page. Le modèle définit la structure de la page résultante, le contenu initial et les composants autorisés.
 
-Il existe 3 zones principales de [Modèles modifiables](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html) :
+Il existe 3 zones principales de [Modèles modifiables](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/developing/platform/templates/page-templates-editable.html) :
 
 1. **Structure**  : définit les composants qui font partie du modèle. Ils ne seront pas modifiables par les auteurs de contenu.
 1. **Contenu**  initial : définit les composants que le modèle utilisera, qui peuvent être modifiés et/ou supprimés par les auteurs de contenu.
@@ -294,7 +294,7 @@ Les prochaines étapes se dérouleront à l&#39;aide de l&#39;IDE Eclipse, mais 
    >
    > Afin d&#39;assurer des déploiements cohérents pour le site de référence WKND, certaines branches du projet sont configurées de telle sorte que `ui.content` remplacera toute modification du JCR. Il s’agit de la conception, c’est-à-dire pour les branches de solution, puisque le code/les styles seront écrits pour des stratégies spécifiques.
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous venez de créer un nouveau modèle et une nouvelle page avec Adobe Experience Manager Sites.
 
