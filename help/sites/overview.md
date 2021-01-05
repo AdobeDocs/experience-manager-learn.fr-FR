@@ -1,8 +1,8 @@
 ---
-title: Tutoriels AEM Sites
-seo-title: Tutoriels AEM Sites
-description: 'Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Sites. '
-seo-description: Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Sites
+title: Tutoriels d’AEM Sites
+seo-title: Tutoriels d’AEM Sites
+description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Sites. '
+seo-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Sites
 sub-product: sites, content-services
 translation-type: tm+mt
 source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
@@ -89,6 +89,6 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
 * [Documentation de l’administration AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
 * [AEM Sites Deploying Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
 * [Tutoriels d’AEM as a Cloud Service](/help/cloud-service/overview.md)
-* [Tutoriels AEM Assets](/help/assets/overview.md)
-* [Tutoriels AEM Forms](/help/forms/overview.md)
+* [Tutoriels d’AEM Assets](/help/assets/overview.md)
+* [Tutoriels d’AEM Forms](/help/forms/overview.md)
 * [Tutoriels d’AEM Foundation](/help/foundation/overview.md)
