@@ -33,8 +33,8 @@ Ce chapitre offre la configuration rapide d&#39;un environnement local pour voir
 Les outils suivants doivent être installés localement :
 
 * [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent 2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=liste&amp;p.offset=0&amp;p.limit=14)
-* [Node.js v10+](https://nodejs.org/fr/)
-* [npm 6+](https://www.npmjs.com/)
+* [Node.js v10+](https://nodejs.org/en/)
+* [npm 6+](https://www.npmjs.com/)
 * [Git](https://git-scm.com/)
 
 ## Objectifs {#objectives}
@@ -51,7 +51,7 @@ Ce didacticiel utilise l&#39;AEM [en tant que SDK Cloud Service](https://experie
 >
 > Il est également possible de suivre le tutoriel avec un AEM en tant qu&#39;environnement Cloud Service. D’autres remarques sur l’utilisation d’un environnement Cloud sont incluses dans le didacticiel.
 
-1. Accédez au **[Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/fr-FR/aemcloud.html)** > **AEM en tant que Cloud Service** et téléchargez la dernière version du **AEM SDK**.
+1. Accédez au **[Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM en tant que Cloud Service** et téléchargez la dernière version du **AEM SDK**.
 
    ![Portail de distribution de logiciels](assets/setup/software-distribution-portal-download.png)
 
@@ -194,7 +194,7 @@ Maintenant que l’application React est en cours d’exécution, effectuez une 
 
    ![Mise à jour de Bali Surf Camp Adventure](assets/setup/overnight-bali-surf-camp-changes.png)
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous disposez désormais d’une application externe qui consomme AEM contenu avec GraphQL. N’hésitez pas à examiner le code dans l’application Réagir et à continuer à tester la modification des fragments de contenu existants.
 
