@@ -1,8 +1,8 @@
 ---
 title: Présentation de la visionneuse d’éléments avec AEM Dynamic Media
 seo-title: Présentation de la visionneuse d’éléments avec AEM Dynamic Media
-description: aem les améliorations apportées à la visionneuse de médias dynamiques permettent aux AEM auteurs de définir et de personnaliser les ressources d’expérience seront présentées aux utilisateurs du site Web.
-seo-description: aem les améliorations apportées à la visionneuse de médias dynamiques permettent aux AEM auteurs de définir et de personnaliser les ressources d’expérience seront présentées aux utilisateurs du site Web.
+description: aem les améliorations apportées au lecteur Dynamic Media permettent aux AEM auteurs de définir et de personnaliser les ressources d’expérience seront présentées aux utilisateurs du site Web.
+seo-description: aem les améliorations apportées au lecteur Dynamic Media permettent aux AEM auteurs de définir et de personnaliser les ressources d’expérience seront présentées aux utilisateurs du site Web.
 uuid: 5762c0a2-4371-4719-8400-849c7a11926d
 discoiquuid: a0be2cd0-4fdb-431f-a8c7-e4620b8b129b
 products: SG_EXPERIENCEMANAGER/6.3/ASSETS
@@ -24,7 +24,7 @@ ht-degree: 16%
 
 # Présentation de la visionneuse d’éléments avec AEM Dynamic Media{#understanding-the-asset-viewer-with-aem-dynamic-media}
 
-aem les améliorations apportées à la visionneuse de médias dynamiques permettent aux AEM auteurs de définir et de personnaliser les ressources d’expérience seront présentées aux utilisateurs du site Web.
+aem les améliorations apportées au lecteur Dynamic Media permettent aux AEM auteurs de définir et de personnaliser les ressources d’expérience seront présentées aux utilisateurs du site Web.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17783/?quality=9&learn=on)
 
