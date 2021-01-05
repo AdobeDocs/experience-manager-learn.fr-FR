@@ -31,7 +31,7 @@ Dans cette vidéo, les fonctionnalités ou fonctionnalités suivantes sont abord
 * Création d’une page à partir d’un modèle
 * Présente différents modes de création pour une page
    * Modifier
-   * Disposition
+   * Mise en page
    * Développeur
    * Distorsion du temps Timewarp 
 * Fonctionnalités de l’éditeur de page
