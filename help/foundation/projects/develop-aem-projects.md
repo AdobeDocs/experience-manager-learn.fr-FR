@@ -333,7 +333,7 @@ emplacementEmplacement du modèle de flux de travail dans 6.4+
 
    1. Modifier le contenu
    1. Approbation
-   1. Publier
+   1. Publication
 
    ![configuration des étapes du processus](./assets/develop-aem-projects/workflow-model-stage-properties.png)
 
