@@ -1,6 +1,6 @@
 ---
 title: Rapports utiles pour les administrateurs
-description: Découvrez deux rapports précieux que les administrateurs de Dynamic Media Classic doivent envisager de configurer.
+description: Découvrez deux rapports précieux que les administrateurs de Dynamic Media Classic devraient envisager de configurer.
 sub-product: dynamic-media, ressources
 feature: reports
 doc-type: tutorial
@@ -22,7 +22,7 @@ Dans ce dernier chapitre, nous voulons simplement que vous connaissiez deux rapp
 
 ## Rapport Bande passante et Enregistrement
 
-Le rapport Bande passante et Enregistrement détaille la quantité de bande passante consommée par mois par Image Server et l’enregistrement que vous utilisez avec Dynamic Media Classic. L&#39;Enregistrement est un montant contracté, il est donc important de vérifier et de s&#39;assurer que vous restez sous votre limite pour éviter les frais supplémentaires.
+Le rapport Bande passante et Enregistrement détaille la quantité de bande passante du serveur Image Server consommée par mois et l’enregistrement utilisé sur Dynamic Media Classic. L&#39;Enregistrement est un montant contracté, il est donc important de vérifier et de s&#39;assurer que vous restez sous votre limite pour éviter les frais supplémentaires.
 
 ![image](assets/valuable-reports/reports-1.jpg)
 
@@ -43,8 +43,8 @@ Nous espérons que vous avez trouvé le contenu de ce guide des meilleures prati
 Pour en savoir plus sur Dynamic Media Classic, consultez les ressources suivantes :
 
 - [Dynamic Media Classic sur Experience League - Atteindre la valeur](https://guided.adobe.com/?launch=AEM-5a#recommended/solutions/experience-manager)
-- [Dynamic Media Classic sur Experience League - En savoir plus](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
-- [Archives du bulletin Contenu multimédia dynamique](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
-- [Page Abonnement du bulletin Contenu multimédia dynamique](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
-- [Documentation de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
+- [Dynamic Media Classic sur Experience League - En faire plus](https://guided.adobe.com/?launch=AEM-6a#recommended/solutions/experience-manager)
+- [Archives du bulletin d&#39;information Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/dynamic-media-newsletter.html)
+- [Page Abonnement du bulletin d&#39;informations Dynamic Media](https://www.adobe.com/subscription/dynamic-media-newsletter.html)
+- [Documentation Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/home.html)
 - [Publications de blogs multimédias enrichis](https://theblog.adobe.com/tag/dynamic-media)
