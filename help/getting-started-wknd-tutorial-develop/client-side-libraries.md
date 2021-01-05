@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 1e615d1c51fa0c4c0db335607c29a8c284874c8d
 workflow-type: tm+mt
 source-wordcount: '3003'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -372,7 +372,7 @@ Nous allons maintenant ajouter quelques styles de base pour la marque WKND en aj
 
    ![CSS du site distribué](assets/client-side-libraries/ui-frontend-dist-site-css.png)
 
-1. Inspect le fichier `ui.frontend/clientlib.config.js`. Il s’agit du fichier de configuration d’un module externe npm, [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). **aem-clientlib-** generatorest l&#39;outil responsable de la transformation du code CSS/JavaScript compilé et de sa copie dans le  **fichier ui.** appsmodule.
+1. Inspectez le fichier `ui.frontend/clientlib.config.js`. Il s’agit du fichier de configuration d’un module externe npm, [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). **aem-clientlib-** generatorest l&#39;outil responsable de la transformation du code CSS/JavaScript compilé et de sa copie dans le  **fichier ui.** appsmodule.
 
 1. Inspect le fichier `site.css` dans le module **ui.apps** à `ui.apps/src/main/content/jcr_root/apps/wknd/clientlibs/clientlib-site/css/site.css`. Il doit s&#39;agir d&#39;une copie identique du fichier `site.css` du module **ui.frontend**. Maintenant qu&#39;il se trouve dans le module **ui.apps**, il peut être déployé sur AEM.
 
@@ -410,7 +410,7 @@ Nous allons maintenant examiner comment le projet est configuré pour inclure le
    */-->
    ```
 
-1. Inspect le fichier `customfooterlibs.html`. Ce fichier, tel que `customheaderlibs.html`, doit être remplacé par l’implémentation de projets. Ici, la ligne `${clientlib.js @ categories='wknd.base'}` signifie que le code JavaScript de **clientlib-base** sera inclus au bas de toutes nos pages.
+1. Inspectez le fichier `customfooterlibs.html`. Ce fichier, tel que `customheaderlibs.html`, doit être remplacé par l’implémentation de projets. Ici, la ligne `${clientlib.js @ categories='wknd.base'}` signifie que le code JavaScript de **clientlib-base** sera inclus au bas de toutes nos pages.
 
 1. Créez et déployez le projet sur une instance AEM locale à l’aide de Maven :
 
@@ -521,7 +521,7 @@ Ce didacticiel porte principalement sur les bibliothèques côté client et les 
 * [Chemin de navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/breadcrumb.html)
 * [Télécharger](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/download.html)
 * [Image](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/image.html)
-* [Liste](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/list.html)
+* [Liste](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/list.html)
 * [Navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/navigation.html)
 * [Recherche rapide](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/quick-search.html)
 * [Séparateur](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/separator.html)
@@ -556,7 +556,7 @@ Vous trouverez ci-dessous les étapes de haut niveau affichées dans la vidéo :
     $ mvn -PautoInstallSinglePackage clean install
    ```
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, la page d&#39;article a maintenant quelques styles cohérents qui correspondent à la marque WKND et vous êtes devenu familier avec le module **ui.frontend** !
 
