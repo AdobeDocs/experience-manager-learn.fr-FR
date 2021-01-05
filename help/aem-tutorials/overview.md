@@ -1,6 +1,6 @@
 ---
 title: Tutoriels AEM
-description: 'Ensemble de vidéos et de tutoriels pour Adobe Experience Manager. '
+description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager. '
 translation-type: tm+mt
 source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
@@ -14,7 +14,7 @@ ht-degree: 28%
 
 Adobe Experience Manager (AEM) est la principale plateforme de gestion d’expérience. Ce guide d&#39;utilisation contient des vidéos et des didacticiels qui vous aident à optimiser la valeur de vos AEM.
 
-## Vidéos et tutoriels AEM 
+## Vidéos et tutoriels d’AEM 
 
 + [AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 + [AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
@@ -30,4 +30,4 @@ Adobe Experience Manager (AEM) est la principale plateforme de gestion d’expé
 + [Prise en main de AEM SPA Editor et Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
 + [Prise en main d’AEM et d’Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
 + [Didacticiel sur le cache du répartiteur AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html)
-+ [Didacticiel sur AEM 6.x Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html)
++ [Didacticiel Dynamic Media Classic sur AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html)
