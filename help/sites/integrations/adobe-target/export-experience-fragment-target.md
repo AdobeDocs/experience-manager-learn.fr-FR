@@ -28,7 +28,7 @@ Découvrez comment exporter AEM fragment d’expérience en tant qu’Offres Ado
 
 + [Création d’une Activité de Cible à l’aide d’Offres de fragments d’expérience](./create-target-activity.md)
 
-## Dépannage
+## Résolution des incidents
 
 ### Echec de l’exportation de fragments d’expérience vers la Cible
 
