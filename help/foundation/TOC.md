@@ -1,7 +1,7 @@
 ---
 user-guide-title: Vidéos et tutoriels d’AEM Foundation
 breadcrumb-title: Tutoriels d’AEM Foundation
-user-guide-description: 'Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Foundation. '
+user-guide-description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation. '
 sub-product: fondation
 index: y
 translation-type: tm+mt
