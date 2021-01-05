@@ -28,7 +28,7 @@ Découvrez comment plusieurs vues de la SPA peuvent être prises en charge en ma
 1. Apprenez à utiliser [Réagir au routeur](https://reacttraining.com/react-router/) pour naviguer entre les différentes vues du SPA.
 1. Implémentez une navigation dynamique pilotée par la hiérarchie des pages AEM.
 
-## Ce que vous allez construire
+## Ce que vous allez créer
 
 Ce chapitre ajoute un menu de navigation à un composant `Header` existant. Le menu de navigation sera piloté par la hiérarchie des pages AEM et utilisera le modèle JSON fourni par le [composant principal de navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/navigation.html).
 
@@ -68,7 +68,7 @@ Vous pouvez toujours vue le code terminé sur [GitHub](https://github.com/adobe/
 
 ## Mises à jour de l’en-tête Inspect {#inspect-header}
 
-Dans les chapitres précédents, le composant `Header` a été ajouté en tant que composant React pur inclus via `App.js`. Dans ce chapitre, le composant `Header` a été supprimé et sera ajouté via l&#39;[éditeur de modèles](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). Cela permet aux utilisateurs de configurer le menu de navigation de `Header` depuis l&#39;AEM.
+Dans les chapitres précédents, le composant `Header` a été ajouté en tant que composant React pur inclus via `App.js`. Dans ce chapitre, le composant `Header` a été supprimé et sera ajouté via l&#39;[éditeur de modèles](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). Cela permet aux utilisateurs de configurer le menu de navigation de `Header` depuis l&#39;AEM.
 
 >[!NOTE]
 >
@@ -354,7 +354,7 @@ Ensuite, implémentez le menu de navigation dans le cadre de `Header`. Nous pour
    ```
 
    Comme nous l&#39;avons mentionné plus haut, au lieu d&#39;implémenter la navigation dans `Header`, nous implémenterons la majorité de la logique dans le composant `Navigation`.  Les props de `Header` incluent la structure JSON nécessaire pour construire le menu, nous transmettons toutes les props.
-1. Ouvrez le fichier `Navigation.js` à `ui.frontend/src/components/Navigation/Navigation.js`.
+1. Ouvrez le fichier `Navigation.js` dans `ui.frontend/src/components/Navigation/Navigation.js`.
 1. Implémentez la méthode `renderGroupNav(children)` :
 
    ```js
@@ -485,7 +485,7 @@ Maintenant que la navigation a été mise en oeuvre, inspectez le routage en AEM
 
 1. Testez les liens profonds en naviguant directement vers : [http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html](http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html). Observez que le bouton Retour du navigateur continue de fonctionner.
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous avez appris comment plusieurs vues du SPA peuvent être prises en charge en mappant sur AEM pages avec le SDK de l’éditeur de SPA. La navigation dynamique a été mise en oeuvre à l&#39;aide du Routeur de réaction et ajoutée au composant `Header`.
 
