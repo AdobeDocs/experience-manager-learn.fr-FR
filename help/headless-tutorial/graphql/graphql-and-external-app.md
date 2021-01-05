@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
 workflow-type: tm+mt
 source-wordcount: '1418'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -346,7 +346,7 @@ GraphQL est fortement tapé et peut donc renvoyer des messages d&#39;erreur util
 
 1. Revenez à `Adventures.js` et annulez la modification de la requête pour rétablir l’état correct de l’application.
 
-## Félicitations !{#congratulations}
+## Félicitations!{#congratulations}
 
 Félicitations ! Vous avez exploré avec succès le code de l&#39;exemple d&#39;application WKND GraphQL React et l&#39;avez mis à jour pour utiliser des requêtes GraphQL paramétrées et filtrant les  GraphQL aux aventures de liste par activité ! Vous avez également la possibilité d’explorer certaines fonctions de gestion des erreurs de base.
 
