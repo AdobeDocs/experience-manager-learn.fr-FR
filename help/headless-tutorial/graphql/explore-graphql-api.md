@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
 workflow-type: tm+mt
 source-wordcount: '1030'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -283,7 +283,7 @@ Il est également possible de combiner des requêtes distinctes en une seule req
 
 Pour d&#39;autres exemples de requêtes GraphQL, voir : [Apprendre à utiliser GraphQL avec AEM - Exemple de contenu et de Requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html).
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous venez de créer et d&#39;exécuter plusieurs requêtes GraphQL !
 
