@@ -1,7 +1,7 @@
 ---
 user-guide-title: Prise en main d’AEM sans affichage
 user-guide-description: Tutoriel complet illustrant comment créer et exposer du contenu à l’aide d’AEM sans affichage.
-breadcrumb-title: Tutoriel AEM sans affichage
+breadcrumb-title: Tutoriel d’AEM sans affichage
 version: cloud-service
 sub-product: content-services
 doc-type: tutorial
