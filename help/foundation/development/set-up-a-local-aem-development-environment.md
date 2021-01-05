@@ -1,5 +1,5 @@
 ---
-title: Configuration d’un Environnement de développement AEM local
+title: Configuration d’un environnement de développement AEM local
 description: Guide de configuration d'un développement local pour Adobe Experience Manager, AEM. Couvre les principaux sujets de l'installation locale, Apache Maven, les environnements de développement intégré et le débogage/dépannage. Le développement avec Eclipse IDE, CRXDE-Lite, Visual Studio Code et IntelliJ sont discutés.
 version: 6.4, 6.5
 feature: maven-archetype
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: c85a59a8bd180d5affe2a5bf5939dabfb2776d73
 workflow-type: tm+mt
 source-wordcount: '2590'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
-# Configuration d’un Environnement de développement AEM local
+# Configuration d’un environnement de développement AEM local
 
 Guide de configuration d&#39;un développement local pour Adobe Experience Manager, AEM. Couvre les principaux sujets de l&#39;installation locale, Apache Maven, les environnements de développement intégré et le débogage/dépannage. On discute du développement avec **[!DNL Eclipse IDE], [!DNL CRXDE Lite], [!DNL Visual Studio Code] et[!DNL IntelliJ]**.
 
@@ -26,7 +26,7 @@ La mise en place d&#39;un environnement de développement local est la première
 * Instances d’AEM locales
 * [!DNL Apache Maven] project
 * Environnements de développement intégré (IDE)
-* Dépannage
+* Résolution des incidents
 
 ## Installation des instances d’AEM locales
 
@@ -253,7 +253,7 @@ Vous trouverez ci-dessous quelques-uns des IDE les plus utilisés avec le dével
 
 >[!VIDEO](https://video.tv.adobe.com/v/25917?quality=12&learn=on)
 
-## Dépannage
+## Résolution des incidents
 
 ***Aide!*** Mon code ne fonctionne pas ! Comme pour tout développement, il y aura des fois (probablement plusieurs) où votre code ne fonctionne tout simplement pas comme prévu. aem est une plateforme puissante, mais avec un grand pouvoir... vient une grande complexité. Vous trouverez ci-dessous quelques points de départ de haut niveau concernant la résolution des problèmes et le suivi des problèmes (mais loin d&#39;une liste exhaustive des problèmes qui peuvent se produire) :
 
