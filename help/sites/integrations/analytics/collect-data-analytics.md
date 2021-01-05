@@ -22,7 +22,7 @@ ht-degree: 5%
 
 Découvrez comment utiliser les fonctionnalités intégrées de la couche de données client [Adobe avec les composants principaux de l&#39;AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/data-layer/overview.html) pour collecter des données sur une page dans Adobe Experience Manager Sites. [Experience Platform Launch et l’extension Adobe Analytics seront utilisés pour créer des règles permettant d’envoyer des données de page à Adobe Analytics.](https://www.adobe.com/experience-platform/launch.html)[](https://docs.adobe.com/content/help/fr-FR/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
 
-## Ce que vous allez construire
+## Ce que vous allez créer
 
 ![Suivi des données de page](assets/collect-data-analytics/analytics-page-data-tracking.png)
 
@@ -49,7 +49,7 @@ Les éléments suivants sont requis :
 
 ## Changer les Environnements de lancement pour le site WKND
 
-[https://wknd.](https://wknd.site) site est un site accessible au public créé à partir  [d’un ](https://github.com/adobe/aem-guides-wknd) projet open source conçu comme référence et  [](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) didacticiel pour les implémentations AEM.
+[https://wknd.](https://wknd.site) site est un site accessible au public créé à partir  [d’un ](https://github.com/adobe/aem-guides-wknd) projet open source conçu comme référence et  [](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) didacticiel pour les implémentations AEM.
 
 Au lieu de configurer un environnement AEM et d’installer la base de code WKND, vous pouvez utiliser le débogueur Experience Platform pour **basculer** la [https://wknd.site/](https://wknd.site/) en *votre* propriété Launch. Bien sûr, vous pouvez utiliser votre propre site AEM s&#39;il a déjà activé la [couche de données du client d&#39;Adobe ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)
 
