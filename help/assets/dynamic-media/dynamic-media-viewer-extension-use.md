@@ -1,6 +1,6 @@
 ---
-title: Utilisation de visionneuses de médias dynamiques avec Adobe Analytics et lancement d’Adobe
-seo-title: Utilisation de visionneuses de médias dynamiques avec Adobe Analytics et lancement d’Adobe
+title: Utilisation des visionneuses Dynamic Media avec Adobe Analytics et lancement d’Adobe
+seo-title: Utilisation des visionneuses Dynamic Media avec Adobe Analytics et lancement d’Adobe
 description: L’extension Visionneuses Dynamic Media pour Adobe Launch, ainsi que la version 5.13 des Visionneuses Dynamic Media, permettent aux clients de Dynamic Media, Adobe Analytics et Adobe Launch d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration Adobe Launch.
 seo-description: 'L’extension Visionneuses Dynamic Media pour Adobe Launch, ainsi que la version 5.13 des Visionneuses Dynamic Media, permettent aux clients de Dynamic Media, Adobe Analytics et Adobe Launch d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration Adobe Launch. '
 sub-product: dynamic-media, analytics
@@ -19,21 +19,21 @@ ht-degree: 32%
 ---
 
 
-# Utilisation de visionneuses de médias dynamiques avec Adobe Analytics et lancement d’Adobe{#using-dynamic-media-viewers-adobe-analytics-launch}
+# Utilisation des visionneuses Dynamic Media avec Adobe Analytics et lancement d’Adobe{#using-dynamic-media-viewers-adobe-analytics-launch}
 
-Pour les clients disposant de Contenu multimédia dynamique et d’Adobe Analytics, vous pouvez désormais suivre l’utilisation des Visionneuses de Contenu multimédia dynamique sur votre site Web à l’aide de l’extension Dynamic Media Viewer.
+Pour les clients disposant de Dynamic Media et Adobe Analytics, vous pouvez désormais suivre l’utilisation des visionneuses Dynamic Media sur votre site Web à l’aide de l’extension Dynamic Media Viewer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29308/?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Exécutez Adobe Experience Manager en mode Scene7 Contenu multimédia dynamique pour cette fonctionnalité. Vous devez également [intégrer Adobe Experience Platform Launch à votre instance AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html).
+> Exécutez Adobe Experience Manager en mode Scene7 pour cette fonctionnalité. Vous devez également [intégrer Adobe Experience Platform Launch à votre instance AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html).
 
-Avec l’introduction de l’extension Visionneuse de médias dynamiques, Adobe Experience Manager offre désormais la prise en charge des analyses avancées pour les ressources fournies avec les visionneuses de médias dynamiques (5.13), ce qui permet un contrôle plus précis sur le suivi des événements lorsqu’une visionneuse de médias dynamiques est utilisée sur une page de sites.
+Avec l’introduction de l’extension Dynamic Media Viewer, Adobe Experience Manager offre désormais la prise en charge avancée des analyses pour les ressources fournies avec les visionneuses Dynamic Media (5.13), ce qui permet un contrôle plus précis sur le suivi des événements lorsqu’une visionneuse Dynamic Media est utilisée sur une page de sites.
 
 Si vous disposez déjà d’AEM Assets et de Sites, vous pouvez intégrer votre propriété Launch à votre instance d’auteur AEM. Une fois que l’intégration de votre lancement est associée à votre site Web, vous pouvez ajouter un composant multimédia dynamique à votre page avec le suivi de événement activé pour les visionneuses.
 
-Pour les clients AEM Assets uniquement ou les clients Dynamic Media Classic, l’utilisateur peut obtenir le code incorporé d’une visionneuse et l’ajouter à la page. Les bibliothèques de script de lancement peuvent ensuite être ajoutées manuellement à la page pour le suivi des événements de la visionneuse.
+Pour les clients AEM Assets uniquement ou Dynamic Media Classic, l’utilisateur peut obtenir le code incorporé d’une visionneuse et l’ajouter à la page. Les bibliothèques de script de lancement peuvent ensuite être ajoutées manuellement à la page pour le suivi des événements de la visionneuse.
 
 Le tableau suivant répertorie les événements de visionneuse Dynamic Media et leurs arguments pris en charge :
 
@@ -169,5 +169,5 @@ Le tableau suivant répertorie les événements de visionneuse Dynamic Media et
 ## Ressources supplémentaires{#additional-resources}
 
 * [Intégration de Adobe Experience Manager avec le lancement d&#39;Adobe](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-launch-integration-tutorial-understand.html)
-* [Exécution de Adobe Experience Manager en mode Scene7 de média dynamique](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+* [Exécution de Adobe Experience Manager en mode Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
 * [Intégration de visionneuses de médias dynamiques à Adobe Analytics et Adobe Launch](https://helpx.adobe.com/experience-manager/6-5/assets/using/launch.html)
