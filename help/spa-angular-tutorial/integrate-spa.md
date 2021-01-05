@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: ab5b92dd9c901075347cc521bf0abe0dfc0e5319
 workflow-type: tm+mt
 source-wordcount: '2202'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -29,7 +29,7 @@ Comprenez comment le code source d’une application d’une seule page (SPA) é
 2. Découvrez comment utiliser un serveur de développement local pour le développement frontal dédié.
 3. Explorez l’utilisation d’un fichier **proxy** et d’un fichier statique **mock** pour le développement par rapport à l’API de modèle JSON AEM.
 
-## Ce que vous allez construire
+## Ce que vous allez créer
 
 Ce chapitre ajoute un simple composant `Header` au SPA. Dans le processus d&#39;élaboration de ce composant statique `Header`, on utilisera plusieurs approches pour AEM développement SPA.
 
@@ -81,7 +81,7 @@ Vous trouverez des informations supplémentaires sur la version frontale [ici](h
 
 Ensuite, examinez le module `ui.frontend` pour comprendre le SPA qui a été généré automatiquement par l&#39;archétype du projet [AEM ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
-1. Dans l&#39;IDE de votre choix, ouvrez le projet AEM pour le SPA WKND. Ce didacticiel utilisera l&#39;[Visual Studio Code IDE](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+1. Dans l&#39;IDE de votre choix, ouvrez le projet AEM pour le SPA WKND. Ce didacticiel utilisera l&#39;[Visual Studio Code IDE](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
    ![VSCode - AEM projet SPA WKND](./assets/integrate-spa/vscode-ide-openproject.png)
 
@@ -132,9 +132,9 @@ Ensuite, examinez le module `ui.frontend` pour comprendre le SPA qui a été gé
 
    Vous trouverez plus de détails sur les scripts disponibles [ici](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html).
 
-6. Inspect le fichier `ui.frontend/clientlib.config.js`. Ce fichier de configuration est utilisé par [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) pour déterminer comment générer la bibliothèque cliente.
+6. Inspectez le fichier `ui.frontend/clientlib.config.js`. Ce fichier de configuration est utilisé par [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) pour déterminer comment générer la bibliothèque cliente.
 
-7. Inspect le fichier `ui.frontend/pom.xml`. Ce fichier transforme le dossier `ui.frontend` en un [module expert](http://maven.apache.org/guides/mini/guide-multiple-modules.html). Le fichier `pom.xml` a été mis à jour afin d’utiliser le [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) en **test** et **build** le SPA pendant une génération Maven.
+7. Inspectez le fichier `ui.frontend/pom.xml`. Ce fichier transforme le dossier `ui.frontend` en un [module expert](http://maven.apache.org/guides/mini/guide-multiple-modules.html). Le fichier `pom.xml` a été mis à jour afin d’utiliser le [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) en **test** et **build** le SPA pendant une génération Maven.
 
 8. Inspect le fichier `app.component.ts` à `ui.frontend/src/app/app.component.ts` :
 
@@ -169,7 +169,7 @@ Ensuite, examinez le module `ui.frontend` pour comprendre le SPA qui a été gé
 
 Ensuite, ajoutez un nouveau composant au SPA et déployez les modifications sur une instance AEM locale pour voir l’intégration.
 
-1. Ouvrez une nouvelle fenêtre de terminal et accédez au dossier `ui.frontend` :
+1. Ouvrez une nouvelle fenêtre de terminal et accédez au dossier `ui.frontend` :
 
    ```shell
    $ cd aem-guides-wknd-spa/ui.frontend
@@ -295,7 +295,7 @@ Un [serveur de développement webpack](https://webpack.js.org/configuration/dev-
    <base href="/">
    ```
 
-3. Ouvrez une fenêtre de terminal et accédez au dossier `ui.frontend`. Exécutez la commande `npm start`:
+3. Ouvrez une fenêtre de terminal et accédez au dossier `ui.frontend`. Exécutez la commande `npm start` :
 
    ```shell
    $ cd ui.frontend
@@ -647,7 +647,7 @@ Actuellement, les modifications apportées à l&#39;**en-tête** ne sont visible
 
    Maintenant que la SPA mise à jour est en AEM, la création peut continuer.
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous avez mis à jour le SPA et exploré l&#39;intégration avec AEM ! Vous connaissez maintenant deux approches différentes pour développer le SPA par rapport à l’API de modèle JSON AEM à l’aide d’un **serveur de développement webpack**.
 
