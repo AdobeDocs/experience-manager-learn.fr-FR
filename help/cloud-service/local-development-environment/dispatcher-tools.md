@@ -198,7 +198,7 @@ La version des outils du répartiteur recommandée est celle qui est fournie ave
 
 _Notez que la version des outils du répartiteur elle-même ne correspond pas à la version du Experience Manager._
 
-## Dépannage
+## Résolution des incidents
 
 ### docker_run se traduit par un message &quot;En attente jusqu&#39;à ce que host.docker.internal soit disponible&quot;{#troubleshooting-host-docker-internal}
 
