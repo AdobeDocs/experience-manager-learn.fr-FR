@@ -120,7 +120,7 @@ Outil de développement de l&#39;Asset compute début pour le projet d&#39;Asset
 1. Recherchez les messages d’erreur dans la sortie de ligne de commande et dans le navigateur Web au fur et à mesure que l’outil de développement s’initialise.
 1. Pour arrêter l&#39;outil de développement d&#39;Asset compute, appuyez sur `Ctrl-C` dans la fenêtre qui a exécuté `aio app run` pour arrêter le processus.
 
-## Dépannage
+## Résolution des incidents
 
 + [Retrait YAML incorrect](../troubleshooting.md#incorrect-yaml-indentation)
 + [MemorySize limit est trop faible](../troubleshooting.md#memorysize-limit-is-set-too-low)
