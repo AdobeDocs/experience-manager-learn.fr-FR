@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Découvrez comment mapper les données capturées d’un site Adobe Experience Manager aux mesures et aux dimensions dans les suites de rapports Adobe Analytics. Découvrez comment créer un tableau de bord de rapports détaillé à l&#39;aide de la fonction Analysis Workspace de Adobe Analytics.
 
-## Ce que vous allez construire
+## Ce que vous allez créer
 
 L&#39;équipe marketing de WKND souhaite déterminer les boutons d&#39;appel à l&#39;action (CTA) les plus performants sur la page d&#39;accueil. Dans ce didacticiel, nous allons créer un nouveau projet en Analysis Workspace pour visualiser les performances des différents boutons CTA et comprendre le comportement des utilisateurs sur le site. Les informations suivantes sont capturées à l’aide d’Adobe Analytics lorsqu’un utilisateur clique sur un bouton d’appel à l’action (CTA) sur la page d&#39;accueil WKND.
 
