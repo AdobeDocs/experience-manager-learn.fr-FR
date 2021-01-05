@@ -33,4 +33,4 @@ Les miniatures vidéo personnalisées AEM Assets permettent aux auteurs de séle
 
 >[!NOTE]
 >
->Vous devez exécuter votre instance [AEM en mode Contenu multimédia dynamique](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html).
+>Vous devez exécuter votre instance [AEM en mode Dynamic Media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html).
