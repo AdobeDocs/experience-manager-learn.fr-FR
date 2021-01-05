@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: fc456c868bdfe2fbb71387f36432a134fbff7dbb
 workflow-type: tm+mt
 source-wordcount: '256'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -34,4 +34,4 @@ Les styles affichés sont fournis par l&#39;application [WKND](https://github.co
 
 Vous voulez apprendre à développer avec le système de style ? Suivez les didacticiels suivants :
 
-* [Développer avec le système de style](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [Développement avec le système de style](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
