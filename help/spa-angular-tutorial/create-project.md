@@ -28,7 +28,7 @@ Découvrez comment utiliser un projet Adobe Experience Manager (AEM) Maven comme
 1. Comprendre la structure d&#39;un nouveau projet AEM SPA Editor créé à partir d&#39;un archétype Maven.
 2. Déployez le projet de démarrage sur une instance locale d’AEM.
 
-## Ce que vous allez construire
+## Ce que vous allez créer
 
 Dans ce chapitre, un nouveau projet AEM sera déployé, sur la base de l&#39;[AEM Project Archetype](https://github.com/adobe/aem-project-archetype). Le projet AEM sera amorcé avec un point de départ très simple pour la SPA angulaire. Le projet utilisé dans le présent chapitre servira de base à la mise en oeuvre de la SPA WKND et sera élaboré sur la base des prochains chapitres.
 
@@ -229,7 +229,7 @@ Ensuite, vérifiez qu’il s’agit d’une application d’une seule page utili
    >
    > Il peut s’avérer utile d’installer une extension de navigateur pour formater automatiquement la sortie JSON.
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous venez de créer votre premier projet AEM SPA Editor !
 
