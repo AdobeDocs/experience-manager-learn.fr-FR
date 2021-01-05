@@ -1,6 +1,6 @@
 ---
 title: Recadrage, images modifiées et Cibles de zoom
-description: L’image originale de Dynamic Media Classic prend en charge la création de versions rognées distinctes pour chaque image afin d’afficher des détails ou des échantillons sans avoir à créer des versions rognées distinctes pour chaque image. Découvrez comment recadrer des images dans Dynamic Media Classic et les enregistrer en tant que nouveau fichier original ou image virtuelle, enregistrer des images modifiées virtuelles et les utiliser à la place de fichiers originaux et créer des Cibles de zoom sur vos images pour afficher les détails mis en surbrillance.
+description: L’image originale de Dynamic Media Classic prend en charge la création de versions rognées distinctes pour chaque image afin d’afficher des détails ou des nuances sans avoir à créer des versions rognées distinctes pour chaque image. Découvrez comment recadrer des images dans Dynamic Media Classic et les enregistrer en tant que nouveau fichier original ou image virtuelle, enregistrer des images modifiées virtuelles et les utiliser à la place de fichiers originaux, et créer des Cibles de zoom sur vos images pour afficher les détails en surbrillance.
 sub-product: dynamic-media
 feature: smart-crop
 doc-type: tutorial
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Recadrage, images modifiées et Cibles de zoom {#crop-adjusted-zoom-targets}
 
-L’un des points forts du concept d’image originale de Dynamic Media Classic est que vous pouvez réutiliser le fichier d’image pour de nombreuses utilisations. Traditionnellement, vous devez créer des versions rognées et distinctes de chaque image pour afficher des détails ou des échantillons. Lors de l’utilisation de Dynamic Media Classic, vous pouvez effectuer les mêmes tâches sur votre maître unique et enregistrer ces versions recadrées en tant que nouveaux fichiers physiques ou en tant que dérivés virtuels qui ne prennent pas d’espace d’enregistrement.
+L’un des points forts du concept d’image originale de Dynamic Media Classic est que vous pouvez réutiliser le fichier d’image pour de nombreuses utilisations. Traditionnellement, vous devez créer des versions rognées et distinctes de chaque image pour afficher des détails ou des échantillons. Lors de l’utilisation de Dynamic Media Classic, vous pouvez effectuer les mêmes tâches sur votre maître unique et enregistrer ces versions recadrées sous forme de nouveaux fichiers physiques ou sous forme de dérivés virtuels qui ne prennent aucun espace d’enregistrement.
 
 À la fin de cette section du didacticiel, vous saurez comment :
 
@@ -28,12 +28,12 @@ L’un des points forts du concept d’image originale de Dynamic Media Classic 
 
 ## Recadrage
 
-Dynamic Media Classic propose quelques outils de retouche d’images qui sont facilement disponibles dans l’interface utilisateur, y compris l’outil Recadrer. Pour plusieurs raisons, vous pouvez recadrer votre image originale dans Dynamic Media Classic. Par exemple :
+Dynamic Media Classic propose quelques outils de retouche d’images, dont l’outil Recadrer, qui sont facilement disponibles dans l’interface utilisateur. Vous pouvez recadrer votre image originale dans Dynamic Media Classic pour plusieurs raisons. Par exemple :
 
-- Vous n&#39;avez pas accès au fichier d&#39;origine. Vous souhaitez afficher l’image avec un recadrage ou des proportions différents, mais vous n’avez pas le fichier d’origine sur votre ordinateur ou vous travaillez à domicile. Dans ce cas, vous pouvez accéder à Contenu multimédia dynamique classique, rechercher l’image, la recadrer et l’enregistrer, ou l’enregistrer sous une nouvelle version.
+- Vous n&#39;avez pas accès au fichier d&#39;origine. Vous souhaitez afficher l’image avec un recadrage ou des proportions différents, mais vous n’avez pas le fichier d’origine sur votre ordinateur ou vous travaillez à domicile. Dans ce cas, vous pouvez aller dans Dynamic Media Classic, trouver l’image, la recadrer et l’enregistrer, ou l’enregistrer sous une nouvelle version.
 - Pour supprimer les espaces blancs superflus. L&#39;image a été photographiée avec trop d&#39;espace blanc, ce qui fait que le produit a l&#39;air petit. Vous souhaitez que vos images miniatures remplissent la zone de travail autant que possible.
 - Pour créer des images ajustées, des copies virtuelles d’images qui ne prennent pas d’espace disque. Certaines sociétés ont des règles de fonctionnement qui les obligent à conserver des copies distinctes de la même image, mais avec un nom différent. Ou peut-être voulez-vous une version recadrée et non recadrée de la même image.
-- Pour créer de nouvelles images à partir d’une image source. Par exemple, vous pouvez créer des nuances de couleur ou un détail de l’image principale. Vous pouvez effectuer cette opération dans Adobe Photoshop et télécharger séparément ou utiliser l’outil Recadrer dans Dynamic Media Classic.
+- Pour créer de nouvelles images à partir d’une image source. Par exemple, vous pouvez créer des nuances de couleur ou un détail de l’image principale. Vous pouvez effectuer cette opération en Adobe Photoshop et télécharger séparément ou utiliser l’outil Recadrer dans Dynamic Media Classic.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Vous pouvez accéder à l’outil Recadrer dans Dynamic Media Classic à partir 
 
 Lorsque vous enregistrez une version recadrée manuellement, il s’avère que l’image est recadrée de manière permanente ; Dynamic Media Classic masque en fait les pixels en ajoutant un modificateur d’URL interne pour recadrer l’image. Lorsque vous publiez, tout le monde s’aperçoit que l’image est recadrée. Vous pouvez toutefois revenir à l’éditeur de recadrage et supprimer le recadrage ultérieurement.
 
-Vous pouvez ensuite choisir d’enregistrer en tant que nouvelle image de Principal ou en tant que Vue supplémentaire du masque. Un nouveau gabarit est un nouveau fichier physique (tel qu’un TIFF ou un JPEG) qui occupe l’espace d’enregistrement. Une vue supplémentaire est une image virtuelle qui ne prend pas d&#39;espace serveur. Nous ne vous recommandons pas de choisir Remplacer l’original, car cela remplacera votre original et rendra le recadrage permanent. Si vous enregistrez en tant que nouveau maître ou vue supplémentaire, vous devez choisir un nouvel ID de fichier. Comme les autres ID de fichier, il doit s’agir d’un nom unique dans Contenu multimédia dynamique classique.
+Vous pouvez ensuite choisir d’enregistrer en tant que nouvelle image de Principal ou en tant que Vue supplémentaire du masque. Un nouveau gabarit est un nouveau fichier physique (tel qu’un TIFF ou un JPEG) qui occupe l’espace d’enregistrement. Une vue supplémentaire est une image virtuelle qui ne prend pas d&#39;espace serveur. Nous ne vous recommandons pas de choisir Remplacer l’original, car cela remplacera votre original et rendra le recadrage permanent. Si vous enregistrez en tant que nouveau maître ou vue supplémentaire, vous devez choisir un nouvel ID de fichier. Comme les autres ID de fichier, il doit s’agir d’un nom unique dans Dynamic Media Classic.
 
 ### _Rognage_
 
@@ -72,7 +72,7 @@ L&#39;image à droite est beaucoup plus visible en supprimant l&#39;espace suppl
 
 Comme mentionné précédemment, vous pouvez également choisir de recadrer les images au moment du téléchargement. Pour utiliser le rognage au moment du téléchargement, cliquez sur le bouton **Options tâche** et sous Options de rognage, choisissez **Rogner**.
 
-Dynamic Media Classic se souviendra de cette option pour le prochain téléchargement. Bien que vous souhaitiez peut-être recadrer des images pour ce téléchargement, vous ne souhaitez peut-être pas qu’elles soient recadrées pour chaque téléchargement. Une autre option consisterait à définir une tâche de téléchargement FTP planifiée spéciale et à y placer les options de recadrage. De cette façon, vous n’exécuteriez la tâche que lorsque vous aviez besoin de recadrer vos images.
+Dynamic Media Classic se souviendra de cette option pour le prochain transfert. Bien que vous souhaitiez peut-être recadrer des images pour ce téléchargement, vous ne souhaitez peut-être pas qu’elles soient recadrées pour chaque téléchargement. Une autre option consisterait à définir une tâche de téléchargement FTP planifiée spéciale et à y placer les options de recadrage. De cette façon, vous n’exécuteriez la tâche que lorsque vous aviez besoin de recadrer vos images.
 
 >[!IMPORTANT]
 >
@@ -102,7 +102,7 @@ Le recadrage fera désormais partie de ce paramètre d’image prédéfini et se
 
 ## Images ajustées
 
-Lorsque vous utilisez l’outil Recadrer, vous avez la possibilité de **Enregistrer en tant que Vue supplémentaire de Principal**. Une fois enregistré, il crée un nouveau type de fichier Contenu multimédia dynamique classique — une image ajustée. Une image ajustée, également appelée dérivée, est une image virtuelle. Ce n&#39;est pas du tout une image ; il s’agit d’une référence de base de données (comme un alias ou un raccourci) à l’image originale physique.
+Lorsque vous utilisez l’outil Recadrer, vous avez la possibilité de **Enregistrer en tant que Vue supplémentaire de Principal**. Une fois enregistrée, cette option crée un nouveau type de fichier Dynamic Media Classic : une image ajustée. Une image ajustée, également appelée dérivée, est une image virtuelle. Ce n&#39;est pas du tout une image ; il s’agit d’une référence de base de données (comme un alias ou un raccourci) à l’image originale physique.
 
 ### L&#39;image réelle sera-t-elle debout`?` ?
 
@@ -110,7 +110,7 @@ Pouvez-vous dire lequel est le gabarit et lequel est l’image ajustée ?
 
 ![image](assets/crop-adjusted-zoom-targets/real-image-stand-up.png)
 
-Vous ne devriez pas être en mesure de le savoir sans avoir consulté Dynamic Media Classic et le type de fichier &quot;Image ajustée&quot; pour SBR_MAIN2.
+Vous ne devriez pas être en mesure de le savoir sans consulter Dynamic Media Classic et le type de fichier &quot;Image ajustée&quot; pour SBR_MAIN2.
 
 Une image ajustée n’utilise pas d’espace disque, puisqu’elle n’existe qu’en tant qu’élément de ligne dans la base de données. Il est également lié de façon permanente à l&#39;actif d&#39;origine ; si l’original est supprimé, l’image ajustée sera également supprimée. Il peut s’agir d’une image entière non recadrée ou d’une partie d’une image (recadrage).
 
@@ -131,7 +131,7 @@ Les Cibles de zoom figurent également dans le menu **Modifier** et dans la page
 
 Les Cibles de zoom étant essentiellement une fonction de marchandisage et nécessitant une connaissance des points de vente d’un produit, elles sont généralement créées par une personne de l’équipe Marchandisage ou Produit à une société.
 
-Le processus est très simple : cliquez sur la fonction, donnez-lui un nom descriptif, et enregistrez-la. Les cibles peuvent être copiées d’une image à une autre si elles sont similaires, mais le processus est manuel. Il n’est pas possible, dans Dynamic Media Classic, d’automatiser la création de Cibles de zoom, car chaque image est différente et présente des fonctionnalités différentes.
+Le processus est très simple : cliquez sur la fonction, donnez-lui un nom descriptif, et enregistrez-la. Les cibles peuvent être copiées d’une image à une autre si elles sont similaires, mais le processus est manuel. Dans Dynamic Media Classic, il n’est pas possible d’automatiser la création de Cibles de zoom, car chaque image est différente et possède des fonctionnalités différentes.
 
 Le choix de la visionneuse est un autre facteur permettant de décider si vous souhaitez utiliser les Cibles de zoom. Tous les types de visionneuses ne peuvent pas afficher les Cibles de zoom (par exemple, la visionneuse de zoom arrière ne les prend pas en charge).
 
@@ -155,7 +155,7 @@ Voici le processus de création de cibles dans Dynamic Media Classic.
 6. Lorsque la cible est sélectionnée, la zone est entourée de lignes en pointillés verts et vous pouvez la redimensionner et la déplacer. Faites glisser les coins pour les redimensionner ou faites glisser la zone de cible pour les déplacer.
 
    - L’image sera alors chargée dans la visionneuse de zoom personnalisée par défaut. Assurez-vous que le paramètre prédéfini de visionneuse prend en charge les Cibles de zoom. En général, tous les paramètres prédéfinis standard dotés du mot &quot;-Guided&quot; ont été conçus pour être utilisés avec les Cibles de zoom. Pour utiliser les cibles, placez le pointeur de la souris sur la miniature de la cible (ou icône de zone réactive) pour afficher l’étiquette, puis cliquez dessus pour afficher le zoom de la visionneuse sur cette fonction.
-   - Comme toutes les autres tâches effectuées dans Dynamic Media Classic, vous devez publier pour que vos Cibles de zoom soient actives sur le Web. Si vous utilisez déjà une visionneuse qui prend en charge les cibles, celles-ci s’affichent immédiatement (une fois le cache effacé). Cependant, si vous n’utilisez pas de visionneuse compatible avec la Cible de zoom, elles restent masquées.
+   - Comme toutes les autres activités que vous réalisez dans Dynamic Media Classic, vous devez publier pour que vos Cibles de zoom soient actives sur le Web. Si vous utilisez déjà une visionneuse qui prend en charge les cibles, celles-ci s’affichent immédiatement (une fois le cache effacé). Cependant, si vous n’utilisez pas de visionneuse compatible avec la Cible de zoom, elles restent masquées.
 
       ![image](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
 
