@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: f568c991cd33c5c5349da32f505cff356a6ebfd2
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
@@ -53,11 +53,11 @@ Avant de commencer ce didacticiel, vous aurez besoin des éléments suivants :
 * Connaissances de base en HTML, CSS et JavaScript
 * Connaissance de base de [Réagir](https://reactjs.org/tutorial/tutorial.html)
 * [aem en tant que SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk) Cloud Service,  [AEM 6.5.4+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#65) ou  [AEM 6.4.8+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#64)
-* [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-* [Apache Maven](https://maven.apache.org/)  (3.3.9 ou version ultérieure)
-* [Node.](https://nodejs.org/fr/) jand  [npm](https://www.npmjs.com/)
+* [Java ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+* [Apache Maven](https://maven.apache.org/) (3.3.9 ou version ultérieure)
+* [Node.](https://nodejs.org/en/) jand  [npm](https://www.npmjs.com/)
 
-*Bien qu&#39;il ne soit pas nécessaire, il est bénéfique de bien comprendre de base le  [développement des composantes](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) traditionnelles de l&#39;AEM Sites.*
+*Bien qu&#39;il ne soit pas nécessaire, il est bénéfique de bien comprendre de base le  [développement des composantes](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) traditionnelles de l&#39;AEM Sites.*
 
 ## Environnement de développement local {#local-dev-environment}
 
@@ -65,9 +65,9 @@ Un environnement de développement local est nécessaire pour compléter ce tuto
 
 >[!NOTE]
 >
-> **Vous êtes nouveau à AEM en tant que Cloud Service ?** Consultez le guide  [suivant pour configurer un environnement de développement local à l’aide de l’AEM en tant que SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) Cloud Service.
+> **Vous découvrez AEM as a Cloud Service ?** Consultez le guide  [suivant pour configurer un environnement de développement local à l’aide de l’AEM en tant que SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) Cloud Service.
 >
-> **Nouveau à AEM 6.5 ?** Consultez le guide  [suivant pour la configuration d&#39;un environnement](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) de développement local.
+> **Nouveau à AEM 6.5 ?** Consultez le guide  [suivant pour la configuration d&#39;un environnement](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) de développement local.
 
 ## Étapes suivantes {#next-steps}
 
