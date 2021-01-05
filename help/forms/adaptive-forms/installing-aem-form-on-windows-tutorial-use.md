@@ -93,5 +93,5 @@ Bien que nous vous recommandons de suivre la [documentation officielle](https://
    3. Ajouter `sun.util.calendar` en tant que nouvelle entrée sous `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
    4. Enregistrez les modifications.
 
-Félicitations ! ! ! Vous avez maintenant installé et configuré AEM Forms sur votre système.
+Félicitations!!! Vous avez maintenant installé et configuré AEM Forms sur votre système.
 Selon vos besoins, vous pouvez configurer [les extensions de Reader](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html) ou [ PDFG](https://helpx.adobe.com/experience-manager/6-3/forms/using/install-configure-pdf-generator.html) sur votre serveur.
