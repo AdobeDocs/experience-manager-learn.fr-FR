@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
 workflow-type: tm+mt
 source-wordcount: '3171'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -49,9 +49,9 @@ Ce didacticiel est conçu pour :
 
 Dans ce didacticiel, les technologies et outils suivants doivent être installés :
 
-1. [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
+1. [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 2. [Apache Maven - 3.3.1+](https://maven.apache.org/)
-3. [Node.js - 8.11.1+](https://nodejs.org/fr/) et npm 5.6.0+ (npm est installé avec node.js)
+3. [Node.js - 8.11.1+](https://nodejs.org/en/) et npm 5.6.0+ (npm est installé avec node.js)
 
 Le doublon vérifie l&#39;installation des outils ci-dessus en ouvrant un nouveau terminal et en exécutant les opérations suivantes :
 
@@ -805,7 +805,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module **angular-app** (`
 * Code source complet pour [[!DNL We.Retail Journal] sur GitHub](https://github.com/adobe/aem-sample-we-retail-journal)
 * Consultez un didacticiel plus détaillé sur le développement de Réagir avec [[!DNL Getting Started with the AEM SPA Editor - WKND Tutorial]](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 ### Impossible de créer le projet dans Eclipse {#unable-to-build-project-in-eclipse}
 
