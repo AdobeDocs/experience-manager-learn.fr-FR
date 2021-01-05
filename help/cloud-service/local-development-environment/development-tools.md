@@ -33,7 +33,7 @@ Experience Manager est une application Java et nécessite donc le SDK Java pour 
    + Windows : `java -version`
    + macOS / Linux : `java --version`
 
-![Java](./assets/development-tools/java.png)
+![Java ](./assets/development-tools/java.png)
 
 ## Installer Homebrew
 
