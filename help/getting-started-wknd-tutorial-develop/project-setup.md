@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: 836ef9b7f6a9dcb2ac78f5d1320797897931ef8c
 workflow-type: tm+mt
 source-wordcount: '2468'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -453,7 +453,7 @@ L&#39;archétype de projet AEM génère un fichier d&#39;exemple `.gitignore` qu
 
 >[!VIDEO](https://video.tv.adobe.com/v/30153/?quality=12&learn=on)
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous venez de créer votre premier projet AEM !
 
