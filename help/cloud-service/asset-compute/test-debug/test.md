@@ -116,7 +116,7 @@ Les derniers essais sont disponibles sur Github à l&#39;adresse suivante :
 
 + [aem-guides-wknd-asset-computing/test/asset-computing/worker](https://github.com/adobe/aem-guides-wknd-asset-compute/tree/master/test/asset-compute/worker)
 
-## Dépannage
+## Résolution des incidents
 
 + [Aucun rendu généré lors de l’exécution du test](../troubleshooting.md#test-no-rendition-generated)
 + [Le test génère un rendu incorrect](../troubleshooting.md#tests-generates-incorrect-rendition)
