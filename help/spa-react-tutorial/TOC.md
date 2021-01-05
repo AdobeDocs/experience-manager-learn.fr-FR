@@ -7,7 +7,7 @@ activity: develop
 audience: developer
 user-guide-title: Prise en main de l’Éditeur AEM SPA et de React
 user-guide-description: Créez votre première application d’une seule page (SPA) React modifiable dans AEM avec la SPA WKND.
-breadcrumb-title: Tutoriel sur l’Éditeur AEM SPA et sur React
+breadcrumb-title: Tutoriel de l’Éditeur AEM SPA et de React
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
 workflow-type: tm+mt
