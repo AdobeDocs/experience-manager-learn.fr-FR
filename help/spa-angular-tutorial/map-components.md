@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: ab5b92dd9c901075347cc521bf0abe0dfc0e5319
 workflow-type: tm+mt
 source-wordcount: '2387'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ Ce chapitre approfondit l’API de modèle JSON AEM et explique comment le conte
 2. Comprenez la différence entre les composants **Conteneur** et les composants **Contenu**.
 3. Créez un nouveau composant angulaire qui mappe à un composant AEM existant.
 
-## Ce que vous allez construire
+## Ce que vous allez créer
 
 Ce chapitre examine comment le composant `Text` SPA fourni est mappé au composant AEM `Text`. Un nouveau composant `Image` SPA sera créé qui pourra être utilisé dans le SPA et créé dans l&#39;AEM. Les fonctionnalités prêtes à l’emploi des stratégies **Conteneur de mise en page** et **Éditeur de modèle** seront également utilisées pour créer une vue un peu plus variée en apparence.
 
@@ -455,7 +455,7 @@ Examinons le Conteneur de mise en page plus loin.
 
    ![Exemple de chapitre de création finale](assets/map-components/final-page.png)
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous avez appris à mapper SPA composants à AEM Composants et vous avez mis en oeuvre un nouveau composant `Image`. Vous avez également la possibilité d’explorer les capacités réactives du **Conteneur de mise en page**.
 
