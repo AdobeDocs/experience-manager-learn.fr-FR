@@ -85,7 +85,7 @@ Le projet d&#39;Asset compute final est disponible sur Github à l&#39;adresse s
 
 _Github contient l&#39;état final du projet, entièrement renseigné avec les cas de travail et de test, mais ne contient aucune information d&#39;identification, c&#39;est-à-dire. `.env`, `.config.json` ou `.aio`._
 
-## Dépannage
+## Résolution des incidents
 
 + [Rendu personnalisé absent de la ressource dans AEM](../troubleshooting.md#custom-rendition-missing-from-asset)
 + [Échec du traitement des ressources dans AEM](../troubleshooting.md#asset-processing-fails)
