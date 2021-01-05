@@ -29,7 +29,7 @@ Découvrez comment étendre un composant principal existant à utiliser avec l&#
 2. Comprendre le principe de base de l&#39;héritage des composants à l&#39;aide de `sling:resourceSuperType`.
 3. Découvrez comment tirer parti de [Modèle de délégation](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) pour les modèles Sling afin de réutiliser la logique et les fonctionnalités existantes.
 
-## Ce que vous allez construire
+## Ce que vous allez créer
 
 Dans ce chapitre, un nouveau composant `Card` sera créé. Le composant `Card` étend le composant [Image Core Component](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/image.html) en ajoutant des champs de contenu supplémentaires, tels qu&#39;un titre et un bouton d&#39;appel à l&#39;action, afin d&#39;exécuter le rôle d&#39;un bande-annonce pour d&#39;autres contenus dans le SPA.
 
@@ -91,7 +91,7 @@ Un composant Carte initial a été fourni par le code de démarrage du chapitre.
 
    La propriété `sling:resourceSuperType` pointe vers `wknd-spa-react/components/image`, ce qui indique que le composant `Card` héritera de toutes les fonctionnalités du composant WKND SPA Image.
 
-3. Inspect le fichier `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/image/.content.xml` :
+3. Inspectez le fichier `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/image/.content.xml` :
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -131,7 +131,7 @@ Un composant Carte initial a été fourni par le code de démarrage du chapitre.
 
    ![Début de composant de réaction](assets/extend-component/react-card-component-start.png)
 
-7. Inspect le fichier `Card.js`.
+7. Inspectez le fichier `Card.js`.
 
    Le composant a déjà été coupé pour être mappé au composant `Card` AEM en utilisant la fonction standard `MapTo`.
 
@@ -217,7 +217,7 @@ Pour exposer en fin de compte les valeurs de la boîte de dialogue du composant 
 
 Revenez à l&#39;IDE de votre choix et ouvrez le module `core`.
 
-1. Ouvrez le fichier `Card.java` à `core/src/main/java/com/adobe/aem/guides/wknd/spa/react/core/models/Card.java`.
+1. Ouvrez le fichier `Card.java` dans `core/src/main/java/com/adobe/aem/guides/wknd/spa/react/core/models/Card.java`.
 
    Observez que l&#39;interface `Card` étend actuellement `com.adobe.cq.wcm.core.components.models.Image` et hérite donc de toutes les méthodes de l&#39;interface `Image`. L&#39;interface `Image` étend déjà l&#39;interface `ComponentExporter` qui permet au modèle Sling d&#39;être exporté en tant que JSON et mappé par l&#39;éditeur de SPA. Par conséquent, nous n&#39;avons pas besoin d&#39;étendre explicitement l&#39;interface `ComponentExporter` comme nous l&#39;avons fait dans le chapitre [Composant personnalisé](custom-component.md).
 
@@ -484,7 +484,7 @@ Maintenant que le modèle JSON est renseigné avec de nouvelles propriétés pou
 
    ![Création finale du composant Carte](assets/extend-component/final-authoring-card.png)
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous avez appris à étendre un composant AEM à l’aide de la section et comment les modèles et boîtes de dialogue Sling fonctionnent avec le modèle JSON.
 
