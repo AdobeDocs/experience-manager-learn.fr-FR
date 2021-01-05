@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: eabc325c498b4d5b8b5a53b9004f0e89d82cefe3
 workflow-type: tm+mt
 source-wordcount: '109'
-ht-degree: 3%
+ht-degree: 14%
 
 ---
 
 
-# Créer une propriété de lancement {#create-launch-property}
+# Créer une propriété Launch {#create-launch-property}
 
 Découvrez comment créer une propriété Launch avec la configuration minimale nécessaire pour configurer le reste de l’intégration avec Adobe Experience Manager. Les utilisateurs seront initiés à l’interface utilisateur de lancement et découvriront les extensions, les règles et les workflows de publication.
 
