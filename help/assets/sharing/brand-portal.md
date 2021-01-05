@@ -211,6 +211,6 @@ Nouvelles fonctionnalités améliorées orientées vers l’alignement du portai
 * [Agents de réplication AEM Author](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Guide de téléchargement accéléré](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Documents d’Adobe de la marque et du portail AEM Assets](https://helpx.adobe.com/fr/experience-manager/brand-portal/using/brand-portal.html)
-* [Documentation sur les Adobes de médias dynamiques en AEM Assets](https://docs.adobe.com/docs/fr/aem/6-3/author/assets/dynamic-media.html)
+* [Documents d&#39;Adobe AEM Assets](https://docs.adobe.com/docs/fr/aem/6-3/author/assets/dynamic-media.html)
 * [Télécharger Aspera Connect](https://downloads.asperasoft.com/connect2/)
 * [Aspera Connect Test Server](https://test-connect.asperasoft.com/)
