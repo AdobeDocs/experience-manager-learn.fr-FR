@@ -99,7 +99,7 @@ Nous devons maintenant ouvrir le formulaire avec empID approprié dans l’URL. 
 [Formulaire avec empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207)
 [Formulaire avec empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208)
 
-## Dépannage
+## Résolution des incidents
 
 Mon formulaire est vide et ne contient aucune donnée
 
