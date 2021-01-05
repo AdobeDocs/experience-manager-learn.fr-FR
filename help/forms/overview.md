@@ -85,6 +85,6 @@ Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gérer
 * [Documentation de l’administration AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
 * [AEM Sites Deploying Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
 * [Tutoriels d’AEM as a Cloud Service](/help/cloud-service/overview.md)
-* [Tutoriels AEM Assets](/help/assets/overview.md)
-* [Tutoriels AEM Forms](/help/forms/overview.md)
+* [Tutoriels d’AEM Assets](/help/assets/overview.md)
+* [Tutoriels d’AEM Forms](/help/forms/overview.md)
 * [Tutoriels d’AEM Foundation](/help/foundation/overview.md)
