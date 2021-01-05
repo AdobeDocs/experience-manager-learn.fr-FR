@@ -1,5 +1,5 @@
 ---
-title: Vidéos et tutoriels AEM Assets
+title: Vidéos et tutoriels d’AEM Assets
 description: Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Assets
 sub-product: ressources, média dynamique
 translation-type: tm+mt
@@ -68,15 +68,15 @@ Adobe Experience Manager Assets est un outil de gestion d’actifs numériques s
 </td>
 <td>
    <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-   <img alt="Présentation des médias dynamiques" src="./assets/overview/dynamic-media.png" />
+   <img alt="Présentation de Dynamic Media" src="./assets/overview/dynamic-media.png" />
    </a>
    <div>
       <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-      <strong>Présentation des médias dynamiques</strong>
+      <strong>Présentation de Dynamic Media</strong>
       </a>
    </div>
    <p>
-      <em>Gestion et accès au contenu multimédia à l’aide de Contenu multimédia dynamique</em>
+      <em>Gérer et accéder au contenu multimédia à l’aide de Dynamic Media</em>
    <p>
 </td>
 </table>
@@ -86,6 +86,6 @@ Adobe Experience Manager Assets est un outil de gestion d’actifs numériques s
 * [Experience League - Explorez AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Documentation de l’AEM Assets](https://helpx.adobe.com/fr/experience-manager/6-5/assets/user-guide.html)
 * [Tutoriels d’AEM as a Cloud Service](/help/cloud-service/overview.md)
-* [Tutoriels AEM Sites](/help/sites/overview.md)
-* [Tutoriels AEM Forms](/help/forms/overview.md)
+* [Tutoriels d’AEM Sites](/help/sites/overview.md)
+* [Tutoriels d’AEM Forms](/help/forms/overview.md)
 * [Tutoriels d’AEM Foundation](/help/foundation/overview.md)
