@@ -29,7 +29,7 @@ Découvrez comment créer un composant personnalisé à utiliser avec AEM SPA Ed
 2. Découvrez comment créer de nouvelles boîtes de dialogue de composants AEM.
 3. Découvrez comment créer un composant **personnalisé** AEM qui sera compatible avec la structure d’éditeur SPA.
 
-## Ce que vous allez construire
+## Ce que vous allez créer
 
 Les chapitres précédents ont porté sur l&#39;élaboration de SPA composants et leur mise en correspondance avec *les* éléments de base &lt;a1/> AEM existants. Ce chapitre porte sur la façon de créer et d’étendre *les nouveaux composants* AEM et de manipuler le modèle JSON fourni par AEM.
 
@@ -163,7 +163,7 @@ Un composant AEM est défini comme un noeud et des propriétés. Dans le projet,
 
 Les modèles Sling sont des &quot;POJO&quot; Java pilotés par l’annotation (objets Java ordinaires) qui facilitent le mappage des données du JCR aux variables Java. [Sling ](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/component-basics.html#sling-models) Modelstypics, fonction permettant d’encapsuler une logique métier complexe côté serveur pour les composants AEM.
 
-Dans le contexte de l’éditeur de SPA, les modèles Sling exposent le contenu d’un composant par le biais du modèle JSON à l’aide d’une fonction utilisant l’[Exportateur de modèle Sling](https://docs.adobe.com/content/help/fr/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+Dans le contexte de l’éditeur de SPA, les modèles Sling exposent le contenu d’un composant par le biais du modèle JSON à l’aide d’une fonction utilisant l’[Exportateur de modèle Sling](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
 
 1. Dans l&#39;IDE de votre choix, ouvrez le module `core`. `CustomComponent.java` et  `CustomComponentImpl.java` ont déjà été créés et ajoutés au code de démarrage du chapitre.
 
@@ -328,7 +328,7 @@ Créez ensuite le `Custom Component` à l’aide de l’AEM SPA Editor.
 
    Notez que la valeur JSON est définie sur toutes les majuscules en fonction de la logique ajoutée au modèle Sling.
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous avez appris à créer un composant AEM personnalisé à utiliser avec SPA Editor. Vous avez également appris comment les boîtes de dialogue, les propriétés JCR et les modèles Sling interagissent pour générer le modèle JSON.
 
