@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 69c1767098cc9da8ec0ae2bd83d25417d330f393
 workflow-type: tm+mt
 source-wordcount: '970'
-ht-degree: 17%
+ht-degree: 21%
 
 ---
 
@@ -72,19 +72,19 @@ En outre, chaque partie du tutoriel a sa propre branche dans GitHub. Un utilisat
 
 Un environnement de développement local est nécessaire pour compléter ce tutoriel. Les captures d’écran et les vidéos sont capturées à l’aide de l’AEM en tant que SDK Cloud Service s’exécutant sur un environnement Mac OS. Sauf indication contraire, les commandes et le code doivent être indépendants du système d&#39;exploitation local.
 
-**Vous êtes nouveau à AEM en tant que Cloud Service ?** Consultez le guide  [suivant pour configurer un environnement de développement local à l’aide de l’AEM en tant que SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) Cloud Service.
+**Vous découvrez AEM as a Cloud Service ?** Consultez le guide  [suivant pour configurer un environnement de développement local à l’aide de l’AEM en tant que SDK](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) Cloud Service.
 
-**Nouveau à AEM 6.5 ?** Consultez le guide  [suivant pour la configuration d&#39;un environnement](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) de développement local.
+**Nouveau à AEM 6.5 ?** Consultez le guide  [suivant pour la configuration d&#39;un environnement](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) de développement local.
 
 ### Logiciels requis
 
-Les éléments suivants doivent être installés localement :
+Les logiciels suivants doivent être installés localement :
 
-* [aem en tant que ](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk) SDKou  [AEM Cloud Service 6.5](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/technical-requirements.html) ou  [AEM 6.4 + SP2](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html)
+* [SDK AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk) ou [AEM 6.5](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/technical-requirements.html) ou [AEM 6.4 + SP2](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html)
 * [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)  (AEM 6.5+ uniquement)
-* [Apache Maven](https://maven.apache.org/)  (3.3.9 ou version ultérieure)
-* [Node.js v10+](https://nodejs.org/fr/)
-* [npm 6+](https://www.npmjs.com/)
+* [Apache Maven](https://maven.apache.org/) (3.3.9 ou version ultérieure)
+* [Node.js v10+](https://nodejs.org/en/)
+* [npm 6+](https://www.npmjs.com/)
 * [Git](https://git-scm.com/)
 
 ### Environnement intégré de développement (IDE)
