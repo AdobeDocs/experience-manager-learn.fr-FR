@@ -146,7 +146,7 @@ Les modèles de fragment de contenu prennent par défaut l’état **Brouillon**
 
    ![Activer le modèle de contributeur](assets/content-fragment-models/enable-contributor-model.png)
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous venez de créer votre premier modèle de fragment de contenu !
 
