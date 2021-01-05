@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -146,7 +146,7 @@ Vous trouverez ci-dessous diverses ressources d&#39;Adobe qui fournissent des in
 
 ### Documentation
 
-+ [Documentation Asset compute Service](https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html)
++ [Documentation Asset compute Service](https://docs.adobe.com/content/help/fr-FR/asset-compute/using/extend/understand-extensibility.html)
 + [Outil de développement d&#39;Asset compute Lisez-moi](https://github.com/adobe/asset-compute-devtool)
 + [Exemples d&#39;Assets compute](https://github.com/adobe/asset-compute-example-workers)
 
