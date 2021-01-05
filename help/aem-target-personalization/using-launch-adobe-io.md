@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 1209064fd81238d4611369b8e5b517365fc302e3
 workflow-type: tm+mt
 source-wordcount: '1098'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -42,7 +42,7 @@ Pour cette intégration, les audiences suivantes doivent être impliquées. Pour
 
 ## Présentation
 
-aem offres et intégration immédiate avec l’Experience Platform Launch. Cette intégration permet aux administrateurs AEM de configurer facilement l&#39;Experience Platform Launch via une interface facile à utiliser, réduisant ainsi le niveau d&#39;effort et le nombre d&#39;erreurs lors de la configuration de ces deux outils. Et rien qu&#39;en ajoutant l&#39;extension Adobe Target à l&#39;Experience Platform Launch nous aidera à utiliser toutes les fonctionnalités de Adobe Target sur les pages web AEM.
+AEM offre une intégration prête à l’emploi à Experience Platform Launch. Cette intégration permet aux administrateurs AEM de configurer facilement l&#39;Experience Platform Launch via une interface facile à utiliser, réduisant ainsi le niveau d&#39;effort et le nombre d&#39;erreurs lors de la configuration de ces deux outils. Et rien qu&#39;en ajoutant l&#39;extension Adobe Target à l&#39;Experience Platform Launch nous aidera à utiliser toutes les fonctionnalités de Adobe Target sur les pages web AEM.
 
 Cette section porte sur les étapes d’intégration suivantes :
 
@@ -52,7 +52,7 @@ Cette section porte sur les étapes d’intégration suivantes :
    * Création d’un élément de données
    * Créer une règle de page
    * Environnements de configuration
-   * Création et publication
+   * Concevoir et publier
 * AEM
    * Création d’un Cloud Service
    * Créer
@@ -116,7 +116,7 @@ L&#39;Extension de la cible se compose de deux parties principales :
 
 ![Elément de données - Nom de page](assets/using-launch-adobe-io/launch-environment-setup.png)
 
-#### Création et publication
+#### Concevoir et publier
 
 1. Cliquez sur l&#39;onglet **Publication** de la propriété de votre site, et créons une bibliothèque pour créer et déployer nos modifications (éléments de données, règles) dans un environnement de développement.
    >[!VIDEO](https://video.tv.adobe.com/v/28412?quality=12&learn=on)
