@@ -57,7 +57,7 @@ Nous utiliserons AEM pratiques exemplaires et utiliserons :
 
 ## Gestion des tests unitaires et de l’Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud ](https://docs.adobe.com/content/help/fr/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) Manager intègre l’exécution de tests unitaires et la couverture de  [code ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) dans son pipeline CI/CD afin d’encourager et de promouvoir les meilleures pratiques de l’AEM de test unitaire.
+[Adobe Cloud ](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) Manager intègre l’exécution de tests unitaires et la couverture de  [code ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) dans son pipeline CI/CD afin d’encourager et de promouvoir les meilleures pratiques de l’AEM de test unitaire.
 
 Bien que le code de test d’unité soit une bonne pratique pour toute base de code, il est important, lors de l’utilisation de Cloud Manager, de tirer parti de ses fonctionnalités de test de qualité de code et de rapports en fournissant des tests d’unité à exécuter par Cloud Manager.
 
