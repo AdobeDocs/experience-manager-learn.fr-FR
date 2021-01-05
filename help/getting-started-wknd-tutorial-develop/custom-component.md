@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
 workflow-type: tm+mt
 source-wordcount: '4011'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -473,7 +473,7 @@ Créez une interface Java publique pour la signature. `Byline.java` définit les
    * L&#39;annotation `@Model` enregistre BylineImpl en tant que modèle Sling lorsqu&#39;elle est déployée sur AEM.
    * Le paramètre `adaptables` spécifie que ce modèle peut être adapté par la demande.
    * Le paramètre `adapters` permet à la classe d&#39;implémentation d&#39;être enregistrée dans l&#39;interface Byline. Cela permet au script HTL d&#39;appeler le modèle Sling via l&#39;interface (au lieu de l&#39;impl directement). [Vous trouverez plus de détails sur les adaptateurs ici](https://sling.apache.org/documentation/bundles/models.html#specifying-an-alternate-adapter-class-since-110).
-   * `resourceType` pointe vers le type de ressource de composant Byline (créé précédemment) et aide à résoudre le modèle correct en cas d&#39;implémentations multiples. [Vous trouverez plus de détails sur l&#39;association d&#39;une classe de modèle à un type de ressource ici](https://sling.apache.org/documentation/bundles/application d’une seule pages.html#associating-a-application d’une seule page-class-with-a-resource-type-since-130).
+   * `resourceType` pointe vers le type de ressource de composant Byline (créé précédemment) et aide à résoudre le modèle correct en cas d&#39;implémentations multiples. [Vous trouverez plus de détails sur l&#39;association d&#39;une classe de modèle à un type de ressource ici](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130).
 
 ### Implémentation des méthodes du modèle Sling {#implementing-the-sling-model-methods}
 
@@ -1081,7 +1081,7 @@ Regardez la vidéo ci-dessous pour un aperçu rapide de ce qui a été construit
 
 >[!VIDEO](https://video.tv.adobe.com/v/30174/?quality=12&learn=on)
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous venez de créer un composant personnalisé à partir de zéro en utilisant Adobe Experience Manager !
 
@@ -1096,7 +1096,7 @@ Vue le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd) ou p
 1. Cloner le référentiel [github.com/adobe/aem-guides-wknd](https://github.com/adobe/aem-guides-wknd).
 1. Consultez la branche `custom-component/solution`
 
-## Dépannage {#troubleshooting}
+## Résolution des incidents {#troubleshooting}
 
 ### Dossiers source manquants
 
