@@ -29,7 +29,7 @@ Adobe introduit une application de bureau pour Dynamic Media Classic qui fournit
 
 >[!NOTE]
 >
-> Nous vous recommandons d’installer la nouvelle application de bureau Adobe Dynamic Media Classic d’ici le 1er octobre 2020. Ainsi, vous aurez une transition en douceur avant que le Flash Player Adobe ne soit abandonné le 31 décembre 2020. A cette date, vous ne pourrez plus vous connecter à la version de navigateur de l’interface utilisateur d’Adobe Dynamic Media Classic, appelée Scene7 Publishing System dans le produit.
+> Nous vous recommandons d’installer la nouvelle application de bureau Adobe Dynamic Media Classic d’ici le 1er octobre 2020. Ainsi, vous aurez une transition en douceur avant que le Flash Player Adobe ne soit abandonné le 31 décembre 2020. A cette date, vous ne pourrez plus vous connecter à la version navigateur de l’interface utilisateur d’Adobe Dynamic Media Classic, appelée Scene7 Publishing System dans le produit.
 
 ## Configuration requise
 
@@ -40,7 +40,7 @@ L’application de bureau Adobe Dynamic Media Classic est compatible avec les sy
 
 ## Documents complémentaires
 
-* [Documentation de l’application de bureau Adobe Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
-* [Questions fréquentes sur les médias dynamiques Adobe](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/new-ui-2020.html)
+* [Documentation relative à l’application de bureau Dynamic Media Classic Adobe](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
+* [Questions fréquentes sur l&#39;Adobe Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/new-ui-2020.html)
 * [Téléchargement - Fichier image disque pour macOS (.dmg)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.dmg)
 * [Téléchargement - Fichier exécutable pour Windows (.exe)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.exe)
