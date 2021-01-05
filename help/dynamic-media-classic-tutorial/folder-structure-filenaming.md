@@ -1,6 +1,6 @@
 ---
 title: Détermination de la structure de dossiers et de la convention d’attribution de noms de fichiers
-description: Le nommage de fichiers est peut-être la décision la plus importante que vous prendrez lors de l’implémentation de Contenu multimédia dynamique classique. La structure des dossiers est également importante. Découvrez pourquoi il s'agit d'approches si importantes et possibles pour la structure de dossiers et les noms de fichiers.
+description: Le nommage de fichiers est peut-être la décision la plus importante que vous prendrez lors de l’implémentation de Dynamic Media Classic. La structure des dossiers est également importante. Découvrez pourquoi il s'agit d'approches si importantes et possibles pour la structure de dossiers et les noms de fichiers.
 sub-product: dynamic-media
 feature: null
 doc-type: tutorial
@@ -22,17 +22,17 @@ Avant d’accéder au contenu et de le télécharger par début, il est recomman
 
 ## Convention sur la hiérarchie des dossiers et le nommage de fichiers
 
-Le nommage de fichiers est généralement la décision la plus importante que vous prenez en ce qui concerne l’implémentation de Contenu multimédia dynamique classique. Toutefois, pour comprendre pourquoi il est important, parlons tout d’abord de la structure de dossiers.
+Le nommage de fichiers est généralement la décision la plus importante que vous prenez concernant l’implémentation de Dynamic Media Classic. Toutefois, pour comprendre pourquoi il est important, parlons tout d’abord de la structure de dossiers.
 
 ### Hiérarchie des dossiers
 
-La hiérarchie des dossiers est importante pour vous et votre société à des fins d’organisation uniquement. Vos URL de contenu Dynamic Media Classic ne font référence qu’au nom du fichier et non au dossier ou au chemin d’accès. Où que vous téléchargiez un fichier, l’URL sera la même. Cela diffère beaucoup de la façon dont la plupart des gens organisent leurs images et leur contenu pour le Web, mais avec Dynamic Media Classic, cela ne fait aucune différence.
+La hiérarchie des dossiers est importante pour vous et votre société à des fins d’organisation uniquement : vos URL Dynamic Media Classic référencent uniquement le nom de la ressource, et non le dossier ou le chemin d’accès. Où que vous téléchargiez un fichier, l’URL sera la même. Cela diffère beaucoup de la façon dont la plupart des gens organisent leurs images et leurs contenus pour le web, mais avec Dynamic Media Classic, cela ne fait aucune différence.
 
-Le nombre de fichiers ou de dossiers à stocker dans chaque dossier est une autre considération importante. Si de nombreux fichiers sont stockés dans un dossier, les performances se dégradent lors de l’affichage des fichiers dans Contenu multimédia dynamique classique. Ne stockez pas des milliers de fichiers dans un dossier. Développez plutôt une hiérarchie organisationnelle contenant moins de 500 fichiers ou dossiers au sein d’une branche donnée de votre hiérarchie. Il ne s’agit pas d’une exigence stricte, mais elle permet de maintenir des temps de réponse acceptables lors de l’affichage ou de la recherche de ressources. En effet, la recommandation consiste à créer des hiérarchies larges et peu profondes plutôt que étroites et profondes.
+Le nombre de fichiers ou de dossiers à stocker dans chaque dossier est une autre considération importante. Si de nombreux fichiers sont stockés dans un dossier, les performances se dégradent lors de l’affichage des fichiers dans Dynamic Media Classic. Ne stockez pas des milliers de fichiers dans un dossier. Développez plutôt une hiérarchie organisationnelle contenant moins de 500 fichiers ou dossiers au sein d’une branche donnée de votre hiérarchie. Il ne s’agit pas d’une exigence stricte, mais elle permet de maintenir des temps de réponse acceptables lors de l’affichage ou de la recherche de ressources. En effet, la recommandation consiste à créer des hiérarchies larges et peu profondes plutôt que étroites et profondes.
 
-Le moyen le plus simple de créer vos dossiers consiste à télécharger la structure complète de dossiers à l’aide du protocole FTP et à activer l’option **Inclure les sous-dossiers**. Cette option entraîne la recréation de la structure de dossiers sur le site FTP dans Dynamic Media Classic.
+Le moyen le plus simple de créer vos dossiers consiste à télécharger la structure complète de dossiers à l’aide du protocole FTP et à activer l’option **Inclure les sous-dossiers**. Avec cette option, Dynamic Media Classic recrée la structure de dossiers sur le site FTP dans Dynamic Media Classic.
 
-Nous voulons que vous preniez en compte la structure de vos dossiers avant de début télécharger tous vos fichiers, car il est beaucoup plus facile d’organiser et de gérer vos fichiers et dossiers localement sur votre ordinateur que dans Dynamic Media Classic. Par exemple, vous pouvez uniquement faire glisser et déposer des fichiers, mais pas des dossiers entiers, dans Contenu multimédia dynamique classique.
+Nous voulons que vous preniez en compte votre structure de dossiers avant de début télécharger tous vos fichiers, car il est beaucoup plus facile d&#39;organiser et de gérer vos fichiers et dossiers localement sur votre ordinateur que dans Dynamic Media Classic. Par exemple, vous pouvez uniquement faire glisser des fichiers, mais pas des dossiers entiers, dans Dynamic Media Classic.
 
 ### Stratégies de dossiers
 
@@ -44,9 +44,9 @@ Pour votre stratégie de dossiers, tenez compte de ce qui a du sens pour votre e
 
 ## Convention de dénomination de fichier
 
-La manière dont vous choisissez de nommer vos fichiers est peut-être la décision la plus importante que vous prendrez au sujet de Contenu multimédia dynamique classique. Cela est dû au fait que tous les fichiers de Dynamic Media Classic doivent avoir des noms uniques, quel que soit l’emplacement où ils sont stockés dans le compte.
+La façon dont vous choisissez de nommer vos fichiers est peut-être la décision la plus importante que vous prendrez au sujet de Dynamic Media Classic. En effet, tous les fichiers de Dynamic Media Classic doivent avoir des noms uniques, quel que soit leur emplacement de stockage dans le compte.
 
-Toutes les URL et transactions dans Dynamic Media Classic sont gérées par un ID de fichier, qui est l’identifiant unique d’un fichier dans la base de données. Lorsque vous téléchargez un fichier, l’ID de fichier est créé en prenant le nom de fichier et en supprimant l’extension. Par exemple, _896649.jpg_ obtient l’actif _ID 896649_.
+Toutes les URL et transactions de Dynamic Media Classic sont gérées par un ID de ressource, qui est l’identifiant unique d’un élément dans la base de données. Lorsque vous téléchargez un fichier, l’ID de fichier est créé en prenant le nom de fichier et en supprimant l’extension. Par exemple, _896649.jpg_ obtient l’actif _ID 896649_.
 
 Règles relatives aux ID de fichier :
 
