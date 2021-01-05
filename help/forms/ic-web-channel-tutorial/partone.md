@@ -39,4 +39,4 @@ Pour installer Tomcat, suivez les instructions suivantes :
 11. Une fois votre tomcat démarré, testez le point de terminaison exposé par le fichier WAR en [cliquant ici](http://localhost:8080/SampleRest/webapi/getStatement/9586)
 12. Vous devriez obtenir des données d’exemple à la suite de cet appel.
 
-Félicitations ! ! ! Vous avez configuré pour et déployé le fichier SampleRest.war.
+Félicitations !!!. Vous avez configuré pour et déployé le fichier SampleRest.war.
