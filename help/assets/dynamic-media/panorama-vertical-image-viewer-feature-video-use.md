@@ -1,8 +1,8 @@
 ---
 title: Utilisation de la visionneuse d’images panoramiques et verticales avec AEM Assets Dynamic Media
 seo-title: Utilisation de la visionneuse d’images panoramiques et verticales avec AEM Assets Dynamic Media
-description: Les améliorations apportées à la visionneuse de médias dynamiques dans AEM version 6.4 incluent l’ajout de la visionneuse d’images panoramique, de la visionneuse d’images de réalité virtuelle panoramique et de la visionneuse d’images verticale. Panoramic Viewer offre un moyen facile de fournir une expérience attrayante et immersive de la chambre, de la propriété, de l'emplacement ou du paysage sans aucun développement personnalisé.
-seo-description: Les améliorations apportées à la visionneuse de médias dynamiques dans AEM version 6.4 incluent l’ajout de la visionneuse d’images panoramique, de la visionneuse d’images de réalité virtuelle panoramique et de la visionneuse d’images verticale. Panoramic Viewer offre un moyen facile de fournir une expérience attrayante et immersive de la chambre, de la propriété, de l'emplacement ou du paysage sans aucun développement personnalisé.
+description: Les améliorations apportées à Dynamic Media Viewer dans AEM version 6.4 incluent l’ajout de la visionneuse d’images panoramique, de la visionneuse d’images de réalité virtuelle panoramique et de la visionneuse d’images verticale. Panoramic Viewer offre un moyen facile de fournir une expérience attrayante et immersive de la chambre, de la propriété, de l'emplacement ou du paysage sans aucun développement personnalisé.
+seo-description: Les améliorations apportées à Dynamic Media Viewer dans AEM version 6.4 incluent l’ajout de la visionneuse d’images panoramique, de la visionneuse d’images de réalité virtuelle panoramique et de la visionneuse d’images verticale. Panoramic Viewer offre un moyen facile de fournir une expérience attrayante et immersive de la chambre, de la propriété, de l'emplacement ou du paysage sans aucun développement personnalisé.
 sub-product: dynamic-media
 feature: video-profiles, video-profiles, vr-360
 topics: videos, renditions, authoring
@@ -21,13 +21,13 @@ ht-degree: 1%
 
 # Utilisation de la visionneuse d’images panoramiques et verticales avec AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
-Les améliorations apportées à la visionneuse de médias dynamiques dans AEM version 6.4 incluent l’ajout de la visionneuse d’images panoramique, de la visionneuse d’images de réalité virtuelle panoramique et de la visionneuse d’images verticale. Panoramic Viewer offre un moyen facile de fournir une expérience attrayante et immersive de la chambre, de la propriété, de l&#39;emplacement ou du paysage sans aucun développement personnalisé.
+Les améliorations apportées à Dynamic Media Viewer dans AEM version 6.4 incluent l’ajout de la visionneuse d’images panoramique, de la visionneuse d’images de réalité virtuelle panoramique et de la visionneuse d’images verticale. Panoramic Viewer offre un moyen facile de fournir une expérience attrayante et immersive de la chambre, de la propriété, de l&#39;emplacement ou du paysage sans aucun développement personnalisé.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24156/?quality=9&learn=on)
 
 >[!NOTE]
 >
->La vidéo suppose que votre instance AEM s’exécute en mode Contenu multimédia dynamique S7. [Vous trouverez ici les instructions relatives à la configuration des AEM avec Contenu multimédia dynamique.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>La vidéo suppose que votre instance AEM s’exécute en mode Dynamic Media S7. [Vous trouverez des instructions sur la configuration de l&#39;AEM avec Dynamic Media ici.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Visionneuse panoramique et panoramique VR
 
@@ -51,9 +51,9 @@ Avec des nuances horizontales, en fonction de la taille de l’écran de bureau 
    <td>Visionneuse d’images verticale</td>
   </tr>
   <tr>
-   <td>Mode d’exécution du média dynamique</td>
-   <td>Mode Scene7 du média dynamique uniquement</td>
-   <td>DMS7 et Contenu multimédia dynamique</td>
+   <td>Mode d’exécution Dynamic Media</td>
+   <td>Mode Dynamic Media uniquement</td>
+   <td>DMS7 et Dynamic Media</td>
   </tr>
   <tr>
    <td>Exemple d’utilisation </td>
@@ -68,9 +68,9 @@ Avec des nuances horizontales, en fonction de la taille de l’écran de bureau 
  </tbody>
 </table>
 
-[Configuration de Contenu multimédia dynamique en mode Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
+[Configuration de Dynamic Media en mode Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
 
-[Configuration de Contenu multimédia dynamique en mode hybride](https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/config-dynamic.html)
+[Configuration de Dynamic Media en mode hybride](https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/config-dynamic.html)
 
 >[!NOTE]
 >
