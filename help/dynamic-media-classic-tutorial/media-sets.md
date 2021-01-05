@@ -1,6 +1,6 @@
 ---
 title: Visionneuses d’images, d’échantillons, à 360° et de supports variés
-description: L’une des capacités les plus utiles et les plus puissantes de Dynamic Media Classic est sa prise en charge de la création de visionneuses de supports enrichis, telles que les visionneuses d’images, d’échantillons, de panoramiques et de supports variés. Découvrez ce qu’est chaque visionneuse de supports enrichis et comment créer chaque type dans Dynamic Media Classic. En savoir plus sur les paramètres prédéfinis d’ensemble par lot, qui automatisent le processus de création de visionneuses de supports enrichis au moment du téléchargement.
+description: L’une des capacités les plus utiles et les plus puissantes de Dynamic Media Classic est sa prise en charge de la création de visionneuses de supports enrichis, telles que les visionneuses d’images, d’échantillons, à 360° et de supports variés. Découvrez ce qu’est chaque visionneuse de supports enrichis et comment créer chaque type dans Dynamic Media Classic. En savoir plus sur les paramètres prédéfinis d’ensemble par lot, qui automatisent le processus de création de visionneuses de supports enrichis au moment du téléchargement.
 sub-product: dynamic-media
 feature: sets
 doc-type: tutorial
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Visionneuses d’images, d’échantillons, de panoramiques et de supports variés {#media-sets}
 
-Au-delà des images uniques pour le dimensionnement et le zoom dynamiques, les collections d’ensembles Dynamic Media Classic offrent une expérience en ligne plus riche. Cette section du didacticiel explique comment créer les visionneuses de supports enrichis suivantes dans Dynamic Media Classic :
+Au-delà des images uniques pour le dimensionnement et le zoom dynamiques, les collections de visionneuses Dynamic Media Classic offrent une expérience en ligne plus riche. Cette section du didacticiel explique comment créer les visionneuses de supports enrichis suivantes dans Dynamic Media Classic :
 
 - Visionneuse d’images
 - Série d’échantillons
@@ -29,13 +29,13 @@ Il explique également comment utiliser les paramètres prédéfinis d’ensembl
 
 ## Tout Ce Que Vous Souhaitez Toujours Savoir Sur Les Jeux
 
-En plus du zoom et du dimensionnement dynamiques de base, les visionneuses sont probablement le sous-produit Dynamic Media Classic le plus utilisé. Les visionneuses sont essentiellement des ressources &quot;virtuelles&quot; qui ne contiennent aucune image réelle, mais se composent d’un ensemble de relations avec d’autres images et/ou vidéos. L&#39;attrait principal des ensembles est qu&#39;il s&#39;agit de mini-applications prêtes &quot;à l&#39;emploi&quot;. Cela signifie que chaque visionneuse contient sa propre logique et son interface de sorte que tout ce que vous avez à faire est de lui appeler sur le site. En outre, ils ne nécessitent que le suivi d’un seul ID d’actif par jeu, plutôt que d’avoir à gérer vous-même l’ensemble des actifs et relations membres.
+En plus du zoom et du dimensionnement dynamique de base, les visionneuses sont probablement le sous-produit Dynamic Media Classic le plus utilisé. Les visionneuses sont essentiellement des ressources &quot;virtuelles&quot; qui ne contiennent aucune image réelle, mais se composent d’un ensemble de relations avec d’autres images et/ou vidéos. L&#39;attrait principal des ensembles est qu&#39;il s&#39;agit de mini-applications prêtes &quot;à l&#39;emploi&quot;. Cela signifie que chaque visionneuse contient sa propre logique et son interface de sorte que tout ce que vous avez à faire est de lui appeler sur le site. En outre, ils ne nécessitent que le suivi d’un seul ID d’actif par jeu, plutôt que d’avoir à gérer vous-même l’ensemble des actifs et relations membres.
 
 Lorsque vous créez une visionneuse, elle est gérée en tant que ressource distincte qui doit être marquée pour publication et publiée avant d’être diffusée à partir d’une URL. Tous les actifs de ses membres doivent également être publiés.
 
 ### Types de visionneuses
 
-Découvrez les quatre types de visionneuses que vous pouvez créer dans Dynamic Media Classic : Visionneuses d’images, d’échantillons, à 360° et de supports variés.
+Découvrez les quatre types d’ensembles que vous pouvez créer dans Dynamic Media Classic : Visionneuses d’images, d’échantillons, à 360° et de supports variés.
 
 ## Visionneuse d’images
 
@@ -58,7 +58,7 @@ Ce type de jeu est généralement utilisé pour afficher les vues colorées du m
 
 La principale différence entre une série d’échantillons et une visionneuse d’images réside dans le fait que les séries d’échantillons utilisent une autre image comme échantillon cliquable, tandis que les visionneuses d’images utilisent une version miniature de l’image d’origine, accessible en cliquant dessus.
 
-Les séries d’échantillons ne colorent pas les images (une idée fausse répandue). Les images sont simplement permutées, exactement comme dans une visionneuse d’images. Les mini images d’échantillon auraient pu être créées à l’aide de Photoshop, chaque couleur aurait pu être photographiée séparément, ou l’outil Recadrer de Dynamic Media Classic aurait pu être utilisé pour créer une nuance à partir d’une des images colorées.
+Les séries d’échantillons ne colorent pas les images (une idée fausse répandue). Les images sont simplement permutées, exactement comme dans une visionneuse d’images. Les mini images d&#39;échantillon auraient pu être créées à l&#39;aide de Photoshop, chaque couleur aurait pu être photographiée séparément, ou l&#39;outil Recadrer de Dynamic Media Classic aurait pu être utilisé pour faire une nuance à partir d&#39;une des images colorées.
 
 ![image](assets/media-sets/image-set-2.jpg)
 
@@ -104,13 +104,13 @@ L’URL de la visionneuse de supports variés ci-dessus peut s’afficher comme 
 
 - Découvrez comment [créer une visionneuse de supports variés](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
 
-Pour afficher une image pour un zoom, une visionneuse ou une vidéo sur votre site Web, vous devez l’appeler &quot;visionneuse&quot; de Contenu de média dynamique classique. Dynamic Media Classic inclut des visionneuses de fichiers multimédias enrichis, tels que des séries d’échantillons, des visionneuses à 360°, des vidéos, etc.
+Pour afficher une image pour un zoom, une visionneuse ou une vidéo sur votre site Web, vous devez l’appeler dans une &quot;visionneuse&quot; Dynamic Media Classic. Dynamic Media Classic comprend des visionneuses de fichiers multimédias enrichis, tels que des séries d’échantillons, des visionneuses à 360°, des vidéos, etc.
 
 En savoir plus sur [Visionneuses pour AEM Assets et Dynamic Media Classic](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
 
 ## Paramètres prédéfinis d’ensemble par lot
 
-Jusqu’à présent, nous avons discuté de la façon de créer manuellement des visionneuses à l’aide de la fonction de création de contenu dynamique Media Classic. Cependant, il est possible d’automatiser la création de visionneuses d’images et de visionneuses à 360° à l’aide d’un paramètre prédéfini d’ensemble par lot tant que vous disposez d’une convention d’affectation de nom normalisée.
+Jusqu&#39;à présent, nous avons discuté de la façon de créer manuellement des visionneuses à l&#39;aide de la fonction de création de Dynamic Media Classic. Cependant, il est possible d’automatiser la création de visionneuses d’images et de visionneuses à 360° à l’aide d’un paramètre prédéfini d’ensemble par lot tant que vous disposez d’une convention d’affectation de nom normalisée.
 
 Chaque paramètre prédéfini est un ensemble d’instructions indépendant à nom unique qui définit comment créer la visionneuse à l’aide d’images qui correspondent aux conventions d’affectation de nom définies. Dans le paramètre prédéfini, vous définissez d’abord des conventions d’affectation de nom pour les fichiers que vous souhaitez regrouper dans une visionneuse. Un paramètre prédéfini d’ensemble par lot peut alors être créé pour référencer ces images.
 
