@@ -129,7 +129,7 @@ Ce code renvoie le titre de la page AEM.
 
 ![Titre de la page](assets/pagetitle.png)
 
-## Dépannage
+## Résolution des incidents
 
 ### Pourquoi mes mbox ne se déclenchent-elles pas sur mes pages Web ?
 
