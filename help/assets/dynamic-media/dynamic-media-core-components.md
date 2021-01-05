@@ -12,8 +12,8 @@ kt: 6630
 translation-type: tm+mt
 source-git-commit: aa349fba9e0f1df97316105ada62ff9b32501573
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '142'
+ht-degree: 1%
 
 ---
 
