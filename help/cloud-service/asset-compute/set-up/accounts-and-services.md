@@ -24,7 +24,7 @@ Ce didacticiel nécessite que les services suivants soient fournis et accessible
 
 Tous les services d&#39;Adobe doivent être accessibles via le même Adobe Org, en utilisant votre Adobe ID.
 
-+ [AEM as a Cloud Service](#aem-as-a-cloud-service)
++ [aem en tant que Cloud Service](#aem-as-a-cloud-service)
 + [Adobe Projet FireFly](#adobe-project-firefly)
    + La mise en service peut prendre entre 2 et 10 jours
 + Enregistrement cloud
