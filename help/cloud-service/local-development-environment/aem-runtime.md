@@ -33,7 +33,7 @@ Le Experience Manager est une application Java et nécessite donc le SDK Java po
    + Windows : `java -version`
    + macOS / Linux : `java --version`
 
-![Java](./assets/aem-runtime/java.png)
+![Java ](./assets/aem-runtime/java.png)
 
 ## Téléchargement de l’AEM en tant que SDK Cloud Service
 
@@ -166,7 +166,7 @@ La mise à niveau du SDK AEM crée effectivement un nouveau runtime AEM, y compr
 
 N’oubliez pas que l’utilisation des approches ci-dessus pour gérer le code entre les mises à niveau AEM SDK indique un modèle de développement anti-schéma. Le code non jetable doit provenir de votre IDE de développement et être acheminé vers AEM SDK via des déploiements.
 
-## Dépannage
+## Résolution des incidents
 
 ## Un doublon-clic sur le fichier JAR de démarrage rapide génère une erreur {#troubleshooting-double-click}
 
