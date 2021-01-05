@@ -1,8 +1,8 @@
 ---
 title: Explication de la gestion des couleurs avec AEM Dynamic Media
 seo-title: Explication de la gestion des couleurs avec AEM Dynamic Media
-description: Dans cette vidéo, nous étudions la gestion dynamique des couleurs dans les médias et comment elle peut être utilisée pour fournir des fonctionnalités de prévisualisation de correction des couleurs dans AEM Assets.
-seo-description: Dans cette vidéo, nous étudions la gestion dynamique des couleurs dans les médias et comment elle peut être utilisée pour fournir des fonctionnalités de prévisualisation de correction des couleurs dans AEM Assets.
+description: Dans cette vidéo, nous étudions la gestion des couleurs de Dynamic Media et comment elle peut être utilisée pour fournir des fonctionnalités de prévisualisation de correction des couleurs dans pour AEM Assets.
+seo-description: Dans cette vidéo, nous étudions la gestion des couleurs de Dynamic Media et comment elle peut être utilisée pour fournir des fonctionnalités de prévisualisation de correction des couleurs dans pour AEM Assets.
 uuid: dc14d067-11a2-4662-acfd-f9f6f1d738ee
 discoiquuid: b2b9ccc9-96b5-4bea-9995-2e6b353c469d
 sub-product: dynamic-media
@@ -23,7 +23,7 @@ ht-degree: 24%
 
 # Explication de la gestion des couleurs avec AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
-Dans cette vidéo, nous étudions la gestion dynamique des couleurs dans les médias et comment elle peut être utilisée pour fournir des fonctionnalités de prévisualisation de correction des couleurs dans AEM Assets.
+Dans cette vidéo, nous étudions la gestion des couleurs de Dynamic Media et comment elle peut être utilisée pour fournir des fonctionnalités de prévisualisation de correction des couleurs dans pour AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16792/?quality=9&learn=on)
 
