@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
 workflow-type: tm+mt
 source-wordcount: '2720'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -29,7 +29,7 @@ Découvrez comment plusieurs vues de la SPA sont prises en charge à l’aide de
 2. Apprenez à utiliser [routage angulaire](https://angular.io/guide/router) pour naviguer entre les différentes vues du SPA.
 3. Implémentez une navigation dynamique pilotée par la hiérarchie des pages AEM.
 
-## Ce que vous allez construire
+## Ce que vous allez créer
 
 Ce chapitre ajoute un menu de navigation à un composant `Header` existant. Le menu de navigation est piloté par la hiérarchie des pages AEM et utilise le modèle JSON fourni par le [composant principal de navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/navigation.html).
 
@@ -69,7 +69,7 @@ Vous pouvez toujours vue le code terminé sur [GitHub](https://github.com/adobe/
 
 ## Mise à jour du composant d’en-tête Inspect {#inspect-header}
 
-Dans les chapitres précédents, le composant `HeaderComponent` a été ajouté en tant que composant angulaire pur inclus par `app.component.html`. Dans ce chapitre, le composant `HeaderComponent` est supprimé de l’application et sera ajouté via l’[éditeur de modèles](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). Cela permet aux utilisateurs de configurer le menu de navigation de `HeaderComponent` depuis l&#39;AEM.
+Dans les chapitres précédents, le composant `HeaderComponent` a été ajouté en tant que composant angulaire pur inclus par `app.component.html`. Dans ce chapitre, le composant `HeaderComponent` est supprimé de l’application et sera ajouté via l’[éditeur de modèles](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). Cela permet aux utilisateurs de configurer le menu de navigation de `HeaderComponent` depuis l&#39;AEM.
 
 >[!NOTE]
 >
@@ -259,7 +259,7 @@ Créez ensuite des pages supplémentaires dans AEM qui serviront de vues différ
 
 Ensuite, mettez en oeuvre le menu de navigation avec un nouveau `NavigationComponent`. Nous pourrions ajouter directement le code dans `header.component.html`, mais une meilleure pratique consiste à éviter les composants volumineux. Implémentez plutôt un `NavigationComponent` qui pourrait être réutilisé ultérieurement.
 
-1. Examinez le fichier JSON exposé par le composant `Header` de l’AEM à l’adresse [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) :
+1. Consultez le fichier JSON exposé par le composant `Header` de l’AEM à l’adresse [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) :
 
    ```json
    ...
@@ -643,7 +643,7 @@ Maintenant que la navigation a été mise en oeuvre, inspectez le routage en AEM
 
    `AemPageRouteReuseStrategy`, fourni par l&#39;AEM SPA Editor JS SDK, est une stratégie  [](https://angular.io/api/router/RouteReuseStrategy) RouteReuseStrategypersonnalisée qui empêche la réutilisation des  `PageComponent` itinéraires. Sinon, le contenu de la page &quot;A&quot; peut s’afficher lors de la navigation vers la page &quot;B&quot;.
 
-2. Ouvrez le fichier `page.component.ts` à `ui.frontend/src/app/components/page/`.
+2. Ouvrez le fichier `page.component.ts` dans `ui.frontend/src/app/components/page/`.
 
    ```js
    ...
@@ -673,7 +673,7 @@ Maintenant que la navigation a été mise en oeuvre, inspectez le routage en AEM
 
    `ModelManagerService`, obtient les données JSON en fonction de l’itinéraire et mappe les données aux variables de classe  `path`,  `items`,  `itemsOrder`. Ils seront ensuite transmis au [AEMPageComponent](https://www.npmjs.com/package/@adobe/cq-angular-editable-components#aempagecomponent.md)
 
-3. Ouvrez le fichier `page.component.html` à `ui.frontend/src/app/components/page/`
+3. Ouvrez le fichier `page.component.html` dans `ui.frontend/src/app/components/page/`
 
    ```html
    <aem-page 
@@ -724,7 +724,7 @@ Maintenant que la navigation a été mise en oeuvre, inspectez le routage en AEM
 
 5. Testez les liens profonds en naviguant directement vers : [http://localhost:4502/content/wknd-spa-angular/us/en/home/page-2.html](http://localhost:4502/content/wknd-spa-angular/us/en/home/page-2.html). Observez que le bouton Retour du navigateur continue de fonctionner.
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous avez appris comment plusieurs vues du SPA peuvent être prises en charge en mappant sur AEM pages avec le SDK de l’éditeur de SPA. La navigation dynamique a été implémentée à l&#39;aide du routage angulaire et ajoutée au composant `Header`.
 
