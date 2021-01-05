@@ -7,7 +7,7 @@ activity: develop
 audience: developer
 user-guide-title: Présentation de Dynamic Media Classic
 user-guide-description: Ce tutoriel explique comment créer, concevoir et diffuser des contenus multimédias enrichis dans Dynamic Media Classic.
-breadcrumb-title: Tutoriels Dynamic Media Classic
+breadcrumb-title: Tutoriels de Dynamic Media Classic
 index: y
 translation-type: tm+mt
 source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
