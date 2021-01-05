@@ -1,6 +1,6 @@
 ---
-title: Tutoriel sur le cache du Dispatcher AEM
-seo-title: Tutoriel sur le cache du Dispatcher AEM
+title: Tutoriel du cache du Dispatcher AEM
+seo-title: Tutoriel du cache du Dispatcher AEM
 description: Ce didacticiel a pour but de vous aider à mieux comprendre comment fonctionne le répartiteur et comment vous pouvez l’utiliser.
 seo-description: Ce didacticiel a pour but de vous aider à mieux comprendre comment fonctionne le répartiteur et comment vous pouvez l’utiliser.
 translation-type: tm+mt
@@ -12,7 +12,7 @@ ht-degree: 6%
 ---
 
 
-# Tutoriel sur le cache du Dispatcher AEM
+# Tutoriel du cache du Dispatcher AEM
 
 Le Répartiteur est un élément essentiel de la plupart des installations, sinon de toutes les installations AEM. Ce didacticiel a pour but de vous aider à mieux comprendre comment fonctionne le répartiteur et comment vous pouvez l’utiliser.
 
