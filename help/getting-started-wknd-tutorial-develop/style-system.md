@@ -1,6 +1,6 @@
 ---
-title: Développer avec le système de style
-seo-title: Développer avec le système de style
+title: Développement avec le système de style
+seo-title: Développement avec le système de style
 description: Découvrez comment mettre en oeuvre des styles individuels et réutiliser les composants principaux à l’aide de Experience Manager Style System. Ce didacticiel porte sur le développement du système de style afin d’étendre les composants principaux à l’aide de CSS propres à la marque et de configurations de stratégie avancées de l’éditeur de modèles.
 sub-product: sites
 topics: front-end-development,responsive
@@ -738,7 +738,7 @@ Examinez les styles et les fonctionnalités mis en oeuvre dans le cadre du chapi
 
 >[!VIDEO](https://video.tv.adobe.com/v/30378/?quality=12&learn=on)
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, la page d&#39;article est presque entièrement stylisée et vous avez acquis une expérience pratique en utilisant le système de style AEM.
 
