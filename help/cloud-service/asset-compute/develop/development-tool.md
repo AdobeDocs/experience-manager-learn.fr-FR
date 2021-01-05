@@ -82,7 +82,7 @@ _Clic publicitaire de l’exécution d’un travail d’Asset compute dans l’o
 
 Si vous modifiez le code du collaborateur pendant l’exécution de l’outil de développement, les modifications seront &quot;déployées à chaud&quot;. Le &quot;déploiement à chaud&quot; prend plusieurs secondes, donc laissez le déploiement se terminer avant de réexécuter le programme de travail à partir de l’outil de développement.
 
-## Dépannage
+## Résolution des incidents
 
 + [Retrait YAML incorrect](../troubleshooting.md#incorrect-yaml-indentation)
 + [MemorySize limit est trop faible](../troubleshooting.md#memorysize-limit-is-set-too-low)
