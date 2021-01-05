@@ -61,7 +61,7 @@ La sérialisation directe de [!DNL Sling Models] leur permet de traiter à la fo
 
 1. Sling résout le `sling:resourceType` de la ressource demandée, le sélecteur et l’extension en un servlet Sling Exporter généré de manière dynamique, qui est mappé à [!DNL Sling Model] avec Exporter.
 1. Le servlet Sling Exporter résolu appelle l&#39;[!DNL Sling Model Exporter] par rapport à l&#39;objet [!DNL Sling Model] adapté de la demande ou de la ressource (tel que déterminé par les tables adaptables Sling Models).
-1. L’exportateur sérialise l’[!DNL Sling Model] en fonction des annotations de modèle Sling propres à l’exportateur et renvoie le résultat au servlet Exporter Sling.
+1. L’exportateur sérialise l’[!DNL Sling Model] en fonction des annotations de modèle Sling propres à l’exportateur et renvoie le résultat au servlet Sling Exporter.
 1. Le servlet Sling Exporter renvoie le rendu JSON de [!DNL Sling Model] dans la réponse HTTP.
 
 >[!NOTE]
