@@ -1,5 +1,5 @@
 ---
-user-guide-title: Tutoriel sur le cache du Dispatcher AEM
+user-guide-title: Tutoriel du cache du Dispatcher AEM
 user-guide-description: Ce tutoriel vous aide à mieux comprendre le fonctionnement et l’utilisation du Dispatcher.
 version: 6.x
 sub-product: fondation
@@ -19,7 +19,7 @@ ht-degree: 72%
 ---
 
 
-# Tutoriel sur le cache du Dispatcher AEM{#dispatcher-tutorial}
+# Tutoriel du cache du Dispatcher AEM{#dispatcher-tutorial}
 
 + [Présentation](overview.md)
 + [1 - Concepts, modèles et antimodèles](chapter-1.md)
