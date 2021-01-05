@@ -57,7 +57,7 @@ Pour que cet exemple fonctionne sur votre système, procédez comme suit :
 * [Importation des ressources de l’article ](assets/tag-and-store-in-dam-assets.zip) à l’aide d’AEM gestionnaire de packages
 * Ouvrez l&#39;[exemple de formulaire en mode prévisualisation](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Renseignez la section Personnes et envoyez le formulaire.
 * [Accédez au dossier Pic dans DAM](http://localhost:4502/assets.html/content/dam/Peak). Vous devriez voir le DE dans le dossier Pic. Vérifiez les propriétés du document. Il doit être balisé correctement.
-Félicitations ! ! L&#39;exemple a été installé sur votre système.
+Félicitations!! L&#39;exemple a été installé sur votre système.
 
 * Examinons le [flux de travaux](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) qui est déclenché lors de l’envoi du formulaire.
 * La première étape du processus crée un nom de fichier unique en concaténant le nom des candidats et le pays de résidence.
