@@ -1,8 +1,8 @@
 ---
 title: Vidéos et tutoriels d’AEM Foundation
 seo-title: Vidéos et tutoriels d’AEM Foundation
-description: 'Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Foundation. '
-seo-description: Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Foundation
+description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation. '
+seo-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation
 translation-type: tm+mt
 source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
 workflow-type: tm+mt
@@ -80,6 +80,6 @@ Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponib
 
 * [Experience League - Explorez AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Tutoriels d’AEM as a Cloud Service](/help/cloud-service/overview.md)
-* [Vidéos et tutoriels AEM Sites](/help/sites/overview.md)
-* [Vidéos et tutoriels AEM Assets](/help/assets/overview.md)
-* [Vidéos et tutoriels AEM Forms](/help/forms/overview.md)
+* [Vidéos et tutoriels d’AEM Sites](/help/sites/overview.md)
+* [Vidéos et tutoriels d’AEM Assets](/help/assets/overview.md)
+* [Vidéos et tutoriels d’AEM Forms](/help/forms/overview.md)
