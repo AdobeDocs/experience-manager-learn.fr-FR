@@ -124,7 +124,7 @@ Répétez les étapes décrites dans [Créer un fragment de contenu](#create-con
 
    Vous devez maintenant avoir deux fragments **Contributeurs**.
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous venez de créer plusieurs fragments de contenu et d’en créer une variante.
 
