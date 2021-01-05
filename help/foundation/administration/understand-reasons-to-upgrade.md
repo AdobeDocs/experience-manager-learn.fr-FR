@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 1519856731758ece2860615c06fc0d64edb104a5
 workflow-type: tm+mt
 source-wordcount: '3540'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -55,7 +55,7 @@ AEM Assets continue de tirer parti de ses nombreuses capacités de gestion des a
 + **Adobe** Stockintegration permet un accès direct aux images Adobe Stock directement à partir de l’expérience AEM Assets, ce qui crée une expérience de découverte de contenu transparente.
 + **aem Desktop** Apprelease la version 2.0 et se réinvente tout en améliorant les performances et la stabilité.
 + **Les** ressources connectées prennent en charge les instances AEM Sites discrètes pour accéder et utiliser facilement les ressources d’une autre instance AEM Assets.
-+ Mise à jour de la prise en charge de la vidéo dans **Contenu multimédia dynamique**, y compris **360 Vidéo** et **Miniatures vidéo personnalisées**.
++ Mise à jour de la prise en charge des vidéos dans **Dynamic Media**, y compris **360 Video** et **Miniatures vidéo personnalisées**.
 
 ### Intelligence du contenu
 
@@ -214,7 +214,7 @@ Vous trouverez ci-dessous une matrice des principales caractéristiques des fond
             <td>►</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/operations-dashboard.html" target="_blank">Tableau de bord</a> d’exploitation : </strong>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/operations-dashboard.html" target="_blank">Tableau de bord</a> d’exploitation : </strong>
  effectuez la maintenance, surveillez l’intégrité du serveur et analysez les performances à partir des AEM.</td>
             <td></td>
             <td>►</td>
@@ -885,7 +885,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités d&#39;Act
     </tbody>
 </table>
 
-### AEM Assets Dynamic Media
+### AEM Assets
 
 ***Améliorations <sup>+</sup> significatives de la fonctionnalité de cette version.***
 
@@ -895,7 +895,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités d&#39;Act
 <table>
     <thead>
         <tr>
-            <td>Fonction Contenu multimédia dynamique</td>
+            <td>Fonction Dynamic Media</td>
             <td>5.6.x</td>
             <td>6,0</td>
             <td>6.1</td>
@@ -964,7 +964,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités d&#39;Act
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/delivering-dynamic-media-assets.html" target="_blank">Diffusion</a> : options </strong>
-            flexibles pour la liaison ou l’incorporation de contenu et de diffusion de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu de contenu dynamique sur HTTP/2.</td>
+            flexibles pour la liaison ou l’incorporation du contenu et de la diffusion Dynamic Media sur le protocole HTTP/2.</td>
             <td> </td>
             <td>►</td>
             <td>►</td>
@@ -974,8 +974,8 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités d&#39;Act
             <td>►</td>
         </tr>
         <tr>
-            <td><strong>Mise à niveau de Scene7 vers Contenu multimédia dynamique : </strong>
-            possibilité de migrer des fichiers originaux et de continuer à utiliser les URL S7 existantes.</td>
+            <td><strong>Mise à niveau de Scene7 vers Dynamic Media : </strong>
+            possibilité de migrer les fichiers maîtres et de continuer à utiliser les URL S7 existantes.</td>
             <td> </td>
             <td> </td>
             <td> </td>
