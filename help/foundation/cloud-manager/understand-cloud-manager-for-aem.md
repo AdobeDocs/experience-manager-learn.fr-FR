@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
 workflow-type: tm+mt
 source-wordcount: '531'
-ht-degree: 20%
+ht-degree: 22%
 
 ---
 
@@ -31,11 +31,11 @@ Cette série de vidéos explore les principales fonctionnalités de Cloud Manage
 * [Pipelines non productifs CI/CD](#cicd-non-production-pipeline)
 * [Activité](#activity)
 
-Pour une présentation complète, consultez le [Guide de l’utilisateur de Cloud Manager](https://docs.adobe.com/content/help/fr/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
+Pour une présentation complète, consultez le [Guide de l’utilisateur de Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
 
 ## Programmes {#programs}
 
-[Les ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/getting-started/setting-up-program.html) programmes Cloud Manager représentent des ensembles d’environnements AEM prenant en charge des ensembles logiques d’initiatives commerciales, généralement correspondant à un contrat de niveau de service (SLA) acheté. Par exemple, un Programme peut représenter les ressources AEM pour soutenir les sites Web publics mondiaux, tandis qu&#39;un autre Programme représente un DAM central interne.
+[Les ](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/getting-started/setting-up-program.html) programmes Cloud Manager représentent des ensembles d’environnements AEM prenant en charge des ensembles logiques d’initiatives commerciales, généralement correspondant à un contrat de niveau de service (SLA) acheté. Par exemple, un Programme peut représenter les ressources AEM pour soutenir les sites Web publics mondiaux, tandis qu&#39;un autre Programme représente un DAM central interne.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26313/?quality=12&learn=on)
 
