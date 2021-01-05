@@ -21,7 +21,7 @@ ht-degree: 0%
 ---
 
 
-# Utilisation de fragments d’expérience avec AEM Assets Dynamic Media{#using-experience-fragments-with-aem-assets-dynamic-media}
+# Utilisation de fragments d’expérience avec AEM Assets{#using-experience-fragments-with-aem-assets-dynamic-media}
 
 AEM Assets Dynamic Media intègre des zones réactives de ressources à des fragments d’expérience au moyen de visionneuses de supports interactifs. Les marketeurs peuvent créer le fragment d’expérience avec du texte, des images et des liens pour remplir la fenêtre contextuelle personnalisée et l’associer à des zones réactives sur des bannières, carrousels ou vidéos.
 
@@ -29,8 +29,8 @@ AEM Assets Dynamic Media intègre des zones réactives de ressources à des frag
 
 >[!NOTE]
 >
->L’utilisation de fragments d’expérience AEM avec des zones réactives de médias dynamiques AEM Assets requiert [AEM à exécuter en mode Contenu multimédia dynamique](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html).
+>L’utilisation de fragments d’expérience AEM avec des emplacements Dynamic Media Hotspots nécessite [AEM à exécuter en mode Dynamic Media](https://docs.adobe.com/docs/en/aem/6-3/administer/content/dynamic-media/config-dynamic.html).
 
 La variante du fragment d’expérience de la fenêtre contextuelle affichée dans la vidéo est disponible sous la forme d’un package AEM ci-dessous.
 
-Télécharger [Fragments d’expérience Ressources de médias dynamiques](assets/experience-fragmentsdynamic-mediaassets-100.zip)
+Télécharger [Fichiers Dynamic Media de fragments d’expérience](assets/experience-fragmentsdynamic-mediaassets-100.zip)
