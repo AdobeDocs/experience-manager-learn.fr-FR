@@ -28,7 +28,7 @@ L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un dévelo
 
 Le tutoriel est conçu pour fonctionner avec **AEM en tant que Cloud Service** et est rétrocompatible avec **AEM 6.5+** et **l&#39;AEM 6.4.2+**.
 
-**[Afficher le tutoriel ici!](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
+**[Afficher le tutoriel ici!](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
 
 ## Déploiement de WKND sur AEM en tant que Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
 
