@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 64c167ec1d625fdd8be1bc56f7f5e59460b8fed3
 workflow-type: tm+mt
 source-wordcount: '1831'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 Utilisez la couche de données client [Adobe pilotée par le événement avec les composants principaux AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/data-layer/overview.html) pour effectuer le suivi des clics de composants spécifiques sur un site Adobe Experience Manager. Découvrez comment utiliser des règles dans Experience Platform Launch pour écouter les événements de clics, filtrer par composant et envoyer les données à une instance Adobe Analytics avec une balise de lien de suivi.
 
-## Ce que vous allez construire
+## Ce que vous allez créer
 
 L&#39;équipe marketing de WKND souhaite identifier les boutons d&#39;appel à l&#39;action (CTA) qui génèrent les meilleurs résultats sur la page d&#39;accueil. Dans ce tutoriel, nous allons ajouter une nouvelle règle dans l&#39;Experience Platform Launch qui écoute les événements `cmp:click` de **Teaser** et **Button** composants et envoie l&#39;identifiant du composant et un nouveau événement à Adobe Analytics avec la balise de lien de suivi.
 
