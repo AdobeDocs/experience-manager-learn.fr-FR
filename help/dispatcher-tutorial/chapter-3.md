@@ -147,7 +147,7 @@ Voilà la théorie. Mais en pratique, il y a un certain nombre de pièges. Les �
 
 #### Auto - Correctif
 
-Avec l&#39;invalidation fondée sur le événement, vous devriez avoir un plan d&#39;urgence. Que se passe-t-il si un événement d’invalidation est manqué ? Une stratégie simple pourrait être d&#39;invalider ou de purger après un certain temps. Donc - vous avez peut-être manqué ce événement et maintenant servir du contenu obsolète. Mais vos objets ont aussi un TTL implicite de plusieurs heures (jours) seulement. Finalement le système se guérit automatiquement.
+Avec l&#39;invalidation fondée sur le événement, vous devriez avoir un plan d&#39;urgence. Que se passe-t-il si un événement d’invalidation est manqué ? Une stratégie simple pourrait être d&#39;invalider ou de purger après un certain temps. Donc - vous avez peut-être manqué ce événement et maintenant servir du contenu obsolète. Mais vos objets ont aussi un TTL implicite de plusieurs heures (jours) seulement. Finalement, le système se guérit automatiquement.
 
 #### Invalidation pure basée sur TTL
 
