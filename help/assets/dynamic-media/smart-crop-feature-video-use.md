@@ -1,6 +1,6 @@
 ---
-title: Utilisation de la recadrage dynamique avec AEM Assets Dynamic Media
-seo-title: Utilisation de la recadrage dynamique avec AEM Assets Dynamic Media
+title: Utilisation de la recadrage intelligente avec AEM Assets Dynamic Media
+seo-title: Utilisation de la recadrage intelligente avec AEM Assets Dynamic Media
 description: Smart Crop utilise Adobe Sensei pour éliminer les tâches fastidieuses et coûteuses de recadrage de contenu pour une conception adaptée.
 seo-description: Smart Crop utilise Adobe Sensei pour éliminer les tâches fastidieuses et coûteuses de recadrage de contenu pour une conception adaptée.
 uuid: 2cb27aa8-644d-4b17-8ffc-f6a99f95cfd2
@@ -21,7 +21,7 @@ ht-degree: 13%
 ---
 
 
-# Utilisation de la recadrage dynamique avec AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
+# Utilisation de la recadrage intelligente avec AEM Assets{#using-smart-crop-with-aem-assets-dynamic-media}
 
 Smart Crop utilise Adobe Sensei pour éliminer les tâches fastidieuses et coûteuses de recadrage de contenu pour une conception adaptée.
 
@@ -29,14 +29,14 @@ Smart Crop utilise Adobe Sensei pour éliminer les tâches fastidieuses et coût
 
 >[!NOTE]
 >
->La vidéo suppose que votre instance AEM s’exécute en mode Contenu multimédia dynamique S7. [Vous trouverez ici les instructions relatives à la configuration des AEM avec Contenu multimédia dynamique.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>La vidéo suppose que votre instance AEM s’exécute en mode Dynamic Media S7. [Vous trouverez des instructions sur la configuration de l&#39;AEM avec Dynamic Media ici.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
-## La fonctionnalité de rafraîchissement dynamique dynamique des médias inclut
+## La fonctionnalité Adobe Experience Manager Smart Crop inclut
 
 * Les administrateurs AEM ressources peuvent facilement créer des profils d’images pour un recadrage intelligent en fonction de la largeur et de la hauteur du périphérique.
 * Le recadrage intelligent peut être effectué pour une ressource individuelle ou pour toutes les ressources d’un dossier.
 * Vous pouvez redimensionner la mise en page de l’édition de recadrage dynamique pour une meilleure visibilité.
-* Le composant Contenu multimédia dynamique des sites AEM prend en charge la recadrage dynamique.
+* Le composant Dynamic Media des sites AEM prend en charge la recadrage dynamique.
 * L’URL publiée pour la ressource recadrée dynamique peut être utilisée avec des applications tierces qui acceptent des ressources hébergées.
 
 >[!NOTE]
