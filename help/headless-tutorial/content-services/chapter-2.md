@@ -25,7 +25,7 @@ Ce chapitre porte sur l’activation et la définition des modèles de fragments
 
 ## Activation des modèles de fragment de contenu  
 
-Les modèles de fragment de contenu **doivent être activés via**[ AEM [!UICONTROL Navigateur de configuration]](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/configurations.html)**.**
+Les modèles de fragment de contenu **doivent être activés par**[ AEM [!UICONTROL Navigateur de configuration]](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/configurations.html)**.**
 
 Si les modèles de fragment de contenu **ne sont pas** activés pour une configuration, le bouton **[!UICONTROL Créer] > [!UICONTROL Fragment de contenu]** n’apparaît pas pour la configuration AEM appropriée.
 
