@@ -246,6 +246,6 @@ Pour plus d’informations sur les fragments de contenu et GraphQL, voir les res
 * [Diffusion de contenu sans en-tête utilisant des fragments de contenu avec GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
 * [aem API GraphQL à utiliser avec les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
 
-## Félicitations !{#congratulations}
+## Félicitations!{#congratulations}
 
 Félicitations ! Vous avez mis à jour un modèle de fragment de contenu existant afin de référencer un fragment de contenu imbriqué à l’aide du champ **Référence du fragment**. Vous avez également appris à modifier une requête GraphQL pour inclure des champs à partir d’un modèle référencé.
