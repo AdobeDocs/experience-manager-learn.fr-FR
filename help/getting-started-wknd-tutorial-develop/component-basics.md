@@ -318,7 +318,7 @@ Vous trouverez ci-dessous les étapes de haut niveau effectuées dans la vidéo 
 
 1. Déployez les modifications sur une instance locale d’AEM à l’aide du module externe Eclipse Developer ou en utilisant vos compétences Maven.
 
-## Félicitations ! {#congratulations}
+## Félicitations! {#congratulations}
 
 Félicitations, vous venez d&#39;apprendre les bases du développement de composants à Adobe Experience Manager !
 
