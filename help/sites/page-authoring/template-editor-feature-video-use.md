@@ -40,5 +40,5 @@ URL des modèles modifiables (instance d&#39;AEM locale) : [http://localhost:450
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Modèles de page modifiables - Documentation](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html)
+* [Modèles de page modifiables - Documentation](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/developing/platform/templates/page-templates-editable.html)
 * [Création de modèles de page - Documentation](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/templates.html)
