@@ -10,10 +10,10 @@ audience: developer
 kt: 4267
 thumbnail: 25907.jpg
 translation-type: tm+mt
-source-git-commit: cb5f3c323c433c9321ba26ac1194be0cd225a405
+source-git-commit: debf13d8e376979548bcbf55f71661d8cb8eb823
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -132,7 +132,7 @@ Le module externe Adobe I/O Cloud Manager permet à l’interface de ligne de co
 
 Le module externe Adobe I/O Cloud Manager permet à l’interface de ligne de commande d’aio de générer et d’exécuter des agents d’Asset compute via la commande `aio asset-compute`.
 
-1. Exécutez `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` pour installer le module externe [aio Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute).
+1. Exécutez `aio plugins:install @adobe/aio-cli-plugin-asset-compute` pour installer le module externe [aio Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute).
 
 ### Configuration de l’authentification CLI Adobe I/O
 
@@ -143,7 +143,7 @@ Pour que l’interface de ligne de commande Adobe I/O communique avec Cloud Mana
 1. Connectez-vous à [console.adobe.io](https://console.adobe.io)
 1. Assurez-vous que votre organisation qui comprend le produit Cloud Manager auquel se connecter est principale dans le sélecteur d’organisation d’Adobes.
 1. Créez ou ouvrez un [programme Adobe I/O ](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md) existant.
-   + Les programmes de la Console Adobe I/O sont simplement des regroupements organisationnels d&#39;intégrations, de créer ou d&#39;utiliser et de programmes existants basés sur la façon dont vous souhaitez gérer vos intégrations
+   + Les programmes de la console Adobe I/O sont simplement des regroupements organisationnels d&#39;intégrations, de créer ou d&#39;utiliser et de programmes existants basés sur la façon dont vous souhaitez gérer vos intégrations
    + Si vous créez un projet, sélectionnez &quot;Projet vide&quot; si vous y êtes invité (par rapport à Créer à partir d’un modèle).
    + Les programmes de la console Adobe I/O sont différents concepts pour les programmes de Cloud Manager.
 1. Créer une nouvelle intégration de l’API Cloud Manager avec le profil &quot;Développeur - Cloud Service&quot;
