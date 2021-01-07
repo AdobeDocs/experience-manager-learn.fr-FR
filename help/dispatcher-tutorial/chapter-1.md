@@ -4,7 +4,7 @@ seo-title: Prise en main de AEM Content Services - Chapitre 1 - Configuration de
 description: Chapitre 1 du didacticiel AEM sans titre sur la configuration de la ligne de base pour l’instance AEM pour le didacticiel.
 seo-description: Chapitre 1 du didacticiel AEM sans titre sur la configuration de la ligne de base pour l’instance AEM pour le didacticiel.
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 52824c178ddf930df134608ecb01bb661d6c514c
 workflow-type: tm+mt
 source-wordcount: '17502'
 ht-degree: 0%
@@ -599,7 +599,7 @@ Encore une fois, ceci est basé sur l&#39;expérience de la vie réelle. Nous av
 >
 >C&#39;est un anti-schéma. Ne l&#39;utilisez pas. Jamais.
 
-Avez-vous déjà vu des paramètres de requête tels que `?ck=398547283745` ? Ils sont appelés cache-killer (&quot;ck&quot;). L&#39;idée est que si vous ajoutez un paramètre de requête, la ressource ne sera pas récupérée. De plus, si vous ajoutez un nombre aléatoire en tant que valeur du paramètre (comme &quot;398547283745&quot;), l’URL devient unique et vous assurez qu’aucun autre cache entre le système AEM et votre écran ne peut être mis en cache. Habituellement, les suspects se retrouvent dans un cache &quot;vernis&quot; devant le Répartiteur, un CDN ou même le cache du navigateur. Encore : Ne fais pas ça. Vous souhaitez que vos ressources soient mises en cache autant et aussi longtemps que possible. Le cache est votre ami. Ne tuez pas d&#39;amis.
+Avez-vous déjà vu des paramètres de requête tels que `?ck=398547283745` ? Ils sont appelés cache-killer (&quot;ck&quot;). L&#39;idée est que si vous ajoutez un paramètre de requête, la ressource ne sera pas mise en cache. De plus, si vous ajoutez un nombre aléatoire en tant que valeur du paramètre (comme &quot;398547283745&quot;), l’URL devient unique et vous assurez qu’aucun autre cache entre le système AEM et votre écran ne peut être mis en cache. Habituellement, les suspects se retrouvent dans un cache &quot;vernis&quot; devant le Répartiteur, un CDN ou même le cache du navigateur. Encore : Ne fais pas ça. Vous souhaitez que vos ressources soient mises en cache autant et aussi longtemps que possible. Le cache est votre ami. Ne tuez pas d&#39;amis.
 
 #### Invalidation automatique
 
