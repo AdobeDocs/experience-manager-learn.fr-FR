@@ -9,9 +9,9 @@ audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
 translation-type: tm+mt
-source-git-commit: c85a59a8bd180d5affe2a5bf5939dabfb2776d73
+source-git-commit: 3f973e36531a2d04cbaf6bb8dd70b39fef7d8b2f
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -114,10 +114,14 @@ Si vous êtes invité à créer un fichier de stockage de clés, faites-le. Ce f
 Dans la console de stockage des clés de l’utilisateur, cliquez sur **[!UICONTROL Ajouter la clé privée à partir du fichier KeyStore]** et ajoutez les informations suivantes :
 
 * **[!UICONTROL Nouvel alias]** : l’alias de la clé en AEM. Il peut s’agir de n’importe quoi et ne doit pas nécessairement correspondre au nom du fichier de stockage de clés créé avec la commande openssl.
-* **[!UICONTROL Fichier]** de stockage de clés : sortie de la commande openssl pkcs12 (keystore.p12)
-* **[!UICONTROL Alias]** de clé privée : Mot de passe défini dans la commande openssl pkcs12 par  `-  passout` argument.
+* **[!UICONTROL Fichier]** KeyStore : sortie de la commande openssl pkcs12 (keystore.p12)
+* **[!UICONTROL KeyStore File Password]** : Mot de passe défini dans la commande openssl pkcs12 par  `-passout` argument.
+* **[!UICONTROL Alias]** de clé privée : Valeur fournie à l&#39; `-name` argument dans la commande openssl pkcs12 ci-dessus (c.-à-d.  `my-key`).
+* **[!UICONTROL Mot de passe]** de clé privée : Mot de passe défini dans la commande openssl pkcs12 par  `-passout` argument.
 
-* **[!UICONTROL Mot de passe]** de clé privée : Mot de passe défini dans la commande openssl pkcs12 par  `-  passout` argument.
+>[!CAUTION]
+>
+>Le mot de passe du fichier KeyStore et le mot de passe de la clé privée sont identiques pour les deux entrées. La saisie d’un mot de passe non concordant entraîne l’importation de la clé.
 
 ### Vérifiez que la clé privée est chargée dans le fichier de stockage des clés AEM {#verify-the-private-key-is-loaded-into-the-aem-keystore}
 
