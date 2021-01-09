@@ -10,10 +10,10 @@ audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
 translation-type: tm+mt
-source-git-commit: 4cfbf975919eb38413be8446b70b107bbfebb845
+source-git-commit: 398b9f855556fc425b034986a7f21159297dcba5
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 1%
+source-wordcount: '1614'
+ht-degree: 2%
 
 ---
 
@@ -111,6 +111,39 @@ $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
 $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
 ```
+
+## Simuler la distribution de contenu {#content-distribution}
+
+Dans un véritable environnement Cloud Service, le contenu est distribué du service d’auteur au service de publication à l’aide de [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html) et du canal d’Adobe. Le [pipeline d&#39;Adobe](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=en#content-distribution) est un microservice isolé disponible uniquement dans l&#39;environnement de nuage.
+
+Au cours du développement, il peut être souhaitable de simuler la distribution du contenu à l’aide du service local Auteur et Publication. Pour ce faire, vous pouvez activer les agents de réplication hérités.
+
+>[!NOTE]
+>
+> Les agents de réplication ne peuvent être utilisés que dans le fichier JAR de démarrage rapide local et ne fournissent qu’une simulation de diffusion du contenu.
+
+1. Connectez-vous au service **Auteur** et accédez à [http://localhost:4502/etc/replication/agents.author.html](http://localhost:4502/etc/replication/agents.author.html).
+1. Cliquez sur **Agent par défaut (publication)** pour ouvrir l&#39;agent de réplication par défaut.
+1. Cliquez sur **Modifier** pour ouvrir la configuration de l&#39;agent.
+1. Sous l&#39;onglet **Paramètres**, mettez à jour les champs suivants :
+
+   + **Activé** - cochez la valeur true
+   + **ID**  utilisateur de l&#39;agent - Laissez ce champ vide
+
+   ![Configuration de l&#39;agent de réplication - Paramètres](assets/aem-runtime/settings-config.png)
+
+1. Sous l&#39;onglet **Transport**, mettez à jour les champs suivants :
+
+   + **URI** - `http://localhost:4503/bin/receive?sling:authRequestLogin=1`
+   + **User** - `admin`
+   + **Mot de passe** - `admin`
+
+   ![Configuration de l&#39;agent de réplication - Transport](assets/aem-runtime/transport-config.png)
+
+1. Cliquez sur **Ok** pour enregistrer la configuration et activer l&#39;agent de réplication **Par défaut**.
+1. Vous pouvez maintenant apporter des modifications au contenu du service Auteur et les publier dans le service Publier.
+
+![Publier la page](assets/aem-runtime/publish-page-changes.png)
 
 ## Modes de démarrage rapide des débuts JAR
 
