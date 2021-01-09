@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: service cloud
 team: TM
 translation-type: tm+mt
-source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
+source-git-commit: 81c704240f163ccd151a61643f589f825a288705
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '218'
 ht-degree: 37%
 
 ---
@@ -23,6 +23,12 @@ ht-degree: 37%
    + [Introduction à Sling](./underlying-technology/introduction-sling.md)
    + [Présentation du niveau Auteur et Publication](./underlying-technology/introduction-author-publish.md)
    + [Présentation du Dispatcher](./underlying-technology/introduction-dispatcher.md)
++ Cloud Manager {#cloud-manager}
+   + [Programmes](./cloud-manager/programs.md)
+   + [Environnements](./cloud-manager/environments.md)
+   + [Pipeline de production CI/CD](./cloud-manager/cicd-production-pipeline.md)
+   + [Tuyauterie non-en-production CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
+   + [Activité](./cloud-manager/activity.md)
 + Environnement de développement local configuré {#local-development-environment-set-up}
    + [Présentation](./local-development-environment/overview.md)
    + [Outils de développement](./local-development-environment/development-tools.md)
