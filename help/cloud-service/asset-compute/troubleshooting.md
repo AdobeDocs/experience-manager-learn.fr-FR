@@ -10,9 +10,9 @@ audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: 649d971ecaa67c0d1dd2636f3c212bfee3d13561
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,15 @@ Vous trouverez ci-dessous un index des problèmes et erreurs courants, ainsi que
 + __Résolution__ : Vérifiez le code de travail personnalisé et assurez-vous que tous les appels asynchrones sont effectués de manière synchrone à l’aide de  `await`.
 
 ## Outil de développement{#development-tool}
+
+### Fichier Console.json manquant dans le projet d&#39;Asset compute{#missing-console-json}
+
++ __Erreur :__ Erreur : Fichiers requis manquants lors de la validation (.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) sur async setupAssetCompute (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
++ __Cause :__ Le  `console.json` fichier est absent de la racine du projet d&#39;Asset compute
++ __Résolution :__ Télécharger un nouveau  `console.json` formulaire à partir de votre projet Adobe I/O
+   1. Dans console.adobe.io, ouvrez le projet Adobe I/O que le projet Asset compute est configuré pour utiliser
+   1. Appuyez sur le bouton __Télécharger__ en haut à droite.
+   1. Enregistrez le fichier téléchargé à la racine de votre projet d’Asset compute en utilisant le nom de fichier `console.json`.
 
 ### Retrait YAML incorrect dans manifest.yml{#incorrect-yaml-indentation}
 
@@ -95,7 +104,6 @@ L&#39;outil de développement d&#39;Asset compute peut entrer un état où il ex
    + Ou, validez le fichier généré par le test sur `/build/test-worker/<worker-name>/<test-run-timestamp>/<test-case>/rendition.<extension>`, validez-le correctement et utilisez-le comme fichier de rendu attendu.
 
 ## Déboguer
-
 
 ### Le débogueur ne joint pas {#debugger-does-not-attach}
 
