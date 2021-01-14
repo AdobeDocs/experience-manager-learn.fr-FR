@@ -11,10 +11,10 @@ mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '1590'
-ht-degree: 2%
+source-wordcount: '1599'
+ht-degree: 3%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
-> L’AEM API GraphQL pour la Diffusion de fragments de contenu sera publiée au début de 2021.
-> La documentation correspondante est disponible à des fins de prévisualisation.
+> L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
+> Contactez l&#39;assistance Adobe pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 Ce chapitre offre la configuration rapide d&#39;un environnement local pour voir une application externe consommer du contenu d&#39;AEM à l&#39;aide des API AEM GraphQL. Les chapitres suivants du didacticiel seront tirés de cette configuration.
 
@@ -111,7 +111,7 @@ Des échantillons de contenu du site de référence WKND seront installés pour 
 
 >[!NOTE]
 >
-> Si vous utilisez un environnement Cloud Service, consultez la documentation sur la façon de [déployer une base de code telle que le site de référence WKND vers un environnement Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying).
+> Si vous utilisez un environnement Cloud Service, consultez la documentation sur la façon de [déployer une base de code telle que le site de référence WKND vers un environnement Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#deploying).
 
 ## Installer les points de terminaison GraphQL{#graphql-endpoint}
 
