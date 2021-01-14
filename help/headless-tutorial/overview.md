@@ -2,9 +2,9 @@
 title: aem didacticiels sans en-tête
 description: Ensemble de didacticiels sur l’utilisation de Adobe Experience Manager en tant que CMS sans en-tête.
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '373'
 ht-degree: 5%
 
 ---
@@ -18,8 +18,8 @@ Adobe Experience Manager propose plusieurs options pour définir des points de t
 
 >[!CAUTION]
 >
-> L’AEM API GraphQL pour la Diffusion de fragments de contenu sera publiée au début de 2021.
-> La documentation correspondante est disponible à des fins de prévisualisation.
+> L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
+> Contactez l&#39;assistance Adobe pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 aem API GraphQL pour les fragments de contenu
 prend en charge les scénarios CMS sans tête dans lesquels les applications clientes externes effectuent le rendu d’expériences à l’aide de contenu géré dans AEM.
