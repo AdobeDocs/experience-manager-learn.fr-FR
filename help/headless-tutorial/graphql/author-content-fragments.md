@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6713
 thumbnail: 22451.jpg
 translation-type: tm+mt
-source-git-commit: 2ea667d3bdb73fa4da87b877f14db77d896448a7
+source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '815'
 ht-degree: 2%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
-> L’AEM API GraphQL pour la Diffusion de fragments de contenu sera publiée au début de 2021.
-> La documentation correspondante est disponible à des fins de prévisualisation.
+> L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
+> Contactez l&#39;assistance Adobe pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 Dans ce chapitre, vous allez créer et modifier un fragment de contenu en fonction du [nouveau modèle de fragment de contenu du contributeur](./content-fragment-models.md). Vous apprendrez également à créer des variantes de fragments de contenu.
 
