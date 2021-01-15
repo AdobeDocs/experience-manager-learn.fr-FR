@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5252
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 178ba3dbcb6f2050a9c56303bbabbcfcbead3e79
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '394'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Souvent, il est utile de &quot;traîner&quot; le `error.log` qui envoie sa sorti
 
 Les journaux du répartiteur sont générés en stdout lorsque `bin/docker_run` est appelé, mais les journaux peuvent être directement accessibles avec dans le contenu du Docker.
 
-### Accès aux journaux dans le conteneur Docker
+### Accès aux journaux dans le conteneur Docker{#dispatcher-tools-access-logs}
 
 Les journaux du répartiteur peuvent être directement accessibles dans le conteneur Docker à `/etc/httpd/logs`.
 
@@ -73,7 +73,10 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 /# exit
 ```
 
-### Copie des journaux Docker vers le système de fichiers local
+_L&#39; `<CONTAINER ID>` in  `docker exec -it <CONTAINER ID> /bin/sh` doit être remplacé par l&#39;ID de CONTENEUR cible Docker répertorié dans la  `docker ps` commande._
+
+
+### Copie des journaux Docker vers le système de fichiers local{#dispatcher-tools-copy-logs}
 
 Les journaux du répartiteur peuvent être copiés hors du conteneur Docker à `/etc/httpd/logs` vers le système de fichiers local pour inspection à l&#39;aide de votre outil d&#39;analyse de journal préféré. Notez qu’il s’agit d’une copie ponctuelle et qu’elle ne fournit pas de mises à jour en temps réel des journaux.
 
@@ -90,3 +93,4 @@ $ ls
     dispatcher.log          healthcheck_access_log  httpd_access.log        httpd_error.log
 ```
 
+_L&#39; `<CONTAINER_ID>` in  `docker cp <CONTAINER_ID>:/var/log/apache2 ./` doit être remplacé par l&#39;ID de CONTENEUR cible Docker répertorié dans la  `docker ps` commande._
