@@ -6,9 +6,9 @@ user-guide-description: Ensemble de ressources AEM Forms pour les développeurs 
 breadcrumb-title: Tutoriels d’AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 243e26e2403e3d7816a0dd024ffbe73743827c7c
+source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '938'
 ht-degree: 6%
 
 ---
@@ -125,6 +125,18 @@ ht-degree: 6%
    + [Convertir un formulaire PDF en formulaire adaptatif](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurer un formulaire adaptatif converti](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Utilisation de modèles XDP avec Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
++ Signer plusieurs Forms{#sign-multiple-documents}
+   + [Présentation](sign-multiple-documents/introduction.md)
+   + [Configurer la source de données](sign-multiple-documents/configure-data-source.md)
+   + [Créer un service OSGi](sign-multiple-documents/create-osgi-service.md)
+   + [Créer un flux de travail principal](sign-multiple-documents/create-main-workflow.md)
+   + [Mettre à jour le processus d’état de signature](sign-multiple-documents/update-signature-status.md)
+   + [Personnaliser le composant Résumé](sign-multiple-documents/customize-summary-component.md)
+   + [Créer une bibliothèque cliente](sign-multiple-documents/create-client-lib.md)
+   + [Créer un modèle de formulaire](sign-multiple-documents/create-af-template.md)
+   + [Créer un formulaire initial](sign-multiple-documents/create-initial-form.md)
+   + [Créer Forms pour la signature](sign-multiple-documents/create-forms-for-signing.md)
+   + [Test de la solution](sign-multiple-documents/testing-and-trouble-shooting.md)
 + Variables du flux de travail AEM{#variables-aem-workflow}
    + [Introduction - Variables dans le processus](variables-aem-workflow/introduction.md)
    + [Variables XML](variables-aem-workflow/part1.md)
