@@ -11,7 +11,7 @@ mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: bfcc9dbb70753f985a2e47f329dbb9f43f5805e2
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 1%
@@ -73,7 +73,7 @@ Une exigence commune sera de requête pour plusieurs fragments de contenu.
 
    `fullName` et  `occupation` sont des propriétés simples. Rappelez-vous du chapitre [Définir des modèles de fragments de contenu](./content-fragment-models.md) que `fullName` et `occupation` sont les valeurs utilisées lors de la définition du **Nom de propriété** des champs respectifs.
 
-1. `pictureReference` et  `biography` représentent des champs plus complexes. Mettez à jour la requête avec ce qui suit pour renvoyer des données sur les champs `pictureReference` et `biography`.
+1. `pictureReference` et  `biographyText` représentent des champs plus complexes. Mettez à jour la requête avec ce qui suit pour renvoyer des données sur les champs `pictureReference` et `biographyText`.
 
    ```graphql
    {
@@ -82,7 +82,7 @@ Une exigence commune sera de requête pour plusieurs fragments de contenu.
          _path
          fullName
          occupation
-         biography {
+         biographyText {
            html
          }
          pictureReference {
@@ -97,7 +97,7 @@ Une exigence commune sera de requête pour plusieurs fragments de contenu.
    }
    ```
 
-   `biography` est un champ de texte multiligne et l&#39;API GraphQL nous permet de choisir divers formats pour les résultats, par exemple  `html`,  `markdown`ou  `json`  `plaintext`.
+   `biographyText` est un champ de texte multiligne et l&#39;API GraphQL nous permet de choisir divers formats pour les résultats, par exemple  `html`,  `markdown`ou  `json`  `plaintext`.
 
    `pictureReference` est une référence de contenu et est censée être une image. Par conséquent, un  `ImageRef` objet intégré est utilisé. Cela nous permet de demander des données supplémentaires sur l&#39;image en tant que référence, comme `width` et `height`.
 
