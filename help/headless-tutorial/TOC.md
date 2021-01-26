@@ -12,9 +12,9 @@ activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '103'
 ht-degree: 31%
 
 ---
@@ -40,3 +40,7 @@ ht-degree: 31%
    + [4 - Exploration des API GraphQL](./graphql/explore-graphql-api.md)
    + [5 - Requête à partir d’une application externe](./graphql/graphql-and-external-app.md)
    + [6 - Modélisation avancée des données à l’aide des références de fragments](./graphql/fragment-references.md)
++ Authentification basée sur un jeton {#authentication}
+   + [Présentation](./authentication/overview.md)
+   + [1 - Jeton d&#39;accès de développement local](./authentication/local-development-access-token.md)
+   + [2 - Informations d’identification du service](./authentication/service-credentials.md)
