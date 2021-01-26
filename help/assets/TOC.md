@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriels d’AEM Assets
 sub-product: ressources
 team: TM
 translation-type: tm+mt
-source-git-commit: aa349fba9e0f1df97316105ada62ff9b32501573
+source-git-commit: 94ea85d4a96bf9da62c5658961474a12663ac77b
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 36%
+source-wordcount: '259'
+ht-degree: 37%
 
 ---
 
@@ -62,6 +62,7 @@ ht-degree: 36%
 
 + Partage et distribution{#sharing}
    + [Téléchargement de fichiers](./sharing/download.md)
+   + [Publier les ressources](./sharing/publish.md)
    + [Brand Portal](./sharing/brand-portal.md)
    + Partage de ressources{#assets-share}
       + [Asset Share Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
