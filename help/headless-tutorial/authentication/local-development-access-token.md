@@ -10,9 +10,9 @@ audience: developer
 kt: 6785
 thumbnail: 330477.jpg
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Les développeurs qui construisent des intégrations nécessitant un accès prog
 
 ![Obtenir un Jeton d&#39;accès de développement local](assets/local-development-access-token/getting-a-local-development-access-token.png)
 
-Le Jeton d&#39;accès de développement local permet d’accéder aux services d’auteur et de publication AEM en tant qu’utilisateur ayant généré le jeton, ainsi que leurs autorisations. Bien qu’il s’agisse d’un jeton de développement, ne partagez pas ce jeton.
+Le Jeton d&#39;accès de développement local permet d’accéder aux services d’auteur et de publication AEM en tant qu’utilisateur ayant généré le jeton, ainsi que leurs autorisations. Bien qu’il s’agisse d’un jeton de développement, ne partagez pas ce jeton ou ne stockez pas ce dernier dans le contrôle de code source.
 
 1. Dans [Adobe Admin Console](https://adminconsole.adobe.com/), vérifiez que vous, développeur, êtes membre de :
    + __Cloud Manager - Profil produit__ DeveloperIMS (accorde l’accès à AEM Developer Console)
@@ -44,7 +44,7 @@ Le Jeton d&#39;accès de développement local permet d’accéder aux services d
 
 ![Console développeur AEM - Intégrations - Obtenir un jeton de développement local](./assets/local-development-access-token/developer-console.png)
 
-## Télécharger le Jeton d&#39;accès de développement local {#download-local-development-access-token}
+## Utilisé le Jeton d&#39;accès de développement local {#use-local-development-access-token}
 
 ![Jeton d&#39;accès de développement local - Application externe](assets/local-development-access-token/local-development-access-token-external-application.png)
 
@@ -55,11 +55,11 @@ Le Jeton d&#39;accès de développement local permet d’accéder aux services d
 1. L’application externe crée des requêtes HTTP pour AEM en tant que Cloud Service, ajoutant le Jeton d&#39;accès de développement local en tant que jeton de garde à l’en-tête Autorisation des requêtes HTTP.
 1. aem en tant que Cloud Service reçoit la requête HTTP, authentifie la requête et effectue le travail demandé par la requête HTTP, puis renvoie une réponse HTTP à l’application externe.
 
-### Application externe
+### Exemple d’application externe
 
 Nous allons créer une application JavaScript externe simple pour illustrer comment accéder par programmation à l&#39;AEM en tant que Cloud Service via HTTPS à l&#39;aide du jeton d&#39;accès de développement local. Cela illustre comment _toute application ou système_ s&#39;exécutant en dehors de l&#39;AEM, quelle que soit la structure ou la langue, peut utiliser le jeton d&#39;accès pour s&#39;authentifier et accéder par programmation à l&#39;AEM en tant que Cloud Service. Dans la section [suivante](./service-credentials.md), nous mettrons à jour ce code d&#39;application afin de prendre en charge l&#39;approche de génération d&#39;un jeton à des fins de production.
 
-Cette application est exécutée à partir de la ligne de commande et met à jour AEM métadonnées de fichier à l’aide des API HTTP AEM Assets, en utilisant le flux suivant :
+Cet exemple d’application est exécuté à partir de la ligne de commande et met à jour AEM métadonnées de fichier à l’aide des API HTTP AEM Assets, en suivant le flux suivant :
 
 1. Lit les paramètres de la ligne de commande (`getCommandLineParams()`)
 1. Obtient le jeton d&#39;accès utilisé pour s’authentifier auprès de AEM en tant que Cloud Service (`getAccessToken(...)`)
@@ -208,11 +208,11 @@ L’élément clé de l’authentification programmée pour AEM à l’aide du j
    }
    ```
 
-   Examinez les appels `fetch(..)` dans `listAssetsByFolder(...)` et `updateMetadata(...)` et notez `headers` que l&#39;en-tête de requête HTTP `Authorization` est défini avec la valeur `Bearer <ACCESS TOKEN>`. C’est ainsi que la requête HTTP provenant de l’application externe s’authentifie auprès de l’AEM en tant que Cloud Service.
+   Examinez les appels `fetch(..)` dans `listAssetsByFolder(...)` et `updateMetadata(...)` et notez `headers` que l&#39;en-tête de requête HTTP `Authorization` est défini avec la valeur `Bearer ACCESS_TOKEN`. C’est ainsi que la requête HTTP provenant de l’application externe s’authentifie auprès de l’AEM en tant que Cloud Service.
 
    ```javascript
    ...
-   return fetch(`${params.aem}${ASSETS_HTTP_API}${folder}.json?configid=ims`, {
+   return fetch(`${params.aem}${ASSETS_HTTP_API}${folder}.json`, {
                method: 'get',
                headers: { 
                    'Content-Type': 'application/json',
@@ -267,4 +267,6 @@ Vérifiez que les métadonnées ont été mises à jour en vous connectant à l&
 
 ## Étapes suivantes
 
-Maintenant que nous avons accédé par programmation à AEM en tant que Cloud Service à l&#39;aide du jeton de développement local, nous devons mettre à jour le code vers.
+Maintenant que nous avons accédé par programmation à AEM en tant que Cloud Service à l’aide du jeton de développement local, nous devons mettre à jour l’application afin de la gérer à l’aide des informations d’identification du service, afin que cette application puisse être utilisée dans un contexte de production.
+
++ [Utilisation des informations d’identification du service](./service-credentials.md)
