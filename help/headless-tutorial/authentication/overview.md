@@ -10,9 +10,9 @@ audience: developer
 kt: 6785
 thumbnail: 330460.jpg
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 1%
 
 ---
@@ -43,27 +43,27 @@ Le flux d’exécution de l’application Node.js se présente comme suit :
 
 1. L’application Node.js est appelée à partir de la ligne de commande.
 1. Les paramètres de ligne de commande définissent :
-   + L&#39;AEM en tant qu&#39;hôte Cloud Service auquel se connecter (`aem`)
+   + L’AEM en tant qu’hôte de service Auteur Cloud Service auquel se connecter (`aem`)
    + Dossier de ressources AEM dont les ressources seront mises à jour (`folder`)
    + La propriété et la valeur de métadonnées à mettre à jour (`propertyName` et `propertyValue`)
    + Chemin d’accès local au fichier fournissant les informations d’identification requises pour accéder à AEM en tant que Cloud Service (`file`)
-1. Le jeton d&#39;accès utilisé pour s’authentifier auprès de AEM est dérivé du fichier JSON d’informations d’identification fourni par les paramètres de ligne de commande.
+1. Le jeton d&#39;accès utilisé pour s&#39;authentifier auprès de AEM est dérivé du fichier JSON fourni via le paramètre de ligne de commande `file`
 
-   a. Si les informations d’identification de service utilisées pour le développement non local sont fournies dans les informations d’identification JSON, le jeton d&#39;accès est récupéré à partir des API IMS d’Adobe.
-1. L’application utilise le jeton d&#39;accès pour accéder à AEM et à la liste de tous les fichiers du dossier spécifié dans les paramètres de ligne de commande.
-1. Pour chaque fichier du dossier, l’application met à jour ses métadonnées en fonction du nom de propriété et de la valeur spécifiés dans les paramètres de ligne de commande.
+   a. Si les informations d’identification de service utilisées pour le développement non local sont fournies dans le fichier JSON (`file`), le jeton d&#39;accès est récupéré à partir des API IMS d’Adobe.
+1. L’application utilise le jeton d&#39;accès pour accéder à AEM et à la liste de tous les actifs du dossier spécifié dans le paramètre de ligne de commande `folder`.
+1. Pour chaque fichier du dossier, l’application met à jour ses métadonnées en fonction du nom de propriété et de la valeur spécifiés dans les paramètres de ligne de commande `propertyName` et `propertyValue`.
 
 Bien que cette application exemple soit Node.js, ces interactions peuvent être développées à l’aide de différents langages de programmation et exécutées à partir d’autres systèmes externes.
 
 ## Jeton d&#39;accès de développement local
 
-Des Jetons d&#39;accès de développement local sont générés pour un AEM spécifique en tant qu’environnement Cloud Service et permettent d’accéder aux services d’auteur et de publication.  Ces jetons d&#39;accès sont temporaires et ne doivent être utilisés que pour faciliter le développement d&#39;applications ou de systèmes externes qui interagissent avec les AEM via HTTP. Au lieu d&#39;un développeur qui doit obtenir et gérer des informations d&#39;identification de service fiables, il peut rapidement et facilement générer automatiquement un jeton d&#39;accès temporaire qui lui permet de développer son intégration.
+Des Jetons d&#39;accès de développement local sont générés pour un AEM spécifique en tant qu’environnement Cloud Service et permettent d’accéder aux services d’auteur et de publication.  Ces jetons d&#39;accès sont temporaires et ne doivent être utilisés que lors du développement d&#39;applications ou de systèmes externes qui interagissent avec les AEM via HTTP. Au lieu d&#39;un développeur qui doit obtenir et gérer des informations d&#39;identification de service fiables, il peut rapidement et facilement générer automatiquement un jeton d&#39;accès temporaire qui lui permet de développer son intégration.
 
 + [Utilisation du Jeton d&#39;accès de développement local](./local-development-access-token.md)
 
 ## Informations d’identification du service
 
-Les informations d’identification de service sont les informations d’identification de base utilisées dans tous les scénarios autres que le développement - la production la plus évidente - qui facilitent l’authentification et l’interaction d’une application externe ou d’un système avec l’AEM en tant que Cloud Service sur HTTP. Les informations d&#39;identification de service elles-mêmes ne sont pas directement envoyées à AEM pour authentification, mais l&#39;application externe les utilise pour générer un JWT, qui est échangé avec les API d&#39;Adobe IMS _pour_ un jeton d&#39;accès sécurisé, qui peut ensuite être utilisé pour authentifier les requêtes HTTP à AEM en tant que Cloud Service.
+Les informations d’identification de service sont les informations d’identification de base utilisées dans tous les scénarios autres que le développement - la production la plus évidente - qui facilitent l’authentification d’une application externe ou la capacité d’un système à s’authentifier et à interagir avec l’AEM en tant que Cloud Service sur HTTP. Les informations d&#39;identification de service elles-mêmes ne sont pas envoyées à AEM pour authentification, mais l&#39;application externe les utilise pour générer un JWT, qui est échangé avec les API _de l&#39;Adobe IMS pour_ un jeton d&#39;accès, qui peut ensuite être utilisé pour authentifier les requêtes HTTP auprès AEM en tant que Cloud Service.
 
 + [Utilisation des informations d’identification du service](./service-credentials.md)
 
