@@ -10,9 +10,9 @@ audience: developer
 kt: 6785
 thumbnail: 330519.jpg
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1824'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,11 @@ Les intégrations à l&#39;AEM en tant que Cloud Service doivent être en mesure
 
 Les informations d&#39;identification des services peuvent sembler similaires [Jetons d&#39;accès de développement local](./local-development-access-token.md) mais sont différentes de plusieurs manières clés :
 
-+ Les informations d’identification de service sont _et non_ jetons d&#39;accès, mais elles sont utilisées pour obtenir des jetons d&#39;accès.
-+ Les informations d’identification du service sont permanentes et ne changent pas à moins d’être révoquées, tandis que les Jetons d&#39;accès de développement local expirent tous les jours.
-+ Informations d’identification de service pour un AEM en tant que mappage d’environnement Cloud Service pour un utilisateur AEM unique, tandis que les Jetons d&#39;accès de développement local s’authentifient en tant qu’utilisateur AEM qui a généré le jeton d&#39;accès.
++ Les informations d’identification de service sont _non_ jetons d&#39;accès, mais elles sont utilisées pour _obtenir_ jetons d&#39;accès.
++ Les informations d’identification du service sont plus permanentes (expirent tous les 365 jours) et ne changent pas à moins d’être révoquées, tandis que les Jetons d&#39;accès de développement local expirent tous les jours.
++ Informations d’identification de service pour un AEM en tant que mappage d’environnement Cloud Service pour un utilisateur de compte technique unique AEM, tandis que les Jetons d&#39;accès de développement local s’authentifient en tant qu’utilisateur AEM qui a généré le jeton d&#39;accès.
+
+Les informations d&#39;identification des services et les jetons d&#39;accès qu&#39;ils génèrent, ainsi que les Jetons d&#39;accès de développement local, doivent être gardés secrets, car les trois peuvent être utilisés pour obtenir l&#39;accès à leurs AEM respectives en tant qu&#39;environnements Cloud Service.
 
 ## Générer les informations d’identification du service
 
@@ -39,7 +41,7 @@ La génération des informations d’identification du service est divisée en d
 
 ### Initialisation des informations d’identification du service
 
-Contrairement aux Jetons d&#39;accès de développement local, les informations d’identification des services nécessitent une initialisation unique par l’administrateur IMS de votre organisme d’Adobe avant de pouvoir être téléchargées.
+Contrairement aux Jetons d&#39;accès de développement local, les informations d’identification des services nécessitent une initialisation _unique_ de votre administrateur IMS d’organisation d’Adobes avant de pouvoir être téléchargées.
 
 ![Initialisation des informations d’identification du service](assets/service-credentials/initialize-service-credentials.png)
 
@@ -55,7 +57,7 @@ __Il s’agit d’une initialisation unique par AEM en tant qu’environnement C
 
 ![Console développeur d&#39;AEM - Intégrations - Obtenir les informations d&#39;identification du service](./assets/service-credentials/developer-console.png)
 
-Une fois l’AEM en tant qu’informations d’identification du service d’environnement Cloud Service initialisées, d’autres utilisateurs peuvent les télécharger.
+Une fois que l&#39;AEM en tant qu&#39;informations d&#39;identification du service d&#39;environnement Cloud Service a été initialisée, d&#39;autres développeurs AEM de votre Adobe IMS Org peuvent les télécharger.
 
 ### Télécharger les informations d’identification du service
 
@@ -71,7 +73,7 @@ Le téléchargement des informations d’identification du service suit les mêm
 1. Appuyez sur l’onglet __Intégrations__.
 1. Appuyez sur le bouton __Obtenir les informations d&#39;identification de service__.
 1. Appuyez sur le bouton de téléchargement dans le coin supérieur gauche pour télécharger le fichier JSON contenant la valeur Informations d’identification du service, puis enregistrez le fichier dans un emplacement sécurisé.
-   + _Si ces informations d’identification de service sont compromises, demandez immédiatement au service d’assistance à l’Adobe de les faire révoquer._
+   + _Si les informations d’identification du service sont compromises, demandez immédiatement au service d’assistance Adobe de les révoquer._
 
 ## Installation des informations d’identification du service
 
@@ -137,38 +139,38 @@ Cet exemple d’application est basé sur Node.js. Il est donc préférable d’
 
 1. Mettez à jour `getAccessToken(..)` pour examiner le contenu du fichier JSON et déterminer s’il représente un Jeton d&#39;accès de développement local ou des informations d’identification de service. Pour ce faire, il suffit de vérifier l&#39;existence de la propriété `.accessToken`, qui n&#39;existe que pour le Jeton d&#39;accès de développement local JSON.
 
-Si des informations d’identification de service sont fournies, l’application génère un JWT et l’échange avec un Adobe IMS pour un jeton d&#39;accès. Nous utiliserons la fonction [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) de `auth(...)` qui génère toutes deux un JWT et l&#39;échange pour un jeton d&#39;accès dans un appel de fonction unique.  Les paramètres de `auth(..)` sont un objet [JSON constitué d&#39;informations spécifiques](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) disponibles à partir du JSON d&#39;informations d&#39;identification du service, comme décrit ci-dessous dans le code.
+   Si des informations d’identification de service sont fournies, l’application génère un JWT et l’échange avec un Adobe IMS pour un jeton d&#39;accès. Nous utiliserons la fonction [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) de `auth(...)` qui génère toutes deux un JWT et l&#39;échange pour un jeton d&#39;accès dans un appel de fonction unique.  Les paramètres de `auth(..)` sont un objet [JSON constitué d&#39;informations spécifiques](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) disponibles à partir du JSON d&#39;informations d&#39;identification du service, comme décrit ci-dessous dans le code.
 
-```javascript
- async function getAccessToken(developerConsoleCredentials) {
+   ```javascript
+    async function getAccessToken(developerConsoleCredentials) {
+   
+        if (developerConsoleCredentials.accessToken) {
+            // This is a Local Development access token
+            return developerConsoleCredentials.accessToken;
+        } else {
+            // This is the Service Credentials JSON object that must be exchanged with Adobe IMS for an access token
+            let serviceCredentials = developerConsoleCredentials.integration;
+   
+            // Use the @adobe/jwt-auth library to pass the service credentials generated a JWT and exchange that with Adobe IMS for an access token.
+            // If other programming languages are used, please see these code samples: https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md
+            let { access_token } = await auth({
+                clientId: serviceCredentials.technicalAccount.clientId, // Client Id
+                technicalAccountId: serviceCredentials.id,              // Technical Account Id
+                orgId: serviceCredentials.org,                          // Adobe IMS Org Id
+                clientSecret: serviceCredentials.technicalAccount.clientSecret, // Client Secret
+                privateKey: serviceCredentials.privateKey,              // Private Key to sign the JWT
+                metaScopes: serviceCredentials.metascopes.split(','),   // Meta Scopes defining level of access the access token should provide
+                ims: `https://${serviceCredentials.imsEndpoint}`,       // IMS endpoint used to obtain the access token from
+            });
+   
+            return access_token;
+        }
+    }
+   ```
 
-     if (developerConsoleCredentials.accessToken) {
-         // This is a Local Development access token
-         return developerConsoleCredentials.accessToken;
-     } else {
-         // This is the Service Credentials JSON object that must be exchanged with Adobe IMS for an access token
-         let serviceCredentials = developerConsoleCredentials.integration;
+   Désormais, selon le fichier JSON transmis par le biais de ce paramètre de ligne de commande `file`, que ce soit le JSON du Jeton d&#39;accès de développement local ou le JSON des informations d’identification du service, l’application dérive un jeton d&#39;accès.
 
-         // Use the @adobe/jwt-auth library to pass the service credentials generated a JWT and exchange that with Adobe IMS for an access token.
-         // If other programming languages are used, please see these code samples: https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/samples/samples.md
-         let { access_token } = await auth({
-             clientId: serviceCredentials.technicalAccount.clientId, // Client Id
-             technicalAccountId: serviceCredentials.id,              // Technical Account Id
-             orgId: serviceCredentials.org,                          // Adobe IMS Org Id
-             clientSecret: serviceCredentials.technicalAccount.clientSecret, // Client Secret
-             privateKey: serviceCredentials.privateKey,              // Private Key to sign the JWT
-             metaScopes: serviceCredentials.metascopes.split(','),   // Meta Scopes defining level of access the access token should provide
-             ims: `https://${serviceCredentials.imsEndpoint}`,       // IMS endpoint used to obtain the access token from
-         });
-
-         return access_token;
-     }
- }
-```
-
-    Désormais, en fonction du fichier JSON transmis par le biais de ce paramètre de ligne de commande &quot;file&quot;, soit le JSON du Jeton d&#39;accès de développement local, soit le JSON des informations d’identification du service, l’application dérive un jeton d&#39;accès.
-    
-    N&#39;oubliez pas que même si les informations d&#39;identification du service n&#39;expirent pas, le JWT et le jeton d&#39;accès correspondant le font et doivent être actualisés 12 heures après l&#39;émission. Pour ce faire, vous pouvez utiliser un &quot;refresh_token&quot; [fourni par l&#39;Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens).
+   N’oubliez pas que, même si les informations d’identification du service n’expirent pas, le JWT et le jeton d&#39;accès correspondant le font et doivent être actualisés avant leur expiration. Pour ce faire, vous pouvez utiliser un `refresh_token` [fourni par l&#39;Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens).
 
 1. Une fois ces modifications en place et le JSON d&#39;identification du service téléchargé depuis la Console AEM Developer Console (et, pour des raisons de simplicité, enregistré sous `service_token.json` le même dossier que ce `index.js`), exécutez l&#39;application en remplaçant le paramètre de ligne de commande `file` par `service_token.json`, puis mettez à jour `propertyValue` vers une nouvelle valeur afin que les effets soient visibles dans AEM.
 
@@ -241,11 +243,6 @@ La sortie au terminal ressemblera à :
 1. Examinez la valeur de la propriété mise à jour, par exemple __Copyright__ mappé à la propriété JCR `metadata/dc:rights` mise à jour, qui reflète désormais la valeur fournie dans le paramètre `propertyValue`, par exemple __Utilisation restreinte WKND__.
 
 ![Mise à jour des métadonnées d’utilisation restreinte WKND](./assets/service-credentials/asset-metadata.png)
-
-## Révocation des informations d’identification du service
-
-
-
 
 ## Félicitations ! 
 
