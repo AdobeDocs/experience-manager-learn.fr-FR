@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '828'
 ht-degree: 2%
 
 ---
 
 
 # Modélisation avancée des données à l’aide des références de fragments
-
->[!CAUTION]
->
-> L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
-> Contactez l&#39;assistance Adobe pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 Il est possible de référencer un fragment de contenu à partir d’un autre fragment de contenu. Cela permet à un utilisateur de créer des modèles de données complexes avec des relations entre fragments.
 
