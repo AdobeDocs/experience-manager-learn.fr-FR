@@ -10,10 +10,10 @@ user-guide-description: 'Un tutoriel en plusieurs parties pour les développeurs
 breadcrumb-title: Tutoriels d’AEM Sites WKND
 index: y
 translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 83%
+ht-degree: 66%
 
 ---
 
@@ -21,10 +21,10 @@ ht-degree: 83%
 # Prise en main du développement AEM Sites – Tutoriel WKND {#getting-started-wknd-tutorial-develop}
 
 + [Présentation des didacticiels WKND](overview.md)
-+ [Configuration du projet](project-setup.md)
-+ [Notions de base des composants](component-basics.md)
-+ [Pages et modèles](pages-templates.md)
-+ [Bibliothèques côté client](client-side-libraries.md)
-+ [Système de style](style-system.md)
-+ [Composant personnalisé](custom-component.md)
-+ [Test unitaire](unit-testing.md)
++ [1 - Configuration du projet](project-setup.md)
++ [2 - Concepts de base des composants](component-basics.md)
++ [3 - Pages et modèles](pages-templates.md)
++ [4 - Bibliothèques côté client](client-side-libraries.md)
++ [5 - Système de style](style-system.md)
++ [6 - Composant personnalisé](custom-component.md)
++ [7 - Tests unitaires](unit-testing.md)
