@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
 translation-type: tm+mt
-source-git-commit: bfcc9dbb70753f985a2e47f329dbb9f43f5805e2
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1009'
 ht-degree: 1%
 
 ---
 
 
 # Explorez les API GraphQL {#explore-graphql-apis}
-
->[!CAUTION]
->
-> L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
-> Contactez l&#39;assistance Adobe pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 L’API GraphQL de AEM fournit un langage de requête puissant pour exposer les données de fragments de contenu aux applications en aval. Les modèles de fragments de contenu définissent le schéma de données utilisé par les fragments de contenu. Chaque fois qu’un modèle de fragment de contenu est créé ou mis à jour, le schéma est traduit et ajouté au &quot;graphique&quot; qui constitue l’API GraphQL.
 
