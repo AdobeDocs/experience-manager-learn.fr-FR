@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1397'
 ht-degree: 1%
 
 ---
 
 
 # Requête AEM à l’aide de GraphQL à partir d’une application externe
-
->[!CAUTION]
->
-> L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
-> Contactez l&#39;assistance Adobe pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 Dans ce chapitre, nous étudions comment AEM API GraphQL peuvent être utilisées pour piloter l’expérience dans une application externe.
 
