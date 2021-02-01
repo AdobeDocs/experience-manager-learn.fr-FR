@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6678
 thumbnail: 328618.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
 
 
 # Prise en main AEM sans en-tête - GraphQL
-
->[!CAUTION]
->
-> L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
-> Contactez l&#39;assistance Adobe pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 Didacticiel complet illustrant comment créer et exposer du contenu à l’aide des API GraphQL AEM et utilisé par une application externe, dans un scénario CMS sans en-tête.
 
