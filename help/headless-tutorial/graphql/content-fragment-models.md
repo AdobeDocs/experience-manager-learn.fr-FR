@@ -11,20 +11,15 @@ mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
 translation-type: tm+mt
-source-git-commit: eb2b556c5947b15a31a74a86dadd525fb06bcf14
+source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '950'
 ht-degree: 2%
 
 ---
 
 
 # Définition de modèles de fragments de contenu {#content-fragment-models}
-
->[!CAUTION]
->
-> L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
-> Contactez l&#39;assistance Adobe pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 Dans ce chapitre, apprenez à modéliser le contenu et à créer un schéma avec **Modèles de fragment de contenu**. Vous passerez en revue les modèles existants et créerez un nouveau modèle. Vous découvrirez également les différents types de données qui peuvent être utilisés pour définir un schéma dans le cadre du modèle.
 
