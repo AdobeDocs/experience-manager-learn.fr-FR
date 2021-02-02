@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: service cloud
 team: TM
 translation-type: tm+mt
-source-git-commit: 81c704240f163ccd151a61643f589f825a288705
+source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 37%
+source-wordcount: '270'
+ht-degree: 41%
 
 ---
 
@@ -16,24 +16,48 @@ ht-degree: 37%
 # Tutoriels sur Adobe Experience Manager as a Cloud Service {#cloud-service}
 
 + [Présentation](./overview.md)
++ Présentation d’AEM as a Cloud Service{#introduction}
+   + [Qu&#39;est-ce qu&#39;AEM en tant que Cloud Service ?](./introduction/what-is-aem-as-a-cloud-service.md)
+   + [Evolution](./introduction/evolution.md)
+   + [Architecture](./introduction/architecture.md)
+   + [Cloud Manager](./introduction/cloud-manager.md)
 + Technologie sous-jacente {#underlying-technology}
-   + [Présentation de l&#39;architecture AEM](./underlying-technology/introduction-architecture.md)
-   + [Présentation d’OSGi](./underlying-technology/introduction-osgi.md)
-   + [Présentation du référentiel de contenu Java](./underlying-technology/introduction-jcr.md)
-   + [Introduction à Sling](./underlying-technology/introduction-sling.md)
-   + [Présentation du niveau Auteur et Publication](./underlying-technology/introduction-author-publish.md)
-   + [Présentation du Dispatcher](./underlying-technology/introduction-dispatcher.md)
+   + [Architecture AEM](./underlying-technology/introduction-architecture.md)
+   + [les lots OSGi](./underlying-technology/introduction-osgi.md)
+   + [Référentiel de contenu Java](./underlying-technology/introduction-jcr.md)
+   + [Sling](./underlying-technology/introduction-sling.md)
+   + [Services d’auteur et de publication](./underlying-technology/introduction-author-publish.md)
+   + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Cloud Manager {#cloud-manager}
    + [Programmes](./cloud-manager/programs.md)
    + [Environnements](./cloud-manager/environments.md)
    + [Pipeline de production CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Tuyauterie non-en-production CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Activité](./cloud-manager/activity.md)
+   + Ops de développement{#devops}
+      + [Déploiement du code](./cloud-manager/devops/deploy-code.md)
+      + [Fusion de projets](./cloud-manager/devops/merge-projects.md)
+      + [Configuration des tuyaux](./cloud-manager/devops/configure-pipelines.md)
+      + [Intégration continue](./cloud-manager/devops/continuous-integration.md)
+      + [Analyser les résultats des tests](./cloud-manager/devops/analyze-test-results.md)
+      + [Configurations du dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
+      + [API de Cloud Manager](./cloud-manager/devops/cloud-manager-apis.md)
 + Environnement de développement local configuré {#local-development-environment-set-up}
    + [Présentation](./local-development-environment/overview.md)
    + [Outils de développement](./local-development-environment/development-tools.md)
    + [Exécution AEM locale](./local-development-environment/aem-runtime.md)
    + [Outils du répartiteur local](./local-development-environment/dispatcher-tools.md)
++ Développement{#developing}
+   + Concepts de base du développement{#basics}
+      + [SDK AEM](./developing/basics/aem-sdk.md)
+      + [Environnement de développement local](./developing/basics/local-development-environment.md)
+      + [Archétype de projet AEM](./developing/basics/aem-project-archetype.md)
+      + [Structure de projet AEM](./developing/basics/project-structure.md)
+      + [Contenu mutable ou immuable](./developing/basics/mutable-immutable.md)
+      + [Module de structure du référentiel](./developing/basics/repository-structure-package.md)
+      + [Publication de contenu](./developing/basics/content-publishing.md)
+      + [Configurations OSGi](./developing/basics/osgi-configurations.md)
+      + [Migration de la configuration du répartiteur](./developing/basics/dispatcher-configuration.md)
 + Débogage AEM{#debugging}
    + Débogage du SDK AEM{#debugging-aem-sdk}
       + [Présentation](./debugging/aem-sdk-local-quickstart/overview.md)
