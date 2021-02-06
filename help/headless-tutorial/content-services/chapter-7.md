@@ -95,7 +95,7 @@ Le modèle modifiable de l’API Événements (`/content/wknd-mobile/en/api/even
 
 #### Appel du point de terminaison AEM Content Services
 
-Vous trouverez ci-dessous une distillation du code dans le `MainActivity` de l’application mobile responsable de l’appel d’AEM Content Services pour collecter le contenu qui motive l’expérience de l’application mobile.
+Vous trouverez ci-dessous une distillation du code dans le `MainActivity` de l’application mobile, responsable de l’appel d’AEM Content Services pour collecter le contenu qui motive l’expérience de l’application mobile.
 
 ```
 protected void onCreate(Bundle savedInstanceState) {
