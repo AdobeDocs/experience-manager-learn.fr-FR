@@ -130,7 +130,7 @@ L&#39;objectif de ce didacticiel est d&#39;étendre l&#39;application de Journal
 
    >[!CAUTION]
    >
-   > Si vous recevez une erreur au cours de la génération, [vérifiez que votre fichier Maven settings.xml contient le référentiel d’artefacts Maven d’Adobe](https://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html).
+   > Si vous recevez une erreur au cours de la génération, [vérifiez que votre fichier Maven settings.xml contient le référentiel d’artefacts Maven d’Adobe](https://helpx.adobe.com/fr/experience-manager/kb/SetUpTheAdobeMavenRepository.html).
 
 1. Accédez à:
 
@@ -803,7 +803,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module **angular-app** (`
 [Solution terminée pour le composant HelloWorld](assets/spa-editor-helloworld-tutorial-use/aem-sample-we-retail-journal-HelloWorldSolution.zip)
 
 * Code source complet pour [[!DNL We.Retail Journal] sur GitHub](https://github.com/adobe/aem-sample-we-retail-journal)
-* Consultez un didacticiel plus détaillé sur le développement de Réagir avec [[!DNL Getting Started with the AEM SPA Editor - WKND Tutorial]](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)
+* Consultez un didacticiel plus détaillé sur le développement de Réagir avec [[!DNL Getting Started with the AEM SPA Editor - WKND Tutorial]](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)
 
 ## Résolution des incidents {#troubleshooting}
 
