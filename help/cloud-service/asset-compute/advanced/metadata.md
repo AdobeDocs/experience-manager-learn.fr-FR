@@ -182,7 +182,7 @@ function getColorName(colorsFamily, color) {
 
 Une fois le code de travail terminé, il peut être exécuté à l’aide de l’outil de développement d’Asset compute local.
 
-Comme notre projet d&#39;Asset compute contient deux travailleurs (le précédent [rendu circulaire](../develop/worker.md) et ce `metadata-colors` travailleur), la définition de profil [de l&#39;outil de développement d&#39;Asset compute](../develop/development-tool.md) de l&#39;outil &lt;a4/> liste l&#39;exécution des profils pour les deux travailleurs. La deuxième définition de profil pointe vers le nouveau travailleur `metadata-colors`.
+Comme notre projet d&#39;Asset compute contient deux travailleurs (le précédent [rendu circulaire](../develop/worker.md) et ce `metadata-colors` travailleur), la définition de profil [de l&#39;outil de développement d&#39;Asset compute](../develop/development-tool.md) de l&#39;outil  liste l&#39;exécution des profils pour les deux travailleurs. La deuxième définition de profil pointe vers le nouveau travailleur `metadata-colors`.
 
 ![Rendu de métadonnées XML](./assets/metadata/metadata-rendition.png)
 
@@ -255,7 +255,7 @@ Notez que cela va déployer tous les travailleurs du projet. Consultez les [inst
 
 ### Intégration avec les Profils de traitement AEM{#processing-profile}
 
-Appelez le collaborateur à partir de AEM en créant un nouveau service de Profil de traitement personnalisé ou en modifiant un service existant qui appelle ce collaborateur déployé.
+Appelez le travailleur à partir de AEM en créant un nouveau service de Profil de traitement personnalisé ou en modifiant un service existant qui appelle ce travailleur déployé.
 
 ![Profil de traitement](./assets/metadata/processing-profile.png)
 
