@@ -31,7 +31,7 @@ Le processus Signer plusieurs Forms obtient des déclencheurs lors de l’envoi 
 
 Le client est invité à remplir et signer le premier formulaire du pack. Une fois le formulaire signé, le client peut accéder au formulaire suivant dans le pack. Une fois que tous les formulaires sont remplis et signés, le client reçoit le formulaire &quot;**AllDone**&quot;.
 
-## Résolution des problèmes d’
+## Résolution des problèmes liés à
 
 ### La notification par courrier électronique n&#39;est pas générée
 
