@@ -48,7 +48,7 @@ Notez que `~` est un raccourci pour le répertoire d’utilisateurs. Sous Window
 
 ## Outils de développement pour les projets AEM
 
-Le projet AEM est la base de code personnalisée contenant le code, la configuration et le contenu qui est déployé via Cloud Manager pour AEM en tant que Cloud Service. La structure du projet de base est générée par l&#39;archétype de projet &lt; a0/>AEM Project Maven [.](https://github.com/adobe/aem-project-archetype)
+Le projet AEM est la base de code personnalisée contenant le code, la configuration et le contenu qui est déployé via Cloud Manager pour AEM en tant que Cloud Service. La structure du projet de base est générée par l&#39;archétype de projet &lt; a0/>AEM Project Maven ](https://github.com/adobe/aem-project-archetype).[
 
 Cette section du didacticiel explique comment :
 
