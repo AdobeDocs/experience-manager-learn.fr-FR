@@ -12,8 +12,8 @@ thumbnail: 25907.jpg
 translation-type: tm+mt
 source-git-commit: debf13d8e376979548bcbf55f71661d8cb8eb823
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1366'
+ht-degree: 2%
 
 ---
 
