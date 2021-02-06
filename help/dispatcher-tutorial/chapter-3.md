@@ -55,7 +55,7 @@ La diffusion d’une page d’un serveur au navigateur d’un client traverse un
 
 <br> 
 
-Début notre voyage avec un morceau de données qui se trouve sur un disque dur et qui doit être affiché dans un navigateur.
+Début notre parcours avec un morceau de données qui se trouve sur un disque dur et qui doit être affiché dans un navigateur.
 
 #### Matériel et système d’exploitation
 
