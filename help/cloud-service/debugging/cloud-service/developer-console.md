@@ -82,7 +82,7 @@ Bundler l’aide au débogage par :
 
 ### Composants
 
-Composants liste tous les composants OSGi dans AEM. Cette fonctionnalité est similaire aux [Composants OSGi ](http://localhost:4502/system/console/components) du kit de développement rapide local &lt;a0/>AEM à `/system/console/components`.
+Composants liste tous les composants OSGi dans AEM. Cette fonctionnalité est similaire aux [Composants OSGi ](http://localhost:4502/system/console/components) du kit de développement rapide local AEM à `/system/console/components`.
 
 Les composants aident au débogage en procédant comme suit :
 
