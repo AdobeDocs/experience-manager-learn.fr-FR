@@ -31,7 +31,7 @@ Découvrez comment créer un composant personnalisé à utiliser avec AEM SPA Ed
 
 ## Ce que vous allez créer
 
-Les chapitres précédents ont porté sur l&#39;élaboration de SPA composants et leur mise en correspondance avec *les* éléments de base &lt;a1/> AEM existants. Ce chapitre porte sur la façon de créer et d’étendre *les nouveaux composants* AEM et de manipuler le modèle JSON fourni par AEM.
+Les chapitres précédents ont porté sur l&#39;élaboration de SPA composants et leur mise en correspondance avec *les* éléments de base  AEM existants. Ce chapitre porte sur la façon de créer et d’étendre *les nouveaux composants* AEM et de manipuler le modèle JSON fourni par AEM.
 
 Un `Custom Component` simple illustre les étapes nécessaires pour créer un composant AEM net-new.
 
@@ -311,7 +311,7 @@ Créez ensuite le `Custom Component` à l’aide de l’AEM SPA Editor.
 
    ![Configuration du composant personnalisé](assets/custom-component/enter-dialog-message.png)
 
-   Il s’agit de la boîte de dialogue qui a été créée en fonction du fichier XML précédemment dans le chapitre.
+   Il s’agit de la boîte de dialogue qui a été créée en fonction du fichier XML plus tôt dans le chapitre.
 
 4. Enregistrez les modifications. Observez que le message affiché est en majuscules.
 
