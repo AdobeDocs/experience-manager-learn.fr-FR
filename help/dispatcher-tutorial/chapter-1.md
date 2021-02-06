@@ -213,7 +213,7 @@ Les requêtes suivantes envoyées à `home.html/suffix.html` retournent des rés
 
 <br> 
 
-Si vous le faites de l&#39;autre côté, demandez d&#39;abord `home.html/suffix.html` `suffix.html`, puis &lt;a1/> est mis en cache sous un dossier `/home.html` au début. Cependant, ce dossier est supprimé et remplacé par un fichier `home.html` lorsque vous demandez par la suite `home.html` en tant que ressource.
+Si vous le faites de l&#39;autre côté, demandez d&#39;abord `home.html/suffix.html` `suffix.html`, puis  est mis en cache sous un dossier `/home.html` au début. Cependant, ce dossier est supprimé et remplacé par un fichier `home.html` lorsque vous demandez par la suite `home.html` en tant que ressource.
 
 ![Suppression d’une structure de chemin lorsqu’un parent est récupéré en tant que ressource](assets/chapter-1/deleting-path-structure.png)
 
