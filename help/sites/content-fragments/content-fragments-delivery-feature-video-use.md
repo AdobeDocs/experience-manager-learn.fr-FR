@@ -37,7 +37,7 @@ Cette série de vidéos présente les options de diffusion d’utilisation des f
 
 >[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
 
-Les fragments de contenu peuvent être utilisés sur les pages AEM Sites ou, de la même manière, sur les fragments d’expérience, à l’aide du composant [Fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html) des composants principaux de la gestion de contenu Web &lt;a0/> de l’AEM.
+Les fragments de contenu peuvent être utilisés sur les pages AEM Sites ou, de la même manière, sur les fragments d’expérience, à l’aide du composant [Fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html) des composants principaux de la gestion de contenu Web  de l’AEM.
 
 Les composants Fragment de contenu peuvent être mis en forme à l’aide de AEM Style System pour afficher le contenu selon les besoins.
 
