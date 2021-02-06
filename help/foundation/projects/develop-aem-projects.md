@@ -150,7 +150,7 @@ Puisque nous allons principalement copier/configurer des noeuds, nous utiliseron
 
    1. Sous le noeud de modèle de projet (authoring-project), ajoutez un nouveau noeud **nt:unstructured** intitulé **rôles**.
    1. Ajoutez un autre noeud **nt:unstructured** intitulé approbateurs comme enfant du noeud rôles.
-   1. Propriétés de chaîne d&#39;Ajoute **jcr:title** = &quot;**Approbateurs**&quot;, **roleclass** =&quot;**owner**&quot;, **roleid**=&quot;**approbateurs&lt;a1/>&quot; .**
+   1. Propriétés de chaîne d&#39;Ajoute **jcr:title** = &quot;**Approbateurs**&quot;, **roleclass** =&quot;**owner**&quot;, **roleid**=&quot;**approbateurs**&quot; .
       1. Le nom du noeud approbateurs, ainsi que jcr:title et roleid peuvent être n’importe quelle valeur de chaîne (tant que roleid est unique).
       1. **** roleclassgre les autorisations appliquées pour ce rôle en fonction des  [3 rôles] OOTB (https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User Rôles dans un projet) :  **propriétaire**,  **éditeur** et  **observateur**.
       1. En général, si le rôle personnalisé est davantage un rôle de gestion, la classe de rôles peut être **propriétaire;** s&#39;il s&#39;agit d&#39;un rôle de création plus spécifique comme Photographe ou Designer, alors **editor** roleclass devrait suffire. La grande différence entre **owner** et **editor** réside dans le fait que les propriétaires de projet peuvent mettre à jour les propriétés du projet et ajouter de nouveaux utilisateurs au projet.
