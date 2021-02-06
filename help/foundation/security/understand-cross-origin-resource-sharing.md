@@ -38,7 +38,7 @@ Une stratégie est sélectionnée en comparant la variable
 * `Allowed Origin` avec l’en-tête de  `Origin` requête
 * et `Allowed Paths` avec le chemin d’accès à la requête.
 
-La première stratégie correspondant à ces valeurs sera utilisée. Si aucune requête [!DNL CORS] n&#39;est trouvée, toute requête &lt;a0/> sera refusée.
+La première stratégie correspondant à ces valeurs sera utilisée. Si aucune requête [!DNL CORS] n&#39;est trouvée, toute requête  sera refusée.
 
 Si aucune stratégie n&#39;est configurée du tout, les demandes [!DNL CORS] ne recevront pas de réponse car le gestionnaire sera désactivé et donc refusé de manière efficace, tant qu&#39;aucun autre module du serveur ne répondra à [!DNL CORS].
 
