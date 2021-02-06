@@ -124,7 +124,7 @@ Ensuite, examinez le module `ui.frontend` pour comprendre le SPA qui a été gé
    }
    ```
 
-   Ces scripts sont basés sur des commandes d&#39;interface de ligne de commande angulaires [ courantes, mais ont été légèrement modifiés pour fonctionner avec le projet d&#39;AEM plus grand.](https://angular.io/cli/build)
+   Ces scripts sont basés sur des commandes d&#39;interface de ligne de commande angulaires ](https://angular.io/cli/build) courantes, mais ont été légèrement modifiés pour fonctionner avec le projet d&#39;AEM plus grand.[
 
    `start` - exécute l’application Angular localement à l’aide d’un serveur Web local. Il a été mis à jour pour représenter le contenu de l’instance AEM locale.
 
