@@ -26,4 +26,4 @@ Cette section présente les fonctionnalités et les caractéristiques de [!DNL d
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [[!DNL Dispatcher] documentation](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
+* Documentation d’[[!DNL Dispatcher] ](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
