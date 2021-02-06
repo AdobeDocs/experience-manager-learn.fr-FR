@@ -1,6 +1,6 @@
 ---
 title: Archétype de projet AEM
-description: 'L’archétype de projet AEM crée un projet Adobe Experience Manager minimal qui s''appuie sur des bonnes pratiques pour que vous puissiez démarrer vos propres projets AEM sur des bases saines. '
+description: 'L’archétype de projet AEM crée un projet Adobe Experience Manager minimal qui s’appuie sur des bonnes pratiques pour que vous puissiez démarrer vos propres projets AEM sur des bases saines. '
 feature: maven-archetype
 topics: development
 audience: developer
