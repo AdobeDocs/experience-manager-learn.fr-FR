@@ -311,7 +311,7 @@ Créez ensuite le `Custom Component` à l’aide de l’AEM SPA Editor.
 
    ![Configuration du composant personnalisé](assets/custom-component/enter-dialog-message.png)
 
-   Il s’agit de la boîte de dialogue qui a été créée en fonction du fichier XML plus tôt dans le chapitre.
+   Il s’agit de la boîte de dialogue qui a été créée en fonction du fichier XML précédemment dans le chapitre.
 
 4. Enregistrez les modifications. Observez que le message affiché est en majuscules.
 
