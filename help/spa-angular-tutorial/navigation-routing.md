@@ -259,7 +259,7 @@ Créez ensuite des pages supplémentaires dans AEM qui serviront de vues différ
 
 Ensuite, mettez en oeuvre le menu de navigation avec un nouveau `NavigationComponent`. Nous pourrions ajouter directement le code dans `header.component.html`, mais une meilleure pratique consiste à éviter les composants volumineux. Implémentez plutôt un `NavigationComponent` qui pourrait être réutilisé ultérieurement.
 
-1. Consultez le fichier JSON exposé par le composant `Header` de l’AEM à l’adresse [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) :
+1. Examinez le fichier JSON exposé par le composant `Header` de l’AEM à l’adresse [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) :
 
    ```json
    ...
