@@ -28,7 +28,7 @@ La forme la plus élémentaire de débogage des travailleurs d&#39;Asset compute
 
 Les instructions de journal suivantes peuvent faire l’objet d’une révision différente en fonction de la manière dont le travailleur d’Asset compute est exécuté :
 
-+ À partir de `aio app run`, les journaux s&#39;impriment en sortie standard et les [Journaux d&#39;Activation de l&#39;outil de développement ](../develop/development-tool.md) &lt;a2/>
++ À partir de `aio app run`, les journaux s&#39;impriment en sortie standard et les [Journaux d&#39;Activation de l&#39;outil de développement ](../develop/development-tool.md) 
    ![application aio exécuter console.log(..)](./assets/debug/console-log__aio-app-run.png)
 + De `aio app test`, les journaux s&#39;impriment dans `/build/test-results/test-worker/test.log`
    ![aio app test console.log(...)](./assets/debug/console-log__aio-app-test.png)
