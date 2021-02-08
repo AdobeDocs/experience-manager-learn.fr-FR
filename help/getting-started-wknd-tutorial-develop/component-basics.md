@@ -12,9 +12,9 @@ mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1145'
 ht-degree: 4%
 
 ---
@@ -27,6 +27,8 @@ Dans ce chapitre, nous étudierons la technologie sous-jacente d&#39;un composan
 ## Conditions préalables {#prerequisites}
 
 Examinez les outils et les instructions nécessaires pour configurer un [environnement de développement local](overview.md#local-dev-environment).
+
+L&#39;IDE utilisé dans les vidéos est [Code Visual Studio](https://code.visualstudio.com/) et le module externe [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync).
 
 ## Intention {#objective}
 
@@ -110,7 +112,7 @@ Vous trouverez ci-dessous les étapes de haut niveau effectuées dans la vidéo 
 
 1. Accédez à l&#39;IDE et ouvrez le projet dans le module `ui.apps`.
 1. Ouvrez le fichier `helloworld.html` et apportez une modification au balisage HTML.
-1. Utilisez les outils IDE pour synchroniser la modification du fichier avec l&#39;instance d&#39;AEM locale.
+1. Utilisez les outils IDE tels que [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) pour synchroniser la modification du fichier avec l’instance AEM locale.
 1. Revenez au navigateur et observez que le rendu du composant a changé.
 1. Ouvrez le fichier `.content.xml` qui définit la boîte de dialogue du composant `HelloWorld` à l&#39;adresse suivante :
 
@@ -209,14 +211,14 @@ Ensuite, nous apporterons quelques mises à jour au modèle Sling `HelloWorldMod
        ...
    
        @ValueMapValue
-       protected String title;
+       private String title;
    
        @ValueMapValue
-       protected String text;
+       private String text;
    
-           @PostConstruct
-           protected void init() {
-               ...
+       @PostConstruct
+       protected void init() {
+           ...
    ```
 
 1. Ajoutez la méthode suivante `getTitle()` à la classe `HelloWorldModel`, qui renvoie la valeur de la propriété nommée `title`. Cette méthode ajoute une logique supplémentaire pour renvoyer une valeur de chaîne &quot;Default Value here !&quot; (Valeur par défaut ici !). si la propriété `title` est nulle ou vide :
@@ -349,6 +351,10 @@ Vous trouverez ci-dessous les étapes de haut niveau effectuées dans la vidéo 
    ```
 
 1. Déployez les modifications sur une instance locale d’AEM à l’aide du module de développement ou en utilisant vos compétences Maven.
+
+   >[!NOTE]
+   >
+   > Pour des raisons de performances, CSS et JavaScript sont fréquemment mis en cache par le navigateur. Si vous ne voyez pas immédiatement la modification de la bibliothèque cliente, effectuez une actualisation stricte et effacez le cache du navigateur. Il peut s’avérer utile d’utiliser une fenêtre incognito pour assurer un nouveau cache.
 
 ## Félicitations! {#congratulations}
 
