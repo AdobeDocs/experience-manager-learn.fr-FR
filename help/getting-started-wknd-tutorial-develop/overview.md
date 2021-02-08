@@ -12,9 +12,9 @@ mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '893'
 ht-degree: 21%
 
 ---
@@ -32,12 +32,12 @@ Ce didacticiel en plusieurs parties a pour but d’apprendre à un développeur 
 
 Le tutoriel est conçu pour fonctionner avec **AEM en tant que Cloud Service** et est rétrocompatible avec **AEM 6.5.5.0+** et **l&#39;AEM 6.4.8.1+**. Le site est mis en oeuvre à l’aide des éléments suivants :
 
-* [Archétype de projet Maven AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
-* [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Archétype de projet Maven AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html)
+* [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/getting-started/getting-started.html)
 * Modèles Sling
 * [Modèles modifiables](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
-* [Système de style](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
+* [Système de style](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
 
 *Estimez 1 à 2 heures pour passer en revue chaque partie du tutoriel.*
 
@@ -55,6 +55,8 @@ Les logiciels suivants doivent être installés localement :
 * [Node.js](https://nodejs.org/en/) (LTS - Prise en charge à long terme)
 * [npm 6+](https://www.npmjs.com/)
 * [Git](https://git-scm.com/)
+* [Visual Studio ](https://code.visualstudio.com/) Codeor équivalent IDE
+   * [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) - Outil utilisé dans le didacticiel
 
 >[!NOTE]
 >
