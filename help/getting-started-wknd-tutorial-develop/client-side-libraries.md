@@ -10,9 +10,9 @@ audience: developer
 kt: 4083
 thumbnail: 30359.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3291'
 ht-degree: 4%
 
 ---
@@ -144,7 +144,7 @@ Les bibliothèques côté client présentent certaines limites en ce qui concern
 
    Chaque fichier est mappé à un composant principal tel que le composant [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/accordion.html?lang=en#components). Chaque composant principal est créé avec la notation [Modificateur d’élément de bloc](https://getbem.com/) ou la notation BEM pour faciliter la cible de classes CSS spécifiques avec des règles de style. Les fichiers sous `/components` ont été supprimés par l&#39;archétype de projet AEM avec les différentes règles BEM pour chaque composant.
 
-1. Téléchargez le fichier WKND Base Styles **[wknd-base-styles-src.zip](./assets/client-side-libraries/wknd-base-styles-src.zip)** et **décompressez** le fichier.
+1. Téléchargez le fichier WKND Base Styles **[wknd-base-styles-src.zip](./assets/client-side-libraries/wknd-base-styles-srcv2.zip)** et **décompressez** le fichier.
 
    ![Styles de base WKND](assets/client-side-libraries/wknd-base-styles-unzipped.png)
 
@@ -307,6 +307,10 @@ Ensuite, examinons comment les clientlibs sont référencés dans la page AEM. U
    ...
    </body>
    ```
+
+   >[!NOTE]
+   >
+   > Si vous suivez la version 6.5/6.4, les bibliothèques côté client ne seront pas automatiquement réduites. Consultez la documentation du [Gestionnaire de bibliothèques HTML pour activer la minfication (recommandé)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors).
 
    >[!WARNING]
    >
