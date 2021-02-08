@@ -13,10 +13,10 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 2%
+source-wordcount: '3074'
+ht-degree: 1%
 
 ---
 
@@ -94,6 +94,66 @@ Créez ensuite un nouveau modèle dans AEM qui correspond à la structure des ma
 
 >[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
 
+Procédure de haut niveau pour la vidéo ci-dessous :
+
+### Configurations de la structure
+
+1. Créez un modèle à l’aide du **Type de modèle de page**, nommé **Page d’article**.
+1. Passez en mode **Structure**.
+1. Ajoutez un composant **Fragment d’expérience** pour faire office d’en-tête **en haut du modèle.**
+   * Configurez le composant pour qu’il pointe sur `/content/experience-fragments/wknd/us/en/site/header/master`.
+   * Définissez la stratégie sur **En-tête de page** et assurez-vous que l&#39;élément **Par défaut** est défini sur `header`. L’élément `header`sera ciblé avec CSS dans le chapitre suivant.
+1. Ajoutez un composant **Fragment d’expérience** pour faire office de **Pied de page** au bas du modèle.
+   * Configurez le composant pour qu’il pointe sur `/content/experience-fragments/wknd/us/en/site/footer/master`.
+   * Définissez la stratégie sur **Pied de page** et assurez-vous que l&#39;élément **Par défaut** est défini sur `footer`. L’élément `footer` sera ciblé avec CSS dans le chapitre suivant.
+1. Verrouillez le conteneur **main** inclus lors de la création initiale du modèle.
+   * Définissez la stratégie sur **Page principale** et assurez-vous que l&#39;élément **Par défaut** est défini sur `main`. L’élément `main` sera ciblé avec CSS dans le chapitre suivant.
+1. Ajoutez un composant **Image** au conteneur **main**.
+   * Déverrouillez le composant **Image**.
+1. Ajoutez un composant **Chemin de navigation** sous le composant **Image** dans le conteneur principal.
+   * Créez une nouvelle stratégie pour le composant **Chemin de navigation** nommé **Page d&#39;article - Chemin de navigation**. Définissez le **niveau du Début de navigation** sur **4**.
+1. Ajoutez un composant **Conteneur** sous le composant **Chemin de navigation** et dans le conteneur **main**. Cela agira en tant que **conteneur de contenu** pour le modèle.
+   * Déverrouillez le conteneur **Contenu**.
+   * Définissez la stratégie sur **Contenu de la page**.
+1. Ajoutez un autre composant **Conteneur** sous le **conteneur de contenu**. Cela servira de conteneur **Rail latéral** pour le modèle.
+   * Déverrouillez le conteneur **Rail latéral**.
+   * Créez une nouvelle stratégie nommée **Page article - Rail latéral**.
+   * Configurez les **composants autorisés** sous **WKND Sites Project - Content** pour inclure : **Bouton**, **Télécharger**, **Image**, **Liste**, **Séparateur**, **Partage sur les réseaux sociaux**, &lt;a 6/>Texte **et** Titre **.**
+1. Mettez à jour la stratégie du conteneur racine de page. Il s’agit du conteneur le plus à l’extérieur du modèle. Définissez la stratégie sur **Racine de la page**.
+   * Sous **Paramètres du Conteneur**, définissez **Disposition** sur **Grille réactive**.
+1. Engagez le mode de mise en page pour le **conteneur de contenu**. Faites glisser la poignée de droite à gauche et rétrécissez le conteneur pour qu’il ait une largeur de 8 colonnes.
+1. Engagez le mode de mise en page pour le conteneur de rail latéral ****. Faites glisser la poignée de droite à gauche et rétrécissez le conteneur à 4 colonnes de large. Ensuite, faites glisser la poignée de gauche vers la colonne de droite 1 pour faire large le conteneur de 3 colonnes et laissez un espace de 1 colonne entre le **conteneur de contenu**.
+1. Ouvrez l’émulateur mobile et passez à un point d’arrêt mobile. Reprenez le mode de mise en page et faites du **conteneur de contenu** et du **conteneur du rail latéral** la largeur complète de la page. Ceci empile les conteneurs verticalement dans le point d’arrêt mobile.
+1. Mettez à jour la stratégie du composant **Texte** dans le **conteneur de contenu**.
+   * Définissez la stratégie sur **Texte du contenu**.
+   * Sous **Plugins** > **Styles de paragraphe**, cochez **Activer les styles de paragraphe** et assurez-vous que le **bloc de devis** est activé.
+
+### Configurations de contenu initial
+
+1. Passez en mode **Contenu initial**.
+1. Ajoutez un composant **Title** au **conteneur de contenu**. Il s’agit du titre de l’article. Lorsqu’elle est vide, elle affiche automatiquement le titre de la page active.
+1. Ajoutez un second composant **Title** sous le premier composant Title.
+   * Configurez le composant avec le texte : &quot;Par l&#39;auteur&quot;. Il s’agira d’un espace réservé de texte.
+   * Définissez le type sur `H4`.
+1. Ajoutez un composant **Texte** sous le composant **Par auteur** Titre.
+1. Ajoutez un composant **Title** au Conteneur de rail latéral **Side Rail**.
+   * Configurez le composant avec le texte : &quot;Partagez cette histoire&quot;.
+   * Définissez le type sur `H5`.
+1. Ajoutez un composant **Partage sur les réseaux sociaux** sous le composant Titre **Partager cet article**.
+1. Ajoutez un composant **Séparateur** sous le composant **Partage sur les réseaux sociaux**.
+1. Ajoutez un composant **Download** sous le composant **Separator**.
+1. Ajoutez un composant **Liste** sous le composant **Télécharger**.
+1. Mettez à jour les **Propriétés de page initiales** pour le modèle.
+   * Sous **Médias sociaux** > **Partage des réseaux sociaux**, consultez **Facebook** et **Pinterest**
+
+### Activez le modèle et ajoutez une miniature.
+
+1. Vue du modèle dans la console Modèle en accédant à [http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd](http://localhost:4502/libs/wcm/core/content/sites/templates.html/conf/wknd)
+1. **** Activez le modèle Page d’article.
+1. Modifiez les propriétés du modèle Page d’article et téléchargez la miniature suivante afin d’identifier rapidement les pages créées à l’aide du modèle Page d’article :
+
+   ![Miniature du modèle de page d’article](assets/pages-templates/article-page-template-thumbnail.png)
+
 ## Mettre à jour l’en-tête et le pied de page avec des fragments d’expérience {#experience-fragments}
 
 Une pratique courante lors de la création de contenu global, tel qu’un en-tête ou un pied de page, consiste à utiliser un [fragment d’expérience](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Fragments d’expérience, permet aux utilisateurs de combiner plusieurs composants afin de créer un composant unique et référencable. Les fragments d’expérience ont l’avantage de prendre en charge la gestion multisite et [la localisation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
@@ -102,13 +162,73 @@ L&#39;archétype de projet AEM a généré un en-tête et un pied de page. Ensui
 
 >[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
 
-Téléchargez et installez l’exemple de package de contenu **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets.zip)**.
+Procédure de haut niveau pour la vidéo ci-dessous :
+
+1. Téléchargez l’exemple de package de contenu **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets.zip)**.
+1. Téléchargez et installez le package de contenu à l’aide de Package Manager à l’adresse [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp).
+1. Mettez à jour le modèle de variation Web, qui est le modèle utilisé pour les fragments d’expérience à l’adresse [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/xf-web-variation/structure.html).
+   * Mettez à jour la stratégie du composant **Conteneur** sur le modèle.
+   * Définissez la stratégie sur **racine XF**.
+   * Sous **Composants autorisés**, sélectionnez le groupe de composants **WKND Sites Project - Structure** pour inclure les composants **Navigation linguistique**, **Navigation** et **Recherche rapide**.
+
+### Mettre à jour le fragment d’expérience d’en-tête
+
+1. Ouvrez le fragment d’expérience qui affiche l’en-tête à l’adresse [http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/header/master.html).
+1. Configurez la racine **Conteneur** du fragment. Il s&#39;agit du **Conteneur le plus externe**.
+   * Définissez **Disposition** sur **Grille réactive**.
+1. Ajoutez le **logo noir WKND** en tant qu&#39;image au haut du **Conteneur**. Le logo a été inclus dans le paquet installé lors d&#39;une étape précédente.
+   * Modifiez la disposition du **logo foncé WKND** pour qu&#39;il soit de **2** largeur des colonnes. Faites glisser les poignées de droite à gauche.
+   * Configurez le logo avec **Texte de remplacement** du &quot;logo WKND&quot;.
+   * Configurez le logo sur **Lier** à `/content/wknd/us/en` la Page d&#39;accueil.
+1. Configurez le composant **Navigation** qui est déjà placé sur la page.
+   * Définissez **Exclure les niveaux racine** sur **1**.
+   * Définissez **Profondeur de structure de navigation** sur **1**.
+   * Modifiez la disposition du composant **Navigation** pour qu&#39;il soit **8** large. Faites glisser les poignées de droite à gauche.
+1. Supprimez le composant **Navigation linguistique**.
+1. Modifiez la disposition du composant **Rechercher** pour qu&#39;il soit **2** à l&#39;échelle des colonnes. Faites glisser les poignées de droite à gauche. Tous les composants doivent maintenant être alignés horizontalement sur une seule ligne.
+
+### Mettre à jour le fragment d’expérience de pied de page
+
+1. Ouvrez le fragment d’expérience qui affiche le pied de page à l’adresse [http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html](http://localhost:4502/editor.html/content/experience-fragments/wknd/us/en/site/footer/master.html).
+1. Configurez la racine **Conteneur** du fragment. Il s&#39;agit du **Conteneur le plus externe**.
+   * Définissez **Disposition** sur **Grille réactive**.
+1. Ajoutez le **logo léger WKND** comme image en haut du **Conteneur**. Le logo a été inclus dans le paquet installé lors d&#39;une étape précédente.
+   * Modifiez la disposition du **logo de la lumière WKND** pour qu&#39;il soit **2** large. Faites glisser les poignées de droite à gauche.
+   * Configurez le logo avec **Texte de remplacement** de &quot;WKND Logo Light&quot;.
+   * Configurez le logo sur **Lier** à `/content/wknd/us/en` la Page d&#39;accueil.
+1. Ajoutez un composant **Navigation** sous le logo. Configurez le composant **Navigation** :
+   * Définissez **Exclure les niveaux racine** sur **1**.
+   * Décochez **Collecter toutes les pages enfants**.
+   * Définissez **Profondeur de structure de navigation** sur **1**.
+   * Modifiez la disposition du composant **Navigation** pour qu&#39;il soit **8** large. Faites glisser les poignées de droite à gauche.
 
 ## Création d’une page d’article
 
 Créez ensuite une page à l’aide du modèle Page d’article. Créez le contenu de la page en fonction des maquettes de site. Suivez les étapes de la vidéo ci-dessous :
 
 >[!VIDEO](https://video.tv.adobe.com/v/330993/?quality=12&learn=on)
+
+Procédure de haut niveau pour la vidéo ci-dessous :
+
+1. Accédez à la console Sites à l&#39;adresse [http://localhost:4502/sites.html/content/wknd/us/en/magazine](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
+1. Créez une nouvelle page sous **WKND** > **US** > **EN** > **Magazine**.
+   * Sélectionnez le modèle **Page d’article**.
+   * Sous **Properties**, définissez **Title** sur &quot;Ultimate Guide to LA Skateparks&quot;.
+   * Définissez le **nom** sur &quot;guide-la-skateparks&quot;.
+1. Remplacez **Par auteur** Titre par le texte &quot;Par Stacey Roswells&quot;.
+1. Mettez à jour le composant **Texte** pour inclure un paragraphe afin de renseigner l’article. Vous pouvez utiliser le fichier texte suivant comme copie : [la-skate-parks-copy.txt](assets/pages-templates/la-skateparks-copy.txt).
+1. Ajoutez un autre composant **Texte**.
+   * Mettez à jour le composant pour inclure le devis : &quot;Il n&#39;y a pas de meilleur endroit pour se raser que Los Angeles.&quot;
+   * Modifiez l’éditeur de texte enrichi en mode plein écran et modifiez le devis ci-dessus pour utiliser l’élément **Bloc de devis**.
+1. Continuez à remplir le corps de l’article pour qu’il corresponde aux maquettes.
+1. Configurez le composant **Download** pour utiliser une version PDF de l’article.
+   * Sous **Télécharger** > **Propriétés**, cochez la case **Obtenir le titre de la ressource DAM**.
+   * Définissez **Description** sur : &quot;Obtenez l&#39;histoire complète&quot;.
+   * Définissez **Action Text** sur : &quot;Télécharger PDF&quot;.
+1. Configurez le composant **Liste**.
+   * Sous **Paramètres de Liste** > **Créer une Liste à l’aide de**, sélectionnez **Pages enfants**.
+   * Définissez **Page parente** sur `/content/wknd/us/en/magazine`.
+   * Sous **Paramètres d&#39;élément**, cochez **Lier les éléments** et cochez **Afficher la date**.
 
 ## Inspect de la structure de noeud {#node-structure}
 
