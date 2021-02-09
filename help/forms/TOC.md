@@ -6,10 +6,10 @@ user-guide-description: Ensemble de ressources AEM Forms pour les développeurs 
 breadcrumb-title: Tutoriels d’AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 48060b4d8c4b502e0c099ae8081695f97b423037
+source-git-commit: 1e945afddda3d7735005029952a9d7ec46828bc6
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 + [Présentation](overview.md)
 + [Meilleures pratiques à suivre](adaptive-forms/best-practices-adaptive-forms.md)
 + [Configuration de l’authentification OKTA avec AEM Author](adaptive-forms/single-sign-on-with-okta.md)
-+ [Créer votre premier lot OSGi](adaptive-forms/create-your-first-osgi-bundle.md)
++ [Création de votre premier lot OSGi](adaptive-forms/create-your-first-osgi-bundle.md)
 + Création de votre premier formulaire adaptatif {#creating-your-first-adaptive-form}
    + [Introduction et configuration](creating-your-first-adaptive-form/introduction-and-setup.md)
    + [Créer un modèle de formulaire adaptatif](creating-your-first-adaptive-form/create-adaptive-form-template.md)
@@ -96,7 +96,7 @@ ht-degree: 6%
    + [Ajouter une colonne personnalisée](inbox-customization/add-married-column.md)
    + [Utilisation d’un modèle de cadre](inbox-customization/use-sightly-template.md)
 
-+ Stocker et récupérer le formulaire adaptatif{#store-and-retrieve-af-with-2fa}
++ Stockage et récupération du formulaire adaptatif{#store-and-retrieve-af-with-2fa}
    + [Présentation](store-and-retrieve-af-with-2fa/introduction.md)
    + [Configurer la source de données](store-and-retrieve-af-with-2fa/configure-data-source.md)
    + [Stocker les pièces jointes du formulaire](store-and-retrieve-af-with-2fa/store-form-attachments.md)
@@ -183,6 +183,7 @@ ht-degree: 6%
    + [Partie4 - Créer un Profil ACS à l&#39;aide du modèle de données de formulaire](aem-forms-with-adobe-campaign/partfour.md)
 
 + Services de document {#document-services}
+   + [Types de PDF forms](document-services/pdf-forms-and-documents.md)
    + [Utilisation du service Assembler dans AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
    + [Utilisation de Watched Folder en AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Utilisation du service de code à barres en AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
