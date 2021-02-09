@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriels d’AEM Assets
 sub-product: ressources
 team: TM
 translation-type: tm+mt
-source-git-commit: 94ea85d4a96bf9da62c5658961474a12663ac77b
+source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '262'
 ht-degree: 37%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 37%
    + [Opérations de base](./authoring/basic-operations.md)
    + [Métadonnées](./authoring/metadata.md)
    + [Rendus](./authoring/renditions.md)
+   + [Relate et non-relation](./authoring/relate-unrelate.md)
 
 + Collaboration{#collaboration}
    + [Chronologie et boîte de réception](./collaboration/timeline-and-inbox.md)
@@ -93,7 +94,7 @@ ht-degree: 37%
    + [Fragments d’expérience](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
    + [Vidéo interactive](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
    + [Lecteur vidéo](dynamic-media/dynamic-media-video-player-feature-video-use.md)
-   + [Vidéo à 360°](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
+   + [Vidéo 360](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
    + [Miniatures vidéo personnalisées](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
    + [Accentuation des images](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
    + [Gestion des couleurs](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
