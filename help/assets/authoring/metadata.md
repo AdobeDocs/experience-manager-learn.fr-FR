@@ -1,20 +1,18 @@
 ---
 title: 'Métadonnées  '
 description: Découvrez comment accéder aux métadonnées et interagir avec celles-ci en AEM Assets.
-sub-product: ressources
-feature: null
-topics: authoring
-audience: author
-doc-type: feature video
-activity: use
+feature: Metadata
+topics: Content Management
+role: Business Practitioner
+level: Beginner
 version: cloud-service
 kt: 4303
 thumbnail: 32045.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
 workflow-type: tm+mt
-source-wordcount: '25'
-ht-degree: 12%
+source-wordcount: '24'
+ht-degree: 8%
 
 ---
 
