@@ -10,9 +10,9 @@ audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
 translation-type: tm+mt
-source-git-commit: 398b9f855556fc425b034986a7f21159297dcba5
+source-git-commit: 39ea3dd6133477a52fd91ee696936cd226fce5ea
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1652'
 ht-degree: 2%
 
 ---
@@ -180,6 +180,10 @@ La modification de ces paramètres peut nécessiter des ajustements aux configur
 ## Arrêt d’un AEM d’exécution local
 
 Pour arrêter un environnement d’exécution AEM local, soit AEM Author, soit le service de publication, ouvrez la fenêtre de ligne de commande qui a été utilisée pour début de l’environnement d’exécution AEM, puis appuyez sur `Ctrl-C`. Attendez que AEM se ferme. Une fois le processus d&#39;arrêt terminé, l&#39;invite de ligne de commande est disponible.
+
+## Tâches d’exécution locale d’AEM en option configurées
+
++ __Les variables d’environnement de configuration OSGi et les__ variables secrètes sont  [spécialement définies pour l’exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#local-development) locale AEM, plutôt que de les gérer à l’aide de l’interface de ligne de commande aio.
 
 ## Quand mettre à jour le fichier JAR de démarrage rapide
 
