@@ -10,7 +10,7 @@ audience: developer
 kt: 6785
 thumbnail: 330519.jpg
 translation-type: tm+mt
-source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
+source-git-commit: 0b1150cd7ca32382cfaa880f9f956b55bfb65a33
 workflow-type: tm+mt
 source-wordcount: '1824'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Les intégrations à l&#39;AEM en tant que Cloud Service doivent être en mesure de s&#39;authentifier en toute sécurité auprès de l&#39;AEM. aem Developer Console accorde l’accès aux informations d’identification du service, qui sont utilisées pour faciliter les applications, systèmes et services externes à interagir par programmation avec les services Auteur ou Publication AEM via HTTP.
 
->[!VIDEO](https://video.tv.adobe.com/v/330460/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330519/?quality=12&learn=on)
 
 Les informations d&#39;identification des services peuvent sembler similaires [Jetons d&#39;accès de développement local](./local-development-access-token.md) mais sont différentes de plusieurs manières clés :
 
