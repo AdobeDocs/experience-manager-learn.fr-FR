@@ -10,9 +10,9 @@ audience: developer
 kt: 5434
 thumbnail: kt-5424.jpg
 translation-type: tm+mt
-source-git-commit: a405cf14d3f71bf51e32e50c828c3216d29aa253
+source-git-commit: b9fb3cb0c12afcabf4a92ded3d7d330ac9d229d6
 workflow-type: tm+mt
-source-wordcount: '2517'
+source-wordcount: '2537'
 ht-degree: 0%
 
 ---
@@ -232,6 +232,7 @@ La validation de ce problème est la cause du comportement défaillant :
    1. Si les ressources `/var` ne sont pas nécessaires, supprimez les ressources sous `/var` des packages de contenu déployés dans le cadre de votre application.
    2. Si les ressources `/var` sont nécessaires, définissez les structures des noeuds à l&#39;aide de [repoinit](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit). Les scripts de redirection peuvent être ciblés sur l’auteur AEM, AEM Publish ou les deux, via les modes d’exécution OSGi.
    3. Si les ressources `/var` ne sont requises que pour l’auteur AEM et ne peuvent pas être modélisées de manière raisonnable à l’aide de [repoinit](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html#repoinit), déplacez-les vers un package de contenu distinct, qui est installé sur AEM Author uniquement par [incorporation](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#embeddeds) dans le package `all` d’un dossier en mode d’exécution AEM Author (`<target>/apps/example-packages/content/install.author</target>`).
+   4. Fournissez des listes de contrôle d&#39;accès appropriées à l&#39;utilisateur du service `sling-distribution-importer`, comme décrit dans cet [Adobe KB](https://helpx.adobe.com/in/experience-manager/kb/cm/cloudmanager-deploy-fails-due-to-sling-distribution-aem.html).
 
 ### Créer un dossier d&#39;assistance Adobe
 
