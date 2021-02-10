@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 doc-type: tutorial
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: c657eefa69b383c1b1a9e2845276245d3db00e6f
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Configuration du répartiteur {#dispatcher-configuration}
 
-Pour autoriser la mise en cache et la diffusion d’en-têtes [!DNL CORS] sur le contenu mis en cache, ajoutez la configuration suivante à tous les fichiers AEM Publish `dispatcher.any` pris en charge.
+Pour permettre la mise en cache et la diffusion des en-têtes CORS sur le contenu mis en cache, ajoutez les éléments suivants [/configuration clientheaders](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) à tous les fichiers AEM Publish `dispatcher.any` pris en charge.
 
 ```
 /cache { 
   ...
-  /headers {
+  /clientheaders {
       "Access-Control-Allow-Origin",
       "Access-Control-Expose-Headers",
       "Access-Control-Max-Age",
@@ -115,7 +115,7 @@ Pour autoriser la mise en cache et la diffusion d’en-têtes [!DNL CORS] sur le
 
 **Redémarrez l’** application de serveur Web après avoir apporté des modifications au  `dispatcher.any` fichier.
 
-Il est probable que l&#39;effacement complet du cache soit nécessaire pour s&#39;assurer que les en-têtes sont correctement mis en cache lors de la demande suivante après une mise à jour de la configuration `/headers`.
+Il est probable que l&#39;effacement complet du cache soit nécessaire pour s&#39;assurer que les en-têtes sont correctement mis en cache lors de la demande suivante après une mise à jour de la configuration `/clientheaders`.
 
 ## Documents d&#39;appui {#supporting-materials}
 
