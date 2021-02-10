@@ -8,12 +8,12 @@ feature: APIs
 activity: develop
 audience: developer
 kt: 6785
-thumbnail: 330519.jpg
+thumbnail: 330460.jpg
 translation-type: tm+mt
-source-git-commit: 733382dc0e0ca14d4bd6e49174ba33f8d7fc517d
+source-git-commit: 0b1150cd7ca32382cfaa880f9f956b55bfb65a33
 workflow-type: tm+mt
 source-wordcount: '585'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Dans ce didacticiel, vous allez découvrir comment une application externe peut s’authentifier et interagir avec l’AEM par programmation en tant que Cloud Service via HTTP à l’aide de jetons d&#39;accès.
 
->[!VIDEO](https://video.tv.adobe.com/v/330519/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330460/?quality=12&learn=on)
 
 ## Conditions préalables
 
@@ -35,7 +35,7 @@ Assurez-vous que les éléments suivants sont en place avant de suivre ce didact
 
 ## Présentation des applications externes
 
-Ce didacticiel utilise une application [simple Node.js](./assets/aem-guides_token-authentication-external-application.zip) exécutée à partir de la ligne de commande pour mettre à jour les métadonnées de fichier sur AEM en tant que Cloud Service à l’aide de l’API HTTP [Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html).
+Ce didacticiel utilise une application [simple Node.js](./assets/aem-guides_token-authentication-external-application.zip) exécutée à partir de la ligne de commande pour mettre à jour les métadonnées de fichier sur AEM en tant que Cloud Service à l’aide de l’API HTTP [Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=fr).
 
 Le flux d’exécution de l’application Node.js se présente comme suit :
 
