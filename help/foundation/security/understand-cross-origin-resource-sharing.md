@@ -9,7 +9,7 @@ activity: understand
 audience: architect, developer
 doc-type: article
 translation-type: tm+mt
-source-git-commit: ecbd4d21c5f41b2bc6db3b409767b767f00cc5d1
+source-git-commit: bc14783840a47fb79ddf1876aca1ef44729d097e
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 1%
@@ -139,12 +139,12 @@ Pour autoriser la mise en cache des en-têtes CORS, ajoutez la configuration sui
 ```
 /cache { 
   ...
-  /headers {
-      "Access-Control-Allow-Origin",
-      "Access-Control-Expose-Headers",
-      "Access-Control-Max-Age",
-      "Access-Control-Allow-Credentials",
-      "Access-Control-Allow-Methods",
+  /clientheaders {
+      "Access-Control-Allow-Origin"
+      "Access-Control-Expose-Headers"
+      "Access-Control-Max-Age"
+      "Access-Control-Allow-Credentials"
+      "Access-Control-Allow-Methods"
       "Access-Control-Allow-Headers"
   }
   ...
@@ -153,7 +153,7 @@ Pour autoriser la mise en cache des en-têtes CORS, ajoutez la configuration sui
 
 Pensez à **redémarrer l&#39;application de serveur Web** après avoir apporté des modifications au fichier `dispatcher.any`.
 
-Il est probable que l&#39;effacement complet du cache sera nécessaire pour s&#39;assurer que les en-têtes sont correctement mis en cache lors de la demande suivante après une mise à jour de la configuration `/headers`.
+Il est probable que l&#39;effacement complet du cache sera nécessaire pour s&#39;assurer que les en-têtes sont correctement mis en cache lors de la demande suivante après une mise à jour de la configuration `/clientheaders`.
 
 ## Résolution des problèmes de CORS
 
@@ -168,7 +168,7 @@ La journalisation est disponible sous `com.adobe.granite.cors` :
 * Vérifiez si la demande a été refusée par le gestionnaire CORS et non par l’authentification, le filtre de jeton CSRF, les filtres du répartiteur ou d’autres couches de sécurité.
    * Si le gestionnaire CORS répond par 200, mais que l&#39;en-tête `Access-Control-Allow-Origin` est absent de la réponse, consultez les journaux pour les refus sous [!DNL DEBUG] dans `com.adobe.granite.cors`
 * Si la mise en cache du répartiteur des requêtes [!DNL CORS] est activée
-   * Assurez-vous que la configuration `/headers` est appliquée à `dispatcher.any` et que le serveur Web a bien été redémarré.
+   * Assurez-vous que la configuration `/clientheaders` est appliquée à `dispatcher.any` et que le serveur Web a bien été redémarré.
    * Assurez-vous que le cache a été correctement effacé après toute modification de la configuration d&#39;OSGi ou de dispatcher.any.
 * si nécessaire, vérifiez la présence des informations d’identification d’authentification sur la demande.
 
