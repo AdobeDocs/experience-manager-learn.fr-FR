@@ -8,9 +8,9 @@ doc-type: feature video
 activity: use
 version: 6.4, 6.5
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ La version 1.1 de Adobe Asset Link fournit désormais une prise en charge des li
 
 >[!NOTE]
 >
->N’utilisez que votre Enterprise ID ou votre Federated ID Adobe Creative Cloud. Assurez-vous de [configurer AEM pour Adobe Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-for-aal-prerelease.html).
+>N’utilisez que votre Enterprise ID ou votre Federated ID Adobe Creative Cloud. Assurez-vous de [configurer AEM pour Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html).
 
 
 ### Fonctionnalités des liens de ressources d’Adobe
@@ -73,8 +73,6 @@ Les rendus FPO sont des substituts légers des ressources d’origine. Elles ont
 * BMP
 
 Si un rendu FPO n’est pas disponible pour une ressource spécifique en AEM Assets, la ressource haute résolution d’origine est référencée à la place. Pour les images FPO, l’état FPO s’affiche dans le panneau Liens d’InDesign.
-
-
 
 ## Présentation de l’authentification par lien de ressource Adobe avec AEM Assets{#understanding-adobe-asset-link-authentication-with-aem-assets}
 
