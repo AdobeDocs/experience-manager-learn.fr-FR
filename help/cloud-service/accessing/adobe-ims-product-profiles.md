@@ -10,15 +10,21 @@ doc-type: feature video
 kt: 5000
 thumbnail: 39156.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: f30d15f0578b7e529e4acefb8e1d2e29157ab359
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 2%
+source-wordcount: '148'
+ht-degree: 6%
 
 ---
 
 
 # Profils de produits IMS Adobe
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_adobeims_productprofiles"
+>title="Profils de produits IMS Adobe"
+>abstract="Les profils de produits IMS Adobe permettent aux utilisateurs de se connecter à un service Auteur AEM et fournissent une référence d’accès, en fonction du profil de produits auquel ils sont membres. En savoir plus sur les profils de produits IMS Adobe."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=en#introduction" text="Gestion des produits et accès utilisateur dans Admin Console"
 
 Les profils de produits IMS Adobe permettent aux utilisateurs de se connecter à un service Auteur AEM et fournissent une référence d’accès, en fonction du profil de produits auquel ils sont membres.
 
