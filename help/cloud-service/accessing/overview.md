@@ -10,15 +10,20 @@ doc-type: article
 kt: 5882
 thumbnail: KT-5882.jpg
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: f30d15f0578b7e529e4acefb8e1d2e29157ab359
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 5%
+source-wordcount: '595'
+ht-degree: 4%
 
 ---
 
 
 # Configuration de l’accès à AEM en tant que Cloud Service
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_adobeims_overview"
+>title="Introduction à l&#39;Adobe IMS"
+>abstract="AEM en tant que Cloud Service utilise l’Adobe IMS (Identity Management System) pour faciliter la connexion de ses utilisateurs, tant administrateurs que utilisateurs réguliers, au service AEM Author. Découvrez comment les utilisateurs, les groupes et les profils de produits Adobes IMS sont utilisés de concert avec les groupes AEM et les autorisations afin de fournir un accès affiné au service Auteur AEM."
 
 L’AEM en tant que Cloud Service est le moyen natif du cloud d’exploiter les applications AEM et, en tant que tel, utilise l’Adobe IMS (Identity Management System) pour faciliter la connexion de ses utilisateurs, tant administrateurs que utilisateurs réguliers, au service Auteur AEM. Découvrez comment les utilisateurs, les groupes et les profils de produits Adobes IMS sont utilisés de concert avec les groupes AEM et les autorisations afin de fournir un accès affiné au service Auteur AEM.
 
@@ -43,7 +48,7 @@ Les utilisateurs qui accèdent au service Auteur AEM doivent être organisés en
 
 [En savoir plus sur les profils de produits IMS Adobe](./adobe-ims-product-profiles.md)
 
-## aem groupes d’utilisateurs et autorisations
+## AEM groupes d’utilisateurs et autorisations
 
 Adobe Experience Manager s’appuie sur les utilisateurs d’Adobe IMS, les groupes d’utilisateurs et les profils de produits afin de fournir aux utilisateurs un accès personnalisable à l’AEM. Découvrez comment créer des groupes AEM et des autorisations et comment ils fonctionnent de concert avec les abstractions IMS Adobes afin de fournir un accès transparent et personnalisable à AEM.
 
