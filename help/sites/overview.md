@@ -5,10 +5,10 @@ description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager S
 seo-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Sites
 sub-product: sites, content-services
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: ac2e937613eba4857d0f9bf8c5a39d5611157cbd
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 35%
+source-wordcount: '363'
+ht-degree: 34%
 
 ---
 
@@ -19,11 +19,15 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
 
 ## Nouveautés
 
-* **[Personnalisation de la couche de données du client Adobe avec les composants AEM](./integrations/adobe-client-data-layer/data-layer-customize.md)**
+* **[Utilisation de lancements avec AEM Sites (vidéo)](./spa-editor/spa-editor-framework-feature-video-use.md)**
+
+   *Découvrez les lancements de sites AEM et comment ils peuvent être utilisés pour préparer le contenu d’un site Web en vue d’une prochaine version.*
+
+* **[Personnaliser la couche de données du client Adobe avec les composants AEM (didacticiel)](./integrations/adobe-client-data-layer/data-layer-customize.md)**
 
    *Découvrez comment mettre à jour la couche de données du client Adobe avec le contenu des composants AEM personnalisés.*
 
-* **[Prise en main de AEM GraphQL sans en-tête (didacticiel)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+* **[Prise en main de AEM GraphQL sans en-tête (didacticiel)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)**
 
    *Comment exposer le contenu d’AEM à consommer par une application mobile native à l’aide des API AEM GraphQL.*
 
