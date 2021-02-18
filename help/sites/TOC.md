@@ -4,9 +4,9 @@ user-guide-description: Ensemble de vidéos et de tutoriels d’Adobe Experience
 breadcrumb-title: Tutoriels d’AEM Sites
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: ac2e937613eba4857d0f9bf8c5a39d5611157cbd
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '448'
 ht-degree: 35%
 
 ---
@@ -31,7 +31,8 @@ ht-degree: 35%
    + [Publication](page-authoring/publication-management-feature-video-use.md)
    + [Modèles modifiables](page-authoring/template-editor-feature-video-use.md)
    + [Système de style](page-authoring/style-system-feature-video-use.md)
-   + [Distorsion du temps Timewarp ](page-authoring/timewarp-feature-video-use.md)
+   + [Distorsion du temps Timewarp](page-authoring/timewarp-feature-video-use.md)
+   + [Lancements](page-authoring/launches.md)
 + Composants {#components}
    + [Développement des composants](components/component-development.md)
    + [Composants principaux](components/core-components-feature-video-understand.md)
@@ -59,7 +60,7 @@ ht-degree: 35%
    + [Implémentation de la recherche simple](developing/search-tutorial-develop.md)
    + [Partage sur les réseaux sociaux](developing/social-media-sharing-technical-video-use.md)
    + [Personnalisation des icônes de composant](developing/component-icons-technical-video-develop.md)
-+ Personnalisation   {#personalization}
++ Personnalisation {#personalization}
    + [Intégration avec Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html)
    + [Configuration de fragments d’expérience et d’Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Utilisation de fragments d’expérience avec Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
@@ -109,6 +110,6 @@ ht-degree: 35%
       + [Charger et déclencher un appel de Cible](integrations/adobe-target/load-and-fire-target.md)
       + [Créer un compte Cloud Service Adobe Target](integrations/adobe-target/setup-aem-target-cloud-service.md)
       + [Exportez des fragments d’expérience vers Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
-      + [Création d’Activités de Cible à l’aide d’Offres de fragments d’expérience](integrations/adobe-target/create-target-activity.md)
+      + [Création d’une Activité de Cible à l’aide d’Offres de fragments d’expérience](integrations/adobe-target/create-target-activity.md)
       + [Personnalisation à l’aide du compositeur d’expérience visuelle](integrations/adobe-target/personalization-using-vec.md)
       + [Personnalisation de l’expérience de la page Web complète](integrations/adobe-target/personalization-web-page.md)
