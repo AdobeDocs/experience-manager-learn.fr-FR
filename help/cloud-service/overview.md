@@ -4,9 +4,9 @@ description: Ensemble de didacticiels pour Adobe Experience Manager (AEM) en tan
 sub-product: sites, cloud manager, foundation, assets
 kt: 3289
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '268'
 ht-degree: 11%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 11%
 
 # Présentation {#overview}
 
-Adobe Experience Manager (AEM) est désormais disponible en tant que Cloud Service. aem en tant que Cloud Service présente la nouvelle génération de la gamme de produits Experience Manager, en s&#39;appuyant sur les investissements et les innovations passés, en préservant et en étendant tous les cas d&#39;utilisation et les fonctionnalités.
+Adobe Experience Manager (AEM) est désormais disponible en tant que Cloud Service. AEM en tant que Cloud Service présente la nouvelle génération de la gamme de produits Experience Manager, en s&#39;appuyant sur les investissements et les innovations passés, en préservant et en étendant tous les cas d&#39;utilisation et les fonctionnalités.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085/?quality=12&learn=on)
 
 ## Nouveautés
 
-* **[Authentification à AEM en tant que Cloud Service à partir d’une application externe (didacticiel)](../headless-tutorial/authentication/overview.md)**
+* **[Authentification basée sur un jeton (didacticiel)](../headless-tutorial/authentication/overview.md)**
 
    *Découvrez comment utiliser l’authentification par jeton pour interagir avec AEM en tant que Cloud Service sur HTTP*
 
