@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: service cloud
 team: TM
 translation-type: tm+mt
-source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
+source-git-commit: 91399ff4ab26655de27bbecab4ff773f6666d86a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '320'
+ht-degree: 35%
 
 ---
 
@@ -104,10 +104,10 @@ ht-degree: 0%
       + [Travailleurs de métadonnées](./asset-compute/advanced/metadata.md)
    + [Résolution des incidents](./asset-compute/troubleshooting.md)
 + Tutorials en plusieurs étapes{#multi-step-tutorials}
-   + [Développement AEM Sites](./develop-wknd-tutorial.md)
-   + [GraphQL](../headless-tutorial/graphql/overview.md)
-   + [Éditeur SPA (Réagir)](../spa-react-tutorial/overview.md)
-   + [Éditeur SPA (angulaire)](../spa-angular-tutorial/overview.md)
-   + [AEM Sites et Adobe Target](../aem-target-personalization/overview.md)
-   + [Authentification basée sur un jeton](../headless-tutorial/authentication/overview.md)
+   + [Développement AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html)
+   + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)
+   + [Éditeur SPA (Réagir)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
+   + [Éditeur SPA (angulaire)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [AEM Sites et Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
+   + [Authentification basée sur un jeton](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
 
