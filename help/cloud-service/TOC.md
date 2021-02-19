@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: service cloud
 team: TM
 translation-type: tm+mt
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 41%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 41%
    + [Cloud Manager](./introduction/cloud-manager.md)
 + Technologie sous-jacente {#underlying-technology}
    + [Architecture AEM](./underlying-technology/introduction-architecture.md)
-   + [les lots OSGi](./underlying-technology/introduction-osgi.md)
+   + [OSGi](./underlying-technology/introduction-osgi.md)
    + [Référentiel de contenu Java](./underlying-technology/introduction-jcr.md)
    + [Sling](./underlying-technology/introduction-sling.md)
    + [Services d’auteur et de publication](./underlying-technology/introduction-author-publish.md)
@@ -77,7 +77,7 @@ ht-degree: 41%
    + [Adobes utilisateurs IMS](./accessing/adobe-ims-users.md)
    + [Groupes d’utilisateurs IMS Adobe](./accessing/adobe-ims-user-groups.md)
    + [Profils de produits IMS Adobe](./accessing/adobe-ims-product-profiles.md)
-   + [aem utilisateurs, groupes et autorisations](./accessing/aem-users-groups-and-permissions.md)
+   + [AEM utilisateurs, groupes et autorisations](./accessing/aem-users-groups-and-permissions.md)
    + [Configuration de l’accès à AEM parcours](./accessing/walk-through.md)
 + Migration {#migration}
    + [Outil de transfert de contenu](./migration/content-transfer-tool.md)
@@ -103,5 +103,11 @@ ht-degree: 41%
    + Avancé{#advanced}
       + [Travailleurs de métadonnées](./asset-compute/advanced/metadata.md)
    + [Résolution des incidents](./asset-compute/troubleshooting.md)
++ Tutorials en plusieurs étapes{#multi-step-tutorials}
+   + [Développement AEM Sites](./develop-wknd-tutorial.md)
+   + [GraphQL](../headless-tutorial/graphql/overview.md)
+   + [Éditeur SPA (Réagir)](../spa-react-tutorial/overview.md)
+   + [Éditeur SPA (angulaire)](../spa-angular-tutorial/overview.md)
+   + [AEM Sites et Adobe Target](../aem-target-personalization/overview.md)
+   + [Authentification basée sur un jeton](../headless-tutorial/authentication/overview.md)
 
-+ [Prise en main du développement d’AEM Sites – Tutoriel WKND](./develop-wknd-tutorial.md)
