@@ -5,24 +5,24 @@ breadcrumb-title: Tutoriel d’AEM sans affichage
 version: cloud-service
 sub-product: content-services
 doc-type: tutorial
-feature: content-fragment, core-components
+feature: fragment de contenu, composants principaux
 topics: content-delivery
 audience: architect, developer, implementer
 activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 31%
+source-wordcount: '107'
+ht-degree: 29%
 
 ---
 
 
 # Prise en main d’AEM sans affichage{#getting-started-with-aem-headless}
 
-+ [aem Présentation sans en-tête](./overview.md)
++ [AEM Présentation sans en-tête](./overview.md)
 + Content Services {#content-services}
    + [Présentation](./content-services/overview.md)
    + [1 - Configuration du didacticiel](./content-services/chapter-1.md)
@@ -40,6 +40,7 @@ ht-degree: 31%
    + [4 - Exploration des API GraphQL](./graphql/explore-graphql-api.md)
    + [5 - Requête à partir d’une application externe](./graphql/graphql-and-external-app.md)
    + [6 - Modélisation avancée des données à l’aide des références de fragments](./graphql/fragment-references.md)
+   + [7 - Déploiement de la production](./graphql/production-deployment.md)
 + Authentification basée sur un jeton {#authentication}
    + [Présentation](./authentication/overview.md)
    + [1 - Jeton d&#39;accès de développement local](./authentication/local-development-access-token.md)
