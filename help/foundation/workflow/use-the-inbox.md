@@ -1,35 +1,24 @@
 ---
 title: Utilisation de la boîte de réception dans AEM
-description: aem boîte de réception facilite la collaboration et la visibilité accrues dans les tâches et les processus.
-version: 6.3, 6.4, 6.5
-feature: inbox
-topics: collaboration, governance
-activity: use
-audience: author, analyst
-doc-type: feature video
+description: AEM boîte de réception facilite la collaboration et la visibilité accrues dans les tâches et les processus.
+version: 6.3, 6.4, 6.5, cloud-service
+topic: Collaboration
+feature: Boîte de réception
+role: Professionnel
+level: Intermédiaire
+kt: 159
+thumbnail: 16827.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 0%
+source-wordcount: '81'
+ht-degree: 2%
 
 ---
 
 
 # Utilisation de la boîte de réception dans AEM
 
-aem boîte de réception facilite la collaboration et la visibilité accrues dans les tâches et les processus.
+La boîte de réception AEM facilite la collaboration et la visibilité dans les tâches et les processus. La Vue de calendrier de la boîte de réception effectue le suivi des projets et des tâches dans une vue temporelle afin de faciliter la gestion et la planification des projets. Avec la vue de calendrier, l’utilisateur aura une visibilité globale sur les projets et les tâches actuellement en cours, planifiés, en retard et en retard.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16827/?quality=12&learn=on)
-
-Cette vidéo présente les points forts de AEM boîte de réception.
-
-* Colonnes de boîte de réception
-* Tâche et processus
-* Gestion des tâches (modifier, affecter, afficher le contenu associé)
-* Gestion des éléments de travail (terminée, reculer, déléguer, commenter)
-* Console d’informations sur le flux de travaux
-* Création de tâches ad hoc
-* Visibilité des tâches et des éléments de travail
-* [!DNL Inbox] et  [!DNL Omnisearch] intégration
-* [!DNL Inbox] et  [!DNL AEM Projects] intégration
