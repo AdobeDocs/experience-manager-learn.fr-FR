@@ -1,8 +1,8 @@
 ---
-title: Étendre un composant | Prise en main de l’AEM SPA Editor et Angular
+title: Étendre un composant | Prise en main de l’éditeur et de l’Angular SPA d’AEM
 description: Découvrez comment étendre un composant principal existant à utiliser avec l'AEM SPA Editor. Comprendre comment ajouter des propriétés et du contenu à un composant existant est une technique puissante pour étendre les fonctionnalités d'une mise en oeuvre AEM SPA Editor. Apprenez à utiliser le modèle de délégation pour étendre les modèles Sling et les fonctionnalités de Sling Resource Merger.
 sub-product: sites
-feature: SPA Editor
+feature: Éditeur de SPA
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -13,7 +13,7 @@ thumbnail: 5871-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
 workflow-type: tm+mt
-source-wordcount: '1984'
+source-wordcount: '1986'
 ht-degree: 4%
 
 ---
@@ -129,7 +129,7 @@ Un composant Carte initial a été fourni par le code de démarrage du chapitre.
 
 6. Dans le commutateur IDE vers le module `ui.frontend`, accédez à `ui.frontend/src/app/components/card` :
 
-   ![Début de composant angulaire](assets/extend-component/angular-card-component-start.png)
+   ![Début de composants Angular](assets/extend-component/angular-card-component-start.png)
 
 7. Inspectez le fichier `card.component.ts`.
 
@@ -139,7 +139,7 @@ Un composant Carte initial a été fourni par le code de démarrage du chapitre.
    MapTo('wknd-spa-angular/components/card')(CardComponent, CardEditConfig);
    ```
 
-   Examinez les trois paramètres `@Input` de la classe pour `src`, `alt` et `title`. Il s’agit des valeurs JSON attendues du composant AEM qui sera mappé au composant angulaire.
+   Examinez les trois paramètres `@Input` de la classe pour `src`, `alt` et `title`. Il s’agit des valeurs JSON attendues du composant AEM qui seront mises en correspondance avec le composant Angular.
 
 8. Ouvrez le fichier `card.component.html`:
 
@@ -149,7 +149,7 @@ Un composant Carte initial a été fourni par le code de démarrage du chapitre.
    </div>
    ```
 
-   Dans cet exemple, nous avons choisi de réutiliser le composant Image angulaire `app-image` existant en transmettant simplement les paramètres `@Input` de `card.component.ts`. Plus loin dans le didacticiel, d’autres propriétés seront ajoutées et affichées.
+   Dans cet exemple, nous avons choisi de réutiliser le composant Image d&#39;Angular existant `app-image` en transmettant simplement les paramètres `@Input` de `card.component.ts`. Plus loin dans le didacticiel, d’autres propriétés seront ajoutées et affichées.
 
 ## Mettre à jour la stratégie de modèle
 
@@ -199,7 +199,7 @@ Ensuite, créez le composant `Card` à l’aide de l’AEM SPA Editor.
 
 6. Mettez à jour l’onglet **Métadonnées des ressources** pour ajouter des valeurs pour **Texte de remplacement** et **Légende**.
 
-   Actuellement, aucune modification supplémentaire n’apparaît après la mise à jour de la boîte de dialogue. Pour exposer les nouveaux champs au composant angulaire, nous devons mettre à jour le modèle Sling pour le composant `Card`.
+   Actuellement, aucune modification supplémentaire n’apparaît après la mise à jour de la boîte de dialogue. Pour exposer les nouveaux champs au composant d&#39;Angular, nous devons mettre à jour le modèle Sling pour le composant `Card`.
 
 7. Ouvrez un nouvel onglet et accédez à [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/content/wknd-spa-angular/us/en/home/jcr%3Acontent/root/responsivegrid/card). Inspect les noeuds de contenu sous `/content/wknd-spa-angular/us/en/home/jcr:content/root/responsivegrid` pour trouver le contenu du composant `Card`.
 
@@ -209,7 +209,7 @@ Ensuite, créez le composant `Card` à l’aide de l’AEM SPA Editor.
 
 ## Mettre à jour le modèle Sling de carte
 
-Pour exposer en fin de compte les valeurs de la boîte de dialogue du composant au composant angulaire, nous devons mettre à jour le modèle Sling qui renseigne le JSON pour le composant `Card`. Nous avons également l&#39;occasion de mettre en oeuvre deux logiques commerciales :
+Pour exposer en fin de compte les valeurs de la boîte de dialogue du composant au composant d’Angular, nous devons mettre à jour le modèle Sling qui renseigne le JSON pour le composant `Card`. Nous avons également l&#39;occasion de mettre en oeuvre deux logiques commerciales :
 
 * Si `titleFromPage` devient **true**, renvoyez le titre de la page spécifiée par `cardPath` sinon renvoyez la valeur de `cardTitle` textfield.
 * Renvoie la dernière date de modification de la page spécifiée par `cardPath`.
@@ -379,7 +379,7 @@ Revenez à l&#39;IDE de votre choix et ouvrez le module `core`.
 
    Notez que le modèle JSON est mis à jour avec des paires clé/valeur supplémentaires après la mise à jour des méthodes dans le modèle Sling `CardImpl`.
 
-## Mettre à jour le composant angulaire
+## Mettre à jour le composant Angular
 
 Maintenant que le modèle JSON est renseigné avec de nouvelles propriétés pour `ctaLinkURL`, `ctaText`, `cardTitle` et `cardLastModified`, nous pouvons mettre à jour le composant Angular pour les afficher.
 
@@ -449,7 +449,7 @@ Maintenant que le modèle JSON est renseigné avec de nouvelles propriétés pou
 
    >[!NOTE]
    >
-   > Vous pouvez vue le [code du composant de carte angulaire terminé ici](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution/ui.frontend/src/app/components/card).
+   > Vous pouvez vue le [code du composant de carte d&#39;Angular terminé ici](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution/ui.frontend/src/app/components/card).
 
 5. Déployez toutes les modifications apportées à l’AEM à partir de la racine du projet à l’aide de Maven :
 
