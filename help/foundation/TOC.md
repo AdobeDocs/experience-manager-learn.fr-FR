@@ -5,10 +5,10 @@ user-guide-description: 'Ensemble de vidéos et de tutoriels d’Adobe Experienc
 sub-product: fondation
 index: y
 translation-type: tm+mt
-source-git-commit: 172a1369cb572b367c78e04c692db8e02e7287e7
+source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 19%
+source-wordcount: '147'
+ht-degree: 21%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 19%
    + [Utilisation du Tableau de bord d&#39;aperçu du système](./administration/use-the-system-overview-dashboard.md)
 + Authentification {#authentication}
    + [Authentification OAuth](authentication/oauth-code-sample-develop.md)
-   + [Configurer des clés publiques/privées à utiliser avec Adobe I/O](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
+   + [Configuration de clés publiques/privées à utiliser avec l’Adobe I/O](authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)
    + [Comprendre l&#39;authentification](authentication/authentication-support-article-understand.md)
    + [Comprendre l’authentification IMS sur AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
 + Adobe Cloud Manager{#cloud-manager}
@@ -46,6 +46,5 @@ ht-degree: 19%
 + Workflow {#workflow}
    + [Utilisation de l’éditeur de flux de travaux](./workflow/use-the-workflow-editor.md)
    + [Utiliser la gestion du processus](./workflow/use-workflow-management.md)
-   + [Utiliser la Vue de calendrier avec les projets AEM et la boîte de réception](./workflow/use-the-calendar-view-with-aem-projects-and-inbox.md)
    + [Utilisation de la boîte de réception](./workflow/use-the-inbox.md)
 
