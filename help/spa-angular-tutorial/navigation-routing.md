@@ -1,8 +1,8 @@
 ---
-title: Ajouter la navigation et le routage | Prise en main de l’AEM SPA Editor et Angular
-description: Découvrez comment plusieurs vues de la SPA sont prises en charge à l’aide de AEM Pages et du SDK de l’éditeur SPA. La navigation dynamique est implémentée à l’aide des itinéraires angulaires et ajoutée à un composant d’en-tête existant.
+title: Ajouter la navigation et le routage | Prise en main de l’éditeur et de l’Angular SPA d’AEM
+description: Découvrez comment plusieurs vues de la SPA sont prises en charge à l’aide de AEM Pages et du SDK de l’éditeur SPA. La navigation dynamique est implémentée à l’aide des itinéraires d’Angular et ajoutée à un composant d’en-tête existant.
 sub-product: sites
-feature: SPA Editor
+feature: Éditeur de SPA
 topics: development
 doc-type: tutorial
 version: cloud-service
@@ -13,7 +13,7 @@ thumbnail: 5312-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2722'
 ht-degree: 2%
 
 ---
@@ -21,12 +21,12 @@ ht-degree: 2%
 
 # Ajouter la navigation et le routage {#navigation-routing}
 
-Découvrez comment plusieurs vues de la SPA sont prises en charge à l’aide de AEM Pages et du SDK de l’éditeur SPA. La navigation dynamique est implémentée à l’aide des itinéraires angulaires et ajoutée à un composant d’en-tête existant.
+Découvrez comment plusieurs vues de la SPA sont prises en charge à l’aide de AEM Pages et du SDK de l’éditeur SPA. La navigation dynamique est implémentée à l’aide des itinéraires d’Angular et ajoutée à un composant d’en-tête existant.
 
 ## Intention
 
 1. Découvrez les options de routage de modèle SPA disponibles lors de l’utilisation de l’éditeur de SPA.
-2. Apprenez à utiliser [routage angulaire](https://angular.io/guide/router) pour naviguer entre les différentes vues du SPA.
+2. Apprenez à utiliser [Angular routage](https://angular.io/guide/router) pour naviguer entre les différentes vues du SPA.
 3. Implémentez une navigation dynamique pilotée par la hiérarchie des pages AEM.
 
 ## Ce que vous allez créer
@@ -69,7 +69,7 @@ Vous pouvez toujours vue le code terminé sur [GitHub](https://github.com/adobe/
 
 ## Mise à jour du composant d’en-tête Inspect {#inspect-header}
 
-Dans les chapitres précédents, le composant `HeaderComponent` a été ajouté en tant que composant angulaire pur inclus par `app.component.html`. Dans ce chapitre, le composant `HeaderComponent` est supprimé de l’application et sera ajouté via l’[éditeur de modèles](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). Cela permet aux utilisateurs de configurer le menu de navigation de `HeaderComponent` depuis l&#39;AEM.
+Dans les chapitres précédents, le composant `HeaderComponent` a été ajouté en tant que composant d&#39;Angular pur inclus via `app.component.html`. Dans ce chapitre, le composant `HeaderComponent` est supprimé de l’application et sera ajouté via l’[éditeur de modèles](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). Cela permet aux utilisateurs de configurer le menu de navigation de `HeaderComponent` depuis l&#39;AEM.
 
 >[!NOTE]
 >
@@ -130,11 +130,11 @@ Dans les chapitres précédents, le composant `HeaderComponent` a été ajouté 
 
    Sous **[!UICONTROL Composants autorisés]** > **[!UICONTROL Général]** > sélectionnez le composant **[!UICONTROL Conteneur de mise en page]**.
 
-   Sous **[!UICONTROL Composants autorisés]** > **[!UICONTROL WKND SPA ANGULAIRE - STRUCTURE]** > sélectionnez le composant **[!UICONTROL En-tête]** :
+   Sous **[!UICONTROL Composants autorisés]** > **[!UICONTROL ANGULAR SPA WKND - STRUCTURE]** > sélectionnez le composant **[!UICONTROL En-tête]** :
 
    ![Sélectionner le composant d’en-tête](assets/map-components/select-header-component.png)
 
-   Sous **[!UICONTROL Composants autorisés]** > **[!UICONTROL WKND SPA ANGULAIRE - Contenu]** > sélectionnez les composants **[!UICONTROL Image]** et **[!UICONTROL Texte]**. Vous devez sélectionner 4 composants au total.
+   Sous **[!UICONTROL Composants autorisés]** > **[!UICONTROL ANGULAR SPA WKND - Contenu]** > sélectionnez les composants **[!UICONTROL Image]** et **[!UICONTROL Texte]**. Vous devez sélectionner 4 composants au total.
 
    Cliquez sur **[!UICONTROL Terminé]** pour enregistrer les modifications.
 
@@ -167,7 +167,7 @@ Dans les chapitres précédents, le composant `HeaderComponent` a été ajouté 
 
 Créez ensuite des pages supplémentaires dans AEM qui serviront de vues différentes dans le SPA. Nous examinerons également la structure hiérarchique du modèle JSON fourni par AEM.
 
-1. Accédez à la console **Sites** : [http://localhost:4502/sites.html/content/wknd-spa-angular/us/en/home](http://localhost:4502/sites.html/content/wknd-spa-angular/us/en/home). Sélectionnez la **Page d&#39;accueil angulaire SPA WKND** et cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Page]** :
+1. Accédez à la console **Sites** : [http://localhost:4502/sites.html/content/wknd-spa-angular/us/en/home](http://localhost:4502/sites.html/content/wknd-spa-angular/us/en/home). Sélectionnez **WKND SPA Angular Page d&#39;accueil** et cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Page]** :
 
    ![Créer une page](assets/navigation-routing/create-new-page.png)
 
@@ -259,7 +259,7 @@ Créez ensuite des pages supplémentaires dans AEM qui serviront de vues différ
 
 Ensuite, mettez en oeuvre le menu de navigation avec un nouveau `NavigationComponent`. Nous pourrions ajouter directement le code dans `header.component.html`, mais une meilleure pratique consiste à éviter les composants volumineux. Implémentez plutôt un `NavigationComponent` qui pourrait être réutilisé ultérieurement.
 
-1. Examinez le fichier JSON exposé par le composant `Header` de l’AEM à l’adresse [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) :
+1. Consultez le fichier JSON exposé par le composant `Header` de l’AEM à l’adresse [http://localhost:4502/content/wknd-spa-angular/us/en.model.json](http://localhost:4502/content/wknd-spa-angular/us/en.model.json) :
 
    ```json
    ...
@@ -311,9 +311,9 @@ Ensuite, mettez en oeuvre le menu de navigation avec un nouveau `NavigationCompo
    ":type": "wknd-spa-angular/components/header"
    ```
 
-   La nature hiérarchique des pages AEM est modélisée dans le fichier JSON qui peut être utilisé pour remplir un menu de navigation. Rappelez-vous que le composant `Header` hérite de toutes les fonctionnalités du [Composant principal de navigation](https://www.aemcomponents.dev/content/core-components-examples/library/templating/navigation.html) et que le contenu exposé via le JSON est automatiquement mappé à l&#39;annotation angulaire `@Input`.
+   La nature hiérarchique des pages AEM est modélisée dans le fichier JSON qui peut être utilisé pour remplir un menu de navigation. Rappelez-vous que le composant `Header` hérite de toutes les fonctionnalités du [Composant principal de navigation](https://www.aemcomponents.dev/content/core-components-examples/library/templating/navigation.html) et que le contenu exposé via le JSON est automatiquement mappé à l&#39;annotation `@Input` Angular.
 
-2. Ouvrez une nouvelle fenêtre de terminal et accédez au dossier `ui.frontend` du projet SPA. Créez un `NavigationComponent` à l’aide de l’outil d’interface de ligne de commande angulaire :
+2. Ouvrez une nouvelle fenêtre de terminal et accédez au dossier `ui.frontend` du projet SPA. Créez un `NavigationComponent` à l’aide de l’outil d’interface de ligne de commande Angular :
 
    ```shell
    $ cd ui.frontend
@@ -325,7 +325,7 @@ Ensuite, mettez en oeuvre le menu de navigation avec un nouveau `NavigationCompo
    UPDATE src/app/app.module.ts (2032 bytes)
    ```
 
-3. Créez ensuite une classe nommée `NavigationLink` à l’aide de l’interface de ligne de commande angulaire dans le répertoire `components/navigation` nouvellement créé :
+3. Créez ensuite une classe nommée `NavigationLink` à l’aide de l’interface de ligne de commande de l’Angular dans le répertoire `components/navigation` nouvellement créé :
 
    ```shell
    $ cd src/app/components/navigation/
@@ -434,7 +434,7 @@ Ensuite, mettez en oeuvre le menu de navigation avec un nouveau `NavigationCompo
    </ul>
    ```
 
-   Cela génère un premier `<ul>` et appelle la méthode `get navigationLinks()` à partir de `navigation.component.ts`. Un `<ng-container>` est utilisé pour effectuer un appel à un modèle nommé `recursiveListTmpl` et le transmet à `navigationLinks` sous la forme d&#39;une variable nommée `links`.
+   Cela génère un `<ul>` initial et appelle la méthode `get navigationLinks()` à partir de `navigation.component.ts`. Un `<ng-container>` est utilisé pour effectuer un appel à un modèle nommé `recursiveListTmpl` et le transmet à `navigationLinks` sous la forme d&#39;une variable nommée `links`.
 
    Ajoutez la `recursiveListTmpl` suivante :
 
@@ -542,7 +542,7 @@ Maintenant que le `NavigationComponent` a été mis en oeuvre, le `HeaderCompone
    ...
    ```
 
-   Une nouvelle instance de `NavigationLink` est créée à partir de `items[0]`, la racine du modèle JSON de navigation transmise depuis AEM. `this.route.snapshot.data.path` renvoie le chemin de la route angulaire actuelle. Cette valeur est utilisée pour déterminer si l’itinéraire actuel est la **Page d&#39;accueil**. `this.homePageUrl` sert à remplir le lien d’ancrage sur le  **logo**.
+   Une nouvelle instance de `NavigationLink` est créée à partir de `items[0]`, la racine du modèle JSON de navigation transmise depuis AEM. `this.route.snapshot.data.path` renvoie le chemin de l&#39;itinéraire d&#39;Angular actuel. Cette valeur est utilisée pour déterminer si l’itinéraire actuel est la **Page d&#39;accueil**. `this.homePageUrl` sert à remplir le lien d’ancrage sur le  **logo**.
 
 5. Ouvrez `header.component.html` et remplacez l’espace réservé statique pour la navigation par une référence au `NavigationComponent` nouvellement créé :
 
@@ -631,13 +631,13 @@ Maintenant que la navigation a été mise en oeuvre, inspectez le routage en AEM
    export class AppRoutingModule {}
    ```
 
-   Le tableau `routes: Routes = [];` définit les itinéraires ou chemins de navigation vers les mappages de composants angulaires.
+   Le tableau `routes: Routes = [];` définit les itinéraires ou chemins de navigation vers les mappages de composants d&#39;Angular.
 
-   `AemPageMatcher` est un routeur Angular personnalisé  [UrlMatcher](https://angular.io/api/router/UrlMatcher), qui correspond à tout ce qui &quot;ressemble&quot; à une page dans AEM qui fait partie de cette application Angular.
+   `AemPageMatcher` est un routeur d&#39;Angular personnalisé  [UrlMatcher](https://angular.io/api/router/UrlMatcher), qui correspond à tout ce qui &quot;ressemble&quot; à une page d&#39;AEM qui fait partie de cette application d&#39;Angular.
 
-   `PageComponent` est le composant angulaire qui représente une page en AEM et les itinéraires correspondants seront appelés. Le `PageComponent` sera inspecté davantage.
+   `PageComponent` est le composant d&#39;Angular qui représente une page en AEM et les itinéraires correspondants seront appelés. Le `PageComponent` sera inspecté davantage.
 
-   `AemPageDataResolver`, fourni par l&#39;AEM SPA Editor JS SDK, est un  [Angular Router ](https://angular.io/api/router/Resolve) Resolverused personnalisé pour transformer l&#39;URL d&#39;itinéraire, qui est le chemin d&#39;accès dans l&#39;extension de l&#39;élément AEM.html, au chemin de ressource dans l&#39;, qui est le chemin de page moins l&#39;extension.
+   `AemPageDataResolver`, fourni par l&#39;AEM SPA Editor JS SDK, est un  [Angular personnalisé ](https://angular.io/api/router/Resolve) Résolveur utilisé pour transformer l&#39;URL d&#39;itinéraire, qui est le chemin d&#39;accès dans l&#39;extension AEM.html, au chemin de ressource dans l&#39;, qui est le chemin de page moins l&#39;extension.
 
    Par exemple, `AemPageDataResolver` transforme l’URL d’un itinéraire de `content/wknd-spa-angular/us/en/home.html` en un chemin d’accès de `/content/wknd-spa-angular/us/en/home`. Cette méthode permet de résoudre le contenu de la page en fonction du chemin d’accès dans l’API du modèle JSON.
 
@@ -667,9 +667,9 @@ Maintenant que la navigation a été mise en oeuvre, inspectez le routage en AEM
    }
    ```
 
-   `PageComponent` est nécessaire pour traiter le JSON récupéré à partir de l&#39;AEM et est utilisé comme composant angulaire pour effectuer le rendu des itinéraires.
+   `PageComponent` est nécessaire pour traiter le JSON récupéré à partir de l&#39;AEM et est utilisé comme composant d&#39;Angular pour effectuer le rendu des itinéraires.
 
-   `ActivatedRoute`, qui est fourni par le module Routeur angulaire, contient l&#39;état indiquant quel contenu JSON de AEM page doit être chargé dans cette instance de composant Page angulaire.
+   `ActivatedRoute`, qui est fourni par le module Angular Router, contient l&#39;état indiquant quel contenu JSON de la page AEM doit être chargé dans cette instance de composant Page d&#39;Angular.
 
    `ModelManagerService`, obtient les données JSON en fonction de l’itinéraire et mappe les données aux variables de classe  `path`,  `items`,  `itemsOrder`. Ils seront ensuite transmis au [AEMPageComponent](https://www.npmjs.com/package/@adobe/cq-angular-editable-components#aempagecomponent.md)
 
@@ -685,9 +685,9 @@ Maintenant que la navigation a été mise en oeuvre, inspectez le routage en AEM
    </aem-page>
    ```
 
-   `aem-page` inclut le  [composant AEMPageComponent](https://www.npmjs.com/package/@adobe/cq-angular-editable-components#aempagecomponent.md). Les variables `path`, `items` et `itemsOrder` sont transmises à `AEMPageComponent`. Le `AemPageComponent`, fourni par le biais du SDK JavaScript de SPA Editor, effectue ensuite une itération sur ces données et instancie dynamiquement les composants angulaires en fonction des données JSON, comme le montre le didacticiel [Map Components](./map-components.md).
+   `aem-page` inclut le  [composant AEMPageComponent](https://www.npmjs.com/package/@adobe/cq-angular-editable-components#aempagecomponent.md). Les variables `path`, `items` et `itemsOrder` sont transmises à `AEMPageComponent`. Le `AemPageComponent`, fourni par le biais des SPA Editor JavaScript SDK, effectue ensuite une itération sur ces données et instancie dynamiquement les composants d’Angular en fonction des données JSON, comme le montre le didacticiel [Map Components](./map-components.md).
 
-   Le `PageComponent` n&#39;est en fait qu&#39;un proxy pour le `AEMPageComponent` et c&#39;est le `AEMPageComponent` qui effectue la majeure partie du gros effort pour mapper correctement le modèle JSON aux composants Angular.
+   Le `PageComponent` n&#39;est en fait qu&#39;un proxy pour le `AEMPageComponent` et c&#39;est le `AEMPageComponent` qui effectue la majeure partie de la lourde charge pour mapper correctement le modèle JSON aux composants de l&#39;Angular.
 
 ## Inspect, le routage SPA en AEM
 
@@ -700,7 +700,7 @@ Maintenant que la navigation a été mise en oeuvre, inspectez le routage en AEM
 
    >[!CAUTION]
    >
-   > Le projet Angular a activé certaines règles d&#39;alignement très strictes. Si la génération Maven échoue, vérifiez l&#39;erreur et recherchez **les erreurs Lint détectées dans les fichiers répertoriés.**. Corrigez tous les problèmes détectés par le linter et relancez la commande Maven.
+   > Le projet d&#39;Angular a activé certaines règles d&#39;alignement très strictes. Si la génération Maven échoue, vérifiez l&#39;erreur et recherchez **les erreurs Lint détectées dans les fichiers répertoriés.**. Corrigez tous les problèmes détectés par le linter et relancez la commande Maven.
 
 2. Accédez à la page d&#39;accueil SPA dans AEM : [http://localhost:4502/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/content/wknd-spa-angular/us/en/home.html) et ouvrez les outils de développement de votre navigateur. Les captures d’écran ci-dessous sont extraites du navigateur Google Chrome.
 
@@ -726,7 +726,7 @@ Maintenant que la navigation a été mise en oeuvre, inspectez le routage en AEM
 
 ## Félicitations! {#congratulations}
 
-Félicitations, vous avez appris comment plusieurs vues du SPA peuvent être prises en charge en mappant sur AEM pages avec le SDK de l’éditeur de SPA. La navigation dynamique a été implémentée à l&#39;aide du routage angulaire et ajoutée au composant `Header`.
+Félicitations, vous avez appris comment plusieurs vues du SPA peuvent être prises en charge en mappant sur AEM pages avec le SDK de l’éditeur de SPA. La navigation dynamique a été mise en oeuvre à l&#39;aide du routage d&#39;Angular et ajoutée au composant `Header`.
 
 Vous pouvez toujours vue le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/navigation-routing-solution) ou vérifier le code localement en passant à la branche `Angular/navigation-routing-solution`.
 
