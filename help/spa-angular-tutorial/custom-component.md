@@ -1,8 +1,8 @@
 ---
-title: Créer un composant personnalisé | Prise en main de l’AEM SPA Editor et Angular
+title: Créer un composant personnalisé | Prise en main de l’éditeur et de l’Angular SPA d’AEM
 description: Découvrez comment créer un composant personnalisé à utiliser avec AEM SPA Editor. Découvrez comment développer des boîtes de dialogue d’auteur et des modèles Sling pour étendre le modèle JSON afin de renseigner un composant personnalisé.
 sub-product: sites
-feature: SPA Editor
+feature: Éditeur de SPA
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -13,7 +13,7 @@ thumbnail: 5831-spa-angular.jpg
 translation-type: tm+mt
 source-git-commit: 1fd4d31770a4eac37a88a7c6960fd51845601bee
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1507'
 ht-degree: 3%
 
 ---
@@ -204,7 +204,7 @@ Dans le contexte de l’éditeur de SPA, les modèles Sling exposent le contenu 
    static final String RESOURCE_TYPE = "wknd-spa-angular/components/custom-component";
    ```
 
-   Le type de ressource du composant est celui qui lie le modèle Sling au composant AEM et qui sera finalement mappé au composant Angular.
+   Le type de ressource du composant est celui qui lie le modèle Sling au composant AEM et qui, en fin de compte, est mappé au composant Angular.
 
 6. Ajoutez la méthode `getExportedType()` à la classe `CustomComponentImpl` pour renvoyer le type de ressource de composant :
 
@@ -215,7 +215,7 @@ Dans le contexte de l’éditeur de SPA, les modèles Sling exposent le contenu 
    }
    ```
 
-   Cette méthode est requise lors de l&#39;implémentation de l&#39;interface `ComponentExporter` et expose le type de ressource qui permet le mappage au composant Angular.
+   Cette méthode est requise lors de l&#39;implémentation de l&#39;interface `ComponentExporter` et expose le type de ressource qui permet le mappage au composant d&#39;Angular.
 
 7. Mettez à jour la méthode `getMessage()` pour renvoyer la valeur de la propriété `message` conservée par la boîte de dialogue d’auteur. Utilisez l&#39;annotation `@ValueMap` pour mapper la valeur JCR `message` à une variable Java :
 
@@ -238,9 +238,9 @@ Dans le contexte de l’éditeur de SPA, les modèles Sling exposent le contenu 
    >
    > Vous pouvez vue le fichier [fini CustomComponentImpl.java ici](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
-## Mettre à jour le composant angulaire
+## Mise à jour du composant Angular
 
-Le code angulaire du composant personnalisé a déjà été créé. Ensuite, effectuez quelques mises à jour pour mapper le composant Angular au composant AEM.
+Le code d&#39;Angular du composant personnalisé a déjà été créé. Ensuite, effectuez quelques mises à jour pour mapper le composant Angular au composant AEM.
 
 1. Dans le module `ui.frontend`, ouvrez le fichier `ui.frontend/src/app/components/custom/custom.component.ts`
 2. Observez la ligne `@Input() message: string;`. La valeur en majuscules transformée devrait être mappée à cette variable.
@@ -311,7 +311,7 @@ Créez ensuite le `Custom Component` à l’aide de l’AEM SPA Editor.
 
    ![Configuration du composant personnalisé](assets/custom-component/enter-dialog-message.png)
 
-   Il s’agit de la boîte de dialogue qui a été créée en fonction du fichier XML plus tôt dans le chapitre.
+   Il s’agit de la boîte de dialogue qui a été créée en fonction du fichier XML précédemment dans le chapitre.
 
 4. Enregistrez les modifications. Observez que le message affiché est en majuscules.
 
