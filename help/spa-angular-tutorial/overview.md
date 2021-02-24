@@ -1,6 +1,6 @@
 ---
 title: Prise en main de l’Éditeur AEM SPA et d’Angular
-description: Créez votre première application angulaire d’une seule page (SPA) modifiable dans Adobe Experience Manager, AEM avec le SPA WKND. Découvrez comment créer un SPA à l’aide de la structure JS angulaire avec AEM Éditeur SPA. Ce tutoriel en plusieurs parties présente la mise en oeuvre d'une application Angular pour une marque de style de vie fictive, le WKND. Le tutoriel couvre la création du SPA de bout en bout et l'intégration avec AEM.
+description: Créez votre première application d’Angular à page unique (SPA) modifiable dans Adobe Experience Manager, AEM avec le SPA WKND. Découvrez comment créer un SPA à l’aide de la structure JS d’Angular avec AEM Éditeur de SPA. Ce tutoriel en plusieurs parties présente la mise en oeuvre d'une application d'Angular pour une marque de style de vie fictive, le WKND. Le tutoriel couvre la création du SPA de bout en bout et l'intégration avec AEM.
 sub-product: sites
 topics: development
 version: cloud-service
@@ -20,7 +20,7 @@ ht-degree: 15%
 
 # Créer votre première SPA Angular dans AEM {#introduction}
 
-Bienvenue dans un tutoriel en plusieurs parties conçu pour les développeurs qui découvrent la fonction **SPA Editor** de Adobe Experience Manager (AEM). Ce tutoriel passe en revue la mise en oeuvre d&#39;une application Angular pour une marque de style de vie fictive, le WKND. L’application Angular sera développée et conçue pour être déployée avec AEM SPA Editor, qui mappe les composants Angular aux composants AEM. Les SPA terminées, déployées sur AEM, peuvent être créées dynamiquement à l’aide des outils de modification en ligne traditionnels d’AEM.
+Bienvenue dans un tutoriel en plusieurs parties conçu pour les développeurs qui découvrent la fonction **SPA Editor** de Adobe Experience Manager (AEM). Ce tutoriel présente la mise en oeuvre d&#39;une application d&#39;Angular pour une marque fictive de style de vie, le WKND. L’application d’Angular sera développée et conçue pour être déployée avec AEM SPA Editor, qui mappe les composants d’Angular aux composants AEM. Les SPA terminées, déployées sur AEM, peuvent être créées dynamiquement à l’aide des outils de modification en ligne traditionnels d’AEM.
 
 ![SPA final mis en oeuvre](assets/wknd-spa-implementation.png)
 
@@ -28,12 +28,12 @@ Bienvenue dans un tutoriel en plusieurs parties conçu pour les développeurs qu
 
 ## À propos d’
 
-L’objectif de ce didacticiel en plusieurs parties est d’apprendre à un développeur comment mettre en oeuvre une application Angular pour travailler avec la fonction SPA éditeur d’AEM. Dans un scénario réel, les activités de développement sont ventilées par personne, impliquant souvent un **développeur frontal** et un **développeur dorsal**. Nous pensons qu&#39;il est bénéfique pour tout développeur qui sera impliqué dans un projet AEM SPA Editor de compléter ce tutoriel.
+L’objectif de ce didacticiel en plusieurs parties est d’apprendre à un développeur comment mettre en oeuvre une application d’Angular pour travailler avec la fonction SPA éditeur d’AEM. Dans un scénario réel, les activités de développement sont ventilées par personne, impliquant souvent un **développeur frontal** et un **développeur dorsal**. Nous pensons qu&#39;il est bénéfique pour tout développeur qui sera impliqué dans un projet AEM SPA Editor de compléter ce tutoriel.
 
 Le tutoriel est conçu pour fonctionner avec **AEM en tant que Cloud Service** et est rétrocompatible avec **AEM 6.5.4+** et **AEM 6.4.8+**. La SPA est mise en oeuvre en utilisant :
 
 * [Archétype de projet Maven AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html)
-* [aem Éditeur SPA](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
+* [AEM Éditeur SPA](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
 * [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [Angular](https://angular.io/)
 
@@ -51,7 +51,7 @@ Avant de commencer ce didacticiel, vous aurez besoin des éléments suivants :
 
 * Connaissances de base en HTML, CSS et JavaScript
 * Connaissance de base de [Angular](https://angular.io/)
-* [aem en tant que SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk) Cloud Service,  [AEM 6.5.4+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#65) ou  [AEM 6.4.8+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#64)
+* [AEM en tant que SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk) Cloud Service,  [AEM 6.5.4+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#65) ou  [AEM 6.4.8+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#64)
 * [Java ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 ou version ultérieure)
 * [Node.](https://nodejs.org/en/) jand  [npm](https://www.npmjs.com/)
