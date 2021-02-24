@@ -4,10 +4,10 @@ description: Ensemble de didacticiels pour Adobe Experience Manager (AEM) en tan
 sub-product: sites, cloud manager, foundation, assets
 kt: 3289
 translation-type: tm+mt
-source-git-commit: 3e719ffd035623803c92ec814911413ec571ab30
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 11%
+source-wordcount: '275'
+ht-degree: 13%
 
 ---
 
@@ -20,9 +20,13 @@ Adobe Experience Manager (AEM) est désormais disponible en tant que Cloud Se
 
 ## Nouveautés
 
-* **[Authentification basée sur un jeton (didacticiel)](../headless-tutorial/authentication/overview.md)**
+* **[Authentification basée sur un jeton (didacticiel)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
 
    *Découvrez comment utiliser l’authentification par jeton pour interagir avec AEM en tant que Cloud Service sur HTTP*
+
+* **[GraphQL sans en-tête (didacticiel)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
+
+   *Découvrez comment utiliser AEM API GraphQL pour alimenter des expériences dans une application externe.*
 
 * **[Importation en bloc (vidéo)](./migration/bulk-import.md)**
 
@@ -35,11 +39,6 @@ Adobe Experience Manager (AEM) est désormais disponible en tant que Cloud Se
 * **[Extension des microservices d&#39;Asset compute (didacticiel)](./asset-compute/overview.md)**
 
    *Apprenez à développer des Assets compute pour générer des rendus de ressources personnalisés*
-
-* **[Configuration de l’accès à AEM en tant que Cloud Service (didacticiel)](./accessing/overview.md)**
-
-   *Découvrez comment configurer les utilisateurs IMS à Adobe Admin Console pour qu’ils puissent accéder à AEM*
-
 
 ## Sélection du personnel
 
