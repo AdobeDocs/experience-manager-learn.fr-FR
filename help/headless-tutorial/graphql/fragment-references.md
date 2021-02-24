@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '848'
 ht-degree: 2%
 
 ---
@@ -234,13 +234,10 @@ Ensuite, mettez à jour les requêtes utilisées par la demande Réagir pour inc
 
    ![Contributeur Ajouté dans l’application](assets/fragment-references/contributor-added-detail.png)
 
-## Ressources supplémentaires
-
-Pour plus d’informations sur les fragments de contenu et GraphQL, voir les ressources suivantes :
-
-* [Diffusion de contenu sans en-tête utilisant des fragments de contenu avec GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-graphql.html)
-* [aem API GraphQL à utiliser avec les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html)
-
 ## Félicitations!{#congratulations}
 
 Félicitations ! Vous avez mis à jour un modèle de fragment de contenu existant afin de référencer un fragment de contenu imbriqué à l’aide du champ **Référence du fragment**. Vous avez également appris à modifier une requête GraphQL pour inclure des champs à partir d’un modèle référencé.
+
+## Étapes suivantes {#next-steps}
+
+Dans le chapitre suivant, [Déploiement de production à l’aide d’un environnement de publication AEM](./production-deployment.md), découvrez les services d’auteur et de publication AEM et le modèle de déploiement recommandé pour les applications sans en-tête. Vous allez mettre à jour une application existante afin d’utiliser des variables d’environnement pour modifier dynamiquement un point de terminaison GraphQL en fonction de l’environnement de cible. Vous apprendrez également comment configurer correctement les AEM pour le partage de ressources entre Origines (CORS).
