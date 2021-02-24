@@ -11,7 +11,7 @@ mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 1%
@@ -68,7 +68,7 @@ Le démarrage de l&#39;application React est décrit plus en détail dans le cha
 
 1. Consultez l’application à l’adresse [http://localhost:3000/](http://localhost:3000/). L&#39;exemple d&#39;application React comporte deux parties principales :
 
-   * L’expérience personnelle sert d’index de WKND Adventures, mais elle interroge __Adventure__ Content Fragments in AEM à l’aide de GraphQL. Dans ce chapitre, nous allons modifier cette vue pour prendre en charge le filtrage des aventures par activité.
+   * L&#39;expérience personnelle sert d&#39;index de WKND Adventures, en interrogeant __Adventure__ Content Fragments in AEM à l&#39;aide de GraphQL. Dans ce chapitre, nous allons modifier cette vue pour prendre en charge le filtrage des aventures par activité.
 
       ![Application WKND GraphQL React - Expérience personnelle](./assets/graphql-and-external-app/react-home-view.png)
 
