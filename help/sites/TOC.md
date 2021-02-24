@@ -4,10 +4,10 @@ user-guide-description: Ensemble de vidéos et de tutoriels d’Adobe Experience
 breadcrumb-title: Tutoriels d’AEM Sites
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: ac2e937613eba4857d0f9bf8c5a39d5611157cbd
+source-git-commit: fcfb33f93e57d40b08e0527d38cfce8553095e65
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 35%
+source-wordcount: '447'
+ht-degree: 36%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 35%
    + [Fragments de contenu ou Fragments d’expérience](content-fragments/understand-content-fragments-and-experience-fragments.md)
 + Fragments d’expérience {#experience-fragments}
    + [Utilisation des fragments d’expérience](experience-fragments/experience-fragments-feature-video-use.md)
-   + [Présentation des fragments d’expérience](experience-fragments/experience-fragments-feature-video-understand.md)
+   + [Blocs de création](experience-fragments/building-blocks.md)
    + [Configuration de la publication sur les réseaux sociaux avec des fragments d’expérience](experience-fragments/experience-fragments-social-technical-video-setup.md)
    + [Fragments de contenu ou Fragments d’expérience](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
 + Développement {#developing}
@@ -52,7 +52,7 @@ ht-degree: 35%
    + [Prise en main d’AEM Sites](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Prise en main d’AEM sans affichage](https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-with-aem-headless/overview.html)
    + [Prise en main de AEM SPA Editor et réaction](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Prise en main de AEM SPA Editor et Angular](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Prise en main de AEM SPA Editor et d’Angular](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [Extension des propriétés de la page](developing/page-properties-technical-video-develop.md)
    + [Développement avec le système de style](developing/style-system-technical-video-understand.md)
    + [Meilleures pratiques du système de style](developing/style-organization-style-system-understand-article.md)
@@ -69,7 +69,7 @@ ht-degree: 35%
    + [Utilisation de SPA Editor](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Didacticiel Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [Prise en main de AEM SPA Editor et réaction](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Prise en main de AEM SPA Editor et Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Prise en main de AEM SPA Editor et d’Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
 + Gestion multisite {#multi-site-management}
    + [Présentation de la copie de langue](./multi-site-management/language-copy-overview.md)
    + [Live Copy et Blueprint](./multi-site-management/live-copy-and-blueprint.md)
@@ -94,7 +94,7 @@ ht-degree: 35%
    + Experience Platform Launch {#experience-platform-launch}
       + [Présentation](integrations/experience-platform-launch/overview.md)
       + [Créer une propriété Launch](integrations/experience-platform-launch/create-launch-property.md)
-      + [Connectez AEM avec le lancement à l’aide de Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
+      + [Connexion d&#39;AEM avec lancement à l&#39;aide d&#39;Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
       + [Création d’un Cloud Service de lancement](integrations/experience-platform-launch/create-launch-cloud-service.md)
       + [Débogage d’une implémentation de lancement](integrations/experience-platform-launch/debug-launch-implementation.md)
    + Couche de données client Adobe {#adobe-client-data-layer}
