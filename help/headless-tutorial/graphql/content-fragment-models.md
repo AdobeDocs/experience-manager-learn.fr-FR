@@ -11,9 +11,9 @@ mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '966'
 ht-degree: 2%
 
 ---
@@ -133,13 +133,13 @@ Ensuite, créez un nouveau modèle pour un **contributeur**, qui est le modèle 
 
 ## Activer le modèle de contributeur
 
-Les modèles de fragment de contenu prennent par défaut l’état **Brouillon** lors de leur création initiale. Cela permet aux utilisateurs d’affiner le modèle de fragment de contenu **avant** en permettant aux auteurs de l’utiliser. Rappelez-vous que la modification du **nom de propriété** d&#39;un champ du modèle modifie le schéma de données sous-jacent et peut avoir des effets en aval importants sur les fragments existants et les applications externes. Il est recommandé de planifier soigneusement la convention d’affectation de nom utilisée pour le **nom de propriété** des champs.
+Les modèles de fragments de contenu doivent être **activés** avant que les auteurs de contenu puissent les utiliser. Il est possible de **désactiver** un modèle de fragment de contenu, interdisant ainsi aux auteurs de l’utiliser. Rappelez-vous que la modification du **nom de propriété** d&#39;un champ du modèle modifie le schéma de données sous-jacent et peut avoir des effets en aval importants sur les fragments existants et les applications externes. Il est recommandé de planifier soigneusement la convention d’affectation de nom utilisée pour le **nom de la propriété** des champs avant d’activer le modèle de fragment de contenu pour les utilisateurs.
 
-1. Observez que le modèle **Contributeur** est actuellement dans un état **Brouillon**.
+1. Assurez-vous que le modèle **Contributeur** est actuellement dans un état **Activé**.
 
-1. Activez le **modèle de contributeur** en passant la souris sur la carte et en cliquant sur l&#39;icône **Activer** :
+   ![Modèle Contributeur activé](assets/content-fragment-models/enable-contributor-model.png)
 
-   ![Activer le modèle de contributeur](assets/content-fragment-models/enable-contributor-model.png)
+   Il est possible de basculer l’état d’un modèle de fragment de contenu en passant la souris sur la carte et en cliquant sur l’icône **Désactiver** / **Activer**.
 
 ## Félicitations! {#congratulations}
 
