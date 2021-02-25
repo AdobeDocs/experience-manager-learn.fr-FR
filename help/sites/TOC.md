@@ -4,9 +4,9 @@ user-guide-description: Ensemble de vidéos et de tutoriels d’Adobe Experience
 breadcrumb-title: Tutoriels d’AEM Sites
 sub-product: sites
 translation-type: tm+mt
-source-git-commit: fcfb33f93e57d40b08e0527d38cfce8553095e65
+source-git-commit: 4620acc18a08d71994753903b79247a8ed3fd8f5
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '446'
 ht-degree: 36%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 36%
 + Fragments de contenu {#content-fragments}
    + [Création de fragments de contenu](content-fragments/content-fragments-feature-video-use.md)
    + [Diffusion de fragments de contenu](content-fragments/content-fragments-delivery-feature-video-use.md)
-   + [Traduction avec des fragments de contenu](content-fragments/content-fragments-translation-feature-video-use.md)
+   + [Traduction de fragments de contenu](content-fragments/content-fragments-translation-feature-video-use.md)
    + [Fragments de contenu ou Fragments d’expérience](content-fragments/understand-content-fragments-and-experience-fragments.md)
 + Fragments d’expérience {#experience-fragments}
    + [Utilisation des fragments d’expérience](experience-fragments/experience-fragments-feature-video-use.md)
