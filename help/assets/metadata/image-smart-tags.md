@@ -1,19 +1,18 @@
 ---
 title: Balises dynamiques pour les images avec AEM Assets
 description: Les balises dynamiques pour les images augmentent AEM fonctionnalités de recherche en ajoutant automatiquement et intelligemment des balises de métadonnées aux fichiers d’image en fonction du contenu de l’image.
-feature: smart-tags
-topics: metadata, search
-audience: all
-doc-type: feature video
-activity: understand
-version: 6.3, 6.4, 6.5
-kt: 5244
+topic: Gestion de contenu
+feature: Balises intelligentes
+role: Professionnel
+level: Intermédiaire
+version: 6.3, 6.4, 6.5, cloud-service
+kt: 645
 thumbnail: 17019.jpg
 translation-type: tm+mt
-source-git-commit: 159e9d7ea363768f202db91a1d0555c2e57ebb13
+source-git-commit: a5fb96275194ddc46169832c0fb79a2587833564
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 43%
+source-wordcount: '225'
+ht-degree: 44%
 
 ---
 
@@ -36,7 +35,7 @@ Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respe
 * L’organisation doit disposer d’un compte Adobe ID pourvu de droits d’administrateur
 * Le service de contenu dynamique est activé pour votre organisation
 
-La vidéo détaille les tâches suivantes requises pour configurer le service Adobe I/O Smart Content utilisé pour les images de balises actives.
+La vidéo détaille les tâches suivantes requises pour configurer le service Adobe I/O de contenu dynamique utilisé pour les images de balises actives.
 
 * Création d’une configuration de service de contenu dynamique dans AEM pour générer une clé publique. Obtenez un certificat public pour l’intégration d’OAuth.
 * Création d’une intégration dans Adobe I/O et téléchargement de la clé publique générée.
@@ -45,4 +44,4 @@ La vidéo détaille les tâches suivantes requises pour configurer le service Ad
 
 ## Ressources supplémentaires
 
-* [Documentation sur les balises actives AEM Assets](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)
+* [Documentation sur les balises actives AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/smart-tags.html)
