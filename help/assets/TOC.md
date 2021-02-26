@@ -5,7 +5,7 @@ breadcrumb-title: Tutoriels d’AEM Assets
 sub-product: ressources
 team: TM
 translation-type: tm+mt
-source-git-commit: d302444e74f8c2a548d2e08b5ec2991cc7347324
+source-git-commit: 0d012d61b7740e461e641dddd6c5255a022305ea
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 37%
@@ -59,7 +59,7 @@ ht-degree: 37%
    + [Balises dynamiques pour les images](metadata/image-smart-tags.md)
    + [Balises dynamiques personnalisées pour les images](metadata/custom-smart-tags.md)
    + [Balises intelligentes pour les vidéos](metadata/video-smart-tags.md)
-   + [Importation et exportation de métadonnées](metadata/metadata-import-feature-video-use.md)
+   + [Importation et exportation de métadonnées](metadata/metadata-import-export.md)
 
 + Partage et distribution{#sharing}
    + [Téléchargement de fichiers](./sharing/download.md)
