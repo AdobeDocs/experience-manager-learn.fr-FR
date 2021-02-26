@@ -1,21 +1,18 @@
 ---
 title: Utilisation de Timewarp avec AEM Sites
-seo-title: Utilisation de Timewarp avec Adobe Experience Manager Sites
 description: Timewarp est une fonctionnalité d’Adobe Experience Manager Sites qui permet aux auteurs de consulter rapidement l’état d’une page à un moment donné dans le passé.
-seo-description: Timewarp est une fonctionnalité d’Adobe Experience Manager Sites qui permet aux auteurs de consulter rapidement l’état d’une page à un moment donné dans le passé.
-feature: timewarp
-topics: authoring
-audience: all
-doc-type: feature video
-activity: use
-version: 6.3, 6.4, 6.5
-uuid: f1bcb8ae-db14-4f3d-b52e-48f589470aec
-discoiquuid: dec419ba-233e-4ba5-9eb8-837035f4b4b8
+topic: Gestion de contenu
+feature: 'Création  '
+role: Professionnel
+level: Intermédiaire
+version: 6.3, 6.4, 6.5, cloud-service
+kt: 3307
+thumbnail: 17453.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d1578e1c6fb6208f04953454354e1ed23566e450
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 3%
+source-wordcount: '86'
+ht-degree: 8%
 
 ---
 
@@ -24,8 +21,8 @@ ht-degree: 3%
 
 Timewarp est une fonctionnalité d’Adobe Experience Manager Sites qui permet aux auteurs de consulter rapidement l’état d’une page à un moment donné dans le passé.
 
->[!VIDEO](https://video.tv.adobe.com/v/17453/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17453/?quality=12&learn=on)
 
-## Ressources supplémentaires {#additional-resources}
+## Autres ressources {#more-resources}
 
-* [Utilisation de versions de page - Barre de temps](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/working-with-page-versions.html#Timewarp)
+* [Utilisation de versions de page - Barre de temps](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/page-versions.html)
