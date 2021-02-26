@@ -1,26 +1,22 @@
 ---
-title: Amplification de recherche
-description: Un aperçu approfondi de l'essor de la recherche AEM Assets et de son fonctionnement dans le contexte plus large de l'AEM.
-topics: metadata, search
-audience: all
-doc-type: feature video
-activity: understand
-version: 6.3, 6.4, 6.5
+title: Qu'est-ce que l'essor de la recherche en AEM Assets ?
+description: Découvrez comment ajouter des mots et des expressions clés pour améliorer la pertinence des recherches d’un fichier à Adobe Experience Manager.
+topic: Gestion de contenu
+feature: Rechercher
+role: Professionnel
+level: Intermédiaire
+version: 6.3, 6.4, 6.5, cloud-service
+kt: 103
+thumbnail: 16766.jpg
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7a06a9ae0c57669578e1c11fa035f80583c90dd8
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 4%
+source-wordcount: '33'
+ht-degree: 15%
 
 ---
 
 
-# Optimisation de la recherche avec les métadonnées de fichier {#search-boost-asset}
+# Amplification de recherche
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=12&learn=on)
-
-## Présentation de l&#39;encouragement de la recherche en AEM Assets{#understanding-search-boosting-in-aem-assets}
-
-Un aperçu approfondi de l&#39;essor de la recherche AEM Assets et de son fonctionnement dans le contexte plus large de l&#39;AEM.
-
->[!VIDEO](https://video.tv.adobe.com/v/16770/?quality=12&learn=on)
