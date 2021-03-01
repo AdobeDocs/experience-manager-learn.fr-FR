@@ -8,8 +8,8 @@ index: y
 translation-type: tm+mt
 source-git-commit: 1e945afddda3d7735005029952a9d7ec46828bc6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '947'
+ht-degree: 6%
 
 ---
 
