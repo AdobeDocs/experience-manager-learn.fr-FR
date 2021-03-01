@@ -14,7 +14,7 @@ kt: 2214
 translation-type: tm+mt
 source-git-commit: bdb62b3361f20a0d0f27f5818cb82276980755d1
 workflow-type: tm+mt
-source-wordcount: '65'
+source-wordcount: '66'
 ht-degree: 36%
 
 ---
@@ -28,5 +28,5 @@ ht-degree: 36%
 + [Personnalisation des expériences de pages Web complètes](./personalization-use-case-2.md)
 + Mise en œuvre {#aem-target-implementation}
    + [Présentation](./implementation.md)
-   + [aem et Adobe Target à l’aide de Launch et Adobe I/O](./using-launch-adobe-io.md)
-   + [aem et Adobe Target à l’aide de Cloud Services hérités](./using-aem-cloud-services.md)
+   + [AEM et Adobe Target à l’aide du lancement et de l’Adobe I/O](./using-launch-adobe-io.md)
+   + [AEM et Adobe Target à l’aide de Cloud Services hérités](./using-aem-cloud-services.md)
