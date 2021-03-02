@@ -7,9 +7,9 @@ topics: development
 activity: develop
 audience: developer
 translation-type: tm+mt
-source-git-commit: c85a59a8bd180d5affe2a5bf5939dabfb2776d73
+source-git-commit: 947ffbfcc64f0e2e010a0515c8e6cf1530ec4ea9
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '2653'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ Il s’agit également du *code de test critique* par rapport à une instance lo
 ### Étapes
 
 1. Vérifiez que [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html) est installé.
-   * Préférer [JDK Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout liste&amp;p.offset=0&amp;p.limit=14) pour AEM 6.5+
+   * Préférer [JDK Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout liste&amp;p.offset=0&amp;p.limit=14) pour AEM 6.5+
    * [Java JDK 8](https://www.oracle.com/technetwork/java/javase/downloads/index.html#JDK8) pour AEM versions antérieures à AEM 6.5
 2. Obtenez une copie du fichier Jar [AEM QuickStart et a [!DNL license.properties]](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware).
 3. Créez une structure de dossiers sur votre ordinateur comme suit :
@@ -75,7 +75,7 @@ Il s’agit également du *code de test critique* par rapport à une instance lo
 
 ## Installer Apache Maven
 
-***[!DNL Apache Maven]*** est un outil permettant de gérer la procédure de création et de déploiement pour les projets basés sur Java. aem est une plateforme basée sur Java et [!DNL Maven] est la méthode standard de gestion du code pour un projet AEM. Lorsque nous disons ***AEM Maven Project*** ou simplement votre ***AEM Project***, nous faisons référence à un projet Maven qui inclut tout le code *personnalisé* de votre site.
+***[!DNL Apache Maven]*** est un outil permettant de gérer la procédure de création et de déploiement pour les projets basés sur Java. AEM est une plateforme basée sur Java et [!DNL Maven] est la méthode standard de gestion du code pour un projet AEM. Lorsque nous disons ***AEM Maven Project*** ou simplement votre ***AEM Project***, nous faisons référence à un projet Maven qui inclut tout le code *personnalisé* de votre site.
 
 Tous les projets AEM doivent être construits à partir de la dernière version du **[!DNL AEM Project Archetype]** : [https://github.com/Adobe-Marketing-Cloud/aem-project-archetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype). [!DNL AEM Project Archetype] va créer une amorce d&#39;un projet AEM avec un exemple de code et de contenu. [!DNL AEM Project Archetype] inclut également **[!DNL AEM WCM Core Components]** configuré pour être utilisé sur votre projet.
 
@@ -189,6 +189,20 @@ Un environnement de développement intégré ou IDE est une application qui comb
 
 Vous trouverez ci-dessous quelques-uns des IDE les plus utilisés avec le développement AEM avec des vidéos correspondantes qui montrent l&#39;intégration avec une instance AEM locale.
 
+>[!NOTE]
+>
+> Le projet WKND a été mis à jour par défaut pour fonctionner sur AEM en tant que Cloud Service. Il a été mis à jour pour être [rétrocompatible avec la version 6.5/6.4](https://github.com/adobe/aem-guides-wknd#building-for-aem-6xx). Si vous utilisez AEM 6.5 ou 6.4, ajoutez le profil `classic` aux commandes Maven.
+
+```shell
+$ mvn clean install -PautoInstallSinglePackage -Pclassic
+```
+
+Lors de l&#39;utilisation d&#39;un IDE, veillez à vérifier `classic` dans l&#39;onglet Profil Maven.
+
+![Onglet Profil expert](assets/set-up-a-local-aem-development-environment/intelliJMavenProfiles.png)
+
+*Profil IntelliJ Maven*
+
 ### [!DNL Eclipse] IDE
 
 **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** est l&#39;un des IDE les plus populaires pour le développement de Java, en grande partie parce qu&#39;il est open source et ***gratuit*** ! Adobe fournit un module externe, **[[!DNL AEM Developer Tools]](https://eclipse.adobe.com/aem/dev-tools/)**, pour [!DNL Eclipse] afin de permettre un développement plus facile avec une interface graphique graphique agréable pour synchroniser le code avec une instance d&#39;AEM locale. L&#39;IDE [!DNL Eclipse] est recommandé pour les développeurs qui viennent d&#39;AEM en grande partie en raison de la prise en charge de l&#39;interface utilisateur graphique par [!DNL AEM Developer Tools].
@@ -234,7 +248,7 @@ Vous trouverez ci-dessous quelques-uns des IDE les plus utilisés avec le dével
 * [****](https://code.visualstudio.com/Download) **DownloadVisual Studio Code**
 * **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)**  - Outil de type FTP pour le contenu JCR
 * **[aemfed](https://aemfed.io/)**  - Accélérer votre flux de travail AEM frontal
-* **[aem Sync](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Community supported* extension for Visual Studio Code
+* **[AEM Sync](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Community supported* extension for Visual Studio Code
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 
@@ -255,7 +269,7 @@ Vous trouverez ci-dessous quelques-uns des IDE les plus utilisés avec le dével
 
 ## Résolution des incidents
 
-***Aide!*** Mon code ne fonctionne pas ! Comme pour tout développement, il y aura des fois (probablement plusieurs) où votre code ne fonctionne tout simplement pas comme prévu. aem est une plateforme puissante, mais avec un grand pouvoir... vient une grande complexité. Vous trouverez ci-dessous quelques points de départ de haut niveau concernant la résolution des problèmes et le suivi des problèmes (mais loin d&#39;une liste exhaustive des problèmes qui peuvent se produire) :
+***Aide!*** Mon code ne fonctionne pas ! Comme pour tout développement, il y aura des fois (probablement plusieurs) où votre code ne fonctionne tout simplement pas comme prévu. AEM est une plateforme puissante, mais avec un grand pouvoir... vient une grande complexité. Vous trouverez ci-dessous quelques points de départ de haut niveau concernant la résolution des problèmes et le suivi des problèmes (mais loin d&#39;une liste exhaustive des problèmes qui peuvent se produire) :
 
 ### Vérification du déploiement du code
 
@@ -267,7 +281,7 @@ Une première étape intéressante, en cas de problème, consiste à vérifier q
 
 #### Vérification des journaux
 
-aem est une plate-forme de discussion et consigne de nombreuses informations utiles dans le **error.log**. Le fichier **error.log** se trouve là où AEM a été installé : &lt; `aem-installation-folder>/crx-quickstart/logs/error.log`.
+AEM est une plate-forme de discussion et consigne de nombreuses informations utiles dans le **error.log**. Le fichier **error.log** se trouve là où AEM a été installé : &lt; `aem-installation-folder>/crx-quickstart/logs/error.log`.
 
 Une technique utile pour effectuer le suivi des problèmes consiste à ajouter des instructions de journal dans votre code Java :
 
@@ -309,7 +323,7 @@ En suivant l’exemple ci-dessus, nous constatons que la version installée sur 
 
 #### Vérifier l&#39;enregistrement des modèles Sling {#osgi-component-sling-models}
 
-aem composants doivent toujours être sauvegardés par un [!DNL Sling Model] pour encapsuler toute logique métier et s’assurer que le script de rendu HTML reste propre. Si vous rencontrez des problèmes où le modèle Sling est introuvable, il peut s’avérer utile de vérifier le [!DNL Sling Models] à partir de la console : [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels). Cela vous dira si votre modèle Sling a été enregistré et à quel type de ressource (le chemin du composant) il est lié.
+AEM composants doivent toujours être sauvegardés par un [!DNL Sling Model] pour encapsuler toute logique métier et s’assurer que le script de rendu HTML reste propre. Si vous rencontrez des problèmes où le modèle Sling est introuvable, il peut s’avérer utile de vérifier le [!DNL Sling Models] à partir de la console : [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels). Cela vous dira si votre modèle Sling a été enregistré et à quel type de ressource (le chemin du composant) il est lié.
 
 ![État du modèle Sling](assets/set-up-a-local-aem-development-environment/sling-model-status.png)
 
@@ -327,7 +341,7 @@ Un autre problème fréquemment rencontré lors du développement du code fronta
 
 #### Débogage des bibliothèques clientes
 
-Avec différentes méthodes de catégories et d’incorporation pour inclure plusieurs bibliothèques clientes, il peut s’avérer difficile de résoudre les problèmes. aem expose plusieurs outils pour y remédier. L&#39;un des outils les plus importants est [!UICONTROL Reconstruire les bibliothèques clientes], ce qui obligera AEM à recompiler les fichiers LESS et à générer le fichier CSS.
+Avec différentes méthodes de catégories et d’incorporation pour inclure plusieurs bibliothèques clientes, il peut s’avérer difficile de résoudre les problèmes. AEM expose plusieurs outils pour y remédier. L&#39;un des outils les plus importants est [!UICONTROL Reconstruire les bibliothèques clientes], ce qui obligera AEM à recompiler les fichiers LESS et à générer le fichier CSS.
 
 * [Effacer les bibliothèques](http://localhost:4502/libs/granite/ui/content/dumplibs.html)  : Liste toutes les bibliothèques clientes enregistrées dans l’instance AEM. &lt;host>/libs/granite/ui/content/dumplibs.html
 * [Tester la sortie](http://localhost:4502/libs/granite/ui/content/dumplibs.test.html)  : permet à un utilisateur de voir la sortie HTML attendue des inclusions clientlib en fonction de la catégorie. &lt;host>/libs/granite/ui/content/dumplibs.test.html
