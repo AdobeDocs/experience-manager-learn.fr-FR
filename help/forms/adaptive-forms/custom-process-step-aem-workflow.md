@@ -3,19 +3,16 @@ title: Implémentation d’une étape de processus personnalisée
 seo-title: Implémentation d’une étape de processus personnalisée
 description: Ecriture de pièces jointes de formulaire adaptatif dans un système de fichiers à l’aide de l’étape de processus personnalisée
 seo-description: Ecriture de pièces jointes de formulaire adaptatif dans un système de fichiers à l’aide de l’étape de processus personnalisée
-feature: Workflow
+feature: workflow
 topics: development
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
-topic: Développement
-role: Développeur
-level: Expérience
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '896'
 ht-degree: 2%
 
 ---
