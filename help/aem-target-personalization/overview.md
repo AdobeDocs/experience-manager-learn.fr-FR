@@ -3,10 +3,14 @@ title: Prise en main d’AEM et d’Adobe Target
 seo-title: Prise en main d’AEM et d’Adobe Target
 description: Didacticiel de bout en bout montrant comment créer et diffuser des expériences personnalisées à l’aide de Adobe Experience Manager et Adobe Target. Dans ce tutoriel, vous découvrirez également les différentes personnes impliquées dans le processus de bout en bout et comment elles collaborent entre elles.
 seo-description: Didacticiel de bout en bout montrant comment créer et fournir une expérience personnalisée à l’aide de Adobe Experience Manager et Adobe Target. Dans ce tutoriel, vous découvrirez également les différentes personnes impliquées dans le processus de bout en bout et comment elles collaborent entre elles.
+feature: Fragments d’expérience
+topic: Personnalisation
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: c4ddafe392f74be8401f3ef6e07fc9d463d7620a
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '894'
 ht-degree: 2%
 
 ---
@@ -26,14 +30,14 @@ Dans ce didacticiel, nous abordons trois scénarios différents pour l’AEM et 
 
 Pour ce scénario, nous allons utiliser l&#39;AEM et la Cible. Il est clair que les deux produits ont leurs propres atouts et, lorsqu&#39;il s&#39;agit de fournir des expériences personnalisées aux utilisateurs de votre site, vous avez besoin **de contenu personnalisé (contenu de l&#39;AEM)** et d&#39;une **Cible (intelligente)** pour diffuser ces contenus en fonction d&#39;un utilisateur spécifique.
 
-aem vous aide à créer du contenu personnalisé, en rassemblant l’ensemble de votre contenu et de vos ressources dans un emplacement central afin d’alimenter votre stratégie de personnalisation. aem vous permet de créer facilement du contenu pour les ordinateurs de bureau, les tablettes et les périphériques mobiles en un seul endroit sans écrire de code. Il n’est pas nécessaire de créer des pages pour chaque périphérique : AEM ajuste automatiquement chaque expérience à l’aide de votre contenu. Vous pouvez également exporter le contenu de l’AEM vers Adobe Target sous forme d’offres en appuyant sur un bouton.
+AEM vous aide à créer du contenu personnalisé, en rassemblant l’ensemble de votre contenu et de vos ressources dans un emplacement central afin d’alimenter votre stratégie de personnalisation. AEM vous permet de créer facilement du contenu pour les ordinateurs de bureau, les tablettes et les périphériques mobiles en un seul endroit sans écrire de code. Il n’est pas nécessaire de créer des pages pour chaque périphérique : AEM ajuste automatiquement chaque expérience à l’aide de votre contenu. Vous pouvez également exporter le contenu de l’AEM vers Adobe Target sous forme d’offres en appuyant sur un bouton.
 
 Nous avons maintenant un contenu personnalisé sous la forme d&#39;Offres d&#39;AEM en Cible. La cible vous permet de diffuser ces offres à grande échelle en fonction d’une combinaison d’approches d’apprentissage automatique basées sur des règles et basées sur l’IA qui intègrent des variables comportementales, contextuelles et hors ligne.  Grâce à la Cible, vous pouvez facilement configurer et exécuter des activités A/B et multivariées (MVT) afin de déterminer les meilleures offres, contenus et expériences.
 
 **Les** fragmentations d’expérience représentent un énorme pas en avant pour lier les créateurs de contenu/d’expérience aux professionnels de la personnalisation qui génèrent des résultats commerciaux en utilisant la Cible.
 
-* aem auteurs d’éditeurs de contenu personnalisé le contenu en tant que fragments d’expérience et ses variations
-* aem exporte le fragment d’expérience HTML vers la Cible &#x200B;
+* AEM auteurs d’éditeurs de contenu personnalisé le contenu en tant que fragments d’expérience et ses variations
+* AEM exporte le fragment d’expérience HTML vers la Cible &#x200B;
 * Cible &#x200B; utilise les annotations AEM du fragment d’expérience comme Offres dans les Activités
 * La cible fournit du code HTML de fragment d’expérience, AEM fournit des images référencées.
 
@@ -41,8 +45,8 @@ Nous avons maintenant un contenu personnalisé sous la forme d&#39;Offres d&#39;
 
 **Pour mettre en oeuvre ce scénario, vous devez :**
 
-* [Intégration de l’AEM et de Adobe Target à l’aide de Launch et de Adobe I/O](./implementation.md#integrating-aem-target-options)
-* [aem et Adobe Target à l’aide de Cloud Services hérités](./implementation.md#integrating-aem-target-options)
+* [Intégration de l’AEM et de Adobe Target à l’aide du lancement et de l’Adobe I/O](./implementation.md#integrating-aem-target-options)
+* [AEM et Adobe Target à l’aide de Cloud Services hérités](./implementation.md#integrating-aem-target-options)
 
 ***Après avoir implémenté les intégrations ci-dessus, nous pouvons explorer le  [scénario en détail](./personalization-use-case-1.md).***
 
@@ -62,7 +66,7 @@ Le compositeur d’expérience visuelle est l’une des principales caractérist
 
 **Pour mettre en oeuvre ce scénario, vous devez :**
 
-* [Intégration de l’AEM et de Adobe Target à l’aide de Launch et de Adobe I/O](./implementation.md#integrating-aem-target-options)
+* [Intégration de l’AEM et de Adobe Target à l’aide du lancement et de l’Adobe I/O](./implementation.md#integrating-aem-target-options)
 
 ***Après avoir mis en oeuvre l’intégration ci-dessus, explorons le  [scénario en détail.](./personalization-use-case-3.md)***
 
@@ -80,6 +84,6 @@ L’intégration de Adobe Experience Manager à Adobe Target vous aide à offrir
 
 **Pour mettre en oeuvre ce scénario, vous devez :**
 
-* [Intégration de l’AEM et de Adobe Target à l’aide de Launch et de Adobe I/O](./implementation.md#integrating-aem-target-options)
+* [Intégration de l’AEM et de Adobe Target à l’aide du lancement et de l’Adobe I/O](./implementation.md#integrating-aem-target-options)
 
 ***Après avoir mis en oeuvre l’intégration ci-dessus, explorons le  [scénario en détail.](./personalization-use-case-2.md)***
