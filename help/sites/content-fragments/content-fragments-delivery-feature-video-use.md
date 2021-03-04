@@ -4,7 +4,7 @@ seo-title: Diffusion de fragments de contenu dans Adobe Experience Manager
 description: Les fragments de contenu, indépendamment de la mise en page, peuvent être utilisés directement en AEM Sites avec les composants principaux ou peuvent être distribués sans encombre aux canaux en aval.
 seo-description: Les fragments de contenu, indépendamment de la mise en page, peuvent être utilisés directement en AEM Sites avec les composants principaux ou peuvent être distribués sans encombre aux canaux en aval.
 sub-product: content-services
-feature: content-fragments
+feature: Fragments de contenu
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -12,11 +12,14 @@ activity: use
 version: 6.3, 6.4, 6.5
 uuid: 045473d2-5abe-4414-b91c-d369f3069ead
 discoiquuid: 912e0c41-83cf-49f7-b515-09519b6718c1
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 6%
+source-wordcount: '599'
+ht-degree: 7%
 
 ---
 
@@ -45,7 +48,7 @@ Les composants Fragment de contenu peuvent être mis en forme à l’aide de AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/22448/?quality=12&learn=on)
 
-aem Content Services facilite la création d’AEM points de terminaison HTTP basés sur les pages qui renvoient le contenu dans un format JSON normalisé.
+AEM Content Services facilite la création d’AEM points de terminaison HTTP basés sur les pages qui renvoient le contenu dans un format JSON normalisé.
 
 La vidéo ci-dessus utilise le [composant de fragment de contenu](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) pour exposer des fragments de contenu individuels. Le [composant de Liste de fragment de contenu](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-list.html) est un nouveau composant qui permet à un auteur de définir une requête qui renseigne dynamiquement la page avec une liste de fragments de contenu. Le composant Liste de fragments de contenu est préférable lorsque plusieurs fragments de contenu doivent être exposés.
 
