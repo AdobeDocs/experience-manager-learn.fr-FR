@@ -3,16 +3,19 @@ title: Stockage des données de formulaire adaptatif
 seo-title: Stockage des données de formulaire adaptatif
 description: Stockage de données de formulaire adaptatif dans DataBase dans le cadre de votre processus AEM
 seo-description: Stockage de données de formulaire adaptatif dans DataBase dans le cadre de votre processus AEM
-feature: adaptive-forms,workflow
+feature: '"Forms adaptatif, flux de travail, modèle de données de formulaire"'
 topics: integrations
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
+topic: Développement
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: 3d54a8158d0564a3289a2100bbbc59e5ae38f175
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
