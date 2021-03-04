@@ -1,7 +1,7 @@
 ---
 title: Variables de type modèle de données de formulaire
 description: Utilisation de variables de type modèle de données de formulaire dans un processus AEM.
-feature: workflow
+feature: Workflow
 topics: development
 audience: developer
 doc-type: technical video
@@ -9,11 +9,14 @@ activity: understand
 version: 6.5
 kt: 6347
 thumbnail: 41238.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 4c08b09f59be0eb6644aaec729807b92bc339e82
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 0%
+source-wordcount: '65'
+ht-degree: 4%
 
 ---
 
