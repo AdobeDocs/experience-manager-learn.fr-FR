@@ -4,21 +4,18 @@ seo-title: Création d'un modèle de Document de Canal Web AEM Forms
 description: Voici la partie 4 du didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons créer un modèle pour le document de canal Web.
 seo-description: Voici la partie 4 du didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons créer un modèle pour le document de canal Web.
 uuid: b4c9f68b-3091-4f87-988d-705f0296a8d8
-feature: Communication interactive
+feature: communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 95ca401b-69ea-49e2-a9ae-e144444e481e
-topic: Développement
-role: Développeur
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 2%
+source-wordcount: '152'
+ht-degree: 0%
 
 ---
 
