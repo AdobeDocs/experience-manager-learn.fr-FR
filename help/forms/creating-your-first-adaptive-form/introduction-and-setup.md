@@ -4,21 +4,18 @@ seo-title: Prise En Main De Forms Adaptatif
 description: 'Ce didacticiel décrit les étapes de création d’un formulaire adaptatif à onglets multiples. Vous apprendrez à utiliser les tableaux, la mise en page en accordéon et l’éditeur de règles pour créer des règles de fonctionnement. '
 seo-description: 'Ce didacticiel décrit les étapes de création d’un formulaire adaptatif à onglets multiples. Vous apprendrez à utiliser les tableaux, la mise en page en accordéon et l’éditeur de règles pour créer des règles de fonctionnement. '
 uuid: 6f73cb1c-94e2-4ac7-89e5-a72141a06bbe
-feature: Formulaires adaptatifs
+feature: formulaires adaptatifs
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.3,6.4,6.5
 discoiquuid: b6863d3d-8528-4a96-ae37-c8d1aa62d443
-topic: Développement
-role: Développeur
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 34%
+source-wordcount: '242'
+ht-degree: 33%
 
 ---
 
