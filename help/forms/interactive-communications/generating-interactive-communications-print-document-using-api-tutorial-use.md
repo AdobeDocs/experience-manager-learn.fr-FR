@@ -3,17 +3,20 @@ title: Génération d'un Document de communications interactives pour un canal d
 seo-title: Génération d'un Document de communications interactives pour un canal d'impression à l'aide du mécanisme du dossier de contrôle
 description: Utiliser le dossier de contrôle pour générer des documents de canal d’impression
 seo-description: Utiliser le dossier de contrôle pour générer des documents de canal d’impression
-feature: interactive-communication
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Développement
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 0%
+source-wordcount: '487'
+ht-degree: 1%
 
 ---
 
