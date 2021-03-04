@@ -1,10 +1,14 @@
 ---
 title: Chapitre 7 - Consommation de AEM Content Services à partir d’une application mobile - Content Services
 description: Le chapitre 7 du didacticiel exécute l'application mobile Android pour utiliser le contenu créé à partir d'AEM Content Services.
+feature: '"Fragments de contenu, API"'
+topic: '"Sans tête, Gestion de contenu"'
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1416'
 ht-degree: 1%
 
 ---
@@ -79,7 +83,7 @@ s’affiche et est publié.
 
 Cette section présente le code de l’application mobile Android qui interagit le plus et dépend de AEM Content Services et de sa sortie JSON.
 
-Au chargement, l’application mobile fait de `HTTP GET` à `/content/wknd-mobile/en/api/events.model.json`, qui est le point de terminaison AEM Content Services configuré pour fournir le contenu permettant de piloter l’application mobile.
+Lors du chargement, l’application mobile effectue `HTTP GET` sur `/content/wknd-mobile/en/api/events.model.json`, qui est le point de terminaison AEM Content Services configuré pour fournir le contenu permettant de piloter l’application mobile.
 
 Le modèle modifiable de l’API Événements (`/content/wknd-mobile/en/api/events.model.json`) étant verrouillé, l’application mobile peut être codée pour rechercher des informations spécifiques à des emplacements spécifiques dans la réponse JSON.
 
@@ -201,5 +205,5 @@ Pour en savoir plus sur AEM Content Services et AEM en tant que CMS sans en-têt
 * [Guide de l’utilisateur des composants principaux de la gestion de contenu Web AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [Bibliothèque de composants principaux de la gestion de l&#39;environnement de développement](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [Projet GitHub des composants principaux de la gestion de contenu Web AEM](https://github.com/adobe/aem-core-wcm-components)
-* [aem Composants de base de la gestion de la gestion des ressources humaines - Demandez à l&#39;expert](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
+* [AEM Composants de base de la gestion de la gestion des ressources humaines - Demandez à l&#39;expert](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
 * [Exemple de code de l’exportateur de composants](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/bundle/src/main/java/com/adobe/acs/samples/models/SampleComponentExporter.java)
