@@ -1,17 +1,20 @@
 ---
 title: Développer avec l'AEM SPA Editor - Hello World Tutorial
-description: aem SPA Editor prend en charge la modification contextuelle d’une ou de plusieurs applications d’une seule page. Ce didacticiel présente SPA développement à utiliser avec AEM Editor JS SDK. Le didacticiel étendra l'application de Journal We.Retail en ajoutant un composant Hello World personnalisé. Les utilisateurs peuvent compléter le didacticiel à l’aide des structures Réagir ou Angular.
+description: AEM SPA Editor prend en charge la modification contextuelle d’une ou de plusieurs applications d’une seule page. Ce didacticiel présente SPA développement à utiliser avec AEM Editor JS SDK. Le didacticiel étendra l'application de Journal We.Retail en ajoutant un composant Hello World personnalisé. Les utilisateurs peuvent compléter le didacticiel à l’aide des structures Réagir ou Angular.
 sub-product: sites, content-services
-feature: spa-editor
+feature: Éditeur de spa
 topics: development, single-page-applications
 audience: developer
 doc-type: tutorial
 activity: use
 version: 6.3, 6.4, 6.5
+topic: SPA
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '3171'
+source-wordcount: '3176'
 ht-degree: 3%
 
 ---
@@ -21,25 +24,25 @@ ht-degree: 3%
 
 >[!WARNING]
 >
-> Ce didacticiel est **obsolète**. Il est recommandé de procéder comme suit : [Prise en main de l’éditeur SPA AEM et de Angular](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-angular-tutorial/overview.html) ou [Prise en main de l’éditeur de l’ et réaction](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-react-tutorial/overview.html)
+> Ce didacticiel est **obsolète**. Il est recommandé de procéder comme suit : [Prise en main de l’Éditeur et de l’Angular SPA de l’AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-angular-tutorial/overview.html) ou [Prise en main de l’Éditeur de l’ et réaction](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-react-tutorial/overview.html)
 
-aem SPA Editor prend en charge la modification contextuelle d’une ou de plusieurs applications d’une seule page. Ce didacticiel présente SPA développement à utiliser avec AEM Editor JS SDK. Le didacticiel étendra l&#39;application de Journal We.Retail en ajoutant un composant Hello World personnalisé. Les utilisateurs peuvent compléter le didacticiel à l’aide des structures Réagir ou Angular.
+AEM SPA Editor prend en charge la modification contextuelle d’une ou de plusieurs applications d’une seule page. Ce didacticiel présente SPA développement à utiliser avec AEM Editor JS SDK. Le didacticiel étendra l&#39;application de Journal We.Retail en ajoutant un composant Hello World personnalisé. Les utilisateurs peuvent compléter le didacticiel à l’aide des structures Réagir ou Angular.
 
 >[!NOTE]
 >
 > La fonction Éditeur d’application à page unique (SPA) nécessite AEM Service Pack 2 6.4 ou version ultérieure.
 >
-> L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
+> L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur la structure (par ex. Réaction ou Angular).
 
 ## Lecture prérequise {#prereq}
 
-Ce didacticiel vise à mettre en évidence les étapes nécessaires pour associer un composant SPA à un composant AEM afin d’activer la modification en contexte. Les utilisateurs qui commencent ce tutoriel doivent connaître les concepts de base du développement avec Adobe Experience Manager, AEM, ainsi que le développement avec React of Angular framework. Ce didacticiel porte à la fois sur les tâches de développement dorsales et frontales.
+Ce didacticiel vise à mettre en évidence les étapes nécessaires pour associer un composant SPA à un composant AEM afin d’activer la modification en contexte. Les utilisateurs qui commencent ce tutoriel doivent connaître les concepts de base du développement avec Adobe Experience Manager, AEM et développer avec React of Angular framework. Ce didacticiel porte à la fois sur les tâches de développement dorsales et frontales.
 
 Il est recommandé de passer en revue les ressources suivantes avant de commencer ce didacticiel :
 
 * [Vidéo](spa-editor-framework-feature-video-use.md)  sur SPA Editor Feature Video - Présentation vidéo de SPA Editor et de l’application de Journal We.Retail.
 * [Didacticiel](https://reactjs.org/tutorial/tutorial.html)  React.js - Présentation du développement avec la structure React.
-* [Didacticiel](https://angular.io/tutorial)  angulaire - Présentation du développement avec Angular
+* [Angular didacticiel](https://angular.io/tutorial)  - Une introduction au développement avec l&#39;Angular
 
 ## Environnement de développement local {#local-dev}
 
@@ -71,11 +74,11 @@ $ npm --version
 
 ## Présentation {#overview}
 
-Le concept de base est de mapper un composant SPA à un composant AEM. aem composants, exécution côté serveur, exportation de contenu sous la forme de JSON. Le contenu JSON est consommé par le SPA, exécutant côté client dans le navigateur. Un mappage 1:1 entre les composants SPA et un composant AEM est créé.
+Le concept de base est de mapper un composant SPA à un composant AEM. AEM composants, exécution côté serveur, exportation de contenu sous la forme de JSON. Le contenu JSON est consommé par le SPA, exécutant côté client dans le navigateur. Un mappage 1:1 entre les composants SPA et un composant AEM est créé.
 
 ![Mappage des composants SPA](assets/spa-editor-helloworld-tutorial-use/mapto.png)
 
-Les structures populaires [réagissez JS](https://reactjs.org/) et [Angular](https://angular.io/) sont prises en charge. Les utilisateurs peuvent compléter ce tutoriel en angulaire ou en réagissant, quel que soit le cadre dans lequel ils se sentent le plus à l&#39;aise.
+Les structures populaires [réagissez JS](https://reactjs.org/) et [Angular](https://angular.io/) sont prises en charge. Les utilisateurs peuvent compléter ce didacticiel soit dans Angular, soit dans Réagir, quel que soit le cadre dans lequel ils se sentent le plus à l&#39;aise.
 
 ## Configuration du projet {#project-setup}
 
@@ -115,7 +118,7 @@ L&#39;objectif de ce didacticiel est d&#39;étendre l&#39;application de Journal
    * `ui.apps`: contient les parties /apps du projet, à savoir les clientlibs JS et CSS, les composants, les configurations spécifiques au mode d’exécution.
    * `ui.content`: contient le contenu structurel et les configurations (`/content`,  `/conf`)
    * `react-app`: Application Web.Retail Journal React. Il s&#39;agit à la fois d&#39;un module Maven et d&#39;un projet webpack.
-   * `angular-app`: Application angulaire du Journal We.Retail. Il s&#39;agit à la fois d&#39;un module [!DNL Maven] et d&#39;un projet webpack.
+   * `angular-app`: Application d&#39;Angular de Journal We.Retail. Il s&#39;agit à la fois d&#39;un module [!DNL Maven] et d&#39;un projet webpack.
 
 1. Ouvrez une nouvelle fenêtre de terminal et exécutez la commande suivante pour créer et déployer l’application entière sur une instance d’AEM locale s’exécutant sur [http://localhost:4502](http://localhost:4502).
 
@@ -217,7 +220,7 @@ A l&#39;aide de [!DNL Eclipse] ou d&#39;un autre [!DNL IDE], importez le projet 
    >
    > Seuls AEM 6.5 et AEM 6.4 + **Service Pack 5** prennent en charge les modèles modifiables.
 
-1. Une boîte de dialogue sera ensuite créée pour permettre la configuration d&#39;un message personnalisé pour le composant **Hello World**. Sous `/apps/we-retail-journal/components/helloworld`, ajoutez un nom de noeud **cq:dialog** de **nt:unstructured**.
+1. Ensuite, une boîte de dialogue sera créée pour permettre la configuration d&#39;un message personnalisé pour le composant **Hello World**. Sous `/apps/we-retail-journal/components/helloworld`, ajoutez un nom de noeud **cq:dialog** de **nt:unstructured**.
 1. Le **cq:dialog** affiche un seul champ de texte qui conserve le texte dans une propriété nommée **[!DNL message]**. Au-dessous du nouveau **cq:dialog** ajoutez les noeuds et propriétés suivants, représentés en XML ci-dessous (`helloworld/_cq_dialog/.content.xml`) :
 
    ```xml
@@ -397,9 +400,9 @@ Un [!DNL Sling Model] est ensuite créé pour sauvegarder le composant [!DNL Hel
 
    >[!NOTE]
    >
-   > Le nom de la méthode `getDisplayMessage` est important. Lorsque [!DNL Sling Model] est sérialisé avec [!DNL Jackson Exporter], il est exposé en tant que propriété JSON : `displayMessage`. [!DNL Jackson Exporter] sérialisera et exposera toutes les méthodes `getter` qui ne prennent pas de paramètre (sauf si explicitement indiqué pour ignorer). Plus tard, dans l’application Réagir / Angular, nous lirons cette valeur de propriété et l’afficherons dans le cadre de l’application.
+   > Le nom de la méthode `getDisplayMessage` est important. Lorsque [!DNL Sling Model] est sérialisé avec [!DNL Jackson Exporter], il est exposé en tant que propriété JSON : `displayMessage`. [!DNL Jackson Exporter] sérialisera et exposera toutes les méthodes `getter` qui ne prennent pas de paramètre (sauf si explicitement indiqué pour ignorer). Plus tard, dans l&#39;application Réagir / Angular, nous lirons cette valeur de propriété et l&#39;afficherons dans le cadre de l&#39;application.
 
-   La méthode `getExportedType` est également importante. La valeur du composant `resourceType` sera utilisée pour &quot;mapper&quot; les données JSON au composant frontal (Angular / React). Nous étudierons cette question dans la section suivante.
+   La méthode `getExportedType` est également importante. La valeur du composant `resourceType` sera utilisée pour &quot;mapper&quot; les données JSON au composant frontal (Angular / Réaction). Nous étudierons cette question dans la section suivante.
 
 1. Implémentez la méthode `getExportedType()` pour renvoyer le type de ressource du composant `HelloWorld`.
 
@@ -436,7 +439,7 @@ Ensuite, le composant Réagir sera créé. Ouvrez le module **response-app** ( `
 
 >[!NOTE]
 >
-> N&#39;hésitez pas à sauter cette section si vous êtes intéressé par [Développement angulaire](#angular-component).
+> N&#39;hésitez pas à sauter cette section si vous êtes intéressé par le [développement d&#39;Angular](#angular-component).
 
 1. Dans le dossier `react-app`, accédez au dossier src. Développez le dossier de composants pour vue les fichiers de composants de Réagir existants.
 
@@ -567,7 +570,7 @@ Ensuite, le composant Réagir sera créé. Ouvrez le module **response-app** ( `
    > **app.** js correspond à l’application React fournie. Le code n&#39;est plus lisible par l&#39;homme. La commande `npm run build` a déclenché une compilation optimisée qui génère du code JavaScript compilé qui peut être interprété par les navigateurs modernes.
 
 
-## Créer un composant angulaire {#angular-component}
+## Créer un composant d&#39;Angular {#angular-component}
 
 **Persona : Développeur frontal**
 
@@ -575,11 +578,11 @@ Ensuite, le composant Réagir sera créé. Ouvrez le module **response-app** ( `
 >
 > N&#39;hésitez pas à sauter cette section si vous souhaitez uniquement développer React.
 
-Ensuite, le composant angulaire sera créé. Ouvrez le module **angular-app** (`<src>/aem-sample-we-retail-journal/angular-app`) à l’aide de l’éditeur de votre choix.
+Ensuite, le composant Angular sera créé. Ouvrez le module **angular-app** (`<src>/aem-sample-we-retail-journal/angular-app`) à l’aide de l’éditeur de votre choix.
 
-1. Dans le dossier `angular-app`, accédez à son dossier `src`. Développez le dossier de composants pour vue des fichiers de composants angulaires existants.
+1. Dans le dossier `angular-app`, accédez à son dossier `src`. Développez le dossier de composants pour vue des fichiers de composants d’Angular existants.
 
-   ![Structure de fichier angulaire](assets/spa-editor-helloworld-tutorial-use/angular-file-structure.png)
+   ![Structure des fichiers d&#39;Angular](assets/spa-editor-helloworld-tutorial-use/angular-file-structure.png)
 
 1. Ajoutez un nouveau dossier sous le dossier de composants nommé `helloworld`. Sous le dossier `helloworld`, ajoutez de nouveaux fichiers nommés `helloworld.component.css, helloworld.component.html, helloworld.component.ts`.
 
@@ -615,7 +618,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module **angular-app** (`
 
    >[!NOTE]
    >
-   > Si vous vous souvenez du [!DNL Sling Model] créé précédemment, il existait une méthode **getDisplayMessage()**. Le JSON sérialisé de cette méthode sera **displayMessage**, que nous lisons maintenant dans l’application Angular.
+   > Si vous vous souvenez du [!DNL Sling Model] créé précédemment, il existait une méthode **getDisplayMessage()**. Le JSON sérialisé de cette méthode sera **displayMessage**, que nous lisons maintenant dans l’application d’Angular.
 
 1. Ouvrez `helloworld.component.html` pour inclure une balise `h1` qui imprime la propriété `displayMessage` :
 
@@ -673,7 +676,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module **angular-app** (`
    });
    ```
 
-1. Mise à jour suivante `src/components/mapping.ts` pour inclure `HelloWorldComponent`. Ajoutez un `HelloWorldEditConfig` qui marquera l’espace réservé dans l’éditeur AEM avant que le composant n’ait été configuré. Enfin, ajoutez une ligne pour mapper le composant AEM au composant Angular avec l&#39;aide `MapTo`.
+1. Mise à jour suivante `src/components/mapping.ts` pour inclure `HelloWorldComponent`. Ajoutez un `HelloWorldEditConfig` qui marquera l’espace réservé dans l’éditeur AEM avant que le composant n’ait été configuré. Enfin, ajoutez une ligne pour mapper le composant AEM au composant Angular avec l&#39;assistance `MapTo`.
 
    ```js
    // src/components/mapping.ts
@@ -744,15 +747,15 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module **angular-app** (`
    $ mvn -PautoInstallSinglePackage clean install
    ```
 
-1. Dans [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js), ouvrez `/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js`. Effectuez une recherche rapide de **HelloWorld** dans `main.js` pour vérifier que le composant Angular a été inclus.
+1. Dans [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js), ouvrez `/apps/we-retail-journal/angular/clientlibs/we-retail-journal-angular/js/main.js`. Effectuez une recherche rapide de **HelloWorld** dans `main.js` pour vérifier que le composant d’Angular a été inclus.
 
    >[!NOTE]
    >
-   > **main.** js l’application Angular fournie. Le code n&#39;est plus lisible par l&#39;homme. La commande npm run build a déclenché une compilation optimisée qui génère du code JavaScript compilé qui peut être interprété par les navigateurs modernes.
+   > **main.** js l’application d’Angular fournie. Le code n&#39;est plus lisible par l&#39;homme. La commande npm run build a déclenché une compilation optimisée qui génère du code JavaScript compilé qui peut être interprété par les navigateurs modernes.
 
 ## Mise à jour du modèle {#template-update}
 
-1. Accédez au modèle modifiable pour les versions de réaction et/ou angulaire :
+1. Accédez au modèle modifiable pour les versions Réaction et/ou Angular :
 
    * (Angular) [http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/angular/settings/wcm/templates/we-retail-angular-weather-template/structure.html)
    * (Réaction) [http://localhost:4502/editor.html/conf/we-retail-journal/react/settings/wcm/templates/we-retail-react-weather-template/structure.html](http://localhost:4502/editor.html/conf/we-retail-journal/react/settings/wcm/templates/we-retail-react-weather-template/structure.html)
@@ -779,7 +782,7 @@ Ensuite, le composant angulaire sera créé. Ouvrez le module **angular-app** (`
 
 ## Assemblage {#putting-together}
 
-1. Accédez aux pages Angular ou React :
+1. Accédez aux pages Angular ou Réagir :
 
    * [http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html)
    * [http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html)
@@ -829,10 +832,10 @@ Si une dépendance d&#39;AEM n&#39;est pas satisfaite, que ce soit dans le **[!U
 
 ### Le composant ne s&#39;affiche pas
 
-**Erreur** : Même après un déploiement réussi et la vérification que les versions compilées des applications React/Angular comportent le  `helloworld` composant mis à jour, mon composant ne s’affiche pas lorsque je le fais glisser sur la page. Je peux voir le composant dans l’interface utilisateur AEM.
+**Erreur** : Même après un déploiement réussi et la vérification que les versions compilées des applications Réagir/Angular comportent le  `helloworld` composant mis à jour, mon composant ne s’affiche pas lorsque je le fais glisser sur la page. Je peux voir le composant dans l’interface utilisateur AEM.
 
-**Résolution** : Effacez l&#39;historique/le cache de votre navigateur et/ou ouvrez un nouveau navigateur ou utilisez le mode Incognito. Si cela ne fonctionne pas, invalidez le cache de bibliothèque client sur l’instance d’AEM locale. aem tente de mettre en cache de grandes bibliothèques clientes afin d&#39;être efficace. Il peut arriver que l’invalidation manuelle du cache soit nécessaire pour résoudre les problèmes de mise en cache du code obsolète.
+**Résolution** : Effacez l&#39;historique/le cache de votre navigateur et/ou ouvrez un nouveau navigateur ou utilisez le mode Incognito. Si cela ne fonctionne pas, invalidez le cache de bibliothèque client sur l’instance d’AEM locale. AEM tente de mettre en cache de grandes bibliothèques clientes afin d&#39;être efficace. Il peut arriver que l’invalidation manuelle du cache soit nécessaire pour résoudre les problèmes de mise en cache du code obsolète.
 
-Accédez à : [http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) et cliquez sur Invalider le cache. Revenez à votre page Réagir/Angulaire et actualisez la page.
+Accédez à : [http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) et cliquez sur Invalider le cache. Revenez à votre page Réagir/Angular et actualisez la page.
 
 ![Reconstruire la bibliothèque cliente](assets/spa-editor-helloworld-tutorial-use/invalidatecache.png)
