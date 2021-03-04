@@ -1,10 +1,14 @@
 ---
 title: Chapitre 5 - Création de pages Content Services - Content Services
 description: Le chapitre 5 du didacticiel AEM sans en-tête couvre la création des pages à partir des modèles définis au chapitre 4. Ces pages serviront de points de terminaison HTTP JSON.
+feature: Fragments de contenu, API
+topic: Sans tête, Gestion de contenu
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '604'
 ht-degree: 1%
 
 ---
