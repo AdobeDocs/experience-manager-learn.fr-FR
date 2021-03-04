@@ -3,7 +3,7 @@ title: Prise en main de AEM Sites - Pages et modèles
 seo-title: Prise en main de AEM Sites - Pages et modèles
 description: Découvrez la relation entre un composant de page de base et des modèles modifiables. Comprenez comment les composants principaux sont intégrés au projet et découvrez les configurations de stratégie avancées des modèles modifiables afin de créer un modèle de page d’article bien structuré basé sur une maquette d’Adobe XD.
 sub-product: sites
-feature: template-editor, core-components
+feature: '"Composants principaux, modèles modifiables"'
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -12,10 +12,13 @@ audience: developer
 mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
+topic: '"Gestion de contenu, développement"'
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '3074'
+source-wordcount: '3083'
 ht-degree: 1%
 
 ---
