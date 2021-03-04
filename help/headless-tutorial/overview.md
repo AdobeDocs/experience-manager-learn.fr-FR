@@ -1,16 +1,20 @@
 ---
-title: aem didacticiels sans en-tête
+title: AEM didacticiels sans en-tête
 description: Ensemble de didacticiels sur l’utilisation de Adobe Experience Manager en tant que CMS sans en-tête.
+feature: '"Fragments de contenu, API"'
+topic: '"Sans tête, Gestion de contenu"'
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: eabd8650886fa78d9d177f3c588374a443ac1ad6
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '468'
 ht-degree: 4%
 
 ---
 
 
-# aem didacticiels sans en-tête
+# AEM didacticiels sans en-tête
 
 Adobe Experience Manager propose plusieurs options pour définir des points de terminaison sans en-tête et diffuser son contenu au format JSON. Utilisez des didacticiels pratiques pour découvrir comment utiliser les différentes options et choisir ce qui vous convient.
 
@@ -21,7 +25,7 @@ Adobe Experience Manager propose plusieurs options pour définir des points de t
 > L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
 > Contactez l&#39;assistance Adobe pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
-aem API GraphQL pour les fragments de contenu
+AEM API GraphQL pour les fragments de contenu
 prend en charge les scénarios CMS sans tête dans lesquels les applications clientes externes effectuent le rendu d’expériences à l’aide de contenu géré dans AEM.
 
 Une API de diffusion de contenu moderne est la clé de l&#39;efficacité et des performances des applications frontales basées sur JavaScript. L’utilisation d’une API REST présente des défis :
@@ -35,26 +39,26 @@ Pour surmonter ces défis, GraphQL fournit une API basée sur les requêtes qui 
 
 ## Didacticiel sur l’authentification basée sur un jeton
 
-aem expose divers points de terminaison HTTP qui peuvent être interactifs sans en-tête, depuis GraphQL, AEM Content Services jusqu’à l’API HTTP Assets. Souvent, ces consommateurs sans tête peuvent avoir besoin de s&#39;authentifier auprès d&#39;AEM pour accéder à un contenu ou à des actions protégés. Pour ce faire, AEM prend en charge l’authentification par jeton des requêtes HTTP provenant d’applications, de services ou de systèmes externes.
+AEM expose divers points de terminaison HTTP qui peuvent être interactifs sans en-tête, depuis GraphQL, AEM Content Services jusqu’à l’API HTTP Assets. Souvent, ces consommateurs sans tête peuvent avoir besoin de s&#39;authentifier auprès d&#39;AEM pour accéder à un contenu ou à des actions protégés. Pour ce faire, AEM prend en charge l’authentification par jeton des requêtes HTTP provenant d’applications, de services ou de systèmes externes.
 
 * Découvrez comment vous authentifier sur AEM via HTTP à l’aide de jetons d&#39;accès dans le didacticiel d’application externe ](./authentication/overview.md) intitulé [Authentification en tant que Cloud Service dans le  .
 
 ## Didacticiel sur AEM Content Services
 
-aem Content Services utilise les pages AEM traditionnelles pour composer des points de terminaison d’API REST sans en-tête et les composants AEM définissent, ou référencent, le contenu à exposer sur ces points de terminaison.
+AEM Content Services utilise les pages AEM traditionnelles pour composer des points de terminaison d’API REST sans en-tête et les composants AEM définissent, ou référencent, le contenu à exposer sur ces points de terminaison.
 
-aem Content Services permet les mêmes abstractions de contenu utilisées pour la création de pages Web dans AEM Sites, pour définir le contenu et les schémas de ces API HTTP. L’utilisation de Pages AEM et de Composants AEM permet aux spécialistes du marketing de composer et de mettre à jour rapidement des API JSON flexibles capables d’alimenter n’importe quelle application.
+AEM Content Services permet les mêmes abstractions de contenu utilisées pour la création de pages Web dans AEM Sites, pour définir le contenu et les schémas de ces API HTTP. L’utilisation de Pages AEM et de Composants AEM permet aux spécialistes du marketing de composer et de mettre à jour rapidement des API JSON flexibles capables d’alimenter n’importe quelle application.
 
 * Découvrez comment utiliser AEM Content Services dans le didacticiel [Prise en main d’AEM Content Services](./content-services/overview.md)
 
-## aem GraphQL et AEM Content Services
+## AEM GraphQL et AEM Content Services
 
-|  | aem API GraphQL | aem Content Services |
+|  | AEM API GraphQL | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
 | Définition du schéma | Modèles de fragments de contenu structuré | Composants AEM |
 | Contenu | Fragments de contenu | Composants AEM |
 | Détection de contenu | Par requête GraphQL | Par page AEM |
-| Format de diffusion | JSON GraphQL | aem ComponentExporter JSON |
+| Format de diffusion | JSON GraphQL | AEM ComponentExporter JSON |
 
 ## Autres didacticiels utiles
 
