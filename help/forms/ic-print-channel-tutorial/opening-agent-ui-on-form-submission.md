@@ -4,7 +4,7 @@ seo-title: Ouverture de l'interface utilisateur de l'agent lors de l'envoi du PO
 description: Il s'agit de la partie 11 du didacticiel en plusieurs étapes pour créer votre premier document de communications interactives pour le canal d'impression. Dans cette partie, nous allons lancer l’interface utilisateur de l’agent pour créer une correspondance ad hoc lors de l’envoi du formulaire.
 seo-description: Il s'agit de la partie 11 du didacticiel en plusieurs étapes pour créer votre premier document de communications interactives pour le canal d'impression. Dans cette partie, nous allons lancer l’interface utilisateur de l’agent pour créer une correspondance ad hoc lors de l’envoi du formulaire.
 uuid: 96f34986-a5c3-400b-b51b-775da5d2cbd7
-feature: communication interactive
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,11 +12,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6168
 thumbnail: 40122.jpg
+topic: Développement
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 2%
+source-wordcount: '369'
+ht-degree: 3%
 
 ---
 
