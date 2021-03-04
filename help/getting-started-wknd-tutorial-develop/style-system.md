@@ -11,10 +11,14 @@ audience: developer
 kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
+feature: '"Composants principaux, système de style"'
+topic: '"Gestion de contenu, développement"'
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1996'
+source-wordcount: '2005'
 ht-degree: 3%
 
 ---
@@ -69,7 +73,7 @@ Vous pouvez toujours vue le code terminé sur [GitHub](https://github.com/adobe/
 
 ## Ce que vous allez créer {#what-you-will-build}
 
-Dans ce chapitre, nous utiliserons la fonction [Système de style](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) pour créer des variantes des composants **Titre** et **Texte** utilisés sur la page Article.
+Dans ce chapitre, nous utiliserons la fonction [Système de style](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) pour créer des variantes des composants **Titre** et **Texte** utilisés sur la page Article.
 
 ![Styles disponibles pour le titre](assets/style-system/styles-added-title.png)
 
