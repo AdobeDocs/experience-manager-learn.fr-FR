@@ -1,7 +1,7 @@
 ---
 title: Exportez des fragments d’expérience vers Adobe Target
 description: Découvrez comment publier et exporter AEM fragment d’expérience en tant qu’Offres Adobe Target.
-feature: experience-fragments
+feature: Fragments d’expérience
 topics: integrations, authoring
 audience: all
 doc-type: feature video
@@ -9,11 +9,14 @@ activity: use
 version: cloud-service
 kt: 6350
 thumbnail: 41245.jpg
+topic: Intégrations
+role: Professionnel
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 6%
+source-wordcount: '198'
+ht-degree: 8%
 
 ---
 
@@ -46,7 +49,7 @@ L’exportation du fragment d’expérience vers Adobe Target sans les autorisat
 
 1. Connectez-vous à [Admin Console](https://adminconsole.adobe.com/) avec des droits d’administration pour le Profil de produits Adobe Target utilisé mais l’intégration AEM
 2. Sélectionnez __Produits > Adobe Target > Profil de produit__
-3. Sous l&#39;onglet __Intégrations__, sélectionnez l&#39;intégration de votre AEM en tant qu&#39;environnement Cloud Service (même nom que le projet Adobe I/O).
+3. Sous l&#39;onglet __Intégrations__, sélectionnez l&#39;intégration de votre AEM en tant qu&#39;environnement Cloud Service (même nom que le projet d&#39;Adobe I/O).
 4. Attribuer le rôle __Editor__ ou __approbateur__
 
    ![Erreur de l&#39;API de cible](assets/target-permissions.png)
