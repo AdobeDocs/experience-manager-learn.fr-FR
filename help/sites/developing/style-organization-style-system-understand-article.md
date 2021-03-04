@@ -1,16 +1,19 @@
 ---
 title: Présentation des meilleures pratiques du système de style avec AEM Sites
 description: Article détaillé expliquant les meilleures pratiques en matière d’implémentation du système de style avec Adobe Experience Manager Sites.
-feature: style-system
+feature: Système de style
 topics: development, components, front-end-development
 audience: developer
 doc-type: article
 activity: understand
 version: 6.4, 6.5
+topic: Développement
+role: Développeur
+level: Intermédiaire, expérimenté
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1538'
+source-wordcount: '1544'
 ht-degree: 3%
 
 ---
