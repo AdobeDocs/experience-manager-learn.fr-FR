@@ -3,10 +3,14 @@ title: Chapitre 2 - Définition de modèles de fragments de contenu de Événeme
 seo-title: Prise en main de AEM Content Services - Chapitre 2 - Définition de modèles de fragments de contenu de Événement
 description: Le chapitre 2 du didacticiel AEM sans en-tête porte sur l’activation et la définition de modèles de fragments de contenu utilisés pour définir une structure de données normalisée et une interface de création pour la création de Événements.
 seo-description: Le chapitre 2 du didacticiel AEM sans en-tête porte sur l’activation et la définition de modèles de fragments de contenu utilisés pour définir une structure de données normalisée et une interface de création pour la création de Événements.
+feature: '"Fragments de contenu, API"'
+topic: '"Sans tête, Gestion de contenu"'
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '1004'
 ht-degree: 10%
 
 ---
@@ -25,7 +29,7 @@ Ce chapitre porte sur l’activation et la définition des modèles de fragments
 
 ## Activation des modèles de fragment de contenu  
 
-Les modèles de fragment de contenu **doivent être activés par**[ AEM [!UICONTROL Navigateur de configuration]](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/configurations.html)**.**
+Les modèles de fragment de contenu **doivent être activés via**[ AEM [!UICONTROL Navigateur de configuration]](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/configurations.html)**.**
 
 Si les modèles de fragment de contenu **ne sont pas** activés pour une configuration, le bouton **[!UICONTROL Créer] > [!UICONTROL Fragment de contenu]** n’apparaît pas pour la configuration AEM appropriée.
 
@@ -166,7 +170,7 @@ Répétez ces étapes en utilisant les définitions d’entrée définies ci-des
 
 >[!NOTE]
 >
->Le **[!UICONTROL nom de la propriété]** indique **à la fois** le nom de la propriété JCR où cette valeur sera stockée, ainsi que la clé du fichier JSON. Il doit s’agir d’un nom sémantique qui ne changera pas au cours de la vie du modèle de fragment de contenu.
+>Le **[!UICONTROL nom de propriété]** indique **à la fois** le nom de propriété JCR où cette valeur sera stockée, ainsi que la clé du fichier JSON. Il doit s’agir d’un nom sémantique qui ne changera pas au cours de la vie du modèle de fragment de contenu.
 
 Après avoir créé le modèle de fragment de contenu, vous devez obtenir une définition qui ressemble à ce qui suit :
 
