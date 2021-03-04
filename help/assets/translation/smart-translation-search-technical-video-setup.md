@@ -1,19 +1,15 @@
 ---
 title: Configuration de la recherche de traduction intelligente avec AEM Assets
-seo-title: Configuration de la recherche de traduction intelligente avec AEM Assets
 description: Smart Translation Search permet d’utiliser des termes de recherche non anglais pour résoudre le problème en anglais. Pour configurer l'AEM pour Smart Translation Search, le lot OSGi de Apache Oak Search Machine Translation doit être installé et configuré, ainsi que les paquets de langues Apache Joshua gratuits et open source pertinents qui contiennent les règles de traduction.
-seo-description: Smart Translation Search permet d’utiliser des termes de recherche non anglais pour résoudre le problème en anglais. Pour configurer l'AEM pour Smart Translation Search, le lot OSGi de Apache Oak Search Machine Translation doit être installé et configuré, ainsi que les paquets de langues Apache Joshua gratuits et open source pertinents qui contiennent les règles de traduction.
-uuid: b0e8dab2-6bc4-4158-91a1-4b9811359798
-discoiquuid: 4db1b4db-74f4-4646-b5de-cb891612cc90
-topics: authoring, search, metadata, localization
-audience: administrator, developer
-doc-type: technical video
-activity: setup
 version: 6.3, 6.4, 6.5
+feature: Rechercher
+topic: Gestion de contenu
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '872'
 ht-degree: 1%
 
 ---
@@ -58,7 +54,7 @@ Smart Translation Search permet d’utiliser des termes de recherche non anglais
    * Arrêtez AEM
    * Déterminer la nouvelle taille de tas requise pour AEM
 
-      * aem taille du tas de pré-langue sans mémoire + la taille du répertoire de modèles arrondi à 2 Go le plus proche
+      * AEM taille du tas de pré-langue sans mémoire + la taille du répertoire de modèles arrondi à 2 Go le plus proche
       * Par exemple : Si l’installation AEM des packs de prélangue nécessite 8 Go de tas pour être exécutée et que le dossier du modèle du pack de langue est de 3,8 Go non compressé, la nouvelle taille du tas est la suivante :
 
          L&#39;original `8GB` + ( `3.75GB` arrondi au `2GB` le plus proche, qui est `4GB`) pour un total de `12GB`
