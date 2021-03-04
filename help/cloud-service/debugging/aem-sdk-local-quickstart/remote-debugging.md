@@ -1,18 +1,21 @@
 ---
 title: Débogage à distance du SDK AEM
 description: Le démarrage rapide local du SDK AEM permet le débogage Java à distance à partir de votre IDE, ce qui vous permet de passer en revue l’exécution du code en direct dans AEM pour comprendre le flux d’exécution exact.
-feature: null
+feature: Outils de développement
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
+topic: Développement
+role: Développeur
+level: Débutant, intermédiaire
 translation-type: tm+mt
-source-git-commit: a3d3612713decefb5c7e1cf5b2d4d21afff0a2f5
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 0%
+source-wordcount: '281'
+ht-degree: 1%
 
 ---
 
