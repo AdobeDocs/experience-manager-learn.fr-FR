@@ -3,7 +3,6 @@ title: Utilisation des différences de page avec AEM Sites
 seo-title: Utilisation des différences de page avec AEM Sites
 description: Les fonctionnalités de différences de page des sites AEM fournissent une vue rapide et codée par couleur du contenu modifié sur une page (version, copie dynamique, lancements, copie de langue).
 seo-description: Les fonctionnalités de différences de page des sites AEM fournissent une vue rapide et codée par couleur du contenu modifié sur une page (version, copie dynamique, lancements, copie de langue).
-feature: page-diff
 topics: authoring
 audience: author, marketer
 doc-type: feature video
@@ -12,11 +11,14 @@ version: 6.3, 6.4, 6.5
 uuid: e096a08b-528d-48c7-93fb-73b10c0a9259
 kt: 4633
 thumbnail: 32152.jpg
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 1%
+source-wordcount: '156'
+ht-degree: 2%
 
 ---
 
