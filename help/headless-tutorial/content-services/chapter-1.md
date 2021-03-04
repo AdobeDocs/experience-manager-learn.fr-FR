@@ -3,10 +3,14 @@ title: Chapitre 1 - Installation et téléchargements de didacticiels - Content 
 seo-title: Prise en main de AEM Content Services - Chapitre 1 - Configuration des didacticiels
 description: Chapitre 1 du didacticiel AEM sans titre sur la configuration de la ligne de base pour l’instance AEM pour le didacticiel.
 seo-description: Chapitre 1 du didacticiel AEM sans titre sur la configuration de la ligne de base pour l’instance AEM pour le didacticiel.
+feature: '"Fragments de contenu, API"'
+topic: '"Sans tête, Gestion de contenu"'
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '446'
 ht-degree: 1%
 
 ---
@@ -17,13 +21,13 @@ ht-degree: 1%
 La dernière version des composants principaux de AEM et AEM WCM est toujours recommandée.
 
 * AEM 6.5  ou version ultérieure
-* aem composants principaux WCM 2.4.0 ou version ultérieure
+* AEM composants principaux WCM 2.4.0 ou version ultérieure
    * Inclus dans le [package de contenu de l&#39;application d&#39;AEM WKND Mobile ci-dessous](#wknd-mobile-application-packages)
 
 Avant de démarrer ce didacticiel, assurez-vous que les instances d&#39;AEM suivantes sont [installées et en cours d&#39;exécution sur votre ordinateur local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install) :
 
-* **aem** port  **d&#39;autorisation 4502**
-* **aem** Publier  **port 4503**
+* **AEM** port  **d&#39;autorisation 4502**
+* **AEM** Publier  **port 4503**
 
 ## Packages d’applications mobiles WKND{#wknd-mobile-application-packages}
 
