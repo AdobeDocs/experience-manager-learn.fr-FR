@@ -1,7 +1,7 @@
 ---
 title: Configuration des outils de développement pour AEM en tant que Cloud Service de développement
 description: Configurez une machine de développement locale avec tous les outils de base nécessaires pour se développer par rapport aux AEM locaux.
-feature: null
+feature: Outils de développement
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: develop
 audience: developer
 kt: 4267
 thumbnail: 25907.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: debf13d8e376979548bcbf55f71661d8cb8eb823
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1366'
-ht-degree: 2%
+source-wordcount: '1371'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +31,7 @@ Notez que `~` est utilisé comme abrégé pour le Répertoire d&#39;utilisateur.
 
 Experience Manager est une application Java et nécessite donc le SDK Java pour prendre en charge le développement et l’AEM en tant que SDK Cloud Service.
 
-1. [Téléchargement et installation de la dernière version du SDK Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent 2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=liste&amp;p.offset=0&amp;p.limit=14)
+1. [Téléchargement et installation de la dernière version du SDK Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=liste&amp;p.offset=0&amp;p.limit=14)
 1. Vérifiez que le SDK Java 11 est installé en exécutant la commande :
    + Windows : `java -version`
    + macOS / Linux : `java --version`
@@ -109,26 +112,26 @@ Apache Maven est l&#39;outil de ligne de commande Java open-source utilisé pour
 
 ![Maven](./assets/development-tools/maven.png)
 
-## Configuration de l’interface de ligne de commande Adobe I/O{#aio-cli}
+## Configurer l&#39;interface de ligne de commande de l&#39;Adobe I/O{#aio-cli}
 
-L&#39;interface de ligne de commande [Adobe I/O ](https://github.com/adobe/aio-cli), ou `aio`, permet d&#39;accéder en ligne de commande à divers services d&#39;Adobe, y compris [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) et [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). L&#39;interface de ligne de commande Adobe I/O joue un rôle essentiel dans le développement de l&#39;AEM en tant que Cloud Service car elle permet aux développeurs de :
+L&#39;Adobe I/O [CLI](https://github.com/adobe/aio-cli), ou `aio`, permet d&#39;accéder en ligne de commande à divers services d&#39;Adobe, y compris [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) et [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). L&#39;interface de ligne de commande de l&#39;Adobe I/O joue un rôle essentiel dans le développement de l&#39;AEM en tant que Cloud Service car elle permet aux développeurs de :
 
 + Journaux de suivi des AEM en tant que services Cloud Services
 + Gestion des pipelines Cloud Manager à partir de l’interface de ligne de commande
 
-### Installation de l’interface de ligne de commande Adobe I/O
+### Installation de l’interface de ligne de commande de l’Adobe I/O
 
-1. Assurez-vous que [Node.js est installé](#node-js) car l’interface de ligne de commande Adobe I/O est un module npm.
+1. Assurez-vous que [Node.js est installé](#node-js) car l’interface de ligne de commande de l’Adobe I/O est un module npm.
    + Exécutez `node --version` pour confirmer
 1. Exécutez `npm install -g @adobe/aio-cli` pour installer le module `aio` npm globalement.
 
-### Configuration du module externe Adobe I/O CLI Cloud Manager{#aio-cloud-manager}
+### Configuration du module Adobe I/O CLI Cloud Manager{#aio-cloud-manager}
 
-Le module externe Adobe I/O Cloud Manager permet à l’interface de ligne de commande d’AEM d’interagir avec Adobe Cloud Manager via la commande `aio cloudmanager`.
+Le module externe Adobe I/O Cloud Manager permet à l’interface de ligne de commande d’aio d’interagir avec Adobe Cloud Manager via la commande `aio cloudmanager`.
 
 1. Exécutez `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` pour installer le module externe [aio Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-### Configuration du module externe d’Asset compute de l’interface de ligne de commande Adobe I/O{#aio-asset-compute}
+### Configuration du module Adobe I/O CLI Asset compute plugin{#aio-asset-compute}
 
 Le module externe Adobe I/O Cloud Manager permet à l’interface de ligne de commande d’aio de générer et d’exécuter des agents d’Asset compute via la commande `aio asset-compute`.
 
@@ -136,24 +139,24 @@ Le module externe Adobe I/O Cloud Manager permet à l’interface de ligne de co
 
 ### Configuration de l’authentification CLI Adobe I/O
 
-Pour que l’interface de ligne de commande Adobe I/O communique avec Cloud Manager, une intégration de Cloud Manager doit être créée dans Adobe I/O Console et des informations d’identification doivent être obtenues pour une authentification réussie.
+Pour que l’interface de ligne de commande de l’Adobe I/O communique avec Cloud Manager, une intégration de Cloud Manager doit être créée dans Adobe I/O Console et des informations d’identification doivent être obtenues pour que l’authentification soit réussie.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35094?quality=12&learn=on)
 
 1. Connectez-vous à [console.adobe.io](https://console.adobe.io)
 1. Assurez-vous que votre organisation qui comprend le produit Cloud Manager auquel se connecter est principale dans le sélecteur d’organisation d’Adobes.
-1. Créez ou ouvrez un [programme Adobe I/O ](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md) existant.
-   + Les programmes de la console Adobe I/O sont simplement des regroupements organisationnels d&#39;intégrations, de créer ou d&#39;utiliser et de programmes existants basés sur la façon dont vous souhaitez gérer vos intégrations
+1. Créez ou ouvrez un programme d&#39;Adobe I/O [existant](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md).
+   + Les programmes de la console Adobe I/O sont simplement des regroupements organisationnels d&#39;intégrations, de créer ou d&#39;utiliser et des programmes existants en fonction de la façon dont vous souhaitez gérer vos intégrations.
    + Si vous créez un projet, sélectionnez &quot;Projet vide&quot; si vous y êtes invité (par rapport à Créer à partir d’un modèle).
-   + Les programmes de la console Adobe I/O sont différents concepts pour les programmes de Cloud Manager.
+   + Les programmes de la console Adobe I/O sont différents des concepts des programmes de Cloud Manager.
 1. Créer une nouvelle intégration de l’API Cloud Manager avec le profil &quot;Développeur - Cloud Service&quot;
-1. Obtenez les informations d’identification du compte de service (JWT) nécessaires pour renseigner l’interface de ligne de commande Adobe I/O [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication).
-1. Charger le fichier `config.json` dans l’interface de ligne de commande Adobe I/O
+1. Obtenez les informations d’identification du compte de service (JWT) nécessaires pour renseigner l’interface de ligne de commande [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) de l’Adobe I/O.
+1. Charger le fichier `config.json` dans l&#39;interface de ligne de commande de l&#39;Adobe I/O
    + `$ aio config:set jwt-auth PATH_TO_CONFIG_JSON_FILE --file --json`
-1. Charger le fichier `private.key` dans l’interface de ligne de commande Adobe I/O
+1. Charger le fichier `private.key` dans l&#39;interface de ligne de commande de l&#39;Adobe I/O
    + `$ aio config:set jwt-auth.jwt_private_key PATH_TO_PRIVATE_KEY_FILE --file`
 
-Commencez [à exécuter des commandes](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) pour Cloud Manager via l’interface de ligne de commande Adobe I/O.
+Commencez [à exécuter des commandes](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) pour Cloud Manager via l’interface de ligne de commande de l’Adobe I/O.
 
 ## Configuration de l&#39;IDE de développement
 
