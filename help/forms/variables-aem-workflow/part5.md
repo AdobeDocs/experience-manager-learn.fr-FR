@@ -3,17 +3,20 @@ title: Variables dans le processus AEM[Partie5]
 seo-title: Variables dans le processus AEM[Partie5]
 description: Utilisation de variables de type xml, json, arraylist, document dans le processus aem
 seo-description: Utilisation de variables de type xml, json, arraylist, document dans le processus aem
-feature: workflow
+feature: Workflow
 topics: development
 audience: developer
 doc-type: technical video
 activity: understand
 version: 6.5
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 0%
+source-wordcount: '110'
+ht-degree: 2%
 
 ---
 
