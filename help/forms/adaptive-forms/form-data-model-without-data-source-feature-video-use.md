@@ -1,9 +1,9 @@
 ---
 title: Création d’un modèle de données de formulaire sans source de données
 seo-title: Création d’un modèle de données de formulaire sans source de données
-description: Depuis AEM Forms 6.4, nous pouvons désormais définir le modèle de données de formulaire (FDM) sans l’associer à une source de données. La vidéo suivante décrit les étapes de création de FDM sans source de données.
-seo-description: Depuis AEM Forms 6.4, nous pouvons désormais définir le modèle de données de formulaire (FDM) sans l’associer à une source de données. La vidéo suivante décrit les étapes de création de FDM sans source de données.
-feature: form-data-model
+description: Depuis AEM Forms 6.4, nous pouvons désormais définir le modèle de données de formulaire (FDM) sans l’associer à une source de données. La vidéo suivante décrit les étapes de création de FDM sans aucune source de données.
+seo-description: Depuis AEM Forms 6.4, nous pouvons désormais définir le modèle de données de formulaire (FDM) sans l’associer à une source de données. La vidéo suivante décrit les étapes de création de FDM sans aucune source de données.
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: technical video
@@ -11,18 +11,21 @@ activity: setup
 version: 6.4,6.5
 uuid: eeb6165c-5465-4692-a3a9-8ef10780678d
 discoiquuid: 54fdce05-486b-4fb5-aed4-8552fe2040fd
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 0%
+source-wordcount: '183'
+ht-degree: 1%
 
 ---
 
 
 # Création d’un modèle de données de formulaire sans source de données {#creating-form-data-model-without-data-source}
 
-Depuis AEM Forms 6.4, nous pouvons désormais définir le modèle de données de formulaire (FDM) sans l’associer à une source de données. La vidéo suivante décrit les étapes de création de FDM sans source de données.
+Depuis AEM Forms 6.4, nous pouvons désormais définir le modèle de données de formulaire (FDM) sans l’associer à une source de données. La vidéo suivante décrit les étapes de création de FDM sans aucune source de données.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21414/?quality=9&learn=on)
 
