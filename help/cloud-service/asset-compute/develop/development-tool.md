@@ -1,7 +1,7 @@
 ---
 title: Outil de développement Asset compute
 description: L’outil de développement d’Assets compute est un outil Web local permettant aux développeurs de configurer et d’exécuter localement les travailleurs d’Asset Computer, en dehors du contexte du SDK AEM par rapport aux ressources d’Asset compute de Adobe I/O Runtime.
-feature: asset-compute
+feature: Microservices Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
+topic: Intégrations, développement
+role: Développeur
+level: Intermédiaire, expérimenté
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -77,7 +80,7 @@ _Clic publicitaire de l’exécution d’un travail d’Asset compute dans l’o
          ```
 
 1. Appuyez sur le bouton __Exécuter__
-1. La section __Rendus__ est renseignée avec un espace réservé de rendu
+1. La section __Rendus__ est renseignée avec un espace réservé de rendu.
 1. Une fois le collaborateur terminé, l’espace réservé pour le rendu affiche le rendu généré.
 
 Si vous modifiez le code du collaborateur pendant l’exécution de l’outil de développement, les modifications seront &quot;déployées à chaud&quot;. Le &quot;déploiement à chaud&quot; prend plusieurs secondes, donc laissez le déploiement se terminer avant de réexécuter le programme de travail à partir de l’outil de développement.
