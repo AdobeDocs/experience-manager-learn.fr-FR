@@ -3,16 +3,19 @@ title: Génération d'un Document d'impression par fusion de données
 seo-title: Génération d'un Document d'impression par fusion de données
 description: Découvrez comment générer un document de canal d'impression en fusionnant les données contenues dans le flux d'entrée
 seo-description: Découvrez comment générer un document de canal d'impression en fusionnant les données contenues dans le flux d'entrée
-feature: interactive-communication
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Développement
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '506'
 ht-degree: 2%
 
 ---
