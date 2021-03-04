@@ -1,10 +1,14 @@
 ---
 title: Chapitre 6 - Présentation du contenu sur AEM Publish en tant que JSON - Content Services
 description: Le chapitre 6 du didacticiel AEM sans en-tête traite de la manière dont tous les packages, configurations et contenus nécessaires sont intégrés à AEM Publish pour permettre la consommation à partir de l’application mobile.
+feature: Fragments de contenu, API
+topic: Sans tête, Gestion de contenu
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '473'
 ht-degree: 2%
 
 ---
