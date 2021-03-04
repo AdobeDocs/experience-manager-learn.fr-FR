@@ -3,18 +3,21 @@ title: 'Utilisation de tests automatisés avec AEM Forms adaptatif '
 seo-title: 'Utilisation de tests automatisés avec AEM Forms adaptatif '
 description: Test automatisé de Forms adaptatif à l’aide du SDK Calvin
 seo-description: Test automatisé de Forms adaptatif à l’aide du SDK Calvin
-feature: formulaires adaptatifs
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: article
 activity: develop
 version: 6.3,6.4,6.5
 uuid: 3ad4e6d6-d3b1-4e4d-9169-847f74ba06be
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 5%
+source-wordcount: '465'
+ht-degree: 6%
 
 ---
 
