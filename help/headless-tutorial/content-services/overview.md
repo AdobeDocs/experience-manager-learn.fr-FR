@@ -1,20 +1,16 @@
 ---
 title: Prise en main de AEM sans en-tête - Content Services
 description: Tutoriel complet illustrant comment créer et exposer du contenu à l’aide d’AEM sans affichage.
-feature: '"Fragments de contenu, API"'
-topic: '"Sans tête, Gestion de contenu"'
-role: Développeur
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 6%
+source-wordcount: '215'
+ht-degree: 9%
 
 ---
 
 
-# Prise en main de AEM sans en-tête - Content Services
+# Prise en main d’AEM sans affichage - Content Services
 
 Didacticiel de bout en bout illustrant comment créer et exposer du contenu à l’aide d’AEM et consommé par une application mobile native, dans un scénario CMS sans tête.
 
