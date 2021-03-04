@@ -4,15 +4,18 @@ description: Les Jetons d'accès de développement local AEM sont utilisés pour
 version: cloud-service
 doc-type: tutorial
 topics: Development, Security
-feature: APIs
+feature: les API ;
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330477.jpg
+topic: '"Sans tête, intégrations"'
+role: Développeur
+level: '"Intermédiaire, expérimenté"'
 translation-type: tm+mt
-source-git-commit: c4f3d437b5ecfe6cb97314076cd3a5e31b184c79
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---
@@ -53,7 +56,7 @@ Le Jeton d&#39;accès de développement local permet d’accéder aux services d
 1. Une application externe est en cours de développement qui interagit par programmation avec AEM en tant que Cloud Service.
 1. L&#39;application externe se lit dans le Jeton d&#39;accès de développement local
 1. L’application externe crée des requêtes HTTP pour AEM en tant que Cloud Service, ajoutant le Jeton d&#39;accès de développement local en tant que jeton de garde à l’en-tête Autorisation des requêtes HTTP.
-1. aem en tant que Cloud Service reçoit la requête HTTP, authentifie la requête et effectue le travail demandé par la requête HTTP, puis renvoie une réponse HTTP à l’application externe.
+1. AEM en tant que Cloud Service reçoit la requête HTTP, authentifie la requête et effectue le travail demandé par la requête HTTP, puis renvoie une réponse HTTP à l’application externe.
 
 ### Exemple d’application externe
 
