@@ -3,11 +3,15 @@ title: Tutoriel du cache du Dispatcher AEM
 seo-title: Tutoriel du cache du Dispatcher AEM
 description: Ce didacticiel a pour but de vous aider à mieux comprendre comment fonctionne le répartiteur et comment vous pouvez l’utiliser.
 seo-description: Ce didacticiel a pour but de vous aider à mieux comprendre comment fonctionne le répartiteur et comment vous pouvez l’utiliser.
+feature: Dispatcher
+topic: Architecture
+role: Architecte
+level: Début
 translation-type: tm+mt
-source-git-commit: 9c8943de439cab926540eca028cb632ebdc4d888
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 6%
+source-wordcount: '184'
+ht-degree: 8%
 
 ---
 
