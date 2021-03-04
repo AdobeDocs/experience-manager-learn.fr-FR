@@ -2,7 +2,7 @@
 title: Composant personnalisé
 description: Couvre la création de bout en bout d’un composant de signature personnalisé qui affiche le contenu créé. Comprend le développement d’un modèle Sling pour encapsuler la logique métier afin de renseigner le composant de ligne guide et le code HTML correspondant pour effectuer le rendu du composant.
 sub-product: sites
-feature: sling-models
+feature: '"Composants principaux, API"'
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -11,10 +11,13 @@ audience: developer
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
+topic: '"Gestion de contenu, développement"'
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '3961'
+source-wordcount: '3969'
 ht-degree: 1%
 
 ---
@@ -104,7 +107,7 @@ La boîte de dialogue expose l’interface avec laquelle les auteurs de contenu 
        sling:resourceSuperType="core/wcm/components/image/v2/image"/>
    ```
 
-   Le fichier XML ci-dessus fournit la définition du composant, y compris le titre, la description et le groupe. `sling:resourceSuperType` pointe vers `core/wcm/components/image/v2/image`, qui est le [composant image de base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html).
+   Le fichier XML ci-dessus fournit la définition du composant, y compris le titre, la description et le groupe. `sling:resourceSuperType` pointe vers `core/wcm/components/image/v2/image`, qui est le [composant image de base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr).
 
 ### Créez le script HTL {#create-the-htl-script}
 
@@ -394,7 +397,7 @@ Le modèle Byline Sling repose sur plusieurs API Java fournies par AEM. Ces API 
        </dependency>
    ```
 
-   Il s’agit de l’ensemble des API Java publiques exposées par AEM Core Components. aem Core Components est un projet géré en dehors de AEM et qui a donc un cycle de publication distinct. Pour cette raison, il s’agit d’une dépendance qui doit être incluse séparément et qui n’est **pas** incluse avec `uber-jar` ou `aem-sdk-api`.
+   Il s’agit de l’ensemble des API Java publiques exposées par AEM Core Components. AEM Core Components est un projet géré en dehors de AEM et qui a donc un cycle de publication distinct. Pour cette raison, il s’agit d’une dépendance qui doit être incluse séparément et qui n’est **pas** incluse avec `uber-jar` ou `aem-sdk-api`.
 
    Tout comme l&#39;uber-jar, la version de cette dépendance est conservée dans le fichier Pom du réacteur parent situé à `aem-guides-wknd/pom.xml`.
 
@@ -868,7 +871,7 @@ Examinons ce que ce script HTML fait jusqu’à présent :
    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
    ```
 
-   Notez que les classes CSS respectent la convention d’affectation de nom [BEM](https://getbem.com/naming/). Bien que l’utilisation des conventions BEM ne soit pas obligatoire, BEM est recommandé car il est utilisé dans les classes CSS des composants principaux et donne généralement lieu à des règles CSS propres et lisibles.
+   Notez que les classes CSS respectent la convention d’affectation de nom [BEM](https://getbem.com/naming/). Bien que l&#39;utilisation des conventions BEM ne soit pas obligatoire, BEM est recommandé car il est utilisé dans les classes CSS des composants principaux et donne généralement lieu à des règles CSS propres et lisibles.
 
 ### Instanciation des objets Modèle Sling dans HTL {#instantiating-sling-model-objects-in-htl}
 
