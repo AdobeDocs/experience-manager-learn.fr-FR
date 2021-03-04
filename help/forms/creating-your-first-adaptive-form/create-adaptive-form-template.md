@@ -1,17 +1,20 @@
 ---
 title: Création d’un modèle de formulaire adaptatif
 description: Le modèle définit la structure et le contenu initial du formulaire adaptatif.
-feature: adaptive-forms
+feature: Formulaires adaptatifs
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 thumbnail: 37324.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b085a2c75f8e0b4860d503774ea01a108773ad09
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 3%
+source-wordcount: '138'
+ht-degree: 6%
 
 ---
 
