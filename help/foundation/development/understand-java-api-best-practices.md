@@ -1,27 +1,30 @@
 ---
 title: Comprendre les bonnes pratiques de l’API Java dans AEM
-description: aem est construit sur une riche pile de logiciels open-source qui expose de nombreuses API Java à des fins de développement. Cet article explore les principales API et explique quand et pourquoi elles doivent être utilisées.
+description: AEM est construit sur une riche pile de logiciels open-source qui expose de nombreuses API Java à des fins de développement. Cet article explore les principales API et explique quand et pourquoi elles doivent être utilisées.
 version: 6.2, 6.3, 6.4, 6.5
 sub-product: fondation, ressources, sites
-feature: null
+feature: les API ;
 topics: best-practices, development
 activity: develop
 audience: developer
 doc-type: article
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: fcb47ee3878f6a789b2151e283431c4806e12564
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 5%
+source-wordcount: '2027'
+ht-degree: 8%
 
 ---
 
 
 # Comprendre les meilleures pratiques de l’API Java
 
-Adobe Experience Manager (AEM) est construit sur une riche pile de logiciels open source qui expose de nombreuses API Java à des fins de développement. Cet article explore les principales API et explique quand et pourquoi elles doivent être utilisées.
+Adobe Experience Manager (AEM) repose sur une riche pile de logiciels open source qui expose de nombreuses API Java à utiliser pendant le développement. Cet article explore les principales API et explique quand et pourquoi elles doivent être utilisées.
 
-aem est basé sur 4 jeux d&#39;API Java Principaux.
+AEM est basé sur 4 jeux d&#39;API Java Principaux.
 
 * **Adobe Experience Manager (AEM)**
 
@@ -46,7 +49,7 @@ La règle générale consiste à préférer les API/abstractions dans l’ordre 
 1. **AEM**
 1. **[!DNL Sling]**
 1. **JCR**
-1. **les lots OSGi**
+1. **OSGi**
 
 Si une API est fournie par AEM, préférez-la à [!DNL Sling], JCR et OSGi. Si AEM ne fournit pas d’API, préférez [!DNL Sling] au JCR et OSGi.
 
@@ -70,7 +73,7 @@ Bien que ces noeuds soient disponibles via les API [!DNL Sling] en tant que ress
 
 ### com.adobe.* par rapport à com.day.* API
 
-aem API ont une préférence intra-package, identifiée par les packages Java suivants, par ordre de préférence :
+AEM API ont une préférence intra-package, identifiée par les packages Java suivants, par ordre de préférence :
 
 1. `com.adobe.cq`
 1. `com.adobe.granite`
@@ -84,7 +87,7 @@ De nouvelles abstractions telles que [!DNL Content Fragments] et [!DNL Experienc
 
 ### API de requête
 
-aem prend en charge plusieurs langues de requête. Les trois langues principales sont [JCR-SQL2](https://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html), XPath et [AEM Requête Builder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-api.html).
+AEM prend en charge plusieurs langues de requête. Les trois langues principales sont [JCR-SQL2](https://docs.jboss.org/jbossdna/0.7/manuals/reference/html/jcr-query-and-search.html), XPath et [AEM Requête Builder](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/querybuilder-api.html).
 
 Le plus important est de maintenir un langage de requête cohérent dans toute la base de code, afin de réduire la complexité et les coûts de compréhension.
 
@@ -93,7 +96,7 @@ Tous les langages de requête ont effectivement les mêmes profils de performanc
 L’API préférée est [AEM Requête Builder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-api.html), qui est l’abstraction de niveau supérieur et fournit une API robuste pour construire, exécuter et récupérer les résultats pour les requêtes, et fournit les éléments suivants :
 
 * Construction de requêtes simple et paramétrée (paramètres de requête modélisés en tant que carte)
-* [API Java et API HTTP natives](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/querybuilder-api.html)
+* [API Java et API HTTP natives](https://helpx.adobe.com/fr/experience-manager/6-3/sites/developing/using/querybuilder-api.html)
 * [Débogueur de Requête OOTB](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-api.html#TestingandDebugging)
 * [Prévisions d&#39;OOTB ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) prenant en charge les besoins de requête communs
 
@@ -102,7 +105,7 @@ L’API préférée est [AEM Requête Builder](https://helpx.adobe.com/experienc
 
 >[!CAUTION]
 >
->aem l&#39;API QueryBuilder fuit un objet ResourceResolver. Pour atténuer cette fuite, suivez cet [exemple de code](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/search/querybuilder/impl/SampleQueryBuilder.java#L164).
+>AEM l&#39;API QueryBuilder fuit un objet ResourceResolver. Pour atténuer cette fuite, suivez cet [exemple de code](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/master/core/src/main/java/com/adobe/acs/samples/search/querybuilder/impl/SampleQueryBuilder.java#L164).
 
 
 ## [!DNL Sling]les API ;
@@ -171,7 +174,7 @@ Il y a peu de chevauchement entre les API OSGi et les API de niveau supérieur (
 
 ### OSGi et API Apache Felix
 
-OSGi définit une spécification que tous les conteneurs OSGi doivent implémenter et respecter. aem mise en oeuvre OSGi, Apache Felix, fournit également plusieurs de ses propres API.
+OSGi définit une spécification que tous les conteneurs OSGi doivent implémenter et respecter. AEM mise en oeuvre OSGi, Apache Felix, fournit également plusieurs de ses propres API.
 
 * Préférez les API OSGi (`org.osgi`) sur les API Apache Felix (`org.apache.felix`).
 
@@ -198,7 +201,7 @@ Voici quelques exceptions courantes aux règles définies ci-dessus.
 
 ### API de requête
 
-* aem QueryBuilder ne prend pas en charge certaines fonctions de requête telles que [suggestions](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Suggestions), les indicateurs d&#39;orthographe et d&#39;index parmi d&#39;autres fonctions moins courantes. Pour requête avec ces fonctions, JCR-SQL2 est préférable.
+* AEM QueryBuilder ne prend pas en charge certaines fonctions de requête telles que [suggestions](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Suggestions), les indicateurs d&#39;orthographe et d&#39;index parmi d&#39;autres fonctions moins courantes. Pour requête avec ces fonctions, JCR-SQL2 est préférable.
 
 ### [!DNL Sling] Enregistrement du servlet  {#sling-servlet-registration}
 
@@ -335,13 +338,13 @@ String relativeResourceValue = properties.get("relative/propertyName", "Default 
 
 Dans ce cas, l&#39;objet AEM peut être converti en [!DNL Sling] [!DNL Resource] pour localiser efficacement la propriété ou la sous-ressource souhaitée.
 
-#### aem page à [!DNL Sling] [!DNL Resource]
+#### AEM page à [!DNL Sling] [!DNL Resource]
 
 ```java
 Resource resource = page.adaptTo(Resource.class);
 ```
 
-#### aem actif à [!DNL Sling] [!DNL Resource]
+#### AEM actif à [!DNL Sling] [!DNL Resource]
 
 ```java
 Resource resource = asset.adaptTo(Resource.class);
