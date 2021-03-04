@@ -1,7 +1,7 @@
 ---
 title: Utilisation de la couche de données du client Adobe avec les composants principaux AEM
 description: La couche de données du client Adobe introduit une méthode standard pour collecter et stocker des données sur une expérience visiteuse sur une page Web, puis faciliter l'accès à ces données. La couche de données client Adobe est indépendante de la plate-forme, mais elle est entièrement intégrée aux composants principaux pour l’utilisation avec AEM.
-feature: core-component
+feature: composant principal
 topics: integrations
 audience: developer
 doc-type: feature video
@@ -9,10 +9,13 @@ activity: use
 version: cloud-service
 kt: 6261
 thumbnail: 41195.jpg
+topic: Intégrations
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: aa48c94413f83e794c5d062daaac85c97b451b82
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '792'
 ht-degree: 8%
 
 ---
