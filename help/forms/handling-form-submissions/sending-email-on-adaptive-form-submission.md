@@ -4,17 +4,20 @@ seo-title: Envoi d’un courrier électronique à l’envoi d’un formulaire ad
 description: Envoyer un courrier électronique de confirmation lors de l’envoi du formulaire adaptatif à l’aide du composant Envoyer un courrier électronique
 seo-description: Envoyer un courrier électronique de confirmation lors de l’envoi du formulaire adaptatif à l’aide du composant Envoyer un courrier électronique
 uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
-feature: adaptive-forms
+feature: Formulaires adaptatifs
 topics: authoring, integrations
 audience: developer
 doc-type: article
 activity: use
 discoiquuid: 1187357f-2f36-4a04-b708-44bb9c174fb5
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 272e43ee4aeb756a3a1fd0ce55eaca94a9553fa4
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 2%
+source-wordcount: '237'
+ht-degree: 3%
 
 ---
 
