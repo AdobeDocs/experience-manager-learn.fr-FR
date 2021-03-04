@@ -1,7 +1,7 @@
 ---
 title: Environnement de développement local pour AEM en tant que Cloud Service
 description: Présentation de l'environnement de développement local de Adobe Experience Manager (AEM).
-feature: null
+feature: Outils de développement
 topics: development
 version: cloud-service
 doc-type: article
@@ -9,11 +9,14 @@ activity: troubleshoot
 audience: developer
 kt: 3290
 thumbnail: 32565.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 69c1767098cc9da8ec0ae2bd83d25417d330f393
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 1%
+source-wordcount: '482'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +27,7 @@ Ce didacticiel explique comment configurer un environnement de développement lo
 
 >[!VIDEO](https://video.tv.adobe.com/v/32565/?quality=12&learn=on)
 
-![aem en tant que pôle technologique de l&#39;Environnement de développement local Cloud Service](./assets/overview/aem-sdk-technology-stack.png)
+![AEM en tant que pôle technologique de l&#39;Environnement de développement local Cloud Service](./assets/overview/aem-sdk-technology-stack.png)
 
 L&#39;environnement de développement local pour l&#39;AEM peut être divisé en trois groupes logiques :
 
@@ -74,7 +77,7 @@ Cette section du didacticiel explique comment :
 
 ## Exécution locale [!DNL Dispatcher]
 
-aem en tant qu’outil de répartiteur du SDK Cloud Service fournit tout ce qui est nécessaire pour configurer l’exécution locale [!DNL Dispatcher]. [!DNL Dispatcher] Les outils sont  [!DNL Docker]basés sur la ligne de commande et fournissent des outils de ligne de commande pour transférer les fichiers de serveur  [!DNL Apache HTTP] Web et de  [!DNL Dispatcher] configuration dans des formats compatibles et les déployer pour les  [!DNL Dispatcher] exécuter dans le  [!DNL Docker] conteneur.
+AEM en tant qu’outil de répartiteur du SDK Cloud Service fournit tout ce qui est nécessaire pour configurer l’exécution locale [!DNL Dispatcher]. [!DNL Dispatcher] Les outils sont  [!DNL Docker]basés sur la ligne de commande et fournissent des outils de ligne de commande pour transférer les fichiers de serveur  [!DNL Apache HTTP] Web et de  [!DNL Dispatcher] configuration dans des formats compatibles et les déployer pour les  [!DNL Dispatcher] exécuter dans le  [!DNL Docker] conteneur.
 
 Cette section du didacticiel explique comment :
 
