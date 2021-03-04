@@ -2,19 +2,18 @@
 title: Workflows de début automatique
 description: Les workflows de début automatique étendent le traitement des ressources en appelant automatiquement le processus personnalisé lors du transfert ou du retraitement.
 sub-product: ressources
-feature: workflows
-topics: workflow
-audience: administrator, implementer
-doc-type: feature-video
-activity: use
+feature: Microservices Asset compute, flux de travail
 version: cloud-service
 kt: 4994
 thumbnail: 37323.jpg
+topic: Développement
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 4e4f04e93113c863fc8de416917df8ed40dd676a
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '39'
-ht-degree: 2%
+source-wordcount: '46'
+ht-degree: 6%
 
 ---
 
