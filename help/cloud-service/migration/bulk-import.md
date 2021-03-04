@@ -4,16 +4,19 @@ description: L'outil d'importation en bloc dans AEM en tant que Cloud Service pe
 version: cloud-service
 doc-type: technical-video
 topics: Migration
-feature: Bulk Import
+feature: Migration
 activity: develop
 audience: developer
 kt: 6729
 thumbnail: 329680.jpg
+topic: Migration
+role: Architecte, développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 322f618469126656dc735263abd55548eb0a3cbf
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 0%
+source-wordcount: '78'
+ht-degree: 2%
 
 ---
 
