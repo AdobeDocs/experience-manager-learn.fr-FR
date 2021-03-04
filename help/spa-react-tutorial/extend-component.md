@@ -2,7 +2,7 @@
 title: Étendre un composant | Prise en main de l'AEM SPA Editor et réaction
 description: Découvrez comment étendre un composant principal existant à utiliser avec l'AEM SPA Editor. Comprendre comment ajouter des propriétés et du contenu à un composant existant est une technique puissante pour étendre les fonctionnalités d'une mise en oeuvre AEM SPA Editor. Apprenez à utiliser le modèle de délégation pour étendre les modèles Sling et les fonctionnalités de Sling Resource Merger.
 sub-product: sites
-feature: SPA Editor
+feature: Éditeur SPA, composants principaux
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -10,11 +10,14 @@ activity: develop
 audience: developer
 kt: 5879
 thumbnail: 5879-spa-react.jpg
+topic: SPA
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: ff75a9d10e9d00510e4c49dea0dcc36e68ca46c4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1969'
-ht-degree: 3%
+source-wordcount: '1976'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +40,7 @@ Dans ce chapitre, un nouveau composant `Card` sera créé. Le composant `Card` �
 
 >[!NOTE]
 >
-> Dans une mise en oeuvre dans le monde réel, il peut être plus approprié d&#39;utiliser simplement le [composant Teaser](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/teaser.html) puis d&#39;étendre le [composant Image Core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) pour créer un composant `Card` en fonction des besoins du projet. Il est toujours recommandé d&#39;utiliser [les composants de base](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) directement lorsque cela est possible.
+> Dans une mise en oeuvre dans le monde réel, il peut être plus approprié d&#39;utiliser simplement le [composant Teaser](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/teaser.html) puis d&#39;étendre le [composant Image Core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) pour créer un composant `Card` en fonction des besoins du projet. Il est toujours recommandé d&#39;utiliser [les composants de base](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) directement lorsque cela est possible.
 
 ## Conditions préalables
 
