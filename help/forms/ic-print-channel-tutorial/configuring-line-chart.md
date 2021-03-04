@@ -4,7 +4,7 @@ seo-title: Configuration d’un graphique en courbes pour votre premier document
 description: Il s'agit de la partie 8 du didacticiel en plusieurs étapes pour créer votre premier document de communications interactives pour le canal d'impression. Dans cette partie, nous allons ajouter un graphique linéaire pour afficher le solde du compte.
 seo-description: Il s'agit de la partie 8 du didacticiel en plusieurs étapes pour créer votre premier document de communications interactives pour le canal d'impression. Dans cette partie, nous allons ajouter un graphique linéaire pour afficher le solde du compte.
 uuid: a4394874-a080-4b6a-a3eb-ffc71504919d
-feature: interactive-communication
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,11 +13,14 @@ version: 6.4,6.5
 discoiquuid: 9110e5c6-50ee-4c3e-a779-b680ff49ef23
 kt: 5993
 thumbnail: 22386.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 0%
+source-wordcount: '175'
+ht-degree: 2%
 
 ---
 
