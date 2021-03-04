@@ -2,17 +2,20 @@
 title: Configuration de la publication sur les réseaux sociaux avec AEM fragments d’expérience
 description: Les fragments d’expérience permettent aux spécialistes du marketing de publier des expériences créées dans AEM sur les plateformes de médias sociaux. La vidéo ci-dessous détaille la configuration et la configuration nécessaires pour publier des fragments d’expérience sur Facebook et Pinterest.
 sub-product: sites, content-services
-feature: experience-fragments
+feature: Fragments d’expérience
 topics: integrations, content-delivery
 audience: administrator, implementer, developer
 doc-type: setup
 activity: use
 version: 6.3, 6.4, 6.5
+topic: Gestion de contenu
+role: Administrateur, développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 0%
+source-wordcount: '175'
+ht-degree: 3%
 
 ---
 
@@ -30,9 +33,9 @@ Les fragments d’expérience permettent aux spécialistes du marketing de publi
 1. L’instance d’auteur AEM s’exécute sur HTTPS.
 2. Compte Facebook + application de développement Facebook
 3. Compte Pinterest + application Pinterest Developer
-4. [!UICONTROL aem Cloud ] ServicesConfiguration - Facebook
-5. [!UICONTROL aem Cloud ] ServicesConfiguration - Pinterest
-6. aem Fragment d’expérience avec des Cloud Services pour Facebook + Pinterest
+4. [!UICONTROL AEM Cloud ] ServicesConfiguration - Facebook
+5. [!UICONTROL AEM Cloud ] ServicesConfiguration - Pinterest
+6. AEM Fragment d’expérience avec des Cloud Services pour Facebook + Pinterest
 7. Variation de fragment d’expérience à l’aide d’un modèle Facebook
 8. Variation du fragment d’expérience à l’aide du modèle Pinterest
 
