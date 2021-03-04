@@ -2,7 +2,7 @@
 title: Projet de l’éditeur SPA | Prise en main de l'AEM SPA Editor et réaction
 description: Découvrez comment utiliser un projet Adobe Experience Manager (AEM) Maven comme point de départ pour une application React intégrée à AEM Editor.
 sub-product: sites
-feature: maven-archetype, SPA Editor
+feature: SPA éditeur, AEM Archétype de projet
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -10,10 +10,13 @@ activity: develop
 audience: developer
 kt: 413
 thumbnail: 413-spa-react.jpg
+topic: SPA
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: ab5b92dd9c901075347cc521bf0abe0dfc0e5319
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1136'
 ht-degree: 3%
 
 ---
@@ -88,7 +91,7 @@ Il existe plusieurs options pour créer un projet Maven Multi-module pour AEM. C
 
    >[!NOTE]
    >
-   > Notez la propriété `frontendModule=react`. Cela indique à l&#39;archétype de projet AEM de démarrer le projet avec une base de code de réaction [Réagir ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) à utiliser avec l&#39;AEM Éditeur.
+   > Notez la propriété `frontendModule=react`. Cela indique à l&#39;archétype de projet AEM de démarrer le projet avec une base de code [Réagir ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-react.html) de démarrage à utiliser avec l&#39;AEM Éditeur.
 
 ## Création du projet
 
@@ -146,7 +149,7 @@ Ensuite, compilez, générez et déployez le code du projet sur une instance loc
 
    ![Packages WKND SPA](./assets/create-project/package-manager.png)
 
-   *aem Package Manager*
+   *AEM Package Manager*
 
    Tout le code personnalisé nécessaire au projet sera assemblé dans ces packages et installé sur l&#39;exécution AEM.
 
