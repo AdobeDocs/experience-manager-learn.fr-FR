@@ -10,10 +10,14 @@ audience: developer
 mini-toc-levels: 1
 kt: 6713
 thumbnail: 22451.jpg
+feature: '"Fragments de contenu, API GraphQL"'
+topic: '"Sans tête, Gestion de contenu"'
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 8c5b425e6dcf23cbef042097f17db9e51bdf63c9
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '794'
 ht-degree: 3%
 
 ---
@@ -95,9 +99,9 @@ Ensuite, créez une nouvelle variation pour avoir une idée des capacités dispo
 
    ![Prévisualisation de synthèse](assets/author-content-fragments/summarize-text-preview.png)
 
-   Une prévisualisation de résumé s’ouvre alors. aem processeur de langue de l&#39;ordinateur essaiera de résumer le texte en fonction du nombre de mots de la cible. Vous pouvez également sélectionner différentes phrases à supprimer.
+   Une prévisualisation de résumé s’ouvre alors. AEM processeur de langue de l&#39;ordinateur essaiera de résumer le texte en fonction du nombre de mots de la cible. Vous pouvez également sélectionner différentes phrases à supprimer.
 
-1. Cliquez sur **Résumer** lorsque la synthèse vous convient. Cliquez dans le champ de texte multiligne et activez le bouton **Développer** pour revenir à la vue principale.
+1. Cliquez sur **Résumer** lorsque la synthèse vous convient. Cliquez dans le champ de texte multiligne et faites basculer le bouton **Développer** pour revenir à la vue principale.
 
 1. Cliquez sur **Enregistrer** pour enregistrer les modifications.
 
