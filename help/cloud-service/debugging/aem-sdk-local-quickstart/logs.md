@@ -1,25 +1,28 @@
 ---
 title: Débogage du SDK AEM à l’aide de journaux
 description: Les journaux jouent le rôle de première ligne pour le débogage des applications AEM, mais dépendent d’une journalisation adéquate dans l’application AEM déployée.
-feature: null
+feature: Outils de développement
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5252
+topic: Développement
+role: Développeur
+level: Débutant, intermédiaire
 translation-type: tm+mt
-source-git-commit: 178ba3dbcb6f2050a9c56303bbabbcfcbead3e79
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 2%
+source-wordcount: '400'
+ht-degree: 3%
 
 ---
 
 
 # Débogage du SDK AEM à l’aide de journaux
 
-L’accès aux journaux AEM SDK, soit les Jar de démarrage rapide locaux AEM SDK, soit les outils de répartiteur peuvent fournir des informations clés sur le débogage des applications de l’AEM.
+L’accès aux journaux AEM SDK, soit les Jar de démarrage rapide locale AEM SDK, soit les outils de répartiteur peuvent fournir des informations clés sur le débogage des applications de l’AEM.
 
 ## Journaux des AEM
 
