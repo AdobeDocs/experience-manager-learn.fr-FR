@@ -1,22 +1,17 @@
 ---
 title: Utilisation de vidéos Dynamic Media 360 et de miniatures vidéo personnalisées avec AEM Assets
-seo-title: Utilisation de vidéos Dynamic Media 360 et de miniatures vidéo personnalisées avec AEM Assets
 description: Les améliorations apportées à Dynamic Media Viewer dans AEM version 6.5 incluent la prise en charge du rendu vidéo 360, 360 lecteurs de médias (video360Social et video360VR) et la possibilité de sélectionner des miniatures vidéo personnalisées.
-seo-description: Les améliorations apportées à Dynamic Media Viewer dans AEM version 6.5 incluent la prise en charge du rendu vidéo 360, 360 lecteurs de médias (video360Social et video360VR) et la possibilité de sélectionner des miniatures vidéo personnalisées.
-uuid: 44b91c22-635c-48c2-af27-49bdbfb61639
-discoiquuid: 67d5e0f2-3fde-4ea7-9e53-4fc0cf8b9f2a
 sub-product: dynamic-media
-feature: video-profiles, viewer-presets
-topics: images, videos, renditions, authoring, integrations, publishing, metadata
-doc-type: feature video
-audience: all
-activity: use
+feature: Profils vidéo
 version: 6.3, 6.4, 6.5
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 2%
+source-wordcount: '402'
+ht-degree: 5%
 
 ---
 
@@ -29,7 +24,7 @@ Les améliorations apportées à Dynamic Media Viewer dans AEM version 6.5 inclu
 
 >[!NOTE]
 >
->La vidéo suppose que votre instance AEM s’exécute en mode Dynamic Media S7.  [Vous trouverez ici](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html) des instructions sur la configuration de l&#39;AEM avec Dynamic Media. Lorsque vous téléchargez une vidéo, Dynamic Media traite par défaut le métrage sous la forme d’une vidéo de 360, si son rapport L/H est de 2:1. c&#39;est-à-dire que le rapport largeur/hauteur est de 2:1.
+>La vidéo suppose que votre instance AEM s’exécute en mode Dynamic Media S7.  [Vous trouverez ici](https://helpx.adobe.com/fr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html) des instructions sur la configuration de l&#39;AEM avec Dynamic Media. Lorsque vous téléchargez une vidéo, Dynamic Media traite par défaut le métrage sous la forme d’une vidéo de 360, si son rapport L/H est de 2:1. c&#39;est-à-dire que le rapport largeur/hauteur est de 2:1.
 
 >[!NOTE]
 >
