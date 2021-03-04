@@ -2,15 +2,18 @@
 title: Visionneuses d’images, d’échantillons, à 360° et de supports variés
 description: L’une des capacités les plus utiles et les plus puissantes de Dynamic Media Classic est sa prise en charge de la création de visionneuses de supports enrichis, telles que les visionneuses d’images, d’échantillons, à 360° et de supports variés. Découvrez ce qu’est chaque visionneuse de supports enrichis et comment créer chaque type dans Dynamic Media Classic. En savoir plus sur les paramètres prédéfinis d’ensemble par lot, qui automatisent le processus de création de visionneuses de supports enrichis au moment du téléchargement.
 sub-product: dynamic-media
-feature: sets
+feature: Dynamic Media Classic, Visionneuses d’images, Combiner des visionneuses de supports, Visionneuses à 360°
 doc-type: tutorial
 topics: sets, development, authoring, configuring
 audience: all
 activity: use
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: e7a02900b0582fe9b329e5f9bd568f3c54d8d63d
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1471'
 ht-degree: 2%
 
 ---
@@ -56,7 +59,7 @@ L’URL de la visionneuse d’images ci-dessus peut apparaître comme suit :
 
 Ce type de jeu est généralement utilisé pour afficher les vues colorées du même article. Il se compose de paires d’images et de nuances.
 
-La principale différence entre une série d’échantillons et une visionneuse d’images réside dans le fait que les séries d’échantillons utilisent une autre image comme échantillon cliquable, tandis que les visionneuses d’images utilisent une version miniature de l’image d’origine, accessible en cliquant dessus.
+La principale différence entre une série d’échantillons et une visionneuse d’images réside dans le fait que les séries d’échantillons utilisent une autre image comme nuance cliquable, tandis que les visionneuses d’images utilisent une version miniature de l’image d’origine, sous forme de miniatures cliquables.
 
 Les séries d’échantillons ne colorent pas les images (une idée fausse répandue). Les images sont simplement permutées, exactement comme dans une visionneuse d’images. Les mini images d&#39;échantillon auraient pu être créées à l&#39;aide de Photoshop, chaque couleur aurait pu être photographiée séparément, ou l&#39;outil Recadrer de Dynamic Media Classic aurait pu être utilisé pour faire une nuance à partir d&#39;une des images colorées.
 
@@ -108,7 +111,7 @@ Pour afficher une image pour un zoom, une visionneuse ou une vidéo sur votre si
 
 En savoir plus sur [Visionneuses pour AEM Assets et Dynamic Media Classic](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html).
 
-## Paramètres prédéfinis d’ensemble par lot
+## Paramètres prédéfinis de lot
 
 Jusqu&#39;à présent, nous avons discuté de la façon de créer manuellement des visionneuses à l&#39;aide de la fonction de création de Dynamic Media Classic. Cependant, il est possible d’automatiser la création de visionneuses d’images et de visionneuses à 360° à l’aide d’un paramètre prédéfini d’ensemble par lot tant que vous disposez d’une convention d’affectation de nom normalisée.
 
