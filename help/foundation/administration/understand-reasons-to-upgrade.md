@@ -7,11 +7,14 @@ topics: best-practices, upgrade
 audience: all
 activity: understand
 doc-type: article
+topic: Mise à niveau
+role: '"Leader, Architecte, Développeur, Administrateur, Professionnel"'
+level: Début
 translation-type: tm+mt
-source-git-commit: 1519856731758ece2860615c06fc0d64edb104a5
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '3540'
-ht-degree: 5%
+source-wordcount: '3548'
+ht-degree: 6%
 
 ---
 
@@ -41,39 +44,39 @@ AEM Sites présente un certain nombre de fonctionnalités conçues pour accélé
 
 ### Expériences fluides
 
-aem continue d&#39;adopter les Expériences Fluid avec des outils nouveaux et améliorés qui facilitent l&#39;utilisation de contenu en dehors de l&#39;AEM.
+AEM continue d&#39;adopter les Expériences Fluid avec des outils nouveaux et améliorés qui facilitent l&#39;utilisation de contenu en dehors de l&#39;AEM.
 
 + **Les** fragments de contenu prennent en charge la comparaison de versions/différences et les annotations.
-+ **aem Assets HTTP** APIprend en charge l’exposition de  **fragments de** contenu directement dans la gestion des actifs numériques en tant que  **JSON**.
++ **AEM Assets HTTP** APIprend en charge l’exposition de  **fragments de** contenu directement dans la gestion des actifs numériques en tant que  **JSON**.
    **Les** fragments d’expérience prennent en charge  **la** non-validation du cache du répartiteur  **d’AEM de recherche** complète pour référencer  **les pages**.
 
 ### Gestion des ressources
 
-AEM Assets continue de tirer parti de ses nombreuses capacités de gestion des actifs pour améliorer l&#39;utilisation, la gestion et la compréhension de la gestion des actifs numériques. aem 6.5 continue d&#39;améliorer l&#39;intégration entre Adobe Creative Cloud et les workflows créatifs.
+AEM Assets continue de tirer parti de ses nombreuses capacités de gestion des actifs pour améliorer l&#39;utilisation, la gestion et la compréhension de la gestion des actifs numériques. AEM 6.5 continue d&#39;améliorer l&#39;intégration entre Adobe Creative Cloud et les workflows créatifs.
 
 + **Adobe Asset** Linkconnecte directement les créatifs à AEM Assets à partir des outils Adobe Creative Cloud.
 + **Adobe** Stockintegration permet un accès direct aux images Adobe Stock directement à partir de l’expérience AEM Assets, ce qui crée une expérience de découverte de contenu transparente.
-+ **aem Desktop** Apprelease la version 2.0 et se réinvente tout en améliorant les performances et la stabilité.
++ **AEM Desktop** Apprelease la version 2.0 et se réinvente tout en améliorant les performances et la stabilité.
 + **Les** ressources connectées prennent en charge les instances AEM Sites discrètes pour accéder et utiliser facilement les ressources d’une autre instance AEM Assets.
 + Mise à jour de la prise en charge des vidéos dans **Dynamic Media**, y compris **360 Video** et **Miniatures vidéo personnalisées**.
 
 ### Intelligence du contenu
 
-aem continue de construire son intégration avec des technologies intelligentes, en exploitant l&#39;apprentissage automatique et l&#39;intelligence artificielle pour améliorer toutes les expériences.
+AEM continue de construire son intégration avec des technologies intelligentes, en exploitant l&#39;apprentissage automatique et l&#39;intelligence artificielle pour améliorer toutes les expériences.
 
 + **Adobe Asset** Linkajoute la recherche **de similarité visuelle, ce qui permet de découvrir et d’utiliser facilement des images similaires dans les outils**  **** Adobe Creative Cloud.
 
 ### Intégrations
 
-aem est plus à même de s&#39;intégrer à d&#39;autres services d&#39;Adobe :
+AEM est plus à même de s&#39;intégrer à d&#39;autres services d&#39;Adobe :
 
-+ **Les** fragments d’expérience approfondissent leur intégration avec le  **ciblage d’** Adobe en prenant en charge  **l’exportation en tant que** JSON vers Adobe Target et la possibilité de  **supprimer les** offres basées sur le fragment d’expérience de Adobe Target.****
++ **Les** fragments d’expérience approfondissent leur intégration avec le  **ciblage d’** Adobe en prenant en charge  **l’exportation en tant que** JSON vers Adobe Target et en permettant de  **supprimer les** offres basées sur le fragment d’expérience de Adobe Target.****
 
 ### AMS Cloud Manager
 
 [Cloud Manager](https://adobe.ly/2HODmsv), réservé aux clients Adobe Managed Services (AMS), offre les fonctionnalités suivantes :
 
-+ Cloud Manager prend en charge l’extension de la prise en charge AEM déploiement de AEM Sites à **AEM Assets**, y compris **les tests de performances automatisés du traitement des ressources**.
++ Cloud Manager prend en charge l’extension de la prise en charge du déploiement AEM d’AEM Sites à **AEM Assets**, y compris **les tests de performances automatisés du traitement des ressources**.
 + **L’** évolutivité automatique du niveau de publication AEM à des seuils prédéfinis garantit une expérience optimale pour l’utilisateur final.
 + **Les** pipelines hors production permettent aux équipes de développement de tirer parti de Cloud Manager pour contrôler en permanence la qualité du code et les déployer vers des environnements inférieurs (développement et contrôle qualité).
 + **API de pipeline CI/CD** permet aux clients d’échanger par programmation avec Cloud Manager, ce qui renforce les possibilités d’intégration avec l’infrastructure de développement sur site.
@@ -147,7 +150,7 @@ Vous trouverez ci-dessous une matrice des principales caractéristiques des fond
             <td><sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">Nettoyage</a> de la révision en ligne : </strong>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/revision-cleanup.html" target="_blank">Nettoyage</a> de la révision en ligne : </strong>
                 effectuez la maintenance du référentiel sans temps d’inactivité du serveur.</td>
             <td> </td>
             <td> </td>
@@ -308,7 +311,7 @@ Vous trouverez ci-dessous une matrice des principaux dispositifs de sécurité o
         <td>►</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">Key Store </a></strong>
+        <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank">Key Store </a></strong>
             <br> ManagementTrust Store global, certificats et clés tous gérés dans le référentiel.</td>
         <td></td>
         <td>►</td>
@@ -492,7 +495,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités des sites
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/spa-overview.html" target="_blank">SPA Éditeur</a> : </strong>
-            créez des expériences Web autorisables et adaptables à l’aide de structures d’application à page unique (SPA) créées sur React ou Angular.</td>
+            créez des expériences Web autorisables et adaptables à l’aide de structures d’application sur une seule page (SPA) basées sur Réaction ou Angular.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -502,7 +505,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités des sites
             <td><sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/release-notes/style-system-fp.html" target="_blank">Système</a> de style : </strong>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/style-system-fp.html" target="_blank">Système</a> de style : </strong>
             augmentez la réutilisation du composant AEM en définissant leur apparence visuelle à l’aide du système de style contextuel.</td>
             <td> </td>
             <td> </td>
@@ -513,7 +516,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités des sites
             <td>►</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">Gestionnaire multisite (MSM)</a> : </strong>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/msm.html" target="_blank">Gestionnaire multisite (MSM)</a> : </strong>
             gérez plusieurs sites Web qui partagent du contenu commun (par exemple, plusieurs marques multilingues).</td>
             <td>►</td>
             <td>►</td>
@@ -838,7 +841,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités d&#39;Act
             <td>►</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html" target="_blank">aem application</a> pour ordinateur de bureau : </strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr" target="_blank">AEM application</a> pour ordinateur de bureau : </strong>
             synchronisez les ressources sur le bureau local pour les modifier avec les produits Creative Suite.
             </td>
             <td> </td>
@@ -952,7 +955,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités d&#39;Act
             <td>►</td>
         </tr>
         <tr>
-            <td><strong><a href="https://docs.adobe.com/docs/en/aem/6-5/administer/content/dynamic-media/viewer-presets.html" target="_blank">Visionneuses</a> : lecteurs de médias enrichis </strong>
+            <td><strong><a href="https://docs.adobe.com/docs/fr-FR/aem/6-5/administer/content/dynamic-media/viewer-presets.html" target="_blank">Visionneuses</a> : lecteurs de médias enrichis </strong>
             personnalisés et paramètres prédéfinis avec prise en charge de différents écrans/périphériques.</td>
             <td> </td>
             <td>►</td>
@@ -1197,7 +1200,7 @@ Vous trouverez ci-dessous une matrice des principales fonctions d&#39;Ajoute de 
     <thead>
         <tr>
             <td> </td>
-            <td>Communities Fonctionnalité</td>
+            <td>Fonction Communautés</td>
             <td>6,0</td>
             <td>6.1</td>
             <td>6,2</td>
