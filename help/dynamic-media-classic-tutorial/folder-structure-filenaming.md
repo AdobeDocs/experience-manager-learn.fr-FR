@@ -2,15 +2,18 @@
 title: Détermination de la structure de dossiers et de la convention d’attribution de noms de fichiers
 description: Le nommage de fichiers est peut-être la décision la plus importante que vous prendrez lors de l’implémentation de Dynamic Media Classic. La structure des dossiers est également importante. Découvrez pourquoi il s'agit d'approches si importantes et possibles pour la structure de dossiers et les noms de fichiers.
 sub-product: dynamic-media
-feature: null
+feature: Dynamic Media Classic
 doc-type: tutorial
 activity: develop
 topics: development, authoring, configuring, architecture
 audience: all
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: e7a02900b0582fe9b329e5f9bd568f3c54d8d63d
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
