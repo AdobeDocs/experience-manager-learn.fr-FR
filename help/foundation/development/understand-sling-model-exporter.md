@@ -3,15 +3,18 @@ title: Comprendre l'exportateur de modèles Sling en AEM
 description: Apache Sling Models 1.3.0 présente Sling Model Exporter, un moyen élégant d’exporter ou de sérialiser des objets Sling Model dans des abstractions personnalisées. Cet article juxtapose le cas d’utilisation traditionnel de l’utilisation de modèles Sling pour renseigner des scripts HTL, en exploitant la structure Sling Model Exporter pour sérialiser un modèle Sling dans JSON.
 version: 6.3, 6.4, 6.5
 sub-product: fondation, content-services
-feature: sling-models, sling-model-exporter
+feature: les API ;
 topics: development, content-delivery, headless
 activity: understand
 audience: developer, architect
 doc-type: article
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 63295cbc353a796959ba2e98e3e21c188f596372
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '575'
 ht-degree: 1%
 
 ---
@@ -61,7 +64,7 @@ La sérialisation directe de [!DNL Sling Models] leur permet de traiter à la fo
 
 1. Sling résout le `sling:resourceType` de la ressource demandée, le sélecteur et l’extension en un servlet Sling Exporter généré de manière dynamique, qui est mappé à [!DNL Sling Model] avec Exporter.
 1. Le servlet Sling Exporter résolu appelle l&#39;[!DNL Sling Model Exporter] par rapport à l&#39;objet [!DNL Sling Model] adapté de la demande ou de la ressource (tel que déterminé par les tables adaptables Sling Models).
-1. L’exportateur sérialise l’[!DNL Sling Model] en fonction des annotations de modèle Sling propres à l’exportateur et renvoie le résultat au servlet Exporter Sling.
+1. L’exportateur sérialise l’[!DNL Sling Model] en fonction des annotations de modèle Sling propres à l’exportateur et renvoie le résultat au servlet Sling Exporter.
 1. Le servlet Sling Exporter renvoie le rendu JSON de [!DNL Sling Model] dans la réponse HTTP.
 
 >[!NOTE]
