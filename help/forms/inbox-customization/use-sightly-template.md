@@ -1,21 +1,18 @@
 ---
 title: Personnalisation de la boîte de réception
 description: Ajouter des colonnes personnalisées pour afficher des données supplémentaires du flux de travail à l’aide d’un modèle proche
-feature: Formulaires adaptatifs
+feature: formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
-topic: Développement
-role: Développeur
-level: Expérience
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 9%
+source-wordcount: '292'
+ht-degree: 8%
 
 ---
 
