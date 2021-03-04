@@ -2,18 +2,16 @@
 title: Utiliser le nettoyage de révision en ligne
 description: 'Une brève introduction au nettoyage de la révision en ligne. Nettoyage de la révision en ligne réduit le besoin de nettoyage fréquent de la révision hors ligne. '
 version: 6.3, 6.4, 6.5
+feature: chêne, compactage
 topics: operations, authoring, performance
 activity: use
 audience: administrator, architect, implementer
 doc-type: technical video
-topic: Administration
-role: Administrator
-level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 2%
+source-wordcount: '76'
+ht-degree: 0%
 
 ---
 
