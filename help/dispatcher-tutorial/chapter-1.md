@@ -1,10 +1,12 @@
 ---
 title: Chapitre 1 - Configuration et téléchargements de didacticiels
+seo-title: Prise en main de AEM Content Services - Chapitre 1 - Configuration des didacticiels
 description: Chapitre 1 du didacticiel AEM sans titre sur la configuration de la ligne de base pour l’instance AEM pour le didacticiel.
+seo-description: Chapitre 1 du didacticiel AEM sans titre sur la configuration de la ligne de base pour l’instance AEM pour le didacticiel.
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '17476'
+source-wordcount: '17502'
 ht-degree: 0%
 
 ---
