@@ -2,15 +2,18 @@
 title: Présentation vidéo
 description: Dynamic Media Classic est fourni avec la conversion automatique de la vidéo au téléchargement, la diffusion de la vidéo en flux continu sur les ordinateurs de bureau et les périphériques mobiles, ainsi que des visionneuses de vidéos adaptatives optimisées pour la lecture en fonction du périphérique et de la bande passante. Pour en savoir plus sur la vidéo dans Dynamic Media Classic et obtenir un guide de base sur les concepts et la terminologie de la vidéo. Apprenez ensuite à télécharger et coder des vidéos, à choisir des paramètres vidéo prédéfinis pour le téléchargement, l’ajout ou la modification d’un paramètre vidéo prédéfini, à prévisualisation des vidéos dans une visionneuse de vidéos, à déployer des vidéos sur des sites Web et mobiles, à ajouter des légendes et des marques de chapitre à la vidéo et à publier des visionneuses de vidéos pour les utilisateurs mobiles et de bureau.
 sub-product: dynamic-media
-feature: Viewer Presets
+feature: Dynamic Media Classic, Profils vidéo, paramètres prédéfinis de la visionneuse
 doc-type: tutorial
 topics: development, authoring, configuring, videos, video-profiles
 audience: all
 activity: use
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '6222'
+source-wordcount: '6234'
 ht-degree: 1%
 
 ---
@@ -125,7 +128,7 @@ Avant de commencer, discutons de certains termes que vous devez connaître pour 
 - **Vitesse d’image (images par seconde ou images par seconde).** Nombre d’images, ou d’images fixes, pour chaque seconde de vidéo. Habituellement, la télévision nord-américaine (NTSC) est diffusée en 29,97 i/s; La télévision européenne et asiatique (PAL) est diffusée en 25 FPS ; et les films (analogiques et numériques) sont généralement en 24 (23,976) i/s.
 
    - Pour rendre les choses plus déroutantes, il y a aussi des cadres progressifs et entrelacés. Chaque cadre progressif contient un cadre d’image entier, tandis que les cadres entrelacés contiennent toutes les deux rangées de pixels d’un cadre d’image. Les images sont ensuite lues très rapidement et semblent se fondre ensemble. Le film utilise une méthode de balayage progressif, tandis que la vidéo numérique est généralement entrelacée.
-   - En général, peu importe que le métrage source soit entrelacé ou non — Dynamic Media Classic conserve la méthode d’analyse dans la vidéo convertie.
+   - En général, peu importe que votre métrage source soit entrelacé ou non — Dynamic Media Classic conserve la méthode d’analyse dans la vidéo convertie.
    - Diffusion de diffusion en continu/progressive. La diffusion vidéo en flux continu est l’envoi de médias dans un flux continu qui peut être lu à mesure qu’il arrive, tandis que la vidéo progressivement téléchargée est téléchargée comme tout autre fichier d’un serveur et mise en cache localement dans votre navigateur.
 
 Avec un peu de chance, ce livret vous aide à comprendre les différentes options impliquées dans l&#39;utilisation de la vidéo Dynamic Media Classic.
@@ -136,7 +139,7 @@ Lorsque vous travaillez avec des vidéos dans Dynamic Media Classic, vous suivez
 
 ![image](assets/video-overview/video-overview-2.png)
 
-1. Début en téléchargeant des fichiers vidéo vers Dynamic Media Classic. Pour ce faire, ouvrez le **menu Outils** au bas du panneau d’extension Dynamic Media Classic, puis choisissez **Télécharger vers Dynamic Media Classic > Fichiers sous le nom de dossier** ou **Télécharger vers Dynamic Media Classic > Dossiers sous le nom de dossier**. &quot;Nom de dossier&quot; correspond au dossier sur lequel vous naviguez actuellement avec l’extension. Les fichiers vidéo peuvent être volumineux. Nous vous recommandons donc d’utiliser le protocole FTP pour télécharger des fichiers volumineux. Dans le cadre du téléchargement, choisissez un ou plusieurs paramètres vidéo prédéfinis pour le codage de vos vidéos. La vidéo peut être transcodée en vidéo MP4 au moment du téléchargement. Pour plus d’informations sur l’utilisation et la création de paramètres prédéfinis de codage, voir la rubrique Paramètres vidéo prédéfinis ci-dessous. Découvrez [Téléchargement et codage de vidéos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html).
+1. Début en téléchargeant des fichiers vidéo vers Dynamic Media Classic. Pour ce faire, ouvrez le **menu Outils** au bas du panneau d’extension Dynamic Media Classic, puis choisissez **Télécharger vers Dynamic Media Classic > Fichiers sous le nom de dossier** ou **Télécharger vers Dynamic Media Classic > Dossiers sous le nom de dossier**. &quot;Nom du dossier&quot; correspond au dossier sur lequel vous naviguez actuellement avec l’extension. Les fichiers vidéo peuvent être volumineux. Nous vous recommandons donc d’utiliser le protocole FTP pour télécharger des fichiers volumineux. Dans le cadre du téléchargement, choisissez un ou plusieurs paramètres vidéo prédéfinis pour le codage de vos vidéos. La vidéo peut être transcodée en vidéo MP4 au moment du téléchargement. Pour plus d’informations sur l’utilisation et la création de paramètres prédéfinis de codage, voir la rubrique Paramètres vidéo prédéfinis ci-dessous. Découvrez [Téléchargement et codage de vidéos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html).
 2. Sélectionnez ou sélectionnez et modifiez un paramètre prédéfini de visionneuse de vidéos et prévisualisation votre vidéo. Vous pouvez choisir un paramètre prédéfini de visionneuse prédéfini prédéfini ou personnaliser le vôtre. Si vous ciblez les utilisateurs de mobiles, vous n’avez rien à faire ici car les plateformes mobiles ne nécessitent pas de visionneuse ou de paramètre prédéfini. En savoir plus sur [la prévisualisation de vidéos dans une visionneuse de vidéos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html) et [l’Ajoute ou la modification d’un paramètre prédéfini de visionneuse de vidéos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html#adding-or-editing-a-video-viewer-preset).
 3. Exécutez une publication de vidéo, obtenez l’URL et intégrez-la. La principale différence entre cette étape du processus vidéo et celle de l’image réside dans le fait que vous exécuterez une publication vidéo spéciale au lieu (ou peut-être aussi) de la publication Image Serving standard. L’intégration de la visionneuse de vidéos sur le bureau fonctionne exactement comme l’intégration de la visionneuse d’images. Cependant, pour les périphériques mobiles, elle est encore plus simple — tout ce dont vous avez besoin est l’URL de la vidéo elle-même.
 
@@ -207,7 +210,7 @@ Les paramètres vidéo prédéfinis déterminent le mode de codage de la vidéo 
 
 ### Détermination du débit de données ou du débit de la vidéo
 
-Le calcul du débit binaire de la vidéo est l’un des facteurs les moins compris pour la diffusion de la vidéo sur le Web, mais potentiellement le plus important, car il a un impact direct sur l’expérience utilisateur. Si vous définissez un débit binaire trop élevé, la qualité vidéo sera élevée, mais les performances seront médiocres. Les utilisateurs ayant une connexion Internet plus lente seront contraints d&#39;attendre que la vidéo s&#39;interrompe constamment au fur et à mesure de sa lecture. Cependant, si vous le définissez trop bas, la qualité en pâtira. Dans le paramètre vidéo prédéfini, Dynamic Media Classic propose une gamme de données en fonction de la bande passante de votre cible. C&#39;est un bon endroit pour début.
+Le calcul du débit binaire de votre vidéo est l’un des facteurs les moins compris pour la diffusion de vidéo sur le Web, mais potentiellement le plus important, car il a un impact direct sur l’expérience utilisateur. Si vous définissez un débit binaire trop élevé, la qualité vidéo sera élevée, mais les performances seront médiocres. Les utilisateurs ayant une connexion Internet plus lente seront contraints d&#39;attendre que la vidéo s&#39;interrompe constamment au fur et à mesure de sa lecture. Cependant, si vous le définissez trop bas, la qualité en pâtira. Dans le paramètre vidéo prédéfini, Dynamic Media Classic propose une gamme de données en fonction de la bande passante de votre cible. C&#39;est un bon endroit pour début.
 
 Cependant, si vous voulez le comprendre vous-même, vous aurez besoin d&#39;une calculatrice de débit binaire. Il s&#39;agit d&#39;un outil couramment utilisé par les professionnels de la vidéo et les passionnés pour estimer la quantité de données à inclure dans un flux ou un morceau de média donné (tel qu&#39;un DVD).
 
