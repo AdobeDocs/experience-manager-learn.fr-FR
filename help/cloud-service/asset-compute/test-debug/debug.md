@@ -1,7 +1,7 @@
 ---
 title: Débogage d’un intervenant d’Asset compute
 description: Les travailleurs d'Asset compute peuvent être débogués de plusieurs manières, des instructions simples du journal de débogage, au code VS joint en tant que débogueur distant, à l'extraction des journaux pour les activations dans Adobe I/O Runtime initiée à partir d'AEM en tant que Cloud Service.
-feature: asset-compute
+feature: Microservices Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
+topic: Intégrations, développement
+role: Développeur
+level: Intermédiaire, expérimenté
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -91,7 +94,7 @@ _Clic publicitaire du débogage d’un intervenant d’Asset compute à l’aide
 
 ## Accès aux journaux à partir de Adobe I/O Runtime{#aio-app-logs}
 
-[L&#39;AEM en tant que Cloud Service mobilise les travailleurs d&#39;Asset compute via les ](../deploy/processing-profiles.md) profils de traitement en les appelant directement dans Adobe I/O Runtime. Comme ces invocations n&#39;impliquent pas le développement local, leurs exécutions ne peuvent pas être déboguées à l&#39;aide d&#39;outils locaux tels que Asset compute Development Tool ou wskdebug. A la place, l’interface de ligne de commande Adobe I/O peut être utilisée pour récupérer les journaux du collaborateur exécuté dans un espace de travail particulier de Adobe I/O Runtime.
+[L&#39;AEM en tant que Cloud Service mobilise les travailleurs d&#39;Asset compute via les ](../deploy/processing-profiles.md) profils de traitement en les appelant directement dans Adobe I/O Runtime. Comme ces invocations n&#39;impliquent pas le développement local, leurs exécutions ne peuvent pas être déboguées à l&#39;aide d&#39;outils locaux tels que Asset compute Development Tool ou wskdebug. A la place, l’interface de ligne de commande de l’Adobe I/O peut être utilisée pour récupérer les journaux du collaborateur exécuté dans un espace de travail particulier de Adobe I/O Runtime.
 
 1. Assurez-vous que les [variables d&#39;environnement propres à l&#39;espace de travail](../deploy/runtime.md) sont définies via `AIO_runtime_namespace` et `AIO_runtime_auth`, en fonction de l&#39;espace de travail nécessitant un débogage.
 1. Dans la ligne de commande, exécutez `aio app logs`
