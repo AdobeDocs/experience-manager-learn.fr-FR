@@ -3,18 +3,21 @@ title: Utilisation de modèles de page modifiables avec AEM Sites
 seo-title: Utilisation de modèles de page modifiables avec Adobe Experience Manager Sites
 description: Les modèles modifiables permettent aux auteurs spécialisés de créer et de mettre à jour des modèles de page et de gérer des configurations de stratégie avancées avec AEM Sites.
 seo-description: Les modèles modifiables permettent aux auteurs spécialisés de créer et de mettre à jour des modèles de page et de gérer des configurations de stratégie avancées avec Adobe Experience Manager Sites.
-feature: template-editor
+feature: Modèles modifiables
 topics: authoring
 audience: all
 doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 kt: 193
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 41e2c27cd089e7111b2eb1ef6c344d27980f0741
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 11%
+source-wordcount: '259'
+ht-degree: 13%
 
 ---
 
