@@ -4,20 +4,17 @@ seo-title: Développement avec des utilisateurs de services dans AEM Forms
 description: Cet article vous guide tout au long du processus de création d’un utilisateur de service en AEM Forms.
 seo-description: Cet article vous guide tout au long du processus de création d’un utilisateur de service en AEM Forms.
 uuid: 996f30df-3fc5-4232-a104-b92e1bee4713
-feature: Formulaires adaptatifs
+feature: formulaires adaptatifs
 topics: development,administration
 audience: implementer,developer
 doc-type: article
 activity: setup
 discoiquuid: 65bd4695-e110-48ba-80ec-2d36bc53ead2
-topic: Développement
-role: Développeur
-level: Expérience
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 3%
+source-wordcount: '447'
+ht-degree: 2%
 
 ---
 
