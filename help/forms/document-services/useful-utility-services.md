@@ -1,17 +1,20 @@
 ---
 title: Services utilitaires utiles
 description: Quelques services utiles pour les développeurs AEM Forms
-feature: document-services
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Développement
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 243e26e2403e3d7816a0dd024ffbe73743827c7c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 2%
+source-wordcount: '160'
+ht-degree: 5%
 
 ---
 
