@@ -2,18 +2,17 @@
 title: Versions des fichiers et commentaires
 description: 'A l’aide du panneau Lien de ressources d’Adobe, vous pouvez accéder aux détails des fichiers dans AEM Assets, par exemple les miniatures, les métadonnées de base et les versions du panneau. Découvrez comment créer, prévisualisation et comparer des versions de fichiers.  '
 sub-product: ressources
-feature: adobe-asset-link
-topics: authoring, collaboration, operations, sharing, metadata, images, operations
-audience: all
-doc-type: feature video
-activity: use
-version: null
+feature: Adobe Asset Link
+version: 6.4, 6.5, cloud-service
 thumbnail: 34048.jpg
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 1%
+source-wordcount: '89'
+ht-degree: 6%
 
 ---
 
