@@ -3,7 +3,7 @@ title: Présentation des propriétés de la page en AEM Sites
 seo-title: Présentation des propriétés de la page en Adobe Experience Manager Sites
 description: La vidéo suivante présente les métadonnées des propriétés de page associées à une page dans Adobe Experience Manager.
 seo-description: 'La vidéo suivante présente les métadonnées des propriétés de page associées à une page dans Adobe Experience Manager. '
-feature: page-editor
+feature: Éditeur de page
 topics: authoring, metadata
 audience: author, marketer
 doc-type: feature video
@@ -11,10 +11,13 @@ activity: understand
 version: 6.3, 6.4, 6.5
 kt: 4321
 thumbnail: 32192.jpg
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '177'
 ht-degree: 40%
 
 ---
@@ -30,7 +33,7 @@ Dans cette vidéo, les éléments de propriété de page suivants sont traités 
 
 * De base
    * Titre et balises
-      * Title (Titre)
+      * Titre
       * Balises
       * Masquer dans la navigation
    * Autres titres et descriptions
@@ -53,7 +56,7 @@ Dans cette vidéo, les éléments de propriété de page suivants sont traités 
 * Miniature 
 * Partage sur les réseaux sociaux
 * Configuration de Cloud Services
-* Personnalisation 
+* Personnalisation
    * Configurations ContextHub
    * Configuration du ciblage
 * Autorisations
