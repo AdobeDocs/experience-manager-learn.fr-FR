@@ -1,19 +1,14 @@
 ---
 title: Utilisation de la traduction de fichiers source avec AEM Assets
-seo-title: Utilisation de la traduction de fichiers source avec AEM Assets
 description: Les ressources Adobe Experience Manager (AEM) vous permettent d’identifier les ressources qui partagent des attributs communs et de les marquer comme liées à l’aide de la nouvelle fonction Ressources connexes. Il permet également aux utilisateurs de définir une relation source/dérivée entre les ressources, ce qui permet aux utilisateurs d’identifier facilement l’origine d’une ressource. L’exécution du processus de traduction sur une ressource dérivée récupère toute ressource référencée par le fichier source et l’inclut pour la traduction, réduisant ainsi les efforts de maintenance de plusieurs sites.
-seo-description: Les ressources Adobe Experience Manager (AEM) vous permettent d’identifier les ressources qui partagent des attributs communs et de les marquer comme liées à l’aide de la nouvelle fonction Ressources connexes. Il permet également aux utilisateurs de définir une relation source/dérivée entre les ressources, ce qui permet aux utilisateurs d’identifier facilement l’origine d’une ressource. L’exécution du processus de traduction sur une ressource dérivée récupère toute ressource référencée par le fichier source et l’inclut pour la traduction, réduisant ainsi les efforts de maintenance de plusieurs sites.
-uuid: 58f70535-909b-464a-b265-ddddb8ab2908
-discoiquuid: a50eb7f2-744b-46ea-8daf-212d833a0333
-topics: authoring, search, metadata, localization
-audience: all
-doc-type: feature video
-activity: use
 version: 6.3, 6.4, 6.5
+topic: Gestion de contenu
+role: Professionnel
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '290'
 ht-degree: 0%
 
 ---
