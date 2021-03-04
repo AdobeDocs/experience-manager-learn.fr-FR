@@ -3,19 +3,16 @@ title: Ajouter des éléments au composant de groupe de choix
 seo-title: Ajouter des éléments au composant de groupe de choix
 description: Ajouter dynamiquement les éléments au composant de groupe de choix
 seo-description: Ajouter dynamiquement les éléments au composant de groupe de choix
-feature: Formulaires adaptatifs
+feature: formulaires adaptatifs
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
-topic: Développement
-role: Professionnel
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '528'
 ht-degree: 3%
 
 ---
