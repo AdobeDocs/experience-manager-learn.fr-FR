@@ -2,16 +2,19 @@
 title: Développement de projets dans AEM
 description: Didacticiel de développement illustrant comment se développer pour AEM projets.  Dans ce didacticiel, nous allons créer un modèle de projet personnalisé qui peut être utilisé pour créer de nouveaux projets dans AEM pour la gestion des workflows et tâches de création de contenu.
 version: 6.3, 6.4, 6.5
-feature: projects, workflow
+feature: '"Projets, processus"'
 topics: collaboration, development, governance
 activity: develop
 audience: developer, implementer, administrator
 doc-type: tutorial
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '4649'
-ht-degree: 0%
+source-wordcount: '4654'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +31,7 @@ Il s&#39;agit d&#39;un didacticiel de développement qui illustre comment se dé
 
 [[!DNL AEM Projects]](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html) est une fonction d’AEM conçue pour faciliter la gestion et le regroupement de tous les workflows et tâches associés à la création de contenu dans le cadre d’une implémentation AEM Sites ou Assets.
 
-aem Projects est fourni avec plusieurs [modèles de projet OOTB](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTemplates). Lors de la création d’un projet, les auteurs peuvent choisir parmi ces modèles disponibles. Les grandes implémentations AEM répondant à des besoins spécifiques de l&#39;entreprise voudront créer des modèles Project personnalisés, adaptés à leurs besoins. En créant un modèle de projet personnalisé, les développeurs peuvent configurer le tableau de bord du projet, se connecter à des workflows personnalisés et créer des rôles professionnels supplémentaires pour un projet. Nous allons examiner la structure d&#39;un modèle de projet et en créer un exemple.
+AEM Projects est fourni avec plusieurs [modèles de projet OOTB](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTemplates). Lors de la création d’un projet, les auteurs peuvent choisir parmi ces modèles disponibles. Les grandes implémentations AEM répondant à des besoins spécifiques de l&#39;entreprise voudront créer des modèles Project personnalisés, adaptés à leurs besoins. En créant un modèle de projet personnalisé, les développeurs peuvent configurer le tableau de bord du projet, se connecter à des workflows personnalisés et créer des rôles professionnels supplémentaires pour un projet. Nous allons examiner la structure d&#39;un modèle de projet et en créer un exemple.
 
 ![Carte de projet personnalisée](./assets/develop-aem-projects/custom-project-card.png)
 
@@ -39,7 +42,7 @@ Ce didacticiel passe en revue le code nécessaire pour créer un modèle de proj
 * [Package de didacticiel terminé](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Référentiel de code complet sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Ce didacticiel suppose des connaissances de base sur les [pratiques de développement AEM](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/the-basics.html) et une certaine familiarité avec la [configuration du projet AEM Maven](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Tout le code mentionné est destiné à être utilisé comme référence et ne doit être déployé que sur une instance [AEM de développement local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
+Ce didacticiel suppose des connaissances de base sur les [pratiques de développement AEM](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/the-basics.html) et une certaine familiarité avec la [configuration du projet AEM Maven](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Tout le code mentionné est destiné à être utilisé comme référence et ne doit être déployé que sur une instance [AEM de développement local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
 
 ## Structure d’un modèle de projet
 
@@ -264,7 +267,7 @@ Nous pouvons maintenant tester notre modèle de projet en créant un nouveau pro
 
 ## Pourquoi un flux de travail ?
 
-Les workflows traditionnellement AEM qui se concentrent autour d’un processus d’approbation ont utilisé les étapes du processus des participants. aem boîte de réception contient des informations détaillées sur les Tâches et les processus et une intégration améliorée avec AEM Projects. Grâce à ces fonctionnalités, l’utilisation du processus de création de Tâche de projets constitue une option plus attrayante.
+Les workflows traditionnellement AEM qui se concentrent autour d’un processus d’approbation ont utilisé les étapes du processus des participants. AEM boîte de réception contient des informations détaillées sur les Tâches et les processus et une intégration améliorée avec AEM Projects. Grâce à ces fonctionnalités, l’utilisation du processus de création de Tâche de projets constitue une option plus attrayante.
 
 ### Pourquoi les Tâches ?
 
@@ -512,7 +515,7 @@ task.setCurrentAssignee(projectApproverGrp);
        "Send Back for Revision"
    ```
 
-   Dans la mesure où il s’agit de l’itinéraire d’approbation précipitée, la priorité de la tâche est définie sur Élevée. En outre, nous ne donnons au groupe Approbateurs qu&#39;un seul jour pour terminer la tâche. Le destinataire n’est pas renseigné dans l’onglet Tâche, car nous l’affecterons de manière dynamique dans l’onglet Paramètres avancés.
+   Dans la mesure où il s’agit de l’itinéraire d’approbation rapide, la priorité de la tâche est définie sur Élevée. En outre, nous ne donnons au groupe Approbateurs qu&#39;un seul jour pour terminer la tâche. Le destinataire n’est pas renseigné dans l’onglet Tâche, car nous l’affecterons de manière dynamique dans l’onglet Paramètres avancés.
 
    Nous pouvons réutiliser le même extrait de script que l’étape 7 pour remplir la zone de texte **Script** sur l’onglet ** Paramètres avancés **. Copier+Coller le code ci-dessous :
 
@@ -522,7 +525,7 @@ task.setCurrentAssignee(projectApproverGrp);
    task.setCurrentAssignee(projectApproverGrp);
    ```
 
-1. Faites glisser un composant** No Operation** vers la branche d&#39;extrême droite (branche 3). Le composant Aucune opération n’effectue aucune action et progresse immédiatement, ce qui représente le désir de l’éditeur d’origine de contourner l’étape d’approbation. Techniquement, nous pourrions quitter cette branche sans aucune étape de flux de travail, mais en règle générale, nous ajouterons une étape Aucune opération. Cela permet aux autres développeurs de déterminer clairement l&#39;objectif de la branche 3.
+1. Faites glisser un composant** No Operation** vers la branche d&#39;extrême droite (branche 3). Le composant Aucune opération n’exécute aucune action et progresse immédiatement, ce qui représente le désir de l’éditeur d’origine de contourner l’étape d’approbation. Techniquement, nous pourrions quitter cette branche sans aucune étape de flux de travail, mais en règle générale, nous ajouterons une étape Aucune opération. Cela permet aux autres développeurs de déterminer clairement l&#39;objectif de la branche 3.
 
    Doublon cliquez sur l’étape de flux de travaux et configurez le titre et la description :
 
