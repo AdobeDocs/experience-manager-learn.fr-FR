@@ -3,7 +3,7 @@ title: Prise en main de AEM Sites - Configuration du projet
 seo-title: Prise en main de AEM Sites - Configuration du projet
 description: Couvre la création d'un projet Maven Multi Module pour gérer le code et les configurations d'un site AEM.
 sub-product: sites
-feature: maven-archetype
+feature: Archétype de projet AEM
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -12,10 +12,13 @@ audience: developer
 mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
+topic: '"Gestion de contenu, développement"'
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1895'
 ht-degree: 6%
 
 ---
@@ -210,9 +213,9 @@ Consultez la [documentation de l&#39;archétype de projet ](https://docs.adobe.c
 
 ### Inclusion des composants de base {#core-components}
 
-[aem ](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) Composants principaux sont un ensemble de composants de Gestion de contenu Web normalisés (WCM) pour AEM. Ces composants fournissent un ensemble de base de fonctionnalités et sont conçus pour être mis en forme, personnalisés et étendus pour des projets individuels.
+[AEM ](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) Composants principaux sont un ensemble de composants de Gestion de contenu Web normalisés (WCM) pour AEM. Ces composants fournissent un ensemble de base de fonctionnalités et sont conçus pour être mis en forme, personnalisés et étendus pour des projets individuels.
 
-aem en tant qu&#39;environnements Cloud Service incluent la dernière version de [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html). Par conséquent, les projets générés pour l&#39;AEM en tant que Cloud Service ne **pas** incluent une intégration des AEM principaux composants.
+AEM en tant qu&#39;environnements Cloud Service incluent la dernière version de [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html). Par conséquent, les projets générés pour l&#39;AEM en tant que Cloud Service ne **pas** incluent une intégration des AEM principaux composants.
 
 Pour les projets générés AEM 6.5/6.4, l&#39;archétype incorpore automatiquement [AEM Composants principaux ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) dans le projet. AEM 6.5/6.4 recommande d’incorporer AEM composants principaux afin de garantir que la dernière version est déployée avec votre projet. Vous trouverez plus d&#39;informations sur la façon dont les composants principaux sont [inclus dans le projet ici](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/using.html#core-components).
 
