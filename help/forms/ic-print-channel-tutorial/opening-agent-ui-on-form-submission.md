@@ -4,7 +4,7 @@ seo-title: Ouverture de l'interface utilisateur de l'agent lors de l'envoi du PO
 description: Il s'agit de la partie 11 du didacticiel en plusieurs étapes pour créer votre premier document de communications interactives pour le canal d'impression. Dans cette partie, nous allons lancer l’interface utilisateur de l’agent pour créer une correspondance ad hoc lors de l’envoi du formulaire.
 seo-description: Il s'agit de la partie 11 du didacticiel en plusieurs étapes pour créer votre premier document de communications interactives pour le canal d'impression. Dans cette partie, nous allons lancer l’interface utilisateur de l’agent pour créer une correspondance ad hoc lors de l’envoi du formulaire.
 uuid: 96f34986-a5c3-400b-b51b-775da5d2cbd7
-feature: interactive-communication
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,11 +12,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6168
 thumbnail: 40122.jpg
+topic: Développement
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 824efde8d90dd77d41dce093998b4215db2532ae
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 2%
+source-wordcount: '369'
+ht-degree: 3%
 
 ---
 
@@ -62,7 +65,7 @@ Pour tester cette fonctionnalité sur votre serveur
 * [Importez et installez les actifs associés à cet article à l’aide du gestionnaire de packages.](assets/launch-agent-ui.zip)
 * [Connexion à configMgr](http://localhost:4502/system/console/configMgr)
 * Rechercher _Adobe Granite CSRF Filter_
-* Ajoutez _/content/getprintchannel_ dans les Chemins exclus.
+* Ajoutez _/content/getprintchannel_ dans les chemins exclus.
 * Enregistrez vos modifications.
 * [Ouvrez POST.jsp](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Assurez-vous que la chaîne transmise à FormFieldRequestParameter est un documentId valide.(Ligne 19).
 * [Ouvrez la page ](http://localhost:4502/content/OpenPrintChannel.html) Web, saisissez le numéro de compte et envoyez le formulaire.
