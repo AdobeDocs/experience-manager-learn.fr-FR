@@ -1,22 +1,19 @@
 ---
 title: Utilisation de l’application de bureau Dynamic Media Classic
-seo-title: Utilisation de l’application de bureau Dynamic Media Classic
 description: Adobe introduit une application de bureau pour les utilisateurs de Dynamic Media Classic qui ne repose plus sur la technologie de Flash d’Adobe dans le navigateur.
-seo-description: Adobe introduit une application de bureau pour les utilisateurs de Dynamic Media Classic qui ne repose plus sur la technologie de Flash d’Adobe dans le navigateur.
 sub-product: dynamic-media
-feature: desktop-application, classic
-topics: authoring, operations
-doc-type: feature-video
-audience: all
-activity: use
+feature: Dynamic Media Classic
 version: 6.5
 kt: 5808
 thumbnail: 36645.jpg
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 0%
+source-wordcount: '212'
+ht-degree: 1%
 
 ---
 
