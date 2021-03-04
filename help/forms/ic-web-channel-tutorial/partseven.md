@@ -4,18 +4,21 @@ seo-title: Ajouter du contenu de texte et d’image au document de canal Web
 description: 'Voici la partie 7 d''un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons ajouter des images et du contenu de texte au panneau d’en-tête. '
 seo-description: 'Voici la partie 7 d''un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons ajouter des images et du contenu de texte au panneau d’en-tête. '
 uuid: 440f8b74-3be7-4e58-a46e-4110065b7705
-feature: interactive-communication
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 3dd64e7d-3f13-4022-bb75-c9dc1884bc19
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 0%
+source-wordcount: '186'
+ht-degree: 2%
 
 ---
 
