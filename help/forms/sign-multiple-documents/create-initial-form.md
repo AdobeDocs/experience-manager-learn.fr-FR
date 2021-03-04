@@ -1,7 +1,7 @@
 ---
 title: Créer le formulaire initial pour déclencher le processus
 description: Créez un formulaire initial pour déclencher la notification par courrier électronique pour début du processus de signature.
-feature: formulaires adaptatifs
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6892
 thumbnail: 6892.jpg
+topic: Développement
+role: Professionnel
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 11%
+source-wordcount: '174'
+ht-degree: 13%
 
 ---
 
