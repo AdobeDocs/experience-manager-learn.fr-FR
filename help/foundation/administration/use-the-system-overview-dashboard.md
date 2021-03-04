@@ -2,19 +2,17 @@
 title: Utilisation du Tableau de bord Aperçu du système dans AEM
 description: Dans les versions précédentes, les administrateurs AEM devaient examiner plusieurs emplacements afin d’obtenir une image complète de l’instance AEM. L'Aperçu du système vise à résoudre ce problème en fournissant une vue de haut niveau de la configuration, du matériel et de l'état de l'instance AEM à partir d'un seul tableau de bord.
 version: 6.4, 6.5
+feature: null
 topics: administration, operations, monitoring
 activity: use
 audience: administrator, architect, developer, implementer
 doc-type: technical video
 contentOwner: dgordon
-topic: Administration
-role: Administrator
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 1%
+source-wordcount: '142'
+ht-degree: 0%
 
 ---
 
