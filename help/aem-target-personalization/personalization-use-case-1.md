@@ -3,10 +3,14 @@ title: Personnalisation à l’aide de fragments d’expérience AEM et d’Adob
 seo-title: Personnalisation à l’aide de fragments d’expérience Adobe Experience Manager (AEM) et Adobe Target
 description: Didacticiel de bout en bout montrant comment créer et diffuser une expérience personnalisée à l’aide de fragments d’expérience Adobe Experience Manager et de Adobe Target.
 seo-description: Didacticiel de bout en bout montrant comment créer et diffuser une expérience personnalisée à l’aide de fragments d’expérience Adobe Experience Manager et de Adobe Target.
+feature: Fragments d’expérience
+topic: Personnalisation
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1734'
 ht-degree: 1%
 
 ---
@@ -14,9 +18,9 @@ ht-degree: 1%
 
 # Personnalisation à l’aide de fragments d’expérience AEM et d’Adobe Target
 
-Grâce à la possibilité d’exporter des fragments d’expérience AEM dans Adobe Target en tant qu’offres HTML, vous pouvez combiner la facilité d’utilisation et la puissance de l’AEM avec de puissantes fonctionnalités d’intelligence automatisée (AI) et d’apprentissage automatique (ML) en Cible pour tester et personnaliser des expériences à grande échelle.
+Grâce à la possibilité d’exporter des fragments d’expérience AEM dans Adobe Target en tant qu’offres HTML, vous pouvez combiner la facilité d’utilisation et la puissance de l’AEM avec de puissantes fonctionnalités d’intelligence automatisée (IA) et d’apprentissage automatique (ML) en Cible pour tester et personnaliser des expériences à grande échelle.
 
-aem rassemble l’ensemble de vos contenus et ressources dans un emplacement central afin d’alimenter votre stratégie de personnalisation. aem vous permet de créer facilement du contenu pour les ordinateurs de bureau, les tablettes et les périphériques mobiles à un seul emplacement sans écrire de code. Il n’est pas nécessaire de créer des pages pour chaque périphérique : AEM ajuste automatiquement chaque expérience à l’aide de votre contenu.
+AEM rassemble l’ensemble de vos contenus et ressources dans un emplacement central afin d’alimenter votre stratégie de personnalisation. AEM vous permet de créer facilement du contenu pour les ordinateurs de bureau, les tablettes et les périphériques mobiles à un seul emplacement sans écrire de code. Il n’est pas nécessaire de créer des pages pour chaque périphérique : AEM ajuste automatiquement chaque expérience à l’aide de votre contenu.
 
 La cible vous permet de proposer des expériences personnalisées à l’échelle en fonction d’une combinaison d’approches d’apprentissage automatique basées sur des règles et basées sur l’IA qui intègrent des variables comportementales, contextuelles et hors ligne.  Grâce à la Cible, vous pouvez facilement configurer et exécuter des activités A/B et multivariées (MVT) afin de déterminer les meilleures offres, contenus et expériences.
 
@@ -36,7 +40,7 @@ Pour cet exercice, les utilisateurs suivants doivent être impliqués et pour ex
 ### Conditions préalables
 
 * **AEM**
-   * [aem créez et publiez ](./implementation.md#getting-aem) instancerunning sur localhost 4502 et 4503, respectivement.
+   * [AEM créez et publiez ](./implementation.md#getting-aem) instancerunning sur localhost 4502 et 4503, respectivement.
 * **Experience Cloud**
    * Accès à vos organisations Adobe Experience Cloud - <https://>`<yourcompany>`.experience encecloud.adobe.com
    * Experience Cloud doté des solutions suivantes
@@ -176,7 +180,7 @@ Pour cet exercice, les utilisateurs suivants doivent être impliqués et pour ex
 
 ### Contrôle qualité de l&#39;Activité cible
 
-1. Sous **Détails de l&#39;Activité > Aperçu**, cliquez sur le bouton **Contrôle qualité de l&#39;Activité** et vous pouvez obtenir le lien d&#39;assurance qualité direct vers toutes vos expériences.
+1. Sous l&#39;onglet **Détails de l&#39;Activité > Aperçu**, cliquez sur le bouton **Contrôle qualité de l&#39;Activité** et vous pouvez obtenir le lien d&#39;assurance qualité direct vers toutes vos expériences.
 
    ![Contrôle qualité des Activités](assets/personalization-use-case-1/activity-qa.png)
 
