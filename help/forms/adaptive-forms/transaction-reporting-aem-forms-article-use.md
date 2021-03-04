@@ -4,20 +4,17 @@ seo-title: Utilisation du Rapports de transactions dans AEM Forms
 description: Les rapports de transactions à AEM Forms vous permettent de conserver le décompte de toutes les transactions effectuées depuis une date spécifiée dans votre déploiement AEM Forms.
 seo-description: Les rapports de transactions à AEM Forms vous permettent de conserver le décompte de toutes les transactions effectuées depuis une date spécifiée dans votre déploiement AEM Forms.
 uuid: e6133f7e-c79c-4006-89e7-3bebf7b8229e
-feature: Formulaires adaptatifs
+feature: formulaires adaptatifs
 topics: developing
 audience: administrator
 doc-type: article
 activity: setup
 version: 6.4.1,6.5
 discoiquuid: 1abdf07a-b9f0-4c58-a1c6-08ae57db2014
-topic: Développement
-role: Développeur
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '399'
 ht-degree: 2%
 
 ---
