@@ -3,7 +3,7 @@ title: Créer des modèles de processus AEM Forms réutilisables.
 seo-title: Créer des modèles de processus AEM Forms réutilisables.
 description: modèles de processus indépendants de Forms adaptatif.
 seo-description: Modèles de processus indépendants de Forms adaptatif.
-feature: workflow
+feature: Workflow
 topics: development
 audience: developer
 doc-type: article
@@ -11,11 +11,14 @@ activity: setup
 version: 6.5
 uuid: 3a082743-3e56-42f4-a44b-24fa34165926
 discoiquuid: 9f18c314-39d1-4c82-b1bc-d905ea472451
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 3d54a8158d0564a3289a2100bbbc59e5ae38f175
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 0%
+source-wordcount: '294'
+ht-degree: 1%
 
 ---
 
