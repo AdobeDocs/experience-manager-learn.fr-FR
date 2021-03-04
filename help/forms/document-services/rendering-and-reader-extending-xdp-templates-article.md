@@ -9,12 +9,15 @@ audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-feature: forms-service
+feature: Service Forms
 discoiquuid: aefb4124-91a0-4548-94a3-86785ea04549
+topic: Développement
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -28,7 +31,7 @@ Par exemple, dans le portail de formulaires d’AEM Forms, lorsqu’un utilisate
 
 Pour tester cette fonctionnalité, vous pouvez essayer ce [lien](https://forms.enablementadobe.com/content/samples/samples.html?query=0). L’exemple de nom est &quot;Render XDP with RE&quot;.
 
-Pour ce faire, nous devons procéder comme suit.
+Pour ce cas d&#39;utilisation, nous devons procéder comme suit.
 
 * Ajoutez le certificat Reader Extensions à l’utilisateur &quot;fd-service&quot;. Les étapes permettant d’ajouter des informations d’identification d’extensions de Reader sont répertoriées [ici](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
 
