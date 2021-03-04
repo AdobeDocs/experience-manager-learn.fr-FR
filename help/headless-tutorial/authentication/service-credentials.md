@@ -4,15 +4,18 @@ description: Les informations d’identification du service AEM sont utilisées 
 version: cloud-service
 doc-type: tutorial
 topics: Development, Security
-feature: APIs
+feature: les API ;
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330519.jpg
+topic: '"Sans tête, intégrations"'
+role: Développeur
+level: '"Intermédiaire, expérimenté"'
 translation-type: tm+mt
-source-git-commit: 0b1150cd7ca32382cfaa880f9f956b55bfb65a33
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1830'
 ht-degree: 0%
 
 ---
@@ -20,11 +23,11 @@ ht-degree: 0%
 
 # Informations d’identification du service
 
-Les intégrations à l&#39;AEM en tant que Cloud Service doivent être en mesure de s&#39;authentifier en toute sécurité auprès de l&#39;AEM. aem Developer Console accorde l’accès aux informations d’identification du service, qui sont utilisées pour faciliter les applications, systèmes et services externes à interagir par programmation avec les services Auteur ou Publication AEM via HTTP.
+Les intégrations à l&#39;AEM en tant que Cloud Service doivent être en mesure de s&#39;authentifier en toute sécurité auprès de l&#39;AEM. AEM Developer Console accorde l’accès aux informations d’identification du service, qui sont utilisées pour faciliter les applications, systèmes et services externes à interagir par programmation avec les services Auteur ou Publication AEM via HTTP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519/?quality=12&learn=on)
 
-Les informations d&#39;identification des services peuvent sembler similaires [Jetons d&#39;accès de développement local](./local-development-access-token.md) mais sont différentes de plusieurs manières clés :
+Les informations d’identification des services peuvent sembler similaires [Jetons d&#39;accès de développement local](./local-development-access-token.md) mais sont différentes de plusieurs manières clés :
 
 + Les informations d’identification de service sont _non_ jetons d&#39;accès, mais elles sont utilisées pour _obtenir_ jetons d&#39;accès.
 + Les informations d’identification du service sont plus permanentes (expirent tous les 365 jours) et ne changent pas à moins d’être révoquées, tandis que les Jetons d&#39;accès de développement local expirent tous les jours.
@@ -98,7 +101,7 @@ Les informations d’identification du service, un objet JSON entièrement form�
 1. Adobe IMS renvoie un jeton d&#39;accès qui peut être utilisé pour accéder à AEM en tant que Cloud Service
    + Un jeton d&#39;accès peut demander une expiration. Il est préférable de ne pas prolonger la durée de vie du jeton d&#39;accès et de le rafraîchir au besoin.
 1. L’application externe envoie des requêtes HTTP à AEM en tant que Cloud Service, ajoutant le jeton d&#39;accès en tant que jeton de garde à l’en-tête Autorisation des requêtes HTTP.
-1. aem en tant que Cloud Service reçoit la requête HTTP, authentifie la requête et effectue le travail demandé par la requête HTTP, puis renvoie une réponse HTTP à l’application externe.
+1. AEM en tant que Cloud Service reçoit la requête HTTP, authentifie la requête et effectue le travail demandé par la requête HTTP, puis renvoie une réponse HTTP à l’application externe.
 
 ### Mises à jour de l’application externe
 
