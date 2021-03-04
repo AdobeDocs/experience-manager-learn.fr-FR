@@ -3,7 +3,7 @@ title: PréRenseigner HTML5 Forms à l’aide de l’attribut data.
 seo-title: PréRenseigner HTML5 Forms à l’aide de l’attribut data.
 description: Renseignez les formulaires HTML5 en récupérant les données de la source principale.
 seo-description: Renseignez les formulaires HTML5 en récupérant les données de la source principale.
-feature: intégrations
+feature: Formulaires adaptatifs
 topics: mobile-forms
 audience: developer
 doc-type: article
@@ -11,10 +11,13 @@ activity: implement
 version: 6.3,6.4,6.5.
 uuid: 889d2cd5-fcf2-4854-928b-0c2c0db9dbc2
 discoiquuid: 3aa645c9-941e-4b27-a538-cca13574b21c
+topic: Développement
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '515'
 ht-degree: 2%
 
 ---
