@@ -2,17 +2,20 @@
 title: Ajouter la navigation et le routage | Prise en main de l'AEM SPA Editor et réaction
 description: Découvrez comment plusieurs vues de la SPA peuvent être prises en charge en mappant des pages AEM avec le SDK de l’éditeur SPA. La navigation dynamique est mise en oeuvre à l'aide du Routeur de réaction et ajoutée à un composant d'en-tête existant.
 sub-product: sites
-feature: maven-archetype, SPA Editor
+feature: Éditeur de SPA
 topics: development
 version: cloud-service
 activity: develop
 audience: developer
 kt: 4988
 thumbnail: 4988-spa-react.jpg
+topic: SPA
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 892cb074814eabd347ba7aef883721df0ee4d431
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2117'
 ht-degree: 2%
 
 ---
