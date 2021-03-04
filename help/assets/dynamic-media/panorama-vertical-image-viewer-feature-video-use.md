@@ -1,20 +1,17 @@
 ---
 title: Utilisation de la visionneuse d’images panoramiques et verticales avec AEM Assets Dynamic Media
-seo-title: Utilisation de la visionneuse d’images panoramiques et verticales avec AEM Assets Dynamic Media
 description: Les améliorations apportées à Dynamic Media Viewer dans AEM version 6.4 incluent l’ajout de la visionneuse d’images panoramique, de la visionneuse d’images de réalité virtuelle panoramique et de la visionneuse d’images verticale. Panoramic Viewer offre un moyen facile de fournir une expérience attrayante et immersive de la chambre, de la propriété, de l'emplacement ou du paysage sans aucun développement personnalisé.
-seo-description: Les améliorations apportées à Dynamic Media Viewer dans AEM version 6.4 incluent l’ajout de la visionneuse d’images panoramique, de la visionneuse d’images de réalité virtuelle panoramique et de la visionneuse d’images verticale. Panoramic Viewer offre un moyen facile de fournir une expérience attrayante et immersive de la chambre, de la propriété, de l'emplacement ou du paysage sans aucun développement personnalisé.
 sub-product: dynamic-media
-feature: video-profiles, video-profiles, vr-360
-topics: videos, renditions, authoring
-doc-type: feature video
-audience: all
-activity: use
+feature: Profils vidéo, Profils vidéo, vidéo 360 VR
 version: 6.4, 6.5
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 1%
+source-wordcount: '548'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +24,7 @@ Les améliorations apportées à Dynamic Media Viewer dans AEM version 6.4 inclu
 
 >[!NOTE]
 >
->La vidéo suppose que votre instance AEM s’exécute en mode Dynamic Media S7. [Vous trouverez des instructions sur la configuration de l&#39;AEM avec Dynamic Media ici.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>La vidéo suppose que votre instance AEM s’exécute en mode Dynamic Media S7. [Vous trouverez des instructions sur la configuration de l&#39;AEM avec Dynamic Media ici.](https://helpx.adobe.com/fr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## Visionneuse panoramique et panoramique VR
 
