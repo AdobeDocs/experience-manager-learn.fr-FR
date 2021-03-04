@@ -4,17 +4,20 @@ seo-title: Configuration d’un formulaire adaptatif pour déclencher AEM proces
 description: Présentation des différentes options de configuration d’un formulaire adaptatif pour déclencher AEM flux de travail
 seo-description: Présentation des différentes options de configuration d’un formulaire adaptatif pour déclencher AEM flux de travail
 sub-product: formulaires
-feature: workflow
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 4%
+source-wordcount: '50'
+ht-degree: 8%
 
 ---
 
