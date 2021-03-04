@@ -1,7 +1,7 @@
 ---
 title: Suivi du composant cliqué avec Adobe Analytics
 description: Utilisez la couche Données client Adobe pilotée par le événement pour effectuer le suivi des clics de composants spécifiques sur un site Adobe Experience Manager. Découvrez comment utiliser des règles en Experience Platform Launch pour écouter ces événements et envoyer des données à un Adobe Analytics avec une balise de lien de suivi.
-feature: analytics
+feature: analyses
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: setup
 version: cloud-service
 kt: 6296
 thumbnail: KT-6296.jpg
+topic: Intégrations
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 64c167ec1d625fdd8be1bc56f7f5e59460b8fed3
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1835'
 ht-degree: 5%
 
 ---
