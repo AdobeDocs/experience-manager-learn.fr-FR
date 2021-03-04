@@ -1,7 +1,7 @@
 ---
 title: Extension des microservices d'Asset compute pour AEM en tant que Cloud Service
 description: Ce didacticiel vous guide tout au long de la création d’un simple collaborateur d’Assets compute qui crée un rendu de fichier en recadrant le fichier d’origine sur un cercle et applique un contraste et une luminosité configurables. Bien que le programme de travail lui-même soit de base, ce didacticiel l’utilise pour explorer la création, le développement et le déploiement d’un Asset compute de travail personnalisé à utiliser avec AEM en tant que Cloud Service.
-feature: asset-compute
+feature: Microservices Asset compute
 topics: renditions, development
 version: cloud-service
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
+topic: Intégrations, développement
+role: Développeur
+level: Intermédiaire, expérimenté
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1036'
 ht-degree: 3%
 
 ---
@@ -20,7 +23,7 @@ ht-degree: 3%
 
 # Extensibilité des microservices d&#39;Asset compute
 
-aem en tant que microservices de Asset compute Cloud Service prennent en charge le développement et le déploiement de travailleurs personnalisés utilisés pour lire et manipuler les données binaires des ressources stockées dans AEM, le plus souvent, pour créer des rendus de ressources personnalisés.
+AEM en tant que microservices de Asset compute Cloud Service prennent en charge le développement et le déploiement de travailleurs personnalisés utilisés pour lire et manipuler les données binaires des ressources stockées dans AEM, le plus souvent, pour créer des rendus de ressources personnalisés.
 
 Alors que dans AEM 6.x, les processus AEM de flux de travail personnalisés ont été utilisés pour lire, transformer et écrire en retour des rendus de ressources, dans l&#39;, en tant que travailleurs d&#39;Asset compute Cloud Service répondent à ce besoin.
 
@@ -66,13 +69,13 @@ Découvrez comment créer et configurer un projet d’Asset compute, puis dével
 
 ### Création d’un projet d’Asset compute
 
-Les projets d’Asset compute, qui contiennent un ou plusieurs travailleurs d’Asset compute, sont générés à l’aide de l’interface de ligne de commande interactive Adobe I/O. Les projets d&#39;Asset compute sont des projets de lucioles d&#39;Adobe spécialement structurés, qui sont à leur tour des projets Node.js.
+Les projets d’Asset compute, qui contiennent un ou plusieurs travailleurs de l’Asset compute, sont générés à l’aide de l’interface de ligne de commande interactive de l’Adobe I/O. Les projets d&#39;Asset compute sont des projets de lucioles d&#39;Adobe spécialement structurés, qui sont à leur tour des projets Node.js.
 
 + [Création d’un projet d’Asset compute](./develop/project.md)
 
 ### Configuration des variables d’environnement
 
-Les variables d&#39;Environnement sont conservées dans le fichier `.env` pour le développement local et sont utilisées pour fournir les informations d&#39;identification Adobe I/O et les informations d&#39;enregistrement Cloud requises pour le développement local.
+Les variables d&#39;Environnement sont conservées dans le fichier `.env` pour le développement local et sont utilisées pour fournir les informations d&#39;identification d&#39;Adobe I/O et les informations d&#39;identification d&#39;enregistrement cloud requises pour le développement local.
 
 + [Configuration des variables d’environnement](./develop/environment-variables.md)
 
