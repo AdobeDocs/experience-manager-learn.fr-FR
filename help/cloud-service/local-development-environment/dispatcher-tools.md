@@ -2,7 +2,7 @@
 title: Configuration des outils de répartiteur pour AEM en tant que développement Cloud Service
 description: Les outils de répartiteur du SDK AEM facilitent le développement local des projets Adobe Experience Manager (AEM) en facilitant l'installation, l'exécution et la résolution des problèmes du répartiteur localement.
 sub-product: fondation
-feature: dispatcher
+feature: Répartiteur, Outils de développement
 topics: development, caching, security
 version: cloud-service
 doc-type: tutorial
@@ -10,10 +10,13 @@ activity: develop
 audience: developer
 kt: 4679
 thumbnail: 30603.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 178ba3dbcb6f2050a9c56303bbabbcfcbead3e79
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1572'
 ht-degree: 2%
 
 ---
@@ -50,7 +53,7 @@ L&#39;AEM en tant que SDK Cloud Service, ou SDK AEM, contient les outils du rép
 
 Si l’AEM en tant que SDK Cloud Service a déjà été téléchargé dans [configuration de l’AEM d’exécution locale](./aem-runtime.md), il n’est pas nécessaire de le retélécharger.
 
-1. Connectez-vous à [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout liste&amp;p.offset=0&amp;p.limit=1) avec votre Adobe ID.
+1. Connectez-vous à [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout liste&amp;p.offset=0&amp;p.limit=1) avec votre Adobe ID.
    + Votre organisation d’Adobes __doit__ être configurée pour AEM en tant que Cloud Service pour télécharger l’AEM en tant que SDK Cloud Service
 1. Cliquez sur la dernière ligne de résultats __AEM SDK__ à télécharger.
    + Assurez-vous que les outils Dispatcher Tools v2.0.29+ du SDK AEM sont indiqués dans la description du téléchargement.
