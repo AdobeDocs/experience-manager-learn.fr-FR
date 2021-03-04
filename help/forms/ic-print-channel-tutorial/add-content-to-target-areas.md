@@ -4,7 +4,7 @@ seo-title: Ajouter du contenu de texte et d’image pour imprimer le document de
 description: 'Voici la partie 7 d''un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons ajouter des images et du contenu de texte aux zones de cible définies dans la mise en page (xdp). '
 seo-description: 'Voici la partie 7 d''un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons ajouter des images et du contenu de texte aux zones de cible définies dans la mise en page (xdp). '
 uuid: f20d6974-6faf-4b90-a7ff-8aa8a620fcaa
-feature: interactive-communication
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,11 +13,14 @@ version: 6.4,6.5
 discoiquuid: a79bf219-2423-4819-89fc-dcfe976e08b7
 kt: 5992
 thumbnail: 22379.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 0%
+source-wordcount: '201'
+ht-degree: 1%
 
 ---
 
