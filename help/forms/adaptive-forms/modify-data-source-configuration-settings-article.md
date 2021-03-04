@@ -3,7 +3,7 @@ title: Modification des paramètres de configuration de la source de données
 seo-title: Modification des paramètres de configuration de la source de données
 description: Modifiez le nom d’hôte et d’autres paramètres dans Paramètres de configuration de la source de données.
 seo-description: Modifiez le nom d’hôte et d’autres paramètres dans Paramètres de configuration des sources de données.
-feature: Formulaires adaptatifs
+feature: intégrations
 topics: form-data-model
 audience: developer
 doc-type: technical video
@@ -11,14 +11,11 @@ activity: setup
 version: 6.5
 uuid: 31e297c9-3d12-4a7a-b1ff-1e347e17b24c
 discoiquuid: de227e8f-0f59-4506-828b-3b6b18b61eb1
-topic: Développement
-role: Développeur
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 2%
+source-wordcount: '157'
+ht-degree: 0%
 
 ---
 
