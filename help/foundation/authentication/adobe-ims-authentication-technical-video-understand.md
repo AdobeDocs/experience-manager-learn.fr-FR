@@ -2,17 +2,20 @@
 title: Présentation de l’authentification IMS Adobe avec AEM sur Adobe Managed Services
 description: Adobe Experience Manager propose une prise en charge Admin Console des instances AEM et une authentification basée sur l’Adobe IMS (Identity Management System) pour AEM sur Managed Services.   Cette intégration permet aux clients d'AEM Managed Services de gérer tous les utilisateurs Experience Cloud dans une seule console Web unifiée. Les utilisateurs et les groupes peuvent être affectés à des profils de produits associés à des instances AEM, ce qui permet d’accorder un accès géré de manière centralisée aux instances AEM spécifiques.
 version: 6.4, 6.5
-feature: authentication
+feature: 'Utilisateurs et groupes '
 topics: authentication, security
 activity: understand
 audience: administrator, architect, developer, implementer
 doc-type: technical video
 kt: 781
+topic: Architecture
+role: Architecte
+level: Expérience
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 4%
+source-wordcount: '454'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +28,7 @@ Adobe Experience Manager propose une prise en charge Admin Console des instances
 
 * La prise en charge de l’authentification Adobe Experience Manager IMS s’applique uniquement aux utilisateurs &quot;internes&quot; (auteurs, réviseurs, administrateurs, développeurs, etc.) et non aux utilisateurs finaux externes tels que les visiteurs de site Web.
 * [Admin ](https://adminconsole.adobe.com/) Consolerereprésentera AEM clients Managed Services en tant qu’organisations IMS et les instances AEM en tant que Contextes de produit. Les administrateurs système Admin Console et produits peuvent définir et gérer.
-* aem Managed Services synchronise votre topologie avec le Admin Console, en créant un mappage 1-1 entre un contexte de produit et une instance AEM.
+* AEM Managed Services synchronise votre topologie avec le Admin Console, en créant un mappage 1-1 entre un contexte de produit et une instance AEM.
 * Le Profil de produit dans le Admin Console détermine les instances AEM auxquelles un utilisateur peut accéder.
 * La prise en charge de l’authentification inclut les IDP conformes SAML2 des clients pour l’authentification unique.
 * Seuls les Enterprise ID ou Federated ID (pour l’authentification unique du client) sont pris en charge (les Personal Adobe ID ne sont pas pris en charge).
