@@ -1,19 +1,18 @@
 ---
 title: Balises dynamiques personnalisées pour les images en AEM Assets
 description: Découvrez comment former les balises actives d’AEM Assets à appliquer des termes personnalisés aux ressources.
-feature: smart-tags
-topics: metadata
-audience: developer, administrator
-doc-type: technical video
-activity: setup
+feature: Balises intelligentes
 version: 6.4, 6.5, cloud-services
 kt: 795
 thumbnail: 22254.jpg
+topic: Gestion de contenu
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 159e9d7ea363768f202db91a1d0555c2e57ebb13
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 1%
+source-wordcount: '155'
+ht-degree: 4%
 
 ---
 
@@ -32,12 +31,12 @@ Les balises actives personnalisées ou les balises actives améliorées peuvent 
 
 Les balises actives personnalisées pour les images nécessitent [des balises actives pour que les images soient configurées](./image-smart-tags.md#set-up).
 
-Découvrez comment configurer la formation des balises actives en AEM Assets à l’aide de Smart Content Service et de Adobe I/O. Balises dynamiques personnalisées pour les images
+Découvrez comment configurer la formation des balises actives en AEM Assets à l’aide de Smart Content Service et de l’Adobe I/O. Balises dynamiques personnalisées pour les images
 
 >[!VIDEO](https://video.tv.adobe.com/v/23405/?quality=12&learn=on)
 
 ## Ressources supplémentaires
 
-* aem 6.4 requiert le Service Pack [le plus récent ](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
+* AEM 6.4 requiert le Service Pack [le plus récent ](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
 
 
