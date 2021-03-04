@@ -1,15 +1,18 @@
 ---
 title: Exportation des données de formulaire envoyées au format CSV
 description: Exportation des données de formulaire adaptatif envoyées au format CSV
-feature: adaptive-forms
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: article
 activity: implement
+topic: Développement
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '403'
 ht-degree: 1%
 
 ---
@@ -32,7 +35,7 @@ du tableauComme vous pouvez le voir, le nom du schéma est aemformstutorial.Dans
 Le nom de la table et les noms à deux colonnes sont exposés en tant que propriétés de configuration OSGi, comme illustré dans la capture d’écran ci-dessous :
 ![osgi-configuration](assets/configuration.PNG)
 Le code lit ces valeurs et construit la requête SQL appropriée à exécuter. Par exemple, la requête suivante sera exécutée en fonction des valeurs ci-dessus.
-**SÉLECTIONNER les données de formulaire DEPUIS aemformstutorial.formsubmission où formname=timeoffrequest tform**
+**SÉLECTIONNER les données de formulaire DEPUIS aemformstutorial.formSubmissions où formname=timeoffrequest tform**
 Dans la requête ci-dessus, le nom du formulaire (timeoffrequestform) sera transmis en tant que paramètre de requête à la servlet.
 
 ## **Créer un service OSGi**
