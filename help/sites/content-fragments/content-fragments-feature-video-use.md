@@ -2,17 +2,20 @@
 title: Création de fragments de contenu dans AEM
 description: 'Les fragments de contenu sont une abstraction de contenu dans AEM qui permet la création et la gestion de contenu texte indépendamment des canaux pris en charge. '
 sub-product: content-services
-feature: content-fragments
+feature: Fragments de contenu
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
 version: cloud-service
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 11%
+source-wordcount: '381'
+ht-degree: 12%
 
 ---
 
@@ -34,9 +37,9 @@ Cette série de vidéos couvre le cycle de vie de création de fragments de cont
 
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
-aem les modèles de fragments de contenu, les schémas de données des fragments de contenu, doivent être activés via AEM [[!UICONTROL Navigateur de configuration]](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/configurations.html), ce qui permet de définir les modèles de fragments de contenu par configuration.
+AEM les modèles de fragments de contenu, les schémas de données des fragments de contenu, doivent être activés via AEM [[!UICONTROL Navigateur de configuration]](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/configurations.html), ce qui permet de définir les modèles de fragments de contenu par configuration.
 
-## Création de fragments de contenu   {#creating-content-fragments}
+## Création de fragments de contenu {#creating-content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22451/?quality=12&learn=on)
 
@@ -51,7 +54,7 @@ Les fragments de contenu peuvent comporter plusieurs variantes, chacune d’elle
 
 >[!VIDEO](https://video.tv.adobe.com/v/22450/?quality=12&learn=on)
 
-aem Fragments de contenu peuvent être téléchargés depuis l’auteur AEM sous la forme d’un fichier Zip contenant des variantes, des éléments et des métadonnées.
+AEM Fragments de contenu peuvent être téléchargés depuis l’auteur AEM sous la forme d’un fichier Zip contenant des variantes, des éléments et des métadonnées.
 
 *Exemple de fichier zip de téléchargement de fragment de contenu :*\
 **[daniel_schreder.zip](assets/daniel_schreder.zip)**
@@ -62,7 +65,7 @@ aem Fragments de contenu peuvent être téléchargés depuis l’auteur AEM sous
 
 >[!NOTE]
 >
-> L’annotation et la comparaison de versions pour les fragments de contenu ont été introduites dans [AEM Service Pack 2](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html) et [AEM 6.3 Service Pack 3](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes/sp3-release-notes.html).
+> L’annotation et la comparaison de versions pour les fragments de contenu ont été introduites dans [AEM Service Pack 2](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr) et [AEM 6.3 Service Pack 3](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes/sp3-release-notes.html).
 
 ## Étapes suivantes
 
