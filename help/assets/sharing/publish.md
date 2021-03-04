@@ -2,19 +2,18 @@
 title: Publication de fichiers à l’aide d’AEM
 description: Découvrez comment publier des ressources et leurs rendus d’AEM Author vers AEM Publish.
 sub-product: ressources
-feature: Publishing
-topics: Content Management
-audience: author
-doc-type: feature video
-activity: use
+feature: Gestion des ressources
 version: cloud-service
 kt: 330932
 thumbnail: 32194.jpg
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 94ea85d4a96bf9da62c5658961474a12663ac77b
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 3%
+source-wordcount: '58'
+ht-degree: 6%
 
 ---
 
