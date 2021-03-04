@@ -3,23 +3,21 @@ title: Application de bureau AEM
 description: Utilisez AEM Desktop App pour simplifier l'accès à tout fichier géré dans AEM sur ordinateur, pour toute application et format de fichier.
 kt: 2551
 sub-product: ressources
-feature: desktop-app
-topics: authoring, collaboration, content-velocity
+feature: Application de bureau Experience Manager
 version: 6.5, 6.4, 6.3
-doc-type: feature video
-activity: use
-team: TM
-audience: author, marketer
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 13%
+source-wordcount: '146'
+ht-degree: 16%
 
 ---
 
 
-# Utilisation d’AEM Desktop App
+# Utilisation de l’application de bureau AEM
 
 Utilisez AEM Desktop App pour simplifier l&#39;accès à tout fichier géré dans AEM sur ordinateur, pour toute application et format de fichier.
 
@@ -36,4 +34,4 @@ Utilisez AEM Desktop App pour simplifier l&#39;accès à tout fichier géré dan
 
 ## Ressources supplémentaires
 
-+ [Téléchargement de la dernière application AEM pour ordinateur](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)
++ [Téléchargement de la dernière application AEM pour ordinateur](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/release-notes.html)
