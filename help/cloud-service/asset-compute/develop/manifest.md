@@ -1,7 +1,7 @@
 ---
 title: Configuration du fichier manifest.yml d'un projet d'Asset compute
 description: Le manifeste.yml du projet Asset compute décrit tous les travailleurs de ce projet à déployer.
-feature: asset-compute
+feature: Microservices Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,11 +9,14 @@ audience: developer
 doc-type: tutorial
 kt: 6281
 thumbnail: KT-6281.jpg
+topic: Intégrations, développement
+role: Développeur
+level: Intermédiaire, expérimenté
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 2%
+source-wordcount: '445'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +31,7 @@ Le `manifest.yml`, situé à la racine du projet d&#39;Asset compute, décrit to
 
 Les travailleurs sont définis comme des entrées d&#39;action Adobe I/O Runtime sous `actions` et sont constitués d&#39;un ensemble de configurations.
 
-Les utilisateurs qui accèdent à d&#39;autres intégrations Adobe I/O doivent définir la propriété `annotations -> require-adobe-auth` sur `true`, dans la mesure où [expose les informations d&#39;identification Adobe I/O du travailleur](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) par le biais de l&#39;objet `params.auth`. Cela est généralement requis lorsque le travailleur appelle des API Adobe I/O, telles que les API Adobe Photoshop, Lightroom ou Sensei, et peut être basculé par travailleur.
+Les utilisateurs qui accèdent à d&#39;autres intégrations d&#39;Adobe I/O doivent définir la propriété `annotations -> require-adobe-auth` sur `true`, dans la mesure où cette [exposition les informations d&#39;identification de l&#39;Adobe I/O du travailleur](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) via l&#39;objet `params.auth`. Cela est généralement requis lorsque le travailleur appelle des API d’Adobe I/O telles que les API Adobe Photoshop, Lightroom ou Sensei, et peut être basculé par employé.
 
 1. Ouvrez et passez en revue le programme de travail généré automatiquement `manifest.yml`. Les projets qui contiennent plusieurs travailleurs d&#39;Asset compute doivent définir une entrée pour chaque travailleur sous la baie `actions`.
 
