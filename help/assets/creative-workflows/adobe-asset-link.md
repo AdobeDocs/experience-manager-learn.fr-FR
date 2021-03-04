@@ -1,24 +1,23 @@
 ---
 title: Utilisation de l’extension de lien de ressource Adobe avec AEM Assets
-description: 'Les ressources Adobe Experience Manager peuvent désormais être utilisées par les concepteurs et les utilisateurs créatifs dans leurs applications de bureau Adobe Creative Cloud préférées. L’extension Adobe Asset Link pour Adobe Creative Cloud Enterprise étend la fonctionnalité de recherche et de navigation, de tri, de prévisualisation, de téléchargement de ressources, d’extraction, de modification, d’archivage et de vue de métadonnées de ressources d’AEM dans des outils Creative Cloud tels que Adobe Photoshop, InDesign,  et Illustrator. '
-feature: adobe-asset-link
-topics: authoring, collaboration, operations, sharing, metadata, images
-audience: all
-doc-type: feature video
-activity: use
+description: 'Les ressources Adobe Experience Manager peuvent désormais être utilisées par les concepteurs et les utilisateurs créatifs dans leurs applications de bureau Adobe Creative Cloud préférées. L’extension Adobe Asset Link pour Adobe Creative Cloud Enterprise étend la fonctionnalité de recherche et de navigation, de tri, de prévisualisation, de téléchargement de fichiers, d’extraction, de modification, d’archivage et de vue de métadonnées de fichiers AEM dans des outils Creative Cloud tels que Adobe Photoshop, InDesign,  et Illustrator. '
+feature: Adobe Asset Link
 version: 6.4, 6.5
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 1%
+source-wordcount: '1102'
+ht-degree: 2%
 
 ---
 
 
 # Utilisation de l’extension de lien de ressource Adobe avec AEM Assets{#using-adobe-asset-link-extension-with-aem-assets}
 
-Les ressources Adobe Experience Manager peuvent désormais être utilisées par les concepteurs et les utilisateurs créatifs dans leurs applications de bureau Adobe Creative Cloud préférées. L’extension Adobe Asset Link pour Adobe Creative Cloud Enterprise étend la fonctionnalité de recherche et de navigation, de tri, de prévisualisation, de téléchargement de ressources, d’extraction, de modification, d’archivage et de vue de métadonnées de ressources d’AEM dans des outils Creative Cloud tels que Adobe Photoshop, InDesign,  et Illustrator.
+Les ressources Adobe Experience Manager peuvent désormais être utilisées par les concepteurs et les utilisateurs créatifs dans leurs applications de bureau Adobe Creative Cloud préférées. L’extension Adobe Asset Link pour Adobe Creative Cloud Enterprise étend la fonctionnalité de recherche et de navigation, de tri, de prévisualisation, de téléchargement de fichiers, d’extraction, de modification, d’archivage et de vue de métadonnées de fichiers AEM dans des outils Creative Cloud tels que Adobe Photoshop, InDesign,  et Illustrator.
 
 
 ## Lien d’actif Adobe 1.1
@@ -53,7 +52,7 @@ Vous pouvez placer un fichier dans votre disposition d’InDesign à l’aide de
 
 * **Importer une copie**  : l&#39;incorporation d&#39;une ressource (à l&#39;aide de l&#39;option Importer une copie) place une copie de la ressource d&#39;origine dans la mise en page de votre InDesign après le téléchargement des fichiers binaires sur votre système local. Lien de ressource d’Adobe ne conserve aucun lien entre la copie incorporée et la ressource d’origine. Si la ressource d’origine est modifiée en AEM Assets, vous devez supprimer la ressource incorporée du fichier d’InDesign et réincorporer la ressource de AEM Assets.
 
-* **Placer lié**  : lorsque vous travaillez avec des documents d&#39;InDesign, vous avez désormais la possibilité de référencer les ressources de AEM Assets en plus de les incorporer directement (à l&#39;aide de l&#39;option Importer copie du menu contextuel). Le référencement des ressources vous permet de collaborer avec d’autres utilisateurs et d’incorporer toute mise à jour apportée à la ressource d’origine dans AEM Assets. Pour référencer un fichier d’AEM Assets, utilisez l’option Placer lié dans le menu contextuel.
+* **Placer lié**  : lorsque vous travaillez avec des documents d&#39;InDesign, vous avez désormais la possibilité de référencer les ressources de AEM Assets en plus de les incorporer directement (à l&#39;aide de l&#39;option Importer copie du menu contextuel). Le référencement de fichiers vous permet de collaborer avec d’autres utilisateurs et d’incorporer toute mise à jour apportée à la ressource d’origine dans AEM Assets. Pour référencer un fichier d’AEM Assets, utilisez l’option Placer lié dans le menu contextuel.
 
 ### Résolution pour positionnement uniquement (FPO)
 
