@@ -4,18 +4,21 @@ seo-title: Procédure simplifiée d’installation d’AEM Forms sous Windows
 description: Procédure rapide et simple d’installation d’AEM Forms sous Windows
 seo-description: Procédure rapide et simple d’installation d’AEM Forms sous Windows
 uuid: a148b8f0-83db-47f6-89d3-c8a9961be289
-feature: adaptive-forms
+feature: Formulaires adaptatifs
 topics: administration
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
 discoiquuid: 1182ef4d-5838-433b-991d-e24ab805ae0e
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 7%
+source-wordcount: '618'
+ht-degree: 9%
 
 ---
 
@@ -43,10 +46,10 @@ ht-degree: 7%
 Bien que nous vous recommandons de suivre la [documentation officielle](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html) pour installer AEM Forms. Pour installer et configurer AEM Forms sur l’environnement Windows, procédez comme suit :
 
 * Assurez-vous que le JDK approprié est installé.
-   * aem 6.2 : Oracle SE 8 JDK 1.8.x (64 bits)
+   * AEM 6.2 : Oracle SE 8 JDK 1.8.x (64 bits)
 * 
-   * aem 6.3 et AEM 6.4 vous avez besoin de : Oracle SE 8 JDK 1.8.x (64 bits)
-* aem 6.5 vous avez besoin de JDK 8 ou JDK 11
+   * AEM 6.3 et AEM 6.4 vous avez besoin de : Oracle SE 8 JDK 1.8.x (64 bits)
+* AEM 6.5 vous avez besoin de JDK 8 ou JDK 11
 * [Les ](https://helpx.adobe.com/fr/experience-manager/6-3/sites/deploying/using/technical-requirements.html) exigences JDK officielles sont répertoriées ici
 * Assurez-vous que JAVA_HOME est défini pour pointer vers le JDK que vous avez installé.
    * Pour créer la variable JAVA_HOME dans Windows, procédez comme suit :
