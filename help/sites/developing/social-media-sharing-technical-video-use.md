@@ -1,17 +1,20 @@
 ---
 title: Utilisation du partage sur les réseaux sociaux en AEM Sites
 description: Explorez la configuration et l’utilisation du composant Partage sur les réseaux sociaux.
-feature: core-components
+feature: Composants principaux
 topics: integrations
 audience: developer, implementer
 doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
+topic: Gestion de contenu
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 9%
+source-wordcount: '215'
+ht-degree: 11%
 
 ---
 
@@ -35,7 +38,7 @@ Cette vidéo explore les fonctionnalités suivantes du composant Partage sur les
 
 [http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl](http://localhost:4502/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl)
 
-[aem ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) externalisation doit être configuré sur AEM Author et AEM Publish pour mapper le mode d’exécution de publication au domaine accessible au public utilisé pour accéder à AEM Publish.
+[AEM ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html) externalisation doit être configuré sur AEM Author et AEM Publish pour mapper le mode d’exécution de publication au domaine accessible au public utilisé pour accéder à AEM Publish.
 
 Dans cette vidéo, nous utilisons `/etc/hosts` pour parodier *www.example.com* pour résoudre le problème de localhost, et nous utilisons une [configuration de base du répartiteur d’AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) pour permettre à www.example.com de traiter AEM Publish.
 
