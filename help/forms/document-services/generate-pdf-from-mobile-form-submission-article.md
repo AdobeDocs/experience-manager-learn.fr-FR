@@ -4,17 +4,20 @@ seo-title: Générer un fichier PDF à partir de l’envoi de formulaire HTML5
 description: Générer un fichier PDF à partir de l’envoi de formulaires pour périphériques mobiles
 seo-description: Générer un fichier PDF à partir de l’envoi de formulaires pour périphériques mobiles
 uuid: 61f07029-d440-44ec-98bc-f2b5eef92b59
-feature: mobile-forms
+feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 816f1a75-6ceb-457b-ba18-daf229eed057
+topic: Développement
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
@@ -24,7 +27,7 @@ ht-degree: 0%
 
 Cet article décrit les étapes nécessaires à la génération de pdf à partir d’un envoi de formulaire HTML5(ou Forms mobile). Cette démonstration explique également les étapes nécessaires pour ajouter une image au formulaire HTML5 et la fusionner dans le PDF final.
 
-Pour voir une démonstration en direct de cette fonctionnalité, consultez l&#39;[exemple de serveur](https://forms.enablementadobe.com/content/samples/samples.html?query=0) et recherchez &quot;Mobile Form To PDF&quot;.
+Pour une démonstration en direct de cette fonctionnalité, consultez l&#39;[exemple de serveur](https://forms.enablementadobe.com/content/samples/samples.html?query=0) et recherchez &quot;Mobile Form To PDF&quot;.
 
 Pour fusionner les données envoyées dans le modèle xdp, procédez comme suit :
 
