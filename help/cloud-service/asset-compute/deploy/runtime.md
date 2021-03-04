@@ -1,7 +1,7 @@
 ---
 title: Déployer des employés d'Asset compute dans Adobe I/O Runtime pour une utilisation avec AEM en tant que Cloud Service
 description: 'Les projets d''Asset compute, et les travailleurs qu''ils contiennent, doivent être déployés à Adobe I/O Runtime pour être utilisés par AEM comme Cloud Service. '
-feature: asset-compute
+feature: Microservices Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6286
 thumbnail: KT-6286.jpg
+topic: Intégrations, développement
+role: Développeur
+level: Intermédiaire, expérimenté
 translation-type: tm+mt
-source-git-commit: af610f338be4878999e0e9812f1d2a57065d1829
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -20,7 +23,7 @@ ht-degree: 0%
 
 # Déploiement sur Adobe I/O Runtime
 
-Les projets d&#39;Asset compute, et les travailleurs qu&#39;ils contiennent, doivent être déployés à Adobe I/O Runtime par l&#39;intermédiaire de l&#39;interface de ligne de commande Adobe I/O pour être utilisés par AEM en tant que Cloud Service.
+Les projets d&#39;Asset compute et les travailleurs qu&#39;ils contiennent doivent être déployés à Adobe I/O Runtime par l&#39;intermédiaire de l&#39;interface de ligne de commande de l&#39;Adobe I/O pour être utilisés par AEM en tant que Cloud Service.
 
 Lors d’un déploiement vers Adobe I/O Runtime pour une utilisation par AEM en tant que services d’auteur Cloud Service, seules deux variables d’environnement sont requises :
 
@@ -53,10 +56,10 @@ La définition de variables d&#39;environnement vraies remplace les valeurs des 
 
 L&#39;approche générale, généralement automatisée par un système de CI/CD, pour le déploiement sur les environnements d&#39;étape et de production est la suivante :
 
-1. Assurez-vous que le module [Adobe I/O CLI npm et le module externe d’Asset compute ](../set-up/development-environment.md#aio) sont installés.
+1. Assurez-vous que le module Npm [Adobe I/O CLI et le module externe Asset compute](../set-up/development-environment.md#aio) sont installés.
 1. Consulter le projet d&#39;Asset compute à déployer à partir de Git
 1. Définissez les variables d&#39;environnement avec les valeurs correspondant à l&#39;espace de travail de cible (Phase ou Production).
-   + Les deux variables requises sont `AIO_runtime_namespace` et `AIO_runtime_auth` et sont obtenues par espace de travail dans Adobe I/O Developer Console via la fonction __Télécharger tout__ de Workspace.
+   + Les deux variables requises sont `AIO_runtime_namespace` et `AIO_runtime_auth` et sont obtenues par espace de travail dans la console de développement d&#39;Adobe I/O via la fonction __Télécharger tout__ de Workspace.
 
 ![Adobe Developer Console - Espace de nommage d&#39;exécution AIO et authentification](./assets/runtime/stage-auth-namespace.png)
 
@@ -78,6 +81,6 @@ Si la version du projet d’Asset compute change, la ou les URL de travail chang
 
 ## Approvisionnement de l’API Workspace{#workspace-api-provisioning}
 
-Lorsque [la configuration du projet Adobe Project Firefly à Adobe I/O](../set-up/firefly.md) pour prendre en charge le développement local, un nouvel espace de travail de développement a été créé et __Asset compute, Événements d&#39;E/S__ et __API de gestion des Événements d&#39;E/S__ y ont été ajoutés.
+Lorsque [la configuration du projet Adobe Project Firefly dans Adobe I/O](../set-up/firefly.md) pour prendre en charge le développement local, un nouvel espace de travail de développement a été créé et __Asset compute, Événements d&#39;E/S__ et __API de gestion des Événements d&#39;E/S__ y ont été ajoutés.
 
 Les API __Asset compute, Événements d&#39;E/S__ et __API de gestion des Événements d&#39;E/S__ ne sont explicitement ajoutées qu&#39;aux espaces de travail utilisés pour le développement local. Les espaces de travail qui s’intègrent (exclusivement) à l’AEM en tant qu’environnements Cloud Service n’ont __pas__ besoin de ces API explicitement ajoutées, car les API sont rendues disponibles naturellement pour AEM en tant que Cloud Service.
