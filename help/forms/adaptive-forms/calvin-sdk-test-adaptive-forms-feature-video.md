@@ -1,9 +1,9 @@
 ---
 title: Présentation du test Forms automatisé avec AEM Forms
 seo-title: Présentation du test Forms automatisé avec AEM Forms
-description: aem 6.3 Forms offre la possibilité de permettre aux utilisateurs de créer des cas de test dans AEM pour Adaptive Forms à l’aide du SDK Calvin créé sur la structure hobbes.js.
-seo-description: aem 6.3 Forms offre la possibilité de permettre aux utilisateurs de créer des cas de test dans AEM pour Adaptive Forms à l’aide du SDK Calvin créé sur la structure hobbes.js.
-feature: adaptive-forms
+description: AEM 6.3 Forms offre la possibilité de permettre aux utilisateurs de créer des cas de test dans AEM pour Adaptive Forms à l’aide du SDK Calvin créé sur la structure hobbes.js.
+seo-description: AEM 6.3 Forms offre la possibilité de permettre aux utilisateurs de créer des cas de test dans AEM pour Adaptive Forms à l’aide du SDK Calvin créé sur la structure hobbes.js.
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: technical video
@@ -11,18 +11,21 @@ activity: develop
 version: 6.3,6.4,6.5
 uuid: 3cea2785-28f0-42c1-9935-3e876c28214a
 discoiquuid: a78936b4-e817-41a0-86cc-f9ac2d6dd08f
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 1e615d1c51fa0c4c0db335607c29a8c284874c8d
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 10%
+source-wordcount: '135'
+ht-degree: 13%
 
 ---
 
 
 # Présentation du test Forms automatisé avec AEM Forms{#understanding-automated-forms-testing-with-aem-forms}
 
-aem 6.3 Forms offre la possibilité de permettre aux utilisateurs de créer des cas de test dans AEM pour Forms adaptatif à l’aide du SDK Calvin créé sur la structure hobbes.js.
+AEM 6.3 Forms offre la possibilité de permettre aux utilisateurs de créer des cas de test dans AEM pour Forms adaptatif à l’aide du SDK Calvin créé sur la structure hobbes.js.
 
 >[!VIDEO](https://video.tv.adobe.com/v/19700/)
 
