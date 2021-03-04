@@ -3,7 +3,7 @@ title: Ecriture d’un envoi personnalisé en AEM Forms
 seo-title: Ecriture d’un envoi personnalisé en AEM Forms
 description: Méthode simple et rapide de création de votre propre action d’envoi personnalisée pour le formulaire adaptatif
 seo-description: Méthode simple et rapide de création de votre propre action d’envoi personnalisée pour le formulaire adaptatif
-feature: adaptive-forms
+feature: Formulaires adaptatifs
 topics: integrations
 audience: developer
 doc-type: article
@@ -11,11 +11,14 @@ activity: implement
 version: 6.3,6.4,6.5
 uuid: a26db0b9-7db4-4e80-813d-5c0438fabd1e
 discoiquuid: 28611011-2ff9-477e-b654-e62e7374096a
+topic: Développement
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 2%
+source-wordcount: '232'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +32,7 @@ Cet article décrit les étapes nécessaires à la création d’une action d’
 * Connexion à crx
 * Créez un noeud de type &quot;sling:folder&quot; sous applications. Appelons ce noeud CustomSubmitHelpx.
 * Enregistrez le nouveau noeud.
-* Ajouter les deux propriétés suivantes au noeud que vous venez de créer
+* Ajouter les deux propriétés suivantes au noeud nouvellement créé
 * PropertyName       | Valeur de propriété
 * guideComponentType | fd/af/components/guidesubmittype
 * guideDataModel     | xfa,xsd,basic
