@@ -4,18 +4,21 @@ seo-title: Configuration de la diffusion du document de canal Web
 description: Il s'agit de la dernière partie d'un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous examinons la diffusion du document de canal Web par courriel.
 seo-description: Il s'agit de la dernière partie d'un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous examinons la diffusion du document de canal Web par courriel.
 uuid: c1066600-1abd-4401-b04f-b93c28603cc7
-feature: communication interactive
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 1%
+source-wordcount: '394'
+ht-degree: 2%
 
 ---
 
