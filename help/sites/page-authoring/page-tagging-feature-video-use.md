@@ -3,7 +3,7 @@ title: Utilisation du balisage de page avec AEM Sites
 seo-title: Utilisation du balisage de page avec Adobe Experience Manager Sites
 description: La vidéo suivante explique comment classer rapidement et facilement le contenu d’un site Web à Adobe Experience Manager à l’aide de balises de page.
 seo-description: La vidéo suivante explique comment classer rapidement et facilement le contenu d’un site Web à Adobe Experience Manager à l’aide de balises de page.
-feature: page-editor
+feature: Éditeur de page
 topics: authoring
 audience: author, marketer
 doc-type: feature video
@@ -11,11 +11,14 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4632
 thumbnail: 32150.jpg
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 0%
+source-wordcount: '81'
+ht-degree: 4%
 
 ---
 
