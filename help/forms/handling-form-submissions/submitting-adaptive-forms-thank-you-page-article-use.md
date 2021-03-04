@@ -4,18 +4,21 @@ seo-title: Envoi À La Page De Remerciements
 description: Affichage d’une page de remerciement lors de l’envoi d’un formulaire adaptatif
 seo-description: Affichage d’une page de remerciement lors de l’envoi d’un formulaire adaptatif
 uuid: ec695b87-083a-47f6-92ac-c9a6dc2b85fb
-feature: adaptive-forms
+feature: Formulaires adaptatifs
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 58c6bf42-efe5-41a3-8023-d84f3675f689
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 0bccdea82f6db391cbca3ab06009a7b4420a38bf
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 5%
+source-wordcount: '280'
+ht-degree: 7%
 
 ---
 
