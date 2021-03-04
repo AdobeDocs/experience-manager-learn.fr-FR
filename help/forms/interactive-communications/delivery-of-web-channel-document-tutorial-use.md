@@ -3,17 +3,20 @@ title: Diffusion du Document de communication interactive - Canal Web AEM Forms
 seo-title: Diffusion du Document de communication interactive - Canal Web AEM Forms
 description: Diffusion du document de canal Web via un lien dans un courrier électronique
 seo-description: Diffusion du document de canal Web via un lien dans un courrier électronique
-feature: interactive-communication
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 0%
+source-wordcount: '298'
+ht-degree: 1%
 
 ---
 
