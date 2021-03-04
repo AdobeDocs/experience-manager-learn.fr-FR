@@ -4,18 +4,21 @@ seo-title: Ajouter le tableau au panneau de balance des comptes
 description: Il s'agit de la partie 9 du didacticiel en plusieurs étapes pour créer votre premier document de communication interactif.Dans cette partie, nous allons ajouter un tableau au panneau Solde du compte.
 seo-description: Il s'agit de la partie 9 du didacticiel en plusieurs étapes pour créer votre premier document de communication interactif.Dans cette partie, nous allons ajouter un tableau au panneau Solde du compte.
 uuid: 8f268c73-c543-418d-b65e-5beaf9660e42
-feature: interactive-communication
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 28a9d88d-635b-47a2-8a78-54ddeabc4406
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 0%
+source-wordcount: '186'
+ht-degree: 2%
 
 ---
 
