@@ -2,19 +2,18 @@
 title: Téléchargement
 description: Découvrez comment télécharger des ressources et leurs rendus sur votre ordinateur local pour les utiliser et les partager.
 sub-product: ressources
-feature: null
-topics: authoring
-audience: author
-doc-type: feature video
-activity: use
+feature: Gestion des ressources
 version: cloud-service
 kt: 4300
 thumbnail: 32194.jpg
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '35'
-ht-degree: 8%
+source-wordcount: '42'
+ht-degree: 11%
 
 ---
 
