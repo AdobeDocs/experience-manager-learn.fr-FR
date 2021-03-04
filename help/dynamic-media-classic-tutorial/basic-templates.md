@@ -2,15 +2,18 @@
 title: Présentation des modèles de base
 description: Découvrez les modèles de base dans Dynamic Media Classic, modèles basés sur des images appelés à partir du serveur Image Server et composés d’images et de texte rendu. Un modèle peut être modifié dynamiquement par l’intermédiaire de l’URL une fois le modèle publié. Vous apprendrez à télécharger un Photoshop PSD vers Dynamic Media Classic pour l’utiliser comme base d’un modèle. Créez un modèle de base de marchandisage simple composé de calques d’image. Ajoutez les calques de texte et rendez-les variables à l’aide de paramètres. Créez une URL de modèle et manipulez l’image de manière dynamique dans le navigateur Web.
 sub-product: dynamic-media
-feature: templates
+feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '6301'
+source-wordcount: '6309'
 ht-degree: 0%
 
 ---
@@ -18,7 +21,7 @@ ht-degree: 0%
 
 # Présentation des modèles de base {#basic-templates}
 
-En termes Dynamic Media Classic, un modèle est un document qui peut être modifié dynamiquement via l’URL une fois le modèle publié. Dynamic Media Classic offres des modèles de base, des modèles basés sur des images appelés depuis le serveur d’images et composés d’images et de texte rendu.
+En termes Dynamic Media Classic, un modèle est un document qui peut être modifié dynamiquement via l’URL une fois le modèle publié. Dynamic Media Classic offres des modèles de base, des modèles basés sur des images appelés à partir du serveur Image Server et composés d’images et de texte rendu.
 
 L&#39;un des aspects les plus puissants des modèles est qu&#39;ils comportent des points d&#39;intégration directs qui vous permettent de les lier à votre base de données. Ainsi, non seulement vous pouvez servir une image et la redimensionner, mais vous pouvez aussi requête votre base de données pour trouver des articles nouveaux ou vendus et les faire apparaître comme une incrustation sur l&#39;image. Vous pouvez demander une description de l’élément et la faire apparaître sous la forme d’une étiquette dans une police que vous avez choisie et mise en page. Les possibilités sont illimitées.
 
@@ -110,7 +113,7 @@ Vous téléchargerez et publierez également vos polices si vous devez générer
 
 Il est de la responsabilité de chaque société d&#39;obtenir une licence d&#39;utilisation d&#39;une police sur le Web — le simple fait d&#39;avoir installé une police sur votre ordinateur ne vous donne pas le droit de l&#39;utiliser commercialement sur le Web, et votre société pourrait faire face à une action en justice de l&#39;éditeur de polices si elle est utilisée sans autorisation. En outre, les termes des licences varient : vous pouvez avoir besoin de licences distinctes pour l’affichage à l’écran et pour l’impression, par exemple.
 
-Dynamic Media Classic prend en charge les polices OpenType (OTF), TrueType (TTF) et Type 1 Postscript. Les polices de valise uniquement pour Mac, les fichiers de collection de type, les polices système Windows et les polices de machine propriétaires (comme les polices utilisées par les machines de gravure ou de broderie) ne sont pas prises en charge. Vous devrez les convertir dans l’un des formats de police standard ou en remplacer une semblable par une autre dans Dynamic Media Classic et sur le serveur d’images.
+Dynamic Media Classic prend en charge les OpenTypes standard (OTF), TrueType (TTF) et les polices PostScript de type 1. Les polices de valise uniquement pour Mac, les fichiers de collection de type, les polices système Windows et les polices de machine propriétaires (comme les polices utilisées par les machines de gravure ou de broderie) ne sont pas prises en charge. Vous devrez les convertir dans l’un des formats de police standard ou en remplacer une semblable par une autre dans Dynamic Media Classic et sur le serveur d’images.
 
 Une fois les polices téléchargées dans Dynamic Media Classic, comme tout autre fichier, elles doivent également être publiées sur le serveur d’images. Une erreur de modèle très courante consiste à oublier de publier vos polices, ce qui entraîne une erreur d’image — le serveur d’images ne remplace pas une autre police à sa place. En outre, si vous souhaitez utiliser l’option **Extraire le texte** lors du téléchargement, vous devez télécharger vos fichiers de polices avant de télécharger le fichier PSD qui utilise ces polices. La fonction **Extraire le texte** tente de recréer votre texte en tant que calque de texte modifiable et de le placer dans un modèle Dynamic Media Classic. Cette question est abordée dans la rubrique suivante, Options PSD.
 
@@ -124,7 +127,7 @@ Dynamic Media Classic utilise le nom de fichier de cette police (ACaslonPro-Semi
 
 Si vous devez modifier les polices au moyen de l’URL, vous devez appeler le nom RTF de la police (et non l’ID de fichier), sinon vous obtiendrez une erreur. Dans ce cas, le nom correct de cette police est &quot;Adobe Caslon Pro&quot;. Vous trouverez ci-dessous des informations supplémentaires sur les polices et les RTF dans la rubrique Paramètres RTF et de texte.
 
-Les formats de fichier de polices les plus courants disponibles sur les systèmes Windows et Mac sont OpenType et TrueType. OpenType a une extension .OTF, alors que TrueType est .TTF. Les deux formats fonctionnent également dans Dynamic Media Classic.
+Les formats de fichier de polices les plus courants trouvés sur les systèmes Windows et Mac sont OpenType et TrueType. L&#39;OpenType a une extension .OTF, alors que TrueType est .TTF. Les deux formats fonctionnent également dans Dynamic Media Classic.
 
 ### Sélection des options lors du téléchargement de votre fichier PSD
 
