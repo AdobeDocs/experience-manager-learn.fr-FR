@@ -4,21 +4,18 @@ seo-title: Création d’un modèle de données de formulaire
 description: Voici la partie 3 d'un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons créer un modèle de données de formulaire. Le modèle de données de formulaire vous permet de configurer et de vous connecter à des sources de données disparates. Il fournit une interface utilisateur intuitive pour créer un schéma de représentation unifiée des données d'entités et de services d'entreprise à travers les sources de données connectées. La vidéo suivante décrit les étapes de création du modèle de données de formulaire.
 seo-description: Voici la partie 3 d'un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons créer un modèle de données de formulaire. Le modèle de données de formulaire vous permet de configurer et de vous connecter à des sources de données disparates. Il fournit une interface utilisateur intuitive pour créer un schéma de représentation unifiée des données d'entités et de services commerciaux entre les sources de données connectées. La vidéo suivante décrit les étapes de création du modèle de données de formulaire.
 uuid: c3bfd212-049d-4abd-9849-64129dae2a83
-feature: Communication interactive
+feature: communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 723b7ef3-f552-4710-b2a4-410b0b1b7525
-topic: Développement
-role: Développeur
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 1%
+source-wordcount: '323'
+ht-degree: 0%
 
 ---
 
