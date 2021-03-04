@@ -3,15 +3,17 @@ title: Comprendre le partage des ressources entre Origines (CORS) avec les AEM
 description: Le Adobe Experience Manager Cross-Origine Resource Sharing (CORS) permet aux propriétés web non-AEM d’effectuer des appels côté client vers AEM, authentifiés et non authentifiés, pour récupérer du contenu ou interagir directement avec les AEM.
 version: 6.3, 6,4, 6.5
 sub-product: fondation, services de contenu, sites
-feature: null
 topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
 doc-type: article
+topic: Sécurité
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: bc14783840a47fb79ddf1876aca1ef44729d097e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
@@ -174,6 +176,6 @@ La journalisation est disponible sous `com.adobe.granite.cors` :
 
 ## Documents de support
 
-* [aem usine de configuration OSGi pour les stratégies de partage de ressources entre Origines](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [AEM usine de configuration OSGi pour les stratégies de partage de ressources entre Origines](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [Partage des ressources entre Origines (W3C)](https://www.w3.org/TR/cors/)
 * [CONTRÔLE D&#39;ACCÈS HTTP (Mozilla MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
