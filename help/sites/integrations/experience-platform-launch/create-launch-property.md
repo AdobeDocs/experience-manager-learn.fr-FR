@@ -1,7 +1,6 @@
 ---
 title: Créer une propriété Launch
 description: Découvrez comment créer une propriété Launch avec la configuration minimale nécessaire pour configurer le reste de l’intégration. Les utilisateurs se familiariseront avec l’interface utilisateur de lancement et découvriront les extensions, les règles et les workflows de publication.
-feature: launch
 topics: integrations
 audience: administrator
 doc-type: technical video
@@ -9,11 +8,14 @@ activity: setup
 version: cloud-service
 kt: 5980
 thumbnail: 38553.jpg
+topic: Intégrations
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: eabc325c498b4d5b8b5a53b9004f0e89d82cefe3
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 14%
+source-wordcount: '112'
+ht-degree: 16%
 
 ---
 
@@ -26,7 +28,7 @@ Découvrez comment créer une propriété Launch avec la configuration minimale 
 
 ## Étapes suivantes
 
-[Connectez AEM avec le lancement à l’aide de Adobe I/O](connect-aem-launch-adobe-io.md)
+[Connexion d&#39;AEM avec lancement à l&#39;aide d&#39;Adobe I/O](connect-aem-launch-adobe-io.md)
 
 ## Ressources supplémentaires {#additional-resources}
 
