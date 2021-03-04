@@ -4,18 +4,21 @@ seo-title: Utilisation de modèles de données de formulaire basés sur JDBC ave
 description: Cette vidéo explique comment créer un modèle de données de formulaire basé sur une source de données JDBC, un formulaire adaptatif basé sur le modèle de données de formulaire et comment utiliser l’opération "INSERT" à l’aide du modèle de données de formulaire.
 seo-description: Cette vidéo explique comment créer un modèle de données de formulaire basé sur une source de données JDBC, un formulaire adaptatif basé sur le modèle de données de formulaire et comment utiliser l’opération "INSERT" à l’aide du modèle de données de formulaire.
 uuid: 5c664b16-c089-48ad-8bf6-9766d0ddc3c4
-feature: integrations
+feature: Formulaires adaptatifs
 topics: form-data-model
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: 4e5f947c-b49a-423e-9139-51c0c5648318
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 0%
+source-wordcount: '175'
+ht-degree: 2%
 
 ---
 
