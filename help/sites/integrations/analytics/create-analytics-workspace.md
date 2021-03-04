@@ -1,7 +1,7 @@
 ---
 title: Analyser les données avec Analysis Workspace
 description: Découvrez comment mapper les données capturées d’un site Adobe Experience Manager aux mesures et aux dimensions dans les suites de rapports Adobe Analytics. Découvrez comment créer un tableau de bord de rapports détaillé à l'aide de la fonction Analysis Workspace de Adobe Analytics.
-feature: analytics
+feature: analyses
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: setup
 version: cloud-service
 kt: 6409
 thumbnail: KT-6296.jpg
+topic: Intégrations
+role: Professionnel
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 55beee99b91c44f96cd37d161bb3b4ffe38d2687
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2207'
 ht-degree: 1%
 
 ---
@@ -38,7 +41,7 @@ Les variables Analytics actuellement suivies sont les suivantes :
 * `event8` -  `CTA Button Click event`
 * `prop8` -  `CTA Button Id`
 
-![ADOBE ANALYTICS de clic CTA](assets/create-analytics-workspace/page-analytics.png)
+![Adobe Analytics de clic CTA](assets/create-analytics-workspace/page-analytics.png)
 
 ### Objectifs {#objective}
 
