@@ -1,17 +1,20 @@
 ---
 title: Configuration des règles de traduction dans AEM
 description: L’interface utilisateur de configuration de traduction permet à un utilisateur de gérer les règles de traduction de contenu en AEM Sites. Cette vidéo détaille la création d’une nouvelle règle de traduction pour un composant personnalisé.
-feature: language-copy
+feature: Copie de la langue
 topics: localization, content-architecture
 audience: developer, administrator
 doc-type: technical video
 activity: setup
 version: 6.4, 6.5
+topic: Localisation
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 4%
+source-wordcount: '327'
+ht-degree: 7%
 
 ---
 
@@ -36,7 +39,7 @@ Les règles de traduction identifient le contenu AEM à extraire pour la traduct
 
 Accédez à l’interface utilisateur de configuration de traduction :
 
-* **[!UICONTROL aem menu]  Début>  [!UICONTROL Outils] >  [!UICONTROL Général] > Configuration  [[!UICONTROL de traduction]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
+* **[!UICONTROL AEM menu]  Début>  [!UICONTROL Outils] >  [!UICONTROL Général] > Configuration  [[!UICONTROL de traduction]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
 
 ## Avant AEM 6.3 {#prior-to-aem}
 
