@@ -3,11 +3,15 @@ title: Chapitre 4 - Définition des modèles Content Services - Content Services
 seo-title: Pour commencer avec AEM sans en-tête - Chapitre 4 - Définition de modèles Content Services
 description: Le chapitre 4 du didacticiel AEM sans en-tête traite du rôle des AEM Modèles modifiables dans le contexte de AEM Content Services. Les modèles modifiables sont utilisés pour définir la structure de contenu JSON AEM Content Services expose en fin de compte.
 seo-description: Le chapitre 4 du didacticiel AEM sans en-tête traite du rôle des AEM Modèles modifiables dans le contexte de AEM Content Services. Les modèles modifiables sont utilisés pour définir la structure de contenu JSON AEM Content Services expose en fin de compte.
+feature: '"Fragments de contenu, API"'
+topic: '"Sans tête, Gestion de contenu"'
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 5012433a5f1c7169b1a3996453bfdbd5d78e5b1c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 1%
+source-wordcount: '845'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +22,7 @@ Le chapitre 4 du didacticiel AEM sans en-tête traite du rôle des AEM Modèles 
 
 ## Comprendre le rôle des modèles dans AEM Content Services
 
-aem Modèles modifiables sont utilisés pour définir les points de terminaison HTTP qui seront utilisés pour exposer le contenu du Événement au format JSON.
+AEM Modèles modifiables sont utilisés pour définir les points de terminaison HTTP qui seront utilisés pour exposer le contenu du Événement au format JSON.
 
 Les modèles modifiables AEM traditionnellement sont utilisés pour définir des pages Web, mais cette utilisation est simplement une convention. Les modèles modifiables peuvent être utilisés pour composer **tout** ensemble de contenu ; mode d’accès à ce contenu : en tant que code HTML dans un navigateur, en tant que code JSON utilisé par JavaScript (AEM SPA Editor) ou une application mobile est une fonction de la manière dont cette page est demandée.
 
