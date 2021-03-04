@@ -2,19 +2,18 @@
 title: Tâche de révision
 description: Découvrez comment la Tâche de révision d’AEM Assets facilite les workflows de révision et d’approbation les plus courants.
 sub-product: ressources
-feature: review-task
-topics: authoring, collaboration
-audience: author
-doc-type: feature video
-activity: use
+feature: Collaboration
 version: cloud-service
 kt: 4670
 thumbnail: 32050.jpg
+topic: Collaboration
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 15%
+source-wordcount: '38'
+ht-degree: 18%
 
 ---
 
