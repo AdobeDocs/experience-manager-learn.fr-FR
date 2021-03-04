@@ -2,7 +2,7 @@
 title: Prise en main de AEM Sites - Concepts de base des composants
 description: Comprendre la technologie sous-jacente d'un composant de sites Adobe Experience Manager (AEM) à travers un simple exemple "HelloWorld". Des sujets tels que HTL, les modèles Sling, les bibliothèques côté client et les boîtes de dialogue d’auteur sont explorés.
 sub-product: sites
-feature: '"Composants principaux, outils de développement"'
+feature: composants, modèles sling, html
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -11,13 +11,10 @@ audience: developer
 mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
-topic: '"Gestion de contenu, développement"'
-role: Développeur
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1148'
 ht-degree: 4%
 
 ---
