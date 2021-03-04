@@ -1,7 +1,7 @@
 ---
 title: Créer le formulaire initial pour déclencher le processus
 description: Créez un formulaire initial pour déclencher la notification par courrier électronique pour début du processus de signature.
-feature: adaptive-forms
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 6892
 thumbnail: 6892.jpg
+topic: Développement
+role: Professionnel
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 11%
+source-wordcount: '174'
+ht-degree: 13%
 
 ---
 
@@ -24,7 +27,7 @@ Le formulaire initial (Formulaire de refinancement) est utilisé pour signer plu
 
 
 
-| Type de champ | Nom | Objectif | Masqué   | Valeur par défaut |
+| Type de champ | Nom | Objectif | Masqué | Valeur par défaut |
 ------------------------|---------------------------------------|--------------------|--------|-----------------
 | TextField | signed | Pour indiquer l’état de la signature | O | N |
 | TextField | guid | Pour identifier un formulaire de manière unique | O | 3 889 |
