@@ -1,20 +1,17 @@
 ---
 title: Authentification à deux facteurs SMS
 description: Ajouter une couche de sécurité supplémentaire pour aider à confirmer l'identité d'un utilisateur lorsqu'il souhaite effectuer certaines activités
-feature: Formulaires adaptatifs
+feature: intégrations
 topics: adaptive forms
 audience: developer
 doc-type: article
 activity: use
 version: 6.4,6.5
 kt: 6317
-topic: Développement
-role: Développeur
-level: Expérience
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '604'
 ht-degree: 4%
 
 ---
