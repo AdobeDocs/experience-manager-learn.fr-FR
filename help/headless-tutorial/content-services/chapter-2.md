@@ -3,10 +3,14 @@ title: Chapitre 2 - Définition de modèles de fragments de contenu de Événeme
 seo-title: Prise en main de AEM Content Services - Chapitre 2 - Définition de modèles de fragments de contenu de Événement
 description: Le chapitre 2 du didacticiel AEM sans en-tête porte sur l’activation et la définition de modèles de fragments de contenu utilisés pour définir une structure de données normalisée et une interface de création pour la création de Événements.
 seo-description: Le chapitre 2 du didacticiel AEM sans en-tête porte sur l’activation et la définition de modèles de fragments de contenu utilisés pour définir une structure de données normalisée et une interface de création pour la création de Événements.
+feature: Fragments de contenu, API
+topic: Sans tête, Gestion de contenu
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '1004'
 ht-degree: 10%
 
 ---
