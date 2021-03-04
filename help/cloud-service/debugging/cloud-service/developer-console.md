@@ -1,7 +1,7 @@
 ---
 title: Console développeur
-description: aem en tant que Cloud Service fournit une Console développeur pour chaque environnement qui expose divers détails du service AEM en cours d’exécution qui sont utiles pour le débogage.
-feature: null
+description: AEM en tant que Cloud Service fournit une Console développeur pour chaque environnement qui expose divers détails du service AEM en cours d’exécution qui sont utiles pour le débogage.
+feature: Outils de développement
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: develop
 audience: developer
 kt: 5433
 thumbnail: kt-5433.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 1af3661e5c18206d58d339d51d5189834e843023
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1349'
 ht-degree: 2%
 
 ---
@@ -20,7 +23,7 @@ ht-degree: 2%
 
 # Débogage de l’AEM en tant que Cloud Service avec la Console développeur
 
-aem en tant que Cloud Service fournit une Console développeur pour chaque environnement qui expose divers détails du service AEM en cours d’exécution qui sont utiles pour le débogage.
+AEM en tant que Cloud Service fournit une Console développeur pour chaque environnement qui expose divers détails du service AEM en cours d’exécution qui sont utiles pour le débogage.
 
 Chaque AEM en tant qu&#39;environnement Cloud Service dispose de sa propre Console développeur.
 
@@ -45,7 +48,7 @@ Si un Cloud Service affiche un état de dumping d’une erreur 401 Non autorisé
 Pour résoudre le problème 401 Non autorisé :
 
 1. Assurez-vous que votre utilisateur est membre du Profil de produits IMS d&#39;Adobe approprié (administrateurs AEM ou utilisateurs AEM) pour l&#39;AEM associée de la Console développeur en tant qu&#39;instance de produit Cloud Service.
-   + N&#39;oubliez pas que Developer Console accède à 2 instances de produit IMS Adobe ; l’AEM en tant qu’instances d’auteur et de publication Cloud Service, de sorte que les Profils de produits appropriés soient utilisés en fonction du niveau de service auquel l’accès est requis via Developer Console.
+   + N&#39;oubliez pas que Developer Console accède à 2 instances de produit IMS Adobe ; l’AEM en tant qu’instances d’auteur et de publication Cloud Service ; assurez-vous donc que les Profils de produits appropriés sont utilisés en fonction du niveau de service auquel l’accès est requis via Developer Console.
 1. Connectez-vous à l’AEM en tant que Cloud Service (Auteur ou Publier) et assurez-vous que vos utilisateurs et groupes se sont correctement synchronisés dans AEM.
    + Developer Console requiert que votre enregistrement d&#39;utilisateur soit créé dans le niveau de service AEM correspondant pour qu&#39;il s&#39;authentifie dans ce niveau de service.
 1. Effacez vos cookies de navigateur ainsi que l’état de l’application (enregistrement local) et reconnectez-vous à la Console développeur de jeton d&#39;accès, en vous assurant que l’utilisation de cette dernière est correcte et non expirée.
