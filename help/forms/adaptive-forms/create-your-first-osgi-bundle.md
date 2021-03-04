@@ -1,16 +1,19 @@
 ---
 title: Création de votre premier lot OSGi avec des formulaires AEM
 description: Créez votre premier lot OSGi à l’aide de maven et eclipse.
-feature: administration
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '835'
 ht-degree: 3%
 
 ---
