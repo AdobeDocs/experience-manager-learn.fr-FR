@@ -3,7 +3,7 @@ title: Création d’un fragment de Document
 description: 'Voici la partie 5 d''un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons créer un fragment de document pour contenir le nom et l’adresse du destinataire. '
 seo-description: 'Voici la partie 5 d''un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons créer un fragment de document pour contenir le nom et l’adresse du destinataire. '
 uuid: 7fd8a0f2-a921-4e70-91c9-908dae9aeab2
-feature: Communication interactive
+feature: communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,14 +12,11 @@ version: 6.4,6.5
 discoiquuid: 47d3aa97-0bff-48e0-8a65-55e5332f811b
 kt: 5958
 thumbnail: 22350.jpg
-topic: Développement
-role: Développeur
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 1%
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
 
