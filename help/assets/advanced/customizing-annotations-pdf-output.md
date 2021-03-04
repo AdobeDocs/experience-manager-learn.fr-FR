@@ -1,25 +1,23 @@
 ---
 title: Personnalisation des annotations dans AEM Assets
-seo-title: Personnalisation des annotations dans AEM Assets
 description: Le format et le style AEM Assets lors de la sortie au format PDF peuvent être configurés par AEM développeurs.
-feature: asset-share
-topics: authoring, collaboration, operations, sharing
-audience: developer
-doc-type: feature video
-activity: developer
+feature: Collaboration
 version: 6.3, 6.4, 6.5
+topic: Collaboration
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 0%
+source-wordcount: '64'
+ht-degree: 4%
 
 ---
 
 
 # Personnalisation des annotations dans AEM Assets{#using-annotations-in-aem-assets}
 
-aem prend en charge la personnalisation de la sortie de l’annotation au format PDF.
+AEM prend en charge la personnalisation de la sortie de l’annotation au format PDF.
 
 ## Annotation PDF sling:définition OsgiConfig
 
