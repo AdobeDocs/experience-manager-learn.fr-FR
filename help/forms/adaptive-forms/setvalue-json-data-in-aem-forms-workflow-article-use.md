@@ -4,20 +4,17 @@ seo-title: Définition de la valeur de l’élément de données Json dans le pr
 description: Comme un formulaire adaptatif est acheminé à différents utilisateurs dans AEM flux de travail, il sera nécessaire de masquer ou de désactiver certains champs ou panneaux en fonction de la personne qui examine le formulaire. Pour satisfaire ces cas d'utilisation, nous définissons généralement la valeur d'un champ masqué. En fonction de la valeur de ce champ masqué, les règles métier peuvent être créées pour masquer/désactiver les panneaux ou champs appropriés.
 seo-description: Comme un formulaire adaptatif est acheminé à différents utilisateurs dans AEM flux de travail, il sera nécessaire de masquer ou de désactiver certains champs ou panneaux en fonction de la personne qui examine le formulaire. Pour satisfaire ces cas d'utilisation, nous définissons généralement la valeur d'un champ masqué. En fonction de la valeur de ce champ masqué, les règles métier peuvent être créées pour masquer/désactiver les panneaux ou champs appropriés.
 uuid: a4ea6aef-a799-49e5-9682-3fa3b7a442fb
-feature: Formulaires adaptatifs
+feature: formulaires adaptatifs,processus
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 version: 6.4
 discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
-topic: Développement
-role: Développeur
-level: Expérience
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '764'
 ht-degree: 2%
 
 ---
