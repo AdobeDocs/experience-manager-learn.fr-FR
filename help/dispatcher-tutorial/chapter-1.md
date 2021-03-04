@@ -1,12 +1,14 @@
 ---
-title: Chapitre 1 - Configuration et téléchargements de didacticiels
-seo-title: Prise en main de AEM Content Services - Chapitre 1 - Configuration des didacticiels
-description: Chapitre 1 du didacticiel AEM sans titre sur la configuration de la ligne de base pour l’instance AEM pour le didacticiel.
-seo-description: Chapitre 1 du didacticiel AEM sans titre sur la configuration de la ligne de base pour l’instance AEM pour le didacticiel.
+title: '"Chapitre 1 - Concepts, schémas et antimodèles du répartiteur"'
+description: Ce chapitre présente brièvement l'histoire et les mécanismes du répartiteur et explique comment cela influence la façon dont un développeur AEM conçoit ses composants.
+feature: Dispatcher
+topic: Architecture
+role: Architecte
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '17502'
+source-wordcount: '17489'
 ht-degree: 0%
 
 ---
