@@ -1,22 +1,17 @@
 ---
 title: Utilisation de l’accentuation d’image avec AEM Dynamic Media
-seo-title: Utilisation de l’accentuation d’image avec AEM Dynamic Media
 description: Cette vidéo explique pourquoi l’accentuation d’une image est essentielle au maintien de la fidélité de l’image et explique comment utiliser des paramètres avancés pour créer l’image parfaite.
-seo-description: Cette vidéo explique pourquoi l’accentuation d’une image est essentielle au maintien de la fidélité de l’image et explique comment utiliser des paramètres avancés pour créer l’image parfaite.
-uuid: 75ea35e8-7029-4788-b098-2dc0c1c91916
-discoiquuid: 09210489-4d50-434a-ba0c-ea894fe11adf
 sub-product: dynamic-media
-feature: image-profiles, viewer-presets
-topics: images, renditions, authoring
-doc-type: feature video
-audience: all
-activity: use
+feature: Profils d’image, paramètres prédéfinis de la visionneuse
 version: 6.3, 6.4, 6.5
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 14%
+source-wordcount: '125'
+ht-degree: 12%
 
 ---
 
