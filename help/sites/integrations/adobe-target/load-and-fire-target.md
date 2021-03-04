@@ -1,7 +1,7 @@
 ---
 title: Charger et déclencher un appel de Cible
 description: Découvrez comment charger, transférer des paramètres à la demande de page et déclencher un appel de Cible à partir de la page de votre site à l’aide d’une règle de lancement. Les informations de page sont récupérées et transmises en tant que paramètres à l’aide de la couche de données du client Adobe qui vous permet de collecter et de stocker des données sur l’expérience des visiteurs sur une page Web, puis de faciliter l’accès à ces données.
-feature: launch, core-components, data-layer
+feature: Composants principaux, couche de données client Adobe
 topics: integrations, administration, development
 audience: administrator, developer
 doc-type: technical video
@@ -9,10 +9,13 @@ activity: setup
 version: cloud-service
 kt: 6133
 thumbnail: 41243.jpg
+topic: Intégrations
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 9102505bbd826e17bf924cec719d7a430eea5095
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '622'
 ht-degree: 4%
 
 ---
