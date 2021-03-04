@@ -3,15 +3,17 @@ title: Développer pour le partage des ressources entre Origines (CORS) avec les
 description: Un court exemple d’utilisation de CORS pour accéder au contenu AEM à partir d’une application Web externe via du code JavaScript côté client.
 version: 6.3, 6,4, 6.5
 sub-product: fondation, services de contenu, sites
-feature: null
 topics: security, development, content-delivery
 activity: develop
 audience: developer
 doc-type: tutorial
+topic: Sécurité
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: bc14783840a47fb79ddf1876aca1ef44729d097e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -119,7 +121,7 @@ Il est probable que l&#39;effacement complet du cache soit nécessaire pour s&#3
 
 ## Documents d&#39;appui {#supporting-materials}
 
-* [aem usine de configuration OSGi pour les stratégies de partage de ressources entre Origines](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
+* [AEM usine de configuration OSGi pour les stratégies de partage de ressources entre Origines](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [SimpleHTTPServer pour macOS](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)
 * [Python SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)  (compatible Windows/macOS/Linux)
 
