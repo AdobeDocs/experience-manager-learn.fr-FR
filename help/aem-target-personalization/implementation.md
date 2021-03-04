@@ -3,11 +3,15 @@ title: Intégration de Adobe Experience Manager à Adobe Target
 seo-title: Article présentant différentes manières d’intégrer Adobe Experience Manager(AEM) à Adobe Target pour diffuser du contenu personnalisé.
 description: Article expliquant comment configurer Adobe Experience Manager avec Adobe Target pour différents scénarios.
 seo-description: Article expliquant comment configurer Adobe Experience Manager avec Adobe Target pour différents scénarios.
+feature: Fragments d’expérience
+topic: Personnalisation
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 0443c8ff42e773021ff8b6e969f5c1c31eea3ae4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 5%
+source-wordcount: '704'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +29,7 @@ Pour les clients AEM qui souhaitent utiliser les offres Fragment d’expérience
 ## Conditions préalables
 
 * **Adobe Experience Manager (AEM){#aem}**
-   * aem 6.5 (*le dernier Service Pack est recommandé*)
+   * AEM 6.5 (*le dernier Service Pack est recommandé*)
    * Télécharger AEM packages de site de référence WKND
       * [aem-guides-wknd.ui.apps-0.0.1-SNAPSHOT.zip](https://github.com/adobe/aem-guides-wknd/releases/download/archetype-18.1/aem-guides-wknd.ui.apps-0.0.1-SNAPSHOT.zip)
       * [aem-guides-wknd.ui.content-0.0.1-SNAPSHOT.zip](https://github.com/adobe/aem-guides-wknd/releases/download/archetype-18.1/aem-guides-wknd.ui.content-0.0.1-SNAPSHOT.zip)
@@ -37,7 +41,7 @@ Pour les clients AEM qui souhaitent utiliser les offres Fragment d’expérience
    * Experience Cloud doté des solutions suivantes
       * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
-      * [Console Adobe I/O](https://console.adobe.io)
+      * [Adobe I/O Console](https://console.adobe.io)
 
 * **Environnement**
    * Java 1.8 ou Java 11 (AEM 6.5+ uniquement)
@@ -46,11 +50,11 @@ Pour les clients AEM qui souhaitent utiliser les offres Fragment d’expérience
 
 >[!NOTE]
 >
-> Le client doit être mis en service avec l&#39;Experience Platform Launch et Adobe I/O à partir de [l&#39;assistance Adobe](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) ou contacter votre administrateur système.
+> Le client doit être approvisionné en Experience Platform Launch et en Adobe I/O par [prise en charge des Adobes](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) ou contacter votre administrateur système.
 
 ### Configuration de AEM{#set-up-aem}
 
-aem instance d’auteur et de publication est nécessaire pour terminer ce didacticiel. L’instance d’auteur s’exécute sur `http://localhost:4502` et l’instance de publication sur `http://localhost:4503`. Pour plus d&#39;informations, voir : [Configurez un Environnement de développement AEM local](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/local-aem-dev-environment-article-setup.html).
+AEM instance d’auteur et de publication est nécessaire pour terminer ce didacticiel. L’instance d’auteur s’exécute sur `http://localhost:4502` et l’instance de publication sur `http://localhost:4503`. Pour plus d&#39;informations, voir : [Configurez un Environnement de développement AEM local](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/local-aem-dev-environment-article-setup.html).
 
 #### Configuration des instances d’auteur et de publication AEM
 
