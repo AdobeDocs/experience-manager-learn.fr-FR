@@ -1,7 +1,7 @@
 ---
 title: Journaux
-description: Les journaux agissent en tant que première ligne pour le débogage des applications AEM dans AEM en tant que Cloud Service, mais dépendent d'une journalisation adéquate dans l'application AEM déployée.
-feature: null
+description: Les journaux agissent en tant que première ligne pour le débogage des applications AEM en AEM en tant que Cloud Service, mais dépendent d'une journalisation adéquate dans l'application AEM déployée.
+feature: Outils de développement
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: develop
 audience: developer
 kt: 5432
 thumbnail: kt-5432.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 7fd232d6821f91c342dd04fcdd04b9b505cb7250
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '995'
 ht-degree: 3%
 
 ---
@@ -20,7 +23,7 @@ ht-degree: 3%
 
 # Débogage de l’AEM en tant que Cloud Service à l’aide de journaux
 
-Les journaux agissent en tant que première ligne pour le débogage des applications AEM dans AEM en tant que Cloud Service, mais dépendent d&#39;une journalisation adéquate dans l&#39;application AEM déployée.
+Les journaux agissent en tant que première ligne pour le débogage des applications AEM en AEM en tant que Cloud Service, mais dépendent d&#39;une journalisation adéquate dans l&#39;application AEM déployée.
 
 Toute l’activité de journal d’un service AEM d’environnement donné (Auteur, Publier/Publier le répartiteur) est consolidée dans un seul fichier journal, même si différents modules de ce service génèrent les instructions de journal.
 
@@ -31,9 +34,9 @@ Les ID de capsule sont fournis dans chaque instruction de journal et permettent 
 
 ## Fichiers journaux personnalisés
 
-aem en tant que Cloud Services ne prend pas en charge les fichiers journaux personnalisés, mais il prend en charge la journalisation personnalisée.
+AEM en tant que Cloud Services ne prend pas en charge les fichiers journaux personnalisés, mais il prend en charge la journalisation personnalisée.
 
-Pour que les journaux Java soient disponibles en AEM en tant que Cloud Service (via [Cloud Manager](#cloud-manager) ou [Adobe I/O CLI](#aio)), les instructions de journal personnalisées doivent être écrites dans `error.log`. Les journaux écrits dans des journaux nommés personnalisés, tels que `example.log`, ne seront pas accessibles depuis AEM en tant que Cloud Service.
+Pour que les journaux Java soient disponibles dans AEM en tant que Cloud Service (via [Cloud Manager](#cloud-manager) ou [CLI](#aio) Adobe I/O), les instructions de journal personnalisées doivent être écrites dans le `error.log`. Les journaux écrits dans des journaux nommés personnalisés, tels que `example.log`, ne seront pas accessibles depuis AEM en tant que Cloud Service.
 
 ## Journaux des services d’auteur et de publication AEM
 
@@ -68,9 +71,9 @@ Adobe Cloud Manager permet de télécharger les journaux par jour, via une actio
 
 Ces journaux peuvent être téléchargés et inspectés à l&#39;aide de n&#39;importe quel outil d&#39;analyse des journaux.
 
-## Interface de ligne de commande Adobe I/O avec le module externe Cloud Manager{#aio}
+## Adobe I/O CLI avec le module externe Cloud Manager{#aio}
 
-Adobe Cloud Manager prend en charge l’accès à l’AEM en tant que journal Cloud Service via la [CLI ](https://github.com/adobe/aio-cli) Adobe I/O avec le module [Cloud Manager pour l’Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+Adobe Cloud Manager prend en charge l’accès à l’AEM en tant que journal Cloud Service via l’[interface de ligne de commande de l’Adobe I/O](https://github.com/adobe/aio-cli) avec le module [Cloud Manager pour l’Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 Tout d’abord, [configurez l’Adobe I/O avec le module externe Cloud Manager](../../local-development-environment/development-tools.md#aio-cli).
 
@@ -106,7 +109,7 @@ Environment Id Service    Name
 
 ### Journaux de destination{#aio-cli-tail-logs}
 
-L’interface de ligne de commande Adobe I/O permet d’extraire les journaux en temps réel de l’AEM en tant que Cloud Service à l’aide de la commande [tail-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagertail-log-environmentid-service-name). L’engrenage est utile pour surveiller l’activité du journal en temps réel lorsque des actions sont effectuées sur l’AEM en tant qu’environnement Cloud Service.
+L&#39;interface de ligne de commande d&#39;Adobe I/O permet d&#39;extraire les journaux en temps réel de l&#39;AEM en tant que Cloud Service à l&#39;aide de la commande [tail-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagertail-log-environmentid-service-name). L’engrenage est utile pour surveiller l’activité du journal en temps réel lorsque des actions sont effectuées sur l’AEM en tant qu’environnement Cloud Service.
 
 ```
 $ aio config:set cloudmanager_programid <PROGRAM ID>
@@ -123,7 +126,7 @@ $ aio cloudmanager:tail-logs 12345 author | grep com.example.MySlingModel
 
 ### Téléchargement de journaux{#aio-cli-download-logs}
 
-L’interface de ligne de commande Adobe I/O permet de télécharger les journaux de l’AEM en tant que Cloud Service à l’aide de la commande [download-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerdownload-logs-environmentid-service-name-days)). Ceci produit le même résultat final que le téléchargement des journaux depuis l’interface utilisateur Web de Cloud Manager, la différence étant que la commande `download-logs` consolide les journaux sur plusieurs jours, en fonction du nombre de jours de journaux requis.
+L’interface de ligne de commande Adobe I/O permet de télécharger les journaux de l’AEM en tant que Cloud Service à l’aide de la commande [download-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerdownload-logs-environmentid-service-name-days)). Cela produit le même résultat final que le téléchargement des journaux depuis l’interface utilisateur Web de Cloud Manager, la différence étant que la commande `download-logs` consolide les journaux sur plusieurs jours, en fonction du nombre de jours de journaux requis.
 
 ```
 $ aio config:set cloudmanager_programid <PROGRAM ID>
@@ -173,7 +176,7 @@ La définition du niveau de journal le plus approprié pour chaque type d&#39;en
 
 ### Environnement de variables spécifiques pour définir les niveaux de journal Java
 
-Une alternative à la définition de niveaux de journaux Java statiques bien connus pour chaque environnement consiste à utiliser AEM en tant que Cloud Service [variables spécifiques à l’environnement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values) pour paramétrer les niveaux de journaux, ce qui permet de modifier dynamiquement les valeurs par le biais de l’interface de ligne de commande [Adobe I/O avec le module externe Cloud Manager](#aio-cli).
+Une alternative à la définition de niveaux de journaux Java statiques bien connus pour chaque environnement consiste à utiliser AEM comme Cloud Service [variables spécifiques à l’environnement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values) pour paramétrer les niveaux de journaux, ce qui permet de modifier dynamiquement les valeurs par le biais de l’interface de ligne de commande [Adobe I/O avec le module externe Cloud Manager](#aio-cli).
 
 Pour ce faire, il est nécessaire de mettre à jour les configurations OSGi de journalisation afin d’utiliser les espaces réservés de variable spécifiques à l’environnement. [Les ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) valeurs par défaut des niveaux de journal doivent être définies conformément aux recommandations [ ](#log-levels)Adobes. Par exemple :
 
@@ -189,7 +192,7 @@ Pour ce faire, il est nécessaire de mettre à jour les configurations OSGi de j
 Cette approche présente des inconvénients qui doivent être pris en compte :
 
 + [Un nombre limité de variables d&#39;environnement est autorisé](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables) et la création d&#39;une variable pour gérer le niveau de journal en utilise une.
-+ Les variables d’Environnement ne peuvent être gérées par programmation que par l’intermédiaire des API HTTP [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) ou [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
++ Les variables d’Environnement ne peuvent être gérées par programmation que par le biais des API HTTP [Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) ou [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
 + Les modifications apportées aux variables d’environnement doivent être réinitialisées manuellement par un outil pris en charge. L’oubli de réinitialiser un environnement de trafic élevé, tel que Production, à un niveau de journal moins détaillé peut inonder les journaux et affecter les performances AEM.
 
 _Les variables spécifiques à l&#39;Environnement ne fonctionnent pas pour les configurations de serveur Web Apache ou de journal du répartiteur, car elles ne sont pas configurées via la configuration OSGi._
