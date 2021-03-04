@@ -1,7 +1,7 @@
 ---
 title: Intégrer les employés d'Asset compute aux Profils de traitement AEM
-description: aem en tant que Cloud Service s’intègre aux travailleurs d’Asset compute déployés à Adobe I/O Runtime par le biais de Profils de traitement AEM Assets. Les Profils de traitement sont configurés dans le service Auteur pour traiter des ressources spécifiques à l’aide de travailleurs personnalisés et pour stocker les fichiers générés par les travailleurs en tant que rendus de ressources.
-feature: asset-compute, processing-profiles
+description: AEM en tant que Cloud Service s’intègre aux travailleurs d’Asset compute déployés à Adobe I/O Runtime par le biais de Profils de traitement AEM Assets. Les Profils de traitement sont configurés dans le service Auteur pour traiter des ressources spécifiques à l’aide de travailleurs personnalisés et pour stocker les fichiers générés par les travailleurs en tant que rendus de ressources.
+feature: Microservices Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
+topic: Intégrations, développement
+role: Développeur
+level: Intermédiaire, expérimenté
 translation-type: tm+mt
-source-git-commit: 6f5df098e2e68a78efc908c054f9d07fcf22a372
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '638'
 ht-degree: 2%
 
 ---
@@ -40,7 +43,7 @@ Créez d’abord un nouveau Profil de traitement qui appellera le programme de t
       + Extension du rendu qui sera généré. Définissez cette valeur sur `png`, car il s’agit du format de sortie pris en charge par le service Web du collaborateur, et le résultat est un arrière-plan transparent derrière le cercle découpé.
    + __Point de terminaison :__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/worker`
       + Il s&#39;agit de l&#39;URL du travailleur obtenu via `aio app get-url`. Assurez-vous que l’URL pointe vers l’espace de travail approprié en fonction de l’AEM en tant qu’environnement Cloud Service.
-      + Assurez-vous que l’URL du collaborateur pointe vers l’espace de travail approprié. aem en tant que scène de Cloud Service doit utiliser l’URL de l’espace de travail de scène et AEM en tant que production de Cloud Service doit utiliser l’URL de l’espace de travail de production.
+      + Assurez-vous que l’URL du collaborateur pointe vers l’espace de travail approprié. AEM en tant que scène de Cloud Service doit utiliser l’URL de l’espace de travail de scène et AEM en tant que production de Cloud Service doit utiliser l’URL de l’espace de travail de production.
    + __Paramètres de service__
       + Appuyez sur __Paramètre d&#39;Ajoute__.
          + Clé: `size`
