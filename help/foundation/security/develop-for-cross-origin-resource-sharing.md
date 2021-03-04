@@ -3,17 +3,15 @@ title: Développer pour le partage des ressources entre Origines (CORS) avec les
 description: Un court exemple d’utilisation de CORS pour accéder au contenu AEM à partir d’une application Web externe via du code JavaScript côté client.
 version: 6.3, 6,4, 6.5
 sub-product: fondation, services de contenu, sites
+feature: null
 topics: security, development, content-delivery
 activity: develop
 audience: developer
 doc-type: tutorial
-topic: Sécurité
-role: Développeur
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
