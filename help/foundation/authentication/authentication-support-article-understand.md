@@ -2,20 +2,17 @@
 title: Comprendre la prise en charge de l’authentification dans AEM
 description: 'Vue consolidée dans les mécanismes d''authentification (et parfois d''autorisation) pris en charge par AEM. '
 version: 6.3, 6.4, 6.5
-feature: 'Utilisateurs et groupes '
+feature: authentification
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
 doc-type: article
 kt: 406
-topic: Architecture
-role: Architecte
-level: Expérience
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 12%
+source-wordcount: '139'
+ht-degree: 9%
 
 ---
 
