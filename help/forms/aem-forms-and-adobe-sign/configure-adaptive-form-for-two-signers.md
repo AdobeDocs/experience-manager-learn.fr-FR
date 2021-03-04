@@ -1,21 +1,18 @@
 ---
 title: Contrat de location avec 2 signataires
 description: Contrat de location avec 2 signataires. La vidéo explique les différentes étapes nécessaires à la configuration d’un formulaire adaptatif avec 2 signataires.
-feature: '"Forms adaptatif,Adobe Sign"'
+feature: formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 39294.jpg
 kt: 6071
-topic: Développement
-role: Administrator
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 7%
+source-wordcount: '59'
+ht-degree: 5%
 
 ---
 
