@@ -4,18 +4,21 @@ seo-title: Utilisation des API de géolocalisation dans Forms adaptatif
 description: Renseignez les champs d’adresse de votre formulaire à l’aide de l’api de géolocalisation.
 seo-description: Renseignez les champs d’adresse de votre formulaire à l’aide de l’api de géolocalisation.
 uuid: 5a461659-6873-4ea1-9f37-8296e5a9d895
-feature: adaptive-forms,
+feature: Formulaires adaptatifs
 topics: integrations
 audience: developer
 doc-type: article
 activity: develop
 version: 6.3,6.4,6.5
 discoiquuid: 3400251b-aee0-4d69-994b-e1643fabc868
+topic: Développement
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 4%
+source-wordcount: '434'
+ht-degree: 5%
 
 ---
 
@@ -32,7 +35,7 @@ Les étapes suivantes ont été suivies pour utiliser l’API de géolocalisatio
 
 1. Un fragment de formulaire adaptatif a été créé avec des champs pour contenir l’adresse actuelle.
 
-1. L&#39;API de géolocalisation a été appelée sur le événement de clic de l&#39;objet image du formulaire adaptatif.
+1. L’API de géolocalisation a été appelée sur le événement de clic de l’objet image du formulaire adaptatif.
 
 1. Les données JSON renvoyées par l’appel d’API ont été analysées et les valeurs des champs de formulaire adaptatif ont été définies en conséquence.
 
