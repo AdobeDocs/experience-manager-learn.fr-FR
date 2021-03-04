@@ -2,17 +2,17 @@
 title: Utilisation de l’importation et de l’exportation des métadonnées en AEM Assets
 description: Découvrez comment utiliser les fonctions d’importation et d’exportation des métadonnées des ressources Adobe Experience Manager. Les fonctions d’importation et d’exportation permettent aux auteurs de contenu de mettre à jour en bloc les métadonnées des ressources existantes.
 version: 6.3, 6.4, 6.5, cloud-service
-topics: Content Management
+topic: Gestion de contenu
 feature: 'Métadonnées  '
 role: Admin
 level: Intermédiaire
 kt: 647, 917
 thumbnail: 22132.jpg
 translation-type: tm+mt
-source-git-commit: 0d012d61b7740e461e641dddd6c5255a022305ea
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 4%
+source-wordcount: '265'
+ht-degree: 5%
 
 ---
 
@@ -41,7 +41,7 @@ Découvrez comment utiliser les fonctions d’importation et d’exportation des
 * La première colonne prend par défaut la valeur `assetPath`, qui contient le chemin d’accès JCR absolu pour une ressource.
 
 * Les colonnes suivantes de la première ligne pointent vers d’autres propriétés de métadonnées d’un fichier.
-   * Par exemple : `dc:title, dc:description, jcr:title`
+   * Par exemple : `dc:title, dc:description, jcr:title`
 
 * Format de propriété Valeur unique
 
