@@ -1,7 +1,7 @@
 ---
 title: Création et déploiements
 description: Adobe Cloud Manager facilite la création de code et les déploiements vers AEM en tant que Cloud Service. Des échecs peuvent survenir pendant les étapes du processus de création, ce qui nécessite une action pour les résoudre. Ce guide décrit les échecs courants du déploiement et explique comment les aborder au mieux.
-feature: null
+feature: Outils de développement
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: develop
 audience: developer
 kt: 5434
 thumbnail: kt-5424.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b9fb3cb0c12afcabf4a92ded3d7d330ac9d229d6
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2537'
+source-wordcount: '2542'
 ht-degree: 0%
 
 ---
@@ -123,7 +126,7 @@ Les scripts de redirection définissent le contenu de base, les utilisateurs, le
 
 _Ce problème affecte uniquement les environnements qui ne sont pas en production et qui ne se mettent PAS automatiquement à jour vers la dernière version AEM._
 
-aem en tant que Cloud Service inclut automatiquement la dernière version des composants de base dans chaque AEM version, ce qui signifie qu’une fois qu’un environnement Cloud Service est mis à jour automatiquement ou manuellement, une version plus récente des composants de base est déployée sur cet .
+AEM en tant que Cloud Service inclut automatiquement la dernière version des composants de base dans chaque AEM version, ce qui signifie qu’une fois qu’un environnement Cloud Service est mis à jour automatiquement ou manuellement, une version plus récente des composants de base est déployée sur cet .
 
 Est possible car l’étape de création de l’image échoue lorsque :
 
