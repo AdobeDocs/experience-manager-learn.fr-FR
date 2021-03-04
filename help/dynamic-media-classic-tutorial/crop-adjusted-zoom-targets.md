@@ -2,15 +2,18 @@
 title: Recadrage, images modifiées et Cibles de zoom
 description: L’image originale de Dynamic Media Classic prend en charge la création de versions rognées distinctes pour chaque image afin d’afficher des détails ou des nuances sans avoir à créer des versions rognées distinctes pour chaque image. Découvrez comment recadrer des images dans Dynamic Media Classic et les enregistrer en tant que nouveau fichier original ou image virtuelle, enregistrer des images modifiées virtuelles et les utiliser à la place de fichiers originaux, et créer des Cibles de zoom sur vos images pour afficher les détails en surbrillance.
 sub-product: dynamic-media
-feature: smart-crop
+feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2673'
 ht-degree: 0%
 
 ---
@@ -151,7 +154,7 @@ Voici le processus de création de cibles dans Dynamic Media Classic.
    - La taille de la cible est déterminée par la taille de la vue dans le paramètre prédéfini de la visionneuse. Cela détermine la taille de l’image de zoom principale. Voir _Définition de la taille de la Vue_, ci-dessous.
 
 4. Vous verrez la cible que vous venez de créer devenir bleue, et à droite vous verrez une version miniature de cette cible, ainsi que le nom par défaut &quot;cible-0&quot;.
-5. Pour renommer votre cible, cliquez sur sa miniature, tapez un nouveau **nom**, puis cliquez sur **Saisissez** ou **onglet** — si vous cliquez tout simplement sur le bouton de la souris, votre nom ne sera pas enregistré.
+5. Pour renommer votre cible, cliquez sur sa miniature, tapez un nouveau **nom**, puis cliquez sur **Entrée** ou **Onglet** — si vous cliquez tout simplement sur votre nom, celui-ci ne sera pas enregistré.
 6. Lorsque la cible est sélectionnée, la zone est entourée de lignes en pointillés verts et vous pouvez la redimensionner et la déplacer. Faites glisser les coins pour les redimensionner ou faites glisser la zone de cible pour les déplacer.
 
    - L’image sera alors chargée dans la visionneuse de zoom personnalisée par défaut. Assurez-vous que le paramètre prédéfini de visionneuse prend en charge les Cibles de zoom. En général, tous les paramètres prédéfinis standard dotés du mot &quot;-Guided&quot; ont été conçus pour être utilisés avec les Cibles de zoom. Pour utiliser les cibles, placez le pointeur de la souris sur la miniature de la cible (ou icône de zone réactive) pour afficher l’étiquette, puis cliquez dessus pour afficher le zoom de la visionneuse sur cette fonction.
