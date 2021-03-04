@@ -1,7 +1,7 @@
 ---
 title: Créer un service OSGi
 description: Créer un service OSGi pour stocker les formulaires à signer
-feature: adaptive-forms
+feature: Workflow
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6886.jpg
 kt: 6886
+topic: Développement
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
+source-wordcount: '356'
+ht-degree: 1%
 
 ---
 
@@ -166,7 +169,7 @@ public void updateSignatureStatus(String formData, String guid) {
 
 ## Obtenir le prochain formulaire à signer
 
-Le code suivant a été utilisé pour obtenir le formulaire suivant pour la signature d’un ID de client donné avec l’état 0. Si la requête SQL ne renvoie aucune ligne, nous renvoyons la chaîne **&quot;AllDone&quot;**, ce qui indique qu&#39;il n&#39;y a plus de formulaires pour la signature de l&#39;ID de client donné.
+Le code suivant a été utilisé pour obtenir le formulaire suivant pour la signature d’un ID de client donné avec l’état 0. Si la requête SQL ne renvoie aucune ligne, nous renvoyons la chaîne **&quot;AllDone&quot;** qui indique qu&#39;il n&#39;y a plus de formulaires pour la signature de l&#39;ID de client donné.
 
 ```java
 @Override
