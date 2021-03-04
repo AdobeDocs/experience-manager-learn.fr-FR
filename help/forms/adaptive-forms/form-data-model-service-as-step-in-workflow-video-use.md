@@ -4,18 +4,21 @@ seo-title: Utilisation du service de modèle de données de formulaire comme ét
 description: A compter de AEM Forms 6.4, nous avons désormais la possibilité d’utiliser le modèle de données de formulaire dans le cadre de AEM Workflow. La vidéo suivante décrit les étapes nécessaires à la configuration de l’étape Modèle de données de formulaire dans AEM flux de travail.
 seo-description: A compter de AEM Forms 6.4, nous avons désormais la possibilité d’utiliser le modèle de données de formulaire dans le cadre de AEM Workflow. La vidéo suivante décrit les étapes nécessaires à la configuration de l’étape Modèle de données de formulaire dans AEM flux de travail.
 uuid: ecd5d5aa-01eb-48fb-872f-66c656ae14df.
-feature: workflow
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: c442f439-1e5d-4f96-85df-b818c28389ff
+topic: Développement
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 0%
+source-wordcount: '330'
+ht-degree: 1%
 
 ---
 
