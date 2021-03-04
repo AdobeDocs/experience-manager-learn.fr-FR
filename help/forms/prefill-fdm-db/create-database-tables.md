@@ -1,7 +1,7 @@
 ---
 title: Création de tables de base de données
 description: Créer une base de données à utiliser par le modèle de données de formulaire
-feature: formulaires adaptatifs
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: article
@@ -9,11 +9,14 @@ activity: implement
 version: 6.4,6.5
 kt: 5811
 thumbnail: kt-5811.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 0%
+source-wordcount: '104'
+ht-degree: 3%
 
 ---
 
