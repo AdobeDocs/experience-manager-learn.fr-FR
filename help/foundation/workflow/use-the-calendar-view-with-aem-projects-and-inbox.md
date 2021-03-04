@@ -4,20 +4,17 @@ seo-title: Utiliser la Vue de calendrier avec AEM projets et la boîte de récep
 description: 'La Vue de calendrier AEM effectue le suivi des projets et des tâches dans une vue de calendrier afin de faciliter la gestion et la planification des projets. Avec la vue de calendrier, l’utilisateur aura une visibilité globale sur les projets et les tâches actuellement en cours, planifiés, en retard et en retard. '
 seo-description: La Vue de calendrier AEM effectue le suivi des projets et des tâches dans une vue de calendrier afin de faciliter la gestion et la planification des projets. Avec la vue de calendrier, l’utilisateur aura une visibilité globale sur les projets et les tâches actuellement en cours, planifiés, en retard et en retard.
 version: 6.3, 6.4, 6.5
-feature: '"Workflow, Projects"'
+feature: boîte de réception, projets, processus
 topics: governance, collaboration
 activity: use
 audience: author, analyst
 doc-type: feature video
 uuid: 3dc9999c-eddf-4e42-9aa9-87a37a47699d
 discoiquuid: 5ad21858-a4a2-486c-98dc-4f5ba46a3bc1
-topic: Collaboration
-role: Professionnel
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
