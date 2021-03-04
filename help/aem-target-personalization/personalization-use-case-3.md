@@ -3,11 +3,15 @@ title: Personnalisation à l’aide du compositeur d’expérience visuelle Adob
 seo-title: Personnalisation à l’aide du compositeur d’expérience visuelle Adobe Target (VEC)
 description: Didacticiel de bout en bout montrant comment créer et diffuser une expérience personnalisée à l’aide du compositeur d’expérience visuelle Adobe Target (VEC).
 seo-description: Didacticiel de bout en bout montrant comment créer et diffuser une expérience personnalisée à l’aide du compositeur d’expérience visuelle Adobe Target (VEC).
+feature: Fragments d’expérience
+topic: Personnalisation
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 0443c8ff42e773021ff8b6e969f5c1c31eea3ae4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 2%
+source-wordcount: '615'
+ht-degree: 3%
 
 ---
 
@@ -34,8 +38,8 @@ Pour cet exercice, les utilisateurs suivants doivent être impliqués et pour ex
 ### Conditions préalables
 
 * **AEM**
-   * [aem publier une ](./implementation.md#getting-aem) instance sur 4503
-   * [aem intégré à Adobe Target à l&#39;aide de Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
+   * [AEM publier une ](./implementation.md#getting-aem) instance sur 4503
+   * [AEM intégré à Adobe Target à l&#39;aide de Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * Accès à vos organisations Adobe Experience Cloud - <https://>`<yourcompany>`.experience encecloud.adobe.com
    * Experience Cloud doté de [Adobe Target](https://experiencecloud.adobe.com)
