@@ -1,28 +1,32 @@
 ---
-title: Intégration de Adobe Experience Manager avec Adobe Target à l'aide d'Experience Platform Launch et de Adobe I/O
-seo-title: Intégration de Adobe Experience Manager avec Adobe Target à l'aide d'Experience Platform Launch et de Adobe I/O
-description: Procédure pas à pas pour intégrer Adobe Experience Manager à Adobe Target en utilisant l'Experience Platform Launch et Adobe I/O
-seo-description: Procédure pas à pas pour intégrer Adobe Experience Manager à Adobe Target en utilisant l'Experience Platform Launch et Adobe I/O
+title: Intégration de Adobe Experience Manager avec Adobe Target à l'aide d'Experience Platform Launch et d'Adobes I/O
+seo-title: Intégration de Adobe Experience Manager avec Adobe Target à l'aide d'Experience Platform Launch et d'Adobes I/O
+description: Procédure pas à pas pour intégrer Adobe Experience Manager à Adobe Target en utilisant l'Experience Platform Launch et l'Adobe I/O
+seo-description: Procédure pas à pas pour intégrer Adobe Experience Manager à Adobe Target en utilisant l'Experience Platform Launch et l'Adobe I/O
+feature: Fragments d’expérience
+topic: Personnalisation
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 1209064fd81238d4611369b8e5b517365fc302e3
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 4%
+source-wordcount: '1103'
+ht-degree: 5%
 
 ---
 
 
-# Utilisation de Adobe Experience Platform Launch via la console Adobe I/O
+# Utilisation de Adobe Experience Platform Launch via Adobe I/O Console
 
 ## Conditions préalables
 
-* [aem création et publication d’](./implementation.md#set-up-aem) instanceronning sur les ports localhost 4502 et 4503, respectivement
+* [AEM création et publication d’](./implementation.md#set-up-aem) instanceronning sur les ports localhost 4502 et 4503, respectivement
 * **Experience Cloud**
    * Accès à vos organisations Adobe Experience Cloud - <https://>`<yourcompany>`.experience encecloud.adobe.com
    * Experience Cloud doté des solutions suivantes
       * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
-      * [Console Adobe I/O](https://console.adobe.io)
+      * [Adobe I/O Console](https://console.adobe.io)
 
       >[!NOTE]
       >Vous devez disposer des autorisations nécessaires pour développer, approuver, publier, gérer les extensions et gérer les Environnements au lancement. Si vous ne parvenez pas à effectuer l’une de ces étapes, car les options de l’interface utilisateur ne sont pas disponibles, contactez votre administrateur Experience Cloud pour demander l’accès. Pour plus d’informations sur les autorisations de lancement, [voir la documentation](https://docs.adobelaunch.com/administration/user-permissions).
@@ -103,7 +107,7 @@ L&#39;Extension de la cible se compose de deux parties principales :
 4. Cliquez sur le bouton **Configurer** et vous pouvez remarquer la fenêtre de configuration avec les informations d’identification de votre compte de Cible importées, ainsi que la version at.js de cette extension.
    ![Cible - Configuration de l’extension](assets/using-launch-adobe-io/launch-target-extension-2.png)
 
-   Lorsque la Cible est déployée via des codes incorporés de lancement asynchrones, vous devez coder en dur un fragment de code masqué à l’avance sur vos pages avant le lancement des codes incorporés afin de gérer le scintillement de contenu. Nous en apprendrons plus sur le tireur d&#39;élite qui se cache plus tard. Vous pouvez télécharger le fragment de code prémasqué [ici](assets/using-launch-adobe-io/prehiding.js)
+   Lorsque la Cible est déployée via des codes incorporés de lancement asynchrones, vous devez coder en dur un extrait de code masqué à l’avance sur vos pages avant le lancement des codes incorporés afin de gérer le scintillement de contenu. Nous en apprendrons plus sur le tireur d&#39;élite qui se cache plus tard. Vous pouvez télécharger le fragment de code prémasqué [ici](assets/using-launch-adobe-io/prehiding.js)
 
 5. Cliquez sur **Enregistrer** pour terminer l&#39;ajout de l&#39;Extension de la cible à votre propriété Launch et vous devriez maintenant voir l&#39;Extension de la cible répertoriée sous la liste des extensions **Installé**.
 
@@ -128,15 +132,15 @@ L&#39;Extension de la cible se compose de deux parties principales :
 5. Enfin, exécutez l&#39;option **Créer et publier en production** pour transmettre vos modifications à la production.
    ![Création et publication en production](assets/using-launch-adobe-io/build-and-publish.png)
 
-### Adobe Experience Manager 
+### Adobe Experience Manager
 
 >[!VIDEO](https://video.tv.adobe.com/v/28416?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Accordez à l’intégration Adobe I/O l’accès à certains espaces de travail avec le rôle [approprié pour permettre à une équipe centrale d’effectuer des modifications pilotées par l’API dans quelques espaces de travail seulement](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
+> Accordez à l&#39;intégration d&#39;Adobe I/O l&#39;accès à certains espaces de travail avec le rôle [approprié pour permettre à une équipe centrale d&#39;effectuer des modifications pilotées par l&#39;API dans quelques espaces de travail seulement](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
 
-1. Créez l&#39;intégration IMS dans AEM à l&#39;aide des informations d&#39;identification de Adobe I/O. (01:12 à 03:55)
+1. Créez l&#39;intégration IMS dans AEM à l&#39;aide des informations d&#39;identification de l&#39;Adobe I/O. (01:12 à 03:55)
 2. Dans Experience Platform Launch, créez une propriété. (couvert [au-dessus](#create-launch-property))
 3. A l’aide de l’intégration IMS de l’étape 1, créez l’intégration Experience Platform Launch pour importer votre propriété Launch.
 4. Dans AEM, mappez l’intégration de l’Experience Platform Launch à un site à l’aide de la configuration du navigateur. (05:28 à 06:14)
