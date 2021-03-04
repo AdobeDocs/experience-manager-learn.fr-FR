@@ -1,7 +1,6 @@
 ---
 title: Personnalisation de l’expérience de la page Web complète
 description: Découvrez comment créer une activité de Cible pour rediriger les pages de votre site Web AEM vers de nouvelles pages à l’aide de Adobe Target.
-feature: targeting
 topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
@@ -9,10 +8,13 @@ activity: use
 version: cloud-service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
+topic: Intégrations
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '464'
 ht-degree: 1%
 
 ---
@@ -62,7 +64,7 @@ Le site WKND a repensé sa page d&#39;accueil et souhaite rediriger ses visiteur
 
 1. Pour Objectifs et paramètres, choisissez la source de Rapports comme Adobe Target et sélectionnez la mesure Objectif comme Conversion avec une action de vue de page.
 
-   ![Goals](assets/goals.png)
+   ![Objectifs](assets/goals.png)
 
 1. Attribuez un nom à votre activité et enregistrez.
 1. Activez votre activité enregistrée pour activer vos modifications.
