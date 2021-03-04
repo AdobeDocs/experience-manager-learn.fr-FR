@@ -2,17 +2,20 @@
 title: Mappage de composants SPA aux composants AEM | Prise en main de l'AEM SPA Editor et réaction
 description: Découvrez comment mapper des composants Réagir aux composants Adobe Experience Manager (AEM) avec l’AEM SDK JS de l’éditeur SPA. Le mappage de composants permet aux utilisateurs d’effectuer des mises à jour dynamiques sur SPA composants dans AEM Éditeur de SPA, comme pour la création d’ traditionnelle.
 sub-product: sites
-feature: maven-archetype, SPA Editor
+feature: Éditeur de SPA
 topics: development
 version: cloud-service
 activity: develop
 audience: developer
 kt: 4854
 thumbnail: 4854-spa-react.jpg
+topic: SPA
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 52748ff530e98c4ec21b84250bd73543899db4e4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2259'
+source-wordcount: '2264'
 ht-degree: 2%
 
 ---
@@ -66,7 +69,7 @@ Vous pouvez toujours vue le code terminé sur [GitHub](https://github.com/adobe/
 
 ## Approche de mappage
 
-Le concept de base est de mapper un composant SPA à un composant AEM. aem composants, exécuter côté serveur, exporter du contenu dans le cadre de l’API du modèle JSON. Le contenu JSON est consommé par le SPA, exécutant côté client dans le navigateur. Un mappage 1:1 entre les composants SPA et un composant AEM est créé.
+Le concept de base est de mapper un composant SPA à un composant AEM. AEM composants, exécuter côté serveur, exporter du contenu dans le cadre de l’API du modèle JSON. Le contenu JSON est consommé par le SPA, exécutant côté client dans le navigateur. Un mappage 1:1 entre les composants SPA et un composant AEM est créé.
 
 ![Présentation générale du mappage d&#39;un composant AEM à un composant de réaction](./assets/map-components/high-level-approach.png)
 
@@ -333,7 +336,7 @@ Avant de passer au code SPA, inspectez le modèle JSON fourni par AEM.
 
 ## Mettre à jour les stratégies dans AEM
 
-Le composant `Image` n&#39;est visible que dans **webpack-dev-server**. Ensuite, déployez le SPA mis à jour pour AEM et mettez à jour les stratégies de modèle.
+Le composant `Image` n&#39;est visible que dans le **webpack-dev-server**. Ensuite, déployez le SPA mis à jour pour AEM et mettez à jour les stratégies de modèle.
 
 1. Arrêtez le **webpack-dev-server** et à partir de la racine du projet, déployez les modifications sur AEM en utilisant vos compétences Maven :
 
