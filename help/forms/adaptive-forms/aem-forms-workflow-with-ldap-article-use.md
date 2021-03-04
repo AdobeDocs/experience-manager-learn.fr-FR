@@ -3,7 +3,7 @@ title: Utilisation de ldap avec Aem Forms Workflow
 seo-title: Utilisation de ldap avec Aem Forms Workflow
 description: Affectation d’une tâche de processus AEM Forms au responsable de l’émetteur
 seo-description: Affectation d’une tâche de processus AEM Forms au responsable de l’émetteur
-feature: '"Forms adaptatif,Workflow"'
+feature: formulaires adaptatifs,processus
 topics: integrations
 audience: developer
 doc-type: article
@@ -11,14 +11,11 @@ activity: setup
 version: 6.3,6.4,6.5
 uuid: 3e32c3a7-387f-4652-8a94-4e6aa6cd5ab8
 discoiquuid: 671872b3-3de0-40da-9691-f8b7e88a9443
-topic: Développement
-role: Administrator
-level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 1%
+source-wordcount: '545'
+ht-degree: 0%
 
 ---
 
