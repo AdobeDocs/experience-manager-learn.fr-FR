@@ -1,7 +1,6 @@
 ---
 title: Personnalisation à l’aide du compositeur d’expérience visuelle
 description: Découvrez comment créer une Activité Adobe Target à l’aide du compositeur d’expérience visuelle.
-feature: targeting
 topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
@@ -9,11 +8,14 @@ activity: use
 version: cloud-service
 kt: 6352
 thumbnail: 6352-personalization-using-vec.jpg
+topic: Intégrations
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 1%
+source-wordcount: '521'
+ht-degree: 2%
 
 ---
 
@@ -70,7 +72,7 @@ La page d&#39;accueil du site WKND présente les activités locales ou la meille
 
 1. Pour Objectifs et paramètres, choisissez la source de Rapports comme Adobe Target et sélectionnez la mesure Objectif comme Conversion avec une action de vue de page.
 
-   ![Goals](assets/goals.png)
+   ![Objectifs](assets/goals.png)
 
 1. Attribuez un nom à votre activité et enregistrez.
 1. Activez votre activité enregistrée pour activer vos modifications.
