@@ -4,7 +4,7 @@ seo-title: Création d’un formulaire adaptatif
 description: Dans la partie 1, nous allons créer un formulaire adaptatif, ajouter et configurer la barre d'outils avec les boutons appropriés.
 seo-description: Dans la partie 1, nous allons créer un formulaire adaptatif, ajouter et configurer la barre d'outils avec les boutons appropriés.
 uuid: 4ab7f01e-a75b-4e08-a5d8-690c63773ec3
-feature: adaptive-forms
+feature: Formulaires adaptatifs
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -12,11 +12,14 @@ activity: understand
 discoiquuid: 1c9fb7b6-98dd-4725-b787-ac9e71906500
 kt: 4208
 thumbnail: 22173.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 0%
+source-wordcount: '69'
+ht-degree: 5%
 
 ---
 
