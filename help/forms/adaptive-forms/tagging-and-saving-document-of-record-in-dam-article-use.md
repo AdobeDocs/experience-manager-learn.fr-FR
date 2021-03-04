@@ -4,20 +4,17 @@ seo-title: Balisage et stockage d’un DE AEM Forms dans DAM
 description: Cet article décrit le cas d’utilisation de stockage et de balisage du DE généré par AEM Forms dans AEM DAM. Le balisage du document est effectué en fonction des données de formulaire envoyées.
 seo-description: Cet article décrit le cas d’utilisation de stockage et de balisage du DE généré par AEM Forms dans AEM DAM. Le balisage du document est effectué en fonction des données de formulaire envoyées.
 uuid: b9ba13ed-52d5-4389-a7d5-bf85e58fea49
-feature: '"Forms adaptatif,Workflow"'
+feature: formulaires adaptatifs,processus
 topics: developing
 audience: implementer
 doc-type: article
 activity: develop
 version: 6.4,6.5
 discoiquuid: 53961454-633b-4cd8-aef7-e64ab4e528e4
-topic: Développement
-role: Développeur
-level: Expérience
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '657'
 ht-degree: 1%
 
 ---
