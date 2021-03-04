@@ -1,7 +1,7 @@
 ---
 title: Résolution des problèmes d'extensibilité des Assets compute pour AEM Assets
 description: Vous trouverez ci-dessous un index des problèmes et erreurs courants, ainsi que des résolutions, qui peuvent se produire lors du développement et du déploiement de travailleurs d'Asset compute personnalisés pour AEM Assets.
-feature: asset-compute
+feature: Microservices Asset compute
 topics: renditions, metadata, development
 version: cloud-service
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
+topic: Intégrations, développement
+role: Développeur
+level: Intermédiaire, expérimenté
 translation-type: tm+mt
-source-git-commit: 649d971ecaa67c0d1dd2636f3c212bfee3d13561
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1249'
 ht-degree: 0%
 
 ---
@@ -39,8 +42,8 @@ Vous trouverez ci-dessous un index des problèmes et erreurs courants, ainsi que
 
 + __Erreur :__ Erreur : Fichiers requis manquants lors de la validation (.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) sur async setupAssetCompute (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
 + __Cause :__ Le  `console.json` fichier est absent de la racine du projet d&#39;Asset compute
-+ __Résolution :__ Télécharger un nouveau  `console.json` formulaire à partir de votre projet Adobe I/O
-   1. Dans console.adobe.io, ouvrez le projet Adobe I/O que le projet Asset compute est configuré pour utiliser
++ __Résolution :__ Télécharger un nouveau  `console.json` formulaire de votre projet d&#39;Adobe I/O
+   1. Dans console.adobe.io, ouvrez le projet d’Adobe I/O que le projet d’Asset compute est configuré pour utiliser
    1. Appuyez sur le bouton __Télécharger__ en haut à droite.
    1. Enregistrez le fichier téléchargé à la racine de votre projet d’Asset compute en utilisant le nom de fichier `console.json`.
 
@@ -67,7 +70,7 @@ Vous trouverez ci-dessous un index des problèmes et erreurs courants, ainsi que
 L&#39;outil de développement d&#39;Asset compute peut entrer un état où il extrait les données obsolètes et est le plus visible dans la liste déroulante __Fichier source__ affichant des éléments incorrects.
 
 + __Erreur : la liste déroulante du fichier__ source affiche des éléments incorrects.
-+ __Cause : l&#39;état__ obsolète du navigateur mis en cache provoque la
++ __Cause : l&#39;état__ du navigateur mis en cache est obsolète et entraîne la
 + __Résolution :__ dans votre navigateur, effacez complètement l&#39;&quot;état d&#39;application&quot; de l&#39;onglet du navigateur, le cache du navigateur, l&#39;enregistrement local et le travailleur de services.
 
 ### Paramètre de requête devToolToken manquant ou non valide{#missing-or-invalid-devtooltoken-query-parameter}
