@@ -1,18 +1,18 @@
 ---
 title: Liaison et dissociation des actifs dans AEM
 description: Découvrez comment établir et gérer des relations entre les ressources dans AEM.
-feature: Asset Management
-topics: Content Management
-role: Business Practitioner
-level: Beginner
+feature: Gestion des ressources
+role: Professionnel
+level: Début
 version: cloud-service
 kt: 6969
 thumbnail: 331107.jpg
+topic: Gestion de contenu
 translation-type: tm+mt
-source-git-commit: d89cd051f9fc8800d94ad11851ceaf4212f3c797
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 0%
+source-wordcount: '40'
+ht-degree: 5%
 
 ---
 
