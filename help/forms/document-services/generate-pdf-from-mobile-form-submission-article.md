@@ -4,20 +4,17 @@ seo-title: Générer un fichier PDF à partir de l’envoi de formulaire HTML5
 description: Générer un fichier PDF à partir de l’envoi de formulaires pour périphériques mobiles
 seo-description: Générer un fichier PDF à partir de l’envoi de formulaires pour périphériques mobiles
 uuid: 61f07029-d440-44ec-98bc-f2b5eef92b59
-feature: Mobile Forms
+feature: mobile-forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 816f1a75-6ceb-457b-ba18-daf229eed057
-topic: Développement
-role: Développeur
-level: Expérience
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -87,7 +84,7 @@ $("#file1").click();
 });
 ```
 
-[Profil](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles) personnalisé. L’utilisation d’un profil personnalisé facilite la manipulation des objets DOM HTML du formulaire pour périphériques mobiles. Un élément de fichier masqué est ajouté au fichier HTML.jsp. Lorsque l’utilisateur clique sur &quot;Ajouter votre photo&quot;, nous déclenchons le événement de clic de l’élément de fichier. Cela permet à l’utilisateur de parcourir et de sélectionner la photo à joindre. Nous utilisons ensuite l’objet javascript FileReader pour obtenir la chaîne codée en base64 de l’image. La chaîne d’image base64 est stockée dans le champ de texte du formulaire. Lorsque le formulaire est envoyé, nous extrayons cette valeur et l’insérons dans l’élément img du XML. Ce code XML est ensuite utilisé pour fusionner avec xdp afin de générer le fichier pdf final.
+[Profil](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles) personnalisé. L’utilisation d’un profil personnalisé facilite la manipulation des objets DOM HTML du formulaire pour périphériques mobiles. Un élément de fichier masqué est ajouté au fichier HTML.jsp. Lorsque l’utilisateur clique sur &quot;Ajouter votre photo&quot;, nous déclenchons le événement de clic de l’élément de fichier. Cela permet à l&#39;utilisateur de parcourir et de sélectionner la photo à joindre. Nous utilisons ensuite l’objet javascript FileReader pour obtenir la chaîne codée en base64 de l’image. La chaîne d’image base64 est stockée dans le champ de texte du formulaire. Lorsque le formulaire est envoyé, nous extrayons cette valeur et l’insérons dans l’élément img du XML. Ce code XML est ensuite utilisé pour fusionner avec xdp afin de générer le fichier pdf final.
 
 Le profil personnalisé utilisé pour cet article vous a été rendu disponible dans le cadre des ressources de cet article.
 
