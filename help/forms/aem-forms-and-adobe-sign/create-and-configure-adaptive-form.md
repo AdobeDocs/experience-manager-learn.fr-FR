@@ -1,18 +1,21 @@
 ---
 title: Création et configuration d’un formulaire adaptatif
 description: Créez et configurez un formulaire adaptatif. La vidéo suivante présente les étapes nécessaires à la création et à la configuration d’un formulaire adaptatif pour générer automatiquement un DE. La vidéo vous guide également à travers les étapes nécessaires à la configuration d’un formulaire adaptatif pour déclencher un processus AEM.
-feature: formulaires adaptatifs
+feature: Forms adaptatif, Adobe Sign
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 thumbnail: 38348.jpg
 kt: 6039
+topic: Développement
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 0%
+source-wordcount: '93'
+ht-degree: 1%
 
 ---
 
