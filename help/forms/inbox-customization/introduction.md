@@ -1,18 +1,21 @@
 ---
 title: Personnalisation de la boîte de réception
 description: 'Personnaliser la boîte de réception en ajoutant de nouvelles colonnes en fonction des données de processus '
-feature: formulaires adaptatifs
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
 kt: 5830
+topic: Développement
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 24%
+source-wordcount: '206'
+ht-degree: 25%
 
 ---
 
