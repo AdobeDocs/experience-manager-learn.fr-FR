@@ -4,7 +4,7 @@ seo-title: Création de la configuration des sources de données en AEM Forms
 description: Voici la partie 2 du didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons créer une source de données soutenue par REST.  La vidéo suivante décrit les étapes de création de la source de données.
 seo-description: Voici la partie 2 du didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons créer une source de données soutenue par REST.  La vidéo suivante décrit les étapes de création de la source de données.
 uuid: b9d5c220-3e86-4e7d-8ea0-a7f604dde925
-feature: interactive-communication
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,11 +13,14 @@ version: 6.4,6.5
 targetaudience: target-audience ongoing
 thumbnail: 27765.jpg
 kt: 5954
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 0%
+source-wordcount: '144'
+ht-degree: 2%
 
 ---
 
