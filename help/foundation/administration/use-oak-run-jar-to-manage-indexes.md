@@ -2,16 +2,19 @@
 title: Utiliser le fichier oak-run.jar pour gérer les index
 description: la commande index de oak-run.jar consolide un certain nombre de fonctionnalités pour gérer les index Oak dans AEM, depuis la collecte des statistiques d'index, l'exécution de vérifications de cohérence d'index et la ré-indexation des index eux-mêmes.
 version: 6.4, 6.5
-feature: oak
+feature: Rechercher
 topics: search
 activity: use
 audience: architect, developer, implementer
 doc-type: technical video
+topic: Performances
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: e19e177589df7ce6a56c0be3f9d590cbca2f8ce7
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 3%
+source-wordcount: '453'
+ht-degree: 4%
 
 ---
 
@@ -86,6 +89,6 @@ java -jar oak-run*.jar index
 
 ## Documents de support
 
-* [Téléchargement [!DNL oak-run.jar]](https://repository.apache.org/#nexus-search;gav~org.apache.jackrabbit~oak-run~~~~kw,versionexpand)
+* [Télécharger [!DNL oak-run.jar]](https://repository.apache.org/#nexus-search;gav~org.apache.jackrabbit~oak-run~~~~kw,versionexpand)
    * *Assurez-vous que la version téléchargée correspond à la version d’Oak installée sur AEM, comme décrit ci-dessus.*
 * [Documentation de la commande Apache Jackrabbit Oak oak-run.jar Index](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html)
