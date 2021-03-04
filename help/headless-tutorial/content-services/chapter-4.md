@@ -3,11 +3,15 @@ title: Chapitre 4 - Définition des modèles Content Services - Content Services
 seo-title: Pour commencer avec AEM sans en-tête - Chapitre 4 - Définition de modèles Content Services
 description: Le chapitre 4 du didacticiel AEM sans en-tête traite du rôle des AEM Modèles modifiables dans le contexte de AEM Content Services. Les modèles modifiables sont utilisés pour définir la structure de contenu JSON AEM Content Services expose en fin de compte.
 seo-description: Le chapitre 4 du didacticiel AEM sans en-tête traite du rôle des AEM Modèles modifiables dans le contexte de AEM Content Services. Les modèles modifiables sont utilisés pour définir la structure de contenu JSON AEM Content Services expose en fin de compte.
+feature: Fragments de contenu, API
+topic: Sans tête, Gestion de contenu
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 1%
+source-wordcount: '845'
+ht-degree: 2%
 
 ---
 
