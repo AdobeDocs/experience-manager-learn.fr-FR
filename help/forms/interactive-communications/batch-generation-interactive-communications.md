@@ -1,20 +1,17 @@
 ---
 title: Utilisation de l’API de lot pour la création de documents de communication interactifs
 description: Exemples de ressources pour la génération de documents de canal d’impression à l’aide de l’API de traitement par lot
-feature: Communication interactive
+feature: communication interactive
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-topic: Développement
-role: Développeur
-level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 7%
+source-wordcount: '417'
+ht-degree: 6%
 
 ---
 
