@@ -1,7 +1,7 @@
 ---
 title: Gérer l’envoi de formulaire HTML5
 description: Créer un gestionnaire d’envoi de formulaire HTML5
-feature: Mobile Forms
+feature: mobile-forms
 topics: development
 audience: developer
 doc-type: article
@@ -9,14 +9,11 @@ activity: implement
 version: 6.4,6.5
 kt: 5269
 thumbnail: kt-5269.jpg
-topic: Développement
-role: Développeur
-level: Expérience
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 6%
+source-wordcount: '278'
+ht-degree: 4%
 
 ---
 
