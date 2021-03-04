@@ -2,7 +2,7 @@
 title: Personnaliser la notification d'affectation de Tâche
 description: Inclure les données de formulaire dans les e-mails de notification d'affectation de tâche
 sub-product: formulaires
-feature: Workflow
+feature: workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,14 +10,11 @@ activity: setup
 version: 6.4,6.5
 kt: 6279
 thumbnail: KT-6279.jpg
-topic: Développement
-role: Développeur
-level: Expérience
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 8%
+source-wordcount: '447'
+ht-degree: 7%
 
 ---
 
