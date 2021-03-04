@@ -1,25 +1,28 @@
 ---
 title: Débogage de l’AEM en tant que Cloud Service
 description: sur une infrastructure de cloud libre-service, évolutive et qui requiert des développeurs AEM de comprendre comment comprendre et déboguer les différentes facettes de l'AEM en tant que Cloud Service, de la génération et du déploiement à l'obtention des détails sur l'exécution des applications AEM.
-feature: null
+feature: Outils de développement
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5346
+topic: Développement
+role: Développeur
+level: Débutant, intermédiaire
 translation-type: tm+mt
-source-git-commit: debb65a218ae0b9e5105c3f63018358902330b34
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 1%
+source-wordcount: '314'
+ht-degree: 2%
 
 ---
 
 
 # Débogage de l’AEM en tant que Cloud Service
 
-L&#39;AEM en tant que Cloud Service est le moyen natif du cloud de tirer parti des applications AEM. aem en tant que Cloud Service s&#39;exécute sur une infrastructure de cloud en libre-service, évolutive, ce qui nécessite que AEM développeurs comprennent comment comprendre et déboguer les différentes facettes de l&#39;Cloud Service, de la création et du déploiement à l&#39;obtention des détails sur l&#39;exécution des applications .
+L&#39;AEM en tant que Cloud Service est le moyen natif du cloud de tirer parti des applications AEM. AEM en tant que Cloud Service s&#39;exécute sur une infrastructure de cloud en libre-service, évolutive, ce qui nécessite que AEM développeurs comprennent comment comprendre et déboguer les différentes facettes de l&#39;Cloud Service, de la création et du déploiement à l&#39;obtention des détails sur l&#39;exécution des applications .
 
 ## Journaux
 
@@ -29,7 +32,7 @@ Les journaux fournissent des informations détaillées sur le fonctionnement de 
 
 ## Création et déploiement
 
-Les pipelines Adobe Cloud Manager déploient AEM applications au moyen d’une série d’étapes afin de déterminer la qualité et la viabilité du code lorsqu’ils sont déployés sur AEM en tant que Cloud Service. Chacune de ces étapes peut entraîner un échec, ce qui rend important de comprendre comment déboguer les compilations afin de déterminer la cause première de et comment résoudre les échecs.
+Les pipelines Adobe Cloud Manager déploient l’application AEM par le biais d’une série d’étapes visant à déterminer la qualité et la viabilité du code lorsqu’ils sont déployés sur AEM en tant que Cloud Service. Chacune de ces étapes peut entraîner un échec, ce qui rend important de comprendre comment déboguer les compilations afin de déterminer la cause première de et comment résoudre les échecs.
 
 [Débogage des AEM en tant que génération et déploiement Cloud Service](./build-and-deployment.md)
 
