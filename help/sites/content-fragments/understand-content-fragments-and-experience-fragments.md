@@ -2,17 +2,20 @@
 title: Comprendre les fragments de contenu et les fragments d’expérience
 description: La mise en page de fragments de contenu et de fragments d’expérience peut sembler similaire en surface, mais chacun joue un rôle clé dans différents cas d’utilisation. Découvrez comment les fragments de contenu et les fragments d’expérience sont similaires, différents et quand et comment les utiliser.
 sub-product: ressources, sites, services de contenu
-feature: content fragments, experience fragments
+feature: Fragments de contenu, Fragments d’expérience
 topics: headless
 version: 6.3, 6.4, 6.5
 doc-type: article
 activity: understand
 audience: all
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 03db12de4d95ced8fabf36b8dc328581ec7a2749
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 6%
+source-wordcount: '1007'
+ht-degree: 7%
 
 ---
 
@@ -96,9 +99,9 @@ La mise en page de fragments de contenu et de fragments d’expérience peut sem
 <li>Traduction/localisation</li>
 </ul>
 </td>
-</tr><tr><td><strong>Utilisation</strong></td>
+</tr><tr><td><strong>Utilisez</strong></td>
 <td><ul>
-<li><a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">aem composants principaux </a> du composant Fragment de contenu pour une utilisation dans AEM Sites, AEM Screens ou dans les fragments d’expérience.</li>
+<li><a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">AEM composants principaux </a> du composant Fragment de contenu pour une utilisation dans AEM Sites, AEM Screens ou dans les fragments d’expérience.</li>
 <li>Exportation JSON via <a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html" target="_blank">AEM Content Services</a> pour une consommation tierce</li>
 <li>JSON via AEM API HTTP Assets pour une consommation tierce.</li>
 </ul>
@@ -106,7 +109,7 @@ La mise en page de fragments de contenu et de fragments d’expérience peut sem
 <td><ul>
 <li>Composant AEM Fragment d’expérience à utiliser dans AEM Sites, AEM Screens ou d’autres fragments d’expérience.</li>
 <li>Exporter en <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/experience-fragments.html#ThePlainHTMLRendition" target="_blank">HTML simple</a> pour une utilisation par des systèmes tiers</li>
-<li><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/experience-fragments-target.html" target="_blank">Exportation HTML vers le </a> ciblage d’Adobe pour les offres ciblées</li>
+<li><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/experience-fragments-target.html" target="_blank">Exportation HTML vers le </a> ciblage d’Adobe pour les offres ciblées</li>
 <li>Exportation JSON vers Adobe Target pour les offres ciblées</li>
 </ul>
 </td>
