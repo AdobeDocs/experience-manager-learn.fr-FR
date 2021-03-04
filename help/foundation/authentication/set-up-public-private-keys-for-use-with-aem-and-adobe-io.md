@@ -2,19 +2,16 @@
 seo: Set up public and private keys for use with AEM and Adobe I/O
 description: 'AEM utilise des paires clé publique/clé privée pour communiquer en toute sécurité avec l’Adobe I/O et d’autres services Web. Ce court didacticiel illustre comment générer des clés et des fichiers de stockage de clés compatibles à l''aide de l''outil de ligne de commande openssl qui fonctionne avec l''AEM et l''Adobe I/O. '
 version: 6.4, 6.5
-feature: 'Utilisateurs et groupes '
+feature: authentification
 topics: authentication, integrations
 activity: setup
 audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
-topic: Développement
-role: Développeur
-level: Expérience
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
