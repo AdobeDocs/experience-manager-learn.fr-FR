@@ -1,12 +1,10 @@
 ---
 title: Chapitre 3 - Rubriques de mise en cache avancée
-seo-title: Démystification du cache du répartiteur d'AEM - Chapitre 3 - Rubriques de mise en cache avancées
 description: Le chapitre 3 du didacticiel Démystifié sur le cache du répartiteur AEM décrit comment surmonter les limites décrites au chapitre 2.
-seo-description: Le chapitre 3 du didacticiel Démystifié sur le cache du répartiteur AEM décrit comment surmonter les limites décrites au chapitre 2.
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '6187'
+source-wordcount: '6162'
 ht-degree: 0%
 
 ---
@@ -147,7 +145,7 @@ Voilà la théorie. Mais en pratique, il y a un certain nombre de pièges. Les �
 
 #### Auto - Correctif
 
-Avec l&#39;invalidation fondée sur le événement, vous devriez avoir un plan d&#39;urgence. Que se passe-t-il si un événement d’invalidation est manqué ? Une stratégie simple pourrait être d&#39;invalider ou de purger après un certain temps. Donc - vous avez peut-être manqué ce événement et maintenant servir du contenu obsolète. Mais vos objets ont aussi un TTL implicite de plusieurs heures (jours) seulement. Finalement, le système se guérit automatiquement.
+Avec l&#39;invalidation fondée sur le événement, vous devriez avoir un plan d&#39;urgence. Que se passe-t-il si un événement d’invalidation est manqué ? Une stratégie simple pourrait être d&#39;invalider ou de purger après un certain temps. Donc - vous avez peut-être manqué ce événement et maintenant servir du contenu obsolète. Mais vos objets ont aussi un TTL implicite de plusieurs heures (jours) seulement. Finalement le système se guérit automatiquement.
 
 #### Invalidation pure basée sur TTL
 
@@ -322,7 +320,7 @@ Quels objets dépendent de l’authenticité des autres dans chaque application 
 
 La mise en cache de fragments HTML est un outil puissant. L’idée est de mettre en cache le balisage HTML généré par un composant dans un cache mémoire. Vous pouvez demander, pourquoi devrais-je faire cela ? Je mets en cache toute la balise de la page dans le répartiteur de toute façon - y compris l&#39;annotation de ce composant. Nous sommes d&#39;accord. Vous le faites, mais une fois par page. Vous ne partagez pas cette annotation entre les pages.
 
-Imaginez que vous génériez une navigation au-dessus de chaque page. L’annotation est identique sur chaque page. Mais vous le générez encore et encore pour chaque page, ce n&#39;est pas dans le Répartiteur. Et rappelez-vous : Après l’invalidation automatique, toutes les pages doivent être rendues à nouveau. En gros, vous exécutez le même code avec les mêmes résultats des centaines de fois.
+Imaginez que vous génériez une navigation au-dessus de chaque page. L’annotation est identique sur chaque page. Mais vous le générez encore et encore pour chaque page, ce n&#39;est pas dans le Répartiteur. Et rappelez-vous : Après l’invalidation automatique, toutes les pages doivent être rendues à nouveau. Donc en gros, vous exécutez le même code avec les mêmes résultats des centaines de fois.
 
 D&#39;après notre expérience, le rendu d&#39;une navigation supérieure imbriquée est une tâche très coûteuse. En règle générale, vous traversez une bonne partie de l’arborescence du document pour générer les éléments de navigation. Même si vous n&#39;avez besoin que du titre de navigation et de l&#39;URL, les pages doivent être chargées en mémoire. Et là, ils bouchent des ressources précieuses. Encore et encore.
 
@@ -371,7 +369,7 @@ D&#39;ailleurs, vous pouvez également utiliser cette approche avec des composan
 
 Mais dans une approche HTL pure, vous préféreriez créer le cache de fragments avec un filtre de composant Sling. Nous n&#39;avons pas encore vu cela à l&#39;état sauvage, mais c&#39;est l&#39;approche que nous adopterions sur cette question.
 
-#### Inclure dynamique Sling
+#### Service Sling Dynamic Include
 
 Le cache de fragments est utilisé si vous disposez d’une constante (la navigation) dans le contexte d’un environnement en évolution (différentes pages).
 
@@ -464,7 +462,7 @@ Si vous optimisez les paramètres du répartiteur pour la mise en cache du navig
 
 Charles vous permet de lire les requêtes et les réponses, qui sont transmises au serveur et à partir de celui-ci. Et - vous pouvez en apprendre beaucoup sur le protocole HTTP. Les navigateurs modernes offre également certaines fonctionnalités de débogage, mais les fonctionnalités d&#39;un proxy de bureau sont sans précédent. Vous pouvez manipuler les données transférées, ralentir la transmission, relayer des requêtes individuelles et bien plus encore. Et l&#39;interface utilisateur est clairement organisée et assez complète.
 
-Le test le plus élémentaire consiste à utiliser le site Web comme un utilisateur normal - avec le proxy entre les deux - et à vérifier si le nombre de requêtes statiques (à /etc/...) diminue avec le temps - car elles doivent être dans le cache et ne plus être demandées.
+Le test le plus élémentaire consiste à utiliser le site Web comme un utilisateur normal - avec le proxy entre les deux - et à vérifier si le nombre de requêtes statiques (à /etc/...) diminue au fil du temps - car elles doivent se trouver dans le cache et ne plus être demandées.
 
 Nous avons trouvé qu&#39;un proxy peut donner un aperçu plus clair, car la requête mise en cache n&#39;apparaît pas dans le journal alors que certains débogueurs intégrés au navigateur affichent toujours ces requêtes avec &quot;0 ms&quot; ou &quot;from disk&quot;. Ce qui est correct et précis mais pourrait un peu nuancer votre vue.
 
@@ -514,7 +512,7 @@ Exécutez maintenant un test avec votre Répartiteur sans aucune mise en cache. 
 
 Ensuite, exécutez le même test avec tous les paramètres de cache requis sur &quot;on&quot;. Augmentez lentement vos requêtes parallèles pour réchauffer le cache et voir combien votre système peut prendre dans ces meilleures conditions.
 
-Un scénario de cas moyen consisterait à exécuter le test avec le répartiteur activé mais aussi avec certaines invalidations. Vous pouvez simuler cela en touchant les fichiers d’état par un travail de retouche ou en envoyant les demandes d’invalidation à intervalles irréguliers au Répartiteur. N&#39;oubliez pas également de purger de temps à autre certaines des ressources non-auto invalidées.
+Un scénario de cas moyen consisterait à exécuter le test avec le répartiteur activé, mais aussi avec certaines invalidations. Vous pouvez simuler cela en touchant les fichiers d’état par un travail de retouche ou en envoyant les demandes d’invalidation à intervalles irréguliers au Répartiteur. N&#39;oubliez pas également de purger de temps à autre certaines des ressources non-auto invalidées.
 
 Vous pouvez varier le dernier scénario en augmentant les demandes d’invalidation et en augmentant la charge.
 
