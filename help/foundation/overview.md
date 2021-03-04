@@ -3,13 +3,11 @@ title: Vidéos et tutoriels d’AEM Foundation
 seo-title: Vidéos et tutoriels d’AEM Foundation
 description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation. '
 seo-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation
-role: '"Leader, Architecte, Développeur, Administrateur, Professionnel"'
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 21%
+source-wordcount: '261'
+ht-degree: 22%
 
 ---
 
