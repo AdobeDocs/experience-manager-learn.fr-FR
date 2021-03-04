@@ -1,17 +1,20 @@
 ---
 title: Développement pour la différence de page en AEM Sites
 description: Cette vidéo montre comment fournir des styles personnalisés pour la fonctionnalité Différence de page des sites AEM.
-feature: page-diff
+feature: 'Création  '
 topics: development
 audience: developer
 doc-type: technical video
 activity: develop
 version: 6.3, 6.4, 6.5
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 6%
+source-wordcount: '297'
+ht-degree: 7%
 
 ---
 
@@ -28,7 +31,7 @@ Cette vidéo montre comment fournir des styles personnalisés pour la fonctionna
 >
 >Cette vidéo ajoute une page CSS personnalisée à la bibliothèque cliente we.Retail, où ces modifications doivent être apportées au projet AEM Sites du personnaliseur ; dans l’exemple de code ci-dessous : `my-project`.
 
-aem différence de page obtient le fichier CSS OOTB via un chargement direct de `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
+AEM différence de page obtient le fichier CSS OOTB via un chargement direct de `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
 
 En raison de ce chargement direct de CSS plutôt que d’utiliser une catégorie de bibliothèque cliente, nous devons trouver un autre point d’injection pour les styles personnalisés, et ce point d’injection personnalisé est la bibliothèque cliente de création du projet.
 
