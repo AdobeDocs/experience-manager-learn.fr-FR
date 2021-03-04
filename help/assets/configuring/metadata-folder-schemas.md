@@ -2,19 +2,18 @@
 title: Schémas de dossiers de métadonnées
 description: Les schémas de dossiers de métadonnées permettent aux utilisateurs de gérer et de revoir les métadonnées associées aux dossiers de fichiers eux-mêmes, plutôt que directement sur les fichiers.
 sub-product: ressources
-feature: metadata-schemas
-topics: configuring, content-architecture, metadata
-audience: administrator, implementer
-doc-type: feature video
-activity: use
+feature: 'Métadonnées  '
 version: cloud-service
 kt: 4983
 thumbnail: 34071.jpg
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: a2772bd8dd65e8bcb4caf660709f6aceb6e28eb4
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 2%
+source-wordcount: '53'
+ht-degree: 7%
 
 ---
 
