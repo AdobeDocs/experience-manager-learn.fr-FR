@@ -1,19 +1,16 @@
 ---
 title: Configuration des statistiques sur les ressources avec AEM Assets et lancement d’Adobe
 description: Dans cette série de vidéos en 5 parties, nous passons en revue la configuration et la configuration de Asset Insights pour les Experience Manager déployés via Launch by Adobe.
-contentOwner: selvaraj
-feature: asset-insights
-topics: integrations, development, metadata
-audience: developer, architect, administrator
-doc-type: article
-activity: implement
+feature: Statistiques sur les ressources
 version: 6.3, 6.4, 6.5
-redirect-form: https://docs.adobe.com/content/help/en/experience-manager-learn/assets/analytics/asset-insights-launch-tutorial-setup.html
+topic: Intégrations
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 22ccd6627a035b37edb180eb4633bc3b57470c0c
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 1%
+source-wordcount: '826'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +33,7 @@ Présentation des statistiques sur les ressources. Installez les composants prin
 >
 >Veillez à télécharger la [dernière version des composants principaux](https://github.com/adobe/aem-core-wcm-components) pour votre implémentation.
 
-La vidéo utilise les composants de base v2.2.2 qui ne sont plus la dernière version ; veillez à utiliser la dernière version avant de passer à la section suivante.
+La vidéo utilise Core Components v2.2.2, qui n&#39;est plus la dernière version ; veillez à utiliser la dernière version avant de passer à la section suivante.
 
 * Télécharger [Exemple de contenu d&#39;image d&#39;Asset Insights](./assets/asset-insights-launch-tutorial/aem-assets-insights-sample.zip)
 * Téléchargez [les derniers composants principaux de la gestion de contenu Web AEM](https://github.com/adobe/aem-core-wcm-components/releases)
