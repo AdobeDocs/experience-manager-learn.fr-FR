@@ -1,7 +1,7 @@
 ---
 title: Présentation de l'AEM et de l'Adobe Target
 description: Découvrez comment créer et diffuser une expérience personnalisée en utilisant Adobe Experience Manager comme Cloud Service et Adobe Target.
-feature: launch, experience-fragments, core-components, data-layer
+feature: Fragments d’expérience, Composants principaux, couche de données du client d’Adobe
 topics: integrations, personalization, administration, development
 audience: all
 doc-type: feature video
@@ -9,16 +9,19 @@ activity: use
 version: cloud-service
 kt: 6043
 thumbnail: 41241.jpg
+topic: Intégrations
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 988e390dd9e1fc6033b3651db151e6a60ce4efaa
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '227'
 ht-degree: 3%
 
 ---
 
 
-# aem et Adobe Target
+# AEM et Adobe Target
 
 Adobe Experience Manager (AEM) et Adobe Target sont des solutions puissantes dotées de capacités complémentaires qui peuvent être mal interprétées comme concurrentes. Les clients ont parfois du mal à comprendre comment et quand utiliser ces produits conjointement pour offrir une expérience personnalisée. Pour offrir une expérience optimisée à chaque utilisateur final, différentes équipes de votre entreprise doivent travailler en étroite collaboration et définir qui fait quoi.
 
