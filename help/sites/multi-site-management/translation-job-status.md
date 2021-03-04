@@ -3,7 +3,7 @@ title: État de la tâche de traduction
 seo-title: État de la tâche de traduction
 description: Comprendre les différents états associés à une tâche de traduction ou à un élément de la tâche.
 seo-description: Comprendre les différents états associés à une tâche de traduction ou à un élément de la tâche.
-feature: language-copy, live-copy, multi-site-manager
+feature: Copie de langue, Gestionnaire de sites multiples
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -11,11 +11,14 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 5846
 thumbnail: 36685.jpg
+topic: Localisation
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 309bed2f0c137bdd245c017cd1f94d7f6ca2d396
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 16%
+source-wordcount: '63'
+ht-degree: 15%
 
 ---
 
