@@ -2,19 +2,18 @@
 title: Utilisation de Dynamic Media Smart Crop pour la vidéo
 description: Dynamic Media Smart Crop for video utilise Adobe Sensei pour suivre intelligemment les points d’intérêt de la vidéo, en s’assurant que les vidéos s’affichent de manière optimale sur toutes les tailles d’écran.
 sub-product: dynamic-media
-feature: smart-crop, video-profiles, viewer-presets
-topics: videos, renditions, authoring
-doc-type: feature video
-audience: all
-activity: use
+feature: Recadrage dynamique, Profils vidéo, paramètres prédéfinis de la visionneuse
 version: cloud-service
 kt: 5977
 thumbnail: 37958.jpg
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 0%
+source-wordcount: '114'
+ht-degree: 9%
 
 ---
 
@@ -27,5 +26,5 @@ Dynamic Media Smart Crop for video utilise Adobe Sensei pour suivre intelligemme
 
 >[!NOTE]
 >
->La vidéo ci-dessus suppose que votre service AEM s’exécute en mode Dynamic Media S7. [Vous trouverez des instructions sur la configuration de l&#39;AEM avec Dynamic Media ici.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
+>La vidéo ci-dessus suppose que votre service AEM s’exécute en mode Dynamic Media S7. [Vous trouverez des instructions sur la configuration de l&#39;AEM avec Dynamic Media ici.](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
 
