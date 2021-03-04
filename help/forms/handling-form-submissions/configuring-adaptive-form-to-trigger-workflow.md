@@ -2,7 +2,7 @@
 title: Configuration d’un formulaire adaptatif pour déclencher AEM processus
 description: Configurez les options de charge utile lors du déclenchement du processus AEM lors de l’envoi du formulaire.
 sub-product: formulaires
-feature: workflow
+feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
@@ -10,11 +10,14 @@ activity: setup
 version: 6.4,6.5
 kt: 5407
 thumbnail: 40258.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 449202af47b6bbcd9f860d5c5391d1f7096d489e
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 8%
+source-wordcount: '170'
+ht-degree: 10%
 
 ---
 
