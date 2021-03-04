@@ -1,19 +1,19 @@
 ---
 title: Pour le rendu avec positionnement uniquement (FPO)
-description: 'Les ressources Adobe Experience Manager peuvent désormais être utilisées par les concepteurs et les utilisateurs créatifs dans leurs applications de bureau Adobe Creative Cloud préférées. L’extension Adobe Asset Link pour Adobe Creative Cloud Enterprise étend la fonctionnalité de recherche et de navigation, de tri, de prévisualisation, de téléchargement de ressources, d’extraction, de modification, d’archivage et de vue de métadonnées de ressources d’AEM dans des outils Creative Cloud tels que Adobe Photoshop, InDesign,  et Illustrator. '
+description: 'Les ressources Adobe Experience Manager peuvent désormais être utilisées par les concepteurs et les utilisateurs créatifs dans leurs applications de bureau Adobe Creative Cloud préférées. L’extension Adobe Asset Link pour Adobe Creative Cloud Enterprise étend la fonctionnalité de recherche et de navigation, de tri, de prévisualisation, de téléchargement de fichiers, d’extraction, de modification, d’archivage et de vue de métadonnées de fichiers AEM dans des outils Creative Cloud tels que Adobe Photoshop, InDesign,  et Illustrator. '
 sub-product: ressources
-feature: adobe-asset-link
-topics: authoring, collaboration, operations, sharing, metadata, images, operations, renditions
-audience: all
-doc-type: feature video
-activity: use
-version: null
+feature: Adobe Asset Link
+version: cloud-service
+kt: 4916
 thumbnail: 34259.jpg
+topic: Gestion de contenu
+role: Professionnel
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 1%
+source-wordcount: '95'
+ht-degree: 6%
 
 ---
 
