@@ -1,12 +1,10 @@
 ---
 title: Chapitre 2 - Définition de modèles de fragments de contenu de Événement
-seo-title: Prise en main de AEM Content Services - Chapitre 2 - Définition de modèles de fragments de contenu de Événement
 description: Le chapitre 2 du didacticiel AEM sans en-tête porte sur l’activation et la définition de modèles de fragments de contenu utilisés pour définir une structure de données normalisée et une interface de création pour la création de Événements.
-seo-description: Le chapitre 2 du didacticiel AEM sans en-tête porte sur l’activation et la définition de modèles de fragments de contenu utilisés pour définir une structure de données normalisée et une interface de création pour la création de Événements.
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1917'
+source-wordcount: '1879'
 ht-degree: 0%
 
 ---
@@ -72,7 +70,7 @@ Chaque système de publication est connecté à une multitude de Répartiteurs, 
 
 #### Maintenance
 
-Il va sans dire que la configuration initiale des systèmes Répartiteur et Publication est un peu plus complexe. Mais gardez également à l&#39;esprit que l&#39;effort d&#39;une version &quot;mobile&quot; est aussi un peu plus important. aem systèmes peuvent et doivent être mis à jour pendant l’exécution. Mais il est sage de ne pas le faire pendant qu&#39;ils répondent activement aux demandes. En règle générale, vous ne souhaitez mettre à jour qu’une partie des systèmes de publication, tandis que les autres systèmes diffusent toujours activement le trafic, puis, après le test, basculez sur l’autre partie. Si vous avez de la chance et que vous pouvez accéder à l’équilibreur de charge dans votre processus de déploiement, vous pouvez désactiver le routage sur les serveurs en cours de maintenance ici. Si vous utilisez un équilibreur de charge partagé sans accès direct, vous préférez arrêter les répartiteurs de la publication que vous souhaitez mettre à jour. Plus il y en a, plus vous devrez fermer. S&#39;il y en a un grand nombre et que vous planifiez des mises à jour fréquentes, une automatisation est conseillée. Si vous n&#39;avez pas d&#39;outils d&#39;automatisation, la mise à l&#39;échelle est de toute façon une mauvaise idée.
+Il va sans dire que la configuration initiale des systèmes Répartiteur et Publication est un peu plus complexe. Mais gardez également à l&#39;esprit que l&#39;effort d&#39;une version &quot;mobile&quot; est aussi un peu plus important. AEM systèmes peuvent et doivent être mis à jour pendant l’exécution. Mais il est sage de ne pas le faire pendant qu&#39;ils répondent activement aux demandes. En règle générale, vous ne souhaitez mettre à jour qu’une partie des systèmes de publication, tandis que les autres systèmes diffusent toujours activement le trafic, puis, après le test, basculez sur l’autre partie. Si vous avez de la chance et que vous pouvez accéder à l’équilibreur de charge dans votre processus de déploiement, vous pouvez désactiver le routage sur les serveurs en cours de maintenance ici. Si vous utilisez un équilibreur de charge partagé sans accès direct, vous préférez arrêter les répartiteurs de la publication que vous souhaitez mettre à jour. Plus il y en a, plus vous devrez fermer. S&#39;il y en a un grand nombre et que vous planifiez des mises à jour fréquentes, une automatisation est conseillée. Si vous n&#39;avez pas d&#39;outils d&#39;automatisation, la mise à l&#39;échelle est de toute façon une mauvaise idée.
 
 Dans un projet précédent, nous avons utilisé une autre astuce pour supprimer un système de publication de l’équilibrage de charge sans avoir d’accès direct à l’équilibreur de charge lui-même.
 
