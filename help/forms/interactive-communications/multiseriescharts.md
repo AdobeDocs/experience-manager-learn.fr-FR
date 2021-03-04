@@ -3,17 +3,20 @@ title: Graphiques multiséries en AEM Forms
 seo-title: Graphiques multiséries en AEM Forms
 description: Créez un modèle de données de formulaire approprié pour créer des graphiques multiséries dans les documents papier et de canal Web.
 seo-description: Créez un modèle de données de formulaire approprié pour créer des graphiques multiséries dans les documents papier et de canal Web.
-feature: communication interactive
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 0%
+source-wordcount: '306'
+ht-degree: 1%
 
 ---
 
