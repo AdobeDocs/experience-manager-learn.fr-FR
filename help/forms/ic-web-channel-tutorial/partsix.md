@@ -5,17 +5,20 @@ description: Voici la partie 6 d'un didacticiel en plusieurs étapes pour créer
 seo-description: Voici la partie 6 d'un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons créer une communication interactive pour le Canal Web.
 uuid: a1b29c5b-a323-4bda-aa99-5fb98614b690
 discoiquuid: b44ff855-9ead-471e-8f0f-b562b88a5337
-feature: interactive-communication
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 3d54a8158d0564a3289a2100bbbc59e5ae38f175
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 10%
+source-wordcount: '204'
+ht-degree: 11%
 
 ---
 
