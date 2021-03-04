@@ -2,7 +2,7 @@
 title: Créer un composant personnalisé | Prise en main de l'AEM SPA Editor et réaction
 description: Découvrez comment créer un composant personnalisé à utiliser avec AEM SPA Editor. Découvrez comment développer des boîtes de dialogue d’auteur et des modèles Sling pour étendre le modèle JSON afin de renseigner un composant personnalisé.
 sub-product: sites
-feature: SPA Editor
+feature: Éditeur de SPA
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -10,11 +10,14 @@ activity: develop
 audience: developer
 kt: 5878
 thumbnail: 5878-spa-react.jpg
+topic: SPA
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: e6da018a21155eca3a52dd562e469296b3c68c0d
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1486'
-ht-degree: 3%
+source-wordcount: '1491'
+ht-degree: 4%
 
 ---
 
