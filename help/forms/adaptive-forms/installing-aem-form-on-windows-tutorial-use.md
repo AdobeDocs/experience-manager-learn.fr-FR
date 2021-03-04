@@ -4,18 +4,21 @@ seo-title: Procédure simplifiée d’installation d’AEM Forms sous Windows
 description: Procédure rapide et simple d’installation d’AEM Forms sous Windows
 seo-description: Procédure rapide et simple d’installation d’AEM Forms sous Windows
 uuid: a148b8f0-83db-47f6-89d3-c8a9961be289
-feature: formulaires adaptatifs
+feature: Formulaires adaptatifs
 topics: administration
 audience: developer
 doc-type: article
 activity: setup
 version: 6.4,6.5
 discoiquuid: 1182ef4d-5838-433b-991d-e24ab805ae0e
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 8%
+source-wordcount: '618'
+ht-degree: 9%
 
 ---
 
