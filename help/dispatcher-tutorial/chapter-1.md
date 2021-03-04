@@ -1,12 +1,10 @@
 ---
 title: Chapitre 1 - Configuration et téléchargements de didacticiels
-seo-title: Prise en main de AEM Content Services - Chapitre 1 - Configuration des didacticiels
 description: Chapitre 1 du didacticiel AEM sans titre sur la configuration de la ligne de base pour l’instance AEM pour le didacticiel.
-seo-description: Chapitre 1 du didacticiel AEM sans titre sur la configuration de la ligne de base pour l’instance AEM pour le didacticiel.
 translation-type: tm+mt
-source-git-commit: 52824c178ddf930df134608ecb01bb661d6c514c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '17502'
+source-wordcount: '17476'
 ht-degree: 0%
 
 ---
@@ -197,7 +195,7 @@ et
 
 `http://domain.com/home.html/suffix.html`
 
-Ils sont absolument valables en AEM. Vous ne verriez aucun problème sur votre machine de développement local (sans Répartiteur). Il est probable que vous ne rencontrerez aucun problème dans les tests UAT ou de charge. Le problème auquel nous sommes confrontés est si subtil qu&#39;il passe par la plupart des tests.  Il vous frappera durement lorsque vous serez à l&#39;heure de pointe et que vous serez limité dans le temps pour y remédier, que vous n&#39;aurez probablement pas d&#39;accès au serveur et que vous ne disposerez pas des ressources nécessaires pour le réparer. Nous y sommes allés...
+Ils sont absolument valables en AEM. Vous ne verriez aucun problème sur votre machine de développement local (sans Répartiteur). Il est probable que vous ne rencontrerez aucun problème dans les tests UAT ou de charge. Le problème auquel nous sommes confrontés est si subtil qu&#39;il passe par la plupart des tests.  Il vous frappera durement lorsque vous serez à l&#39;heure de pointe et que vous serez limité à temps pour y faire face, sans accès au serveur, ni ressources pour le réparer. Nous y sommes allés...
 
 Alors... quel est le problème ?
 
@@ -301,7 +299,7 @@ invalidate-path:  /content/dam/path/to/image
 <no body>
 ```
 
-L&#39;invalidation est si facile : Demande de GET simple à une URL spéciale &quot;/invalidate&quot; sur le répartiteur. Un HTTP-body n’est pas requis, la &quot;charge utile&quot; est simplement l’en-tête &quot;invalidate-path&quot;. Notez également que le chemin invalidate-path dans l&#39;en-tête est la ressource que AEM connaît - et non le fichier ou les fichiers mis en cache par le répartiteur. aem ne connaît que les ressources. Les extensions, sélecteurs et suffixes sont utilisés lors de l&#39;exécution lorsqu&#39;une ressource est demandée. aem n&#39;effectue pas de consignation sur les sélecteurs qui ont été utilisés sur une ressource ; le chemin de ressource est donc tout ce qu&#39;il sait avec certitude lors de l&#39;activation d&#39;une ressource.
+L&#39;invalidation est si facile : Demande de GET simple à une URL spéciale &quot;/invalidate&quot; sur le répartiteur. Un HTTP-body n’est pas requis, la &quot;charge utile&quot; est simplement l’en-tête &quot;invalidate-path&quot;. Notez également que le chemin invalidate-path dans l&#39;en-tête est la ressource que AEM connaît - et non le fichier ou les fichiers mis en cache par le répartiteur. AEM ne connaît que les ressources. Les extensions, sélecteurs et suffixes sont utilisés lors de l&#39;exécution lorsqu&#39;une ressource est demandée. AEM n&#39;effectue pas de consignation sur les sélecteurs qui ont été utilisés sur une ressource ; le chemin de ressource est donc tout ce qu&#39;il sait avec certitude lors de l&#39;activation d&#39;une ressource.
 
 C&#39;est suffisant dans notre cas. Si une ressource a changé, nous pouvons supposer sans risque que tous les rendus de cette ressource ont également changé. Dans notre exemple, si l’image a été modifiée, une nouvelle miniature sera également générée.
 
@@ -541,7 +539,7 @@ Désormais, un utilisateur demande la page et les ressources via le répartiteur
 
 <br> 
 
-Prenons l’exemple d’un utilisateur qui télécharge et active une nouvelle version des deux images de fleurs dans le DAM. aem envoie une demande d’invalidation pour
+Prenons l’exemple d’un utilisateur qui télécharge et active une nouvelle version des deux images de fleurs dans le DAM. AEM envoie une demande d’invalidation pour
 
 `/content/dam/flower.jpg`
 
@@ -767,9 +765,9 @@ Voici l&#39;idée de base :
 
 Le Répartiteur ne connaît pas les dépendances des ressources. C&#39;est juste un tas de fichiers uniques avec peu de sémantique.
 
-aem sait aussi peu de choses sur les dépendances. Il manque une sémantique correcte ou un &quot;suivi des dépendances&quot;.
+AEM sait aussi peu de choses sur les dépendances. Il manque une sémantique correcte ou un &quot;suivi des dépendances&quot;.
 
-aem connaît certaines des références. Il utilise ces connaissances pour vous avertir lorsque vous essayez de supprimer ou de déplacer une page ou une ressource référencée. Pour ce faire, elle interroge la recherche interne lors de la suppression d’un fichier. Les références au contenu ont un formulaire très particulier. Ce sont des expressions de chemin commençant par &quot;/content&quot;. Ils peuvent donc facilement être indexés en texte intégral - et interrogés lorsque cela est nécessaire.
+AEM connaît certaines des références. Il utilise ces connaissances pour vous avertir lorsque vous essayez de supprimer ou de déplacer une page ou une ressource référencée. Pour ce faire, elle interroge la recherche interne lors de la suppression d’un fichier. Les références au contenu ont un formulaire très particulier. Ce sont des expressions de chemin commençant par &quot;/content&quot;. Ils peuvent donc facilement être indexés en texte intégral - et interrogés lorsque cela est nécessaire.
 
 Dans notre cas, nous aurions besoin d’un agent de réplication personnalisé sur le système de publication, qui déclenche une recherche d’un chemin spécifique lorsque ce chemin d’accès a changé.
 
@@ -1031,7 +1029,7 @@ Le modèle de spouleur empêche le problème d&#39;exposer une API dont nous avo
 
 5. L’image est transmise par le composant au navigateur client.
 
-Après tout, le modèle de spouleur n&#39;est pas si mauvais, c&#39;est pourquoi il est si populaire. S&#39;il n&#39;est que là où il n&#39;est pas si lourd quand il s&#39;agit d&#39;invalidation de cache...
+Après tout, le modèle de spouleur n&#39;est pas si mauvais, c&#39;est pourquoi il est si populaire. S&#39;il n&#39;est que là où pas si lourd quand il s&#39;agit d&#39;invalidation de cache...
 
 ### Le spouleur inversé - Le meilleur des deux mondes ?
 
@@ -1174,7 +1172,7 @@ Le client avait une structure de site similaire à celle esquissée dans le dern
 /content/brand/country/language
 ```
 
-Par exemple :
+Par exemple,
 
 ```
 /content/shiny-brand/switzerland/fr
@@ -1343,7 +1341,7 @@ La réponse http la plus rapide est la réponse donnée par le navigateur lui-m�
 
 Vous pouvez aider le navigateur à décider quand demander au serveur une nouvelle version du fichier en définissant une date d&#39;expiration sur une ressource.
 
-Habituellement, vous faites cela de manière statique en utilisant l&#39;élément `mod_expires` d&#39;Apache ou en stockant l&#39;en-tête Cache-Control et Expires qui vient d&#39;AEM si vous avez besoin d&#39;un contrôle plus individuel.
+En général, vous faites cela de manière statique en utilisant `mod_expires` d&#39;Apache ou en stockant l&#39;en-tête Cache-Control et Expires qui vient d&#39;AEM si vous avez besoin d&#39;un contrôle plus individuel.
 
 Un document mis en cache dans le navigateur peut comporter trois niveaux d’actualité.
 
@@ -1419,9 +1417,9 @@ Mais ne comptez pas uniquement sur l&#39;AEM. Si vous le faites, vous aurez des 
 
 Nous avons vu un projet qui avait des docroots distincts pour chaque domaine. C&#39;était un cauchemar à déboguer et à entretenir - et en fait, nous ne l&#39;avons jamais vu fonctionner de manière impeccable.
 
-Nous pourrions résoudre les problèmes en réstructurant le cache. Nous avions un point unique pour tous les domaines et les demandes d&#39;invalidation pouvaient être traitées 1:1 car tous les fichiers du serveur commençaient par `/content`.
+Nous pourrions résoudre les problèmes en réstructurant le cache. Nous avions un point unique pour tous les domaines et les demandes d&#39;invalidation pouvaient être gérées 1:1 car tous les fichiers du serveur commençaient par `/content`.
 
-La partie tronquée était aussi très facile.  aem a généré des liens tronqués en raison d&#39;une configuration conforme dans `/etc/map`.
+La partie tronquée était aussi très facile.  AEM a généré des liens tronqués en raison d&#39;une configuration conforme dans `/etc/map`.
 
 Désormais, lorsqu’une requête `/home.html` atteint le Répartiteur, la première chose qui se produit est d’appliquer une règle de réécriture qui développe le chemin en interne.
 
@@ -1539,7 +1537,7 @@ Nous allons début avec un exemple rapide à 12h00.
 
 12:01 - Une invalidation se produit. Ceci prolonge la période de grillage jusqu’à 12h06.
 
-12:05 - Un autre éditeur publie son article - prolongeant le temps de grâce d&#39;une autre période de grâce à 12:10.
+12:05 - Un autre éditeur publie son article - prolongeant le temps de grâce par une autre période de grâce à 12:10.
 
 Et ainsi de suite... le contenu n&#39;est jamais invalidé. Chaque invalidation *dans* la période de grâce prolonge efficacement le délai de grâce. Le `gracePeriod` est conçu pour résister à la tempête d&#39;invalidation... mais vous devez sortir par la pluie... donc, garder le `gracePeriod` considérablement court pour éviter de vous cacher à jamais dans l&#39;abri.
 
