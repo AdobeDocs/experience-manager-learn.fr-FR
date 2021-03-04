@@ -1,7 +1,7 @@
 ---
 title: Configuration de l’exécution des AEM locales pour l’AEM en tant que développement Cloud Service
 description: Configurez l’AEM d’exécution locale à l’aide de l’AEM en tant que Jar de démarrage rapide du kit SDK Cloud Service.
-feature: null
+feature: Outils de développement
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: develop
 audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 39ea3dd6133477a52fd91ee696936cd226fce5ea
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1657'
 ht-degree: 2%
 
 ---
@@ -28,7 +31,7 @@ Notez que `~` est utilisé comme abrégé pour le Répertoire d&#39;utilisateur.
 
 Le Experience Manager est une application Java et nécessite donc le SDK Java pour prendre en charge l’outil de développement.
 
-1. [Téléchargement et installation de la dernière version du SDK Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent 2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=liste&amp;p.offset=0&amp;p.limit=14)
+1. [Téléchargement et installation de la dernière version du SDK Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=liste&amp;p.offset=0&amp;p.limit=14)
 1. Vérifiez que le SDK Java 11 est installé en exécutant la commande :
    + Windows : `java -version`
    + macOS / Linux : `java --version`
@@ -236,7 +239,7 @@ java.lang.Exception: Quickstart requires a Java Specification 11 VM, but your VM
 Quickstart: aborting
 ```
 
-La raison en est que AEM en tant que Cloud Service requiert Java SDK 11 et que vous exécutez une autre version, probablement Java 8. Pour résoudre ce problème, téléchargez et installez [Oracle Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent 2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=liste&amp;p.offset=0&amp;p.limit=14).
+La raison en est que AEM en tant que Cloud Service requiert Java SDK 11 et que vous exécutez une autre version, probablement Java 8. Pour résoudre ce problème, téléchargez et installez [Oracle Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=liste&amp;p.offset=0&amp;p.limit=14).
 Une fois Java SDK 11 installé, vérifiez qu’il s’agit de la version principale en exécutant les éléments suivants à partir de la ligne de commande.
 
 Une fois le SDK Java 11 installé, vérifiez qu’il s’agit de la version principale en exécutant la commande à partir de la ligne de commande :
