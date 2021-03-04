@@ -2,15 +2,18 @@
 title: Processus principal Dynamic Media Classic et aperçu des ressources
 description: 'Découvrez le processus principal de Dynamic Media Classic, qui comprend les trois étapes suivantes : Créer (et Télécharger), Auteur (et Publier) et Livraison. Apprenez ensuite à prévisualisation des ressources dans Dynamic Media Classic.'
 sub-product: dynamic-media
-feature: workflow
+feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, architecture, publishing
 audience: all
 activity: use
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 5eeeb197f9a2ee4216e1f9220c830751c36f01ab
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2729'
+source-wordcount: '2737'
 ht-degree: 5%
 
 ---
@@ -105,7 +108,7 @@ Après avoir créé et téléchargé votre contenu, vous créerez de nouveaux fi
 >
 >Assurez-vous que tous vos fichiers sont marqués pour publication. Bien que, par défaut, tous les fichiers soient automatiquement marqués pour publication au moment du téléchargement, tous les fichiers nouvellement créés à partir de votre contenu téléchargé devront également être marqués pour publication.
 
-Après avoir créé votre nouvelle ressource, vous exécuterez une tâche de publication. Vous pouvez le faire manuellement ou planifier une tâche de publication qui s’exécute automatiquement. La publication copie tout le contenu de la sphère privée Dynamic Media Classic vers la sphère publique du serveur de publication de l’équation. Le produit d’une tâche de publication Dynamic Media est une URL unique pour chaque fichier publié.
+Après avoir créé votre nouvelle ressource, vous exécuterez une tâche de publication. Vous pouvez effectuer cette opération manuellement ou planifier une tâche de publication qui s’exécute automatiquement. La publication copie tout le contenu de la sphère privée Dynamic Media Classic vers la sphère publique du serveur de publication de l’équation. Le produit d’une tâche de publication Dynamic Media est une URL unique pour chaque fichier publié.
 
 Le serveur sur lequel vous publiez dépend du type de contenu et du processus. Par exemple, toutes les images sont envoyées au serveur Image Server et la vidéo en flux continu au serveur FMS. Pour plus de commodité, nous parlerons d&#39;une &quot;publication&quot; comme un événement unique à un seul serveur.
 
