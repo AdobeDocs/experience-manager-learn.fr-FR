@@ -1,7 +1,7 @@
 ---
 title: Collecte de données de page avec Adobe Analytics
 description: Utilisez la couche de données client Adobe pilotée par le événement pour collecter des données sur l’activité des utilisateurs sur un site Web créé avec Adobe Experience Manager. Découvrez comment utiliser des règles dans l’Experience Platform Launch pour écouter ces événements et envoyer des données à une suite de rapports Adobe Analytics.
-feature: analytics
+feature: analyses
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,10 +9,13 @@ activity: setup
 version: cloud-service
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
+topic: Intégrations
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 64c167ec1d625fdd8be1bc56f7f5e59460b8fed3
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '2415'
+source-wordcount: '2419'
 ht-degree: 5%
 
 ---
@@ -92,7 +95,7 @@ Le projet de référence [WKND](https://github.com/adobe/aem-guides-wknd) est cr
    ```json
    page-2eee4f8914:
        @type: "wknd/components/page"
-       dc:description: "WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world."
+       dc:description: WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world.
        dc:title: "WKND Adventures and Travel"
        repo:modifyDate: "2020-08-31T21:02:21Z"
        repo:path: "/content/wknd/us/en.html"
