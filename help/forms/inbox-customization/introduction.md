@@ -1,24 +1,27 @@
 ---
 title: Personnalisation de la boîte de réception
 description: 'Personnaliser la boîte de réception en ajoutant de nouvelles colonnes en fonction des données de processus '
-feature: adaptive-forms
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
 kt: 5830
+topic: Développement
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 24%
+source-wordcount: '206'
+ht-degree: 25%
 
 ---
 
 # Boîte de réception AEM
 
-aem Boîte de réception regroupe les notifications et les tâches provenant de divers composants AEM, y compris les workflows Forms. Lorsqu’un processus Forms contenant une étape Affecter une tâche est déclenché, l’application associée est répertoriée comme une tâche dans la boîte de réception de la personne désignée.
+AEM Boîte de réception regroupe les notifications et les tâches provenant de divers composants AEM, y compris les workflows Forms. Lorsqu’un processus Forms contenant une étape Affecter une tâche est déclenché, l’application associée est répertoriée comme une tâche dans la boîte de réception de la personne désignée.
 L’interface utilisateur de la boîte de réception fournit la liste et les vues de calendrier pour afficher les tâches. Vous pouvez également configurer les paramètres d’affichage. Vous pouvez filtrer les tâches en fonction de divers paramètres
 Vous pouvez personnaliser une boîte de réception de Experience Manager pour modifier le titre par défaut d&#39;une colonne, réorganiser la position d&#39;une colonne et afficher d&#39;autres colonnes en fonction des données d&#39;un processus.
 
