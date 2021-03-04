@@ -1,23 +1,26 @@
 ---
 title: Stockage et récupération des données de formulaire à partir de la base de données MySQL
 description: Didacticiel en plusieurs parties pour vous guider dans les étapes de stockage et de récupération des données de formulaire
-feature: adaptive-forms
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
+topic: Développement
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: 787a79663472711b78d467977d633e3d410803e5
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 0%
+source-wordcount: '149'
+ht-degree: 2%
 
 ---
 
 # Créer une bibliothèque cliente
 
-aem bibliothèque cliente gère tout le code JavaScript côté client. Pour cet article, j’ai créé un JavaScript simple pour récupérer les données de formulaire adaptatif à l’aide de l’API de pont de guide. Une fois les données du formulaire adaptatif récupérées, l’appel du POST est effectué à la servlet pour insérer ou mettre à jour les données du formulaire adaptatif dans la base de données. La fonction getALLUrlParams renvoie les paramètres de l&#39;URL. Si le paramètre guid est présent dans l&#39;URL, nous devons effectuer l&#39;opération de mise à jour, si ce n&#39;est une opération d&#39;insertion. Le reste de la fonctionnalité est géré dans le code associé au événement de clic de la classe .savebutton.
+AEM bibliothèque cliente gère tout le code JavaScript côté client. Pour cet article, j’ai créé un JavaScript simple pour récupérer les données de formulaire adaptatif à l’aide de l’API de pont de guide. Une fois les données du formulaire adaptatif récupérées, l’appel du POST est effectué à la servlet pour insérer ou mettre à jour les données du formulaire adaptatif dans la base de données. La fonction getALLUrlParams renvoie les paramètres de l&#39;URL. Si le paramètre guid est présent dans l&#39;URL, nous devons effectuer l&#39;opération de mise à jour, si ce n&#39;est une opération d&#39;insertion. Le reste de la fonctionnalité est géré dans le code associé au événement de clic de la classe .savebutton.
 
 >[!NOTE]
 >
