@@ -1,7 +1,7 @@
 ---
 title: Personnaliser le composant Résumé
 description: Etendez le composant de l’étape de résumé pour inclure la possibilité de naviguer jusqu’au formulaire suivant dans le package.
-feature: Formulaires adaptatifs
+feature: formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,14 +9,11 @@ activity: implement
 version: 6.4,6.5
 kt: 6894
 thumbnail: 6894.jpg
-topic: Développement
-role: Développeur
-level: Expérience
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 2%
+source-wordcount: '178'
+ht-degree: 0%
 
 ---
 
