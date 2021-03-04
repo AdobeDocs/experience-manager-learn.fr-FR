@@ -2,7 +2,7 @@
 title: Composant personnalisé
 description: Couvre la création de bout en bout d’un composant de signature personnalisé qui affiche le contenu créé. Comprend le développement d’un modèle Sling pour encapsuler la logique métier afin de renseigner le composant de ligne guide et le code HTML correspondant pour effectuer le rendu du composant.
 sub-product: sites
-feature: sling-models
+feature: Composants principaux, API
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -11,10 +11,13 @@ audience: developer
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
+topic: gestion de contenu, développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '3962'
+source-wordcount: '3969'
 ht-degree: 1%
 
 ---
