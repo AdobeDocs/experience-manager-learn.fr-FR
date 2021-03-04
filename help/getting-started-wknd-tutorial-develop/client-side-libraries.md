@@ -9,10 +9,14 @@ activity: develop
 audience: developer
 kt: 4083
 thumbnail: 30359.jpg
+feature: '"Composants principaux, AEM Archétype de projet"'
+topic: '"Gestion de contenu, développement"'
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 76462bb75ceda1921db2fa37606ed7c5a1eadb81
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3301'
 ht-degree: 4%
 
 ---
@@ -438,7 +442,7 @@ Si vous faites beaucoup de travail dans le module **ui.apps**, en modifiant les 
 
 ### Débogage des bibliothèques côté client {#debugging-clientlibs}
 
-Avec différentes méthodes de **catégories** et **incorpore** pour inclure plusieurs bibliothèques clientes, il peut s’avérer difficile de résoudre les problèmes. aem expose plusieurs outils pour y remédier. L&#39;un des outils les plus importants est **Reconstruire les bibliothèques clientes**, ce qui obligera AEM à recompiler les fichiers LESS et à générer le fichier CSS.
+Avec différentes méthodes de **catégories** et **incorpore** pour inclure plusieurs bibliothèques clientes, il peut s’avérer difficile de résoudre les problèmes. AEM expose plusieurs outils pour y remédier. L&#39;un des outils les plus importants est **Reconstruire les bibliothèques clientes**, ce qui obligera AEM à recompiler les fichiers LESS et à générer le fichier CSS.
 
 * [**Effacer les bibliothèques**](http://localhost:4502/libs/granite/ui/content/dumplibs.html)  : Liste toutes les bibliothèques clientes enregistrées dans l’instance AEM.  `<host>/libs/granite/ui/content/dumplibs.html`
 
