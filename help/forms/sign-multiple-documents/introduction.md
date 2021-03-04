@@ -1,18 +1,21 @@
 ---
 title: Présentation
 description: Démonstration vidéo de la casse d’utilisation du signe de plusieurs formulaires
-feature: adaptive-forms
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 thumbnail: 330165.jpg
+topic: Développement
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: 049574ab2536b784d6b303f474dba0412007e18c
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 2%
+source-wordcount: '124'
+ht-degree: 5%
 
 ---
 
@@ -28,7 +31,7 @@ La vidéo suivante vous guide tout au long de la procédure d’utilisation de l
 Ce cours suppose les éléments suivants :
 
 * Vous avez accès au serveur AEM 6.4 ou 6.5 avec Forms Ajoute sur le package installé et configuré.
-* aem configuré avec Adobe Sign
+* AEM configuré avec Adobe Sign
 * Accès au serveur SMTP
 * Quelques expériences avec AEM/AEM Forms
 
