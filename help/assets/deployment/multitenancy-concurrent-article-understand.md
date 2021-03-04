@@ -1,20 +1,16 @@
 ---
 title: Comprendre la multiplicité et le développement simultané
-seo-title: Comprendre la multiplicité et le développement simultané
 description: Découvrez les avantages, les défis et les techniques liés à la gestion d’une mise en oeuvre multi-clients avec les ressources Adobe Experience Manager.
-uuid: 682093fe-ce55-4ef8-af10-99f7062f8b1b
-discoiquuid: 0dfcdf39-7423-459f-8f35-ee5b4b829f2c
-feature: connected-assets
-topics: authoring, operations, sharing, publishing
-audience: all
-doc-type: article
-activity: understand
+feature: Ressources connectées
 version: 6.5
+topic: Développement
+role: Développeur
+level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: e03d84f92be11623704602fb448273e461c70b4e
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
 source-wordcount: '2024'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -97,7 +93,7 @@ Pour s&#39;assurer que les modifications apportées à ce paquet principal ne pe
 
 ## Gestion de l&#39;étendue du déploiement&amp;nbsp {#managing-deployment-scope}
 
-Comme différentes équipes déploient leur code dans le même référentiel, il est important qu’elles ne remplacent pas les modifications de l’autre. aem dispose d’un mécanisme de contrôle lors du déploiement des packages de contenu, le filtre. fichier xml. Il est important qu’il n’y ait pas de chevauchement entre les filtres.  fichiers xml, sinon le déploiement d’une équipe risque d’effacer le déploiement précédent d’une autre équipe. Pour illustrer ce point, reportez-vous aux exemples suivants de fichiers de filtre bien conçus ou problématiques :
+Comme différentes équipes déploient leur code dans le même référentiel, il est important qu’elles ne remplacent pas les modifications de l’autre. AEM dispose d’un mécanisme de contrôle lors du déploiement des packages de contenu, le filtre. fichier xml. Il est important qu’il n’y ait pas de chevauchement entre les filtres.  fichiers xml, sinon le déploiement d’une équipe risque d’effacer le déploiement précédent d’une autre équipe. Pour illustrer ce point, reportez-vous aux exemples suivants de fichiers de filtre bien conçus ou problématiques :
 
 /apps/my-société vs. /apps/my-société/my-site
 
@@ -119,11 +115,11 @@ Si un consensus ne peut être atteint entre les différentes unités opérationn
 
 ### Lanceurs de workflow {#workflow-launchers}
 
-aem utilise des lanceurs de processus pour déclencher automatiquement l&#39;exécution du processus lorsque des modifications spécifiées sont apportées dans le référentiel. aem fournit plusieurs lanceurs prêts à l’emploi, par exemple, pour exécuter des processus de génération de rendu et d’extraction des métadonnées sur des ressources nouvelles et mises à jour. Bien qu&#39;il soit possible de laisser ces lanceurs en l&#39;état, dans un environnement à plusieurs locataires, si les locataires ont des exigences de lanceur et/ou de modèle de processus différentes, il est probable que des lanceurs individuels devront être créés et entretenus pour chaque locataire. Ces lanceurs devront être configurés pour s’exécuter sur les mises à jour de leurs locataires tout en ne modifiant pas le contenu des autres locataires. Pour ce faire, appliquez facilement des lanceurs à des chemins d&#39;accès de référentiel spécifiques au client.
+AEM utilise des lanceurs de processus pour déclencher automatiquement l&#39;exécution du processus lorsque des modifications spécifiées sont apportées dans le référentiel. AEM fournit plusieurs lanceurs prêts à l’emploi, par exemple, pour exécuter des processus de génération de rendu et d’extraction des métadonnées sur des ressources nouvelles et mises à jour. Bien qu&#39;il soit possible de laisser ces lanceurs en l&#39;état, dans un environnement à plusieurs locataires, si les locataires ont des exigences de lanceur et/ou de modèle de processus différentes, il est probable que des lanceurs individuels devront être créés et entretenus pour chaque locataire. Ces lanceurs devront être configurés pour s’exécuter sur les mises à jour de leurs locataires tout en ne modifiant pas le contenu des autres locataires. Pour ce faire, appliquez facilement des lanceurs à des chemins d&#39;accès de référentiel spécifiques au client.
 
-### URL de redirection vers un microsite   {#vanity-urls}
+### URL de redirection vers un microsite  {#vanity-urls}
 
-aem fournit des fonctionnalités d’URL de redirection qui peuvent être définies sur la base d’une page. Dans un scénario à clients multiples, cette approche soulève la préoccupation suivante : AEM ne garantit pas l’unicité entre les URL vanity configurées de cette manière. Si deux utilisateurs différents configurent le même chemin d’accès à la vanité pour des pages différentes, un comportement inattendu peut être rencontré. Pour cette raison, nous vous recommandons d’utiliser les règles mod_rewrite dans les instances du répartiteur Apache, qui permettent un point central de configuration en parallèle avec les règles de résolution de ressources sortantes uniquement.
+AEM fournit des fonctionnalités d’URL de redirection qui peuvent être définies sur la base d’une page. Dans un scénario à clients multiples, cette approche soulève la préoccupation suivante : AEM ne garantit pas l’unicité entre les URL vanity configurées de cette manière. Si deux utilisateurs différents configurent le même chemin d’accès à la vanité pour des pages différentes, un comportement inattendu peut être rencontré. Pour cette raison, nous vous recommandons d’utiliser les règles mod_rewrite dans les instances du répartiteur Apache, qui permettent un point central de configuration en parallèle avec les règles de résolution de ressources sortantes uniquement.
 
 ### Groupes de composants {#component-groups}
 
@@ -137,7 +133,7 @@ Bien qu&#39;une bonne architecture et des canaux de communication ouverts puisse
 
 ### Ressources partagées {#shared-resources}
 
-aem s’exécute dans une seule JVM ; toutes les applications AEM déployées partagent intrinsèquement des ressources les unes avec les autres, en plus des ressources déjà consommées dans le fonctionnement normal des AEM. Dans l’espace JVM lui-même, il n’y aura pas de séparation logique des threads et les ressources finies disponibles pour AEM, telles que la mémoire, l’UC et les entrées/sorties de disque, seront également partagées. Tout locataire qui consomme des ressources affectera inévitablement d&#39;autres locataires du système.
+AEM s’exécute dans une seule JVM ; toutes les applications AEM déployées partagent intrinsèquement des ressources les unes avec les autres, en plus des ressources déjà consommées dans le fonctionnement normal des AEM. Dans l’espace JVM lui-même, il n’y aura pas de séparation logique des threads et les ressources finies disponibles pour AEM, telles que la mémoire, l’UC et les entrées/sorties de disque, seront également partagées. Tout locataire qui consomme des ressources affectera inévitablement d&#39;autres locataires du système.
 
 ### Performances {#performance}
 
@@ -145,7 +141,7 @@ Si vous ne suivez pas AEM bonnes pratiques, il est possible de développer des a
 
 ### Journalisation {#logging}
 
-aem fournit des interfaces prêtes à l&#39;emploi pour une configuration de journalisation robuste qui peut être utilisée à notre avantage dans les scénarios de développement partagés. En spécifiant des journaux distincts pour chaque marque, par nom de paquet, nous pouvons obtenir un certain degré de séparation des journaux. Bien que les opérations à l’échelle du système, telles que la réplication et l’authentification, soient toujours consignées à un emplacement central, le code personnalisé non partagé peut être consigné séparément, ce qui facilite la surveillance et le débogage de l’équipe technique de chaque marque.
+AEM fournit des interfaces prêtes à l&#39;emploi pour une configuration de journalisation robuste qui peut être utilisée à notre avantage dans les scénarios de développement partagés. En spécifiant des journaux distincts pour chaque marque, par nom de paquet, nous pouvons obtenir un certain degré de séparation des journaux. Bien que les opérations à l’échelle du système, telles que la réplication et l’authentification, soient toujours consignées à un emplacement central, le code personnalisé non partagé peut être consigné séparément, ce qui facilite la surveillance et le débogage de l’équipe technique de chaque marque.
 
 ### Sauvegarde et restauration {#backup-and-restore}
 
