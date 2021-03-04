@@ -4,21 +4,18 @@ seo-title: Configuration d’un graphique en courbes pour votre premier document
 description: Voici la partie 8 du didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons ajouter un graphique en courbes au panneau de progression du compte.
 seo-description: Voici la partie 8 du didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons ajouter un graphique en courbes au panneau de progression du compte.
 uuid: 08c3e7af-e3cb-4ee0-bdc1-d112bfa70e40
-feature: Communication interactive
+feature: communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 4292303c-3ef4-4df2-b537-fdb011412670
-topic: Développement
-role: Développeur
-level: Début
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 2%
+source-wordcount: '229'
+ht-degree: 0%
 
 ---
 
