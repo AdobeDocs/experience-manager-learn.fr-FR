@@ -2,19 +2,18 @@
 title: Archivage et extraction
 description: Découvrez comment utiliser les fonctions d’archivage et d’extraction AEM pour faciliter la collaboration entre plusieurs utilisateurs sur les ressources.
 sub-product: ressources
-feature: null
-topics: authoring, collaboration
-audience: author
-doc-type: feature video
-activity: use
+feature: Gestion des ressources
 version: cloud-service
 kt: 4542
 thumbnail: 32048.jpg
+topic: Collaboration
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 2%
+source-wordcount: '51'
+ht-degree: 3%
 
 ---
 
