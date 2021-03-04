@@ -1,25 +1,28 @@
 ---
 seo: Set up public and private keys for use with AEM and Adobe I/O
-description: 'aem utilise des paires clé publique/clé privée pour communiquer en toute sécurité avec Adobe I/O et d’autres services Web. Ce court didacticiel illustre comment générer des clés et des fichiers de stockage de clés compatibles à l''aide de l''outil de ligne de commande openssl qui fonctionne avec AEM et Adobe I/O. '
+description: 'AEM utilise des paires clé publique/clé privée pour communiquer en toute sécurité avec l’Adobe I/O et d’autres services Web. Ce court didacticiel illustre comment générer des clés et des fichiers de stockage de clés compatibles à l''aide de l''outil de ligne de commande openssl qui fonctionne avec l''AEM et l''Adobe I/O. '
 version: 6.4, 6.5
-feature: authentication
+feature: 'Utilisateurs et groupes '
 topics: authentication, integrations
 activity: setup
 audience: architect, developer, implementer
 doc-type: tutorial
 kt: 2450
+topic: Développement
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: 3f973e36531a2d04cbaf6bb8dd70b39fef7d8b2f
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
 
 
-# Configuration de clés publiques et privées à utiliser avec Adobe I/O
+# Configuration de clés publiques et privées à utiliser avec l’Adobe I/O
 
-aem utilise des paires clé publique/clé privée pour communiquer en toute sécurité avec Adobe I/O et d’autres services Web. Ce court didacticiel illustre comment générer des clés et des fichiers de stockage de clés compatibles à l&#39;aide de l&#39;outil de ligne de commande [!DNL openssl] qui fonctionne avec AEM et Adobe I/O.
+AEM utilise des paires clé publique/clé privée pour communiquer en toute sécurité avec l’Adobe I/O et d’autres services Web. Ce court didacticiel illustre comment générer des clés et des fichiers de stockage de clés compatibles à l&#39;aide de l&#39;outil de ligne de commande [!DNL openssl] qui fonctionne avec l&#39;AEM et l&#39;Adobe I/O.
 
 >[!CAUTION]
 >
@@ -27,13 +30,13 @@ aem utilise des paires clé publique/clé privée pour communiquer en toute séc
 
 ## Générer la paire de clés publique/privée {#generate-the-public-private-key-pair}
 
-La commande [[!DNL openssl]](https://www.openssl.org/docs/man1.0.2/man1/openssl.html) de l&#39;outil de ligne de commande [[!DNL req] ](https://www.openssl.org/docs/man1.0.2/man1/req.html) peut être utilisée pour générer une paire de clés compatible avec Adobe I/O et Adobe Experience Manager.
+La [[!DNL openssl]](https://www.openssl.org/docs/man1.0.2/man1/openssl.html) commande [[!DNL req] ](https://www.openssl.org/docs/man1.0.2/man1/req.html) de l&#39;outil de ligne de commande  peut être utilisée pour générer une paire de clés compatible avec Adobe I/O et Adobe Experience Manager.
 
 ```shell
 $ openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate.crt
 ```
 
-Pour exécuter la commande [!DNL openssl generate], fournissez les informations relatives au certificat lorsque cela est demandé. Adobe I/O et AEM ne se soucient pas de ce que sont ces valeurs, mais ils doivent s&#39;aligner sur et décrire votre clé.
+Pour exécuter la commande [!DNL openssl generate], fournissez les informations relatives au certificat lorsque cela est demandé. L’Adobe I/O et l’AEM se soucient peu de ces valeurs, mais ils doivent s’aligner sur elles et décrire votre clé.
 
 ```
 Generating a 2048 bit RSA private key
@@ -91,11 +94,11 @@ my-key, Feb 5, 2019, PrivateKeyEntry,
 Certificate fingerprint (SHA1): 7C:6C:25:BD:52:D3:3B:29:83:FD:A2:93:A8:53:91:6A:25:1F:2D:52
 ```
 
-![Vérifier le magasin de clés en Adobe I/O](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--public-keys.png)
+![Vérifier le stockage des clés dans l&#39;Adobe I/O](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--public-keys.png)
 
 ## Ajouter le fichier de stockage des clés à AEM {#adding-the-keystore-to-aem}
 
-aem utilise la **clé privée** générée pour communiquer en toute sécurité avec Adobe I/O et d&#39;autres services Web. Pour que la clé privée soit accessible à AEM, elle doit être installée dans le fichier de stockage des clés d’un utilisateur AEM.
+AEM utilise la **clé privée** générée pour communiquer en toute sécurité avec l’Adobe I/O et d’autres services Web. Pour que la clé privée soit accessible à AEM, elle doit être installée dans le fichier de stockage des clés d’un utilisateur AEM.
 
 Accédez à **AEM > [!UICONTROL Outils] > [!UICONTROL Sécurité] > [!UICONTROL Utilisateurs]** et **modifier l&#39;utilisateur** auquel la clé privée doit être associée.
 
@@ -130,22 +133,22 @@ Dans la console de stockage des clés de l’utilisateur, cliquez sur **[!UICONT
 
 Une fois que la clé privée a été chargée à partir du fichier de stockage de clés fourni dans le fichier de stockage de clés AEM, les métadonnées de la clé privée s’affichent dans la console de stockage de clés de l’utilisateur.
 
-## Ajouter la clé publique à Adobe I/O {#adding-the-public-key-to-adobe-i-o}
+## Ajouter la clé publique à l&#39;Adobe I/O {#adding-the-public-key-to-adobe-i-o}
 
-La clé publique correspondante doit être téléchargée en Adobe I/O pour permettre à l’utilisateur du service d’AEM, qui dispose de la clé publique privée correspondante pour communiquer en toute sécurité.
+La clé publique correspondante doit être téléchargée sur l’Adobe I/O pour permettre à l’utilisateur du service AEM, qui dispose de la clé publique privée correspondante pour communiquer en toute sécurité.
 
-### Créer une nouvelle intégration Adobe I/O {#create-a-adobe-i-o-new-integration}
+### Créer un Adobe I/O de nouvelle intégration {#create-a-adobe-i-o-new-integration}
 
-![Créer une nouvelle intégration Adobe I/O](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--create-new-integration.png)
+![Création d’un Adobe I/O d’intégration](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--create-new-integration.png)
 
-*[[!UICONTROL Créer une intégration]](https://console.adobe.io/)  Adobe I/O >  [!UICONTROL Nouvelle intégration]*
+*[[!UICONTROL Créer une intégration]](https://console.adobe.io/)  d&#39;Adobe I/O>  [!UICONTROL Nouvelle intégration]*
 
-La création d’une nouvelle intégration dans Adobe I/O nécessite le transfert d’un certificat public. Téléchargez le **certificat.crt** généré par la commande `openssl req`.
+La création d’une nouvelle intégration dans l’Adobe I/O nécessite le transfert d’un certificat public. Téléchargez le **certificat.crt** généré par la commande `openssl req`.
 
-### Vérifiez que les clés publiques sont chargées en Adobe I/O {#verify-the-public-keys-are-loaded-in-adobe-i-o}
+### Vérifiez que les clés publiques sont chargées dans l&#39;Adobe I/O {#verify-the-public-keys-are-loaded-in-adobe-i-o}
 
-![Vérification des clés publiques en Adobe I/O](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--public-keys.png)
+![Vérifier les clés publiques dans l&#39;Adobe I/O](assets/set-up-public-private-keys-for-use-with-aem-and-adobe-io/adobe-io--public-keys.png)
 
-Les clés publiques installées et leurs dates d&#39;expiration sont répertoriées dans la console [!UICONTROL Intégrations] d&#39;Adobe I/O. Vous pouvez ajouter plusieurs clés publiques par le biais du bouton **[!UICONTROL Ajouter une clé publique]**.
+Les clés publiques installées et leurs dates d&#39;expiration sont répertoriées dans la console [!UICONTROL Intégrations] de l&#39;Adobe I/O. Vous pouvez ajouter plusieurs clés publiques par le biais du bouton **[!UICONTROL Ajouter une clé publique]**.
 
-Maintenant AEM tenez la clé privée et l&#39;intégration Adobe I/O détient la clé publique correspondante, ce qui permet aux AEM de communiquer en toute sécurité avec Adobe I/O.
+Désormais, AEM détient la clé privée et l&#39;intégration de l&#39;Adobe I/O détient la clé publique correspondante, ce qui permet aux AEM de communiquer en toute sécurité avec l&#39;Adobe I/O.
