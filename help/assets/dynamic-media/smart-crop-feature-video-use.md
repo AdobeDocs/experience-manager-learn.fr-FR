@@ -1,22 +1,17 @@
 ---
 title: Utilisation de la recadrage intelligente avec AEM Assets Dynamic Media
-seo-title: Utilisation de la recadrage intelligente avec AEM Assets Dynamic Media
 description: Smart Crop utilise Adobe Sensei pour éliminer les tâches fastidieuses et coûteuses de recadrage de contenu pour une conception adaptée.
-seo-description: Smart Crop utilise Adobe Sensei pour éliminer les tâches fastidieuses et coûteuses de recadrage de contenu pour une conception adaptée.
-uuid: 2cb27aa8-644d-4b17-8ffc-f6a99f95cfd2
-discoiquuid: e4b8534c-fa64-491f-86ec-4dbe50cd6bf7
 sub-product: dynamic-media
-feature: smart-crop, image-profiles
-topics: images, renditions, authoring
-doc-type: feature video
-audience: all
-activity: use
+feature: Recadrage dynamique, Profils d’image
 version: 6.4, 6.5
+topic: Gestion de contenu
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 9cf01dbf9461df4cc96d5bd0a96c0d4d900af089
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 13%
+source-wordcount: '256'
+ht-degree: 17%
 
 ---
 
@@ -29,7 +24,7 @@ Smart Crop utilise Adobe Sensei pour éliminer les tâches fastidieuses et coût
 
 >[!NOTE]
 >
->La vidéo suppose que votre instance AEM s’exécute en mode Dynamic Media S7. [Vous trouverez des instructions sur la configuration de l&#39;AEM avec Dynamic Media ici.](https://helpx.adobe.com/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
+>La vidéo suppose que votre instance AEM s’exécute en mode Dynamic Media S7. [Vous trouverez des instructions sur la configuration de l&#39;AEM avec Dynamic Media ici.](https://helpx.adobe.com/fr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html)
 
 ## La fonctionnalité Adobe Experience Manager Smart Crop inclut
 
