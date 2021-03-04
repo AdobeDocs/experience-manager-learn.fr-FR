@@ -4,16 +4,16 @@ description: PDF est en fait une famille de formats de fichier, et cet article d
 solution: Experience Manager Forms
 product: aem
 type: Documentation
-role: Developer
-level: Beginner,Intermediate
+role: Développeur
+level: Débutant, Intermédiaire
 version: 6.3,6.4,6.5
-feature: Document Services
-topic: development
+feature: Services de document
+topic: Développement
 kt: 7071
 translation-type: tm+mt
-source-git-commit: 1e945afddda3d7735005029952a9d7ec46828bc6
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
