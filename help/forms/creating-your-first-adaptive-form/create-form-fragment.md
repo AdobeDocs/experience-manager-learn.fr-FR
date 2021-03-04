@@ -1,18 +1,21 @@
 ---
 title: Création d’un fragment de formulaire
 description: Les formulaires AEM offrent un mécanisme pratique pour créer un segment de formulaire tel qu’un panneau ou un groupe de champs une seule fois et les réutiliser dans les formulaires adaptatifs.
-feature: adaptive-forms
+feature: Formulaires adaptatifs
 topics: authoring
 audience: developer
 doc-type: tutorial
 activity: understand
 kt: 5862
 thumbnail: 37325.jpg
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 38%
+source-wordcount: '112'
+ht-degree: 40%
 
 ---
 
