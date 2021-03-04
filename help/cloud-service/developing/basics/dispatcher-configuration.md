@@ -1,18 +1,18 @@
 ---
 title: Comment migrer une configuration de répartiteur AMS existante vers AEM en tant que Cloud Service
 description: Conseils et astuces pour migrer la configuration du répartiteur AEM d’Adobe Managed Services (AMS) vers AEM en tant que Cloud Service.
-role: Developer
-level: Beginner
-type: Tutorial
-topic: Development
+role: Architecte, développeur
+level: Début
+type: Tutoriel
+topic: Développement, migration
 feature: Dispatcher
 kt: 6931
 thumbnail: 330556.jpg
 translation-type: tm+mt
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 0%
+source-wordcount: '76'
+ht-degree: 2%
 
 ---
 
