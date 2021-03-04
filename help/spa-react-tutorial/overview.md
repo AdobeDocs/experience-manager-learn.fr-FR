@@ -9,10 +9,14 @@ activity: develop
 audience: developer
 kt: 5912
 thumbnail: 5912-spa-react.jpg
+feature: Éditeur de SPA
+topic: SPA
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: f568c991cd33c5c5349da32f505cff356a6ebfd2
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '734'
 ht-degree: 15%
 
 ---
@@ -33,7 +37,7 @@ L’objectif de ce didacticiel en plusieurs parties est d’apprendre à un dév
 Le tutoriel est conçu pour fonctionner avec **AEM en tant que Cloud Service** et est rétrocompatible avec **AEM 6.5.4+** et **AEM 6.4.8+**. La SPA est mise en oeuvre en utilisant :
 
 * [Archétype de projet Maven AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html)
-* [aem Éditeur SPA](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
+* [AEM Éditeur SPA](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
 * [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [Réagir JS](https://reactjs.org/)
 * [Créer une application réactive](https://create-react-app.dev/)
@@ -52,7 +56,7 @@ Avant de commencer ce didacticiel, vous aurez besoin des éléments suivants :
 
 * Connaissances de base en HTML, CSS et JavaScript
 * Connaissance de base de [Réagir](https://reactjs.org/tutorial/tutorial.html)
-* [aem en tant que SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk) Cloud Service,  [AEM 6.5.4+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#65) ou  [AEM 6.4.8+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#64)
+* [AEM en tant que SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk) Cloud Service,  [AEM 6.5.4+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#65) ou  [AEM 6.4.8+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#64)
 * [Java ](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 ou version ultérieure)
 * [Node.](https://nodejs.org/en/) jand  [npm](https://www.npmjs.com/)
