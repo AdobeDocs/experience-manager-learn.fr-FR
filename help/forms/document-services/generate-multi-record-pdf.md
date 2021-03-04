@@ -1,16 +1,19 @@
 ---
 title: Génération de plusieurs fichiers PDF à partir d’un seul fichier de données
 seo-title: Génération de plusieurs fichiers PDF à partir d’un seul fichier de données
-feature: output-service
+feature: Service Output
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
+topic: Développement
+role: Développeur
+level: Expérience
 translation-type: tm+mt
-source-git-commit: defefc1451e2873e81cd81e3cccafa438aa062e3
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '501'
 ht-degree: 2%
 
 ---
