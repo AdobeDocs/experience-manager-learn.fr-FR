@@ -1,18 +1,21 @@
 ---
 title: Débogage des outils du répartiteur
 description: Les outils du répartiteur fournissent un environnement serveur Web Apache conteneurisé qui peut être utilisé pour simuler AEM en tant que répartiteur local du service de publication AEM Cloud Services. Le débogage des journaux des outils du répartiteur et du contenu du cache peut s’avérer essentiel pour garantir l’exactitude de l’application AEM de bout en bout et des configurations de cache et de sécurité prises en charge.
-feature: dispatcher, aem-sdk
+feature: Dispatcher
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5918
+topic: Développement
+role: Développeur
+level: Débutant, intermédiaire
 translation-type: tm+mt
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 0%
+source-wordcount: '234'
+ht-degree: 1%
 
 ---
 
