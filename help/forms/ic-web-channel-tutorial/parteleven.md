@@ -4,18 +4,21 @@ seo-title: Configuration du panneau Mix d’investissement
 description: Il s'agit de la partie 11 du didacticiel en plusieurs étapes pour la création de votre premier document de communications interactives. Dans cette partie, nous allons ajouter des graphiques circulaires pour afficher la combinaison d'investissement actuelle et modèle.
 seo-description: Il s'agit de la partie 11 du didacticiel en plusieurs étapes pour la création de votre premier document de communications interactives. Dans cette partie, nous allons ajouter des graphiques circulaires pour afficher la combinaison d'investissement actuelle et modèle.
 uuid: b0132912-cb6e-4dec-8309-5125d29ad291
-feature: interactive-communication
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 77de4e76-53ee-467c-a71c-d1d3ea15283b
+topic: Développement
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 3d54a8158d0564a3289a2100bbbc59e5ae38f175
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 0%
+source-wordcount: '363'
+ht-degree: 1%
 
 ---
 
