@@ -3,7 +3,7 @@ title: Utilisation de CAPTCHA avec AEM Forms adaptatif
 seo-title: Utilisation de CAPTCHA avec AEM Forms adaptatif
 description: Ajouter et utiliser un CAPTCHA avec AEM Adaptive Forms.
 seo-description: Ajouter et utiliser un CAPTCHA avec AEM Adaptive Forms.
-feature: '"Forms adaptatif,Workflow"'
+feature: formulaires adaptatifs
 topics: integrations
 audience: developer
 doc-type: technical video
@@ -11,14 +11,11 @@ activity: setup
 version: 6.4,6.5
 uuid: bd63e207-4f4d-4f34-9ac4-7572ed26f646
 discoiquuid: 5e184e44-e385-4df7-b7ed-085239f2a642
-topic: Développement
-role: Développeur
-level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
+source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 12%
+source-wordcount: '243'
+ht-degree: 11%
 
 ---
 
