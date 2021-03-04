@@ -6,10 +6,14 @@ audience: developer
 doc-type: tutorial
 activity: develop
 version: 6.3, 6.4, 6.5
+feature: Rechercher
+topic: Développement
+role: Développeur
+level: Intermédiaire, expérimenté
 translation-type: tm+mt
-source-git-commit: e99779b5d42bb9a3b258e2bbe815defde9d40bf7
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '907'
 ht-degree: 10%
 
 ---
@@ -75,7 +79,7 @@ La mise en oeuvre de la recherche simple est le matériel du laboratoire **Adobe
 * [Modèles Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Exportateur de modèle Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
 * [API QueryBuilder](https://docs.adobe.com/docs/en/aem/6-2/develop/search/querybuilder-api.html)
-* [aem Module externe](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)  Chrome (page[ ](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/)Documentation)
+* [AEM Module externe](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)  Chrome (page[ ](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/)Documentation)
 
 ## Corrections et suivi {#corrections-and-follow-up}
 
