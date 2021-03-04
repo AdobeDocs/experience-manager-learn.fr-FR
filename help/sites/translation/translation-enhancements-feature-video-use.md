@@ -1,30 +1,33 @@
 ---
 title: Améliorations de la traduction dans AEM
-description: aem structure de traduction robuste permet de traduire en toute simplicité AEM contenu par des fournisseurs de traduction pris en charge. Découvrez les dernières améliorations.
-feature: multi-site-manager, language-copy
+description: AEM structure de traduction robuste permet de traduire en toute simplicité AEM contenu par des fournisseurs de traduction pris en charge. Découvrez les dernières améliorations.
+feature: multisite-manager, copie de langue
 topics: localization, authoring, content-architecture
 audience: author, marketer, developer
 doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
+topic: Localisation
+role: Professionnel
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 2%
+source-wordcount: '340'
+ht-degree: 5%
 
 ---
 
 
 # Améliorations apportées à la traduction avec le gestionnaire multisite {#translation-enhancements}
 
-aem structure de traduction robuste permet de traduire en toute simplicité AEM contenu par des fournisseurs de traduction pris en charge.
+AEM structure de traduction robuste permet de traduire en toute simplicité AEM contenu par des fournisseurs de traduction pris en charge.
 
 ## Améliorations apportées à la traduction dans AEM 6.5
 
 >[!VIDEO](https://video.tv.adobe.com/v/27405?quality=9&learn=on)
 
-aem version 6.5 améliorée de la traduction comprend :
+AEM version 6.5 améliorée de la traduction comprend :
 
 **Approbation automatique des tâches** de traduction : L’indicateur d’approbation dans la tâche de traduction est une propriété binaire. Il ne permet pas d’effectuer ou d’intégrer des workflows de révision et d’approbation prêts à l’emploi. Pour que le nombre d&#39;étapes d&#39;une tâche de traduction reste minimal, il est défini par défaut sur &quot;approuver automatiquement&quot; dans [!UICONTROL Propriétés avancées] d&#39;un projet de traduction. Si votre organisation doit approuver une tâche de traduction, vous pouvez décocher l&#39;option &quot;approuver automatiquement&quot; dans [!UICONTROL Propriétés avancées] d&#39;un projet de traduction.
 
@@ -42,6 +45,6 @@ Les auteurs peuvent désormais créer rapidement et facilement des projets de tr
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Traduction de contenu pour les sites multilingues](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html)
+* [Traduction de contenu pour les sites multilingues](https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/translation.html)
 * [https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
 * [Meilleures pratiques de traduction](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)
