@@ -1,7 +1,7 @@
 ---
 title: Configurer la luciole du projet Adobe pour l'extensibilité de l'Asset compute
 description: Les projets d'Asset compute sont des projets de lucioles d'Adobe spécialement définis et, en tant que tels, nécessitent l'accès à la luciole de projet d'Adobe dans la console de développement des Adobes pour les configurer et les déployer.
-feature: asset-compute
+feature: Microservices Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
+topic: Intégrations, développement
+role: Développeur
+level: Intermédiaire, expérimenté
 translation-type: tm+mt
-source-git-commit: 3a3832a05ed9598d970915adbc163254c6eb83f1
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -59,12 +62,12 @@ Lors de la configuration de l&#39;[intégration de l&#39;API d&#39;Asset compute
 
 ## Vérification des informations d’identification du compte de service (JWT)
 
-Les informations d&#39;identification de ce projet Adobe I/O sont utilisées par l&#39;[outil de développement d&#39;Asset compute](../develop/development-tool.md) local pour interagir avec Adobe I/O Runtime et devront être intégrées au projet d&#39;Asset compute. Familiarisez-vous avec les informations d’identification du compte de service (JWT).
+Les informations d&#39;identification de ce projet d&#39;Adobe I/O sont utilisées par l&#39;[outil de développement d&#39;Asset compute](../develop/development-tool.md) local pour interagir avec Adobe I/O Runtime et devront être intégrées au projet d&#39;Asset compute. Familiarisez-vous avec les informations d’identification du compte de service (JWT).
 
 ![Informations d’identification du compte Adobe Developer Service](./assets/firefly/service-account.png)
 
 1. Dans le projet Adobe I/O Project Firefly, vérifiez que l&#39;espace de travail `Development` est sélectionné.
 1. Appuyez sur __Compte de service (JWT)__ sous __Identifiants__.
-1. Vérifiez les informations d’identification Adobe I/O affichées.
+1. Vérification des informations d’identification de l’Adobe I/O affichées
    + La __clé publique__ répertoriée au bas de la liste est __private.key__ équivalent dans `config.zip` téléchargée lorsque l&#39;API d&#39;Asset compute ____ a été ajoutée à ce projet.
-      + Si la clé privée est perdue ou compromise, la clé publique correspondante peut être supprimée et une nouvelle paire de clés générée ou téléchargée vers Adobe I/O à l’aide de cette interface.
+      + Si la clé privée est perdue ou compromise, la clé publique correspondante peut être supprimée et une nouvelle paire de clés générée ou téléchargée vers l&#39;Adobe I/O à l&#39;aide de cette interface.
