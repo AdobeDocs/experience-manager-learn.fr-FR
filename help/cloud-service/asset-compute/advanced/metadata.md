@@ -1,7 +1,7 @@
 ---
 title: Développement d’un agent de métadonnées d’Asset compute
 description: Découvrez comment créer un outil de métadonnées d’Asset compute qui dérive les couleurs les plus couramment utilisées dans un fichier d’image et réécrit les noms des couleurs dans les métadonnées du fichier dans AEM.
-feature: asset-compute
+feature: Microservices Asset compute
 topics: metadata, development
 version: cloud-service
 activity: develop
@@ -9,10 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
+topic: Intégrations, développement
+role: Développeur
+level: Intermédiaire, expérimenté
 translation-type: tm+mt
-source-git-commit: c2a8e6c3ae6dcaa45816b1d3efe569126c6c1e60
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1442'
 ht-degree: 1%
 
 ---
@@ -32,7 +35,7 @@ Les cas d&#39;utilisation courants sont les suivants :
 
 >[!VIDEO](https://video.tv.adobe.com/v/327313?quality=12&learn=on)
 
-Dans ce didacticiel, nous allons créer un outil de métadonnées d&#39;Asset compute qui dérive les couleurs les plus couramment utilisées dans un fichier d&#39;image et écrit les noms des couleurs dans les métadonnées du fichier dans AEM. Bien que le collaborateur lui-même soit de base, ce didacticiel l’utilise pour explorer comment les collaborateurs d’Asset compute peuvent être utilisés pour écrire des métadonnées dans des ressources en AEM en tant que Cloud Service.
+Dans ce didacticiel, nous allons créer un outil de métadonnées d&#39;Asset compute qui dérive les couleurs les plus couramment utilisées dans un fichier d&#39;image et écrit les noms des couleurs dans les métadonnées du fichier dans AEM. Bien que le collaborateur lui-même soit de base, ce didacticiel l’utilise pour explorer comment les collaborateurs d’Asset compute peuvent être utilisés pour écrire des métadonnées sur des ressources en AEM en tant que Cloud Service.
 
 ## Flux logique d’un appel d’opérateur de métadonnées d’Asset compute
 
@@ -255,7 +258,7 @@ Notez que cela va déployer tous les travailleurs du projet. Consultez les [inst
 
 ### Intégration avec les Profils de traitement AEM{#processing-profile}
 
-Appelez le travailleur à partir de AEM en créant un nouveau service de Profil de traitement personnalisé ou en modifiant un service existant qui appelle ce travailleur déployé.
+Appelez le collaborateur à partir de AEM en créant un nouveau service de Profil de traitement personnalisé ou en modifiant un service existant qui appelle ce collaborateur déployé.
 
 ![Profil de traitement](./assets/metadata/processing-profile.png)
 
