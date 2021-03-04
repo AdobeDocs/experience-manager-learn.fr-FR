@@ -4,11 +4,13 @@ seo-title: Tutorials et vidéos AEM Forms
 description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés
 seo-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés
 sub-product: formulaires
+topic: Développement
+role: Développeur
 translation-type: tm+mt
-source-git-commit: 23664bae44b74ee35ab7f7cb415d2ba017ea8752
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 29%
+source-wordcount: '305'
+ht-degree: 32%
 
 ---
 
@@ -83,7 +85,7 @@ Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gérer
 * [Documentation de création AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
 * [Documentation sur le développement d’AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [Documentation de l’administration AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
-* [AEM Sites Deploying Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/user-guide.html)
+* [AEM Sites Deploying Documentation](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/user-guide.html)
 * [Tutoriels d’AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriels d’AEM Assets](/help/assets/overview.md)
 * [Tutoriels d’AEM Forms](/help/forms/overview.md)
