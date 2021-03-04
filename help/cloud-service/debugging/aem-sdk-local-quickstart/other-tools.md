@@ -1,18 +1,21 @@
 ---
 title: Autres outils de débogage du SDK AEM
 description: Divers autres outils peuvent vous aider à déboguer le démarrage rapide local du SDK AEM.
-feature: null
+feature: Outils de développement
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
+topic: Développement
+role: Développeur
+level: Débutant, intermédiaire
 translation-type: tm+mt
-source-git-commit: a3d3612713decefb5c7e1cf5b2d4d21afff0a2f5
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 10%
+source-wordcount: '339'
+ht-degree: 11%
 
 ---
 
