@@ -3,18 +3,20 @@ title: Utilisation de l’Assistant SSL dans AEM
 description: Adobe Experience Manager de l’assistant de configuration SSL pour faciliter la configuration d’une instance AEM à exécuter via HTTPS.
 seo-description: Adobe Experience Manager de l’assistant de configuration SSL pour faciliter la configuration d’une instance AEM à exécuter via HTTPS.
 version: 6.3, 6,4, 6.5
-feature: null
 topics: security, operations
 activity: use
 audience: administrator
 doc-type: technical video
 uuid: 82a6962e-3658-427a-bfad-f5d35524f93b
 discoiquuid: 9e666741-0f76-43c9-ab79-1ef149884686
+topic: Sécurité
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
+source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 0%
+source-wordcount: '216'
+ht-degree: 1%
 
 ---
 
