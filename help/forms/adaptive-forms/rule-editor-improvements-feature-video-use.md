@@ -1,28 +1,31 @@
 ---
 title: Améliorations de l’éditeur de règles dans AEM Forms
 seo-title: Améliorations de l’éditeur de règles dans AEM Forms
-description: 'L’éditeur de règles permet aux utilisateurs d’ajouter une logique à AEM Forms adaptatif. aem 6.3 améliore l’éditeur de règles de plusieurs manières, ce qui facilite et accélère l’ajout de renseignements par les utilisateurs techniques et non techniques. '
-seo-description: 'L’éditeur de règles permet aux utilisateurs d’ajouter une logique à AEM Forms adaptatif. aem 6.3 améliore l’éditeur de règles de plusieurs manières, ce qui facilite et accélère l’ajout de renseignements par les utilisateurs techniques et non techniques. '
+description: 'L’éditeur de règles permet aux utilisateurs d’ajouter une logique à AEM Forms adaptatif. AEM 6.3 améliore l’éditeur de règles de plusieurs manières, ce qui facilite et accélère l’ajout de renseignements par les utilisateurs techniques et non techniques. '
+seo-description: 'L’éditeur de règles permet aux utilisateurs d’ajouter une logique à AEM Forms adaptatif. AEM 6.3 améliore l’éditeur de règles de plusieurs manières, ce qui facilite et accélère l’ajout de renseignements par les utilisateurs techniques et non techniques. '
 uuid: 35e8cc7c-04cf-43b4-bbc7-41bfd909cfba
-feature: adaptive-forms
+feature: Formulaires adaptatifs
 topics: authoring
 audience: author
 doc-type: technical video
 activity: use
 version: 6.3,6.4,6.5.
 discoiquuid: 51750b3f-1fda-43ae-b3ed-1eede83b19d5
+topic: Administration
+role: Développeur
+level: Début
 translation-type: tm+mt
-source-git-commit: 67ca08bf386a217807da3755d46abed225050d02
+source-git-commit: 7d7034026826a5a46a91b6425a5cebfffab2934d
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 4%
+source-wordcount: '191'
+ht-degree: 6%
 
 ---
 
 
 # Améliorations de l’éditeur de règles dans AEM Forms {#rule-editor-improvements-in-aem-forms}
 
-L’éditeur de règles permet aux utilisateurs d’ajouter une logique à AEM Forms adaptatif. aem 6.3 améliore l’éditeur de règles de plusieurs manières, ce qui facilite et accélère l’ajout de renseignements par les utilisateurs techniques et non techniques.
+L’éditeur de règles permet aux utilisateurs d’ajouter une logique à AEM Forms adaptatif. AEM 6.3 améliore l’éditeur de règles de plusieurs manières, ce qui facilite et accélère l’ajout de renseignements par les utilisateurs techniques et non techniques.
 
 >[!VIDEO](https://video.tv.adobe.com/v/19653?quality=9&learn=on)
 
