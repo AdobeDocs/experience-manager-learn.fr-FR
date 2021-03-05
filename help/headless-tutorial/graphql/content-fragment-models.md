@@ -15,9 +15,9 @@ topic: Sans tête, Gestion de contenu
 role: Développeur
 level: Début
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: cae6e32baa256d4c94fe317eb31cd5163cdae41f
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1027'
 ht-degree: 2%
 
 ---
@@ -44,6 +44,10 @@ Il s’agit d’un didacticiel en plusieurs parties et on suppose que les étape
 >[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
 
 La vidéo ci-dessus donne un aperçu général de l’utilisation des modèles de fragments de contenu.
+
+>[!CAUTION]
+>
+> La vidéo ci-dessus montre la création du modèle **Contributeur** avec le nom `Contributors`. Lorsque vous effectuez les étapes de votre propre environnement, veillez à ce que le titre utilise le formulaire unique : `Contributor` sans **s**. Le nommage du modèle de fragment de contenu déclenche les appels d’API GraphQL qui seront effectués ultérieurement dans le didacticiel.
 
 ## Inspect : modèle de fragment de contenu d&#39;aventure
 
