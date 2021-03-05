@@ -6,10 +6,10 @@ topic: Sans tête, Gestion de contenu
 role: Développeur
 level: Début
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 4%
+source-wordcount: '438'
+ht-degree: 5%
 
 ---
 
@@ -19,11 +19,6 @@ ht-degree: 4%
 Adobe Experience Manager propose plusieurs options pour définir des points de terminaison sans en-tête et diffuser son contenu au format JSON. Utilisez des didacticiels pratiques pour découvrir comment utiliser les différentes options et choisir ce qui vous convient.
 
 ## Didacticiel sur les API AEM GraphQL
-
->[!CAUTION]
->
-> L’API AEM GraphQL pour la Diffusion Fragments de contenu est disponible sur demande.
-> Contactez l&#39;assistance Adobe pour activer l&#39;API pour votre AEM en tant que programme Cloud Service.
 
 AEM API GraphQL pour les fragments de contenu
 prend en charge les scénarios CMS sans tête dans lesquels les applications clientes externes effectuent le rendu d’expériences à l’aide de contenu géré dans AEM.
