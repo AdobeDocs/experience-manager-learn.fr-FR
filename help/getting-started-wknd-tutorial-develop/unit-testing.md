@@ -210,9 +210,9 @@ Les tests unitaires font généralement correspondre 1 à 1 avec les classes Jav
 
    * `src/test/java/com/adobe/aem/guides/wknd/core/models/impl/BylineImplTest.java`
 
-2. Mais aussi, différencier le fichier d&#39;essai    Le suffixe `Test` du fichier de test unitaire, `BylineImplTest.java` est une convention qui nous permet de
-1. Identifiez-le facilement en tant que fichier de test _pour_ `BylineImpl.java`
-2. Mais aussi, différencier le fichier de test _de_ la classe testée, `BylineImpl.java`
+   Mais aussi, différencier le fichier d&#39;essai    Le suffixe `Test` du fichier de test unitaire, `BylineImplTest.java` est une convention qui nous permet de
+      1. Identifiez-le facilement en tant que fichier de test _pour_ `BylineImpl.java`
+      2. Mais aussi, différencier le fichier de test _de_ la classe testée, `BylineImpl.java`
 
 ## Vérification de BylineImplTest.java {#reviewing-bylineimpltest-java}
 
