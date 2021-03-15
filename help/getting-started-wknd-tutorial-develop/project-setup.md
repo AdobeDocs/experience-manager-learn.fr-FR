@@ -16,9 +16,9 @@ topic: gestion de contenu, développement
 role: Développeur
 level: Début
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b11039ef9d373685a4279c01dbd08eb6464acd29
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1947'
 ht-degree: 6%
 
 ---
@@ -134,6 +134,24 @@ La prochaine série d&#39;étapes aura lieu à l&#39;aide d&#39;un terminal de l
            |--- pom.xml
            |--- README.md
            |--- .gitignore
+   ```
+
+### Mettre à jour la version de Project Analyser
+
+>[!CAUTION]
+>
+> Il existe [un problème connu](https://github.com/adobe/aem-project-archetype/issues/638) dans la version 25 de l&#39;archétype qui nécessite une mise à jour de la version de l&#39;**analyseur de projet** dans le projet généré. Les étapes ci-dessous sont **uniquement** nécessaires pour les projets générés avec `aemVersion="cloud"`.
+
+1. Ouvrez le fichier `aem-guides-wknd/poml.xml` à l’aide de votre éditeur de texte favori.
+1. Mettez à jour `aemanalyser.version` en **`0.9.2`** :
+
+   ```diff
+    <properties>
+       ...
+   -   <aemanalyser.version>0.0.18</aemanalyser.version>
+   +   <aemanalyser.version>0.9.2</aemanalyser.version>
+       ...
+    </properties>
    ```
 
 ## Déploiement et génération du projet {#build}
