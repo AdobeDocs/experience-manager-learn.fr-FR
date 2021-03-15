@@ -16,9 +16,9 @@ topic: gestion de contenu, développement
 role: Développeur
 level: Début
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b5b43ae8231bf23e0c53777b1e9c16bcc3fc188a
 workflow-type: tm+mt
-source-wordcount: '3083'
+source-wordcount: '3106'
 ht-degree: 1%
 
 ---
@@ -82,6 +82,10 @@ Dans la plupart des cas, la planification d’un nouveau début Web avec des maq
 >[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
 
 **Téléchargez le fichier [ de conception d’article ](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)** WKND.
+
+>[!NOTE]
+>
+> Un [kit d&#39;interface utilisateur des composants principaux générique ](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) est également disponible comme point de départ pour les projets personnalisés.
 
 ## Création d’un modèle de page d’article
 
