@@ -1,0 +1,25 @@
+---
+title: Envoyer le formulaire à l’aide de l’action d’envoi du modèle de données de formulaire
+description: Créez un formulaire adaptatif pour tester l’intégration Salesforce en créant un objet Lead lors de l’envoi du formulaire.
+solution: Experience Manager Forms
+type: Documentation
+role: Développeur
+level: Débutant, intermédiaire
+version: cloud-service
+feature: Formulaires adaptatifs
+topic: Développement
+kt: 7151
+translation-type: tm+mt
+source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
+workflow-type: tm+mt
+source-wordcount: '64'
+ht-degree: 7%
+
+---
+
+
+# Tester la génération de pistes à partir de l&#39;envoi du formulaire
+
+Créez un formulaire adaptatif basé sur le modèle de données du formulaire de force commerciale et testez la création d&#39;un prospect dans Salesforce en envoyant le formulaire.
+
+>[!VIDEO](https://video.tv.adobe.com/v/331758?quality=12&learn=on)
