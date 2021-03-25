@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: service cloud
 team: TM
 translation-type: tm+mt
-source-git-commit: 59b786d95d1428916adad37ceca4412b93463e9b
+source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '353'
 ht-degree: 35%
 
 ---
@@ -83,6 +83,15 @@ ht-degree: 35%
 + Migration {#migration}
    + [Outil de transfert de contenu](./migration/content-transfer-tool.md)
    + [Importation en masse d’actifs](./migration/bulk-import.md)
++ Forms{#forms}
+   + [Intégration à Salesforce]{#integrate-with-salesforce}
+      + [Présentation](./forms/integrate-with-salesforce/introduction.md)
+      + [Créer une application connectée](./forms/integrate-with-salesforce/create-connected-app.md)
+      + [Création d’un fichier swagger](./forms/integrate-with-salesforce/describe-rest-api.md)
+      + [Création d’une source de données](./forms/integrate-with-salesforce/create-data-source.md)
+      + [Créer un modèle de données de formulaire](./forms/integrate-with-salesforce/create-form-data-model.md)
+      + [Envoi du formulaire de test](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
+      + [Événement de clics de test](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + Extensibilité des Assets compute{#asset-compute}
    + [Présentation](./asset-compute/overview.md)
    + Configuration{#set-up}
@@ -111,4 +120,3 @@ ht-degree: 35%
    + [Éditeur SPA (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
    + [AEM Sites et Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
    + [Authentification basée sur un jeton](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
-
