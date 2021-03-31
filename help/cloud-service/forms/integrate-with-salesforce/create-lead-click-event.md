@@ -1,7 +1,6 @@
 ---
 title: 'Création d’un objet Lead dans la base de données Salesforce sur un événement de clics d’un bouton '
 description: Créer une piste en appelant l’opération de publication du modèle de données de formulaire
-product: aem
 type: Documentation
 role: Développeur
 level: Débutant, intermédiaire
@@ -10,7 +9,7 @@ feature: Formulaires adaptatifs
 topic: Développement
 kt: 7193
 translation-type: tm+mt
-source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
+source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f
 workflow-type: tm+mt
 source-wordcount: '62'
 ht-degree: 12%
