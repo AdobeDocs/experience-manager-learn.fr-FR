@@ -1,7 +1,7 @@
 ---
 title: 'Création d’une configuration de services cloud '
 description: Création de la source de données pour la connexion à Salesforce à l’aide des informations d’identification OAuth
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Développeur
 level: Débutant, intermédiaire
@@ -10,7 +10,7 @@ topic: Développement
 kt: 7148
 thumbnail: 331755.jpg
 translation-type: tm+mt
-source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
+source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f
 workflow-type: tm+mt
 source-wordcount: '39'
 ht-degree: 7%
