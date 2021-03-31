@@ -1,22 +1,17 @@
 ---
 cloud: experience-cloud
 solution-title: Experience Manager
-solution-hub-url: https://helpx.adobe.com/fr/support/experience-manager/6-5.html
-solution-icon: assets/experience-cloud-logo-24.png
-getting-started-title: Prise en main
-getting-started-url: https://helpx.adobe.com/fr/experience-manager/get-started.html
-tutorials-title: Tutoriels
-tutorials-url: https://guided.adobe.com/?tag=Tutorial#recommended/solutions/experience-manager
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-learn.fr-FR
-product: experience-manager
+product: experience manager
 index: y
-type: Tutorial
+type: Tutoriel
+solution: Experience Manager
 translation-type: tm+mt
-source-git-commit: 150f50eb7b145d3bbef769948b70248dba437075
+source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 89%
+source-wordcount: '133'
+ht-degree: 96%
 
 ---
 
@@ -39,5 +34,5 @@ Dans le fichier TOC.md
 
 | metadata | effets |
 |--- |--- |
-| guide-utilisateur-titre | Utilisé dans l’en-tête de l’article en tant que lien. |
+| user-guide-title | Utilisé dans l’en-tête de l’article en tant que lien. |
 | user-guide-url | Ouvre la page hub helpx. |
