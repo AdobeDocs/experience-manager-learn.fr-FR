@@ -1,7 +1,7 @@
 ---
 title: Créez une application connectée à Salesforce.
 description: L'application connectée vous permet d'intégrer Salesforce à des applications tierces telles que AEM Forms avec Salesforce.
-solution: Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Développeur
 level: Débutant, intermédiaire
@@ -11,7 +11,7 @@ topic: Développement
 kt: 7152
 thumbnail: 331757.jpg
 translation-type: tm+mt
-source-git-commit: d9799acb28dfc3c9767374798828754d5a50831f
+source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 4%
