@@ -15,9 +15,9 @@ topic: Développement
 role: Développeur
 level: Intermédiaire
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 67be45dbd72a8af8b9ab60452ff15081c6f9f192
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '613'
 ht-degree: 2%
 
 ---
@@ -29,10 +29,9 @@ Utilisation de l’API Output et du service Forms dans AEM Forms
 
 Dans cet article, nous examinerons ce qui suit :
 
-* Output Service - Ce service est généralement utilisé pour fusionner des données xml avec un modèle xdp ou un fichier pdf afin de générer un fichier pdf aplati.
-* FormsService - Il s’agit d’un service très polyvalent qui vous permet d’exporter/d’importer des données de et dans un fichier PDF.
+* Output Service - En règle générale, ce service est utilisé pour fusionner des données xml avec un modèle xdp ou pdf afin de générer un fichier pdf aplati. Pour plus d’informations, reportez-vous à la section [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) du service Output.
+* FormsService - Il s’agit d’un service très polyvalent qui vous permet d’exporter/importer des données à partir de et dans un fichier PDF. Pour plus de détails, consultez le [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/forms/api/class-use/FormsService.html) pour le service Forms.
 
-L’API javadoc officielle pour AEM Forms est répertoriée [ici](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
 Le fragment de code suivant exporte les données du fichier PDF.
 
