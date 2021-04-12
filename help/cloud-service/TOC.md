@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: service cloud
 team: TM
 translation-type: tm+mt
-source-git-commit: 5d567c3ed2275e50065aa1ad1576b0d621a3895b
+source-git-commit: cb4f678be79ad39110cc199b8c66349f311a431d
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '413'
 ht-degree: 32%
 
 ---
@@ -85,6 +85,7 @@ ht-degree: 32%
    + [Importation en masse d’actifs](./migration/bulk-import.md)
 + Forms{#forms}
    + Créer un formulaire adaptatif{#create-first-af}
+      + [Présentation](./forms/create-first-af/introduction.md)
       + [Créer un thème](./forms/create-first-af/create-theme.md)
       + [Créer un modèle](./forms/create-first-af/create-template.md)
       + [Créer un fragment](./forms/create-first-af/create-fragments.md)
