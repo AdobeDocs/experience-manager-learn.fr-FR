@@ -2,18 +2,18 @@
 title: Configuration d’un formulaire adaptatif que l’utilisateur doit remplir et signer
 description: Dans ce scénario, l’utilisateur et le signataire sont la même personne.
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
 feature: Formulaires adaptatifs
 topic: Développement
-kt: 7438
+kt: 7432
 thumbnail: 332439.jpg
 translation-type: tm+mt
-source-git-commit: 27f21bb9c1b905a2100a5013fe3b75760b9d6821
+source-git-commit: cb4f678be79ad39110cc199b8c66349f311a431d
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 8%
+source-wordcount: '52'
+ht-degree: 5%
 
 ---
 
