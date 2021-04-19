@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: service cloud
 team: TM
 translation-type: tm+mt
-source-git-commit: cb4f678be79ad39110cc199b8c66349f311a431d
+source-git-commit: 0c7759b59e6b6c99da3cd7e7c502445c14964e26
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 32%
+source-wordcount: '414'
+ht-degree: 30%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 32%
       + [Publication de contenu](./developing/basics/content-publishing.md)
       + [Configurations OSGi](./developing/basics/osgi-configurations.md)
       + [Migration de la configuration du répartiteur](./developing/basics/dispatcher-configuration.md)
-   + [Documentation JavaDocs de l’API SDK AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/)
+   + [Documentation JavaDocs de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + Débogage AEM{#debugging}
    + Débogage du SDK AEM{#debugging-aem-sdk}
       + [Présentation](./debugging/aem-sdk-local-quickstart/overview.md)
