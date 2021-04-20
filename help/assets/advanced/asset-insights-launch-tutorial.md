@@ -1,11 +1,11 @@
 ---
 title: Configuration des statistiques sur les ressources avec AEM Assets et lancement d’Adobe
 description: Dans cette série de vidéos en 5 parties, nous passons en revue la configuration et la configuration de Asset Insights pour les Experience Manager déployés via Launch by Adobe.
-feature: Statistiques sur les ressources
+feature: Asset Insights
 version: 6.3, 6.4, 6.5
-topic: Intégrations
-role: Développeur
-level: Intermédiaire
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

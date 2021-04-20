@@ -1,13 +1,13 @@
 ---
 title: Filigranes en AEM Assets
 description: AEM en tant que Cloud Service, les fonctions de filigrane permettent aux rendus d’image personnalisés d’être mis en filigrane à l’aide de n’importe quelle image PNG.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 version: cloud-service
 kt: 6357
 thumbnail: 41536.jpg
-topic: Gestion de contenu
-role: Développeur
-level: Intermédiaire
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

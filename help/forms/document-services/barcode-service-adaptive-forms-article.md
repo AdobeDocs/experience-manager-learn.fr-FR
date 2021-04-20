@@ -4,16 +4,16 @@ seo-title: Service De Codes À Barres Avec Forms Adaptatif
 description: Utilisation du service de code à barres pour décoder le code à barres et remplir les champs de formulaire à partir des données extraites
 seo-description: Utilisation du service de code à barres pour décoder le code à barres et remplir les champs de formulaire à partir des données extraites
 uuid: 42568b81-cbcd-479e-8d9a-cc0b244da4ae
-feature: Barcoded-forms
+feature: barcoded-forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1224de6d-7ca1-4e9d-85fe-cd675d03e262
-topic: Développement
-role: Développeur
-level: Intermédiaire
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

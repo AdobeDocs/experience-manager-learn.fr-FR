@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: develop
 topics: development, authoring, configuring, architecture
 audience: all
-topic: Gestion de contenu
-role: Professionnel
-level: Début
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

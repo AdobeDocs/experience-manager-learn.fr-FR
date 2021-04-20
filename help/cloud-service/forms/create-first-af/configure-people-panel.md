@@ -3,11 +3,11 @@ title: Configuration du panneau Personnes
 description: Configurez le panneau Personnes en ajoutant un fragment de détails sur l’épouse.
 solution: Experience Manager Forms
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7378
 thumbnail: 332234.jpg
 translation-type: tm+mt

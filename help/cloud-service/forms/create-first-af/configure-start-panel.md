@@ -3,11 +3,11 @@ title: Configuration du panneau début
 description: Ajoutez un composant de texte statique dans le panneau début.
 solution: Experience Manager Forms
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7388
 thumbnail: 332235.jpg
 translation-type: tm+mt

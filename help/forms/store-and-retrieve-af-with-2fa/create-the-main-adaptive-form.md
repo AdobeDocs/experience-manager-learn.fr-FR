@@ -1,7 +1,7 @@
 ---
 title: Créer le formulaire adaptatif principal
 description: Créez des formulaires adaptatifs pour capturer les informations sur le demandeur et le formulaire adaptatif pour récupérer le formulaire adaptatif enregistré.
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6552
 thumbnail: 6552.jpg
-topic: Développement
-role: Professionnel
-level: Début
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

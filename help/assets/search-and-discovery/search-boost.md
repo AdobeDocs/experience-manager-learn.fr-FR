@@ -1,10 +1,10 @@
 ---
 title: Qu'est-ce que l'essor de la recherche en AEM Assets ?
 description: Découvrez comment ajouter des mots et des expressions clés pour améliorer la pertinence des recherches d’un fichier à Adobe Experience Manager.
-topic: Gestion de contenu
-feature: Rechercher
-role: Professionnel
-level: Intermédiaire
+topic: Content Management
+feature: Search
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 103
 thumbnail: 16766.jpg

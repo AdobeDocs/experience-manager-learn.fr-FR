@@ -1,7 +1,7 @@
 ---
 title: Personnalisation de la couche de données du client Adobe avec les composants AEM
 description: Découvrez comment personnaliser la couche de données du client Adobe avec le contenu des composants d'AEM personnalisés. Découvrez comment utiliser les API fournies par AEM Core Components pour étendre et personnaliser la couche de données.
-feature: Couche de données du client Adobe, composant principal
+feature: Adobe Client Data Layer, Core Component
 topics: integrations
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: use
 version: cloud-service
 kt: 6265
 thumbnail: KT-6265.jpg
-topic: Intégrations
-role: Développeur
-level: Intermédiaire, expérimenté
+topic: Integrations
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

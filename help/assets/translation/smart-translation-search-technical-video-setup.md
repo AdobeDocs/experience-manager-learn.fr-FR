@@ -2,10 +2,10 @@
 title: Configuration de la recherche de traduction intelligente avec AEM Assets
 description: Smart Translation Search permet d’utiliser des termes de recherche non anglais pour résoudre le problème en anglais. Pour configurer l'AEM pour Smart Translation Search, le lot OSGi de Apache Oak Search Machine Translation doit être installé et configuré, ainsi que les paquets de langues Apache Joshua gratuits et open source pertinents qui contiennent les règles de traduction.
 version: 6.3, 6.4, 6.5
-feature: Rechercher
-topic: Gestion de contenu
-role: Développeur
-level: Début
+feature: Search
+topic: Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

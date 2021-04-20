@@ -2,10 +2,10 @@
 title: Utilisation de métadonnées en cascade en AEM Assets
 description: La gestion avancée des métadonnées permet aux utilisateurs de créer des règles de champ en cascade pour créer des relations contextuelles entre les métadonnées en AEM Assets. La vidéo ci-dessous présente de nouvelles règles dynamiques pour les exigences de champ, la visibilité et les choix contextuels. La vidéo détaille également les étapes nécessaires pour qu’un administrateur applique ces règles à un schéma de métadonnées personnalisé.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: Gestion de contenu
-feature: 'Métadonnées  '
-role: Professionnel
-level: Intermédiaire
+topic: Content Management
+feature: Metadata
+role: Business Practitioner
+level: Intermediate
 kt: 616
 thumbnail: 20702.jpg
 translation-type: tm+mt

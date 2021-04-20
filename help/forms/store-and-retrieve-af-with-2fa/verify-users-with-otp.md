@@ -1,7 +1,7 @@
 ---
 title: Vérifier les utilisateurs avec OTP
 description: Vérifiez le numéro de téléphone mobile associé au numéro d'application à l'aide du protocole OTP.
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: adaptive forms
 audience: developer
 doc-type: article
@@ -9,9 +9,9 @@ activity: use
 version: 6.4,6.5
 kt: 6594
 thumbnail: 6594.jpg
-topic: Développement
-role: Développeur
-level: Expérience
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

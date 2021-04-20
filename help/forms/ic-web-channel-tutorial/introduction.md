@@ -3,15 +3,15 @@ title: Création de votre première communication interactive pour le canal Web
 seo-title: Création de votre première communication interactive pour le canal Web
 description: Interactive Communications est une nouveauté de AEM Forms 6.4. Ce document vous guidera dans les étapes nécessaires pour créer une communication interactive pour le canal Web.
 seo-description: Interactive Communications est une nouveauté de AEM Forms 6.4. Ce document vous guidera dans les étapes nécessaires pour créer une communication interactive pour le canal Web.
-feature: Communication interactive
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-topic: Développement
-role: Développeur
-level: Début
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -3,11 +3,11 @@ title: Envoyer le formulaire à l’aide de l’action d’envoi du modèle de d
 description: Créez un formulaire adaptatif pour tester l’intégration Salesforce en créant un objet Lead lors de l’envoi du formulaire.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7151
 thumbnail: 331758.jpg
 translation-type: tm+mt

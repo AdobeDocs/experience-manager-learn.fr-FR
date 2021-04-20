@@ -1,7 +1,7 @@
 ---
 title: Créer un formulaire adaptatif
 description: Créer et configurer un formulaire adaptatif pour utiliser le service de préremplissage du modèle de données de formulaire
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 5813
 thumbnail: kt-5813.jpg
-topic: Développement
-role: Professionnel
-level: Début
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

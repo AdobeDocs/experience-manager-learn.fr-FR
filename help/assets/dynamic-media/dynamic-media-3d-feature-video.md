@@ -1,12 +1,12 @@
 ---
 title: Utilisation de Dynamic Media 3D avec AEM Assets
 description: La prise en charge de Dynamic Media 3D pour Adobe Experience Manager vous permet de personnaliser et de diffuser facilement des expériences interactives optimisées en 3D à grande échelle
-feature: Ressources 3D
+feature: 3D Assets
 version: 6.5
 kt: 5349
-topic: Gestion de contenu
-role: Professionnel
-level: Début
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

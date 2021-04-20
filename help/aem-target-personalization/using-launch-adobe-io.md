@@ -3,10 +3,10 @@ title: Intégration de Adobe Experience Manager avec Adobe Target à l'aide d'Ex
 seo-title: Intégration de Adobe Experience Manager avec Adobe Target à l'aide d'Experience Platform Launch et d'Adobes I/O
 description: Procédure pas à pas pour intégrer Adobe Experience Manager à Adobe Target en utilisant l'Experience Platform Launch et l'Adobe I/O
 seo-description: Procédure pas à pas pour intégrer Adobe Experience Manager à Adobe Target en utilisant l'Experience Platform Launch et l'Adobe I/O
-feature: Fragments d’expérience
-topic: Personnalisation
-role: Développeur
-level: Intermédiaire
+feature: Experience Fragments
+topic: Personalization
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

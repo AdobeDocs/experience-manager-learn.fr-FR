@@ -9,9 +9,9 @@ activity: understand
 version: 6.5
 kt: 6347
 thumbnail: 41238.jpg
-topic: Développement
-role: Développeur
-level: Début
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

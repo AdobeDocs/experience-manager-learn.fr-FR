@@ -2,13 +2,13 @@
 title: Profils de traitement
 description: Les profils de traitement définissent les rendus à créer pour les ressources dans AEM en tant que Cloud Service.
 sub-product: ressources
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 version: cloud-service
 kt: 4993
 thumbnail: 35597.jpg
-topic: Intégrations
-role: Développeur
-level: Début
+topic: Integrations
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

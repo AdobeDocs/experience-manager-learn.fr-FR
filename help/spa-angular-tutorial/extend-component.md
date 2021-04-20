@@ -2,7 +2,7 @@
 title: Étendre un composant | Prise en main de l’éditeur et de l’Angular SPA d’AEM
 description: Découvrez comment étendre un composant principal existant à utiliser avec l'AEM SPA Editor. Comprendre comment ajouter des propriétés et du contenu à un composant existant est une technique puissante pour étendre les fonctionnalités d'une mise en oeuvre AEM SPA Editor. Apprenez à utiliser le modèle de délégation pour étendre les modèles Sling et les fonctionnalités de Sling Resource Merger.
 sub-product: sites
-feature: Éditeur SPA, composants principaux
+feature: SPA Editor, Core Components
 doc-type: tutorial
 topics: development
 version: cloud-service
@@ -11,8 +11,8 @@ audience: developer
 kt: 5871
 thumbnail: 5871-spa-angular.jpg
 topic: SPA
-role: Développeur
-level: Début
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

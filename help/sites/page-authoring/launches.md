@@ -1,9 +1,9 @@
 ---
 title: Utilisation des lancements en AEM Sites
 description: Les lancements dans AEM Sites offrent un moyen de créer, de créer et de réviser du contenu pour les versions ultérieures.
-topic: Gestion de contenu
-feature: Lancements
-level: Intermédiaire, expérimenté
+topic: Content Management
+feature: Launches
+level: Intermediate, Experienced
 role: Administrator
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 6970

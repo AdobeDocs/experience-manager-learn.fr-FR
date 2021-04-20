@@ -1,7 +1,7 @@
 ---
 title: Intégrer les employés d'Asset compute aux Profils de traitement AEM
 description: AEM en tant que Cloud Service s’intègre aux travailleurs d’Asset compute déployés à Adobe I/O Runtime par le biais de Profils de traitement AEM Assets. Les Profils de traitement sont configurés dans le service Auteur pour traiter des ressources spécifiques à l’aide de travailleurs personnalisés et pour stocker les fichiers générés par les travailleurs en tant que rendus de ressources.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
-topic: Intégrations, développement
-role: Développeur
-level: Intermédiaire, expérimenté
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

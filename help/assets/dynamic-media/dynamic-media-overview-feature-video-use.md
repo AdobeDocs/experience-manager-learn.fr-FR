@@ -2,11 +2,11 @@
 title: Présentation de Dynamic Media avec AEM Assets
 description: Cette série de vidéos présente un aperçu de la façon dont le contenu multimédia est géré et accessible à l’aide de Adobe Experience Manager en tant que service de diffusion de contenu. Dynamic Media vous permet de gérer et de publier des expériences numériques dynamiques, une fonction propre aux ressources Experience Manager. Notre structure et notre suite de composants permettent aux spécialistes du marketing de personnaliser et de diffuser des expériences interactives et multimédias sur tous les périphériques.
 sub-product: dynamic-media
-feature: Recadrage dynamique, Profils vidéo, Profils d’images, paramètres prédéfinis de la visionneuse, vidéo 360 VR, visionneuses d’images, visionneuses à 360°
+feature: Smart Crop, Video Profiles, Image Profiles, Viewer Presets, 360 VR Video, Image Sets, Spin Sets
 version: 6.3, 6.4, 6.5
-topic: Gestion de contenu
-role: Professionnel
-level: Début
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,9 +1,9 @@
 ---
 title: 'Explorez l’importance de Cloud Manager dans AEM '
 description: Découvrez l’objectif de Cloud Manager et comment il fonctionne avec AEM en tant que Cloud Service.
-role: Architecte, développeur
-level: Début
-type: Tutoriel
+role: Architect, Developer
+level: Beginner
+type: Tutorial
 topic: Architecture
 kt: 6922
 thumbnail: 330545.jpg

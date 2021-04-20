@@ -1,7 +1,7 @@
 ---
 title: Création du formulaire MonCompte
 description: Créez le formulaire myaccount pour récupérer le formulaire partiellement rempli lors de la vérification réussie de l'ID de demande et du numéro de téléphone.
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6599
 thumbnail: 6599.jpg
-topic: Développement
-role: Professionnel
-level: Début
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

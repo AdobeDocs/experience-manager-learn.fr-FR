@@ -2,10 +2,10 @@
 title: Utilisation de la recherche de traduction intelligente avec AEM Assets
 description: La recherche de traduction intelligente permet la recherche et la découverte inter-langues automatiquement à travers AEM contenu, à la fois les ressources et les pages, prenant en charge plus de 50 langues et réduisant le besoin de traduction manuelle du contenu.
 version: 6.3, 6.4, 6.5
-feature: Rechercher
-topic: Gestion de contenu
-role: Professionnel
-level: Début
+feature: Search
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

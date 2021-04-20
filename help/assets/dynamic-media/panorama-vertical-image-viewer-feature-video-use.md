@@ -2,11 +2,11 @@
 title: Utilisation de la visionneuse d’images panoramiques et verticales avec AEM Assets Dynamic Media
 description: Les améliorations apportées à Dynamic Media Viewer dans AEM version 6.4 incluent l’ajout de la visionneuse d’images panoramique, de la visionneuse d’images de réalité virtuelle panoramique et de la visionneuse d’images verticale. Panoramic Viewer offre un moyen facile de fournir une expérience attrayante et immersive de la chambre, de la propriété, de l'emplacement ou du paysage sans aucun développement personnalisé.
 sub-product: dynamic-media
-feature: Profils vidéo, Profils vidéo, vidéo 360 VR
+feature: Video Profiles, Video Profiles, 360 VR Video
 version: 6.4, 6.5
-topic: Gestion de contenu
-role: Professionnel
-level: Début
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

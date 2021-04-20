@@ -4,7 +4,7 @@ seo-title: Créer une communication interactive pour le Canal d'impression
 description: Voici la partie 6 du didacticiel en plusieurs parties pour créer votre premier document de communication interactif pour le canal d'impression. Dans cette partie, le Document de communication interactive pour le canal d'impression est créé.
 seo-description: Voici la partie 6 du didacticiel en plusieurs parties pour créer votre premier document de communication interactif pour le canal d'impression. Dans cette partie, le Document de communication interactive pour le canal d'impression est créé.
 uuid: 25318a2a-be9d-47d8-806b-d99c8e1c6a74
-feature: Communication interactive
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,9 +13,9 @@ version: 6.4,6.5
 discoiquuid: 6e3f9c8c-8ec4-4084-bf35-1c97a5b463f1
 kt: 5972
 thumbnail: 37888.jpg
-topic: Développement
-role: Développeur
-level: Début
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

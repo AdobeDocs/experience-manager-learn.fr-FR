@@ -4,16 +4,16 @@ seo-title: Création d’un Profil Campaign sur l’envoi de formulaires adaptat
 description: Cet article explique les étapes nécessaires à la création d’un profil dans Adobe Campaign Standard lors d’un envoi de formulaire adaptatif. Ce processus utilise un mécanisme d’envoi personnalisé pour gérer l’envoi du formulaire adaptatif.
 seo-description: Cet article explique les étapes nécessaires à la création d’un profil dans Adobe Campaign Standard lors d’un envoi de formulaire adaptatif. Ce processus utilise un mécanisme d’envoi personnalisé pour gérer l’envoi du formulaire adaptatif.
 uuid: f3cb7b3c-1a1c-49eb-9447-a9e52c675244
-feature: Forms adaptatif, modèle de données de formulaire
+feature: Adaptive Forms, Form Data Model
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 46ec4136-4898-4b01-86bb-ac638a29b242
-topic: Développement
-role: Développeur
-level: Expérience
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

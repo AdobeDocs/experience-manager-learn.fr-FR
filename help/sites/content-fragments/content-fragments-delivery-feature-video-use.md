@@ -4,7 +4,7 @@ seo-title: Diffusion de fragments de contenu dans Adobe Experience Manager
 description: Les fragments de contenu, indépendamment de la mise en page, peuvent être utilisés directement en AEM Sites avec les composants principaux ou peuvent être distribués sans encombre aux canaux en aval.
 seo-description: Les fragments de contenu, indépendamment de la mise en page, peuvent être utilisés directement en AEM Sites avec les composants principaux ou peuvent être distribués sans encombre aux canaux en aval.
 sub-product: content-services
-feature: Fragments de contenu
+feature: Content Fragments
 topics: authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -12,9 +12,9 @@ activity: use
 version: 6.3, 6.4, 6.5
 uuid: 045473d2-5abe-4414-b91c-d369f3069ead
 discoiquuid: 912e0c41-83cf-49f7-b515-09519b6718c1
-topic: Gestion de contenu
-role: Professionnel
-level: Début
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

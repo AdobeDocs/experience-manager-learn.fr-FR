@@ -3,14 +3,14 @@ title: Comprendre les bonnes pratiques de l’API Java dans AEM
 description: AEM est construit sur une riche pile de logiciels open-source qui expose de nombreuses API Java à des fins de développement. Cet article explore les principales API et explique quand et pourquoi elles doivent être utilisées.
 version: 6.2, 6.3, 6.4, 6.5
 sub-product: fondation, ressources, sites
-feature: les API ;
+feature: APIs
 topics: best-practices, development
 activity: develop
 audience: developer
 doc-type: article
-topic: Développement
-role: Développeur
-level: Début
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

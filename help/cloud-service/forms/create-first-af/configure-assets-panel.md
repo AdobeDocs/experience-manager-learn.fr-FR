@@ -3,11 +3,11 @@ title: Configuration du panneau Fichiers
 description: Ajoutez un panneau de mise en page en accordéon au panneau des ressources.
 solution: Experience Manager Forms
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7380
 thumbnail: 332232.jpg
 translation-type: tm+mt

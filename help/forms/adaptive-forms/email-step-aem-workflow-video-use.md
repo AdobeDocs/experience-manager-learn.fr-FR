@@ -11,9 +11,9 @@ doc-type: technical video
 activity: setup
 version: 6.4,6.5
 discoiquuid: 3a11f602-2f4c-423a-baef-28824c0325a1
-topic: Développement
-role: Développeur
-level: Début
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -2,14 +2,14 @@
 title: Visionneuses d’images, d’échantillons, à 360° et de supports variés
 description: L’une des capacités les plus utiles et les plus puissantes de Dynamic Media Classic est sa prise en charge de la création de visionneuses de supports enrichis, telles que les visionneuses d’images, d’échantillons, à 360° et de supports variés. Découvrez ce qu’est chaque visionneuse de supports enrichis et comment créer chaque type dans Dynamic Media Classic. En savoir plus sur les paramètres prédéfinis d’ensemble par lot, qui automatisent le processus de création de visionneuses de supports enrichis au moment du téléchargement.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Visionneuses d’images, Combiner des visionneuses de supports, Visionneuses à 360°
+feature: Dynamic Media Classic, Image Sets, Mix Media Sets, Spin Sets
 doc-type: tutorial
 topics: sets, development, authoring, configuring
 audience: all
 activity: use
-topic: Gestion de contenu
-role: Professionnel
-level: Début
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

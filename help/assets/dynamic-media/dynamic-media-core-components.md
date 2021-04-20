@@ -2,12 +2,12 @@
 title: Utilisation de Dynamic Media avec les composants principaux de AEM Sites
 description: Apprenez à utiliser Dynamic Media avec Adobe Experience Manager Sites. Le composant Image, qui fait partie des composants principaux Experience Manager, prend en charge Dynamic Media de manière intégrée. Le composant Image permet à un auteur de contenu d’utiliser des fonctionnalités de Dynamic Media telles que les paramètres d’image prédéfinis, les options de recadrage dynamique et les modificateurs d’image sur une page AEM Sites.
 sub-product: dynamic-media
-feature: Composants principaux, recadrage dynamique, profils d’image, paramètres d’image prédéfinis
+feature: Core Components, Smart Crop, Image profiles, Image presets
 version: cloud-service
 kt: 6630
-topic: Gestion de contenu
-role: Professionnel
-level: Début
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

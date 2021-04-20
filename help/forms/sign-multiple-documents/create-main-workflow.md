@@ -1,7 +1,7 @@
 ---
 title: Créer un processus principal pour déclencher le processus de signature
 description: Créer un processus pour stocker les formulaires à signer dans la base de données
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6887.jpg
 kt: 6887
-topic: Développement
-role: Développeur
-level: Intermédiaire
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

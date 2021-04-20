@@ -1,10 +1,10 @@
 ---
 title: AEM didacticiels sans en-tête
 description: Ensemble de didacticiels sur l’utilisation de Adobe Experience Manager en tant que CMS sans en-tête.
-feature: Fragments de contenu, API
-topic: Sans tête, Gestion de contenu
-role: Développeur
-level: Début
+feature: Content Fragments, APIs
+topic: Headless, Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
 workflow-type: tm+mt

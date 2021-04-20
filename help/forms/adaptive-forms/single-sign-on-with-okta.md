@@ -1,7 +1,7 @@
 ---
 title: Configuration d’OKTA avec AEM
 description: Comprendre les différents paramètres de configuration pour l'utilisation de la connexion unique à l'aide des données
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: development, authentication, security
 audience: developer
 doc-type: tutorial
@@ -9,7 +9,7 @@ activity: setup
 version: 6.5
 topic: Administration
 role: Administrator
-level: Expérience
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

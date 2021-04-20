@@ -3,11 +3,11 @@ title: Création d’un processus AEM
 description: Créez un modèle de processus pour imiter votre processus d’entreprise.
 solution: Experience Manager Forms
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7424
 thumbnail: 332434.pg
 translation-type: tm+mt

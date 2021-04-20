@@ -5,8 +5,8 @@ description: Ce didacticiel a pour but de vous aider à mieux comprendre comment
 seo-description: Ce didacticiel a pour but de vous aider à mieux comprendre comment fonctionne le répartiteur et comment vous pouvez l’utiliser.
 feature: Dispatcher
 topic: Architecture
-role: Architecte
-level: Début
+role: Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

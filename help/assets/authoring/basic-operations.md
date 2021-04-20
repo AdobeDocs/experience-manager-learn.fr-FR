@@ -1,13 +1,13 @@
 ---
 title: Opérations de base
 description: Découvrez les opérations de base d’AEM Assets, notamment comment créer des dossiers, télécharger, copier, déplacer et supprimer des fichiers.
-feature: Gestion des ressources
-role: Professionnel
-level: Début
+feature: Asset Management
+role: Business Practitioner
+level: Beginner
 version: cloud-service
 kt: 4299
 thumbnail: 32044.jpg
-topic: Gestion de contenu
+topic: Content Management
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

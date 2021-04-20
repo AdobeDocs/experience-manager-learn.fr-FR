@@ -3,8 +3,8 @@ title: '"Chapitre 3 - Rubriques de mise en cache du répartiteur avancé"'
 description: Il s'agit de la partie 3 d'une série en trois parties à la mise en cache dans AEM. où les deux premières parties se concentraient sur la mise en cache HTTP standard dans le Répartiteur et sur les limites qui y existent. Cette partie présente quelques idées sur la façon de surmonter ces limitations.
 feature: Dispatcher
 topic: Architecture
-role: Architecte
-level: Intermédiaire
+role: Architect
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Formulaire de préremplissage à l’aide du modèle de données de formulaire
 description: 'Préremplir le formulaire adaptatif à l’aide de l’attribut de requête du modèle de données de formulaire '
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 4419
 thumbnail: kt-4419.jpg
-topic: Développement
-role: Professionnel
-level: Intermédiaire
+topic: Development
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

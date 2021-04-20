@@ -1,15 +1,15 @@
 ---
 title: Utilisation du partage sur les réseaux sociaux en AEM Sites
 description: Explorez la configuration et l’utilisation du composant Partage sur les réseaux sociaux.
-feature: Composants principaux
+feature: Core Components
 topics: integrations
 audience: developer, implementer
 doc-type: technical video
 activity: setup
 version: 6.3, 6.4, 6.5
-topic: Gestion de contenu
-role: Développeur
-level: Intermédiaire
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

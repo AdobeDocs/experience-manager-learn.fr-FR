@@ -2,10 +2,10 @@
 title: Utilisation des Principal de projet dans AEM
 description: Les Principal de projet simplifient considérablement la gestion des utilisateurs et des équipes avec les projets AEM.
 version: 6.4, 6.5, cloud-service
-topic: gestion de contenu, collaboration
-feature: Projets
-level: Intermédiaire
-role: Professionnel
+topic: Content Management, Collaboration
+feature: Projects
+level: Intermediate
+role: Business Practitioner
 kt: 256
 thumbnail: 17740.jpg
 translation-type: tm+mt

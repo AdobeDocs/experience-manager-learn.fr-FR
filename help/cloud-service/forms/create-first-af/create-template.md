@@ -3,11 +3,11 @@ title: Création d’un modèle de formulaire adaptatif
 description: Le modèle de formulaire adaptatif définit la structure et le contenu initial de votre formulaire adaptatif.
 solution: Experience Manager Forms
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7382
 thumbnail: 332223.jpg
 translation-type: tm+mt

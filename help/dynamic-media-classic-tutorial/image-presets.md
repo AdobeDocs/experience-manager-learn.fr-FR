@@ -2,14 +2,14 @@
 title: Paramètres d’image prédéfinis
 description: Paramètres d’image prédéfinis dans Dynamic Media Classic, vous disposez de tous les paramètres nécessaires pour créer une image à une taille, un format, une qualité et une accentuation spécifiques. Les paramètres d’image prédéfinis constituent un composant clé du dimensionnement dynamique. Lorsque vous consultez une URL dans Dynamic Media Classic, vous pouvez facilement déterminer si un paramètre d’image prédéfini est en cours d’utilisation. Découvrez les paramètres d’image prédéfinis, pourquoi ils sont si utiles et comment en créer un.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, paramètres d’image prédéfinis
+feature: Dynamic Media Classic, Image Presets
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Gestion de contenu
-role: Professionnel
-level: Début
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

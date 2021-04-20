@@ -3,11 +3,11 @@ title: Création de votre premier formulaire adaptatif
 description: Présentation vidéo du cours sur la création de votre premier formulaire adaptatif
 solution: Experience Manager Forms
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7464
 thumbnail: 332571.jpg
 translation-type: tm+mt

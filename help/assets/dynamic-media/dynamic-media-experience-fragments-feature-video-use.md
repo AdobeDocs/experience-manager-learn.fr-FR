@@ -2,11 +2,11 @@
 title: Utilisation de fragments d’expérience avec AEM Assets Dynamic Media
 description: AEM Assets Dynamic Media intègre des zones réactives de ressources à des fragments d’expérience au moyen de visionneuses de médias interactifs. Les marketeurs peuvent créer le fragment d’expérience avec du texte, des images et des liens pour remplir la fenêtre contextuelle personnalisée et l’associer à des zones réactives sur des bannières, carrousels ou vidéos.
 sub-product: dynamic-media, content-services
-feature: Fragments d’expérience
+feature: Experience Fragments
 version: 6.3, 6.4, 6.5
-topic: Gestion de contenu
-role: Professionnel
-level: Début
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

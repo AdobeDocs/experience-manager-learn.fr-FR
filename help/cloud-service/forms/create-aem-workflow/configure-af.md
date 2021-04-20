@@ -3,11 +3,11 @@ title: Configuration d’un formulaire adaptatif pour déclencher le processus
 description: Déclenchez le processus lors de l’envoi du formulaire adaptatif.
 solution: Experience Manager Forms
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7425
 thumbnail: 332435.pg
 translation-type: tm+mt

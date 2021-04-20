@@ -2,9 +2,9 @@
 title: 'Présentation des fichiers d''InDesign et des modèles de ressources dans AEM Assets '
 description: Ce didacticiel vidéo décrit la définition d’un fichier d’InDesign et toutes les considérations qui l’accompagnent, en vue de son utilisation dans la fonction Modèles de ressources d’AEM Assets.
 version: 6.3, 6.4, 6.5
-topic: Gestion de contenu
-role: Professionnel
-level: Intermédiaire
+topic: Content Management
+role: Business Practitioner
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

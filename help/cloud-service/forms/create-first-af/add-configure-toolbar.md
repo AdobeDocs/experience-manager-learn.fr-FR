@@ -3,11 +3,11 @@ title: Ajouter et configurer la barre d’outils
 description: Ajouter la possibilité de naviguer entre les panneaux de formulaire.
 solution: Experience Manager Forms
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7389
 thumbnail: 332236.jpg
 translation-type: tm+mt

@@ -4,7 +4,7 @@ seo-title: Tutoriels d’AEM Sites
 description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Sites. '
 seo-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Sites
 sub-product: sites, content-services
-topic: Gestion de contenu
+topic: Content Management
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -3,11 +3,11 @@ title: Configuration du panneau racine
 description: Ajoutez les panneaux enfants au panneau racine.
 solution: Experience Manager Forms
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7377
 thumbnail: 332238.jpg
 translation-type: tm+mt

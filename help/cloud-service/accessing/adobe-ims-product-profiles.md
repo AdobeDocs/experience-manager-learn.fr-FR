@@ -1,12 +1,12 @@
 ---
 title: Profils et AEM de produits IMS Adobe
 description: Les profils de produits IMS Adobe permettent aux utilisateurs de se connecter à un service Auteur AEM et fournissent une référence d’accès, en fonction du profil de produits auquel ils sont membres.
-feature: 'Utilisateurs et groupes '
+feature: Users and Groups
 kt: 5000
 thumbnail: 39156.jpg
-topic: Administration, sécurité
+topic: Administration, Security
 role: Administrator
-level: Début
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

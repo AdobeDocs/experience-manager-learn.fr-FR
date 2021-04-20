@@ -3,15 +3,15 @@ title: Conventions et bonnes pratiques de nommage à appliquer lors de la créat
 seo-title: Conventions et bonnes pratiques de nommage à appliquer lors de la création de formulaires adaptatifs
 description: Conventions et bonnes pratiques de nommage à appliquer lors de la création de formulaires adaptatifs
 seo-description: Conventions et bonnes pratiques de nommage à appliquer lors de la création de formulaires adaptatifs
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: best-practices
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
-topic: Développement
-role: Développeur
-level: Début
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

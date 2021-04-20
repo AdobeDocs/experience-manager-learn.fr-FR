@@ -1,11 +1,11 @@
 ---
 title: Utilisation de ressources connectées avec AEM Sites
 description: La fonction Ressources connectées permet à un auteur AEM Sites de partager facilement des ressources numériques hébergées sur une autre instance d’AEM.
-feature: Ressources connectées
+feature: Connected Assets
 version: 6.5
-topic: Gestion de contenu
-role: Développeur
-level: Intermédiaire
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

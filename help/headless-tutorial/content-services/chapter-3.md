@@ -3,10 +3,10 @@ title: Chapitre 3 - Création de fragments de contenu de Événement - Content S
 seo-title: Prise en main de AEM Content Services - Chapitre 3 - Création de fragments de contenu de Événement
 description: Le chapitre 3 du didacticiel AEM sans en-tête couvre la création et la création de fragments de contenu de Événement à partir du modèle de fragment de contenu créé dans le chapitre 2.
 seo-description: Le chapitre 3 du didacticiel AEM sans en-tête couvre la création et la création de fragments de contenu de Événement à partir du modèle de fragment de contenu créé dans le chapitre 2.
-feature: Fragments de contenu, API
-topic: Sans tête, Gestion de contenu
-role: Développeur
-level: Début
+feature: Content Fragments, APIs
+topic: Headless, Content Management
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

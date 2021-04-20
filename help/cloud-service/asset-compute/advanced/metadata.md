@@ -1,7 +1,7 @@
 ---
 title: Développement d’un agent de métadonnées d’Asset compute
 description: Découvrez comment créer un outil de métadonnées d’Asset compute qui dérive les couleurs les plus couramment utilisées dans un fichier d’image et réécrit les noms des couleurs dans les métadonnées du fichier dans AEM.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: metadata, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
-topic: Intégrations, développement
-role: Développeur
-level: Intermédiaire, expérimenté
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

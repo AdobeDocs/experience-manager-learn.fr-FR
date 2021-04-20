@@ -1,7 +1,7 @@
 ---
 title: Création et déploiements
 description: Adobe Cloud Manager facilite la création de code et les déploiements vers AEM en tant que Cloud Service. Des échecs peuvent survenir pendant les étapes du processus de création, ce qui nécessite une action pour les résoudre. Ce guide décrit les échecs courants du déploiement et explique comment les aborder au mieux.
-feature: Outils de développement
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5434
 thumbnail: kt-5424.jpg
-topic: Développement
-role: Développeur
-level: Début
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

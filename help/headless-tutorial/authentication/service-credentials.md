@@ -4,14 +4,14 @@ description: Les informations d’identification du service AEM sont utilisées 
 version: cloud-service
 doc-type: tutorial
 topics: Development, Security
-feature: les API ;
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330519.jpg
-topic: Sans tête, intégrations
-role: Développeur
-level: Intermédiaire, expérimenté
+topic: Headless, Integrations
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

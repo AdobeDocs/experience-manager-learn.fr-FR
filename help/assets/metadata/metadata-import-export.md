@@ -2,10 +2,10 @@
 title: Utilisation de l’importation et de l’exportation des métadonnées en AEM Assets
 description: Découvrez comment utiliser les fonctions d’importation et d’exportation des métadonnées des ressources Adobe Experience Manager. Les fonctions d’importation et d’exportation permettent aux auteurs de contenu de mettre à jour en bloc les métadonnées des ressources existantes.
 version: 6.3, 6.4, 6.5, cloud-service
-topic: Gestion de contenu
-feature: 'Métadonnées  '
+topic: Content Management
+feature: Metadata
 role: Admin
-level: Intermédiaire
+level: Intermediate
 kt: 647, 917
 thumbnail: 22132.jpg
 translation-type: tm+mt

@@ -3,11 +3,11 @@ title: Configurer le panneau de revenu
 description: Ajoutez le composant de tableau au panneau de revenu.
 solution: Experience Manager Forms
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7379
 thumbnail: 332233.jpg
 translation-type: tm+mt

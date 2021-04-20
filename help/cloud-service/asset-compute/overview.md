@@ -1,7 +1,7 @@
 ---
 title: Extension des microservices d'Asset compute pour AEM en tant que Cloud Service
 description: Ce didacticiel vous guide tout au long de la création d’un simple collaborateur d’Assets compute qui crée un rendu de fichier en recadrant le fichier d’origine sur un cercle et applique un contraste et une luminosité configurables. Bien que le programme de travail lui-même soit de base, ce didacticiel l’utilise pour explorer la création, le développement et le déploiement d’un Asset compute de travail personnalisé à utiliser avec AEM en tant que Cloud Service.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: Intégrations, développement
-role: Développeur
-level: Intermédiaire, expérimenté
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

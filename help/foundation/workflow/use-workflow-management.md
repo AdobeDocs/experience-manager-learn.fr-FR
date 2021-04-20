@@ -3,9 +3,9 @@ title: Comment gérer le flux de travail dans AEM
 description: 'La gestion des flux de travail AEM permet à l’utilisateur de mieux connaître le contenu sous le flux de travail et de gérer plus facilement les définitions de modèles de flux de travail. '
 version: 6.5, cloud-service
 feature: Workflow
-topic: Gestion de contenu
+topic: Content Management
 role: Administrator
-level: Intermédiaire
+level: Intermediate
 kt: 2557
 thumbnail: 27848.jpg
 translation-type: tm+mt

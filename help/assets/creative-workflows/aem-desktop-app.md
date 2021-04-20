@@ -3,11 +3,11 @@ title: Application de bureau AEM
 description: Utilisez AEM Desktop App pour simplifier l'accès à tout fichier géré dans AEM sur ordinateur, pour toute application et format de fichier.
 kt: 2551
 sub-product: ressources
-feature: Application de bureau Experience Manager
+feature: Experience Manager Desktop App
 version: 6.5, 6.4, 6.3
-topic: Gestion de contenu
-role: Professionnel
-level: Début
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

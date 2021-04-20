@@ -1,7 +1,7 @@
 ---
 title: Configuration de l’accès à AEM parcours
 description: Configuration simplifiée des utilisateurs IMS, groupes d’utilisateurs et Profils de produits Adobes dans la Console d’administration des Adobes et comment exploiter ces abstractions IMS Adobes dans AEM Author pour définir et gérer des autorisations spécifiques basées sur des groupes.
-feature: 'Utilisateurs et groupes '
+feature: Users and Groups
 topics: authentication, permissions
 version: cloud-service
 activity: setup
@@ -9,9 +9,9 @@ audience: administrator
 doc-type: technical video
 kt: 6061
 thumbnail: 39155.jpg
-topic: Administration, sécurité
+topic: Administration, Security
 role: Administrator
-level: Début
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

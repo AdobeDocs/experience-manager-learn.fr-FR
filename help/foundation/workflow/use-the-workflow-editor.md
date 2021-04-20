@@ -3,9 +3,9 @@ title: Création de Workflows dans AEM
 description: Le flux de travail permet la gestion des processus d'entreprise en Experience Manager et est utilisé pour le traitement automatique du contenu et pour faciliter la gouvernance et les processus nécessitant la prise de décision humaine.
 version: 6.4, 6.5, cloud-service
 feature: Workflow
-topic: Gestion de contenu
-level: Intermédiaire
-role: Administrateur, développeur
+topic: Content Management
+level: Intermediate
+role: Administrator, Developer
 kt: 657
 thumbnail: 22201.jpg
 translation-type: tm+mt

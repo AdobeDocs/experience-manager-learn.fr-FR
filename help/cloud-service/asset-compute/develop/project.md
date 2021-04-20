@@ -1,7 +1,7 @@
 ---
 title: Créer un projet d'Asset compute pour l'extensibilité des Assets compute
 description: Les projets d’Asset compute sont des projets Node.js, générés à l’aide de l’interface de ligne de commande de l’Adobe I/O, qui adhèrent à une certaine structure leur permettant d’être déployés à Adobe I/O Runtime et intégrés à AEM en tant que Cloud Service.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
-topic: Intégrations, développement
-role: Développeur
-level: Intermédiaire, expérimenté
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

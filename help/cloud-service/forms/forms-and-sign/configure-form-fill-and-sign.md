@@ -5,8 +5,8 @@ type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7432
 thumbnail: 332439.jpg
 translation-type: tm+mt

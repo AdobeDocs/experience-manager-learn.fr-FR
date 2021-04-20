@@ -3,11 +3,11 @@ title: Créer un modèle de données de formulaire basé sur la source de donné
 description: Créer un modèle de données de formulaire avec l’aide de la source de données RESTful
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7149
 thumbnail: 331756.jpg
 translation-type: tm+mt

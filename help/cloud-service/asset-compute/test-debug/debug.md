@@ -1,7 +1,7 @@
 ---
 title: Débogage d’un intervenant d’Asset compute
 description: Les travailleurs d'Asset compute peuvent être débogués de plusieurs manières, des instructions simples du journal de débogage, au code VS joint en tant que débogueur distant, à l'extraction des journaux pour les activations dans Adobe I/O Runtime initiée à partir d'AEM en tant que Cloud Service.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
-topic: Intégrations, développement
-role: Développeur
-level: Intermédiaire, expérimenté
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

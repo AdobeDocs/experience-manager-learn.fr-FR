@@ -4,7 +4,7 @@ seo-title: Configuration de fragments d’expérience et d’une intégration Ad
 description: Adobe Experience Manager 6.4 réimagine le processus de personnalisation entre l’AEM et la Cible. Les expériences créées dans AEM peuvent désormais être diffusées directement à Adobe Target en tant qu’Offres HTML. Il permet aux spécialistes du marketing de tester et de personnaliser en toute transparence le contenu sur différents canaux.
 seo-description: Adobe Experience Manager 6.4 réimagine le processus de personnalisation entre l’AEM et la Cible. Les expériences créées dans AEM peuvent désormais être diffusées directement à Adobe Target en tant qu’Offres HTML. Il permet aux spécialistes du marketing de tester et de personnaliser en toute transparence le contenu sur différents canaux.
 sub-product: content-services
-feature: Fragments d’expérience
+feature: Experience Fragments
 topics: integrations
 audience: administrator, developer
 doc-type: technical video
@@ -12,9 +12,9 @@ activity: setup
 version: 6.4, 6.5
 uuid: 05fd477d-0c1a-42c0-ab92-2bca86602e2e
 discoiquuid: 16cb0b92-9398-4fd2-b8c3-f4b7675ef72c
-topic: Personnalisation
-role: Administrateur, développeur
-level: Intermédiaire
+topic: Personalization
+role: Administrator, Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
 title: Configuration des outils de développement pour AEM en tant que Cloud Service de développement
 description: Configurez une machine de développement locale avec tous les outils de base nécessaires pour se développer par rapport aux AEM locaux.
-feature: Outils de développement
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: develop
 audience: developer
 kt: 4267
 thumbnail: 25907.jpg
-topic: Développement
-role: Développeur
-level: Début
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

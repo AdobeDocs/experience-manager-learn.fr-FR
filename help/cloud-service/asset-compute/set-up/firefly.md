@@ -1,7 +1,7 @@
 ---
 title: Configurer la luciole du projet Adobe pour l'extensibilité de l'Asset compute
 description: Les projets d'Asset compute sont des projets de lucioles d'Adobe spécialement définis et, en tant que tels, nécessitent l'accès à la luciole de projet d'Adobe dans la console de développement des Adobes pour les configurer et les déployer.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
-topic: Intégrations, développement
-role: Développeur
-level: Intermédiaire, expérimenté
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

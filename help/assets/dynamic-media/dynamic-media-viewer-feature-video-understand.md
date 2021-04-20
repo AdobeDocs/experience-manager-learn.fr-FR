@@ -2,11 +2,11 @@
 title: Présentation de la visionneuse d’éléments avec AEM Dynamic Media
 description: AEM les améliorations apportées au lecteur Dynamic Media permettent aux AEM auteurs de définir et de personnaliser les ressources d’expérience seront présentées aux utilisateurs du site Web.
 sub-product: media classic
-feature: Paramètres prédéfinis de la visionneuse, Profils d’image
+feature: Viewer Presets, Image Profiles
 version: 6.3, 6.4, 6.5
-topic: Gestion de contenu
-role: Développeur
-level: Intermédiaire
+topic: Content Management
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

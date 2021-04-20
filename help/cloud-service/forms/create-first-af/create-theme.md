@@ -3,11 +3,11 @@ title: Création d’un thème de formulaire adaptatif
 description: Le thème est une bibliothèque cliente AEM qui définit l’aspect de votre formulaire adaptatif.
 solution: Experience Manager Forms
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7386
 thumbnail: 332229.jpg
 translation-type: tm+mt

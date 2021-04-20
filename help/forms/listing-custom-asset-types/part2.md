@@ -4,16 +4,16 @@ seo-title: Liste des types de ressources personnalisés en AEM Forms
 description: Partie 2 de la liste des types d'actifs personnalisés en AEM Forms
 seo-description: Partie 2 de la liste des types d'actifs personnalisés en AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
 discoiquuid: 4b940465-0bd7-45a2-8d01-e4d640c9aedf
-topic: Développement
-role: Développeur
-level: Expérience
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -4,7 +4,7 @@ seo-title: Ajouter le tableau à la section des contributions
 description: Voici la partie 9 du didacticiel en plusieurs étapes pour créer votre premier document de communication interactif.Dans cette partie, nous allons ajouter un tableau à la section des contributions.
 seo-description: Voici la partie 9 du didacticiel en plusieurs étapes pour créer votre premier document de communication interactif.Dans cette partie, nous allons ajouter un tableau à la section des contributions.
 uuid: 9475e769-a3f8-4aec-9b46-e0dc182b78a0
-feature: Communication interactive
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -13,9 +13,9 @@ version: 6.4,6.5
 kt: 5994
 thumbnail: 37953.jpg
 discoiquuid: 36c1f67f-b5bb-431e-893c-fd5032918dd7
-topic: Développement
-role: Développeur
-level: Début
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

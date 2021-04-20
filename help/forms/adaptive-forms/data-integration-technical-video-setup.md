@@ -3,7 +3,7 @@ title: Configuration de l’intégration des données avec AEM Forms
 seo-title: Configuration de l’intégration des données avec AEM Forms
 description: Configuration de la connexion de données à une source de données JDBC
 seo-description: Configuration de la connexion de données à une source de données JDBC
-feature: Forms adaptatif,Workflow
+feature: Adaptive Forms,Workflow
 topics: integrations
 audience: developer
 doc-type: technical video
@@ -11,9 +11,9 @@ activity: setup
 version: 6.4,6.5
 uuid: 267de794-4462-4421-adee-d40a469fabb3
 discoiquuid: 41864584-cb99-4c54-abda-8eb83829cb90
-topic: Développement
-role: Développeur
-level: Début
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

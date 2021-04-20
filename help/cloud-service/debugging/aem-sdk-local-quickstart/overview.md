@@ -1,16 +1,16 @@
 ---
 title: Débogage du SDK AEM
 description: AEM SDK est l’environnement de développement Principal utilisé par les développeurs et prend en charge une multitude de méthodes de débogage des AEM et des applications déployées.
-feature: Outils de développement
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: null
-topic: Développement
-role: Développeur
-level: Débutant, intermédiaire
+topic: Development
+role: Developer
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

@@ -3,9 +3,9 @@ title: Utilisation de la boîte de réception dans AEM
 description: AEM boîte de réception facilite la collaboration et la visibilité accrues dans les tâches et les processus.
 version: 6.3, 6.4, 6.5, cloud-service
 topic: Collaboration
-feature: Boîte de réception
-role: Professionnel
-level: Intermédiaire
+feature: Inbox
+role: Business Practitioner
+level: Intermediate
 kt: 159
 thumbnail: 16827.jpg
 translation-type: tm+mt

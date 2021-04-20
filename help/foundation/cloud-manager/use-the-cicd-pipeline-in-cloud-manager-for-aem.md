@@ -7,8 +7,8 @@ doc-type: feature video
 activity: understand
 audience: all
 topic: Architecture
-role: Développeur
-level: Début
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

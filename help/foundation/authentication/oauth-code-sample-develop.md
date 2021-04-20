@@ -2,14 +2,14 @@
 title: Développer des échelles OAuth en AEM
 description: L’application d’extension OAuth Scopes permet le contrôle d'accès de ressources provenant d’une application cliente autorisée par un utilisateur final. Le diagramme ci-dessous illustre le flux de requêtes dans le contexte de l'AEM.
 version: 6.3, 6.4, 6.5
-feature: 'Utilisateurs et groupes '
+feature: Users and Groups
 topics: authentication, security
 activity: develop
 audience: developer
 doc-type: code
-topic: Développement
-role: Développeur
-level: Expérience
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

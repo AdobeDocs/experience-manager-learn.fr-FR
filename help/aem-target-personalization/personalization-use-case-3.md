@@ -3,10 +3,10 @@ title: Personnalisation à l’aide du compositeur d’expérience visuelle Adob
 seo-title: Personnalisation à l’aide du compositeur d’expérience visuelle Adobe Target (VEC)
 description: Didacticiel de bout en bout montrant comment créer et diffuser une expérience personnalisée à l’aide du compositeur d’expérience visuelle Adobe Target (VEC).
 seo-description: Didacticiel de bout en bout montrant comment créer et diffuser une expérience personnalisée à l’aide du compositeur d’expérience visuelle Adobe Target (VEC).
-feature: Fragments d’expérience
-topic: Personnalisation
-role: Développeur
-level: Intermédiaire
+feature: Experience Fragments
+topic: Personalization
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

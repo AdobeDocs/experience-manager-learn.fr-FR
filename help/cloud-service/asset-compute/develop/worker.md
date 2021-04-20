@@ -1,7 +1,7 @@
 ---
 title: Développer un Asset compute
 description: Les travailleurs d’Asset compute sont au coeur des projets d’Asset compute, car ils fournissent des fonctionnalités personnalisées qui exécutent, ou orchestrent, le travail effectué sur une ressource pour créer un nouveau rendu.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,9 +9,9 @@ audience: developer
 doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
-topic: Intégrations, développement
-role: Développeur
-level: Intermédiaire, expérimenté
+topic: Integrations, Development
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: 1e5d8171832ec6b26969a8485ae970e295962828
 workflow-type: tm+mt

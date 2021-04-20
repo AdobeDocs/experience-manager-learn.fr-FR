@@ -2,7 +2,7 @@
 title: Configuration des outils de répartiteur pour AEM en tant que développement Cloud Service
 description: Les outils de répartiteur du SDK AEM facilitent le développement local des projets Adobe Experience Manager (AEM) en facilitant l'installation, l'exécution et la résolution des problèmes du répartiteur localement.
 sub-product: fondation
-feature: Répartiteur, Outils de développement
+feature: Dispatcher, Developer Tools
 topics: development, caching, security
 version: cloud-service
 doc-type: tutorial
@@ -10,9 +10,9 @@ activity: develop
 audience: developer
 kt: 4679
 thumbnail: 30603.jpg
-topic: Développement
-role: Développeur
-level: Début
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

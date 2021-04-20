@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour le statut de signature du formulaire dans la base de données
 description: Mettez à jour l’état de signature du formulaire signé dans la base de données à l’aide du processus AEM.
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: implement
 version: 6.4,6.5
 kt: 6888
 thumbnail: 6888.jpg
-topic: Développement
-role: Développeur
-level: Expérience
+topic: Development
+role: Developer
+level: Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

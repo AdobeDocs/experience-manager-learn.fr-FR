@@ -1,7 +1,7 @@
 ---
 title: Présentation des composants principaux
 description: 'Les composants principaux AEM sont des composants standard à utiliser avec Adobe Experience Manager. Conçus avec les meilleures pratiques et les normes de l’Adobe, les composants principaux fournissent un ensemble de fonctionnalités de base pour toute implémentation de sites. '
-feature: Composants principaux
+feature: Core Components
 topics: authoring
 audience: all
 activity: use
@@ -9,9 +9,9 @@ doc-type: feature video
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4676
 thumbnail: 18926.jpg
-topic: Développement
-role: Professionnel
-level: Début
+topic: Development
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

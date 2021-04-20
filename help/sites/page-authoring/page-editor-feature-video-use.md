@@ -3,7 +3,7 @@ title: Utilisation de l’éditeur de page avec AEM Sites
 seo-title: Utilisation de l’éditeur de page avec Adobe Experience Manager Sites
 description: La vidéo suivante présente plusieurs des principales fonctionnalités de l’éditeur Sites Touch-UI de Adobe Experience Manager.
 seo-description: La vidéo suivante présente plusieurs des principales fonctionnalités de l’éditeur Sites Touch-UI de Adobe Experience Manager.
-feature: Éditeur de page
+feature: Page Editor
 topics: authoring
 audience: author, marketer
 doc-type: feature video
@@ -11,9 +11,9 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4248
 thumbnail: 32011.jpg
-topic: Gestion de contenu
-role: Professionnel
-level: Début
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

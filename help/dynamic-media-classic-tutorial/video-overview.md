@@ -2,14 +2,14 @@
 title: Présentation vidéo
 description: Dynamic Media Classic est fourni avec la conversion automatique de la vidéo au téléchargement, la diffusion de la vidéo en flux continu sur les ordinateurs de bureau et les périphériques mobiles, ainsi que des visionneuses de vidéos adaptatives optimisées pour la lecture en fonction du périphérique et de la bande passante. Pour en savoir plus sur la vidéo dans Dynamic Media Classic et obtenir un guide de base sur les concepts et la terminologie de la vidéo. Apprenez ensuite à télécharger et coder des vidéos, à choisir des paramètres vidéo prédéfinis pour le téléchargement, l’ajout ou la modification d’un paramètre vidéo prédéfini, à prévisualisation des vidéos dans une visionneuse de vidéos, à déployer des vidéos sur des sites Web et mobiles, à ajouter des légendes et des marques de chapitre à la vidéo et à publier des visionneuses de vidéos pour les utilisateurs mobiles et de bureau.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, Profils vidéo, paramètres prédéfinis de la visionneuse
+feature: Dynamic Media Classic, Video Profiles, Viewer Presets
 doc-type: tutorial
 topics: development, authoring, configuring, videos, video-profiles
 audience: all
 activity: use
-topic: Gestion de contenu
-role: Professionnel
-level: Début
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

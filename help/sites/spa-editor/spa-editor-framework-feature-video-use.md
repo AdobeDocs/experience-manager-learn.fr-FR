@@ -3,7 +3,7 @@ title: Utilisation de SPA Editor avec AEM Sites
 seo-title: Utilisation de la structure SPA Editor avec AEM Sites
 description: La structure de l’éditeur d’applications d’une seule page permet aux auteurs de modifier le contenu d’une ou de plusieurs applications d’une seule page. Les développeurs qui utilisent des structures Réagir ou Angular créent un SPA, puis mappez des zones du SPA à des composants AEM, ce qui permet aux auteurs d’utiliser des outils d’édition de AEM Sites familiers.
 sub-product: sites, content-services
-feature: Éditeur de spa
+feature: Spa Editor
 topics: authoring, single-page-applications
 audience: all
 doc-type: feature video
@@ -12,8 +12,8 @@ version: 6.4, 6.5, cloud-service
 kt: 1047
 thumbnail: 22229.jpg
 topic: SPA
-role: Développeur
-level: Début
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

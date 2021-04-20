@@ -1,10 +1,10 @@
 ---
 title: Prise en charge de la traduction des fragments de contenu AEM
 description: Découvrez comment localiser et traduire des fragments de contenu avec Adobe Experience Manager. Les fichiers multimédias associés à un fragment de contenu peuvent également être extraits et traduits.
-feature: Fragments de contenu, Gestionnaire multisite
-topic: Localisation
-role: Professionnel
-level: Intermédiaire
+feature: Content Fragments, Multi Site Manager
+topic: Localization
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 201
 thumbnail: 18131.jpg

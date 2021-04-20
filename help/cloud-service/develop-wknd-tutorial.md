@@ -5,10 +5,10 @@ description: Vous découvrez le développement dans AEM ? Vous avez besoin d’
 seo-description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
 content-type: reference
 topic-tags: introduction
-feature: AEM Archétype de projet, Composants principaux, Éditeur de page, Modèles modifiables
-topic: Développement
-role: Développeur
-level: Début
+feature: AEM Project Archetype, Core Components, Page Editor, Editable Templates
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

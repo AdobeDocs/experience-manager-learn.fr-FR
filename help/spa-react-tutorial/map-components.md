@@ -2,7 +2,7 @@
 title: Mappage de composants SPA aux composants AEM | Prise en main de l'AEM SPA Editor et réaction
 description: Découvrez comment mapper des composants Réagir aux composants Adobe Experience Manager (AEM) avec l’AEM SDK JS de l’éditeur SPA. Le mappage de composants permet aux utilisateurs d’effectuer des mises à jour dynamiques sur SPA composants dans AEM Éditeur de SPA, comme pour la création d’ traditionnelle.
 sub-product: sites
-feature: Éditeur de SPA
+feature: SPA Editor
 topics: development
 version: cloud-service
 activity: develop
@@ -10,8 +10,8 @@ audience: developer
 kt: 4854
 thumbnail: 4854-spa-react.jpg
 topic: SPA
-role: Développeur
-level: Début
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

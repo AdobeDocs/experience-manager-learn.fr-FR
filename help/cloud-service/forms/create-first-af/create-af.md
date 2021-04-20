@@ -3,11 +3,11 @@ title: Créer un formulaire adaptatif
 description: Créez un formulaire adaptatif et basez-le sur le modèle créé.
 solution: Experience Manager Forms
 type: Documentation
-role: Développeur
-level: Débutant, intermédiaire
+role: Developer
+level: Beginner, Intermediate
 version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 kt: 7376
 thumbnail: 332237.jpg
 translation-type: tm+mt

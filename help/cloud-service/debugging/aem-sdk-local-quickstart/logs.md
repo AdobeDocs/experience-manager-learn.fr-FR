@@ -1,16 +1,16 @@
 ---
 title: Débogage du SDK AEM à l’aide de journaux
 description: Les journaux jouent le rôle de première ligne pour le débogage des applications AEM, mais dépendent d’une journalisation adéquate dans l’application AEM déployée.
-feature: Outils de développement
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5252
-topic: Développement
-role: Développeur
-level: Débutant, intermédiaire
+topic: Development
+role: Developer
+level: Beginner, Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

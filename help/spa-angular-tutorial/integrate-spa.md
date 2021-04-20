@@ -2,7 +2,7 @@
 title: Intégration d’un SPA | Prise en main de l’éditeur et de l’Angular SPA d’AEM
 description: Comprenez comment le code source d’une application d’une seule page (SPA) écrite dans l’Angular peut être intégré à un projet Adobe Experience Manager (AEM). Apprenez à utiliser des outils frontaux modernes, tels que l’outil CLI de l’Angular, pour développer rapidement le SPA par rapport à l’API de modèle JSON AEM.
 sub-product: sites
-feature: Éditeur de SPA
+feature: SPA Editor
 topics: development
 doc-type: tutorial
 version: cloud-service
@@ -11,8 +11,8 @@ audience: developer
 kt: 5310
 thumbnail: 5310-spa-angular.jpg
 topic: SPA
-role: Développeur
-level: Début
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

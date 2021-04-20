@@ -4,14 +4,14 @@ description: Les Jetons d'accès de développement local AEM sont utilisés pour
 version: cloud-service
 doc-type: tutorial
 topics: Development, Security
-feature: les API ;
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330477.jpg
-topic: Sans tête, intégrations
-role: Développeur
-level: Intermédiaire, expérimenté
+topic: Headless, Integrations
+role: Developer
+level: Intermediate, Experienced
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

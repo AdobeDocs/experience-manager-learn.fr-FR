@@ -1,11 +1,11 @@
 ---
 title: Comprendre la multiplicité et le développement simultané
 description: Découvrez les avantages, les défis et les techniques liés à la gestion d’une mise en oeuvre multi-clients avec les ressources Adobe Experience Manager.
-feature: Ressources connectées
+feature: Connected Assets
 version: 6.5
-topic: Développement
-role: Développeur
-level: Intermédiaire
+topic: Development
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

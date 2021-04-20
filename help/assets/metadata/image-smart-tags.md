@@ -1,10 +1,10 @@
 ---
 title: Balises dynamiques pour les images avec AEM Assets
 description: Les balises dynamiques pour les images augmentent AEM fonctionnalités de recherche en ajoutant automatiquement et intelligemment des balises de métadonnées aux fichiers d’image en fonction du contenu de l’image.
-topic: Gestion de contenu
-feature: Balises intelligentes
-role: Professionnel
-level: Intermédiaire
+topic: Content Management
+feature: Smart Tags
+role: Business Practitioner
+level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 645
 thumbnail: 17019.jpg

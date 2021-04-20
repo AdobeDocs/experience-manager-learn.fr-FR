@@ -1,7 +1,7 @@
 ---
 title: Collecte de données de page avec Adobe Analytics
 description: Utilisez la couche de données client Adobe pilotée par le événement pour collecter des données sur l’activité des utilisateurs sur un site Web créé avec Adobe Experience Manager. Découvrez comment utiliser des règles dans l’Experience Platform Launch pour écouter ces événements et envoyer des données à une suite de rapports Adobe Analytics.
-feature: analyses
+feature: analytics
 topics: integrations
 audience: administrator
 doc-type: tutorial
@@ -9,9 +9,9 @@ activity: setup
 version: cloud-service
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
-topic: Intégrations
-role: Développeur
-level: Intermédiaire
+topic: Integrations
+role: Developer
+level: Intermediate
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

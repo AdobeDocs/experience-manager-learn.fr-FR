@@ -2,15 +2,15 @@
 title: Comprendre les fragments de contenu et les fragments d’expérience
 description: La mise en page de fragments de contenu et de fragments d’expérience peut sembler similaire en surface, mais chacun joue un rôle clé dans différents cas d’utilisation. Découvrez comment les fragments de contenu et les fragments d’expérience sont similaires, différents et quand et comment les utiliser.
 sub-product: ressources, sites, services de contenu
-feature: Fragments de contenu, Fragments d’expérience
+feature: Content Fragments, Experience Fragments
 topics: headless
 version: 6.3, 6.4, 6.5
 doc-type: article
 activity: understand
 audience: all
-topic: Gestion de contenu
-role: Professionnel
-level: Début
+topic: Content Management
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

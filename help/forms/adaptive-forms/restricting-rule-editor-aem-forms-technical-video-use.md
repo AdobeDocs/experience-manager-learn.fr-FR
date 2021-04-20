@@ -4,7 +4,7 @@ seo-title: Limitation de l’éditeur de règles à des groupes spécifiques en 
 description: Limitation de l’éditeur de règles de formulaire adaptatif à des groupes spécifiques dans AEM
 seo-description: Limitation de l’éditeur de règles de formulaire adaptatif à des groupes spécifiques dans AEM
 uuid: b50f3736-b72e-4154-9ca5-95e10606f4ad
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: authoring
 audience: developer
 doc-type: technical video
@@ -12,8 +12,8 @@ activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 5aa35204-1c6d-4a1e-b8cd-79170653471a
 topic: Administration
-role: Professionnel
-level: Début
+role: Business Practitioner
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt

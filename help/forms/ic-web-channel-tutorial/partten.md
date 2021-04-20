@@ -4,16 +4,16 @@ seo-title: Configuration du panneau Outlook de retraite
 description: Voici la partie 10 d'un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons configurer le panneau Perspectives de retraite en ajoutant des composants de texte et de graphique.
 seo-description: Voici la partie 10 d'un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons configurer le panneau Perspectives de retraite en ajoutant des composants de texte et de graphique.
 uuid: 1d5119b5-e797-4bf0-9b10-995b3f051f92
-feature: Communication interactive
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 2ee2cea2-aefa-4d21-a258-248648f73a68
-topic: Développement
-role: Développeur
-level: Début
+topic: Development
+role: Developer
+level: Beginner
 translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
