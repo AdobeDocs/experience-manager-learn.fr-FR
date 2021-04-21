@@ -6,9 +6,9 @@ user-guide-description: Ensemble de ressources AEM Forms pour les développeurs 
 breadcrumb-title: Tutoriels d’AEM Forms
 index: y
 translation-type: tm+mt
-source-git-commit: 1e945afddda3d7735005029952a9d7ec46828bc6
+source-git-commit: da7837d45a9d5f614a4f6527b7bfe98aaf980d4f
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '952'
 ht-degree: 6%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 6%
 
 + Formulaires adaptatifs {#adaptive-forms}
    + [Installation de AEM Forms sous Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
+   + [Installation de packages 32 bits sous Linux](adaptive-forms/installing-aem-form-on-linux.md)
    + [Service de préremplissage dans Forms adaptatif](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [Envoi personnalisé dans Forms adaptatif](adaptive-forms/custom-submit-aem-forms-article.md)
    + [Captcha dans Forms adaptatif](adaptive-forms/forms-captcha-feature-video-use.md)
