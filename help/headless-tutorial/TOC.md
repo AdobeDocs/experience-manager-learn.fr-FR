@@ -11,10 +11,10 @@ activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 30%
+source-wordcount: '117'
+ht-degree: 28%
 
 ---
 
@@ -22,6 +22,25 @@ ht-degree: 30%
 # Prise en main d’AEM sans affichage{#getting-started-with-aem-headless}
 
 + [AEM Présentation sans en-tête](./overview.md)
++ GraphQL {#graphql}
+   + [Présentation](./graphql/overview.md)
+   + Série de vidéos{#video-series}
+      + [1 - Concepts de base de la modélisation](./graphql/video-series/modeling-basics.md)
+      + [2 - Modélisation avancée](./graphql/video-series/advanced-modeling.md)
+      + [3 - Création de Requêtes GraphQL](./graphql/video-series/creating-graphql-queries.md)
+   + Didacticiel en plusieurs étapes{#multi-step}
+      + [Présentation](./graphql/multi-step/overview.md)
+      + [1 - Configuration rapide](./graphql/multi-step/setup.md)
+      + [2 - Définition de modèles de fragments de contenu](./graphql/multi-step/content-fragment-models.md)
+      + [3 - Création de fragments de contenu](./graphql/multi-step/author-content-fragments.md)
+      + [4 - Exploration des API GraphQL](./graphql/multi-step/explore-graphql-api.md)
+      + [5 - Requête à partir d’une application externe](./graphql/multi-step/graphql-and-external-app.md)
+      + [6 - Modélisation avancée des données à l’aide des références de fragments](./graphql/multi-step/fragment-references.md)
+      + [7 - Déploiement de la production](./graphql/multi-step/production-deployment.md)
++ Authentification basée sur un jeton {#authentication}
+   + [Présentation](./authentication/overview.md)
+   + [1 - Jeton d&#39;accès de développement local](./authentication/local-development-access-token.md)
+   + [2 - Informations d’identification du service](./authentication/service-credentials.md)
 + Content Services {#content-services}
    + [Présentation](./content-services/overview.md)
    + [1 - Configuration du didacticiel](./content-services/chapter-1.md)
@@ -31,16 +50,3 @@ ht-degree: 30%
    + [5 - Création de pages Content Services](./content-services/chapter-5.md)
    + [6 - Exposition du contenu sur AEM Publish pour Diffusion](./content-services/chapter-6.md)
    + [7 - Consommation de AEM Content Services à partir d’une application mobile](./content-services/chapter-7.md)
-+ GraphQL {#graphql}
-   + [Présentation](./graphql/overview.md)
-   + [1 - Configuration rapide](./graphql/setup.md)
-   + [2 - Définition de modèles de fragments de contenu](./graphql/content-fragment-models.md)
-   + [3 - Création de fragments de contenu](./graphql/author-content-fragments.md)
-   + [4 - Exploration des API GraphQL](./graphql/explore-graphql-api.md)
-   + [5 - Requête à partir d’une application externe](./graphql/graphql-and-external-app.md)
-   + [6 - Modélisation avancée des données à l’aide des références de fragments](./graphql/fragment-references.md)
-   + [7 - Déploiement de la production](./graphql/production-deployment.md)
-+ Authentification basée sur un jeton {#authentication}
-   + [Présentation](./authentication/overview.md)
-   + [1 - Jeton d&#39;accès de développement local](./authentication/local-development-access-token.md)
-   + [2 - Informations d’identification du service](./authentication/service-credentials.md)
