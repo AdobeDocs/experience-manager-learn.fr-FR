@@ -11,15 +11,15 @@ KT: 4132
 mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
-feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
-topic: Content Management, Development
+feature: Composants principaux, Éditeur de page, Modèles modifiables, Archétype de projet AEM
+topic: gestion de contenu, développement
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 21%
+source-wordcount: '510'
+ht-degree: 8%
 
 ---
 
@@ -34,40 +34,6 @@ Ce didacticiel en plusieurs parties a pour but d’apprendre à un développeur 
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-Le tutoriel est conçu pour fonctionner avec **AEM en tant que Cloud Service** et est rétrocompatible avec **AEM 6.5.5.0+** et **l&#39;AEM 6.4.8.1+**. Le site est mis en oeuvre à l’aide des éléments suivants :
-
-* [Archétype de projet Maven AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html)
-* [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/getting-started/getting-started.html)
-* Modèles Sling
-* [Modèles modifiables](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)
-* [Système de style](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html)
-
-*Estimez 1 à 2 heures pour passer en revue chaque partie du tutoriel.*
-
-## Environnement de développement local {#local-dev-environment}
-
-Un environnement de développement local est nécessaire pour compléter ce tutoriel. Les captures d’écran et la vidéo sont capturées à l’aide de l’AEM en tant que SDK Cloud Service s’exécutant sur un environnement Mac OS avec [Visual Studio Code](https://code.visualstudio.com/) en tant qu’IDE. Sauf indication contraire, les commandes et le code doivent être indépendants du système d&#39;exploitation local.
-
-### Logiciels requis
-
-Les logiciels suivants doivent être installés localement :
-
-* Instance d’AEM locale **Auteur** (SDK Cloud Service, 6.5.5+ ou 6.4.8.1+)
-* [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-* [Apache Maven](https://maven.apache.org/) (3.3.9 ou version ultérieure)
-* [Node.js](https://nodejs.org/en/) (LTS - Prise en charge à long terme)
-* [npm 6+](https://www.npmjs.com/)
-* [Git](https://git-scm.com/)
-* [Visual Studio ](https://code.visualstudio.com/) Codeor équivalent IDE
-   * [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) - Outil utilisé dans le didacticiel
-
->[!NOTE]
->
-> **Vous découvrez AEM as a Cloud Service ?** Consultez le guide  [suivant pour configurer un environnement de développement local à l’aide de l’AEM en tant que SDK](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) Cloud Service.
->
-> **Nouveau à AEM 6.5 ?** Consultez le guide  [suivant pour la configuration d&#39;un environnement](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html) de développement local.
-
 ## À propos du didacticiel {#about-tutorial}
 
 The WKND est un magazine et blog fictif en ligne qui se concentre sur la vie nocturne, les activités et les événements dans plusieurs villes internationales.
@@ -80,20 +46,6 @@ Téléchargez les XD kits d’interface utilisateur :
 
 * [Kit d’interface utilisateur des composants principaux AEM](assets/overview/AEM-CoreComponents-UI-Kit.xd)
 * [Kit d’interface utilisateur WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd)
-
-Le nom WKND convient car nous espérons qu&#39;un développeur prendra la meilleure part d&#39;un ***week-end*** pour compléter le tutoriel.
-
-### Github {#github}
-
-Tout le code du projet se trouve sur Github dans le AEM Guide repo :
-
-**[GitHub : Projet de sites WKND](https://github.com/adobe/aem-guides-wknd)**
-
-En outre, chaque partie du tutoriel a sa propre branche dans GitHub. Un utilisateur peut commencer le didacticiel à tout moment en vérifiant simplement la branche correspondant à la partie précédente.
-
->[!NOTE]
->
-> Si vous travailliez avec la version précédente de ce didacticiel, vous pouvez toujours trouver les [packages de solution](https://github.com/adobe/aem-guides-wknd/releases/tag/archetype-18.1) et [code](https://github.com/adobe/aem-guides-wknd/tree/archetype-18.1) sur GitHub.
 
 ## Site de référence {#reference-site}
 
@@ -111,4 +63,4 @@ Avec Adobe Stock, vous avez accès à plus de 140 millions d&#39;images de haute
 
 ## Étapes suivantes {#next-steps}
 
-Qu&#39;attendez-vous ? ! Début du didacticiel en accédant au chapitre [Configuration du projet](project-setup.md) et en apprenant comment générer un nouveau projet Adobe Experience Manager à l&#39;aide de l&#39;archétype de projet AEM.
+Qu&#39;attendez-vous ? ! Début le tutoriel et apprenez comment [générer un nouveau projet Adobe Experience Manager à l&#39;aide de l&#39;archétype de projet AEM](./project-archetype/overview.md).
