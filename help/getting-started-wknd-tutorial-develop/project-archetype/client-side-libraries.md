@@ -2,19 +2,16 @@
 title: Bibliothèques côté client et flux de travail frontal
 description: Découvrez comment les bibliothèques côté client ou les clientlibs sont utilisés pour déployer et gérer les fichiers CSS et Javascript pour une implémentation de sites Adobe Experience Manager (AEM). Ce didacticiel explique également comment le module ui.frontend, un projet webpack, peut être intégré dans le processus de génération de bout en bout.
 sub-product: sites
-topics: front-end-development,responsive
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-kt: 4083
-thumbnail: 30359.jpg
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: Composants principaux, archétype de projet AEM
 topic: gestion de contenu, développement
 role: Developer
 level: Beginner
+kt: 4083
+thumbnail: 30359.jpg
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '3299'
 ht-degree: 4%
@@ -63,7 +60,7 @@ Consultez le code de ligne de base sur lequel le didacticiel s&#39;appuie :
 
 Vous pouvez toujours vue le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/client-side-libraries-solution) ou vérifier le code localement en passant à la branche `tutorial/client-side-libraries-solution`.
 
-## Intention
+## Objectifs
 
 1. Comprendre comment les bibliothèques côté client sont incluses dans une page via un modèle modifiable.
 1. Découvrez comment utiliser le module UI.Frontend et un serveur de développement webpack pour le développement frontal dédié.
