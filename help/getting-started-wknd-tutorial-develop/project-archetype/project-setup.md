@@ -3,20 +3,17 @@ title: Prise en main de AEM Sites - Configuration du projet
 seo-title: Prise en main de AEM Sites - Configuration du projet
 description: Couvre la création d'un projet Maven Multi Module pour gérer le code et les configurations d'un site AEM.
 sub-product: sites
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: Archétype de projet AEM
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-mini-toc-levels: 1
-kt: 3418
-thumbnail: 30152.jpg
 topic: gestion de contenu, développement
 role: Developer
 level: Beginner
+mini-toc-levels: 1
+kt: 3418
+thumbnail: 30152.jpg
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '1888'
 ht-degree: 6%
