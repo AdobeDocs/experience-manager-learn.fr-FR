@@ -11,10 +11,10 @@ activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 28%
+source-wordcount: '135'
+ht-degree: 25%
 
 ---
 
@@ -37,6 +37,15 @@ ht-degree: 28%
       + [5 - Requête à partir d’une application externe](./graphql/multi-step/graphql-and-external-app.md)
       + [6 - Modélisation avancée des données à l’aide des références de fragments](./graphql/multi-step/fragment-references.md)
       + [7 - Déploiement de la production](./graphql/multi-step/production-deployment.md)
++ SPA éditeur{#spa-editor}
+   + SPA distante{#remote-spa}
+      + [Présentation](./spa-editor/remote-spa/overview.md)
+      + [1 - Configuration rapide](./spa-editor/remote-spa/quick-setup.md)
+      + [2 - Configurer AEM](./spa-editor/remote-spa/aem-configure.md)
+      + [3 - Bootstrap SPA](./spa-editor/remote-spa/spa-bootstrap.md)
+      + [4 - Composants fixes](./spa-editor/remote-spa/spa-fixed-component.md)
+      + [5 - Composants Conteneur](./spa-editor/remote-spa/spa-container-component.md)
+      + [6 - Routes dynamiques](./spa-editor/remote-spa/spa-dynamic-routes.md)
 + Authentification basée sur un jeton {#authentication}
    + [Présentation](./authentication/overview.md)
    + [1 - Jeton d&#39;accès de développement local](./authentication/local-development-access-token.md)
