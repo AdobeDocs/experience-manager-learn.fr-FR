@@ -2,19 +2,16 @@
 title: Prise en main de AEM Sites - Archétype de projet
 description: Prise en main de AEM Sites - Archétype de projet. Le tutoriel WKND est un tutoriel en plusieurs parties conçu pour les développeurs qui viennent de découvrir Adobe Experience Manager. Le tutoriel passe en revue la mise en oeuvre d'un site AEM pour une marque de style de vie fictif, le WKND. Ce didacticiel porte sur des sujets fondamentaux tels que la configuration de projet, les archétypes d’expert, les composants principaux, les modèles modifiables, les bibliothèques clientes et le développement de composants.
 sub-product: sites
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
-mini-toc-levels: 1
-index: y
+version: 6.4, 6.5, Cloud Service
+type: Tutorial
 feature: Composants principaux, Éditeur de page, Modèles modifiables, Archétype de projet AEM
 topic: gestion de contenu, développement
 role: Developer
 level: Beginner
+mini-toc-levels: 1
+index: y
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 31%
