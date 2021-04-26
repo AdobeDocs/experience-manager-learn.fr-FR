@@ -14,9 +14,9 @@ topic: gestion de contenu, développement
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: e8c36a85bc47adbf76e614f245c3f47d7a50826e
 workflow-type: tm+mt
-source-wordcount: '3022'
+source-wordcount: '3016'
 ht-degree: 0%
 
 ---
@@ -213,7 +213,9 @@ Les tests unitaires font généralement correspondre 1 à 1 avec les classes Jav
    Le suffixe `Test` du fichier de test unitaire, `BylineImplTest.java` est une convention qui nous permet de
 
    1. Identifiez-le facilement en tant que fichier de test _pour_ `BylineImpl.java`
-   2. Mais aussi, différencier le fichier de test _de_ la classe testée, `BylineImpl.java`
+   1. Mais aussi, différencier le fichier de test _de_ la classe testée, `BylineImpl.java`
+
+
 
 ## Vérification de BylineImplTest.java {#reviewing-bylineimpltest-java}
 
