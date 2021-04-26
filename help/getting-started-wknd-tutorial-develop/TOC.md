@@ -10,10 +10,10 @@ user-guide-description: 'Un tutoriel en plusieurs parties pour les développeurs
 breadcrumb-title: Tutoriels d’AEM Sites WKND
 index: y
 translation-type: tm+mt
-source-git-commit: fb6c56dfc85fbcb36a68210f068fd496849c352e
+source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 64%
+source-wordcount: '76'
+ht-degree: 60%
 
 ---
 
@@ -30,3 +30,8 @@ ht-degree: 64%
    + [5 - Système de style](./project-archetype/style-system.md)
    + [6 - Composant personnalisé](./project-archetype/custom-component.md)
    + [7 - Tests unitaires](./project-archetype/unit-testing.md)
++ Modèle de site {#site-template}
+   + [1. Créer un site](./site-template/create-site.md)
+   + [2. Création de contenu et publication de modifications](./site-template/author-content-publish.md)
+   + [3. Modèles de page](./site-template/page-templates.md)
+   + [4. Thème ](./site-template/theming.md)
