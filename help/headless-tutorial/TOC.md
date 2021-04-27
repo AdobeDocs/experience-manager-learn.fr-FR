@@ -11,7 +11,7 @@ activity: develop, understand
 kt: 2963
 index: y
 translation-type: tm+mt
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+source-git-commit: b6f63110f14ede51fa2dd740aea7cbb623cbec60
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 25%
@@ -40,12 +40,12 @@ ht-degree: 25%
 + SPA éditeur{#spa-editor}
    + SPA distante{#remote-spa}
       + [Présentation](./spa-editor/remote-spa/overview.md)
-      + [1 - Configuration rapide](./spa-editor/remote-spa/quick-setup.md)
-      + [2 - Configurer AEM](./spa-editor/remote-spa/aem-configure.md)
-      + [3 - Bootstrap SPA](./spa-editor/remote-spa/spa-bootstrap.md)
-      + [4 - Composants fixes](./spa-editor/remote-spa/spa-fixed-component.md)
-      + [5 - Composants Conteneur](./spa-editor/remote-spa/spa-container-component.md)
-      + [6 - Routes dynamiques](./spa-editor/remote-spa/spa-dynamic-routes.md)
+      + [Configuration rapide](./spa-editor/remote-spa/quick-setup.md)
+      + [1 - Configurer AEM](./spa-editor/remote-spa/aem-configure.md)
+      + [2 - Bootstrap SPA](./spa-editor/remote-spa/spa-bootstrap.md)
+      + [3 - Composants fixes](./spa-editor/remote-spa/spa-fixed-component.md)
+      + [4 - Composants du Conteneur](./spa-editor/remote-spa/spa-container-component.md)
+      + [5 - Routes dynamiques](./spa-editor/remote-spa/spa-dynamic-routes.md)
 + Authentification basée sur un jeton {#authentication}
    + [Présentation](./authentication/overview.md)
    + [1 - Jeton d&#39;accès de développement local](./authentication/local-development-access-token.md)
