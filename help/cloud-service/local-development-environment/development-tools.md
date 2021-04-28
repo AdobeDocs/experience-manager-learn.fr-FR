@@ -1,7 +1,7 @@
 ---
 title: Configuration des outils de développement pour AEM en tant que Cloud Service de développement
 description: Configurez une machine de développement locale avec tous les outils de base nécessaires pour se développer par rapport aux AEM locaux.
-feature: Developer Tools
+feature: Outils de développement
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,19 +9,26 @@ activity: develop
 audience: developer
 kt: 4267
 thumbnail: 25907.jpg
-topic: Development
+topic: Développement
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1426'
 ht-degree: 3%
 
 ---
 
 
 # Configuration des outils de développement
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_localdev_devtools"
+>title="Configuration des outils de développement"
+>abstract="Le développement de Adobe Experience Manager (AEM) nécessite un ensemble minimal d&#39;outils de développement à installer et à configurer sur la machine de développement. Ces outils incluent Java, Maven, Adobe I/O CLI, Development IDE, etc."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr" text="Directives de développement"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html" text="Concepts de base du développement"
 
 Le développement de Adobe Experience Manager (AEM) nécessite un ensemble minimal d&#39;outils de développement à installer et à configurer sur la machine de développement. Ces outils soutiennent le développement et la création de projets AEM.
 
