@@ -1,7 +1,7 @@
 ---
 title: Environnement de développement local pour AEM en tant que Cloud Service
 description: Présentation de l'environnement de développement local de Adobe Experience Manager (AEM).
-feature: Developer Tools
+feature: Outils de développement
 topics: development
 version: cloud-service
 doc-type: article
@@ -9,19 +9,26 @@ activity: troubleshoot
 audience: developer
 kt: 3290
 thumbnail: 32565.jpg
-topic: Development
+topic: Développement
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 2%
+source-wordcount: '549'
+ht-degree: 3%
 
 ---
 
 
 # Configuration de l&#39;Environnement de développement local
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_localdev_overview"
+>title="Présentation"
+>abstract="La mise en place d’un environnement de développement local pour l’AEM en tant que Cloud Service comprend les outils de développement nécessaires pour développer, créer et compiler des projets AEM, ainsi que les délais d’exécution locaux permettant aux développeurs de valider rapidement de nouvelles fonctionnalités localement avant de les déployer en tant que Cloud Service via Adobe Cloud Manager."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr" text="Directives de développement"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html" text="Concepts de base du développement"
 
 Ce didacticiel explique comment configurer un environnement de développement local pour Adobe Experience Manager (AEM) en utilisant l’AEM comme SDK Cloud Service. Les outils de développement requis pour développer, créer et compiler des projets AEM, ainsi que les délais d’exécution locaux permettent aux développeurs de valider rapidement les nouvelles fonctionnalités localement avant de les déployer sur AEM en tant qu’Cloud Service via Adobe Cloud Manager.
 
