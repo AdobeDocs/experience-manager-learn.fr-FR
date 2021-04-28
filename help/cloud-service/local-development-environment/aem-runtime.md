@@ -1,7 +1,7 @@
 ---
 title: Configuration de l’exécution des AEM locales pour l’AEM en tant que développement Cloud Service
 description: Configurez l’AEM d’exécution locale à l’aide de l’AEM en tant que Jar de démarrage rapide du kit SDK Cloud Service.
-feature: Developer Tools
+feature: Outils de développement
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,19 +9,26 @@ activity: develop
 audience: developer
 kt: 4678, 4677
 thumbnail: 32551.jpg
-topic: Development
+topic: Développement
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 2%
+source-wordcount: '1734'
+ht-degree: 3%
 
 ---
 
 
 # Configuration de l’AEM d’exécution locale
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_localdev_aemruntime"
+>title="Exécution AEM locale"
+>abstract="Adobe Experience Manager (AEM) peut être exécuté localement à l’aide de l’AEM en tant que Jar de démarrage rapide du Cloud Service SDK. Cela permet aux développeurs de se déployer et de tester du code, des configurations et du contenu personnalisés avant de s&#39;engager dans le contrôle de code source et de le déployer sur un AEM en tant qu&#39;environnement Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html" text="SDK AEM as a Cloud Service"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Télécharger AEM en tant que SDK Cloud Service"
 
 Adobe Experience Manager (AEM) peut être exécuté localement à l’aide de l’AEM en tant que Jar de démarrage rapide du Cloud Service SDK. Cela permet aux développeurs de se déployer et de tester du code, des configurations et du contenu personnalisés avant de s&#39;engager dans le contrôle de code source et de le déployer sur un AEM en tant qu&#39;environnement Cloud Service.
 
