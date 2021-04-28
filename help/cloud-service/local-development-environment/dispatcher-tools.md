@@ -2,7 +2,7 @@
 title: Configuration des outils de répartiteur pour AEM en tant que développement Cloud Service
 description: Les outils de répartiteur du SDK AEM facilitent le développement local des projets Adobe Experience Manager (AEM) en facilitant l'installation, l'exécution et la résolution des problèmes du répartiteur localement.
 sub-product: fondation
-feature: Dispatcher, Developer Tools
+feature: Répartiteur, Outils de développement
 topics: development, caching, security
 version: cloud-service
 doc-type: tutorial
@@ -10,19 +10,26 @@ activity: develop
 audience: developer
 kt: 4679
 thumbnail: 30603.jpg
-topic: Development
+topic: Développement
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1639'
 ht-degree: 2%
 
 ---
 
 
 # Configuration des outils du répartiteur local
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_localdev_dispatcher"
+>title="Outils du répartiteur local"
+>abstract="Le répartiteur fait partie intégrante de l&#39;architecture Experience Manager globale et devrait faire partie du développement local mis en place. L’AEM en tant que SDK Cloud Service comprend la version recommandée des outils du répartiteur, qui facilite la configuration, la validation et la simulation locale du répartiteur."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html" text="Dispatcher en mode cloud"
+>additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Télécharger AEM en tant que SDK Cloud Service"
 
 Le répartiteur de Adobe Experience Manager (AEM) est un module de serveur Web Apache HTTP qui fournit une couche de sécurité et de performances entre le niveau CDN et le niveau de publication AEM. Le répartiteur fait partie intégrante de l&#39;architecture Experience Manager globale et devrait faire partie du développement local mis en place.
 
