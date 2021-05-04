@@ -1,7 +1,7 @@
 ---
 title: Débogage d’un intervenant d’Asset compute
 description: Les travailleurs d'Asset compute peuvent être débogués de plusieurs manières, des instructions simples du journal de débogage, au code VS joint en tant que débogueur distant, à l'extraction des journaux pour les activations dans Adobe I/O Runtime initiée à partir d'AEM en tant que Cloud Service.
-feature: Asset Compute Microservices
+feature: Microservices Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6285
 thumbnail: 40383.jpg
-topic: Integrations, Development
+topic: Intégrations, développement
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,7 @@ _Clic publicitaire du débogage d’un intervenant d’Asset compute à l’aide
    ```
    ℹ Info: Deploying package [wkndAemAssetCompute-0.0.1]...
    ```
+
 1. Début d&#39;une nouvelle instance de l&#39;outil de développement d&#39;Asset compute à l&#39;aide de la commande `npx adobe-asset-compute devtool`
 1. Dans le code VS, appuyez sur l’icône Débogage dans le volet de navigation de gauche.
    + Si vous y êtes invité, appuyez sur __créer un fichier launch.json > Node.js__ pour créer un nouveau fichier `launch.json`.
