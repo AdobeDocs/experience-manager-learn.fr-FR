@@ -1,7 +1,7 @@
 ---
 title: Développer un Asset compute
 description: Les travailleurs d’Asset compute sont au coeur des projets d’Asset compute, car ils fournissent des fonctionnalités personnalisées qui exécutent, ou orchestrent, le travail effectué sur une ressource pour créer un nouveau rendu.
-feature: Asset Compute Microservices
+feature: Microservices Asset compute
 topics: renditions, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
-topic: Integrations, Development
+topic: Intégrations, développement
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: 1e5d8171832ec6b26969a8485ae970e295962828
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
@@ -340,6 +340,7 @@ Maintenant que le code de travail est terminé et qu’il a été précédemment
        ]
    }
    ```
+
 1. Appuyez sur __Exécuter__ et attendez la génération du rendu.
 1. La section __Rendus__ prévisualisation le rendu généré. Appuyez sur la prévisualisation de rendu pour télécharger le rendu complet.
 
