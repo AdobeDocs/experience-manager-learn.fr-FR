@@ -1,7 +1,7 @@
 ---
 title: Développement d’un agent de métadonnées d’Asset compute
 description: Découvrez comment créer un outil de métadonnées d’Asset compute qui dérive les couleurs les plus couramment utilisées dans un fichier d’image et réécrit les noms des couleurs dans les métadonnées du fichier dans AEM.
-feature: Asset Compute Microservices
+feature: Microservices Asset compute
 topics: metadata, development
 version: cloud-service
 activity: develop
@@ -9,13 +9,13 @@ audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
-topic: Integrations, Development
+topic: Intégrations, développement
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1439'
 ht-degree: 1%
 
 ---
@@ -205,6 +205,7 @@ Comme notre projet d&#39;Asset compute contient deux travailleurs (le précéden
        ]
    }
    ```
+
 1. Appuyez sur __Exécuter__ et attendez la génération du rendu XML.
    + Les deux travailleurs étant répertoriés dans la définition du profil, les deux rendus sont générés. Si vous le souhaitez, la définition de profil supérieur pointant vers le [opérateur de rendu du cercle ](../develop/worker.md) peut être supprimée, afin d’éviter de l’exécuter à partir de l’outil de développement.
 1. La section __Rendus__ prévisualisation le rendu généré. Appuyez sur `rendition.xml` pour le télécharger, puis ouvrez-le dans VS Code (ou dans votre éditeur XML/texte favori) pour le consulter.
@@ -301,7 +302,7 @@ Pour consulter les métadonnées des couleurs, associez deux nouveaux champs du 
 
 ## Traitement des fichiers
 
-![Détails de la ressource   ](./assets/metadata/asset-details.png)
+![Détails de la ressource](./assets/metadata/asset-details.png)
 
 1. Dans le service Auteur AEM, accédez à __Ressources > Fichiers__
 1. Accédez au dossier, ou sous-dossier, auquel le Profil de traitement est appliqué
