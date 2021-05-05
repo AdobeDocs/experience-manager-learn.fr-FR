@@ -8,9 +8,9 @@ level: Beginner
 kt: 7629
 thumbnail: kt-7629.jpeg
 translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: d3a237b196ac872beda6119c854a0cae29510437
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '794'
 ht-degree: 5%
 
 ---
@@ -32,8 +32,11 @@ Ce didacticiel nécessite les éléments suivants :
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
++ Conditions préalables macOS uniquement
+   + [Outils de ligne de commande ](https://developer.apple.com/xcode/) Xcodeor  [Xcode](https://developer.apple.com/xcode/resources/)
 + [aem-guides-wknd.all.0.3.0.zip ou version ultérieure](https://github.com/adobe/aem-guides-wknd/releases)
 + [code source aem-guides-wknd-graphql](https://github.com/adobe/aem-guides-wknd-graphql)
+
 
 Ce didacticiel suppose :
 
@@ -90,7 +93,8 @@ Téléchargez le code source de l’application WKND depuis Github.com, puis cha
 ```
 $ mkdir -p ~/Code/wknd-app
 $ cd ~/Code/wknd-app
-$ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
+$ git clone https://github.com/adobe/aem-guides-wknd-graphql.git
+$ cd aem-guides-wknd-graphql
 $ git checkout -b feature/spa-editor
 $ git pull origin feature/spa-editor
 ```
@@ -146,6 +150,8 @@ Avant de créer du contenu, disposez les fenêtres de votre navigateur de telle 
 1. Appuyez sur la carte __Bali Surf Camp__ et naviguez jusqu’à son itinéraire dynamique.
 1. Ajouter, modifier ou supprimer des composants du composant de conteneur qui se trouvent au-dessus de l&#39;en-tête __Itinéraire__
 1. Actualisez le SPA en cours d’exécution sur `http://localhost:3000` et vérifiez que les modifications reflètent
+
+Les nouvelles pages AEM sous la __Page d&#39;accueil d’application WKND > Adventure__ _doivent_ avoir un nom de page AEM qui correspond au nom du fragment de contenu de l’aventure correspondante. En effet, l’itinéraire SPA vers le mappage AEM page est basé sur le dernier segment de l’itinéraire, qui est le nom du fragment de contenu.
 
 ## Félicitations ! 
 
