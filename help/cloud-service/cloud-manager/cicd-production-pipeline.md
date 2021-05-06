@@ -13,15 +13,22 @@ topic: Architecture
 role: Architect, Developer, Administrator
 level: Beginner
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: e295d77a11c99310aaae10ecb8a2eaa20ad49285
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 20%
+source-wordcount: '179'
+ht-degree: 35%
 
 ---
 
 
 # Utilisation de Adobe Cloud Manager - Canal de production CI/CD
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_devops_prodpipeline"
+>title="Pipeline de production CI/CD"
+>abstract="La configuration du pipeline de production CI/CD définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performances."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-process" text="Déploiement de votre code"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#deployment-production-phase" text="Phase de déploiement en production"
 
 ## Configuration
 
