@@ -6,12 +6,12 @@ feature: SPA Éditeur, Composants principaux, API, Développement
 role: Developer, Architect
 level: Beginner
 kt: 7629
-thumbnail: kt-7629.jpeg
+thumbnail: 333181.jpeg
 translation-type: tm+mt
-source-git-commit: d3a237b196ac872beda6119c854a0cae29510437
+source-git-commit: e6dc028a120670d34806def36ad200ed161295e1
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 5%
+source-wordcount: '801'
+ht-degree: 6%
 
 ---
 
@@ -22,7 +22,11 @@ La configuration rapide est une procédure accélérée qui illustre comment ins
 
 La configuration rapide vous conduit directement à l’état final de ce didacticiel.
 
-## Conditions préalables
+>[!VIDEO](https://video.tv.adobe.com/v/333181/?quality=12&learn=on)
+
+_Présentation vidéo de la configuration rapide_
+
+## Prérequis
 
 Ce didacticiel nécessite les éléments suivants :
 
