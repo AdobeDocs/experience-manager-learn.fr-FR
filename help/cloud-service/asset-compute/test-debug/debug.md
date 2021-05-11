@@ -13,7 +13,7 @@ topic: Intégrations, développement
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 0%
@@ -60,6 +60,7 @@ _Clic publicitaire du débogage d’un intervenant d’Asset compute à l’aide
    ℹ Info: Deploying package [wkndAemAssetCompute-0.0.1]...
    ```
 
+
 1. Début d&#39;une nouvelle instance de l&#39;outil de développement d&#39;Asset compute à l&#39;aide de la commande `npx adobe-asset-compute devtool`
 1. Dans le code VS, appuyez sur l’icône Débogage dans le volet de navigation de gauche.
    + Si vous y êtes invité, appuyez sur __créer un fichier launch.json > Node.js__ pour créer un nouveau fichier `launch.json`.
@@ -105,7 +106,7 @@ _Clic publicitaire du débogage d’un intervenant d’Asset compute à l’aide
 
    ![journaux de l’application aio](./assets/debug/aio-app-logs.png)
 
-## Résolution des incidents
+## Résolution des problèmes
 
 + [Le débogueur n’est pas joint](../troubleshooting.md#debugger-does-not-attach)
 + [Points d’arrêt non suspendus](../troubleshooting.md#breakpoints-no-pausing)
