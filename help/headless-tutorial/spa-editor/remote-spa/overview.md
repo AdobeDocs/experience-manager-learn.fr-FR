@@ -8,10 +8,10 @@ level: Beginner
 kt: 7630
 thumbnail: kt-7630.jpg
 translation-type: tm+mt
-source-git-commit: b6f63110f14ede51fa2dd740aea7cbb623cbec60
+source-git-commit: ec692af56afa83330097bb9d8db0d2f2f4fde1c1
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -35,9 +35,9 @@ Le didacticiel est conçu pour fonctionner avec **AEM en tant que Cloud Service*
 
 ## Dernier code
 
-+ Le code de ce didacticiel est disponible sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphq) dans la branche `feature/spa-editor`.
++ Le code de ce didacticiel est disponible sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphql) dans la branche `feature/spa-editor`.
 
-## Conditions préalables
+## Prérequis
 
 Ce didacticiel nécessite les éléments suivants :
 
