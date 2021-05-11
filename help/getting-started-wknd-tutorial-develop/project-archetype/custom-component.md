@@ -12,7 +12,7 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 translation-type: tm+mt
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 255d6bd403d240b2c18a0ca46c15b0bb98cf9593
 workflow-type: tm+mt
 source-wordcount: '3967'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Ce didacticiel porte sur la création de bout en bout d’un composant de ligne d’AEM personnalisé qui affiche le contenu créé dans une boîte de dialogue et explore le développement d’un modèle Sling pour encapsuler la logique métier qui renseigne le code HTML du composant.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Examinez les outils et les instructions nécessaires pour configurer un [environnement de développement local](overview.md#local-dev-environment).
 
@@ -860,10 +860,10 @@ Examinons ce que ce script HTML fait jusqu’à présent :
    <div data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
        class="cmp-byline">
            <div class="cmp-byline__image">
-               <!-- Include the Core Components Image Component -->
+               <!--/* Include the Core Components Image Component */-->
            </div>
-           <h2 class="cmp-byline__name"><!-- Include the name --></h2>
-           <p class="cmp-byline__occupations"><!-- Include the occupations --></p>
+           <h2 class="cmp-byline__name"><!--/* Include the name */--></h2>
+           <p class="cmp-byline__occupations"><!--/* Include the occupations */--></p>
    </div>
    <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
    ```
