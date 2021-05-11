@@ -9,14 +9,14 @@ audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 2%
+source-wordcount: '833'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ Pour accomplir le cas d’utilisation ci-dessus, vous écrivez généralement un
 
 ## Créer un projet expert
 
-La première étape consiste à créer un projet d&#39;expert à l&#39;aide de l&#39;archétype d&#39;expert d&#39;Adobe approprié. Les étapes détaillées sont répertoriées dans cet [article](https://helpx.adobe.com/experience-manager/using/maven_arch13.html). Une fois votre projet d&#39;expert importé dans eclipse, vous êtes prêt à début d&#39;écrire votre premier composant OSGi qui peut être utilisé dans votre étape de processus.
+La première étape consiste à créer un projet d&#39;expert à l&#39;aide de l&#39;archétype d&#39;expert d&#39;Adobe approprié. Les étapes détaillées sont répertoriées dans cet [article](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/create-your-first-osgi-bundle.html?lang=en). Une fois votre projet d&#39;expert importé dans eclipse, vous êtes prêt à début d&#39;écrire votre premier composant OSGi qui peut être utilisé dans votre étape de processus.
 
 
 ### Créer une classe qui implémente WorkflowProcess
@@ -55,57 +55,83 @@ Pour ce faire, la classe Java suivante a été écrite :
 
 Examinons ce code
 
-```
-@Component(property = { Constants.SERVICE_DESCRIPTION + "=Write Adaptive Form Attachments to File System",
-        Constants.SERVICE_VENDOR + "=Adobe Systems",
-        "process.label" + "=Save Adaptive Form Attachments to File System" })
+```java
+package com.learningaemforms.adobe.core;
+
+import java.io.File;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.jcr.Node;
+import javax.jcr.Session;
+
+import org.osgi.framework.Constants;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.adobe.aemfd.docmanager.Document;
+import com.adobe.granite.workflow.WorkflowException;
+import com.adobe.granite.workflow.WorkflowSession;
+import com.adobe.granite.workflow.exec.WorkItem;
+import com.adobe.granite.workflow.exec.WorkflowProcess;
+import com.adobe.granite.workflow.metadata.MetaDataMap;
+import com.day.cq.search.PredicateGroup;
+import com.day.cq.search.Query;
+import com.day.cq.search.QueryBuilder;
+import com.day.cq.search.result.Hit;
+import com.day.cq.search.result.SearchResult;
+
+@Component(property = {
+	Constants.SERVICE_DESCRIPTION + "=Write Adaptive Form Attachments to File System",
+	Constants.SERVICE_VENDOR + "=Adobe Systems",
+	"process.label" + "=Save Adaptive Form Attachments to File System"
+})
 public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
-     private static final Logger log = LoggerFactory.getLogger(WriteFormAttachmentsToFileSystem.class);
-     @Override
-    public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)
-            throws WorkflowException {
-        // TODO Auto-generated method stub
-        log.debug("The string I got was ..." + processArguments.get("PROCESS_ARGS", "string").toString());
-        String[] params = processArguments.get("PROCESS_ARGS", "string").toString().split(",");
-        String attachmentsPath = params[0];
-        String saveToLocation = params[1];
-        log.debug("The seperator is" + File.separator);
-        String payloadPath = workItem.getWorkflowData().getPayload().toString();
- 
-        String attachmentsFilePath = payloadPath + "/" + attachmentsPath + "/attachments";
-        log.debug("The data file path is " + attachmentsFilePath);
- 
-        ResourceResolver resourceResolver = workflowSession.adaptTo(ResourceResolver.class);
- 
-        Resource attachmentsNode = resourceResolver.getResource(attachmentsFilePath);
-        Iterator<Resource> attachments = attachmentsNode.listChildren();
-        while (attachments.hasNext()) {
-            Resource attachment = attachments.next();
-            String attachmentPath = attachment.getPath();
-            String attachmentName = attachment.getName();
- 
-            log.debug("The attachmentPath is " + attachmentPath + " and the attachmentname is " + attachmentName);
-            com.adobe.aemfd.docmanager.Document attachmentDoc = new com.adobe.aemfd.docmanager.Document(attachmentPath,
-                    attachment.getResourceResolver());
-            try {
-                File file = new File(saveToLocation + File.separator + workItem.getId());
-                if (!file.exists()) {
-                    file.mkdirs();
-                }
- 
-                attachmentDoc.copyToFile(new File(file + File.separator + attachmentName));
- 
-                log.debug("Saved attachment" + attachmentName);
-                attachmentDoc.close();
- 
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
- 
-        }
- 
-    }
+
+	private static final Logger log = LoggerFactory.getLogger(WriteFormAttachmentsToFileSystem.class);
+	@Reference
+	QueryBuilder queryBuilder;
+
+	@Override
+	public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)
+	throws WorkflowException {
+		// TODO Auto-generated method stub
+		log.debug("The string I got was ..." + processArguments.get("PROCESS_ARGS", "string").toString());
+		String[] params = processArguments.get("PROCESS_ARGS", "string").toString().split(",");
+		String attachmentsPath = params[0];
+		String saveToLocation = params[1];
+		log.debug("The seperator is" + File.separator);
+		String payloadPath = workItem.getWorkflowData().getPayload().toString();
+		Map<String, String> map = new HashMap<String, String> ();
+		map.put("path", payloadPath + "/" + attachmentsPath);
+		File saveLocationFolder = new File(saveToLocation);
+		if (!saveLocationFolder.exists()) {
+			saveLocationFolder.mkdirs();
+		}
+
+		map.put("type", "nt:file");
+		Query query = queryBuilder.createQuery(PredicateGroup.create(map), workflowSession.adaptTo(Session.class));
+		query.setStart(0);
+		query.setHitsPerPage(20);
+
+		SearchResult result = query.getResult();
+		log.debug("Got  " + result.getHits().size() + " attachments ");
+		Node attachmentNode = null;
+		for (Hit hit: result.getHits()) {
+			try {
+				String path = hit.getPath();
+				log.debug("The attachment title is  " + hit.getTitle() + " and the attachment path is  " + path);
+				attachmentNode = workflowSession.adaptTo(Session.class).getNode(path + "/jcr:content");
+				InputStream documentStream = attachmentNode.getProperty("jcr:data").getBinary().getStream();
+				Document attachmentDoc = new Document(documentStream);
+				attachmentDoc.copyToFile(new File(saveLocationFolder + File.separator + hit.getTitle()));
+				attachmentDoc.close();
+			} catch (Exception e) {
+				log.debug("Error saving file " + e.getMessage());
+			}
 ```
 
 Ligne 1 - définit les propriétés de notre composant. La propriété process.label est ce que vous verrez lors de l’association du composant OSGi à l’étape du processus, comme le montre l’une des captures d’écran ci-dessous.
@@ -120,18 +146,8 @@ Ces deux valeurs sont transmises en tant qu’arguments de processus, comme le m
 
 ![ProcessStep](assets/implement-process-step.gif)
 
+Le service QueryBuilder est utilisé pour requête des noeuds de type nt:file sous le dossier attachmentsPath. Le reste du code effectue une itération dans les résultats de la recherche pour créer un objet de Document et l&#39;enregistrer dans le système de fichiers.
 
-Ligne 19 : Nous construisons ensuite la pièce jointe FilePath. Le chemin d’accès au fichier de pièce jointe est semblable à
-
-    /var/fd/tableau de bord/payload/server0/2018-11-19/3EF6ENASOQTHCPLNDYVNAM7OKA_7/Pièces jointes/pièces jointes
-
-* Les &quot;pièces jointes&quot; sont le nom du dossier par rapport à la charge utile du flux de travail qui a été spécifiée lorsque vous avez configuré l’option d’envoi du formulaire adaptatif.
-
-   ![submitoptions](assets/af-submit-options.gif)
-
-Lignes 24-26 - Get ResourceResolver et ensuite la ressource pointant vers la pièce jointe FilePath.
-
-Le reste du code crée des objets de Document en effectuant une itération sur l&#39;objet enfant de la ressource pointant vers attachementFilePath à l&#39;aide de l&#39;API. Cet objet document est spécifique à AEM Forms. Nous utilisons ensuite la méthode copyToFile de l&#39;objet document pour enregistrer l&#39;objet document.
 
 >[!NOTE]
 >
@@ -139,14 +155,14 @@ Le reste du code crée des objets de Document en effectuant une itération sur l
 
 #### Création et déploiement
 
-[Créez le lot comme décrit ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)
+[Créez le lot comme décrit ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/create-your-first-osgi-bundle.html?lang=en#build-your-project)
 [iciAssurez-vous que le lot est déployé et en principal état](http://localhost:4502/system/console/bundles)
 
 Créer un modèle de processus. Faites glisser et déposez l’étape du processus dans le modèle de processus. Associez l’étape de processus à &quot;Enregistrer les pièces jointes de formulaire adaptatif dans le système de fichiers&quot;.
 
 Fournissez les arguments de processus nécessaires séparés par une virgule. Par exemple, Pièces jointes,c:\\scrappp\\. Le premier argument est le dossier dans lequel vos pièces jointes de formulaire adaptatif seront stockées par rapport à la charge utile du flux de travail. Il doit s’agir de la même valeur que celle spécifiée lors de la configuration de l’action d’envoi du formulaire adaptatif. Le deuxième argument est l&#39;emplacement où les pièces jointes doivent être stockées.
 
-Créez un formulaire adaptatif. Faites glisser le composant Pièces jointes vers le formulaire. Configurez l’action d’envoi du formulaire pour appeler le processus créé lors des étapes précédentes. Indiquez le chemin d’accès de pièce jointe approprié.
+Création d’un formulaire adaptatif. Faites glisser le composant Pièces jointes vers le formulaire. Configurez l’action d’envoi du formulaire pour appeler le processus créé lors des étapes précédentes. Indiquez le chemin d’accès de pièce jointe approprié.
 
 Enregistrez les paramètres.
 
