@@ -1,21 +1,21 @@
 ---
 title: Autres outils de débogage du SDK AEM
 description: Divers autres outils peuvent vous aider à déboguer le démarrage rapide local du SDK AEM.
-feature: Developer Tools
+feature: Outils de développement
 topics: development
 version: cloud-service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
-topic: Development
+topic: Développement
 role: Developer
 level: Beginner, Intermediate
 translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 5fcc7eec120debf1a8ac08716154599467e66759
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 11%
+source-wordcount: '222'
+ht-degree: 13%
 
 ---
 
@@ -55,14 +55,4 @@ Le débogueur QueryBuilder est un outil Web qui vous permet de déboguer et de c
 Le débogueur QueryBuilder se trouve à l’emplacement suivant :
 
 + [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
-
-## Sling Log Tracer et AEM module externe Chrome
-
-![Sling Log Tracer et AEM module externe Chrome](./assets/other-tools/log-tracer.png)
-
-[Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html), fourni avec le démarrage rapide local du SDK AEM, permet un suivi approfondi des requêtes HTTP, exposant des informations de débogage détaillées par requête. La configuration [Log Tracer OSGi doit être configurée](https://sling.apache.org/documentation/bundles/log-tracers.html#configuration-1) pour activer cette fonctionnalité.
-
-Le module externe open source [AEM Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US) pour le [navigateur Web Google Chrome](https://www.google.com/chrome/), s’intègre à Log Tracer, exposant les informations de débogage directement dans les outils de développement de Chrome.
-
-_Le module externe AEM Chrome est un outil open source et l’Adobe ne le prend pas en charge._
 
