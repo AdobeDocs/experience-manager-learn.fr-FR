@@ -13,7 +13,7 @@ topic: Développement
 role: Developer
 level: Beginner
 translation-type: tm+mt
-source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
+source-git-commit: d49ae402b332ba972a78cdbd8f5bf962b91c83b1
 workflow-type: tm+mt
 source-wordcount: '1734'
 ht-degree: 3%
@@ -43,7 +43,7 @@ Le Experience Manager est une application Java et nécessite donc le SDK Java po
    + Windows : `java -version`
    + macOS / Linux : `java --version`
 
-![Java ](./assets/aem-runtime/java.png)
+![Java](./assets/aem-runtime/java.png)
 
 ## Téléchargement de l’AEM en tant que SDK Cloud Service
 
@@ -213,7 +213,7 @@ La mise à niveau du SDK AEM crée effectivement un nouveau runtime AEM, y compr
 
 N’oubliez pas que l’utilisation des approches ci-dessus pour gérer le code entre les mises à niveau AEM SDK indique un modèle de développement anti-schéma. Le code non jetable doit provenir de votre IDE de développement et être acheminé vers AEM SDK via des déploiements.
 
-## Résolution des incidents
+## Résolution des problèmes
 
 ## Un doublon-clic sur le fichier JAR de démarrage rapide génère une erreur {#troubleshooting-double-click}
 
@@ -229,7 +229,7 @@ Pour début du service Auteur AEM, `cd` dans le répertoire contenant le fichier
 
 ou, pour début au service AEM Publish, `cd` dans le répertoire contenant le fichier Jar de démarrage rapide et exécutez la commande :
 
-`$ java -jar aem-author-p4503.jar`
+`$ java -jar aem-publish-p4503.jar`
 
 ## Le démarrage du fichier JAR de démarrage rapide à partir de la ligne de commande annule immédiatement{#troubleshooting-java-8}
 
@@ -246,7 +246,7 @@ java.lang.Exception: Quickstart requires a Java Specification 11 VM, but your VM
 Quickstart: aborting
 ```
 
-La raison en est que AEM en tant que Cloud Service requiert Java SDK 11 et que vous exécutez une autre version, probablement Java 8. Pour résoudre ce problème, téléchargez et installez [Oracle Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=liste&amp;p.offset=0&amp;p.limit=14).
+Cela est dû au fait que AEM en tant que Cloud Service requiert Java SDK 11 et que vous exécutez une autre version, probablement Java 8. Pour résoudre ce problème, téléchargez et installez [Oracle Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=liste&amp;p.offset=0&amp;p.limit=14).
 Une fois Java SDK 11 installé, vérifiez qu’il s’agit de la version principale en exécutant les éléments suivants à partir de la ligne de commande.
 
 Une fois le SDK Java 11 installé, vérifiez qu’il s’agit de la version principale en exécutant la commande à partir de la ligne de commande :
