@@ -13,7 +13,7 @@ topic: Intégrations, développement
 role: Developer
 level: Intermediate, Experienced
 translation-type: tm+mt
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
 workflow-type: tm+mt
 source-wordcount: '1439'
 ht-degree: 1%
@@ -270,7 +270,7 @@ Appelez le collaborateur à partir de AEM en créant un nouveau service de Profi
 1. Définir le nouveau service
    + __Créer un rendu__ de métadonnées : Basculer vers principal
    + __Point de terminaison :__ `https://...adobeioruntime.net/api/v1/web/wkndAemAssetCompute-0.0.1/metadata-colors`
-      + Il s’agit de l’URL du collaborateur obtenu lors du déploiement [deploy](#deploy) ou à l’aide de la commande `aio app get-url`. Assurez-vous que l’URL pointe vers l’espace de travail approprié en fonction de l’AEM en tant qu’environnement Cloud Service.
+      + Il s&#39;agit de l&#39;URL du collaborateur obtenu lors du [déploiement](#deploy) ou à l&#39;aide de la commande `aio app get-url`. Assurez-vous que l’URL pointe vers l’espace de travail approprié en fonction de l’AEM en tant qu’environnement Cloud Service.
    + __Paramètres de service__
       + Appuyez sur __Paramètre d&#39;Ajoute__.
          + Clé: `colorFamily`
