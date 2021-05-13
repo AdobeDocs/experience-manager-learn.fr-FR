@@ -2,13 +2,12 @@
 title: 'Présentation des fichiers d''InDesign et des modèles de ressources dans AEM Assets '
 description: Ce didacticiel vidéo décrit la définition d’un fichier d’InDesign et toutes les considérations qui l’accompagnent, en vue de son utilisation dans la fonction Modèles de ressources d’AEM Assets.
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: Gestion de contenu
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b4fa992abe22e3a546d651e465d6ffc9e415aee2
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '496'
 ht-degree: 1%
 
 ---
@@ -74,4 +73,4 @@ Fichier de modèle d’InDesign et images prises en charge
 Télécharger [le fichier de modèle d’InDesign et les images prises en charge](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
 * [Téléchargement d’évaluation InDesign CC](https://creative.adobe.com/products/download/indesign)
-* [Téléchargement d’évaluation InDesign Server](https://www.adobe.com/devnet/indesign/indesign-server-trial-downloads.html)
+* [Les clients CC Enterprise peuvent contacter leur gestionnaire de compte pour demander la licence d’évaluation de l’InDesign Server AEM](https://www.adobe.com/products/indesignserver/faq.html)
