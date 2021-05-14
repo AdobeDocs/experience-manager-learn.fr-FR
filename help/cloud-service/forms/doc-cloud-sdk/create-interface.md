@@ -1,16 +1,15 @@
 ---
 title: Créer une interface de service
 description: Définissez les méthodes de l'interface que vous souhaitez exposer.
-solution: Experience Manager, Experience Manager Forms
+solution: Experience Manager
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: cloud-service
 topic: développement
-thumbnail: 331891.jpg
-kt: 7192
-translation-type: tm+mt
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+thumbnail: 7825.jpg
+kt: 7825
+source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
 workflow-type: tm+mt
 source-wordcount: '24'
 ht-degree: 8%
