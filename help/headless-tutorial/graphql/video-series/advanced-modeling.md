@@ -9,11 +9,10 @@ role: Developer
 level: Beginner
 kt: 7620
 thumbnail: 332859.jpg
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: e4abfe07f1b4e67f973f39186aafc33715592b2f
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 1%
+source-wordcount: '106'
+ht-degree: 0%
 
 ---
 
@@ -21,6 +20,12 @@ ht-degree: 1%
 # Modélisation avancée pour GraphQL
 
 Découvrez comment créer des relations entre les modèles de fragments de contenu dans Adobe Experience Manager (AEM) et comment exploiter ces relations dans les requêtes GraphQL.
+
+Dans cette vidéo, vous allez :
+
++ Découvrez comment utiliser les références de fragments de contenu pour lier un ou plusieurs fragments de contenu
++ Découvrez comment créer un lien profond vers d’autres fragments de contenu dans un champ de texte enrichi
++ Création de requêtes GraphQL qui renvoient des données à partir de fragments de contenu référencés
 
 >[!VIDEO](https://video.tv.adobe.com/v/332859/?quality=12&learn=on)
 
