@@ -7,12 +7,11 @@ role: Developer
 level: Beginner, Intermediate
 version: cloud-service
 topic: développement
-thumbnail: 331891.jpg
-kt: 7192
-translation-type: tm+mt
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+thumbnail: 7818.jpg
+kt: 7818
+source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '64'
 ht-degree: 3%
 
 ---
@@ -21,7 +20,11 @@ ht-degree: 3%
 
 Créez une configuration OSGi personnalisée pour capturer les informations d’identification de votre compte document cloud.
 
+
 Pour créer une configuration OSGi personnalisée, nous devons d&#39;abord créer une interface dont les méthodes publiques représenteront les champs de la configuration.
+
+![doc-cloud-config](assets/doc-cloud-configuration.JPG)
+
 
 Créez une interface nommée DocumentCloudConfiguration et collez-y le code suivant.
 
