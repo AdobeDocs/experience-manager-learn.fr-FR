@@ -4,10 +4,9 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: service cloud
 team: TM
-translation-type: tm+mt
-source-git-commit: 98cfc9e007770e7a8291343bdd63fd523f747bb9
+source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '440'
 ht-degree: 30%
 
 ---
@@ -40,7 +39,7 @@ ht-degree: 30%
       + [Configuration des tuyaux](./cloud-manager/devops/configure-pipelines.md)
       + [Intégration continue](./cloud-manager/devops/continuous-integration.md)
       + [Analyser les résultats des tests](./cloud-manager/devops/analyze-test-results.md)
-      + [Configurations du dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
+      + [Configurations de Dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
       + [API de Cloud Manager](./cloud-manager/devops/cloud-manager-apis.md)
 + Configuration de l&#39;Environnement de développement local {#local-development-environment-set-up}
    + [Présentation](./local-development-environment/overview.md)
@@ -96,6 +95,14 @@ ht-degree: 30%
       + [Configuration du panneau Fichiers](./forms/create-first-af/configure-assets-panel.md)
       + [Configuration du panneau début](./forms/create-first-af/configure-start-panel.md)
       + [Ajouter et configurer la barre d’outils](./forms/create-first-af/add-configure-toolbar.md)
+   + API Document Cloud et AEM Forms CS{#doc-cloud-sdk}
+      + [Présentation](./forms/doc-cloud-sdk/introduction.md)
+      + [Créer un projet d&#39;E/S Adobe](./forms/doc-cloud-sdk/create-document-cloud-credentials.md)
+      + [Créer une configuration OSGI](./forms/doc-cloud-sdk/create-doc-cloud-configuration.md)
+      + [Définir l&#39;interface](./forms/doc-cloud-sdk/create-interface.md)
+      + [Interface de mise en oeuvre](./forms/doc-cloud-sdk/implement-interface.md)
+      + [Création d’une partie JSON](./forms/doc-cloud-sdk/get-content-analyzer.md)
+      + [Étape de processus personnalisée](./forms/doc-cloud-sdk/custom-process-step.md)
    + Créer un processus de révision{#create-aem-workflow}
       + [Créer un modèle de processus](./forms/create-aem-workflow/create-workflow.md)
       + [Flux de travail de déclenchement](./forms/create-aem-workflow/configure-af.md)
@@ -110,7 +117,7 @@ ht-degree: 30%
       + [Créer une application connectée](./forms/integrate-with-salesforce/create-connected-app.md)
       + [Création d’un fichier swagger](./forms/integrate-with-salesforce/describe-rest-api.md)
       + [Création d’une source de données](./forms/integrate-with-salesforce/create-data-source.md)
-      + [Créer un modèle de données de formulaire](./forms/integrate-with-salesforce/create-form-data-model.md)
+      + [Création d’un modèle de données de formulaire](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [Envoi du formulaire de test](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Événement de clics de test](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + Extensibilité des Assets compute{#asset-compute}
@@ -133,7 +140,7 @@ ht-degree: 30%
       + [Intégrer à l&#39;AEM](./asset-compute/deploy/processing-profiles.md)
    + Avancé{#advanced}
       + [Travailleurs de métadonnées](./asset-compute/advanced/metadata.md)
-   + [Résolution des incidents](./asset-compute/troubleshooting.md)
+   + [Résolution des problèmes](./asset-compute/troubleshooting.md)
 + Tutorials en plusieurs étapes{#multi-step-tutorials}
    + [Développement AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)
