@@ -9,11 +9,10 @@ role: Developer
 level: Beginner
 kt: 7621
 thumbnail: 332860.jpg
-translation-type: tm+mt
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: e4abfe07f1b4e67f973f39186aafc33715592b2f
 workflow-type: tm+mt
-source-wordcount: '70'
-ht-degree: 1%
+source-wordcount: '114'
+ht-degree: 0%
 
 ---
 
@@ -21,5 +20,12 @@ ht-degree: 1%
 # Création de Requêtes GraphQL
 
 Découvrez comment créer des requêtes GraphQL pour renvoyer du contenu de Adobe Experience Manager (AEM) et comment utiliser l&#39;outil GraphiQL pour tester, affiner et déboguer rapidement des requêtes.
+
+Dans cette vidéo, vous allez :
+
++ Comprendre la puissance du langage GraphQL
++ Découvrez comment requête d’une liste de fragments de contenu et d’un seul fragment de contenu
++ Découvrez comment filtrer et demander des attributs de données spécifiques
++ Découvrez comment installer et utiliser l&#39;outil GraphiQL
 
 >[!VIDEO](https://video.tv.adobe.com/v/332860/?quality=12&learn=on)
