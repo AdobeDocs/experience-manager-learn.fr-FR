@@ -1,8 +1,8 @@
 ---
 title: Projet de l’éditeur SPA | Prise en main de l’éditeur et de l’Angular SPA d’AEM
-description: Découvrez comment utiliser un projet Adobe Experience Manager (AEM) Maven comme point de départ pour une application d'Angular intégrée à AEM Editor.
+description: Apprenez à utiliser un projet Adobe Experience Manager (AEM) Maven comme point de départ pour une application d'Angular intégrée à AEM Éditeur.
 sub-product: sites
-feature: SPA Editor, AEM Project Archetype
+feature: SPA éditeur, AEM Archétype de projet
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -13,18 +13,17 @@ thumbnail: 5309-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 375df47a13b1820911a7ceb73af0dad15c68740e
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 4%
+source-wordcount: '1115'
+ht-degree: 3%
 
 ---
 
 
 # Projet de l&#39;éditeur SPA {#create-project}
 
-Découvrez comment utiliser un projet Adobe Experience Manager (AEM) Maven comme point de départ pour une application d&#39;Angular intégrée à AEM Editor.
+Apprenez à utiliser un projet Adobe Experience Manager (AEM) Maven comme point de départ pour une application d&#39;Angular intégrée à AEM Éditeur.
 
 ## Intention
 
@@ -39,9 +38,9 @@ Dans ce chapitre, un nouveau projet AEM sera déployé, sur la base de l&#39;[AE
 
 *Un message classique de Hello World.*
 
-## Conditions préalables
+## Prérequis
 
-Examinez les outils et les instructions nécessaires pour configurer un [environnement de développement local](overview.md#local-dev-environment). Assurez-vous qu’une nouvelle instance de Adobe Experience Manager, démarrée en mode **auteur**, s’exécute localement.
+Examinez les outils et les instructions nécessaires pour configurer un [environnement de développement local](overview.md#local-dev-environment). Assurez-vous qu’une nouvelle instance d’Adobe Experience Manager, démarrée en mode **auteur**, s’exécute localement.
 
 ## Obtenir le projet
 
@@ -102,9 +101,9 @@ Ensuite, compilez, générez et déployez le code du projet sur une instance loc
 
    ```shell
    $ mvn --version
-    Apache Maven 3.6.2
-    Maven home: /Library/apache-maven-3.6.2
-    Java version: 11.0.4, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home
+   Apache Maven 3.6.2
+   Maven home: /Library/apache-maven-3.6.2
+   Java version: 11.0.4, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home
    ```
 
 3. Exécutez la commande ci-dessous Maven à partir du répertoire `aem-guides-wknd-spa` pour générer et déployer le projet vers AEM :
@@ -122,22 +121,22 @@ Ensuite, compilez, générez et déployez le code du projet sur une instance loc
    Les multiples modules du projet doivent être compilés et déployés en AEM.
 
    ```plain
-    [INFO] ------------------------------------------------------------------------
-    [INFO] Reactor Summary for wknd-spa-angular 1.0.0-SNAPSHOT:
-    [INFO] 
-    [INFO] wknd-spa-angular ................................... SUCCESS [  0.473 s]
-    [INFO] WKND SPA Angular - Core ............................ SUCCESS [ 54.866 s]
-    [INFO] wknd-spa-angular.ui.frontend - UI Frontend ......... SUCCESS [02:10 min]
-    [INFO] WKND SPA Angular - Repository Structure Package .... SUCCESS [  0.694 s]
-    [INFO] WKND SPA Angular - UI apps ......................... SUCCESS [  6.351 s]
-    [INFO] WKND SPA Angular - UI content ...................... SUCCESS [  2.885 s]
-    [INFO] WKND SPA Angular - All ............................. SUCCESS [  1.736 s]
-    [INFO] WKND SPA Angular - Integration Tests Bundles ....... SUCCESS [  2.563 s]
-    [INFO] WKND SPA Angular - Integration Tests Launcher ...... SUCCESS [  1.846 s]
-    [INFO] WKND SPA Angular - Dispatcher ...................... SUCCESS [  0.270 s]
-    [INFO] ------------------------------------------------------------------------
-    [INFO] BUILD SUCCESS
-    [INFO] ------------------------------------------------------------------------
+   [INFO] ------------------------------------------------------------------------
+   [INFO] Reactor Summary for wknd-spa-angular 1.0.0-SNAPSHOT:
+   [INFO] 
+   [INFO] wknd-spa-angular ................................... SUCCESS [  0.473 s]
+   [INFO] WKND SPA Angular - Core ............................ SUCCESS [ 54.866 s]
+   [INFO] wknd-spa-angular.ui.frontend - UI Frontend ......... SUCCESS [02:10 min]
+   [INFO] WKND SPA Angular - Repository Structure Package .... SUCCESS [  0.694 s]
+   [INFO] WKND SPA Angular - UI apps ......................... SUCCESS [  6.351 s]
+   [INFO] WKND SPA Angular - UI content ...................... SUCCESS [  2.885 s]
+   [INFO] WKND SPA Angular - All ............................. SUCCESS [  1.736 s]
+   [INFO] WKND SPA Angular - Integration Tests Bundles ....... SUCCESS [  2.563 s]
+   [INFO] WKND SPA Angular - Integration Tests Launcher ...... SUCCESS [  1.846 s]
+   [INFO] WKND SPA Angular - Dispatcher ...................... SUCCESS [  0.270 s]
+   [INFO] ------------------------------------------------------------------------
+   [INFO] BUILD SUCCESS
+   [INFO] ------------------------------------------------------------------------
    ```
 
    Le profil Maven ***autoInstallSinglePackage*** compile les modules individuels du projet et déploie un package unique sur l’instance AEM. Par défaut, ce package sera déployé sur une instance AEM s’exécutant localement sur le port **4502** et avec les informations d’identification **admin:admin**.
@@ -232,7 +231,7 @@ Ensuite, vérifiez qu’il s’agit d’une application d’une seule page utili
    >
    > Il peut s’avérer utile d’installer une extension de navigateur pour formater automatiquement la sortie JSON.
 
-## Félicitations! {#congratulations}
+## Félicitations !  {#congratulations}
 
 Félicitations, vous venez de créer votre premier projet AEM SPA Editor !
 
