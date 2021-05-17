@@ -4,10 +4,9 @@ breadcrumb-title: Tutoriels d’AEM Foundation
 user-guide-description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation. '
 sub-product: fondation
 index: y
-translation-type: tm+mt
-source-git-commit: 2760064642002a684b3fd70337a81a7d6e28a343
+source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '146'
 ht-degree: 21%
 
 ---
@@ -45,6 +44,6 @@ ht-degree: 21%
    + [Utilisation de l’Assistant SSL](./security/use-the-ssl-wizard.md)
 + Workflow {#workflow}
    + [Utilisation de l’éditeur de flux de travaux](./workflow/use-the-workflow-editor.md)
-   + [Utiliser la gestion du processus](./workflow/use-workflow-management.md)
+   + [Utiliser le processus](./workflow/use-workflow.md)
    + [Utilisation de la boîte de réception](./workflow/use-the-inbox.md)
 
