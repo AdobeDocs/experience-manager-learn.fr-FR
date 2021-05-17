@@ -5,11 +5,10 @@ description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager F
 seo-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation
 role: Leader, Architect, Developer, Administrator, Business Practitioner
 level: Beginner
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 21%
+source-wordcount: '261'
+ht-degree: 22%
 
 ---
 
@@ -20,8 +19,9 @@ Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponib
 
 ## Nouveautés
 
-* **[Utilisation de la gestion du flux de travail dans AEM (vidéo)](./workflow/use-workflow-management.md)**
-   *AEM permet d&#39;obtenir une visibilité sur les workflows en cours d&#39;exécution et facilite la gestion des  [!DNL Workflow] définitions.*
+* **[Utiliser l&#39;AEM de flux de travail (vidéo)](./workflow/use-workflow.md)**
+
+   *AEM Workflow permet de collaborer, de gérer et de traiter du contenu dans AEM.*
 
 * **[Comprendre Cloud Manager pour AEM (Vidéo)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
    *Cloud Manager pour AEM permet une gestion, une inspection et un libre-service aisés des environnements AEM.*
