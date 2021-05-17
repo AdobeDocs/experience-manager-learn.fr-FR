@@ -6,9 +6,8 @@ feature: SPA Éditeur, Composants principaux, API, Développement
 role: Developer, Architect
 level: Beginner
 kt: 7629
-thumbnail: 333181.jpeg
-translation-type: tm+mt
-source-git-commit: e6dc028a120670d34806def36ad200ed161295e1
+thumbnail: 333181.jpg
+source-git-commit: 73c75f8dac85615f4ed2dfdcc2ee4d0e9e5d161a
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 6%
@@ -30,7 +29,7 @@ _Présentation vidéo de la configuration rapide_
 
 Ce didacticiel nécessite les éléments suivants :
 
-+ [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en)
++ [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=fr)
 + [Node.js v14+](https://nodejs.org/en/)
 + [npm v7+](https://www.npmjs.com/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
@@ -82,8 +81,8 @@ Ce didacticiel dépend du projet __WKND 0.3.0+__ (pour le contenu).
 
 Pour effectuer une configuration rapide, AEM packages sont fournis qui contiennent la configuration et le contenu AEM final du didacticiel.
 
-1. [Télécharger `wknd-app.all.x.x.x.zip`](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
-1. [Télécharger `wknd-app.ui.content.sample.x.x.x.zip`](./assets/quick-setup/wknd-app.ui.content.sample-1.0.0.zip)
+1. [Télécharger ](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
+1. [Télécharger ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.0.zip)
 1. Connectez-vous à Package Manager du SDK AEM à l’adresse [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) avec les informations d’identification `admin`.
 1. ____ Télécharger le  `wknd-app.all.x.x.x.zip` téléchargé à l’étape 1
 1. Appuyez sur le bouton __Installer__ pour l&#39;entrée `wknd-app.all.x.x.x.zip`
