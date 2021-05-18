@@ -7,13 +7,12 @@ topics: security, development, content-delivery
 activity: understand
 audience: architect, developer
 doc-type: article
-topic: Security
+topic: Sécurité
 role: Developer
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 1c99c319fba5048904177fc82c43554b0cf0fc15
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '918'
 ht-degree: 1%
 
 ---
@@ -141,7 +140,8 @@ Pour autoriser la mise en cache des en-têtes CORS, ajoutez la configuration sui
 ```
 /cache { 
   ...
-  /clientheaders {
+  /headers {
+      "Origin",
       "Access-Control-Allow-Origin"
       "Access-Control-Expose-Headers"
       "Access-Control-Max-Age"
@@ -155,7 +155,7 @@ Pour autoriser la mise en cache des en-têtes CORS, ajoutez la configuration sui
 
 Pensez à **redémarrer l&#39;application de serveur Web** après avoir apporté des modifications au fichier `dispatcher.any`.
 
-Il est probable que l&#39;effacement complet du cache sera nécessaire pour s&#39;assurer que les en-têtes sont correctement mis en cache lors de la demande suivante après une mise à jour de la configuration `/clientheaders`.
+Il est probable que l&#39;effacement complet du cache sera nécessaire pour s&#39;assurer que les en-têtes sont correctement mis en cache lors de la demande suivante après une mise à jour de la configuration `/cache/headers`.
 
 ## Résolution des problèmes de CORS
 
@@ -170,7 +170,7 @@ La journalisation est disponible sous `com.adobe.granite.cors` :
 * Vérifiez si la demande a été refusée par le gestionnaire CORS et non par l’authentification, le filtre de jeton CSRF, les filtres du répartiteur ou d’autres couches de sécurité.
    * Si le gestionnaire CORS répond par 200, mais que l&#39;en-tête `Access-Control-Allow-Origin` est absent de la réponse, consultez les journaux pour les refus sous [!DNL DEBUG] dans `com.adobe.granite.cors`
 * Si la mise en cache du répartiteur des requêtes [!DNL CORS] est activée
-   * Assurez-vous que la configuration `/clientheaders` est appliquée à `dispatcher.any` et que le serveur Web a bien été redémarré.
+   * Assurez-vous que la configuration `/cache/headers` est appliquée à `dispatcher.any` et que le serveur Web a bien été redémarré.
    * Assurez-vous que le cache a été correctement effacé après toute modification de la configuration d&#39;OSGi ou de dispatcher.any.
 * si nécessaire, vérifiez la présence des informations d’identification d’authentification sur la demande.
 
