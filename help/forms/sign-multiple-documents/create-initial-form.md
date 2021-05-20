@@ -1,7 +1,7 @@
 ---
-title: Créer le formulaire initial pour déclencher le processus
-description: Créez un formulaire initial pour déclencher la notification par courrier électronique pour début du processus de signature.
-feature: Adaptive Forms
+title: Création du formulaire initial pour déclencher le processus
+description: Créez un formulaire initial pour déclencher la notification par courrier électronique pour lancer le processus de signature.
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 kt: 6892
 thumbnail: 6892.jpg
-topic: Development
+topic: Développement
 role: Business Practitioner
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '171'
 ht-degree: 13%
 
 ---
@@ -23,22 +22,22 @@ ht-degree: 13%
 
 # Créer un formulaire initial
 
-Le formulaire initial (Formulaire de refinancement) est utilisé pour signer plusieurs formulaires en déclenchant le flux de travail AEM **Signature de plusieurs Forms**. Vous pouvez saisir les valeurs de votre choix mais vous assurer que les champs suivants sont ajoutés au formulaire.
+Le formulaire initial (Refinance Form) est utilisé pour signer plusieurs formulaires en déclenchant le processus d’AEM **Sign Multiple Forms**. Vous pouvez saisir les valeurs de votre choix mais vous assurer que les champs suivants sont ajoutés au formulaire.
 
 
 
 | Type de champ | Nom | Objectif | Masqué | Valeur par défaut |
 ------------------------|---------------------------------------|--------------------|--------|-----------------
-| TextField | signed | Pour indiquer l’état de la signature | O | N |
-| TextField | guid | Pour identifier un formulaire de manière unique | O | 3 889 |
+| TextField | signed | Pour indiquer l’état de signature | O | N |
+| TextField | guid | Pour identifier un formulaire de manière unique | O | 3889 |
 | TextField | customerName | Pour capturer le nom des clients | N |
-| TextField | customerEmail | Envoi d’une notification par courrier électronique au client | N |
-| Case à cocher | formsToSign | Les éléments identifient les formulaires du package. | N |
+| TextField | customerEmail | Email du client pour envoyer une notification | N |
+| Case à cocher | formsToSign | Les éléments identifient les formulaires dans le module. | N |
 
 
 
-Le formulaire initial doit être configuré pour déclencher un processus AEM appelé **signpleforms**
-Assurez-vous que le chemin d’accès au fichier de données est défini sur **Data.xml**. Cela est très important car l’exemple de code recherche un fichier appelé Data.xml dans la charge utile du processus d’envoi du formulaire.
+Le formulaire initial doit être configuré pour déclencher un processus AEM appelé **signmultipleforms**
+Assurez-vous que le chemin d’accès au fichier de données est défini sur **Data.xml**. Ceci est très important, car l’exemple de code recherche un fichier appelé Data.xml dans la payload du processus d’envoi du formulaire.
 
 ## Assets
 
