@@ -1,18 +1,17 @@
 ---
 title: Balisage
-description: Les balises constituent un outil intégral pour la gestion des ressources dans l’ensemble de la hiérarchie de dossiers des ressources. L’établissement d’une taxonomie du balisage est essentiel pour permettre aux utilisateurs de découvrir et d’organiser des ressources en AEM.
+description: Les balises sont un outil intégral de gestion des ressources dans la hiérarchie de dossiers d’Assets. L’établissement d’une taxonomie du balisage est essentiel pour permettre aux utilisateurs de découvrir et d’organiser des ressources dans AEM.
 sub-product: ressources
-feature: Asset Management
+feature: Gestion des ressources
 version: cloud-service
 kt: 4871
 thumbnail: 34073.jpg
-topic: Content Management
+topic: Gestion de contenu
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '67'
 ht-degree: 7%
 
 ---
@@ -20,6 +19,6 @@ ht-degree: 7%
 
 # Balisage
 
-Les balises constituent un outil intégral pour la gestion des ressources dans l’ensemble de la hiérarchie de dossiers des ressources. L’établissement d’une taxonomie du balisage est essentiel pour permettre aux utilisateurs de découvrir et d’organiser des ressources en AEM.
+Les balises sont un outil intégral de gestion des ressources dans la hiérarchie de dossiers d’Assets. L’établissement d’une taxonomie du balisage est essentiel pour permettre aux utilisateurs de découvrir et d’organiser des ressources dans AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34073/?quality=12&learn=on&hidetitle=true)
