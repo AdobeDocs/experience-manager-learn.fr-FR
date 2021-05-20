@@ -1,33 +1,32 @@
 ---
-title: Graphiques multiséries en AEM Forms
-seo-title: Graphiques multiséries en AEM Forms
-description: Créez un modèle de données de formulaire approprié pour créer des graphiques multiséries dans les documents papier et de canal Web.
-seo-description: Créez un modèle de données de formulaire approprié pour créer des graphiques multiséries dans les documents papier et de canal Web.
-feature: Interactive Communication
+title: Graphiques à séries multiples dans AEM Forms
+seo-title: Graphiques à séries multiples dans AEM Forms
+description: Créez un modèle de données de formulaire approprié pour créer des graphiques à série multiple dans les documents de canal papier et web.
+seo-description: Créez un modèle de données de formulaire approprié pour créer des graphiques à série multiple dans les documents de canal papier et web.
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-topic: Development
+topic: Développement
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '304'
 ht-degree: 1%
 
 ---
 
 
-# Graphiques multiséries
+# Graphiques à séries multiples
 
-AEM Forms 6.5 a introduit la possibilité de créer et de configurer plusieurs graphiques en série. Les graphiques à séries multiples sont généralement utilisés en association avec le type de graphique Ligne, Barre, Colonne. Le graphique suivant est un bon exemple de graphique à séries multiples. Le graphique montre la croissance de 10 000 dollars américains dans 3 fonds mutuels différents sur une période donnée. Pour pouvoir créer et utiliser des graphiques de ce type en AEM Forms, vous devez créer le modèle de données de formulaire approprié.
+AEM Forms 6.5 offre la possibilité de créer et de configurer des graphiques à série multiple. Les graphiques à séries multiples sont généralement utilisés en association avec le type de graphique Ligne,Barre,Colonne . Le graphique suivant est un bon exemple de graphique à série multiple. Le graphique montre une croissance de 10 000 dollars sur une période de temps de 3 fonds communs de placement différents. Pour pouvoir créer et utiliser des graphiques de ce type dans AEM Forms, vous devez créer le modèle de données de formulaire approprié.
 
 ![multisérie](assets/seriescharts.jfif)
 
-Pour créer des graphiques multiséries en AEM Forms, vous devez créer un modèle de données de formulaire approprié avec les entités et associations nécessaires entre les entités. La capture d&#39;écran suivante met en évidence les entités et les associations entre les 3 entités. Au niveau supérieur, nous avons une entité appelée &quot;Organisation&quot;, qui a une association de type &quot;un à plusieurs&quot; avec l&#39;entité du Fonds. L&#39;entité du Fonds, à son tour, a une association de type &quot;un à plusieurs&quot; avec l&#39;entité Performance.
+Pour créer des graphiques à série multiple dans AEM Forms, vous devez créer un modèle de données de formulaire approprié avec les entités et associations nécessaires entre les entités. La capture d&#39;écran suivante présente les entités et les associations entre les 3 entités. Au niveau supérieur, nous avons une entité appelée &quot;Organisation&quot;, qui a une association un-à-multiple avec l&#39;entité du Fonds. L&#39;entité Fond, à son tour, a une association de type &quot;un à plusieurs&quot; avec l&#39;entité Performances.
 
 ![formdatamodel](assets/formdatamodel.jfif)
 
@@ -37,17 +36,17 @@ Pour créer des graphiques multiséries en AEM Forms, vous devez créer un modè
 >[!VIDEO](https://video.tv.adobe.com/v/26352/quality=9)
 
 
-### Configurer des graphiques de série de lignes
+### Configuration de graphiques de séries linéaires
 
 >[!VIDEO](https://video.tv.adobe.com/v/26353?quality=9&learn=on)
 
 
-Pour tester cette fonctionnalité sur votre système, procédez comme suit :
+Pour le tester sur votre système, procédez comme suit :
 
 * [Téléchargez et importez le fichier MutualFundFactSheet.zip à l’aide d’AEM Package Manager.](assets/mutualfundfactsheet.zip)
 * [Téléchargez le fichier SeriesChartSampleData.json sur votre disque dur.](assets/serieschartsampledata.json) Il s’agit des données d’exemple qui seront utilisées pour remplir le graphique.
-* [Accédez à Forms et aux Documents.](https://helpx.adobe.com/aem/forms.html/content/dam/formsanddocuments.html)
-* Sélectionnez délicatement le modèle de communication interactive &quot;MutualFundGrowthFactSheet&quot;.
-* Cliquez sur la Prévisualisation | Télécharger des exemples de données.
+* [Accédez à Forms et Documents.](https://helpx.adobe.com/aem/forms.html/content/dam/formsanddocuments.html)
+* Sélectionnez gentiment le modèle de communication interactive &quot;MutualFundGrowthFactSheet&quot;.
+* Clic sur Aperçu | Télécharger des exemples de données.
 * Accédez au fichier de données d’exemple fourni dans le cadre de cet article.
-* Prévisualisation du canal d&#39;impression de la communication interactive &quot;MutualFundGrowthFactSheet&quot; avec les données d&#39;exemple téléchargées à l&#39;étape précédente.
+* Prévisualisez le canal d’impression de la communication interactive &quot;MutualFundGrowthFactSheet&quot; avec les données d’exemple téléchargées à l’étape précédente.
