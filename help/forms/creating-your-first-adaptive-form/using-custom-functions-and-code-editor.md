@@ -4,7 +4,7 @@ seo-title: Utilisation des fonctions et de l’éditeur de code
 description: Utilisation de fonctions et d’un éditeur de code pour créer des règles de fonctionnement
 seo-description: Utilisation de fonctions et d’un éditeur de code pour créer des règles de fonctionnement
 uuid: 578e91f8-0d93-4192-b7af-1579df2feaf8
-feature: Adaptive Forms
+feature: Formulaires adaptatifs
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,28 +13,27 @@ version: 6.4,6.5
 discoiquuid: f480ef3e-7e38-4a6b-a223-c102787aea7f
 kt: 4270
 thumbnail: 22282.jpg
-topic: Development
+topic: Développement
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 2%
+source-wordcount: '153'
+ht-degree: 1%
 
 ---
 
 
-# Utilisation de fonctions personnalisées et d&#39;un éditeur de code {#using-functions-and-code-editor}
+# Utilisation de fonctions personnalisées et de l’éditeur de code {#using-functions-and-code-editor}
 
-Dans cette partie, nous utiliserons des fonctions personnalisées et l&#39;éditeur de code pour créer des règles de fonctionnement.
+Dans cette partie, nous utiliserons les fonctions personnalisées et l’éditeur de code pour créer des règles de fonctionnement.
 
-vous avez déjà installé [ClientLib avec la fonction personnalisée ](assets/client-libs-and-logo.zip) plus tôt dans ce didacticiel.
+vous avez déjà installé [ClientLib avec la fonction personnalisée](assets/client-libs-and-logo.zip) plus tôt dans ce tutoriel.
 
-En règle générale, une bibliothèque cliente se compose de fichiers CSS et Javascript. Cette bibliothèque cliente contient un fichier javascript qui expose une fonction pour renseigner les valeurs des listes déroulantes.
+En règle générale, une bibliothèque cliente se compose d’un fichier CSS et JavaScript. Cette bibliothèque cliente contient un fichier JavaScript qui expose une fonction permettant de renseigner les valeurs de la liste déroulante.
 
 
-## Fonction permettant de renseigner la Liste déroulante {#function-to-populate-drop-down-list}
+## Fonction à renseigner dans la liste déroulante {#function-to-populate-drop-down-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22282?quality=9&learn=on)
 
@@ -42,7 +41,7 @@ En règle générale, une bibliothèque cliente se compose de fichiers CSS et Ja
 
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=9&learn=on)
 
-#### Valider le panneau {#validate-panels-using-rule-editor}
+#### Validation du panneau {#validate-panels-using-rule-editor}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28409?quality=9&learn=on)
 
@@ -71,10 +70,10 @@ else
 
 Vous pouvez annuler la mise en commentaire de la ligne 1 pour déboguer le code dans la fenêtre du navigateur.
 
-Ligne 4 - Obtenir le panneau actuel
+Ligne 4 - Obtention du panneau actuel
 
 Ligne 5 - Validez le panneau actuel.
 
-Ligne 9 - Si aucune erreur ne se produit, passez au panneau suivant
+Ligne 9 - Si aucune erreur n’est déplacée vers le panneau suivant
 
-Prévisualisation du formulaire et test de la nouvelle fonctionnalité activée.
+Prévisualisez le formulaire et testez la nouvelle fonctionnalité activée.
