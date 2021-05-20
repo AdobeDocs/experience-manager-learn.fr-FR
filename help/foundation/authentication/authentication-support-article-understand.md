@@ -1,8 +1,8 @@
 ---
-title: Comprendre la prise en charge de l’authentification dans AEM
-description: 'Vue consolidée dans les mécanismes d''authentification (et parfois d''autorisation) pris en charge par AEM. '
+title: Présentation de la prise en charge de l’authentification dans AEM
+description: 'Une vue consolidée dans les mécanismes d’authentification (et parfois d’autorisation) pris en charge par AEM. '
 version: 6.3, 6.4, 6.5
-feature: Users and Groups
+feature: 'Utilisateurs et groupes '
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
@@ -11,18 +11,17 @@ kt: 406
 topic: Architecture
 role: Architect
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 12%
+source-wordcount: '142'
+ht-degree: 11%
 
 ---
 
 
-# Comprendre la prise en charge de l&#39;authentification dans AEM 6.x
+# Présentation de la prise en charge de l’authentification dans AEM 6.x
 
-Vue consolidée dans les mécanismes d&#39;authentification (et parfois d&#39;autorisation) pris en charge par AEM.
+Une vue consolidée dans les mécanismes d’authentification (et parfois d’autorisation) pris en charge par AEM.
 
 *Le tableau suivant décrit comment les utilisateurs peuvent s’authentifier dans AEM.*
 
@@ -35,57 +34,57 @@ Vue consolidée dans les mécanismes d&#39;authentification (et parfois d&#39;au
             <td><strong>AEM 6.5</strong></td>
         </tr>
         <tr>
-            <td><strong>AEM en tant que fournisseur d'identité canonique</strong></td>
+            <td><strong>AEM en tant que fournisseur d’identité canonique</strong></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>Authentification de base</td>
-            <td>►</td>
-            <td>►</td>
-            <td>►</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
         </tr>
         <tr>
             <td>Basé sur Forms</td>
-            <td>►</td>
-            <td>►</td>
-            <td>►</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
         </tr>
         <tr>
-            <td>Basé sur un jeton (avec <a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">jeton encapsulé</a>)</td>
-            <td>►</td>
-            <td>►</td>
-            <td>►</td>
+            <td>Jeton basé sur un jeton (avec <a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">jeton encapsulé</a>)</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
         </tr>
         <tr>
-            <td><strong>Système non AEM en tant que fournisseur d'identité canonique</strong></td>
+            <td><strong>Système non AEM comme fournisseur d’identité canonique</strong></td>
             <td></td>
             <td></td>
             <td></td>
             <tr>
                 <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/ldap-config.html" target="_blank">LDAP</a></td>
-                <td>►</td>
-                <td>►</td>
-                <td>►</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
             </tr>
             <tr>
                 <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/single-sign-on.html" target="_blank">Connexion unique (SSO)</a></td>
-                <td>►</td>
-                <td>►</td>
-                <td>►</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
             </tr>
             <tr>
                 <td><a href="https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/saml-2-0-authenticationhandler.html" target="_blank">SAML 2.0</a></td>
-                <td>►</td>
-                <td>►</td>
-                <td>►</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
             </tr>
             <tr>
                 <td><a href="https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html" target="_blank">OAuth 1.0a et 2.0</a></td>
-                <td>►</td>
-                <td>►</td>
-                <td>►</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
             </tr>
             <tr>
                 <td><a href="https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-authenticationhandler/openid-authenticationhandler.html" target="_blank">OpenID</a></td>
@@ -96,4 +95,4 @@ Vue consolidée dans les mécanismes d&#39;authentification (et parfois d&#39;au
     </tbody>
 </table>
 
-⁕ *Fourni par le biais de projets communautaires, mais pas directement soutenu par l&#39;Adobe.*
+⁕ *Fourni via des projets communautaires, mais pas directement pris en charge par l’Adobe.*
