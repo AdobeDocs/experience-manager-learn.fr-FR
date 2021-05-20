@@ -1,10 +1,10 @@
 ---
 title: Service de préremplissage dans Forms adaptatif
 seo-title: Service de préremplissage dans Forms adaptatif
-description: Préremplissage des formulaires adaptatifs en récupérant des données à partir de sources de données d’arrière-plan.
-seo-description: Préremplissage des formulaires adaptatifs en récupérant des données à partir de sources de données d’arrière-plan.
+description: Préremplir les formulaires adaptatifs en récupérant des données à partir de sources de données principales.
+seo-description: Préremplir les formulaires adaptatifs en récupérant des données à partir de sources de données principales.
 sub-product: formulaires
-feature: Adaptive Forms
+feature: Formulaires adaptatifs
 topics: integrations
 audience: developer
 doc-type: article
@@ -12,27 +12,26 @@ activity: implement
 version: 6.4,6.5
 uuid: 26a8cba3-7921-4cbb-a182-216064e98054
 discoiquuid: 936ea5e9-f5f0-496a-9188-1a8ffd235ee5
-topic: Development
+topic: Développement
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '481'
 ht-degree: 7%
 
 ---
 
 
-# Utilisation du service Prefill dans Forms adaptatif
+# Utilisation du service de préremplissage dans Forms adaptatif
 
-Vous pouvez préremplir les champs d’un formulaire adaptatif à l’aide de données existantes. Lorsqu’un utilisateur ouvre un formulaire, les valeurs de ces champs sont préremplies. Il existe plusieurs façons de préremplir les champs de formulaires adaptatifs. Dans cet article, nous allons examiner le préremplissage d’un formulaire adaptatif à l’aide du service de préremplissage AEM Forms.
+Vous pouvez préremplir les champs d’un formulaire adaptatif à l’aide de données existantes. Lorsqu’un utilisateur ouvre un formulaire, les valeurs de ces champs sont préremplies. Il existe plusieurs façons de préremplir des champs de formulaires adaptatifs. Dans cet article, nous allons examiner le préremplissage d’un formulaire adaptatif à l’aide du service de préremplissage AEM Forms.
 
-Pour en savoir plus sur les différentes méthodes de préremplissage des formulaires adaptatifs, [suivez cette documentation](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+Pour en savoir plus sur les différentes méthodes de préremplissage de formulaires adaptatifs, [veuillez suivre cette documentation](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
-Pour préremplir un formulaire adaptatif à l’aide du service de préremplissage, vous devez créer une classe qui implémente l’interface DataProvider. La méthode getPrefillData aura la logique de créer et de renvoyer des données que le formulaire adaptatif utilisera pour préremplir les champs. Cette méthode vous permet de récupérer les données de n’importe quelle source et de renvoyer le flux d’entrée du document de données. L’exemple de code suivant récupère les informations de profil utilisateur de l’utilisateur connecté et construit un document XML dont le flux d’entrée est renvoyé pour être utilisé par les formulaires adaptatifs.
+Pour préremplir un formulaire adaptatif à l’aide du service de préremplissage, vous devez créer une classe qui implémente l’interface DataProvider. La méthode getPrefillData disposera de la logique nécessaire pour créer et renvoyer les données que le formulaire adaptatif utilisera pour préremplir les champs. Dans cette méthode, vous pouvez récupérer les données de n’importe quelle source et renvoyer le flux d’entrée du document de données. L’exemple de code suivant récupère les informations de profil utilisateur de l’utilisateur connecté et construit un document XML dont le flux d’entrée est renvoyé pour être utilisé par les formulaires adaptatifs.
 
-Dans le fragment de code ci-dessous, nous avons une classe qui implémente l&#39;interface DataProvider. Nous obtenons l&#39;accès à l&#39;utilisateur connecté, puis récupérons les informations de profil de l&#39;utilisateur connecté. Nous créons ensuite un document XML avec un élément de noeud racine appelé &quot;data&quot; et ajoutons les éléments appropriés à ce noeud de données. Une fois le document XML créé, le flux d’entrée du document XML est renvoyé.
+Dans le fragment de code ci-dessous, nous avons une classe qui implémente l’interface DataProvider. Nous avons accès à l’utilisateur connecté, puis nous récupérons les informations de profil de l’utilisateur connecté. Nous créons ensuite un document XML avec un élément de noeud racine appelé &quot;data&quot; et ajoutons les éléments appropriés à ce noeud de données. Une fois le document XML construit, le flux d’entrée du document XML est renvoyé.
 
 Cette classe est ensuite transformée en lot OSGi et déployée dans AEM. Une fois le lot déployé, ce service de préremplissage est alors disponible pour être utilisé comme service de préremplissage de votre formulaire adaptatif.
 
@@ -88,13 +87,13 @@ public class PrefillAdaptiveForm implements DataProvider {
 }
 ```
 
-Pour tester cette fonctionnalité sur votre serveur, effectuez les opérations suivantes :
+Pour tester cette fonctionnalité sur votre serveur, procédez comme suit :
 
 * [Téléchargez et extrayez le contenu du fichier zip sur votre ordinateur.](assets/prefillservice.zip)
-* Assurez-vous que les informations [profil de l&#39;utilisateur](http://localhost:4502/libs/granite/security/content/useradmin) sont complétées. Il s’agit d’une condition requise pour que l’échantillon fonctionne. L’exemple ne comporte aucune vérification d’erreur des propriétés de profil d’utilisateur manquantes.
-* Déployez le lot à l’aide de la [console Web ](http://localhost:4502/system/console/bundles) AEM
+* Assurez-vous que les informations de [profil de l’utilisateur](http://localhost:4502/libs/granite/security/content/useradmin) sont entièrement renseignées. Ceci est obligatoire pour que l’échantillon fonctionne. L’exemple ne comporte aucune vérification d’erreur pour les propriétés de profil utilisateur manquantes.
+* Déployez le lot à l’aide de la [console web AEM](http://localhost:4502/system/console/bundles)
 * Créer un formulaire adaptatif à l’aide du schéma XSD
-* Associez &quot;Service de préremplissage personnalisé de formulaires Aem&quot; au service de préremplissage de votre formulaire adaptatif.
+* Associez &quot;Service de préremplissage de formulaire Aem personnalisé&quot; comme service de préremplissage de votre formulaire adaptatif
 * Faire glisser des éléments de schéma vers le formulaire
 * Prévisualiser le formulaire
 
@@ -102,5 +101,5 @@ Pour tester cette fonctionnalité sur votre serveur, effectuez les opérations s
 >
 >Si le formulaire adaptatif est basé sur XSD, assurez-vous que le document XML renvoyé par le service de préremplissage correspond au schéma XSD sur lequel votre formulaire adaptatif est basé.
 >
->Si le formulaire adaptatif n’est pas basé sur XSD, vous devrez lier manuellement les champs. Par exemple, pour lier un champ de formulaire adaptatif à un élément fname dans les données XML, vous utiliserez `/data/fname` dans la référence Lier du champ de formulaire adaptatif.
+>Si le formulaire adaptatif n’est pas basé sur XSD, vous devrez lier manuellement les champs. Par exemple, pour lier un champ de formulaire adaptatif à un élément fname dans les données XML, vous utiliserez `/data/fname` dans la référence de liaison du champ de formulaire adaptatif.
 
