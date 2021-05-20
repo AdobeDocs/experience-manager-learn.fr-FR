@@ -1,9 +1,9 @@
 ---
 title: Utilisation de l’éditeur de page avec AEM Sites
 seo-title: Utilisation de l’éditeur de page avec Adobe Experience Manager Sites
-description: La vidéo suivante présente plusieurs des principales fonctionnalités de l’éditeur Sites Touch-UI de Adobe Experience Manager.
-seo-description: La vidéo suivante présente plusieurs des principales fonctionnalités de l’éditeur Sites Touch-UI de Adobe Experience Manager.
-feature: Page Editor
+description: La vidéo suivante présente plusieurs des principales fonctionnalités de l’éditeur Sites pour les écrans tactiles dans Adobe Experience Manager.
+seo-description: La vidéo suivante présente plusieurs des principales fonctionnalités de l’éditeur Sites pour les écrans tactiles dans Adobe Experience Manager.
+feature: Éditeur de page
 topics: authoring
 audience: author, marketer
 doc-type: feature video
@@ -11,13 +11,12 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4248
 thumbnail: 32011.jpg
-topic: Content Management
+topic: Gestion de contenu
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '246'
 ht-degree: 12%
 
 ---
@@ -25,7 +24,7 @@ ht-degree: 12%
 
 # Utilisation de l’éditeur de page {#using-page-editor-with-aem-sites}
 
-AEM Site est un outil puissant pour la création et la modification de contenu Web. Les outils et fonctionnalités de l’éditeur de page sont accessibles à partir de la barre d’outils de l’interface utilisateur de l’éditeur de page.
+L’éditeur de page d’AEM site est un outil puissant pour créer et modifier du contenu web. Les outils et fonctionnalités de l’éditeur de page sont accessibles à partir de la barre d’outils de l’interface utilisateur de l’éditeur de page.
 
 La vidéo suivante présente les principales fonctionnalités de l’éditeur de page.
 
@@ -33,29 +32,29 @@ La vidéo suivante présente les principales fonctionnalités de l’éditeur de
 
 Les fonctionnalités de l’éditeur de page sont les suivantes :
 
-* Glisser-déposer de composants et de ressources
-* Panneau Arborescence de contenu fournissant un index de tous les composants de la page
-* Le panneau d’informations sur la page vous permet d’accéder à des informations supplémentaires et à des actions rapides pour un auteur de contenu.
-   * Propriétés d’ouverture
-   * Page de lancement
-   * Processus de début
+* Glisser-déposer des composants et des ressources
+* Arborescence de contenu fournissant un index de tous les composants de la page
+* Le panneau Informations sur la page vous donne accès à des informations supplémentaires et à des actions rapides pour un auteur de contenu.
+   * Ouvrir les propriétés
+   * Déployer la page
+   * Démarrer le workflow
    * Verrouiller la page / Déverrouiller la page
-   * Publication/annulation de la publication d’une page
+   * Publier / Annuler la publication d’une page
    * Modifier le modèle
    * Afficher comme publié(e) 
    * Afficher en administrateur
    * Aide
-* Ajout d’icônes de composant et de description au panneau de composant
-* Lien direct permettant de modifier des ressources dans le DAM
-* Émulateur pour la modification de contenu en ligne et une gestion plus rapide des composants sur la grille réactive
+* Ajout des icônes et de la description du composant au panneau du composant
+* Lien direct pour modifier des ressources dans la gestion des ressources numériques
+* Émulateur pour l’édition de contenu intégré et une gestion plus rapide des composants sur la grille réactive
 * Modes de modification de page
    * Mode d’édition
    * Mode Mise en page
    * Mode Développeur
-* Remplir automatiquement et rechercher par mot-clé le champ de formulaire PathFinder
-* Barre d&#39;état du flux de travail pour la page active
+* Remplir automatiquement et rechercher par mot-clé le champ de formulaire pathfinder
+* Barre d’état de workflow de la page active
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Modification de la documentation du contenu de la page](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guide de l&#39;utilisateur de création de sites](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html)
+* [Modification de la documentation sur le contenu de la page](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/authoring/authoring/editing-content.html)
+* [Guide de l’utilisateur pour la création de sites](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html)
