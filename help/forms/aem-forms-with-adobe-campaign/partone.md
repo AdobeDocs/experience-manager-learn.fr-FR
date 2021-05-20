@@ -1,45 +1,44 @@
 ---
-title: 'Génération du jeton Web et du Jeton d''accès JSON '
-seo-title: 'Génération du jeton Web et du Jeton d''accès JSON '
-description: Cet article explique le code nécessaire à la génération de JWT et de Jeton d'accès requis pour effectuer des appels REST à Adobe Campaign Standard.
-seo-description: Cet article explique le code nécessaire à la génération de JWT et de Jeton d'accès requis pour effectuer des appels REST à Adobe Campaign Standard.
+title: 'Génération du jeton web JSON et du jeton d’accès '
+seo-title: 'Génération du jeton web JSON et du jeton d’accès '
+description: Cet article explique le code nécessaire à la génération de JWT et de jeton d’accès nécessaires pour effectuer des appels REST vers Adobe Campaign Standard.
+seo-description: Cet article explique le code nécessaire à la génération de JWT et de jeton d’accès nécessaires pour effectuer des appels REST vers Adobe Campaign Standard.
 uuid: 5b780eee-1e7c-4e1c-a164-49ce64939b91
-feature: Adaptive Forms, Form Data Model
+feature: Forms adaptatif, modèle de données de formulaire
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: cc268946-a7e4-42b3-bfad-5509e215871a
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 1%
+source-wordcount: '267'
+ht-degree: 0%
 
 ---
 
 
-# Génération du jeton Web et du Jeton d&#39;accès JSON {#generating-json-web-token-and-access-token}
+# Génération du jeton Web JSON et du jeton d’accès {#generating-json-web-token-and-access-token}
 
-Cet article explique le code nécessaire à la génération de JWT et de Jeton d&#39;accès requis pour effectuer des appels REST à Adobe Campaign Standard.
+Cet article explique le code nécessaire à la génération de JWT et de jeton d’accès nécessaires pour effectuer des appels REST vers Adobe Campaign Standard.
 
 ## Générer un jeton Web JSON {#generate-json-web-token}
 
-La première étape de l’utilisation de l’API Adobe Campaign consiste à générer des fichiers JWT. Il existe de nombreux exemples de code sur la façon de générer JWT pour ACS. Vous pouvez suivre cet [exemple de code java](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) pour générer JWT.
+La première étape de l’utilisation de l’API Adobe Campaign consiste à générer JWT. Il existe de nombreux exemples de code sur la manière de générer JWT pour ACS. Vous pouvez suivre cet [exemple de code java](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) pour générer JWT.
 
-Pour utiliser l&#39;API ACS avec AEM Forms, nous devons créer JWT dans un lot OSGi. Le fragment de code suivant a été utilisé pour générer des fichiers JWT dans cet exemple de lot OSGI. Les détails de l&#39;instance ACS sont extraits des propriétés de configuration OSGI définies comme illustré ci-dessus.
+Pour utiliser l’API ACS avec AEM Forms, nous devons créer JWT dans un lot OSGi. Le fragment de code suivant a été utilisé pour générer JWT dans cet exemple de lot OSGI. Les détails de l’instance ACS sont récupérés à partir des propriétés de configuration OSGI définies comme illustré ci-dessus.
 
 ![configuration](assets/campaignconfiguration.gif)
 
-**A.**  Les valeurs affichées ici sont des valeurs factices
+**A.** Les valeurs affichées ici sont des valeurs factices.
 
-Le code suivant récupère les détails sur Adobe Campaign Server à partir de la configuration OSGI. Nous créons une clé privée des lignes 80 à 104.
+Le code suivant récupère les détails sur le serveur Adobe Campaign à partir de la configuration OSGI. Nous créons une clé privée des lignes 80 à 104.
 
-Une fois que nous avons la clé privée, nous créons JSON Web Token.
+Une fois que nous avons la clé privée, nous créons le jeton Web JSON.
 
 ```java
 package aemformwithcampaign.core.services.impl;
@@ -248,6 +247,6 @@ public class CampaignServiceImpl implements CampaignService {
  }
 ```
 
-## Générer un Jeton d&#39;accès {#generate-access-token}
+## Générer un jeton d’accès {#generate-access-token}
 
-Nous échangeons ensuite le JWT généré pour un Jeton d&#39;accès en effectuant un appel POST. Ce Jeton d&#39;accès sera ensuite envoyé en tant que clé d&#39;autorisation dans l&#39;en-tête HTTP pour les appels REST suivants
+Nous échangeons ensuite le jeton JWT généré pour un jeton d’accès en effectuant un appel de POST. Ce jeton d’accès sera alors envoyé en tant que clé d’autorisation dans l’en-tête HTTP pour les appels REST suivants
