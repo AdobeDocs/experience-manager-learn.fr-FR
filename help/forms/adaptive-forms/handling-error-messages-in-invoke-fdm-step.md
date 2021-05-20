@@ -1,39 +1,38 @@
 ---
-title: Capturer les messages d’erreur dans le service de modèle de données de formulaire en tant qu’étape du processus
-seo-title: Capturer les messages d’erreur dans le service de modèle de données de formulaire en tant qu’étape du processus
-description: À compter de AEM Forms 6.5.1, nous pouvons désormais capturer les messages d’erreur générés lors de l’utilisation du service de modèle de données de formulaire d’appel comme étape dans AEM Workflow. Workflow.
-seo-description: À compter de AEM Forms 6.5.1, nous pouvons désormais capturer les messages d’erreur générés lors de l’utilisation du service de modèle de données de formulaire d’appel comme étape dans AEM Workflow. Workflow.
+title: Capture des messages d’erreur dans le service de modèle de données de formulaire en tant qu’étape dans le processus
+seo-title: Capture des messages d’erreur dans le service de modèle de données de formulaire en tant qu’étape dans le processus
+description: À compter d’AEM Forms 6.5.1, nous pouvons désormais capturer les messages d’erreur générés lors de l’utilisation du service de modèle de données de formulaire d’appel comme étape dans AEM Workflow. Workflow.
+seo-description: À compter d’AEM Forms 6.5.1, nous pouvons désormais capturer les messages d’erreur générés lors de l’utilisation du service de modèle de données de formulaire d’appel comme étape dans AEM Workflow. Workflow.
 feature: Workflow
 topics: integrations
 audience: developer
 doc-type: article
 activity: setup
 version: 6.5.1,6.5.2
-topic: Development
+topic: Développement
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '288'
 ht-degree: 1%
 
 ---
 
 
-# Capturer les messages d’erreur dans l’étape de service du modèle de données de formulaire d’appel
+# Capture des messages d’erreur dans l’étape Invoquer le service de modèle de données de formulaire
 
-Depuis AEM Forms 6.5.1, nous avons désormais la possibilité de capturer des messages d’erreur et de spécifier des options de validation. L’étape Invoke Form Data Model Service a été améliorée pour offrir les fonctionnalités suivantes.
+À compter d’AEM Forms 6.5.1, nous avons désormais la possibilité de capturer les messages d’erreur et de spécifier les options de validation. L’étape Invoquer le service de modèle de données de formulaire a été améliorée afin de fournir les fonctionnalités suivantes.
 
-* Fourniture d’une option de validation à trois niveaux (&quot;OFF&quot;, &quot;BASIC&quot; et &quot;FULL&quot;) pour gérer les exceptions survenues lors de l’appel du service de modèle de données de formulaire. Les 3 options indiquent successivement une version plus stricte de la vérification des exigences spécifiques à la base de données.
+* Ajout d’une option pour la validation à 3 niveaux (&quot;OFF&quot;, &quot;BASIC&quot; et &quot;FULL&quot;) afin de gérer les exceptions rencontrées lors de l’appel du service de modèle de données de formulaire. Les 3 options indiquent successivement une version plus stricte de la vérification des exigences spécifiques à la base de données.
    ![niveaux de validation](assets/validation-level.PNG)
 
-* Fourniture d’une case à cocher pour personnaliser l’exécution du flux de travaux. Par conséquent, l’utilisateur dispose désormais de la souplesse nécessaire pour procéder à l’exécution du flux de travail, même si l’étape Appeler un modèle de données de formulaire génère des exceptions.
+* Ajout d’une case à cocher pour personnaliser l’exécution du workflow. Par conséquent, l’utilisateur aura désormais la possibilité de poursuivre l’exécution du workflow, même si l’étape Appeler le modèle de données de formulaire renvoie des exceptions.
 
-* Stockage d’informations importantes sur les erreurs survenant en raison d’exceptions de validation. Trois sélecteurs de variables de type Fin automatique ont été incorporés pour sélectionner les variables appropriées pour stocker les variables ErrorCode(String), ErrorMessage(String) et ErrorDetails(JSON). ErrorDetails sera toutefois défini sur null si l&#39;exception n&#39;est pas DermisValidationException.
-   ![capture de messages d’erreur](assets/fdm-error-details.PNG)
+* Stockage d’informations importantes sur le message Erreur résultant d’exceptions de validation. Trois sélecteurs de variable de type Autocomplete ont été ajoutés pour sélectionner les variables appropriées afin de stocker les variables ErrorCode(String), ErrorMessage(String) et ErrorDetails(JSON). ErrorDetails est toutefois défini sur null si l’exception n’est pas une exception DermisValidationException.
+   ![capture des messages d’erreur](assets/fdm-error-details.PNG)
 
-Grâce à ces modifications, l’étape Appeler le service de modèle de données de formulaire s’assure que les valeurs d’entrée respectent les contraintes de données fournies dans le fichier swagger. Par exemple, le message d’erreur suivant est généré lorsque les valeurs accountId et balance ne sont pas conformes aux contraintes de données spécifiées dans le fichier swagger.
+Grâce à ces modifications, l’étape Invoquer le service de modèle de données de formulaire s’assure que les valeurs d’entrée respectent les contraintes de données fournies dans le fichier de sélecteur. Par exemple, le message d’erreur suivant sera généré lorsque les valeurs accountId et balance ne seront pas conformes aux contraintes de données spécifiées dans le fichier swagger.
 
 ```json
 {
