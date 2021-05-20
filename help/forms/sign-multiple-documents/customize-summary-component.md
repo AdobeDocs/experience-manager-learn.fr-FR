@@ -1,7 +1,7 @@
 ---
-title: Personnaliser le composant Résumé
-description: Etendez le composant de l’étape de résumé pour inclure la possibilité de naviguer jusqu’au formulaire suivant dans le package.
-feature: Adaptive Forms
+title: Personnalisation du composant Résumé
+description: Étendez le composant d’étape de résumé pour inclure la possibilité d’accéder au formulaire suivant dans le module.
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,36 +9,35 @@ activity: implement
 version: 6.4,6.5
 kt: 6894
 thumbnail: 6894.jpg
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '180'
 ht-degree: 2%
 
 ---
 
 
-# Personnaliser l&#39;étape de résumé
+# Personnalisation de l’étape de résumé
 
-Le composant d’étape de résumé permet d’afficher le résumé de l’envoi du formulaire avec un lien pour télécharger le formulaire signé. L’étape de résumé est généralement placée dans le dernier panneau du formulaire.
-Dans ce cas d&#39;utilisation, nous avons créé un nouveau composant basé sur le composant Résumé prêt à l&#39;emploi et étendu la capacité à inclure clientlib personnalisé.
+Le composant d’étape Résumé est utilisé pour afficher le résumé de votre envoi de formulaire avec un lien pour télécharger le formulaire signé. L’étape Résumé est généralement placée dans le dernier panneau de votre formulaire.
+Pour les besoins de ce cas d’utilisation, nous avons créé un nouveau composant basé sur le composant Résumé prêt à l’emploi et étendu la fonctionnalité afin d’inclure la bibliothèque cliente personnalisée.
 
-Ce composant est identifié par l’étiquette Signer un formulaire multiple
+Ce composant est identifié par le libellé Signer plusieurs formulaires
 
 La capture d’écran suivante montre le nouveau composant créé pour afficher le message à la fin de la cérémonie de signature.
 
-![composant récapitulatif](assets/summary.PNG)
+![composant de résumé](assets/summary.PNG)
 
 Le nouveau composant est basé sur le composant de résumé prêt à l’emploi.
 ![component-prop](assets/componentprop.PNG)
 
-Nous avons ajouté un bouton pour accéder au formulaire suivant en vue de la signature.
+Nous avons ajouté un bouton pour accéder au formulaire suivant à signer.
 ![template-code](assets/template-code.PNG)
 
-Le fichier summary.jsp contient le code suivant. Il fait référence à la bibliothèque cliente identifiée par l’id de catégorie **getnextform**.
+summary.jsp comporte le code suivant. Il fait référence à la bibliothèque cliente identifiée par l’ID de catégorie **getnextform**
 
 ```java
 <%--
