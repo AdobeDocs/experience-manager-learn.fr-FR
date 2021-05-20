@@ -6,21 +6,20 @@ type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptive Forms
-topic: Development
+feature: Formulaires adaptatifs
+topic: Développement
 kt: 7151
 thumbnail: 331758.jpg
-translation-type: tm+mt
 source-git-commit: 67be45dbd72a8af8b9ab60452ff15081c6f9f192
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 7%
+source-wordcount: '60'
+ht-degree: 5%
 
 ---
 
 
-# Tester la génération de pistes à partir de l&#39;envoi du formulaire
+# Tester la génération de pistes à partir de l’envoi du formulaire
 
-Créez un formulaire adaptatif basé sur le modèle de données du formulaire de force commerciale et testez la création d&#39;un prospect dans Salesforce en envoyant le formulaire.
+Créez un formulaire adaptatif basé sur le modèle de données de formulaire de la force de vente et testez la création d’un prospect dans Salesforce en envoyant le formulaire.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331758?quality=12&learn=on)
