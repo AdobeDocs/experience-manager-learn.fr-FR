@@ -1,6 +1,6 @@
 ---
 title: Utilisation de l’outil de transfert de contenu
-description: L’outil de transfert de contenu est la méthode recommandée pour migrer le contenu d’une version sur site ou hébergée par AMS d’AEM vers une AEM en tant qu’environnement Cloud Service.
+description: L’outil de transfert de contenu est la méthode recommandée pour migrer le contenu d’une version on-premise ou hébergée par AMS d’AEM vers un environnement AEM en tant qu’environnement Cloud Service.
 version: cloud-service
 doc-type: technical-video
 topics: migration
@@ -12,10 +12,9 @@ thumbnail: kt-5352.jpg
 topic: Migration
 role: Architect, Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '84'
 ht-degree: 16%
 
 ---
@@ -23,7 +22,7 @@ ht-degree: 16%
 
 # Utilisation de l’outil de transfert de contenu
 
-L’outil de transfert de contenu est la méthode recommandée pour migrer le contenu d’une version sur site ou hébergée par AMS d’AEM vers une AEM en tant qu’environnement Cloud Service.
+L’outil de transfert de contenu est la méthode recommandée pour migrer le contenu d’une version on-premise ou hébergée par AMS d’AEM vers un environnement AEM en tant qu’environnement Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
