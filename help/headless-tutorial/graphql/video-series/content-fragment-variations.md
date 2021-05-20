@@ -1,9 +1,9 @@
 ---
 title: Variations de fragments de contenu
-description: Découvrez comment créer des variantes de fragments de contenu et explorer certains cas d’utilisation courants.
+description: Découvrez comment créer des variantes de fragments de contenu et explorez certains cas d’utilisation courants.
 sub-product: ressources
 version: cloud-service
-topic: Sans tête, Gestion de contenu
+topic: Sans affichage, gestion de contenu
 feature: Fragments de contenu, API GraphQL
 role: Developer
 level: Beginner
@@ -19,12 +19,12 @@ ht-degree: 1%
 
 # Variations de fragments de contenu
 
-Découvrez comment créer des variantes de fragments de contenu et explorer certains cas d’utilisation courants.
+Découvrez comment créer des variantes de fragments de contenu et explorez certains cas d’utilisation courants.
 
 Dans cette vidéo, vous allez :
 
-+ Découvrez comment créer une variante d’un fragment de contenu
-+ Découvrez comment utiliser les variations dans un scénario réel
++ Découvrez comment créer une variation d’un fragment de contenu
++ Découvrez comment les variations peuvent être utilisées dans un scénario réel
 + Examinez la syntaxe GraphQL pour demander une variation spécifique.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333295/?quality=12&learn=on)
