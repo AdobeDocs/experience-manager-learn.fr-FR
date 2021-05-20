@@ -1,10 +1,10 @@
 ---
-title: Ajouter des composants au panneau Personnes
-seo-title: Ajouter des composants au panneau Personnes
-description: Configurez le panneau Personnes en ajoutant le fragment Détails de l’épouse. Une règle est créée pour afficher le fragment de détails sur le conjoint si le statut matrimonial du demandeur est marié.
-seo-description: Configurez le panneau Personnes en ajoutant le fragment Détails de l’épouse. Une règle est créée pour afficher le fragment de détails sur le conjoint si le statut matrimonial du demandeur est marié.
+title: Ajout de composants au panneau Personnes
+seo-title: Ajout de composants au panneau Personnes
+description: Configurez le panneau Personnes en ajoutant le fragment Détails de l’épouse . Une règle est créée pour afficher le fragment de détails du conjoint si le statut marital du demandeur est marié.
+seo-description: Configurez le panneau Personnes en ajoutant le fragment Détails de l’épouse . Une règle est créée pour afficher le fragment de détails du conjoint si le statut marital du demandeur est marié.
 uuid: be5d2cff-797b-44ea-90e9-2423f1ec8983
-feature: Adaptive Forms
+feature: Formulaires adaptatifs
 topics: authoring
 audience: developer
 doc-type: tutorial
@@ -13,21 +13,20 @@ version: 6.4,6.5
 kt: 4210
 thumbail: 28385.jpg
 discoiquuid: 520c8633-925f-4d3f-b800-ea34710f68d7
-topic: Development
+topic: Développement
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 3%
+source-wordcount: '114'
+ht-degree: 2%
 
 ---
 
 
-# Ajouter des composants au panneau Personnes {#adding-components-to-people-panel}
+# Ajout de composants au panneau Personnes {#adding-components-to-people-panel}
 
-Configurez le panneau Personnes en ajoutant le fragment Détails de l’épouse. Une règle est créée pour afficher le fragment de détails sur le conjoint si le statut matrimonial du demandeur est marié.
+Configurez le panneau Personnes en ajoutant le fragment Détails de l’épouse . Une règle est créée pour afficher le fragment de détails du conjoint si le statut marital du demandeur est marié.
 
 **Configuration du panneau Personnes dans AEM Forms 6.3 et 6.4**
 
@@ -37,7 +36,7 @@ Configurez le panneau Personnes en ajoutant le fragment Détails de l’épouse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28385)
 
-**Règles des détails du conjoint**
+**Règles de détails du conjoint**
 
 >[!VIDEO](https://video.tv.adobe.com/v/22195?quality=9&learn=on)
 
