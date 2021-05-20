@@ -1,16 +1,15 @@
 ---
 title: Utilisation de vidéos Dynamic Media 360 et de miniatures vidéo personnalisées avec AEM Assets
-description: Les améliorations apportées à Dynamic Media Viewer dans AEM version 6.5 incluent la prise en charge du rendu vidéo 360, 360 lecteurs de médias (video360Social et video360VR) et la possibilité de sélectionner des miniatures vidéo personnalisées.
+description: Les améliorations apportées à la visionneuse Dynamic Media dans AEM 6.5 incluent la prise en charge du rendu vidéo 360, des visionneuses de médias 360 (video360Social et video360VR) et la possibilité de sélectionner des miniatures vidéo personnalisées.
 sub-product: dynamic-media
-feature: Video Profiles
+feature: Profils vidéo
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: Gestion de contenu
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '399'
 ht-degree: 5%
 
 ---
@@ -18,38 +17,38 @@ ht-degree: 5%
 
 # Utilisation de vidéos Dynamic Media 360 et de miniatures vidéo personnalisées avec AEM Assets
 
-Les améliorations apportées à Dynamic Media Viewer dans AEM version 6.5 incluent la prise en charge du rendu vidéo 360, 360 lecteurs de médias (video360Social et video360VR) et la possibilité de sélectionner des miniatures vidéo personnalisées.
+Les améliorations apportées à la visionneuse Dynamic Media dans AEM 6.5 incluent la prise en charge du rendu vidéo 360, des visionneuses de médias 360 (video360Social et video360VR) et la possibilité de sélectionner des miniatures vidéo personnalisées.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26391?quality=9&learn=on)
 
 >[!NOTE]
 >
->La vidéo suppose que votre instance AEM s’exécute en mode Dynamic Media S7.  [Vous trouverez ici](https://helpx.adobe.com/fr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html) des instructions sur la configuration de l&#39;AEM avec Dynamic Media. Lorsque vous téléchargez une vidéo, Dynamic Media traite par défaut le métrage sous la forme d’une vidéo de 360, si son rapport L/H est de 2:1. c&#39;est-à-dire que le rapport largeur/hauteur est de 2:1.
+>La vidéo suppose que votre instance AEM est en cours d’exécution en mode Dynamic Media S7.  [Vous trouverez des instructions sur la configuration d’AEM avec Dynamic Media ici](https://helpx.adobe.com/fr/experience-manager/6-3/assets/using/config-dynamic-fp-14410.html). Lorsque vous téléchargez une vidéo, Dynamic Media traite par défaut la vidéo sous la forme d’une vidéo 360, avec un rapport largeur/hauteur de 2:1. c’est-à-dire que le rapport largeur/hauteur est de 2:1.
 
 >[!NOTE]
 >
->Les composants média Dynamic Media 360 ne prennent en charge que 360 vidéos.
+>Les composants Dynamic Media 360 Media prennent uniquement en charge les vidéos 360.
 
 ## Vidéos Dynamic Media 360
 
-Les vidéos à 360 degrés, également connues sous le nom de vidéos sphériques, sont des enregistrements vidéo où une vue dans toutes les directions est enregistrée en même temps, filmée à l&#39;aide d&#39;une caméra omnidirectionnelle ou d&#39;une collection de caméras. Lors de la lecture sur un écran plat, l’utilisateur contrôle la direction d’affichage et la lecture sur des périphériques mobiles utilise généralement un contrôle gyroscopique intégré.  Il vous permet de dépasser les limites de la photographie unique. Les marketeurs peuvent offrir aux utilisateurs une expérience conviviale à l’aide de 360 vidéos.  Commençons. Le critère du format d’image panoramique peut être modifié dans la configuration DMS7 de la société en spécifiant la propriété de doublon s7PanoramicAR à l’adresse /conf/global/settings/cloudconfigs/dmscene7/jcr:content.
+Les vidéos 360 degrés, également appelées vidéos sphériques, sont des enregistrements vidéo où une vue dans toutes les directions est enregistrée en même temps, tournée à l’aide d’une caméra omnidirectionnelle ou d’une collection de caméras. Lors de la lecture sur un écran plat, l’utilisateur contrôle la direction de l’affichage, tandis que la lecture sur les appareils mobiles utilise généralement une commande de gyroscope intégrée.  Il vous permet de vous étendre au-delà des limites de la photographie unique. Les marketeurs peuvent offrir aux utilisateurs une expérience attrayante grâce à des vidéos 360.  Commençons. Le critère de format d’image panoramique peut être modifié dans la configuration DMS7 de l’entreprise en spécifiant la propriété double s7PanoramicAR à /conf/global/settings/cloudconfigs/dmscene7/jcr:content.
 
 ## Vidéos Dynamic Media 360
 
-La vidéo Dynamic Media prend désormais en charge la possibilité de sélectionner une miniature personnalisée pour votre vidéo. Un utilisateur peut sélectionner un fichier existant en AEM Assets ou sélectionner une image vidéo comme miniature.
+La vidéo Dynamic Media prend désormais en charge la possibilité de sélectionner une miniature personnalisée pour votre vidéo. Un utilisateur peut sélectionner une ressource existante dans AEM Assets ou sélectionner une image vidéo comme miniature.
 
-## Visionneuses de supports dynamiques 360
+## Visionneuses Dynamic 360 Media
 
 <table> 
  <tbody>
    <tr>
       <td> </td>
-      <td>**Visionneuse vidéo 360Social**</td>
-      <td>**Visionneuse vidéo 360VR**</td>
+      <td>**Visionneuse de vidéos 360Social**</td>
+      <td>**Visionneuse Video360VR**</td>
    </tr>
    <tr>
       <td>Mode d’exécution Dynamic Media</td>
-      <td>Mode Dynamic Media uniquement</td>
+      <td>Mode Scene7 Dynamic Media uniquement</td>
       <td>Mode Scene7 Dynamic Media uniquement<br>
          <br>
       </td>
@@ -57,11 +56,11 @@ La vidéo Dynamic Media prend désormais en charge la possibilité de sélection
    <tr>
       <td>Exemple d’utilisation </td>
       <td>
-         <p>Pour les sites Web et les périphériques qui ne prennent pas en charge le gyroscope</p>
+         <p>Pour les sites web et les appareils qui ne prennent pas en charge le gyroscope</p>
          <p> </p>
       </td>
       <td>
-         <p>Fournit une expérience de réalité virtuelle pour un périphérique qui prend en charge le gyroscope </p>
+         <p>Offre une expérience de réalité virtuelle à un appareil prenant en charge le gyroscope </p>
       </td>
    </tr>
    <tr>
@@ -75,17 +74,17 @@ La vidéo Dynamic Media prend désormais en charge la possibilité de sélection
       <td>Oui</td>
    </tr>
    <tr>
-      <td>Point de navigation de la vue</td>
+      <td>Navigation dans le point de vue</td>
       <td>
          <ul>
-            <li>Glissement de la souris (sur les systèmes de bureau)</li>
-            <li>Glissement (périphériques tactiles)</li>
+            <li>Faites glisser la souris (sur les systèmes de bureau)</li>
+            <li>Balayage (appareils tactiles)</li>
          </ul>
       </td>
       <td>
          <ul>
             <li>Les options de souris et de glisser sont désactivées.</li>
-            <li>Utilise un gyroscope intégré</li>
+            <li>Utilisation d’un gyroscope intégré</li>
          </ul>
       </td>
    </tr>
