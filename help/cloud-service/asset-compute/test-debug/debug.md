@@ -1,6 +1,6 @@
 ---
-title: Débogage d’un intervenant d’Asset compute
-description: Les travailleurs d'Asset compute peuvent être débogués de plusieurs manières, des instructions simples du journal de débogage, au code VS joint en tant que débogueur distant, à l'extraction des journaux pour les activations dans Adobe I/O Runtime initiée à partir d'AEM en tant que Cloud Service.
+title: Débogage d’un Asset compute Worker
+description: Les objets Worker Asset compute peuvent être débogués de plusieurs façons, depuis des instructions de journal de débogage simples, jusqu’au code VS joint en tant que débogueur distant, jusqu’à l’extraction des journaux pour les activations dans Adobe I/O Runtime initiée à partir d’AEM en tant que Cloud Service.
 feature: Microservices Asset compute
 topics: renditions, development
 version: cloud-service
@@ -12,7 +12,6 @@ thumbnail: 40383.jpg
 topic: Intégrations, développement
 role: Developer
 level: Intermediate, Experienced
-translation-type: tm+mt
 source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
 workflow-type: tm+mt
 source-wordcount: '623'
@@ -21,51 +20,51 @@ ht-degree: 0%
 ---
 
 
-# Débogage d’un intervenant d’Asset compute
+# Débogage d’un Asset compute Worker
 
-Les travailleurs d&#39;Asset compute peuvent être débogués de plusieurs manières, des instructions simples du journal de débogage, au code VS joint en tant que débogueur distant, à l&#39;extraction des journaux pour les activations dans Adobe I/O Runtime initiée à partir d&#39;AEM en tant que Cloud Service.
+Les objets Worker Asset compute peuvent être débogués de plusieurs façons, depuis des instructions de journal de débogage simples, jusqu’au code VS joint en tant que débogueur distant, jusqu’à l’extraction des journaux pour les activations dans Adobe I/O Runtime initiée à partir d’AEM en tant que Cloud Service.
 
 ## Journalisation
 
-La forme la plus élémentaire de débogage des travailleurs d&#39;Asset compute utilise les instructions traditionnelles `console.log(..)` dans le code de travail. L&#39;objet JavaScript `console` est implicite et global. Il n&#39;est donc pas nécessaire de l&#39;importer ni de l&#39;exiger, car il est toujours présent dans tous les contextes.
+La forme la plus élémentaire de débogage des objets Worker Asset compute utilise les instructions `console.log(..)` traditionnelles dans le code du programme de travail. L’objet JavaScript `console` est un objet global implicite. Il n’est donc pas nécessaire de l’importer ni de l’exiger, car il est toujours présent dans tous les contextes.
 
-Les instructions de journal suivantes peuvent faire l’objet d’une révision différente en fonction de la manière dont le travailleur d’Asset compute est exécuté :
+Ces instructions de journal peuvent être examinées différemment selon la manière dont le programme de travail d’Asset compute est exécuté :
 
-+ À partir de `aio app run`, les journaux s&#39;impriment en sortie standard et les [Journaux d&#39;Activation de l&#39;outil de développement ](../develop/development-tool.md) 
-   ![application aio exécuter console.log(..)](./assets/debug/console-log__aio-app-run.png)
-+ De `aio app test`, les journaux s&#39;impriment dans `/build/test-results/test-worker/test.log`
++ À partir de `aio app run`, consigne l’impression en sortie standard et les [journaux d’activation de l’outil de développement ](../develop/development-tool.md)
+   ![l’application aio run console.log(...)](./assets/debug/console-log__aio-app-run.png)
++ À partir de `aio app test`, consigne l’impression sur `/build/test-results/test-worker/test.log`
    ![aio app test console.log(...)](./assets/debug/console-log__aio-app-test.png)
-+ À l&#39;aide de `wskdebug`, consigne les instructions imprimées dans la console de débogage du code VS (Vue > Console de débogage), hors ligne
++ À l’aide de `wskdebug`, consigne les instructions imprimées dans la console de débogage du code VS (Vue > Console de débogage), en standard
    ![wskdebug console.log(...)](./assets/debug/console-log__wskdebug.png)
-+ À l&#39;aide de `aio app logs`, les instructions de journal s&#39;impriment dans la sortie du journal des activations.
++ À l’aide de `aio app logs`, les instructions du journal sont imprimées dans la sortie du journal d’activation.
 
-## Débogage à distance via un débogueur joint
+## Débogage à distance via le débogueur joint
 
 >[!WARNING]
 >
->Utiliser Microsoft Visual Studio Code 1.48.0 ou version ultérieure pour la compatibilité avec wskdebug
+>Utilisation de Microsoft Visual Studio Code 1.48.0 ou version ultérieure pour la compatibilité avec wskdebug
 
-Le module npm [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) prend en charge l&#39;association d&#39;un débogueur aux travailleurs d&#39;Asset compute, y compris la possibilité de définir des points d&#39;arrêt dans le code VS et de parcourir le code.
+Le module npm [wskdebug](https://www.npmjs.com/package/@openwhisk/wskdebug) prend en charge l’association d’un débogueur aux objets Worker Asset compute, notamment la possibilité de définir des points d’arrêt dans VS Code et de parcourir le code.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40383/?quality=12&learn=on)
 
-_Clic publicitaire du débogage d’un intervenant d’Asset compute à l’aide de wskdebug (sans audio)_
+_Clic publicitaire de débogage d’un objet Worker Asset compute à l’aide de wskdebug (pas d’audio)_
 
-1. Assurez-vous que les modules [wskdebug](../set-up/development-environment.md#wskdebug) et [ngrok](../set-up/development-environment.md#ngork) npm sont installés.
-1. Assurez-vous que [Docker Desktop et les images Docker prises en charge](../set-up/development-environment.md#docker) sont installés et en cours d&#39;exécution.
-1. Fermez toutes les instances principales en cours d’exécution de l’outil de développement.
-1. Déployez le code le plus récent à l’aide de `aio app deploy` et enregistrez le nom de l’action déployée (nom compris entre `[...]`). Elle sera utilisée pour mettre à jour le `launch.json` à l&#39;étape 8.
+1. Vérifiez que les modules npm [wskdebug](../set-up/development-environment.md#wskdebug) et [ngrok](../set-up/development-environment.md#ngork) et npm sont installés.
+1. Vérifiez que [Docker Desktop et les images Docker prises en charge](../set-up/development-environment.md#docker) sont installés et en cours d’exécution.
+1. Fermez toutes les instances principales de l’outil de développement.
+1. Déployez le code le plus récent à l’aide de `aio app deploy` et enregistrez le nom de l’action déployée (nom entre `[...]`). Elle sera utilisée pour mettre à jour `launch.json` à l’étape 8.
 
    ```
    ℹ Info: Deploying package [wkndAemAssetCompute-0.0.1]...
    ```
 
 
-1. Début d&#39;une nouvelle instance de l&#39;outil de développement d&#39;Asset compute à l&#39;aide de la commande `npx adobe-asset-compute devtool`
-1. Dans le code VS, appuyez sur l’icône Débogage dans le volet de navigation de gauche.
-   + Si vous y êtes invité, appuyez sur __créer un fichier launch.json > Node.js__ pour créer un nouveau fichier `launch.json`.
-   + Sinon, appuyez sur l&#39;icône __Engrenage__ à droite de la liste déroulante __Programme de lancement__ pour ouvrir l&#39;élément `launch.json` existant dans l&#39;éditeur.
-1. Ajoutez la configuration d’objet JSON suivante sur le tableau `configurations` :
+1. Démarrez une nouvelle instance de l’outil de développement d’Asset compute à l’aide de la commande `npx adobe-asset-compute devtool`
+1. Dans VS Code, appuyez sur l’icône Débogage dans le volet de navigation de gauche.
+   + Si vous y êtes invité, appuyez sur __créer un fichier launch.json > Node.js__ pour créer un fichier `launch.json`.
+   + Sinon, appuyez sur l’icône __Engrenage__ à droite du menu déroulant __Lancer le programme__ pour ouvrir la balise `launch.json` existante dans l’éditeur.
+1. Ajoutez la configuration d’objet JSON suivante au tableau `configurations` :
 
    ```json
    {
@@ -88,29 +87,29 @@ _Clic publicitaire du débogage d’un intervenant d’Asset compute à l’aide
    ```
 
 1. Sélectionnez le nouveau __wskdebug__ dans la liste déroulante.
-1. Appuyez sur le bouton vert __Exécuter__ à gauche de la liste déroulante __wskdebug__.
-1. Ouvrez `/actions/worker/index.js` et appuyez sur à gauche des numéros de ligne pour ajouter des points de rupture 1. Accédez à la fenêtre du navigateur Web de l&#39;outil de développement d&#39;Asset compute ouverte à l&#39;étape 6.
+1. Appuyez sur le bouton vert __Exécuter__ à gauche de la liste déroulante __wskdebug__ .
+1. Ouvrez `/actions/worker/index.js` et appuyez à gauche des numéros de ligne pour ajouter les points de rupture 1. Accédez à la fenêtre du navigateur Web de l’outil de développement Asset compute ouverte à l’étape 6.
 1. Appuyez sur le bouton __Exécuter__ pour exécuter le programme de travail.
 1. Revenez au code VS, à `/actions/worker/index.js` et parcourez le code.
-1. Pour quitter l&#39;outil de développement débogage, appuyez sur `Ctrl-C` dans le terminal qui a exécuté la commande `npx adobe-asset-compute devtool` à l&#39;étape 6.
+1. Pour quitter l’outil de développement débogage, appuyez sur `Ctrl-C` dans le terminal qui a exécuté la commande `npx adobe-asset-compute devtool` à l’étape 6.
 
 ## Accès aux journaux à partir de Adobe I/O Runtime{#aio-app-logs}
 
-[L&#39;AEM en tant que Cloud Service mobilise les travailleurs d&#39;Asset compute via les ](../deploy/processing-profiles.md) profils de traitement en les appelant directement dans Adobe I/O Runtime. Comme ces invocations n&#39;impliquent pas le développement local, leurs exécutions ne peuvent pas être déboguées à l&#39;aide d&#39;outils locaux tels que Asset compute Development Tool ou wskdebug. A la place, l’interface de ligne de commande de l’Adobe I/O peut être utilisée pour récupérer les journaux du collaborateur exécuté dans un espace de travail particulier de Adobe I/O Runtime.
+[AEM en tant que Cloud Service exploite les objets Worker d’Asset compute via les ](../deploy/processing-profiles.md) profils de traitement en les appelant directement dans Adobe I/O Runtime. Comme ces appels n’impliquent pas de développement local, leurs exécutions ne peuvent pas être déboguées à l’aide d’outils locaux tels que l’outil de développement d’Asset compute ou wskdebug. Au lieu de cela, l’interface de ligne de commande de l’Adobe I/O peut être utilisée pour récupérer les journaux du programme de travail exécuté dans un espace de travail particulier de Adobe I/O Runtime.
 
-1. Assurez-vous que les [variables d&#39;environnement propres à l&#39;espace de travail](../deploy/runtime.md) sont définies via `AIO_runtime_namespace` et `AIO_runtime_auth`, en fonction de l&#39;espace de travail nécessitant un débogage.
-1. Dans la ligne de commande, exécutez `aio app logs`
-   + Si l&#39;espace de travail génère un trafic important, augmentez le nombre de journaux d&#39;activation à l&#39;aide de l&#39;indicateur `--limit` :
+1. Vérifiez que les [variables d’environnement spécifiques à l’espace de travail](../deploy/runtime.md) sont définies via `AIO_runtime_namespace` et `AIO_runtime_auth`, en fonction de l’espace de travail nécessitant un débogage.
+1. Sur la ligne de commande, exécutez `aio app logs`
+   + Si l’espace de travail génère un trafic important, développez le nombre de journaux d’activation à l’aide de l’indicateur `--limit` :
       `$ aio app logs --limit=25`
-1. Les journaux d&#39;activations les plus récents (jusqu&#39;aux `--limit` fournis) seront renvoyés en tant que sortie de la commande pour révision.
+1. Les journaux d’activation les plus récents (jusqu’aux `--limit` fournis) seront renvoyés comme sortie de la commande pour révision.
 
    ![journaux de l’application aio](./assets/debug/aio-app-logs.png)
 
 ## Résolution des problèmes
 
-+ [Le débogueur n’est pas joint](../troubleshooting.md#debugger-does-not-attach)
-+ [Points d’arrêt non suspendus](../troubleshooting.md#breakpoints-no-pausing)
++ [Debugger ne se joint pas](../troubleshooting.md#debugger-does-not-attach)
++ [Points d’arrêt en pause](../troubleshooting.md#breakpoints-no-pausing)
 + [Débogueur de code VS non joint](../troubleshooting.md#vs-code-debugger-not-attached)
-+ [Débogueur de code VS attaché après le début de l&#39;exécution du programme de travail](../troubleshooting.md#vs-code-debugger-attached-after-worker-execution-began)
-+ [Le programme de travail expire lors du débogage](../troubleshooting.md#worker-times-out-while-debugging)
-+ [Impossible d&#39;arrêter le processus de débogage](../troubleshooting.md#cannot-terminate-debugger-process)
++ [Débogueur VS Code attaché après le début de l’exécution du programme de travail](../troubleshooting.md#vs-code-debugger-attached-after-worker-execution-began)
++ [Le traitement expire lors du débogage](../troubleshooting.md#worker-times-out-while-debugging)
++ [Impossible d’arrêter le processus de débogage](../troubleshooting.md#cannot-terminate-debugger-process)
