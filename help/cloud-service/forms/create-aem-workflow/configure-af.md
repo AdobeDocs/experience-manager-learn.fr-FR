@@ -6,22 +6,21 @@ type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: cloud-service
-feature: Adaptive Forms
-topic: Development
+feature: Formulaires adaptatifs
+topic: Développement
 kt: 7425
 thumbnail: 332435.pg
-translation-type: tm+mt
 source-git-commit: 27f21bb9c1b905a2100a5013fe3b75760b9d6821
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 10%
+source-wordcount: '44'
+ht-degree: 6%
 
 ---
 
 
 # Configuration d’un formulaire adaptatif pour déclencher le processus
 
-Créez un modèle de processus à l’aide des composants de processus AEM Forms. Utilisez le composant Ou-Fractionner pour imbriquer le flux de travail en fonction de la valeur de la variable de revenu total.
+Créez un modèle de workflow à l’aide des composants de workflow AEM Forms. Utilisez le composant Division ou pour branche le workflow en fonction de la valeur de la variable de revenu total.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332435?quality=12&learn=on)
 
