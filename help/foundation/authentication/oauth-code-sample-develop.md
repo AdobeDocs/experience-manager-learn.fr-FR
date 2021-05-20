@@ -1,38 +1,37 @@
 ---
-title: Développer des échelles OAuth en AEM
-description: L’application d’extension OAuth Scopes permet le contrôle d'accès de ressources provenant d’une application cliente autorisée par un utilisateur final. Le diagramme ci-dessous illustre le flux de requêtes dans le contexte de l'AEM.
+title: Développement de périmètres OAuth dans AEM
+description: Adobe Experience Manager des étendues OAuth extensibles permet un contrôle d’accès des ressources provenant d’une application cliente autorisée par un utilisateur final. Le diagramme ci-dessous illustre le flux de requêtes dans le contexte d’AEM.
 version: 6.3, 6.4, 6.5
-feature: Users and Groups
+feature: 'Utilisateurs et groupes '
 topics: authentication, security
 activity: develop
 audience: developer
 doc-type: code
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '183'
 ht-degree: 3%
 
 ---
 
 
-# Développement d’étendues OAuth
+# Développement des périmètres OAuth
 
-L’application d’étendues OAuth extensibles permet d’obtenir du contrôle d&#39;accès pour les ressources provenant d’une application cliente autorisée par un utilisateur final. Le diagramme ci-dessous illustre le flux de requêtes dans le contexte de l&#39;AEM.
+Adobe Experience Manager des portées OAuth extensibles permettent un contrôle d’accès des ressources provenant d’une application cliente autorisée par un utilisateur final. Le diagramme ci-dessous illustre le flux de requêtes dans le contexte d’AEM.
 
-![Flux d&#39;étendues d&#39;eau](./assets/oauth-code-sample-develop/oauth-scopes-flow.png)
+![Flux de périmètres Oauth](./assets/oauth-code-sample-develop/oauth-scopes-flow.png)
 
-AEM fournit trois étendues :
+AEM fournit trois portées :
 
 * Profil
-* Accès hors connexion
+* Accès hors ligne
 * Répliquer
 
-AEM étendues OAuth extensibles permettent de définir d’autres étendues personnalisées. Par exemple, une portée personnalisée peut être développée et déployée sur AEM qui permet à une application mobile autorisée via OAuth d’être limitée à la lecture, mais pas à l’écriture de ressources.
+AEM les portées OAuth extensibles permettent de définir d’autres portées personnalisées. Par exemple, une portée personnalisée peut être développée et déployée vers AEM qui permet à une application mobile autorisée via OAuth d’être limitée à la lecture, mais pas à l’écriture de ressources.
 
-OAuth est la méthode privilégiée pour autoriser une application cliente, car elle utilise un jeton d&#39;accès au lieu d’exiger que les informations d’identification d’un utilisateur AEM soient fournies à cette application.
+OAuth est la méthode privilégiée pour autoriser une application cliente, car elle utilise un jeton d’accès au lieu d’exiger que les informations d’identification d’un utilisateur AEM soient fournies à cette application.
 
-* [Vue du code](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/legacy/bundle/src/main/java/com/adobe/acs/samples/authentication/oauth/impl/SampleScopeWithPrivileges.java)
+* [Afficher le code](https://github.com/Adobe-Consulting-Services/acs-aem-samples/blob/legacy/bundle/src/main/java/com/adobe/acs/samples/authentication/oauth/impl/SampleScopeWithPrivileges.java)
