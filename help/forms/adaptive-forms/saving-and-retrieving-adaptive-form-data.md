@@ -1,18 +1,17 @@
 ---
 title: Enregistrement et récupération des données de formulaire adaptatif
 seo-title: Enregistrement et récupération des données de formulaire adaptatif
-description: Enregistrement et récupération des données de formulaire adaptatif à partir de la base de données. Cette fonctionnalité permet aux utilisateurs d’enregistrer le formulaire et de continuer à le remplir ultérieurement.
-seo-description: Enregistrement et récupération des données de formulaire adaptatif à partir de la base de données. Cette fonctionnalité permet aux utilisateurs d’enregistrer le formulaire et de continuer à le remplir ultérieurement.
+description: Enregistrement et récupération des données de formulaire adaptatif de la base de données. Cette fonctionnalité permet aux utilisateurs d’enregistrer le formulaire et de continuer à le remplir ultérieurement.
+seo-description: Enregistrement et récupération des données de formulaire adaptatif de la base de données. Cette fonctionnalité permet aux utilisateurs d’enregistrer le formulaire et de continuer à le remplir ultérieurement.
 feature: adaptive-forms
 topics: developing
 audience: developer,implementer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
-translation-type: tm+mt
 source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -20,31 +19,31 @@ ht-degree: 0%
 
 # Enregistrement et récupération des données de formulaire adaptatif
 
-Cet article décrit les étapes nécessaires à l&#39;enregistrement et à la récupération des données de formulaire adaptatif à partir de la base de données. La base de données MySQL a été utilisée pour stocker les données du formulaire adaptatif. À un niveau élevé, les étapes suivantes permettent d’obtenir le cas d’utilisation :
+Cet article décrit les étapes à suivre pour enregistrer et récupérer les données de formulaire adaptatif de la base de données. La base de données MySQL a été utilisée pour stocker les données du formulaire adaptatif. À un niveau élevé, les étapes suivantes sont nécessaires pour réaliser le cas d’utilisation :
 
-* [Configurer la source de données](#Configure-Data-Source)
+* [Configuration de la source de données](#Configure-Data-Source)
 * [Créer un servlet pour écrire des données dans la base de données](#create-servlet)
-* [Créer un service OSGI pour récupérer les données stockées](#create-osgi-service)
+* [Création d’un service OSGI pour récupérer les données stockées](#create-osgi-service)
 * [Créer une bibliothèque cliente](#create-client-library)
 * [Créer un modèle de formulaire adaptatif et un composant de page](#form-template-and-page-component)
-* [Démonstration des capacités](#capability-demo)
+* [Démonstration des fonctionnalités](#capability-demo)
 * [Déployer sur votre serveur](#deploy-on-your-server)
 
 ## Configurer la source de données {#Configure-Data-Source}
 
-La source de données en pool Apache Sling Connection est configurée pour pointer vers la base de données qui sera utilisée pour stocker les données de formulaire adaptatif. La capture d&#39;écran suivante montre la configuration de mon instance. Les propriétés suivantes peuvent être copiées et collées
+Apache Sling Connection Pooled DataSource est configuré pour pointer vers la base de données qui va être utilisée pour stocker les données du formulaire adaptatif. La capture d’écran suivante montre la configuration de mon instance. Les propriétés suivantes peuvent être copiées et collées :
 
-* Nom de la source de données : aemformstutorial - Nom utilisé dans mon code.
+* Nom de la source de données : aemformstutorial - Il s’agit du nom utilisé dans mon code.
 
-* JDBC Driver, classe:com.mysql.jdbc.Driver
+* Classe de pilote JDBC : com.mysql.jdbc.Driver
 
-* URL de connexion JDBC:jdbc:mysql://localhost:3306/aemformstutorial
+* URL de connexion JDBC : jdbc:mysql://localhost:3306/aemformstutorial
 
 ![connectionpool](assets/storingdata.PNG)
 
 ### Créer un servlet {#create-servlet}
 
-Voici le code de la servlet qui insère/met à jour les données de formulaire adaptatif dans la base de données. La source de données en pool de connexion Apache Sling est configurée à l&#39;aide de l&#39;AEM ConfigMgr et la même est référencée à la ligne 26. Le reste du code est assez simple. Le code insère une nouvelle ligne dans la base de données ou met à jour une ligne existante. Les données de formulaire adaptatif stockées sont associées à un GUID. Le même GUID est ensuite utilisé pour mettre à jour les données du formulaire.
+Voici le code du servlet qui insère/met à jour les données de formulaire adaptatif dans la base de données. La source de données en pool de la connexion Apache Sling est configurée à l’aide d’AEM ConfigMgr et la même est référencée à la ligne 26. Le reste du code est assez simple. Le code insère une nouvelle ligne dans la base de données ou met à jour une ligne existante. Les données de formulaire adaptatif stockées sont associées à un GUID. Le même GUID est ensuite utilisé pour mettre à jour les données de formulaire.
 
 ```java
 package com.techmarketing.core.servlets;
@@ -212,9 +211,9 @@ public class StoreDataInDB extends SlingAllMethodsServlet {
 }
 ```
 
-## Créer un service OSGI pour récupérer les données {#create-osgi-service}
+## Créer un service OSGI pour récupérer des données {#create-osgi-service}
 
-Le code suivant a été écrit pour récupérer les données de formulaire adaptatif stockées. Une requête simple est utilisée pour récupérer les données de formulaire adaptatif associées à un GUID donné. Les données extraites sont ensuite renvoyées à l’application appelante. Même source de données créée lors de la première étape référencée dans ce code.
+Le code suivant a été écrit pour récupérer les données de formulaire adaptatif stockées. Une requête simple est utilisée pour récupérer les données de formulaire adaptatif associées à un GUID donné. Les données récupérées sont ensuite renvoyées à l’application appelante. La même source de données créée à la première étape référencée dans ce code.
 
 ```java
 package com.techmarketing.core.impl;
@@ -279,7 +278,7 @@ public class AemformWithDB implements AemFormsAndDB {
 
 ## Créer une bibliothèque cliente {#create-client-library}
 
-aem bibliothèque cliente gère l’ensemble du code JavaScript côté client. Pour cet article, j’ai créé un simple javascript pour récupérer les données du formulaire adaptatif à l’aide de l’API de pont de guide. Une fois les données du formulaire adaptatif récupérées, l’appel du POST est effectué à la servlet pour insérer ou mettre à jour les données du formulaire adaptatif dans la base de données. La fonction getALLUrlParams renvoie les paramètres de l&#39;URL. Elle est utilisée lorsque vous souhaitez mettre à jour les données. Le reste de la fonctionnalité est traité dans le code associé au événement de clics de la classe .savebutton. Si le paramètre guid est présent dans l’URL, nous devons effectuer l’opération de mise à jour, si ce n’est pas une opération d’insertion.
+AEM bibliothèque cliente gère tout le code JavaScript côté client. Pour cet article, j’ai créé un JavaScript simple pour récupérer les données de formulaire adaptatif à l’aide de l’API de passerelle de guide. Une fois les données du formulaire adaptatif récupérées, l’appel du POST est effectué au servlet pour insérer ou mettre à jour les données du formulaire adaptatif dans la base de données. La fonction getALLUrlParams renvoie les paramètres de l’URL. Il est utilisé lorsque vous souhaitez mettre à jour les données. Le reste des fonctionnalités est géré dans le code associé à l’événement click de la classe .savebutton . Si le paramètre guid est présent dans l’URL, nous devons effectuer l’opération de mise à jour, si ce n’est pas une opération d’insertion.
 
 ```javascript
 function getAllUrlParams(url) {
@@ -410,21 +409,21 @@ $(document).ready(function()
 
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=9&learn=on)
 
-### Démonstration de la capacité {#capability-demo}
+### Démonstration de la fonctionnalité {#capability-demo}
 
 >[!VIDEO](https://video.tv.adobe.com/v/27829?quality=9&learn=on)
 
 #### Déployer sur votre serveur {#deploy-on-your-server}
 
-Pour tester cette fonctionnalité sur votre instance AEM Forms, procédez comme suit.
+Pour tester cette fonctionnalité sur votre instance AEM Forms, procédez comme suit :
 
-* [Téléchargez et décompressez DemoAssets.zip sur votre système local.](assets/demoassets.zip)
-* Déployez et début les lots techmarketingdemos.jar et mysqldriver.jar à l’aide de la console Web Felix.
-*** Importez le fichier aemformstutorial.sql à l’aide de MYSQL Workbench. Cela créera le schéma et les tables nécessaires dans votre base de données.
-* Importez StoreAndRetrieve.zip à l’aide de AEM gestionnaire de packages. Ce package contient le modèle de formulaire adaptatif, la lib du client de composant de page et un exemple de configuration de formulaire adaptatif et de source de données.
-* Connectez-vous à configMgr. Recherchez &quot;Apache Sling Connection Pooled DataSource&quot;. Ouvrez l’entrée de source de données associée à aemformstutorial et saisissez le nom d’utilisateur et le mot de passe propres à votre instance de base de données.
+* [Téléchargez et décompressez le fichier DemoAssets.zip sur votre système local.](assets/demoassets.zip)
+* Déployez et démarrez les lots techmarketingdemos.jar et mysqldriver.jar à l’aide de la console web Felix.
+*** Importez le fichier aemformstutorial.sql à l’aide de MYSQL Workbench. Vous créez ainsi le schéma et les tableaux nécessaires dans votre base de données.
+* Importez StoreAndRetrieve.zip à l’aide d’AEM gestionnaire de packages. Ce module contient le modèle de formulaire adaptatif, la bibliothèque cliente du composant de page et un exemple de configuration de formulaire adaptatif et de source de données.
+* Connectez-vous à configMgr. Recherchez &quot;Apache Sling Connection Pooled DataSource. Ouvrez l’entrée de source de données associée à aemformstutorial et saisissez le nom d’utilisateur et le mot de passe propres à votre instance de base de données.
 * Ouvrir le formulaire adaptatif
 * Renseignez certains détails et cliquez sur le bouton &quot;Enregistrer et continuer plus tard&quot;.
-* Vous devez récupérer une URL contenant un GUID.
+* Vous devriez récupérer une URL contenant un GUID.
 * Copiez l’URL et collez-la dans un nouvel onglet du navigateur.
 * Le formulaire adaptatif doit être renseigné avec les données de l’étape précédente**
