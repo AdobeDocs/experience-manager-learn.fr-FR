@@ -1,37 +1,36 @@
 ---
-title: Développement avec les services Output et Forms à AEM Forms
-seo-title: Développement avec les services Output et Forms à AEM Forms
-description: Utilisation de l’API Output et du service Forms dans AEM Forms
-seo-description: Utilisation de l’API Output et du service Forms dans AEM Forms
-feature: Forms Service
+title: Développement avec les services Output et Forms dans AEM Forms
+seo-title: Développement avec les services Output et Forms dans AEM Forms
+description: Utilisation de l’API Output et Forms Service dans AEM Forms
+seo-description: Utilisation de l’API Output et Forms Service dans AEM Forms
+feature: Service Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Développement
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '350'
 ht-degree: 2%
 
 ---
 
 
-# Rendu de fichiers PDF interactifs à l’aide des services Forms dans AEM Forms
+# Rendu du PDF interactif à l’aide des services Forms dans AEM Forms
 
-Utilisation de l’API Forms Service dans AEM Forms pour générer un PDF interactif
+Utilisation de l’API Forms Service dans AEM Forms pour le rendu d’un PDF interactif
 
-Dans cet article, nous examinerons le service suivant :
+Dans cet article, nous allons examiner le service suivant :
 
-* FormsService - Il s’agit d’un service très polyvalent qui vous permet d’exporter/d’importer des données de et dans un fichier PDF et de générer des fichiers PDF interactifs en fusionnant des données xml dans un modèle xdp.
+* FormsService : il s’agit d’un service très polyvalent qui vous permet d’exporter/importer des données de et dans un fichier PDF et de générer également un pdf interactif en fusionnant des données XML dans un modèle xdp.
 
-L’API javadoc officielle pour AEM Forms est répertoriée [ici](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
+Le javadoc officiel pour l’API AEM Forms est répertorié [ici](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/package-summary.html)
 
-Le fragment de code suivant affiche un fichier pdf interactif à l’aide de l’opération renderPDFForm de FormsService. Le fichier schengen.xdp est un modèle utilisé pour fusionner les données xml.
+Le fragment de code suivant effectue le rendu du pdf interactif à l’aide de l’opération renderPDFForm de FormsService. Le schéma.xdp est un modèle utilisé pour fusionner les données XML.
 
 ```java
 String uri = "crx:///content/dam/formsanddocuments";
@@ -49,27 +48,27 @@ return interactivePDF;
 
 Ligne 1 : Emplacement du dossier contenant le modèle xdp
 
-Ligne 2-4 : Création de PDFFormRenderOptions et définition de ses propriétés
+Line2-4 : Créez PDFFormRenderOptions et définissez ses propriétés.
 
-Ligne 7 : Générer un fichier PDF interactif à l’aide de l’opération de service renderPDFForm de FormsService
+Ligne 7 : Générer un PDF interactif à l’aide de l’opération de service renderPDFForm de FormsService
 
-Ligne 11 : Renvoie le pdf interactif généré à l’application appelante.
+Ligne 11 : Renvoie le pdf interactif généré à l’application appelante
 
-**Pour tester l’exemple de package sur votre système**
-1. [Téléchargement et installation de l’exemple de lot Document Services à l’aide de la console Web Felix](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-1. [Téléchargez et installez le package à l’aide du gestionnaire de packages AEM.](assets/downloadinteractivepdffrommobileform.zip)
+**Test de l’exemple de package sur votre système**
+1. [Téléchargez et installez l’exemple de bundle DocumentServices à l’aide de la console web Felix.](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+1. [Téléchargez et installez le module à l’aide du gestionnaire de modules AEM.](assets/downloadinteractivepdffrommobileform.zip)
 
 
 
 1. [Connexion à configMgr](http://localhost:4502/system/console/configMgr)
-1. Rechercher un filtre CSRF Granite Adobe
+1. Rechercher un filtre CSRF Adobe Granite
 1. Ajoutez le chemin suivant dans les sections exclues et enregistrez
 1. /bin/generateinteractivepdf
-1. [Ouverture du formulaire pour périphériques mobiles](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
-1. Renseignez quelques champs, puis cliquez sur le ***Télécharger et remplir ....*** button
-1. Le pdf interactif doit être téléchargé sur votre système local.
+1. [Ouvrir le formulaire mobile](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
+1. Renseignez deux ou trois champs, puis cliquez sur le ***Télécharger et remplissez ....*** button
+1. Le PDF interactif doit être téléchargé sur votre système local.
 
 
-L’exemple de module contient le profil personnalisé associé au formulaire pour périphériques mobiles. Explorez le fichier [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp). Ce fichier jsp extrait les données du formulaire mobile et envoie une requête de POST au servlet monté sur le chemin ***/bin/generateinteractivepdf***. La servlet renvoie le pdf interactif à l’application appelante. Le code du fichier customtoolbar.jsp télécharge ensuite le fichier sur votre système local.
+L’exemple de package contient le profil personnalisé associé au formulaire pour périphériques mobiles. Explorez le fichier [customtoolbar.jsp](http://localhost:4502/apps/AEMFormsDemoListings/customprofiles/addImageToMobileForm/demo/customtoolbar.jsp). Ce fichier jsp extrait les données du formulaire mobile et envoie une demande de POST au servlet monté sur le chemin ***/bin/generateinteractivepdf***. Le servlet renvoie le pdf interactif à l’application appelante. Le code du fichier customtoolbar.jsp télécharge ensuite le fichier sur votre système local.
 
 
