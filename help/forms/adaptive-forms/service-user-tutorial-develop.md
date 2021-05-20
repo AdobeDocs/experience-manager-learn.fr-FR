@@ -1,22 +1,21 @@
 ---
 title: Développement avec des utilisateurs de services dans AEM Forms
 seo-title: Développement avec des utilisateurs de services dans AEM Forms
-description: Cet article vous guide tout au long du processus de création d’un utilisateur de service en AEM Forms.
-seo-description: Cet article vous guide tout au long du processus de création d’un utilisateur de service en AEM Forms.
+description: Cet article vous guide tout au long du processus de création d’un utilisateur de service dans AEM Forms
+seo-description: Cet article vous guide tout au long du processus de création d’un utilisateur de service dans AEM Forms
 uuid: 996f30df-3fc5-4232-a104-b92e1bee4713
-feature: Adaptive Forms
+feature: Formulaires adaptatifs
 topics: development,administration
 audience: implementer,developer
 doc-type: article
 activity: setup
 discoiquuid: 65bd4695-e110-48ba-80ec-2d36bc53ead2
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '449'
 ht-degree: 3%
 
 ---
@@ -24,43 +23,43 @@ ht-degree: 3%
 
 # Développement avec des utilisateurs de services dans AEM Forms
 
-Cet article vous guide tout au long du processus de création d’un utilisateur de service en AEM Forms.
+Cet article vous guide tout au long du processus de création d’un utilisateur de service dans AEM Forms
 
-Dans les versions précédentes de Adobe Experience Manager (AEM), le résolveur de ressources d&#39;administration était utilisé pour le traitement principal qui nécessitait l&#39;accès au référentiel. L&#39;utilisation du résolveur de ressources d&#39;administration est abandonnée dans AEM 6.3. À la place, un utilisateur système disposant d&#39;autorisations spécifiques dans le référentiel est utilisé.
+Dans les versions précédentes d’Adobe Experience Manager (AEM), le résolveur de ressources d’administration était utilisé pour le traitement principal qui nécessitait l’accès au référentiel. L’utilisation du résolveur de ressources d’administration est obsolète dans AEM 6.3. À la place, un utilisateur système disposant d’autorisations spécifiques dans le référentiel est utilisé.
 
 Cet article décrit la création d’un utilisateur système et la configuration des propriétés du mappeur utilisateur.
 
 1. Accédez à [http://localhost:4502/crx/explorer/index.jsp](http://localhost:4502/crx/explorer/index.jsp)
-1. Se connecter en tant que &#39; admin &#39;
-1. Cliquez sur &#39; Administration utilisateur &#39;
-1. Cliquez sur &#39; Créer un utilisateur système &#39;
-1. Définissez le type d&#39;utilisateur comme &quot; données &quot; et cliquez sur l&#39;icône verte pour terminer le processus de création de l&#39;utilisateur système.
-1. [Ouvrir configMgr](http://localhost:4502/system/console/configMgr)
-1. Recherchez &quot;Service Apache Sling User Mapper Service&quot; et cliquez sur pour ouvrir les propriétés.
-1. Cliquez sur l’icône *+* (plus) pour ajouter le mappage de service suivant.
+1. Connectez-vous en tant qu’&quot;admin&quot;
+1. Cliquez sur &quot;Administration des utilisateurs&quot;
+1. Cliquez sur &quot;Créer un utilisateur système&quot;.
+1. Définissez le type userid sur &quot;data&quot; et cliquez sur l’icône verte pour terminer le processus de création de l’utilisateur système.
+1. [Ouvrez configMgr](http://localhost:4502/system/console/configMgr)
+1. Recherchez &quot;Service de mappage des utilisateurs du service Apache Sling&quot; et cliquez pour ouvrir les propriétés.
+1. Cliquez sur l’icône *+* (plus) pour ajouter le mappage de service suivant :
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 
-1. Cliquez sur &quot; Enregistrer &quot;
+1. Cliquez sur Enregistrer .
 
-Dans la configuration ci-dessus, le paramètre DevelopingWithServiceUser.core est le nom symbolique du lot. getresourceresolver est le nom de sous-service.data est l&#39;utilisateur système créé à l&#39;étape précédente.
+Dans la configuration ci-dessus, le paramètre DevelopingWithServiceUser.core est le nom symbolique du lot. getresourceresolver est le nom du sous-service. data est l’utilisateur système créé à l’étape précédente.
 
-Nous pouvons également obtenir le résolveur de ressources pour le compte de l&#39;utilisateur du service fd. Cet utilisateur de service est utilisé pour les services de document. Par exemple, si vous souhaitez certifier/appliquer des droits d’utilisation, etc., nous utiliserons le résolveur de ressources de l’utilisateur du service fd pour effectuer les opérations.
+Nous pouvons également obtenir le résolveur de ressources au nom de l’utilisateur fd-service. Cet utilisateur de service est utilisé pour les services de document. Par exemple, si vous souhaitez certifier/appliquer des droits d’utilisation, etc., nous utiliserons le résolveur de ressources de l’utilisateur fd-service pour effectuer les opérations.
 
 1. [Téléchargez et décompressez le fichier zip associé à cet article.](assets/developingwithserviceuser.zip)
 1. Accédez à [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
-1. Téléchargement et début du lot OSGi
-1. Vérifier que le lot est à principal état
-1. Vous avez maintenant créé un *utilisateur système* et déployé également le *groupe utilisateur du service*.
+1. Chargement et démarrage du lot OSGi
+1. Assurez-vous que le lot est à principal état
+1. Vous avez maintenant créé un *utilisateur système* et déployé le *lot utilisateur de service*.
 
-   Pour fournir l&#39;accès à /content, accordez à l&#39;utilisateur système (&#39; data &#39;) des autorisations de lecture sur le noeud de contenu.
+   Pour permettre l’accès à /content, attribuez à l’utilisateur système (&#39; data &#39;) des autorisations de lecture sur le noeud de contenu.
 
    1. Accédez à [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
-   1. Recherchez les données de l&#39;utilisateur &quot;&quot;. Il s’agit du même utilisateur système que celui que vous avez créé à l’étape précédente.
-   1. Doublon-clic sur l&#39;utilisateur, puis sur l&#39;onglet &#39; Permissions &#39;
-   1. Donnez à &#39; read &#39; l&#39;accès au dossier &#39;content &#39;.
-   1. Pour utiliser l’utilisateur du service pour accéder au dossier /content, utilisez le code suivant :
+   1. Recherchez les données de l’utilisateur. Il s’agit du même utilisateur système que celui que vous avez créé à l’étape précédente.
+   1. Double-cliquez sur l’utilisateur, puis cliquez sur l’onglet &quot;Autorisations&quot;.
+   1. Accédez au dossier &#39;content&#39; en lecture.
+   1. Pour utiliser l’utilisateur du service pour accéder au dossier /content , utilisez le code suivant :
 
    ```java
    com.mergeandfuse.getserviceuserresolver.GetResolver aemDemoListings = sling.getService(com.mergeandfuse.getserviceuserresolver.GetResolver.class);
@@ -72,7 +71,7 @@ Nous pouvons également obtenir le résolveur de ressources pour le compte de l&
    Resource contentResource = resourceResolver.getResource("/content/forms/af/sandbox/abc.pdf");
    ```
 
-   Si vous souhaitez accéder au fichier /content/dam/data.json dans votre lot, vous utiliserez le code suivant. Ce code suppose que vous avez donné des autorisations de lecture à l’utilisateur &quot;data&quot; sur le noeud /content/dam/.
+   Si vous souhaitez accéder au fichier /content/dam/data.json de votre lot, vous utiliserez le code suivant. Ce code suppose que vous avez donné des autorisations de lecture à l’utilisateur &quot;data&quot; sur le noeud /content/dam/
 
    ```java
    @Reference
