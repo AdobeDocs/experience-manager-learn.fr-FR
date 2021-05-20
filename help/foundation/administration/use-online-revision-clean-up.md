@@ -1,6 +1,6 @@
 ---
-title: Utiliser le nettoyage de révision en ligne
-description: 'Une brève introduction au nettoyage de la révision en ligne. Nettoyage de la révision en ligne réduit le besoin de nettoyage fréquent de la révision hors ligne. '
+title: Utilisation du nettoyage des révisions en ligne
+description: 'Présentation brève du nettoyage des révisions en ligne. Le nettoyage des révisions en ligne atténue la nécessité d’un nettoyage fréquent des révisions hors ligne. '
 version: 6.3, 6.4, 6.5
 topics: operations, authoring, performance
 activity: use
@@ -9,24 +9,23 @@ doc-type: technical video
 topic: Administration
 role: Administrator
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '75'
 ht-degree: 2%
 
 ---
 
 
-# Utiliser le nettoyage de révision en ligne
+# Utilisation du nettoyage des révisions en ligne
 
-Une brève introduction au Nettoyage de la révision en ligne qui réduit le besoin de nettoyage fréquents de la révision hors ligne.
+Cette section présente brièvement le nettoyage des révisions en ligne, qui atténue la nécessité de procéder à de fréquents nettoyage des révisions hors ligne.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17004/?quality=12&learn=on)
 
-## Documents de support
+## Documents annexes
 
-* [AEM [!DNL JMX MBean - SegmentRevisionGarbageCollection]](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+revision+garbage+collection%2Ctype%3DSegmentRevisionGarbageCollection)
+* [AEM  [!DNL JMX MBean - SegmentRevisionGarbageCollection]](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+revision+garbage+collection%2Ctype%3DSegmentRevisionGarbageCollection)
 
-* [AEM [!DNL OSGi Configuration]  - Service NodeStore  [!UICONTROL des segments en chêne]](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService)
+* [AEM [!DNL OSGi Configuration]  - Service de magasin de noeuds de segments  [!UICONTROL Oak]](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService)
 
