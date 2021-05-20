@@ -1,17 +1,16 @@
 ---
 title: Utilisation de la boîte de réception dans AEM
-description: AEM boîte de réception facilite la collaboration et la visibilité accrues dans les tâches et les processus.
+description: AEM boîte de réception facilite la collaboration et la visibilité des tâches et des workflows.
 version: 6.3, 6.4, 6.5, cloud-service
 topic: Collaboration
-feature: Inbox
+feature: Boîte de réception
 role: Business Practitioner
 level: Intermediate
 kt: 159
 thumbnail: 16827.jpg
-translation-type: tm+mt
 source-git-commit: b040bdf97df39c45f175288608e965e5f0214703
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '78'
 ht-degree: 2%
 
 ---
@@ -19,6 +18,6 @@ ht-degree: 2%
 
 # Utilisation de la boîte de réception dans AEM
 
-La boîte de réception AEM facilite la collaboration et la visibilité dans les tâches et les processus. La Vue de calendrier de la boîte de réception effectue le suivi des projets et des tâches dans une vue temporelle afin de faciliter la gestion et la planification des projets. Avec la vue de calendrier, l’utilisateur aura une visibilité globale sur les projets et les tâches actuellement en cours, planifiés, en retard et en retard.
+La boîte de réception d’AEM facilite la collaboration et la visibilité des tâches et des workflows. La vue Calendrier de la boîte de réception effectue le suivi des projets et des tâches dans une vue temporelle afin de faciliter la gestion et la planification des projets. En mode Calendrier, l’utilisateur dispose d’une visibilité globale sur les projets et les tâches en cours, planifiés, en retard et en retard.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16827/?quality=12&learn=on)
