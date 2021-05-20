@@ -3,7 +3,7 @@ title: Concepts de base de la modélisation GraphQL
 description: Découvrez comment définir et utiliser des fragments de contenu dans Adobe Experience Manager (AEM) pour une utilisation avec GraphQL.
 sub-product: ressources
 version: cloud-service
-topic: Sans tête, Gestion de contenu
+topic: Sans affichage, gestion de contenu
 feature: Fragments de contenu, API GraphQL
 role: Developer
 level: Beginner
@@ -24,7 +24,7 @@ Découvrez comment définir et utiliser des fragments de contenu dans Adobe Expe
 Dans cette vidéo, vous allez :
 
 + Découvrez comment créer et définir un modèle de fragment de contenu
-+ Découvrez les différents types de données et validations utilisés pour élaborer le modèle de fragment de contenu.
-+ Comprendre comment le modèle de fragment de contenu conduit l&#39;API GraphQL
++ Découvrez les différents types de données et validations utilisés pour créer le modèle de fragment de contenu.
++ Comprendre comment le modèle de fragment de contenu génère l’API GraphQL
 
 >[!VIDEO](https://video.tv.adobe.com/v/332858/?quality=12&learn=on)
