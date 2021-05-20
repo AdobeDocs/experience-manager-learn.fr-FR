@@ -1,50 +1,49 @@
 ---
-title: Préremplissage d’un formulaire adaptatif à l’aide d’un Profil ACS
-seo-title: Préremplissage d’un formulaire adaptatif à l’aide d’un Profil ACS
-description: Préremplissage d'une Forms adaptative à l'aide d'un profil ACS
-seo-description: Préremplissage d'une Forms adaptative à l'aide d'un profil ACS
+title: Préremplissage d’un formulaire adaptatif à l’aide d’un profil ACS
+seo-title: Préremplissage d’un formulaire adaptatif à l’aide d’un profil ACS
+description: Préremplir le Forms adaptatif à l’aide du profil ACS
+seo-description: Préremplir le Forms adaptatif à l’aide du profil ACS
 uuid: 9bff6f61-96e9-40d4-a977-a80008cfbeee
-feature: Adaptive Forms, Form Data Model
+feature: Forms adaptatif, modèle de données de formulaire
 topics: integrations
 audience: developer
 doc-type: tutorial
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: a2ffcb84-4dd8-45e5-8e2c-0da74202851b
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '351'
 ht-degree: 1%
 
 ---
 
-# Préremplissage du formulaire adaptatif à l’aide du Profil ACS {#prefilling-adaptive-form-using-acs-profile}
+# Préremplir le formulaire adaptatif à l’aide du profil ACS {#prefilling-adaptive-form-using-acs-profile}
 
-Dans cette partie, nous allons pré-remplir le formulaire adaptatif avec les informations de profil extraites d&#39;ACS. AEM Forms dispose de cette puissante fonctionnalité de préremplissage des formulaires adaptatifs.
+Dans cette partie, nous allons préremplir le formulaire adaptatif avec les informations de profil récupérées à partir d’ACS. AEM Forms dispose de cette puissante fonctionnalité pour préremplir les formulaires adaptatifs.
 
-Pour en savoir plus sur le préremplissage des formulaires adaptatifs, consultez ce [didacticiel](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+Pour en savoir plus sur le préremplissage de formulaires adaptatifs, consultez ce [tutoriel](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
-Pour préremplir le formulaire adaptatif en récupérant les données d&#39;ACS, nous supposons qu&#39;il y a un profil dans ACS qui contient le même courrier électronique que l&#39;utilisateur AEM connecté. Par exemple, si l&#39;ID d&#39;adresse électronique de la personne connectée à AEM est csimms@adobe.com, nous nous attendons à trouver un profil dans ACS dont l&#39;adresse électronique est csimms@adobe.com.
+Pour préremplir le formulaire adaptatif en récupérant des données d’ACS, nous supposons qu’il existe un profil dans ACS qui a le même adresse électronique que l’utilisateur AEM connecté. Par exemple, si l’ID d’adresse électronique de la personne connectée à AEM est csimms@adobe.com, nous prévoyons de trouver un profil dans ACS dont l’adresse électronique est csimms@adobe.com.
 
-Les étapes suivantes sont nécessaires pour récupérer les informations de profil d&#39;ACS à l&#39;aide de l&#39;API REST
+Les étapes suivantes sont nécessaires pour récupérer les informations de profil d’ACS à l’aide de l’API REST
 
-* Générer JWT
-* Exchange JWT pour Jeton d&#39;accès
-* Effectuer un appel REST à ACS et récupérer le profil par courrier électronique
-* Création d’un document XML avec les informations du profil
-* Entrée renvoyéeStream du document XML qui sera consommé par AEM Forms
+* Génération de JWT
+* Exchange JWT pour le jeton d’accès
+* Effectuer un appel REST à ACS et récupérer un profil par courrier électronique
+* Créer un document XML avec les informations de profil
+* Retour InputStream du document XML qui sera utilisé par AEM Forms
 
 ![prefillservice](assets/prefillserviceaf.gif)
 
 Association du service de préremplissage au formulaire adaptatif
 
-Voici le code permettant de récupérer et de renvoyer des informations de profil d&#39;ACS.
+Voici le code permettant de récupérer et de renvoyer des informations de profil d’ACS.
 
-À la ligne 68, nous récupérons l&#39;ID d&#39;adresse électronique de l&#39;utilisateur AEM. Les détails du profil sont récupérés en lançant un appel REST à Adobe Campaign Standard. D’après les détails du profil récupéré, le document XML est construit d’une manière comprise par AEM Forms. Le flux d&#39;entrée de ce document est renvoyé pour consommation par AEM Forms.
+Dans la ligne 68, nous récupérons l’ID d’adresse électronique de l’utilisateur AEM. Les détails du profil sont récupérés en effectuant un appel REST vers Adobe Campaign Standard. À partir des détails du profil récupéré, le document XML est construit d’une manière comprise par AEM Forms. Le flux d’entrée de ce document est renvoyé pour consommation par AEM Forms.
 
 ```java
 package aemforms.campaign.core;
@@ -238,8 +237,8 @@ return "Pre Fill Forms Using Campaign Profile";
 
 Pour que cela fonctionne sur votre système, suivez les instructions suivantes :
 
-* [Veillez à suivre les étapes décrites ici.](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importer un exemple de formulaire adaptatif dans AEM à l’aide du gestionnaire de packages](assets/pre-fill-af-from-campaign.zip)
-* Assurez-vous de vous connecter à AEM avec un utilisateur dont l’ID d’adresse électronique est partagé par un profil dans Adobe Campaign. Par exemple, si l&#39;ID d&#39;adresse électronique de l&#39;utilisateur AEM est johndoe@adobe.com, vous devez disposer d&#39;un profil ACS dont l&#39;adresse électronique est johndoe@adobe.com.
+* [Assurez-vous d’avoir suivi les étapes décrites ici](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [Importer un exemple de formulaire adaptatif dans AEM à l’aide du gestionnaire de modules](assets/pre-fill-af-from-campaign.zip)
+* Assurez-vous de vous connecter à AEM avec un utilisateur dont l’ID d’adresse électronique est partagé par un profil dans Adobe Campaign. Par exemple, si l’ID d’adresse électronique de l’utilisateur AEM est johndoe@adobe.com, vous devez disposer dans ACS d’un profil dont l’adresse électronique est johndoe@adobe.com.
 * [Prévisualiser le formulaire](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
 
