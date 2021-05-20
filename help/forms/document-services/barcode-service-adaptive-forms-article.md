@@ -1,8 +1,8 @@
 ---
-title: Service De Codes À Barres Avec Forms Adaptatif
-seo-title: Service De Codes À Barres Avec Forms Adaptatif
-description: Utilisation du service de code à barres pour décoder le code à barres et remplir les champs de formulaire à partir des données extraites
-seo-description: Utilisation du service de code à barres pour décoder le code à barres et remplir les champs de formulaire à partir des données extraites
+title: Service Barcode Avec Forms Adaptatif
+seo-title: Service Barcode Avec Forms Adaptatif
+description: Utilisation du service barcode pour décoder le code à barres et remplir les champs de formulaire à partir des données extraites
+seo-description: Utilisation du service barcode pour décoder le code à barres et remplir les champs de formulaire à partir des données extraites
 uuid: 42568b81-cbcd-479e-8d9a-cc0b244da4ae
 feature: barcoded-forms
 topics: development
@@ -11,30 +11,29 @@ doc-type: article
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1224de6d-7ca1-4e9d-85fe-cd675d03e262
-topic: Development
+topic: Développement
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 
-# Service De Codes À Barres Avec Forms Adaptative{#barcode-service-with-adaptive-forms}
+# Service Barcode Avec Forms Adaptatif{#barcode-service-with-adaptive-forms}
 
-Cet article montre l&#39;utilisation du service de codes à barres pour renseigner le formulaire adaptatif. Le cas d’utilisation est le suivant :
+Cet article présente l’utilisation du service Barcode pour renseigner le formulaire adaptatif. Le cas pratique est le suivant :
 
-1. L’utilisateur ajoute un fichier PDF avec un code à barres en tant que pièce jointe de formulaire adaptatif.
-1. Le chemin d&#39;accès de la pièce jointe est envoyé à la servlet
-1. La servlet a décodé le code à barres et renvoie les données au format JSON.
-1. Le formulaire adaptatif est ensuite renseigné à l’aide des données décodées.
+1. L’utilisateur ajoute le format PDF avec le code à barres en tant que pièce jointe de formulaire adaptatif
+1. Le chemin d’accès de la pièce jointe est envoyé au servlet.
+1. Le servlet a décodé le code à barres et renvoie les données au format JSON.
+1. Le formulaire adaptatif est alors renseigné à l’aide des données décodées.
 
-Le code suivant décode le code à barres et renseigne un objet JSON avec les valeurs décodées. La servlet renvoie ensuite l’objet JSON dans sa réponse à l’application appelante.
+Le code suivant décode le code à barres et renseigne un objet JSON avec les valeurs décodées. Le servlet renvoie ensuite l’objet JSON dans sa réponse à l’application appelante.
 
-Vous pouvez voir cette fonctionnalité en direct, consultez le [portail d’exemples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) et recherchez la démonstration du service de codes à barres.
+Vous pouvez voir cette fonctionnalité en direct, consultez le [portail d’exemples](https://forms.enablementadobe.com/content/samples/samples.html?query=0) et recherchez la démonstration du service de codes à barres .
 
 ```java
 public JSONObject extractBarCode(Document pdfDocument) {
@@ -62,7 +61,7 @@ public JSONObject extractBarCode(Document pdfDocument) {
  }
 ```
 
-Voici le code de servlet. Cette servlet est appelée lorsque l’utilisateur ajoute une pièce jointe au formulaire adaptatif. La servlet renvoie l’objet JSON à l’application appelante. L’application appelante remplit ensuite le formulaire adaptatif avec les valeurs extraites de l’objet JSON.
+Voici le code de servlet. Cette servlet est appelée lorsque l’utilisateur ajoute une pièce jointe au formulaire adaptatif. Le servlet renvoie l’objet JSON à l’application appelante. L’application qui appelle renseigne ensuite le formulaire adaptatif avec les valeurs extraites de l’objet JSON.
 
 ```java
 @Component(service = Servlet.class, property = {
@@ -104,7 +103,7 @@ public class DecodeBarCode extends SlingSafeMethodsServlet {
 }
 ```
 
-Le code suivant fait partie de la bibliothèque cliente référencée par le formulaire adaptatif. Lorsqu’un utilisateur ajoute la pièce jointe au formulaire adaptatif, ce code est déclenché. Le code effectue un appel de GET à la servlet avec le chemin de la pièce jointe transmis dans le paramètre de requête. Les données reçues de l’appel de servlet sont ensuite utilisées pour remplir le formulaire adaptatif.
+Le code suivant fait partie de la bibliothèque cliente référencée par le formulaire adaptatif. Lorsqu’un utilisateur ajoute la pièce jointe au formulaire adaptatif, ce code est déclenché. Le code effectue un appel GET au servlet avec le chemin d’accès de la pièce jointe transmis dans le paramètre de requête. Les données reçues de l’appel au servlet sont ensuite utilisées pour remplir le formulaire adaptatif.
 
 ```
 $(document).ready(function()
@@ -141,17 +140,17 @@ $(document).ready(function()
 
 >[!NOTE]
 >
->Le formulaire adaptatif inclus dans ce package a été créé à l&#39;aide d&#39;AEM Forms 6.4. Si vous envisagez d&#39;utiliser ce package dans l&#39;environnement AEM Forms 6.3, créez le formulaire adaptatif dans AEM formulaire 6.3.
+>Le formulaire adaptatif inclus dans ce package a été créé à l’aide d’AEM Forms 6.4. Si vous envisagez d’utiliser ce package dans l’environnement AEM Forms 6.3, créez le formulaire adaptatif dans AEM formulaire 6.3.
 
-Ligne 12 - Code personnalisé pour obtenir le résolveur de service. Ce lot est inclus dans les actifs de cet article.
+Ligne 12 - Code personnalisé pour obtenir le résolveur de service. Ce lot est inclus dans les ressources de cet article.
 
 Ligne 23 - Appelez la méthode extractBarCode de Document Services pour que l’objet JSON soit renseigné avec des données décodées.
 
-Pour exécuter cette opération sur votre système, suivez les étapes ci-après.
+Pour lancer cette opération sur votre système, procédez comme suit :
 
-1. [Téléchargement de BarcodeService.](assets/barcodeservice.zip) zipet importation dans AEM à l’aide du gestionnaire de packages
-1. [Téléchargement et installation de l’offre groupée Document Services personnalisée](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-1. [Téléchargement et installation du lot DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1. [Téléchargez BarcodeService.](assets/barcodeservice.zip) zipet importez dans AEM à l’aide du gestionnaire de packages.
+1. [Télécharger et installer le bundle Document Services personnalisé](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+1. [Téléchargez et installez le bundle DevelopingWithServiceUser .](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Téléchargement de l’exemple de formulaire PDF](assets/barcode.pdf)
 1. Pointez votre navigateur sur l’[exemple de formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/barcodedemo/jcr:content?wcmmode=disabled)
 1. Télécharger l’exemple de PDF fourni
