@@ -1,6 +1,6 @@
 ---
 title: Création de Content Analyzer
-description: Créez la partie JSON contenant les informations sur les paramètres d'entrée de l'appel REST.
+description: Créez la partie JSON contenant les informations sur les paramètres d’entrée de l’appel REST.
 solution: Experience Manager
 type: Documentation
 role: Developer
@@ -22,12 +22,12 @@ ht-degree: 5%
 Créez un fragment JSON définissant les éléments suivants :
 
 + d’entrée
-+ paramètres
++ parameters
 + output.
 
 Les détails de ce paramètre de formulaire [sont disponibles ici.](https://documentcloud.adobe.com/document-services/index.html#post-createPDF)
 
-L’exemple de code répertorié ci-dessous génère le fragment JSON pour tous les types de document Office 365.
+L’exemple de code répertorié ci-dessous génère le fragment JSON pour tous les types de documents Office 365.
 
 ```java
 package com.aemforms.doccloud.core.impl;
