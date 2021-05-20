@@ -1,25 +1,24 @@
 ---
-title: Rail de recherche des administrateurs des ressources
-description: Le rail de recherche de l'administrateur Ressources permet de rechercher des ressources à l'aide de critères personnalisés dans Omnisearch.
+title: Rail de recherche d’administrateurs de ressources
+description: Le rail de recherche d’administrateurs Assets permet de rechercher des ressources à l’aide de critères personnalisés dans l’omni-recherche.
 sub-product: ressources
-feature: Search
+feature: Rechercher
 version: cloud-service
 kt: 4995
 thumbnail: 35842.jpg
-topic: Content Management
+topic: Gestion de contenu
 role: Administrator
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '46'
-ht-degree: 10%
+source-wordcount: '44'
+ht-degree: 9%
 
 ---
 
 
-# Rail de recherche des administrateurs des ressources
+# Rail de recherche d’administrateurs de ressources
 
-Le rail de recherche de l&#39;administrateur Ressources permet de rechercher des ressources à l&#39;aide de critères personnalisés dans Omnisearch.
+Le rail de recherche d’administrateurs Assets permet de rechercher des ressources à l’aide de critères personnalisés dans l’omni-recherche.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35842/?quality=12&learn=on&hidetitle=true)
