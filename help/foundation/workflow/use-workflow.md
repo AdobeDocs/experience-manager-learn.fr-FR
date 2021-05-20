@@ -1,5 +1,5 @@
 ---
-title: Utilisation du flux de travail dans AEM
+title: Utilisation du workflow dans AEM
 description: AEM Workflow permet de collaborer, de gérer et de traiter du contenu dans AEM.
 version: 6.5, cloud-service
 feature: Workflow
@@ -16,7 +16,7 @@ ht-degree: 4%
 ---
 
 
-# Utiliser le processus
+# Utilisation d’un workflow
 
 AEM Workflow permet de collaborer, de gérer et de traiter du contenu dans AEM.
 
@@ -24,4 +24,4 @@ AEM Workflow permet de collaborer, de gérer et de traiter du contenu dans AEM.
 
 >[!NOTE]
 >
-> La vidéo utilise AEM Sites pour démontrer la fonctionnalité de métadonnées d’état du processus. Les métadonnées d’état du flux de travail s’appliquent également à AEM Assets. Pour afficher l’état du processus sur les ressources, assurez-vous que la vue de liste est activée.
+> La vidéo utilise AEM Sites pour démontrer la fonctionnalité de métadonnées d’état du workflow. Les métadonnées d’état de workflow s’appliquent également à AEM Assets. Pour afficher l’état du workflow sur les ressources, assurez-vous que le mode Liste est activé.
