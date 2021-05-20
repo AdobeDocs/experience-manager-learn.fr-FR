@@ -1,7 +1,7 @@
 ---
-title: Créer un processus principal pour déclencher le processus de signature
-description: Créer un processus pour stocker les formulaires à signer dans la base de données
-feature: Adaptive Forms
+title: Créer le workflow principal pour déclencher le processus de signature
+description: Créer un workflow pour stocker les formulaires à signer dans la base de données
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,13 +9,12 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6887.jpg
 kt: 6887
-topic: Development
+topic: Développement
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '165'
 ht-degree: 2%
 
 ---
@@ -23,15 +22,15 @@ ht-degree: 2%
 
 # Créer un workflow principal
 
-Le processus principal est déclenché lorsque l’utilisateur envoie le formulaire initial (**RefinanceForm**). Voici le flux de travail :
+Le workflow principal est déclenché lorsque l’utilisateur envoie le formulaire initial (**RefinanceForm**). Voici le flux du workflow :
 
-![processus principal](assets/main-workflow.PNG)
+![main-workflow](assets/main-workflow.PNG)
 
-**Stocker Forms To** Signis est une étape de processus personnalisée.
+**Store Forms To** Signis est une étape de processus personnalisée.
 
-La mise en oeuvre d’une étape de processus personnalisé a pour objectif d’étendre un flux de travail AEM. Le code suivant implémente une étape de processus personnalisée. Le code extrait les noms des formulaires à signer et transmet les données de formulaire envoyées à la méthode `insertData` du service SignMultipleForms. La méthode `insertData` insère ensuite les lignes de la base de données identifiées par la source de données **aemformstutorial**.
+La mise en oeuvre d’une étape de processus personnalisée a pour but d’étendre un workflow AEM. Le code suivant implémente une étape de processus personnalisée. Le code extrait les noms des formulaires à signer et transmet les données de formulaire envoyées à la méthode `insertData` dans le service SignMultipleForms. La méthode `insertData` insère ensuite les lignes dans la base de données identifiée par la source de données **aemformstutorial**.
 
-Le code de cette étape de processus personnalisé référence le service `SignMultipleForms`.
+Le code de cette étape de processus personnalisée référence le service `SignMultipleForms`.
 
 
 
@@ -125,4 +124,4 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 Le processus Sign Multiple Forms utilisé dans cet article peut être [téléchargé ici](assets/sign-multiple-forms-workflows.zip)
 
 >[!NOTE]
-> Assurez-vous de configurer le service de messagerie Day CQ pour envoyer une notification par e-mail. Le modèle de courrier électronique est également fourni dans le pack ci-dessus.
+> Veillez à configurer le service de messagerie Day CQ pour envoyer une notification par courrier électronique. Le modèle d&#39;email est également fourni dans le package ci-dessus.
