@@ -1,24 +1,23 @@
 ---
 title: Utilisation de Microsoft Dynamics avec AEM Forms
 seo-title: Utilisation de Microsoft Dynamics avec AEM Forms
-description: Cette vidéo présente un flux de travail qui montre comment AEM Forms peut utiliser Microsoft Dynamics comme source de données dorsale pour fournir des communications interactives et personnalisées.
-seo-description: Cette vidéo présente un flux de travail qui montre comment AEM Forms peut utiliser Microsoft Dynamics comme source de données dorsale pour fournir des communications interactives et personnalisées.
+description: Cette vidéo décrit un workflow qui montre comment AEM Forms peut utiliser Microsoft Dynamics en tant que source de données principale pour diffuser des communications interactives et personnalisées.
+seo-description: Cette vidéo décrit un workflow qui montre comment AEM Forms peut utiliser Microsoft Dynamics en tant que source de données principale pour diffuser des communications interactives et personnalisées.
 uuid: 33d63899-1f58-49b3-a05e-6c57b01ef911
-feature: Adaptive Forms
+feature: Formulaires adaptatifs
 topics: integrations
 audience: developer
 doc-type: feature video
 activity: setup
 version: 6.3,6.4,6.5
 discoiquuid: 6cb82275-55bc-4b9e-b958-75b906c6afa9
-topic: Development
+topic: Développement
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 33%
+source-wordcount: '170'
+ht-degree: 32%
 
 ---
 
@@ -33,7 +32,7 @@ Bases de données relationnelles : MySQL, Microsoft SQL Server, IBM DB2 et Orac
 1. Services web SOAP
 1. Services OData
 
-Cette vidéo présente un flux de travail qui montre comment AEM Forms peut utiliser Microsoft Dynamics comme source de données dorsale pour fournir des communications interactives et personnalisées.
+Cette vidéo décrit un workflow qui montre comment AEM Forms peut utiliser Microsoft Dynamics en tant que source de données principale pour diffuser des communications interactives et personnalisées.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20971?quality=9&learn=on)
 
