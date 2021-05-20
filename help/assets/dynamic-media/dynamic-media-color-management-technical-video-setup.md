@@ -1,16 +1,15 @@
 ---
 title: Explication de la gestion des couleurs avec AEM Dynamic Media
-description: Dans cette vidéo, nous étudions la gestion des couleurs de Dynamic Media et comment elle peut être utilisée pour fournir des fonctionnalités de prévisualisation de correction des couleurs dans pour AEM Assets.
+description: Dans cette vidéo, nous examinons la gestion des couleurs de Dynamic Media et comment elle peut être utilisée pour fournir des fonctionnalités d’aperçu de la correction des couleurs dans pour AEM Assets.
 sub-product: dynamic-media
-feature: Image Profiles, Video Profiles
+feature: Profils d’image, Profils vidéo
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: Gestion de contenu
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '328'
 ht-degree: 24%
 
 ---
@@ -18,19 +17,19 @@ ht-degree: 24%
 
 # Explication de la gestion des couleurs avec AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
-Dans cette vidéo, nous étudions la gestion des couleurs de Dynamic Media et comment elle peut être utilisée pour fournir des fonctionnalités de prévisualisation de correction des couleurs dans pour AEM Assets.
+Dans cette vidéo, nous examinons la gestion des couleurs de Dynamic Media et comment elle peut être utilisée pour fournir des fonctionnalités d’aperçu de la correction des couleurs dans pour AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16792/?quality=9&learn=on)
 
 >[!NOTE]
 >
->[Activez l’AEM ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) Média dynamique pour utiliser cette fonction.
+>[Activez Dynamic ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) Media AEM pour utiliser cette fonctionnalité.
 
 Cette fonctionnalité est disponible pour AEM versions 6.1 et 6.2 en tant que Feature Pack.
 
-## Modèle XML pour le noeud de configuration Gestion des couleurs {#xml-template-for-the-color-management-configuration-node}
+## Modèle XML pour le noeud de configuration de la gestion des couleurs {#xml-template-for-the-color-management-configuration-node}
 
-Voici le modèle XML pour le noeud de configuration Gestion des couleurs. Ce modèle XML peut être copié dans le projet de développement AEM et configuré avec les configurations appropriées au projet.
+Voici le modèle XML du noeud de configuration de la gestion des couleurs. Ce modèle XML peut être copié dans le projet de développement AEM et configuré avec les configurations appropriées au projet.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,41 +85,41 @@ Voici le modèle XML pour le noeud de configuration Gestion des couleurs. Ce mod
 />
 ```
 
-### La liste des profils de couleur d&#39;Adobe par défaut est répertoriée ci-dessous {#list-of-default-adobe-color-profiles-are-listed-below}
+### La liste des profils de couleurs d’Adobe par défaut est répertoriée ci-dessous {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Nom | Espace colorimétrique | Description |
 | ------------------- | ---------- | ------------------------------------- |
 | AdobeRGB | RVB | Adobe RGB (1998) |
-| AppleRGB | RVB | Apple RGB |
-| CIERGB | RVB | CIE RGB |
-| CoatedFogra27 | CMJN | FOGRA27 recouvert (ISO 12647-2:2004) |
-| CoatedFogra39 | CMJN | FOGRA39 recouvert (ISO 12647-2:2004) |
-| CoatedGraCol | CMJN | GRACoL 2006 (ISO 12647-2:2004) |
-| ColorMatchRGB | RVB | ColorMatch RGB |
+| AppleRGB | RVB | Apple RVB |
+| CIERGB | RVB | CIE RVB |
+| CoatedFogra27 | CMJN | FOGRA27 (ISO 12647-2:2004) enrobé |
+| CoatedFogra39 | CMJN | FOGRA39 (ISO 12647-2:2004) enrobé |
+| CoatedGraCol | CMJN | Coated GRACoL 2006 (ISO 12647-2:2004) |
+| ColorMatchRGB | RVB | ColorMatch RVB |
 | EuropeISOCoated | CMJN | Europe ISO Coated FOGRA27 |
 | EuroscaleCoated | CMJN | Euroscale Coated v2 |
-| EuroscaleNon couché | CMJN | Euroscale UnCouché v2 |
+| EuroscaleUncoul | CMJN | Euroscale Uncoute v2 |
 | JapanColorCoated | CMJN | Japan Color 2001 Coated |
-| JapanColorNewspaper | CMJN | Journal de Japan Color 2002 |
-| JapanColorUnenduit | CMJN | Japan Color 2001 Unbedded |
-| JapanColorWebCoated | CMJN | Couleur du Japon 2003 - Web Coated |
-| JapanWebCoated | CMJN | Japon Web Coated (publicité) |
-| NewsprintSNAP2007 | CMJN | Newsprint (SNAP 2007) |
+| JapanColorNewspaper | CMJN | Journal Japan Color 2002 |
+| JapanColorUnfill | CMJN | Japan Color 2001 Unfill |
+| JapanColorWebCoated | CMJN | Japan Color 2003 Web Coated |
+| JapanWebCoated | CMJN | Japan Web Coated (Ad) |
+| NewsprintSNA2007 | CMJN | Journal des États-Unis (SNA 2007) |
 | NTSC | RVB | NTSC (1953) |
 | PAL | RVB | PAL/SECAM |
-| ProPhoto | RVB | ProPhoto RGB |
-| PS4Default | CMJN | CMJN par défaut Photoshop 4 |
-| PS5Default | CMJN | CMJN par défaut Photoshop 5 |
-| Feuillettré | CMJN | U.S. Sheetfed Coated v2 |
-| FeuillesNon couché | CMJN | U.S. Sheetfed Non couché v2 |
+| ProPhoto | RVB | ProPhoto RVB |
+| PS4Default | CMJN | Photoshop 4 CMJN par défaut |
+| PS5Default | CMJN | Photoshop 5 CMJN par défaut |
+| SheetfedCoated | CMJN | U.S. Sheetfed Coated v2 |
+| SheetfedUnPAW | CMJN | U.S. Sheetfed Non Couché v2 |
 | SMPTE | RVB | SMPTE-C |
-| sRVB | RVB sRGB | IEC61966-2.1 |
-| Fogra29 non couché | CMJN | FOGRA29 non couché (ISO 12647-2:2004) |
+| sRVB | RVB sRVB | IEC61966-2.1 |
+| UncondamnésFogra29 | CMJN | FOGRA29 non couché (ISO 12647-2:2004) |
 | WebCoated | CMJN | U.S. Web Coated (SWOP) v2 |
-| WebCoatedFogra28 | CMJN | Web Coated FOGRA28 (ISO 12647-2:2004) |
-| WebCoatedGrade3 | CMJN | Papier de 3e année SWOP 2006 à revêtement Web |
-| WebCoatedGrade5 | CMJN | Papier enrobé Web SWOP 2006 de classe 5 |
-| WebUnCouché | CMJN | U.S. Web non couché v2 |
+| WebCoatedFogra28 | CMJN | FOGRA Web Coated 28 (ISO 12647-2:2004) |
+| WebCoatedClass3 | CMJN | Document SWOP 2006 de qualité 3 sur support Web |
+| WebCoatedClass5 | CMJN | Papier de qualité 5 SWOP 2006 à couverture Web |
+| WebUnCouché | CMJN | U.S. Web Non couché v2 |
 | WideGamutRGB | RVB | Gamme large RVB |
 
 ## Ressources supplémentaires{#additional-resources}
