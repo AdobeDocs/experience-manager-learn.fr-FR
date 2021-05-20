@@ -1,30 +1,29 @@
 ---
-title: Utilisation de setvalue dans le processus AEM Forms
-seo-title: Utilisation de setvalue dans le processus AEM Forms
-description: Définir la valeur de l’élément dans les données envoyées par Forms adaptatif dans AEM Forms OSGI
-seo-description: Définir la valeur de l’élément dans les données envoyées par Forms adaptatif dans AEM Forms OSGI
+title: Utilisation de setvalue dans le workflow AEM Forms
+seo-title: Utilisation de setvalue dans AEM Forms Workflow
+description: Définir la valeur de l’élément dans les données envoyées par Forms adaptative dans AEM Forms OSGI
+seo-description: Définir la valeur de l’élément dans les données envoyées par Forms adaptative dans AEM Forms OSGI
 uuid: fe431e48-f05b-4b23-94d2-95d34d863984
-feature: Adaptive Forms
+feature: Formulaires adaptatifs
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
 discoiquuid: dbd87302-f770-4e61-b5ad-3fc5831b4613
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 3%
+source-wordcount: '550'
+ht-degree: 2%
 
 ---
 
 
-# Utilisation de setvalue dans le processus AEM Forms
+# Utilisation de setvalue dans le workflow AEM Forms
 
-Définissez la valeur d’un élément XML dans les données envoyées par Forms adaptatif dans le flux de travaux AEM Forms OSGI.
+Définissez la valeur d’un élément XML dans les données envoyées par Forms adaptative dans le workflow OSGI AEM Forms.
 
 ![SetValue](assets/setvalue.png)
 
@@ -32,41 +31,41 @@ LiveCycle utilisé pour avoir un composant de valeur définie qui vous permet de
 
 En fonction de cette valeur, lorsque le formulaire est renseigné avec le code XML, vous pouvez masquer/désactiver certains champs ou panneaux du formulaire.
 
-En AEM Forms OSGI - nous devrons écrire un lot OSGi personnalisé pour définir la valeur dans le XML. Le lot est fourni dans le cadre de ce didacticiel.
-Nous utilisons l’étape du processus dans AEM processus. Nous associons le lot OSGi &quot;Set Value of Element in XML&quot; à cette étape de processus.
-Nous devons transmettre deux arguments au groupe de valeurs définies. Le premier argument est le XPath de l’élément XML dont la valeur doit être définie. Le deuxième argument est la valeur qui doit être définie.
-Par exemple, dans la capture d’écran ci-dessus, la valeur de l’élément d’étape initiale est définie sur &quot;N&quot;.
-En fonction de cette valeur, certains panneaux de la Forms adaptative sont masqués ou affichés.
-Dans notre exemple, nous avons un simple formulaire de demande de désactivation du temps. L&#39;initiateur de ce formulaire remplit son nom et les dates de congé. Lors de l’envoi, ce formulaire est envoyé à l’administrateur pour révision. Lorsque l’administrateur ouvre le formulaire, les champs du premier panneau sont désactivés. Ceci parce que nous avons défini la valeur de l’élément d’étape initiale dans le XML sur &quot;N&quot;.
+Dans AEM Forms OSGI : nous devrons écrire un lot OSGi personnalisé pour définir la valeur dans le XML. Le bundle est fourni dans le cadre de ce tutoriel.
+Nous utilisons l’étape du processus dans AEM workflow. Nous associons le lot OSGi &quot;Set Value of Element in XML&quot; à cette étape de processus.
+Nous devons transmettre deux arguments au lot de valeurs définies. Le premier argument est le XPath de l’élément XML dont la valeur doit être définie. Le deuxième argument est la valeur qui doit être définie.
+Par exemple, dans la capture d’écran ci-dessus, nous définissons la valeur de l’élément d’étape initiale sur &quot;N&quot;.
+En fonction de cette valeur, certains panneaux dans le Forms adaptatif sont masqués ou affichés.
+Dans notre exemple, nous avons un simple formulaire de demande de désactivation du temps. L&#39;initiateur de ce formulaire remplit son nom et les dates de congé. Lors de l’envoi, ce formulaire est envoyé à &quot;admin&quot; pour révision. Lorsque l’administrateur ouvre le formulaire, les champs du premier panneau sont désactivés. Ceci car nous avons défini la valeur de l’élément d’étape initial dans le XML sur &quot;N&quot;.
 
-En fonction de la valeur des champs de l’étape initiale, nous affichons le deuxième panneau où l’administrateur peut approuver ou rejeter la demande.
+En fonction de la valeur des champs de l’étape initiale, nous affichons le deuxième panneau dans lequel &quot;l’administrateur&quot; peut approuver ou rejeter la demande.
 
-Examinez les règles définies dans le champ &quot;Heure d&#39;arrêt demandée par&quot; à l&#39;aide de l&#39;éditeur de règles.
+Consultez les règles définies par rapport au champ &quot;Heure de désactivation requise par&quot; à l’aide de l’éditeur de règles.
 
 Pour déployer les ressources sur votre système local, procédez comme suit :
 
-* [Déploiement du lot Developing withserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* [Déployer le lot Developer withserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Déployez l’assemblage](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar) d’exemples. Il s’agit du lot OSGI personnalisé qui vous permet de définir les valeurs d’un élément dans les données xml envoyées.
+* [Déployez l’exemple de lot](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Il s’agit du lot OSGI personnalisé qui vous permet de définir les valeurs d’un élément dans les données XML envoyées.
 
-* [Téléchargement et extraction du contenu du fichier zip](assets/setvalueassets.zip)
-* Pointez votre navigateur sur [gestionnaire de packages](http://localhost:4502/crx/packmgr/index.jsp).
-* Importez et installez le fichier setValueWorkflow.zip. Il s’agit de l’exemple de modèle de processus.
-* Pointez votre navigateur sur [Forms et Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* Cliquez sur Créer | Téléchargement de fichier
-* Téléchargement du fichier TimeOfRequestForm.zip
+* [Télécharger et extraire le contenu du fichier zip](assets/setvalueassets.zip)
+* Pointez votre navigateur sur [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp).
+* Importez et installez setValueWorkflow.zip. Il contient l’exemple de modèle de workflow.
+* Pointez votre navigateur sur [Forms and Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Cliquez sur Créer | Téléchargement du fichier
+* Téléchargez le fichier TimeOfRequestForm.zip
 * Ouvrez [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * Renseignez les 3 champs obligatoires et envoyez
-* Connectez-vous en tant qu’administrateur à l’AEM (si vous ne l’avez pas déjà fait).
+* Connectez-vous en tant qu’&quot;admin&quot; à AEM (si ce n’est pas déjà fait).
 * Accédez à [&quot;AEM Boîte de réception&quot;](http://localhost:4502/aem/inbox)
-* Ouvrez le formulaire &quot;Demande de désactivation du délai de révision&quot;.
-* Les champs du premier panneau sont désactivés. En effet, le formulaire est ouvert par le réviseur. De plus, notez que le groupe d’experts approuve ou rejette la demande est maintenant visible.
+* Ouvrez le formulaire &quot;Demande de désactivation de la date de révision&quot;.
+* Notez que les champs du premier panneau sont désactivés. En effet, le formulaire est ouvert par le réviseur. Notez également que le panneau d’approbation ou de refus de la requête est désormais visible.
 
 >[!NOTE]
 >
->Vous pouvez activer la journalisation du débogage en activant la journalisation pour
+>Vous pouvez activer la journalisation de débogage en activant l’enregistreur pour
 >com.aemforms.setvalue.core.SetValueinXml
->en dirigeant votre navigateur vers http://localhost:4502/system/console/slinglog
+>en pointant votre navigateur vers http://localhost:4502/system/console/slinglog
 
 >[!NOTE]
 >
