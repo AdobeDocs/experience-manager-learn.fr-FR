@@ -1,9 +1,9 @@
 ---
-title: Gestion de base en AEM Sites
-seo-title: Créer une page en Adobe Experience Manager Sites
-description: La vidéo suivante présente une vue d’ensemble de la gestion de base lors de l’utilisation de l’environnement d’auteur AEM. Il utilise la console Sites comme base.
-seo-description: La vidéo suivante présente une vue d’ensemble de la gestion de base lors de l’utilisation de l’environnement d’auteur AEM. Il utilise la console Sites comme base.
-feature: Page Editor, Editable Templates
+title: Manipulation de base dans AEM Sites
+seo-title: Création d’une page dans Adobe Experience Manager Sites
+description: La vidéo suivante présente une vue d’ensemble des opérations de gestion de base lors de l’utilisation de l’environnement de création AEM. Il utilise la console Sites comme base.
+seo-description: La vidéo suivante présente une vue d’ensemble des opérations de gestion de base lors de l’utilisation de l’environnement de création AEM. Il utilise la console Sites comme base.
+feature: Éditeur de page, modèles modifiables
 topics: authoring, publishing
 audience: author, marketer
 doc-type: feature video
@@ -11,25 +11,24 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 4495
 thumbnail: 31784.jpg
-topic: Content Management
+topic: Gestion de contenu
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 70%
 
 ---
 
 
-# Interface utilisateur et navigation AEM Sites {#basic-handling-aem-sites}
+# Interface utilisateur et navigation d’AEM Sites {#basic-handling-aem-sites}
 
-La vidéo suivante présente une vue d’ensemble de la gestion de base lors de l’utilisation de l’environnement d’auteur AEM. Il utilise la console Sites comme base.
+La vidéo suivante présente une vue d’ensemble des opérations de gestion de base lors de l’utilisation de l’environnement de création AEM. Il utilise la console Sites comme base.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
 
-Dans cette vidéo, les fonctionnalités ou fonctionnalités suivantes sont abordées :
+Dans cette vidéo, les fonctionnalités suivantes sont abordées :
 
 * Interface utilisateur tactile
 * Le panneau de navigation globale se compose des éléments suivants :
@@ -45,13 +44,13 @@ Dans cette vidéo, les fonctionnalités ou fonctionnalités suivantes sont abord
       | Sites | Les consoles Sites permettent de créer, d’afficher et de gérer des sites web exécutés sur votre instance AEM. Grâce à ces consoles, vous pouvez créer, copier, déplacer et supprimer des pages de site web, démarrer des processus et publier des pages |
 
    * Outils : représenté par un marteau
-* Omniture Search
-* Commutateur de solution
+* Omni Search
+* Sélecteur de solution
 * Aide
 * Notifications
-* Propriétés utilisateur
+* Propriétés de l’utilisateur
 * Sélecteur de rail
-* vues de la Console de site AEM
+* AEM vues de la console du site
    * Mode Liste
    * Mode Colonnes
    * Mode Carte
@@ -63,5 +62,5 @@ Dans cette vidéo, les fonctionnalités ou fonctionnalités suivantes sont abord
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Modification de la documentation du contenu de la page](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* [Modification de la documentation sur le contenu de la page](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
 * [Guide rapide pour la création de pages](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
