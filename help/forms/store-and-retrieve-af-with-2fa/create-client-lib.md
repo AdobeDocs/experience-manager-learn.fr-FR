@@ -1,7 +1,7 @@
 ---
 title: Création de bibliothèques clientes
-description: Créez une bibliothèque cliente pour gérer le événement de clics du bouton "Enregistrer et quitter".
-feature: Adaptive Forms
+description: Créer une bibliothèque cliente pour gérer l’événement de clic du bouton "Enregistrer et quitter"
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,22 +9,21 @@ activity: implement
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
-topic: Development
+topic: Développement
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '144'
 ht-degree: 8%
 
 ---
 
 # Créer une bibliothèque cliente
 
-Créez [client lib](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/developing/introduction/clientlibs.html) qui inclura le code pour appeler la méthode `doAjaxSubmitWithFileAttachment` de l&#39;API `guideBridge` sur le événement de clic du bouton identifié par la classe CSS **savebutton**.  Nous transmettons les données du formulaire adaptatif, `fileMap`, et `mobileNumber` au point de terminaison en écoutant `**/bin/storeafdatawithattachments`
+Créez la [bibliothèque cliente](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/developing/introduction/clientlibs.html) qui inclura le code permettant d’appeler la méthode `doAjaxSubmitWithFileAttachment` de l’API `guideBridge` sur l’événement click du bouton identifié par la classe CSS **savebutton**.  Nous transmettons les données du formulaire adaptatif, `fileMap`, et `mobileNumber` au point de terminaison en écoutant `**/bin/storeafdatawithattachments`
 
-Une fois les données du formulaire enregistrées, un identifiant d’application unique est généré et présenté à l’utilisateur dans une boîte de dialogue. Lors de la fermeture de la boîte de dialogue, l’utilisateur est amené au formulaire qui lui permet de récupérer le formulaire adaptatif enregistré à l’aide de l’identifiant d’application unique.
+Une fois les données du formulaire enregistrées, un identifiant d’application unique est généré et présenté à l’utilisateur dans une boîte de dialogue. Lorsque la boîte de dialogue est désactivée, l’utilisateur est amené au formulaire, ce qui lui permet de récupérer le formulaire adaptatif enregistré à l’aide de l’ID d’application unique.
 
 ```java
 $(document).ready(function () {
@@ -70,6 +69,6 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> Nous avons utilisé [bootbox javascript library](http://bootboxjs.com/examples.html) pour afficher la boîte de dialogue.
+> Nous avons utilisé [la bibliothèque JavaScript de bootbox](http://bootboxjs.com/examples.html) pour afficher la boîte de dialogue.
 
 Les bibliothèques clientes utilisées dans cet exemple peuvent être [téléchargées ici](assets/client-libraries.zip)
