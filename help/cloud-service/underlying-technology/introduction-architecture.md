@@ -1,6 +1,6 @@
 ---
-title: Présentation de la pile d'architecture AEM
-description: Présente les technologies OSGi, JCR, Oak et Sling dans la pile technologique Adobe Experience Manager.
+title: Présentation de la pile AEM Architecture
+description: Introduit les technologies OSGi, JCR, Oak et Sling dans la pile de technologies Adobe Experience Manager.
 topics: architecture
 audience: administrator, developer
 doc-type: technical video
@@ -11,17 +11,16 @@ thumbnail: 32034.jpg
 topic: Architecture
 role: Architect, Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '43'
 ht-degree: 2%
 
 ---
 
 
-# Introduction à la pile d&#39;architecture AEM {#introduction-architecture}
+# Présentation de la pile d’architecture AEM {#introduction-architecture}
 
-Présente les technologies [!DNL OSGi], [!DNL JCR], [!DNL Oak] et [!DNL Sling] dans le cadre de la pile technologique Adobe Experience Manager.
+Introduit les technologies [!DNL OSGi], [!DNL JCR], [!DNL Oak] et [!DNL Sling] dans le cadre de la pile de technologies Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32034/?quality=12&learn=on)
