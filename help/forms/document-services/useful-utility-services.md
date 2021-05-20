@@ -1,27 +1,26 @@
 ---
-title: Services utilitaires utiles
+title: Services d’utilité utiles
 description: Quelques services utiles pour les développeurs AEM Forms
-feature: Adaptive Forms
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Development
+topic: Développement
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 5%
+source-wordcount: '158'
+ht-degree: 4%
 
 ---
 
 
-# Services utilitaires utiles
+# Services d’utilité utiles
 
-Cet exemple de lot fournit des services utilitaires utiles qui peuvent être utilisés par un développeur AEM Forms. Les services suivants sont disponibles.
+Cet exemple de lot fournit des services utiles qui peuvent être utilisés par un développeur AEM Forms. Les services suivants sont disponibles.
 
 
 ```java
@@ -42,7 +41,7 @@ L’exemple de lot peut être [téléchargé ici](assets/aemformsutilityfunction
 
 ## Exemple de code pour utiliser le ou les services d’utilitaire
 
-Voici le code qui a été utilisé dans la page JSP pour créer org.w3c.dom.Document à partir d’une chaîne et convertir le document et le stocker dans le référentiel CRX, comme le montre le fragment de code suivant.
+Voici le code utilisé dans la page JSP pour créer org.w3c.dom.Document à partir d’une chaîne, convertir le document et le stocker dans le référentiel CRX, comme illustré dans le fragment de code suivant.
 
 ```java
  aemformsutilityfunctions.core.AemFormsUtilities aemFormsUtilities = sling.getService(aemformsutilityfunctions.core.AemFormsUtilities.class);
@@ -50,11 +49,11 @@ com.adobe.aemfd.docmanager.Document xmlStringDoc = aemFormsUtilities.orgw3cDocum
 aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ```
 
-## Conditions préalables
+## Prérequis
 
 
-Vous devez déployer [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) et début le lot.
+Vous devez déployer [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) et démarrer le lot.
 
 
-Si vous souhaitez enregistrer des documents dans le référentiel CRX à l’aide de ce service d’utilitaire, suivez l’[développement avec l’utilisateur du service ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Assurez-vous de fournir à l’utilisateur du service fd les autorisations [requises](http://localhost:4502/useradmin) sur les dossiers CRX appropriés.
+Si vous souhaitez enregistrer des documents dans le référentiel CRX à l’aide de ce service utilitaire, suivez l’ [article concernant le développement avec l’utilisateur de service](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Assurez-vous de fournir les [autorisations requises](http://localhost:4502/useradmin) sur les dossiers CRX appropriés à l’utilisateur du service fd.
 
