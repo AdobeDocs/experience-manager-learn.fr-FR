@@ -1,39 +1,38 @@
 ---
-title: Ajouter du contenu de texte et d’image au document de canal Web
-seo-title: Ajouter du contenu de texte et d’image au document de canal Web
-description: 'Voici la partie 7 d''un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons ajouter des images et du contenu de texte au panneau d’en-tête. '
-seo-description: 'Voici la partie 7 d''un didacticiel en plusieurs étapes pour créer votre premier document de communications interactives. Dans cette partie, nous allons ajouter des images et du contenu de texte au panneau d’en-tête. '
+title: Ajout de contenu texte et image à un document de canal web
+seo-title: Ajout de contenu texte et image à un document de canal web
+description: 'Ce tutoriel en plusieurs étapes fait partie 7 du premier document de communication interactive. Dans cette partie, nous allons ajouter des images et du contenu texte au panneau d’en-tête. '
+seo-description: 'Ce tutoriel en plusieurs étapes fait partie 7 du premier document de communication interactive. Dans cette partie, nous allons ajouter des images et du contenu texte au panneau d’en-tête. '
 uuid: 440f8b74-3be7-4e58-a46e-4110065b7705
-feature: Interactive Communication
+feature: Communication interactive
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 3dd64e7d-3f13-4022-bb75-c9dc1884bc19
-topic: Development
+topic: Développement
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 2%
+source-wordcount: '184'
+ht-degree: 1%
 
 ---
 
 
-# Ajouter du contenu de texte et d’image au document de canal Web
+# Ajout de contenu texte et image à un document de canal web
 
-Dans cette partie, nous allons ajouter des images et du contenu de texte au panneau d’en-tête.
+Dans cette partie, nous allons ajouter des images et du contenu texte au panneau d’en-tête.
 
-Maintenant que vous avez créé votre premier fragment de document qui contiendra le nom et l’adresse du destinataire, nous devons ajouter le fragment de document au document du canal Web.
+Maintenant que vous avez créé votre premier fragment de document qui contiendra le nom et l’adresse du destinataire, nous devrons ajouter le fragment de document au document du canal web.
 
-Vous pouvez ajouter du contenu de différents types tels que Fragments de Document, Images, Fragments de mise en page, etc. au document de canal Web.
+Vous pouvez ajouter du contenu de différents types tels que des fragments de document, des images, des fragments de mise en page, etc. au document de canal web.
 
-Pour ajouter du contenu au document du canal Web, suivez la vidéo ci-dessous.
+Pour ajouter du contenu au document de canal web, suivez la vidéo ci-dessous.
 
-La vidéo vous guide tout au long des étapes nécessaires pour ajouter du contenu aux zones de cible appropriées dans le document de canal Web.
+La vidéo vous guide tout au long des étapes nécessaires à l’ajout de contenu aux zones cible appropriées dans le document du canal web.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22359/?quality=9&learn=on)
 
