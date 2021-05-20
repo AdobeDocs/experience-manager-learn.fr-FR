@@ -1,6 +1,6 @@
 ---
-title: Créer une interface de service
-description: Définissez les méthodes de l'interface que vous souhaitez exposer.
+title: Création d’une interface de service
+description: Définition des méthodes de l’interface que vous souhaitez afficher
 solution: Experience Manager
 type: Documentation
 role: Developer
