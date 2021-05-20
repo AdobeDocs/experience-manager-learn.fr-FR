@@ -1,37 +1,36 @@
 ---
-title: Déclencher le processus AEM sur l’envoi de formulaires HTML5
-seo-title: Déclencher le flux de travail AEM sur l’envoi de formulaire HTML5
-description: Continuer à remplir le formulaire pour périphériques mobiles en mode hors ligne et envoyer le formulaire pour périphériques mobiles pour déclencher AEM processus
-seo-description: Continuer à remplir le formulaire pour périphériques mobiles en mode hors ligne et envoyer le formulaire pour périphériques mobiles pour déclencher AEM processus
+title: Déclencher AEM processus lors de l’envoi de formulaire HTM5
+seo-title: Déclencher AEM processus lors de l’envoi d’un formulaire HTML5
+description: Continuez à remplir le formulaire mobile en mode hors ligne et envoyez le formulaire mobile pour déclencher AEM processus.
+seo-description: Continuez à remplir le formulaire mobile en mode hors ligne et envoyez le formulaire mobile pour déclencher AEM processus.
 feature: Mobile Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4, 6.5
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 1%
+source-wordcount: '344'
+ht-degree: 0%
 
 ---
 
 
-# Créer un Profil personnalisé
+# Créer un profil personnalisé
 
-Dans cette partie, nous allons créer un [profil personnalisé.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Un profil est responsable du rendu du XDP au format HTML. Un profil par défaut est fourni hors champ pour le rendu des fichiers XDP au format HTML. Il représente une version personnalisée du service Mobile Forms Rendition. Vous pouvez utiliser le service Mobile Form Rendition pour personnaliser l’apparence, le comportement et les interactions de Mobile Forms. Dans notre profil personnalisé, nous capturerons les données renseignées dans le formulaire mobile à l’aide de l’API guidebridge. Ces données sont ensuite envoyées à la servlet personnalisée qui génère ensuite un PDF interactif et le diffuse à nouveau dans l’application appelante.
+Dans cette partie, nous allons créer un profil personnalisé [.](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html) Un profil est responsable du rendu du XDP au format HTML. Un profil par défaut est fourni prêt à l’emploi pour le rendu des fichiers XDP au format HTML. Il représente une version personnalisée du service Mobile Forms Rendition. Vous pouvez utiliser le service Mobile Form Rendition pour personnaliser l’apparence, le comportement et les interactions de Mobile Forms. Dans notre profil personnalisé, nous allons capturer les données renseignées dans le formulaire mobile à l’aide de l’API guidebridge. Ces données sont ensuite envoyées au servlet personnalisé qui génère ensuite un PDF interactif et le diffuse à nouveau vers l’application qui les appelle.
 
-Récupérez les données de formulaire à l’aide de l’API JavaScript `formBridge`. Nous utilisons la méthode `getDataXML()` :
+Obtenez les données de formulaire à l’aide de l’API JavaScript `formBridge`. Nous utilisons la méthode `getDataXML()` :
 
 ```javascript
 window.formBridge.getDataXML({success:suc,error:err});
 ```
 
-Dans la méthode du gestionnaire de succès, nous faisons un appel à la servlet personnalisée s&#39;exécutant dans AEM. Cette servlet génère et renvoie des fichiers pdf interactifs avec les données du formulaire mobile.
+Dans la méthode du gestionnaire de succès, nous effectuons un appel au servlet personnalisé qui s’exécute dans AEM. Ce servlet affiche et renvoie un pdf interactif avec les données du formulaire mobile.
 
 ```javascript
 var suc = function(obj) {
@@ -64,7 +63,7 @@ var suc = function(obj) {
 
 ## Générer un PDF interactif
 
-Voici le code de servlet responsable du rendu du pdf interactif et du renvoi du pdf à l’application appelante. La servlet appelle la méthode `mobileFormToInteractivePdf` du service OSGi Document Services personnalisé.
+Voici le code de servlet responsable du rendu du pdf interactif et du renvoi du pdf à l’application appelante. Le servlet appelle la méthode `mobileFormToInteractivePdf` du service OSGi Document Services personnalisé.
 
 ```java
 import java.io.File;
@@ -126,7 +125,7 @@ public class GenerateInteractivePDF extends SlingAllMethodsServlet {
 
 ### Render Interactive PDF
 
-Le code suivant utilise l’[API du service Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) pour générer un PDF interactif avec les données du formulaire pour périphériques mobiles.
+Le code suivant utilise l’ [API du service Forms](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/forms/api/FormsService.html) pour effectuer le rendu PDF interactif avec les données du formulaire mobile.
 
 ```java
 public Document mobileFormToInteractivePdf(Document xmlData,String path) {
@@ -149,7 +148,7 @@ public Document mobileFormToInteractivePdf(Document xmlData,String path) {
 }
 ```
 
-Pour vue la possibilité de télécharger un PDF interactif à partir d’un formulaire mobile partiellement rempli, [cliquez ici](https://forms.enablementadobe.com/content/dam/formsanddocuments/schengen.xdp/jcr:content).
-Une fois le fichier PDF téléchargé, l’étape suivante consiste à envoyer le fichier PDF pour déclencher un processus AEM. Ce processus fusionne les données du PDF envoyé et génère un PDF non interactif en révision.
+Pour afficher la possibilité de télécharger un PDF interactif à partir d’un formulaire mobile partiellement rempli, [cliquez ici](https://forms.enablementadobe.com/content/dam/formsanddocuments/schengen.xdp/jcr:content).
+Une fois le fichier PDF téléchargé, l’étape suivante consiste à envoyer le fichier PDF pour déclencher un processus AEM. Ce processus fusionne les données du PDF envoyé et génère un fichier PDF non interactif en vue de sa révision.
 
-Le profil personnalisé créé pour ce cas d’utilisation est disponible dans le cadre de ces ressources de didacticiel.
+Le profil personnalisé créé pour ce cas d’utilisation est disponible dans le cadre de ces ressources de tutoriel.
