@@ -1,31 +1,30 @@
 ---
 title: Présentation de la visionneuse d’éléments avec AEM Dynamic Media
-description: AEM les améliorations apportées au lecteur Dynamic Media permettent aux AEM auteurs de définir et de personnaliser les ressources d’expérience seront présentées aux utilisateurs du site Web.
-sub-product: media classic
-feature: Viewer Presets, Image Profiles
+description: AEM améliorations apportées à la visionneuse Dynamic Media permettent AEM aux auteurs de définir et de personnaliser les ressources d’expérience qui seront présentées aux utilisateurs du site web.
+sub-product: dynamic media classic
+feature: Paramètres prédéfinis de la visionneuse, profils d’image
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: Gestion de contenu
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 14%
+source-wordcount: '130'
+ht-degree: 13%
 
 ---
 
 
 # Présentation de la visionneuse d’éléments avec AEM Dynamic Media{#understanding-the-asset-viewer-with-aem-dynamic-media}
 
-AEM les améliorations apportées au lecteur Dynamic Media permettent aux AEM auteurs de définir et de personnaliser les ressources d’expérience seront présentées aux utilisateurs du site Web.
+AEM améliorations apportées à la visionneuse Dynamic Media permettent AEM aux auteurs de définir et de personnaliser les ressources d’expérience qui seront présentées aux utilisateurs du site web.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17783/?quality=9&learn=on)
 
 Voici quelques améliorations majeures :
 
-* Sélectionnez intuitivement un élément de visionneuse à partir du paramètre prédéfini de visionneuse et personnalisez les paramètres, sans avoir à connaître le composant de visionneuse.
-* Conseils pratiques pour les modificateurs expliquant les paramètres et paramètres de la visionneuse.
-* Afficher/masquer l’option CSS pour effectuer des modifications CSS avancées. Possibilité d’importer du CSS personnalisé.
-* Galerie de boutons hotspot prêtes à l&#39;emploi qui minimise le développement de nouveaux boutons.
-* Fonctionnalité de rendu des illustrations de bouton haute résolution pour les écrans Retina.
+* Sélectionnez intuitivement un élément de visionneuse à partir du paramètre prédéfini de la visionneuse et personnalisez les paramètres, sans avoir à connaître le composant de visionneuse.
+* Conseils utiles pour les modificateurs expliquant les paramètres et les paramètres de la visionneuse.
+* Option Afficher/Masquer CSS pour effectuer des modifications CSS avancées. Possibilité d’importer du code CSS personnalisé.
+* Galerie de boutons de zone réactive prêts à l’emploi qui minimise le développement de nouveaux boutons.
+* Fonctionnalité de rendu d’illustration de bouton haute résolution pour les écrans Retina.
