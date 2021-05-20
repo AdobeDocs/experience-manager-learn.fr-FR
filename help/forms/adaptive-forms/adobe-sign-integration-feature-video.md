@@ -1,8 +1,8 @@
 ---
-title: Utilisation de Adobe Sign avec AEM Forms
-seo-title: Utilisation de Adobe Sign avec AEM Forms
-description: Utilisation de Adobe Sign avec AEM Forms
-seo-description: Utilisation de Adobe Sign avec AEM Forms
+title: Utilisation d’Adobe Sign avec AEM Forms
+seo-title: Utilisation d’Adobe Sign avec AEM Forms
+description: Utilisation d’Adobe Sign avec AEM Forms
+seo-description: Utilisation d’Adobe Sign avec AEM Forms
 uuid: cbccea0f-969c-445d-9390-a236bb1fd2c4
 products: SG_EXPERIENCEMANAGER/6.3/FORMS, SG_ESIGNSERVICES
 topic-tags: forms, adaptive_forms
@@ -11,7 +11,6 @@ targetaudience: target-audience advanced
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
 source-git-commit: 4e1db553d9e8b4fcf5460c805874d3fc2ae5527c
 workflow-type: tm+mt
 source-wordcount: '91'
@@ -20,9 +19,9 @@ ht-degree: 0%
 ---
 
 
-# Utilisation de Adobe Sign avec AEM Forms{#using-adobe-sign-with-aem-forms}
+# Utilisation d’Adobe Sign avec AEM Forms{#using-adobe-sign-with-aem-forms}
 
-Utilisation de Adobe Sign avec AEM Forms
+Utilisation d’Adobe Sign avec AEM Forms
 
 >[!VIDEO](https://video.tv.adobe.com/v/18696?quality=9&learn=on)
 
@@ -30,6 +29,6 @@ Utilisation de Adobe Sign avec AEM Forms
 
 >[!NOTE]
 >
->Cette fonction est disponible uniquement à partir de AEM version 6.3.
+>Cette fonctionnalité est disponible uniquement avec AEM version 6.3 et ultérieure.
 
-Consultez la page [Exemples d&#39;AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
+Consultez la page [Exemples AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
