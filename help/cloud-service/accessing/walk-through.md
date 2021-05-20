@@ -1,7 +1,7 @@
 ---
-title: Configuration de l’accès à AEM parcours
-description: Configuration simplifiée des utilisateurs IMS, groupes d’utilisateurs et Profils de produits Adobes dans la Console d’administration des Adobes et comment exploiter ces abstractions IMS Adobes dans AEM Author pour définir et gérer des autorisations spécifiques basées sur des groupes.
-feature: Users and Groups
+title: Configuration de l’accès à la présentation d’AEM
+description: Cette section décrit brièvement la procédure à suivre pour configurer les utilisateurs IMS, les groupes d’utilisateurs et les profils de produits Adobes dans Adobe Admin Console, ainsi que la manière d’exploiter ces abstractions IMS d’Adobe dans AEM Author pour définir et gérer des autorisations spécifiques basées sur des groupes.
+feature: 'Utilisateurs et groupes '
 topics: authentication, permissions
 version: cloud-service
 activity: setup
@@ -9,25 +9,24 @@ audience: administrator
 doc-type: technical video
 kt: 6061
 thumbnail: 39155.jpg
-topic: Administration, Security
+topic: Administration, sécurité
 role: Administrator
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 3%
+source-wordcount: '120'
+ht-degree: 2%
 
 ---
 
 
-# Configuration de l’accès à AEM parcours
+# Configuration de l’accès à la présentation d’AEM
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_aem_walkthrough"
->title="Configuration de l’accès à AEM parcours"
->abstract="Cette section décrit brièvement la procédure à suivre pour configurer les utilisateurs IMS, les groupes d’utilisateurs et les Profils de produits Adobes dans Adobe Admin Console et comment exploiter ces abstractions IMS Adobes dans AEM Author pour définir et gérer des autorisations spécifiques basées sur des groupes."
+>title="Configuration de l’accès à la présentation d’AEM"
+>abstract="Présentation rapide de la configuration des utilisateurs IMS, des groupes d’utilisateurs et des profils de produits Adobe IMS dans Adobe Admin Console et de la manière d’exploiter ces abstractions IMS d’Adobe dans l’auteur AEM pour définir et gérer des autorisations spécifiques basées sur des groupes."
 
-Configuration simplifiée des utilisateurs IMS, groupes d’utilisateurs et Profils de produits Adobes dans la Console d’administration des Adobes et comment exploiter ces abstractions IMS Adobes dans AEM Author pour définir et gérer des autorisations spécifiques basées sur des groupes.
+Cette section décrit brièvement la procédure à suivre pour configurer les utilisateurs IMS, les groupes d’utilisateurs et les profils de produits Adobes dans Adobe Admin Console, ainsi que la manière d’exploiter ces abstractions IMS d’Adobe dans AEM Author pour définir et gérer des autorisations spécifiques basées sur des groupes.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39155/?quality=12&learn=on)
