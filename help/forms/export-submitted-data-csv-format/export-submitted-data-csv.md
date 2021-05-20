@@ -1,54 +1,53 @@
 ---
 title: Exportation des données de formulaire envoyées au format CSV
 description: Exportation des données de formulaire adaptatif envoyées au format CSV
-feature: Adaptive Forms
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: article
 activity: implement
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '401'
 ht-degree: 1%
 
 ---
 
 # Présentation
 
-Les clients souhaitent généralement exporter les données de formulaire envoyées au format CSV. Cet article décrit les étapes nécessaires à l’exportation des données de formulaire au format CSV. Cet article suppose que les envois de formulaire sont stockés dans la table RDBMS. La capture d’écran suivante détaille la structure de tableau minimale requise pour stocker les envois de formulaire.
+Les clients souhaitent généralement exporter les données de formulaire envoyées au format CSV. Cet article décrit les étapes à suivre pour exporter les données de formulaire au format CSV. Cet article suppose que les envois de formulaire sont stockés dans la table SGBDR. La capture d’écran suivante présente la structure de tableau minimale requise pour stocker les envois de formulaire.
 
 >[!NOTE]
 >
->Cet exemple fonctionne uniquement avec la Forms adaptative qui n’est pas basée sur un Schéma ou un modèle de données de formulaire.
+>Cet exemple fonctionne uniquement avec le Forms adaptatif qui n’est pas basé sur un schéma ou un modèle de données de formulaire.
 
-![Structure ](assets/tablestructure.PNG)
-du tableauComme vous pouvez le voir, le nom du schéma est aemformstutorial.Dans ce schéma se trouve le tableau formSubmissions avec les colonnes suivantes définies
+![](assets/tablestructure.PNG)
+Structure du tableauComme vous pouvez le voir, le nom du schéma est aemformstutorial. Dans ce schéma se trouvent les envois de formulaires de tableau avec les colonnes suivantes définies
 
 * formdata: Cette colonne contiendra les données de formulaire envoyées
-* formname : Cette colonne contiendra le nom du formulaire envoyé.
-* id: Il s’agit de la clé Principale et elle est définie sur auto-incrémentation.
+* formname: Cette colonne contiendra le nom du formulaire envoyé.
+* id: Il s’agit de la clé Principale qui est définie sur auto-incrémentation.
 
 Le nom de la table et les noms à deux colonnes sont exposés en tant que propriétés de configuration OSGi, comme illustré dans la capture d’écran ci-dessous :
 ![osgi-configuration](assets/configuration.PNG)
 Le code lit ces valeurs et construit la requête SQL appropriée à exécuter. Par exemple, la requête suivante sera exécutée en fonction des valeurs ci-dessus.
-**SÉLECTIONNER les données de formulaire DEPUIS aemformstutorial.formSubmissions où formname=timeoffrequest tform**
-Dans la requête ci-dessus, le nom du formulaire (timeoffrequestform) sera transmis en tant que paramètre de requête à la servlet.
+**SELECT formdata FROM aemformstutorial.formsubmission où formname=timeoffrequestform**
+Dans la requête ci-dessus, le nom du formulaire (timeoffrequestform) sera transmis en tant que paramètre de requête au servlet.
 
-## **Créer un service OSGi**
+## **Création d’un service OSGi**
 
 Le service OSGI suivant a été créé pour exporter les données envoyées au format CSV.
 
-* Ligne 37 : Nous accédons à la source de données en pool Apache Sling Connection.
+* Ligne 37 : Nous accédons à Apache Sling Connection Pooled DataSource.
 
-* Ligne 89 : Il s&#39;agit du point d&#39;entrée du service. La méthode `getCSVFile(..)` utilise formName comme paramètre d&#39;entrée et récupère les données envoyées relatives au nom de formulaire donné.
+* Ligne 89 : Il s’agit du point d’entrée du service. La méthode `getCSVFile(..)` utilise formName comme paramètre d’entrée et récupère les données envoyées concernant le nom de formulaire donné.
 
 >[!NOTE]
 >
->Le code suppose que vous avez défini la connexion mise en pool de DataSource appelée &quot;aemformstutorial&quot; dans la console Web Felix. Le code suppose également que vous disposez d&#39;un schéma dans la base de données appelé aemformstutorial.
+>Le code suppose que vous avez défini la connexion pool de DataSource appelée &quot;aemformstutorial&quot; dans la console web Felix. Le code suppose également que vous disposez d’un schéma dans la base de données appelé aemformstutorial.
 
 ```java
 package com.aemforms.storeandexport.core;
@@ -241,7 +240,7 @@ public class StoreAndExportImpl implements StoreAndExport {
 
 ## Service de configuration
 
-Nous avons exposé les trois propriétés suivantes en tant que propriétés de configuration OSGI. La requête SQL est construite en lisant ces valeurs au moment de l&#39;exécution.
+Nous avons exposé les trois propriétés suivantes en tant que propriétés de configuration OSGI. La requête SQL est construite en lisant ces valeurs au moment de l’exécution.
 
 ```java
 package com.aemforms.storeandexport.core;
@@ -264,7 +263,7 @@ public @interface StoreAndExportConfiguration {
 
 ## Servlet
 
-Voici le code de servlet qui appelle la méthode `getCSVFile(..)` du service. Le service renvoie l&#39;objet StringBuffer qui est ensuite redirigé vers l&#39;application appelante.
+Voici le code de servlet qui appelle la méthode `getCSVFile(..)` du service. Le service renvoie l’objet StringBuffer qui est ensuite diffusé en continu à l’application appelante.
 
 ```java
 package com.aemforms.storeandexport.core.servlets;
@@ -306,6 +305,6 @@ public class StreamCSVFile extends SlingAllMethodsServlet {
 
 ### Déployer sur votre serveur
 
-* Importez le [fichier SQL](assets/formsubmissions.sql) dans le serveur MySQL à l’aide de MySQL Workbench. Ceci crée un schéma appelé **aemformstutorial** et un tableau appelé **formSubmissions** avec quelques données d’exemple.
-* Déployez [OSGi Bundle](assets/store-export.jar) à l’aide de la console Web Felix.
-* [Pour obtenir des envois](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform) TimeOffRequest. Vous devez récupérer le fichier CSV en flux continu.
+* Importez le [fichier SQL](assets/formsubmissions.sql) dans le serveur MySQL à l’aide de MySQL Workbench. Cela crée un schéma appelé **aemformstutorial** et un tableau appelé **formSubmissions** avec des exemples de données.
+* Déployez [OSGi Bundle](assets/store-export.jar) à l’aide de la console web Felix.
+* [Pour obtenir des envois TimeOffRequest](http://localhost:4502/bin/streamformdata?formName=timeoffrequestform). Vous devriez recevoir un fichier CSV en continu.
