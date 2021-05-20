@@ -1,5 +1,5 @@
 ---
-title: Autres outils de débogage du SDK AEM
+title: Autres outils de débogage AEM SDK
 description: Divers autres outils peuvent vous aider à déboguer le démarrage rapide local du SDK AEM.
 feature: Outils de développement
 topics: development
@@ -11,7 +11,6 @@ kt: 5251
 topic: Développement
 role: Developer
 level: Beginner, Intermediate
-translation-type: tm+mt
 source-git-commit: 5fcc7eec120debf1a8ac08716154599467e66759
 workflow-type: tm+mt
 source-wordcount: '222'
@@ -20,7 +19,7 @@ ht-degree: 13%
 ---
 
 
-# Autres outils de débogage du SDK AEM
+# Autres outils de débogage AEM SDK
 
 Divers autres outils peuvent vous aider à déboguer votre application sur le démarrage rapide local du SDK AEM.
 
@@ -28,9 +27,9 @@ Divers autres outils peuvent vous aider à déboguer votre application sur le d�
 
 ![CRXDE Lite](./assets/other-tools/crxde-lite.png)
 
-CRXDE Lite est une interface Web permettant d’interagir avec le référentiel de données JCR, AEM référentiel de données. Le CRXDE Lite offre une visibilité complète dans le JCR, y compris les noeuds, les propriétés, les valeurs de propriété et les autorisations.
+CRXDE Lite est une interface web permettant d’interagir avec le référentiel de données JCR AEM. CRXDE Lite offre une visibilité totale sur le JCR, y compris les noeuds, les propriétés, les valeurs de propriété et les autorisations.
 
-Le CRXDE Lite se trouve à :
+CRXDE Lite se trouve à l’adresse :
 
 + Outils > Général > CRXDE Lite
 + ou directement à [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
@@ -39,20 +38,20 @@ Le CRXDE Lite se trouve à :
 
 ![Expliquer la requête](./assets/other-tools/explain-query.png)
 
-Explique l&#39;outil web de Requête dans le démarrage rapide local de AEM SDK, qui fournit des informations clés sur la façon dont AEM interprète et exécute les requêtes, et un outil inestimable pour s&#39;assurer que les requêtes sont exécutées de manière performante par l&#39;AEM.
+Explique l’outil Web Query dans le fichier quickstart local du SDK AEM, qui fournit des informations clés sur la manière dont AEM interprète et exécute les requêtes, ainsi qu’un outil inestimable pour s’assurer que les requêtes sont exécutées de manière performante par l’.
 
-La Requête d&#39;explication se trouve à l&#39;adresse :
+Expliquer la requête se trouve à l’adresse :
 
-+ Outils > Diagnostic > Performances des Requêtes > Onglet Expliquer la Requête
-+ [http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) > onglet Requête d’explication
++ Outils > Diagnostic > Performances des requêtes > Onglet Expliquer la requête
++ [http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html)  > Onglet Expliquer la requête
 
 ## Débogueur QueryBuilder
 
 ![Débogueur QueryBuilder](./assets/other-tools/query-debugger.png)
 
-Le débogueur QueryBuilder est un outil Web qui vous permet de déboguer et de comprendre les requêtes de recherche en utilisant la syntaxe [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html) AEM.
+Le débogueur QueryBuilder est un outil Web qui vous aide à déboguer et à comprendre les requêtes de recherche à l’aide de la syntaxe AEM [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
 
-Le débogueur QueryBuilder se trouve à l’emplacement suivant :
+QueryBuilder Debugger se trouve à l’emplacement suivant :
 
 + [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 
