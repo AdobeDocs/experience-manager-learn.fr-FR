@@ -1,9 +1,9 @@
 ---
-title: Ecriture d’un envoi personnalisé en AEM Forms
-seo-title: Ecriture d’un envoi personnalisé en AEM Forms
-description: Méthode simple et rapide de création de votre propre action d’envoi personnalisée pour le formulaire adaptatif
-seo-description: Méthode simple et rapide de création de votre propre action d’envoi personnalisée pour le formulaire adaptatif
-feature: Adaptive Forms
+title: Écriture d’un envoi personnalisé dans AEM Forms
+seo-title: Écriture d’un envoi personnalisé dans AEM Forms
+description: Méthode rapide et simple pour créer votre propre action d’envoi personnalisée pour le formulaire adaptatif
+seo-description: Méthode rapide et simple pour créer votre propre action d’envoi personnalisée pour le formulaire adaptatif
+feature: Formulaires adaptatifs
 topics: integrations
 audience: developer
 doc-type: article
@@ -11,34 +11,33 @@ activity: implement
 version: 6.3,6.4,6.5
 uuid: a26db0b9-7db4-4e80-813d-5c0438fabd1e
 discoiquuid: 28611011-2ff9-477e-b654-e62e7374096a
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 4%
+source-wordcount: '230'
+ht-degree: 3%
 
 ---
 
 
-# Ecriture d’un envoi personnalisé en AEM Forms {#writing-a-custom-submit-in-aem-forms}
+# Écriture d’un envoi personnalisé dans AEM Forms {#writing-a-custom-submit-in-aem-forms}
 
-Méthode simple et rapide de création de votre propre action d’envoi personnalisée pour le formulaire adaptatif
+Méthode rapide et simple pour créer votre propre action d’envoi personnalisée pour le formulaire adaptatif
 
-Cet article décrit les étapes nécessaires à la création d’une action d’envoi personnalisée pour la gestion de l’envoi de Forms adaptatif.
+Cet article décrit les étapes nécessaires à la création d’une action d’envoi personnalisée pour gérer l’envoi d’un Forms adaptatif.
 
 * Connexion à crx
-* Créez un noeud de type &quot;sling:folder&quot; sous applications. Appelons ce noeud CustomSubmitHelpx.
-* Enregistrez le nouveau noeud.
-* Ajouter les deux propriétés suivantes au noeud nouvellement créé
-* PropertyName       | Valeur de propriété
+* Créez un noeud de type &quot;sling:folder&quot; sous apps. Appelons ce noeud CustomSubmitHelpx.
+* Enregistrez le noeud que vous venez de créer.
+* Ajoutez les deux propriétés suivantes au noeud que vous venez de créer.
+* PropertyName       | Valeur de la propriété
 * guideComponentType | fd/af/components/guidesubmittype
 * guideDataModel     | xfa,xsd,basic
 * jcr:description   | CustomSubmitHelpx
 * Enregistrez les modifications
-* Créez un nouveau fichier nommé post.POST.jsp sous le noeud CustomSubmitHelpx.Lorsqu’un formulaire adaptatif est envoyé, ce JSP est appelé. Vous pouvez écrire le code JSP en fonction de vos besoins dans ce fichier. Le code suivant transfère la demande à la servlet.
+* Créez un nouveau fichier nommé post.POST.jsp sous le noeud CustomSubmitHelpx . Lorsqu’un formulaire adaptatif est envoyé, ce JSP est appelé. Vous pouvez écrire le code JSP selon vos besoins dans ce fichier. Le code suivant transfère la demande au servlet.
 
 ```java
 <%
@@ -55,8 +54,8 @@ Cet article décrit les étapes nécessaires à la création d’une action d’
 %>
 ```
 
-* Créez un fichier appelé addfields .jsp sous le noeud CustomSubmitHelpx. Ce fichier vous permet d&#39;accéder au document signé.
-* Ajouter le code suivant dans ce fichier
+* Créez un fichier appelé addfields .jsp sous le noeud CustomSubmitHelpx . Ce fichier permet d’accéder au document signé.
+* Ajoutez le code suivant à ce fichier.
 
 ```java
     <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -70,7 +69,7 @@ Cet article décrit les étapes nécessaires à la création d’une action d’
 
 * Enregistrez vos modifications
 
-Vous allez maintenant début de voir &quot;CustomSubmitHelpx&quot; dans les actions d&#39;envoi de votre formulaire adaptatif comme illustré dans cette image.
+Vous allez maintenant voir &quot;CustomSubmitHelpx&quot; dans les actions d’envoi de votre formulaire adaptatif comme illustré dans cette image.
 
 ![Formulaire adaptatif avec envoi personnalisé](assets/capture-2.gif)
 
