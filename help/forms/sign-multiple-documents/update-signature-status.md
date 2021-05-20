@@ -1,7 +1,7 @@
 ---
-title: Mettre à jour le statut de signature du formulaire dans la base de données
-description: Mettez à jour l’état de signature du formulaire signé dans la base de données à l’aide du processus AEM.
-feature: Adaptive Forms
+title: Mettre à jour l’état de signature du formulaire dans la base de données
+description: Mettre à jour l’état de signature du formulaire signé dans la base de données à l’aide du workflow AEM
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,27 +9,26 @@ activity: implement
 version: 6.4,6.5
 kt: 6888
 thumbnail: 6888.jpg
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 4%
+source-wordcount: '107'
+ht-degree: 3%
 
 ---
 
 
-# Mettre à jour l’état de la signature
+# Mettre à jour l’état de signature
 
-Le flux de travaux UpdateSignatureStatus est déclenché lorsque l’utilisateur a terminé la cérémonie de signature. Voici le flux de travail :
+Le workflow UpdateSignatureStatus est déclenché lorsque l’utilisateur a terminé la cérémonie de signature. Voici le flux du workflow :
 
-![processus principal](assets/update-signature.PNG)
+![main-workflow](assets/update-signature.PNG)
 
 Mettre à jour le statut de la signature est une étape de processus personnalisée.
-La principale raison de la mise en oeuvre de l’étape de processus personnalisé est d’étendre un flux de travail AEM. Voici le code personnalisé utilisé pour mettre à jour l’état de la signature.
-Le code de cette étape de processus personnalisé référence le service SignMultipleForms.
+La principale raison de l’implémentation de l’étape de processus personnalisé est d’étendre un processus AEM. Voici le code personnalisé utilisé pour mettre à jour l’état de la signature.
+Le code de cette étape de processus personnalisée référence le service SignMultipleForms.
 
 
 ```java
