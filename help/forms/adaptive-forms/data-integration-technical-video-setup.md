@@ -1,9 +1,9 @@
 ---
 title: Configuration de l’intégration des données avec AEM Forms
 seo-title: Configuration de l’intégration des données avec AEM Forms
-description: Configuration de la connexion de données à une source de données JDBC
-seo-description: Configuration de la connexion de données à une source de données JDBC
-feature: Adaptive Forms,Workflow
+description: Configuration de la connexion des données à une source de données JDBC
+seo-description: Configuration de la connexion des données à une source de données JDBC
+feature: Forms adaptatif,Workflow
 topics: integrations
 audience: developer
 doc-type: technical video
@@ -11,21 +11,20 @@ activity: setup
 version: 6.4,6.5
 uuid: 267de794-4462-4421-adee-d40a469fabb3
 discoiquuid: 41864584-cb99-4c54-abda-8eb83829cb90
-topic: Development
+topic: Développement
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 12%
+source-wordcount: '94'
+ht-degree: 11%
 
 ---
 
 
-# Configurer l&#39;intégration des données avec AEM Forms {#set-up-data-integration-with-aem-forms}
+# Configuration de l’intégration des données avec AEM Forms {#set-up-data-integration-with-aem-forms}
 
-Configuration de la connexion de données à une source de données JDBC
+Configuration de la connexion des données à une source de données JDBC
 
 >[!VIDEO](https://video.tv.adobe.com/v/17724/?quality=9&learn=on)
 
@@ -33,9 +32,9 @@ Configuration de la connexion de données à une source de données JDBC
 >
 >Les pilotes JDBC MySQL doivent être installés via des lots OSGi sur l’instance AEM.
 
-## Documents d&#39;appui {#supporting-materials}
+## Documents complémentaires {#supporting-materials}
 
-* [Téléchargement du lot MySQL JDBC OSGi](https://dev.mysql.com/downloads/connector/j/)
+* [Téléchargement du bundle OSGi JDBC MySQL](https://dev.mysql.com/downloads/connector/j/)
 
-   * Téléchargez, décompressez et installez le fichier JAR via [AEM Web Console](http://localhost:4502/system/console/bundles).
+   * Téléchargez, décompressez et installez le fichier JAR via la [console web AEM](http://localhost:4502/system/console/bundles)
 
