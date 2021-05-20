@@ -1,14 +1,13 @@
 ---
 title: Utilisation du catalogue de ressources avec AEM Commerce et InDesign Server
-description: AEM 6.4 Amélioration du catalogue permet de créer des pages de catalogue à l’aide de modèles et d’InDesigns Server AEM de ressources.  Un utilisateur peut créer une page de catalogue à l’aide du modèle d’InDesign et mapper les propriétés du produit aux champs modifiables, qui pourront être ultérieurement utilisés pour créer des pages similaires pour différents produits.
+description: L’amélioration du catalogue d’AEM 6.4 permet de créer des pages de catalogue à l’aide de modèles de ressources et d’InDesign Server AEM.  Un utilisateur peut créer une page de catalogue à l’aide du modèle d’InDesign et mapper les propriétés de produit aux champs modifiables, qui peuvent ensuite être utilisés pour créer des pages similaires pour différents produits.
 version: 6.3, 6.4, 6.5
-topic: Content Management
+topic: Gestion de contenu
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
@@ -16,16 +15,16 @@ ht-degree: 0%
 
 # Utilisation du catalogue de ressources avec AEM Commerce et InDesign Server{#using-asset-catalog-with-aem-commerce-and-indesign-server}
 
-AEM 6.4 Amélioration du catalogue permet de créer des pages de catalogue à l’aide de modèles et d’InDesigns Server AEM de ressources.  Un utilisateur peut créer une page de catalogue à l’aide du modèle d’InDesign et mapper les propriétés du produit aux champs modifiables, qui pourront être ultérieurement utilisés pour créer des pages similaires pour différents produits.
+L’amélioration du catalogue d’AEM 6.4 permet de créer des pages de catalogue à l’aide de modèles de ressources et d’InDesign Server AEM.  Un utilisateur peut créer une page de catalogue à l’aide du modèle d’InDesign et mapper les propriétés de produit aux champs modifiables, qui peuvent ensuite être utilisés pour créer des pages similaires pour différents produits.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22540/)
 
 >[!NOTE]
 >
->Votre serveur d&#39;InDesigns doit être en cours d&#39;exécution avant de télécharger les fichiers \.indd vers AEM Assets.
+>Votre serveur InDesign doit être en cours d’exécution avant de charger les fichiers \.indd vers AEM Assets.
 
-* Les utilisateurs créatifs peuvent baliser du contenu à l’aide d’un fichier d’InDesign. Lorsqu’un fichier d’InDesign comportant du contenu balisé est téléchargé vers AEM Assets, il est identifié comme champs modifiables.
-* Un utilisateur peut créer une page Catalogue à l’aide d’un fichier \.indd. Le contenu balisé dans le fichier \.indd est disponible en tant que champs modifiables, ce qui permet aux auteurs de contenu de modifier le contenu de ces champs.
-* Les propriétés du produit peuvent être mises en correspondance avec les champs modifiables à condition que leur type de champ corresponde.
+* Les utilisateurs créatifs peuvent baliser le contenu avec un fichier d’InDesign. Un fichier d’InDesign avec du contenu balisé, lorsqu’il est transféré vers AEM Assets, est identifié comme champs modifiables.
+* Un utilisateur peut créer une page Catalogue à l’aide d’un fichier \.indd . Le contenu balisé dans le fichier \.indd est disponible sous forme de champs modifiables, ce qui permet aux auteurs de contenu de modifier le contenu de ces champs.
+* Les propriétés de produit peuvent être mappées à des champs modifiables à condition que leur type de champ corresponde.
 * Il est facile de créer des pages de catalogue pour des produits similaires.
 * Possibilité de fusionner différentes pages de catalogue en un seul fichier PDF ou \.indd
