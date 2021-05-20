@@ -1,6 +1,6 @@
 ---
 title: Présentation du Dispatcher
-description: Cette section présente les capacités et les caractéristiques du répartiteur dans le cadre de l'architecture AEM.
+description: Cette section présente les fonctionnalités du Dispatcher dans le cadre de l’architecture AEM.
 feature: Dispatcher
 topics: architecture
 audience: administrator, developer
@@ -9,21 +9,20 @@ activity: understand
 version: cloud-service
 kt: 4644
 thumbnail: 32029.jpg
-topic: Architecture, Performance
+topic: Architecture, performance
 role: Architect, Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 28%
+source-wordcount: '50'
+ht-degree: 30%
 
 ---
 
 
 # Introduction à [!DNL Dispatcher] {#introduction-dispatcher}
 
-Cette section présente les fonctionnalités et les caractéristiques de [!DNL dispatcher] dans le cadre de l&#39;architecture AEM.
+Présentation des fonctionnalités de [!DNL dispatcher] dans le cadre de l’architecture AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32029/?quality=12&learn=on)
 
