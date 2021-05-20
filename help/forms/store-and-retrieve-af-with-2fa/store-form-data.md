@@ -1,7 +1,7 @@
 ---
 title: Stocker les données de formulaire
-description: Stockage des données de formulaire avec le nouveau mappage de pièces jointes dans la base de données
-feature: Adaptive Forms
+description: Stocker les données de formulaire avec le nouveau mappage de pièces jointes dans la base de données
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,21 +9,20 @@ activity: implement
 version: 6.3,6.4,6.5
 kt: 6538
 thumbnail: 6538.jpg
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 5%
+source-wordcount: '72'
+ht-degree: 4%
 
 ---
 
 # Stocker les données de formulaire
 
-L’étape suivante consiste à créer un service pour insérer une nouvelle ligne dans la base de données afin de stocker les données du formulaire adaptatif et les informations de pièces jointes associées.
-La capture d’écran suivante montre une ligne de la base de données.
+L’étape suivante consiste à créer un service pour insérer une nouvelle ligne dans la base de données afin de stocker les données de formulaire adaptatif et les informations sur les pièces jointes associées.
+La capture d’écran suivante montre une ligne dans la base de données.
 
 
 ![exemple de ligne](assets/sample-row.JPG)
