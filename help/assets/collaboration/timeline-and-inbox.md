@@ -1,6 +1,6 @@
 ---
 title: Chronologie et boîte de réception
-description: Familiarisez-vous avec les consoles Web clés en AEM Assets utilisées pour la collaboration.
+description: Familiarisez-vous avec les consoles web clés d’AEM Assets utilisées pour la collaboration.
 sub-product: ressources
 feature: Workflow
 version: cloud-service
@@ -9,10 +9,9 @@ thumbnail: 32051.jpg
 topic: Collaboration
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '42'
+source-wordcount: '39'
 ht-degree: 7%
 
 ---
@@ -20,6 +19,6 @@ ht-degree: 7%
 
 # Chronologie et boîte de réception
 
-Familiarisez-vous avec les consoles Web clés en AEM Assets utilisées pour la collaboration.
+Familiarisez-vous avec les consoles web clés d’AEM Assets utilisées pour la collaboration.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32051/?quality=12&learn=on&hidetitle=true)
