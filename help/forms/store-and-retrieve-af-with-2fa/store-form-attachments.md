@@ -1,7 +1,7 @@
 ---
-title: Stocker les pièces jointes aux formulaires
+title: Stocker les pièces jointes de formulaire
 description: Extrayez les pièces jointes du formulaire et stockez-les à un nouvel emplacement dans le référentiel CRX.
-feature: Adaptive Forms
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,23 +9,22 @@ activity: implement
 version: 6.4,6.5
 kt: 6537
 thumbnail: 6537.jpg
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 2%
+source-wordcount: '189'
+ht-degree: 1%
 
 ---
 
-# Stocker les pièces jointes aux formulaires
+# Stocker les pièces jointes de formulaire
 
-Lorsque vous ajoutez des pièces jointes à un formulaire adaptatif, les pièces jointes sont stockées à un emplacement temporaire dans le référentiel CRX. Pour que notre cas d’utilisation fonctionne, nous devons stocker les pièces jointes au formulaire à un nouvel emplacement dans le référentiel CRX.
+Lorsque vous ajoutez des pièces jointes à un formulaire adaptatif, les pièces jointes sont stockées à un emplacement temporaire dans le référentiel CRX. Pour que notre cas d’utilisation fonctionne, nous devons stocker les pièces jointes de formulaire à un nouvel emplacement dans le référentiel CRX.
 
-Le service OSGi est créé pour stocker les pièces jointes du formulaire à un nouvel emplacement dans le référentiel CRX. Un nouveau mappage de fichiers est créé avec le nouvel emplacement des pièces jointes dans le CRX et renvoyé à l’application appelante.
-Voici le FileMap qui est envoyé à la servlet. La clé est le champ de formulaire adaptatif et la valeur est l’emplacement temporaire de la pièce jointe. Dans notre servlet, nous allons extraire la pièce jointe et la stocker dans un nouvel emplacement dans le référentiel AEM et mettre à jour FileMap avec le nouvel emplacement
+Le service OSGi est créé pour stocker les pièces jointes de formulaire à un nouvel emplacement dans le référentiel CRX. Un nouveau mappage de fichiers est créé avec le nouvel emplacement des pièces jointes dans le CRX et renvoyé à l’application appelante.
+Voici le FileMap envoyé au servlet. La clé est le champ de formulaire adaptatif et la valeur est l’emplacement temporaire de la pièce jointe. Dans notre servlet, nous allons extraire la pièce jointe et la stocker à un nouvel emplacement dans le référentiel AEM et mettre à jour FileMap avec le nouvel emplacement.
 
 ```java
 {
@@ -34,7 +33,7 @@ Voici le FileMap qui est envoyé à la servlet. La clé est le champ de formulai
 }
 ```
 
-Le code suivant extrait les pièces jointes de la requête et les stocke dans le dossier **/content/afattachments**.
+Voici le code qui extrait les pièces jointes de la requête et les stocke dans le dossier **/content/attachments**
 
 ```java
 public String storeAFAttachments(JSONObject fileMap, SlingHttpServletRequest request) {
