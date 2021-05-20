@@ -1,35 +1,34 @@
 ---
-title: Chapitre 3 - Création de fragments de contenu de Événement - Content Services
-seo-title: Prise en main de AEM Content Services - Chapitre 3 - Création de fragments de contenu de Événement
-description: Le chapitre 3 du didacticiel AEM sans en-tête couvre la création et la création de fragments de contenu de Événement à partir du modèle de fragment de contenu créé dans le chapitre 2.
-seo-description: Le chapitre 3 du didacticiel AEM sans en-tête couvre la création et la création de fragments de contenu de Événement à partir du modèle de fragment de contenu créé dans le chapitre 2.
-feature: Content Fragments, APIs
-topic: Headless, Content Management
+title: Chapitre 3 - Création de fragments de contenu d’événement - Content Services
+seo-title: Prise en main d’AEM Content Services - Chapitre 3 - Création de fragments de contenu d’événement
+description: Le chapitre 3 du tutoriel AEM sans affichage porte sur la création et la création de fragments de contenu d’événement à partir du modèle de fragment de contenu créé dans le chapitre 2.
+seo-description: Le chapitre 3 du tutoriel AEM sans affichage porte sur la création et la création de fragments de contenu d’événement à partir du modèle de fragment de contenu créé dans le chapitre 2.
+feature: Fragments de contenu, API
+topic: Sans affichage, gestion de contenu
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 4%
+source-wordcount: '516'
+ht-degree: 3%
 
 ---
 
 
-# Chapitre 3 - Création de fragments de contenu de Événement
+# Chapitre 3 - Création de fragments de contenu d’événement
 
-Le chapitre 3 du didacticiel AEM sans en-tête couvre la création et la création de fragments de contenu de Événements à partir du modèle de fragment de contenu créé dans [Chapitre 2](./chapter-2.md).
+Le chapitre 3 du tutoriel AEM sans affichage porte sur la création et la création de fragments de contenu d’événements à partir du modèle de fragment de contenu créé dans [Chapitre 2](./chapter-2.md).
 
-## Création d’un fragment de contenu de Événement
+## Création d’un fragment de contenu d’événement
 
-Avec un modèle de fragment de contenu [!DNL Event] créé et la configuration AEM pour WKND appliquée au dossier `/content/dam/wknd-mobile` Actif (via la propriété `cq:conf`), un fragment de contenu [!DNL Event] peut être créé.
+Avec un [!DNL Event] modèle de fragment de contenu créé et la configuration d’AEM pour WKND appliquée au dossier `/content/dam/wknd-mobile` Ressource (via la propriété `cq:conf`), un fragment de contenu [!DNL Event] peut être créé.
 
-Les fragments de contenu, qui sont un type de ressource, doivent être organisés et gérés en AEM Assets, tout comme les autres ressources.
+Les fragments de contenu, qui sont un type de ressource, doivent être organisés et gérés dans AEM Assets comme les autres ressources.
 
-* Utiliser les dossiers de paramètres régionaux dans la structure de dossiers Ressources si la traduction est (ou peut être) requise
-* Organisez logiquement les fragments de contenu pour faciliter leur localisation et leur gestion.
+* Utilisez des dossiers de paramètres régionaux dans la structure de dossiers de ressources si la traduction est (ou peut être) requise.
+* Organisez de manière logique les fragments de contenu afin qu’ils soient faciles à localiser et à gérer
 
-Dans cette étape, créez un nouveau [!DNL Event] pour `Punkrock Fest` dans le dossier `/content/dam/wknd-mobile/en/events` ressources.
+Au cours de cette étape, créez un [!DNL Event] pour `Punkrock Fest` dans le dossier `/content/dam/wknd-mobile/en/events` ressources.
 
 1. Accédez à **[!UICONTROL AEM] > [!UICONTROL Ressources] > [!UICONTROL Fichiers] > [!DNL WKND Mobile] >[!DNL English]** et créez des dossiers de ressources **[!DNL Events]**.
 1. Dans **[!UICONTROL Ressources] > [!UICONTROL Fichiers] > [!DNL WKND Mobile] > [!DNL English] >[!DNL Events]** créez un fragment de contenu de type **[!DNL Event]** avec le titre **[!DNL Punkrock Fest]**.
@@ -46,7 +45,7 @@ Dans cette étape, créez un nouveau [!DNL Event] pour `Punkrock Fest` dans le d
 
    Appuyez sur **[!UICONTROL Enregistrer]** dans la barre d’actions supérieure pour enregistrer les modifications.
 
-1. A l’aide de [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp), installez le package ci-dessous sur AEM Author. Ce package contient plusieurs fragments de contenu Événement.
+1. À l’aide de [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp), installez le package ci-dessous sur AEM Author. Ce package contient un certain nombre de fragments de contenu d’événement.
 
    [Obtenir le fichier : GitHub > Ressources > com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 
@@ -54,19 +53,19 @@ Dans cette étape, créez un nouveau [!DNL Event] pour `Punkrock Fest` dans le d
 
 ## Vérification de la structure JCR du fragment de contenu
 
-*Cette section est uniquement à titre d’information et vise à socialiser la structure JCR sous-jacente des fragments de contenu créés à partir de modèles de fragments de contenu.*
+*Cette section est informative uniquement et a pour but de socialiser la structure JCR sous-jacente des fragments de contenu créés à partir de modèles de fragments de contenu.*
 
-1. Ouvrez **[CRXDE Lite](http://localhost:4502/crx/de/index.jsp)** sur AEM Author.
-1. Dans le CRXDE Lite, dans le menu de la hiérarchie de gauche, accédez à [/content/dam/wknd-mobile/en/événements/punkrock-fest/jcr:content](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content) qui est le noeud représentant le fragment de contenu [!DNL Punkrock Fest] [!DNL Event] dans le JCR.
-1. Développez le noeud [data](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content/data/master).
-Vérifiez dans le volet **Propriétés** qu&#39;il possède une propriété `cq:model` qui pointe vers la définition de modèle de fragment de contenu [!DNL Event].
+1. Ouvrez **[CRXDE Lite](http://localhost:4502/crx/de/index.jsp)** sur l’auteur AEM.
+1. Dans CRXDE Lite, dans le menu de hiérarchie de gauche, accédez à [/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content) qui est le noeud représentant le [!DNL Punkrock Fest] [!DNL Event] fragment de contenu dans le JCR.
+1. Développez le noeud [data](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content/data/master) .
+Vérifiez dans le **volet Propriétés** qu’il possède une propriété `cq:model` pointant vers la définition de modèle de fragment de contenu [!DNL Event].
    * **`cq:model`**=**`/conf/settings/wknd-mobile/dam/cfm/models/event`**
-1. Sous le noeud `data`, sélectionnez le noeud [maître](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content/data/master) et passez en revue les propriétés. Ce noeud contient le contenu collecté lors de la création d&#39;un modèle de fragment de contenu [!DNL Event]. Les noms de propriété JCR correspondent aux noms de propriété Modèle de fragment de contenu et les valeurs correspondent aux valeurs créées du fragment de contenu &quot;[!DNL Punkrock Fest]&quot; [!DNL Event].
+1. Sous le noeud `data` , sélectionnez le noeud [master](http://localhost:4502/crx/de/index.jsp#/content/dam/wknd-mobile/en/events/punkrock-fest/jcr:content/data/master) et vérifiez les propriétés. Ce noeud contient le contenu collecté lors de la création d’un modèle de fragment de contenu [!DNL Event]. Les noms des propriétés JCR correspondent aux noms des propriétés du modèle de fragment de contenu et les valeurs correspondent aux valeurs créées du fragment de contenu &quot;[!DNL Punkrock Fest]&quot; [!DNL Event].
 
 >[!VIDEO](https://video.tv.adobe.com/v/28356/?quality=12&learn=on)
 
 ## Étape suivante
 
-Il est recommandé d’installer le package de contenu [com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) sur AEM Author via [AEM [!UICONTROL Package Manager]](http://localhost:4502/crx/packmgr/index.jsp). Ce package contient les configurations et le contenu décrits dans ce didacticiel et les chapitres précédents.
+Il est recommandé d’installer le module de contenu [com.adobe.aem.guides.wknd-mobile.content.chapter-3.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) sur l’auteur AEM via [AEM [!UICONTROL Gestionnaire de modules]](http://localhost:4502/crx/packmgr/index.jsp). Ce package contient les configurations et le contenu décrits dans ce tutoriel et dans les chapitres précédents.
 
-* [Chapitre 4 - Définition des modèles AEM Content Services](./chapter-4.md)
+* [Chapitre 4 - Définition AEM modèles Content Services](./chapter-4.md)
