@@ -1,7 +1,7 @@
 ---
 title: Console Live Copy
-description: La vidéo suivante explique comment vue ou gérer l’héritage sur un site ou effectuer des opérations de déploiement à l’aide de la console Aperçu de Live Copy.
-feature: Language Copy, Multi Site Manager
+description: La vidéo suivante explique comment afficher ou gérer l’héritage sur un site ou effectuer des opérations de déploiement à l’aide de la console Aperçu de la Live Copy .
+feature: Copie de langue, gestionnaire multisite
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
@@ -9,13 +9,12 @@ activity: use
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 5373
 thumbnail: 36680.jpg
-topic: Localization
+topic: Localisation
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: '55'
 ht-degree: 1%
 
 ---
@@ -23,6 +22,6 @@ ht-degree: 1%
 
 # Console Live Copy {#live-copy-console}
 
-Découvrez comment vue ou gérer l’héritage sur un site ou effectuer des opérations de déploiement à l’aide de la console Aperçu de Live Copy.
+Découvrez comment afficher ou gérer l’héritage sur un site ou effectuer des opérations de déploiement à l’aide de la console Aperçu de la Live Copy .
 
 >[!VIDEO](https://video.tv.adobe.com/v/36680?quality=12&learn=on)
