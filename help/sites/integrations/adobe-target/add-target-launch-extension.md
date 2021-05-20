@@ -1,5 +1,5 @@
 ---
-title: Ajouter l’Extension de la cible à une propriété Launch
+title: Ajout de l’extension Target à une propriété Launch
 description: Découvrez comment ajouter l’extension Adobe Target à une propriété Adobe Experience Platform Launch.
 topics: integrations, administration, development
 audience: administrator, developer
@@ -8,29 +8,28 @@ activity: setup
 version: cloud-service
 kt: 6131
 thumbnail: 41247.jpg
-topic: Integrations
+topic: Intégrations
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 3%
+source-wordcount: '110'
+ht-degree: 2%
 
 ---
 
 
-# Ajouter l’Extension de la cible à une propriété Launch {#adobe-target-extension}
+# Ajout de l’extension Target à une propriété Launch {#adobe-target-extension}
 
 Pour suivre cette vidéo, vous devez avoir déjà [Experience Platform Launch intégré avec AEM](../experience-platform-launch/overview.md).
 
-Découvrez comment activer Adobe Target sur votre site Web AEM à l’aide de l’Experience Platform Launch.
+Découvrez comment activer Adobe Target sur votre site web AEM à l’aide d’Experience Platform Launch.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 
 ## Étapes suivantes
 
-+ [Charger et déclencher un appel de Cible](./load-and-fire-target.md)
++ [Charger et déclencher un appel Target](./load-and-fire-target.md)
 
 ## Liens pris en charge
 
