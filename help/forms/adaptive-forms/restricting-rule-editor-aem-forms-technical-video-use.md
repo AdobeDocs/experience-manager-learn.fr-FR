@@ -1,10 +1,10 @@
 ---
-title: Limitation de l’éditeur de règles à des groupes spécifiques en AEM Forms
-seo-title: Limitation de l’éditeur de règles à des groupes spécifiques en AEM Forms
+title: Limitation de l’éditeur de règles à des groupes spécifiques dans AEM Forms
+seo-title: Limitation de l’éditeur de règles à des groupes spécifiques dans AEM Forms
 description: Limitation de l’éditeur de règles de formulaire adaptatif à des groupes spécifiques dans AEM
 seo-description: Limitation de l’éditeur de règles de formulaire adaptatif à des groupes spécifiques dans AEM
 uuid: b50f3736-b72e-4154-9ca5-95e10606f4ad
-feature: Adaptive Forms
+feature: Formulaires adaptatifs
 topics: authoring
 audience: developer
 doc-type: technical video
@@ -14,16 +14,15 @@ discoiquuid: 5aa35204-1c6d-4a1e-b8cd-79170653471a
 topic: Administration
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '92'
 ht-degree: 3%
 
 ---
 
 
-# Limitation de l’éditeur de règles à des groupes spécifiques en AEM Forms {#restricting-the-rule-editor-to-specific-groups-in-aem-forms}
+# Limitation de l’éditeur de règles à des groupes spécifiques dans AEM Forms {#restricting-the-rule-editor-to-specific-groups-in-aem-forms}
 
 Limitation de l’éditeur de règles de formulaire adaptatif à des groupes spécifiques dans AEM
 
@@ -33,5 +32,5 @@ Limitation de l’éditeur de règles de formulaire adaptatif à des groupes sp�
 
 >[!NOTE]
 >
->Cette fonction est disponible uniquement à partir de AEM version 6.3.
+>Cette fonctionnalité est disponible uniquement avec AEM version 6.3 et ultérieure.
 
