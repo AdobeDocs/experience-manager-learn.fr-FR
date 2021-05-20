@@ -5,14 +5,13 @@ description: Vous découvrez le développement dans AEM ? Vous avez besoin d’
 seo-description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
 content-type: reference
 topic-tags: introduction
-feature: AEM Project Archetype, Core Components, Page Editor, Editable Templates
-topic: Development
+feature: AEM archétype de projet, composants principaux, éditeur de page, modèles modifiables
+topic: Développement
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '364'
 ht-degree: 57%
 
 ---
@@ -30,20 +29,20 @@ L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un dévelo
 
 >[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
-Le tutoriel est conçu pour fonctionner avec **AEM en tant que Cloud Service** et est rétrocompatible avec **AEM 6.5+** et **l&#39;AEM 6.4.2+**.
+Le tutoriel est conçu pour fonctionner avec **AEM en tant que Cloud Service** et est rétrocompatible avec **AEM 6.5+** et **la version 6.4.2+**.
 
 **[Afficher le tutoriel ici!](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
 
-## Déploiement de WKND sur AEM en tant que Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
+## Déploiement de WKND vers AEM en tant que Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
 
-Après avoir suivi le tutoriel WKND, regardez la vidéo ci-dessous pour savoir comment déployer le projet WKND en AEM Cloud Service.
+Après avoir terminé le tutoriel WKND, regardez la vidéo ci-dessous pour une présentation de la manière de déployer le projet WKND vers AEM en tant que Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/30191?quality=12&learn=on)
 
 La vidéo montre comment le projet de site WKND peut être :
 
-1. Source à partir d’un référentiel Git tiers, dans ce cas Github.com, mais peut être n’importe quel référentiel Git
-2. Poussé vers un référentiel Adobe Cloud Manager Git en amont enregistré avec un AEM en tant que Programme Cloud Service
-3. Déployé via les pipelines Cloud Manager vers AEM en tant qu’environnements Cloud Service
+1. Source à partir d’un référentiel Git tiers, dans ce cas Github.com, mais qui peut être n’importe quel référentiel Git.
+2. Transmis à un référentiel Git Adobe Cloud Manager en amont enregistré avec une AEM en tant que programme Cloud Service
+3. Déployé via les pipelines de Cloud Manager vers AEM en tant qu’environnements de Cloud Service
 
-Pour obtenir une vue d’ensemble complète de la manière de déployer AEM projet sur AEM en tant que service Cloud, regardez la série de vidéos sur la façon d’[intégrer Git à Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+Pour obtenir un aperçu complet de la manière dont déployer AEM projet AEM as a Cloud Service, regardez la série vidéo sur l’ [intégration de Git à Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
