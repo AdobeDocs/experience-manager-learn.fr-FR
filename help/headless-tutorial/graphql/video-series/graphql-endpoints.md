@@ -1,9 +1,9 @@
 ---
-title: Points de terminaison GraphQL
-description: 'Découvrez comment activer, exécuter des requêtes sur des points de terminaison GraphQL et les publier et les sécuriser. '
+title: Points d’entrée GraphQL
+description: 'Découvrez comment activer, exécuter des requêtes sur et publier et sécuriser des points d’entrée GraphQL. '
 sub-product: ressources
 version: cloud-service
-topic: Sans tête, Gestion de contenu
+topic: Sans affichage, gestion de contenu
 feature: Fragments de contenu, API GraphQL
 role: Developer
 level: Beginner
@@ -17,14 +17,14 @@ ht-degree: 1%
 ---
 
 
-# Points de terminaison GraphQL
+# Points d’entrée GraphQL
 
-Découvrez comment activer, exécuter des requêtes et publier des points de terminaison GraphQL sécurisés.
+Découvrez comment activer, exécuter des requêtes sur et publier des points d’entrée GraphQL sécurisés.
 
 Dans cette vidéo, vous allez :
 
-+ Découvrez comment activer les points de terminaison GraphQL
-+ Découvrez comment exécuter des requêtes GraphQL par rapport aux points de terminaison
-+ Comprendre comment publier et sécuriser des points de terminaison GraphQL
++ Découvrez comment activer les points de fin GraphQL
++ Découvrez comment exécuter des requêtes GraphQL par rapport à des points de terminaison
++ Comprendre comment publier et sécuriser des points d’entrée GraphQL
 
 >[!VIDEO](https://video.tv.adobe.com/v/333339/?quality=12&learn=on)
