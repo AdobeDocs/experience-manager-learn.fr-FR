@@ -1,5 +1,5 @@
 ---
-title: Créer un service OSGi
+title: Création d’un service OSGi
 description: Créer un service OSGi pour stocker les formulaires à signer
 feature: Workflow
 topics: development
@@ -9,25 +9,24 @@ activity: implement
 version: 6.4,6.5
 thumbnail: 6886.jpg
 kt: 6886
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '354'
 ht-degree: 1%
 
 ---
 
 
-# Service Create OSGi
+# Création d’un service OSGi
 
-Le code suivant a été écrit pour stocker les formulaires à signer. Chaque formulaire à signer est associé à un GUID unique et à un ID de client. Ainsi, un ou plusieurs formulaires peuvent être associés au même ID de client, mais un GUID unique est affecté au formulaire.
+Le code suivant a été écrit pour stocker les formulaires à signer. Chaque formulaire à signer est associé à un guid unique et à un ID de client. Ainsi, un ou plusieurs formulaires peuvent être associés au même ID de client, mais un GUID unique leur est affecté.
 
 ## Interface
 
-Voici la déclaration d’interface utilisée.
+Voici la déclaration d’interface utilisée :
 
 ```java
 package com.aem.forms.signmultipleforms;
@@ -108,7 +107,7 @@ log.debug(e.getMessage());
 
 ## Obtenir les données de formulaire
 
-Le code suivant est utilisé pour récupérer les données de formulaire adaptatif associées au GUID donné. Les données du formulaire sont ensuite utilisées pour pré-remplir le formulaire adaptatif.
+Le code suivant est utilisé pour récupérer les données de formulaire adaptatif associées au GUID donné. Les données de formulaire sont ensuite utilisées pour préremplir le formulaire adaptatif.
 
 ```java
 @Override
@@ -133,9 +132,9 @@ public String getFormData(String guid) {
 }
 ```
 
-## Mettre à jour le statut de signature
+## Mettre à jour le statut de la signature
 
-La réussite de la cérémonie de signature déclenche un processus AEM associé au formulaire. La première étape du processus est une étape de processus qui met à jour l’état de la base de données pour la ligne identifiée par le GUID et l’ID de client. Nous définissons également la valeur de l’élément signé dans les données de formulaire sur Y pour indiquer que le formulaire a été rempli et signé. Le formulaire adaptatif sera renseigné avec ces données et la valeur de l’élément de données signé dans les données xml sera utilisée pour afficher le message approprié. Le code updateSignatureStatus est appelé à partir de l’étape de processus personnalisée.
+La fin réussie de la cérémonie de signature déclenche un processus AEM associé au formulaire. La première étape du workflow est une étape de processus qui met à jour l’état de la base de données pour la ligne identifiée par le guide et l’ID de client. Nous définissons également la valeur de l’élément signé dans les données de formulaire sur Y pour indiquer que le formulaire a été rempli et signé. Le formulaire adaptatif sera renseigné avec ces données et la valeur de l’élément de données signé dans les données XML sera utilisée pour afficher le message approprié. Le code updateSignatureStatus est appelé à partir de l’étape de processus personnalisée.
 
 
 ```java
@@ -167,9 +166,9 @@ public void updateSignatureStatus(String formData, String guid) {
 }
 ```
 
-## Obtenir le prochain formulaire à signer
+## Obtenir le formulaire suivant à signer
 
-Le code suivant a été utilisé pour obtenir le formulaire suivant pour la signature d’un ID de client donné avec l’état 0. Si la requête SQL ne renvoie aucune ligne, nous renvoyons la chaîne **&quot;AllDone&quot;** qui indique qu&#39;il n&#39;y a plus de formulaires pour la signature de l&#39;ID de client donné.
+Le code suivant a été utilisé pour obtenir le formulaire suivant pour la signature d’un ID de client donné avec un état 0. Si la requête sql ne renvoie aucune ligne, nous renvoyons la chaîne **&quot;AllDone&quot;** qui indique qu’il n’y a plus de formulaires à signer pour l’ID de client donné.
 
 ```java
 @Override
