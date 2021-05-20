@@ -1,7 +1,7 @@
 ---
-title: Récupérer le formulaire adaptatif enregistré
-description: Servlet permettant de générer le formulaire adaptatif avec des données enregistrées
-feature: Adaptive Forms
+title: Récupération d’un formulaire adaptatif enregistré
+description: Servlet pour effectuer le rendu du formulaire adaptatif avec des données enregistrées
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,21 +9,20 @@ activity: implement
 version: 6.4,6.5
 kt: 6553
 thumbnail: 6553.jpg
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 3%
+source-wordcount: '106'
+ht-degree: 2%
 
 ---
 
-# Récupérer le formulaire enregistré
+# Récupération d’un formulaire enregistré
 
-L’étape suivante consiste à créer une servlet qui rendra le formulaire adaptatif avec les données enregistrées et ses pièces jointes.
-Le code de servlet suivant est exécuté après vérification du code OTP. Les données du formulaire adaptatif et le mappage de ses pièces jointes associés à l’ID d’application unique sont extraits de la base de données. L’objet de requête est renseigné avec les données enregistrées du formulaire adaptatif et le mappage des pièces jointes. La demande est ensuite transmise afin de rendre le formulaire &quot;storeafwithattachments&quot; prérempli avec les données d’origine et ses pièces jointes.
+L’étape suivante consiste à créer un servlet qui effectuera le rendu du formulaire adaptatif avec les données enregistrées et ses pièces jointes.
+Le code de servlet suivant est exécuté après vérification du code OTP. Les données du formulaire adaptatif et son mappage de pièces jointes associé à l’ID d’application unique sont récupérés de la base de données. L’objet de requête est renseigné avec les données de formulaire adaptatif enregistrées et le mappage des pièces jointes. La demande est ensuite transmise pour que le formulaire &quot;storeafwithattachments&quot; soit prérenseigné avec les données d’origine et ses pièces jointes.
 
 ```java
 package store.and.fetch.core.servlets;
