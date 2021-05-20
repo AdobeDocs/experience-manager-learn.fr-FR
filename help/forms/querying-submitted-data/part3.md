@@ -1,32 +1,31 @@
 ---
-title: AEM Forms avec Schéma et données JSON[Part3]
-seo-title: AEM Forms avec Schéma et données JSON[Part3]
-description: Ce didacticiel en plusieurs parties vous explique comment créer un formulaire adaptatif avec le schéma JSON et interroger les données envoyées.
-seo-description: Ce didacticiel en plusieurs parties vous explique comment créer un formulaire adaptatif avec le schéma JSON et interroger les données envoyées.
-feature: Adaptive Forms
+title: AEM Forms avec schéma et données JSON [Partie3]
+seo-title: AEM Forms avec schéma et données JSON [Partie3]
+description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes nécessaires à la création d’un formulaire adaptatif avec un schéma JSON et à l’interrogation des données envoyées.
+seo-description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes nécessaires à la création d’un formulaire adaptatif avec un schéma JSON et à l’interrogation des données envoyées.
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '285'
 ht-degree: 1%
 
 ---
 
 
-# Stockage du Schéma JSON dans la base de données {#storing-json-schema-in-database}
+# Stockage du schéma JSON dans la base de données {#storing-json-schema-in-database}
 
 
-Pour pouvoir requête sur les données envoyées, nous devrons stocker le schéma JSON associé au formulaire envoyé. Le schéma JSON sera utilisé dans le créateur de requêtes pour créer la requête.
+Pour pouvoir interroger les données envoyées, nous devrons stocker le schéma JSON associé au formulaire envoyé. Le schéma JSON sera utilisé dans le Query Builder pour créer la requête.
 
-Lorsqu’un formulaire adaptatif est envoyé, nous vérifions si le schéma JSON associé se trouve dans la base de données. Si le schéma JSON n’existe pas, nous récupérons le schéma JSON et stockons le schéma dans le tableau approprié. Nous associons également le nom du formulaire au schéma JSON. La capture d’écran suivante montre le tableau dans lequel les schémas JSON sont stockés.
+Lorsqu’un formulaire adaptatif est envoyé, nous vérifions si le schéma JSON associé se trouve dans la base de données. Si le schéma JSON n’existe pas, nous récupérons le schéma JSON et le stockons dans le tableau approprié. Nous associons également le nom du formulaire au schéma JSON. La capture d’écran suivante montre le tableau dans lequel les schémas JSON sont stockés.
 
 ![jsonschema](assets/jsonschemas.gif)
 
@@ -108,9 +107,9 @@ public String getJSONSchema(String afPath) {
 
 >[!NOTE]
 >
->Lors de la création d’un formulaire adaptatif, vous pouvez utiliser le Schéma JSON qui se trouve dans le référentiel ou télécharger un schéma JSON. Le code ci-dessus fonctionnera pour les deux cas.
+>Lors de la création d’un formulaire adaptatif, vous pouvez utiliser le schéma JSON qui se trouve dans le référentiel ou charger un schéma JSON. Le code ci-dessus fonctionne pour les deux cas.
 
-Le schéma récupéré est stocké dans la base de données à l’aide des opérations JDBC standard. Le code suivant insère le schéma dans la base de données.
+Le schéma récupéré est stocké dans la base de données à l’aide des opérations JDBC standard. Le code suivant insère le schéma dans la base de données :
 
 ```java
 public void insertJsonSchema(JSONObject jsonSchema, String afForm) {
@@ -146,12 +145,12 @@ public void insertJsonSchema(JSONObject jsonSchema, String afForm) {
  }
 ```
 
-Pour résumer, nous avons fait ce qui suit jusqu&#39;à présent :
+Pour résumer, nous avons fait ce qui suit jusqu’à présent :
 
-* Créer un formulaire adaptatif basé sur le schéma JSON
-* Si le formulaire est envoyé pour la première fois, nous stockons le schéma JSON associé au formulaire dans la base de données.
+* Création d’un formulaire adaptatif basé sur un schéma JSON
+* Si le formulaire est envoyé la première fois, le schéma JSON associé au formulaire est stocké dans la base de données.
 * Nous stockons les données liées du formulaire adaptatif dans la base de données.
 
-La prochaine étape consisterait à utiliser QueryBuilder pour afficher les champs à rechercher en fonction du Schéma JSON.
+Les étapes suivantes consistent à utiliser QueryBuilder pour afficher les champs à rechercher en fonction du schéma JSON.
 
 
