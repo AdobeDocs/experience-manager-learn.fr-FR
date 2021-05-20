@@ -1,29 +1,28 @@
 ---
-title: Variables dans le processus AEM
-seo-title: Variables dans le processus AEM
-description: Utilisation de variables de type xml, json, arraylist, document dans le processus aem
-seo-description: Utilisation de variables de type xml, json, arraylist, document dans le processus aem
+title: Variables dans AEM workflow
+seo-title: Variables dans AEM workflow
+description: Utilisation de variables de type xml,json,arraylist,document dans le processus aem
+seo-description: Utilisation de variables de type xml,json,arraylist,document dans le processus aem
 feature: Workflow
 topics: development
 audience: developer
 doc-type: tutorial
 activity: understand
 version: 6.5
-topic: Development
+topic: Développement
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 9%
+source-wordcount: '126'
+ht-degree: 8%
 
 ---
 
 
-# Variables dans le processus AEM
+# Variables dans AEM workflow
 
-A partir de AEM 6.5, vous pouvez désormais créer et utiliser des variables dans AEM Workflow. Avant cette fonctionnalité, les auteurs de flux de travail créaient généralement des clés à l’aide de la carte des métadonnées de flux de travail. Cela signifiait écrire du code personnalisé pour créer et renseigner ces clés. Grâce à ce nouveau processus de fonctionnalités, les auteurs peuvent désormais facilement créer des variables et les utiliser n’importe où dans le processus.
+À partir d’AEM 6.5, vous pouvez désormais créer et utiliser des variables dans AEM Workflow. Avant cette fonctionnalité, les auteurs de workflows créaient généralement des clés à l’aide de la carte des métadonnées de workflow. Cela signifiait écrire du code personnalisé pour créer et remplir ces clés. Grâce à ce nouveau workflow de fonctionnalités, les auteurs peuvent désormais facilement créer des variables et utiliser ces variables n’importe où dans le workflow.
 
 Les variables peuvent être des types suivants :
 
@@ -44,4 +43,4 @@ Les variables peuvent être des types suivants :
 * [Variables JSON](part2.md)
 * [Variables de document](part3.md)
 * [Variable ArrayList](part4.md)
-* [Éditeur de règles dans le processus AEM](part5.md)
+* [Éditeur de règles dans AEM workflow](part5.md)
