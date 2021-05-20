@@ -1,9 +1,9 @@
 ---
-title: Présentation des propriétés de la page en AEM Sites
-seo-title: Présentation des propriétés de la page en Adobe Experience Manager Sites
+title: Présentation des propriétés de page dans AEM Sites
+seo-title: Présentation des propriétés de page dans Adobe Experience Manager Sites
 description: La vidéo suivante présente les métadonnées des propriétés de page associées à une page dans Adobe Experience Manager.
 seo-description: 'La vidéo suivante présente les métadonnées des propriétés de page associées à une page dans Adobe Experience Manager. '
-feature: Page Editor
+feature: Éditeur de page
 topics: authoring, metadata
 audience: author, marketer
 doc-type: feature video
@@ -11,14 +11,13 @@ activity: understand
 version: 6.3, 6.4, 6.5
 kt: 4321
 thumbnail: 32192.jpg
-topic: Content Management
+topic: Gestion de contenu
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 40%
+source-wordcount: '174'
+ht-degree: 41%
 
 ---
 
@@ -29,7 +28,7 @@ La vidéo suivante présente les propriétés de page associées à une page dan
 
 >[!VIDEO](https://video.tv.adobe.com/v/32192?quality=12&learn=on)
 
-Dans cette vidéo, les éléments de propriété de page suivants sont traités :
+Dans cette vidéo, les éléments de propriété de page suivants sont abordés :
 
 * De base
    * Titre et balises
@@ -50,7 +49,7 @@ Dans cette vidéo, les éléments de propriété de page suivants sont traités 
       * Conception
       * Alias
    * Configuration du cloud
-   * Paramètres du modèle
+   * Paramètres des modèles
    * Exigence d’authentification
    * Export
 * Miniature 
@@ -64,5 +63,5 @@ Dans cette vidéo, les éléments de propriété de page suivants sont traités 
 ## Ressources supplémentaires {#additional-resources}
 
 * [Modification de la documentation des propriétés de page](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/authoring/authoring/editing-page-properties.html)
-* [Modification de la documentation du contenu de la page](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guide de l&#39;utilisateur de création de sites](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html?topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
+* [Modification de la documentation sur le contenu de la page](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/authoring/authoring/editing-content.html)
+* [Guide de l’utilisateur pour la création de sites](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/home.html?topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
