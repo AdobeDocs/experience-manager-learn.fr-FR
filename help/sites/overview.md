@@ -4,8 +4,7 @@ seo-title: Tutoriels d’AEM Sites
 description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Sites. '
 seo-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Sites
 sub-product: sites, content-services
-topic: Content Management
-translation-type: tm+mt
+topic: Gestion de contenu
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
 source-wordcount: '365'
@@ -16,31 +15,31 @@ ht-degree: 36%
 
 # Présentation {#overview}
 
-Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérience de pointe. Ce guide d&#39;utilisation contient des vidéos et des didacticiels sur les nombreuses fonctionnalités et fonctionnalités d&#39;AEM Sites.
+Adobe Experience Manager (AEM) Sites est une plate-forme de gestion de l’expérience de pointe. Ce guide de l’utilisateur contient des vidéos et des tutoriels sur les nombreuses fonctionnalités d’AEM Sites.
 
 ## Nouveautés
 
-* **[Utilisation de lancements avec AEM Sites (vidéo)](./page-authoring/launches.md)**
+* **[Utilisation des lancements avec AEM Sites (vidéo)](./page-authoring/launches.md)**
 
-   *Découvrez les lancements de sites AEM et comment ils peuvent être utilisés pour préparer le contenu d’un site Web en vue d’une prochaine version.*
+   *Découvrez les lancements d’AEM Sites et comment ils peuvent être utilisés pour préparer le contenu d’un site web en vue d’une version ultérieure.*
 
-* **[Personnaliser la couche de données du client Adobe avec les composants AEM (didacticiel)](./integrations/adobe-client-data-layer/data-layer-customize.md)**
+* **[Personnalisation de la couche de données client Adobe avec les composants AEM (tutoriel)](./integrations/adobe-client-data-layer/data-layer-customize.md)**
 
-   *Découvrez comment mettre à jour la couche de données du client Adobe avec le contenu des composants AEM personnalisés.*
+   *Découvrez comment mettre à jour la couche de données client Adobe avec du contenu provenant de composants AEM personnalisés.*
 
-* **[Prise en main de AEM GraphQL sans en-tête (didacticiel)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)**
+* **[Prise en main d’AEM GraphQL sans affichage (tutoriel)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)**
 
-   *Comment exposer le contenu d’AEM à consommer par une application mobile native à l’aide des API AEM GraphQL.*
+   *Découvrez comment exposer du contenu d’AEM à utiliser par une application mobile native à l’aide des API AEM GraphQL.*
 
-* **[Utilisation de fragments de contenu (série de vidéos)](./content-fragments/content-fragments-feature-video-use.md)**
+* **[Utilisation de fragments de contenu (séries vidéo)](./content-fragments/content-fragments-feature-video-use.md)**
 
-   *Les fragments de contenu sont des éléments de contenu indépendants du canal qui peuvent être réutilisés.*
+   *Les fragments de contenu sont des éléments de contenu indépendamment du canal qui peuvent être réutilisés.*
 
-* **[Utilisation de SPA Editor (Vidéo)](./spa-editor/spa-editor-framework-feature-video-use.md)**
+* **[Utilisation de l’éditeur de SPA (vidéo)](./spa-editor/spa-editor-framework-feature-video-use.md)**
 
-   *Découvrez les fonctionnalités d’édition AEM pour les applications d’une seule page (SPA).*
+   *Découvrez les fonctionnalités d’AEM d’édition pour les applications d’une seule page (SPA).*
 
-## Sélection du personnel
+## Sélections du personnel
 
 <table>
 <tr>
@@ -54,7 +53,7 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
     </a>
     </div>
     <p>
-    <em>Guide de prise en main destiné aux développeurs souhaitant implémenter l’AEM Sites.</em>
+    <em>Guide de prise en main destiné aux développeurs qui souhaitent implémenter AEM Sites.</em>
     <p>
   </td>
   <td>
@@ -67,20 +66,20 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
     </a>
     </div>
     <p>
-    <em>Guide de prise en main pour les développeurs qui cherchent à utiliser AEM comme CMS sans tête.</em>
+    <em>Guide de prise en main pour les développeurs qui souhaitent utiliser AEM comme CMS sans interface.</em>
     </p>
   </td>
   <td>
     <a href="https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-react-tutorial/overview.html">
-      <img alt="Prise en main de AEM SPA Editor" src="./assets/aem-wknd-spa-editor-tutorial.png" />
+      <img alt="Prise en main d’AEM SPA Editor" src="./assets/aem-wknd-spa-editor-tutorial.png" />
     </a>
      <div>
       <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html">
-        <strong>Prise en main de AEM SPA Editor</strong>
+        <strong>Prise en main d’AEM SPA Editor</strong>
       </a>
     </div>
     <p>
-    <em>Guide de prise en main destiné aux développeurs pour l’intégration d’une seule page d’applications (SPA) avec AEM.</em>
+    <em>Guide de prise en main pour les développeurs afin d’intégrer une application d’une seule page (SPA) à AEM.</em>
     <p>
   </td>
 </tr>
@@ -88,11 +87,11 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion d’expérie
 
 ## Ressources supplémentaires
 
-* [Experience League - Explorez AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Documentation de création AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
+* [Experience League - Explorer les AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Documentation sur la création AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
 * [Documentation sur le développement d’AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
-* [Documentation de l’administration AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
-* [AEM Sites Deploying Documentation](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/user-guide.html)
+* [Documentation sur l’administration AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
+* [Documentation sur le déploiement d’AEM Sites](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/user-guide.html)
 * [Tutoriels d’AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriels d’AEM Assets](/help/assets/overview.md)
 * [Tutoriels d’AEM Forms](/help/forms/overview.md)
