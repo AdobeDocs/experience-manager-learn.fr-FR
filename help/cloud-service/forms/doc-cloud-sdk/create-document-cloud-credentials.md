@@ -1,6 +1,6 @@
 ---
-title: Créer un projet d'E/S Adobe
-description: Créer un nouveau projet dans la console de développement Adobe
+title: Créer un projet d’Adobe IO
+description: Création d’un projet dans Adobe Developer Console
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -18,11 +18,11 @@ ht-degree: 1%
 
 # Création d’un projet d’Adobe I/O
 
-1. La première étape de la création de l’intégration consiste à créer [Adobe ID](https://account.adobe.com/).
+1. La première étape de la création de l’intégration consiste à créer [Adobe ID](https://account.adobe.com/)
 1. Accédez à [Adobe Developer Console](https://console.adobe.io/home)
-1. Connexion à l’aide de votre Adobe ID créée à l’étape 1
-1. Créer un projet
+1. Connectez-vous à l’aide de votre Adobe ID créé à l’étape 1.
+1. Création d’un projet
 
-Suivez la vidéo pour créer votre projet d&#39;Adobe I/O.
+Suivez la vidéo pour créer votre projet d’Adobe I/O.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333220/?quality=9&learn=on)
