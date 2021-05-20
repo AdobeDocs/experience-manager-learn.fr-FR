@@ -15,38 +15,38 @@ ht-degree: 22%
 
 # Présentation {#overview}
 
-Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponibles pour les utilisateurs de AEM Sites, [!DNL Assets] et [!DNL Forms].
+Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponibles pour les utilisateurs d’AEM Sites, [!DNL Assets] et [!DNL Forms].
 
 ## Nouveautés
 
-* **[Utiliser l&#39;AEM de flux de travail (vidéo)](./workflow/use-workflow.md)**
+* **[Utilisation des AEM de workflow (vidéo)](./workflow/use-workflow.md)**
 
    *AEM Workflow permet de collaborer, de gérer et de traiter du contenu dans AEM.*
 
-* **[Comprendre Cloud Manager pour AEM (Vidéo)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
+* **[Présentation de Cloud Manager pour AEM (vidéo)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
    *Cloud Manager pour AEM permet une gestion, une inspection et un libre-service aisés des environnements AEM.*
 
-* **[Configuration des clés publiques et privées à utiliser avec l’Adobe I/O (didacticiel)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *Découvrez comment les clés et les fichiers de stockage de clés sont générés à l’aide  [!DNL openssl] de ces outils qui fonctionnent avec AEM et Adobe I/O.*
+* **[Configuration de clés publiques et privées à utiliser avec Adobe I/O (tutoriel)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
+   *Découvrez comment les clés et les KeyStore sont générés à l’aide  [!DNL openssl] de qui fonctionnent avec AEM et Adobe I/O.*
 
-* **[Utilisation du pipeline Cloud Manager CI/CD (vidéo)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
-   *Découvrez comment utiliser le pipeline de CI/CD de Cloud Manager pour assurer des déploiements sûrs et cohérents.*
+* **[Utilisation du pipeline CI/CD de Cloud Manager (vidéo)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
+   *Découvrez comment utiliser le pipeline CI/CD de Cloud Manager pour garantir des déploiements sûrs et cohérents.*
 
-## Sélection du personnel
+## Sélections du personnel
 
 <table>
 <tr>
   <td>
     <a href="./cloud-manager/understand-cloud-manager-for-aem.md">
-    <img alt="Comprendre Cloud Manager pour AEM" src="./cloud-manager/assets/understand-cloud-manager-for-aem/thumbnail.png" />
+    <img alt="Présentation de Cloud Manager pour AEM" src="./cloud-manager/assets/understand-cloud-manager-for-aem/thumbnail.png" />
     </a>
     <div>
      <a href="./cloud-manager/understand-cloud-manager-for-aem.md">
-    <strong>Comprendre Cloud Manager pour AEM</strong>
+    <strong>Présentation de Cloud Manager pour AEM</strong>
     </a>
     </div>
     <p>
-    <em>Cloud Manager for AEM offre une solution simple mais robuste qui permet une gestion, une inspection et un libre-service aisés des environnements AEM.</em>
+    <em>Cloud Manager pour AEM offre une solution simple mais robuste qui permet une gestion, une inspection et un libre-service aisés des environnements AEM.</em>
     <p>
   </td>
    <td>
@@ -59,7 +59,7 @@ Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponib
     </a>
     </div>
     <p>
-    <em>Découvrez comment configurer Sling Dynamic Include (SDI) et permettre aux composants AEM dynamiques de toujours proposer du contenu frais.</em>
+    <em>Découvrez comment configurer Sling Dynamic Include (SDI) et permettre aux composants d’AEM dynamiques de toujours diffuser du contenu neuf.</em>
     <p>
   </td>
   <td>
@@ -72,7 +72,7 @@ Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponib
     </a>
     </div>
     <p>
-    <em>Ventilation de haut niveau des principales fonctionnalités à comprendre, lors de la mise à niveau vers la dernière version de AEM.</em>
+    <em>Une ventilation de haut niveau des fonctionnalités clés à comprendre, lorsque vous envisagez d’effectuer une mise à niveau vers la dernière version d’AEM.</em>
     </p>
   </td>
 </tr>
@@ -80,7 +80,7 @@ Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponib
 
 ## Ressources supplémentaires
 
-* [Experience League - Explorez AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Explorer les AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
 * [Tutoriels d’AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Vidéos et tutoriels d’AEM Sites](/help/sites/overview.md)
 * [Vidéos et tutoriels d’AEM Assets](/help/assets/overview.md)
