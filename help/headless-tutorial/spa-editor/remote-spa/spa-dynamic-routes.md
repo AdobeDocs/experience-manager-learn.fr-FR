@@ -1,13 +1,12 @@
 ---
-title: Ajouter des composants modifiables à des itinéraires dynamiques SPA distants
+title: Ajout de composants modifiables à des itinéraires dynamiques SPA distants
 description: Découvrez comment ajouter des composants modifiables aux itinéraires dynamiques dans un SPA distant.
 topic: Sans tête, SPA, développement
-feature: SPA Éditeur, Composants principaux, API, Développement
+feature: Éditeur SPA, composants principaux, API, développement
 role: Developer, Architect
 level: Beginner
 kt: 7636
 thumbnail: kt-7636.jpeg
-translation-type: tm+mt
 source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
 workflow-type: tm+mt
 source-wordcount: '958'
@@ -16,83 +15,83 @@ ht-degree: 1%
 ---
 
 
-# Routes dynamiques et composants modifiables
+# Itinéraires dynamiques et composants modifiables
 
-Dans ce chapitre, nous autorisons deux itinéraires dynamiques de détails d&#39;aventure à prendre en charge les composants modifiables ; __Bali Surf Camp__ et __Beervana à Portland__.
+Dans ce chapitre, nous autorisons deux itinéraires dynamiques Détails de l’aventure à prendre en charge les composants modifiables ; __Bali Surf Camp__ et __Beervana à Portland__.
 
-![Routes dynamiques et composants modifiables](./assets/spa-dynamic-routes/intro.png)
+![Itinéraires dynamiques et composants modifiables](./assets/spa-dynamic-routes/intro.png)
 
-L&#39;itinéraire SPA détails de l&#39;aventure est défini comme `/adventure:path` où `path` est le chemin de l&#39;aventure WKND (fragment de contenu) pour afficher des détails sur.
+L’itinéraire SPA détails de l’aventure est défini comme `/adventure:path` où `path` est le chemin d’accès à l’aventure WKND (fragment de contenu) pour afficher des détails sur .
 
-## Faire correspondre les URL SPA aux pages AEM
+## Mappage des URL SPA aux pages AEM
 
-Dans les deux chapitres précédents, nous avons mappé le contenu des composants modifiables de la vue d&#39;accueil SPA à la page racine de SPA distante correspondante dans l&#39;AEM à `/content/wknd-app/us/en/`.
+Dans les deux chapitres précédents, nous avons mappé le contenu du composant modifiable de la vue SPA accueil à la page racine de SPA distante correspondante dans l’AEM à `/content/wknd-app/us/en/`.
 
-La définition du mappage pour les composants modifiables pour les itinéraires dynamiques SPA est similaire, mais nous devons trouver un schéma de mappage 1:1 entre les instances de l&#39;itinéraire et les pages AEM.
+La définition du mappage pour les composants modifiables pour les itinéraires dynamiques SPA est similaire. Toutefois, nous devons établir un schéma de mappage 1:1 entre les instances de l’itinéraire et les pages AEM.
 
-Dans ce didacticiel, nous allons prendre le nom du fragment de contenu d&#39;aventure WKND, qui est le dernier segment du chemin, et le mapper à un chemin simple sous `/content/wknd-app/us/en/adventure`.
+Dans ce tutoriel, nous allons prendre le nom du fragment de contenu WKND Adventure, qui est le dernier segment du chemin, et le mapper à un chemin simple sous `/content/wknd-app/us/en/adventure`.
 
-| Route de SPA distante | Chemin de page AEM |
+| Route de SPA distante | AEM chemin de page |
 |------------------------------------|--------------------------------------------|
-| / | /content/app/fr/fr/home |
-| /aventure : /content/dam/wknd/fr/aventures/bali-surf-camp/__bali-surf-camp__ | /content/app/fr/home/adventure/__bali-surf-camp__ |
-| /aventure : /content/dam/wknd/fr/aventures/beervana-portland/__beervana-portland__ | /content/wknd-app/us/fr/home/adventure/__beervana-in portland__ |
+| / | /content/wknd-app/us/en/home |
+| /aventure:/content/dam/wknd/fr/aventures/bali-surf-camp/__bali-surf-camp__ | /content/wknd-app/us/fr/home/aventure/__bali-surf-camp__ |
+| /aventure:/content/dam/wknd/fr/aventures/beervana-portland/__beervana-portland__ | /content/wknd-app/us/en/home/aventure/__beervana-in-portland__ |
 
-Ainsi, en nous basant sur cette cartographie, nous devons créer deux nouvelles pages AEM à l&#39;adresse :
+Ainsi, en fonction de ce mappage, nous devons créer deux nouvelles pages AEM à l’adresse :
 
 + `/content/wknd-app/us/en/home/adventure/bali-surf-camp`
 + `/content/wknd-app/us/en/home/adventure/beervana-in-portland`
 
-## Mappage des SPA à distance
+## Mappage des SPA distantes
 
-Le mappage des requêtes quittant le SPA distant est configuré via la configuration `setupProxy` effectuée dans [le Bootstrap SPA](./spa-bootstrap.md).
+Le mappage des requêtes qui quittent la SPA distante est configuré via la configuration `setupProxy` effectuée dans [le Bootstrap SPA](./spa-bootstrap.md).
 
-## Mappage de l’éditeur SPA
+## Mappage de l’éditeur de SPA
 
-Le mappage pour les demandes SPA lorsque le SPA est ouvert via l’éditeur d’ est configuré via la configuration des mappages Sling effectuée dans [Configurer les ](./aem-configure.md).
+Le mappage pour les requêtes SPA lorsque le SPA est ouvert via l’éditeur d’ est configuré via la configuration des mappages Sling effectuée dans [Configuration d’](./aem-configure.md).
 
 ## Création de pages de contenu dans AEM
 
-Tout d&#39;abord, créez le segment de page `adventure` intermédiaire :
+Créez tout d’abord le segment de page `adventure` intermédiaire :
 
-1. Connexion à AEM Author
-1. Accédez à __Sites > WKND App > us > en > WKND App Page d&#39;accueil__
-   + Cette page AEM est mise en correspondance en tant que racine du SPA, c’est donc là que nous commençons à construire la structure de pages de l’AEM pour les autres itinéraires de .
-1. Appuyez sur __Créer__ et sélectionnez __Page__.
-1. Sélectionnez le modèle __Page SPA distante__, puis appuyez sur __Suivant__.
-1. Remplir les propriétés de la page
-   + __Titre__ : Aventure
+1. Connexion à l’auteur AEM
+1. Accédez à __Sites > Application WKND > us > en > Page d’accueil de l’application WKND__
+   + Cette page d’AEM est mappée en tant que racine de l’SPA. C’est donc là que nous commençons à développer la structure de page d’AEM pour d’autres itinéraires de .
+1. Appuappuyez sur __Créer__ et sélectionnez __Page__.
+1. Sélectionnez le modèle __Page SPA distante__ et appuyez sur __Suivant__.
+1. Remplissage des propriétés de page
+   + __Titre__ : Adventure
    + __Nom__ : `adventure`
-      + Cette valeur définit l’URL de la page AEM et doit donc correspondre au segment d’itinéraire SPA.
+      + Cette valeur définit l’URL de la page d’AEM et doit donc correspondre au segment d’itinéraire SPA.
 1. Appuyez sur __Terminé__
 
-Créez ensuite les pages AEM qui correspondent à chacune des URL SPA qui nécessitent des zones modifiables.
+Créez ensuite les pages d’AEM qui correspondent à chacune des URL SPA nécessitant des zones modifiables.
 
-1. Accédez à la nouvelle page __Aventure__ de l&#39;administrateur du site.
-1. Appuyez sur __Créer__ et sélectionnez __Page__.
-1. Sélectionnez le modèle __Page SPA distante__, puis appuyez sur __Suivant__.
-1. Remplir les propriétés de la page
-   + __Titre__ : Bali Surf Camp
+1. Accédez à la nouvelle page __Adventure__ de l’administrateur du site.
+1. Appuappuyez sur __Créer__ et sélectionnez __Page__.
+1. Sélectionnez le modèle __Page SPA distante__ et appuyez sur __Suivant__.
+1. Remplissage des propriétés de page
+   + __Titre__ : Le camp de surf de Bali
    + __Nom__ : `bali-surf-camp`
-      + Cette valeur définit l’URL de la page AEM et doit donc correspondre au dernier segment de l’itinéraire SPA.
+      + Cette valeur définit l’URL de la page d’AEM et doit donc correspondre au dernier segment de l’itinéraire SPA.
 1. Appuyez sur __Terminé__
 1. Répétez les étapes 3 à 6 pour créer la page __Beervana dans Portland__, avec :
    + __Titre__ : Beervana à Portland
    + __Nom__ : `beervana-in-portland`
-      + Cette valeur définit l’URL de la page AEM et doit donc correspondre au dernier segment de l’itinéraire SPA.
+      + Cette valeur définit l’URL de la page d’AEM et doit donc correspondre au dernier segment de l’itinéraire SPA.
 
-Ces deux pages AEM contiennent le contenu écrit correspondant à leurs itinéraires SPA correspondants. Si d&#39;autres itinéraires SPA nécessitent la création, de nouvelles pages AEM doivent être créées à leur URL de base sous la page racine de la page de  distante (`/content/wknd-app/us/en/home`) dans l&#39;.
+Ces deux pages AEM contiennent le contenu créé correspondant à leurs itinéraires SPA correspondants. Si d’autres itinéraires SPA nécessitent la création, de nouvelles pages AEM doivent être créées à leur URL de base sous la page racine de la page de  distante (`/content/wknd-app/us/en/home`) dans.
 
 ## Mise à jour de l’application WKND
 
 Placons le composant `<AEMResponsiveGrid...>` créé dans le [dernier chapitre](./spa-container-component.md) dans notre composant `AdventureDetail` SPA, créant ainsi un conteneur modifiable.
 
-### Placez le composant AEMResponsiveGrid SPA
+### Placez le composant SPA AEMResponsiveGrid
 
-Placer le `<AEMResponsiveGrid...>` dans le composant `AdventureDetail` crée un conteneur modifiable dans cette route. L&#39;astuce est que plusieurs itinéraires utilisent le composant `AdventureDetail` pour effectuer le rendu, nous devons ajuster dynamiquement l&#39;attribut `<AEMResponsiveGrid...>'s pagePath`. `pagePath` doit être dérivé pour pointer vers la page d&#39;AEM correspondante, en fonction de l&#39;aventure que l&#39;instance de route affiche.
+Le placement de `<AEMResponsiveGrid...>` dans le composant `AdventureDetail` crée un conteneur modifiable dans cet itinéraire. L’astuce est que plusieurs itinéraires utilisent le composant `AdventureDetail` pour le rendu. Nous devons ajuster dynamiquement l’attribut `<AEMResponsiveGrid...>'s pagePath`. `pagePath` doit être dérivé pour pointer vers la page d’AEM correspondante, en fonction de l’aventure affichée par l’instance de l’itinéraire.
 
-1. Ouvrir et modifier `react-app/src/components/AdventureDetail.js`
-1. Ajoutez la ligne suivante avant la deuxième instruction `AdventureDetail(..)'s` `return(..)` qui dérive le nom de l’aventure du chemin d’accès au fragment de contenu.
+1. Ouvrez et modifiez `react-app/src/components/AdventureDetail.js`
+1. Ajoutez la ligne suivante avant la `AdventureDetail(..)'s` seconde `return(..)` instruction qui dérive le nom de l’aventure du chemin du fragment de contenu.
 
    ```
    ...
@@ -139,46 +138,46 @@ Le fichier `AdventureDetail.js` doit se présenter comme suit :
 
 ![AdventureDetail.js](./assets/spa-dynamic-routes/adventure-detail-js.png)
 
-## Auteur du Conteneur en AEM
+## Création du conteneur dans AEM
 
-Avec le `<AEMResponsiveGrid...>` en place et son `pagePath` défini dynamiquement en fonction de l&#39;aventure générée, nous essayons de créer du contenu dans celui-ci.
+Avec la balise `<AEMResponsiveGrid...>` en place et sa balise `pagePath` dynamiquement définie en fonction du rendu de l’aventure, nous essayons de créer du contenu dans celle-ci.
 
-1. Connexion à AEM Author
+1. Connexion à l’auteur AEM
 1. Accédez à __Sites > Application WKND > us > en__
 1. ____ Modification de la  __page d’accueil de l’application__ WKND
-   + Accédez à l&#39;itinéraire __Bali Surf Camp__ dans le SPA pour le modifier.
-1. Sélectionnez __Prévisualisation__ dans le sélecteur de mode en haut à droite.
+   + Accédez à l’itinéraire __Bali Surf Camp__ dans le SPA pour le modifier.
+1. Sélectionnez __Aperçu__ dans le sélecteur de mode en haut à droite.
 1. Appuyez sur la carte __Bali Surf Camp__ dans le SPA pour accéder à son itinéraire.
 1. Sélectionnez __Modifier__ dans le sélecteur de mode.
-1. Localisez la zone modifiable __Conteneur de mise en page__ juste au-dessus de l&#39;__Itinéraire__.
-1. Ouvrez la __barre latérale de l’éditeur de page__, puis sélectionnez la __vue de composants__.
-1. Faites glisser certains des composants activés dans le __Conteneur de mise en page__.
+1. Recherchez la __zone modifiable Conteneur de mises en page__ juste au-dessus de la __Itinéraire__
+1. Ouvrez la __barre latérale de l’éditeur de page__, puis sélectionnez la __vue Composants__.
+1. Faites glisser certains des composants activés dans le __conteneur de mises en page__
    + Image
-   + Text (Texte)
+   + Texte
    + Titre
 
-   Et créer du matériel marketing promotionnel. Il pourrait ressembler à ceci :
+   Et créer du matériel marketing promotionnel. Cela pourrait ressembler à ceci :
 
-   ![Création des détails de Bali Adventure](./assets/spa-dynamic-routes/adventure-detail-edit.png)
+   ![Création de détails d’aventure à Bali](./assets/spa-dynamic-routes/adventure-detail-edit.png)
 
-1. ____ Prévisualiser vos modifications dans AEM Éditeur de page
-1. Actualisez l’application WKND s’exécutant localement sur [http://localhost:3000](http://localhost:3000), accédez à la route __Bali Surf Camp__ pour voir les modifications créées !
+1. ____ Aperçu des modifications dans AEM éditeur de page
+1. Actualisez l’application WKND s’exécutant localement sur [http://localhost:3000](http://localhost:3000), accédez à l’itinéraire __Bali Surf Camp__ pour afficher les modifications créées.
 
-   ![SPA distante Bali](./assets/spa-dynamic-routes/remote-spa-final.png)
+   ![Bali SPA distante](./assets/spa-dynamic-routes/remote-spa-final.png)
 
-Lors de la navigation vers un itinéraire détaillé d&#39;aventure qui ne comporte pas de page d&#39;AEM mappée, il n&#39;y aura aucune fonctionnalité de création sur cette instance d&#39;itinéraire. Pour activer la création sur ces pages, il vous suffit de créer une page AEM avec le nom correspondant sous la page __Aventure__ !
+Lorsque vous accédez à un itinéraire de détails d’aventure qui ne comporte pas de page d’AEM mappée, il n’y a aucune fonctionnalité de création sur cette instance d’itinéraire. Pour activer la création sur ces pages, il vous suffit de créer une page AEM avec le nom correspondant sous la page __Adventure__ .
 
 ## Félicitations ! 
 
-Félicitations ! Vous avez ajouté la capacité de création aux itinéraires dynamiques dans le SPA !
+Félicitations ! Vous avez ajouté la capacité de création aux itinéraires dynamiques dans la SPA !
 
-+ Ajouté le composant ResponsiveGrid du composant AEM React Editable sur un itinéraire dynamique
-+ Création de pages AEM pour la prise en charge de la création de deux itinéraires spécifiques dans la SPA (Bali Surf Camp et Beervana à Portland)
-+ Contenu créé sur le parcours dynamique du Bali Surf Camp !
++ Ajout du composant ResponsiveGrid du composant React Modifiable AEM à un itinéraire dynamique.
++ Création de pages AEM pour la création de deux itinéraires spécifiques dans le SPA (Bali Surf Camp et Beervana à Portland)
++ Contenu créé sur l&#39;itinéraire dynamique Bali Surf Camp !
 
-Vous avez maintenant terminé d&#39;explorer les premières étapes de la façon dont AEM SPA Editor peut être utilisé pour ajouter des zones modifiables spécifiques à un SPA distant !
+Vous avez maintenant terminé d’explorer les premières étapes de la manière dont AEM Éditeur SPA peut être utilisé pour ajouter des zones modifiables spécifiques à un  distant !
 
 
 >[!NOTE]
 >
->Restez à l&#39;écoute ! Ce didacticiel sera développé afin d’inclure les meilleures pratiques et recommandations de l’Adobe sur la manière de déployer la solution SPA Editor sur AEM en tant que Cloud Service et environnements de production.
+>Restez à l&#39;écoute ! Ce tutoriel sera développé afin de présenter les bonnes pratiques et les recommandations de l’Adobe sur le déploiement de la solution SPA Editor vers AEM as a Cloud Service et les environnements de production.
