@@ -1,24 +1,23 @@
 ---
-title: Balises dynamiques de vidéo en AEM Assets
-description: Les ressources du Experience Manager utilisent Adobe Sensei pour baliser intelligemment les ressources vidéo avec des mots-clés qui décrivent les éléments clés de la vidéo, ce qui permet de les découvrir facilement à l’aide de la recherche de mots-clés effectuée par AEM utilisateurs.
-feature: Smart Tags
+title: Balises intelligentes vidéo dans AEM Assets
+description: Experience Manager Assets utilise Adobe Sensei pour baliser intelligemment des ressources vidéo avec des mots-clés qui décrivent les éléments clés de la vidéo, ce qui permet de les découvrir facilement à l’aide de la recherche par mots-clés par les utilisateurs AEM.
+feature: Balises intelligentes
 version: cloud-service
 kt: 6445
 thumbnail: 327005.jpg
-topic: Content Management
+topic: Gestion de contenu
 role: Business Practitioner
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '77'
 ht-degree: 5%
 
 ---
 
 
-# Balises dynamiques de vidéo
+# Balises intelligentes de la vidéo
 
-Les ressources du Experience Manager utilisent Adobe Sensei pour baliser intelligemment les ressources vidéo avec des mots-clés qui décrivent les éléments clés de la vidéo, ce qui permet de les découvrir facilement à l’aide de la recherche de mots-clés effectuée par AEM utilisateurs.
+Experience Manager Assets utilise Adobe Sensei pour baliser intelligemment des ressources vidéo avec des mots-clés qui décrivent les éléments clés de la vidéo, ce qui permet de les découvrir facilement à l’aide de la recherche par mots-clés par les utilisateurs AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/327005/?quality=12&learn=on)
