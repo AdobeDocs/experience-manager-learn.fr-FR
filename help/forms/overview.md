@@ -4,36 +4,35 @@ seo-title: Tutorials et vidéos AEM Forms
 description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés
 seo-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés
 sub-product: formulaires
-topic: Development
+topic: Développement
 role: Developer
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 32%
+source-wordcount: '304'
+ht-degree: 37%
 
 ---
 
 
 # Présentation {#overview}
 
-Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gérer, publier et mettre à jour des formulaires numériques complexes tout en s’intégrant aux processus principaux, aux règles métier et aux données. Ce guide d&#39;utilisation contient des vidéos et des didacticiels sur les nombreuses fonctionnalités et fonctionnalités de l&#39;AEM Forms
+Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gérer, publier et mettre à jour des formulaires numériques complexes tout en s’intégrant aux processus principaux, aux règles métier et aux données. Ce guide de l’utilisateur contient des vidéos et des tutoriels sur les nombreuses fonctionnalités d’AEM Forms
 
 ## Nouveautés
 
-* **[Gestion des messages d’erreur dans l’étape du service de modèle de données de formulaire d’appel](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
+* **[Gestion des messages d’erreur dans l’étape Invoquer le service de modèle de données de formulaire](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
 
-   *Une variable dans un modèle de processus est un moyen de stocker une valeur en fonction de son type de données.*
+   *Une variable dans un modèle de processus permet de stocker une valeur en fonction de son type de données*
 
-* **[Graphiques multiséries dans des Documents de communication interactifs (vidéo)](./interactive-communications/multiseriescharts.md)**
+* **[Graphiques à séries multiples dans les documents de communication interactive (vidéo)](./interactive-communications/multiseriescharts.md)**
 
-   *Tracer plusieurs séries dans le même graphique.Les graphiques à séries multiples sont généralement utilisés en association avec le type de graphique Ligne, Barre, Colonne.*
+   *Faites glisser plusieurs séries dans le même graphique. Les graphiques à séries multiples sont généralement utilisés en association avec le type de graphique Ligne,Barre,Colonne .*
 
-* **[Création de modèles de processus réutilisables](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
+* **[Création de modèles de workflow réutilisables](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
 
-   *Créer des modèles de processus non liés à un formulaire spécifique*
+   *Création de modèles de workflow non liés à un formulaire spécifique*
 
-## Sélection du personnel
+## Sélections du personnel
 
 <table>
 <tr>
@@ -56,11 +55,11 @@ Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gérer
     </a>
     <div>
       <a href="./ic-print-channel-tutorial/introduction.md">
-    <strong>Créer votre premier Document de Canal d'impression</strong>
+    <strong>Créer votre premier document de canal d’impression</strong>
     </a>
     </div>
     <p>
-    <em>Interactive Communications centralise et gère la création, l'assemblage et la diffusion de correspondances sécurisées, personnalisées et interactives telles que la correspondance d'affaires, les documents, les relevés, les avis d'avantages, les courriels marketing, les factures et les kits de bienvenue.  </em>
+    <em>Les communications interactives centralisent et gèrent la création, l’assemblage et la livraison de correspondances sécurisées, personnalisées et interactives telles que la correspondance commerciale, les documents, les déclarations, les avis de prestations, les courriers marketing, les factures et les kits de bienvenue.  </em>
     <p>
   </td>
   <td>
@@ -69,11 +68,11 @@ Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gérer
     </a>
     <div>
       <a href="./adaptive-forms/form-data-model-service-as-step-in-workflow-video-use.md">
-    <strong>Utilisation du modèle de données de formulaire dans le processus AEM</strong>
+    <strong>Utilisation d’un modèle de données de formulaire dans AEM Workflow</strong>
     </a>
     </div>
     <p>
-    <em>Appeler le service du modèle de données de formulaire comme étape dans AEM Workflow</em>
+    <em>Appeler le service de modèle de données de formulaire comme étape dans AEM workflow</em>
     <p>
   </td>
 </tr>
@@ -81,11 +80,11 @@ Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gérer
 
 ## Ressources supplémentaires
 
-* [Experience League - Explorez AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Documentation de création AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
+* [Experience League - Explorer les AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Documentation sur la création AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
 * [Documentation sur le développement d’AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
-* [Documentation de l’administration AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
-* [AEM Sites Deploying Documentation](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/user-guide.html)
+* [Documentation sur l’administration AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
+* [Documentation sur le déploiement d’AEM Sites](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/user-guide.html)
 * [Tutoriels d’AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriels d’AEM Assets](/help/assets/overview.md)
 * [Tutoriels d’AEM Forms](/help/forms/overview.md)
