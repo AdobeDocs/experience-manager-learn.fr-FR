@@ -6,11 +6,10 @@ version: 6.3, 6.4, 6.5
 topic: Collaboration
 role: Developer
 level: Intermediate
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 4%
+source-wordcount: '62'
+ht-degree: 3%
 
 ---
 
@@ -19,11 +18,11 @@ ht-degree: 4%
 
 AEM prend en charge la personnalisation de la sortie de l’annotation au format PDF.
 
-## Annotation PDF sling:définition OsgiConfig
+## Annotation PDF : définition sling:OsgiConfig
 
 Pour personnaliser les annotations PDF, créez un noeud **sling:OsgiConfig** dans votre projet AEM sous
 
-`/apps/my-project/config.author/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig.xml` et ajustez les valeurs suivant vos besoins :
+`/apps/my-project/config.author/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig.xml` et ajustez les valeurs suivant les besoins :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
