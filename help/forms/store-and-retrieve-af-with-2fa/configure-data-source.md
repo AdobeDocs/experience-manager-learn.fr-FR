@@ -1,7 +1,7 @@
 ---
-title: Configurer la source de données
-description: Création de DataSource pointant vers la base de données MySQL
-feature: Adaptive Forms
+title: Configuration de la source de données
+description: Créer une source de données pointant vers la base de données MySQL
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: tutorial
@@ -9,25 +9,24 @@ activity: implement
 version: 6.4,6.5
 kt: 6541
 thumbnail: 6541.jpg
-topic: Development
+topic: Développement
 role: Developer
 level: Beginner
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '294'
 ht-degree: 4%
 
 ---
 
 
-# Configurer la source de données
+# Configuration de la source de données
 
-Il existe de nombreuses manières d&#39;AEM permettre l&#39;intégration à une base de données externe. L&#39;une des pratiques les plus courantes et les plus courantes d&#39;intégration de base de données est d&#39;utiliser les propriétés de configuration de DataSource mises en pool de la connexion Apache Sling par l&#39;intermédiaire de [configMgr](http://localhost:4502/system/console/configMgr).
+AEM permet l’intégration à une base de données externe de différentes manières. L’une des pratiques les plus courantes et standard d’intégration de la base de données consiste à utiliser les propriétés de configuration Apache Sling Connection Pooled DataSource via [configMgr](http://localhost:4502/system/console/configMgr).
 La première étape consiste à télécharger et déployer les [pilotes MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) appropriés vers AEM.
-Définissez ensuite les propriétés DataSource mises en pool de la connexion Sling propres à votre base de données. La capture d&#39;écran suivante montre les paramètres utilisés pour ce didacticiel. Le schéma de base de données vous est fourni dans le cadre de ce didacticiel.
+Définissez ensuite les propriétés Sling Connection Pooled DataSource spécifiques à votre base de données. La capture d’écran suivante montre les paramètres utilisés pour ce tutoriel. Le schéma de base de données vous est fourni dans le cadre de ces ressources de tutoriel.
 
-![source de données](assets/data-source.JPG)
+![data-source](assets/data-source.JPG)
 
 
 * Classe de pilote JDBC : `com.mysql.cj.jdbc.Driver`
@@ -40,24 +39,24 @@ Définissez ensuite les propriétés DataSource mises en pool de la connexion Sl
 ## Créer une base de données
 
 
-La base de données suivante a été utilisée aux fins de ce cas d&#39;utilisation. La base de données comporte une table appelée `formdatawithattachments` avec les 4 colonnes, comme le montre la capture d&#39;écran ci-dessous.
-![base de données](assets/table-schema.JPG)
+La base de données suivante a été utilisée à des fins de ce cas pratique. La base de données comporte une table appelée `formdatawithattachments` avec les 4 colonnes, comme illustré dans la capture d&#39;écran ci-dessous.
+![data-base](assets/table-schema.JPG)
 
 * La colonne **afdata** contiendra les données du formulaire adaptatif.
-* La colonne **attachmentsInfo** contiendra les informations relatives aux pièces jointes du formulaire.
-* Les colonnes **telephoneNumber** contiendront le numéro de téléphone portable de la personne qui remplit le formulaire.
+* La colonne **attachmentsInfo** contiendra les informations sur les pièces jointes du formulaire.
+* Les colonnes **telephoneNumber** contiendront le numéro de mobile de la personne qui remplit le formulaire.
 
-Veuillez créer la base de données en important le [schéma de base de données](assets/data-base-schema.sql).
-utilisation de MySQL Workbench.
+Créez la base de données en important le [schéma de base de données](assets/data-base-schema.sql)
+à l’aide de MySQL Workbench.
 
-## Créer un modèle de données de formulaire
+## Création d’un modèle de données de formulaire
 
 Créez un modèle de données de formulaire et basez-le sur la source de données créée à l’étape précédente.
-Configurez le service **get** de ce modèle de données de formulaire comme indiqué dans la capture d’écran ci-dessous.
-Veillez à ne pas renvoyer de tableau dans le service **get**.
+Configurez le service **get** de ce modèle de données de formulaire comme illustré dans la capture d’écran ci-dessous.
+Veillez à ne pas renvoyer de tableau dans le service **get** .
 
-Ce service **get** est utilisé pour récupérer le numéro de téléphone associé à l&#39;ID d&#39;application.
+Ce service **get** est utilisé pour récupérer le numéro de téléphone associé à l’ID de l’application.
 
 ![get-service](assets/get-service.JPG)
 
-Ce modèle de données de formulaire sera ensuite utilisé dans le formulaire **MyAccountForm** pour récupérer le numéro de téléphone associé à l&#39;identifiant de l&#39;application.
+Ce modèle de données de formulaire sera ensuite utilisé dans la balise **MyAccountForm** pour récupérer le numéro de téléphone associé à l’ID de l’application.
