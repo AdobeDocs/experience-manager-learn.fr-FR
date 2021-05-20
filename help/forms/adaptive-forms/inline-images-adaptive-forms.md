@@ -1,21 +1,20 @@
 ---
-title: Affichage d’images intégrées dans une Forms adaptative
-seo-title: Affichage d’images intégrées dans une Forms adaptative
-description: Affichage des images téléchargées en ligne dans Forms adaptatif
-seo-description: Affichage des images téléchargées en ligne dans Forms adaptatif
-feature: Adaptive Forms
+title: Affichage d’images intégrées dans Adaptive Forms
+seo-title: Affichage d’images intégrées dans Adaptive Forms
+description: Affichage des images téléchargées en ligne dans Adaptive Forms
+seo-description: Affichage des images téléchargées en ligne dans Adaptive Forms
+feature: Formulaires adaptatifs
 topics: development
 audience: developer
 doc-type: article
 activity: setup
 version: 6.3,6.4,6.5
-topic: Development
+topic: Développement
 role: Developer
 level: Experienced
-translation-type: tm+mt
 source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '241'
 ht-degree: 1%
 
 ---
@@ -23,11 +22,11 @@ ht-degree: 1%
 
 # Images intégrées dans Adaptive Forms
 
-Un cas d’utilisation courant consiste à afficher l’image téléchargée en tant qu’image intégrée dans un formulaire adaptatif. Par défaut, l’image téléchargée s’affiche sous forme de lien et cette expérience peut être améliorée en affichant l’image dans un formulaire adaptatif. Cet article décrit les étapes d&#39;affichage des images intégrées.
+Un cas d’utilisation courant consiste à afficher l’image téléchargée en tant qu’image intégrée dans un formulaire adaptatif. Par défaut, l’image téléchargée s’affiche sous forme de lien et cette expérience peut être améliorée en affichant l’image dans le formulaire adaptatif. Cet article décrit les étapes à suivre pour afficher une image intégrée.
 
-## Image d’espace réservé Ajouté
+## Ajout d’une image d’espace réservé
 
-La première étape consiste à ajouter en préfixe une balise d&#39;emplacement div au composant de pièce jointe du fichier. Dans le code ci-dessous, le composant de pièce jointe est identifié par son nom de classe CSS de téléchargement de photos. La fonction JavaScript fait partie de la bibliothèque cliente associée aux formulaires adaptatifs. Cette fonction est appelée dans l’initialisation du événement du composant de pièce jointe du fichier.
+La première étape consiste à ajouter une balise div d’espace réservé au composant de pièce jointe. Dans le code ci-dessous, le composant de pièce jointe est identifié par son nom de classe CSS de téléchargement de photo. La fonction JavaScript fait partie de la bibliothèque cliente associée aux formulaires adaptatifs. Cette fonction est appelée dans l’événement initialize du composant de pièce jointe.
 
 ```javascript
 /**
@@ -40,9 +39,9 @@ function addTempImage(){
 }
 ```
 
-### Afficher l’image intégrée
+### Afficher une image intégrée
 
-Une fois que l’utilisateur a téléchargé l’image, la fonction répertoriée ci-dessous est appelée dans le événement de validation du composant de pièce jointe du fichier. La fonction reçoit l’objet de fichier téléchargé en tant qu’argument.
+Une fois que l’utilisateur a chargé l’image, la fonction répertoriée ci-dessous est appelée dans l’événement commit du composant de pièce jointe. La fonction reçoit l’objet de fichier chargé en tant qu’argument.
 
 ```javascript
 /**
@@ -70,7 +69,7 @@ function consumeImage (file) {
 
 ### Déployer sur votre serveur
 
-* Téléchargez et installez la [bibliothèque cliente](assets/inline-image-client-library.zip) sur votre instance AEM à l’aide d’AEM Package Manager.
-* Téléchargez et installez l&#39;[exemple de formulaire](assets/inline-image-af.zip) sur votre instance AEM à l&#39;aide d&#39;AEM Package Manager.
-* Pointez votre navigateur sur [Ajouter l’image intégrée](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled).
+* Téléchargez et installez la [bibliothèque cliente](assets/inline-image-client-library.zip) sur votre instance AEM à l’aide d’AEM gestionnaire de packages.
+* Téléchargez et installez l’[exemple de formulaire](assets/inline-image-af.zip) sur votre instance d’AEM à l’aide d’AEM gestionnaire de packages.
+* Pointez votre navigateur sur [Ajouter une image intégrée](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled).
 * Cliquez sur le bouton &quot;Joindre votre photo&quot; pour ajouter une image.
