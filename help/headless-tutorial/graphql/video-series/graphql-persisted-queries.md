@@ -1,0 +1,30 @@
+---
+title: Requêtes persistantes GraphQL
+description: Découvrez comment activer, créer et exécuter des requêtes persistantes dans AEM.
+sub-product: ressources
+version: cloud-service
+topic: Sans affichage, gestion de contenu
+feature: API GraphQL
+role: Developer
+level: Beginner
+kt: 7872
+thumbnail: 333429.jpeg
+source-git-commit: bfca379bf2722dc1658400f375e65d2943f27ed7
+workflow-type: tm+mt
+source-wordcount: '67'
+ht-degree: 1%
+
+---
+
+
+# Requêtes persistantes GraphQL
+
+Découvrez comment activer, créer et exécuter des requêtes persistantes dans AEM.
+
+Dans cette vidéo, vous allez :
+
++ Découvrez comment activer les requêtes persistantes GraphQL
++ Découvrez comment créer, mettre à jour et exécuter des requêtes GraphQL
++ Présentation des avantages et des inconvénients des requêtes côté serveur et côté client
+
+>[!VIDEO](https://video.tv.adobe.com/v/333429/?quality=12&learn=on)
