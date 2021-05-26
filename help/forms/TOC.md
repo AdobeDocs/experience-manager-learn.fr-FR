@@ -5,9 +5,9 @@ user-guide-title: Vidéos et tutoriels d’AEM Forms
 user-guide-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés.
 breadcrumb-title: Tutoriels d’AEM Forms
 index: y
-source-git-commit: da7837d45a9d5f614a4f6527b7bfe98aaf980d4f
+source-git-commit: c74c6f5627e69e32bbf0098d6b6bab122cace798
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '964'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,10 @@ ht-degree: 6%
 + Intégrations utiles{#some-useful-integrations}
    + [Authentification à deux facteurs](some-useful-integrations/two-factor-authentication.md)
    + [Extraction de données OCR](some-useful-integrations/ocr-data-extraction.md)
-
++ Création d’un lot OSGi {#creating-your-first-osgi-bundle}
+   + [Configuration de votre environnement](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
+   + [Création d’un service OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
+   + [Création d’un servlet Sling](creating-your-first-osgi-bundle/create-servlet.md)
 + Formulaires adaptatifs {#adaptive-forms}
    + [Installation d’AEM Forms sous Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [Installation de packages 32 bits sur Linux](adaptive-forms/installing-aem-form-on-linux.md)
