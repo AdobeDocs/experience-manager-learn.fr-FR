@@ -7,7 +7,7 @@ role: Developer, Architect
 level: Beginner
 kt: 7633
 thumbnail: kt-7633.jpeg
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+source-git-commit: 5dea9cf646762c0f4aff43d9e48a35ab6ebc0af8
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 2%
@@ -277,7 +277,7 @@ Ajoutez les AEM fichiers SCSS de grille réactive à la SPA.
 1. Téléchargez et copiez les deux fichiers suivants dans `src/styles`
    + [_grid.scss](./assets/spa-bootstrap/_grid.scss)
       + Générateur SCSS de grille réactive AEM
-   + [_grid-init.scss](./assets/spa-bootstrap/_grid.scss)
+   + [_grid-init.scss](./assets/spa-bootstrap/_grid-init.scss)
       + Appelle `_grid.scss` à l’aide des points d’arrêt spécifiques SPA (ordinateurs de bureau et appareils mobiles) et des colonnes (12).
 1. Ouvrez `src/App.scss` et importez `./styles/grid-init.scss`
 
