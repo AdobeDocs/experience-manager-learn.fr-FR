@@ -12,15 +12,17 @@ thumbnail: 330460.jpg
 topic: Sans affichage, intégrations
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 3%
+source-wordcount: '647'
+ht-degree: 2%
 
 ---
 
 
 # Authentification basée sur les jetons à AEM en tant que Cloud Service
+
+AEM expose divers points de terminaison HTTP qui peuvent être interactifs sans interface, depuis GraphQL, AEM Content Services jusqu’à l’API HTTP Assets. Souvent, ces clients sans interface peuvent avoir besoin de s’authentifier auprès d’AEM pour accéder à un contenu ou à des actions protégés. Pour faciliter cette opération, AEM prend en charge l’authentification par jeton des requêtes HTTP provenant d’applications, de services ou de systèmes externes.
 
 Dans ce tutoriel, découvrez comment une application externe peut s’authentifier et interagir par programmation avec AEM en tant que Cloud Service sur HTTP à l’aide de jetons d’accès.
 
