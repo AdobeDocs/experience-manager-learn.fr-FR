@@ -5,58 +5,153 @@ feature: Fragments de contenu, API
 topic: Sans affichage, gestion de contenu
 role: Developer
 level: Beginner
-source-git-commit: db9f4d09dcc83f85c8d02d94c383fa456af88c24
+source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 4%
+source-wordcount: '419'
+ht-degree: 5%
 
 ---
 
 
 # Tutoriels AEM sans affichage
 
-Adobe Experience Manager dispose de plusieurs options pour définir des points de terminaison sans interface et diffuser son contenu au format JSON. Utilisez des tutoriels pratiques pour découvrir comment utiliser les différentes options et choisir ce qui vous convient.
+Adobe Experience Manager (AEM) dispose de plusieurs options pour définir des points de terminaison sans affichage et diffuser son contenu au format JSON. Utilisez des tutoriels pratiques pour découvrir comment utiliser les différentes options et choisir ce qui vous convient.
 
-## Tutoriel sur les API AEM GraphQL
+>[!TIP]
+>
+>Cette collection de tutoriels est conçue pour ceux qui préfèrent **apprendre en faisant**. Si vous préférez apprendre des concepts de base, consultez le [Parcours de développement AEM sans affichage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html). Cet ensemble de tutoriels et de parcours se complètent.
 
-AEM des API GraphQL pour les fragments de contenu
-prend en charge les scénarios CMS sans interface dans lesquels les applications clientes externes effectuent le rendu d’expériences à l’aide de contenu géré dans AEM.
+## Tutorials par API
 
-Une API de diffusion de contenu moderne est essentielle à l’efficacité et aux performances des applications frontales JavaScript. L’utilisation d’une API REST présente des défis :
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr">
+      <img alt="API GraphQL" src="./assets/graphql-icon.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+    <strong>API GraphQL</strong>
+    </a>
+    </div>
+    <p>
+    <em>Découvrez comment une application peut utiliser AEM API GraphQL pour interroger le contenu.</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+    <img alt="Authentification basée sur les jetons" src="./assets/token-auth-icon.png" />
+    </a>
+    <div>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+    <strong>Authentification des jetons</strong>
+    </a>
+    </div>
+    <p>
+    <em>Découvrez comment une application peut s’authentifier en toute sécurité avec AEM.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+      <img alt="Content Services" src="./assets/content-services.png" />
+    </a>
+     <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+        <strong>Content Services</strong>
+      </a>
+    </div>
+    <p>
+    <em>Découvrez comment une application peut utiliser une API REST pour consommer du contenu.</em>
+    <p>
+  </td>
+</tr>
+</table>
 
-* Un grand nombre de requêtes pour récupérer un objet à la fois
-* Souvent, le contenu est &quot;sur-diffusé&quot;, ce qui signifie que l’application reçoit plus que nécessaire
+## Tutorials par structure
 
-Pour surmonter ces défis, GraphQL fournit une API basée sur les requêtes qui permet aux clients de demander AEM uniquement pour le contenu dont ils ont besoin et de recevoir à l’aide d’un seul appel API.
+Parcourez les tutoriels suivants en fonction de la technologie utilisée. Découvrez comment AEM peut aller au-delà d’un simple cas d’utilisation sans tête, avec des options de création en contexte et de gestion de l’expérience.
 
-* Découvrez comment utiliser AEM API GraphQL dans le [didacticiel Prise en main des API GraphQL AEM](./graphql/overview.md)
-
-## Tutoriel sur l’authentification basée sur les jetons
-
-AEM expose divers points de terminaison HTTP qui peuvent être interactifs sans interface, depuis GraphQL, AEM Content Services jusqu’à l’API HTTP Assets. Souvent, ces clients sans interface peuvent avoir besoin de s’authentifier auprès d’AEM pour accéder à un contenu ou à des actions protégés. Pour faciliter cette opération, AEM prend en charge l’authentification par jeton des requêtes HTTP provenant d’applications, de services ou de systèmes externes.
-
-* Découvrez comment vous authentifier sur AEM via HTTP à l’aide de jetons d’accès dans le didacticiel [Authentification en AEM en tant que Cloud Service à partir d’une application externe](./authentication/overview.md)
-
-## Tutoriel sur AEM Content Services
-
-AEM Content Services utilise les pages AEM traditionnelles pour composer des points de terminaison d’API REST sans interface utilisateur, et les composants d’AEM définissent, ou référencent, le contenu à exposer sur ces points de terminaison.
-
-AEM Content Services permet les mêmes abstractions de contenu que celles utilisées pour la création de pages web dans AEM Sites pour définir le contenu et les schémas de ces API HTTP. L’utilisation des composants Pages d’AEM et AEM permet aux marketeurs de composer et de mettre à jour rapidement des API JSON flexibles pouvant alimenter n’importe quelle application.
-
-* Découvrez comment utiliser AEM Content Services dans le [didacticiel Prise en main d’AEM Content Services](./content-services/overview.md)
-
-## AEM GraphQL par rapport à AEM Content Services
-
-|  | AEM API GraphQL | AEM Content Services |
-|--------------------------------|:-----------------|:---------------------|
-| Définition d’un schéma | Modèles de fragment de contenu structuré | Composants AEM |
-| Contenu | Fragments de contenu | Composants AEM |
-| Détection de contenu | Par requête GraphQL | Par AEM page |
-| Format de diffusion | JSON GraphQL | AEM ComponentExporter JSON |
-
-## Autres tutoriels utiles
-
-Voici d’autres tutoriels AEM sur les concepts sans interface utilisateur graphique :
-
-* [Prise en main de l’Éditeur AEM SPA et d’Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [Prise en main de l’Éditeur AEM SPA et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html">
+      <img alt="React - Headless" src="./assets/react-headless.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html">
+    <strong>React - Headless</strong>
+    </a>
+    </div>
+    <p>
+    <em>Créez une application React JS à l’aide de GraphQL dans un scénario sans tête pur.</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
+    <img alt="React - Éditeur distant" src="./assets/react-remote.png" />
+    </a>
+    <div>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
+    <strong>React - Éditeur distant</strong>
+    </a>
+    </div>
+    <p>
+    <em>Créez dans le contexte une partie d’une application React hébergée à distance.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
+      <img alt="React - Éditeur SPA" src="./assets/react-spa-editor.png" />
+    </a>
+     <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
+        <strong>React - Éditeur SPA</strong>
+      </a>
+    </div>
+    <p>
+    <em>Utilisez l’éditeur SPA d’AEM pour gérer l’expérience complète de l’application React.</em>
+    <p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html">
+      <img alt="React - Headless" src="./assets/angular-spa-editor.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html">
+    <strong>Angular - Éditeur SPA</strong>
+    </a>
+    </div>
+    <p>
+    <em>Utilisez l’éditeur SPA d’AEM pour gérer l’expérience complète de l’application Angular.</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+    <img alt="Angular - Content Services" src="./assets/android.png" />
+    </a>
+    <div>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
+    <strong>Android - Content Services</strong>
+    </a>
+    </div>
+    <p>
+    <em>Utilisez Content Services et REST pour alimenter une application mobile Android.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+      <img alt="Node.js - Authentification" src="./assets/node-js.png" />
+    </a>
+     <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
+        <strong>Node.js - Authentification</strong>
+      </a>
+    </div>
+    <p>
+    <em>Créez une application Node.js à l’aide de jetons de développement et de service pour l’authentification.</em>
+    <p>
+  </td>
+</tr>
+</table>
