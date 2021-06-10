@@ -7,10 +7,10 @@ feature: Fragments d’expérience
 topic: Personnalisation
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 6%
+source-wordcount: '700'
+ht-degree: 5%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 6%
 Dans cette section, nous allons discuter de la configuration d’Adobe Experience Manager avec Adobe Target pour différents scénarios. Selon votre scénario et les exigences de votre organisation.
 
 * **Ajout d’une bibliothèque JavaScript Adobe Target (obligatoire pour tous les scénarios)**
-Pour les sites hébergés sur AEM, vous pouvez ajouter des bibliothèques Target à votre site à l’aide de  [Launch](https://docs.adobe.com/content/help/fr-FR/launch/using/overview.html). Launch offre un moyen simple de déployer et de gérer toutes les balises nécessaires pour offrir des expériences client pertinentes.
+Pour les sites hébergés sur AEM, vous pouvez ajouter des bibliothèques Target à votre site à l’aide de  [Launch](https://experienceleague.adobe.com/docs/launch/using/home.html). Launch offre un moyen simple de déployer et de gérer toutes les balises nécessaires pour offrir des expériences client pertinentes.
 * **Ajoutez les Cloud Services Adobe Target (requis pour le scénario Fragments d’expérience)**
  Pour les clients AEM qui souhaitent utiliser les offres de fragments d’expérience pour créer une activité dans Adobe Target, vous devez intégrer Adobe Target à AEM à l’aide des Cloud Services hérités. Cette intégration est nécessaire pour transmettre les fragments d’expérience d’AEM à Target sous forme d’offres HTML/JSON et pour que les offres restent synchronisées avec AEM. 
 *Cette intégration est requise pour la mise en oeuvre du scénario 1.*
