@@ -6,10 +6,10 @@ feature: Formulaires adaptatifs
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: 22437e93cbf8f36d723dc573fa327562cb51b562
+source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 3%
+source-wordcount: '843'
+ht-degree: 4%
 
 ---
 
@@ -116,7 +116,12 @@ Développez le dossier `src/main/java` sous le dossier `learningaemforms.core` .
 ## Créer votre projet
 
 
-Une fois que vous avez écrit votre service OSGi, ou servlet, vous devez créer votre projet pour générer le lot OSGi qui peut être déployé à l’aide de la console web Felix. Reportez-vous à la section [SDK client AEMFD](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) pour inclure le SDK client approprié dans votre projet Maven. Vous devrez inclure le SDK client FD AEM dans la section des dépendances de `pom.xml` du projet principal, comme illustré ci-dessous.
+
+
+Une fois que vous avez écrit votre service OSGi, ou servlet, vous devez créer votre projet pour générer le lot OSGi qui peut être déployé à l’aide de la console web Felix. Reportez-vous à la section [SDK client AEMFD](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk-) pour inclure le SDK client approprié dans votre projet Maven. Vous devrez inclure le SDK client FD AEM dans la section des dépendances de `pom.xml` du projet principal, comme illustré ci-dessous.
+
+
+
 
 
 ```xml
@@ -131,5 +136,6 @@ Pour créer votre projet, procédez comme suit :
 
 * Ouvrez la **fenêtre d’invite de commande**.
 * Accédez à `c:\aemformsbundles\learningaemforms\core`.
-* Exécutez la commande `mvn clean install`
-Si tout se passe bien, le lot doit s’afficher à l’emplacement suivant `C:\AEMFormsBundles\learningaemforms\core\target`. Ce lot est maintenant prêt à être déployé dans AEM à l’aide de la console web Felix.
+* Exécutez la commande `mvn clean install -PautoInstallBundle`
+La commande ci-dessus crée et installe le lot dans le serveur AEM s’exécutant sur `http://localhost:4502`. Le lot sera également disponible sur le système de fichiers à l’adresse
+   `C:\AEMFormsBundles\learningaemforms\core\target` et peut être déployé à l’aide de la console web  [Felix.](http://localhost:4502/system/console/bundles)
