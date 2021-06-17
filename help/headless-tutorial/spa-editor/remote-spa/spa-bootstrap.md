@@ -7,9 +7,9 @@ role: Developer, Architect
 level: Beginner
 kt: 7633
 thumbnail: kt-7633.jpeg
-source-git-commit: 5dea9cf646762c0f4aff43d9e48a35ab6ebc0af8
+source-git-commit: 76b10941ca8aeb5aa15ca39d354d9f7e7fb24522
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1227'
 ht-degree: 2%
 
 ---
@@ -18,6 +18,18 @@ ht-degree: 2%
 # Bootstrap de la SPA distante pour SPA Editor
 
 Avant que les zones modifiables puissent être ajoutées au SPA distant, il doit être démarré avec le SDK JavaScript de l’AEM éditeur et quelques autres configurations.
+
+
+## Téléchargement de la source de l’application WKND
+
+Si vous ne l’avez pas déjà fait, téléchargez le code source de l’application WKND à partir de Github.com, puis changez de branche contenant les modifications apportées au SPA exécuté dans ce tutoriel.
+
+```
+$ mkdir -p ~/Code/wknd-app
+$ cd ~/Code/wknd-app
+$ git clone --branch feature/spa-editor https://github.com/adobe/aem-guides-wknd-graphql.git
+$ cd aem-guides-wknd-graphql
+```
 
 ## Ajout AEM dépendances npm du SDK JS de l’éditeur SPA
 
