@@ -4,10 +4,10 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: service cloud
 team: TM
-source-git-commit: 84499d5a7c8adac87196f08c6328e8cb428c0130
+source-git-commit: e2bdc73aff012bde5a1ff8f5c85ac0a183dc441d
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 30%
    + Débogage d’AEM en tant que Cloud Service{#debugging-aem-as-a-cloud-service}
       + [Présentation](./debugging/cloud-service/overview.md)
       + [Journaux](./debugging/cloud-service/logs.md)
-      + [Création et déploiement](./debugging/cloud-service/build-and-deployment.md)
+      + [Build et déploiement](./debugging/cloud-service/build-and-deployment.md)
       + [Developer Console](./debugging/cloud-service/developer-console.md)
       + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
 + Accès à AEM{#accessing}
@@ -142,7 +142,7 @@ ht-degree: 30%
       + [Travailleurs de métadonnées](./asset-compute/advanced/metadata.md)
    + [Résolution des problèmes](./asset-compute/troubleshooting.md)
 + Tutorials en plusieurs étapes{#multi-step-tutorials}
-   + [Développement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/develop-wknd-tutorial.html)
+   + [Développement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)
    + [Éditeur SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
    + [Éditeur SPA (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
