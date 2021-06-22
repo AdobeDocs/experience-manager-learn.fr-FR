@@ -9,9 +9,9 @@ role: Developer
 level: Beginner
 kt: 7621
 thumbnail: 332860.jpg
-source-git-commit: e4abfe07f1b4e67f973f39186aafc33715592b2f
+source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
@@ -29,3 +29,5 @@ Dans cette vidéo, vous allez :
 + Découvrez comment installer et utiliser l’outil GraphiQL
 
 >[!VIDEO](https://video.tv.adobe.com/v/332860/?quality=12&learn=on)
+
+_Téléchargez la  [collection ](./assets/aem-headless-video-series.postman_collection.json) Postman utilisée dans la série AEM de vidéos sans affichage._
