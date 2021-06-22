@@ -8,9 +8,9 @@ topic: Développement
 feature: Outils de développement
 kt: 6933
 thumbnail: 330558.jpg
-source-git-commit: 5ac82928d4b0bf75b348a414793c24c3aca92f36
+source-git-commit: f707c8e7cce413ecdcfb5d406fd1b38f26d965c4
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '91'
 ht-degree: 3%
 
 ---
@@ -22,4 +22,6 @@ Découvrez comment télécharger et configurer un environnement de développemen
 
 >[!VIDEO](https://video.tv.adobe.com/v/330558/?quality=12&learn=on)
 
-_ Consultez ces instructions pour [configurer un environnement de développement local complet à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)._
+_Le  `license.properties` contenu de cette vidéo n’est plus nécessaire pour exécuter le SDK AEM._
+
+Consultez ces instructions pour [configurer un environnement de développement local complet à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
