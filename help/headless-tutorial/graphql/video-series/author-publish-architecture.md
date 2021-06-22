@@ -9,10 +9,10 @@ role: Developer
 level: Beginner
 kt: 7873
 thumbnail: 333296.jpg
-source-git-commit: e4abfe07f1b4e67f973f39186aafc33715592b2f
+source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 1%
+source-wordcount: '104'
+ht-degree: 0%
 
 ---
 
@@ -28,3 +28,5 @@ Dans cette vidéo, vous allez :
 + Découvrez comment l’environnement de création peut être utilisé comme aperçu pour une application
 
 >[!VIDEO](https://video.tv.adobe.com/v/333296/?quality=12&learn=on)
+
+_Téléchargez la  [collection ](./assets/aem-headless-video-series.postman_collection.json) Postman utilisée dans la série AEM de vidéos sans affichage._
