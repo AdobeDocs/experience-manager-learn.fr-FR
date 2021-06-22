@@ -4,10 +4,10 @@ user-guide-description: Ensemble de vidéos et de tutoriels pour Adobe Experienc
 breadcrumb-title: Tutoriels d’AEM Assets
 sub-product: ressources
 team: TM
-source-git-commit: 0d012d61b7740e461e641dddd6c5255a022305ea
+source-git-commit: 53312e573ca022f09faa44cbbf51c5b8b0ed90ee
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 37%
+source-wordcount: '265'
+ht-degree: 36%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 37%
 + Création{#authoring}
    + [Navigation](./authoring/navigation.md)
    + [Opérations de base](./authoring/basic-operations.md)
-   + [Métadonnées  ](./authoring/metadata.md)
+   + [Métadonnées ](./authoring/metadata.md)
    + [Rendus](./authoring/renditions.md)
    + [Relation et dissociation](./authoring/relate-unrelate.md)
 
@@ -86,6 +86,9 @@ ht-degree: 37%
    + [Placer les liens](./adobe-asset-link/place-linked.md)
    + [Pour les emplacements uniquement (FPO)](./adobe-asset-link/for-placement-only.md)
    + [Recherche de ressources](./adobe-asset-link/asset-search.md)
+
++ Automatisation du contenu{#content-automation}
+   + [Présentation](./content-automation/overview.md)
 
 + Dynamic Media{#dynamic-media}
    + [Présentation de Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
