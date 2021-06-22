@@ -10,7 +10,7 @@ role: Developer
 level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 32320905786682a852baf7d777cb06de0072c439
 workflow-type: tm+mt
 source-wordcount: '3299'
 ht-degree: 4%
@@ -130,7 +130,8 @@ Les bibliothèques côté client présentent certaines limites en ce qui concern
 
    `main.scss` est le point d’entrée de tous les fichiers Sass du  `ui.frontend` module. Il inclura le fichier `_variables.scss`, qui contient une série de variables de marque à utiliser dans différents fichiers Sass du projet. Le fichier `_base.scss` est également inclus et définit certains styles de base pour les éléments HTML. Une expression régulière inclut tous les styles pour les styles de composants individuels sous `src/main/webpack/components`. Une autre expression régulière inclut tous les fichiers sous `src/main/webpack/site/styles`.
 
-1. Inspectez le fichier `main.ts`. `main.ts` inclut  `main.scss` et inclut une expression régulière pour collecter tout  `.js` ou  `.ts` fichier dans le projet. Ce point d’entrée sera utilisé par les [fichiers de configuration webpack](https://webpack.js.org/configuration/) comme point d’entrée pour l’ensemble du module `ui.frontend`.
+1. 
+   1. Inspectez le fichier `main.ts`. Il comprend `main.scss` et une expression régulière pour collecter tous les fichiers `.js` ou `.ts` du projet. Ce point d’entrée sera utilisé par les [fichiers de configuration webpack](https://webpack.js.org/configuration/) comme point d’entrée pour l’ensemble du module `ui.frontend`.
 
 1. Inspect les fichiers sous `src/main/webpack/site/styles` :
 
@@ -201,7 +202,7 @@ L’archétype de projet AEM configure automatiquement cette intégration. Ensui
    >
    >Il existe également un profil `npm run prod` qui minimise les éléments JS et CSS. Il s’agit de la compilation standard chaque fois que la version de webpack est déclenchée via Maven. Vous trouverez plus d’informations sur le module [ui.frontend ici](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
-1. Inspect le fichier `site.css` sous `ui.frontend/dist/clientlib-site/css/site.css`. Il s’agit de la page CSS compilée basée sur les fichiers source Sass.
+1. Inspect le fichier `site.css` sous `ui.frontend/dist/clientlib-site/site.css`. Il s’agit de la page CSS compilée basée sur les fichiers source Sass.
 
    ![CSS du site distribué](assets/client-side-libraries/ui-frontend-dist-site-css.png)
 
@@ -282,7 +283,7 @@ Examinons ensuite la manière dont les bibliothèques clientes sont référencé
 
 1. Cliquez sur l’icône **Informations sur la page** et, dans le menu, sélectionnez **Afficher comme publié** pour ouvrir la page de l’article en dehors de l’éditeur d’AEM.
 
-   ![Afficher comme publié(e) ](assets/client-side-libraries/view-as-published-article-page.png)
+   ![Afficher comme publié(e)](assets/client-side-libraries/view-as-published-article-page.png)
 
 1. Affichez la source Page de [http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled](http://localhost:4502/content/wknd/us/en/magazine/guide-la-skateparks.html?wcmmode=disabled) et vous devriez pouvoir voir les références clientlib suivantes dans le `<head>` :
 
@@ -310,7 +311,7 @@ Examinons ensuite la manière dont les bibliothèques clientes sont référencé
 
    >[!NOTE]
    >
-   > Si vous suivez la version 6.5/6.4, les bibliothèques côté client ne seront pas automatiquement réduites. Consultez la documentation sur le [Gestionnaire de bibliothèques HTML pour activer la minfication (recommandé)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=en#using-preprocessors).
+   > Si vous suivez la version 6.5/6.4, les bibliothèques côté client ne seront pas automatiquement réduites. Consultez la documentation sur le [Gestionnaire de bibliothèques HTML pour activer la minfication (recommandé)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=fr#using-preprocessors).
 
    >[!WARNING]
    >
