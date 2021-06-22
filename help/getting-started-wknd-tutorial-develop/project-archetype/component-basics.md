@@ -11,7 +11,7 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 32320905786682a852baf7d777cb06de0072c439
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 4%
@@ -328,7 +328,7 @@ Vous trouverez ci-dessous les étapes de haut niveau effectuées dans la vidéo 
    helloworld.js
    ```
 
-1. Mettez à jour le fichier `clientlib-helloworld/.conten.xml` pour inclure les propriétés suivantes :
+1. Mettez à jour le fichier `clientlib-helloworld/.content.xml` pour inclure les propriétés suivantes :
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
