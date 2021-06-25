@@ -10,7 +10,7 @@ version: 6.4,6.5
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 3a9778c97d57e55e3da740b492472456768fb32c
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 3%
@@ -77,7 +77,7 @@ Pour créer votre premier projet Maven, procédez comme suit :
 Le projet Maven sera généré de manière interactive et vous serez invité à fournir des valeurs à un certain nombre de propriétés telles que
 
 | Nom de la propriété | Significativité | Valeur |
-------------------------|---------------------------------------|---------------------
+|------------------------|---------------------------------------|---------------------|
 | groupId | groupId identifie de manière unique votre projet dans tous les projets. | com.learningaemforms.adobe |
 | appsFolderName | Nom du dossier qui contiendra la structure de votre projet | apprentissage de aemforms |
 | artifactId | artifactId est le nom du fichier jar sans version. Si vous l&#39;avez créée, vous pouvez choisir n&#39;importe quel nom avec des lettres minuscules et pas de symboles étranges. | apprentissage de aemforms |
@@ -132,6 +132,6 @@ Une fois que vous avez écrit votre service OSGi, ou servlet, vous devez créer 
 Pour créer votre projet, procédez comme suit :
 
 * Ouvrez la **fenêtre d’invite de commande**.
-* Accédez à `c:\aemformsbundles\learningaemforms\core`. 
+* Accédez à `c:\aemformsbundles\learningaemforms\core`.
 * Exécutez la commande `mvn clean install`
 Si tout se passe bien, le lot doit s’afficher à l’emplacement suivant `C:\AEMFormsBundles\learningaemforms\core\target`. Ce lot est maintenant prêt à être déployé dans AEM à l’aide de la console web Felix.
