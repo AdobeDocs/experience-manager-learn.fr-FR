@@ -2,19 +2,15 @@
 title: Configuration de la source de données AEM
 description: Configuration d’une source de données compatible avec MySQL pour stocker et récupérer des données de formulaire
 feature: Formulaires adaptatifs
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
-version: 6.4,6.5
-kt: 6899
-thumbnail: 6899.jpg
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+version: 6.4,6.5
+kt: 6899
+thumbnail: 6899.jpg
+source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '193'
 ht-degree: 7%
 
 ---
@@ -36,13 +32,11 @@ La base de données comporte un tableau appelé formdata avec les 3 colonnes, co
 >Veillez à nommer votre source de données **aemformstutorial**. L’exemple de code utilise le nom pour se connecter à la base de données.
 
 | Nom de la propriété | Valeur |
-------------------------|---------------------------------------
+| ------------------------|--------------------------------------- |
 | Datasource Name | SaveAndContinue |
 | Classe de pilote JDBC | com.mysql.cj.jdbc.Driver |
 | uri de connexion JDBC | jdbc:mysql://localhost:3306/aemformstutorial |
 
 ## Assets
 
-Le fichier sql permettant de créer le schéma peut être [téléchargé ici](assets/sign-multiple-forms.sql). Vous devez importer ce fichier à l’aide de MySql Workbench pour créer le schéma et la table.
-
-
+Le fichier SQL de création du schéma peut être [téléchargé à partir d’ici](assets/sign-multiple-forms.sql). Vous devez importer ce fichier à l’aide de MySql Workbench pour créer le schéma et la table.
