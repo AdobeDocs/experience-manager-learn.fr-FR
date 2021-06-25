@@ -2,17 +2,13 @@
 title: Stockage et récupération des données de formulaire à partir de la base de données MySQL
 description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes impliquées dans le stockage et la récupération des données de formulaire
 feature: Formulaires adaptatifs
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
-version: 6.3,6.4,6.5
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+version: 6.3,6.4,6.5
+source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '280'
 ht-degree: 12%
 
 ---
@@ -39,11 +35,10 @@ Pour tester cette fonctionnalité sur votre instance AEM Forms, procédez comme 
 * Connectez-vous à [configMgr.](http://localhost:4502/system/console/configMgr) Recherchez &quot;Apache Sling Connection Pooled DataSource. Créez une nouvelle entrée Apache Sling Connection Pooled Datasource appelée **SaveAndContinue** à l’aide des propriétés suivantes :
 
 | Nom de la propriété | Valeur |
-------------------------|---------------------------------------
+| ------------------------|---------------------------------------|
 | Datasource Name | SaveAndContinue |
 | Classe de pilote JDBC | com.mysql.cj.jdbc.Driver |
 | uri de connexion JDBC | jdbc:mysql://localhost:3306/aemformstutorial |
-
 
 * Ouvrez le [formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled)
 * Renseignez certains détails et cliquez sur le bouton &quot;Enregistrer et continuer plus tard&quot;.
