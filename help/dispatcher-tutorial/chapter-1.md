@@ -5,7 +5,7 @@ feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 67e55e92cf95e03388ab3de49eff5a80786fb3a7
 workflow-type: tm+mt
 source-wordcount: '17487'
 ht-degree: 0%
@@ -684,8 +684,10 @@ Ainsi, votre agent de purge de Dispatcher personnalisé peut facilement envoyer 
 
 En fait, peu importe le chemin que vous demandez à Dispatcher d’invalider, tant qu’il se trouve sur le même site, dans la même &quot;sous-arborescence&quot;. Vous n’avez même pas besoin d’utiliser un véritable chemin d’accès aux ressources. Il peut également être &quot;virtuel&quot; :
 
-`GET /dispatcher-invalidate
-Invalidate-path /content/mysite/dummy`
+```
+GET /dispatcher-invalidate
+Invalidate-path /content/mysite/dummy
+```
 
 ![](assets/chapter-1/resource-path.png)
 
@@ -908,8 +910,10 @@ Cette fois encore, le cache est contourné et la charge est créée sur le syst�
 
 Réduire le nombre de sélecteurs était un bon début. En règle générale, vous devez toujours limiter le nombre de paramètres valides à un minimum absolu. Si vous le faites intelligemment, vous pouvez même utiliser un pare-feu d’application web en dehors de l’AEM en utilisant un ensemble statique de filtres sans connaissance approfondie du système AEM sous-jacent pour protéger vos systèmes :
 
-`Allow: /content/dam/(-\_/a-z0-9)+/(-\_a-z0-9)+
-\.respi\.q-(20|40|60|80|100)\.jpg`
+```
+Allow: /content/dam/(-\_/a-z0-9)+/(-\_a-z0-9)+
+       \.respi\.q-(20|40|60|80|100)\.jpg
+```
 
 Si vous ne disposez pas d’un pare-feu d’application web, vous devez filtrer dans Dispatcher ou dans AEM lui-même. Si vous le faites en AEM, assurez-vous que
 
@@ -1304,7 +1308,7 @@ Une configuration plus fiable consiste à envoyer la demande d’invalidation de
 
 ### Mise en cache des en-têtes et en-têtes HTTP
 
-Autrefois, Dispatcher stockait uniquement des fichiers simples dans le système de fichiers. Si vous avez besoin de HTTP-headers à diffuser au client, vous l’avez fait en configurant Apache en fonction des informations limitées du fichier ou de l’emplacement. C’était particulièrement embêtant lorsque vous avez mis en oeuvre une application web dans AEM qui reposait principalement sur des en-têtes HTTP. Tout fonctionnait correctement dans l’instance AEM uniquement, mais pas lorsque vous utilisiez un Dispatcher.
+Autrefois, Dispatcher stockait uniquement des fichiers simples dans le système de fichiers. Si vous aviez besoin que des en-têtes HTTP soient diffusés au client, vous l’avez fait en configurant Apache en fonction des petites informations que vous disposiez du fichier ou de l’emplacement. C’était particulièrement embêtant lorsque vous avez mis en oeuvre une application web dans AEM qui reposait principalement sur des en-têtes HTTP. Tout fonctionnait correctement dans l’instance AEM uniquement, mais pas lorsque vous utilisiez un Dispatcher.
 
 En règle générale, vous avez réappliqué les en-têtes manquants aux ressources du serveur Apache avec `mod_headers` en utilisant les informations que vous pouviez dériver par le chemin d’accès aux ressources et le suffixe. Mais cela n&#39;a pas toujours été suffisant.
 
