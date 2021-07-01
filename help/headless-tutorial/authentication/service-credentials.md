@@ -12,9 +12,9 @@ thumbnail: 330519.jpg
 topic: Sans affichage, intégrations
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: e0822ad4aaf4022a849825ef625e1c29eb6e78f3
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1828'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Cet exemple d’application est basé sur Node.js. Il est donc préférable d’
 
    Désormais, selon le fichier JSON transmis via ce paramètre de ligne de commande `file` (JSON du jeton d’accès au développement local ou JSON des informations d’identification du service), l’application obtient un jeton d’accès.
 
-   N’oubliez pas que même si les informations d’identification du service n’expirent pas, le jeton d’accès JWT et le jeton d’accès correspondant le font et doivent être actualisés avant expiration. Pour ce faire, utilisez une balise `refresh_token` [fournie par l’Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens).
+   N’oubliez pas que même si les informations d’identification du service expirent tous les 365 jours, le jeton d’accès JWT et le jeton d’accès correspondant expirent fréquemment et doivent être actualisés avant expiration. Pour ce faire, utilisez une balise `refresh_token` [fournie par l’Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens).
 
 1. Une fois ces modifications en place, et le fichier JSON Informations d’identification du service téléchargé à partir d’AEM Developer Console (et, pour plus de simplicité, enregistré sous la forme `service_token.json` du même dossier que ce `index.js`), exécutez l’application en remplaçant le paramètre de ligne de commande `file` par `service_token.json`, puis mettez à jour `propertyValue` vers une nouvelle valeur afin que les effets apparaissent dans AEM.
 
