@@ -4,9 +4,9 @@ description: Présentation vidéo de l’intégration AEM Author et AEM Assets B
 feature: Brand Portal
 version: 6.3, 6.4, 6.5
 topic: Gestion de contenu
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 48%
@@ -32,7 +32,7 @@ L’approvisionnement des ressources Brand Portal est utilisé pour collecter de
 
 Voir [Activer l’auteur Experience Manager pour l’approvisionnement des ressources](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/configure-asset-sourcing-in-aem/brand-portal-enable-asset-sourcing.html) pour obtenir des instructions sur la configuration et la configuration de l’approvisionnement des ressources sur l’auteur Experience Manager.
 
-## Fonctionnalités et améliorations de Brand Portal février 2019{#brand-portal-features-and-enhancements-644}
+## Fonctionnalités et améliorations de Brand Portal de février 2019{#brand-portal-features-and-enhancements-644}
 
 >[!VIDEO](https://video.tv.adobe.com/v/26354/?quality=9&learn=on)
 
@@ -158,7 +158,7 @@ Six nouvelles configurations ont été ajoutées pour permettre aux administrate
 
 Brand Portal utilise l’interface [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) de l’Adobe I/O pour créer l’application JWT qui permet de configurer les intégrations oAuth pour permettre l’intégration d’AEM Assets à Brand Portal. Auparavant, l’IU de configuration des intégrations OAuth était hébergée à l’adresse `https://marketing.adobe.com/developer/`. Pour en savoir plus sur l’intégration d’AEM Assets à Brand Portal pour publier des ressources et des collections sur Brand Portal, consultez [Configuration de l’intégration d’AEM Assets à Brand Portal](https://helpx.adobe.com/fr/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
-## Fonctionnalités et améliorations de Brand Portal février 2018{#brand-portal-features-and-enhancements-632}
+## Fonctionnalités et améliorations de Brand Portal de février 2018{#brand-portal-features-and-enhancements-632}
 
 Nouvelles fonctionnalités améliorées orientées vers l’alignement de Brand Portal avec AEM.
 
