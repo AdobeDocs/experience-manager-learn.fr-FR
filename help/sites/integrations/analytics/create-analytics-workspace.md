@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6409
 thumbnail: KT-6296.jpg
 topic: Intégrations
-role: Business Practitioner
+role: User
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '2204'
 ht-degree: 1%
@@ -112,7 +112,7 @@ Ensuite, créons un événement pour suivre le clic sur le bouton CTA.
 
    ![eVars](assets/create-analytics-workspace/add-success-event.png)
 
-## Créez un projet dans Analysis Workspace {#workspace-project}
+## Création d’un projet dans Analysis Workspace {#workspace-project}
 
 Analysis Workspace est un outil de navigation flexible qui vous permet de créer des analyses et de partager rapidement des informations. Grâce à l’interface par glisser-déposer, vous pouvez concevoir votre analyse, ajouter des visualisations pour donner vie aux données, organiser un jeu de données, partager et planifier des projets avec toute personne de votre entreprise.
 
