@@ -3,12 +3,12 @@ title: Vidéos et tutoriels d’AEM Foundation
 seo-title: Vidéos et tutoriels d’AEM Foundation
 description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation. '
 seo-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation
-role: Leader, Architect, Developer, Administrator, Business Practitioner
+role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 22%
+ht-degree: 24%
 
 ---
 
@@ -80,7 +80,7 @@ Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponib
 
 ## Ressources supplémentaires
 
-* [Experience League - Explorer les AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Explorer AEM](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager)
 * [Tutoriels d’AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Vidéos et tutoriels d’AEM Sites](/help/sites/overview.md)
 * [Vidéos et tutoriels d’AEM Assets](/help/assets/overview.md)
