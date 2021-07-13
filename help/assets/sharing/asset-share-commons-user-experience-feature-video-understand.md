@@ -3,9 +3,9 @@ title: Présentation de l’expérience utilisateur de Asset Share Commons
 description: Matériel de compréhension à la fois fonctionnelle et technique Ressources Share Commons
 version: 6.3, 6.4, 6.5
 topic: Gestion de contenu
-role: Business Practitioner
+role: User
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 3%
