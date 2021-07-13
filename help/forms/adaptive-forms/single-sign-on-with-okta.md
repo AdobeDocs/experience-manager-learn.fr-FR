@@ -8,11 +8,11 @@ doc-type: tutorial
 activity: setup
 version: 6.5
 topic: Administration
-role: Administrator
+role: Admin
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '762'
 ht-degree: 3%
 
 ---
@@ -70,7 +70,7 @@ Voici les propriétés clés à spécifier :
 * **Créer automatiquement des utilisateurs CRX** : true
 * **Ajouter aux groupes** : true
 * **Groupes** par défaut : utilisateurs (il s’agit du groupe auquel les utilisateurs seront ajoutés. Vous pouvez fournir n’importe quel groupe existant dans AEM)
-* **NamedIDPolicy** : Spécifie les contraintes sur l’identifiant de nom à utiliser pour représenter l’objet demandé. Copiez et collez la chaîne mise en surbrillance suivante **urn:oasis:names:tc:SAML:2.0:nameformat:emailAddress**
+* **NamedIDPolicy** : Spécifie les contraintes sur l’identifiant de nom à utiliser pour représenter l’objet demandé. Copiez et collez la chaîne mise en surbrillance suivante **urn:oasis:names:tc:SAML:2.0:nameidformat:emailAddress**
 * **Attributs synchronisés**  : il s’agit des attributs stockés à partir de l’assertion SAML dans AEM profil.
 
 ![saml-authentication-handler](assets/saml-authentication-settings-blurred.PNG)
