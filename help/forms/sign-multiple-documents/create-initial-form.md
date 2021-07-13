@@ -4,11 +4,11 @@ description: Créez un formulaire initial pour déclencher la notification par c
 feature: Formulaires adaptatifs
 version: 6.4,6.5
 topic: Développement
-role: Business Practitioner
+role: User
 level: Intermediate
 kt: 6892
 thumbnail: 6892.jpg
-source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 13%
@@ -20,7 +20,7 @@ ht-degree: 13%
 
 Le formulaire initial (Refinance Form) est utilisé pour signer plusieurs formulaires en déclenchant le processus d’AEM **Sign Multiple Forms**. Vous pouvez saisir les valeurs de votre choix mais vous assurer que les champs suivants sont ajoutés au formulaire.
 
-| Type de champ | Nom | Objectif | Masqué | Valeur par défaut |
+| Type de champ | Nom | Objectif | Masqué  | Valeur par défaut |
 | ------------------------|---------------------------------------|--------------------|--------|----------------- |
 | TextField | signed | Pour indiquer l’état de signature | O | N |
 | TextField | guid | Pour identifier un formulaire de manière unique | O | 3889 |
