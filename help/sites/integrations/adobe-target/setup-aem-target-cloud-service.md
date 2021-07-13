@@ -9,9 +9,9 @@ version: cloud-service
 kt: 6044
 thumbnail: 41244.jpg
 topic: Intégrations
-role: Administrator
+role: Admin
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Créer un compte de Cloud Service Adobe Target {#adobe-target-cloud-service}
+# Création d’un compte Adobe Target Cloud Service {#adobe-target-cloud-service}
 
 La vidéo suivante explique comment connecter AEM en tant que Cloud Service à Adobe Target.
 
