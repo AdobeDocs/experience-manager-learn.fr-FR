@@ -1,5 +1,5 @@
 ---
-title: Configuration de l’accès à AEM en tant que Cloud Service
+title: Configuration de l’accès à AEM as a Cloud Service
 description: 'AEM en tant que Cloud Service est le moyen natif d’exploiter les applications AEM et, à ce titre, exploite l’Adobe IMS (Identity Management System) pour faciliter la connexion des utilisateurs, tant administrateurs que utilisateurs réguliers, au service AEM Author. Découvrez comment les utilisateurs, groupes d’utilisateurs et profils de produits Adobe IMS sont tous utilisés conjointement avec les groupes d’AEM et les autorisations afin de fournir un accès spécifique à l’auteur AEM.  '
 feature: 'Utilisateurs et groupes '
 topics: authentication
@@ -10,17 +10,17 @@ doc-type: article
 kt: 5882
 thumbnail: KT-5882.jpg
 topic: Administration, sécurité
-role: Administrator
+role: Admin
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '600'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
 
-# Configuration de l’accès à AEM en tant que Cloud Service
+# Configuration de l’accès à AEM as a Cloud Service
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_overview"
@@ -66,6 +66,6 @@ Présentation rapide de la configuration des utilisateurs IMS, des groupes d’u
 
 La documentation suivante couvre les détails et les préoccupations spécifiques à [Adobe Admin Console](https://adminconsole.adobe.com) qui peuvent aider à une meilleure compréhension de Adobe Admin Console et l’utiliser pour gérer les utilisateurs et accéder à l’ensemble des produits Experience Cloud.
 
-+ [Présentation de Adobe Admin Console Identity](https://helpx.adobe.com/fr/enterprise/using/identity.html)
++ [Présentation de Adobe Admin Console Identity](https://helpx.adobe.com/enterprise/using/identity.html)
 + [Rôles d’administrateur Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-roles.html)
 + [Rôles de développement Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-developers.html)
