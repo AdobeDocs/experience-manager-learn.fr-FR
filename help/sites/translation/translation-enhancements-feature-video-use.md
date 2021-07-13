@@ -8,9 +8,9 @@ doc-type: feature video
 activity: use
 version: 6.3, 6.4, 6.5
 topic: Localisation
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 5%
@@ -46,4 +46,4 @@ Les auteurs peuvent désormais créer rapidement et facilement des projets de tr
 
 * [Traduction de contenu pour les sites multilingues](https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/translation.html)
 * [https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
-* [Meilleures pratiques de traduction](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)
+* [Bonnes pratiques de traduction](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)
