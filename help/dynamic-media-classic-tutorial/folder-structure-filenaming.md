@@ -8,9 +8,9 @@ activity: develop
 topics: development, authoring, configuring, architecture
 audience: all
 topic: Gestion de contenu
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Déterminer la structure de dossiers et la convention d’affectation de nom de fichier {#folder-structure-filenaming}
+# Détermination de la structure de dossiers et de la convention d’appellation des fichiers {#folder-structure-filenaming}
 
 Avant d’intervenir et de commencer à charger tout votre contenu, il est conseillé de tenir compte de la structure de dossiers que vous utiliserez, et notamment de votre convention d’appellation des fichiers. Cela vous fera sans doute gagner du temps et vous obligera à rétablir les tâches ultérieurement. Il est préférable de coordonner ces décisions entre tous les groupes.
 
