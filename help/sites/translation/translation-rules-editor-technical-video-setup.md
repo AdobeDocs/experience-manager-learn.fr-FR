@@ -8,9 +8,9 @@ doc-type: technical video
 activity: setup
 version: 6.4, 6.5
 topic: Localisation
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 7%
@@ -40,7 +40,7 @@ Accédez à l’interface utilisateur de configuration de traduction :
 
 * **[!UICONTROL AEM menu Démarrer]  >  [!UICONTROL Outils]  >  [!UICONTROL Général]  >  [[!UICONTROL Configuration de traduction]](http://localhost:4502/libs/cq/translation/translationrules/contexts.html)**
 
-## Avant AEM 6.3 {#prior-to-aem}
+## Avant la version 6.3 d’AEM {#prior-to-aem}
 
 Dans AEM version précédente, les règles de traduction étaient mises à jour manuellement en modifiant un fichier XML situé sous le workflow de traduction : `/etc/workflow/models/translation/translation_rules.xml`.
 
@@ -49,4 +49,4 @@ Dans AEM version précédente, les règles de traduction étaient mises à jour 
 * [Identification du contenu à traduire](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html)
 * [Traduction de contenu pour les sites multilingues](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html)
 * [https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
-* [Meilleures pratiques de traduction](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)
+* [Bonnes pratiques de traduction](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)
