@@ -8,9 +8,9 @@ topics: development, authoring, configuring, videos, video-profiles
 audience: all
 activity: use
 topic: Gestion de contenu
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '6231'
 ht-degree: 1%
@@ -203,7 +203,7 @@ Les paramètres vidéo prédéfinis déterminent le codage de votre vidéo en sp
 
 - **Format.** Généralement 4:3 standard ou 16:9 grand écran.
 - **Taille.** Il s’agit de la même résolution que celle de l’affichage, exprimée en pixels. Ceci est lié aux proportions. Avec un rapport de 16:9, une vidéo fera 432 x 240 pixels, tandis qu’avec un rapport de 4:3, elle fera 320 x 240 pixels.
-- **FPS.** Les débits d’image standard sont de 30, 25 ou 24 images par seconde (i/s), selon la norme vidéo : NTSC, PAL ou Film. Ce paramètre n’a pas d’importance, car Dynamic Media Classic utilise toujours la même fréquence d’image que la vidéo source.
+- **FPS.** Les débits d’images standard sont de 30, 25 ou 24 images par seconde (i/s), selon la norme vidéo : NTSC, PAL ou Film. Ce paramètre n’a pas d’importance, car Dynamic Media Classic utilise toujours la même fréquence d’image que la vidéo source.
 - **Format.** Il s’agit de MP4.
 - **Bande passante.** Il s’agit de la vitesse de connexion souhaitée de votre utilisateur ciblé. Ont-ils une connexion internet rapide ou lente ? Utilisent-ils généralement des ordinateurs de bureau ou des appareils mobiles ? Cela est également lié à la résolution (taille), car plus la vidéo est grande, plus la bande passante nécessaire est importante.
 
@@ -211,7 +211,7 @@ Les paramètres vidéo prédéfinis déterminent le codage de votre vidéo en sp
 
 Le calcul du débit pour votre vidéo est l’un des facteurs les moins bien compris pour diffuser de la vidéo sur le web, mais potentiellement le plus important, car il impacte directement l’expérience de l’utilisateur. Si vous définissez un débit trop élevé, la qualité de la vidéo sera élevée, mais les performances seront médiocres. Les utilisateurs ayant des connexions Internet plus lentes seront obligés d’attendre pendant que la vidéo s’interrompt constamment au fur et à mesure de sa lecture. Cependant, si vous la définissez sur une valeur trop basse, la qualité en pâtira. Dans le paramètre vidéo prédéfini, Dynamic Media Classic propose une gamme de données en fonction de la bande passante de votre cible. C&#39;est un bon point de départ.
 
-Cependant, si vous voulez le comprendre vous-même, vous aurez besoin d&#39;une calculatrice de débit. Il s’agit d’un outil couramment utilisé par les professionnels de la vidéo et les passionnés pour estimer la quantité de données qui s’adapte à un flux ou à un élément multimédia donné (un DVD, par exemple).
+Cependant, si vous voulez le comprendre vous-même, vous aurez besoin d&#39;une calculatrice de débit. Il s’agit d’un outil couramment utilisé par les professionnels de la vidéo et les passionnés pour estimer la quantité de données qui s’adaptera à un flux ou à un élément multimédia donné (un DVD, par exemple).
 
 ## Création d’un paramètre vidéo prédéfini personnalisé
 
