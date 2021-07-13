@@ -2,13 +2,13 @@
 title: Utilisation de Timewarp avec AEM Sites
 description: La fonction Timewarp d’Adobe Experience Manager Sites permet aux auteurs de consulter rapidement l’état d’une page à un moment donné dans le passé.
 topic: Gestion de contenu
-feature: 'Création  '
-role: Business Practitioner
+feature: 'Création '
+role: User
 level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 3307
 thumbnail: 17453.jpg
-source-git-commit: d1578e1c6fb6208f04953454354e1ed23566e450
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 8%
