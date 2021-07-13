@@ -9,9 +9,9 @@ doc-type: feature video
 activity: use
 version: cloud-service
 topic: Gestion de contenu
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 12%
@@ -38,7 +38,7 @@ Cette série vidéo couvre le cycle de vie de la création de fragments de conte
 
 AEM les modèles de fragments de contenu, c’est-à-dire les schémas de données des fragments de contenu, doivent être activés via AEM [[!UICONTROL navigateur de configuration]](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/configurations.html), ce qui permet de définir les modèles de fragments de contenu selon chaque configuration.
 
-## Création de fragments de contenu {#creating-content-fragments}
+## Création de fragments de contenu  {#creating-content-fragments}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22451/?quality=12&learn=on)
 
