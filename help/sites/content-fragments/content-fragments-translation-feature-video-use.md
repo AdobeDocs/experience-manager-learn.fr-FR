@@ -3,12 +3,12 @@ title: Prise en charge de la traduction des fragments de contenu AEM
 description: Découvrez comment les fragments de contenu peuvent être localisés et traduits avec Adobe Experience Manager. Les ressources multimédias mixtes associées à un fragment de contenu peuvent également être extraites et traduites.
 feature: Fragments de contenu, Multi Site Manager
 topic: Localisation
-role: Business Practitioner
+role: User
 level: Intermediate
 version: 6.3, 6.4, 6.5, cloud-service
 kt: 201
 thumbnail: 18131.jpg
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 2%
@@ -22,7 +22,7 @@ Découvrez comment les fragments de contenu peuvent être localisés et traduits
 
 >[!VIDEO](https://video.tv.adobe.com/v/18131/?quality=12&learn=on)
 
-## Cas d’utilisation de traduction de fragments de contenu {#content-fragment-translation-use-cases}
+## Cas d’utilisation de la traduction de fragments de contenu {#content-fragment-translation-use-cases}
 
 Les fragments de contenu sont un type de contenu reconnu qui AEM des extractions à envoyer à un service de traduction externe. Plusieurs cas pratiques sont pris en charge prêts à l’emploi :
 
