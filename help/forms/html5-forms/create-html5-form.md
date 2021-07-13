@@ -10,9 +10,9 @@ version: 6.4,6.5
 kt: 4419
 thumbnail: kt-4419.jpg
 topic: Développement
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 12%
@@ -24,7 +24,7 @@ ht-degree: 12%
 
 HTML5 forms est une nouvelle fonctionnalité d’Adobe Experience Manager qui offre le rendu des modèles de formulaire XFA (xdp) au format HTML5. Cette fonctionnalité permet le rendu des formulaires sur les périphériques mobiles et les navigateurs de bureau ne prenant pas en charge les documents XFA en PDF. Les formulaires HTML5 prennent en charge les fonctionnalités existantes des modèles de formulaires XFA, mais ajoutent également de nouvelles fonctionnalités, telles que la signature tactile, pour les appareils mobiles.
 
-## Condition préalable
+## Prérequis
 
 Vérifiez que vous disposez d’une instance de travail d’AEM Forms. Veuillez suivre le [guide d’installation](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) pour installer et configurer AEM Forms.
 
