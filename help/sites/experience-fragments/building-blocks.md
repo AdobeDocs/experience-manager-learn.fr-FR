@@ -6,11 +6,11 @@ version: cloud-service
 feature: Fragments d’expérience
 topic: Gestion de contenu
 level: Beginner, Intermediate
-role: Architect, Developer, Administrator, Business Practitioner
+role: Architect, Developer, Admin, User
 doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 3%
@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# Blocs de création avec des fragments d’expérience {#building-blocks}
+# Création de blocs avec des fragments d’expérience {#building-blocks}
 
 Les blocs de création sont une sous-fonctionnalité des fragments d’expérience. Les blocs de création permettent aux auteurs de contenu de réutiliser des composants dans différentes variantes des fragments d’expérience.
 
