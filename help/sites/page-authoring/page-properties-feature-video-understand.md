@@ -12,12 +12,12 @@ version: 6.3, 6.4, 6.5
 kt: 4321
 thumbnail: 32192.jpg
 topic: Gestion de contenu
-role: Business Practitioner
+role: User
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 41%
+ht-degree: 42%
 
 ---
 
@@ -34,7 +34,7 @@ Dans cette vidéo, les éléments de propriété de page suivants sont abordés 
    * Titre et balises
       * Titre
       * Balises
-      * Masquer dans la navigation
+      * Masquer dans la navigation 
    * Autres titres et descriptions
       * Titre de la page
       * Titre de navigation
@@ -49,13 +49,13 @@ Dans cette vidéo, les éléments de propriété de page suivants sont abordés 
       * Conception
       * Alias
    * Configuration du cloud
-   * Paramètres des modèles
+   * Paramètres de modèles
    * Exigence d’authentification
-   * Export
-* Miniature 
+   * Exportation
+* Miniature
 * Partage sur les réseaux sociaux
 * Configuration de Cloud Services
-* Personnalisation
+* Personnalisation 
    * Configurations ContextHub
    * Configuration du ciblage
 * Autorisations
