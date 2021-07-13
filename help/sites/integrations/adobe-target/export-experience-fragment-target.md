@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6350
 thumbnail: 41245.jpg
 topic: Intégrations
-role: Business Practitioner
+role: User
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 8%
@@ -20,7 +20,7 @@ ht-degree: 8%
 ---
 
 
-# Exporter le fragment d’expérience vers Adobe Target {#experience-fragment-target}
+# Exportation du fragment d’expérience vers Adobe Target {#experience-fragment-target}
 
 Découvrez comment exporter AEM fragment d’expérience en tant qu’offres Adobe Target.
 
