@@ -10,9 +10,9 @@ version: cloud-service
 kt: 6351
 thumbnail: 41246.jpg
 topic: Intégrations
-role: Business Practitioner
+role: User
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: b0bca57676813bd353213b4808f99c463272de85
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 9%
@@ -20,7 +20,7 @@ ht-degree: 9%
 ---
 
 
-# Créer une activité Adobe Target à l’aide d’offres de fragments d’expérience {#target-activity-experience-fragment}
+# Création d’une activité Adobe Target à l’aide d’offres de fragments d’expérience {#target-activity-experience-fragment}
 
 Découvrez comment créer et tester une activité Adobe Target à l’aide d’offres de fragments d’expérience AEM.
 
