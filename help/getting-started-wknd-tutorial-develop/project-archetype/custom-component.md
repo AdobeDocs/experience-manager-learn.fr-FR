@@ -11,15 +11,15 @@ level: Beginner
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
-source-git-commit: 255d6bd403d240b2c18a0ca46c15b0bb98cf9593
+source-git-commit: 66d35a41d63d4c33f71a118e9471c5aa58dc48a7
 workflow-type: tm+mt
-source-wordcount: '3967'
+source-wordcount: '4108'
 ht-degree: 1%
 
 ---
 
 
-# Custom Component (composant personnalisé){#custom-component}
+# Custom Component (composant personnalisé) {#custom-component}
 
 Ce tutoriel porte sur la création de bout en bout d’un composant de ligne d’AEM personnalisé qui affiche le contenu créé dans une boîte de dialogue et explore le développement d’un modèle Sling pour encapsuler la logique commerciale qui renseigne le code HTL du composant.
 
@@ -58,7 +58,7 @@ Consultez le code de ligne de base sur lequel le tutoriel s’appuie :
 
 Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/custom-component-solution) ou extraire le code localement en passant à la branche `tutorial/custom-component-solution`.
 
-## Intention
+## Objectif
 
 1. Comprendre comment créer un composant d’AEM personnalisé
 1. Découvrez comment encapsuler la logique commerciale avec les modèles Sling
@@ -78,13 +78,13 @@ L’implémentation du composant Signature comprend une boîte de dialogue qui c
 * Image
 * Professions
 
-## Créer un composant Byline {#create-byline-component}
+## Création d’un composant Byline {#create-byline-component}
 
 Créez tout d’abord la structure de noeud Composant signature et définissez une boîte de dialogue. Cela représente le composant dans AEM et définit implicitement le type de ressource du composant en fonction de son emplacement dans le JCR.
 
 La boîte de dialogue expose l’interface que les auteurs de contenu peuvent fournir. Pour cette implémentation, le composant **Image** du composant principal de la gestion du contenu web d’AEM sera utilisé pour gérer la création et le rendu de l’image de la signature. Il sera donc défini comme `sling:resourceSuperType` de notre composant.
 
-### Créer une définition de composant {#create-component-definition}
+### Création d’une définition de composant {#create-component-definition}
 
 1. Dans le module **ui.apps** , accédez à `/apps/wknd/components` et créez un dossier nommé `byline`.
 1. Sous le dossier `byline`, ajoutez un nouveau fichier nommé `.content.xml`
@@ -105,7 +105,7 @@ La boîte de dialogue expose l’interface que les auteurs de contenu peuvent fo
 
    Le fichier XML ci-dessus fournit la définition du composant, y compris le titre, la description et le groupe. `sling:resourceSuperType` pointe vers `core/wcm/components/image/v2/image`, qui est le [composant d’image principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr).
 
-### Créez le script HTL {#create-the-htl-script}
+### Création du script HTL {#create-the-htl-script}
 
 1. Sous le dossier `byline` , ajoutez un nouveau fichier `byline.html`, responsable de la présentation HTML du composant. Il est important de nommer le fichier de la même manière que le dossier, car il devient le script par défaut utilisé par Sling pour effectuer le rendu de ce type de ressource.
 
@@ -204,7 +204,7 @@ Définissez ensuite une boîte de dialogue pour le composant Byline avec les cha
 
    ![Boîte de dialogue terminée pour la signature](assets/custom-component/byline-dialog-created.png)
 
-### Création de la boîte de dialogue Stratégie {#create-the-policy-dialog}
+### Boîte de dialogue Créer une stratégie {#create-the-policy-dialog}
 
 Selon la même approche que pour la création de boîte de dialogue, créez une boîte de dialogue Stratégie (anciennement appelée boîte de dialogue de conception) pour masquer les champs indésirables dans la configuration Stratégie héritée du composant Image des composants principaux.
 
@@ -303,7 +303,7 @@ Tout d’abord, téléchargez un exemple de capture d’écran vers AEM Assets �
 
    ![Capture d&#39;écran téléchargée](assets/custom-component/stacey-roswell-headshot-assets.png)
 
-### Créez le composant {#author-the-component}
+### Création du composant {#author-the-component}
 
 Ajoutez ensuite le composant Byline à une page dans AEM. Puisque nous avons ajouté le composant Byline au groupe de composants **WKND Sites Project - Content**, par l’intermédiaire de la définition `ui.apps/src/main/content/jcr_root/apps/wknd/components/byline/.content.xml`, il est automatiquement disponible pour tout groupe de composants **Conteneur** dont la **Stratégie** autorise le **projet WKND Sites - Contenu** , qui est le conteneur de mise en page de l’article est .
 
@@ -345,13 +345,13 @@ Ajoutez ensuite le composant Byline à une page dans AEM. Puisque nous avons ajo
 
    ![propriétés de signature dans CRXDE](assets/custom-component/byline-properties-crxde.png)
 
-## Créer un modèle Sling de signature {#create-sling-model}
+## Création d’un modèle Sling de signature {#create-sling-model}
 
 Ensuite, nous allons créer un modèle Sling pour agir comme modèle de données et héberger la logique commerciale du composant Signature.
 
 Les modèles Sling sont des objets POJO (Plain Old Java Object) Java pilotés par les annotations. Ils facilitent le mappage des données du JCR aux variables Java et fournissent un certain nombre d’autres détails lors du développement dans le contexte d’AEM.
 
-### Examinez les dépendances Maven {#maven-dependency}
+### Vérification des dépendances Maven {#maven-dependency}
 
 Le modèle Sling de signature repose sur plusieurs API Java fournies par AEM. Ces API sont disponibles via la liste `dependencies` répertoriée dans le fichier POM du module `core`. Le projet utilisé pour ce tutoriel a été créé pour AEM en tant que Cloud Service. Cependant, il est unique dans la mesure où il est compatible avec AEM 6.5/6.4. Par conséquent, les deux dépendances pour Cloud Service et AEM 6.x sont incluses.
 
@@ -442,6 +442,19 @@ Créez une interface Java publique pour la signature. `Byline.java` définit les
    La méthode `isEmpty()` permet de déterminer si le contenu du composant doit être rendu ou s’il attend d’être configuré.
 
    Notez qu’il n’existe aucune méthode pour l’image ; [Nous allons examiner les raisons pour lesquelles cela se produit plus tard](#tackling-the-image-problem).
+
+1. Les modules Java contenant des classes Java publiques, dans ce cas un modèle Sling, doivent être versionnés à l’aide du fichier `package-info.java` du module.
+
+Comme le package Java de la source WKND `com.adobe.aem.guides.wknd.core.models` déclare que est la version de `2.0.0` et que nous ajoutons une interface publique et des méthodes intempestives, la version doit être augmentée à `2.1.0`. Ouvrez le fichier à l’adresse `core/src/main/java/com/adobe/aem/guides/wknd/core/models/package-info.java` et remplacez `@Version("2.0.0")` par `@Version("2.1.0")`.
+
+    &quot;
+    @Version(&quot;2.1.0&quot;)
+    package com.adobe.aem.guides.wknd.core.models;
+    
+    import org.osgi.annotation.versioning.Version;
+    &quot;
+
+Chaque fois qu’une modification est apportée aux fichiers de ce module, la version du module [doit être ajustée sémantiquement](https://semver.org/). Si ce n’est pas le cas, le [plug-in bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) du projet Maven détectera une version de package non valide et interrompra la création. Heureusement, en cas d’échec, le module externe Maven signale la version non valide du package Java ainsi que la version qu’il doit être. Vous venez de mettre à jour la déclaration `@Version("...")` dans la `package-info.java` du package Java enfreignant vers la version recommandée par le module externe pour corriger.
 
 ### Implémentation par signature {#byline-implementation}
 
@@ -602,7 +615,7 @@ public class BylineImpl implements Byline {
 ```
 
 
-#### Traitement du &quot;problème de l&#39;image&quot; {#tackling-the-image-problem}
+#### Lutter contre le &quot;problème de l&#39;image&quot; {#tackling-the-image-problem}
 
 La vérification des conditions de nom et d’occupation est triviale (et Apache Commons Lang3 fournit la classe [StringUtils](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html) toujours pratique). Cependant, la manière dont la **présence de l’image** peut être validée, étant donné que le composant d’image des composants principaux est utilisé pour faire surface de l’image.
 
@@ -1007,7 +1020,7 @@ Si la valeur **BylineImpl** n’est pas affichée dans cette liste, il y a proba
 
 *http://localhost:4502/system/console/status-slingmodels*
 
-## Styles de ligne {#byline-styles}
+## Styles de trait {#byline-styles}
 
 Le composant Signature doit être mis en forme pour correspondre à la conception créative du composant Signature. Pour ce faire, utilisez SCSS, qui AEM la prise en charge via le sous-projet **ui.frontend** Maven.
 
@@ -1080,7 +1093,7 @@ Ajoutez des styles par défaut pour le composant Byline. Dans le projet **ui.fro
    >
    >Vous devrez peut-être vider le cache du navigateur pour vous assurer que le fichier CSS obsolète n’est pas diffusé et actualiser la page avec le composant signature pour obtenir le style complet.
 
-## Assemblage {#putting-it-together}
+## Assembler {#putting-it-together}
 
 Vous trouverez ci-dessous à quoi devrait ressembler le composant Byline entièrement créé et stylisé sur la page AEM.
 
