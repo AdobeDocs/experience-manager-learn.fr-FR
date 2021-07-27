@@ -3,10 +3,10 @@ user-guide-title: Vidéos et tutoriels d’AEM Sites
 user-guide-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Sites.
 breadcrumb-title: Tutoriels d’AEM Sites
 sub-product: sites
-source-git-commit: 4620acc18a08d71994753903b79247a8ed3fd8f5
+source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 37%
+source-wordcount: '605'
+ht-degree: 30%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 37%
 
 + [Présentation](overview.md)
 + Création de pages {#page-authoring}
-   + [Création  ](page-authoring/aem-sites-authoring-overview.md)
+   + [Création ](page-authoring/aem-sites-authoring-overview.md)
    + [Navigation](page-authoring/basic-handling-sites-feature-video-use.md)
    + [Structure du site ](page-authoring/content-hierarchy-feature-video-use.md)
    + [Création de page](page-authoring/creating-page-feature-video-use.md)
@@ -59,7 +59,7 @@ ht-degree: 37%
    + [Implémentation de la recherche simple](developing/search-tutorial-develop.md)
    + [Partage sur les réseaux sociaux](developing/social-media-sharing-technical-video-use.md)
    + [Personnalisation des icônes de composant](developing/component-icons-technical-video-develop.md)
-+ Personnalisation {#personalization}
++ Personnalisation  {#personalization}
    + [Intégration avec Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html)
    + [Configuration de fragments d’expérience et d’Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Utilisation de fragments d’expérience avec Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
@@ -72,7 +72,7 @@ ht-degree: 37%
 + Gestion de plusieurs sites {#multi-site-management}
    + [Présentation de la copie de la langue](./multi-site-management/language-copy-overview.md)
    + [Live Copy et plan directeur](./multi-site-management/live-copy-and-blueprint.md)
-   + [Création d’une Live Copy](./multi-site-management/create-live-copy.md)
+   + [Créez une Live Copy](./multi-site-management/create-live-copy.md)
    + [Gérer l’héritage de la Live Copy sur un composant](./multi-site-management/manage-component-inheritance-live-copy.md)
    + [Gérer l’héritage de la Live Copy sur une page](./multi-site-management/manage-page-inheritance-live-copy.md)
    + [Console Aperçu de la Live Copy](./multi-site-management/live-copy-overview-console.md)
@@ -112,3 +112,24 @@ ht-degree: 37%
       + [Création d’une activité Target à l’aide d’offres de fragments d’expérience](integrations/adobe-target/create-target-activity.md)
       + [Personnalisation à l’aide du compositeur d’expérience visuelle](integrations/adobe-target/personalization-using-vec.md)
       + [Personnalisation de l’expérience complète d’une page web](integrations/adobe-target/personalization-web-page.md)
+
++ Tutorials Dynamic Media {#dynamic-media}
+   + [Ajout des détails du serveur d’images Test (filtres IP client) dans Dynamic Media pour un aperçu sécurisé à l’aide de l’application DMc](dynamic-media/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
+   + [Création de différents types de visionneuses avec AEM Dynamic Media | Ensemble de carrousel](dynamic-media/creating-different-kinds-of-sets-with-aem-dynamic-media-carousel-sets.md)
+   + [Création de différents types de visionneuses avec AEM Dynamic Media| Visionneuse d’images](dynamic-media/creating-different-kinds-of-sets-with-aem-dynamic-media-image-sets.md)
+   + [Création d&#39;un paramètre d&#39;image prédéfini](dynamic-media/creating-image-presets.md)
+   + [Création d’un profil d’image (recadrage intelligent) dans Dynamic Media](dynamic-media/creating-image-profile-smart-crop.md)
+   + [Création d’un profil vidéo pour traiter des vidéos dans Dynamic Media](dynamic-media/creating-video-profile-to-process-videos-in-dynamic-media.md)
+   + [Suppression de la configuration Dynamic Media](dynamic-media/deleting-dynamic-media-configuration.md)
+   + [Comment télécharger une ressource dans l’application Dynamic Media Classic](dynamic-media/how-to-download-asset-in-dynamic-media-classic-app.md)
+   + [Comment générer une URL publique ou du code intégré pour une ressource](dynamic-media/how-to-generate-public-url-or-embed-code-for-an-asset.md)
+   + [Comment exécuter le workflow de mise à jour de gestion des actifs numériques sur une ressource avec Dynamic Media activé.](dynamic-media/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
+   + [Comment déclencher une tâche d’exportation dans Dynamic Media lors du paramètre d’opération de tâche d’envoi](dynamic-media/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
+   + [Présentation de l’API IPS de Dynamic Media Classic](dynamic-media/introduction-to-dynamic-media-classic-ips-api.md)
+   + [Invalidation du cache du réseau CDN par le biais de Dynamic Media](dynamic-media/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
+   + [Utilisation des composants DM sur la page de site](dynamic-media/using-dm-components-on-site-page.md)
+
++ Tutorials Brand Portal {#brand-portal}
+   + [Configuration de l’approvisionnement des ressources avec Brand Portal](brand-portal/configuring-asset-sourcing-with-the-brand-portal.md)
+   + [Comment activer le téléchargement des rendus](brand-portal/how-to-enable-the-download-of-renditions.md)
+   + [Étapes de configuration d’AEM Assets Brand Portal](brand-portal/steps-to-configure-aem-assets-brand-portal.md)
