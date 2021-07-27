@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriels d’AEM Foundation
 user-guide-description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation. '
 sub-product: foundation
 index: y
-source-git-commit: 01053f3d8de0405cfc7058f46443647154c508c4
+source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 21%
+source-wordcount: '221'
+ht-degree: 16%
 
 ---
 
@@ -46,4 +46,14 @@ ht-degree: 21%
    + [Utilisation de l’éditeur de processus](./workflow/use-the-workflow-editor.md)
    + [Utilisation d’un workflow](./workflow/use-workflow.md)
    + [Utilisation de la boîte de réception](./workflow/use-the-inbox.md)
-
++ Résolution des problèmes {#troubleshooting}
+   + [Comment activer le rapport de téléchargement de ressources](./troubleshooting/how-to-enable-asset-download-report.md)
+   + [Comment forcer la recompilation dans AEM6.4](./troubleshooting/how-to-force-recompilation.md)
+   + [Comment enquêter sur les problèmes liés à l’indexation dans AEM](./troubleshooting/how-to-investigate-indexing-related-issues.md)
+   + [Comment enquêter sur les problèmes liés à SAML dans AEM](./troubleshooting/how-to-investigate-saml-related-issues.md)
+   + [Comment enquêter sur les problèmes liés à la recherche dans AEM](./troubleshooting/how-to-investigate-search-related-issues.md)
+   + [Comment définir l’expiration de la session du jeton de connexion Oak](./troubleshooting/how-to-set-the-oak-login-token-session-expiration.md)
+   + [Comment résoudre les problèmes liés à la configuration Jetty](./troubleshooting/how-to-troubleshoot-issues-related-to-jetty-configuration.md)
+   + [Comment résoudre les problèmes liés aux performances](./troubleshooting/how-to-troubleshoot-performance-related-issues.md)
+   + [Procédure de résolution des problèmes liés à la mémoire dans AEM](./troubleshooting/steps-to-resolve-memory-related-issues.md)
+   + [Procédure de résolution des problèmes de réplication dans AEM](./troubleshooting/steps-to-resolve-replication-issues.md)
