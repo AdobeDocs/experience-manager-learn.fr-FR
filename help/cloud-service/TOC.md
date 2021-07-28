@@ -4,7 +4,7 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: service cloud
 team: TM
-source-git-commit: 680043f5717bf938bf6f0b960d9ed5939d13544c
+source-git-commit: e442c6d67a02aae4c6ce9241e754c15abc920c67
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 30%
@@ -59,12 +59,12 @@ ht-degree: 30%
       + [Migration de la configuration de Dispatcher](./developing/basics/dispatcher-configuration.md)
    + Projets AEM{#aem-projects}
       + [Projet AEM Maven](./developing/projects/maven-project-structure.md)
-+ Services OSGi{#osgi-services}
-   + [Concepts de base du service OSGi](./developing/osgi-services/basics.md)
-   + [Cycle de vie des composants OSGi](./developing/osgi-services/lifecycle.md)
-   + [Concepts de base des configurations OSGi](./developing/osgi-services/configurations.md)
-   + [Configurations OSGi à l’aide d’OCD](./developing/osgi-services/configurations-ocd.md)
-+ [Documentation Java de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
+   + Services OSGi{#osgi-services}
+      + [Concepts de base du service OSGi](./developing/osgi-services/basics.md)
+      + [Cycle de vie des composants OSGi](./developing/osgi-services/lifecycle.md)
+      + [Concepts de base des configurations OSGi](./developing/osgi-services/configurations.md)
+      + [Configurations OSGi à l’aide d’OCD](./developing/osgi-services/configurations-ocd.md)
+   + [Documentation Java de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + Débogage AEM{#debugging}
    + Débogage du SDK AEM{#debugging-aem-sdk}
       + [Présentation](./debugging/aem-sdk-local-quickstart/overview.md)
