@@ -12,9 +12,9 @@ version: 6.4, 6.5
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: f2a94910fbc29b705f82a66d8248cbcf54366874
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -148,7 +148,7 @@ public Document mobileFormToInteractivePdf(Document xmlData,String path) {
 }
 ```
 
-Pour afficher la possibilité de télécharger un PDF interactif à partir d’un formulaire mobile partiellement rempli, [cliquez ici](https://forms.enablementadobe.com/content/dam/formsanddocuments/schengen.xdp/jcr:content).
+Pour afficher la possibilité de télécharger un PDF interactif à partir d’un formulaire mobile partiellement rempli, [cliquez ici](https://forms.enablementadobe.com/content/dam/formsanddocuments/xdptemplates/schengenvisa.xdp/jcr:content).
 Une fois le fichier PDF téléchargé, l’étape suivante consiste à envoyer le fichier PDF pour déclencher un processus AEM. Ce processus fusionne les données du PDF envoyé et génère un fichier PDF non interactif en vue de sa révision.
 
 Le profil personnalisé créé pour ce cas d’utilisation est disponible dans le cadre de ces ressources de tutoriel.
