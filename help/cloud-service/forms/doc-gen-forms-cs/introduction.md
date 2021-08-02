@@ -8,8 +8,8 @@ version: cloud-service
 feature: Services de document
 topic: Développement
 kt: 7432
-thumbnail: 332439.jpg
-source-git-commit: 33cb3d18b744d9a8e54a87152079b42ed09212f2
+thumbnail: 334859.jpg
+source-git-commit: f2a94910fbc29b705f82a66d8248cbcf54366874
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 4%
@@ -24,3 +24,5 @@ Dans ce cours, nous allons utiliser les microservices de génération de documen
 1. Créez un jeton Web JSON (JWT) à partir des informations d’identification du service et échangez-le pour un jeton d’accès.
 1. Configurer l’accès au compte technique dans AEM
 1. Lancer des appels HTTP à l’aide du jeton d’accès
+
+>[!VIDEO](https://video.tv.adobe.com/v/334859/?quality=12&learn=on)
