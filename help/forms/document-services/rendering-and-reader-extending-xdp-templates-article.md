@@ -14,25 +14,25 @@ discoiquuid: aefb4124-91a0-4548-94a3-86785ea04549
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 0%
+source-wordcount: '445'
+ht-degree: 2%
 
 ---
 
 
-# Rendu XDP au format PDF avec les droits d’utilisation{#rendering-xdp-into-pdf-with-usage-rights}
+# Rendu XDP au format PDF avec des droits d’utilisation{#rendering-xdp-into-pdf-with-usage-rights}
 
 Un cas d’utilisation courant consiste à effectuer le rendu de xdp au format PDF et à appliquer des extensions de Reader au fichier PDF rendu.
 
 Par exemple, dans Forms Portal d’AEM Forms, lorsqu’un utilisateur clique sur XDP, nous pouvons effectuer le rendu XDP au format PDF et étendre le PDF au lecteur.
 
-Pour tester cette fonctionnalité, vous pouvez essayer ce [lien](https://forms.enablementadobe.com/content/samples/samples.html?query=0). L’exemple de nom est &quot;Render XDP with RE&quot;.
+Pour tester cette fonctionnalité, vous pouvez essayer ce [lien](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse2). L’exemple de nom est &quot;Render and Reader Extend XDP&quot;.
 
 Pour réaliser ce cas d’utilisation, procédez comme suit.
 
-* Ajoutez le certificat Reader Extensions à l’utilisateur &quot;fd-service&quot;. Les étapes pour ajouter des informations d’identification Reader Extensions sont répertoriées [ici](https://helpx.adobe.com/experience-manager/6-3/forms/using/configuring-document-services.html)
+* Ajoutez le certificat Reader Extensions à l’utilisateur &quot;fd-service&quot;. Les étapes pour ajouter des informations d’identification Reader Extensions sont répertoriées [ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=fr)
 
 * Créez un service OSGi personnalisé qui effectuera le rendu et appliquera les droits d’utilisation. Le code permettant d’y parvenir est répertorié ci-dessous.
 
@@ -125,7 +125,7 @@ public @interface DocSvcConfiguration {
 }
 ```
 
-## Créer un servlet pour diffuser le PDF {#create-servlet-to-stream-the-pdf}
+## Création d’un servlet pour la diffusion en continu du PDF {#create-servlet-to-stream-the-pdf}
 
 L’étape suivante consiste à créer un servlet avec une méthode de GET pour renvoyer le PDF étendu du lecteur à l’utilisateur. Dans ce cas, l’utilisateur est invité à enregistrer le fichier PDF dans son système de fichiers. Cela est dû au fait que le PDF est rendu au format PDF dynamique et que les visionneuses PDF fournies avec les navigateurs ne prennent pas en charge les fichiers PDF dynamiques.
 
@@ -202,6 +202,8 @@ public class RenderAndReaderExtend extends SlingSafeMethodsServlet {
 Pour le tester sur votre serveur local, procédez comme suit :
 1. [Télécharger et installer le bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. [Télécharger et installer le bundle AEM FormsDocumentServices](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+
+1. [Téléchargement du modèle de portail personnalisé html](assets/render-and-extend-template.zip)
 1. [Téléchargez et importez les ressources liées à cet article dans AEM à l’aide du gestionnaire de modules.](assets/renderandextendxdp.zip)
    * Ce module comprend un exemple de portail et de fichier xdp.
 1. Ajout d’un certificat Reader Extensions à l’utilisateur &quot;fd-service&quot;
