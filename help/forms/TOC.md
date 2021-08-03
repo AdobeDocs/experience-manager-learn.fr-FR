@@ -5,10 +5,10 @@ user-guide-title: Vidéos et tutoriels d’AEM Forms
 user-guide-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés.
 breadcrumb-title: Tutoriels d’AEM Forms
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
 workflow-type: tm+mt
-source-wordcount: '1593'
-ht-degree: 3%
+source-wordcount: '1597'
+ht-degree: 4%
 
 ---
 
@@ -198,6 +198,7 @@ ht-degree: 3%
    + [Utilisation d’Output et du service Forms dans AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Génération de plusieurs pdf à partir d’un fichier de données](document-services/generate-multi-record-pdf.md)
    + [Générer un fichier PDF lors de l’envoi d’un formulaire pour périphériques mobiles](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Configuration des informations d’identification Reader Extensions](document-services/configuring-reader-extension-osgi.md)
    + [Générer un fichier PDF interactif à partir d’un formulaire pour périphériques mobiles](document-services/render-interactive-form-using-api.md)
    + [Application des droits d’utilisation au format PDF sur le rendu XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [Application des droits d’utilisation au PDF téléchargé](document-services/apply-reader-extension-rights-to-pdf.md)
