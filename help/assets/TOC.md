@@ -4,7 +4,7 @@ user-guide-description: Ensemble de vidéos et de tutoriels pour Adobe Experienc
 breadcrumb-title: Tutoriels d’AEM Assets
 sub-product: ressources
 team: TM
-source-git-commit: 53312e573ca022f09faa44cbbf51c5b8b0ed90ee
+source-git-commit: 46f270c5b26baeb546997f2191cc28801444a290
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 36%
@@ -30,7 +30,7 @@ ht-degree: 36%
 + Création{#authoring}
    + [Navigation](./authoring/navigation.md)
    + [Opérations de base](./authoring/basic-operations.md)
-   + [Métadonnées ](./authoring/metadata.md)
+   + [Métadonnées](./authoring/metadata.md)
    + [Rendus](./authoring/renditions.md)
    + [Relation et dissociation](./authoring/relate-unrelate.md)
 
@@ -121,4 +121,3 @@ ht-degree: 36%
 
 + Déploiement{#deployment}
    + [Multi-location et développement simultané](deployment/multitenancy-concurrent-article-understand.md)
-
