@@ -5,9 +5,9 @@ user-guide-title: Vidéos et tutoriels d’AEM Forms
 user-guide-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés.
 breadcrumb-title: Tutoriels d’AEM Forms
 index: y
-source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
+source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1603'
 ht-degree: 4%
 
 ---
@@ -51,6 +51,7 @@ ht-degree: 4%
    + [Service de préremplissage dans Forms adaptatif](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [Envoi personnalisé dans Forms adaptatif](adaptive-forms/custom-submit-aem-forms-article.md)
    + [Captcha dans Forms adaptatif](adaptive-forms/forms-captcha-feature-video-use.md)
+   + [Incorporation d’un formulaire adaptatif dans une page web](adaptive-forms/embed-af-web-page.md)
    + [Utilisation de la valeur définie dans XML dans le processus OSGI](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
    + [Utilisation de la valeur définie dans JSON dans le processus OSGI](adaptive-forms/setvalue-json-data-in-aem-forms-workflow-article-use.md)
    + [Composant Envoyer un courrier électronique dans le processus AEM Forms](adaptive-forms/email-step-aem-workflow-video-use.md)
@@ -198,8 +199,8 @@ ht-degree: 4%
    + [Utilisation d’Output et du service Forms dans AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Génération de plusieurs pdf à partir d’un fichier de données](document-services/generate-multi-record-pdf.md)
    + [Générer un fichier PDF lors de l’envoi d’un formulaire pour périphériques mobiles](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Configuration des informations d’identification Reader Extensions](document-services/configuring-reader-extension-osgi.md)
    + [Générer un fichier PDF interactif à partir d’un formulaire pour périphériques mobiles](document-services/render-interactive-form-using-api.md)
+   + [Configuration des informations d’identification Reader Extensions](document-services/configuring-reader-extension-osgi.md)
    + [Application des droits d’utilisation au format PDF sur le rendu XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [Application des droits d’utilisation au PDF téléchargé](document-services/apply-reader-extension-rights-to-pdf.md)
    + [Certification de documents](document-services/certifying-documents-aem-forms-tutorial.md)
