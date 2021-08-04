@@ -11,10 +11,10 @@ version: 6.4,6.5
 topic: Administration
 role: Admin
 level: Beginner
-source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
+source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 8%
+source-wordcount: '212'
+ht-degree: 6%
 
 ---
 
@@ -40,6 +40,15 @@ Les informations d’identification des extensions Reader sont associées à l�
 Suivez la vidéo pour ajouter les informations d’identification à l’utilisateur du service fd.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335849?quality=9&learn=on)
+
+
+La commande permettant de répertorier les détails du fichier pfx est . La commande suivante suppose que vous vous trouvez dans le même répertoire que le fichier pfx .
+
+**keytool -v -list -storetype pkcs12 -keystore  &lt;name of=&quot;&quot; your=&quot;&quot;>**
+
+Par exemple, keytool -v -list -storetype pkcs12 -keystore 1005566.pfx où 1005566.pfx est le nom de mon fichier pfx
+
+
 
 
 
