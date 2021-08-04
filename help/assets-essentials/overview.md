@@ -2,10 +2,10 @@
 title: Vidéos sur AEM Assets Essentials
 description: Ensemble de vidéos pour Adobe Experience Manager Assets Essentials
 sub-product: ressources
-source-git-commit: 46f270c5b26baeb546997f2191cc28801444a290
+source-git-commit: 882c7ce872533ab4848c8db6145172b8cce4e270
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 15%
+source-wordcount: '128'
+ht-degree: 2%
 
 ---
 
@@ -17,6 +17,8 @@ ht-degree: 15%
 Experience Manager Assets Essentials offre une interface utilisateur rationalisée pour une gestion et une collaboration légères des ressources.
 
 Consultez nos vidéos sur l’utilisation d’Assets Essentials pour gérer vos ressources, ainsi que sur la manière dont il peut être intégré à Adobe Parcours Orchestration !
+
+## En savoir plus sur Assets Essentials
 
 <table>
 <td>
@@ -32,27 +34,25 @@ Consultez nos vidéos sur l’utilisation d’Assets Essentials pour gérer vos 
       <em>Découvrez les principes de base d’Assets Essentials !</em>
    </p>
 </td>
-<!--
 <td>
-   <a href="./creative-cloud.md">
-   <img alt="" src="./assets/overview/x.png"/>
+   <a href="./basics/collaborating.md">
+   <img alt="" src="./assets/overview/collaboration.png"/>
    </a>
    <div>
-      <a href="./provisioning/getting-access.md">
-      <strong>Creative Cloud and Assets Essentials</strong>
+      <a href="./basics/collaborating.md">
+      <strong>Collaboration avec Assets Essentials</strong>
       </a>
    </div>
    <p>
-      <em>Learn how Assets Essentials can integrate with your Creative Cloud Enterprise Libraries!</em>
+      <em>Découvrez comment Assets Essentials fournit une gestion légère des tâches pour gérer les cycles de vie de vos ressources.</em>
    <p>
 </td>
--->
 <td>
-   <a href="https://experienceleague.adobe.com/docs/journey-optimizer/using/create-messages/assets-essentials.html?lang=fr">
+   <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html">
    <img alt="Adobe Journey Optimizer" src="./assets/overview/adobe-journey-optimizer.png" />
    </a>
    <div>
-      <a href="https://experienceleague.adobe.com/docs/journey-optimizer/using/create-messages/assets-essentials.html">
+      <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html">
       <strong>Adobe Journey Optimizer</strong>
       </a>
    </div>
