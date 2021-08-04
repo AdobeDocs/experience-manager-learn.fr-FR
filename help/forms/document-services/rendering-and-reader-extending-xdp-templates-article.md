@@ -14,9 +14,9 @@ discoiquuid: aefb4124-91a0-4548-94a3-86785ea04549
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: 55a6ff5d01898b994aee60f214126c5c18a06a5e
+source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '464'
 ht-degree: 2%
 
 ---
@@ -33,6 +33,10 @@ Pour tester cette fonctionnalité, vous pouvez essayer ce [lien](https://forms.e
 Pour réaliser ce cas d’utilisation, procédez comme suit.
 
 * Ajoutez le certificat Reader Extensions à l’utilisateur &quot;fd-service&quot;. Les étapes pour ajouter des informations d’identification Reader Extensions sont répertoriées [ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html?lang=fr)
+
+
+* Vous pouvez également visionner la vidéo sur la [configuration des informations d’identification des extensions de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
+
 
 * Créez un service OSGi personnalisé qui effectuera le rendu et appliquera les droits d’utilisation. Le code permettant d’y parvenir est répertorié ci-dessous.
 
