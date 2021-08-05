@@ -7,9 +7,9 @@ topic: Gestion de contenu
 role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 0cfa83bdbd534f0fa06b3fa0013971feb188224e
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1029'
 ht-degree: 3%
 
 ---
@@ -20,6 +20,13 @@ ht-degree: 3%
 Les ressources Adobe Experience Manager peuvent être utilisées par les concepteurs et les utilisateurs créatifs dans leurs applications de bureau Adobe Creative Cloud préférées.
 
 L’extension Adobe Asset Link pour Adobe Creative Cloud for enterprise étend la fonctionnalité de recherche et de tri, de tri, de prévisualisation, de chargement de ressources, d’extraction, de modification, d’archivage et d’affichage des métadonnées des ressources AEM dans les applications Creative Cloud.
+
+
+## Adobe d’un lien vers les ressources et de processus créatifs
+
+La vidéo suivante illustre un processus courant utilisé par les créatifs qui travaillent dans des applications Adobe Creative Cloud et qui s’intègrent directement à AEM à l’aide d’Adobe Asset Link.
+
+>[!VIDEO](https://video.tv.adobe.com/v/335927/?quality=12&learn=on)
 
 ## Fonctionnalités d’Adobe Asset Link
 
@@ -95,4 +102,4 @@ Fonctionnement de l’authentification d’Adobe Asset Link dans le contexte des
 
 ## Ressources supplémentaires
 
-+ [Adobe du site Web Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
++ [Adobe du site Web Asset Link](https://www.adobe.com/fr/creativecloud/business/enterprise/adobe-asset-link.html)
