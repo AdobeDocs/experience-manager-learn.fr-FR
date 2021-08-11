@@ -12,10 +12,10 @@ thumbnail: kt-5432.jpg
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: e2473a1584ccf315fffe5b93cb6afaed506fdbce
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,11 +37,21 @@ AEM en tant que Cloud Services ne prend pas en charge les fichiers journaux pers
 
 Pour que les journaux Java soient disponibles dans AEM en tant que Cloud Service (via [Cloud Manager](#cloud-manager) ou [Adobe I/O CLI](#aio)), les instructions de journal personnalisées doivent être écrites dans la balise `error.log`. Les journaux écrits dans des journaux nommés personnalisés, tels que `example.log`, ne seront pas accessibles depuis AEM en tant que Cloud Service.
 
+Les journaux peuvent être écrits dans `error.log` à l’aide d’une propriété de configuration OSGi Sling LogManager dans les fichiers `org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json` de l’application.
+
+```
+{
+   ...
+   "org.apache.sling.commons.log.file": "logs/error.log"
+   ...
+}
+```
+
 ## Journaux du service Auteur et Publication AEM
 
 Les services Auteur et Publication AEM fournissent AEM journaux de serveur d’exécution :
 
-+ `aemerror` est le journal des erreurs Java (disponible  `/crx-quickstart/error.log` sur le fichier quickstart local du SDK AEM). Voici les [niveaux de journal recommandés](#log-levels) pour les enregistreurs personnalisés par type d’environnement :
++ `aemerror` est le journal des erreurs Java (disponible  `/crx-quickstart/logs/error.log` sur le fichier quickstart local du SDK AEM). Voici les [niveaux de journal recommandés](#log-levels) pour les enregistreurs personnalisés par type d’environnement :
    + Développement: `DEBUG`
    + Évaluation: `WARN`
    + Production: `ERROR`
@@ -106,7 +116,7 @@ Environment Id Service    Name
 22295          dispatcher aemdispatcher 
 ```
 
-### Logs de destination{#aio-cli-tail-logs}
+### Logs de fin{#aio-cli-tail-logs}
 
 L’interface de ligne de commande d’Adobe I/O permet d’afficher les journaux en temps réel à partir d’AEM en tant que Cloud Service à l’aide de la commande [tail-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagertail-log-environmentid-service-name). Le suivi est utile pour observer l’activité du journal en temps réel lorsque des actions sont effectuées sur l’AEM en tant qu’environnement de Cloud Service.
 
@@ -123,7 +133,7 @@ $ aio cloudmanager:tail-logs 12345 author | grep com.example.MySlingModel
 
 ... affiche uniquement les instructions de journal générées à partir de `com.example.MySlingModel` ou contiennent cette chaîne.
 
-### Téléchargement des journaux{#aio-cli-download-logs}
+### Téléchargement des logs{#aio-cli-download-logs}
 
 L’interface de ligne de commande d’Adobe I/O permet de télécharger les journaux depuis AEM en tant que Cloud Service à l’aide de la commande [download-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerdownload-logs-environmentid-service-name-days). Cela produit le même résultat final que le téléchargement des journaux à partir de l’interface utilisateur web de Cloud Manager, la différence étant que la commande `download-logs` regroupe les journaux par jour, en fonction du nombre de jours de journaux demandés.
 
