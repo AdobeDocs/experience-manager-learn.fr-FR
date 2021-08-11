@@ -10,10 +10,10 @@ doc-type: article
 topic: Sécurité
 role: Developer
 level: Intermediate
-source-git-commit: 1c99c319fba5048904177fc82c43554b0cf0fc15
+source-git-commit: 3418cd424cc82fece9e7d13de72c0d8dde346d7c
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -141,7 +141,7 @@ Pour permettre la mise en cache des en-têtes CORS, ajoutez la configuration sui
 /cache { 
   ...
   /headers {
-      "Origin",
+      "Origin"
       "Access-Control-Allow-Origin"
       "Access-Control-Expose-Headers"
       "Access-Control-Max-Age"
