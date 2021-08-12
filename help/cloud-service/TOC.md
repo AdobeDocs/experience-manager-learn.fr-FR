@@ -4,9 +4,9 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: service cloud
 team: TM
-source-git-commit: e442c6d67a02aae4c6ce9241e754c15abc920c67
+source-git-commit: aa90b2c1a066dc36d4ba26ecdb8b58939445ef34
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '478'
 ht-degree: 30%
 
 ---
@@ -110,6 +110,12 @@ ht-degree: 30%
       + [Interface de mise en oeuvre](./forms/doc-cloud-sdk/implement-interface.md)
       + [Création d’une partie JSON](./forms/doc-cloud-sdk/get-content-analyzer.md)
       + [Étape de processus personnalisée](./forms/doc-cloud-sdk/custom-process-step.md)
+   + Stockage du portail Azure{#forms-cs-azure-portal}
+      + [Présentation](./forms/forms-cs-azure-portal/introduction.md)
+      + [Création d’un modèle de données de formulaire](./forms/forms-cs-azure-portal/create-fdm.md)
+      + [Stocker les données de formulaire dans Azure Storage](./forms/forms-cs-azure-portal/create-af.md)
+      + [Formulaire de préremplissage](./forms/forms-cs-azure-portal/prefill-af-storage.md)
+      + [Requête envoyée](./forms/forms-cs-azure-portal/query-submitted-data.md)
    + Créer un processus de révision{#create-aem-workflow}
       + [Créer un modèle de workflow](./forms/create-aem-workflow/create-workflow.md)
       + [Workflow de déclenchement](./forms/create-aem-workflow/configure-af.md)
