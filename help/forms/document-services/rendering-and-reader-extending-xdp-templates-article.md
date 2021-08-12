@@ -14,9 +14,9 @@ discoiquuid: aefb4124-91a0-4548-94a3-86785ea04549
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
+source-git-commit: aa90b2c1a066dc36d4ba26ecdb8b58939445ef34
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '465'
 ht-degree: 2%
 
 ---
@@ -212,7 +212,7 @@ Pour le tester sur votre serveur local, procédez comme suit :
    * Ce module comprend un exemple de portail et de fichier xdp.
 1. Ajout d’un certificat Reader Extensions à l’utilisateur &quot;fd-service&quot;
 1. Pointez votre navigateur vers la [page web du portail](http://localhost:4502/content/AemForms/ReaderExtensionsXdp.html)
-1. Cliquez sur l’icône pdf pour rendre le fichier xdp et obtenir le fichier pdf qui est Reader Extended
+1. Cliquez sur l’icône pdf pour effectuer le rendu du fichier xdp en tant que fichier pdf avec des droits d’utilisation appliqués.
 
 
 
