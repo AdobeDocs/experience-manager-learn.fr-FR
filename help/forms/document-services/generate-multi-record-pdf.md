@@ -1,6 +1,6 @@
 ---
 title: Génération de plusieurs pdf à partir d’un fichier de données
-seo-title: Génération de plusieurs pdf à partir d’un fichier de données
+description: OutputService fournit plusieurs méthodes pour créer des documents à l’aide d’une conception de formulaire et de données à fusionner avec la conception de formulaire. Découvrez comment générer plusieurs pdf à partir d’un fichier XML volumineux contenant plusieurs enregistrements individuels.
 feature: Service Output
 topics: development
 audience: developer
@@ -10,9 +10,9 @@ version: 6.4,6.5
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: fb6c21a9a88b5ebcbfb14213182a9b8cba6fe6ae
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '526'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ La signature de la méthode generatePDFOutputBatch utilise les paramètres suiva
 
 Dans ce cas pratique, nous allons fournir une interface web simple pour télécharger le modèle et le fichier data(xml). Une fois le chargement des fichiers terminé et la demande du POST envoyée au servlet AEM. Ce servlet extrait les documents et appelle la méthode generatePDFOutputBatch du service Output. Les fichiers pdf générés sont compressés dans un fichier zip et mis à la disposition de l’utilisateur final pour les télécharger à partir du navigateur web.
 
-## Code servlet{#servlet-code}
+## Code du servlet{#servlet-code}
 
 Voici le fragment de code de la servlet. Le code extrait le modèle (xdp) et le fichier de données (xml) de la requête. Le fichier de modèle est enregistré dans le système de fichiers. Deux mappages sont créés : templateMap et dataFileMap qui contiennent respectivement le modèle et les fichiers xml(data). Un appel est alors effectué pour générer la méthode generateMultipleRecords du service DocumentServices.
 
