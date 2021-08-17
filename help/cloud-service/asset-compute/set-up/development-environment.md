@@ -12,10 +12,10 @@ thumbnail: KT-6266.jpg
 topic: Intégrations, développement
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 53c20b9774c15b04a1c78c7c0c7b61a60996bf60
+source-git-commit: fd72f3c85db8a56ec8abfd1609da53492ee54be2
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 1%
+source-wordcount: '505'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ Vous trouverez ci-dessous des instructions de configuration abrégées. Les dét
 1. Installez les modules npm requis et les modules CLI d’Adobe I/O à partir de la ligne de commande :
 
    ```
-   $ npm i -g @adobe/aio-cli @openwhisk/wskdebug ngrok --unsafe-perm=true \
+   $ npm i -g @adobe/aio-cli@7.1.0 @openwhisk/wskdebug ngrok --unsafe-perm=true \
    && aio plugins:install @adobe/aio-cli-plugin-asset-compute
    ```
 
@@ -51,8 +51,6 @@ Pour plus d’informations sur les instructions d’installation abrégées, con
 ## Installation du code Visual Studio{#vscode}
 
 [Le ](https://code.visualstudio.com/download) code Microsoft Visual Studio est utilisé pour le développement et le débogage des objets Worker Asset compute. Bien que d’autres [IDE compatibles avec JavaScript](../../local-development-environment/development-tools.md#set-up-the-development-ide) puissent être utilisés pour développer le programme de travail, seul le code Visual Studio peut être intégré à [debug](../test-debug/debug.md) Asset compute worker.
-
-_Visual Studio Code 1.48.x+ est requis pour que  [](#wskdebug) wskdebugto fonctionne._
 
 Ce tutoriel suppose l’utilisation de Visual Studio Code, car il fournit la meilleure expérience de développement pour étendre l’Asset compute.
 
@@ -69,7 +67,7 @@ $ docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
 
 Les développeurs sur les machines Windows doivent s’assurer qu’ils utilisent des conteneurs Linux pour les images ci-dessus. Les étapes de basculement vers des conteneurs Linux sont décrites dans la [documentation Docker pour Windows](https://docs.docker.com/docker-for-windows/).
 
-## Installez Node.js (et npm){#node-js}
+## Installation de Node.js (et npm){#node-js}
 
 Les objets Worker Asset compute sont basés sur [Node.js](https://nodejs.org/) et nécessitent donc Node.js 10+ (et npm) pour le développement et la création.
 
@@ -80,10 +78,13 @@ Les objets Worker Asset compute sont basés sur [Node.js](https://nodejs.org/) e
 [Installez l’interface de ligne de commande ](../../local-development-environment/development-tools.md#aio-cli) ou le module npm  ____ aiois an command line (CLI) Adobe I/O qui facilite l’utilisation et l’interaction avec les technologies d’Adobe I/O. Il est utilisé pour générer et développer localement des agents d’Asset compute personnalisés.
 
 ```
-$ npm install -g @adobe/aio-cli
+$ npm install -g @adobe/aio-cli@7.1.0
 ```
 
-## Installez le module Adobe I/O CLI Asset compute{#aio-asset-compute}
+_La version 7.1.0 de l’interface de ligne de commande d’Adobe I/O est requise. Les versions ultérieures de l’interface de ligne de commande d’Adobe I/O ne sont pas prises en charge pour le moment._
+
+
+## Installation du module Adobe I/O CLI Asset compute{#aio-asset-compute}
 
 [Module externe d’Asset compute de la ligne de commande d’Adobe I/O](https://github.com/adobe/aio-cli-plugin-asset-compute)
 
