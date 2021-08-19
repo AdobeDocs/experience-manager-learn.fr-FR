@@ -14,10 +14,10 @@ thumbnail: 31784.jpg
 topic: Gestion de contenu
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 70%
+source-wordcount: '372'
+ht-degree: 68%
 
 ---
 
@@ -32,14 +32,14 @@ Dans cette vidéo, les fonctionnalités suivantes sont abordées :
 
 * Interface utilisateur tactile
 * Le panneau de navigation globale se compose des éléments suivants :
-   * Navigation : représenté par une boussole 
+   * Navigation : représenté par une boussole
 
       | Console | Objectif |
       |---|---|
-      | Assets | Ces consoles permettent d’importer et de gérer des ressources numériques telles que des images, des vidéos, des documents et des fichiers audio. Utilisez ces ressources dans n’importe quel site web exécuté sur la même instance d’AEM | Communities | Cette console permet de créer et de gérer des sites de communauté pour l’engagement et l’activation | Commerce | Vous permet de gérer les produits, les catalogues de produits et les commandes liés à vos sites de commerce |
+      | Ressources | Ces consoles permettent d’importer et de gérer des ressources numériques telles que des images, des vidéos, des documents et des fichiers audio. Utilisez ces ressources dans n’importe quel site web exécuté sur la même instance d’AEM | Communities | Cette console permet de créer et de gérer des sites de communauté pour l’engagement et l’activation | Commerce | Vous permet de gérer les produits, les catalogues de produits et les commandes liés à vos sites de commerce |
       | Fragments d’expérience | Un fragment d’expérience est une expérience autonome qui peut être réutilisée sur l’ensemble des canaux et présentant des variations, vous évitant ainsi de devoir copier et coller à plusieurs reprises des expériences ou des parties d’expériences |
       | Formulaires | Cette console permet de créer, de gérer et de traiter vos formulaires et documents |
-      | Personnalisation  | Cette console propose un ensemble d’outils de création de contenu ciblé et de présentation d’expériences personnalisées |
+      | Personnalisation | Cette console propose un ensemble d’outils de création de contenu ciblé et de présentation d’expériences personnalisées |
       | Projets | La console Projets vous donne un accès direct à vos projets . Les projets sont des tableaux de bord virtuels. Utilisez-les pour composer une équipe, puis pour donner à cette équipe un accès aux ressources, aux processus et aux tâches, afin que tous les membres de l’équipe puissent travailler sur un objectif commun |
       | Sites | Les consoles Sites permettent de créer, d’afficher et de gérer des sites web exécutés sur votre instance AEM. Grâce à ces consoles, vous pouvez créer, copier, déplacer et supprimer des pages de site web, démarrer des processus et publier des pages |
 
@@ -62,5 +62,5 @@ Dans cette vidéo, les fonctionnalités suivantes sont abordées :
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Modification de la documentation sur le contenu de la page](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
-* [Guide rapide pour la création de pages](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+* [Modification de la documentation sur le contenu de la page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html)
+* [Guide rapide pour la création de pages](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
