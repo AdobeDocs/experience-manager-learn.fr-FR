@@ -1,21 +1,16 @@
 ---
 title: Utilisation du service de modèle de données de formulaire comme étape dans AEM flux de travaux 6.5
-seo-title: Utilisation du service de modèle de données de formulaire comme étape dans AEM flux de travaux 6.5
 description: AEM Forms 6.5 a introduit la possibilité de créer des variables dans le workflow AEM. Grâce à cette nouvelle fonctionnalité, l’utilisation du "service de modèle de données de formulaire d’appel" dans AEM Workflow est devenue très simple. La vidéo suivante vous guide tout au long des étapes à suivre pour utiliser le service de modèle de données de formulaire Invoke dans AEM Workflow.
-seo-description: AEM Forms 6.5 a introduit la possibilité de créer des variables dans le workflow AEM. Grâce à cette nouvelle fonctionnalité, l’utilisation du "service de modèle de données de formulaire d’appel" dans AEM Workflow est devenue très simple. La vidéo suivante vous guide tout au long des étapes à suivre pour utiliser le service de modèle de données de formulaire Invoke dans AEM Workflow.
 feature: Workflow
-topics: workflow.
-audience: developer.
-doc-type: technical video.
-activity: setup.
+type: Tutorial
 version: 6.5.
 topic: Développement
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 0%
+source-wordcount: '274'
+ht-degree: 1%
 
 ---
 
