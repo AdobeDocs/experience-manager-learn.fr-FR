@@ -1,20 +1,14 @@
 ---
 title: Mise en oeuvre d’une étape de processus personnalisée
-seo-title: Mise en oeuvre d’une étape de processus personnalisée
 description: Écriture de pièces jointes de formulaire adaptatif dans un système de fichiers à l’aide d’une étape de processus personnalisée
-seo-description: Écriture de pièces jointes de formulaire adaptatif dans un système de fichiers à l’aide d’une étape de processus personnalisée
 feature: Workflow
-topics: development
-audience: developer
-doc-type: tutorial
-activity: understand
 version: 6.5
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '818'
 ht-degree: 4%
 
 ---
@@ -46,7 +40,7 @@ La méthode execute donne accès aux 3 variables suivantes :
 
 **WorkflowSession** : Cette variable workflowSession vous permet de contrôler le workflow. La documentation de l’API publique est disponible [ici](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**MetaDataMap** : Toutes les métadonnées associées au workflow. Tous les arguments de processus transmis à l’étape de processus sont disponibles à l’aide de l’objet MetaDataMap .[Documentation d’API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
+**MetaDataMap** : Toutes les métadonnées associées au workflow. Tous les arguments de processus transmis à l’étape de processus sont disponibles à l’aide de l’objet MetaDataMap .[Documentation d’API](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
 Dans ce tutoriel, nous allons écrire les pièces jointes ajoutées au formulaire adaptatif dans le système de fichiers dans le cadre du processus AEM.
 
