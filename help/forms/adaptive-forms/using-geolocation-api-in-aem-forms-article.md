@@ -1,30 +1,22 @@
 ---
 title: Utilisation des API de géolocalisation dans Forms adaptatif
-seo-title: Utilisation des API de géolocalisation dans Forms adaptatif
-description: Renseignez les champs d’adresse de votre formulaire à l’aide de l’api de géolocalisation
-seo-description: Renseignez les champs d’adresse de votre formulaire à l’aide de l’api de géolocalisation
-uuid: 5a461659-6873-4ea1-9f37-8296e5a9d895
+description: Renseignez les champs d’adresse de votre formulaire à l’aide des API de géolocalisation.
 feature: Formulaires adaptatifs
-topics: integrations
-audience: developer
-doc-type: article
-activity: develop
 version: 6.3,6.4,6.5
-discoiquuid: 3400251b-aee0-4d69-994b-e1643fabc868
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 4%
+source-wordcount: '417'
+ht-degree: 5%
 
 ---
 
 
-# Utilisation des API de géolocalisation dans les Forms adaptatives{#using-geolocation-api-s-in-adaptive-forms}
+# Utilisation des API de géolocalisation dans Forms adaptatif{#using-geolocation-api-s-in-adaptive-forms}
 
-Consultez la page [Exemples AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
+Consultez la page [Exemples AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
 
 Dans cet article, nous allons examiner l’utilisation de l’API de géolocalisation de Google pour renseigner les champs d’un formulaire adaptatif. Ce cas pratique est généralement utilisé lorsque vous souhaitez remplir les champs d’adresse actuels d’un formulaire.
 
