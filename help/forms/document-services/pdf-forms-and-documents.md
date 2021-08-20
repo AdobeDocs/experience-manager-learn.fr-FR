@@ -1,15 +1,14 @@
 ---
 title: Présentation des différents types de PDF forms et de documents
 description: PDF est en fait une famille de formats de fichiers, et cet article décrit les types de fichiers importants et pertinents pour les développeurs de formulaires.
-solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
-level: Beginner,Intermediate
-version: 6.3,6.4,6.5
-feature: Services de document
+level: Beginner, Intermediate
+version: 6.3,6.4, 6.5
+feature: PDF Generator
 kt: 7071
 topic: Développement
-source-git-commit: 1b4512fdb047bec15d72a8278fd0ce5dfafa309f
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 0%
