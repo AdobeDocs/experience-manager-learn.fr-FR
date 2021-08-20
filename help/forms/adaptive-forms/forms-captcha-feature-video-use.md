@@ -1,23 +1,15 @@
 ---
 title: Utilisation de CAPTCHA avec AEM Forms adaptatif
-seo-title: Utilisation de CAPTCHA avec AEM Forms adaptatif
 description: Ajout et utilisation d’un CAPTCHA avec AEM Forms adaptatif.
-seo-description: Ajout et utilisation d’un CAPTCHA avec AEM Forms adaptatif.
 feature: Forms adaptatif,Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
 version: 6.4,6.5
-uuid: bd63e207-4f4d-4f34-9ac4-7572ed26f646
-discoiquuid: 5e184e44-e385-4df7-b7ed-085239f2a642
 topic: Développement
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 12%
+source-wordcount: '232'
+ht-degree: 13%
 
 ---
 
@@ -26,7 +18,7 @@ ht-degree: 12%
 
 Ajout et utilisation d’un CAPTCHA avec AEM Forms adaptatif.
 
-Consultez la page [Exemples AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
+Consultez la page [Exemples AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
 
 >[!VIDEO](https://video.tv.adobe.com/v/18336/?quality=9&learn=on)
 
@@ -42,7 +34,7 @@ Consultez la page [Exemples AEM Forms](https://forms.enablementadobe.com/content
 >
 >Configuration de reCaptach sur l’instance d’auteur
 >
->ouvrez la console web felix [web](http://localhost:4502/system/console/bundles) sur l’instance d’auteur.
+>ouvrez la console web Felix [web](http://localhost:4502/system/console/bundles) sur l’instance d’auteur.
 >
 >recherchez le lot com.adobe.granite.crypto.file .
 >
@@ -61,7 +53,7 @@ Accédez à l’ID de lot sur le système de fichiers de votre instance de publi
 
 Redémarrez votre serveur de publication AEM
 
-## Documents complémentaires {#supporting-materials}
+## Documents annexes {#supporting-materials}
 
 * [reCAPTCHA de Google](https://www.google.com/recaptcha)
 
