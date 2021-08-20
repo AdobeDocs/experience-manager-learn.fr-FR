@@ -1,19 +1,15 @@
 ---
 title: Étape de processus personnalisée pour compresser les fichiers joints
 description: Étape de processus personnalisée pour ajouter des pièces jointes de formulaire adaptatif à un fichier zip et stocker le fichier zip dans une variable de processus
-feature: Workflow
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: setup
+feature: Formulaires adaptatifs
 version: 6.5
 topic: Développement
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: 540e11c0861eacc795122328b2359c7db6378aec
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '151'
 ht-degree: 1%
 
 ---
