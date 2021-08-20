@@ -1,22 +1,14 @@
 ---
 title: Utilisation des rapports de transaction dans AEM Forms
-seo-title: Utilisation des rapports de transaction dans AEM Forms
 description: Les rapports de transaction dans AEM Forms vous permettent de conserver un décompte de toutes les transactions effectuées depuis une date spécifiée sur votre déploiement AEM Forms.
-seo-description: Les rapports de transaction dans AEM Forms vous permettent de conserver un décompte de toutes les transactions effectuées depuis une date spécifiée sur votre déploiement AEM Forms.
-uuid: e6133f7e-c79c-4006-89e7-3bebf7b8229e
 feature: Formulaires adaptatifs
-topics: developing
-audience: administrator
-doc-type: article
-activity: setup
 version: 6.4.1,6.5
-discoiquuid: 1abdf07a-b9f0-4c58-a1c6-08ae57db2014
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '370'
 ht-degree: 2%
 
 ---
@@ -37,7 +29,7 @@ Par défaut, l’enregistrement des transactions est désactivé. Pour activer l
 
 Une fois que la création de rapports de transaction est activée, vous pouvez envoyer Adaptive Forms, générer des documents à l’aide de Document Services ou générer des documents de communication interactive pour voir la création de rapports de transaction en action.
 
-## Affichage du rapport des transactions {#viewing-transaction-report}
+## Affichage du rapport de transaction {#viewing-transaction-report}
 
 Pour afficher le rapport de transaction, connectez-vous à AEM Forms en tant qu’administrateur. Seuls les membres du groupe fd-Administrator peuvent afficher le rapport de transaction.
 
