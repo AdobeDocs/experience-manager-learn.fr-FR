@@ -1,24 +1,16 @@
 ---
 title: Ajout de composants au panneau Revenus
-seo-title: Ajout de composants au panneau Revenus
 description: Nous ajouterons un tableau au panneau Revenus. Configurez les lignes du tableau et utilisez l’éditeur de règles pour calculer le total général.
-seo-description: Nous ajouterons un tableau au panneau Revenus. Configurez les lignes du tableau et utilisez l’éditeur de règles pour calculer le total général.
-uuid: d5c98561-c559-4624-976a-7a1486da7e69
 feature: Formulaires adaptatifs
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
 version: 6.4,6.5
 thumbnail: 22198.jpg
 kt: 4211
-discoiquuid: fa483260-38ff-40d8-96a7-1de11d8b792b
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '186'
 ht-degree: 1%
 
 ---
@@ -34,7 +26,7 @@ Nous ajouterons un tableau au panneau Revenus. Configurez les lignes du tableau 
 
 
 
-## Rendre le tableau des revenus dynamique {#make-the-income-table-dynamic}
+## Rendre la table des revenus dynamique {#make-the-income-table-dynamic}
 
 **Assurez-vous que vous êtes en mode d’édition. Le bouton Modifier se trouve en haut à droite du navigateur.**
 
