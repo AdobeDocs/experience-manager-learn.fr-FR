@@ -1,23 +1,15 @@
 ---
 title: Utilisation de modèles de données de formulaire basés sur JDBC avec AEM Forms
-seo-title: Utilisation de modèles de données de formulaire basés sur JDBC avec AEM Forms
 description: Cette vidéo explique comment créer un modèle de données de formulaire basé sur une source de données JDBC, un formulaire adaptatif basé sur le modèle de données de formulaire et comment utiliser l’opération "INSERT" à l’aide du modèle de données de formulaire.
-seo-description: Cette vidéo explique comment créer un modèle de données de formulaire basé sur une source de données JDBC, un formulaire adaptatif basé sur le modèle de données de formulaire et comment utiliser l’opération "INSERT" à l’aide du modèle de données de formulaire.
-uuid: 5c664b16-c089-48ad-8bf6-9766d0ddc3c4
 feature: Formulaires adaptatifs
-topics: form-data-model
-audience: developer
-doc-type: technical video
-activity: setup
 version: 6.4,6.5
-discoiquuid: 4e5f947c-b49a-423e-9139-51c0c5648318
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 1%
+source-wordcount: '129'
+ht-degree: 2%
 
 ---
 
