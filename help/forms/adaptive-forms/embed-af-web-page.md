@@ -2,17 +2,13 @@
 title: Incorporation de formulaires Forms/HTML5 adaptatifs dans une page web
 description: Étapes de configuration nécessaires pour incorporer des formulaires Forms adaptatifs ou HTML5 dans une page web non AEM.
 feature: Formulaires adaptatifs
-feature-set: Adaptive Forms
-topics: development
-audience: developer
-doc-type: Tutorial
-activity: implement
+type: Tutorial
 version: 6.4,6.5
-topic: Administration
-role: Admin
+topic: Développement
+role: Developer
 level: Beginner
 kt: 8390
-source-git-commit: 2fc4f748fd3b8f820d1451d08c5fe01d11892029
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 28%
