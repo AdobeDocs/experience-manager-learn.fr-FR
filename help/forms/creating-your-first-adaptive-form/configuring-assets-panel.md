@@ -1,25 +1,17 @@
 ---
 title: Ajout de composants à la section Ressources
-seo-title: Ajout de composants à la section Ressources
 description: Configurez la disposition en accordéon pour le panneau Ressources. La disposition en accordéon offre une meilleure expérience utilisateur pour l’ajout de sections répétables.
-seo-description: Configurez la disposition en accordéon pour le panneau Ressources. La disposition en accordéon offre une meilleure expérience utilisateur pour l’ajout de sections répétables.
-uuid: 0e853b07-a08d-4c5d-b5c2-0df34f0d81b3
 feature: Formulaires adaptatifs
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
 version: 6.4,6.5
 kt: 4212
 thumbnail: 22200.jpg
-discoiquuid: 37c039c4-422a-4836-8aa5-ba0459d342cc
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 3%
+source-wordcount: '57'
+ht-degree: 5%
 
 ---
 
