@@ -1,17 +1,16 @@
 ---
 title: Création d’un modèle de formulaire adaptatif
 description: Le modèle définit la structure et le contenu initial du formulaire adaptatif.
-feature: adaptive-forms
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
+feature: Formulaires adaptatifs
+topic: Développement
+role: Developer
+level: Beginner
 kt: 5859
-thumbnail: 37324
-source-git-commit: c60a46027cc8d71fddd41aa31dbb569e4df94823
+thumbnail: 37324.jpg
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '134'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -24,7 +23,7 @@ La vidéo suivante présente le processus de base de création d’un modèle de
 
 >[!VIDEO](https://video.tv.adobe.com/v/37324/quality=9)
 
-Pour plus d’informations, reportez-vous à la [documentation du modèle de formulaire adaptatif](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) .
+Pour plus d’informations, reportez-vous à la [documentation du modèle de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) .
 
 Si nécessaire, vous pouvez télécharger le [modèle de formulaire adaptatif](assets/peak-application-template.zip) et l’importer dans AEM à l’aide du [gestionnaire de package](http://localhost:4502/crx/packmgr/index.jsp).
 
