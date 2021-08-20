@@ -1,22 +1,14 @@
 ---
 title: Création d’éléments de modèle de données de formulaire calculés dans AEM Forms
-seo-title: Création d’éléments de modèle de données de formulaire calculés dans AEM Forms
 description: Création d’éléments de modèle de données de formulaire calculés
-seo-description: Création d’éléments de modèle de données de formulaire calculés
-uuid: 30d72569-6a38-44f6-a091-b9a595d5ac77
 feature: Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
 version: 6.4,6.5
-discoiquuid: b7b6d05b-7378-4028-add3-4f2a03a7455d
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '146'
 ht-degree: 1%
 
 ---
