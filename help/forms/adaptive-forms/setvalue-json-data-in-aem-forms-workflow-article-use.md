@@ -1,22 +1,14 @@
 ---
 title: Définition de la valeur de l’élément de données Json dans le processus AEM Forms
-seo-title: Définition de la valeur de l’élément de données Json dans le processus AEM Forms
 description: Lorsqu’un formulaire adaptatif est acheminé vers différents utilisateurs dans AEM flux de travaux, il est nécessaire de masquer ou désactiver certains champs ou panneaux en fonction de la personne qui le visualise. Pour répondre à ces cas d’utilisation, nous définissons généralement la valeur d’un champ masqué. En fonction des valeurs de ce champ masqué, les règles métier peuvent être créées pour masquer/désactiver les panneaux ou champs appropriés.
-seo-description: Lorsqu’un formulaire adaptatif est acheminé vers différents utilisateurs dans AEM flux de travaux, il est nécessaire de masquer ou désactiver certains champs ou panneaux en fonction de la personne qui le visualise. Pour répondre à ces cas d’utilisation, nous définissons généralement la valeur d’un champ masqué. En fonction des valeurs de ce champ masqué, les règles métier peuvent être créées pour masquer/désactiver les panneaux ou champs appropriés.
-uuid: a4ea6aef-a799-49e5-9682-3fa3b7a442fb
 feature: Formulaires adaptatifs
-topics: developing
-audience: implementer
-doc-type: article
-activity: setup
 version: 6.4
-discoiquuid: 548fb2ec-cfcf-4fe2-a02a-14f267618d68
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '692'
 ht-degree: 2%
 
 ---
