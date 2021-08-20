@@ -2,19 +2,16 @@
 title: Déploiement de l’exemple
 description: Cas d’utilisation en cours d’exécution sur votre instance AEM Forms locale
 feature: Formulaires adaptatifs
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+type: Tutorial
 version: 6.4,6.5
 kt: 6602
 thumbnail: 6602.jpg
 topic: Développement
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
@@ -48,7 +45,7 @@ Créez un compte développeur avec [Nexmo](https://dashboard.nexmo.com/) pour en
 ## Déployer les lots OSGi suivants
 
 Déployez le lot comportant le code [pour stocker et récupérer les données de la base de données](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar).
-Déployez le [bundle DevelopingWithServiceUser](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+Déployez le [bundle DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
 
 ## Déploiement de la bibliothèque cliente
 
