@@ -1,22 +1,17 @@
 ---
 title: 'Utilisation de tests automatisés avec AEM Forms adaptatif '
-seo-title: 'Utilisation de tests automatisés avec AEM Forms adaptatif '
 description: Tests automatisés de Forms adaptatif à l’aide du SDK Calvin
-seo-description: Tests automatisés de Forms adaptatif à l’aide du SDK Calvin
 feature: Formulaires adaptatifs
-topics: development
-audience: developer
 doc-type: article
 activity: develop
 version: 6.3,6.4,6.5
-uuid: 3ad4e6d6-d3b1-4e4d-9169-847f74ba06be
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 6%
+source-wordcount: '446'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +20,7 @@ ht-degree: 6%
 
 Tests automatisés de Forms adaptatif à l’aide du SDK Calvin
 
-Calvin SDK est une API utilitaire pour les développeurs de formulaires adaptatifs pour les tester. Le kit SDK Calvin repose sur la [structure de test Hobbes.js](https://docs.adobe.com/docs/fr/aem/6-3/develop/ref/test-api/index.html). Le kit SDK Calvin est disponible avec AEM Forms 6.3 et versions ultérieures.
+Calvin SDK est une API utilitaire pour les développeurs de formulaires adaptatifs pour les tester. Le kit SDK Calvin repose sur la [structure de test Hobbes.js](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html). Le kit SDK Calvin est disponible avec AEM Forms 6.3 et versions ultérieures.
 
 Dans ce tutoriel, vous allez créer les éléments suivants :
 
@@ -80,13 +75,13 @@ Des cas de test peuvent être ajoutés à la suite de tests à exécuter par rap
 * Une fois que vous avez créé un cas de test, vous pouvez ajouter des actions à votre cas de test.
 * Les actions `navigateTo`, `asserts.isTrue` peuvent être ajoutées en tant qu’actions au cas de test.
 
-## Exécution des tests automatisés {#running-the-automated-tests}
+## Exécution de tests automatisés {#running-the-automated-tests}
 
 [](http://localhost:4502/libs/granite/testing/hobbes.html)Ouvrez la suite de testsDéveloppez la suite de tests et exécutez les tests. Si tout s’exécute correctement, la sortie suivante s’affiche.
 
 ![calvinsdk](assets/calvinimage.png)
 
-## Testez les exemples de suites de tests {#try-out-the-sample-test-suites}
+## Tester les exemples de suites de tests {#try-out-the-sample-test-suites}
 
 Dans le cadre de l’exemple de package, il existe trois suites de test supplémentaires. Vous pouvez les essayer en incluant les fichiers appropriés dans le fichier js.txt de la bibliothèque cliente, comme illustré ci-dessous :
 
