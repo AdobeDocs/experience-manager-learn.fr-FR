@@ -1,21 +1,15 @@
 ---
 title: Ajout d’éléments au composant de groupe de choix
-seo-title: Ajout d’éléments au composant de groupe de choix
 description: Ajouter dynamiquement des éléments au composant de groupe de choix
-seo-description: Ajouter dynamiquement des éléments au composant de groupe de choix
 feature: Formulaires adaptatifs
-topics: authoring
-audience: developer
-doc-type: tutorial
-activity: understand
 version: 6.5
 topic: Développement
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 3%
+source-wordcount: '515'
+ht-degree: 4%
 
 ---
 
@@ -96,7 +90,7 @@ Pour essayer ceci sur votre système :
 **Utilisation de l’éditeur visuel pour ajouter des éléments**
 
 * [Téléchargement des ressources](assets/usingthevisualeditor.zip)
-* Installez Tomcat si vous ne l&#39;avez pas déjà. [Les instructions d’installation de tomcat sont disponibles ici](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
+* Installez Tomcat si vous ne l&#39;avez pas déjà. [Les instructions d’installation de tomcat sont disponibles ici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
 * [Déployer le fichier SampleRest.war dans Tomcat](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
 * [Ouvrir Forms Et Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Cliquez sur &quot;Créer&quot; | Téléchargement du fichier&quot; et chargez le fichier que vous avez téléchargé à l’étape précédente.
