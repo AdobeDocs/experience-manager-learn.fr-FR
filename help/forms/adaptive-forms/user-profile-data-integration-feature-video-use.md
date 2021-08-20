@@ -1,23 +1,15 @@
 ---
 title: Utilisation de l’intégration des données de profil utilisateur avec AEM Forms
-seo-title: Utilisation de l’intégration des données de profil utilisateur avec AEM Forms
 description: Intégration AEM informations de profil utilisateur à Forms adaptatif
-seo-description: Intégration AEM informations de profil utilisateur à Forms adaptatif
-uuid: c8cfe575-8732-4d8b-99de-fb09e7c2497d
 feature: Formulaires adaptatifs
-topics: integrations
-audience: developer
-doc-type: feature video
-activity: setup
 version: 6.3,6.4,6.5
-discoiquuid: ca01dfce-abab-4bc1-9c5e-3bafdbed4836
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 48%
+source-wordcount: '100'
+ht-degree: 56%
 
 ---
 
