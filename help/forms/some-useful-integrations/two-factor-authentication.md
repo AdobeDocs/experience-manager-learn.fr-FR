@@ -2,18 +2,14 @@
 title: Authentification à deux facteurs SMS
 description: Ajoutez un niveau de sécurité supplémentaire pour vous aider à confirmer l’identité d’un utilisateur lorsqu’il souhaite exécuter certaines activités.
 feature: Formulaires adaptatifs
-topics: adaptive forms
-audience: developer
-doc-type: article
-activity: use
 version: 6.4,6.5
 kt: 6317
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '602'
 ht-degree: 4%
 
 ---
@@ -51,11 +47,11 @@ Utilisez l’ [éditeur de swagger](https://editor.swagger.io/) pour créer votr
 
 ## Création d’une source de données
 
-Pour intégrer AEM/AEM Forms à des applications tierces, nous devons [créer une source de données](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) dans la configuration des services cloud.
+Pour intégrer AEM/AEM Forms à des applications tierces, nous devons [créer une source de données](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) dans la configuration des services cloud.
 
 ## Création d’un modèle de données de formulaire
 
-L’intégration des données AEM Forms fournit une interface utilisateur intuitive pour créer et utiliser des [modèles de données de formulaire](https://docs.adobe.com/content/help/en/experience-manager-65/forms/form-data-model/create-form-data-models.html). Un modèle de données de formulaire repose sur les sources de données pour l’échange de données.
+L’intégration des données AEM Forms fournit une interface utilisateur intuitive pour créer et utiliser des [modèles de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Un modèle de données de formulaire repose sur les sources de données pour l’échange de données.
 Le modèle de données de formulaire complété peut être [téléchargé ici](assets/sms-2fa-fdm.zip)
 
 ![fdm](assets/2FA-fdm.PNG)
