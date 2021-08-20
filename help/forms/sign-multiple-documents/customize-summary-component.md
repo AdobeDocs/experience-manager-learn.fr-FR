@@ -2,17 +2,13 @@
 title: Personnalisation du composant Résumé
 description: Étendez le composant d’étape de résumé pour inclure la possibilité d’accéder au formulaire suivant dans le module.
 feature: Formulaires adaptatifs
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
 version: 6.4,6.5
 kt: 6894
 thumbnail: 6894.jpg
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 2%
@@ -48,7 +44,7 @@ summary.jsp comporte le code suivant. Il fait référence à la bibliothèque cl
 <ui:includeClientLib categories="getnextform"/>
 ```
 
-## Assets
+## Ressources
 
 Le composant de résumé personnalisé peut être [téléchargé ici](assets/custom-summary-step.zip)
 
