@@ -1,22 +1,14 @@
 ---
 title: Capture des commentaires de workflow dans le Forms Workflow adaptatif
-seo-title: Capture des commentaires de workflow dans le Forms Workflow adaptatif
 description: Capture des commentaires de workflow dans AEM workflow
-seo-description: Capture des commentaires de workflow dans AEM workflow
-uuid: df41fc6f-9abf-47b4-a014-b3b9fb58b6f7
 feature: Workflow
-topics: development
-audience: developer
-doc-type: article
-activity: setup
 version: 6.3,6.4
-discoiquuid: d5e40650-3b1f-4875-91b2-e22d932b5e7c
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
