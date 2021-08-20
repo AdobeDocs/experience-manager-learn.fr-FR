@@ -2,17 +2,13 @@
 title: Créer le workflow principal pour déclencher le processus de signature
 description: Créer un workflow pour stocker les formulaires à signer dans la base de données
 feature: Formulaires adaptatifs
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
 version: 6.4,6.5
 thumbnail: 6887.jpg
 kt: 6887
 topic: Développement
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 2%
@@ -119,7 +115,7 @@ public class StoreFormsToSignWorkflowStep implements WorkflowProcess {
 
 
 
-## Assets
+## Ressources
 
 Le processus Sign Multiple Forms utilisé dans cet article peut être [téléchargé ici](assets/sign-multiple-forms-workflows.zip)
 
