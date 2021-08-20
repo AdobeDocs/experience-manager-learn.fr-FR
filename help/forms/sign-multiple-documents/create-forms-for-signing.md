@@ -2,17 +2,13 @@
 title: Création de Forms pour la signature
 description: Créez des formulaires qui doivent être inclus dans le package de signature.
 feature: Formulaires adaptatifs
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
 version: 6.4,6.5
 kt: 6893
 thumbnail: 6893.jpg
 topic: Développement
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 1%
@@ -48,6 +44,6 @@ Une fois que vous avez créé votre formulaire, incluez le fragment de formulair
 
 Une fois que tous les formulaires du package sont remplis et signés, nous devons afficher le message approprié. Ce message s’affiche à l’aide d’un formulaire Tout fait. Le formulaire Autorisé est inclus dans les exemples de formulaires.
 
-## Assets
+## Ressources
 
 Les exemples de formulaires, y compris ceux utilisés dans ce tutoriel, peuvent être [téléchargés ici](assets/forms-for-signing.zip)
