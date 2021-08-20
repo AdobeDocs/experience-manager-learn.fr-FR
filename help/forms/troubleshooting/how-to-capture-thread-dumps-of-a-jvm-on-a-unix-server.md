@@ -2,17 +2,15 @@
 title: Comment capturer les vidages de threads d’une JVM sur un serveur unix
 description: Procédure de capture des vidages de threads d’un processus Java sur un serveur unix
 type: Troubleshooting
-product: forms
 role: Admin
 level: Intermediate
 version: 6.5
-feature: Foundation JEE
 topic: Administration
 index: y
-source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '57'
-ht-degree: 5%
+source-wordcount: '55'
+ht-degree: 1%
 
 ---
 
