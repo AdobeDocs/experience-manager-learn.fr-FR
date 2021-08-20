@@ -1,28 +1,20 @@
 ---
 title: Balisage et stockage d’un document d’enregistrement AEM Forms dans la gestion des ressources numériques
-seo-title: Balisage et stockage d’un document d’enregistrement AEM Forms dans la gestion des ressources numériques
 description: Cet article décrit le cas pratique de stockage et de balisage du document d’enregistrement généré par AEM Forms dans AEM DAM. Le balisage du document est effectué en fonction des données de formulaire envoyées.
-seo-description: Cet article décrit le cas pratique de stockage et de balisage du document d’enregistrement généré par AEM Forms dans AEM DAM. Le balisage du document est effectué en fonction des données de formulaire envoyées.
-uuid: b9ba13ed-52d5-4389-a7d5-bf85e58fea49
-feature: Forms adaptatif,Workflow
-topics: developing
-audience: implementer
-doc-type: article
-activity: develop
+feature: Formulaires adaptatifs
 version: 6.4,6.5
-discoiquuid: 53961454-633b-4cd8-aef7-e64ab4e528e4
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '616'
 ht-degree: 1%
 
 ---
 
 
-# Balisage et stockage du document d’enregistrement AEM Forms dans la gestion des actifs numériques {#tagging-and-storing-aem-forms-dor-in-dam}
+# Balisage et stockage d’un document d’enregistrement AEM Forms dans la gestion des ressources numériques {#tagging-and-storing-aem-forms-dor-in-dam}
 
 Cet article décrit le cas pratique de stockage et de balisage du document d’enregistrement généré par AEM Forms dans AEM DAM. Le balisage du document est effectué en fonction des données de formulaire envoyées.
 
