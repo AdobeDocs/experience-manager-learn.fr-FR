@@ -1,22 +1,14 @@
 ---
 title: Créer un profil Campaign à l’aide du modèle de données de formulaire
-seo-title: Créer un profil Campaign à l’aide du modèle de données de formulaire
 description: Procédure de création d’un profil Adobe Campaign Standard à l’aide du modèle de données de formulaire AEM Forms
-seo-description: Procédure de création d’un profil Adobe Campaign Standard à l’aide du modèle de données de formulaire AEM Forms
-uuid: 3216827e-e1a2-4203-8fe3-4e2a82ad180a
-feature: Service Output
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
+feature: Formulaires adaptatifs
 version: 6.3,6.4,6.5
-discoiquuid: 461c532e-7a07-49f5-90b7-ad0dcde40984
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '429'
 ht-degree: 4%
 
 ---
@@ -107,7 +99,7 @@ private Logger log = LoggerFactory.getLogger(CampaignAuthentication.class);
 }
 ```
 
-## Créer une source de données {#create-data-source}
+## Création d’une source de données {#create-data-source}
 
 La première étape consiste à créer le fichier swagger. Le fichier swagger définit l’API REST qui sera utilisée pour créer un profil dans Adobe Campaign Standard. Le fichier swagger définit les paramètres d’entrée et les paramètres de sortie de l’API REST.
 
@@ -115,7 +107,7 @@ Une source de données est créée à l’aide du fichier swagger. Lors de la cr
 
 Un exemple de fichier swagger vous est fourni dans le cadre de la ressource liée à cet article.**Veillez à modifier l’hôte et basePath dans le fichier swagger pour qu’ils correspondent à votre instance ACS.**
 
-## Testez la solution {#test-the-solution}
+## Tester la solution {#test-the-solution}
 
 Pour tester la solution, procédez comme suit :
 * [Assurez-vous d’avoir suivi les étapes décrites ici](aem-forms-with-campaign-standard-getting-started-tutorial.md)
