@@ -2,17 +2,13 @@
 title: Créer une bibliothèque cliente
 description: Code de bibliothèque cliente pour récupérer le formulaire suivant à signer.
 feature: Formulaires adaptatifs
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
 version: 6.4,6.5
 kt: 6907
 thumbnail: 6907.jpg
 topic: Développement
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 4%
@@ -75,6 +71,6 @@ $(document).ready(function()
 });
 ```
 
-## Assets
+## Ressources
 
 [La bibliothèque cliente peut être téléchargée ici.](assets/get-next-form-client-lib.zip)
