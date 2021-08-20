@@ -1,22 +1,14 @@
 ---
 title: Utilisation de setvalue dans le workflow AEM Forms
-seo-title: Utilisation de setvalue dans AEM Forms Workflow
 description: Définir la valeur de l’élément dans les données envoyées par Forms adaptative dans AEM Forms OSGI
-seo-description: Définir la valeur de l’élément dans les données envoyées par Forms adaptative dans AEM Forms OSGI
-uuid: fe431e48-f05b-4b23-94d2-95d34d863984
 feature: Formulaires adaptatifs
-topics: developing
-audience: implementer
-doc-type: article
-activity: setup
-discoiquuid: dbd87302-f770-4e61-b5ad-3fc5831b4613
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 2%
+source-wordcount: '531'
+ht-degree: 3%
 
 ---
 
