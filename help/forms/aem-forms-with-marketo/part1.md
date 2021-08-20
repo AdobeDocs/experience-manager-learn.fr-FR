@@ -1,20 +1,14 @@
 ---
 title: AEM Forms avec Marketo (partie 1)
-seo-title: AEM Forms avec Marketo (partie 1)
 description: Tutoriel pour intégrer AEM Forms à Marketo à l’aide du modèle de données de formulaire AEM Forms.
-seo-description: Tutoriel pour intégrer AEM Forms à Marketo à l’aide du modèle de données de formulaire AEM Forms.
 feature: Forms adaptatif, modèle de données de formulaire
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
 version: 6.3,6.4,6.5
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '376'
 ht-degree: 1%
 
 ---
@@ -34,7 +28,7 @@ Ce tutoriel vous guide tout au long des étapes nécessaires à l’intégration
 
 Pour commencer, il est vivement recommandé de vous familiariser avec les rubriques suivantes répertoriées dans la section Conditions préalables .
 
-## Condition préalable
+## Prérequis
 
 1. [Serveur AEM avec le package AEM Forms Add on installé](/help/forms/adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
 1. Environnement de développement AEM local
