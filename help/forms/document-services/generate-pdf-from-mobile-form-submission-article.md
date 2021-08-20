@@ -1,22 +1,14 @@
 ---
 title: Générer un fichier PDF à partir de l’envoi de formulaire HTM5
-seo-title: Générer un fichier PDF à partir de l’envoi de formulaire HTML5
 description: Générer un fichier PDF à partir de l’envoi de formulaire mobile
-seo-description: Générer un fichier PDF à partir de l’envoi de formulaire mobile
-uuid: 61f07029-d440-44ec-98bc-f2b5eef92b59
 feature: Mobile Forms
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
-discoiquuid: 816f1a75-6ceb-457b-ba18-daf229eed057
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
