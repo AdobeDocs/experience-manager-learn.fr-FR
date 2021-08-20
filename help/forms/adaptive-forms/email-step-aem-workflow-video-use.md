@@ -1,22 +1,14 @@
 ---
 title: Utilisation de l’étape Envoyer un courrier électronique du Forms Workflow
-seo-title: Utilisation de l’étape Envoyer un courrier électronique du Forms Workflow
 description: L’étape Envoyer un courrier électronique a été introduite dans AEM Forms 6.4. Cette étape permet de créer des processus d’entreprise ou un workflow qui vous permettront d’envoyer des emails avec ou sans pièces jointes. La vidéo suivante décrit les étapes de configuration du composant Envoyer un courrier électronique
-seo-description: L’étape Envoyer un courrier électronique a été introduite dans AEM Forms 6.4. Cette étape permet de créer des processus d’entreprise ou un workflow qui vous permettront d’envoyer des emails avec ou sans pièces jointes. La vidéo suivante décrit les étapes de configuration du composant Envoyer un courrier électronique
-uuid: d054ebfb-3b9b-4ca4-8355-0eb0ee7febcb
 feature: Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
 version: 6.4,6.5
-discoiquuid: 3a11f602-2f4c-423a-baef-28824c0325a1
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '445'
 ht-degree: 3%
 
 ---
