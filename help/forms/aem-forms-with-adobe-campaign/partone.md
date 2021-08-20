@@ -1,28 +1,20 @@
 ---
 title: 'Génération du jeton web JSON et du jeton d’accès '
-seo-title: 'Génération du jeton web JSON et du jeton d’accès '
 description: Cet article explique le code nécessaire à la génération de JWT et de jeton d’accès nécessaires pour effectuer des appels REST vers Adobe Campaign Standard.
-seo-description: Cet article explique le code nécessaire à la génération de JWT et de jeton d’accès nécessaires pour effectuer des appels REST vers Adobe Campaign Standard.
-uuid: 5b780eee-1e7c-4e1c-a164-49ce64939b91
 feature: Forms adaptatif, modèle de données de formulaire
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
 version: 6.3,6.4,6.5
-discoiquuid: cc268946-a7e4-42b3-bfad-5509e215871a
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
 
 
-# Génération du jeton Web JSON et du jeton d’accès {#generating-json-web-token-and-access-token}
+# Génération du jeton web JSON et du jeton d’accès {#generating-json-web-token-and-access-token}
 
 Cet article explique le code nécessaire à la génération de JWT et de jeton d’accès nécessaires pour effectuer des appels REST vers Adobe Campaign Standard.
 
