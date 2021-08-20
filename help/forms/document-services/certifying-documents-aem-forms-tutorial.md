@@ -1,21 +1,14 @@
 ---
 title: Certification de document dans AEM Forms
-seo-title: Certification de document dans AEM Forms
 description: Utilisation du service Docassurance pour certifier des documents PDF dans AEM Forms
-seo-description: Utilisation du service Docassurance pour certifier des documents PDF dans AEM Forms
-uuid: ecb1f9b6-bbb3-43a3-a0e0-4c04411acc9f
 feature: Document Security
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Développement
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '403'
 ht-degree: 2%
 
 ---
