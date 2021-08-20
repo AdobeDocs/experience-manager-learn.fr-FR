@@ -1,20 +1,15 @@
 ---
 title: Affichage d’images intégrées dans Adaptive Forms
-seo-title: Affichage d’images intégrées dans Adaptive Forms
 description: Affichage des images téléchargées en ligne dans Adaptive Forms
-seo-description: Affichage des images téléchargées en ligne dans Adaptive Forms
 feature: Formulaires adaptatifs
 topics: development
-audience: developer
-doc-type: article
-activity: setup
 version: 6.3,6.4,6.5
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '240'
 ht-degree: 1%
 
 ---
@@ -23,6 +18,8 @@ ht-degree: 1%
 # Images intégrées dans Adaptive Forms
 
 Un cas d’utilisation courant consiste à afficher l’image téléchargée en tant qu’image intégrée dans un formulaire adaptatif. Par défaut, l’image téléchargée s’affiche sous forme de lien et cette expérience peut être améliorée en affichant l’image dans le formulaire adaptatif. Cet article décrit les étapes à suivre pour afficher une image intégrée.
+
+[Exemple en direct de cette fonctionnalité](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1)
 
 ## Ajout d’une image d’espace réservé
 
