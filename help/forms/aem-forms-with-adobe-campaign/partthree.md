@@ -1,27 +1,19 @@
 ---
 title: Préremplissage d’un formulaire adaptatif à l’aide d’un profil ACS
-seo-title: Préremplissage d’un formulaire adaptatif à l’aide d’un profil ACS
 description: Préremplir le Forms adaptatif à l’aide du profil ACS
-seo-description: Préremplir le Forms adaptatif à l’aide du profil ACS
-uuid: 9bff6f61-96e9-40d4-a977-a80008cfbeee
 feature: Forms adaptatif, modèle de données de formulaire
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
 version: 6.3,6.4,6.5
-discoiquuid: a2ffcb84-4dd8-45e5-8e2c-0da74202851b
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '339'
 ht-degree: 1%
 
 ---
 
-# Préremplir le formulaire adaptatif à l’aide du profil ACS {#prefilling-adaptive-form-using-acs-profile}
+# Préremplissage d’un formulaire adaptatif à l’aide d’un profil ACS {#prefilling-adaptive-form-using-acs-profile}
 
 Dans cette partie, nous allons préremplir le formulaire adaptatif avec les informations de profil récupérées à partir d’ACS. AEM Forms dispose de cette puissante fonctionnalité pour préremplir les formulaires adaptatifs.
 
