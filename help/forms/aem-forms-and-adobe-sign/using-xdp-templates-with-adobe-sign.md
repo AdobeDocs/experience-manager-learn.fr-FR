@@ -2,16 +2,12 @@
 title: Utilisation de modèles XDP avec AEM Forms et Adobe Sign
 description: Utilisation de modèles XDP avec AEM Forms et Adobe Sign. Vidéo présentant l’utilisation de modèles XDP existants avec l’intégration AEM Forms et Sign.
 feature: Formulaires adaptatifs
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 thumbnail: 39705.jpg
 kt: 6143
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 7%
