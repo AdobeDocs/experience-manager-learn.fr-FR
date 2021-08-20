@@ -1,22 +1,14 @@
 ---
 title: Création d’un profil Campaign sur l’envoi de formulaire adaptatif
-seo-title: Création d’un profil Campaign sur l’envoi de formulaire adaptatif
 description: Cet article explique les étapes nécessaires à la création d’un profil dans Adobe Campaign Standard lors d’un envoi de formulaire adaptatif. Ce processus utilise un mécanisme d’envoi personnalisé pour gérer l’envoi du formulaire adaptatif.
-seo-description: Cet article explique les étapes nécessaires à la création d’un profil dans Adobe Campaign Standard lors d’un envoi de formulaire adaptatif. Ce processus utilise un mécanisme d’envoi personnalisé pour gérer l’envoi du formulaire adaptatif.
-uuid: f3cb7b3c-1a1c-49eb-9447-a9e52c675244
 feature: Forms adaptatif, modèle de données de formulaire
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: setup
 version: 6.3,6.4,6.5
-discoiquuid: 46ec4136-4898-4b01-86bb-ac638a29b242
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -32,7 +24,7 @@ Ce tutoriel décrit les étapes à suivre pour créer un profil Campaign lors de
 * Créer une action d’envoi personnalisée pour gérer l’envoi de formulaire adaptatif
 * Appeler la méthode createProfile de CampaignService
 
-## Créer un service AEM {#create-aem-service}
+## Création d’un service AEM {#create-aem-service}
 
 Créez AEM service pour créer un profil Adobe Campaign. Ce service AEM récupérera les informations d’identification Adobe Campaign de la configuration OSGI. Une fois les informations d’identification de la campagne obtenues, un jeton d’accès est généré et l’appel HTTP Post du jeton d’accès est effectué pour créer le profil dans Adobe Campaign. Voici le code de création de profil .
 
@@ -247,7 +239,7 @@ return null;
 }
 ```
 
-## Envoi personnalisé {#custom-submit}
+## Envoyer personnalisé {#custom-submit}
 
 Créez un gestionnaire d’envoi personnalisé pour gérer l’envoi du formulaire adaptatif. Dans ce gestionnaire d’envoi personnalisé, nous allons appeler la méthode createProfile de CampaignService. La méthode createProfile accepte un objet JSONObject qui représente le profil qui doit être créé.
 
@@ -266,7 +258,7 @@ profile.addProperty("mobilePhone",request.getParameter("phone"));
 String pkey = addNewProfile.createProfile(profile);
 ```
 
-## Testez la solution {#test-the-solution}
+## Tester la solution {#test-the-solution}
 
 Une fois que nous avons défini le service et l’action d’envoi personnalisée, nous sommes prêts à tester notre solution. Pour tester la solution, procédez comme suit :
 
