@@ -1,22 +1,14 @@
 ---
 title: Utilisation D’Un Modèle De Données De Formulaire Pour Publier Des Données Binaires
-seo-title: Utilisation D’Un Modèle De Données De Formulaire Pour Publier Des Données Binaires
 description: Publication de données binaires dans AEM DAM à l’aide du modèle de données de formulaire
-seo-description: Publication de données binaires dans AEM DAM à l’aide du modèle de données de formulaire
-uuid: dd344ed8-69f7-4d63-888a-3c96993fe99d
 feature: Workflow
-topics: integrations
-audience: developer
-doc-type: article
-activity: setup
 version: 6.4,6.5
-discoiquuid: 6e99df7d-c030-416b-83d2-24247f673b33
 topic: Développement
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '493'
 ht-degree: 1%
 
 ---
