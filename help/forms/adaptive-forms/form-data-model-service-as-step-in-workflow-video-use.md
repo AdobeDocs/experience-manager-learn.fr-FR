@@ -1,28 +1,21 @@
 ---
 title: Utilisation du service de modèle de données de formulaire comme étape dans le processus
-seo-title: Utilisation du service de modèle de données de formulaire comme étape dans le processus
 description: À compter d’AEM Forms 6.4, nous pouvons désormais utiliser le modèle de données de formulaire dans le cadre d’AEM Workflow. La vidéo suivante décrit les étapes nécessaires à la configuration de l’étape Modèle de données de formulaire dans AEM Workflow.
-seo-description: À compter d’AEM Forms 6.4, nous pouvons désormais utiliser le modèle de données de formulaire dans le cadre d’AEM Workflow. La vidéo suivante décrit les étapes nécessaires à la configuration de l’étape Modèle de données de formulaire dans AEM Workflow.
-uuid: ecd5d5aa-01eb-48fb-872f-66c656ae14df.
 feature: Workflow
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
+type: Tutorial
 version: 6.4,6.5
-discoiquuid: c442f439-1e5d-4f96-85df-b818c28389ff
 topic: Développement
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 0%
+source-wordcount: '281'
+ht-degree: 1%
 
 ---
 
 
-# Utilisation du service de modèle de données de formulaire comme étape dans le workflow {#using-form-data-model-service-as-step-in-workflow}
+# Utilisation du service de modèle de données de formulaire comme étape dans le processus {#using-form-data-model-service-as-step-in-workflow}
 
 À compter d’AEM Forms 6.4, nous pouvons désormais utiliser le modèle de données de formulaire dans le cadre d’AEM Workflow. La vidéo suivante décrit les étapes nécessaires à la configuration de l’étape Modèle de données de formulaire dans AEM Workflow
 
@@ -33,7 +26,7 @@ Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-
 * [Téléchargez et déployez le lot setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Il s’agit du lot OSGI personnalisé qui définit les propriétés de métadonnées.
 >!![NOTE]Dans AEM Forms 6.5 et versions ultérieures, cette fonctionnalité est disponible clé en main, comme  [décrit ici](form-data-model-service-as-step-in-aem65-workflow-video-use.md)
 
-* Configurez tomcat avec le fichier SampleRest.war comme décrit [ici](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html). Le fichier war déployé dans Tomcat comporte le code pour renvoyer le score de crédit du demandeur. Le score de crédit est un nombre aléatoire compris entre 200 et 800
+* Configurez tomcat avec le fichier SampleRest.war comme décrit [ici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html). Le fichier war déployé dans Tomcat comporte le code pour renvoyer le score de crédit du demandeur. Le score de crédit est un nombre aléatoire compris entre 200 et 800
 
 * [Importez les actifs dans AEM à l’aide de Package Manager](assets/invoke-fdm-as-service-step.zip). Le package contient les éléments suivants :
 
