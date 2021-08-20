@@ -2,17 +2,13 @@
 title: Création d’un service OSGi
 description: Créer un service OSGi pour stocker les formulaires à signer
 feature: Workflow
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
 version: 6.4,6.5
 thumbnail: 6886.jpg
 kt: 6886
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 1%
@@ -206,6 +202,6 @@ public String getNextFormToSign(int customerID) {
 
 
 
-## Assets
+## Ressources
 
 Le lot OSGi avec les services mentionnés ci-dessus peut être [téléchargé ici](assets/sign-multiple-forms.jar)
