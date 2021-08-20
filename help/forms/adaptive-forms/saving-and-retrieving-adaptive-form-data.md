@@ -1,17 +1,14 @@
 ---
 title: Enregistrement et récupération des données de formulaire adaptatif
-seo-title: Enregistrement et récupération des données de formulaire adaptatif
 description: Enregistrement et récupération des données de formulaire adaptatif de la base de données. Cette fonctionnalité permet aux utilisateurs d’enregistrer le formulaire et de continuer à le remplir ultérieurement.
-seo-description: Enregistrement et récupération des données de formulaire adaptatif de la base de données. Cette fonctionnalité permet aux utilisateurs d’enregistrer le formulaire et de continuer à le remplir ultérieurement.
-feature: adaptive-forms
-topics: developing
-audience: developer,implementer
-doc-type: article
-activity: setup
+feature: Formulaires adaptatifs
+topic: Développement
+role: Developer
+type: Tutorial
 version: 6.3,6.4,6.5
-source-git-commit: a0e5a99408237c367ea075762ffeb3b9e9a5d8eb
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -29,7 +26,7 @@ Cet article décrit les étapes à suivre pour enregistrer et récupérer les do
 * [Démonstration des fonctionnalités](#capability-demo)
 * [Déployer sur votre serveur](#deploy-on-your-server)
 
-## Configurer la source de données {#Configure-Data-Source}
+## Configuration de la source de données {#Configure-Data-Source}
 
 Apache Sling Connection Pooled DataSource est configuré pour pointer vers la base de données qui va être utilisée pour stocker les données du formulaire adaptatif. La capture d’écran suivante montre la configuration de mon instance. Les propriétés suivantes peuvent être copiées et collées :
 
@@ -37,7 +34,7 @@ Apache Sling Connection Pooled DataSource est configuré pour pointer vers la ba
 
 * Classe de pilote JDBC : com.mysql.jdbc.Driver
 
-* URL de connexion JDBC : jdbc:mysql://localhost:3306/aemformstutorial
+* URL de connexion JDBC:jdbc:mysql://localhost:3306/aemformstutorial
 
 ![connectionpool](assets/storingdata.PNG)
 
@@ -211,7 +208,7 @@ public class StoreDataInDB extends SlingAllMethodsServlet {
 }
 ```
 
-## Créer un service OSGI pour récupérer des données {#create-osgi-service}
+## Création d’un service OSGI pour récupérer des données {#create-osgi-service}
 
 Le code suivant a été écrit pour récupérer les données de formulaire adaptatif stockées. Une requête simple est utilisée pour récupérer les données de formulaire adaptatif associées à un GUID donné. Les données récupérées sont ensuite renvoyées à l’application appelante. La même source de données créée à la première étape référencée dans ce code.
 
