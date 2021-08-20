@@ -2,26 +2,23 @@
 title: Création de bibliothèques clientes
 description: Créer une bibliothèque cliente pour gérer l’événement de clic du bouton "Enregistrer et quitter"
 feature: Formulaires adaptatifs
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+type: Tutorial
 version: 6.4,6.5
 kt: 6597
 thumbnail: 6597.pg
 topic: Développement
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 8%
+source-wordcount: '142'
+ht-degree: 2%
 
 ---
 
 # Créer une bibliothèque cliente
 
-Créez la [bibliothèque cliente](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/developing/introduction/clientlibs.html) qui inclura le code permettant d’appeler la méthode `doAjaxSubmitWithFileAttachment` de l’API `guideBridge` sur l’événement click du bouton identifié par la classe CSS **savebutton**.  Nous transmettons les données du formulaire adaptatif, `fileMap`, et `mobileNumber` au point de terminaison en écoutant `**/bin/storeafdatawithattachments`
+Créez la [bibliothèque cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html) qui inclura le code permettant d’appeler la méthode `doAjaxSubmitWithFileAttachment` de l’API `guideBridge` sur l’événement click du bouton identifié par la classe CSS **savebutton**.  Nous transmettons les données du formulaire adaptatif, `fileMap`, et `mobileNumber` au point de terminaison en écoutant `**/bin/storeafdatawithattachments`
 
 Une fois les données du formulaire enregistrées, un identifiant d’application unique est généré et présenté à l’utilisateur dans une boîte de dialogue. Lorsque la boîte de dialogue est désactivée, l’utilisateur est amené au formulaire, ce qui lui permet de récupérer le formulaire adaptatif enregistré à l’aide de l’ID d’application unique.
 
