@@ -1,20 +1,14 @@
 ---
 title: 'Renseigner le tableau de formulaire adaptatif '
-seo-title: Renseigner le tableau de formulaire adaptatif
 description: Renseigner le tableau de formulaire adaptatif avec les résultats des appels du service de modèle de données de formulaire
-seo-description: Renseigner le tableau de formulaire adaptatif avec les résultats des appels du service de modèle de données de formulaire
 feature: Formulaires adaptatifs
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Développement
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '240'
 ht-degree: 1%
 
 ---
