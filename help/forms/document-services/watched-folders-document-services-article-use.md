@@ -1,23 +1,15 @@
 ---
 title: Utilisation de dossiers de contrôle dans AEM Forms
-seo-title: Utilisation de dossiers de contrôle dans AEM Forms
 description: Configuration et utilisation des dossiers de contrôle dans AEM Forms
-seo-description: Configuration et utilisation des dossiers de contrôle dans AEM Forms
-uuid: 32c4bda2-363d-4294-925e-405a176f7f8d
 feature: Service Output
-topics: development
-audience: developer
-doc-type: article
-activity: implement
 version: 6.4,6.5
-discoiquuid: a40e2381-0dc8-4784-9b80-15e27b244035
 topic: Développement
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 21%
+source-wordcount: '428'
+ht-degree: 22%
 
 ---
 
