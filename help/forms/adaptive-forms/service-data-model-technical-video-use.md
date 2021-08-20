@@ -1,22 +1,14 @@
 ---
 title: Utilisation des modèles de données de service avec AEM Forms
-seo-title: Utilisation des modèles de données de service avec AEM Forms
 description: L’éditeur de règles d’AEM Forms adaptatif peut exploiter les services créés dans le modèle de données de formulaire.
-seo-description: L’éditeur de règles d’AEM Forms adaptatif peut exploiter les services créés dans le modèle de données de formulaire.
-uuid: fb4a331f-231a-4864-9325-6dceb288ad75
 feature: Forms adaptatif, modèle de données de formulaire
-topics: integrations
-audience: developer
-doc-type: technical video
-activity: setup
 version: 6.3,6.4,6.5
-discoiquuid: e3ff47c3-9ab3-41cb-83ba-38f3eb7b2299
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '52'
 ht-degree: 1%
 
 ---
