@@ -10,17 +10,17 @@ feature: Rechercher
 topic: Développement
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 10%
+source-wordcount: '899'
+ht-degree: 11%
 
 ---
 
 
 # Guide de mise en oeuvre de recherche simple{#simple-search-implementation-guide}
 
-La mise en oeuvre de la recherche simple est le matériel du **laboratoire Adobe Summit AEM Search Demystified**. Cette page contient les matériaux de ce laboratoire. Pour une visite guidée du laboratoire, consultez le classeur du laboratoire dans la section Présentation de cette page.
+L’implémentation de la recherche simple est le matériel de **laboratoire d’Adobe Summit AEM recherche Demystified**. Cette page contient les matériaux de ce laboratoire. Pour une visite guidée du laboratoire, consultez le classeur du laboratoire dans la section Présentation de cette page.
 
 ![Présentation de l’architecture de recherche](assets/l4080/simple-search-application.png)
 
@@ -72,12 +72,12 @@ La mise en oeuvre de la recherche simple est le matériel du **laboratoire Adobe
 * [Solution de chapitre 6](assets/l4080/l4080-chapter6.zip)
 * [Solution du chapitre 9](assets/l4080/l4080-chapter9.zip)
 
-## Matériaux référencés {#reference-materials}
+## Documents référencés {#reference-materials}
 
 * [Référentiel Github](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/master/simple-search-guide)
 * [Modèles Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Exportateur de modèles Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130)
-* [API QueryBuilder](https://docs.adobe.com/docs/en/aem/6-2/develop/search/querybuilder-api.html)
+* [API QueryBuilder](https://experienceleague.adobe.com/docs/?lang=fr)
 * [AEM module externe Chrome](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode)  ([page de documentation](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/))
 
 ## Corrections et suivi {#corrections-and-follow-up}
