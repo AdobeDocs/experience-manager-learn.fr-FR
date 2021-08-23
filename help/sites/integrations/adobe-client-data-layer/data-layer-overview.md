@@ -1,20 +1,15 @@
 ---
 title: Utilisation de la couche de données client Adobe avec les composants principaux AEM
 description: La couche de données client Adobe introduit une méthode standard pour collecter et stocker des données sur une expérience visiteur sur une page web, puis faciliter l’accès à ces données. La couche de données client Adobe est indépendante de la plate-forme, mais elle est entièrement intégrée aux composants principaux pour l’utilisation avec AEM.
-feature: core-component
-topics: integrations
-audience: developer
-doc-type: feature video
-activity: use
-version: cloud-service
-kt: 6261
-thumbnail: 41195.jpg
 topic: Intégrations
+feature: Adobe de la couche de données client, composants principaux
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 6261
+thumbnail: 41195.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '791'
 ht-degree: 8%
 
 ---
@@ -28,7 +23,7 @@ La couche de données client Adobe introduit une méthode standard pour collecte
 
 >[!NOTE]
 >
-> Souhaitez-vous activer la couche de données client Adobe sur votre site AEM ? [Voir les instructions ici](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
+> Souhaitez-vous activer la couche de données client Adobe sur votre site AEM ? [Voir les instructions ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation).
 
 ## Exploration de la couche de données
 
@@ -183,4 +178,4 @@ Ou découvrez comment [Personnaliser la couche de données client d’Adobe avec
 ## Ressources supplémentaires {#additional-resources}
 
 * [Documentation sur la couche de données client Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
-* [Utilisation de la couche de données client Adobe et de la documentation des composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [Utilisation de la couche de données client Adobe et de la documentation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
