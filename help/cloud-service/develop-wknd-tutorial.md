@@ -9,15 +9,15 @@ feature: AEM archétype de projet, composants principaux, éditeur de page, mod�
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 57%
+source-wordcount: '362'
+ht-degree: 55%
 
 ---
 
 
-# Prise en main du développement d’AEM Sites – Tutoriel WKND {#getting-started-developing-aem-sites-wknd-tutorial}
+# Prise en main du développement d’AEM Sites – Tutoriel WKND{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## Présentation {#overview}
 
@@ -31,9 +31,9 @@ L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un dévelo
 
 Le tutoriel est conçu pour fonctionner avec **AEM en tant que Cloud Service** et est rétrocompatible avec **AEM 6.5+** et **la version 6.4.2+**.
 
-**[Afficher le tutoriel ici!](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
+**[Afficher le tutoriel ici!](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**
 
-## Déploiement de WKND vers AEM en tant que Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
+## Déploiement de WKND sur AEM en tant que Cloud Service{#deploying-wknd-to-aem-as-a-cloud-service}
 
 Après avoir terminé le tutoriel WKND, regardez la vidéo ci-dessous pour une présentation de la manière de déployer le projet WKND vers AEM en tant que Cloud Service.
 
