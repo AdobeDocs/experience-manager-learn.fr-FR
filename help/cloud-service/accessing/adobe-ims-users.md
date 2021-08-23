@@ -1,21 +1,17 @@
 ---
 title: Adobe des utilisateurs IMS et des AEM
 description: Les utilisateurs nécessitant l’accès au service AEM Author sont gérés en tant qu’utilisateurs IMS Adobe dans le Admin Console d’Adobe. Découvrez ce que sont les utilisateurs IMS Adobes et comment ils sont accessibles et gérés dans Admin Console.
-feature: 'Utilisateurs et groupes '
-topics: authentication
 version: cloud-service
-activity: setup
-audience: administrator
-doc-type: feature video
-kt: 4997
-thumbnail: 39149.jpg
 topic: Administration, sécurité
+feature: Utilisateurs et groupes
 role: Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+kt: 4997
+thumbnail: 39149.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 16%
+source-wordcount: '177'
+ht-degree: 14%
 
 ---
 
@@ -35,5 +31,5 @@ Les utilisateurs nécessitant l’accès au service AEM Author sont gérés en t
 
 ## Ressources supplémentaires
 
-+ [Intégration d’utilisateurs dans la documentation Admin Console](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/ims-support.html#onboarding-users-in-admin-console)
++ [Intégration d’utilisateurs dans la documentation Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#onboarding-users-in-admin-console)
 + [Présentation de Adobe Admin Console Identity](https://helpx.adobe.com/fr/enterprise/using/identity.html)
