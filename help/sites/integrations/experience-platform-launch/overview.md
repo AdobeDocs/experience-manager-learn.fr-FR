@@ -11,10 +11,10 @@ thumbnail: 39090.jpg
 topic: Intégrations
 role: Developer
 level: Intermediate
-source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 15%
+source-wordcount: '134'
+ht-degree: 16%
 
 ---
 
@@ -31,6 +31,6 @@ Experience Platform Launch est la nouvelle plateforme de gestion des balises de 
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Intégrations Experience Platform à des applications Experience Cloud](https://docs.adobe.com/content/help/en/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
-* [Guide de l’utilisateur Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html)
-* [Implémentation d’Experience Cloud dans les sites web avec Launch](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html)
+* [Intégrations Experience Platform à des applications Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/integrations-with-experience-cloud-applications.html)
+* [Guide de l’utilisateur Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+* [Implémentation d’Experience Cloud dans les sites web avec Launch](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/index.html)
