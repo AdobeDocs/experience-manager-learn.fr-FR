@@ -10,9 +10,9 @@ version: 6.5
 topic: Développement
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '417'
 ht-degree: 7%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 7%
 
 Vous pouvez utiliser l’API Batch pour produire plusieurs communications interactives à partir d’un modèle. Le modèle est une communication interactive sans données. L’API Batch combine des données à un modèle afin de produire une communication interactive. L’API est utile pour la production en masse de communications interactives. Par exemple, les factures de téléphone, les relevés de carte de crédit pour plusieurs clients.
 
-[En savoir plus sur l’API de génération de lots](https://docs.adobe.com/content/help/en/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
+[En savoir plus sur l’API de génération de lots](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
 
 Cet article fournit des exemples de ressources pour générer des documents de communications interactives à l’aide de l’API Batch.
 
