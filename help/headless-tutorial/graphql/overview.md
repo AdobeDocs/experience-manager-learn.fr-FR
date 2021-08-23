@@ -1,13 +1,13 @@
 ---
 title: Prise en main d’AEM sans affichage - GraphQL
 description: Présentation des API et fonctionnalités GraphQL d’AEM.
-feature: Fragments de contenu, API
+feature: Fragments de contenu, API GraphQL, API
 topic: Sans affichage, gestion de contenu
 role: Developer
 level: Beginner
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '252'
 ht-degree: 1%
 
 ---
