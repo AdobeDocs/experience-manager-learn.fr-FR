@@ -1,26 +1,22 @@
 ---
 title: Personnalisation de la couche de données client Adobe avec des composants AEM
 description: Découvrez comment personnaliser la couche de données client Adobe avec du contenu provenant de composants d’AEM personnalisés. Découvrez comment utiliser les API fournies par AEM Core Components pour étendre et personnaliser la couche de données.
-feature: Couche de données client Adobe, composant principal
-topics: integrations
-audience: developer
-doc-type: tutorial
-activity: use
 version: cloud-service
-kt: 6265
-thumbnail: KT-6265.jpg
 topic: Intégrations
+feature: Adobe de la couche de données client, composants principaux
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 6265
+thumbnail: KT-6265.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2034'
+source-wordcount: '2028'
 ht-degree: 4%
 
 ---
 
 
-# Personnaliser la couche de données client Adobe avec les composants AEM {#customize-data-layer}
+# Personnalisation de la couche de données client Adobe avec des composants AEM {#customize-data-layer}
 
 Découvrez comment personnaliser la couche de données client Adobe avec du contenu provenant de composants d’AEM personnalisés. Découvrez comment utiliser les API fournies par [AEM les composants principaux pour étendre](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html) et personnaliser la couche de données.
 
@@ -40,11 +36,11 @@ Dans ce tutoriel, vous allez découvrir différentes options pour étendre la co
 
 Un **environnement de développement local** est nécessaire pour terminer ce tutoriel. Les captures d’écran et la vidéo sont capturées à l’aide de AEM as a Cloud Service SDK s’exécutant sur macOS. Les commandes et le code sont indépendants du système d’exploitation local, sauf indication contraire.
 
-**Vous découvrez AEM as a Cloud Service ?** Consultez le guide  [suivant pour configurer un environnement de développement local à l’aide du SDK AEM as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+**Vous découvrez AEM as a Cloud Service ?** Consultez le guide  [suivant pour configurer un environnement de développement local à l’aide du SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 
-**Vous découvrez AEM 6.5 ?** Consultez le guide  [suivant pour configurer un environnement de développement local](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+**Vous découvrez AEM 6.5 ?** Consultez le guide  [suivant pour configurer un environnement de développement local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr).
 
-## Téléchargez et déployez le site de référence WKND {#set-up-wknd-site}
+## Télécharger et déployer le site de référence WKND {#set-up-wknd-site}
 
 Ce tutoriel étend le composant signature sur le site de référence WKND. Cloner et installer la base de code WKND dans votre environnement local.
 
@@ -85,7 +81,7 @@ Ce tutoriel étend le composant signature sur le site de référence WKND. Clone
 
    Notez que le composant Byline n’est pas répertorié dans la couche de données.
 
-## Mettre à jour le modèle Sling de signature {#sling-model}
+## Mise à jour du modèle Sling de signature {#sling-model}
 
 Pour injecter des données sur le composant dans la couche de données, nous devons d’abord mettre à jour le modèle Sling du composant. Ensuite, mettez à jour l’interface Java de Byline et la mise en oeuvre du modèle Sling pour ajouter une nouvelle méthode `getData()`. Cette méthode contient les propriétés que nous voulons injecter dans la couche de données.
 
@@ -236,7 +232,7 @@ Un attribut de données spécial `data-cmp-data-layer` sur chaque composant AEM 
 
    Notez que les propriétés exposées sont les mêmes que celles ajoutées dans la balise `HashMap` du modèle Sling.
 
-## Ajouter un événement de clic {#click-event}
+## Ajout d’un événement Click {#click-event}
 
 La couche de données client Adobe est pilotée par un événement et l’un des événements les plus courants pour déclencher une action est l’événement `cmp:click` . Les composants principaux AEM facilitent l’enregistrement de votre composant à l’aide de l’élément de données : `data-cmp-clickable`.
 
@@ -429,7 +425,7 @@ Une classe utilitaire `DataLayerBuilder` existe pour effectuer la plus grande pa
    >
    > Si vous créez une couche de données avancée pour les objets réutilisés tout au long d’une mise en oeuvre, il est recommandé d’extraire les éléments de couche de données dans leurs propres objets Java spécifiques à la couche de données. Par exemple, les composants principaux de Commerce ont ajouté des interfaces pour `ProductData` et `CategoryData`, car ils peuvent être utilisés sur de nombreux composants dans une implémentation de Commerce. Pour plus d’informations, consultez [le code dans le référentiel aem-cif-core-components](https://github.com/adobe/aem-core-cif-components/tree/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/datalayer).
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Vous venez d’explorer quelques façons d’étendre et de personnaliser la couche de données client Adobe avec les composants AEM !
 
@@ -437,4 +433,4 @@ Vous venez d’explorer quelques façons d’étendre et de personnaliser la cou
 
 * [Documentation sur la couche de données client Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
 * [Intégration de la couche de données aux composants principaux](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md)
-* [Utilisation de la couche de données client Adobe et de la documentation des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/data-layer/overview.html)
+* [Utilisation de la couche de données client Adobe et de la documentation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)
