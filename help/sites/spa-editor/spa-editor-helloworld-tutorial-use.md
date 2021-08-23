@@ -1,29 +1,24 @@
 ---
 title: Développement avec AEM SPA Editor - Tutoriel Hello World
 description: AEM Éditeur SPA prend en charge la modification contextuelle d’une ou de plusieurs applications d’une seule page. Ce tutoriel présente le développement SPA à utiliser avec AEM SDK JS de l’éditeur SPA. Le tutoriel étend l’application We.Retail Journal en ajoutant un composant Hello World personnalisé. Les utilisateurs peuvent suivre le tutoriel à l’aide des structures React ou Angular.
-sub-product: sites, content-services
-feature: Éditeur de spa
-topics: development, single-page-applications
-audience: developer
-doc-type: tutorial
-activity: use
 version: 6.3, 6.4, 6.5
 topic: SPA
+feature: Éditeur de SPA
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3170'
 ht-degree: 3%
 
 ---
 
 
-# Développement avec AEM Éditeur SPA - Tutoriel Hello World {#developing-with-the-aem-spa-editor-hello-world-tutorial}
+# Développement avec AEM SPA Editor - Tutoriel Hello World {#developing-with-the-aem-spa-editor-hello-world-tutorial}
 
 >[!WARNING]
 >
-> Ce tutoriel est **obsolète**. Il est recommandé de procéder comme suit : [Prise en main de l’éditeur et de l’Angular d’SPA d’AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-angular-tutorial/overview.html) ou [Prise en main de l’éditeur d’ et de React](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-react-tutorial/overview.html)
+> Ce tutoriel est **obsolète**. Il est recommandé de procéder comme suit : [Prise en main de l’éditeur et de l’Angular d’SPA d’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html) ou [Prise en main de l’éditeur d’ et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
 AEM Éditeur SPA prend en charge la modification contextuelle d’une ou de plusieurs applications d’une seule page. Ce tutoriel présente le développement SPA à utiliser avec AEM SDK JS de l’éditeur SPA. Le tutoriel étend l’application We.Retail Journal en ajoutant un composant Hello World personnalisé. Les utilisateurs peuvent suivre le tutoriel à l’aide des structures React ou Angular.
 
@@ -134,7 +129,7 @@ L’objectif de ce tutoriel est d’étendre l’application We.Retail Journal a
    >
    > Si vous recevez une erreur lors de la génération, [assurez-vous que votre fichier settings.xml Maven comprend le référentiel d’artefacts Maven ](https://helpx.adobe.com/fr/experience-manager/kb/SetUpTheAdobeMavenRepository.html) d’Adobe.
 
-1. Accédez à:
+1. Accédez à :
 
    * [http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/react/en/home.html)
    * [http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html](http://localhost:4502/editor.html/content/we-retail-journal/angular/en/home.html)
@@ -165,7 +160,7 @@ SPA itérations de développement se produisent indépendamment d’AEM. Lorsque
 1. Le projet de SPA [**aem-clientlib-generator**](https://www.npmjs.com/package/aem-clientlib-generator) intègre le SPA compilé en tant que bibliothèque cliente d’un AEM dans le projet.
 1. Le projet AEM génère un module AEM, y compris le fichier de données compilé, ainsi que tout autre code d’ pris en charge.
 
-## Créer un composant AEM {#aem-component}
+## Création d’un composant AEM {#aem-component}
 
 **Persona : AEM Développeur**
 
@@ -298,7 +293,7 @@ Un composant AEM sera d’abord créé. Le composant AEM est responsable du rend
 
    ![Structure de composants déployée dans CRXDE Lite](assets/spa-editor-helloworld-tutorial-use/updated-component-withdialogs.png)
 
-## Créer un modèle Sling {#create-sling-model}
+## Création d’un modèle Sling {#create-sling-model}
 
 **Persona : AEM Développeur**
 
@@ -308,7 +303,7 @@ Un [!DNL Sling Model] est ensuite créé pour sauvegarder le composant [!DNL Hel
 
 >[!NOTE]
 >
->Il est recommandé aux développeurs d’utiliser [AEM les composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) dans la mesure du possible. Entre autres fonctionnalités, les composants principaux fournissent [!DNL Sling Models] une sortie JSON &quot;SPA&quot;, ce qui permet aux développeurs de se concentrer davantage sur la présentation frontale.
+>Il est recommandé aux développeurs d’utiliser [AEM les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) dans la mesure du possible. Entre autres fonctionnalités, les composants principaux fournissent [!DNL Sling Models] une sortie JSON &quot;SPA&quot;, ce qui permet aux développeurs de se concentrer davantage sur la présentation frontale.
 
 1. Dans l’éditeur de votre choix, ouvrez le projet **we-retail-journal-commons** ( `<src>/aem-sample-we-retail-journal/bundles/commons`).
 1. Dans le package `com.adobe.cq.sample.spa.commons.impl.models` :
@@ -569,7 +564,7 @@ Ensuite, le composant React sera créé. Ouvrez le module **react-app** ( `<src>
    > **app.** jsis l’application React groupée. Le code n’est plus lisible à l’oeil. La commande `npm run build` a déclenché une version optimisée qui génère du code JavaScript compilé pouvant être interprété par les navigateurs modernes.
 
 
-## Créer un composant d’Angular {#angular-component}
+## Création d’un composant d’Angular {#angular-component}
 
 **Persona : Développeur front-end**
 
