@@ -1,18 +1,14 @@
 ---
 title: Améliorations de la traduction dans AEM
 description: AEM structure de traduction robuste permet AEM contenu d’être traduit en toute simplicité par les fournisseurs de traduction pris en charge. Découvrez les dernières améliorations.
-feature: multi-site-manager, language-copy
-topics: localization, authoring, content-architecture
-audience: author, marketer, developer
-doc-type: feature video
-activity: use
 version: 6.3, 6.4, 6.5
 topic: Localisation
+feature: Gestionnaire de sites multiples, copie de langue
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '340'
 ht-degree: 5%
 
 ---
