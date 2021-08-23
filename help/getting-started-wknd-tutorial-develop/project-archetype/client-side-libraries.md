@@ -10,17 +10,17 @@ role: Developer
 level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3299'
-ht-degree: 4%
+source-wordcount: '3285'
+ht-degree: 3%
 
 ---
 
 
 # Bibliothèques côté client et processus front-end {#client-side-libraries}
 
-Découvrez comment les bibliothèques côté client ou clientlibs sont utilisées pour déployer et gérer CSS et JavaScript pour une implémentation de sites Adobe Experience Manager (AEM). Ce tutoriel explique également comment le module [ui.frontend](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/uifrontend.html), un projet [webpack](https://webpack.js.org/) découplé, peut être intégré au processus de génération de bout en bout.
+Découvrez comment les bibliothèques côté client ou clientlibs sont utilisées pour déployer et gérer CSS et JavaScript pour une implémentation de sites Adobe Experience Manager (AEM). Ce tutoriel explique également comment le module [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html), un projet [webpack](https://webpack.js.org/) découplé, peut être intégré au processus de génération de bout en bout.
 
 ## Prérequis {#prerequisites}
 
@@ -81,7 +81,7 @@ Les bibliothèques côté client offrent un mécanisme d’organisation et de ge
 1. Gérer les dépendances sur les structures tierces de manière organisée
 1. Réduisez le nombre de requêtes côté client en concaténant CSS/JS en une ou deux requêtes.
 
-Vous trouverez plus d’informations sur l’utilisation des [bibliothèques côté client ici.](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/developing/introduction/clientlibs.html)
+Vous trouverez plus d’informations sur l’utilisation des [bibliothèques côté client ici.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)
 
 Les bibliothèques côté client présentent certaines limites. Le plus notable est une prise en charge limitée des langages front-end populaires tels que Sass, LESS et TypeScript. Dans le tutoriel, nous allons examiner comment le module **ui.frontend** peut vous aider à résoudre ce problème.
 
@@ -89,7 +89,7 @@ Déployez la base de code de démarrage vers une instance d’AEM locale et acc�
 
 ## Organisation des bibliothèques côté client {#organization}
 
-Nous allons ensuite explorer l’organisation des bibliothèques clientes générées par l’[archétype de projet AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html).
+Nous allons ensuite explorer l’organisation des bibliothèques clientes générées par l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html).
 
 ![Organisation de bibliothèque cliente de haut niveau](./assets/client-side-libraries/high-level-clientlib-organization.png)
 
@@ -117,9 +117,9 @@ Nous allons ensuite explorer l’organisation des bibliothèques clientes géné
 
 1. Observez que `clientlib-site` et `clientlib-dependencies` sont ignorés du contrôle source. Cela se fait par conception, car ils seront générés au moment de la création par le module `ui.frontend`.
 
-## Mettre à jour les styles de base {#base-styles}
+## Mise à jour des styles de base {#base-styles}
 
-Mettez ensuite à jour les styles de base définis dans le module **[ui.frontend](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html)**. Les fichiers du module `ui.frontend` génèrent les bibliothèques `clientlib-site` et `clientlib-dependecies` qui contiennent le thème Site et toutes les dépendances tierces.
+Mettez ensuite à jour les styles de base définis dans le module **[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)**. Les fichiers du module `ui.frontend` génèrent les bibliothèques `clientlib-site` et `clientlib-dependecies` qui contiennent le thème Site et toutes les dépendances tierces.
 
 Les bibliothèques côté client présentent certaines limites en ce qui concerne la prise en charge de langages tels que [Sass](https://sass-lang.com/) ou [TypeScript](https://www.typescriptlang.org/). Il existe un certain nombre d’outils open source tels que [NPM](https://www.npmjs.com/) et [webpack](https://webpack.js.org/) qui accélèrent et optimisent le développement front-end. L’objectif du module **ui.frontend** est de pouvoir utiliser ces outils pour gérer la majorité des fichiers source front-end.
 
@@ -200,7 +200,7 @@ L’archétype de projet AEM configure automatiquement cette intégration. Ensui
 
    >[!NOTE]
    >
-   >Il existe également un profil `npm run prod` qui minimise les éléments JS et CSS. Il s’agit de la compilation standard chaque fois que la version de webpack est déclenchée via Maven. Vous trouverez plus d’informations sur le module [ui.frontend ici](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html).
+   >Il existe également un profil `npm run prod` qui minimise les éléments JS et CSS. Il s’agit de la compilation standard chaque fois que la version de webpack est déclenchée via Maven. Vous trouverez plus d’informations sur le module [ui.frontend ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
 1. Inspect le fichier `site.css` sous `ui.frontend/dist/clientlib-site/site.css`. Il s’agit de la page CSS compilée basée sur les fichiers source Sass.
 
@@ -315,9 +315,9 @@ Examinons ensuite la manière dont les bibliothèques clientes sont référencé
 
    >[!WARNING]
    >
-   >Il est essentiel, du côté publication, que les bibliothèques clientes **ne soient pas** servies depuis **/apps**, car ce chemin d’accès doit être limité pour des raisons de sécurité à l’aide de la section [Filtre de Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section). La [propriété allowProxy](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) de la bibliothèque cliente garantit que les fichiers CSS et JS sont diffusés à partir de **/etc.clientlibs**.
+   >Il est essentiel, du côté publication, que les bibliothèques clientes **ne soient pas** servies depuis **/apps**, car ce chemin d’accès doit être limité pour des raisons de sécurité à l’aide de la section [Filtre de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#example-filter-section). La [propriété allowProxy](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) de la bibliothèque cliente garantit que les fichiers CSS et JS sont diffusés à partir de **/etc.clientlibs**.
 
-## Webpack DevServer - Static Markup {#webpack-dev-static}
+## Webpack DevServer - Markup statique {#webpack-dev-static}
 
 Dans les deux exercices précédents, nous avons pu mettre à jour plusieurs fichiers Sass dans le module **ui.frontend** et, par un processus de génération, voir ces modifications répercutées dans AEM. Ensuite, nous allons étudier des techniques qui utilisent [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) pour développer rapidement nos styles front-end par rapport à **static** HTML.
 
@@ -414,7 +414,7 @@ Une autre technique consiste à demander à Node.js de surveiller les modificati
 
    Là encore, le module `ui.frontend` est compilé, transformé en bibliothèques clientes et déployé dans AEM via le module `ui.apps`. Cependant, cette fois, Maven accomplit tout pour nous.
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, la page Article comporte désormais des styles cohérents qui correspondent à la marque WKND et vous êtes familiarisé avec le module **ui.frontend** .
 
