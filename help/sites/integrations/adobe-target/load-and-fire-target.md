@@ -12,9 +12,9 @@ thumbnail: 41243.jpg
 topic: Intégrations
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '615'
 ht-degree: 5%
 
 ---
@@ -30,7 +30,7 @@ Découvrez comment charger, transférer des paramètres à une requête de page 
 
 La couche de données client Adobe est une couche de données pilotée par les événements. Lorsque la couche de données Page AEM est chargée, elle déclenche un événement `cmp:show` . Dans la vidéo, la règle `Launch Library Loaded` est appelée à l’aide d’un événement personnalisé. Vous trouverez ci-dessous les fragments de code utilisés dans la vidéo pour l’événement personnalisé ainsi que pour les éléments de données.
 
-### Page personnalisée Affichée Événement{#page-event}
+### Événement Page vue personnalisée{#page-event}
 
 ![Configuration d’événement et code personnalisé de la page affichée](assets/load-and-fire-target-call.png)
 
@@ -163,5 +163,5 @@ window.targetGlobalSettings = {
 + [Documentation sur la couche de données client Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
 + [Débogueur Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
 + [Débogueur Adobe Experience Cloud - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
-+ [Utilisation de la couche de données client Adobe et de la documentation des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/data-layer/overview.html)
-+ [Présentation du débogueur Adobe Experience Platform](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html)
++ [Utilisation de la couche de données client Adobe et de la documentation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr)
++ [Présentation du débogueur Adobe Experience Platform](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)
