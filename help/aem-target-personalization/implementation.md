@@ -7,7 +7,7 @@ feature: Fragments d’expérience
 topic: Personnalisation
 role: Developer
 level: Intermediate
-source-git-commit: e82cc5e5de6db33e82b7c71c73bb606f16b98ea6
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 5%
@@ -20,7 +20,7 @@ ht-degree: 5%
 Dans cette section, nous allons discuter de la configuration d’Adobe Experience Manager avec Adobe Target pour différents scénarios. Selon votre scénario et les exigences de votre organisation.
 
 * **Ajout d’une bibliothèque JavaScript Adobe Target (obligatoire pour tous les scénarios)**
-Pour les sites hébergés sur AEM, vous pouvez ajouter des bibliothèques Target à votre site à l’aide de  [Launch](https://experienceleague.adobe.com/docs/launch/using/home.html). Launch offre un moyen simple de déployer et de gérer toutes les balises nécessaires pour offrir des expériences client pertinentes.
+Pour les sites hébergés sur AEM, vous pouvez ajouter des bibliothèques Target à votre site à l’aide de  [Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). Launch offre un moyen simple de déployer et de gérer toutes les balises nécessaires pour offrir des expériences client pertinentes.
 * **Ajoutez les Cloud Services Adobe Target (requis pour le scénario Fragments d’expérience)**
  Pour les clients AEM qui souhaitent utiliser les offres de fragments d’expérience pour créer une activité dans Adobe Target, vous devez intégrer Adobe Target à AEM à l’aide des Cloud Services hérités. Cette intégration est nécessaire pour transmettre les fragments d’expérience d’AEM à Target sous forme d’offres HTML/JSON et pour que les offres restent synchronisées avec AEM. 
 *Cette intégration est requise pour la mise en oeuvre du scénario 1.*
@@ -51,7 +51,7 @@ Pour les sites hébergés sur AEM, vous pouvez ajouter des bibliothèques Target
 >
 > Le client doit être configuré avec l’Experience Platform Launch et l’Adobe I/O à partir de la [prise en charge de l’Adobe](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) ou contacter votre administrateur système.
 
-### Configuration d’AEM{#set-up-aem}
+### Configuration des AEM{#set-up-aem}
 
 AEM instance de création et de publication est nécessaire pour terminer ce tutoriel. L’instance d’auteur est en cours d’exécution sur `http://localhost:4502` et l’instance de publication est en cours d’exécution sur `http://localhost:4503`. Pour plus d’informations, voir : [Configuration d’un environnement de développement d’AEM local](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/local-aem-dev-environment-article-setup.html).
 
