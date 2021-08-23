@@ -2,18 +2,13 @@
 title: Développer pour le partage des ressources cross-origin (CORS) avec des AEM
 description: Un court exemple d’utilisation de CORS pour accéder au contenu AEM à partir d’une application web externe via du code JavaScript côté client.
 version: 6.3, 6,4, 6.5
-sub-product: foundation, content-services, sites
-topics: security, development, content-delivery
-activity: develop
-audience: developer
-doc-type: tutorial
-topic: Sécurité
+topic: Sécurité et développement
 role: Developer
 level: Beginner
-feature: null
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+feature: Sécurité
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -96,7 +91,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 />
 ```
 
-## Configuration de Dispatcher {#dispatcher-configuration}
+## Configuration du Dispatcher {#dispatcher-configuration}
 
 Pour permettre la mise en cache et la diffusion des en-têtes CORS sur le contenu mis en cache, ajoutez la [/clientheaders configuration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) suivante à tous les fichiers `dispatcher.any` de publication AEM pris en charge.
 
@@ -119,7 +114,7 @@ Pour permettre la mise en cache et la diffusion des en-têtes CORS sur le conten
 
 Il est probable que l’effacement complet du cache soit nécessaire pour s’assurer que les en-têtes sont correctement mis en cache dans la requête suivante après une mise à jour de la configuration `/clientheaders`.
 
-## Documents complémentaires {#supporting-materials}
+## Documents annexes {#supporting-materials}
 
 * [AEM fabrique de configuration OSGi pour les stratégies de partage des ressources cross-origin](http://localhost:4502/system/console/configMgr/com.adobe.granite.cors.impl.CORSPolicyImpl)
 * [SimpleHTTPServer pour macOS](https://itunes.apple.com/us/app/simple-http-server/id441002840?mt=12)
