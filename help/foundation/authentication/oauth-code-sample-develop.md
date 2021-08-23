@@ -2,18 +2,14 @@
 title: Développement de périmètres OAuth dans AEM
 description: Adobe Experience Manager des étendues OAuth extensibles permet un contrôle d’accès des ressources provenant d’une application cliente autorisée par un utilisateur final. Le diagramme ci-dessous illustre le flux de requêtes dans le contexte d’AEM.
 version: 6.3, 6.4, 6.5
-feature: 'Utilisateurs et groupes '
-topics: authentication, security
-activity: develop
-audience: developer
-doc-type: code
+feature: Utilisateurs et groupes
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
