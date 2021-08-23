@@ -12,9 +12,9 @@ thumbnail: KT-6282.jpg
 topic: Intégrations, développement
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 2efb7050b0b0c783c5f34c1f2e375cf21fa7a6cd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Les agents d’Asset compute implémentent le contrat d’API de travail du SDK 
 1. Le programme de travail Asset compute enregistre les données binaires du nouveau rendu dans `rendition.path`.
 1. Les données binaires écrites dans `rendition.path` sont transportées via le SDK Asset compute vers le service d’auteur AEM et exposées sous la forme __(4a)__ d’un rendu texte et __(4b)__ conservées dans le noeud de métadonnées de la ressource.
 
-Le diagramme ci-dessus exprime les préoccupations des développeurs Assets compute et le flux logique vers l’appel des employés d’Asset compute. Pour les curieux, les [détails internes de l’exécution d’Asset compute](https://docs.adobe.com/content/help/en/asset-compute/using/extend/custom-application-internals.html) sont disponibles, mais seuls les contrats d’API du SDK d’Asset compute public peuvent être dépendants.
+Le diagramme ci-dessus exprime les préoccupations des développeurs Assets compute et le flux logique vers l’appel des employés d’Asset compute. Pour les curieux, les [détails internes de l’exécution d’Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html) sont disponibles, mais seuls les contrats d’API du SDK d’Asset compute public peuvent être dépendants.
 
 ## Anatomie d&#39;un travailleur
 
