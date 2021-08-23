@@ -12,10 +12,10 @@ thumbnail: kt-5352.jpg
 topic: Migration
 role: Architect, Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 16%
+source-wordcount: '82'
+ht-degree: 4%
 
 ---
 
@@ -28,4 +28,4 @@ L’outil de transfert de contenu est la méthode recommandée pour migrer le co
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Présentation de l’outil de transfert de contenu](https://docs.adobe.com/content/help/fr/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
+* [Présentation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)
