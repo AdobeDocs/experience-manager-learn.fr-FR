@@ -12,9 +12,9 @@ thumbnail: KT-5802.jpg
 topic: Intégrations, développement
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1031'
 ht-degree: 3%
 
 ---
@@ -148,7 +148,7 @@ Vous trouverez ci-dessous diverses ressources d’Adobe qui fournissent des info
 
 ### Documentation
 
-+ [Documentation d’Asset compute Service](https://docs.adobe.com/content/help/fr-FR/asset-compute/using/extend/understand-extensibility.html)
++ [Documentation d’Asset compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=fr)
 + [Fichier Lisez-moi de l’outil de développement Asset compute](https://github.com/adobe/asset-compute-devtool)
 + [Exemples de traitement d’Asset compute](https://github.com/adobe/asset-compute-example-workers)
 
