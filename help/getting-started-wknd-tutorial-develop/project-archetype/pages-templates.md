@@ -12,9 +12,9 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3106'
+source-wordcount: '3100'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Consultez le code de ligne de base sur lequel le tutoriel s’appuie :
 
 Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd/tree/pages-templates/solution) ou extraire le code localement en passant à la branche `tutorial/pages-templates-solution`.
 
-## Intention
+## Objectif
 
 1. Inspect une conception de page créée dans Adobe XD et la mappez aux composants principaux.
 1. Découvrez les détails des modèles modifiables et comment les stratégies peuvent être utilisées pour appliquer un contrôle granulaire du contenu de la page.
@@ -159,7 +159,7 @@ Créez ensuite un modèle dans AEM qui correspond à la structure des maquettes.
 
 ## Mise à jour de l’en-tête et du pied de page avec les fragments d’expérience {#experience-fragments}
 
-Une pratique courante lors de la création de contenu global, tel qu’un en-tête ou un pied de page, consiste à utiliser un [fragment d’expérience](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Les fragments d’expérience permettent aux utilisateurs de combiner plusieurs composants afin de créer un seul composant pouvant faire référence. Les fragments d’expérience ont l’avantage de prendre en charge la gestion multisite et la [localisation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
+Une pratique courante lors de la création de contenu global, tel qu’un en-tête ou un pied de page, consiste à utiliser un [fragment d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html). Les fragments d’expérience permettent aux utilisateurs de combiner plusieurs composants afin de créer un seul composant pouvant faire référence. Les fragments d’expérience ont l’avantage de prendre en charge la gestion multisite et la [localisation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=en#localized-site-structure).
 
 L’archétype de projet AEM a généré un en-tête et un pied de page. Ensuite, mettez à jour les fragments d’expérience pour qu’ils correspondent aux maquettes. Suivez les étapes de la vidéo ci-dessous :
 
@@ -261,7 +261,7 @@ Utilisez l’outil CRXDE-Lite sur une instance d’AEM locale pour afficher la s
 
    Notez qu’il n’existe que 2 scripts HTL, `customfooterlibs.html` et `customheaderlibs.html` sous le composant de page. *Alors, comment ce composant effectue-t-il le rendu de la page ?*
 
-   La propriété `sling:resourceSuperType` pointe vers `core/wcm/components/page/v2/page`. Cette propriété permet au composant de page de WKND d’hériter de **all** des fonctionnalités du composant de page des composants principaux. Il s’agit du premier exemple d’un élément appelé [Modèle de composant proxy](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Vous trouverez plus d’informations[ ici.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html).
+   La propriété `sling:resourceSuperType` pointe vers `core/wcm/components/page/v2/page`. Cette propriété permet au composant de page de WKND d’hériter de **all** des fonctionnalités du composant de page des composants principaux. Il s’agit du premier exemple d’un élément appelé [Modèle de composant proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Vous trouverez plus d’informations[ ici.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
 
 1. Inspect d’un autre composant dans les composants WKND, le composant `Breadcrumb` situé à l’adresse : `/apps/wknd/components/breadcrumb`. Notez que la même propriété `sling:resourceSuperType` est disponible, mais qu’elle pointe cette fois vers `core/wcm/components/breadcrumb/v2/breadcrumb`. Voici un autre exemple d’utilisation du modèle de composant proxy pour inclure un composant principal. En fait, tous les composants de la base de code WKND sont des proxies des composants principaux d’AEM (à l’exception de notre célèbre composant HelloWorld). Il est recommandé d’essayer de réutiliser autant de fonctionnalités que possible des composants principaux *avant* d’écrire du code personnalisé.
 
@@ -360,7 +360,7 @@ Les étapes suivantes s’effectuent à l’aide de l’IDE VSCode à l’aide d
    >
    > Afin d’assurer des déploiements cohérents pour le site de référence WKND, certaines branches du projet sont configurées de sorte que `ui.content` écrasent toute modification dans le JCR. C’est par conception, c’est-à-dire pour les branches de solution, puisque le code/les styles seront écrits pour des stratégies spécifiques.
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous venez de créer un modèle et une page avec Adobe Experience Manager Sites.
 
