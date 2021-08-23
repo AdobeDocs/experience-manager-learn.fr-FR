@@ -1,22 +1,17 @@
 ---
 title: Configuration rapide - Prise en main d’AEM sans affichage - GraphQL
 description: Prise en main d’Adobe Experience Manager (AEM) et de GraphQL. Installez le SDK AEM, ajoutez un exemple de contenu et déployez une application qui consomme du contenu d’AEM à l’aide de ses API GraphQL. Découvrez comment AEM alimente les expériences omnicanal.
-sub-product: sites
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
-feature: Fragments de contenu, API GraphQL
+feature: Fragments de contenu,API GraphQL
 topic: Sans affichage, gestion de contenu
 role: Developer
 level: Beginner
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1829'
 ht-degree: 4%
 
 ---
@@ -73,7 +68,7 @@ Ce tutoriel utilise [AEM as a Cloud Service SDK](https://experienceleague.adobe.
 1. Au bout de quelques minutes, l’installation de l’instance AEM se termine et une nouvelle fenêtre du navigateur doit s’ouvrir à l’adresse [http://localhost:4502](http://localhost:4502).
 1. Connectez-vous avec le nom d’utilisateur `admin` et le mot de passe `admin`.
 
-## Installer des exemples de contenu et des points d’entrée GraphQL {#wknd-site-content-endpoints}
+## Installation d’exemples de contenu et de points d’entrée GraphQL {#wknd-site-content-endpoints}
 
 Un exemple de contenu du **site de référence WKND** sera installé pour accélérer le tutoriel. Le WKND est une marque fictive de style de vie, souvent utilisée conjointement avec la formation AEM.
 
@@ -116,7 +111,7 @@ Le site de référence WKND comprend les configurations nécessaires pour expose
 >
 > Si vous utilisez un environnement de Cloud Service, reportez-vous à la documentation pour savoir comment déployer une base de code telle que le site de référence WKND vers un environnement de Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#deploying).[
 
-## Installez l’exemple d’application{#sample-app}
+## Installation de l’exemple d’application{#sample-app}
 
 L’un des objectifs de ce tutoriel consiste à montrer comment utiliser AEM contenu d’une application externe à l’aide des API GraphQL. Ce tutoriel utilise un exemple d’application React partiellement terminé pour accélérer le tutoriel. Les mêmes leçons et concepts s’appliquent aux applications créées avec iOS, Android ou toute autre plateforme. L’application React est intentionnellement simple, afin d’éviter toute complexité inutile ; il ne s’agit pas d’une mise en oeuvre de référence.
 
@@ -210,7 +205,7 @@ Maintenant que l’application React est en cours d’exécution, effectuez une 
    >
    > L’outil GraphiQL et l’API GraphQL sont [détaillés plus loin dans le tutoriel](./explore-graphql-api.md).
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous disposez désormais d’une application externe qui consomme AEM contenu avec GraphQL. N’hésitez pas à examiner le code dans l’application React et à continuer à essayer de modifier les fragments de contenu existants.
 
@@ -218,7 +213,7 @@ Félicitations, vous disposez désormais d’une application externe qui consomm
 
 Dans le chapitre suivant, [Définition des modèles de fragment de contenu](content-fragment-models.md), apprenez à modéliser le contenu et à créer un schéma avec des **modèles de fragment de contenu**. Vous allez passer en revue les modèles existants et créer un nouveau modèle. Vous découvrirez également les différents types de données qui peuvent être utilisés pour définir un schéma dans le cadre du modèle.
 
-## (Bonus) Configuration de la norme CORS {#cors-config}
+## (bonus) Configuration de la norme CORS {#cors-config}
 
 AEM, étant sécurisé par défaut, bloque les demandes d’origine croisée, empêchant les applications non autorisées de se connecter à son contenu et de le faire apparaître.
 
