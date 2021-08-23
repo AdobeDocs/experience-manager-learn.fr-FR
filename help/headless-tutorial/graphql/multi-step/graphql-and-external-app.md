@@ -1,22 +1,17 @@
 ---
 title: Requête AEM à l’aide de GraphQL à partir d’une application externe - Prise en main d’AEM sans affichage - GraphQL
 description: Prise en main d’Adobe Experience Manager (AEM) et de GraphQL. Explorez AEM API GraphQL à l’aide d’un exemple d’application WKND GraphQL React. Découvrez comment cette application externe effectue des appels GraphQL pour AEM d’alimenter son expérience. Découvrez comment gérer les erreurs de base.
-sub-product: ressources
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6716
 thumbnail: KT-6716.jpg
-feature: Fragments de contenu, API GraphQL
+feature: Fragments de contenu,API GraphQL
 topic: Sans affichage, gestion de contenu
 role: Developer
 level: Beginner
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1403'
 ht-degree: 1%
 
 ---
@@ -344,7 +339,7 @@ GraphQL est fortement typé et peut donc renvoyer des messages d’erreur utiles
 
 1. Revenez à `Adventures.js` et annulez la modification de la requête, pour rétablir l’état correct de l’application.
 
-## Félicitations ! {#congratulations}
+## Félicitations !{#congratulations}
 
 Félicitations ! Vous avez exploré avec succès le code de l’exemple d’application WKND GraphQL React et l’avez mis à jour pour utiliser des requêtes GraphQL paramétrées et filtrées afin de répertorier les aventures par activité. Vous avez également eu la possibilité d’explorer une gestion des erreurs de base.
 
