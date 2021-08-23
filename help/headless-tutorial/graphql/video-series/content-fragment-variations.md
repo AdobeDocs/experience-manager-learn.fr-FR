@@ -1,18 +1,17 @@
 ---
 title: Variations de fragments de contenu
 description: Découvrez comment créer des variantes de fragments de contenu et explorez certains cas d’utilisation courants.
-sub-product: ressources
 version: cloud-service
 topic: Sans affichage, gestion de contenu
-feature: Fragments de contenu, API GraphQL
+feature: Fragments de contenu,API GraphQL
 role: Developer
 level: Beginner
 kt: 7874
 thumbnail: 333295.jpg
-source-git-commit: 1853960cce1e17ade43e4b2d7b521f63c4d04d71
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 1%
+source-wordcount: '86'
+ht-degree: 4%
 
 ---
 
