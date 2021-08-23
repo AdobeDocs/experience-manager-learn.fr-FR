@@ -5,10 +5,10 @@ description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager S
 seo-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Sites
 sub-product: sites, content-services
 topic: Gestion de contenu
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 36%
+source-wordcount: '357'
+ht-degree: 28%
 
 ---
 
@@ -44,11 +44,11 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion de l’expé
 <table>
 <tr>
   <td>
-    <a href="https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
       <img alt="Prise en main du développement AEM Sites – Tutoriel WKND" src="./assets/aem-wknd-tutorial.png" />
     </a>
     <div>
-      <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html">
     <strong>Prise en main d’AEM Sites</strong>
     </a>
     </div>
@@ -57,11 +57,11 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion de l’expé
     <p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/fr/experience-manager-learn/getting-started-with-aem-headless/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
     <img alt="Prise en main d’AEM sans affichage" src="./assets/aem-headless-tutorial.png" />
     </a>
     <div>
-    <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-with-aem-headless/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
     <strong>Prise en main d’AEM sans affichage</strong>
     </a>
     </div>
@@ -70,11 +70,11 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion de l’expé
     </p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-react-tutorial/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
       <img alt="Prise en main d’AEM SPA Editor" src="./assets/aem-wknd-spa-editor-tutorial.png" />
     </a>
      <div>
-      <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html">
         <strong>Prise en main d’AEM SPA Editor</strong>
       </a>
     </div>
@@ -87,7 +87,7 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion de l’expé
 
 ## Ressources supplémentaires
 
-* [Experience League - Explorer les AEM](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
+* [Experience League - Explorer AEM](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager)
 * [Documentation sur la création AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/user-guide.html)
 * [Documentation sur le développement d’AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html)
 * [Documentation sur l’administration AEM Sites](https://helpx.adobe.com/experience-manager/6-5/sites/administering/user-guide.html)
