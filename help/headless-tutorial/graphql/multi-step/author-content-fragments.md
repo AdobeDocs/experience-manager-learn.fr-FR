@@ -1,28 +1,23 @@
 ---
 title: Création de fragments de contenu - Prise en main d’AEM sans affichage - GraphQL
 description: Prise en main d’Adobe Experience Manager (AEM) et de GraphQL. Créez et modifiez un fragment de contenu en fonction d’un modèle de fragment de contenu. Découvrez comment créer des variantes de fragments de contenu.
-sub-product: ressources
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6713
 thumbnail: 22451.jpg
-feature: Fragments de contenu, API GraphQL
+feature: Fragments de contenu,API GraphQL
 topic: Sans affichage, gestion de contenu
 role: Developer
 level: Beginner
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '791'
 ht-degree: 3%
 
 ---
 
 
-# Créer un fragment de contenu {#authoring-content-fragments}
+# Création de fragments de contenu {#authoring-content-fragments}
 
 Dans ce chapitre, vous allez créer et modifier un fragment de contenu en fonction du [nouveau modèle de fragment de contenu du contributeur](./content-fragment-models.md). Vous apprendrez également à créer des variantes de fragments de contenu.
 
@@ -41,7 +36,7 @@ Il s’agit d’un tutoriel en plusieurs parties qui suppose que les étapes dé
 
 La vidéo ci-dessus donne un aperçu général de la création de fragments de contenu.
 
-## Créer un fragment de contenu {#create-content-fragment}
+## Création d’un fragment de contenu {#create-content-fragment}
 
 Dans le chapitre précédent, [Définition des modèles de fragment de contenu](./content-fragment-models.md), un modèle **Contributeur** a été créé. Créez un fragment de contenu à l’aide de ce modèle.
 
@@ -122,7 +117,7 @@ Répétez les étapes décrites dans la section [Création d’un fragment de co
 
    Vous devez maintenant avoir deux fragments **Contributeurs**.
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous venez de créer plusieurs fragments de contenu et d’en créer une variante.
 
