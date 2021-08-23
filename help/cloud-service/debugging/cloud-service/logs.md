@@ -12,10 +12,10 @@ thumbnail: kt-5432.jpg
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: e2473a1584ccf315fffe5b93cb6afaed506fdbce
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1002'
+ht-degree: 3%
 
 ---
 
@@ -72,7 +72,7 @@ Seul AEM Publish Dispatcher fournit les journaux du serveur web Apache et de Dis
    + Évaluation: `WARN`
    + Production : `ERROR`
 
-## Cloud Manager{#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 Adobe Cloud Manager permet le téléchargement des journaux par jour, via l’action Télécharger les journaux d’un environnement.
 
@@ -185,9 +185,9 @@ La définition du niveau de journalisation le plus approprié pour chaque type d
 
 ### Variables spécifiques à l’environnement pour définir les niveaux de journal Java
 
-Au lieu de définir des niveaux de journal Java bien connus et statiques pour chaque environnement, vous pouvez utiliser AEM en tant que [variables spécifiques à l’environnement](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values) pour paramétrer les niveaux de journal, ce qui permet de modifier dynamiquement les valeurs par le biais de l’[Adobe I/O de l’interface de ligne de commande avec le module externe Cloud Manager](#aio-cli).
+Au lieu de définir des niveaux de journal Java bien connus et statiques pour chaque environnement, vous pouvez utiliser AEM en tant que [variables spécifiques à l’environnement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values) pour paramétrer les niveaux de journal, ce qui permet de modifier dynamiquement les valeurs par le biais de l’[Adobe I/O de l’interface de ligne de commande avec le module externe Cloud Manager](#aio-cli).
 
-Cela nécessite la mise à jour des configurations OSGi de journalisation pour utiliser les espaces réservés de variable spécifiques à l’environnement. [Les ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) valeurs par défaut des niveaux de journal doivent être définies conformément aux recommandations [ ](#log-levels)Adobe. Par exemple :
+Cela nécessite la mise à jour des configurations OSGi de journalisation pour utiliser les espaces réservés de variable spécifiques à l’environnement. [Les ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) valeurs par défaut des niveaux de journal doivent être définies conformément aux recommandations [ ](#log-levels)Adobe. Par exemple :
 
 `/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
@@ -200,8 +200,8 @@ Cela nécessite la mise à jour des configurations OSGi de journalisation pour u
 
 Cette approche présente des inconvénients qui doivent être pris en compte :
 
-+ [Un nombre limité de variables d’environnement sont autorisées](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables) et la création d’une variable pour gérer le niveau de journal en utilisera une.
-+ Les variables d’environnement ne peuvent être gérées par programmation que par l’intermédiaire des [API HTTP Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) ou [API HTTP Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
++ [Un nombre limité de variables d’environnement sont autorisées](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#number-of-variables) et la création d’une variable pour gérer le niveau de journal en utilisera une.
++ Les variables d’environnement ne peuvent être gérées par programmation que par l’intermédiaire des [API HTTP Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) ou [API HTTP Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#cloud-manager-api-format-for-setting-properties).
 + Les modifications apportées aux variables d’environnement doivent être réinitialisées manuellement par un outil pris en charge. L’oubli de réinitialiser un environnement à trafic élevé, tel que Production, à un niveau de journal moins détaillé peut inonder les journaux et affecter les performances AEM.
 
 _Les variables spécifiques à l’environnement ne fonctionnent pas pour les configurations de journaux du serveur web Apache ou de Dispatcher, car elles ne sont pas configurées via la configuration OSGi._
