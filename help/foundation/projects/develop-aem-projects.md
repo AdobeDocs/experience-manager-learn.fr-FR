@@ -10,10 +10,10 @@ doc-type: tutorial
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '4652'
-ht-degree: 0%
+source-wordcount: '4585'
+ht-degree: 1%
 
 ---
 
@@ -131,7 +131,7 @@ Puisque nous allons principalement copier/configurer des noeuds, nous utiliseron
    1. Ajoutez un nouveau noeud **nt:unstructured** sous authoring-project/gadgets appelé **tasks**.
    1. Ajoutez des propriétés String au noeud de tâches pour **cardWeight** = &quot;100&quot;, **jcr:title**=&quot;Tâches&quot; et **sling:resourceType**=&quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
 
-   Désormais, la [mosaïque Tâches](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#Tasks) s’affiche par défaut lors de la création d’un projet.
+   Désormais, la [mosaïque Tâches](https://experienceleague.adobe.com/docs/#Tasks) s’affiche par défaut lors de la création d’un projet.
 
    ```shell
    ../projects/templates/authoring-project
@@ -261,7 +261,7 @@ Nous pouvons maintenant tester notre modèle de projet en créant un nouveau pro
 
 1. Cliquez sur &quot;Créer&quot; pour terminer la création du projet à partir du modèle personnalisé. Vous remarquerez sur le tableau de bord du projet que la mosaïque Tâches et les autres mosaïques configurées sous les gadgets apparaissent automatiquement.
 
-   ![Mosaïque Tâches  ](./assets/develop-aem-projects/tasks-tile.png)
+   ![Mosaïque Tâches](./assets/develop-aem-projects/tasks-tile.png)
 
 
 ## Pourquoi un workflow ?
@@ -282,7 +282,7 @@ L’utilisation d’une étape de création de tâche par rapport aux étapes Pa
 
 Bien que les tâches présentent certains avantages par rapport aux étapes du participant, elles comportent des frais supplémentaires et ne sont pas aussi utiles en dehors d’un projet. En outre, tous les comportements dynamiques des tâches doivent être codés à l’aide de scripts ecma ayant leurs propres limites.
 
-## Exemple de cas d’utilisation {#goals-tutorial}
+## Exemples d’exigences de cas d’utilisation {#goals-tutorial}
 
 ![Diagramme de processus de workflow](./assets/develop-aem-projects/workflow-process-diagram.png)
 
@@ -631,13 +631,13 @@ La création d’un assistant personnalisé peut s’avérer très efficace, car
 
 1. Dans CRXDE-Lite, nous allons créer un sous-dossier sous le dossier `/apps/aem-guides/projects-tasks/projects` appelé &quot;assistants&quot;. Copiez l’assistant par défaut de : `/libs/cq/core/content/projects/workflowwizards/default_workflow` sous le dossier des assistants nouvellement créé et renommez-le **content-approval-start**. Le chemin complet doit maintenant être : `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`.
 
-   L’assistant par défaut est un assistant à 2 colonnes dont la première colonne indique le titre, la description et la miniature du modèle de workflow sélectionné. La deuxième colonne comprend des champs pour le Titre du workflow, Commentaire de démarrage et Chemin d’accès à la charge utile. L’assistant est un formulaire d’IU tactile standard qui utilise les [composants de formulaire d’IU Granite](https://docs.adobe.com/docs/en/aem/6-5/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/index.html) standard pour remplir les champs.
+   L’assistant par défaut est un assistant à 2 colonnes dont la première colonne indique le titre, la description et la miniature du modèle de workflow sélectionné. La deuxième colonne comprend des champs pour le Titre du workflow, Commentaire de démarrage et Chemin d’accès à la charge utile. L’assistant est un formulaire d’IU tactile standard qui utilise les [composants de formulaire d’IU Granite](https://experienceleague.adobe.com/docs/?lang=fr) standard pour remplir les champs.
 
    ![assistant de workflow de validation du contenu](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
 1. Nous ajouterons un champ supplémentaire à l’assistant qui sera utilisé pour définir la personne désignée de la première tâche dans le workflow (voir [Création du modèle de workflow](#create-workflow-model) : Étape 5).
 
-   Sous `../content-approval-start/jcr:content/items/column2/items`, créez un noeud de type `nt:unstructured` nommé **&quot;assign&quot;**. Nous utiliserons le composant Sélecteur d’utilisateur de projets (basé sur le [composant Sélecteur d’utilisateur Granite](https://docs.adobe.com/docs/en/aem/6-5/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/userpicker/index.html)). Ce champ de formulaire permet de restreindre facilement la sélection de l’utilisateur et du groupe à ceux appartenant au projet en cours.
+   Sous `../content-approval-start/jcr:content/items/column2/items`, créez un noeud de type `nt:unstructured` nommé **&quot;assign&quot;**. Nous utiliserons le composant Sélecteur d’utilisateur de projets (basé sur le [composant Sélecteur d’utilisateur Granite](https://experienceleague.adobe.com/docs/)). Ce champ de formulaire permet de restreindre facilement la sélection de l’utilisateur et du groupe à ceux appartenant au projet en cours.
 
    Vous trouverez ci-dessous la représentation XML du noeud **assign** :
 
@@ -657,7 +657,7 @@ La création d’un assistant personnalisé peut s’avérer très efficace, car
 
 1. Nous ajouterons également un champ de sélection des priorités qui déterminera la priorité de la première tâche dans le workflow (voir [Création du modèle de workflow](#create-workflow-model) : Étape 5).
 
-   Sous `/content-approval-start/jcr:content/items/column2/items`, créez un noeud de type `nt:unstructured` nommé **priority**. Nous utiliserons le [composant Sélection de l’IU Granite](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/select/index.html) pour remplir le champ de formulaire.
+   Sous `/content-approval-start/jcr:content/items/column2/items`, créez un noeud de type `nt:unstructured` nommé **priority**. Nous utiliserons le [composant Sélection de l’IU Granite](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) pour remplir le champ de formulaire.
 
    Sous le noeud **priority** , nous ajouterons un noeud **items** de **nt:unstructured**. Sous le noeud **items** , ajoutez 3 noeuds supplémentaires pour renseigner les options de sélection pour Élevé, Moyen et Faible. Chaque noeud est de type **nt:unstructured** et doit avoir une propriété **text** et **value**. Le texte et la valeur doivent être identiques :
 
@@ -693,7 +693,7 @@ La création d’un assistant personnalisé peut s’avérer très efficace, car
    </priority>
    ```
 
-1. Nous autoriserons l’initiateur du workflow à définir la date d’échéance de la tâche initiale. Nous utiliserons le champ de formulaire [Sélecteur de date de l’IU Granite](https://docs.adobe.com/docs/en/aem/6-5/develop/ref/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/datepicker/index.html) pour capturer cette entrée. Nous ajouterons également un champ masqué avec une valeur [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) pour nous assurer que l’entrée est stockée en tant que propriété de type Date dans le JCR.
+1. Nous autoriserons l’initiateur du workflow à définir la date d’échéance de la tâche initiale. Nous utiliserons le champ de formulaire [Sélecteur de date de l’IU Granite](https://experienceleague.adobe.com/docs/) pour capturer cette entrée. Nous ajouterons également un champ masqué avec une valeur [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) pour nous assurer que l’entrée est stockée en tant que propriété de type Date dans le JCR.
 
    Ajoutez deux noeuds **nt:unstructured** avec les propriétés suivantes représentées ci-dessous en XML :
 
