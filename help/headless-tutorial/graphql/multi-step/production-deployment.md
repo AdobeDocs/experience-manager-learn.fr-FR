@@ -1,19 +1,18 @@
 ---
 title: Déploiement de production à l’aide d’un service de publication AEM - Prise en main d’AEM sans affichage - GraphQL
 description: Découvrez les services d’auteur et de publication AEM et le modèle de déploiement recommandé pour les applications sans interface utilisateur graphique. Dans ce tutoriel, apprenez à utiliser des variables d’environnement pour modifier dynamiquement un point d’entrée GraphQL en fonction de l’environnement cible. Découvrez comment configurer correctement les AEM pour le partage des ressources cross-origin (CORS).
-sub-product: ressources
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
+feature: Fragments de contenu,API GraphQL
+topic: Sans affichage, gestion de contenu
+role: Developer
+level: Beginner
 mini-toc-levels: 1
 kt: 7131
 thumbnail: KT-7131.jpg
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2361'
-ht-degree: 4%
+source-wordcount: '2367'
+ht-degree: 7%
 
 ---
 
@@ -34,11 +33,11 @@ Découvrez comment :
 * Découvrez les bonnes pratiques de gestion des variables d’environnement.
 * Découvrez comment configurer correctement les AEM pour le partage des ressources cross-origin (CORS).
 
-## Modèle de déploiement de publication de création {#deployment-pattern}
+## Modèle de déploiement de la publication de l’auteur {#deployment-pattern}
 
-Un environnement d’AEM complet est constitué d’un auteur, d’une publication et d’un Dispatcher. Le service Auteur est l’emplacement où les utilisateurs internes créent, gèrent et prévisualisent du contenu. Le service de publication est considéré comme l’environnement &quot;En ligne&quot; et est généralement ce avec lequel les utilisateurs finaux interagissent. Le contenu, après avoir été modifié et approuvé sur le service Auteur, est distribué au service Publication.
+Un environnement d’AEM complet est constitué d’un auteur, d’une publication et d’un Dispatcher. Le service Auteur permet aux utilisateurs internes de créer, gérer et prévisualiser du contenu. Le service de publication est considéré comme l’environnement &quot;En ligne&quot; et est généralement ce avec lequel les utilisateurs finaux interagissent. Le contenu, après avoir été modifié et approuvé sur le service Auteur, est distribué au service Publication.
 
-Le modèle de déploiement le plus courant avec AEM applications sans interface utilisateur est de se connecter à la version de production de l’application à un service de publication AEM.
+Le modèle de déploiement le plus courant avec les applications découplées AEM est de connecter la version de production de l’application à un service de publication AEM.
 
 ![Modèle de déploiement de haut niveau](assets/publish-deployment/high-level-deployment.png)
 
@@ -57,7 +56,7 @@ Au final, trois serveurs locaux seront en cours d’exécution :
 * http://localhost:4503 - Instance de publication
 * http://localhost:5000 - React App en mode de production, connexion à l’instance de publication.
 
-## Installer AEM SDK - Mode de publication {#aem-sdk-publish}
+## Installation AEM SDK - mode de publication {#aem-sdk-publish}
 
 Actuellement, une instance en cours d’exécution du SDK est en mode **Auteur**. Le SDK peut également être démarré en mode **Publier** pour simuler un environnement de publication AEM.
 
@@ -81,7 +80,7 @@ Vous trouverez un guide plus détaillé de configuration d’un environnement de
 
    Une page 404 Not Found doit être renvoyée. Il s’agit d’une nouvelle instance AEM et aucun contenu n’a été installé.
 
-## Installer des exemples de contenu et des points d’entrée GraphQL {#wknd-site-content-endpoints}
+## Installation d’exemples de contenu et de points d’entrée GraphQL {#wknd-site-content-endpoints}
 
 Tout comme sur l’instance d’auteur, les points d’entrée GraphQL doivent être activés pour l’instance de publication et un exemple de contenu est nécessaire. Installez ensuite le site de référence WKND sur l’instance de publication.
 
@@ -101,7 +100,7 @@ Tout comme sur l’instance d’auteur, les points d’entrée GraphQL doivent �
 
    Contrairement à l’instance d’auteur AEM, les instances de publication AEM optent par défaut pour un accès anonyme en lecture seule. Nous voulons simuler l&#39;expérience d&#39;un utilisateur anonyme lors de l&#39;exécution de l&#39;application React.
 
-## Mettez à jour les variables d’environnement pour qu’elles pointent l’instance de publication {#react-app-publish}
+## Mise à jour des variables d’environnement pour qu’elles pointent l’instance de publication {#react-app-publish}
 
 Mettez ensuite à jour les variables d’environnement utilisées par l’application React pour pointer vers l’instance de publication. L’application React doit **se connecter uniquement** à l’instance de publication en mode de production.
 
@@ -125,7 +124,7 @@ Ajoutez ensuite un nouveau fichier `.env.production.local` pour simuler l’exp�
    >
    > Notez qu’aucune information d’authentification n’est incluse, car les environnements de publication permettent par défaut un accès anonyme au contenu.
 
-## Déployer un serveur de noeuds statiques {#static-server}
+## Déploiement d’un serveur de noeud statique {#static-server}
 
 L’application React peut être lancée à l’aide du serveur webpack, mais cela est réservé au développement. Ensuite, simulez un déploiement en production en utilisant [serve](https://github.com/vercel/serve) pour héberger une version en production de l’application React à l’aide de Node.js.
 
@@ -400,7 +399,7 @@ Ensuite, testez la configuration CORS de l’instance de publication AEM.
 
    ![Erreur CORS corrigée](assets/publish-deployment/cors-error-corrected.png)
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations ! Vous avez désormais simulé un déploiement en production complet à l’aide d’un environnement de publication AEM. Vous avez également appris à utiliser la configuration CORS dans AEM.
 
