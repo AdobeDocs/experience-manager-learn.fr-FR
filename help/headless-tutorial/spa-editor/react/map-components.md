@@ -12,9 +12,9 @@ thumbnail: 4854-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2273'
+source-wordcount: '2267'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Découvrez comment mapper les composants React aux composants Adobe Experience M
 
 Ce chapitre aborde plus en détail l’API de modèle JSON AEM et la manière dont le contenu JSON exposé par un composant AEM peut être automatiquement injecté dans un composant React sous la forme de props.
 
-## Intention
+## Objectif
 
 1. Découvrez comment mapper AEM composants à SPA composants.
 1. Inspect : la manière dont un composant React utilise les propriétés dynamiques transmises à partir d’AEM.
@@ -52,7 +52,7 @@ Le concept de base consiste à mapper un composant SPA à un composant AEM. AEM 
 
 ## Inspect du composant Texte
 
-L’ [archétype de projet AEM](https://github.com/adobe/aem-project-archetype) fournit un composant `Text` mappé au composant [Texte AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html). Il s’agit d’un exemple de composant **content**, dans la mesure où il effectue le rendu de *content* à partir d’AEM.
+L’ [archétype de projet AEM](https://github.com/adobe/aem-project-archetype) fournit un composant `Text` mappé au composant [Texte AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Il s’agit d’un exemple de composant **content**, dans la mesure où il effectue le rendu de *content* à partir d’AEM.
 
 Voyons comment fonctionne le composant.
 
@@ -223,7 +223,7 @@ Examinons davantage le conteneur de mises en page.
 
    Le composant **Conteneur de mises en page** a une valeur `sling:resourceType` de `wcm/foundation/components/responsivegrid` et est reconnu par l’éditeur de SPA à l’aide de la propriété `:type`, tout comme les composants `Text` et `Image`.
 
-   Les mêmes fonctionnalités de redimensionnement d’un composant à l’aide du [mode Mise en page](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) sont disponibles avec l’éditeur de SPA.
+   Les mêmes fonctionnalités de redimensionnement d’un composant à l’aide du [mode Mise en page](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) sont disponibles avec l’éditeur de SPA.
 
 2. Revenez à [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Ajoutez d’autres composants **Image** et essayez de les redimensionner à l’aide de l’option **Mise en page** :
 
@@ -243,7 +243,7 @@ Examinons davantage le conteneur de mises en page.
 
    ![Exemple de création finale de chapitre](assets/map-components/final-page.png)
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous avez appris à mapper SPA composants à AEM composants et vous avez utilisé les composants principaux React. Vous avez également eu la possibilité d’explorer les fonctionnalités réactives du **conteneur de mises en page**.
 
@@ -251,7 +251,7 @@ Félicitations, vous avez appris à mapper SPA composants à AEM composants et v
 
 [Navigation et routage](navigation-routing.md)  : découvrez comment plusieurs vues dans la SPA peuvent être prises en charge en mappant sur AEM pages avec le SDK de l’éditeur de ressources. La navigation dynamique est mise en oeuvre à l’aide des composants principaux React Router et React.
 
-## (bonus) Conserver les configurations au contrôle de code source {#bonus-configs}
+## (bonus) Conserver les configurations pour le contrôle de code source {#bonus-configs}
 
 Dans de nombreux cas, en particulier au début d’un projet AEM, il est utile de conserver les configurations, comme les modèles et les stratégies de contenu associées, pour le contrôle de code source. Cela garantit que tous les développeurs travaillent sur le même ensemble de contenu et de configurations et peut garantir une cohérence supplémentaire entre les environnements. Une fois qu’un projet atteint un certain niveau de maturité, la pratique de gestion des modèles peut être transmise à un groupe spécial d’utilisateurs expérimentés.
 
@@ -286,9 +286,9 @@ Les étapes suivantes se dérouleront à l’aide de l’IDE Visual Studio Code 
 
    Comparez `ui.content/src/main/content/META-INF/vault/filter.xml` et `ui.apps/src/main/content/META-INF/vault/filter.xml` pour comprendre les différents noeuds gérés par chaque module.
 
-## (bonus) Créez un composant d’image personnalisé {#bonus-image}
+## (bonus) Création d’un composant d’image personnalisé {#bonus-image}
 
-Un composant Image SPA a déjà été fourni par les composants React Core. Cependant, si vous souhaitez une pratique supplémentaire, créez votre propre mise en oeuvre React qui mappe au [composant Image ](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/image.html) AEM. Le composant `Image` est un autre exemple de composant **content**.
+Un composant Image SPA a déjà été fourni par les composants React Core. Cependant, si vous souhaitez une pratique supplémentaire, créez votre propre mise en oeuvre React qui mappe au [composant Image ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) AEM. Le composant `Image` est un autre exemple de composant **content**.
 
 ### Inspect du JSON
 
