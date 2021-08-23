@@ -5,9 +5,9 @@ feature: Fragments de contenu, API
 topic: Sans affichage, gestion de contenu
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1412'
 ht-degree: 1%
 
 ---
@@ -131,7 +131,7 @@ private void initApp(final List<ViewBinder> viewBinders) {
 
 `onCreate(..)` est le point d’extension d’initialisation de l’application mobile et enregistre les 3 éléments personnalisés  `ViewBinders` chargés d’analyser le fichier JSON et de lier les valeurs aux  `View` éléments .
 
-`initApp(...)` est ensuite appelée, ce qui envoie la requête de GET HTTP au point de terminaison AEM Content Services sur AEM Publish pour collecter le contenu. Lors de la réception d’une réponse JSON valide, la réponse JSON est transmise à chaque `ViewBinder` responsable de l’analyse du fichier JSON et de sa liaison aux éléments mobiles `View`.
+`initApp(...)` est ensuite appelée, ce qui envoie la requête de GET HTTP au point de terminaison AEM Content Services sur AEM Publish pour collecter le contenu. Lors de la réception d’une réponse JSON valide, la réponse JSON est transmise à chaque `ViewBinder` responsable de l’analyse du fichier JSON et de sa liaison aux éléments `View` mobiles.
 
 #### Analyse de la réponse JSON
 
@@ -163,7 +163,7 @@ Enfin, la balise `src` du logo est chargée dans l’affichage d’image Android
 
 Notez que nous devons fournir le schéma AEM, l’hôte et le port (via `aemHost`) à l’instance de publication AEM, car AEM Content Services ne fournira que le chemin JCR (c’est-à-dire. `/content/dam/wknd-mobile/images/wknd-logo.png`) au contenu référencé.
 
-#### Image POJO{#image-pojo}
+#### POJO{#image-pojo}
 
 Bien que cela soit facultatif, l’utilisation de [Jackson ObjectMapper](https://fasterxml.github.io/jackson-databind/javadoc/2.9/com/fasterxml/jackson/databind/ObjectMapper.html) ou de fonctionnalités similaires fournies par d’autres bibliothèques comme Gson permet de mapper des structures JSON complexes à des POJO Java sans avoir à traiter directement les objets JSON natifs eux-mêmes. Dans ce cas simple, nous associons la clé `src` de l’objet `image` JSON à l’attribut `src` du POJO de l’image directement via l’annotation `@JSONProperty`.
 
@@ -201,7 +201,7 @@ Après chaque étape, effectuez une extraction pour actualiser l’application m
 Pour en savoir plus sur AEM Content Services et AEM as a Headless CMS, consultez la documentation et les documents d’activation de l’Adobe :
 
 * [Utilisation de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
-* [Guide de l’utilisateur des composants principaux WCM AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+* [Guide de l’utilisateur des composants principaux WCM AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * [Bibliothèque de composants principaux de la gestion du contenu web AEM](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [AEM projet GitHub des composants principaux WCM](https://github.com/adobe/aem-core-wcm-components)
 * [AEM Composants principaux de la gestion de contenu web - Demandez à l’expert](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
