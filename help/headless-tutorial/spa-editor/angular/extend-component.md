@@ -13,10 +13,10 @@ thumbnail: 5871-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 4%
+source-wordcount: '1967'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 Découvrez comment étendre un composant principal existant à utiliser avec l’éditeur SPA d’AEM. Comprendre comment étendre un composant existant est une technique puissante pour personnaliser et étendre les fonctionnalités d’une implémentation d’AEM SPA éditeur.
 
-## Intention
+## Objectif
 
 1. Étendez un composant principal existant avec des propriétés et du contenu supplémentaires.
 2. Comprenez les principes de base de l’héritage des composants à l’aide de `sling:resourceSuperType`.
@@ -33,13 +33,13 @@ Découvrez comment étendre un composant principal existant à utiliser avec l�
 
 ## Ce que vous allez créer
 
-Dans ce chapitre, un nouveau composant `Card` sera créé. Le composant `Card` étend le [composant principal de l’image](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/image.html) en ajoutant des champs de contenu supplémentaires, tels qu’un titre et un bouton Appel à l’action, afin d’effectuer le rôle d’un teaser pour d’autres contenus dans le SPA.
+Dans ce chapitre, un nouveau composant `Card` sera créé. Le composant `Card` étend le [composant principal de l’image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr) en ajoutant des champs de contenu supplémentaires, tels qu’un titre et un bouton Appel à l’action, afin d’effectuer le rôle d’un teaser pour d’autres contenus dans le SPA.
 
 ![Création finale du composant Carte](assets/extend-component/final-authoring-card.png)
 
 >[!NOTE]
 >
-> Dans une mise en oeuvre réelle, il peut être plus approprié d’utiliser simplement le [composant Teaser](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/teaser.html) puis d’étendre le [composant principal de l’image](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) pour créer un composant `Card` en fonction des exigences du projet. Il est toujours recommandé d’utiliser les [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) directement lorsque cela est possible.
+> Dans une mise en oeuvre réelle, il peut être plus approprié d’utiliser simplement le [composant Teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/teaser.html) puis d’étendre le [composant principal de l’image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) pour créer un composant `Card` en fonction des exigences du projet. Il est toujours recommandé d’utiliser les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) directement lorsque cela est possible.
 
 ## Prérequis
 
@@ -106,13 +106,13 @@ Un composant Carte initial a été fourni par le code de démarrage du chapitre.
 
    Notez que le `sling:resourceSuperType` pointe vers `core/wcm/components/image/v2/image`. Cela indique que le composant d’image WKND SPA hérite de toutes les fonctionnalités de l’image du composant principal.
 
-   Connu également sous le nom de [modèle de proxy](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) l’héritage de ressources Sling est un modèle de conception puissant qui permet aux composants enfants d’hériter de fonctionnalités et d’étendre/remplacer le comportement si nécessaire. L’héritage Sling prend en charge plusieurs niveaux d’héritage. Par conséquent, le nouveau composant `Card` hérite des fonctionnalités de l’image du composant principal.
+   Connu également sous le nom de [modèle de proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#proxy-component-pattern) l’héritage de ressources Sling est un modèle de conception puissant qui permet aux composants enfants d’hériter de fonctionnalités et d’étendre/remplacer le comportement si nécessaire. L’héritage Sling prend en charge plusieurs niveaux d’héritage. Par conséquent, le nouveau composant `Card` hérite des fonctionnalités de l’image du composant principal.
 
    De nombreuses équipes de développement s&#39;efforcent d&#39;être DE (ne vous répétez pas). L’héritage Sling rend cela possible avec AEM.
 
 4. Sous le dossier `card` , ouvrez le fichier `_cq_dialog/.content.xml`.
 
-   Ce fichier est la définition de la boîte de dialogue Composant pour le composant `Card`. Si vous utilisez l’héritage Sling, il est possible d’utiliser les fonctionnalités de [Sling Resource Merger](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/sling-resource-merger.html) pour remplacer ou étendre des parties de la boîte de dialogue. Dans cet exemple, un nouvel onglet a été ajouté à la boîte de dialogue pour capturer des données supplémentaires d’un auteur afin de renseigner le composant Carte.
+   Ce fichier est la définition de la boîte de dialogue Composant pour le composant `Card`. Si vous utilisez l’héritage Sling, il est possible d’utiliser les fonctionnalités de [Sling Resource Merger](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html?lang=fr) pour remplacer ou étendre des parties de la boîte de dialogue. Dans cet exemple, un nouvel onglet a été ajouté à la boîte de dialogue pour capturer des données supplémentaires d’un auteur afin de renseigner le composant Carte.
 
    Les propriétés telles que `sling:orderBefore` permettent aux développeurs de choisir où insérer de nouveaux onglets ou champs de formulaire. Dans ce cas, l&#39;onglet `Text` sera inséré avant l&#39;onglet `asset`. Pour utiliser pleinement Sling Resource Merger, il est important de connaître la structure de noeud de boîte de dialogue d’origine pour la [boîte de dialogue du composant Image](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/image/v2/image/_cq_dialog/.content.xml).
 
@@ -296,7 +296,7 @@ Revenez à l’IDE de votre choix et ouvrez le module `core`.
    }
    ```
 
-   `@PostConstruct initModel()` sera toujours appelé lorsque le modèle Sling est initialisé. C’est donc une bonne occasion d’initialiser des objets qui peuvent être utilisés par d’autres méthodes du modèle. `pageManager` est l’un des nombreux [objets globaux pris en charge par Java](https://docs.adobe.com/content/help/en/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) mis à la disposition des modèles Sling via l’annotation `@ScriptVariable`. La méthode [getPage](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) prend un chemin et renvoie un objet [Page](https://docs.adobe.com/content/help/fr/experience-manager-cloud-service/implementing/developing/ref/javadoc/com/day/cq/wcm/api/Page.html) AEM ou null si le chemin ne pointe pas vers une page valide.
+   `@PostConstruct initModel()` sera toujours appelé lorsque le modèle Sling est initialisé. C’est donc une bonne occasion d’initialiser des objets qui peuvent être utilisés par d’autres méthodes du modèle. `pageManager` est l’un des nombreux [objets globaux pris en charge par Java](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) mis à la disposition des modèles Sling via l’annotation `@ScriptVariable`. La méthode [getPage](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) prend un chemin et renvoie un objet [Page](https://docs.adobe.com/content/help/en/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html) AEM ou null si le chemin ne pointe pas vers une page valide.
 
    Cela initialisera la variable `cardPage`, qui sera utilisée par les autres nouvelles méthodes pour renvoyer les données sur la page liée sous-jacente.
 
@@ -468,7 +468,7 @@ Maintenant que le modèle JSON est renseigné avec de nouvelles propriétés pou
 
    ![Création finale du composant Carte](assets/extend-component/final-authoring-card.png)
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous avez appris à étendre un composant AEM à l’aide de et du fonctionnement des modèles et boîtes de dialogue Sling avec le modèle JSON.
 
