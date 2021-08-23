@@ -10,10 +10,10 @@ version: 6.4, 6.5
 topic: Personnalisation
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 35%
+source-wordcount: '427'
+ht-degree: 33%
 
 ---
 
@@ -42,13 +42,13 @@ Pour activer les fonctionnalités ContextHub et créer un lien vers les biblioth
 
 ## Configuration du site et segments ContextHub {#site-configuration-and-contexthub-segments}
 
-ContextHub propose un moteur de segmentation qui gère les segments et détermine les segments qui sont résolus pour le contexte actuel. Plusieurs segments sont définis. Vous pouvez utiliser l’API Javascript pour [déterminer les segments résolus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). Activez les segments ContextHub pour votre site sous [[!UICONTROL Navigateur de configuration]](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/configurations.html).
+ContextHub propose un moteur de segmentation qui gère les segments et détermine les segments qui sont résolus pour le contexte actuel. Plusieurs segments sont définis. Vous pouvez utiliser l’API Javascript pour [déterminer les segments résolus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). Activez les segments ContextHub pour votre site sous [[!UICONTROL Navigateur de configuration]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html).
 
-## Créer des segments {#create-segments}
+## Création de segments {#create-segments}
 
 Créez AEM segments qui agissent comme des règles pour les teasers. En d’autres termes, ils définissent quand le contenu d’un teaser apparaît sur une page web. Le contenu peut cibler les besoins et centres d’intérêts spécifiques des visiteurs en fonction du ou des segments correspondants.
 
-## Affectation de la configuration cloud, du chemin d’accès au segment et du chemin ContextHub à votre site {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
+## Affectation de la configuration du cloud, du chemin d’accès au segment et du chemin ContextHub à votre site {#assigning-cloud-configuration-segment-path-and-contexthub-path-to-your-site}
 
 Affectation du chemin de configuration du cloud, du chemin de segmentation et du chemin ContextHub au noeud racine de votre site afin que vous puissiez créer une expérience personnalisée pour votre audience. ContextHub vous permet de manipuler les données contextuelles et de tester les segments résolus.
 
