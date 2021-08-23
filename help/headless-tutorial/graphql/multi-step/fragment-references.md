@@ -1,23 +1,18 @@
 ---
 title: Modélisation avancée des données à l’aide des références de fragments - Prise en main d’AEM sans affichage - GraphQL
 description: Prise en main d’Adobe Experience Manager (AEM) et de GraphQL. Découvrez comment utiliser la fonction Référence de fragment pour la modélisation avancée des données et pour créer une relation entre deux fragments de contenu différents. Découvrez comment modifier une requête GraphQL pour inclure un champ à partir d’un modèle référencé.
-sub-product: ressources
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
-feature: Fragments de contenu, API GraphQL
+feature: Fragments de contenu,API GraphQL
 topic: Sans affichage, gestion de contenu
 role: Developer
 level: Beginner
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 2%
+source-wordcount: '854'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +34,7 @@ Dans ce chapitre, nous allons apprendre à :
 * Mettre à jour un modèle de fragment de contenu pour utiliser le champ Référence de fragment
 * Création d’une requête GraphQL qui renvoie des champs à partir d’un modèle référencé
 
-## Ajouter une référence de fragment {#add-fragment-reference}
+## Ajout d’une référence de fragment {#add-fragment-reference}
 
 Mettez à jour le modèle de fragment de contenu aventure pour ajouter une référence au modèle du contributeur.
 
@@ -237,7 +232,7 @@ Ensuite, mettez à jour les requêtes utilisées par l’application React afin 
 
    ![Contributeur ajouté à l’application](assets/fragment-references/contributor-added-detail.png)
 
-## Félicitations ! {#congratulations}
+## Félicitations !{#congratulations}
 
 Félicitations ! Vous avez mis à jour un modèle de fragment de contenu existant afin de référencer un fragment de contenu imbriqué à l’aide du champ **Référence du fragment** . Vous avez également appris à modifier une requête GraphQL pour inclure des champs d’un modèle référencé.
 
