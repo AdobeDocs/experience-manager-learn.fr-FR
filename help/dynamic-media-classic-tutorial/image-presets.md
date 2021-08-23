@@ -10,9 +10,9 @@ activity: use
 topic: Gestion de contenu
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '706'
 ht-degree: 1%
 
 ---
@@ -40,8 +40,8 @@ Un paramètre d’image prédéfini comporte un symbole dollar ($) des deux côt
 >
 >Créez un paramètre d’image prédéfini par taille d’image unique sur votre site. Par exemple, si vous avez besoin d’une image 350 x 350 pour la page des détails du produit, d’une image 120 x 120 pour les pages de navigation/recherche et d’une image 90 x 90 pour une vente croisée/un article présenté, vous avez besoin de trois paramètres d’image prédéfinis, que vous ayez 500 00.
 
-- En savoir plus sur les [paramètres d’image prédéfinis](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
-- Découvrez comment [créer un paramètre d’image prédéfini](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
+- En savoir plus sur les [paramètres d’image prédéfinis](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
+- Découvrez comment [créer un paramètre d’image prédéfini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
 
 ## Paramètres d’image prédéfinis et accentuation
 
@@ -63,7 +63,7 @@ Le graphique suivant montre trois niveaux d’accentuation. De droite à gauche 
 
 Dynamic Media Classic permet trois types d’accentuation : Accentuation simple, mode Rééchantillonnage et masquage flou.
 
-En savoir plus sur les [options d’accentuation de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+En savoir plus sur les [options d’accentuation de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
 
 ## Ressources supplémentaires
 
