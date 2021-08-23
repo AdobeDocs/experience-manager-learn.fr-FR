@@ -9,9 +9,9 @@ thumbnail: 36645.jpg
 topic: Gestion de contenu
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '205'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ L’appli de bureau Dynamic Media Classic Adobe est compatible avec les système
 
 ## Supports
 
-* [Documentation de l’application de bureau Adobe Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
-* [Questions fréquentes sur Adobe Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/new-ui-2020.html)
+* [Documentation de l’application de bureau Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
+* [Questions fréquentes sur Adobe Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
 * [Télécharger - Fichier d’image de disque pour macOS (.dmg)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.dmg)
 * [Télécharger - Fichier exécutable pour Windows (.exe)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.exe)
