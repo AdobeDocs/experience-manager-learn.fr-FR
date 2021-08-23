@@ -11,17 +11,17 @@ doc-type: technical video
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 10%
+source-wordcount: '261'
+ht-degree: 9%
 
 ---
 
 
 # Configuration [!DNL Sling Dynamic Include]
 
-Présentation vidéo de l’installation et de l’utilisation de [!DNL Apache Sling Dynamic Include] avec [AEM Dispatcher](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html) en cours d’exécution sur [!DNL Apache HTTP Web Server].
+Présentation vidéo de l’installation et de l’utilisation de [!DNL Apache Sling Dynamic Include] avec [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) en cours d’exécution sur [!DNL Apache HTTP Web Server].
 
 >[!VIDEO](https://video.tv.adobe.com/v/17040/?quality=12&learn=on)
 
@@ -150,7 +150,7 @@ Présentation vidéo de l’installation et de l’utilisation de [!DNL Apache S
 
 >[!NOTE]
 >
->Si vous utilisez [!DNL Sling Dynamic Includes] pour diffuser des inclusions côté serveur (ESI), assurez-vous de mettre en cache les en-têtes de réponse [appropriés dans le cache du Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Les en-têtes possibles sont les suivants :
+>Si vous utilisez [!DNL Sling Dynamic Includes] pour diffuser des inclusions côté serveur (ESI), assurez-vous de mettre en cache les en-têtes de réponse [appropriés dans le cache du Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#CachingHTTPResponseHeaders). Les en-têtes possibles sont les suivants :
 >
 >* &quot;Cache-Control&quot;
 >* &quot;Content-Disposition&quot;
