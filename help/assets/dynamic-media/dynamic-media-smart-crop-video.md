@@ -9,10 +9,10 @@ thumbnail: 37958.jpg
 topic: Gestion de contenu
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 9%
+source-wordcount: '109'
+ht-degree: 1%
 
 ---
 
@@ -25,5 +25,5 @@ Le recadrage intelligent Dynamic Media pour la vidéo utilise Adobe Sensei pour 
 
 >[!NOTE]
 >
->La vidéo ci-dessus suppose que votre service AEM s’exécute en mode Dynamic Media S7. [Vous trouverez des instructions sur la configuration d’AEM avec Dynamic Media ici.](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
+>La vidéo ci-dessus suppose que votre service AEM s’exécute en mode Dynamic Media S7. [Vous trouverez des instructions sur la configuration d’AEM avec Dynamic Media ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
 
