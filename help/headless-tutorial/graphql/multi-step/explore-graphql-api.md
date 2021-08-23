@@ -1,22 +1,17 @@
 ---
 title: Exploration des API GraphQL - Prise en main d’AEM sans affichage - GraphQL
 description: Prise en main d’Adobe Experience Manager (AEM) et de GraphQL. Explorez AEM API GraphQL à l’aide de l’IDE GraphQL intégré. Découvrez comment AEM génère automatiquement un schéma GraphQL basé sur un modèle de fragment de contenu. Testez la création de requêtes de base à l’aide de la syntaxe GraphQL.
-sub-product: ressources
-topics: headless
 version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
-feature: Fragments de contenu, API GraphQL
+feature: Fragments de contenu,API GraphQL
 topic: Sans affichage, gestion de contenu
 role: Developer
 level: Beginner
-source-git-commit: 81626b8d853f3f43d9c51130acf02561f91536ac
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1140'
 ht-degree: 2%
 
 ---
@@ -237,7 +232,7 @@ Il est également possible d’interroger directement un seul fragment de conten
 
 1. Exécutez la requête et notez que le champ `biography` contient un résultat `html` beaucoup plus court.
 
-## Requête pour plusieurs modèles de fragments de contenu {#query-multiple-models}
+## Requête pour plusieurs modèles de fragment de contenu {#query-multiple-models}
 
 Il est également possible de combiner des requêtes distinctes en une seule requête. Cela s’avère utile pour réduire le nombre de requêtes HTTP nécessaires à l’alimentation de l’application. Par exemple, la vue *Accueil* d’une application peut afficher du contenu basé sur **deux** différents modèles de fragment de contenu. Plutôt que d’exécuter **deux** requêtes distinctes, nous pouvons combiner les requêtes en une seule requête.
 
@@ -298,7 +293,7 @@ Il est également possible de combiner des requêtes distinctes en une seule req
 
 Pour obtenir de nombreux autres exemples de requêtes GraphQL, voir : [Apprentissage de l’utilisation de GraphQL avec AEM - Exemple de contenu et requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=fr).
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous venez de créer et d’exécuter plusieurs requêtes GraphQL !
 
