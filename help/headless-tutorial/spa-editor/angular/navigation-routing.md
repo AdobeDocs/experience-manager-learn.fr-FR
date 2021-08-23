@@ -13,10 +13,10 @@ thumbnail: 5312-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2723'
-ht-degree: 2%
+source-wordcount: '2717'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 Découvrez comment plusieurs vues dans les SPA sont prises en charge à l’aide d’AEM Pages et du SDK de l’éditeur de la suite de rapports. La navigation dynamique est mise en oeuvre à l’aide des itinéraires d’Angular et ajoutée à un composant En-tête existant.
 
-## Intention
+## Objectif
 
 1. Découvrez les options de routage du modèle SPA disponibles lors de l’utilisation de SPA Editor.
 2. Découvrez comment utiliser le [routage des Angulars](https://angular.io/guide/router) pour naviguer entre les différentes vues de la SPA.
@@ -33,7 +33,7 @@ Découvrez comment plusieurs vues dans les SPA sont prises en charge à l’aide
 
 ## Ce que vous allez créer
 
-Ce chapitre ajoute un menu de navigation à un composant `Header` existant. Le menu de navigation est piloté par la hiérarchie AEM page et utilise le modèle JSON fourni par le [composant principal de navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/navigation.html).
+Ce chapitre ajoute un menu de navigation à un composant `Header` existant. Le menu de navigation est piloté par la hiérarchie AEM page et utilise le modèle JSON fourni par le [composant principal de navigation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
 
 ![Navigation implémentée](assets/navigation-routing/final-navigation-implemented.gif)
 
@@ -71,7 +71,7 @@ Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/a
 
 ## Mises à jour du composant d’en-tête Inspect {#inspect-header}
 
-Dans les chapitres précédents, le composant `HeaderComponent` a été ajouté en tant que composant d’Angular pur inclus via `app.component.html`. Dans ce chapitre, le composant `HeaderComponent` est supprimé de l’application et sera ajouté via l’[éditeur de modèles](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). Cela permet aux utilisateurs de configurer le menu de navigation de `HeaderComponent` dans AEM.
+Dans les chapitres précédents, le composant `HeaderComponent` a été ajouté en tant que composant d’Angular pur inclus via `app.component.html`. Dans ce chapitre, le composant `HeaderComponent` est supprimé de l’application et sera ajouté via l’[éditeur de modèles](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html). Cela permet aux utilisateurs de configurer le menu de navigation de `HeaderComponent` dans AEM.
 
 >[!NOTE]
 >
@@ -116,9 +116,9 @@ Dans les chapitres précédents, le composant `HeaderComponent` a été ajouté 
        componentGroup="WKND SPA Angular - Structure"/>
    ```
 
-   Le composant `Header` AEM héritera de toutes les fonctionnalités du [composant principal de navigation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html) via la propriété `sling:resourceSuperType`.
+   Le composant `Header` AEM héritera de toutes les fonctionnalités du [composant principal de navigation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html) via la propriété `sling:resourceSuperType`.
 
-## Ajoutez le composant HeaderComponent au modèle de SPA {#add-header-template}
+## Ajouter le composant HeaderComponent au modèle SPA {#add-header-template}
 
 1. Ouvrez un navigateur et connectez-vous à AEM, [http://localhost:4502/](http://localhost:4502/). La base de code de départ doit déjà être déployée.
 2. Accédez au **[!UICONTROL Modèle de page SPA]** : [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html).
@@ -327,7 +327,7 @@ Implémentez ensuite le menu de navigation avec un nouveau `NavigationComponent`
    UPDATE src/app/app.module.ts (2032 bytes)
    ```
 
-3. Créez ensuite une classe nommée `NavigationLink` à l’aide de l’Angular CLI dans le répertoire `components/navigation` nouvellement créé :
+3. Créez ensuite une classe nommée `NavigationLink` à l’aide de l’interface de ligne de commande d’Angular dans le répertoire `components/navigation` nouvellement créé :
 
    ```shell
    $ cd src/app/components/navigation/
@@ -726,7 +726,7 @@ Maintenant que la navigation a été mise en oeuvre, inspectez le routage dans A
 
 5. Testez les liens profonds en accédant directement à : [http://localhost:4502/content/wknd-spa-angular/us/en/home/page-2.html](http://localhost:4502/content/wknd-spa-angular/us/en/home/page-2.html). Observez que le bouton Précédent du navigateur continue de fonctionner.
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous avez appris comment plusieurs vues dans la SPA peuvent être prises en charge en mappant sur AEM pages avec le SDK de l’éditeur de formulaires. La navigation dynamique a été mise en oeuvre à l’aide du routage des Angulars et ajoutée au composant `Header`.
 
