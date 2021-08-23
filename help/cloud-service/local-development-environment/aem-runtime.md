@@ -12,9 +12,9 @@ thumbnail: 32551.jpg
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d49ae402b332ba972a78cdbd8f5bf962b91c83b1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1732'
 ht-degree: 3%
 
 ---
@@ -214,7 +214,7 @@ N’oubliez pas que l’utilisation des approches ci-dessus pour conserver le co
 
 ## Résolution des problèmes
 
-## Un double-clic sur le fichier Jar de démarrage rapide entraîne une erreur{#troubleshooting-double-click}
+## Si vous double-cliquez sur le fichier Jar de démarrage rapide, une erreur s’affiche.{#troubleshooting-double-click}
 
 Lorsque vous double-cliquez sur le fichier Quickstart Jar pour démarrer, un modal d’erreur s’affiche pour empêcher AEM de démarrer localement.
 
@@ -230,7 +230,7 @@ ou, pour démarrer le service AEM Publish, `cd` dans le répertoire contenant le
 
 `$ java -jar aem-publish-p4503.jar`
 
-## Le démarrage du fichier Quickstart Jar à partir de la ligne de commande annule immédiatement{#troubleshooting-java-8}.
+## Le démarrage du fichier Quickstart Jar à partir de la ligne de commande annule immédiatement.{#troubleshooting-java-8}
 
 Lors du démarrage du fichier Quickstart Jar à partir de la ligne de commande, le processus s’arrête immédiatement et le service AEM ne démarre pas, avec l’erreur suivante :
 
@@ -258,4 +258,4 @@ Une fois le SDK Java 11 installé, vérifiez qu’il s’agit de la version prin
 + [Télécharger AEM SDK](https://experience.adobe.com/#/downloads)
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Télécharger Docker](https://www.docker.com/)
-+ [Documentation du Dispatcher Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
++ [Documentation du Dispatcher Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)
