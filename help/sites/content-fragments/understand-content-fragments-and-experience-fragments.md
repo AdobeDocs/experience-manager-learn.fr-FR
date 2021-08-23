@@ -11,10 +11,10 @@ audience: all
 topic: Gestion de contenu
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 7%
+source-wordcount: '1000'
+ht-degree: 5%
 
 ---
 
@@ -100,7 +100,7 @@ Les fragments de contenu Adobe Experience Manager et les fragments d’expérien
 </td>
 </tr><tr><td><strong>Utilisez</strong></td>
 <td><ul>
-<li><a href="https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">AEM composant de fragment de contenu des composants principaux </a> à utiliser dans AEM Sites, AEM Screens ou dans des fragments d’expérience.</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html" target="_blank">AEM composant de fragment de contenu des composants principaux </a> à utiliser dans AEM Sites, AEM Screens ou dans des fragments d’expérience.</li>
 <li>Exportation JSON via <a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html" target="_blank">AEM Content Services</a> pour une consommation tierce</li>
 <li>JSON via les API Assets HTTP AEM pour une consommation tierce.</li>
 </ul>
@@ -171,7 +171,7 @@ Le diagramme suivant illustre l’architecture globale des fragments de contenu 
 
 + [Guide de l’utilisateur des fragments de contenu](https://helpx.adobe.com/experience-manager/6-5/assets/user-guide.html?topic=/experience-manager/6-5/assets/morehelp/content-fragments.ug.js)
 + [Utilisation de fragments de contenu dans AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-use.html)
-+ [AEM composant de fragment de contenu des composants principaux WCM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html)
++ [AEM composant de fragment de contenu des composants principaux WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 + [Utilisation des fragments de contenu et AEM Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
 + [Prise en main d’AEM Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
 
