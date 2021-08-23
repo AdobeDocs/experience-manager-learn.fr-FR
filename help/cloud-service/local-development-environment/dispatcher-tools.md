@@ -13,9 +13,9 @@ thumbnail: 30603.jpg
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: 9a78cbdb5fd35e4aa7169382494dd014aa8098e9
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1637'
 ht-degree: 2%
 
 ---
@@ -216,7 +216,7 @@ _Notez que la version des outils de Dispatcher elle-même ne correspond pas à l
 
 ## Résolution des problèmes
 
-### docker_run se traduit par &quot;Attente jusqu’à ce que host.docker.internal soit disponible&quot; message{#troubleshooting-host-docker-internal}
+### docker_run se traduit par un message &quot;En attente jusqu’à ce que host.docker.internal soit disponible&quot;.{#troubleshooting-host-docker-internal}
 
 `host.docker.internal` est un nom d’hôte fourni au contenu Docker qui résout l’hôte. Per docs.docker.com ([macOS](https://docs.docker.com/docker-for-mac/networking/#i-want-to-connect-from-a-container-to-a-service-on-the-host), [Windows](https://docs.docker.com/docker-for-windows/networking/)) :
 
@@ -293,4 +293,4 @@ AH00016: Configuration Failed
 + [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/)
 + [Télécharger Docker](https://www.docker.com/)
 + [Téléchargez le site de référence d’AEM (WKND)](https://github.com/adobe/aem-guides-wknd/releases)
-+ [Documentation du Dispatcher Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
++ [Documentation du Dispatcher Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)
