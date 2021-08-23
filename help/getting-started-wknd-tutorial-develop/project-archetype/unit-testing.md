@@ -11,9 +11,9 @@ level: Beginner
 kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3013'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Consultez le code de ligne de base sur lequel le tutoriel s’appuie :
 
 Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/unit-testing-start) ou extraire le code localement en passant à la branche `tutorial/unit-testing-start`.
 
-## Intention
+## Objectif
 
 1. Comprendre les principes de base des tests unitaires.
 1. Découvrez les structures et les outils couramment utilisés pour tester AEM code.
@@ -76,9 +76,9 @@ Nous utiliserons AEM bonnes pratiques et utiliserons :
 * [Structure de test Mockito](https://site.mockito.org/)
 * [wcm.io Test Framework](https://wcm.io/testing/)  (qui s’appuie sur  [Apache Sling Mocks](https://sling.apache.org/documentation/development/sling-mock.html))
 
-## Tests unitaires et Adobe Cloud Manager {#unit-testing-and-adobe-cloud-manager}
+## Test unitaire et Adobe de Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud ](https://docs.adobe.com/content/help/fr/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) Manager intègre l’exécution de tests unitaires et la création de  [rapports sur la couverture du ](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) code dans son pipeline CI/CD afin d’encourager et de promouvoir les bonnes pratiques en matière de tests unitaires AEM code.
+[Adobe Cloud ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) Manager intègre l’exécution de tests unitaires et la création de  [rapports sur la couverture du ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) code dans son pipeline CI/CD afin d’encourager et de promouvoir les bonnes pratiques en matière de tests unitaires AEM code.
 
 Bien que le code de test unitaire soit une bonne pratique pour n’importe quelle base de code, il est important, lors de l’utilisation de Cloud Manager, de tirer parti de ses fonctionnalités de test de qualité du code et de création de rapports en fournissant des tests unitaires pour que Cloud Manager s’exécute.
 
@@ -288,7 +288,7 @@ Dans ce tutoriel, la dernière approche est utilisée (car nous avons déjà cr�
 
 Dans le contexte d’AEM, le TDD nécessite un niveau d’expertise et est mieux adopté par AEM développeurs maîtrisant le développement d’AEM et les tests unitaires du code d’.
 
-## Configuration AEM contexte de test {#setting-up-aem-test-context}
+## Configuration AEM contexte de test  {#setting-up-aem-test-context}
 
 La plupart du code écrit pour les AEM repose sur les API JCR, Sling ou AEM, qui, à leur tour, nécessitent que le contexte d’une  en cours d’exécution s’exécute correctement.
 
@@ -720,6 +720,6 @@ De même, si nous modifions une méthode de test pour échouer, la version écho
 
 ![échec du package mvn](assets/unit-testing/mvn-package-fail.png)
 
-## Examinez le code {#review-the-code}
+## Vérification du code {#review-the-code}
 
 Affichez le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd) ou passez en revue le code et déployez-le localement sur la branche Git `tutorial/unit-testing-solution`.
