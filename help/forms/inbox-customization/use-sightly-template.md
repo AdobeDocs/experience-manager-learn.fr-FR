@@ -11,9 +11,9 @@ kt: 5830
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '292'
 ht-degree: 9%
 
 ---
@@ -81,7 +81,7 @@ return val;
 
 >[!NOTE]
 >
->Cet article suppose que vous avez installé les [exemples de workflow](assets/review-workflow.zip) et [exemple de formulaire](assets/snap-form.zip) de [l’article précédent](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/inbox-customization/add-married-column.md) de cette série.
+>Cet article suppose que vous avez installé les [exemples de workflow](assets/review-workflow.zip) et [exemple de formulaire](assets/snap-form.zip) de [l’article précédent](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.md) de cette série.
 
 * [Connectez-vous à crx en tant qu’utilisateur administrateur.](http://localhost:4502/crx/de/index.jsp)
 * [modèle d&#39;import sightly](assets/sightly-template.zip)
