@@ -1,7 +1,7 @@
 ---
 title: Personnalisation de la notification d’affectation de tâche
 description: Inclure les données de formulaire dans les e-mails de notification de tâche
-sub-product: formulaires
+sub-product: forms
 feature: Workflow
 topics: integrations
 audience: developer
@@ -13,10 +13,10 @@ thumbnail: KT-6279.jpg
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 8%
+source-wordcount: '444'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 8%
 # Personnalisation de la notification d’affectation de tâche
 
 Le composant Affecter une tâche permet d’affecter des tâches aux participants du workflow. Lorsqu’une tâche est affectée à un utilisateur ou à un groupe, une notification électronique est envoyée à l’utilisateur ou aux membres de groupe définis.
-Cette notification par e-mail contient généralement des données dynamiques liées à la tâche. Ces données dynamiques sont récupérées à l’aide des [propriétés de métadonnées](https://docs.adobe.com/content/help/en/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification) générées par le système.
+Cette notification par e-mail contient généralement des données dynamiques liées à la tâche. Ces données dynamiques sont récupérées à l’aide des [propriétés de métadonnées](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification) générées par le système.
 Pour inclure des valeurs des données de formulaire envoyées dans la notification par e-mail, nous devons créer une propriété de métadonnées personnalisée, puis utiliser ces propriétés de métadonnées personnalisées dans le modèle de courrier électronique.
 
 
@@ -130,7 +130,7 @@ Une fois le composant OSGi créé et déployé sur AEM serveur, configurez le co
 
 ## Pour essayer cela sur votre serveur
 
-* [Configuration du service de messagerie Day CQ](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
+* [Configuration du service de messagerie Day CQ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)
 * Associez un ID de courrier électronique valide à [l’utilisateur admin](http://localhost:4502/security/users.html)
 * Téléchargez et installez [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) à l’aide de [gestionnaire de packages](http://localhost:4502/crx/packmgr/index.jsp).
 * Téléchargez le [formulaire adaptatif](assets/request-travel-authorization.zip) et importez-le dans AEM à partir de l’interface utilisateur des formulaires et documents [.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
