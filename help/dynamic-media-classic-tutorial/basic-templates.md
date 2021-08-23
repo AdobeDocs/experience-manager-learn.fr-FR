@@ -10,9 +10,9 @@ activity: use
 topic: Gestion de contenu
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '6306'
+source-wordcount: '6292'
 ht-degree: 0%
 
 ---
@@ -66,8 +66,8 @@ Comme les modèles de base sont généralement conçus dans Photoshop mais dépl
 
 Les projets de modèle peuvent être relativement simples ou extrêmement complexes en fonction des règles métier et des besoins de l’application. Les modèles de base sont appelés à partir du serveur d’images. Toutefois, en raison de la flexibilité de l’environnement de Dynamic Media Classic, vous pouvez même imbriquer des modèles dans d’autres modèles, ce qui vous permet de créer des images assez complexes qui peuvent être liées par des variables communément nommées.
 
-- En savoir plus sur les [Concepts de base des modèles](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
-- Découvrez comment créer un [modèle de base](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
+- En savoir plus sur les [Concepts de base des modèles](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html).
+- Découvrez comment créer un [modèle de base](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating_a_template).
 
 ## Création d’un modèle de base
 
@@ -189,7 +189,7 @@ Pour ajouter un effet, cliquez sur **Ajouter un effet**, puis choisissez un effe
 
 Les effets d’ombre sont décalés horizontalement ou verticalement par rapport au calque, tandis que les effets de lueur sont appliqués uniformément dans toutes les directions. Les effets internes agissent sur les parties opaques du calque, tandis que les effets externes n’affectent que les zones transparentes.
 
-En savoir plus sur l’[ajout d’effets de calque](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers).
+En savoir plus sur l’[ajout d’effets de calque](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#using-shadow-and-glow-effects-on-layers).
 
 ### Ajout de paramètres
 
@@ -226,7 +226,7 @@ Il s’agit du workflow de création de paramètres :
 >
 >Impossible d’ajouter un paramètre, car la propriété n’apparaît pas ? Il vous suffit de modifier la propriété du calque à partir de sa valeur par défaut (en le déplaçant, le redimensionnement, le masquage, etc.). Vous devriez maintenant voir cette propriété exposée.
 
-En savoir plus sur les [paramètres de modèle](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template-parameters.html).
+En savoir plus sur les [paramètres de modèle](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html).
 
 ## Création d’un modèle avec des calques de texte
 
@@ -315,7 +315,7 @@ Vous pouvez voir l&#39;expression Chocolate Mint Sandal — c&#39;est le texte l
 - Vous pouvez voir une valeur RVB : \red56\green53\blue4 — c&#39;est la couleur du texte.
 - Bien que la taille de police soit de 20, le nombre 20 n’apparaît pas. Cependant, une commande \fs40 s’affiche. Pour une raison étrange, RTF mesure les polices comme des demi-points. Par conséquent, \fs40 est la taille de police !
 
-Vous disposez de suffisamment d’informations pour créer vos paramètres, mais il existe une référence complète de toutes les commandes RTF dans la documentation du serveur d’images. Visitez la [Documentation du serveur d’images](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c).
+Vous disposez de suffisamment d’informations pour créer vos paramètres, mais il existe une référence complète de toutes les commandes RTF dans la documentation du serveur d’images. Visitez la [Documentation du serveur d’images](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/c-text-formatting.html#concept-0d3136db7f6f49668274541cd4b6364c).
 
 #### Ajout de paramètres aux calques de texte
 
@@ -333,7 +333,7 @@ Voici les étapes à suivre pour ajouter des paramètres aux calques de texte.
 >
 >Pour ajouter des paramètres à la couleur du texte, ajoutez séparément des paramètres pour le rouge, le vert et le bleu. Par exemple, si le RTF est `\red56\green53\blue46`, vous ajoutez des paramètres rouges, verts et bleus distincts pour les valeurs 56, 53 et 46. Dans l’URL, vous modifiez la couleur en appelant les trois éléments suivants : `&$red=56&$green=53&$blue=46`.
 
-Découvrez comment [Créer des paramètres de texte dynamique](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
+Découvrez comment [Créer des paramètres de texte dynamique](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template-parameters.html#creating-dynamic-text-parameters).
 
 ## Publication et création d’URL de modèle
 
@@ -347,7 +347,7 @@ Un paramètre d’image prédéfini n’a rien de spécial pour un modèle. Si v
 
 Vous devez exécuter une publication pour que vos modifications soient publiées sur le serveur d’images. Gardez à l’esprit les éléments qui doivent être publiés : les différents calques de ressource image, les polices du texte dynamique et le modèle lui-même. Comme pour d’autres ressources multimédias enrichies Dynamic Media Classic telles que les visionneuses d’images et les visionneuses à 360°, un modèle de base est une construction artificielle. Il s’agit d’un élément de ligne de la base de données qui référence les images et les polices à l’aide d’une série de commandes de diffusion d’images. Ainsi, lorsque vous publiez le modèle, vous ne faites que mettre à jour les données sur le serveur d’images.
 
-En savoir plus sur la [publication de votre modèle](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/template-basics/publishing-templates.html).
+En savoir plus sur la [publication de votre modèle](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/publishing-templates.html).
 
 ### Construction d’URL de modèle
 
