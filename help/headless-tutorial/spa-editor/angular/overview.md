@@ -13,10 +13,10 @@ feature: Éditeur de SPA
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 15%
+source-wordcount: '702'
+ht-degree: 12%
 
 ---
 
@@ -29,15 +29,15 @@ Bienvenue dans un tutoriel en plusieurs parties conçu pour les développeurs qu
 
 *Implémentation SPA WKND*
 
-## À propos d’
+## À propos
 
 L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur comment mettre en oeuvre une application d’Angular pour travailler avec la fonctionnalité d’éditeur SPA d’AEM. Dans un scénario réel, les activités de développement sont ventilées par persona, impliquant souvent un **développeur front-end** et un **développeur back-end**. Nous pensons qu’il est bénéfique pour tout développeur qui sera impliqué dans un projet AEM SPA Editor de suivre ce tutoriel.
 
 Le tutoriel est conçu pour fonctionner avec **AEM en tant que Cloud Service** et est rétrocompatible avec **AEM 6.5.4+** et **la version 6.4.8+**. La SPA est mise en oeuvre à l’aide des éléments suivants :
 
-* [Archétype de projet Maven AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html)
-* [AEM Éditeur SPA](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
-* [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+* [Archétype de projet Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)
+* [AEM Éditeur SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-walkthrough.html#content-editing-experience-with-spa)
+* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * [Angular](https://angular.io/)
 
 *Estimez 1 à 2 heures pour parcourir chaque partie du tutoriel.*
@@ -54,12 +54,12 @@ Avant de commencer ce tutoriel, vous aurez besoin des éléments suivants :
 
 * Connaissances de base en HTML, CSS et JavaScript
 * Familiarité de base avec [Angular](https://angular.io/)
-* [AEM as a Cloud Service SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk),  [AEM 6.5.4+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#65)  ou  [6.4.8+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#64)
+* [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk),  [AEM 6.5.4+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#65)  ou  [6.4.8+](https://helpx.adobe.com/experience-manager/aem-releases-updates.html#64)
 * [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 ou version ultérieure)
 * [Node.](https://nodejs.org/en/) jand  [npm](https://www.npmjs.com/)
 
-*Bien que cela ne soit pas nécessaire, il est préférable de posséder une compréhension de base du  [développement des composants](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) AEM Sites traditionnels.*
+*Bien que cela ne soit pas nécessaire, il est préférable de posséder une compréhension de base du  [développement des composants](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) AEM Sites traditionnels.*
 
 ## Environnement de développement local {#local-dev-environment}
 
@@ -67,9 +67,9 @@ Un environnement de développement local est nécessaire pour terminer ce tutori
 
 >[!NOTE]
 >
-> **Vous découvrez AEM as a Cloud Service ?** Consultez le guide  [suivant pour configurer un environnement de développement local à l’aide du SDK AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
+> **Vous découvrez AEM as a Cloud Service ?** Consultez le guide  [suivant pour configurer un environnement de développement local à l’aide du SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html).
 >
-> **Vous découvrez AEM 6.5 ?** Consultez le guide  [suivant pour configurer un environnement de développement local](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+> **Vous découvrez AEM 6.5 ?** Consultez le guide  [suivant pour configurer un environnement de développement local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr).
 
 ## Étapes suivantes {#next-steps}
 
@@ -79,7 +79,7 @@ Qu&#39;attendez-vous?! Commencez le tutoriel en accédant au chapitre [SPA Proje
 
 Le code de projet de ce tutoriel a été créé pour AEM en tant que Cloud Service. Afin de rendre le code de projet rétrocompatible pour **6.5.4+** et **6.4.8+**, plusieurs modifications ont été apportées.
 
-La balise [UberJar](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html#what-is-the-uberjar) **v6.4.4** a été incluse en tant que dépendance :
+La balise [UberJar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#what-is-the-uberjar) **v6.4.4** a été incluse en tant que dépendance :
 
 ```xml
 <!-- Adobe AEM 6.x Dependencies -->
