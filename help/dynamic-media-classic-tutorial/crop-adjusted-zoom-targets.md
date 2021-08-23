@@ -10,9 +10,9 @@ activity: use
 topic: Gestion de contenu
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2659'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ L’une des principales forces du concept d’image principale de Dynamic Media 
 
 À la fin de cette section du tutoriel, vous saurez comment :
 
-- Recadrez les images dans Dynamic Media Classic et enregistrez-les sous forme de nouveaux fichiers maîtres ou d’images virtuelles. [En savoir plus](https://docs.adobe.com/help/en/dynamic-media-classic/using/master-files/cropping-image.html).
-- Enregistrez les images modifiées virtuelles et utilisez-les à la place des ressources originales. [En savoir plus](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/adjusting-image.html).
-- Créez des cibles de zoom sur vos images pour afficher leurs mises en surbrillance. [En savoir plus](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html).
+- Recadrez les images dans Dynamic Media Classic et enregistrez-les sous forme de nouveaux fichiers maîtres ou d’images virtuelles. [En savoir plus](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html).
+- Enregistrez les images modifiées virtuelles et utilisez-les à la place des ressources originales. [En savoir plus](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/adjusting-image.html).
+- Créez des cibles de zoom sur vos images pour afficher leurs mises en surbrillance. [En savoir plus](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html).
 
 ## Recadrage
 
@@ -45,8 +45,8 @@ Dynamic Media Classic propose quelques outils de retouche d’images, notamment 
 
 Vous pouvez accéder à l’outil Recadrage dans Dynamic Media Classic à partir de la page Détails d’une ressource ou en cliquant sur le bouton **Modifier** . Vous pouvez utiliser l’outil pour recadrer de deux manières :
 
-- Mode de recadrage par défaut dans lequel vous faites glisser les poignées de la fenêtre de recadrage ou saisissez des valeurs dans la zone Taille. Découvrez comment effectuer un [recadrage manuel](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
-- Rogner. Utilisez cette option pour supprimer des espaces blancs supplémentaires autour de votre image en calculant le nombre de pixels qui ne correspondent pas à votre image. Découvrez comment [Recadrer par rognage](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
+- Mode de recadrage par défaut dans lequel vous faites glisser les poignées de la fenêtre de recadrage ou saisissez des valeurs dans la zone Taille. Découvrez comment effectuer un [recadrage manuel](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
+- Rogner. Utilisez cette option pour supprimer des espaces blancs supplémentaires autour de votre image en calculant le nombre de pixels qui ne correspondent pas à votre image. Découvrez comment [Recadrer par rognage](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### _Recadrage manuel_
 
@@ -137,7 +137,7 @@ Le processus est très simple : cliquez sur la fonction, donnez-lui un nom expli
 
 Le choix de la visionneuse est un autre facteur permettant de décider si vous souhaitez utiliser les cibles de zoom. Tous les types de visionneuses ne peuvent pas afficher de cibles de zoom (par exemple, la visionneuse de visionneuse de fenêtre déroulante ne les prend pas en charge).
 
-Découvrez comment [Créer des cibles de zoom](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
+Découvrez comment [Créer des cibles de zoom](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
 
 ![image](assets/crop-adjusted-zoom-targets/zoom-targets.jpg)
 
