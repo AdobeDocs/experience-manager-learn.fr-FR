@@ -7,10 +7,10 @@ feature: Fragments d’expérience
 topic: Personnalisation
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1101'
-ht-degree: 4%
+source-wordcount: '1098'
+ht-degree: 5%
 
 ---
 
@@ -87,7 +87,7 @@ Une propriété est un conteneur que vous remplissez d’extensions, de règles,
 
 #### Ajout d’une extension Target
 
-L’extension Adobe Target prend en charge les mises en oeuvre côté client à l’aide du SDK JavaScript Target pour le web moderne, `at.js`. Les clients qui utilisent encore la bibliothèque obsolète de Target, `mbox.js`, [doivent effectuer la mise à niveau vers at.js](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/upgrading-from-atjs-1x-to-atjs-20.html) pour utiliser Launch.
+L’extension Adobe Target prend en charge les mises en oeuvre côté client à l’aide du SDK JavaScript Target pour le web moderne, `at.js`. Les clients qui utilisent encore la bibliothèque obsolète de Target, `mbox.js`, [doivent effectuer la mise à niveau vers at.js](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html) pour utiliser Launch.
 
 L’extension Target se compose de deux parties principales :
 
@@ -137,7 +137,7 @@ L’extension Target se compose de deux parties principales :
 
 >[!NOTE]
 >
-> Accordez à l’intégration d’Adobe I/O l’accès permettant de sélectionner des espaces de travail avec le rôle [approprié afin de permettre à une équipe centrale d’apporter des modifications pilotées par l’API dans seulement quelques espaces de travail](https://docs.adobe.com/content/help/en/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
+> Accordez à l’intégration d’Adobe I/O l’accès permettant de sélectionner des espaces de travail avec le rôle [approprié afin de permettre à une équipe centrale d’apporter des modifications pilotées par l’API dans seulement quelques espaces de travail](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html).
 
 1. Créez l&#39;intégration IMS dans AEM à l&#39;aide des informations d&#39;identification d&#39;Adobe I/O. (01:12 à 03:55)
 2. Dans Experience Platform Launch, créez une propriété. (couvert [above](#create-launch-property))
