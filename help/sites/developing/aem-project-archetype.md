@@ -12,10 +12,10 @@ thumbnail: 32550.jpg
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 54%
+source-wordcount: '79'
+ht-degree: 53%
 
 ---
 
@@ -29,4 +29,4 @@ Le projet AEM contient l’ensemble du code et des configurations pour une mise 
 ## Ressources supplémentaires {#additional-resources}
 
 * [Projet GitHub](https://github.com/adobe/aem-project-archetype)
-* [Documentation AEM de l’archétype de projet](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html)
+* [Documentation AEM de l’archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)
