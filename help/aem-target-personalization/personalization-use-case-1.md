@@ -7,9 +7,9 @@ feature: Fragments d’expérience
 topic: Personnalisation
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1728'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Pour cet exercice, les utilisateurs suivants doivent être impliqués et effectu
 
 ### Prérequis
 
-* **AEM **
+* **AEM**
    * [AEM instance de création et d’édition ](./implementation.md#getting-aem) sur localhost 4502 et 4503 respectivement.
 * **Experience Cloud**
    * Accès à vos organisations Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com
@@ -58,8 +58,8 @@ Pour cet exercice, les utilisateurs suivants doivent être impliqués et effectu
 1. Selon les besoins, AEM Éditeur de contenu crée un fragment d’expérience pour le bloc de contenu et l’exporte vers Adobe Target as a Offer. Pour diffuser du contenu personnalisé pour tous les états des États-Unis, l’auteur de contenu peut créer une variation principale de fragment d’expérience, puis créer 50 autres variations, une pour chaque état. Le contenu de chaque variation d’état avec les images et le texte appropriés peut ensuite être modifié manuellement. Lors de la création d’un fragment d’expérience, les éditeurs de contenu peuvent accéder rapidement à toutes les ressources disponibles dans AEM Assets à l’aide de l’option de recherche de ressources. Lorsqu’un fragment d’expérience est exporté vers Adobe Target, toutes ses variantes sont également transférées vers Adobe Target en tant qu’offres.
 
 1. Après avoir exporté le fragment d’expérience d’AEM vers Adobe Target en tant qu’offres, les marketeurs peuvent créer une activité dans Target à l’aide de ces offres. Sur la base de la campagne SkateFest du site WKND, le marketeur doit créer et offrir une expérience personnalisée aux visiteurs du site WKND de chaque État. Pour créer une activité de ciblage d’expérience, le marketeur doit identifier les audiences. Pour notre campagne WKND SkateFest, nous devons créer 50 audiences distinctes, en fonction de leur emplacement d’où elles visitent le site web WKND.
-   * [](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) Les audiences définissent la cible de votre activité et sont utilisées partout où le ciblage est disponible. Les audiences cibles sont un ensemble défini de critères de visiteurs. Les offres peuvent être ciblées sur des audiences (ou des segments) spécifiques. Seuls les visiteurs qui appartiennent à cette audience voient l’expérience qui leur est ciblée.  Par exemple, vous pouvez diffuser une offre à une audience composée de visiteurs qui utilisent un navigateur particulier ou d’une zone géographique spécifique.
-   * Une [offre](https://docs.adobe.com/content/help/en/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9) est le contenu qui s’affiche sur vos pages web pendant les campagnes ou activités. Lorsque vous testez vos pages web, vous mesurez le succès de chaque expérience avec différentes offres dans vos emplacements. Une offre peut contenir différents types de contenu, notamment :
+   * [](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_3F32DA46BDF947878DD79DBB97040D01) Les audiences définissent la cible de votre activité et sont utilisées partout où le ciblage est disponible. Les audiences cibles sont un ensemble défini de critères de visiteurs. Les offres peuvent être ciblées sur des audiences (ou des segments) spécifiques. Seuls les visiteurs qui appartiennent à cette audience voient l’expérience qui leur est ciblée.  Par exemple, vous pouvez diffuser une offre à une audience composée de visiteurs qui utilisent un navigateur particulier ou d’une zone géographique spécifique.
+   * Une [offre](https://experienceleague.adobe.com/docs/target/using/introduction/target-key-concepts.html#section_973D4CC4CEB44711BBB9A21BF74B89E9) est le contenu qui s’affiche sur vos pages web pendant les campagnes ou activités. Lorsque vous testez vos pages web, vous mesurez le succès de chaque expérience avec différentes offres dans vos emplacements. Une offre peut contenir différents types de contenu, notamment :
       * Image
       * Texte
       * **HTML**
@@ -77,7 +77,7 @@ Pour cet exercice, les utilisateurs suivants doivent être impliqués et effectu
 
 ## Activités marketing
 
-### Créer une audience avec le géociblage {#marketer-audience}
+### Création d’une audience avec le géociblage {#marketer-audience}
 
 1. Accédez à vos organisations [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (<https://>`<yourcompany>`.experiencecloud.adobe.com)
 1. Connectez-vous à l’aide de votre Adobe ID et assurez-vous que vous vous trouvez dans la bonne organisation.
