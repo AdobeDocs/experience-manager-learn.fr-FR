@@ -11,10 +11,10 @@ level: Beginner
 mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 4%
+source-wordcount: '1150'
+ht-degree: 3%
 
 ---
 
@@ -29,7 +29,7 @@ Examinez les outils et instructions requis pour configurer un [environnement de 
 
 L’IDE utilisé dans les vidéos est [Visual Studio Code](https://code.visualstudio.com/) et le module externe [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) .
 
-## Intention {#objective}
+## Objectif {#objective}
 
 1. Découvrez le rôle des modèles HTL et des modèles Sling pour effectuer dynamiquement le rendu HTML.
 1. Découvrez comment les boîtes de dialogue sont utilisées pour faciliter la création de contenu.
@@ -97,9 +97,9 @@ Vous trouverez ci-dessous les étapes de haut niveau effectuées dans la vidéo 
 1. Passez en mode Développeur, affichez le chemin d’accès au contenu dans CRXDE-Lite et examinez les propriétés de l’instance de composant.
 1. Utilisez CRXDE-Lite pour afficher le script `cq:dialog` et `helloworld.html` situé à l’emplacement `/apps/wknd/components/content/helloworld`.
 
-## HTL (HTML Template Language) et boîtes de dialogue {#htl-dialogs}
+## HTL (langage HTL) et boîtes de dialogue {#htl-dialogs}
 
-Le langage de modèle HTML ou **[HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/getting-started/getting-started.html)** est un langage de modèle léger côté serveur utilisé par les composants d’AEM pour effectuer le rendu du contenu.
+Le langage de modèle HTML ou **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html)** est un langage de modèle léger côté serveur utilisé par les composants d’AEM pour effectuer le rendu du contenu.
 
 **** Les boîtes de dialogue définissent les configurations disponibles pouvant être créées pour un composant.
 
@@ -355,7 +355,7 @@ Vous trouverez ci-dessous les étapes de haut niveau effectuées dans la vidéo 
    >
    > Pour des raisons de performances, CSS et JavaScript sont fréquemment mis en cache par le navigateur. Si vous ne voyez pas immédiatement la modification de la bibliothèque cliente, effectuez une actualisation stricte et effacez le cache du navigateur. Il peut s’avérer utile d’utiliser une fenêtre d’incognito pour garantir un nouveau cache.
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous venez d’apprendre les bases du développement de composants dans Adobe Experience Manager !
 
