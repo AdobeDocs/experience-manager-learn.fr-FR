@@ -7,10 +7,10 @@ feature: Fragments de contenu, API
 topic: Sans affichage, gestion de contenu
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 11%
+source-wordcount: '998'
+ht-degree: 10%
 
 ---
 
@@ -28,7 +28,7 @@ Ce chapitre traite de l’activation et de la définition des modèles de fragme
 
 ## Activation des modèles de fragment de contenu  
 
-Les modèles de fragment de contenu **doivent** être activés via **[AEM [!UICONTROL Navigateur de configuration]](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/configurations.html)**.
+Les modèles de fragment de contenu **doivent** être activés via **[AEM [!UICONTROL Navigateur de configuration]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)**.
 
 Si les modèles de fragment de contenu sont **non** activés pour une configuration, le bouton **[!UICONTROL Créer] > [!UICONTROL Fragment de contenu]** n’apparaît pas pour la configuration d’AEM appropriée.
 
@@ -40,7 +40,7 @@ Si les modèles de fragment de contenu sont **non** activés pour une configurat
 >
 >Lorsque la configuration `global` est utilisée, elle s’applique à tout le contenu et `cq:conf` n’a pas besoin d’être défini.
 >
->Pour plus d’informations, consultez la documentation relative au [[!UICONTROL Navigateur de configuration].](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)
+>Pour plus d’informations, consultez la documentation relative au [[!UICONTROL Navigateur de configuration].](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)
 
 1. Connectez-vous à l’auteur AEM en tant qu’utilisateur avec les autorisations appropriées pour modifier la configuration appropriée.
    * Pour ce tutoriel, l’utilisateur **admin** peut être utilisé.
@@ -55,7 +55,7 @@ Si les modèles de fragment de contenu sont **non** activés pour une configurat
    >Cette modification de configuration n’est pas réversible à partir de l’interface utilisateur web [!UICONTROL AEM Configuration]. Pour annuler cette configuration :
    >    
    >    1. Ouvrez [CRXDE Lite](http://localhost:4502/crx/de)
-   >    1. Accédez à `/conf/wknd-mobile/settings/dam/cfm`. 
+   >    1. Accédez à `/conf/wknd-mobile/settings/dam/cfm`.
    >    1. Supprimer le noeud `models`
 
    >    
