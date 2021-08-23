@@ -11,10 +11,10 @@ doc-type: article
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2025'
-ht-degree: 8%
+source-wordcount: '2029'
+ht-degree: 7%
 
 ---
 
@@ -45,7 +45,7 @@ AEM est basé sur 4 ensembles d’API Java Principaux.
 
 La règle générale est de préférer les API/abstractions dans l’ordre suivant :
 
-1. **AEM **
+1. **AEM**
 1. **[!DNL Sling]**
 1. **JCR**
 1. **OSGi**
@@ -100,7 +100,7 @@ L’API préférée est [AEM Query Builder](https://helpx.adobe.com/experience-m
 * [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) Prédicats prêts à l’emploi prenant en charge les exigences de requête courantes
 
 * API extensible, permettant le développement de prédicats de requête [personnalisés ](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/implementing-custom-predicate-evaluator.html)
-* Les API JCR-SQL2 et XPath peuvent être exécutées directement via [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) et [JCR](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html), renvoyant respectivement les résultats des noeuds [[!DNL Sling] Resources](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) ou [JCR](https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
+* Les API JCR-SQL2 et XPath peuvent être exécutées directement via [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) et [JCR](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html), renvoyant respectivement les résultats des noeuds [[!DNL Sling] Resources](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) ou [JCR](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 >[!CAUTION]
 >
@@ -137,9 +137,9 @@ L’API préférée est [AEM Query Builder](https://helpx.adobe.com/experience-m
 
 ## API JCR
 
-* **[JavaDocs JCR 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
+* **[JavaDocs JCR 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
 
-Les API [JCR (Java Content Repository) 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) font partie d’une spécification pour les implémentations JCR (dans le cas d’AEM, [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). Toute implémentation JCR doit se conformer à ces API et les mettre en oeuvre. Il s’agit donc de l’API de niveau le plus bas pour interagir avec le contenu AEM.
+Les API [JCR (Java Content Repository) 2.0](https://docs.adobe.com/content/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) font partie d’une spécification pour les implémentations JCR (dans le cas d’AEM, [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). Toute implémentation JCR doit se conformer à ces API et les mettre en oeuvre. Il s’agit donc de l’API de niveau le plus bas pour interagir avec le contenu AEM.
 
 Le JCR lui-même est une AEM de banque de données NoSQL hiérarchique/basée sur une arborescence qui utilise comme référentiel de contenu. Le JCR dispose d’une vaste gamme d’API prises en charge, allant du CRUD de contenu à l’interrogation de contenu. Malgré cette API robuste, il est rare qu’elles soient préférées aux AEM de niveau supérieur et aux abstractions [!DNL Sling].
 
@@ -151,7 +151,7 @@ Bien que JCR soit AEM référentiel de contenu, ses API ne sont PAS la méthode 
 
 >[!CAUTION]
 >
->L’utilisation étendue des interfaces Session et Node des API JCR dans une application AEM est une utilisation inodore du code. Assurez-vous que les API [!DNL Sling] ne doivent pas être utilisées à la place.
+>L’utilisation généralisée des interfaces Session et Node des API JCR dans une application AEM est une utilisation puissante du code. Assurez-vous que les API [!DNL Sling] ne doivent pas être utilisées à la place.
 
 ### Utilisations courantes des API JCR
 
@@ -202,11 +202,11 @@ Vous trouverez ci-dessous des exceptions courantes aux règles définies ci-dess
 
 * AEM QueryBuilder ne prend pas en charge certaines fonctions de requête telles que [suggestions](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Suggestions), les indices de vérification orthographique et d’index parmi d’autres fonctions moins courantes. Il est préférable d’effectuer des requêtes avec ces fonctions JCR-SQL2.
 
-### [!DNL Sling] Enregistrement de servlet  {#sling-servlet-registration}
+### [!DNL Sling] Enregistrement de servlet {#sling-servlet-registration}
 
 * [!DNL Sling] enregistrement de servlet, préférez les annotations  [OSGi DS 1.2 avec @](https://sling.apache.org/documentation/the-sling-engine/servlets.html) SlingServletResourceTypesover  `@SlingServlet`
 
-### [!DNL Sling] Enregistrement de filtre  {#sling-filter-registration}
+### [!DNL Sling] Enregistrement de filtre {#sling-filter-registration}
 
 * [!DNL Sling] enregistrement de filtre, préférez les annotations  [OSGi DS 1.2 avec @](https://sling.apache.org/documentation/the-sling-engine/filters.html) SlingServletFilterover  `@SlingFilter`
 
@@ -325,7 +325,7 @@ String title = asset.getMetadataValue("dc:title");
 Calendar lastModified = (Calendar) asset.getMetadata("cq:lastModified");
 ```
 
-### Lire [!DNL Sling] [!DNL Resource] propriétés {#read-sling-resource-properties}
+### Lire les [!DNL Sling] [!DNL Resource] propriétés {#read-sling-resource-properties}
 
 Lorsque les propriétés sont stockées dans des emplacements (propriétés ou ressources relatives) auxquels les API AEM (Page, Asset) ne peuvent pas accéder directement, les ressources [!DNL Sling] et les ValueMaps peuvent être utilisées pour obtenir les données.
 
