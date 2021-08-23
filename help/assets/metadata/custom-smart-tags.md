@@ -8,9 +8,9 @@ thumbnail: 22254.jpg
 topic: Gestion de contenu
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '151'
 ht-degree: 3%
 
 ---
@@ -36,6 +36,6 @@ Découvrez comment configurer l’entraînement des balises intelligentes dans A
 
 ## Ressources supplémentaires
 
-* AEM 6.4 nécessite le [dernier Service Pack](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
+* AEM 6.4 nécessite le [dernier Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
 
 
