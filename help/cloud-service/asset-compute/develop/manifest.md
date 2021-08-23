@@ -12,9 +12,9 @@ thumbnail: KT-6281.jpg
 topic: Intégrations, développement
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '438'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ La section `manifest.yml`, située à la racine du projet Asset compute, décrit
 
 Les programmes de travail sont définis comme des entrées d’action Adobe I/O Runtime sous `actions` et se composent d’un ensemble de configurations.
 
-Les utilisateurs accédant à d’autres intégrations d’Adobe I/O doivent définir la propriété `annotations -> require-adobe-auth` sur `true`, car cette [expose les informations d’identification de l’Adobe I/O du worker](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) via l’objet `params.auth`. Cela est généralement requis lorsque le programme de travail appelle des API d’Adobe I/O telles que les API Adobe Photoshop, Lightroom ou Sensei, et peut être basculé par programme de travail.
+Les utilisateurs accédant à d’autres intégrations d’Adobe I/O doivent définir la propriété `annotations -> require-adobe-auth` sur `true`, car cette [expose les informations d’identification de l’Adobe I/O du worker](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#access-adobe-apis) via l’objet `params.auth`. Cela est généralement requis lorsque le programme de travail appelle des API d’Adobe I/O telles que les API Adobe Photoshop, Lightroom ou Sensei, et peut être basculé par programme de travail.
 
 1. Ouvrez et passez en revue le programme de travail généré automatiquement `manifest.yml`. Les projets qui contiennent plusieurs objets Worker Asset compute doivent définir une entrée pour chaque objet Worker sous le tableau `actions` .
 
@@ -53,7 +53,7 @@ packages:
 
 Chaque programme de travail peut configurer les [limites](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/system_settings.md) pour son contexte d’exécution dans Adobe I/O Runtime. Ces valeurs doivent être affinées afin de fournir un dimensionnement optimal pour le programme de travail, en fonction du volume, du taux et du type de ressources qu’il va calculer, ainsi que du type de travail qu’il effectue.
 
-Consultez les [conseils sur le dimensionnement des Adobes](https://docs.adobe.com/content/help/en/asset-compute/using/extend/develop-custom-application.html#sizing-workers) avant de définir des limites. Les objets Worker Asset compute peuvent manquer de mémoire lors du traitement des ressources, ce qui entraîne la fin de l’exécution de Adobe I/O Runtime. Assurez-vous donc que le programme de travail est dimensionné de manière appropriée pour gérer toutes les ressources candidates.
+Consultez les [conseils sur le dimensionnement des Adobes](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html#sizing-workers) avant de définir des limites. Les objets Worker Asset compute peuvent manquer de mémoire lors du traitement des ressources, ce qui entraîne la fin de l’exécution de Adobe I/O Runtime. Assurez-vous donc que le programme de travail est dimensionné de manière appropriée pour gérer toutes les ressources candidates.
 
 1. Ajoutez une section `inputs` à la nouvelle entrée d’actions `wknd-asset-compute`. Cela permet d’ajuster les performances globales et l’allocation des ressources du travailleur d’Asset compute.
 
