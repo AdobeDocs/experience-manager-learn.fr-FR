@@ -12,10 +12,10 @@ level: Beginner
 kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2003'
-ht-degree: 3%
+source-wordcount: '1999'
+ht-degree: 2%
 
 ---
 
@@ -61,7 +61,7 @@ Consultez le code de ligne de base sur lequel le tutoriel s’appuie :
 
 Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/style-system-solution) ou extraire le code localement en passant à la branche `tutorial/style-system-solution`.
 
-## Intention
+## Objectif
 
 1. Découvrez comment utiliser le système de style pour appliquer une page CSS spécifique à la marque à AEM les composants principaux.
 1. Découvrez la notation BEM et comment elle peut être utilisée pour définir soigneusement les styles.
@@ -69,7 +69,7 @@ Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/a
 
 ## Ce que vous allez créer {#what-you-will-build}
 
-Dans ce chapitre, nous utiliserons la fonction [Système de style](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) pour créer des variantes des composants **Titre** et **Texte** utilisés sur la page Article.
+Dans ce chapitre, nous utiliserons la fonction [Système de style](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html) pour créer des variantes des composants **Titre** et **Texte** utilisés sur la page Article.
 
 ![Styles disponibles pour le titre](assets/style-system/styles-added-title.png)
 
@@ -77,7 +77,7 @@ Dans ce chapitre, nous utiliserons la fonction [Système de style](https://docs.
 
 ## Arrière-plan {#background}
 
-Le [système de style](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/developing/components/style-system.html) permet aux développeurs et aux éditeurs de modèle de créer plusieurs variantes visuelles d’un composant. Les auteurs peuvent ensuite décider quel style utiliser lors de la composition d’une page. Nous utiliserons le système de style tout le reste du tutoriel pour obtenir plusieurs styles uniques, tout en utilisant les composants principaux dans une approche à code faible.
+Le [système de style](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) permet aux développeurs et aux éditeurs de modèle de créer plusieurs variantes visuelles d’un composant. Les auteurs peuvent ensuite décider quel style utiliser lors de la composition d’une page. Nous utiliserons le système de style tout le reste du tutoriel pour obtenir plusieurs styles uniques, tout en utilisant les composants principaux dans une approche à code faible.
 
 L’idée générale du système de style est que les auteurs peuvent choisir différents styles de l’apparence d’un composant. Les &quot;styles&quot; sont pris en charge par des classes CSS supplémentaires qui sont injectées dans la balise div externe d’un composant. Dans les bibliothèques clientes, des règles CSS sont ajoutées en fonction de ces classes de style afin que le composant change d’aspect.
 
@@ -232,7 +232,7 @@ Enfin, en tant qu’auteur, nous pouvons choisir d’appliquer le style soulign�
 
 1. Cliquez sur l’icône **Informations sur la page** > **Afficher comme publié** pour inspecter la page en dehors de l’éditeur d’AEM.
 
-   ![Afficher comme publié(e) ](assets/style-system/view-as-published.png)
+   ![Afficher comme publié(e)](assets/style-system/view-as-published.png)
 
    Utilisez les outils de développement de votre navigateur pour vérifier que la classe CSS `cmp-title--underline` appliquée à la balise autour du composant Titre est appliquée à la balise div externe.
 
@@ -421,7 +421,7 @@ Au lieu de cibler l’élément HTML `main`, le système de style peut être uti
 
 1. **Défi bonus**  : utilisez les leçons tirées des exercices précédents et utilisez le système de style pour mettre en oeuvre un  **style de largeur** fluide  **à** largeur fixe pour le composant Conteneur.
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, la page de l&#39;article est presque entièrement stylisée et vous avez acquis une expérience pratique en utilisant le système de style AEM.
 
