@@ -13,10 +13,10 @@ thumbnail: 5311-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2390'
-ht-degree: 2%
+source-wordcount: '2384'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ Découvrez comment mapper les composants Angular aux composants Adobe Experience
 
 Ce chapitre approfondit l’API de modèle JSON AEM et la manière dont le contenu JSON exposé par un composant AEM peut être automatiquement injecté dans un composant d’Angular en tant que props.
 
-## Intention
+## Objectif
 
 1. Découvrez comment mapper AEM composants à SPA composants.
 2. Comprendre la différence entre les composants **Container** et **Content**.
@@ -77,7 +77,7 @@ Le concept de base consiste à mapper un composant SPA à un composant AEM. AEM 
 
 ## Inspect du composant Texte
 
-L’ [archétype de projet AEM](https://github.com/adobe/aem-project-archetype) fournit un composant `Text` mappé au composant [Texte AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html). Il s’agit d’un exemple de composant **content**, dans la mesure où il effectue le rendu de *content* à partir d’AEM.
+L’ [archétype de projet AEM](https://github.com/adobe/aem-project-archetype) fournit un composant `Text` mappé au composant [Texte AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Il s’agit d’un exemple de composant **content**, dans la mesure où il effectue le rendu de *content* à partir d’AEM.
 
 Voyons comment fonctionne le composant.
 
@@ -201,7 +201,7 @@ Voyons comment fonctionne le composant.
 
 ## Création du composant d’image
 
-Créez ensuite un composant d’Angular `Image` mappé à l’AEM [Composant d’image](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/image.html). Le composant `Image` est un autre exemple de composant **content**.
+Créez ensuite un composant d’Angular `Image` mappé à l’AEM [Composant d’image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html). Le composant `Image` est un autre exemple de composant **content**.
 
 ### Inspect du JSON
 
@@ -437,7 +437,7 @@ Examinons davantage le conteneur de mises en page.
 
    Le composant **Conteneur de mises en page** a une valeur `sling:resourceType` de `wcm/foundation/components/responsivegrid` et est reconnu par l’éditeur de SPA à l’aide de la propriété `:type`, tout comme les composants `Text` et `Image`.
 
-   Les mêmes fonctionnalités de redimensionnement d’un composant à l’aide du [mode Mise en page](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) sont disponibles avec l’éditeur de SPA.
+   Les mêmes fonctionnalités de redimensionnement d’un composant à l’aide du [mode Mise en page](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) sont disponibles avec l’éditeur de SPA.
 
 3. Revenez à [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Ajoutez d’autres composants **Image** et essayez de les redimensionner à l’aide de l’option **Mise en page** :
 
@@ -457,7 +457,7 @@ Examinons davantage le conteneur de mises en page.
 
    ![Exemple de création finale de chapitre](assets/map-components/final-page.png)
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous avez appris à mapper SPA composants à AEM composants et vous avez mis en oeuvre un nouveau composant `Image`. Vous avez également eu la possibilité d’explorer les fonctionnalités réactives du **conteneur de mises en page**.
 
