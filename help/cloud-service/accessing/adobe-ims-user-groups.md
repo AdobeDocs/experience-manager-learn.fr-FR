@@ -1,21 +1,17 @@
 ---
 title: Adobe des groupes d’utilisateurs IMS et des AEM
 description:  Les groupes d’utilisateurs IMS d’Adobe établissent des ensembles logiques d’utilisateurs exposés à AEM, où ils peuvent être utilisés pour définir des autorisations pour les utilisateurs AEM.
-feature: 'Utilisateurs et groupes '
-topics: authentication
 version: cloud-service
-activity: setup
-audience: administrator
-doc-type: feature video
-kt: 4999
-thumbnail: 39150.jpg
 topic: Administration, sécurité
+feature: Utilisateurs et groupes
 role: Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+kt: 4999
+thumbnail: 39150.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
 source-wordcount: '97'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
