@@ -6,9 +6,9 @@ version: 6.5
 topic: Gestion de contenu
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '107'
+source-wordcount: '105'
 ht-degree: 3%
 
 ---
@@ -25,4 +25,4 @@ La fonction Ressources connectées permet à un auteur AEM Sites de partager fac
 * 03:30 — Utilisation d’une image des ressources connectées
 * 04:42 — Configurations de l’administrateur pour activer la fonction Ressources connectées
 
-Consultez les [déploiements pris en charge pour les ressources connectées](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) pour savoir si votre déploiement AEM peut prendre en charge les ressources connectées.
+Consultez les [déploiements pris en charge pour les ressources connectées](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) pour savoir si votre déploiement AEM peut prendre en charge les ressources connectées.
