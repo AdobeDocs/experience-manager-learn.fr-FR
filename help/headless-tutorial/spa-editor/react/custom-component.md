@@ -11,19 +11,19 @@ thumbnail: 5878-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1228'
 ht-degree: 3%
 
 ---
 
 
-# Créer un composant météorologique personnalisé {#custom-component}
+# Création d’un composant météorologique personnalisé {#custom-component}
 
 Découvrez comment créer un composant météorologique personnalisé à utiliser avec l’éditeur SPA d’AEM. Découvrez comment développer des boîtes de dialogue de création et des modèles Sling pour étendre le modèle JSON afin de renseigner un composant personnalisé. Les [API de météo ouverte](https://openweathermap.org) et [composant de météo ouverte React](https://www.npmjs.com/package/react-open-weather) sont utilisés.
 
-## Intention
+## Objectif
 
 1. Comprendre le rôle des modèles Sling dans la manipulation de l’API de modèle JSON fournie par AEM.
 2. Découvrez comment créer des boîtes de dialogue de composant AEM.
@@ -145,7 +145,7 @@ Un composant AEM est défini comme un noeud et des propriétés. Dans le projet,
    >
    > Vous pouvez afficher beaucoup plus [d’exemples de boîtes de dialogue en affichant les définitions des composants principaux](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). Vous pouvez également afficher d’autres champs de formulaire, tels que `select`, `textarea`, `pathfield`, disponibles sous `/libs/granite/ui/components/coral/foundation/form` dans [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form).
 
-   Avec un composant d’AEM traditionnel, un script [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) est généralement requis. Comme le SPA effectue le rendu du composant, aucun script HTL n’est nécessaire.
+   Avec un composant d’AEM traditionnel, un script [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) est généralement requis. Comme le SPA effectue le rendu du composant, aucun script HTL n’est nécessaire.
 
 ## Création d’un modèle Sling
 
@@ -391,7 +391,7 @@ Créez ensuite le composant `Open Weather` à l’aide de l’éditeur SPA d’A
 
    Les valeurs JSON sont générées par le modèle Sling. Ces valeurs JSON sont transmises au composant React sous la forme de props.
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous avez appris à créer un composant d’AEM personnalisé à utiliser avec l’éditeur SPA. Vous avez également appris comment les boîtes de dialogue, les propriétés JCR et les modèles Sling interagissent pour générer le modèle JSON.
 
