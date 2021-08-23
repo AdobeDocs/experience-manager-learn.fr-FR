@@ -12,9 +12,9 @@ thumbnail: kt-4419.jpg
 topic: Développement
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '484'
 ht-degree: 12%
 
 ---
@@ -26,7 +26,7 @@ HTML5 forms est une nouvelle fonctionnalité d’Adobe Experience Manager qui of
 
 ## Prérequis
 
-Vérifiez que vous disposez d’une instance de travail d’AEM Forms. Veuillez suivre le [guide d’installation](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) pour installer et configurer AEM Forms.
+Vérifiez que vous disposez d’une instance de travail d’AEM Forms. Veuillez suivre le [guide d’installation](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) pour installer et configurer AEM Forms.
 
 ## Créer votre premier formulaire HTML5
 
@@ -58,7 +58,7 @@ Les propriétés avancées du modèle xdp vous permettent de définir la date de
 
 **URL d’envoi**  : il s’agit de l’URL qui gérera l’envoi du formulaire HTML5. Nous aborderons cela dans la prochaine leçon. Si aucune URL d’envoi n’est spécifiée ici, le gestionnaire d’envoi par défaut est appelé, ce qui renvoie les données de formulaire au navigateur.
 
-**Profil de rendu HTML**  : les formulaires HTML5 ont la notion de profils qui sont exposés en tant que points de fin REST pour activer le rendu mobile des modèles de formulaire. La majorité des fois où le profil de rendu par défaut doit être suffisant pour générer le formulaire. Si le profil de rendu par défaut ne répond pas à vos besoins, un [profil personnalisé](https://docs.adobe.com/content/help/en/experience-manager-64/forms/html5-forms/custom-profile.html) peut être créé et associé au formulaire.
+**Profil de rendu HTML**  : les formulaires HTML5 ont la notion de profils qui sont exposés en tant que points de fin REST pour activer le rendu mobile des modèles de formulaire. La majorité des fois où le profil de rendu par défaut doit être suffisant pour générer le formulaire. Si le profil de rendu par défaut ne répond pas à vos besoins, un [profil personnalisé](https://experienceleague.adobe.com/docs/experience-manager-64/forms/html5-forms/custom-profile.html) peut être créé et associé au formulaire.
 
 **Service de préremplissage**  : le service de préremplissage est généralement utilisé pour remplir votre formulaire avec des données récupérées à partir d’une source de données d’arrière-plan.
 
