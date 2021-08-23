@@ -12,10 +12,10 @@ thumbnail: 4988-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 32320905786682a852baf7d777cb06de0072c439
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1625'
-ht-degree: 1%
+source-wordcount: '1623'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Découvrez comment plusieurs vues de la SPA peuvent être prises en charge en mappant sur AEM pages avec le SDK de l’éditeur de la version de la suite de rapports. La navigation dynamique est mise en oeuvre à l’aide des composants principaux React Router et React.
 
-## Intention
+## Objectif
 
 1. Découvrez les options de routage du modèle SPA disponibles lors de l’utilisation de SPA Editor.
 1. Découvrez comment utiliser [le routeur de réaction](https://reacttraining.com/react-router/) pour naviguer entre les différentes vues de la SPA.
@@ -32,7 +32,7 @@ Découvrez comment plusieurs vues de la SPA peuvent être prises en charge en ma
 
 ## Ce que vous allez créer
 
-Ce chapitre ajoute une navigation à un SPA dans AEM. Le menu de navigation sera piloté par la hiérarchie AEM page et utilisera le modèle JSON fourni par le [composant principal de navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/navigation.html).
+Ce chapitre ajoute une navigation à un SPA dans AEM. Le menu de navigation sera piloté par la hiérarchie AEM page et utilisera le modèle JSON fourni par le [composant principal de navigation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html).
 
 ![Navigation ajoutée](assets/navigation-routing/navigation-added.png)
 
@@ -208,7 +208,7 @@ Examinez ensuite le modèle JSON qui anime l’expérience d’affichage multipl
 
 1. Testez les liens profonds en accédant directement à : [http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html](http://localhost:4502/content/wknd-spa-react/us/en/home/page-2.html). Notez également que le bouton Précédent du navigateur continue de fonctionner.
 
-## Routage React Inspect {#react-routing}
+## Routage React Inspect  {#react-routing}
 
 La navigation et le routage sont implémentés avec [React Router](https://reactrouter.com/). React Router est un ensemble de composants de navigation pour les applications React. [AEM les ](https://github.com/adobe/aem-react-core-wcm-components-base) composants principaux React utilisent les fonctionnalités de React Router pour implémenter le composant  **** Navigation utilisé dans les étapes précédentes.
 
@@ -326,7 +326,7 @@ Ensuite, examinez comment React Router est intégré à la SPA et testez-le à l
 
    Cela peut aider à illustrer la différence entre le routage SPA et les liens de page web standard.
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous avez appris comment plusieurs vues dans la SPA peuvent être prises en charge en mappant sur AEM pages avec le SDK de l’éditeur de formulaires. La navigation dynamique a été mise en oeuvre à l’aide de React Router et ajoutée au composant `Header`.
 
