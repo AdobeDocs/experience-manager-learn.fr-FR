@@ -13,19 +13,19 @@ thumbnail: 5831-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1502'
 ht-degree: 3%
 
 ---
 
 
-# Créer un composant personnalisé {#custom-component}
+# Création d’un composant personnalisé {#custom-component}
 
 Découvrez comment créer un composant personnalisé à utiliser avec l’éditeur SPA d’AEM. Découvrez comment développer des boîtes de dialogue de création et des modèles Sling pour étendre le modèle JSON afin de renseigner un composant personnalisé.
 
-## Intention
+## Objectif
 
 1. Comprendre le rôle des modèles Sling dans la manipulation de l’API de modèle JSON fournie par AEM.
 2. Découvrez comment créer des boîtes de dialogue de composant AEM.
@@ -77,7 +77,7 @@ Un composant AEM est défini comme un noeud et des propriétés. Dans le projet,
 
 >[!NOTE]
 >
-> Une actualisation rapide des [bases des composants d’AEM peut s’avérer utile](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/component-basics.html).
+> Une actualisation rapide des [bases des composants d’AEM peut s’avérer utile](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
 
 1. Dans l’IDE de votre choix, ouvrez le dossier `ui.apps`.
 2. Accédez à `ui.apps/src/main/content/jcr_root/apps/wknd-spa-angular/components` et créez un dossier nommé `custom-component`.
@@ -159,13 +159,13 @@ Un composant AEM est défini comme un noeud et des propriétés. Dans le projet,
    >
    > Vous pouvez afficher beaucoup plus [d’exemples de boîtes de dialogue en affichant les définitions des composants principaux](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components). Vous pouvez également afficher d’autres champs de formulaire, tels que `select`, `textarea`, `pathfield`, disponibles sous `/libs/granite/ui/components/coral/foundation/form` dans [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp#/libs/granite/ui/components/coral/foundation/form).
 
-   Avec un composant d’AEM traditionnel, un script [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) est généralement requis. Comme le SPA effectue le rendu du composant, aucun script HTL n’est nécessaire.
+   Avec un composant d’AEM traditionnel, un script [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) est généralement requis. Comme le SPA effectue le rendu du composant, aucun script HTL n’est nécessaire.
 
 ## Création d’un modèle Sling
 
-Les modèles Sling sont des objets POJO (Plain Old Java Object) Java pilotés par les annotations qui facilitent le mappage des données du JCR aux variables Java. [Sling ](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/component-basics.html#sling-models) Fonctionne de manière modélisée afin d’encapsuler une logique métier côté serveur complexe pour les composants AEM.
+Les modèles Sling sont des objets POJO (Plain Old Java Object) Java pilotés par les annotations qui facilitent le mappage des données du JCR aux variables Java. [Sling ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models) Fonctionne de manière modélisée afin d’encapsuler une logique métier côté serveur complexe pour les composants AEM.
 
-Dans le contexte de l’éditeur de SPA, les modèles Sling exposent le contenu d’un composant par le biais du modèle JSON par le biais d’une fonctionnalité utilisant l’[exportateur de modèle Sling](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
+Dans le contexte de l’éditeur de SPA, les modèles Sling exposent le contenu d’un composant par le biais du modèle JSON par le biais d’une fonctionnalité utilisant l’[exportateur de modèle Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html).
 
 1. Dans l’IDE de votre choix, ouvrez le module `core`. `CustomComponent.java` et  `CustomComponentImpl.java` ont déjà été créés et regroupés dans le code de démarrage du chapitre.
 
@@ -330,7 +330,7 @@ Créez ensuite le `Custom Component` à l’aide de l’éditeur SPA d’AEM.
 
    Notez que la valeur JSON est définie sur toutes les majuscules en fonction de la logique ajoutée au modèle Sling.
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous avez appris à créer un composant d’AEM personnalisé et comment les modèles et boîtes de dialogue Sling fonctionnent avec le modèle JSON.
 
