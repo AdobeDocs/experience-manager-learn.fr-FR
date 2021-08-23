@@ -11,9 +11,9 @@ level: Beginner
 kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
-source-git-commit: 66d35a41d63d4c33f71a118e9471c5aa58dc48a7
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4106'
 ht-degree: 1%
 
 ---
@@ -381,7 +381,7 @@ Le modèle Sling de signature repose sur plusieurs API Java fournies par AEM. Ce
 
    `uber-jar` n’est inclus que lorsque le profil `classic` est appelé, c’est-à-dire `mvn clean install -PautoInstallSinglePackage -Pclassic`. Encore une fois, c&#39;est unique à ce projet. Dans un projet réel, généré à partir de l’archétype de projet AEM, `uber-jar` sera la valeur par défaut si la version d’AEM spécifiée est 6.5 ou 6.4.
 
-   [uber-jar](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) contient toutes les API Java publiques exposées par AEM 6.x. La version est conservée dans le modèle pom du réacteur parent situé à la racine du projet `aem-guides-wknd/pom.xml`.
+   [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) contient toutes les API Java publiques exposées par AEM 6.x. La version est conservée dans le modèle pom du réacteur parent situé à la racine du projet `aem-guides-wknd/pom.xml`.
 
 1. Recherchez la dépendance pour `core.wcm.components.core` :
 
@@ -1099,7 +1099,7 @@ Vous trouverez ci-dessous à quoi devrait ressembler le composant Byline entièr
 
 ![composant d’signature terminé](assets/custom-component/final-byline-component.png)
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous venez de créer entièrement un composant personnalisé à l’aide d’Adobe Experience Manager !
 
