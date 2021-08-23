@@ -12,9 +12,9 @@ thumbnail: 25907.jpg
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: 6b4b9d7039b7b1c60ed1a7e5ec4ed42250499cec
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1428'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ Si vous utilisez Homebrew, suivez les instructions de la section __Installation 
 
 ## Installer Git
 
-[](https://git-scm.com/) Git est le système de gestion du contrôle de code source utilisé par  [Adobe Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/requirements/source-code-repository.html). Il est donc nécessaire pour le développement.
+[](https://git-scm.com/) Git est le système de gestion du contrôle de code source utilisé par  [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html). Il est donc nécessaire pour le développement.
 
 + Installation de Git à l’aide de Homebrew
    1. Ouvrez votre invite de commande/terminal.
@@ -79,7 +79,7 @@ Si vous utilisez Homebrew, suivez les instructions de la section __Installation 
 
 ![Git](./assets/development-tools/git.png)
 
-## Installez Node.js (et npm){#node-js}
+## Installation de Node.js (et npm){#node-js}
 
 [Node.](https://nodejs.org) jsis : environnement d’exécution JavaScript utilisé pour fonctionner avec les ressources front-end du sous-projet  __ui.__  d’un projet AEM. Node.js est distribué avec [npm](https://www.npmjs.com/), est le gestionnaire de modules Node.js par défaut, utilisé pour gérer les dépendances JavaScript.
 
@@ -118,7 +118,7 @@ Apache Maven est l’outil de ligne de commande Java open source utilisé pour c
 
 ![Maven](./assets/development-tools/maven.png)
 
-## Configuration de l’interface de ligne de commande d’Adobe I/O{#aio-cli}
+## Configuration de l’interface de ligne de commande Adobe I/O{#aio-cli}
 
 La [ligne de commande d’Adobe I/O ](https://github.com/adobe/aio-cli) ou `aio` permet d’accéder à divers services d’Adobe, y compris [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) et [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). L’interface de ligne de commande d’Adobe I/O joue un rôle essentiel dans le développement sur AEM en tant que Cloud Service, car elle permet aux développeurs de :
 
@@ -131,7 +131,7 @@ La [ligne de commande d’Adobe I/O ](https://github.com/adobe/aio-cli) ou `aio`
    + Exécutez `node --version` pour confirmer
 1. Exécutez `npm install -g @adobe/aio-cli` pour installer le module npm `aio` globalement
 
-### Configuration du module Adobe I/O CLI Cloud Manager{#aio-cloud-manager}
+### Configuration du module externe Adobe I/O CLI Cloud Manager{#aio-cloud-manager}
 
 Le module externe Adobe I/O Cloud Manager permet à l’interface de ligne de commande d’aio d’interagir avec Adobe Cloud Manager via la commande `aio cloudmanager`.
 
