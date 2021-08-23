@@ -13,19 +13,19 @@ thumbnail: 5309-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: bf9ab30f57faa23721d7d27b837d8e0f0e8cf4f1
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1111'
 ht-degree: 3%
 
 ---
 
 
-# SPA Éditeur de projet {#create-project}
+# SPA Editor Project {#create-project}
 
 Découvrez comment utiliser un projet Maven Adobe Experience Manager (AEM) comme point de départ pour une application d’Angular intégrée à AEM Editor.
 
-## Intention
+## Objectif
 
 1. Découvrez la structure d’un nouveau projet AEM SPA Editor créé à partir d’un archétype Maven.
 2. Déployez le projet de démarrage sur une instance locale d’AEM.
@@ -78,7 +78,7 @@ Il existe plusieurs options pour créer un projet Maven multi-module pour AEM. C
 
 3. Les propriétés suivantes ont été utilisées lors de la génération du projet AEM à partir de l’[archétype de projet AEM](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases/tag/aem-project-archetype-14) :
 
-   | Propriétés | Valeur |
+   | Propriété | Valeur |
    |-----------------|---------------------------------------|
    | aemVersion | nuage |
    | appTitle | Angular SPA WKND |
@@ -90,7 +90,7 @@ Il existe plusieurs options pour créer un projet Maven multi-module pour AEM. C
 
    >[!NOTE]
    >
-   > Notez la propriété `frontendModule=angular` . Cela indique à l’archétype de projet AEM de démarrer le projet avec une [base de code d’Angular](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) de démarrage à utiliser avec l’AEM Éditeur.
+   > Notez la propriété `frontendModule=angular` . Cela indique à l’archétype de projet AEM de démarrer le projet avec une [base de code d’Angular](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-angular.html) de démarrage à utiliser avec l’AEM Éditeur.
 
 ## Création du projet
 
@@ -149,7 +149,7 @@ Ensuite, compilez, compilez et déployez le code du projet sur une instance loca
 
    Tout le code personnalisé nécessaire au projet sera regroupé dans ces modules et installé sur le runtime AEM.
 
-6. Vous devriez également voir plusieurs packages pour `spa.project.core` et `core.wcm.components`. Il s’agit de dépendances automatiquement incluses par l’archétype. Vous trouverez plus d’informations sur [AEM composants principaux ici](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html).
+6. Vous devriez également voir plusieurs packages pour `spa.project.core` et `core.wcm.components`. Il s’agit de dépendances automatiquement incluses par l’archétype. Vous trouverez plus d’informations sur [AEM composants principaux ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
 
 ## Création de contenu
 
@@ -231,7 +231,7 @@ Vérifiez ensuite qu’il s’agit d’une application d’une seule page qui ut
    >
    > Il peut s’avérer utile d’installer une extension de navigateur pour formater automatiquement la sortie JSON.
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous venez de créer votre premier projet SPA Éditeur d&#39;AEM !
 
