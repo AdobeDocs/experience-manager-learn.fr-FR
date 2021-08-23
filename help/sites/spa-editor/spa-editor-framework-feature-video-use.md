@@ -1,23 +1,17 @@
 ---
 title: Utilisation de l’éditeur de SPA avec AEM Sites
-seo-title: Utilisation de la structure de SPA Editor avec AEM Sites
 description: AEM structure de l’éditeur d’applications d’une seule page permet aux auteurs de modifier le contenu d’une application d’une seule page ou d’un SPA. Les développeurs qui utilisent des structures React ou Angular créent un SPA et mappent ensuite des zones de la SPA sur les composants d’AEM, ce qui permet aux auteurs d’utiliser des outils de modification AEM Sites courants.
-sub-product: sites, content-services
-feature: Éditeur de spa
-topics: authoring, single-page-applications
-audience: all
-doc-type: feature video
-activity: use
 version: 6.4, 6.5, cloud-service
-kt: 1047
-thumbnail: 22229.jpg
 topic: SPA
+feature: Éditeur de SPA
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 1047
+thumbnail: 22229.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 12%
+source-wordcount: '277'
+ht-degree: 7%
 
 ---
 
@@ -44,5 +38,5 @@ Téléchargez et installez le [package SPA WKND](https://github.com/adobe/aem-gu
 
 Pour obtenir un tutoriel détaillé sur le développement avec l’éditeur de SPA, voir :
 
-* [Prise en main de l’Éditeur AEM SPA et d’Angular](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [Prise en main de l’Éditeur AEM SPA et de React](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/spa-react-tutorial/overview.html)
+* [Prise en main de l’Éditeur AEM SPA et d’Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
+* [Prise en main de l’Éditeur AEM SPA et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
