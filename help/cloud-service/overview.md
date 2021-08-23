@@ -3,10 +3,10 @@ title: Tutoriels sur Adobe Experience Manager as Cloud Service
 description: Ensemble de tutoriels pour Adobe Experience Manager (AEM) en tant que Cloud Service
 sub-product: sites, cloud manager, foundation, ressources
 kt: 3289
-source-git-commit: ce4a35f763862c6d6a42795fd5e79d9c59ff645a
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 13%
+source-wordcount: '273'
+ht-degree: 17%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe Experience Manager (AEM) est désormais disponible en tant que Cloud Se
 <table>
    <td>
       <a href="./accessing/overview.md">
-      <img alt="Configuration de l’accès à AEM en tant que Cloud Service" src="./assets/overview/staff-pick__accessing.png"/>
+      <img alt="Configuration de l’accès à AEM as a Cloud Service" src="./assets/overview/staff-pick__accessing.png"/>
       </a>
       <div>
          <a href="./accessing/overview.md">
@@ -85,5 +85,5 @@ Adobe Experience Manager (AEM) est désormais disponible en tant que Cloud Se
 
 ## Ressources supplémentaires
 
-* [Experience League - Explorer Adobe Experience Manager](https://experienceleague.adobe.com/#recommended/solutions/experience-manager)
-* [Documentation d’Adobe Experience Manager as a Cloud Service](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/landing/home.html)
+* [Experience League - Explorer Adobe Experience Manager](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager)
+* [Documentation d’Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=fr)
