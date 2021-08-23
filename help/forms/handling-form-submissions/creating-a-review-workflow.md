@@ -1,7 +1,7 @@
 ---
 title: Création d’un workflow pour examiner les données envoyées
 description: Création d’AEM modèle de processus à l’aide des composants de processus AEM Forms pour examiner les données envoyées.
-sub-product: formulaires
+sub-product: forms
 feature: Workflow
 topics: integrations
 audience: developer
@@ -13,9 +13,9 @@ thumbnail: 40242.jpg
 topic: Développement
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '141'
 ht-degree: 6%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 6%
 
 Les workflows sont généralement utilisés pour acheminer les données envoyées pour révision et approbation. Les workflows sont créés à l&#39;aide de l&#39;éditeur de workflow dans AEM. Les processus peuvent être déclenchés lors de l’envoi du formulaire adaptatif.
 
-## Condition préalable
+## Prérequis
 
-Vérifiez que vous disposez d’une instance de travail d’AEM Forms. Veuillez suivre le [guide d’installation](https://docs.adobe.com/content/help/en/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) pour installer et configurer AEM Forms.
+Vérifiez que vous disposez d’une instance de travail d’AEM Forms. Veuillez suivre le [guide d’installation](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html) pour installer et configurer AEM Forms.
 
 La vidéo suivante explique la création d’un processus de révision et d’approbation à l’aide des composants AEM Forms.
 >[!VIDEO](https://video.tv.adobe.com/v/40242/?quality=9&learn=on)
