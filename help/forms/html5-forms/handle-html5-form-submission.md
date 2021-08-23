@@ -12,9 +12,9 @@ thumbnail: kt-5269.jpg
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '278'
 ht-degree: 5%
 
 ---
@@ -83,7 +83,7 @@ System.out.println("The submitted form data is " + stringBuffer.toString());
 
 ### Lecture supplémentaire
 
-Cet [article](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) sur la génération de PDF à partir de l’envoi du formulaire HTML5 est également recommandé.
+Cet [article](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/generate-pdf-from-mobile-form-submission-article.html) sur la génération de PDF à partir de l’envoi du formulaire HTML5 est également recommandé.
 
 
 
