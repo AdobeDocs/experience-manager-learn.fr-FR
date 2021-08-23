@@ -10,9 +10,9 @@ feature: Dynamic Media Classic
 topic: Gestion de contenu
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '897'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Dans ce guide, nous aborderons les principales fonctionnalités suivantes de Dyn
 - **Vidéo.** Chargez les vidéos finales, publiez-les et téléchargez-les progressivement dans des visionneuses vidéo configurables.
 - **Imagerie dynamique.** Technologie qui tire parti des fonctionnalités d’Adobe Sensei AI et qui fonctionne avec les &quot;paramètres d’image prédéfinis&quot; existants pour améliorer les performances de diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
 
-Pour découvrir d’autres fonctionnalités de la solution, consultez la [Documentation pour Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/intro/introduction.html).
+Pour découvrir d’autres fonctionnalités de la solution, consultez la [Documentation pour Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
 ## Interface utilisateur de Dynamic Media Classic
 
@@ -75,4 +75,4 @@ _Interface utilisateur de Dynamic Media Classic_
 >
 >Cochez la case **Publier après le téléchargement** dans la boîte de dialogue Télécharger pour publier automatiquement les ressources lors du téléchargement.
 
-En savoir plus sur [la navigation dans l’interface utilisateur de Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/getting-started/navigation-basics.html).
+En savoir plus sur [la navigation dans l’interface utilisateur de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
