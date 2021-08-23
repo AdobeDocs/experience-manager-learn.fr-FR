@@ -7,9 +7,9 @@ version: 6.3, 6.4, 6.5
 topic: Gestion de contenu
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 24%
 
 ---
@@ -23,7 +23,7 @@ Dans cette vidéo, nous examinons la gestion des couleurs de Dynamic Media et co
 
 >[!NOTE]
 >
->[Activez Dynamic ](https://docs.adobe.com/docs/en/aem/6-0/administer/integration/dynamic-media/enabling-dynamic-media.html) Media AEM pour utiliser cette fonctionnalité.
+>[Activez Dynamic ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) Media AEM pour utiliser cette fonctionnalité.
 
 Cette fonctionnalité est disponible pour AEM versions 6.1 et 6.2 en tant que Feature Pack.
 
@@ -85,7 +85,7 @@ Voici le modèle XML du noeud de configuration de la gestion des couleurs. Ce mo
 />
 ```
 
-### La liste des profils de couleurs d’Adobe par défaut est répertoriée ci-dessous {#list-of-default-adobe-color-profiles-are-listed-below}
+### La liste des profils colorimétriques d’Adobe par défaut est répertoriée ci-dessous. {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Nom | Espace colorimétrique | Description |
 | ------------------- | ---------- | ------------------------------------- |
