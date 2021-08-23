@@ -10,10 +10,10 @@ activity: use
 topic: Gestion de contenu
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 9%
+source-wordcount: '693'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ Le temps de chargement des pages est l’un des aspects les plus importants de l
 
 L’imagerie dynamique bénéficie également de l’amélioration des performances grâce à une intégration complète avec le service haut de gamme haut de gamme d’Adobe. Ce service recherche l’itinéraire Internet optimal entre les serveurs, réseaux et points d’appairage ; c’est-à-dire l’itinéraire ayant une latence et/ou un taux de perte de paquets plus faibles que l’itinéraire par défaut sur Internet.
 
-En savoir plus sur [l’imagerie dynamique](https://docs.adobe.com/content/help/fr-FR/experience-manager-64/assets/dynamic/imaging-faq.html).
+En savoir plus sur [l’imagerie dynamique](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Avantages de l’imagerie dynamique
 
@@ -36,7 +36,7 @@ Comme les images constituent la majeure partie du temps de chargement d’une pa
 
 Comme nous l’avons vu précédemment, l’imagerie dynamique tire parti des fonctionnalités d’Adobe Sensei AI et fonctionne avec les paramètres d’image prédéfinis existants pour convertir automatiquement les images en formats d’image de nouvelle génération optimaux, tels que WebP, tout en conservant la fidélité visuelle.
 
-En savoir plus sur le [fonctionnement de l’imagerie dynamique](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), y compris des détails tels que les formats d’image pris en charge (et ce qui se passe si vous n’utilisez pas ces formats) et son impact sur les paramètres d’image prédéfinis existants en cours d’utilisation.
+En savoir plus sur le [fonctionnement de l’imagerie dynamique](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), y compris des détails tels que les formats d’image pris en charge (et ce qui se passe si vous n’utilisez pas ces formats) et son impact sur les paramètres d’image prédéfinis existants en cours d’utilisation.
 
 ## Impacts de l’imagerie dynamique
 
@@ -54,7 +54,7 @@ L’activation de l’imagerie dynamique commence par l’envoi d’une demande 
 
 Une fois que vous avez activé l’imagerie dynamique, vous souhaiterez vérifier qu’elle fonctionne comme prévu.
 
-Vous avez probablement d’autres questions sur l’imagerie dynamique. Nous avons compilé une liste de questions fréquentes avec des réponses. Lisez la [FAQ](https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/imaging-faq.html).
+Vous avez probablement d’autres questions sur l’imagerie dynamique. Nous avons compilé une liste de questions fréquentes avec des réponses. Lisez la [FAQ](https://experienceleague.adobe.com/docs/experience-manager-64/assets/dynamic/imaging-faq.html).
 
 ## Ressources supplémentaires
 
