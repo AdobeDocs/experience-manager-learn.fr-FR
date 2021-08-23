@@ -10,10 +10,10 @@ activity: use
 topic: Gestion de contenu
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '2734'
-ht-degree: 5%
+source-wordcount: '2714'
+ht-degree: 4%
 
 ---
 
@@ -34,12 +34,12 @@ Le workflow des solutions Dynamic Media Classic se compose de trois étapes prin
 
 Il s’agit du début du workflow. Au cours de cette étape, vous rassemblez ou créez le contenu source qui s’adapte au workflow que vous utilisez et vous le chargez dans Dynamic Media Classic. Le système prend en charge plusieurs types de fichiers pour les images, les vidéos et les polices, mais aussi pour les fichiers PDF, Adobe Illustrator et Adobe InDesign.
 
-Consultez la liste complète des [types de fichiers pris en charge](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
+Consultez la liste complète des [types de fichiers pris en charge](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#supported-asset-file-formats).
 
 Vous pouvez charger du contenu source de plusieurs manières différentes :
 
-- Directement à partir de votre bureau ou du réseau local. [Découvrez comment](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application).
-- À partir d’un serveur FTP Dynamic Media Classic. [Découvrez comment](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+- Directement à partir de votre bureau ou du réseau local. [Découvrez comment](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-sps-desktop-application).
+- À partir d’un serveur FTP Dynamic Media Classic. [Découvrez comment](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
 
 Le mode par défaut est À partir du bureau, où vous recherchez des fichiers sur votre réseau local et lancez le téléchargement.
 
@@ -64,11 +64,11 @@ Nécessite de charger l’image de remplacement dans le même dossier que l’im
 
 - **Écraser dans un dossier, même nom de fichier, extension** indépendante. Cette option est la règle de remplacement la plus inclusive. Elle vous permet de charger une image de remplacement dans un dossier autre que celui de l’image d’origine, de charger un fichier dont l’extension est différente de celle du fichier d’origine et de remplacer le fichier d’origine. Si le fichier d’origine se trouve dans un dossier différent, l’image de remplacement est enregistrée dans le nouveau dossier où elle a été chargée.
 
-En savoir plus sur l’ [option Écraser les images](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
+En savoir plus sur l’ [option Écraser les images](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#using-the-overwrite-images-option).
 
 Bien que cela ne soit pas obligatoire, lors du chargement à l’aide de l’une des deux méthodes ci-dessus, vous pouvez spécifier les options de tâche pour ce chargement spécifique, par exemple pour planifier un chargement récurrent, définir des options de recadrage lors du chargement, et bien d’autres. Il peut s’avérer utile pour certains workflows. Il est donc intéressant de déterminer s’ils peuvent l’être pour le vôtre.
 
-En savoir plus sur [Options de tâche](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
+En savoir plus sur [Options de tâche](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 
 Le téléchargement est la première étape nécessaire dans un workflow, car Dynamic Media Classic ne peut pas fonctionner avec un contenu qui n’est pas déjà dans son système. En arrière-plan lors du chargement, le système enregistre chaque ressource chargée dans la base de données Dynamic Media Classic centralisée, affecte un identifiant et le copie dans le stockage. En outre, le système convertit les fichiers image dans un format qui permet le redimensionnement et le zoom dynamiques, et convertit les fichiers vidéo dans un format compatible avec le web MP4.
 
@@ -97,7 +97,7 @@ De même, vous pouvez télécharger votre vidéo source originale vers Dynamic M
 
 **Bien qu’il n’y ait pas de taille d’image minimale, nous vous déconseillons de télécharger des images géantes.** Une image géante peut être considérée comme de plus de 4 000 pixels. Le téléchargement d’images de cette taille peut présenter des défauts potentiels comme des grains de poussière ou des poils dans l’image. Ces images occupent également plus d’espace sur le serveur Dynamic Media Classic, ce qui peut vous amener à dépasser les limites de stockage prévues par votre contrat.
 
-En savoir plus sur [Téléchargement de fichiers](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
+En savoir plus sur [Téléchargement de fichiers](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files).
 
 ## Étape 2 : Auteur (et publication)
 
@@ -139,14 +139,14 @@ Les ressources récemment chargées et publiées sont immédiatement affichées,
 
 En règle générale, il ne s’agit pas d’un problème sauf si une erreur s’est produite et que l’image/la ressource porte le même nom que la version précédemment publiée, mais qu’il existe un problème avec l’image. Par exemple, vous avez accidentellement téléchargé une version basse résolution ou votre directeur artistique n’a pas approuvé l’image. Dans ce cas, vous souhaitez rappeler l’image d’origine et la remplacer par une nouvelle version utilisant le même ID de ressource.
 
-Découvrez comment [Effacer manuellement le cache des URL qui doivent être mises à jour](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
+Découvrez comment [Effacer manuellement le cache des URL qui doivent être mises à jour](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/invalidate-cdn-cached-content.html).
 
 >[!TIP]
 >
 >Pour éviter des problèmes liés au délai de mise en cache, veillez à toujours anticiper les problèmes : une soirée, un jour, deux semaines, etc. Créez à temps pour que les parties internes valident votre travail avant de le publier au public. Même travailler une soirée avant vous permet d&#39;apporter des modifications et de republier ce soir-là. Le matin, les 10 heures se sont écoulées et le cache se met à jour avec la bonne image.
 
-- En savoir plus sur la [création d’une tâche de publication](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
-- En savoir plus sur la [publication](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/upload-publish/publishing-files.html).
+- En savoir plus sur la [création d’une tâche de publication](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html#creating-a-publish-job).
+- En savoir plus sur la [publication](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/publishing-files.html).
 
 ## Étape 3 : Diffuser
 
@@ -184,4 +184,4 @@ Vous pouvez prévisualiser vos images en plusieurs tailles à l’aide de l’ap
 
 Vous pouvez également utiliser l’option **Zoom** pour prévisualiser votre image dans l’un des nombreux paramètres prédéfinis de zoom prédéfinis, qui reposent sur différentes visionneuses de zoom incluses.
 
-En savoir plus sur [la prévisualisation des ressources](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/previewing-asset.html).
+En savoir plus sur [la prévisualisation des ressources](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/previewing-asset.html).
