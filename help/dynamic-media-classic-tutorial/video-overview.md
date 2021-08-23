@@ -10,9 +10,9 @@ activity: use
 topic: Gestion de contenu
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '6231'
+source-wordcount: '6195'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ Comme toutes les visionneuses, l’intégration s’effectue via une seule URL D
 
 Dernière remarque au sujet de la vidéo Dynamic Media Classic qui peut s’appliquer à certains clients : la conversion automatique, la diffusion en continu ou les paramètres vidéo prédéfinis ne sont pas activés pour toutes les entreprises pour leur compte. Si, pour une raison quelconque, vous ne pouvez pas accéder aux URL pour la diffusion vidéo en continu, c’est peut-être la raison. Vous pourrez toujours charger et publier des vidéos téléchargées progressivement et accéder à toutes les visionneuses de vidéos. Cependant, pour profiter de toutes les fonctionnalités vidéo de Dynamic Media Classic, vous souhaiterez contacter votre gestionnaire de compte ou votre responsable commercial pour que ces fonctionnalités soient activées.
 
-En savoir plus sur [Vidéo dans Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/quick-start-video.html).
+En savoir plus sur [Vidéo dans Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html).
 
 ## Vidéo 101
 
@@ -138,8 +138,8 @@ Lorsque vous utilisez une vidéo dans Dynamic Media Classic, vous suivez un proc
 
 ![image](assets/video-overview/video-overview-2.png)
 
-1. Commencez par charger des fichiers vidéo dans Dynamic Media Classic. Pour ce faire, ouvrez le **menu Outils** au bas du panneau de l’extension Dynamic Media Classic, puis sélectionnez **Télécharger vers Dynamic Media Classic > Fichiers dans le nom de dossier** ou **Télécharger vers Dynamic Media Classic > Dossiers dans le nom de dossier**. &quot;Nom du dossier&quot; correspond au dossier que vous parcourez actuellement avec l’extension. Les fichiers vidéo peuvent être volumineux. Nous vous recommandons donc d’utiliser le protocole FTP pour télécharger des fichiers volumineux. Dans le cadre du téléchargement, sélectionnez un ou plusieurs paramètres vidéo prédéfinis pour le codage de vos vidéos. La vidéo peut être transcodée au format MP4 lors du téléchargement. Pour plus d’informations sur l’utilisation et la création de paramètres prédéfinis de codage, voir la rubrique Paramètres vidéo prédéfinis ci-dessous. Découvrez [Téléchargement et codage des vidéos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html).
-2. Sélectionnez ou modifiez un paramètre prédéfini de visionneuse de vidéos et prévisualisez votre vidéo. Vous pouvez choisir un paramètre prédéfini de visionneuse prédéfini ou personnaliser le vôtre. Si vous ciblez des utilisateurs mobiles, vous n’avez rien à faire ici, car les plateformes mobiles ne nécessitent pas de visionneuse ni de paramètre prédéfini. En savoir plus sur [la prévisualisation de vidéos dans une visionneuse de vidéos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html) et [l’ajout ou la modification d’un paramètre prédéfini de visionneuse de vidéos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/previewing-videos-video-viewer.html#adding-or-editing-a-video-viewer-preset).
+1. Commencez par charger des fichiers vidéo dans Dynamic Media Classic. Pour ce faire, ouvrez le **menu Outils** au bas du panneau de l’extension Dynamic Media Classic, puis sélectionnez **Télécharger vers Dynamic Media Classic > Fichiers dans le nom de dossier** ou **Télécharger vers Dynamic Media Classic > Dossiers dans le nom de dossier**. &quot;Nom du dossier&quot; correspond au dossier que vous parcourez actuellement avec l’extension. Les fichiers vidéo peuvent être volumineux. Nous vous recommandons donc d’utiliser le protocole FTP pour télécharger des fichiers volumineux. Dans le cadre du téléchargement, sélectionnez un ou plusieurs paramètres vidéo prédéfinis pour le codage de vos vidéos. La vidéo peut être transcodée au format MP4 lors du téléchargement. Pour plus d’informations sur l’utilisation et la création de paramètres prédéfinis de codage, voir la rubrique Paramètres vidéo prédéfinis ci-dessous. Découvrez [Téléchargement et codage des vidéos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/uploading-encoding-videos.html).
+2. Sélectionnez ou modifiez un paramètre prédéfini de visionneuse de vidéos et prévisualisez votre vidéo. Vous pouvez choisir un paramètre prédéfini de visionneuse prédéfini ou personnaliser le vôtre. Si vous ciblez des utilisateurs mobiles, vous n’avez rien à faire ici, car les plateformes mobiles ne nécessitent pas de visionneuse ni de paramètre prédéfini. En savoir plus sur [la prévisualisation de vidéos dans une visionneuse de vidéos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/previewing-videos-video-viewer.html) et [l’ajout ou la modification d’un paramètre prédéfini de visionneuse de vidéos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/previewing-videos-video-viewer.html#adding-or-editing-a-video-viewer-preset).
 3. Exécutez une publication de vidéo, obtenez l’URL et intégrez. La principale différence entre cette étape du workflow vidéo et celle de l’image réside dans le fait que vous exécuterez une publication vidéo spéciale au lieu de la publication de diffusion d’images standard (ou peut-être aussi). L’intégration de la visionneuse de vidéos sur le bureau fonctionne exactement comme l’intégration de la visionneuse d’images. Toutefois, pour les appareils mobiles, c’est encore plus simple — tout ce dont vous avez besoin est l’URL de la vidéo elle-même.
 
 ### A propos du transcodage
@@ -174,11 +174,11 @@ Enfin, si vous vous souciez de la protection de vos médias pour des questions d
 
 Lorsque vous téléchargez une vidéo, vous pouvez choisir parmi un ou plusieurs paramètres prédéfinis qui contiennent les paramètres de conversion de la vidéo originale en un format adapté au web par le biais du codage. Les paramètres vidéo prédéfinis sont disponibles en deux versions : les paramètres vidéo prédéfinis adaptatifs et les paramètres prédéfinis de codage uniques.
 
-Voir [Paramètres vidéo prédéfinis disponibles](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
+Voir [Paramètres vidéo prédéfinis disponibles](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
 
 Les paramètres prédéfinis de vidéo adaptative sont activés par défaut, ce qui signifie qu’ils sont disponibles pour le codage. Si vous souhaitez utiliser un paramètre prédéfini de codage unique, votre administrateur doit l’activer pour qu’il apparaisse dans la liste des paramètres vidéo prédéfinis.
 
-Découvrez comment [activer ou désactiver les paramètres vidéo prédéfinis](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html#activating-or-deactivating-video-encoding-presets).
+Découvrez comment [activer ou désactiver les paramètres vidéo prédéfinis](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/uploading-encoding-videos.html#activating-or-deactivating-video-encoding-presets).
 
 Vous pouvez choisir l’un des nombreux paramètres prédéfinis prédéfinis fournis avec Dynamic Media Classic ou créer les vôtres. toutefois, aucun paramètre prédéfini n’est sélectionné par défaut pour le chargement. En d’autres termes, **si vous ne sélectionnez pas de paramètre vidéo prédéfini au moment du téléchargement, votre vidéo ne sera pas convertie et peut être impossible à publier**. Cependant, vous pouvez convertir la vidéo vous-même hors ligne et la télécharger et la publier simplement correctement. Les paramètres vidéo prédéfinis ne sont requis que si vous souhaitez que Dynamic Media Classic effectue la conversion à votre place.
 
@@ -240,19 +240,19 @@ Il peut arriver que vous ayez besoin d’un paramètre vidéo prédéfini spéci
 11. Cliquez sur **Enregistrer** pour enregistrer votre paramètre prédéfini. Contrairement à tous les autres paramètres prédéfinis, vous n’avez pas besoin d’effectuer une publication à ce stade, car les paramètres prédéfinis sont réservés uniquement au chargement de fichiers. Vous devrez ultérieurement publier les vidéos codées, mais les paramètres prédéfinis sont réservés à l’utilisation interne de Dynamic Media Classic.
 12. Pour vérifier que votre paramètre vidéo prédéfini figure dans la liste de chargement, accédez à **Télécharger**.Sélectionnez **Options de tâche** et développez **Options vidéo**. Votre paramètre prédéfini sera répertorié dans la catégorie du périphérique de lecture que vous avez choisi (Ordinateur, Mobile ou Tablette).
 
-En savoir plus sur [l’ajout ou la modification d’un paramètre vidéo prédéfini](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/uploading-encoding-videos.html#adding-or-editing-a-video-encoding-preset).
+En savoir plus sur [l’ajout ou la modification d’un paramètre vidéo prédéfini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/uploading-encoding-videos.html#adding-or-editing-a-video-encoding-preset).
 
 ## Ajout de sous-titres à une vidéo
 
 Dans certains cas, il peut s’avérer utile d’ajouter des sous-titres à votre vidéo, par exemple, lorsque vous devez fournir la vidéo aux visionneuses dans plusieurs langues, mais que vous ne souhaitez pas duper l’audio dans une autre langue ou enregistrer à nouveau la vidéo dans des langues distinctes. En outre, l’ajout de sous-titres permet une meilleure accessibilité pour les malentendants et l’utilisation de sous-titres codés. Dynamic Media Classic facilite l’ajout de sous-titres à vos vidéos.
 
-Découvrez comment [Ajouter des sous-titres à la vidéo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/adding-captions-video.html).
+Découvrez comment [Ajouter des sous-titres à la vidéo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/adding-captions-video.html).
 
 ## Ajout de marqueurs de chapitre à votre vidéo
 
 Pour les vidéos longues, vos visionneuses apprécieront probablement la facilité de navigation dans votre vidéo à l’aide de marqueurs de chapitre. Dynamic Media Classic permet d’ajouter facilement des marqueurs de chapitre à votre vidéo.
 
-Découvrez comment [ajouter des marqueurs de chapitre à la vidéo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/adding-chapter-markers-video.html).
+Découvrez comment [ajouter des marqueurs de chapitre à la vidéo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/adding-chapter-markers-video.html).
 
 ## Rubriques de mise en oeuvre vidéo
 
@@ -262,20 +262,20 @@ La dernière étape du processus Dynamic Media Classic consiste à publier votre
 
 ![image](assets/video-overview/video-overview-6.jpg)
 
-Découvrez comment [publier votre vidéo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#publishing-video).
+Découvrez comment [publier votre vidéo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#publishing-video).
 
 Une fois que vous avez exécuté une publication de vidéo, vous pouvez obtenir une URL pour accéder à vos vidéos et à tous les paramètres prédéfinis de visionneuse Dynamic Media Classic standard dans un navigateur web. Cependant, si vous personnalisez ou créez votre propre paramètre prédéfini de visionneuse vidéo, vous devrez tout de même exécuter une publication de serveur d’images distincte.
 
-- Découvrez comment [lier une URL à un site mobile ou à un site web](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#linking-a-video-url-to-a-mobile-site-or-a-website).
-- Découvrez comment [incorporer la visionneuse de vidéos dans une page web](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#embedding-the-video-viewer-on-a-web-page).
+- Découvrez comment [lier une URL à un site mobile ou à un site web](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#linking-a-video-url-to-a-mobile-site-or-a-website).
+- Découvrez comment [incorporer la visionneuse de vidéos dans une page web](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#embedding-the-video-viewer-on-a-web-page).
 
 Vous pouvez également déployer votre vidéo à l’aide d’un lecteur vidéo tiers ou personnalisé.
 
-Découvrez comment [Déployer une vidéo à l’aide d’un lecteur vidéo tiers](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#deploying-video-using-a-third-party-video-player).
+Découvrez comment [Déployer une vidéo à l’aide d’un lecteur vidéo tiers](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#deploying-video-using-a-third-party-video-player).
 
 De plus, si vous souhaitez également utiliser les miniatures vidéo — l’image extraite de la vidéo — vous devrez également exécuter une publication Image Server. Cela est dû au fait que la miniature de la vidéo réside sur le serveur d’images, alors que la vidéo elle-même se trouve sur le serveur vidéo. Les miniatures vidéo peuvent être utilisées dans les résultats de recherche vidéo, dans les listes de lecture vidéo et comme &quot;cadre d’affiche&quot; initial qui apparaît dans la visionneuse avant la lecture de la vidéo.
 
-En savoir plus sur [l’utilisation des miniatures vidéo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#working-with-video-thumbnails).
+En savoir plus sur [l’utilisation des miniatures vidéo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/deploying-video-websites-mobile-sites.html#working-with-video-thumbnails).
 
 ### Sélection et personnalisation d’un paramètre prédéfini de visionneuse
 
@@ -310,15 +310,15 @@ Il est recommandé d’incorporer ces données dans vos vidéos avant de les tra
 
 En suivant cette méthode, vous n’aurez pas à saisir manuellement ces données à l’aide de Dynamic Media Classic. Cependant, vous pouvez également utiliser des paramètres prédéfinis de métadonnées dans Dynamic Media Classic, afin de saisir rapidement les mêmes données à chaque fois.
 
-Pour plus d’informations sur cette rubrique, voir [Affichage, ajout et exportation de métadonnées](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html).
+Pour plus d’informations sur cette rubrique, voir [Affichage, ajout et exportation de métadonnées](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html).
 
 ![image](assets/video-overview/video-overview-7.jpg)
 
 Une fois les métadonnées renseignées, vous pourrez les voir dans l’affichage des détails de cette ressource vidéo. Les mots-clés sont également présents, mais ils se trouvent sous l’onglet Mots-clés .
 
-- En savoir plus sur [l’ajout de mots-clés](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html#add-or-edit-keywords).
-- En savoir plus sur [SEO vidéo](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html).
-- Découvrez les [paramètres pour l’optimisation du référencement des vidéos](https://docs.adobe.com/content/help/en/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html#choosing-video-seo-settings).
+- En savoir plus sur [l’ajout de mots-clés](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/managing-assets/viewing-adding-exporting-metadata.html#add-or-edit-keywords).
+- En savoir plus sur [SEO vidéo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html).
+- Découvrez les [paramètres pour l’optimisation du référencement des vidéos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/video-seo-search-engine-optimization.html#choosing-video-seo-settings).
 
 #### Configuration de l’optimisation du référencement vidéo
 
