@@ -11,9 +11,9 @@ kt: 5251
 topic: Développement
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: 5fcc7eec120debf1a8ac08716154599467e66759
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '220'
 ht-degree: 13%
 
 ---
@@ -49,7 +49,7 @@ Expliquer la requête se trouve à l’adresse :
 
 ![Débogueur QueryBuilder](./assets/other-tools/query-debugger.png)
 
-Le débogueur QueryBuilder est un outil Web qui vous aide à déboguer et à comprendre les requêtes de recherche à l’aide de la syntaxe AEM [QueryBuilder](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
+Le débogueur QueryBuilder est un outil Web qui vous aide à déboguer et à comprendre les requêtes de recherche à l’aide de la syntaxe AEM [QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html).
 
 QueryBuilder Debugger se trouve à l’emplacement suivant :
 
