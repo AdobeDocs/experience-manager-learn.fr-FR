@@ -12,9 +12,9 @@ version: 6.4,6.5
 topic: Développement
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '472'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 Pour que ce cas pratique fonctionne sur votre système local, procédez comme suit :
 
 * Installez l’instance AEM Author sur le port 4502 et l’instance AEM Publish sur le port 4503.
-* [Suivez les instructions de la section Développement avec un utilisateur de service dans AEM Forms](https://docs.adobe.com/content/help/en/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). Veillez à créer l’utilisateur du service et à déployer le lot sur vos instances d’auteur et de publication AEM.
+* [Suivez les instructions de la section Développement avec un utilisateur de service dans AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html). Veillez à créer l’utilisateur du service et à déployer le lot sur vos instances d’auteur et de publication AEM.
 * [Ouvrez la configuration osgi  ](http://localhost:4503/system/console/configMgr).
 * Recherchez **Apache Sling Referrer Filter**. Assurez-vous que la case Autoriser les champs vides est cochée.
 * [Déployez le bundle AEMormDocumentService personnalisé](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Ce bundle doit être déployé sur votre instance AEM Publish. Ce lot comporte le code permettant de générer un PDF interactif à partir de formulaires mobiles.
