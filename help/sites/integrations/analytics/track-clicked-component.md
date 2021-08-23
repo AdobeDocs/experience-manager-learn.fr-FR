@@ -1,28 +1,24 @@
 ---
 title: Suivi des composants cliqués avec Adobe Analytics
 description: Utilisez la couche de données client Adobe orientée événement pour effectuer le suivi des clics sur des composants spécifiques d’un site Adobe Experience Manager. Découvrez comment utiliser des règles dans Experience Platform Launch pour écouter ces événements et envoyer des données à une Adobe Analytics avec une balise de lien de suivi.
-feature: analyses
-topics: integrations
-audience: administrator
-doc-type: tutorial
-activity: setup
 version: cloud-service
-kt: 6296
-thumbnail: KT-6296.jpg
 topic: Intégrations
+feature: Couche de données client Adobe
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+kt: 6296
+thumbnail: KT-6296.jpg
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 5%
+source-wordcount: '1814'
+ht-degree: 4%
 
 ---
 
 
 # Suivi des composants cliqués avec Adobe Analytics
 
-Utilisez la [couche de données client d’Adobe pilotée par l’événement avec les composants principaux d’AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/data-layer/overview.html) pour effectuer le suivi des clics sur des composants spécifiques d’un site Adobe Experience Manager. Découvrez comment utiliser des règles dans Experience Platform Launch pour écouter les événements de clics, filtrer par composant et envoyer les données à une instance Adobe Analytics avec une balise de lien de suivi.
+Utilisez la [couche de données client d’Adobe pilotée par l’événement avec les composants principaux d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr) pour effectuer le suivi des clics sur des composants spécifiques d’un site Adobe Experience Manager. Découvrez comment utiliser des règles dans Experience Platform Launch pour écouter les événements de clics, filtrer par composant et envoyer les données à une instance Adobe Analytics avec une balise de lien de suivi.
 
 ## Ce que vous allez créer
 
@@ -40,13 +36,13 @@ L’équipe marketing WKND souhaite déterminer les boutons CTA (Appel à l’ac
 
 Ce tutoriel est la suite de la section [Collecter les données de page avec Adobe Analytics](./collect-data-analytics.md) et suppose que vous disposez des éléments suivants :
 
-* Une **propriété Launch** avec l’extension [Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html) activée
-* **Adobe de l’identifiant de suite de rapports** Analytics/dev et du serveur de suivi. Consultez la documentation suivante pour [créer une suite de rapports](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
-* [Extension de navigateur ](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) DebuggerExperience Platform configurée avec votre propriété Launch chargée sur  [https://wknd.site/us/en.](https://wknd.site/us/en.html) htmlor un site AEM avec la couche de données d’Adobe activée.
+* Une **propriété Launch** avec l’extension [Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) activée
+* **Adobe de l’identifiant de suite de rapports** Analytics/dev et du serveur de suivi. Consultez la documentation suivante pour [créer une suite de rapports](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html).
+* [Extension de navigateur ](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) DebuggerExperience Platform configurée avec votre propriété Launch chargée sur  [https://wknd.site/us/en.](https://wknd.site/us/en.html) htmlor un site AEM avec la couche de données d’Adobe activée.
 
 ## Inspect du schéma de bouton et de teaser
 
-Avant d’établir des règles dans Launch, il est utile de consulter le schéma [pour le bouton et le teaser](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#item) et de les examiner dans l’implémentation de la couche de données.
+Avant d’établir des règles dans Launch, il est utile de consulter le schéma [pour le bouton et le teaser](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item) et de les examiner dans l’implémentation de la couche de données.
 
 1. Accédez à [https://wknd.site/us/en.html](https://wknd.site/us/en.html)
 1. Ouvrez les outils de développement du navigateur et accédez à la **console**. Exécutez la commande suivante :
@@ -82,7 +78,7 @@ Avant d’établir des règles dans Launch, il est utile de consulter le schéma
        xdm:linkURL: "/content/wknd/us/en/magazine/san-diego-surf.html"
    ```
 
-   Ils sont basés sur le [schéma d’élément de composant/conteneur](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/data-layer/overview.html#item). La règle que nous allons créer dans Launch utilisera ce schéma.
+   Ils sont basés sur le [schéma d’élément de composant/conteneur](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#item). La règle que nous allons créer dans Launch utilisera ce schéma.
 
 ## Création d’une règle CTA sélectionnée
 
@@ -148,11 +144,11 @@ La couche de données client Adobe est une couche de données pilotée par **eve
 
    L’objet `event` est transmis à partir de la méthode `trigger()` appelée dans l’événement personnalisé. `component` est l’état actuel du composant dérivé de la couche de données  `getState` qui a déclenché le clic.
 
-1. Enregistrez les modifications et exécutez un [build](https://docs.adobe.com/content/help/en/launch/using/reference/publish/builds.html) dans Launch pour convertir le code en [environnement](https://docs.adobe.com/content/help/en/launch/using/reference/publish/environments.html) utilisé sur votre site AEM.
+1. Enregistrez les modifications et exécutez un [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) dans Launch pour convertir le code en [environnement](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html) utilisé sur votre site AEM.
 
    >[!NOTE]
    >
-   > Il peut s’avérer très utile d’utiliser le [débogueur Adobe Experience Platform](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.html) pour passer le code incorporé à un environnement **de développement**.
+   > Il peut s’avérer très utile d’utiliser le [débogueur Adobe Experience Platform](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html) pour passer le code incorporé à un environnement **de développement**.
 
 1. Accédez au [site WKND](https://wknd.site/us/en.html) et ouvrez les outils de développement pour afficher la console. Sélectionnez **Conserver le journal**.
 
@@ -314,6 +310,6 @@ Maintenant que la règle **CTA cliquée** envoie la balise Analytics, vous devri
    >
    > Si vous ne voyez aucun journal de la console, assurez-vous que **Journalisation de la console** est coché sous **Launch** dans le débogueur Experience Platform.
 
-## Félicitations ! 
+## Félicitations !
 
 Vous venez d’utiliser la couche de données client et l’Experience Platform Launch Adobe pilotés par les événements pour effectuer le suivi des clics sur des composants spécifiques d’un site Adobe Experience Manager.
