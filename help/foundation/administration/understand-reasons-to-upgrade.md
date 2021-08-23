@@ -10,9 +10,9 @@ doc-type: article
 topic: Mise à niveau
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
 workflow-type: tm+mt
-source-wordcount: '3541'
+source-wordcount: '3529'
 ht-degree: 6%
 
 ---
@@ -343,7 +343,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités de sécur
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://docs.adobe.com/docs/en/aem/6-5/administer/security/saml-2-0-authenticationhandler.html" target="_blank">Amélioration de la </a><br>
+        <td><strong><a href="https://experienceleague.adobe.com/docs/?lang=fr" target="_blank">Amélioration de la </a><br>
  </strong>prise en charge de l’authentification SAML. Amélioration de la redirection SAML, optimisation des informations de groupe et résolution des problèmes de chiffrement des clés. 
             <br>
         </td>
@@ -863,7 +863,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités d’Asset
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html" target="_blank">Adobe Asset Link</a> : </strong>
+            <td><strong><a href="https://www.adobe.com/fr/creativecloud/business/enterprise/adobe-asset-link.html" target="_blank">Adobe Asset Link</a> : </strong>
             accédez à AEM Assets directement à partir des applications Adobe Create Cloud.</td>
             <td> </td>
             <td> </td>
@@ -954,7 +954,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités d’Asset
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://docs.adobe.com/docs/fr-FR/aem/6-5/administer/content/dynamic-media/viewer-presets.html" target="_blank">Visionneuses</a> :</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/" target="_blank">Visionneuses</a> :</strong>
             lecteurs multimédias enrichis personnalisés et paramètres prédéfinis avec prise en charge de différents écrans/appareils.</td>
             <td> </td>
             <td>✔</td>
