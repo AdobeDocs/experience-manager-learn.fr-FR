@@ -2,17 +2,17 @@
 title: Paramètres d’image prédéfinis
 description: Paramètres d’image prédéfinis Dans Dynamic Media Classic, tous les paramètres nécessaires pour créer une image à une taille, un format, une qualité et une accentuation spécifiques sont inclus. Les paramètres d’image prédéfinis sont un composant clé du dimensionnement dynamique. Lorsque vous examinez une URL dans Dynamic Media Classic, vous pouvez facilement voir si un paramètre d’image prédéfini est en cours d’utilisation. Découvrez les paramètres d’image prédéfinis, pourquoi ils sont si utiles et comment en créer un.
 sub-product: dynamic-media
-feature: Dynamic Media Classic, paramètres d’image prédéfinis
+feature: Dynamic Media Classic, Image Presets
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Gestion de contenu
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '670'
 ht-degree: 1%
 
 ---
@@ -70,5 +70,3 @@ En savoir plus sur les [options d’accentuation de Dynamic Media Classic](https
 [Guide des paramètres d’image prédéfinis](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). Paramètres à utiliser pour optimiser la qualité de l’image et la vitesse de chargement.
 
 [L&#39;Image C&#39;Est Tout, Partie 2 : Ce n&#39;est jamais juste un flou — Qualité contre vitesse](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Article de blog traitant de l’utilisation des paramètres d’image prédéfinis pour la diffusion d’images à chargement rapide de haute qualité.
-
-[L’Image Est Tout Ce Que Les Webinaires](https://dynamicmediaseries2019.enterprise.adobeevents.com/). Liens vers les enregistrements des trois webinaires de la série _Image Is Everything_. [Le webinaire 2](https://seminars.adobeconnect.com/p6lqaotpjnd3)  aborde les paramètres d’image prédéfinis.
