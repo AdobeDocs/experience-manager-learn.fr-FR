@@ -1,23 +1,17 @@
 ---
 title: Opérations de base sur les pages dans AEM Sites
-seo-title: Opérations de base sur les pages dans AEM Sites
 description: La vidéo suivante explique comment effectuer des opérations de gestion de page de base pour une page Adobe Experience Manager Sites.
-seo-description: La vidéo suivante explique comment effectuer des opérations de gestion de page de base pour une page Adobe Experience Manager Sites.
-feature: Éditeur de page, modèles modifiables
-topics: authoring, publishing
-audience: author, marketer
-doc-type: feature video
-activity: use
 version: 6.3, 6.4, 6.5
-kt: 4245
-thumbnail: 32147.jpg
-topic: Gestion de contenu
+topic: Content Management
+feature: Page Editor, Editable Templates
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+kt: 4245
+thumbnail: 32147.jpg
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 3%
+source-wordcount: '69'
+ht-degree: 11%
 
 ---
 
@@ -32,4 +26,4 @@ Découvrez comment effectuer des opérations de gestion de page de base pour une
 ## Ressources supplémentaires {#additional-resources}
 
 * [Modification de la documentation sur le contenu de la page](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guide de l’utilisateur pour la création de sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html&amp;topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
+* [Guide rapide pour la création de pages](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
