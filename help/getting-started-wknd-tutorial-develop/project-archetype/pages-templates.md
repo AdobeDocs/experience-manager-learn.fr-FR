@@ -1,20 +1,16 @@
 ---
 title: Prise en main d’AEM Sites - Pages et modèles
-seo-title: Prise en main d’AEM Sites - Pages et modèles
 description: Découvrez la relation entre un composant de page de base et des modèles modifiables. Comprenez comment les composants principaux sont liés par proxy au projet et découvrez les configurations de stratégie avancées des modèles modifiables afin de créer un modèle de page d’article bien structuré basé sur une maquette d’Adobe XD.
-sub-product: sites
-version: 6.4, 6.5, Cloud Service
-type: Tutorial
-feature: Composants principaux, modèles modifiables, éditeur de page
-topic: Gestion de contenu, développement
+feature: Core Components, Editable Templates, Page Editor
+topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3082'
 ht-degree: 1%
 
 ---
@@ -57,7 +53,7 @@ Consultez le code de ligne de base sur lequel le tutoriel s’appuie :
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd/tree/pages-templates/solution) ou extraire le code localement en passant à la branche `tutorial/pages-templates-solution`.
+Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd/tree/tutorial/pages-templates-solution) ou extraire le code localement en passant à la branche `tutorial/pages-templates-solution`.
 
 ## Objectif
 
