@@ -1,7 +1,7 @@
 ---
 title: Configuration des outils de développement pour AEM en tant que développement Cloud Service
 description: Configurez une machine de développement locale avec tous les outils de base nécessaires pour le développement local par rapport à AEM.
-feature: Outils de développement
+feature: Developer Tools
 topics: development
 version: cloud-service
 doc-type: tutorial
@@ -9,13 +9,13 @@ activity: develop
 audience: developer
 kt: 4267
 thumbnail: 25907.jpg
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 4%
+source-wordcount: '1435'
+ht-degree: 3%
 
 ---
 
@@ -190,9 +190,9 @@ Visual Studio Code est le choix idéal pour les développeurs front-end qui cré
 
 ### Eclipse
 
-__[Eclipse ](https://www.eclipse.org/ide/)__ IDE est un IDE populaire pour le développement Java. Il prend en charge le plug-in   __[AEM Developer ](https://eclipse.adobe.com/aem/dev-tools/)__ Toolsd fourni par Adobe, fournissant une interface utilisateur graphique intégrée (GUI) pour la création et la synchronisation de contenu JCR avec une instance AEM locale.
+__[Eclipse ](https://www.eclipse.org/ide/)__ IDE est un IDE populaire pour le développement Java. Il prend en charge le plug-in   __[AEM Developer ](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html?lang=en)__ Toolsd fourni par Adobe, fournissant une interface utilisateur graphique intégrée (GUI) pour la création et la synchronisation de contenu JCR avec une instance AEM locale.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
 + [Télécharger Eclipse](https://www.eclipse.org/ide/)
-+ [Téléchargement des outils de développement Eclipse](https://eclipse.adobe.com/aem/dev-tools/)
++ [Téléchargement des outils de développement Eclipse](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html?lang=en)
