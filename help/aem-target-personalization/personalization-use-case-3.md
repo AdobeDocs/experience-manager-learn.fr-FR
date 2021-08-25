@@ -1,15 +1,15 @@
 ---
 title: Personnalisation à l’aide du compositeur d’expérience visuelle Adobe Target
-seo-title: Personnalisation à l’aide du compositeur d’expérience visuelle (VEC) d’Adobe Target
+seo-title: Personalization using Adobe Target Visual Experience Composer (VEC)
 description: Tutoriel complet montrant comment créer et diffuser une expérience personnalisée à l’aide du compositeur d’expérience visuelle (VEC) d’Adobe Target.
-seo-description: Tutoriel complet montrant comment créer et diffuser une expérience personnalisée à l’aide du compositeur d’expérience visuelle (VEC) d’Adobe Target.
-feature: Fragments d’expérience
-topic: Personnalisation
+seo-description: An end-to-end tutorial showing how to create and deliver personalized experience using Adobe Target Visual Experience Composer (VEC).
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '583'
 ht-degree: 2%
 
 ---
@@ -36,11 +36,11 @@ Pour cet exercice, les utilisateurs suivants doivent être impliqués et effectu
 
 ### Prérequis
 
-* **AEM **
+* **AEM**
    * [AEM publier l’](./implementation.md#getting-aem) instance sur 4503
    * [AEM intégré à Adobe Target à l’aide d’Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
-   * Accès à vos organisations Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com
+   * Accès à vos organisations Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud fourni avec [Adobe Target](https://experiencecloud.adobe.com)
 
 ## Activités marketing
