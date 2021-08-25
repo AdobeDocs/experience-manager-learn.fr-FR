@@ -1,16 +1,16 @@
 ---
 title: Utilisation des visionneuses Dynamic Media avec Adobe Analytics et Adobe Launch
 description: L’extension Visionneuses Dynamic Media pour Adobe Launch, ainsi que la version 5.13 des Visionneuses Dynamic Media, permettent aux clients de Dynamic Media, Adobe Analytics et Adobe Launch d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration Adobe Launch.
-sub-product: Dynamic Media
-feature: Statistiques sur les ressources
-version: 6.3, 6.4, 6.5
-topic: Gestion de contenu
+sub-product: Dynamic Media
+feature: Asset Insights
+version: 6.4, 6.5
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 22%
+source-wordcount: '360'
+ht-degree: 20%
 
 ---
 
@@ -165,5 +165,5 @@ Le tableau suivant répertorie les événements de visionneuse Dynamic Media et
 ## Ressources supplémentaires{#additional-resources}
 
 * [Intégration d’Adobe Experience Manager à Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
-* [Exécution d’Adobe Experience Manager en mode Dynamic Media Scene7](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dms7.html)
-* [Intégration des visionneuses Dynamic Media à Adobe Analytics et Adobe Launch](https://helpx.adobe.com/experience-manager/6-5/assets/using/launch.html)
+* [Exécution d’Adobe Experience Manager en mode Dynamic Media Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=en)
+* [Intégration des visionneuses Dynamic Media à Adobe Analytics et Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html)
