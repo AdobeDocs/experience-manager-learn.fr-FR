@@ -1,15 +1,15 @@
 ---
 title: Intégration d’Adobe Experience Manager à Adobe Target à l’aide de Cloud Services
-seo-title: Intégration d’Adobe Experience Manager (AEM) à Adobe Target à l’aide de Cloud Services hérités
+seo-title: Integrating Adobe Experience Manager (AEM) with Adobe Target using Legacy Cloud Services
 description: Présentation détaillée de l’intégration d’Adobe Experience Manager (AEM) à Adobe Target à l’aide d’AEM Cloud Service
-seo-description: Présentation détaillée de l’intégration d’Adobe Experience Manager (AEM) à Adobe Target à l’aide d’AEM Cloud Service
-feature: Fragments d’expérience
-topic: Personnalisation
+seo-description: Step by step walkthrough on how to integrate Adobe Experience Manager (AEM) with Adobe Target using AEM Cloud Service
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '351'
 ht-degree: 3%
 
 ---
@@ -27,19 +27,18 @@ Afin d’utiliser les offres de fragments d’expérience AEM pour alimenter vos
 
 ## Prérequis
 
-* **AEM **
+* **AEM**
 
    * AEM instances de création et de publication sont nécessaires pour suivre ce tutoriel. Si vous n’avez pas encore configuré votre instance AEM, vous pouvez suivre les étapes [ici](./implementation.md#set-up-aem).
 
 * **Experience Cloud**
-   * Accès à vos organisations Adobe Experience Cloud - <https://>`<yourcompany>`.experiencecloud.adobe.com
+   * Accès à vos organisations Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud fourni avec les solutions suivantes
       * [Adobe Target](https://experiencecloud.adobe.com)
 
       >[!NOTE]
       >
       > Le client doit être configuré avec l’Experience Platform Launch et l’Adobe I/O à partir de la [prise en charge de l’Adobe](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) ou contacter votre administrateur système.
-
 
 
 ### Intégration d’AEM à Adobe Target
