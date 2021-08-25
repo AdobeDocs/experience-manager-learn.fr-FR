@@ -1,17 +1,16 @@
 ---
 title: Utilisation de l’application de bureau Dynamic Media Classic
 description: Adobe introduit une application de bureau pour les utilisateurs de Dynamic Media Classic qui ne repose plus sur la technologie Adobe Flash dans le navigateur.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 version: 6.5
 kt: 5808
 thumbnail: 36645.jpg
-topic: Gestion de contenu
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '189'
 ht-degree: 1%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 1%
 
 Adobe introduit une application de bureau pour Dynamic Media Classic qui fournit une expérience similaire à un navigateur et une interface fonctionnellement équivalente qui ne dépend pas du lecteur de Flash d’Adobe.
 
->[!VIDEO](https://video.tv.adobe.com/v/36645/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/36645/?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -38,5 +37,4 @@ L’appli de bureau Dynamic Media Classic Adobe est compatible avec les système
 
 * [Documentation de l’application de bureau Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html)
 * [Questions fréquentes sur Adobe Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
-* [Télécharger - Fichier d’image de disque pour macOS (.dmg)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.dmg)
-* [Télécharger - Fichier exécutable pour Windows (.exe)](http://download.macromedia.com/dynamic-media-classic/20.20.1/adobe-dynamic-media-classic-20.20.1.exe)
+* [Téléchargement de l’appli de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
