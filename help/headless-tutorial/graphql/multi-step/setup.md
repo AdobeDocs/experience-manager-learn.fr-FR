@@ -5,13 +5,13 @@ version: cloud-service
 mini-toc-levels: 1
 kt: 6386
 thumbnail: KT-6386.jpg
-feature: Fragments de contenu,API GraphQL
-topic: Sans affichage, gestion de contenu
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1814'
 ht-degree: 4%
 
 ---
@@ -158,11 +158,7 @@ L’un des objectifs de ce tutoriel consiste à montrer comment utiliser AEM con
 
    ![Requête XHR du point d’entrée GraphQL](assets/setup/endpoint-gql.png)
 
-1. Vous pouvez également afficher les paramètres et la réponse JSON en examinant la requête réseau. Il peut s’avérer utile d’installer une extension de navigateur telle que [GraphQL Network](https://chrome.google.com/webstore/detail/graphql-network/igbmhmnkobkjalekgiehijefpkdemocm) pour Chrome afin de mieux comprendre la requête et la réponse.
-
-   ![Extension réseau GraphQL](assets/setup/GraphQL-extension.png)
-
-   *Utilisation du réseau GraphQL de l’extension Chrome*
+1. Vous pouvez également afficher les paramètres et la réponse JSON en examinant la requête réseau. Il peut s’avérer utile d’installer une extension de navigateur telle que [Inspecteur réseau GraphQL](https://chrome.google.com/webstore/detail/graphql-network-inspector/ndlbedplllcgconngcnfmkadhokfaaln) pour Chrome afin de mieux comprendre la requête et la réponse.
 
 ## Modification d’un fragment de contenu
 
