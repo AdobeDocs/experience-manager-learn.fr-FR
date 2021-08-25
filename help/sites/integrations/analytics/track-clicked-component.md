@@ -2,16 +2,16 @@
 title: Suivi des composants cliqués avec Adobe Analytics
 description: Utilisez la couche de données client Adobe orientée événement pour effectuer le suivi des clics sur des composants spécifiques d’un site Adobe Experience Manager. Découvrez comment utiliser des règles dans Experience Platform Launch pour écouter ces événements et envoyer des données à une Adobe Analytics avec une balise de lien de suivi.
 version: cloud-service
-topic: Intégrations
-feature: Couche de données client Adobe
+topic: Integrations
+feature: Adobe Client Data Layer
 role: Developer
 level: Intermediate
 kt: 6296
 thumbnail: KT-6296.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 4%
+source-wordcount: '1810'
+ht-degree: 3%
 
 ---
 
@@ -144,7 +144,7 @@ La couche de données client Adobe est une couche de données pilotée par **eve
 
    L’objet `event` est transmis à partir de la méthode `trigger()` appelée dans l’événement personnalisé. `component` est l’état actuel du composant dérivé de la couche de données  `getState` qui a déclenché le clic.
 
-1. Enregistrez les modifications et exécutez un [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) dans Launch pour convertir le code en [environnement](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments.html) utilisé sur votre site AEM.
+1. Enregistrez les modifications et exécutez un [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) dans Launch pour convertir le code en [environnement](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) utilisé sur votre site AEM.
 
    >[!NOTE]
    >
