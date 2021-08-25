@@ -1,23 +1,17 @@
 ---
 title: Présentation des propriétés de page dans AEM Sites
-seo-title: Présentation des propriétés de page dans Adobe Experience Manager Sites
 description: La vidéo suivante présente les métadonnées des propriétés de page associées à une page dans Adobe Experience Manager.
-seo-description: 'La vidéo suivante présente les métadonnées des propriétés de page associées à une page dans Adobe Experience Manager. '
-feature: Éditeur de page
-topics: authoring, metadata
-audience: author, marketer
-doc-type: feature video
-activity: understand
 version: 6.3, 6.4, 6.5
-kt: 4321
-thumbnail: 32192.jpg
-topic: Gestion de contenu
+topic: Content Management
+feature: Page Editor
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+kt: 4321
+thumbnail: 32192.jpg
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 33%
+source-wordcount: '138'
+ht-degree: 42%
 
 ---
 
@@ -64,4 +58,5 @@ Dans cette vidéo, les éléments de propriété de page suivants sont abordés 
 
 * [Modification de la documentation des propriétés de page](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
 * [Modification de la documentation sur le contenu de la page](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guide de l’utilisateur pour la création de sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html&amp;topic=/experience-manager/6-5/sites/authoring/morehelp/page-authoring.ug.js)
+* [Guide rapide pour la création de pages](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+
