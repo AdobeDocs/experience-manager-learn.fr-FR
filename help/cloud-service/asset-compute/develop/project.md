@@ -1,21 +1,16 @@
 ---
 title: Création d’un projet d’Asset compute pour l’extensibilité des Assets compute
 description: Les projets Asset compute sont des projets Node.js, générés à l’aide de l’interface de ligne de commande d’Adobe I/O, qui adhèrent à une certaine structure leur permettant d’être déployés dans Adobe I/O Runtime et intégrés à AEM en tant que Cloud Service.
-feature: Microservices Asset compute
-topics: renditions, development
-version: cloud-service
-activity: develop
-audience: developer
-doc-type: tutorial
 kt: 6269
 thumbnail: 40197.jpg
-topic: Intégrations, développement
+topic: Integrations, Development
+feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 4%
+source-wordcount: '902'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +29,7 @@ Utilisez le [module Adobe I/O d’Asset compute de l’interface de ligne de com
 
 1. Dans la ligne de commande, accédez au dossier contenant le projet.
 1. Sur la ligne de commande, exécutez `aio app init` pour lancer l’interface de ligne de commande de génération de projet interactif.
-   + Cette commande peut générer un navigateur Web invitant à l’Adobe I/O de l’authentification. Si tel est le cas, fournissez les informations d’identification de votre Adobe associées aux [services et produits d’Adobe requis](../set-up/accounts-and-services.md). Si vous ne parvenez pas à vous connecter, suivez [ces instructions pour générer un projet](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#42-developer-is-not-logged-in-as-enterprise-organization-user).
+   + Cette commande peut générer un navigateur Web invitant à l’Adobe I/O de l’authentification. Si tel est le cas, fournissez les informations d’identification de votre Adobe associées aux [services et produits d’Adobe requis](../set-up/accounts-and-services.md). Si vous ne parvenez pas à vous connecter, suivez [ces instructions pour générer un projet](https://www.adobe.io/project-firefly/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user).
 1. __Sélectionner une organisation__
    + Sélectionnez l’organisation d’Adobe qui a AEM en tant que Cloud Service et avec laquelle Project Firefly est enregistré.
 1. __Sélectionner le projet__
