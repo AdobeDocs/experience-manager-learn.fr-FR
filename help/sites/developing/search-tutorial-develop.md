@@ -1,18 +1,14 @@
 ---
 title: Guide de mise en oeuvre de recherche simple
 description: La mise en œuvre de recherche simple est le matériel du Summit Lab AEM Search Demystified 2017. Cette page contient les matériaux de ce laboratoire. Pour une visite guidée du laboratoire, consultez le classeur du laboratoire dans la section Présentation de cette page.
-topics: development, search
-audience: developer
-doc-type: tutorial
-activity: develop
 version: 6.3, 6.4, 6.5
-feature: Rechercher
-topic: Développement
+feature: Search
+topic: Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '897'
 ht-degree: 11%
 
 ---
@@ -114,7 +110,7 @@ Corrections et clarifications des discussions de laboratoire et réponses aux qu
 
    Oak expose un ensemble d’éléments de configuration de l’analyseur Lucene-fournit à utiliser dans AEM.
 
-   * [Documentation Apache Oak Analytics](http://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
+   * [Documentation Apache Oak Analytics](https://jackrabbit.apache.org/oak/docs/query/lucene.html#analyzers)
       * [Tokenizers](https://cwiki.apache.org/confluence/display/solr/Tokenizers)
       * [Filtres](https://cwiki.apache.org/confluence/display/solr/Filter+Descriptions)
       * [CharFilters](https://cwiki.apache.org/confluence/display/solr/CharFilterFactories)
