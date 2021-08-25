@@ -2,17 +2,12 @@
 title: Comprendre les raisons de la mise à niveau
 description: Une ventilation de haut niveau des fonctionnalités clés pour les clients qui envisagent d’effectuer une mise à niveau vers la dernière version d’Adobe Experience Manager.
 version: 6.5
-sub-product: ressources, cloud manager, commerce, content-services, dynamic-media, formulaires, foundation, screens, sites
-topics: best-practices, upgrade
-audience: all
-activity: understand
-doc-type: article
-topic: Mise à niveau
+topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '3529'
+source-wordcount: '3462'
 ht-degree: 6%
 
 ---
@@ -504,8 +499,8 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités de Sites 
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/style-system-fp.html" target="_blank">Système de style</a> :</strong>
-             augmentez la réutilisation des composants d’AEM en définissant leur aspect visuel à l’aide du système de style dans le contexte.</td>
+            <td><strong>Système de style : </strong>
+            augmentez la réutilisation des composants d’AEM en définissant leur apparence visuelle à l’aide du système de style dans le contexte.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -559,7 +554,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités de Sites 
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-feature-video-understand.html" target="_blank">Fragments de contenu</a> : </strong>
+            <td><strong>Fragments de contenu : </strong>
             créez et traitez du contenu éditorial dissocié de la présentation pour une réutilisation facile.</td>
             <td> </td>
             <td> </td>
@@ -581,8 +576,8 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités de Sites 
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/release-notes/content-services-fragments-featurepack.html" target="_blank">Content Services</a> :</strong>
-            exportez du contenu d’AEM au format JSON pour le consommer sur plusieurs appareils et applications.</td>
+            <td><strong>Content Services : </strong>
+            exportez du contenu d’AEM au format JSON pour une utilisation sur plusieurs appareils et applications.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -636,8 +631,8 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités de Sites 
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/aem-screens-introduction.html" target="_blank">Screens</a> :</strong>
-             gérez les expériences pour la signalétique numérique et les kiosques.</td>
+            <td><strong>Screens : </strong>
+            gérez les expériences pour la signalétique numérique et les kiosques.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -993,8 +988,6 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités d’Asset
 
 Vous trouverez ci-dessous une matrice des principales fonctionnalités du module complémentaire AEM Forms proposées par AEM. Certaines de ces fonctionnalités ont été introduites dans les versions antérieures par des améliorations incrémentielles ajoutées dans chaque version.
 
-+ [Notes de mise à jour d’AEM Forms](https://helpx.adobe.com/experience-manager/6-5/release-notes/forms.html)
-
 ***✔<sup>+</sup>  améliorations significatives de la fonctionnalité dans cette version.***
 
 ***✔<sup></sup> SPindique que la fonctionnalité est disponible via un Service Pack ou un Feature Pack.***
@@ -1149,8 +1142,8 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités du module
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/pdf/aem-forms/6-5/WorkbenchHelp.pdf" target="_blank">Processus (J2EE) pour le traitement Forms</a> :</strong>
-             créez des formulaires/processus complexes axés sur les documents à l’aide d’un IDE intuitif.</td>
+            <td><strong>Processus (J2EE) pour le traitement Forms : </strong>
+            créez des formulaires complexes/des processus basés sur l’utilisation d’un IDE intuitif.</td>
             <td></td>
             <td>✔</td>
             <td>✔</td>
@@ -1188,8 +1181,6 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités du module
 ## Fonctions de communauté
 
 Vous trouverez ci-dessous une matrice des principales fonctionnalités du module complémentaire AEM Communities proposées par AEM. Certaines de ces fonctionnalités ont été introduites dans les versions antérieures par des améliorations incrémentielles ajoutées dans chaque version.
-
-+ [Résumé des nouvelles fonctionnalités d’AEM Communities](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html#main-pars_text)
 
 ***✔<sup>+</sup>  améliorations significatives de la fonctionnalité dans cette version.***
 
@@ -1629,7 +1620,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités du module
     </tbody>
 </table>
 
-AEM Communities ajoute des [améliorations](https://helpx.adobe.com/experience-manager/6-5/communities/using/whats-new-aem-communities.html) par le biais de versions pour permettre aux entreprises d’interagir et de permettre à leurs utilisateurs, en procédant comme suit :
+AEM Communities ajoute des améliorations par le biais de mises à jour pour permettre aux entreprises d’interagir et de permettre à leurs utilisateurs, en procédant comme suit :
 
 + **@** mentionsupport dans le contenu généré par l’utilisateur.
 + Améliorations de l’accessibilité grâce à la **navigation par clavier** dans les composants **Activation**.
