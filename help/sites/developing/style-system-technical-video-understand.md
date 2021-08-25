@@ -1,19 +1,15 @@
 ---
 title: Comprendre comment coder pour le système de style AEM
 description: Dans cette vidéo, nous examinerons l’anatomie du code CSS (ou LESS) et du code JavaScript utilisé pour appliquer un style au composant du titre principal d’Adobe Experience Manager à l’aide du système de style, ainsi que la manière dont ces styles sont appliqués au code HTML et au modèle DOM.
-feature: Système de style
-topics: development, components, front-end-development
-audience: developer, implementer
-doc-type: technical video
-activity: understand
+feature: Style System
 version: 6.4, 6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 4%
+source-wordcount: '1092'
+ht-degree: 2%
 
 ---
 
@@ -22,15 +18,10 @@ ht-degree: 4%
 
 Dans cette vidéo, nous examinerons l’anatomie du code CSS (ou [!DNL LESS]) et du code JavaScript utilisé pour appliquer un style au composant du titre principal d’Experience Manager à l’aide du système de style, ainsi que la manière dont ces styles sont appliqués au code HTML et au modèle DOM.
 
->[!NOTE]
->
->Le système de style AEM a été introduit avec [AEM 6.3 SP1](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes/sp1-release-notes.html) + [Feature Pack 20593](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-20593).
->
->La vidéo suppose que le composant We.Retail Title a été mis à jour pour hériter des [composants principaux v2.0.0+](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
 
 ## Comprendre comment coder pour le système de style {#understanding-how-to-code-for-the-style-system}
 
->[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=12&learn=on)
 
 Le package d’AEM fourni (**technical-review.sites.style-system-1.0.0.zip**) installe l’exemple de style de titre, les exemples de stratégies pour les composants We.Retail Layout Container et Titre , ainsi qu’un exemple de page.
 
@@ -239,7 +230,7 @@ L’exemple de structure du sélecteur CSS doit être le suivant :
 
 Dans le cas des composants imbriqués, la profondeur du sélecteur CSS pour ces éléments de composant imbriqués dépassera le sélecteur de troisième niveau. Répétez le même modèle pour le composant imbriqué, mais délimité par la balise `BLOCK` du composant parent. En d’autres termes, démarrez la balise `BLOCK` du composant imbriqué au troisième niveau et la balise `ELEMENT` du composant imbriqué se trouve au quatrième niveau du sélecteur.
 
-### Bonnes pratiques JavaScript {#javascript-best-practices}
+### Bonnes pratiques relatives à JavaScript {#javascript-best-practices}
 
 Les bonnes pratiques définies dans cette section concernent &quot;style-JavaScript&quot;, ou JavaScript spécialement conçu pour manipuler le composant à des fins de style plutôt que fonctionnelles.
 
@@ -254,7 +245,7 @@ Les bonnes pratiques définies dans cette section concernent &quot;style-JavaScr
 * Évaluez le coût de JavaScript par rapport au fait de manifester ces modifications DOM dans le code HTML directement via HTL.
    * Lorsqu’un composant qui utilise le style JavaScript nécessite une modification côté serveur, évaluez si la manipulation JavaScript peut être apportée à ce moment-là et quels sont les effets/ramifications sur les performances et la capacité de prise en charge du composant.
 
-#### Considérations de performance {#performance-considerations}
+#### Considérations sur les performances {#performance-considerations}
 
 * Style-JavaScript doit rester léger et mince.
 * Pour éviter le scintillement et les rétraits inutiles, masquez initialement le composant via `BLOCK--MODIFIER BLOCK` et affichez-le lorsque toutes les manipulations DOM dans le JavaScript sont terminées.
