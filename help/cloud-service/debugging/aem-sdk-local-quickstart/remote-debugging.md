@@ -1,20 +1,16 @@
 ---
 title: Débogage à distance du SDK AEM
 description: Le démarrage rapide local du SDK AEM permet le débogage Java à distance à partir de votre IDE, ce qui vous permet de parcourir l’exécution du code en direct dans AEM pour comprendre le flux d’exécution exact.
-feature: Outils de développement
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
 kt: 5251
-topic: Développement
+topic: Development
+feature: Developer Tools
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+thumbnail: 34338.jpeg
+source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 1%
+source-wordcount: '275'
+ht-degree: 0%
 
 ---
 
@@ -45,5 +41,5 @@ La plupart des IDE Java prennent en charge le débogage à distance des programm
 ### Configuration des instructions
 
 + [Débogueur à distance Java VS Code](https://code.visualstudio.com/docs/java/java-debugging)
-+ [Configuration du débogueur distant IntelliJ IDEA](https://www.jetbrains.com/help/idea/run-debug-configuration-remote-debug.html)
++ [Configuration du débogueur distant IntelliJ IDEA](https://www.jetbrains.com/help/idea/tutorial-remote-debug.html)
 + [Configuration du débogueur distant Eclipse](https://javapapers.com/core-java/java-remote-debug-with-eclipse/)
