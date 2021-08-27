@@ -1,20 +1,20 @@
 ---
 title: Personnalisation de la boîte de réception
 description: Ajout de colonnes personnalisées pour afficher des données additionnelles du workflow à l’aide d’un modèle de rapport
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5.5
 kt: 5830
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 9%
+source-wordcount: '289'
+ht-degree: 8%
 
 ---
 
@@ -81,7 +81,7 @@ return val;
 
 >[!NOTE]
 >
->Cet article suppose que vous avez installé les [exemples de workflow](assets/review-workflow.zip) et [exemple de formulaire](assets/snap-form.zip) de [l’article précédent](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.md) de cette série.
+>Cet article suppose que vous avez installé les [exemples de workflow](assets/review-workflow.zip) et [exemple de formulaire](assets/snap-form.zip) de [l’article précédent](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html) de cette série.
 
 * [Connectez-vous à crx en tant qu’utilisateur administrateur.](http://localhost:4502/crx/de/index.jsp)
 * [modèle d&#39;import sightly](assets/sightly-template.zip)

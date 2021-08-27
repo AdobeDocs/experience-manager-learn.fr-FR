@@ -1,15 +1,15 @@
 ---
 title: Ajout d’éléments au composant de groupe de choix
 description: Ajouter dynamiquement des éléments au composant de groupe de choix
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.5
-topic: Développement
+topic: Development
 role: User
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 4%
+source-wordcount: '520'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 AEM Forms 6.5 offre la possibilité d’ajouter dynamiquement des éléments à un composant de groupe de choix de Forms adaptatif tel que Case à cocher, Bouton radio et Liste d’images.
 
-[Cette fonctionnalité est disponible en direct sur le serveur](https://forms.enablementadobe.com/content/samples/samples.html?query=0) Samples. Recherchez la carte d’éléments de case à cocher dynamique et cliquez sur &quot;Essayer&quot;.
+[Cette fonctionnalité est disponible en direct sur le serveur](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) Samples. Recherchez la carte d’éléments de case à cocher dynamique et cliquez sur &quot;Essayer&quot;.
 
 
 Vous pouvez ajouter des éléments à l’aide de l’éditeur visuel ainsi que de l’éditeur de code en fonction de votre cas d’utilisation.
@@ -91,7 +91,7 @@ Pour essayer ceci sur votre système :
 
 * [Téléchargement des ressources](assets/usingthevisualeditor.zip)
 * Installez Tomcat si vous ne l&#39;avez pas déjà. [Les instructions d’installation de tomcat sont disponibles ici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
-* [Déployer le fichier SampleRest.war dans Tomcat](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
+* [Déployez le fichier SampleRest.war contenu dans ce fichier zip.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
 * [Ouvrir Forms Et Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Cliquez sur &quot;Créer&quot; | Téléchargement du fichier&quot; et chargez le fichier que vous avez téléchargé à l’étape précédente.
 * [Aperçu des formulaires](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)

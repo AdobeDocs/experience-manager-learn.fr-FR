@@ -1,23 +1,23 @@
 ---
 title: Configuration du panneau Outlook de retraite
-seo-title: Configuration du panneau Outlook de retraite
+seo-title: Configuring Retirement Outlook Panel
 description: Ce didacticiel en plusieurs étapes constitue la 10 partie d’un premier document de communication interactive. Dans cette partie, nous allons configurer le panneau Outlook de retraite en ajoutant des composants de texte et de graphique.
-seo-description: Ce didacticiel en plusieurs étapes constitue la 10 partie d’un premier document de communication interactive. Dans cette partie, nous allons configurer le panneau Outlook de retraite en ajoutant des composants de texte et de graphique.
+seo-description: This is part 10 of a multi-step tutorial for creating your first interactive communications document. In this part, we will configure Retirement Outlook Panel by adding text and chart components.
 uuid: 1d5119b5-e797-4bf0-9b10-995b3f051f92
-feature: Communication interactive
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 2ee2cea2-aefa-4d21-a258-248648f73a68
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 1%
+source-wordcount: '344'
+ht-degree: 0%
 
 ---
 
@@ -56,11 +56,11 @@ ht-degree: 1%
 
 * Remplacez le texte par défaut par &quot;**Revenus mensuels de retraite estimés&quot;**
 
-## Ajouter un fragment de document Perspectives de revenu de retraite {#add-retirement-income-outlook-document-fragment}
+## Ajouter un fragment de document Outlook de revenu de retraite {#add-retirement-income-outlook-document-fragment}
 
 * Cliquez sur l’icône Ressources et appliquez le filtre pour afficher les ressources de type &quot;Fragments de document&quot;. Faites glisser et déposez le fragment de document RetirementRevenueOutlook dans la zone cible Panneau de gauche.
 
-* Vous pouvez vous référer [à cette page](https://helpx.adobe.com/experience-manager/kt/forms/using/interactive-communication-web-channel-aem-forms/9.html) lors de l’ajout de fragments de document aux zones de contenu.
+* Vous pouvez vous référer [à cette page](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) lors de l’ajout de fragments de document aux zones de contenu.
 
 ## Ajout d’un graphique des revenus mensuels estimés {#adding-estimated-monthly-income-chart}
 

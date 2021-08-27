@@ -2,14 +2,14 @@
 title: Création de votre premier lot OSGi avec AEM Forms
 description: Créez votre premier lot OSGi à l’aide de Maven et Eclipse
 version: 6.4,6.5
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 3569d8b2a38d1cce02f6f4ff8b0c583f4dc118b6
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 4%
+source-wordcount: '840'
+ht-degree: 3%
 
 ---
 
@@ -40,7 +40,7 @@ Ouvrez une nouvelle fenêtre d’invite de commande et saisissez : `java -versio
 Maven est un outil d’automatisation de génération utilisé principalement pour les projets Java. Pour installer Maven sur votre système local, procédez comme suit.
 
 * Créez un dossier appelé `maven` dans votre lecteur C.
-* Téléchargez l’ [archive zip binaire](http://maven.apache.org/download.cgi)
+* Téléchargez l’ [archive zip binaire](https://maven.apache.org/download.cgi)
 * Extrayez le contenu de l’archive zip dans `c:\maven`
 * Créez une variable d’environnement appelée `M2_HOME` avec la valeur `C:\maven\apache-maven-3.6.0`. Dans mon cas, la version **mvn** est 3.6.0. Au moment de la rédaction de cet article, la dernière version de Maven est 3.6.3.
 * Ajoutez la balise `%M2_HOME%\bin` à votre chemin d’accès.

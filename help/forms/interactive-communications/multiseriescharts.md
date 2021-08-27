@@ -1,21 +1,21 @@
 ---
 title: Graphiques à séries multiples dans AEM Forms
-seo-title: Graphiques à séries multiples dans AEM Forms
+seo-title: Multi Series Charts in AEM Forms
 description: Créez un modèle de données de formulaire approprié pour créer des graphiques à série multiple dans les documents de canal papier et web.
-seo-description: Créez un modèle de données de formulaire approprié pour créer des graphiques à série multiple dans les documents de canal papier et web.
-feature: Communication interactive
+seo-description: Create appropriate Form Data Model to create multi series charts in print and web channel documents.
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 1%
+source-wordcount: '279'
+ht-degree: 2%
 
 ---
 
@@ -45,7 +45,7 @@ Pour le tester sur votre système, procédez comme suit :
 
 * [Téléchargez et importez le fichier MutualFundFactSheet.zip à l’aide d’AEM Package Manager.](assets/mutualfundfactsheet.zip)
 * [Téléchargez le fichier SeriesChartSampleData.json sur votre disque dur.](assets/serieschartsampledata.json) Il s’agit des données d’exemple qui seront utilisées pour remplir le graphique.
-* [Accédez à Forms et Documents.](https://helpx.adobe.com/aem/forms.html/content/dam/formsanddocuments.html)
+* [Accédez à Forms et Documents.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Sélectionnez gentiment le modèle de communication interactive &quot;MutualFundGrowthFactSheet&quot;.
 * Clic sur Aperçu | Télécharger des exemples de données.
 * Accédez au fichier de données d’exemple fourni dans le cadre de cet article.

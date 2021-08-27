@@ -1,15 +1,15 @@
 ---
 title: 'Renseigner le tableau de formulaire adaptatif '
 description: Renseigner le tableau de formulaire adaptatif avec les résultats des appels du service de modèle de données de formulaire
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: Développement
+topic: Development
 role: User
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 1%
+source-wordcount: '245'
+ht-degree: 0%
 
 ---
 
@@ -26,8 +26,8 @@ La ligne 1 est configurée pour s’agrandir en fonction des données renvoyées
 ## Déployez-le sur votre serveur
 
 [Installez Tomcat comme spécifié ](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md)
-[iciDéployer le ](https://forms.enablementadobe.com/content/DemoServerBundles/SampleRest.war)
-[fichier SampleRest.warInstallez les ressources  ](assets/amortizationschedule.zip) à l’aide du gestionnaire de modules AEM 
+[iciDéployez le fichier SampleRest.war contenu dans ce ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/assets/common-osgi-bundles/sample-rest.zip)
+[fichier zip. Installez les ressources  ](assets/amortizationschedule.zip) à l’aide du gestionnaire de modules 
 [Ouvrez le ](http://localhost:4502/content/dam/formsanddocuments/amortization/jcr:content?wcmmode=disabled)
-formulaire de planification de l’amortissement. Saisissez la valeur appropriée et cliquez sur calculer la planification de l’amortissement pour qu’elle soit renseignée dans votre formulaire.
+formulaire Planification de l’amortissement. Saisissez la valeur appropriée et cliquez sur calculer la planification de l’amortissement pour être renseigné dans votre formulaire.
 
