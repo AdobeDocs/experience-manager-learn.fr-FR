@@ -7,10 +7,10 @@ topic: Integrations, Development
 feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+source-git-commit: ac93d6ba636e64ba6d8bbdb0840810b8f47a25c8
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 3%
+source-wordcount: '896'
+ht-degree: 1%
 
 ---
 
@@ -86,7 +86,7 @@ Le projet d’Asset compute généré est un projet Node.js à utiliser comme pr
    + Ce fichier peut être généré/mis à jour à l’aide de la commande `aio app use`.
    + Les variables définies dans ce fichier peuvent être remplacées par [l’exportation de variables](../deploy/runtime.md) sur la ligne de commande.
 
-Pour plus d’informations sur la révision de la structure du projet, consultez l’ [Anatomie d’un projet Adobe Project Firefly](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#5-anatomy-of-a-project-firefly-application).
+Pour plus d’informations sur la révision de la structure du projet, consultez l’ [Anatomie d’un projet Adobe Project Firefly](https://www.adobe.io/project-firefly/docs/guides/).
 
 La majeure partie du développement a lieu dans le dossier `/actions` qui développe des implémentations de programme de travail et dans `/test/asset-compute` les tests d’écriture pour les programmes de travail d’Asset compute personnalisés.
 
