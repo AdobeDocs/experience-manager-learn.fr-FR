@@ -1,18 +1,15 @@
 ---
 title: Prise en main du développement d’AEM Sites – Tutoriel WKND
-seo-title: Prise en main du développement d’AEM Sites – Tutoriel WKND
 description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
-seo-description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
-content-type: reference
-topic-tags: introduction
-feature: AEM archétype de projet, composants principaux, éditeur de page, modèles modifiables
-topic: Développement
+feature: AEM Project Archetype, Core Components, Page Editor, Editable Templates
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+thumbnail: 30476.jpeg
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 55%
+source-wordcount: '300'
+ht-degree: 49%
 
 ---
 

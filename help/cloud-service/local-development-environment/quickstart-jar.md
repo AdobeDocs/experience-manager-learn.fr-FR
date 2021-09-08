@@ -1,14 +1,11 @@
 ---
 title: Utilisation du fichier AEM Quickstart Jar
 description: Découvrez comment installer et exécuter une instance locale d’Adobe Experience Manager en quelques minutes avec le fichier jar de démarrage rapide AEM. AEM Quickstart jar est un composant d’exécution AEM qui peut être installé et exécuté sur un ordinateur local.
-topics: development
-version: cloud-service
-doc-type: tutorial
-activity: develop
-audience: developer
+topic: Development
+version: Cloud Service
 kt: 4677
 thumbnail: 32551.jpg
-source-git-commit: 69c1767098cc9da8ec0ae2bd83d25417d330f393
+source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
