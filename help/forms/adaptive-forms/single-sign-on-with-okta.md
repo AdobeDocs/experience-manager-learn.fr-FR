@@ -1,15 +1,15 @@
 ---
 title: Configuration d’OKTA avec AEM
 description: Présentation des différents paramètres de configuration pour l’utilisation de l’authentification unique à l’aide des données d’identification
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.5
 topic: Administration
 role: Admin
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+source-git-commit: 3109d406ed4788ab492a148d4eac94f7e5ad9f2d
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 3%
+source-wordcount: '759'
+ht-degree: 2%
 
 ---
 
@@ -76,11 +76,11 @@ Voici les propriétés clés à spécifier :
 Accédez à [configMgr](http://localhost:4502/system/console/configMgr).
 Recherchez et ouvrez &quot;Apache Sling Referrer Filter&quot;. Définissez les propriétés suivantes comme indiqué ci-dessous :
 
-* **Autoriser vide** : true
+* **Autoriser vide** : false
 * **Autoriser les hôtes** : Nom d’hôte IdP (différent dans votre cas)
 * **Allow Regexp Host** : Nom d’hôte IdP (différent dans votre cas) Copie d’écran des propriétés du référent du filtre de référent Sling
 
-![referrer-filter](assets/sling-referrer-filter.PNG)
+![referrer-filter](assets/okta-referrer.png)
 
 #### Configuration de la journalisation DEBUG pour l’intégration OKTA
 
