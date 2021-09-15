@@ -5,21 +5,21 @@ topics: sling, architecture
 audience: administrator, developer
 doc-type: technical video
 activity: understand
-version: cloud-service
+version: Cloud Service
 kt: 4641
 thumbnail: 32032.jpg
 topic: Architecture
 role: Architect, Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 92afc9c4-3d58-4787-86f6-46495d89c4d4
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 9%
+source-wordcount: '41'
+ht-degree: 12%
 
 ---
 
-
-# Introduction à [!DNL Sling] {#introduction-sling}
+# Présentation d’[!DNL Sling] {#introduction-sling}
 
 Présentation de [!DNL Sling], une structure web open source [!DNL RESTful] qui fait partie de la pile de technologie sous-jacente de Adobe Experience Manager.
 

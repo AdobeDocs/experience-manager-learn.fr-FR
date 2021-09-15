@@ -2,21 +2,21 @@
 title: Utilisation des blocs de création de fragments d’expérience
 description: Les blocs de création sont une sous-fonctionnalité des fragments d’expérience qui permet la réutilisation de composants créés dans des variantes de fragments d’expérience.
 sub-product: sites, content-services
-version: cloud-service
-feature: Fragments d’expérience
-topic: Gestion de contenu
+version: Cloud Service
+feature: Experience Fragments
+topic: Content Management
 level: Beginner, Intermediate
 role: Architect, Developer, Admin, User
 doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: cc758602-3c20-4eca-9b87-f04b6dc96bfe
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 3%
+source-wordcount: '98'
+ht-degree: 0%
 
 ---
-
 
 # Création de blocs avec des fragments d’expérience {#building-blocks}
 

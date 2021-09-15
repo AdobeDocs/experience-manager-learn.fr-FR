@@ -1,20 +1,20 @@
 ---
 title: Configuration de l’accès à AEM as a Cloud Service
-description: 'AEM en tant que Cloud Service est le moyen natif d’exploiter les applications AEM et, à ce titre, exploite l’Adobe IMS (Identity Management System) pour faciliter la connexion des utilisateurs, tant administrateurs que utilisateurs réguliers, au service AEM Author. Découvrez comment les utilisateurs, groupes d’utilisateurs et profils de produits Adobe IMS sont tous utilisés conjointement avec les groupes d’AEM et les autorisations afin de fournir un accès spécifique à l’auteur AEM.  '
-version: cloud-service
-topic: Administration, sécurité
-feature: Utilisateurs et groupes
+description: AEM en tant que Cloud Service est le moyen natif d’exploiter les applications AEM et, à ce titre, exploite l’Adobe IMS (Identity Management System) pour faciliter la connexion des utilisateurs, tant administrateurs que utilisateurs réguliers, au service AEM Author. Découvrez comment les utilisateurs, groupes d’utilisateurs et profils de produits Adobe IMS sont tous utilisés conjointement avec les groupes d’AEM et les autorisations afin de fournir un accès spécifique à l’auteur AEM.
+version: Cloud Service
+topic: Administration, Security
+feature: User and Groups
 role: Admin
 level: Beginner
 kt: 5882
 thumbnail: KT-5882.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '598'
 ht-degree: 7%
 
 ---
-
 
 # Configuration de l’accès à AEM as a Cloud Service
 

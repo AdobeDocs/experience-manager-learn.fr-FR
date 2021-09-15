@@ -1,20 +1,20 @@
 ---
 title: Création de requêtes GraphQL
 description: Découvrez comment créer des requêtes GraphQL pour renvoyer du contenu d’Adobe Experience Manager (AEM) et comment utiliser l’outil GraphiQL pour tester, affiner et déboguer rapidement des requêtes.
-version: cloud-service
-topic: Sans affichage, gestion de contenu
-feature: Fragments de contenu,API GraphQL
+version: Cloud Service
+topic: Headless, Content Management
+feature: Content Fragments, GraphQL API
 role: Developer
 level: Beginner
 kt: 7621
 thumbnail: 332860.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: c4f2e8f5-6acf-4efb-bdec-84d264568856
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 3%
+source-wordcount: '117'
+ht-degree: 0%
 
 ---
-
 
 # Création de requêtes GraphQL
 

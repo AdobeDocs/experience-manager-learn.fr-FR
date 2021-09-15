@@ -1,24 +1,24 @@
 ---
 title: Configuration de comptes et de services pour l’extensibilité des Assets compute
 description: Le développement de travailleurs d’Asset compute nécessite l’accès à des comptes et à des services, notamment AEM en tant que Cloud Service, Adobe Project Firefly et le stockage dans le cloud fourni par Microsoft ou Amazon.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6264
 thumbnail: 40377.jpg
-topic: Intégrations, développement
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 2%
+source-wordcount: '627'
+ht-degree: 3%
 
 ---
-
 
 # Configuration des comptes et des services
 
@@ -39,7 +39,7 @@ Tous les services Adobe doivent être accessibles via la même organisation Adob
 > 
 > Consultez les sections ci-dessous pour savoir comment définir et fournir les services requis.
 
-## AEM as a Cloud Service{#aem-as-a-cloud-service}
+## AEM en tant que Cloud Service{#aem-as-a-cloud-service}
 
 L’accès à un environnement d’AEM en tant qu’environnement de Cloud Service est requis pour configurer les profils de traitement AEM Assets afin d’appeler le programme de travail d’Asset compute personnalisé.
 

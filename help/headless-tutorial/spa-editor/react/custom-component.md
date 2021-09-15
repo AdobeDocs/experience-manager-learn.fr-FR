@@ -2,22 +2,22 @@
 title: Création d’un composant météorologique personnalisé | Prise en main de l’éditeur SPA d’AEM et de React
 description: Découvrez comment créer un composant météorologique personnalisé à utiliser avec l’éditeur SPA d’AEM. Découvrez comment développer des boîtes de dialogue de création et des modèles Sling pour étendre le modèle JSON afin de renseigner un composant personnalisé. Les composants Open Weather API et React Open Weather sont utilisés.
 sub-product: sites
-feature: Éditeur de SPA
+feature: SPA Editor
 doc-type: tutorial
 topics: development
-version: cloud-service
+version: Cloud Service
 kt: 5878
 thumbnail: 5878-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 82466e0e-b573-440d-b806-920f3585b638
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1224'
 ht-degree: 3%
 
 ---
-
 
 # Création d’un composant météorologique personnalisé {#custom-component}
 

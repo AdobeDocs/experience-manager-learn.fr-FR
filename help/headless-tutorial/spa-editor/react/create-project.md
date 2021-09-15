@@ -2,26 +2,26 @@
 title: Créer un projet | Prise en main de l’éditeur SPA d’AEM et de React
 description: Découvrez comment générer un projet Maven Adobe Experience Manager (AEM) comme point de départ d’une application React intégrée à AEM Editor.
 sub-product: sites
-feature: Éditeur SPA, AEM Archétype de projet
-version: cloud-service
+feature: SPA Editor, AEM Project Archetype
+version: Cloud Service
 kt: 413
 thumbnail: 413-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1089'
 ht-degree: 3%
 
 ---
-
 
 # Créer un projet {#spa-editor-project}
 
 Découvrez comment générer un projet Maven Adobe Experience Manager (AEM) comme point de départ d’une application React intégrée à AEM Editor.
 
-## Intention
+## Objectif
 
 1. Générez un projet activé pour l’éditeur de SPA à l’aide de l’archétype de projet AEM.
 2. Déployez le projet de démarrage sur une instance locale d’AEM.
@@ -223,7 +223,7 @@ Vérifiez ensuite qu’il s’agit d’une application d’une seule page qui ut
    >
    > Il peut s’avérer utile d’installer une extension de navigateur pour formater automatiquement la sortie JSON.
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous venez de créer votre premier projet SPA Éditeur d&#39;AEM !
 

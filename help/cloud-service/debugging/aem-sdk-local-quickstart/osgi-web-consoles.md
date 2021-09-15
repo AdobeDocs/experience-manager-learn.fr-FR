@@ -1,23 +1,23 @@
 ---
 title: Débogage AEM SDK à l’aide de la console web OSGi
 description: Le démarrage rapide local du SDK d’AEM dispose d’une console web OSGi qui fournit diverses informations et introspections dans le runtime AEM local. Ces informations sont utiles pour comprendre comment votre application est reconnue par les fonctions et d’ d’.
-feature: Outils de développement
+feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5265, 5366, 5267
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 5%
+source-wordcount: '393'
+ht-degree: 4%
 
 ---
-
 
 # Débogage AEM SDK à l’aide de la console web OSGi
 
@@ -48,7 +48,7 @@ Cliquer sur chaque lot fournit des détails qui aident à déboguer votre applic
 
 La console Composants est un catalogue de tous les composants OSGi déployés sur AEM. Elle fournit toutes les informations les concernant, depuis leur cycle de vie de composant OSGi défini jusqu’aux services OSGi auxquels ils peuvent faire référence.
 
-La console Composants se trouve à l’adresse suivante :
+La console Composants se trouve à l’adresse :
 
 + Outils > Opérations > Console web > OSGi > Composants
 + Ou directement à l’adresse : [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)

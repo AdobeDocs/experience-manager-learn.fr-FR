@@ -2,27 +2,27 @@
 title: Étendre un composant principal | Prise en main de l’éditeur SPA d’AEM et de React
 description: Découvrez comment étendre le modèle JSON pour un composant principal existant à utiliser avec l’éditeur SPA d’AEM. Comprendre comment ajouter des propriétés et du contenu à un composant existant est une technique puissante pour étendre les fonctionnalités d’une mise en oeuvre d’AEM SPA éditeur. Découvrez comment utiliser le modèle de délégation pour étendre les modèles Sling et les fonctionnalités de Sling Resource Merger.
 sub-product: sites
-feature: Éditeur SPA, composants principaux
+feature: SPA Editor, Core Components
 doc-type: tutorial
-version: cloud-service
+version: Cloud Service
 kt: 5879
 thumbnail: 5879-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
-source-git-commit: 24d70ebaa6a63cfd4a73f43188f25b375dc702ec
+exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1091'
 ht-degree: 3%
 
 ---
-
 
 # Étendre un composant principal {#extend-component}
 
 Découvrez comment étendre un composant principal existant à utiliser avec l’éditeur SPA d’AEM. Comprendre comment étendre un composant existant est une technique puissante pour personnaliser et étendre les fonctionnalités d’une implémentation d’AEM SPA éditeur.
 
-## Intention
+## Objectif
 
 1. Étendez un composant principal existant avec des propriétés et du contenu supplémentaires.
 2. Comprenez les principes de base de l’héritage des composants à l’aide de `sling:resourceSuperType`.
@@ -58,7 +58,7 @@ Si nous souhaitons étendre le composant `Image` à `wknd-spa-react/components/i
 
    `wknd-spa-react/components/banner` est ainsi défini pour hériter de toutes les fonctionnalités de `wknd-spa-react/components/image`.
 
-## cq:editConfig{#cq-edit-config}
+## cq:editConfig {#cq-edit-config}
 
 Le fichier `_cq_editConfig.xml` détermine le comportement de glisser-déposer dans l’interface utilisateur de création d’AEM. Lors de l’extension du composant Image, il est important que le type de ressource corresponde au composant lui-même.
 
@@ -324,7 +324,7 @@ Pour utiliser le composant Bannière avec l’éditeur de SPA, un nouveau compos
    >
    > La boîte de dialogue vous permet d’enregistrer une valeur pour **Texte de bannière** mais cette valeur n’est pas reflétée dans le composant SPA. Pour l’activer, nous devons étendre le modèle Sling pour le composant.
 
-## Ajouter une interface Java {#java-interface}
+## Ajout d’une interface Java {#java-interface}
 
 Pour exposer finalement les valeurs de la boîte de dialogue du composant au composant React, nous devons mettre à jour le modèle Sling qui renseigne le fichier JSON pour le composant `Banner`. Cela sera effectué dans le module `core` qui contient tout le code Java pour notre projet SPA.
 
@@ -349,7 +349,7 @@ Nous allons tout d’abord créer une interface Java pour `Banner` qui étend l�
 
    Cela héritera de toutes les méthodes de l’interface `Image` du composant principal et ajoutera une nouvelle méthode `getBannerText()`.
 
-## Mise en oeuvre du modèle Sling {#sling-model}
+## Implémentation du modèle Sling {#sling-model}
 
 Implémentez ensuite le modèle Sling pour l’interface `BannerModel`.
 
@@ -492,7 +492,6 @@ Implémentez ensuite le modèle Sling pour l’interface `BannerModel`.
 
    Notez que le modèle JSON est mis à jour avec des paires clé/valeur supplémentaires après la mise en oeuvre du modèle Sling dans `BannerModelImpl.java`.
 
-## Félicitations !  {#congratulations}
+## Félicitations ! {#congratulations}
 
 Félicitations, vous avez appris à étendre un composant AEM à l’aide de et du fonctionnement des modèles et boîtes de dialogue Sling avec le modèle JSON.
-

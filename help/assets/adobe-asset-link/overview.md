@@ -1,16 +1,16 @@
 ---
 title: Adobe d’un lien et d’une AEM de ressources
 description: 'Les ressources Adobe Experience Manager peuvent être utilisées par les concepteurs et les utilisateurs créatifs dans leurs applications de bureau Adobe Creative Cloud préférées. L’extension Adobe Asset Link pour Adobe Creative Cloud for enterprise étend la fonctionnalité de recherche et de recherche, de tri, de prévisualisation, de chargement de ressources, d’extraction, de modification, d’archivage et d’affichage des métadonnées des ressources d’AEM dans des outils de Creative Cloud tels qu’Adobe XD, Photoshop, InDesign et Illustrator. '
-feature: Adobe Asset Link
-version: 6.4, 6.5, cloud-service
-topic: Gestion de contenu
+feature: Adobe Asset Link
+version: 6.4, 6.5, Cloud Service
+topic: Content Management
 role: User
 level: Beginner
 thumbnail: 28988.jpg
-source-git-commit: 0cfa83bdbd534f0fa06b3fa0013971feb188224e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 3%
+source-wordcount: '992'
+ht-degree: 2%
 
 ---
 

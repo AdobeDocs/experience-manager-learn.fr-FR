@@ -1,30 +1,30 @@
 ---
 title: Configuration de Adobe Project Firefly pour l’extensibilité des Assets compute
 description: Les projets Asset compute sont des projets Adobe Project Firefly spécialement définis. Par conséquent, ils nécessitent l’accès à Adobe Project Firefly dans Adobe Developer Console pour les configurer et les déployer.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6268
 thumbnail: 40183.jpg
-topic: Intégrations, développement
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 2b1d8786-592e-41f2-80cc-bc0b1c7e1b49
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
-
 
 # Configuration de Adobe Project Firefly
 
 Les projets Asset compute sont des projets Adobe Project Firefly spécialement définis. Par conséquent, ils nécessitent l’accès à Adobe Project Firefly dans Adobe Developer Console pour les configurer et les déployer.
 
-## Créez et configurez Adobe Project Firefly dans Adobe Developer Console{#set-up}
+## Créer et configurer Adobe Project Firefly dans Adobe Developer Console{#set-up}
 
 >[!VIDEO](https://video.tv.adobe.com/v/40183/?quality=12&learn=on)
 
@@ -49,10 +49,10 @@ _Clic publicitaire de configuration de Adobe Project Firefly (Pas d’audio)_
       + Sélectionnez __Générer une paire de clés__ et appuyez sur le bouton __Générer la paire de clés__, puis enregistrez la balise `config.zip` téléchargée à un emplacement sécurisé pour [utiliser ultérieurement](#private-key).
       + Appuyez sur __Suivant__
       + Sélectionnez le profil de produit __Intégrations - Cloud Service__ et appuyez sur __Enregistrer l’API configurée__
-   + __Adobe Services > I/O__ Events et appuyez sur  __Save configured API (Enregistrer l’API configurée)__
+   + __Services Adobe >__ Événements I/O et appuyez sur  __Enregistrer l’API configurée__
    + __Adobe Services >__ API de gestion I/O et appuyez sur  __Enregistrer l’API configurée__
 
-## Accédez à private.key{#private-key}
+## Accès à private.key{#private-key}
 
 Lors de la configuration de l’[intégration de l’API d’Asset compute](#set-up), une nouvelle paire de clés a été générée et un fichier `config.zip` a été automatiquement téléchargé. Ce `config.zip` contient le certificat public généré et le fichier `private.key` correspondant.
 

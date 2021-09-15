@@ -5,22 +5,21 @@ solution: Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+version: Cloud Service
+feature: Adaptive Forms
+topic: Development
 kt: 7382
 thumbnail: 332223.jpg
-source-git-commit: 67be45dbd72a8af8b9ab60452ff15081c6f9f192
+exl-id: 3e6dc8c4-d080-4a95-9fb2-52747fda69d7
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 67%
+source-wordcount: '65'
+ht-degree: 66%
 
 ---
-
 
 # Création d’un modèle de formulaire adaptatif
 
 Un modèle de formulaire adaptatif est un modèle de page AEM spécialisé avec des propriétés et une structure de contenu qui est utilisé pour créer un formulaire adaptatif. Il possède des dispositions, des styles et une structure de contenu initiale de base préconfigurés. Chaque formulaire adaptatif est basé sur un modèle.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332223?quality=12&learn=on)
-

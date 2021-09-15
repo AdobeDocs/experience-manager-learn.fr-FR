@@ -1,24 +1,24 @@
 ---
 title: Utilisation d’Adobe Cloud Manager - pipeline de production CI/CD
-description: 'Le pipeline de production CI/CD est utilisé pour créer et déployer du code via l’environnement d’évaluation vers l’environnement de production, ce qui réduit le temps de valorisation. La configuration du pipeline de production CI/CD définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performances. '
+description: Le pipeline de production CI/CD est utilisé pour créer et déployer du code via l’environnement d’évaluation vers l’environnement de production, ce qui réduit le temps de valorisation. La configuration du pipeline de production CI/CD définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performances.
 sub-product: cloud-manager
 topics: Administration
 audience: administrator
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 6872, 6875
 thumbnail: 26317.jpg
 topic: Architecture
 role: Architect, Developer, Admin
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: c4f5667a-0da2-490b-9d55-9fbde21db595
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 35%
+source-wordcount: '177'
+ht-degree: 39%
 
 ---
-
 
 # Utilisation d’Adobe Cloud Manager - pipeline de production CI/CD
 
@@ -31,12 +31,12 @@ ht-degree: 35%
 
 ## Configuration
 
-La configuration [Pipeline de production CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html) définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performance.
+La configuration [Pipeline de production CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=fr) définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performance.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26314/?quality=12&learn=on)
 
 ### Exécution du pipeline
 
-Le [pipeline de production CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) est utilisé pour créer et déployer du code via l’environnement d’évaluation vers l’environnement de production, ce qui réduit le temps de valorisation.
+Le [pipeline de production CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr) est utilisé pour créer et déployer du code via l’environnement d’évaluation vers l’environnement de production, ce qui réduit le temps de valorisation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26317/?quality=12&learn=on)

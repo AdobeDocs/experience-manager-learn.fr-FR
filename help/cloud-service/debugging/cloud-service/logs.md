@@ -1,24 +1,24 @@
 ---
 title: Journaux
 description: Les journaux se trouvent en première ligne du débogage des applications AEM dans AEM en tant que Cloud Service, mais dépendent d’une journalisation adéquate dans l’application d’AEM déployée.
-feature: Outils de développement
+feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5432
 thumbnail: kt-5432.jpg
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '999'
 ht-degree: 3%
 
 ---
-
 
 # Débogage d’AEM en tant que Cloud Service à l’aide des journaux
 

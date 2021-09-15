@@ -1,24 +1,24 @@
 ---
 title: Créer une page Copie de la langue
 description: Découvrez comment créer une page dans une copie de langue existante, puis traduire le contenu dans une autre copie de langue.
-feature: Copie de langue, gestionnaire multisite
+feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5, cloud-service
+version: 6.3, 6.4, 6.5, Cloud Service
 kt: 5848
 thumbnail: 36682.jpg
-topic: Localisation
+topic: Localization
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 95d3d5a7-a73f-4261-b496-b91a9ff7fe8d
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 1%
+source-wordcount: '50'
+ht-degree: 0%
 
 ---
-
 
 # Créer une page Copie de la langue {#create-language-copy-page}
 

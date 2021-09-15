@@ -1,24 +1,24 @@
 ---
 title: Configuration des variables d’environnement pour l’extensibilité des Assets compute
 description: Les variables d’environnement sont conservées dans le fichier .env pour le développement local et sont utilisées pour fournir des informations d’identification d’Adobe I/O et des informations d’identification de l’espace de stockage requises pour le développement local.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6270
 thumbnail: KT-6270.jpg
-topic: Intégrations, développement
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: c63c5c75-1deb-4c16-ba33-e2c338ef6251
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '588'
 ht-degree: 1%
 
 ---
-
 
 # Configuration des variables d’environnement 
 

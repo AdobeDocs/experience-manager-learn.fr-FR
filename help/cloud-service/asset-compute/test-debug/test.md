@@ -1,24 +1,24 @@
 ---
 title: Test d’un Asset compute Worker
 description: Le projet Asset compute définit un modèle permettant de créer et d’exécuter facilement des tests sur les employés d’Asset compute.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6284
 thumbnail: KT-6284.jpg
-topic: Intégrations, développement
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 04992caf-b715-4701-94a8-6257e9bd300c
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '629'
 ht-degree: 1%
 
 ---
-
 
 # Test d’un Asset compute Worker
 

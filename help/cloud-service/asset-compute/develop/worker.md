@@ -1,24 +1,24 @@
 ---
 title: Développement d’un Asset compute Worker
 description: Les objets Worker Asset compute sont au coeur des projets d’Asset compute, car ils fournissent des fonctionnalités personnalisées qui exécutent ou orchestrent le travail effectué sur une ressource pour créer un rendu.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6282
 thumbnail: KT-6282.jpg
-topic: Intégrations, développement
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 7d51ec77-c785-4b89-b717-ff9060d8bda7
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
-
 
 # Développement d’un Asset compute Worker
 

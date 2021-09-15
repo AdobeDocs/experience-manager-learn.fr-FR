@@ -1,20 +1,20 @@
 ---
 title: Balises intelligentes pour les images avec AEM Assets
 description: Les balises intelligentes pour les images accroissent AEM fonctionnalités de recherche en ajoutant automatiquement et intelligemment des balises de métadonnées aux ressources d’image en fonction du contenu de l’image.
-topic: Gestion de contenu
-feature: Balises intelligentes
+topic: Content Management
+feature: Smart Tags
 role: User
 level: Intermediate
-version: 6.3, 6.4, 6.5, cloud-service
+version: 6.3, 6.4, 6.5, Cloud Service
 kt: 645
 thumbnail: 17019.jpg
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: c72dc489-70e6-48ca-99a8-663d4c0652ba
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 45%
+source-wordcount: '218'
+ht-degree: 43%
 
 ---
-
 
 # Balises intelligentes pour les images
 

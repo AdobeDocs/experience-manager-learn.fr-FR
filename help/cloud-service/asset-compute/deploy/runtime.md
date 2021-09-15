@@ -1,24 +1,24 @@
 ---
 title: Déployer des objets Worker Asset compute dans Adobe I/O Runtime pour une utilisation avec AEM en tant que Cloud Service
-description: 'Les projets d’Asset compute, ainsi que les travailleurs qu’ils contiennent, doivent être déployés dans Adobe I/O Runtime pour être utilisés par AEM en tant que Cloud Service. '
-feature: Microservices Asset compute
+description: Les projets d’Asset compute, ainsi que les travailleurs qu’ils contiennent, doivent être déployés dans Adobe I/O Runtime pour être utilisés par AEM en tant que Cloud Service.
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6286
 thumbnail: KT-6286.jpg
-topic: Intégrations, développement
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 0327cf61-fd51-4fa7-856d-3febd49c01a0
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
-
 
 # Déploiement sur Adobe I/O Runtime
 

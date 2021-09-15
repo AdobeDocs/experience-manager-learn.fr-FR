@@ -3,16 +3,16 @@ title: Invalidation du cache CDN pour AEM Dynamic Media
 description: Procédure d’invalidation du cache CDN pour AEM Dynamic Media
 role: Developer
 level: Intermediate
-version: cloud-service
-topic: Développement
+version: Cloud Service
+topic: Development
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 7993e482-3db0-46a0-ae2f-f5a167ac02dc
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 2%
+source-wordcount: '41'
+ht-degree: 0%
 
 ---
-
 
 # Invalidation du cache CDN pour AEM Dynamic Media
 

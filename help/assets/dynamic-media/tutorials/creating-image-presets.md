@@ -3,17 +3,17 @@ title: Création de paramètres d’image prédéfinis avec AEM Dynamic Media
 description: Configuration des paramètres d’image prédéfinis avec Dynamic Media
 role: Developer
 level: Intermediate
-version: cloud-service
-feature: Paramètres d’image prédéfinis
-topic: Développement
+version: Cloud Service
+feature: Image Presets
+topic: Development
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: e76c50da-e7a8-4560-bc53-02cdb13619bb
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '36'
-ht-degree: 8%
+source-wordcount: '33'
+ht-degree: 0%
 
 ---
-
 
 # Création de paramètres d’image prédéfinis avec AEM Dynamic Media
 

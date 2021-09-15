@@ -1,21 +1,21 @@
 ---
 title: Déploiement de production à l’aide d’un service de publication AEM - Prise en main d’AEM sans affichage - GraphQL
 description: Découvrez les services d’auteur et de publication AEM et le modèle de déploiement recommandé pour les applications sans interface utilisateur graphique. Dans ce tutoriel, apprenez à utiliser des variables d’environnement pour modifier dynamiquement un point d’entrée GraphQL en fonction de l’environnement cible. Découvrez comment configurer correctement les AEM pour le partage des ressources cross-origin (CORS).
-version: cloud-service
-feature: Fragments de contenu,API GraphQL
-topic: Sans affichage, gestion de contenu
+version: Cloud Service
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
 mini-toc-levels: 1
 kt: 7131
 thumbnail: KT-7131.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2360'
 ht-degree: 7%
 
 ---
-
 
 # Déploiement de production avec un service de publication AEM
 

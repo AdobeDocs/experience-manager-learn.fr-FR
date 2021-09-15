@@ -1,20 +1,20 @@
 ---
 title: Prise en main d’Assets Essentials
 description: Découvrez comment accéder à Assets Essentials et explorer les principales facettes de son interface utilisateur.
-version: cloud-service
-feature: Assets Essentials
-topic: Gestion de contenu
+version: Cloud Service
+feature: Assets Essentials
+topic: Content Management
 role: User
 level: Beginner
 kt: 8021
 thumbnail: 336005.jpeg
-source-git-commit: b247bb18eab3e610d40d3e01a63ba7e311fafde0
+exl-id: a0accb94-ceef-4ecf-b1f6-f47751114242
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 9%
+source-wordcount: '40'
+ht-degree: 0%
 
 ---
-
 
 # Prise en main d’Assets Essentials
 

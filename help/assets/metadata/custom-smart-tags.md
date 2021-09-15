@@ -1,20 +1,20 @@
 ---
 title: Balises intelligentes personnalisées pour les images dans AEM Assets
 description: Découvrez comment entraîner les balises intelligentes d’AEM Assets à appliquer des termes personnalisés aux ressources.
-feature: Balises intelligentes
-version: 6.4, 6.5, cloud-services
+feature: Smart Tags
+version: 6.4, 6.5, Cloud Services
 kt: 795
 thumbnail: 22254.jpg
-topic: Gestion de contenu
+topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 06f2ae4d-c18e-45ed-96d7-ddc6f9c8d829
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 3%
+source-wordcount: '147'
+ht-degree: 1%
 
 ---
-
 
 # Balises intelligentes personnalisées pour les images
 
@@ -37,5 +37,3 @@ Découvrez comment configurer l’entraînement des balises intelligentes dans A
 ## Ressources supplémentaires
 
 * AEM 6.4 nécessite le [dernier Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html#aem-64).
-
-

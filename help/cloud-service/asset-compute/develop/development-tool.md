@@ -1,24 +1,24 @@
 ---
 title: Outil de développement Asset compute
 description: L’outil de développement d’Asset compute est un outil web local qui permet aux développeurs de configurer et d’exécuter localement les objets Worker Asset Compute, en dehors du contexte du SDK AEM par rapport aux ressources d’Asset compute dans Adobe I/O Runtime.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6283
 thumbnail: 40241.jpg
-topic: Intégrations, développement
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: cbe08570-e353-4daf-94d1-a91a8d63406d
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
-
 
 # Outil de développement Asset compute
 

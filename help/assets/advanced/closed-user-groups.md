@@ -1,20 +1,20 @@
 ---
 title: Groupes d’utilisateurs fermés dans AEM Assets
 description: Les groupes d’utilisateurs fermés (CUG) sont une fonctionnalité utilisée pour restreindre l’accès au contenu à un groupe d’utilisateurs sélectionnés sur un site publié. Cette vidéo montre comment les groupes d’utilisateurs fermés peuvent être utilisés avec Adobe Experience Manager Assets pour restreindre l’accès à un dossier spécifique de ressources.
-version: 6.3, 6.4, 6.5, cloud-service
-topic: Administration, sécurité
-feature: Utilisateurs et groupes
+version: 6.3, 6.4, 6.5, Cloud Service
+topic: Administration, Security
+feature: User and Groups
 role: Admin
 level: Intermediate
 kt: 649
 thumbnail: 22155.jpg
-source-git-commit: 407840a0e0c90c4f004390a052d036f9b69fa8df
+exl-id: a2bf8a82-15ee-478c-b7c3-de8a991dfeb8
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '377'
 ht-degree: 1%
 
 ---
-
 
 # Groupes d’utilisateurs fermés{#using-closed-user-groups-with-aem-assets}
 
@@ -40,7 +40,7 @@ Les groupes d’utilisateurs fermés (CUG) et les listes de contrôle d’accès
 | Niveaux d’autorisation | Définit les autorisations accordées/refusées pour les utilisateurs/groupes à tous les niveaux : Lire, modifier, créer, supprimer, lire la liste de contrôle d’accès, modifier la liste de contrôle d’accès, répliquer. | Accorde l’accès en lecture à un ensemble d’utilisateurs/de groupes. Refusent l’accès en lecture à *tous les autres* utilisateurs/groupes. |
 | Publication | Les listes de contrôle d’accès ne sont *pas* publiées avec du contenu. | Les stratégies de CUG *sont* publiées avec du contenu. |
 
-## Liens de prise en charge {#supporting-links}
+## Liens pris en charge {#supporting-links}
 
 * [Gestion des ressources et des groupes d’utilisateurs fermés](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en#closed-user-group)
 * [Création d’un groupe d’utilisateurs fermé](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html)

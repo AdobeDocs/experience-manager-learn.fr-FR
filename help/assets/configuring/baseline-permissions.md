@@ -1,21 +1,21 @@
 ---
 title: Autorisations de base
 description: La gestion de l’accès des utilisateurs sur les dossiers de ressources de base est un aspect essentiel de la gouvernance et garantit que les processus peuvent être correctement pris en charge.
-sub-product: ressources
-feature: Gestion des ressources
-version: cloud-service
+sub-product: assets
+feature: Asset Management
+version: Cloud Service
 kt: 4870
 thumbnail: 37696.jpg
-topic: Gestion de contenu
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: b2ac2332-4d98-4866-8688-831f0282a736
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 9%
+source-wordcount: '48'
+ht-degree: 0%
 
 ---
-
 
 # Autorisations de base
 

@@ -1,12 +1,12 @@
 ---
 user-guide-title: Prise en main d’AEM sans affichage
 user-guide-description: Tutoriel complet illustrant comment créer et exposer du contenu à l’aide d’AEM sans affichage.
-breadcrumb-title: Tutoriel d’AEM sans affichage
-version: cloud-service
+breadcrumb-title: Tutoriel sur AEM Headless
+version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 20%

@@ -1,26 +1,26 @@
 ---
 title: Utilisation du système de style avec AEM Sites
-seo-title: Utilisation du système de style avec Adobe Experience Manager, AEM Sites
+seo-title: Using the Style System with Adobe Experience Manager, AEM Sites
 description: Le système de style Adobe Experience Manager permet des variantes visuelles des composants sans développement principal, ce qui permet une meilleure réutilisation des composants AEM et une création de contenu plus polyvalente et plus efficace. Le système de style, lorsqu’il est utilisé avec les composants principaux d’AEM, l’éditeur de modèles et la mise en page réactive, offre des fonctionnalités puissantes pour composer rapidement des expériences riches.
-seo-description: Le système de style Adobe Experience Manager permet des variantes visuelles des composants sans développement principal, ce qui permet une meilleure réutilisation des composants AEM et une création de contenu plus polyvalente et plus efficace. Le système de style, lorsqu’il est utilisé avec les composants principaux d’AEM, l’éditeur de modèles et la mise en page réactive, offre des fonctionnalités puissantes pour composer rapidement des expériences riches.
-feature: Système de style
+seo-description: Adobe Experience Manager's Style System allows visual variations of components without back-end development, allowing better re-use of AEM components, and more versatile and efficient content authoring. The Style System, when used in conjunction with AEM's Core Components, template editor, and responsive layout, offers powerful capabilities to quickly compose rich experiences.
+feature: Style System
 topics: authoring, front-end-development
 audience: all
 doc-type: feature video
 activity: use
-version: cloud-service
+version: Cloud Service
 kt: 974
 thumbnail: 21750.jpg
-topic: Gestion de contenu
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 12490c29-91f4-4bb7-b7b6-7ed7cd3fb76d
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '196'
 ht-degree: 5%
 
 ---
-
 
 # Utilisation du système de style {#using-the-style-system-with-aem-sites}
 

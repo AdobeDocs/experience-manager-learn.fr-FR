@@ -1,24 +1,24 @@
 ---
 title: Authentification à AEM en tant que Cloud Service à partir d’une application externe
 description: Découvrez comment une application externe peut s’authentifier et interagir par programmation avec AEM en tant que Cloud Service sur HTTP à l’aide de jetons d’accès au développement local et d’informations d’identification du service.
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
-feature: les API ;
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330460.jpg
-topic: Sans affichage, intégrations
+topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '644'
 ht-degree: 2%
 
 ---
-
 
 # Authentification basée sur les jetons à AEM en tant que Cloud Service
 
@@ -34,7 +34,7 @@ Assurez-vous que les éléments suivants sont en place avant de suivre ce tutori
 
 1. Accès à d’AEM en tant qu’environnement de Cloud Service (de préférence un environnement de développement ou un programme Sandbox)
 1. Abonnement à l’AEM en tant que service de création de l’environnement de Cloud Service AEM profil de produit administrateur
-1. Adhésion ou accès à votre administrateur de l’organisation IMS d’Adobe (il devra initialiser une seule fois les [Informations d’identification du service](./service-credentials.md))
+1. Adhésion ou accès à votre administrateur de l’organisation Adobe IMS (il devra effectuer une initialisation unique des [Informations d’identification du service](./service-credentials.md))
 1. Dernier [site WKND](https://github.com/adobe/aem-guides-wknd) déployé dans votre environnement de Cloud Service
 
 ## Présentation des applications externes
@@ -53,7 +53,7 @@ Le flux d’exécution de l’application Node.js est le suivant :
    + Chemin d’accès local au fichier contenant les informations d’identification requises pour accéder à AEM en tant que Cloud Service (`file`)
 1. Le jeton d’accès utilisé pour s’authentifier sur AEM est dérivé du fichier JSON fourni via le paramètre de ligne de commande `file`
 
-   a. Si les informations d’identification du service utilisées pour le développement non local sont fournies dans le fichier JSON (`file`), le jeton d’accès est récupéré à partir des API IMS d’Adobe.
+   a. Si les informations d’identification du service utilisées pour le développement non local sont fournies dans le fichier JSON (`file`), le jeton d’accès est récupéré à partir des API Adobe IMS.
 1. L’application utilise le jeton d’accès pour accéder à AEM et répertorier toutes les ressources du dossier spécifié dans le paramètre de ligne de commande `folder`
 1. Pour chaque ressource du dossier, l’application met à jour ses métadonnées en fonction du nom et de la valeur de la propriété spécifiés dans les paramètres de ligne de commande `propertyName` et `propertyValue`
 
@@ -67,7 +67,7 @@ Les jetons d’accès au développement local sont générés pour un AEM spéci
 
 ## Informations d’identification du service
 
-Les informations d’identification du service sont les informations d’identification fiables utilisées dans tous les scénarios de non-développement - la plus évidente étant la production - qui facilitent la capacité d’une application ou d’un système externe à s’authentifier et à interagir avec l’AEM en tant que Cloud Service sur HTTP. Les informations d’identification du service elles-mêmes ne sont pas envoyées à AEM pour authentification, mais l’application externe les utilise pour générer un jeton d’accès JWT, qui est échangé avec les API _d’Adobe IMS pour_ un jeton d’accès, qui peut ensuite être utilisé pour authentifier les requêtes HTTP vers AEM en tant que Cloud Service.
+Les informations d’identification du service sont les informations d’identification fiables utilisées dans tous les scénarios de non-développement - la plus évidente étant la production - qui facilitent la capacité d’une application ou d’un système externe à s’authentifier et à interagir avec l’AEM en tant que Cloud Service sur HTTP. Les informations d’identification du service elles-mêmes ne sont pas envoyées à AEM pour authentification. Au lieu de cela, l’application externe les utilise pour générer un jeton d’accès JWT, qui est échangé avec les API d’Adobe IMS _pour_ un jeton d’accès, qui peut ensuite être utilisé pour authentifier les requêtes HTTP vers AEM en tant que Cloud Service.
 
 + [Utilisation des informations d’identification du service](./service-credentials.md)
 

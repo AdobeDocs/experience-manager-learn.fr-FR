@@ -1,24 +1,24 @@
 ---
 title: Informations d’identification du service
 description: Les informations d’identification du service AEM sont utilisées pour faciliter les applications, systèmes et services externes permettant d’interagir par programmation avec les services AEM Author ou Publish via HTTP.
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
-feature: les API ;
+feature: APIs
 activity: develop
 audience: developer
 kt: 6785
 thumbnail: 330519.jpg
-topic: Sans affichage, intégrations
+topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: b902ced3d7f7cf827d0a487bf741ff370f7c1f04
+exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1860'
 ht-degree: 0%
 
 ---
-
 
 # Informations d’identification du service
 
@@ -251,7 +251,6 @@ La sortie vers le terminal se présentera comme suit :
 
 ![Mise à jour des métadonnées d’utilisation restreinte WKND](./assets/service-credentials/asset-metadata.png)
 
-## Félicitations ! 
+## Félicitations !
 
 Maintenant que nous avons accédé par programmation à AEM en tant que Cloud Service à l’aide d’un jeton d’accès au développement local, ainsi que d’un jeton d’accès service à service prêt pour la production !
-

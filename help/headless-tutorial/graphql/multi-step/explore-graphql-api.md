@@ -1,21 +1,21 @@
 ---
 title: Exploration des API GraphQL - Prise en main d’AEM sans affichage - GraphQL
 description: Prise en main d’Adobe Experience Manager (AEM) et de GraphQL. Explorez AEM API GraphQL à l’aide de l’IDE GraphQL intégré. Découvrez comment AEM génère automatiquement un schéma GraphQL basé sur un modèle de fragment de contenu. Testez la création de requêtes de base à l’aide de la syntaxe GraphQL.
-version: cloud-service
+version: Cloud Service
 mini-toc-levels: 1
 kt: 6714
 thumbnail: KT-6714.jpg
-feature: Fragments de contenu,API GraphQL
-topic: Sans affichage, gestion de contenu
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1133'
 ht-degree: 2%
 
 ---
-
 
 # Exploration des API GraphQL {#explore-graphql-apis}
 

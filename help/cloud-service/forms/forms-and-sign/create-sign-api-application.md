@@ -5,22 +5,21 @@ solution: Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: cloud-service
-feature: Formulaires adaptatifs
-topic: Développement
+version: Cloud Service
+feature: Adaptive Forms
+topic: Development
 kt: 7427
 thumbnail: 332436.jpg
-source-git-commit: 27f21bb9c1b905a2100a5013fe3b75760b9d6821
+exl-id: 1eb43bdc-2718-4724-a5b8-d0f22cf84418
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 4%
+source-wordcount: '70'
+ht-degree: 0%
 
 ---
-
 
 # Création d’une application API Adobe Sign
 
 Vous devez créer une application API sur votre Adobe Sign pour l’intégrer à votre plateforme Adobe Sign. L’application API agit en tant que représentant d’une application cliente, interagissant avec la plateforme Adobe Sign. Vous pouvez créer l’application API sur le domaine du client ou du partenaire.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332436?quality=12&learn=on)
-

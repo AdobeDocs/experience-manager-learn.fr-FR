@@ -1,24 +1,24 @@
 ---
 title: Résolution des problèmes d’extensibilité des Assets compute pour AEM Assets
 description: Vous trouverez ci-dessous un index des problèmes et erreurs courants, ainsi que les résolutions, qui peuvent se produire lors du développement et du déploiement de programmes de travail Asset compute personnalisés pour AEM Assets.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, metadata, development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: Intégrations, développement
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1239'
 ht-degree: 0%
 
 ---
-
 
 # Résolution des problèmes d’extensibilité des Assets compute
 
@@ -39,7 +39,7 @@ Vous trouverez ci-dessous un index des problèmes et erreurs courants, ainsi que
 
 ### Fichier Console.json manquant dans le projet Asset compute{#missing-console-json}
 
-+ __Erreur :__ Erreur : Fichiers requis manquants lors de la validation (.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) à async setupAssetCompute (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
++ __Erreur :__ Erreur : Fichiers requis manquants lors de la validation (.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.:XX:jsYY) à l’adresse async setupAssetCompute (.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.:XX:jsYY)
 + __Cause :__ le  `console.json` fichier est absent de la racine du projet Asset compute.
 + __Résolution :__ téléchargez un nouveau  `console.json` formulaire à partir de votre projet Adobe I/O.
    1. Dans console.adobe.io, ouvrez le projet Adobe I/O que le projet Asset compute est configuré pour utiliser
@@ -52,13 +52,13 @@ Vous trouverez ci-dessous un index des problèmes et erreurs courants, ainsi que
 + __Cause :__ les fichiers Yaml sont sensibles aux espaces blancs. Il est probable que votre mise en retrait soit incorrecte.
 + __Résolution :__ vérifiez votre  `manifest.yml` et assurez-vous que toutes les retraits sont corrects.
 
-### La limite memorySize est définie sur low{#memorysize-limit-is-set-too-low}
+### La limite memorySize est définie trop basse{#memorysize-limit-is-set-too-low}
 
 + __Erreur :__  OpenWhiskError du serveur de développement local : PUT https://adobeioruntime.net/api/v1/namespaces/xxx-xxx-xxx/actions/xxx-0.0.1/__secured_workeroverwrite=true Renvoyé HTTP 400 (Bad Request) —> &quot;Le contenu de la requête a été incorrect : l’exigence a échoué : mémoire 64 Mo en dessous du seuil autorisé de 134217728 B&quot;
 + __Cause :__ une  `memorySize` limite pour le programme de travail dans  `manifest.yml` a été définie sous le seuil minimal autorisé comme indiqué par le message d’erreur en octets.
 + __Résolution :__  vérifiez les  `memorySize` limites dans  `manifest.yml` et assurez-vous qu’elles sont toutes supérieures au seuil minimal autorisé.
 
-### L’outil de développement ne peut pas démarrer en raison de l’absence de private.key{#missing-private-key}
+### L’outil de développement ne peut pas démarrer en raison d’une valeur private.key manquante.{#missing-private-key}
 
 + __Erreur :__ Local Dev ServerError : Fichiers requis manquants à validatePrivateKeyFile.... (via standard, à partir de la commande `aio app run`)
 + __Cause :__ la  `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` valeur du  `.env` fichier ne pointe pas vers  `private.key` ou  `private.key` n’est pas lisible par l’utilisateur actuel.
@@ -72,7 +72,7 @@ L’outil de développement d’Asset compute peut entrer un état dans lequel i
 + __Cause :__ l’état du navigateur mis en cache est obsolète.
 + __Résolution :__ dans votre navigateur, effacez complètement l’&quot;état d’application&quot; de l’onglet du navigateur, le cache du navigateur, le stockage local et le service worker.
 
-### Paramètre de requête devToolToken manquant ou non valide{#missing-or-invalid-devtooltoken-query-parameter}
+### Paramètre de requête devToolToken absent ou non valide{#missing-or-invalid-devtooltoken-query-parameter}
 
 + __Erreur :__  notification &quot;non autorisée&quot; dans l’outil de développement Asset compute
 + __Cause :__ `devToolToken` est absent ou non valide
@@ -96,7 +96,7 @@ L’outil de développement d’Asset compute peut entrer un état dans lequel i
 
    ![Dépannage - Aucun rendu généré](./assets/troubleshooting/test__no-rendition-generated.png)
 
-### Le test génère un rendu incorrect provoquant l’échec du test{#tests-generates-incorrect-rendition}
+### Le test génère un rendu incorrect provoquant l’échec du test.{#tests-generates-incorrect-rendition}
 
 + __Erreur :__ Échec : Rendu &#39;rendition.xxx&#39; pas comme prévu.
 + __Cause :__ le programme de travail génère un rendu différent de celui  `rendition.<extension>` fourni dans le cas de test.
@@ -107,13 +107,13 @@ L’outil de développement d’Asset compute peut entrer un état dans lequel i
 
 ## Déboguer
 
-### Le débogueur ne joint pas{#debugger-does-not-attach}
+### Debugger ne se joint pas{#debugger-does-not-attach}
 
 + __Erreur__ : Lancement du traitement des erreurs : Erreur : Impossible de se connecter à la cible de débogage à l’adresse ...
 + __Cause__ : Docker Desktop n’est pas en cours d’exécution sur le système local. Vérifiez ce message en consultant la console de débogage du code VS (Affichage > Console de débogage), puis en confirmant que cette erreur est signalée.
 + __Résolution__ : Démarrez  [Docker Desktop et vérifiez que les images Docker requises sont installées](./set-up/development-environment.md#docker).
 
-### Points d’arrêt non en pause{#breakpoints-no-pausing}
+### Points d’arrêt en pause{#breakpoints-no-pausing}
 
 + __Erreur__ : Lors de l’exécution du programme de travail Asset compute à partir de l’outil de développement débogage, le code VS ne se met pas en pause aux points d’arrêt.
 
@@ -122,7 +122,7 @@ L’outil de développement d’Asset compute peut entrer un état dans lequel i
 + __Cause :__ le débogueur VS Code a été arrêté/déconnecté.
 + __Résolution :__ Redémarrez le débogueur VS Code et vérifiez qu’il se joint en regardant la console de sortie de débogage VS Code (Affichage > Console de débogage).
 
-#### Débogueur VS Code joint après le début de l’exécution du programme de travail{#vs-code-debugger-attached-after-worker-execution-began}
+#### Débogueur VS Code attaché après le début de l’exécution du programme de travail{#vs-code-debugger-attached-after-worker-execution-began}
 
 + __Cause :__ le débogueur VS Code ne s’est pas joint avant d’appuyer sur  ____ Runin Development Tool.
 + __Résolution :__ Assurez-vous que le débogueur a joint en examinant la console de débogage de VS Code (Affichage > Console de débogage), puis relancez le programme de travail d’Asset compute à partir de l’outil de développement.
@@ -166,5 +166,3 @@ L’outil de développement d’Asset compute peut entrer un état dans lequel i
 + __Erreur :__ Badge Échec du traitement des ressources affiché sur la ressource
 + __Cause :__ une erreur s’est produite lors de l’exécution du programme de travail personnalisé
 + __Résolution :__ Suivez les instructions de  [débogage de l’](./test-debug/debug.md#aio-app-logs) activation de Adobe I/O Runtime à l’aide de  `aio app logs`.
-
-

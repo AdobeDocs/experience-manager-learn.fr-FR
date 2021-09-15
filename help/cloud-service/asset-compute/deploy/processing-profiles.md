@@ -1,24 +1,24 @@
 ---
 title: Intégration des objets Worker Asset compute aux profils de traitement AEM
 description: AEM as a Cloud Service s’intègre aux objets Worker Asset compute déployés vers Adobe I/O Runtime via les profils de traitement AEM Assets. Les profils de traitement sont configurés dans le service Auteur pour traiter des ressources spécifiques à l’aide de programmes de travail personnalisés et pour stocker les fichiers générés par les programmes de travail en tant que rendus de ressources.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6287
 thumbnail: KT-6287.jpg
-topic: Intégrations, développement
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 1b398c8c-6b4e-4046-b61e-b44c45f973ef
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '630'
 ht-degree: 2%
 
 ---
-
 
 # Intégration aux profils de traitement AEM
 

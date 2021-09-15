@@ -3,7 +3,7 @@ title: Prise en main du développement AEM Sites – Tutoriel WKND
 description: Prise en main du développement AEM Sites – Tutoriel WKND. Le tutoriel WKND est un tutoriel en plusieurs parties conçu pour les développeurs qui découvrent Adobe Experience Manager. Le tutoriel décrit la mise en oeuvre d’un site AEM pour une marque de style de vie fictive, WKND. Le tutoriel aborde des sujets fondamentaux tels que la configuration de projet, les archétypes maven, les composants principaux, les modèles modifiables, les bibliothèques clientes et le développement de composants.
 sub-product: sites
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,17 +11,17 @@ KT: 4132
 mini-toc-levels: 1
 index: y
 thumbnail: 30476.jpg
-feature: Composants principaux, éditeur de page, modèles modifiables, AEM archétype de projet
-topic: Gestion de contenu, développement
+feature: Core Components, Page Editor, Editable Templates, AEM Project Archetype
+topic: Content Management, Development
 role: Developer
 level: Beginner
-source-git-commit: 67b7f5ee5fc9e42537a9622922327fb7a456d2bd
+exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '619'
 ht-degree: 6%
 
 ---
-
 
 # Prise en main du développement AEM Sites – Tutoriel WKND {#introduction}
 

@@ -1,20 +1,20 @@
 ---
 title: Analyse des données avec Analysis Workspace
 description: Découvrez comment mapper les données capturées d’un site Adobe Experience Manager aux mesures et aux dimensions dans les suites de rapports Adobe Analytics. Découvrez comment créer un tableau de bord de création de rapports détaillé à l’aide de la fonctionnalité Analysis Workspace d’Adobe Analytics.
-version: cloud-service
-topic: Intégrations
-feature: Couche de données client Adobe
+version: Cloud Service
+topic: Integrations
+feature: Adobe Client Data Layer
 role: User
 level: Intermediate
 kt: 6409
 thumbnail: KT-6296.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 1%
+source-wordcount: '2179'
+ht-degree: 0%
 
 ---
-
 
 # Analyse des données avec Analysis Workspace
 
@@ -265,4 +265,3 @@ Téléchargeons ensuite le modèle de classification pour la variable d’identi
 ## Félicitations !
 
 Vous venez d’apprendre à mapper les données capturées d’un site Adobe Experience Manager aux mesures et dimensions des suites de rapports Adobe Analytics, à effectuer une classification pour les mesures et à créer un tableau de bord de création de rapports détaillé à l’aide de la fonction Analysis Workspace d’Adobe Analytics.
-

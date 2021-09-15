@@ -1,21 +1,21 @@
 ---
 title: Création de fragments de contenu - Prise en main d’AEM sans affichage - GraphQL
 description: Prise en main d’Adobe Experience Manager (AEM) et de GraphQL. Créez et modifiez un fragment de contenu en fonction d’un modèle de fragment de contenu. Découvrez comment créer des variantes de fragments de contenu.
-version: cloud-service
+version: Cloud Service
 mini-toc-levels: 1
 kt: 6713
 thumbnail: 22451.jpg
-feature: Fragments de contenu,API GraphQL
-topic: Sans affichage, gestion de contenu
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 3%
+source-wordcount: '784'
+ht-degree: 2%
 
 ---
-
 
 # Création de fragments de contenu {#authoring-content-fragments}
 

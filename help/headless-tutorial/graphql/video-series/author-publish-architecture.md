@@ -1,20 +1,20 @@
 ---
 title: Architecture de création et de publication avec AEM GraphQL
 description: Découvrez comment et à quel moment tirer parti des environnements d’auteur et de publication AEM lors de l’utilisation AEM API GraphQL.
-version: cloud-service
-topic: Sans affichage, gestion de contenu
-feature: Fragments de contenu,API GraphQL
+version: Cloud Service
+topic: Headless, Content Management
+feature: Content Fragments, GraphQL API
 role: Developer
 level: Beginner
 kt: 7873
 thumbnail: 333296.jpg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 7d5f5edb-10e7-43ec-a4e7-4cee8ddba685
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 3%
+source-wordcount: '96'
+ht-degree: 0%
 
 ---
-
 
 # Architecture de création et de publication
 

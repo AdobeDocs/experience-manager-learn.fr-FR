@@ -1,24 +1,24 @@
 ---
 title: Développement d’un objet Worker de métadonnées d’Asset compute
 description: Découvrez comment créer un objet Worker de métadonnées d’Asset compute qui fournit les couleurs les plus courantes d’une ressource d’image et réécrit les noms des couleurs aux métadonnées de la ressource dans AEM.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: metadata, development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
 kt: 6448
 thumbnail: 327313.jpg
-topic: Intégrations, développement
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: dbc0a35ae96594fec1e10f411d57d2a3812c1cf2
+exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1434'
 ht-degree: 1%
 
 ---
-
 
 # Développement d’un objet Worker de métadonnées d’Asset compute
 
@@ -180,7 +180,7 @@ function getColorName(colorsFamily, color) {
 }
 ```
 
-## Exécutez localement le programme de travail des métadonnées{#development-tool}
+## Exécution locale du traitement des métadonnées{#development-tool}
 
 Une fois le code de travail terminé, il peut être exécuté à l’aide de l’outil de développement d’Asset compute local.
 

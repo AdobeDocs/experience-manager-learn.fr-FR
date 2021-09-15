@@ -4,22 +4,20 @@ description: Procédure d’activation du rapport de téléchargement de ressour
 type: Troubleshooting
 role: Admin
 level: Beginner
-version: 6.5, cloud-service
-feature: Adobe Asset Link
+version: 6.5, Cloud Service
+feature: Adobe Asset Link
 topic: Administration
 index: y
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: d50f626b-ced8-4320-91c2-738687bec295
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '34'
-ht-degree: 11%
+source-wordcount: '30'
+ht-degree: 0%
 
 ---
-
 
 # Comment activer le rapport de téléchargement de ressources
 
 *Cette vidéo décrit les étapes à suivre pour activer le rapport de téléchargement de ressources.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335463?quality=9&learn=on)
-
-

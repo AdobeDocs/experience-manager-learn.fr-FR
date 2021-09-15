@@ -1,23 +1,23 @@
 ---
 title: Autres outils de débogage AEM SDK
 description: Divers autres outils peuvent vous aider à déboguer le démarrage rapide local du SDK AEM.
-feature: Outils de développement
+feature: Developer Tools
 topics: development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5251
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 11fb83e9-dbaf-46e5-8102-ae8cc716c6ba
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 13%
+source-wordcount: '217'
+ht-degree: 12%
 
 ---
-
 
 # Autres outils de débogage AEM SDK
 
@@ -54,4 +54,3 @@ Le débogueur QueryBuilder est un outil Web qui vous aide à déboguer et à com
 QueryBuilder Debugger se trouve à l’emplacement suivant :
 
 + [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
-

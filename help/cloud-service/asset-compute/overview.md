@@ -1,24 +1,24 @@
 ---
 title: Extensibilité des microservices d’Asset compute pour AEM en tant que Cloud Service
 description: Ce tutoriel décrit la création d’un objet Worker d’Assets compute simple qui crée un rendu de ressource en recadrant la ressource d’origine sur un cercle et en appliquant un contraste et une luminosité configurables. Bien que le programme de travail lui-même soit de base, ce tutoriel l’utilise pour explorer la création, le développement et le déploiement d’un programme de travail d’Asset compute personnalisé à utiliser avec AEM en tant que Cloud Service.
-feature: Microservices Asset compute
+feature: Asset Compute Microservices
 topics: renditions, development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
 kt: 5802
 thumbnail: KT-5802.jpg
-topic: Intégrations, développement
+topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1026'
 ht-degree: 3%
 
 ---
-
 
 # Extensibilité des microservices d’Asset compute
 

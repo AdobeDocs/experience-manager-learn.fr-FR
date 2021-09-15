@@ -1,21 +1,21 @@
 ---
 title: Définition de modèles de fragment de contenu - Prise en main d’AEM sans affichage - GraphQL
 description: Prise en main d’Adobe Experience Manager (AEM) et de GraphQL. Découvrez comment modéliser du contenu et créer un schéma avec des modèles de fragment de contenu dans AEM. Examinez les modèles existants et créez un modèle. Découvrez les différents types de données qui peuvent être utilisés pour définir un schéma.
-version: cloud-service
+version: Cloud Service
 mini-toc-levels: 1
 kt: 6712
 thumbnail: 22452.jpg
-feature: Fragments de contenu,API GraphQL
-topic: Sans affichage, gestion de contenu
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1017'
 ht-degree: 2%
 
 ---
-
 
 # Définition de modèles de fragment de contenu {#content-fragment-models}
 

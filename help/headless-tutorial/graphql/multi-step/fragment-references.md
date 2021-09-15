@@ -1,21 +1,21 @@
 ---
 title: Modélisation avancée des données à l’aide des références de fragments - Prise en main d’AEM sans affichage - GraphQL
 description: Prise en main d’Adobe Experience Manager (AEM) et de GraphQL. Découvrez comment utiliser la fonction Référence de fragment pour la modélisation avancée des données et pour créer une relation entre deux fragments de contenu différents. Découvrez comment modifier une requête GraphQL pour inclure un champ à partir d’un modèle référencé.
-version: cloud-service
+version: Cloud Service
 mini-toc-levels: 1
 kt: 6718
 thumbnail: KT-6718.jpg
-feature: Fragments de contenu,API GraphQL
-topic: Sans affichage, gestion de contenu
+feature: Content Fragments, GraphQL API
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: d85b7ac3-42c1-4655-9394-29a797c0e1d7
+source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 3%
+source-wordcount: '847'
+ht-degree: 2%
 
 ---
-
 
 # Modélisation avancée des données à l’aide des références de fragments
 
