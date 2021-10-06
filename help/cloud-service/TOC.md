@@ -4,9 +4,9 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 598d00578e5179f76b6f309c5c14dc7b1634f051
+source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '564'
 ht-degree: 33%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 33%
 
 + [Présentation](./overview.md)
 + Présentation d’AEM as a Cloud Service{#introduction}
-   + [Qu&#39;est-ce qu&#39;AEM en tant que Cloud Service ?](./introduction/what-is-aem-as-a-cloud-service.md)
+   + [Qu&#39;est-ce AEM as a Cloud Service ?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Evolution](./introduction/evolution.md)
    + [Architecture](./introduction/architecture.md)
    + [Cloud Manager ](./introduction/cloud-manager.md)
@@ -64,6 +64,8 @@ ht-degree: 33%
       + [Cycle de vie des composants OSGi](./developing/osgi-services/lifecycle.md)
       + [Concepts de base des configurations OSGi](./developing/osgi-services/configurations.md)
       + [Configurations OSGi à l’aide d’OCD](./developing/osgi-services/configurations-ocd.md)
+   + Avancé{#advanced}
+      + [Utilisateurs du service](./developing/advanced/service-users.md)
    + [Documentation Java de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + Débogage AEM{#debugging}
    + Débogage du SDK AEM{#debugging-aem-sdk}
@@ -73,7 +75,7 @@ ht-degree: 33%
       + [Console web OSGi](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
       + [Outils Dispatcher](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [Autres outils](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + Débogage d’AEM en tant que Cloud Service{#debugging-aem-as-a-cloud-service}
+   + Débogage AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
       + [Présentation](./debugging/cloud-service/overview.md)
       + [Journaux](./debugging/cloud-service/logs.md)
       + [Build et déploiement](./debugging/cloud-service/build-and-deployment.md)
@@ -81,9 +83,9 @@ ht-degree: 33%
       + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
 + Accès à AEM{#accessing}
    + [Présentation](./accessing/overview.md)
-   + [Adobe des utilisateurs IMS](./accessing/adobe-ims-users.md)
-   + [Adobe des groupes d’utilisateurs IMS](./accessing/adobe-ims-user-groups.md)
-   + [Adobe de profils de produits IMS](./accessing/adobe-ims-product-profiles.md)
+   + [Utilisateurs Adobe IMS](./accessing/adobe-ims-users.md)
+   + [Groupes d’utilisateurs Adobe IMS](./accessing/adobe-ims-user-groups.md)
+   + [Profils de produit Adobe IMS](./accessing/adobe-ims-product-profiles.md)
    + [AEM utilisateurs, groupes et autorisations](./accessing/aem-users-groups-and-permissions.md)
    + [Configuration de l’accès à la présentation d’AEM](./accessing/walk-through.md)
 + Migration {#migration}
