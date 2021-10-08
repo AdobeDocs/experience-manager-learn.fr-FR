@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 0265d3df-3de8-4a25-9611-ddf73d725f6e
-source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
+source-git-commit: c003632d82b6a3ba2046e494ff8e7911f619945c
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1961'
 ht-degree: 3%
 
 ---
@@ -296,7 +296,7 @@ Revenez à l’IDE de votre choix et ouvrez le module `core`.
    }
    ```
 
-   `@PostConstruct initModel()` sera toujours appelé lorsque le modèle Sling est initialisé. C’est donc une bonne occasion d’initialiser des objets qui peuvent être utilisés par d’autres méthodes du modèle. `pageManager` est l’un des nombreux [objets globaux pris en charge par Java](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) mis à la disposition des modèles Sling via l’annotation `@ScriptVariable`. La méthode [getPage()](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) prend un chemin et renvoie un objet [Page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/com/day/cq/wcm/api/Page.html) d’AEM ou null si le chemin ne pointe pas vers une page valide.
+   `@PostConstruct initModel()` sera toujours appelé lorsque le modèle Sling est initialisé. C’est donc une bonne occasion d’initialiser des objets qui peuvent être utilisés par d’autres méthodes du modèle. `pageManager` est l’un des nombreux [objets globaux pris en charge par Java](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/global-objects.html#java-backed-objects) mis à la disposition des modèles Sling via l’annotation `@ScriptVariable`. La méthode [getPage](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html#getPage-java.lang.String-) prend un chemin et renvoie un objet [Page](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) AEM ou null si le chemin ne pointe pas vers une page valide.
 
    Cela initialisera la variable `cardPage`, qui sera utilisée par les autres nouvelles méthodes pour renvoyer les données sur la page liée sous-jacente.
 
