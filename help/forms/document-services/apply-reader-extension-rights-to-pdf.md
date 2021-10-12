@@ -1,18 +1,18 @@
 ---
-title: Rendu XDP au format PDF avec des droits d’utilisation
+title: Appliquer les droits d’utilisation au pdf téléchargé
 description: Application des droits d’utilisation à pdf
 version: 6.4,6.5
 feature: Reader Extensions
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: ea433667-81db-40f7-870d-b16630128871
+source-git-commit: f1afccdad8d819604c510421204f59e7b3dc68e4
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 13%
+source-wordcount: '371'
+ht-degree: 12%
 
 ---
-
 
 # Application d’extensions de Reader
 
@@ -22,12 +22,11 @@ Pour tester cette fonctionnalité, vous pouvez essayer ce [lien](https://forms.e
 Pour réaliser ce cas pratique, procédez comme suit :
 * [Ajoutez le ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) certificat Reader Extensions à l’ `fd-service` utilisateur.
 
-* Créez un service OSGi personnalisé qui appliquera des droits d’utilisation aux documents. Le code permettant d’y parvenir est répertorié ci-dessous.
+## Création d’un service OSGi personnalisé
+
+Créez un service OSGi personnalisé qui appliquera des droits d’utilisation aux documents. Le code permettant d’y parvenir est répertorié ci-dessous.
 
 ```java
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
-
 import com.adobe.aemfd.docmanager.Document;
 import com.adobe.fd.docassurance.client.api.DocAssuranceService;
 import com.adobe.fd.docassurance.client.api.ReaderExtensionOptions;
@@ -36,38 +35,47 @@ import com.adobe.fd.readerextensions.client.UsageRights;
 import com.adobe.fd.signatures.pdf.inputs.UnlockOptions;
 import com.aemforms.ares.core.ReaderExtendPDF;
 import com.mergeandfuse.getserviceuserresolver.GetResolver;
-@Component(service=ApplyUsageRights.class,immediate = true)
+@Component(service = ApplyUsageRights.class)
 public class ApplyUsageRights implements ReaderExtendPDF {
-@Reference
-DocAssuranceService docAssuranceService;
-@Reference
-GetResolver getResolver;
-@Override
-public Document applyUsageRights(Document pdfDocument,UsageRights usageRights) {
-      ReaderExtensionsOptionSpec reOptionsSpec = new ReaderExtensionsOptionSpec(usageRights, "Sample ARES");
-      UnlockOptions unlockOptions = null;
-      ReaderExtensionOptions reOptions = ReaderExtensionOptions.getInstance();
-      reOptions.setCredentialAlias("ares");
-      reOptions.setResourceResolver(getResolver.getFormsServiceResolver());
-      reOptions.setReOptions(reOptionsSpec);
-    try {
-          return docAssuranceService.secureDocument(pdfDocument, null, null, reOptions,
-          unlockOptions);
-        } catch (Exception e) {
-            e.printStackTrace();
+        @Reference
+        DocAssuranceService docAssuranceService;
+        @Reference
+        GetResolver getResolver;
+        Logger logger = LoggerFactory.getLogger(ApplyUsageRights.class);
+        @Override
+        public Document applyUsageRights(Document pdfDocument, UsageRights usageRights) {
+
+                ReaderExtensionsOptionSpec reOptionsSpec = new ReaderExtensionsOptionSpec(usageRights, "Sample ARES");
+                UnlockOptions unlockOptions = null;
+                ReaderExtensionOptions reOptions = ReaderExtensionOptions.getInstance();
+                reOptions.setCredentialAlias("ares");
+
+                reOptions.setResourceResolver(getResolver.getFormsServiceResolver());
+
+                reOptions.setReOptions(reOptionsSpec);
+                System.out.println("Applying Usage Rights");
+
+                try {
+                        Document readerExtended = docAssuranceService.secureDocument(pdfDocument, null, null, reOptions,
+                                unlockOptions);
+                        reOptions.getResourceResolver().close();
+                        return readerExtended;
+                } catch (Exception e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                }
+                return null;
         }
-    return null;
-}
 
 }
 ```
 
-## Création d’un servlet pour la diffusion en continu du PDF {#create-servlet-to-stream-the-pdf}
+## Création d’un servlet pour diffuser le PDF étendu du lecteur
 
-L’étape suivante consiste à créer un servlet avec une méthode de POST pour renvoyer le PDF étendu du lecteur à l’utilisateur. Dans ce cas, l’utilisateur est invité à enregistrer le fichier PDF dans son système de fichiers. Cela est dû au fait que le PDF est rendu au format PDF dynamique et que les visionneuses PDF fournies avec les navigateurs ne prennent pas en charge les fichiers PDF dynamiques.
+L’étape suivante consiste à créer une servlet avec une méthode de POST pour renvoyer le PDF étendu du lecteur à l’utilisateur. Dans ce cas, l’utilisateur est invité à enregistrer le PDF dans son système de fichiers. Cela est dû au fait que le PDF est rendu en tant que PDF dynamique et que les visionneuses pdf fournies avec les navigateurs ne prennent pas en charge les pdf dynamiques.
 
-Voici le code de la servlet. Le servlet sera appelé à partir de l’action **customsubmit** du formulaire adaptatif.
-Servlet crée l’objet UsageRights et définit ses propriétés en fonction des valeurs saisies par l’utilisateur dans le formulaire adaptatif. Le servlet appelle ensuite la méthode **applyUsageRights** du service créé à cet effet.
+Voici le code de la servlet. Le servlet sera appelé à partir de l’action d’envoi personnalisée du formulaire adaptatif.
+Servlet crée l’objet UsageRights et définit ses propriétés en fonction des valeurs saisies par l’utilisateur dans le formulaire adaptatif. Le servlet appelle ensuite la méthode applyUsageRights du service créé à cet effet.
 
 ```java
 package com.aemforms.ares.core.servlets;
@@ -78,7 +86,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.StringReader;
 import java.util.Map;
-
 import javax.servlet.Servlet;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -106,6 +113,7 @@ import com.aemforms.ares.core.impl.ApplyUsageRights;
 
 public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 
+        private static final long serialVersionUID = -883724052368090823 L;
         @Reference
         ApplyUsageRights applyRights;
         Logger logger = LoggerFactory.getLogger(GetReaderExtendedPDF.class);
@@ -147,22 +155,25 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
                 for (Map.Entry < String, RequestParameter[] > pairs: requestParameterMap.entrySet()) {
                         final org.apache.sling.api.request.RequestParameter[] pArr = pairs.getValue();
                         final org.apache.sling.api.request.RequestParameter param = pArr[0];
+
                         if (!param.isFormField()) {
                                 try {
-                                        System.out.println("Got attachment!!!!" + param.getFileName());
+                                        System.out.println("Got form attachment!!!!" + param.getFileName());
                                         logger.debug("Got attachment!!!!" + param.getFileName());
                                         InputStream is = param.getInputStream();
                                         Document documentToReaderExtend = new Document(is);
                                         documentToReaderExtend = applyRights.applyUsageRights(documentToReaderExtend, usageRights);
+                                        if (logger.isDebugEnabled()) {
+                                                documentToReaderExtend.copyToFile(new File(param.getFileName().split("/")[1]));
+                                        }
 
-                                        documentToReaderExtend.copyToFile(new File(param.getFileName().split("/")[1]));
-                                        documentToReaderExtend.close();
                                         InputStream fileInputStream = documentToReaderExtend.getInputStream();
-                                        documentToReaderExtend.close();
+
                                         response.setContentType("application/pdf");
-                                        response.addHeader("Content-Disposition", "attachment; filename=AemFormsRocks.pdf");
+                                        response.addHeader("Content-Disposition", "attachment; filename=" + param.getFileName().split("/")[1]);
                                         response.setContentLength((int) fileInputStream.available());
                                         OutputStream responseOutputStream = response.getOutputStream();
+                                        documentToReaderExtend.close();
                                         int bytes;
                                         while ((bytes = fileInputStream.read()) != -1) {
                                                 responseOutputStream.write(bytes);
@@ -187,9 +198,7 @@ Pour le tester sur votre serveur local, procédez comme suit :
 1. [Téléchargez et installez le bundle](assets/ares.ares.core-ares.jar) ares.ares.core-ares. Il dispose du service personnalisé et du servlet pour appliquer des droits d’utilisation et diffuser le pdf en continu.
 1. [Importation des bibliothèques clientes et envoi personnalisé](assets/applyaresdemo.zip)
 1. [Importation du formulaire adaptatif](assets/applyaresform.zip)
-1. Ajout d’un certificat Reader Extensions à l’utilisateur &quot;fd-service&quot;
+1. Ajoutez le certificat des extensions de Reader à l’utilisateur &quot;fd-service&quot;. Assurez-vous que l&#39;alias est &quot;ares&quot;.
 1. [Aperçu du formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
-1. Sélectionnez les droits appropriés et téléchargez le fichier PDF
+1. Sélectionnez les droits appropriés et téléchargez le fichier du PDF
 1. Cliquez sur Envoyer pour obtenir le PDF étendu par Reader.
-
-
