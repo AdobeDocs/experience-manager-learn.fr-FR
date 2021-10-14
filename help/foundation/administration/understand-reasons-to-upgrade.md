@@ -1,21 +1,21 @@
 ---
 title: Comprendre les raisons de la mise à niveau
-description: Une ventilation de haut niveau des fonctionnalités clés pour les clients qui envisagent d’effectuer une mise à niveau vers la dernière version d’Adobe Experience Manager.
+description: Une ventilation de haut niveau des fonctionnalités clés pour les clients qui envisagent d’effectuer une mise à niveau vers la dernière version d’Adobe Experience Manager 6.
 version: 6.5
 topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
+source-git-commit: 278433e7d9a2d524198efcebae336dca01a15259
 workflow-type: tm+mt
 source-wordcount: '3462'
 ht-degree: 6%
 
 ---
 
-
 # Comprendre les raisons de la mise à niveau
 
-Une ventilation de haut niveau des fonctionnalités clés pour les clients qui envisagent d’effectuer une mise à niveau vers la dernière version d’Adobe Experience Manager.
+Une ventilation de haut niveau des fonctionnalités clés pour les clients qui envisagent d’effectuer une mise à niveau vers la dernière version d’Adobe Experience Manager 6.
 
 ## Principales fonctionnalités pour la mise à niveau vers AEM 6.5
 
@@ -62,7 +62,7 @@ AEM continue à construire son intégration avec des technologies intelligentes,
 
 ### Intégrations
 
-AEM développe sa capacité à s’intégrer à d’autres services Adobe :
+AEM développe sa capacité d’intégration à d’autres services Adobe :
 
 + **Les** fragments d’expérience approfondissent leur intégration avec le  **ciblage d’** Adobe en prenant en charge  **l’exportation au format** JSON vers Adobe Target et la possibilité de  **supprimer des** offres basées sur les fragments d’expérience d’ **Adobe Target**.
 
@@ -317,7 +317,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités de sécur
     </tr>
     <tr>
         <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/csrf-protection.html" target="_blank"><strong></strong> <strong></strong></a>
-            <br> Protection CSRFCross-Site Request Forgery protection par falsification de requête standard.</td>
+            <br> Protection CSRFprotectionCross-Site Request Forgery par défaut.</td>
         <td></td>
         <td></td>
         <td>✔</td>
@@ -328,7 +328,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités de sécur
     </tr>
     <tr>
         <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/saml-2-0-authenticationhandler.html" target="_blank"><strong></strong> <strong></strong></a>
-            <br> Prise en charge du partage des ressources cross-origin CORSsupportCross-Origin pour une plus grande flexibilité d’application.</td>
+            <br> Prise en charge du partage des ressources cross-origin CORS pour une plus grande flexibilité d’application.</td>
         <td></td>
         <td></td>
         <td></td>
@@ -406,8 +406,8 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités de sécur
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Adobe de la </a><br>
- </strong>prise en charge de l’authentification IMSExclusive to Adobe Managed Services (AMS), gérez de manière centralisée l’accès aux instances d’auteur AEM via Adobe IMS (système Identity Management).</td>
+        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Prise en </a><br>
+ </strong>charge de l’authentification Adobe IMSExclusive to Adobe Managed Services (AMS), gérez de manière centralisée l’accès aux instances d’auteur AEM via Adobe IMS (système Identity Management).</td>
         <td> </td>
         <td> </td>
         <td> </td>
@@ -848,7 +848,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités d’Asset
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/imaging-transcoding-library.html" target="_blank">Bibliothèque d’imagerie d’Adobe</a> :</strong>
-                <br>  bibliothèques PDF Photoshop et Acrobat utilisées pour la manipulation de fichiers de haute qualité.</td>
+                <br>  bibliothèques Photoshop et Acrobat PDF utilisées pour la manipulation de fichiers de haute qualité.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -907,10 +907,10 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités d’Asset
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/managing-assets.html" target="_blank">Imagerie</a> :</strong>
              diffusez dynamiquement les images dans différents formats et tailles, y compris le recadrage intelligent.</td>
             <td> </td>
-            <td>✔</td>
-            <td>✔</td>
-            <td>✔</td>
-            <td>✔<sup>+</sup></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
         </tr>
@@ -1292,7 +1292,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités du module
         </tr>
         <tr>
             <td rowspan="5">Activation</td>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/catalog.html" target="_blank"></a> Catalogue et  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">gestion des ressources</a> :</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/catalog.html" target="_blank"></a> Catalogue et  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/resource.html" target="_blank">gestion des ressources</a> : </strong>
             accédez aux ressources d’activation à partir du catalogue.</td>
             <td> </td>
             <td>✔<sup>+</sup></td>
@@ -1343,7 +1343,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités du module
         </tr>
         <tr>
             <td rowspan="8">Commons</td>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/comments.html" target="_blank"></a> Commentaires et pièces jointes :</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/comments.html" target="_blank"></a> Commentaires et pièces jointes : </strong>
              (Social Component Framework) en tant que membre de la communauté, partage son opinion et ses connaissances sur le contenu du site Communities.</td>
             <td>✔<sup>+</sup></td>
             <td>✔</td>
@@ -1538,7 +1538,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités du module
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/activities.html" target="_blank"></a> Activités et  <a href="https://helpx.adobe.com/experience-manager/6-5/communities/using/notifications.html" target="_blank">notifications</a> : </strong>
-            affichez le flux d’activités récentes et soyez informé des événements qui vous intéressent.</td>
+            affichez le flux d’activités récentes et soyez informé des événements présentant un intérêt.</td>
             <td> </td>
             <td> </td>
             <td> </td>
