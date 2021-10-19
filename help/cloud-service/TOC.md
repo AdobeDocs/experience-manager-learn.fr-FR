@@ -4,9 +4,9 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 5452ab85523fc10d0aaa55e95d42c37ec33fd2ed
+source-git-commit: bec04e6db13b80a8b5c4caa91acb8f2e684e70e9
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '567'
 ht-degree: 33%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 33%
    + [Exécution locale AEM](./local-development-environment/aem-runtime.md)
    + [Outils du Dispatcher local](./local-development-environment/dispatcher-tools.md)
 + Développement{#developing}
-   + Concepts de base du développement{#basics}
+   + Principes de développement{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Environnement de développement local](./developing/basics/local-development-environment.md)
       + [Archétype de projet AEM](./developing/basics/aem-project-archetype.md)
@@ -67,7 +67,7 @@ ht-degree: 33%
    + Avancé{#advanced}
       + [Utilisateurs du service](./developing/advanced/service-users.md)
    + [Documentation Java de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
-+ Débogage AEM{#debugging}
++ AEM de débogage{#debugging}
    + Débogage du SDK AEM{#debugging-aem-sdk}
       + [Présentation](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Journaux](./debugging/aem-sdk-local-quickstart/logs.md)
@@ -81,7 +81,7 @@ ht-degree: 33%
       + [Build et déploiement](./debugging/cloud-service/build-and-deployment.md)
       + [Developer Console](./debugging/cloud-service/developer-console.md)
       + [CRXDE Lite](./debugging/cloud-service/crxde-lite.md)
-+ Accès à AEM{#accessing}
++ Accès aux AEM{#accessing}
    + [Présentation](./accessing/overview.md)
    + [Utilisateurs Adobe IMS](./accessing/adobe-ims-users.md)
    + [Groupes d’utilisateurs Adobe IMS](./accessing/adobe-ims-user-groups.md)
@@ -174,7 +174,7 @@ ht-degree: 33%
       + [Approvisionnement des comptes et des services](./asset-compute/set-up/accounts-and-services.md)
       + [Environnement de développement local](./asset-compute/set-up/development-environment.md)
       + [Adobe Project Firefly](./asset-compute/set-up/firefly.md)
-   + Develop{#develop}
+   + Développer{#develop}
       + [Création d’un projet d’Asset compute](./asset-compute/develop/project.md)
       + [Configuration des variables d’environnement](./asset-compute/develop/environment-variables.md)
       + [Configuration du fichier manifest.yml](./asset-compute/develop/manifest.md)
@@ -189,6 +189,7 @@ ht-degree: 33%
    + Avancé{#advanced}
       + [Travailleurs de métadonnées](./asset-compute/advanced/metadata.md)
    + [Résolution des problèmes](./asset-compute/troubleshooting.md)
++ [AEM série d’experts](./aem-experts-series.md)
 + Tutorials en plusieurs étapes{#multi-step-tutorials}
    + [Développement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)
