@@ -3,11 +3,11 @@ feature-set: Experience Manager, Experience Manager Forms
 role: Developer
 user-guide-title: Vidéos et tutoriels d’AEM Forms
 user-guide-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés.
-breadcrumb-title: Tutoriels d’AEM Forms
+breadcrumb-title: Tutoriels sur AEM Forms
 index: y
-source-git-commit: e01d93591d1c00b2abec3430fdfa695b32165e54
+source-git-commit: 72a9edb3edc73cf14f13bb53355a37e707ed4c79
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1607'
 ht-degree: 4%
 
 ---
@@ -116,7 +116,7 @@ ht-degree: 4%
    + [Création du formulaire principal](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
    + [Créer le formulaire MyAccount](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
    + [Déploiement de l’exemple](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
-+ Exportation des données envoyées au format CSV{#export-submitted-data-csv-format}
++ Exportation de données envoyées au format CSV{#export-submitted-data-csv-format}
    + [Exporter les données envoyées](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + Formulaires HTML5{#html5-forms}
    + [Créer un formulaire HTML5](html5-forms/create-html5-form.md)
@@ -134,7 +134,7 @@ ht-degree: 4%
    + [Convertir un formulaire PDF en formulaire adaptatif](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurer un formulaire adaptatif converti](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Utilisation de modèles XDP avec Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
-+ Signer plusieurs Forms{#sign-multiple-documents}
++ Signature de plusieurs Forms{#sign-multiple-documents}
    + [Présentation](sign-multiple-documents/introduction.md)
    + [Configuration de la source de données](sign-multiple-documents/configure-data-source.md)
    + [Création d’un service OSGi](sign-multiple-documents/create-osgi-service.md)
@@ -146,7 +146,7 @@ ht-degree: 4%
    + [Créer un formulaire initial](sign-multiple-documents/create-initial-form.md)
    + [Création de Forms pour la signature](sign-multiple-documents/create-forms-for-signing.md)
    + [Test de la solution](sign-multiple-documents/testing-and-trouble-shooting.md)
-+ Variables dans AEM Workflow{#variables-aem-workflow}
++ Variables dans AEM workflow{#variables-aem-workflow}
    + [Introduction - Variables dans le workflow](variables-aem-workflow/introduction.md)
    + [Variables XML](variables-aem-workflow/part1.md)
    + [Variables JSON](variables-aem-workflow/part2.md)
@@ -162,11 +162,11 @@ ht-degree: 4%
    + [Bibliothèque cliente](storing-retrieving-form-data/part4.md)
    + [Modèle de formulaire adaptatif](storing-retrieving-form-data/part5.md)
    + [Déploiement d’exemples de ressources](storing-retrieving-form-data/part6.md)
-+ Déclenchement AEM flux de travail à partir de l’envoi du formulaire mobile{#offline-mobile-form-submission}
++ Déclenchement AEM flux de travail à partir de l’envoi de formulaire mobile{#offline-mobile-form-submission}
    + [Présentation](offline-mobile-form-submission/introduction.md)
    + [Profil personnalisé](offline-mobile-form-submission/part-one.md)
-   + [Gérer l’envoi PDF](offline-mobile-form-submission/part-two.md)
-   + [Processus de révision d’un PDF](offline-mobile-form-submission/part-three.md)
+   + [Gérer l’envoi du PDF](offline-mobile-form-submission/part-two.md)
+   + [Workflow de révision du PDF](offline-mobile-form-submission/part-three.md)
    + [Déployer sur votre système](offline-mobile-form-submission/part-four.md)
 + Requête sur les données envoyées{#querying-submitted-data}
    + [Présentation](querying-submitted-data/introduction.md)
@@ -198,10 +198,11 @@ ht-degree: 4%
    + [Utilisation du service PDFG dans AEM Forms](document-services/using-pdfg-in-aem-forms.md)
    + [Utilisation d’Output et du service Forms dans AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Génération de plusieurs pdf à partir d’un fichier de données](document-services/generate-multi-record-pdf.md)
-   + [Générer un fichier PDF lors de l’envoi d’un formulaire pour périphériques mobiles](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Générer un fichier PDF interactif à partir d’un formulaire pour périphériques mobiles](document-services/render-interactive-form-using-api.md)
+   + [Générer un PDF lors de l’envoi du formulaire mobile](document-services/generate-pdf-from-mobile-form-submission-article.md)
+   + [Générer un PDF interactif à partir d’un formulaire pour périphériques mobiles](document-services/render-interactive-form-using-api.md)
+   + [Générer un document d’enregistrement interactif à partir d’un formulaire adaptatif](document-services/generate-interactive-dor.md)
    + [Configuration des informations d’identification Reader Extensions](document-services/configuring-reader-extension-osgi.md)
-   + [Application des droits d’utilisation au format PDF sur le rendu XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
+   + [Application des droits d’utilisation au PDF sur le rendu XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [Application des droits d’utilisation au PDF téléchargé](document-services/apply-reader-extension-rights-to-pdf.md)
    + [Certification de documents](document-services/certifying-documents-aem-forms-tutorial.md)
    + [Assemblage de pièces jointes de formulaire](document-services/assemble-form-attachments.md)
@@ -265,7 +266,7 @@ ht-degree: 4%
    + [PDFG : Procédure de vérification et d’installation des bibliothèques 32 bits et de leurs dépendances](troubleshooting/steps-to-check-and-install-32-bit-libraries-and-their-dependencies.md)
    + [PDFG : Procédure de vérification de l’autorisation des dossiers sur le serveur Windows 2016](troubleshooting/steps-to-check-folder-permission-on-windows-server-2016.md)
    + [PDFG : Procédure d’activation de la trace sur unix](troubleshooting/steps-to-enable-strace-on-unix-setup.md)
-   + [PDFG : Étapes d’installation des redistribuables Microsoft Visual C++ 32 bits requis](troubleshooting/steps-to-install-required-32bit-microsoft-vc-redistributables.md)
+   + [PDFG : Procédure d’installation des redistribuables Microsoft Visual C++ 32 bits requis](troubleshooting/steps-to-install-required-32bit-microsoft-vc-redistributables.md)
    + [PDFG : Procédure d’exécution et d’interprétation de la sortie de l’outil System Readiness](troubleshooting/steps-to-run-and-interpret-output-of-system-readiness-tool.md)
    + [PDFG : Procédure de résolution des problèmes spécifiques à Acrobat](troubleshooting/steps-to-troubleshoot-acrobat-specific-issues.md)
    + [PDFG : Procédure de dépannage des problèmes HtmltoPDF sous Windows](troubleshooting/steps-to-troubleshoot-htmltopdf-issues-on-windows.md)
@@ -284,8 +285,8 @@ ht-degree: 4%
    + [Workbench : Comment ajuster les paramètres de mémoire de Workbench](troubleshooting/how-to-tweak-workbench-memory-parameters.md)
    + [Workbench : Comment ajuster les paramètres de performances de Workbench](troubleshooting/how-to-tweak-workbench-performance-parameters.md)
    + [Designer : Dépendance de Designer sur le redistribuable C++](troubleshooting/dependency-of-vc-on-designer.md)
-   + [Designer : Activation de l’aperçu HTML](troubleshooting/how-to-enable-html-preview.md)
-   + [Designer : Activation de PDF Preview](troubleshooting/how-to-enable-pdf-preview.md)
+   + [Designer : Comment activer l’aperçu du HTML](troubleshooting/how-to-enable-html-preview.md)
+   + [Designer : Comment activer l’aperçu du PDF](troubleshooting/how-to-enable-pdf-preview.md)
    + [Designer : Installation des correctifs de Designer](troubleshooting/how-to-install-designer-patches.md)
    + [JEE Foundation : Comment modifier la valeur de l’entropie](troubleshooting/how-to-change-the-value-of-entropy.md)
    + [JEE Foundation : Comment modifier le délai d’expiration des transactions d’un service dans AEM Forms JEE](troubleshooting/how-to-change-transaction-timeout-of-any-service-in-aem-forms-jee.md)
@@ -302,7 +303,7 @@ ht-degree: 4%
    + [Général : Comment capturer les vidages de threads d’une JVM sur un serveur unix](troubleshooting/how-to-capture-thread-dumps-of-a-jvm-on-a-unix-server.md)
    + [Général : Comment capturer les vidages de threads d’une JVM sur un serveur Windows](troubleshooting/how-to-capture-thread-dumps-of-a-jvm-on-a-windows-server.md)
    + [Général : Comment générer un certificat auto-signé](troubleshooting/how-to-generate-a-self-signed-certificate.md)
-   + [Général : Comment effectuer un appel de service Web à partir d’un formulaire HTML5](troubleshooting/how-to-make-web-service-call-from-html5-form.md)
+   + [Général : Comment effectuer un appel de service Web à partir du formulaire HTML5](troubleshooting/how-to-make-web-service-call-from-html5-form.md)
    + [Général : Procédure d’activation de la journalisation du débogage pour n’importe quelle classe dans AEM Forms OSGI](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-aem-forms-osgi.md)
    + [Général : Procédure d’activation de la journalisation du débogage pour toute classe dans JBOSS Application Server](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-jboss-application-server.md)
    + [Général : Procédure d’activation de la journalisation du débogage pour n’importe quelle classe du serveur d’applications WebSphere](troubleshooting/steps-to-enable-debug-logging-for-any-classes-in-websphere-application-server.md)
