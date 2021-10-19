@@ -6,10 +6,11 @@ feature: Forms Service
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 72a9edb3edc73cf14f13bb53355a37e707ed4c79
+kt: 9226
+source-git-commit: 2ed78bb8b122acbe69e98d63caee1115615d568f
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 0%
+source-wordcount: '357'
+ht-degree: 1%
 
 ---
 
@@ -20,18 +21,21 @@ Un cas d’utilisation courant consiste à télécharger un document d’enregis
 
 Pour réaliser ce cas pratique, procédez comme suit :
 
-## Générer des exemples de données pour le xdp
+## Générer des exemples de données pour le XDP
 
-Ouvrez le fichier XDP dans AEM Forms Designer.
-Cliquez sur Fichier | Propriétés du formulaire | Aperçu Cliquez sur Générer l’aperçu des données Cliquez sur Générer Fournissez un nom de fichier significatif tel que &quot;form-data.xml&quot;
+* Ouvrez le fichier XDP dans AEM Forms Designer.
+* Cliquez sur Fichier | Propriétés du formulaire | Aperçu
+* Cliquez sur Générer les données d’aperçu
+* Cliquez sur Générer
+* Fournissez un nom de fichier significatif tel que &quot;form-data.xml&quot;.
 
 ## Générer un fichier XSD à partir des données xml
 
-Vous pouvez utiliser n’importe quel outil en ligne gratuit pour [générer xsd](https://www.freeformatter.com/xsd-generator.html) des données xml générées à l’étape précédente.
+Vous pouvez utiliser n’importe quel outil en ligne gratuit pour [générer XSD](https://www.freeformatter.com/xsd-generator.html) des données xml générées à l’étape précédente.
 
-## Créer un adaptatif
+## Créer un formulaire adaptatif
 
-Créez un formulaire adaptatif basé sur le xsd de l’étape précédente. Associez le formulaire pour utiliser la bibliothèque cliente &quot;irs&quot;. Cette bibliothèque cliente dispose du code pour effectuer un appel POST vers la servlet qui renvoie le PDF à l’application qui l’appelle. Le code suivant est déclenché lorsque la variable _PDF de téléchargement_ est cliqué
+Créez un formulaire adaptatif basé sur le schéma XSD de l’étape précédente. Associez le formulaire pour utiliser la bibliothèque cliente &quot;irs&quot;. Cette bibliothèque cliente dispose du code pour effectuer un appel POST vers la servlet qui renvoie le PDF à l’application qui l’appelle. Le code suivant est déclenché lorsque la variable _PDF de téléchargement_ est cliqué
 
 ```javascript
 $(document).ready(function() {
@@ -72,7 +76,7 @@ $(document).ready(function() {
 
 ## Création d’un servlet personnalisé
 
-Créez un servlet personnalisé qui fusionnera les données avec le modèle xdp et renverra le pdf. Le code permettant d’y parvenir est répertorié ci-dessous. Le servlet personnalisé fait partie de la variable [Groupe AEMFormsDocumentServices.core-1.0-SNAPSHOT](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)).
+Créez un servlet personnalisé qui fusionnera les données avec le modèle XDP et renverra le pdf. Le code permettant d’y parvenir est répertorié ci-dessous. Le servlet personnalisé fait partie de la variable [Groupe AEMFormsDocumentServices.core-1.0-SNAPSHOT](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
 
 ```java
 package com.aemformssamples.documentservices.core.servlets;
@@ -191,13 +195,16 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 Dans l’exemple de code, le nom du modèle (f8918-r14e_redo-barcode_3 2.xdp) est codé en dur. Vous pouvez facilement transmettre le nom du modèle au servlet pour rendre ce code générique afin qu’il fonctionne par rapport à tous les modèles.
 
 
+## Déployer l’exemple sur votre serveur
+
 Pour le tester sur votre serveur local, procédez comme suit :
+
 1. [Télécharger et installer le bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 1. Ajoutez l’entrée suivante dans le service Apache Sling User Mapper du service DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 1. [Télécharger et installer le lot Document Services personnalisé](/hep/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Il dispose du servlet pour fusionner les données avec le modèle XDP et diffuser le pdf en continu.
 1. [Importation de la bibliothèque cliente](assets/irs.zip)
 1. [Importation du formulaire adaptatif](assets/f8918complete.zip)
-! [Importation du modèle et du schéma XDP](assets/xdp-template-and-xsd.zip)
+1. [Importation du modèle et du schéma XDP](assets/xdp-template-and-xsd.zip)
 1. [Aperçu du formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
 1. Remplir quelques champs de formulaire
 1. Cliquez sur Télécharger le PDF pour obtenir le PDF.
