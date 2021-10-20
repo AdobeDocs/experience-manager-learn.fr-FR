@@ -2,7 +2,7 @@
 title: Série d’experts Adobe Experience Manager as a Cloud Service
 description: Apprenez-en plus sur Adobe Experience Manager (AEM) as a Cloud Service de la part des ingénieurs experts qui l’ont créé et des services professionnels qui l’ont livré.
 sub-product: sites, cloud-manager, assets
-source-git-commit: 1e52e29051e219c4cd5ea83e2325fdae62ff833a
+source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 2%
@@ -207,7 +207,7 @@ Découvrez comment déboguer et dépanner AEM as a Cloud Service et le SDK AEM d
       <img alt="Dépannage AEM as a Cloud Service" src="./assets/experts-series/troubleshooting.png"/>
       </a>
       <div>
-         <a href="/migration/moving-to-aem-as-a-cloud-service/troubleshooting.md" 
+         <a href="./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md" 
          target="_aem-experts-series-video"><strong>Dépannage AEM as a Cloud Service</strong></a>
          <br/><em>avec Kunwar Saluja, l'architecte de Cloud</em>
       </div>
