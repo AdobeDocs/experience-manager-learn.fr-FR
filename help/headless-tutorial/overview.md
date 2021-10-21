@@ -1,17 +1,17 @@
 ---
 title: Tutoriels AEM sans affichage
 description: Ensemble de tutoriels sur l’utilisation d’Adobe Experience Manager as a Headless CMS.
-feature: Fragments de contenu, API
-topic: Sans affichage, gestion de contenu
+feature: Content Fragments, APIs
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
+source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 5%
+source-wordcount: '527'
+ht-degree: 7%
 
 ---
-
 
 # Tutoriels AEM sans affichage
 
@@ -19,7 +19,7 @@ Adobe Experience Manager (AEM) dispose de plusieurs options pour définir des po
 
 >[!TIP]
 >
->Cette collection de tutoriels est conçue pour ceux qui préfèrent **apprendre en faisant**. Si vous préférez apprendre des concepts de base, consultez le [Parcours de développement AEM sans affichage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html). Cet ensemble de tutoriels et de parcours se complètent.
+>Cette collection de tutoriels est conçue pour ceux qui préfèrent **apprendre en faisant**. Si vous préférez les concepts d’apprentissage, consultez la [AEM Parcours développeur sans tête](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html?lang=fr). Cet ensemble de tutoriels et de parcours se complètent.
 
 ## Tutorials par API
 
@@ -67,9 +67,57 @@ Adobe Experience Manager (AEM) dispose de plusieurs options pour définir des po
 </tr>
 </table>
 
+## Exemples d’applications
+
+Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Téléchargez et installez ces exemples terminés pour commencer immédiatement.
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html">
+      <img alt="Exemple iOS" src="./assets/ios-example.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/ios-swiftui-app.html">
+    <strong>Exemple iOS SwiftUI</strong>
+    </a>
+    </div>
+    <p>
+    <em>Une application iOS optimisée par les API GraphQL d’AEM.</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
+    <img alt="Exemple Android" src="./assets/android-example.png" />
+    </a>
+    <div>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
+    <strong>Exemple Android</strong>
+    </a>
+    </div>
+    <p>
+    <em>Application Android optimisée par les API GraphQL AEM.</em>
+    </p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html">
+      <img alt="Exemple React" src="./assets/react-example.png" />
+    </a>
+     <div>
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/react-app.html">
+        <strong>Exemple React</strong>
+      </a>
+    </div>
+    <p>
+    <em>Application React optimisée par les API GraphQL d’AEM.</em>
+    <p>
+  </td>
+</tr>
+</table>
+
 ## Tutorials par structure
 
-Parcourez les tutoriels suivants en fonction de la technologie utilisée. Découvrez comment AEM peut aller au-delà d’un simple cas d’utilisation sans tête, avec des options de création en contexte et de gestion de l’expérience.
+Parcourez les tutoriels suivants en fonction de la technologie utilisée. Learn how AEM can go beyond a pure headless use case, with options for in-context authoring and experience management.
 
 <table>
 <tr>
@@ -146,7 +194,7 @@ Parcourez les tutoriels suivants en fonction de la technologie utilisée. Décou
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
-        <strong>Node.js - Authentification</strong>
+        <strong>Node.js - Authentication</strong>
       </a>
     </div>
     <p>

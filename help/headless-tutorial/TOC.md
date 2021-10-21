@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 9c1649247c65a1fa777b7574d1ab6ab49d0f722b
+source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 21%
+source-wordcount: '186'
+ht-degree: 22%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 21%
       + [1 - Principes de base de la modélisation](./graphql/video-series/modeling-basics.md)
       + [2 - Modélisation avancée](./graphql/video-series/advanced-modeling.md)
       + [3 - Création de requêtes GraphQL](./graphql/video-series/creating-graphql-queries.md)
-      + [4 - Variations de fragments de contenu](./graphql/video-series/content-fragment-variations.md)
+      + [4 - Content Fragment Variations](./graphql/video-series/content-fragment-variations.md)
       + [5 - Points de terminaison GraphQL](./graphql/video-series/graphql-endpoints.md)
       + [6 - Architecture de création et de publication](./graphql/video-series/author-publish-architecture.md)
       + [7 - Requêtes persistantes GraphQL](./graphql/video-series/graphql-persisted-queries.md)
@@ -35,10 +35,11 @@ ht-degree: 21%
       + [4 - Exploration des API GraphQL](./graphql/multi-step/explore-graphql-api.md)
       + [5 - Requête depuis une application externe](./graphql/multi-step/graphql-and-external-app.md)
       + [6 - Modélisation avancée des données à l’aide des références de fragments](./graphql/multi-step/fragment-references.md)
-      + [7 - Déploiement en production](./graphql/multi-step/production-deployment.md)
+      + [7 - Production deployment](./graphql/multi-step/production-deployment.md)
    + Exemples {#example-apps}
       + [React](./graphql/example-apps/react-app.md)
       + [iOS SwiftUI](./graphql/example-apps/ios-swiftui-app.md)
+      + [Android](./graphql/example-apps/android-app.md)
 + Éditeur de SPA{#spa-editor}
    + React{#react}
       + [Présentation](./spa-editor/react/overview.md)
@@ -59,11 +60,11 @@ ht-degree: 21%
    + SPA distante{#remote-spa}
       + [Présentation](./spa-editor/remote-spa/overview.md)
       + [Configuration rapide](./spa-editor/remote-spa/quick-setup.md)
-      + [1 - Configuration d’AEM](./spa-editor/remote-spa/aem-configure.md)
+      + [1 - Configure AEM](./spa-editor/remote-spa/aem-configure.md)
       + [2 - Bootstrap le SPA](./spa-editor/remote-spa/spa-bootstrap.md)
       + [3 - Composants fixes](./spa-editor/remote-spa/spa-fixed-component.md)
       + [4 - Composants de conteneur](./spa-editor/remote-spa/spa-container-component.md)
-      + [5 - Itinéraires dynamiques](./spa-editor/remote-spa/spa-dynamic-routes.md)
+      + [5 - Dynamic Routes](./spa-editor/remote-spa/spa-dynamic-routes.md)
 + Authentification basée sur les jetons {#authentication}
    + [Présentation](./authentication/overview.md)
    + [1 - Jeton d’accès au développement local](./authentication/local-development-access-token.md)
@@ -75,5 +76,5 @@ ht-degree: 21%
    + [3 - Création de fragments de contenu d’événement](./content-services/chapter-3.md)
    + [4 - Définition des modèles Content Services](./content-services/chapter-4.md)
    + [5 - Création de pages Content Services](./content-services/chapter-5.md)
-   + [6 - Exposition du contenu sur la publication AEM pour diffusion](./content-services/chapter-6.md)
+   + [6 - Exposing the Content on AEM Publish for Delivery](./content-services/chapter-6.md)
    + [7 - Consommation AEM Content Services à partir d’une application mobile](./content-services/chapter-7.md)
