@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 9006
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,11 @@ Inclure l’entrée appropriée dans le fichier filter.xml du projet ui.content
 <filter root="/content/dam/formsanddocuments-fdm/registrations" mode="replace"/>
 ```
 
-Désormais, lorsque vous créez et déployez votre projet, le modèle de données de formulaire basé sur la configuration des services cloud disponible dans votre instance cloud est appliqué au projet.
 
->!![NOTE]
-Lorsque vous poussez cette configuration de services cloud vers votre instance cloud, vous devez mettre à jour manuellement la clé Azure à l’aide de l’interface utilisateur AEM. Toutes les valeurs chiffrées doivent être mises à jour dans les instances cloud à l’aide de l’interface utilisateur.
+>[!NOTE]
+
+>Désormais, lorsque vous créez et déployez votre projet, le modèle de données de formulaire basé sur la configuration des services cloud disponible dans votre instance cloud est appliqué au projet.
+
 
 
 

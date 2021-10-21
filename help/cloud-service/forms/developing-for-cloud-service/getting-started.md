@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 8842
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+source-git-commit: d38da94bd4164163a16899b565c90b159194580a
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '231'
 ht-degree: 2%
 
 ---
@@ -20,8 +20,8 @@ ht-degree: 2%
 
 Ce tutoriel vous guide tout au long des étapes nécessaires à la création d’un projet AEM Forms, à la synchronisation du projet AEM Forms avec votre instance d’AEM locale à l’aide de l’outil IntelliJ et repo. Vous apprendrez également comment ajouter votre projet au référentiel git local et envoyer le référentiel git local vers le référentiel cloud manager.
 
-Créez la structure de dossiers suivante sur votre lecteur c
-**c:\cloudmanager\adoberepo**
+
+
 
 Ce tutoriel fera référence à cette structure de dossiers à l’avenir.
 
@@ -32,9 +32,9 @@ Ce tutoriel fera référence à cette structure de dossiers à l’avenir.
 
 * Créez un dossier appelé **cloudmanager**(vous pouvez lui donner n’importe quel nom) dans votre lecteur c
 * Ouvrez l’invite de commande et accédez à **c:\cloudmanager**
-* Copiez et collez le contenu du fichier texte (assets/creating-maven-project.txt) dans la fenêtre de l’invite de commande. Vous devrez peut-être modifier DarchetypeVersion=30 en fonction de la variable [dernière version](https://github.com/adobe/aem-project-archetype/releases). La dernière version était 30 au moment de la rédaction de cet article.
+* Copiez et collez le contenu de la [fichier texte](assets/creating-maven-project.txt) dans la fenêtre d’invite de commande. Vous devrez peut-être modifier DarchetypeVersion=30 en fonction de la variable [dernière version](https://github.com/adobe/aem-project-archetype/releases). La dernière version était 30 au moment de la rédaction de cet article.
+* Exécutez la commande en appuyant sur la touche Entrée. Si tout se passe correctement, un message de réussite de création s’affiche.
 
-* Exécutez la commande en appuyant sur la touche Entrée.  Si tout se passe correctement, un message de réussite de création s’affiche.
 
 
 
