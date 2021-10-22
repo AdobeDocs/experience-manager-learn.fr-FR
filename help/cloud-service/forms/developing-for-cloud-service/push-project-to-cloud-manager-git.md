@@ -8,9 +8,9 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8851
-source-git-commit: d38da94bd4164163a16899b565c90b159194580a
+source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,10 @@ git commit -m "My First AF"
 Cela valide les fichiers à la branche principale de notre référentiel git local.
 
 ```
-git push -f bankingapp master:"My First AF"
+git push -f bankingapp master:"MyFirstAF"
 ```
 
-Dans la commande ci-dessus, nous poussons notre branche principale de notre référentiel git local vers la branche My First AF du référentiel cloud manager identifiée par le nom convivial de l’application bancaire.
+Dans la commande ci-dessus, nous mettons en oeuvre la branche principale de notre référentiel git local vers la branche MyFirstAF du référentiel de gestion de cloud identifié par le nom convivial de l’application bancaire.
 
 
 
