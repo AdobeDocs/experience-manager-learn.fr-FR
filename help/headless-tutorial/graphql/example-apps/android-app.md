@@ -9,17 +9,19 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
+source-git-commit: 9b1e38c8d4a0301c124c6f1607a9e4362b0e9cd1
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 3%
+source-wordcount: '734'
+ht-degree: 5%
 
 ---
 
 
-# Application Android SwiftUI
+# Application Android
 
 Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Une application Android est fournie. Elle indique comment interroger le contenu à l’aide des API GraphQL d’AEM. Le [AEM client sans affichage pour Java](https://github.com/adobe/aem-headless-client-java) est utilisé pour exécuter les requêtes GraphQL et mapper les données aux objets Java pour alimenter l’application.
+
+Afficher la variable [code source sur GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app)
 
 >[!VIDEO](https://video.tv.adobe.com/v/338093/?quality=12&learn=on)
 
@@ -37,7 +39,7 @@ L’application est conçue pour se connecter à une AEM **Publier** environneme
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html)
 * [AEM 6.5.10+](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/new-features-latest-service-pack.html?lang=fr)
 
-Nous vous recommandons [déploiement du site de référence WKND dans un environnement Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#coding-against-the-right-aem-version). Une configuration locale à l’aide de [le SDK AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) ou [Fichier jar QuickStart AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=en#install-local-aem-instances) peut également être utilisé.
+Nous vous recommandons [déploiement du site de référence WKND dans un environnement Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#coding-against-the-right-aem-version). Une configuration locale à l’aide de [le SDK AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr) ou [Fichier jar QuickStart AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr?lang=en#install-local-aem-instances) peut également être utilisé.
 
 ## Mode d’emploi
 
@@ -79,13 +81,13 @@ builder.tokenAuth(token)
 
 ## Le code
 
-Below is a brief summary of the important files and code used to power the application. Le code complet se trouve sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app).
+Vous trouverez ci-dessous un bref résumé des fichiers et du code importants utilisés pour alimenter l’application. Le code complet se trouve sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/android-app).
 
-### Fetching Content
+### Récupération de contenu
 
 Le [AEM client sans affichage pour Java](https://github.com/adobe/aem-headless-client-java) est utilisé par l’application pour exécuter la requête GraphQL sur AEM et charger le contenu aventure dans l’application.
 
-`AdventuresLoader.java` is the file that fetches and loads the initial list of Adventures on the home screen of the application. Il utilise [Requêtes persistantes](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/graphql-persisted-queries.html) qui [préconditionné](https://github.com/adobe/aem-guides-wknd/tree/master/ui.content/src/main/content/jcr_root/conf/wknd/settings/graphql/persistentQueries/adventures-all/_jcr_content) avec le site de référence WKND. Le point de terminaison est `/wknd/adventures-all`. `AEMHeadlessClientBuilder` instantiates a new instance based on the api endpoint set in `config.properties`.
+`AdventuresLoader.java` est le fichier qui récupère et charge la liste initiale des aventures sur l’écran d’accueil de l’application. Il utilise [Requêtes persistantes](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/graphql-persisted-queries.html) qui [préconditionné](https://github.com/adobe/aem-guides-wknd/tree/master/ui.content/src/main/content/jcr_root/conf/wknd/settings/graphql/persistentQueries/adventures-all/_jcr_content) avec le site de référence WKND. Le point de terminaison est `/wknd/adventures-all`. `AEMHeadlessClientBuilder` instancie une nouvelle instance en fonction du point de terminaison api défini dans `config.properties`.
 
 ```java
 //AdventuresLoader.java
@@ -105,7 +107,7 @@ AEMHeadlessClient client = builder.build();
 GraphQlResponse response = client.runPersistedQuery(PERSISTED_QUERY_NAME);
 ```
 
-`AdventureLoader.java` est le fichier qui récupère et charge le contenu Adventure pour chacune des vues de détail. Une fois de plus, `AEMHeadlessClient` est utilisé pour exécuter la requête. A regular graphQL query is executed based on the path to the Adventure content fragment. The query is maintained in a separate file named [adventureByPath.query](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/android-app/app/src/main/assets/adventureByPath.query)
+`AdventureLoader.java` est le fichier qui récupère et charge le contenu Adventure pour chacune des vues de détail. Une fois de plus, `AEMHeadlessClient` est utilisé pour exécuter la requête. Une requête graphQL régulière est exécutée en fonction du chemin d’accès au fragment de contenu Adventure. La requête est conservée dans un fichier distinct nommé [AdventureByPath.query](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/android-app/app/src/main/assets/adventureByPath.query)
 
 ```java
 AEMHeadlessClientBuilder builder = AEMHeadlessClient.builder().endpoint(config.getContentApiEndpoint());
