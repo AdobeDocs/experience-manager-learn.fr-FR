@@ -5,9 +5,9 @@ user-guide-title: Vidéos et tutoriels d’AEM Forms
 user-guide-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés.
 breadcrumb-title: Tutoriels sur AEM Forms
 index: y
-source-git-commit: 280ea1ec8fc5da644320753958361488872359cc
+source-git-commit: 96b78ff5056bd9c2be39fb2cf21b4f92863af089
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1618'
 ht-degree: 4%
 
 ---
@@ -50,7 +50,6 @@ ht-degree: 4%
    + [Service de préremplissage dans Forms adaptatif](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [Envoi personnalisé dans Forms adaptatif](adaptive-forms/custom-submit-aem-forms-article.md)
    + [Captcha dans Forms adaptatif](adaptive-forms/forms-captcha-feature-video-use.md)
-   + [Quelques conseils utiles sur l’interface utilisateur](adaptive-forms/forms-ui-tips.md)
    + [Incorporation d’un formulaire adaptatif dans une page web](adaptive-forms/embed-af-web-page.md)
    + [Création d’un tableau de chaînes](adaptive-forms/converting-comma-seperated-string-to-array.md)
    + [Utilisation de la valeur définie dans XML dans le processus OSGI](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
@@ -96,6 +95,9 @@ ht-degree: 4%
    + [Configuration du modèle de données de formulaire](prefill-fdm-db/configuring-form-data-model.md)
    + [Obtenir le paramètre de requête](prefill-fdm-db/get-request-parameter.md)
    + [Créer un formulaire adaptatif](prefill-fdm-db/create-adaptive-form.md)
++ Conseils et astuces concernant l’interface utilisateur{#ui-tips-and-tricks}
+   + [Activer/désactiver le texte du champ de mot de passe](ui-tips-tricks/toggle-password.md)
+   + [Boutons de la barre d’outils Espace](ui-tips-tricks/toolbar-buttons.md)
 + Personnalisation de la boîte de réception{#inbox-customization}
    + [Présentation](inbox-customization/introduction.md)
    + [Ajouter une colonne personnalisée](inbox-customization/add-married-column.md)
