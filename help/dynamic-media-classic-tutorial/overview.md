@@ -1,24 +1,24 @@
 ---
-title: Bienvenue dans le tutoriel des bonnes pratiques de Dynamic Media Classic
-description: Dynamic Media Classic est le hub autour duquel les clients créent, créent et diffusent du contenu multimédia. Ce tutoriel sur les bonnes pratiques a été créé pour aider les utilisateurs actuels et nouveaux de Dynamic Media Classic à mieux comprendre ce qu’ils peuvent faire avec cette puissante solution de médias riches d’Adobe. Dans cette partie du tutoriel, vous découvrirez ce qu’est Dynamic Media Classic et examinerez brièvement ses principales fonctionnalités et son interface utilisateur.
+title: Tutoriel sur les bonnes pratiques Dynamic Media Classic
+description: Dynamic Media Classic est le noeud autour duquel les clients créent, créent et diffusent du contenu multimédia. Ce tutoriel sur les bonnes pratiques a été créé pour aider les utilisateurs actuels et nouveaux de Dynamic Media Classic à mieux comprendre ce qu’ils peuvent faire avec cette puissante solution de médias riches d’Adobe. Dans cette partie du tutoriel, vous découvrirez ce qu’est Dynamic Media Classic et examinerez brièvement ses principales fonctionnalités et son interface utilisateur.
 sub-product: dynamic-media
 doc-type: tutorial
 topics: best-practices, development, authoring, configuring
 audience: all
 activity: develop, use
 feature: Dynamic Media Classic
-topic: Gestion de contenu
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
 
-
-# Bienvenue dans le tutoriel des bonnes pratiques de Dynamic Media Classic
+# Tutoriel sur les bonnes pratiques Dynamic Media Classic
 
 L’objectif de ce guide est d’aider les utilisateurs actuels et nouveaux de Dynamic Media Classic à mieux comprendre ce qu’ils peuvent faire avec leur puissante solution de médias riches d’Adobe. Nous allons le faire en :
 
@@ -33,7 +33,7 @@ Nous espérons que ce guide vous fournira les informations dont vous avez besoin
 
 ## Présentation de Dynamic Media Classic
 
-Dynamic Media Classic est le hub autour duquel les clients créent, créent et diffusent du contenu multimédia. Dynamic Media Classic est un environnement intégré de gestion, de publication et de service des médias riches. Les médias riches peuvent être diffusés sur tous les canaux marketing et de vente, y compris le web, le matériel d’impression, les campagnes par e-mail, les applications web, les ordinateurs de bureau et les appareils.
+Dynamic Media Classic est le noeud autour duquel les clients créent, créent et diffusent du contenu multimédia. Dynamic Media Classic est un environnement intégré de gestion, de publication et de service des médias riches. Les médias riches peuvent être diffusés sur tous les canaux marketing et de vente, y compris le web, le matériel d’impression, les campagnes par e-mail, les applications web, les ordinateurs de bureau et les appareils.
 
 La diffusion d’images est peut-être la fonction la plus utilisée de Dynamic Media Classic. En fait, la plupart des clients utilisent Dynamic Media Classic pour diffuser toutes les images de leurs sites web, y compris les images pour le zoom ou les médias riches. Cependant, il peut également être utilisé à de nombreuses autres fins, notamment pour la diffusion de vidéos et l’utilisation de l’IA pour optimiser les images diffusées.
 
@@ -45,7 +45,7 @@ Dans ce guide, nous aborderons les principales fonctionnalités suivantes de Dyn
 - **Vidéo.** Chargez les vidéos finales, publiez-les et téléchargez-les progressivement dans des visionneuses vidéo configurables.
 - **Imagerie dynamique.** Technologie qui tire parti des fonctionnalités d’Adobe Sensei AI et qui fonctionne avec les &quot;paramètres d’image prédéfinis&quot; existants pour améliorer les performances de diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
 
-Pour découvrir d’autres fonctionnalités de la solution, consultez la [Documentation pour Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
+Pour découvrir d’autres fonctionnalités de la solution, rendez-vous sur la page [Documentation pour Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html).
 
 ## Interface utilisateur de Dynamic Media Classic
 
@@ -67,12 +67,12 @@ _Interface utilisateur de Dynamic Media Classic_
 
 >[!IMPORTANT]
 >
->À côté de chaque ID de ressource se trouve le commutateur **Marquer pour publication**. Lorsque le bouton bascule est activé (vert), il indique que la ressource est marquée pour publication.
+>À côté de chaque ID de ressource se trouve la variable **Marquer pour publication** changer. Lorsque le bouton bascule est activé (vert), il indique que la ressource est marquée pour publication.
 
 ![image](assets/overview/overview-mark-for-publish.png)
 
 >[!TIP]
 >
->Cochez la case **Publier après le téléchargement** dans la boîte de dialogue Télécharger pour publier automatiquement les ressources lors du téléchargement.
+>Sélectionnez la **Publier après le téléchargement** dans la boîte de dialogue Télécharger pour publier automatiquement les ressources lors du téléchargement.
 
-En savoir plus sur [la navigation dans l’interface utilisateur de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).
+En savoir plus sur [Navigation dans l’interface utilisateur de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/navigation-basics.html).

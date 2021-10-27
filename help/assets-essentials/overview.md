@@ -1,22 +1,22 @@
 ---
 title: Vidéos sur AEM Assets Essentials
 description: Ensemble de vidéos pour Adobe Experience Manager Assets Essentials
-sub-product: ressources
-source-git-commit: 21d6df065fe61614d3bbd68ce2f20d3dc23a9cef
+sub-product: assets
+exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 3%
+source-wordcount: '131'
+ht-degree: 12%
 
 ---
 
-
-# Présentation
+# Vidéos Assets Essentials
 
 ![Assets Essentials](./assets/overview/hero.png)
 
 Experience Manager Assets Essentials offre une interface utilisateur rationalisée pour une gestion et une collaboration légères des ressources.
 
-Consultez nos vidéos sur l’utilisation d’Assets Essentials pour gérer vos ressources, ainsi que sur la manière dont il peut être intégré à Adobe Parcours Orchestration !
+Consultez ces vidéos sur l’utilisation d’Assets Essentials pour gérer vos ressources et sur la manière dont il peut être intégré à Adobe Parcours Orchestration.
 
 ## En savoir plus sur Assets Essentials
 
@@ -48,7 +48,7 @@ Consultez nos vidéos sur l’utilisation d’Assets Essentials pour gérer vos 
    <p>
 </td>
 <td>
-   <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html">
+   <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=fr">
    <img alt="Adobe Journey Optimizer" src="./assets/overview/adobe-journey-optimizer.png" />
    </a>
    <div>

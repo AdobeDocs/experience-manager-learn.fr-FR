@@ -1,21 +1,19 @@
 ---
 title: Vidéos et tutoriels d’AEM Foundation
-seo-title: Vidéos et tutoriels d’AEM Foundation
-description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation. '
-seo-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation
+description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation.
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 24%
+source-wordcount: '251'
+ht-degree: 20%
 
 ---
 
+# Vidéos et tutoriels d’AEM Foundation {#overview}
 
-# Présentation {#overview}
-
-Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponibles pour les utilisateurs d’AEM Sites, [!DNL Assets] et [!DNL Forms].
+Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponibles pour les utilisateurs d’AEM Sites, d’Assets et de Forms.
 
 ## Nouveautés
 
@@ -27,7 +25,7 @@ Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponib
    *Cloud Manager pour AEM permet une gestion, une inspection et un libre-service aisés des environnements AEM.*
 
 * **[Configuration de clés publiques et privées à utiliser avec Adobe I/O (tutoriel)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *Découvrez comment les clés et les KeyStore sont générés à l’aide  [!DNL openssl] de qui fonctionnent avec AEM et Adobe I/O.*
+   *Découvrez comment les clés et les keystores sont générés à l’aide de [!DNL openssl] qui fonctionnent avec AEM et Adobe I/O.*
 
 * **[Utilisation du pipeline CI/CD de Cloud Manager (vidéo)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Découvrez comment utiliser le pipeline CI/CD de Cloud Manager pour garantir des déploiements sûrs et cohérents.*
@@ -46,7 +44,7 @@ Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponib
     </a>
     </div>
     <p>
-    <em>Cloud Manager pour AEM offre une solution simple mais robuste qui permet une gestion, une inspection et un libre-service aisés des environnements AEM.</em>
+    <em>Cloud Manager pour AEM offre une solution simple, mais robuste, qui permet une gestion, une inspection et un libre-service aisés des environnements AEM.</em>
     <p>
   </td>
    <td>
@@ -81,7 +79,7 @@ Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponib
 ## Ressources supplémentaires
 
 * [Experience League - Explorer AEM](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager)
-* [Tutoriels d’AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutoriels sur AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Vidéos et tutoriels d’AEM Sites](/help/sites/overview.md)
 * [Vidéos et tutoriels d’AEM Assets](/help/assets/overview.md)
 * [Vidéos et tutoriels d’AEM Forms](/help/forms/overview.md)

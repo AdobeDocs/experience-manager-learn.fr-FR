@@ -1,19 +1,19 @@
 ---
-title: Tutoriels AEM sans affichage
+title: AEM Tutorials sans tête
 description: Ensemble de tutoriels sur l’utilisation d’Adobe Experience Manager as a Headless CMS.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 0ab14016c27d3b91252f3cbf5f97550d89d4a0c9
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 7%
 
 ---
 
-# Tutoriels AEM sans affichage
+# AEM Tutorials sans tête
 
 Adobe Experience Manager (AEM) dispose de plusieurs options pour définir des points de terminaison sans affichage et diffuser son contenu au format JSON. Utilisez des tutoriels pratiques pour découvrir comment utiliser les différentes options et choisir ce qui vous convient.
 
@@ -92,11 +92,11 @@ Les exemples d’applications sont un excellent moyen d’explorer les fonctionn
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/example-apps/android-app.html">
-    <strong>Exemple Android</strong>
+    <strong>Exemple Android™</strong>
     </a>
     </div>
     <p>
-    <em>Application Android optimisée par les API GraphQL AEM.</em>
+    <em>Application Android™ optimisée par les API GraphQL AEM.</em>
     </p>
   </td>
   <td>
@@ -117,7 +117,7 @@ Les exemples d’applications sont un excellent moyen d’explorer les fonctionn
 
 ## Tutorials par structure
 
-Parcourez les tutoriels suivants en fonction de la technologie utilisée. Learn how AEM can go beyond a pure headless use case, with options for in-context authoring and experience management.
+Parcourez les tutoriels suivants en fonction de la technologie utilisée. Découvrez comment AEM peut aller au-delà d’un simple cas d’utilisation sans tête, avec des options de création en contexte et de gestion de l’expérience.
 
 <table>
 <tr>
@@ -185,7 +185,7 @@ Parcourez les tutoriels suivants en fonction de la technologie utilisée. Learn 
     </a>
     </div>
     <p>
-    <em>Utilisez Content Services et REST pour alimenter une application mobile Android.</em>
+    <em>Utilisez Content Services et REST pour alimenter une application mobile Android™.</em>
     </p>
   </td>
   <td>
@@ -194,7 +194,7 @@ Parcourez les tutoriels suivants en fonction de la technologie utilisée. Learn 
     </a>
      <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html">
-        <strong>Node.js - Authentication</strong>
+        <strong>Node.js - Authentification</strong>
       </a>
     </div>
     <p>

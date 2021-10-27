@@ -1,17 +1,17 @@
 ---
-title: Tutoriels sur Adobe Experience Manager as Cloud Service
-description: Ensemble de tutoriels pour Adobe Experience Manager (AEM) en tant que Cloud Service
-sub-product: sites, cloud manager, foundation, ressources
+title: Vidéos et Tutorials Adobe Experience Manager en tant que Cloud Service
+description: Ensemble de tutoriels pour Adobe Experience Manager (AEM) as a Cloud Service
+sub-product: sites, cloud-manager, foundation, assets
 kt: 3289
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
+source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 17%
+source-wordcount: '276'
+ht-degree: 14%
 
 ---
 
-
-# Présentation {#overview}
+# AEM en tant que vidéos et Tutorials Cloud Service {#overview}
 
 Adobe Experience Manager (AEM) est désormais disponible en tant que Cloud Service. AEM as a Cloud Service présente la nouvelle génération de la gamme de produits Experience Manager, en s’appuyant sur les investissements et les innovations passés, en préservant et en étendant tous les cas d’utilisation et fonctionnalités.
 
@@ -21,7 +21,7 @@ Adobe Experience Manager (AEM) est désormais disponible en tant que Cloud Se
 
 * **[Authentification basée sur les jetons (tutoriel)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)**
 
-   *Découvrez comment utiliser l’authentification par jeton pour interagir avec AEM en tant que Cloud Service sur HTTP*
+   *Découvrez comment utiliser l’authentification par jeton pour interagir avec AEM as a Cloud Service sur HTTP*
 
 * **[GraphQL sans tête (tutoriel)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html)**
 
@@ -33,7 +33,7 @@ Adobe Experience Manager (AEM) est désormais disponible en tant que Cloud Se
 
 * **[asset compute metadata Worker (tutoriel)](./asset-compute/advanced/metadata.md)**
 
-   *Découvrez comment réécrire des métadonnées de ressource dans AEM à partir de collaborateurs d’un Asset compute*
+   *Découvrez comment réécrire des métadonnées de ressource dans AEM à partir d’un Asset compute Worker*
 
 * **[Extensibilité des microservices Asset compute (tutoriel)](./asset-compute/overview.md)**
 
@@ -65,7 +65,7 @@ Adobe Experience Manager (AEM) est désormais disponible en tant que Cloud Se
          </a>
       </div>
       <p>
-         <em>Préparez votre machine de développement locale à AEM en tant que développement de Cloud Service !</em>
+         <em>Préparez votre machine de développement locale à AEM développement as a Cloud Service !</em>
       <p>
    </td>   
    <td>
@@ -78,7 +78,7 @@ Adobe Experience Manager (AEM) est désormais disponible en tant que Cloud Se
          </a>
       </div>
       <p>
-         <em>Explorez les outils utilisés pour déboguer votre application sur le démarrage rapide local du SDK AEM as a Cloud Service.</em>
+         <em>Explorez les outils utilisés pour déboguer votre application sur le démarrage rapide local AEM SDK as a Cloud Service.</em>
       <p>
    </td>
 </table>
@@ -86,4 +86,4 @@ Adobe Experience Manager (AEM) est désormais disponible en tant que Cloud Se
 ## Ressources supplémentaires
 
 * [Experience League - Explorer Adobe Experience Manager](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager)
-* [Documentation d’Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=fr)
+* [Documentation Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=fr)
