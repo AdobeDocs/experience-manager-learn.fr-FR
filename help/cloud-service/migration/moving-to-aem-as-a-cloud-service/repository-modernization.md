@@ -9,7 +9,7 @@ level: Experienced
 kt: 8630
 thumbnail: 336958.jpeg
 exl-id: e9bd9035-1f2d-4a34-a581-9c1ec2c7bc04
-source-git-commit: 53a314c5cd9eaad5a26a0992c750c159f8e3697f
+source-git-commit: 1ddf6154d50a341d9a0fd4234392c37ced878a73
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 9%
@@ -24,7 +24,7 @@ Découvrez la modernisation du référentiel, le contenu modifiable et non modif
 
 ## Outil Repository Modernizer
 
-![Convertisseur du Dispatcher](./assets/repository-modernizer.png)
+![Repository Modernizer](./assets/repository-modernizer.png)
 
 Dans le cadre de la refactorisation de votre base de code, utilisez le [Outil Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=fr) pour restructurer une base de code 6.x en une structure plus moderne.
 
