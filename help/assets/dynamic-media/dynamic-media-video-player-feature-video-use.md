@@ -1,23 +1,23 @@
 ---
 title: Utilisation du lecteur vidéo dans AEM Dynamic Media
-description: AEM lecteur vidéo Dynamic Media utilisait le runtime Flash pour prendre en charge la diffusion en continu de vidéo adaptative sur les clients de bureau et les navigateurs sont devenus plus agressifs à l’aide de la diffusion en continu de contenu Flash. Avec l’introduction de HLS (protocole de diffusion vidéo HTTP Live Streaming d’Apple), le contenu peut désormais être diffusé en continu sans recourir à Flash.
+description: AEM lecteur vidéo Dynamic Media utilisait le runtime Flash pour prendre en charge la diffusion en continu de vidéo adaptative sur les clients de bureau et les navigateurs sont devenus plus agressifs à l’aide de la diffusion en continu de contenu Flash. Avec l’introduction de HLS (protocole de diffusion vidéo HTTP Live Streaming Apple), le contenu peut désormais être diffusé en continu sans recourir au flash.
 sub-product: dynamic-media
-feature: Profils vidéo
+feature: Video Profiles
 version: 6.3, 6.4, 6.5
-topic: Gestion de contenu
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
+source-git-commit: 68c49f526146e2f2ba626dc2126fb96d4ae09854
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 34%
+source-wordcount: '223'
+ht-degree: 32%
 
 ---
 
-
 # Utilisation du lecteur vidéo dans AEM Dynamic Media{#using-the-video-player-in-aem-dynamic-media}
 
-AEM lecteur vidéo Dynamic Media utilisait le runtime Flash pour prendre en charge la diffusion en continu de vidéo adaptative sur les clients de bureau et les navigateurs sont devenus plus agressifs à l’aide de la diffusion en continu de contenu Flash. Avec l’introduction de HLS (protocole de diffusion vidéo HTTP Live Streaming d’Apple), le contenu peut désormais être diffusé en continu sans recourir à Flash.
+AEM lecteur vidéo Dynamic Media utilisait le runtime Flash pour prendre en charge la diffusion en continu de vidéo adaptative sur les clients de bureau et les navigateurs sont devenus plus agressifs à l’aide de la diffusion en continu de contenu Flash. Avec l’introduction de HLS (protocole de diffusion vidéo HTTP Live Streaming Apple), le contenu peut désormais être diffusé en continu sans recourir au flash.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
 
@@ -26,6 +26,9 @@ AEM lecteur vidéo Dynamic Media utilisait le runtime Flash pour prendre en char
 >[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
 
 La prise en charge des navigateurs HLS est la suivante : pour les navigateurs non pris en charge, nous abandonnons la diffusion vidéo progressive.
+
+>!![NOTE]
+Dynamic Media Hybrid NE prendra PAS en charge Internet Explorer 11 après mai 2022.
 
 <table> 
  <thead> 
