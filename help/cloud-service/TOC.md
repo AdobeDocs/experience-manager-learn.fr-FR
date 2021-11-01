@@ -1,25 +1,25 @@
 ---
-user-guide-title: Tutoriels sur Adobe Experience Manager as a Cloud Service
+user-guide-title: Tutoriels d’Adobe Experience Manager as a Cloud Service
 user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a Cloud Service.
 breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
+source-git-commit: e8b3bcaeee40b4bfd4f967f929ad664e8d168cb0
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 33%
+source-wordcount: '604'
+ht-degree: 35%
 
 ---
 
 
-# Tutoriels sur Adobe Experience Manager as a Cloud Service {#cloud-service}
+# Tutoriels d’Adobe Experience Manager as a Cloud Service {#cloud-service}
 
 + [Présentation](./overview.md)
 + Présentation d’AEM as a Cloud Service{#introduction}
    + [Qu&#39;est-ce AEM as a Cloud Service ?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Evolution](./introduction/evolution.md)
    + [Architecture](./introduction/architecture.md)
-   + [Cloud Manager ](./introduction/cloud-manager.md)
+   + [Cloud Manager](./introduction/cloud-manager.md)
 + Technologie sous-jacente {#underlying-technology}
    + [Architecture AEM](./underlying-technology/introduction-architecture.md)
    + [OSGi](./underlying-technology/introduction-osgi.md)
@@ -59,6 +59,7 @@ ht-degree: 33%
       + [Migration de la configuration de Dispatcher](./developing/basics/dispatcher-configuration.md)
    + Projets AEM{#aem-projects}
       + [Projet AEM Maven](./developing/projects/maven-project-structure.md)
+      + [Nettoyage d’un projet Maven AEM](./developing/projects/remove-samples.md)
    + Services OSGi{#osgi-services}
       + [Concepts de base du service OSGi](./developing/osgi-services/basics.md)
       + [Cycle de vie des composants OSGi](./developing/osgi-services/lifecycle.md)
@@ -95,7 +96,7 @@ ht-degree: 33%
    + Transition vers AEM as a Cloud Service {#moving-to-aem-as-a-cloud-service}
       + [Présentation](./migration/moving-to-aem-as-a-cloud-service/introduction.md)
       + [Intégration ](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
-      + [Cloud Manager ](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
+      + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
       + [BPA et CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
       + [Outils de modernisation d’AEM](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
       + [Modernisation du référentiel](./migration/moving-to-aem-as-a-cloud-service/repository-modernization.md)
@@ -110,7 +111,7 @@ ht-degree: 33%
          + [Présentation](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [Inscription numérique](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
          + [Communications](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
-   + Cloud Accelerated Manager {#cloud-acceleration-manager}
+   + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + [Présentation](./migration/cloud-acceleration-manager/introduction.md)
       + [Readiness and Best Practice Analyzer](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
       + [Phase de mise en oeuvre](./migration/cloud-acceleration-manager/implementation-phase.md)
@@ -201,7 +202,7 @@ ht-degree: 33%
 + Tutorials en plusieurs étapes{#multi-step-tutorials}
    + [Développement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)
-   + [Éditeur SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
-   + [Éditeur SPA (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html)
+   + [Éditeur SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=fr)
+   + [Éditeur SPA (Angular)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html?lang=fr)
    + [AEM Sites et Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
    + [Authentification basée sur les jetons](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html)
