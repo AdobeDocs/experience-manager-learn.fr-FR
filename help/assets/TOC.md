@@ -1,10 +1,10 @@
 ---
 user-guide-title: Vidéos et tutoriels d’AEM Assets
 user-guide-description: Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Assets.
-breadcrumb-title: Tutoriels d’AEM Assets
-feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
+breadcrumb-title: Tutoriels sur AEM Assets
+feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 519047931bd4cbfb5dd2dd6f2b7b2871512992c5
+source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 33%
@@ -47,7 +47,7 @@ ht-degree: 33%
    + [Amplification de recherche](./search-and-discovery/search-boost.md)
 
 + Fonctionnalités avancées{#advanced}
-   + [Sortie PDF Annotations](./advanced/customizing-annotations-pdf-output.md)
+   + [Sortie du PDF d’annotations](./advanced/customizing-annotations-pdf-output.md)
    + [Statistiques sur les ressources](./advanced/asset-insights-launch-tutorial.md)
    + [Rapports sur les ressources](./advanced/asset-reports.md)
    + [Autorisations (CUG)](./advanced/closed-user-groups.md)
@@ -76,9 +76,9 @@ ht-degree: 33%
    + [Ressources connectées](./sharing/connected-assets.md)
 
 
-+ Intégration aux workflows créatifs{#creative-workflows}
++ Intégration aux processus créatifs{#creative-workflows}
    + [Application de bureau AEM](./creative-workflows/aem-desktop-app.md)
-   + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
+   + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
 + Adobe Asset Link{#adobe-asset-link}

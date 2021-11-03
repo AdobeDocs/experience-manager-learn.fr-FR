@@ -2,14 +2,13 @@
 sub-product: sites
 topics: development
 version: Cloud Service
-doc-type: tutorial
 activity: develop
 audience: developer
 user-guide-title: Prise en main du développement AEM Sites – Tutoriel WKND
 user-guide-description: 'Un tutoriel en plusieurs parties pour les développeurs qui découvrent AEM. Implémentation d’un site AEM pour une marque de style de vie fictive : WKND.'
 breadcrumb-title: Tutoriels d’AEM Sites WKND
 index: y
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 56%
