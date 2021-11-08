@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 9c1649247c65a1fa777b7574d1ab6ab49d0f722b
+source-git-commit: 846400cd3ac4eb1b04ece055dfcbbd677f11e88e
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1819'
 ht-degree: 3%
 
 ---
@@ -52,7 +52,7 @@ Ce tutoriel utilise la méthode [AEM SDK as a Cloud Service](https://experiencel
    >
    > La fonctionnalité GraphQL est activée par défaut uniquement sur le SDK AEM à partir de la version 2021-02-04 ou ultérieure.
 
-1. Unzip the download and copy the Quickstart jar (`aem-sdk-quickstart-XXX.jar`) to a dedicated folder, i.e `~/aem-sdk/author`.
+1. Décompressez le téléchargement et copiez le fichier JAR de démarrage rapide (`aem-sdk-quickstart-XXX.jar`) à un dossier dédié, c’est-à-dire `~/aem-sdk/author`.
 1. Renommez le fichier jar en `aem-author-p4502.jar`.
 
    Le `author` name indique que le fichier Quickstart jar démarrera en mode création. Le `p4502` indique que le serveur de démarrage rapide s’exécutera sur le port 4502.
@@ -64,9 +64,9 @@ Ce tutoriel utilise la méthode [AEM SDK as a Cloud Service](https://experiencel
    $ java -jar aem-author-p4502.jar
    ```
 
-1. Indiquez un mot de passe administrateur en tant que `admin`. Tout mot de passe administrateur est acceptable, mais il est recommandé d’utiliser la valeur par défaut pour le développement local afin de réduire la nécessité de reconfigurer.
+1. Indiquez un mot de passe administrateur en tant que `admin`. Tout mot de passe administrateur est acceptable, mais il est recommandé d’utiliser `admin` pour le développement local afin de réduire la nécessité de reconfigurer.
 1. Au bout de quelques minutes, l’installation de l’instance AEM se termine et une nouvelle fenêtre de navigateur doit s’ouvrir à l’adresse [http://localhost:4502](http://localhost:4502).
-1. Connexion avec le nom d’utilisateur `admin` et mot de passe `admin`.
+1. Connexion avec le nom d’utilisateur `admin` et le mot de passe sélectionné lors AEM démarrage initial (généralement `admin`).
 
 ## Installation d’exemples de contenu et de points d’entrée GraphQL {#wknd-site-content-endpoints}
 
@@ -74,15 +74,15 @@ Exemple de contenu à partir du **Site de référence WKND** sera installé pour
 
 Le site de référence WKND comprend les configurations nécessaires pour exposer une [Point d’entrée GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=en#graphql-aem-endpoint). Dans une mise en oeuvre concrète, suivez les étapes documentées pour [inclure les points d’entrée GraphQL ;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html?lang=en#graphql-aem-endpoint) dans votre projet client. A [CORS](#cors-config) a également été compilé dans le cadre du site WKND. Une configuration CORS est nécessaire pour accorder l’accès à une application externe. Pour plus d’informations sur [CORS](#cors-config) Vous trouverez ci-dessous.
 
-1. Download the latest compiled AEM Package for WKND Site: [aem-guides-wknd.all-x.x.x.zip](https://github.com/adobe/aem-guides-wknd/releases/latest).
+1. Téléchargez le dernier AEM compilé pour le site WKND : [aem-guides-wknd.all-x.x.x.zip](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
    >[!NOTE]
    >
    > Veillez à télécharger la version standard compatible avec AEM as a Cloud Service et **not** la valeur `classic` version.
 
-1. From the **AEM Start** menu navigate to **Tools** > **Deployment** > **Packages**.
+1. Dans la **AEM** Accédez à **Outils** > **Déploiement** > **Packages**.
 
-   ![Navigate to Packages](assets/setup/navigate-to-packages.png)
+   ![Accédez aux packages](assets/setup/navigate-to-packages.png)
 
 1. Cliquez sur **Télécharger le module** et sélectionnez le package WKND téléchargé à l’étape précédente. Cliquez sur **Installer** pour installer le package.
 
@@ -93,19 +93,19 @@ Le site de référence WKND comprend les configurations nécessaires pour expose
 
    Il s’agit d’un dossier de toutes les ressources qui composent les différentes aventures promues par la marque WKND. Cela inclut les types de médias traditionnels tels que les images et les vidéos, ainsi que les médias spécifiques aux AEM comme **Fragments de contenu**.
 
-1. Click into the **Downhill Skiing Wyoming** folder and click the **Downhill Skiing Wyoming Content Fragment** card:
+1. Cliquez dans le **Ski descendant Wyoming** et cliquez sur le bouton **Fragment de contenu Wyoming sur une piste de ski descendante** carte :
 
-   ![Downwhill Skiing Content fragment Card](assets/setup/downhill-skiing-cntent-fragment.png)
+   ![Téléchargement de la carte de fragment de contenu ignorée](assets/setup/downhill-skiing-cntent-fragment.png)
 
-1. The Content Fragment Editor UI will open for the Downhill Skiing Wyoming adventure.
+1. L’interface utilisateur de l’éditeur de fragments de contenu s’ouvre pour l’aventure du ski descendant au Wyoming.
 
-   ![Downhill Skiing Content Fragment](assets/setup/down-hillskiing-fragment.png)
+   ![Fragment de contenu de ski descendant](assets/setup/down-hillskiing-fragment.png)
 
    Observez que divers champs comme **Titre**, **Description**, et **Activité** définissez le fragment.
 
    **Fragments de contenu** sont l’une des façons de gérer le contenu dans AEM. Le fragment de contenu est un contenu réutilisable, indépendant de la présentation, composé d’éléments de données structurés tels que du texte, du texte enrichi, des dates ou des références à d’autres fragments de contenu. Les fragments de contenu seront détaillés plus loin dans le tutoriel.
 
-1. Click **Cancel** to close the fragment. Feel free to navigate into some of the other folders and explore the other Adventure content.
+1. Cliquez sur **Annuler** pour fermer le fragment. N’hésitez pas à naviguer dans certains des autres dossiers et à explorer les autres contenus Adventure.
 
 >[!NOTE]
 >
@@ -194,8 +194,8 @@ Maintenant que l’application React est en cours d’exécution, effectuez une 
 1. Dans la **AEM** Accédez à **Outils** > **Déploiement** > **Packages**.
 1. Cliquez sur **Télécharger le module** et sélectionnez le package téléchargé à l’étape précédente. Cliquez sur **Installer** pour installer le package.
 
-   ![Install GraphiQL Package](assets/explore-graphql-api/install-graphiql-package.png)
-1. Navigate to the GraphiQL IDE at [http://localhost:4502/content/graphiql.html](http://localhost:4502/content/graphiql.html) and begin exploring the GraphQL APIs.
+   ![Installation du package GraphiQL](assets/explore-graphql-api/install-graphiql-package.png)
+1. Accédez à l’IDE GraphiQL à l’adresse [http://localhost:4502/content/graphiql.html](http://localhost:4502/content/graphiql.html) et commencez à explorer les API GraphQL.
 
    >[!NOTE]
    >
@@ -213,13 +213,13 @@ Dans le chapitre suivant, [Définition de modèles de fragment de contenu](conte
 
 AEM, étant sécurisé par défaut, bloque les demandes d’origine croisée, empêchant les applications non autorisées de se connecter à son contenu et de le faire apparaître.
 
-To allow this tutorial&#39;s React app to interact with AEM&#39;s GraphQL API endpoints, a cross-origin resource sharing configuration has been defined in the WKND Site reference project.
+Pour permettre à l’application React de ce tutoriel d’interagir avec les points d’entrée de l’API GraphQL AEM, une configuration de partage de ressources d’origine croisée a été définie dans le projet de référence du site WKND.
 
 ![Configuration du partage des ressources cross-origin](assets/setup/cross-origin-resource-sharing-configuration.png)
 
-To view the configuration deployed:
+Pour afficher la configuration déployée :
 
-1. Navigate to AEM SDK&#39;s Web Console at [http://localhost:4502/system/console](http://localhost:4502/system/console).
+1. Accédez à la console web du SDK AEM à l’adresse [http://localhost:4502/system/console](http://localhost:4502/system/console).
 
    >[!NOTE]
    >
