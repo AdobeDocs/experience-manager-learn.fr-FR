@@ -16,9 +16,9 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '624'
 ht-degree: 6%
 
 ---
@@ -41,7 +41,7 @@ Il existe deux approches de base pour démarrer un projet AEM Sites.
 
 [Démarrez le tutoriel avec AEM Project Archetype.](./project-archetype/overview.md)
 
-**AEM Modèles de site** - Approche à code faible pour générer un site AEM à l’aide d’un modèle de site prédéfini. Utilisez les composants et les modèles prêts à l’emploi pour mettre rapidement un site en service. Utilisez un workflow de thème pour appliquer des styles et des personnalisations spécifiques à la marque avec uniquement des feuilles CSS et JavaScript. Recommandé pour les nouveaux projets et développeurs. Actuellement disponible uniquement pour AEM as a Cloud Service.
+**AEM Modèles de site** - Également appelé Création rapide de site, approche à code faible pour générer un site AEM à l’aide d’un modèle de site prédéfini. Utilisez les composants et les modèles prêts à l’emploi pour mettre rapidement un site en service. Utilisez un workflow de thème pour appliquer des styles et des personnalisations spécifiques à la marque avec uniquement des feuilles CSS et JavaScript. Recommandé pour les nouveaux projets et développeurs. Disponible uniquement pour AEM as a Cloud Service.
 
 [Démarrez le tutoriel à l’aide d’un modèle de site](./site-template/create-site.md)
 
