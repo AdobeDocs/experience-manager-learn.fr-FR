@@ -5,9 +5,9 @@ user-guide-title: Vidéos et tutoriels d’AEM Forms
 user-guide-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés.
 breadcrumb-title: Tutoriels sur AEM Forms
 index: y
-source-git-commit: 84a0c78f89f78e161b460574b5927fc4aba2fe3a
+source-git-commit: bbb2c352e8a4297496f248bbbc86252ac7118999
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1628'
 ht-degree: 4%
 
 ---
@@ -99,6 +99,7 @@ ht-degree: 4%
    + [Activer/désactiver le texte du champ de mot de passe](ui-tips-tricks/toggle-password.md)
    + [Boutons de la barre d’outils Espace](ui-tips-tricks/toolbar-buttons.md)
    + [Navigation dans les onglets avec les panneaux imbriqués](ui-tips-tricks/nested-panels.md)
+   + [Ajout d’icônes aux onglets de navigation](ui-tips-tricks/active-complete.md)
 + Personnalisation de la boîte de réception{#inbox-customization}
    + [Présentation](inbox-customization/introduction.md)
    + [Ajouter une colonne personnalisée](inbox-customization/add-married-column.md)
@@ -295,7 +296,7 @@ ht-degree: 4%
    + [JEE Foundation : Comment modifier la valeur de l’entropie](troubleshooting/how-to-change-the-value-of-entropy.md)
    + [JEE Foundation : Comment modifier le délai d’expiration des transactions d’un service dans AEM Forms JEE](troubleshooting/how-to-change-transaction-timeout-of-any-service-in-aem-forms-jee.md)
    + [JEE Foundation : Comment purger les enregistrements de processus de la table Job Manager](troubleshooting/how-to-purge-process-records-from-the-job-manager-table.md)
-   + [JEE Foundation : Exécution de la purge des processus à partir de la ligne de commande](troubleshooting/how-to-run-process-purge-from-command-line.md)
+   + [JEE Foundation : Exécution de la purge de processus à partir de la ligne de commande](troubleshooting/how-to-run-process-purge-from-command-line.md)
    + [JEE Foundation : Étapes à suivre manuellement pour démarrer](troubleshooting/steps-to-bootstrap-manually.md)
    + [JEE Foundation : Procédure de capture des journaux de débogage pour les formulaires mobiles](troubleshooting/steps-to-capture-debug-logs-for-mobile-forms.md)
    + [JEE Foundation : Procédure d’atténuation de ForcedDisconnectException](troubleshooting/steps-to-mitigate-forceddisconnectexception.md)
