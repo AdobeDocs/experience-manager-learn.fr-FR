@@ -1,30 +1,28 @@
 ---
 title: Création de votre première communication interactive pour le canal d’impression
-seo-title: Création de votre première communication interactive pour le canal d’impression
+seo-title: Creating your first interactive communication for the print channel
 description: Les communications interactives sont une nouveauté dans AEM Forms 6.4. Ce document décrit les étapes nécessaires à la création d’une communication interactive pour le canal d’impression.
-seo-description: Les communications interactives sont une nouveauté dans AEM Forms 6.4. Ce document décrit les étapes nécessaires à la création d’une communication interactive pour le canal d’impression.
-feature: Communication interactive
+seo-description: Interactive Communications is new to AEM Forms 6.4. This document will walk you through the steps needed to create an interactive communication for the print channel.
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 1949aeff-ae56-4abd-8e63-23c2fb4859f2
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 3%
+source-wordcount: '167'
+ht-degree: 2%
 
 ---
-
 
 # Création de votre première communication interactive pour le canal d’impression
 
 Les communications interactives sont une nouveauté dans AEM Forms 6.4. Ce document décrit les étapes nécessaires à la création d’une communication interactive pour le canal d’impression.
-
-Consultez la page [Exemples AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0) pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
 
 ## Prérequis {#prerequistes}
 
@@ -39,4 +37,3 @@ Lorsque vous aurez terminé ce tutoriel, vous aurez appris ce qui suit :
 * Créer des fragments de document
 * Configuration de tableaux et de tableaux
 * Utiliser des dossiers de contrôle pour générer des documents en mode batch
-

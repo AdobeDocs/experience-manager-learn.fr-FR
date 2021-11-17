@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9335
-source-git-commit: 458f1c2df6472be2b4704bb68eafb92b58f48a97
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,6 @@ ht-degree: 0%
 # Onglets de navigation avec plusieurs panneaux
 
 Lorsque votre formulaire comporte des onglets de navigation de gauche et que l’un des onglets comporte plusieurs panneaux, vous pouvez masquer le titre des panneaux enfants tout en pouvant naviguer entre les onglets et les panneaux enfants de ces onglets.
-
-[Cette fonctionnalité est en ligne sous cette forme.](https://forms.enablementadobe.com/content/forms/af/testnav1.html)
-
-
-
 
 ## Créer un formulaire adaptatif
 

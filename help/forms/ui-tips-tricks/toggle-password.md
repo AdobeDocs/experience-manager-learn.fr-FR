@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9270
-source-git-commit: 96b78ff5056bd9c2be39fb2cf21b4f92863af089
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '167'
 ht-degree: 8%
 
 ---
@@ -20,9 +20,7 @@ ht-degree: 8%
 Un cas pratique courant consiste à permettre à l’utilisateur de basculer vers la visibilité du texte saisi dans le champ du mot de passe.
 Pour réaliser ce cas d’utilisation, j’ai utilisé l’icône en forme d’oeil du [Bibliothèque Font Awesome](https://fontawesome.com/). Les fichiers CSS requis et eye.svg sont inclus dans la bibliothèque cliente créée pour cette démonstration.
 
-## Exemple en direct
 
-[Cette fonctionnalité peut être testée ici](https://forms.enablementadobe.com/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
 
 ## Exemple de code
 

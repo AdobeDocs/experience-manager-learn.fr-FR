@@ -1,37 +1,34 @@
 ---
 title: Génération de plusieurs pdf à partir d’un fichier de données
 description: OutputService fournit plusieurs méthodes pour créer des documents à l’aide d’une conception de formulaire et de données à fusionner avec la conception de formulaire. Découvrez comment générer plusieurs pdf à partir d’un fichier XML volumineux contenant plusieurs enregistrements individuels.
-feature: Service Output
+feature: Output Service
 version: 6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 58582acd-cabb-4e28-9fd3-598d3cbac43c
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 2%
+source-wordcount: '506'
+ht-degree: 1%
 
 ---
 
-
-# Générer un ensemble de documents PDF à partir d’un fichier de données XML
+# Génération d’un ensemble de documents de PDF à partir d’un fichier de données XML
 
 OutputService fournit plusieurs méthodes pour créer des documents à l’aide d’une conception de formulaire et de données à fusionner avec la conception de formulaire. L’article suivant explique le cas pratique pour générer plusieurs pdf à partir d’un fichier XML volumineux contenant plusieurs enregistrements individuels.
 Voici la capture d’écran d’un fichier xml contenant plusieurs enregistrements.
 
 ![multi-enregistrement-xml](assets/multi-record-xml.PNG)
 
-Le fichier XML de données comporte 2 enregistrements. Chaque enregistrement est représenté par l’élément form1 . Ce fichier XML est transmis à la [méthode OutputPDFOutputBatch](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) nous obtenons la liste des documents pdf (un par enregistrement).
-La signature de la méthode generatePDFOutputBatch utilise les paramètres suivants :
+Le fichier XML de données comporte 2 enregistrements. Chaque enregistrement est représenté par l’élément form1 . Ce fichier XML est transmis à OutputService. [méthode generatePDFOutputBatch](https://helpx.adobe.com/aem-forms/6/javadocs/com/adobe/fd/output/api/OutputService.html) Nous obtenons la liste des documents pdf (un par enregistrement) La signature de la méthode generatePDFOutputBatch utilise les paramètres suivants :
 
 * templates : carte contenant le modèle, identifié par une clé
 * data - Mappage contenant des documents de données XML, identifiés par clé
 * pdfOutputOptions - options de configuration de la génération pdf
 * batchOptions - options de configuration du lot
 
->[!NOTE]
->
->Ce cas pratique est disponible en tant qu’exemple en direct sur ce [site Web](https://forms.enablementadobe.com/content/samples/samples.html?query=0).
+
 
 ## Détails du cas d’utilisation{#use-case-details}
 
@@ -127,10 +124,10 @@ public Document generateMultiplePdfs(HashMap < String, String > templateMap, Has
 
 Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-dessous :
 
-* [Téléchargez et extrayez le contenu du fichier zip dans votre système de fichiers](assets/mult-records-template-and-xml-file.zip). Ce fichier zip contient le modèle et le fichier de données xml.
+* [Télécharger et extraire le contenu du fichier zip vers votre système de fichiers](assets/mult-records-template-and-xml-file.zip).Ce fichier zip contient le modèle et le fichier de données XML.
 * [Pointez votre navigateur vers la console web Felix.](http://localhost:4502/system/console/bundles)
-* [Déployez le bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar) DevelopingWithServiceUser.
-* [Déployer le lot AEM FormsDocumentServices personnalisé](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).Groupe personnalisé qui génère les fichiers PDF à l’aide de l’API OutputService
+* [Déployer le bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
+* [Déploiement du lot AEM FormsDocumentServices personnalisé](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)Groupe .Custom qui génère les fichiers PDF à l’aide de l’API OutputService
 * [Pointez votre navigateur sur le gestionnaire de modules.](http://localhost:4502/crx/packmgr/index.jsp)
 * [Importez et installez le package](assets/generate-multiple-pdf-from-xml.zip). Ce package contient une page html qui permet de déposer le modèle et les fichiers de données.
 * [Pointez votre navigateur sur MultiRecords.html.](http://localhost:4502/content/DocumentServices/Multirecord.html?)
@@ -139,4 +136,3 @@ Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-
 
 >[!NOTE]
 >Il existe plusieurs façons de déclencher cette fonctionnalité. Dans cet exemple, nous avons utilisé une interface web pour déposer le modèle et le fichier de données pour démontrer la fonctionnalité.
-

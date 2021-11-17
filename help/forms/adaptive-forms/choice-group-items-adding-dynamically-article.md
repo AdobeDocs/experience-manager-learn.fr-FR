@@ -6,31 +6,28 @@ version: 6.5
 topic: Development
 role: User
 level: Beginner
-source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
+exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
+source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '489'
 ht-degree: 3%
 
 ---
-
-
 
 # Ajout dynamique d’éléments au composant de groupe de choix
 
 AEM Forms 6.5 offre la possibilité d’ajouter dynamiquement des éléments à un composant de groupe de choix de Forms adaptatif tel que Case à cocher, Bouton radio et Liste d’images.
 
-[Cette fonctionnalité est disponible en direct sur le serveur](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) Samples. Recherchez la carte d’éléments de case à cocher dynamique et cliquez sur &quot;Essayer&quot;.
-
 
 Vous pouvez ajouter des éléments à l’aide de l’éditeur visuel ainsi que de l’éditeur de code en fonction de votre cas d’utilisation.
 
-**À l’aide de l’éditeur visuel :**  vous pouvez renseigner les éléments du groupe de choix à partir des résultats d’un appel de fonction ou d’un appel de service. Par exemple, vous pouvez définir les éléments du groupe de choix en utilisant la réponse d’un appel API REST.
+**À l’aide de l’éditeur visuel :** Vous pouvez renseigner les éléments du groupe de choix à partir des résultats d’un appel de fonction ou d’un appel de service. Par exemple, vous pouvez définir les éléments du groupe de choix en utilisant la réponse d’un appel API REST.
 
 Dans la capture d’écran ci-dessous, nous définissons les options de la période de prêt (années) avec les résultats d’un appel de service appelé getLoanPeriods.
 
 ![Éditeur de règles](assets/ruleeditor.png)
 
-**Utilisation de l’éditeur** de code : Lorsque vous souhaitez définir dynamiquement les éléments du groupe de choix en fonction des valeurs saisies dans le formulaire. Par exemple, le fragment de code suivant définit les éléments de la case à cocher sur les valeurs saisies dans les champs du nom du demandeur et de l’épouse du formulaire adaptatif.
+**Utilisation de l’éditeur de code**: Lorsque vous souhaitez définir dynamiquement les éléments du groupe de choix en fonction des valeurs saisies dans le formulaire. Par exemple, le fragment de code suivant définit les éléments de la case à cocher sur les valeurs saisies dans les champs du nom du demandeur et de l’épouse du formulaire adaptatif.
 
 Dans le fragment de code, nous définissons les éléments de WorkingMembers qui est un composant de case à cocher. Le tableau des éléments est créé dynamiquement en récupérant les valeurs des champs de texte applicantName et épouse des formulaires adaptatifs.
 
