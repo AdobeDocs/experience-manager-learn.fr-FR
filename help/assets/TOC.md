@@ -4,10 +4,10 @@ user-guide-description: Ensemble de vidéos et de tutoriels pour Adobe Experienc
 breadcrumb-title: Tutoriels sur AEM Assets
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: cd54cfbbded4e44f4850f9dac8ab17d179e7d498
+source-git-commit: a5c128d92f4a4625279b6ef76c61f1afb6ed45d5
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 32%
+source-wordcount: '357'
+ht-degree: 33%
 
 ---
 
@@ -82,6 +82,7 @@ ht-degree: 32%
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
 + Adobe Asset Link{#adobe-asset-link}
+   + [Configuration](./adobe-asset-link/setup.md)
    + [Accès à Adobe Asset Link](./adobe-asset-link/launch-adobe-asset-link.md)
    + [Présentation du panneau](./adobe-asset-link/panel-overview.md)
    + [Fichiers et collections](./adobe-asset-link/files-and-collections.md)
