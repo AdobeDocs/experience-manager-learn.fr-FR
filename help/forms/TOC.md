@@ -5,9 +5,9 @@ user-guide-title: Vidéos et tutoriels d’AEM Forms
 user-guide-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés.
 breadcrumb-title: Tutoriels sur AEM Forms
 index: y
-source-git-commit: bbb2c352e8a4297496f248bbbc86252ac7118999
+source-git-commit: 7f9a7951b2d9bb780d5374f17bb289c38b2e2ae7
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1633'
 ht-degree: 4%
 
 ---
@@ -197,6 +197,7 @@ ht-degree: 4%
 
 + Services de document {#document-services}
    + [Types de PDF forms](document-services/pdf-forms-and-documents.md)
+   + [Incorporer le pdf dans le formulaire adaptatif](document-services/embed-pdf-inline.md)
    + [Utilisation du service Assembler dans AEM Forms](document-services/using-assembler-service-in-aem-forms.md)
    + [Utilisation du dossier de contrôle dans AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Utilisation du service Barcode dans AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
