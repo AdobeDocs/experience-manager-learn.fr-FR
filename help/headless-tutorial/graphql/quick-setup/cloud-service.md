@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
-source-git-commit: f13f32de11bda924a2d255678e58e7c982d0d004
+source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1075'
 ht-degree: 2%
 
 ---
@@ -43,13 +43,13 @@ _Arrêt sur image des étapes_
 
 1. Accédez à [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 1. Sélectionnez Cloud Manager . __Programme__ contenant l’environnement as a Cloud Service AEM à utiliser pour cette configuration rapide
-1. Création d’un référentiel Git pour le projet de site WKND
+1. Create a Git repository for the WKND Site project
    1. Sélectionner __Référentiels__ dans la navigation supérieure ;
    1. Sélectionner __Ajouter un référentiel__ dans la barre d’actions supérieure
    1. Nommez le nouveau référentiel Git : `aem-headless-quick-setup`
    1. Sélectionner __Enregistrer__, et attendez que le référentiel Git soit initialisé.
 
-## 2. Transférez l’exemple de projet de site WKND vers le référentiel Git de Cloud Manager.
+## 2. Push sample WKND Site project to Cloud Manager Git Repository
 
 Une fois le référentiel Git de Cloud Manager créé, clonez le code source du projet WKND Site à partir de GitHub et envoyez-le au référentiel Git de Cloud Manager. Cloud Manager permet désormais d’accéder au projet WKND Site et de le déployer dans l’environnement as a Cloud Service AEM.
 
@@ -65,8 +65,8 @@ _Arrêt sur image des étapes_
    ```
 
 1. Ajout du référentiel Git de Cloud Manager en tant que référentiel distant
-   1. Sélectionner __Référentiels__ dans la navigation supérieure ;
-   1. Sélectionner __Accès aux informations sur le référentiel__ à partir de la barre d’actions supérieure
+   1. Select __Repositories__ in the top navigation
+   1. Select __Access Repo Info__ from the top action bar
    1. Exécuter la commande trouvée dans __Ajout d’un élément distant à votre référentiel Git__ à partir de la ligne de commande
 
       ```shell
@@ -74,9 +74,9 @@ _Arrêt sur image des étapes_
       $ git remote add adobe https://git.cloudmanager.adobe.com/<YOUR ADOBE ORGANIZATION>/aem-headless-quick-setup/
       ```
 
-1. Envoyez l’exemple de code source du projet au référentiel Git de Cloud Manager.
+1. Push the sample project&#39;s source code to the Cloud Manager Git repository
 
-   1. Envoyez le code de votre référentiel Git local vers le référentiel Git de Cloud Manager.
+   1. Push the code from your local Git repository to the Cloud Manager Git repository
 
       ```shell
       $ git push adobe master:main
@@ -99,12 +99,12 @@ _Arrêt sur image des étapes_
    1. Sur le __Configuration__ tab
       1. Sélectionner __Pipeline de déploiement__ option
       1. Définissez la variable __Nom du pipeline hors production__ to `Dev Deployment pipeline`
-      1. Sélectionner __Déclencheur de déploiement > Lors des modifications Git__
+      1. Select __Deployment Trigger > On Git Changes__
       1. Sélectionner __Comportement Échecs de mesure importants > Continuer immédiatement__
       1. Sélectionnez __Continuer__
-   1. Sur le __Code source__ tab
-      1. Sélectionner __Code de pile complet__ option
-      1. Sélectionnez la __AEM environnement de développement as a Cloud Service__ de la __Environnements de déploiement éligibles__ zone de sélection
+   1. On the __Source Code__ tab
+      1. Select __Full Stack Code__ option
+      1. Select the __AEM as a Cloud Service development environment__ from the __Eligible Deployment Environments__ select box
       1. Sélectionner `aem-headless-quick-setup` dans le __Référentiel__ zone de sélection
       1. Sélectionner `main` de la __Branche Git__ zone de sélection
       1. Sélectionnez __Enregistrer__
@@ -144,11 +144,11 @@ _Arrêt sur image des étapes_
 
    1. Dans Cloud Manager, sélectionnez __Environnements__ dans la navigation supérieure ;
    1. Sélectionner __Développement__ environnement
-   1. Recherchez la variable __Service de publication (AEM et Dispatcher)__ link __Segments d’environnement__ table
-   1. Copiez l’adresse du lien et utilisez-la comme URI du service de publication as a Cloud Service AEM
+   1. Locate the __Publish Service (AEM &amp; Dispatcher)__ link __Environment Segments__ table
+   1. Copy the link&#39;s address, and use it as the AEM as a Cloud Service Publish service&#39;s URI
 
 1. Dans l’IDE, enregistrez les modifications dans `.env.development`
-1. À partir de la ligne de commande, exécutez l’application React
+1. From the command line, run the React App
 
    ```shell
    $ cd ~/Code/aem-guides-wknd-graphql/react-app
@@ -160,16 +160,16 @@ _Arrêt sur image des étapes_
 
 ## 5. Modifier le contenu dans AEM
 
-Avec l’exemple d’application WKND React se connectant au contenu des API GraphQL AEM et l’utilisant, créez du contenu dans le service Auteur AEM et voyez comment l’expérience de React est mise à jour de concert.
+With the sample WKND React App connecting to and consuming content from the AEM Headless GraphQL APIs, author content in AEM Author service and see how the React App&#39;s experience updates in concert.
 
 _Arrêt sur image des étapes_
 >[!VIDEO](https://video.tv.adobe.com/v/339077/?quality=12&learn=on)
 
-1. Connectez-vous au service Auteur as a Cloud Service AEM
-1. Accédez à __Ressources > Fichiers > WKND > Anglais > Aventures__
+1. Log in to AEM as a Cloud Service Author service
+1. Navigate to __Assets > Files > WKND > English > Adventures__
 1. Ouvrez le __Vélo dans l&#39;Utah du Sud__ Dossier
-1. Sélectionnez la __Vélo dans l&#39;Utah du Sud__ Fragment de contenu, puis sélectionnez __Modifier__ à partir de la barre d’actions supérieure
-1. Mettez à jour certains champs du fragment de contenu, par exemple :
+1. Select the __Cycling Southern Utah__ Content Fragment, and select __Edit__ from the top action bar
+1. Update some of the fields of the Content Fragment, for example:
    + Titre: `Cycling Utah's National Parks`
    + Durée du voyage : `6 Days`
    + Difficulté : `Intermediate`
@@ -193,5 +193,7 @@ _Arrêt sur image des étapes_
 Félicitations ! Vous avez réussi à utiliser AEM sans affichage pour alimenter une application React !
 
 Pour comprendre en détail comment l’application React consomme du contenu d’AEM as a Cloud Service, extrayez le [Tutoriel AEM sans affichage](../multi-step/overview.md). Le tutoriel explique comment les fragments de contenu d’AEM ont été créés et comment cette application React utilise leur contenu au format JSON.
+
+### Étapes suivantes
 
 + [Démarrez le tutoriel AEM sans affichage](../multi-step/overview.md)
