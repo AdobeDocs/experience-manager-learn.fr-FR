@@ -8,13 +8,13 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8851
-source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
+exl-id: e61cea37-b931-49c6-9e5d-899628535480
+source-git-commit: 8d83d01fca3bfc9e6f674f7d73298b42f98a5d46
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 0%
 
 ---
-
 
 # Push AEM project to cloud manager git repo
 
@@ -23,7 +23,7 @@ Nous devons maintenant ajouter ces modifications à notre référentiel git loca
 Ouvrez une invite de commande et accédez à c:\cloudmanager\aem-banking-app Execute the following commands
 
 ```
-git add .**
+git add .
 ```
 
 Les nouveaux fichiers sont alors ajoutés à la branche intermédiaire du référentiel git local.
@@ -39,6 +39,3 @@ git push -f bankingapp master:"MyFirstAF"
 ```
 
 Dans la commande ci-dessus, nous mettons en oeuvre la branche principale de notre référentiel git local vers la branche MyFirstAF du référentiel de gestion de cloud identifié par le nom convivial de l’application bancaire.
-
-
-
