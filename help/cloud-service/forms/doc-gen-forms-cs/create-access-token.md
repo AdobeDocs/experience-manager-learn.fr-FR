@@ -1,15 +1,15 @@
 ---
 title: Création d’un jeton d’accès
-description: Échangez le jeton Web JSON (JWT) avec les API IMS Adobes pour un jeton d’accès AEM.
+description: Échangez le jeton Web JSON (JWT) avec les API Adobe IMS pour un jeton d’accès AEM.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
-feature: Document Services
+feature: Output Service
 topic: Development
 kt: 8185
 thumbnail: 8185.jpg
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 # Exchange JWT pour le jeton d’accès
 
 
-Le jeton JWT créé à l’étape précédente est échangé avec les API IMS d’Adobe contre un jeton d’accès, qui peut ensuite être utilisé pour accéder à AEM en tant que Cloud Service. Pour demander un jeton d’accès, envoyez une demande de POST contenant le JWT, client_id, client_secret au service d’authentification IMS.
+Le jeton JWT créé à l’étape précédente est échangé avec les API Adobe IMS pour un jeton d’accès, qui peut ensuite être utilisé pour accéder à AEM as a Cloud Service. Pour demander un jeton d’accès, envoyez une demande de POST contenant le JWT, client_id, client_secret au service d’authentification IMS.
 
 Le code suivant a été utilisé pour générer l’échange JWT pour le jeton d’accès.
 

@@ -5,13 +5,13 @@ type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
-feature: Document Services
+feature: Output Service
 topic: Development
 kt: 8185
 thumbnail: 332439.jpg
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '138'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 # Effectuer l’appel du POST
 
 
-L’étape suivante consiste à effectuer un appel de POST HTTP vers le point de terminaison avec les paramètres nécessaires. Le modèle et les fichiers de données sont fournis sous forme de fichiers de ressources. Les propriétés du pdf généré sont spécifiées via le paramètre de l’option dans la requête. Les propriétés sont spécifiées dans le fichier de ressource options.json . Depuis, le point de fin dispose d’une authentification basée sur les jetons. Nous transmettons le jeton d’accès dans l’en-tête de la requête.
+L’étape suivante consiste à effectuer un appel de POST HTTP vers le point de terminaison avec les paramètres nécessaires. Le modèle et les fichiers de données sont fournis sous forme de fichiers de ressources. Les propriétés du pdf généré sont spécifiées via le paramètre de l’option dans la requête. La propriété embedFonts est utilisée pour incorporer des polices personnalisées dans le pdf généré.[Suivez cette documentation pour déployer des polices personnalisées sur votre instance cloud Forms.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=en) Les propriétés sont spécifiées dans le fichier de ressource options.json . Depuis, le point de fin dispose d’une authentification basée sur les jetons. Nous transmettons le jeton d’accès dans l’en-tête de la requête.
 
-Le code suivant a été utilisé pour générer l’échange JWT pour le jeton d’accès.
+Le code suivant a été utilisé pour générer le pdf en fusionnant les données avec le modèle .
 
 ```java
 public class DocumentGeneration
@@ -34,7 +34,7 @@ public class DocumentGeneration
                 String accessToken = cu.getAccessToken();
                 httpPost.addHeader("Authorization", "Bearer " + accessToken);
                 ClassLoader classLoader = DocumentGeneration.class.getClassLoader();
-                URL templateFile = classLoader.getResource("templates/address.xdp");
+                URL templateFile = classLoader.getResource("templates/custom_fonts.xdp");
                 File xdpTemplate = new File(templateFile.getPath());
                 URL url = classLoader.getResource("datafiles");
                 System.out.println(url.getPath());
@@ -45,7 +45,7 @@ public class DocumentGeneration
                         builder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
                         builder.addBinaryBody("data", files[i]);
                         builder.addBinaryBody("template", xdpTemplate);
-                        builder.addTextBody("options", GetOptions.getPDFOptions(), ContentType.APPLICATION_JSON);
+                        builder.addBinaryBody("options",GetOptions.getPDFOptions().getBytes(),ContentType.APPLICATION_JSON,"options"
                         try {
                                 HttpEntity entity = builder.build();
                                 httpPost.setEntity(entity);
