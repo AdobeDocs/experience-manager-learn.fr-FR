@@ -13,7 +13,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: 2685f2553349d6f0b48e03f2ed24dcea7ad9ac70
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 3%
@@ -29,7 +29,7 @@ Toutes les activités de journal pour le service d’AEM d’un environnement do
 Les ID de capsule sont fournis dans chaque instruction de journal, ce qui permet de filtrer ou de regrouper les instructions de journal. Les ID de capsule sont au format suivant :
 
 + `cm-p<PROGRAM ID>-e<ENVIRONMENT ID>-aem-<author|publish>-<POD NAME>`
-+ Exemple: `cm-p12345-e56789-aem-author-abcdefabde-98765`
++ Exemple : `cm-p12345-e56789-aem-author-abcdefabde-98765`
 
 ## Fichiers journaux personnalisés
 
@@ -72,7 +72,7 @@ Seul AEM Publish Dispatcher fournit les journaux du serveur web Apache et de Dis
    + Évaluation: `WARN`
    + Production : `ERROR`
 
-## Cloud Manager {#cloud-manager}
+## Cloud Manager{#cloud-manager}
 
 Adobe Cloud Manager permet le téléchargement des journaux par jour, via l’action Télécharger les journaux d’un environnement.
 
@@ -135,7 +135,7 @@ $ aio cloudmanager:tail-logs 12345 author | grep com.example.MySlingModel
 
 ### Téléchargement des logs{#aio-cli-download-logs}
 
-L’interface de ligne de commande d’Adobe I/O permet de télécharger les journaux depuis AEM as a Cloud Service à l’aide de la [download-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerdownload-logs-environmentid-service-name-days)). Cela produit le même résultat final que le téléchargement des journaux à partir de l’interface utilisateur web de Cloud Manager, la différence étant que `download-logs` La commande consolide les journaux par jour, en fonction du nombre de jours demandé.
+L’interface de ligne de commande d’Adobe I/O permet de télécharger les journaux depuis AEM as a Cloud Service à l’aide de la [download-logs](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerdownload-logs-environmentid-service-name-days)). Cela produit le même résultat final que le téléchargement des journaux à partir de l’interface utilisateur web de Cloud Manager, la différence étant que `download-logs` La commande regroupe les journaux par jour, en fonction du nombre de jours demandé.
 
 ```
 $ aio config:set cloudmanager_programid <PROGRAM ID>
@@ -189,7 +189,7 @@ Au lieu de définir des niveaux de journal Java statiques connus pour chaque env
 
 Cela nécessite la mise à jour des configurations OSGi de journalisation pour utiliser les espaces réservés de variable spécifiques à l’environnement. [Valeurs par défaut](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#default-values) pour les niveaux de journal doivent être définis conformément aux [Adobe des recommandations](#log-levels). Par exemple :
 
-`/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
+`/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json`
 
 ```
 {
