@@ -131,18 +131,18 @@ Créez ensuite un modèle contenant des informations sur une personne.
 
 10. Sous **Accepter uniquement la largeur d’image spécifiée**, sélectionnez &quot;Largeur maximale&quot;. Dans le **Max (pixels)** qui s’affiche, saisissez &quot;500&quot;. Sélectionnez les mêmes options pour **Accepter uniquement une hauteur d’image spécifiée**.
 
-   Ces validations garantissent que les images ajoutées ne dépassent pas les valeurs spécifiées. Les règles de validation doivent maintenant se présenter comme suit :
-   ![Règles de validation de référence du contenu](assets/define-content-fragment-models/content-reference-validation.png)
+    Ces validations garantissent que les images ajoutées ne dépassent pas les valeurs spécifiées. Les règles de validation doivent maintenant se présenter comme suit :
+    ![Règles de validation de référence du contenu](assets/define-content-fragment-models/content-reference-validation.png)
 
 11. Ajouter un **Texte multi-lignes** et lui donner un **Libellé du champ** de &quot;Biographie&quot;. Laissez le champ **Type par défaut** comme option par défaut &quot;Texte enrichi&quot;.
 
-   ![Options de biographie](assets/define-content-fragment-models/biography.png)
+    ![Options de biographie](assets/define-content-fragment-models/biography.png)
 
 12. Accédez au **Types de données** puis faites glisser un **Énumération** champ sous &quot;Profile Picture&quot;. Au lieu de la valeur par défaut **Render As** option, sélectionnez **Liste déroulante**. Saisissez une sélection d’options de niveau d’expérience de l’instructeur, telles que Expert, Avancé, Intermédiaire.
 
 13. Faites ensuite glisser un autre **Énumération** sous &quot;Niveau d’expérience de l’instructeur&quot; et cochez les &quot;cases&quot; sous **Render As** . Entrer dans des domaines tels que l&#39;escalade, le surf, le cyclisme, le ski et le randonnée. Le libellé de l’option et la valeur de l’option doivent correspondre comme ci-dessous :
 
-   ![Enumération des compétences](assets/define-content-fragment-models/skills-enum.png)
+    ![Enumération des compétences](assets/define-content-fragment-models/skills-enum.png)
 
 14. Enfin, créez un libellé de champ &quot;Détails de l’administrateur&quot; à l’aide d’un **Texte multi-lignes** champ .
 
