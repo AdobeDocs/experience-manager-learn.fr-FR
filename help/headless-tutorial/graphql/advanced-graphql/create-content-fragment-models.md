@@ -6,13 +6,13 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
+exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
+source-git-commit: 7631432881de3deabbe831b2aec40d924b393442
 workflow-type: tm+mt
 source-wordcount: '1968'
 ht-degree: 1%
 
 ---
-
 
 # Créer des modèles de fragment de contenu {#create-content-fragment-models}
 
@@ -52,7 +52,7 @@ Créons des modèles de fragment de contenu pour l’application WKND. Si vous a
 
    ![Chemin d’accès aux modèles de fragment de contenu](assets/define-content-fragment-models/content-fragment-models-path.png)
 
-2. Sélectionner **Site WKND** pour afficher la liste des modèles de fragment de contenu existants pour le site.
+1. Sélectionner **Site WKND** pour afficher la liste des modèles de fragment de contenu existants pour le site.
 
 ### Modèle Contact Info {#contact-info-model}
 
@@ -60,11 +60,11 @@ Créez ensuite un modèle contenant les coordonnées d’une personne ou d’un 
 
 1. Sélectionner **Créer** dans le coin supérieur droit.
 
-2. Attribuez au modèle le titre &quot;Contact Info&quot;, puis sélectionnez **Créer**. Dans le modal de succès qui s’affiche, sélectionnez **Ouvrir** pour modifier le modèle nouvellement créé.
+1. Attribuez au modèle le titre &quot;Contact Info&quot;, puis sélectionnez **Créer**. Dans le modal de succès qui s’affiche, sélectionnez **Ouvrir** pour modifier le modèle nouvellement créé.
 
-3. Commencez par faire glisser un **Texte sur une seule ligne** sur le modèle. Donnez-lui **Libellé du champ** de &quot;Phone&quot; dans la variable **Propriétés** . Le nom de la propriété est automatiquement renseigné sous la forme `phone`. Cochez la case pour que le champ soit **Obligatoire**.
+1. Commencez par faire glisser un **Texte sur une seule ligne** sur le modèle. Donnez-lui **Libellé du champ** de &quot;Phone&quot; dans la variable **Propriétés** . Le nom de la propriété est automatiquement renseigné sous la forme `phone`. Cochez la case pour que le champ soit **Obligatoire**.
 
-4. Accédez au **Types de données** , puis ajoutez un autre **Texte sur une seule ligne** sous le champ &quot;Téléphone&quot;. Donnez-lui **Libellé du champ** de &quot;Email&quot; et définissez-le également sur **Obligatoire**.
+1. Accédez au **Types de données** , puis ajoutez un autre **Texte sur une seule ligne** sous le champ &quot;Téléphone&quot;. Donnez-lui **Libellé du champ** de &quot;Email&quot; et définissez-le également sur **Obligatoire**.
 
 Adobe Experience Manager est fourni avec certaines méthodes de validation intégrées. Ces méthodes de validation vous permettent d’ajouter des règles de gouvernance à des champs spécifiques de vos modèles de fragment de contenu. Dans ce cas, ajoutons une règle de validation afin de nous assurer que les utilisateurs ne peuvent saisir que des adresses électroniques valides lorsqu’ils remplissent ce champ. Sous , **Type de validation** menu déroulant, sélectionnez **Courrier électronique**.
 
@@ -80,20 +80,20 @@ Créez ensuite un modèle pour une adresse.
 
 1. Dans la **Site WKND**, sélectionnez **Créer** dans le coin supérieur droit.
 
-2. Saisissez le titre &quot;Adresse&quot;, puis sélectionnez **Créer**.
+1. Saisissez le titre &quot;Adresse&quot;, puis sélectionnez **Créer**.
 
    i. Dans le modal de succès qui s’affiche, sélectionnez **Ouvrir** pour modifier le modèle nouvellement créé.
 
-3. Faites glisser et déposez un **Texte sur une seule ligne** sur le modèle et lui donnez un **Libellé du champ** de &quot;Adresse de la rue&quot;. Le nom de la propriété est ensuite renseigné en tant que `streetAddress`. Sélectionnez la **Obligatoire** .
+1. Faites glisser et déposez un **Texte sur une seule ligne** sur le modèle et lui donnez un **Libellé du champ** de &quot;Adresse de la rue&quot;. Le nom de la propriété est ensuite renseigné en tant que `streetAddress`. Sélectionnez la **Obligatoire** .
 
-4. Répétez les étapes ci-dessus et ajoutez quatre champs &quot;Une seule ligne de texte&quot; supplémentaires au modèle. Utilisez les libellés suivants :
+1. Répétez les étapes ci-dessus et ajoutez quatre champs &quot;Une seule ligne de texte&quot; supplémentaires au modèle. Utilisez les libellés suivants :
 
    * Ville
    * État
    * Code postal
    * Pays
 
-5. Sélectionner **Enregistrer** pour enregistrer les modifications apportées au modèle Address.
+1. Sélectionner **Enregistrer** pour enregistrer les modifications apportées au modèle Address.
 
    Le modèle de fragment &quot;Adresse&quot; complété doit ressembler à ceci :
    ![Modèle d’adresse](assets/define-content-fragment-models/address-model.png)
@@ -104,47 +104,47 @@ Créez ensuite un modèle contenant des informations sur une personne.
 
 1. Dans le coin supérieur droit, sélectionnez **Créer**.
 
-2. Donnez au modèle le titre &quot;Personne&quot;, puis sélectionnez **Créer**. Dans le modal de succès qui s’affiche, sélectionnez **Ouvrir** pour modifier le modèle nouvellement créé.
+1. Donnez au modèle le titre &quot;Personne&quot;, puis sélectionnez **Créer**. Dans le modal de succès qui s’affiche, sélectionnez **Ouvrir** pour modifier le modèle nouvellement créé.
 
-3. Commencez par faire glisser un **Texte sur une seule ligne** sur le modèle. Donnez-lui **Libellé du champ** de &quot;Nom complet&quot;. Le nom de la propriété est automatiquement renseigné sous la forme `fullName`. Cochez la case pour que le champ soit **Obligatoire**.
+1. Commencez par faire glisser un **Texte sur une seule ligne** sur le modèle. Donnez-lui **Libellé du champ** de &quot;Nom complet&quot;. Le nom de la propriété est automatiquement renseigné sous la forme `fullName`. Cochez la case pour que le champ soit **Obligatoire**.
 
    ![Options de nom complet](assets/define-content-fragment-models/full-name.png)
 
-4. Les modèles de fragment de contenu peuvent être référencés dans d’autres modèles. Accédez au **Types de données** puis effectuez un glisser-déposer de l’élément **Référence de fragment** et donnez-lui le libellé &quot;Contact Info&quot;.
+1. Les modèles de fragment de contenu peuvent être référencés dans d’autres modèles. Accédez au **Types de données** puis effectuez un glisser-déposer de l’élément **Référence de fragment** et donnez-lui le libellé &quot;Contact Info&quot;.
 
-5. Dans le **Propriétés** sous l’onglet **Modèles de fragment de contenu autorisés** , sélectionnez l’icône de dossier, puis choisissez l’option **Coordonnées** modèle de fragment créé précédemment.
+1. Dans le **Propriétés** sous l’onglet **Modèles de fragment de contenu autorisés** , sélectionnez l’icône de dossier, puis choisissez l’option **Coordonnées** modèle de fragment créé précédemment.
 
-6. Ajouter un **Référence de contenu** et lui donner un **Libellé du champ** de &quot;Profile Picture&quot;. Sélectionnez l’icône de dossier sous **Chemin racine** pour ouvrir le modal de sélection de chemin. Sélectionnez un chemin racine en sélectionnant **content** > **Ressources**, puis en cochant la case pour **Site WKND**. Utilisez la variable **Sélectionner** en haut à droite pour enregistrer le chemin d’accès. Le chemin de texte final doit être lu `/content/dam/wknd`.
+1. Ajouter un **Référence de contenu** et lui donner un **Libellé du champ** de &quot;Profile Picture&quot;. Sélectionnez l’icône de dossier sous **Chemin racine** pour ouvrir le modal de sélection de chemin. Sélectionnez un chemin racine en sélectionnant **content** > **Ressources**, puis en cochant la case pour **Site WKND**. Utilisez la variable **Sélectionner** en haut à droite pour enregistrer le chemin d’accès. Le chemin de texte final doit être lu `/content/dam/wknd`.
 
    ![Chemin racine de référence de contenu](assets/define-content-fragment-models/content-reference-root-path.png)
 
-7. Sous **Accepter uniquement les types de contenu spécifiés**, sélectionnez &quot;Image&quot;.
+1. Sous **Accepter uniquement les types de contenu spécifiés**, sélectionnez &quot;Image&quot;.
 
    ![Options d’image de profil](assets/define-content-fragment-models/profile-picture.png)
 
-8. Pour limiter la taille et les dimensions du fichier image, examinons certaines options de validation pour le champ de référence du contenu.
+1. Pour limiter la taille et les dimensions du fichier image, examinons certaines options de validation pour le champ de référence du contenu.
 
    Sous **Accepter uniquement la taille de fichier spécifiée**, sélectionnez &quot;Inférieur ou égal à&quot;, et des champs supplémentaires apparaissent ci-dessous.
    ![Accepter uniquement la taille de fichier spécifiée](assets/define-content-fragment-models/accept-specified-file-size.png)
 
-9. Pour **Max**, saisissez &quot;5&quot; et pour **Sélectionner une unité**, sélectionnez &quot;Mégaoctets (Mo)&quot;. Cette validation permet uniquement de sélectionner les images de la taille spécifiée.
+1. Pour **Max**, saisissez &quot;5&quot; et pour **Sélectionner une unité**, sélectionnez &quot;Mégaoctets (Mo)&quot;. Cette validation permet uniquement de sélectionner les images de la taille spécifiée.
 
-10. Sous **Accepter uniquement la largeur d’image spécifiée**, sélectionnez &quot;Largeur maximale&quot;. Dans le **Max (pixels)** qui s’affiche, saisissez &quot;500&quot;. Sélectionnez les mêmes options pour **Accepter uniquement une hauteur d’image spécifiée**.
+1. Sous **Accepter uniquement la largeur d’image spécifiée**, sélectionnez &quot;Largeur maximale&quot;. Dans le **Max (pixels)** qui s’affiche, saisissez &quot;500&quot;. Sélectionnez les mêmes options pour **Accepter uniquement une hauteur d’image spécifiée**.
 
-    Ces validations garantissent que les images ajoutées ne dépassent pas les valeurs spécifiées. Les règles de validation doivent maintenant se présenter comme suit :
-    ![Règles de validation de référence du contenu](assets/define-content-fragment-models/content-reference-validation.png)
+   Ces validations garantissent que les images ajoutées ne dépassent pas les valeurs spécifiées. Les règles de validation doivent maintenant se présenter comme suit :
+   ![Règles de validation de référence du contenu](assets/define-content-fragment-models/content-reference-validation.png)
 
-11. Ajouter un **Texte multi-lignes** et lui donner un **Libellé du champ** de &quot;Biographie&quot;. Laissez le champ **Type par défaut** comme option par défaut &quot;Texte enrichi&quot;.
+1. Ajouter un **Texte multi-lignes** et lui donner un **Libellé du champ** de &quot;Biographie&quot;. Laissez le champ **Type par défaut** comme option par défaut &quot;Texte enrichi&quot;.
 
-    ![Options de biographie](assets/define-content-fragment-models/biography.png)
+   ![Options de biographie](assets/define-content-fragment-models/biography.png)
 
-12. Accédez au **Types de données** puis faites glisser un **Énumération** champ sous &quot;Profile Picture&quot;. Au lieu de la valeur par défaut **Render As** option, sélectionnez **Liste déroulante**. Saisissez une sélection d’options de niveau d’expérience de l’instructeur, telles que Expert, Avancé, Intermédiaire.
+1. Accédez au **Types de données** puis faites glisser un **Énumération** champ sous &quot;Profile Picture&quot;. Au lieu de la valeur par défaut **Render As** option, sélectionnez **Liste déroulante**. Saisissez une sélection d’options de niveau d’expérience de l’instructeur, telles que Expert, Avancé, Intermédiaire.
 
-13. Faites ensuite glisser un autre **Énumération** sous &quot;Niveau d’expérience de l’instructeur&quot; et cochez les &quot;cases&quot; sous **Render As** . Entrer dans des domaines tels que l&#39;escalade, le surf, le cyclisme, le ski et le randonnée. Le libellé de l’option et la valeur de l’option doivent correspondre comme ci-dessous :
+1. Faites ensuite glisser un autre **Énumération** sous &quot;Niveau d’expérience de l’instructeur&quot; et cochez les &quot;cases&quot; sous **Render As** . Entrer dans des domaines tels que l&#39;escalade, le surf, le cyclisme, le ski et le randonnée. Le libellé de l’option et la valeur de l’option doivent correspondre comme ci-dessous :
 
-    ![Enumération des compétences](assets/define-content-fragment-models/skills-enum.png)
+   ![Enumération des compétences](assets/define-content-fragment-models/skills-enum.png)
 
-14. Enfin, créez un libellé de champ &quot;Détails de l’administrateur&quot; à l’aide d’un **Texte multi-lignes** champ .
+1. Enfin, créez un libellé de champ &quot;Détails de l’administrateur&quot; à l’aide d’un **Texte multi-lignes** champ .
 
 Sélectionner **Enregistrer** pour confirmer vos modifications et fermer l’éditeur de modèle de fragment de contenu.
 
@@ -154,23 +154,23 @@ Le modèle de fragment de contenu suivant décrit un emplacement physique. Ce mo
 
 1. Comme précédemment, sélectionnez **Créer** pour créer un autre modèle de fragment de contenu. Pour le titre du modèle, saisissez &quot;Emplacement&quot;. Sélectionner **Créer** suivie de **Ouvrir** dans le modal success qui s’affiche.
 
-2. Ajouter un **Espace réservé de tabulation** sur le modèle et étiquetez-le &quot;Détails de l’emplacement&quot;.
+1. Ajouter un **Espace réservé de tabulation** sur le modèle et étiquetez-le &quot;Détails de l’emplacement&quot;.
 
-3. Faites glisser et déposez un **Une seule ligne de texte** et étiquetez-le &quot;Nom&quot;. Sous ce libellé de champ, ajoutez une **texte multiligne** et étiquetez-le &quot;Description&quot;.
+1. Faites glisser et déposez un **Une seule ligne de texte** et étiquetez-le &quot;Nom&quot;. Sous ce libellé de champ, ajoutez une **texte multiligne** et étiquetez-le &quot;Description&quot;.
 
-4. Ajoutez ensuite une **Référence de fragment** et étiquetez-le &quot;Contact Info&quot;. Dans l’onglet Propriétés, sous **Modèles de fragment de contenu autorisés**, sélectionnez la variable **Icône Dossier** et sélectionnez le modèle de fragment &quot;Contact Info&quot; créé précédemment.
+1. Ajoutez ensuite une **Référence de fragment** et étiquetez-le &quot;Contact Info&quot;. Dans l’onglet Propriétés, sous **Modèles de fragment de contenu autorisés**, sélectionnez la variable **Icône Dossier** et sélectionnez le modèle de fragment &quot;Contact Info&quot; créé précédemment.
 
-5. Ajouter un **Référence de contenu** sous &quot;Contact Info&quot;. Nommez-le &quot;Image de l’emplacement&quot;. Le **Chemin racine** should `/content/dam/wknd.` Sous **Accepter uniquement les types de contenu spécifiés**, sélectionnez &quot;Image&quot;.
+1. Ajouter un **Référence de contenu** sous &quot;Contact Info&quot;. Nommez-le &quot;Image de l’emplacement&quot;. Le **Chemin racine** should `/content/dam/wknd.` Sous **Accepter uniquement les types de contenu spécifiés**, sélectionnez &quot;Image&quot;.
 
-6. Ajoutons également un **Objet JSON** sous &quot;Image de l’emplacement&quot;. Ce type de données étant flexible, il peut être utilisé pour afficher toutes les données que vous souhaitez inclure dans votre contenu. Dans ce cas, l’objet JSON est utilisé pour afficher des informations sur la météo. Étiqueter l’objet JSON &quot;Météo par saison&quot;. Dans le **Propriétés** , ajoutez une **Description** il est donc clair pour l&#39;utilisateur quelles données doivent être entrées ici : &quot;Données JSON concernant la météo de l’emplacement de l’événement par saison (printemps, été, automne, hiver).&quot;
+1. Ajoutons également un **Objet JSON** sous &quot;Image de l’emplacement&quot;. Ce type de données étant flexible, il peut être utilisé pour afficher toutes les données que vous souhaitez inclure dans votre contenu. Dans ce cas, l’objet JSON est utilisé pour afficher des informations sur la météo. Étiqueter l’objet JSON &quot;Météo par saison&quot;. Dans le **Propriétés** , ajoutez une **Description** il est donc clair pour l&#39;utilisateur quelles données doivent être entrées ici : &quot;Données JSON concernant la météo de l’emplacement de l’événement par saison (printemps, été, automne, hiver).&quot;
 
    ![Options d’objet JSON](assets/define-content-fragment-models/json-object.png)
 
-7. Pour créer l’onglet Adresse de l’emplacement, ajoutez une **Espace réservé de tabulation** sur le modèle et étiquetez-le &quot;Adresse de l’emplacement&quot;.
+1. Pour créer l’onglet Adresse de l’emplacement, ajoutez une **Espace réservé de tabulation** sur le modèle et étiquetez-le &quot;Adresse de l’emplacement&quot;.
 
-8. Faites glisser et déposez un **Référence de fragment** et dans l’onglet propriétés, sous **Modèles de fragment de contenu autorisés**, sélectionnez la variable **Adresse** modèle.
+1. Faites glisser et déposez un **Référence de fragment** et dans l’onglet propriétés, sous **Modèles de fragment de contenu autorisés**, sélectionnez la variable **Adresse** modèle.
 
-9. Sélectionner **Enregistrer** pour confirmer vos modifications et fermer l’éditeur de modèle de fragment de contenu. Le modèle d’emplacement complété doit apparaître comme suit :
+1. Sélectionner **Enregistrer** pour confirmer vos modifications et fermer l’éditeur de modèle de fragment de contenu. Le modèle d’emplacement complété doit apparaître comme suit :
 
    ![Options de référence du contenu](assets/define-content-fragment-models/location-model.png)
 
@@ -180,21 +180,21 @@ Enfin, créez un modèle qui décrit une équipe de personnes.
 
 1. Dans la **Site WKND** page, sélectionnez **Créer** pour créer un autre modèle de fragment de contenu. Pour le titre du modèle, saisissez &quot;Équipe&quot;. Comme précédemment, sélectionnez **Créer** suivie de **Ouvrir** dans le modal success qui s’affiche.
 
-2. Ajouter un **Texte multi-lignes** au formulaire. Sous **Libellé du champ**, saisissez &quot;Description&quot;.
+1. Ajouter un **Texte multi-lignes** au formulaire. Sous **Libellé du champ**, saisissez &quot;Description&quot;.
 
-3. Ajouter un **Date et heure** sur le modèle et étiquetez-le &quot;Date de création de l’équipe&quot;. Dans ce cas, conservez la valeur par défaut **Type** sur &quot;Date&quot;, mais notez qu’il est également possible d’utiliser &quot;Date et heure&quot; ou &quot;Heure&quot;.
+1. Ajouter un **Date et heure** sur le modèle et étiquetez-le &quot;Date de création de l’équipe&quot;. Dans ce cas, conservez la valeur par défaut **Type** sur &quot;Date&quot;, mais notez qu’il est également possible d’utiliser &quot;Date et heure&quot; ou &quot;Heure&quot;.
 
    ![Options de date et d’heure](assets/define-content-fragment-models/date-and-time.png)
 
-4. Accédez au **Types de données** . Sous &quot;Date de création de l’équipe&quot;, ajoutez une **Référence de fragment**. Dans le **Render As** , sélectionnez &quot;multifield&quot;. Pour **Libellé du champ**, saisissez &quot;Membres de l’équipe&quot;. Ce champ est lié au modèle Personne créé précédemment. Le type de données étant un champ multiple, plusieurs fragments de personne peuvent être ajoutés, ce qui permet de créer une équipe de personnes.
+1. Accédez au **Types de données** . Sous &quot;Date de création de l’équipe&quot;, ajoutez une **Référence de fragment**. Dans le **Render As** , sélectionnez &quot;multifield&quot;. Pour **Libellé du champ**, saisissez &quot;Membres de l’équipe&quot;. Ce champ est lié au modèle Personne créé précédemment. Le type de données étant un champ multiple, plusieurs fragments de personne peuvent être ajoutés, ce qui permet de créer une équipe de personnes.
 
    ![Options de référence des fragments](assets/define-content-fragment-models/fragment-reference.png)
 
-5. Sous **Modèles de fragment de contenu autorisés**, utilisez l’icône de dossier pour ouvrir le modal Sélectionner le chemin , puis sélectionnez l’option **Personne** modèle. Utilisez la variable **Sélectionner** pour enregistrer le chemin.
+1. Sous **Modèles de fragment de contenu autorisés**, utilisez l’icône de dossier pour ouvrir le modal Sélectionner le chemin , puis sélectionnez l’option **Personne** modèle. Utilisez la variable **Sélectionner** pour enregistrer le chemin.
 
    ![Sélectionner le modèle Personne](assets/define-content-fragment-models/select-person-model.png)
 
-6. Sélectionner **Enregistrer** pour confirmer vos modifications et fermer l’éditeur de modèle de fragment de contenu.
+1. Sélectionner **Enregistrer** pour confirmer vos modifications et fermer l’éditeur de modèle de fragment de contenu.
 
 ## Ajouter des références de fragments au modèle d’aventure {#fragment-references}
 
@@ -204,19 +204,19 @@ Tout comme le modèle Équipe comporte une référence de fragment au modèle Pe
 
    ![Chemin de modification aventure](assets/define-content-fragment-models/adventure-edit-path.png)
 
-2. Au bas du formulaire, sous &quot;Que nous amener&quot;, ajoutez une **Référence de fragment** champ . Saisissez un **Libellé du champ** de &quot;Emplacement&quot;. Sous **Modèles de fragment de contenu autorisés**, sélectionnez la variable **Emplacement** modèle.
+1. Au bas du formulaire, sous &quot;Que nous amener&quot;, ajoutez une **Référence de fragment** champ . Saisissez un **Libellé du champ** de &quot;Emplacement&quot;. Sous **Modèles de fragment de contenu autorisés**, sélectionnez la variable **Emplacement** modèle.
 
    ![Options de référence des fragments d’emplacement](assets/define-content-fragment-models/location-fragment-reference.png)
 
-3. Ajouter un **Référence de fragment** et étiquetez-le &quot;Équipe instructrice&quot;. Sous **Modèles de fragment de contenu autorisés**, sélectionnez la variable **Équipe** modèle.
+1. Ajouter un **Référence de fragment** et étiquetez-le &quot;Équipe instructrice&quot;. Sous **Modèles de fragment de contenu autorisés**, sélectionnez la variable **Équipe** modèle.
 
    ![Options de référence des fragments d’équipe](assets/define-content-fragment-models/team-fragment-reference.png)
 
-4. Ajouter un autre **Référence de fragment** et étiquetez-le &quot;Administrateur&quot;.
+1. Ajouter un autre **Référence de fragment** et étiquetez-le &quot;Administrateur&quot;.
 
    ![Options de référence des fragments d’administrateur](assets/define-content-fragment-models/administrator-fragment-reference.png)
 
-5. Sélectionner **Enregistrer** pour confirmer vos modifications et fermer l’éditeur de modèle de fragment de contenu.
+1. Sélectionner **Enregistrer** pour confirmer vos modifications et fermer l’éditeur de modèle de fragment de contenu.
 
 ## Bonnes pratiques {#best-practices}
 
