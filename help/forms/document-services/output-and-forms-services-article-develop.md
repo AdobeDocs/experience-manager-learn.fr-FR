@@ -1,18 +1,18 @@
 ---
 title: Développement avec les services Output et Forms dans AEM Forms
 description: Utilisation de l’API Output et Forms Service dans AEM Forms
-feature: Service Output
+feature: Output Service
 version: 6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
+source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 2%
+source-wordcount: '601'
+ht-degree: 1%
 
 ---
-
 
 # Développement avec les services Output et Forms dans AEM Forms{#developing-with-output-and-forms-services-in-aem-forms}
 
@@ -21,10 +21,10 @@ Utilisation de l’API Output et Forms Service dans AEM Forms
 Dans cet article, nous examinerons ce qui suit :
 
 * Service Output : en règle générale, ce service est utilisé pour fusionner des données XML avec un modèle xdp ou un pdf pour générer un pdf aplati. Pour plus d’informations, reportez-vous à la section[javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) pour le service Output.
-* FormsService : il s’agit d’un service très polyvalent qui vous permet d’exporter/importer des données de et dans un fichier PDF. Pour plus d’informations, reportez-vous à la section [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/forms/api/class-use/FormsService.html) du service Forms.
+* FormsService : il s’agit d’un service très polyvalent qui vous permet d’exporter/importer des données depuis et vers un fichier PDF. Pour plus d’informations, reportez-vous à la section [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/forms/api/class-use/FormsService.html) pour le service Forms.
 
 
-Le fragment de code suivant exporte les données du fichier PDF.
+Le fragment de code suivant exporte les données du fichier de PDF.
 
 ```java
 javax.servlet.http.Part pdfPart = request.getPart("pdffile");
@@ -41,7 +41,7 @@ Line2 extrait le saveLocation de la requête.
 
 La ligne 5 contient FormsService
 
-La ligne 6 exporte les xmlData du fichier PDF.
+La ligne 6 exporte les xmlData du fichier du PDF
 
 **Test de l’exemple de package sur votre système**
 
@@ -60,45 +60,41 @@ La ligne 6 exporte les xmlData du fichier PDF.
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
 1. Recherchez &quot;Sling Referrer filter&quot;.
-1. Cochez la case &quot;Autoriser vide&quot;. (Ce paramètre doit être utilisé à des fins de test uniquement)
-Il existe plusieurs façons de tester l’exemple de code. Le plus rapide et le plus simple est d’utiliser l’application Postman. Postman vous permet d’adresser des demandes de POST à votre serveur. Installez l’application Postman sur votre système.
+1. Cochez la case &quot;Autoriser vide&quot;. (Ce paramètre doit être utilisé à des fins de test uniquement) Il existe plusieurs façons de tester l’exemple de code. Le plus rapide et le plus simple est d’utiliser l’application Postman. Postman vous permet d’adresser des demandes de POST à votre serveur. Installez l’application Postman sur votre système.
 Lancez l’application et saisissez l’URL suivante pour tester l’API d’exportation des données.
 
-Assurez-vous d’avoir sélectionné &quot;POST&quot; dans la liste déroulante
-http://localhost:4502/content/AemFormsSamples/exportdata.html
-Veillez à spécifier &quot;Autorisation&quot; comme &quot;Auth de base&quot;. Spécifiez le nom d’utilisateur et le mot de passe du serveur AEM
-Accédez à l’onglet &quot;Corps&quot; et spécifiez les paramètres de requête comme illustré dans l’image ci-dessous.
+Assurez-vous que vous avez sélectionné &quot;POST&quot; dans la liste déroulante http://localhost:4502/content/AemFormsSamples/exportdata.html Assurez-vous que vous spécifiez &quot;Autorisation&quot; comme &quot;Auth de base&quot;. Indiquez le nom d’utilisateur et le mot de passe du serveur AEM Accédez à l’onglet &quot;Corps&quot; et spécifiez les paramètres de requête comme illustré dans l’image ci-dessous.
 ![export](assets/postexport.png)
 Cliquez ensuite sur le bouton Envoyer
 
 Le package contient 3 exemples. Les paragraphes suivants expliquent à quel moment utiliser le service de sortie ou Forms Service, l’URL du service, les paramètres d’entrée attendus par chaque service.
 
-**Fusionner les données et aplatir la sortie :**
+## Fusionner les données et aplatir la sortie
 
 * Utilisation de Output Service pour fusionner des données avec xdp ou pdf document pour générer un pdf aplati.
-* **URL** du POST : http://localhost:4502/content/AemFormsSamples/outputservice.html
+* **URL du POST**: http://localhost:4502/content/AemFormsSamples/outputservice.html
 * **Paramètres de la demande -**
 
-   * xdp_or_pdf_file : Le fichier xdp ou pdf avec lequel vous souhaitez fusionner des données.
-   * xmlfile: Le fichier de données XML qui sera fusionné avec xdp_or_pdf_file
-   * saveLocation: L’emplacement où enregistrer le document rendu sur votre système de fichiers
+   * **xdp_or_pdf_file** : Le fichier xdp ou pdf avec lequel vous souhaitez fusionner des données.
+   * **xmlfile**: Le fichier de données XML qui sera fusionné avec xdp_or_pdf_file
+   * **saveLocation**: L’emplacement où enregistrer le document rendu sur votre système de fichiers. Par exemple c:\\documents\\sample.pdf
 
-**Importer des données dans un fichier PDF :**
+### Importer des données dans un fichier PDF
+
 * Utilisation de FormsService pour importer des données dans un fichier PDF
-* **URL du POST**  - http://localhost:4502/content/AemFormsSamples/mergedata.html
+* **URL du POST** - http://localhost:4502/content/AemFormsSamples/mergedata.html
 * **Paramètres de la demande:**
 
-   * pdffile : Le fichier pdf avec lequel vous souhaitez fusionner des données
-   * xmlfile: Le fichier de données XML qui sera fusionné avec le fichier pdf
-   * saveLocation: L’emplacement où enregistrer le document rendu sur votre système de fichiers. Par exemple, c:\\\outputsample.pdf.
+   * **pdfile** : Le fichier pdf avec lequel vous souhaitez fusionner des données
+   * **xmlfile**: Le fichier de données XML qui sera fusionné avec le fichier pdf
+   * **saveLocation**: L’emplacement où enregistrer le document rendu sur votre système de fichiers. Par exemple, c:\\outputsample.pdf.
 
-**Exportation de données à partir d’un fichier PDF**
-* Utilisation de FormsService pour exporter des données à partir d’un fichier PDF
-* **URL du POST**: http://localhost:4502/content/AemFormsSamples/exportdata.html
+**Exporter des données à partir d’un fichier PDF**
+* Utilisation de FormsService pour exporter des données à partir d’un fichier de PDF
+* **URL du POST** L - http://localhost:4502/content/AemFormsSamples/exportdata.html
 * **Paramètres de la demande:**
 
-   * pdffile : Le fichier pdf à partir duquel vous souhaitez exporter des données
-   * saveLocation: L’emplacement d’enregistrement des données exportées sur votre système de fichiers
+   * **pdfile** : Le fichier pdf à partir duquel vous souhaitez exporter des données
+   * **saveLocation**: L’emplacement où enregistrer les données exportées sur votre système de fichiers. Par exemple c:\\documents\\exported_data.xml
 
 [Vous pouvez importer cette collection Postman pour tester l’API](assets/document-services-postman-collection.json)
-

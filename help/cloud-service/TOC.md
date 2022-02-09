@@ -4,10 +4,10 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: cea9a9dc003b76369db1b7fedb9549062885258d
+source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 33%
+source-wordcount: '674'
+ht-degree: 32%
 
 ---
 
@@ -166,6 +166,12 @@ ht-degree: 33%
       + [Fusionner des données avec un modèle](./forms/doc-gen-forms-cs/merge-data-with-template.md)
       + [Tester la solution](./forms/doc-gen-forms-cs/test.md)
       + [Défi](./forms/doc-gen-forms-cs/challenge.md)
+   + Génération de documents à l’aide de l’API de lot{#formscs-batch-api}
+      + [Présentation](./forms/formscs-batch-api/introduction.md)
+      + [Configuration du stockage Azure](./forms/formscs-batch-api/configure-azure-storage.md)
+      + [Création d’une configuration de lot USC](./forms/formscs-batch-api/configure-usc-batch.md)
+      + [Créer une configuration de lot](./forms/formscs-batch-api/create-batch-config.md)
+      + [Exécuter le lot](./forms/formscs-batch-api/execute-batch-generate-documents.md)
    + Stockage du portail Azure{#forms-cs-azure-portal}
       + [Présentation](./forms/forms-cs-azure-portal/introduction.md)
       + [Création d’un modèle de données de formulaire](./forms/forms-cs-azure-portal/create-fdm.md)
