@@ -5,9 +5,9 @@ user-guide-title: Vidéos et tutoriels d’AEM Forms
 user-guide-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés.
 breadcrumb-title: Tutoriels sur AEM Forms
 index: y
-source-git-commit: 7f9a7951b2d9bb780d5374f17bb289c38b2e2ae7
+source-git-commit: 15b57ec6792bc47d0041946014863b13867adf22
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1641'
 ht-degree: 4%
 
 ---
@@ -33,13 +33,14 @@ ht-degree: 4%
    + [Configuration d’un formulaire adaptatif pour déclencher un processus](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [Affichage de la page de remerciement](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
    + [Envoi au point de terminaison externe](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
-   + [Envoi d’un email](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
+   + [Envoi d’un e-mail](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
    + [Workflow de demande de désactivation payante](handling-form-submissions/paid-time-off-request-workflow.md)
    + [Configuration d’un formulaire adaptatif pour déclencher AEM processus - vidéo](handling-form-submissions/configure-af-to-trigger-aem-workflow.md)
    + [Personnalisation de la notification d’affectation de tâche](handling-form-submissions/customize-assign-task-notification.md)
 + Intégrations utiles{#some-useful-integrations}
    + [Authentification à deux facteurs](some-useful-integrations/two-factor-authentication.md)
    + [Extraction de données OCR](some-useful-integrations/ocr-data-extraction.md)
+   + [Listes déroulantes en cascade](some-useful-integrations/geonames-org.md)
 + Création d’un lot OSGi {#creating-your-first-osgi-bundle}
    + [Configuration de votre environnement](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [Création d’un service OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
@@ -50,6 +51,7 @@ ht-degree: 4%
    + [Service de préremplissage dans Forms adaptatif](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [Envoi personnalisé dans Forms adaptatif](adaptive-forms/custom-submit-aem-forms-article.md)
    + [Captcha dans Forms adaptatif](adaptive-forms/forms-captcha-feature-video-use.md)
+   + [Fonctions personnalisées dans l’éditeur de règles](adaptive-forms/custom-functions-aem-forms.md)
    + [Incorporation d’un formulaire adaptatif dans une page web](adaptive-forms/embed-af-web-page.md)
    + [Création d’un tableau de chaînes](adaptive-forms/converting-comma-seperated-string-to-array.md)
    + [Utilisation de la valeur définie dans XML dans le processus OSGI](adaptive-forms/setvalue-aem-forms-workflow-tutorial-use.md)
