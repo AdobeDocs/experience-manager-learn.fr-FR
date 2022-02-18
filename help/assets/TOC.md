@@ -4,10 +4,10 @@ user-guide-description: Ensemble de vidéos et de tutoriels pour Adobe Experienc
 breadcrumb-title: Tutoriels sur AEM Assets
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: a5c128d92f4a4625279b6ef76c61f1afb6ed45d5
+source-git-commit: c6caa39075bc3c26dedeca4246e7e1f85887b124
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 33%
+source-wordcount: '378'
+ht-degree: 32%
 
 ---
 
@@ -94,7 +94,7 @@ ht-degree: 33%
    + [Pour les emplacements uniquement (FPO)](./adobe-asset-link/for-placement-only.md)
    + [Recherche de ressources](./adobe-asset-link/asset-search.md)
 
-+ Automatisation du contenu{#content-automation}
++ Content Automation{#content-automation}
    + [Présentation](./content-automation/overview.md)
    + [Opérations de création](./content-automation/creative-operations.md)
    + [Actions Photoshop](./content-automation/photoshop-actions.md)
@@ -137,6 +137,12 @@ ht-degree: 33%
    + Connecteur amélioré{#enhanced-connector}
       + [Bases du connecteur amélioré](./workfront/enhanced-connector/basics.md)
       + [Dossiers de projets](./workfront/enhanced-connector/project-folders.md)
+      + AEM série d’experts{#aem-experts-series}
+         + [Présentation](./workfront/enhanced-connector/aem-experts-series/overview.md)
+         + [Configuration](./workfront/enhanced-connector/aem-experts-series/setup.md)
+         + [Formulaires Workfront et métadonnées AEM](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
+         + [Balises, dossiers liés au projet et métadonnées de dossier](./workfront/enhanced-connector/aem-experts-series/aem-tags-project-linked-folders-and-folder-metadata.md)
+         + [Paramètres avancés et workflows](./workfront/enhanced-connector/aem-experts-series/advanced-settings-and-workflows.md)
 
 + Traduction {#translation}
    + [Traduction du fichier source](translation/source-file-translation-feature-video-use.md)
