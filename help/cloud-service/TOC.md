@@ -4,10 +4,10 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 0848419e4da935787c351469925cc900d4eb21df
+source-git-commit: 5da75b172a7dda29452954990f6ab2374e7698d9
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 32%
+source-wordcount: '697'
+ht-degree: 31%
 
 ---
 
@@ -188,6 +188,11 @@ ht-degree: 32%
       + [Configuration cloud Adobe Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [Créer un formulaire adaptatif](./forms/forms-and-sign/create-adaptive-form.md)
       + [Configuration pour le remplissage et la signature](./forms/forms-and-sign/configure-form-fill-and-sign.md)
+   + Intégration à Microsoft Dynamics{#formscs-dynamics-crm}
+      + [Création d’une application Dynamics](./forms/formscs-dynamics-crm/create-dynamics-account.md)
+      + [Configuration de la source de données](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
+      + [Création d’un modèle de données de formulaire](./forms/formscs-dynamics-crm/create-form-data-model.md)
+      + [Créer un formulaire adaptatif](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Intégration à Salesforce{#integrate-with-salesforce}
       + [Présentation](./forms/integrate-with-salesforce/introduction.md)
       + [Création d’une application connectée](./forms/integrate-with-salesforce/create-connected-app.md)
@@ -219,7 +224,8 @@ ht-degree: 32%
    + [Résolution des problèmes](./asset-compute/troubleshooting.md)
 + Cloud 5{#cloud-5}
    + [Présentation](./cloud-5/cloud5-introduction.md)
-   + [Séance approfondie sur le réseau CDN](./cloud-5/cloud5-aem-cdn-part1.md)
+   + [Saison 1](./cloud-5/cloud5-season-1.md)
+   + [AEM CDN Partie 1](./cloud-5/cloud5-aem-cdn-part1.md)
 + [AEM série d’experts](./aem-experts-series.md)
 + Tutorials en plusieurs étapes{#multi-step-tutorials}
    + [Développement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
