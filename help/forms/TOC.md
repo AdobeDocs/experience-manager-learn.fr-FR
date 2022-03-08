@@ -5,10 +5,10 @@ user-guide-title: Vidéos et tutoriels d’AEM Forms
 user-guide-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés.
 breadcrumb-title: Tutoriels sur AEM Forms
 index: y
-source-git-commit: 15b57ec6792bc47d0041946014863b13867adf22
+source-git-commit: 160471fdc34439da6c312d65b252eaa941b7c7a2
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 4%
+source-wordcount: '1654'
+ht-degree: 3%
 
 ---
 
@@ -153,6 +153,9 @@ ht-degree: 4%
    + [Créer un formulaire initial](sign-multiple-documents/create-initial-form.md)
    + [Création de Forms pour la signature](sign-multiple-documents/create-forms-for-signing.md)
    + [Test de la solution](sign-multiple-documents/testing-and-trouble-shooting.md)
++ Étapes de workflow personnalisées{#custom-workflow-steps}
+   + [Extraction de noeud du document xml](custom-workflow-steps/extract-xml-node.md)
+   + [Enregistrer le document dans le système de fichiers](custom-workflow-steps/write-payload-document.md)
 + Variables dans AEM workflow{#variables-aem-workflow}
    + [Introduction - Variables dans le workflow](variables-aem-workflow/introduction.md)
    + [Variables XML](variables-aem-workflow/part1.md)
