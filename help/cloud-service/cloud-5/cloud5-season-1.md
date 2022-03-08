@@ -1,22 +1,28 @@
 ---
-title: Adobe Experience Manager as a Cloud Service Cloud 5 - Saison 1
+title: Cloud 5 - Saison 1
 description: Découvrez Adobe Experience Manager (AEM) as a Cloud Service de la part des ingénieurs experts de l’Adobe qui l’ont créé et des services d’experts qui l’ont livré.
 sub-product: sites, cloud-manager, assets
-recommendations: noDisplay
-source-git-commit: 5da75b172a7dda29452954990f6ab2374e7698d9
+solution: Experience Manager as a Cloud Service, Experience Manager
+recommendations: noDisplay, noCatalog
+exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
+source-git-commit: 4fc95c69f3c15122f9e4b87be469f8bc15097042
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '256'
 ht-degree: 1%
 
 ---
 
-# Présentation de Cloud 5
+# Cloud 5
+
+![AEM série d’experts](./imgs/masthead.png)
+
+## Présentation
 
 Bienvenue dans la série Cloud 5 de AEM Engineering. L’un des Principaux problèmes de la phase de mise en oeuvre d’un produit est de disposer de suffisamment d’échantillons de code et/ou de démonstrations en direct de ces exemples, outils ou API. L’objectif de cette série est de fournir des informations utiles sur AEM as a Cloud Service en 5 minutes ou moins.
 
 ## Saison 1
 
-Chaque saison varie en longueur et est publiée selon un calendrier fixe. Les sujets de la saison 1 proviennent principalement des demandes antérieures que nous avons rencontrées dans nos interactions quotidiennes avec des clients et des partenaires. Consultez cette page pour des mises à jour hebdomadaires ou suivez-nous sur le réseau social de votre choix.
+Chaque saison varie en longueur et sera publiée selon un calendrier fixe. Les sujets de la saison 1 proviennent principalement des demandes antérieures que nous avons rencontrées dans nos interactions quotidiennes avec des clients et des partenaires. Consultez cette page pour des mises à jour hebdomadaires ou suivez-nous sur le réseau social de votre choix.
 
 <table>
   <tr>
