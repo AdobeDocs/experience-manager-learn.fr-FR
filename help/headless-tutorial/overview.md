@@ -7,10 +7,10 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 08146f57235f3de7fd5ab73754166cc85e1f7dda
+source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 7%
+source-wordcount: '529'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +20,7 @@ Adobe Experience Manager (AEM) dispose de plusieurs options pour définir des po
 
 >[!TIP]
 >
->Cette collection de tutoriels est conçue pour ceux qui préfèrent **apprendre en faisant**. Si vous préférez les concepts d’apprentissage, consultez la [AEM Parcours développeur sans tête](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/headless-journey/developer/overview.html?lang=fr). Cet ensemble de tutoriels et de parcours se complètent.
+>Cette collection de tutoriels est conçue pour ceux qui préfèrent **apprendre en faisant**. Si vous préférez les concepts d’apprentissage, consultez la [AEM Parcours développeur sans tête](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Cet ensemble de tutoriels et de parcours se complètent.
 
 ## Tutorials par API
 

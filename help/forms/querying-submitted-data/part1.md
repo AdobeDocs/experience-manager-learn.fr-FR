@@ -1,29 +1,29 @@
 ---
 title: AEM Forms avec schéma et données JSON [Partie 1]
-seo-title: AEM Forms avec schéma JSON et données [Partie1]
+seo-title: AEM Forms with JSON Schema and Data[Part1]
 description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes nécessaires à la création d’un formulaire adaptatif avec un schéma JSON et à l’interrogation des données envoyées.
-seo-description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes nécessaires à la création d’un formulaire adaptatif avec un schéma JSON et à l’interrogation des données envoyées.
-feature: Formulaires adaptatifs
+seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.3,6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: c588bdca-b8a8-4de2-97e0-ba08b195699f
+source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 3%
+source-wordcount: '266'
+ht-degree: 0%
 
 ---
-
 
 # Création d’un formulaire adaptatif basé sur un schéma JSON
 
 
-La possibilité de créer un Forms adaptatif basé sur un schéma JSON a été introduite avec la version 6.3 d’AEM Forms. Les détails de la création d’un Forms adaptatif avec le schéma JSON sont expliqués en détail dans cet [article](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/adaptive-form-json-schema-form-model.html).
+La possibilité de créer un Forms adaptatif basé sur un schéma JSON a été introduite avec la version 6.3 d’AEM Forms. Les détails de la création d’un Forms adaptatif avec un schéma JSON sont expliqués en détail dans cette section [article](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html).
 
 Une fois que vous avez créé un formulaire adaptatif basé sur un schéma JSON, l’étape suivante consiste à stocker les données envoyées dans la base de données. À cette fin, nous utiliserons le nouveau type de données JSON introduit par divers fournisseurs de base de données. Pour les besoins de cet article, nous utiliserons la base de données MySql 8 pour stocker les données envoyées.
 
@@ -33,11 +33,10 @@ La capture d’écran suivante montre les données de formulaire envoyées stock
 
 >[!NOTE]
 >
->Assurez-vous que votre fichier de schéma json est nommé correctement. Par exemple, il doit être nommé au format suivant &lt;name>schema.json. Votre fichier de schéma peut donc être prêt immobilier.schema.json ou crédit.schema.json.
+>Assurez-vous que votre fichier de schéma json est nommé correctement. Par exemple, il doit être nommé au format suivant : &lt;name>schema.json. Votre fichier de schéma peut donc être prêt immobilier.schema.json ou crédit.schema.json.
 
 
 ![datastored](assets/datastored.gif)
 
 
 [Exemples de schémas JSON pouvant être utilisés pour créer le Forms adaptatif.](assets/samplejsonschemas.zip). Téléchargez et décompressez le fichier zip pour obtenir les schémas JSON.
-

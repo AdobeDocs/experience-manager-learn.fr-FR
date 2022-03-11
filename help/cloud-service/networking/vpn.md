@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: ba2c299baeda632d6ebeff0c6ee07de5ef29b9cb
+source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 1%
+source-wordcount: '1321'
+ht-degree: 2%
 
 ---
 
@@ -22,9 +22,13 @@ Découvrez comment connecter AEM as a Cloud Service à votre VPN pour créer des
 
 ## Qu’est-ce que le réseau privé virtuel ?
 
-Le réseau privé virtuel (VPN) permet à un client as a Cloud Service AEM de connecter un programme Cloud Manager à un programme existant, [pris en charge](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#vpn) VPN. Cela permet des connexions sécurisées et contrôlées entre AEM as a Cloud Service et les services au sein du réseau du client.
+Le réseau privé virtuel (VPN) permet à un client as a Cloud Service AEM de se connecter. **les environnements AEM** dans un programme Cloud Manager à un programme existant, [pris en charge](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#vpn) VPN. Cela permet des connexions sécurisées et contrôlées entre AEM as a Cloud Service et les services au sein du réseau du client.
 
 Un programme Cloud Manager ne peut avoir qu’une __single__ type d’infrastructure réseau. S’assurer que le réseau privé virtuel est le plus performant [type approprié d’infrastructure réseau](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#general-vpn-considerations) pour votre AEM as a Cloud Service avant d’exécuter les commandes suivantes.
+
+>[!NOTE]
+>
+>Notez que la connexion de l’environnement de génération de Cloud Manager à un VPN n’est pas prise en charge. Si vous devez accéder aux artefacts binaires d’un référentiel privé, vous devez configurer un référentiel sécurisé et protégé par mot de passe avec une URL disponible sur l’Internet public. [comme décrit ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories).
 
 >[!MORELIKETHIS]
 >
