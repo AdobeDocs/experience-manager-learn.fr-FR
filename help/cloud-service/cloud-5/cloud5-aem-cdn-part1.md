@@ -10,15 +10,24 @@ hidefromtoc: true
 kt: 9797
 thumbnail: 340760.jpeg
 exl-id: 8b608b05-48ee-434f-8d5a-6c5ff1969dcf
-source-git-commit: ebbd31f7ffe677668bf8d351212b7b2957106595
+source-git-commit: a8e6e863a4d236babdb1e2ae978240cd51631981
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---
 
 # Cloud 5 AEM CDN Partie 1
 
-Il s’agit d’une plongée profonde dans le réseau de diffusion de contenu fourni dans le cadre d’AEM as a Cloud Service, y compris ce dont il est capable et s’il faut apporter ou non votre propre réseau de diffusion de contenu. Voici la partie 1 de 2.
+Il s’agit d’une plongée profonde dans le réseau de diffusion de contenu fourni dans le cadre d’AEM as a Cloud Service, y compris ce dont il est capable et s’il faut apporter votre propre réseau de diffusion de contenu. Voici la partie 1 de 2.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340760/?quality=12&learn=on)
+
+## Contenu couvert dans la première partie de cette série
+
++ Réseau de diffusion de contenu AEM [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html)
++ Fonctionnalités du pare-feu d’applications web (WAF)
++ Restrictions IP
++ Protection DOS
+
+[Afficher la partie 2](cloud5-aem-cdn-part2.md)

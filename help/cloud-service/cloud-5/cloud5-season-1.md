@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: 83757a34cc82159326d3e035b88f018972d5dc27
+source-git-commit: a8e6e863a4d236babdb1e2ae978240cd51631981
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '334'
 ht-degree: 1%
 
 ---
@@ -51,8 +51,7 @@ Chaque saison varie en longueur et sera publiée selon un calendrier fixe. Les s
         <br/>
          La partie 2 est la suite de notre analyse du réseau de diffusion de contenu as a Cloud Service AEM. Nous répondons à quelques-unes des questions et mythes les plus courants sur les fonctionnalités que vous obtenez du nouveau réseau de diffusion de contenu.
       </p>
-   </td>     
-   </td>   
+   </td>
      <td>
       <img alt="Fichiers journaux et journaux" src="./imgs/coming-soon.png"/>
       <div>
@@ -87,8 +86,7 @@ Chaque saison varie en longueur et sera publiée selon un calendrier fixe. Les s
         <br/>
          1er avril 2022
       </p>
-   </td>     
-   </td>   
+   </td>
      <td>
       <img alt="Migration (partie 1)" src="./imgs/coming-soon.png"/>
       <div>
@@ -98,6 +96,41 @@ Chaque saison varie en longueur et sera publiée selon un calendrier fixe. Les s
       <p>
         <br/>
          8 avril 2022
+      </p>
+   </td> 
+  </tr>
+<tr>
+   <td>
+      <img alt="Migration (partie 2)" src="./imgs/coming-soon.png"/>
+      <div>
+        <strong>Migration (partie 2)</strong>        
+         <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
+      </div>
+      <p>
+        <br/>
+         14 avril 2022
+      </p>
+     </td>   
+     <td>
+      <img alt="Dispatcher Validator" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>Dispatcher Validator</strong>
+         <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
+      </div>
+      <p>
+        <br/>
+         22 avril 2022
+      </p>
+   </td>
+     <td>
+      <img alt="Indexation et conseils de recherche" src="./imgs/coming-soon.png"/>
+      <div>
+         <strong>Indexation et conseils de recherche</strong>
+         <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
+      </div>
+      <p>
+        <br/>
+         29 avril 2022
       </p>
    </td> 
   </tr>
