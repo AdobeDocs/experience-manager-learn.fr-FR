@@ -8,9 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: c921594d5c352f98e0d830d7a85e026844fd5da6
+source-git-commit: 947c280f32b013a6ade76b2f3df1152b29108c6e
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '227'
 ht-degree: 31%
 
 ---
@@ -30,7 +30,7 @@ La prise en charge des navigateurs HLS est la suivante : pour les navigateurs no
 
 >[!NOTE]
 >
-> Dynamic Media Hybrid NE prendra PAS en charge la diffusion vidéo en continu sur Internet Explorer 11 après mai 2022.
+> Dynamic Media Hybrid NE prendra PAS en charge la diffusion vidéo en continu sur Internet Explorer 11 après le 15 mars 2022.
 
 <table> 
  <thead> 
