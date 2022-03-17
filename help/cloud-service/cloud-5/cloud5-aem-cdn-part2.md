@@ -1,6 +1,6 @@
 ---
 title: Cloud 5 AEM CDN Partie 2
-description: Utilisation du réseau de diffusion de contenu AEM et approfondissez les différentes options. (Entre 60 et 160 caractères)
+description: la deuxième partie de l’utilisation du réseau de diffusion de contenu AEM et explorez en détail différentes options.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -8,7 +8,7 @@ kt: 9904
 thumbnail: 340994.jpeg
 hidefromtoc: true
 exl-id: 3d6f3506-e1ec-4eeb-869f-02db2821b8c6
-source-git-commit: a8e6e863a4d236babdb1e2ae978240cd51631981
+source-git-commit: db701d42d111f1510645f795b2492ff69f76196d
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Cloud 5 AEM CDN Partie 2
 
-Partie deux de l’utilisation du réseau de diffusion de contenu AEM et explorez en détail diverses options. 
+Partie deux de l’utilisation du réseau de diffusion de contenu AEM et explorez en détail diverses options.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340994/?quality=12&learn=on)
 
