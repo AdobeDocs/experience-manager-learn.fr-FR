@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
-source-git-commit: a8e6e863a4d236babdb1e2ae978240cd51631981
+source-git-commit: 187f13c5051237915fdc8a8c0e3280dd0f0702ce
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '362'
 ht-degree: 1%
 
 ---
@@ -53,14 +53,16 @@ Chaque saison varie en longueur et sera publiée selon un calendrier fixe. Les s
       </p>
    </td>
      <td>
-      <img alt="Fichiers journaux et journaux" src="./imgs/coming-soon.png"/>
+        <a href="./cloud5-aem-log-files.md">
+            <img alt="Fichiers journaux et journaux" src="./imgs/003-thumb.png"/>
+        </a>
       <div>
-         <strong>Fichiers journaux et journaux</strong>
+         <a href="./cloud5-aem-log-files.md"><strong>Fichiers journaux et journaux</strong></a>
          <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
       </div>
       <p>
         <br/>
-         18 mars 2022
+         Il s’agit d’un aperçu rapide de la manière dont accéder aux journaux dans AEM as a Cloud Service, y compris comment y accéder via l’interface utilisateur ainsi que depuis les API.
       </p>
    </td> 
   </tr>
