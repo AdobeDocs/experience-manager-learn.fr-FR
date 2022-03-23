@@ -1,29 +1,31 @@
 ---
-title: Personnalisation de la boîte de réception
-description: 'Personnalisation de la boîte de réception en ajoutant de nouvelles colonnes en fonction des données de workflow '
-feature: Formulaires adaptatifs
+title: Boîte de réception AEM
+description: Personnalisation de la boîte de réception en ajoutant de nouvelles colonnes en fonction des données de workflow
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
 kt: 5830
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 3e1d86ab-e0c4-45d4-b998-75a44a7e4a3f
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 25%
+source-wordcount: '201'
+ht-degree: 29%
 
 ---
 
 # Boîte de réception AEM
 
 AEM boîte de réception regroupe les notifications et les tâches provenant de divers composants d’AEM, y compris les workflows Forms. Lorsqu’un processus Forms contenant une étape Affecter une tâche est déclenché, l’application associée est répertoriée comme une tâche dans la boîte de réception de la personne désignée.
-L’interface utilisateur de la boîte de réception fournit la liste et les vues de calendrier pour afficher les tâches. Vous pouvez également configurer les paramètres d’affichage. Vous pouvez filtrer les tâches en fonction de différents paramètres.
-Vous pouvez personnaliser une boîte de réception de Experience Manager pour modifier le titre par défaut d’une colonne, réorganiser la position d’une colonne et afficher des colonnes supplémentaires en fonction des données d’un workflow.
 
+L’interface utilisateur de la boîte de réception fournit la liste et les vues de calendrier pour afficher les tâches. Vous pouvez également configurer les paramètres d’affichage. Vous pouvez filtrer les tâches en fonction de divers paramètres.
+
+Vous pouvez personnaliser une boîte de réception de Experience Manager pour modifier le titre par défaut d’une colonne, réorganiser la position d’une colonne et afficher des colonnes supplémentaires en fonction des données d’un workflow.
 
 >[!NOTE]
 >
@@ -31,8 +33,8 @@ Vous pouvez personnaliser une boîte de réception de Experience Manager pour mo
 
 ## Personnalisation des colonnes
 
-[Lancez AEM ](http://localhost:4502/aem/inbox)
-boîte de réceptionOuvrez le contrôle d’administration en cliquant sur l’icône  _Affichage de la_ liste , puis en sélectionnant  _Contrôles_ d’administration comme illustré dans la capture d’écran ci-dessous.
+[Lancer AEM boîte de réception](http://localhost:4502/aem/inbox)
+Ouvrez le contrôle d’administration en cliquant sur le _Mode Liste_ puis en sélectionnant _Contrôle d’administration_ comme illustré dans la capture d’écran ci-dessous
 
 ![admin-control](assets/open-customization.png)
 

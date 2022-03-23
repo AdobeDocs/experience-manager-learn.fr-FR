@@ -1,17 +1,18 @@
 ---
-title: Stockage et récupération des données de formulaire à partir de la base de données MySQL
+title: Stockage et récupération des données de formulaire à partir de la base de données MySQL - Création d’un modèle de formulaire adaptatif et d’un composant de page
 description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes impliquées dans le stockage et la récupération des données de formulaire
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 type: Tutorial
 activity: implement
 version: 6.3,6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: fcef5adc-10fb-42b2-ab46-c7674e94e805
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 3%
+source-wordcount: '88'
+ht-degree: 0%
 
 ---
 
@@ -20,4 +21,3 @@ ht-degree: 3%
 Nous allons maintenant créer un modèle de formulaire adaptatif et un composant de page pour tester ce cas d’utilisation. Chaque formulaire adaptatif créé avec ce nouveau modèle pourra alors stocker et récupérer les données du formulaire.
 La vidéo suivante décrit les étapes nécessaires à la création d’un modèle de formulaire adaptatif
 >[!VIDEO](https://video.tv.adobe.com/v/27828?quality=9&learn=on)
-

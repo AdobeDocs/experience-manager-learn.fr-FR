@@ -1,37 +1,37 @@
 ---
-title: Tester la solution
+title: Test de la solution - Étapes nécessaires pour tester les deux approches
 description: Testez la solution en ajoutant des pièces jointes au formulaire et en déclenchant le workflow d’envoi de l’email.
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: ce9b9203-b44c-4a52-821c-ae76e93312d2
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 8%
+source-wordcount: '261'
+ht-degree: 7%
 
 ---
 
-
 # Étapes nécessaires pour tester les deux approches
 
-* Configuration de [Service de messagerie Day CQ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=en#configuring-the-mail-service) pour envoyer des courriers électroniques à partir du serveur AEM Forms
-* Déployez le lot [formattachments](assets/formattachments.formattachments.core-1.0-SNAPSHOT.jar) à l’aide de la [console web felix](http://localhost:4502/system/console/bundles)
+* Configurer [Service de messagerie Day CQ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=en#configuring-the-mail-service) pour envoyer des courriers électroniques à partir du serveur AEM Forms
+* Déployez la variable [formattachments](assets/formattachments.formattachments.core-1.0-SNAPSHOT.jar) regroupement utilisant [console web felix](http://localhost:4502/system/console/bundles)
 
 ## Envoi d’un fichier zip en tant que pièce jointe à un email
 
 
 
-* Déployez le workflow [SendFormAttachmentsViaEmail .](assets/zipped-form-attachments-model.zip) Ce workflow utilise le composant d’envoi de courrier électronique pour envoyer le fichier zipped_attachments.zip qui est enregistré sous le dossier de charge utile par l’étape de processus personnalisée. Configurez les adresses email des expéditeurs et des destinataires en fonction de vos besoins.
-* Importez l’[exemple de formulaire](assets/zip-form-attachments-form.zip) à partir de [Forms et de l’interface utilisateur du document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Prévisualisez le ](http://localhost:4502/content/dam/formsanddocuments/zippformattachments/jcr:content?wcmmode=disabled) formulaire, ajoutez deux pièces jointes et envoyez le formulaire.
+* Déployez la variable [Workflow SendFormAttachmentsViaEmail .](assets/zipped-form-attachments-model.zip) Ce workflow utilise le composant d’envoi de courrier électronique pour envoyer le fichier zipped_attachments.zip qui est enregistré sous le dossier de charge utile par l’étape de processus personnalisée. Configurez les adresses email des expéditeurs et des destinataires en fonction de vos besoins.
+* Importez la variable [exemple de formulaire](assets/zip-form-attachments-form.zip) de [Interface Utilisateur De Forms Et Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Aperçu du formulaire](http://localhost:4502/content/dam/formsanddocuments/zippformattachments/jcr:content?wcmmode=disabled) et ajoutez quelques pièces jointes et envoyez le formulaire.
 * Le workflow doit être déclenché et une notification électronique avec le fichier zip doit être envoyée.
 
 ## Envoi de pièces jointes de formulaire en tant que fichiers individuels
 
-* Déployez le workflow [SendForm.](assets/send-form-attachments-model.zip) Ce processus utilise le composant d’envoi de courrier électronique pour envoyer les pièces jointes du formulaire sous forme de fichiers individuels. Configurez l&#39;adresse email des expéditeurs et des destinataires en fonction de vos besoins.
-* Importez l’[exemple de formulaire](assets/send-list-attachments-form.zip) à partir de [Forms et de l’interface utilisateur du document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Prévisualisez le ](http://localhost:4502/content/dam/formsanddocuments/sendlistofattachments/jcr:content?wcmmode=disabled) formulaire, ajoutez deux pièces jointes et envoyez le formulaire.
+* Déployez la variable [Workflow SendForm.](assets/send-form-attachments-model.zip) Ce processus utilise le composant d’envoi de courrier électronique pour envoyer les pièces jointes du formulaire sous forme de fichiers individuels. Configurez l&#39;adresse email des expéditeurs et des destinataires en fonction de vos besoins.
+* Importez la variable [exemple de formulaire](assets/send-list-attachments-form.zip) de [Interface Utilisateur De Forms Et Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Aperçu du formulaire](http://localhost:4502/content/dam/formsanddocuments/sendlistofattachments/jcr:content?wcmmode=disabled) et ajoutez quelques pièces jointes et envoyez le formulaire.
 * Le workflow doit être déclenché et une notification électronique avec les pièces jointes du formulaire sera envoyée.

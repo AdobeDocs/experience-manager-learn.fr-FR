@@ -1,16 +1,17 @@
 ---
-title: Stockage et récupération des données de formulaire à partir de la base de données MySQL
+title: Stockage et récupération des données de formulaire de la base de données MySQL - Créer une bibliothèque cliente
 description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes impliquées dans le stockage et la récupération des données de formulaire
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 type: Tutorial
 version: 6.3,6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: eef98a55-80d0-4598-abf2-02a6c5247b64
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 

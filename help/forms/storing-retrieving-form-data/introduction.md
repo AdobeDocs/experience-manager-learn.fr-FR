@@ -1,19 +1,19 @@
 ---
-title: Stockage et récupération des données de formulaire à partir de la base de données MySQL
+title: Stockage et récupération des données de formulaire à partir de la base de données MySQL Introduction
 description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes impliquées dans le stockage et la récupération des données de formulaire
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 type: Tutorial
 version: 6.3,6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 95795102-4278-4556-8e0f-1b8a359ab093
+source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 1%
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
-
 
 # Stockage et récupération de données de formulaire adaptatif à partir de la base de données MySQL
 
@@ -23,7 +23,7 @@ Ce tutoriel vous guide tout au long des étapes nécessaires à l’enregistreme
 
 * Effectuez un appel POST vers une servlet. Ce servlet stocke les données dans la base de données. Les données stockées sont associées à un GUID.
 
-* Lorsque vous souhaitez renseigner le formulaire adaptatif avec les données stockées, vous récupérez les données associées au GUID et renseignez le formulaire adaptatif à l’aide de la méthode **request.setAttribute** .
+* Lorsque vous souhaitez renseigner le formulaire adaptatif avec les données stockées, vous récupérez les données associées au GUID et renseignez le formulaire adaptatif à l’aide de la variable **request.setAttribute** .
 
 ## Démonstration du cas pratique
 
