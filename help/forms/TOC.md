@@ -5,9 +5,9 @@ user-guide-title: Vidéos et tutoriels d’AEM Forms
 user-guide-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés.
 breadcrumb-title: Tutoriels sur AEM Forms
 index: y
-source-git-commit: 160471fdc34439da6c312d65b252eaa941b7c7a2
+source-git-commit: b7ff98dccc1381abe057a80b96268742d0a0629b
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1657'
 ht-degree: 3%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 3%
    + [Authentification à deux facteurs](some-useful-integrations/two-factor-authentication.md)
    + [Extraction de données OCR](some-useful-integrations/ocr-data-extraction.md)
    + [Listes déroulantes en cascade](some-useful-integrations/geonames-org.md)
+   + [Intégration à ServiceNow](some-useful-integrations/service-now.md)
 + Création d’un lot OSGi {#creating-your-first-osgi-bundle}
    + [Configuration de votre environnement](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [Création d’un service OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
@@ -210,7 +211,7 @@ ht-degree: 3%
    + [Utilisation d’Output et du service Forms dans AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Génération de plusieurs pdf à partir d’un fichier de données](document-services/generate-multi-record-pdf.md)
    + [Générer un PDF lors de l’envoi du formulaire mobile](document-services/generate-pdf-from-mobile-form-submission-article.md)
-   + [Générer un PDF interactif à partir d’un formulaire pour périphériques mobiles](document-services/render-interactive-form-using-api.md)
+   + [Générer un PDF interactif à partir du formulaire Mobile](document-services/render-interactive-form-using-api.md)
    + [Générer un document d’enregistrement interactif à partir d’un formulaire adaptatif](document-services/generate-interactive-dor.md)
    + [Configuration des informations d’identification Reader Extensions](document-services/configuring-reader-extension-osgi.md)
    + [Application des droits d’utilisation au PDF sur le rendu XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)

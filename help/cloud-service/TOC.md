@@ -4,10 +4,10 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 7994860f6d0ea017aa48e326482bc8e77af6f555
+source-git-commit: b7ff98dccc1381abe057a80b96268742d0a0629b
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 31%
+source-wordcount: '725'
+ht-degree: 30%
 
 ---
 
@@ -172,6 +172,14 @@ ht-degree: 31%
       + [Création d’une configuration de lot USC](./forms/formscs-batch-api/configure-usc-batch.md)
       + [Créer une configuration de lot](./forms/formscs-batch-api/create-batch-config.md)
       + [Exécuter le lot](./forms/formscs-batch-api/execute-batch-generate-documents.md)
+   + Manipulation de PDF dans Forms CS{#forms-cs-assembler}
+      + [Présentation](./forms/forms-cs-assembler/introduction.md)
+      + [Création d’informations d’identification de service](./forms/forms-cs-assembler/service-credentials.md)
+      + [Création d’un jeton JWT](./forms/forms-cs-assembler/create-jwt.md)
+      + [Créer un jeton d’accès](./forms/forms-cs-assembler/create-access-token.md)
+      + [Assemblage de fichiers de PDF](./forms/forms-cs-assembler/assemble-pdf-files.md)
+      + [Tester la solution](./forms/forms-cs-assembler/test.md)
+      + [Défi](./forms/forms-cs-assembler/challenge.md)
    + Stockage du portail Azure{#forms-cs-azure-portal}
       + [Présentation](./forms/forms-cs-azure-portal/introduction.md)
       + [Création d’un modèle de données de formulaire](./forms/forms-cs-azure-portal/create-fdm.md)
