@@ -13,9 +13,9 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: c63c5c75-1deb-4c16-ba33-e2c338ef6251
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '590'
 ht-degree: 1%
 
 ---
@@ -24,22 +24,22 @@ ht-degree: 1%
 
 ![fichier env de point](assets/environment-variables/dot-env-file.png)
 
-Avant de commencer le développement des objets Worker Asset compute, assurez-vous que le projet est configuré avec les informations d’Adobe I/O et de stockage dans le cloud. Ces informations sont stockées dans la balise `.env` du projet, qui n’est utilisée que pour le développement local, et non dans Git. Le fichier `.env` permet d’exposer facilement des paires clé/valeur dans l’environnement de développement local de l’Asset compute local. Lorsque [déployant](../deploy/runtime.md) Asset compute des objets Worker à Adobe I/O Runtime, le fichier `.env` n’est pas utilisé, mais un sous-ensemble de valeurs est transmis par le biais de variables d’environnement. D’autres paramètres et secrets personnalisés peuvent également être stockés dans le fichier `.env`, tels que les informations d’identification de développement pour les services web tiers.
+Avant de commencer le développement des objets Worker Asset compute, assurez-vous que le projet est configuré avec les informations d’Adobe I/O et de stockage dans le cloud. Ces informations sont stockées dans la variable `.env`  qui est utilisé uniquement pour le développement local, et non pour l’enregistrement dans Git. Le `.env` fournit un moyen pratique d’exposer les paires clé/valeur à l’environnement de développement local de l’Asset compute local. When [déploiement](../deploy/runtime.md) asset compute des agents dans Adobe I/O Runtime, le `.env` n’est pas utilisé, mais un sous-ensemble de valeurs est transmis par le biais de variables d’environnement. D’autres paramètres et secrets personnalisés peuvent être stockés dans la variable `.env` , par exemple les informations d’identification de développement pour les services web tiers.
 
-## Référencez `private.key`
+## Référencez la variable `private.key`
 
 ![clé privée](assets/environment-variables/private-key.png)
 
-Ouvrez le fichier `.env`, annulez la mise en commentaire de la clé `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` et indiquez le chemin absolu sur votre système de fichiers vers la balise `private.key` qui correspond au certificat public ajouté à votre projet FireFly d’Adobe I/O.
+Ouvrez le `.env` , annulez la mise en commentaire du fichier `ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH` et fournissez le chemin d’accès absolu à la variable `private.key` qui correspond au certificat public ajouté à votre projet Adobe I/O App Builder.
 
-+ Si votre paire de clés a été générée par Adobe I/O, elle a été automatiquement téléchargée dans le cadre de la fonction `config.zip`.
++ Si votre paire de clés a été générée par Adobe I/O, elle a été automatiquement téléchargée dans le cadre du  `config.zip`.
 + Si vous avez fourni la clé publique à Adobe I/O, vous devez également être en possession de la clé privée correspondante.
 + Si vous ne disposez pas de ces paires de clés, vous pouvez générer de nouvelles paires de clés ou charger de nouvelles clés publiques au bas de :
-   [https://console.adobe.com](https://console.adobe.io)  > Votre projet Asset compute Firefly > Espaces de travail @ Développement > Compte de service (JWT).
+   [https://console.adobe.com](https://console.adobe.io) > Votre projet Asset compute App Builder > Espaces de travail @ Développement > Compte de service (JWT).
 
-Souvenez-vous que le fichier `private.key` ne doit pas être archivé dans Git, car il contient des secrets. Il doit plutôt être stocké dans un emplacement sécurisé en dehors du projet.
+Mémoriser `private.key` ne doit pas être archivé dans Git, car il contient des secrets. Il doit plutôt être stocké dans un emplacement sécurisé en dehors du projet.
 
-Par exemple, sur macOS, cela peut se présenter comme suit :
+Par exemple, sur macOS, ceci peut se présenter comme suit :
 
 ```
 ...
@@ -49,19 +49,19 @@ ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=/Users/example-user/credentials/aem-guides-w
 
 ## Configuration des informations d’identification de Cloud Storage
 
-Le développement local des employés d’Asset compute nécessite l’accès à l’[espace de stockage dans le cloud](../set-up/accounts-and-services.md#cloud-storage). Les informations d’identification de l’espace de stockage dans le cloud utilisées pour le développement local sont fournies dans le fichier `.env` .
+Le développement local des Assets compute nécessite l&#39;accès à [espace de stockage](../set-up/accounts-and-services.md#cloud-storage). Les informations d’identification de l’espace de stockage dans le cloud utilisées pour le développement local sont fournies dans la variable `.env` fichier .
 
-Ce tutoriel préfère l’utilisation du stockage Azure Blob. Toutefois, Amazon S3 et ses clés correspondantes dans le fichier `.env` peuvent être utilisées à la place.
+Ce tutoriel préfère l’utilisation du stockage Azure Blob, mais Amazon S3 et ses clés correspondantes dans le `.env` peut être utilisé à la place.
 
 ### Utilisation du stockage Azure Blob
 
-Supprimez les commentaires et renseignez les clés suivantes dans le fichier `.env` et renseignez-les avec les valeurs de l’espace de stockage cloud configuré sur Azure Portal.
+Supprimez les commentaires et renseignez les clés suivantes dans la variable `.env` et renseignez-les avec les valeurs de l’espace de stockage cloud configuré sur Azure Portal.
 
 ![Stockage Azure Blob](./assets/environment-variables/azure-portal-credentials.png)
 
-1. Valeur de la clé `AZURE_STORAGE_CONTAINER_NAME`
-1. Valeur de la clé `AZURE_STORAGE_ACCOUNT`
-1. Valeur de la clé `AZURE_STORAGE_KEY`
+1. Valeur de la variable `AZURE_STORAGE_CONTAINER_NAME` key
+1. Valeur de la variable `AZURE_STORAGE_ACCOUNT` key
+1. Valeur de la variable `AZURE_STORAGE_KEY` key
 
 Par exemple, cela peut ressembler à (valeurs pour l’illustration uniquement) :
 
@@ -73,15 +73,15 @@ AZURE_STORAGE_CONTAINER_NAME=asset-compute
 ...
 ```
 
-Le fichier `.env` obtenu se présente comme suit :
+Le résultat `.env` se présente comme suit :
 
 ![Informations d’identification Azure Blob Storage](assets/environment-variables/cloud-storage-credentials.png)
 
-Si vous n’utilisez PAS le stockage Blob Microsoft Azure, supprimez ou laissez les commentaires (en ajoutant un préfixe `#`).
+Si vous n’utilisez PAS le stockage Blob Azure Microsoft, supprimez ou laissez les commentaires (en ajoutant le préfixe `#`).
 
 ### Utilisation de l’espace de stockage dans le cloud Amazon S3{#amazon-s3}
 
-Si vous utilisez l’espace de stockage dans le cloud Amazon S3, supprimez les commentaires et renseignez les clés suivantes dans le fichier `.env` .
+Si vous utilisez l’espace de stockage dans le cloud Amazon S3, supprimez les commentaires et renseignez les clés suivantes dans la variable `.env` fichier .
 
 Par exemple, cela peut ressembler à (valeurs pour l’illustration uniquement) :
 
@@ -96,7 +96,7 @@ AWS_REGION=us-east-1
 
 ## Validation de la configuration du projet
 
-Une fois le projet d’Asset compute généré configuré, validez la configuration avant d’apporter des modifications au code pour vous assurer que les services de prise en charge sont configurés, dans les fichiers `.env`.
+Une fois le projet d’Asset compute généré configuré, validez la configuration avant d’apporter des modifications au code pour vous assurer que les services de prise en charge sont configurés, dans la variable `.env` fichiers .
 
 Pour lancer l’outil de développement d’Asset compute pour le projet d’Asset compute :
 
@@ -106,7 +106,7 @@ Pour lancer l’outil de développement d’Asset compute pour le projet d’Ass
    $ aio app run
    ```
 
-1. L’outil de développement d’Asset compute local s’ouvre dans votre navigateur Web par défaut à l’adresse __http://localhost:9000__.
+1. L’outil de développement d’Assets compute local s’ouvre dans votre navigateur Web par défaut à l’adresse __http://localhost:9000__.
 
    ![exécution de l’application aio](assets/environment-variables/aio-app-run.png)
 

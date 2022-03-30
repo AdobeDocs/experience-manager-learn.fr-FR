@@ -1,6 +1,6 @@
 ---
-title: Extensibilité des microservices d’Asset compute pour AEM en tant que Cloud Service
-description: Ce tutoriel décrit la création d’un objet Worker d’Assets compute simple qui crée un rendu de ressource en recadrant la ressource d’origine sur un cercle et en appliquant un contraste et une luminosité configurables. Bien que le programme de travail lui-même soit de base, ce tutoriel l’utilise pour explorer la création, le développement et le déploiement d’un programme de travail d’Asset compute personnalisé à utiliser avec AEM en tant que Cloud Service.
+title: Extensibilité des microservices d’Asset compute pour AEM as a Cloud Service
+description: Ce tutoriel décrit la création d’un objet Worker d’Assets compute simple qui crée un rendu de ressource en recadrant la ressource d’origine sur un cercle et en appliquant un contraste et une luminosité configurables. Bien que le programme de travail lui-même soit de base, ce tutoriel l’utilise pour explorer la création, le développement et le déploiement d’un programme de travail d’Asset compute personnalisé à utiliser avec AEM as a Cloud Service.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
@@ -13,9 +13,9 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1020'
 ht-degree: 3%
 
 ---
@@ -24,13 +24,13 @@ ht-degree: 3%
 
 AEM en tant que microservices d’Asset compute Cloud Service prennent en charge le développement et le déploiement de programmes de travail personnalisés utilisés pour lire et manipuler les données binaires des ressources stockées dans AEM, le plus souvent, pour créer des rendus de ressources personnalisés.
 
-Alors que dans AEM 6.x, les processus AEM personnalisés étaient utilisés pour lire, transformer et écrire des rendus de ressources, dans l’ en tant qu’Asset compute Cloud Service les programmes de travail répondent à ce besoin.
+Alors que dans AEM 6.x, les processus AEM personnalisés étaient utilisés pour lire, transformer et écrire des rendus de ressources, dans les Assets compute as a Cloud Service, les processus répondent à ce besoin.
 
 ## Ce que vous allez faire
 
 >[!VIDEO](https://video.tv.adobe.com/v/40965?quality=12&learn=on)
 
-Ce tutoriel décrit la création d’un objet Worker d’Assets compute simple qui crée un rendu de ressource en recadrant la ressource d’origine sur un cercle et en appliquant un contraste et une luminosité configurables. Bien que le programme de travail lui-même soit de base, ce tutoriel l’utilise pour explorer la création, le développement et le déploiement d’un programme de travail d’Asset compute personnalisé à utiliser avec AEM en tant que Cloud Service.
+Ce tutoriel décrit la création d’un objet Worker d’Assets compute simple qui crée un rendu de ressource en recadrant la ressource d’origine sur un cercle et en appliquant un contraste et une luminosité configurables. Bien que le programme de travail lui-même soit de base, ce tutoriel l’utilise pour explorer la création, le développement et le déploiement d’un programme de travail d’Asset compute personnalisé à utiliser avec AEM as a Cloud Service.
 
 ### Objectifs {#objective}
 
@@ -38,7 +38,7 @@ Ce tutoriel décrit la création d’un objet Worker d’Assets compute simple q
 1. Création et configuration d’un projet Asset compute
 1. Développer un objet Worker am Asset compute qui génère un rendu personnalisé
 1. Rédigez des tests pour et apprenez à déboguer le programme de travail d’Asset compute personnalisé.
-1. Déployez Asset compute Worker et intégrez-le AEM en tant que service de création de Cloud Service via les profils de traitement
+1. Déployez Asset compute Worker et intégrez-le AEM service Auteur as a Cloud Service via les profils de traitement
 
 ## Configuration
 
@@ -46,7 +46,7 @@ Découvrez comment vous préparer correctement à étendre les employés d’Ass
 
 ### Approvisionnement des comptes et des services{#accounts-and-services}
 
-Les comptes et services suivants nécessitent la mise en service et l’accès à pour suivre le tutoriel, AEM en tant que programme Sandbox ou environnement de développement de Cloud Service, l’accès à Adobe Project Firefly et à Microsoft Azure Blob Storage.
+Les comptes et services suivants nécessitent la mise en service et l’accès à pour suivre le tutoriel, AEM l’environnement de développement as a Cloud Service ou le programme Sandbox, l’accès à App Builder et au stockage Azure Blob Microsoft.
 
 + [Configuration de comptes et de services](./set-up/accounts-and-services.md)
 
@@ -56,11 +56,11 @@ Le développement local de projets d’Asset compute nécessite un ensemble d’
 
 + [Configuration de l’environnement de développement local](./set-up/development-environment.md)
 
-### Adobe Project Firefly
+### App Builder
 
-Les projets Asset compute sont des projets Adobe Project Firefly spécialement définis. Par conséquent, ils nécessitent l’accès à Adobe Project Firefly dans Adobe Developer Console pour les configurer et les déployer.
+Les projets Asset compute sont des projets App Builder spécialement définis et, en tant que tels, nécessitent l’accès à App Builder dans Adobe Developer Console pour les configurer et les déployer.
 
-+ [Configuration de Adobe Project Firefly](./set-up/firefly.md)
++ [Configuration d’App Builder](./set-up/app-builder.md)
 
 ## Développer
 
@@ -68,13 +68,13 @@ Découvrez comment créer et configurer un projet Asset compute, puis développe
 
 ### Création d’un projet Asset compute
 
-Les projets d’Asset compute, qui contiennent un ou plusieurs objets Worker d’Asset compute, sont générés à l’aide de l’interface de ligne de commande de l’Adobe I/O interactif. Les projets Asset compute sont des projets Adobe Project Firefly spécialement structurés, qui sont à leur tour des projets Node.js.
+Les projets d’Asset compute, qui contiennent un ou plusieurs objets Worker d’Asset compute, sont générés à l’aide de l’interface de ligne de commande de l’Adobe I/O interactif. Les projets Asset compute sont des projets App Builder spécialement structurés, qui sont à leur tour des projets Node.js.
 
 + [Création d’un projet Asset compute](./develop/project.md)
 
 ### Configuration des variables d’environnement
 
-Les variables d’environnement sont conservées dans le fichier `.env` pour le développement local et sont utilisées pour fournir des informations d’identification d’Adobe I/O et des informations d’identification de l’espace de stockage requises pour le développement local.
+Les variables d’environnement sont conservées dans la variable `.env` pour le développement local et sont utilisés pour fournir des informations d’identification d’Adobe I/O et des informations d’identification de l’espace de stockage dans le cloud requises pour le développement local.
 
 + [Configuration des variables d’environnement ](./develop/environment-variables.md)
 
@@ -108,23 +108,23 @@ asset compute fournit une structure de test pour la création de suites de tests
 
 ### Débogage d’un programme de travail
 
-Les objets Worker Asset compute fournissent différents niveaux de débogage, de la sortie `console.log(..)` traditionnelle aux intégrations avec __VS Code__ et __wskdebug__, ce qui permet aux développeurs de parcourir le code de travail lorsqu’il s’exécute en temps réel.
+Les travailleurs de l’Asset compute fournissent divers niveaux de débogage à partir des `console.log(..)` sortie, pour les intégrations avec __Code VS__ et  __wskdebug__, ce qui permet aux développeurs de parcourir le code de travail tel qu’il s’exécute en temps réel.
 
 + [Débogage d’un programme de travail](./test-debug/debug.md)
 
-## Déploiement
+## Déploiement dʼ
 
-Découvrez comment intégrer des objets Worker Asset compute personnalisés avec AEM en tant que Cloud Service, en les déployant d’abord vers Adobe I/O Runtime, puis en appelant à partir d’AEM en tant qu’auteur Cloud Service via les profils de traitement d’AEM Assets.
+Découvrez comment intégrer des objets Worker Asset compute personnalisés avec AEM as a Cloud Service, en les déployant d’abord vers Adobe I/O Runtime, puis en appelant à partir d’AEM’auteur as a Cloud Service via les profils de traitement d’AEM Assets.
 
 ### Déploiement sur Adobe I/O Runtime
 
-Les objets Worker Asset compute doivent être déployés sur Adobe I/O Runtime pour être utilisés avec AEM en tant que Cloud Service.
+Les employés d’Asset compute doivent être déployés sur Adobe I/O Runtime pour être utilisés avec AEM as a Cloud Service.
 
 + [Utilisation des profils de traitement](./deploy/runtime.md)
 
 ### Intégrer des objets Worker via des profils de traitement AEM
 
-Une fois déployé dans Adobe I/O Runtime, les objets Worker Asset compute peuvent être enregistrés en tant que Cloud Service dans AEM via [Profils de traitement des ressources](../../assets/configuring/processing-profiles.md). Les profils de traitement sont, à leur tour, appliqués aux dossiers de ressources s’appliquant aux ressources qu’ils contiennent.
+Une fois déployé dans Adobe I/O Runtime, les Assets compute peuvent être enregistrés dans AEM as a Cloud Service via [Profils de traitement des ressources](../../assets/configuring/processing-profiles.md). Les profils de traitement sont, à leur tour, appliqués aux dossiers de ressources s’appliquant aux ressources qu’ils contiennent.
 
 + [Intégration aux profils de traitement AEM](./deploy/processing-profiles.md)
 
@@ -132,7 +132,7 @@ Une fois déployé dans Adobe I/O Runtime, les objets Worker Asset compute peuve
 
 Ces tutoriels abrégés abordent des cas d’utilisation plus avancés en s’appuyant sur des connaissances fondamentales établies dans les chapitres précédents.
 
-+ [Développez un ](./advanced/metadata.md) processus de métadonnées d’Asset compute qui peut écrire des métadonnées dans le
++ [Développement d’un objet Worker de métadonnées d’Asset compute](./advanced/metadata.md) qui peut réécrire des métadonnées dans le
 
 ## Codebase sur Github
 
@@ -140,7 +140,7 @@ Le code base du tutoriel est disponible sur Github à l’adresse :
 
 + [adobe/aem-guides-wknd-asset-compute](https://github.com/adobe/aem-guides-wknd-asset-compute) @ branche principale
 
-Le code source ne contient pas les fichiers `.env` ou `config.json` requis. Ils doivent être ajoutés et configurés à l’aide de vos [comptes et services](#accounts-and-services) informations.
+Le code source ne contient pas les `.env` ou `config.json` fichiers . Ils doivent être ajoutés et configurés à l’aide de la fonction [comptes et services](#accounts-and-services) informations.
 
 ## Ressources supplémentaires
 
