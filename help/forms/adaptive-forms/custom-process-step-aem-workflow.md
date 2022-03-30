@@ -6,13 +6,13 @@ version: 6.5
 topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 2b7f0f6c34803672cc57425811db89146b38a70a
+exl-id: 879518db-3f05-4447-86e8-5802537584e5
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 4%
 
 ---
-
 
 # Étape de processus personnalisée
 
@@ -27,20 +27,18 @@ Pour réaliser le cas d’utilisation ci-dessus, vous écrirez généralement un
 
 ## Créer un projet Maven
 
-La première étape consiste à créer un projet Maven à l’aide de l’archétype Maven d’Adobe approprié. Les étapes détaillées sont répertoriées dans cet [article](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Une fois votre projet Maven importé dans eclipse, vous êtes prêt à commencer à écrire votre premier composant OSGi qui peut être utilisé dans votre étape de processus.
+La première étape consiste à créer un projet Maven à l’aide de l’archétype Maven d’Adobe approprié. Les étapes détaillées sont répertoriées dans cette section [article](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Une fois votre projet Maven importé dans eclipse, vous êtes prêt à commencer à écrire votre premier composant OSGi qui peut être utilisé dans votre étape de processus.
 
 
 ### Créer une classe qui implémente WorkflowProcess
 
-Ouvrez le projet Maven dans votre IDE eclipse. Développez le dossier **nom_projet** > **core**. Développez le dossier src/main/java . Vous devriez voir un package qui se termine par &quot;core&quot;. Créez une classe Java qui implémente WorkflowProcess dans ce module. Vous devez remplacer la méthode d’exécution. La signature de la méthode execute est la suivante :
-public void execute(WorkItem workItem, WorkflowSessionSession, MetaDataMap processArguments)renvoie WorkflowException
-La méthode execute donne accès aux 3 variables suivantes :
+Ouvrez le projet Maven dans votre IDE eclipse. Développer **projectname** > **core** dossier. Développez le dossier src/main/java . Vous devriez voir un package qui se termine par &quot;core&quot;. Créez une classe Java qui implémente WorkflowProcess dans ce module. Vous devez remplacer la méthode d’exécution. La signature de la méthode d’exécution est la suivante : public void execute (WorkItem, WorkflowSession workflowSession, MetaDataMap processArguments)renvoie WorkflowException La méthode d’exécution donne accès aux 3 variables suivantes
 
-**WorkItem** : La variable workItem donne accès aux données liées au workflow. La documentation de l’API publique est disponible [ici.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkItem**: La variable workItem donne accès aux données liées au workflow. La documentation de l’API publique est disponible [ici.](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession** : Cette variable workflowSession vous permet de contrôler le workflow. La documentation de l’API publique est disponible [ici](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
+**WorkflowSession**: Cette variable workflowSession vous permet de contrôler le workflow. La documentation de l’API publique est disponible [here](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**MetaDataMap** : Toutes les métadonnées associées au workflow. Tous les arguments de processus transmis à l’étape de processus sont disponibles à l’aide de l’objet MetaDataMap .[Documentation d’API](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
+**MetaDataMap**: Toutes les métadonnées associées au workflow. Tous les arguments de processus transmis à l’étape de processus sont disponibles à l’aide de l’objet MetaDataMap .[Documentation d’API](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
 Dans ce tutoriel, nous allons écrire les pièces jointes ajoutées au formulaire adaptatif dans le système de fichiers dans le cadre du processus AEM.
 
@@ -148,10 +146,10 @@ Le service QueryBuilder est utilisé pour interroger des noeuds de type nt:file 
 
 #### Création et déploiement
 
-[Créez le lot comme décrit ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/create-your-first-osgi-bundle.html?lang=en#build-your-project)
-[ici : assurez-vous que le lot est déployé et en principal état.](http://localhost:4502/system/console/bundles)
+[Créez le lot comme décrit ici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+[Assurez-vous que le lot est déployé et en principal état](http://localhost:4502/system/console/bundles)
 
-Créer un modèle de processus. Effectuez un glisser-déposer de l’étape de processus dans le modèle de workflow. Associez l’étape de processus à &quot;Enregistrer les pièces jointes de formulaire adaptatif dans le système de fichiers&quot;.
+Créer un modèle de workflow. Effectuez un glisser-déposer de l’étape de processus dans le modèle de workflow. Associez l’étape de processus à &quot;Enregistrer les pièces jointes de formulaire adaptatif dans le système de fichiers&quot;.
 
 Fournissez les arguments de processus nécessaires séparés par une virgule. Par exemple, Pièces jointes, c:\\scrappp\\. Le premier argument est le dossier dans lequel vos pièces jointes de formulaire adaptatif seront stockées par rapport à la charge utile du workflow. Il doit s’agir de la même valeur que celle spécifiée lors de la configuration de l’action d’envoi du formulaire adaptatif. Le deuxième argument correspond à l’emplacement où vous souhaitez que les pièces jointes soient stockées.
 
@@ -160,4 +158,3 @@ Création d’un formulaire adaptatif. Faites glisser et déposez le composant P
 Enregistrez les paramètres.
 
 Prévisualiser le formulaire. Ajoutez quelques pièces jointes et envoyez le formulaire. Les pièces jointes doivent être enregistrées dans le système de fichiers à l’emplacement spécifié par vous dans le workflow.
-

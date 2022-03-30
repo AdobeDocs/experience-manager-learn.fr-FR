@@ -7,20 +7,19 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
-source-git-commit: f1afccdad8d819604c510421204f59e7b3dc68e4
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 12%
+source-wordcount: '356'
+ht-degree: 13%
 
 ---
 
 # Application d’extensions de Reader
 
 Les extensions de Reader vous permettent de manipuler les droits d’utilisation des documents PDF. Les droits d’utilisation correspondent à une fonctionnalité disponible dans Acrobat , mais non dans Adobe Reader. La fonctionnalité contrôlée par les extensions Reader permet d’ajouter des commentaires à un document, de remplir des formulaires et d’enregistrer le document. Les documents PDF dotés de droits d’utilisation sont appelés des documents dont les droits sont activés. Un utilisateur qui ouvre un document PDF dont les droits sont activés dans Adobe Reader peut effectuer les opérations qui sont autorisées pour ce document.
-Pour tester cette fonctionnalité, vous pouvez essayer ce [lien](https://forms.enablementadobe.com/content/forms/af/applyreaderextensions.html).
 
 Pour réaliser ce cas pratique, procédez comme suit :
-* [Ajoutez le ](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) certificat Reader Extensions à l’ `fd-service` utilisateur.
+* [Ajout du certificat Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) to `fd-service` utilisateur.
 
 ## Création d’un service OSGi personnalisé
 
@@ -195,7 +194,7 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 
 Pour le tester sur votre serveur local, procédez comme suit :
 1. [Télécharger et installer le bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Téléchargez et installez le bundle](assets/ares.ares.core-ares.jar) ares.ares.core-ares. Il dispose du service personnalisé et du servlet pour appliquer des droits d’utilisation et diffuser le pdf en continu.
+1. [Téléchargez et installez le bundle ares.ares.core-ares.](assets/ares.ares.core-ares.jar). Il dispose du service personnalisé et du servlet pour appliquer des droits d’utilisation et diffuser le pdf en continu.
 1. [Importation des bibliothèques clientes et envoi personnalisé](assets/applyaresdemo.zip)
 1. [Importation du formulaire adaptatif](assets/applyaresform.zip)
 1. Ajoutez le certificat des extensions de Reader à l’utilisateur &quot;fd-service&quot;. Assurez-vous que l&#39;alias est &quot;ares&quot;.

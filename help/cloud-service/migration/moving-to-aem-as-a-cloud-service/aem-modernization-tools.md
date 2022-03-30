@@ -8,10 +8,10 @@ level: Experienced
 kt: 8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 8%
+source-wordcount: '438'
+ht-degree: 3%
 
 ---
 
@@ -33,22 +33,18 @@ Les outils de modernisation d’AEM convertissent automatiquement les pages AEM 
 + Cloner AEM production 6.x pour exécuter AEM outils de modernisation par rapport à
 + Téléchargez et installez le [les derniers outils de modernisation des AEM](https://github.com/adobe/aem-modernize-tools/releases/latest) sur le clone de production AEM 6.x via Package Manager
 
-+ [Convertisseur de structure de page](https://opensource.adobe.com/aem-modernize-tools/pages/tools/page-structure.html) met à jour le contenu d’une page existante d’un modèle statique à un modèle modifiable mappé à l’aide de conteneurs de mise en page.
++ [Convertisseur de structure de page](https://opensource.adobe.com/aem-modernize-tools/pages/structure/about.html) met à jour le contenu d’une page existante d’un modèle statique à un modèle modifiable mappé à l’aide de conteneurs de mise en page.
    + Définition de règles de conversion à l’aide de la configuration OSGi
    + Exécuter le convertisseur de structure de page par rapport aux pages existantes
 
-+ [Convertisseur de composants](https://opensource.adobe.com/aem-modernize-tools/pages/tools/component.html) met à jour le contenu d’une page existante d’un modèle statique à un modèle modifiable mappé à l’aide de conteneurs de mise en page.
++ [Convertisseur de composants](https://opensource.adobe.com/aem-modernize-tools/pages/component/about.html) met à jour le contenu d’une page existante d’un modèle statique à un modèle modifiable mappé à l’aide de conteneurs de mise en page.
    + Définir des règles de conversion via des définitions de noeud JCR/XML
    + Exécutez l’outil de convertisseur de composants par rapport aux pages existantes.
 
-+ [Importateur de stratégies](https://opensource.adobe.com/aem-modernize-tools/pages/tools/policy-importer.html) crée des stratégies à partir de la configuration de conception
++ [Importateur de stratégies](https://opensource.adobe.com/aem-modernize-tools/pages/policy/about.html) crée des stratégies à partir de la configuration de conception
    + Définition de règles de conversion à l’aide de définitions de noeud JCR/XML
    + Exécuter l’importateur de stratégies par rapport aux définitions de conception existantes
    + Application de stratégies importées à des composants et des conteneurs AEM
-
-+ [Convertisseur de boîtes de dialogue](https://opensource.adobe.com/aem-modernize-tools/pages/tools/dialog.html) convertit les boîtes de dialogue de composants Classic (ExtJS) et CoralUI 2 en boîtes de dialogue de composants CoralUI 3 TouchUI.
-   + Exécutez l’outil Dialog Converter par rapport aux boîtes de dialogue ExtJS ou Coral2 basées sur l’interface utilisateur existantes.
-   + Synchronisation des boîtes de dialogue converties dans le référentiel Git
 
 ## Exercice pratique
 
@@ -94,6 +90,5 @@ Assurez-vous également que vous avez terminé l’exercice pratique précédent
 + [Astuces AEM - Présentation d’AEM Modernization Suite](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
 
 
-
-1. Déployez le site wknd-legacy récemment modernisé sur le SDK Cloud Service local. Disponible ici :
-+ [Portail de distribution de logiciels](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.htm).
+1. Déployez le site wknd-legacy récemment modernisé sur le SDK AEM local. AEM Demander peut être téléchargé ici :
++ [Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

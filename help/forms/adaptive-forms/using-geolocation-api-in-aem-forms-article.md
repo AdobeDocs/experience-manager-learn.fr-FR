@@ -1,28 +1,26 @@
 ---
 title: Utilisation des API de géolocalisation dans Forms adaptatif
 description: Renseignez les champs d’adresse de votre formulaire à l’aide des API de géolocalisation.
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.3,6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 50db6155-ee83-4ddb-9e3a-56e8709222db
+source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 5%
+source-wordcount: '390'
+ht-degree: 4%
 
 ---
 
-
 # Utilisation des API de géolocalisation dans Forms adaptatif{#using-geolocation-api-s-in-adaptive-forms}
 
-Consultez la page [Exemples AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#collapse1) pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
-
-Dans cet article, nous allons examiner l’utilisation de l’API de géolocalisation de Google pour renseigner les champs d’un formulaire adaptatif. Ce cas pratique est généralement utilisé lorsque vous souhaitez remplir les champs d’adresse actuels d’un formulaire.
+Dans cet article, nous allons examiner l’utilisation de l’API de géolocalisation Google pour renseigner les champs d’un formulaire adaptatif. Ce cas pratique est généralement utilisé lorsque vous souhaitez remplir les champs d’adresse actuels d’un formulaire.
 
 Les étapes suivantes ont été suivies pour utiliser l’API de géolocalisation dans Forms adaptatif.
 
-1. [Procurez-vous le ](https://developers.google.com/maps/documentation/javascript/get-api-key) Clé API de Google pour utiliser la plateforme Google Maps. Vous pouvez obtenir une clé d’évaluation valable pendant 1 an.
+1. [Obtenir la clé API](https://developers.google.com/maps/documentation/javascript/get-api-key) de Google pour utiliser la plateforme Google Maps. Vous pouvez obtenir une clé d’évaluation valable pendant 1 an.
 
 1. Un fragment de formulaire adaptatif a été créé avec des champs pour contenir l’adresse actuelle.
 
@@ -77,7 +75,7 @@ var url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="+position.c
 
 ![Champs renseignés avec l’api geoloaction](assets/capture-4.gif)
 
-Dans la ligne 1, nous utilisons l’API de géolocalisation HTML pour obtenir l’emplacement actuel. Une fois l’emplacement actuel obtenu, nous transmettons l’emplacement actuel à la fonction showPosition .
+Dans la ligne 1, nous utilisons l’API de géolocalisation de HTML pour obtenir la position actuelle. Une fois l’emplacement actuel obtenu, nous transmettons l’emplacement actuel à la fonction showPosition .
 
 Dans la fonction showPosition , nous utilisons l’API Google pour récupérer les détails de l’adresse pour la latitude et la longitude données.
 
@@ -96,11 +94,11 @@ Pour activer cette fonctionnalité sur votre serveur, procédez comme suit :
 * Installez et démarrez le serveur AEM Forms.
 
 >!![NOTE] Cette fonctionnalité a été testée sur AEM Forms 6.3 et versions ultérieures.
-* [Obtention de la clé API Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
+* [Obtenir la clé API Google](https://developers.google.com/maps/documentation/javascript/get-api-key).
 * [Importez dans AEM les actifs liés à cet article.](assets/geolocationapi.zip)
 * [Ouvrez le fragment de formulaire adaptatif en mode d’édition.](http://localhost:4502/editor.html/content/forms/af/currentaddressfragment.html)
 * Ouvrez l’éditeur de règles pour le composant Choix d’image .
-* Remplacez &lt;your_api_key> par la clé API Google.
+* Remplacez la variable &lt;your_api_key> avec la clé API Google.
 * Enregistrez vos modifications.
 * [Prévisualiser le formulaire](http://localhost:4502/content/dam/formsanddocuments/currentaddressfragment/jcr:content?wcmmode=disabled).
 * Cliquez sur l&#39;icône &quot;géolocalisation&quot;.
