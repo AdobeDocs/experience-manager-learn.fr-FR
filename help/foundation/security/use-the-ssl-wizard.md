@@ -13,10 +13,10 @@ topic: Security
 role: Developer
 level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
-source-git-commit: 835c01cb2ad1d154437087c51c70a2daf90493dd
+source-git-commit: 2d5446197b9b81a4dbe4eaa5a7cb4fcdd5d63f67
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 1%
+source-wordcount: '211'
+ht-degree: 0%
 
 ---
 
@@ -26,6 +26,8 @@ Adobe Experience Manager : assistant de configuration SSL pour faciliter la conf
 
 >[!VIDEO](https://video.tv.adobe.com/v/17993/?quality=12&learn=on)
 
+Ouvrez le __Assistant de configuration SSL__ peut être ouvert directement en accédant à __Auteur AEM > Outils > Sécurité > Configuration SSL__.
+
 >[!NOTE]
 >
 >Pour les environnements gérés, il est préférable que le service informatique fournisse des certificats et des clés approuvés par une autorité de certification.
@@ -34,9 +36,9 @@ Adobe Experience Manager : assistant de configuration SSL pour faciliter la conf
 
 ## Clé privée et téléchargement de certificat auto-signé
 
-Le fichier zip suivant contient les fichiers [!DNL DER] et [!DNL CRT] nécessaires à la configuration AEM SSL sur localhost et destiné uniquement à des fins de développement local.
+Le fichier zip suivant contient [!DNL DER] et [!DNL CRT] fichiers requis pour la configuration d’AEM SSL sur localhost et destinés uniquement à des fins de développement local.
 
-Les fichiers [!DNL DER] et [!DNL CERT] sont fournis à titre de commodité et générés en suivant les étapes décrites dans la section Générer une clé privée et un certificat auto-signé ci-dessous.
+Le [!DNL DER] et [!DNL CERT] Les fichiers sont fournis à titre de commodité et générés en suivant les étapes décrites dans la section Générer une clé privée et un certificat auto-signé ci-dessous.
 
 Si nécessaire, l’expression de transmission de certificat est **admin**.
 
@@ -46,7 +48,7 @@ localhost : clé privée et certificat autosigné.zip (expire en juillet 2028)
 
 ## Clé privée et génération de certificat auto-signé
 
-La vidéo ci-dessus illustre la configuration et la configuration de SSL sur une instance d’auteur AEM à l’aide de certificats auto-signés. Les commandes ci-dessous utilisant [[!DNL OpenSSL]](https://www.openssl.org/) peuvent générer une clé privée et un certificat à utiliser à l’étape 2 de l’assistant.
+La vidéo ci-dessus illustre la configuration et la configuration de SSL sur une instance d’auteur AEM à l’aide de certificats auto-signés. Les commandes ci-dessous utilisant [[!DNL OpenSSL]](https://www.openssl.org/) peut générer une clé privée et un certificat à utiliser à l’étape 2 de l’assistant.
 
 ```shell
 ### Create Private Key
