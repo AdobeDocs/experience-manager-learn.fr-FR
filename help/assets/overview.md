@@ -3,10 +3,10 @@ title: Vidéos et tutoriels d’AEM Assets
 description: Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Assets
 sub-product: assets, dynamic-media
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: b7ff3e9abd22bb0c3d791ec3ac7da3562e849912
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 22%
+source-wordcount: '186'
+ht-degree: 26%
 
 ---
 
@@ -14,27 +14,11 @@ ht-degree: 22%
 
 Adobe Experience Manager (AEM) Assets est un outil de gestion des ressources numériques d’AEM Platform qui permet aux utilisateurs de créer, gérer et partager leurs ressources numériques (images, vidéos, documents et clips audio) dans un référentiel web. Ce guide de l’utilisateur contient des vidéos et des tutoriels sur les nombreuses fonctionnalités d’AEM Assets.
 
-## Nouveautés
+## Présentation d’AEM Assets
 
-* **[Relation et dissociation (vidéo)](./authoring/relate-unrelate.md)**
+Regardez cette présentation exhaustive d’AEM Assets qui explique ce qu’est AEM Assets et comment il peut être utilisé pour atteindre les objectifs commerciaux de votre entreprise.
 
-   *Découvrez comment établir et gérer des relations entre les ressources dans AEM*
-
-* **[Publication de ressources (vidéo)](./sharing/publish.md)**
-
-   *Découvrez les avantages et les inconvénients de la publication de ressources de l’auteur AEM vers la publication AEM*
-
-* **[Filigranes (vidéo)](./advanced/watermarks.md)**
-
-   *Découvrez comment mettre en filigrane les rendus de ressources dans AEM as a Cloud Service*
-
-* **[Autorisations de base (vidéo)](./configuring/baseline-permissions.md)**
-
-   *Découvrez comment et pourquoi il est important de configurer AEM Assets avec des autorisations de base*
-
-* **[Workflows de démarrage automatique (vidéo)](./configuring/auto-start-workflows.md)**
-
-   *Découvrez comment appeler automatiquement AEM workflow sur les ressources chargées ou retraitées*
+>[!VIDEO](https://video.tv.adobe.com/v/336196/?quality=12&learn=on)
 
 ## Sélections du personnel
 
