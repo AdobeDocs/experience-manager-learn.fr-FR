@@ -8,17 +8,24 @@ role: Architect, Developer
 level: Intermediate
 kt: 9354
 thumbnail: KT-9354.jpeg
-source-git-commit: 6f047a76693bc05e64064fce6f25348037749f4c
+exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
+source-git-commit: 6e7130cd98700bdb5e7f330ca0506fe89ea0eb94
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 0%
+source-wordcount: '268'
+ht-degree: 4%
 
 ---
 
-
 # Mise en réseau avancée
 
-AEM as a Cloud Service propose trois options pour gérer la connectivité avec les services externes. Un programme Cloud Manager et ses environnements as a Cloud Service AEM ne peuvent utiliser qu’un seul type de configuration réseau avancée à la fois, afin de vous assurer que le type le plus approprié est sélectionné.
+AEM as a Cloud Service fournit des fonctionnalités de mise en réseau avancées qui permettent une gestion précise des connexions à et depuis AEM programmes as a Cloud Service.
+
+|  | [Programmes de production](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html) | [Programmes Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html) |
+|---------------------------------------------------|:-----------------------:|:---------------------|
+| Prise en charge de la mise en réseau avancée | ✔ | ✘ |
+
+
+AEM mise en réseau avancée comprend trois options pour gérer la connectivité avec des services externes. Un programme Cloud Manager et ses environnements as a Cloud Service AEM ne peuvent utiliser qu’un seul type de configuration réseau avancée à la fois, afin de vous assurer que le type le plus approprié est sélectionné.
 
 |  | HTTP/HTTPS sur les ports standard | HTTP/HTTPS sur les ports non standard | Connexions non HTTP/HTTPS | IP sortante dédiée | Liste &quot;Hôtes sans proxy&quot; | Connexion à des services protégés par VPN | Limiter le trafic de publication AEM par IP |
 |-----------------------------------|:----------------------------:|:--------------------------------:|:--------------------------:|:-------------------:|:-------------------------------------:|:-------------------------------------:|:----:|
