@@ -4,9 +4,9 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 8631d0b23e2befa22032d0b677e0f1c7122f2cb5
+source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '731'
 ht-degree: 30%
 
 ---
@@ -178,6 +178,7 @@ ht-degree: 30%
       + [Création d’un jeton JWT](./forms/forms-cs-assembler/create-jwt.md)
       + [Créer un jeton d’accès](./forms/forms-cs-assembler/create-access-token.md)
       + [Assemblage de fichiers de PDF](./forms/forms-cs-assembler/assemble-pdf-files.md)
+      + [Utilitaires PDF/A](./forms/forms-cs-assembler/pdfa-utilities.md)
       + [Tester la solution](./forms/forms-cs-assembler/test.md)
       + [Défi](./forms/forms-cs-assembler/challenge.md)
    + Stockage du portail Azure{#forms-cs-azure-portal}

@@ -12,13 +12,13 @@ version: 6.5
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 0049c9fd864bd4dd4f8c33b1e40e94aad3ffc5b9
+exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
+source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '281'
 ht-degree: 2%
 
 ---
-
 
 # Graphiques à séries multiples
 
@@ -47,6 +47,6 @@ Pour le tester sur votre système, procédez comme suit :
 * [Téléchargez le fichier SeriesChartSampleData.json sur votre disque dur.](assets/serieschartsampledata.json) Il s’agit des données d’exemple qui seront utilisées pour remplir le graphique.
 * [Accédez à Forms et Documents.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Sélectionnez gentiment le modèle de communication interactive &quot;MutualFundGrowthFactSheet&quot;.
-* Clic sur Aperçu | Télécharger des exemples de données.
+* Clic sur Aperçu | Canal d’impression | Télécharger des exemples de données.
 * Accédez au fichier de données d’exemple fourni dans le cadre de cet article.
 * Prévisualisez le canal d’impression de la communication interactive &quot;MutualFundGrowthFactSheet&quot; avec les données d’exemple téléchargées à l’étape précédente.
