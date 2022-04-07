@@ -11,10 +11,11 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 10208
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+exl-id: 9053ee29-436a-439a-b592-c3fef9852ea4
+source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 0%
+source-wordcount: '165'
+ht-degree: 5%
 
 ---
 
@@ -22,13 +23,18 @@ ht-degree: 0%
 
 Suivez les instructions ci-dessous pour que cette fonctionnalité fonctionne sur votre serveur AEM
 
-* Créez un dossier appelé icbrouillons dans votre lecteur c.
 * [Création du schéma de la base de données](assets/icdrafts.sql)
 * [Importation de la bibliothèque cliente](assets/icdrafts.zip)
 * [Importation du formulaire adaptatif](assets/SavedDraftsAdaptiveForm.zip)
 * Création d’une source de données appelée _SaveAndContinue_
 
 ![Création d’une source de données](assets/data-source.png)
+
+| Nom de la propriété | Valeur de la propriété |
+|---|---|
+| Datasource Name | SaveAndContinue |
+| Classe de pilote JDBC  | com.mysql.cj.jdbc.Driver |
+| URL de connexion JDBC | jdbc:mysql://localhost:3306/aemformstutorial?autoReconnect=true&amp;useSSL=false&amp;characterEncoding=utf8&amp;useUnicode=true |
 
 * [Déploiement du lot icbrouts](assets/icdrafts.icdrafts.core-1.0-SNAPSHOT.jar)
 * Assurez-vous que vous _Activation de l’enregistrement à l’aide de CCRDDocumentInstanceService_ dans la configuration OSGI, comme illustré ci-dessous
