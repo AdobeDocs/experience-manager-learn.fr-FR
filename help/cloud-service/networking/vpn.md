@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: 8b95339bc2e037d3a0d9d705a94b37f268545b4f
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Un programme Cloud Manager ne peut avoir qu’une __single__ type d’infrastruc
 >
 > Lisez l’AEM as a Cloud Service [documentation sur la configuration réseau avancée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/configuring-advanced-networking.html#vpn) pour plus d’informations sur le réseau privé virtuel.
 
-## Prérequis
+## Conditions préalables
 
 Les éléments suivants sont requis lors de la configuration du réseau privé virtuel :
 
@@ -94,6 +94,10 @@ Commencez par activer le réseau privé virtuel sur AEM as a Cloud Service.
                "10.151.201.22",
                "10.151.202.22",
                "10.154.155.22"
+           ],
+           "domains": [
+               "wknd.site",
+               "wknd.com"
            ]
        },
        "connections": [{
