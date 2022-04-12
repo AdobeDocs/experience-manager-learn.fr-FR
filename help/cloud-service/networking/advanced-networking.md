@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9354
 thumbnail: KT-9354.jpeg
 exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
-source-git-commit: 6ec65dca77fff2f9da47607906088e694a656f68
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '475'
 ht-degree: 6%
 
 ---
@@ -70,6 +70,8 @@ Une fois que l’option de mise en réseau avancée la plus appropriée en fonct
 ## Exemples de code
 
 Cette collection fournit des exemples de la configuration et du code requis pour tirer parti des fonctionnalités de mise en réseau avancées pour des cas d’utilisation spécifiques.
+
+Assurez-vous que la variable [configuration réseau avancée](#advanced-networking) a été configuré avant de suivre ces tutoriels.
 
 <table><tr>
    <td>

@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9353
 thumbnail: KT-9353.jpeg
 exl-id: 5f919d7d-e51a-41e5-90eb-b1f6a9bf77ba
-source-git-commit: 4d3256cee67183803692cccc7f17ca1a0820e05d
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '284'
 ht-degree: 1%
 
 ---
@@ -33,6 +33,8 @@ En règle générale, [sortie de port flexible](../flexible-port-egress.md) est 
 
 L’exemple de code suivant est pris en charge par les options de mise en réseau avancées suivantes.
 
+Assurez-vous que la variable [approprié](../advanced-networking.md#advanced-networking) une configuration réseau avancée a été configurée avant de suivre ce tutoriel.
+
 | Pas de mise en réseau avancée | [Sortie de port flexible](../flexible-port-egress.md) | [Adresse IP sortante dédiée](../dedicated-egress-ip-address.md) | [Réseau privé virtuel](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✔ | ✔ |
@@ -44,7 +46,7 @@ Cet exemple de configuration OSGi configure AEM Mail OSGi Service pour utiliser 
 ```json
 ...
 "portForwards": [{
-    "name": "smtp.sendgrid.com",
+    "name": "smtp.mymail.com",
     "portDest": 465,
     "portOrig": 30002
 }]

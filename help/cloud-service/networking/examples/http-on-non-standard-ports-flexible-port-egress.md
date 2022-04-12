@@ -8,9 +8,10 @@ role: Architect, Developer
 level: Intermediate
 kt: 9354
 thumbnail: KT-9354.jpeg
-source-git-commit: c53277241e54c757492dbc72e53f89127af389ac
+exl-id: c8cc0385-9e94-4120-9fb1-aeccbfcc8aa4
+source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,8 @@ Les connexions HTTP/HTTPS sur les ports non standard (et non 80/443) doivent êt
 ## Prise en charge de la mise en réseau avancée
 
 L’exemple de code suivant est pris en charge par les options de mise en réseau avancées suivantes.
+
+Assurez-vous que la variable [approprié](../advanced-networking.md#advanced-networking) une configuration réseau avancée a été configurée avant de suivre ce tutoriel.
 
 | Pas de mise en réseau avancée | [Sortie de port flexible](../flexible-port-egress.md) | [Adresse IP sortante dédiée](../dedicated-egress-ip-address.md) | [Réseau privé virtuel](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
