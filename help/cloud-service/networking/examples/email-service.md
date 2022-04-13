@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9353
 thumbnail: KT-9353.jpeg
 exl-id: 5f919d7d-e51a-41e5-90eb-b1f6a9bf77ba
-source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
+source-git-commit: 8da6d5470c702620ee1121fd2688eb8756f0cebd
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '351'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,10 @@ Envoyer des emails depuis AEM as a Cloud Service en configurant AEM `DefaultMail
 Comme (la plupart) des services de messagerie ne s’exécutent pas sur HTTP/HTTPS, les connexions aux services de messagerie d’AEM as a Cloud Service doivent être traitées par proxy.
 
 + `smtp.host` est défini sur la variable d’environnement OSGi. `$[env:AEM_PROXY_HOST;default=proxy.tunnel]` il est donc acheminé par la sortie.
+   + `$[env:AEM_PROXY_HOST]` est une variable réservée qui AEM as a Cloud Service est mappée sur la variable interne `proxy.tunnel` hôte.
+   + Ne tentez PAS de définir la variable `AEM_PROXY_HOST` via Cloud Manager.
 + `smtp.port` est défini sur la valeur `portForward.portOrig` port qui mappe sur l’hôte et le port du service de messagerie de destination. Cet exemple utilise le mapping : `AEM_PROXY_HOST:30002` → `smtp.sendgrid.com:465`.
+   + Le `smpt.port` est défini sur la valeur `portForward.portOrig` et NON le port réel du serveur SMTP. Mappage entre les `smtp.port` et le `portForward.portOrig` Le port est établi par Cloud Manager `portForwards` (comme illustré ci-dessous).
 
 Puisque les secrets ne doivent pas être stockés dans le code, le nom d’utilisateur et le mot de passe du service de messagerie sont mieux fournis à l’aide de [variables de configuration OSGi secrètes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), défini à l’aide de l’interface de ligne de commande AIO ou de l’API Cloud Manager.
 
@@ -61,7 +64,7 @@ Configuration d’AEM [DefaultMailService](https://experienceleague.adobe.com/do
 {
     "smtp.host": "$[env:AEM_PROXY_HOST;default=proxy.tunnel]",
     "smtp.port": "30002",
-    "smtp.user": "$[env:EMAIL_USERNAME;default=emailapikey]",
+    "smtp.user": "$[env:EMAIL_USERNAME;default=myApiKey]",
     "smtp.password": "$[secret:EMAIL_PASSWORD]",
     "from.address": "noreply@wknd.site",
     "smtp.ssl": true,
@@ -72,8 +75,11 @@ Configuration d’AEM [DefaultMailService](https://experienceleague.adobe.com/do
 }
 ```
 
-Les éléments suivants `aio CLI` peut être utilisée pour définir les secrets OSGi par environnement :
+Le `EMAIL_USERNAME` et `EMAIL_PASSWORD` La variable OSGi et le secret peuvent être définis par environnement, à l’aide de :
 
-```shell
-$ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONMENT_ID> --secret EMAIL_USERNAME "apikey" --secret EMAIL_PASSWORD "password123"
-```
++ [Configuration de l’environnement Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html)
++ ou en utilisant la variable `aio CLI` command
+
+   ```shell
+   $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONMENT_ID> --secret EMAIL_USERNAME "myApiKey" --secret EMAIL_PASSWORD "password123"
+   ```
