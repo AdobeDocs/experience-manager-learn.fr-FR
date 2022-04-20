@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 88797cf950dae46d0f856330df12c59a4efe6456
+source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 22%
+source-wordcount: '231'
+ht-degree: 23%
 
 ---
 
@@ -47,7 +47,10 @@ ht-degree: 22%
       + [4 - Requêtes GraphQL persistantes](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 - Intégration de l’application cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
    + Procédures {#how-to}
-      + [Utilisation de texte enrichi](./graphql/how-to/rich-text.md)
+      + [Texte enrichi](./graphql/how-to/rich-text.md)
+      + [Images](./graphql/how-to/images.md)
+      + [Contenu localisé](./graphql/how-to/localized-content.md)
+      + [AEM SDK sans affichage](./graphql/how-to/aem-headless-sdk.md)
    + Exemples {#example-apps}
       + [React](./graphql/example-apps/react-app.md)
       + [iOS SwiftUI](./graphql/example-apps/ios-swiftui-app.md)
