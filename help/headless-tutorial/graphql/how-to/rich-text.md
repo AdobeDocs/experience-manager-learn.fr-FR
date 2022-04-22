@@ -8,16 +8,18 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+source-git-commit: 22d5aa7299ceacd93771bd73a6b89d1903edc561
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
 
 # Texte enrichi avec AEM sans affichage
 
-Le champ de texte multiligne est un type de données de fragments de contenu qui permet aux auteurs de créer du contenu de texte enrichi. Les références à d’autres contenus, tels que des images ou d’autres fragments de contenu, peuvent être insérées dynamiquement dans la ligne au sein du flux du texte. L’API GraphQL d’AEM offre une fonctionnalité robuste pour renvoyer du texte enrichi en tant que HTML, texte brut ou format JSON pur. La représentation JSON est puissante, car elle donne à l’application cliente un contrôle total sur la manière de générer le contenu.
+Le champ de texte multiligne est un type de données de fragments de contenu qui permet aux auteurs de créer du contenu de texte enrichi. Les références à d’autres contenus, tels que des images ou d’autres fragments de contenu, peuvent être insérées dynamiquement dans la ligne au sein du flux du texte. Le champ de texte Ligne unique est un autre type de données de fragments de contenu qui doit être utilisé pour les éléments de texte simples.
+
+L’API GraphQL d’AEM offre une fonctionnalité robuste pour renvoyer du texte enrichi en tant que HTML, texte brut ou format JSON pur. La représentation JSON est puissante, car elle donne à l’application cliente un contrôle total sur la manière de générer le contenu.
 
 ## Éditeur multi-lignes
 
@@ -25,13 +27,25 @@ Le champ de texte multiligne est un type de données de fragments de contenu qui
 
 Dans l’éditeur de fragment de contenu, la barre de menu du champ de texte multiligne fournit aux auteurs des fonctionnalités standard de mise en forme de texte enrichi, telles que : **gras**, *italique* et soulignez. L’ouverture du champ multiligne en mode Plein écran active l’ [d’autres outils de mise en forme tels que le type Paragraphe, la recherche et le remplacement, la vérification orthographique, etc.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
 
+>[!NOTE]
+>
+> Les modules externes de texte enrichi de l’éditeur multiligne ne peuvent pas être personnalisés.
+
 ## Type de données de texte multiligne {#multi-line-data-type}
 
 Utilisez la variable **Texte multi-lignes** type de données lors de la définition de votre modèle de fragment de contenu pour activer la création de texte enrichi.
 
 ![Type de données de texte enrichi multiligne](assets/rich-text/multi-line-rich-text.png)
 
-Lors de l’utilisation du type de données de texte multiligne, vous pouvez définir la variable **Type par défaut** à :
+Plusieurs propriétés du champ multiligne peuvent être configurées.
+
+Le **Rendu en tant que** peut être définie sur :
+
+* Zone de texte : effectue le rendu d’un champ multiligne unique
+* Multiple Field : effectue le rendu de plusieurs champs de ligne multiples
+
+
+Le **Type par défaut** peut être défini sur :
 
 * Texte enrichi
 * Texte (Markdown)
@@ -40,6 +54,8 @@ Lors de l’utilisation du type de données de texte multiligne, vous pouvez dé
 Le **Type par défaut** influence directement l’expérience de modification et détermine si les outils de texte enrichi sont présents.
 
 Vous pouvez également [activation des références en ligne](#insert-fragment-references) à d’autres fragments de contenu en vérifiant la variable **Autoriser la référence du fragment** et de la configuration du **Modèles de fragment de contenu autorisés**.
+
+Si le contenu sera localisé, vérifiez la variable **Traductible** de la boîte. Seuls le texte enrichi et le texte brut peuvent être localisés. Voir [utilisation de contenu localisé pour plus d’informations](./localized-content.md).
 
 ## Réponse de texte enrichi avec l’API GraphQL
 
@@ -364,10 +380,12 @@ Utilisez la variable `json` type de retour et inclusion de la variable `_referen
         _path
         _publishUrl
         width
+        __typename
       }
       ...on ArticleModel {
         _path
         author
+        __typename
       }
       
     }
@@ -444,12 +462,14 @@ Dans la requête ci-dessus, la variable `main` est renvoyé en tant que JSON. Le
       "_references": [
         {
           "_path": "/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "_publishUrl": "http://localhost:4503/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "width": 1920
+          "_publishUrl": "http://publish-p123-e456.adobeaemcloud.com/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
+          "width": 1920,
+          "__typename": "ImageRef"
         },
         {
           "_path": "/content/dam/wknd/en/magazine/la-skateparks/ultimate-guide-to-la-skateparks",
           "author": "Stacey Roswells",
+          "__typename": "ArticleModel"
         }
       ]
     }
@@ -498,11 +518,11 @@ const renderReference = {
     // node contains merged properties of the in-line reference and _references object
     'ImageRef': (node) => {
         // when __typename === ImageRef
-        return <img src={node._path} alt={'in-line reference'} /> 
+        return <img src={node._publishUrl} alt={'in-line reference'} /> 
     },
-    'AdventureModel': (node) => {
-        // when __typename === AdventureModel
-        return <Link to={`/adventure:${node._path}`}>{`${node.adventureTitle}: ${node.adventurePrice}`}</Link>;
+    'ArticleModel': (node) => {
+        // when __typename === ArticleModel
+        return <Link to={`/article:${node._path}`}>{`${node.value}`}</Link>;
     }
     ...
 }
