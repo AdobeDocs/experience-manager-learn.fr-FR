@@ -4,9 +4,9 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 0b6e16d7263bc14c1824643b77678071694bcb7e
+source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '745'
 ht-degree: 30%
 
 ---
@@ -142,6 +142,7 @@ ht-degree: 30%
       + [Configuration Git](./forms/developing-for-cloud-service/setup-git.md)
       + [Synchroniser IntelliJ avec AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
       + [Création d’un formulaire](./forms/developing-for-cloud-service/deploy-your-first-form.md)
+      + [Activer les composants du Portail Formulaires](./forms/developing-for-cloud-service/forms-portal-components.md)
       + [Inclure les Cloud Services et FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [Déploiement dans l’environnement de développement](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
