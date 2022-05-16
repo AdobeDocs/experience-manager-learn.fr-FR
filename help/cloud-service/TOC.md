@@ -4,9 +4,9 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
+source-git-commit: 99424ae98bd85a8d0203f8f5d4bf24a4e4d7cb53
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '746'
 ht-degree: 30%
 
 ---
@@ -235,6 +235,7 @@ ht-degree: 30%
 + Cloud 5{#cloud-5}
    + [Présentation](./cloud-5/cloud5-introduction.md)
    + [Saison 1](./cloud-5/cloud5-season-1.md)
+   + [Saison 2](./cloud-5/cloud5-season-2.md)
    + [AEM CDN Partie 1](./cloud-5/cloud5-aem-cdn-part1.md)
    + [AEM CDN Partie 2](./cloud-5/cloud5-aem-cdn-part2.md)
    + [AEM fichiers journaux](./cloud-5/cloud5-aem-log-files.md)
