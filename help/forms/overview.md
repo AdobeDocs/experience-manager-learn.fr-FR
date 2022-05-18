@@ -1,14 +1,14 @@
 ---
 title: Tutorials et vidéos AEM Forms
-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés
+description: Parcourez nos vidéos et tutoriels pour AEM Forms, avec des ressources et de la documentation pour répondre à vos requêtes.
 sub-product: forms
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 32%
+source-wordcount: '306'
+ht-degree: 28%
 
 ---
 

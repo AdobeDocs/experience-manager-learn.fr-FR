@@ -1,13 +1,13 @@
 ---
 title: Vidéos et tutoriels d’AEM Sites
-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Sites.
+description: En savoir plus sur AEM avec nos vidéos et tutoriels pour Adobe Experience Manager Sites.
 sub-product: sites, content-services
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: efa33aa8cf8288d48ae56d2e96ed9d3a6c4e9627
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 28%
+source-wordcount: '348'
+ht-degree: 25%
 
 ---
 
@@ -56,11 +56,11 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion de l’expé
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr">
-    <img alt="Prise en main d’AEM sans affichage" src="./assets/aem-headless-tutorial.png" />
+    <img alt="Prise en main d’AEM Headless" src="./assets/aem-headless-tutorial.png" />
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
-    <strong>Prise en main d’AEM sans affichage</strong>
+    <strong>Prise en main d’AEM Headless</strong>
     </a>
     </div>
     <p>
