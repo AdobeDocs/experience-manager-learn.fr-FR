@@ -13,28 +13,28 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 751aed9b8659d6a600429efb2bf60825b6d39144
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1396'
 ht-degree: 2%
 
 ---
 
-# Débogage d’AEM en tant que Cloud Service avec Developer Console
+# Débogage AEM as a Cloud Service avec Developer Console
 
 AEM as a Cloud Service fournit une console de développement pour chaque environnement qui expose divers détails du service AEM en cours d’exécution qui sont utiles pour le débogage.
 
-Chaque AEM en tant qu’environnement de Cloud Service possède sa propre console de développement.
+Chaque environnement as a Cloud Service AEM possède sa propre console de développement.
 
 ## Accès à Developer Console
 
 Pour accéder à Developer Console et l’utiliser, les autorisations suivantes doivent être accordées à Adobe ID du développeur via [Admin Console de l’Adobe](https://adminconsole.adobe.com).
 
-1. Assurez-vous que l’organisation d’Adobe qui a affecté Cloud Manager et AEM en tant que produits de Cloud Service est principale dans le sélecteur d’organisation d’Adobe.
-1. Le développeur doit être membre du __Profil de produit Développeur - Cloud Service__ du produit Cloud Manager.
+1. Assurez-vous que l’organisation d’Adobe qui a affecté Cloud Manager et AEM produits as a Cloud Service est principale dans le sélecteur d’organisation d’Adobe.
+1. Le développeur doit être membre du produit Cloud Manager __Développeur - Cloud Service__ Profil du produit.
    + Si cet abonnement n’existe pas, le développeur ne pourra pas se connecter à Developer Console.
-1. Le développeur doit être membre du __profil de produit AEM utilisateurs__ ou __AEM administrateurs__ sur AEM Author et/ou Publish.
-   + Si cette appartenance n’existe pas, les vidages [status](#status) expirent avec une erreur 401 Non autorisé.
+1. Le développeur doit être membre du __Utilisateurs AEM__ ou __Administrateurs AEM__ Profil de produit sur l’auteur et/ou la publication AEM.
+   + Si cette appartenance n’existe pas, la variable [status](#status) Les vidages expirent avec une erreur 401 Non autorisé.
 
 ### Dépannage de l’accès à Developer Console
 
@@ -42,25 +42,25 @@ Pour accéder à Developer Console et l’utiliser, les autorisations suivantes 
 
 ![Developer Console - 401 Non autorisé](./assets/developer-console/troubleshooting__401-unauthorized.png)
 
-Si une erreur 401 Non autorisé est signalée lors du rejet d’un statut, cela signifie que votre utilisateur n’existe pas encore avec les autorisations nécessaires dans AEM en tant que Cloud Service ou que les jetons de connexion utilisés sont invalides ou ont expiré.
+Si une erreur 401 Non autorisé est signalée lors du rejet d’un statut, cela signifie que votre utilisateur n’existe pas encore avec les autorisations nécessaires dans AEM as a Cloud Service ou que les jetons de connexion utilisés sont invalides ou ont expiré.
 
 Pour résoudre le problème 401 Non autorisé :
 
-1. Assurez-vous que votre utilisateur est membre du profil de produit Adobe IMS approprié (AEM administrateurs ou AEM utilisateurs) pour l’instance de produit associée de Developer Console en tant qu’instance de Cloud Service.
-   + N’oubliez pas que Developer Console accède à 2 instances de produit Adobe IMS ; AEM en tant qu’instances de produit de création et de publication Cloud Service, afin de vous assurer que les profils de produit corrects sont utilisés en fonction du niveau de service auquel l’accès est requis via Developer Console.
-1. Connectez-vous à l’AEM en tant que Cloud Service (auteur ou publication) et assurez-vous que vos utilisateurs et groupes sont correctement synchronisés dans AEM.
+1. Assurez-vous que votre utilisateur est membre du profil produit Adobe IMS approprié (AEM administrateurs ou AEM utilisateurs) pour l’instance de produit as a Cloud Service associée de Developer Console.
+   + Souvenez-vous que Developer Console accède à 2 instances de produit Adobe IMS ; Vérifiez les instances de produit Auteur et Publier as a Cloud Service, afin de vous assurer que les profils de produit corrects sont utilisés en fonction du niveau de service auquel l’accès est requis via Developer Console.
+1. Connectez-vous à l’AEM as a Cloud Service (auteur ou publication) et assurez-vous que vos utilisateurs et groupes sont correctement synchronisés dans AEM.
    + Developer Console exige que vos enregistrements d’utilisateur soient créés au niveau de service AEM correspondant pour qu’il s’authentifie à ce niveau de service.
 1. Effacez vos cookies de navigateur ainsi que l’état de l’application (stockage local) et connectez-vous à nouveau à Developer Console, en vous assurant que le jeton d’accès utilisé par Developer Console est correct et non expiré.
 
 ## Capsule
 
-Les services d’auteur et de publication d’AEM en tant que Cloud Service sont constitués de plusieurs instances respectivement afin de gérer la variabilité du trafic et les mises à jour en continu sans temps d’arrêt. Ces instances sont appelées capsules. La sélection de capsule dans Developer Console définit la portée des données qui seront exposées par le biais d’autres contrôles.
+Les services d’auteur et de publication as a Cloud Service AEM sont constitués de plusieurs instances respectivement afin de gérer la variabilité du trafic et les mises à jour en continu sans temps d’arrêt. Ces instances sont appelées capsules. La sélection de capsule dans Developer Console définit la portée des données qui seront exposées par le biais d’autres contrôles.
 
 ![Developer Console - Capsule](./assets/developer-console/pod.png)
 
 + Une capsule est une instance distincte qui fait partie d’un service AEM (auteur ou publication).
-+ Les capsules sont transitoires, ce qui signifie qu’AEM en tant que Cloud Service les crée et les détruit selon les besoins.
-+ Seules les capsules qui font partie de l’AEM associé en tant qu’environnement de Cloud Service sont répertoriées dans le sélecteur de capsule de Developer Console de l’environnement.
++ Les capsules sont transitoires, ce qui signifie qu’AEM as a Cloud Service les crée et les détruit selon les besoins.
++ Seules les capsules qui font partie de l’environnement as a Cloud Service associé sont répertoriées dans le sélecteur de capsule de Developer Console de l’environnement.
 + Au bas du sélecteur de capsule, les options pratiques permettent de sélectionner des capsules par type de service :
    + Tous les auteurs
    + Tous les éditeurs
@@ -74,7 +74,7 @@ Status (État) fournit des options permettant de générer un état d’exécuti
 
 ### Lots
 
-Les lots répertorient tous les lots OSGi dans AEM. Cette fonctionnalité est similaire aux [Bundles OSGi du SDK d’AEM local quickstart](http://localhost:4502/system/console/bundles) à `/system/console/bundles`.
+Les lots répertorient tous les lots OSGi dans AEM. Cette fonctionnalité est similaire à [Lots OSGi du SDK d’AEM local](http://localhost:4502/system/console/bundles) at `/system/console/bundles`.
 
 Les lots aident au débogage en :
 
@@ -84,22 +84,24 @@ Les lots aident au débogage en :
 
 ### Composants
 
-La section Composants répertorie tous les composants OSGi d’AEM. Cette fonctionnalité est similaire à [AEM Composants OSGi du SDK local de démarrage rapide ](http://localhost:4502/system/console/components) à `/system/console/components`.
+La section Composants répertorie tous les composants OSGi d’AEM. Cette fonctionnalité est similaire à [Composants OSGi du démarrage rapide local du SDK AEM](http://localhost:4502/system/console/components) at `/system/console/components`.
 
 Les composants aident au débogage en :
 
-+ Liste de tous les composants OSGi déployés sur AEM en tant que Cloud Service
++ Liste de tous les composants OSGi déployés sur AEM as a Cloud Service
 + indiquer l’état de chaque composant OSGi ; y compris s’ils sont principaux ou insatisfaits
 + Le fait de fournir des détails sur des références de service insatisfaites peut entraîner la principale des composants OSGi.
-+ Liste des propriétés OSGi et de leurs valeurs liées au composant OSGi
++ Liste des propriétés OSGi et de leurs valeurs liées au composant OSGi.
+   + Cela affiche les valeurs réelles injectées via [Variables de configuration de l’environnement OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values).
 
 ### Configurations
 
-Configurations répertorie toutes les configurations du composant OSGi (propriétés et valeurs OSGi). Cette fonctionnalité est similaire à [AEM Configuration Manager OSGi du SDK de démarrage rapide local ](http://localhost:4502/system/console/configMgr) à `/system/console/configMgr`.
+Configurations répertorie toutes les configurations du composant OSGi (propriétés et valeurs OSGi). Cette fonctionnalité est similaire à [Configuration Manager OSGi du démarrage rapide local du SDK AEM](http://localhost:4502/system/console/configMgr) at `/system/console/configMgr`.
 
 Les configurations aident au débogage en procédant comme suit :
 
 + Liste des propriétés OSGi et de leurs valeurs par composant OSGi
+   + Cela n’affichera PAS les valeurs réelles injectées via [Variables de configuration de l’environnement OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#environment-specific-configuration-values). Voir [Composants](#components) ci-dessus, pour les valeurs injectées.
 + Localisation et identification des propriétés mal configurées
 
 ### Index Oak
@@ -112,7 +114,7 @@ Les index Oak aident au débogage en :
 
 ### Services OSGi
 
-La section Composants répertorie tous les services OSGi. Cette fonctionnalité est similaire aux [Services OSGi du SDK d’AEM local quickstart ](http://localhost:4502/system/console/services) à `/system/console/services`.
+La section Composants répertorie tous les services OSGi. Cette fonctionnalité est similaire à [Services OSGi du SDK AEM local](http://localhost:4502/system/console/services) at `/system/console/services`.
 
 Aide des services OSGi pour le débogage :
 
@@ -120,7 +122,7 @@ Aide des services OSGi pour le débogage :
 
 ### Tâches Sling
 
-Tâches Sling répertorie toutes les files d’attente de tâches Sling. Cette fonctionnalité est similaire aux [Tâches du démarrage rapide local du SDK AEM](http://localhost:4502/system/console/slingevent) à l’adresse `/system/console/slingevent`.
+Tâches Sling répertorie toutes les files d’attente de tâches Sling. Cette fonctionnalité est similaire à [Tâches du démarrage rapide local du SDK AEM](http://localhost:4502/system/console/slingevent) at `/system/console/slingevent`.
 
 Aide sur les tâches Sling dans le débogage en :
 
@@ -129,7 +131,7 @@ Aide sur les tâches Sling dans le débogage en :
 
 ## Modules Java
 
-Les packages Java permettent de vérifier si un package Java, ainsi qu’une version, sont disponibles dans AEM en tant que Cloud Service. Cette fonctionnalité est identique à [AEM l’ outil de recherche de dépendance du démarrage local du SDK d’à `/system/console/depfinder`.](http://localhost:4502/system/console/depfinder)
+Les packages Java permettent de vérifier si un package Java, ainsi qu’une version, sont disponibles dans AEM as a Cloud Service. Cette fonctionnalité est identique à [Outil de recherche de dépendance du démarrage rapide local du SDK AEM](http://localhost:4502/system/console/depfinder) at `/system/console/depfinder`.
 
 ![Developer Console - Packages Java](./assets/developer-console/java-packages.png)
 
@@ -138,11 +140,11 @@ Les packages Java sont utilisés pour empêcher le démarrage des lots en raison
 + Assurez-vous que la version de la dépendance Maven de l’API AEM de votre projet correspond à la version AEM de publication de l’environnement (et, si possible, mettez tout à jour vers la dernière version).
 + Si des dépendances Maven supplémentaires sont utilisées dans le projet Maven
    + Déterminez si une autre API fournie par la dépendance d’API du SDK AEM peut être utilisée à la place.
-   + Si la dépendance supplémentaire est requise, assurez-vous qu’elle est fournie sous la forme d’un lot OSGi (plutôt qu’un lot Jar simple) et qu’elle est incorporée dans le module de code de votre projet (`ui.apps`), comme le lot OSGi principal est incorporé dans le module `ui.apps`.
+   + Si la dépendance supplémentaire est requise, assurez-vous qu’elle est fournie sous la forme d’un lot OSGi (plutôt que d’un fichier Jar simple) et qu’elle est incorporée dans le module de code de votre projet (`ui.apps`), similaire à la manière dont le lot OSGi principal est incorporé dans la variable `ui.apps` module.
 
 ## Servlets
 
-Servlets permet de savoir comment AEM résout une URL en un servlet ou un script Java (HTL, JSP) qui gère finalement la requête. Cette fonctionnalité est identique à [AEM au résolveur de servlet Sling du SDK local du démarrage rapide ](http://localhost:4502/system/console/servletresolver) à l’adresse `/system/console/servletresolver`.
+Servlets permet de savoir comment AEM résout une URL en un servlet ou un script Java (HTL, JSP) qui gère finalement la requête. Cette fonctionnalité est identique à [Résolveur de servlet Sling du démarrage rapide local du SDK AEM](http://localhost:4502/system/console/servletresolver) at `/system/console/servletresolver`.
 
 ![Developer Console - Servlets](./assets/developer-console/servlets.png)
 
@@ -153,7 +155,7 @@ Les servlets permettent de déterminer :
 
 ## Requêtes
 
-Les requêtes permettent d’obtenir des informations sur les requêtes de recherche exécutées sur AEM. Cette fonctionnalité est identique à la console [AEM de démarrage rapide locale du SDK Outils > Performances des requêtes ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html).
+Les requêtes permettent d’obtenir des informations sur les requêtes de recherche exécutées sur AEM. Cette fonctionnalité est identique à  [Outils de démarrage rapide local du SDK AEM > Performances des requêtes ](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) console.
 
 Les requêtes ne fonctionnent que lorsqu’une capsule spécifique est sélectionnée, car elle ouvre la console web Performances des requêtes de cette capsule, ce qui nécessite que le développeur ait accès au service AEM.
 
