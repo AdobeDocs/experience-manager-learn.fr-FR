@@ -8,7 +8,7 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 1532a865-4664-40d9-964a-e64463b49587
-source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
+source-git-commit: b918afdddf1f047b478e0521883a633f7b0610c6
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 3%
@@ -43,7 +43,7 @@ Pour créer votre premier fichier swagger/OpenAPI, suivez la procédure décrite
 
 Utilisez la variable [éditeur de swagger](https://editor.swagger.io/) pour créer votre fichier swagger afin de décrire les opérations qui envoient et vérifient le code OTP envoyé à l’aide de SMS. Le fichier swagger peut être créé au format JSON ou YAML. Le fichier swagger terminé peut être téléchargé à partir de [here](assets/drivers-license-swagger.zip)
 
-## Considérations relatives à la définition du fichier de permutation
+## Considérations relatives à la définition du fichier swagger
 
 * Les définitions sont obligatoires.
 * $ref doit être utilisé pour les définitions de méthode

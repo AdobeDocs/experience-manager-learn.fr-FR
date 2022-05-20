@@ -8,9 +8,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 93a177b0-7852-44da-89cc-836d127be4e7
-source-git-commit: 81a15fb0182760aaac8cb58cccbfe28de7323492
+source-git-commit: b918afdddf1f047b478e0521883a633f7b0610c6
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '289'
 ht-degree: 3%
 
 ---
@@ -28,6 +28,7 @@ Créer et afficher un incident dans [!DNL ServiceNow] utilisation du modèle de 
 ## Exemples de ressources
 
 Les exemples de ressources fournis avec cet article sont les suivants :
+
 * Configuration du service cloud
 * Fichiers Swagger pour créer un incident et récupérer tous les incidents
 * Modèle de données de formulaire basé sur les fichiers swagger
@@ -37,8 +38,18 @@ Les exemples de ressources fournis avec cet article sont les suivants :
 
 * Téléchargez la [exemple de ressources](assets/service-now.zip)
 * Importez les ressources dans AEM à l’aide de [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp)
+* Le fichier swagger utilisé pour cette intégration se trouve sous la propriété ```/conf/9957/settings/cloudconfigs/fdm``` dossier dans le référentiel crx
 * Modifiez la variable [Configuration du service cloud CreateIncident](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fcreateincident)pour correspondre à votre instance ServiceNow.
-* Modifiez la variable [Configuration du service cloud GetAllIncidents](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) pour correspondre à votre instance ServiceNow
+* Modifiez la variable [Configuration du service cloud GetAllIncidents](http://localhost:4502/mnt/overlay/fd/fdm/gui/components/admin/fdmcloudservice/properties.html?item=%2Fconf%2F9957%2Fsettings%2Fcloudconfigs%2Ffdm%2Fgetallincidents) pour correspondre à votre instance ServiceNow. Vous devez modifier l’hôte, le nom d’utilisateur et le mot de passe pour qu’ils correspondent aux informations d’identification de votre instance ServiceNow.
+
+## Accès aux informations d’identification de l’instance ServiceNow
+
+* Clic sur votre profil utilisateur
+   ![clic sur profil utilisateur](assets/snow-1.png)
+
+* Cliquez sur Gérer le mot de passe de l’instance.
+* Les détails de l’instance s’affichent comme ci-dessous.
+   ![détails de l’instance](assets/snow-3.png)
 
 ## Test de l’intégration
 
