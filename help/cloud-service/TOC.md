@@ -4,10 +4,10 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 99424ae98bd85a8d0203f8f5d4bf24a4e4d7cb53
+source-git-commit: e666e38d6b2a7057f7016b35ad1034a4487e9bc7
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 30%
+source-wordcount: '749'
+ht-degree: 31%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 30%
       + [Journaux](./debugging/cloud-service/logs.md)
       + [Build et déploiement](./debugging/cloud-service/build-and-deployment.md)
       + [Developer Console](./debugging/cloud-service/developer-console.md)
-      + [Explorateur de référentiels](./debugging/cloud-service/repository-browser.md)
+      + [Navigateur de référentiels](./debugging/cloud-service/repository-browser.md)
 + Accès aux AEM{#accessing}
    + [Présentation](./accessing/overview.md)
    + [Utilisateurs Adobe IMS](./accessing/adobe-ims-users.md)
@@ -89,6 +89,9 @@ ht-degree: 30%
    + [Profils de produit Adobe IMS](./accessing/adobe-ims-product-profiles.md)
    + [AEM utilisateurs, groupes et autorisations](./accessing/aem-users-groups-and-permissions.md)
    + [Configuration de l’accès à la présentation d’AEM](./accessing/walk-through.md)
++ Authentification{#authentication}
+   + [Présentation](./authentication/authentication.md)
+   + [SAML 2.0](./authentication/saml-2-0.md)
 + Mise en réseau avancée{#networking}
    + [Présentation](./networking/advanced-networking.md)
    + [Sortie de port flexible](./networking/flexible-port-egress.md)
@@ -228,7 +231,7 @@ ht-degree: 30%
       + [Débogage d’un programme de travail](./asset-compute/test-debug/debug.md)
    + Déploiement dʼ{#deploy}
       + [Déploiement sur Adobe I/O Runtime](./asset-compute/deploy/runtime.md)
-      + [Intégration à AEM](./asset-compute/deploy/processing-profiles.md)
+      + [Intégrer avec AEM](./asset-compute/deploy/processing-profiles.md)
    + Avancé{#advanced}
       + [Travailleurs de métadonnées](./asset-compute/advanced/metadata.md)
    + [Résolution des problèmes](./asset-compute/troubleshooting.md)
