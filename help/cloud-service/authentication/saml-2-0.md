@@ -8,13 +8,13 @@ role: Architect, Developer
 level: Intermediate
 kt: 9351
 thumbnail: 343040.jpeg
-source-git-commit: e666e38d6b2a7057f7016b35ad1034a4487e9bc7
+exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
+source-git-commit: e4cd87e5d2d78c3113ef860b9f357cfacb2c874a
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2775'
 ht-degree: 2%
 
 ---
-
 
 # Authentification SAML 2.0{#saml-2-0-authentication}
 
@@ -398,6 +398,10 @@ Une fois l’authentification au fournisseur d’identité réussie, le fourniss
 ```
 
 Si la réécriture de l’URL sur le serveur web Apache est configurée (`dispatcher/src/conf.d/rewrites/rewrite.rules`), assurez-vous que les requêtes de la variable `.../saml_login` les points de fin ne sont pas gérés accidentellement.
+
+## Activation de la synchronisation des données
+
+Les enregistrements utilisateur doivent être synchronisés sur le niveau Publication AEM, une fois que le flux d’authentification SAML crée un utilisateur dans Publication AEM. À [activation de la synchronisation des données](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization), envoyer une demande à l’Adobe du service clientèle (via [Admin Console](https://adminconsole.adobe.com) > Assistance) demandant qu’elle soit activée.
 
 ## Déploiement de la configuration SAML
 
