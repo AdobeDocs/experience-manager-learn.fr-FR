@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
-source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
+source-git-commit: 2ac0f6b3964590e5443700f730a3fc02cb3f63bc
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '611'
 ht-degree: 1%
 
 ---
@@ -160,14 +160,14 @@ Pour que cet exemple fonctionne sur votre système, procédez comme suit :
 
 * [Télécharger et déployer le lot setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Il s’agit du lot OSGI personnalisé qui définit les balises à partir des données de formulaire envoyées.
 
-* [Téléchargement de l’exemple de formulaire adaptatif](assets/tag-and-store-in-dam-assets.zip)
+* [Téléchargement de l’exemple de formulaire adaptatif](assets/tag-and-store-in-dam-adaptive-form.zip)
 
 * [Accès à Forms et documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 
-* Cliquez sur Créer | Téléchargement du fichier et transfert du fichier sampleadaptiveform.zip
+* Cliquez sur Créer | Téléchargez le fichier et téléchargez le fichier tag-and-store-in-dam-adaptive-form.zip
 
 * [Importation des actifs de l’article](assets/tag-and-store-in-dam-assets.zip) utilisation d’AEM gestionnaire de packages
-* Ouvrez le [exemple de formulaire en mode aperçu](http://localhost:4502/content/dam/formsanddocuments/summit/peakform/jcr:content?wcmmode=disabled). Renseignez la section Personnes et envoyez le formulaire.
+* Ouvrez le [exemple de formulaire en mode aperçu](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Renseignez tous les champs** et envoyez le formulaire.
 * [Accédez au dossier Pic dans DAM](http://localhost:4502/assets.html/content/dam/Peak). Vous devriez voir le document d’enregistrement dans le dossier Pic . Vérifiez les propriétés du document. Il doit être correctement balisé.
 Félicitations!! Vous avez installé l’exemple sur votre système.
 

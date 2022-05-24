@@ -8,17 +8,17 @@ level: Beginner, Intermediate
 version: cloud-service
 topic: Development
 kt: 9006
-source-git-commit: 8484897297940ab28619c4b1af5362a5937eadfa
+exl-id: 77c00a35-43bf-485f-ac12-0fffb307dc16
+source-git-commit: 2ac0f6b3964590e5443700f730a3fc02cb3f63bc
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
 
-
 # Inclure la configuration des services cloud dans votre projet
 
-Créez un conteneur de configuration appelé &quot;FormsTutorial&quot; pour contenir votre configuration de services cloud Créez une configuration de services cloud pour le stockage Azure appelée &quot;Stocker les envois de formulaire dans Azure&quot; dans le conteneur &quot;FormsTutorial&quot;. Fournissez les détails du compte de stockage Azure et la clé de compte.
+Créez un conteneur de configuration appelé &quot;FormTutorial&quot; pour contenir votre configuration de services cloud Créez une configuration de services cloud pour Azure Storage appelée &quot;FormsCSAndAzureBlob&quot; dans le conteneur &quot;FormTutorial&quot; en fournissant les détails du compte de stockage Azure et la clé d’accès Azure.
 
 Ouvrez votre projet AEM dans IntelliJ. Veillez à ajouter le dossier FormTutorial comme illustré ci-dessous dans le projet ui.content .
 ![cloud-services-configuration](assets/cloud-services-configuration.png)
@@ -45,4 +45,4 @@ Inclure l’entrée appropriée dans le fichier filter.xml du projet ui.content
 
 >[!NOTE]
 >
->Désormais, lorsque vous créez et déployez votre projet, le modèle de données de formulaire basé sur la configuration des services cloud disponible dans votre instance cloud est appliqué au projet.
+>Maintenant, lorsque vous créez et déployez votre projet à l’aide de Cloud Manager, vous devrez saisir à nouveau votre clé d’accès Azure dans la configuration des services cloud. Pour éviter de réentrer dans la clé d’accès, il est recommandé de créer une configuration contextuelle à l’aide des variables d’environnement, comme expliqué dans la section [article suivant](./context-aware-fdm.md)
