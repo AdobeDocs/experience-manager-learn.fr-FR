@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
-source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
+source-git-commit: 8c75e062d2de70c294f95e5c25040d8bb9badcce
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1080'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Un programme Cloud Manager ne peut avoir qu’une __single__ type d’infrastruc
 >
 > Lisez l’AEM as a Cloud Service [documentation sur la configuration réseau avancée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#flexible-port-egress) pour plus d’informations sur la sortie flexible du port.
 
-## Conditions préalables
+## Prérequis
 
 Les éléments suivants sont requis lors de la configuration d’une sortie de port flexible :
 
@@ -110,7 +110,7 @@ Commencez par activer la sortie flexible du port sur AEM as a Cloud Service.
 
    Définition des paramètres JSON dans une `flexible-port-egress.json` et fourni à curl via `... -d @./flexible-port-egress.json`.
 
-[Téléchargez l’exemple flexible-port-egress.json](./assets/flexible-port-egress.json)
+   [Téléchargez l’exemple flexible-port-egress.json](./assets/flexible-port-egress.json). Ce fichier n’est qu’un exemple. Configurez votre fichier selon les besoins en fonction des champs facultatifs/obligatoires documentés à l’adresse [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
    ```json
    {
