@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
-source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
+source-git-commit: 4f8222d3185ad4e87eda662c33c9ad05ce3b0427
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ Un programme Cloud Manager ne peut avoir qu’une __single__ type d’infrastruc
 >
 > Lisez l’AEM as a Cloud Service [documentation sur la configuration réseau avancée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#dedicated-egress-IP-address) pour plus d’informations sur les adresses IP sortantes dédiées.
 
-## Conditions préalables
+## Prérequis
 
 Les éléments suivants sont requis lors de la configuration d’une adresse IP de sortie dédiée :
 
@@ -110,7 +110,7 @@ Commencez par activer et configurer l’adresse IP sortante dédiée sur AEM as 
 
    Définition des paramètres JSON dans une `dedicated-egress-ip-address.json` et fourni à curl via `... -d @./dedicated-egress-ip-address.json`.
 
-[Téléchargez l’exemple dedicated-egress-ip-address.json](./assets/dedicated-egress-ip-address.json)
+   [Téléchargez l’exemple dedicated-egress-ip-address.json](./assets/dedicated-egress-ip-address.json). Ce fichier n’est qu’un exemple. Configurez votre fichier selon les besoins en fonction des champs facultatifs/obligatoires documentés à l’adresse [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
    ```json
    {
