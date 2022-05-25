@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
+source-git-commit: 52a2303f75c23c72e201b1f674f7f882db00710b
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Un programme Cloud Manager ne peut avoir qu’une __single__ type d’infrastruc
 >
 > Lisez l’AEM as a Cloud Service [documentation sur la configuration réseau avancée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#vpn) pour plus d’informations sur le réseau privé virtuel.
 
-## Conditions préalables
+## Prérequis
 
 Les éléments suivants sont requis lors de la configuration du réseau privé virtuel :
 
@@ -84,7 +84,7 @@ Commencez par activer le réseau privé virtuel sur AEM as a Cloud Service.
 
    Définition des paramètres JSON dans une `vpn-create.json` et fourni à curl via `... -d @./vpn-create.json`.
 
-[Téléchargez l’exemple vpn-create.json](./assets/vpn-create.json)
+   [Téléchargez l’exemple vpn-create.json](./assets/vpn-create.json).  Ce fichier n’est qu’un exemple. Configurez votre fichier selon les besoins en fonction des champs facultatifs/obligatoires documentés à l’adresse [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
    ```json
    {
