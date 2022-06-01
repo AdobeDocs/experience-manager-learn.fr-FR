@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9354
 thumbnail: KT-9354.jpeg
 exl-id: d1c1a3cf-989a-4693-9e0f-c1b545643e41
-source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
+source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 6%
+source-wordcount: '468'
+ht-degree: 8%
 
 ---
 
@@ -82,10 +82,10 @@ Assurez-vous que la variable [configuration réseau avancée](#advanced-networki
       </p>
     </td>  
     <td>
-        <a  href="./examples/http-on-non-standard-ports.md"><img alt="HTTP/HTTPS sur les ports non standard" src="./assets/code-examples__http.png"/></a>
-        <div><strong><a href="./examples/http-on-non-standard-ports.md">HTTP/HTTPS sur les ports non standard</a></strong></div>
+        <a  href="./examples/http-dedicated-egress-ip-vpn.md"><img alt="HTTP/HTTPS" src="./assets/code-examples__http.png"/></a>
+        <div><strong><a href="./examples/http-dedicated-egress-ip-vpn.md">HTTP/HTTPS</a></strong></div>
         <p>
-            Exemple de code Java™ qui rend la connexion HTTP/HTTPS d’AEM as a Cloud Service à un service externe sur des ports HTTP/HTTPS non standard.
+            Exemple de code Java™ permettant d’établir une connexion HTTP/HTTPS d’AEM as a Cloud Service à un service externe à l’aide du protocole HTTP/HTTPS.
         </p>
     </td>
     <td>

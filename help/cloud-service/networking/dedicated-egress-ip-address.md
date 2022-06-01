@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
-source-git-commit: 4f8222d3185ad4e87eda662c33c9ad05ce3b0427
+source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1238'
+ht-degree: 1%
 
 ---
 
@@ -167,43 +167,43 @@ Commencez par activer et configurer l’adresse IP sortante dédiée sur AEM as 
 
 1. Vous pouvez désormais utiliser l’adresse IP de sortie dédiée dans votre code et configuration d’AEM personnalisé. Souvent, lors de l’utilisation d’une adresse IP de sortie dédiée, les services externes auxquels AEM as a Cloud Service se connecte sont configurés pour autoriser uniquement le trafic à partir de cette adresse IP dédiée.
 
-## Connexion à des services externes via une sortie de port dédiée
+## Connexion à des services externes sur une adresse IP sortante dédiée
 
 Lorsque l’adresse IP de sortie dédiée est activée, le code AEM et la configuration peuvent utiliser l’adresse IP de sortie dédiée pour effectuer des appels vers des services externes. Il existe deux types d’appels externes qui AEM traitent différemment :
 
-1. Appels HTTP/HTTPS aux services externes sur les ports non standard
+1. Appels HTTP/HTTPS aux services externes
    + Inclut les appels HTTP/HTTPS effectués aux services s’exécutant sur des ports autres que les ports 80 ou 443 standard.
 1. Appels non HTTP/HTTPS aux services externes
    + Inclut tous les appels non HTTP, tels que les connexions aux serveurs de messagerie, aux bases de données SQL ou aux services qui s’exécutent sur d’autres protocoles non HTTP/HTTPS.
 
-Les requêtes HTTP/HTTPS provenant d’AEM sur les ports standard (80/443) sont autorisées par défaut et ne nécessitent aucune configuration ni considérations supplémentaires.
+Les requêtes HTTP/HTTPS provenant d’AEM sur les ports standard (80/443) sont autorisées par défaut, mais elles n’utiliseront pas l’adresse IP de sortie dédiée si elles ne sont pas configurées correctement comme décrit ci-dessous.
 
 >[!TIP]
 >
 > Consultez la documentation sur les adresses IP sortantes d’AEM as a Cloud Service pour [l’ensemble complet des règles de routage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html#dedcated-egress-ip-traffic-routing=).
 
 
-### HTTP/HTTPS sur les ports non standard
+### HTTP/HTTPS
 
-Lors de la création de connexions HTTP/HTTPS à des ports non standard (non 80/443) à partir d’AEM, la connexion doit être établie par le biais d’hôtes et de ports spéciaux, fournis via des espaces réservés.
+Lors de la création de connexions HTTP/HTTPS à partir d’AEM, pour obtenir une adresse IP de sortie dédiée, la connexion doit être établie par le biais d’hôtes et de ports spéciaux, fournis via des espaces réservés.
 
 AEM fournit deux ensembles de variables système Java™ spéciales qui correspondent à des proxys HTTP/HTTPS AEM.
 
-| Nom de variable | Utilisation | Code Java™ | Configuration OSGi | | - | - | - | - | | `AEM_HTTP_PROXY_HOST` | Hôte proxy pour les connexions HTTP | `System.getenv("AEM_HTTP_PROXY_HOST")` | `$[env:AEM_HTTP_PROXY_HOST]` | | `AEM_HTTP_PROXY_PORT` | Port proxy pour les connexions HTTP | `System.getenv("AEM_HTTP_PROXY_PORT")` | `$[env:AEM_HTTP_PROXY_PORT]` | | `AEM_HTTPS_PROXY_HOST` | Hôte proxy pour les connexions HTTPS | `System.getenv("AEM_HTTPS_PROXY_HOST")` | `$[env:AEM_HTTPS_PROXY_HOST]` | | `AEM_HTTPS_PROXY_PORT` | Port proxy pour les connexions HTTPS | `System.getenv("AEM_HTTPS_PROXY_PORT")` | `$[env:AEM_HTTPS_PROXY_PORT]` |
+| Nom de variable | Utilisation | Code Java™ | Configuration OSGi | Configuration mod_proxy du serveur web Apache | | - | - | - | - | - | | `AEM_HTTP_PROXY_HOST` | Hôte proxy pour les connexions HTTP | `System.getenv("AEM_HTTP_PROXY_HOST")` | `$[env:AEM_HTTP_PROXY_HOST]` | `${AEM_HTTP_PROXY_HOST}` | | `AEM_HTTP_PROXY_PORT` | Port proxy pour les connexions HTTP | `System.getenv("AEM_HTTP_PROXY_PORT")` | `$[env:AEM_HTTP_PROXY_PORT]` |  `${AEM_HTTP_PROXY_PORT}` | | `AEM_HTTPS_PROXY_HOST` | Hôte proxy pour les connexions HTTPS | `System.getenv("AEM_HTTPS_PROXY_HOST")` | `$[env:AEM_HTTPS_PROXY_HOST]` | `${AEM_HTTPS_PROXY_HOST}` | | `AEM_HTTPS_PROXY_PORT` | Port proxy pour les connexions HTTPS | `System.getenv("AEM_HTTPS_PROXY_PORT")` | `$[env:AEM_HTTPS_PROXY_PORT]` | `${AEM_HTTPS_PROXY_PORT}` |
 
 Les demandes pour les services externes HTTP/HTTPS doivent être effectuées en configurant la configuration du proxy du client HTTP Java™ à l’aide des valeurs d’hôte/port du proxy AEM.
 
-Lors d’appels HTTP/HTTPS à des services externes sur des ports non standard, aucun appel correspondant `portForwards` doit être défini à l’aide de l’API Cloud Manager `enableEnvironmentAdvancedNetworkingConfiguration` , car les &quot;règles&quot; de transfert de port sont définies &quot;dans le code&quot;.
+Lors d’appels HTTP/HTTPS à des services externes sur n’importe quel port, aucun opérateur correspondant `portForwards` doit être défini à l’aide de l’API Cloud Manager `enableEnvironmentAdvancedNetworkingConfiguration` , car les &quot;règles&quot; de transfert de port sont définies &quot;dans le code&quot;.
 
 #### Exemples de code
 
 <table>
 <tr>
 <td>
-    <a  href="./examples/http-on-non-standard-ports.md"><img alt="HTTP/HTTPS sur les ports non standard" src="./assets/code-examples__http.png"/></a>
-    <div><strong><a href="./examples/http-on-non-standard-ports.md">HTTP/HTTPS sur les ports non standard</a></strong></div>
+    <a  href="./examples/http-dedicated-egress-ip-vpn.md"><img alt="HTTP/HTTPS" src="./assets/code-examples__http.png"/></a>
+    <div><strong><a href="./examples/http-dedicated-egress-ip-vpn.md">HTTP/HTTPS</a></strong></div>
     <p>
-        Exemple de code Java™ qui rend la connexion HTTP/HTTPS d’AEM as a Cloud Service à un service externe sur des ports HTTP/HTTPS non standard.
+        Exemple de code Java™ permettant d’établir une connexion HTTP/HTTPS d’AEM as a Cloud Service à un service externe à l’aide du protocole HTTP/HTTPS.
     </p>
 </td>   
 <td></td>   
