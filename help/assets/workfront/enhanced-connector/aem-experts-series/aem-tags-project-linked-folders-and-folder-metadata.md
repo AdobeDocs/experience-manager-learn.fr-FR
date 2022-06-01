@@ -8,13 +8,13 @@ level: Beginner
 kt: 9720
 thumbnail: 340333.jpeg
 hidefromtoc: false
-source-git-commit: c6caa39075bc3c26dedeca4246e7e1f85887b124
+exl-id: 520a75cd-757a-4ae9-acf6-3c1f5e1f3747
+source-git-commit: 485f968e6f8c508b5e81c54e03ca17996e4c1b63
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '108'
 ht-degree: 0%
 
 ---
-
 
 # AEM Balises, dossiers liés au projet et métadonnées de dossier
 
@@ -25,3 +25,7 @@ Découvrez comment piloter AEM Balises utilisées sur les ressources via les don
 >[!VIDEO](https://video.tv.adobe.com/v/340333/?quality=12&learn=on)
 
 _Partie trois de a [série d’experts en quatre parties sur Workfront pour Experience Manager Enhanced connector](./overview.md)_
+
+## Corrections
+
++ __@ 4:34__ La syntaxe des balises AEM est incorrecte. Affichages de vidéos `we-retail:apparel/footwear`. La syntaxe correcte est la suivante : `["we-retail:apparel/footwear"]` ou plus généralement `["namespace:tag/childtag"]`.
