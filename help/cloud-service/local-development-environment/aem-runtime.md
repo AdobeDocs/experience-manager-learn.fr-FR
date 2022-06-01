@@ -9,9 +9,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: 1aba21ea777a58fe8efc8a6af455b0a8ba965b66
+source-git-commit: 3a9615177acb5475d9b2b4ef22907c11e7da2bf7
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1801'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ Experience Manager est une application Java qui requiert donc le SDK Java pour p
 
 1. [Télécharger et installer le dernier SDK Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.properties.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 1. Vérifiez que le SDK Java 11 est installé en exécutant la commande :
-   + Windows : `java -version`
+   + Windows:`java -version`
    + macOS / Linux : `java --version`
 
 ![Java](./assets/aem-runtime/java.png)
@@ -115,6 +115,18 @@ $ mkdir -p ~/aem-sdk/publish
 $ cp aem-sdk-Quickstart-XXX.jar ~/aem-sdk/publish/aem-publish-p4503.jar
 $ cd ~/aem-sdk/publish
 $ java -jar aem-publish-p4503.jar
+```
+
+## Configuration des services d’AEM locaux en mode bêta
+
+L’exécution AEM locale peut être démarrée dans [mode bêta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr) permettant à un développeur de s’adapter aux fonctionnalités de la prochaine version d’AEM as a Cloud Service. La version préliminaire est activée en transmettant le `-r prerelease` sur le premier démarrage de l’exécution AEM locale. Vous pouvez l’utiliser avec les services AEM Author et AEM Publish locaux.
+
+```shell
+# For AEM Author service in prerelease mode
+$ java -jar aem-author-p4502.jar -r prerelease
+
+# For AEM Publish service in prerelease mode
+$ java -jar aem-publish-p4503.jar -r prerelease
 ```
 
 ## Simulation de la distribution de contenu {#content-distribution}
