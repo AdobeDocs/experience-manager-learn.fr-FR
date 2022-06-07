@@ -4,9 +4,9 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
+source-git-commit: 726cf83f3cabe46c12abb79288368407ebf4d525
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '760'
 ht-degree: 31%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 31%
       + [Journaux](./debugging/cloud-service/logs.md)
       + [Build et déploiement](./debugging/cloud-service/build-and-deployment.md)
       + [Developer Console](./debugging/cloud-service/developer-console.md)
-      + [Navigateur de référentiels](./debugging/cloud-service/repository-browser.md)
+      + [Navigateur de référentiel](./debugging/cloud-service/repository-browser.md)
 + Accès aux AEM{#accessing}
    + [Présentation](./accessing/overview.md)
    + [Utilisateurs Adobe IMS](./accessing/adobe-ims-users.md)
@@ -108,7 +108,7 @@ ht-degree: 31%
    + [Importation en bloc de ressources](./migration/bulk-import.md)
 
    + Transition vers AEM as a Cloud Service {#moving-to-aem-as-a-cloud-service}
-      + [Présentation](./migration/moving-to-aem-as-a-cloud-service/introduction.md)
+      + [Présentation ](./migration/moving-to-aem-as-a-cloud-service/introduction.md)
       + [Intégration ](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
       + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
       + [BPA et CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
@@ -122,11 +122,11 @@ ht-degree: 31%
          + [Outil de transfert de contenu](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
       + [Résolution des problèmes](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
       +  dʼAEM Forms as a Cloud Service{#aem-forms}
-         + [Présentation](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
+         + [Présentation ](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [Inscription numérique](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
          + [Communications](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
-      + [Présentation](./migration/cloud-acceleration-manager/introduction.md)
+      + [Présentation ](./migration/cloud-acceleration-manager/introduction.md)
       + [Readiness and Best Practice Analyzer](./migration/cloud-acceleration-manager/readiness-and-best-practice-analyzer.md)
       + [Phase de mise en oeuvre](./migration/cloud-acceleration-manager/implementation-phase.md)
       + [Outil de transfert de contenu](./migration/cloud-acceleration-manager/content-transfer-tool.md)
@@ -152,7 +152,7 @@ ht-degree: 31%
       + [Déploiement dans l’environnement de développement](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
       + [Mise à jour de l’archétype Maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + Créer un formulaire adaptatif{#create-first-af}
-      + [Présentation](./forms/create-first-af/introduction.md)
+      + [Présentation ](./forms/create-first-af/introduction.md)
       + [Créer un thème](./forms/create-first-af/create-theme.md)
       + [Créer un modèle](./forms/create-first-af/create-template.md)
       + [Créer un fragment](./forms/create-first-af/create-fragments.md)
@@ -164,7 +164,7 @@ ht-degree: 31%
       + [Configuration du panneau de démarrage](./forms/create-first-af/configure-start-panel.md)
       + [Barre d’outils Ajouter et configurer](./forms/create-first-af/add-configure-toolbar.md)
    + Génération de documents dans AEM Forms CS{#doc-gen-formscs}
-      + [Présentation](./forms/doc-gen-forms-cs/introduction.md)
+      + [Présentation ](./forms/doc-gen-forms-cs/introduction.md)
       + [Création d’informations d’identification de service](./forms/doc-gen-forms-cs/service-credentials.md)
       + [Création d’un jeton JWT](./forms/doc-gen-forms-cs/create-jwt.md)
       + [Créer un jeton d’accès](./forms/doc-gen-forms-cs/create-access-token.md)
@@ -172,13 +172,13 @@ ht-degree: 31%
       + [Tester la solution](./forms/doc-gen-forms-cs/test.md)
       + [Défi](./forms/doc-gen-forms-cs/challenge.md)
    + Génération de documents à l’aide de l’API de lot{#formscs-batch-api}
-      + [Présentation](./forms/formscs-batch-api/introduction.md)
+      + [Présentation ](./forms/formscs-batch-api/introduction.md)
       + [Configuration du stockage Azure](./forms/formscs-batch-api/configure-azure-storage.md)
       + [Création d’une configuration de lot USC](./forms/formscs-batch-api/configure-usc-batch.md)
       + [Créer une configuration de lot](./forms/formscs-batch-api/create-batch-config.md)
       + [Exécuter le lot](./forms/formscs-batch-api/execute-batch-generate-documents.md)
    + Manipulation de PDF dans Forms CS{#forms-cs-assembler}
-      + [Présentation](./forms/forms-cs-assembler/introduction.md)
+      + [Présentation ](./forms/forms-cs-assembler/introduction.md)
       + [Création d’informations d’identification de service](./forms/forms-cs-assembler/service-credentials.md)
       + [Création d’un jeton JWT](./forms/forms-cs-assembler/create-jwt.md)
       + [Créer un jeton d’accès](./forms/forms-cs-assembler/create-access-token.md)
@@ -187,7 +187,7 @@ ht-degree: 31%
       + [Tester la solution](./forms/forms-cs-assembler/test.md)
       + [Défi](./forms/forms-cs-assembler/challenge.md)
    + Stockage du portail Azure{#forms-cs-azure-portal}
-      + [Présentation](./forms/forms-cs-azure-portal/introduction.md)
+      + [Présentation ](./forms/forms-cs-azure-portal/introduction.md)
       + [Création d’un modèle de données de formulaire](./forms/forms-cs-azure-portal/create-fdm.md)
       + [Stocker les données de formulaire dans Azure Storage](./forms/forms-cs-azure-portal/create-af.md)
       + [Formulaire de préremplissage](./forms/forms-cs-azure-portal/prefill-af-storage.md)
@@ -197,7 +197,7 @@ ht-degree: 31%
       + [Créer un modèle de workflow](./forms/create-aem-workflow/create-workflow.md)
       + [Workflow de déclenchement](./forms/create-aem-workflow/configure-af.md)
    + Adobe Sign avec AEM Forms{#forms-and-sign}
-      + [Présentation](./forms/forms-and-sign/introduction.md)
+      + [Présentation ](./forms/forms-and-sign/introduction.md)
       + [Application d’API Adobe Sign](./forms/forms-and-sign/create-sign-api-application.md)
       + [Configuration cloud Adobe Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [Créer un formulaire adaptatif](./forms/forms-and-sign/create-adaptive-form.md)
@@ -208,7 +208,7 @@ ht-degree: 31%
       + [Création d’un modèle de données de formulaire](./forms/formscs-dynamics-crm/create-form-data-model.md)
       + [Créer un formulaire adaptatif](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Intégration à Salesforce{#integrate-with-salesforce}
-      + [Présentation](./forms/integrate-with-salesforce/introduction.md)
+      + [Présentation ](./forms/integrate-with-salesforce/introduction.md)
       + [Création d’une application connectée](./forms/integrate-with-salesforce/create-connected-app.md)
       + [Création d’un fichier swagger](./forms/integrate-with-salesforce/describe-rest-api.md)
       + [Création d’une source de données](./forms/integrate-with-salesforce/create-data-source.md)
@@ -237,7 +237,7 @@ ht-degree: 31%
       + [Travailleurs de métadonnées](./asset-compute/advanced/metadata.md)
    + [Résolution des problèmes](./asset-compute/troubleshooting.md)
 + Cloud 5{#cloud-5}
-   + [Présentation](./cloud-5/cloud5-introduction.md)
+   + [Présentation ](./cloud-5/cloud5-introduction.md)
    + [Saison 1](./cloud-5/cloud5-season-1.md)
    + [Saison 2](./cloud-5/cloud5-season-2.md)
    + [AEM CDN Partie 1](./cloud-5/cloud5-aem-cdn-part1.md)
@@ -253,6 +253,9 @@ ht-degree: 31%
    + Saison 2{#season-2}
       + [Fragments](./cloud-5/season-2/cloud5-experience-v-content-fragments.md)
       + [Repo Modernizer](./cloud-5/season-2/cloud5-repo-modernizer.md)
+      + [Admin Console](./cloud-5/season-2/cloud5-admin-console.md)
+      + [REPOINIT](./cloud-5/season-2/cloud5-repoinit.md)
+      + [Planificateur de tâches Sling](./cloud-5/season-2/cloud5-sling-job-scheduler.md)
 + [AEM série d’experts](./aem-experts-series.md)
 + Tutorials en plusieurs étapes{#multi-step-tutorials}
    + [Développement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
