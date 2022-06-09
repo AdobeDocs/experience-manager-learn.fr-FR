@@ -5,10 +5,10 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 85e00a237c09867247a0b3ccffa0bf843826ee26
+source-git-commit: 59bcd6f2501b324222de7e68f2f7c311cb595788
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 2%
+source-wordcount: '360'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 ![AEM série d’experts](./imgs/masthead-s2.png)
 >[!VIDEO](https://video.tv.adobe.com/v/343127)
 
-## Présentation
+## Présentation 
 
 Bienvenue à la deuxième série de Cloud 5 de AEM Engineering. L’un des Principaux problèmes de la phase de mise en oeuvre d’un produit est de disposer de suffisamment d’échantillons de code et/ou de démonstrations en direct de ces exemples, outils ou API. L’objectif de cette série est de fournir des informations utiles sur AEM as a Cloud Service en 5 minutes ou moins.
 
@@ -44,17 +44,19 @@ Chaque saison varie en longueur et sera publiée selon un calendrier fixe. Les s
                 Une vue colorée des différences entre l’expérience et les fragments de contenu. Spoiler : tout le monde gagne.
             </p>
         </td>   
-     <td>
-         <img alt="Repository Modernizer" src="./imgs/coming-soon.png"/>
-      <div>
-         <strong>Repository Modernizer</strong>
-         <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
-      </div>
-      <p>
-        <br/>
-         10 juin 2022
-      </p>
-   </td>
+         <td>
+            <a href="season-2/cloud5-repo-modernizer.md">
+                 <img alt="Repository Modernizer" src="./imgs/s2/001-thumb.png"/>
+            </a>
+            <div>
+                <a href="season-2/cloud5-repo-modernizer.md"><strong>Repository Modernizer</strong></a> 
+               <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
+            </div>
+            <p>
+                <br/>
+                Aperçu rapide de l’utilisation de l’outil de modernisation du référentiel pour restructurer les modules de projet existants en modules distincts compatibles avec AEM as a Cloud Service.
+            </p>
+         </td>
      <td>
             <img alt="Admin Console" src="./imgs/coming-soon.png"/>
       <div>
