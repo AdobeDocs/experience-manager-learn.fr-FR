@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9351
 thumbnail: 343040.jpeg
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: f2b5adea71ec8e772385b6e0ae068369798030e0
+source-git-commit: 6d5a531f44414887e8dc6568fa6f5dcb73bfb183
 workflow-type: tm+mt
-source-wordcount: '2774'
+source-wordcount: '2815'
 ht-degree: 2%
 
 ---
@@ -58,7 +58,7 @@ Le flux type d’une intégration SAML de publication AEM est le suivant :
 
 Cette vidéo décrit la configuration de l’intégration SAML 2.0 avec AEM service de publication as a Cloud Service et l’utilisation d’Okta comme fournisseur d’identité.
 
-## Prérequis
+## Conditions préalables
 
 Les éléments suivants sont requis lors de la configuration de l’authentification SAML 2.0 :
 
@@ -399,9 +399,14 @@ Une fois l’authentification au fournisseur d’identité réussie, le fourniss
 
 Si la réécriture de l’URL sur le serveur web Apache est configurée (`dispatcher/src/conf.d/rewrites/rewrite.rules`), assurez-vous que les requêtes de la variable `.../saml_login` les points de fin ne sont pas gérés accidentellement.
 
-## Activation de la synchronisation des données
+## Activation de la synchronisation des données et encapsulation des jetons
 
-Les enregistrements utilisateur doivent être synchronisés sur le niveau Publication AEM, une fois que le flux d’authentification SAML crée un utilisateur dans Publication AEM. À [activation de la synchronisation des données](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization), envoyer une demande à l’Adobe du service clientèle (via [Admin Console](https://adminconsole.adobe.com) > Assistance) demandant qu’elle soit activée.
+Une fois que le flux d’authentification SAML crée un utilisateur dans AEM Publish, le noeud utilisateur AEM authentifiable au niveau du service de publication AEM.
+Cela nécessite [synchronisation des données](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#data-synchronization) et [jetons encapsulés](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html#sticky-sessions-and-encapsulated-tokens) pour être activé par l’assistance Adobe sur le service de publication AEM.
+
+Envoyez une demande au service clientèle d’Adobe (via [Admin Console](https://adminconsole.adobe.com) > Assistance) demandant :
+
+> La synchronisation des données et les jetons encapsulés sont activés sur le service AEM Publish pour le programme X et l’environnement Y.
 
 ## Déploiement de la configuration SAML
 
