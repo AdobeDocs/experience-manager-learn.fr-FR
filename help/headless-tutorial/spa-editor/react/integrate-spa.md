@@ -10,7 +10,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: 415ad1266925525a6b0954b4515bae3d152bb6ec
 workflow-type: tm+mt
 source-wordcount: '1840'
 ht-degree: 3%
@@ -36,7 +36,7 @@ Ce chapitre ajoute un `Header` au SPA. En cours de construction **static** `Head
 
 *Le SPA est étendu pour ajouter un `Header` component*
 
-## Prérequis
+## Conditions préalables
 
 Examinez les outils et les instructions requis pour configurer une [environnement de développement local](overview.md#local-dev-environment). Ce chapitre est la suite du chapitre [Créer un projet](create-project.md) , cependant, pour suivre ce processus, vous avez besoin d’un projet AEM activé SPA.
 
@@ -128,7 +128,7 @@ Ensuite, examinez le `ui.frontend` pour comprendre le SPA qui a été généré 
 
    `index.js` est le point d’entrée du SPA. `ModelManager` est fourni par le SDK JS de l’éditeur d’AEM SPA. Il est chargé d’appeler et d’injecter la variable `pageModel` (le contenu JSON) dans l’application.
 
-1. Inspect du fichier `import-component.js` at `ui.frontend/src/import-components.js`. Ce fichier importe le fichier prêt à l’emploi **Composants principaux de React** et les rend disponibles pour le projet. Nous allons examiner le mappage du contenu AEM aux composants SPA dans le prochain chapitre.
+1. Inspect du fichier `import-components.js` at `ui.frontend/src/components/import-components.js`. Ce fichier importe le fichier prêt à l’emploi **Composants principaux de React** et les rend disponibles pour le projet. Nous allons examiner le mappage du contenu AEM aux composants SPA dans le prochain chapitre.
 
 ## Ajout d’un composant SPA statique {#static-spa-component}
 
