@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 59bcd6f2501b324222de7e68f2f7c311cb595788
+source-git-commit: 7985a5b36523aa090a7a9c7599e36bc1b5a9bd6f
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '375'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 ![AEM série d’experts](./imgs/masthead-s2.png)
 >[!VIDEO](https://video.tv.adobe.com/v/343127)
 
-## Présentation 
+## Présentation
 
 Bienvenue à la deuxième série de Cloud 5 de AEM Engineering. L’un des Principaux problèmes de la phase de mise en oeuvre d’un produit est de disposer de suffisamment d’échantillons de code et/ou de démonstrations en direct de ces exemples, outils ou API. L’objectif de cette série est de fournir des informations utiles sur AEM as a Cloud Service en 5 minutes ou moins.
 
@@ -57,17 +57,19 @@ Chaque saison varie en longueur et sera publiée selon un calendrier fixe. Les s
                 Aperçu rapide de l’utilisation de l’outil de modernisation du référentiel pour restructurer les modules de projet existants en modules distincts compatibles avec AEM as a Cloud Service.
             </p>
          </td>
-     <td>
-            <img alt="Admin Console" src="./imgs/coming-soon.png"/>
-      <div>
-            <strong>Admin Console</strong>
-         <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
-      </div>
-      <p>
-        <br/>
-         16 juin 2022
-      </p>
-   </td> 
+         <td>
+            <a href="season-2/cloud5-admin-console.md">
+                 <img alt="Admin Console" src="./imgs/s2/002-thumb.png"/>
+            </a>
+            <div>
+                  <a href="season-2/cloud5-admin-console.md"><strong>Admin Console</strong></a>
+               <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
+            </div>
+            <p>
+            <br/>
+               Darin et James discutent des éléments courants que les utilisateurs doivent connaître concernant la console d’administration, la configuration et l’accès.
+            </p>
+         </td> 
   </tr>
   <tr>
    <td>
