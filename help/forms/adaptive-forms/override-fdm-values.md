@@ -8,14 +8,18 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 10537
-source-git-commit: 2cb08c584cb8dce27fd74314d7eba69ef4f8a875
+source-git-commit: c462d48d26c9a7aa0e4cfc4f24005b41e8e82cb8
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
 
-# Remplacer les propriétés du modèle de données de formulaire
+# Remplacer les propriétés du modèle de données de formulaire{#using-form-data-model-service-as-step-in-workflow}
+
+Avant AEM Forms 6.5.13, vous deviez modifier manuellement la configuration des services cloud de votre modèle de données de formulaire pour pointer vers différents points de terminaison ou créer un modèle de données de formulaire complètement nouveau.
+
+## Remplacer les propriétés du modèle de données de formulaire
 
 Avant AEM Forms 6.5.13, vous deviez modifier manuellement la configuration des services cloud de votre modèle de données de formulaire pour pointer vers différents points de terminaison ou créer un modèle de données de formulaire complètement nouveau.
 
@@ -23,6 +27,7 @@ AEM Forms 6.5.13 offre la possibilité de remplacer les propriétés du modèle 
 
 La vidéo suivante présente la fonctionnalité et le cas d’utilisation
 
->!![NOTE]La fonctionnalité présentée dans cette vidéo nécessite AEM Forms 6.5.13
-
+>[!NOTE]
+>La fonctionnalité présentée dans cette vidéo nécessite AEM Forms 6.5.13
 >[!VIDEO](https://video.tv.adobe.com/v/343762?quality=9&learn=on)
+

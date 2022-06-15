@@ -6,7 +6,7 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 5fa3d52a-6a71-45c4-9b1a-0e6686dd29bc
-source-git-commit: f1afccdad8d819604c510421204f59e7b3dc68e4
+source-git-commit: c462d48d26c9a7aa0e4cfc4f24005b41e8e82cb8
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 2%
@@ -19,7 +19,7 @@ Cet article vous guide tout au long du processus de création d’un utilisateur
 
 Dans les versions précédentes d’Adobe Experience Manager (AEM), le résolveur de ressources d’administration était utilisé pour le traitement principal qui nécessitait l’accès au référentiel. L’utilisation du résolveur de ressources d’administration est obsolète dans AEM 6.3. À la place, un utilisateur système disposant d’autorisations spécifiques dans le référentiel est utilisé.
 
-En savoir plus sur les détails de la [création et de l’utilisation des utilisateurs du service dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
+En savoir plus sur les détails de [création et utilisation des utilisateurs du service dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/advanced/service-users.html).
 
 Cet article décrit la création d’un utilisateur système et la configuration des propriétés du mappeur utilisateur.
 
@@ -29,8 +29,8 @@ Cet article décrit la création d’un utilisateur système et la configuration
 1. Cliquez sur &quot;Créer un utilisateur système&quot;.
 1. Définissez le type userid sur &quot;data&quot; et cliquez sur l’icône verte pour terminer le processus de création de l’utilisateur système.
 1. [Ouvrez configMgr](http://localhost:4502/system/console/configMgr)
-1. Recherchez &quot;Service de mappage des utilisateurs du service Apache Sling&quot; et cliquez pour ouvrir les propriétés.
-1. Cliquez sur l’icône *+* (plus) pour ajouter le mappage de service suivant :
+1. Rechercher _Service de mappage des utilisateurs du service Apache Sling_ et cliquez sur pour ouvrir les propriétés.
+1. Cliquez sur le bouton *+* (plus) pour ajouter le mappage de service suivant
 
    * DevelopingWithServiceUser.core:getresourceresolver=data
    * DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
@@ -45,7 +45,7 @@ Nous pouvons également obtenir le résolveur de ressources au nom de l’utilis
 1. Accédez à [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 1. Chargement et démarrage du lot OSGi
 1. Assurez-vous que le lot est à principal état
-1. Vous avez maintenant créé un *utilisateur système* et déployé le *lot utilisateur de service*.
+1. Vous avez maintenant créé une *Utilisateur système* et a également déployé la fonction *Groupe d’utilisateurs du service*.
 
    Pour permettre l’accès à /content, attribuez à l’utilisateur système (&#39; data &#39;) des autorisations de lecture sur le noeud de contenu.
 
