@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: b613aa65-f64b-4851-a2af-52e28271ce88
-source-git-commit: 967bcf3c4046a17303eb2fe70d7156267a7cbed7
+source-git-commit: 9ca80b743c2ca0d3e63cce99fa905be49d1fbcdd
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 6%
+source-wordcount: '2071'
+ht-degree: 8%
 
 ---
 
@@ -22,19 +22,19 @@ AEM est basé sur 4 ensembles d’API Java Principaux.
 
 * **Adobe Experience Manager (AEM)**
 
-   * abstractions de produits telles que pages, ressources, workflows, etc.
+   * Abstractions de produits telles que des pages, ressources, workflows, etc.
 
 * **Structure web Apache Sling**
 
-   * abstractions REST et basées sur des ressources telles que les ressources, les mappages de valeurs et les requêtes HTTP.
+   * REST et abstractions basées sur des ressources telles que des ressources, cartes de valeurs et requêtes HTTP.
 
 * **JCR (Apache Jackrabbit Oak)**
 
-   * Extraits de données et de contenu tels que le noeud, les propriétés et les sessions.
+   * Abstractions de données et de contenu telles que des nœuds, propriétés et sessions.
 
 * **OSGi (Apache Felix)**
 
-   * abstractions du conteneur d’applications OSGi telles que les composants de services et (OSGi).
+   * Abstractions du conteneur d’application OSGi telles que les services et les composants (OSGi).
 
 ## Préférence API Java &quot;règle de base&quot;
 
@@ -61,11 +61,11 @@ Cet ordre est une règle générale, ce qui signifie qu&#39;il existe des except
 
 Les API d’AEM fournissent des abstractions et des fonctionnalités spécifiques aux cas d’utilisation productifs.
 
-Par exemple, AEM [PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) et [Page](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) Les API fournissent des abstractions pour `cq:Page` noeuds dans AEM représentant les pages web.
+Par exemple, AEM [PageManager](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) et [Page](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Page.html) Les API fournissent des abstractions pour `cq:Page` noeuds dans AEM représentant les pages web.
 
 Bien que ces noeuds soient disponibles via [!DNL Sling] Les API en tant que ressources et les API JCR en tant que noeuds, les API AEM fournissent des abstractions pour les cas d’utilisation courants. L’utilisation des API d’AEM permet d’assurer un comportement cohérent entre AEM le produit, ainsi que des personnalisations et des extensions à .
 
-### com.adobe.* par rapport à com.day.* API
+### com.adobe.&#42; par rapport à com.day.&#42;les API ;
 
 AEM API ont une préférence intra-package, identifiée par les packages Java suivants, par ordre de préférence :
 
@@ -95,7 +95,7 @@ L’API préférée est : [AEM Query Builder](https://helpx.adobe.com/experience
 * [AEM prédicats](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/querybuilder-predicate-reference.html) prise en charge des exigences de requête courantes
 
 * API extensible, permettant le développement de [prédicats de requête](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/implementing-custom-predicate-evaluator.html)
-* JCR-SQL2 et XPath peuvent être exécutés directement via [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) et [API JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/query/package-summary.html), renvoi des résultats a [[!DNL Sling] Ressources](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) ou [Noeuds JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html), respectivement.
+* JCR-SQL2 et XPath peuvent être exécutés directement via [[!DNL Sling]](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/ResourceResolver.html#findResources-java.lang.String-java.lang.String-) et [API JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), renvoi des résultats a [[!DNL Sling] Ressources](https://sling.apache.org/apidocs/sling10/org/apache/sling/api/resource/Resource.html) ou [Noeuds JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html), respectivement.
 
 >[!CAUTION]
 >
@@ -131,9 +131,9 @@ L’API préférée est : [AEM Query Builder](https://helpx.adobe.com/experience
 
 ## API JCR
 
-* **[JavaDocs JCR 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
+* **[JavaDocs JCR 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)**
 
-Le [API JCR (Java Content Repository) 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) fait partie d’une spécification pour les implémentations JCR (dans le cas d’AEM, [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). Toute implémentation JCR doit se conformer à ces API et les mettre en oeuvre. Il s’agit donc de l’API de niveau le plus bas pour interagir avec le contenu AEM.
+Le [API JCR (Java Content Repository) 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) fait partie d’une spécification pour les implémentations JCR (dans le cas d’AEM, [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/)). Toute implémentation JCR doit se conformer à ces API et les mettre en oeuvre. Il s’agit donc de l’API de niveau le plus bas pour interagir avec le contenu AEM.
 
 Le JCR lui-même est une AEM de banque de données NoSQL hiérarchique/basée sur une arborescence qui utilise comme référentiel de contenu. Le JCR dispose d’une vaste gamme d’API prises en charge, allant du CRUD de contenu à l’interrogation de contenu. Malgré cette API robuste, il est rare qu’elles soient préférées aux AEM de niveau supérieur et [!DNL Sling] abstractions.
 
@@ -145,11 +145,11 @@ Bien que JCR soit AEM référentiel de contenu, ses API ne sont PAS la méthode 
 
 >[!CAUTION]
 >
->L’utilisation généralisée des interfaces Session et Node des API JCR dans une application AEM est une utilisation puissante du code. Assurez-vous que [!DNL Sling] Les API ne doivent pas être utilisées à la place.
+>L’utilisation étendue des interfaces Session et Node des API JCR dans une application AEM est une utilisation inodore du code. Assurez-vous que [!DNL Sling] Les API ne doivent pas être utilisées à la place.
 
 ### Utilisations courantes des API JCR
 
-* [Gestion du contrôle d&#39;accès](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html)
+* [Gestion du contrôle d&#39;accès](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=fr)
 * [Gestion autorisable (utilisateurs/groupes)](https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/user/package-summary.html)
 * Observation JCR (écoute des événements JCR)
 * Création de structures de noeuds profonds
@@ -305,7 +305,7 @@ L’adaptation d’une ressource à une page requiert que la ressource elle-mêm
 Page page = resource.adaptTo(Page.class);
 ```
 
-### Lire les propriétés AEM page
+### Lire AEM propriétés de la page
 
 Utilisez les getters de l’objet Page pour obtenir des propriétés bien connues (`getTitle()`, `getDescription()`, etc.) et `page.getProperties()` pour obtenir la variable `[cq:Page]/jcr:content` ValueMap pour récupérer d’autres propriétés.
 

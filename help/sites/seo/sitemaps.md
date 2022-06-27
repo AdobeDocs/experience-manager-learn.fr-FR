@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9165
 thumbnail: 337960.jpeg
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 71f1d32c12742cdb644dec50050d147395c3f3b6
+source-git-commit: 7cfc150989453eec776eb34eac9b4598c46b0d7c
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 1%
+source-wordcount: '224'
+ht-degree: 6%
 
 ---
 
@@ -45,6 +45,23 @@ Définit la variable [Configuration d’usine OSGi](http://localhost:4502/system
   "searchPath": "/content/wknd"
 }
 ```
+
+### URL absolue du plan de site
+
+AEM sitemap prend en charge les URL absolues en utilisant [Mappage Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Pour ce faire, créez des noeuds de mappage sur les services AEM générant des plans de site.
+
+Exemple de définition de noeud de mappage Sling pour `https://wknd.com` peut être défini sous `/etc/map/https` comme suit :
+
+| Chemin  | Nom de la propriété | Type de propriété | Valeur de la propriété |
+|------|----------|---------------|-------|
+| `/etc/map/https/wknd-site` | `jcr:primaryType` | Chaîne | `nt:unstructured` |
+| `/etc/map/https/wknd-site` | `sling:internalRedirect` | Chaîne | `/content/wknd/(.*)` |
+| `/etc/map/https/wknd-site` | `sling:match` | Chaîne | `wknd.com/$1` |
+
+La capture d’écran ci-dessous illustre une configuration similaire, mais pour `http://wknd.local` (mappage de nom d’hôte local s’exécutant sur `http`).
+
+![Configuration des URL absolues du plan de site](../assets/sitemaps/sitemaps-absolute-urls.jpg)
+
 
 ### Règle de filtre d’autorisation de Dispatcher
 
