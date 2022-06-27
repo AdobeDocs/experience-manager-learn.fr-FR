@@ -3,9 +3,9 @@ title: Comment générer la vélocité du contenu avec Adobe Experience Manager
 description: Découvrez la vitesse du contenu et sa valeur au sein des entreprises. Parcourez quatre principes de mise en oeuvre efficace et les pièges à prendre en compte tout au long du chemin.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: 89982f506a5e1ffc12f84a0f616aaa1dc2e00c5b
+source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
 workflow-type: tm+mt
-source-wordcount: '2805'
+source-wordcount: '2823'
 ht-degree: 0%
 
 ---
@@ -176,3 +176,5 @@ Voici quelques écueils potentiels à éviter :
 * Affichage des solutions de manière isolée. Par exemple, se concentrer uniquement sur l’aspect technique de la mise en oeuvre d’AEM ne permet pas de bénéficier pleinement des avantages commerciaux. Nous vous recommandons plutôt d’examiner les cas et les scénarios d’utilisation commerciale, puis de passer à l’architecture et à la conception, car cela vous donnera une meilleure vue des fonctionnalités AEM. Anurandha Pentareddy de Adobe partage : _&quot;Une chose que je vous conseille est d’examiner vos objectifs de valeur dès le départ pour la plateforme que vous mettez en oeuvre.&quot;_
 
 Pour une discussion plus approfondie de la vitesse du contenu, écoutez cette heure [table ronde](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte), et Anuradha Pentareddy, Adobe.
+
+Pour en savoir plus sur la stratégie et le leadership de la pensée, voir [Succès des clients](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) hub.
