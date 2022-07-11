@@ -1,8 +1,8 @@
 ---
-title: Application iOS SwiftUI - AEM exemple sans affichage
+title: Application iOS - AEM exemple sans affichage
 description: Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application iOS explique comment interroger du contenu à l’aide des API GraphQL AEM à l’aide de requêtes persistantes.
 version: Cloud Service
-mini-toc-levels: 1
+mini-toc-levels: 2
 kt: 9166
 thumbnail: KT-9166.jpg
 feature: Content Fragments, GraphQL API
@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: bcedb190fba7b6bc044da06bd36d097d553172a1
+source-git-commit: 8b2c116ceb6ab8c3a009dcec6629c2e97d815b7b
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '981'
 ht-degree: 4%
 
 ---
 
-# Application iOS SwiftUI
+# application iOS
 
 Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application iOS explique comment interroger du contenu à l’aide des API GraphQL AEM à l’aide de requêtes persistantes.
 
@@ -131,7 +131,7 @@ query($slug: String!) {
         slug: {
           _expressions: [ { value: $slug } ]
         }
-  	}) {
+      }) {
     items {
       _path
       title
@@ -173,7 +173,7 @@ query($slug: String!) {
 }
 ```
 
-## Exécuter la requête persistante GraphQL
+### Exécuter la requête persistante GraphQL
 
 AEM requêtes persistantes sont exécutées sur des GET HTTP. Par conséquent, les bibliothèques GraphQL courantes qui utilisent un POST HTTP tel qu’Apollo ne peuvent pas être utilisées. Créez plutôt une classe personnalisée qui exécute les requêtes HTTP de GET persistantes à AEM.
 
