@@ -9,9 +9,9 @@ version: 6.3, 6.4, 6.5, Cloud Service
 kt: 201
 thumbnail: 18131.jpg
 exl-id: cc4ffbd0-207a-42e4-bfcb-d6c83fb97237
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 1c2ee81c0d262f9e3f92f4907aba8e8787ce729f
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '250'
 ht-degree: 2%
 
 ---
@@ -26,15 +26,15 @@ Découvrez comment les fragments de contenu peuvent être localisés et traduits
 
 Les fragments de contenu sont un type de contenu reconnu qui AEM des extractions à envoyer à un service de traduction externe. Plusieurs cas pratiques sont pris en charge prêts à l’emploi :
 
-1. Un fragment de contenu peut être sélectionné directement dans la console Ressources pour la copie et la traduction de la langue.
+1. Un fragment de contenu peut être [sélectionné directement dans la console Ressources pour la copie et la traduction de la langue](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html).
 2. Les fragments de contenu référencés sur une page Sites sont copiés dans le dossier de langue approprié et extraits pour traduction lorsque la page Sites est sélectionnée pour la copie de langue.
 3. Les ressources multimédias intégrées intégrées à un fragment de contenu peuvent être extraites et traduites.
 4. Les collections de ressources associées à un fragment de contenu peuvent être extraites et traduites.
 
 ## Éditeur de règles de traduction {#translation-rules-editor}
 
-Le comportement de traduction de Experience Manager peut être mis à jour à l’aide de l’**éditeur de règles de traduction**. Pour mettre à jour la traduction, accédez à **Outils** > **Général** > **Configuration de traduction** à l’adresse [http://localhost:4502/libs/cq/translation/translationrules/contexts.html](http://localhost:4502/libs/cq/translation/translationrules/contexts.html).
+Le comportement de traduction du Experience Manager peut être mis à jour à l’aide de la fonction **Éditeur de règles de traduction**. Pour mettre à jour la traduction, accédez à **Outils** > **Général** > **Configuration de traduction** at [http://localhost:4502/libs/cq/translation/translationrules/contexts.html](http://localhost:4502/libs/cq/translation/translationrules/contexts.html).
 
-Les configurations prêtes à l’emploi font référence à des fragments de contenu à `fragmentPath` avec un type de ressource `core/wcm/components/contentfragment/v1/contentfragment`. Tous les composants qui héritent de `v1/contentfragment` sont reconnus par la configuration par défaut.
+Les configurations prêtes à l’emploi font référence à des fragments de contenu à l’adresse `fragmentPath` avec un type de ressource de `core/wcm/components/contentfragment/v1/contentfragment`. Tous les composants qui héritent du `v1/contentfragment` sont reconnus par la configuration par défaut.
 
 ![Éditeur de règles de traduction](assets/translation-configuration.png)
