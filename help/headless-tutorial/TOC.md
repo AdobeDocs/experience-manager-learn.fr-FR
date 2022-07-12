@@ -6,10 +6,10 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 23%
+source-wordcount: '230'
+ht-degree: 24%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 23%
       + [AEM SDK sans affichage](./graphql/how-to/aem-headless-sdk.md)
    + Exemples {#example-apps}
       + [React](./graphql/example-apps/react-app.md)
-      + [iOS SwiftUI](./graphql/example-apps/ios-swiftui-app.md)
+      + [iOS](./graphql/example-apps/ios-swiftui-app.md)
       + [Android](./graphql/example-apps/android-app.md)
 + Éditeur SPA{#spa-editor}
    + React{#react}
@@ -92,4 +92,4 @@ ht-degree: 23%
    + [4 - Définition des modèles Content Services](./content-services/chapter-4.md)
    + [5 - Création de pages Content Services](./content-services/chapter-5.md)
    + [6 - Exposition du contenu sur la publication AEM pour diffusion](./content-services/chapter-6.md)
-   + [7 - Consommation AEM Content Services à partir d’une application Mobile](./content-services/chapter-7.md)
+   + [7 - Consommation AEM Content Services à partir d’une application mobile](./content-services/chapter-7.md)

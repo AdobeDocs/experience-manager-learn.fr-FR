@@ -8,17 +8,17 @@ role: Developer
 level: Intermediate
 kt: 10254
 thumbnail: KT-10254.jpeg
-source-git-commit: 4966a48c29ae1b5d0664cb43feeb4ad94f43b4e1
+source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 0%
+source-wordcount: '513'
+ht-degree: 2%
 
 ---
 
 
 # Contenu localisé avec AEM sans affichage
 
-AEM fournit une [Structure d’intégration de traduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) pour le contenu sans interface utilisateur, ce qui permet aux fragments de contenu et aux ressources de prise en charge d’être facilement traduits pour une utilisation dans tous les paramètres régionaux. Il s’agit de la même structure que celle utilisée pour traduire d’autres contenus AEM, tels que Pages, Fragments d’expérience, Ressources et Forms. Une fois [la traduction du contenu sans tête](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html), puis publié, il est prêt à être utilisé par les applications sans interface utilisateur graphique.
+AEM fournit une [Structure d’intégration de traduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) pour le contenu sans interface utilisateur, ce qui permet aux fragments de contenu et aux ressources de prise en charge d’être facilement traduits pour une utilisation dans tous les paramètres régionaux. Il s’agit de la même structure que celle utilisée pour traduire d’autres contenus AEM, tels que Pages, Fragments d’expérience, Ressources et Forms. Une fois [la traduction du contenu sans tête](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=fr), puis publié, il est prêt à être utilisé par les applications sans interface utilisateur graphique.
 
 ## Structure des dossiers de ressources{#assets-folder-structure}
 
@@ -36,22 +36,22 @@ Le code de paramètres régionaux est également la valeur utilisée pour filtre
 | en | /content/dam/.../**en**/... | Contenu en anglais |
 | es | /content/dam/.../**es**/... | Contenu espagnol |
 
-## Requête GraphQL
+## Requête persistante GraphQL
 
-AEM fournit une `_locale` Filtre GraphQL qui filtre automatiquement le contenu par code de paramètres régionaux . Par exemple, en interrogeant toutes les aventures anglaises dans la [Projet de démonstration de référence WKND](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) ressemblerait à ceci :
+AEM fournit une `_locale` Filtre GraphQL qui filtre automatiquement le contenu par code de paramètres régionaux . Par exemple, en interrogeant toutes les aventures anglaises dans la [Projet de démonstration de référence WKND](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) peut être effectué avec une nouvelle requête conservée. `wknd-shared/adventures-by-locale` défini comme :
 
 ```graphql
-{
-  adventureList(_locale: "en") {
+query($locale: String!) {
+  adventureList(_locale: $locale) {
     items {      
       _path
-      adventureTitle
+      title
     }
   }
 }
 ```
 
-Le `_locale` filtre nécessite l’utilisation de [AEM convention de localisation de base de dossiers de ressources](#assets-folder-structure).
+Le `$locale` utilisée dans la variable `_locale` filtre nécessite le code de paramètres régionaux (par exemple `en`, `en_us`ou `de`), comme indiqué dans [AEM convention de localisation de base de dossiers de ressources](#assets-folder-structure).
 
 ## Exemple React
 
@@ -112,31 +112,26 @@ Le composant Aventures interroge AEM toutes les aventures par langue et réperto
 
 Cette approche peut être étendue à d’autres requêtes de votre application, en s’assurant que toutes les requêtes incluent uniquement le contenu spécifié par la sélection des paramètres régionaux d’un utilisateur.
 
-L’interrogation de l’AEM est effectuée dans le crochet React personnalisé. [useGraphQL, décrit plus en détail dans la documentation AEM Requête GraphQL](./aem-headless-sdk.md).
+L’interrogation de l’AEM est effectuée dans le crochet React personnalisé. [getAdventuresByLocale, décrit plus en détail sur la documentation AEM Requête GraphQL](./aem-headless-sdk.md).
 
 ```javascript
 // src/Adventures.js
 
 import { useContext } from "react"
-import { useGraphQL } from './useGraphQL'
+import { useAdventuresByLocale } from './api/persistedQueries'
 import LocaleContext from './LocaleContext'
 
 export default function Adventures() {
     const { locale } = useContext(LocaleContext);
 
-    let {data} = useGraphQL(`{
-            adventureList(_locale: "${locale}") {
-                items {      
-                _path
-                adventureTitle
-             }
-        }
-    }`);
+    // Get data from AEM using GraphQL persisted query as defined above 
+    // The details of defining a React useEffect hook are explored in How to > AEM Headless SDK
+    let { data, error } = useAdventuresByLocale(locale);
 
     return (
         <ul>
             {data?.adventureList?.items?.map((adventure, index) => { 
-                return <li key={index}>{adventure.adventureTitle}</li>
+                return <li key={index}>{adventure.title}</li>
             })}
         </ul>
     )
