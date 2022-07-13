@@ -9,22 +9,22 @@ level: Intermediate
 kt: 9354
 thumbnail: KT-9354.jpeg
 exl-id: a565bc3a-675f-4d5e-b83b-c14ad70a800b
-source-git-commit: aa2d0d4d6e0eb429baa37378907a9dd53edd837d
+source-git-commit: bdce84fdcc949c8f8d0690ee7110238d8e8d3e42
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
 
 # Connexions HTTP/HTTPS pour les adresses IP sortantes dédiées et les VPN
 
-Les connexions HTTP/HTTPS doivent être traitées par proxy en dehors des connexions as a Cloud Service AEM, mais elles n’ont pas besoin de fonctions spéciales. `portForwards` et peuvent utiliser AEM de la mise en réseau avancée `AEM_HTTP_PROXY_HOST`, `AEM_HTTP_PROXY_PORT`, `AEM_HTTPS_PROXY_HOST`, et `AEM_HTTPS_PROXY_PORT`.
+Les connexions HTTP/HTTPS sont automatiquement traitées par proxy en dehors des AEM as a Cloud Service avec une adresse IP de sortie dédiée ou un VPN, et elles n’ont pas besoin de `portForwards` règles.
 
 ## Prise en charge de la mise en réseau avancée
 
 L’exemple de code suivant est pris en charge par les options de mise en réseau avancées suivantes.
 
-Assurez-vous que la variable [approprié](../advanced-networking.md#advanced-networking) une configuration réseau avancée a été configurée avant de suivre ce tutoriel.
+Assurez-vous que la variable [adresse IP de sortie dédiée ou VPN](../advanced-networking.md#advanced-networking) une configuration réseau avancée a été configurée avant de suivre ce tutoriel.
 
 | Pas de mise en réseau avancée | [Sortie de port flexible](../flexible-port-egress.md) | [Adresse IP sortante dédiée](../dedicated-egress-ip-address.md) | [Réseau privé virtuel](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
@@ -36,7 +36,7 @@ Assurez-vous que la variable [approprié](../advanced-networking.md#advanced-net
 
 ## Exemple de code
 
-Cet exemple de code Java™ illustre un service OSGi qui peut s’exécuter dans AEM as a Cloud Service qui établit une connexion HTTP à un serveur web externe sur 8080. Les connexions aux serveurs Web HTTPS utilisent la variable `AEM_HTTPS_PROXY_HOST` et `AEM_HTTPS_PROXY_PORT` au lieu de  `AEM_HTTP_PROXY_HOST` et `AEM_HTTP_PROXY_PORT`.
+Cet exemple de code Java™ illustre un service OSGi qui peut s’exécuter dans AEM as a Cloud Service qui établit une connexion HTTP à un serveur web externe sur 8080. Les connexions HTTPS (ou HTTP) sont automatiquement traitées par proxy hors d’AEM as a Cloud Service et ne nécessitent pas de développement spécial.
 
 >[!NOTE]
 > Il est recommandé de [API HTTP Java™ 11](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/package-summary.html) sont utilisés pour effectuer des appels HTTP/HTTPS depuis AEM.
