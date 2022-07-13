@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
+source-git-commit: 6958b1f82c609af2998d94fd868e67bf1578e848
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1264'
 ht-degree: 2%
 
 ---
@@ -229,15 +229,7 @@ Les requêtes HTTP/HTTPS provenant d’AEM sur les ports standard (80/443) sont 
 
 ### HTTP/HTTPS
 
-Lors de la création de connexions HTTP/HTTPS à partir d’AEM, pour obtenir une adresse IP de sortie dédiée ou être routée par le VPN, la connexion doit être établie via un hôte et des ports spéciaux, fournis via des espaces réservés.
-
-AEM fournit deux ensembles de variables système Java™ spéciales qui correspondent à des proxys HTTP/HTTPS AEM.
-
-| Nom de variable | Utilisation | Code Java™ | Configuration OSGi | Configuration mod_proxy du serveur web Apache | | - | - | - | - | - | | `AEM_HTTP_PROXY_HOST` | Hôte proxy pour les connexions HTTP | `System.getenv("AEM_HTTP_PROXY_HOST")` | `$[env:AEM_HTTP_PROXY_HOST]` | `${AEM_HTTP_PROXY_HOST}` | | `AEM_HTTP_PROXY_PORT` | Port proxy pour les connexions HTTP | `System.getenv("AEM_HTTP_PROXY_PORT")` | `$[env:AEM_HTTP_PROXY_PORT]` |  `${AEM_HTTP_PROXY_PORT}` | | `AEM_HTTPS_PROXY_HOST` | Hôte proxy pour les connexions HTTPS | `System.getenv("AEM_HTTPS_PROXY_HOST")` | `$[env:AEM_HTTPS_PROXY_HOST]` | `${AEM_HTTPS_PROXY_HOST}` | | `AEM_HTTPS_PROXY_PORT` | Port proxy pour les connexions HTTPS | `System.getenv("AEM_HTTPS_PROXY_PORT")` | `$[env:AEM_HTTPS_PROXY_PORT]` | `${AEM_HTTPS_PROXY_PORT}` |
-
-Les demandes pour les services externes HTTP/HTTPS doivent être effectuées en configurant la configuration du proxy du client HTTP Java™ via les valeurs d’hôte/port du proxy AEM.
-
-Lors d’appels HTTP/HTTPS à des services externes sur n’importe quel port, aucun opérateur correspondant `portForwards` doit être défini à l’aide des API de Cloud Manager `__enableEnvironmentAdvancedNetworkingConfiguration` , car les &quot;règles&quot; de transfert de port sont définies &quot;dans le code&quot;.
+Lors de la création de connexions HTTP/HTTPS à partir d’AEM, lors de l’utilisation de VPN, les connexions HTTP/HTTPS sont automatiquement traitées par proxy hors d’AEM. Aucun code ou configuration supplémentaire n’est requis pour la prise en charge des connexions HTTP/HTTPS.
 
 >[!TIP]
 >
