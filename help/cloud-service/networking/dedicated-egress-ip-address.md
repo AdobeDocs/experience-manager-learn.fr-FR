@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
-source-git-commit: a18bea7986062ff9cb731d794187760ff6e0339f
+source-git-commit: e9aeb54f0e2b52ad2d1cc914820bd6e232e509a0
 workflow-type: tm+mt
-source-wordcount: '1238'
-ht-degree: 1%
+source-wordcount: '1146'
+ht-degree: 2%
 
 ---
 
@@ -185,15 +185,7 @@ Les requêtes HTTP/HTTPS provenant d’AEM sur les ports standard (80/443) sont 
 
 ### HTTP/HTTPS
 
-Lors de la création de connexions HTTP/HTTPS à partir d’AEM, pour obtenir une adresse IP de sortie dédiée, la connexion doit être établie par le biais d’hôtes et de ports spéciaux, fournis via des espaces réservés.
-
-AEM fournit deux ensembles de variables système Java™ spéciales qui correspondent à des proxys HTTP/HTTPS AEM.
-
-| Nom de variable | Utilisation | Code Java™ | Configuration OSGi | Configuration mod_proxy du serveur web Apache | | - | - | - | - | - | | `AEM_HTTP_PROXY_HOST` | Hôte proxy pour les connexions HTTP | `System.getenv("AEM_HTTP_PROXY_HOST")` | `$[env:AEM_HTTP_PROXY_HOST]` | `${AEM_HTTP_PROXY_HOST}` | | `AEM_HTTP_PROXY_PORT` | Port proxy pour les connexions HTTP | `System.getenv("AEM_HTTP_PROXY_PORT")` | `$[env:AEM_HTTP_PROXY_PORT]` |  `${AEM_HTTP_PROXY_PORT}` | | `AEM_HTTPS_PROXY_HOST` | Hôte proxy pour les connexions HTTPS | `System.getenv("AEM_HTTPS_PROXY_HOST")` | `$[env:AEM_HTTPS_PROXY_HOST]` | `${AEM_HTTPS_PROXY_HOST}` | | `AEM_HTTPS_PROXY_PORT` | Port proxy pour les connexions HTTPS | `System.getenv("AEM_HTTPS_PROXY_PORT")` | `$[env:AEM_HTTPS_PROXY_PORT]` | `${AEM_HTTPS_PROXY_PORT}` |
-
-Les demandes pour les services externes HTTP/HTTPS doivent être effectuées en configurant la configuration du proxy du client HTTP Java™ à l’aide des valeurs d’hôte/port du proxy AEM.
-
-Lors d’appels HTTP/HTTPS à des services externes sur n’importe quel port, aucun opérateur correspondant `portForwards` doit être défini à l’aide de l’API Cloud Manager `enableEnvironmentAdvancedNetworkingConfiguration` , car les &quot;règles&quot; de transfert de port sont définies &quot;dans le code&quot;.
+Lors de la création de connexions HTTP/HTTPS à partir d’AEM, lors de l’utilisation d’adresses IP de sortie dédiées, les connexions HTTP/HTTPS sont automatiquement traitées par proxy hors d’AEM à l’aide de l’adresse IP de sortie dédiée. Aucun code ou configuration supplémentaire n’est requis pour la prise en charge des connexions HTTP/HTTPS.
 
 #### Exemples de code
 
