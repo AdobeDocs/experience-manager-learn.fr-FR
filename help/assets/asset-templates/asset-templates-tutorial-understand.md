@@ -1,17 +1,17 @@
 ---
-title: 'Présentation des fichiers d’InDesign et des modèles de ressources dans AEM Assets '
+title: Présentation des fichiers d’InDesign et des modèles de ressources dans AEM Assets
 description: Ce tutoriel vidéo vous guide tout au long de la définition d’un fichier d’InDesign et de toutes les considérations qui l’accompagnent, en vue de l’utiliser dans la fonction Modèles de ressources d’AEM Assets.
 version: 6.3, 6.4, 6.5
-topic: Gestion de contenu
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
+source-git-commit: bf5b2fca04c09fd52df8ef8d9fca8b4b7bd2de2f
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '507'
 ht-degree: 1%
 
 ---
-
 
 # Présentation des fichiers d’InDesign et des modèles de ressources dans AEM Assets {#understanding-indesign-files-and-asset-templates-in-aem-assets}
 
@@ -21,25 +21,25 @@ Ce tutoriel vidéo vous guide tout au long de la définition d’un fichier d’
 
 >[!VIDEO](https://video.tv.adobe.com/v/19293/?quality=9&learn=on)
 
-1. Téléchargez et ouvrez le [**modèle de fichier d’InDesign**](assets/asset-templates-tutorial-video--supporting-files.zip)
-2. **Ouvrez le panneau Balises,** passez en revue la convention d’affectation des noms de balise et notez que les éléments pouvant être créés dans le fichier d’InDesign sont déjà balisés. Pour rappel, seuls les éléments balisés sont modifiables dans AEM.
+1. Télécharger et ouvrir le [**Modèle de fichier d’InDesign**](assets/asset-templates-tutorial-video--supporting-files.zip)
+2. **Ouvrez le panneau Balises,** passez en revue la convention d’appellation des balises et notez que les éléments pouvant être créés dans le fichier d’InDesign sont déjà balisés. Pour rappel, seuls les éléments balisés sont modifiables dans AEM.
 
    * **Fenêtre > Utilitaires > Balises**
 
-3. Sur la page, ajoutez un nouvel élément de texte, indiquez le texte &quot;En-tête&quot; et appliquez le style de paragraphe **En-tête**.
+3. Sur la page, ajoutez un nouvel élément de texte, indiquez le texte &quot;En-tête&quot; et appliquez l’événement **Titre** Style de paragraphe.
 
    * **Fenêtre > Styles > Styles de paragraphe**
 
-   Ensuite, créez et appliquez une nouvelle balise nommée **Page2Heading.**
+   Ensuite, créez et appliquez une nouvelle balise nommée **En-tête Page2.**
 
-4. Ajoutez l’image du logo FPO ([fournie dans le fichier zip](assets/asset-templates-tutorial-video--supporting-files.zip)) à l’élément Logo sur la page de Principal.
+4. Ajout de l’image du logo FPO ([fourni dans le fichier zip](assets/asset-templates-tutorial-video--supporting-files.zip)) à l’élément Logo sur la page de Principal.
 
-   * **Cliquez avec le bouton droit** et **sélectionnez Ajustement > Options d’ajustement des cadres... > Ajustement du contenu > Remplir le cadre proportionnellement.**
-   [En savoir plus sur les options](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames) d’ajustement des images et qui convient à votre cas d’utilisation.
+   * **Clic droit** et sélectionnez **Ajuster > Options d’ajustement des cadres... > Ajustement du contenu > Remplir le cadre proportionnellement**
+   [En savoir plus sur les options d’ajustement des images](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames), et qui convient à votre cas d’utilisation.
 
 5. Copiez l’en-tête (Logo et Nom de la société) du modèle de Principal dans Page et Page via Coller en place.
 
-   * Sur la page 1, cliquez en maintenant la touche Maj enfoncée sur macOS ou Maj enfoncée tout en cliquant sur Windows pour sélectionner l’en-tête exposé dans la page Principal et le supprimer.
+   * Sur la page 1, cliquez en maintenant la touche Maj enfoncée sur macOS ou en maintenant la touche Maj enfoncée sur Windows pour sélectionner l’en-tête exposé dans la page Principal et le supprimer.
    * Dans la page Principal, copiez l’en-tête dans la page 1 via Coller en place .
    * Répétez les étapes pour la page 2
 
@@ -53,16 +53,16 @@ Ce tutoriel vidéo vous guide tout au long de la définition d’un fichier d’
 
 >[!VIDEO](https://video.tv.adobe.com/v/19294/?quality=9&learn=on)
 
-1. **Démarrez le port 8080 d’InDesign** Server.
-2. Assurez-vous que l’**instance d’auteur AEM est configurée pour interagir avec votre InDesign Server** (et vice versa).
+1. **InDesign Server** sur le port 8080.
+2. Assurez-vous que la variable **L’instance d’auteur AEM est configurée pour interagir avec votre InDesign Server.**(et vice versa).
 
    * [Configuration du Cloud Service du traitement IDS](http://localhost:4502/etc/cloudservices/proxy/ids.html)
    * [Configuration du Cloud Service proxy Cloud](http://localhost:4502/etc/cloudservices/proxy.html)
    * [Configuration OSGi de l’externaliseur d’AEM](http://localhost:4502/system/console/configMgr)
 
-3. **Téléchargement du fichier d’InDesign vers AEM** Assets et permettre à AEM Workflow et à l’InDesign Server de traiter entièrement les ressources.
-4. **Créez un nouveau** modèle sous  **Ressources >** Modèles et sélectionnez le fichier d’InDesign téléchargé vers AEM à l’étape #4.
-5. **Modifiez le** modèle de ressource créé à l’étape #5 et créez les champs modifiables.
+3. **Téléchargement du fichier d’InDesign vers AEM Assets** et permettre à AEM Workflow et à l’InDesign Server de traiter entièrement les ressources.
+4. **Création d’un modèle** under **Ressources > Modèles** et sélectionnez le fichier d&#39;InDesign téléchargé dans AEM à l&#39;étape #4.
+5. **Modification du modèle de ressource** créé à l’étape #5 et créez les champs modifiables.
 6. Cliquez sur **Terminé** pour générer les rendus haute fidélité finaux du modèle de ressource.
 7. Cliquez sur la carte Modèle de ressources pour ouvrir, puis passez en revue les rendus de ressources pour télécharger les rendus haute fidélité.
 
@@ -73,4 +73,4 @@ InDesign du fichier de modèle et prise en charge des images
 Télécharger [InDesign du fichier de modèle et prise en charge des images](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
 * [Téléchargement d’essai InDesign CC](https://creative.adobe.com/products/download/indesign)
-* [Les clients CC Enterprise peuvent contacter leur gestionnaire de compte pour demander une licence d’évaluation par InDesign Server.](https://www.adobe.com/products/indesignserver/faq.html)
+* La version d’évaluation d’InDesign Server peut être téléchargée à partir de [Site de version préliminaire Adobe](https://www.adobeprerelease.com/) ou [Les clients CC Enterprise peuvent contacter leur gestionnaire de compte pour demander une licence d’évaluation par InDesign Server.](https://www.adobe.com/products/indesignserver/faq.html)
