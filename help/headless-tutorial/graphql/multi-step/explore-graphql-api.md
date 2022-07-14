@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 2%
+source-wordcount: '1527'
+ht-degree: 7%
 
 ---
 
@@ -25,273 +25,365 @@ Dans ce chapitre, nous allons explorer certaines requêtes GraphQL courantes pou
 
 ## Prérequis {#prerequisites}
 
-Il s’agit d’un tutoriel en plusieurs parties. Nous partons du principe que les étapes décrites dans la section [Création de fragments de contenu](./author-content-fragments.md) ont été terminées.
+Il s’agit d’un tutoriel en plusieurs parties qui suppose que les étapes décrites dans la section [Création de fragments de contenu](./author-content-fragments.md) ont été terminées.
 
 ## Objectifs {#objectives}
 
 * Découvrez comment utiliser l’outil GraphiQL pour créer une requête à l’aide de la syntaxe GraphQL.
 * Découvrez comment interroger une liste de fragments de contenu et un seul fragment de contenu.
 * Découvrez comment filtrer et demander des attributs de données spécifiques.
-* Découvrez comment interroger une variante d’un fragment de contenu.
 * Découvrez comment joindre une requête de plusieurs modèles de fragments de contenu
+* Découvrez comment Persist GraphQL query.
 
-## Installation de l’outil GraphiQL {#install-graphiql}
+## Activation du point d’entrée GraphQL {#enable-graphql-endpoint}
 
-L’IDE GraphiQL est un outil de développement qui n’est nécessaire que dans les environnements de niveau inférieur tels qu’une instance de développement ou locale. Par conséquent, il n’est pas inclus dans le projet AEM, mais il est fourni sous la forme d’un package distinct qui peut être installé sur une base ad hoc.
+Un point d’entrée GraphQL doit être configuré pour activer les requêtes d’API GraphQL pour les fragments de contenu.
 
-1. Accédez au **[Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM en tant que Cloud Service**.
-1. Recherchez &quot;GraphiQL&quot; (veillez à inclure **i** dans **GraphiQL**.
-1. Téléchargez le dernier **module de contenu GraphiQL v.x.x.x**
+1. Dans l’écran AEM Démarrer , accédez à **Outils** > **Général** > **GraphQL**.
 
-   ![Téléchargement du package GraphiQL](assets/explore-graphql-api/software-distribution.png)
+   ![Accédez au point d’entrée GraphQL](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
 
-   Le fichier zip est un package AEM qui peut être installé directement.
+1. Appuyer **Créer** dans le coin supérieur droit. Dans la boîte de dialogue, saisissez les valeurs suivantes :
 
-1. Dans le menu **AEM Démarrer** accédez à **Outils** > **Déploiement** > **Modules**.
-1. Cliquez sur **Télécharger le package** et sélectionnez le package téléchargé à l’étape précédente. Cliquez sur **Installer** pour installer le package.
+   * Nom* : **Mon point de terminaison de projet**.
+   * Utilisez le schéma GraphQL fourni par ... * : **Mon projet**
 
-   ![Installation du package GraphiQL](assets/explore-graphql-api/install-graphiql-package.png)
+   ![Création d’un point d’entrée GraphQL](assets/explore-graphql-api/create-graphql-endpoint.png)
 
-## Requête sur une liste de fragments de contenu {#query-list-cf}
+   Appuyer **Créer** pour enregistrer le point de terminaison .
+
+   Les points d’entrée GraphQL créés à partir d’une configuration de projet activent uniquement les requêtes par rapport aux modèles appartenant à ce projet. Dans ce cas, les seules requêtes concernant la variable **Personne** et **Équipe** peuvent être utilisés.
+
+   >[!NOTE]
+   >
+   > Un point de terminaison global peut également être créé pour activer les requêtes par rapport aux modèles pour tous les projets. Par exemple, si vous souhaitez combiner une requête impliquant les modèles dans la variable **WKND partagé** et dans le **Mon projet**. Cette méthode doit être utilisée avec précaution et uniquement si nécessaire, car elle peut ouvrir l’environnement à des vulnérabilités de sécurité supplémentaires.
+
+1. Vous devriez maintenant voir deux points d’entrée GraphQL activés dans votre environnement (en supposant que vous ayez installé le contenu partagé WKND).
+
+   ![Points d’entrée graphql activés](assets/explore-graphql-api/enabled-graphql-endpoints.png)
+
+## Utilisation de l’IDE GraphiQL
+
+Le [Outil GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) permet aux développeurs de créer et de tester des requêtes par rapport au contenu de l’environnement AEM actuel. L’outil GraphiQL permet également aux utilisateurs de **persist** ou enregistrer les requêtes à utiliser par les applications clientes dans un paramètre de production.
+
+Ensuite, explorez la puissance de l’API GraphQL AEM à l’aide de l’IDE GraphiQL intégré.
+
+1. Dans l’écran AEM Démarrer , accédez à **Outils** > **Général** > **Éditeur de requêtes GraphQL**.
+
+   ![Accédez à l’IDE GraphiQL](assets/explore-graphql-api/navigate-graphql-query-editor.png)
+
+   >[!NOTE]
+   >
+   > Pour les versions plus anciennes d’AEM, l’IDE GraphiQL peut ne pas être intégré. Il peut être installé manuellement en procédant comme suit : [instructions](#install-graphiql).
+
+1. Dans le coin supérieur droit, définissez la variable **Point d’entrée** to **Mon point de terminaison de projet**.
+
+   ![Définition du point d’entrée GraphQL](assets/explore-graphql-api/set-my-project-endpoint.png)
+
+   Cela permettra d’étendre toutes les requêtes aux modèles créés dans la variable **Mon projet** projet. Notez qu’il existe également un point de terminaison pour **WKND partagé**.
+
+### Requête sur une liste de fragments de contenu {#query-list-cf}
 
 Une exigence courante est de rechercher plusieurs fragments de contenu.
 
-1. Accédez à l’IDE GraphiQL à l’adresse [http://localhost:4502/content/graphiql.html](http://localhost:4502/content/graphiql.html).
-1. Collez la requête suivante dans le panneau de gauche (sous la liste des commentaires) :
+1. Collez la requête suivante dans le panneau principal (en remplaçant la liste des commentaires) :
 
    ```graphql
-   {
-     contributorList {
+   query allTeams {
+     teamList {
        items {
-           _path
-         }
+         _path
+         title
+       }
      }
-   }
+   } 
    ```
 
-1. Appuyez sur le bouton **Lire** dans le menu supérieur pour exécuter la requête. Vous devriez voir les résultats des fragments de contenu Contributeurs du chapitre précédent :
+1. Appuyez sur la touche **Play** dans le menu supérieur pour exécuter la requête. Vous devriez voir les résultats des fragments de contenu du chapitre précédent :
 
-   ![Résultats de la liste des contributeurs](assets/explore-graphql-api/contributorlist-results.png)
+   ![Résultats de la liste des personnes](assets/explore-graphql-api/all-teams-list.png)
 
-1. Placez le curseur sous le texte `_path` et saisissez **CTRL+Espace** pour déclencher des conseils de code. Ajoutez `fullName` et `occupation` à la requête.
+1. Placez le curseur sous le `title` texte et saisie **Ctrl+Espace** pour déclencher des conseils sur le code. Ajouter `shortname` et `description` à la requête.
 
    ![Mettre à jour la requête avec le masquage du code](assets/explore-graphql-api/update-query-codehinting.png)
 
-1. Exécutez à nouveau la requête en appuyant sur le bouton **Lire** et vous devriez voir que les résultats incluent les propriétés supplémentaires `fullName` et `occupation`.
+1. Exécutez à nouveau la requête en appuyant sur la touche **Play** et vous devriez voir que les résultats incluent les propriétés supplémentaires de `shortname` et `description`.
 
-   ![Nom complet et résultats de la profession](assets/explore-graphql-api/updated-query-fullname-occupation.png)
+   ![résultats de nom court et de description](assets/explore-graphql-api/updated-query-shortname-description.png)
 
-   `fullName` et  `occupation` sont des propriétés simples. Rappelez-vous du chapitre [Définition des modèles de fragment de contenu](./content-fragment-models.md) que `fullName` et `occupation` sont les valeurs utilisées lors de la définition du **Nom de propriété** des champs respectifs.
+   Le `shortname` est une propriété simple et `description` est un champ de texte multiligne et l’API GraphQL nous permet de choisir divers formats pour les résultats, comme `html`, `markdown`, `json` ou `plaintext`.
 
-1. `pictureReference` et  `biographyText` représentent des champs plus complexes. Mettez à jour la requête avec ce qui suit pour renvoyer les données des champs `pictureReference` et `biographyText`.
+### Requête pour les fragments imbriqués
+
+Ensuite, essayez de récupérer les fragments imbriqués dans l’instance de requêtage, rappelez-vous que la fonction **Équipe** référence le modèle **Personne** modèle.
+
+1. Mettez à jour la requête pour inclure le `teamMembers` . Rappelez-vous qu’il s’agit d’une **Référence de fragment** au modèle de personne. Les propriétés du modèle Personne peuvent être renvoyées :
 
    ```graphql
-   {
-   contributorList {
-       items {
-         _path
-         fullName
-         occupation
-         biographyText {
-           html
-         }
-         pictureReference {
-           ... on ImageRef {
+   query allTeams {
+       teamList {
+           items {
                _path
-               width
-               height
+               title
+               shortName
+               description {
+                   plaintext
+               }
+               teamMembers {
+                   fullName
+                   occupation
                }
            }
        }
-     }
    }
    ```
 
-   `biographyText` est un champ de texte multiligne et l’API GraphQL nous permet de choisir divers formats pour les résultats, comme  `html`,  `markdown`,  `json` ou  `plaintext`.
+   Réponse JSON :
 
-   `pictureReference` est une référence de contenu et il doit s’agir d’une image. Par conséquent, un  `ImageRef` objet intégré est utilisé. Cela nous permet de demander des données supplémentaires sur l’image faisant référence, comme `width` et `height`.
-
-1. Ensuite, essayez de rechercher une liste d’**aventures**. Exécutez la requête suivante :
-
-   ```graphql
+   ```json
    {
-     adventureList {
-       items {
-         adventureTitle
-         adventureType
-         adventurePrimaryImage {
-           ...on ImageRef {
-             _path
-             mimeType
+       "data": {
+           "teamList": {
+           "items": [
+               {
+               "_path": "/content/dam/my-project/en/team-alpha",
+               "title": "Team Alpha",
+               "shortName": "team-alpha",
+               "description": {
+                   "plaintext": "This is a description of Team Alpha!"
+               },
+               "teamMembers": [
+                   {
+                   "fullName": "John Doe",
+                   "occupation": [
+                       "Artist",
+                       "Influencer"
+                   ]
+                   },
+                   {
+                   "fullName": "Alison Smith",
+                   "occupation": [
+                       "Photographer"
+                   ]
+                   }
+                 ]
            }
-         }
+           ]
+           }
        }
-     }
    }
    ```
 
-   Vous devriez voir la liste **Aventures** renvoyée. N’hésitez pas à expérimenter en ajoutant des champs supplémentaires à la requête.
+   La possibilité d’effectuer des requêtes sur des fragments imbriqués est une puissante de l’API GraphQL AEM. Dans cet exemple simple, l’imbrication n’a que deux niveaux de profondeur. Cependant, il est possible d’imbriquer encore plus les fragments. Par exemple, si une variable **Adresse** modèle associé à un **Personne** il serait possible de renvoyer des données des trois modèles dans une seule requête.
 
-## Filtrage d’une liste de fragments de contenu {#filter-list-cf}
+### Filtrage d’une liste de fragments de contenu {#filter-list-cf}
 
 Examinons ensuite comment il est possible de filtrer les résultats en un sous-ensemble de fragments de contenu en fonction d’une valeur de propriété.
 
 1. Saisissez la requête suivante dans l’interface utilisateur GraphiQL :
 
    ```graphql
-   {
-   contributorList(filter: {
-     occupation: {
-       _expressions: {
-         value: "Photographer"
+   query personByName($name:String!){
+     personList(
+       filter:{
+         fullName:{
+           _expressions:[{
+             value:$name
+             _operator:EQUALS
+           }]
          }
        }
-     }) {
-       items {
+     ){
+       items{
          _path
          fullName
          occupation
        }
      }
-   }
+   }  
    ```
 
-   La requête ci-dessus effectue une recherche par rapport à tous les contributeurs du système. Le filtre ajouté au début de la requête effectue une comparaison sur le champ `occupation` et la chaîne &quot;**Photographer**&quot;.
+   La requête ci-dessus effectue une recherche par rapport à tous les fragments de personne du système. Le filtre ajouté au début de la requête effectue une comparaison sur la variable `name` champ et chaîne de variable `$name`.
 
-1. Exécutez la requête. Il est attendu qu’un seul **contributeur** soit renvoyé.
-1. Saisissez la requête suivante pour interroger une liste de **Aventures** où la valeur `adventureActivity` est **différente de** égale à **&quot;Surfing&quot;** :
+1. Dans le **Variables de requête** saisissez les informations suivantes :
+
+   ```json
+   {"name": "John Doe"}
+   ```
+
+1. Exécuter la requête, il est attendu que **Personnes** est renvoyée avec la valeur &quot;John Doe&quot;.
+
+   ![Utilisation des variables de requête pour le filtrage](assets/explore-graphql-api/using-query-variables-filter.png)
+
+   Il existe de nombreuses autres options pour filtrer et créer des requêtes complexes. Voir [Formation à l’utilisation de GraphQL avec AEM - Exemple de contenu et de requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=fr).
+
+1. Amélioration de la requête ci-dessus pour récupérer une image de profil
 
    ```graphql
-   {
-     adventureList(filter: {
-       adventureActivity: {
-           _expressions: {
-               _operator: EQUALS_NOT
-               value: "Surfing"
+   query personByName($name:String!){
+     personList(
+       filter:{
+         fullName:{
+           _expressions:[{
+             value:$name
+             _operator:EQUALS
+           }]
+         }
+       }
+     ){
+       items{  
+         _path
+         fullName
+         occupation
+         profilePicture{
+           ... on ImageRef{
+             _path
+             _authorUrl
+             _publishUrl
+             height
+             width
+   
+           }
+         }
+       }
+     }
+   } 
+   ```
+
+   Le `profilePicture` est une référence de contenu et il doit s’agir d’une image. Il est donc intégré à `ImageRef` est utilisé. Cela nous permet de demander des données supplémentaires sur l’image à référencer, comme le `width` et `height`.
+
+### Requête sur un seul fragment de contenu {#query-single-cf}
+
+Il est également possible d’interroger directement un seul fragment de contenu. Le contenu d’AEM est stocké de manière hiérarchique et l’identifiant unique d’un fragment est basé sur le chemin du fragment.
+
+1. Saisissez la requête suivante dans l’éditeur GraphiQL :
+
+   ```graphql
+   query personByPath($path: String!) {
+       personByPath(_path: $path) {
+           item {
+           fullName
+           occupation
            }
        }
-   }) {
-       items {
-       _path
-       adventureTitle
-       adventureActivity
-       }
-     }
    }
    ```
 
-1. Exécutez la requête et examinez les résultats. Notez qu’aucun des résultats n’inclut une valeur `adventureType` égale à **&quot;Surfing&quot;**.
+1. Saisissez les informations suivantes pour la variable **Variables de requête**:
 
-Il existe de nombreuses autres options pour filtrer et créer des requêtes complexes, ci-dessus ne sont que quelques exemples.
+   ```json
+   {"path": "/content/dam/my-project/en/alison-smith"}
+   ```
 
-## Requête sur un seul fragment de contenu {#query-single-cf}
+1. Exécutez la requête et vérifiez que le seul résultat est renvoyé.
 
-Il est également possible d’interroger directement un seul fragment de contenu. Le contenu d’AEM est stocké de manière hiérarchique et l’identifiant unique d’un fragment est basé sur le chemin du fragment. Si l’objectif est de renvoyer des données sur un fragment unique, il est préférable d’utiliser le chemin et d’interroger directement le modèle. L’utilisation de cette syntaxe signifie que la complexité de la requête sera très faible et générera un résultat plus rapide.
+## Persistance des requêtes {#persist-queries}
 
-1. Saisissez la requête suivante dans l’éditeur GraphiQL :
+Une fois qu’un développeur est satisfait de la requête et des données renvoyées, l’étape suivante consiste à stocker ou à conserver la requête à AEM. [Requêtes persistantes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) est le mécanisme préféré pour exposer l’API GraphQL aux applications clientes. Une fois qu’une requête a été conservée, elle peut être demandée à l’aide d’une requête de GET et mise en cache aux couches Dispatcher et CDN. Les performances des requêtes persistantes sont bien meilleures. Outre les avantages de performances, les requêtes persistantes garantissent que les données supplémentaires ne sont pas exposées accidentellement aux applications clientes. Plus d’informations sur [Les requêtes personnalisées se trouvent ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
+
+Ensuite, conservez deux requêtes simples ; elles seront utilisées dans le chapitre suivant.
+
+1. Dans l’IDE GraphiQL, saisissez la requête suivante :
 
    ```graphql
-   {
-    contributorByPath(_path: "/content/dam/wknd/en/contributors/stacey-roswells") {
-       item {
+   query allTeams {
+       teamList {
+           items {
+               _path
+               title
+               shortName
+               description {
+                   plaintext
+               }
+               teamMembers {
+                   fullName
+                   occupation
+               }
+           }
+       }
+   }
+   ```
+
+   Vérifiez que la requête fonctionne.
+
+1. Appuyez sur **Enregistrer sous** et saisissez `all-teams` comme la propriété **Nom de la requête**.
+
+   La requête doit maintenant s’afficher sous **Requêtes persistantes** dans le rail de gauche.
+
+   ![Requête persistante de toutes les équipes](assets/explore-graphql-api/all-teams-persisted-query.png)
+1. Appuyez ensuite sur les points de suspension **...** en regard de la requête persistante et appuyez sur **Copier l’URL** pour copier le chemin d’accès dans le presse-papiers.
+
+   ![Copier l’URL de requête persistante](assets/explore-graphql-api/copy-persistent-query-url.png)
+
+1. Ouvrez un nouvel onglet et collez le chemin copié dans votre navigateur :
+
+   ```plain
+   https://$YOUR-AEMasCS-INSTANCEID$.adobeaemcloud.com/graphql/execute.json/my-project/all-teams
+   ```
+
+   Il doit ressembler au chemin ci-dessus. Vous devriez voir les résultats JSON de la requête renvoyée.
+
+   Ventilation de l’URL :
+
+   | Nom | Description |
+   | ---------|---------- |
+   | `/graphql/execute.json` | Point d’entrée de requête persistant |
+   | `/my-project` | Configuration du projet pour `/conf/my-project` |
+   | `/all-teams` | Nom de la requête permanente |
+
+1. Revenez à l’IDE GraphiQL et utilisez le bouton plus **+** pour pérenniser la requête NEW
+
+   ```graphql
+   query personByName($name: String!) {
+     personList(
+       filter: {
+         fullName:{
+           _expressions: [{
+             value: $name
+             _operator:EQUALS
+           }]
+         }
+       }){
+       items {
          _path
          fullName
+         occupation
          biographyText {
-           html
+           json
+         }
+         profilePicture {
+           ... on ImageRef {
+             _path
+             _authorUrl
+             _publishUrl
+             width
+             height
+           }
          }
        }
      }
    }
    ```
 
-1. Exécutez la requête et notez que le résultat unique du fragment **Roswells Stacey** est renvoyé.
+1. Enregistrez la requête comme suit : **person-by-name**.
+1. 2 requêtes persistantes doivent être enregistrées :
 
-   Dans l’exercice précédent, vous avez utilisé un filtre pour réduire une liste de résultats. Vous pouvez utiliser une syntaxe similaire pour filtrer par chemin, mais la syntaxe ci-dessus est préférée pour des raisons de performances.
+   ![Requêtes conservées finales](assets/explore-graphql-api/final-persisted-queries.png)
 
-1. Rappelez-vous dans le chapitre [Création de fragments de contenu](./author-content-fragments.md) qu’une variante **Résumé** a été créée pour **Roswells Stacey**. Mettez à jour la requête pour renvoyer la variation **Summary** :
+## Fichiers de solution {#solution-files}
 
-   ```graphql
-   {
-   contributorByPath
-   (
-       _path: "/content/dam/wknd/en/contributors/stacey-roswells"
-       variation: "summary"
-   ) {
-       item {
-         _path
-         fullName
-         biographyText {
-           html
-         }
-       }
-     }
-   }
-   ```
+Téléchargez le contenu, les modèles et les requêtes persistantes créés dans les trois derniers chapitres : [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip)
 
-   Même si la variation a été nommée **Résumé**, les variations sont conservées en minuscules et `summary` est donc utilisé.
+## Exploration des requêtes persistantes WKND (facultatif) {#explore-wknd-content-fragments}
 
-1. Exécutez la requête et notez que le champ `biography` contient un résultat `html` beaucoup plus court.
+Si vous [Installation de l’exemple de contenu partagé WKND](./overview.md#install-sample-content) vous pouvez passer en revue et exécuter des requêtes persistantes comme aventures-all, aventure-par-activité, aventure-par-chemin, etc.
 
-## Requête pour plusieurs modèles de fragment de contenu {#query-multiple-models}
+![Requêtes persistantes WKND](assets/explore-graphql-api/wknd-persisted-queries.png)
 
-Il est également possible de combiner des requêtes distinctes en une seule requête. Cela s’avère utile pour réduire le nombre de requêtes HTTP nécessaires à l’alimentation de l’application. Par exemple, la vue *Accueil* d’une application peut afficher du contenu basé sur **deux** différents modèles de fragment de contenu. Plutôt que d’exécuter **deux** requêtes distinctes, nous pouvons combiner les requêtes en une seule requête.
-
-1. Saisissez la requête suivante dans l’éditeur GraphiQL :
-
-   ```graphql
-   {
-     adventureList {
-       items {
-         _path
-         adventureTitle
-       }
-     }
-     contributorList {
-       items {
-         _path
-         fullName
-       }
-     }
-   }
-   ```
-
-1. Exécutez la requête et vérifiez que le jeu de résultats contient les données des **Aventures** et **Contributeurs** :
-
-```json
-{
-  "data": {
-    "adventureList": {
-      "items": [
-        {
-          "_path": "/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp",
-          "adventureTitle": "Bali Surf Camp"
-        },
-        {
-          "_path": "/content/dam/wknd/en/adventures/beervana-portland/beervana-in-portland",
-          "adventureTitle": "Beervana in Portland"
-        },
-        ...
-      ]
-    },
-    "contributorList": {
-      "items": [
-        {
-          "_path": "/content/dam/wknd/en/contributors/jacob-wester",
-          "fullName": "Jacob Wester"
-        },
-        {
-          "_path": "/content/dam/wknd/en/contributors/stacey-roswells",
-          "fullName": "Stacey Roswells"
-        }
-      ]
-    }
-  }
-}
-```
 
 ## Ressources supplémentaires
 
-Pour obtenir de nombreux autres exemples de requêtes GraphQL, voir : [Apprentissage de l’utilisation de GraphQL avec AEM - Exemple de contenu et requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=fr).
+Pour obtenir de nombreux autres exemples de requêtes GraphQL, voir : [Formation à l’utilisation de GraphQL avec AEM - Exemple de contenu et de requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html).
 
 ## Félicitations ! {#congratulations}
 
@@ -299,4 +391,21 @@ Félicitations, vous venez de créer et d’exécuter plusieurs requêtes GraphQ
 
 ## Étapes suivantes {#next-steps}
 
-Dans le chapitre suivant, [Requête AEM depuis une application React](./graphql-and-external-app.md), vous allez découvrir comment une application externe peut interroger AEM points d’entrée GraphQL. L’application externe qui modifie l’exemple de l’application WKND GraphQL React pour ajouter des requêtes GraphQL de filtrage, ce qui permet à l’utilisateur de l’application de filtrer les aventures par activité. Vous serez également initié à une gestion des erreurs de base.
+Dans le chapitre suivant, [Créer l’application React](./graphql-and-react-app.md), vous allez découvrir comment une application externe peut interroger AEM points de terminaison GraphQL et exploiter ces deux requêtes persistantes. Vous serez également initié à une gestion des erreurs de base.
+
+## Installation de l’outil GraphiQL (facultatif) {#install-graphiql}
+
+Pour certaines versions d’AEM l’outil IDE GraphiQL doit être installé manuellement. Suivez les instructions ci-dessous pour installer manuellement :
+
+1. Accédez au **[Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
+1. Recherchez « GraphiQL » (veillez à inclure le **i** dans **GraphiQL**.
+1. Télécharger la dernière version du **Package de contenu GraphiQL v.x.x.x**
+
+   ![Téléchargement du package GraphiQL](assets/explore-graphql-api/software-distribution.png)
+
+   Le fichier zip est un package AEM qui peut être installé directement.
+
+1. Dans le menu **Accueil AEM**, accédez à **Outils** > **Déploiement** > **Packages**.
+1. Cliquez sur **Télécharger le package** et sélectionnez le package téléchargé à l’étape précédente. Cliquez sur **Installer** pour installer le package.
+
+   ![Installation du package GraphiQL](assets/explore-graphql-api/install-graphiql-package.png)

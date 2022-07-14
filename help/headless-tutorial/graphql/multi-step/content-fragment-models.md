@@ -10,22 +10,24 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 2%
+source-wordcount: '1223'
+ht-degree: 4%
 
 ---
 
 # Définition de modèles de fragment de contenu {#content-fragment-models}
 
-Dans ce chapitre, apprenez à modéliser du contenu et à créer un schéma avec **Modèles de fragment de contenu**. Vous allez passer en revue les modèles existants et créer un nouveau modèle. Vous découvrirez également les différents types de données qui peuvent être utilisés pour définir un schéma dans le cadre du modèle.
+Dans ce chapitre, apprenez à modéliser du contenu et à créer un schéma avec **Modèles de fragment de contenu**. Vous découvrirez les différents types de données qui peuvent être utilisés pour définir un schéma dans le cadre du modèle.
 
-Dans ce chapitre, vous allez créer un modèle pour un **Contributeur**, qui est le modèle de données pour les utilisateurs qui créent du contenu de magazine et d’aventure dans le cadre de la marque WKND.
+Dans ce chapitre, deux modèles simples seront créés, **Équipe** et **Personne**. Le **Équipe** Le modèle de données a un nom, un nom court et une description, et fait référence au **Personne** modèle de données, qui comprend le nom complet, les détails biographiques, l’image de profil et la liste des métiers.
+
+Vous êtes également invité à créer votre propre modèle en suivant les étapes de base et à ajuster les étapes respectives telles que les requêtes GraphQL et le code de l’application React, ou à suivre simplement les étapes décrites dans ces chapitres.
 
 ## Prérequis {#prerequisites}
 
-Il s’agit d’un tutoriel en plusieurs parties qui suppose que les étapes décrites dans la section [Configuration rapide](../quick-setup/local-sdk.md) ont été terminées.
+Il s’agit d’un tutoriel en plusieurs parties qui suppose qu’un [AEM environnement de création est disponible](./overview.md#prerequisites) et éventuellement la variable [L’exemple de contenu partagé WKND a été installé.](./overview.md#install-sample-content).
 
 ## Objectifs {#objectives}
 
@@ -33,60 +35,42 @@ Il s’agit d’un tutoriel en plusieurs parties qui suppose que les étapes dé
 * Identifiez les types de données disponibles et les options de validation pour la création de modèles.
 * Comprendre comment le modèle de fragment de contenu définit **both** le schéma de données et le modèle de création d’un fragment de contenu.
 
-## Présentation du modèle de fragment de contenu {#overview}
+## Création d’une configuration de projet
 
->[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
+Une configuration de projet contient tous les modèles de fragment de contenu associés à un projet particulier et permet d’organiser les modèles. Au moins un projet doit être créé **before** création d’un modèle de fragment de contenu.
 
-La vidéo ci-dessus donne un aperçu général de l’utilisation des modèles de fragment de contenu.
+1. Connexion à l’AEM **Auteur** environnement.
+1. Dans l’écran AEM Démarrer, accédez à **Outils** > **Général** > **Explorateur de configuration**.
 
->[!CAUTION]
->
-> La vidéo ci-dessus montre la création de la variable **Contributeur** modèle avec le nom `Contributors`. Lors de l’exécution des étapes dans votre propre environnement, assurez-vous que le titre utilise le formulaire unique : `Contributor` sans le **s**. Le nommage du modèle de fragment de contenu entraîne les appels d’API GraphQL qui seront effectués ultérieurement dans le tutoriel.
+   ![Accédez à l’explorateur de configurations](assets/content-fragment-models/navigate-config-browser.png)
+1. Cliquez sur **Créer**.
+1. Dans la boîte de dialogue qui s’affiche, saisissez :
 
-## Inspect : modèle de fragment de contenu d’aventure
+   * Titre* : **Mon projet**
+   * Nom* : **my-project** (préférez utiliser toutes les minuscules avec des tirets pour séparer les mots. Cette chaîne influera sur le point d’entrée GraphQL unique sur lequel les applications clientes effectueront des requêtes.)
+   * Vérifier **Modèles de fragment de contenu**
+   * Vérifier **Requêtes persistantes GraphQL**
 
-Dans le chapitre précédent, plusieurs fragments de contenu avancés ont été édités et affichés sur une application externe. Examinons le modèle de fragment de contenu aventure pour comprendre le schéma de données sous-jacent de ces fragments.
+   ![Ma configuration de projet](assets/content-fragment-models/my-project-configuration.png)
 
-1. Dans la **AEM** Accédez à **Outils** > **Ressources** > **Modèles de fragment de contenu**.
+## Créer des modèles de fragment de contenu
 
-   ![Accès aux modèles de fragment de contenu](assets/content-fragment-models/content-fragment-model-navigation.png)
+Créez ensuite deux modèles pour un **Équipe** et un **Personne**.
 
-1. Accédez au **Site WKND** et placez le pointeur de la souris sur le dossier **Adventure** Modèle de fragment de contenu et cliquez sur le **Modifier** icône (crayon) pour ouvrir le modèle.
+### Création d’un modèle de personne
 
-   ![Ouvrir le modèle de fragment de contenu Adventure](assets/content-fragment-models/adventure-content-fragment-edit.png)
+Créez un modèle pour un **Personne**, qui est le modèle de données représentant une personne faisant partie d’une équipe.
 
-1. Cela ouvre la fenêtre **Éditeur de modèle de fragment de contenu**. Notez que les champs définissent le modèle Adventure avec différents **Types de données** like **Texte sur une seule ligne**, **Texte multi-lignes**, **Énumération**, et **Référence de contenu**.
+1. Dans l’écran AEM Démarrer, accédez à **Outils** > **Général** > **Modèles de fragment de contenu**.
 
-1. La colonne de droite de l’éditeur répertorie les **Types de données** qui définissent les champs de formulaire utilisés pour la création de fragments de contenu.
+   ![Accès aux modèles de fragment de contenu](assets/content-fragment-models/navigate-cf-models.png)
 
-1. Sélectionnez la **Titre** dans le panneau principal. Dans la colonne de droite, cliquez sur le bouton **Propriétés** tab :
+   Si vous avez installé le [exemple de contenu](overview.md#install-sample-content) vous verrez alors deux dossiers : **Mon projet** et **WKND partagé**.
+1. Accédez au **Mon projet** dossier.
+1. Appuyer **Créer** dans le coin supérieur droit pour afficher le **Créer un modèle** assistant.
+1. Pour **Titre du modèle** enter : **Personne** et appuyez sur **Créer**.
 
-   ![Propriétés du titre de l’aventure](assets/content-fragment-models/adventure-title-properties-tab.png)
-
-   Observez les **Nom de la propriété** est défini sur `adventureTitle`. Cela définit le nom de la propriété qui est conservée dans AEM. Le **Nom de la propriété** définit également la variable **key** nom de cette propriété dans le cadre du schéma de données. Ceci **key** sera utilisé lorsque les données de fragment de contenu sont exposées via les API GraphQL.
-
-   >[!CAUTION]
-   >
-   > Modification de la variable **Nom de la propriété** d’un champ **after** Les fragments de contenu sont dérivés du modèle et ont des effets en aval. Les valeurs de champ des fragments existants ne sont plus référencées et le schéma de données exposé par GraphQL change, ce qui affecte les applications existantes.
-
-1. Faites défiler l’écran vers le bas **Propriétés** et affichez le **Type de validation** menu déroulant.
-
-   ![Options de validation disponibles](assets/content-fragment-models/validation-options-available.png)
-
-   Des validations de formulaire prêtes à l’emploi sont disponibles pour **Courrier électronique** et **URL**. Il est également possible de définir une **Personnalisé** validation à l’aide d’une expression régulière.
-
-1. Cliquez sur **Annuler** pour fermer l’éditeur de modèle de fragment de contenu.
-
-## Création d’un modèle de contributeur
-
-Créez ensuite un modèle pour un **Contributeur**, qui est le modèle de données pour les utilisateurs qui créent du contenu de magazine et d’aventure dans le cadre de la marque WKND.
-
-1. Cliquez sur **Créer** dans le coin supérieur droit pour afficher le **Créer un modèle** assistant.
-1. Pour **Titre du modèle** enter : **Contributeur** et cliquez sur **Créer**
-
-   ![Assistant de modèle de fragment de contenu](assets/content-fragment-models/content-fragment-model-wizard.png)
-
-   Cliquez sur **Ouvrir** pour ouvrir le modèle nouvellement créé.
+   Appuyer **Ouvrir** dans la boîte de dialogue qui s’affiche, pour ouvrir le modèle nouvellement créé.
 
 1. Faites glisser et déposez un **Texte sur une seule ligne** sur le panneau principal. Renseignez les propriétés suivantes sur le **Propriétés** tab :
 
@@ -96,7 +80,9 @@ Créez ensuite un modèle pour un **Contributeur**, qui est le modèle de donné
 
    ![Champ de propriété Full Name](assets/content-fragment-models/full-name-property-field.png)
 
-1. Cliquez sur le bouton **Types de données** et effectuez un glisser-déposer d’un élément **Texte multi-lignes** sous le champ **Nom complet** champ . Renseignez les propriétés suivantes :
+   Le **Nom de la propriété** définit le nom de la propriété qui est conservée dans AEM. Le **Nom de la propriété** définit également la variable **key** nom de cette propriété dans le cadre du schéma de données. Ceci **key** sera utilisé lorsque les données de fragment de contenu sont exposées via les API GraphQL.
+
+1. Appuyez sur le bouton **Types de données** et effectuez un glisser-déposer d’un élément **Texte multi-lignes** sous le champ **Nom complet** champ . Renseignez les propriétés suivantes :
 
    * **Libellé du champ**: **Biographie**
    * **Nom de la propriété**: `biographyText`
@@ -104,13 +90,11 @@ Créez ensuite un modèle pour un **Contributeur**, qui est le modèle de donné
 
 1. Cliquez sur le bouton **Types de données** et effectuez un glisser-déposer d’un élément **Référence de contenu** champ . Renseignez les propriétés suivantes :
 
-   * **Libellé du champ**: **Référence d’image**
-   * **Nom de la propriété**: `pictureReference`
-   * **Chemin racine**: `/content/dam/wknd`
+   * **Libellé du champ**: **Image de profil**
+   * **Nom de la propriété**: `profilePicture`
+   * **Chemin racine**: `/content/dam`
 
-   Lors de la configuration de la variable **Chemin racine** vous pouvez cliquer sur le bouton **folder** pour afficher un modal afin de sélectionner le chemin. Cela permet de restreindre les dossiers que les auteurs peuvent utiliser pour renseigner le chemin.
-
-   ![Chemin racine configuré](assets/content-fragment-models/root-path-configure.png)
+   Lors de la configuration de la variable **Chemin racine** vous pouvez cliquer sur le bouton **folder** pour afficher un modal afin de sélectionner le chemin. Cela permet de restreindre les dossiers que les auteurs peuvent utiliser pour renseigner le chemin. `/content/dam` est la racine dans laquelle sont stockées toutes les ressources AEM (images, vidéos et autres fragments de contenu).
 
 1. Ajoutez une validation au **Référence d’image** de sorte que seuls les types de contenu de **Images** peut être utilisé pour remplir le champ.
 
@@ -118,6 +102,7 @@ Créez ensuite un modèle pour un **Contributeur**, qui est le modèle de donné
 
 1. Cliquez sur le bouton **Types de données** et effectuez un glisser-déposer d’un élément **Énumération**  type de données sous le **Référence d’image** champ . Renseignez les propriétés suivantes :
 
+   * **Render As**: **Cases à cocher**
    * **Libellé du champ**: **Profession**
    * **Nom de la propriété**: `occupation`
 
@@ -125,28 +110,88 @@ Créez ensuite un modèle pour un **Contributeur**, qui est le modèle de donné
 
    **Artiste**, **Influenceur**, **Photographe**, **Voyageur**, **Écrivain**, **YouTuber**
 
-   ![Valeurs des options d’occupation](assets/content-fragment-models/occupation-options-values.png)
+1. La finale **Personne** modèle doit se présenter comme suit :
 
-1. La finale **Contributeur** modèle doit se présenter comme suit :
-
-   ![Modèle de contributeur final](assets/content-fragment-models/final-contributor-model.png)
+   ![Modèle de personne final](assets/content-fragment-models/final-author-model.png)
 
 1. Cliquez sur **Enregistrer** pour enregistrer les modifications.
 
-## Activation du modèle du contributeur
+### Création du modèle d’équipe
 
-Les modèles de fragment de contenu doivent être **Activé** avant que les auteurs de contenu puissent l’utiliser. Il est possible de **Désactiver** un modèle de fragment de contenu, interdisant ainsi aux auteurs de l’utiliser. Rappelez-vous que la modification de **Nom de la propriété** d’un champ du modèle modifie le schéma de données sous-jacent et peut avoir des effets significatifs en aval sur les fragments existants et les applications externes. Il est recommandé de planifier soigneusement la convention d’affectation des noms utilisée pour la variable **Nom de la propriété** de champs avant d’activer le modèle de fragment de contenu pour les utilisateurs.
+Créez un modèle pour un **Équipe**, qui est le modèle de données d’une équipe de personnes. Le modèle d’équipe fait référence au modèle Personne pour représenter les membres de l’équipe.
 
-1. Assurez-vous que la variable **Contributeur** Le modèle se trouve actuellement dans une **Activé** état.
+1. Dans le **Mon projet** dossier, appuyez sur **Créer** dans le coin supérieur droit pour afficher le **Créer un modèle** assistant.
+1. Pour **Titre du modèle** enter : **Équipe** et appuyez sur **Créer**.
 
-   ![Modèle de contributeur activé](assets/content-fragment-models/enable-contributor-model.png)
+   Appuyer **Ouvrir** dans la boîte de dialogue qui s’affiche, pour ouvrir le modèle nouvellement créé.
 
-   Il est possible de basculer l’état d’un modèle de fragment de contenu en faisant glisser le curseur sur la carte et en cliquant sur l’icône **Désactiver** / **Activer** icône .
+1. Faites glisser et déposez un **Texte sur une seule ligne** sur le panneau principal. Renseignez les propriétés suivantes sur le **Propriétés** tab :
+
+   * **Libellé du champ**: **Titre**
+   * **Nom de la propriété**: `title`
+   * Vérifier **Obligatoire**
+
+1. Appuyez sur le bouton **Types de données** et effectuez un glisser-déposer d’un élément **Texte sur une seule ligne** sur le panneau principal. Renseignez les propriétés suivantes sur le **Propriétés** tab :
+
+   * **Libellé du champ**: **Nom court**
+   * **Nom de la propriété**: `shortName`
+   * Vérifier **Obligatoire**
+   * Vérifier **Unique**
+   * Sous **Type de validation** > choisissez **Personnalisé**
+   * Sous **Regex de validation personnalisé** > entrer `^[a-z0-9\-_]{5,40}$` : cette opération garantit que seules les valeurs alphanumériques en minuscules et les tirets compris entre 5 et 40 caractères peuvent être saisis.
+
+   Le `shortName` nous offre un moyen d’interroger une équipe en fonction d’un chemin raccourci. Le **Unique** garantit que la valeur sera toujours unique par fragment de contenu de ce modèle.
+
+1. Appuyez sur le bouton **Types de données** et effectuez un glisser-déposer d’un élément **Texte multi-lignes** sous le champ **Nom court** champ . Renseignez les propriétés suivantes :
+
+   * **Libellé du champ**: **Description**
+   * **Nom de la propriété**: `description`
+   * **Type par défaut**: **Texte enrichi**
+
+1. Cliquez sur le bouton **Types de données** et effectuez un glisser-déposer d’un élément **Référence de fragment** champ . Renseignez les propriétés suivantes :
+
+   * **Render As**: **Champ multiple**
+   * **Libellé du champ**: **Membres de l’équipe**
+   * **Nom de la propriété**: `teamMembers`
+   * **Modèles de fragment de contenu autorisés**: Utilisez l’icône de dossier pour sélectionner la variable **Personne** modèle.
+
+1. La finale **Équipe** modèle doit se présenter comme suit :
+
+   ![Modèle d’équipe final](assets/content-fragment-models/final-team-model.png)
+
+1. Cliquez sur **Enregistrer** pour enregistrer les modifications.
+
+1. Vous devez maintenant utiliser deux modèles :
+
+   ![Deux modèles](assets/content-fragment-models/two-new-models.png)
+
+## Inspect des modèles de fragment de contenu WKND (facultatif)
+
+Si vous [Installation de l’exemple de contenu partagé WKND](./overview.md#install-sample-content) vous pouvez parcourir les modèles Adventure, Article et Auteur pour obtenir plus d’idées sur les techniques de modélisation des données.
+
+1. Dans la **AEM** Accédez à **Outils** > **Général** > **Modèles de fragment de contenu**.
+
+1. Accédez au **WKND partagé** et vous devriez voir trois modèles : Article, aventure et auteur.
+
+1. Inspect les modèles en survolant la carte et en appuyant sur l’icône de modification (crayon)
+
+   ![Modèles WKND](assets/content-fragment-models/wknd-shared-models.png)
+
+1. Cela ouvre la fenêtre **Éditeur de modèle de fragment de contenu** pour le modèle et vous pouvez examiner les différents types de données utilisés.
+
+   >[!CAUTION]
+   >
+   > Modification du modèle **after** Les fragments de contenu ont été créés, ont des effets en aval. Les valeurs de champ des fragments existants ne sont plus référencées et le schéma de données exposé par GraphQL change, ce qui affecte les applications existantes.
 
 ## Félicitations ! {#congratulations}
 
-Félicitations, vous venez de créer votre premier modèle de fragment de contenu !
+Félicitations, vous venez de créer vos premiers modèles de fragments de contenu !
 
 ## Étapes suivantes {#next-steps}
 
 Dans le chapitre suivant, [Création de modèles de fragment de contenu](author-content-fragments.md), vous allez créer et modifier un fragment de contenu en fonction d’un modèle de fragment de contenu. Vous apprendrez également à créer des variantes de fragments de contenu.
+
+## Documentation connexe
+
+* [Modèles de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-models.html)
+

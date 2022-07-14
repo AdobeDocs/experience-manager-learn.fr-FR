@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 0dae6243f2a30147bed7079ad06144ad35b781d8
+source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
 workflow-type: tm+mt
 source-wordcount: '1768'
-ht-degree: 4%
+ht-degree: 10%
 
 ---
 
@@ -74,7 +74,7 @@ Le site de référence WKND comprend les configurations nécessaires pour expose
    >
    > Veillez à télécharger la version standard compatible avec AEM as a Cloud Service et **not** la valeur `classic` version.
 
-1. Dans la **AEM** Accédez à **Outils** > **Déploiement** > **Packages**.
+1. Dans le menu **Accueil AEM**, accédez à **Outils** > **Déploiement** > **Packages**.
 
    ![Accédez aux packages](assets/setup/navigate-to-packages.png)
 
@@ -128,7 +128,7 @@ L’un des objectifs de ce tutoriel consiste à montrer comment utiliser AEM con
 
    >[!NOTE]
    >
-   > Dans un scénario de production, l’application se connecte à un AEM **Publier** environnement. Cela est décrit plus en détail dans la section [Déploiement en production](../multi-step/production-deployment.md) chapitre.
+   > Dans un scénario de production, l’application se connecte à un AEM **Publier** environnement. Cela est décrit plus en détail dans la section _Déploiement en production_ .
 
 1. Accédez au `aem-guides-wknd-graphql/react-app` dossier. Installez et démarrez l’application :
 
@@ -177,16 +177,16 @@ Maintenant que l’application React est en cours d’exécution, effectuez une 
 
 [GraphiQL](https://github.com/graphql/graphiql) est un outil de développement qui n’est nécessaire que dans les environnements de niveau inférieur tels qu’une instance de développement ou locale. L’IDE GraphiQL vous permet de tester et d’affiner rapidement les requêtes et les données renvoyées. GraphiQL permet également d’accéder facilement à la documentation, ce qui facilite l’apprentissage et la compréhension des méthodes disponibles.
 
-1. Accédez au **[Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
-1. Recherchez &quot;GraphiQL&quot; (veillez à inclure la variable **i** in **GraphiQL**.
-1. Télécharger la dernière version **Package de contenu GraphiQL v.x.x.x**
+1. Accédez au **[Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
+1. Recherchez « GraphiQL » (veillez à inclure le **i** dans **GraphiQL**.
+1. Télécharger la dernière version du **Package de contenu GraphiQL v.x.x.x**
 
    ![Téléchargement du package GraphiQL](../multi-step/assets/explore-graphql-api/software-distribution.png)
 
    Le fichier zip est un package AEM qui peut être installé directement.
 
-1. Dans la **AEM** Accédez à **Outils** > **Déploiement** > **Packages**.
-1. Cliquez sur **Télécharger le module** et sélectionnez le package téléchargé à l’étape précédente. Cliquez sur **Installer** pour installer le package.
+1. Dans le menu **Accueil AEM**, accédez à **Outils** > **Déploiement** > **Packages**.
+1. Cliquez sur **Télécharger le package** et sélectionnez le package téléchargé à l’étape précédente. Cliquez sur **Installer** pour installer le package.
 
    ![Installation du package GraphiQL](../multi-step/assets/explore-graphql-api/install-graphiql-package.png)
 1. Accédez à l’IDE GraphiQL à l’adresse [http://localhost:4502/content/graphiql.html](http://localhost:4502/content/graphiql.html) et commencez à explorer les API GraphQL.
@@ -217,7 +217,7 @@ Pour afficher la configuration déployée :
 
    >[!NOTE]
    >
-   > La console web n’est disponible que sur le SDK. Dans un environnement AEM as a Cloud Service, ces informations peuvent être visualisées via [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html).
+   > La console web n’est disponible que sur le SDK. Dans un environnement AEM as a Cloud Service, ces informations peuvent être visualisées via [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr).
 
 1. Dans le menu supérieur, cliquez sur **OSGI** > **Configuration** pour afficher toutes les [Configurations OSGi](http://localhost:4502/system/console/configMgr).
 1. Faites défiler la page vers le bas **Partage des ressources cross-origin Adobe**.
