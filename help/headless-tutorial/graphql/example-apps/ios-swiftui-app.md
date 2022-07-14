@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: 8b2c116ceb6ab8c3a009dcec6629c2e97d815b7b
+source-git-commit: 5d32899a58e591b535dab991f89a8f7467b7b435
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 4%
@@ -23,7 +23,7 @@ Les exemples d’applications sont un excellent moyen d’explorer les fonctionn
 
 ![Application iOS SwiftUI avec AEM sans affichage](./assets/ios-swiftui-app/ios-app.png)
 
-Afficher la variable [code source sur GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-swiftui-app)
+Afficher la variable [code source sur GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app)
 
 ## Prérequis {#prerequisites}
 
@@ -50,7 +50,7 @@ L’application iOS est conçue pour se connecter à une __Publication AEM__ , m
    git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Launch [Xcode](https://developer.apple.com/xcode/) et ouvrez le dossier `ios-swiftui-app`
+1. Launch [Xcode](https://developer.apple.com/xcode/) et ouvrez le dossier `ios-app`
 1. Modification du fichier `Config.xcconfig` fichier et mise à jour `AEM_SCHEME` et `AEM_HOST` pour correspondre à votre service AEM Publish cible.
 
    ```plain
@@ -86,7 +86,7 @@ L’application iOS est conçue pour se connecter à une __Publication AEM__ , m
 
 ## Le code
 
-Vous trouverez ci-dessous un résumé de la création de l’application iOS, de sa connexion à AEM sans affichage pour récupérer du contenu à l’aide de requêtes persistantes GraphQL et de la manière dont ces données sont présentées. Le code complet se trouve sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-swiftui-app).
+Vous trouverez ci-dessous un résumé de la création de l’application iOS, de sa connexion à AEM sans affichage pour récupérer du contenu à l’aide de requêtes persistantes GraphQL et de la manière dont ces données sont présentées. Le code complet se trouve sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/ios-app).
 
 ### Requêtes persistantes
 
