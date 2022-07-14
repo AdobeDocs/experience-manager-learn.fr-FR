@@ -1,8 +1,8 @@
 ---
 title: Présentation de la prise en charge de l’authentification dans AEM
-description: 'Une vue consolidée dans les mécanismes d’authentification (et parfois d’autorisation) pris en charge par AEM. '
+description: Une vue consolidée dans les mécanismes d’authentification (et parfois d’autorisation) pris en charge par AEM.
 version: 6.3, 6.4, 6.5
-feature: Utilisateurs et groupes
+feature: User and Groups
 topics: authentication, security
 activity: understand
 audience: architect, developer, implementer
@@ -11,13 +11,13 @@ kt: 406
 topic: Architecture
 role: Architect
 level: Experienced
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 96c542ae-6ab6-4d8a-94df-a58b03469320
+source-git-commit: 84d7230071544e7cdc63ecc0faa32c03ab337cd6
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 15%
+source-wordcount: '130'
+ht-degree: 10%
 
 ---
-
 
 # Présentation de la prise en charge de l’authentification dans AEM 6.x
 
@@ -52,7 +52,7 @@ Une vue consolidée dans les mécanismes d’authentification (et parfois d’au
             <td>✔</td>
         </tr>
         <tr>
-            <td>Jeton basé sur un jeton (avec <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">jeton encapsulé</a>)</td>
+            <td>Basé sur les jetons (w/ <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">jeton encapsulé</a>)</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
@@ -81,7 +81,7 @@ Une vue consolidée dans les mécanismes d’authentification (et parfois d’au
                 <td>✔</td>
             </tr>
             <tr>
-                <td><a href="https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html" target="_blank">OAuth 1.0a et 2.0</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/assets/oauth-server-functionality-in-aem-7-23-14.pdf" target="_blank">OAuth 1.0a et 2.0</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>
@@ -95,4 +95,4 @@ Une vue consolidée dans les mécanismes d’authentification (et parfois d’au
     </tbody>
 </table>
 
-⁕ *Fourni via des projets communautaires, mais pas directement pris en charge par l’Adobe.*
+⁕ *Fourni via des projets communautaires, mais pas directement pris en charge par Adobe.*
