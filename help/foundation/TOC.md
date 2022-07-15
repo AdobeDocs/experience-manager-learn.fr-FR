@@ -1,12 +1,12 @@
 ---
 user-guide-title: Vidéos et tutoriels d’AEM Foundation
-breadcrumb-title: Tutoriels d’AEM Foundation
+breadcrumb-title: Tutoriels sur AEM Foundation
 user-guide-description: 'Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation. '
 sub-product: foundation
 index: y
 source-git-commit: 65a40826d3be322673e116d98124c3cbfb1d6eb4
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '220'
 ht-degree: 16%
 
 ---

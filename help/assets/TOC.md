@@ -7,7 +7,7 @@ team: TM
 source-git-commit: c6caa39075bc3c26dedeca4246e7e1f85887b124
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -102,7 +102,7 @@ ht-degree: 32%
 + Dynamic Media{#dynamic-media}
    + [Présentation de Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Recadrage intelligent](dynamic-media/smart-crop-feature-video-use.md)
-   + [Fragments d’expérience](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
+   + [Présentation](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
    + [Vidéo interactive](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
    + [Lecteur vidéo](dynamic-media/dynamic-media-video-player-feature-video-use.md)
    + [Vidéo 360](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
@@ -158,4 +158,4 @@ ht-degree: 32%
 + Déploiement{#deployment}
    + [Multi-location et développement simultané](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html)
++ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=fr)
