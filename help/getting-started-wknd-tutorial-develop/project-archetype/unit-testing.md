@@ -1,6 +1,6 @@
 ---
 title: Test unitaire
-description: Ce tutoriel couvre l’implémentation d’un test unitaire qui valide le comportement du modèle Sling du composant Byline, créé dans le tutoriel Composant personnalisé .
+description: Mettez en oeuvre un test unitaire qui valide le comportement du modèle Sling du composant Byline, créé dans le tutoriel Composant personnalisé .
 sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
@@ -12,16 +12,16 @@ kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '3025'
+source-wordcount: '3020'
 ht-degree: 0%
 
 ---
 
 # Test unitaire {#unit-testing}
 
-Ce tutoriel décrit l’implémentation d’un test unitaire qui valide le comportement du modèle Sling du composant Byline, créé dans la variable [Composant personnalisé](./custom-component.md) tutoriel .
+Ce tutoriel couvre l’implémentation d’un test unitaire qui valide le comportement du modèle Sling du composant Byline, créé dans la variable [Composant personnalisé](./custom-component.md) tutoriel .
 
 ## Prérequis {#prerequisites}
 
@@ -66,7 +66,7 @@ Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/a
 1. Découvrez les structures et les outils couramment utilisés pour tester AEM code.
 1. Découvrez les options permettant de simuler ou de simuler des ressources AEM lors de l’écriture de tests unitaires.
 
-## Arrière-plan {#unit-testing-background}
+## Contexte {#unit-testing-background}
 
 Dans ce tutoriel, nous allons découvrir comment écrire. [Tests unitaires](https://en.wikipedia.org/wiki/Unit_testing) pour notre composant Byline [Modèle Sling](https://sling.apache.org/documentation/bundles/models.html) (créé dans le [Création d’un composant d’AEM personnalisé](custom-component.md)). Les tests unitaires sont des tests de génération écrits en Java qui vérifient le comportement attendu du code Java. Chaque test unitaire est généralement de petite taille et valide la sortie d’une méthode (ou d’une unité de travail) par rapport aux résultats attendus.
 

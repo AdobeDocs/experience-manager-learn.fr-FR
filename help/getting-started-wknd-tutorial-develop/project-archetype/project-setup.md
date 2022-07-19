@@ -1,7 +1,6 @@
 ---
 title: Prise en main d’AEM Sites - Configuration du projet
-seo-title: Getting Started with AEM Sites - Project Setup
-description: Couvre la création d’un projet Maven multi-module pour gérer le code et les configurations d’un site AEM.
+description: Créez un projet Maven multi-module pour gérer le code et les configurations d’un site Experience Manager.
 sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
@@ -13,9 +12,9 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1816'
 ht-degree: 6%
 
 ---

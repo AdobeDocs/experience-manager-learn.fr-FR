@@ -1,6 +1,6 @@
 ---
 title: Création d’un site | Création AEM site rapide
-description: Dans le cadre de la création rapide d’un site, utilisez l’Assistant de création de site dans Adobe Experience Manager, AEM, pour générer un nouveau site web. Le modèle de site standard fourni par Adobe est utilisé comme point de départ pour le nouveau site.
+description: Découvrez comment utiliser l’assistant de création de site pour générer un nouveau site web. Le modèle de site standard fourni par Adobe est un point de départ pour le nouveau site.
 sub-product: sites
 version: Cloud Service
 type: Tutorial
@@ -11,10 +11,10 @@ level: Beginner
 kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 3%
+source-wordcount: '914'
+ht-degree: 4%
 
 ---
 
@@ -78,7 +78,7 @@ La majorité du tutoriel se déroule à l’aide de la fonction **Service de cr�
 Un modèle de site fournit un point de départ pour un nouveau site. Un modèle de site comprend des thèmes de base, des modèles de page, des configurations et des exemples de contenu. Les éléments inclus dans le modèle de site dépendent du développeur. Adobe fournit un **Modèle de site de base** pour accélérer les nouvelles mises en oeuvre.
 
 1. Ouvrez un nouvel onglet du navigateur et accédez au projet Modèle de site de base sur GitHub : [https://github.com/adobe/aem-site-template-standard](https://github.com/adobe/aem-site-template-standard). Le projet est open-source et sous licence pour être utilisé par n&#39;importe qui.
-1. Cliquez sur **Versions** et accédez au [dernière version](https://github.com/adobe/aem-site-template-standard/releases/latest).
+1. Cliquez sur **Versions** et accédez au [dernière version](https://github.com/adobe/aem-site-template-standard/releases/dernier).
 1. Développez l’objet **Ressources** et téléchargez le fichier zip du modèle :
 
    ![Zip du modèle de site de base](assets/create-site/template-basic-zip-file.png)

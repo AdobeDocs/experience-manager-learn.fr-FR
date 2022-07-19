@@ -1,6 +1,6 @@
 ---
 title: Configuration d’un environnement de développement AEM local
-description: Guide de configuration d’un développement local pour Adobe Experience Manager, AEM. Couvre les rubriques importantes de l’installation locale, Apache Maven, les environnements de développement intégrés et le débogage/dépannage. Le développement avec Eclipse IDE, CRXDE-Lite, Visual Studio Code et IntelliJ est discuté.
+description: 'Découvrez comment configurer un environnement de développement local pour Experience Manager. Familiarisez-vous avec l’installation locale, Apache Maven, les environnements de développement intégrés, le débogage et la résolution des problèmes. Utilisez Eclipse IDE, CRXDE-Lite, Visual Studio Code et IntelliJ. '
 version: 6.4, 6.5
 feature: Developer Tools
 topics: development
@@ -10,10 +10,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '2582'
-ht-degree: 3%
+source-wordcount: '2579'
+ht-degree: 2%
 
 ---
 
@@ -170,7 +170,7 @@ Le **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** est un IDE puissant pour
 * [**Télécharger**](https://code.visualstudio.com/Download) **Visual Studio Code**
 * **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** - Outil de type FTP pour le contenu JCR
 * **[aemfed](https://aemfed.io/)** - Accélérer votre workflow front-end AEM
-* **[Synchronisation des AEM](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Extension prise en charge par la communauté* pour Visual Studio Code
+* **[Synchronisation des AEM](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Prise en charge par la communauté&#42; extension pour Visual Studio Code
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 

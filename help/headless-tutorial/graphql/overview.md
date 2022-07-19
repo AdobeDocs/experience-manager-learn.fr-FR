@@ -1,22 +1,21 @@
 ---
 title: Prise en main d’AEM sans affichage - GraphQL
-description: Présentation des API et fonctionnalités GraphQL d’AEM.
-feature: Fragments de contenu, API GraphQL, API
-topic: Sans affichage, gestion de contenu
+description: Découvrez les API GraphQL du Experience Manager et leurs fonctionnalités.
+feature: Content Fragments, GraphQL API, APIs
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
+source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 3%
 
 ---
 
+# Prise en main d’AEM Headless - GraphQL 
 
-# Prise en main d’AEM sans affichage - GraphQL
-
-AEM des API GraphQL pour les fragments de contenu
-prend en charge les scénarios CMS sans interface dans lesquels les applications clientes externes effectuent le rendu d’expériences à l’aide de contenu géré dans AEM.
+Les API GraphQL AEM pour les fragments de contenu prennent en charge les scénarios CMS sans interface lorsque des applications clientes externes rendent des expériences à l’aide de contenu géré dans AEM.
 
 Une API de diffusion de contenu moderne est essentielle à l’efficacité et aux performances des applications frontales JavaScript. L’utilisation d’une API REST présente des défis :
 
