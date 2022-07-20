@@ -9,7 +9,7 @@ level: Intermediate
 kt: 10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
-source-git-commit: 68970493802c7194bcb3ac3ac9ee10dbfb0fc55d
+source-git-commit: 595d990b7d8ed3c801a085892fef38d780082a15
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 1%
@@ -25,10 +25,6 @@ Le SDK AEM sans affichage est disponible pour diverses plateformes :
 + [AEM SDK sans affichage pour les navigateurs côté client (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 + [AEM SDK sans affichage pour server-side/Node.js (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 + [AEM SDK sans affichage pour Java™](https://github.com/adobe/aem-headless-client-java)
-
-## Requêtes GraphQL
-
-AEM prend en charge les requêtes GraphQL définies par le client, mais il est AEM bonne pratique d’utiliser [requêtes GraphQL persistantes](#persisted-graphql-queries).
 
 ## Requêtes GraphQL persistantes
 
@@ -202,3 +198,8 @@ Nouveau `useEffect` des hooks peuvent être créés pour chaque requête persist
 +++
 
 <p> </p>
+
+## Requêtes GraphQL
+
+AEM prend en charge les requêtes GraphQL définies par le client, mais il est AEM bonne pratique d’utiliser [requêtes GraphQL persistantes](#persisted-graphql-queries).
+
