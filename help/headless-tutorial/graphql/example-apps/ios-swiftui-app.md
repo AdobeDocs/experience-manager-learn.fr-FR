@@ -3,14 +3,14 @@ title: Application iOS - AEM exemple sans affichage
 description: Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application iOS explique comment interroger du contenu à l’aide des API GraphQL AEM à l’aide de requêtes persistantes.
 version: Cloud Service
 mini-toc-levels: 2
-kt: 9166
-thumbnail: KT-9166.jpg
+kt: 10587
+thumbnail: KT-10587.jpg
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: 4b8f7d9c6def8c121f3c975218b7214d271fa77f
+source-git-commit: cd7cb89f407f5e0c465544593563534472daf928
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 4%
