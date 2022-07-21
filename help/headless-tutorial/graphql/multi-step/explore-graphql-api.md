@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1532'
 ht-degree: 7%
 
 ---
@@ -56,9 +56,9 @@ Un point d’entrée GraphQL doit être configuré pour activer les requêtes d�
 
    >[!NOTE]
    >
-   > Un point de terminaison global peut également être créé pour activer les requêtes par rapport aux modèles pour tous les projets. Par exemple, si vous souhaitez combiner une requête impliquant les modèles dans la variable **WKND partagé** et dans le **Mon projet**. Cette méthode doit être utilisée avec précaution et uniquement si nécessaire, car elle peut ouvrir l’environnement à des vulnérabilités de sécurité supplémentaires.
+   > Un point de terminaison global peut également être créé pour activer les requêtes par rapport aux modèles sur plusieurs configurations. Cette méthode doit être utilisée avec précaution, car elle peut ouvrir l’environnement à d’autres vulnérabilités de sécurité et ajouter à la complexité globale de la gestion des AEM.
 
-1. Vous devriez maintenant voir deux points d’entrée GraphQL activés dans votre environnement (en supposant que vous ayez installé le contenu partagé WKND).
+1. Vous devriez maintenant voir un point d’entrée GraphQL activé dans votre environnement.
 
    ![Points d’entrée graphql activés](assets/explore-graphql-api/enabled-graphql-endpoints.png)
 
@@ -76,11 +76,11 @@ Ensuite, explorez la puissance de l’API GraphQL AEM à l’aide de l’IDE Gra
    >
    > Pour les versions plus anciennes d’AEM, l’IDE GraphiQL peut ne pas être intégré. Il peut être installé manuellement en procédant comme suit : [instructions](#install-graphiql).
 
-1. Dans le coin supérieur droit, définissez la variable **Point d’entrée** to **Mon point de terminaison de projet**.
+1. Dans le coin supérieur droit, assurez-vous que la variable **Point d’entrée** est défini sur **Mon point de terminaison de projet**.
 
    ![Définition du point d’entrée GraphQL](assets/explore-graphql-api/set-my-project-endpoint.png)
 
-   Cela permettra d’étendre toutes les requêtes aux modèles créés dans la variable **Mon projet** projet. Notez qu’il existe également un point de terminaison pour **WKND partagé**.
+Cela permettra d’étendre toutes les requêtes aux modèles créés dans la variable **Mon projet** projet.
 
 ### Requête sur une liste de fragments de contenu {#query-list-cf}
 
@@ -370,16 +370,28 @@ Ensuite, conservez deux requêtes simples ; elles seront utilisées dans le chap
 
    ![Requêtes conservées finales](assets/explore-graphql-api/final-persisted-queries.png)
 
+
+## Publier le point d’entrée GraphQL et les requêtes persistantes
+
+Lors de la révision et de la vérification, publiez la variable `GraphQL Endpoint` &amp; `Persisted Queries`
+
+1. Dans l’écran AEM Démarrer , accédez à **Outils** > **Général** > **GraphQL**.
+
+1. Cochez la case en regard de **Mon point de terminaison de projet** et appuyez sur **Publier**
+
+   ![Publier le point d’entrée GraphQL](assets/explore-graphql-api/publish-graphql-endpoint.png)
+
+1. Dans l’écran AEM Démarrer , accédez à **Outils** > **Général** > **Éditeur de requêtes GraphQL**
+
+1. Appuyez sur le bouton *toutes les équipes* dans le panneau Requêtes persistantes et appuyez sur **Publier**
+
+   ![Publier les requêtes persistantes](assets/explore-graphql-api/publish-persisted-query.png)
+
+1. Répétez l’étape ci-dessus pour `person-by-name` query
+
 ## Fichiers de solution {#solution-files}
 
 Téléchargez le contenu, les modèles et les requêtes persistantes créés dans les trois derniers chapitres : [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip)
-
-## Exploration des requêtes persistantes WKND (facultatif) {#explore-wknd-content-fragments}
-
-Si vous [Installation de l’exemple de contenu partagé WKND](./overview.md#install-sample-content) vous pouvez passer en revue et exécuter des requêtes persistantes comme aventures-all, aventure-par-activité, aventure-par-chemin, etc.
-
-![Requêtes persistantes WKND](assets/explore-graphql-api/wknd-persisted-queries.png)
-
 
 ## Ressources supplémentaires
 

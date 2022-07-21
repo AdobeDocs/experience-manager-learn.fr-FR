@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1134'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ Vous êtes également invité à créer votre propre modèle en suivant les éta
 
 ## Prérequis {#prerequisites}
 
-Il s’agit d’un tutoriel en plusieurs parties qui suppose qu’un [AEM environnement de création est disponible](./overview.md#prerequisites) et éventuellement la variable [L’exemple de contenu partagé WKND a été installé.](./overview.md#install-sample-content).
+Il s’agit d’un tutoriel en plusieurs parties qui suppose qu’un [AEM environnement de création est disponible](./overview.md#prerequisites)
 
 ## Objectifs {#objectives}
 
@@ -39,7 +39,7 @@ Il s’agit d’un tutoriel en plusieurs parties qui suppose qu’un [AEM enviro
 
 Une configuration de projet contient tous les modèles de fragment de contenu associés à un projet particulier et permet d’organiser les modèles. Au moins un projet doit être créé **before** création d’un modèle de fragment de contenu.
 
-1. Connexion à l’AEM **Auteur** environnement.
+1. Connexion à l’AEM **Auteur** environnement (ex. `https://author-pYYYY-eXXXX.adobeaemcloud.com/`)
 1. Dans l’écran AEM Démarrer, accédez à **Outils** > **Général** > **Explorateur de configuration**.
 
    ![Accédez à l’explorateur de configurations](assets/content-fragment-models/navigate-config-browser.png)
@@ -65,7 +65,6 @@ Créez un modèle pour un **Personne**, qui est le modèle de données représen
 
    ![Accès aux modèles de fragment de contenu](assets/content-fragment-models/navigate-cf-models.png)
 
-   Si vous avez installé le [exemple de contenu](overview.md#install-sample-content) vous verrez alors deux dossiers : **Mon projet** et **WKND partagé**.
 1. Accédez au **Mon projet** dossier.
 1. Appuyer **Créer** dans le coin supérieur droit pour afficher le **Créer un modèle** assistant.
 1. Pour **Titre du modèle** enter : **Personne** et appuyez sur **Créer**.
@@ -165,23 +164,23 @@ Créez un modèle pour un **Équipe**, qui est le modèle de données d’une é
 
    ![Deux modèles](assets/content-fragment-models/two-new-models.png)
 
-## Inspect des modèles de fragment de contenu WKND (facultatif)
+## Publication des modèles de configuration de projet et de fragment de contenu
 
-Si vous [Installation de l’exemple de contenu partagé WKND](./overview.md#install-sample-content) vous pouvez parcourir les modèles Adventure, Article et Auteur pour obtenir plus d’idées sur les techniques de modélisation des données.
+Lors de la révision et de la vérification, publiez la variable `Project Configuration` &amp; `Content Fragment Model`
 
-1. Dans la **AEM** Accédez à **Outils** > **Général** > **Modèles de fragment de contenu**.
+1. Dans l’écran AEM Démarrer, accédez à **Outils** > **Général** > **Explorateur de configuration**.
 
-1. Accédez au **WKND partagé** et vous devriez voir trois modèles : Article, aventure et auteur.
+1. Cochez la case en regard de **Mon projet** et appuyez sur **Publier**
 
-1. Inspect les modèles en survolant la carte et en appuyant sur l’icône de modification (crayon)
+   ![Publier la configuration du projet](assets/content-fragment-models/publish-project-config.png)
 
-   ![Modèles WKND](assets/content-fragment-models/wknd-shared-models.png)
+1. Dans l’écran AEM Démarrer, accédez à **Outils** > **Général** > **Modèles de fragment de contenu**.
 
-1. Cela ouvre la fenêtre **Éditeur de modèle de fragment de contenu** pour le modèle et vous pouvez examiner les différents types de données utilisés.
+1. Accédez au **Mon projet** dossier.
 
-   >[!CAUTION]
-   >
-   > Modification du modèle **after** Les fragments de contenu ont été créés, ont des effets en aval. Les valeurs de champ des fragments existants ne sont plus référencées et le schéma de données exposé par GraphQL change, ce qui affecte les applications existantes.
+1. Appuyer **Personne** et **Équipe** modèles et appuyez sur **Publier**
+
+   ![Publication de modèles de fragment de contenu](assets/content-fragment-models/publish-content-fragment-model.png)
 
 ## Félicitations ! {#congratulations}
 

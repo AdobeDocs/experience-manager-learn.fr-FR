@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 410eb23534e083940bf716194576e099d22ca205
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '819'
 ht-degree: 3%
 
 ---
@@ -59,7 +59,7 @@ Les fragments de contenu sont stockés dans des dossiers dans AEM Assets. Pour c
 
    ![Modèles de fragment de contenu autorisés](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   Ces stratégies seront automatiquement héritées par tous les sous-dossiers et peuvent être remplacées. Notez que vous pouvez également autoriser les modèles par balises ou activer les modèles à partir d’autres configurations de projet (comme WKND Shared). Ce mécanisme permet de gérer efficacement votre hiérarchie de contenu.
+   Ces stratégies seront automatiquement héritées par tous les sous-dossiers et peuvent être remplacées. Notez que vous pouvez également autoriser les modèles par balises ou activer les modèles à partir d’autres configurations de projet. Ce mécanisme permet de gérer efficacement votre hiérarchie de contenu.
 
 1. Appuyer **Enregistrer et fermer** pour enregistrer les modifications apportées aux propriétés du dossier.
 
@@ -121,17 +121,9 @@ Remplissez ensuite les fragments nouvellement créés avec des données.
 
    ![Ouvrir le fragment de contenu](assets/author-content-fragments/open-fragment-for-editing.png)
 
-1. L’éditeur de fragment de contenu contient un formulaire basé sur le modèle de fragment de contenu. Renseignez les différents champs pour ajouter du contenu au **John Doe** fragment. Pour l’image de profil, n’hésitez pas à choisir l’une des images dans WKND Partagé ou à télécharger votre propre image sur AEM Assets.
+1. L’éditeur de fragment de contenu contient un formulaire basé sur le modèle de fragment de contenu. Renseignez les différents champs pour ajouter du contenu au **John Doe** fragment. Pour l’image de profil, chargez votre propre image dans AEM Assets.
 
    ![Éditeur de fragment de contenu](assets/author-content-fragments/content-fragment-editor-jd.png)
-
-1. Ensuite, appuyez sur **Créer une variation** dans le rail de gauche. Dans la boîte de dialogue, ajoutez un type dans **Alternate** pour le nom de la variation.
-
-1. Modifiez certains des éléments de la fonction **Alternate** variation.
-
-   ![Autre version](assets/author-content-fragments/alternate-variation-john-doe-fragment.png)
-
-   La fonction de variation permet aux auteurs de créer différentes versions d’un même fragment de contenu. Vous pouvez l’utiliser pour fournir une version récapitulative d’un article de longue forme. Par défaut, une seule **Principal** est créée. Les éléments de champ de texte multiligne d’une variation peuvent être synchronisés avec la variation principale.
 
 1. Appuyer **Enregistrer et fermer** pour enregistrer les modifications apportées au fragment John Doe.
 1. Revenez à l’interface utilisateur Fragment de contenu et ouvrez le **Alison Smith** pour modification.
@@ -151,11 +143,17 @@ Remplissez ensuite les fragments nouvellement créés avec des données.
 
 1. Appuyer **Enregistrer et fermer** pour enregistrer les modifications apportées au fragment Team Alpha.
 
-## Exploration des fragments de contenu WKND (facultatif) {#explore-wknd-content-fragments}
+## Publication de fragments de contenu
 
-Si vous [Installation de l’exemple de contenu partagé WKND](./overview.md#install-sample-content) vous pouvez examiner les fragments de contenu pour les modèles Aventures, Articles et Auteurs afin d’obtenir plus d’idées sur la création de contenu.
+Lors de la révision et de la vérification, publiez la création `Content Fragments`
 
-![Fragments de contenu WKND](assets/author-content-fragments/wknd-content-fragments.png)
+1. Dans l’AEM écran de démarrage, appuyez sur **Fragments de contenu** pour ouvrir l’interface utilisateur Fragments de contenu.
+
+1. Dans le rail de gauche, développez **Mon projet** et appuyez sur **Anglais**.
+
+1. Cochez la case en regard des fragments de contenu et appuyez sur **Publier**
+
+   ![Publier le fragment de contenu](assets/author-content-fragments/publish-content-fragment.png)
 
 ## Félicitations ! {#congratulations}
 
