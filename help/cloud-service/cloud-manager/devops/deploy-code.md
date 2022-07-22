@@ -1,30 +1,30 @@
 ---
-title: Déploiement de projets de code AEM vers AEM en tant que Cloud Service
-description: Explorez le déploiement d’un projet de code AEM vers AEM as a Cloud Service à l’aide de Cloud Manager.
+title: Déploiement AEM projets de code sur AEM as a Cloud Service
+description: À l’aide de Cloud Manager, envisagez de déployer un projet de code AEM vers AEM as a Cloud Service.
 role: Developer
 level: Beginner
 type: Tutorial
-topic: Développement
-feature: Outils de développement
+topic: Development
+feature: Developer Tools
 kt: 6912
 thumbnail: 330534.jpg
-source-git-commit: e295d77a11c99310aaae10ecb8a2eaa20ad49285
+exl-id: 82cd6dd5-735f-4641-9848-a5f5144b8624
+source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 7%
+source-wordcount: '99'
+ht-degree: 5%
 
 ---
 
-
-# Déploiement du code
+# Déploiement du code {#deploying-code}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_deploycode"
 >title="Déploiement du code"
->abstract="Intégration du référentiel git de cloud manager à un référentiel git externe et déploiement d’un projet AEM en tant que Cloud Service"
+>abstract="Intégration du référentiel git de cloud manager à un référentiel git externe et déploiement d’un projet pour AEM as a Cloud Service"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=en#cloud-manager" text="Fusion de projets"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=en#how-to-use" text="Déploiement du code avec Cloud Manager"
 
-Intégration du référentiel git de cloud manager à un référentiel git externe et déploiement d’un projet AEM en tant que Cloud Service
+Intégration du référentiel git de cloud manager à un référentiel git externe et déploiement d’un projet pour AEM as a Cloud Service
 
 >[!VIDEO](https://video.tv.adobe.com/v/330534/?quality=12&learn=on)
