@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: a49e56b6f47e477132a9eee128e62fe5a415b262
+source-git-commit: 294ad688b17a5fc9559fea39fc99ebf5e95cad39
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1088'
 ht-degree: 2%
 
 ---
@@ -477,7 +477,7 @@ module.exports = function(app) {
   ...
 ```
 
-Cependant, il ne s’agit pas d’une option appropriée pour le déploiement en production et vous trouverez plus de détails à l’adresse _Déploiement en production_ .
+Cependant, cette option ne convient pas à **déploiement en production** mais fonctionne bien pendant le développement. Vous trouverez plus de détails à l’adresse [_Déploiement_](../deployment/spa.md) .
 
 ## Félicitations !{#congratulations}
 
