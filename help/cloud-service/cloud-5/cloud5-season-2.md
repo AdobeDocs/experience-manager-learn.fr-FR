@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: c061ea9d08606052c4b2cf5b3c84d6f1df5a57fa
+source-git-commit: 6197a40888ff5a8f93cbe03fb42c85f06f324de0
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '447'
 ht-degree: 1%
 
 ---
@@ -127,14 +127,16 @@ Chaque saison varie en longueur et sera publiée selon un calendrier fixe. Les s
       </p>
      </td>   
      <td>
-            <img alt="Mystères de Cloud Manager... Audit de l’expérience" src="./imgs/coming-soon.png"/>
+            <a href="season-2/cloud5-MoCM-experience-audit.md">
+               <img alt="Mystères de Cloud Manager... Audit de l’expérience" src="./imgs/s2/007-thumb.png"/>
+               </a>
       <div>
-            <strong>Mystères de Cloud Manager... Audit de l’expérience</strong>
-         <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
+            <a href="season-2/cloud5-MoCM-experience-audit.md"><strong>Mystères de Cloud Manager... Audit de l’expérience</strong></a>
+         <br/><em>avec Darin Kuntze, architecte senior du cloud</em>
       </div>
       <p>
         <br/>
-        29 juillet 2022
+        Explorez les bases de Cloud Manager et ses fonctionnalités de contrôle de l’expérience.
       </p>
    </td>
      <td>
