@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 6197a40888ff5a8f93cbe03fb42c85f06f324de0
+source-git-commit: 3fb0fb5b8f43dc925da2ffa05808f24bf6d5ada3
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '478'
 ht-degree: 1%
 
 ---
@@ -140,14 +140,16 @@ Chaque saison varie en longueur et sera publiée selon un calendrier fixe. Les s
       </p>
    </td>
      <td>
-            <img alt="Mystères de Cloud Manager... Tests unitaires" src="./imgs/coming-soon.png"/>
+            <a href="season-2/cloud5-MoCM-unit-tests.md">
+               <img alt="Mystères de Cloud Manager... Tests unitaires" src="./imgs/s2/009-thumb.png"/>
+            </a>
       <div>
-            <strong>Mystères de Cloud Manager... Tests unitaires</strong>
+            <a href="season-2/cloud5-MoCM-unit-tests.md"><strong>Mystères de Cloud Manager... Tests unitaires</strong></a>
          <br/><em>avec Darin Kuntze et Bryan Stopp, architectes chevronnés du cloud</em>
       </div>
       <p>
         <br/>
-         5 août 2022
+        Darin et Bryan discutent de la manière dont Cloud Manager intègre l’exécution de tests unitaires et la création de rapports de couverture de code à son pipeline CI/CD afin d’encourager et de promouvoir les bonnes pratiques en matière de AEM de test d’unité.
       </p>
    </td> 
   </tr>
