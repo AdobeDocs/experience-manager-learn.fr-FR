@@ -5,9 +5,9 @@ sub-product: sites, cloud-manager, assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: e2fabf7c-7fda-4391-ae77-709aa9f7dc0a
-source-git-commit: 3fb0fb5b8f43dc925da2ffa05808f24bf6d5ada3
+source-git-commit: 2cfa5039e69ef23e58428e17b45877170930820e
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '503'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 ![AEM série d’experts](./imgs/masthead-s2.png)
 >[!VIDEO](https://video.tv.adobe.com/v/343127)
 
-## Présentation
+## Présentation 
 
 Bienvenue à la deuxième série de Cloud 5 de AEM Engineering. L’un des Principaux problèmes de la phase de mise en oeuvre d’un produit est de disposer de suffisamment d’échantillons de code et/ou de démonstrations en direct de ces exemples, outils ou API. L’objectif de cette série est de fournir des informations utiles sur AEM as a Cloud Service en 5 minutes ou moins.
 
@@ -141,7 +141,7 @@ Chaque saison varie en longueur et sera publiée selon un calendrier fixe. Les s
    </td>
      <td>
             <a href="season-2/cloud5-MoCM-unit-tests.md">
-               <img alt="Mystères de Cloud Manager... Tests unitaires" src="./imgs/s2/009-thumb.png"/>
+               <img alt="Mystères de Cloud Manager... Tests unitaires" src="./imgs/s2/008-thumb.png"/>
             </a>
       <div>
             <a href="season-2/cloud5-MoCM-unit-tests.md"><strong>Mystères de Cloud Manager... Tests unitaires</strong></a>
@@ -155,13 +155,15 @@ Chaque saison varie en longueur et sera publiée selon un calendrier fixe. Les s
   </tr>
     <tr>
         <td>
-                <img alt="Mystères de Cloud Manager... Tests fonctionnels" src="./imgs/coming-soon.png"/>
+               <a href="season-2/cloud5-MoCM-functional-tests.md">
+                   <img alt="Mystères de Cloud Manager... Tests fonctionnels" src="./imgs/s2/009-thumb.png"/>
+               </a>
             <div>
-                <strong>Mystères de Cloud Manager... Tests fonctionnels</strong><br/>        
+                <a href="season-2/cloud5-MoCM-functional-tests.md"><strong>Mystères de Cloud Manager... Tests fonctionnels</strong><br/></a>        
                 <em>avec Darin Kuntze et Bryan Stopp, architectes chevronnés du cloud</em>
             </div>
             <p><br/>
-                12 août 2022
+                Darin et Bryan discutent de différents types de tests fonctionnels intégrés au processus de déploiement as a Cloud Service AEM afin d’assurer la qualité et la fiabilité de votre code.
             </p>
         </td>
         <td></td>
