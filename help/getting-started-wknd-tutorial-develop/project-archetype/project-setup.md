@@ -12,10 +12,10 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: 819188cabb784a2bbfa097dc4c47f75e38231b53
 workflow-type: tm+mt
-source-wordcount: '1816'
-ht-degree: 6%
+source-wordcount: '1848'
+ht-degree: 7%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 6%
 
 Ce tutoriel porte sur la création d’un projet Maven multi-module pour gérer le code et les configurations d’un site Adobe Experience Manager.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Examinez les outils et les instructions requis pour configurer une [environnement de développement local](./overview.md#local-dev-environment). Assurez-vous qu’une nouvelle instance d’Adobe Experience Manager est disponible localement et qu’aucun exemple/module de démonstration supplémentaire n’a été installé (hormis les Service Packs requis).
 
@@ -332,3 +332,11 @@ Les mêmes commandes Maven que celles utilisées pour créer la variable **ui.ap
 ## Résolution des problèmes
 
 Si vous rencontrez des problèmes lors de la génération du projet à l’aide de l’archétype de projet AEM, consultez la liste des [problèmes connus](https://github.com/adobe/aem-project-archetype#known-issues) et liste ouverte [Problèmes](https://github.com/adobe/aem-project-archetype/issues).
+
+## Félicitations encore ! {#congratulations-bonus}
+
+Félicitations, continuez à parcourir le matériel de bonus.
+
+### Étapes suivantes {#next-steps-bonus}
+
+Découvrez la technologie sous-jacente d’un composant Sites Adobe Experience Manager (AEM) au moyen d’une `HelloWorld` avec l’exemple [Principes de base des composants](component-basics.md) tutoriel .
