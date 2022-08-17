@@ -1,27 +1,27 @@
 ---
 title: Ajout de composants de conteneur modifiables à un SPA distant
 description: Découvrez comment ajouter des composants de conteneur modifiables à un SPA distant qui permettent aux auteurs AEM de les faire glisser et de les déposer.
-topic: Sans tête, SPA, développement
-feature: Éditeur SPA, composants principaux, API, développement
+topic: Headless, SPA, Development
+feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
 level: Beginner
 kt: 7635
 thumbnail: kt-7635.jpeg
-source-git-commit: 0eb086242ecaafa53c59c2018f178e15f98dd76f
+exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
+source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1169'
 ht-degree: 2%
 
 ---
 
-
 # Composants de conteneur modifiables
 
-[Les ](./spa-fixed-component.md) composants fixes offrent une certaine flexibilité pour la création SPA contenu. Toutefois, cette approche est rigide et nécessite que les développeurs définissent la composition exacte du contenu modifiable. Pour prendre en charge la création d’expériences exceptionnelles par les auteurs, SPA Editor prend en charge l’utilisation de composants de conteneur dans le SPA. Les composants de conteneur permettent aux auteurs de faire glisser des composants autorisés dans le conteneur et de les créer, comme ils le peuvent dans la création AEM Sites traditionnelle.
+[Composants fixes](./spa-fixed-component.md) offre une certaine flexibilité pour créer SPA contenu, mais cette approche est rigide et nécessite que les développeurs définissent la composition exacte du contenu modifiable. Pour prendre en charge la création d’expériences exceptionnelles par les auteurs, SPA Editor prend en charge l’utilisation de composants de conteneur dans le SPA. Les composants de conteneur permettent aux auteurs de faire glisser des composants autorisés dans le conteneur et de les créer, comme ils le peuvent dans la création AEM Sites traditionnelle.
 
 ![Composants de conteneur modifiables](./assets/spa-container-component/intro.png)
 
-Dans ce chapitre, nous allons ajouter un conteneur modifiable à la vue d’accueil permettant aux auteurs de composer et de mettre en page des expériences de contenu enrichi à l’aide AEM composants principaux React directement dans le SPA.
+Dans ce chapitre, nous ajoutons un conteneur modifiable à la vue d’accueil, ce qui permet aux auteurs de composer et de mettre en page des expériences de contenu enrichi à l’aide AEM composants principaux React directement dans le SPA.
 
 ## Mise à jour de l’application WKND
 
@@ -34,9 +34,9 @@ Pour ajouter un composant de conteneur à la vue d’accueil :
 
 Pour placer une zone modifiable dans la vue Accueil, nous devons :
 
-1. Importez le composant ResponsiveGrid à partir de `@adobe/aem-react-editable-components`
-1. Enregistrez-le à l’aide de `withMappable` afin que les développeurs puissent le placer dans le SPA
-1. De plus, enregistrez-le avec `MapTo` afin qu’il puisse être réutilisé dans d’autres composants de conteneur, en imbriquant effectivement des conteneurs.
+1. Importez le composant ResponsiveGrid depuis `@adobe/aem-react-editable-components`
+1. Enregistrez-le à l’aide de `withMappable` afin que les développeurs puissent le placer dans la SPA
+1. Vous pouvez également vous inscrire à `MapTo` afin qu’il puisse être réutilisé dans d’autres composants de conteneur, imbriquant ainsi des conteneurs.
 
 Pour ce faire :
 
@@ -72,10 +72,10 @@ Pour ce faire :
    export default AEMResponsiveGrid;
    ```
 
-Le code est similaire `AEMTitle.js` que [a importé le composant Titre des composants principaux de la portée AEM](./spa-fixed-component.md).
+Le code est similaire `AEMTitle.js` that [importation du composant Titre des composants principaux de la portée AEM](./spa-fixed-component.md).
 
 
-Le fichier `AEMResponsiveGrid.js` doit se présenter comme suit :
+Le `AEMResponsiveGrid.js` doit se présenter comme suit :
 
 ![AEMResponsiveGrid.js](./assets/spa-container-component/aem-responsive-grid-js.png)
 
@@ -83,44 +83,44 @@ Le fichier `AEMResponsiveGrid.js` doit se présenter comme suit :
 
 Maintenant que le composant ResponsiveGrid AEM est enregistré dans et disponible pour une utilisation dans le SPA, nous pouvons le placer dans la vue d’accueil.
 
-1. Ouvrez et modifiez `react-app/src/App.js`
-1. Importez le composant `AEMResponsiveGrid` et placez-le au-dessus du composant `<AEMTitle ...>`.
-1. Définissez les attributs suivants sur le composant `<AEMResponsiveGrid...>`
+1. Ouvrir et modifier `react-app/src/Home.js`
+1. Importez la variable `AEMResponsiveGrid` et placez-le au-dessus du composant `<AEMTitle ...>` composant.
+1. Définissez les attributs suivants sur la variable `<AEMResponsiveGrid...>` component
    + `pagePath = '/content/wknd-app/us/en/home'`
    + `itemPath = 'root/responsivegrid'`
 
-   Cela indique à ce composant `AEMResponsiveGrid` de récupérer son contenu de la ressource AEM :
+   Cette instruction indique à la fonction `AEMResponsiveGrid` pour récupérer son contenu de la ressource AEM :
 
    + `/content/wknd-app/us/en/home/jcr:content/root/responsivegrid`
 
-   `itemPath` correspond au noeud `responsivegrid` défini dans le `Remote SPA Page` modèle d’AEM et est automatiquement créé sur les nouvelles pages AEM créées à partir du modèle d’ `Remote SPA Page`.
+   Le `itemPath` est mappée à la variable `responsivegrid` noeud défini dans la variable `Remote SPA Page` AEM Modèle et est automatiquement créé sur les nouvelles pages AEM créées à partir de la `Remote SPA Page` AEM Modèle.
 
-   Mettez à jour `App.js` pour ajouter le composant `<AEMResponsiveGrid...>`.
+   Mettre à jour `Home.js` pour ajouter la variable `<AEMResponsiveGrid...>` composant.
 
    ```
    ...
-   import AEMResponsiveGrid from './components/aem/AEMResponsiveGrid';
+   import AEMResponsiveGrid from './aem/AEMResponsiveGrid';
    ...
    
    function Home() {
-   return (
-       <div className="Home">
-           <AEMResponsiveGrid
-               pagePath='/content/wknd-app/us/en/home' 
-               itemPath='root/responsivegrid'/>
+       return (
+           <div className="Home">
+               <AEMResponsiveGrid
+                   pagePath='/content/wknd-app/us/en/home' 
+                   itemPath='root/responsivegrid'/>
    
-           <AEMTitle
-               pagePath='/content/wknd-app/us/en/home' 
-               itemPath='title'/>
-           <Adventures />
-       </div>
-   );
+               <AEMTitle
+                   pagePath='/content/wknd-app/us/en/home' 
+                   itemPath='title'/>
+               <Adventures />
+           </div>
+       );
    }
    ```
 
-Le fichier `Apps.js` doit se présenter comme suit :
+Le `Home.js` doit se présenter comme suit :
 
-![App.js](./assets/spa-container-component/app-js.png)
+![Home.js](./assets/spa-container-component/home-js.png)
 
 ## Création de composants modifiables
 
@@ -151,7 +151,7 @@ Pour tirer pleinement parti des conteneurs d’expérience de création flexible
    export default AEMText;
    ```
 
-Le fichier `AEMText.js` doit se présenter comme suit :
+Le `AEMText.js` doit se présenter comme suit :
 
 ![AEMText.js](./assets/spa-container-component/aem-text-js.png)
 
@@ -180,7 +180,7 @@ Le fichier `AEMText.js` doit se présenter comme suit :
    export default AEMImage;
    ```
 
-1. Créez un fichier SCSS `src/components/aem/AEMImage.scss` qui fournit des styles personnalisés pour `AEMImage.scss`. Ces styles ciblent les classes CSS de notation BEM du composant principal React AEM.
+1. Création d’un fichier SCSS `src/components/aem/AEMImage.scss` qui fournit des styles personnalisés pour le `AEMImage.scss`. Ces styles ciblent les classes CSS de notation BEM du composant principal React AEM.
 1. Ajoutez le SCSS suivant à `AEMImage.scss`
 
    ```
@@ -191,7 +191,7 @@ Le fichier `AEMText.js` doit se présenter comme suit :
     }
    ```
 
-1. Importer `AEMImage.scss` dans `AEMImage.js`
+1. Importer `AEMImage.scss` in `AEMImage.js`
 
    ```
    ...
@@ -199,17 +199,17 @@ Le fichier `AEMText.js` doit se présenter comme suit :
    ...
    ```
 
-`AEMImage.js` et `AEMImage.scss` doivent se présenter comme suit :
+Le `AEMImage.js` et `AEMImage.scss` doit ressembler à :
 
 ![AEMImage.js et AEMImage.scss](./assets/spa-container-component/aem-image-js-scss.png)
 
 ### Importation des composants modifiables
 
-Les nouveaux composants `AEMText` et `AEMImage` SPA sont référencés dans le SPA et sont instanciés dynamiquement en fonction du JSON renvoyé par l’. Pour vous assurer que ces composants sont disponibles pour la SPA, créez des instructions d’importation pour eux dans `App.js`
+Le `AEMText` et `AEMImage` Les composants SPA sont référencés dans le SPA et sont instanciés dynamiquement en fonction du JSON renvoyé par l’entité. Pour vous assurer que ces composants sont disponibles pour la SPA, créez des instructions d’importation pour eux dans `Home.js`
 
 1. Ouvrez le projet SPA dans votre IDE.
-1. Ouvrez le fichier `src/App.js`
-1. Ajouter des instructions d’importation pour `AEMText` et `AEMImage`
+1. Ouvrez le fichier `src/Home.js`
+1. Ajout d’instructions d’importation pour `AEMText` et `AEMImage`
 
    ```
    ...
@@ -221,17 +221,17 @@ Les nouveaux composants `AEMText` et `AEMImage` SPA sont référencés dans le S
 
 Le résultat doit se présenter comme suit :
 
-![Apps.js](./assets/spa-container-component/app-js-imports.png)
+![Home.js](./assets/spa-container-component/home-js-imports.png)
 
-Si ces importations sont _et non_ ajoutées, le code `AEMText` et `AEMImage` ne seront pas appelés par SPA et, par conséquent, les composants ne sont pas enregistrés par rapport aux types de ressources fournis.
+Si ces importations sont _not_ ajouté, la variable `AEMText` et `AEMImage` n’est pas appelé par SPA. Par conséquent, les composants ne sont pas enregistrés par rapport aux types de ressources fournis.
 
 ## Configuration du conteneur dans AEM
 
 AEM composants de conteneur utilisent des stratégies pour dicter leurs composants autorisés. Il s’agit d’une configuration essentielle lors de l’utilisation de SPA Editor, puisque seuls AEM composants principaux de la gestion du contenu web qui ont mappé des homologues de composants de base sont rendus par le . Assurez-vous que seuls les composants pour lesquels nous avons fourni SPA implémentations sont autorisés :
 
-+ `AEMTitle` mappé à  `wknd-app/components/title`
-+ `AEMText` mappé à  `wknd-app/components/text`
-+ `AEMImage` mappé à  `wknd-app/components/image`
++ `AEMTitle` mappé à `wknd-app/components/title`
++ `AEMText` mappé à `wknd-app/components/text`
++ `AEMImage` mappé à `wknd-app/components/image`
 
 Pour configurer le conteneur reponsivegrid du modèle Page de SPA distante :
 
@@ -241,13 +241,13 @@ Pour configurer le conteneur reponsivegrid du modèle Page de SPA distante :
 
    ![Stratégies de grille réactive](./assets/spa-container-component/templates-remote-spa-page.png)
 
-1. Sélectionnez __Structure__ dans le sélecteur de mode en haut à droite.
-1. Appuyez pour sélectionner le __conteneur de mises en page__.
-1. Appuyez sur l’icône __Stratégie__ dans la barre contextuelle.
+1. Sélectionner __Structure__ dans le sélecteur de mode en haut à droite.
+1. Appuyez sur pour sélectionner la variable __Conteneur de mises en page__
+1. Appuyez sur le bouton __Stratégie__ dans la barre contextuelle
 
    ![Stratégies de grille réactive](./assets/spa-container-component/templates-policies-action.png)
 
-1. À droite, sous l’onglet __Composants autorisés__, développez __APPLICATION WKND - CONTENT__
+1. Sur la droite, sous le __Composants autorisés__ onglet, développer __APPLICATION WKND - CONTENU__
 1. Assurez-vous que seuls les éléments suivants sont sélectionnés :
    + Image
    + Texte
@@ -259,37 +259,37 @@ Pour configurer le conteneur reponsivegrid du modèle Page de SPA distante :
 
 ## Création du conteneur dans AEM
 
-Avec la SPA mise à jour afin d’incorporer la balise `<AEMResponsiveGrid...>`, les wrappers de trois composants principaux React AEM (`AEMTitle`, `AEMText` et `AEMImage`), et l’ est mise à jour avec une stratégie de modèle correspondante, nous pouvons commencer à créer du contenu dans le composant de conteneur.
+Après la mise à jour de la SPA pour incorporer la variable `<AEMResponsiveGrid...>`, wrappers pour trois composants principaux React AEM (`AEMTitle`, `AEMText`, et `AEMImage`), et AEM est mis à jour avec une stratégie Modèle correspondante, nous pouvons commencer à créer du contenu dans le composant de conteneur.
 
 1. Connexion à l’auteur AEM
 1. Accédez à __Sites > Application WKND__
-1. Appuyez sur __Home__ et sélectionnez __Edit__ dans la barre d’actions supérieure.
+1. Appuyer __Accueil__ et sélectionnez __Modifier__ à partir de la barre d’actions supérieure
    + Un composant Texte &quot;Hello World&quot; s’affiche, car il a été automatiquement ajouté lors de la génération du projet à partir de l’archétype de projet AEM.
-1. Sélectionnez __Modifier__ dans le sélecteur de mode en haut à droite de l’éditeur de page.
-1. Recherchez la zone modifiable __Conteneur de mises en page__ sous le titre .
-1. Ouvrez la __barre latérale de l’éditeur de page__, puis sélectionnez la __vue Composants__.
-1. Faites glisser les composants suivants dans le __conteneur de mises en page__
+1. Sélectionner __Modifier__ dans le sélecteur de mode en haut à droite de l’éditeur de page.
+1. Recherchez la variable __Conteneur de mises en page__ zone modifiable sous le titre
+1. Ouvrez le __Barre latérale de l’éditeur de page__, puis sélectionnez la variable __Vue Composants__
+1. Faites glisser les composants suivants dans le __Conteneur de mises en page__
    + Image
    + Titre
 1. Faites glisser les composants pour les réorganiser dans l’ordre suivant :
    1. Titre
    1. Image
    1. Texte
-1. ____ Autoriser le composant  ____ Titlecomponent
-   1. Appuyez sur le composant Titre et appuyez sur l’icône __clé à molette__ pour __modifier__ le composant Titre.
+1. __Auteur__ la valeur __Titre__ component
+   1. Appuyez sur le composant Titre , puis sur le __clé à molette__ icône à __edit__ le composant Titre ;
    1. Ajoutez le texte suivant :
-      + Titre : __L&#39;été arrive, tirons le meilleur parti !__
+      + Titre : __L&#39;été arrive, profitons au maximum !__
       + Type : __H1__
    1. Appuyez sur __Terminé__
-1. ____ Autoriser le composant  ____ d’image
-   1. Faites glisser une image dans à partir de la barre latérale (après avoir accédé à la vue Ressources) sur le composant Image .
-   1. Appuyez sur le composant Image, puis sur l’icône __clé à molette__ pour modifier le composant.
-   1. Cochez la case __L’image est décorative__ .
+1. __Auteur__ la valeur __Image__ component
+   1. Faites glisser une image dans à partir de la barre latérale (après avoir accédé à la vue Ressources) sur le composant Image.
+   1. Appuyez sur le composant Image, puis sur la __clé à molette__ icône à modifier
+   1. Vérifiez les __L’image est décorative__ checkbox
    1. Appuyez sur __Terminé__
-1. ____ Autoriser le composant  ____ de texte
-   1. Modifiez le composant Texte en appuyant sur le composant Texte et en appuyant sur l’icône __clé à molette__
+1. __Auteur__ la valeur __Texte__ component
+   1. Modifiez le composant Texte en appuyant sur le composant Texte, puis en appuyant sur le __clé à molette__ icon
    1. Ajoutez le texte suivant :
-      + _Actuellement, vous pouvez obtenir 15 % de réduction sur toutes les aventures d&#39;une semaine et 20 % de réduction sur toutes les aventures de 2 semaines ou plus ! Au passage en caisse, ajoutez simplement le code de campagne SUMMERISCOMING pour obtenir vos remises !_
+      + _Actuellement, vous pouvez obtenir 15 % de réduction sur toutes les aventures d&#39;une semaine et 20 % de réduction sur toutes les aventures de 2 semaines ou plus ! Au passage en caisse, ajoutez le code de campagne SUMMERISCOMING pour obtenir vos remises !_
    1. Appuyez sur __Terminé__
 
 1. Vos composants sont maintenant créés, mais empilés verticalement.
@@ -298,20 +298,20 @@ Avec la SPA mise à jour afin d’incorporer la balise `<AEMResponsiveGrid...>`,
 
    Utilisez AEM mode Mise en page pour ajuster la taille et la mise en page des composants.
 
-1. Passez en __mode Mise en page__ à l’aide du sélecteur de mode en haut à droite.
-1. ____ Redimensionner les composants Image et Texte de sorte qu’ils soient côte à côte
-   + ____ Le composant d’image doit comporter  __8 colonnes larges__
-   + ____ Le composant textuel doit comporter  __3 colonnes de large__
+1. Basculer vers __Mode Mise en page__ à l’aide du sélecteur de mode en haut à droite.
+1. __Redimensionner__ les composants Image et Texte, de sorte qu’ils soient côte à côte ;
+   + __Image__ component doit être __8 colonnes larges__
+   + __Texte__ component doit être __3 colonnes larges__
 
    ![Composants de mise en page](./assets/spa-container-component/layout-components.png)
 
-1. ____ Aperçu des modifications dans AEM éditeur de page
+1. __Aperçu__ vos modifications dans AEM éditeur de page
 1. Actualisez l’application WKND s’exécutant localement sur [http://localhost:3000](http://localhost:3000) pour afficher les modifications créées.
 
    ![Composant de conteneur dans SPA](./assets/spa-container-component/localhost-final.png)
 
 
-## Félicitations ! 
+## Félicitations !
 
 Vous avez ajouté un composant de conteneur qui permet aux auteurs d’ajouter des composants modifiables à l’application WKND ! Vous savez maintenant comment :
 
@@ -323,4 +323,4 @@ Vous avez ajouté un composant de conteneur qui permet aux auteurs d’ajouter d
 
 ## Étapes suivantes
 
-L’étape suivante consiste à utiliser cette même technique pour [ajouter un composant modifiable à un itinéraire Adventure Details](./spa-dynamic-routes.md) dans le SPA.
+L’étape suivante consiste à utiliser cette même technique pour [ajouter un composant modifiable à un itinéraire Détails de l’aventure](./spa-dynamic-routes.md) dans le SPA.
