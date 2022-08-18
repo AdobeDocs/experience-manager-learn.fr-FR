@@ -2,10 +2,10 @@
 title: Tutoriels AEM
 description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager.
 exl-id: fe83a2dc-b43a-4e71-9b03-d31ec4f6a6ff
-source-git-commit: eb669d1e2493d9b4a973314ab1323764920ba220
+source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 38%
+source-wordcount: '161'
+ht-degree: 46%
 
 ---
 
@@ -24,9 +24,8 @@ Adobe Experience Manager (AEM) est la principale plateforme de gestion de l’ex
 ## AEM Tutorials en plusieurs étapes
 
 + [Prise en main du développement AEM Sites – Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-+ [Prise en main d’AEM sans affichage](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
-+ [Prise en main d’AEM SPA Editor et React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html)
-+ [Prise en main d’AEM SPA Editor et Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
++ [Prise en main d’AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
++ [Prise en main d’AEM SPA Editor et React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=fr)
 + [Prise en main d’AEM et d’Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html)
 + [Tutoriel sur le cache de Dispatcher AEM 6.x](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html)
 + [Tutoriel sur AEM 6.x Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-learn/dynamic-media-classic-tutorial/overview.html)

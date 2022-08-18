@@ -3,10 +3,10 @@ user-guide-title: Vidéos et tutoriels d’AEM Sites
 user-guide-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Sites.
 breadcrumb-title: Tutoriels sur AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
-source-git-commit: ce9966d48689cd153f5de9d20240644d96d10adf
+source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 32%
+source-wordcount: '404'
+ht-degree: 35%
 
 ---
 
@@ -51,7 +51,6 @@ ht-degree: 32%
    + [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
    + [Prise en main d’AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
    + [Prise en main d’AEM SPA Editor et React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
-   + [Prise en main d’AEM SPA Editor et Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
    + [Extension des propriétés de page](developing/page-properties-technical-video-develop.md)
    + [Développement avec le système de style](developing/style-system-technical-video-understand.md)
    + [Bonnes pratiques relatives au système de style](developing/style-organization-style-system-understand-article.md)
@@ -68,9 +67,7 @@ ht-degree: 32%
    + [Plans de site](./seo/sitemaps.md)
 + Applications sur une seule page {#spa-editor}
    + [Utilisation de l’éditeur d’applications monopages ](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [Tutoriel Hello World](spa-editor/spa-editor-helloworld-tutorial-use.md)
    + [Prise en main d’AEM SPA Editor et React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
-   + [Prise en main d’AEM SPA Editor et Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
 + Gestion de plusieurs sites {#multi-site-management}
    + [Présentation de la copie de la langue](./multi-site-management/language-copy-overview.md)
    + [Live Copy et plan directeur](./multi-site-management/live-copy-and-blueprint.md)
