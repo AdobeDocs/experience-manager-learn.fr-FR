@@ -12,9 +12,9 @@ mini-toc-levels: 1
 kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
-source-git-commit: 819188cabb784a2bbfa097dc4c47f75e38231b53
+source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1847'
 ht-degree: 7%
 
 ---
@@ -256,7 +256,7 @@ Le **[core](https://experienceleague.adobe.com/docs/experience-manager-core-comp
 
 Le **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** Le module maven contient tout le code de rendu nécessaire pour le site situé sous `/apps`. Ce module comprend les éléments CSS/JS qui seront stockés dans un format AEM appelé [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=fr). Cela inclut également [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) des scripts pour le rendu du HTML dynamique. Vous pouvez penser au **ui.apps** en tant que mappage à la structure dans le JCR, mais dans un format pouvant être stocké sur un système de fichiers et validé dans le contrôle source. Le **ui.apps** ne contient que du code.
 
-Pour créer le module proprement dit :
+Pour créer uniquement ce module :
 
 1. Dans la ligne de commande. Accédez au `ui.apps` folder (sous `aem-guides-wknd`) :
 

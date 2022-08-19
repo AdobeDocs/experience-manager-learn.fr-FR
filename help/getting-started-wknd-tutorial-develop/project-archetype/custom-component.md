@@ -12,7 +12,7 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: 79d41d833ab0659f26f988678e124daa18b857f3
 workflow-type: tm+mt
 source-wordcount: '4138'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Ce tutoriel porte sur la création de bout en bout d’un composant de ligne d’AEM personnalisé qui affiche le contenu créé dans une boîte de dialogue et explore le développement d’un modèle Sling pour encapsuler la logique commerciale qui renseigne le code HTL du composant.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Examinez les outils et les instructions requis pour configurer une [environnement de développement local](overview.md#local-dev-environment).
 
@@ -447,7 +447,7 @@ Créez une interface Java publique pour la signature. `Byline.java` définit les
        import org.osgi.annotation.versioning.Version;
        &quot;
    
-   Lorsqu’une modification est apportée aux fichiers de ce module, la variable [la version du package doit être ajustée sémantiquement.](https://semver.org/). Si ce n’est pas le cas, le projet Maven [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) détectera une version de package non valide et rompra la version créée. Heureusement, en cas d’échec, le module externe Maven signale la version non valide du package Java ainsi que la version qu’il doit être. Juste à mettre à jour la `@Version("...")` dans la déclaration violant le package Java `package-info.java` à la version recommandée par le module externe pour corriger.
+Lorsqu’une modification est apportée aux fichiers de ce module, la variable [la version du package doit être ajustée sémantiquement.](https://semver.org/). Si ce n’est pas le cas, le projet Maven [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) détectera une version de package non valide et rompra la version créée. Heureusement, en cas d’échec, le module externe Maven signale la version non valide du package Java ainsi que la version qu’il doit être. Mettez simplement à jour la variable `@Version("...")` dans la déclaration violant le package Java `package-info.java` à la version recommandée par le module externe pour corriger.
 
 ### Implémentation par signature {#byline-implementation}
 

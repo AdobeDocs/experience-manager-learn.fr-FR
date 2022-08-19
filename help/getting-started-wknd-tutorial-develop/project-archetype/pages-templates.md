@@ -9,7 +9,7 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
 workflow-type: tm+mt
 source-wordcount: '3081'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Dans ce chapitre, nous allons explorer la relation entre un composant de page de base et des modèles modifiables. Nous allons créer un modèle d&#39;article sans style basé sur des maquettes de [AdobeXD](https://www.adobe.com/products/xd.html). Lors du processus de création du modèle, les composants principaux et les configurations de stratégie avancées des modèles modifiables sont traités.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Examinez les outils et les instructions requis pour configurer une [environnement de développement local](overview.md#local-dev-environment).
 
@@ -93,7 +93,7 @@ Créez ensuite un modèle dans AEM qui correspond à la structure des maquettes.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
 
-Étapes de haut niveau pour la vidéo ci-dessous :
+Étapes de haut niveau pour la vidéo ci-dessus :
 
 ### Configurations de structure
 
@@ -161,7 +161,7 @@ L’archétype de projet AEM a généré un en-tête et un pied de page. Ensuite
 
 >[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
 
-Étapes de haut niveau pour la vidéo ci-dessous :
+Étapes de haut niveau pour la vidéo ci-dessus :
 
 1. Téléchargez l’exemple de module de contenu **[WKND-PagesTemplates-Content-Assets.zip](assets/pages-templates/WKND-PagesTemplates-Content-Assets-1.1.zip)**.
 1. Téléchargez et installez le module de contenu à l’aide de Package Manager à l’adresse [http://localhost:4502/crx/packmgr/index.jsp](http://localhost:4502/crx/packmgr/index.jsp)
@@ -207,7 +207,7 @@ Créez ensuite une page à l’aide du modèle Page d’article . Créez le cont
 
 >[!VIDEO](https://video.tv.adobe.com/v/330993/?quality=12&learn=on)
 
-Étapes de haut niveau pour la vidéo ci-dessous :
+Étapes de haut niveau pour la vidéo ci-dessus :
 
 1. Accédez à la console Sites à l’adresse [http://localhost:4502/sites.html/content/wknd/us/en/magazine](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
 1. Créez une page sous **WKND** > **US** > **EN** > **Magazine**.
@@ -257,7 +257,7 @@ Utilisez l’outil CRXDE-Lite sur une instance d’AEM locale pour afficher la s
 
    Notez qu’il n’existe que 2 scripts HTL, `customfooterlibs.html` et `customheaderlibs.html` sous le composant de page. *Alors, comment ce composant effectue-t-il le rendu de la page ?*
 
-   Le `sling:resourceSuperType` pointe vers `core/wcm/components/page/v2/page`. Cette propriété permet au composant de page de WKND d’hériter **all** de la fonctionnalité du composant de page des composants principaux. Voici le premier exemple d’une chose appelée [Modèle de composant proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Vous trouverez plus d’informations[ ici.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
+   Le `sling:resourceSuperType` pointe vers `core/wcm/components/page/v2/page`. Cette propriété permet au composant de page de WKND d’hériter **all** de la fonctionnalité du composant de page des composants principaux. Voici le premier exemple d’une chose appelée [Modèle de composant proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Vous trouverez plus d’informations[ ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
 
 1. Inspect d’un autre composant dans les composants WKND : `Breadcrumb` composant situé à l’emplacement : `/apps/wknd/components/breadcrumb`. Notez que la même `sling:resourceSuperType` est disponible, mais cette fois, il pointe vers `core/wcm/components/breadcrumb/v2/breadcrumb`. Voici un autre exemple d’utilisation du modèle de composant proxy pour inclure un composant principal. En fait, tous les composants de la base de code WKND sont des proxies des composants principaux d’AEM (à l’exception de notre célèbre composant HelloWorld). Il est recommandé d’essayer de réutiliser autant de fonctionnalités que possible des composants principaux. *before* écriture de code personnalisé.
 

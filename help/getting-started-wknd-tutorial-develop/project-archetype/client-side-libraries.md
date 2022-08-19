@@ -11,7 +11,7 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
 workflow-type: tm+mt
 source-wordcount: '2878'
 ht-degree: 4%
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 Découvrez comment les bibliothèques côté client ou clientlibs sont utilisées pour déployer et gérer CSS et JavaScript pour une implémentation de sites Adobe Experience Manager (AEM). Ce tutoriel explique également comment [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr) module, un découplé [webpack](https://webpack.js.org/) , peut être intégré au processus de génération de bout en bout.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Examinez les outils et les instructions requis pour configurer une [environnement de développement local](overview.md#local-dev-environment).
 
@@ -333,7 +333,7 @@ Afficher le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd)
 
 ### Webpack DevServer - Markup statique {#webpack-dev-static}
 
-Dans les deux exercices précédents, nous avons pu mettre à jour plusieurs fichiers Sass dans la variable **ui.frontend** et, par le biais d’un processus de génération, voir ces modifications répercutées dans AEM. Ensuite, nous allons examiner des techniques qui tirent parti d’une [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) pour développer rapidement nos styles front-end par rapport à **static** HTML.
+Dans les deux exercices précédents, nous avons pu mettre à jour plusieurs fichiers Sass dans la variable **ui.frontend** et, par le biais d’un processus de génération, voir ces modifications répercutées dans AEM. Ensuite, nous allons examiner une technique qui tire parti d’une [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) pour développer rapidement nos styles front-end par rapport à **static** HTML.
 
 Cette technique est pratique si la plupart des styles et du code frontal sont effectués par un développeur front-end dédié qui n’a peut-être pas un accès facile à un environnement AEM. Cette technique permet également au FED d’apporter des modifications directement au HTML, qui peut ensuite être transféré à un développeur d’AEM pour implémenter en tant que composants.
 
@@ -389,9 +389,9 @@ Cette technique est pratique si la plupart des styles et du code frontal sont ef
 
 [**aemfed**](https://aemfed.io/) est un outil de ligne de commande Open Source qui peut être utilisé pour accélérer le développement frontal. Il est alimenté par  [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://www.npmjs.com/package/browser-sync) et [Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html).
 
-À un niveau élevé **aemfed** est conçu pour écouter les modifications apportées aux fichiers dans la variable **ui.apps** et les synchronise automatiquement directement sur une instance AEM en cours d’exécution. En fonction des modifications, un navigateur local s’actualise automatiquement, accélérant ainsi le développement frontal. Il est également conçu pour fonctionner avec le traceur de journal Sling afin d’afficher automatiquement les erreurs côté serveur directement dans le terminal.
+À un niveau élevé **aemfed** est conçu pour écouter les modifications apportées aux fichiers dans la variable **ui.apps** et les synchroniser automatiquement directement avec une instance AEM en cours d’exécution. En fonction des modifications, un navigateur local s’actualise automatiquement, accélérant ainsi le développement frontal. Il est également conçu pour fonctionner avec le traceur de journal Sling afin d’afficher automatiquement les erreurs côté serveur directement dans le terminal.
 
-Si vous effectuez beaucoup de travail au sein de la **ui.apps** module, modification des scripts HTL et création de composants personnalisés, **aemfed** peut être un outil très puissant à utiliser. [Vous trouverez la documentation complète ici .](https://github.com/abmaonline/aemfed).
+Si vous effectuez beaucoup de travail au sein de la **ui.apps** module, modification des scripts HTL et création de composants personnalisés, **aemfed** peut être un outil très puissant à utiliser. [La documentation complète se trouve ici](https://github.com/abmaonline/aemfed).
 
 ### Débogage des bibliothèques côté client {#debugging-clientlibs}
 
