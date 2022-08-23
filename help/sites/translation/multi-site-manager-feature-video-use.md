@@ -1,30 +1,30 @@
 ---
 title: Utilisation de Multi Site Manager avec AEM Sites
-seo-title: Utilisation des interfaces utilisateur tactiles de Multi Site Manager avec Adobe Experience Manager
+seo-title: Using Multi Site Manager Touch UI Interfaces with Adobe Experience Manager
 description: L’aperçu de la Live Copy et le gestionnaire de configuration du plan directeur sont des interfaces tactiles activées pour l’utilisation avec Multi Site Manager.
-seo-description: Présentation de la Live Copy et Gestionnaire de configuration du plan directeur sont des interfaces tactiles activées pour l’utilisation de Multi Site Manager avec Adobe Experience Manager.
+seo-description: Live Copy Overview and Blueprint Configuration Manager are Touch UI Enabled interfaces for working with Multi Site Manager with Adobe Experience Manager.
 feature: Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 uuid: 76f295d0-78dd-429c-9129-9182b3a706a6
 discoiquuid: a0dc581e-300f-45ef-916a-1cbac0429899
-topic: Localisation
+topic: Localization
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 13%
+source-wordcount: '138'
+ht-degree: 14%
 
 ---
 
-
 # Utilisation de Multi Site Manager {#using-multi-site-manager-with-aem-sites}
 
-[!UICONTROL Live Copy ] Overviewer et  [!UICONTROL Blueprint Configuration ] Manager sont des interfaces d’auteur AEM pour travailler avec la fonctionnalité Multi Site Manager d’Adobe Experience Manager Sites.
+[!UICONTROL Présentation de la Live Copy] et [!UICONTROL Gestionnaire de configuration du plan directeur] sont des interfaces d’auteur AEM pour l’utilisation de la fonctionnalité Multi Site Manager d’Adobe Experience Manager Sites.
 
 ## Aperçu de la live copy {#live-copy-overview}
 

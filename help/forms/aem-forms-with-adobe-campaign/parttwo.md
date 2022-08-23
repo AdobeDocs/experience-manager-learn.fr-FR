@@ -1,18 +1,18 @@
 ---
 title: Création d’un profil Campaign sur l’envoi de formulaire adaptatif
 description: Cet article explique les étapes nécessaires à la création d’un profil dans Adobe Campaign Standard lors d’un envoi de formulaire adaptatif. Ce processus utilise un mécanisme d’envoi personnalisé pour gérer l’envoi du formulaire adaptatif.
-feature: Forms adaptatif, modèle de données de formulaire
-version: 6.3,6.4,6.5
-topic: Développement
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: deef09d9-82ec-4e61-b7ee-e72d1cd4e9e0
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
-
 
 # Création d’un profil Campaign sur l’envoi de formulaire adaptatif {#creating-campaign-profile-on-adaptive-form-submission}
 
@@ -243,7 +243,7 @@ return null;
 
 Créez un gestionnaire d’envoi personnalisé pour gérer l’envoi du formulaire adaptatif. Dans ce gestionnaire d’envoi personnalisé, nous allons appeler la méthode createProfile de CampaignService. La méthode createProfile accepte un objet JSONObject qui représente le profil qui doit être créé.
 
-Pour en savoir plus sur le gestionnaire d’envoi personnalisé dans AEM Forms, suivez ce [lien](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
+Pour en savoir plus sur le gestionnaire d’envoi personnalisé dans AEM Forms, suivez cette procédure [link](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
 
 Voici le code de l’envoi personnalisé.
 
@@ -264,7 +264,7 @@ Une fois que nous avons défini le service et l’action d’envoi personnalisé
 
 
 * [Assurez-vous d’avoir suivi les étapes décrites ici](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importez le formulaire adaptatif et le gestionnaire d’envoi personnalisé à l’aide du gestionnaire de modules](assets/create-acs-profile-on-af-submission.zip). Ce module contient le formulaire adaptatif configuré pour envoyer à une action d’envoi personnalisée.
-* Aperçu du [formulaire](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
+* [Importation d’un formulaire adaptatif et d’un gestionnaire d’envoi personnalisé à l’aide du gestionnaire de package](assets/create-acs-profile-on-af-submission.zip).Ce package contient le formulaire adaptatif configuré pour l’envoi à une action d’envoi personnalisée.
+* Aperçu de la [formulaire](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Renseignez tous les champs et envoyez
 * Un nouveau profil sera créé dans votre instance ACS.

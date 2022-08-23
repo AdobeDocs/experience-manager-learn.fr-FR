@@ -1,18 +1,18 @@
 ---
 title: Créer un profil Campaign à l’aide du modèle de données de formulaire
 description: Procédure de création d’un profil Adobe Campaign Standard à l’aide du modèle de données de formulaire AEM Forms
-feature: Formulaires adaptatifs
-version: 6.3,6.4,6.5
-topic: Développement
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 59d5ba6d-91c1-48c7-8c87-8e0caf4f2d7e
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 4%
+source-wordcount: '426'
+ht-degree: 3%
 
 ---
-
 
 # Créer un profil Campaign à l’aide du modèle de données de formulaire {#create-campaign-profile-using-form-data-model}
 
@@ -112,8 +112,7 @@ Un exemple de fichier swagger vous est fourni dans le cadre de la ressource lié
 Pour tester la solution, procédez comme suit :
 * [Assurez-vous d’avoir suivi les étapes décrites ici](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Téléchargez et décompressez ce fichier pour obtenir le fichier swagger.](assets/create-acs-profile-swagger-file.zip)
-* Création d’une source de données à l’aide du fichier swagger
-Créez un modèle de données de formulaire et basez-le sur la source de données créée à l’étape précédente.
+* Créer une source de données à l’aide du fichier swagger Créez un modèle de données de formulaire et basez-le sur la source de données créée à l’étape précédente.
 * Créez un formulaire adaptatif basé sur le modèle de données de formulaire créé à l’étape précédente.
 * Faites glisser les éléments suivants de l’onglet Sources de données vers le formulaire adaptatif
 

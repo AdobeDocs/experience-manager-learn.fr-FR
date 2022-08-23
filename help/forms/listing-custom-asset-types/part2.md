@@ -1,30 +1,30 @@
 ---
 title: Liste des types de ressources personnalisés dans AEM Forms
-seo-title: Liste des types de ressources personnalisés dans AEM Forms
+seo-title: Listing Custom Asset Types in AEM Forms
 description: Partie 2 de la liste des types de ressources personnalisés dans AEM Forms
-seo-description: Partie 2 de la liste des types de ressources personnalisés dans AEM Forms
+seo-description: Part 2 of Listing Custom Asset Types in AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 discoiquuid: 4b940465-0bd7-45a2-8d01-e4d640c9aedf
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 1%
+source-wordcount: '595'
+ht-degree: 0%
 
 ---
 
-
 # Liste des types de ressources personnalisés dans AEM Forms {#listing-custom-asset-types-in-aem-forms}
 
-## Création d’un modèle personnalisé {#creating-custom-template}
+## Créer un modèle personnalisé {#creating-custom-template}
 
 
 Pour les besoins de cet article, nous allons créer un modèle personnalisé pour afficher les types de ressources personnalisés et les types de ressources prêts à l’emploi sur la même page. Pour créer un modèle personnalisé, suivez les instructions suivantes :
@@ -36,7 +36,7 @@ Pour les besoins de cet article, nous allons créer un modèle personnalisé pou
 
 ![appsfolder](assets/appsfolder_.png)
 
-Le code suivant répertorie les différents types de ressources à l’aide du composant de recherche et de liste. Nous créons des éléments HTML distincts pour chaque type de ressource, comme illustré par la balise data-type = &quot;videos&quot;. Pour le type de ressource &quot;vidéos&quot;, nous utilisons l’élément &lt;video> pour lire la vidéo en ligne. Pour le type de ressource &quot;documents de mots&quot;, nous utilisons un marquage HTML différent.
+Le code suivant répertorie les différents types de ressources à l’aide du composant de recherche et de liste. Nous créons des éléments HTML distincts pour chaque type de ressource, comme illustré par la balise data-type = &quot;videos&quot;. Pour le type de ressource &quot;vidéos&quot;, nous utilisons la variable &lt;video> pour lire la vidéo intégrée. Pour le type de ressource &quot;documents de mots&quot;, nous utilisons un marquage HTML différent.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -80,7 +80,7 @@ Le code suivant répertorie les différents types de ressources à l’aide du c
 
 ## Configuration Du Composant Search And Lister {#configure-search-and-lister-component}
 
-Une fois le modèle personnalisé défini, nous devons l’associer au composant &quot;Search and Lister&quot;. Pointez votre navigateur [vers cette URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+Une fois le modèle personnalisé défini, nous devons l’associer au composant &quot;Search and Lister&quot;. Pointez votre navigateur [à cette URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
 Passez en mode Conception et configurez le système de paragraphes pour inclure le composant Search And Lister dans le groupe de composants autorisés. Le composant Search and Lister fait partie du groupe Document Services.
 
@@ -110,11 +110,11 @@ La capture d’écran suivante montre les types de ressources configurés pour �
 
 ![assettypes](assets/assettypes.png)
 
-Maintenant que vous avez configuré votre composant Search and Lister Portal, il est temps de voir la liste en action. Pointez votre navigateur [vers cette URL ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). Les résultats doivent ressembler à l’image illustrée ci-dessous.
+Maintenant que vous avez configuré votre composant Search and Lister Portal, il est temps de voir la liste en action. Pointez votre navigateur [à cette URL ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). Les résultats doivent ressembler à l’image illustrée ci-dessous.
 
 >[!NOTE]
 >
->Si votre portail répertorie les types de ressources personnalisés sur un serveur de publication, veillez à accorder l’autorisation &quot;lecture&quot; à l’utilisateur &quot;fd-service&quot; sur le noeud **/apps/fd/fp/extensions/querybuilder**
+>Si votre portail répertorie les types de ressources personnalisés sur un serveur de publication, veillez à accorder l’autorisation &quot;lecture&quot; à l’utilisateur &quot;fd-service&quot; sur le noeud . **/apps/fd/fp/extensions/querybuilder**
 
-![](assets/assettypeslistings.png)
-[assettypesVeuillez télécharger et installer ce package à l’aide du gestionnaire de packages.](assets/customassettypekt1.zip) Il contient des exemples de documents mp4 et Word et de fichiers xdp qui seront utilisés comme types de ressources à répertorier à l’aide du composant search and lister.
+![assettypes](assets/assettypeslistings.png)
+[Téléchargez et installez ce package à l’aide du gestionnaire de packages.](assets/customassettypekt1.zip) Il contient des exemples de documents mp4 et Word et de fichiers xdp qui seront utilisés comme types de ressources à répertorier à l’aide du composant search and lister.

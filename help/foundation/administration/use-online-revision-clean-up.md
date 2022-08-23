@@ -1,7 +1,7 @@
 ---
 title: Utilisation du nettoyage des révisions en ligne
-description: 'Présentation brève du nettoyage des révisions en ligne. Le nettoyage des révisions en ligne atténue la nécessité d’un nettoyage fréquent des révisions hors ligne. '
-version: 6.3, 6.4, 6.5
+description: Présentation brève du nettoyage des révisions en ligne. Le nettoyage des révisions en ligne atténue la nécessité d’un nettoyage fréquent des révisions hors ligne.
+version: 6.4, 6.5
 topics: operations, authoring, performance
 activity: use
 audience: administrator, architect, implementer
@@ -9,13 +9,13 @@ doc-type: technical video
 topic: Administration
 role: Admin
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 62a36ab1-3245-43ac-b943-e28ff95661bf
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 2%
+source-wordcount: '74'
+ht-degree: 0%
 
 ---
-
 
 # Utilisation du nettoyage des révisions en ligne
 
@@ -25,7 +25,6 @@ Cette section présente brièvement le nettoyage des révisions en ligne, qui at
 
 ## Documents annexes
 
-* [AEM  [!DNL JMX MBean - SegmentRevisionGarbageCollection]](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+revision+garbage+collection%2Ctype%3DSegmentRevisionGarbageCollection)
+* [AEM [!DNL JMX MBean - SegmentRevisionGarbageCollection]](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+revision+garbage+collection%2Ctype%3DSegmentRevisionGarbageCollection)
 
-* [AEM [!DNL OSGi Configuration]  - Service de magasin de noeuds de segments  [!UICONTROL Oak]](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService)
-
+* [AEM [!DNL OSGi Configuration] - [!UICONTROL Service de magasin de noeuds de segments Oak]](http://localhost:4502/system/console/configMgr/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService)

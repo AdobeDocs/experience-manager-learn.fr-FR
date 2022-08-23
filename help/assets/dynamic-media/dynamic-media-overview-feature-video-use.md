@@ -1,23 +1,23 @@
 ---
 title: Présentation de Dynamic Media avec AEM Assets
-description: 'Cette série de vidéos présente un aperçu de la gestion et de l’accès du contenu multimédia à l’aide d’Adobe Experience Manager Dynamic Media en tant que service de diffusion de contenu. Dynamic Media vous permet de gérer et de publier des expériences numériques dynamiques : une fonctionnalité propre aux ressources du Experience Manager. Notre structure et notre suite de composants permettent aux marketeurs de personnaliser et de diffuser des expériences multimédias interactives sur tous les appareils.'
+description: 'Cette série de vidéos présente un aperçu de la gestion et de l’accès du contenu multimédia à l’aide d’Adobe Experience Manager Dynamic Media en tant que service de diffusion de contenu. Dynamic Media vous permet de gérer et de publier des expériences numériques dynamiques : une fonctionnalité propre à Experience Manager Assets. Notre structure et notre suite de composants permettent aux marketeurs de personnaliser et de diffuser des expériences multimédias interactives sur tous les appareils.'
 sub-product: dynamic-media
-feature: Recadrage intelligent, Profils vidéo, Profils d’image, Paramètres prédéfinis de la visionneuse, Vidéo 360 VR, Visionneuses d’images, Visionneuses à 360°
-version: 6.3, 6.4, 6.5
-topic: Gestion de contenu
+feature: Smart Crop, Video Profiles, Image Profiles, Viewer Presets, 360 VR Video, Image Sets, Spin Sets
+version: 6.4, 6.5
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 1%
+source-wordcount: '871'
+ht-degree: 0%
 
 ---
 
-
 # Utilisation de Dynamic Media avec AEM Assets {#understanding-aem-dynamic-media}
 
-Cette série de vidéos en plusieurs parties présente un aperçu de la gestion et de l’accès au contenu multimédia à l’aide d’Adobe Experience Manager Dynamic Media en tant que service de diffusion de contenu. Dynamic Media vous permet de gérer et de publier des expériences numériques dynamiques : une fonctionnalité propre aux ressources du Experience Manager. Notre structure et notre suite de composants permettent aux marketeurs de personnaliser et de diffuser des expériences multimédias interactives sur tous les appareils.
+Cette série de vidéos en plusieurs parties présente un aperçu de la gestion et de l’accès au contenu multimédia à l’aide d’Adobe Experience Manager Dynamic Media en tant que service de diffusion de contenu. Dynamic Media vous permet de gérer et de publier des expériences numériques dynamiques : une fonctionnalité propre à Experience Manager Assets. Notre structure et notre suite de composants permettent aux marketeurs de personnaliser et de diffuser des expériences multimédias interactives sur tous les appareils.
 
 ## Présentation de Dynamic Media
 
@@ -87,7 +87,7 @@ Cette vidéo décrit comment, au-delà du redimensionnement des images, tirer pa
 * Recadrage d’un chemin d’image
 * Création d’un modèle de texte à partir d’un fichier Photoshop
 
-## Contrôle de la taille des fichiers JPEG par Dynamic Media en kilo-octets
+## Dynamic Media Contrôle de la taille des fichiers du JPEG en kilo-octets
 
 >[!VIDEO](https://video.tv.adobe.com/v/27404/?quality=9&learn=on)
 
@@ -96,7 +96,7 @@ Cette vidéo décrit comment, au-delà du redimensionnement des images, tirer pa
 >
 >La QUALITÉ de l’image est mesurée en pourcentages de compression inverse, où la qualité 100 % est la moins compressée, ce qui entraîne des images de haute qualité mais des fichiers de taille relativement importante. La compression Jpeg est un schéma de compression avec perte dans lequel les paramètres de compression déterminent la qualité d’image et la taille de fichier.
 
-Équilibrer la qualité de l’image jpeg à la taille de fichier obtenue (en kilo-octets) afin d’améliorer la vitesse de chargement des pages, à l’aide de 2 commandes pour ajuster les paramètres de compression jpeg. QLT définit la qualité de l’image en réglant les paramètres de qualité de compression JPEG. La commande Taille JPEG permet de désigner la taille de fichier à réaliser à l’aide de la compression.
+Équilibrer la qualité de l’image jpeg à la taille de fichier obtenue (en kilo-octets) afin d’améliorer la vitesse de chargement des pages, à l’aide de 2 commandes pour ajuster les paramètres de compression jpeg. QLT définit la qualité de l’image en réglant les paramètres de qualité de compression JPEG. La commande Taille du JPEG vous permet de désigner la taille de fichier à réaliser à l’aide de la compression.
 
 ## Ajout d’un sous-titrage codé CC à la vidéo Dynamic Media
 

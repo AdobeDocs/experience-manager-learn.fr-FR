@@ -4,19 +4,19 @@ description: La console Composants fournit aux développeurs et à l’administr
 topics: components
 audience: all
 doc-type: feature video
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 activity: use
-feature: Composants principaux
-topic: Gestion de contenu
+feature: Core Components
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 6f33f121-5564-4c46-ab56-7ea382a0ab5a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 3%
+source-wordcount: '174'
+ht-degree: 1%
 
 ---
-
 
 # Utilisation de la console Composants {#using-the-components-console-with-aem-sites}
 
@@ -27,9 +27,9 @@ La console Composants fournit aux développeurs et à l’administrateur un empl
 La console de composants fournit les fonctionnalités suivantes :
 
 * Aperçu : liste de tous les composants installés disponibles sur l’instance AEM actuelle
-* [!UICONTROL Propriétés] : affiche des métadonnées telles que le titre, le groupe et la description d’un composant ;
-* [!UICONTROL Stratégies] : affiche les stratégies existantes pour un composant donné et le modèle associé ;
-* [!UICONTROL Utilisation] en direct : affiche la liste des pages dans lesquelles le composant est inclus ;
+* [!UICONTROL Propriétés]: affiche des métadonnées telles que le titre, le groupe et la description d’un composant ;
+* [!UICONTROL Stratégies]: affiche les stratégies existantes pour un composant donné et le modèle associé ;
+* [!UICONTROL Utilisation en direct]: affiche la liste des pages dans lesquelles le composant est inclus ;
 
 La console des composants se trouve sous **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Composants]**.
 URL de la console de composants (auteur AEM local) : [http://localhost:4502/libs/wcm/core/content/sites/components.html](http://localhost:4502/libs/wcm/core/content/sites/components.html)

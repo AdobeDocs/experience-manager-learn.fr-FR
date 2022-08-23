@@ -1,26 +1,26 @@
 ---
 title: Envoi d’un formulaire adaptatif au serveur externe
-seo-title: Envoi d’un formulaire adaptatif au serveur externe
+seo-title: Submitting Adaptive Form to External Server
 description: Envoi d’un formulaire adaptatif au point de terminaison REST s’exécutant sur un serveur externe
-seo-description: Envoi d’un formulaire adaptatif au point de terminaison REST s’exécutant sur un serveur externe
+seo-description: Submitting Adaptive Form to REST endpoint running on external server
 uuid: 1a46e206-6188-4096-816a-d59e9fb43263
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 discoiquuid: 9e936885-4e10-4c05-b572-b8da56fcac73
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 5363c3f7-9006-4430-b647-f3283a366a64
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '346'
 ht-degree: 12%
 
 ---
-
 
 # Envoi d’un formulaire adaptatif au serveur externe {#submitting-adaptive-form-to-external-server}
 
@@ -28,7 +28,7 @@ Utilisez l’action Envoyer vers le point de fin REST pour publier les données 
 
 En règle générale, les clients souhaitent envoyer les données de formulaire à un serveur externe pour un traitement ultérieur.
 
-Pour publier des données sur un serveur interne, indiquez le chemin de la ressource. Les données sont transmises selon le chemin de la ressource. Par exemple, &lt;/content/restEndPoint> . Pour ces requêtes de publication, les informations d’authentification de la requête d’envoi sont utilisées.
+Pour publier des données sur un serveur interne, indiquez le chemin de la ressource. Les données sont transmises selon le chemin de la ressource. Par exemple : &lt;/content restendpoint=&quot;&quot;> . Pour ces requêtes de publication, les informations d’authentification de la requête d’envoi sont utilisées.
 
 Pour transmettre des données à un serveur externe, indiquez une URL. Le format d’URL est le suivant : <http://host:port/path_to_rest_end_point>. Assurez-vous que vous avez configuré le chemin d’accès pour gérer la demande du POST de manière anonyme.
 
@@ -54,14 +54,13 @@ String data = request.getParameter(paramName);System.out.println("The data  is "
 }
 ```
 
-![](assets/formsubmission.gif)
-formsubmissionPour tester ce contenu sur votre serveur, procédez comme suit :
+![formenvoi](assets/formsubmission.gif)
+Pour le tester sur votre serveur, procédez comme suit :
 
 1. Installez Tomcat si vous ne l&#39;avez pas déjà. [Les instructions d’installation de tomcat sont disponibles ici](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html)
-1. Téléchargez le [fichier zip](assets/aemformsenablement.zip) associé à cet article. Décompressez le fichier pour obtenir le fichier war.
+1. Téléchargez la [fichier zip](assets/aemformsenablement.zip) associée à cet article. Décompressez le fichier pour obtenir le fichier war.
 1. Déployez le fichier war dans votre serveur tomcat.
 1. Créez un formulaire adaptatif simple avec le composant de pièce jointe et configurez son action d’envoi comme illustré dans la capture d’écran ci-dessus. L’URL du POST est <http://localhost:8080/AemFormsEnablement/HandleFormSubmission>. Si votre AEM et tomcat ne sont pas exécutés sur localhost, modifiez l’URL en conséquence.
-1. Pour permettre l’envoi de données de formulaire en plusieurs parties à Tomcat, ajoutez l’attribut suivant à l’élément contextuel de &lt;tomcatInstallDir>\conf\context.xml et redémarrez votre serveur Tomcat.
-1. **&lt;context allowCasualMultipartParsing=&quot;true&quot;>**
+1. Pour permettre l’envoi de données de formulaire en plusieurs parties à Tomcat, ajoutez l’attribut suivant à l’élément contextuel de la variable &lt;tomcatinstalldir>\conf\context.xml et redémarrez votre serveur Tomcat.
+1. **&lt;Context allowCasualMultipartParsing=&quot;true&quot;>**
 1. Prévisualisez votre formulaire adaptatif, ajoutez une pièce jointe et envoyez-la. Vérifiez les messages dans la fenêtre de la console tomcat.
-

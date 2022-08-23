@@ -1,18 +1,18 @@
 ---
 title: Utilisation de LDAP avec le workflow AEM Forms
 description: Affectation d’une tâche de workflow AEM Forms au responsable de l’émetteur
-feature: Forms adaptatif, workflow
-topic: Intégrations
+feature: Adaptive Forms, Workflow
+topic: Integrations
 role: Developer
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 2e9754ff-49fe-4260-b911-796bcc4fd266
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '528'
 ht-degree: 1%
 
 ---
-
 
 # Utilisation de LDAP avec le workflow AEM Forms
 
@@ -20,7 +20,7 @@ Affectation d’une tâche de workflow AEM Forms au responsable de l’émetteur
 
 Lors de l’utilisation d’un formulaire adaptatif dans AEM processus, vous souhaitez affecter de manière dynamique une tâche au gestionnaire de l’auteur du formulaire. Pour réaliser ce cas d’utilisation, nous devrons configurer AEM avec Ldap.
 
-Les étapes nécessaires à la configuration d&#39;AEM avec LDAP sont expliquées dans [détail ici.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
+Les étapes de configuration d’AEM avec LDAP sont expliquées dans la section [Détails ici.](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ldap-config.html)
 
 Pour les besoins de cet article, je joins les fichiers de configuration utilisés pour configurer AEM avec Adobe Ldap. Ces fichiers sont inclus dans le package qui peut être importé à l’aide du gestionnaire de packages.
 
@@ -60,16 +60,16 @@ Nous prenons contact avec la personne qui a lancé le workflow. Nous obtenons en
 
 Selon la manière dont la propriété manager est stockée dans votre LDAP, vous devrez peut-être effectuer une manipulation de chaîne pour obtenir l’identifiant du gestionnaire.
 
-Lisez cet article pour implémenter votre propre [ ParticipantChooser .](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
+Veuillez lire cet article pour mettre en oeuvre votre propre [  ParticipantChooser .](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
 
 Pour le tester sur votre système (pour les employés d’Adobe, vous pouvez utiliser cet exemple prêt à l’emploi)
 
-* [Téléchargez et déployez le lot setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Il s’agit du lot OSGI personnalisé pour la définition de la propriété du gestionnaire.
+* [Télécharger et déployer le lot setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Il s’agit du lot OSGI personnalisé pour la définition de la propriété du gestionnaire.
 * [Téléchargement et installation de DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [Importez les actifs associés à cet article dans AEM à l’aide du gestionnaire de modules](assets/aem-forms-ldap.zip). Les fichiers de configuration LDAP, le workflow et un formulaire adaptatif sont inclus dans ce module.
+* [Importez les actifs associés à cet article dans AEM à l’aide du gestionnaire de packages.](assets/aem-forms-ldap.zip)Les fichiers de configuration LDAP, le workflow et un formulaire adaptatif sont inclus dans ce module.
 * Configurez AEM avec votre LDAP à l’aide des informations d’identification LDAP appropriées.
 * Connectez-vous à AEM à l’aide de vos informations d’identification LDAP.
-* Ouvrez [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
+* Ouvrez le [timeoffrequestform](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Remplissez le formulaire et envoyez-le.
 * Le responsable de l’émetteur doit obtenir le formulaire à réviser.
 

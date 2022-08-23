@@ -1,20 +1,20 @@
 ---
 title: Application de bureau AEM
 description: Utilisez AEM Desktop App pour simplifier l’accès à toute ressource gérée dans AEM sur le bureau, quel que soit le format d’application ou de fichier.
-version: 6.5, 6.4, 6.3
-topic: Gestion de contenu
-feature: Application de bureau
+version: 6.5, 6.4
+topic: Content Management
+feature: Desktop App
 role: User
 level: Beginner
 kt: 2551
 thumbnail: 28868.jpeg
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 6765758f-0719-4ed9-83be-8ed192a75b41
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 9%
+source-wordcount: '134'
+ht-degree: 11%
 
 ---
-
 
 # Utilisation de l’application de bureau AEM
 
@@ -29,8 +29,8 @@ Utilisez AEM Desktop App pour simplifier l’accès à toute ressource gérée d
 
 >[!NOTE]
 >
-> [Adobe Asset ](./adobe-asset-link.md) Linkis Adobe dédiée à l’utilisation des ressources AEM dans les applications Adobe Creative Cloud : Photoshop, Illustrator, InDesign. Lorsque vous utilisez AEM Assets dans ces applications, Adobe Asset Link est préférable à AEM Desktop App.
+> [Adobe d’un lien de ressource](./adobe-asset-link.md) est la solution dédiée à l’utilisation d’AEM dans les applications Adobe Creative Cloud : Photoshop, Illustrator, InDesign. Lorsque vous utilisez AEM Assets dans ces applications, Adobe Asset Link est préférable à AEM Desktop App.
 
 ## Ressources supplémentaires
 
-+ [Téléchargez la dernière application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)
++ [Téléchargez la dernière application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=fr)

@@ -1,7 +1,7 @@
 ---
 title: Groupes d’utilisateurs fermés dans AEM Assets
 description: Les groupes d’utilisateurs fermés (CUG) sont une fonctionnalité utilisée pour restreindre l’accès au contenu à un groupe d’utilisateurs sélectionnés sur un site publié. Cette vidéo montre comment les groupes d’utilisateurs fermés peuvent être utilisés avec Adobe Experience Manager Assets pour restreindre l’accès à un dossier spécifique de ressources.
-version: 6.3, 6.4, 6.5, Cloud Service
+version: 6.4, 6.5, Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
@@ -9,7 +9,7 @@ level: Intermediate
 kt: 649
 thumbnail: 22155.jpg
 exl-id: a2bf8a82-15ee-478c-b7c3-de8a991dfeb8
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 1%
@@ -36,9 +36,9 @@ Les groupes d’utilisateurs fermés (CUG) et les listes de contrôle d’accès
 
 |  | ACL | CUG |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| Utilisation prévue | Configurez et appliquez des autorisations pour le contenu sur l’instance d’AEM **actuelle**. | Configurez les stratégies de CUG pour le contenu de l’instance **auteur** d’AEM. Appliquez des stratégies de CUG pour le contenu sur AEM **instance(s) de publication**. |
+| Utilisation prévue | Configurer et appliquer des autorisations pour le contenu sur le **current** AEM instance. | Configuration des stratégies de CUG pour le contenu sur AEM **author** instance. Application de stratégies de CUG pour le contenu sur AEM **publier** instances. |
 | Niveaux d’autorisation | Définit les autorisations accordées/refusées pour les utilisateurs/groupes à tous les niveaux : Lire, modifier, créer, supprimer, lire la liste de contrôle d’accès, modifier la liste de contrôle d’accès, répliquer. | Accorde l’accès en lecture à un ensemble d’utilisateurs/de groupes. Refusent l’accès en lecture à *tous les autres* utilisateurs/groupes. |
-| Publication | Les listes de contrôle d’accès ne sont *pas* publiées avec du contenu. | Les stratégies de CUG *sont* publiées avec du contenu. |
+| Publication | Les listes ACL sont *not* publié avec du contenu. | Stratégies de CUG *are* publié avec du contenu. |
 
 ## Liens pris en charge {#supporting-links}
 

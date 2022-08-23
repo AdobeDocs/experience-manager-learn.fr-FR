@@ -1,18 +1,18 @@
 ---
 title: Prise En Main D’Adaptive Forms
-description: 'Ce tutoriel vous guide tout au long des étapes nécessaires à la création d’un formulaire adaptatif à plusieurs onglets. Vous apprendrez à utiliser les tableaux, la mise en page en accordéon et l’éditeur de règles pour créer des règles de fonctionnement. '
-feature: Formulaires adaptatifs
-version: 6.3,6.4,6.5
-topic: Développement
+description: Ce tutoriel vous guide tout au long des étapes nécessaires à la création d’un formulaire adaptatif à plusieurs onglets. Vous apprendrez à utiliser les tableaux, la mise en page en accordéon et l’éditeur de règles pour créer des règles de fonctionnement.
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 8c90fe1c-0c83-4287-9766-08d806b8815a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 39%
+source-wordcount: '207'
+ht-degree: 38%
 
 ---
-
 
 # Prise En Main D’Adaptive Forms {#getting-started-with-adaptive-forms}
 
@@ -22,7 +22,7 @@ Les formulaires adaptatifs vous permettent de créer des formulaires attrayants,
 
 Ce tutoriel n’utilise aucun modèle de formulaire pour créer un formulaire adaptatif.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Vous aurez besoin des éléments suivants :
 
@@ -30,8 +30,6 @@ Vous aurez besoin des éléments suivants :
 
 * **On suppose que vous exécutez AEM Forms version 6.4 ou ultérieure sur localhost:4502.**
 
-* [Téléchargez client-libs-and-](assets/client-libs-and-logo.zip) log et  [getting-started-](assets/getting-started-fragment.zip) fragmentez sur votre disque dur.
+* [Téléchargez le client-libs-and-logo](assets/client-libs-and-logo.zip) et [getting-started-fragment](assets/getting-started-fragment.zip) sur votre disque dur.
 
 * Importez les fichiers zip dans AEM à l’aide de [gestionnaire de modules ](http://localhost:4502/crx/packmgr/index.jsp)
-
-

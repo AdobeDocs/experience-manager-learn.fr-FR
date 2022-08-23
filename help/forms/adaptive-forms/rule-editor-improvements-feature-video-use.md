@@ -1,26 +1,26 @@
 ---
 title: Améliorations de l’éditeur de règles dans AEM Forms
-seo-title: Améliorations de l’éditeur de règles dans AEM Forms
-description: 'L’éditeur de règles permet aux utilisateurs d’ajouter une logique à AEM Forms adaptatif. AEM version 6.3 améliore l’éditeur de règles de plusieurs manières afin qu’il soit plus facile et plus rapide pour les utilisateurs techniques et non techniques d’ajouter des informations. '
-seo-description: 'L’éditeur de règles permet aux utilisateurs d’ajouter une logique à AEM Forms adaptatif. AEM version 6.3 améliore l’éditeur de règles de plusieurs manières afin qu’il soit plus facile et plus rapide pour les utilisateurs techniques et non techniques d’ajouter des informations. '
+seo-title: Rule Editor Improvements in AEM Forms
+description: L’éditeur de règles permet aux utilisateurs d’ajouter une logique à AEM Forms adaptatif. AEM version 6.3 améliore l’éditeur de règles de plusieurs manières afin qu’il soit plus facile et plus rapide pour les utilisateurs techniques et non techniques d’ajouter des informations.
+seo-description: The rule editor enables users to add logic to AEM Adaptive Forms. AEM 6.3 improves the rule editor in several ways making it easier and faster for both technical and non-technical users alike to add intelligence.
 uuid: 35e8cc7c-04cf-43b4-bbc7-41bfd909cfba
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: authoring
 audience: author
 doc-type: technical video
 activity: use
-version: 6.3,6.4,6.5.
+version: 6.4,6.5.
 discoiquuid: 51750b3f-1fda-43ae-b3ed-1eede83b19d5
 topic: Administration
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 98a35bd9-a659-41f9-a772-267730c1f579
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '145'
 ht-degree: 5%
 
 ---
-
 
 # Améliorations de l’éditeur de règles dans AEM Forms {#rule-editor-improvements-in-aem-forms}
 

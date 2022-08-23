@@ -2,18 +2,18 @@
 title: Utilisation de vidéos Dynamic Media 360 et de miniatures vidéo personnalisées avec AEM Assets
 description: Les améliorations apportées à la visionneuse Dynamic Media dans AEM 6.5 incluent la prise en charge du rendu vidéo 360, des visionneuses de médias 360 (video360Social et video360VR) et la possibilité de sélectionner des miniatures vidéo personnalisées.
 sub-product: dynamic-media
-feature: Profils vidéo
-version: 6.3, 6.4, 6.5
-topic: Gestion de contenu
+feature: Video Profiles
+version: 6.4, 6.5
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 4ee0b68f-3897-4104-8615-9de8dbb8f327
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 5%
+source-wordcount: '394'
+ht-degree: 4%
 
 ---
-
 
 # Utilisation de vidéos Dynamic Media 360 et de miniatures vidéo personnalisées avec AEM Assets
 
@@ -54,7 +54,7 @@ La vidéo Dynamic Media prend désormais en charge la possibilité de sélection
       </td>
    </tr>
    <tr>
-      <td>Exemple d’utilisation </td>
+      <td>Cas d’utilisation</td>
       <td>
          <p>Pour les sites web et les appareils qui ne prennent pas en charge le gyroscope</p>
          <p> </p>

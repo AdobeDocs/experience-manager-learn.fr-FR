@@ -1,26 +1,26 @@
 ---
 title: Envoi À La Page De Remerciement
-seo-title: Envoi À La Page De Remerciement
+seo-title: Submitting To Thank You Page
 description: Affichage d’une page de remerciement sur l’envoi d’un formulaire adaptatif
-seo-description: Affichage d’une page de remerciement sur l’envoi d’un formulaire adaptatif
+seo-description: Display a thank you page on submitting Adaptive Form
 uuid: ec695b87-083a-47f6-92ac-c9a6dc2b85fb
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: developing
 audience: implementer
 doc-type: article
 activity: setup
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 discoiquuid: 58c6bf42-efe5-41a3-8023-d84f3675f689
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 85e1b450-39c0-4bb8-be5d-d7f50b102f3d
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '261'
 ht-degree: 6%
 
 ---
-
 
 # Envoi À La Page De Remerciement {#submitting-to-thank-you-page}
 
@@ -41,8 +41,7 @@ Vous pouvez également envoyer vers le point de terminaison externe via POST. Po
 
 Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-dessous :
 
-* Importez le fichier [assets associé à cet article dans AEM à l’aide du gestionnaire de modules](assets/submittingtorestendpoint.zip)
-* Pointez votre navigateur sur le [Formulaire de demande de désactivation du temps](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
+* Importez la variable [fichier de ressources associé à cet article dans AEM à l’aide du gestionnaire de modules](assets/submittingtorestendpoint.zip)
+* Pointez votre navigateur sur la [Formulaire de demande d’activation du délai](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
 * Renseignez le champ requis et envoyez le formulaire
 * Vous devriez obtenir la page de remerciement avec vos informations renseignées sur la page.
-

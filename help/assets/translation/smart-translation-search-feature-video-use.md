@@ -1,18 +1,18 @@
 ---
 title: Utilisation de la recherche de traduction dynamique avec AEM Assets
 description: La recherche de traduction intelligente permet la recherche et la découverte multilingue automatiquement dans AEM contenu, Ressources et Pages, prenant en charge plus de 50 langues et réduisant le besoin de traduction manuelle du contenu.
-version: 6.3, 6.4, 6.5
-feature: Rechercher
-topic: Gestion de contenu
+version: 6.4, 6.5
+feature: Search
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 4f35e3f7-ae29-4f93-bba9-48c60b800238
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 1%
+source-wordcount: '266'
+ht-degree: 0%
 
 ---
-
 
 # Utilisation de la recherche de traduction dynamique avec AEM Assets{#using-smart-translation-search-with-aem-assets}
 
@@ -24,7 +24,7 @@ AEM Recherche de traduction intelligente permet aux utilisateurs d’effectuer d
 
 La recherche de traduction intelligente est un parfait compliment à l’AEM des balises intelligentes qui sont appliquées aux ressources en anglais.
 
-Cette vidéo suppose que [AEM Recherche de traduction intelligente](smart-translation-search-technical-video-setup.md) a été configurée.
+Cette vidéo suppose [AEM Recherche de traduction intelligente](smart-translation-search-technical-video-setup.md) a été configuré.
 
 ## Fonctionnement de la recherche de traduction dynamique {#how-smart-translation-search-works}
 

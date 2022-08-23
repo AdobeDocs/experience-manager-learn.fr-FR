@@ -1,26 +1,26 @@
 ---
 title: Utilisation de la différence de page avec AEM Sites
-seo-title: Utilisation de la différence de page avec AEM Sites
+seo-title: Using Page Difference with AEM Sites
 description: Les fonctionnalités de différences de page d’AEM Sites affichent une vue rapide et codée en couleur de ce que le contenu a changé dans une page (version, Live Copy, lancements, copie de langue).
-seo-description: Les fonctionnalités de différences de page d’AEM Sites affichent une vue rapide et codée en couleur de ce que le contenu a changé dans une page (version, Live Copy, lancements, copie de langue).
+seo-description: AEM Sites' page difference capabilities show provides a quick, color-coded view of what content has changed in a page (version, live copy, launches, language copy).
 topics: authoring
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 uuid: e096a08b-528d-48c7-93fb-73b10c0a9259
 kt: 4633
 thumbnail: 32152.jpg
-topic: Gestion de contenu
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 2%
+source-wordcount: '118'
+ht-degree: 1%
 
 ---
-
 
 # Utilisation de la fonction Différence de page {#using-page-difference-with-aem-sites}
 
@@ -30,16 +30,16 @@ Les fonctionnalités de différences de page d’AEM Sites affichent une vue rap
 
 >[!VIDEO](https://video.tv.adobe.com/v/32152?quality=9&learn=on)
 
-**Modifications HTML**
+**Modifications du HTML**
 
-* **Vert** : Nouveau contenu
-* **Rouge** : Contenu supprimé
+* **Vert**: Nouveau contenu
+* **Rouge**: Contenu supprimé
 
 **Modifications des composants**
 
-* **Vert** : Nouveau composant
-* **Rouge** : Composant supprimé
-* **Bleu** : Composant modifié
+* **Vert**: Nouveau composant
+* **Rouge**: Composant supprimé
+* **Bleu**: Composant modifié
 
 ## Comparaison des pages de lancement {#comparing-launch-pages}
 

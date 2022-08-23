@@ -2,12 +2,12 @@
 title: Utilisation des API de géolocalisation dans Forms adaptatif
 description: Renseignez les champs d’adresse de votre formulaire à l’aide des API de géolocalisation.
 feature: Adaptive Forms
-version: 6.3,6.4,6.5
+version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 50db6155-ee83-4ddb-9e3a-56e8709222db
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 4%

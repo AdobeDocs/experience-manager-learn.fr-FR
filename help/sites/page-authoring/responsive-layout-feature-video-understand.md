@@ -1,26 +1,26 @@
 ---
 title: Présentation de la mise en page réactive avec AEM Sites
-seo-title: Présentation de la mise en page réactive avec AEM Sites
+seo-title: Understanding Responsive Layout with AEM Sites
 description: AEM permet de réaliser une mise en page réactive pour vos pages à l’aide du composant Conteneur de mises en page. Avec la mise en page réactive, les auteurs de contenu peuvent créer du contenu réactif pour différents appareils et prévisualiser l’expérience de l’utilisateur final dans AEM.
-seo-description: Couvre les étapes de création d’une mise en page réactive pour différents appareils
-feature: Éditeur de page, modèles modifiables
+seo-description: Covers the steps to author responsive layout for different devices
+feature: Page Editor, Editable Templates
 topics: authoring, responsive
 audience: author, marketer
 doc-type: feature video
 activity: use
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 kt: 4252
 thumbnail: 32012.jpg
-topic: Gestion de contenu
+topic: Content Management
 role: User
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: c125c0e0-1ed2-463e-bd34-767d009479eb
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 15%
+source-wordcount: '110'
+ht-degree: 17%
 
 ---
-
 
 # Présentation de la mise en page réactive {#understanding-responsive-layout-with-aem-sites}
 

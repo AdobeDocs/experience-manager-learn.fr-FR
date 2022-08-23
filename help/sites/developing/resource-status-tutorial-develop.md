@@ -5,8 +5,8 @@ topics: development
 audience: developer
 doc-type: tutorial
 activity: develop
-version: 6.3, 6.4, 6.5
-source-git-commit: 03db12de4d95ced8fabf36b8dc328581ec7a2749
+version: 6.4, 6.5
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 ---
 
 
-# Développement d’états de ressource {#developing-resource-statuses-in-aem-sites}
+# Développement des états de ressources {#developing-resource-statuses-in-aem-sites}
 
 Les API Adobe Experience Manager Resource Status sont un framework enfichable permettant d’exposer les messages d’état dans AEM différentes interfaces utilisateur web de l’éditeur.
 
@@ -41,21 +41,21 @@ Lors du développement d’états de ressources personnalisés, le travail de d�
 
    ![architecture de statut des ressources](assets/sample-editor-resource-status-application-architecture.png)
 
-3. La ressource d’état fournie dans le cadre des éditeurs Page, Fragment d’expérience et Modèle se voit attribuer un type via la propriété des ressources &quot;[!DNL statusType]&quot;.
+3. La ressource d’état fournie dans les éditeurs de page, de fragment d’expérience et de modèle se voit attribuer un type via les ressources &quot;[!DNL statusType]&quot;.
 
    * Éditeur de page : `editor`
    * Éditeur de fragment d’expérience : `editor`
    * Éditeur de modèles: `template-editor`
 
-4. La `statusType` de la ressource d’état correspond à la propriété `CompositeStatusType` OSGi configurée `name` enregistrée.
+4. La ressource d’état `statusType` est associé à enregistré `CompositeStatusType` Configuration OSGi `name` .
 
-   Pour toutes les correspondances, les types `CompositeStatusType's` sont collectés et utilisés pour collecter les implémentations `ResourceStatusProvider` de ce type, via `ResourceStatusProvider.getType()`.
+   Pour toutes les correspondances, la variable `CompositeStatusType's` Les types sont collectés et utilisés pour collecter les `ResourceStatusProvider` implémentations de ce type, via `ResourceStatusProvider.getType()`.
 
-5. La `ResourceStatusProvider` correspondante est transmise à la balise `resource` dans l’éditeur et détermine si `resource` a le statut à afficher. Si l’état est nécessaire, cette implémentation est chargée de créer 0 ou plusieurs `ResourceStatuses` à renvoyer, chacun représentant un état à afficher.
+5. La correspondance `ResourceStatusProvider` est transmis au `resource` dans l’éditeur, et détermine si la variable `resource` a le statut à afficher. Si l’état est nécessaire, cette implémentation est responsable de la création de 0 ou de plusieurs `ResourceStatuses` pour renvoyer la valeur , chacune représentant un état à afficher.
 
-   En règle générale, un `ResourceStatusProvider` renvoie 0 ou 1 `ResourceStatus` par `resource`.
+   En règle générale, une `ResourceStatusProvider` renvoie 0 ou 1 `ResourceStatus` per `resource`.
 
-6. ResourceStatus est une interface qui peut être implémentée par le client, ou le `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` utile peut être utilisé pour construire un état. Un état comprend :
+6. ResourceStatus est une interface qui peut être implémentée par le client ou qui peut fournir des informations utiles. `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` peut être utilisé pour construire un état. Un état comprend :
 
    * Titre
    * Message
@@ -65,7 +65,7 @@ Lors du développement d’états de ressources personnalisés, le travail de d�
    * Actions
    * Données
 
-7. Si vous le souhaitez, si `Actions` est fourni pour l’objet `ResourceStatus`, les bibliothèques clientes (clientlibs) prises en charge sont requises pour lier la fonctionnalité aux liens d’action dans la barre d’état.
+7. Facultatif, si `Actions` sont fournis pour la variable `ResourceStatus` , les clientlibs prises en charge sont nécessaires pour lier la fonctionnalité aux liens d’action dans la barre d’état.
 
    ```js
    (function(jQuery, document) {

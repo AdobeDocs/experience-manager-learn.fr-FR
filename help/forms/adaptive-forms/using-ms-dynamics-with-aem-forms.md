@@ -1,18 +1,18 @@
 ---
 title: Utilisation de Microsoft Dynamics avec AEM Forms
 description: Cette vidéo décrit un workflow qui montre comment AEM Forms peut utiliser Microsoft Dynamics en tant que source de données principale pour diffuser des communications interactives et personnalisées.
-feature: Formulaires adaptatifs
-version: 6.3,6.4,6.5
-topic: Développement
+feature: Adaptive Forms
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3e51767b-3571-4af7-8f01-5b6c5c74734c
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 40%
+source-wordcount: '136'
+ht-degree: 38%
 
 ---
-
 
 # Utilisation de Microsoft Dynamics avec AEM Forms{#using-microsoft-dynamics-with-aem-forms}
 
@@ -22,7 +22,7 @@ Bases de données relationnelles : MySQL, Microsoft SQL Server, IBM DB2 et Orac
 1. Profil utilisateur AEM
 1. Services web RESTful
 1. Services web SOAP
-1. Services OData
+1. Services OData 
 
 Cette vidéo décrit un workflow qui montre comment AEM Forms peut utiliser Microsoft Dynamics en tant que source de données principale pour diffuser des communications interactives et personnalisées.
 
@@ -31,4 +31,3 @@ Cette vidéo décrit un workflow qui montre comment AEM Forms peut utiliser Micr
 >[!NOTE]
 >
 >Cette fonctionnalité est disponible uniquement avec AEM 6.3 FP1 et versions ultérieures. Veillez à installer le module complémentaire AEM Forms avant de le configurer.
-

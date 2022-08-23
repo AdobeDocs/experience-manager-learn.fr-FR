@@ -1,14 +1,15 @@
 ---
 title: Préremplissage d’un formulaire adaptatif à l’aide d’un profil ACS
-description: Préremplir le Forms adaptatif à l’aide du profil ACS
-feature: Forms adaptatif, modèle de données de formulaire
-version: 6.3,6.4,6.5
-topic: Développement
+description: Préremplissage de Forms adaptatif à l’aide d’un profil ACS
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '333'
 ht-degree: 1%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 Dans cette partie, nous allons préremplir le formulaire adaptatif avec les informations de profil récupérées à partir d’ACS. AEM Forms dispose de cette puissante fonctionnalité pour préremplir les formulaires adaptatifs.
 
-Pour en savoir plus sur le préremplissage de formulaires adaptatifs, consultez ce [tutoriel](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+Pour en savoir plus sur le préremplissage de formulaires adaptatifs, lisez cette section [tutoriel](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
 Pour préremplir le formulaire adaptatif en récupérant des données d’ACS, nous supposons qu’il existe un profil dans ACS qui a le même adresse électronique que l’utilisateur AEM connecté. Par exemple, si l’ID d’adresse électronique de la personne connectée à AEM est csimms@adobe.com, nous prévoyons de trouver un profil dans ACS dont l’adresse électronique est csimms@adobe.com.
 
@@ -233,4 +234,3 @@ Pour que cela fonctionne sur votre système, suivez les instructions suivantes :
 * [Importer un exemple de formulaire adaptatif dans AEM à l’aide du gestionnaire de modules](assets/pre-fill-af-from-campaign.zip)
 * Assurez-vous de vous connecter à AEM avec un utilisateur dont l’ID d’adresse électronique est partagé par un profil dans Adobe Campaign. Par exemple, si l’ID d’adresse électronique de l’utilisateur AEM est johndoe@adobe.com, vous devez disposer dans ACS d’un profil dont l’adresse électronique est johndoe@adobe.com.
 * [Prévisualiser le formulaire](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
-

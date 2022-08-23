@@ -5,18 +5,18 @@ topics: components
 audience: administrator, developer
 doc-type: technical video
 activity: develop
-version: 6.3, 6.4, 6.5
-feature: Composants principaux
-topic: Développement
+version: 6.4, 6.5
+feature: Core Components
+topic: Development
 role: User
 level: Intermediate
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '375'
 ht-degree: 8%
 
 ---
-
 
 # Personnalisation des icônes de composant {#developing-component-icons-in-aem-sites}
 
@@ -31,17 +31,17 @@ L’explorateur de composants s’affiche désormais dans un thème gris cohére
 * **[!UICONTROL Description du composant]**
 * **[!UICONTROL Icône de composant]**
    * Les deux premières lettres du titre du composant *(par défaut)*
-   * Image PNG personnalisée *(configurée par un développeur)*
-   * Image SVG personnalisée *(configurée par un développeur)*
-   * Icône CoralUI *(configurée par un développeur)*
+   * Image PNG personnalisée *(configuré par un développeur)*
+   * Image de SVG personnalisée *(configuré par un développeur)*
+   * Icône CoralUI *(configuré par un développeur)*
 
 ## Options de configuration des icônes de composant {#component-icon-configuration-options}
 
 ### Abréviations {#abbreviations}
 
-Par défaut, les 2 premiers caractères du titre du composant (**[cq:Component]@jcr:title**) sont utilisés comme abréviation. Par exemple, si **[cq:Component]@jcr:title=Article List**, l’abréviation s’afficherait sous la forme &quot;**Ar**&quot;.
+Par défaut, les 2 premiers caractères du titre du composant (**[cq:Component]@jcr:title**) sont utilisés comme abréviation. Par exemple, si **[cq:Component]@jcr:title=Liste des articles** L’abréviation s’afficherait sous la forme &quot;**Ar**&quot;.
 
-L’abréviation peut être personnalisée via la propriété **[cq:Component]@abbreviation** . Bien que cette valeur puisse accepter plus de 2 caractères, il est recommandé de limiter l’abréviation à 2 caractères afin d’éviter toute perturbation visuelle.
+L’abréviation peut être personnalisée à partir du **[cq:Component]@abbreviation** . Bien que cette valeur puisse accepter plus de 2 caractères, il est recommandé de limiter l’abréviation à 2 caractères afin d’éviter toute perturbation visuelle.
 
 ```plain
 /apps/.../components/content/my-component
@@ -51,7 +51,7 @@ L’abréviation peut être personnalisée via la propriété **[cq:Component]@a
 
 ### Icônes CoralUI {#coralui-icons}
 
-Les icônes CoralUI, fournies par AEM, peuvent être utilisées pour les icônes de composant. Pour configurer une icône CoralUI, définissez une propriété **[cq:Component]@cq:icon** sur la valeur d’attribut de l’icône HTML de l’icône CoralUI souhaitée (énumérée dans la [documentation CoralUI](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
+Les icônes CoralUI, fournies par AEM, peuvent être utilisées pour les icônes de composant. Pour configurer une icône CoralUI, définissez une **[cq:Component]@cq:icon** à la valeur d’attribut de l’icône de HTML de l’icône CoralUI souhaitée (énumérée dans la variable [Documentation CoralUI](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html).
 
 ```plain
 /apps/.../components/content/my-component
@@ -61,11 +61,11 @@ Les icônes CoralUI, fournies par AEM, peuvent être utilisées pour les icônes
 
 ### Images PNG {#png-images}
 
-Les images PNG peuvent être utilisées pour les icônes de composant. Pour configurer une image PNG en tant qu’icône de composant, ajoutez l’image de votre choix en tant que **nt:file** nommée **cq:icon.png** sous **[cq:Component]**.
+Les images PNG peuvent être utilisées pour les icônes de composant. Pour configurer une image PNG en tant qu’icône de composant, ajoutez l’image souhaitée en tant que **nt:file** named **cq:icon.png** sous le **[cq:Component]**.
 
 Le fichier PNG doit avoir un arrière-plan transparent ou une couleur d’arrière-plan définie sur **#707070**.
 
-Les images PNG seront mises à l’échelle **20 px par 20 px**. Cependant, pour s’adapter aux affichages Retina **40px** par **40px** peut être préférable.
+Les images PNG seront mises à l’échelle en **20 px par 20 px**. Toutefois, pour les écrans Retina **40 px** par **40 px** peut être préférable.
 
 ```plain
 /apps/.../components/content/my-component
@@ -74,11 +74,11 @@ Les images PNG seront mises à l’échelle **20 px par 20 px**. Cependant, pour
      - jcr:primaryType = "nt:file"
 ```
 
-### Images SVG {#svg-images}
+### Images du SVG {#svg-images}
 
-Les images SVG (vectorielles) peuvent être utilisées pour les icônes de composant. Pour configurer une image SVG en tant qu’icône de composant, ajoutez le SVG souhaité en tant que **nt:file** nommé **cq:icon.svg** sous **[cq:Component]**.
+Les images de SVG (vectorielles) peuvent être utilisées pour les icônes de composant. Pour configurer une image de SVG en tant qu’icône de composant, ajoutez le SVG de votre choix en tant que **nt:file** named **cq:icon.svg** sous le **[cq:Component]**.
 
-Les images SVG doivent avoir une couleur d’arrière-plan définie sur **#707070** et une taille de **20 px par 20 px.**
+Les images SVG doivent avoir une couleur d’arrière-plan définie sur **#707070** et d’une taille de **20 px par 20 px.**
 
 ```plain
 /apps/.../components/content/my-component

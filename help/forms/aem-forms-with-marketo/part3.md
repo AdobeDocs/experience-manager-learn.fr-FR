@@ -1,18 +1,18 @@
 ---
 title: AEM Forms avec Marketo (partie 3)
 description: Tutoriel pour intégrer AEM Forms à Marketo à l’aide du modèle de données de formulaire AEM Forms.
-feature: Forms adaptatif, modèle de données de formulaire
-version: 6.3,6.4,6.5
-topic: Développement
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 14%
+source-wordcount: '379'
+ht-degree: 13%
 
 ---
-
 
 # Configuration de la source de données
 
@@ -22,9 +22,9 @@ L’intégration de données AEM Forms permet de configurer des sources de donn
 1. Profil utilisateur AEM
 1. Services web RESTful
 1. Services web SOAP
-1. Services OData
+1. Services OData 
 
-Pour l’intégration d’AEM Forms à Marketo, nous utiliserons les services web RESTful. La première étape de l’intégration consiste à configurer une source de données [.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilisez le fichier swagger fourni dans le cadre de ce tutoriel. La capture d’écran suivante présente les propriétés importantes à spécifier lors de la configuration de la source de données.
+Pour l’intégration d’AEM Forms à Marketo, nous utiliserons les services web RESTful. La première étape de l’intégration consiste à configurer une [source de données.](https://helpx.adobe.com/experience-manager/6-4/forms/using/configure-data-sources.html#ConfigureRESTfulwebservices) Utilisez le fichier swagger fourni dans le cadre de ce tutoriel. La capture d’écran suivante présente les propriétés importantes à spécifier lors de la configuration de la source de données.
 ![datasource](assets/datasource.jfif)
 
 &quot;marketo.json&quot; est le fichier swagger qui vous est fourni dans le cadre des ressources de ce tutoriel.
@@ -35,7 +35,7 @@ Le type d’authentification est personnalisé et l’implémentation de l’aut
 
 Ensuite, lors de la configuration de la source de données, l’étape suivante consiste à créer un modèle de données de formulaire basé sur la source de données configurée à l’étape précédente. Pour créer un modèle de données de formulaire, procédez comme suit :
 
-Pointez votre navigateur vers la page [intégrations de données.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Cette section répertorie toutes les intégrations de données créées sur votre instance AEM.
+Pointez votre navigateur sur la [intégrations de données .](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Cette section répertorie toutes les intégrations de données créées sur votre instance AEM.
 
 1. Cliquez sur Créer | Modèle de données de formulaire
 1. Fournissez un titre significatif tel que FormsAndMarketo et cliquez sur Suivant

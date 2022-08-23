@@ -1,18 +1,18 @@
 ---
 title: AEM Forms avec Marketo (partie 1)
 description: Tutoriel pour intégrer AEM Forms à Marketo à l’aide du modèle de données de formulaire AEM Forms.
-feature: Forms adaptatif, modèle de données de formulaire
-version: 6.3,6.4,6.5
-topic: Développement
+feature: Adaptive Forms, Form Data Model
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 45047852-4fdb-4702-8a99-faaad7213b61
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 1%
+source-wordcount: '370'
+ht-degree: 2%
 
 ---
-
 
 # AEM Forms avec Marketo
 
@@ -20,7 +20,7 @@ Marketo, composant d’Adobe, fournit un logiciel d’automatisation du marketin
 
 Grâce au modèle de données de formulaire d’AEM Forms, nous pouvons désormais intégrer facilement AEM Form à Marketo.
 
-[En savoir plus sur le modèle de données de formulaire](https://helpx.adobe.com/experience-manager/6-5/forms/using/data-integration.html)
+[En savoir plus sur le modèle de données de formulaire](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/data-integration.html)
 
 Marketo expose une API REST qui permet l’exécution à distance de nombreuses fonctionnalités du système. De la création de programmes à l’importation de pistes en bloc, il existe de nombreuses options qui permettent un contrôle précis d’une instance Marketo. L’utilisation du modèle de données de formulaire est assez simple pour intégrer AEM Forms à Marketo.
 

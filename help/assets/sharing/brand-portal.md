@@ -2,17 +2,17 @@
 title: Utilisation de Brand Portal
 description: Présentation vidéo de l’intégration AEM Author et AEM Assets Brand Portal.
 feature: Brand Portal
-version: 6.3, 6.4, 6.5
+version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 48%
 
 ---
-
 
 # Utilisation de Brand Portal avec AEM Assets{#using-brand-portal-with-aem-assets}
 
@@ -30,7 +30,7 @@ L’approvisionnement des ressources Brand Portal est utilisé pour collecter de
 
 *Experience Manager Author 6.5 SP2 (6.5.2) ou version ultérieure est requis pour utiliser l’approvisionnement des ressources*
 
-Voir [Activer l’auteur Experience Manager pour l’approvisionnement des ressources](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr) pour obtenir des instructions sur la configuration et la configuration de l’approvisionnement des ressources sur l’auteur Experience Manager.
+Réviser [Activation de l’auteur Experience Manager pour l’approvisionnement des ressources](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr) pour obtenir des instructions sur la configuration et la configuration de l’approvisionnement des ressources sur l’auteur Experience Manager.
 
 ## Fonctionnalités et améliorations de Brand Portal de février 2019{#brand-portal-features-and-enhancements-644}
 
@@ -56,7 +56,7 @@ Par exemple, si votre formulaire de recherche dans Brand Portal utilise le pré
 
 Brand Portal permet d’utiliser un astérisque (*) dans la requête de recherche avec une partie du mot de l’expression recherchée.
 
-**Cas d’utilisation**  : si vous n’êtes pas sûr des mots exacts apparaissant dans l’expression recherchée, vous pouvez utiliser une recherche par caractères génériques pour remplir les trous de votre requête.
+**Cas pratique** : si vous n’êtes pas sûr des mots exacts apparaissant dans l’expression recherchée, vous pouvez utiliser une recherche par caractères génériques pour remplir les trous de votre requête.
 
 Par exemple, la spécification de climb* renvoie toutes les ressources ayant des mots commençant par les caractères climb dans l’expression de leur titre si le formulaire de recherche dans Brand Portal utilise le prédicat de propriété pour une recherche partielle sur le titre des ressources.
 
@@ -73,7 +73,7 @@ La configuration [Activer la hiérarchie de dossiers](https://helpx.adobe.com/ex
 * Cette option est activée. L’arborescence de dossiers à partir du dossier racine est visible par les utilisateurs non-administrateurs. ce qui leur procure une expérience de navigation semblable à celle des administrateurs ;
 * Désactivé, seuls les dossiers partagés sont affichés sur la landing page.
 
-[La fonctionnalité Activer la ](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) hiérarchie de dossiers (lorsqu’elle est activée) vous aide à différencier les dossiers portant les mêmes noms, partagés à partir de différentes hiérarchies. Lorsqu’ils se connectent, les utilisateurs non-administrateurs voient maintenant les dossiers parents (et ancêtres) virtuels des dossiers partagés.
+[Activation de la hiérarchie de dossiers](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) La fonctionnalité (lorsqu’elle est activée) vous aide à différencier les dossiers portant les mêmes noms, partagés à partir de différentes hiérarchies. Lorsqu’ils se connectent, les utilisateurs non-administrateurs voient maintenant les dossiers parents (et ancêtres) virtuels des dossiers partagés.
 
 Les dossiers partagés sont organisés au sein des répertoires respectifs dans des dossiers virtuels. Vous pouvez identifier ces dossiers virtuels grâce à leur icône de cadenas.
 
@@ -111,7 +111,7 @@ Par exemple, une entreprise avec le domaine existant `wknd.brand-portal.adobe.co
 
 Cependant, l’instance d’auteur AEM peut uniquement être [configurée](https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html) avec l’URL d’ID du client et non avec l’URL (alternative) d’alias de client.
 
-**Cas**  pratique : Les entreprises peuvent répondre à leurs besoins de valorisation de marque en personnalisant l’URL du portail, au lieu de se contenter de l’URL fournie par Adobe.
+**Cas pratique** : Les entreprises peuvent répondre à leurs besoins de valorisation de marque en personnalisant l’URL du portail, au lieu de se contenter de l’URL fournie par Adobe.
 
 ## Fonctionnalités et améliorations de Brand Portal Décembre 2018{#brand-portal-features-and-enhancements-642}
 
@@ -151,12 +151,12 @@ Six nouvelles configurations ont été ajoutées pour permettre aux administrate
 
 ### Autres améliorations
 
-* *Chemin de hiérarchie de dossiers en mode Carte et Liste*  : permet aux utilisateurs de connaître l’emplacement des dossiers stockés dans une instance Brand Portal. Permet aux utilisateurs de différencier les dossiers portant le même nom dans différentes hiérarchies de dossiers.
-* *Option*  Aperçu : fournit des métadonnées aux utilisateurs non-administrateurs sur la ressource/le dossier en sélectionnant la ressource/le dossier, puis en sélectionnant l’option d’aperçu dans la barre d’outils. Actuellement, affiche le titre, la date de création et le chemin d’accès
+* *Chemin de hiérarchie de dossiers en mode Carte et Liste* — permet aux utilisateurs de connaître l’emplacement des dossiers stockés dans une instance Brand Portal. Permet aux utilisateurs de différencier les dossiers portant le même nom dans différentes hiérarchies de dossiers.
+* *Option Aperçu* — fournit des métadonnées aux utilisateurs non-administrateurs sur la ressource/le dossier en sélectionnant la ressource/le dossier, puis en sélectionnant l’option d’aperçu dans la barre d’outils. Actuellement, affiche le titre, la date de création et le chemin d’accès
 
 ### Adobe I/O de l’interface utilisateur des hôtes pour configurer les intégrations oAuth
 
-Brand Portal utilise l’interface [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) de l’Adobe I/O pour créer l’application JWT qui permet de configurer les intégrations oAuth pour permettre l’intégration d’AEM Assets à Brand Portal. Auparavant, l’IU de configuration des intégrations OAuth était hébergée à l’adresse `https://marketing.adobe.com/developer/`. Pour en savoir plus sur l’intégration d’AEM Assets à Brand Portal pour publier des ressources et des collections sur Brand Portal, consultez [Configuration de l’intégration d’AEM Assets à Brand Portal](https://helpx.adobe.com/fr/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
+Brand Portal utilise Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) pour créer l’application JWT qui permet de configurer les intégrations oAuth de manière à permettre l’intégration d’AEM Assets à Brand Portal. Auparavant, l’IU de configuration des intégrations OAuth était hébergée à l’adresse `https://marketing.adobe.com/developer/`. Pour en savoir plus sur l’intégration d’AEM Assets à Brand Portal pour publier des ressources et des collections sur Brand Portal, consultez [Configuration de l’intégration d’AEM Assets à Brand Portal](https://helpx.adobe.com/fr/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
 ## Fonctionnalités et améliorations de Brand Portal de février 2018{#brand-portal-features-and-enhancements-632}
 

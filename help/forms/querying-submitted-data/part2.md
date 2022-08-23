@@ -1,24 +1,24 @@
 ---
 title: AEM Forms avec schéma JSON et données [Partie2]
-seo-title: AEM Forms avec schéma JSON et données [Partie2]
+seo-title: AEM Forms with JSON Schema and Data[Part2]
 description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes nécessaires à la création d’un formulaire adaptatif avec un schéma JSON et à l’interrogation des données envoyées.
-seo-description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes nécessaires à la création d’un formulaire adaptatif avec un schéma JSON et à l’interrogation des données envoyées.
-feature: Formulaires adaptatifs
+seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
-topic: Développement
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 29195c70-af12-4a22-8484-3c87a1e07378
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
-
 
 # Stockage des données envoyées dans la base de données
 
@@ -31,7 +31,7 @@ Pour stocker les données envoyées dans la base de données, nous allons écrir
 
 Nous avons créé un envoi personnalisé pour gérer l’envoi du formulaire. Dans le fichier post.POST.jsp de cet envoi personnalisé, nous transférons la demande à notre servlet.
 
-Pour en savoir plus sur les requêtes d’envoi personnalisées, lisez cet [article](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
+Pour en savoir plus sur les requêtes d’envoi personnalisées, lisez cette section [article](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmission&quot;,null,null);
 

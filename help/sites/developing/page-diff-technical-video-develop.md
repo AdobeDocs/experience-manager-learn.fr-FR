@@ -1,22 +1,22 @@
 ---
 title: Développement pour la différence de page dans AEM Sites
 description: Cette vidéo montre comment fournir des styles personnalisés pour la fonctionnalité Différence de page d’AEM Sites.
-feature: 'Création  '
+feature: Authoring
 topics: development
 audience: developer
 doc-type: technical video
 activity: develop
-version: 6.3, 6.4, 6.5
-topic: Développement
+version: 6.4, 6.5
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 7d600b16-bbb3-4f21-ae33-4df59b1bb39d
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '293'
 ht-degree: 6%
 
 ---
-
 
 # Développement pour la différence de page {#developing-for-page-difference}
 
@@ -30,7 +30,7 @@ Cette vidéo montre comment fournir des styles personnalisés pour la fonctionna
 >
 >Cette vidéo ajoute une page CSS personnalisée à la bibliothèque cliente we.Retail, où ces modifications doivent être apportées au projet AEM Sites du personnalisateur. dans l’exemple de code ci-dessous : `my-project`.
 
-AEM différence de page obtient le CSS prêt à l’emploi via un chargement direct de `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
+AEM différence de page obtient le fichier CSS prêt à l’emploi via un chargement direct de `/libs/cq/gui/components/common/admin/diffservice/clientlibs/diffservice/css/htmldiff.css`.
 
 En raison de ce chargement direct de CSS plutôt que d’utiliser une catégorie de bibliothèque cliente, nous devons trouver un autre point d’injection pour les styles personnalisés, et ce point d’injection personnalisé est la bibliothèque cliente de création du projet.
 
@@ -38,7 +38,7 @@ Cela a l’avantage de permettre à ces remplacements de style personnalisés d�
 
 ### Préparation de la bibliothèque cliente de création {#prepare-the-authoring-clientlib}
 
-Vérifiez l’existence d’une bibliothèque cliente `authoring` pour votre projet à l’adresse `/apps/my-project/clientlib/authoring.`.
+Assurez-vous qu’une `authoring` clientlib pour votre projet à l’adresse `/apps/my-project/clientlib/authoring.`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -47,9 +47,9 @@ Vérifiez l’existence d’une bibliothèque cliente `authoring` pour votre pro
         categories="[my-project.authoring]"/>
 ```
 
-### Fournissez le CSS personnalisé {#provide-the-custom-css}
+### Fournir le CSS personnalisé {#provide-the-custom-css}
 
-Ajoutez à la `authoring` bibliothèque cliente du projet une `css.txt` qui pointe vers le fichier less qui fournira les styles de remplacement. [](https://lesscss.org/) Lessis est préférable en raison de ses nombreuses fonctionnalités pratiques, notamment l’encapsulage de classe utilisé dans cet exemple.
+Ajouter à la `authoring` clientlib a `css.txt` qui pointe vers le fichier less qui fournira les styles de remplacement. [Inférieur](https://lesscss.org/) est préférable en raison de ses nombreuses fonctionnalités pratiques, notamment l’encapsulage de classe utilisé dans cet exemple.
 
 ```shell
 base=./css
@@ -57,7 +57,7 @@ base=./css
 htmldiff.less
 ```
 
-Créez le fichier `less` qui contient les remplacements de style à `/apps/my-project/clientlibs/authoring/css/htmldiff.less` et fournissez les styles de remplacement selon vos besoins.
+Créez le `less` qui contient le style remplace le `/apps/my-project/clientlibs/authoring/css/htmldiff.less`, et fournissez les styles de recouvrement selon les besoins.
 
 ```css
 /* Wrap with body to gives these rules more specificity than the OOTB */
@@ -105,9 +105,9 @@ body {
 
 ### Inclure le CSS clientlib de création via le composant de page {#include-the-authoring-clientlib-css-via-the-page-component}
 
-Insérez la catégorie clientlibs de création dans la `/apps/my-project/components/structure/page/customheaderlibs.html` de la page de base du projet directement avant la balise `</head>` pour vous assurer que les styles sont chargés.
+Inclure la catégorie clientlibs de création dans la page de base du projet `/apps/my-project/components/structure/page/customheaderlibs.html` directement avant l’événement `</head>` pour vous assurer que les styles sont chargés.
 
-Ces styles doivent être limités aux modes de gestion de contenu web [!UICONTROL Edit] et [!UICONTROL preview].
+Ces styles doivent être limités à [!UICONTROL Modifier] et [!UICONTROL aperçu] Modes WCM.
 
 ```xml
 <head>

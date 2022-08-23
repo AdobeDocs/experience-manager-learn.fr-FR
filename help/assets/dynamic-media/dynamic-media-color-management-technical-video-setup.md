@@ -2,18 +2,18 @@
 title: Explication de la gestion des couleurs avec AEM Dynamic Media
 description: Dans cette vidéo, nous examinons la gestion des couleurs de Dynamic Media et comment elle peut être utilisée pour fournir des fonctionnalités d’aperçu de la correction des couleurs dans pour AEM Assets.
 sub-product: dynamic-media
-feature: Profils d’image, Profils vidéo
-version: 6.3, 6.4, 6.5
-topic: Gestion de contenu
+feature: Image Profiles, Video Profiles
+version: 6.4, 6.5
+topic: Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 24%
+source-wordcount: '319'
+ht-degree: 26%
 
 ---
-
 
 # Explication de la gestion des couleurs avec AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
@@ -23,7 +23,7 @@ Dans cette vidéo, nous examinons la gestion des couleurs de Dynamic Media et co
 
 >[!NOTE]
 >
->[Activez Dynamic ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) Media AEM pour utiliser cette fonctionnalité.
+>[Activer Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) dans AEM pour utiliser cette fonctionnalité.
 
 Cette fonctionnalité est disponible pour AEM versions 6.1 et 6.2 en tant que Feature Pack.
 
@@ -90,12 +90,12 @@ Voici le modèle XML du noeud de configuration de la gestion des couleurs. Ce mo
 | Nom | Espace colorimétrique | Description |
 | ------------------- | ---------- | ------------------------------------- |
 | AdobeRGB | RVB | Adobe RGB (1998) |
-| AppleRGB | RVB | Apple RVB |
-| CIERGB | RVB | CIE RVB |
+| AppleRGB | RVB | Apple RGB |
+| CIERGB | RVB | RGB CIE |
 | CoatedFogra27 | CMJN | FOGRA27 (ISO 12647-2:2004) enrobé |
 | CoatedFogra39 | CMJN | FOGRA39 (ISO 12647-2:2004) enrobé |
 | CoatedGraCol | CMJN | Coated GRACoL 2006 (ISO 12647-2:2004) |
-| ColorMatchRGB | RVB | ColorMatch RVB |
+| ColorMatchRGB | RVB | RGB ColorMatch |
 | EuropeISOCoated | CMJN | Europe ISO Coated FOGRA27 |
 | EuroscaleCoated | CMJN | Euroscale Coated v2 |
 | EuroscaleUncoul | CMJN | Euroscale Uncoute v2 |
@@ -107,20 +107,20 @@ Voici le modèle XML du noeud de configuration de la gestion des couleurs. Ce mo
 | NewsprintSNA2007 | CMJN | Journal des États-Unis (SNA 2007) |
 | NTSC | RVB | NTSC (1953) |
 | PAL | RVB | PAL/SECAM |
-| ProPhoto | RVB | ProPhoto RVB |
+| ProPhoto | RVB | ProPhoto RGB |
 | PS4Default | CMJN | Photoshop 4 CMJN par défaut |
 | PS5Default | CMJN | Photoshop 5 CMJN par défaut |
 | SheetfedCoated | CMJN | U.S. Sheetfed Coated v2 |
 | SheetfedUnPAW | CMJN | U.S. Sheetfed Non Couché v2 |
 | SMPTE | RVB | SMPTE-C |
-| sRVB | RVB sRVB | IEC61966-2.1 |
+| sRVB | sRVB RGB | IEC61966-2.1 |
 | UncondamnésFogra29 | CMJN | FOGRA29 non couché (ISO 12647-2:2004) |
 | WebCoated | CMJN | U.S. Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMJN | FOGRA Web Coated 28 (ISO 12647-2:2004) |
 | WebCoatedClass3 | CMJN | Document SWOP 2006 de qualité 3 sur support Web |
 | WebCoatedClass5 | CMJN | Papier de qualité 5 SWOP 2006 à couverture Web |
 | WebUnCouché | CMJN | U.S. Web Non couché v2 |
-| WideGamutRGB | RVB | Gamme large RVB |
+| WideGamutRGB | RVB | RGB Gamme large |
 
 ## Ressources supplémentaires{#additional-resources}
 

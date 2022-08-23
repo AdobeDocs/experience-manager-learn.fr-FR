@@ -1,33 +1,33 @@
 ---
-title: AEM Forms avec schéma et données JSON [Partie4]
-seo-title: AEM Forms avec schéma et données JSON [Partie4]
+title: AEM Forms avec schéma JSON et données [Partie4]
+seo-title: AEM Forms with JSON Schema and Data[Part4]
 description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes nécessaires à la création d’un formulaire adaptatif avec un schéma JSON et à l’interrogation des données envoyées.
-seo-description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes nécessaires à la création d’un formulaire adaptatif avec un schéma JSON et à l’interrogation des données envoyées.
-feature: Formulaires adaptatifs
+seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
+feature: Adaptive Forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.3,6.4,6.5
-topic: Développement
+version: 6.4,6.5
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: a8d8118d-f4a1-483f-83b4-77190f6a42a4
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
-
 
 # Requête sur les données envoyées
 
 
 L’étape suivante consiste à interroger les données envoyées et à afficher les résultats sous forme de tableau. Pour ce faire, nous utiliserons les logiciels suivants :
 
-[QueryBuilder](https://querybuilder.js.org/)  : composant d’interface utilisateur pour créer des requêtes.
+[QueryBuilder](https://querybuilder.js.org/) - Composant d’interface utilisateur pour la création de requêtes
 
-[Tableaux de données](https://datatables.net/) : pour afficher les résultats de la requête sous forme de tableau.
+[Tableaux de données](https://datatables.net/)- Pour afficher les résultats de la requête sous forme de tableau.
 
 L’interface utilisateur suivante a été créée pour permettre l’interrogation des données envoyées. Seuls les éléments marqués comme requis dans le schéma JSON sont disponibles pour la requête sur . Dans la capture d&#39;écran ci-dessous, nous demandons que toutes les soumissions pour lesquelles le deliverypref est un SMS soient envoyées.
 
@@ -64,9 +64,9 @@ public JSONArray getData(String formName) throws SQLException, IOException {
  }
 ```
 
-Lorsque l’utilisateur clique sur le bouton GetResult, un appel Get est effectué à **&quot;/bin/querydata&quot;**. Nous transmettons la requête créée par l’interface utilisateur de QueryBuilder au servlet via le paramètre de requête . Le servlet convertit ensuite cette requête en requête SQL qui peut être utilisée pour interroger la base de données. Par exemple, si vous recherchez tous les produits nommés &quot;Souris&quot;, la chaîne de requête de Query Builder sera $.productname = &quot;Souris&quot;. Cette requête sera ensuite convertie en :
+Lorsque l’utilisateur clique sur le bouton GetResult , un appel Get est effectué à **&quot;/bin/querydata&quot;**. Nous transmettons la requête créée par l’interface utilisateur de QueryBuilder au servlet via le paramètre de requête . Le servlet convertit ensuite cette requête en requête SQL qui peut être utilisée pour interroger la base de données. Par exemple, si vous recherchez tous les produits nommés &quot;Souris&quot;, la chaîne de requête de Query Builder sera $.productname = &quot;Souris&quot;. Cette requête sera ensuite convertie en :
 
-SELECT * depuis aemformswithjson .  formenvois où JSON_EXTRACT( formsubmission .formdata,&quot;$.productName &quot;)= &#39;Souris&#39;
+SELECT &#42; depuis aemformswithjson .  formenvois où JSON_EXTRACT( formsubmission .formdata,&quot;$.productName &quot;)= &#39;Souris&#39;
 
 Le résultat de cette requête est alors renvoyé pour renseigner le tableau dans l’interface utilisateur.
 
@@ -79,4 +79,3 @@ Pour que cet exemple s’exécute sur votre système local, procédez comme suit
 1. Remplissez le formulaire et envoyez-le.
 1. Pointez votre navigateur sur [dashboard.html](http://localhost:4502/content/AemForms/dashboard.html)
 1. Sélectionnez le formulaire et effectuez une requête simple.
-

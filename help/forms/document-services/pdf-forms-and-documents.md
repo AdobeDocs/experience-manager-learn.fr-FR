@@ -4,12 +4,12 @@ description: PDF est en fait une famille de formats de fichiers, et cet article 
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: 6.3,6.4, 6.5
+version: 6.4, 6.5
 feature: PDF Generator
 kt: 7071
 topic: Development
 exl-id: ffa9d243-37e5-420c-91dc-86c73a824083
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Des exemples de fichiers peuvent être [téléchargé ici](assets/pdf-file-types
 
 ## PDF d’architecture de Forms XML (PDF XFA)
 
-Adobe utilise le terme PDF XFA pour faire référence au Forms interactif et dynamique que vous créez avec AEM Forms Designer. Les Forms et les fichiers que vous créez avec Designer sont basés sur l’architecture XML Forms (XFA) d’Adobe. Le format de fichier du PDF XFA est plus proche d’un fichier de HTML que d’un fichier de PDF traditionnel. Par exemple, le code suivant montre à quoi ressemble un objet de texte simple dans un fichier de PDF XFA.
+Adobe utilise le terme PDF XFA pour faire référence au Forms interactif et dynamique que vous créez avec AEM Forms Designer. Les Forms et les fichiers que vous créez avec Designer sont basés sur l’architecture Forms XML (XFA) d’Adobe. Le format de fichier du PDF XFA est plus proche d’un fichier de HTML que d’un fichier de PDF traditionnel. Par exemple, le code suivant montre à quoi ressemble un objet de texte simple dans un fichier de PDF XFA.
 
 ![Champ de texte](assets/text-field.JPG)
 
@@ -41,7 +41,7 @@ XFA Forms est basé sur XML. Ce format bien structuré et flexible permet à un 
 La mise en page statique des PDF forms XFA ne change jamais au moment de l’exécution, mais elle peut être interactive pour l’utilisateur. Voici quelques avantages des PDF forms XFA statiques :
 
 * La mise en page statique des PDF forms XFA ne change jamais au moment de l’exécution, mais elle peut être interactive pour l’utilisateur.
-* Forms statique prend en charge les outils de commentaire et de balisage d’Acrobat.
+* Les Forms statiques prennent en charge les outils de commentaires et de balisage Acrobat.
 * Forms statique vous permet d’importer et d’exporter des commentaires Acrobat.
 * Les Forms statiques prennent en charge le sous-paramétrage des polices. Il s’agit d’une technique pouvant être réalisée sur un serveur AEM Forms.
 * La Forms statique peut être rendue à l’aide de la visionneuse de PDF intégrée fournie avec les navigateurs modernes.
@@ -82,7 +82,7 @@ Un document certifié fournit au PDF un document et aux destinataires des formul
 
 ### Acro
 
-Les Acroforms sont une ancienne technologie de formulaire interactif d’Adobe. ils remontent à Acrobat version 3. Adobe fournit la variable [Référence de l’API Forms Acrobat](assets/FormsAPIReference.pdf), daté de mai 2003, afin de fournir les détails techniques de cette technologie. Les Acroforms sont une combinaison des éléments suivants :
+Les Acroforms sont une ancienne technologie de formulaire interactif de l’Adobe. ils remontent à Acrobat version 3. Adobe fournit la variable [Référence de l’API Forms Acrobat](assets/FormsAPIReference.pdf), daté de mai 2003, afin de fournir les détails techniques de cette technologie. Les Acroforms sont une combinaison des éléments suivants :
 
 * PDF traditionnel qui définit la disposition statique et les graphiques du formulaire.
 * Champs de formulaire interactifs verrouillés au-dessus des outils de formulaire du programme Adobe Acrobat. Ces outils de formulaire constituent un petit sous-ensemble de ce qui est disponible dans AEM Forms Designer.
@@ -96,7 +96,7 @@ Comme PDF, PDF/A est une spécification standard ISO. Il a été développé par
 * Tout le contenu doit être contenu dans le fichier et il ne peut pas y avoir de dépendances à des sources externes telles que des hyperliens, des polices ou des logiciels.
 * Toutes les polices doivent être incorporées et il doit s’agir de polices disposant d’une licence d’utilisation illimitée pour les documents électroniques.
 * JavaScript non autorisé
-* La transparence n’est pas autorisée
+* La transparence n&#39;est pas autorisée
 * Le chiffrement n’est pas autorisé
 * Le contenu audio et vidéo n’est pas autorisé
 * Les espaces colorimétriques doivent être définis indépendamment de l’appareil.
@@ -109,7 +109,7 @@ Deux fichiers des exemples de fichiers ont été créés à partir du même fich
 * simpleWordFile.pdf
 * simpleWordFilePDFA.pdf
 
-Bien que les documents semblent identiques, le fichier PDF/A s’ouvre avec une barre bleue en haut, indiquant que vous affichez ce document en mode PDF/A. Cette barre bleue est la barre de message d’Acrobat, qui s’affiche lorsque vous ouvrez certains types de fichiers de PDF.
+Bien que les documents semblent identiques, le fichier PDF/A s’ouvre avec une barre bleue en haut, indiquant que vous affichez ce document en mode PDF/A. Cette barre bleue est la barre de message du document Acrobat, qui s’affiche lorsque vous ouvrez certains types de fichiers de PDF.
 
 ![Pdf-img](assets/pdfa-message.png)
 
