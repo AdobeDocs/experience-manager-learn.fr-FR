@@ -7,9 +7,9 @@ kt: 10961
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 614db8b03a823b60846ab8ccfa8fbc29a41f7791
+source-git-commit: abf5522b948c950c3ace28a8da43907959be10b4
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,13 @@ ht-degree: 0%
 
 Configurez et renseignez la liste déroulante à l’aide de la propriété item load path .
 Le champ Chemin de chargement de l’élément permet à un auteur de fournir une URL à partir de laquelle il charge les options disponibles dans une liste déroulante.
-Pour créer un tel noeud dans crx, suivez les étapes mentionnées ci-dessous.
-
+Pour créer un tel noeud dans crx, procédez comme suit :
 * Connexion à crx
 * Créez un noeud appelé assets (vous pouvez nommer ce noeud selon vos besoins) de type sling:folder sous content.
 * Enregistrer
 * Cliquez sur le noeud de ressources nouvellement créé et définissez ses propriétés comme illustré ci-dessous.
-* Vous devez créer une propriété de type String appelée assettypes (vous pouvez la nommer selon vos besoins) avec plusieurs valeurs. Indiquez les valeurs que vous souhaitez et enregistrez.
-
-![item-load-path](assets/item-load-path-crx.png)
+* Vous devez créer une propriété de type Chaîne appelée assettypes (vous pouvez la nommer selon vos besoins). Assurez-vous que la propriété est composée de plusieurs valeurs. Indiquez les valeurs que vous souhaitez et enregistrez.
+   ![item-load-path](assets/item-load-path-crx.png)
 
 Pour charger ces valeurs dans votre liste déroulante, indiquez le chemin suivant dans la propriété de chemin de chargement d’élément .  **/content/assets/assettypes**
 
