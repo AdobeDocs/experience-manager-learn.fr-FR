@@ -4,9 +4,9 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: b04e247c091634030e5377fdb8a159f8c7cce904
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '823'
 ht-degree: 29%
 
 ---
@@ -117,7 +117,7 @@ ht-degree: 29%
 
    + Transition vers AEM as a Cloud Service {#moving-to-aem-as-a-cloud-service}
       + [Présentation ](./migration/moving-to-aem-as-a-cloud-service/introduction.md)
-      + [Intégration ](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
+      + [Intégration](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
       + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
       + [BPA et CAM](./migration/moving-to-aem-as-a-cloud-service/bpa-and-cam.md)
       + [Outils de modernisation d’AEM](./migration/moving-to-aem-as-a-cloud-service/aem-modernization-tools.md)
@@ -213,6 +213,7 @@ ht-degree: 29%
    + Intégration à Microsoft Power Automate{#forms-cs-and-power-automate}
       + [Configuration de l’intégration](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
       + [Analyse des données de formulaire envoyées](./forms/forms-cs-and-power-automate/send-email-notification.md)
+      + [Envoi d’un document d’enregistrement en tant que pièce jointe d’un courrier électronique](./forms/forms-cs-and-power-automate/send-DoR-email-attachment.md)
    + Intégration à Microsoft Dynamics{#formscs-dynamics-crm}
       + [Création d’une application Dynamics](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [Configuration de la source de données](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
