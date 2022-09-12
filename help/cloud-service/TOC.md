@@ -4,10 +4,10 @@ user-guide-description: Ensemble de tutoriels pour Adobe Experience Manager as a
 breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: cloud-service
 team: TM
-source-git-commit: b04e247c091634030e5377fdb8a159f8c7cce904
+source-git-commit: aea43a705b3959f8be26238d32b816b3953e153e
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 29%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -214,6 +214,7 @@ ht-degree: 29%
       + [Configuration de l’intégration](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
       + [Analyse des données de formulaire envoyées](./forms/forms-cs-and-power-automate/send-email-notification.md)
       + [Envoi d’un document d’enregistrement en tant que pièce jointe d’un courrier électronique](./forms/forms-cs-and-power-automate/send-DoR-email-attachment.md)
+      + [Extraire les pièces jointes de formulaire des données envoyées](./forms/forms-cs-and-power-automate/send-af-attachments-in-email.md)
    + Intégration à Microsoft Dynamics{#formscs-dynamics-crm}
       + [Création d’une application Dynamics](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [Configuration de la source de données](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
