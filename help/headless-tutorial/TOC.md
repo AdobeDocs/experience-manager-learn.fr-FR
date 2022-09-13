@@ -6,9 +6,9 @@ version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
 kt: 2963
 index: y
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: b2bf2a8e454d7ccd09819f2a38e58f7c303cb066
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '228'
 ht-degree: 25%
 
 ---
@@ -61,10 +61,11 @@ ht-degree: 25%
    + [AEM SDK sans affichage](./graphql/how-to/aem-headless-sdk.md)
    + Exemples {#example-apps}
       + [React](./graphql/example-apps/react-app.md)
+      + [Next.js](./graphql/example-apps/next-js.md)
       + [Composant Web](./graphql/example-apps/web-component.md)
       + [iOS](./graphql/example-apps/ios-swiftui-app.md)
       + [Android](./graphql/example-apps/android-app.md)
-      + [Serveur à serveur](./graphql/example-apps/server-to-server-app.md)
+      + [Node.js](./graphql/example-apps/server-to-server-app.md)
 + Éditeur SPA{#spa-editor}
    + React{#react}
       + [Présentation](./spa-editor/react/overview.md)

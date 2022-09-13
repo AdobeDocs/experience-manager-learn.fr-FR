@@ -9,16 +9,15 @@ level: Intermediate
 kt: 10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: b2bf2a8e454d7ccd09819f2a38e58f7c303cb066
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '637'
 ht-degree: 1%
 
 ---
 
 
 # AEM déploiements sans affichage SPA
-
 
 AEM déploiements d’applications monopages sans affichage (SPA) impliquent des applications JavaScript conçues à l’aide de structures telles que React ou Vue, qui consomment et interagissent avec le contenu d’une manière sans interface utilisateur graphique.
 
@@ -110,6 +109,27 @@ Adobe fournit un exemple d’application monopage codée dans React.
                <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/react-app.md" title="application React">application React</a></p>
                <p class="is-size-6">Exemple d’application d’une seule page, écrite dans React, qui consomme du contenu des API GraphQL AEM sans affichage.</p>
                <a href="../example-apps/react-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
+                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exemple de vue</span>
+               </a>
+           </div>
+       </div>
+   </div>
+</div>
+<!-- Next.js app -->
+<div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Next.js app" tabindex="0">
+   <div class="card">
+       <div class="card-image">
+           <figure class="image is-16by9">
+               <a href="../example-apps/next-js.md" title="Application Next.js" tabindex="-1">
+                   <img class="is-bordered-r-small" src="../example-apps/assets/next-js/next-js-card.png" alt="Application Next.js">
+               </a>
+           </figure>
+       </div>
+       <div class="card-content is-padded-small">
+           <div class="content">
+               <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/next-js.md" title="Application Next.js">Application Next.js</a></p>
+               <p class="is-size-6">Exemple d’application d’une seule page, écrite dans Next.js, qui consomme du contenu des API GraphQL AEM sans affichage.</p>
+               <a href="../example-apps/next-js.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exemple de vue</span>
                </a>
            </div>
