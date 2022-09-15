@@ -5,9 +5,9 @@ user-guide-title: Vidéos et tutoriels d’AEM Forms
 user-guide-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés.
 breadcrumb-title: Tutoriels sur AEM Forms
 index: y
-source-git-commit: 614db8b03a823b60846ab8ccfa8fbc29a41f7791
+source-git-commit: 164741ce5ae7d00f904365589438c2eaaf1e05db
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1695'
 ht-degree: 4%
 
 ---
@@ -279,6 +279,7 @@ ht-degree: 4%
    + [Document Services : Procédure de réglage de la taille du pool bmc pour XMLFormService part1](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-1.md)
    + [Document Services : Procédure de réglage de la taille du pool bmc pour XMLFormService part2](troubleshooting/steps-to-tweak-bmc-pool-size-for-xmlformservice-2.md)
    + [Document Services : Étapes de réglage des paramètres sur la console JMX](troubleshooting/steps-to-tweak-parameters-on-jmx-console.md)
+   + [Activer la fusion de fichiers de données XML volumineux avec un modèle](troubleshooting/fix-timeout-errors-when-merging-large-xml-wth-template.md)
    + [PDFG : Comment modifier les délais d’expiration des transactions dans PDFG](troubleshooting/how-to-change-the-transaction-timeout-in-pdfg.md)
    + [PDFG : Comment mettre à jour le délai d’expiration CORBA dans PDFG](troubleshooting/how-to-update-corba-timeout-in-pdfg.md)
    + [PDFG : Comment mettre à jour les délais d’expiration dans PDFG](troubleshooting/how-to-update-the-timeouts-in-pdfg.md)
