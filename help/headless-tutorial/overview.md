@@ -7,20 +7,25 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '517'
 ht-degree: 7%
 
 ---
 
-# AEM Tutorials sans tête
+# AEM Tutorials sans tête{#aem-headless-tutorials}
 
 Adobe Experience Manager (AEM) dispose de plusieurs options pour définir des points de terminaison sans affichage et diffuser son contenu au format JSON. Utilisez des tutoriels pratiques pour découvrir comment utiliser les différentes options et choisir ce qui vous convient.
 
 >[!TIP]
 >
 >Cette collection de tutoriels est conçue pour ceux qui préfèrent **apprendre en faisant**. Si vous préférez les concepts d’apprentissage, consultez la [AEM Parcours développeur sans tête](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Cet ensemble de tutoriels et de parcours se complètent.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_edit_inline_content"
+>title="Modifier le contenu en ligne"
+>abstract="Découvrez comment modifier le contenu directement dans la page à partir de laquelle il est référencé à l’aide de l’ensemble de fonctionnalités sans en-tête."
 
 ## Tutorials par API
 
