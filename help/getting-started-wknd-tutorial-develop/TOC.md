@@ -5,13 +5,13 @@ version: Cloud Service
 activity: develop
 audience: developer
 user-guide-title: Prise en main du développement AEM Sites – Tutoriel WKND
-user-guide-description: 'Un tutoriel en plusieurs parties pour les développeurs qui découvrent AEM. Implémentation d’un site AEM pour une marque de style de vie fictive : WKND.'
+user-guide-description: 'Un tutoriel en plusieurs parties pour les développeurs qui découvrent AEM. Implémentation d’un site AEM pour une marque de style de vie fictive : WKND. Activez le pipeline front-end pour accélérer le cycle de développement vers le déploiement.'
 breadcrumb-title: Tutoriels d’AEM Sites WKND
 index: y
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: 96e1c95b7cd672aa5d4f79707735abc86dae7b8a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '93'
+ht-degree: 43%
 
 ---
 
@@ -33,5 +33,9 @@ ht-degree: 0%
    + [1 - Création d’un site](./site-template/create-site.md)
    + [2 - Présentation de la création et de la publication](./site-template/author-content-publish.md)
    + [3 - Planification de l’interface utilisateur avec Adobe XD](./site-template/ui-planning-adobe-xd.md)
-   + [3 - Modèles de page](./site-template/page-templates.md)
-   + [4 - Thème](./site-template/theming.md)
+   + [4 - Modèles de page](./site-template/page-templates.md)
+   + [5 - Thème](./site-template/theming.md)
++ Activation du pipeline front-end - Ops de développement{#enable-frontend-pipeline-devops}
+   + [Présentation](./enable-frontend-pipeline/overview.md)
+
+
