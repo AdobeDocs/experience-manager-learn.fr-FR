@@ -3,17 +3,17 @@ user-guide-title: Vidéos et tutoriels d’AEM Sites
 user-guide-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Sites.
 breadcrumb-title: Tutoriels sur AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
-source-git-commit: 552e5fbeb5dafc6d82763d5c3b31cc6d17131739
+source-git-commit: 798b366a5add2831bf60a8d89968bad16e48802c
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 34%
+source-wordcount: '434'
+ht-degree: 32%
 
 ---
 
 
 # Vidéos et tutoriels d’AEM Sites {#sites}
 
-+ [Présentation](overview.md)
++ [ du commerce électronique](overview.md)
 + Création de pages {#page-authoring}
    + [Création](page-authoring/aem-sites-authoring-overview.md)
    + [Navigation](page-authoring/basic-handling-sites-feature-video-use.md)
@@ -48,6 +48,8 @@ ht-degree: 34%
    + [Utilisation de fragments d’expérience](experience-fragments/experience-fragments-feature-video-use.md)
    + [Blocs de création](experience-fragments/building-blocks.md)
    + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+   + Conseil d’experts {#expert-advice}
+      + [Conseils sur les fragments de contenu](content-fragments/expert-advice/content-fragments.md)
 + Développement {#developing}
    + [Archétype de projet AEM](developing/aem-project-archetype.md)
    + [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
@@ -92,7 +94,7 @@ ht-degree: 34%
    + [Amélioration des traductions](translation/translation-enhancements-feature-video-use.md)
 + Intégrations {#integrations}
    + Experience Platform Launch {#experience-platform-launch}
-      + [Présentation](integrations/experience-platform-launch/overview.md)
+      + [ du commerce électronique](integrations/experience-platform-launch/overview.md)
       + [Créer une propriété Launch](integrations/experience-platform-launch/create-launch-property.md)
       + [Connexion d’AEM à Launch à l’aide d’Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
       + [Création d’un Cloud Service Launch](integrations/experience-platform-launch/create-launch-cloud-service.md)
@@ -105,7 +107,7 @@ ht-degree: 34%
       + [Suivi des composants cliqués avec Adobe Analytics](integrations/analytics/track-clicked-component.md)
       + [Analyse des données avec Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
-      + [Présentation](integrations/adobe-target/overview.md)
+      + [ du commerce électronique](integrations/adobe-target/overview.md)
       + [Ajout de l’extension Target à la propriété Launch](integrations/adobe-target/add-target-launch-extension.md)
       + [Charger et déclencher un appel Target](integrations/adobe-target/load-and-fire-target.md)
       + [Création d’un compte Adobe Target Cloud Service](integrations/adobe-target/setup-aem-target-cloud-service.md)
@@ -113,3 +115,8 @@ ht-degree: 34%
       + [Création d’une activité Target à l’aide d’offres de fragments d’expérience](integrations/adobe-target/create-target-activity.md)
       + [Personnalisation à l’aide du compositeur d’expérience visuelle](integrations/adobe-target/personalization-using-vec.md)
       + [Personnalisation de l’expérience complète d’une page web](integrations/adobe-target/personalization-web-page.md)
++ Ressources d’experts {#expert-resources}
+   + [Évaluation de la maturité d’AEM Sites](expert-resources/maturity-assessment.md)
+   + [Maintenance du site](expert-resources/site-maintenance.md)
+   + [AEM Conseils et astuces concernant les champions : Session 1](expert-resources/champion-tips-1.md)
+   + [AEM Conseils et astuces concernant les champions : Session 2](expert-resources/champion-tips-2.md)
