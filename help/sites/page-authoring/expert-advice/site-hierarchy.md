@@ -1,11 +1,24 @@
 ---
 title: Conseils sur la hiérarchie du site, la taxonomie et le balisage
-description: Bonnes pratiques relatives à la hiérarchie, à la taxonomie et au balisage du site
+seo-title: Overview of Authoring in AEM Sites
+description: La vidéo suivante présente les concepts de base de la création dans un environnement de création AEM. Il s’appuie sur la console Sites.
+seo-description: The following video provides an overview of basic concepts of authoring in an AEM author environment. It uses the Sites console as a basis.
+feature: Page Editor, Editable Templates
+topics: authoring, publishing
+audience: author, marketer
+doc-type: feature video
+activity: use
+version: 6.4, 6.5, Cloud Service
+kt: 4242
+thumbnail: 33594.jpg
+topic: Content Management
+role: User
+level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
+source-git-commit: 3335069883db38a2748af114ab7505cc34dec270
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -16,8 +29,6 @@ ht-degree: 0%
 Les métadonnées et les balises sont essentielles pour accroître l’efficacité d’AEM. Les utilisateurs, les dirigeants et la direction se rendent compte de la nécessité d&#39;une stratégie globale, mais ils ont du mal à progresser. Souvent, les connaissances sont cloisonnées parmi les utilisateurs, ce qui rend difficile une stratégie holistique et rend les ajustements encore plus problématiques.
 
 Quelle est la différence entre les métadonnées et les balises ? Quels sont les aspects commerciaux à prendre en compte lors de la conduite de votre stratégie ?
-
-Un résumé plus intensif est disponible [here](https://adobe.sharepoint.com/:w:/r/sites/ACSSuccessServices/_layouts/15/Doc.aspx?sourcedoc=%7BFE5E873A-A3B6-4F40-BF22-A2C9F1269802%7D&amp;file=AEM_TagTaxonomyAndMetadata_BestPractice_en%20(2).docx&amp;action=default&amp;mobileredirect=true).
 
 ## Quel est l’objectif des métadonnées ?
 
