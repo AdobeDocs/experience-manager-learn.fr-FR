@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '817'
 ht-degree: 3%
 
 ---
@@ -59,7 +59,7 @@ Les fragments de contenu sont stockés dans des dossiers dans AEM Assets. Pour c
 
    ![Modèles de fragment de contenu autorisés](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   Ces stratégies seront automatiquement héritées par tous les sous-dossiers et peuvent être remplacées. Notez que vous pouvez également autoriser les modèles par balises ou activer les modèles à partir d’autres configurations de projet. Ce mécanisme permet de gérer efficacement votre hiérarchie de contenu.
+   Ces stratégies sont héritées automatiquement par tous les sous-dossiers et peuvent être remplacées. Notez que vous pouvez également autoriser les modèles par balises ou activer les modèles à partir d’autres configurations de projet. Ce mécanisme permet de gérer efficacement votre hiérarchie de contenu.
 
 1. Appuyer **Enregistrer et fermer** pour enregistrer les modifications apportées aux propriétés du dossier.
 
@@ -75,7 +75,7 @@ Les fragments de contenu sont stockés dans des dossiers dans AEM Assets. Pour c
 
 ## Création d’un fragment de contenu {#create-content-fragment}
 
-Plusieurs fragments de contenu seront ensuite créés en fonction de la variable **Équipe** et **Personne** modèles.
+Plusieurs fragments de contenu sont ensuite créés en fonction de la variable **Équipe** et **Personne** modèles.
 
 1. Dans l’AEM écran de démarrage, appuyez sur **Fragments de contenu** pour ouvrir l’interface utilisateur Fragments de contenu.
 

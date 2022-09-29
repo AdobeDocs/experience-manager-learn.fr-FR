@@ -2,18 +2,18 @@
 title: Utilisation de la visionneuse d’images panoramiques et verticales avec AEM Assets Dynamic Media
 description: Les améliorations apportées à la visionneuse Dynamic Media dans AEM 6.4 incluent l’ajout de la visionneuse d’images panoramiques, de la visionneuse d’images de réalité virtuelle panoramique et de la visionneuse d’images verticales. La visionneuse panoramique offre un moyen simple d’offrir une expérience immersive et attrayante de la pièce, de la propriété, de l’emplacement ou du paysage sans aucun développement personnalisé.
 sub-product: dynamic-media
-feature: Profils vidéo, profils vidéo, vidéo 360 VR
+feature: Video Profiles, Video Profiles, 360 VR Video
 version: 6.4, 6.5
-topic: Gestion de contenu
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 6b2f7533-8ce0-4134-b1ae-b3c5d15a05e6
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '533'
 ht-degree: 3%
 
 ---
-
 
 # Utilisation de la visionneuse d’images panoramiques et verticales avec AEM Assets Dynamic Media{#using-panorama-and-vertical-image-viewer-with-aem-assets-dynamic-media}
 
@@ -27,13 +27,13 @@ Les améliorations apportées à la visionneuse Dynamic Media dans AEM 6.4 inclu
 
 ## Visionneuse de réalité virtuelle panoramique et panoramique
 
-Une image est considérée comme panoramique en fonction de ses proportions ou de ses mots-clés. Par défaut, une image avec un format de 2 sera considérée comme une image panoramique. Les paramètres prédéfinis de la visionneuse d’images panoramiques deviennent disponibles pour un aperçu d’image s’il répond aux critères ci-dessus. Le critère de format d’image panoramique peut être modifié dans la configuration DMS7 de l’entreprise en spécifiant la propriété double s7PanoramicAR à /conf/global/settings/cloudconfigs/dmscene7/jcr:content. Les mots-clés sont stockés dans la propriété dc:keyword du noeud de métadonnées de la ressource. Si les mots-clés contiennent l’une des combinaisons suivantes :
+Une image est considérée comme panoramique en fonction de ses proportions ou de ses mots-clés. Par défaut, une image avec un format de 2 est considérée comme une image panoramique. Les paramètres prédéfinis de la visionneuse d’images panoramiques deviennent disponibles pour un aperçu d’image s’il répond aux critères ci-dessus. Le critère de format d’image panoramique peut être modifié dans la configuration DMS7 de l’entreprise en spécifiant la propriété double s7PanoramicAR à /conf/global/settings/cloudconfigs/dmscene7/jcr:content. Les mots-clés sont stockés dans la propriété dc:keyword du noeud de métadonnées de la ressource. Si les mots-clés contiennent l’une des combinaisons suivantes :
 
 * équirectangulaire,
 * sphérique + panoramique,
 * sphérique + panorama,
 
-il sera considéré comme une ressource Image panoramique, quel que soit son format.
+il est considéré comme une ressource Image panoramique, quel que soit son format.
 
 ## Visionneuse d’images verticale
 
@@ -52,7 +52,7 @@ Avec des échantillons horizontaux, en fonction de la taille de l’écran de bu
    <td>DMS7 et Dynamic Media</td>
   </tr>
   <tr>
-   <td>Exemple d’utilisation </td>
+   <td>Cas d’utilisation</td>
    <td><p>La visionneuse panoramique et la visionneuse de réalité virtuelle offrent aux utilisateurs une expérience plus attrayante. Un utilisateur peut vérifier une chambre d'hôtel avant même qu'il ne fasse sa réservation ou bien vérifier un bien de location sans avoir à planifier de rendez-vous. Un utilisateur peut consulter un emplacement et de nombreuses autres possibilités. L’objectif Principal ici est de fournir aux clients une meilleure expérience lorsqu’ils visitent votre site web et éventuellement d’augmenter votre taux de conversion.</p> <p> </p> </td> 
    <td><p>La visionneuse d’images verticales permet d’optimiser l’expérience d’affichage de l’imagerie du produit afin de fournir aux consommateurs la meilleure représentation du produit, ce qui entraîne une conversion et minimise les retours.</p> <p> </p> </td>
   </tr>

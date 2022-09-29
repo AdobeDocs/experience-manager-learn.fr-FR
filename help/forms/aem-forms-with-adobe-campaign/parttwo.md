@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: deef09d9-82ec-4e61-b7ee-e72d1cd4e9e0
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -267,4 +267,4 @@ Une fois que nous avons défini le service et l’action d’envoi personnalisé
 * [Importation d’un formulaire adaptatif et d’un gestionnaire d’envoi personnalisé à l’aide du gestionnaire de package](assets/create-acs-profile-on-af-submission.zip).Ce package contient le formulaire adaptatif configuré pour l’envoi à une action d’envoi personnalisée.
 * Aperçu de la [formulaire](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
 * Renseignez tous les champs et envoyez
-* Un nouveau profil sera créé dans votre instance ACS.
+* Un nouveau profil est créé dans votre instance ACS.

@@ -1,5 +1,5 @@
 ---
-title: Informations d’identification du service AEM
+title: Informations d’identification du service AEM Forms
 description: Téléchargez les informations d’identification du service depuis AEM Developer Console.
 type: Documentation
 role: Developer
@@ -9,17 +9,17 @@ feature: Adaptive Forms
 topic: Development
 kt: 8192
 thumbnail: 330519.jpg
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+exl-id: 74cb8c30-4c41-426c-a1b5-fc595a3167c8
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
 
+# Informations d’identification du service AEM Forms
 
-# Informations d’identification du service
-
-Les intégrations à AEM en tant que Cloud Service doivent pouvoir s’authentifier en toute sécurité dans AEM. AEM’Developer Console génère des informations d’identification de service, qui sont utilisées par des applications, systèmes et services externes pour interagir par programmation avec les services AEM Author ou Publish sur HTTP.
+Les intégrations à AEM as a Cloud Service doivent pouvoir s’authentifier en toute sécurité dans AEM. AEM Developer Console génère des informations d’identification de service, qui sont utilisées par des applications, systèmes et services externes pour interagir par programmation avec les services AEM Author ou Publish sur HTTP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519/?quality=12&learn=on)
 

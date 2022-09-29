@@ -1,5 +1,5 @@
 ---
-title: Informations d’identification du service
+title: Informations d’identification du service Developer Console
 description: Les informations d’identification du service AEM sont utilisées pour faciliter les applications, systèmes et services externes permettant d’interagir par programmation avec les services AEM Author ou Publish via HTTP.
 version: Cloud Service
 doc-type: tutorial
@@ -13,7 +13,7 @@ topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: ef4579a44c1c940a3b7441e336db3790a0c7afd7
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 0%
@@ -59,7 +59,7 @@ __Il s’agit d’une initialisation unique par environnement as a Cloud Service
 1. Appuyez sur les points de suspension en regard de l’environnement dans la __Environnements__ et sélectionnez __Developer Console__
 1. Appuyez sur __Intégrations__ tab
 1. Appuyer __Obtention des informations d’identification du service__ button
-1. Les informations d’identification du service seront initialisées et affichées au format JSON.
+1. Les informations d’identification du service sont initialisées et affichées au format JSON.
 
 ![AEM Developer Console - Intégrations - Obtention des informations d’identification du service](./assets/service-credentials/developer-console.png)
 
@@ -85,7 +85,7 @@ Le téléchargement des informations d’identification du service suit les mêm
 
 ## Installation des informations d’identification du service
 
-Les informations d’identification du service fournissent les détails nécessaires à la génération d’un jeton JWT, qui est échangé contre un jeton d’accès utilisé pour s’authentifier avec AEM as a Cloud Service. Les informations d’identification du service doivent être stockées dans un emplacement sécurisé accessible par les applications, systèmes ou services externes qui l’utilisent pour accéder à AEM. Le mode et l’emplacement de gestion des informations d’identification du service seront uniques par client.
+Les informations d’identification du service fournissent les détails nécessaires à la génération d’un jeton JWT, qui est échangé contre un jeton d’accès utilisé pour s’authentifier avec AEM as a Cloud Service. Les informations d’identification du service doivent être stockées dans un emplacement sécurisé accessible par les applications, systèmes ou services externes qui l’utilisent pour accéder à AEM. Le mode et l’emplacement de gestion des informations d’identification du service sont uniques par client.
 
 Pour plus de simplicité, ce tutoriel transmet les informations d’identification du service dans via la ligne de commande. Toutefois, travaillez avec votre équipe de sécurité informatique pour comprendre comment stocker ces informations d’identification et y accéder conformément aux directives de sécurité de votre entreprise.
 

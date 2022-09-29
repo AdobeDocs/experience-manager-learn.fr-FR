@@ -1,19 +1,19 @@
 ---
 title: Chapitre 1 - Configuration et téléchargements de tutoriels - Content Services
-seo-title: Prise en main d’AEM Content Services - Chapitre 1 - Configuration du tutoriel
+seo-title: Getting Started with AEM Content Services - Chapter 1 -  Tutorial Set up
 description: Le chapitre 1 du tutoriel AEM sans affichage présente la configuration de ligne de base pour l’instance AEM du tutoriel.
-seo-description: Le chapitre 1 du tutoriel AEM sans affichage présente la configuration de ligne de base pour l’instance AEM du tutoriel.
-feature: Fragments de contenu, API
-topic: Sans affichage, gestion de contenu
+seo-description: Chapter 1 of the AEM Headless tutorial the baseline setup for the AEM instance for the tutorial.
+feature: Content Fragments, APIs
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f24a75f6-9062-498c-b782-7d9011aa0bcf
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 1%
+source-wordcount: '411'
+ht-degree: 2%
 
 ---
-
 
 # Configuration du tutoriel
 
@@ -21,16 +21,16 @@ La dernière version des composants principaux de la gestion de contenu web d’
 
 * AEM 6.5  ou version ultérieure
 * AEM WCM Core Components 2.4.0 ou version ultérieure
-   * Inclus dans le [module de contenu de l’AEM mobile WKND ci-dessous](#wknd-mobile-application-packages)
+   * Inclus dans la variable [WKND Mobile AEM Application Content Package ci-dessous](#wknd-mobile-application-packages)
 
-Avant de commencer ce tutoriel, assurez-vous que les instances AEM suivantes sont [installées et en cours d’exécution sur votre ordinateur local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install) :
+Avant de commencer ce tutoriel, assurez-vous que les instances AEM suivantes sont [installé et en cours d’exécution sur votre ordinateur local ;](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#Default%20Local%20Install):
 
-* **AEM** port d’ **autorisation 4502**
-* **AEM** port de  **publication 4503**
+* **Auteur AEM** on **port 4502**
+* **Publication AEM** on **port 4503**
 
 ## Packages d’applications mobiles WKND{#wknd-mobile-application-packages}
 
-Installez les packages de contenu AEM suivants sur **à la fois** AEM Author et AEM Publish, à l’aide de [!DNL AEM Package Manager].
+Installez les packages de contenu AEM suivants sur **both** Auteur AEM et publication AEM, à l’aide de [!DNL AEM Package Manager].
 
 * [ui.apps : GitHub > Ressources > com.adobe.aem.guides.wknd-mobile.ui.apps-x.x.x.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
    * [!DNL WKND Mobile Empty Template Type]
@@ -41,7 +41,7 @@ Installez les packages de contenu AEM suivants sur **à la fois** AEM Author et 
    * [!DNL WKND Mobile] Structure de dossiers DAM
    * [!DNL WKND Mobile] ressources image
 
-Dans [Chapitre 7](./chapter-7.md), nous allons exécuter l’[!DNL WKND Mobile] application mobile Android à l’aide d’[Android Studio](https://developer.android.com/studio) et le kit d’application Android fourni :
+Dans [Chapitre 7](./chapter-7.md) nous allons exécuter la variable [!DNL WKND Mobile] Application mobile Android utilisant [Android Studio](https://developer.android.com/studio) et l’APK (Android Application Package) fourni :
 
 * [[!DNL Android Mobile App: GitHub > Assets > wknd-mobile.x.x.x.apk]](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
 
@@ -56,13 +56,13 @@ Cet ensemble de packages de contenu crée le contenu et la configuration décrit
 
 ## Code source
 
-Le code source pour le projet AEM et la [!DNL Android Mobile App] est disponible sur la page [[!DNL AEM Guides - WKND Mobile GitHub Project]](https://github.com/adobe/aem-guides-wknd-mobile). Le code source n’a pas besoin d’être créé ou modifié pour ce tutoriel. Il est fourni pour garantir une transparence totale dans la création de tous les aspects du tutoriel.
+Le code source pour le projet AEM et le [!DNL Android Mobile App] sont disponibles sur la [[!DNL AEM Guides - WKND Mobile GitHub Project]](https://github.com/adobe/aem-guides-wknd-mobile). Le code source n’a pas besoin d’être créé ou modifié pour ce tutoriel. Il est fourni pour garantir une transparence totale dans la création de tous les aspects du tutoriel.
 
-Si vous rencontrez un problème avec le tutoriel ou le code, laissez un [problème GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
+Si vous rencontrez un problème avec le tutoriel ou le code, veuillez laisser une [Problème GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
 
 ## Passer à la fin
 
-Pour passer à la fin du tutoriel, le module de contenu [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) peut être installé sur **l’auteur AEM et la publication AEM.** Notez que le contenu et la configuration ne s’afficheront pas comme publiés dans l’auteur AEM. Cependant, en raison du déploiement manuel, tout le contenu et la configuration requis seront disponibles sur AEM Publish, ce qui permettra à [!DNL WKND Mobile App] d’accéder au contenu.
+Pour passer à la fin du tutoriel, la variable [com.adobe.aem.guides.wknd-mobile.content.chapter-5.zip](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest) Le module de contenu peut être installé sur **both** Auteur AEM et Publication AEM. Notez que le contenu et la configuration ne s’afficheront pas comme publié dans l’auteur AEM. Cependant, en raison du déploiement manuel, tout le contenu et la configuration requis sont disponibles sur AEM Publish, ce qui permet à l’ [!DNL WKND Mobile App] pour accéder au contenu.
 
 
 ## Étape suivante

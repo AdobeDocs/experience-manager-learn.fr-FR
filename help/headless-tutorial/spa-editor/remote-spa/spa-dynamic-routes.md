@@ -8,9 +8,9 @@ level: Beginner
 kt: 7636
 thumbnail: kt-7636.jpeg
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
-source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '916'
 ht-degree: 1%
 
 ---
@@ -176,8 +176,3 @@ Félicitations ! Vous avez ajouté la capacité de création aux itinéraires d
 + Contenu créé sur l&#39;itinéraire dynamique Bali Surf Camp !
 
 Vous avez maintenant terminé d’explorer les premières étapes de la manière dont AEM Éditeur SPA peut être utilisé pour ajouter des zones modifiables spécifiques à un  distant !
-
-
->[!NOTE]
->
->Restez à l&#39;écoute ! Ce tutoriel sera développé afin de couvrir les bonnes pratiques et recommandations de l’Adobe sur le déploiement de la solution SPA Editor dans AEM environnements as a Cloud Service et de production.

@@ -15,9 +15,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 85e1b450-39c0-4bb8-be5d-d7f50b102f3d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 6%
 
 ---
@@ -28,16 +28,15 @@ L’option Envoyer vers le point de fin REST transmet les données renseignées 
 
 \{fieldName\} = \{parameterName\}. Par exemple, submitterName est le nom d’un champ de formulaire adaptatif et submitter le nom du paramètre. Dans la page de remerciement, vous pouvez accéder au paramètre submitter à l’aide de request.getParameter(&quot;submitter&quot;) pour obtenir la valeur du champ du nom de l’expéditeur.
 
-submitterName=submitter
+`submitterName=submitter`
 
-Dans la capture d’écran ci-dessous, nous envoyons le formulaire adaptatif pour vous remercier, sur la page /content/thankyou. À cette page de remerciement, nous transmettons 3 attributs de requête qui contiendront les valeurs des champs de formulaire.
+Dans la capture d’écran ci-dessous, nous envoyons le formulaire adaptatif pour vous remercier, sur la page /content/thankyou. À cette page de remerciement, nous transmettons 3 attributs de requête contenant les valeurs des champs de formulaire.
 
-![remerciement](assets/thankyoupage.gif)
+![Page de remerciement](assets/thankyoupage.gif)
 
-Vous pouvez également envoyer vers le point de terminaison externe via POST. Pour ce faire, il vous suffit de cocher la case &quot;Activer la requête post&quot; et de fournir l’URL du point de terminaison externe. Lorsque vous envoyez votre formulaire, vous obtenez la page de remerciement et le point de terminaison du POST est appelé simultanément.
+Vous pouvez également envoyer vers le point de terminaison externe via POST. Pour ce faire, il vous suffit de cocher la case &quot;Activer la requête post&quot; et de fournir l’URL du point de terminaison externe. Lorsque vous envoyez votre formulaire, vous obtenez une page de remerciement et le point de terminaison du POST est appelé simultanément.
 
-![capture](assets/capture.gif)
-
+![Configuration de capture](assets/capture.gif)
 
 Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-dessous :
 

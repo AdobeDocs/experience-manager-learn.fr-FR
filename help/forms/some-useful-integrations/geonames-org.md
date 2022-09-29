@@ -7,10 +7,11 @@ kt: 9724
 topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 15b57ec6792bc47d0041946014863b13867adf22
+exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 0%
+source-wordcount: '606'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +30,7 @@ Les étapes suivantes ont été suivies pour mettre en oeuvre des listes déroul
 
 ## Créer un compte de développeur
 
-Création d’un compte développeur avec [Geonames](https://www.geonames.org/login). Notez le nom d’utilisateur. Ce nom d’utilisateur sera nécessaire pour appeler les API REST de geonames.org.
+Création d’un compte développeur avec [Geonames](https://www.geonames.org/login). Notez le nom d’utilisateur. Ce nom d’utilisateur est nécessaire pour appeler les API REST de geonames.org.
 
 ## Création d’un fichier Swagger/OpenAPI
 
@@ -58,7 +59,7 @@ Vous devez créer 2 sources de données (l’une pour récupérer tous les pays 
 
 ## Création d’un modèle de données de formulaire
 
-L’intégration de données AEM Forms offre une interface utilisateur intuitive pour créer et utiliser des [modèles de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Basez le modèle de données de formulaire sur les sources de données créées à l’étape précédente. Modèle de données de formulaire avec 2 sources de données
+L’intégration de données AEM Forms offre une interface utilisateur intuitive pour créer et utiliser des [modèles de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=fr). Basez le modèle de données de formulaire sur les sources de données créées à l’étape précédente. Modèle de données de formulaire avec 2 sources de données
 
 ![fdm](assets/geonames-fdm.png)
 
@@ -82,8 +83,3 @@ Nous devons remplir la liste déroulante Etat/Province en fonction du pays séle
 
 Ajoutez 2 listes déroulantes appelées villes et départements dans le formulaire pour répertorier les départements et villes en fonction du pays et de l&#39;état/province sélectionnés.
 ![exercice](assets/cascading-drop-down-exercise.png)
-
-
-
-
-

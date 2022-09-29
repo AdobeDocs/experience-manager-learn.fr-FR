@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9165
 thumbnail: 337960.jpeg
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 7cfc150989453eec776eb34eac9b4598c46b0d7c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '223'
 ht-degree: 6%
 
 ---
@@ -34,7 +34,7 @@ Découvrez comment optimiser votre optimisation du référencement en créant de
 
 ### Configuration OSGi du planificateur de plan de site
 
-Définit la variable [Configuration d’usine OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) pour la fréquence (en utilisant [expressions cron](http://www.cronmaker.com)) les plans de site seront regénérés/générés et mis en cache dans AEM.
+Définit la variable [Configuration d’usine OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) pour la fréquence (en utilisant [expressions cron](http://www.cronmaker.com)) les plans de site sont regénérés/générés et mis en cache dans AEM.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -52,7 +52,7 @@ AEM sitemap prend en charge les URL absolues en utilisant [Mappage Sling](https:
 
 Exemple de définition de noeud de mappage Sling pour `https://wknd.com` peut être défini sous `/etc/map/https` comme suit :
 
-| Chemin  | Nom de la propriété | Type de propriété | Valeur de la propriété |
+| Chemin | Nom de la propriété | Type de propriété | Valeur de la propriété |
 |------|----------|---------------|-------|
 | `/etc/map/https/wknd-site` | `jcr:primaryType` | Chaîne | `nt:unstructured` |
 | `/etc/map/https/wknd-site` | `sling:internalRedirect` | Chaîne | `/content/wknd/(.*)` |

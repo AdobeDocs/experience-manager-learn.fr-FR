@@ -1,5 +1,5 @@
 ---
-title: Tester la solution
+title: Test de la solution Forms Assembler
 description: Exécutez ExecuteAssemblerService.java pour tester la solution.
 type: Documentation
 role: Developer
@@ -8,10 +8,10 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 exl-id: 5139aa84-58d5-40e3-936a-0505bd407ee8
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 0%
+source-wordcount: '270'
+ht-degree: 3%
 
 ---
 
@@ -45,6 +45,6 @@ ht-degree: 0%
 
 
 >[!NOTE]
-> La toute première fois que vous exécutez le programme java, vous obtenez une erreur HTTP 403. Pour passer à l’étape suivante, assurez-vous que vous avez envoyé la variable [autorisations appropriées pour l’utilisateur du compte technique dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+> La toute première fois que vous exécutez le programme java, vous obtenez une erreur HTTP 403. Pour passer à l’étape suivante, assurez-vous que vous avez envoyé la variable [autorisations appropriées pour l’utilisateur du compte technique dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=fr#configurer-l’accès-dans-aem).
 
 **Utilisateurs d’AEM Forms** est le rôle que j&#39;ai utilisé pour ce cours.

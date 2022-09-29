@@ -1,26 +1,27 @@
 ---
 title: Créer un servlet
 description: Créer un servlet pour gérer les demandes du POST pour enregistrer les données de formulaire
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
 kt: 6539
 thumbnail: 6539.pg
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a24ea445-3997-4324-99c4-926b17c8d2ac
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 3%
+source-wordcount: '80'
+ht-degree: 0%
 
 ---
 
 # Créer un servlet
 
-L’étape suivante consiste à créer un servlet qui appellera les méthodes appropriées de notre service OSGi personnalisé. Le servlet a accès aux données de formulaire adaptatif, aux informations sur les pièces jointes. Le servlet renvoie un ID d’application unique qui peut être utilisé pour récupérer le formulaire adaptatif partiellement rempli.
+L’étape suivante consiste à créer un servlet qui appelle les méthodes appropriées de notre service OSGi personnalisé. Le servlet a accès aux données de formulaire adaptatif, aux informations sur les pièces jointes. Le servlet renvoie un ID d’application unique qui peut être utilisé pour récupérer le formulaire adaptatif partiellement rempli.
 
-Ce servlet sera appelé lorsque l’utilisateur clique sur le bouton Enregistrer et quitter du formulaire adaptatif.
+Ce servlet est appelé lorsque l’utilisateur clique sur le bouton Enregistrer et quitter sur le formulaire adaptatif.
 
 ```java
 package com.techmarketing.core.servlets;

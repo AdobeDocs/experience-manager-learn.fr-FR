@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '355'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ MarketoService marketoService;
 
 MarketoAuthenticationService implémente l’interface IAuthentication. Cette interface fait partie du SDK client AEM Forms. Le service récupère le jeton d’accès et insère le jeton dans le HttpHeader de AuthenticationDetails. Une fois que les HttpHeaders de l’objet AuthenticationDetails sont renseignés, l’objet AuthenticationDetails est renvoyé à la couche Dermis du modèle de données de formulaire.
 
-Faites attention à la chaîne renvoyée par la méthode getAuthenticationType. Cette chaîne sera utilisée lors de la configuration de votre source de données.
+Faites attention à la chaîne renvoyée par la méthode getAuthenticationType. Cette chaîne est utilisée lorsque vous configurez votre source de données.
 
 ### Obtenir le jeton d’accès
 

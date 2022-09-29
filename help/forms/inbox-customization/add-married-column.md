@@ -1,5 +1,5 @@
 ---
-title: 'Ajout de colonnes personnalisées '
+title: Ajout de colonnes personnalisées
 description: Ajouter des colonnes personnalisées pour afficher les données additionnelles du workflow
 feature: Adaptive Forms
 topics: development
@@ -12,9 +12,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '306'
 ht-degree: 8%
 
 ---
@@ -27,7 +27,7 @@ Pour afficher les données de workflow dans la boîte de réception, nous devons
 * [Importation du processus de révision](assets/review-workflow.zip)
 * [Vérification du workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
-Deux variables sont définies pour ce workflow (isMarié et revenu) et ses valeurs sont définies à l’aide du composant de variable définie. Ces variables seront disponibles sous forme de colonnes à ajouter à AEM boîte de réception
+Deux variables sont définies pour ce workflow (isMarié et revenu) et ses valeurs sont définies à l’aide du composant de variable définie. Ces variables sont disponibles sous forme de colonnes à ajouter à AEM boîte de réception
 
 ## Créer un service
 

@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: d268d5d6-f24f-4db9-b8e0-07dd769c6005
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 1%
+source-wordcount: '597'
+ht-degree: 2%
 
 ---
 
@@ -60,7 +60,7 @@ La ligne 6 exporte les xmlData du fichier du PDF
 1. /content/AemFormsSamples/exportdata
 1. /content/AemFormsSamples/outputservice
 1. Recherchez &quot;Sling Referrer filter&quot;.
-1. Cochez la case &quot;Autoriser vide&quot;. (Ce paramètre doit être utilisé à des fins de test uniquement) Il existe plusieurs façons de tester l’exemple de code. Le plus rapide et le plus simple est d’utiliser l’application Postman. Postman vous permet d’adresser des demandes de POST à votre serveur. Installez l’application Postman sur votre système.
+1. Cochez la case &quot;Autoriser vide&quot;. (Ce paramètre doit être utilisé à des fins de test uniquement) Il existe plusieurs façons de tester l’exemple de code. Le plus rapide et le plus simple est d’utiliser l’application Postman. Postman vous permet d’envoyer des requêtes de POST à votre serveur. Installez l’application Postman sur votre système.
 Lancez l’application et saisissez l’URL suivante pour tester l’API d’exportation des données.
 
 Assurez-vous que vous avez sélectionné &quot;POST&quot; dans la liste déroulante http://localhost:4502/content/AemFormsSamples/exportdata.html Assurez-vous que vous spécifiez &quot;Autorisation&quot; comme &quot;Auth de base&quot;. Indiquez le nom d’utilisateur et le mot de passe du serveur AEM Accédez à l’onglet &quot;Corps&quot; et spécifiez les paramètres de requête comme illustré dans l’image ci-dessous.
@@ -76,7 +76,7 @@ Le package contient 3 exemples. Les paragraphes suivants expliquent à quel mome
 * **Paramètres de la demande -**
 
    * **xdp_or_pdf_file** : Le fichier xdp ou pdf avec lequel vous souhaitez fusionner des données.
-   * **xmlfile**: Le fichier de données XML qui sera fusionné avec xdp_or_pdf_file
+   * **xmlfile**: Le fichier de données XML fusionné avec xdp_or_pdf_file
    * **saveLocation**: L’emplacement où enregistrer le document rendu sur votre système de fichiers. Par exemple c:\\documents\\sample.pdf
 
 ### Importer des données dans un fichier PDF
@@ -86,8 +86,8 @@ Le package contient 3 exemples. Les paragraphes suivants expliquent à quel mome
 * **Paramètres de la demande:**
 
    * **pdfile** : Le fichier pdf avec lequel vous souhaitez fusionner des données
-   * **xmlfile**: Le fichier de données XML qui sera fusionné avec le fichier pdf
-   * **saveLocation**: L’emplacement où enregistrer le document rendu sur votre système de fichiers. Par exemple, c:\\outputsample.pdf.
+   * **xmlfile**: Le fichier de données XML fusionné avec le fichier pdf
+   * **saveLocation**: L’emplacement où enregistrer le document rendu sur votre système de fichiers. Par exemple, `c:\\outputsample.pdf`.
 
 **Exporter des données à partir d’un fichier PDF**
 * Utilisation de FormsService pour exporter des données à partir d’un fichier de PDF

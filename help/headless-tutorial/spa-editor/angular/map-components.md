@@ -14,10 +14,10 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2380'
-ht-degree: 1%
+source-wordcount: '2372'
+ht-degree: 2%
 
 ---
 
@@ -35,11 +35,11 @@ Ce chapitre approfondit l’API de modèle JSON AEM et la manière dont le conte
 
 ## Ce que vous allez créer
 
-Ce chapitre examine la manière dont le `Text` Le composant SPA est mappé sur l’AEM `Text`composant. Une nouvelle `Image` SPA composant sera créé et peut être utilisé dans le SPA et créé dans l’. Fonctionnalités prêtes à l’emploi du **Conteneur de mises en page** et **Éditeur de modèles** les stratégies seront également utilisées pour créer une vue un peu plus variée en apparence.
+Ce chapitre examine la manière dont le `Text` Le composant SPA est mappé sur l’AEM `Text`composant. Une nouvelle `Image` SPA composant est créé et peut être utilisé dans le SPA et créé dans l’. Fonctionnalités prêtes à l’emploi du **Conteneur de mises en page** et **Éditeur de modèles** les stratégies seront également utilisées pour créer une vue un peu plus variée en apparence.
 
 ![Exemple de création finale de chapitre](./assets/map-components/final-page.png)
 
-## Conditions préalables
+## Prérequis
 
 Examinez les outils et les instructions requis pour configurer une [environnement de développement local](overview.md#local-dev-environment).
 
@@ -92,7 +92,7 @@ Voyons comment fonctionne le composant.
 
    `:type` est une propriété réservée qui répertorie la variable `sling:resourceType` (ou chemin) du composant AEM. La valeur de `:type` est utilisé pour mapper le composant AEM au composant SPA.
 
-   `text` et `richText` sont des propriétés supplémentaires qui seront exposées au composant SPA.
+   `text` et `richText` sont des propriétés supplémentaires qui sont exposées au composant SPA.
 
 ### Inspect du composant Texte
 
@@ -178,7 +178,7 @@ Voyons comment fonctionne le composant.
 
 8. Inspect **text.component.html** at `ui.frontend/src/app/components/text/text.component.html`.
 
-   Ce fichier est vide, car l’intégralité du contenu du composant est définie par la propriété `innerHTML` .
+   Ce fichier est vide, car l’intégralité du contenu du composant est définie par la variable `innerHTML` .
 
 9. Inspect **app.module.ts** at `ui.frontend/src/app/app.module.ts`.
 
@@ -211,11 +211,11 @@ Avant de passer au code SPA, examinez le modèle JSON fourni par AEM.
 
    ![JSON du composant principal d’image](./assets/map-components/image-json.png)
 
-   Propriétés de `src`, `alt`, et `title` sera utilisé pour renseigner la SPA `Image` composant.
+   Propriétés de `src`, `alt`, et `title` sont utilisés pour remplir les SPA `Image` composant.
 
    >[!NOTE]
    >
-   > D’autres propriétés d’image sont exposées (`lazyEnabled`, `widths`) qui permettent à un développeur de créer un composant de chargement adaptatif et différé. Le composant créé dans ce tutoriel sera simple et sera **not** utilisez ces propriétés avancées.
+   > D’autres propriétés d’image sont exposées (`lazyEnabled`, `widths`) qui permettent à un développeur de créer un composant de chargement adaptatif et différé. Le composant créé dans ce tutoriel est simple et fonctionne comme suit : **not** utilisez ces propriétés avancées.
 
 2. Revenez à votre IDE et ouvrez le `en.model.json` at `ui.frontend/src/mocks/json/en.model.json`. Puisqu’il s’agit d’un nouveau composant pour notre projet, nous devons nous moquer de l’image JSON.
 
@@ -244,7 +244,7 @@ Avant de passer au code SPA, examinez le modèle JSON fourni par AEM.
            ],
    ```
 
-   Le projet comprend un exemple d’image à l’adresse `/mock-content/adobestock-140634652.jpeg` qui sera utilisé avec la variable **serveur de développement webpack**.
+   Le projet comprend un exemple d’image à l’adresse `/mock-content/adobestock-140634652.jpeg` qui est utilisé avec la variable **serveur de développement webpack**.
 
    Vous pouvez afficher l’intégralité de la [en.model.json ici](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/map-components-solution/ui.frontend/src/mocks/json/en.model.json).
 
@@ -498,6 +498,6 @@ Les étapes suivantes se dérouleront à l’aide de l’IDE Visual Studio Code 
     </workspaceFilter>
    ```
 
-   Le `filter.xml` est chargé d’identifier les chemins d’accès des noeuds qui seront installés avec le package. Remarquez la variable `mode="merge"` sur chacun des filtres qui indique que le contenu existant ne sera pas modifié, seul un nouveau contenu est ajouté. Étant donné que les auteurs de contenu peuvent mettre à jour ces chemins, il est important qu’un déploiement de code **not** remplacer le contenu. Voir [Documentation de FileVault](https://jackrabbit.apache.org/filevault/filter.html) pour plus d’informations sur l’utilisation des éléments de filtre.
+   Le `filter.xml` est chargé d’identifier les chemins d’accès des noeuds installés avec le package. Remarquez la variable `mode="merge"` sur chacun des filtres qui indique que le contenu existant ne sera pas modifié, seul un nouveau contenu est ajouté. Étant donné que les auteurs de contenu peuvent mettre à jour ces chemins, il est important qu’un déploiement de code **not** remplacer le contenu. Voir [Documentation de FileVault](https://jackrabbit.apache.org/filevault/filter.html) pour plus d’informations sur l’utilisation des éléments de filtre.
 
    Comparer `ui.content/src/main/content/META-INF/vault/filter.xml` et `ui.apps/src/main/content/META-INF/vault/filter.xml` pour comprendre les différents noeuds gérés par chaque module.

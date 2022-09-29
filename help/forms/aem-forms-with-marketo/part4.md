@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '314'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ L’utilisateur saisit l’ID de piste et lorsqu’il sort du service Marketo po
 1. Faites glisser et déposez un composant TextField et un composant Panneau sur le formulaire adaptatif. Définissez le titre du composant TextField &quot;Enter Lead Id&quot; et définissez son nom sur &quot;LeadId&quot;.
 1. Faites glisser et déposez 2 composants TextField sur le composant Panneau .
 1. Définissez le nom et le titre des 2 composants de champ de texte sur FirstName et LastName .
-1. Configurez le composant Panneau pour qu’il soit un composant répétable en définissant les valeurs Minimum à 1 et Maximum à -1. Cela est nécessaire, car le service Marketo renvoie un tableau d’objets de piste et vous devez disposer d’un composant répétable pour afficher les résultats. Cependant, dans ce cas, nous ne récupérerons qu’un seul objet de piste, car nous effectuons des recherches sur les objets de piste à l’aide de son identifiant.
+1. Configurez le composant Panneau pour qu’il soit un composant répétable en définissant les valeurs Minimum à 1 et Maximum à -1. Cela est nécessaire, car le service Marketo renvoie un tableau d’objets de piste et vous devez disposer d’un composant répétable pour afficher les résultats. Cependant, dans ce cas, nous ne récupérons qu’un seul objet de piste, car nous recherchons les objets de piste selon leur identifiant.
 1. Créez une règle sur le champ LeadId comme illustré dans l’image ci-dessous.
 1. Prévisualisez le formulaire, saisissez un ID de piste valide dans le champ LeadID et désélectionnez-le. Les champs Prénom et Nom doivent être renseignés avec les résultats de l’appel de service.
 

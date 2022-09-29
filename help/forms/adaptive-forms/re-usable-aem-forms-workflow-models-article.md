@@ -1,18 +1,18 @@
 ---
-title: Créez des modèles de workflow AEM Forms réutilisables.
-description: modèles de workflow indépendants de Forms adaptatif.
+title: Modèles de processus AEM Forms réutilisables
+description: Découvrez comment créer des modèles de workflow indépendants de Forms adaptatif.
 feature: Workflow
 version: 6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3354a58b-d58e-4ddb-8f90-648554a64db8
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 0%
+source-wordcount: '285'
+ht-degree: 1%
 
 ---
-
 
 # Création de modèles de processus AEM Forms réutilisables{#create-re-usable-aem-forms-workflow-models}
 
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 Pour concevoir un tel workflow, procédez comme suit :
 
-1. Connexion à AEM
-1. Pointez votre navigateur vers le [modèle de workflow](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
-1. Cliquez sur Créer | Créer un modèle pour ajouter un modèle de processus
+1. Connectez-vous à AEM 
+1. Pointez votre navigateur sur [modèle de workflow](http://localhost:4502/libs/cq/workflow/admin/console/content/models.html)
+1. Cliquez sur __Créer > Créer un modèle__ pour ajouter un modèle de workflow
 1. Indiquez le nom et le titre appropriés au modèle de processus, puis cliquez sur Terminé
 1. Ouvrez le modèle nouvellement créé en mode d’édition.
 1. Faites glisser et déposez le composant Affecter une tâche sur votre modèle de workflow.
@@ -30,11 +30,10 @@ Pour concevoir un tel workflow, procédez comme suit :
 1. Onglet Forms et documents
 1. Sélectionnez le Type : formulaire adaptatif ou formulaire adaptatif en lecture seule.
 
-Le chemin du formulaire peut être spécifié de trois façons :
+Le chemin d’accès au formulaire peut être spécifié de trois manières différentes.
 
-1. Disponible à un chemin absolu : cela signifie que le processus sera étroitement couplé à un formulaire adaptatif. Ce n&#39;est pas ce que nous voulons ici.
-1. **Envoyé au processus**  : cela signifie que lorsque le formulaire adaptatif est envoyé, le moteur de processus extrait le nom du formulaire des données envoyées. Il s’agit de l’option qui doit être sélectionnée.
-1. Disponible dans un chemin d’accès dans une variable : cela signifie que le formulaire adaptatif sera récupéré dans la variable de workflow.
-La capture d’écran suivante montre l’option appropriée que vous devez choisir pour le processus de découplage du formulaire adaptatif
+1. Disponible à un chemin d’accès absolu : cela signifie que le processus est étroitement lié au formulaire adaptatif. Ce n&#39;est pas ce que nous voulons ici.
+1. **Envoyé au workflow** - Cela signifie que lorsque le formulaire adaptatif est envoyé, le moteur de workflow extrait le nom du formulaire des données envoyées. Il s’agit de l’option qui doit être sélectionnée.
+1. Disponible dans un chemin d’accès dans une variable : cela signifie que le formulaire adaptatif est sélectionné dans la variable de workflow. La capture d’écran suivante vous montre l’option correcte que vous devez choisir pour le découplage du processus du formulaire adaptatif.
 
-![workflowmodel](assets/workflomodel.PNG)
+![Modèles de processus AEM Forms réutilisables](assets/workflomodel.PNG)

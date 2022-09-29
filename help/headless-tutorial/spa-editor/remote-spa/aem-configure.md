@@ -8,10 +8,10 @@ level: Beginner
 kt: 7631
 thumbnail: kt-7631.jpeg
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
-source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '1215'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -161,7 +161,7 @@ Le mappage peut être effectué avec [Mappage Sling](https://sling.apache.org/do
    The 'wknd-app-routes-adventure' mapping, maps requests to the SPA's adventure route 
    to it's corresponding page in AEM at /content/wknd-app/us/en/home/adventure/xxx.
    
-   Note the adventure AEM pages will be created directly in AEM.
+   Note the adventure AEM pages are created directly in AEM.
    -->
    
    <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
@@ -199,7 +199,7 @@ Les effets de mappage Sling AEM exécutés sur `http` et `localhost`, donc ne pr
 
 ## Stratégies de sécurité du partage des ressources cross-origin
 
-Configurez ensuite AEM pour protéger le contenu afin que seul ce SPA puisse accéder au contenu . Configurer [Partage des ressources cross-origin en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html).
+Configurez ensuite AEM pour protéger le contenu afin que seul ce SPA puisse accéder au contenu . Configurer [Partage des ressources cross-origin en AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=fr).
 
 1. Dans votre IDE, ouvrez le `ui.config` Sous-projet Maven
 1. Naviguer `src/main/content/jcr_root/apps/wknd-app/osgiconfig/config`

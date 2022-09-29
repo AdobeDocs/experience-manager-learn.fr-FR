@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2712'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Ce chapitre ajoute un menu de navigation à un `Header` composant. Le menu de na
 
 ![Navigation implémentée](assets/navigation-routing/final-navigation-implemented.gif)
 
-## Conditions préalables
+## Prérequis
 
 Examinez les outils et les instructions requis pour configurer une [environnement de développement local](overview.md#local-dev-environment).
 
@@ -63,7 +63,7 @@ Examinez les outils et les instructions requis pour configurer une [environnemen
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-3. Installez le module terminé pour le module traditionnel [Site de référence WKND](https://github.com/adobe/aem-guides-wknd/releases/latest). Les images fournies par [Site de référence WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) sera réutilisé sur le SPA WKND. Le module peut être installé à l’aide de [AEM Gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp).
+3. Installez le module terminé pour le module traditionnel [Site de référence WKND](https://github.com/adobe/aem-guides-wknd/releases/latest). Les images fournies par [Site de référence WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) sont réutilisés sur le SPA WKND. Le module peut être installé à l’aide de [AEM Gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp).
 
    ![Package Manager install wknd.all](./assets/map-components/package-manager-wknd-all.png)
 
@@ -71,7 +71,7 @@ Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/a
 
 ## Mises à jour du composant d’en-tête Inspect {#inspect-header}
 
-Dans les chapitres précédents, la `HeaderComponent` a été ajouté en tant que composant d’Angular pur inclus via . `app.component.html`. Dans ce chapitre, le `HeaderComponent` Le composant est supprimé de l’application et est ajouté via la méthode [Éditeur de modèles](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=fr). Cela permet aux utilisateurs de configurer le menu de navigation de la variable `HeaderComponent` dans AEM.
+Dans les chapitres précédents, la `HeaderComponent` a été ajouté en tant que composant d’Angular pur inclus via . `app.component.html`. Dans ce chapitre, le `HeaderComponent` Le composant est supprimé de l’application et ajouté via la méthode [Éditeur de modèles](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=fr). Cela permet aux utilisateurs de configurer le menu de navigation de la variable `HeaderComponent` dans AEM.
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ Créez ensuite des pages supplémentaires dans AEM qui serviront de vues différ
    }
    ```
 
-   Sous `:children` vous devriez voir une entrée pour chacune des pages créées. Le contenu de toutes les pages figure dans cette requête JSON initiale. Une fois que le routage de navigation est implémenté, les vues suivantes du SPA sont chargées rapidement, puisque le contenu est déjà disponible côté client.
+   Sous `:children` vous devriez voir une entrée pour chacune des pages créées. Le contenu de toutes les pages figure dans cette requête JSON initiale. Une fois que le routage de navigation est mis en oeuvre, les vues suivantes du SPA sont rapidement chargées, puisque le contenu est déjà disponible côté client.
 
    Il n’est pas judicieux de charger **TOUT** du contenu d’un SPA dans la requête JSON initiale, car cela ralentirait le chargement initial de la page. Examinons ensuite la manière dont la profondeur d’hiérarchie des pages est collectée.
 
@@ -365,7 +365,7 @@ Mettez ensuite en oeuvre le menu de navigation avec une nouvelle `NavigationComp
    }
    ```
 
-   Il s’agit d’une classe simple qui représente un lien de navigation individuel. Dans le constructeur de classe auquel nous nous attendons `data` correspondant à l’objet JSON transmis par AEM. Cette classe sera utilisée dans les `NavigationComponent` et `HeaderComponent` pour remplir facilement la structure de navigation.
+   Il s’agit d’une classe simple qui représente un lien de navigation individuel. Dans le constructeur de classe auquel nous nous attendons `data` correspondant à l’objet JSON transmis par AEM. Cette classe est utilisée dans les `NavigationComponent` et `HeaderComponent` pour remplir facilement la structure de navigation.
 
    Aucune transformation de données n’est effectuée, cette classe est principalement créée pour taper fortement le modèle JSON. Notez que `this.children` est saisi comme `NavigationLink[]` et que le constructeur crée de manière récursive de nouvelles `NavigationLink` pour chacun des éléments du `children` tableau. Rappelez ce modèle JSON pour `Header` est hiérarchique.
 
@@ -637,7 +637,7 @@ Maintenant que la navigation a été mise en oeuvre, inspectez le routage dans A
 
    `AemPageMatcher` est un routeur d’Angular personnalisé [UrlMatcher](https://angular.io/api/router/UrlMatcher), qui correspond à tout ce qui &quot;ressemble&quot; à une page d’AEM qui fait partie de cette application d’Angular.
 
-   `PageComponent` est le composant d’Angular qui représente une page dans AEM et les itinéraires correspondants seront appelés. Le `PageComponent` seront inspectées plus en profondeur.
+   `PageComponent` est le composant d’Angular qui représente une page dans AEM et utilisé pour effectuer le rendu des itinéraires correspondants. Le `PageComponent` est examiné plus loin dans le tutoriel.
 
    `AemPageDataResolver`, fourni par le SDK JS de l’éditeur d’AEM, est une [Résolveur du routeur d’Angular](https://angular.io/api/router/Resolve) utilisé pour transformer l’URL d’itinéraire, qui est le chemin d’accès dans AEM incluant l’extension .html, en chemin d’accès à la ressource dans AEM, qui est le chemin d’accès à la page moins l’extension.
 

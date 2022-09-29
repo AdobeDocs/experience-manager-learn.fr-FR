@@ -7,31 +7,31 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 8507
-source-git-commit: e01d93591d1c00b2abec3430fdfa695b32165e54
+exl-id: 9ad69407-2413-416f-9cec-43f88989b31d
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
-
 # Conversion d’une chaîne séparée par des virgules en tableau de chaîne {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Lorsque votre formulaire est basé sur un modèle de données de formulaire qui comporte un tableau de chaînes comme paramètre d’entrée, vous devez manipuler les données de formulaire adaptatif envoyées pour insérer un tableau de chaînes. Par exemple, si vous avez lié un champ de case à cocher à un élément de modèle de données de formulaire de type tableau de chaîne, les données du champ de case à cocher seront dans un format de chaîne séparé par des virgules. L’exemple de code répertorié ci-dessous vous montre comment remplacer la chaîne séparée par des virgules par un tableau de chaînes.
+Lorsque votre formulaire est basé sur un modèle de données de formulaire qui comporte un tableau de chaînes comme paramètre d’entrée, vous devez manipuler les données de formulaire adaptatif envoyées pour insérer un tableau de chaînes. Par exemple, si vous avez lié un champ de case à cocher à un élément de modèle de données de formulaire de type tableau de chaîne, les données du champ de case à cocher sont dans un format de chaîne séparé par des virgules. L’exemple de code répertorié ci-dessous vous montre comment remplacer la chaîne séparée par des virgules par un tableau de chaînes.
 
 ## Création d’une étape de processus
 
-Une étape de processus est utilisée dans un workflow AEM lorsque nous voulons que notre workflow exécute une certaine logique. L’étape de processus peut être associée à un script ECMA ou à un service OSGi. Notre étape de processus personnalisée exécutera le service OSGi.
+Une étape de processus est utilisée dans un workflow AEM lorsque nous voulons que notre workflow exécute une certaine logique. L’étape de processus peut être associée à un script ECMA ou à un service OSGi. Notre étape de processus personnalisée exécute le service OSGi.
 
 Les données envoyées sont au format suivant. La valeur de l’élément businessUnits est une chaîne séparée par des virgules qui doit être convertie en un tableau de chaînes.
 
 ![submit-data](assets/submitted-data-string.png)
 
-Les données d’entrée pour le point de terminaison rest associé au modèle de données de formulaire attendent un tableau de chaînes comme illustré dans cette capture d’écran. Le code personnalisé de l’étape de processus convertit les données envoyées dans au format correct.
+Les données d’entrée pour le point de terminaison rest associé au modèle de données de formulaire attendent un tableau de chaînes comme illustré dans cette capture d’écran. Le code personnalisé de l’étape du processus convertit les données envoyées dans le format correct.
 
 ![fdm-string-array](assets/string-array-fdm.png)
 
-Nous transmettons le chemin d’accès à l’objet JSON et le nom de l’élément à l’étape de processus. Le code de l’étape du processus remplace les valeurs séparées par des virgules de l’élément en un tableau de chaînes.
+Nous transmettons le chemin d’accès à l’objet JSON et le nom de l’élément à l’étape de processus. Le code de l’étape de processus remplace les valeurs séparées par des virgules de l’élément en un tableau de chaînes.
 ![process-step](assets/create-string-array.png)
 
 >[!NOTE]

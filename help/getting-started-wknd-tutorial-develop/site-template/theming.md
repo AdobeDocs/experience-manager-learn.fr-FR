@@ -11,18 +11,18 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
 
 # Workflow de thème {#theming}
 
-Dans ce chapitre, nous allons mettre à jour les sources de thème d’un site Adobe Experience Manager pour appliquer des styles spécifiques à la marque. Nous allons apprendre à utiliser un serveur proxy pour afficher un aperçu des mises à jour CSS et JavaScript pendant que nous codons par rapport au site en direct. Ce tutoriel explique également comment déployer des mises à jour de thème sur un site AEM à l’aide du pipeline front-end d’Adobe Cloud Manager.
+Dans ce chapitre, nous mettons à jour les sources de thème d’un site Adobe Experience Manager pour appliquer des styles spécifiques à la marque. Nous apprenons à utiliser un serveur proxy pour afficher un aperçu des mises à jour CSS et JavaScript pendant que nous codons par rapport au site en direct. Ce tutoriel explique également comment déployer des mises à jour de thème sur un site AEM à l’aide du pipeline front-end d’Adobe Cloud Manager.
 
-À la fin, notre site sera mis à jour afin d’inclure des styles correspondant à la marque WKND.
+À la fin, notre site est mis à jour afin d’inclure des styles correspondant à la marque WKND.
 
 ## Prérequis {#prerequisites}
 

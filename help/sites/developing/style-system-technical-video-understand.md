@@ -1,39 +1,39 @@
 ---
 title: Comprendre comment coder pour le système de style AEM
-description: Dans cette vidéo, nous examinerons l’anatomie du code CSS (ou LESS) et du code JavaScript utilisé pour appliquer un style au composant du titre principal d’Adobe Experience Manager à l’aide du système de style, ainsi que la manière dont ces styles sont appliqués au code HTML et au modèle DOM.
+description: Dans cette vidéo, nous examinerons l’anatomie du code CSS (ou LESS) et du code JavaScript utilisé pour appliquer un style au composant du titre principal d’Adobe Experience Manager à l’aide du système de style, ainsi que la manière dont ces styles sont appliqués au HTML et au DOM.
 feature: Style System
 version: 6.4, 6.5
 topic: Development
 role: Developer
 level: Intermediate, Experienced
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 8fbc3819-3214-4c58-8629-a27eb6f0c545
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1090'
 ht-degree: 2%
 
 ---
 
-
 # Comprendre comment coder pour le système de style{#understanding-how-to-code-for-the-aem-style-system}
 
-Dans cette vidéo, nous examinerons l’anatomie du code CSS (ou [!DNL LESS]) et du code JavaScript utilisé pour appliquer un style au composant du titre principal d’Experience Manager à l’aide du système de style, ainsi que la manière dont ces styles sont appliqués au code HTML et au modèle DOM.
+Dans cette vidéo, nous allons examiner l’anatomie du CSS (ou [!DNL LESS]) et JavaScript utilisés pour mettre en forme le composant Titre principal d’Experience Manager à l’aide du système de style, ainsi que la manière dont ces styles sont appliqués au HTML et au DOM.
 
 
 ## Comprendre comment coder pour le système de style {#understanding-how-to-code-for-the-style-system}
 
 >[!VIDEO](https://video.tv.adobe.com/v/21538/?quality=12&learn=on)
 
-Le package d’AEM fourni (**technical-review.sites.style-system-1.0.0.zip**) installe l’exemple de style de titre, les exemples de stratégies pour les composants We.Retail Layout Container et Titre , ainsi qu’un exemple de page.
+Package d’AEM fourni (**technical-review.sites.style-system-1.0.0.zip**) installe l’exemple de style de titre, les exemples de stratégies pour les composants We.Retail Layout Container et Title , ainsi qu’un exemple de page.
 
 [technical-review.sites.style-system-1.0.0.zip](assets/technical-review.sites.style-system-1.0.0.zip)
 
 ### CSS {#the-css}
 
-Voici la définition de [!DNL LESS] pour l’exemple de style trouvé à l’adresse :
+Voici la variable [!DNL LESS] définition de l’exemple de style disponible à l’adresse :
 
 * `/apps/demo/sites/style-system/clientlib-example/components/titles/styles/example.less`
 
-Pour ceux qui préfèrent CSS, sous ce fragment de code se trouve le CSS dans lequel se compile cette [!DNL LESS].
+Pour ceux qui préfèrent CSS, sous ce fragment de code se trouve le CSS : [!DNL LESS] se compile dans .
 
 ```css
 /* LESS */
@@ -61,7 +61,7 @@ Pour ceux qui préfèrent CSS, sous ce fragment de code se trouve le CSS dans le
 }
 ```
 
-Le fichier [!DNL LESS] ci-dessus est compilé en mode natif par Experience Manager au fichier CSS suivant.
+Les éléments ci-dessus [!DNL LESS] est compilé en mode natif par Experience Manager à la page CSS suivante.
 
 ```css
 /* CSS */
@@ -92,7 +92,7 @@ Le code JavaScript suivant collecte et injecte la date et l’heure de dernière
 
 L’utilisation de jQuery est facultative, ainsi que les conventions de dénomination utilisées.
 
-Voici la définition de [!DNL LESS] pour l’exemple de style trouvé à l’adresse :
+Voici la variable [!DNL LESS] définition de l’exemple de style disponible à l’adresse :
 
 * `/apps/demo/sites/style-system/clientlib-example/components/titles/styles/js/title.js`
 
@@ -144,12 +144,12 @@ jQuery(function ($) {
 
 ## Bonnes pratiques de développement {#development-best-practices}
 
-### Bonnes pratiques HTML {#html-best-practices}
+### Bonnes pratiques relatives aux HTMLs {#html-best-practices}
 
-* Le code HTML (généré via HTL) doit être aussi sémantique structurellement que possible ; éviter le regroupement/l’imbrication inutile d’éléments.
-* Les éléments HTML doivent être adressables via des classes CSS de style BEM.
+* Le HTML (généré via HTL) doit être aussi sémantique structurellement que possible ; éviter le regroupement/l’imbrication inutile d’éléments.
+* Les éléments de HTML doivent être adressables via des classes CSS de style BEM.
 
-**Bon**  - Tous les éléments du composant peuvent être adressés via la notation BEM :
+**Bon** - Tous les éléments du composant peuvent être adressés via la notation BEM :
 
 ```html
 <!-- Good practice -->
@@ -160,7 +160,7 @@ jQuery(function ($) {
 </div>
 ```
 
-**Bad**  - La liste et les éléments de liste ne peuvent être adressés que par nom d’élément :
+**Mauvais** - Les éléments de liste et de liste ne peuvent être adressés que par nom d’élément :
 
 ```html
 <!-- Bad practice -->
@@ -173,7 +173,7 @@ jQuery(function ($) {
 
 * Il est préférable d’exposer plus de données et de les masquer que d’exposer trop peu de données nécessitant un développement ultérieur pour les exposer.
 
-   * La mise en oeuvre de bascules de contenu pouvant être créés peut contribuer à maintenir ce code HTML, dans lequel les auteurs peuvent sélectionner les éléments de contenu qui sont écrits dans le code HTML. L’ peut être particulièrement important lors de l’écriture d’images dans le code HTML qui ne peuvent pas être utilisées pour tous les styles.
+   * La mise en oeuvre de bascules de contenu pouvant être créés peut contribuer à maintenir ce HTML modéré, dans lequel les auteurs peuvent sélectionner les éléments de contenu qui sont écrits dans le HTML. L’ peut être particulièrement important lors de l’écriture d’images dans le HTML qui peuvent ne pas être utilisées pour tous les styles.
    * L’exception à cette règle est lorsque des ressources coûteuses, par exemple les images, sont exposées par défaut, car les images d’événement masquées par CSS sont, dans ce cas, récupérées inutilement.
 
       * Les composants d’image modernes utilisent souvent JavaScript pour sélectionner et charger l’image la plus appropriée au cas d’utilisation (fenêtre d’affichage).
@@ -182,23 +182,23 @@ jQuery(function ($) {
 
 >[!NOTE]
 >
->Le système de style crée une légère différence technique par rapport à [BEM](https://en.bem.info/), dans la mesure où les éléments `BLOCK` et `BLOCK--MODIFIER` ne sont pas appliqués au même élément, comme spécifié par [BEM](https://en.bem.info/).
+>Le système de style crée une légère différence technique par rapport à [BEM](https://en.bem.info/), en cela que la variable `BLOCK` et `BLOCK--MODIFIER` ne sont pas appliquées au même élément, comme spécifié par [BEM](https://en.bem.info/).
 >
->En raison de contraintes de produit, la valeur `BLOCK--MODIFIER` est appliquée au parent de l’élément `BLOCK` .
+>En raison des contraintes de produit, la variable `BLOCK--MODIFIER` s’applique au parent de la propriété `BLOCK` élément .
 >
->Tous les autres clients de [BEM](https://en.bem.info/) doivent être alignés avec .
+>Tous les autres clients de [BEM](https://en.bem.info/) doit être aligné sur .
 
-* Utilisez des préprocesseurs tels que [LESS](https://lesscss.org/) (pris en charge en mode natif par AEM) ou [SCSS](https://sass-lang.com/) (nécessite un système de génération personnalisé) pour permettre une définition CSS claire et une réutilisation.
+* Utilisez des préprocesseurs tels que [MOINS](https://lesscss.org/) (pris en charge par AEM natif) ou [SCSS](https://sass-lang.com/) (nécessite un système de génération personnalisé) pour permettre une définition CSS claire et une réutilisation.
 
 * maintenir l’uniforme du poids/spécificité du sélecteur ; Cela permet d’éviter et de résoudre les conflits en cascade CSS difficiles à identifier.
 * Organisez chaque style dans un fichier distinct.
-   * Ces fichiers peuvent être combinés à l’aide de LESS/SCSS `@imports` ou si une page CSS brute est requise, par le biais de l’inclusion de fichiers de bibliothèque cliente HTML ou de systèmes de création de ressources front-end personnalisés.
+   * Ces fichiers peuvent être combinés à l’aide de LESS/SCSS. `@imports` ou si une page CSS brute est requise, par le biais de l’inclusion de fichiers de bibliothèque cliente HTML ou de systèmes de création de ressources front-end personnalisés.
 * Évitez de mélanger de nombreux styles complexes.
    * Plus il y a de styles pouvant être appliqués simultanément à un composant, plus la variété des permutations est grande. Cela peut devenir difficile de maintenir/vérifier/assurer l’alignement de la marque.
 * Utilisez toujours les classes CSS (à la suite de la notation BEM) pour définir des règles CSS.
    * Si la sélection d’éléments sans classes CSS (c’est-à-dire des éléments nus) est absolument nécessaire, déplacez-les plus haut dans la définition CSS pour indiquer clairement qu’ils ont une spécificité inférieure à celle des collisions avec des éléments de ce type qui possèdent des classes CSS sélectionnables.
-* Évitez de mettre en forme `BLOCK--MODIFIER` directement, car il est attaché à la grille réactive. La modification de l’affichage de cet élément peut avoir une incidence sur le rendu et la fonctionnalité de la grille réactive. Par conséquent, seul le style à ce niveau est défini lorsque l’intention est de modifier le comportement de la grille réactive.
-* Appliquez la portée du style à l’aide de `BLOCK--MODIFIER`. `BLOCK__ELEMENT--MODIFIERS` peut être utilisé dans le composant, mais comme `BLOCK` représente le composant, et que le composant est ce qui est stylisé, le style est &quot;défini&quot; et défini via `BLOCK--MODIFIER`.
+* Évitez de mettre en forme le `BLOCK--MODIFIER` directement, car il est attaché à la grille réactive. La modification de l’affichage de cet élément peut avoir une incidence sur le rendu et la fonctionnalité de la grille réactive. Par conséquent, seul le style à ce niveau est défini lorsque l’intention est de modifier le comportement de la grille réactive.
+* Application d’une portée de style à l’aide de `BLOCK--MODIFIER`. Le `BLOCK__ELEMENT--MODIFIERS` peut être utilisé dans le composant, mais depuis la variable `BLOCK` représente le composant, et le composant est ce qui est stylisé, le style est &quot;défini&quot; et défini via `BLOCK--MODIFIER`.
 
 L’exemple de structure du sélecteur CSS doit être le suivant :
 
@@ -216,7 +216,7 @@ L’exemple de structure du sélecteur CSS doit être le suivant :
    <td valign="middle"><span class="code">.cmp-list</span></td> 
    <td valign="middle"><span class="code">.cmp-list__item</span></td> 
    <td valign="middle">→</td> 
-   <td><p><span class="code">.cmp-list—dark</span></p> <p><span class="code"> .cmp-list</span></p> <p><span class="code"> </span><strong><span class="code"> .cmp-list__item {  </span></strong></p> <p><strong> color: bleu;</strong></p> <p><strong> }</strong></p> </td> 
+   <td><p><span class="code">.cmp-list—dark</span></p> <p><span class="code"> .cmp-list</span></p> <p><span class="code"> </span><strong><span class="code"> .cmp-list__item { </span></strong></p> <p><strong> color: bleu;</strong></p> <p><strong> }</strong></p> </td> 
   </tr> 
   <tr> 
    <td valign="middle"><span class="code">.cmp-image—hero</span></td> 
@@ -228,7 +228,7 @@ L’exemple de structure du sélecteur CSS doit être le suivant :
  </tbody> 
 </table>
 
-Dans le cas des composants imbriqués, la profondeur du sélecteur CSS pour ces éléments de composant imbriqués dépassera le sélecteur de troisième niveau. Répétez le même modèle pour le composant imbriqué, mais délimité par la balise `BLOCK` du composant parent. En d’autres termes, démarrez la balise `BLOCK` du composant imbriqué au troisième niveau et la balise `ELEMENT` du composant imbriqué se trouve au quatrième niveau du sélecteur.
+Dans le cas des composants imbriqués, la profondeur du sélecteur CSS pour ces éléments de composant imbriqués dépassera le sélecteur de troisième niveau. Répétez le même modèle pour le composant imbriqué, mais défini par le paramètre `BLOCK`. Ou, en d’autres termes, démarrez le composant imbriqué `BLOCK` au troisième niveau et le `ELEMENT` se trouve au quatrième niveau du sélecteur.
 
 ### Bonnes pratiques relatives à JavaScript {#javascript-best-practices}
 
@@ -240,15 +240,15 @@ Les bonnes pratiques définies dans cette section concernent &quot;style-JavaScr
 * Réévaluez l’utilisation de Javascript s’il extrait de nouvelles données/du nouveau contenu de manière asynchrone (via AJAX) lorsque le composant peut apparaître plusieurs fois sur une page.
 * Gérez les expériences de publication et de création.
 * Réutilisez style-Javascript lorsque cela est possible.
-   * Par exemple, si plusieurs styles d’un composant nécessitent que son image soit déplacée vers une image d’arrière-plan, le script style-JavaScript peut être implémenté une seule fois et joint à plusieurs `BLOCK--MODIFIERs`.
+   * Par exemple, si plusieurs styles d’un composant nécessitent que son image soit déplacée vers une image d’arrière-plan, le script style-JavaScript peut être implémenté une fois et joint à plusieurs `BLOCK--MODIFIERs`.
 * Si possible, séparez style-JavaScript de JavaScript fonctionnel.
-* Évaluez le coût de JavaScript par rapport au fait de manifester ces modifications DOM dans le code HTML directement via HTL.
+* Évaluez le coût de JavaScript par rapport au fait de manifester ces modifications DOM dans le HTML directement via HTL.
    * Lorsqu’un composant qui utilise le style JavaScript nécessite une modification côté serveur, évaluez si la manipulation JavaScript peut être apportée à ce moment-là et quels sont les effets/ramifications sur les performances et la capacité de prise en charge du composant.
 
 #### Considérations sur les performances {#performance-considerations}
 
 * Style-JavaScript doit rester léger et mince.
-* Pour éviter le scintillement et les rétraits inutiles, masquez initialement le composant via `BLOCK--MODIFIER BLOCK` et affichez-le lorsque toutes les manipulations DOM dans le JavaScript sont terminées.
+* Pour éviter le scintillement et les retraits inutiles, masquez initialement le composant via `BLOCK--MODIFIER BLOCK`, puis affichez-la lorsque toutes les manipulations DOM du code JavaScript sont terminées.
 * Les manipulations style-JavaScript fonctionnent comme des plug-ins jQuery de base qui se joignent aux éléments et les modifient sur DOMReady.
 * Assurez-vous que les requêtes sont compressées et que CSS et JavaScript sont minifiés.
 

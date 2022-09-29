@@ -12,9 +12,9 @@ topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '517'
 ht-degree: 2%
 
 ---
@@ -36,36 +36,36 @@ La page d’accueil du site WKND présente les activités locales ou les meilleu
 
 ## Procédure de création d’un test A/B à l’aide du compositeur d’expérience visuelle (VEC)
 
-1. Connectez-vous à [Adobe Experience Cloud](https://experience.adobe.com/), appuyez sur __Target__, accédez à l’onglet __Activités__
+1. Connectez-vous à [Adobe Experience Cloud](https://experience.adobe.com/), appuyez sur . __Cible__, accédez au __Activités__ tab
 
-   + Si __Target__ n’apparaît pas dans le tableau de bord de l’Experience Cloud, vérifiez que l’organisation d’Adobe appropriée est sélectionnée dans le sélecteur d’organisation en haut à droite et que l’accès à Target a été accordé à l’utilisateur dans [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Si vous ne voyez pas __Cible__ dans le tableau de bord de l’Experience Cloud, assurez-vous que la bonne organisation d’Adobe est sélectionnée dans le sélecteur d’organisation en haut à droite et que l’accès à Target a été accordé à votre utilisateur dans [Adobe Admin Console](https://adminconsole.adobe.com/).
 
-1. Cliquez sur le bouton **Créer l’activité** puis sélectionnez l’activité **Test A/B**
+1. Cliquez sur **Création d’une activité** puis choisissez **Test A/B** activité
 
    ![Activité A/B](assets/ab-target-activity.png)
 
-1. Sélectionnez l’option **Compositeur d’expérience visuelle**, fournissez l’URL d’activité, puis cliquez sur **Suivant**
+1. Sélectionnez la **Compositeur d’expérience visuelle** , indiquez l’URL d’activité, puis cliquez sur **Suivant**
 
    ![URL d’activité](assets/ab-test-url.png)
 
-1. Le compositeur d’expérience visuelle affiche deux onglets sur le côté gauche après la création d’une activité : *Expérience A* et *Expérience B*. Sélectionnez une expérience dans la liste. Vous pouvez ajouter de nouvelles expériences à la liste à l’aide du bouton **Ajouter une expérience**.
+1. Le compositeur d’expérience visuelle affiche deux onglets sur le côté gauche après la création d’une activité : *Expérience A* et *Expérience B*. Sélectionnez une expérience dans la liste. Vous pouvez ajouter de nouvelles expériences à la liste à l’aide du **Ajout d’une expérience** bouton .
 
    ![Expérience A](assets/experience.png)
 
-1. Sélectionnez une image ou du texte sur la page pour commencer à apporter des modifications. Vous pouvez également utiliser l’éditeur de code pour sélectionner un élément HTML.
+1. Sélectionnez une image ou du texte sur la page pour commencer à apporter des modifications. Vous pouvez également utiliser l’éditeur de code pour sélectionner et HTML l’élément .
 
    ![Élément](assets/select-element.png)
 
-1. Remplacez le texte *Camping in Western Australia* par *Adventures of Australia*. Une liste des modifications ajoutées à une expérience s’affiche sous Modifications. Vous pouvez cliquer et modifier l’élément modifié pour afficher son sélecteur CSS et le nouveau contenu qui y est ajouté.
+1. Modifier le texte à partir de *Camping en Australie occidentale* to *Aventures d&#39;Australie*. Une liste des modifications ajoutées à une expérience s’affiche sous Modifications. Vous pouvez cliquer et modifier l’élément modifié pour afficher son sélecteur CSS et le nouveau contenu qui y est ajouté.
 
    ![Aventures](assets/adventures.png)
 
-1. Renommez *Expérience A* en *Adventure*.
-1. De même, mettez à jour le texte sur *Expérience B* de *Camping en Australie occidentale* vers *Explore the Australian Wilderness*.
+1. Renommer *Expérience A* to *Adventure*
+1. De même, mettez à jour le texte sur *Expérience B* de *Camping en Australie occidentale* to *Exploration de la nature australienne*.
 
    ![Exploration](assets/explore.png)
 
-1. Cliquez sur **Suivant** pour passer au ciblage et conservons une affectation manuelle du trafic comprise entre 50 et 50 entre les deux expériences.
+1. Cliquez sur **Suivant** pour passer à Ciblage et conservons une affectation manuelle du trafic de 50 à 50 entre les deux expériences.
 
    ![Ciblage](assets/targeting.png)
 

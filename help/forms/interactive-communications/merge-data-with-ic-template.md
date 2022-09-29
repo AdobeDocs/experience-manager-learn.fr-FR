@@ -1,20 +1,19 @@
 ---
 title: Génération d’un document de canal d’impression à l’aide de la fusion de données
-seo-title: Génération d’un document de canal d’impression à l’aide de la fusion de données
 description: Découvrez comment générer un document de canal d’impression en fusionnant les données contenues dans le flux d’entrée
-seo-description: Découvrez comment générer un document de canal d’impression en fusionnant les données contenues dans le flux d’entrée
-feature: Communication interactive
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 3bfbb4ef-0c51-445a-8d7b-43543a5fa191
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '479'
 ht-degree: 2%
 
 ---
@@ -25,7 +24,7 @@ Les documents de canal d’impression sont généralement générés en récupé
 
 ## Créer un service de préremplissage
 
-Le nom de service &quot;ccm-print-test&quot; sera utilisé pour accéder à ce service . Une fois ce service de préremplissage défini, vous pouvez accéder à ce service dans votre mise en oeuvre d’étape de processus ou de servlet pour générer le document de canal d’impression.
+Le nom de service &quot;ccm-print-test&quot; est utilisé pour accéder à ce service . Une fois ce service de préremplissage défini, vous pouvez accéder à ce service dans votre mise en oeuvre d’étape de processus ou de servlet pour générer le document de canal d’impression.
 
 ```java
 import java.io.InputStream;

@@ -3,7 +3,7 @@ title: Accélérer la vitesse du contenu avec les systèmes de style AEM
 description: Découvrez comment utiliser AEM système de style pour permettre aux concepteurs, aux auteurs de contenu et aux développeurs de votre entreprise de créer et de diffuser des expériences à la vitesse et à l’échelle attendues par vos clients.
 solution: Experience Manager
 exl-id: 449cd133-6ab6-456e-a0ad-30e3dea9b75b
-source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Dans cet article, vous découvrez comment utiliser des systèmes de type AEM pour permettre aux concepteurs, aux auteurs de contenu et aux développeurs de votre entreprise de créer et de diffuser des expériences à la vitesse et à l’échelle attendues par vos clients.
 
-## Présentation
+##  du commerce électronique
 
 Les systèmes de style AEM présentent quatre avantages principaux :
 
@@ -92,4 +92,4 @@ Enfin, l&#39;utilisation des systèmes de style est plus de l&#39;art que de la 
 
 Pour plus d’informations, consultez notre [Webinaire sur le succès client](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) avec Will Brisbane et Joseph Van Buskirk.
 
-Pour en savoir plus sur la stratégie et le leadership de la pensée, voir [Succès des clients](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Pour en savoir plus sur la stratégie et le leadership de la pensée, voir [Succès des clients](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.

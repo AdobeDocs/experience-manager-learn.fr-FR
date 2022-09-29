@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: cd7cb89f407f5e0c465544593563534472daf928
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -183,7 +183,7 @@ AEM requêtes persistantes sont exécutées sur des GET HTTP. Par conséquent, l
 1. Le fonds public appelle un fonds privé. `makeRequest(..)` qui appelle une demande de GET HTTP asynchrone à AEM sans affichage et renvoie les données JSON.
 1. Chaque fonction publique décode ensuite les données JSON et effectue toutes les vérifications ou transformations requises, avant de renvoyer les données Adventure à la vue.
 
-+ AEM les données JSON GraphQL sont décodées à l’aide des structs/classes définis dans `AEM/Models.swift`, qui correspondait aux objets JSON renvoyait mon AEM sans affichage.
+   + AEM les données JSON GraphQL sont décodées à l’aide des structs/classes définis dans `AEM/Models.swift`, qui correspondait aux objets JSON renvoyait mon AEM sans affichage.
 
 ```swift
     /// # getAdventures(..)

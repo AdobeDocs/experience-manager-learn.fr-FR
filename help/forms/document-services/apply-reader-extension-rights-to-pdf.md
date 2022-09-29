@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '354'
 ht-degree: 13%
 
 ---
@@ -73,7 +73,7 @@ public class ApplyUsageRights implements ReaderExtendPDF {
 
 L’étape suivante consiste à créer une servlet avec une méthode de POST pour renvoyer le PDF étendu du lecteur à l’utilisateur. Dans ce cas, l’utilisateur est invité à enregistrer le PDF dans son système de fichiers. Cela est dû au fait que le PDF est rendu en tant que PDF dynamique et que les visionneuses pdf fournies avec les navigateurs ne prennent pas en charge les pdf dynamiques.
 
-Voici le code de la servlet. Le servlet sera appelé à partir de l’action d’envoi personnalisée du formulaire adaptatif.
+Voici le code de la servlet. Le servlet est appelé à partir de l’action d’envoi personnalisée du formulaire adaptatif.
 Servlet crée l’objet UsageRights et définit ses propriétés en fonction des valeurs saisies par l’utilisateur dans le formulaire adaptatif. Le servlet appelle ensuite la méthode applyUsageRights du service créé à cet effet.
 
 ```java

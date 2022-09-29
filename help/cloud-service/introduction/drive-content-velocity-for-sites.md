@@ -3,9 +3,9 @@ title: Comment générer la vélocité du contenu avec Adobe Experience Manager
 description: Découvrez la vitesse du contenu et sa valeur au sein des entreprises. Parcourez quatre principes de mise en oeuvre efficace et les pièges à prendre en compte tout au long du chemin.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2823'
+source-wordcount: '2815'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Pour illustrer ce point, examinons un exemple d’entreprise avec différentes m
 
 La question est : allez-vous vous retenir de ré-imaginer le contenu jusqu&#39;à ce que toutes les marques fonctionnent de manière unifiée ? Est-il sage de résoudre pour le changement pour tous ?
 
-La réponse est non. Cela augmenterait la complexité. De plus, de nombreuses parties prenantes seront frustrées par les discussions sans fin autour de l&#39;ancien, ce qui frustrera les tentatives de construire le nouveau. On va être enfermé dans une conversation _about_ au lieu de le faire.
+La réponse est non. Cela augmenterait la complexité. De plus, de nombreuses parties prenantes seront frustrées par les discussions sans fin autour de l&#39;ancien, ce qui frustrera les tentatives de construire le nouveau. On est enfermé dans une conversation _about_ au lieu de le faire.
 
 Ce qu&#39;il faut, c&#39;est un cadre tangible. Un nouveau paradigme pour lequel travailler. Quelque chose que les gens peuvent voir et ressentir. Dans le passé, le contenu pouvait être considéré comme une page, une campagne ou tout ce qui était imaginé au singulier. Le changement fondamental consiste à considérer le contenu comme un contenu : à réutiliser, redéfinir et recycler dans l’équipe de création. Les nouveaux développements fondamentaux doivent être utilisés pour des expériences riches en cibles.
 
@@ -94,19 +94,19 @@ _&quot;Nous savions qu&#39;il y avait trop de contenu qui sortait. Nous avons do
 
 AEM est une solution d’entreprise qui touche de nombreuses parties de l’entreprise ou de la marque et son efficacité, en tant qu’outil CMS, a des dépendances en amont.
 
-Lorsque vous construisez le cadre, il y a des paradigmes communs pour lesquels vous devrez trouver la bonne solution. Certains de ces éléments peuvent être difficiles, mais des décisions doivent être prises, c&#39;est pourquoi le paradigme fondamental ci-dessus est si important. Ce cadre qui est en cours de création sera celui qui sera utilisé à l’échelle de l’organisation.
+Lorsque vous construisez le cadre, il y a des paradigmes communs pour lesquels vous devrez trouver la bonne solution. Certains de ces éléments peuvent être difficiles, mais des décisions doivent être prises, c&#39;est pourquoi le paradigme fondamental ci-dessus est si important. Ce cadre en cours de création est celui qui est utilisé pour s’étendre à l’ensemble de l’organisation.
 
 Voici quatre jalons à développer pendant la phase d’exécution :
 
 1. **Définissez les fondations de votre taxonomie globale organisationnelle.**
 
-   Lorsque nous parlons de taxonomie, nous ne faisons pas que référencer la structure de dossiers, mais plutôt une compréhension de qui va créer quoi et quand. En outre, nous devrons tenir compte de la variable [autorisation différente](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=en) des structures qui devront être conçues pour chaque type d’auteur.
+   Lorsque nous parlons de taxonomie, nous ne faisons pas que référencer la structure de dossiers, mais plutôt une compréhension de qui crée quoi et quand. En outre, nous devrons tenir compte de la variable [autorisation différente](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=en) des structures qui devront être conçues pour chaque type d’auteur.
 
    À ce stade, pensez à un modèle de gouvernance centralisé ou décentralisé. D&#39;un côté, un modèle de gouvernance centralisé crée une stratégie taxonomique consolidée offrant un contrôle de qualité plus strict et des informations sur les processus qui seraient impossibles, ou tout au moins difficiles dans un cadre décentralisé.
 
-   D’un autre côté, un modèle centralisé, en particulier s’il provient d’une expérience de création actuellement trop flexible, peut représenter un obstacle trop important pour l’équipe. La structure doit permettre la mise en place d&#39;un langage commun et de différenciateurs régionaux, ainsi que de pratiques autour du contrôle de la qualité. En outre, il peut y avoir moins d’autonomie pour chaque facette de l’expérience de création, c’est-à-dire que seuls certains auteurs seront autorisés à travailler sur des groupes de pages spécifiques et que seuls les auteurs limités disposent d’autorisations modifiables.
+   D’un autre côté, un modèle centralisé, en particulier s’il provient d’une expérience de création actuellement trop flexible, peut représenter un obstacle trop important pour l’équipe. La structure doit permettre la mise en place d&#39;un langage commun et de différenciateurs régionaux, ainsi que de pratiques autour du contrôle de la qualité. En outre, il peut y avoir moins d’autonomie pour chaque facette de l’expérience de création, c’est-à-dire que seuls certains auteurs sont autorisés à travailler sur des groupes de pages spécifiques et que seuls des auteurs limités disposent d’autorisations modifiables.
 
-   Bien qu&#39;au départ un mode de gouvernance centralisé puisse sembler plus lent, au final, avec la collecte des informations sur les processus et la transparence des responsabilités entre les utilisateurs professionnels qui est encouragée, la trajectoire globale sera plus rapide.
+   Bien qu&#39;au départ un mode de gouvernance centralisé puisse sembler plus lent, au final, avec la collecte des informations sur les processus et la transparence des responsabilités entre les utilisateurs professionnels qui est encouragée, la trajectoire globale est plus rapide.
 
    La décision quant à la direction à prendre dépendra en fin de compte de l&#39;objectif stratégique global de l&#39;organisation. Il peut s’agir d’un choix entre une flexibilité améliorée pour les utilisateurs professionnels ou une expérience unifiée entre les marques. L’alignement sur le modèle approprié est essentiel pour une exécution sonore.
 
@@ -116,7 +116,7 @@ Voici quatre jalons à développer pendant la phase d’exécution :
 
    Le contenu interactif (souvent situé sur la page d’accueil) peut nécessiter des expériences hautement interactives. Par conséquent, les concepteurs CSS front-end devront collaborer avec les créateurs commerciaux pour la mise à jour. La maintenance de la page d’accueil nécessiterait une structure d’autorisation et un processus d’approbation différents de ceux d’une page de référence, qui serait plus facile à mettre à jour. Une gouvernance saine, une efficacité et une qualité commencent par une propriété claire du contenu. Envisagez d’effectuer un audit de contenu répondant à ces questions :
 
-   * Qui créera quoi ? Et quand ?
+   * Qui crée quoi ? Et quand ?
    * Quelles sont les différentes structures d’autorisation qui doivent être appliquées à chaque type de contenu ?
    * Quelles sont les expériences qui vont changer sur le site et lesquelles resteront relativement statiques ?
    * Qui va posséder quel contenu ?
@@ -145,7 +145,7 @@ Voici quatre jalons à développer pendant la phase d’exécution :
 En général, il est préférable de suivre ces règles générales :
 
 * Visez à ne pas avoir moins de 80 % d’expériences pilotées par [Composants prêts à l’emploi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et [Systèmes de style](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Grâce aux témoignages des clients, cela créera non seulement une base plus évolutive qui vous permettra de tirer parti de la feuille de route du produit, mais augmentera également la vitesse jusqu’à 50 %.
-* [Configuration](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[e](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[Modèles modifiables](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) et abandonner les modèles statiques. Lors de la configuration de modèles modifiables (qui sont nécessaires pour utiliser les systèmes de style), il sera nécessaire d’affecter un créateur de modèles qui contrôlera les différents styles disponibles pour une page ou une section du site web. Ces mises à jour du modèle lui-même sont assez minimes en termes de travail quotidien.
+* [Configuration](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[e](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en)[Modèles modifiables](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en) et abandonner les modèles statiques. Lors de la configuration de modèles modifiables (qui sont nécessaires pour utiliser les systèmes de style), il est nécessaire d’affecter un créateur de modèles qui contrôlera les différents styles disponibles pour une page ou une section du site web. Ces mises à jour du modèle lui-même sont assez minimes en termes de travail quotidien.
 * Utilisation [Fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=en) si possible. Bien que le cas d’utilisation général des fragments d’expérience concerne la distribution multicanal, ils peuvent également être utilisés efficacement sur l’ensemble du site pour remplir le contenu dans une zone à la fois au lieu de mettre à jour manuellement le contenu dans plusieurs zones. Cela peut vous faire gagner du temps et vous libérer de l’effort et libérer l’équipe de création pour travailler sur des expériences plus spécifiques et plus riches.
 * Créez des expériences plus riches. En utilisant la règle 80/20 (ci-dessus), une entreprise peut utiliser des développements CSS et back-end spécifiques pour des expériences sélectionnées plutôt que des mises à jour de maintenance courantes.
 * Optez pour une base évolutive et une remarque rapide. Les systèmes de style qui sont exécutés sur la base d’une mise en oeuvre moderne peuvent permettre un changement de marque efficace sur la plate-forme de l’utilisateur. La mise à jour de larges secteurs de contenu par le biais de la modification des habillages CSS permet des tests et des validations rapides, ainsi qu’une amélioration de la qualité de l’expérience du site, avec un impact direct sur le retour sur investissement.
@@ -177,4 +177,4 @@ Voici quelques écueils potentiels à éviter :
 
 Pour une discussion plus approfondie de la vitesse du contenu, écoutez cette heure [table ronde](https://primetime.bluejeans.com/a2m/events/playback/e63686d4-158f-4f73-aea0-f03ebee4606d) Monique Misrahi (T-Mobile), Amy Bergstrom (Deloitte), et Anuradha Pentareddy, Adobe.
 
-Pour en savoir plus sur la stratégie et le leadership de la pensée, voir [Succès des clients](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Pour en savoir plus sur la stratégie et le leadership de la pensée, voir [Succès des clients](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.

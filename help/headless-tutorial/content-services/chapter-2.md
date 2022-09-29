@@ -8,9 +8,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: cfb7ed39ecb85998192ba854b34161f7e1dba19a
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '962'
 ht-degree: 12%
 
 ---
@@ -59,7 +59,7 @@ Si les modèles de fragment de contenu sont **not** activée pour une configurat
    >    1. Supprimez la variable `models` node
 
    >    
-   >Tous les modèles de fragment de contenu existants créés sous cette configuration seront supprimés, ainsi que leurs définitions stockées sous . `/conf/wknd-mobile/settings/dam/cfm/models`.
+   >Tous les modèles de fragment de contenu existants créés sous cette configuration sont supprimés, ainsi que leurs définitions, stockées sous . `/conf/wknd-mobile/settings/dam/cfm/models`.
 
 1. Appliquez la variable **[!DNL WKND Mobile]** à la section **[!DNL WKND Mobile]Dossier de ressources** pour permettre la création de fragments de contenu à partir de modèles de fragment de contenu dans cette hiérarchie de dossiers de ressources :
 
@@ -84,7 +84,7 @@ Nous pouvons ventiler les points de données qui définissent un événement com
 
 ![Création du modèle de fragment de contenu](assets/chapter-2/design-to-model-mapping.png)
 
-Armé du mappage, nous pouvons définir le fragment de contenu qui sera utilisé pour collecter et exposer les données d’événement.
+Armé du mappage, nous pouvons définir le fragment de contenu utilisé pour collecter et exposer les données d’événement.
 
 ## Création du modèle de fragment de contenu
 
@@ -173,7 +173,7 @@ Répétez ces étapes en utilisant les définitions d’entrée définies ci-des
 
 >[!NOTE]
 >
->Le **[!UICONTROL Nom de la propriété]** indique le **both** le nom de la propriété JCR où cette valeur sera stockée, ainsi que la clé dans le fichier JSON . Il doit s’agir d’un nom sémantique qui ne changera pas au cours de la durée de vie du modèle de fragment de contenu.
+>Le **[!UICONTROL Nom de la propriété]** indique le **both** le nom de la propriété JCR où cette valeur est stockée, ainsi que la clé dans le fichier JSON . Il doit s’agir d’un nom sémantique qui ne changera pas au cours de la durée de vie du modèle de fragment de contenu.
 
 Après avoir créé le modèle de fragment de contenu, vous devez obtenir une définition qui ressemble à celle-ci :
 

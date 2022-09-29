@@ -2,18 +2,18 @@
 title: Utilisation du recadrage intelligent avec AEM Assets Dynamic Media
 description: Le recadrage intelligent utilise Adobe Sensei pour éliminer les tâches fastidieuses et coûteuses de recadrage de contenu pour une conception adaptée.
 sub-product: dynamic-media
-feature: Recadrage intelligent, profils d’image
+feature: Smart Crop, Image Profiles
 version: 6.4, 6.5
-topic: Gestion de contenu
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 295bbfb6-241f-41c0-972d-d9688863cea1
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 18%
+source-wordcount: '245'
+ht-degree: 17%
 
 ---
-
 
 # Utilisation du recadrage intelligent avec AEM Assets Dynamic Media{#using-smart-crop-with-aem-assets-dynamic-media}
 

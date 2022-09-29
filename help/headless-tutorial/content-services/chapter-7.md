@@ -1,51 +1,51 @@
 ---
-title: Chapitre 7 - Consommation AEM Content Services à partir d’une application Mobile - Content Services
-description: Le chapitre 7 du tutoriel exécute l’application Android Mobile pour utiliser du contenu créé à partir d’AEM Content Services.
+title: Chapitre 7 - Consommation AEM Content Services à partir d’une application mobile - Content Services
+description: Le chapitre 7 du tutoriel exécute l’application mobile Android pour utiliser du contenu créé à partir d’AEM Content Services.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d6b6d425-842a-43a9-9041-edf78e51d962
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1391'
 ht-degree: 1%
 
 ---
 
 # Chapitre 7 - Consommation AEM Content Services à partir d’une application mobile
 
-Le chapitre 7 du tutoriel utilise une application Android Mobile native pour consommer du contenu d’AEM Content Services.
+Le chapitre 7 du tutoriel utilise une application mobile Android native pour consommer du contenu d’AEM Content Services.
 
-## Application Mobile Android
+## Application mobile Android
 
-Ce tutoriel utilise une **application Android Mobile native simple** pour utiliser et afficher le contenu d’événement exposé par AEM Content Services.
+Ce tutoriel utilise une **application mobile Android native simple** pour utiliser et afficher le contenu d’événement exposé par AEM Content Services.
 
 L’utilisation de [Android](https://developer.android.com/) n’est pas importante, et l’application mobile consommatrice peut être écrite dans n’importe quelle structure pour n’importe quelle plateforme mobile, par exemple iOS.
 
 Android est utilisé pour les tutoriels en raison de la possibilité d’exécuter un émulateur Android sous Windows, macOs et Linux, sa popularité, et du fait qu’il peut être écrit en tant que Java, une langue bien comprise par les développeurs AEM.
 
-*L’application Mobile Android du tutoriel est **not**destiné à expliquer comment créer des applications Mobile Android ou transmettre les bonnes pratiques de développement Android, mais plutôt à illustrer comment AEM Content Services peut être utilisé à partir d’une application Mobile.*
+*L’application mobile Android du tutoriel est **not**destiné à expliquer comment créer des applications mobiles Android ou transmettre les bonnes pratiques de développement Android, mais plutôt à illustrer comment AEM Content Services peut être utilisé à partir d’une application mobile.*
 
-### Comment AEM Content Services génère l’expérience de l’application Mobile
+### Comment AEM Content Services génère l’expérience de l’application mobile
 
-![Mappage de l’application Mobile vers Content Services](assets/chapter-7/content-services-mapping.png)
+![Mappage de l’application mobile vers Content Services](assets/chapter-7/content-services-mapping.png)
 
 1. Le **logo** comme défini par la variable [!DNL Events API] de la page **Composant d’image**.
 1. Le **ligne de balise** comme défini sur la variable [!DNL Events API] de la page **Composant textuel**.
 1. Ceci **Liste des événements** est dérivé de la sérialisation des fragments de contenu d’événement, exposés via le **Composant Liste de fragments de contenu**.
 
-## Démonstration de l’application Mobile
+## Démonstration de l’application mobile
 
 >[!VIDEO](https://video.tv.adobe.com/v/28345/?quality=12&learn=on)
 
-### Configuration de l’application Mobile pour une utilisation autre que localhost
+### Configuration de l’application mobile pour une utilisation autre que localhost
 
-Si AEM Publish n’est pas exécuté sur **http://localhost:4503** l’hôte et le port peuvent être mis à jour dans l’application Mobile [!DNL Settings] pour pointer vers la propriété hôte/port de publication AEM.
+Si AEM Publish n’est pas exécuté sur **http://localhost:4503** l’hôte et le port peuvent être mis à jour dans le rapport [!DNL Settings] pour pointer vers la propriété hôte/port de publication AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28344/?quality=12&learn=on)
 
-## Exécution locale de l’application Mobile
+## Exécution locale de l’application mobile
 
 1. Téléchargez et installez le [Android Studio](https://developer.android.com/studio/install) pour installer l’émulateur Android.
 1. **Télécharger** Android [!DNL APK] fichier [GitHub > Ressources > wknd-mobile.x.x.xapk](https://github.com/adobe/aem-guides-wknd-mobile/releases/latest)
@@ -63,7 +63,7 @@ Si AEM Publish n’est pas exécuté sur **http://localhost:4503** l’hôte et 
    1. Sélectionnez une **Pixel 2**.
    1. Cliquez sur le bouton **Suivant** bouton .
    1. Sélectionner **Q** avec **Niveau d’API 29**.
-      * Lors du lancement initial d’AVD Manager, vous serez invité à télécharger l’API versionnée. Cliquez sur le lien Télécharger en regard de la version &quot;Q&quot;, puis effectuez le téléchargement et l’installation.
+      * Lors du lancement initial d’AVD Manager, vous êtes invité à télécharger l’API versionnée. Cliquez sur le lien Télécharger en regard de la version &quot;Q&quot;, puis effectuez le téléchargement et l’installation.
    1. Cliquez sur le bouton **Suivant** bouton .
    1. Cliquez sur le bouton **Terminer** bouton .
 1. Fermez la **Gestionnaire AVD** fenêtre.
@@ -77,27 +77,27 @@ Si AEM Publish n’est pas exécuté sur **http://localhost:4503** l’hôte et 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28341/?quality=12&learn=on)
 
-## Code de l’application Mobile
+## Code de l’application mobile
 
-Cette section décrit le code de l’application Mobile Android qui interagit le plus et qui dépend d’AEM Content Services et de sa sortie JSON.
+Cette section décrit le code de l’application mobile Android qui interagit le plus et qui dépend d’AEM Content Services et de sa sortie JSON.
 
-Au chargement, l’application Mobile effectue les `HTTP GET` to `/content/wknd-mobile/en/api/events.model.json` qui est le point d’entrée AEM Content Services configuré pour fournir le contenu permettant de piloter l’application Mobile.
+Lors du chargement, l’application mobile effectue les `HTTP GET` to `/content/wknd-mobile/en/api/events.model.json` qui est le point d’entrée AEM Content Services configuré pour fournir le contenu permettant de piloter l’application mobile.
 
-Parce que le modèle modifiable de l’API Events (`/content/wknd-mobile/en/api/events.model.json`) est verrouillée, l’application Mobile peut être codée pour rechercher des informations spécifiques à des emplacements spécifiques dans la réponse JSON.
+Parce que le modèle modifiable de l’API Events (`/content/wknd-mobile/en/api/events.model.json`) est verrouillée, l’application mobile peut être codée pour rechercher des informations spécifiques à des emplacements spécifiques dans la réponse JSON.
 
 ### Flux de code de haut niveau
 
-1. Ouverture de la [!DNL WKND Mobile] L’application appelle une `HTTP GET` demande à AEM Publish à l’adresse `/content/wknd-mobile/en/api/events.model.json` pour collecter le contenu afin de renseigner l’interface utilisateur de l’application Mobile.
-2. Lors de la réception du contenu d’AEM, chacun des trois éléments d’affichage de l’application Mobile, la variable **logo, ligne de balise et liste d’événements**, sont initialisés avec le contenu d’AEM.
-   * Pour lier le contenu AEM à l’élément d’affichage de l’application Mobile, le JSON représentant chaque composant AEM est un objet mappé à un POJO Java, qui est à son tour lié à l’élément d’affichage Android.
+1. Ouverture de la [!DNL WKND Mobile] L’application appelle une `HTTP GET` demande à AEM Publish à l’adresse `/content/wknd-mobile/en/api/events.model.json` pour collecter le contenu afin de renseigner l’interface utilisateur de l’application mobile.
+2. Lors de la réception du contenu d’AEM, chacun des trois éléments d’affichage de l’application mobile, la variable **logo, ligne de balise et liste d’événements**, sont initialisés avec le contenu d’AEM.
+   * Pour lier le contenu AEM à l’élément d’affichage de l’application mobile, le JSON représentant chaque composant AEM est un objet mappé à un POJO Java, qui est à son tour lié à l’élément d’affichage Android.
       * Composant d’image JSON → Logo POJO → Logo ImageView
       * Composant Texte JSON → TagLine POJO → Text ImageView
       * Liste de fragments de contenu JSON → Événements POJO →Events RecyclerView
-   * *Le code de l’application Mobile peut mapper le JSON aux POJO en raison des emplacements bien connus dans la réponse JSON supérieure. N’oubliez pas que les clés JSON de &quot;image&quot;, &quot;text&quot; et &quot;contentfragmentlist&quot; sont dictées par les noms de noeud des composants de l’AEM de support. Si ces noms de noeud changent, l’application Mobile se brise, car elle ne sait pas comment sources le contenu requis à partir des données JSON.*
+   * *Le code de l’application mobile peut mapper le JSON aux POJO en raison des emplacements bien connus dans la réponse JSON supérieure. N’oubliez pas que les clés JSON de &quot;image&quot;, &quot;text&quot; et &quot;contentfragmentlist&quot; sont dictées par les noms de noeud des composants de l’AEM de support. Si ces noms de noeud changent, l’application mobile est interrompue, car elle ne sait pas comment sources le contenu requis à partir des données JSON.*
 
 #### Appel du point d’entrée Content Services AEM
 
-Vous trouverez ci-dessous un condensé du code dans l’application Mobile `MainActivity` chargé d’appeler AEM Content Services pour collecter le contenu qui entraîne l’expérience de l’application Mobile.
+Vous trouverez ci-dessous un condensé du code dans le fichier de l’application mobile. `MainActivity` chargé d’appeler AEM Content Services pour collecter le contenu qui entraîne l’expérience de l’application mobile.
 
 ```
 protected void onCreate(Bundle savedInstanceState) {
@@ -128,7 +128,7 @@ private void initApp(final List<ViewBinder> viewBinders) {
 }
 ```
 
-`onCreate(..)` est le crochet d’initialisation de l’application Mobile et enregistre les 3 `ViewBinders` responsable de l’analyse du fichier JSON et de la liaison des valeurs à la variable `View` éléments .
+`onCreate(..)` est le crochet d’initialisation de l’application mobile et enregistre les 3 `ViewBinders` responsable de l’analyse du fichier JSON et de la liaison des valeurs à la variable `View` éléments .
 
 `initApp(...)` est ensuite appelée, ce qui envoie la requête de GET HTTP au point de terminaison AEM Content Services sur AEM Publish pour collecter le contenu. Lors de la réception d’une réponse JSON valide, la réponse JSON est transmise à chaque `ViewBinder` qui est chargé d’analyser le fichier JSON et de le lier au fichier mobile ; `View` éléments .
 
@@ -183,11 +183,11 @@ public class Image {
 
 Le POJO de l’événement, qui nécessite de sélectionner beaucoup plus de points de données à partir de l’objet JSON, bénéficie de cette technique plus que la simple image, que nous voulons tout simplement : `src`.
 
-## Exploration de l’expérience de l’application Mobile
+## Exploration de l’expérience de l’application mobile
 
-Maintenant que vous savez comment AEM Content Services peut générer une expérience Mobile native, utilisez ce que vous avez appris pour effectuer les étapes suivantes et voir vos modifications répercutées dans l’application Mobile.
+Maintenant que vous savez comment AEM Content Services peut générer une expérience mobile native, utilisez ce que vous avez appris pour effectuer les étapes suivantes et voir vos modifications répercutées dans l’application mobile.
 
-Après chaque étape, effectuez une extraction pour actualiser l’application Mobile et vérifiez la mise à jour de l’expérience mobile.
+Après chaque étape, effectuez une extraction pour actualiser l’application mobile et vérifiez la mise à jour de l’expérience mobile.
 
 1. Créer et publier **new [!DNL Event] Fragment de contenu**
 1. Annulation de la publication d’une **existant [!DNL Event] Fragment de contenu**

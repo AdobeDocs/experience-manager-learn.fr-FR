@@ -9,10 +9,10 @@ mini-toc-levels: 1
 kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
-source-git-commit: d49dbfae3292f93b7f63f424731966934dc6a5ba
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '3081'
-ht-degree: 2%
+source-wordcount: '3066'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Dans ce chapitre, nous allons explorer la relation entre un composant de page de base et des modèles modifiables. Nous allons créer un modèle d&#39;article sans style basé sur des maquettes de [AdobeXD](https://www.adobe.com/products/xd.html). Lors du processus de création du modèle, les composants principaux et les configurations de stratégie avancées des modèles modifiables sont traités.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Examinez les outils et les instructions requis pour configurer une [environnement de développement local](overview.md#local-dev-environment).
 
@@ -63,7 +63,7 @@ Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/a
 
 ## Ce que vous allez créer {#what-you-will-build}
 
-Dans cette partie du tutoriel, vous allez créer un modèle de page d’article qui pourra être utilisé pour créer de nouvelles pages d’article et vous aligner sur une structure commune. Le modèle de page d’article sera basé sur des conceptions et un kit d’interface utilisateur produit dans Adobe XD. Ce chapitre se concentre uniquement sur la construction de la structure ou du squelette du modèle. Aucun style ne sera implémenté, mais le modèle et les pages seront fonctionnels.
+Dans cette partie du tutoriel, vous allez créer un modèle de page d’article qui pourra être utilisé pour créer de nouvelles pages d’article et vous aligner sur une structure commune. Le modèle de page d’article est basé sur des conceptions et un kit d’interface utilisateur produit dans Adobe XD. Ce chapitre se concentre uniquement sur la construction de la structure ou du squelette du modèle. Aucun style n’est implémenté, mais le modèle et les pages sont fonctionnels.
 
 ![Conception de page d’article et version sans style](assets/pages-templates/what-you-will-build.png)
 
@@ -81,13 +81,13 @@ Dans la plupart des cas, la planification d’un nouveau site web commence par d
 
 ## Création du modèle de page d’article
 
-Lors de la création d’une page, vous devez sélectionner un modèle. C’est la base pour la création de la page. Le modèle définit la structure de la page créée, le contenu initial et les composants autorisés.
+Lors de la création d’une page, vous devez sélectionner un modèle qui sert de base à la création de la page. Le modèle définit la structure de la page créée, le contenu initial et les composants autorisés.
 
 Il existe 3 zones principales de [Modèles modifiables](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html?lang=fr):
 
-1. **Structure** - définit les composants qui font partie du modèle. Ils ne seront pas modifiables par les auteurs de contenu.
-1. **Contenu initial** : définit les composants dont le modèle commencera, qui peuvent être modifiés et/ou supprimés par les auteurs de contenu.
-1. **Stratégies** - définit les configurations sur le comportement des composants et les options disponibles pour les auteurs.
+1. **Structure** - définit les composants qui font partie du modèle. Ils ne sont pas modifiables par les auteurs de contenu.
+1. **Contenu initial** : définit les composants par lesquels le modèle commence ; ils peuvent être modifiés et/ou supprimés par les auteurs de contenu.
+1. **Stratégies** - définit des configurations sur le comportement des composants et sur les options disponibles pour les auteurs.
 
 Créez ensuite un modèle dans AEM qui correspond à la structure des maquettes. Cela se produit dans une instance locale d’AEM. Suivez les étapes de la vidéo ci-dessous :
 
@@ -101,12 +101,12 @@ Créez ensuite un modèle dans AEM qui correspond à la structure des maquettes.
 1. Basculer vers **Structure** mode .
 1. Ajoutez un **Fragment d’expérience** pour agir comme le composant **En-tête** en haut du modèle.
    * Configuration du composant pour qu’il pointe vers `/content/experience-fragments/wknd/us/en/site/header/master`.
-   * Définissez la stratégie sur **En-tête de page** et assurez-vous que la variable **Elément par défaut** est défini sur `header`. Le `header`sera ciblé avec CSS dans le chapitre suivant.
+   * Définissez la stratégie sur **En-tête de page** et assurez-vous que la variable **Elément par défaut** est défini sur `header`. Le `header`est ciblé avec CSS dans le chapitre suivant.
 1. Ajoutez un **Fragment d’expérience** pour agir comme le composant **Pied de page** au bas du modèle.
    * Configuration du composant pour qu’il pointe vers `/content/experience-fragments/wknd/us/en/site/footer/master`.
-   * Définissez la stratégie sur **Pied de page** et assurez-vous que la variable **Elément par défaut** est défini sur `footer`. Le `footer` sera ciblé avec CSS dans le chapitre suivant.
+   * Définissez la stratégie sur **Pied de page** et assurez-vous que la variable **Elément par défaut** est défini sur `footer`. Le `footer` est ciblé avec CSS dans le chapitre suivant.
 1. Verrouillez la variable **main** conteneur inclus lors de la création initiale du modèle.
-   * Définissez la stratégie sur **Page principale** et assurez-vous que la variable **Elément par défaut** est défini sur `main`. Le `main` sera ciblé avec CSS dans le chapitre suivant.
+   * Définissez la stratégie sur **Page principale** et assurez-vous que la variable **Elément par défaut** est défini sur `main`. Le `main` est ciblé avec CSS dans le chapitre suivant.
 1. Ajoutez un **Image** au composant **main** conteneur.
    * Déverrouillez la variable **Image** composant.
 1. Ajouter un **Chemin de navigation** sous le composant **Image** dans le conteneur principal.
@@ -130,7 +130,7 @@ Créez ensuite un modèle dans AEM qui correspond à la structure des maquettes.
 ### Configurations initiales du contenu
 
 1. Basculer vers **Contenu initial** mode .
-1. Ajouter un **Titre** au composant **Conteneur de contenu**. Cela agit comme titre de l’article. Lorsqu’il est vide, il affiche automatiquement le titre de la page active.
+1. Ajouter un **Titre** au composant **Conteneur de contenu**. Il s’agit du titre de l’article. Lorsqu’il est vide, il affiche automatiquement le titre de la page active.
 1. Ajouter une seconde **Titre** composant sous le premier composant Titre.
    * Configurez le composant avec le texte : &quot;Par auteur&quot;. Il s’agit d’un espace réservé de texte.
    * Définissez le type à définir. `H4`.
@@ -348,13 +348,13 @@ Les étapes suivantes se dérouleront à l’aide de l’IDE VSCode à l’aide 
    </workspaceFilter>
    ```
 
-   Le `filter.xml` est chargé d’identifier les chemins d’accès des noeuds qui seront installés avec le package. Remarquez la variable `mode="merge"` sur chacun des filtres qui indique que le contenu existant ne sera pas modifié, seul un nouveau contenu est ajouté. Étant donné que les auteurs de contenu peuvent mettre à jour ces chemins, il est important qu’un déploiement de code **not** remplacer le contenu. Voir [Documentation de FileVault](https://jackrabbit.apache.org/filevault/filter.html) pour plus d’informations sur l’utilisation des éléments de filtre.
+   Le `filter.xml` est chargé d’identifier les chemins d’accès des noeuds installés avec le package. Remarquez la variable `mode="merge"` sur chacun des filtres qui indique que le contenu existant ne sera pas modifié, seul un nouveau contenu est ajouté. Étant donné que les auteurs de contenu peuvent mettre à jour ces chemins, il est important qu’un déploiement de code **not** remplacer le contenu. Voir [Documentation de FileVault](https://jackrabbit.apache.org/filevault/filter.html) pour plus d’informations sur l’utilisation des éléments de filtre.
 
    Comparer `ui.content/src/main/content/META-INF/vault/filter.xml` et `ui.apps/src/main/content/META-INF/vault/filter.xml` pour comprendre les différents noeuds gérés par chaque module.
 
    >[!WARNING]
    >
-   > Afin d’assurer des déploiements cohérents pour le site de référence WKND, certaines branches du projet sont configurées de sorte que `ui.content` écrasera toute modification dans le JCR. C’est par conception, c’est-à-dire pour les branches de solution, puisque le code/les styles seront écrits pour des stratégies spécifiques.
+   > Afin d’assurer des déploiements cohérents pour le site de référence WKND, certaines branches du projet sont configurées de sorte que `ui.content` remplace toute modification dans le JCR. Il s’agit d’une conception, c’est-à-dire des branches de solution, puisque le code/les styles sont écrits pour des stratégies spécifiques.
 
 ## Félicitations ! {#congratulations}
 

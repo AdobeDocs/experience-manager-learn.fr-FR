@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
-source-git-commit: f4e86059d29acf402de5242f033a25f913febf36
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 3%
 
 ---
@@ -56,7 +56,7 @@ Installez la dernière version de [eclipse](https://www.eclipse.org/downloads/)
 
 ## Créer votre premier projet
 
-Archetype est une boîte à outils de modèle de projet Maven. Un archétype est défini comme un modèle ou un modèle d’origine à partir duquel toutes les autres choses du même type sont faites. Le nom correspond à ce que nous essayons de fournir un système qui fournit un moyen cohérent de générer des projets Maven. Archetype aidera les auteurs à créer des modèles de projet Maven pour les utilisateurs et fournit aux utilisateurs les moyens de générer des versions paramétrées de ces modèles de projet.
+Archetype est une boîte à outils de modèle de projet Maven. Un archétype est défini comme un modèle ou un modèle d’origine à partir duquel toutes les autres choses du même type sont faites. Le nom correspond à ce que nous essayons de fournir un système qui fournit un moyen cohérent de générer des projets Maven. Archetype aide les auteurs à créer des modèles de projet Maven pour les utilisateurs et fournit aux utilisateurs les moyens de générer des versions paramétrées de ces modèles de projet.
 Pour créer votre premier projet Maven, procédez comme suit :
 
 * Créez un dossier appelé `aemformsbundles` dans votre lecteur C
@@ -95,13 +95,13 @@ Cliquez sur **Terminer** pour lancer le processus d&#39;import
 
 Le projet est importé dans Eclipse et plusieurs `mysite.xxxx` dossiers
 
-Développez l’objet `src/main/java` sous le `mysite.core` dossier. Il s’agit du dossier dans lequel vous écrirez la plupart de votre code.
+Développez l’objet `src/main/java` sous le `mysite.core` dossier. Il s’agit du dossier dans lequel vous écrivez la plupart de votre code.
 
 ![data-source](assets/mysite-core-project.png)
 
 ## Inclure le SDK client AEMFD
 
-Vous devrez inclure le sdk client AEMFD dans votre projet pour tirer parti des différents services fournis avec AEM Forms. Veuillez consulter [SDK client AEMFD](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) pour inclure le SDK client approprié dans votre projet Maven. Vous devrez inclure le SDK client FD AEM dans la section des dépendances de la variable `pom.xml` du projet principal, comme illustré ci-dessous.
+Vous devez inclure le sdk client AEMFD dans votre projet pour tirer parti des différents services fournis avec AEM Forms. Veuillez consulter [SDK client AEMFD](https://mvnrepository.com/artifact/com.adobe.aemfd/aemfd-client-sdk) pour inclure le SDK client approprié dans votre projet Maven. Vous devez inclure le SDK client FD AEM dans la section des dépendances de `pom.xml` du projet principal, comme illustré ci-dessous.
 
 ```xml
 <dependency>
@@ -116,5 +116,5 @@ Pour créer votre projet, procédez comme suit :
 * Ouvrir **fenêtre d&#39;invite de commande**
 * Accédez à `c:\aemformsbundles\mysite\core`.
 * Exécutez la commande `mvn clean install -PautoInstallBundle`
-La commande ci-dessus crée et installe le lot dans le serveur AEM s’exécutant sur `http://localhost:4502`. Le lot sera également disponible sur le système de fichiers à l’adresse
+La commande ci-dessus crée et installe le lot dans le serveur AEM s’exécutant sur `http://localhost:4502`. Le lot est également disponible sur le système de fichiers à l’adresse
    `C:\AEMFormsBundles\mysite\core\target` et peuvent être déployés à l’aide de [Console web Felix](http://localhost:4502/system/console/bundles)

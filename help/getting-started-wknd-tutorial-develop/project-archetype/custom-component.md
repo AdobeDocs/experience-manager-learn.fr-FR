@@ -12,9 +12,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 79d41d833ab0659f26f988678e124daa18b857f3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4131'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Ce tutoriel porte sur la création de bout en bout d’un composant de ligne d’AEM personnalisé qui affiche le contenu créé dans une boîte de dialogue et explore le développement d’un modèle Sling pour encapsuler la logique commerciale qui renseigne le code HTL du composant.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Examinez les outils et les instructions requis pour configurer une [environnement de développement local](overview.md#local-dev-environment).
 
@@ -82,7 +82,7 @@ L’implémentation du composant Signature comprend une boîte de dialogue qui c
 
 Créez tout d’abord la structure de noeud Composant signature et définissez une boîte de dialogue. Cela représente le composant dans AEM et définit implicitement le type de ressource du composant en fonction de son emplacement dans le JCR.
 
-La boîte de dialogue expose l’interface que les auteurs de contenu peuvent fournir. Pour cette implémentation, le composant principal de la gestion du contenu web AEM **Image** Le composant sera utilisé pour gérer la création et le rendu de l’image de la signature, de sorte qu’il soit défini comme le de notre composant. `sling:resourceSuperType`.
+La boîte de dialogue expose l’interface que les auteurs de contenu peuvent fournir. Pour cette implémentation, le composant principal de la gestion du contenu web AEM **Image** Le composant est utilisé pour gérer la création et le rendu de l’image de la signature. Il doit donc être défini comme `sling:resourceSuperType`.
 
 ### Création d’une définition de composant {#create-component-definition}
 
@@ -372,7 +372,7 @@ Le modèle Sling de signature repose sur plusieurs API Java fournies par AEM. Ce
    ...
    ```
 
-   Le `uber-jar` n’est inclus que lorsque la variable `classic` Le profil est appelé, c’est-à-dire `mvn clean install -PautoInstallSinglePackage -Pclassic`. Encore une fois, c&#39;est unique à ce projet. Dans un projet réel, généré à partir de l’archétype de projet AEM le `uber-jar` sera la valeur par défaut si la version de l’AEM spécifiée est 6.5 ou 6.4.
+   Le `uber-jar` n’est inclus que lorsque la variable `classic` Le profil est appelé, c’est-à-dire `mvn clean install -PautoInstallSinglePackage -Pclassic`. Encore une fois, c&#39;est unique à ce projet. Dans un projet réel, généré à partir de l’archétype de projet AEM le `uber-jar` est la valeur par défaut si la version de l’AEM spécifiée est 6.5 ou 6.4.
 
    Le [uber-jar](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html#experience-manager-api-dependencies) contient toutes les API Java publiques exposées par AEM 6.x. La version est conservée dans le modèle pom du réacteur parent situé à la racine du projet. `aem-guides-wknd/pom.xml`.
 
@@ -616,7 +616,7 @@ Il existe deux façons de s&#39;y attaquer :
 
 Vérifiez si la variable `fileReference` La propriété JCR est résolue sur une ressource. *OU* Convertissez cette ressource en modèle Sling d’image de composant principal et assurez-vous que la variable `getSrc()` n’est pas vide.
 
-Nous allons opter pour le **second** approche. La première approche est probablement suffisante, mais dans ce tutoriel, cette dernière sera utilisée pour nous permettre d’explorer d’autres fonctionnalités des modèles Sling.
+Nous acceptons le **second** approche. La première approche est probablement suffisante, mais dans ce tutoriel, cette dernière est utilisée pour nous permettre d’explorer d’autres fonctionnalités des modèles Sling.
 
 1. Créez une méthode privée qui récupère l’image. Cette méthode est laissée privée car nous n’avons pas besoin d’exposer l’objet Image dans le HTL lui-même, et il est utilisé uniquement pour le lecteur. `isEmpty().`
 
@@ -705,7 +705,7 @@ Nous allons opter pour le **second** approche. La première approche est probabl
 
    N’oubliez pas que les modèles Sling sont **NOT** Services OSGi, de sorte qu’il soit sûr de maintenir l’état de classe. Souvent `@PostConstruct` permet de créer et de configurer l’état de classe de modèle Sling pour une utilisation ultérieure, comme le fait un constructeur brut.
 
-   Notez que si la variable `@PostConstruct` renvoie une exception, le modèle Sling n’instanciera pas (il sera nul).
+   Notez que si la variable `@PostConstruct` renvoie une exception, le modèle Sling n’instanciera pas (il est nul).
 
 1. **getImage()** peut désormais être mis à jour pour renvoyer simplement l’objet image.
 
@@ -790,7 +790,7 @@ Nous allons opter pour le **second** approche. La première approche est probabl
        /**
        * @PostConstruct is immediately called after the class has been initialized
        * but BEFORE any of the other public methods. 
-       * It is a good method to initialize variables that will be used by methods in the rest of the model
+       * It is a good method to initialize variables that is used by methods in the rest of the model
        *
        */
        @PostConstruct
@@ -1027,7 +1027,7 @@ Si la variable **BylineImpl** ne s’affiche pas dans cette liste, il y a probab
 
 ## Styles de trait {#byline-styles}
 
-Le composant Signature doit être mis en forme pour correspondre à la conception créative du composant Signature. Pour ce faire, utilisez SCSS, qui AEM la prise en charge par l’intermédiaire de la **ui.frontend** Sous-projet Maven.
+Le composant Signature doit être mis en forme pour correspondre à la conception créative du composant Signature. Pour ce faire, utilisez SCSS, qui AEM la prise en charge via l’ **ui.frontend** Sous-projet Maven.
 
 ### Ajouter un style par défaut
 

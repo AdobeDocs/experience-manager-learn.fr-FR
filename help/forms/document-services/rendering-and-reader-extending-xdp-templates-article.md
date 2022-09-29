@@ -7,7 +7,7 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: ce1793d1-f727-4bc4-9994-f495b469d1e3
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 2%
@@ -29,7 +29,7 @@ Pour réaliser ce cas d’utilisation, procédez comme suit.
 * Vous pouvez également visionner la vidéo sur [configuration des informations d’identification Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html)
 
 
-* Créez un service OSGi personnalisé qui effectuera le rendu et appliquera les droits d’utilisation. Le code permettant d’y parvenir est répertorié ci-dessous.
+* Créez un service OSGi personnalisé qui effectue le rendu et applique les droits d’utilisation. Le code permettant d’y parvenir est répertorié ci-dessous.
 
 ## Rendu XDP et application des droits d’utilisation {#render-xdp-and-apply-usage-rights}
 
@@ -83,7 +83,7 @@ Pour réaliser ce cas d’utilisation, procédez comme suit.
 
 La capture d’écran suivante présente les propriétés de configuration exposées. La plupart des droits d’utilisation courants sont exposés via cette configuration.
 
-![](assets/configurationproperties.gif)
+![Propriétés de configuration](assets/configurationproperties.gif)
 
 Le code suivant indique le code utilisé pour créer les paramètres de configuration OSGi.
 

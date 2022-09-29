@@ -8,10 +8,10 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 1532a865-4664-40d9-964a-e64463b49587
-source-git-commit: b918afdddf1f047b478e0521883a633f7b0610c6
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 3%
+source-wordcount: '708'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ Les étapes suivantes ont été suivies pour mettre en oeuvre l’extraction des
 
 ## Créer un compte de développeur
 
-Création d’un compte développeur avec [Analyseur d’ID](https://portal.idanalyzer.com/signin.html). Notez la clé API. Cette clé sera nécessaire pour appeler les API REST du service d’ID Analyzer.
+Création d’un compte développeur avec [Analyseur d’ID](https://portal.idanalyzer.com/signin.html). Notez la clé API. Cette clé est nécessaire pour appeler les API REST du service d’ID Analyzer.
 
 ## Création d’un fichier Swagger/OpenAPI
 
@@ -84,7 +84,7 @@ Pour intégrer AEM/AEM Forms à des applications tierces, nous devons [création
 
 ## Création d’un modèle de données de formulaire
 
-L’intégration de données AEM Forms offre une interface utilisateur intuitive pour créer et utiliser des [modèles de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html). Basez le modèle de données de formulaire sur la source de données créée à l’étape précédente.
+L’intégration de données AEM Forms offre une interface utilisateur intuitive pour créer et utiliser des [modèles de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=fr). Basez le modèle de données de formulaire sur la source de données créée à l’étape précédente.
 
 ![fdm](assets/test-dl-fdm.PNG)
 

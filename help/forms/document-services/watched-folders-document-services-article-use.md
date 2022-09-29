@@ -1,18 +1,18 @@
 ---
 title: Utilisation de dossiers de contrôle dans AEM Forms
 description: Configuration et utilisation des dossiers de contrôle dans AEM Forms
-feature: Service Output
+feature: Output Service
 version: 6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: abb74d44-d1b9-44d6-a49f-36c01acfecb4
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 22%
+source-wordcount: '423'
+ht-degree: 25%
 
 ---
-
 
 # Utilisation de dossiers de contrôle dans AEM Forms{#using-watched-folders-in-aem-forms}
 
@@ -24,20 +24,20 @@ Les dossiers de contrôle sont utilisés pour générer des documents en mode ba
 
 Cet article couvre le cas pratique de la fusion des données avec un modèle utilisant le service de sortie via le mécanisme du dossier de contrôle.
 
-Le service Output est un service OSGi qui fait partie d’AEM Document Services. Le service Output prend en charge divers formats de sortie et fonctions de conception de sortie d’AEM Forms Designer. Le service Output peut convertir les modèles XFA et les données XML pour générer des documents d’impression dans différents formats.
+Le service Output est un service OSGi qui fait partie d’AEM Document Services. Le service Output prend en charge divers formats de sortie et fonctions de conception de sortie d’AEM Forms Designer. Le service Output peut convertir les modèles XFA et les données XML pour générer des documents d’impression dans différents formats.
 
-Pour en savoir plus sur le service de sortie, [veuillez cliquer ici](https://helpx.adobe.com/aem-forms/6/output-service.html).
+Pour en savoir plus sur le service de sortie, [cliquez ici](https://helpx.adobe.com/aem-forms/6/output-service.html).
 Pour configurer le dossier de contrôle sur votre système, procédez comme suit :
-* [Téléchargez et extrayez le contenu du fichier zip](assets/outputservicewatchedfolderkt.zip). Ce fichier zip contient le package pour créer le dossier de contrôle et des fichiers d’exemple afin de tester le service de sortie à l’aide du mécanisme du dossier de contrôle.
+* [Télécharger et extraire le contenu du fichier zip](assets/outputservicewatchedfolderkt.zip).Ce fichier zip contient le package pour la création du dossier de contrôle et des fichiers d’exemple afin de tester le service de sortie à l’aide du mécanisme du dossier de contrôle.
    * Système Windows
 
       * Importez outputservicewatchedfolder.zip dans AEM à l’aide du gestionnaire de packages.
-      * Cela crée un dossier de contrôle appelé outputservicewatchedfolder sur votre lecteur C.
+      * Cela crée un dossier de contrôle appelé outputservicewatchedfolder sur votre disque C.
    * Système non Windows
       * [Ouvrez le paramètre de configuration du dossier de contrôle.](http://localhost:4502/crx/de/index.jsp#/etc/fd/watchfolder/config/outputservice)
       * Définissez la propriété folder path du noeud outservice pour qu’elle pointe vers un emplacement approprié.
       * Enregistrez vos modifications
-      * L’emplacement mentionné ci-dessus sera votre dossier de contrôle.
+      * L’emplacement mentionné ci-dessus est votre dossier de contrôle.
 
 Déposez les dossiers SamplePdfFile et SampleXdpFile dans le dossier input du dossier de contrôle. Une fois le traitement des fichiers réussi, les résultats sont placés dans le dossier des résultats de votre dossier de contrôle.
 
@@ -47,4 +47,3 @@ Déposez les dossiers SamplePdfFile et SampleXdpFile dans le dossier input du do
 >Si le script associé au dossier de contrôle nécessite plusieurs fichiers, vous devez créer un dossier, y placer tous les fichiers requis et déposer le dossier dans le dossier input de votre dossier de contrôle.
 >
 >Si le script associé au dossier de contrôle ne nécessite qu’un seul fichier d’entrée, vous pouvez le déposer directement dans le dossier input de votre dossier de contrôle.
-

@@ -4,9 +4,10 @@ description: Découvrez comment configurer et utiliser AEM as a cloud service po
 role: Architect, Developer
 topic: Development
 feature: CDN Cache, Dispatcher
-source-git-commit: fa85f0270e21cc9857f95c541a06e87cf26d5798
+exl-id: fdf62074-1a16-437b-b5dc-5fb4e11f1355
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '559'
 ht-degree: 1%
 
 ---
@@ -27,7 +28,7 @@ Découvrez comment configurer et utiliser AEM as a cloud service pour prendre en
 
 + AEM code doit définir le cookie __&quot;x-aem-variant&quot;__ à l’état préféré du visiteur (par exemple, `Set-Cookie: x-aem-variant=NY`) sur la réponse HTTP correspondante de la requête HTTP initiale.
 
-+ Les demandes suivantes du visiteur envoient ce cookie (par exemple : `“Cookie: x-aem-variant=NY”`) et le cookie sera transformé au niveau du réseau de diffusion de contenu en un en-tête prédéfini (c’est-à-dire `x-aem-variant:NY`) qui est transmis au Dispatcher.
++ Les demandes suivantes du visiteur envoient ce cookie (par exemple : `"Cookie: x-aem-variant=NY"`) et que le cookie est transformé au niveau du réseau de diffusion de contenu en un en-tête prédéfini (c’est-à-dire `x-aem-variant:NY`) qui est transmis au Dispatcher.
 
 + Une règle de réécriture Apache modifie le chemin d’accès à la requête afin d’inclure la valeur d’en-tête dans l’URL de la page en tant que sélecteur Apache Sling (par exemple, `/page.variant=NY.html`). Cela permet à AEM Publish de diffuser un contenu différent en fonction du sélecteur et du Dispatcher de mettre en cache une page par variante.
 

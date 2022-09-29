@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 93d50e79853429f420803c28807ee8018d0ff78f
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '297'
 ht-degree: 8%
 
 ---
@@ -46,7 +46,7 @@ Pour suivre ce tutoriel, vous devez suivre les étapes suivantes :
 
 ### Environnement AEM
 
-Pour suivre ce tutoriel, AEM’accès administrateur à un environnement AEM as a Cloud Service est recommandé.  Si vous n’avez pas accès à AEM environnement as a Cloud Service, vous pouvez utiliser la variable [AEM local as a Cloud Service SDK de démarrage rapide](/help/cloud-service/local-development-environment/aem-runtime.md). Toutefois, il est important de savoir que certains écrans de l’interface utilisateur de produit, tels que la navigation dans les fragments de contenu, seront différents.
+Pour suivre ce tutoriel, AEM’accès administrateur à un environnement AEM as a Cloud Service est recommandé.  Si vous n’avez pas accès à AEM environnement as a Cloud Service, vous pouvez utiliser la variable [AEM local as a Cloud Service SDK de démarrage rapide](/help/cloud-service/local-development-environment/aem-runtime.md). Toutefois, il est important de savoir que certains écrans de l’interface utilisateur du produit, tels que la navigation dans les fragments de contenu, sont différents.
 
 ## Commençons !
 

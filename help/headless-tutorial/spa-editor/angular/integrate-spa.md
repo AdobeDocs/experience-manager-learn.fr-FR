@@ -14,9 +14,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: e9386885-86de-4e43-933c-2f0a2c04a2f2
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2191'
+source-wordcount: '2187'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ Découvrez comment le code source d’une application d’une seule page (SPA) �
 
 ## Ce que vous allez créer
 
-Ce chapitre ajoute un `Header` au SPA. Au cours du processus de création de cette statique `Header` Nous utiliserons plusieurs approches pour AEM développement SPA.
+Ce chapitre ajoute un `Header` au SPA. Au cours du processus de création de cette statique `Header` utilisent plusieurs approches pour AEM développement SPA.
 
 ![Nouvel en-tête dans AEM](./assets/integrate-spa/final-header-component.png)
 
@@ -71,7 +71,7 @@ Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/a
 
 Deux modules ont été créés dans le cadre du projet AEM : `ui.apps` et `ui.frontend`.
 
-Le `ui.frontend` est un module [webpack](https://webpack.js.org/) qui contient tout le code source SPA. La majorité du développement et des tests SPA seront effectués dans le projet webpack. Lorsqu’une version de production est déclenchée, la SPA est créée et compilée à l’aide de webpack. Les artefacts compilés (CSS et Javascript) sont copiés dans la variable `ui.apps` qui est ensuite déployé sur le runtime AEM.
+Le `ui.frontend` est un module [webpack](https://webpack.js.org/) qui contient tout le code source SPA. La majorité du développement et des tests SPA est effectuée dans le projet webpack. Lorsqu’une version de production est déclenchée, la SPA est créée et compilée à l’aide de webpack. Les artefacts compilés (CSS et Javascript) sont copiés dans la variable `ui.apps` qui est ensuite déployé sur le runtime AEM.
 
 ![architecture de haut niveau ui.frontend](assets/integrate-spa/ui-frontend-architecture.png)
 
@@ -269,7 +269,7 @@ Ajoutez ensuite un nouveau composant au SPA et déployez les modifications sur u
 
 Comme vous l’avez vu dans les exercices précédents, l’exécution d’une version et la synchronisation de la bibliothèque cliente avec une instance locale d’AEM prend quelques minutes. Cela est acceptable pour les tests finaux, mais n’est pas idéal pour la majorité du développement SPA.
 
-A [serveur de développement webpack](https://webpack.js.org/configuration/dev-server/) peut être utilisé pour développer rapidement le SPA. Le SPA est piloté par un modèle JSON généré par AEM. Dans cet exercice, le contenu JSON d’une instance d’AEM en cours d’exécution sera **proxy** dans le serveur de développement configuré par le [Angular de projet](https://angular.io/guide/build).
+A [serveur de développement webpack](https://webpack.js.org/configuration/dev-server/) peut être utilisé pour développer rapidement le SPA. Le SPA est piloté par un modèle JSON généré par AEM. Dans cet exercice, le contenu JSON d’une instance d’AEM en cours d’exécution est **proxy** dans le serveur de développement configuré par le [Angular de projet](https://angular.io/guide/build).
 
 1. Revenez à l’IDE et ouvrez le fichier . **proxy.conf.json** at `ui.frontend/proxy.conf.json`.
 
@@ -458,7 +458,7 @@ La configuration initiale du simulateur JSON fait **nécessite une instance d’
 
 ## Ajout de styles avec Sass
 
-Ensuite, un style mis à jour sera ajouté au projet. Ce projet ajoutera [Sass](https://sass-lang.com/) prise en charge de quelques fonctionnalités utiles telles que les variables.
+Ensuite, un style mis à jour est ajouté au projet. Ce projet ajoutera [Sass](https://sass-lang.com/) prise en charge de quelques fonctionnalités utiles telles que les variables.
 
 1. Ouvrez une fenêtre de terminal et arrêtez le **serveur de développement webpack** si a commencé. À l’intérieur de `ui.frontend` saisissez la commande suivante pour mettre à jour l’application Angular à traiter **.scss** fichiers .
 

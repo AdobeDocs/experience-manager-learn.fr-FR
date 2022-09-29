@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 412eea77-3cf4-43bb-9d2f-ae860cd9d3be
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 # Stockage du schéma JSON dans la base de données {#storing-json-schema-in-database}
 
 
-Pour pouvoir interroger les données envoyées, nous devrons stocker le schéma JSON associé au formulaire envoyé. Le schéma JSON sera utilisé dans le Query Builder pour créer la requête.
+Pour pouvoir interroger les données envoyées, nous devrons stocker le schéma JSON associé au formulaire envoyé. Le schéma JSON est utilisé dans le Query Builder pour créer la requête.
 
 Lorsqu’un formulaire adaptatif est envoyé, nous vérifions si le schéma JSON associé se trouve dans la base de données. Si le schéma JSON n’existe pas, nous récupérons le schéma JSON et le stockons dans le tableau approprié. Nous associons également le nom du formulaire au schéma JSON. La capture d’écran suivante montre le tableau dans lequel les schémas JSON sont stockés.
 

@@ -12,16 +12,16 @@ mini-toc-levels: 1
 kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
-source-git-commit: 25a1a40f42d37443db9edc0e09b1691b1c19e848
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1145'
 ht-degree: 4%
 
 ---
 
 # Notions de base des composants {#component-basics}
 
-Dans ce chapitre, nous allons explorer la technologie sous-jacente d’un composant Sites Adobe Experience Manager (AEM) au moyen d’une `HelloWorld` par exemple. De petites modifications seront apportées à un composant existant, couvrant les rubriques de création, HTL, modèles Sling, bibliothèques côté client.
+Dans ce chapitre, nous allons explorer la technologie sous-jacente d’un composant Sites Adobe Experience Manager (AEM) au moyen d’une `HelloWorld` par exemple. De petites modifications sont apportées à un composant existant, couvrant des rubriques de création, HTL, modèles Sling, bibliothèques côté client.
 
 ## Prérequis {#prerequisites}
 
@@ -282,7 +282,7 @@ Ensuite, nous allons apporter quelques mises à jour au `HelloWorldModel` Modèl
 
 Les bibliothèques côté client (clientlibs, pour résumer) offrent un mécanisme d’organisation et de gestion des fichiers CSS et JavaScript nécessaires à une mise en oeuvre d’AEM Sites. Les bibliothèques côté client sont la méthode standard pour inclure du code CSS et JavaScript sur une page dans AEM.
 
-Le [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr) est un module découplé. [webpack](https://webpack.js.org/) qui est intégré au processus de génération. Cela permet l’utilisation de bibliothèques front-end populaires telles que Sass, LESS et TypeScript. Le `ui.frontend` sera exploré plus en détail dans la section [Chapitre Bibliothèques côté client](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
+Le [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr) est un module découplé. [webpack](https://webpack.js.org/) qui est intégré au processus de génération. Cela permet l’utilisation de bibliothèques front-end populaires telles que Sass, LESS et TypeScript. Le `ui.frontend` est étudié plus en détail dans la section [Chapitre Bibliothèques côté client](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
 Ensuite, mettez à jour les styles CSS pour le `HelloWorld` composant.
 

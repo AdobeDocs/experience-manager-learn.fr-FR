@@ -14,9 +14,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9f1dbd02-774a-4b84-90fa-02d4e468cbac
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '165'
 ht-degree: 7%
 
 ---
@@ -38,7 +38,7 @@ L’exemple de formulaire utilisé dans ce processus est basé sur un modèle de
 * Télécharger [Formulaire adaptatif](assets/peak-application-form.zip)
 * Accédez à [Formulaire Et Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Cliquez sur Créer -> Téléchargement du fichier
-* L’exemple de formulaire adaptatif sera placé dans un dossier appelé [Forms d’application](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
+* L’exemple de formulaire adaptatif est placé dans un dossier appelé [Forms d’application](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
 
 La vidéo suivante explique comment configurer un formulaire adaptatif pour déclencher un processus AEM
 >[!VIDEO](https://video.tv.adobe.com/v/40258/?quality=9&learn=on)

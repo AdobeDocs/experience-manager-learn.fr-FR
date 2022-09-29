@@ -13,16 +13,16 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: a767d8f8-d75e-4472-9139-c08d804ee076
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '170'
 ht-degree: 2%
 
 ---
 
 # Processus de révision et d’approbation du PDF envoyé
 
-La dernière et dernière étape consiste à créer AEM workflow qui génère un PDF statique, ou non interactif, à des fins de révision et d’approbation. Le workflow sera déclenché par un lanceur AEM configuré sur le noeud . `/content/pdfsubmissions`.
+La dernière et dernière étape consiste à créer AEM workflow qui génère un PDF statique, ou non interactif, à des fins de révision et d’approbation. Le workflow est déclenché par un lanceur AEM configuré sur le noeud . `/content/pdfsubmissions`.
 
 La capture d’écran suivante montre les étapes du workflow.
 

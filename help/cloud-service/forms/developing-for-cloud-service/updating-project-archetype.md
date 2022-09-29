@@ -9,9 +9,9 @@ version: Cloud Service
 topic: Development
 kt: 9534
 exl-id: c2cd9c52-6f00-4cfe-a972-665093990e5d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '324'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Puisque nous créons le nouveau projet Maven dans le dossier cloudmanager qui a 
 
 >[!NOTE]
 >
->Si vous déployez ce nouveau projet comme l’est l’instance de service cloud, HandleFormSubmission et SubmitToAEMServlet ne seront pas inclus. En effet, chaque fois que vous déployez un projet à l’aide de cloud manager, tout élément situé sous le dossier des applications est supprimé et remplacé.
+>Si vous déployez ce nouveau projet comme l’est l’instance de service cloud, HandleFormSubmission et SubmitToAEMServlet ne seront pas inclus. Cela est dû au fait que chaque fois que vous déployez un projet à l’aide de Cloud Manager, tout sous `/apps` est supprimé et remplacé.
 
 ## Copiez votre code Java
 

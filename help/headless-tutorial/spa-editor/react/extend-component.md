@@ -11,9 +11,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1089'
 ht-degree: 3%
 
 ---
@@ -25,27 +25,27 @@ Découvrez comment étendre un composant principal existant à utiliser avec l�
 ## Objectif
 
 1. Étendez un composant principal existant avec des propriétés et du contenu supplémentaires.
-2. Comprenez les principes de base de l’héritage des composants à l’aide de `sling:resourceSuperType`.
-3. Découvrez comment tirer parti de [Modèle de délégation](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) pour les modèles Sling afin de réutiliser la logique et les fonctionnalités existantes.
+2. Comprendre les principes de base de l’héritage des composants à l’aide de la fonction `sling:resourceSuperType`.
+3. Découvrez comment tirer parti de la variable [Modèle de délégation](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) pour que les modèles Sling réutilisent la logique et les fonctionnalités existantes.
 
 ## Ce que vous allez créer
 
-Ce chapitre illustre le code supplémentaire nécessaire pour ajouter une propriété supplémentaire à un composant `Image` standard afin de répondre aux exigences d’un nouveau composant `Banner`. Le composant `Banner` contient toutes les mêmes propriétés que le composant `Image` standard, mais comprend une propriété supplémentaire pour que les utilisateurs puissent remplir le **texte de bannière**.
+Ce chapitre illustre le code supplémentaire nécessaire à l’ajout d’une propriété supplémentaire à une propriété standard `Image` afin de répondre aux exigences d’un nouveau `Banner` composant. Le `Banner` contient toutes les mêmes propriétés que la norme `Image` , mais inclut une propriété supplémentaire pour que les utilisateurs puissent renseigner la variable **Texte de bannière**.
 
 ![Composant de bannière créé final](assets/extend-component/final-author-banner-component.png)
 
 ## Prérequis
 
-Examinez les outils et instructions requis pour configurer un [environnement de développement local](overview.md#local-dev-environment). À ce stade du tutoriel, les utilisateurs disposent d’une bonne compréhension de la fonction AEM Éditeur SPA.
+Examinez les outils et les instructions requis pour configurer une [environnement de développement local](overview.md#local-dev-environment). À ce stade du tutoriel, les utilisateurs disposent d’une bonne compréhension de la fonction AEM Éditeur SPA.
 
 ## Héritage avec Sling Resource Super Type {#sling-resource-super-type}
 
-Pour étendre un composant existant, définissez une propriété nommée `sling:resourceSuperType` sur la définition de votre composant.  `sling:resourceSuperType`est une  [](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) propriété qui peut être définie sur la définition d’un composant AEM qui pointe vers un autre composant. Cela définit explicitement le composant pour hériter de toutes les fonctionnalités du composant identifié comme le `sling:resourceSuperType`.
+Pour étendre un jeu de composants existant, une propriété nommée `sling:resourceSuperType` sur la définition de votre composant.  `sling:resourceSuperType`est un [property](https://sling.apache.org/documentation/the-sling-engine/resources.html#resource-properties) qui peut être défini sur la définition d’un composant AEM qui pointe vers un autre composant. Cela définit explicitement le composant pour hériter de toutes les fonctionnalités du composant identifié comme le `sling:resourceSuperType`.
 
-Si nous souhaitons étendre le composant `Image` à `wknd-spa-react/components/image`, nous devons mettre à jour le code dans le module `ui.apps`.
+Si nous voulons étendre la variable `Image` component at `wknd-spa-react/components/image` nous devons mettre à jour le code dans la variable `ui.apps` module .
 
-1. Créez un dossier sous le module `ui.apps` pour `banner` à `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/banner`.
-1. Sous `banner`, créez une définition de composant (`.content.xml`) comme suit :
+1. Créez un dossier sous le `ui.apps` module pour `banner` at `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/banner`.
+1. Sous `banner` créer une définition de composant (`.content.xml`) comme suit :
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -56,14 +56,14 @@ Si nous souhaitons étendre le composant `Image` à `wknd-spa-react/components/i
        componentGroup="WKND SPA React - Content"/>
    ```
 
-   `wknd-spa-react/components/banner` est ainsi défini pour hériter de toutes les fonctionnalités de `wknd-spa-react/components/image`.
+   Ce paramètre `wknd-spa-react/components/banner` pour hériter de toutes les fonctionnalités d’ `wknd-spa-react/components/image`.
 
 ## cq:editConfig {#cq-edit-config}
 
-Le fichier `_cq_editConfig.xml` détermine le comportement de glisser-déposer dans l’interface utilisateur de création d’AEM. Lors de l’extension du composant Image, il est important que le type de ressource corresponde au composant lui-même.
+Le `_cq_editConfig.xml` détermine le comportement de glisser-déposer dans l’interface utilisateur de création d’AEM. Lors de l’extension du composant Image, il est important que le type de ressource corresponde au composant lui-même.
 
-1. Dans le module `ui.apps` , créez un autre fichier sous `banner` nommé `_cq_editConfig.xml`.
-1. Renseignez `_cq_editConfig.xml` avec le code XML suivant :
+1. Dans le `ui.apps` module crée un autre fichier sous `banner` named `_cq_editConfig.xml`.
+1. Renseigner `_cq_editConfig.xml` avec le code XML suivant :
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -159,7 +159,7 @@ Le fichier `_cq_editConfig.xml` détermine le comportement de glisser-déposer d
    </jcr:root>
    ```
 
-1. L’aspect unique du fichier est le noeud `<parameters>` qui définit resourceType sur `wknd-spa-react/components/banner`.
+1. L’aspect unique du fichier est le suivant : `<parameters>` Noeud qui définit resourceType sur `wknd-spa-react/components/banner`.
 
    ```xml
    <parameters
@@ -174,10 +174,10 @@ Le fichier `_cq_editConfig.xml` détermine le comportement de glisser-déposer d
 
 ## Étendre la boîte de dialogue {#extend-dialog}
 
-Notre composant `Banner` nécessite un champ de texte supplémentaire dans la boîte de dialogue pour capturer la balise `bannerText`. Puisque nous utilisons l’héritage Sling, nous pouvons utiliser les fonctionnalités de [Sling Resource Merger](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html?lang=fr) pour remplacer ou étendre des parties de la boîte de dialogue. Dans cet exemple, un nouvel onglet a été ajouté à la boîte de dialogue pour capturer des données supplémentaires d’un auteur afin de renseigner le composant Carte.
+Notre `Banner` Un champ de texte supplémentaire est nécessaire dans la boîte de dialogue pour capturer la variable `bannerText`. Puisque nous utilisons l’héritage Sling, nous pouvons utiliser les fonctionnalités de la variable [Sling Resource Merger](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/sling-resource-merger.html?lang=fr) pour remplacer ou étendre des parties de la boîte de dialogue. Dans cet exemple, un nouvel onglet a été ajouté à la boîte de dialogue pour capturer des données supplémentaires d’un auteur afin de renseigner le composant Carte.
 
-1. Dans le module `ui.apps`, sous le dossier `banner`, créez un dossier nommé `_cq_dialog`.
-1. Sous `_cq_dialog`, créez un fichier de définition de boîte de dialogue `.content.xml`. Renseignez-le avec les éléments suivants :
+1. Dans le `ui.apps` , sous le module `banner` créer un dossier, créer un dossier nommé `_cq_dialog`.
+1. Sous `_cq_dialog` créer un fichier de définition de boîte de dialogue ; `.content.xml`. Renseignez-le avec les éléments suivants :
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -231,22 +231,22 @@ Notre composant `Banner` nécessite un champ de texte supplémentaire dans la bo
    </jcr:root>
    ```
 
-   La définition XML ci-dessus crée un nouvel onglet nommé **Texte** et le classe *avant* l’onglet **Ressource** existant. Il contiendra un seul champ **Texte de bannière**.
+   La définition XML ci-dessus crée un nouvel onglet nommé **Texte** et commandez-le *before* le **Ressource** . Il contient un seul champ. **Texte de bannière**.
 
 1. La boîte de dialogue se présente comme suit :
 
    ![Boîte de dialogue de fin de bannière](assets/extend-component/banner-dialog.png)
 
-   Notez que nous n’avions pas à définir les onglets pour **Ressource** ou **Métadonnées**. Ils sont hérités via la propriété `sling:resourceSuperType` .
+   Observez que nous n’avions pas à définir les onglets pour **Ressource** ou **Métadonnées**. Ils sont hérités via le `sling:resourceSuperType` .
 
-   Avant de pouvoir prévisualiser la boîte de dialogue, nous devons implémenter le composant SPA et la fonction `MapTo`.
+   Avant de pouvoir prévisualiser la boîte de dialogue, nous devons mettre en oeuvre le composant SPA et le `MapTo` fonction .
 
 ## Mise en oeuvre SPA composant {#implement-spa-component}
 
-Pour utiliser le composant Bannière avec l’éditeur de SPA, un nouveau composant SPA doit être créé pour correspondre à `wknd-spa-react/components/banner`. Cela sera effectué dans le module `ui.frontend`.
+Pour utiliser le composant Bannière avec l’éditeur de SPA, un nouveau composant SPA doit être créé pour être mappé sur `wknd-spa-react/components/banner`. Cela se fait dans la variable `ui.frontend` module .
 
-1. Dans le module `ui.frontend` , créez un dossier pour `Banner` à `ui.frontend/src/components/Banner`.
-1. Créez un fichier nommé `Banner.js` sous le dossier `Banner`. Renseignez-le avec les éléments suivants :
+1. Dans le `ui.frontend` créer un dossier pour `Banner` at `ui.frontend/src/components/Banner`.
+1. Créez un fichier nommé `Banner.js` sous le `Banner` dossier. Renseignez-le avec les éléments suivants :
 
    ```js
    import React, {Component} from 'react';
@@ -297,9 +297,9 @@ Pour utiliser le composant Bannière avec l’éditeur de SPA, un nouveau compos
    MapTo('wknd-spa-react/components/banner')(Banner, BannerEditConfig);
    ```
 
-   Ce composant SPA est mappé sur le composant AEM `wknd-spa-react/components/banner` créé précédemment.
+   Ce composant SPA est mappé au composant AEM. `wknd-spa-react/components/banner` créé précédemment.
 
-1. Mettez à jour `import-components.js` à `ui.frontend/src/components/import-components.js` pour inclure le nouveau composant `Banner` SPA :
+1. Mettre à jour `import-components.js` at `ui.frontend/src/components/import-components.js` pour inclure la nouvelle `Banner` Composant SPA :
 
    ```diff
      import './ExperienceFragment/ExperienceFragment';
@@ -314,9 +314,9 @@ Pour utiliser le composant Bannière avec l’éditeur de SPA, un nouveau compos
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-1. Mettez à jour la stratégie du modèle SPA pour ajouter le composant `Banner` en tant que **composant autorisé**.
+1. Mettez à jour la stratégie du modèle SPA pour ajouter la variable `Banner` composant en tant que **composant autorisé**.
 
-1. Accédez à une page SPA et ajoutez le composant `Banner` à l’une des pages SPA :
+1. Accédez à une page SPA et ajoutez le `Banner` à l’une des pages SPA :
 
    ![Ajouter un composant Bannière](assets/extend-component/add-banner-component.png)
 
@@ -326,11 +326,11 @@ Pour utiliser le composant Bannière avec l’éditeur de SPA, un nouveau compos
 
 ## Ajout d’une interface Java {#java-interface}
 
-Pour exposer finalement les valeurs de la boîte de dialogue du composant au composant React, nous devons mettre à jour le modèle Sling qui renseigne le fichier JSON pour le composant `Banner`. Cela sera effectué dans le module `core` qui contient tout le code Java pour notre projet SPA.
+Pour exposer finalement les valeurs de la boîte de dialogue du composant au composant React, nous devons mettre à jour le modèle Sling qui renseigne le fichier JSON pour la variable `Banner` composant. Cela se fait dans la variable `core` qui contient tout le code Java pour notre projet SPA.
 
-Nous allons tout d’abord créer une interface Java pour `Banner` qui étend l’interface Java `Image`.
+Tout d’abord, nous allons créer une interface Java pour `Banner` qui étend la variable `Image` Interface Java.
 
-1. Dans le module `core` , créez un fichier nommé `BannerModel.java` à `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
+1. Dans le `core` créer un nouveau fichier nommé `BannerModel.java` at `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models`.
 1. Remplissez `BannerModel.java` avec les éléments suivants :
 
    ```java
@@ -347,13 +347,13 @@ Nous allons tout d’abord créer une interface Java pour `Banner` qui étend l�
    }
    ```
 
-   Cela héritera de toutes les méthodes de l’interface `Image` du composant principal et ajoutera une nouvelle méthode `getBannerText()`.
+   Cela héritera de toutes les méthodes du composant principal. `Image` interface et ajout d’une nouvelle méthode `getBannerText()`.
 
 ## Implémentation du modèle Sling {#sling-model}
 
-Implémentez ensuite le modèle Sling pour l’interface `BannerModel`.
+Implémentez ensuite le modèle Sling pour le `BannerModel` .
 
-1. Dans le module `core` , créez un fichier nommé `BannerModelImpl.java` à `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models/impl`.
+1. Dans le `core` créer un nouveau fichier nommé `BannerModelImpl.java` at `core/src/main/java/com/adobe/aem/guides/wkndspa/react/core/models/impl`.
 
 1. Remplissez `BannerModelImpl.java` avec les éléments suivants :
 
@@ -432,9 +432,9 @@ Implémentez ensuite le modèle Sling pour l’interface `BannerModel`.
    }
    ```
 
-   Notez l’utilisation des annotations `@Model` et `@Exporter` pour vous assurer que le modèle Sling peut être sérialisé en tant que JSON via l’exportateur de modèle Sling.
+   Notez l’utilisation de la variable `@Model` et `@Exporter` annotations pour garantir que le modèle Sling peut être sérialisé en tant que JSON via l’exportateur de modèle Sling.
 
-   `BannerModelImpl.java` utilise le modèle  [de délégation pour les ](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) modèles Sling afin d’éviter de réécrire toute la logique du composant principal Image .
+   `BannerModelImpl.java` utilise la variable [Modèle de délégation pour les modèles Sling](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) pour éviter de réécrire toute la logique à partir du composant principal Image .
 
 1. Observez les lignes suivantes :
 
@@ -444,7 +444,7 @@ Implémentez ensuite le modèle Sling pour l’interface `BannerModel`.
    private Image image;
    ```
 
-   L’annotation ci-dessus instancie un objet Image nommé `image` en fonction de l’héritage `sling:resourceSuperType` du composant `Banner`.
+   L’annotation ci-dessus instancie un objet Image nommé `image` en fonction de la variable `sling:resourceSuperType` héritage de `Banner` composant.
 
    ```java
    @Override
@@ -453,9 +453,9 @@ Implémentez ensuite le modèle Sling pour l’interface `BannerModel`.
    }
    ```
 
-   Il est alors possible d’utiliser simplement l’objet `image` pour implémenter des méthodes définies par l’interface `Image`, sans avoir à écrire la logique nous-mêmes. Cette technique est utilisée pour `getSrc()`, `getAlt()` et `getTitle()`.
+   Il est alors possible d’utiliser simplement la variable `image` pour implémenter des méthodes définies par `Image` sans avoir à écrire la logique nous-mêmes. Cette technique est utilisée pour `getSrc()`, `getAlt()` et `getTitle()`.
 
-1. Ouvrez une fenêtre de terminal et déployez uniquement les mises à jour du module `core` à l’aide du profil Maven `autoInstallBundle` du répertoire `core`.
+1. Ouvrez une fenêtre de terminal et déployez uniquement les mises à jour apportées à la fonction `core` à l’aide de Maven ; `autoInstallBundle` du profil `core` répertoire .
 
    ```shell
    $ cd core/
@@ -464,8 +464,8 @@ Implémentez ensuite le modèle Sling pour l’interface `BannerModel`.
 
 ## Assemblage {#put-together}
 
-1. Revenez à AEM et ouvrez la page SPA qui comporte le composant `Banner`.
-1. Mettez à jour le composant `Banner` pour inclure **Texte de bannière** :
+1. Revenez à AEM et ouvrez la page SPA qui contient le `Banner` composant.
+1. Mettez à jour le `Banner` à inclure **Texte de bannière**:
 
    ![Texte de bannière](assets/extend-component/banner-text-dialog.png)
 
@@ -475,11 +475,11 @@ Implémentez ensuite le modèle Sling pour l’interface `BannerModel`.
 
    Enregistrez les mises à jour de la boîte de dialogue.
 
-1. Vous devriez maintenant voir la valeur rendue de **Banner Text** :
+1. Vous devriez maintenant voir la valeur rendue de **Texte de bannière**:
 
    ![Texte de bannière affiché](assets/extend-component/banner-text-displayed.png)
 
-1. Affichez la réponse du modèle JSON à l’adresse : [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) et recherchez `wknd-spa-react/components/card` :
+1. Affichez la réponse du modèle JSON à l’adresse : [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) et recherchez le `wknd-spa-react/components/card`:
 
    ```json
    "banner": {

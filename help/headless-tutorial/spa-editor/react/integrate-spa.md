@@ -10,9 +10,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
-source-git-commit: 415ad1266925525a6b0954b4515bae3d152bb6ec
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1835'
 ht-degree: 3%
 
 ---
@@ -30,13 +30,13 @@ Découvrez comment le code source d’une application d’une seule page (SPA) �
 ## Ce que vous allez créer
 
 Dans ce chapitre, vous allez apporter plusieurs petites modifications au SPA afin de comprendre comment il est intégré à AEM.
-Ce chapitre ajoute un `Header` au SPA. En cours de construction **static** `Header` Nous utiliserons plusieurs approches pour AEM développement SPA.
+Ce chapitre ajoute un `Header` au SPA. En cours de construction **static** `Header` utilisent plusieurs approches pour AEM développement SPA.
 
 ![Nouvel en-tête dans AEM](./assets/integrate-spa/final-header-component.png)
 
 *Le SPA est étendu pour ajouter un `Header` component*
 
-## Conditions préalables
+## Prérequis
 
 Examinez les outils et les instructions requis pour configurer une [environnement de développement local](overview.md#local-dev-environment). Ce chapitre est la suite du chapitre [Créer un projet](create-project.md) , cependant, pour suivre ce processus, vous avez besoin d’un projet AEM activé SPA.
 
@@ -44,7 +44,7 @@ Examinez les outils et les instructions requis pour configurer une [environnemen
 
 Deux modules ont été créés dans le cadre du projet AEM : `ui.apps` et `ui.frontend`.
 
-Le `ui.frontend` est un module [webpack](https://webpack.js.org/) qui contient tout le code source SPA. La majorité du développement et des tests SPA seront effectués dans le projet webpack. Lorsqu’une version de production est déclenchée, la SPA est créée et compilée à l’aide de webpack. Les artefacts compilés (CSS et Javascript) sont copiés dans la variable `ui.apps` qui est ensuite déployé sur le runtime AEM.
+Le `ui.frontend` est un module [webpack](https://webpack.js.org/) qui contient tout le code source SPA. La majorité du développement et des tests SPA est effectuée dans le projet webpack. Lorsqu’une version de production est déclenchée, la SPA est créée et compilée à l’aide de webpack. Les artefacts compilés (CSS et Javascript) sont copiés dans la variable `ui.apps` qui est ensuite déployé sur le runtime AEM.
 
 ![architecture de haut niveau ui.frontend](assets/integrate-spa/ui-frontend-architecture.png)
 
@@ -132,7 +132,7 @@ Ensuite, examinez le `ui.frontend` pour comprendre le SPA qui a été généré 
 
 ## Ajout d’un composant SPA statique {#static-spa-component}
 
-Ajoutez ensuite un nouveau composant au SPA et déployez les modifications sur une instance AEM locale. Ce sera un changement simple, juste pour illustrer comment le SPA est mis à jour.
+Ajoutez ensuite un nouveau composant au SPA et déployez les modifications sur une instance AEM locale. C&#39;est un changement simple, juste pour illustrer comment le SPA est mis à jour.
 
 1. Dans le `ui.frontend` module, sous `ui.frontend/src/components` créer un dossier nommé `Header`.
 1. Créez un fichier nommé `Header.js` sous le `Header` dossier.
@@ -227,7 +227,7 @@ Ajoutez ensuite un nouveau composant au SPA et déployez les modifications sur u
 
 Comme vous l’avez vu dans les exercices précédents, l’exécution d’une version et la synchronisation de la bibliothèque cliente avec une instance locale d’AEM prend quelques minutes. Cela est acceptable pour les tests finaux, mais n’est pas idéal pour la majorité du développement SPA.
 
-A [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) peut être utilisé pour développer rapidement le SPA. Le SPA est piloté par un modèle JSON généré par AEM. Dans cet exercice, le contenu JSON d’une instance d’AEM en cours d’exécution sera **proxy** dans le serveur de développement.
+A [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) peut être utilisé pour développer rapidement le SPA. Le SPA est piloté par un modèle JSON généré par AEM. Dans cet exercice, le contenu JSON d’une instance d’AEM en cours d’exécution est **proxy** dans le serveur de développement.
 
 1. Revenez à l’IDE et ouvrez le fichier . `ui.frontend/package.json`.
 
@@ -237,7 +237,7 @@ A [webpack-dev-server](https://webpack.js.org/configuration/dev-server/) peut ê
    "proxy": "http://localhost:4502",
    ```
 
-   Le [Créer une application React](https://create-react-app.dev/docs/proxying-api-requests-in-development) fournit un mécanisme facile pour proxy des requêtes d’API. Toutes les requêtes inconnues seront traitées par proxy via `localhost:4502`, l’AEM local quickstart.
+   Le [Créer une application React](https://create-react-app.dev/docs/proxying-api-requests-in-development) fournit un mécanisme facile pour proxy des requêtes d’API. Toutes les requêtes inconnues sont traitées par proxy via `localhost:4502`, l’AEM local quickstart.
 
 1. Ouvrez une fenêtre de terminal et accédez au `ui.frontend` dossier. Exécutez la commande `npm start` :
 

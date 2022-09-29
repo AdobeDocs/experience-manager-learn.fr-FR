@@ -15,9 +15,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: da613092-e03b-467c-9b9e-668142df4634
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '645'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ Nous avons ajouté un nouvel onglet (Liste des ressources) dans le composant de 
 1. Créez un noeud de recouvrement de **/libs/fd/fp/extensions/querybuilder/assettypes**
 
 1. Définissez l’emplacement de la superposition sur &quot;/apps&quot;.
-1. Accédez à la nouvelle structure créée dans **/apps/fd/fp/extensions/querybuilder/assettypes **
+1. Accédez à la nouvelle structure créée à l’adresse `/apps/fd/fp/extensions/querybuilder/assettypes`
 
 1. Sous cet emplacement, créez un noeud &#39;nt:unstructured&#39; pour le type à enregistrer, nommez le noeud . **fichiers mp4. Ajoutez les deux propriétés suivantes à ce noeud mp4files**
 
@@ -91,4 +91,4 @@ Après avoir effectué les étapes ci-dessus, le nouveau type de ressource (Fich
 
 [Si vous rencontrez des problèmes pour que cela fonctionne, vous pouvez importer le package suivant.](assets/assettypeskt1.zip) Deux types de ressources personnalisés sont définis pour le package. Fichiers Mp4 et documents Word. Suggérez-vous de jeter un coup d’oeil au **/apps/fd/fp/extensions/querybuilder/assettypes**
 
-[Installation du package customeportal](assets/customportalpage.zip). Ce module contient un exemple de page de portail. Cette page sera utilisée dans la partie 2 de ce tutoriel.
+[Installation du package customeportal](assets/customportalpage.zip). Ce module contient un exemple de page de portail. Cette page est utilisée dans la partie 2 de ce tutoriel

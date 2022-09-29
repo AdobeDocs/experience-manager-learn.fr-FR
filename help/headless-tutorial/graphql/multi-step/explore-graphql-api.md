@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: 410eb23534e083940bf716194576e099d22ca205
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1532'
+source-wordcount: '1529'
 ht-degree: 7%
 
 ---
@@ -84,7 +84,7 @@ Cela permettra d’étendre toutes les requêtes aux modèles créés dans la va
 
 ### Requête sur une liste de fragments de contenu {#query-list-cf}
 
-Une exigence courante est de rechercher plusieurs fragments de contenu.
+Une exigence courante consiste à rechercher plusieurs fragments de contenu.
 
 1. Collez la requête suivante dans le panneau principal (en remplaçant la liste des commentaires) :
 
@@ -281,7 +281,7 @@ Il est également possible d’interroger directement un seul fragment de conten
 
 Une fois qu’un développeur est satisfait de la requête et des données renvoyées, l’étape suivante consiste à stocker ou à conserver la requête à AEM. [Requêtes persistantes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) est le mécanisme préféré pour exposer l’API GraphQL aux applications clientes. Une fois qu’une requête a été conservée, elle peut être demandée à l’aide d’une requête de GET et mise en cache aux couches Dispatcher et CDN. Les performances des requêtes persistantes sont bien meilleures. Outre les avantages de performances, les requêtes persistantes garantissent que les données supplémentaires ne sont pas exposées accidentellement aux applications clientes. Plus d’informations sur [Les requêtes personnalisées se trouvent ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
 
-Ensuite, conservez deux requêtes simples ; elles seront utilisées dans le chapitre suivant.
+Ensuite, conservez deux requêtes simples, elles sont utilisées dans le chapitre suivant.
 
 1. Dans l’IDE GraphiQL, saisissez la requête suivante :
 

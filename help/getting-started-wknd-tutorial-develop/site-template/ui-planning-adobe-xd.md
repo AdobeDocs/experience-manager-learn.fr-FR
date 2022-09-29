@@ -10,10 +10,11 @@ role: Developer
 level: Beginner
 kt: 9371
 thumbnail: 338680.jpg
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 2%
+source-wordcount: '405'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +36,7 @@ Pour suivre les vidéos, vous aurez besoin de [Adobe XD](https://www.adobe.com/p
 
 ## Ce que vous allez créer {#what-you-will-build}
 
-Dans ce chapitre, deux fichiers Adobe XD seront inspectés, l’un pour le [Modèle de site standard](https://github.com/adobe/aem-site-template-standard) et une autre pour le site WKND proposé. Les
+Dans ce chapitre, deux fichiers Adobe XD sont inspectés, l’un pour la variable [Modèle de site standard](https://github.com/adobe/aem-site-template-standard) et une autre pour le site WKND proposé. Les
 
 ## Kit d’interface utilisateur de modèle de site standard {#standard-site-template-uikit}
 
@@ -64,6 +65,6 @@ Additional [Kits d’IU disponibles](https://www.adobe.com/products/xd/features/
 
 ### Étapes suivantes {#next-steps}
 
-Dans le chapitre suivant, un nouveau modèle de page sera créé en fonction de la conception de l’article WKND.
+Dans le chapitre suivant, un nouveau modèle de page est créé à partir de la conception de l’article WKND.
 
-Découvrez comment créer et modifier [Modèles de page](./page-templates.md). Comprendre la relation entre un modèle de page et une page. Découvrez comment configurer les stratégies d’un modèle de page afin de garantir une gouvernance granulaire et une cohérence de la marque pour le contenu.  Un modèle d’article de magazine bien structuré sera créé à partir d’une maquette provenant d’Adobe XD.
+Découvrez comment créer et modifier [Modèles de page](./page-templates.md). Comprendre la relation entre un modèle de page et une page. Découvrez comment configurer les stratégies d’un modèle de page afin de garantir une gouvernance granulaire et une cohérence de la marque pour le contenu.  Un modèle d’article de magazine bien structuré est créé à partir d’une maquette provenant d’Adobe XD.

@@ -12,9 +12,9 @@ kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '3020'
+source-wordcount: '3014'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/a
 
 Dans ce tutoriel, nous allons découvrir comment écrire. [Tests unitaires](https://en.wikipedia.org/wiki/Unit_testing) pour notre composant Byline [Modèle Sling](https://sling.apache.org/documentation/bundles/models.html) (créé dans le [Création d’un composant d’AEM personnalisé](custom-component.md)). Les tests unitaires sont des tests de génération écrits en Java qui vérifient le comportement attendu du code Java. Chaque test unitaire est généralement de petite taille et valide la sortie d’une méthode (ou d’une unité de travail) par rapport aux résultats attendus.
 
-Nous utiliserons AEM bonnes pratiques et utiliserons :
+Nous utilisons AEM bonnes pratiques et employons les éléments suivants :
 
 * [JUnit 5](https://junit.org/junit5/)
 * [Structure de test Mockito](https://site.mockito.org/)
@@ -78,7 +78,7 @@ Nous utiliserons AEM bonnes pratiques et utiliserons :
 
 ## Test unitaire et Adobe de Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) intègre l’exécution de test unitaire et [rapport de couverture du code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) dans son pipeline CI/CD afin d’encourager et de promouvoir les bonnes pratiques en matière de AEM de test d’unité.
+[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) intègre l’exécution de test unitaire et [rapport de couverture du code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) dans son pipeline CI/CD pour favoriser et promouvoir les bonnes pratiques en matière de AEM de test d’unité.
 
 Bien que le code de test unitaire soit une bonne pratique pour n’importe quelle base de code, il est important, lors de l’utilisation de Cloud Manager, de tirer parti de ses fonctionnalités de test de qualité du code et de création de rapports en fournissant des tests unitaires pour que Cloud Manager s’exécute.
 
@@ -238,7 +238,7 @@ Comme les tests unitaires sont exécutés lors de la génération, en dehors du 
 
    Cette variable, `ctx`, expose un contexte AEM fictif qui fournit un certain nombre d’AEM et d’abstractions Sling :
 
-   * Le modèle Sling BylineImpl sera enregistré dans ce contexte.
+   * Le modèle Sling BylineImpl est enregistré dans ce contexte.
    * Les structures de contenu JCR de bloc sont créées dans ce contexte.
    * Les services OSGi personnalisés peuvent être enregistrés dans ce contexte.
    * Fournit une variété d’objets de simulation et d’assistants requis courants, tels que les objets SlingHttpServletRequest, une variété de services OSGi Sling et AEM de mock tels que ModelFactory, PageManager, Page, Modèle, ComponentManager, Component, TagManager, Tag, etc.
@@ -382,7 +382,7 @@ Maintenant que nous avons une configuration de contexte fictive de base, écrivo
    * **`@ExtendWith({AemContextExtension.class, MockitoExtension.class})`** marque la classe de cas de test à exécuter avec le [Extension Mockito JUnit Jupiter](https://www.javadoc.io/page/org.mockito/mockito-junit-jupiter/latest/org/mockito/junit/jupiter/MockitoExtension.html) qui permet l’utilisation des annotations @Mock pour définir des objets fictifs au niveau de la classe.
    * **`@Mock private Image`** crée un objet fictif de type `com.adobe.cq.wcm.core.components.models.Image`. Notez que cela est défini au niveau de la classe de sorte que, si nécessaire, `@Test` peut modifier son comportement si nécessaire.
    * **`@Mock private ModelFactory`** crée un objet de simulation de type ModelFactory. Notez qu’il s’agit d’une pure imitation de Mockito et qu’aucune méthode n’y est appliquée. Notez que cela est défini au niveau de la classe de sorte que, si nécessaire, `@Test`peut modifier son comportement si nécessaire.
-   * **`when(modelFactory.getModelFromWrappedRequest(..)`** enregistre le comportement fictif pour lorsque `getModelFromWrappedRequest(..)` est appelé sur l’objet mock ModelFactory . Le résultat défini dans `thenReturn (..)` est pour renvoyer l’objet image de simulation. Notez que ce comportement n’est appelé que dans les cas suivants : le premier paramètre est égal à `ctx`Objet de requête de , le 2e paramètre est n’importe quel objet de ressource et le 3e paramètre doit être la classe d’image des composants principaux. Nous acceptons n’importe quelle ressource car, tout au long de nos tests, nous définirons la variable `ctx.currentResource(...)` aux différentes ressources de simulation définies dans la variable **BylineImplTest.json**. Notez que nous ajoutons la variable **lenient()** est la plus stricte, car nous voulons par la suite remplacer ce comportement de ModelFactory.
+   * **`when(modelFactory.getModelFromWrappedRequest(..)`** enregistre le comportement fictif pour lorsque `getModelFromWrappedRequest(..)` est appelé sur l’objet mock ModelFactory . Le résultat défini dans `thenReturn (..)` est pour renvoyer l’objet image de simulation. Notez que ce comportement n’est appelé que dans les cas suivants : le premier paramètre est égal à `ctx`Objet de requête de , le 2e paramètre est n’importe quel objet de ressource et le 3e paramètre doit être la classe d’image des composants principaux. Nous acceptons n’importe quelle ressource car, tout au long de nos tests, nous définissons la variable `ctx.currentResource(...)` aux différentes ressources de simulation définies dans la variable **BylineImplTest.json**. Notez que nous ajoutons la variable **lenient()** est la plus stricte, car nous voulons par la suite remplacer ce comportement de ModelFactory.
    * **`ctx.registerService(..)`.** enregistre l’objet mock ModelFactory dans AemContext, avec le rang de service le plus élevé. Cela est requis, car ModelFactory utilisé dans la variable `init()` est injecté via la méthode `@OSGiService ModelFactory model` champ . Pour que AemContext s’injecte **our** objet mock, qui gère les appels à `getModelFromWrappedRequest(..)`, nous devons l’enregistrer en tant que service de rang le plus élevé de ce type (ModelFactory).
 
 1. Réexécutez le test, puis une fois de plus, il échoue, mais cette fois, le message est clair sur les raisons de son échec.
@@ -412,7 +412,7 @@ Maintenant que nous avons une configuration de contexte fictive de base, écrivo
 
 ## Test de getOccupations() {#testing-get-occupations}
 
-Super ! Notre premier test a réussi ! Passons à l&#39;épreuve. `getOccupations()`. Puisque l’initialisation du contexte fictif a eu lieu dans la variable `@Before setUp()`, elle sera disponible pour tous les `@Test` méthodes de ce cas de test, notamment `getOccupations()`.
+Super ! Notre premier test a réussi ! Passons à l&#39;épreuve. `getOccupations()`. Puisque l’initialisation du contexte fictif a eu lieu dans la variable `@Before setUp()`, elle est disponible pour tous les `@Test` méthodes de ce cas de test, notamment `getOccupations()`.
 
 Souvenez-vous que cette méthode doit renvoyer une liste triée alphabétiquement des occupations (décroissantes) stockées dans la propriété occupations.
 
@@ -447,7 +447,7 @@ Souvenez-vous que cette méthode doit renvoyer une liste triée alphabétiquemen
 
 1. Souvenez-vous, comme **`getName()`** ci-dessus, la variable **BylineImplTest.json** ne définit pas de métiers, donc ce test échouera si nous le faisons, puisque `byline.getOccupations()` renverra une liste vide.
 
-   Mettre à jour **BylineImplTest.json** afin d&#39;inclure une liste des groupes professionnels, et ils seront établis dans un ordre non alphabétique afin de s&#39;assurer que nos tests valident que les groupes sont triés par ordre alphabétique selon les **`getOccupations()`**.
+   Mettre à jour **BylineImplTest.json** inclure une liste des groupes professionnels, et ils sont définis dans l&#39;ordre non alphabétique afin de s&#39;assurer que nos tests valident que les groupes sont triés par ordre alphabétique selon les **`getOccupations()`**.
 
    ```json
    {

@@ -11,9 +11,9 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 41be8c934bba16857d503398b5c7e327acd8d20b
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '910'
 ht-degree: 1%
 
 ---
@@ -39,9 +39,9 @@ Une stratégie est sélectionnée en comparant la variable
 * `Allowed Origin` avec le `Origin` en-tête de requête
 * et `Allowed Paths` avec le chemin d’accès de la requête.
 
-La première stratégie correspondant à ces valeurs sera utilisée. Si aucun n’est trouvé, n’importe lequel [!DNL CORS] la demande sera refusée.
+La première stratégie correspondant à ces valeurs est utilisée. Si aucun n’est trouvé, n’importe lequel [!DNL CORS] la demande est refusée.
 
-Si aucune stratégie n’est configurée, [!DNL CORS] les demandes ne seront pas non plus traitées, car le gestionnaire sera désactivé et donc refusé de manière efficace, à condition qu’aucun autre module du serveur ne réponde à [!DNL CORS].
+Si aucune stratégie n’est configurée, [!DNL CORS] les demandes ne seront pas non plus traitées puisque le gestionnaire est désactivé et donc refusé de manière efficace, à condition qu’aucun autre module du serveur ne réponde à [!DNL CORS].
 
 ### Propriétés Policy
 
@@ -155,7 +155,7 @@ Pour permettre la mise en cache des en-têtes CORS, ajoutez la configuration sui
 
 N’oubliez pas de **redémarrez l’application du serveur web.** après avoir apporté des modifications à la variable `dispatcher.any` fichier .
 
-Il est probable que l’effacement complet du cache sera nécessaire pour s’assurer que les en-têtes sont correctement mis en cache dans la requête suivante après une `/cache/headers` mise à jour de la configuration.
+Il est probable que l’effacement complet du cache soit nécessaire pour s’assurer que les en-têtes sont correctement mis en cache dans la requête suivante après une `/cache/headers` mise à jour de la configuration.
 
 ## Dépannage de CORS
 

@@ -11,9 +11,9 @@ topic: Development
 role: User
 level: Intermediate
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '374'
 ht-degree: 8%
 
 ---
@@ -65,7 +65,7 @@ Les images PNG peuvent être utilisées pour les icônes de composant. Pour conf
 
 Le fichier PNG doit avoir un arrière-plan transparent ou une couleur d’arrière-plan définie sur **#707070**.
 
-Les images PNG seront mises à l’échelle en **20 px par 20 px**. Toutefois, pour les écrans Retina **40 px** par **40 px** peut être préférable.
+Les images PNG sont mises à l’échelle en **20 px par 20 px**. Toutefois, pour les écrans Retina **40 px** par **40 px** peut être préférable.
 
 ```plain
 /apps/.../components/content/my-component

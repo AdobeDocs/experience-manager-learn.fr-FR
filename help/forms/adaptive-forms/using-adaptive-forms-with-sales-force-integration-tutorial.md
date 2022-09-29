@@ -8,18 +8,18 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 7a4fd109-514a-41a8-a3fe-53c1de32cb6d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
 
 # Configuration de DataSource avec Salesforce dans AEM Forms 6.3 et 6.4{#configuring-datasource-with-salesforce-in-aem-forms-and}
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
-Dans cet article, nous allons passer en revue le processus de création de sources de données avec Salesforce.
+Dans cet article, nous examinons le processus de création de source de données avec Salesforce.
 
 Conditions préalables pour ce tutoriel :
 
@@ -29,18 +29,18 @@ Conditions préalables pour ce tutoriel :
    * [Documentation officielle pour l’activation de SSL sur AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/ssl-by-default.html)
    * [Documentation officielle pour l’activation de SSL sur AEM 6.4](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/ssl-by-default.html)
 
-* Vous devrez disposer d’un compte Salesforce.
+* Vous devez disposer d’un compte Salesforce.
 * Vous devez créer une application connectée. Le formulaire de documentation officiel Salesforce pour la création de l’application est répertorié. [here](https://help.salesforce.com/articleView?id=connected_app_create.htm&amp;type=0).
 * Fournissez les portées OAuth appropriées pour l’application (j’ai sélectionné toutes les portées OAuth disponibles à des fins de test).
 * Indiquez l’URL de rappel. Dans mon cas, l’URL de rappel était
 
-   * Si vous utilisez **AEM Forms 6.3**, l’URL de rappel sera https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. Dans cette URL, le nom de mon modèle de données de formulaire est .
+   * Si vous utilisez **AEM Forms 6.3**, l’URL de rappel est https://gbedekar-w7-1:6443/etc/cloudservices/fdm/createlead.html. Dans cette URL, le nom de mon modèle de données de formulaire est .
 
    * Si vous utilisez** AEM Forms 6.4**, l’URL de rappel est https://gbedekar-w7-:6443/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html
 
 Dans cet exemple gbedekar -w7-1:6443 est le nom de mon serveur et le port sur lequel AEM s’exécute.
 
-Une fois que vous avez créé l’application connectée, notez la **Clé client et clé secrète**. Vous en aurez besoin lors de la création de la source de données dans AEM Forms.
+Une fois que vous avez créé l’application connectée, notez la **Clé client et clé secrète**. Vous en avez besoin lors de la création de la source de données dans AEM Forms.
 
 Maintenant que vous avez créé votre application connectée, vous devez créer un fichier swagger pour les opérations que vous devez effectuer dans Salesforce. Un exemple de fichier swagger est inclus dans les ressources téléchargeables. Ce fichier swagger vous permet de créer un objet &quot;Lead&quot; lors de l’envoi du formulaire adaptatif. Veuillez explorer ce fichier swagger.
 

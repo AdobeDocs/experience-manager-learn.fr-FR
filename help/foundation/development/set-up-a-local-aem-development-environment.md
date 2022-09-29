@@ -1,6 +1,6 @@
 ---
 title: Configuration d’un environnement de développement AEM local
-description: 'Découvrez comment configurer un environnement de développement local pour Experience Manager. Familiarisez-vous avec l’installation locale, Apache Maven, les environnements de développement intégrés, le débogage et la résolution des problèmes. Utilisez Eclipse IDE, CRXDE-Lite, Visual Studio Code et IntelliJ. '
+description: Découvrez comment configurer un environnement de développement local pour Experience Manager. Familiarisez-vous avec l’installation locale, Apache Maven, les environnements de développement intégrés, le débogage et la résolution des problèmes. Utilisez Eclipse IDE, CRXDE-Lite, Visual Studio Code et IntelliJ.
 version: 6.4, 6.5
 feature: Developer Tools
 topics: development
@@ -10,10 +10,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2579'
-ht-degree: 2%
+source-wordcount: '2576'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Guide de configuration d’un développement local pour Adobe Experience Manager, AEM. Couvre les rubriques importantes de l’installation locale, Apache Maven, les environnements de développement intégrés et le débogage/dépannage. Développement avec **[!DNL Eclipse IDE], [!DNL CRXDE Lite], [!DNL Visual Studio Code] et[!DNL IntelliJ]** sont discutées.
 
-## Présentation
+##  du commerce électronique
 
 La configuration d’un environnement de développement local est la première étape du développement pour Adobe Experience Manager ou AEM. Prenez le temps de configurer un environnement de développement de qualité pour augmenter votre productivité et écrivez plus rapidement un meilleur code. Nous pouvons diviser un AEM environnement de développement local en 4 secteurs :
 
@@ -32,9 +32,9 @@ La configuration d’un environnement de développement local est la première �
 
 ## Installation d’instances d’AEM locales
 
-Lorsque nous nous référons à une instance d’AEM locale, nous parlons d’une copie d’Adobe Experience Manager en cours d’exécution sur la machine personnelle d’un développeur. ***Tous*** AEM développement doit commencer par écrire et exécuter du code sur une instance AEM locale.
+Lorsque nous nous référons à une instance d’AEM locale, il s’agit d’une copie d’Adobe Experience Manager exécutée sur la machine personnelle d’un développeur. ***Tous*** AEM développement doit commencer par écrire et exécuter du code sur une instance AEM locale.
 
-Si vous êtes un utilisateur novice en AEM, deux modes d’exécution de base peuvent être installés : ***Auteur*** et ***Publier***. Le ***Auteur*** [runmode](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/configure-runmodes.html)  est l’environnement que les spécialistes du marketing numérique utiliseront pour créer et gérer du contenu. Lors du développement **most** de l’heure à laquelle vous déployez le code sur une instance d’auteur. Vous pouvez ainsi créer des pages, ajouter et configurer des composants. AEM Sites est un CMS de création WYSIWYG. La plupart des CSS et JavaScript peuvent donc être testés par rapport à une instance de création.
+Si vous êtes un utilisateur novice en AEM, deux modes d’exécution de base peuvent être installés : ***Auteur*** et ***Publier***. Le ***Auteur*** [runmode](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/configure-runmodes.html)  est l’environnement que les spécialistes du marketing numérique utiliseront pour créer et gérer du contenu. Lors du développement **most** de la fois où vous déployez du code sur une instance d’auteur. Vous pouvez ainsi créer des pages, ajouter et configurer des composants. AEM Sites est un CMS de création WYSIWYG. La plupart des CSS et JavaScript peuvent donc être testés par rapport à une instance de création.
 
 Il est également *critique* test du code par rapport à un élément local ***Publier*** instance. Le ***Publier*** est l’environnement AEM avec lequel les visiteurs de votre site web interagiront. Lorsque la variable ***Publier*** est la même pile technologique que l’objet ***Auteur*** il existe des différences majeures avec les configurations et les autorisations. Le code doit *always* être testé sur un site local ***Publier*** avant d’être convertie en environnements de niveau supérieur.
 
@@ -107,7 +107,7 @@ Tous les projets AEM doivent être créés à partir de la dernière version de 
 
 ## Configuration d’un environnement de développement intégré
 
-Un environnement de développement intégré ou IDE est une application qui combine un éditeur de texte, la prise en charge de la syntaxe et des outils de création. Selon le type de développement que vous effectuez, un IDE peut être préférable à un autre. Quel que soit l’IDE, il sera important de pouvoir périodiquement ***push*** code vers une instance d’AEM locale afin de la tester. Il sera également important de ***pull*** configurations d’une instance d’AEM locale dans votre projet AEM afin de persister dans un système de gestion de contrôle de code source comme Git.
+Un environnement de développement intégré ou IDE est une application qui combine un éditeur de texte, la prise en charge de la syntaxe et des outils de création. Selon le type de développement que vous effectuez, un IDE peut être préférable à un autre. Quel que soit l’IDE, il est important de pouvoir périodiquement ***push*** code vers une instance d’AEM locale afin de la tester. Il sera également important de ***pull*** configurations d’une instance d’AEM locale dans votre projet AEM afin de persister dans un système de gestion de contrôle de code source comme Git.
 
 Vous trouverez ci-dessous quelques-uns des IDE les plus utilisés avec le développement AEM avec les vidéos correspondantes qui montrent l’intégration à une instance AEM locale.
 
@@ -127,12 +127,12 @@ Lorsque vous utilisez un IDE, veillez à vérifier `classic` dans l’onglet Pro
 
 ### [!DNL Eclipse] IDE
 
-Le **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** est l’un des IDE les plus populaires pour le développement de Java, en grande partie parce qu’il est open source et ***free***! Adobe fournit un module externe, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html)**, pour [!DNL Eclipse] pour faciliter le développement avec une interface utilisateur graphique conviviale afin de synchroniser le code avec une instance d’AEM locale. Le [!DNL Eclipse] Il est recommandé aux développeurs qui découvrent l’AEM en grande partie en raison de la prise en charge de l’interface utilisateur graphique par [!DNL AEM Developer Tools].
+Le **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** est l’un des IDE les plus populaires pour le développement de Java, en grande partie parce qu’il est open source et ***free***! Adobe fournit un module externe, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html?lang=fr)**, pour [!DNL Eclipse] pour faciliter le développement avec une interface utilisateur graphique conviviale afin de synchroniser le code avec une instance d’AEM locale. Le [!DNL Eclipse] Il est recommandé aux développeurs qui découvrent l’AEM en grande partie en raison de la prise en charge de l’interface utilisateur graphique par [!DNL AEM Developer Tools].
 
 #### Installation et configuration
 
 1. Téléchargez et installez le [!DNL Eclipse] IDE pour [!DNL Java EE Developers]: [https://www.eclipse.org](https://www.eclipse.org/)
-1. Suivez les instructions d’installation du [!DNL AEM Developer Tools] module externe : [https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html)
+1. Suivez les instructions d’installation du [!DNL AEM Developer Tools] module externe : [https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=fr)
 
 >[!VIDEO](https://video.tv.adobe.com/v/25906?quality=12&learn=on)
 
@@ -191,7 +191,7 @@ Le **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** est un IDE puissant pour
 
 ## Résolution des problèmes
 
-***Aide!*** Mon code ne fonctionne pas ! Comme pour tout développement, il y aura des moments (probablement plusieurs) où votre code ne fonctionne simplement pas comme prévu. AEM est une plate-forme puissante, mais avec une grande puissance... vient une grande complexité. Vous trouverez ci-dessous quelques points de départ de haut niveau concernant le dépannage et le suivi des problèmes (mais loin d’être une liste exhaustive des problèmes qui peuvent se produire) :
+***Aide!*** Mon code ne fonctionne pas ! Comme pour tout développement, il existe des fois (probablement plusieurs) où votre code ne fonctionne simplement pas comme prévu. AEM est une plate-forme puissante, mais avec une grande puissance... vient une grande complexité. Vous trouverez ci-dessous quelques points de départ de haut niveau concernant le dépannage et le suivi des problèmes (mais loin d’être une liste exhaustive des problèmes qui peuvent se produire) :
 
 ### Vérification du déploiement du code
 

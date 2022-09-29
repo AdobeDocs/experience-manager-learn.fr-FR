@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 kt: kt-8049
 exl-id: ce9b9203-b44c-4a52-821c-ae76e93312d2
-source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '260'
 ht-degree: 7%
 
 ---
@@ -34,4 +34,4 @@ ht-degree: 7%
 * Déployez la variable [Workflow SendForm.](assets/send-form-attachments-model.zip) Ce processus utilise le composant d’envoi de courrier électronique pour envoyer les pièces jointes du formulaire sous forme de fichiers individuels. Configurez l&#39;adresse email des expéditeurs et des destinataires en fonction de vos besoins.
 * Importez la variable [exemple de formulaire](assets/send-list-attachments-form.zip) de [Interface Utilisateur De Forms Et Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * [Aperçu du formulaire](http://localhost:4502/content/dam/formsanddocuments/sendlistofattachments/jcr:content?wcmmode=disabled) et ajoutez quelques pièces jointes et envoyez le formulaire.
-* Le workflow doit être déclenché et une notification électronique avec les pièces jointes du formulaire sera envoyée.
+* Le workflow doit être déclenché et une notification électronique avec les pièces jointes du formulaire est envoyée.

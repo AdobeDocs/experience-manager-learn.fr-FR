@@ -7,16 +7,16 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '330'
 ht-degree: 1%
 
 ---
 
 # Préremplissage d’un formulaire adaptatif à l’aide d’un profil ACS {#prefilling-adaptive-form-using-acs-profile}
 
-Dans cette partie, nous allons préremplir le formulaire adaptatif avec les informations de profil récupérées à partir d’ACS. AEM Forms dispose de cette puissante fonctionnalité pour préremplir les formulaires adaptatifs.
+Dans cette partie, nous pré-remplissons le formulaire adaptatif avec les informations de profil extraites d’ACS. AEM Forms dispose de cette puissante fonctionnalité pour préremplir les formulaires adaptatifs.
 
 Pour en savoir plus sur le préremplissage de formulaires adaptatifs, lisez cette section [tutoriel](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
 
@@ -28,7 +28,7 @@ Les étapes suivantes sont nécessaires pour récupérer les informations de pro
 * Exchange JWT pour le jeton d’accès
 * Effectuer un appel REST à ACS et récupérer un profil par courrier électronique
 * Créer un document XML avec les informations de profil
-* Retour InputStream du document XML qui sera utilisé par AEM Forms
+* Retour InputStream du document XML utilisé par AEM Forms
 
 ![prefillservice](assets/prefillserviceaf.gif)
 

@@ -11,9 +11,9 @@ level: Beginner
 kt: 7496
 thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '912'
 ht-degree: 4%
 
 ---
@@ -63,7 +63,7 @@ La majorité du tutoriel se déroule à l’aide de la fonction **Service de cr�
    >
    >Il est recommandé d’utiliser une **Développement** environnement pour ce tutoriel.
 
-1. Un nouvel onglet sera lancé sur l’AEM **Service de création**. Cliquez sur **Connexion avec Adobe** et vous devriez être connecté automatiquement avec les mêmes informations d’identification d’Experience Cloud.
+1. Un nouvel onglet est lancé sur l’AEM **Service de création**. Cliquez sur **Connexion avec Adobe** et vous devriez être connecté automatiquement avec les mêmes informations d’identification d’Experience Cloud.
 
 1. Après avoir été redirigé et authentifié, vous devriez maintenant voir l’écran de démarrage de l’AEM.
 
@@ -83,7 +83,7 @@ Un modèle de site fournit un point de départ pour un nouveau site. Un modèle 
 
    ![Zip du modèle de site de base](assets/create-site/template-basic-zip-file.png)
 
-   Ce fichier zip sera utilisé dans l’exercice suivant.
+   Ce fichier zip est utilisé dans l’exercice suivant.
 
    >[!NOTE]
    >

@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: a8d8118d-f4a1-483f-83b4-77190f6a42a4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 # Requête sur les données envoyées
 
 
-L’étape suivante consiste à interroger les données envoyées et à afficher les résultats sous forme de tableau. Pour ce faire, nous utiliserons les logiciels suivants :
+L’étape suivante consiste à interroger les données envoyées et à afficher les résultats sous forme de tableau. Pour ce faire, nous utilisons les logiciels suivants :
 
 [QueryBuilder](https://querybuilder.js.org/) - Composant d’interface utilisateur pour la création de requêtes
 
@@ -64,7 +64,7 @@ public JSONArray getData(String formName) throws SQLException, IOException {
  }
 ```
 
-Lorsque l’utilisateur clique sur le bouton GetResult , un appel Get est effectué à **&quot;/bin/querydata&quot;**. Nous transmettons la requête créée par l’interface utilisateur de QueryBuilder au servlet via le paramètre de requête . Le servlet convertit ensuite cette requête en requête SQL qui peut être utilisée pour interroger la base de données. Par exemple, si vous recherchez tous les produits nommés &quot;Souris&quot;, la chaîne de requête de Query Builder sera $.productname = &quot;Souris&quot;. Cette requête sera ensuite convertie en :
+Lorsque l’utilisateur clique sur le bouton GetResult , un appel Get est envoyé à **&quot;/bin/querydata&quot;**. Nous transmettons la requête créée par l’interface utilisateur de QueryBuilder au servlet via le paramètre de requête . Le servlet convertit ensuite cette requête en requête SQL qui peut être utilisée pour interroger la base de données. Par exemple, si vous recherchez tous les produits nommés &quot;Souris&quot;, la chaîne de requête de Query Builder est `$.productname = 'Mouse'`. Cette requête sera ensuite convertie en :
 
 SELECT &#42; depuis aemformswithjson .  formenvois où JSON_EXTRACT( formsubmission .formdata,&quot;$.productName &quot;)= &#39;Souris&#39;
 

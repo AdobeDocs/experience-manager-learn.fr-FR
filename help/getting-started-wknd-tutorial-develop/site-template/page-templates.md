@@ -1,6 +1,6 @@
 ---
 title: Modèles de page
-description: Découvrez comment créer et modifier des modèles de page. Comprendre la relation entre un modèle de page et une page. Découvrez comment configurer les stratégies d’un modèle de page afin de garantir une gouvernance granulaire et une cohérence de la marque pour le contenu.  Un modèle d’article de magazine bien structuré sera créé à partir d’une maquette provenant d’Adobe XD.
+description: Découvrez comment créer et modifier des modèles de page. Comprendre la relation entre un modèle de page et une page. Découvrez comment configurer les stratégies d’un modèle de page afin de garantir une gouvernance granulaire et une cohérence de la marque pour le contenu.  Un modèle d’article de magazine bien structuré est créé à partir d’une maquette provenant d’Adobe XD.
 sub-product: sites
 version: Cloud Service
 type: Tutorial
@@ -11,10 +11,10 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
-source-git-commit: 0225b7f2e495d5c020ea5192302691e3466808ed
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 5%
+source-wordcount: '652'
+ht-degree: 2%
 
 ---
 
@@ -34,17 +34,17 @@ Il s’agit d’un tutoriel en plusieurs parties qui suppose que les étapes dé
 
 ## Ce que vous allez créer {#what-you-will-build}
 
-Dans cette partie du tutoriel, vous allez créer un modèle de page d’article de magazine qui pourra être utilisé pour créer de nouveaux articles de magazine et qui s’aligne sur une structure commune. Le modèle sera basé sur des conceptions et un kit d’interface utilisateur produit dans Adobe XD. Ce chapitre se concentre uniquement sur la construction de la structure ou du squelette du modèle. Aucun style ne sera implémenté, mais le modèle et les pages seront fonctionnels.
+Dans cette partie du tutoriel, vous allez créer un modèle de page d’article de magazine qui pourra être utilisé pour créer de nouveaux articles de magazine et qui s’aligne sur une structure commune. Le modèle est basé sur des conceptions et un kit d’interface utilisateur produit dans Adobe XD. Ce chapitre se concentre uniquement sur la construction de la structure ou du squelette du modèle. Aucun style n’est implémenté, mais le modèle et les pages sont fonctionnels.
 
 ## Créer un modèle de page d’article de magazine
 
-Lors de la création d’une page, vous devez sélectionner un modèle. C’est la base pour la création de la page. Le modèle définit la structure de la page créée, le contenu initial et les composants autorisés.
+Lors de la création d’une page, vous devez sélectionner un modèle qui sert de base à la création de la page. Le modèle définit la structure de la page créée, le contenu initial et les composants autorisés.
 
 Il existe 3 zones principales de [Modèles de page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=fr):
 
-1. **Structure** - définit les composants qui font partie du modèle. Ils ne seront pas modifiables par les auteurs de contenu.
-1. **Contenu initial** : définit les composants dont le modèle commencera, qui peuvent être modifiés et/ou supprimés par les auteurs de contenu.
-1. **Stratégies** - définit les configurations sur le comportement des composants et les options disponibles pour les auteurs.
+1. **Structure** - définit les composants qui font partie du modèle. Ils ne sont pas modifiables par les auteurs de contenu.
+1. **Contenu initial** : définit les composants avec lesquels le modèle commence ; ils peuvent être modifiés et/ou supprimés par les auteurs de contenu.
+1. **Stratégies** - définit des configurations sur le comportement des composants et sur les options disponibles pour les auteurs.
 
 Créez ensuite un modèle dans AEM qui correspond à la structure des maquettes. Cela se produit dans une instance locale d’AEM. Suivez les étapes de la vidéo ci-dessous :
 

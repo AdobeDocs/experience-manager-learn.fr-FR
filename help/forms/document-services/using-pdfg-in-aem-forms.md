@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: bc79fcbf-b8b3-4d3a-9cd6-0bcd9321c7d5
-source-git-commit: 8d83d01fca3bfc9e6f674f7d73298b42f98a5d46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 3%
 
 ---
@@ -31,9 +31,9 @@ Pour installer les ressources de démonstration, procédez comme suit :
 1. [Accédez à post.jsp](http://localhost:4502/apps/AemFormsSamples/components/createPDF/POST.jsp) dans votre CRX
 1. Modifiez l’emplacement d’enregistrement selon vos préférences (ligne 9).
 1. Enregistrez vos modifications.
-1. Ouvrez le [  page html](http://localhost:4502/content/DocumentServices/CreatePDFG.html) pour faire glisser et déposer des fichiers à des fins de conversion.
+1. Ouvrez le [page html](http://localhost:4502/content/DocumentServices/CreatePDFG.html) pour faire glisser et déposer des fichiers à des fins de conversion.
 1. Déposez un fichier Word ou jpg dans la zone de dépôt.
-1. Le document d’entrée sera converti en PDF et enregistré au même emplacement que celui spécifié au point 4.
+1. Le document d’entrée est converti en PDF et enregistré au même emplacement que celui spécifié au point 4.
 
 Le fragment de code suivant montre l’utilisation du service PDFG pour convertir des fichiers en PDF.
 

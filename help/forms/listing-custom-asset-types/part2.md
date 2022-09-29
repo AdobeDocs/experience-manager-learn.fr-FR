@@ -1,8 +1,6 @@
 ---
 title: Liste des types de ressources personnalisés dans AEM Forms
-seo-title: Listing Custom Asset Types in AEM Forms
 description: Partie 2 de la liste des types de ressources personnalisés dans AEM Forms
-seo-description: Part 2 of Listing Custom Asset Types in AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
 feature: Adaptive Forms
 topics: development
@@ -15,9 +13,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -25,7 +23,6 @@ ht-degree: 0%
 # Liste des types de ressources personnalisés dans AEM Forms {#listing-custom-asset-types-in-aem-forms}
 
 ## Créer un modèle personnalisé {#creating-custom-template}
-
 
 Pour les besoins de cet article, nous allons créer un modèle personnalisé pour afficher les types de ressources personnalisés et les types de ressources prêts à l’emploi sur la même page. Pour créer un modèle personnalisé, suivez les instructions suivantes :
 
@@ -117,4 +114,4 @@ Maintenant que vous avez configuré votre composant Search and Lister Portal, il
 >Si votre portail répertorie les types de ressources personnalisés sur un serveur de publication, veillez à accorder l’autorisation &quot;lecture&quot; à l’utilisateur &quot;fd-service&quot; sur le noeud . **/apps/fd/fp/extensions/querybuilder**
 
 ![assettypes](assets/assettypeslistings.png)
-[Téléchargez et installez ce package à l’aide du gestionnaire de packages.](assets/customassettypekt1.zip) Il contient des exemples de documents mp4 et Word et de fichiers xdp qui seront utilisés comme types de ressources à répertorier à l’aide du composant search and lister.
+[Téléchargez et installez ce package à l’aide du gestionnaire de packages.](assets/customassettypekt1.zip) Il contient des exemples de documents mp4 et Word et de fichiers xdp utilisés comme types de ressources à répertorier à l’aide du composant search and lister.

@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
-source-git-commit: 7a4585146b52d14f32645c6889c9c015e9991809
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2524'
+source-wordcount: '2523'
 ht-degree: 1%
 
 ---
@@ -92,8 +92,8 @@ Lorsque plusieurs configurations OSGi sont résolues via le mode d’exécution 
 
 ```
 [ERROR] Unable to convert content-package [/tmp/packages/enduser.all-1.0-SNAPSHOT.zip]: 
-Configuration ‘com.example.ExampleComponent’ already defined in Feature Model ‘com.example.groupId:example.all:slingosgifeature:xxxxx:X.X’, 
-set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multiple configurations with same PID
+Configuration 'com.example.ExampleComponent' already defined in Feature Model 'com.example.groupId:example.all:slingosgifeature:xxxxx:X.X', 
+set the 'mergeConfigurations' flag to 'true' if you want to merge multiple configurations with same PID
 ```
 
 #### Cause 1
@@ -110,7 +110,7 @@ set the ‘mergeConfigurations’ flag to ‘true’ if you want to merge multip
 
 Les scripts repoinit définissent le contenu de base, les utilisateurs, les listes de contrôle d’accès, etc. Dans AEM as a Cloud Service, les scripts repoinit sont appliqués lors de la création de l’image. Toutefois, sur AEM quickstart local du SDK, ils sont appliqués lorsque la configuration d’usine repoinit OSGi est activée. Pour cette raison, les scripts Repoinit peuvent échouer discrètement (avec journalisation) sur le démarrage rapide local du SDK d’AEM, mais entraîner l’échec de l’étape de création d’image et l’arrêt du déploiement.
 
-+ __Cause :__ Un script repoinit est incorrect. Notez que cela peut laisser votre référentiel à un état incomplet, car tout script repoinit après l’exécution du script défectueux par rapport au référentiel.
++ __Cause :__ Un script repoinit est incorrect. Cela peut laisser votre référentiel à un état incomplet, car tout script repoinit après l’exécution du script défectueux par rapport au référentiel.
 + __Résolution :__ Passez en revue le démarrage rapide local du SDK AEM lorsque la configuration OSGi du script repoinit est déployée pour déterminer si et quelles sont les erreurs.
 
 ### Dépendance du contenu repointé insatisfaite

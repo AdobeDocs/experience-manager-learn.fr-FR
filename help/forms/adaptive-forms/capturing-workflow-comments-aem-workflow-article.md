@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 5c250bbb-bac6-427d-8aca-1fbb1229e02c
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -45,8 +45,8 @@ Pour tester cette fonctionnalité sur votre système, procédez comme suit :
 
 * Ouvrez la tâche à partir de la boîte de réception et envoyez le formulaire. Entrez des commentaires lorsque vous y êtes invité.
 
-Les commentaires seront stockés dans la propriété de métadonnées appelée managerComments dans crx. Pour rechercher les commentaires, connectez-vous à crx en tant qu’administrateur. Les instances de workflow sont stockées dans le chemin suivant :
+Les commentaires sont stockés dans la propriété de métadonnées appelée `managerComments` dans AEM référentiel. Pour rechercher les commentaires, connectez-vous à crx en tant qu’administrateur. Les instances de workflow sont stockées dans le chemin suivant :
 
-/var/workflow/instances/server0
+`/var/workflow/instances/server0`
 
 Sélectionnez l’instance de workflow appropriée et recherchez la propriété managerComments dans le noeud metadata .

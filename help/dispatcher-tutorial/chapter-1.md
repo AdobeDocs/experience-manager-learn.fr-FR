@@ -1,21 +1,21 @@
 ---
-title: '"Chapitre 1 - Concepts, modèles et antimodèles du Dispatcher"'
+title: "Chapitre 1 - Concepts, modèles et antimodèles du Dispatcher"
 description: Ce chapitre présente brièvement l’historique et les mécanismes de Dispatcher et explique en quoi cela influence la conception des composants par un développeur d’AEM.
 feature: Dispatcher
 topic: Architecture
 role: Architect
 level: Beginner
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
-source-git-commit: 631fef25620c84e04c012c8337c9b76613e3ad46
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '17468'
+source-wordcount: '17460'
 ht-degree: 0%
 
 ---
 
 # Chapitre 1 - Concepts, modèles et antimodèles du Dispatcher
 
-## Présentation
+##  du commerce électronique
 
 Ce chapitre présente brièvement l’historique et les mécanismes de Dispatcher et explique en quoi cela influence la conception des composants par un développeur d’AEM.
 
@@ -198,13 +198,13 @@ et
 
 `http://domain.com/home.html/suffix.html`
 
-Ils sont absolument valides en AEM. Vous ne verriez aucun problème sur votre ordinateur de développement local (sans Dispatcher). Il est probable que vous ne rencontriez aucun problème dans les tests UAT ou de chargement. Le problème auquel nous sommes confrontés est si subtil qu&#39;il passe la plupart des tests.  Cela vous frappera durement lorsque vous êtes à l’heure de pointe et que vous serez limité à temps pour y faire face, que vous n’aurez probablement aucun accès au serveur et que vous ne disposerez pas des ressources pour le réparer. Nous y sommes allés...
+Ils sont absolument valides en AEM. Vous ne verriez aucun problème sur votre ordinateur de développement local (sans Dispatcher). Il est probable que vous ne rencontriez aucun problème dans les tests UAT ou de chargement. Le problème auquel nous sommes confrontés est si subtil qu&#39;il passe la plupart des tests.  Cela vous frappera durement lorsque vous êtes à l’heure de pointe et que vous êtes limité à l’heure pour y faire face, que vous n’avez probablement pas d’accès au serveur et que vous n’avez pas les ressources pour le réparer. Nous y sommes allés...
 
 Alors... quel est le problème ?
 
 `home.html` dans un système de fichiers peut être un fichier ou un dossier. Pas les deux en même temps qu’en AEM.
 
-Si vous demandez `home.html` tout d’abord, il sera créé sous la forme d’un fichier .
+Si vous demandez `home.html` tout d’abord, il est créé sous la forme d’un fichier .
 
 Demandes suivantes vers `home.html/suffix.html` renvoyer des résultats valides, mais sous la forme d’un fichier ; `home.html` &quot;bloque&quot; la position dans le système de fichiers,  `home.html` ne peut pas être créé une seconde fois en tant que dossier et, par conséquent, `home.html/suffix.html` n’est pas mis en cache.
 
@@ -263,7 +263,7 @@ Passons en revue un résumé rapide du dernier chapitre et quelques autres excep
 
 ## Invalidation et purge du cache
 
-### Présentation
+###  du commerce électronique
 
 Le dernier chapitre répertorie un grand nombre d’exceptions lorsque Dispatcher ne peut pas mettre en cache une requête. Mais il y a plus à prendre en compte : Juste parce que Dispatcher _can_ mettre en cache une requête ; cela ne signifie pas nécessairement qu’elle _should_.
 
@@ -304,7 +304,7 @@ invalidate-path:  /content/dam/path/to/image
 
 L&#39;invalidation est si facile : Une requête de GET simple à une URL &quot;/invalidate&quot; spéciale sur Dispatcher. Un HTTP-body n’est pas obligatoire, la &quot;payload&quot; est simplement l’en-tête &quot;invalidate-path&quot;. Notez également que le chemin d’accès invalidate dans l’en-tête est la ressource que AEM connaît, et non le fichier ou les fichiers mis en cache par Dispatcher. AEM ne connaît que les ressources. Les extensions, sélecteurs et suffixes sont utilisés au moment de l’exécution lorsqu’une ressource est demandée. AEM n’effectue aucune conservation des signets sur les sélecteurs utilisés sur une ressource. Par conséquent, le chemin d’accès à la ressource est tout ce qu’il sait avec certitude lors de l’activation d’une ressource.
 
-C&#39;est suffisant dans notre cas. Si une ressource a changé, nous pouvons supposer en toute sécurité que tous les rendus de cette ressource ont également changé. Dans notre exemple, si l’image a changé, une nouvelle miniature est également affichée.
+C&#39;est suffisant dans notre cas. Si une ressource a changé, nous pouvons supposer en toute sécurité que tous les rendus de cette ressource ont également changé. Dans notre exemple, si l’image a été modifiée, une nouvelle miniature est également rendue.
 
 Dispatcher peut supprimer la ressource en toute sécurité avec tous les rendus qu’il a mis en cache. Il fera quelque chose comme :
 
@@ -361,7 +361,7 @@ Que s&#39;est-il passé ? Dispatcher stocke une version statique d’une page co
 
 Dispatcher, qui est un simple serveur web basé sur un système de fichiers, est rapide mais aussi relativement simple. Si une ressource incluse change, elle ne s’en rend pas compte. Il reste collé au contenu qui se trouvait là lorsque la page d’inclusion a été rendue.
 
-La page &quot;Hiver spécial&quot; n’a pas encore été rendue. Il n’existe donc pas de version statique sur Dispatcher et s’affichera donc avec le nouveau teaser, car il sera actualisé sur demande.
+La page &quot;Hiver spécial&quot; n’a pas encore été rendue. Il n’existe donc pas de version statique sur Dispatcher. Elle s’affiche donc avec le nouveau teaser, car il est fraîchement rendu sur demande.
 
 Vous pouvez penser que Dispatcher effectue le suivi de chaque ressource qu’il touche tout en effectuant le rendu et la purge de toutes les pages qui ont utilisé cette ressource, lorsque cette ressource change. Mais Dispatcher ne rend pas les pages. Le rendu est effectué par le système de publication. Dispatcher ne sait pas quelles ressources vont dans un fichier .html rendu.
 
@@ -582,11 +582,11 @@ Vous voyez ? Le &quot;M&quot; dans la gestion des actifs numériques signifie &q
 
 Du point de vue d&#39;un AEM développeur, le motif semblait super élégant. Mais avec Dispatcher intégré dans l&#39;équation, vous pourriez être d&#39;accord, que l&#39;approche naïve pourrait ne pas être suffisante.
 
-Nous vous laissons décider s&#39;il s&#39;agit d&#39;un motif ou d&#39;un anti-motif pour l&#39;instant. Et peut-être avez-vous déjà quelques bonnes idées en tête pour atténuer les problèmes expliqués ci-dessus ? Bien. Vous serez alors impatient de voir comment d&#39;autres projets ont résolu ces problèmes.
+Nous vous laissons décider s&#39;il s&#39;agit d&#39;un motif ou d&#39;un anti-motif pour l&#39;instant. Et peut-être avez-vous déjà quelques bonnes idées en tête pour atténuer les problèmes expliqués ci-dessus ? Bien. Vous devriez ensuite être impatient de voir comment d&#39;autres projets ont résolu ces problèmes.
 
 ### Résolution des problèmes courants du Dispatcher
 
-#### Présentation
+####  du commerce électronique
 
 Parlons de la façon dont cela aurait pu être mis en oeuvre un peu plus facile à mettre en cache. Il existe plusieurs options. Parfois, vous ne pouvez pas choisir la meilleure solution. Peut-être que vous venez dans un projet déjà en cours et que vous avez un budget limité pour résoudre le &quot;problème de cache&quot; à portée de main et pas assez pour effectuer une refactorisation complète. Ou vous rencontrez un problème, qui est plus complexe que l’exemple de composant d’image.
 
@@ -756,7 +756,7 @@ Mais ici, vous pouvez faire face à une autre mise en garde avec les empreintes 
 
 Waouh - C&#39;est pas mal de détails, n&#39;est-ce pas ? Et il refuse d&#39;être compris, testé et débogué facilement. Et tout ça pour une solution apparemment élégante. Il est vrai qu&#39;elle est élégante - mais uniquement du point de vue de l&#39;AEM. Avec Dispatcher, cela devient méchant.
 
-Et pourtant, cela ne résout pas un seul avertissement de base : si une image est utilisée plusieurs fois sur différentes pages, elles seront mises en cache sous ces pages. Il n&#39;y a pas beaucoup de synergie cachée là-bas.
+Et pourtant, cela ne résout pas un seul avertissement de base : si une image est utilisée plusieurs fois sur différentes pages, elles sont mises en cache sous ces pages. Il n&#39;y a pas beaucoup de synergie cachée là-bas.
 
 En général, l’empreinte d’URL est un bon outil à utiliser dans votre boîte à outils, mais vous devez l’appliquer avec précaution, car cela peut entraîner de nouveaux problèmes tout en n’en résolvant que quelques existants.
 
@@ -822,7 +822,7 @@ Mais il existe une catégorie de cas que vous ne pouvez pas résoudre facilement
 
 ### Paramètre d’ingestion des composants
 
-#### Présentation
+####  du commerce électronique
 
 Le spouleur du dernier chapitre n&#39;était qu&#39;un mince wrapper autour d&#39;une ressource. Cela a causé plus de problèmes qu&#39;aider à résoudre le problème.
 
@@ -1526,7 +1526,7 @@ Pour atténuer le problème de cette &quot;tempête d’invalidation du cache&qu
 
 Vous pouvez définir Dispatcher pour utiliser une `grace period` pour l’invalidation automatique. Cela ajouterait en interne du temps supplémentaire à la variable `statfiles` date de modification.
 
-Disons, votre `statfile` a une heure de modification de 12h00 et votre `gracePeriod` est définie sur 2 minutes. Ensuite, tous les fichiers invalidés automatiquement seront considérés comme valides à 12h01 et à 12h02. Ils seront rendus à nouveau après 12h02.
+Disons, votre `statfile` a une heure de modification de 12h00 et votre `gracePeriod` est définie sur 2 minutes. Ensuite, tous les fichiers invalidés automatiquement sont considérés comme valides à 12h01 et à 12h02. Ils sont rendus après 12h02.
 
 La configuration de référence propose une `gracePeriod` de deux minutes pour une bonne raison. Vous pourriez penser &quot;Deux minutes ? Ce n&#39;est presque rien. Je peux facilement attendre 10 minutes que le contenu s&#39;affiche...&quot;.  Vous pourriez donc être tenté de définir une période plus longue, disons 10 minutes, en supposant que votre contenu s’affiche au moins après ces 10 minutes.
 
@@ -1720,7 +1720,7 @@ Si vous connaissez cette différence, c&#39;est trivial - mais si ce n&#39;est p
 
 &quot;Je reconnais `'/url'` dans la configuration ... Mais qu&#39;est-ce que c&#39;est ? `'/glob'` dans le filtre que vous pouvez demander ?
 
-Cette directive représente la chaîne de requête entière, y compris la méthode et le chemin d’accès. Cela pourrait être une bonne chose.
+Cette directive représente l’ensemble de la chaîne de requête, y compris la méthode et le chemin d’accès. Cela pourrait être une bonne chose.
 
 `"GET /content/foo/bar.html HTTP/1.1"`
 
@@ -1905,7 +1905,7 @@ Répertorier les URL que vous souhaitez récupérer immédiatement après l’in
 
 ## Ressources supplémentaires
 
-Présentation et présentation de la mise en cache de Dispatcher : [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
+Présentation et présentation de la mise en cache de Dispatcher : [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html)
 
 Documentation du Dispatcher avec toutes les directives expliquées : [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)
 

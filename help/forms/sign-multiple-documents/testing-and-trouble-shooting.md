@@ -1,33 +1,33 @@
 ---
 title: Résolution des problèmes liés à la signature de plusieurs documents
 description: Tester et résoudre les problèmes liés à la solution
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6960
 thumbnail: 6960.jpg
-topic: Développement
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 99cba29e-4ae3-4160-a4c7-a5b6579618c0
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
-
 
 # Test et dépannage
 
 
 ## Aperçu du formulaire de refinancement
 
-Le cas d’utilisation est déclenché lorsque l’agent du service client remplit et envoie [le formulaire de refinancement](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
+Le cas d’utilisation est déclenché lorsque l’agent du service client remplit et envoie [formulaire de refinancement](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
 
 Le processus Sign Multiple Forms obtient des déclencheurs lors de l’envoi de ce formulaire et le client reçoit une notification par courrier électronique avec un lien pour démarrer le processus de remplissage et de signature du formulaire.
 
 ## Remplissage des formulaires dans le module
 
-Le client se voit alors présenter pour remplir et signer le premier formulaire du kit. Une fois la signature du formulaire effectuée, le client peut accéder au formulaire suivant dans le module. Une fois tous les formulaires remplis et signés, le client reçoit le formulaire &quot;**AllDone**&quot;.
+Le client se voit alors présenter pour remplir et signer le premier formulaire du kit. Une fois la signature du formulaire effectuée, le client peut accéder au formulaire suivant dans le module. Une fois que tous les formulaires sont remplis et signés, le client reçoit le message &quot;**AllDone**&quot;.
 
 ## Résolution des problèmes
 
@@ -49,15 +49,4 @@ Une fois la signature d’un formulaire dans le module terminée, le workflow Me
 
 ### Impossible de voir le formulaire AllDone
 
-Lorsqu’il n’y a plus de formulaires à signer dans le package, le formulaire AllDone est présenté à l’utilisateur. Si vous ne voyez pas le formulaire AllDone, veuillez vérifier l’URL utilisée à la ligne 33 du fichier GetNextFormToSign.js qui fait partie de la bibliothèque cliente **getnextform**.
-
-
-
-
-
-
-
-
-
-
-
+Lorsqu’il n’y a plus de formulaires à signer dans le package, le formulaire AllDone est présenté à l’utilisateur. Si vous ne voyez pas le formulaire AllDone, veuillez vérifier l’URL utilisée à la ligne 33 du fichier GetNextFormToSign.js qui fait partie du fichier **getnextform** client lib.

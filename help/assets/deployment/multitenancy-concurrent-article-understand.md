@@ -1,24 +1,24 @@
 ---
 title: Comprendre le multi-location et le développement simultané
 description: Découvrez les avantages, les défis et les techniques liés à la gestion d’une mise en oeuvre multi-clients avec Adobe Experience Manager Assets.
-feature: Ressources connectées
+feature: Connected Assets
 version: 6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '2022'
-ht-degree: 1%
+source-wordcount: '2017'
+ht-degree: 0%
 
 ---
-
 
 # Comprendre le multi-location et le développement simultané {#understanding-multitenancy-and-concurrent-development}
 
 ## Présentation {#introduction}
 
-Lorsque plusieurs équipes déploient leur code dans les mêmes environnements AEM, il existe des pratiques qu’elles doivent suivre pour s’assurer que les équipes peuvent travailler aussi indépendamment que possible, sans intervenir sur les orteils des autres équipes. Bien qu&#39;elles ne puissent jamais être entièrement éliminées, ces techniques minimiseront les dépendances entre équipes. Pour qu’un modèle de développement simultané réussisse, une bonne communication entre les équipes de développement est essentielle.
+Lorsque plusieurs équipes déploient leur code dans les mêmes environnements AEM, il existe des pratiques qu’elles doivent suivre pour s’assurer que les équipes peuvent travailler aussi indépendamment que possible, sans avoir recours aux orteils des autres équipes. Bien qu&#39;elles ne puissent jamais être entièrement éliminées, ces techniques minimiseront les dépendances entre équipes. Pour qu’un modèle de développement simultané réussisse, une bonne communication entre les équipes de développement est essentielle.
 
 En outre, lorsque plusieurs équipes de développement travaillent sur le même environnement AEM, il y a probablement un certain degré de multi-location en jeu. Beaucoup de choses ont été écrites sur les considérations pratiques à prendre en compte pour appuyer plusieurs locataires dans un environnement AEM, en particulier sur les défis à relever dans la gestion de la gouvernance, des opérations et du développement. Cet article explore certains des défis techniques liés à l’implémentation d’AEM dans un environnement multi-locataires, mais bon nombre de ces recommandations s’appliqueront à toute organisation comptant plusieurs équipes de développement.
 
@@ -28,7 +28,7 @@ Il est important de noter que, bien qu’AEM puisse prendre en charge plusieurs 
 
 La mise en oeuvre d’un environnement multi-locataire présente de nombreux défis.
 
-Celles-ci comprennent :
+Celles-ci comprennent les éléments suivants :
 
 * Complexité technique supplémentaire
 * Augmentation des frais de développement
@@ -65,7 +65,7 @@ Notez que cela n’élimine pas la nécessité pour ces équipes de partager cet
 
 Lorsque vous travaillez sur plusieurs projets, il est important de s’assurer que le code n’est pas dupliqué. La duplication de code augmente la probabilité d’occurrences de défaut, le coût des modifications du système et la rigidité globale dans la base de code. Pour éviter la duplication, refactorisez la logique commune en bibliothèques réutilisables pouvant être utilisées dans plusieurs projets.
 
-Pour répondre à ce besoin, nous recommandons le développement et la maintenance d’un projet principal dont toutes les équipes peuvent dépendre et y contribuer. Pour ce faire, il est important de s’assurer que ce projet de base ne dépend, à son tour, d’aucun des projets des équipes individuelles ; cela permet un déploiement indépendant tout en continuant à promouvoir la réutilisation du code.
+Pour répondre à ce besoin, nous recommandons le développement et la maintenance d’un projet principal dont toutes les équipes peuvent dépendre et y contribuer. Il est important de s&#39;assurer que ce projet de base ne dépend, à son tour, d&#39;aucun des projets des équipes individuelles. cela permet un déploiement indépendant tout en continuant à promouvoir la réutilisation du code.
 
 Voici quelques exemples de code qui se trouvent généralement dans un module principal :
 
@@ -77,7 +77,7 @@ Voici quelques exemples de code qui se trouvent généralement dans un module pr
    * Gestionnaires d’erreurs (ou utilisez ACS AEM Commons Error Page Handler1)
    * Servlets d’autorisation pour la mise en cache sensible aux autorisations
 * Classes utilitaires
-* Logique métier principale
+* Logique commerciale principale
 * Logique d’intégration tierce
 * Superpositions de l’interface utilisateur de création
 * Autres personnalisations requises pour la création, telles que les widgets personnalisés
@@ -88,9 +88,9 @@ Voici quelques exemples de code qui se trouvent généralement dans un module pr
 
 Cela n’élimine pas la nécessité pour plusieurs équipes de dépendre et potentiellement de mettre à jour le même ensemble de code. En créant un projet de base, nous avons réduit la taille du code de base qui est partagé entre les équipes qui diminuent, mais sans éliminer le besoin de ressources partagées.
 
-Pour que les modifications apportées à ce module principal ne perturbent pas les fonctionnalités du système, nous recommandons qu’un développeur ou une équipe de développeurs chargée d’effectuer cette tâche assure la supervision. Une option consiste à disposer d’une équipe unique qui gère toutes les modifications apportées à ce module ; une autre consiste à demander aux équipes d’envoyer des demandes d’extraction qui sont examinées et fusionnées par ces ressources. Il est important qu’un modèle de gouvernance soit conçu et accepté par les équipes et que les développeurs le suivent.
+Pour garantir que les modifications apportées à ce module principal ne perturbent pas les fonctionnalités du système, nous recommandons qu’un développeur ou une équipe de développeurs chargée d’en assurer la supervision. Une option consiste à disposer d’une équipe unique qui gère toutes les modifications apportées à ce module ; une autre consiste à demander aux équipes d’envoyer des demandes d’extraction qui sont examinées et fusionnées par ces ressources. Il est important qu’un modèle de gouvernance soit conçu et accepté par les équipes et que les développeurs le suivent.
 
-## Gestion de la portée du déploiement&amp;nbsp {#managing-deployment-scope}
+## Gestion de la portée du déploiement  {#managing-deployment-scope}
 
 Lorsque différentes équipes déploient leur code dans le même référentiel, il est important qu’elles ne remplacent pas les modifications de l’autre. AEM dispose d’un mécanisme pour contrôler cela lors du déploiement des packages de contenu, le filtre . fichier xml. Il est important qu’il n’y ait pas de chevauchement entre les filtres.  fichiers xml, sinon le déploiement d’une équipe risque d’effacer le déploiement précédent d’une autre équipe. Pour illustrer ce point, reportez-vous aux exemples suivants de fichiers de filtre bien conçus ou problématiques :
 
@@ -108,7 +108,7 @@ Puisqu’il s’agit d’un chemin d’accès global au système et qu’il n’
 
 ### Recouvrements {#overlays}
 
-Les superpositions sont fréquemment utilisées pour étendre ou remplacer la fonctionnalité d’AEM prête à l’emploi, mais l’utilisation d’une superposition affecte l’ensemble de l’application AEM (c’est-à-dire que toutes les modifications de fonctionnalités seront disponibles pour tous les clients). Cela serait plus compliqué si les clients avaient des exigences différentes pour la superposition. Idéalement, les groupes d’affaires doivent collaborer pour s’entendre sur la fonctionnalité et l’aspect des consoles administratives d’AEM.
+Les superpositions sont fréquemment utilisées pour étendre ou remplacer la fonctionnalité d’AEM prête à l’emploi, mais l’utilisation d’une superposition affecte l’ensemble de l’AEM application (c’est-à-dire que toute modification des fonctionnalités superposées est disponible pour tous les clients). Cela serait plus compliqué si les clients avaient des exigences différentes pour la superposition. Idéalement, les groupes d’entreprises doivent collaborer pour s’entendre sur la fonctionnalité et l’aspect des consoles administratives AEM.
 
 Si un consensus ne peut être atteint entre les différentes unités opérationnelles, une solution possible serait simplement de ne pas utiliser de superpositions. Créez plutôt une copie personnalisée de la fonctionnalité et exposez-la via un chemin différent pour chaque client. Cela permet à chaque client d’avoir une expérience utilisateur complètement différente, mais cette approche augmente le coût de mise en oeuvre et les efforts de mise à niveau ultérieurs.
 
@@ -118,7 +118,7 @@ AEM utilise des lanceurs de workflow pour déclencher automatiquement l’exécu
 
 ### URL de redirection vers un microsite {#vanity-urls}
 
-AEM fournit une fonctionnalité d’URL de redirection vers un microsite qui peut être définie sur une base par page. Dans un scénario multi-locataires, cette approche pose problème : AEM ne garantit pas l’unicité entre les URL de redirection vers un microsite configurées de cette manière. Si deux utilisateurs différents configurent le même chemin Vanity pour différentes pages, un comportement inattendu peut être rencontré. Pour cette raison, nous vous recommandons d’utiliser les règles mod_rewrite dans les instances de Dispatcher Apache, ce qui permet un point central de configuration, en plus des règles de résolveur de ressource sortant uniquement.
+AEM fournit une fonctionnalité d’URL de redirection vers un microsite qui peut être définie sur une base par page. Dans un scénario multi-locataires, cette approche pose problème : AEM ne garantit pas l’unicité entre les URL de redirection vers un microsite configurées de cette manière. Si deux utilisateurs différents configurent le même chemin Vanity pour différentes pages, un comportement inattendu peut être rencontré. Pour cette raison, nous vous recommandons d’utiliser les règles mod_rewrite dans les instances du Dispatcher Apache, ce qui permet un point central de configuration, ainsi que des règles de résolveur de ressource sortant uniquement.
 
 ### Groupes de composants {#component-groups}
 
@@ -126,13 +126,13 @@ Lors du développement de composants et de modèles pour plusieurs groupes de cr
 
 ### Tests {#testing}
 
-Bien qu’une bonne architecture et des canaux de communication ouverts puissent contribuer à empêcher l’introduction de défauts dans des zones inattendues du site, ces approches ne sont pas infaillibles. C’est pourquoi il est important de tester entièrement ce qui est déployé sur la plateforme avant de publier quoi que ce soit en production. Cela nécessite une coordination entre les équipes sur leurs cycles de publication et renforce la nécessité d’une suite de tests automatisés couvrant autant de fonctionnalités que possible. En outre, comme un système sera partagé par plusieurs équipes, les performances, la sécurité et les tests de charge deviennent plus importants que jamais.
+Bien qu’une bonne architecture et des canaux de communication ouverts puissent contribuer à empêcher l’introduction de défauts dans des zones inattendues du site, ces approches ne sont pas infaillibles. C’est pourquoi il est important de tester entièrement ce qui est déployé sur la plateforme avant de publier quoi que ce soit en production. Cela nécessite une coordination entre les équipes sur leurs cycles de publication et renforce la nécessité d’une suite de tests automatisés couvrant autant de fonctionnalités que possible. En outre, comme un système est partagé par plusieurs équipes, les performances, la sécurité et les tests de charge deviennent plus importants que jamais.
 
 ## Considérations opérationnelles {#operational-considerations}
 
 ### Ressources partagées {#shared-resources}
 
-AEM s’exécute dans une seule JVM ; toutes les applications AEM déployées partagent intrinsèquement des ressources les unes avec les autres, en plus des ressources déjà consommées lors de l’exécution normale d’AEM. Dans l’espace JVM lui-même, il n’y aura pas de séparation logique des threads, et les ressources limitées disponibles pour AEM, telles que la mémoire, le processeur et l’i/o du disque, seront également partagées. Tout client qui consomme des ressources affectera inévitablement d’autres clients système.
+AEM s’exécute dans une seule JVM ; toutes les applications AEM déployées partagent intrinsèquement des ressources les unes avec les autres, en plus des ressources déjà consommées lors de l’exécution normale d’AEM. Dans l’espace JVM lui-même, il n’existe aucune séparation logique des threads, et les ressources limitées disponibles pour AEM, telles que la mémoire, le processeur et l’E/S du disque, sont également partagées. Tout client qui consomme des ressources affectera inévitablement d’autres clients système.
 
 ### Performances {#performance}
 

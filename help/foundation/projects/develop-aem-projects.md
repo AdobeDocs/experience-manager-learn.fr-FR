@@ -11,9 +11,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '4582'
+source-wordcount: '4571'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Il s’agit d’un tutoriel de développement qui explique comment développer p
 
 *Cette vidéo présente une brève démonstration du processus terminé créé dans le tutoriel ci-dessous.*
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
 [[!DNL AEM Projects]](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html) est une fonctionnalité d’AEM conçue pour faciliter la gestion et le regroupement de tous les workflows et tâches associés à la création de contenu dans le cadre d’une mise en oeuvre d’AEM Sites ou d’Assets.
 
@@ -92,7 +92,7 @@ L’une des raisons les plus attrayantes pour créer un modèle de projet person
 
 ## Création d’un modèle de projet {#creating-project-template}
 
-Puisque nous allons principalement copier/configurer des noeuds, nous utiliserons CRXDE Lite. Dans votre instance d’AEM locale, ouvrez [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
+Puisque nous copions/configurons principalement des noeuds, nous utiliserons CRXDE Lite. Dans votre instance d’AEM locale, ouvrez [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
 
 1. Commencez par créer un dossier sous `/apps/&lt;your-app-folder&gt;` named `projects`. Créez un autre dossier sous celui nommé `templates`.
 
@@ -324,7 +324,7 @@ La dernière étape du workflow utilise l’étape de processus Activer la page/
    >
    >Si vous utilisez AEM version 6.4+, l’emplacement du workflow a changé. Pour plus d’informations, rendez-vous [ici.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
 
-   Si vous utilisez AEM version 6.4+, le modèle de workflow sera créé sous `/conf/global/settings/workflow/models`. Répétez les étapes ci-dessus avec le répertoire /conf et ajoutez un sous-dossier nommé `aem-guides` et déplacez le `content-approval-workflow` en-dessous.
+   Si vous utilisez AEM version 6.4+, le modèle de workflow est créé sous `/conf/global/settings/workflow/models`. Répétez les étapes ci-dessus avec le répertoire /conf et ajoutez un sous-dossier nommé `aem-guides` et déplacez le `content-approval-workflow` en-dessous.
 
    ![Emplacement de définition de workflow moderne](./assets/develop-aem-projects/modern-workflow-definition-location.png)
 Emplacement du modèle de workflow dans la version 6.4+
@@ -345,7 +345,7 @@ Emplacement du modèle de workflow dans la version 6.4+
 
    La barre de progression du workflow tel qu’elle s’affiche dans la boîte de réception AEM.
 
-   Vous pouvez éventuellement télécharger une **Image** aux Propriétés de la page qui seront utilisées comme miniature de workflow lorsque les utilisateurs la sélectionnent. Les dimensions de l’image doivent être de 319x319 pixels. Ajouter un **Description** Les propriétés de page s’affichent également lorsqu’un utilisateur sélectionne le workflow.
+   Vous pouvez éventuellement télécharger une **Image** dans les Propriétés de page utilisées comme miniature de workflow lorsque les utilisateurs la sélectionnent. Les dimensions de l’image doivent être de 319x319 pixels. Ajouter un **Description** Les propriétés de page s’affichent également lorsqu’un utilisateur sélectionne le workflow.
 
 1. Le processus Créer une tâche de projet est conçu pour créer une tâche en tant qu’étape dans le processus. Ce n’est qu’après avoir terminé la tâche que le workflow sera avancé. L’étape Créer une tâche de projet présente un aspect puissant : elle peut lire les valeurs de métadonnées de workflow et les utiliser pour créer la tâche de manière dynamique.
 
@@ -374,7 +374,7 @@ Emplacement du modèle de workflow dans la version 6.4+
        Due In - Days = "2"
    ```
 
-   L’onglet Routage est une boîte de dialogue facultative qui peut spécifier les actions disponibles pour l’utilisateur qui effectue la tâche. Ces actions ne sont que des valeurs de chaîne et seront enregistrées dans les métadonnées du workflow. Ces valeurs peuvent être lues par des scripts et/ou des étapes de processus ultérieures du workflow pour &quot;acheminer&quot; dynamiquement le workflow. Selon la variable [objectifs du workflow](#goals-tutorial) trois actions sont ajoutées à cet onglet :
+   L’onglet Routage est une boîte de dialogue facultative qui peut spécifier les actions disponibles pour l’utilisateur qui effectue la tâche. Ces actions ne sont que des valeurs de chaîne et sont enregistrées dans les métadonnées du workflow. Ces valeurs peuvent être lues par des scripts et/ou des étapes de processus ultérieures du workflow pour &quot;acheminer&quot; dynamiquement le workflow. Selon la variable [objectifs du workflow](#goals-tutorial) trois actions sont ajoutées à cet onglet :
 
    ```shell
    Routing Tab
@@ -418,7 +418,7 @@ Emplacement du modèle de workflow dans la version 6.4+
    task.setProperty("taskPriority", taskPriority);
    ```
 
-1. Revenez au processus d’approbation du contenu. Faites glisser et déposez le **Division OU** composant (situé dans le sidekick sous la catégorie &quot;Workflow&quot;) sous la propriété **Tâche de début** Étape Dans la boîte de dialogue commune, sélectionnez le bouton radio correspondant à 3 branches. La division OU lit la valeur des métadonnées du workflow. **&quot;lastTaskAction&quot;** pour déterminer l’itinéraire du workflow. Le **&quot;lastTaskAction&quot;** sera définie sur l’une des valeurs de l’onglet Routage configuré à l’étape 4. Pour chacun des onglets Branche, renseignez la variable **Script** zone de texte avec les valeurs suivantes :
+1. Revenez au processus d’approbation du contenu. Faites glisser et déposez le **Division OU** composant (situé dans le sidekick sous la catégorie &quot;Workflow&quot;) sous la propriété **Tâche de début** Étape Dans la boîte de dialogue commune, sélectionnez le bouton radio correspondant à 3 branches. La division OU lit la valeur des métadonnées du workflow. **&quot;lastTaskAction&quot;** pour déterminer l’itinéraire du workflow. Le **&quot;lastTaskAction&quot;** est définie sur l’une des valeurs de l’onglet Routage configuré à l’étape 4. Pour chacun des onglets Branche, renseignez la variable **Script** zone de texte avec les valeurs suivantes :
 
    ```
    function check() {
@@ -635,7 +635,7 @@ La création d’un assistant personnalisé peut s’avérer très efficace, car
 
    ![assistant de workflow de validation du contenu](./assets/develop-aem-projects/content-approval-start-wizard.png)
 
-1. Nous ajouterons un champ supplémentaire à l’assistant qui sera utilisé pour définir la personne désignée de la première tâche dans le workflow (voir [Création d’un modèle de processus](#create-workflow-model): Étape 5).
+1. Nous ajouterons un champ supplémentaire à l’assistant qui est utilisé pour définir la personne désignée de la première tâche dans le workflow (voir [Création d’un modèle de processus](#create-workflow-model): Étape 5).
 
    Sous `../content-approval-start/jcr:content/items/column2/items` créer un noeud de type `nt:unstructured` named **&quot;assign&quot;**. Nous utiliserons le composant Sélecteur d’utilisateur de projets (basé sur l’ [Composant de sélecteur d’utilisateur Granite](https://experienceleague.adobe.com/docs/)). Ce champ de formulaire permet de restreindre facilement la sélection de l’utilisateur et du groupe à ceux appartenant au projet en cours.
 

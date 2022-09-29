@@ -3,7 +3,7 @@ title: Gouvernance et modèles de recrutement et archétypes
 description: Découvrez comment mettre en oeuvre votre plateforme Adobe Experience Manager (AEM) et tirer le meilleur parti de vos efforts.
 solution: Experience Manager
 exl-id: 808ab7a6-5ec5-4bbd-9a6e-cfc0b447430d
-source-git-commit: 471f0fe940abb8241428beb14896d83e140136b3
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
@@ -133,4 +133,4 @@ Voici des exemples de rôles pour un scénario client léger et lourd :
 
 Pour une discussion plus approfondie sur la gouvernance et les modèles de dotation et les archétypes, écoutez cette table ronde d&#39;une heure : [Archétypes des rôles et création d&#39;un cadre opérationnel pour [!DNL AEM Assets] et [!DNL Sites]](https://adobecustomersuccess.adobeconnect.com/p8ml5nmy0758mp4/)
 
-Pour en savoir plus sur la stratégie et le leadership de la pensée, voir [Succès des clients](https://experienceleague.corp.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Pour en savoir plus sur la stratégie et le leadership de la pensée, voir [Succès des clients](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.

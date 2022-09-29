@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '414'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ Le cas d’utilisation consiste à déclencher un processus AEM lors de l’envo
 
    * Recherchez &quot;JDBC Connection Pool&quot;. Créez un pool de connexions JDBC Day Commons. Spécifiez les paramètres spécifiques à votre base de données.
 
-   * ![pool de connexions jdbc](assets/aemformstutorial-jdbc.png)
+   * ![Configuration OSGi du pool de connexions JDBC](assets/aemformstutorial-jdbc.png)
 
 ## Spécification des détails de base de données
 
@@ -38,7 +38,7 @@ Le cas d’utilisation consiste à déclencher un processus AEM lors de l’envo
    * FormName : nom de colonne destiné à contenir le nom du formulaire.
    * ColumnName : nom de colonne destiné à contenir les données AF.
 
-![insertdata](assets/specify-database-details.png)
+   ![Spécification de la configuration OSGi des détails de la base de données](assets/specify-database-details.png)
 
 
 

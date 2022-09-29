@@ -5,16 +5,16 @@ feature: Workflow
 version: 6.4,6.5
 thumbnail: 6886.jpg
 kt: 6886
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 49e7bd65-33fb-44d4-aaa2-50832dffffb0
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 1%
+source-wordcount: '350'
+ht-degree: 0%
 
 ---
-
 
 # Création d’un service OSGi
 
@@ -130,7 +130,7 @@ public String getFormData(String guid) {
 
 ## Mettre à jour le statut de la signature
 
-La fin réussie de la cérémonie de signature déclenche un processus AEM associé au formulaire. La première étape du workflow est une étape de processus qui met à jour l’état de la base de données pour la ligne identifiée par le guide et l’ID de client. Nous définissons également la valeur de l’élément signé dans les données de formulaire sur Y pour indiquer que le formulaire a été rempli et signé. Le formulaire adaptatif sera renseigné avec ces données et la valeur de l’élément de données signé dans les données XML sera utilisée pour afficher le message approprié. Le code updateSignatureStatus est appelé à partir de l’étape de processus personnalisée.
+La fin réussie de la cérémonie de signature déclenche un processus AEM associé au formulaire. La première étape du workflow est une étape de processus qui met à jour l’état de la base de données pour la ligne identifiée par le guide et l’ID de client. Nous définissons également la valeur de l’élément signé dans les données de formulaire sur Y pour indiquer que le formulaire a été rempli et signé. Le formulaire adaptatif est renseigné avec ces données et la valeur de l’élément de données signé dans les données XML est utilisée pour afficher le message approprié. Le code updateSignatureStatus est appelé à partir de l’étape de processus personnalisée.
 
 
 ```java
@@ -164,7 +164,7 @@ public void updateSignatureStatus(String formData, String guid) {
 
 ## Obtenir le formulaire suivant à signer
 
-Le code suivant a été utilisé pour obtenir le formulaire suivant pour la signature d’un ID de client donné avec un état 0. Si la requête sql ne renvoie aucune ligne, nous renvoyons la chaîne **&quot;AllDone&quot;** qui indique qu’il n’y a plus de formulaires à signer pour l’ID de client donné.
+Le code suivant a été utilisé pour obtenir le formulaire suivant pour la signature d’un ID de client donné avec un état 0. Si la requête sql ne renvoie aucune ligne, la chaîne est renvoyée. **&quot;AllDone&quot;** qui indique qu’il n’existe plus de formulaires à signer pour l’ID de client donné.
 
 ```java
 @Override
@@ -202,6 +202,6 @@ public String getNextFormToSign(int customerID) {
 
 
 
-## Ressources
+## Assets
 
 Le lot OSGi avec les services mentionnés ci-dessus peut être [téléchargé ici](assets/sign-multiple-forms.jar)

@@ -8,10 +8,10 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: 93a177b0-7852-44da-89cc-836d127be4e7
-source-git-commit: b918afdddf1f047b478e0521883a633f7b0610c6
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 3%
+source-wordcount: '288'
+ht-degree: 5%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 3%
 
 Créer et afficher un incident dans [!DNL ServiceNow] utilisation du modèle de données de formulaire dans AEM Forms.
 
-## Conditions préalables
+## Prérequis
 
 * [!DNL ServiceNow] compte .
 * Familiarisez-vous avec [création de sources de données](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html)
-* Familiarisez-vous avec [Modèle de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html)
+* Familiarisez-vous avec [Modèle de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=fr)
 
 ## Exemples de ressources
 
@@ -48,7 +48,7 @@ Les exemples de ressources fournis avec cet article sont les suivants :
    ![clic sur profil utilisateur](assets/snow-1.png)
 
 * Cliquez sur Gérer le mot de passe de l’instance.
-* Les détails de l’instance s’affichent comme ci-dessous.
+* Les détails de l’instance sont présentés ci-dessous.
    ![détails de l’instance](assets/snow-3.png)
 
 ## Test de l’intégration

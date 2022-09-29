@@ -1,22 +1,22 @@
 ---
 title: Détermination de la structure de dossiers et de la convention d’appellation des fichiers
-description: La dénomination de fichier est peut-être la décision la plus importante que vous prendrez lors de la mise en oeuvre de Dynamic Media Classic. La structure de dossiers est également importante. Découvrez pourquoi il est si important et possible d’utiliser des approches pour la structure de dossiers et les noms de fichiers.
+description: La dénomination de fichier est peut-être la décision la plus importante que vous prendrez lors de l’implémentation de Dynamic Media Classic. La structure de dossiers est également importante. Découvrez pourquoi il est si important et possible d’utiliser des approches pour la structure de dossiers et les noms de fichiers.
 sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 activity: develop
 topics: development, authoring, configuring, architecture
 audience: all
-topic: Gestion de contenu
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: b0bca57676813bd353213b4808f99c463272de85
+exl-id: 15121896-9196-4ce0-aff2-9178563326b4
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1207'
 ht-degree: 0%
 
 ---
-
 
 # Détermination de la structure de dossiers et de la convention d’appellation des fichiers {#folder-structure-filenaming}
 
@@ -26,13 +26,13 @@ Avant d’intervenir et de commencer à charger tout votre contenu, il est conse
 
 L’attribution de noms de fichier est généralement la décision la plus importante que vous prenez concernant l’implémentation de Dynamic Media Classic. Toutefois, pour comprendre pourquoi il est important, parlons tout d’abord de la structure de dossiers.
 
-### Hiérarchie des dossiers
+### Hiérarchie de dossiers
 
-La hiérarchie de dossiers est importante pour vous et votre entreprise à des fins d’organisation uniquement : vos URL Dynamic Media Classic ne font référence qu’au nom de la ressource, et non au dossier ou au chemin d’accès. Où que vous ayez téléchargé un fichier, l’URL est la même. Il s’agit d’un processus très différent de la façon dont la plupart des utilisateurs organisent leurs images et contenus pour le Web, mais avec Dynamic Media Classic, cela ne fait aucune différence.
+La hiérarchie de dossiers est importante pour vous et votre entreprise à des fins d’organisation uniquement : vos URL Dynamic Media Classic ne font référence qu’au nom de la ressource, et non au dossier ou au chemin d’accès. Où que vous ayez téléchargé un fichier, l’URL est la même. Cela diffère de la façon dont la plupart des gens organisent leurs images et contenus pour le web, mais avec Dynamic Media Classic, cela ne fait aucune différence.
 
-Le nombre de ressources ou de dossiers à stocker dans chaque dossier constitue une autre considération importante. Si de nombreuses ressources sont stockées dans un dossier, les performances se dégradent lors de l’affichage des ressources dans Dynamic Media Classic. Ne stockez pas des milliers de ressources dans un dossier. Développez plutôt une hiérarchie organisationnelle avec moins de 500 ressources ou dossiers au sein d’une branche donnée de votre hiérarchie. Il ne s’agit pas d’une exigence stricte, mais cela contribuera à maintenir des temps de réponse acceptables lors de l’affichage ou de la recherche de ressources. En effet, la recommandation consiste à créer des hiérarchies larges et superficielles plutôt que étroites et profondes.
+Le nombre de ressources ou de dossiers à stocker dans chaque dossier constitue une autre considération importante. Si de nombreuses ressources sont stockées dans un dossier, les performances se dégradent lors de l’affichage des ressources dans Dynamic Media Classic. Ne stockez pas des milliers de ressources dans un dossier. Développez plutôt une hiérarchie organisationnelle avec moins de 500 ressources ou dossiers au sein d’une branche donnée de votre hiérarchie. Il ne s’agit pas d’une exigence stricte, mais cela permet de maintenir des temps de réponse acceptables lors de l’affichage ou de la recherche de ressources. En effet, la recommandation consiste à créer des hiérarchies larges et superficielles plutôt que étroites et profondes.
 
-Le moyen le plus simple de créer vos dossiers consiste à télécharger la structure complète de vos dossiers à l’aide de FTP et à activer l’option **Inclure les sous-dossiers**. Cette option entraîne Dynamic Media Classic à recréer la structure de dossiers sur le site FTP dans Dynamic Media Classic.
+La méthode la plus simple pour créer des dossiers consiste à charger la structure complète de dossiers à l’aide de FTP et à activer l’option . **Inclure les sous-dossiers**. Cette option entraîne Dynamic Media Classic à recréer la structure de dossiers sur le site FTP dans Dynamic Media Classic.
 
 Nous voulons que vous preniez en compte la structure de vos dossiers avant de commencer à charger tous vos fichiers, car il est beaucoup plus facile d’organiser et de gérer vos fichiers et dossiers localement sur votre ordinateur que dans Dynamic Media Classic. Par exemple, vous pouvez uniquement faire glisser des fichiers, mais pas des dossiers entiers, dans Dynamic Media Classic.
 
@@ -46,9 +46,9 @@ Pour votre stratégie de dossiers, tenez compte de ce qui a du sens pour votre e
 
 ## Convention d’appellation des fichiers
 
-La manière dont vous choisissez de nommer vos fichiers est peut-être la décision anticipée la plus importante que vous prendrez concernant Dynamic Media Classic. En effet, toutes les ressources de Dynamic Media Classic doivent avoir des noms uniques, quel que soit l’emplacement de stockage dans le compte.
+La manière dont vous choisissez de nommer vos fichiers est peut-être la décision anticipée la plus importante que vous prendrez concernant Dynamic Media Classic. En effet, toutes les ressources de Dynamic Media Classic doivent porter des noms uniques, quel que soit l’emplacement de stockage dans le compte.
 
-Toutes les URL et transactions de Dynamic Media Classic sont pilotées par un ID de ressource, qui est l’identifiant unique d’une ressource dans la base de données. Lorsque vous chargez un fichier, l’ID de ressource est créé en prenant le nom du fichier et en supprimant l’extension. Par exemple, _896649.jpg_ obtient l’identifiant _ID 896649_ de la ressource.
+Toutes les URL et transactions de Dynamic Media Classic sont pilotées par un ID de ressource, qui est l’identifiant unique d’une ressource dans la base de données. Lorsque vous chargez un fichier, l’ID de ressource est créé en prenant le nom du fichier et en supprimant l’extension. Par exemple : _896649.jpg_ Obtenir une ressource _ID 896649_.
 
 Règles relatives aux ID de ressources :
 
@@ -58,7 +58,7 @@ Règles relatives aux ID de ressources :
 
 Votre convention d’affectation des noms est essentiellement la manière dont vous intégrez Dynamic Media Classic. En règle générale, vous n’intégrez pas vos systèmes administratifs dans Dynamic Media Classic, car il s’agit d’un système fermé. C&#39;est un partenaire passif, qui attend des instructions sous la forme d&#39;URL.
 
-La plupart des utilisateurs basent leur convention d’affectation de nom autour de leur SKU interne ou de leurs ID de produit, de sorte que lorsqu’une page web est appelée avec des informations sur ce SKU, la page peut automatiquement rechercher une image portant un nom similaire. S’il n’existe aucune connexion entre le nom de fichier et le SKU ou l’ID, votre système de back-office devra effectuer le suivi manuel de chaque nom de fichier, et une personne devra gérer ces associations — en bref, beaucoup de travail pour les équipes informatiques et de contenu.
+La plupart des utilisateurs basent leur convention d’affectation de nom autour de leur SKU interne ou de leurs ID de produit, de sorte que lorsqu’une page web est appelée avec des informations sur ce SKU, la page peut automatiquement rechercher une image portant un nom similaire. S’il n’existe aucune connexion entre le nom de fichier et le SKU ou l’ID, votre système de back-office devra effectuer manuellement le suivi de chaque nom de fichier, et une personne devra gérer ces associations — en bref, beaucoup de travail pour les équipes informatiques et de contenu.
 
 ### Stratégies de dénomination de fichier
 

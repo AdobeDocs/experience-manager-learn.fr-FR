@@ -1,18 +1,18 @@
 ---
 title: Définition de la valeur de l’élément de données Json dans le processus AEM Forms
 description: Lorsqu’un formulaire adaptatif est acheminé vers différents utilisateurs dans AEM flux de travaux, il est nécessaire de masquer ou désactiver certains champs ou panneaux en fonction de la personne qui le visualise. Pour répondre à ces cas d’utilisation, nous définissons généralement la valeur d’un champ masqué. En fonction des valeurs de ce champ masqué, les règles métier peuvent être créées pour masquer/désactiver les panneaux ou champs appropriés.
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.4
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: fbe6d341-7941-46f5-bcd8-58b99396d351
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '685'
 ht-degree: 2%
 
 ---
-
 
 # Définition de la valeur de l’élément de données JSON dans le processus AEM Forms {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
@@ -20,7 +20,7 @@ Lorsqu’un formulaire adaptatif est acheminé vers différents utilisateurs dan
 
 ![Définition de la valeur d’un élément dans les données JSON](assets/capture-3.gif)
 
-Dans AEM Forms OSGI : nous devrons écrire un lot OSGi personnalisé pour définir la valeur de l’élément de données JSON. Le bundle est fourni dans le cadre de ce tutoriel.
+Dans AEM Forms OSGi : nous devons créer un lot OSGi personnalisé pour définir la valeur de l’élément de données JSON. Le bundle est fourni dans le cadre de ce tutoriel.
 
 Nous utilisons l’étape du processus dans AEM workflow. Nous associons le lot OSGi &quot;Set Value of Element in Json&quot; à cette étape de processus.
 
@@ -40,13 +40,13 @@ Pour déployer les ressources sur votre système local :
 
 * [Télécharger et déployer DevelopingWithServiceUserBundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Téléchargez et déployez le lot setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Il s’agit du lot OSGI personnalisé qui vous permet de définir les valeurs d’un élément dans les données JSON envoyées.
+* [Télécharger et déployer le lot setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Il s’agit du lot OSGI personnalisé qui vous permet de définir les valeurs d’un élément dans les données JSON envoyées.
 
 * [Télécharger et extraire le contenu du fichier zip](assets/set-value-jsondata.zip)
-   * Pointez votre navigateur sur [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp).
+   * Pointez votre navigateur sur [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp)
       * Importez et installez le fichier SetValueOfElementInJSONDataWorkflow.zip.Ce package contient l’exemple de modèle de workflow et de modèle de données de formulaire associés au formulaire.
 
-* Pointez votre navigateur sur [Forms and Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Pointez votre navigateur sur [Forms et documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Cliquez sur Créer | Téléchargement du fichier
 * Télécharger le fichier TimeOffRequestForm.zip
    **Ce formulaire a été créé à l’aide d’AEM Forms 6.4. Assurez-vous d’être sur AEM Forms 6.4 ou version ultérieure.**
@@ -59,8 +59,8 @@ Pour déployer les ressources sur votre système local :
 
 >[!NOTE]
 >
->Puisque nous prérenseignons le formulaire adaptatif à l’aide du profil utilisateur, veillez à ce que les [informations de profil utilisateur de l’administrateur ](http://localhost:4502/security/users.html) soient renseignées. Assurez-vous au minimum d’avoir défini les valeurs des champs FirstName, LastName et Email .
->Vous pouvez activer la journalisation de débogage en activant la journalisation pour com.aemforms.setvalue.core.SetValueInJson [à partir d’ici](http://localhost:4502/system/console/slinglog)
+>Puisque nous prérenseignons le formulaire adaptatif à l’aide du profil utilisateur, assurez-vous que l’administrateur [informations de profil utilisateur ](http://localhost:4502/security/users.html). Assurez-vous au minimum d’avoir défini les valeurs des champs FirstName, LastName et Email .
+>Vous pouvez activer la journalisation de débogage en activant la journalisation pour com.aemforms.setvalue.core.SetValueInJson. [ici](http://localhost:4502/system/console/slinglog)
 
 >[!NOTE]
 >

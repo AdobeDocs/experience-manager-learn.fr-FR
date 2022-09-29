@@ -7,9 +7,10 @@ topic: Development
 role: Developer
 level: Beginner
 kt: kt-9859
-source-git-commit: 160471fdc34439da6c312d65b252eaa941b7c7a2
+exl-id: bab7c403-ba42-4a91-8c86-90b43ca6026c
+source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '140'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Le processus personnalisé utilise les arguments séparés par des virgules suiv
 ChangeBeneficiary.pdf,c:\confirmation
 ```
 
-Le premier argument est le nom du document que vous souhaitez enregistrer dans le système de fichiers. Le deuxième argument correspond à l’emplacement du dossier dans lequel vous souhaitez enregistrer le document. Par exemple, dans le cas d’utilisation ci-dessus, le document sera écrit sur c:\confirmation\ChangeBeneficiary.pdf
+Le premier argument est le nom du document que vous souhaitez enregistrer dans le système de fichiers. Le deuxième argument correspond à l’emplacement du dossier dans lequel vous souhaitez enregistrer le document. Par exemple, dans le cas d’utilisation ci-dessus, le document est écrit sur `c:\confirmation\ChangeBeneficiary.pdf`
 
 La capture d’écran suivante montre les arguments que vous devez transmettre à l’étape de processus personnalisée.
 ![write-payload-file-system](assets/write-payload-file-system.png)
