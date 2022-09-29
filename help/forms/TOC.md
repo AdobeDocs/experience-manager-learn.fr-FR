@@ -5,17 +5,17 @@ user-guide-title: Vidéos et tutoriels d’AEM Forms
 user-guide-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés.
 breadcrumb-title: Tutoriels sur AEM Forms
 index: y
-source-git-commit: 164741ce5ae7d00f904365589438c2eaaf1e05db
+source-git-commit: 5277b7a6ceba4473ab2808f980c8faa5bf69c757
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 4%
+source-wordcount: '1701'
+ht-degree: 3%
 
 ---
 
 
 # Vidéos et tutoriels d’AEM Forms {#forms}
 
-+ [Présentation](overview.md)
++ [ du commerce électronique](overview.md)
 + [Bonnes pratiques à suivre](adaptive-forms/best-practices-adaptive-forms.md)
 + [Configuration de l’authentification OKTA avec l’auteur AEM](adaptive-forms/single-sign-on-with-okta.md)
 + Création de votre premier formulaire adaptatif {#creating-your-first-adaptive-form}
@@ -96,7 +96,7 @@ ht-degree: 4%
    + [Modèle de données de formulaire avec Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Ajout dynamique d’éléments au composant Choix](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + Préremplir le formulaire adaptatif à l’aide du modèle de données de formulaire{#prefill-fdm-db}
-   + [Présentation ](prefill-fdm-db/introduction.md)
+   + [Présentation](prefill-fdm-db/introduction.md)
    + [Créer des tables de base de données](prefill-fdm-db/create-database-tables.md)
    + [Configuration du modèle de données de formulaire](prefill-fdm-db/configuring-form-data-model.md)
    + [Obtenir le paramètre de requête](prefill-fdm-db/get-request-parameter.md)
@@ -107,16 +107,16 @@ ht-degree: 4%
    + [Navigation dans les onglets avec les panneaux imbriqués](ui-tips-tricks/nested-panels.md)
    + [Ajout d’icônes aux onglets de navigation](ui-tips-tricks/active-complete.md)
 + Personnalisation de la boîte de réception{#inbox-customization}
-   + [Présentation ](inbox-customization/introduction.md)
+   + [Présentation](inbox-customization/introduction.md)
    + [Ajouter une colonne personnalisée](inbox-customization/add-married-column.md)
    + [Utilisation d’un modèle de rapport](inbox-customization/use-sightly-template.md)
 + Pièces jointes de formulaire de courrier électronique{#zipping-form-attachments}
-   + [Présentation ](zipping-form-attachments/introduction.md)
+   + [Présentation](zipping-form-attachments/introduction.md)
    + [Pièces jointes du formulaire Zip](zipping-form-attachments/custom-process-step.md)
    + [Pièces jointes de formulaire de courrier électronique](zipping-form-attachments/populating-list-of-documents.md)
    + [Tester la solution](zipping-form-attachments/test.md)
 + Stockage et récupération d’un formulaire adaptatif{#store-and-retrieve-af-with-2fa}
-   + [Présentation ](store-and-retrieve-af-with-2fa/introduction.md)
+   + [Présentation](store-and-retrieve-af-with-2fa/introduction.md)
    + [Configuration de la source de données](store-and-retrieve-af-with-2fa/configure-data-source.md)
    + [Stocker les pièces jointes de formulaire](store-and-retrieve-af-with-2fa/store-form-attachments.md)
    + [Stocker les données de formulaire](store-and-retrieve-af-with-2fa/store-form-data.md)
@@ -133,7 +133,7 @@ ht-degree: 4%
    + [Créer un formulaire HTML5](html5-forms/create-html5-form.md)
    + [Gérer l’envoi de formulaire HTML5](html5-forms/handle-html5-form-submission.md)
 + AEM Forms et Adobe Sign{#forms-and-sign}
-   + [Présentation ](aem-forms-and-adobe-sign/introduction.md)
+   + [Présentation](aem-forms-and-adobe-sign/introduction.md)
    + [Configuration de SSL](aem-forms-and-adobe-sign/set-up-ssl.md)
    + [Création d’une application API Adobe Sign](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
    + [Création d’une configuration Adobe Sign Cloud](aem-forms-and-adobe-sign/create-adobe-sign-cloud-configuration.md)
@@ -146,20 +146,21 @@ ht-degree: 4%
    + [Configurer un formulaire adaptatif converti](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Utilisation de modèles XDP avec Adobe Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
 + Signature de plusieurs Forms{#sign-multiple-documents}
-   + [Présentation ](sign-multiple-documents/introduction.md)
+   + [Présentation](sign-multiple-documents/introduction.md)
    + [Configuration de la source de données](sign-multiple-documents/configure-data-source.md)
    + [Création d’un service OSGi](sign-multiple-documents/create-osgi-service.md)
    + [Créer un workflow principal](sign-multiple-documents/create-main-workflow.md)
-   + [Processus Mettre à jour le statut de la signature](sign-multiple-documents/update-signature-status.md)
-   + [Personnalisation du composant Résumé](sign-multiple-documents/customize-summary-component.md)
+   + [Workflow de mise à jour de l’état des signatures](sign-multiple-documents/update-signature-status.md)
+   + [Personnalisation du composant de résumé](sign-multiple-documents/customize-summary-component.md)
    + [Créer une bibliothèque cliente](sign-multiple-documents/create-client-lib.md)
    + [Créer un modèle de formulaire](sign-multiple-documents/create-af-template.md)
    + [Créer un formulaire initial](sign-multiple-documents/create-initial-form.md)
-   + [Création de Forms pour la signature](sign-multiple-documents/create-forms-for-signing.md)
+   + [Créer des formulaires à signer](sign-multiple-documents/create-forms-for-signing.md)
    + [Test de la solution](sign-multiple-documents/testing-and-trouble-shooting.md)
 + Étapes de workflow personnalisées{#custom-workflow-steps}
    + [Extraction de noeud du document xml](custom-workflow-steps/extract-xml-node.md)
    + [Enregistrer le document dans le système de fichiers](custom-workflow-steps/write-payload-document.md)
+   + [Enregistrement des données envoyées dans la variable string](custom-workflow-steps/save-submitted-data-in-string-variable.md)
 + Variables dans AEM workflow{#variables-aem-workflow}
    + [Introduction - Variables dans le workflow](variables-aem-workflow/introduction.md)
    + [Variables XML](variables-aem-workflow/part1.md)
@@ -169,7 +170,7 @@ ht-degree: 4%
    + [Variable de modèle de données de formulaire](variables-aem-workflow/form-data-model.md)
    + [Éditeur de règles dans AEM workflow](variables-aem-workflow/part5.md)
 + Stockage et récupération des données de formulaire dans MySQL DB{#storing-and-retrieving-form-data}
-   + [Présentation ](storing-retrieving-form-data/introduction.md)
+   + [Présentation](storing-retrieving-form-data/introduction.md)
    + [Configuration de la source de données](storing-retrieving-form-data/part1.md)
    + [Service de stockage des données](storing-retrieving-form-data/part3.md)
    + [Créer un servlet](storing-retrieving-form-data/part2.md)
@@ -177,13 +178,13 @@ ht-degree: 4%
    + [Modèle de formulaire adaptatif](storing-retrieving-form-data/part5.md)
    + [Déploiement d’exemples de ressources](storing-retrieving-form-data/part6.md)
 + Déclenchement AEM flux de travail à partir de l’envoi de formulaire mobile{#offline-mobile-form-submission}
-   + [Présentation ](offline-mobile-form-submission/introduction.md)
+   + [Présentation](offline-mobile-form-submission/introduction.md)
    + [Profil personnalisé](offline-mobile-form-submission/part-one.md)
    + [Gérer l’envoi du PDF](offline-mobile-form-submission/part-two.md)
    + [Workflow de révision du PDF](offline-mobile-form-submission/part-three.md)
    + [Déployer sur votre système](offline-mobile-form-submission/part-four.md)
 + Requête sur les données envoyées{#querying-submitted-data}
-   + [Présentation ](querying-submitted-data/introduction.md)
+   + [Présentation](querying-submitted-data/introduction.md)
    + [Création d’un formulaire basé sur un schéma JSON](querying-submitted-data/part1.md)
    + [Stocker les données envoyées](querying-submitted-data/part2.md)
    + [Stockage du schéma JSON](querying-submitted-data/part3.md)
@@ -198,7 +199,7 @@ ht-degree: 4%
    + [Partie 4 - Assemblage](aem-forms-with-marketo/part4.md)
 
 + AEM Forms avec Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
-   + [Présentation ](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
+   + [Présentation](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
    + [Partie 1 - Génération de jetons](aem-forms-with-adobe-campaign/partone.md)
    + [Partie 2 - Création d’un profil ACS lors de l’envoi du formulaire](aem-forms-with-adobe-campaign/parttwo.md)
    + [Partie3 - Préremplissage d’un formulaire à l’aide des informations de profil ACS](aem-forms-with-adobe-campaign/partthree.md)
@@ -225,7 +226,7 @@ ht-degree: 4%
    + [Services utilitaires utiles](document-services/useful-utility-services.md)
 + Communications interactives pour le canal d’impression
 {#ic-print-channel-tutorial}
-   + [Présentation ](ic-print-channel-tutorial/introduction.md)
+   + [Présentation](ic-print-channel-tutorial/introduction.md)
    + [Configurer Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
    + [Création d’une source de données](ic-print-channel-tutorial/create-data-source.md)
    + [Création d’un modèle de données de formulaire](ic-print-channel-tutorial/create-form-data-model.md)
@@ -238,7 +239,7 @@ ht-degree: 4%
    + [Utilisation d’un dossier de contrôle pour générer des documents](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
    + [Ouverture de l’interface utilisateur de l’agent lors de l’envoi du formulaire](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
 + Enregistrement et récupération des brouillons de lettres {#store-retrieve-letters}
-   + [Présentation ](store-retrieve-letters/introduction.md)
+   + [Présentation](store-retrieve-letters/introduction.md)
    + [Mise en œuvre](store-retrieve-letters/save-draft-letters.md)
    + [Déploiement de l’exemple](store-retrieve-letters/deploy-on-your-server.md)
 + Communications interactives {#interactive-communications}
@@ -251,7 +252,7 @@ ht-degree: 4%
    + [Génération d’un document de communications interactives pour le canal d’impression à l’aide de dossiers de contrôle](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
 
 + Communications Interactives Pour Le Canal Web {#ic-web-channel-tutorial}
-   + [Présentation ](ic-web-channel-tutorial/introduction.md)
+   + [Présentation](ic-web-channel-tutorial/introduction.md)
    + [Configurer Tomcat](ic-web-channel-tutorial/partone.md)
    + [Création d’une source de données](ic-web-channel-tutorial/parttwo.md)
    + [Création d’un modèle de données de formulaire](ic-web-channel-tutorial/partthree.md)
