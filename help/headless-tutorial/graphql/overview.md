@@ -6,14 +6,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 0056971f-2f89-43b3-bb6f-dd16c2a50370
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: 332ad831b6c49e8599aa2181caf978d5626c1aba
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 3%
+source-wordcount: '267'
+ht-degree: 4%
 
 ---
 
-# Prise en main d’AEM Headless - GraphQL 
+# Prise en main d’AEM Headless - GraphQL  {#getting-started-with-aem-headless}
 
 Les API GraphQL AEM pour les fragments de contenu prennent en charge les scénarios CMS sans interface lorsque des applications clientes externes rendent des expériences à l’aide de contenu géré dans AEM.
 
@@ -27,6 +27,12 @@ Pour surmonter ces défis, GraphQL fournit une API basée sur les requêtes qui 
 >[!VIDEO](https://video.tv.adobe.com/v/328618/?quality=12&learn=on)
 
 Cette vidéo présente un aperçu de l’API GraphQL implémentée dans AEM. L’API GraphQL d’AEM est principalement conçue pour fournir AEM de fragments de contenu aux applications en aval dans le cadre d’un déploiement sans interface utilisateur.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_learn_headless_graphql_overview"
+>title="Prise en main d’AEM sans tête"
+>abstract="Découvrez comment diffuser des fragments de contenu à l’aide de GraphQL."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Présentation de GraphQL dans AEM"
 
 ## AEM série vidéo GraphQL sans affichage
 
