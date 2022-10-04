@@ -1,11 +1,12 @@
 ---
-title: Conseils et astuces sur la maintenance du site
-description: Conseils et astuces sur la maintenance du site
-hide: true
-hidefromtoc: true
-source-git-commit: 3eb429039589ae26a81bc6d24f020a77517133e8
+title: Guide de maintenance de site régulier
+seo-title: Your Routine Site Maintenance Guide
+description: Que vous soyez administrateur, auteur ou développeur, la maintenance du site touche tous les aspects de votre instance AEM Sites. Utilisez ce guide pour vous assurer que votre stratégie est configurée pour réussir.
+seo-description: Whether you're an admin, author, or developer, site maintenance touches every aspect of your AEM Sites instance. Use this guide to ensure your strategy is set up for success.
+audience: author, marketer, developer
+source-git-commit: d545e7bb5e937959e2ede2b3c1ecfc312df5a044
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1094'
 ht-degree: 8%
 
 ---
