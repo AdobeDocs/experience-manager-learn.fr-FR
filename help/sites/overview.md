@@ -4,7 +4,7 @@ description: Découvrez Experience Manager Sites à partir de nos vidéos et tut
 sub-product: sites, content-services
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: fb4a39a7b057ca39bc4cd4a7bce02216c3eb634c
+source-git-commit: b6c92ca49eaa68f9a0374a5ad79fe69047ffa27c
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 23%
@@ -14,6 +14,9 @@ ht-degree: 23%
 # Vidéos et tutoriels d’AEM Sites {#overview}
 
 Adobe Experience Manager (AEM) Sites est une plate-forme de gestion de l’expérience de pointe. Ce guide de l’utilisateur contient des vidéos et des tutoriels sur les nombreuses fonctionnalités d’AEM Sites.
+
+
+<div id="whats-new-section">
 
 ## Nouveautés
 
@@ -37,6 +40,8 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion de l’expé
 
    *Découvrez les fonctionnalités d’AEM d’édition pour les applications d’une seule page (SPA).*
 
+</div>
+
 ## Sélections du personnel
 
 <table>
@@ -56,11 +61,11 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion de l’expé
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr">
-    <img alt="Prise en main d’AEM Headless" src="./assets/aem-headless-tutorial.png" />
+    <img alt="Prise en main d’AEM découplé" src="./assets/aem-headless-tutorial.png" />
     </a>
     <div>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html">
-    <strong>Prise en main d’AEM Headless</strong>
+    <strong>Prise en main d’AEM découplé</strong>
     </a>
     </div>
     <p>
