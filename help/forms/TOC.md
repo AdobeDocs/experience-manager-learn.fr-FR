@@ -5,9 +5,9 @@ user-guide-title: Vidéos et tutoriels d’AEM Forms
 user-guide-description: Ensemble de ressources AEM Forms pour les développeurs AEM Forms débutants et expérimentés.
 breadcrumb-title: Tutoriels sur AEM Forms
 index: y
-source-git-commit: 7238a211663edcf36e8812826ece3242502329b9
+source-git-commit: 061077fb6cd8ac7b760aa30b884ced6d4d3c3b20
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1718'
 ht-degree: 3%
 
 ---
@@ -46,6 +46,7 @@ ht-degree: 3%
    + [Configuration de votre environnement](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [Création d’un service OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
    + [Création d’un servlet Sling](creating-your-first-osgi-bundle/create-servlet.md)
+   + [Inclusion de lots tiers](creating-your-first-osgi-bundle/include-third-party-jars.md)
 + Formulaires adaptatifs {#adaptive-forms}
    + [Installation d’AEM Forms sous Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [Installation de packages 32 bits sur Linux](adaptive-forms/installing-aem-form-on-linux.md)
