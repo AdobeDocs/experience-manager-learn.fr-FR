@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: kt-11245
-source-git-commit: 061077fb6cd8ac7b760aa30b884ced6d4d3c3b20
+source-git-commit: 8944a4feaefbc4cf0db52011a0d49b22341780c0
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '268'
 ht-degree: 2%
 
 ---
@@ -59,6 +59,6 @@ mvn clean install -pAutoInstallSinglePackage
 
 Si tout se passe bien, le package est installé avec le lot tiers dans votre instance AEM. Vous pouvez rechercher le lot à l’aide de la fonction [console web felix](http://localhost:4502/system/console/bundles). Le lot tiers est disponible dans le dossier /apps de la propriété `crx` référentiel comme illustré ci-dessous
 ![tiers](assets/custom-bundle1.png)
-![tiers](assets/custom-bundle1.png)
+
 
 
