@@ -10,16 +10,16 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 25c289b093297e870c52028a759d05628d77f634
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '810'
 ht-degree: 3%
 
 ---
 
 # Création de fragments de contenu {#authoring-content-fragments}
 
-Dans ce chapitre, vous allez créer et modifier un fragment de contenu en fonction du [modèle de fragment de contenu nouvellement défini](./content-fragment-models.md). Vous apprendrez également à créer des variantes de fragments de contenu.
+Dans ce chapitre, vous créez et modifiez un fragment de contenu en fonction des [modèle de fragment de contenu nouvellement défini](./content-fragment-models.md). Vous apprenez également à créer des variantes de fragments de contenu.
 
 ## Prérequis {#prerequisites}
 
@@ -34,11 +34,11 @@ Il s’agit d’un tutoriel en plusieurs parties qui suppose que les étapes dé
 
 Les fragments de contenu sont stockés dans des dossiers dans AEM Assets. Pour créer des fragments de contenu à partir des modèles créés dans le chapitre précédent, un dossier doit être créé pour les stocker. Une configuration est requise sur le dossier pour permettre la création de fragments à partir de modèles spécifiques.
 
-1. Dans l’écran AEM Démarrer , accédez à **Ressources** > **Fichiers**.
+1. Dans l’écran AEM Démarrer, accédez à **Ressources** > **Fichiers**.
 
    ![Accès aux fichiers de ressources](assets/author-content-fragments/navigate-assets-files.png)
 
-1. Appuyer **Créer** dans le coin et appuyez sur **Dossier**. Dans la boîte de dialogue qui s’affiche, saisissez :
+1. Appuyer **Créer** dans le coin supérieur droit et appuyez sur **Dossier**. Dans la boîte de dialogue qui s’affiche, saisissez :
 
    * Titre* : **Mon projet**
    * Nom : **my-project**
@@ -49,17 +49,17 @@ Les fragments de contenu sont stockés dans des dossiers dans AEM Assets. Pour c
 
    ![Ouvrir les propriétés du dossier](assets/author-content-fragments/open-folder-properties.png)
 
-1. Appuyez sur le bouton **Cloud Services** . Sous **Configuration du cloud** utilisez l’outil de recherche de chemin pour sélectionner la variable **Mon projet** configuration. La valeur doit être `/conf/my-project`.
+1. Appuyez sur le bouton **Cloud Services** . Sous l’onglet Configuration du cloud, utilisez l’outil de recherche de chemin pour sélectionner la variable **Mon projet** configuration. La valeur doit être `/conf/my-project`.
 
    ![Définition de la configuration du cloud](assets/author-content-fragments/set-cloud-config-my-project.png)
 
    La définition de cette propriété permet la création de fragments de contenu à l’aide des modèles créés dans le chapitre précédent.
 
-1. Appuyez sur le bouton **Stratégies** . Sous **Modèles de fragment de contenu autorisés** utilisez l’outil de recherche de chemin pour sélectionner la variable **Personne** et **Équipe** modèle créé précédemment.
+1. Appuyez sur le bouton **Stratégies** sous l’onglet **Modèles de fragment de contenu autorisés** utilisez l’outil de recherche de chemin pour sélectionner le champ **Personne** et **Équipe** modèle créé précédemment.
 
    ![Modèles de fragment de contenu autorisés](assets/author-content-fragments/allowed-content-fragment-models.png)
 
-   Ces stratégies sont héritées automatiquement par tous les sous-dossiers et peuvent être remplacées. Notez que vous pouvez également autoriser les modèles par balises ou activer les modèles à partir d’autres configurations de projet. Ce mécanisme permet de gérer efficacement votre hiérarchie de contenu.
+   Ces stratégies sont héritées automatiquement par tous les sous-dossiers et peuvent être remplacées. Vous pouvez également autoriser les modèles par balises ou activer les modèles à partir d’autres configurations de projet. Ce mécanisme permet de gérer efficacement votre hiérarchie de contenu.
 
 1. Appuyer **Enregistrer et fermer** pour enregistrer les modifications apportées aux propriétés du dossier.
 
@@ -77,14 +77,14 @@ Les fragments de contenu sont stockés dans des dossiers dans AEM Assets. Pour c
 
 Plusieurs fragments de contenu sont ensuite créés en fonction de la variable **Équipe** et **Personne** modèles.
 
-1. Dans l’AEM écran de démarrage, appuyez sur **Fragments de contenu** pour ouvrir l’interface utilisateur Fragments de contenu.
+1. Dans l’écran AEM, appuyez sur **Fragments de contenu** pour ouvrir l’interface utilisateur Fragments de contenu.
 
    ![Interface utilisateur des fragments de contenu](assets/author-content-fragments/cf-fragment-ui.png)
 
 1. Dans le rail de gauche, développez **Mon projet** et appuyez sur **Anglais**.
 1. Appuyer **Créer** pour afficher le **Nouveau fragment de contenu** et saisissez les valeurs suivantes :
 
-   * Emplacement: `/content/dam/my-project/en`
+   * Emplacement : `/content/dam/my-project/en`
    * Modèle de fragment de contenu : **Personne**
    * Titre : **John Doe**
    * Nom : `john-doe`
@@ -93,23 +93,23 @@ Plusieurs fragments de contenu sont ensuite créés en fonction de la variable *
 1. Appuyez sur **Créer**.
 1. Répétez les étapes ci-dessus pour créer un fragment représentant **Alison Smith**:
 
-   * Emplacement: `/content/dam/my-project/en`
+   * Emplacement : `/content/dam/my-project/en`
    * Modèle de fragment de contenu : **Personne**
    * Titre : **Alison Smith**
    * Nom : `alison-smith`
 
-   Appuyer **Créer** pour créer le fragment Personne.
+   Appuyer **Créer** pour créer le fragment Personne .
 
-1. Répétez ensuite les étapes pour créer une nouvelle **Équipe** fragment représentant **Equipe Alpha**:
+1. Répétez ensuite les étapes pour créer un **Équipe** fragment représentant **Equipe Alpha**:
 
-   * Emplacement: `/content/dam/my-project/en`
+   * Emplacement : `/content/dam/my-project/en`
    * Modèle de fragment de contenu : **Équipe**
    * Titre : **Equipe Alpha**
    * Nom : `team-alpha`
 
-   Appuyer **Créer** pour créer le fragment Équipe.
+   Appuyer **Créer** pour créer le fragment Equipe .
 
-1. Il doit désormais y avoir trois fragments de contenu sous **Mon projet** > **Anglais**:
+1. Il doit y avoir trois fragments de contenu sous **Mon projet** > **Anglais**:
 
    ![Nouveaux fragments de contenu](assets/author-content-fragments/new-content-fragments.png)
 
@@ -139,7 +139,7 @@ Remplissez ensuite les fragments nouvellement créés avec des données.
 
    >[!NOTE]
    >
-   >Vous pouvez également créer des fragments de contenu en ligne à l’aide de la méthode **Nouveau fragment de contenu** bouton .
+   >Vous pouvez également créer des fragments de contenu en ligne à l’aide du **Nouveau fragment de contenu** bouton .
 
 1. Appuyer **Enregistrer et fermer** pour enregistrer les modifications apportées au fragment Team Alpha.
 
@@ -147,17 +147,16 @@ Remplissez ensuite les fragments nouvellement créés avec des données.
 
 Lors de la révision et de la vérification, publiez la création `Content Fragments`
 
-1. Dans l’AEM écran de démarrage, appuyez sur **Fragments de contenu** pour ouvrir l’interface utilisateur Fragments de contenu.
+1. Dans l’écran AEM, appuyez sur **Fragments de contenu** pour ouvrir l’interface utilisateur Fragments de contenu.
 
 1. Dans le rail de gauche, développez **Mon projet** et appuyez sur **Anglais**.
 
-1. Cochez la case en regard des fragments de contenu et appuyez sur **Publier**
-
+1. Cochez la case en regard des fragments de contenu et appuyez sur **Publier**.
    ![Publier le fragment de contenu](assets/author-content-fragments/publish-content-fragment.png)
 
 ## Félicitations ! {#congratulations}
 
-Félicitations, vous venez de créer plusieurs fragments de contenu et d’en créer une variante.
+Félicitations, vous avez créé plusieurs fragments de contenu et créé une variation.
 
 ## Étapes suivantes {#next-steps}
 

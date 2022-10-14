@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 25c289b093297e870c52028a759d05628d77f634
 workflow-type: tm+mt
-source-wordcount: '1529'
-ht-degree: 7%
+source-wordcount: '1535'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 L’API GraphQL d’AEM fournit un langage de requête puissant pour exposer les données de fragments de contenu aux applications en aval. Les modèles de fragment de contenu définissent le schéma de données utilisé par les fragments de contenu. Chaque fois qu’un modèle de fragment de contenu est créé ou mis à jour, le schéma est traduit et ajouté au &quot;graphique&quot; qui constitue l’API GraphQL.
 
-Dans ce chapitre, nous allons explorer certaines requêtes GraphQL courantes pour rassembler du contenu à l’aide d’un IDE appelé [GraphiQL](https://github.com/graphql/graphiql). L’IDE GraphiQL vous permet de tester et d’affiner rapidement les requêtes et les données renvoyées. GraphiQL permet également d’accéder facilement à la documentation, ce qui facilite l’apprentissage et la compréhension des méthodes disponibles.
+Dans ce chapitre, nous explorons certaines requêtes GraphQL courantes pour rassembler du contenu à l’aide d’un IDE appelé [GraphiQL](https://github.com/graphql/graphiql). L’IDE GraphiQL vous permet de tester et d’affiner rapidement les requêtes et les données renvoyées. Il permet également d’accéder facilement à la documentation, ce qui facilite l’apprentissage et la compréhension des méthodes disponibles.
 
 ## Prérequis {#prerequisites}
 
@@ -39,11 +39,11 @@ Il s’agit d’un tutoriel en plusieurs parties qui suppose que les étapes dé
 
 Un point d’entrée GraphQL doit être configuré pour activer les requêtes d’API GraphQL pour les fragments de contenu.
 
-1. Dans l’écran AEM Démarrer , accédez à **Outils** > **Général** > **GraphQL**.
+1. Dans l’écran AEM Démarrer, accédez à **Outils** > **Général** > **GraphQL**.
 
    ![Accédez au point d’entrée GraphQL](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
 
-1. Appuyer **Créer** dans le coin supérieur droit. Dans la boîte de dialogue, saisissez les valeurs suivantes :
+1. Appuyer **Créer** dans le coin supérieur droit de la boîte de dialogue qui s’affiche, saisissez les valeurs suivantes :
 
    * Nom* : **Mon point de terminaison de projet**.
    * Utilisez le schéma GraphQL fourni par ... * : **Mon projet**
@@ -52,7 +52,7 @@ Un point d’entrée GraphQL doit être configuré pour activer les requêtes d�
 
    Appuyer **Créer** pour enregistrer le point de terminaison .
 
-   Les points d’entrée GraphQL créés à partir d’une configuration de projet activent uniquement les requêtes par rapport aux modèles appartenant à ce projet. Dans ce cas, les seules requêtes concernant la variable **Personne** et **Équipe** peuvent être utilisés.
+   Les points d’entrée GraphQL créés à partir d’une configuration de projet activent uniquement les requêtes par rapport aux modèles appartenant à ce projet. Dans ce cas, les seules requêtes de la variable **Personne** et **Équipe** peuvent être utilisés.
 
    >[!NOTE]
    >
@@ -64,19 +64,19 @@ Un point d’entrée GraphQL doit être configuré pour activer les requêtes d�
 
 ## Utilisation de l’IDE GraphiQL
 
-Le [Outil GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) permet aux développeurs de créer et de tester des requêtes par rapport au contenu de l’environnement AEM actuel. L’outil GraphiQL permet également aux utilisateurs de **persist** ou enregistrer les requêtes à utiliser par les applications clientes dans un paramètre de production.
+Le [GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) Cet outil permet aux développeurs de créer et de tester des requêtes par rapport au contenu de l’environnement AEM actuel. L’outil GraphiQL permet également aux utilisateurs de **persister ou enregistrer** requêtes à utiliser par les applications clientes dans un paramètre de production.
 
 Ensuite, explorez la puissance de l’API GraphQL AEM à l’aide de l’IDE GraphiQL intégré.
 
-1. Dans l’écran AEM Démarrer , accédez à **Outils** > **Général** > **Éditeur de requêtes GraphQL**.
+1. Dans l’écran AEM Démarrer, accédez à **Outils** > **Général** > **Éditeur de requêtes GraphQL**.
 
    ![Accédez à l’IDE GraphiQL](assets/explore-graphql-api/navigate-graphql-query-editor.png)
 
    >[!NOTE]
    >
-   > Pour les versions plus anciennes d’AEM, l’IDE GraphiQL peut ne pas être intégré. Il peut être installé manuellement en procédant comme suit : [instructions](#install-graphiql).
+   > En outre, les anciennes versions de AEM l’IDE GraphiQL peuvent ne pas être intégrées. Il peut être installé manuellement en procédant comme suit : [instructions](#install-graphiql).
 
-1. Dans le coin supérieur droit, assurez-vous que la variable **Point d’entrée** est défini sur **Mon point de terminaison de projet**.
+1. Dans le coin supérieur droit, assurez-vous que le point de fin est défini sur **Mon point de terminaison de projet**.
 
    ![Définition du point d’entrée GraphQL](assets/explore-graphql-api/set-my-project-endpoint.png)
 
@@ -107,11 +107,11 @@ Une exigence courante consiste à rechercher plusieurs fragments de contenu.
 
    ![Mettre à jour la requête avec le masquage du code](assets/explore-graphql-api/update-query-codehinting.png)
 
-1. Exécutez à nouveau la requête en appuyant sur la touche **Play** et vous devriez voir que les résultats incluent les propriétés supplémentaires de `shortname` et `description`.
+1. Exécutez à nouveau la requête en appuyant sur la touche **Play** et vous devriez constater que les résultats incluent les propriétés supplémentaires de `shortname` et `description`.
 
    ![résultats de nom court et de description](assets/explore-graphql-api/updated-query-shortname-description.png)
 
-   Le `shortname` est une propriété simple et `description` est un champ de texte multiligne et l’API GraphQL nous permet de choisir divers formats pour les résultats, comme `html`, `markdown`, `json` ou `plaintext`.
+   Le `shortname` est une propriété simple et `description` est un champ de texte multiligne et l’API GraphQL nous permet de choisir différents formats pour les résultats, comme `html`, `markdown`, `json`ou `plaintext`.
 
 ### Requête pour les fragments imbriqués
 
@@ -174,7 +174,7 @@ Ensuite, essayez de récupérer les fragments imbriqués dans l’instance de re
    }
    ```
 
-   La possibilité d’effectuer des requêtes sur des fragments imbriqués est une puissante de l’API GraphQL AEM. Dans cet exemple simple, l’imbrication n’a que deux niveaux de profondeur. Cependant, il est possible d’imbriquer encore plus les fragments. Par exemple, si une variable **Adresse** modèle associé à un **Personne** il serait possible de renvoyer des données des trois modèles dans une seule requête.
+   La possibilité d’effectuer des requêtes sur des fragments imbriqués est une puissante fonctionnalité de l’API GraphQL AEM. Dans cet exemple simple, l’imbrication n’a que deux niveaux de profondeur. Cependant, il est possible d’imbriquer des fragments encore plus loin. Par exemple, si une variable **Adresse** modèle associé à un **Personne** il serait possible de renvoyer des données des trois modèles dans une seule requête.
 
 ### Filtrage d’une liste de fragments de contenu {#filter-list-cf}
 
@@ -211,11 +211,11 @@ Examinons ensuite comment il est possible de filtrer les résultats en un sous-e
    {"name": "John Doe"}
    ```
 
-1. Exécuter la requête, il est attendu que **Personnes** est renvoyée avec la valeur &quot;John Doe&quot;.
+1. Exécuter la requête, il est attendu que **Personnes** Le fragment de contenu est renvoyé avec la valeur `John Doe`.
 
    ![Utilisation des variables de requête pour le filtrage](assets/explore-graphql-api/using-query-variables-filter.png)
 
-   Il existe de nombreuses autres options pour filtrer et créer des requêtes complexes. Voir [Formation à l’utilisation de GraphQL avec AEM - Exemple de contenu et de requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html?lang=fr).
+   Il existe de nombreuses autres options pour filtrer et créer des requêtes complexes. Voir [Formation à l’utilisation de GraphQL avec AEM - Exemple de contenu et de requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
 1. Amélioration de la requête ci-dessus pour récupérer une image de profil
 
@@ -279,11 +279,11 @@ Il est également possible d’interroger directement un seul fragment de conten
 
 ## Persistance des requêtes {#persist-queries}
 
-Une fois qu’un développeur est satisfait de la requête et des données renvoyées, l’étape suivante consiste à stocker ou à conserver la requête à AEM. [Requêtes persistantes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) est le mécanisme préféré pour exposer l’API GraphQL aux applications clientes. Une fois qu’une requête a été conservée, elle peut être demandée à l’aide d’une requête de GET et mise en cache aux couches Dispatcher et CDN. Les performances des requêtes persistantes sont bien meilleures. Outre les avantages de performances, les requêtes persistantes garantissent que les données supplémentaires ne sont pas exposées accidentellement aux applications clientes. Plus d’informations sur [Les requêtes personnalisées se trouvent ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
+Une fois qu’un développeur est satisfait de la requête et des données de résultat renvoyées par la requête, l’étape suivante consiste à stocker ou à conserver la requête à AEM. Le [Requêtes persistantes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html) sont le mécanisme préféré pour exposer l’API GraphQL aux applications clientes. Une fois qu’une requête a été conservée, elle peut être demandée à l’aide d’une requête de GET et mise en cache aux couches Dispatcher et CDN. Les performances des requêtes persistantes sont bien meilleures. Outre les avantages de performances, les requêtes persistantes garantissent que les données supplémentaires ne sont pas exposées accidentellement aux applications clientes. Plus d’informations sur [Les requêtes persistantes se trouvent ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries.html).
 
 Ensuite, conservez deux requêtes simples, elles sont utilisées dans le chapitre suivant.
 
-1. Dans l’IDE GraphiQL, saisissez la requête suivante :
+1. Saisissez la requête suivante dans l’IDE GraphiQL :
 
    ```graphql
    query allTeams {
@@ -308,10 +308,10 @@ Ensuite, conservez deux requêtes simples, elles sont utilisées dans le chapitr
 
 1. Appuyez sur **Enregistrer sous** et saisissez `all-teams` comme la propriété **Nom de la requête**.
 
-   La requête doit maintenant s’afficher sous **Requêtes persistantes** dans le rail de gauche.
+   La requête doit s’afficher sous **Requêtes persistantes** dans le rail de gauche.
 
    ![Requête persistante de toutes les équipes](assets/explore-graphql-api/all-teams-persisted-query.png)
-1. Appuyez ensuite sur les points de suspension **...** en regard de la requête persistante et appuyez sur **Copier l’URL** pour copier le chemin d’accès dans le presse-papiers.
+1. Appuyez ensuite sur les ellipses. **...** en regard de la requête persistante et appuyez sur **Copier l’URL** pour copier le chemin d’accès dans le presse-papiers.
 
    ![Copier l’URL de requête persistante](assets/explore-graphql-api/copy-persistent-query-url.png)
 
@@ -321,17 +321,17 @@ Ensuite, conservez deux requêtes simples, elles sont utilisées dans le chapitr
    https://$YOUR-AEMasCS-INSTANCEID$.adobeaemcloud.com/graphql/execute.json/my-project/all-teams
    ```
 
-   Il doit ressembler au chemin ci-dessus. Vous devriez voir les résultats JSON de la requête renvoyée.
+   Il doit ressembler au chemin ci-dessus. Vous devriez constater que les résultats JSON de la requête renvoyée.
 
-   Ventilation de l’URL :
+   Ventilation de l’URL ci-dessus :
 
    | Nom | Description |
    | ---------|---------- |
    | `/graphql/execute.json` | Point d’entrée de requête persistant |
    | `/my-project` | Configuration du projet pour `/conf/my-project` |
-   | `/all-teams` | Nom de la requête permanente |
+   | `/all-teams` | Nom de la requête conservée |
 
-1. Revenez à l’IDE GraphiQL et utilisez le bouton plus **+** pour pérenniser la requête NEW
+1. Revenez à l’IDE GraphiQL et utilisez le bouton plus **+** pour conserver la requête NEW
 
    ```graphql
    query personByName($name: String!) {
@@ -365,8 +365,8 @@ Ensuite, conservez deux requêtes simples, elles sont utilisées dans le chapitr
    }
    ```
 
-1. Enregistrez la requête comme suit : **person-by-name**.
-1. 2 requêtes persistantes doivent être enregistrées :
+1. Enregistrez la requête comme suit : `person-by-name`.
+1. Vous devez enregistrer deux requêtes conservées :
 
    ![Requêtes conservées finales](assets/explore-graphql-api/final-persisted-queries.png)
 
@@ -375,15 +375,15 @@ Ensuite, conservez deux requêtes simples, elles sont utilisées dans le chapitr
 
 Lors de la révision et de la vérification, publiez la variable `GraphQL Endpoint` &amp; `Persisted Queries`
 
-1. Dans l’écran AEM Démarrer , accédez à **Outils** > **Général** > **GraphQL**.
+1. Dans l’écran AEM Démarrer, accédez à **Outils** > **Général** > **GraphQL**.
 
 1. Cochez la case en regard de **Mon point de terminaison de projet** et appuyez sur **Publier**
 
    ![Publier le point d’entrée GraphQL](assets/explore-graphql-api/publish-graphql-endpoint.png)
 
-1. Dans l’écran AEM Démarrer , accédez à **Outils** > **Général** > **Éditeur de requêtes GraphQL**
+1. Dans l’écran AEM Démarrer, accédez à **Outils** > **Général** > **Éditeur de requêtes GraphQL**
 
-1. Appuyez sur le bouton *toutes les équipes* dans le panneau Requêtes persistantes et appuyez sur **Publier**
+1. Appuyez sur le bouton **toutes les équipes** Requête à partir du panneau Requêtes persistantes et appuyez sur **Publier**
 
    ![Publier les requêtes persistantes](assets/explore-graphql-api/publish-persisted-query.png)
 
@@ -395,19 +395,19 @@ Téléchargez le contenu, les modèles et les requêtes persistantes créés dan
 
 ## Ressources supplémentaires
 
-Pour obtenir de nombreux autres exemples de requêtes GraphQL, voir : [Formation à l’utilisation de GraphQL avec AEM - Exemple de contenu et de requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/content-fragments-graphql-samples.html).
+Pour en savoir plus sur les requêtes GraphQL, voir [Formation à l’utilisation de GraphQL avec AEM - Exemple de contenu et de requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
 ## Félicitations ! {#congratulations}
 
-Félicitations, vous venez de créer et d’exécuter plusieurs requêtes GraphQL !
+Félicitations, vous avez créé et exécuté plusieurs requêtes GraphQL !
 
 ## Étapes suivantes {#next-steps}
 
-Dans le chapitre suivant, [Créer l’application React](./graphql-and-react-app.md), vous allez découvrir comment une application externe peut interroger AEM points de terminaison GraphQL et exploiter ces deux requêtes persistantes. Vous serez également initié à une gestion des erreurs de base.
+Dans le chapitre suivant, [Créer l’application React](./graphql-and-react-app.md), vous découvrez comment une application externe peut interroger AEM points de terminaison GraphQL et utiliser ces deux requêtes persistantes. Vous avez également été initié à la gestion des erreurs de base lors de l’exécution de la requête GraphQL.
 
 ## Installation de l’outil GraphiQL (facultatif) {#install-graphiql}
 
-Pour certaines versions d’AEM l’outil IDE GraphiQL doit être installé manuellement. Suivez les instructions ci-dessous pour installer manuellement :
+Dans, certaines versions d’AEM (6.X.X) l’outil IDE GraphiQL doit être installé manuellement, suivez les instructions suivantes :
 
 1. Accédez au **[Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
 1. Recherchez « GraphiQL » (veillez à inclure le **i** dans **GraphiQL**.
@@ -417,7 +417,7 @@ Pour certaines versions d’AEM l’outil IDE GraphiQL doit être installé manu
 
    Le fichier zip est un package AEM qui peut être installé directement.
 
-1. Dans le menu **Accueil AEM**, accédez à **Outils** > **Déploiement** > **Packages**.
+1. Dans le menu AEM Démarrer , accédez à **Outils** > **Déploiement** > **Packages**.
 1. Cliquez sur **Télécharger le package** et sélectionnez le package téléchargé à l’étape précédente. Cliquez sur **Installer** pour installer le package.
 
    ![Installation du package GraphiQL](assets/explore-graphql-api/install-graphiql-package.png)

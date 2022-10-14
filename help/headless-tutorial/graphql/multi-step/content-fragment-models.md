@@ -10,24 +10,24 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 9400d9f2-f828-4180-95a7-2ac7b74cd3c9
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 25c289b093297e870c52028a759d05628d77f634
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1115'
 ht-degree: 4%
 
 ---
 
 # Définition de modèles de fragment de contenu {#content-fragment-models}
 
-Dans ce chapitre, apprenez à modéliser du contenu et à créer un schéma avec **Modèles de fragment de contenu**. Vous découvrirez les différents types de données qui peuvent être utilisés pour définir un schéma dans le cadre du modèle.
+Dans ce chapitre, découvrez comment modéliser du contenu et créer un schéma avec **Modèles de fragment de contenu**. Vous découvrez les différents types de données qui peuvent être utilisés pour définir un schéma dans le cadre du modèle.
 
-Dans ce chapitre, deux modèles simples sont créés, **Équipe** et **Personne**. Le **Équipe** Le modèle de données a un nom, un nom court et une description, et fait référence au **Personne** modèle de données, qui comprend le nom complet, les détails biographiques, l’image de profil et la liste des métiers.
+Nous créons deux modèles simples, **Équipe** et **Personne**. Le **Équipe** Le modèle de données a un nom, un nom court et une description, et fait référence au **Personne** modèle de données, qui porte le nom complet, les détails biographiques, l’image de profil et la liste des professions.
 
 Vous êtes également invité à créer votre propre modèle en suivant les étapes de base et à ajuster les étapes respectives telles que les requêtes GraphQL et le code de l’application React, ou à suivre simplement les étapes décrites dans ces chapitres.
 
 ## Prérequis {#prerequisites}
 
-Il s’agit d’un tutoriel en plusieurs parties qui suppose qu’un [AEM environnement de création est disponible](./overview.md#prerequisites)
+Il s’agit d’un tutoriel en plusieurs parties qui suppose qu’un [AEM environnement de création est disponible](./overview.md#prerequisites).
 
 ## Objectifs {#objectives}
 
@@ -43,11 +43,11 @@ Une configuration de projet contient tous les modèles de fragment de contenu as
 1. Dans l’écran AEM Démarrer, accédez à **Outils** > **Général** > **Explorateur de configuration**.
 
    ![Accédez à l’explorateur de configurations](assets/content-fragment-models/navigate-config-browser.png)
-1. Cliquez sur **Créer**.
+1. Cliquez sur **Créer**, dans le coin supérieur droit.
 1. Dans la boîte de dialogue qui s’affiche, saisissez :
 
    * Titre* : **Mon projet**
-   * Nom* : **my-project** (préférez utiliser toutes les minuscules avec des tirets pour séparer les mots. Cette chaîne influera sur le point d’entrée GraphQL unique sur lequel les applications clientes effectueront des requêtes.)
+   * Nom* : **my-project** (préférez utiliser toutes les minuscules avec des tirets pour séparer les mots. Cette chaîne influence le point d’entrée GraphQL unique sur lequel les applications clientes effectuent des requêtes.)
    * Vérifier **Modèles de fragment de contenu**
    * Vérifier **Requêtes persistantes GraphQL**
 
@@ -59,17 +59,15 @@ Créez ensuite deux modèles pour un **Équipe** et un **Personne**.
 
 ### Création d’un modèle de personne
 
-Créez un modèle pour un **Personne**, qui est le modèle de données représentant une personne faisant partie d’une équipe.
+Création d’un modèle pour un **Personne**, qui est le modèle de données représentant une personne faisant partie d’une équipe.
 
 1. Dans l’écran AEM Démarrer, accédez à **Outils** > **Général** > **Modèles de fragment de contenu**.
 
    ![Accès aux modèles de fragment de contenu](assets/content-fragment-models/navigate-cf-models.png)
 
 1. Accédez au **Mon projet** dossier.
-1. Appuyer **Créer** dans le coin supérieur droit pour afficher le **Créer un modèle** assistant.
-1. Pour **Titre du modèle** enter : **Personne** et appuyez sur **Créer**.
-
-   Appuyer **Ouvrir** dans la boîte de dialogue qui s’affiche, pour ouvrir le modèle nouvellement créé.
+1. Appuyer **Créer** dans le coin supérieur droit pour afficher la **Créer un modèle** assistant.
+1. Dans **Titre du modèle** champ, entrer **Personne** et appuyez sur **Créer**. Dans la boîte de dialogue qui s’affiche, appuyez sur **Ouvrir**, pour créer le modèle.
 
 1. Faites glisser et déposez un **Texte sur une seule ligne** sur le panneau principal. Renseignez les propriétés suivantes sur le **Propriétés** tab :
 
@@ -93,7 +91,7 @@ Créez un modèle pour un **Personne**, qui est le modèle de données représen
    * **Nom de la propriété**: `profilePicture`
    * **Chemin racine**: `/content/dam`
 
-   Lors de la configuration de la variable **Chemin racine** vous pouvez cliquer sur le bouton **folder** pour afficher un modal afin de sélectionner le chemin. Cela permet de restreindre les dossiers que les auteurs peuvent utiliser pour renseigner le chemin. `/content/dam` est la racine dans laquelle sont stockées toutes les ressources AEM (images, vidéos et autres fragments de contenu).
+   Lors de la configuration de la variable **Chemin racine**, vous pouvez cliquer sur le bouton **folder** pour afficher un modal afin de sélectionner le chemin. Cela limite les dossiers que les auteurs peuvent utiliser pour renseigner le chemin. `/content/dam` est la racine dans laquelle sont stockés tous les AEM Assets (images, vidéos et autres fragments de contenu).
 
 1. Ajoutez une validation au **Référence d’image** de sorte que seuls les types de contenu de **Images** peut être utilisé pour remplir le champ.
 
@@ -117,10 +115,10 @@ Créez un modèle pour un **Personne**, qui est le modèle de données représen
 
 ### Création du modèle d’équipe
 
-Créez un modèle pour un **Équipe**, qui est le modèle de données d’une équipe de personnes. Le modèle d’équipe fait référence au modèle Personne pour représenter les membres de l’équipe.
+Création d’un modèle pour un **Équipe**, qui est le modèle de données d’une équipe de personnes. Le modèle d’équipe référence le modèle Personne pour représenter les membres de l’équipe.
 
 1. Dans le **Mon projet** dossier, appuyez sur **Créer** dans le coin supérieur droit pour afficher le **Créer un modèle** assistant.
-1. Pour **Titre du modèle** enter : **Équipe** et appuyez sur **Créer**.
+1. Dans **Titre du modèle** champ, entrer **Équipe** et appuyez sur **Créer**.
 
    Appuyer **Ouvrir** dans la boîte de dialogue qui s’affiche, pour ouvrir le modèle nouvellement créé.
 
@@ -136,10 +134,10 @@ Créez un modèle pour un **Équipe**, qui est le modèle de données d’une é
    * **Nom de la propriété**: `shortName`
    * Vérifier **Obligatoire**
    * Vérifier **Unique**
-   * Sous **Type de validation** > choisissez **Personnalisé**
-   * Sous **Regex de validation personnalisé** > entrer `^[a-z0-9\-_]{5,40}$` : cette opération garantit que seules les valeurs alphanumériques en minuscules et les tirets compris entre 5 et 40 caractères peuvent être saisis.
+   * Sous, **Type de validation** > choisissez **Personnalisé**
+   * Sous, **Regex de validation personnalisé** > entrer `^[a-z0-9\-_]{5,40}$` - ainsi, seules les valeurs alphanumériques en minuscules et les tirets de 5 à 40 caractères peuvent être saisis.
 
-   Le `shortName` nous offre un moyen d’interroger une équipe en fonction d’un chemin raccourci. Le **Unique** garantit que la valeur sera toujours unique par fragment de contenu de ce modèle.
+   Le `shortName` nous permet d’interroger une équipe en fonction d’un chemin raccourci. Le **Unique** garantit que la valeur est toujours unique par fragment de contenu de ce modèle.
 
 1. Appuyez sur le bouton **Types de données** et effectuez un glisser-déposer d’un élément **Texte multi-lignes** sous le champ **Nom court** champ . Renseignez les propriétés suivantes :
 
@@ -188,7 +186,7 @@ Félicitations, vous venez de créer vos premiers modèles de fragments de conte
 
 ## Étapes suivantes {#next-steps}
 
-Dans le chapitre suivant, [Création de modèles de fragment de contenu](author-content-fragments.md), vous allez créer et modifier un fragment de contenu en fonction d’un modèle de fragment de contenu. Vous apprendrez également à créer des variantes de fragments de contenu.
+Dans le chapitre suivant, [Création de modèles de fragment de contenu](author-content-fragments.md), vous créez et modifiez un fragment de contenu en fonction d’un modèle de fragment de contenu. Vous apprenez également à créer des variantes de fragments de contenu.
 
 ## Documentation connexe
 

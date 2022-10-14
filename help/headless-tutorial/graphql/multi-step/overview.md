@@ -10,9 +10,9 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 25c289b093297e870c52028a759d05628d77f634
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '292'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ Tutoriel complet illustrant comment créer et exposer du contenu à l’aide des
 
 Ce tutoriel explique comment AEM API GraphQL et les fonctionnalités sans tête peuvent être utilisées pour alimenter les expériences affichées dans une application externe.
 
-Ce tutoriel abordera les sujets suivants :
+Ce tutoriel couvre les rubriques suivantes :
 
 * Création d’une configuration de projet
 * Création de modèles de fragment de contenu pour modéliser les données
@@ -39,14 +39,14 @@ Pour suivre ce tutoriel, vous devez suivre les étapes suivantes :
 
 * Compétences de base en HTML et JavaScript
 * Les outils suivants doivent être installés localement :
-   * [Node.js v10+](https://nodejs.org/en/)
+   * [Node.js v14+](https://nodejs.org/en/)
    * [npm 6+](https://www.npmjs.com/)
    * [Git](https://git-scm.com/)
    * Un IDE (par exemple, [Microsoft® Visual Studio Code](https://code.visualstudio.com/))
 
 ### Environnement AEM
 
-Pour suivre ce tutoriel, AEM’accès administrateur à un environnement AEM as a Cloud Service est recommandé.  Si vous n’avez pas accès à AEM environnement as a Cloud Service, vous pouvez utiliser la variable [AEM local as a Cloud Service SDK de démarrage rapide](/help/cloud-service/local-development-environment/aem-runtime.md). Toutefois, il est important de savoir que certains écrans de l’interface utilisateur du produit, tels que la navigation dans les fragments de contenu, sont différents.
+Pour suivre ce tutoriel, AEM’accès administrateur à un environnement AEM as a Cloud Service est recommandé. Si vous n’avez pas accès à AEM environnement as a Cloud Service, vous pouvez utiliser la variable [AEM local as a Cloud Service SDK de démarrage rapide](/help/cloud-service/local-development-environment/aem-runtime.md). Toutefois, il est important de noter que certains écrans de l’interface utilisateur du produit, tels que la navigation dans les fragments de contenu, sont différents.
 
 ## Commençons !
 
