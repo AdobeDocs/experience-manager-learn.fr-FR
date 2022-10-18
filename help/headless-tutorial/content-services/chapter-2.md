@@ -8,7 +8,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 30c882da3a89820b5e11bc2902bb92dd0629efe9
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 12%
@@ -78,7 +78,7 @@ Si les modèles de fragment de contenu sont **not** activée pour une configurat
 
 ## Présentation du modèle de fragment de contenu à créer
 
-Avant de définir le modèle de fragment de contenu, examinons l’expérience que nous allons créer pour nous assurer que nous capturons tous les points de données nécessaires. Pour ce faire, nous allons passer en revue la conception des applications mobiles et mapper les éléments de conception au contenu à collecter.
+Avant de définir notre modèle de fragment de contenu, examinons l’expérience que nous allons créer pour nous assurer que nous capturons tous les points de données nécessaires. Pour ce faire, nous allons passer en revue la conception des applications mobiles et mapper les éléments de conception au contenu à collecter.
 
 Nous pouvons ventiler les points de données qui définissent un événement comme suit :
 
@@ -141,7 +141,7 @@ Répétez ces étapes en utilisant les définitions d’entrée définies ci-des
 * [!UICONTROL Afficher comme] : `numberfield`
 * [!UICONTROL Libellé du champ] : `Ticket Price`
 * [!UICONTROL Nom de la propriété] : `eventPrice`
-* [!UICONTROL Type] : `Integer`
+* [!UICONTROL Type] : `Integer`
 * [!UICONTROL Requis] : `Yes`
 
 ### Image d’événement
