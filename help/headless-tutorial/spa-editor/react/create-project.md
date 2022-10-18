@@ -10,7 +10,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 57c8fc16-fed5-4af4-b98b-5c3f0350b240
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 3%
@@ -42,7 +42,7 @@ Examinez les outils et les instructions requis pour configurer une [environnemen
 
 >[!NOTE]
 >
->Ce tutoriel utilise la version **27** de l’archétype. Il est toujours recommandé d’utiliser la variable **dernier** version de l’archétype pour générer un nouveau projet.
+>Ce tutoriel utilise la version **39** de l’archétype. Il est toujours recommandé d’utiliser la variable **dernier** version de l’archétype pour générer un nouveau projet.
 
 1. Ouvrez un terminal de ligne de commande et saisissez la commande Maven suivante :
 
@@ -50,7 +50,7 @@ Examinez les outils et les instructions requis pour configurer une [environnemen
    mvn -B archetype:generate \
     -D archetypeGroupId=com.adobe.aem \
     -D archetypeArtifactId=aem-project-archetype \
-    -D archetypeVersion=27 \
+    -D archetypeVersion=39 \
     -D appTitle="WKND SPA React" \
     -D appId="wknd-spa-react" \
     -D artifactId="aem-guides-wknd-spa.react" \
@@ -71,18 +71,20 @@ Examinez les outils et les instructions requis pour configurer une [environnemen
 
    ```plain
    |--- aem-guides-wknd-spa.react/
+       |--- LICENSE
+       |--- README.md
        |--- all/
+       |--- archetype.properties
        |--- core/
+       |--- dispatcher/
+       |--- it.tests/
+       |--- pom.xml
        |--- ui.apps/
        |--- ui.apps.structure/
        |--- ui.config/
        |--- ui.content/
        |--- ui.frontend/
        |--- ui.tests /
-       |--- it.tests/
-       |--- dispatcher/
-       |--- pom.xml
-       |--- README.md
        |--- .gitignore
    ```
 

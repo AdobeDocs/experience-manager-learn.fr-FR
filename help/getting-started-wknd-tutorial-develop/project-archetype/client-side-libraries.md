@@ -1,6 +1,6 @@
 ---
-title: Bibliothèques côté client et processus front-end
-description: Découvrez comment utiliser les bibliothèques côté client ou clientlibs pour déployer et gérer des fichiers CSS et JavaScript pour une mise en oeuvre de sites Adobe Experience Manager (AEM). Découvrez comment le module ui.frontend, un projet webpack, peut être intégré au processus de génération de bout en bout.
+title: Bibliothèques clientes et processus front-end
+description: Découvrez comment utiliser les bibliothèques clientes ou clientlibs pour déployer et gérer des fichiers CSS et Javascript pour une implémentation de sites Adobe Experience Manager (AEM). Découvrez comment le module ui.frontend, un projet webpack, peut être intégré au processus de génération de bout en bout.
 sub-product: sites
 version: 6.4, 6.5, Cloud Service
 type: Tutorial
@@ -11,14 +11,14 @@ level: Beginner
 kt: 4083
 thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
 source-wordcount: '2825'
 ht-degree: 4%
 
 ---
 
-# Bibliothèques côté client et processus front-end {#client-side-libraries}
+# Bibliothèques clientes et processus front-end {#client-side-libraries}
 
 Découvrez comment les bibliothèques côté client ou clientlibs sont utilisées pour déployer et gérer CSS et JavaScript pour une mise en oeuvre de sites Adobe Experience Manager (AEM). Ce tutoriel explique également comment [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr) module, un découplé [webpack](https://webpack.js.org/) , peut être intégré au processus de génération de bout en bout.
 

@@ -13,7 +13,7 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
-source-git-commit: eb6a7ef343a43000855f8d5cc69bde0fae81d3e6
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 3%
@@ -36,7 +36,7 @@ Ce tutoriel décrit la création d’un objet Worker d’Assets compute simple q
 
 1. Configuration et configuration des comptes et services nécessaires pour créer et déployer un Asset compute Worker
 1. Création et configuration d’un projet Asset compute
-1. Développer un objet Worker am Asset compute qui génère un rendu personnalisé
+1. Développer un objet Worker d’Assets compute qui génère un rendu personnalisé
 1. Rédigez des tests pour et apprenez à déboguer le programme de travail d’Asset compute personnalisé.
 1. Déployez Asset compute Worker et intégrez-le AEM service Auteur as a Cloud Service via les profils de traitement
 
@@ -58,7 +58,7 @@ Le développement local de projets d’Asset compute nécessite un ensemble d’
 
 ### App Builder
 
-Les projets Asset compute sont des projets App Builder spécialement définis et, en tant que tels, nécessitent l’accès à App Builder dans Adobe Developer Console pour les configurer et les déployer.
+Les projets Asset compute sont des projets App Builder spécialement définis et, en tant que tels, nécessitent l’accès à App Builder dans la console Adobe Developer pour les configurer et les déployer.
 
 + [Configuration d’App Builder](./set-up/app-builder.md)
 

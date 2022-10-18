@@ -13,9 +13,9 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 497ce6d7-cd39-4fb3-b5e0-6c60845f7648
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
-source-wordcount: '2256'
+source-wordcount: '2257'
 ht-degree: 2%
 
 ---
@@ -112,7 +112,7 @@ Voyons comment fonctionne le composant.
 
    Pour éviter une attaque XSS potentielle, le texte enrichi est échappé via `DOMPurify` avant d’utiliser [dangereusementSetInnerHTML](https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml) pour effectuer le rendu du contenu. Rappeler la fonction `richText` et `text` propriétés du modèle JSON plus tôt dans l’exercice.
 
-1. Jetez ensuite un coup d’oeil au `TextEditConfig` ~line 29 :
+1. Ensuite, ouvrez `ui.frontend/src/components/import-components.js` jetez un coup d’oeil au `TextEditConfig` ~line 86 :
 
    ```js
    const TextEditConfig = {
@@ -126,10 +126,10 @@ Voyons comment fonctionne le composant.
 
    Le code ci-dessus est chargé de déterminer quand effectuer le rendu de l’espace réservé dans l’environnement de création AEM. Si la variable `isEmpty` method renvoie **true** l’espace réservé est alors rendu.
 
-1. Enfin, jetez un coup d’oeil au `MapTo` appelez à la ligne 62 :
+1. Enfin, jetez un coup d’oeil au `MapTo` appelez à la ligne 94 :
 
    ```js
-   export default MapTo('wknd-spa-react/components/text')(Text, TextEditConfig);
+   export default MapTo('wknd-spa-react/components/text')(LazyTextComponent, TextEditConfig);
    ```
 
    `MapTo` est fourni par le SDK JS de l’éditeur d’AEM SPA (`@adobe/aem-react-editable-components`). Chemin d’accès `wknd-spa-react/components/text` représente la variable `sling:resourceType` du composant AEM. Ce chemin d’accès est mis en correspondance avec la variable `:type` exposé par le modèle JSON observé précédemment. `MapTo` prend soin d’analyser la réponse du modèle JSON et de transmettre les valeurs correctes en tant que `props` au composant SPA.

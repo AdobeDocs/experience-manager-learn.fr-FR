@@ -11,7 +11,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 3%
@@ -253,7 +253,6 @@ Pour utiliser le composant Bannière avec l’éditeur de SPA, un nouveau compos
    import {MapTo} from '@adobe/aem-react-editable-components';
    
    export const BannerEditConfig = {
-   
        emptyLabel: 'Banner',
    
        isEmpty: function(props) {
@@ -281,7 +280,7 @@ Pour utiliser le composant Bannière avec l’éditeur de SPA, un nouveau compos
        }
    
        render() {
-           if(BannerEditConfig.isEmpty(this.props)) {
+           if (BannerEditConfig.isEmpty(this.props)) {
                return null;
            }
    
@@ -376,7 +375,7 @@ Implémentez ensuite le modèle Sling pour le `BannerModel` .
        adapters = { BannerModel.class,ComponentExporter.class}, 
        resourceType = BannerModelImpl.RESOURCE_TYPE, 
        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
-       )
+   )
    @Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION)
    public class BannerModelImpl implements BannerModel {
    
@@ -420,7 +419,6 @@ Implémentez ensuite le modèle Sling pour le `BannerModel` .
            return null != image ? image.getTitle() : null;
        }
    
-   
        // method required by `ComponentExporter` interface
        // exposes a JSON property named `:type` with a value of `wknd-spa-react/components/banner`
        // required to map the JSON export to the SPA component props via the `MapTo`
@@ -428,7 +426,6 @@ Implémentez ensuite le modèle Sling pour le `BannerModel` .
        public String getExportedType() {
            return BannerModelImpl.RESOURCE_TYPE;
        }
-   
    }
    ```
 
@@ -436,7 +433,7 @@ Implémentez ensuite le modèle Sling pour le `BannerModel` .
 
    `BannerModelImpl.java` utilise la variable [Modèle de délégation pour les modèles Sling](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) pour éviter de réécrire toute la logique à partir du composant principal Image .
 
-1. Observez les lignes suivantes :
+1. Vérifiez les lignes suivantes :
 
    ```java
    @Self
@@ -477,7 +474,7 @@ Implémentez ensuite le modèle Sling pour le `BannerModel` .
 
 1. Vous devriez maintenant voir la valeur rendue de **Texte de bannière**:
 
-   ![Texte de bannière affiché](assets/extend-component/banner-text-displayed.png)
+![Texte de bannière affiché](assets/extend-component/banner-text-displayed.png)
 
 1. Affichez la réponse du modèle JSON à l’adresse : [http://localhost:4502/content/wknd-spa-react/us/en.model.json](http://localhost:4502/content/wknd-spa-react/us/en.model.json) et recherchez le `wknd-spa-react/components/card`:
 
