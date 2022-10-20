@@ -4,10 +4,10 @@ description: Découvrez Experience Manager Sites à partir de nos vidéos et tut
 sub-product: sites, content-services
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: d6366d1e3f4d575eb78b8af38a59a7fb9413f43d
+source-git-commit: d712fb988dc554b4f95ab2298ffc0f54df48f6f3
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 21%
+source-wordcount: '345'
+ht-degree: 16%
 
 ---
 
@@ -101,12 +101,11 @@ Adobe Experience Manager (AEM) Sites est une plate-forme de gestion de l’expé
 
 ## Ressources supplémentaires
 
-* [Experience League - Explorer AEM](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager)
 * [Documentation sur la création AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
 * [Documentation sur le développement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-* [Documentation sur l’administration AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
+* [Documentation sur l’administration d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html)
 * [Documentation sur le déploiement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html)
-* [Tutoriels sur AEM as a Cloud Service](/help/cloud-service/overview.md)
-* [Tutoriels sur AEM Assets](/help/assets/overview.md)
-* [Tutoriels sur AEM Forms](/help/forms/overview.md)
+* [AEM tutoriels as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutoriels AEM Assets](/help/assets/overview.md)
+* [Tutoriels AEM Forms](/help/forms/overview.md)
 * [Tutoriels sur AEM Foundation](/help/foundation/overview.md)
