@@ -1,5 +1,5 @@
 ---
-user-guide-title: Prise en main d’AEM Headless
+user-guide-title: Prise en main d’AEM découplé
 user-guide-description: Tutoriel complet illustrant comment créer et exposer du contenu à l’aide d’AEM sans affichage.
 breadcrumb-title: Tutoriel sur AEM Headless
 version: Cloud Service
@@ -8,13 +8,13 @@ kt: 2963
 index: y
 source-git-commit: 680ed62141b853daf104a827067ca6d5a209796d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '256'
+ht-degree: 24%
 
 ---
 
 
-# Prise en main d’AEM Headless{#getting-started-with-aem-headless}
+# Prise en main d’AEM découplé{#getting-started-with-aem-headless}
 
 + [AEM Présentation sans affichage](./overview.md)
 + GraphQL {#graphql}

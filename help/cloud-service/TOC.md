@@ -47,7 +47,7 @@ ht-degree: 29%
       + [Configurations de Dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
       + [API de Cloud Manager](./cloud-manager/devops/cloud-manager-apis.md)
 + Configuration de l’environnement de développement local {#local-development-environment-set-up}
-   + [ du commerce électronique](./local-development-environment/overview.md)
+   + [Présentation](./local-development-environment/overview.md)
    + [Outils de développement](./local-development-environment/development-tools.md)
    + [Exécution locale AEM](./local-development-environment/aem-runtime.md)
    + [Outils du Dispatcher local](./local-development-environment/dispatcher-tools.md)
@@ -76,14 +76,14 @@ ht-degree: 29%
    + [Documentation Java de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + AEM de débogage{#debugging}
    + Débogage du SDK AEM{#debugging-aem-sdk}
-      + [ du commerce électronique](./debugging/aem-sdk-local-quickstart/overview.md)
+      + [Présentation](./debugging/aem-sdk-local-quickstart/overview.md)
       + [Journaux](./debugging/aem-sdk-local-quickstart/logs.md)
       + [Débogage à distance](./debugging/aem-sdk-local-quickstart/remote-debugging.md)
       + [Console web OSGi](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
       + [Outils Dispatcher](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [Autres outils](./debugging/aem-sdk-local-quickstart/other-tools.md)
    + Débogage AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
-      + [ du commerce électronique](./debugging/cloud-service/overview.md)
+      + [Présentation](./debugging/cloud-service/overview.md)
       + [Journaux](./debugging/cloud-service/logs.md)
       + [Build et déploiement](./debugging/cloud-service/build-and-deployment.md)
       + [Developer Console](./debugging/cloud-service/developer-console.md)
@@ -91,17 +91,17 @@ ht-degree: 29%
       + Risques{#risks}
          + [Avertissements transversaux](./debugging/cloud-service/risks/traversals.md)
 + Accès aux AEM{#accessing}
-   + [ du commerce électronique](./accessing/overview.md)
+   + [Présentation](./accessing/overview.md)
    + [Utilisateurs Adobe IMS](./accessing/adobe-ims-users.md)
    + [Groupes d’utilisateurs Adobe IMS](./accessing/adobe-ims-user-groups.md)
    + [Profils de produit Adobe IMS](./accessing/adobe-ims-product-profiles.md)
    + [AEM utilisateurs, groupes et autorisations](./accessing/aem-users-groups-and-permissions.md)
    + [Configuration de l’accès à la présentation d’AEM](./accessing/walk-through.md)
 + Authentification{#authentication}
-   + [ du commerce électronique](./authentication/authentication.md)
+   + [Présentation](./authentication/authentication.md)
    + [SAML 2.0](./authentication/saml-2-0.md)
 + Mise en réseau avancée{#networking}
-   + [ du commerce électronique](./networking/advanced-networking.md)
+   + [Présentation](./networking/advanced-networking.md)
    + [Sortie de port flexible](./networking/flexible-port-egress.md)
    + [Adresse IP sortante dédiée](./networking/dedicated-egress-ip-address.md)
    + [Réseau privé virtuel](./networking/vpn.md)
@@ -230,7 +230,7 @@ ht-degree: 29%
       + [Test de l’envoi du formulaire](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Événement de clic de test](./forms/integrate-with-salesforce/create-lead-click-event.md)
 + Extensibilité des Assets compute{#asset-compute}
-   + [ du commerce électronique](./asset-compute/overview.md)
+   + [Présentation](./asset-compute/overview.md)
    + Configuration{#set-up}
       + [Approvisionnement des comptes et des services](./asset-compute/set-up/accounts-and-services.md)
       + [Environnement de développement local](./asset-compute/set-up/development-environment.md)

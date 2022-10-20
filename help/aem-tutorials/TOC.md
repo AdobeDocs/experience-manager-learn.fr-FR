@@ -5,7 +5,7 @@ index: y
 source-git-commit: ebe252116f677ff7486346077736d0ee450896c1
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 46%
+ht-degree: 51%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 46%
 + [AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=fr)
 + [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html)
 + [AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)
-+ [AEM sans tête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
++ [AEM sans tête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 + [AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 + [Guides d’AEM](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html)
 + Tutorials à plusieurs étapes {#multi}

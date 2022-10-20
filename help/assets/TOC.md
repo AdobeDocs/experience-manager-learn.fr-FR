@@ -6,8 +6,8 @@ feature-set: Experience Manager Assets, Experience Manager Sites, Experience Man
 team: TM
 source-git-commit: c6caa39075bc3c26dedeca4246e7e1f85887b124
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '378'
+ht-degree: 33%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 0%
    + [Tâche de révision](./collaboration/review-task.md)
 
 + Recherche et découverte{#search-and-discovery}
-   + [Rechercher](./search-and-discovery/search.md)
+   + [Recherche](./search-and-discovery/search.md)
    + [Collections](./search-and-discovery/collections.md)
    + [Amplification de recherche](./search-and-discovery/search-boost.md)
 
@@ -65,7 +65,7 @@ ht-degree: 0%
    + [Publier les ressources](./sharing/publish.md)
 
    + Brand Portal{#brand-portal}
-      + [Brand Portal](./sharing/brand-portal.md)
+      + [Brand Portal](./sharing/brand-portal.md)
       + [Configuration d’AEM Brand Portal](brand-portal/configure.md)
       + [Configuration de l’approvisionnement des ressources](brand-portal/configure-asset-sourcing.md)
       + [Activation des téléchargements de rendu](brand-portal/enable-renditions-download.md)
@@ -78,10 +78,10 @@ ht-degree: 0%
 
 + Intégration aux processus créatifs{#creative-workflows}
    + [Application de bureau AEM](./creative-workflows/aem-desktop-app.md)
-   + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
+   + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
 
-+ Adobe Asset Link{#adobe-asset-link}
++ Adobe Asset Link{#adobe-asset-link}
    + [Configuration](./adobe-asset-link/setup.md)
    + [Accès à Adobe Asset Link](./adobe-asset-link/launch-adobe-asset-link.md)
    + [Présentation du panneau](./adobe-asset-link/panel-overview.md)
@@ -102,7 +102,7 @@ ht-degree: 0%
 + Dynamic Media{#dynamic-media}
    + [Présentation de Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Recadrage intelligent](dynamic-media/smart-crop-feature-video-use.md)
-   + [Présentation](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
+   + [Fragments d’expérience](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
    + [Vidéo interactive](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
    + [Lecteur vidéo](dynamic-media/dynamic-media-video-player-feature-video-use.md)
    + [Vidéo 360](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)

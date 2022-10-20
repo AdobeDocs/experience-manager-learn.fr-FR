@@ -13,7 +13,7 @@ ht-degree: 32%
 
 # Vidéos et tutoriels d’AEM Sites {#sites}
 
-+ [ du commerce électronique](overview.md)
++ [Présentation](overview.md)
 + Création de pages {#page-authoring}
    + [Création](page-authoring/aem-sites-authoring-overview.md)
    + [Navigation](page-authoring/basic-handling-sites-feature-video-use.md)
@@ -53,7 +53,7 @@ ht-degree: 32%
 + Développement {#developing}
    + [Archétype de projet AEM](developing/aem-project-archetype.md)
    + [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
-   + [Prise en main d’AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
+   + [Prise en main d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
    + [Prise en main d’AEM SPA Editor et React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [Extension des propriétés de page](developing/page-properties-technical-video-develop.md)
    + [Développement avec le système de style](developing/style-system-technical-video-understand.md)
@@ -94,7 +94,7 @@ ht-degree: 32%
    + [Amélioration des traductions](translation/translation-enhancements-feature-video-use.md)
 + Intégrations {#integrations}
    + Experience Platform Launch {#experience-platform-launch}
-      + [ du commerce électronique](integrations/experience-platform-launch/overview.md)
+      + [Présentation](integrations/experience-platform-launch/overview.md)
       + [Créer une propriété Launch](integrations/experience-platform-launch/create-launch-property.md)
       + [Connexion d’AEM à Launch à l’aide d’Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
       + [Création d’un Cloud Service Launch](integrations/experience-platform-launch/create-launch-cloud-service.md)
@@ -107,7 +107,7 @@ ht-degree: 32%
       + [Suivi des composants cliqués avec Adobe Analytics](integrations/analytics/track-clicked-component.md)
       + [Analyse des données avec Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
-      + [ du commerce électronique](integrations/adobe-target/overview.md)
+      + [Présentation](integrations/adobe-target/overview.md)
       + [Ajout de l’extension Target à la propriété Launch](integrations/adobe-target/add-target-launch-extension.md)
       + [Charger et déclencher un appel Target](integrations/adobe-target/load-and-fire-target.md)
       + [Création d’un compte Adobe Target Cloud Service](integrations/adobe-target/setup-aem-target-cloud-service.md)
