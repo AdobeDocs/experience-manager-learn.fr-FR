@@ -8,8 +8,9 @@ role: Architect, Developer
 level: Intermediate
 kt: 9351
 thumbnail: 343040.jpeg
+last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: 6d5a531f44414887e8dc6568fa6f5dcb73bfb183
+source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '2815'
 ht-degree: 2%
@@ -58,7 +59,7 @@ Le flux type d’une intégration SAML de publication AEM est le suivant :
 
 Cette vidéo décrit la configuration de l’intégration SAML 2.0 avec AEM service de publication as a Cloud Service et l’utilisation d’Okta comme fournisseur d’identité.
 
-## Conditions préalables
+## Prérequis
 
 Les éléments suivants sont requis lors de la configuration de l’authentification SAML 2.0 :
 
@@ -119,7 +120,7 @@ Le Trust Store global est configuré avec le certificat public du fournisseur d�
 1. Créer un package
    + Nom du module : `Global Trust Store`
    + Version: `1.0.0`
-   + Groupe: `com.your.company`
+   + Groupe : `com.your.company`
 1. Modifiez la nouvelle __Trust Store mondial__ module.
 1. Sélectionnez la __Filtres__ et ajouter un filtre pour le chemin d’accès racine. `/etc/truststore`.
 1. Sélectionner __Terminé__ puis __Enregistrer__.
@@ -208,7 +209,7 @@ La configuration est une configuration d’usine OSGi, ce qui signifie qu’un s
 
 ### Configuration OSGi du gestionnaire d’authentification SAML 2.0 Adobe{#configure-saml-2-0-authentication-handler-osgi-configuration}
 
-|  | Propriété OSGi | Requis | Format de valeur | Valeur par défaut | Description |
+|  | Propriété OSGi | Requise | Format de valeur | Valeur par défaut | Description |
 |-----------------------------------|-------------------------------|:--------:|:---------------------:|---------------------------|-------------|
 | Chemins d’accès | `path` | ✔ | Tableau de chaînes | `/` | AEM chemins d’accès pour lesquels ce gestionnaire d’authentification est utilisé. |
 | URL IDP | `idpUrl` | ✔ | Chaîne |  | URL IDP La demande d’authentification SAML est envoyée. |
@@ -321,7 +322,7 @@ When [cryptage de l’assertion AuthnRequest et SAML](#encrypting-the-authnreque
 
 1. Les trois propriétés de configuration OSGi requises pour le chiffrement sont les suivantes :
 
-+ `useEncryption`Définissez  sur `true`.
++ `useEncryption` Défini sur `true`
 + `spPrivateKeyAlias` contient l’alias d’entrée du KeyStore pour la clé privée utilisée par l’intégration SAML.
 + `keyStorePassword` contient un [Variable de configuration secrète OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#secret-configuration-values) contenant le `authentication-service` mot de passe du fichier de stockage des clés utilisateur.
 

@@ -7,13 +7,14 @@ topic: Integrations
 role: Leader, Architect, Admin, Developer
 level: Beginner
 kt: 10718
-thumbnail: KT-10718.jpeg
+thumbnail: KT-10718.png
+last-substantial-update: 2022-10-02T00:00:00Z
 mini-toc-levels: 1
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: 663075723da207242309c08feed42657b9e5188b
+source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '958'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -51,11 +52,11 @@ Adobe Acrobat Sign (anciennement Adobe Sign) active les processus de signature �
 + [Configuration de l’intégration Adobe Acrobat Sign](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adobe-sign-integration-adaptive-forms.html)
 + [Tutoriel sur AEM Forms et Adobe Acrobat Sign](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/forms-and-sign/introduction.html)
 
-## Adobe Analytics
+## Adobe Analytics
 
 L&#39;intégration d&#39;Adobe Analytics avec AEM as a Cloud Service vous permet de suivre l&#39;activité de contenu et d&#39;analyser les données à partir de n&#39;importe quel emplacement du parcours client. De plus, obtenez des rapports polyvalents, une intelligence prédictive, etc.
 
-### AEM Sites
+### AEM Sites
 
 + [Configuration de l’intégration Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-analytics.html)
 + [Tutoriel sur AEM Sites et Analytics](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/analytics/collect-data-analytics.html?lang=fr)
@@ -66,7 +67,7 @@ L&#39;intégration d&#39;Adobe Analytics avec AEM as a Cloud Service vous permet
    + [Gestion des données pilotée par les événements avec l’ACDL](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/adobe-client-data-layer.html)
    + [Tutoriel sur Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=fr)
 
-### AEM Assets
+### AEM Assets
 
 + [Présentation des statistiques sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html)
 + [Configuration des statistiques sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html#configure-asset-insights)
@@ -76,21 +77,21 @@ L&#39;intégration d&#39;Adobe Analytics avec AEM as a Cloud Service vous permet
 
 + [Configuration de l’intégration Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate-aem-forms-with-adobe-analytics.html)
 
-## Adobe Campaign Classic
+## Adobe Campaign Classic
 
 L&#39;intégration de Adobe Campaign Classic avec AEM as a Cloud Service permet de gérer directement dans Adobe Experience Manager le contenu et les formulaires de diffusion par email, tout en utilisant Adobe Campaign Classic pour personnaliser et diffuser des emails.
 
-### AEM Sites
+### AEM Sites
 
 + [Intégration à Adobe Campaign Classic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-campaign-classic.html#configure-user)
 + [Création d’une newsletter Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/creating-newsletter.html)
 + [Documentation sur les composants principaux d’AEM email](https://github.com/adobe/aem-core-email-components#aem-email-core-components)
 
-## Adobe Commerce
+## Adobe Commerce
 
 L’intégration d’Adobe Commerce à AEM as a Cloud Service permet aux marques de se développer et d’innover plus rapidement pour différencier les expériences commerciales et capturer l’accélération des dépenses en ligne. AEM avec Commerce combine les expériences immersives, omnicanales et personnalisées en Experience Manager avec un certain nombre de solutions commerciales afin d’apporter des expériences différenciées à toutes les parties du parcours commercial, ce qui réduit le temps de valorisation et entraîne une conversion plus élevée.
 
-### AEM Sites
+### AEM Sites
 
 + [Guide d’utilisation d’AEM Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
 
@@ -99,7 +100,7 @@ L’intégration d’Adobe Commerce à AEM as a Cloud Service permet aux marques
 
 Les balises Adobe Experience Platform (anciennement Adobe Launch, DTM) s’intègrent de manière transparente à AEM, offrant un moyen simple de déployer et de gérer. [analytics](#adobe-analytics), [ciblage](#adobe-target)balises marketing et publicitaires nécessaires pour impliquer les expériences client.
 
-### AEM Sites
+### AEM Sites
 
 + [Guide d’utilisation des balises Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 + [Tutoriel sur les balises Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
@@ -113,7 +114,7 @@ Les balises Adobe Experience Platform (anciennement Adobe Launch, DTM) s’intè
 
 Adobe Journey Optimizer vous aide à planifier des campagnes omnicanal et des moments uniques avec des millions de clients provenant d’une seule application. Le parcours entier est optimisé avec une prise de décision intelligente et des informations.
 
-### AEM Assets
+### AEM Assets
 
 + [Intégration d’AEM Assets Essentials à Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=fr)
 
@@ -121,7 +122,7 @@ Adobe Journey Optimizer vous aide à planifier des campagnes omnicanal et des mo
 
 Adobe Learning Manager (anciennement Adobe Captivate Prime) offre un apprentissage personnalisé aux clients et aux employés.
 
-### AEM Sites
+### AEM Sites
 
 + [Intégration d’AEM Sites à Adobe Learning Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-learning-manager.html)
 
@@ -129,13 +130,13 @@ Adobe Learning Manager (anciennement Adobe Captivate Prime) offre un apprentissa
 
 Adobe Sensei fournit des technologies d’intelligence artificielle et d’apprentissage automatique pour transformer le processus de gestion de contenu par le biais des balises intelligentes, du recadrage intelligent, de la recherche visuelle, etc.
 
-### AEM Sites
+### AEM Sites
 
 + [Résumé de texte dans des fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#summarizing-text)
 
-### AEM Assets
+### AEM Assets
 
-+ [Balises intelligentes pour les images](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
++ [Balises intelligentes pour les images](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=fr)
 + [Balises intelligentes personnalisées pour les images](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/custom-smart-tags.html)
 + [Balises intelligentes pour les vidéos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/video-smart-tags.html)
 + [Recadrage intelligent](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/smart-crop-feature-video-use.html)
@@ -150,7 +151,7 @@ Adobe Sensei fournit des technologies d’intelligence artificielle et d’appre
 
 Adobe Target s’intègre à AEM as a Cloud Service afin de fournir une expérience web optimisée pour chaque utilisateur final, le tout optimisé par le contenu d’AEM.
 
-### AEM Sites
+### AEM Sites
 
 + [Configuration de l’intégration Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html)
 + Fragments d’expérience vers Target
@@ -165,7 +166,7 @@ Adobe Target s’intègre à AEM as a Cloud Service afin de fournir une expérie
 
 L’intégration d’Adobe Workfront à AEM as a Cloud Service simplifie le processus de création, de collaboration et de gestion du cycle de vie des ressources numériques.
 
-### AEM Assets
+### AEM Assets
 
 + [Configuration du connecteur amélioré Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html?lang=fr)
 + [Vidéos sur les connecteurs améliorés Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html)

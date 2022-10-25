@@ -8,8 +8,9 @@ role: Admin
 level: Beginner
 kt: 5882
 thumbnail: KT-5882.jpg
+last-substantial-update: 2022-10-06T00:00:00Z
 exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
-source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
+source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 8%
@@ -66,6 +67,6 @@ Présentation rapide de la configuration des utilisateurs, groupes d’utilisate
 
 La documentation suivante couvre [Adobe Admin Console](https://adminconsole.adobe.com)- des détails et des préoccupations spécifiques qui peuvent aider à une meilleure compréhension de Adobe Admin Console et à l’utiliser pour gérer les utilisateurs et accéder à l’ensemble des produits Experience Cloud.
 
-+ [Présentation de Adobe Admin Console Identity](https://helpx.adobe.com/fr/enterprise/using/identity.html)
++ [Présentation de Adobe Admin Console Identity](https://helpx.adobe.com/enterprise/using/identity.html)
 + [Rôles d’administrateur Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-roles.html)
 + [Rôles de développement Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-developers.html)
