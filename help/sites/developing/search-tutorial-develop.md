@@ -1,13 +1,15 @@
 ---
 title: Guide de mise en oeuvre de recherche simple
-description: La mise en œuvre de recherche simple est le matériel du Summit Lab AEM Search Demystified 2017. Cette page contient les matériaux de ce laboratoire. Pour une visite guidée du laboratoire, consultez le classeur du laboratoire dans la section Présentation de cette page.
+description: La mise en œuvre de recherche simple est le thème du Summit Lab AEM Search Demystified 2017. Cette page contient les matériaux de ce laboratoire. Pour une visite guidée du laboratoire, consultez le classeur du laboratoire dans la section Présentation de cette page.
 version: 6.4, 6.5
 feature: Search
 topic: Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+last-substantial-update: 2022-08-10T00:00:00Z
+thumbnail: 32090.jpg
+source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 11%
