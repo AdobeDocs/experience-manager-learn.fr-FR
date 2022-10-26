@@ -12,16 +12,18 @@ topic: Architecture
 role: Architect
 level: Experienced
 exl-id: 52dd8a3f-6461-4acb-87ca-5dd9567d15a6
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+last-substantial-update: 2022-10-01T00:00:00Z
+thumbnail: KT-781.jpg
+source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '448'
 ht-degree: 4%
 
 ---
 
 # Présentation de l’authentification Adobe IMS avec AEM sur Adobe Managed Services{#understanding-adobe-ims-authentication-with-aem-on-adobe-managed-services}
 
-Adobe Experience Manager offre une prise en charge Admin Console des instances d’AEM et une authentification basée sur Adobe IMS (système Identity Management) pour AEM sur Managed Services.   Cette intégration permet aux clients Managed Services d’AEM de gérer tous les utilisateurs Experience Cloud dans une seule console web unifiée. Les utilisateurs et les groupes peuvent être affectés aux profils de produit associés aux instances AEM, ce qui permet d’accorder un accès géré de manière centralisée aux instances AEM spécifiques.
+Adobe Experience Manager offre une prise en charge Admin Console des instances d’AEM et une authentification basée sur Adobe Identity Management System (IMS) pour AEM sur Managed Services.   Cette intégration permet aux clients Managed Services d’AEM de gérer tous les utilisateurs Experience Cloud dans une seule console web unifiée. Les utilisateurs et les groupes peuvent être affectés aux profils de produit associés aux instances AEM, ce qui permet d’accorder un accès géré de manière centralisée aux instances AEM spécifiques.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26170?quality=12&learn=on)
 
@@ -40,7 +42,7 @@ Adobe Experience Manager offre une prise en charge Admin Console des instances d
 
 L’application des autorisations et de l’accès au niveau de l’utilisateur doit être évitée dans Admin Console et dans Adobe Experience Manager.
 
-Dans Admin Console, l’accès doit être accordé aux utilisateurs via des groupes d’utilisateurs au niveau du contexte du produit. Les groupes d’utilisateurs sont généralement mieux exprimés par rôle logique au sein de l’organisation afin de promouvoir la réutilisation des groupes dans les produits Adobe Experience Cloud.
+Dans , les utilisateurs Admin Console doivent se voir accorder l’accès via des groupes d’utilisateurs au niveau du contexte du produit. Les groupes d’utilisateurs sont généralement mieux exprimés par rôle logique au sein de l’organisation afin de promouvoir la réutilisation des groupes dans les produits Adobe Experience Cloud.
 
 >[!NOTE]
 >
@@ -48,4 +50,4 @@ Dans Admin Console, l’accès doit être accordé aux utilisateurs via des grou
 
 ### Application des autorisations dans Adobe Experience Manager
 
-Dans Adobe Experience Manager, les groupes d’utilisateurs synchronisés à partir d’Adobe IMS doivent être ajoutés dans le terme à [Groupes d’utilisateurs AEM fournis](https://helpx.adobe.com/fr/experience-manager/6-4/sites/administering/using/security.html), qui sont préconfigurés avec les autorisations appropriées pour exécuter des ensembles de tâches spécifiques dans AEM. Les utilisateurs synchronisés depuis Adobe IMS ne doivent pas être directement ajoutés à [Groupes d’utilisateurs AEM fournis](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/security.html).
+Dans Adobe Experience Manager, les groupes d’utilisateurs synchronisés à partir d’Adobe IMS doivent être ajoutés dans le terme à [Groupes d’utilisateurs AEM fournis](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security.html?lang=fr), qui sont préconfigurés avec les autorisations appropriées pour exécuter des ensembles de tâches spécifiques dans AEM. Les utilisateurs synchronisés depuis Adobe IMS ne doivent pas être directement ajoutés à [Groupes d’utilisateurs AEM fournis](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security.html).

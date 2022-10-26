@@ -9,13 +9,15 @@ audience: all
 topic: Architecture
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: d5d59ef5-9343-4ac2-9053-a010decdb9b6
+last-substantial-update: 2022-08-15T00:00:00Z
+thumbnail: cm-pipeline.jpg
+source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
-
 
 # Utilisation du pipeline CI/CD dans Adobe Cloud Manager
 
@@ -39,21 +41,21 @@ Cette vidéo explore la configuration du pipeline pour le programme dans Cloud M
 
 ## Exécution d’un pipeline en échec
 
-Cette vidéo explore l’exécution du pipeline CI/CD à l’aide du code qui échoue aux contrôles de qualité requis de Cloud Manager, à l’aide de la branche de référentiel **[!DNL yellow]**.
+Cette vidéo explore l’exécution du pipeline CI/CD à l’aide du code qui échoue aux contrôles qualité requis de Cloud Manager, à l’aide de la variable **[!DNL yellow]** branche du référentiel.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23084/?quality=12&learn=on)
 
 ## Exécution réussie d’un pipeline
 
-Cette vidéo explore l’exécution réussie du pipeline CI/CD à l’aide du code qui transmet les contrôles de qualité requis de Cloud Manager, à l’aide de la branche de référentiel **[!DNL master]**.
+Cette vidéo explore l’exécution réussie du pipeline CI/CD à l’aide du code qui transmet les contrôles de qualité requis de Cloud Manager, à l’aide de la fonction **[!DNL master]** branche du référentiel.
 
-Cette vidéo touche également la console [!UICONTROL Activité] de Cloud Manager, ce qui permet une rentrée dans les exécutions principales ou la révision des exécutions terminées ou ayant échoué.
+Cette vidéo aborde également la [!UICONTROL Activité] dans Cloud Manager, qui permet une rentrée dans les exécutions principales ou la révision des exécutions terminées ou ayant échoué.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23085/?quality=12&learn=on)
 
 ## Documents annexes
 
-* [Guide de l’utilisateur de Cloud Manager](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)
-* [Téléchargement des  [!DNL SonarQube] règles de numérisation du code](https://helpx.adobe.com/experience-manager/cloud-manager/using/understand-your-test-results.html#CodeQualityTesting)
+* [Guide de l’utilisateur de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Téléchargement de l’analyse du code [!DNL SonarQube] rules](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
    * *XLSX disponible au bas de la section liée*
-* [[!DNL SonarQube] Index des règles Java](https://rules.sonarsource.com/java/)
+* [[!DNL SonarQube] Index des règles Java™](https://rules.sonarsource.com/java/)
