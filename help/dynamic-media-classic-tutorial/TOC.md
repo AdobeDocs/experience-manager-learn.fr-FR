@@ -1,15 +1,11 @@
 ---
-sub-product: assets
-topics: development
-version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
 user-guide-title: Présentation de Dynamic Media Classic
 user-guide-description: Ce tutoriel explique comment créer, concevoir et diffuser des contenus multimédias enrichis dans Dynamic Media Classic.
 breadcrumb-title: Tutoriels de Dynamic Media Classic
+sub-product: Experience Manager Assets
+version: 6.4, 6.5
 index: y
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 49%

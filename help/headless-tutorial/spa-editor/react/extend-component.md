@@ -1,7 +1,6 @@
 ---
 title: Étendre un composant principal | Prise en main de l’éditeur SPA d’AEM et de React
 description: Découvrez comment étendre le modèle JSON pour un composant principal existant à utiliser avec l’éditeur SPA d’AEM. Comprendre comment ajouter des propriétés et du contenu à un composant existant est une technique puissante pour étendre les fonctionnalités d’une mise en oeuvre d’AEM SPA éditeur. Découvrez comment utiliser le modèle de délégation pour étendre les modèles Sling et les fonctionnalités de Sling Resource Merger.
-sub-product: sites
 feature: SPA Editor, Core Components
 doc-type: tutorial
 version: Cloud Service
@@ -11,7 +10,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
-source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 3%

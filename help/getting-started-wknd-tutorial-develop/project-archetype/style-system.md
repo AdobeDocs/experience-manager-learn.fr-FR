@@ -2,7 +2,6 @@
 title: Développement avec le système de style
 seo-title: Developing with the Style System
 description: Découvrez comment mettre en oeuvre des styles individuels et réutiliser les composants principaux à l’aide du système de style du Experience Manager. Ce tutoriel décrit le développement pour le système de style afin d’étendre les composants principaux avec des CSS spécifiques à la marque et des configurations de stratégie avancées de l’éditeur de modèles.
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: Core Components, Style System
@@ -13,7 +12,7 @@ kt: 4128
 mini-toc-levels: 1
 thumbnail: 30386.jpg
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
-source-git-commit: df9ff5e6811d35118d1beee6baaffa51081cb3c3
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1681'
 ht-degree: 3%
@@ -75,7 +74,7 @@ Dans ce chapitre, nous utiliserons la variable [Système de style](https://exper
 
 *Style de soulignement disponible à utiliser pour le composant Titre*
 
-## Arrière-plan {#background}
+## Contexte {#background}
 
 Le [Système de style](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) permet aux développeurs et aux éditeurs de modèle de créer plusieurs variantes visuelles d’un composant. Les auteurs peuvent ensuite décider quel style utiliser lors de la composition d’une page. Nous utiliserons le système de style tout le reste du tutoriel pour obtenir plusieurs styles uniques, tout en utilisant les composants principaux dans une approche à code faible.
 
@@ -103,7 +102,7 @@ Ajoutez une nouvelle stratégie pour les composants Titre afin que les auteurs d
 
 1. Créez une nouvelle stratégie pour le composant Titre avec les valeurs suivantes :
 
-   *Titre de la stratégie **: **Titre WKND**
+   *Titre de la stratégie&#42;*: **Titre WKND**
 
    *Propriétés* > *Onglet Styles* > *Ajouter un nouveau style*
 
@@ -195,7 +194,7 @@ Implémentez ensuite le style Souligné à l’aide de la méthode **ui.frontend
 
 ## Style de bloc de citations - Texte {#text-component}
 
-Répétez ensuite les étapes similaires pour appliquer un style unique au [Composant textuel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr). Le composant Texte a été ajouté par proxy au projet sous `/apps/wknd/components/text` dans le **ui.apps** module . Les styles par défaut des éléments de paragraphe ont déjà été implémentés dans la variable **ui.frontend**.
+Répétez ensuite les étapes similaires pour appliquer un style unique au [Composant textuel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Le composant Texte a été ajouté par proxy au projet sous `/apps/wknd/components/text` dans le **ui.apps** module . Les styles par défaut des éléments de paragraphe ont déjà été implémentés dans la variable **ui.frontend**.
 
 Le [Conceptions WKND Article](assets/pages-templates/wknd-article-design.xd) contiennent un style unique pour le composant Texte avec un bloc de guillemet :
 
@@ -213,7 +212,7 @@ Ajoutez ensuite une nouvelle stratégie pour les composants Texte .
 
 1. Mettez à jour la stratégie de composant Texte avec les valeurs suivantes :
 
-   *Titre de la stratégie **: **Texte du contenu**
+   *Titre de la stratégie&#42;*: **Texte du contenu**
 
    *Modules externes* > *Styles de paragraphe* > *Activation des styles de paragraphe*
 

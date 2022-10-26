@@ -1,7 +1,6 @@
 ---
 title: Présentation des modèles de base
 description: Découvrez les modèles de base dans Dynamic Media Classic, les modèles basés sur des images appelés à partir du serveur d’images et composés d’images et de texte rendu. Un modèle peut être modifié dynamiquement à partir de l’URL qui suit la publication du modèle. Vous apprendrez comment charger un PSD Photoshop vers Dynamic Media Classic pour l’utiliser comme base d’un modèle. Créez un modèle de base de marchandisage simple constitué de calques d’image. Ajoutez des calques de texte et rendez-les variables à l’aide de paramètres. Créez une URL de modèle et manipulez l’image de manière dynamique par le biais du navigateur web.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
@@ -11,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d4e16b45-0095-44b4-8c16-89adc15e0cf9
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '6260'
 ht-degree: 0%

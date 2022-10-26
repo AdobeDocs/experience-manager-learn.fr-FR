@@ -1,7 +1,6 @@
 ---
 title: Processus principal de Dynamic Media Classic et aperçu des ressources
 description: 'Découvrez le processus principal dans Dynamic Media Classic, qui comprend les trois étapes : Créer (et Télécharger), Auteur (et Publier) et Diffuser. Découvrez ensuite comment prévisualiser des ressources dans Dynamic Media Classic.'
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, architecture, publishing
@@ -11,10 +10,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '2703'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 

@@ -2,12 +2,14 @@
 user-guide-title: Vidéos sur AEM Assets Essentials
 user-guide-description: Ensemble de vidéos pour Adobe Experience Manager Assets Essentials.
 breadcrumb-title: Vidéos sur AEM Assets Essentials
+sub-product: Experience Manager Assets
+version: Cloud Service
 feature-set: Experience Manager Assets
 team: TM
-source-git-commit: a5d3a5b06bb3228c4409c6f39a4376561a84ead3
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '73'
+ht-degree: 34%
 
 ---
 
@@ -30,7 +32,7 @@ ht-degree: 0%
    + [Formulaires de métadonnées](configuring/metadata-forms.md)
    + [Gestion des autorisations](configuring/permissions-management.md)
 
-+ [Intégration de Creative Cloud](integrations/creative-cloud.md)
++ [Intégration de Creative Cloud](integrations/creative-cloud.md)
 
 + Intégration d’Adobe Workfront{#workfront}
    + [Configuration](./integrations/workfront/configure.md)

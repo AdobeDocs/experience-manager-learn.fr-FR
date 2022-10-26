@@ -1,22 +1,21 @@
 ---
 title: Visionneuses d’images, d’échantillons, à 360° et de supports variés
-description: L’une des fonctionnalités les plus utiles et les plus puissantes de Dynamic Media Classic est sa prise en charge de la création de visionneuses de médias riches comme les visionneuses d’images, d’échantillons, à 360° et de supports variés. Découvrez ce qu’est chaque visionneuse de médias enrichis et comment créer chaque type dans Dynamic Media Classic. En savoir plus sur les paramètres prédéfinis d’ensemble par lot, qui automatisent le processus de création de visionneuses de médias riches lors du téléchargement.
-sub-product: dynamic-media
-feature: Dynamic Media Classic, Visionneuses d’images, Visionneuses de médias mixtes, Visionneuses à 360°
-topic: Gestion de contenu
+description: L’une des fonctionnalités les plus utiles et les plus puissantes de Dynamic Media Classic est sa prise en charge de la création de visionneuses de médias enrichis, telles que les visionneuses d’images, d’échantillons, à 360° et de supports variés. Découvrez ce qu’est chaque visionneuse de médias enrichis et comment créer chaque type dans Dynamic Media Classic. En savoir plus sur les paramètres prédéfinis d’ensemble par lot, qui automatisent le processus de création de visionneuses de médias riches lors du téléchargement.
+feature: Dynamic Media Classic, Image Sets, Mixed Media Sets, Spin Sets
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 45c86ff2-d991-46a7-a8d1-25c9fec142d9
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1433'
 ht-degree: 2%
 
 ---
 
-
 # Visionneuses d’images, d’échantillons, à 360° et de supports variés {#media-sets}
 
-Au-delà des images uniques pour le dimensionnement et le zoom dynamiques, les collections d’ensembles Dynamic Media Classic offrent une expérience en ligne plus riche. Cette section du tutoriel explique comment créer les visionneuses de médias enrichis suivantes dans Dynamic Media Classic :
+Au-delà des images uniques pour le dimensionnement et le zoom dynamiques, les collections de visionneuses Dynamic Media Classic offrent une expérience en ligne plus riche. Cette section du tutoriel explique comment créer les visionneuses de médias enrichis suivantes dans Dynamic Media Classic :
 
 - Visionneuse d’images
 - Série d’échantillons
@@ -47,8 +46,8 @@ L’URL de la visionneuse d’images ci-dessus peut apparaître comme suit :
 
 ![image](assets/media-sets/image-set-url-1.png)
 
-- En savoir plus sur les visionneuses d’images à l’aide de la section [Démarrage rapide des visionneuses d’images](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
-- Découvrez comment [créer une visionneuse d’images](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
+- En savoir plus sur les visionneuses d’images avec [Démarrage rapide pour les visionneuses d’images](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/quick-start-image-sets.html).
+- Découvrez comment [Création d’une visionneuse d’images](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sets/creating-image-set.html#creating-an-image-set).
 
 ### Série d’échantillons
 
@@ -66,8 +65,8 @@ L’URL de la série d’échantillons ci-dessus peut apparaître comme suit :
 
 ![image](assets/media-sets/image-set_url.png)
 
-- En savoir plus sur les séries d’échantillons avec le [démarrage rapide des séries d’échantillons](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
-- Découvrez comment [créer une série d’échantillons](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
+- En savoir plus sur les séries d’échantillons avec [Démarrage rapide des séries d’échantillons](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/quick-start-swatch-sets.html).
+- Découvrez comment [Création d’une série d’échantillons](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/swatch-sets/creating-swatch-set.html#creating-a-swatch-set).
 
 ### Visionneuse à 360°
 
@@ -83,8 +82,8 @@ L’URL de la visionneuse à 360° ci-dessus peut apparaître comme suit :
 
 ![image](assets/media-sets/spin-set.png)
 
-- En savoir plus sur les visionneuses à 360° avec la balise [Démarrage rapide des visionneuses à 360°](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
-- Découvrez comment [créer une visionneuse à 360°](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
+- En savoir plus sur les visionneuses à 360° avec la méthode [Démarrage rapide pour les visionneuses à 360°](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/quick-start-spin-sets.html).
+- Découvrez comment [Création d’une visionneuse à 360°](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/spin-sets/creating-spin-set.html#creating-a-spin-set).
 
 ## Visionneuse de médias mixtes
 
@@ -98,17 +97,17 @@ L’URL de la visionneuse de médias mixtes ci-dessus peut apparaître comme sui
 
 ![image](assets/media-sets/image-set-url-1.png)
 
-- En savoir plus sur les visionneuses de médias mixtes avec la [mise en route vers les visionneuses de médias mixtes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
+- En savoir plus sur les visionneuses de médias mixtes avec [Démarrage rapide pour les visionneuses de médias mixtes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/quick-start-mixed-media-sets.html).
 
-- Découvrez comment [créer une visionneuse de médias mixtes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
+- Découvrez comment [Création d’une visionneuse de médias mixtes](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/mixed-media-sets/creating-mixed-media-set.html#creating-a-mixed-media-set).
 
-Pour afficher une image pour le zoom, un ensemble ou une vidéo sur votre site web, vous l’appelez dans une &quot;visionneuse&quot; Dynamic Media Classic. Dynamic Media Classic comprend des visionneuses pour les ressources multimédias enrichies telles que les séries d’échantillons, les visionneuses à 360°, la vidéo, etc.
+Pour afficher une image de zoom, une visionneuse ou une vidéo sur votre site web, vous l’appelez dans une &quot;visionneuse&quot; Dynamic Media Classic. Dynamic Media Classic comprend des visionneuses pour les ressources multimédias enrichies telles que les séries d’échantillons, les visionneuses à 360°, la vidéo, etc.
 
-En savoir plus sur [les visionneuses pour AEM Assets et Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=fr).
+En savoir plus sur [Visionneuses pour AEM Assets et Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=fr).
 
 ## Paramètres prédéfinis de lot
 
-Jusqu’à présent, nous avons discuté de la manière de créer manuellement des ensembles à l’aide de la fonction de création de Dynamic Media Classic. Cependant, il est possible d’automatiser la création de visionneuses d’images et de visionneuses à 360° à l’aide d’un paramètre prédéfini d’ensemble par lot tant que vous disposez d’une convention d’affectation de nom normalisée.
+Jusqu’à présent, nous avons discuté de la création manuelle de visionneuses à l’aide de la fonction de création Dynamic Media Classic. Cependant, il est possible d’automatiser la création de visionneuses d’images et de visionneuses à 360° à l’aide d’un paramètre prédéfini d’ensemble par lot tant que vous disposez d’une convention d’affectation de nom normalisée.
 
 Chaque paramètre prédéfini est un ensemble d’instructions indépendant à nom unique qui définit la manière de créer la visionneuse à l’aide d’images qui correspondent aux conventions d’affectation de nom définies. Dans le paramètre prédéfini, vous définissez d’abord des conventions d’affectation de nom pour les ressources que vous souhaitez regrouper dans un ensemble. Un paramètre prédéfini d’ensemble par lot peut ensuite être créé pour référencer ces images.
 
@@ -121,17 +120,17 @@ Une simple convention d’affectation des noms a été proposée plus tôt, qui 
 
 Les paramètres prédéfinis d’ensemble par lot ne sont appliqués qu’au chargement. elles ne peuvent pas être exécutées une fois les images téléchargées. Il est donc important de planifier votre convention d’affectation des noms et de créer un paramètre prédéfini avant de commencer à charger toutes vos images.
 
-Une fois les paramètres prédéfinis créés, l’administrateur de l’entreprise peut choisir s’ils sont principaux ou inactifs. Principal signifie qu’elles s’afficheront sur la page de chargement sous **Options de tâche**, tandis que les paramètres prédéfinis inactifs resteront masqués.
+Une fois les paramètres prédéfinis créés, l’administrateur de l’entreprise peut choisir s’ils sont principaux ou inactifs. Principal signifie qu’ils s’afficheront sur la page de chargement sous **Options de tâche**, tandis que les paramètres prédéfinis inactifs restent masqués.
 
-Découvrez comment [créer un paramètre prédéfini d’ensemble par lot](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
+Découvrez comment [Création d’un paramètre prédéfini d’ensemble par lot](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#creating-a-batch-set-preset).
 
 ### Utilisation de paramètres prédéfinis d’ensemble par lot lors du téléchargement
 
 Voici comment vous utilisez les paramètres prédéfinis d’ensemble par lot lors du chargement après leur création :
 
-1. Cliquez sur **Télécharger** et sélectionnez **Depuis le bureau** ou **via FTP**.
+1. Cliquez sur **Télécharger** et choisissez **À partir du bureau** ou **Via FTP**.
 2. Cliquez sur **Options de tâche**.
-3. Ouvrez l’option **Paramètres prédéfinis d’ensemble par lot** et cochez ou décochez le paramètre prédéfini pour l’utiliser avec le transfert.
+3. Ouvrez le **Paramètres prédéfinis d’ensemble par lot** et cochez ou désélectionnez le paramètre prédéfini à utiliser avec le téléchargement.
 4. Une fois le transfert terminé, recherchez dans votre dossier les visionneuses terminées.
 
-En savoir plus sur les [paramètres prédéfinis d’ensemble par lot](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).
+En savoir plus sur [Paramètres prédéfinis d’ensemble par lot](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#batch-set-presets).

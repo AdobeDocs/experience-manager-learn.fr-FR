@@ -1,7 +1,6 @@
 ---
 title: Présentation vidéo
 description: Dynamic Media Classic s’accompagne d’une conversion automatique de la vidéo au moment du chargement, d’une diffusion vidéo en continu sur les ordinateurs de bureau et les appareils mobiles, ainsi que de visionneuses de vidéos adaptatives optimisées pour la lecture en fonction de l’appareil et de la bande passante. En savoir plus sur la vidéo dans Dynamic Media Classic et obtenir une introduction sur les concepts et la terminologie vidéo. Apprenez ensuite comment charger et coder des vidéos, choisir des paramètres vidéo prédéfinis pour les charger, ajouter ou modifier un paramètre prédéfini vidéo, prévisualiser des vidéos dans une visionneuse, déployer des vidéos sur des sites web et mobiles, ajouter des sous-titres et des marqueurs de chapitre à la vidéo et publier des visionneuses de vidéos sur les utilisateurs de bureau et de mobiles.
-sub-product: dynamic-media
 feature: Dynamic Media Classic, Video Profiles, Viewer Presets
 doc-type: tutorial
 topics: development, authoring, configuring, videos, video-profiles
@@ -11,7 +10,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: dfbf316f-3922-4bc7-b3f3-2a5bbdeb7063
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '6118'
 ht-degree: 1%
@@ -174,7 +173,7 @@ Enfin, si vous vous souciez de la protection de vos médias pour des questions d
 
 Lorsque vous téléchargez une vidéo, vous pouvez choisir parmi un ou plusieurs paramètres prédéfinis qui contiennent les paramètres de conversion de la vidéo originale en un format adapté au web par le biais du codage. Les paramètres vidéo prédéfinis sont disponibles en deux versions : les paramètres vidéo prédéfinis adaptatifs et les paramètres prédéfinis de codage uniques.
 
-Voir [Paramètres vidéo prédéfinis disponibles](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
+Voir [Paramètres vidéo prédéfinis disponibles](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=fr#video-presets-for-encoding-video-files).
 
 Les paramètres prédéfinis de vidéo adaptative sont activés par défaut, ce qui signifie qu’ils sont disponibles pour le codage. Si vous souhaitez utiliser un paramètre prédéfini de codage unique, votre administrateur doit l’activer pour qu’il apparaisse dans la liste des paramètres vidéo prédéfinis.
 
@@ -348,7 +347,7 @@ Exemple :
 
 ### Envoi à des moteurs de recherche
 
-La dernière étape du processus consiste à envoyer vos fichiers et/ou URL aux moteurs de recherche. Dynamic Media Classic ne peut pas effectuer cette étape pour vous ; toutefois, en supposant que vous envoyiez l’URL et non le fichier XML lui-même, votre flux doit être mis à jour la prochaine fois que votre fichier est généré et qu’une publication a lieu.
+La dernière étape du processus consiste à envoyer vos fichiers et/ou URL aux moteurs de recherche. Dynamic Media Classic ne peut pas effectuer cette étape pour vous ; toutefois, en supposant que vous envoyiez l’URL et non le fichier XML proprement dit, votre flux doit être mis à jour la prochaine fois que votre fichier est généré et qu’une publication a lieu.
 
 La méthode d’envoi à votre moteur de recherche varie, mais pour Google, vous utilisez les outils de webmaster Google. Une fois sur place, accédez à **Configuration du site > Plans de site** , puis cliquez sur le bouton **Envoyer un plan de site** bouton . Ici, vous pouvez placer l’URL Dynamic Media Classic dans votre ou vos fichiers d’optimisation pour les moteurs de recherche.
 

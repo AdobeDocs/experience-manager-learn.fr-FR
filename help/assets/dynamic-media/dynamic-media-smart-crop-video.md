@@ -1,7 +1,6 @@
 ---
 title: Utilisation du recadrage intelligent Dynamic Media pour la vidéo
 description: Le recadrage intelligent Dynamic Media pour la vidéo utilise Adobe Sensei pour effectuer un suivi intelligent du point ciblé de la vidéo, en s’assurant que les vidéos sont de meilleure qualité sur toutes les tailles d’écran.
-sub-product: dynamic-media
 feature: Smart Crop, Video Profiles, Viewer Presets
 version: Cloud Service
 kt: 5977
@@ -10,10 +9,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 15eb725c-d6f6-4ab9-8d39-dc05fbba1ff3
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -25,4 +24,4 @@ Le recadrage intelligent Dynamic Media pour la vidéo utilise Adobe Sensei pour 
 
 >[!NOTE]
 >
->La vidéo ci-dessus suppose que votre service AEM s’exécute en mode Dynamic Media S7. [Vous trouverez des instructions sur la configuration d’AEM avec Dynamic Media ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html)
+>La vidéo ci-dessus suppose que votre service AEM s’exécute en mode Dynamic Media S7. [Vous trouverez des instructions sur la configuration d’AEM avec Dynamic Media ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=fr)

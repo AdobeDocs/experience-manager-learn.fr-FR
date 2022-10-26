@@ -1,7 +1,6 @@
 ---
 title: Modèles de page
 description: Découvrez comment créer et modifier des modèles de page. Comprendre la relation entre un modèle de page et une page. Découvrez comment configurer les stratégies d’un modèle de page afin de garantir une gouvernance granulaire et une cohérence de la marque pour le contenu.  Un modèle d’article de magazine bien structuré est créé à partir d’une maquette provenant d’Adobe XD.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 topic: Content Management
@@ -11,7 +10,7 @@ level: Beginner
 kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 2%

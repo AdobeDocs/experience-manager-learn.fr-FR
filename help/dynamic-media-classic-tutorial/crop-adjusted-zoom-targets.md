@@ -1,22 +1,21 @@
 ---
 title: Recadrage, images ajustées et cibles de zoom
 description: L’image principale de Dynamic Media Classic prend en charge la création de versions recadrées distinctes pour chaque image afin d’afficher les détails ou les échantillons sans avoir à créer des versions recadrées distinctes pour chaque image. Découvrez comment recadrer des images dans Dynamic Media Classic et les enregistrer en tant que nouveau fichier maître ou image virtuelle, enregistrer des images modifiées virtuelles et les utiliser à la place des ressources originales, puis créer des cibles de zoom sur vos images pour afficher les détails mis en surbrillance.
-sub-product: dynamic-media
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring
 audience: all
 activity: use
-topic: Gestion de contenu
+topic: Content Management
 role: User
 level: Beginner
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: a1d83c77-a9e4-4ed1-9b00-65fb002164c0
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
-source-wordcount: '2659'
+source-wordcount: '2653'
 ht-degree: 0%
 
 ---
-
 
 # Recadrage, images ajustées et cibles de zoom {#crop-adjusted-zoom-targets}
 
@@ -30,9 +29,9 @@ L’une des principales forces du concept d’image principale de Dynamic Media 
 
 ## Recadrage
 
-Dynamic Media Classic propose quelques outils de retouche d’images, notamment l’outil Recadrer. Pour plusieurs raisons, vous pouvez recadrer votre image principale dans Dynamic Media Classic. Par exemple :
+Dynamic Media Classic dispose de quelques outils de modification d’images, notamment l’outil Recadrage, qui sont désormais disponibles dans l’interface utilisateur. Pour plusieurs raisons, vous pouvez recadrer votre image principale dans Dynamic Media Classic. Par exemple :
 
-- Vous n’avez pas accès au fichier d’origine. Vous souhaitez afficher l’image avec un recadrage ou des proportions différents, mais vous ne disposez pas du fichier d’origine sur votre ordinateur ni ne travaillez depuis votre domicile. Dans ce cas, vous pouvez accéder à Dynamic Media Classic, rechercher l’image, la recadrer et l’enregistrer ou l’enregistrer sous une nouvelle version.
+- Vous n’avez pas accès au fichier d’origine. Vous souhaitez afficher l’image avec un recadrage ou des proportions différents, mais vous ne disposez pas du fichier d’origine sur votre ordinateur ni ne travaillez depuis votre domicile. Dans ce cas, vous pouvez accéder à Dynamic Media Classic, rechercher l’image, la recadrer et l’enregistrer, ou l’enregistrer en tant que nouvelle version.
 - Pour supprimer l’espace blanc excessif. L&#39;image a été photographiée avec trop d&#39;espace blanc, ce qui donne l&#39;impression que le produit est petit. Vous souhaitez que vos images miniatures remplissent la zone de travail autant que possible.
 - Pour créer des images ajustées, des copies virtuelles des images qui ne prennent pas d’espace disque. Certaines entreprises ont des règles de fonctionnement qui les obligent à conserver des copies distinctes de la même image, mais avec un nom différent. Ou peut-être que vous voulez une version recadrée et non recadrée de la même image.
 - Pour créer de nouvelles images à partir d’une image source. Par exemple, vous pouvez créer des échantillons de couleurs ou un détail de l’image principale. Vous pouvez effectuer cette opération dans Adobe Photoshop et charger séparément ou utiliser l’outil Recadrer dans Dynamic Media Classic.
@@ -43,16 +42,16 @@ Dynamic Media Classic propose quelques outils de retouche d’images, notamment 
 
 ### Utilisation de l’outil de recadrage
 
-Vous pouvez accéder à l’outil Recadrage dans Dynamic Media Classic à partir de la page Détails d’une ressource ou en cliquant sur le bouton **Modifier** . Vous pouvez utiliser l’outil pour recadrer de deux manières :
+Vous pouvez accéder à l’outil Recadrer dans Dynamic Media Classic à partir de la page Détails d’une ressource ou en cliquant sur le bouton **Modifier** bouton . Vous pouvez utiliser l’outil pour recadrer de deux manières :
 
-- Mode de recadrage par défaut dans lequel vous faites glisser les poignées de la fenêtre de recadrage ou saisissez des valeurs dans la zone Taille. Découvrez comment effectuer un [recadrage manuel](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
+- Mode de recadrage par défaut dans lequel vous faites glisser les poignées de la fenêtre de recadrage ou saisissez des valeurs dans la zone Taille. Découvrez comment [Recadrage manuel](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#select-an-area-to-crop).
 - Rogner. Utilisez cette option pour supprimer des espaces blancs supplémentaires autour de votre image en calculant le nombre de pixels qui ne correspondent pas à votre image. Découvrez comment [Recadrer par rognage](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/cropping-image.html#crop-to-remove-white-space-around-an-image).
 
 ### _Recadrage manuel_
 
 Lorsque vous enregistrez une version recadrée manuellement, il s’affiche que l’image est recadrée en permanence ; Dynamic Media Classic masque en fait les pixels en ajoutant un modificateur d’URL interne pour recadrer l’image. Lorsque vous publiez, il apparaît à tous que l’image est recadrée. Vous pouvez toutefois revenir à l’éditeur de recadrage et supprimer le recadrage ultérieurement.
 
-Vous pouvez ensuite choisir d’enregistrer en tant que nouvelle image de Principal ou en tant que vue supplémentaire du gabarit. Un nouveau gabarit est un nouveau fichier physique (tel qu’un fichier TIFF ou JPEG) qui occupe de l’espace de stockage. Une vue supplémentaire est une image virtuelle qui ne prend pas d’espace serveur. Nous vous déconseillons de choisir Remplacer l’original, car cela remplacera votre gabarit et rendra le recadrage permanent. Si vous enregistrez en tant que nouveau gabarit ou vue supplémentaire, vous devez choisir un nouvel ID de ressource. Comme les autres identifiants de ressource, ce nom doit être unique dans Dynamic Media Classic.
+Vous pouvez ensuite choisir d’enregistrer en tant que nouvelle image de Principal ou en tant que vue supplémentaire du gabarit. Un nouveau gabarit est un nouveau fichier physique (comme un TIFF ou un JPEG) qui occupe de l’espace de stockage. Une vue supplémentaire est une image virtuelle qui ne prend pas d’espace serveur. Nous vous déconseillons de choisir Remplacer l’original, car cela remplacera votre gabarit et rendra le recadrage permanent. Si vous enregistrez en tant que nouveau gabarit ou vue supplémentaire, vous devez choisir un nouvel ID de ressource. Comme les autres identifiants de ressource, il doit s’agir d’un nom unique dans Dynamic Media Classic.
 
 ### _Rognage_
 
@@ -66,19 +65,19 @@ L’image à droite devient beaucoup plus visible en supprimant l’espace suppl
 
 >[!NOTE]
 >
->Rogner ne crée pas de transparence autour de l’image. Pour ce faire, vous devez incorporer un chemin de détourage dans l’image et utiliser l’option de téléchargement **Créer un masque à partir du chemin du clip**.
+>Rogner ne crée pas de transparence autour de l’image. Pour ce faire, vous devez incorporer un chemin de détourage dans l’image et utiliser la variable **Création d’un masque à partir du chemin d’accès au clip** option de téléchargement.
 >
->En outre, pour restaurer l’état d’origine d’une image après l’avoir recadrée lorsque vous avez utilisé l’option **Enregistrer**, affichez l’image dans l’écran Éditeur de recadrage et sélectionnez le bouton **Réinitialiser** .
+>En outre, pour restaurer une image à son état d’origine après l’avoir recadrée lorsque vous avez utilisé la fonction **Enregistrer** , affichez l’image dans l’écran de l’éditeur de recadrage et sélectionnez l’option **Réinitialiser** bouton .
 
 ### _Recadrage lors du téléchargement_
 
-Comme mentionné précédemment, vous pouvez également choisir de recadrer les images au fur et à mesure de leur téléchargement. Pour utiliser le recadrage de rognage lors du chargement, cliquez sur le bouton **Options de tâche**, puis, sous Options de recadrage, sélectionnez **Rogner**.
+Comme mentionné précédemment, vous pouvez également choisir de recadrer les images au fur et à mesure de leur téléchargement. Pour utiliser le recadrage de rognage au moment du chargement, cliquez sur le bouton **Options de tâche** et sous Options de recadrage, choisissez **Rogner**.
 
 Dynamic Media Classic se souviendra de cette option pour le prochain chargement. Même si vous souhaitez peut-être qu’il recadre les images pour ce transfert, il est préférable de ne pas les recadrer pour chaque téléchargement. Une autre option consiste à définir une tâche de téléchargement FTP planifiée spéciale et à y placer les options de recadrage. Ainsi, vous n’exécuteriez la tâche que lorsque vous avez besoin de recadrer vos images.
 
 >[!IMPORTANT]
 >
->Si vous définissez un recadrage pour votre chargement, Dynamic Media Classic place un cookie pour mémoriser ce paramètre la prochaine fois. Pour respecter les bonnes pratiques, cliquez sur le bouton **Réinitialiser les valeurs par défaut de la société** avant votre prochain chargement pour effacer toutes les options de recadrage qui restent à la fin du dernier chargement ; sinon, vous pourriez accidentellement recadrer le lot d’images suivant.
+>Si vous définissez un recadrage pour votre transfert, Dynamic Media Classic place un cookie pour mémoriser ce paramètre la prochaine fois. Pour respecter les bonnes pratiques, cliquez sur le bouton **Réinitialisation des valeurs par défaut de l’entreprise** avant votre prochain chargement afin d’effacer toutes les options de recadrage qui s’affichent à partir du dernier chargement ; sinon, vous pourriez accidentellement recadrer le lot d’images suivant.
 
 ### Recadrage par URL
 
@@ -86,8 +85,8 @@ Bien que cela ne soit pas évident dans Dynamic Media Classic, vous pouvez égal
 
 Chaque fois que vous utilisez l’outil Recadrage, les valeurs de l’URL s’affichent dans le champ en bas. Vous pouvez prendre ces valeurs et les appliquer directement à une image en tant que modificateurs d’URL.
 
-![](assets/crop-adjusted-zoom-targets/cropping-by-url.png)
-_modificateurs de commande imageCrop au bas de l’éditeur de recadrage_
+![image](assets/crop-adjusted-zoom-targets/cropping-by-url.png)
+_Modificateurs de commande de recadrage au bas de l’éditeur de recadrage_
 
 ![image](assets/crop-adjusted-zoom-targets/uncropped-cropped.png)
 
@@ -97,22 +96,22 @@ La taille devant être calculée par image lorsque vous utilisez le recadrage pa
 
 Les paramètres d’image prédéfinis comportent un champ dans lequel vous pouvez ajouter des commandes de diffusion d’images supplémentaires. Pour ajouter le même recadrage que ci-dessus à votre paramètre d’image prédéfini, modifiez-le, collez ou saisissez les valeurs dans le champ Modificateurs d’URL, puis enregistrez et publiez.
 
-![](assets/crop-adjusted-zoom-targets/cropping-in-image-preset.jpg)
-_imageAjoutez des commandes de recadrage (ou toute commande) aux modificateurs d’URL du paramètre d’image prédéfini._
+![image](assets/crop-adjusted-zoom-targets/cropping-in-image-preset.jpg)
+_Ajoutez des commandes de recadrage (ou toute commande) aux modificateurs d’URL du paramètre d’image prédéfini._
 
 Le recadrage fait désormais partie de ce paramètre d’image prédéfini et est appliqué automatiquement chaque fois qu’il est utilisé. Bien sûr, cette méthode dépend de toutes les images nécessitant la même quantité de recadrage. Si toutes vos images ne sont pas tournées de la même manière, cette méthode ne fonctionnera pas pour vous.
 
 ## Images ajustées
 
-Lorsque vous utilisez l’outil Recadrage, vous avez la possibilité de **Enregistrer comme vue supplémentaire du Principal**. Une fois enregistré, cela crée un nouveau type de ressource Dynamic Media Classic : une image ajustée. Une image ajustée, aussi appelée dérivée, est une image virtuelle. Ce n&#39;est pas du tout une image ; il s’agit d’une référence de base de données (comme un alias ou un raccourci) vers l’image maître physique.
+Lorsque vous utilisez l’outil Recadrage, vous avez la possibilité de **Enregistrer comme vue supplémentaire du Principal**. Une fois enregistré, il crée un nouveau type de ressource Dynamic Media Classic : une image ajustée. Une image ajustée, aussi appelée dérivée, est une image virtuelle. Ce n&#39;est pas du tout une image ; il s’agit d’une référence de base de données (comme un alias ou un raccourci) vers l’image maître physique.
 
-### L&#39;image réelle se tiendra-t-elle `?`
+### La vraie image va-t-elle se lever ?`?`
 
 Pouvez-vous dire lequel est le gabarit, et lequel est l’image ajustée ?
 
 ![image](assets/crop-adjusted-zoom-targets/real-image-stand-up.png)
 
-Vous ne devriez pas être en mesure de le savoir sans avoir regardé dans Dynamic Media Classic et vu le type de ressource &quot;Image ajustée&quot; pour SBR_MAIN2.
+Vous ne devriez pas être en mesure de le savoir sans avoir consulté Dynamic Media Classic et vu le type de ressource &quot;Image ajustée&quot; pour SBR_MAIN2.
 
 Une image ajustée n’utilise pas d’espace disque, car elle n’existe que sous forme d’élément de ligne dans la base de données. Il est également lié de manière permanente à la ressource d’origine ; si l’original est supprimé, l’image ajustée est également supprimée. Il peut se composer d’une image entière non recadrée ou d’une partie seulement d’une image (recadrage).
 
@@ -120,14 +119,14 @@ Une image ajustée n’utilise pas d’espace disque, car elle n’existe que so
 
 Vous créez généralement des images ajustées à l’aide de l’outil Recadrage ; toutefois, ils peuvent également être créés avec d’autres éditeurs d’image : les outils Ajuster et Accentuer .
 
-Les images ajustées nécessitent un identifiant de ressource unique. Une fois publiées (vous devez publier comme toute autre ressource), elles agissent comme toute autre image et sont appelées sur une URL par leur identifiant de ressource. Sur la page Détails, vous pouvez afficher les images ajustées associées à une image originale sous l’onglet **Créé et dérivés**.
+Les images ajustées nécessitent un identifiant de ressource unique. Une fois publiées (vous devez publier comme toute autre ressource), elles agissent comme toute autre image et sont appelées sur une URL par leur identifiant de ressource. Sur la page Détails, vous pouvez afficher les images ajustées associées à une image originale sous la propriété **Conçus et dérivés** .
 
-![](assets/crop-adjusted-zoom-targets/derivatives.jpg)
-_imagesAdjusted Views pour l’image principale ASIAN_BR_MAIN_
+![image](assets/crop-adjusted-zoom-targets/derivatives.jpg)
+_Ajustements des vues pour l’image principale ASIAN_BR_MAIN_
 
 ## Cibles de zoom
 
-Les cibles de zoom figurent également dans le menu **Modifier** et la page **Détails** d’une image. Ils vous permettent de définir des &quot;zones réactives&quot; pour mettre en évidence des fonctionnalités de marchandisage spécifiques d’une image de zoom. Au lieu de créer des images distinctes en recadrant un grand gabarit, la visionneuse de zoom peut afficher les détails au-dessus de l’image, ainsi qu’un libellé court que vous créez.
+Les cibles de zoom se trouvent également sur la page **Modifier** et **Détails** d’une image. Ils vous permettent de définir des &quot;zones réactives&quot; pour mettre en évidence des fonctionnalités de marchandisage spécifiques d’une image de zoom. Au lieu de créer des images distinctes en recadrant un grand gabarit, la visionneuse de zoom peut afficher les détails au-dessus de l’image, ainsi qu’un libellé court que vous créez.
 
 ![image](assets/crop-adjusted-zoom-targets/arm-with-watch.jpg)
 
@@ -137,7 +136,7 @@ Le processus est très simple : cliquez sur la fonction, donnez-lui un nom expli
 
 Le choix de la visionneuse est un autre facteur permettant de décider si vous souhaitez utiliser les cibles de zoom. Tous les types de visionneuses ne peuvent pas afficher de cibles de zoom (par exemple, la visionneuse de visionneuse de fenêtre déroulante ne les prend pas en charge).
 
-Découvrez comment [Créer des cibles de zoom](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
+Découvrez comment [Création de cibles de zoom](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/zoom/creating-zoom-targets-guided-zoom.html#creating-and-editing-zoom-targets).
 
 ![image](assets/crop-adjusted-zoom-targets/zoom-targets.jpg)
 
@@ -145,7 +144,7 @@ Découvrez comment [Créer des cibles de zoom](https://experienceleague.adobe.co
 
 Voici le workflow de création de cibles dans Dynamic Media Classic.
 
-1. Recherchez votre image, cliquez sur le bouton **Modifier**, puis sélectionnez **Cibles de zoom**.
+1. Naviguez jusqu’à votre image, puis cliquez sur le bouton **Modifier** et choisissez **Cibles de zoom**.
 2. L’éditeur de cible de zoom se charge. Vous verrez votre image au milieu, certains boutons en haut et un panneau cible vide à droite. En bas à gauche, un paramètre prédéfini de visionneuse est sélectionné. La valeur par défaut est &quot;Zoom1-Guided&quot;.
 3. Déplacez la zone rouge avec la souris et cliquez pour créer une nouvelle cible.
 
@@ -153,7 +152,7 @@ Voici le workflow de création de cibles dans Dynamic Media Classic.
    - La taille cible est déterminée par la taille d’affichage dans le paramètre prédéfini de la visionneuse. Cela détermine la taille de l’image de zoom principale. Voir _Définition de la taille d’affichage_, ci-dessous.
 
 4. Vous verrez la cible que vous venez de créer devenir bleue, et sur la droite vous verrez une version miniature de cette cible, ainsi que le nom par défaut &quot;target-0&quot;.
-5. Pour renommer votre cible, cliquez sur sa miniature, saisissez un nouveau **Nom**, puis cliquez sur **Saisissez** ou **Onglet** — si vous cliquez tout simplement sur Supprimer, votre nom ne sera pas enregistré.
+5. Pour renommer votre cible, cliquez sur sa miniature, puis saisissez une nouvelle **Nom**, puis cliquez sur **Entrée** ou **Onglet** — si vous cliquez tout simplement, votre nom ne sera pas enregistré.
 6. Lorsque la cible est sélectionnée, la zone est entourée de lignes de tirets verts que vous pouvez redimensionner et déplacer. Faites glisser les coins à redimensionner ou faites glisser la zone cible pour la déplacer.
 
    - L’image sera alors chargée dans la visionneuse de zoom personnalisée par défaut. Assurez-vous que le paramètre prédéfini de la visionneuse prend en charge les cibles de zoom. En règle générale, tous les paramètres prédéfinis standard qui comportent le mot &quot;-guidés&quot; ont été conçus pour être utilisés avec les cibles de zoom. Pour utiliser les cibles, passez la souris sur la miniature de la cible (ou icône de zone réactive) pour afficher le libellé, puis cliquez dessus pour afficher le zoom de la visionneuse sur cette fonction.
@@ -161,9 +160,9 @@ Voici le workflow de création de cibles dans Dynamic Media Classic.
 
       ![image](assets/crop-adjusted-zoom-targets/zoom-target-green-box.jpg)
 
-7. En outre, si vous devez supprimer une cible, sélectionnez-la en cliquant sur sa miniature, puis appuyez sur le bouton **Supprimer la cible** ou appuyez sur la touche DELETE de votre clavier.
+7. En outre, si vous devez supprimer une cible, sélectionnez-la en cliquant sur sa miniature, puis appuyez sur la touche **Supprimer la cible** ou appuyez sur la touche DELETE de votre clavier.
 8. Continuez à cliquer sur pour ajouter de nouvelles cibles, renommer et/ou redimensionner après l’ajout.
-9. Une fois que vous avez terminé, cliquez sur le bouton **Enregistrer**, puis sur **Aperçu**.
+9. Une fois que vous avez terminé, cliquez sur l’icône **Enregistrer** puis **Aperçu**.
 
 ### Définition de la taille d’affichage dans le paramètre prédéfini de la visionneuse de zoom
 
@@ -183,7 +182,7 @@ Vous pouvez voir que le paramètre prédéfini intégré a une taille de 900 x 5
 
 Pour définir la taille de l’affichage, créez ou modifiez un paramètre prédéfini de visionneuse qui prend en charge les cibles de zoom.
 
-1. Dans le paramètre prédéfini de la visionneuse, sélectionnez l’option **Paramètres de zoom** .
+1. Dans le paramètre prédéfini de la visionneuse, accédez au **Paramètres de zoom** .
 2. Définissez une Largeur et une Hauteur.
 3. Enregistrez le paramètre prédéfini, puis fermez-le. Si vous souhaitez utiliser ce paramètre prédéfini sur votre site actif, vous devrez également le publier ultérieurement.
 4. Accédez à l’outil Cible de zoom et sélectionnez le paramètre prédéfini que vous avez modifié en bas à gauche. La nouvelle taille d’affichage apparaît immédiatement dans vos cibles.

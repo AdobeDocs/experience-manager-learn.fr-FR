@@ -1,7 +1,6 @@
 ---
 title: Prise en main de l’Éditeur AEM SPA et de React
 description: Créez votre première application sur une seule page (SPA) React modifiable dans Adobe Experience Manager (AEM) avec la SPA WKND. Découvrez comment créer une SPA à l’aide du framework React JS avec lʼéditeur de SPA dʼAEM. Ce tutoriel en plusieurs parties décrit lʼimplémentation d’une application React pour une marque de style de vie fictive, WKND. Le tutoriel couvre la création de bout en bout de la SPA et lʼintégration à AEM.
-sub-product: sites
 topics: development
 version: Cloud Service
 doc-type: tutorial
@@ -14,7 +13,8 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 38802296-8988-4300-a04a-fcbbe98ac810
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+last-substantial-update: 2022-08-25T00:00:00Z
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 33%

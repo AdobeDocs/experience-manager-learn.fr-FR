@@ -1,7 +1,6 @@
 ---
 title: Test unitaire
 description: Mettez en oeuvre un test unitaire qui valide le comportement du modèle Sling du composant Byline, créé dans le tutoriel Composant personnalisé .
-sub-product: sites
 version: 6.5, Cloud Service
 type: Tutorial
 feature: APIs, AEM Project Archetype
@@ -12,7 +11,7 @@ kt: 4089
 mini-toc-levels: 1
 thumbnail: 30207.jpg
 exl-id: b926c35e-64ad-4507-8b39-4eb97a67edda
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '3014'
 ht-degree: 0%
@@ -78,7 +77,7 @@ Nous utilisons AEM bonnes pratiques et employons les éléments suivants :
 
 ## Test unitaire et Adobe de Cloud Manager {#unit-testing-and-adobe-cloud-manager}
 
-[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) intègre l’exécution de test unitaire et [rapport de couverture du code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) dans son pipeline CI/CD pour favoriser et promouvoir les bonnes pratiques en matière de AEM de test d’unité.
+[Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) intègre l’exécution de test unitaire et [rapport de couverture du code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html#code-quality-testing) dans son pipeline CI/CD afin d’encourager et de promouvoir les bonnes pratiques en matière de AEM de test d’unité.
 
 Bien que le code de test unitaire soit une bonne pratique pour n’importe quelle base de code, il est important, lors de l’utilisation de Cloud Manager, de tirer parti de ses fonctionnalités de test de qualité du code et de création de rapports en fournissant des tests unitaires pour que Cloud Manager s’exécute.
 

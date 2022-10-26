@@ -1,7 +1,6 @@
 ---
 title: Prise en main d’AEM Sites | Création AEM site rapide
 description: Découvrez comment utiliser une approche à code faible pour créer votre premier site dans Adobe Experience Manager avec la création rapide de site et un modèle de site prédéfini. Utilisez des composants et des modèles d’usine pour mettre rapidement un site en service. Utilisez un workflow de thème piloté par Adobe XD pour appliquer des styles et des personnalisations spécifiques à la marque avec uniquement des feuilles CSS et JavaScript. Il est recommandé de créer des projets et des développeurs.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 topic: Content Management
@@ -11,7 +10,7 @@ level: Beginner
 kt: 7985
 thumbnail: 333477.jpg
 exl-id: a55c1dda-f74a-4914-aa1b-c4de8ad1253e
-source-git-commit: 04096fe3c99cdcce2d43b2b29899c2bbe37ac056
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 3%

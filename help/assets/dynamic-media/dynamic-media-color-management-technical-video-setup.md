@@ -1,17 +1,16 @@
 ---
 title: Explication de la gestion des couleurs avec AEM Dynamic Media
 description: Dans cette vidéo, nous examinons la gestion des couleurs de Dynamic Media et comment elle peut être utilisée pour fournir des fonctionnalités d’aperçu de la correction des couleurs dans pour AEM Assets.
-sub-product: dynamic-media
 feature: Image Profiles, Video Profiles
 version: 6.4, 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '319'
-ht-degree: 26%
+ht-degree: 58%
 
 ---
 
@@ -91,37 +90,37 @@ Voici le modèle XML du noeud de configuration de la gestion des couleurs. Ce mo
 | ------------------- | ---------- | ------------------------------------- |
 | AdobeRGB | RVB | Adobe RGB (1998) |
 | AppleRGB | RVB | Apple RGB |
-| CIERGB | RVB | RGB CIE |
-| CoatedFogra27 | CMJN | FOGRA27 (ISO 12647-2:2004) enrobé |
-| CoatedFogra39 | CMJN | FOGRA39 (ISO 12647-2:2004) enrobé |
+| CIERGB | RVB | CIE RGB |
+| CoatedFogra27 | CMJN | Coated FOGRA27 (ISO 12647-2:2004) |
+| CoatedFogra39 | CMJN | Coated FOGRA39 (ISO 12647-2:2004) |
 | CoatedGraCol | CMJN | Coated GRACoL 2006 (ISO 12647-2:2004) |
 | ColorMatchRGB | RVB | RGB ColorMatch |
 | EuropeISOCoated | CMJN | Europe ISO Coated FOGRA27 |
 | EuroscaleCoated | CMJN | Euroscale Coated v2 |
-| EuroscaleUncoul | CMJN | Euroscale Uncoute v2 |
+| EuroscaleUncoated | CMJN | Euroscale Uncoute v2 |
 | JapanColorCoated | CMJN | Japan Color 2001 Coated |
-| JapanColorNewspaper | CMJN | Journal Japan Color 2002 |
-| JapanColorUnfill | CMJN | Japan Color 2001 Unfill |
+| JapanColorNewspaper | CMJN | Japan Color 2002 Newspaper |
+| JapanColorUncoated | CMJN | Japan Color 2001 Uncoated |
 | JapanColorWebCoated | CMJN | Japan Color 2003 Web Coated |
 | JapanWebCoated | CMJN | Japan Web Coated (Ad) |
-| NewsprintSNA2007 | CMJN | Journal des États-Unis (SNA 2007) |
+| NewsprintSNAP2007 | CMJN | US Newsprint (SNAP 2007) |
 | NTSC | RVB | NTSC (1953) |
 | PAL | RVB | PAL/SECAM |
 | ProPhoto | RVB | ProPhoto RGB |
-| PS4Default | CMJN | Photoshop 4 CMJN par défaut |
-| PS5Default | CMJN | Photoshop 5 CMJN par défaut |
+| PS4Default | CMJN | Photoshop 4 Default CMYK |
+| PS5Default | CMJN | Photoshop 5 Default CMYK |
 | SheetfedCoated | CMJN | U.S. Sheetfed Coated v2 |
-| SheetfedUnPAW | CMJN | U.S. Sheetfed Non Couché v2 |
+| SheetfedUncoated | CMJN | U.S. Sheetfed Uncoated v2 |
 | SMPTE | RVB | SMPTE-C |
-| sRVB | sRVB RGB | IEC61966-2.1 |
-| UncondamnésFogra29 | CMJN | FOGRA29 non couché (ISO 12647-2:2004) |
+| sRVB | RVB sRVB | IEC61966-2.1 |
+| UncoatedFogra29 | CMJN | Uncoated FOGRA29 (ISO 12647-2:2004) |
 | WebCoated | CMJN | U.S. Web Coated (SWOP) v2 |
-| WebCoatedFogra28 | CMJN | FOGRA Web Coated 28 (ISO 12647-2:2004) |
-| WebCoatedClass3 | CMJN | Document SWOP 2006 de qualité 3 sur support Web |
-| WebCoatedClass5 | CMJN | Papier de qualité 5 SWOP 2006 à couverture Web |
-| WebUnCouché | CMJN | U.S. Web Non couché v2 |
-| WideGamutRGB | RVB | RGB Gamme large |
+| WebCoatedFogra28 | CMJN | Web Coated FOGRA28 (ISO 12647-2:2004) |
+| WebCoatedGrade3 | CMJN | Web Coated SWOP 2006 Grade 3 Paper |
+| WebCoatedGrade5 | CMJN | Web Coated SWOP 2006 Grade 5 Paper |
+| WebUncoated | CMJN | U.S. Web Uncoated v2 |
+| WideGamutRGB | RVB | Wide Gamut RGB |
 
 ## Ressources supplémentaires{#additional-resources}
 
-* [Configuration de la gestion des couleurs Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Configuration de la gestion des couleurs Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)

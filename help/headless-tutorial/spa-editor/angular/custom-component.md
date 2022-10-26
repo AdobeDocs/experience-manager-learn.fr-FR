@@ -1,7 +1,6 @@
 ---
 title: Création d’un composant personnalisé | Prise en main de l’éditeur et de l’Angular de SPA d’AEM
 description: Découvrez comment créer un composant personnalisé à utiliser avec l’éditeur SPA d’AEM. Découvrez comment développer des boîtes de dialogue de création et des modèles Sling pour étendre le modèle JSON afin de renseigner un composant personnalisé.
-sub-product: sites
 feature: SPA Editor
 doc-type: tutorial
 topics: development
@@ -14,7 +13,7 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 3%

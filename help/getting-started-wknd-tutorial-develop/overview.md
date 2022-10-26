@@ -1,7 +1,6 @@
 ---
 title: Prise en main du tutoriel AEM Sites - WKND
 description: Découvrez comment mettre en oeuvre un site AEM pour une marque de style de vie fictive appelée WKND. Découvrez les sujets Experience Manager fondamentaux tels que la configuration de projet, les archétypes maven, les composants principaux, les modèles modifiables, les bibliothèques clientes et le développement de composants.
-sub-product: sites
 topics: development
 version: Cloud Service
 activity: develop
@@ -16,7 +15,7 @@ role: Developer
 level: Beginner
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 72abe1cddcf6a012403887203d38509bde8f2d23
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 3%

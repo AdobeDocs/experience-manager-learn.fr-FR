@@ -1,7 +1,6 @@
 ---
 title: Présentation de la création et de la publication | Création AEM site rapide
 description: Utilisez l’éditeur de page d’Adobe Experience Manager AEM pour mettre à jour le contenu du site web. Découvrez comment les composants sont utilisés pour faciliter la création. Comprenez la différence entre les environnements d’auteur et de publication AEM et découvrez comment publier les modifications sur le site en direct.
-sub-product: sites
 version: Cloud Service
 type: Tutorial
 topic: Content Management
@@ -11,7 +10,7 @@ level: Beginner
 kt: 7497
 thumbnail: KT-7497.jpg
 exl-id: 17ca57d1-2b9a-409c-b083-398d38cd6a19
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 4%
