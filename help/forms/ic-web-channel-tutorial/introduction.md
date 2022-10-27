@@ -13,7 +13,8 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 65b1af30-9e22-4df0-ab91-479d5406df61
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 3%
@@ -24,7 +25,7 @@ ht-degree: 3%
 
 Les communications interactives sont une nouveauté dans AEM Forms 6.4. Ce document vous guide tout au long des étapes nécessaires à la création d’une communication interactive pour le canal d’impression.
 
-## Prérequis {#prerequistes}
+## Conditions préalables {#prerequistes}
 
 [Téléchargez et importez la ressource associée à ce tutoriel dans AEM à l’aide du gestionnaire de packages.](assets/gettingstartedassets.zip). Ce fichier zip contient des images et des fragments de document utilisés dans ce tutoriel.
 

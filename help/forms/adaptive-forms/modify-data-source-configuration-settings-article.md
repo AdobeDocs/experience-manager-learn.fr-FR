@@ -1,18 +1,19 @@
 ---
 title: Modifier les paramètres de configuration de la source de données
 description: Modifiez le nom d’hôte et d’autres paramètres dans Paramètres de configuration de la source de données.
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 6c63787c-e511-4764-9a03-2c85c394bcc0
+last-substantial-update: 2019-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 2%
+source-wordcount: '139'
+ht-degree: 0%
 
 ---
-
 
 # Possibilité de modifier les paramètres de configuration de la source de données{#ability-to-modify-data-source-configuration-settings}
 
@@ -24,7 +25,6 @@ Les captures d’écran ci-dessous présentent les paramètres de configuration 
 
 **Configuration de la source de données dans AEM 6.4**
 
-![64Configuration ](assets/64release.gif)
-**de source de donnéesConfiguration de source de données modifiable dans AEM 6.5 et versions ultérieures**
-![65Configuration de source de données](assets/modifiabledatasource.jfif)
-
+![64Configuration de la source de données](assets/64release.gif)
+**Configuration de source de données modifiable dans AEM 6.5 et versions ultérieures**
+![65Configuration de la source de données](assets/modifiabledatasource.jfif)

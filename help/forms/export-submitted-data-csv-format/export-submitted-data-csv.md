@@ -10,14 +10,15 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 6cd892e4-82c5-4201-8b6a-40c2ae71afa9
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 1%
 
 ---
 
-# Présentation
+# Présentation 
 
 Les clients souhaitent généralement exporter les données de formulaire envoyées au format CSV. Cet article décrit les étapes à suivre pour exporter les données de formulaire au format CSV. Cet article suppose que les envois de formulaire sont stockés dans la table SGBDR. La capture d’écran suivante présente la structure de tableau minimale requise pour stocker les envois de formulaire.
 

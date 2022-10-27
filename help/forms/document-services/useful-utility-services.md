@@ -1,18 +1,19 @@
 ---
 title: Services d’utilité utiles
 description: Quelques services utiles pour les développeurs AEM Forms
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: add06b73-18bb-4963-b91f-d8e1eb144842
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 4%
+source-wordcount: '155'
+ht-degree: 2%
 
 ---
-
 
 # Services d’utilité utiles
 
@@ -45,11 +46,10 @@ com.adobe.aemfd.docmanager.Document xmlStringDoc = aemFormsUtilities.orgw3cDocum
 aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ```
 
-## Prérequis
+## Conditions préalables
 
 
-Vous devez déployer [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) et démarrer le lot.
+Vous devez déployer [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) et démarrez le lot.
 
 
-Si vous souhaitez enregistrer des documents dans le référentiel CRX à l’aide de ce service utilitaire, suivez l’ [article concernant le développement avec l’utilisateur de service](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Assurez-vous de fournir les [autorisations requises](http://localhost:4502/useradmin) sur les dossiers CRX appropriés à l’utilisateur du service fd.
-
+Si vous souhaitez enregistrer des documents dans le référentiel CRX à l’aide de ce service utilitaire, veuillez suivre le [développement avec un article utilisateur de service](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en#adaptive-forms). Veillez à fournir la variable [autorisations requises](http://localhost:4502/useradmin) sur les dossiers CRX appropriés à l’utilisateur du service fd.

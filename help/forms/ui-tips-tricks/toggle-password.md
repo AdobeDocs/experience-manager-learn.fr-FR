@@ -8,7 +8,9 @@ topic: Development
 role: Developer
 level: Beginner
 kt: 9270
-source-git-commit: 9529b1f6d1a863fc570822c8ecd6c4be01b36729
+exl-id: 13b9cd28-2797-4da9-a300-218e208cd21b
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 8%
@@ -70,5 +72,3 @@ Le CSS suivant a été utilisé pour positionner la variable **oeil** dans le ch
 * Importez la bibliothèque cliente à l’aide de la méthode [interface utilisateur du gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp)
 * Importez l’exemple de formulaire à l’aide du [Forms et document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * [Prévisualiser le formulaire](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
-
-

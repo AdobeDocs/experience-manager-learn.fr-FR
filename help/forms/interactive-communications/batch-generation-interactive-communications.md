@@ -1,26 +1,27 @@
 ---
 title: Utilisation de l’API de lot pour générer des documents de communication interactive
 description: Exemples de ressources pour générer des documents de canal d’impression à l’aide de l’API de lot
-feature: Communication interactive
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 7200601c1b59bef5b1546a100589c757f25bf365
+exl-id: 2cdf37e6-42ad-469a-a6e4-a693ab2ca908
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 7%
+source-wordcount: '414'
+ht-degree: 20%
 
 ---
 
-
 # API de lot
 
-Vous pouvez utiliser l’API Batch pour produire plusieurs communications interactives à partir d’un modèle. Le modèle est une communication interactive sans données. L’API Batch combine des données à un modèle afin de produire une communication interactive. L’API est utile pour la production en masse de communications interactives. Par exemple, les factures de téléphone, les relevés de carte de crédit pour plusieurs clients.
+Vous pouvez utiliser l’API Batch pour générer plusieurs communications interactives à partir d’un modèle. Le modèle consiste en une communication interactive sans données. L’API Batch combine des données avec un modèle pour créer une communication interactive. L’API est utile pour la production en masse de communications interactives. Par exemple, les factures de téléphone ou les relevés de cartes de crédit pour plusieurs clients.
 
 [En savoir plus sur l’API de génération de lots](https://experienceleague.adobe.com/docs/experience-manager-65/forms/interactive-communications/generate-multiple-interactive-communication-using-batch-api.html)
 
@@ -28,8 +29,8 @@ Cet article fournit des exemples de ressources pour générer des documents de c
 
 ## Génération de lots à l’aide du dossier de contrôle
 
-* Importez le [modèle de communication interactive](assets/Beneficiaries-confirmation.zip) dans votre serveur AEM Forms.
-* Importez la [configuration du dossier de contrôle](assets/batch-generation-api.zip). Cela crée un dossier appelé `batchAPI` dans votre lecteur C.
+* Importez la variable [Modèle de communication interactive](assets/Beneficiaries-confirmation.zip) dans votre serveur AEM Forms.
+* Importez la variable [configuration du dossier de contrôle](assets/batch-generation-api.zip). Cela crée un dossier appelé `batchAPI` dans votre lecteur C.
 
 **Si vous exécutez AEM Forms sur un système d’exploitation autre que Windows, procédez comme suit :**
 
@@ -37,16 +38,16 @@ Cet article fournit des exemples de ressources pour générer des documents de c
 2. Sélectionnez BatchAPIWatchedFolder et cliquez sur Modifier.
 3. Modifiez le chemin pour qu’il corresponde à votre système d’exploitation.
 
-![path](assets/watched-folder-batch-api-basic.PNG)
+![le chemin](assets/watched-folder-batch-api-basic.PNG)
 
-* Téléchargez et extrayez le contenu du [fichier zip](assets/jsonfile.zip). Le fichier zip contient le dossier `jsonfile` qui contient le fichier `beneficiaries.json`. Ce fichier contient les données pour générer 3 documents.
+* Télécharger et extraire le contenu de [fichier zip](assets/jsonfile.zip). Le fichier zip contient le dossier nommé `jsonfile` qui contient `beneficiaries.json` fichier . Ce fichier contient les données pour générer 3 documents.
 
-* Déposez le dossier `jsonfile` dans le dossier input de votre dossier de contrôle.
+* Déposez le `jsonfile` dans le dossier input de votre dossier de contrôle.
 * Une fois le dossier sélectionné pour traitement, vérifiez le dossier result de votre dossier de contrôle. 3 fichiers PDF devraient être générés.
 
 ## Génération de lots à l’aide de requêtes REST
 
-Vous pouvez appeler l’[API de lot](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/index.html) par le biais de requêtes REST. Vous pouvez exposer les points de fin REST pour que d’autres applications appellent l’API pour générer des documents.
+Vous pouvez appeler le [API de lot](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/index.html) par le biais de requêtes REST. Vous pouvez exposer les points de fin REST pour que d’autres applications appellent l’API pour générer des documents.
 Les exemples de ressources fournis exposent le point de terminaison REST pour générer des documents de communication interactive. Le servlet accepte les paramètres suivants :
 
 * fileName : emplacement du fichier de données sur le système de fichiers.
@@ -60,8 +61,8 @@ La capture d’écran suivante montre les paramètres et leurs valeurs.
 
 ## Déploiement d’exemples de ressources sur votre serveur
 
-* Importez [ICTemplate](assets/ICTemplate.zip) à l’aide de [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp)
-* Importez [Gestionnaire d’envoi personnalisé](assets/BatchAPICustomSubmit.zip) à l’aide de [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp)
-* Importez [Formulaire adaptatif](assets/BatchGenerationAPIAF.zip) à l’aide de l’[interface Forms et Document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Déployez et démarrez [Groupe OSGI personnalisé](assets/batchgenerationapi.batchgenerationapi.core-1.0-SNAPSHOT.jar) à l’aide de [la console web Felix](http://localhost:4502/system/console/bundles)
+* Importer [ICTemplate](assets/ICTemplate.zip) using [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp)
+* Importer [Gestionnaire d’envoi personnalisé](assets/BatchAPICustomSubmit.zip) using [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp)
+* Importer [Formulaire adaptatif](assets/BatchGenerationAPIAF.zip) en utilisant la variable [Interface de Forms et de document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Déployer et démarrer [Groupe OSGI personnalisé](assets/batchgenerationapi.batchgenerationapi.core-1.0-SNAPSHOT.jar) using [Console web Felix](http://localhost:4502/system/console/bundles)
 * [Déclencher la génération de lot en envoyant le formulaire](http://localhost:4502/content/dam/formsanddocuments/batchgenerationapi/jcr:content?wcmmode=disabled)

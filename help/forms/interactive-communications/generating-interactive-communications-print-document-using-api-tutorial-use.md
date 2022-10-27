@@ -1,24 +1,25 @@
 ---
 title: Génération d’un document de communications interactives pour le canal d’impression à l’aide du mécanisme de dossier de contrôle
-seo-title: Génération d’un document de communications interactives pour le canal d’impression à l’aide du mécanisme de dossier de contrôle
+seo-title: Generating Interactive Communications Document for print channel using watch folder mechanism
 description: Utilisation du dossier de contrôle pour générer des documents du canal d’impression
-seo-description: Utilisation du dossier de contrôle pour générer des documents du canal d’impression
-feature: Communication interactive
+seo-description: Use watched folder to generate print channel documents
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: article
 activity: implement
 version: 6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: f5ab4801-cde5-426d-bfe4-ce0a985e25e8
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 2%
+source-wordcount: '463'
+ht-degree: 1%
 
 ---
-
 
 # Génération d’un document de communications interactives pour le canal d’impression à l’aide du mécanisme de dossier de contrôle
 
@@ -112,9 +113,9 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 
 **Pour le tester sur votre système local, suivez les instructions suivantes :**
 
-* Configurez Tomcat comme décrit dans cet [article.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat possède le fichier war qui génère les données d&#39;exemple.
-* Configurez le service alias utilisateur système comme décrit dans cet [article](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Assurez-vous que cet utilisateur système dispose des autorisations de lecture sur le noeud suivant. Pour accorder les autorisations, connectez-vous à [admin](https://localhost:4502/useradmin) et recherchez &quot;data&quot; de l’utilisateur système et attribuez les autorisations de lecture sur le noeud suivant en accédant à l’onglet Autorisations .
+* Configurez Tomcat comme décrit ici [article.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat possède le fichier war qui génère les données d&#39;exemple.
+* Configuration du service alias utilisateur système comme décrit dans cette section [article](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Assurez-vous que cet utilisateur système dispose des autorisations de lecture sur le noeud suivant. Pour accorder les autorisations de connexion à [administrateur utilisateur](https://localhost:4502/useradmin) et recherchez &quot;data&quot; de l’utilisateur système et attribuez les autorisations de lecture sur le noeud suivant en accédant à l’onglet autorisations
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
@@ -145,11 +146,10 @@ Assurez-vous que cet utilisateur système dispose des autorisations de lecture s
 
 * Déposez le fichier accountnuméros.xml dans le dossier C:\RenderPrintChannel\input folder.
 
-* Les fichiers PDF générés sont écrits dans saveLocation comme indiqué dans le script ecma.
+* Les fichiers de PDF générés sont écrits dans saveLocation comme spécifié dans le script ecma.
 
 >[!NOTE]
 >
 >Si vous prévoyez de l’utiliser sur un système d’exploitation autre que Windows, accédez à
 >
 >/etc/fd/watchfolder /config/PrintChannelDocument et modifiez folderPath en fonction de vos préférences.
-

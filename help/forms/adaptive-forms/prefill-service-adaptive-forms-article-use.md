@@ -1,18 +1,19 @@
 ---
 title: Service de préremplissage dans Forms adaptatif
 description: Préremplir les formulaires adaptatifs en récupérant des données à partir de sources de données principales.
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
+last-substantial-update: 2019-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '462'
 ht-degree: 7%
 
 ---
-
 
 # Utilisation du service de préremplissage dans Forms adaptatif
 
@@ -81,8 +82,8 @@ public class PrefillAdaptiveForm implements DataProvider {
 Pour tester cette fonctionnalité sur votre serveur, procédez comme suit :
 
 * [Téléchargez et extrayez le contenu du fichier zip sur votre ordinateur.](assets/prefillservice.zip)
-* Assurez-vous que les informations de [profil de l’utilisateur](http://localhost:4502/libs/granite/security/content/useradmin) sont entièrement renseignées. Ceci est obligatoire pour que l’échantillon fonctionne. L’exemple ne comporte aucune vérification d’erreur pour les propriétés de profil utilisateur manquantes.
-* Déployez le lot à l’aide de la [console web AEM](http://localhost:4502/system/console/bundles)
+* Assurez-vous d’être connecté [profil de l’utilisateur](http://localhost:4502/libs/granite/security/content/useradmin) les informations sont complétées. Ceci est obligatoire pour que l’échantillon fonctionne. L’exemple ne comporte aucune vérification d’erreur pour les propriétés de profil utilisateur manquantes.
+* Déployez le lot à l’aide du [AEM console web](http://localhost:4502/system/console/bundles)
 * Créer un formulaire adaptatif à l’aide du schéma XSD
 * Associez &quot;Service de préremplissage de formulaire Aem personnalisé&quot; comme service de préremplissage de votre formulaire adaptatif
 * Faire glisser des éléments de schéma vers le formulaire
@@ -92,5 +93,4 @@ Pour tester cette fonctionnalité sur votre serveur, procédez comme suit :
 >
 >Si le formulaire adaptatif est basé sur XSD, assurez-vous que le document XML renvoyé par le service de préremplissage correspond au schéma XSD sur lequel votre formulaire adaptatif est basé.
 >
->Si le formulaire adaptatif n’est pas basé sur XSD, vous devrez lier manuellement les champs. Par exemple, pour lier un champ de formulaire adaptatif à un élément fname dans les données XML, vous utiliserez `/data/fname` dans la référence de liaison du champ de formulaire adaptatif.
-
+>Si le formulaire adaptatif n’est pas basé sur XSD, vous devrez lier manuellement les champs. Par exemple, pour lier un champ de formulaire adaptatif à un élément fname dans les données XML que vous utiliserez `/data/fname`  dans la référence de liaison du champ de formulaire adaptatif.

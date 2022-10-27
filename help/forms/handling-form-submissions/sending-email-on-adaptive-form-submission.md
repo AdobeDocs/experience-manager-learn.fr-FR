@@ -1,25 +1,26 @@
 ---
 title: Envoi de courrier électronique lors de l’envoi d’un formulaire adaptatif
-seo-title: Envoi de courrier électronique lors de l’envoi d’un formulaire adaptatif
+seo-title: Sending Email on Adaptive Form Submission
 description: Envoyer un courrier électronique de confirmation lors de l’envoi du formulaire adaptatif à l’aide du composant Envoyer un courrier électronique
-seo-description: Envoyer un courrier électronique de confirmation lors de l’envoi du formulaire adaptatif à l’aide du composant Envoyer un courrier électronique
+seo-description: Send confirmation email on adaptive form submission using the send email component
 uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 topics: authoring, integrations
 audience: developer
 doc-type: article
 activity: use
 discoiquuid: 1187357f-2f36-4a04-b708-44bb9c174fb5
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 19c5aeec-2893-4ada-b6df-b80c4be2468a
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '214'
 ht-degree: 3%
 
 ---
-
 
 # Envoi de courrier électronique lors de l’envoi d’un formulaire adaptatif {#sending-email-on-adaptive-form-submission}
 
@@ -33,9 +34,9 @@ Lorsque le formulaire adaptatif est envoyé, le destinataire reçoit un courrier
 
 ![SendEmail](assets/sendemailaction.gif)
 
-## Configurations Nécessaires {#configurations-needed}
+## Configurations nécessaires {#configurations-needed}
 
-Vous devrez configurer le service de messagerie Day CQ. Cela peut être configuré en pointant votre navigateur vers [Felix Configuration Manager](http://localhost:4502/system/console/configMgr).
+Vous devrez configurer le service de messagerie Day CQ. Cela peut être configuré en pointant votre navigateur vers [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
 
 La capture d’écran présente les propriétés de configuration du serveur de messagerie Adobe.
 
@@ -43,10 +44,10 @@ La capture d’écran présente les propriétés de configuration du serveur de 
 
 Pour essayer cela sur votre serveur, procédez comme suit :
 
-* [Importez les ](assets/timeoffrequest.zip) ressources associées à cet article dans AEM à l’aide du gestionnaire de packages.
+* [Importation des ressources](assets/timeoffrequest.zip) associé à cet article dans AEM utilisant le gestionnaire de packages.
 
 * Ouvrez le [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 
 * Renseignez les détails. Veillez à indiquer une adresse électronique valide dans le champ Courriel.
 
-* Envoyez le formulaire.
+* Envoyer le formulaire.

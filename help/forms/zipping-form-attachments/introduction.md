@@ -1,21 +1,22 @@
 ---
 title: Envoi de pièces jointes de formulaire adaptatif
 description: Envoi de pièces jointes de formulaire adaptatif à l’aide du composant Envoyer un courrier électronique
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
 kt: kt-8049
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: bd9e1fc1-2fc7-452c-9a4a-2e16f6821760
+last-substantial-update: 2020-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 2%
+source-wordcount: '132'
+ht-degree: 0%
 
 ---
 
-
-# Présentation
+# Présentation 
 
 
 
@@ -24,7 +25,7 @@ En règle générale, les clients envoient les pièces jointes du formulaire ou 
 
 ## Envoi des pièces jointes du formulaire dans un fichier zip
 
-Pour réaliser le cas d’utilisation, une étape de processus de workflow personnalisé a été écrite. Dans cette étape de processus personnalisée, un fichier zip contenant les pièces jointes de formulaire dans créé et stocké sous le dossier de charge utile dans un fichier nommé *zipped_attachments.zip*
+Pour réaliser le cas d’utilisation, une étape de processus de workflow personnalisé a été écrite. Au cours de cette étape de processus personnalisé, un fichier zip contenant les pièces jointes du formulaire dans créé et stocké sous le dossier de charge utile dans un fichier nommé *zipped_attachments.zip*
 
 ![send-form-attachments](assets/send-form-attachments.JPG)
 
@@ -33,6 +34,3 @@ Pour réaliser le cas d’utilisation, une étape de processus de workflow perso
 Pour réaliser ce cas d’utilisation, une étape de processus de workflow personnalisé a été écrite. Dans cette étape de processus personnalisée, nous renseignons les variables de workflow de type ArrayList de documents et ArrayList de chaînes.
 
 ![send-list-of-documents](assets/send-list-of-documents.JPG)
-
-
-

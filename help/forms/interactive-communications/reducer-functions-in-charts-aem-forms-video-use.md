@@ -1,26 +1,27 @@
 ---
 title: Utilisation des fonctions de réducteur dans les graphiques
-seo-title: Utilisation des fonctions de réducteur dans AEM Forms - Graphiques
+seo-title: Using Reducer Functions in AEM Forms - Charts
 description: Les fonctions de réducteur sont utilisées pour agréger ou regrouper les valeurs affichées dans le graphique. La vidéo suivante décrit les étapes à suivre pour utiliser les fonctions de réducteur.
-seo-description: Les fonctions de réducteur sont utilisées pour agréger ou regrouper les valeurs affichées dans le graphique. La vidéo suivante décrit les étapes à suivre pour utiliser les fonctions de réducteur.
+seo-description: Reducer functions are used to aggregate or group values that are displayed in the chart.The following video walks through the steps involved in using reducer functions.
 uuid: e9bd8bda-48ea-4a02-95c4-02aedafdb640
 discoiquuid: 6fef8341-8fd5-4d82-9f69-2b8be7cd22db
-feature: Communication interactive
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: technical video
 activity: use
 version: 6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 866749d9-0f62-470b-afeb-4dece4e0b169
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 2%
+source-wordcount: '94'
+ht-degree: 0%
 
 ---
-
 
 # Utilisation des fonctions de réducteur dans AEM Forms - Graphiques{#using-reducer-functions-in-aem-forms-charts}
 
@@ -64,4 +65,3 @@ Par exemple, nous pouvons utiliser les fonctions de réducteur pour afficher le 
 La vidéo suivante décrit les étapes à suivre pour utiliser les fonctions de réducteur.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21368/?quality=9&learn=on)
-

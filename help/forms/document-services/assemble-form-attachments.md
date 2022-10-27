@@ -5,16 +5,17 @@ feature: Assembler
 version: 6.4,6.5
 kt: 6406
 thumbnail: kt-6406.jpg
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: a5df8780-b7ab-4b91-86f6-a24392752107
+last-substantial-update: 2021-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 2%
+source-wordcount: '633'
+ht-degree: 1%
 
 ---
-
 
 # Assemblage de pièces jointes de formulaire
 
@@ -24,7 +25,7 @@ Lors de l’envoi du formulaire, assemblez les pièces jointes du formulaire pou
 
 ## Créer un composant OSGi qui implémente l’interface WorkflowProcess
 
-Créez un composant OSGi qui implémente l’interface [com.adobe.granite.workflow.exec.WorkflowProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). Le code de ce composant peut être associé au composant d’étape de processus dans le workflow AEM. La méthode execute de l’interface com.adobe.granite.workflow.exec.WorkflowProcess est implémentée dans ce composant.
+Créez un composant OSGi qui implémente le [Interface com.adobe.granite.workflow.exec.WorkflowProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). Le code de ce composant peut être associé au composant d’étape de processus dans le workflow AEM. La méthode execute de l’interface com.adobe.granite.workflow.exec.WorkflowProcess est implémentée dans ce composant.
 
 Lorsqu’un formulaire adaptatif est envoyé pour déclencher un processus d’AEM, les données envoyées sont stockées dans le fichier spécifié sous le dossier de charge utile. Il s’agit, par exemple, du fichier de données envoyé. Nous devons assembler les pièces jointes spécifiées sous la balise &quot;idcard&quot; et &quot;bankstatement&quot;.
 ![submit-data](assets/submitted-data.JPG).
@@ -43,7 +44,7 @@ String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(
 
 ### Création de DDX à partir des noms de pièces jointes
 
-Nous devons ensuite créer le document [Document Description XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) utilisé par le service Assembler pour assembler des documents. Voici le DDX créé à partir des arguments de processus. L’élément NoForms vous permet d’aplatir les documents basés sur XFA avant qu’ils ne soient assemblés. Notez que les éléments de la source PDF sont dans le bon ordre, comme indiqué dans les arguments de processus.
+Nous devons ensuite créer [Document Description XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) document utilisé par le service Assembler pour assembler des documents. Voici le DDX créé à partir des arguments de processus. L’élément NoForms vous permet d’aplatir les documents basés sur XFA avant qu’ils ne soient assemblés. Notez que les éléments source du PDF sont dans le bon ordre, comme indiqué dans les arguments du processus.
 
 ![ddx-xml](assets/ddx.PNG)
 
@@ -132,16 +133,15 @@ Voici la structure de dossiers de charge utile après l’assemblage et le stock
 
 ### Pour que cette fonctionnalité fonctionne sur votre serveur AEM
 
-* Téléchargez le formulaire [Assembler les pièces jointes de formulaire](assets/assemble-form-attachments-af.zip) sur votre système local.
-* Importez le formulaire à partir de la page [Forms And Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* Téléchargez [workflow](assets/assemble-form-attachments.zip) et importez-le dans AEM à l’aide du gestionnaire de modules.
-* Téléchargez le [lot personnalisé](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
-* Déployez et démarrez le lot à l’aide de la [console web](http://localhost:4502/system/console/bundles)
+* Téléchargez la [Formulaire Assemblage de pièces jointes de formulaire](assets/assemble-form-attachments-af.zip) à votre système local.
+* Importez le formulaire à partir du[Forms Et Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) page.
+* Télécharger [workflow](assets/assemble-form-attachments.zip) et importez dans AEM à l’aide de package manager.
+* Téléchargez la [lot personnalisé](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
+* Déployez et démarrez le lot à l’aide du [console web](http://localhost:4502/system/console/bundles)
 * Pointez votre navigateur sur [Formulaire AssembleAttachments](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
 * Ajoutez une pièce jointe dans le document d’identification et quelques documents pdf à la section des relevés de banque.
 * Envoyer le formulaire pour déclencher le workflow
-* Vérifiez le dossier de charge utile [du workflow dans le crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) pour le pdf assemblé.
+* Vérifiez le [dossier de charge utile dans le crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) pour le pdf assemblé
 
 >[!NOTE]
 > Si vous avez activé l’enregistreur pour le lot personnalisé, le DDX et le fichier assemblé sont écrits dans le dossier de votre installation AEM.
-

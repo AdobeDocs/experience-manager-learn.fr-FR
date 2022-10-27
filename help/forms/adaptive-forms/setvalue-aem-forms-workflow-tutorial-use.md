@@ -1,17 +1,18 @@
 ---
 title: Utilisation de setvalue dans le workflow AEM Forms
 description: Définir la valeur de l’élément dans les données envoyées par Forms adaptative dans AEM Forms OSGI
-feature: Formulaires adaptatifs
-topic: Développement
+feature: Adaptive Forms
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 3919efee-6998-48e8-85d7-91b6943d23f9
+last-substantial-update: 2020-01-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 3%
+source-wordcount: '528'
+ht-degree: 2%
 
 ---
-
 
 # Utilisation de setvalue dans le workflow AEM Forms
 
@@ -38,18 +39,18 @@ Pour déployer les ressources sur votre système local, procédez comme suit :
 
 * [Déployer le lot Developer withserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Déployez l’exemple de lot](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Il s’agit du lot OSGI personnalisé qui vous permet de définir les valeurs d’un élément dans les données XML envoyées.
+* [Déploiement de l’exemple de lot](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Il s’agit du lot OSGI personnalisé qui vous permet de définir les valeurs d’un élément dans les données XML envoyées.
 
 * [Télécharger et extraire le contenu du fichier zip](assets/setvalueassets.zip)
-* Pointez votre navigateur sur [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp).
+* Pointez votre navigateur sur [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp)
 * Importez et installez setValueWorkflow.zip. Il contient l’exemple de modèle de workflow.
-* Pointez votre navigateur sur [Forms and Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Pointez votre navigateur sur [Forms et documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * Cliquez sur Créer | Téléchargement du fichier
 * Téléchargez le fichier TimeOfRequestForm.zip
-* Ouvrez [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
+* Ouvrez le [TimeOffRequestform](http://localhost:4502/content/dam/formsanddocuments/timeoffapplication/jcr:content?wcmmode=disabled)
 * Renseignez les 3 champs obligatoires et envoyez
 * Connectez-vous en tant qu’&quot;admin&quot; à AEM (si ce n’est pas déjà fait).
-* Accédez à [&quot;AEM Boîte de réception&quot;](http://localhost:4502/aem/inbox)
+* Accédez à [&quot;Boîte de réception AEM&quot;](http://localhost:4502/aem/inbox)
 * Ouvrez le formulaire &quot;Demande de désactivation de la date de révision&quot;.
 * Notez que les champs du premier panneau sont désactivés. En effet, le formulaire est ouvert par le réviseur. Notez également que le panneau d’approbation ou de refus de la requête est désormais visible.
 

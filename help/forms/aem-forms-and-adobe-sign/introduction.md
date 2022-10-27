@@ -1,15 +1,17 @@
 ---
 title: Utilisation d’AEM Forms avec Adobe Sign
 description: Adobe Sign et AEM Forms permettent d’automatiser des transactions complexes et d’inclure des signatures électroniques légales dans le cadre d’une expérience numérique transparente.
-feature: Forms adaptatif,Adobe Sign
+feature: Adaptive Forms,Adobe Sign
 version: 6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 0be61f04-c3ed-4ecb-bab7-73fd308c14e0
+last-substantial-update: 2020-03-20T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 40%
+source-wordcount: '158'
+ht-degree: 41%
 
 ---
 
@@ -19,10 +21,10 @@ Adobe Sign autorise les processus de signature électronique pour les formulaire
 L’intégration entre AEM Forms et Adobe Sign vous permet d’effectuer les opérations suivantes :
 
 * Utilisez le Forms adaptatif pour capturer des données et présenter un document d’enregistrement généré automatiquement pour les signatures.
-* Créez une Forms adaptative basée sur votre modèle PDF. Fusionner les données avec le modèle pdf et présenter la même pour les signatures
+* Créez une Forms adaptative basée sur votre modèle de PDF. Fusionner les données avec le modèle pdf et présenter la même pour les signatures
 * Envoi de documents pour signature à l’aide du composant de processus de signature de document
 
-## Prérequis
+## Conditions préalables
 
 Vous avez besoin de ce qui suit pour intégrer Adobe Sign à AEM Forms :
 
@@ -30,4 +32,3 @@ Vous avez besoin de ce qui suit pour intégrer Adobe Sign à AEM Forms :
 * Un compte de développeur Adobe Sign actif.
 * Une application API Adobe Sign
 * Informations d’identification (ID client et secret client) de l’application API Adobe Sign.
-

@@ -1,20 +1,21 @@
 ---
 title: Installation d’AEM Forms sous Linux
 description: Découvrez comment installer des bibliothèques 32 bits pour qu’AEM Forms fonctionne sur une installation Linux.
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 type: Tutorial
 version: 6.4, 6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
 kt: 7593
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: b9809561-e9bd-4c67-bc18-5cab3e4aa138
+last-substantial-update: 2019-06-09T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
-
 
 # Installation de la version 32 bits des bibliothèques partagées
 
@@ -35,8 +36,7 @@ Lorsque AEM FORMS OSGi ou AEM Forms j2EE est déployé sous Linux, vous devez vo
 * libXext (bibliothèque pour les extensions courantes du protocole X11)
 * libXinerama (extension X11) qui permet d’étendre un bureau sur plusieurs écrans. Le nom est un jeu de mots sur Cinerama, un format de film grand écran qui utilisait plusieurs projecteurs. libXinerama est la bibliothèque qui utilise l’extension RandR)
 * libXrandr (l&#39;extension Xinerama est largement obsolète de nos jours - elle a été remplacée par l&#39;extension RandR)
-* libXrender (bibliothèque cliente de l’extension de rendu X)
-nss-softokn-freebl (Bibliothèque libre pour les services de sécurité réseau)
+* libXrender (bibliothèque cliente de l’extension de rendu X) nss-softokn-freebl (bibliothèque libre pour les services de sécurité réseau)
 * zlib (bibliothèque de compression de données d’usage général, sans brevet, sans perte)
 
 À partir de Red Hat Enterprise Linux 6, l’édition 32 bits d’une bibliothèque aura l’extension .686, tandis que l’édition 64 bits aura .x86_64. Par exemple, expat.i686. Avant RHEL 6, les éditions 32 bits avaient l’extension .i386. Avant d’installer les éditions 32 bits, vérifiez que les dernières éditions 64 bits sont installées. Si l’édition 64 bits d’une bibliothèque est antérieure à la version 32 bits installée, vous obtenez une erreur comme ci-dessous :
@@ -69,60 +69,29 @@ Sous Red Hat Enterprise Linux, utilisez le YellowDog Update Modifier (YUM) pour 
 
 ## Symlinks
 
-En outre, vous devez créer les liens symboliques libcurl.so, libcrypto.so et libssl.so pointant vers les dernières versions 32 bits des bibliothèques libcurl, libcrypto et libssl, respectivement. Vous trouverez les fichiers dans /usr/lib/
-ln -s /usr/lib/libcurl.so.4.5.0 /usr/lib/libcurl.so
-ln -s /usr/lib/libcrypto.so.1.1.1c /usr/lib/libcrypto.so
-ln -s /usr/lib/libssl.so.1.1.1c /usr/lib/libssl.so
+En outre, vous devez créer les liens symboliques libcurl.so, libcrypto.so et libssl.so pointant vers les dernières versions 32 bits des bibliothèques libcurl, libcrypto et libssl, respectivement. Vous pouvez trouver les fichiers dans /usr/lib/ ln -s /usr/lib/libcurl.so.4.5.0 /usr/lib/libcurl.so ln -s /usr/lib/libcrypto.so.1.1.1c /usr/lib/libcrypto.so ln -s /usr/lib/libssl.so.1.1.1c /usr/lib/libssl.so
 
 ## Mises à jour du système existant
 
-il peut y avoir des conflits entre les architectures x86_64 et i686 lors de mises à jour, par exemple :
-Erreur : Erreur de vérification de transaction :
-fichier /lib/ld-2.28.so à partir de l’installation de glibc-2.28-72.el8.i686 provoque des conflits avec le fichier du package glibc32-2.28-42.1.el8.x86_64
+il peut y avoir des conflits entre les architectures x86_64 et i686 lors de mises à jour, par exemple : Erreur : Erreur de vérification de transaction : fichier /lib/ld-2.28.so à partir de l’installation de glibc-2.28-72.el8.i686 provoque des conflits avec le fichier du package glibc32-2.28-42.1.el8.x86_64
 
-Si vous rencontrez ce problème, désinstallez d’abord le package incriminé, comme dans ce cas :
-yum remove glibc32-2.28-42.1.el8.x86_64
+Si vous rencontrez ce problème, désinstallez d’abord le package incriminé, comme dans ce cas : yum remove glibc32-2.28-42.1.el8.x86_64
 
-Cela dit, vous souhaitez que les versions x86_64 et i686 soient exactement les mêmes, comme par exemple depuis cette sortie vers la commande :
-yum info glibc
+Cela dit, vous souhaitez que les versions x86_64 et i686 soient exactement les mêmes, comme par exemple depuis cette sortie vers la commande : yum info glibc
 
-Dernière vérification d’expiration des métadonnées : 0:41:33 le 18 janvier 2020 11:37:08 AM EST.
-Packages installés
-Nom : glibc
-Version : 2,28
-Version : 72.el8
-Architecture : i686
-Taille : 13 M
-Source : glibc-2.28-72.el8.src.rpm
-Référentiel : @System
-Depuis le référentiel : BaseOS
-Résumé : Bibliothèques libc GNU
-URL : http://www.gnu.org/software/glibc/
-Licence : LGPLv2+ et LGPLv2+ avec exceptions et GPLv2+ et GPLv2+ avec exceptions et BSD et Inner-Net et ISC et Public Domain et GFDL
-Description : Le package glibc contient des bibliothèques standard utilisées par : plusieurs programmes sur le système. Pour économiser de l’espace disque et : mémoire, ainsi que pour faciliter la mise à niveau, le code système courant est : Ils sont gardés à un seul endroit et partagés entre les programmes. Ce package particulier : contient les ensembles les plus importants de bibliothèques partagées : la norme C : et la bibliothèque mathématique standard. Sans ces deux bibliothèques, une : Le système Linux ne fonctionnera pas.
+Dernière vérification d’expiration des métadonnées : 0:41:Il y a 33 ans le 18 janvier 2020 11:37:08 H EST.
+Nom des modules installés : Version glibc : Version 2.28 : 72.el8 Architecture : i686 Size : 13 M Source : glibc-2.28-72.el8.src.rpm Référentiel : @System Depuis le référentiel : Résumé de BaseOS : URL des bibliothèques libc GNU : http://www.gnu.org/software/glibc/ Licence : LGPLv2+ et LGPLv2+ avec exceptions et GPLv2+ et GPLv2+ avec exceptions et BSD, Inner-Net, ISC, Public Domain et GFDL Description : Le package glibc contient des bibliothèques standard utilisées par : plusieurs programmes sur le système. Pour économiser de l’espace disque et : mémoire, ainsi que pour faciliter la mise à niveau, le code système courant est : Ils sont gardés à un seul endroit et partagés entre les programmes. Ce package particulier : contient les ensembles les plus importants de bibliothèques partagées : la norme C : et la bibliothèque mathématique standard. Sans ces deux bibliothèques, une : Le système Linux ne fonctionnera pas.
 
-Nom : glibc
-Version : 2,28
-Version : 72.el8
-Architecture : x86_64
-Taille : 15 M
-Source : glibc-2.28-72.el8.src.rpm
-Référentiel : @System
-Depuis le référentiel : BaseOS
-Résumé : Bibliothèques libc GNU
-URL : http://www.gnu.org/software/glibc/
-Licence : LGPLv2+ et LGPLv2+ avec exceptions et GPLv2+ et GPLv2+ avec exceptions et BSD et Inner-Net et ISC et Public Domain et GFDL
-Description : Le package glibc contient des bibliothèques standard utilisées par : plusieurs programmes sur le système. Pour économiser de l’espace disque et : mémoire, ainsi que pour faciliter la mise à niveau, le code système courant est : Ils sont gardés à un seul endroit et partagés entre les programmes. Ce package particulier : contient les ensembles les plus importants de bibliothèques partagées : la norme C : et la bibliothèque mathématique standard. Sans ces deux bibliothèques, une : Le système Linux ne fonctionnera pas.
+Nom : Version glibc : Version 2.28 : 72.el8 Architecture : x86_64 Size : Source 15 M : glibc-2.28-72.el8.src.rpm Référentiel : @System Depuis le référentiel : Résumé de BaseOS : URL des bibliothèques libc GNU : http://www.gnu.org/software/glibc/ Licence : LGPLv2+ et LGPLv2+ avec exceptions et GPLv2+ et GPLv2+ avec exceptions et BSD, Inner-Net, ISC, Public Domain et GFDL Description : Le package glibc contient des bibliothèques standard utilisées par : plusieurs programmes sur le système. Pour économiser de l’espace disque et : mémoire, ainsi que pour faciliter la mise à niveau, le code système courant est : Ils sont gardés à un seul endroit et partagés entre les programmes. Ce package particulier : contient les ensembles les plus importants de bibliothèques partagées : la norme C : et la bibliothèque mathématique standard. Sans ces deux bibliothèques, une : Le système Linux ne fonctionnera pas.
 
 ## Certaines commandes yum utiles
 
-yum list installée
-yum search [part_of_package_name]
-yum what fournit [nom_module]
-yum install [nom_module]
-yum reinstall [nom_module]
-yum info [nom_module]
-yum s’épuise [nom_module]
-yum remove [nom_module]
-yum check-update [nom_module]
-yum update [nom_module]
+yum list recherche de yum installée [part_of_package_name]
+yum what [package_name]
+yum install [package_name]
+yum reinstall [package_name]
+yum info [package_name]
+yum s&#39;épuise [package_name]
+yum remove [package_name]
+yum check-update [package_name]
+mise à jour de l’année [package_name]

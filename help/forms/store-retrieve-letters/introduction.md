@@ -13,14 +13,16 @@ topic: Development
 role: Developer
 level: Intermediate
 kt: 10208
-source-git-commit: 0a52ea9f5a475814740bb0701a09f1a6735c6b72
+exl-id: e032070b-7332-4c2f-97ee-7e887a61aa7a
+last-substantial-update: 2022-01-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
 
 ---
 
-# Présentation
+# Présentation 
 
 Les communications interactives permettent aux agents qui préparent des correspondances ad hoc d’enregistrer des correspondances partiellement terminées et de récupérer les mêmes correspondances pour continuer à fonctionner. AEM Forms vous fournit les [Interface du fournisseur de services](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html). Le client doit mettre en oeuvre cette interface pour obtenir la fonctionnalité Enregistrer et reprendre .
 

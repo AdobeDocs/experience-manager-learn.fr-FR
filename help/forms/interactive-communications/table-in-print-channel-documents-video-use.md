@@ -1,23 +1,24 @@
 ---
 title: Utilisation du composant Tableau dans le document Canal d’impression AEM Forms
-seo-title: Utilisation du composant Tableau dans le document Canal d’impression AEM Forms
+seo-title: Using Table Component in AEM Forms Print Channel Document
 description: La vidéo suivante décrit les étapes requises pour utiliser le composant de tableau dans les communications interactives pour les documents de canal d’impression.
-feature: Communication interactive
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: technical video
 activity: implement
 version: 6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 54afd047-c6e6-4557-9336-39420f30df88
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 1%
+source-wordcount: '267'
+ht-degree: 0%
 
 ---
-
 
 # Utilisation du composant Tableau dans le document Canal d’impression AEM Forms {#using-table-component-in-aem-forms-print-channel-document}
 
@@ -46,10 +47,9 @@ Les tableaux sont utilisés pour afficher les données sous forme tabulaire. Les
    * Document de communication interactive
    * sampleretirementaccountdata.json
 
-* Ouvrez le document de communication interactive en [mode d’édition](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
+* Ouvrez le document de communication interactive dans [mode d’édition](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
 
 * Ajoutez le fragment de disposition TableDemo à la section des contributions .
 * Lier les cellules de tableau aux éléments de modèle de données de formulaire appropriés, comme indiqué dans la vidéo
 
 * Aperçu du document de communication interactive avec l’exemple de fichier de données json fourni
-

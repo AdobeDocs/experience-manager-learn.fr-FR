@@ -3,20 +3,21 @@ title: Certification de document dans AEM Forms
 description: Utilisation du service Docassurance pour certifier des documents PDF dans AEM Forms
 feature: Document Security
 version: 6.4,6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 1471929f-d269-4adc-88ad-2ad3682305e1
+last-substantial-update: 2019-07-07T00:00:00Z
+source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 2%
+source-wordcount: '400'
+ht-degree: 3%
 
 ---
 
-
 # Certification de document dans AEM Forms
 
-Un document certifié fournit au document PDF et aux destinataires de formulaires des garanties supplémentaires d’authenticité et d’intégrité.
+Un document certifié fournit au PDF un document et aux destinataires des formulaires des garanties supplémentaires d’authenticité et d’intégrité.
 
 Pour certifier un document, vous pouvez utiliser Acrobat DC sur le bureau ou AEM Forms Document Services dans le cadre d’un processus automatisé sur un serveur.
 
@@ -29,7 +30,7 @@ Pour certifier des documents à l’aide d’AEM Forms, les étapes suivantes do
 Suivez les étapes mentionnées ci-dessous pour ajouter le certificat au KeyStore dans AEM
 
 * [Initialisation du Trust Store global](http://localhost:4502/libs/granite/security/content/truststore.html)
-* [Recherchez fd-](http://localhost:4502/security/users.html) serviceuser
+* [Recherche de fd-service](http://localhost:4502/security/users.html) user
 * **Vous devrez faire défiler la page de résultats pour charger tous les utilisateurs afin de trouver l’utilisateur fd-service.**
 * Double-cliquez sur l’utilisateur fd-service pour ouvrir la fenêtre des paramètres utilisateur.
 * Cliquez sur &quot;Ajouter une clé privée à partir du fichier de stockage de clés&quot;. Indiquez l’alias et le mot de passe propres à votre certificat.
@@ -38,9 +39,9 @@ Suivez les étapes mentionnées ci-dessous pour ajouter le certificat au KeyStor
 
 ## Création du service OSGI
 
-Vous pouvez créer votre propre lot OSGi et utiliser le SDK client AEM Forms pour mettre en oeuvre un service de certification des documents PDF. Les liens suivants seraient utiles pour écrire votre propre lot OSGi.
+Vous pouvez créer votre propre lot OSGi et utiliser le SDK client AEM Forms pour mettre en oeuvre un service de certification des documents du PDF. Les liens suivants seraient utiles pour écrire votre propre lot OSGi.
 
-* [Création de votre premier lot OSGi](https://helpx.adobe.com/experience-manager/using/maven_arch13.html)
+* [Création de votre premier lot OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=fr)
 * [Utilisation de l’API Document Service](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 Vous pouvez également utiliser l’exemple de lot inclus dans les ressources de ce tutoriel.
@@ -51,18 +52,16 @@ Vous pouvez également utiliser l’exemple de lot inclus dans les ressources de
 
 ## Test de l’échantillon sur votre système local
 
-* Télécharger et installer [Offre groupée de services de document personnalisée](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Télécharger et installer [Développement avec le Service User Bundle](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Télécharger et installer [Offre groupée de services de document personnalisés](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* Télécharger et installer [Développement avec le bundle d’utilisateurs du service](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 * [Assurez-vous d’avoir ajouté l’entrée suivante dans le service de mappeur d’utilisateur du service Apache Sling](http://localhost:4502/system/console/configMgr)
 
-   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-** service comme illustré dans la capture d’écran ci-dessous
+   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** comme illustré dans la capture d’écran ci-dessous
    ![User-Mapper](assets/user-mapper-service.PNG)
 * [Importer un exemple de formulaire adaptatif](assets/certify-pdf-af.zip)
 * [Importation et installation de l’envoi personnalisé](assets/custom-submit-certify.zip)
 * [Ouvrir le formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/certifypdf/jcr:content?wcmmode=disabled)
-* Télécharger un document PDF qui doit être certifié
-   **facultatif**  : spécifiez le champ de signature à utiliser pour certifier le document.
+* Télécharger le document du PDF qui doit être certifié
+   **facultatif** - Spécifiez le champ de signature à utiliser pour certifier le document.
 * Cliquez sur Envoyer.
 * Le PDF certifié doit vous être renvoyé.
-
-
