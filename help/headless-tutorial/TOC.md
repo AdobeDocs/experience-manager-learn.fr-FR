@@ -2,14 +2,15 @@
 user-guide-title: Prise en main d’AEM découplé
 user-guide-description: Tutoriel complet illustrant comment créer et exposer du contenu à l’aide d’AEM sans affichage.
 breadcrumb-title: Tutoriel sur AEM Headless
-version: Cloud Service
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites
+sub-product: Experience Manager Sites
+version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: 680ed62141b853daf104a827067ca6d5a209796d
+source-git-commit: 74510a4b075d2dba9b3f27018ba05f15dcad9562
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 24%
+source-wordcount: '268'
+ht-degree: 23%
 
 ---
 
@@ -107,7 +108,9 @@ ht-degree: 24%
    + [6 - Exposition du contenu sur la publication AEM pour diffusion](./content-services/chapter-6.md)
    + [7 - Consommation AEM Content Services à partir d’une application mobile](./content-services/chapter-7.md)
 + Exemples de code {#code-samples}
-   + [application React](./graphql/code-samples/react-app.md)
-   + [Angular app](./graphql/code-samples/angular-app.md)
-   + [Composant React](./graphql/code-samples/react-component.md)
-   + [Filtre JavaScript](./graphql/code-samples/javascript-filter.md)
+   + [Filtrage de l’application React](./graphql/code-samples/filtering-react-app.md)
+   + [Filtrage de l’application Angular](./graphql/code-samples/filtering-angular-app.md)
+   + [Filtrage de l’application Vue](./graphql/code-samples/filtering-vue-app.md)
+   + [Filtrage avec jQuery et Handlebars](./graphql/code-samples/filtering-jquery-handlebars.md)
+   + [Application React de base](./graphql/code-samples/basic-react-app.md)
+   + [Application Next.js de base](./graphql/code-samples/basic-nextjs-app.md)
