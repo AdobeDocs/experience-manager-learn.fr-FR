@@ -9,9 +9,9 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 129dedd4cd6973d5d576bed5f714ce62152923de
+source-git-commit: 3a7c04dfe465c1eff29ba6b4e4b7e24f047e5b42
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1182'
 ht-degree: 3%
 
 ---
@@ -116,31 +116,31 @@ Les administrateurs AEM Assets définissent les rendus personnalisés à l’aid
 
 #### Profils de traitement
 
-Les spécifications des rendus de ressources sont définies dans [Profils de traitement](../../../assets/configuring//processing-profiles.md) par les administrateurs AEM Assets.
+Les spécifications des rendus de ressources sont définies dans [Profils de traitement](../../../assets/configuring/processing-profiles.md) par les administrateurs AEM Assets.
 
 Créez ou mettez à jour un profil de traitement et ajoutez des définitions de rendu pour les tailles d’image requises par l’application sans en-tête. Les rendus peuvent être nommés de n’importe quel type, mais doivent l’être sémantiquement.
 
-![AEM rendus optimisés sans affichage](./assets/images/processing-profiles.jpg)
+![AEM rendus optimisés sans affichage](./assets/images/processing-profiles.png)
 
 Dans cet exemple, trois rendus sont créés :
 
 | Nom du rendu | Extension | Largeur maximale |
-|----------------|:---------:|----------:|
-| grand | jpeg | 1200px |
-| moyenne | jpeg | 900px |
-| petit | jpeg | 600px |
+|-----------------------|:---------:|----------:|
+| web-optimized-large | webp | 1200px |
+| web-optimized-medium | webp | 900px |
+| web-optimized-small | webp | 600px |
 
 Les attributs décrits dans le tableau ci-dessus sont importants :
 
 + __Nom du rendu__ est utilisé pour demander le rendu.
-+ __Extension__ est l’extension utilisée pour demander la variable __nom du rendu__.
++ __Extension__ est l’extension utilisée pour demander la variable __nom du rendu__. Préférence `webp` les rendus tels qu’ils sont optimisés pour la diffusion web.
 + __Largeur maximale__ sert à indiquer au développeur quel rendu doit être utilisé en fonction de son utilisation dans l’application sans interface utilisateur.
 
 Les définitions de rendu dépendent des besoins de votre application sans interface utilisateur graphique. Veillez donc à définir le jeu de rendu optimal pour votre cas d’utilisation et nommez-les sémantiquement en fonction de leur utilisation.
 
 #### Retraiter les ressources {#reprocess-assets}
 
-Une fois le profil de traitement créé (ou mis à jour), retraitez les ressources pour générer les nouveaux rendus définis dans le profil de traitement. De nouveaux rendus n’existeront pas tant que les ressources n’auront pas été traitées avec le profil de traitement.
+Une fois le profil de traitement créé (ou mis à jour), retraitez les ressources pour générer les nouveaux rendus définis dans le profil de traitement. De nouveaux rendus n’existent pas tant que les ressources ne sont pas traitées avec le profil de traitement.
 
 + de préférence, [affectation du profil de traitement à un dossier](../../../assets/configuring//processing-profiles.md) ainsi, toutes les nouvelles ressources chargées dans ce dossier génèrent automatiquement les rendus. Les ressources existantes doivent être retraitées à l’aide de l’approche ad hoc ci-dessous.
 
@@ -152,7 +152,7 @@ Une fois le profil de traitement créé (ou mis à jour), retraitez les ressourc
 
 Les rendus peuvent être validés par [ouverture de l’affichage des rendus d’une ressource](../../../assets/authoring/renditions.md), puis en sélectionnant les nouveaux rendus à prévisualiser dans le rail de rendus. Si les rendus sont manquants, [s’assurer que les ressources sont traitées à l’aide du profil de traitement.](#reprocess-assets).
 
-![Vérification des rendus](./assets/images/review-renditions.jpg)
+![Vérification des rendus](./assets/images/review-renditions.png)
 
 #### Publier des ressources
 
@@ -164,9 +164,9 @@ Vous pouvez accéder directement aux rendus en ajoutant le __noms de rendu__ et 
 
 | URL d’élément | Sous-chemin d’accès aux rendus | Nom du rendu | Extension de rendu |  | URL de rendu |
 |-----------|:------------------:|:--------------:|--------------------:|:--:|---|
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | grand | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/large.jpeg |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | moyenne | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/medium.jpeg |
-| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | petit | .jpeg | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/small.jpeg |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | web-optimized-large | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-large.webp |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | web-optimized-medium | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-medium.webp |
+| https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg | /_jcr_content/renditions/ | web-optimized-small | .webp | → | https://publish-p123-e789.adobeaemcloud.com/content/dam/example.jpeg/_jcr_content/renditions/web-optimized-small.webp |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -176,7 +176,7 @@ AEM GraphQL nécessite une syntaxe supplémentaire pour demander des rendus d’
 
 ### Exemple React
 
-Créons une application React simple qui affiche trois rendus, petits, moyens et grands, d’une seule ressource d’image.
+Créons une application React simple qui affiche trois rendus, optimisés pour le web, petits, moyens optimisés pour le web et grands, d’une seule ressource d’image.
 
 ![Exemple de rendus de ressources d’image React](./assets/images/react-example-renditions.jpg)
 
@@ -216,7 +216,7 @@ export default function Image({ assetUrl, renditionName, renditionExtension, alt
 
 #### Définissez la variable `App.js`{#app-js}
 
-Ce simple `App.js` interroge AEM une image Adventure, puis affiche les trois rendus de cette image : petit, moyen et grand.
+Ce simple `App.js` interroge AEM une image Adventure, puis affiche les trois rendus de cette image : optimisé pour le web-petit, optimisé pour le web-moyen et optimisé pour le web-grand.
 
 La requête contre AEM est effectuée dans le crochet React personnalisé. [useAdventureByPath qui utilise le SDK AEM sans affichage](./aem-headless-sdk.md#graphql-persisted-queries).
 
@@ -242,33 +242,33 @@ function App() {
     <div className="app">
       
       <h2>Small rendition</h2>
-      {/* Render the small rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-small rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="small"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-small"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
 
       <hr />
 
       <h2>Medium rendition</h2>
-      {/* Render the medium rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-medium rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="medium"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-medium"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
 
       <hr />
 
       <h2>Large rendition</h2>
-      {/* Render the large rendition for the Adventure Primary Image */}
+      {/* Render the web-optimized-large rendition for the Adventure Primary Image */}
       <Image
         assetUrl={data.adventureByPath.item.primaryImage._publishUrl}
-        renditionName="large"
-        renditionExtension="jpeg"
+        renditionName="web-optimized-large"
+        renditionExtension="webp"
         alt={data.adventureByPath.item.title}
       />
     </div>
