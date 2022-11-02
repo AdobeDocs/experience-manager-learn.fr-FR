@@ -1,14 +1,14 @@
 ---
 title: Série d’experts Adobe Experience Manager as a Cloud Service
 description: Apprenez-en plus sur Adobe Experience Manager (AEM) as a Cloud Service de la part des ingénieurs experts qui l’ont créé et des services professionnels qui l’ont livré.
-sub-product: sites, cloud-manager, assets
-source-git-commit: d42fd02b06429be1b847958f23f273cf842d3e1b
+sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
+exl-id: ae1cdbe3-0863-41de-bb27-2e88c4640866
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 2%
 
 ---
-
 
 # Série d’experts Adobe Experience Manager as a Cloud Service
 
@@ -54,7 +54,7 @@ Découvrez les principes de base d’AEM en tant que Cloud Services et comment c
    </td>   
      <td>
       <a href="./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md">
-      <img alt="Cloud Manager " src="./assets/experts-series/cloud-manager.png"/>
+      <img alt="Cloud Manager" src="./assets/experts-series/cloud-manager.png"/>
       </a>
       <div>
          <a href="./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md"><strong>Cloud Manager pour AEM as a Cloud Service</strong></a>

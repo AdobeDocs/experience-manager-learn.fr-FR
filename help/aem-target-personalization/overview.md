@@ -1,19 +1,17 @@
 ---
 title: Prise en main d’AEM et d’Adobe Target
-seo-title: Prise en main d’AEM et d’Adobe Target
 description: Tutoriel complet montrant comment créer et diffuser des expériences personnalisées à l’aide d’Adobe Experience Manager et d’Adobe Target. Dans ce tutoriel, vous découvrirez également différentes personnes impliquées dans le processus de bout en bout et comment elles collaborent entre elles.
-seo-description: Tutoriel complet montrant comment créer et diffuser une expérience personnalisée à l’aide d’Adobe Experience Manager et d’Adobe Target. Dans ce tutoriel, vous découvrirez également différentes personnes impliquées dans le processus de bout en bout et comment elles collaborent entre elles.
-feature: Fragments d’expérience
-topic: Personnalisation
+feature: Experience Fragments
+topic: Personalization
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 2%
+source-wordcount: '840'
+ht-degree: 1%
 
 ---
-
 
 # Prise en main d’AEM et d’Adobe Target {#getting-started-with-aem-target}
 
@@ -25,20 +23,20 @@ Dans ce tutoriel, nous présentons trois scénarios différents pour AEM et Targ
 * Scénario 2 : Personnalisation à l’aide du compositeur d’expérience visuelle
 * Scénario 3 : Personnalisation des expériences de pages Web complètes
 
-## Personnalisation à l’aide AEM fragments d’expérience {#personalization-using-aem-experience-fragment}
+## Personnalisation à l’aide des fragments d’expérience AEM {#personalization-using-aem-experience-fragment}
 
-Pour ce scénario, nous allons utiliser AEM et Target. De toute évidence, les deux produits ont leurs propres points forts. Lorsqu’il s’agit de fournir des expériences personnalisées aux utilisateurs de votre site, vous avez besoin d’un **contenu personnalisé (contenu de l’AEM)** et d’une **méthode intelligente (Target)** pour diffuser ces contenus en fonction d’un utilisateur spécifique.
+Pour ce scénario, nous allons utiliser AEM et Target. De toute évidence, les deux produits ont leurs propres points forts et, lorsqu’il s’agit de fournir des expériences personnalisées aux utilisateurs de votre site, vous avez besoin de **contenu personnalisé (contenu d&#39;AEM)** et un **méthode intelligente (Target)** pour diffuser ces contenus en fonction d’un utilisateur spécifique.
 
 AEM vous aide à créer du contenu personnalisé, rassemblant l’ensemble de vos contenus et ressources à un emplacement central afin d’alimenter votre stratégie de personnalisation. AEM permet de créer facilement du contenu pour les ordinateurs de bureau, les tablettes et les appareils mobiles à un seul endroit sans devoir écrire de code. Il n’est pas nécessaire de créer des pages pour chaque appareil : AEM ajuste automatiquement chaque expérience à l’aide de votre contenu. Vous pouvez également exporter le contenu d’AEM vers Adobe Target sous forme d’offres en appuyant sur un bouton.
 
 Nous disposons désormais d’un contenu personnalisé sous la forme d’offres d’AEM dans Target. Target vous permet de diffuser ces offres à grande échelle sur la base d’une combinaison d’approches d’apprentissage automatique basées sur des règles et pilotées par l’IA qui intègrent des variables comportementales, contextuelles et hors ligne.  Avec Target, vous pouvez facilement configurer et exécuter des activités A/B et multivariées (MVT) afin de déterminer les meilleures offres, contenus et expériences.
 
-**Les** fragments d’expérience représentent un énorme pas en avant pour lier les créateurs de contenu/d’expérience aux professionnels de la personnalisation qui génèrent des résultats commerciaux à l’aide de Target.
+**Fragments d’expérience** représentent un énorme pas en avant pour lier les créateurs de contenu/d’expérience aux professionnels de la personnalisation qui génèrent des résultats commerciaux à l’aide de Target.
 
 * AEM les auteurs de contenu personnalisé en tant que fragments d’expérience et leurs variantes
-* AEM exporte le code HTML du fragment d’expérience vers Target &#x200B;
+* AEM exporte le HTML de fragment d’expérience vers Target &#x200B;
 * Target &#x200B; utilise AEM balisage de fragment d’expérience comme offres dans les activités
-* Target diffuse du code HTML de fragment d’expérience, AEM fournit des images référencées.
+* Target diffuse le HTML de fragment d’expérience, AEM fournit des images référencées.
 
    ![Personnalisation à l’aide du diagramme Fragments d’expérience](assets/personalization-use-case-1/use-case-1-diagram.png)
 
@@ -47,13 +45,13 @@ Nous disposons désormais d’un contenu personnalisé sous la forme d’offres 
 * [Intégration d’AEM et d’Adobe Target à l’aide de Launch et d’Adobe I/O](./implementation.md#integrating-aem-target-options)
 * [AEM et Adobe Target à l’aide de Cloud Services hérités](./implementation.md#integrating-aem-target-options)
 
-***Après la mise en oeuvre des intégrations ci-dessus, nous vous permet d’explorer le  [scénario en détail](./personalization-use-case-1.md).***
+***Après la mise en oeuvre des intégrations ci-dessus, nous vous proposons d’explorer la variable [scénario en détail](./personalization-use-case-1.md).***
 
 ## Personnalisation à l’aide du compositeur d’expérience visuelle
 
 Les marketeurs peuvent apporter des modifications rapides à leur site web sans modifier de code pour exécuter un test à l’aide du compositeur d’expérience visuelle (VEC) d’Adobe Target. Le compositeur d’expérience visuelle est une interface utilisateur WYSIWYG (ce que vous voyez est ce que vous obtenez) qui vous permet de créer et de tester facilement des expériences et des offres personnalisées dans le contexte du site. Vous pouvez créer des expériences et des offres pour les activités Target en faisant glisser, en permutant et en modifiant la mise en page et le contenu d’une page web (ou d’une offre) ou d’une page web mobile.
 
-Le compositeur d’expérience visuelle est l’une des principales fonctionnalités d’Adobe Target. Le compositeur d’expérience visuelle permet aux marketeurs et aux concepteurs de créer et de modifier du contenu à l’aide d’une interface visuelle. De nombreux choix de conception peuvent être effectués sans avoir à modifier directement le code. La modification de code HTML et JavaScript est également possible à l’aide des options d’édition disponibles dans le compositeur.
+Le compositeur d’expérience visuelle est l’une des principales fonctionnalités d’Adobe Target. Le compositeur d’expérience visuelle permet aux marketeurs et aux concepteurs de créer et de modifier du contenu à l’aide d’une interface visuelle. De nombreux choix de conception peuvent être effectués sans avoir à modifier directement le code. L’édition de HTML et de JavaScript est également possible à l’aide des options d’édition disponibles dans le compositeur.
 
 * Le contenu réside dans AEM et les éditeurs de contenu créent et gèrent les pages du site.
 * Target utilise AEM pages hébergées du site pour exécuter des tests et de la personnalisation.
@@ -67,7 +65,7 @@ Le compositeur d’expérience visuelle est l’une des principales fonctionnali
 
 * [Intégration d’AEM et d’Adobe Target à l’aide de Launch et d’Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Après la mise en oeuvre de l’intégration ci-dessus, nous allons explorer le  [scénario en détail.](./personalization-use-case-3.md)***
+***Après la mise en oeuvre de l’intégration ci-dessus, nous vous proposons d’explorer la variable [en détail.](./personalization-use-case-3.md)***
 
 ## Personnalisation des expériences de pages Web complètes
 
@@ -85,4 +83,4 @@ L’intégration d’Adobe Experience Manager à Adobe Target vous permet de pro
 
 * [Intégration d’AEM et d’Adobe Target à l’aide de Launch et d’Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Après la mise en oeuvre de l’intégration ci-dessus, nous allons explorer le  [scénario en détail.](./personalization-use-case-2.md)***
+***Après la mise en oeuvre de l’intégration ci-dessus, nous vous proposons d’explorer la variable [en détail.](./personalization-use-case-2.md)***

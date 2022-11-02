@@ -2,7 +2,6 @@
 title: Tutoriel sur les bonnes pratiques Dynamic Media Classic
 description: Dynamic Media Classic est le noeud autour duquel les clients créent, créent et diffusent du contenu multimédia. Ce tutoriel sur les bonnes pratiques a été créé pour aider les utilisateurs actuels et nouveaux de Dynamic Media Classic à mieux comprendre ce qu’ils peuvent faire avec cette puissante solution de médias riches d’Adobe. Dans cette partie du tutoriel, vous découvrirez ce qu’est Dynamic Media Classic et examinerez brièvement ses principales fonctionnalités et son interface utilisateur.
 doc-type: tutorial
-topics: best-practices, development, authoring, configuring
 audience: all
 activity: develop, use
 feature: Dynamic Media Classic
@@ -10,7 +9,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 1%

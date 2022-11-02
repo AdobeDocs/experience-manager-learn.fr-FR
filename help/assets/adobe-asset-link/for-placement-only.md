@@ -1,7 +1,7 @@
 ---
 title: Rendu For Placement Only (FPO)
 description: Les ressources Adobe Experience Manager peuvent désormais être utilisées par les concepteurs et les utilisateurs créatifs dans leurs applications de bureau Adobe Creative Cloud préférées. L’extension Adobe Asset Link pour Adobe Creative Cloud Enterprise permet de rechercher et de parcourir, de trier, de prévisualiser, de charger des ressources, d’extraire, de modifier, d’archiver et d’afficher les métadonnées des ressources AEM dans des outils de Creative Cloud tels qu’Adobe Photoshop, InDesign et Illustrator.
-sub-product: assets
+sub-product: Experience Manager Assets
 feature: Adobe Asset Link
 version: Cloud Service
 kt: 4916
@@ -10,7 +10,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 940608db-6e84-441a-b031-e8cf52459597
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
