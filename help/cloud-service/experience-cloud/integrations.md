@@ -11,10 +11,10 @@ thumbnail: KT-10718.png
 last-substantial-update: 2022-10-02T00:00:00Z
 mini-toc-levels: 1
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '958'
-ht-degree: 15%
+ht-degree: 18%
 
 ---
 
@@ -45,7 +45,7 @@ Cliquez sur le produit Experience Cloud pour obtenir de la documentation sur la 
 
 ## Adobe Acrobat Sign
 
-Adobe Acrobat Sign (anciennement Adobe Sign) active les processus de signature électronique pour les formulaires adaptatifs d’AEM Forms en améliorant les processus de traitement des documents pour les questions juridiques, de vente, de paie, de ressources humaines et autres.
+Adobe Acrobat Sign (anciennement Acrobat Sign) active les processus de signature électronique pour les formulaires adaptatifs d’AEM Forms en améliorant les processus de traitement des documents pour les questions juridiques, de vente, de paie, de ressources humaines et autres.
 
 ### AEM Forms
 
@@ -71,7 +71,7 @@ L&#39;intégration d&#39;Adobe Analytics avec AEM as a Cloud Service vous permet
 
 + [Présentation des statistiques sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html)
 + [Configuration des statistiques sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html#configure-asset-insights)
-+ [Tutoriel sur les statistiques sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)
++ [Tutoriel sur les statistiques sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=fr)
 
 ### AEM Forms
 
@@ -103,7 +103,7 @@ Les balises Adobe Experience Platform (anciennement Adobe Launch, DTM) s’intè
 ### AEM Sites
 
 + [Guide d’utilisation des balises Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-+ [Tutoriel sur les balises Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
++ [Tutoriel sur les balises Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=fr)
 
 ### AEM Forms
 

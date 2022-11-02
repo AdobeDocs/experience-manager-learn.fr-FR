@@ -9,7 +9,7 @@ topic: Development
 role: User
 level: Beginner
 exl-id: 565d81a4-2918-44ea-a3e9-ed79f246f08a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -22,7 +22,7 @@ L’étape suivante consiste à créer les formulaires adaptatifs que vous souha
 
 * Assurez-vous que les formulaires reposent sur la variable **SignMultipleForms** modèle. Ainsi, les formulaires sont préremplis avec les données récupérées dans la base de données.
 
-* Les formulaires doivent être configurés pour utiliser Adobe Sign et le champ signer1 doit être associé au champ Email du client.
+* Les formulaires doivent être configurés pour utiliser Acrobat Sign et le champ signer1 doit être associé au champ Email du client.
 * Les formulaires doivent également être associés à clientLib appelé **getnextform**
 * Les formulaires doivent utiliser le composant Étape de signature.
 * Le formulaire doit également utiliser la variable **Signature de plusieurs formulaires** composant. Ce composant vous permet d’accéder au formulaire suivant pour vous connecter au module.
@@ -44,6 +44,6 @@ Une fois le formulaire créé, incluez la variable **commonfields** fragment de 
 
 Une fois que tous les formulaires du package sont remplis et signés, nous devons afficher le message approprié. Ce message s’affiche à l’aide d’un formulaire Tout fait. Le formulaire Autorisé est inclus dans les exemples de formulaires.
 
-## Assets
+## Ressources
 
 Les exemples de formulaires, y compris ceux utilisés dans ce tutoriel, peuvent être [téléchargé ici](assets/forms-for-signing.zip)

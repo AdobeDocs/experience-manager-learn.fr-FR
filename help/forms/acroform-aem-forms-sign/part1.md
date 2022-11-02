@@ -8,7 +8,7 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 3%
@@ -29,13 +29,13 @@ Les Acroforms sont des formulaires créés à l’aide d’Acrobat. Vous pouvez 
 
 >[!NOTE]
 >
->Si vous souhaitez envoyer l’acroformulaire à remplir pour signature à l’aide d’Adobe Sign, attribuez un nom aux champs. Par exemple, vous pouvez nommer un champ. **Sig_es_:signer1:signature**. Il s’agit de la syntaxe qu’Adobe Sign comprend.
+>Si vous souhaitez envoyer l’acroformulaire à remplir pour signature à l’aide d’Acrobat Sign, attribuez un nom aux champs. Par exemple, vous pouvez nommer un champ. **Sig_es_:signer1:signature**. Il s’agit de la syntaxe qu’Acrobat Sign comprend.
 
 >[!NOTE]
 >
->Si vous envoyez un document basé sur XFA, vous devez aplatir le document et les balises de signature Adobe Sign doivent être présentes en tant que texte statique dans le document.
+>Si vous envoyez un document basé sur XFA, vous devez aplatir le document et les balises de signature Acrobat Sign doivent être présentes en tant que texte statique dans le document.
 
-[Document de balises de texte Adobe Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html)
+[Document de balises de texte Acrobat Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html)
 
 >[!NOTE]
 >

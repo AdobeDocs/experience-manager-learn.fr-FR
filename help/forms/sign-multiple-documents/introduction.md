@@ -9,26 +9,26 @@ role: Developer
 level: Experienced
 exl-id: 0260d4b6-8615-4d78-a920-b36766a0f8e9
 last-substantial-update: 2021-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 2%
 
 ---
 
-# Présentation 
+# Présentation
 
-Que vous effectuiez une demande de prêt immobilier ou que vous ouvriez un nouveau compte bancaire, vous devez remplir et signer plusieurs formulaires. L’intégration entre AEM Forms et Adobe Sign facilite le remplissage et la signature de plusieurs formulaires.
+Que vous effectuiez une demande de prêt immobilier ou que vous ouvriez un nouveau compte bancaire, vous devez remplir et signer plusieurs formulaires. L’intégration entre AEM Forms et Acrobat Sign facilite le remplissage et la signature de plusieurs formulaires.
 La vidéo suivante vous guide tout au long des cas pratiques de signature de plusieurs formulaires.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330165?quality=9&learn=on)
 
-## Conditions préalables
+## Prérequis
 
 Ce cours suppose ce qui suit :
 
 * Vous avez accès au serveur AEM 6.4 ou 6.5 avec le package Forms Add on installé et configuré.
-* AEM configuré avec Adobe Sign
+* AEM configuré avec Acrobat Sign
 * Accès au serveur SMTP
 * Expérience avec AEM/AEM Forms
 

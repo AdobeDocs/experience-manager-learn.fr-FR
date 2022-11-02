@@ -6,7 +6,7 @@ topic: Upgrade
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: 34fbb22916cf8a8df0e3240835c71e0979fd11bd
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '3460'
 ht-degree: 6%
@@ -19,7 +19,7 @@ Une ventilation de haut niveau des fonctionnalités clés pour les clients qui e
 
 ## Principales fonctionnalités pour la mise à niveau vers AEM 6.5
 
-+ [Notes de mise à jour d’Adobe Experience Manager 6.5](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes.html )
++ [Notes de mise à jour d’Adobe Experience Manager 6.5](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes.html )
 
 ### Améliorations de la base
 
@@ -521,7 +521,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités de Sites 
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Traduction de contenu</a>:</strong>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/translation.html" target="_blank">Traduction de contenu</a>:</strong>
             La structure Plug-and-play s’intègre aux services de traduction tiers de pointe.</td>
             <td></td>
             <td></td>
@@ -1051,8 +1051,8 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités du module
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedintegrationwithAdobeSign" target="_blank">Intégration Adobe Sign</a>:</strong>
-            Autoriser le déploiement des scénarios de signature Adobe Sign basés sur les formulaires intégrés.</td>
+            <td><strong><a href="https://helpx.adobe.com/aem-forms/6-5/whats-new.html#EnhancedintegrationwithAdobeSign" target="_blank">Intégration Acrobat Sign</a>:</strong>
+            Autoriser le déploiement des scénarios de signature Acrobat Sign basés sur les formulaires intégrés.</td>
             <td> </td>
             <td> </td>
             <td> </td>

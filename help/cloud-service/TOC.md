@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: Experience Manager
 version: Cloud Service
 team: TM
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 29%
+ht-degree: 28%
 
 ---
 
@@ -147,7 +147,7 @@ ht-degree: 29%
       + [Migration des workflows de ressources Outil](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Navigation dans Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Utilisation de Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
-+ Forms{#forms}
++ Formulaires{#forms}
 
    + Développement pour Forms as a Cloud Service{#developing-for-cloud-service}
       + [Prise en main](./forms/developing-for-cloud-service/getting-started.md)
@@ -206,10 +206,10 @@ ht-degree: 29%
       + [Externaliser le stockage des workflows](./forms/create-aem-workflow/externalize-workflow.md)
       + [Créer un modèle de workflow](./forms/create-aem-workflow/create-workflow.md)
       + [Workflow de déclenchement](./forms/create-aem-workflow/configure-af.md)
-   + Adobe Sign avec AEM Forms{#forms-and-sign}
+   + Acrobat Sign avec AEM Forms{#forms-and-sign}
       + [Présentation](./forms/forms-and-sign/introduction.md)
-      + [Application d’API Adobe Sign](./forms/forms-and-sign/create-sign-api-application.md)
-      + [Configuration cloud Adobe Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
+      + [Application d’API Acrobat Sign](./forms/forms-and-sign/create-sign-api-application.md)
+      + [Configuration du cloud Acrobat Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [Créer un formulaire adaptatif](./forms/forms-and-sign/create-adaptive-form.md)
       + [Configuration pour le remplissage et la signature](./forms/forms-and-sign/configure-form-fill-and-sign.md)
    + Intégration à Microsoft Power Automate{#forms-cs-and-power-automate}

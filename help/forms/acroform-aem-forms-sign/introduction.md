@@ -1,13 +1,13 @@
 ---
 title: Acroforms avec AEM Forms
-description: Tutoriel qui décrit la création d’un formulaire adaptatif à l’aide d’Acrobat et la fusion des données pour obtenir un PDF. Le PDF contenant les données fusionnées peut ensuite être envoyé pour signature à l’aide d’Adobe Sign.
+description: Tutoriel qui décrit la création d’un formulaire adaptatif à l’aide d’Acrobat et la fusion des données pour obtenir un PDF. Le PDF contenant les données fusionnées peut ensuite être envoyé pour signature à l’aide d’Acrobat Sign.
 feature: adaptive-forms
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 4%
@@ -17,13 +17,13 @@ ht-degree: 4%
 
 # Création de Forms adaptatif à partir d’Acrobat
 
-Les organisations ont une grande variété de formes. Certains de ces formulaires sont créés dans Microsoft Word et convertis en PDF. Par défaut, ces formulaires ne peuvent pas être remplis à l’aide d’Adobe Reader ou d’Acrobat. Pour que ces formulaires puissent être remplis à l’aide d’Acrobat ou de Reader, nous devons les convertir en Acrobat. Les Acroforms sont des formulaires créés à l’aide d’Acrobat. Cet article décrit la création d’un formulaire adaptatif à partir d’Acrobat et la fusion des données dans Acrobat pour obtenir le PDF. Le PDF avec les données fusionnées peut également être envoyé pour signature à l’aide d’Adobe Sign.
+Les organisations ont une grande variété de formes. Certains de ces formulaires sont créés dans Microsoft Word et convertis en PDF. Par défaut, ces formulaires ne peuvent pas être remplis à l’aide d’Adobe Reader ou d’Acrobat. Pour que ces formulaires puissent être remplis à l’aide d’Acrobat ou de Reader, nous devons les convertir en Acrobat. Les Acroforms sont des formulaires créés à l’aide d’Acrobat. Cet article décrit la création d’un formulaire adaptatif à partir d’Acrobat et la fusion des données dans Acrobat pour obtenir le PDF. Le PDF avec les données fusionnées peut également être envoyé pour signature à l’aide d’Acrobat Sign.
 
 >[!NOTE]
 >
 >Si vous utilisez AEM Forms 6.5, utilisez la fonctionnalité d’Automated forms conversion.
 
-## Conditions préalables
+## Prérequis
 
 * AEM Forms 6.3 ou 6.4 installé et configuré
 * Accès à Adobe Acrobat

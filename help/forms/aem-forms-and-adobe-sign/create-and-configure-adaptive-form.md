@@ -1,16 +1,17 @@
 ---
 title: Création et configuration d’un formulaire adaptatif
 description: Créez et configurez un formulaire adaptatif. La vidéo suivante présente les étapes nécessaires à la création et à la configuration d’un formulaire adaptatif pour générer automatiquement un document d’enregistrement. La vidéo vous guide également tout au long des étapes nécessaires à la configuration d’un formulaire adaptatif pour déclencher un processus AEM.
-feature: Forms adaptatif,Adobe Sign
+feature: Adaptive Forms,Acrobat Sign
 thumbnail: 38348.jpg
 kt: 6039
-topic: Développement
+topic: Development
 role: User
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: ee3dc77d-a888-473f-b2a6-7f7a4e969358
+source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 1%
+source-wordcount: '85'
+ht-degree: 0%
 
 ---
 
@@ -19,4 +20,3 @@ ht-degree: 1%
 La vidéo suivante présente les étapes nécessaires à la création et à la configuration d’un formulaire adaptatif pour générer automatiquement un document d’enregistrement. La vidéo vous guide également tout au long des étapes nécessaires à la configuration d’un formulaire adaptatif pour déclencher un processus AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38348/?quality=9&learn=on)
-
