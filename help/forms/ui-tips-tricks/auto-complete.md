@@ -9,9 +9,9 @@ role: Developer
 level: Beginner
 kt: 11374
 last-substantial-update: 2022-11-01T00:00:00Z
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
+source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,11 @@ L’exemple inclus dans cet article utilise diverses sources de données (tablea
 
 Le code utilisé pour accomplir la fonctionnalité de saisie semi-automatique est associé à l’événement initialize du champ.
 
-
-## Fourniture de suggestions pour le nom du pays
-
-![suggestions de pays](assets/auto-complete1.png)
-
 ## Suggestion d’adresse
 
 ![suggestions de pays](assets/auto-complete2.png)
+
+
 
 Voici le code utilisé pour fournir des suggestions d’adresses de rue :
 
@@ -60,6 +57,10 @@ $(".streetAddress input").autocomplete({
 
 });
 ```
+
+
+
+
 
 ## Suggestions avec l’émoticône
 
