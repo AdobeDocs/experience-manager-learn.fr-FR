@@ -2,16 +2,16 @@
 title: Utilisation AEM composants React modifiables v2
 description: Découvrez comment utiliser AEM React Editable Components v2 pour alimenter une application React.
 version: Cloud Service
-feature: SPA Editor
 topic: Headless
+feature: SPA Editor
 role: Developer
 level: Intermediate
 kt: 10900
 thumbnail: kt-10900.jpeg
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: f02d5e01388ee61228254951b05c37c336423348
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -33,7 +33,7 @@ Pour plus d’informations et d’exemples de code pour AEM React Editable Compo
 
 ## AEM pages
 
-Les composants React modifiables d’AEM fonctionnent avec SPA éditeur ou les applications à distance SPA React. Le contenu renseignant les composants React modifiables doit être exposé via AEM pages qui étendent la variable [Composant de page SPA](https://experienceleague.adobe.com/docs/experience-manager-64/developing/headless/spas/spa-page-component.html). AEM composants, qui mappe les composants React modifiables, doivent implémenter AEM [Structure de l’exportateur de composants](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html) - par exemple [AEM composants WCM principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
+Les composants React modifiables d’AEM fonctionnent avec SPA éditeur ou les applications à distance SPA React. Le contenu renseignant les composants React modifiables doit être exposé via AEM pages qui étendent la variable [Composant de page SPA](https://experienceleague.adobe.com/docs/experience-manager-64/developing/headless/spas/spa-page-component.html). AEM composants, qui mappe les composants React modifiables, doivent implémenter AEM [Structure de l’exportateur de composants](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html?lang=fr) - par exemple [AEM composants WCM principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
 
 
 ## Dépendances
