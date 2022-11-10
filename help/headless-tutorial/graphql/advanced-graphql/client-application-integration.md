@@ -7,283 +7,317 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: d0576962-a86a-4742-8635-02be1ec3243f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '962'
 ht-degree: 2%
 
 ---
 
 # Intégration d’applications client
 
-Dans le chapitre précédent, vous avez créé et mis à jour des requêtes persistantes à l’aide de requêtes HTTP PUT et POST.
+Dans le chapitre précédent, vous avez créé et mis à jour des requêtes persistantes à l’aide de l’explorateur GraphiQL.
 
-Ce chapitre décrit les étapes à suivre pour intégrer ces requêtes persistantes à l’application WKND à l’aide de requêtes de GET HTTP dans cinq composants React :
-
-* Emplacement
-* Adresse
-* Instructions
-* Administrateur
-* Équipe
+Ce chapitre décrit les étapes à suivre pour intégrer les requêtes persistantes à l’application cliente WKND (ou application WKND) à l’aide de requêtes de GET HTTP dans les **Composants React**. Il offre également un défi facultatif pour appliquer vos connaissances AEM sans affichage et votre expertise en codage afin d’améliorer l’application cliente WKND.
 
 ## Prérequis {#prerequisites}
 
-Ce document fait partie d’un tutoriel en plusieurs parties. Assurez-vous que les chapitres précédents ont été terminés avant de poursuivre ce chapitre. Fin de la [tutoriel de base](/help/headless-tutorial/graphql/multi-step/overview.md) est recommandé.
+Ce document fait partie d’un tutoriel en plusieurs parties. Assurez-vous que les chapitres précédents ont été terminés avant de poursuivre ce chapitre. L’application cliente WKND se connecte à AEM service de publication. Il est donc important que vous **publié le code suivant sur le service de publication AEM**.
 
-_Les captures d’écran IDE de ce chapitre proviennent de [Visual Studio Code](https://code.visualstudio.com/)_
+* Configurations de projet
+* Points d’entrée GraphQL
+* Modèles de fragment de contenu
+* Fragments de contenu créés
+* Requêtes persistantes GraphQL
+
+Le _Les captures d’écran IDE de ce chapitre proviennent de [Visual Studio Code](https://code.visualstudio.com/)_
 
 ### Package de solution Chapitre 1-4 (facultatif) {#solution-package}
 
 Un module de solution est disponible pour être installé. Il exécute les étapes de l’interface utilisateur AEM pour les chapitres 1 à 4. Ce module est **non requis** si les chapitres précédents sont terminés.
 
-1. Télécharger [Advanced-GraphQL-Tutorial-Solution-Package-1.1.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.1.zip).
+1. Télécharger [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip).
 1. Dans AEM, accédez à **Outils** > **Déploiement** > **Packages** accès **Gestionnaire de modules**.
 1. Téléchargez et installez le package (fichier zip) téléchargé à l’étape précédente.
+1. Répliquez le module au service AEM Publish
 
 ## Objectifs {#objectives}
 
-Dans ce tutoriel, vous apprenez à intégrer les requêtes de requêtes persistantes dans l’exemple d’application WKND GraphQl React à l’aide du code JavaScript sans affichage AEM [SDK](https://github.com/adobe/aem-headless-client-js).
+Dans ce tutoriel, vous apprenez à intégrer les requêtes de requêtes persistantes dans l’exemple d’application WKND GraphQL React à l’aide de la fonction [AEM client sans affichage pour JavaScript](https://github.com/adobe/aem-headless-client-js).
 
-## Installation et exécution de l’exemple d’application cliente {#install-client-app}
+## Cloner et exécuter l’exemple d’application cliente {#clone-client-app}
 
 Pour accélérer le tutoriel, une application React JS de démarrage est fournie.
 
->[!NOTE]
-> 
-> Vous trouverez ci-dessous les instructions pour connecter l’application React à une **Auteur** dans AEM as a Cloud Service à l’aide d’un [jeton d’accès au développement local](/help/headless-tutorial/authentication/local-development-access-token.md). Il est également possible de connecter l’application à une [instance d’auteur locale à l’aide du SDK AEMaaCS](/help/headless-tutorial/graphql/quick-setup/local-sdk.md) utilisation de l’authentification de base.
-
-1. Télécharger **[aem-guides-wknd-headless-start-tutorial.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/aem-guides-wknd-headless-start-tutorial.zip)**.
-1. Décompressez le fichier et ouvrez le projet dans votre IDE.
-1. Obtention d’un [jeton de développement local](/help/headless-tutorial/authentication/local-development-access-token.md) pour votre environnement AEM cible.
-1. Dans le projet, ouvrez le fichier . `.env.development`.
-   1. Définir `REACT_APP_DEV_TOKEN` égal à `accessToken` à partir du jeton de développement local. (Pas l’intégralité du fichier JSON)
-   1. Définir `REACT_APP_HOST_URI` à l’url de votre AEM **Auteur** environnement.
-
-   ![Mise à jour du fichier d’environnement local](assets/client-application-integration/update-environment-file.png)
-1. Ouvrez un nouveau terminal et accédez au dossier du projet. Exécutez les commandes suivantes :
+1. Cloner le [adobe/aem-guides-wknd-graphql](https://github.com/adobe/aem-guides-wknd-graphql) référentiel :
 
    ```shell
+   $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
+   ```
+
+1. Modifiez la variable `aem-guides-wknd-graphql/advanced-tutorial/.env.development` fichier et définition `REACT_APP_HOST_URI` pour pointer vers votre service de publication AEM cible.
+
+   Mettez à jour la méthode d’authentification lors de la connexion à une instance d’auteur.
+
+   ```plain
+   # Server namespace
+   REACT_APP_HOST_URI=https://publish-pxx-eyy.adobeaemcloud.com
+   
+   #AUTH (Choose one method)
+   # Authentication methods: 'service-token', 'dev-token', 'basic' or leave blank to use no authentication
+   REACT_APP_AUTH_METHOD=
+   
+   # For Bearer auth, use DEV token (dev-token) from Cloud console
+   REACT_APP_DEV_TOKEN=
+   
+   # For Service toke auth, provide path to service token file (download file from Cloud console)
+   REACT_APP_SERVICE_TOKEN=auth/service-token.json
+   
+   # For Basic auth, use AEM ['user','pass'] pair (eg for Local AEM Author instance)
+   REACT_APP_BASIC_AUTH_USER=
+   REACT_APP_BASIC_AUTH_PASS=
+   ```
+
+   ![Environnement de développement d’applications React](assets/client-application-integration/react-app-dev-env-settings.png)
+
+
+   >[!NOTE]
+   > 
+   > Les instructions ci-dessus sont de connecter l’application React à la variable **Service de publication AEM**, mais pour se connecter au **Service AEM Author** obtenir un jeton de développement local pour votre environnement cible AEM as a Cloud Service.
+   >
+   > Il est également possible de connecter l’application à une [instance d’auteur locale à l’aide du SDK AEMaaCS](/help/headless-tutorial/graphql/quick-setup/local-sdk.md) utilisation de l’authentification de base.
+
+
+1. Ouvrez un terminal et exécutez les commandes :
+
+   ```shell
+   $ cd aem-guides-wknd-graphql/advanced-tutorial
    $ npm install
    $ npm start
    ```
 
-1. Un nouveau navigateur doit s’ouvrir à l’adresse `http://localhost:3000/aem-guides-wknd-pwa`.
+1. Une nouvelle fenêtre de navigateur doit s’afficher [http://localhost:3000](http://localhost:3000)
+
+
 1. Appuyer **Camping** > **Yosemite Backpackaging** pour consulter les détails de l’aventure Yosemite Backpack.
 
    ![Ecran De Retour En Yosemite](assets/client-application-integration/yosemite-backpacking-adventure.png)
 
 1. Ouvrez les outils de développement du navigateur et examinez la variable `XHR` requête
 
-   ![POST GraphQL](assets/client-application-integration/post-query-graphql.png)
+   ![POST GraphQL](assets/client-application-integration/graphql-persisted-query.png)
 
-   Vous devriez voir une `POST` au point d’entrée GraphQL. Affichage de la variable `Payload`, vous pouvez voir la requête GraphQL complète qui a été envoyée. Dans les sections suivantes, l’application est mise à jour afin d’utiliser **persistant** requêtes.
+   Vous devriez voir `GET` demande au point d’entrée GraphQL avec le nom de configuration du projet (`wknd-shared`), nom de requête persistant (`adventure-by-slug`), nom de variable (`slug`), valeur (`yosemite-backpacking`) et les encodages de caractères spéciaux.
+
+>[!IMPORTANT]
+>
+>    Si vous vous demandez pourquoi la requête de l’API GraphQL est envoyée à l’adresse `http://localhost:3000` et NON pas par rapport au domaine du service de publication AEM, passez en revue [Sous la porte](../multi-step/graphql-and-react-app.md#under-the-hood) du tutoriel de base.
 
 
-## Prise en main
+## Vérification du code
 
-Dans le tutoriel de base, une requête GraphQl paramétrée est utilisée pour demander un fragment de contenu unique et générer les détails de l’aventure. Mettez ensuite à jour la variable `adventureDetailQuery` pour inclure de nouveaux champs et utiliser les requêtes persistantes créées dans le chapitre précédent.
+Dans le [Tutoriel de base - Création d’une application React qui utilise AEM API GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object) étape que nous avons passée en revue et amélioré quelques dossiers clés pour obtenir une expertise pratique. Avant d’améliorer l’application WKND, passez en revue les fichiers clés.
 
-Cinq composants sont créés :
+* [Vérification de l’objet AEMHeadless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#review-the-aemheadless-object)
 
-| Composant React | Emplacement |
-|-------|------|
-| Administrateur | `src/components/Administrator.js` |
-| Équipe | `src/components/Team.js` |
-| Emplacement | `src/components/Location.js` |
-| Instructions | `src/components/Instructors.js` |
-| Adresse | `src/components/Address.js` |
+* [Mise en oeuvre pour exécuter AEM requêtes persistantes GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/graphql-and-react-app.html#implement-to-run-aem-graphql-persisted-queries)
 
-## Mise à jour du crochet useGraphQL
+### Réviser `Adventures` Composant React
 
-Une [React Effet Hook](https://reactjs.org/docs/hooks-overview.html#effect-hook) a été créé pour écouter les modifications apportées au `query`, et lors de la modification, envoie une requête de POST HTTP au point de terminaison AEM GraphQL et renvoie la réponse JSON à l’application.
+La vue principale de l’application WKND React est la liste de toutes les aventures et vous pouvez filtrer ces aventures en fonction du type d’activité comme _Camping, vélo_. Cette vue est générée par la variable `Adventures` composant. Vous trouverez ci-dessous les principaux détails de mise en oeuvre :
 
-Créer un crochet à utiliser **persistant** requêtes. L’application peut alors envoyer des requêtes de GET HTTP pour les détails Adventure. Le `runPersistedQuery` de [AEM SDK client sans affichage](https://github.com/adobe/aem-headless-client-js) est utilisé pour faciliter l’exécution d’une requête persistante.
+* Le `src/components/Adventures.js` calls `useAllAdventures(adventureActivity)` hook et here `adventureActivity` est de type d’activité.
 
-1. Ouvrez le fichier `src/api/useGraphQL.js`
-1. Ajouter un nouveau crochet pour `useGraphQLPersisted`:
+* Le `useAllAdventures(adventureActivity)` est défini dans la variable `src/api/usePersistedQueries.js` fichier . Basé sur `adventureActivity` , il détermine la requête persistante à appeler. Si la valeur n’est pas nulle, il appelle `wknd-shared/adventures-by-activity`, sinon, toutes les aventures disponibles `wknd-shared/adventures-all`.
 
-   ```javascript
-   /**
-   * Custom React Hook to perform a GraphQL query to a persisted query endpoint
-   * @param persistedPath - the short path to the persisted query
-   * @param fragmentPathParam - optional parameters object that can be passed in for parameterized persistent queries
-   */
-   export function useGraphQLPersisted(persistedPath, fragmentPathVariable) {
-       let [data, setData] = useState(null);
-       let [errors, setErrors] = useState(null);
-   
-       useEffect(() => {
-           let queryVariables = {};
-   
-           // we pass in a primitive fragmentPathVariable (String) and then construct the object {fragmentPath: fragmentPathParam} to pass as query params to the persisted query
-           // It is simpler to pass a primitive into a React hooks, as comparing the state of a dependent object can be difficult. see https://reactjs.org/docs/hooks-faq.html#can-i-skip-an-effect-on-updates
-           if(fragmentPathVariable) {
-               queryVariables = {fragmentPath: fragmentPathVariable};
-           }
-   
-           // execute a persisted query using the given path and pass in variables (if needed)
-           sdk.runPersistedQuery(persistedPath, queryVariables)
-               .then(({ data, errors }) => {
-               if (errors) setErrors(mapErrors(errors));
-               if (data) setData(data);
-           })
-           .catch((error) => {
-           setErrors(error);
-           });
-   }, [persistedPath, fragmentPathVariable]);
-   
-   return { data, errors }
-   }
-   ```
-1. Enregistrez les modifications apportées au fichier.
+* Le point d’extension utilise l’extension principale `fetchPersistedQuery(..)` qui délègue l’exécution de la requête à `AEMHeadless` via `aemHeadlessClient.js`.
 
-## Mettre à jour le composant Détails de l’aventure
+* Le point d’extension renvoie également uniquement les données appropriées de la réponse GraphQL AEM à l’adresse `response.data?.adventureList?.items`, ce qui permet à la variable `Adventures` Réagissez aux composants d’affichage pour être indépendant des structures JSON parentes.
 
-Le fichier `src/api/queries.js` contient les requêtes GraphQL utilisées pour alimenter l’application. `adventureDetailQuery` renvoie les détails d’une aventure individuelle à l’aide de la requête GraphQL de POST standard. Mettez ensuite à jour la variable `AdventureDetail` pour utiliser le composant persistant `wknd/all-adventure-details` requête.
+* Une fois la requête exécutée, la variable `AdventureListItem(..)` fonction de rendu à partir de `Adventures.js` ajoute un élément de HTML pour afficher la variable _Image, Durée du voyage, Prix et Titre_ informations.
 
-1. Ouvrez `src/screens/AdventureDetail.js`.
-1. Commencez par ajouter la ligne suivante :
+### Réviser `AdventureDetail` Composant React
 
-   ```javascript
-   export default function AdventureDetail() {
-   
-       ...
-   
-       //const { data, errors } = useGraphQL(adventureDetailQuery(adventureFragmentPath));
-   ```
+Le `AdventureDetail` React effectue le rendu des détails de l’aventure. Vous trouverez ci-dessous les principaux détails de mise en oeuvre :
 
-   Le code ci-dessus utilise le POST GraphQL standard pour récupérer les détails de l’aventure en fonction d’une `adventureFragmentPath`
+* Le `src/components/AdventureDetail.js` calls `useAdventureBySlug(slug)` hook et here `slug` L’argument est un paramètre de requête.
 
-1. Pour utiliser la variable `useGraphQLPersisted` hook, ajoutez la ligne suivante :
+* Comme ci-dessus, la fonction `useAdventureBySlug(slug)` est défini dans la variable `src/api/usePersistedQueries.js` fichier . Elle appelle `wknd-shared/adventure-by-slug` requête persistante en déléguant à `AEMHeadless` via `aemHeadlessClient.js`.
+
+* Une fois la requête exécutée, la variable `AdventureDetailRender(..)` fonction de rendu à partir de `AdventureDetail.js` ajoute un élément HTML pour afficher les détails de l’aventure.
+
+
+## Amélioration du code
+
+### Utilisation `adventure-details-by-slug` requête persistante
+
+Dans le chapitre précédent, nous avons créé la variable `adventure-details-by-slug` requête persistante, il fournit des informations supplémentaires telles que _location, instructorTeam et administrator_. Remplaçons-nous `adventure-by-slug` avec `adventure-details-by-slug` requête persistante pour effectuer le rendu de ces informations supplémentaires.
+
+1. Ouvrez `src/api/usePersistedQueries.js`.
+
+1. Localisation de la fonction `useAdventureBySlug()` et mettre à jour la requête en tant que
+
+```javascript
+ ...
+
+ // Call the AEM GraphQL persisted query named "wknd-shared/adventure-details-by-slug" with parameters
+ response = await fetchPersistedQuery(
+ "wknd-shared/adventure-details-by-slug",
+ queryParameters
+ );
+
+ ...
+```
+
+### Afficher des informations supplémentaires
+
+1. Pour afficher d’autres informations sur l’aventure, ouvrez `src/components/AdventureDetail.js`
+
+1. Localisation de la fonction `AdventureDetailRender(..)` et mettre à jour la fonction de retour en tant que
 
    ```javascript
-   export default function AdventureDetail() {
+   ...
    
-      //const { data, errors } = useGraphQL(adventureDetailQuery(adventureFragmentPath));
-       const {data, errors} = useGraphQLPersisted("wknd/all-adventure-details", adventureFragmentPath);
-   ```
-
-   Observez le chemin. `wknd/all-adventure-details` est le chemin d’accès à la requête conservée créée dans le chapitre précédent.
-
-   >[!CAUTION]
-   >
-   > Pour que la requête mise à jour fonctionne, la fonction `wknd/all-adventure-details` doit être conservé dans l’environnement AEM cible. Passez en revue les étapes de la section [Requêtes GraphQL persistantes](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md#cache-control-all-adventures) ou installez le [Package de solution AEM](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.1.zip)
-
-1. Revenez à l’application qui s’exécute dans le navigateur et utilisez les outils de développement de votre navigateur pour examiner la demande après avoir accédé à un **Détails de l’aventure** page.
-
-   ![Obtenir la requête](assets/client-application-integration/get-request-persisted-query.png)
-
-   ```
-   http://localhost:3000/graphql/execute.json/wknd/all-adventure-details;fragmentPath=/content/dam/wknd/en/adventures/yosemite-backpacking/yosemite-backpacking
-   ```
-
-   Vous devriez maintenant voir une `GET` qui utilise la requête conservée à l’adresse `wknd/all-adventure-details`.
-
-1. Accédez à d’autres détails sur l’aventure et observez que la même `GET` est effectuée avec différents chemins d’accès aux fragments. L’application doit continuer à fonctionner comme auparavant.
-
-Voir `AdventureDetail.js` dans le [aem-guides-wknd-headless-solution-tutorial.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/aem-guides-wknd-headless-solution-tutorial.zip) pour obtenir un exemple complet du composant mis à jour.
-
-Créez ensuite le **Emplacement**, **Administrateur**, et **Instructions** composants pour effectuer le rendu des données d’emplacement. Le **Adresse** est référencé dans la variable **Équipe** composant.
-
-## Développement du composant Emplacement
-
-1. Dans le `AdventureDetail.js` , ajoutez une référence au fichier `<Location>` transmission des données d’emplacement à partir du composant `adventure` objet de données :
-
-   ```javascript
-   export default function AdventureDetail() {
-       ...
+   return (<>
+       <h1 className="adventure-detail-title">{title}</h1>
+       <div className="adventure-detail-info">
    
-       return (
+           <LocationInfo {...location} />
+   
            ...
    
-           <Location data={adventure.location} />
+           <Location {...location} />
+   
+           <Administrator {...administrator} />
+   
+           <InstructorTeam {...instructorTeam} />
+   
+       </div>
+   </>); 
+   
+   ...
    ```
 
-1. Consultez le fichier à l’adresse `src/components/Location.js`. Le `Location` Le composant effectue le rendu des données pour le lieu de rencontre, les informations de contact, les informations sur la météo et une image d’emplacement du **Emplacement** Modèle de fragment de contenu. Au minimum, la variable `Location` attend une `address` à transmettre.
-1. Voir `Location.js` dans le [aem-guides-wknd-headless-solution-tutorial.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/aem-guides-wknd-headless-solution-tutorial.zip) pour obtenir un exemple complet du composant mis à jour.
+1. Définissez également les fonctions de rendu correspondantes :
 
-Une fois les mises à jour effectuées, la page des détails rendus doit se présenter comme suit :
-
-![location-component](assets/client-application-integration/location-component.png)
-
-## Développement du composant Équipe
-
-1. Dans le `AdventureDetail.js` , ajoutez une référence au fichier `<Team>` (sous le composant `<Location>` (transmission du composant) `instructorTeam` des `adventure` objet de données :
+   **LocationInfo**
 
    ```javascript
-   <Location data={adventure.location} />
-   <Team data={adventure.instructorTeam} />
+   function LocationInfo({name}) {
+   
+       if (!name) {
+           return null;
+       }
+   
+       return (
+           <>
+               <div className="adventure-detail-info-label">Location</div>
+               <div className="adventure-detail-info-description">{name}</div>
+           </>
+       );
+   
+   }
    ```
 
-1. Consultez le fichier à l’adresse `src/components/Team.js`. Le `Team` effectue le rendu des données sur la date de création de l’équipe, l’image et la description du **Équipe** Fragment de contenu.
-
-1. Dans `Team.js` notez l’inclusion de la variable `Address` composant.
+   **Emplacement**
 
    ```javascript
-   export default function Team({data}) {
-       ...
-       {teamPath && <Address _path={teamPath}/>}
+   function Location({ contactInfo }) {
+   
+       if (!contactInfo) {
+           return null;
+       }
+   
+       return (
+           <>
+               <div className='adventure-detail-location'>
+                   <h2>Where we meet</h2>
+                   <hr />
+                   <div className="adventure-detail-addtional-info">Phone:{contactInfo.phone}</div>
+                   <div className="adventure-detail-addtional-info">Email:{contactInfo.email}</div>
+               </div>
+           </>);
+   }
    ```
 
-   Ici, un chemin d’accès à l’équipe actuelle est transmis dans la variable `Address` , qui exécute à son tour une requête pour obtenir l’adresse en fonction de l’équipe.
-
-1. Voir `Team.js` dans le [aem-guides-wknd-headless-solution-tutorial.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/aem-guides-wknd-headless-solution-tutorial.zip) pour obtenir un exemple complet du composant.
-
-Une fois la requête intégrée, elle doit se présenter comme suit :
-
-![Team-component](assets/client-application-integration/address-component.png)
-
-## Développement du composant Adresse
-
-1. Consultez le fichier à l’adresse `src/components/Address.js`. Le `Address` Le composant effectue le rendu des informations sur l’adresse, telles que l’adresse de la rue, la ville, l’état, le code postal, le pays du **Adresse** Fragment de contenu, téléphone et courrier électronique du **Coordonnées** référence au fragment.
-1. Le `Address` est similaire au composant `AdventureDetails` en ce sens qu’il effectue un appel persistant pour récupérer les données en fonction d’un chemin d’accès. La différence réside dans le fait qu’il utilise des `/wknd/team-location-by-location-path` pour effectuer la requête.
-1. Voir `Address.js` dans le [aem-guides-wknd-headless-solution-tutorial.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/aem-guides-wknd-headless-solution-tutorial.zip) pour obtenir un exemple complet du composant.
-
-## Développement du composant Administrateur
-
-1. Dans le `AdventureDetail.js` , ajoutez une référence au fichier `<Adminstrator>` (sous le composant `<Team>` (transmission du composant) `administrator` des `adventure` objet de données :
+   **DescripteurTeam**
 
    ```javascript
-   <Location data={adventure.location} />
-   <Team data={adventure.instructorTeam} />
-   <Administrator data={adventure.administrator} /> 
+   function InstructorTeam({ _metadata }) {
+   
+       if (!_metadata) {
+           return null;
+       }
+   
+       return (
+           <>
+               <div className='adventure-detail-team'>
+                   <h2>Instruction Team</h2>
+                   <hr />
+                   <div className="adventure-detail-addtional-info">Team Name: {_metadata.stringMetadata[0].value}</div>
+               </div>
+           </>);
+   }
    ```
 
-1. Consultez le fichier à l’adresse `src/components/Administrator.js`. Le `Administrator` Le composant effectue le rendu des détails, tels que leur nom complet depuis le **Administrateur** Fragment de contenu et rendu du téléphone et de l’e-mail à partir du **Coordonnées** référence au fragment.
-1. Voir `Administrator.js` in [aem-guides-wknd-headless-solution-tutorial.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/aem-guides-wknd-headless-solution-tutorial.zip) pour obtenir un exemple complet du composant.
-
-Après avoir créé le composant Administrateur, vous êtes prêt à effectuer le rendu de l’application. La sortie doit correspondre à l’image ci-dessous :
-
-![administrator-component](assets/client-application-integration/administrator-component.png)
-
-## Développement du composant Instructions
-
-1. Dans le `AdventureDetail.js` , ajoutez une référence au fichier `<Instructors>` (sous le composant `<Administrator>` (transmission du composant) `instructorTeam` des `adventure` objet de données :
+   **Administrateur**
 
    ```javascript
-   <Location data={adventure.location} />
-   <Team data={adventure.instructorTeam}/>
-   <Administrator data={adventure.administrator} />             
-   <Instructors data={adventure.instructorTeam} />
+   function Administrator({ fullName, contactInfo }) {
+   
+       if (!fullName || !contactInfo) {
+           return null;
+       }
+   
+       return (
+           <>
+               <div className='adventure-detail-administrator'>
+                   <h2>Administrator</h2>
+                   <hr />
+                   <div className="adventure-detail-addtional-info">Name: {fullName}</div>
+                   <div className="adventure-detail-addtional-info">Phone: {contactInfo.phone}</div>
+                   <div className="adventure-detail-addtional-info">Email: {contactInfo.email}</div>
+               </div>
+           </>);
+   }
    ```
 
-1. Consultez le fichier à l’adresse `src/components/Instructors.js`. Le `Instructors` Le composant effectue le rendu des données sur chacun des membres de l’équipe, y compris le nom complet, la biographie, l’image, le numéro de téléphone, le niveau d’expérience et les compétences. Le composant effectue une itération sur un tableau pour afficher chaque membre.
-1. Voir `Instructors.js` in [aem-guides-wknd-headless-solution-tutorial.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/aem-guides-wknd-headless-solution-tutorial.zip) pour obtenir un exemple complet du composant.
+### Définition de nouveaux styles
 
-Une fois que vous avez rendu l’application, la sortie doit correspondre à l’image ci-dessous :
+1. Ouvrir `src/components/AdventureDetail.scss` et ajouter les définitions de classe suivantes
 
-![instructeurs-component](assets/client-application-integration/instructors-component.png)
+   ```CSS
+   .adventure-detail-administrator,
+   .adventure-detail-team,
+   .adventure-detail-location {
+   margin-top: 1em;
+   width: 100%;
+   float: right;
+   }
+   
+   .adventure-detail-addtional-info {
+   padding: 10px 0px 5px 0px;
+   text-transform: uppercase;
+   }
+   ```
 
-## Exemple d’application WKND terminé
+>[!TIP]
+>
+>Les fichiers mis à jour sont disponibles sous **AEM Guides WKND - GraphQL** projet, voir [Tutoriel avancé](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/advanced-tutorial) .
 
-L’application terminée doit ressembler à ceci :
 
-![AEM-headless-final-experience](assets/client-application-integration/aem-headless-final-experience.gif)
+Après avoir terminé les améliorations ci-dessus, l’application WKND ressemble à ce qui suit et les outils de développement du navigateur s’affichent `adventure-details-by-slug` appel de requête persistant.
 
-### Application client finale
+![APP WKND améliorée](assets/client-application-integration/Enhanced-WKND-APP.gif)
 
-La version finale de l’application peut être téléchargée et utilisée :
-**[aem-guides-wknd-headless-solution-tutorial.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/aem-guides-wknd-headless-solution-tutorial.zip)**
+## Défi d’amélioration (facultatif)
+
+La vue principale de l’application WKND React vous permet de filtrer ces aventures en fonction du type d’activité comme _Camping, vélo_. Cependant, l’équipe d’entreprise WKND souhaite disposer d’un _Emplacement_ fonctionnalité de filtrage basée sur . Les exigences sont les suivantes :
+
+* Sur la vue principale de l’application WKND, dans le coin supérieur gauche ou droit, ajoutez _Emplacement_ icône de filtrage.
+* Cliquer _Emplacement_ l’icône de filtrage doit afficher la liste des emplacements.
+* Cliquez sur l’option d’emplacement de votre choix dans la liste pour afficher uniquement les aventures correspondantes.
+* Si une seule aventure correspond, la vue Détails de l’aventure s’affiche.
 
 ## Félicitations
 

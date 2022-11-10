@@ -6,9 +6,10 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
-source-git-commit: 83e16ea87847182139982ea2378d8ff9f079c968
+exl-id: 998d3678-7aef-4872-bd62-0e6ea3ff7999
+source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '2911'
 ht-degree: 1%
 
 ---
@@ -19,7 +20,7 @@ Dans le [chapitre précédent](/help/headless-tutorial/graphql/advanced-graphql/
 
 ## Prérequis {#prerequisites}
 
-Ce document fait partie d’un tutoriel en plusieurs parties. Assurez-vous que les chapitres précédents ont été terminés avant de poursuivre ce chapitre.
+Ce document fait partie d’un tutoriel en plusieurs parties. Assurez-vous que la variable [chapitre précédent](create-content-fragment-models.md) a été terminé avant de poursuivre ce chapitre.
 
 ## Objectifs {#objectives}
 
@@ -36,7 +37,7 @@ Dans ce chapitre, découvrez comment :
 
 Installez un module d’AEM qui contient plusieurs dossiers et exemples d’images utilisés pour accélérer le tutoriel.
 
-1. Télécharger [Advanced-GraphQL-Tutorial-Starter-Package-1.0.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.0.zip)
+1. Télécharger [Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Starter-Package-1.1.zip)
 1. Dans AEM, accédez à **Outils** > **Déploiement** > **Packages** accès **Gestionnaire de modules**.
 1. Téléchargez et installez le package (fichier zip) téléchargé à l’étape précédente.
 
@@ -44,9 +45,9 @@ Installez un module d’AEM qui contient plusieurs dossiers et exemples d’imag
 
 ## Création de dossiers et définition de limites à l’aide de stratégies de dossiers
 
-Sur la page d’accueil AEM, sélectionnez **Ressources** > **Fichiers** > **Site WKND** > **Anglais**. Vous pouvez y voir les différentes catégories de fragments de contenu, y compris les aventures et les contributeurs qui ont été explorées dans la précédente [tutoriel GraphQL en plusieurs étapes](../multi-step/overview.md).
+Sur la page d’accueil AEM, sélectionnez **Ressources** > **Fichiers** > **WKND partagé** > **Anglais**. Vous trouverez ici les différentes catégories de fragments de contenu, y compris les avantages et les contributeurs.
 
-### Création de dossiers  {#create-folders}
+### Créer des dossiers {#create-folders}
 
 Accédez au **Aventures** dossier. Vous pouvez constater que des dossiers pour les équipes et les emplacements ont déjà été créés pour stocker les équipes et les emplacements dans les fragments de contenu.
 
@@ -70,11 +71,11 @@ AEM vous permet de définir des autorisations et des stratégies pour les dossie
 
    ![Propriétés](assets/author-content-fragments/properties.png)
 
-1. Sélectionnez la **Stratégies** , puis dé-sélectionner **Hérité de /content/dam/wknd**. Dans le **Modèles de fragment de contenu autorisés par chemin** , sélectionnez l’icône de dossier.
+1. Sélectionnez la **Stratégies** , puis dé-sélectionner **Hérité de /content/dam/wknd-shared**. Dans le **Modèles de fragment de contenu autorisés par chemin** , sélectionnez l’icône de dossier.
 
    ![Icône Dossier](assets/author-content-fragments/folder-icon.png)
 
-1. Dans la boîte de dialogue Sélectionner le chemin qui s’ouvre, suivez le chemin **conf** > **Site WKND**. Le modèle de fragment de contenu Personne, créé dans le chapitre précédent, contient une référence au modèle de fragment de contenu Coordonnées. Les modèles Person et Contact Info doivent être autorisés dans le dossier Instructions pour créer un fragment de contenu instructeur. Sélectionner **Personne** et **Coordonnées**, puis appuyez sur **Sélectionner** pour fermer la boîte de dialogue.
+1. Dans la boîte de dialogue Sélectionner le chemin qui s’ouvre, suivez le chemin **conf** > **WKND partagé**. Le modèle de fragment de contenu Personne, créé dans le chapitre précédent, contient une référence au modèle de fragment de contenu Coordonnées. Les modèles Person et Contact Info doivent être autorisés dans le dossier Instructions pour créer un fragment de contenu instructeur. Sélectionner **Personne** et **Coordonnées**, puis appuyez sur **Sélectionner** pour fermer la boîte de dialogue.
 
    ![Sélectionner le chemin](assets/author-content-fragments/select-path.png)
 
@@ -88,11 +89,11 @@ AEM vous permet de définir des autorisations et des stratégies pour les dossie
 
 Accédez au **Instructions** dossier. À partir de là, créons un dossier imbriqué pour stocker les coordonnées des instructeurs.
 
-Suivez les étapes décrites dans la section sur [création de dossiers](#create-folders) pour créer un dossier intitulé &quot;Contact Info&quot;. Notez que le dossier imbriqué hérite des stratégies de dossier du dossier parent. N’hésitez pas à configurer des stratégies plus spécifiques afin que le dossier nouvellement créé autorise uniquement l’utilisation du modèle Coordonnées .
+Suivez les étapes décrites dans la section sur [création de dossiers](#create-folders) pour créer un dossier intitulé &quot;Contact Info&quot;. Le dossier imbriqué hérite des stratégies de dossier du dossier parent. N’hésitez pas à configurer des stratégies plus spécifiques afin que le dossier nouvellement créé autorise uniquement l’utilisation du modèle Coordonnées .
 
 ### Création d’un fragment de contenu instructeur
 
-Créons quatre personnes qui peuvent être ajoutées à une équipe d&#39;instructeurs d&#39;aventure. Réutilisation des images et noms des fragments de contenu des contributeurs créés dans la précédente [tutoriel GraphQL en plusieurs étapes](../multi-step/author-content-fragments.md). Bien que le tutoriel précédent ait décrit comment créer des fragments de contenu de base, ce tutoriel se concentre sur des fonctionnalités plus avancées.
+Créons quatre personnes qui peuvent être ajoutées à une équipe d&#39;instructeurs d&#39;aventure.
 
 1. Dans le dossier Instructions, créez un fragment de contenu basé sur le modèle de fragment de contenu Personne et donnez-lui le titre &quot;Jacob Wester&quot;.
 
@@ -103,12 +104,12 @@ Créons quatre personnes qui peuvent être ajoutées à une équipe d&#39;instru
 1. Renseignez les champs suivants :
 
    * **Nom complet**: Jacob Wester
-   * **Biographie**: Jacob Wester est instructeur de randonnée depuis dix ans et a adoré chaque minute ! C&#39;est un chercheur d&#39;aventure avec un talent pour l&#39;escalade et la randonnée. Jacob est le gagnant des compétitions d&#39;escalade, y compris la compétition Battle of the Bay bouldering. Il vit actuellement en Californie.
+   * **Biographie**: Jacob Wester est instructeur de randonnée depuis dix ans et a adoré chaque minute ! Jacob est un chercheur d&#39;aventure avec un talent pour l&#39;escalade et la randonnée. Jacob est le gagnant des compétitions d&#39;escalade, y compris la compétition Battle of the Bay bouldering. Jacob vit actuellement en Californie.
    * **Niveau d’expérience de l’instructeur**: Expert
    * **Compétences**: Escalade, surf, randonnée
-   * **Détails de l’administrateur**: Jacob Wester coordonne les aventures de randonnée depuis 3 ans.
+   * **Détails de l’administrateur**: Jacob Wester coordonne les aventures de randonnée depuis trois ans.
 
-1. Dans le **Image de profil** , ajoutez une référence de contenu à une image. Accédez à **Site WKND** > **Anglais** > **Contributeurs** > **jacob_wester.jpg** pour créer un chemin d’accès à l’image.
+1. Dans le **Image de profil** , ajoutez une référence de contenu à une image. Accédez à **WKND partagé** > **Anglais** > **Contributeurs** > **jacob_wester.jpg** pour créer un chemin d’accès à l’image.
 
 ### Création d’une référence à un fragment à partir de l’éditeur de fragment de contenu {#fragment-reference-from-editor}
 
@@ -157,9 +158,9 @@ Suivez le même processus que décrit dans la section [section précédente](#fr
 | --- | --- |
 | Titre du fragment de contenu | Stacey Roswells |
 | Nom complet | Stacey Roswells |
-| Informations de contact | /content/dam/wknd/fr/aventures/instructors/contact-info/stacey-roswells-contact-info |
-| Image de profil | /content/dam/wknd/en/contributors/stacey-roswells.jpg |
-| Biographie | Stacey Roswells est un alpiniste accompli et un aventurier alpin. Né à Baltimore, dans le Maryland, Stacey est le plus jeune des six enfants. Son père était lieutenant-colonel de la US Navy et sa mère était enseignante de danse moderne. Sa famille a déménagé fréquemment avec les devoirs de son père, et elle a pris ses premières photos quand il était stationné en Thaïlande. C&#39;est aussi là que Stacey a appris à faire de l&#39;escalade. |
+| Informations de contact | /content/dam/wknd-shared/fr/aventures/instructors/contact-info/stacey-roswells-contact-info |
+| Image de profil | /content/dam/wknd-shared/en/contributors/stacey-roswells.jpg |
+| Biographie | Stacey Roswells est un alpiniste accompli et un aventurier alpin. Né à Baltimore, dans le Maryland, Stacey est le plus jeune des six enfants. Le père de Stacey était lieutenant-colonel dans la marine américaine et mère était enseignante de danse moderne. La famille de Stacey a déménagé fréquemment avec les devoirs de son père, et a pris les premières photos quand son père était en poste en Thaïlande. C&#39;est aussi là que Stacey a appris à faire de l&#39;escalade. |
 | Niveau d’expérience de l’instructeur | Avancé |
 | Compétences | Escalade | Skier | Remplir |
 
@@ -169,8 +170,8 @@ Suivez le même processus que décrit dans la section [section précédente](#fr
 | --- | --- |
 | Titre du fragment de contenu | Kumar Selvaraj |
 | Nom complet | Kumar Selvaraj |
-| Informations de contact | /content/dam/wknd/fr/aventures/instructors/contact-info/kumar-selvaraj-contact-info |
-| Image de profil | /content/dam/wknd/en/contributors/Kumar_Selvaraj.JPG |
+| Informations de contact | /content/dam/wknd-shared/fr/aventures/instructors/contact-info/kumar-selvaraj-contact-info |
+| Image de profil | /content/dam/wknd-shared/en/contributors/kumar-selvaraj.jpg |
 | Biographie | Kumar Selvaraj est une professeure professionnelle expérimentée certifiée AMGA dont le principal objectif est d&#39;aider les étudiants à améliorer leurs compétences en escalade et randonnée. |
 | Niveau d’expérience de l’instructeur | Avancé |
 | Compétences | Escalade | Remplir |
@@ -181,9 +182,9 @@ Suivez le même processus que décrit dans la section [section précédente](#fr
 | --- | --- |
 | Titre du fragment de contenu | Ayo Ogunseinde |
 | Nom complet | Ayo Ogunseinde |
-| Informations de contact | /content/dam/wknd/fr/aventures/instructors/contact-info/ayo-ogunseinde-contact-info |
-| Image de profil | /content/dam/wknd/en/contributors/ayo-ogunseinde-237739.jpg |
-| Biographie | Ayo Ogunseinde est un grimpeur professionnel et instructeur de randonnée vivant à Fresno, en Californie centrale. Son but est de guider les randonneurs dans leurs aventures les plus épopées du parc national. |
+| Informations de contact | /content/dam/wknd-shared/fr/aventures/instructors/contact-info/ayo-ogunseinde-contact-info |
+| Image de profil | /content/dam/wknd-shared/en/contributors/ayo-ogunseinde-237739.jpg |
+| Biographie | Ayo Ogunseinde est un grimpeur professionnel et instructeur de randonnée vivant à Fresno, en Californie centrale. Le but d&#39;Ayo est de guider les randonneurs dans leurs aventures les plus épopées du parc national. |
 | Niveau d’expérience de l’instructeur | Avancé |
 | Compétences | Escalade | Cyclisme | Remplir |
 
@@ -205,7 +206,7 @@ Accédez au **Emplacements** dossier. Vous voyez ici deux dossiers imbriqués qu
 
 ![Dossier Emplacements](assets/author-content-fragments/locations-folder.png)
 
-Ignorez le dossier Yosemite Valley lodge pour l’instant. Nous y reviendrons ultérieurement dans cette section lorsque nous créerons un nouvel emplacement qui servira de base d’accueil à notre équipe d’instructeurs.
+Ignorez le dossier Yosemite Valley lodge pour l’instant. Nous y reviendrons ultérieurement dans cette section lorsque nous créerons un emplacement qui servira de base d’accueil à notre équipe d’instructeurs.
 
 Accédez au **Parc national de Yosemite** dossier. Actuellement, il ne contient qu&#39;une photo du parc national de Yosemite. Créons un fragment de contenu à l’aide du modèle de fragment de contenu de l’emplacement et nommons-le &quot;Parc national Yosemite&quot;.
 
@@ -249,14 +250,14 @@ Ajoutons le reste du contenu au fragment de contenu de l’emplacement afin d’
    * **Nom**: Parc national de Yosemite
    * **Description**: Le parc national de Yosemite se trouve dans les montagnes de la Sierra Nevada en Californie. Elle est célèbre pour ses magnifiques chutes d&#39;eau, ses séquoias géants et ses vues emblématiques des falaises d&#39;El Capitan et du Half Dome. La randonnée et le camping sont les meilleurs moyens de vivre Yosemite. De nombreux sentiers offrent d&#39;innombrables possibilités d&#39;aventure et d&#39;exploration.
 
-1. Dans la **Coordonnées** créez un fragment de contenu en fonction du modèle Contact Info et donnez-lui le titre &quot;Yosemite National Park Contact Info&quot;. Suivez la même procédure que celle décrite dans la section précédente sur [création d’une référence à un fragment à partir de l’éditeur](#fragment-reference-from-editor) et saisissez les données suivantes dans les champs :
+1. Dans la **Coordonnées** , créez un fragment de contenu basé sur le modèle Contact Info et donnez-lui le titre &quot;Yosemite National Park Contact Info&quot;. Suivez la même procédure que celle décrite dans la section précédente sur [création d’une référence à un fragment à partir de l’éditeur](#fragment-reference-from-editor) et saisissez les données suivantes dans les champs :
 
    * **Téléphone**: 209-999-0000
    * **Email**: yosemite@wknd.com
 
 1. Dans la **Image de l’emplacement** champ, accédez à **Aventures** > **Emplacements** > **Parc national de Yosemite** > **yosemite-national-park.jpeg** pour créer un chemin d’accès à l’image.
 
-   N’oubliez pas que dans le chapitre précédent, vous avez configuré la validation de l’image. Par conséquent, les dimensions de l’image d’emplacement doivent être inférieures à 2 560 x 1 800, et sa taille de fichier doit être inférieure à 3 Mo.
+   N’oubliez pas que, dans le chapitre précédent, vous avez configuré la validation de l’image. Par conséquent, les dimensions de l’image d’emplacement doivent être inférieures à 2 560 x 1 800, et sa taille de fichier doit être inférieure à 3 Mo.
 
 1. Avec toutes les informations ajoutées, la variable **Détails de l’emplacement** se présente désormais comme suit :
 
@@ -276,7 +277,7 @@ Ajoutons le reste du contenu au fragment de contenu de l’emplacement afin d’
 
 1. Sélectionnez **Enregistrer et fermer**.
 
-### Création d’un fragment supplémentaire
+### Créer un fragment supplémentaire
 
 1. Accédez au **Logement de la vallée de Yosemite** dossier. Créez un fragment de contenu à l’aide du modèle de fragment de contenu de l’emplacement et nommez-le &quot;Yosemite Valley lodge&quot;.
 
@@ -312,7 +313,7 @@ Parcourir les dossiers vers **Équipes** > **Equipe Yosemite**. Vous pouvez cons
 
 ![Dossier Yosemite Team](assets/author-content-fragments/yosemite-team-folder.png)
 
-Créez un fragment de contenu à l’aide du modèle de fragment de contenu de l’équipe et nommez-le &quot;Équipe Yosemite&quot;.
+Créons un fragment de contenu à l’aide du modèle de fragment de contenu de l’équipe et nommons-le &quot;Équipe Yosemite&quot;.
 
 ### Références à des fragments et du contenu dans l’éditeur de texte multiligne
 
@@ -336,7 +337,7 @@ N’oubliez pas que dans le chapitre précédent, vous avez autorisé l’ajout 
 
    ![Icône Insérer un fragment de contenu](assets/author-content-fragments/insert-content-fragment-icon.png)
 
-1. Accédez à **Site WKND** > **Anglais** > **Aventures** > **Emplacements** > **Logement de la vallée de Yosemite** > **Logement de la vallée de Yosemite**. Press **Sélectionner** pour insérer le fragment de contenu.
+1. Accédez à **WKND partagé** > **Anglais** > **Aventures** > **Emplacements** > **Logement de la vallée de Yosemite** > **Logement de la vallée de Yosemite**. Press **Sélectionner** pour insérer le fragment de contenu.
 
    ![Fenêtre modale Insérer un fragment de contenu](assets/author-content-fragments/insert-content-fragment-modal.png)
 
@@ -362,7 +363,7 @@ Ajoutons des instructeurs à la référence de fragment Membres de l’équipe.
 
    ![Bouton Ajouter](assets/author-content-fragments/add-button.png)
 
-1. Dans le nouveau champ qui s’affiche, sélectionnez l’icône de dossier pour ouvrir le modal Sélectionner le chemin . Parcourir les dossiers pour **Site WKND** > **Anglais** > **Aventures** > **Instructions**, puis cochez la case en regard de . **jacob-wester**. Press **Sélectionner** pour enregistrer le chemin.
+1. Dans le nouveau champ qui s’affiche, sélectionnez l’icône de dossier pour ouvrir le modal Sélectionner le chemin . Parcourir les dossiers pour **WKND partagé** > **Anglais** > **Aventures** > **Instructions**, puis cochez la case en regard de . **jacob-wester**. Press **Sélectionner** pour enregistrer le chemin.
 
    ![Chemin d’accès de référence du fragment](assets/author-content-fragments/fragment-reference-path.png)
 
@@ -378,11 +379,11 @@ Enfin, ajoutons nos nouveaux fragments de contenu à une aventure.
 
 1. Accédez à **Aventures** > **Yosemite Backpackaging** et ouvrez le fragment de contenu de déconditionnement Yosemite. Au bas du formulaire, vous pouvez voir les trois champs que vous avez créés dans le chapitre précédent : **Emplacement**, **Équipe d’instructeurs**, et **Administrateur**.
 
-1. Ajoutez la référence au fragment dans le **Emplacement** champ . Le chemin d’accès à l’emplacement doit faire référence au fragment de contenu du parc national Yosemite que vous avez créé : `/content/dam/wknd/en/adventures/locations/yosemite-national-park/yosemite-national-park`.
+1. Ajoutez la référence au fragment dans le **Emplacement** champ . Le chemin d’accès à l’emplacement doit faire référence au fragment de contenu du parc national Yosemite que vous avez créé : `/content/dam/wknd-shared/en/adventures/locations/yosemite-national-park/yosemite-national-park`.
 
-1. Ajoutez la référence au fragment dans le **Équipe d’instructeurs** champ . Le chemin de l’équipe doit faire référence au fragment de contenu de l’équipe Yosemite que vous avez créé : `/content/dam/wknd/en/adventures/teams/yosemite-team/yosemite-team`. Il s’agit d’une référence à un fragment imbriqué. Le fragment de contenu d’équipe contient une référence au modèle Personne qui fait référence aux modèles Coordonnées et Adresse. Par conséquent, vous avez des fragments de contenu imbriqués à trois niveaux vers le bas.
+1. Ajoutez la référence au fragment dans le **Équipe d’instructeurs** champ . Le chemin de l’équipe doit faire référence au fragment de contenu de l’équipe Yosemite que vous avez créé : `/content/dam/wknd-shared/en/adventures/teams/yosemite-team/yosemite-team`. Il s’agit d’une référence à un fragment imbriqué. Le fragment de contenu d’équipe contient une référence au modèle Personne qui fait référence aux modèles Coordonnées et Adresse. Par conséquent, vous avez des fragments de contenu imbriqués à trois niveaux vers le bas.
 
-1. Ajoutez la référence au fragment dans le **Administrateur** champ . Disons que Jacob Wester est administrateur de Yosemite Backpack Adventure. Le chemin d’accès doit mener au fragment de contenu Jacob Wester et se présenter comme suit : `/content/dam/wknd/en/adventures/instructors/jacob-wester`.
+1. Ajoutez la référence au fragment dans le **Administrateur** champ . Disons que Jacob Wester est administrateur de Yosemite Backpack Adventure. Le chemin d’accès doit mener au fragment de contenu Jacob Wester et se présenter comme suit : `/content/dam/wknd-shared/en/adventures/instructors/jacob-wester`.
 
 1. Vous avez maintenant ajouté trois références à un fragment de contenu aventure. Les champs se présentent comme suit :
 
@@ -396,6 +397,4 @@ Félicitations ! Vous avez maintenant créé des fragments de contenu à partir
 
 ## Étapes suivantes
 
-Dans le [chapitre suivant](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md), vous apprendrez à envoyer des requêtes GraphQL avancées à l’aide de l’environnement de développement intégré GraphiQL (IDE). Ces requêtes nous permettront de visualiser les données créées dans ce chapitre et éventuellement d’ajouter ces requêtes à l’application WKND.
-
-Bien qu’il soit facultatif pour ce tutoriel, veillez à publier tout le contenu dans des situations de production réelles. Vous trouverez plus d’informations sur les environnements de création et de publication dans la section [série vidéo sans tête](/help/headless-tutorial/graphql/video-series/author-publish-architecture.md)
+Dans le [chapitre suivant](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md), vous découvrez comment envoyer des requêtes GraphQL avancées à l’aide de l’environnement de développement intégré GraphiQL (IDE). Ces requêtes nous permettent de visualiser les données créées dans ce chapitre, puis d’ajouter ces requêtes à l’application WKND.

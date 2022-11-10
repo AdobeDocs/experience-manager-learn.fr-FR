@@ -7,9 +7,9 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
-source-git-commit: 7631432881de3deabbe831b2aec40d924b393442
+source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1989'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Ce chapitre traite également de l’amélioration des règles de validation pou
 
 ## Prérequis {#prerequisites}
 
-Il s’agit d’un tutoriel avancé. Avant de poursuivre ce chapitre, assurez-vous d’avoir terminé la [configuration rapide](../quick-setup/cloud-service.md). Assurez-vous d’avoir également lu le chapitre d’aperçu précédent pour plus d’informations sur la configuration du tutoriel avancé.
+Il s’agit d’un tutoriel avancé. Avant de poursuivre ce chapitre, assurez-vous d’avoir terminé la [configuration rapide](../quick-setup/cloud-service.md). Assurez-vous que vous avez également lu la section précédente [aperçu](../overview.md) pour plus d’informations sur la configuration du tutoriel avancé.
 
 ## Objectifs {#objectives}
 
@@ -48,11 +48,11 @@ La vidéo suivante présente brièvement les modèles de fragment de contenu et 
 
 Créons des modèles de fragment de contenu pour l’application WKND. Si vous avez besoin d’une introduction de base à la création de modèles de fragment de contenu, reportez-vous au chapitre approprié dans la section [tutoriel de base](../multi-step/content-fragment-models.md).
 
-1. Accédez à **Outils** > **Ressources** > **Modèles de fragment de contenu**.
+1. Accédez à **Outils** > **Général** > **Modèles de fragment de contenu**.
 
    ![Chemin d’accès aux modèles de fragment de contenu](assets/define-content-fragment-models/content-fragment-models-path.png)
 
-1. Sélectionner **Site WKND** pour afficher la liste des modèles de fragment de contenu existants pour le site.
+1. Sélectionner **WKND partagé** pour afficher la liste des modèles de fragment de contenu existants pour le site.
 
 ### Modèle Contact Info {#contact-info-model}
 
@@ -78,11 +78,9 @@ Une fois l’opération terminée, sélectionnez **Enregistrer** pour confirmer 
 
 Créez ensuite un modèle pour une adresse.
 
-1. Dans la **Site WKND**, sélectionnez **Créer** dans le coin supérieur droit.
+1. Dans la **WKND partagé**, sélectionnez **Créer** dans le coin supérieur droit.
 
-1. Saisissez le titre &quot;Adresse&quot;, puis sélectionnez **Créer**.
-
-   i. Dans le modal de succès qui s’affiche, sélectionnez **Ouvrir** pour modifier le modèle nouvellement créé.
+1. Saisissez le titre &quot;Adresse&quot;, puis sélectionnez **Créer**. Dans le modal de succès qui s’affiche, sélectionnez **Ouvrir** pour modifier le modèle nouvellement créé.
 
 1. Faites glisser et déposez un **Texte sur une seule ligne** sur le modèle et lui donnez un **Libellé du champ** de &quot;Adresse de la rue&quot;. Le nom de la propriété est ensuite renseigné en tant que `streetAddress`. Sélectionnez la **Obligatoire** .
 
@@ -114,7 +112,7 @@ Créez ensuite un modèle contenant des informations sur une personne.
 
 1. Dans le **Propriétés** sous l’onglet **Modèles de fragment de contenu autorisés** , sélectionnez l’icône de dossier, puis choisissez l’option **Coordonnées** modèle de fragment créé précédemment.
 
-1. Ajouter un **Référence de contenu** et lui donner un **Libellé du champ** de &quot;Profile Picture&quot;. Sélectionnez l’icône de dossier sous **Chemin racine** pour ouvrir le modal de sélection de chemin. Sélectionnez un chemin racine en sélectionnant **content** > **Ressources**, puis en cochant la case pour **Site WKND**. Utilisez la variable **Sélectionner** en haut à droite pour enregistrer le chemin d’accès. Le chemin de texte final doit être lu `/content/dam/wknd`.
+1. Ajouter un **Référence de contenu** et lui donner un **Libellé du champ** de &quot;Profile Picture&quot;. Sélectionnez l’icône de dossier sous **Chemin racine** pour ouvrir le modal de sélection de chemin. Sélectionnez un chemin racine en sélectionnant **content** > **Ressources**, puis en cochant la case pour **WKND partagé**. Utilisez la variable **Sélectionner** en haut à droite pour enregistrer le chemin d’accès. Le chemin de texte final doit être lu `/content/dam/wknd-shared`.
 
    ![Chemin racine de référence de contenu](assets/define-content-fragment-models/content-reference-root-path.png)
 
@@ -129,18 +127,19 @@ Créez ensuite un modèle contenant des informations sur une personne.
 
 1. Pour **Max**, saisissez &quot;5&quot; et pour **Sélectionner une unité**, sélectionnez &quot;Mégaoctets (Mo)&quot;. Cette validation permet uniquement de sélectionner les images de la taille spécifiée.
 
-1. Sous **Accepter uniquement la largeur d’image spécifiée**, sélectionnez &quot;Largeur maximale&quot;. Dans le **Max (pixels)** qui s’affiche, saisissez &quot;500&quot;. Sélectionnez les mêmes options pour **Accepter uniquement une hauteur d’image spécifiée**.
+1. Sous **Accepter uniquement la largeur d’image spécifiée**, sélectionnez &quot;Largeur maximale&quot;. Dans le **Max (pixels)** qui apparaît, saisissez &quot;10000&quot;. Sélectionnez les mêmes options pour **Accepter uniquement une hauteur d’image spécifiée**.
 
    Ces validations garantissent que les images ajoutées ne dépassent pas les valeurs spécifiées. Les règles de validation doivent maintenant se présenter comme suit :
+
    ![Règles de validation de référence du contenu](assets/define-content-fragment-models/content-reference-validation.png)
 
 1. Ajouter un **Texte multi-lignes** et lui donner un **Libellé du champ** de &quot;Biographie&quot;. Laissez le champ **Type par défaut** comme option par défaut &quot;Texte enrichi&quot;.
 
    ![Options de biographie](assets/define-content-fragment-models/biography.png)
 
-1. Accédez au **Types de données** puis faites glisser un **Énumération** champ sous &quot;Profile Picture&quot;. Au lieu de la valeur par défaut **Render As** option, sélectionnez **Liste déroulante**. Saisissez une sélection d’options de niveau d’expérience de l’instructeur, telles que Expert, Avancé, Intermédiaire.
+1. Accédez au **Types de données** puis faites glisser un **Énumération** sous &quot;Biographie&quot;. Au lieu de la valeur par défaut **Render As** option, sélectionnez **Liste déroulante** et donnez-lui un **Libellé du champ** de &quot;Niveau d’expérience de l’instructeur&quot;. Saisissez une sélection d’options de niveau d’expérience instructeur, telles que _Expert, Avancé, Intermédiaire_.
 
-1. Faites ensuite glisser un autre **Énumération** sous &quot;Niveau d’expérience de l’instructeur&quot; et cochez les &quot;cases&quot; sous **Render As** . Entrer dans des domaines tels que l&#39;escalade, le surf, le cyclisme, le ski et le randonnée. Le libellé de l’option et la valeur de l’option doivent correspondre comme ci-dessous :
+1. Faites ensuite glisser un autre **Énumération** sous &quot;Niveau d’expérience de l’instructeur&quot; et cochez les &quot;cases&quot; sous **Render As** . Donnez-lui **Libellé du champ** de &quot;Compétences&quot;. Entrer dans des domaines tels que l&#39;escalade, le surf, le cyclisme, le ski et le randonnée. Le libellé de l’option et la valeur de l’option doivent correspondre comme ci-dessous :
 
    ![Enumération des compétences](assets/define-content-fragment-models/skills-enum.png)
 
@@ -160,7 +159,7 @@ Le modèle de fragment de contenu suivant décrit un emplacement physique. Ce mo
 
 1. Ajoutez ensuite une **Référence de fragment** et étiquetez-le &quot;Contact Info&quot;. Dans l’onglet Propriétés, sous **Modèles de fragment de contenu autorisés**, sélectionnez la variable **Icône Dossier** et sélectionnez le modèle de fragment &quot;Contact Info&quot; créé précédemment.
 
-1. Ajouter un **Référence de contenu** sous &quot;Contact Info&quot;. Nommez-le &quot;Image de l’emplacement&quot;. Le **Chemin racine** should `/content/dam/wknd.` Sous **Accepter uniquement les types de contenu spécifiés**, sélectionnez &quot;Image&quot;.
+1. Ajouter un **Référence de contenu** sous &quot;Contact Info&quot;. Nommez-le &quot;Image de l’emplacement&quot;. Le **Chemin racine** should `/content/dam/wknd-shared.` Sous **Accepter uniquement les types de contenu spécifiés**, sélectionnez &quot;Image&quot;.
 
 1. Ajoutons également un **Objet JSON** sous &quot;Image de l’emplacement&quot;. Ce type de données étant flexible, il peut être utilisé pour afficher toutes les données que vous souhaitez inclure dans votre contenu. Dans ce cas, l’objet JSON est utilisé pour afficher des informations sur la météo. Étiqueter l’objet JSON &quot;Météo par saison&quot;. Dans le **Propriétés** , ajoutez une **Description** il est donc clair pour l&#39;utilisateur quelles données doivent être entrées ici : &quot;Données JSON concernant la météo de l’emplacement de l’événement par saison (printemps, été, automne, hiver).&quot;
 
@@ -168,7 +167,7 @@ Le modèle de fragment de contenu suivant décrit un emplacement physique. Ce mo
 
 1. Pour créer l’onglet Adresse de l’emplacement, ajoutez une **Espace réservé de tabulation** sur le modèle et étiquetez-le &quot;Adresse de l’emplacement&quot;.
 
-1. Faites glisser et déposez un **Référence de fragment** et dans l’onglet propriétés, sous **Modèles de fragment de contenu autorisés**, sélectionnez la variable **Adresse** modèle.
+1. Faites glisser et déposez un **Référence de fragment** et dans l’onglet Propriétés, étiquetez-le comme &quot;Adresse&quot;, sous **Modèles de fragment de contenu autorisés**, sélectionnez la variable **Adresse** modèle.
 
 1. Sélectionner **Enregistrer** pour confirmer vos modifications et fermer l’éditeur de modèle de fragment de contenu. Le modèle d’emplacement complété doit apparaître comme suit :
 
@@ -178,7 +177,7 @@ Le modèle de fragment de contenu suivant décrit un emplacement physique. Ce mo
 
 Enfin, créez un modèle qui décrit une équipe de personnes.
 
-1. Dans la **Site WKND** page, sélectionnez **Créer** pour créer un autre modèle de fragment de contenu. Pour le titre du modèle, saisissez &quot;Équipe&quot;. Comme précédemment, sélectionnez **Créer** suivie de **Ouvrir** dans le modal success qui s’affiche.
+1. Dans la **WKND partagé** page, sélectionnez **Créer** pour créer un autre modèle de fragment de contenu. Pour le titre du modèle, saisissez &quot;Équipe&quot;. Comme précédemment, sélectionnez **Créer** suivie de **Ouvrir** dans le modal success qui s’affiche.
 
 1. Ajouter un **Texte multi-lignes** au formulaire. Sous **Libellé du champ**, saisissez &quot;Description&quot;.
 
@@ -186,7 +185,7 @@ Enfin, créez un modèle qui décrit une équipe de personnes.
 
    ![Options de date et d’heure](assets/define-content-fragment-models/date-and-time.png)
 
-1. Accédez au **Types de données** . Sous &quot;Date de création de l’équipe&quot;, ajoutez une **Référence de fragment**. Dans le **Render As** , sélectionnez &quot;multifield&quot;. Pour **Libellé du champ**, saisissez &quot;Membres de l’équipe&quot;. Ce champ est lié au modèle Personne créé précédemment. Le type de données étant un champ multiple, plusieurs fragments de personne peuvent être ajoutés, ce qui permet de créer une équipe de personnes.
+1. Accédez au **Types de données** . Sous &quot;Date de création de l’équipe&quot;, ajoutez une **Référence de fragment**. Dans le **Render As** , sélectionnez &quot;multifield&quot;. Pour **Libellé du champ**, saisissez &quot;Membres de l’équipe&quot;. Ce champ est lié au champ _Personne_ modèle créé précédemment. Le type de données étant un champ multiple, plusieurs fragments de personne peuvent être ajoutés, ce qui permet de créer une équipe de personnes.
 
    ![Options de référence des fragments](assets/define-content-fragment-models/fragment-reference.png)
 
@@ -200,7 +199,7 @@ Enfin, créez un modèle qui décrit une équipe de personnes.
 
 Tout comme le modèle Équipe comporte une référence de fragment au modèle Personne, les modèles Équipe et Emplacement doivent être référencés à partir du modèle Adventure pour afficher ces nouveaux modèles dans l’application WKND.
 
-1. Dans la **Site WKND** , sélectionnez **Adventure** modèle, puis sélectionnez **Modifier** dans la barre de navigation supérieure.
+1. Dans la **WKND partagé** , sélectionnez **Adventure** modèle, puis sélectionnez **Modifier** dans la barre de navigation supérieure.
 
    ![Chemin de modification aventure](assets/define-content-fragment-models/adventure-edit-path.png)
 
