@@ -9,10 +9,11 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+last-substantial-update: 2022-11-09T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
+source-git-commit: c5f94b12a9af50bc4e7db693d6560d120ab8bf3b
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '948'
 ht-degree: 6%
 
 ---
@@ -32,7 +33,7 @@ A [tutoriel détaillé complet](https://experienceleague.adobe.com/docs/experien
 >title="Personnalisation du contenu dans un exemple d’application React"
 >abstract="Nous avons configuré une application React moderne que vous pouvez utiliser pour apprendre à personnaliser le contenu à l’aide de l’ensemble de fonctionnalités sans interface."
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Les outils suivants doivent être installés localement :
 
@@ -43,7 +44,7 @@ Les outils suivants doivent être installés localement :
 
 ## Configuration requise AEM
 
-L’application React fonctionne avec les options de déploiement AEM suivantes. Tous les déploiements nécessitent la variable [Site WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) à installer.
+L’application React fonctionne avec les options de déploiement AEM suivantes. Tous les déploiements nécessitent la variable [Site WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-2.1.0) à installer.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr)
 + Configuration locale à l’aide de [le SDK AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr)
@@ -141,7 +142,7 @@ query($slug: String!) {
         slug: {
           _expressions: [ { value: $slug } ]
         }
-  	}) {
+      }) {
     items {
       _path
       title
@@ -187,46 +188,67 @@ query($slug: String!) {
 
 AEM requêtes persistantes sont exécutées sur une GET HTTP et, par conséquent, la variable [AEM client sans affichage pour JavaScript](https://github.com/adobe/aem-headless-client-js) est utilisé pour [exécuter les requêtes GraphQL persistantes ;](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) par rapport à AEM et chargez le contenu de l’aventure dans l’application.
 
-Chaque requête conservée possède une fonction correspondante dans `src/api/persistedQueries.js`, qui appelle de manière asynchrone le point de terminaison HTTP AEM et renvoie les données d’aventure.
+Chaque requête conservée possède un React correspondant. [useEffect](https://reactjs.org/docs/hooks-effect.html) hook `src/api/usePersistedQueries.js`, qui appelle de manière asynchrone le point de terminaison de requête persistant de la GET HTTP AEM et renvoie les données d’aventure.
 
 Chaque fonction appelle à son tour la fonction `aemHeadlessClient.runPersistedQuery(...)`, exécutant la requête GraphQL conservée.
 
 ```js
-// src/api/persistedQueries.js
+// src/api/usePersistedQueries.js
 
 /**
- * Queries a list of all Adventures using the persisted path "wknd-shared/adventures-all"
- * @returns {data, errors}
+ * React custom hook that returns a list of adevntures by activity. If no activity is provided, all adventures are returned.
+ * 
+ * Custom hook that calls the 'wknd-shared/adventures-all' or 'wknd-shared/adventures-by-activity' persisted query.
+ *
+ * @returns an array of Adventure JSON objects, and array of errors
  */
-export const getAllAdventures = async function() {
-    return executePersistedQuery('wknd-shared/adventures-all');
+export function useAdventuresByActivity(adventureActivity) {
+  ...
+  // If an activity is provided (i.e "Camping", "Hiking"...) call wknd-shared/adventures-by-activity query
+  if (adventureActivity) {
+    // The key is 'activity' as defined in the persisted query
+    const queryParameters = { activity: adventureActivity };
+
+    // Call the AEM GraphQL persisted query named "wknd-shared/adventures-by-activity" with parameters
+    response = await fetchPersistedQuery("wknd-shared/adventures-by-activity", queryParameters);
+  } else {
+    // Else call the AEM GraphQL persisted query named "wknd-shared/adventures-all" to get all adventures
+    response = await fetchPersistedQuery("wknd-shared/adventures-all");
+  }
+  
+  ... 
 }
 
 ...
-
 /**
- * Uses the AEM Headless SDK to execute a query besed on a persistedQueryPath and optional query variables
- * @param {*} persistedQueryPath 
- * @param {*} queryVariables 
- * @returns 
+ * Private function that invokes the AEM Headless client.
+ * 
+ * @param {String} persistedQueryName the fully qualified name of the persisted query
+ * @param {*} queryParameters an optional JavaScript object containing query parameters
+ * @returns the GraphQL data or an error message 
  */
- const executePersistedQuery = async function(persistedQueryPath, queryVariables) {
+async function fetchPersistedQuery(persistedQueryName, queryParameters) {
+  let data;
+  let err;
 
-    let data;
-    let errors;
+  try {
+    // AEM GraphQL queries are asynchronous, either await their return or use Promise-based .then(..) { ... } syntax
+    const response = await aemHeadlessClient.runPersistedQuery(
+      persistedQueryName,
+      queryParameters
+    );
+    // The GraphQL data is stored on the response's data field
+    data = response?.data;
+  } catch (e) {
+    // An error occurred, return the error messages
+    err = e
+      .toJSON()
+      ?.map((error) => error.message)
+      ?.join(", ");
+    console.error(e.toJSON());
+  }
 
-    try {
-        // AEM GraphQL queries are asynchronous, either await their return or use Promise-based .then(..) { ... } syntax
-        const response = await aemHeadlessClient.runPersistedQuery(persistedQueryPath, queryVariables);
-        // The GraphQL data is stored on the response's data field
-        data = response.data;
-        errors = response.errors ? mapErrors(response.errors) : undefined;
-    } catch (e) {
-        console.error(e.toJSON());
-        errors = e;
-    }
-
-    return {data, errors}; 
+  return { data, err };
 }
 ```
 
@@ -236,16 +258,15 @@ L’application React utilise deux vues pour présenter les données de l’aven
 
 + `src/components/Adventures.js`
 
-   Appels `getAllAdventures()` de `src/api/persistedQueries.js`  et affiche les aventures renvoyées dans une liste.
+   Appels `getAdventuresByActivity(..)` de `src/api/usePersistedQueries.js` et affiche les aventures renvoyées dans une liste.
 
 + `src/components/AdventureDetail.js`
 
    Appelle le `getAdventureBySlug(..)` en utilisant la variable `slug` param transmis via la sélection aventure sur le `Adventures` et affiche les détails d’une seule aventure.
 
-
 ### Variables d’environnement
 
-Plusieurs [variables d&#39;environnement](https://create-react-app.dev/docs/adding-custom-environment-variables) sont utilisés pour se connecter à un environnement AEM. La valeur par défaut se connecte à la publication AEM en cours d’exécution à l’adresse `http://localhost:4503`. Pour modifier la connexion AEM, mettez à jour la variable `.env.development` fichier :
+Plusieurs [variables d&#39;environnement](https://create-react-app.dev/docs/adding-custom-environment-variables) sont utilisés pour se connecter à un environnement AEM. La valeur par défaut se connecte à la publication AEM en cours d’exécution à l’adresse `http://localhost:4503`. Mettez à jour le `.env.development` pour modifier la connexion AEM :
 
 + `REACT_APP_HOST_URI=http://localhost:4502`: Défini sur AEM hôte cible
 + `REACT_APP_GRAPHQL_ENDPOINT=/content/graphql/global/endpoint.json`: Définissez le chemin d’accès du point d’entrée GraphQL. Elle n’est pas utilisée par cette application React, car cette application utilise uniquement des requêtes persistantes.
@@ -266,6 +287,6 @@ Si vous vous connectez à un environnement de création AEM, la variable [la mé
 
 ### Partage de ressources cross-origin (CORS)
 
-Cette application React repose sur une configuration CORS basée sur AEM s’exécutant sur l’environnement AEM cible et suppose que l’application React s’exécute sur `http://localhost:3000` en mode de développement. Le [Configuration CORS](https://github.com/adobe/aem-guides-wknd/blob/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json) fait partie de la variable [Site WKND](https://github.com/adobe/aem-guides-wknd).
+Cette application React repose sur une configuration CORS basée sur AEM s’exécutant sur l’environnement AEM cible et suppose que l’application React s’exécute sur `http://localhost:3000` en mode de développement. Le [Configuration CORS](https://github.com/adobe/aem-guides-wknd/blob/main/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-graphql.cfg.json) fait partie de la variable [Site WKND](https://github.com/adobe/aem-guides-wknd).
 
 ![Configuration CORS](assets/react-app/cross-origin-resource-sharing-configuration.png)
