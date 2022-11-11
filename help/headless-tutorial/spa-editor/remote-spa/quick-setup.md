@@ -7,8 +7,10 @@ role: Developer, Architect
 level: Beginner
 kt: 7629
 thumbnail: 333181.jpg
+last-substantial-update: 2022-11-11T00:00:00Z
+recommendations: noDisplay, noCatalog
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
-source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
+source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 6%
@@ -25,7 +27,7 @@ La configuration rapide vous emmène directement à l’état final de ce tutori
 
 _Présentation vidéo de la configuration rapide_
 
-## Conditions préalables
+## Prérequis
 
 Ce tutoriel nécessite les éléments suivants :
 
@@ -66,7 +68,7 @@ Téléchargez et installez le SDK AEM Quickstart sur le port 4502, avec la valeu
 AEM SDK démarre et se lance automatiquement sur [http://localhost:4502](http://localhost:4502). Connectez-vous à l’aide des informations d’identification suivantes :
 
 + Nom d’utilisateur: `admin`
-+ Mot de passe: `admin`
++ Password: `admin`
 
 ## Télécharger et installer le package WKND Site
 

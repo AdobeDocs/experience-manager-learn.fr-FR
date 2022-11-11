@@ -7,7 +7,7 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+source-git-commit: ee6f65fba8db5ae30cc14aacdefbeba39803527b
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 1%
@@ -125,7 +125,7 @@ Deux AEM **packages** sont disponibles et peuvent être installées via [Gestion
 * [Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip](/help/headless-tutorial/graphql/advanced-graphql/assets/tutorial-files/Advanced-GraphQL-Tutorial-Solution-Package-1.2.zip) contient la solution terminée pour les chapitres 1 à 4, y compris les nouveaux modèles de fragment de contenu, les fragments de contenu et les requêtes GraphQL persistantes. Utile pour ceux qui souhaitent passer directement dans le [Intégration d’applications client](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md) chapitre.
 
 
-Le **React App - Tutoriel avancé - WKND Adventures**(https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) est disponible pour examiner et explorer l’exemple d’application. Cet exemple d’application récupère le contenu d’AEM en appelant les requêtes GraphQL persistantes et le rend dans une expérience immersive.
+Le [React App - Tutoriel avancé - WKND Adventures](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/advanced-tutorial/README.md) Vous pouvez consulter et explorer l’exemple d’application. Cet exemple d’application récupère le contenu d’AEM en appelant les requêtes GraphQL persistantes et le rend dans une expérience immersive.
 
 ## Prise en main
 

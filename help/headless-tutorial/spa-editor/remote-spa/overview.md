@@ -7,11 +7,12 @@ role: Developer, Architect
 level: Beginner
 kt: 7630
 thumbnail: 333272.jpeg
+last-substantial-update: 2022-11-11T00:00:00Z
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
-source-git-commit: fe056006ab59a3955e5f16a23e96e9e208408cf5
+source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 8%
+source-wordcount: '618'
+ht-degree: 9%
 
 ---
 
@@ -36,9 +37,9 @@ Le tutoriel est conçu pour fonctionner avec **AEM as a Cloud Service** et se co
 
 ## Dernier code
 
-+ Le code de ce tutoriel se trouve sur la page [GitHub](https://github.com/adobe/aem-guides-wknd-graphql) sur le `feature/spa-editor` branche.
++ Le point de départ du code de ce tutoriel se trouve sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/remote-spa) dans le `remote-spa-tutorial` dossier.
 
-## Conditions préalables
+## Prérequis
 
 Ce tutoriel nécessite les éléments suivants :
 
@@ -49,12 +50,12 @@ Ce tutoriel nécessite les éléments suivants :
 + [Maven 3.6+](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
 + [aem-guides-wknd.all-2.1.0.zip ou version ultérieure](https://github.com/adobe/aem-guides-wknd/releases)
-+ [code source aem-guides-wknd-graphql (branche) : feature/spa-editor)](https://github.com/adobe/aem-guides-wknd-graphql/tree/feature/spa-editor)
++ [code source aem-guides-wknd-graphql](https://github.com/adobe/aem-guides-wknd-graphql/tree/main)
 
 Ce tutoriel suppose :
 
 + [Microsoft® Visual Studio Code](https://visualstudio.microsoft.com/) comme IDE
-+ Un répertoire de travail de `~/Code/wknd-app`
++ Un répertoire de travail de `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial`
 + Exécution du SDK AEM en tant que service d’auteur sur `http://localhost:4502`
 + Exécution du SDK AEM avec le fichier local `admin` compte avec mot de passe `admin`
 + Exécution du SPA sur `http://localhost:3000`
@@ -62,13 +63,6 @@ Ce tutoriel suppose :
 >[!NOTE]
 >
 > **Vous avez besoin d’aide pour configurer votre environnement de développement local ?** Consultez la section [le guide suivant pour configurer un environnement de développement local à l’aide du SDK as a Cloud Service AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr).
-
-
-## Configuration rapide
-
-La configuration rapide vous permet d’utiliser l’SPA d’application WKND et AEM Éditeur d’SPA en 15 minutes. Cette configuration accélérée vous permet d’accéder directement à l’état final du tutoriel, ce qui vous permet d’explorer la création de la SPA dans AEM Éditeur.
-
-+ [En savoir plus sur la configuration rapide](./quick-setup.md)
 
 ## 1. Configuration d’AEM pour SPA Editor
 
@@ -102,6 +96,4 @@ Enfin, utilisez les concepts présentés dans les chapitres précédents pour cr
 
 ## Ressources supplémentaires
 
-+ [Modification d’un SPA externe dans AEM documents](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/editing-external-spa.html)
-+ [AEM Composants WCM - Mise en oeuvre principale React](https://www.npmjs.com/package/@adobe/aem-core-components-react-base)
-+ [AEM Composants WCM - Éditeur de Spa - Mise en oeuvre principale React](https://www.npmjs.com/package/@adobe/aem-core-components-react-spa)
++ [AEM SPA Composants React Modifiables](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
