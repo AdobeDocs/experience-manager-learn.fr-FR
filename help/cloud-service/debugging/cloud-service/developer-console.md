@@ -13,9 +13,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 0499ff9f-d452-459f-b1a2-2853a228efd1
-source-git-commit: 751aed9b8659d6a600429efb2bf60825b6d39144
+source-git-commit: e8e5c67f6e9f057fd7472b76ee09d7f87b133c89
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1414'
 ht-degree: 2%
 
 ---
@@ -31,9 +31,9 @@ Chaque environnement as a Cloud Service AEM possède sa propre console de dével
 Pour accéder à Developer Console et l’utiliser, les autorisations suivantes doivent être accordées à Adobe ID du développeur via [Admin Console de l’Adobe](https://adminconsole.adobe.com).
 
 1. Assurez-vous que l’organisation d’Adobe qui a affecté Cloud Manager et AEM produits as a Cloud Service est principale dans le sélecteur d’organisation d’Adobe.
-1. Le développeur doit être membre du produit Cloud Manager __Développeur - Cloud Service__ Profil du produit.
+1. Le développeur doit être membre du [Produit Cloud Manager __Développeur - Cloud Service__ Profil de produits](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-cloud-manager.html#assign-developer).
    + Si cet abonnement n’existe pas, le développeur ne pourra pas se connecter à Developer Console.
-1. Le développeur doit être membre du __Utilisateurs AEM__ ou __Administrateurs AEM__ Profil de produit sur l’auteur et/ou la publication AEM.
+1. Le développeur doit être membre du [__Utilisateurs AEM__ ou __Administrateurs AEM__ Profil de produit sur l’auteur et/ou la publication AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html#aem-product-profiles).
    + Si cette appartenance n’existe pas, la variable [status](#status) Les vidages expirent avec une erreur 401 Non autorisé.
 
 ### Dépannage de l’accès à Developer Console
@@ -66,7 +66,7 @@ Les services d’auteur et de publication as a Cloud Service AEM sont constitué
    + Tous les éditeurs
    + Toutes les instances
 
-## État
+## Statut
 
 Status (État) fournit des options permettant de générer un état d’exécution AEM spécifique dans la sortie de texte ou JSON. Developer Console fournit des informations similaires à celles de la console web OSGi du SDK AEM, avec une différence marquée que Developer Console est en lecture seule.
 
