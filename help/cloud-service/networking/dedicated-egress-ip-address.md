@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b74dc2693071313a80ccaaea839b8e2087c9edaa
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1161'
 ht-degree: 5%
 
 ---
@@ -79,7 +79,7 @@ Commencez par activer et configurer l’adresse IP sortante dédiée sur AEM as 
 
    Patientez 15 minutes pendant que le programme Cloud Manager approvisionne l’infrastructure réseau.
 
-1. Vérifier que l&#39;environnement est terminé __adresse IP de sortie dédiée__ configuration à l’aide de l’API Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) , à l’aide de la fonction `id` renvoyée par la requête HTTP createNetworkInfrastructure de l’étape précédente.
+1. Vérifier que le programme est terminé __adresse IP de sortie dédiée__ configuration à l’aide de l’API Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) , à l’aide de la fonction `id` renvoyée par la requête HTTP createNetworkInfrastructure de l’étape précédente.
 
    __requête HTTP getNetworkInfrastructure__
 
@@ -91,11 +91,11 @@ Commencez par activer et configurer l’adresse IP sortante dédiée sur AEM as 
        -H 'Content-Type: application/json'
    ```
 
-   Vérifiez que la réponse HTTP contient une __status__ de __ready__. Si vous n’êtes pas encore prêt, vérifiez l’état toutes les quelques minutes.
+   Vérifiez que la réponse HTTP contient une __status__ de __ready__. Si elle n’est pas encore prête, vérifiez à nouveau l’état toutes les quelques minutes.
 
 ## Configuration de proxys d’adresses IP sortantes dédiés par environnement
 
-1. Activez et configurez les __adresse IP de sortie dédiée__ configuration sur chaque environnement as a Cloud Service AEM à l’aide de l’API Cloud Manager [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) opération.
+1. Configurez la variable __adresse IP de sortie dédiée__ configuration sur chaque environnement as a Cloud Service AEM à l’aide de l’API Cloud Manager [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) opération.
 
    __requête HTTP enableEnvironmentAdvancedNetworkingConfiguration__
 
@@ -164,6 +164,8 @@ Commencez par activer et configurer l’adresse IP sortante dédiée sur AEM as 
    ```
 
    Le nom d’hôte ne peut pas être `pinged`, car il s’agit d’une sortie et _not_ et d’entrée.
+
+   Notez que __adresse IP de sortie dédiée__ est partagé par tous les environnements as a Cloud Service AEM du programme.
 
 1. Vous pouvez désormais utiliser l’adresse IP de sortie dédiée dans votre code et configuration d’AEM personnalisé. Souvent, lors de l’utilisation d’une adresse IP de sortie dédiée, les services externes auxquels AEM as a Cloud Service se connecte sont configurés pour autoriser uniquement le trafic à partir de cette adresse IP dédiée.
 
