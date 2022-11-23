@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -311,3 +311,5 @@ Maintenant nous rechargerions simplement le service de serveur web et utiliserio
 
 Notez que nous avons uniquement modifié les éléments dont nous avions besoin pour modifier et exploiter les inclusions et le code existants fournis avec les fichiers de configuration de ligne de base.  Nous n&#39;avons qu&#39;à délimiter l&#39;élément que nous devons changer.  Cela facilite la tâche et nous permet de conserver moins de code.
 </div>
+
+[Suivant -> Contrôle de l’intégrité de Dispatcher](./health-check.md)
