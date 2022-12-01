@@ -7,9 +7,9 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
+source-git-commit: df3afc60f765c18915eca3bb2d3556379383fafc
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1139'
 ht-degree: 1%
 
 ---
@@ -209,3 +209,5 @@ Lorsqu’il est utilisé, ce script vérifie et consigne toutes les instances qu
 Lorsqu’il est utilisé, ce script vérifie et consigne toutes les instances qu’il dirige, mais il renvoie simplement sain, que AEM renvoie ou non une erreur.
 
 > `Note:` Ce script est utilisé lorsque le contrôle de l’intégrité ne fonctionne pas comme vous le souhaitez et permet à un remplacement de conserver AEM instances dans l’équilibreur de charge.
+
+[Suivant -> Symlinks GIT](./git-symlinks.md)
