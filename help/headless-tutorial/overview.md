@@ -1,20 +1,20 @@
 ---
-title: AEM Tutorials sans tête
-description: Ensemble de tutoriels sur l’utilisation d’Adobe Experience Manager as a Headless CMS.
+title: Tutorials pour Headless dans AEM
+description: Ensemble de tutoriels CMS sans affichage pour Adobe Experience Manager. Explorez les tutoriels par API, framework et exemples d’applications.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: b20a29e67da0bcbf53ae8089a7cde0dfde800214
+source-git-commit: 567f0ae80d79796fc50994d31a64fb0ca79879f6
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '524'
 ht-degree: 7%
 
 ---
 
-# AEM Tutorials sans tête{#aem-headless-tutorials}
+# Tutorials pour Headless dans AEM{#aem-headless-tutorials}
 
 Adobe Experience Manager (AEM) dispose de plusieurs options pour définir des points de terminaison sans affichage et diffuser son contenu au format JSON. Utilisez des tutoriels pratiques pour découvrir comment utiliser les différentes options et choisir ce qui vous convient.
 
@@ -102,7 +102,7 @@ Les exemples d’applications sont un excellent moyen d’explorer les fonctionn
     </a>
     </div>
     <p>
-    <em>Application Android™ optimisée par les API GraphQL AEM.</em>
+    <em>Application Android™ optimisée par les API GraphQL d’AEM.</em>
     </p>
   </td>
   <td>
@@ -137,7 +137,7 @@ Parcourez les tutoriels suivants en fonction de la technologie utilisée. Décou
     </a>
     </div>
     <p>
-    <em>Créez une application React JS à l’aide de GraphQL dans un scénario sans tête pur.</em>
+    <em>Créez une application React JS à l’aide de GraphQL dans un scénario sans tête.</em>
     <p>
   </td>
   <td>
