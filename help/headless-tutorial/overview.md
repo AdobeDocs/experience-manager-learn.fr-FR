@@ -7,9 +7,9 @@ role: Developer
 level: Beginner
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
-source-git-commit: 567f0ae80d79796fc50994d31a64fb0ca79879f6
+source-git-commit: 758fa40240b12f5bfa83ac5c0300b71f41e2326d
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '503'
 ht-degree: 7%
 
 ---
@@ -21,11 +21,6 @@ Adobe Experience Manager (AEM) dispose de plusieurs options pour définir des po
 >[!TIP]
 >
 >Cette collection de tutoriels est conçue pour ceux qui préfèrent **apprendre en faisant**. Si vous préférez les concepts d’apprentissage, consultez la [AEM Parcours développeur sans tête](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Cet ensemble de tutoriels et de parcours se complètent.
-
->[!CONTEXTUALHELP]
->id="aemcloud_sites_trial_admin_content_fragments_edit_inline_content"
->title="Modifier le contenu en ligne"
->abstract="Découvrez comment modifier le contenu directement dans la page à partir de laquelle il est référencé à l’aide de l’ensemble de fonctionnalités sans en-tête."
 
 ## Tutorials par API
 
