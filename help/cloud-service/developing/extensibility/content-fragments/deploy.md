@@ -9,9 +9,9 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Déployez l’extension dans l’espace de travail Production. Les extensions d�
 1. Sélectionner __Soumettre à validation__
 1. Remplissez et envoyez le formulaire, en mettant à jour les champs selon vos besoins.
 
-+ Une icône est requise. Si vous ne disposez pas d’une icône, vous pouvez utiliser [cette icône](./assets/deploy/icon.png).
+Notez qu’une icône est requise. Si vous ne disposez pas d’une icône, vous pouvez utiliser [cette icône](./assets/deploy/icon.png).
 
 ### Approuver la requête de déploiement
 

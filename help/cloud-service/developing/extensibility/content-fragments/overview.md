@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '726'
 ht-degree: 4%
 
 ---
@@ -51,7 +51,7 @@ Adobe Developer contient des informations détaillées sur les développeurs con
 
 ## Développement d’une extension
 
-Suivez les étapes décrites ci-dessous pour découvrir comment générer, développer et déployer une extension AEM Content Fragment Console pour AEM as a Cloud Service.
+Suivez les étapes décrites ci-dessous pour savoir comment générer, développer et déployer une extension AEM Content Fragment Console pour AEM as a Cloud Service.
 
 <div class="columns is-multiline">
     <!-- Create Adobe Developer Project -->

@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -55,15 +55,15 @@ function App(props) {
 `ExtensionRegistration.js` doit être immédiatement chargé via l’itinéraire d’index de l’extension et agit sur le point d’enregistrement de l’extension, en définissant :
 
 1. le type d’extension ; a [menu d’en-tête](./header-menu.md) ou [barre d’actions](./action-bar.md) bouton .
-   + [Menu En-tête](./header-menu.md) les extensions sont signalées par la variable `headerMenu` propriété sous `methods`.
-   + [Barre d’actions](./action-bar.md) les extensions sont signalées par la variable `actionBar` propriété sous `methods`.
+   + [Menu En-tête](./header-menu.md#extension-registration) les extensions sont signalées par la variable `headerMenu` propriété sous `methods`.
+   + [Barre d’actions](./action-bar.md#extension-registration) les extensions sont signalées par la variable `actionBar` propriété sous `methods`.
 1. La définition du bouton d’extension, dans `getButton()` fonction . Cette fonction renvoie un objet avec des champs :
    + `id` est un identifiant unique du bouton.
    + `label` est le libellé du bouton d’extension dans la console Fragment de contenu AEM
    + `icon` est l’icône du bouton d’extension dans la console Fragment de contenu AEM. L’icône est une [React Spectrum](https://spectrum.adobe.com/page/icons/) nom de l’icône, sans espaces.
 1. Le gestionnaire de clics du bouton, dans défini dans une `onClick()` fonction .
-   + [Menu d’en-tête](./header-menu.md) les extensions ne transmettent pas de paramètres au gestionnaire de clics.
-   + [Barre d’actions](./action-bar.md) Les extensions fournissent une liste des chemins d’accès aux fragments de contenu sélectionnés dans le `selections` .
+   + [Menu d’en-tête](./header-menu.md#extension-registration) les extensions ne transmettent pas de paramètres au gestionnaire de clics.
+   + [Barre d’actions](./action-bar.md#extension-registration) Les extensions fournissent une liste des chemins d’accès aux fragments de contenu sélectionnés dans le `selections` .
 
 ### Extension du menu d’en-tête
 

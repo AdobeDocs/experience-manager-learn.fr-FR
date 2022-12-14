@@ -9,7 +9,7 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -78,7 +78,10 @@ Prenez note de l’URL de l’application locale, comme illustré ci-dessus : `-
 
 1. La console de fragments de contenu AEM se charge avec la version locale de l’extension qui y est injectée à des fins de test et les modifications à chaud sont appliquées tant que l’application du créateur d’applications locale est en cours d’exécution.
 
-N’oubliez pas que lorsque vous utilisez cette approche, l’extension en cours de développement n’affecte que votre expérience. Tous les autres utilisateurs de la console Fragment de contenu AEM y accèdent sans l’extension injectée.
+>[!IMPORTANT]
+>
+>N’oubliez pas que lorsque vous utilisez cette approche, l’extension en cours de développement n’affecte que votre expérience. Tous les autres utilisateurs de la console Fragment de contenu AEM y accèdent sans l’extension injectée.
+
 
 ## Versions de l’étape de test
 
