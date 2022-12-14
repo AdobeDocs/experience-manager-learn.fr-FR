@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: a7b32982b547eb292384d2ebde80ba745091702a
+source-git-commit: 79804ac1ec18f8ac4815bd5ee6f309ef85110cb9
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '868'
 ht-degree: 28%
 
 ---
@@ -85,6 +85,7 @@ ht-degree: 28%
       + [Configurations OSGi à l’aide d’OCD](./developing/osgi-services/configurations-ocd.md)
    + Avancé{#advanced}
       + [Utilisateurs du service](./developing/advanced/service-users.md)
+      + [Espaces de noms du client](./developing/advanced/custom-namespaces.md)
       + [Mise en cache des variantes de page](./developing/advanced/variant-caching.md)
    + [Documentation Java de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + AEM de débogage{#debugging}
@@ -129,7 +130,6 @@ ht-degree: 28%
 + Migration {#migration}
    + [Outil de transfert de contenu](./migration/content-transfer-tool.md)
    + [Importation en bloc de ressources](./migration/bulk-import.md)
-
    + Transition vers AEM as a Cloud Service {#moving-to-aem-as-a-cloud-service}
       + [Présentation](./migration/moving-to-aem-as-a-cloud-service/introduction.md)
       + [Intégration](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
