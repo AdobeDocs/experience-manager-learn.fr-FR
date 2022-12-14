@@ -1,6 +1,6 @@
 ---
 title: Jeton d’accès au développement local
-description: AEM jetons d’accès au développement local sont utilisés pour accélérer le développement des intégrations avec AEM as a Cloud Service qui interagissent par programmation avec les services d’auteur ou de publication AEM sur HTTP.
+description: Les jetons d’accès AEM développement local sont utilisés pour accélérer le développement des intégrations avec AEM as a Cloud Service qui interagissent par programmation avec les services AEM Author ou Publish sur HTTP.
 version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
@@ -13,9 +13,9 @@ topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: ef11609fe6ab266102bdf767a149284b9b912f98
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Le jeton d’accès au développement local permet d’accéder aux services AEM
 1. Dans [Adobe Admin Console](https://adminconsole.adobe.com/) assurez-vous, en tant que développeur, que vous êtes membre de :
    + __Cloud Manager - Développeur__ Profil de produit IMS (accorde l’accès à AEM Developer Console)
    + Soit le __Administrateurs AEM__ ou __Utilisateurs AEM__ Profil de produit IMS pour le service de l’environnement AEM auquel le jeton d’accès s’intègre
-   + Les environnements Sandbox AEM as a Cloud Service ne nécessitent une adhésion qu’à l’un ou l’autre des environnements __Administrateurs AEM__ ou __Utilisateurs AEM__ Profil de produits
+   + Les environnements Sandbox AEM as a Cloud Service ne nécessitent qu’une adhésion à l’une ou l’autre des __Administrateurs AEM__ ou __Utilisateurs AEM__ Profil de produits
 1. Connectez-vous à [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
 1. Ouvrez le programme contenant l’environnement as a Cloud Service AEM à intégrer à
 1. Appuyez sur le bouton __ellipse__ en regard de l’environnement dans la variable __Environnements__ et sélectionnez __Developer Console__
@@ -51,7 +51,7 @@ Le jeton d’accès au développement local permet d’accéder aux services AEM
 ![Jeton d’accès au développement local - Application externe](assets/local-development-access-token/local-development-access-token-external-application.png)
 
 1. Téléchargez le jeton d’accès au développement local temporaire depuis AEM Developer Console
-   + Le jeton d’accès au développement local expire toutes les 24 heures. Les développeurs devront donc télécharger de nouveaux jetons d’accès tous les jours.
+   + Le jeton d’accès au développement local expire toutes les 24 heures. Les développeurs doivent donc télécharger de nouveaux jetons d’accès tous les jours.
 1. Une application externe est en cours de développement qui interagit par programmation avec AEM as a Cloud Service
 1. L’application externe se lit dans le jeton d’accès au développement local.
 1. L’application externe crée des requêtes HTTP pour AEM as a Cloud Service, en ajoutant le jeton d’accès au développement local en tant que jeton porteur à l’en-tête d’autorisation des requêtes HTTP.
@@ -59,14 +59,14 @@ Le jeton d’accès au développement local permet d’accéder aux services AEM
 
 ### Exemple d’application externe
 
-Nous allons créer une application JavaScript externe simple pour illustrer comment accéder par programmation à AEM as a Cloud Service via HTTPS à l’aide du jeton d’accès du développeur local. Cela illustre la manière dont _any_ l’application ou le système s’exécutant en dehors d’AEM, indépendamment de la structure ou de la langue, peut utiliser le jeton d’accès pour s’authentifier par programmation et y accéder AEM as a Cloud Service. Dans le [section suivante](./service-credentials.md) nous mettrons à jour ce code d’application afin de prendre en charge l’approche de génération d’un jeton en vue d’une utilisation en production.
+Nous allons créer une application JavaScript externe simple pour illustrer comment accéder par programmation à AEM as a Cloud Service via HTTPS à l’aide du jeton d’accès du développeur local. Cela illustre la manière dont _any_ l’application ou le système s’exécutant en dehors d’AEM, indépendamment de la structure ou de la langue, peut utiliser le jeton d’accès pour s’authentifier par programmation et y accéder AEM as a Cloud Service. Dans le [section suivante](./service-credentials.md), nous mettrons à jour ce code d’application afin de prendre en charge l’approche de génération d’un jeton en vue d’une utilisation en production.
 
 Cet exemple d’application est exécuté à partir de la ligne de commande et met à jour AEM métadonnées des ressources à l’aide des API HTTP AEM Assets, à l’aide du flux suivant :
 
 1. Lit les paramètres de la ligne de commande (`getCommandLineParams()`)
 1. Obtient le jeton d’accès utilisé pour s’authentifier sur AEM as a Cloud Service (`getAccessToken(...)`)
-1. Répertorie toutes les ressources d’un dossier AEM de ressources spécifié dans les paramètres de ligne de commande (`listAssetsByFolder(...)`)
-1. Mettre à jour les métadonnées des ressources répertoriées avec les valeurs spécifiées dans les paramètres de ligne de commande (`updateMetadata(...)`)
+1. Répertorie toutes les ressources d’un dossier de ressources AEM spécifié dans des paramètres de ligne de commande (`listAssetsByFolder(...)`)
+1. Mise à jour des métadonnées des ressources répertoriées avec les valeurs spécifiées dans les paramètres de ligne de commande (`updateMetadata(...)`)
 
 L’élément clé de l’authentification par programmation pour AEM à l’aide du jeton d’accès est l’ajout d’un en-tête de requête HTTP d’autorisation à toutes les requêtes HTTP envoyées à AEM, au format suivant :
 
@@ -96,7 +96,7 @@ L’élément clé de l’authentification par programmation pour AEM à l’aid
    * Application entry point function
    */
    (async () => {
-       console.log('Example usage: node index.js aem=https://author-p1234-e5678.adobeaemcloud.com propertyName=metadata/dc:rights "propertyValue=WKND Limited Use" folder=/wknd/en/adventures/napa-wine-tasting file=credentials-file.json' );
+       console.log('Example usage: node index.js aem=https://author-p1234-e5678.adobeaemcloud.com propertyName=metadata/dc:rights "propertyValue=WKND Limited Use" folder=/wknd-shared/en/adventures/napa-wine-tasting file=credentials-file.json' );
    
        // Parse the command line parameters
        params = getCommandLineParams();
@@ -173,7 +173,7 @@ L’élément clé de l’authentification par programmation pour AEM à l’aid
    * - aem = The AEM as a Cloud Service hostname to connect to.
    *              Example: https://author-p12345-e67890.adobeaemcloud.com
    * - folder = The asset folder to update assets in. Note that the Assets HTTP API do NOT use the JCR `/content/dam` path prefix.
-   *              Example: '/wknd/en/adventures/napa-wine-tasting'
+   *              Example: '/wknd-shared/en/adventures/napa-wine-tasting'
    * - propertyName = The asset property name to update. Note this is relative to the [dam:Asset]/jcr:content node of the asset.
    *              Example: metadata/dc:rights
    * - propertyValue = The value to update the asset property (specified by propertyName) with.
@@ -223,14 +223,14 @@ L’élément clé de l’authentification par programmation pour AEM à l’aid
    })...
    ```
 
-   Toute requête HTTP à AEM as a Cloud Service doit définir le jeton d’accès du porteur dans l’en-tête Authorization. Souvenez-vous que chaque environnement as a Cloud Service AEM nécessite son propre jeton d’accès. Le jeton d’accès du développement ne fonctionnera pas dans l’environnement intermédiaire ou de production, l’environnement intermédiaire ne fonctionnera pas dans le cadre du développement ou de la production et l’environnement de production ne fonctionnera pas dans l’environnement de développement ou d’évaluation.
+   Toute requête HTTP à AEM as a Cloud Service doit définir le jeton d’accès du porteur dans l’en-tête Authorization. Souvenez-vous que chaque environnement as a Cloud Service AEM nécessite son propre jeton d’accès. Le jeton d’accès du développement ne fonctionne pas sur l’environnement d’évaluation ou de production, l’environnement d’évaluation ne fonctionne pas sur le développement ou la production et celui de la production ne fonctionne pas sur l’environnement de développement ou d’évaluation.
 
 1. A l’aide de la ligne de commande, à partir de la racine du projet, exécutez l’application, en transmettant les paramètres suivants :
 
    ```shell
    $ node index.js \
        aem=https://author-p1234-e5678.adobeaemcloud.com \
-       folder=/wknd/en/adventures/napa-wine-tasting \
+       folder=/wknd-shared/en/adventures/napa-wine-tasting \
        propertyName=metadata/dc:rights \
        propertyValue="WKND Limited Use" \
        file=local_development_token.json
@@ -238,8 +238,8 @@ L’élément clé de l’authentification par programmation pour AEM à l’aid
 
    Les paramètres suivants sont transmis :
 
-   + `aem`: Schéma et nom d’hôte de l’environnement as a Cloud Service AEM avec lequel l’application interagira (par exemple, `https://author-p1234-e5678.adobeaemcloud.com`).
-   + `folder`: Chemin d’accès au dossier de ressources dont les ressources sont mises à jour avec la fonction `propertyValue`; n’ajoutez PAS la variable `/content/dam` préfixe (ex. `/wknd/en/adventures/napa-wine-tasting`)
+   + `aem`: Le schéma et le nom d’hôte de l’environnement as a Cloud Service AEM avec lequel l’application interagit (ex. `https://author-p1234-e5678.adobeaemcloud.com`).
+   + `folder`: Chemin d’accès au dossier de ressources dont les ressources sont mises à jour avec la variable `propertyValue`; n’ajoutez PAS la variable `/content/dam` préfixe (ex. `/wknd-shared/en/adventures/napa-wine-tasting`)
    + `propertyName`: Nom de la propriété de ressource à mettre à jour, par rapport à `[dam:Asset]/jcr:content` (ex. `metadata/dc:rights`).
    + `propertyValue`: La valeur pour définir la variable `propertyName` à; Les valeurs avec espaces doivent être encapsulées avec `"` (ex. `"WKND Limited Use"`)
    + `file`: Chemin d’accès au fichier JSON téléchargé depuis AEM Developer Console.
@@ -247,11 +247,11 @@ L’élément clé de l’authentification par programmation pour AEM à l’aid
    Une exécution réussie de l’application donne des résultats pour chaque ressource mise à jour :
 
    ```shell
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting.json
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting/AdobeStock_277654931.jpg.json
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting/AdobeStock_239751461.jpg.json
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting/AdobeStock_280313729.jpg.json
-   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd/en/adventures/napa-wine-tasting/AdobeStock_286664352.jpg.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_277654931.jpg.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_239751461.jpg.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_280313729.jpg.json
+   200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_286664352.jpg.json
    ```
 
 ### Vérification de la mise à jour des métadonnées dans AEM
@@ -269,6 +269,6 @@ Vérifiez que les métadonnées ont été mises à jour en vous connectant à l�
 
 ## Étapes suivantes
 
-Maintenant que nous avons accédé par programmation AEM as a Cloud Service à l’aide du jeton de développement local, nous devons mettre à jour l’application pour la gérer à l’aide des informations d’identification du service, afin que cette application puisse être utilisée dans un contexte de production.
+Maintenant que nous avons accédé par programmation à AEM as a Cloud Service à l’aide du jeton de développement local. Ensuite, nous devons mettre à jour l’application pour gérer l’utilisation des informations d’identification du service, afin que cette application puisse être utilisée dans un contexte de production.
 
 + [Utilisation des informations d’identification du service](./service-credentials.md)
