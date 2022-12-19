@@ -9,9 +9,9 @@ level: Beginner
 recommendations: noDisplay, noCatalog
 kt: 11603
 last-substantial-update: 2022-12-01T00:00:00Z
-source-git-commit: f19cdc7d551f20b35550e7d25bd168a2eaa43b6a
+source-git-commit: 56e2cbadaceb9961de28454bfbed56a98df34c44
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -66,10 +66,12 @@ Prenez note de l’URL de l’application locale, comme illustré ci-dessus : `-
    + `&devMode=true`
    + `&ext=<LOCAL APPLICATION URL>`, généralement `&ext=https://localhost:9080`.
 
+   Ajoutez les deux paramètres de requête ci-dessus (`devMode` et `ext`) en tant que __first__ paramètres de requête dans l’URL, car la console de fragments de contenu utilise un itinéraire de hachage (`#/@wknd/aem/...`), corrigez de manière incorrecte les paramètres après l’événement `#` ne fonctionnera pas.
+
    L’URL de test doit se présenter comme suit :
 
    ```
-   https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin&devMode=true&ext=https://localhost:9080
+   https://experience.adobe.com/?devMode=true&ext=https://localhost:9080&repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
 1. Copiez et collez l’URL de test dans votre navigateur.
@@ -112,10 +114,12 @@ Prenez note de l’URL de l’application locale, comme illustré ci-dessus : `-
    + `&devMode=true`
    + `&ext=<DEPLOYED APPLICATION URL>`
 
+   Ajoutez les deux paramètres de requête ci-dessus (`devMode` et `ext`) en tant que __first__ paramètres de requête dans l’URL, car la console de fragments de contenu utilise un itinéraire de hachage (`#/@wknd/aem/...`), corrigez de manière incorrecte les paramètres après l’événement `#` ne fonctionnera pas.
+
    L’URL de test doit se présenter comme suit :
 
    ```
-   https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin&devMode=true&ext=https://98765-123aquarat.adobeio-static.net/index.html
+   https://experience.adobe.com/?devMode=true&ext=https://98765-123aquarat.adobeio-static.net/index.html&repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
 1. Copiez et collez l’URL de test dans votre navigateur.
