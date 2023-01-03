@@ -9,7 +9,7 @@ level: Intermediate
 kt: 9353
 thumbnail: KT-9353.jpeg
 exl-id: 5f919d7d-e51a-41e5-90eb-b1f6a9bf77ba
-source-git-commit: d6eddceb3f414e67b5b6e3fba071cd95597dc41c
+source-git-commit: c34c27955dbc084620ac4dd811ba4051ea83f447
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 5%
@@ -60,7 +60,7 @@ Cet exemple de configuration OSGi configure AEM Mail OSGi Service pour utiliser 
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/config/com.day.cq.mailer.DefaultMailService.cfg.json`
 
-Configuration d’AEM [DefaultMailService](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email) selon les besoins de votre fournisseur de messagerie (par exemple, `smtp.ssl`, etc.).
+Configuration d’AEM [DefaultMailService](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=fr#sending-email) selon les besoins de votre fournisseur de messagerie (par exemple, `smtp.ssl`, etc.).
 
 ```json
 {
@@ -79,7 +79,7 @@ Configuration d’AEM [DefaultMailService](https://experienceleague.adobe.com/do
 
 Le `EMAIL_USERNAME` et `EMAIL_PASSWORD` La variable OSGi et le secret peuvent être définis par environnement, à l’aide de :
 
-+ [Configuration de l’environnement Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html)
++ [Configuration de l’environnement de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html)
 + ou en utilisant la variable `aio CLI` command
 
    ```shell
