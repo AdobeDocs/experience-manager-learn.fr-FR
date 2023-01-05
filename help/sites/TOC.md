@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriels sur AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: c82965636ddeef7dc165e0bea079c99f1a16e0ca
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 33%
 
 ---
@@ -58,13 +58,14 @@ ht-degree: 33%
    + [Prise en main d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
    + [Prise en main d’AEM SPA Editor et React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
    + [Extension des propriétés de page](developing/page-properties-technical-video-develop.md)
+   + [Points d’arrêt réactifs](developing/responsive-breakpoints.md)
    + [Développement avec le système de style](developing/style-system-technical-video-understand.md)
    + [Bonnes pratiques relatives au système de style](developing/style-organization-style-system-understand-article.md)
    + [Développement pour la différence de page](developing/page-diff-technical-video-develop.md)
    + [Implémentation de la recherche simple](developing/search-tutorial-develop.md)
    + [Partage sur les réseaux sociaux](developing/social-media-sharing-technical-video-use.md)
    + [Personnalisation des icônes de composant](developing/component-icons-technical-video-develop.md)
-+ Personnalisation  {#personalization}
++ Personnalisation {#personalization}
    + [Intégration avec Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html)
    + [Configuration de fragments d’expérience et d’Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Utilisation de fragments d’expérience avec Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
