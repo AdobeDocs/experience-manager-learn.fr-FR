@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: 64086f3f7b340b143bd281e2f6f802af07554ecf
+source-git-commit: f63ed212a5a8a6689b25bd0bc9438c605a129729
 workflow-type: tm+mt
-source-wordcount: '1258'
-ht-degree: 3%
+source-wordcount: '1256'
+ht-degree: 2%
 
 ---
 
@@ -26,13 +26,12 @@ La configuration rapide AEM sans affichage vous permet d’utiliser AEM sans aff
 Les outils suivants doivent être installés localement :
 
 * [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.properties.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-* [Node.js v10+](https://nodejs.org/en/)
-* [npm 6+](https://www.npmjs.com/)
+* [Node.js v14.x](https://nodejs.org/en/)
 * [Git](https://git-scm.com/)
 
 ## 1. Installation du SDK AEM {#aem-sdk}
 
-Cette configuration utilise la méthode [AEM SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?#aem-as-a-cloud-service-sdk) pour explorer AEM API GraphQL. Cette section fournit un guide rapide pour l’installation du SDK AEM et son exécution en mode création. Un guide plus détaillé pour la configuration d’un environnement de développement local [peut être consulté ici](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up).
+Cette configuration utilise la méthode [AEM SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?#aem-as-a-cloud-service-sdk) pour explorer les API GraphQL d’AEM. Cette section fournit un guide rapide pour l’installation du SDK AEM et son exécution en mode création. Un guide plus détaillé pour la configuration d’un environnement de développement local [peut être consulté ici](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up).
 
 >[!NOTE]
 >
@@ -62,7 +61,7 @@ Cette configuration utilise la méthode [AEM SDK as a Cloud Service](https://exp
 
 Exemple de contenu à partir du **Site de référence WKND** est utilisé pour accélérer le tutoriel. Le WKND est une marque fictive de style de vie, souvent utilisée avec une formation AEM.
 
-Le site WKND comprend les configurations requises pour exposer une [Point d’entrée GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html). Dans une mise en oeuvre concrète, suivez les étapes documentées pour [inclure les points d’entrée GraphQL ;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html) dans votre projet client. A [CORS](#cors-config) a également été compilé dans le cadre du site WKND. Une configuration CORS est requise pour accorder l’accès à une application externe. Pour plus d’informations sur [CORS](#cors-config) Vous trouverez ci-dessous.
+Le site WKND comprend les configurations requises pour exposer une [Point de terminaison GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html). Dans une mise en oeuvre concrète, suivez les étapes documentées pour [inclure les points d’entrée GraphQL ;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html) dans votre projet client. A [CORS](#cors-config) a également été compilé dans le cadre du site WKND. Une configuration CORS est requise pour accorder l’accès à une application externe. Pour plus d’informations sur [CORS](#cors-config) Vous trouverez ci-dessous.
 
 1. Téléchargez le dernier AEM compilé pour le site WKND : [aem-guides-wknd.all-x.x.x.zip](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
@@ -148,7 +147,7 @@ L’un des objectifs de ce tutoriel consiste à montrer comment utiliser AEM con
 
 1. Utilisez les outils de développement du navigateur pour inspecter la variable **Réseau** requêtes. Afficher la variable **XHR** requêtes et observez plusieurs requêtes de GET à `/graphql/execute.json/...`. Ce préfixe de chemin appelle AEM point de terminaison de requête persistant, en sélectionnant la requête persistante à exécuter à l’aide du nom et des paramètres codés suivant le préfixe .
 
-   ![Requête XHR du point d’entrée GraphQL](assets/quick-setup/aem-sdk/react-app__graphql-request.png)
+   ![Requête XHR du point de terminaison GraphQL](assets/quick-setup/aem-sdk/react-app__graphql-request.png)
 
 ## 4. Modifier le contenu dans AEM
 
@@ -176,7 +175,7 @@ Une fois l’application React en cours d’exécution, effectuez une mise à jo
 
    >[!NOTE]
    >
-   > L’outil GraphiQL et l’API GraphQL sont [exploré plus en détail plus loin dans le tutoriel](../multi-step/explore-graphql-api.md).
+   > L’outil GraphiQL et l’API GraphQL sont les suivants : [exploré plus en détail plus loin dans le tutoriel](../multi-step/explore-graphql-api.md).
 
 ## Félicitations !{#congratulations}
 
