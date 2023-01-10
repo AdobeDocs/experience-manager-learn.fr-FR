@@ -31,7 +31,7 @@ ht-degree: 23%
       + [4 - Variations de fragments de contenu](./graphql/video-series/content-fragment-variations.md)
       + [5 - Points de terminaison GraphQL](./graphql/video-series/graphql-endpoints.md)
       + [6 - Architecture de création et de publication](./graphql/video-series/author-publish-architecture.md)
-      + [7 - Requêtes persistantes GraphQL](./graphql/video-series/graphql-persisted-queries.md)
+      + [7 - Requêtes persistantes dans GraphQL](./graphql/video-series/graphql-persisted-queries.md)
    + Tutoriel de base{#multi-step}
       + [Présentation](./graphql/multi-step/overview.md)
       + [1 - Définition de modèles de fragment de contenu](./graphql/multi-step/content-fragment-models.md)

@@ -66,7 +66,7 @@ ht-degree: 33%
    + [Téléchargement de ressources](./sharing/download.md)
    + [Publier les ressources](./sharing/publish.md)
 
-   + Brand Portal{#brand-portal}
+   + Brand Portal{#brand-portal}
       + [Brand Portal](./sharing/brand-portal.md)
       + [Configuration d’AEM Brand Portal](brand-portal/configure.md)
       + [Configuration de l’approvisionnement des ressources](brand-portal/configure-asset-sourcing.md)
