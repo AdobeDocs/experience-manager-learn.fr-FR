@@ -9,15 +9,15 @@ level: Beginner
 kt: 11649
 thumbnail: KT-11649.png
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: 8b683fdcea05859151b929389f7673075c359141
+source-git-commit: d902eb9a8d497a43c8d4ca63767f81a35eadf139
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1314'
 ht-degree: 1%
 
 ---
 
 
-# Génération d’images numériques, téléchargement vers AEM extension
+# Génération d’images numériques OpenAI, téléchargement vers AEM’exemple d’extension
 
 ![Génération d’images numériques](./assets/digital-image-generation/screenshot.png){align="center"}
 
@@ -43,6 +43,10 @@ Le flux fonctionnel de l’exemple d’extension est le suivant :
 1. Elle lance ensuite le chargement de l’image à partir du runtime App Builder vers AEM DAM sous un chemin prédéfini.
 1. L’AEM as a Cloud Service enregistre l’image dans la gestion des ressources numériques et renvoie les réponses de succès ou d’échec à l’action Adobe I/O Runtime. La réponse de chargement réussie met à jour la valeur de propriété d’image du fragment de contenu sélectionné à l’aide d’une autre requête HTTP à AEM à partir de l’action Adobe I/O Runtime.
 1. Le modal reçoit la réponse de l’action Adobe I/O Runtime et fournit AEM lien des détails de la ressource de l’image nouvellement générée et téléchargée.
+
+Cette vidéo présente l’exemple de génération d’images à l’aide de l’extension OpenAI ou DALL.E 2, son fonctionnement et son développement. La vidéo comporte des marqueurs de chapitre, tels que __Démo, configuration et code technique fonctionnels__ pour regarder rapidement la pièce pertinente.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3413093/?quality=12&learn=on)
 
 
 ## L’application d’extension App Builder

@@ -10,9 +10,9 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2022-12-09T00:00:00Z
-source-git-commit: fbc8c11841f5b5e04a99ba74fac6f01dc3e3a2da
+source-git-commit: d902eb9a8d497a43c8d4ca63767f81a35eadf139
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '745'
 ht-degree: 4%
 
 ---
@@ -271,19 +271,19 @@ Exemple d’AEM d’extensions de la console de fragments de contenu.
             </div>
         </div>
     </div>
-    <!-- Bulk property update extension -->
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Image generation and upload to AEM extension">
+    <!-- Image Generartion update extension -->
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="OpenAI-based image generation and upload to AEM extension">
         <div class="card">
             <div class="card-image">
                 <figure class="image is-16by9">
-                    <a href="./example-extensions/image-generation-and-image-upload.md" title="Génération d’images et chargement vers l’extension AEM" tabindex="-1">
-                        <img class="is-bordered-r-small" src="./example-extensions/assets/digital-image-generation/screenshot.png" alt="Génération d’images et chargement vers l’extension AEM">
+                    <a href="./example-extensions/image-generation-and-image-upload.md" title="Génération d’images basée sur OpenAI et chargement vers AEM extension" tabindex="-1">
+                        <img class="is-bordered-r-small" src="./example-extensions/assets/digital-image-generation/screenshot.png" alt="Génération d’images basée sur OpenAI et chargement vers AEM extension">
                     </a>
                 </figure>
             </div>
             <div class="card-content is-padded-small">
                 <div class="content">
-                    <p class="headline is-size-5 has-text-weight-bold">Génération d’images et chargement vers l’extension AEM</p>
+                    <p class="headline is-size-5 has-text-weight-bold">Génération d’images basée sur OpenAI et chargement vers AEM extension</p>
                     <p class="is-size-6">Explorez un exemple d’extension de barre d’actions qui génère une image à l’aide d’OpenAI, la charge dans AEM et met à jour la propriété de l’image sur le fragment de contenu sélectionné.</p>
                     <a href="./example-extensions/image-generation-and-image-upload.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
                         <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Explorer l’exemple d’extension</span>
