@@ -12,10 +12,11 @@ thumbnail: 330477.jpg
 topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
+last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
-source-git-commit: ef11609fe6ab266102bdf767a149284b9b912f98
+source-git-commit: 8b6d8d99c806e782a1ddce2b300211f8d4c9da56
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -40,6 +41,7 @@ Le jeton d’accès au développement local permet d’accéder aux services AEM
 1. Ouvrez le programme contenant l’environnement as a Cloud Service AEM à intégrer à
 1. Appuyez sur le bouton __ellipse__ en regard de l’environnement dans la variable __Environnements__ et sélectionnez __Developer Console__
 1. Appuyez sur __Intégrations__ tab
+1. Appuyez sur le bouton __Jeton local__ tab
 1. Appuyer __Obtention du jeton de développement local__ button
 1. Appuyez sur le __bouton de téléchargement__ dans le coin supérieur gauche pour télécharger le fichier JSON contenant `accessToken` et enregistrez le fichier JSON à un emplacement sécurisé sur votre ordinateur de développement.
    + Il s’agit de votre jeton d’accès développeur 24 heures sur 24 à l’environnement as a Cloud Service AEM.
