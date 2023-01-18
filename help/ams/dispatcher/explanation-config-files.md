@@ -7,7 +7,7 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Le serveur web Apache ne se soucie pas vraiment de l’extension de fichier d’
 
 ## Fichiers contenus dans conf.modules.d/
 
-| Fichier | Destination du fichier | Description |
+| File | Destination du fichier | Description |
 | --- | --- | --- |
 | FILENAME`.any` | `/etc/httpd/conf.dispatcher.d/` | Le module Apache de Dispatcher AEM sources ses paramètres à partir de `*.any` fichiers . Le fichier d’inclusion parent par défaut est : `conf.dispatcher.d/dispatcher.any` |
 | FILENAME`_farm.any` | Intermédiaire : `/etc/httpd/conf.dispatcher.d/available_farms/`<br>Principal : `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b> ces fichiers de fermes ne doivent pas être copiés dans la variable `enabled_farms` mais utilisez `symlinks` à un chemin relatif vers la propriété `available_farms/*_farm.any` fichier </div> <br/>`*_farm.any` Les fichiers sont inclus dans la variable `conf.dispatcher.d/dispatcher.any` fichier . Ces fichiers de fermes parents existent pour contrôler le comportement du module pour chaque type de rendu ou de site web. Les fichiers sont créés dans la variable `available_farms` et activé avec un `symlink` dans la `enabled_farms` répertoire .  <br/>Elle les inclut automatiquement par nom à partir du `dispatcher.any` fichier .<br/><b>Ligne de base</b> Les fichiers de fermes commencent par `000_` pour vous assurer qu’elles sont chargées en premier.<br><b>Personnalisé</b> Les fichiers de fermes doivent être chargés après en démarrant leur modèle de nombre à l’adresse `100_` pour assurer le comportement d’inclusion approprié. |
@@ -85,7 +85,7 @@ Si la variable `vhost` est accidentellement placé dans la variable `rewrites` e
 
 <b>Comment cela devient généralement un problème</b>
 
-Si la variable `two files` sont téléchargés dans le `same` emplacement où ils peuvent `overwrite themselves` ou rendre le processus de déploiement indissociable, ce qui en fait un cauchemar.
+Si la variable `two files` sont téléchargés dans le `same` emplacement où ils peuvent `overwrite themselves` ou rendre le processus de déploiement indissociable.
 
 <b>Les extensions de fichier sont identiques et incluent automatiquement</b>
 
@@ -251,7 +251,7 @@ RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 
 Lorsque des fichiers FILENAME_farm.any sont `/etc/httpd/conf.dispatcher.d/available_farms/` créer un lien symbolique dans le répertoire `/etc/httpd/conf.dispatcher.d/enabled_farms/` Ils seront utilisés dans la configuration en cours d’exécution.
 
-Les fichiers de fermes comportent des sous-inclusions basées sur [sections de niveau supérieur de la ferme de serveurs](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-farms-farms) comme cache, clientheaders, filtres, rendus et vhosts.
+Les fichiers de fermes comportent des sous-inclusions basées sur [sections de niveau supérieur de la ferme de serveurs](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#defining-farms-farms) comme cache, clientheaders, filtres, rendus et vhosts.
 
 Le `FILENAME_farm.any` Les fichiers contiennent des instructions pour chaque fichier en fonction de l’endroit où ils doivent être inclus dans le fichier de ferme.  Voici un exemple de syntaxe d’une `FILENAME_farm.any` comme référence appropriée :
 

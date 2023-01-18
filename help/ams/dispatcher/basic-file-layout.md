@@ -7,10 +7,10 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
+source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 2%
+source-wordcount: '1161'
+ht-degree: 1%
 
 ---
 
@@ -146,7 +146,7 @@ Ce répertoire contient l’ensemble des `_cache.any`, `_invalidate.any` fichier
 
 #### Répertoire des en-têtes du client
 
-Ce répertoire peut contenir tous les éléments suivants : `_clientheaders.any` fichiers que vous créez et qui contiennent des listes d’en-têtes du client que vous souhaitez transmettre à AEM lorsqu’une requête arrive.  Plus de détails sur cette section sont ici [here](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
+Ce répertoire peut contenir tous les éléments suivants : `_clientheaders.any` fichiers que vous créez et qui contiennent des listes d’en-têtes du client que vous souhaitez transmettre à AEM lorsqu’une requête arrive.  Pour plus d’informations sur cette section, voir [here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr)
 
 - `/etc/httpd/conf.dispatcher.d/clientheaders/`
 
