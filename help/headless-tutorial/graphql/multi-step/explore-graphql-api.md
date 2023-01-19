@@ -1,6 +1,6 @@
 ---
 title: Exploration des API GraphQL - Prise en main d’AEM sans affichage - GraphQL
-description: Prise en main d’Adobe Experience Manager (AEM) et de GraphQL. Explorez AEM API GraphQL à l’aide de l’IDE GraphQL intégré. Découvrez comment AEM génère automatiquement un schéma GraphQL basé sur un modèle de fragment de contenu. Testez la création de requêtes de base à l’aide de la syntaxe GraphQL.
+description: Prise en main d’Adobe Experience Manager (AEM) et de GraphQL. Explorez AEM API GraphQL à l’aide de l’IDE GrapiQL intégré. Découvrez comment AEM génère automatiquement un schéma GraphQL basé sur un modèle de fragment de contenu. Testez la création de requêtes de base à l’aide de la syntaxe GraphQL.
 version: Cloud Service
 mini-toc-levels: 1
 kt: 6714
@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: 25c289b093297e870c52028a759d05628d77f634
+source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 4%
+source-wordcount: '1454'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 L’API GraphQL d’AEM fournit un langage de requête puissant pour exposer les données de fragments de contenu aux applications en aval. Les modèles de fragment de contenu définissent le schéma de données utilisé par les fragments de contenu. Chaque fois qu’un modèle de fragment de contenu est créé ou mis à jour, le schéma est traduit et ajouté au &quot;graphique&quot; qui constitue l’API GraphQL.
 
-Dans ce chapitre, nous explorons certaines requêtes GraphQL courantes pour rassembler du contenu à l’aide d’un IDE appelé [GraphiQL](https://github.com/graphql/graphiql). L’IDE GraphiQL vous permet de tester et d’affiner rapidement les requêtes et les données renvoyées. Il permet également d’accéder facilement à la documentation, ce qui facilite l’apprentissage et la compréhension des méthodes disponibles.
+Dans ce chapitre, explorons quelques requêtes GraphQL courantes pour rassembler du contenu à l’aide d’un IDE appelé [GraphiQL](https://github.com/graphql/graphiql). L’IDE GraphiQL vous permet de tester et d’affiner rapidement les requêtes et les données renvoyées. Il permet également d’accéder facilement à la documentation, ce qui facilite l’apprentissage et la compréhension des méthodes disponibles.
 
 ## Prérequis {#prerequisites}
 
@@ -37,28 +37,28 @@ Il s’agit d’un tutoriel en plusieurs parties qui suppose que les étapes dé
 
 ## Activation du point d’entrée GraphQL {#enable-graphql-endpoint}
 
-Un point d’entrée GraphQL doit être configuré pour activer les requêtes d’API GraphQL pour les fragments de contenu.
+Un point de terminaison GraphQL doit être configuré pour activer les requêtes d’API GraphQL pour les fragments de contenu.
 
 1. Dans l’écran AEM Démarrer, accédez à **Outils** > **Général** > **GraphQL**.
 
-   ![Accédez au point d’entrée GraphQL](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
+   ![Accès au point de terminaison GraphQL](assets/explore-graphql-api/navigate-to-graphql-endpoint.png)
 
 1. Appuyer **Créer** dans le coin supérieur droit de la boîte de dialogue qui s’affiche, saisissez les valeurs suivantes :
 
    * Nom* : **Mon point de terminaison de projet**.
    * Utilisez le schéma GraphQL fourni par ... * : **Mon projet**
 
-   ![Création d’un point d’entrée GraphQL](assets/explore-graphql-api/create-graphql-endpoint.png)
+   ![Création d’un point de terminaison GraphQL](assets/explore-graphql-api/create-graphql-endpoint.png)
 
    Appuyer **Créer** pour enregistrer le point de terminaison .
 
-   Les points d’entrée GraphQL créés à partir d’une configuration de projet activent uniquement les requêtes par rapport aux modèles appartenant à ce projet. Dans ce cas, les seules requêtes de la variable **Personne** et **Équipe** peuvent être utilisés.
+   Les points de terminaison GraphQL créés à partir d’une configuration de projet activent uniquement les requêtes par rapport aux modèles appartenant à ce projet. Dans ce cas, les seules requêtes de la variable **Personne** et **Équipe** peuvent être utilisés.
 
    >[!NOTE]
    >
    > Un point de terminaison global peut également être créé pour activer les requêtes par rapport aux modèles sur plusieurs configurations. Cette méthode doit être utilisée avec précaution, car elle peut ouvrir l’environnement à d’autres vulnérabilités de sécurité et ajouter à la complexité globale de la gestion des AEM.
 
-1. Vous devriez maintenant voir un point d’entrée GraphQL activé dans votre environnement.
+1. Vous devriez maintenant voir un point de terminaison GraphQL activé dans votre environnement.
 
    ![Points d’entrée graphql activés](assets/explore-graphql-api/enabled-graphql-endpoints.png)
 
@@ -78,7 +78,7 @@ Ensuite, explorez la puissance de l’API GraphQL AEM à l’aide de l’IDE Gra
 
 1. Dans le coin supérieur droit, assurez-vous que le point de fin est défini sur **Mon point de terminaison de projet**.
 
-   ![Définition du point d’entrée GraphQL](assets/explore-graphql-api/set-my-project-endpoint.png)
+   ![Définir le point de terminaison GraphQL](assets/explore-graphql-api/set-my-project-endpoint.png)
 
 Cela permettra d’étendre toutes les requêtes aux modèles créés dans la variable **Mon projet** projet.
 
@@ -174,7 +174,7 @@ Ensuite, essayez de récupérer les fragments imbriqués dans l’instance de re
    }
    ```
 
-   La possibilité d’effectuer des requêtes sur des fragments imbriqués est une puissante fonctionnalité de l’API GraphQL AEM. Dans cet exemple simple, l’imbrication n’a que deux niveaux de profondeur. Cependant, il est possible d’imbriquer des fragments encore plus loin. Par exemple, si une variable **Adresse** modèle associé à un **Personne** il serait possible de renvoyer des données des trois modèles dans une seule requête.
+   La possibilité d’effectuer des requêtes sur des fragments imbriqués est une puissante fonctionnalité de l’API GraphQL d’AEM. Dans cet exemple simple, l’imbrication n’a que deux niveaux de profondeur. Cependant, il est possible d’imbriquer des fragments encore plus loin. Par exemple, si une variable **Adresse** modèle associé à un **Personne** il serait possible de renvoyer des données des trois modèles dans une seule requête.
 
 ### Filtrage d’une liste de fragments de contenu {#filter-list-cf}
 
@@ -215,7 +215,7 @@ Examinons ensuite comment il est possible de filtrer les résultats en un sous-e
 
    ![Utilisation des variables de requête pour le filtrage](assets/explore-graphql-api/using-query-variables-filter.png)
 
-   Il existe de nombreuses autres options pour filtrer et créer des requêtes complexes. Voir [Formation à l’utilisation de GraphQL avec AEM - Exemple de contenu et de requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+   Il existe de nombreuses autres options pour filtrer et créer des requêtes complexes. Voir [Formation à l’utilisation de GraphQL avec AEM - Exemples de contenu et de requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
 1. Amélioration de la requête ci-dessus pour récupérer une image de profil
 
@@ -371,7 +371,7 @@ Ensuite, conservez deux requêtes simples, elles sont utilisées dans le chapitr
    ![Requêtes conservées finales](assets/explore-graphql-api/final-persisted-queries.png)
 
 
-## Publier le point d’entrée GraphQL et les requêtes persistantes
+## Publier le point de terminaison GraphQL et les requêtes persistantes
 
 Lors de la révision et de la vérification, publiez la variable `GraphQL Endpoint` &amp; `Persisted Queries`
 
@@ -379,7 +379,7 @@ Lors de la révision et de la vérification, publiez la variable `GraphQL Endpoi
 
 1. Cochez la case en regard de **Mon point de terminaison de projet** et appuyez sur **Publier**
 
-   ![Publier le point d’entrée GraphQL](assets/explore-graphql-api/publish-graphql-endpoint.png)
+   ![Publier le point de terminaison GraphQL](assets/explore-graphql-api/publish-graphql-endpoint.png)
 
 1. Dans l’écran AEM Démarrer, accédez à **Outils** > **Général** > **Éditeur de requêtes GraphQL**
 
@@ -395,7 +395,7 @@ Téléchargez le contenu, les modèles et les requêtes persistantes créés dan
 
 ## Ressources supplémentaires
 
-Pour en savoir plus sur les requêtes GraphQL, voir [Formation à l’utilisation de GraphQL avec AEM - Exemple de contenu et de requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
+Pour en savoir plus sur les requêtes GraphQL, voir [Formation à l’utilisation de GraphQL avec AEM - Exemples de contenu et de requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html).
 
 ## Félicitations ! {#congratulations}
 
@@ -403,21 +403,9 @@ Félicitations, vous avez créé et exécuté plusieurs requêtes GraphQL !
 
 ## Étapes suivantes {#next-steps}
 
-Dans le chapitre suivant, [Créer l’application React](./graphql-and-react-app.md), vous découvrez comment une application externe peut interroger AEM points de terminaison GraphQL et utiliser ces deux requêtes persistantes. Vous avez également été initié à la gestion des erreurs de base lors de l’exécution de la requête GraphQL.
+Dans le chapitre suivant, [Créer l’application React](./graphql-and-react-app.md), vous découvrez comment une application externe peut interroger AEM points de terminaison GraphQL et utiliser ces deux requêtes persistantes. Vous avez également été initié à la gestion des erreurs de base lors de l’exécution des requêtes GraphQL.
 
 ## Installation de l’outil GraphiQL (facultatif) {#install-graphiql}
 
-Dans, certaines versions d’AEM (6.X.X) l’outil IDE GraphiQL doit être installé manuellement, suivez les instructions suivantes :
+Dans , certaines versions d’AEM (6.X.X) l’outil IDE GraphiQL doit être installé manuellement. Utilisez la méthode [instructions ici](../how-to/install-graphiql-aem-6-5.md).
 
-1. Accédez au **[Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
-1. Recherchez « GraphiQL » (veillez à inclure le **i** dans **GraphiQL**.
-1. Télécharger la dernière version du **Package de contenu GraphiQL v.x.x.x**
-
-   ![Téléchargement du package GraphiQL](assets/explore-graphql-api/software-distribution.png)
-
-   Le fichier zip est un package AEM qui peut être installé directement.
-
-1. Dans le menu AEM Démarrer , accédez à **Outils** > **Déploiement** > **Packages**.
-1. Cliquez sur **Télécharger le package** et sélectionnez le package téléchargé à l’étape précédente. Cliquez sur **Installer** pour installer le package.
-
-   ![Installation du package GraphiQL](assets/explore-graphql-api/install-graphiql-package.png)
