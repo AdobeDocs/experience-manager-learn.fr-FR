@@ -8,9 +8,9 @@ role: Developer
 level: Intermediate
 kt: 11743
 last-substantial-update: 2023-01-17T00:00:00Z
-source-git-commit: 0990fc230e2a36841380b5b0c6cd94dca24614fa
+source-git-commit: de2788d8f3971a47fca53e35ee84cbbaa0137140
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '436'
 ht-degree: 2%
 
 ---
@@ -70,8 +70,7 @@ Le `JWT_PRIVATE_KEY` doit être spécialement formaté, car il s’agit d’une 
 
 1. Ouvrez `Terminal`
 1. `$ base64 -i /path/to/private.key | pbcopy`
-
-La sortie base64 est automatiquement copiée dans le presse-papiers.
+1. La sortie base64 est automatiquement copiée dans le presse-papiers.
 
 >[!TAB Windows]
 
@@ -79,7 +78,8 @@ La sortie base64 est automatiquement copiée dans le presse-papiers.
 
 1. Ouvrez `Command Prompt`
 1. `$ certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
-1. Copiez le contenu de `encoded-private.key` dans le presse-papiers ;
+1. `$ findstr /v CERTIFICATE C:\path\to\encoded-private.key`
+1. Copiez la sortie base64 dans le Presse-papiers.
 
 >[!TAB Linux®]
 
@@ -89,14 +89,14 @@ La sortie base64 est automatiquement copiée dans le presse-papiers.
 
 >[!ENDTABS]
 
-Par exemple, la valeur suivante peut être ajoutée à la variable `JWT_PRIVATE_KEY` dans la `.env`:
+Par exemple, la clé privée encodée en base64 suivante peut être ajoutée au `JWT_PRIVATE_KEY` dans la `.env`:
 
 ```
 ...
 JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 ```
 
-## Configuration de l’extension
+## Mappage des entrées
 
 Avec la valeur d’identification JWT définie dans la variable `.env` , ils doivent être mappés aux entrées d’action AppBuilder pour pouvoir être lus dans l’action elle-même. Pour ce faire, ajoutez des entrées pour chaque variable dans la variable `ext.config.yaml` action `inputs` au format : `INPUT_NAME=$ENV_KEY`.
 
@@ -132,7 +132,7 @@ runtimeManifest:
 Les clés définies sous `inputs` sont disponibles sur la `params` fournie à l’action App Builder.
 
 
-## Conversion des informations d’identification JWT en jeton d’accès
+## Informations d’identification JWT pour accéder au jeton
 
 Dans l’action App Builder, les informations d’identification JWT sont disponibles dans la variable `params` et utilisable par [`@adobe/jwt-auth`](https://www.npmjs.com/package/@adobe/jwt-auth) pour générer un jeton d’accès, qui peut à son tour accéder à d’autres API et services Adobe.
 
