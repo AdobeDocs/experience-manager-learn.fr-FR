@@ -8,10 +8,10 @@ role: Developer
 level: Intermediate
 kt: 11743
 last-substantial-update: 2023-01-17T00:00:00Z
-source-git-commit: de2788d8f3971a47fca53e35ee84cbbaa0137140
+source-git-commit: 643a9844f19aa1bd153661540ec7f7398a35118e
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 2%
+source-wordcount: '469'
+ht-degree: 1%
 
 ---
 
@@ -69,23 +69,26 @@ Le `JWT_PRIVATE_KEY` doit être spécialement formaté, car il s’agit d’une 
 >[!TAB macOS]
 
 1. Ouvrez `Terminal`
-1. `$ base64 -i /path/to/private.key | pbcopy`
+1. Exécution de la commande `base64 -i /path/to/private.key | pbcopy`
 1. La sortie base64 est automatiquement copiée dans le presse-papiers.
+1. Coller dans `.env` comme valeur de la clé correspondante
 
 >[!TAB Windows]
 
 
 
 1. Ouvrez `Command Prompt`
-1. `$ certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
-1. `$ findstr /v CERTIFICATE C:\path\to\encoded-private.key`
+1. Exécution de la commande `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
+1. Exécution de la commande `findstr /v CERTIFICATE C:\path\to\encoded-private.key`
 1. Copiez la sortie base64 dans le Presse-papiers.
+1. Coller dans `.env` comme valeur de la clé correspondante
 
 >[!TAB Linux®]
 
 1. Ouvrir le terminal
-1. `$ base64 private.key`
+1. Exécution de la commande `base64 private.key`
 1. Copiez la sortie base64 dans le Presse-papiers.
+1. Coller dans `.env` comme valeur de la clé correspondante
 
 >[!ENDTABS]
 
