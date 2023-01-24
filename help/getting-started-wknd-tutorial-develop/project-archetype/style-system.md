@@ -13,9 +13,9 @@ mini-toc-levels: 1
 thumbnail: 30386.jpg
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
 workflow-type: tm+mt
-source-wordcount: '1681'
+source-wordcount: '1677'
 ht-degree: 3%
 
 ---
@@ -67,9 +67,9 @@ Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/a
 1. Découvrez la notation BEM et comment elle peut être utilisée pour définir soigneusement les styles.
 1. Appliquez des configurations de stratégie avancées à l’aide de modèles modifiables.
 
-## Ce que vous allez créer {#what-you-will-build}
+## Ce que vous allez construire {#what-build}
 
-Dans ce chapitre, nous utiliserons la variable [Système de style](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=fr) pour créer des variantes de la variable **Titre** et **Texte** composants utilisés sur la page Article.
+Ce chapitre utilise la méthode [Système de style](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=fr) pour créer des variantes de la variable **Titre** et **Texte** composants utilisés sur la page Article.
 
 ![Styles disponibles pour le titre](assets/style-system/styles-added-title.png)
 
@@ -77,15 +77,15 @@ Dans ce chapitre, nous utiliserons la variable [Système de style](https://exper
 
 ## Contexte {#background}
 
-Le [Système de style](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html) permet aux développeurs et aux éditeurs de modèle de créer plusieurs variantes visuelles d’un composant. Les auteurs peuvent ensuite décider quel style utiliser lors de la composition d’une page. Nous utiliserons le système de style tout le reste du tutoriel pour obtenir plusieurs styles uniques, tout en utilisant les composants principaux dans une approche à code faible.
+Le [Système de style](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=fr) permet aux développeurs et aux éditeurs de modèle de créer plusieurs variantes visuelles d’un composant. Les auteurs peuvent ensuite décider quel style utiliser lors de la composition d’une page. Le système de style est utilisé dans le reste du tutoriel pour obtenir plusieurs styles uniques tout en utilisant les composants principaux dans une approche à code faible.
 
 L’idée générale du système de style est que les auteurs peuvent choisir différents styles de l’apparence d’un composant. Les &quot;styles&quot; sont pris en charge par des classes CSS supplémentaires qui sont injectées dans la balise div externe d’un composant. Dans les bibliothèques clientes, des règles CSS sont ajoutées en fonction de ces classes de style afin que le composant change d’aspect.
 
-Vous pouvez trouver [documentation détaillée du système de style ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=fr). Il y a aussi une grande [vidéo technique pour comprendre le système de style](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
+Vous pouvez trouver [documentation détaillée du système de style ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=fr). Il y a aussi une grande [vidéo technique pour comprendre le système de style](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/style-system-technical-video-understand.html).
 
 ## Style de soulignement - Titre {#underline-style}
 
-Le [Composant du titre](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/title.html) a été ajouté par proxy au projet sous `/apps/wknd/components/title` dans le **ui.apps** module . Les styles par défaut des éléments d’en-tête (`H1`, `H2`, `H3`...) ont déjà été implémentés dans la variable **ui.frontend** module .
+Le [Composant du titre](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/title.html) a été ajouté par proxy au projet sous `/apps/wknd/components/title` dans le **ui.apps** module . Les styles par défaut des éléments d’en-tête (`H1`, `H2`, `H3`...) ont déjà été implémentés dans la variable **ui.frontend** module .
 
 Le [Conceptions WKND Article](assets/pages-templates/wknd-article-design.xd) contiennent un style unique pour le composant Titre avec un trait de soulignement. Au lieu de créer deux composants ou de modifier la boîte de dialogue du composant, le système de style peut être utilisé pour permettre aux auteurs d’ajouter un style de soulignement.
 
@@ -93,15 +93,15 @@ Le [Conceptions WKND Article](assets/pages-templates/wknd-article-design.xd) con
 
 ### Ajout d’une stratégie de titre
 
-Ajoutez une nouvelle stratégie pour les composants Titre afin que les auteurs de contenu puissent sélectionner le style Souligné à appliquer à des composants spécifiques. Pour ce faire, utilisez l’éditeur de modèles dans AEM.
+Ajoutons une stratégie pour les composants Titre pour permettre aux auteurs de contenu de choisir le style Souligné à appliquer à des composants spécifiques. Pour ce faire, utilisez l’éditeur de modèles dans AEM.
 
-1. Accédez au **Page Article** modèle situé à l’adresse : [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
+1. Accédez au **Page Article** modèle à partir de : [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html)
 
 1. Dans **Structure** mode, dans la fenêtre principale **Conteneur de mises en page**, sélectionnez la variable **Stratégie** en regard de l’icône **Titre** composant répertorié sous *Composants autorisés*:
 
    ![Configuration de la stratégie de titre](assets/style-system/article-template-title-policy-icon.png)
 
-1. Créez une nouvelle stratégie pour le composant Titre avec les valeurs suivantes :
+1. Créez une stratégie pour le composant Titre avec les valeurs suivantes :
 
    *Titre de la stratégie&#42;*: **Titre WKND**
 
@@ -119,7 +119,7 @@ Ajoutez une nouvelle stratégie pour les composants Titre afin que les auteurs d
 
 ### Appliquer le style de soulignement
 
-En tant qu’auteur, appliquez le style souligné à certains composants du titre.
+En tant qu’auteur, appliquons le style souligné à certains composants du titre.
 
 1. Accédez au **La Skateparks** article dans l’éditeur AEM Sites à l’adresse : [http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html](http://localhost:4502/editor.html/content/wknd/us/en/magazine/guide-la-skateparks.html)
 1. Dans **Modifier** , choisissez un composant Titre . Cliquez sur le bouton **pinceau** et sélectionnez la variable **Souligner** style :
@@ -128,7 +128,7 @@ En tant qu’auteur, appliquez le style souligné à certains composants du titr
 
    >[!NOTE]
    >
-   > À ce stade, aucune modification visible ne se produira en tant que `underline` style n’a pas été implémenté. Dans l’exercice suivant, ce style est implémenté.
+   > À ce stade, aucune modification visible n’a lieu lorsque la variable `underline` style n’a pas été implémenté. Dans l’exercice suivant, ce style est implémenté.
 
 1. Cliquez sur le bouton **Informations sur la page** icon > **Afficher comme publié(e)** pour inspecter la page en dehors de l’éditeur d’AEM.
 1. Utilisez les outils de développement de votre navigateur pour vérifier que le balisage autour du composant Titre comporte la classe CSS. `cmp-title--underline` appliquée à la balise div externe.
@@ -146,7 +146,7 @@ En tant qu’auteur, appliquez le style souligné à certains composants du titr
 
 ### Mise en oeuvre du style souligné - ui.frontend
 
-Implémentez ensuite le style Souligné à l’aide de la méthode **ui.frontend** de notre projet. Nous utiliserons le serveur de développement webpack fourni avec le **ui.frontend** pour prévisualiser les styles *before* déploiement sur une instance locale d’AEM.
+Implémentez ensuite le style Souligné à l’aide de la méthode **ui.frontend** du projet AEM. Le serveur de développement webpack fourni avec la variable **ui.frontend** pour prévisualiser les styles *before* Le déploiement sur une instance locale d’AEM est utilisé.
 
 1. Démarrez le `watch` à partir de **ui.frontend** module :
 
@@ -155,10 +155,10 @@ Implémentez ensuite le style Souligné à l’aide de la méthode **ui.frontend
    $ npm run watch
    ```
 
-   Cela lancera un processus qui surveille les modifications dans la `ui.frontend` et synchronisez les modifications sur l’instance AEM.
+   Cela permet de lancer un processus qui surveille les modifications dans la `ui.frontend` et synchronisez les modifications sur l’instance AEM.
 
 
-1. Renvoyer votre IDE et ouvrir le fichier `_title.scss` situé à l’adresse : `ui.frontend/src/main/webpack/components/_title.scss`.
+1. Renvoyer votre IDE et ouvrir le fichier `_title.scss` de : `ui.frontend/src/main/webpack/components/_title.scss`.
 1. Introduisez une nouvelle règle ciblant la variable `cmp-title--underline` Classe :
 
    ```scss
@@ -191,11 +191,11 @@ Implémentez ensuite le style Souligné à l’aide de la méthode **ui.frontend
 
    ![Style de soulignement visible dans le serveur de développement webpack](assets/style-system/underline-implemented-webpack.png)
 
-1. Dans l’éditeur d’AEM, vous devriez maintenant pouvoir activer et désactiver le **Souligner** et voir les modifications reflétées visuellement.
+1. Dans l’éditeur d’AEM, vous devriez maintenant pouvoir activer et désactiver le **Souligner** et vérifiez que les modifications sont reflétées visuellement.
 
 ## Style de bloc de citations - Texte {#text-component}
 
-Répétez ensuite les étapes similaires pour appliquer un style unique au [Composant textuel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). Le composant Texte a été ajouté par proxy au projet sous `/apps/wknd/components/text` dans le **ui.apps** module . Les styles par défaut des éléments de paragraphe ont déjà été implémentés dans la variable **ui.frontend**.
+Répétez ensuite les étapes similaires pour appliquer un style unique au [Composant textuel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html). Le composant Texte a été ajouté par proxy au projet sous `/apps/wknd/components/text` dans le **ui.apps** module . Les styles par défaut des éléments de paragraphe ont déjà été implémentés dans la variable **ui.frontend**.
 
 Le [Conceptions WKND Article](assets/pages-templates/wknd-article-design.xd) contiennent un style unique pour le composant Texte avec un bloc de guillemet :
 
@@ -203,9 +203,9 @@ Le [Conceptions WKND Article](assets/pages-templates/wknd-article-design.xd) con
 
 ### Ajout d’une stratégie de texte
 
-Ajoutez ensuite une nouvelle stratégie pour les composants Texte .
+Ajoutez ensuite une stratégie pour les composants Texte .
 
-1. Accédez au **Modèle de page d’article** situé à l’adresse : [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html).
+1. Accédez au **Modèle de page d’article** de : [http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html](http://localhost:4502/editor.html/conf/wknd/settings/wcm/templates/article-page/structure.html).
 
 1. Dans **Structure** mode, dans la fenêtre principale **Conteneur de mises en page**, sélectionnez la variable **Stratégie** en regard de l’icône **Texte** composant répertorié sous *Composants autorisés*:
 
@@ -238,7 +238,7 @@ Ajoutez ensuite une nouvelle stratégie pour les composants Texte .
 
    ![Application du style de bloc de citations](assets/style-system/quote-block-style-applied.png)
 
-1. Utilisez les outils de développement du navigateur pour inspecter le balisage. Vous devriez voir le nom de la classe. `cmp-text--quote` a été ajouté à la balise div outter du composant :
+1. Utilisez les outils de développement du navigateur pour inspecter le balisage. Vous devriez voir le nom de la classe. `cmp-text--quote` a été ajouté à la balise div externe du composant :
 
    ```html
    <!-- Quote Block style class added -->
@@ -252,7 +252,7 @@ Ajoutez ensuite une nouvelle stratégie pour les composants Texte .
 
 ### Implémentation du style de bloc de citations - ui.frontend
 
-Nous allons ensuite implémenter le style Bloc de citations à l’aide de la méthode **ui.frontend** de notre projet.
+Implémentons maintenant le style Bloc de citations à l’aide de la méthode **ui.frontend** du projet AEM.
 
 1. Si ce n’est pas déjà fait, démarrez la variable `watch` à partir de **ui.frontend** module :
 
@@ -260,7 +260,7 @@ Nous allons ensuite implémenter le style Bloc de citations à l’aide de la m�
    $ npm run watch
    ```
 
-1. Mettre à jour le fichier `text.scss` situé à l’adresse : `ui.frontend/src/main/webpack/components/_text.scss`:
+1. Mettre à jour le fichier `text.scss` de : `ui.frontend/src/main/webpack/components/_text.scss`:
 
    ```css
    /* Default text style */
@@ -302,7 +302,7 @@ Nous allons ensuite implémenter le style Bloc de citations à l’aide de la m�
    >
    > Dans ce cas, les éléments de HTML bruts sont ciblés par les styles. En effet, le composant Texte fournit un éditeur de texte enrichi pour les auteurs de contenu. La création de styles directement par rapport au contenu de l’éditeur de texte enrichi doit être effectuée avec soin et il est encore plus important d’étendre étroitement les styles.
 
-1. Revenez à nouveau au navigateur et le style de bloc Devis est ajouté :
+1. Revenez à nouveau au navigateur et vous devriez constater que le style de bloc entre guillemets a été ajouté :
 
    ![Style de bloc entre guillemets visible](assets/style-system/quoteblock-implemented.png)
 
@@ -310,7 +310,7 @@ Nous allons ensuite implémenter le style Bloc de citations à l’aide de la m�
 
 ## Largeur fixe - Conteneur (bonus) {#layout-container}
 
-Les composants de conteneur ont été utilisés pour créer la structure de base du modèle de page d’article et fournir les zones de dépôt permettant aux auteurs de contenu d’ajouter du contenu sur une page. Les conteneurs peuvent également tirer parti du système de style, offrant ainsi aux auteurs de contenu davantage d’options pour concevoir des mises en page.
+Les composants de conteneur ont été utilisés pour créer la structure de base du modèle de page d’article et fournir les zones de dépôt permettant aux auteurs de contenu d’ajouter du contenu sur une page. Les conteneurs peuvent également utiliser le système de style, offrant ainsi aux auteurs de contenu davantage d’options pour concevoir des mises en page.
 
 Le **Conteneur principal** du modèle Page d’article contient les deux conteneurs pouvant être créés et d’une largeur fixe.
 
@@ -340,13 +340,13 @@ Au lieu de cibler la variable `main` Élément de HTML, le système de style peu
 
 ## Félicitations ! {#congratulations}
 
-Félicitations, la page de l&#39;article est presque entièrement stylisée et vous avez acquis une expérience pratique en utilisant le système de style AEM.
+Félicitations, la page de l&#39;article est presque stylisée et vous avez acquis une expérience pratique en utilisant le système de style AEM.
 
 ### Étapes suivantes {#next-steps}
 
 Découvrez les étapes de bout en bout pour créer une [Composant d’AEM personnalisé](custom-component.md) qui affiche le contenu créé dans une boîte de dialogue et explore le développement d’un modèle Sling pour encapsuler la logique commerciale qui renseigne le code HTL du composant.
 
-Afficher le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd) ou passer en revue et déployer le code localement sur la branche Git `tutorial/style-system-solution`.
+Afficher le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd) ou revoir et déployer le code localement sur la branche Git `tutorial/style-system-solution`.
 
 1. Cloner le [github.com/adobe/aem-wknd-guides](https://github.com/adobe/aem-guides-wknd) référentiel.
 1. Consultez la section `tutorial/style-system-solution` branche.

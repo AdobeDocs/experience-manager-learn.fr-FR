@@ -12,16 +12,16 @@ kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 4%
+source-wordcount: '1151'
+ht-degree: 3%
 
 ---
 
 # Notions de base des composants {#component-basics}
 
-Dans ce chapitre, nous allons explorer la technologie sous-jacente d’un composant Sites Adobe Experience Manager (AEM) au moyen d’une `HelloWorld` par exemple. De petites modifications sont apportées à un composant existant, couvrant des rubriques de création, HTL, modèles Sling, bibliothèques côté client.
+Dans ce chapitre, explorons la technologie sous-jacente d’un composant Sites Adobe Experience Manager (AEM) au moyen d’une `HelloWorld` par exemple. De petites modifications sont apportées à un composant existant, couvrant des rubriques de création, HTL, modèles Sling, bibliothèques côté client.
 
 ## Prérequis {#prerequisites}
 
@@ -35,9 +35,9 @@ L’IDE utilisé dans les vidéos est : [Visual Studio Code](https://code.visual
 1. Découvrez comment les boîtes de dialogue sont utilisées pour faciliter la création de contenu.
 1. Découvrez les principes de base des bibliothèques côté client pour inclure CSS et JavaScript afin de prendre en charge un composant.
 
-## Ce que vous allez créer {#what-you-will-build}
+## Ce que vous allez construire {#what-build}
 
-Dans ce chapitre, vous allez apporter plusieurs modifications à une `HelloWorld` composant. Au cours du processus de mise à jour de la variable `HelloWorld` vous en apprendrez plus sur les principaux domaines du développement des composants d’AEM.
+Dans ce chapitre, vous apportez plusieurs modifications à une `HelloWorld` composant. Lors de la mise à jour des `HelloWorld` vous découvrez les principaux domaines du développement de composants d’AEM.
 
 ## Projet de démarrage de chapitre {#starter-project}
 
@@ -85,32 +85,32 @@ Ouvrez un nouveau terminal de ligne de commande et effectuez les actions suivant
 
 ## Création de composants {#component-authoring}
 
-Les composants peuvent être considérés comme de petits blocs de création modulaires d’une page web. Pour réutiliser les composants, ceux-ci doivent pouvoir être configurés. Pour ce faire, utilisez la boîte de dialogue de création. Ensuite, nous allons créer un composant simple et examiner comment les valeurs de la boîte de dialogue sont conservées dans AEM.
+Les composants peuvent être considérés comme de petits blocs de création modulaires d’une page web. Pour réutiliser des composants, ceux-ci doivent pouvoir être configurés. Pour ce faire, utilisez la boîte de dialogue de création. Créons ensuite un composant simple et examinons comment les valeurs de la boîte de dialogue sont conservées dans AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330986/?quality=12&learn=on)
 
-Vous trouverez ci-dessous les étapes de haut niveau effectuées dans la vidéo ci-dessus.
+Vous trouverez ci-dessous les étapes générales effectuées dans la vidéo ci-dessus.
 
 1. Créez une page nommée **Principes de base des composants** sous **Site WKND** `>` **US** `>` **en**.
 1. Ajoutez la variable **Composant Hello World** sur la page nouvellement créée.
 1. Ouvrez la boîte de dialogue du composant et saisissez du texte. Enregistrez les modifications pour afficher le message affiché sur la page.
 1. Passez en mode Développeur, affichez le chemin d’accès au contenu dans CRXDE-Lite et examinez les propriétés de l’instance de composant.
-1. Utilisez CRXDE-Lite pour afficher la variable `cq:dialog` et `helloworld.html` script situé à l’emplacement `/apps/wknd/components/content/helloworld`.
+1. Utilisez CRXDE-Lite pour afficher la variable `cq:dialog` et `helloworld.html` script à partir de `/apps/wknd/components/content/helloworld`.
 
 ## HTL (langage de modèle de HTML) et boîtes de dialogue {#htl-dialogs}
 
-Langue du modèle de HTML ou **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/getting-started/getting-started.html?lang=fr)** est un langage de modèle léger côté serveur utilisé par AEM composants pour effectuer le rendu du contenu.
+Langue du modèle de HTML ou **[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/getting-started.html)** est un langage de modèle léger côté serveur utilisé par AEM composants pour effectuer le rendu du contenu.
 
 **Boîtes de dialogue** définissez les configurations disponibles qui peuvent être créées pour un composant.
 
-Nous mettrons ensuite à jour la variable `HelloWorld` Script HTL pour afficher un message de bienvenue supplémentaire avant le message texte.
+Nous allons maintenant mettre à jour le `HelloWorld` Script HTL pour afficher un message de bienvenue supplémentaire avant le message texte.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330987/?quality=12&learn=on)
 
-Vous trouverez ci-dessous les étapes de haut niveau effectuées dans la vidéo ci-dessus.
+Vous trouverez ci-dessous les étapes générales effectuées dans la vidéo ci-dessus.
 
 1. Basculez vers l’IDE et ouvrez le projet sur la `ui.apps` module .
-1. Ouvrez le `helloworld.html` et apportez une modification au HTML Markup.
+1. Ouvrez le `helloworld.html` et mettez à jour HTML Markup.
 1. Utilisez les outils IDE tels que [Synchronisation des AEM VSCode](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) pour synchroniser la modification du fichier avec l’instance d’AEM locale.
 1. Revenez au navigateur et observez que le rendu du composant a changé.
 1. Ouvrez le `.content.xml` fichier qui définit la boîte de dialogue pour la variable `HelloWorld` à l’adresse :
@@ -152,7 +152,7 @@ Vous trouverez ci-dessous les étapes de haut niveau effectuées dans la vidéo 
    </jcr:root>
    ```
 
-1. Réouverture du fichier `helloworld.html`, qui représente le script HTL principal responsable du rendu de la variable `HelloWorld` composant, situé à l’adresse :
+1. Réouverture du fichier `helloworld.html`, qui représente le script HTL principal responsable du rendu de la variable `HelloWorld` Composant situé sous le chemin d’accès :
 
    ```plain
        <code>/aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/helloworld/helloworld.html
@@ -171,9 +171,9 @@ Vous trouverez ci-dessous les étapes de haut niveau effectuées dans la vidéo 
 
 ## Modèles Sling {#sling-models}
 
-Les modèles Sling sont des objets POJO (Plain Old Java Object) Java pilotés par les annotations. Ils facilitent le mappage des données du JCR aux variables Java et fournissent un certain nombre d’autres détails lors du développement dans le contexte d’AEM.
+Les modèles Sling sont des objets POJO (Plain Old Java™ Object) Java™ pilotés par les annotations qui facilitent le mappage des données du JCR aux variables Java™. Ils apportent aussi plusieurs autres subtilités lorsqu&#39;ils se développent dans le contexte de l&#39;AEM.
 
-Ensuite, nous allons apporter quelques mises à jour au `HelloWorldModel` Modèle Sling afin d’appliquer une logique métier aux valeurs stockées dans le JCR avant de les générer sur la page.
+Ensuite, mettons à jour les `HelloWorldModel` Modèle Sling afin d’appliquer une logique métier aux valeurs stockées dans le JCR avant de les générer sur la page.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330988/?quality=12&learn=on)
 
@@ -199,7 +199,7 @@ Ensuite, nous allons apporter quelques mises à jour au `HelloWorldModel` Modèl
       ...
    ```
 
-1. Ajoutez les lignes suivantes au `HelloWorldModel` pour mapper les valeurs des propriétés JCR du composant. `title` et `text` aux variables Java :
+1. Ajoutez les lignes suivantes au `HelloWorldModel` pour mapper les valeurs des propriétés JCR du composant. `title` et `text` aux variables Java™ :
 
    ```java
    ...
@@ -253,7 +253,7 @@ Ensuite, nous allons apporter quelques mises à jour au `HelloWorldModel` Modèl
 
    >[!NOTE]
    >
-   > Si vous utilisez AEM 6.4/6.5, utilisez `mvn clean install -PautoInstallBundle -Pclassic`
+   > Pour AEM 6.4/6.5, utilisez `mvn clean install -PautoInstallBundle -Pclassic`
 
 1. Mettre à jour le fichier `helloworld.html` at `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` pour utiliser les méthodes nouvellement créées de la variable `HelloWorld` model :
 
@@ -280,7 +280,7 @@ Ensuite, nous allons apporter quelques mises à jour au `HelloWorldModel` Modèl
 
 ## Bibliothèques côté client {#client-side-libraries}
 
-Les bibliothèques côté client (clientlibs, pour résumer) offrent un mécanisme d’organisation et de gestion des fichiers CSS et JavaScript nécessaires à une mise en oeuvre d’AEM Sites. Les bibliothèques côté client sont la méthode standard pour inclure du code CSS et JavaScript sur une page dans AEM.
+Bibliothèques côté client, `clientlibs` fournit un mécanisme d’organisation et de gestion des fichiers CSS et JavaScript nécessaires à une mise en oeuvre d’AEM Sites. Les bibliothèques côté client sont la méthode standard pour inclure du code CSS et JavaScript sur une page dans AEM.
 
 Le [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr) est un module découplé. [webpack](https://webpack.js.org/) qui est intégré au processus de génération. Cela permet l’utilisation de bibliothèques front-end populaires telles que Sass, LESS et TypeScript. Le `ui.frontend` est étudié plus en détail dans la section [Chapitre Bibliothèques côté client](/help/getting-started-wknd-tutorial-develop/project-archetype/client-side-libraries.md).
 
@@ -288,15 +288,18 @@ Ensuite, mettez à jour les styles CSS pour le `HelloWorld` composant.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340750/?quality=12&learn=on)
 
-Vous trouverez ci-dessous les étapes de haut niveau effectuées dans la vidéo ci-dessus.
+Vous trouverez ci-dessous les étapes générales effectuées dans la vidéo ci-dessus.
 
-1. Ouvrez une fenêtre de terminal et accédez au `ui.frontend` et
+1. Ouvrez une fenêtre de terminal et accédez au `ui.frontend` directory
 
-1. Dans le `ui.frontend` Exécution du répertoire `npm run watch` command :
+1. Être dans `ui.frontend` Exécution du répertoire `npm install npm-run-all --save-dev` pour installer la commande [npm-run-all](https://www.npmjs.com/package/npm-run-all) module Noeud. Cette étape est **requis sur le projet AEM généré par Archetype 39**, dans la version à venir de l’archétype, cela n’est pas obligatoire.
+
+1. Exécutez ensuite le `npm run watch` command :
 
    ```shell
    $ npm run watch
    ```
+
 1. Basculez vers l’IDE et ouvrez le projet sur la `ui.frontend` module .
 1. Ouvrez le fichier `ui.frontend/src/main/webpack/components/_helloworld.scss`.
 1. Mettez à jour le fichier pour afficher un titre rouge :
@@ -308,7 +311,7 @@ Vous trouverez ci-dessous les étapes de haut niveau effectuées dans la vidéo 
    }
    ```
 
-1. Dans le terminal, l’activité indiquant que la variable `ui.frontend` module compile et synchronise les modifications avec l’instance locale d’AEM.
+1. Dans le terminal, l’activité qui indique que la variable `ui.frontend` module compile et synchronise les modifications avec l’instance locale d’AEM.
 
    ```shell
    Entrypoint site 214 KiB = clientlib-site/site.css 8.45 KiB clientlib-site/site.js 206 KiB
@@ -330,7 +333,7 @@ Vous trouverez ci-dessous les étapes de haut niveau effectuées dans la vidéo 
 
 ## Félicitations ! {#congratulations}
 
-Félicitations, vous venez d’apprendre les bases du développement de composants dans Adobe Experience Manager !
+Félicitations, vous avez appris les bases du développement de composants dans Adobe Experience Manager !
 
 ### Étapes suivantes {#next-steps}
 
