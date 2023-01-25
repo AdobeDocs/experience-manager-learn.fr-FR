@@ -7,10 +7,10 @@ breadcrumb-title: Tutoriels sur AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: a2bbb26751c9182056b4fe6d36eeeec964001df8
+source-git-commit: d3531e76d3341e0964e5ed878fc72037024a11fd
 workflow-type: tm+mt
-source-wordcount: '1776'
-ht-degree: 3%
+source-wordcount: '1784'
+ht-degree: 4%
 
 ---
 
@@ -184,6 +184,10 @@ ht-degree: 3%
    + [Variable ArrayList](variables-aem-workflow/part4.md)
    + [Variable de modèle de données de formulaire](variables-aem-workflow/form-data-model.md)
    + [Éditeur de règles dans AEM workflow](variables-aem-workflow/part5.md)
++ Vérification des données de formulaire{#review-form-data}
+   + [Présentation](review-form-data/introduction.md)
+   + [Créer un composant](review-form-data/create-component.md)
+   + [Déploiement de ressources](review-form-data/deploy-on-your-system.md)
 + Stockage et récupération des données de formulaire dans MySQL DB{#storing-and-retrieving-form-data}
    + [Présentation](storing-retrieving-form-data/introduction.md)
    + [Configuration de la source de données](storing-retrieving-form-data/part1.md)
