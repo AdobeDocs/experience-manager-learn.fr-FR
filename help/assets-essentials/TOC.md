@@ -6,10 +6,10 @@ sub-product: Experience Manager Assets
 version: Cloud Service
 feature-set: Experience Manager Assets
 team: TM
-source-git-commit: d020ad061ab39a4871a2bc851f883d880e7df6ee
+source-git-commit: 1ff03f5031389db1a779d28beab9d592857a2ba6
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 33%
+source-wordcount: '74'
+ht-degree: 32%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 33%
    + [Partage de liens](basics/link-sharing.md)
 
 + Configuration{#configuring}
+   + [Mon espace de travail](configuring/my-workspace.md)
    + [Formulaires de métadonnées](configuring/metadata-forms.md)
    + [Gestion des autorisations](configuring/permissions-management.md)
 
