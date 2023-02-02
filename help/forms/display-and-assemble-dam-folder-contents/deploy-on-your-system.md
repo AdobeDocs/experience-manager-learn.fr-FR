@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
+source-git-commit: ddef90067d3ae4a3c6a705b5e109e474bab34f6d
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 2%
+source-wordcount: '158'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,9 @@ ht-degree: 2%
 
 Suivez les étapes répertoriées ci-dessous pour que ce cas pratique fonctionne sur votre instance AEM locale.
 
-* [Configurez pour utiliser l’utilisateur fd-service en suivant les étapes mentionnées dans cet article.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=en). Assurez-vous d’avoir déployé le lot DevelopingWithServiceUser .
+* [Déploiement du bundle DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) contenu dans le fichier zip.
+
+* Ajoutez l’entrée suivante dans le service Apache Sling Service User Mapper **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** en utilisant la variable [configMgr](http://localhost:4502/system/console/configMgr).
 
 * [Déployer le lot de newsletters](assets/Newsletters.core-1.0.0-SNAPSHOT.jar). Ce lot contient le code permettant de répertorier le contenu du dossier et d’assembler la ou les newsletter sélectionnées.
 
