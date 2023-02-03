@@ -9,9 +9,9 @@ level: Intermediate
 kt: 9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
-source-git-commit: b74dc2693071313a80ccaaea839b8e2087c9edaa
+source-git-commit: 6ae98ce749f8a485bdaa4c6c6232e52d8d6246b3
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1218'
 ht-degree: 5%
 
 ---
@@ -53,6 +53,8 @@ Ce tutoriel utilise `curl` pour créer les configurations de l’API Cloud Manag
 Commencez par activer et configurer l’adresse IP sortante dédiée sur AEM as a Cloud Service.
 
 1. Tout d’abord, déterminez la région dans laquelle la mise en réseau avancée est nécessaire, à l’aide de l’API Cloud Manager. [listRegion](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) opération. Le `region name` est nécessaire pour effectuer les appels d’API Cloud Manager suivants. En règle générale, la région dans laquelle réside l’environnement de production est utilisée.
+
+   Recherchez la région de votre environnement as a Cloud Service AEM dans [Cloud Manager](https://my.cloudmanager.adobe.com) sous le [détails de l’environnement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#viewing-environment). Le nom de région affiché dans Cloud Manager peut être [mappé au code de région](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilisé dans l’API Cloud Manager.
 
    __requête HTTP listRegion__
 
