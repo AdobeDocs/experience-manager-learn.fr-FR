@@ -9,9 +9,9 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 1a7b4c9c4575407467856d795ad3b6dde8e10532
+source-git-commit: 674407637c475ea9b70ecbc81f9e9bfece0fe9df
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '178'
 ht-degree: 3%
 
 ---
@@ -31,6 +31,9 @@ Cette vidéo montre :
 >[!VIDEO](https://video.tv.adobe.com/v/3415490/?quality=12&learn=on)
 
 ## Ressources supplémentaires
+
+
+[Activation de RDE dans une documentation de programme](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#enabling-rde-in-a-program)
 
 Configuration de [Interface de ligne de commande extensible de Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) également appelé `aio CLI`
 
