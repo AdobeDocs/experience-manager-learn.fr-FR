@@ -9,9 +9,9 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 81e1e2bf0382f6a577c1037dcd0d58ebc73366cd
+source-git-commit: 65d54f0137786c7e8ac9ac962c424dd20bf5f3dd
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '492'
 ht-degree: 4%
 
 ---
@@ -45,19 +45,19 @@ Pour déployer le [Projet Sites WKND](https://github.com/adobe/aem-guides-wknd#a
 
 Installez l’interface de ligne de commande extensible de Adobe I/O Runtime, également appelée `aio CLI` en exécutant la commande suivante à partir de la ligne de commande.
 
-    &quot;shell
-    $ npm install -g @adobe/aio-cli
-    &quot;
+```shell
+$ npm install -g @adobe/aio-cli
+```
 
 ### AEM plugins
 
 Installez Cloud Manager et AEM modules externes RDE à l’aide de la fonction `aio cli`&#39;s `plugins:install` .
 
-    &quot;shell
-    $ plugins aio:install @adobe/aio-cli-plugin-cloudmanager
-    
-    $ plugins aio:install @adobe/aio-cli-plugin-aem-rde
-    &quot;
+```shell
+$ aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+
+$ aio plugins:install @adobe/aio-cli-plugin-aem-rde
+```
 
 Le module externe Cloud Manager permet aux développeurs d’interagir avec Cloud Manager à partir de la ligne de commande.
 
@@ -91,23 +91,23 @@ Les modules externes AEM doivent être configurés pour interagir avec votre RDE
 
 Vous pouvez vérifier les valeurs de configuration actuelles en exécutant la commande suivante.
 
-    &quot;shell
-    $ aio config:list
-    &quot;
+```shell
+$ aio config:list
+```
 
 En outre, pour changer ou savoir à quelle organisation vous êtes actuellement connecté, vous pouvez utiliser la commande ci-dessous.
 
-    &quot;shell
-    $ aio où
-    &quot;
+```shell
+$ aio where
+```
 
 ## Vérification de l’accès RDE
 
 Vérifiez l’installation et la configuration du module externe RDE d’AEM en exécutant la commande suivante.
 
-    &quot;shell
-    $ aio aem:rde:status
-    &quot;
+```shell
+$ aio aem:rde:status
+```
 
 Les informations d’état RDE s’affichent comme l’état d’environnement, la liste des _votre projet AEM_ lots et configurations sur les services de création et de publication.
 
