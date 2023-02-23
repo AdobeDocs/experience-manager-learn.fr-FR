@@ -8,10 +8,10 @@ role: Developer
 level: Intermediate
 kt: 10254
 thumbnail: KT-10254.jpeg
-source-git-commit: 4fa84b0461cbdf2e25336259c4128be5585b8787
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 2%
+source-wordcount: '508'
+ht-degree: 3%
 
 ---
 
@@ -38,7 +38,7 @@ Le code de paramètres régionaux est également la valeur utilisée pour filtre
 
 ## Requête persistante GraphQL
 
-AEM fournit une `_locale` Filtre GraphQL qui filtre automatiquement le contenu par code de paramètres régionaux . Par exemple, en interrogeant toutes les aventures anglaises dans la [Projet de démonstration de référence WKND](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) peut être effectué avec une nouvelle requête conservée. `wknd-shared/adventures-by-locale` défini comme :
+AEM fournit une `_locale` Filtre GraphQL qui filtre automatiquement le contenu par code de paramètres régionaux . Par exemple, en interrogeant toutes les aventures anglaises dans la [Projet de site WKND](https://github.com/adobe/aem-guides-wknd) peut être effectué avec une nouvelle requête conservée. `wknd-shared/adventures-by-locale` défini comme :
 
 ```graphql
 query($locale: String!) {
@@ -84,7 +84,7 @@ export default LocaleContext;
 
 Ensuite, créez un composant React du sélecteur de paramètres régionaux qui définit comme [LocaleContext](#locale-context) de la sélection de l’utilisateur.
 
-Cette valeur locale est utilisée pour piloter les requêtes GraphQL, en s’assurant qu’elles ne renvoient que du contenu correspondant aux paramètres régionaux sélectionnés.
+Cette valeur locale est utilisée pour piloter les requêtes GraphQL, en s’assurant qu’elles renvoient uniquement le contenu correspondant au paramètre régional sélectionné.
 
 ```javascript
 // src/LocaleSwitcher.js
@@ -112,7 +112,7 @@ Le composant Aventures interroge AEM toutes les aventures par langue et réperto
 
 Cette approche peut être étendue à d’autres requêtes de votre application, en s’assurant que toutes les requêtes incluent uniquement le contenu spécifié par la sélection des paramètres régionaux d’un utilisateur.
 
-L’interrogation de l’AEM est effectuée dans le crochet React personnalisé. [getAdventuresByLocale, décrit plus en détail sur la documentation AEM Requête GraphQL](./aem-headless-sdk.md).
+L’interrogation de l’AEM est effectuée dans le crochet React personnalisé. [getAdventuresByLocale, décrit plus en détail dans la documentation Query AEM GraphQL](./aem-headless-sdk.md).
 
 ```javascript
 // src/Adventures.js

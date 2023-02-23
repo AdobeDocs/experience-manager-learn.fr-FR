@@ -1,6 +1,6 @@
 ---
 title: Next.js - AEM exemple sans affichage
-description: Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application Next.js explique comment interroger le contenu à l’aide des API GraphQL AEM à l’aide de requêtes persistantes.
+description: Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application Next.js explique comment interroger du contenu à l’aide des API GraphQL AEM à l’aide de requêtes persistantes.
 version: Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
@@ -10,16 +10,16 @@ level: Beginner
 kt: 10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2022-10-03T00:00:00Z
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '806'
 ht-degree: 2%
 
 ---
 
 # Application Next.js
 
-Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application Next.js explique comment interroger le contenu à l’aide des API GraphQL AEM à l’aide de requêtes persistantes. Le client AEM sans affichage pour JavaScript est utilisé pour exécuter les requêtes persistantes GraphQL qui alimentent l’application.
+Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application Next.js explique comment interroger du contenu à l’aide des API GraphQL AEM à l’aide de requêtes persistantes. Le client AEM sans affichage pour JavaScript est utilisé pour exécuter les requêtes persistantes GraphQL qui alimentent l’application.
 
 ![Application Next.js avec AEM sans affichage](./assets/next-js/next-js.png)
 
@@ -35,7 +35,7 @@ Les outils suivants doivent être installés localement :
 
 ## Configuration requise AEM
 
-L’application Next.js fonctionne avec les options de déploiement AEM suivantes. Tous les déploiements requis [WKND Shared v2.1.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest), [Site WKND v2.1.0+](https://github.com/adobe/aem-guides-wknd/releases/latest), ou la variable [Module complémentaire de démonstration de référence](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/overview.html) à installer dans l&#39;environnement as a Cloud Service AEM.
+L’application Next.js fonctionne avec les options de déploiement AEM suivantes. Tous les déploiements requis [WKND Shared v2.1.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) ou [Site WKND v2.1.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) à installer dans l&#39;environnement as a Cloud Service AEM.
 
 Cet exemple d’application Next.js est conçu pour se connecter à __Publication AEM__ service.
 
@@ -80,21 +80,13 @@ Next.js est conçu pour se connecter à __Publication AEM__ et accéder au conte
    AEM_AUTH_DEV_TOKEN=my-dev-token
    ```
 
-1. Modifiez la variable `aem-guides-wknd-graphql/next-js/.env.local` fichier et valider  `NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT` est défini sur le point d’entrée AEM GraphQL approprié.
+1. Modifiez la variable `aem-guides-wknd-graphql/next-js/.env.local` fichier et valider  `NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT` est défini sur le point de terminaison GraphQL AEM approprié.
 
    Lors de l’utilisation de [WKND partagé](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) ou [Site WKND](https://github.com/adobe/aem-guides-wknd/releases/latest), utilisez le `wknd-shared` Point d’entrée de l’API GraphQL.
 
    ```plain
    ...
    NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT=wknd-shared
-   ...
-   ```
-
-   Lors de l’utilisation de [Module complémentaire de démonstration de référence](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/overview.html), utilisez le `aem-demo-assets` Point d’entrée de l’API GraphQL.
-
-   ```plain
-   ...
-   NEXT_PUBLIC_AEM_GRAPHQL_ENDPOINT=aem-demo-assets
    ...
    ```
 
@@ -111,7 +103,7 @@ Next.js est conçu pour se connecter à __Publication AEM__ et accéder au conte
 
 ## Le code
 
-Vous trouverez ci-dessous un résumé de la création de l’application Next.js, de sa connexion à AEM sans affichage pour récupérer du contenu à l’aide de requêtes persistantes GraphQL et de la manière dont ces données sont présentées. Le code complet se trouve sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js).
+Vous trouverez ci-dessous un résumé de la création de l’application Next.js, de sa connexion à AEM sans affichage pour récupérer du contenu à l’aide des requêtes persistantes de GraphQL et de la manière dont ces données sont présentées. Le code complet se trouve sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/next-js).
 
 ### Requêtes persistantes
 
@@ -202,9 +194,9 @@ query($slug: String!) {
 
 AEM requêtes persistantes sont exécutées sur une GET HTTP et, par conséquent, la variable [AEM client sans affichage pour JavaScript](https://github.com/adobe/aem-headless-client-js) est utilisé pour [exécuter les requêtes GraphQL persistantes ;](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md#aemheadlessrunpersistedquerypath-variables-options--promiseany) par rapport à AEM et chargez le contenu de l’aventure dans l’application.
 
-Chaque requête conservée possède une fonction correspondante dans `src/lib//aem-headless-client.js`, qui appelle le point d’entrée AEM GraphQL et renvoie les données d’aventure.
+Chaque requête conservée possède une fonction correspondante dans `src/lib//aem-headless-client.js`, qui appelle le point de terminaison GraphQL AEM et renvoie les données d’aventure.
 
-Chaque fonction appelle à son tour la fonction `aemHeadlessClient.runPersistedQuery(...)`, exécutant la requête GraphQL conservée.
+Chaque fonction appelle à son tour la fonction `aemHeadlessClient.runPersistedQuery(...)`, exécution de la requête GraphQL conservée.
 
 ```js
 // src/lib/aem-headless-client.js

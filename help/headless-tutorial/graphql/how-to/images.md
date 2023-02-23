@@ -9,9 +9,9 @@ level: Intermediate
 kt: 10253
 thumbnail: KT-10253.jpeg
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 3a7c04dfe465c1eff29ba6b4e4b7e24f047e5b42
+source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1177'
 ht-degree: 3%
 
 ---
@@ -38,7 +38,7 @@ Il est préférable d’utiliser les champs selon les critères suivants :
 | `_authorUrl` | ✘ | ✔ | ✘ |
 | `_publishUrl` | ✘ | ✘ | ✔ |
 
-Utilisation de `_authorUrl` et `_publishUrl` doit s’aligner sur le point d’entrée GraphQL AEM utilisé pour générer la réponse GraphQL.
+Utilisation de `_authorUrl` et `_publishUrl` doit s’aligner sur le point de terminaison GraphQL AEM utilisé pour générer la réponse GraphQL.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_headless_graphql_images"
@@ -55,7 +55,7 @@ Les types de champ sont examinés dans la section [Modèle de fragment de conten
 
 ## Requête persistante GraphQL
 
-Dans la requête GraphQL, renvoie le champ en tant que `ImageRef` saisissez et demandez les champs appropriés. `_path`, `_authorUrl`ou `_publishUrl` requis par votre application. Par exemple, interroger une aventure dans le [Projet de démonstration de référence WKND](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-site.html) et inclure l’URL de l’image pour les références de ressources d’image dans `primaryImage` champ, peut être effectué avec une nouvelle requête conservée. `wknd-shared/adventure-image-by-path` défini comme :
+Dans la requête GraphQL, renvoyez le champ comme `ImageRef` saisissez et demandez les champs appropriés. `_path`, `_authorUrl`ou `_publishUrl` requis par votre application. Par exemple, interroger une aventure dans le [Projet de site WKND](https://github.com/adobe/aem-guides-wknd) et inclure l’URL de l’image pour les références de ressources d’image dans `primaryImage` champ, peut être effectué avec une nouvelle requête conservée. `wknd-shared/adventure-image-by-path` défini comme :
 
 ```graphql
 query ($path: String!) {
@@ -154,7 +154,7 @@ Les rendus peuvent être validés par [ouverture de l’affichage des rendus d�
 
 ![Vérification des rendus](./assets/images/review-renditions.png)
 
-#### Publier des ressources
+#### Publication de ressources
 
 Assurez-vous que les ressources comportant les nouveaux rendus sont [(re) publié](../../../assets/sharing/publish.md) de sorte que les nouveaux rendus soient accessibles sur AEM Publish.
 
@@ -172,7 +172,7 @@ Vous pouvez accéder directement aux rendus en ajoutant le __noms de rendu__ et 
 
 ### Requête GraphQL{#renditions-graphl-query}
 
-AEM GraphQL nécessite une syntaxe supplémentaire pour demander des rendus d’image. Au lieu de [les images sont interrogées](#images-graphql-query) de la manière habituelle, et le rendu souhaité est spécifié dans le code. Il est important de [s’assurer que les ressources d’image utilisées par l’application sans interface utilisateur graphique possèdent les mêmes rendus nommés.](#reprocess-assets).
+AEM GraphQL ne requiert pas de syntaxe supplémentaire pour demander des rendus d’image. Au lieu de [les images sont interrogées](#images-graphql-query) de la manière habituelle, et le rendu souhaité est spécifié dans le code. Il est important de [s’assurer que les ressources d’image utilisées par l’application sans interface utilisateur graphique possèdent les mêmes rendus nommés.](#reprocess-assets).
 
 ### Exemple React
 
@@ -184,7 +184,7 @@ Créons une application React simple qui affiche trois rendus, optimisés pour l
 
 Créez un composant React qui effectue le rendu des images. Ce composant accepte quatre propriétés :
 
-+ `assetUrl`: URL de la ressource image fournie par le biais de la réponse de la requête GraphQL.
++ `assetUrl`: URL de la ressource image fournie via la réponse de la requête GraphQL.
 + `renditionName`: Nom du rendu à charger.
 + `renditionExtension`: Extension du rendu à charger.
 + `alt`: Texte secondaire de l’image ; l’accessibilité est importante !
