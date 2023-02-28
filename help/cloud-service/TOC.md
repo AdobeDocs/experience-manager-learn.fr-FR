@@ -76,7 +76,7 @@ ht-degree: 27%
       + [Archétype de projet AEM](./developing/basics/aem-project-archetype.md)
       + [Structure de projet AEM](./developing/basics/project-structure.md)
       + [Contenu mutable ou non mutable](./developing/basics/mutable-immutable.md)
-      + [Module de structure du référentiel](./developing/basics/repository-structure-package.md)
+      + [Package de structure du référentiel](./developing/basics/repository-structure-package.md)
       + [Publication de contenu](./developing/basics/content-publishing.md)
       + [Configurations OSGi](./developing/basics/osgi-configurations.md)
       + [Migration de la configuration de Dispatcher](./developing/basics/dispatcher-configuration.md)
