@@ -12,7 +12,7 @@ thumbnail: KT-11368.jpg
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: e3fb145e7a9f33dd010f6c40e42573d41e54b302
+source-git-commit: 772acab316ba2ff463fa5cacff02013bea920579
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Application Next.js de base
 
-Ceci [Next.js](https://nextjs.org/) L’application explique comment interroger du contenu à l’aide des API GraphQL AEM à l’aide de requêtes persistantes. Cette application rend un fichier de WKND Adventures, et lorsque vous sélectionnez une aventure, affiche les détails complets de l’aventure.
+Ceci [Next.js](https://nextjs.org/) L’application explique comment interroger du contenu à l’aide AEM API GraphQL à l’aide de requêtes persistantes. Cette application rend un fichier de WKND Adventures, et lorsque vous sélectionnez une aventure, affiche les détails complets de l’aventure.
 
 Ce code :
 
@@ -33,4 +33,4 @@ Pour une analyse plus approfondie de la création de cette application Next.js, 
 
 >[!IMPORTANT]
 >
-> Codesandbox.io ne prend pas en charge la modification de l’application Next.js dans l’IDE intégré. Pour modifier cet exemple de code, [ouvrez l’application Next.js directement sur codesandbox.io](https://codesandbox.io/s/wknd-next-js-app-3n6zdv).
+> Codesandbox.io ne prend pas en charge la modification de l’application Next.js dans l’IDE intégré. Pour modifier cet exemple de code, [ouvrez l’application Next.js directement sur codesandbox.io](https://codesandbox.io/s/wknd-next-js-app-u8x5f8).
