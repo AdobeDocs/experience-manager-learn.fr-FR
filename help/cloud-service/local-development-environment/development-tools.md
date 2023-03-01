@@ -10,9 +10,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: e82c30e7f1a1fe04fd43ee639d74788f9bf100f6
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1502'
 ht-degree: 3%
 
 ---
@@ -121,6 +121,7 @@ Le [Interface de ligne de commande d’Adobe I/O](https://github.com/adobe/aio-c
 
 + Suivi des journaux à partir d’AEM as a Cloud Services services
 + Gestion des pipelines de Cloud Manager à partir de l’interface de ligne de commande
++ Déployer sur [AEM Environnements de développement rapide](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
 
 ### Installation de l’interface de ligne de commande d’Adobe I/O
 
@@ -134,13 +135,7 @@ Le module externe Adobe I/O Cloud Manager permet à l’interface de ligne de co
 
 1. Exécuter `aio plugins:install @adobe/aio-cli-plugin-cloudmanager` pour installer le [module externe d’aio Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
-### Configuration du module Adobe I/O d’Asset compute de l’interface de ligne de commande{#aio-asset-compute}
-
-Le module externe Adobe I/O Cloud Manager permet à l’interface de ligne de commande d’aio de générer et d’exécuter des objets Worker Asset compute via l’interface de ligne de commande `aio asset-compute` .
-
-1. Exécuter `aio plugins:install @adobe/aio-cli-plugin-asset-compute` pour installer le [module externe aio Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute).
-
-### Configuration de l’authentification de l’interface de ligne de commande Adobe I/O
+#### Configuration de l’authentification de l’interface de ligne de commande Adobe I/O
 
 Pour que l’interface de ligne de commande de l’Adobe I/O communique avec Cloud Manager, une [L’intégration de Cloud Manager doit être créée dans Adobe I/O Console](https://github.com/adobe/aio-cli-plugin-cloudmanager), et les informations d’identification doivent être obtenues pour réussir l’authentification.
 
@@ -158,6 +153,19 @@ Pour que l’interface de ligne de commande de l’Adobe I/O communique avec Clo
    + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key PATH_TO_PRIVATE_KEY_FILE --file`
 
 Début [exécution des commandes](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) pour Cloud Manager via l’interface de ligne de commande d’Adobe I/O.
+
+### Configuration du module AEM Rapid Development Environment{#rde}
+
+Le module AEM Rapid Development Environment permet à l’interface de ligne de commande d’aio d’interagir avec AEM as a Cloud Service [Environnements de développement rapide](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html) via le `aio aem:rde` .
+
+1. Exécuter `aio plugins:install @adobe/aio-cli-plugin-aem-rde` pour installer le [AEM module externe Environnements de développement rapide](https://github.com/adobe/aio-cli-plugin-aem-rde).
+
+### Configuration du module Adobe I/O d’Asset compute de l’interface de ligne de commande{#aio-asset-compute}
+
+Le module externe Adobe I/O Cloud Manager permet à l’interface de ligne de commande d’aio de générer et d’exécuter des objets Worker Asset compute via l’interface de ligne de commande `aio asset-compute` .
+
+1. Exécuter `aio plugins:install @adobe/aio-cli-plugin-asset-compute` pour installer le [module externe aio Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute).
+
 
 ## Configuration de l’IDE de développement
 
