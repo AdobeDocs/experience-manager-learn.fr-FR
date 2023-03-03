@@ -3,9 +3,9 @@ title: Comment générer la vélocité du contenu avec Adobe Experience Manager
 description: Découvrez la vitesse du contenu et sa valeur au sein des entreprises. Parcourez quatre principes de mise en oeuvre efficace et les pièges à prendre en compte tout au long du chemin.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: de31d6e97b84781aa05ca441fc6e9fc4bc59ccc3
 workflow-type: tm+mt
-source-wordcount: '2815'
+source-wordcount: '2814'
 ht-degree: 0%
 
 ---
@@ -160,7 +160,7 @@ AEM Sites : exécution et fonctionnement de base
 | --- | --- | --- | --- |
 | Développeur CSS | <ul><li>Développement web (CSS ou front-end)</li>Réutilisation des composants<li>Création d’artefacts d’expérience à l’aide d’une réaffectation ou d’une nouvelle</li></ul> | <ul><li>Propriétaire de l’entreprise de la solution</li><li>Création de tâches de maintenance et d’améliorations</li><li>Fonctionnement de la Banque pour épouser des visions techniques et stratégiques</li></ul> | Responsable du produit |
 | Développeur principal | <ul><li>Expériences profondes non effectuées par le biais d’une simple feuille de style CSS frontale</li>Supervision architecturale<li>Intégrations dynamiques/alignement avec le propriétaire du produit sur des objectifs stratégiques</li></ul> | <ul><li>Aider les auteurs de contenu</li><li>Rôle de gouvernance</li><li>coordonne les lancements et gère les modifications de macro.</li></ul> | Auteur d’administration |
-| Gestionnaire de versions | <ul><li>Gestion des versions</li><li>Déploiements du code</li></li>Ingénieur du service client actuel</ul> | <ul><li>Applique le contenu (y compris les styles précréés).</li>Propriété à plusieurs niveaux<li>Diffuse et communique les problèmes et les préoccupations qui surviennent avec le CSM</li></ul> | Auteur de contenu |
+| Gestionnaire de versions | <ul><li>Gestion des versions</li><li>Déploiements du code</li></li>Équipe du compte Adobe</ul> | <ul><li>Applique le contenu (y compris les styles précréés).</li>Propriété à plusieurs niveaux<li>Diffuse et communique les problèmes et les préoccupations qui surviennent avec le CSM</li></ul> | Auteur de contenu |
 
 ## Pièges potentiels
 
