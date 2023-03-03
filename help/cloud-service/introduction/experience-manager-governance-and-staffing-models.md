@@ -3,7 +3,7 @@ title: Gouvernance et modèles de recrutement et archétypes
 description: Découvrez comment mettre en oeuvre votre plateforme Adobe Experience Manager (AEM) et tirer le meilleur parti de vos efforts.
 solution: Experience Manager
 exl-id: 808ab7a6-5ec5-4bbd-9a6e-cfc0b447430d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: dcd69c7444eae0f8c86464c1963bff35e6f11238
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Vous trouverez ci-dessous des exemples de rôles pour un scénario léger (entre
 
    * Développement CSS : crée des artefacts d’expérience en redéfinissant l’objectif des composants avec de nouveaux styles.
    * Développement principal : crée de nouveaux composants ou peut étendre un composant principal. Si cette opération est effectuée correctement, ce rôle ne doit pas comporter plus d’une personne, sauf s’il est nécessaire d’effectuer des tâches d’animation volumineuses.
-   * Gestion des versions : supervise le déploiement du code et fait office d’ingénieur du service client actuel.
+   * Gestion des versions : supervise le déploiement du code et fait office d’équipe du compte d’Adobe actuelle.
    * Propriétaire du produit : collabore avec l&#39;unité de traitement des données sur l&#39;alliance des visions techniques et stratégiques ; crée des tâches de maintenance et des améliorations et fait office de propriétaire de la solution.
    * Auteurs d’administration : met à jour l’habillage CSS et fournit des conseils aux auteurs qui mettent à jour et appliquent du contenu. Ce rôle fonctionne sur les configurations de workflow et crée une documentation d’orientation à l’intention des auteurs de contenu à appliquer. REMARQUE : Dans la version 6.5, Adobe recommande d’utiliser des modèles modifiables.
    * Auteurs de contenu : applique le contenu, la propriété à plusieurs niveaux et fournit des problèmes de communication et des préoccupations au fur et à mesure qu’ils surviennent avec votre CSM.
