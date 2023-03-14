@@ -7,7 +7,7 @@ role: Developer
 level: Beginner
 feature: Security
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
-source-git-commit: 41be8c934bba16857d503398b5c7e327acd8d20b
+source-git-commit: 1c8f8d8aeee60c06c9d0d496fd86717ab8fe8295
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 Pour permettre la mise en cache et la diffusion des en-têtes CORS sur le contenu mis en cache, ajoutez les éléments suivants : [/clientheaders configuration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders) à toutes les instances de prise en charge de la publication AEM `dispatcher.any` fichiers .
 
 ```
-/cache { 
+/myfarm { 
   ...
   /clientheaders {
       "Access-Control-Allow-Origin"
