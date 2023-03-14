@@ -9,7 +9,7 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 4100061624bd8955bee392f1eced20f388f2902c
+source-git-commit: 439167be96959baea54f50a221c6d26f8fab78b2
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Créer les éléments de données appropriés
 
-Dans la propriété tags , nous avons ajouté deux nouveaux éléments de données (applicantStateOfReference et validationError).
+Dans la propriété Tags, nous avons ajouté deux nouveaux éléments de données (applicantStateOfReference et validationError).
 ![formulaire adaptatif](assets/data_elements.png)
 
 ## ApplicantStateOfRésidence
