@@ -8,11 +8,11 @@ role: Developer
 level: Beginner
 kt: 4679
 thumbnail: 30603.jpg
-last-substantial-update: 2022-09-01T00:00:00Z
+last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: 370e15fdd96f1c33bc50ee72066381bec40d82c3
+source-git-commit: eb31c5fb79e01e1c363fc153355e8d92d1a54021
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1612'
 ht-degree: 3%
 
 ---
@@ -187,6 +187,11 @@ La version recommandée des outils de Dispatcher est celle qui est fournie avec 
 ## Comment mettre à jour le jeu de base des configurations Apache et Dispatcher
 
 L’ensemble de base de la configuration Apache et Dispatcher est amélioré régulièrement et publié avec la version as a Cloud Service du SDK AEM. Il est recommandé d’incorporer des améliorations de configuration de base dans votre projet AEM et d’éviter [validation locale](#validate-configurations) et échecs du pipeline de Cloud Manager. Mettez-les à jour à l’aide de la fonction `update_maven.sh` du script `.../dispatcher-sdk-x.x.x/bin` dossier.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3416744/?quality=12&learn=on)
+
+*Cette vidéo utilise macOS à des fins d’illustration. Les commandes Windows/Linux équivalentes peuvent être utilisées pour obtenir des résultats similaires.*
+
 
 Supposons que vous ayez créé un projet AEM dans le passé en utilisant [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype), les configurations Apache de base et Dispatcher étaient actuelles. En utilisant ces configurations de base, vos configurations spécifiques au projet ont été créées en réutilisant et en copiant les fichiers comme `*.vhost`, `*.conf`, `*.farm` et `*.any` de la `dispatcher/src/conf.d` et `dispatcher/src/conf.dispatcher.d` dossiers. La validation de votre Dispatcher local et les pipelines Cloud Manager fonctionnaient correctement.
 
