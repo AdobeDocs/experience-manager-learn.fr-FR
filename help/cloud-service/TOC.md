@@ -5,7 +5,7 @@ breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 4100061624bd8955bee392f1eced20f388f2902c
+source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 27%
@@ -196,11 +196,11 @@ ht-degree: 27%
       + [Configuration du panneau Ressources](./forms/create-first-af/configure-assets-panel.md)
       + [Configuration du panneau de démarrage](./forms/create-first-af/configure-start-panel.md)
       + [Barre d’outils Ajouter et configurer](./forms/create-first-af/add-configure-toolbar.md)
-      + AEM Forms et Analytics{#forms-and-analytics}
-         + [Présentation](./forms/form-data-analytics/introduction.md)
-         + [Création d’éléments de données](./forms/form-data-analytics/data-elements.md)
-         + [Création de règles](./forms/form-data-analytics/rules.md)
-         + [Tester la solution](./forms/form-data-analytics/test.md)
+   + AEM Forms et Analytics{#forms-and-analytics}
+      + [Présentation](./forms/form-data-analytics/introduction.md)
+      + [Création d’éléments de données](./forms/form-data-analytics/data-elements.md)
+      + [Création de règles](./forms/form-data-analytics/rules.md)
+      + [Tester la solution](./forms/form-data-analytics/test.md)
    + Génération de documents dans AEM Forms CS{#doc-gen-formscs}
       + [Présentation](./forms/doc-gen-forms-cs/introduction.md)
       + [Création d’informations d’identification de service](./forms/doc-gen-forms-cs/service-credentials.md)

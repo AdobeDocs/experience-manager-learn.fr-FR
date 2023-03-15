@@ -9,7 +9,7 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 12557
-source-git-commit: 4100061624bd8955bee392f1eced20f388f2902c
+source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 1%
@@ -22,7 +22,9 @@ Prévisualisez et envoyez votre formulaire à l’aide de plusieurs combinaisons
 
 ## Suite de rapports
 
-Les données de formulaire capturées dans Adobe Analytics sont présentées au format sans objet Envois par état
+Les données de formulaire capturées dans Adobe Analytics sont présentées au format en anneau.
+
+**Envois par État**
 
 ![applicantsbystate](assets/donut.png)
 
