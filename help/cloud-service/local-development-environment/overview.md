@@ -14,7 +14,7 @@ exl-id: 8b12f34c-be98-4f47-853c-411bb601990c
 source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
 workflow-type: tm+mt
 source-wordcount: '546'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 4%
 >title="Présentation"
 >abstract="La configuration de l’environnement de développement local pour AEM as a Cloud Service inclut les outils de développement nécessaires au développement, à la création et à la compilation de AEM projets, ainsi que les délais d’exécution locaux permettant aux développeurs de valider rapidement les nouvelles fonctionnalités localement avant de les déployer vers l’as a Cloud Service via Adobe Cloud Manager."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr" text="Conseils de développement"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html" text="Principes de développement"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html?lang=fr" text="Bases du développement"
 
 Ce tutoriel décrit la configuration d’un environnement de développement local pour Adobe Experience Manager (AEM) à l’aide du SDK as a Cloud Service AEM. Les outils de développement requis pour développer, créer et compiler des projets AEM, ainsi que les heures d’exécution locales, permettent aux développeurs de valider rapidement les nouvelles fonctionnalités localement avant de les déployer dans AEM as a Cloud Service via Adobe Cloud Manager.
 

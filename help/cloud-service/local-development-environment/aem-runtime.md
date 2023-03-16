@@ -153,8 +153,8 @@ Pendant le développement, il peut être souhaitable de simuler la distribution 
 1. Sous , **Transport** , mettez à jour les champs suivants :
 
    + **URI** - `http://localhost:4503/bin/receive?sling:authRequestLogin=1`
-   + **User** - `admin`
-   + **Mot de passe** - `admin`
+   + **Utilisateur** - `admin`
+   + **Password** - `admin`
 
    ![Configuration de l’agent de réplication - Transport](assets/aem-runtime/transport-config.png)
 

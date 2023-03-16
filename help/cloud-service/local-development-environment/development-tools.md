@@ -13,7 +13,7 @@ exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
 source-git-commit: e82c30e7f1a1fe04fd43ee639d74788f9bf100f6
 workflow-type: tm+mt
 source-wordcount: '1502'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 3%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_devtools"
->title="Configuration des outils de développement"
->abstract="Le développement d’Adobe Experience Manager (AEM) nécessite l’installation et la configuration d’un ensemble minimal d’outils de développement sur l’ordinateur du développeur. Ces outils comprennent Java, Maven, Adobe I/O CLI, Development IDE, etc."
+>title="Configurer des outils de développement"
+>abstract="Le développement d’Adobe Experience Manager (AEM) nécessite l’installation et la configuration d’un ensemble minimal d’outils de développement sur l’appareil du développeur ou de la développeuse. Ces outils comprennent Java, Maven, Adobe I/O CLI, Development IDE, etc."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr" text="Conseils de développement"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html" text="Principes de développement"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html?lang=fr" text="Bases du développement"
 
-Le développement d’Adobe Experience Manager (AEM) nécessite l’installation et la configuration d’un ensemble minimal d’outils de développement sur l’ordinateur du développeur. Ces outils prennent en charge le développement et la création de projets AEM.
+Le développement d’Adobe Experience Manager (AEM) nécessite l’installation et la configuration d’un ensemble minimal d’outils de développement sur l’appareil du développeur ou de la développeuse. Ces outils prennent en charge le développement et la création de projets AEM.
 
 Notez que `~` est utilisé comme abrégé pour le répertoire de l’utilisateur. Sous Windows, il s’agit de l’équivalent de `%HOMEPATH%`.
 

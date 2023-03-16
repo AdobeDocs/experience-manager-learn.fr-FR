@@ -1,6 +1,6 @@
 ---
 title: Prise en main d’AEM sans affichage - GraphQL
-description: Découvrez les API GraphQL du Experience Manager et leurs fonctionnalités.
+description: Découvrez les API GraphQL de Experience Manager et leurs fonctionnalités.
 feature: Content Fragments, GraphQL API, APIs
 topic: Headless, Content Management
 role: Developer
@@ -17,7 +17,7 @@ ht-degree: 6%
 
 # Prise en main d’AEM Headless - GraphQL  {#getting-started-with-aem-headless}
 
-Les API GraphQL AEM pour les fragments de contenu prennent en charge les scénarios CMS sans interface lorsque des applications clientes externes rendent des expériences à l’aide de contenu géré dans AEM.
+Les API GraphQL d’AEM pour les fragments de contenu prennent en charge les scénarios CMS sans interface lorsque des applications clientes externes rendent des expériences à l’aide de contenu géré dans AEM.
 
 Une API de diffusion de contenu moderne est essentielle à l’efficacité et aux performances des applications frontales JavaScript. L’utilisation d’une API REST présente des défis :
 
@@ -34,25 +34,25 @@ Cette vidéo présente un aperçu de l’API GraphQL implémentée dans AEM. L�
 >id="aemcloud_learn_headless_graphql_overview"
 >title="Prise en main d’AEM Headless - GraphQL "
 >abstract="Découvrez comment diffuser des fragments de contenu à l’aide de GraphQL."
->additional-url="https://video.tv.adobe.com/v/328618" text="Présentation de GraphQL dans AEM"
+>additional-url="https://video.tv.adobe.com/v/328618/?captions=fre_fr" text="Présentation de GraphQL dans AEM"
 
-## AEM série vidéo GraphQL sans affichage
+## AEM Série de vidéos GraphQL sans affichage
 
-Découvrez les fonctionnalités d’AEM GraphQL grâce à la présentation détaillée des fragments de contenu et AEM les API GraphQL et les outils de développement.
+Découvrez les fonctionnalités d’AEM GraphQL grâce à la présentation détaillée des fragments de contenu et des API et outils de développement d’AEM GraphQL.
 
-* [AEM série vidéo GraphQL sans affichage](./video-series/modeling-basics.md)
+* [AEM Série de vidéos GraphQL sans affichage](./video-series/modeling-basics.md)
 
-## Tutoriel AEM sans interface graphique
+## Tutoriel pratique GraphQL sans affichage
 
-Explorez AEM fonctionnalités GraphQL en créant une application React qui utilise des fragments de contenu via AEM API GraphQL.
+Explorez AEM fonctionnalités GraphQL en créant une application React qui utilise des fragments de contenu via les API GraphQL.
 
-* [Tutoriel AEM sans interface graphique](./multi-step/overview.md)
+* [Tutoriel pratique GraphQL sans affichage](./multi-step/overview.md)
 
-## AEM GraphQL par rapport à AEM Content Services
+## AEM GraphQL et AEM Content Services
 
-|  | AEM API GraphQL | AEM Content Services |
+|  | API GraphQL AEM | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
 | Définition d’un schéma | Modèles de fragment de contenu structuré | Composants AEM |
 | Contenu | Fragments de contenu | Composants AEM |
 | Détection de contenu | Par requête GraphQL | Par AEM page |
-| Format de diffusion | JSON GraphQL | AEM ComponentExporter JSON |
+| Format de diffusion | GraphQL JSON | AEM ComponentExporter JSON |
