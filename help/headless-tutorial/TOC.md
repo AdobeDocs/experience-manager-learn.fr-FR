@@ -7,10 +7,10 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: c96b8c9761ff9477fda40d641db5021994b32754
+source-git-commit: ea7cd118d9cba97d2b497f6659f74d2fe8331c66
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 24%
+source-wordcount: '282'
+ht-degree: 23%
 
 ---
 
@@ -55,10 +55,11 @@ ht-degree: 24%
       + [Hôtes AEM](./graphql/deployment/configurations/aem-hosts.md)
       + [CORS](./graphql/deployment/configurations/cors.md)
       + [Filtres Dispatcher](./graphql/deployment/configurations/dispatcher-filters.md)
-+ Procédures {#how-to}
++ Comment {#how-to}
    + [Texte enrichi](./graphql/how-to/rich-text.md)
    + [Images](./graphql/how-to/images.md)
    + [Contenu localisé](./graphql/how-to/localized-content.md)
+   + [Aperçu](./graphql/how-to/preview.md)
    + [AEM SDK sans affichage](./graphql/how-to/aem-headless-sdk.md)
    + [Installation de GraphiQL sur AEM 6.5](./graphql/how-to/install-graphiql-aem-6-5.md)
    + Exemples {#example-apps}
@@ -98,7 +99,7 @@ ht-degree: 24%
    + [Présentation](./authentication/overview.md)
    + [1 - Jeton d’accès au développement local](./authentication/local-development-access-token.md)
    + [2 - Informations d’identification du service](./authentication/service-credentials.md)
-+ Content Services {#content-services}
++ Content Services {#content-services}
    + [Présentation](./content-services/overview.md)
    + [1 - Configuration du tutoriel](./content-services/chapter-1.md)
    + [2 - Définition des modèles de fragment de contenu d’événement](./content-services/chapter-2.md)
