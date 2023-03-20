@@ -14,9 +14,9 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: 8b6d8d99c806e782a1ddce2b300211f8d4c9da56
+source-git-commit: 1401710c19ae6ee6a2822ae06286bef4f92cda45
 workflow-type: tm+mt
-source-wordcount: '1931'
+source-wordcount: '1937'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Pour accéder à AEM as a Cloud Service à l’aide des informations d’identif
 
 + Lorsque les informations d’identification du service sont présentes, l’application externe utilise ce jeton d’accès au lieu du jeton d’accès au développement local lors de l’accès à AEM as a Cloud Service
 
-Dans ce tutoriel, Adobe `@adobe/jwt-auth` Le module npm est utilisé pour (1) générer le JWT à partir des informations d’identification du service et (2) l’échanger contre un jeton d’accès, dans un seul appel de fonction. Si votre application n’est pas basée sur JavaScript, veuillez consulter la section [exemple de code dans d’autres langues](https://developer.adobe.com/developer-console/docs/guides/) pour savoir comment créer un jeton JWT à partir des informations d’identification du service et l’échanger contre un jeton d’accès avec Adobe IMS.
+Dans ce tutoriel, Adobe `@adobe/jwt-auth` Le module npm est utilisé pour (1) générer le JWT à partir des informations d’identification du service et (2) l’échanger contre un jeton d’accès, dans un seul appel de fonction. Si votre application n’est pas basée sur JavaScript, veuillez consulter la section [exemple de code dans d’autres langues](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) pour savoir comment créer un jeton JWT à partir des informations d’identification du service et l’échanger contre un jeton d’accès avec Adobe IMS.
 
 ## Lire les informations d’identification du service
 
@@ -149,7 +149,7 @@ function getCommandLineParams() {
 
 Une fois les informations d’identification du service lues, elles sont utilisées pour générer un jeton d’accès JWT qui est ensuite échangé avec les API Adobe IMS. Ce jeton d’accès peut ensuite être utilisé pour accéder à AEM as a Cloud Service.
 
-Cet exemple d’application est basé sur Node.js. Il est donc préférable d’utiliser [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) module npm pour faciliter la génération (1) JWT et l’échange (20) avec Adobe IMS. Si votre application est développée à l’aide d’une autre langue, veuillez consulter [les exemples de code appropriés ;](https://developer.adobe.com/developer-console/docs/guides/) sur la manière de construire la requête HTTP vers Adobe IMS à l’aide d’autres langages de programmation.
+Cet exemple d’application est basé sur Node.js. Il est donc préférable d’utiliser [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) module npm pour faciliter la génération (1) JWT et l’échange (20) avec Adobe IMS. Si votre application est développée à l’aide d’une autre langue, veuillez consulter [les exemples de code appropriés ;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) sur la manière de construire la requête HTTP vers Adobe IMS à l’aide d’autres langages de programmation.
 
 1. Mettez à jour le `getAccessToken(..)` pour examiner le contenu du fichier JSON et déterminer s’il représente un jeton d’accès au développement local ou des informations d’identification du service. Pour ce faire, il suffit de vérifier l’existence de la variable `.accessToken` qui n’existe que pour le JSON JSON du jeton d’accès au développement local.
 
