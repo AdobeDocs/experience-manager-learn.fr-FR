@@ -9,7 +9,7 @@ level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
 workflow-type: tm+mt
 source-wordcount: '2371'
 ht-degree: 4%
@@ -43,7 +43,7 @@ Les éléments suivants sont requis :
 
 >[!NOTE]
 >
-> Besoin d’aide pour intégrer Launch et votre site AEM ? [Voir cette série vidéo](../experience-platform-launch/overview.md).
+> Besoin d’aide pour intégrer Launch et votre site AEM ? [Voir cette série vidéo](../experience-platform/data-collection/tags/overview.md).
 
 ## Changement d’environnements Launch pour le site WKND
 
@@ -52,7 +52,7 @@ Les éléments suivants sont requis :
 Au lieu de configurer un environnement AEM et d’installer la base de code WKND, vous pouvez utiliser le débogueur Experience Platform pour **switch** la live [https://wknd.site/](https://wknd.site/) to *your* Propriété Launch. Bien sûr, vous pouvez utiliser votre propre site AEM s’il a déjà la variable [Adobe de la couche de données client activée](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#installation-activation)
 
 1. Connectez-vous à l’Experience Platform Launch et [création d’une propriété Launch](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch.html) (si ce n&#39;est déjà fait).
-1. Assurez-vous qu’un lancement initial [La bibliothèque a été créée.](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) et converti en un lancement [environnement](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html).
+1. Assurez-vous qu’un lancement initial [La bibliothèque a été créée.](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) et converti en un lancement [environnement](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=fr).
 1. Copiez le code incorporé Launch de l’environnement dans lequel votre bibliothèque a été publiée.
 
    ![Copier le code incorporé Launch](assets/collect-data-analytics/launch-environment-copy.png)
@@ -172,7 +172,7 @@ La couche de données client Adobe est une **event** couche de données pilotée
 
    Le `event` est transmis à partir de `trigger()` appelée dans l’événement personnalisé. `component` est la page active dérivée de la couche de données. `getState` dans l’événement personnalisé. Rappelez-vous de la version antérieure de [Schéma de page](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html#page) exposé par la couche de données afin de voir les différentes clés exposées en standard.
 
-1. Enregistrez les modifications et exécutez une [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) dans Launch pour convertir le code en [environnement](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) utilisé sur votre site AEM.
+1. Enregistrez les modifications et exécutez une [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) dans Launch pour convertir le code en [environnement](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=fr) utilisé sur votre site AEM.
 
    >[!NOTE]
    >
@@ -293,7 +293,7 @@ Mettez ensuite à jour la variable **Page chargée** pour utiliser la règle **T
 
    >[!NOTE]
    >
-   > Il est possible d’ajouter cette condition dans la fonction de code personnalisé qui écoute la variable `cmp:show` créé plus tôt dans le tutoriel. Toutefois, l’ajout de cette règle dans l’interface utilisateur offre une plus grande visibilité aux utilisateurs supplémentaires susceptibles d’avoir à apporter des modifications à la règle. De plus, nous pouvons utiliser notre élément de données .
+   > Il est possible d’ajouter cette condition dans la fonction de code personnalisé qui écoute la variable `cmp:show` créé plus tôt dans le tutoriel. Cependant, l’ajout de cette règle dans l’interface utilisateur offre une plus grande visibilité aux utilisateurs supplémentaires qui peuvent avoir besoin d’apporter des modifications à la règle. De plus, nous pouvons utiliser notre élément de données .
 
 1. Enregistrez les modifications.
 

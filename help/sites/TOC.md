@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriels sur AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: c82965636ddeef7dc165e0bea079c99f1a16e0ca
+source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 33%
+source-wordcount: '441'
+ht-degree: 30%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 33%
    + [Partage sur les réseaux sociaux](developing/social-media-sharing-technical-video-use.md)
    + [Personnalisation des icônes de composant](developing/component-icons-technical-video-develop.md)
 + Personnalisation {#personalization}
-   + [Intégration avec Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html)
+   + [Intégration à Adobe Target](https://helpx.adobe.com/marketing-cloud/how-to/aem-target.html)
    + [Configuration de fragments d’expérience et d’Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Utilisation de fragments d’expérience avec Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configuration de ContextHub](personalization/context-hub-technical-video-setup.md)
@@ -98,12 +98,12 @@ ht-degree: 33%
 + Intégrations {#integrations}
    + Experience Platform {#experience-platform}
       + [Génération de FPID](integrations/platform/fpid.md)
-   + Experience Platform Launch {#experience-platform-launch}
-      + [Présentation](integrations/experience-platform-launch/overview.md)
-      + [Créer une propriété Launch](integrations/experience-platform-launch/create-launch-property.md)
-      + [Connexion d’AEM à Launch à l’aide d’Adobe I/O](integrations/experience-platform-launch/connect-aem-launch-adobe-io.md)
-      + [Création d’un Cloud Service Launch](integrations/experience-platform-launch/create-launch-cloud-service.md)
-      + [Débogage d’une implémentation de Launch](integrations/experience-platform-launch/debug-launch-implementation.md)
+   + Balises de collecte de données Experience Platform (Launch) {#experience-platform-data-collection-tags}
+      + [Présentation](integrations/experience-platform/data-collection/tags/overview.md)
+      + [Création d’une propriété de balise](integrations/experience-platform/data-collection/tags/create-tag-property.md)
+      + [Connexion des AEM avec des balises à l’aide de Developer Console](integrations/experience-platform/data-collection/tags/connect-aem-tags-using-developer-console.md)
+      + [Création d’AEM Launch Cloud Service](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
+      + [Débogage d’une implémentation de balises (Launch)](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Couche de données client Adobe {#adobe-client-data-layer}
       + [Utilisation de la couche de données client Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Personnalisation de la couche de données client d’Adobe](integrations/adobe-client-data-layer/data-layer-customize.md)
@@ -116,7 +116,7 @@ ht-degree: 33%
       + [Ajout de l’extension Target à la propriété Launch](integrations/adobe-target/add-target-launch-extension.md)
       + [Charger et déclencher un appel Target](integrations/adobe-target/load-and-fire-target.md)
       + [Création d’un compte Adobe Target Cloud Service](integrations/adobe-target/setup-aem-target-cloud-service.md)
-      + [Exportez des fragments d’expérience vers Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
+      + [Exportation de fragments d’expérience dans Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
       + [Création d’une activité Target à l’aide d’offres de fragments d’expérience](integrations/adobe-target/create-target-activity.md)
       + [Personnalisation à l’aide du compositeur d’expérience visuelle](integrations/adobe-target/personalization-using-vec.md)
       + [Personnalisation de l’expérience complète d’une page web](integrations/adobe-target/personalization-web-page.md)
