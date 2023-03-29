@@ -13,10 +13,10 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-07-10T00:00:00Z
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
-source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
+source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 3%
+source-wordcount: '336'
+ht-degree: 2%
 
 ---
 
@@ -31,21 +31,28 @@ Découvrez comment intégrer l’Experience Platform _Balises de collecte de don
 
 Les balises sont Adobe Experience Platform qui  la nouvelle génération de la technologie de gestion des balises. Les balises constituent le moyen le plus simple de déployer Adobe Analytics, Target, l’Audience Manager et de nombreuses autres solutions. Obtenez un aperçu des balises et de l’intégration recommandée avec Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/39090?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
 
 
 ## Prérequis
 
-Les conditions suivantes sont requises lors de l’intégration de balises de collecte de données Experience Platform
+Les éléments suivants sont requis lors de l’intégration de balises de collecte de données Experience Platform.
 
-+ Accès AEM administrateur à AEM environnement as a Cloud Service
-+ Un site de référence comme [WKND](https://github.com/adobe/aem-guides-wknd) déployé sur
++ AEM accès administrateur à AEM environnement as a Cloud Service
++ Un site de référence comme [WKND](https://github.com/adobe/aem-guides-wknd) déployé sur celle-ci.
++ Accès à la solution de collecte de données Adobe Experience Platform
 + Accès administrateur système à [Console Adobe Developer](https://developer.adobe.com/developer-console/)
 
 
+## Étapes de haut niveau
+
++ Dans la collecte de données Adobe Experience Platform, créez une propriété Tag et modifiez-la en _Ajouter une règle_. Alors _Ajouter une bibliothèque_, sélectionnez la règle nouvellement ajoutée, approuvez-la et publiez-la.
++ Connexion des AEM et des balises à l’aide d’une configuration IMS existante (ou nouvelle)
++ Dans AEM, créez une configuration de services cloud Launch, puis appliquez-la à un site existant et vérifiez enfin la propriété Balises et ses bibliothèques sont chargées sur le site Publié ou Auteur.
+
 ## Étapes suivantes
 
-[Création d’une propriété de balise (Launch)](create-tag-property.md)
+[Création d’une propriété de balise](create-tag-property.md)
 
 ## Ressources supplémentaires {#additional-resources}
 

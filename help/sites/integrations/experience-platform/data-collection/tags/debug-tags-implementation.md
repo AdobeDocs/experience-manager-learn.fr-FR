@@ -12,10 +12,10 @@ topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
-source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
+source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 2%
+source-wordcount: '282'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +25,34 @@ Cette section présente les outils et techniques courants utilisés pour débogu
 
 >[!VIDEO](https://video.tv.adobe.com/v/38567?quality=12&learn=on)
 
+## Débogage côté client via un objet satellite
+
+Le débogage côté client s’avère utile pour vérifier le chargement des règles de propriété de balise ou l’ordre d’exécution. Chaque fois qu’une propriété Tag est ajoutée au site web, la variable `_satellite` L’objet JavaScript est présent dans le navigateur pour faciliter le suivi des événements et des données côté client.
+
+Pour activer le débogage côté client, appelez la fonction `setDebug(true)` sur la méthode `_satellite` .
+
+1. Ouvrez la console du navigateur et exécutez la commande ci-dessous.
+
+   ```javascript
+       _satellite.setDebug(true);
+   ```
+
+1. Rechargez la page du site AEM et vérifiez que le journal de la console s’affiche. _déclenchement de règle_ comme ci-dessous.
+
+   ![Propriété de balise sur les pages de création et de publication](assets/satellite-object-debugging.png)
+
+## Débogage via Adobe Experience Platform Debugger
+
+Adobe fournit Adobe Experience Platform Debugger [Extension Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) et [Module complémentaire Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) pour déboguer, comprendre et obtenir des informations sur l’intégration.
+
+1. Ouvrez l’extension Adobe Experience Platform Debugger et ouvrez la page du site sur l’instance de publication.
+
+1. Dans le **Débogueur Adobe Experience Platform > Résumé > Balises Adobe Experience Platform** , vérifiez les détails de la propriété de balise tels que le nom, la version, la date de création, l’environnement et les extensions.
+
+   ![Détails de la propriété de balise et du débogueur Adobe Experience Platform](assets/tag-property-details.png)
+
 ## Ressources supplémentaires {#additional-resources}
 
-* [Présentation du débogueur Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Présentation du débogueur Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
+
++ [Référence d’objet satellite](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html)

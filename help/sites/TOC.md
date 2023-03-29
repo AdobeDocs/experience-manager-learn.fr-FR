@@ -5,7 +5,7 @@ breadcrumb-title: Tutoriels sur AEM Sites
 feature-set: Experience Manager Sites, Experience Manager
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: ef1fe712921bd5516cb389862cacf226a71aa193
+source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 30%
@@ -101,7 +101,7 @@ ht-degree: 30%
    + Balises de collecte de données Experience Platform (Launch) {#experience-platform-data-collection-tags}
       + [Présentation](integrations/experience-platform/data-collection/tags/overview.md)
       + [Création d’une propriété de balise](integrations/experience-platform/data-collection/tags/create-tag-property.md)
-      + [Connexion des AEM avec des balises à l’aide de Developer Console](integrations/experience-platform/data-collection/tags/connect-aem-tags-using-developer-console.md)
+      + [Connexion d’AEM et de la propriété de balise à l’aide d’IMS](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
       + [Création d’AEM Launch Cloud Service](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
       + [Débogage d’une implémentation de balises (Launch)](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Couche de données client Adobe {#adobe-client-data-layer}
