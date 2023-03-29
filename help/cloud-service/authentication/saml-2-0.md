@@ -10,9 +10,9 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 5522a22cc3ac12ce54297ee9f30570c29cfd5ce7
 workflow-type: tm+mt
-source-wordcount: '2815'
+source-wordcount: '2961'
 ht-degree: 2%
 
 ---
@@ -110,22 +110,37 @@ Le certificat public du fournisseur d’identité est ajouté à AEM Trust Store
 1. Sélectionnez __Envoyer__.
 1. Le certificat nouvellement ajouté s’affiche au-dessus du __Ajout d’un certificat à partir d’un fichier CRT__ .
 1. Prenez note de la __alias__, car cette valeur est utilisée dans la variable [Configuration OSGi du gestionnaire d’authentification SAML 2.0](#saml-2-0-authentication-handler-osgi-configuration).
-1. Sélectionnez __Enregistrer et fermer__.
+1. Sélectionner __Enregistrer et fermer__.
 
 Le Trust Store global est configuré avec le certificat public du fournisseur d’identité sur l’auteur AEM, mais comme SAML est utilisé uniquement sur AEM Publish, le Trust Store global doit être répliqué vers AEM Publish pour que le certificat public IDP y soit accessible.
 
 ![Réplication du Trust Store global vers AEM Publish](./assets/saml-2-0/global-trust-store-replicate.png)
 
-1. Accédez à __Outils > Déploiement > Modules__.
+1. Accédez à __Outils > Déploiement > Packages__.
 1. Créer un package
    + Nom du module : `Global Trust Store`
-   + Version: `1.0.0`
+   + d’Adobe Experience Manager Forms 6.5: `1.0.0`
    + Groupe : `com.your.company`
 1. Modifiez la nouvelle __Trust Store mondial__ module.
 1. Sélectionnez la __Filtres__ et ajouter un filtre pour le chemin d’accès racine. `/etc/truststore`.
 1. Sélectionner __Terminé__ puis __Enregistrer__.
 1. Sélectionnez la __Build__ pour le bouton __Trust Store mondial__ module.
 1. Une fois la création terminée, sélectionnez __Plus__ > __Répliquer__ pour activer le noeud Trust Store global (`/etc/truststore`) vers AEM Publish.
+
+## Création d’un KeyStore de service d’authentification{#authentication-service-keystore}
+
+_La création d’un KeyStore pour authentication-service est requise lorsque la variable [Propriété de configuration OSGi du gestionnaire d’authentification SAML 2.0 `handleLogout` est défini sur `true`](#saml-20-authenticationsaml-2-0-authentication) ou [AuthnRequest signing/SAML assertion ecryption](#install-aem-public-private-key-pair) est requis_
+
+1. Connectez-vous à l’auteur AEM en tant qu’administrateur AEM pour charger la clé privée.
+1. Accédez à __Outils > Sécurité > Trust Store__, puis sélectionnez __authentication-service__ et sélectionnez __Propriétés__ dans la barre d’actions supérieure.
+1. Accédez à __Outils > Sécurité > Utilisateurs__, puis sélectionnez __authentication-service__ et sélectionnez __Propriétés__ dans la barre d’actions supérieure.
+1. Sélectionnez la __Keystore__ .
+1. Créez ou ouvrez le KeyStore. Si vous créez un fichier de stockage de clés, assurez-vous que le mot de passe est sécurisé.
+   + A [le KeyStore public/privé est installé dans ce KeyStore.](#install-aem-public-private-key-pair) uniquement si le chiffrement de la signature AuthnRequest/de l’assertion SAML est requis.
+   + Si cette intégration SAML prend en charge la déconnexion, mais pas l’assertion de signature/SAML AuthnRequest, alors un fichier de stockage de clés vide est suffisant.
+1. Sélectionner __Enregistrer et fermer__.
+1. Sélectionner __authentication-service__ et sélectionnez __Activer__ dans la barre d’actions supérieure.
+
 
 ## Installer AEM paire de clés publique/privée{#install-aem-public-private-key-pair}
 
@@ -197,7 +212,7 @@ La signature de la requête d’auteur et le chiffrement de l’assertion SAML s
    + Sélectionnez __Envoyer__
 1. Le certificat nouvellement ajouté s’affiche au-dessus du __Ajout d’un certificat à partir d’un fichier CRT__ .
    + Prenez note de la __alias__ car il est utilisé dans la variable [Configuration OSGi du gestionnaire d’authentification SAML 2.0](#saml-20-authentication-handler-osgi-configuration)
-1. Sélectionnez __Enregistrer et fermer__.
+1. Sélectionner __Enregistrer et fermer__.
 1. Sélectionner __authentication-service__ et sélectionnez __Activer__ dans la barre d’actions supérieure.
 
 ## Configuration du gestionnaire d’authentification SAML 2.0{#configure-saml-2-0-authentication-handler}
@@ -233,11 +248,11 @@ La configuration est une configuration d’usine OSGi, ce qui signifie qu’un s
 | Réponse SAML du magasin | `storeSAMLResponse` | ✘ | Booléen | `false` | Indique si la variable `samlResponse` est stockée sur l’AEM `cq:User` noeud . |
 | Gérer la déconnexion | `handleLogout` | ✘ | Booléen | `false` | Indique si la demande de déconnexion est gérée par ce gestionnaire d’authentification SAML. Nécessite `logoutUrl` à définir. |
 | URL de déconnexion | `logoutUrl` | ✘ | Chaîne |  | URL du fournisseur d’identité à laquelle la demande de déconnexion SAML est envoyée. Obligatoire si `handleLogout` est défini sur `true`. |
-| Tolérance de l&#39;horloge | `clockTolerance` | ✘ | Nombre entier | `60` | IDP et AEM (SP) réduisent la tolérance lors de la validation des assertions SAML. |
+| Tolérance de l&#39;horloge | `clockTolerance` | ✘ | Entier | `60` | IDP et AEM (SP) réduisent la tolérance lors de la validation des assertions SAML. |
 | méthode Digest | `digestMethod` | ✘ | Chaîne | `http://www.w3.org/2001/04/xmlenc#sha256` | Algorithme de résumé utilisé par le fournisseur d’identité lors de la signature d’un message SAML. |
 | Méthode de signature | `signatureMethod` | ✘ | Chaîne | `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` | Algorithme de signature utilisé par le fournisseur d’identité lors de la signature d’un message SAML. |
 | Type de synchronisation des identités | `identitySyncType` | ✘ | `default` ou `idp` | `default` | Ne pas modifier `from` par défaut pour AEM as a Cloud Service. |
-| Classement des services | `service.ranking` | ✘ | Nombre entier | `5002` | Les configurations de rang supérieur sont préférées pour le même `path`. |
+| Classement des services | `service.ranking` | ✘ | Entier | `5002` | Les configurations de rang supérieur sont préférées pour le même `path`. |
 
 ### Attributs d’utilisateur AEM{#aem-user-attributes}
 
@@ -249,7 +264,7 @@ AEM utilise les attributs utilisateur suivants, qui peuvent être renseignés vi
 | Prénom (prénom) | `profile/givenName` |
 | Nom de famille (nom) | `profile/familyName` |
 | Titre de la tâche | `profile/jobTitle` |
-| Adresse électronique | `profile/email` |
+| Adresse e-mail | `profile/email` |
 | Adresse | `profile/street` |
 | Ville | `profile/city` |
 | Code postal | `profile/postalCode` |
