@@ -3,6 +3,7 @@ title: Débogage d’une implémentation de balises
 description: Cette section présente certains outils et techniques courants pour déboguer une implémentation de balises. Découvrez comment utiliser la console de développement du navigateur et l’extension Experience Platform Debugger pour identifier et résoudre les principaux problèmes liés à une implémentation des balises.
 topics: integrations
 audience: administrator
+solution: Experience Manager, Data Collection, Experience Platform
 doc-type: technical video
 activity: setup
 version: Cloud Service
@@ -12,7 +13,7 @@ topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
-source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
+source-git-commit: 18a72187290d26007cdc09c45a050df8f152833b
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%

@@ -3,6 +3,7 @@ title: Création d’une configuration de Cloud Service Launch dans AEM
 description: Découvrez comment créer une configuration de Cloud Service Launch dans AEM. La configuration du Cloud Service Launch peut ensuite être appliquée à un site existant et le chargement des bibliothèques de balises peut être observé dans les environnements Auteur et Publication.
 topics: integrations
 audience: administrator
+solution: Experience Manager, Data Collection, Experience Platform
 doc-type: technical video
 activity: setup
 version: Cloud Service
@@ -12,7 +13,7 @@ topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: a72ddced-37de-4b62-9e28-fa5b6c8ce5b7
-source-git-commit: 2b37ba961e194b47e034963ceff63a0b8e8458ae
+source-git-commit: 18a72187290d26007cdc09c45a050df8f152833b
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
