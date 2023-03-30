@@ -12,9 +12,9 @@ kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1821'
 ht-degree: 6%
 
 ---
@@ -252,7 +252,7 @@ Le **[core](https://experienceleague.adobe.com/docs/experience-manager-core-comp
 
 ### Modules Ui.apps et Ui.content {#apps-content-module}
 
-Le **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** Le module maven contient tout le code de rendu nécessaire pour le site situé sous `/apps`. Cela inclut les fichiers CSS/JS stockés dans un format AEM appelé [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=fr). Cela inclut également [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=fr) des scripts pour le rendu du HTML dynamique. Vous pouvez penser au **ui.apps** en tant que mappage à la structure dans le JCR, mais dans un format pouvant être stocké sur un système de fichiers et validé dans le contrôle source. Le **ui.apps** ne contient que du code.
+Le **[ui.apps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uiapps.html)** Le module maven contient tout le code de rendu nécessaire pour le site situé sous `/apps`. Cela inclut les fichiers CSS/JS stockés dans un format AEM appelé [clientlibs](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=fr). Cela inclut également [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) des scripts pour le rendu du HTML dynamique. Vous pouvez penser au **ui.apps** en tant que mappage à la structure dans le JCR, mais dans un format pouvant être stocké sur un système de fichiers et validé dans le contrôle source. Le **ui.apps** ne contient que du code.
 
 Pour créer uniquement ce module :
 

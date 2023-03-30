@@ -10,9 +10,9 @@ kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
 recommendations: noDisplay, noCatalog
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
+source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
 workflow-type: tm+mt
-source-wordcount: '3039'
+source-wordcount: '3040'
 ht-degree: 1%
 
 ---
@@ -365,7 +365,7 @@ Félicitations, vous avez créé un modèle et une page avec Adobe Experience Ma
 
 ### Étapes suivantes {#next-steps}
 
-A ce stade, la page de l&#39;article est clairement dépourvue de style. Suivez la [Bibliothèques côté client et processus front-end](client-side-libraries.md) tutoriel pour découvrir les bonnes pratiques d’inclusion de code CSS et JavaScript afin d’appliquer des styles globaux au site et d’intégrer une version front-end dédiée.
+A ce stade, la page de l&#39;article est clairement dépourvue de style. Suivez la [Bibliothèques côté client et processus front-end](client-side-libraries.md) tutoriel pour découvrir les bonnes pratiques relatives à l’inclusion de code CSS et JavaScript afin d’appliquer des styles globaux au site et d’intégrer une version front-end dédiée.
 
 Afficher le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd) ou revoir et déployer le code localement sur la branche Git `tutorial/pages-templates-solution`.
 
