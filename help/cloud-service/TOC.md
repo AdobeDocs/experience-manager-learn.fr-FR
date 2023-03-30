@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriels sur AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
+source-git-commit: 9917b16248ef1f0a9c86f03a024c634636b2304e
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '913'
 ht-degree: 27%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 27%
       + [Accélérer la vitesse du contenu avec les systèmes de style AEM](./introduction/accelerate-content-velocity-aem.md)
 + [Intégrations Experience Cloud](./experience-cloud/integrations.md)
 + Technologie sous-jacente {#underlying-technology}
-   + [Architecture AEM](./underlying-technology/introduction-architecture.md)
+   + [Architecture d’AEM](./underlying-technology/introduction-architecture.md)
    + [OSGi](./underlying-technology/introduction-osgi.md)
    + [Référentiel de contenu Java](./underlying-technology/introduction-jcr.md)
    + [Sling](./underlying-technology/introduction-sling.md)
@@ -53,7 +53,7 @@ ht-degree: 27%
    + [Exécution locale AEM](./local-development-environment/aem-runtime.md)
    + [Outils du Dispatcher local](./local-development-environment/dispatcher-tools.md)
 + Développement{#developing}
-   + Evolutivité{#extensibility}
+   + Extensibilité{#extensibility}
       + App Builder{#app-builder}
          + [Générer un jeton d’accès](./developing/extensibility/app-builder/jwt-auth.md)
       + Console Fragment de contenu{#content-fragments}
@@ -70,7 +70,7 @@ ht-degree: 27%
          + Exemples d’extensions{#example-extensions}
             + [Mise à jour des propriétés en bloc](./developing/extensibility/content-fragments/example-extensions/bulk-property-update.md)
             + [Génération AEM ressources d’image à l’aide d’OpenAI](./developing/extensibility/content-fragments/example-extensions/image-generation-and-image-upload.md)
-   + Principes de développement{#basics}
+   + Bases du développement{#basics}
       + [AEM SDK](./developing/basics/aem-sdk.md)
       + [Environnement de développement local](./developing/basics/local-development-environment.md)
       + [Archétype de projet AEM](./developing/basics/aem-project-archetype.md)
@@ -89,6 +89,7 @@ ht-degree: 27%
       + [Concepts de base des configurations OSGi](./developing/osgi-services/configurations.md)
       + [Configurations OSGi à l’aide d’OCD](./developing/osgi-services/configurations-ocd.md)
    + Avancé{#advanced}
+      + [API d’images optimisées pour le web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
       + [Utilisateurs du service](./developing/advanced/service-users.md)
       + [Espaces de noms personnalisés](./developing/advanced/custom-namespaces.md)
       + [Mise en cache des variantes de page](./developing/advanced/variant-caching.md)
