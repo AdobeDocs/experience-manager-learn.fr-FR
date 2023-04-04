@@ -8,16 +8,16 @@ role: Developer
 level: Intermediate
 exl-id: 3e51767b-3571-4af7-8f01-5b6c5c74734c
 last-substantial-update: 2021-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '136'
-ht-degree: 38%
+ht-degree: 33%
 
 ---
 
 # Utilisation de Microsoft Dynamics avec AEM Forms{#using-microsoft-dynamics-with-aem-forms}
 
-L’intégration de données AEM Forms permet de configurer des sources de données disparates et de s’y connecter. La pris en charge est assurée par défaut pour ce qui suit. Toutefois, avec peu de personnalisation, vous pouvez intégrer d’autres sources de données.
+L’intégration de données AEM Forms permet de configurer des sources de données disparates et de s’y connecter. Les éléments suivants sont pris en charge par défaut. Toutefois, avec peu de personnalisation, vous pouvez intégrer d’autres sources de données.
 
 Bases de données relationnelles : MySQL, Microsoft SQL Server, IBM DB2 et Oracle RDBMS
 1. Profil utilisateur AEM
@@ -27,7 +27,7 @@ Bases de données relationnelles : MySQL, Microsoft SQL Server, IBM DB2 et Orac
 
 Cette vidéo décrit un workflow qui montre comment AEM Forms peut utiliser Microsoft Dynamics en tant que source de données principale pour diffuser des communications interactives et personnalisées.
 
->[!VIDEO](https://video.tv.adobe.com/v/20971?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20971?quality=12&learn=on)
 
 >[!NOTE]
 >

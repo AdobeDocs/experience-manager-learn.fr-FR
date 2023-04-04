@@ -10,7 +10,7 @@ kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '3040'
 ht-degree: 1%
@@ -72,7 +72,7 @@ Dans cette partie du tutoriel, vous créez un modèle de page d’article qui pe
 
 En règle générale, la planification d’un nouveau site web commence par des maquettes et des conceptions statiques. [Adobe XD](https://helpx.adobe.com/support/xd.html) est un outil de conception qui crée une expérience utilisateur. Examinons ensuite un kit d’interface utilisateur et des maquettes pour planifier la structure du modèle de page d’article.
 
->[!VIDEO](https://video.tv.adobe.com/v/30214/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
 **Téléchargez la [Fichier de conception d’article WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
 
@@ -92,7 +92,7 @@ Il existe trois principaux domaines de [Modèles modifiables](https://experience
 
 Créez ensuite dans AEM un modèle correspondant à la structure des maquettes. Cela se produit dans une instance locale d’AEM. Suivez les étapes de la vidéo ci-dessous :
 
->[!VIDEO](https://video.tv.adobe.com/v/330991/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330991?quality=12&learn=on)
 
 Étapes de haut niveau pour la vidéo ci-dessus :
 
@@ -160,7 +160,7 @@ Une pratique courante lors de la création d’un contenu global, tel qu’un en
 
 L’archétype de projet AEM a généré un en-tête et un pied de page. Ensuite, mettez à jour les fragments d’expérience pour qu’ils correspondent aux maquettes. Suivez les étapes de la vidéo ci-dessous :
 
->[!VIDEO](https://video.tv.adobe.com/v/330992/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330992?quality=12&learn=on)
 
 Étapes de haut niveau pour la vidéo ci-dessus :
 
@@ -206,7 +206,7 @@ L’archétype de projet AEM a généré un en-tête et un pied de page. Ensuite
 
 Créez ensuite une page à l’aide du modèle Page d’article . Créez le contenu de la page pour qu’il corresponde aux maquettes du site. Suivez les étapes de la vidéo ci-dessous :
 
->[!VIDEO](https://video.tv.adobe.com/v/330993/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330993?quality=12&learn=on)
 
 Étapes de haut niveau pour la vidéo ci-dessus :
 
@@ -365,7 +365,7 @@ Félicitations, vous avez créé un modèle et une page avec Adobe Experience Ma
 
 ### Étapes suivantes {#next-steps}
 
-A ce stade, la page de l&#39;article est clairement dépourvue de style. Suivez la [Bibliothèques côté client et processus front-end](client-side-libraries.md) tutoriel pour découvrir les bonnes pratiques relatives à l’inclusion de code CSS et JavaScript afin d’appliquer des styles globaux au site et d’intégrer une version front-end dédiée.
+A ce stade, la page de l&#39;article est clairement dépourvue de style. Suivez la [Bibliothèques côté client et processus front-end](client-side-libraries.md) tutoriel pour découvrir les bonnes pratiques d’inclusion de code CSS et JavaScript afin d’appliquer des styles globaux au site et d’intégrer une version front-end dédiée.
 
 Afficher le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd) ou revoir et déployer le code localement sur la branche Git `tutorial/pages-templates-solution`.
 

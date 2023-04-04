@@ -1,13 +1,13 @@
 ---
 title: Concepts avancés d’AEM sans affichage - GraphQL
-description: Tutoriel complet illustrant des concepts avancés d’API GraphQL Adobe Experience Manager (AEM).
+description: Tutoriel complet illustrant des concepts avancés des API Adobe Experience Manager (AEM) GraphQL.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
-source-git-commit: ee6f65fba8db5ae30cc14aacdefbeba39803527b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1076'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Concepts avancés d’AEM sans affichage
 
-Ce tutoriel complet poursuit la [tutoriel de base](../multi-step/overview.md) qui couvrait les principes de base d’Adobe Experience Manager (AEM) Headless et GraphQL. Le tutoriel avancé illustre des aspects détaillés de l’utilisation des modèles de fragment de contenu, des fragments de contenu et des requêtes persistantes GraphQL AEM, y compris l’utilisation des requêtes persistantes GraphQL dans une application cliente.
+Ce tutoriel complet poursuit la [tutoriel de base](../multi-step/overview.md) qui couvrait les principes de base d’Adobe Experience Manager (AEM) Headless et de GraphQL. Le tutoriel avancé illustre des aspects détaillés de l’utilisation des modèles de fragment de contenu, des fragments de contenu et des requêtes persistantes GraphQL AEM, y compris l’utilisation des requêtes persistantes GraphQL dans une application cliente.
 
 ## Prérequis
 
@@ -36,15 +36,15 @@ Ce tutoriel couvre les rubriques suivantes :
 
 * Créez des modèles de fragment de contenu à l’aide de règles de validation et de types de données plus avancés tels que des espaces réservés d’onglet, des références de fragments imbriqués, des objets JSON et des types de données Date et heure.
 * Créez des fragments de contenu lorsque vous utilisez du contenu imbriqué et des références de fragments, et configurez des stratégies de dossier pour la gouvernance de création de fragments de contenu.
-* Explorez AEM fonctionnalités de l’API GraphQL à l’aide de requêtes GraphQL avec des variables et des directives.
-* Conserver les requêtes GraphQL avec des paramètres dans AEM et apprendre à utiliser les paramètres de contrôle du cache avec des requêtes persistantes.
+* Explorez les fonctionnalités de l’API GraphQL AEM à l’aide de requêtes GraphQL avec des variables et des directives.
+* Conserver les requêtes GraphQL avec des paramètres dans AEM et découvrez comment utiliser les paramètres de contrôle du cache avec les requêtes persistantes.
 * Intégrez les requêtes de requêtes persistantes dans l’exemple d’application WKND GraphQL React à l’aide du SDK JavaScript sans affichage AEM.
 
 ## Présentation des concepts avancés d’AEM sans affichage
 
 La vidéo suivante présente un aperçu général des concepts abordés dans ce tutoriel. Le tutoriel comprend la définition de modèles de fragment de contenu avec des types de données plus avancés, l’imbrication de fragments de contenu et la persistance de requêtes GraphQL dans AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/340035/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340035?quality=12&learn=on)
 
 >[!CAUTION]
 >
@@ -58,7 +58,7 @@ Le projet de site WKND comporte toutes les configurations nécessaires pour que 
 
 ### Réviser la configuration existante
 
-La première étape pour démarrer un nouveau projet dans AEM consiste à créer sa configuration en tant qu’espace de travail et à créer des points d’entrée API GraphQL. Pour vérifier ou créer une configuration, accédez à **Outils** > **Général** > **Explorateur de configuration**.
+La première étape pour démarrer un nouveau projet dans AEM consiste à créer sa configuration en tant qu’espace de travail et à créer des points de terminaison API GraphQL. Pour vérifier ou créer une configuration, accédez à **Outils** > **Général** > **Explorateur de configuration**.
 
 ![Accédez à l’explorateur de configurations](assets/overview/create-configuration.png)
 
@@ -66,9 +66,9 @@ Observez que `WKND Shared` la configuration du site a déjà été créée pour 
 
 ![Vérification de la configuration partagée WKND](assets/overview/review-wknd-shared-configuration.png)
 
-### Vérification des points d’entrée de l’API GraphQL
+### Vérification des points de terminaison de l’API GraphQL
 
-Ensuite, vous devez configurer les points d’entrée API pour envoyer des requêtes GraphQL à . Pour passer en revue les points de fin existants ou en créer un, accédez à **Outils** > **Général** > **GraphQL**.
+Ensuite, vous devez configurer les points de fin d’API pour envoyer des requêtes GraphQL à . Pour passer en revue les points de fin existants ou en créer un, accédez à **Outils** > **Général** > **GraphQL**.
 
 ![Configuration des points de fin](assets/overview/endpoints.png)
 
@@ -102,7 +102,7 @@ Enfin, vous devez affecter la configuration de votre projet au dossier racine de
 
 Pour attribuer le dossier racine de langue à la configuration, sélectionnez le dossier, puis sélectionnez **Propriétés** dans la barre de navigation supérieure.
 
-![Sélectionnez Propriétés](assets/overview/properties.png)
+![Sélectionner les propriétés](assets/overview/properties.png)
 
 Ensuite, accédez au **Cloud Services** et sélectionnez l’icône de dossier dans la **Configuration du cloud** champ .
 
@@ -115,7 +115,7 @@ Dans le modal qui s’affiche, sélectionnez la configuration précédemment cr�
 Voici les bonnes pratiques à appliquer lors de la création de votre propre projet dans AEM :
 
 * La hiérarchie de dossiers doit être modélisée en tenant compte de la localisation et de la traduction. En d’autres termes, les dossiers de langue doivent être imbriqués dans des dossiers de configuration, ce qui permet une traduction facile du contenu dans ces dossiers de configuration.
-* La hiérarchie des dossiers doit être conservée à plat et simple. Évitez de déplacer ou de renommer des dossiers et des fragments ultérieurement, en particulier après publication pour une utilisation en direct, car cela modifie les chemins d’accès pouvant affecter les références aux fragments et les requêtes GraphQL.
+* La hiérarchie des dossiers doit être conservée à plat et simple. Évitez ultérieurement de déplacer ou de renommer des dossiers et des fragments, en particulier après publication pour une utilisation en direct, car cela modifie les chemins d’accès pouvant affecter les références aux fragments et les requêtes GraphQL.
 
 ## Packages de démarrage et de solution
 

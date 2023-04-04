@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Les fonctionnalités de différences de page d’AEM Sites affichent une vue rap
 
 ## Comparaison des versions de page {#comparing-page-versions}
 
->[!VIDEO](https://video.tv.adobe.com/v/32152?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
 
 **Modifications du HTML**
 
@@ -43,7 +43,7 @@ Les fonctionnalités de différences de page d’AEM Sites affichent une vue rap
 
 ## Comparaison des pages de lancement {#comparing-launch-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/17746/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17746?quality=12&learn=on)
 
 La fonction Différence de page peut également être utilisée pour identifier la différence entre les plans directeurs et les Live Copies, ainsi que les plans directeurs et les copies de langue.
 

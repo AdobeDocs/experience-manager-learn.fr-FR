@@ -7,23 +7,23 @@ version: 6.4, 6.5
 topic: Content Management
 role: User
 level: Beginner
-source-git-commit: ea7d49985e69ecf9713e17e51587125b3fb400ee
+exl-id: 9d807f4c-999c-45e6-a9db-6c1776bddda1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 20%
+ht-degree: 27%
 
 ---
-
 
 # Utilisation des visionneuses Dynamic Media avec Adobe Analytics et Adobe Launch{#using-dynamic-media-viewers-adobe-analytics-launch}
 
 Pour les clients Dynamic Media et Adobe Analytics, vous pouvez désormais suivre l’utilisation des visionneuses Dynamic Media sur votre site web à l’aide de l’extension de visionneuse Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/29308/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29308?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Exécutez Adobe Experience Manager en mode Dynamic Media Scene7 pour cette fonctionnalité. Vous devez également [intégrer Adobe Experience Platform Launch à votre instance AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html).
+> Exécutez Adobe Experience Manager en mode Dynamic Media Scene7 pour cette fonctionnalité. Vous devez également [intégrer Adobe Experience Platform Launch à votre instance AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=fr).
 
 Avec l’introduction de l’extension Visionneuse Dynamic Media, Adobe Experience Manager offre désormais une prise en charge des analyses avancées pour les ressources diffusées avec les visionneuses Dynamic Media (5.13), ce qui offre un contrôle plus précis sur le suivi des événements lorsqu’une visionneuse Dynamic Media est utilisée sur une page Sites.
 
@@ -164,6 +164,6 @@ Le tableau suivant répertorie les événements de visionneuse Dynamic Media et
 
 ## Ressources supplémentaires{#additional-resources}
 
-* [Intégration d’Adobe Experience Manager à Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
-* [Exécution d’Adobe Experience Manager en mode Dynamic Media Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=en)
+* [Intégration d’Adobe Experience Manager à Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=fr)
+* [Exécution d’Adobe Experience Manager en mode Dynamic Media Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=fr)
 * [Intégration des visionneuses Dynamic Media à Adobe Analytics et Adobe Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html)

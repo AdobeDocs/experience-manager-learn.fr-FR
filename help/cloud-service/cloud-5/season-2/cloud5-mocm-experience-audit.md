@@ -7,7 +7,7 @@ level: Intermediate
 thumbnail: 343620.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 5%
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 Dans la première partie d’une série en trois parties, nous explorons les principes de base de Cloud Manager et nous plongeons nos orteils dans les fonctionnalités de contrôle de l’expérience.
 
->[!VIDEO](https://video.tv.adobe.com/v/343620)
+>[!VIDEO](https://video.tv.adobe.com/v/343620?quality=12&learn=on)
 
 ## Contenu couvert par cette vidéo
 

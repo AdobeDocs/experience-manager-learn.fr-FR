@@ -11,10 +11,10 @@ topic: Development
 role: User
 level: Intermediate
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -22,12 +22,12 @@ ht-degree: 8%
 
 Les icônes de composant permettent aux auteurs d’identifier rapidement un composant avec des icônes ou des abréviations significatives. Les auteurs peuvent désormais trouver plus rapidement que jamais les composants requis pour créer leurs expériences web.
 
->[!VIDEO](https://video.tv.adobe.com/v/16778/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16778?quality=12&learn=on)
 
 L’explorateur de composants s’affiche désormais dans un thème gris cohérent, affichant les éléments suivants :
 
 * **[!UICONTROL Groupe de composants]**
-* **[!UICONTROL Libellé du composant]** 
+* **[!UICONTROL Titre du composant]**
 * **[!UICONTROL Description du composant]**
 * **[!UICONTROL Icône de composant]**
    * Les deux premières lettres du titre du composant *(par défaut)*
@@ -89,4 +89,4 @@ Les images SVG doivent avoir une couleur d’arrière-plan définie sur **#70707
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Icônes CoralUI disponibles](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)
+* [Icônes CoralUI disponibles](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)

@@ -7,7 +7,7 @@ topic: Content Management
 role: Developer
 level: Beginner
 exl-id: 7be8c3d5-b944-4421-97b3-bd5766c1b1b5
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 La recherche de traduction intelligente permet d’utiliser des termes de recherche non anglais pour résoudre du contenu en anglais. Pour configurer AEM pour la recherche de traduction intelligente, le lot OSGi de traduction automatique de recherche Apache Oak doit être installé et configuré, ainsi que les modules de langue Apache Joshua (logiciels libres et open source) pertinents qui contiennent les règles de traduction.
 
->[!VIDEO](https://video.tv.adobe.com/v/21291/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21291?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ La recherche de traduction intelligente permet d’utiliser des termes de recher
       ```
 
 3. Redémarrez l’AEM avec une allocation de mémoire de tas mise à jour.
-   * Arrêtez AEM
+   * Arrêter AEM
    * Déterminer la nouvelle taille de tas requise pour AEM
 
       * AEM la taille du tas avant la langue + la taille du répertoire de modèle arrondie à 2 Go

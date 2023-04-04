@@ -15,7 +15,7 @@ topic: Localization
 role: User
 level: Beginner
 exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 14%
@@ -28,13 +28,13 @@ ht-degree: 14%
 
 ## Aperçu de la live copy {#live-copy-overview}
 
->[!VIDEO](https://video.tv.adobe.com/v/17054/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17054?quality=12&learn=on)
 
 *L’ aperçu de la Live Copy est une interface utilisateur tactile utilisée pour gérer les Live Copies et leurs plans directeurs respectifs. Cette fonctionnalité, introduite dans AEM 6.3, remplace le centre de contrôle Blueprint de l’interface utilisateur classique.*
 
 ## Gestionnaire de configuration du plan directeur - IU tactile {#blueprint-config-mgr}
 
->[!VIDEO](https://video.tv.adobe.com/v/17056/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17056?quality=12&learn=on)
 
 *AEM 6.3 s’accompagne d’une interface utilisateur tactile pour gérer les configurations de plan directeur à utiliser dans Multi Site Manager.*
 
@@ -42,4 +42,4 @@ ht-degree: 14%
 
 * [Console Aperçu de la Live Copy](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy-overview.html)
 * [Création et synchronisation de Live Copies](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-livecopy.html)
-* [Bonnes pratiques MSM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)
+* [Bonnes pratiques relatives à MSM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

@@ -13,7 +13,7 @@ topic: Headless, Integrations
 role: Developer
 level: Intermediate, Experienced
 exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
-source-git-commit: 8fc36698f06fea0eaaf818867c7e713453e0452d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 2%
@@ -26,7 +26,7 @@ AEM expose divers points de terminaison HTTP qui peuvent être interactifs sans 
 
 Dans ce tutoriel, découvrez comment une application externe peut s’authentifier par programmation et interagir avec pour AEM as a Cloud Service via HTTP à l’aide de jetons d’accès.
 
->[!VIDEO](https://video.tv.adobe.com/v/330460/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330460?quality=12&learn=on)
 
 ## Conditions préalables
 

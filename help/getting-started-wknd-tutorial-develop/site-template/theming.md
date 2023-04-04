@@ -11,7 +11,7 @@ kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Il s’agit d’un tutoriel en plusieurs parties qui suppose que les étapes dé
 
 Ensuite, apportez des modifications aux sources de thème afin que le site corresponde à l’apparence de la marque WKND.
 
->[!VIDEO](https://video.tv.adobe.com/v/332918/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332918?quality=12&learn=on)
 
 Étapes de haut niveau pour la vidéo :
 
@@ -55,7 +55,7 @@ Téléchargez les styles terminés pour le [Exemple de thème WKND](assets/themi
 
 Déployez des mises à jour sur un thème dans un environnement AEM à l’aide du pipeline front-end de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/338722/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338722?quality=12&learn=on)
 
 Étapes de haut niveau pour la vidéo :
 

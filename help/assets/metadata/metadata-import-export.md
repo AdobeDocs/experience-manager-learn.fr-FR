@@ -10,7 +10,7 @@ kt: 647, 917
 thumbnail: 22132.jpg
 last-substantial-update: 2022-06-13T00:00:00Z
 exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 3%
@@ -23,11 +23,11 @@ Découvrez comment utiliser les fonctions d’importation et d’exportation des
 
 ## Exportation des métadonnées {#metadata-export}
 
->[!VIDEO](https://video.tv.adobe.com/v/22132/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22132?quality=12&learn=on)
 
 ## Importation de métadonnées {#metadata-import}
 
->[!VIDEO](https://video.tv.adobe.com/v/21374/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21374?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -50,8 +50,8 @@ Découvrez comment utiliser les fonctions d’importation et d’exportation des
    * Par exemple : `dc:title {{String}}`
 
 * Le nom de la propriété est sensible à la casse
-   * Correct :`dc:title {{String}}`
-   * Incorrect :`Dc:Title {{String}}`
+   * Correct : `dc:title {{String}}`
+   * Incorrect : `Dc:Title {{String}}`
 
 * Type de propriété : non-respect de la casse
 * Toutes valides [Types de propriétés JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/PropertyType.html) sont prises en charge

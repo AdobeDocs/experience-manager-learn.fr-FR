@@ -11,7 +11,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: d33c033a-9577-4d4e-99be-f3c7e2a4ce73
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 12%
@@ -38,13 +38,13 @@ Cette série vidéo couvre le cycle de vie de la création de fragments de conte
 
 ## Définition de modèles de fragment de contenu {#defining-content-fragment-models}
 
->[!VIDEO](https://video.tv.adobe.com/v/22452/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22452?quality=12&learn=on)
 
 AEM les modèles de fragments de contenu, les schémas de données des fragments de contenu, doivent être activés via AEM [[!UICONTROL Explorateur de configuration]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=fr), qui permet de définir des modèles de fragment de contenu par configuration.
 
-## Création de fragments de contenu {#creating-content-fragments}
+## Créer des fragments de contenu {#creating-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22451/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22451?quality=12&learn=on)
 
 Les configurations AEM sont appliquées aux hiérarchies de dossiers AEM Assets pour permettre la création de leurs modèles de fragments de contenu en tant que fragments de contenu. Les fragments de contenu prennent en charge une expérience de création riche basée sur des formulaires permettant de modéliser le contenu en tant que collection d’éléments.
 
@@ -55,7 +55,7 @@ Les fragments de contenu peuvent avoir plusieurs variantes, chaque variante rép
 
 ## Téléchargement de fragments de contenu {#downloading-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22450/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22450?quality=12&learn=on)
 
 Les fragments de contenu AEM peuvent être téléchargés à partir de l’auteur AEM en tant que fichier Zip contenant des variantes, des éléments et des métadonnées.
 
@@ -64,11 +64,11 @@ Les fragments de contenu AEM peuvent être téléchargés à partir de l’auteu
 
 ## Fonctionnalités éditoriales des fragments de contenu {#editorial-capabilities}
 
->[!VIDEO](https://video.tv.adobe.com/v/25891/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25891?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Les annotations et la comparaison de versions pour les fragments de contenu ont été introduites dans [AEM 6.4 Service Pack 2](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr) et [AEM 6.3 Service Pack 3](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes/sp3-release-notes.html).
+> Les annotations et la comparaison de versions pour les fragments de contenu ont été introduites dans [AEM 6.4 Service Pack 2](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html) et [AEM 6.3 Service Pack 3](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes/sp3-release-notes.html).
 
 ## Étapes suivantes
 

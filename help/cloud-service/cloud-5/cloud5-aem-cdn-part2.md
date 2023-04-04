@@ -8,7 +8,7 @@ kt: 9904
 thumbnail: 340994.jpeg
 hidefromtoc: true
 exl-id: 3d6f3506-e1ec-4eeb-869f-02db2821b8c6
-source-git-commit: db701d42d111f1510645f795b2492ff69f76196d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Partie deux de l’utilisation du réseau de diffusion de contenu AEM et explorez en détail diverses options.
 
->[!VIDEO](https://video.tv.adobe.com/v/340994/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340994?quality=12&learn=on)
 
 ## Contenu présenté dans la deuxième partie de cette série
 

@@ -9,9 +9,9 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 11077
-source-git-commit: aea43a705b3959f8be26238d32b816b3953e153e
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Extrayez les pièces jointes des formulaires et envoyez les pièces jointes dans un email dans le workflow d’automatisation de l’alimentation.
 La vidéo suivante explique les étapes nécessaires pour former des pièces jointes à partir des données envoyées.
->[!VIDEO](https://video.tv.adobe.com/v/3409017/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409017?quality=12&learn=on)
 
 Voici le schéma d’objet de pièce jointe que vous devez utiliser à l’étape Parse JSON schema .
 

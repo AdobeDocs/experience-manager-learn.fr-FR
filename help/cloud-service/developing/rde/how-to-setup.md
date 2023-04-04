@@ -9,10 +9,10 @@ level: Beginner
 jira: KT-11861
 thumbnail: KT-11861.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 65d54f0137786c7e8ac9ac962c424dd20bf5f3dd
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -28,7 +28,7 @@ Cette vidéo montre :
 - Configuration de [Interface de ligne de commande extensible de Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) également appelé `aio CLI`
 - Configuration et configuration de AEM RDE et Cloud Manager `aio CLI` plugin
 
->[!VIDEO](https://video.tv.adobe.com/v/3415490/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3415490?quality=12&learn=on)
 
 ## Prérequis
 

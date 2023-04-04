@@ -8,10 +8,10 @@ audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '218'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ Les Acroforms sont des formulaires créés à l’aide d’Acrobat. Vous pouvez 
 * Enregistrez le pdf. Assurez-vous que le nom de fichier ne comporte aucun espace.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/22575?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22575?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -45,5 +45,5 @@ Les Acroforms sont des formulaires créés à l’aide d’Acrobat. Vous pouvez 
 >
 >* espace unique
 >* trait de soulignement unique
->* Caractères alphanumériques
+>* caractères alphanumériques
 

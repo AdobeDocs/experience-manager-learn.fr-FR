@@ -7,7 +7,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Cette série de vidéos en plusieurs parties présente un aperçu de la gestion 
 
 ## Présentation de Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27144/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Cette vidéo décrit comment le contenu multimédia est géré et accessible à 
 
 ## Dynamic Media avec AEM Sites et tout autre CMS
 
->[!VIDEO](https://video.tv.adobe.com/v/27145/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Cette vidéo décrit comment le contenu multimédia est géré dans Adobe Experi
 
 ## Dynamic Media pour créer une collection de médias mixtes et une visionneuse personnalisée
 
->[!VIDEO](https://video.tv.adobe.com/v/27146/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Cette vidéo décrit le processus de création simple d’une collection de ress
 
 ## Paramètres d’image prédéfinis Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27320/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
 Cette vidéo décrit comment les paramètres d’image prédéfinis sont créés et ce qu’est un paramètre d’image prédéfini, réducteur d’URL vers une série d’arguments de serveur d’images qui fonctionnent sur une image chaque fois qu’une URL la demande. Découvrez des techniques précieuses pour étendre et modifier les paramètres d’image prédéfinis.
 
@@ -76,7 +76,7 @@ Cette vidéo décrit comment les paramètres d’image prédéfinis sont créés
 
 ## Modificateurs d’URL avancés Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27319/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
 Cette vidéo décrit comment, au-delà du redimensionnement des images, tirer parti des fonctionnalités du fichier source lui-même (transparence d’arrière-plan, recadrage et recadrage intégrés et texte sous forme de variables) avec les modificateurs d’URL de Dynamic Media.
 
@@ -88,7 +88,7 @@ Cette vidéo décrit comment, au-delà du redimensionnement des images, tirer pa
 
 ## Dynamic Media Contrôle de la taille des fichiers du JPEG en kilo-octets
 
->[!VIDEO](https://video.tv.adobe.com/v/27404/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
 
 >[!NOTE]
@@ -99,7 +99,7 @@ Cette vidéo décrit comment, au-delà du redimensionnement des images, tirer pa
 
 ## Ajout d’un sous-titrage codé CC à la vidéo Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/28074/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 Ajoutez facilement le sous-titrage codé à la vidéo Dynamic Media en ajoutant l’option Copier l’URL pour qu’elle pointe vers un autre document sous-titrage codé, un fichier sidecar web.VTT, contenant les informations CC pour n’importe quelle vidéo.
 

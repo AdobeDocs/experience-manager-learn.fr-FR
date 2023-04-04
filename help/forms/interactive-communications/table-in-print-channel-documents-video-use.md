@@ -13,7 +13,7 @@ role: Developer
 level: Intermediate
 exl-id: 54afd047-c6e6-4557-9336-39420f30df88
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 La vidéo suivante décrit les étapes requises pour utiliser le composant de tableau dans les communications interactives pour les documents de canal d’impression.
 
->[!VIDEO](https://video.tv.adobe.com/v/27769?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27769?quality=12&learn=on)
 
 Les tableaux sont utilisés pour afficher les données sous forme tabulaire. Les lignes du tableau doivent s’agrandir ou se rétrécir en fonction des données renvoyées par la source de données. Pour utiliser un tableau dans le document du canal d’impression, nous devons créer un fichier de mise en page (fichier xdp) à l’aide d’AEM Forms Designer. Dans ce fichier de mise en page, nous ajoutons le tableau avec le nombre de colonnes requis. Assurez-vous que le type d’objet de champ de colonne est TextField ou Numeric Field selon vos besoins. Pour chaque colonne, les champs s’assurent que la liaison de données est définie sur Utiliser le nom.
 

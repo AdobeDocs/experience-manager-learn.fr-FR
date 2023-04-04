@@ -11,7 +11,7 @@ kt: 7498
 thumbnail: KT-7498.jpg
 exl-id: 261ec68f-36f4-474f-a6e4-7a2f9cea691b
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 2%
@@ -48,7 +48,7 @@ Il existe 3 zones principales de [Modèles de page](https://experienceleague.ado
 
 Créez ensuite un modèle dans AEM qui correspond à la structure des maquettes. Cela se produit dans une instance locale d’AEM. Suivez les étapes de la vidéo ci-dessous :
 
->[!VIDEO](https://video.tv.adobe.com/v/332915/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
 
 Vous pouvez utiliser la miniature suivante pour identifier votre modèle (ou télécharger le vôtre).
 
@@ -65,7 +65,7 @@ Une pratique courante lors de la création d’un contenu global, tel qu’un en
 
 Le modèle Site a généré un en-tête et un pied de page. Ensuite, mettez à jour les fragments d’expérience pour qu’ils correspondent aux maquettes. Suivez les étapes de la vidéo ci-dessous :
 
->[!VIDEO](https://video.tv.adobe.com/v/332916/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332916?quality=12&learn=on)
 
 Étapes de haut niveau pour la vidéo ci-dessous :
 
@@ -77,7 +77,7 @@ Le modèle Site a généré un en-tête et un pied de page. Ensuite, mettez à j
 
 Créez ensuite une page à l’aide du modèle Page Article du magazine . Créez le contenu de la page pour qu’il corresponde aux maquettes du site. Suivez les étapes de la vidéo ci-dessous :
 
->[!VIDEO](https://video.tv.adobe.com/v/332917/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332917?quality=12&learn=on)
 
 Utilisez la variable [texte fourni](./assets/page-templates/la-skateparks-copy.txt) pour remplir le corps de l’article.
 

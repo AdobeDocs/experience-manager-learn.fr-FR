@@ -1,20 +1,20 @@
 ---
 title: Ajout de composants au panneau Revenus
 description: Nous ajouterons un tableau au panneau Revenus. Configurez les lignes du tableau et utilisez l’éditeur de règles pour calculer le total général.
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.4,6.5
 thumbnail: 22198.jpg
 kt: 4211
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: e7674c46-259f-4dbd-96db-c40369534911
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 1%
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
-
 
 # Ajout de composants au panneau Revenus {#adding-components-to-income-panel}
 
@@ -22,7 +22,7 @@ Nous ajouterons un tableau au panneau Revenus. Configurez les lignes du tableau 
 
 **Ajout et configuration d’un composant Tableau**
 
->[!VIDEO](https://video.tv.adobe.com/v/22198?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22198?quality=12&learn=on)
 
 
 
@@ -43,6 +43,4 @@ Nous ajouterons un tableau au panneau Revenus. Configurez les lignes du tableau 
 ## Créer une règle pour calculer le total général {#create-rule-to-calculate-grand-total}
 
 
->[!VIDEO](https://video.tv.adobe.com/v/22197?quality=9&learn=on)
-
-
+>[!VIDEO](https://video.tv.adobe.com/v/22197?quality=12&learn=on)

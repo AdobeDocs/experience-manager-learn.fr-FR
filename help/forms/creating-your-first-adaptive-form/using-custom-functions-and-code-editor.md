@@ -1,41 +1,41 @@
 ---
 title: Utilisation des fonctions et de l’éditeur de code
 description: Utilisation de fonctions et d’un éditeur de code pour créer des règles de fonctionnement
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4270
 thumbnail: 22282.jpg
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 7b2a4075-bfdf-49f3-b507-34d86193bf64
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 2%
+source-wordcount: '136'
+ht-degree: 0%
 
 ---
-
 
 # Utilisation de fonctions personnalisées et de l’éditeur de code {#using-functions-and-code-editor}
 
 Dans cette partie, nous utiliserons les fonctions personnalisées et l’éditeur de code pour créer des règles de fonctionnement.
 
-vous avez déjà installé [ClientLib avec la fonction personnalisée](assets/client-libs-and-logo.zip) plus tôt dans ce tutoriel.
+vous avez déjà installé le [ClientLib avec fonction personnalisée](assets/client-libs-and-logo.zip) plus tôt dans ce tutoriel.
 
 En règle générale, une bibliothèque cliente se compose d’un fichier CSS et JavaScript. Cette bibliothèque cliente contient un fichier JavaScript qui expose une fonction permettant de renseigner les valeurs de la liste déroulante.
 
 
 ## Fonction à remplir dans la liste déroulante {#function-to-populate-drop-down-list}
 
->[!VIDEO](https://video.tv.adobe.com/v/22282?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22282?quality=12&learn=on)
 
 ### Définition du titre de résumé du panneau {#set-the-summary-title-of-panels}
 
->[!VIDEO](https://video.tv.adobe.com/v/28387?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
 
 #### Validation du panneau {#validate-panels-using-rule-editor}
 
->[!VIDEO](https://video.tv.adobe.com/v/28409?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28409?quality=12&learn=on)
 
 Voici le code utilisé pour valider les champs du panneau.
 

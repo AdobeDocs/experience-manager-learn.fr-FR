@@ -9,7 +9,7 @@ level: Beginner
 kt: 4997
 thumbnail: 39149.jpg
 exl-id: d35a7892-d707-4a5c-9e97-ec3abba0f30c
-source-git-commit: bca51ece7a9b249727b8746cc9654503059116fb
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 15%
@@ -27,7 +27,7 @@ ht-degree: 15%
 
 Les utilisateurs nécessitant l’accès au service AEM Author sont gérés en tant que [Utilisateurs Adobe IMS](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html) in [Admin Console de l’Adobe](https://adminconsole.adobe.com). Découvrez ce que sont les utilisateurs Adobe IMS et comment ils sont accessibles et gérés en Admin Console.
 
->[!VIDEO](https://video.tv.adobe.com/v/39149/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39149?quality=12&learn=on)
 
 ## Ressources supplémentaires
 

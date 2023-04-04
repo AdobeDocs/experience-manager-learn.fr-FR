@@ -12,19 +12,19 @@ thumbnail: 341464.jpg
 topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 467b0c343a28eb573498a013b5490877e4497fe0
+exl-id: 88af40fc-deff-4b92-84b1-88df2dbdd90b
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
 
 ---
 
-
 # Débogage AEM as a Cloud Service avec l’explorateur de référentiel
 
 Repository Browser est un outil puissant qui offre une visibilité sur AEM entrepôt de données sous-jacent, ce qui permet de déboguer facilement AEM environnement as a Cloud Service. Repository Browser prend en charge une vue en lecture seule des ressources et des propriétés d’AEM dans les services de production, d’évaluation et de développement, ainsi que dans les services de création, de publication et d’aperçu.
 
->[!VIDEO](https://video.tv.adobe.com/v/341464/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341464?quality=12&learn=on)
 
 Repository Browser est __UNIQUEMENT__ disponible sur AEM environnements as a Cloud Service (utilisez [CRXDE Lite](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) pour déboguer le SDK d’AEM local).
 
@@ -48,4 +48,3 @@ L’explorateur de référentiels s’ouvre pour le niveau de service sélection
 ## Accès à la publication et à la prévisualisation
 
 Par défaut, l’accès à Publier ou Aperçu est limité, ce qui réduit les ressources disponibles dans l’explorateur de référentiels. [Pour afficher toutes les ressources sur Publier (ou Aperçu), ajoutez des utilisateurs à un rôle Administrateurs de publication (ou Aperçu).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#navigate-the-hierarchy)
-

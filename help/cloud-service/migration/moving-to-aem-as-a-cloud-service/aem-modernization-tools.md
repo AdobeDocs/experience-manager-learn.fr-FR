@@ -8,7 +8,7 @@ level: Experienced
 kt: 8629
 thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
-source-git-commit: 09f6c4b0bec10edd306270a7416fcaff8a584e76
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 6%
@@ -22,19 +22,19 @@ Découvrez comment les outils de modernisation d’AEM sont utilisés pour mettr
 
 ## Convertisseur tout-en-un
 
->[!VIDEO](https://video.tv.adobe.com/v/338802/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338802?quality=12&learn=on)
 
 ## Conversion de page
 
->[!VIDEO](https://video.tv.adobe.com/v/338799/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338799?quality=12&learn=on)
 
 ## Conversion des composants
 
->[!VIDEO](https://video.tv.adobe.com/v/338788/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338788?quality=12&learn=on)
 
 ## Import de stratégies
 
->[!VIDEO](https://video.tv.adobe.com/v/338797/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338797?quality=12&learn=on)
 
 ## Utilisation des outils de modernisation d’AEM
 

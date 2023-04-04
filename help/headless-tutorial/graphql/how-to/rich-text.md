@@ -1,6 +1,6 @@
 ---
 title: Utilisation de texte enrichi avec AEM sans affichage
-description: Découvrez comment créer du contenu et incorporer du contenu référencé à l’aide d’un éditeur de texte enrichi multiligne avec des fragments de contenu Adobe Experience Manager et comment le texte enrichi est diffusé par AEM API GraphQL au format JSON et est utilisé par les applications sans interface.
+description: Découvrez comment créer du contenu et incorporer du contenu référencé à l’aide d’un éditeur de texte enrichi multiligne avec des fragments de contenu Adobe Experience Manager et comment le texte enrichi est diffusé par AEM API GraphQL sous la forme JSON et est utilisé par les applications sans interface utilisateur.
 version: Cloud Service
 doc-type: article
 kt: 9985
@@ -8,7 +8,7 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1464'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 Le champ de texte multiligne est un type de données de fragments de contenu qui permet aux auteurs de créer du contenu de texte enrichi. Les références à d’autres contenus, tels que des images ou d’autres fragments de contenu, peuvent être insérées dynamiquement dans la ligne au sein du flux du texte. Le champ de texte Une seule ligne est un autre type de données de fragments de contenu qui doit être utilisé pour les éléments de texte simples.
 
-L’API GraphQL d’AEM offre une fonctionnalité robuste pour renvoyer du texte enrichi en tant que HTML, texte brut ou format JSON pur. La représentation JSON est puissante, car elle donne à l’application cliente un contrôle total sur la manière de générer le contenu.
+L’API GraphQL d’AEM offre une fonctionnalité robuste pour renvoyer du texte enrichi sous forme de HTML, de texte brut ou de code JSON pur. La représentation JSON est puissante, car elle donne à l’application cliente un contrôle total sur la manière de générer le contenu.
 
 ## Éditeur multi-lignes
 
->[!VIDEO](https://video.tv.adobe.com/v/342104/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342104?quality=12&learn=on)
 
-Dans l’éditeur de fragment de contenu, la barre de menu du champ de texte multiligne fournit aux auteurs des fonctionnalités standard de mise en forme de texte enrichi, telles que : **gras**, *italique* et soulignez. L’ouverture d’un champ multiligne en mode plein écran active la fonction [d’autres outils de mise en forme tels que le type Paragraphe, la recherche et le remplacement, la vérification orthographique, etc.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html).
+Dans l’éditeur de fragment de contenu, la barre de menu du champ de texte multiligne fournit aux auteurs des fonctionnalités standard de mise en forme de texte enrichi, telles que : **gras**, *italique* et soulignez. L’ouverture d’un champ multiligne en mode plein écran active la fonction [d’autres outils de mise en forme tels que le type Paragraphe, la recherche et le remplacement, la vérification orthographique, etc.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html?lang=fr).
 
 >[!NOTE]
 >
@@ -331,7 +331,7 @@ Le `nodeMap` est un littéral d’objet JavaScript utilisé comme map. Chacune d
 
 ### Exemple de code complet
 
-Vous trouverez un utilitaire de rendu de texte enrichi réutilisable dans la variable [Exemple WKND GraphQL React](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+Vous trouverez un utilitaire de rendu de texte enrichi réutilisable dans la variable [Exemple de WKND GraphQL React](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
 * [renderRichText.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/utils/renderRichText.js) - Utilitaire réutilisable exposant une fonction `mapJsonRichText`. Cet utilitaire peut être utilisé par les composants qui souhaitent effectuer le rendu d’une réponse JSON de texte enrichi en tant que JSX React.
 * [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) - Exemple de composant qui émet une requête GraphQL contenant du texte enrichi. Le composant utilise la variable `mapJsonRichText` pour effectuer le rendu du texte enrichi et des références.
@@ -532,15 +532,15 @@ Le `__typename` de `_references` peut être utilisé pour mapper différents typ
 
 ### Exemple de code complet
 
-Vous trouverez un exemple complet d’écriture d’un rendu de références personnalisé dans la section [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) dans le [Exemple WKND GraphQL React](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+Vous trouverez un exemple complet d’écriture d’un rendu de références personnalisé dans la section [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) dans le [Exemple de WKND GraphQL React](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
 ## Exemple de bout en bout
 
->[!VIDEO](https://video.tv.adobe.com/v/342105/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
 
 La vidéo précédente présente un exemple de bout en bout :
 
 1. Mise à jour du champ de texte multiligne d’un modèle de fragment de contenu pour autoriser les références de fragment
 1. Utilisation de l’éditeur de fragment de contenu pour inclure une image et une référence à un autre fragment dans un champ de texte multiligne.
-1. Création d’une requête GraphQL qui inclut la réponse de texte multiligne au format JSON et toute `_references` utilisé.
+1. Création d’une requête GraphQL qui inclut la réponse textuelle multiligne au format JSON et toute `_references` utilisé.
 1. Écriture d’un SPA React qui effectue le rendu des références en ligne de la réponse de texte enrichi.

@@ -8,7 +8,7 @@ role: Developer
 level: Intermediate
 last-substantial-update: 2022-06-04T00:00:00Z
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 1%
@@ -23,11 +23,11 @@ Dans cette série de vidéos en 5 parties, nous examinons la configuration et la
 
 Présentation des statistiques sur les ressources. Installez les composants principaux, l’exemple de composant d’image et d’autres modules de contenu pour préparer votre environnement.
 
->[!VIDEO](https://video.tv.adobe.com/v/25943/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25943?quality=12&learn=on)
 
-### Schéma d’architecture {#architecture-diagram}
+### Diagramme d’architecture {#architecture-diagram}
 
-![Schéma d’architecture](./assets/asset-insights-launch-tutorial/diagram.png)
+![Diagramme d’architecture](./assets/asset-insights-launch-tutorial/diagram.png)
 
 >[!CAUTION]
 >
@@ -42,7 +42,7 @@ La vidéo utilise les composants principaux v2.2.2 qui ne sont plus la dernière
 
 Améliorations apportées aux composants principaux et utilisation du composant proxy (exemple de composant Image) pour les statistiques sur les ressources. Modification des stratégies de modèle de page de contenu afin d’activer un exemple de composant d’image pour le site de référence.
 
->[!VIDEO](https://video.tv.adobe.com/v/25944/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25944?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Le composant Image principale utilise les ***data-asset-id*** dans le parent &lt
 
 La suite de rapports avec collecte de données en temps réel est créée pour le suivi des ressources. La configuration d’AEM Assets Insights est configurée à l’aide des informations d’identification Adobe Analytics.
 
->[!VIDEO](https://video.tv.adobe.com/v/25945/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25945?quality=12&learn=on)
 
 >[!NOTE]
 La collecte de données en temps réel et la création de rapports de ressources AEM doivent être activées pour votre suite de rapports Adobe Analytics. L’activation du reporting d’AEM ressources réserve des variables d’analyse pour le suivi des informations sur les ressources.
@@ -80,7 +80,7 @@ Pour la configuration d’AEM Assets Insights, vous avez besoin des informations
 
 Ajout de l’extension Adobe Analytics, création de règles de chargement de page et intégration d’AEM à Launch avec le compte technique Adobe IMS.
 
->[!VIDEO](https://video.tv.adobe.com/v/25946/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25946?quality=12&learn=on)
 
 >[!NOTE]
 Veillez à répliquer toutes vos modifications de l’instance de création vers l’instance de publication.
@@ -193,4 +193,4 @@ Il est également possible de passer la gestion dynamique des balises en mode de
 
 Configuration AEM rapport Planificateur de tâche de synchronisation de rapports de ressources et Statistiques sur les ressources
 
->[!VIDEO](https://video.tv.adobe.com/v/25947/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/25947?quality=12&learn=on)

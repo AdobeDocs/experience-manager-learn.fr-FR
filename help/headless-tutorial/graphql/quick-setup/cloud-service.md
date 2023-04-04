@@ -9,7 +9,7 @@ level: Beginner
 kt: 9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
-source-git-commit: b4c04a9ef7d8cfdaa5675fdfe259ab9d813fb7e0
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 2%
@@ -36,10 +36,10 @@ Les éléments suivants sont nécessaires pour suivre cette configuration rapide
 
 ## 1. Création d’un référentiel Git Cloud Manager
 
-Créez tout d’abord un référentiel Git Cloud Manager utilisé pour déployer le site WKND. Le site WKND est un exemple de projet AEM site web qui contient du contenu (des fragments de contenu) et un point d’entrée AEM GraphQL utilisé par l’application React de la configuration rapide.
+Créez tout d’abord un référentiel Git Cloud Manager utilisé pour déployer le site WKND. Le site WKND est un exemple de projet AEM site web qui contient du contenu (des fragments de contenu) et un point de terminaison GraphQL AEM utilisé par l’application React de la configuration rapide.
 
 _Arrêt sur image des étapes_
->[!VIDEO](https://video.tv.adobe.com/v/339073/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339073?quality=12&learn=on)
 
 1. Accédez à [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
 1. Sélectionnez Cloud Manager . __Programme__ contenant l’environnement as a Cloud Service AEM à utiliser pour cette configuration rapide
@@ -55,7 +55,7 @@ _Arrêt sur image des étapes_
 Une fois le référentiel Git de Cloud Manager créé, clonez le code source du projet WKND Site à partir de GitHub et envoyez-le au référentiel Git de Cloud Manager. Cloud Manager permet désormais d’accéder au projet WKND Site et de le déployer dans l’environnement as a Cloud Service AEM.
 
 _Arrêt sur image des étapes_
->[!VIDEO](https://video.tv.adobe.com/v/339074/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339074?quality=12&learn=on)
 
 1. À partir de la ligne de commande, clonez l’exemple de code source du projet WKND Site à partir de GitHub.
 
@@ -87,10 +87,10 @@ _Arrêt sur image des étapes_
 
 Une fois le projet de site WKND transmis au référentiel Git de Cloud Manager, il ne peut pas être déployé sur AEM as a Cloud Service à l’aide des pipelines de Cloud Manager.
 
-Gardez à l’esprit que le projet de site WKND fournit un exemple de contenu que l’application React consomme sur AEM API GraphQL sans affichage.
+Gardez à l’esprit que le projet de site WKND fournit un exemple de contenu que l’application React utilise sur AEM API GraphQL sans affichage.
 
 _Arrêt sur image des étapes_
->[!VIDEO](https://video.tv.adobe.com/v/339075/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339075?quality=12&learn=on)
 
 1. Joindre une __Pipeline de déploiement hors production__ vers le nouveau référentiel Git
    1. Sélectionner __Pipelines__ dans la navigation supérieure ;
@@ -118,10 +118,10 @@ _Arrêt sur image des étapes_
 
 ## 4. Téléchargez et exécutez l’application WKND React
 
-Une fois AEM bootstrap as a Cloud Service avec le contenu du projet de site WKND, téléchargez et démarrez l’exemple d’application WKND React qui consomme le contenu du site WKND via les API GraphQL sans affichage.
+Une fois AEM bootstrap as a Cloud Service avec le contenu du projet de site WKND, téléchargez et démarrez l’exemple d’application WKND React qui consomme le contenu du site WKND via les API GraphQL sans affichage AEM.
 
 _Arrêt sur image des étapes_
->[!VIDEO](https://video.tv.adobe.com/v/339076/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339076?quality=12&learn=on)
 
 1. À partir de la ligne de commande, clonez le code source de l’application React à partir de GitHub.
 
@@ -159,17 +159,17 @@ _Arrêt sur image des étapes_
 
 ## 5. Modifier le contenu dans AEM
 
-Avec l’exemple d’application WKND React se connectant au contenu des API GraphQL AEM et l’utilisant, créez du contenu dans le service Auteur AEM et voyez comment l’expérience de React est mise à jour de concert.
+Avec l’exemple d’application WKND React se connectant au contenu des API GraphQL sans affichage et l’utilisant, créez du contenu dans le service AEM Author et découvrez comment l’expérience de l’application React se met à jour de concert.
 
 _Arrêt sur image des étapes_
->[!VIDEO](https://video.tv.adobe.com/v/339077/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/339077?quality=12&learn=on)
 
 1. Connectez-vous au service Auteur as a Cloud Service AEM
 1. Accédez à __Ressources > Fichiers > WKND Partagé > Anglais > Aventures__
 1. Ouvrez le __Vélo dans l&#39;Utah du Sud__ Dossier
 1. Sélectionnez la __Vélo dans l&#39;Utah du Sud__ Fragment de contenu, puis sélectionnez __Modifier__ à partir de la barre d’actions supérieure
 1. Mettez à jour certains champs du fragment de contenu, par exemple :
-   + Titre: `Cycling Utah's National Parks`
+   + Titre : `Cycling Utah's National Parks`
    + Durée du voyage : `6 Days`
    + Difficulté : `Intermediate`
    + Prix: `3500`

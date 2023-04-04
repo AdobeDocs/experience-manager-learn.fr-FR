@@ -15,7 +15,7 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 525cd30c-05bf-4f17-b61b-90609ce757ea
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 6%
@@ -36,7 +36,7 @@ Cette série de vidéos présente les options de remise pour l’utilisation de 
 
 ## Utilisation de fragments de contenu dans des pages web {#using-content-fragments-in-web-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/22449/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22449?quality=12&learn=on)
 
 Les fragments de contenu peuvent être utilisés sur les pages AEM Sites ou de manière similaire, dans les fragments d’expérience, à l’aide des composants principaux de la gestion de contenu web AEM [Composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr).
 
@@ -44,18 +44,18 @@ Les composants de fragment de contenu peuvent être stylisés à l’aide d’AE
 
 ## Exposition de fragments de contenu au format JSON {#exposing-content-fragments-as-json}
 
->[!VIDEO](https://video.tv.adobe.com/v/22448/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22448?quality=12&learn=on)
 
 AEM Content Services facilite la création d’AEM points de terminaison HTTP basés sur une page qui convertissent le contenu dans un format JSON normalisé.
 
-La vidéo ci-dessus utilise la méthode [Composant de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) pour exposer des fragments de contenu individuels. Le [Composant de liste de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) est un nouveau composant qui permet à un auteur de définir une requête qui renseignera dynamiquement la page avec une liste de fragments de contenu. Le composant Liste de fragments de contenu est préférable lorsque plusieurs fragments de contenu doivent être exposés.
+La vidéo ci-dessus utilise la méthode [Composant de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr) pour exposer des fragments de contenu individuels. Le [Composant de liste de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-list.html) est un nouveau composant qui permet à un auteur de définir une requête qui renseignera dynamiquement la page avec une liste de fragments de contenu. Le composant Liste de fragments de contenu est préférable lorsque plusieurs fragments de contenu doivent être exposés.
 
 *Exemple de payload JSON du point d’entrée Content Services :*\
 **[athlètes.json](assets/athletes.json)**
 
 ## Utilisation de l’API HTTP Assets
 
->[!VIDEO](https://video.tv.adobe.com/v/26390/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26390?quality=12&learn=on)
 
 La première version d’AEM 6.5 est une prise en charge améliorée des fragments de contenu avec l’API HTTP Assets. Cela permet aux développeurs d’effectuer facilement des opérations CRUD (Create, Read, Update et Delete) sur des fragments de contenu.
 
@@ -80,7 +80,7 @@ Il existe deux options pour exposer le fragment de contenu au format JSON afin d
 
 * [Création de fragments de contenu](content-fragments-feature-video-use.md)
 * [AEM composants principaux WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
-* [AEM composant de fragment de contenu WCM principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+* [AEM composant de fragment de contenu WCM principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr)
 
 Pour télécharger et installer le package ci-dessous sur une instance AEM 6.4+ pour l’état final de la série vidéo :\
 **[aem_demo_fluid-experiencescontent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**

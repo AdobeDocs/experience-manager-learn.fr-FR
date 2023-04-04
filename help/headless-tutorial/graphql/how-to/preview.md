@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-03-17T00:00:00Z
 jira: KT-10841
 thumbnail: 3416906.jpeg
-source-git-commit: 024b2faac2e5a1a8d4bac64d1f70f292aac75dd0
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Les applications AEM sans affichage prennent en charge la prévisualisation de création intégrée. L’expérience d’aperçu relie l’éditeur de fragment de contenu de l’auteur AEM à votre application personnalisée (accessible via HTTP), ce qui permet d’insérer un lien profond dans l’application qui effectue le rendu du fragment de contenu en cours de prévisualisation.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416906/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
 Pour utiliser l’aperçu du fragment de contenu, plusieurs conditions doivent être remplies :
 

@@ -8,7 +8,8 @@ version: Cloud Service
 feature: Output Service
 topic: Development
 kt: 9673
-source-git-commit: 228da29e7ac0d61359c2b94131495b5b433a09dc
+exl-id: db25e5a2-e1a8-40ad-af97-35604d515450
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 12%
@@ -23,7 +24,7 @@ Pour utiliser une API de lot, créez une configuration de lot et exécutez une e
 >Assurez-vous que l’utilisateur AEM appartient à ```forms-users``` groupe pour effectuer des appels API.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/340241/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)
 
 ## Création d’une configuration de lot
 
@@ -57,4 +58,3 @@ Pour vérifier la création réussie de la configuration par lots, vous pouvez e
 ```
 
 Il vous suffit de transmettre un objet JSON vide dans le corps de la requête HTTP.
-

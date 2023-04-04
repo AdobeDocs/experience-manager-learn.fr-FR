@@ -9,7 +9,7 @@ level: Beginner
 kt: 7619
 thumbnail: 332858.jpg
 exl-id: 0d22b06f-bf78-4a54-85be-6a932177f36f
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
@@ -26,6 +26,6 @@ Dans cette vidéo, vous allez :
 + Découvrez les différents types de données et validations utilisés pour créer le modèle de fragment de contenu.
 + Comprendre comment le modèle de fragment de contenu génère l’API GraphQL
 
->[!VIDEO](https://video.tv.adobe.com/v/332858/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332858?quality=12&learn=on)
 
-_Téléchargez la  [collection ](./assets/aem-headless-video-series.postman_collection.json) Postman utilisée dans la série AEM de vidéos sans affichage._
+_Téléchargez la [Collection Postman](./assets/aem-headless-video-series.postman_collection.json) utilisée dans toute la série AEM de vidéos sans affichage._

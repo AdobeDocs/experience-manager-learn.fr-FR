@@ -1,17 +1,17 @@
 ---
 title: Prise en main d’AEM sans affichage - Content Services
 description: Tutoriel complet illustrant comment créer et exposer du contenu à l’aide d’AEM sans affichage.
-feature: Fragments de contenu, API
-topic: Sans affichage, gestion de contenu
+feature: Content Fragments, APIs
+topic: Headless, Content Management
 role: Developer
 level: Beginner
-source-git-commit: 22829f532f7791af14919af24650b4593fe89ae8
+exl-id: 5aa32791-861a-48e3-913c-36028373b788
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '334'
 ht-degree: 4%
 
 ---
-
 
 # Prise en main d’AEM sans affichage - Content Services
 
@@ -23,7 +23,7 @@ AEM Content Services permet les mêmes abstractions de contenu que celles utilis
 
 Tutoriel complet illustrant comment créer et exposer du contenu à l’aide d’AEM et utilisé par une application mobile native, dans un scénario CMS sans interface.
 
->[!VIDEO](https://video.tv.adobe.com/v/28315/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28315?quality=12&learn=on)
 
 Ce tutoriel explique comment AEM Content Services peut être utilisé pour alimenter l’expérience d’une application mobile qui affiche des informations sur les événements (musique, performance, art, etc.). qui est géré par l’équipe WKND.
 
@@ -37,15 +37,15 @@ Ce tutoriel abordera les sujets suivants :
 
 ## Projet GitHub
 
-Le code source et les modules de contenu sont disponibles sur [AEM Guides - WKND Mobile GitHub Project](https://github.com/adobe/aem-guides-wknd-mobile).
+Le code source et les packages de contenu sont disponibles sur la page [AEM Guides - Projet GitHub WKND Mobile](https://github.com/adobe/aem-guides-wknd-mobile).
 
-Si vous rencontrez un problème avec le tutoriel ou le code, laissez un [problème GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
+Si vous rencontrez un problème avec le tutoriel ou le code, veuillez laisser une [Problème GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
 
-## AEM GraphQL par rapport à AEM Content Services
+## AEM GraphQL et AEM Content Services
 
-|  | AEM API GraphQL | AEM Content Services |
+|  | API GraphQL AEM | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
 | Définition d’un schéma | Modèles de fragment de contenu structuré | Composants AEM |
 | Contenu | Fragments de contenu | Composants AEM |
 | Détection de contenu | Par requête GraphQL | Par AEM page |
-| Format de diffusion | JSON GraphQL | AEM ComponentExporter JSON |
+| Format de diffusion | GraphQL JSON | AEM ComponentExporter JSON |

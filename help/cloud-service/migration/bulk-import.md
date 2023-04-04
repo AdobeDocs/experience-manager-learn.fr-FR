@@ -14,7 +14,7 @@ role: Architect, Developer
 level: Beginner
 last-substantial-update: 2022-10-05T00:00:00Z
 exl-id: 28644af8-babc-467d-afdb-8538728dc176
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 L’outil d’importation en bloc d’AEM as a Cloud Service permet aux administrateurs d’importer en bloc des ressources à partir du stockage dans le cloud (stockage Azure Blob ou Amazon S3) de manière sécurisée et efficace.
 
->[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
 
 ## Planification de l’importation en bloc
 

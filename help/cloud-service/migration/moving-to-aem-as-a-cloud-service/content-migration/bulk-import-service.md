@@ -8,7 +8,7 @@ level: Experienced
 kt: 8918
 thumbnail: 336969.jpeg
 exl-id: 4944d3d9-52a0-4255-9e6c-eb119160e400
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 Découvrez comment AEM en tant que service d’importation en bloc de Cloud Services peut être utilisé pour importer des ressources à partir de sources non AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/336969/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336969?quality=12&learn=on)
 
 ## Utilisation du service d’importation en bloc
 
@@ -33,7 +33,7 @@ Le service d’importation en bloc est utilisé pour transférer des fichiers st
 + Configurez et exécutez le service d’importation en bloc à partir d’AEM service Auteur as a Cloud Service.
 + Exécutez l’importateur de services en bloc comme importation unique ou planifiez une importation périodique.
 
-## Autres ressources 
+## Autres ressources
 
-+ [Session Adobe Developer Live sur Asset Ingestion](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=en)
++ [Session Adobe Developers Live sur l’ingestion des ressources](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/feb2021/asset-bulk-ingestion.html?lang=en)
 

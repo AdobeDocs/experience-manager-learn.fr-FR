@@ -7,7 +7,7 @@ role: User
 level: Intermediate
 last-substantial-update: 2022-06-20T00:00:00Z
 exl-id: 500a9b10-462a-4f41-9b07-67138955cc3d
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 1%
@@ -20,13 +20,13 @@ Présentation rapide des expériences utilisateur et de création d’Asset Shar
 
 ## Expérience utilisateur
 
->[!VIDEO](https://video.tv.adobe.com/v/20497/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20497?quality=12&learn=on)
 
 La vidéo offre une rapide présentation de l’expérience utilisateur pour Asset Share Commons. La révision aborde les fonctionnalités de la page de recherche, de la page Détails de la ressource, ainsi que plusieurs actions telles que Télécharger, Partager et Ajouter au panier.
 
 ## Expérience de création
 
->[!VIDEO](https://video.tv.adobe.com/v/20498/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/20498?quality=12&learn=on)
 
 Cette vidéo offre un aperçu des fonctionnalités de création de composants de base de Asset Share Commons, afin de donner une idée du niveau de capacité de création de contenu.
 

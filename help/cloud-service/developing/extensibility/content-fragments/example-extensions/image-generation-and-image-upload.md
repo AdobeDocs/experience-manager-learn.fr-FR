@@ -10,7 +10,7 @@ kt: 11649
 thumbnail: KT-11649.png
 doc-type: article
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: 5f0464d7bb8ffde9a9b3bd7fd67dc0e341970a6f
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1399'
 ht-degree: 2%
@@ -49,7 +49,7 @@ Le flux fonctionnel de l’exemple d’extension est le suivant :
 
 Cette vidéo présente l’exemple de génération d’images à l’aide de l’extension OpenAI ou DALL.E 2, son fonctionnement et son développement. La vidéo comporte des marqueurs de chapitre, tels que __Démo, configuration et code technique fonctionnels__ pour regarder rapidement la pièce pertinente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3413093/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413093?quality=12&learn=on)
 
 
 ## L’application d’extension App Builder

@@ -9,7 +9,7 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 11019
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Extrayez un document d’enregistrement et envoyez-le en tant que pièce jointe d’e-mail dans le workflow automatisé.
 La vidéo suivante explique les étapes nécessaires pour extraire un document d’enregistrement des données envoyées.
->[!VIDEO](https://video.tv.adobe.com/v/346731/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346731?quality=12&learn=on)

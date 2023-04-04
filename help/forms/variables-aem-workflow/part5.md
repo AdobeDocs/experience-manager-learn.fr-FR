@@ -2,16 +2,16 @@
 title: Variables dans AEM Workflow[Partie5]
 description: Utilisation de variables de type XML, JSON, ArrayList, Document dans un workflow AEM
 version: 6.5
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: ecd43765-455c-4f8b-acf2-6ea34495c311
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 1%
+source-wordcount: '91'
+ht-degree: 0%
 
 ---
-
 
 # Éditeur de règles dans AEM workflow
 
@@ -19,4 +19,4 @@ Le composant Division Ou est utilisé pour le routage dans AEM Workflow. Avant l
 
 La vidéo suivante montre comment utiliser l’éditeur de règles pour effectuer un traitement conditionnel dans votre workflow AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/26362/quality=9)
+>[!VIDEO](https://video.tv.adobe.com/v/26362?quality=12&learn=on)

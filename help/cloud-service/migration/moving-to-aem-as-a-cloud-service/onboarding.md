@@ -9,18 +9,18 @@ level: Experienced
 kt: 8631
 thumbnail: 336959.jpeg
 exl-id: 9d2004e5-e928-4190-8298-695635c8e92c
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 15%
+ht-degree: 22%
 
 ---
 
 # Intégration à AEM as a Cloud Service
 
-Découvrez comment vous intégrer à AEM as a Cloud Service à partir de la phase de contrat jusqu’à la configuration des environnements à l’aide de Cloud Manager.
+Découvrez comment intégrer AEM as a Cloud Service, de la phase d’établissement du contrat à la configuration des environnements à l’aide de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336959?quality=12&learn=on)
 
 ## Cloud Manager et Admin Console
 
@@ -32,7 +32,7 @@ L’intégration requiert notamment la création AEM programmes as a Cloud Servi
 
 + Un administrateur système utilise la variable [Admin Console](https://adminconsole.adobe.com/) pour affecter un ou plusieurs utilisateurs au [Cloud Manager - Propriétaire de l’entreprise](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr) profil de produit.
 + Les utilisateurs affectés au profil de produit du propriétaire de l’entreprise utilisent les fonctionnalités en libre-service de [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) to [créer un ou plusieurs programmes ;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/production-programs/creating-production-program.html) et [ajout d’environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr)
-+ Utilisez la variable [Admin Console](https://adminconsole.adobe.com/) pour affecter des développeurs et des utilisateurs à différents [Rôles Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html) et accorder des autorisations à différents environnements AEM.
++ Utilisez la variable [Admin Console](https://adminconsole.adobe.com/) pour affecter des développeurs et des utilisateurs à différents [Rôles Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr) et accorder des autorisations à différents environnements AEM.
 
 ## Exercice pratique
 

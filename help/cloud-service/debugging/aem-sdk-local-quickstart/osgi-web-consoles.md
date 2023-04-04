@@ -12,7 +12,7 @@ topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 0929bc1a-376c-4e16-a540-a276fd5af164
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 4%
@@ -27,7 +27,7 @@ AEM fournit de nombreuses consoles OSGi, chacune fournissant des informations cl
 
 ## Lots
 
->[!VIDEO](https://video.tv.adobe.com/v/34335/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34335?quality=12&learn=on)
 
 La console Bundles est un catalogue des lots OSGi, ainsi que leurs détails, déployés sur AEM, avec la possibilité de les démarrer et de les arrêter.
 
@@ -44,7 +44,7 @@ Cliquer sur chaque lot fournit des détails qui aident à déboguer votre applic
 
 ## Composants
 
->[!VIDEO](https://video.tv.adobe.com/v/34336/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34336?quality=12&learn=on)
 
 La console Composants est un catalogue de tous les composants OSGi déployés sur AEM. Elle fournit toutes les informations les concernant, depuis leur cycle de vie de composant OSGi défini jusqu’aux services OSGi auxquels ils peuvent faire référence.
 
@@ -63,7 +63,7 @@ Principaux aspects des activités de débogage :
 
 ## Modèles Sling
 
->[!VIDEO](https://video.tv.adobe.com/v/34337/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34337?quality=12&learn=on)
 
 La console Modèles Sling se trouve à l’adresse :
 

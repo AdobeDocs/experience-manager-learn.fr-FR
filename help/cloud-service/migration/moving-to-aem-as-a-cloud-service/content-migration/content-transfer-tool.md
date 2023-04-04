@@ -8,7 +8,7 @@ level: Experienced
 kt: 8919
 thumbnail: 336970.jpeg
 exl-id: c51ce8e3-e83c-4f8b-a835-70335ed3a5b9
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Découvrez comment l’outil de transfert de contenu vous aide à migrer le contenu vers AEM as a Cloud Service à partir d’AEM 6.3+.
 
->[!VIDEO](https://video.tv.adobe.com/v/336970/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336970?quality=12&learn=on)
 
 ## Utilisation de l’outil de transfert de contenu
 
@@ -46,7 +46,7 @@ Appliquez vos connaissances en essayant ce que vous avez appris grâce à cet ex
 Avant d’essayer l’exercice pratique, assurez-vous d’avoir visionné et compris la vidéo ci-dessus, ainsi que les documents suivants :
 
 + [Outils de modernisation d’AEM](../aem-modernization-tools.md)
-+ [Intégration ](../onboarding.md)
++ [Intégration](../onboarding.md)
 + [Cloud Manager](../cloud-manager.md)
 
 Assurez-vous également que vous avez terminé l’exercice pratique précédent :

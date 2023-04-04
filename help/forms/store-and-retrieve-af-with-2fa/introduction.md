@@ -11,7 +11,7 @@ role: Developer
 level: Experienced
 exl-id: b278652f-6c09-4abc-b92e-20bfaf2e791a
 last-substantial-update: 2020-11-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 2%
@@ -30,9 +30,9 @@ Ce tutoriel vous guide tout au long des étapes nécessaires à l’enregistreme
 
 ## Démonstration du cas pratique
 
->[!VIDEO](https://video.tv.adobe.com/v/327122?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327122?quality=12&learn=on)
 
-## Conditions préalables
+## Prérequis
 
 L’audience de ce contenu devrait avoir une certaine expérience dans les domaines suivants :
 

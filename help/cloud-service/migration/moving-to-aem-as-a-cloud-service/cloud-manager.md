@@ -9,7 +9,7 @@ level: Intermediate, Experienced
 kt: 8632
 thumbnail: 336961.jpeg
 exl-id: 9c641a90-be62-49c1-b8c0-d45d26055b94
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Découvrez Cloud Manager pour AEM as a Cloud Service et ses différences avec Cloud Manager pour AEM sur Adobe Manage Services (AMS).
 
->[!VIDEO](https://video.tv.adobe.com/v/336961/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336961?quality=12&learn=on)
 
 ## Exercice pratique
 
@@ -29,7 +29,7 @@ Appliquez vos connaissances en essayant ce que vous avez appris grâce à cet ex
 Avant d’essayer l’exercice pratique, assurez-vous d’avoir visionné et compris la vidéo ci-dessus, ainsi que les documents suivants :
 
 + [Penser différemment à AEM as a Cloud Service](./introduction.md)
-+ [Intégration ](./onboarding.md)
++ [Intégration](./onboarding.md)
 
 Assurez-vous également que vous avez terminé l’exercice pratique précédent :
 

@@ -12,7 +12,7 @@ kt: 194
 thumbnail: 331785.jpg
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 84d2b240-5ecc-4230-97a0-6c2faead8d1a
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 Les fragments d’expérience permettent aux auteurs de contenu de réutiliser le contenu sur plusieurs canaux, y compris les pages Sites et les systèmes tiers.
 
->[!VIDEO](https://video.tv.adobe.com/v/331785/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331785?quality=12&learn=on)
 
 Un fragment d’expérience est un ensemble groupé de composants qui, lorsqu’ils sont combinés, créent une expérience. Par exemple, un *Titre*, *Image*, *Description*, et *Bouton Appel À L’Action* peut être combiné pour former une expérience de teaser.
 

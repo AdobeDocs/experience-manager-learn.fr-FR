@@ -7,7 +7,7 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 58%
@@ -18,7 +18,7 @@ ht-degree: 58%
 
 Dans cette vidéo, nous examinons la gestion des couleurs de Dynamic Media et comment elle peut être utilisée pour fournir des fonctionnalités d’aperçu de la correction des couleurs dans pour AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/16792/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ Voici le modèle XML du noeud de configuration de la gestion des couleurs. Ce mo
 | SheetfedCoated | CMJN | U.S. Sheetfed Coated v2 |
 | SheetfedUncoated | CMJN | U.S. Sheetfed Uncoated v2 |
 | SMPTE | RVB | SMPTE-C |
-| sRVB | RVB sRVB | IEC61966-2.1 |
+| sRVB | RVB sRGB | IEC61966-2.1 |
 | UncoatedFogra29 | CMJN | Uncoated FOGRA29 (ISO 12647-2:2004) |
 | WebCoated | CMJN | U.S. Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMJN | Web Coated FOGRA28 (ISO 12647-2:2004) |

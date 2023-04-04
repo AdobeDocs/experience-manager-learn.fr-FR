@@ -1,5 +1,5 @@
 ---
-title: Application de bureau AEM
+title: AEM Desktop App
 description: Utilisez AEM Desktop App pour simplifier l’accès à toute ressource gérée dans AEM sur le bureau, quel que soit le format d’application ou de fichier.
 version: 6.5, 6.4
 topic: Content Management
@@ -10,10 +10,10 @@ kt: 2551
 thumbnail: 28868.jpeg
 last-substantial-update: 2022-06-24T00:00:00Z
 exl-id: 6765758f-0719-4ed9-83be-8ed192a75b41
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '134'
-ht-degree: 11%
+ht-degree: 8%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 11%
 
 Utilisez AEM Desktop App pour simplifier l’accès à toute ressource gérée dans AEM sur le bureau, quel que soit le format d’application ou de fichier.
 
->[!VIDEO](https://video.tv.adobe.com/v/28868/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on)
 
 + Découvrez des ressources dans AEM via la navigation et la recherche à l’aide d’une application de bureau dédiée
 + Une gestion optimisée de la bande passante permet le chargement et le téléchargement de nombreuses ressources volumineuses.

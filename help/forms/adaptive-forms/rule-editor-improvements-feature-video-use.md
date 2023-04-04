@@ -16,10 +16,10 @@ role: Developer
 level: Beginner
 exl-id: 98a35bd9-a659-41f9-a772-267730c1f579
 last-substantial-update: 2019-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 5%
+ht-degree: 0%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 5%
 
 L’éditeur de règles permet aux utilisateurs d’ajouter une logique à AEM Forms adaptatif. AEM version 6.3 améliore l’éditeur de règles de plusieurs manières afin qu’il soit plus facile et plus rapide pour les utilisateurs techniques et non techniques d’ajouter des informations.
 
->[!VIDEO](https://video.tv.adobe.com/v/19653?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19653?quality=12&learn=on)
 
 **Voici quelques-unes des améliorations apportées à l’éditeur de règles :**
 
-* Les composants de formulaire à plusieurs valeurs affichent les options de composant automatiquement
+* Les composants de formulaire à plusieurs valeurs affichent automatiquement les options de composant.
 * La possibilité de spécifier un service Web WSDL dans l’éditeur visuel
 * La possibilité de désactiver des règles
 * Améliorations apportées à l’éditeur de code, telles que :

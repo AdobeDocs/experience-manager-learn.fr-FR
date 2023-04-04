@@ -12,10 +12,10 @@ level: Beginner
 exl-id: 53279cbb-70c8-4319-b5bb-9a7d350a7f72
 last-substantial-update: 2022-05-10T00:00:00Z
 thumbnail: understand-cloud-manager.jpg
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -34,25 +34,25 @@ Cette série vidéo explore les fonctionnalités clés de Cloud Manager pour AEM
 * [Pipelines hors production CI/CD](#cicd-non-production-pipeline)
 * [Activité](#activity)
 
-Pour une présentation complète, consultez le [Guide de l’utilisateur de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html).
+Pour une présentation complète, consultez le [Guide de l’utilisateur de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=fr).
 
 ## Programmes {#programs}
 
 [Programmes Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html) représentent des ensembles d’environnements AEM prenant en charge des ensembles logiques d’initiatives commerciales, correspondant généralement à un contrat de niveau de service (SLA) acheté. Par exemple, un programme peut représenter les ressources AEM pour prendre en charge les sites Web publics globaux, tandis qu’un autre programme représente un DAM central interne.
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26313?quality=12&learn=on)
 
 ## Environnements {#environments}
 
 [Environnements Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/managing-environments.html) sont composés d’instances AEM Author, AEM Publish et Dispatcher. Les différents environnements prennent en charge les rôles et peuvent être engagés à l’aide de différents pipelines CI/CD (décrits ci-dessous). Les environnements Cloud Manager ont généralement un environnement de production et un environnement d’évaluation.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26318?quality=12&learn=on)
 
 ## Rapports {#reports}
 
-[Rapports Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html) fournir une vue des environnements du programme et des instances d’AEM par le biais d’un ensemble de graphiques qui génèrent des rapports et effectuent le suivi de diverses mesures pour chaque instance AEM.
+[Rapports Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html?lang=fr) fournir une vue des environnements du programme et des instances d’AEM par le biais d’un ensemble de graphiques qui génèrent des rapports et effectuent le suivi de diverses mesures pour chaque instance AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/26315/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26315?quality=12&learn=on)
 
 ## Pipeline de production CI/CD {#cicd-production-pipeline}
 
@@ -66,19 +66,19 @@ Pour une présentation complète, consultez le [Guide de l’utilisateur de Clou
 
 Le [Pipeline de production CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) configuration définit le déclencheur qui lance le pipeline, ainsi que les paramètres contrôlant le déploiement en production et les paramètres de test de performances.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
 
 ### Exécution du pipeline
 
 Le [Pipeline de production CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html) est utilisé pour créer et déployer du code par le biais de l’environnement d’évaluation vers l’environnement de production, ce qui réduit le temps d’évaluation.
 
->[!VIDEO](https://video.tv.adobe.com/v/26317/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)
 
 ## Pipelines hors production CI/CD {#cicd-non-production-pipeline}
 
 [Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager. Les pipelines de déploiement prennent en charge le déploiement automatisé de code du référentiel Git vers tout environnement hors production, c’est-à-dire tout environnement d’AEM configuré qui n’est ni dans l’environnement intermédiaire ni dans l’environnement de production.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26316?quality=12&learn=on)
 
 ## Activité {#activity}
 
@@ -86,4 +86,4 @@ Cloud Manager fournit une vue consolidée de l’activité d’un programme, ré
 
 Cloud Manager s’intègre également à un niveau par utilisateur avec [Notifications Adobe Experience Cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/notifications.html), offrant une vue d’ensemble des événements et des actions qui les intéressent.
 
->[!VIDEO](https://video.tv.adobe.com/v/26319/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26319?quality=12&learn=on)

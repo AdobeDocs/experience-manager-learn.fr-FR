@@ -6,7 +6,7 @@ topic: Content Management
 role: Developer
 level: Intermediate
 exl-id: 5b764d86-8ced-46ed-838e-4bd2e75fd64c
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Les modèles de ressources permettent aux marketeurs de créer, gérer et diffuser des ressources numériques pour le numérique et l’impression. La création de brochures marketing, cartes de visite, prospectus, publicités et cartes postales est beaucoup plus facile avec les modèles de ressources intégrés au serveur InDesign. La configuration du serveur d’InDesign avec AEM est traitée dans cette section.
 
->[!VIDEO](https://video.tv.adobe.com/v/17069/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17069?quality=12&learn=on)
 
 >[!NOTE]
 >

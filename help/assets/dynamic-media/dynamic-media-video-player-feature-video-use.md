@@ -7,10 +7,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7e4cb782-836d-4ec0-97d0-645b91ea43e0
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 28%
+ht-degree: 14%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 28%
 
 AEM lecteur vidéo Dynamic Media utilisait le runtime Flash pour prendre en charge la diffusion en continu de vidéo adaptative sur les clients de bureau et les navigateurs sont devenus plus agressifs à l’aide de la diffusion en continu de contenu Flash. Avec l’introduction de HLS (protocole de diffusion vidéo HTTP Live Streaming Apple), le contenu peut désormais être diffusé en continu sans recourir au flash.
 
->[!VIDEO](https://video.tv.adobe.com/v/16791/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16791?quality=12&learn=on)
 
 ## Recherche rapide dans un lecteur vidéo non Flash {#quick-look-into-non-flash-video-player}
 
->[!VIDEO](https://video.tv.adobe.com/v/17429/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17429?quality=12&learn=on)
 
 La prise en charge des navigateurs HLS est la suivante : pour les navigateurs non pris en charge, nous abandonnons la diffusion vidéo progressive.
 
@@ -42,7 +42,7 @@ La prise en charge des navigateurs HLS est la suivante : pour les navigateurs no
  <tbody>
   <tr> 
    <td> <p>Poste de travail</p> </td>
-   <td> <p>Internet Explorer 9 et 10</p> </td>
+   <td> <p>Internet Explorer 9 et 10</p> </td>
    <td> <p>Téléchargement progressif</p> </td>
   </tr>
   <tr>
@@ -54,13 +54,13 @@ La prise en charge des navigateurs HLS est la suivante : pour les navigateurs no
   </tr>
   <tr>
    <td> <p>Poste de travail</p> </td>
-   <td> <p>Firefox 23 à 44</p> </td>
+   <td> <p>Firefox 23-44</p> </td>
    <td> <p>Téléchargement progressif</p> </td>
   </tr>
   <tr> 
    <td> <p>Poste de travail</p> </td>
-   <td> <p>Firefox 45 ou version ultérieure</p> </td>
-   <td> <p>HLS diffusion vidéo</p> </td>
+   <td> <p>Firefox 45 ou version ultérieure</p> </td>
+   <td> <p>Diffusion vidéo en continu HLS</p> </td>
   </tr>
   <tr> 
    <td> <p>Poste de travail</p> </td>
@@ -70,17 +70,17 @@ La prise en charge des navigateurs HLS est la suivante : pour les navigateurs no
   <tr> 
    <td> <p>Poste de travail</p> </td>
    <td> <p>Safari (Mac)</p> </td>
-   <td> <p>HLS diffusion vidéo</p> </td>
+   <td> <p>Diffusion vidéo en continu HLS</p> </td>
   </tr>
   <tr> 
    <td> <p>Mobile</p> </td>
-   <td> <p>Chrome (Android 6 ou version antérieure)</p> </td>
+   <td> <p>Chrome (Android 6 ou version antérieure)</p> </td>
    <td> <p>Téléchargement progressif</p> </td>
   </tr>
   <tr> 
    <td> <p>Mobile</p> </td>
-   <td> <p>Chrome (Android 7 ou version ultérieure)</p> </td>
-   <td> <p>HLS diffusion vidéo</p> </td>
+   <td> <p>Chrome (Android 7 ou version ultérieure)</p> </td>
+   <td> <p>Diffusion vidéo en continu HLS</p> </td>
   </tr>
   <tr> 
    <td> <p>Mobile</p> </td>
@@ -90,17 +90,17 @@ La prise en charge des navigateurs HLS est la suivante : pour les navigateurs no
   <tr> 
    <td> <p>Mobile</p> </td>
    <td> <p>Safari (iOS)</p> </td>
-   <td> <p>HLS diffusion vidéo</p> </td>
+   <td> <p>Diffusion vidéo en continu HLS</p> </td>
   </tr>
   <tr> 
    <td> <p>Mobile</p> </td>
    <td> <p>Chrome (iOS)</p> </td>
-   <td> <p>HLS diffusion vidéo</p> </td>
+   <td> <p>Diffusion vidéo en continu HLS</p> </td>
   </tr>
   <tr> 
    <td> <p>Mobile</p> </td>
    <td> <p>Blackberry</p> </td>
-   <td> <p>HLS diffusion vidéo</p> </td>
+   <td> <p>Diffusion vidéo en continu HLS</p> </td>
   </tr>
  </tbody>
 </table>

@@ -11,7 +11,7 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: de2fa2e4c29ce6db31233ddb1abc66a48d2397a6
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 4%
@@ -36,7 +36,7 @@ Dans ce chapitre, nous passons en revue le développement, le déploiement et la
 >
 >Cette vidéo explique et présente le flux front-end pour les deux **Création rapide et complète de site** projets pour souligner la différence subtile dans le modèle de création, de déploiement et de diffusion des ressources front-end.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409344/)
+>[!VIDEO](https://video.tv.adobe.com/v/3409344?quality=12&learn=on)
 
 ## Prérequis {#prerequisites}
 

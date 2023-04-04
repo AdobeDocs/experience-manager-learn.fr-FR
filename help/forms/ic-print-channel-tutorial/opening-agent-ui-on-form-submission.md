@@ -1,10 +1,10 @@
 ---
 title: Ouverture de l’interface utilisateur de l’agent lors de l’envoi du POST
-seo-title: Ouverture de l’interface utilisateur de l’agent lors de l’envoi du POST
+seo-title: Opening Agent UI On POST Submission
 description: Il s’agit de la 11e partie du tutoriel en plusieurs étapes pour créer votre premier document de communication interactive pour le canal d’impression. Dans cette partie, nous allons lancer l’interface utilisateur de l’agent pour créer une correspondance ad hoc lors de l’envoi du formulaire.
-seo-description: Il s’agit de la 11e partie du tutoriel en plusieurs étapes pour créer votre premier document de communication interactive pour le canal d’impression. Dans cette partie, nous allons lancer l’interface utilisateur de l’agent pour créer une correspondance ad hoc lors de l’envoi du formulaire.
+seo-description: This is part 11 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will launch the agent ui interface for creating ad-hoc correspondence on form submission.
 uuid: 96f34986-a5c3-400b-b51b-775da5d2cbd7
-feature: Communication interactive
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
@@ -12,16 +12,16 @@ activity: implement
 version: 6.4,6.5
 kt: 6168
 thumbnail: 40122.jpg
-topic: Développement
+topic: Development
 role: Developer
 level: Intermediate
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 509b4d0d-9f3c-46cb-8ef7-07e831775086
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '324'
 ht-degree: 2%
 
 ---
-
 
 # Ouverture de l’interface utilisateur de l’agent lors de l’envoi du POST
 
@@ -31,7 +31,7 @@ Cet article décrit les étapes à suivre pour ouvrir l’interface utilisateur 
 
 La vidéo suivante présente un cas pratique
 
->[!VIDEO](https://video.tv.adobe.com/v/40122/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40122?quality=12&learn=on)
 
 ```java
 String accountNumber = request.getParameter("accountnumber"))
@@ -63,14 +63,13 @@ Pour tester cette fonctionnalité sur votre serveur
 
 * [Importez et installez les actifs liés à cet article à l’aide du gestionnaire de packages.](assets/launch-agent-ui.zip)
 * [Connexion à configMgr](http://localhost:4502/system/console/configMgr)
-* Recherchez _Adobe Granite CSRF Filter_
-* Ajoutez _/content/getprintchannel_ dans les chemins exclus.
+* Rechercher _Adobe du filtre CSRF Granite_
+* Ajouter _/content/getprintchannel_ dans les chemins d’accès exclus
 * Enregistrez vos modifications.
 * [Ouvrez POST.jsp](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Assurez-vous que la chaîne transmise à FormFieldRequestParameter est un documentId valide.(Ligne 19).
-* [Ouvrez la page ](http://localhost:4502/content/OpenPrintChannel.html) web, saisissez le numéro de compte et envoyez le formulaire.
+* [Ouvrir la page web](http://localhost:4502/content/OpenPrintChannel.html) et saisissez le numéro de compte et envoyez le formulaire.
 * L’interface utilisateur de l’agent doit s’ouvrir avec les données prérenseignées spécifiques au numéro de compte saisi dans le formulaire.
 
 >[!NOTE]
 >
 >Assurez-vous que le paramètre d’entrée de l’opération Get de votre modèle de données de formulaire est lié à l’attribut de demande appelé &quot;numéro de compte&quot; pour que cela fonctionne. Si vous remplacez le nom de la valeur de liaison par un autre nom, assurez-vous que la modification est répercutée à la ligne 25 du fichier POST.jsp.
-

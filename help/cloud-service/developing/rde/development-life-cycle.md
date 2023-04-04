@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-11863
 thumbnail: KT-11863.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: 9123771fed25cf2c5c3443c92dcc0e6704476bb0
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 6%
@@ -23,7 +23,7 @@ Découvrez le cycle de vie du développement/déploiement à l’aide de RDE et 
 
 La vidéo ci-dessous explore le cycle de vie de développement à déploiement basé sur RDE. La vidéo présente les sous-tâches clés et le flux de développement pour une utilisation efficace de l’éditeur de texte enrichi.
 
->[!VIDEO](https://video.tv.adobe.com/v/3415492/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3415492?quality=12&learn=on)
 
 
 ## Avantages de RDE
@@ -36,7 +36,7 @@ Les principaux avantages de l’éditeur de texte enrichi pour maintenir l’él
 - Amélioration de la collaboration
 - Amélioration de la productivité
 
->[!VIDEO](https://video.tv.adobe.com/v/3415493/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3415493?quality=12&learn=on)
 
 ## Ressources supplémentaires
 

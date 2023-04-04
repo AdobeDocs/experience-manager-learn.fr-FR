@@ -11,7 +11,7 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 6f33f121-5564-4c46-ab56-7ea382a0ab5a
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 La console Composants fournit aux développeurs et à l’administrateur un emplacement central pour gérer tous les différents composants dans une implémentation de Sites. La vidéo suivante présente les fonctionnalités de la console Composants.
 
->[!VIDEO](https://video.tv.adobe.com/v/17417/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17417?quality=12&learn=on)
 
 La console de composants fournit les fonctionnalités suivantes :
 

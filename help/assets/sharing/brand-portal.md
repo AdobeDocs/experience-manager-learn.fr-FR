@@ -8,10 +8,10 @@ role: User
 level: Beginner
 last-substantial-update: 2022-06-15T00:00:00Z
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1764'
-ht-degree: 48%
+ht-degree: 34%
 
 ---
 
@@ -27,7 +27,7 @@ Brand Portal de septembre 2019 introduit notamment l’approvisionnement des res
 
 L’approvisionnement des ressources Brand Portal est utilisé pour collecter des ressources d’équipes et d’agences tierces, les synchronisant en toute transparence vers l’auteur du Experience Manager pour révision et utilisation.
 
->[!VIDEO](https://video.tv.adobe.com/v/29365/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
 
 *Experience Manager Author 6.5 SP2 (6.5.2) ou version ultérieure est requis pour utiliser l’approvisionnement des ressources*
 
@@ -35,7 +35,7 @@ Réviser [Activation de l’auteur Experience Manager pour l’approvisionnement
 
 ## Fonctionnalités et améliorations de Brand Portal de février 2019{#brand-portal-features-and-enhancements-644}
 
->[!VIDEO](https://video.tv.adobe.com/v/26354/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
 
 Brand Portal - La version de février 2019 porte principalement sur les améliorations apportées à la recherche de texte et aux principales demandes des clients.
 
@@ -47,9 +47,9 @@ Lisez les sections suivantes pour en savoir plus sur la recherche de texte parti
 
 #### Recherche par expression partielle
 
-Vous pouvez maintenant rechercher des ressources en spécifiant uniquement une partie (c’est-à-dire un mot ou deux) de l’expression recherchée dans le volet de filtrage.
+Vous pouvez désormais rechercher des ressources en spécifiant uniquement une partie (un mot ou deux) de l’expression recherchée dans le volet de filtrage.
 
-**Cas d’utilisation** : La recherche par expression partielle s’avère utile lorsque vous n’êtes pas sûr de la combinaison exacte des mots apparaissant dans l’expression recherchée.
+**Cas pratique** : La recherche par expression partielle s’avère utile lorsque vous n’êtes pas sûr de la combinaison exacte de mots apparaissant dans l’expression recherchée.
 
 Par exemple, si votre formulaire de recherche dans Brand Portal utilise le prédicat de propriété pour une recherche partielle sur le titre des ressources, la spécification du terme champ renvoie toutes les ressources contenant le mot champ dans l’expression de leur titre.
 
@@ -69,14 +69,14 @@ De même, la spécification de :
 #### Activation de la hiérarchie de dossiers
 
 Les administrateurs peuvent maintenant configurer la façon dont les dossiers s’affichent pour les utilisateurs non-administrateurs (éditeurs, observateurs et utilisateurs invités) lors de leur connexion.
-La configuration [Activer la hiérarchie de dossiers](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) a été ajoutée dans Paramètres généraux au sein du panneau des outils d’administration. Si la configuration est :
+La configuration [Activer la hiérarchie de dossiers](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) a été ajoutée dans Paramètres généraux au sein du panneau des outils d’administration. Si la configuration est :
 
-* Cette option est activée. L’arborescence de dossiers à partir du dossier racine est visible par les utilisateurs non-administrateurs. ce qui leur procure une expérience de navigation semblable à celle des administrateurs ;
+* Cette option est activée. L’arborescence de dossiers à partir du dossier racine est visible par les utilisateurs non-administrateurs. Ainsi, leur accorder une expérience de navigation similaire à celle des administrateurs.
 * Désactivé, seuls les dossiers partagés sont affichés sur la landing page.
 
 [Activation de la hiérarchie de dossiers](https://helpx.adobe.com/experience-manager/brand-portal/using/brand-portal-general-configuration.html) La fonctionnalité (lorsqu’elle est activée) vous aide à différencier les dossiers portant les mêmes noms, partagés à partir de différentes hiérarchies. Lorsqu’ils se connectent, les utilisateurs non-administrateurs voient maintenant les dossiers parents (et ancêtres) virtuels des dossiers partagés.
 
-Les dossiers partagés sont organisés au sein des répertoires respectifs dans des dossiers virtuels. Vous pouvez identifier ces dossiers virtuels grâce à leur icône de cadenas.
+Les dossiers partagés sont organisés dans les répertoires respectifs des dossiers virtuels. Vous pouvez identifier ces dossiers virtuels grâce à leur icône de cadenas.
 
 Notez que la miniature par défaut des dossiers virtuels est l’image de miniature du premier dossier partagé.
 
@@ -86,13 +86,13 @@ Les utilisateurs dont l’instance d’auteur AEM est en mode hybride Dynamic M
 
 Pour autoriser la prévisualisation et le téléchargement des rendus Dynamic Media sur des comptes de client spécifiques, les administrateurs doivent spécifier Configuration Dynamic Media (URL du service vidéo (URL de la passerelle DM) et ID d’enregistrement pour récupérer la vidéo dynamique) dans la configuration Vidéo à partir du panneau des outils d’administration.
 
-Les vidéos Dynamic Media peuvent être prévisualisées sur :
+Vous pouvez prévisualiser les vidéos Dynamic Media sur :
 
 * la page des détails de la ressource ;
 * l’affichage de la carte de la ressource ;
 * la page de prévisualisation du partage de lien.
 
-Les codes des vidéos Dynamic Media peuvent être téléchargés à partir de :
+Les codes vidéo Dynamic Media peuvent être téléchargés à partir de :
 
 * Brand Portal
 * Lien partagé
@@ -101,11 +101,11 @@ Les codes des vidéos Dynamic Media peuvent être téléchargés à partir de 
 
 Le workflow de publication des ressources (et dossiers) de l’instance d’auteur d’[AEM (6.4.2.0)](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) sur Brand Portal peut être planifié à des date et heure ultérieures.
 
-De façon similaire, les ressources publiées peuvent être supprimées du portail à une date (ou heure) ultérieure, en planifiant le workflow Annuler la publication sur Brand Portal.
+De façon similaire, les ressources publiées peuvent être supprimées du portail à une date (ou heure) ultérieure, en planifiant le workflow Dépublier sur Brand Portal.
 
-### Alias de client configurable dans l’URL
+### Alias du client configurable dans l’URL
 
-Les organisations peuvent obtenir une URL de portail personnalisée comprenant un préfixe alternatif dans l’URL. Pour obtenir un alias pour le nom de client dans leur URL de portail existante, les organisations doivent entrer en contact avec l’assistance Adobe.
+Les organisations peuvent personnaliser l’URL de leur portail en y ajoutant un autre préfixe. Pour obtenir un alias pour le nom du client dans l’URL de leur portail existant, les entreprises doivent contacter l’assistance Adobe.
 
 Notez que seul le préfixe de l’URL Brand Portal peut être personnalisé et non l’URL entière.
 Par exemple, une entreprise avec le domaine existant `wknd.brand-portal.adobe.com` peut demander et obtenir la création de `wkndinc.brand-portal.adobe.com`.
@@ -116,15 +116,15 @@ Cependant, l’instance d’auteur AEM peut uniquement être [configurée](http
 
 ## Fonctionnalités et améliorations de Brand Portal Décembre 2018{#brand-portal-features-and-enhancements-642}
 
->[!VIDEO](https://video.tv.adobe.com/v/23707/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/23707?quality=12&learn=on)
 
 ### Accès des invités
 
-AEM Brand Portal permet à des invités d’accéder au portail. Un utilisateur invité ne requiert pas d’identifiants pour accéder au portail et il peut consulter et télécharger tous les dossiers et collections publics. Les utilisateurs invités peuvent ajouter des ressources à leur Lightbox (collection privée) et les télécharger. Ils peuvent aussi voir les prédicats de recherche de balises intelligentes ou non définis par les administrateurs. La session d’invité ne permet pas aux utilisateurs de créer des collections et des recherches enregistrées, ni de les partager à nouveau, d’accéder aux paramètres de collections et de dossiers et de partager les ressources en tant que liens.
+AEM Brand Portal permet aux invités d’accéder au portail. Un utilisateur invité ne requiert pas d’identifiants pour accéder au portail et il peut consulter et télécharger tous les dossiers et collections publics. Les utilisateurs invités peuvent ajouter des ressources à leur Lightbox (collection privée) et les télécharger. Ils peuvent aussi voir les prédicats de recherche de balises intelligentes ou non définis par les administrateurs. La session d’invité ne permet pas aux utilisateurs de créer des collections et des recherches enregistrées ou de les partager, d’accéder aux paramètres des dossiers et des collections et de partager des ressources sous forme de liens.
 
 ### Téléchargement accéléré
 
-Les utilisateurs de Brand Portal peuvent tirer parti des téléchargements rapides reposant sur Aspera pour obtenir des vitesses jusqu’à 25 fois plus rapides et profiter d’une expérience harmonieuse de téléchargement quel que soit leur emplacement dans le monde entier. Pour télécharger les ressources plus rapidement à partir de Brand Portal ou d’un , les utilisateurs doivent sélectionner l’option Activer l’accélération des téléchargements dans la boîte de dialogue de téléchargement, à condition que l’accélération des téléchargements soit activée dans leur organisation.
+Les utilisateurs de Brand Portal peuvent tirer parti des téléchargements rapides reposant sur  Aspera  pour obtenir des vitesses jusqu’à 25 fois plus rapides et profiter d’une expérience de téléchargement transparente quel que soit leur situation géographique. Pour télécharger les ressources plus rapidement à partir de Brand Portal ou d’un lien partagé, les utilisateurs doivent sélectionner l’option Activer l’accélération des téléchargements dans la boîte de dialogue de téléchargement, à condition que l’accélération des téléchargements soit activée dans leur organisation.
 
 * [Guide d’accélération des téléchargements à partir de Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Serveur de test Aspera Connect](https://test-connect.asperasoft.com/)
@@ -137,17 +137,17 @@ Le rapport consigne les noms d’affichage, les e-mails, les personnages (admini
 
 ### Accès aux rendus originaux
 
-Les administrateurs peuvent restreindre l’accès des utilisateurs aux fichiers image originaux (jpeg, tiff, png, bmp, gif, pjpeg, x-portable-anymap, x-portable-bitmap, x-portable-graymap, x-portable-pixmap, x-rgb, x-xbitmap, x-xpixmap, x-icon, image/photoshop, image/x-photoshop, psd, image/vnd.adobe ) et donner accès aux rendus basse résolution qu’ils téléchargent à partir de Brand Portal ou d’un lien partagé. Cet accès peut être contrôlé au niveau de groupe d’utilisateurs depuis l’onglet Groupes de la page Rôles utilisateur du panneau des outils d’administration.
+Les administrateurs peuvent restreindre l’accès des utilisateurs aux fichiers image originaux (jpeg, tiff, png, bmp, gif, pjpeg, x-portable-anymap, x-portable-bitmap, x-portable-graymap, x-portable-pixmap, x-rgb, x-xbitmap, x-xpixmap, x-icon, image/photoshop, image/x-photoshop, psd, image/vnd.adobe ) et donner accès aux rendus basse résolution qu’ils téléchargent à partir de Brand Portal ou d’un lien partagé. Cet accès peut être contrôlé au niveau du groupe d’utilisateurs à partir de l’onglet Groupes de la page Rôles utilisateur du panneau des outils d’administration.
 
 ### Nouvelles configurations
 
-Six nouvelles configurations ont été ajoutées pour permettre aux administrateurs d’activer/de désactiver les fonctionnalités suivantes sur les clients spécifiques :
+Six nouvelles configurations sont ajoutées pour permettre aux administrateurs d’activer/désactiver les fonctionnalités suivantes sur des clients spécifiques :
 
 * Autoriser l’accès des invités
-* Autoriser les utilisateurs à demander l’accès à Brand Portal
-* Autoriser les administrateurs à supprimer des ressources de Brand Portal
-* Autoriser la création de collections publiques
-* Autoriser la création de collections dynamiques publiques
+* Autoriser les utilisateurs à demander l’accès à Brand Portal
+* Autoriser les administrateurs à supprimer des ressources de Brand Portal
+* Autorisation de la création de collections publiques
+* Autorisation de la création de collections dynamiques publiques
 * Autoriser l’accélération des téléchargements
 
 ### Autres améliorations
@@ -163,7 +163,7 @@ Brand Portal utilise Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://le
 
 Nouvelles fonctionnalités améliorées orientées vers l’alignement de Brand Portal avec AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/26354/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
 
 ### Améliorations de la navigation
 
@@ -194,7 +194,7 @@ Nouvelles fonctionnalités améliorées orientées vers l’alignement de Brand 
 ### Fonctionnalités administratives et de reporting
 
 * Le schéma de métadonnées d’AEM Assets peut désormais être publié d’AEM vers Brand Portal.
-* Les administrateurs peuvent créer et gérer trois types de rapports : ressources téléchargées, ressources arrivées à expiration et ressources publiées
+* Les administrateurs peuvent créer et gérer trois types de rapports : ressources téléchargées, expirées et publiées.
 * Possibilité de configurer la colonne qui doit être incluse dans le rapport.
 * Création de paramètres d’image prédéfinis pour les ressources dans Brand Portal.
 * Possibilité de modifier le formulaire du rail de recherche d’administration ou le Forms de recherche afin d’inclure des options de filtrage supplémentaires.
@@ -203,8 +203,8 @@ Nouvelles fonctionnalités améliorées orientées vers l’alignement de Brand 
 
 ## Ressources supplémentaires{#additional-resources}
 
-* [Nouveautés de Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html)
-* [Agents de réplication d’auteur AEM](https://helpx.adobe.com/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
+* [Nouveautés de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=fr#introduction)
+* [Agents de réplication d’auteur AEM](https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/brand-portal-configuring-integration.html)
 * [Guide de téléchargement accéléré](https://helpx.adobe.com/experience-manager/brand-portal/using/accelerated-download.html#main-pars_header)
 * [Documents sur les Adobes AEM Assets Brand Portal](https://helpx.adobe.com/fr/experience-manager/brand-portal/using/brand-portal.html)
 * [Documents sur les Adobes AEM Assets Dynamic Media](https://experienceleague.adobe.com/docs/?lang=fr)

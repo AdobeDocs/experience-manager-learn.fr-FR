@@ -1,28 +1,28 @@
 ---
 title: Ajout d’un tableau au panneau d’équilibrage de compte
-seo-title: Ajout d’un tableau au panneau d’équilibrage de compte
+seo-title: Adding table to account balance panel
 description: Ce didacticiel en 9 étapes est consacré à la création de votre premier document de communication interactive. Dans cette partie, nous allons ajouter un tableau au panneau Balance des comptes.
-seo-description: Ce didacticiel en 9 étapes est consacré à la création de votre premier document de communication interactive. Dans cette partie, nous allons ajouter un tableau au panneau Balance des comptes.
+seo-description: This is part 9 of multistep tutorial for creating your first interactive communication document.In this part, we will add a table to the Account Balance panel.
 uuid: 8f268c73-c543-418d-b65e-5beaf9660e42
-feature: Communication interactive
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 28a9d88d-635b-47a2-8a78-54ddeabc4406
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 1e43c459-8824-40e8-8f05-24b8b0646346
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 1%
+source-wordcount: '150'
+ht-degree: 0%
 
 ---
 
-
-# Ajout d’un tableau au panneau d’équilibre du compte{#adding-table-to-account-balance-panel}
+# Ajout d’un tableau au panneau d’équilibrage de compte{#adding-table-to-account-balance-panel}
 
 Dans cette partie, nous allons ajouter un tableau au panneau Solde du compte.
 
@@ -40,10 +40,8 @@ La possibilité d’afficher des données tabulaires à l’aide de tableaux dan
 
 **Configuration d’un tableau dans le document du canal web - AEM Forms 6.4**
 
->[!VIDEO](https://video.tv.adobe.com/v/22360/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/22360?quality=12&learn=on)
 
 Configuration du tableau dans le document Canal web - AEM formulaire 6.5
 
->[!VIDEO](https://video.tv.adobe.com/v/27847?quality=9&learn=on)
-
-
+>[!VIDEO](https://video.tv.adobe.com/v/27847?quality=12&learn=on)

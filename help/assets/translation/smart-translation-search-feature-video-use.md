@@ -9,7 +9,7 @@ level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 thumbnail: 21297.jpg
 exl-id: 4f35e3f7-ae29-4f93-bba9-48c60b800238
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 La recherche de traduction intelligente permet la recherche et la découverte multilingue automatiquement dans AEM contenu, Ressources et Pages, prenant en charge plus de 50 langues et réduisant le besoin de traduction manuelle du contenu.
 
->[!VIDEO](https://video.tv.adobe.com/v/21297/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/21297?quality=12&learn=on)
 
 AEM Recherche de traduction intelligente permet aux utilisateurs d’effectuer des recherches de contenu dans AEM en utilisant des termes non anglais, afin de faire correspondre les ressources d’comportant des termes anglais équivalents.
 

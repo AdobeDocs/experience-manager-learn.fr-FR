@@ -6,10 +6,10 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ Ce tutoriel vidéo vous guide tout au long de la définition d’un fichier d’
 
 ## Création du fichier de modèle d’InDesign {#constructing-the-indesign-template-file}
 
->[!VIDEO](https://video.tv.adobe.com/v/19293/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19293?quality=12&learn=on)
 
 1. Télécharger et ouvrir le [**Modèle de fichier d’InDesign**](assets/asset-templates-tutorial-video--supporting-files.zip)
 2. **Ouvrez le panneau Balises,** passez en revue la convention d’appellation des balises et notez que les éléments pouvant être créés dans le fichier d’InDesign sont déjà balisés. Pour rappel, seuls les éléments balisés sont modifiables dans AEM.
@@ -51,7 +51,7 @@ Ce tutoriel vidéo vous guide tout au long de la définition d’un fichier d’
 
 ## Création et création d’un modèle de ressource dans AEM Assets {#creating-and-authoring-an-asset-template-in-aem-assets}
 
->[!VIDEO](https://video.tv.adobe.com/v/19294/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/19294?quality=12&learn=on)
 
 1. **InDesign Server** sur le port 8080.
 2. Assurez-vous que la variable **L’instance d’auteur AEM est configurée pour interagir avec votre InDesign Server.**(et vice versa).
@@ -73,4 +73,4 @@ InDesign du fichier de modèle et prise en charge des images
 Télécharger [InDesign du fichier de modèle et prise en charge des images](assets/asset-templates-tutorial-video--supporting-files-1.zip)
 
 * [Téléchargement d’essai InDesign CC](https://creative.adobe.com/products/download/indesign)
-* La version d’évaluation d’InDesign Server peut être téléchargée à partir de [Site de version préliminaire Adobe](https://www.adobeprerelease.com/) ou [Les clients CC Enterprise peuvent contacter leur gestionnaire de compte pour demander une licence d’évaluation par InDesign Server.](https://www.adobe.com/products/indesignserver/faq.html)
+* La version d’évaluation d’InDesign Server peut être téléchargée à partir de [Site de version préliminaire Adobe](https://www.adobeprerelease.com/) ou [Les clients CC Enterprise peuvent contacter leur gestionnaire de compte pour demander une licence d’évaluation par InDesign Server.](https://www.adobe.com/fr/products/indesignserver/faq.html)

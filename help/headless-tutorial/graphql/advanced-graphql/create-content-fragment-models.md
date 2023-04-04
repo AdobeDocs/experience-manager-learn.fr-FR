@@ -7,7 +7,7 @@ topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
-source-git-commit: a500c88091d87e34c12d4092c71241983b166af8
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 1%
@@ -42,7 +42,7 @@ Il s’agit d’un tutoriel avancé. Avant de poursuivre ce chapitre, assurez-vo
 
 La vidéo suivante présente brièvement les modèles de fragment de contenu et leur utilisation dans ce tutoriel.
 
->[!VIDEO](https://video.tv.adobe.com/v/340037/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340037?quality=12&learn=on)
 
 ## Créer des modèles de fragment de contenu {#create-models}
 

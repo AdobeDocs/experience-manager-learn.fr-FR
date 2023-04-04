@@ -9,10 +9,10 @@ level: Experienced
 kt: 8633
 thumbnail: 336962.jpeg
 exl-id: 81397b21-b4f3-4024-a6da-a9b681453eff
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Découvrez AEM Dispatcher pour AEM as a Cloud Service, en vous concentrant sur les modifications notables apportées par Dispatcher pour la version 6, l’outil de conversion de Dispatcher et sur l’utilisation du SDK des outils Dispatcher.
 
->[!VIDEO](https://video.tv.adobe.com/v/336962/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336962?quality=12&learn=on)
 
 ## Convertisseur du Dispatcher
 
@@ -33,7 +33,7 @@ Dans le cadre de la refactorisation de votre base de code, utilisez le [Converti
 
 + Utilisez la variable [Outil convertisseur du Dispatcher Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#aio-aem-migrationdispatcher-converter) pour migrer une configuration Dispatcher existante.
 + Référencez le module de Dispatcher à partir de [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud) en tant que bonne pratique.
-+ [Configuration des outils Dispatcher locaux](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) pour valider le dispatcher, avant de le tester dans un environnement de Cloud Service.
++ [Configuration des outils Dispatcher locaux](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=fr) pour valider le dispatcher, avant de le tester dans un environnement de Cloud Service.
 
 ## Exercice pratique
 
@@ -42,7 +42,7 @@ Appliquez vos connaissances en essayant ce que vous avez appris grâce à cet ex
 Avant d’essayer l’exercice pratique, assurez-vous d’avoir visionné et compris la vidéo ci-dessus, ainsi que les documents suivants :
 
 + [Outils de modernisation d’AEM](./aem-modernization-tools.md)
-+ [Intégration ](./onboarding.md)
++ [Intégration](./onboarding.md)
 + [Cloud Manager](./cloud-manager.md)
 
 Assurez-vous également que vous avez terminé l’exercice pratique précédent :

@@ -9,7 +9,7 @@ role: User
 kt: 256
 thumbnail: 17740.jpg
 exl-id: 78ff62ad-1017-4a02-80e9-81228f9e01eb
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -20,18 +20,18 @@ ht-degree: 0%
 
 Les Principal de projet simplifient considérablement la gestion des utilisateurs et des équipes avec [!DNL AEM Projects].
 
->[!VIDEO](https://video.tv.adobe.com/v/17740/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17740?quality=12&learn=on)
 
-Les administrateurs peuvent désormais créer un **[!DNL Master Project]** et affecter des utilisateurs aux rôles/autorisations dans le cadre d’une équipe de projet. Les projets peuvent être créés à partir d’un projet Principal et héritent automatiquement de l’appartenance à l’équipe. Cela offre plusieurs avantages :
+Les administrateurs peuvent désormais créer un **[!DNL Master Project]** et affecter des utilisateurs à des rôles/autorisations dans le cadre d’une équipe de projet. Les projets peuvent être créés à partir d’un projet Principal et héritent automatiquement de l’appartenance à l’équipe. Cela offre plusieurs avantages :
 
 * Réutilisation d’équipes existantes sur plusieurs projets
 * accélère la création du projet, car les équipes n’ont pas à être recréées à la main ;
-* Gérer l’appartenance à l’équipe depuis un emplacement central et les mises à jour apportées aux équipes sont automatiquement héritées par les projets.
-* évite la création de listes ACL en double, ce qui peut entraîner des problèmes de performances ;
+* Gérer l’appartenance à l’équipe depuis un emplacement central et toutes les mises à jour apportées aux équipes sont automatiquement héritées par les projets.
+* évite la création de listes de contrôle d’accès en double, ce qui peut entraîner des problèmes de performances.
 
-[!DNL Master Projects] peut être créé sous le dossier   Mastersfolder sous  [!UICONTROL AEM Projets]. Une fois qu’un projet Principal est créé, il s’affiche en tant qu’option en même temps que les modèles disponibles dans l’assistant lors de la création de projets.
+[!DNL Master Projects] peut être créé sous le [!UICONTROL Principal] Dossier sous [!UICONTROL Projets AEM]. Une fois qu’un projet Principal est créé, il s’affiche en tant qu’option en même temps que les modèles disponibles dans l’assistant lors de la création de projets.
 
-[!DNL Project Masters] URL (instance d’auteur AEM locale) :  [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
+[!DNL Project Masters] URL (instance d’auteur AEM locale) : [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
 
 ## Supprimer [!DNL Project Masters]
 

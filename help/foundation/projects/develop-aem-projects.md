@@ -11,7 +11,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '4571'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Il s’agit d’un tutoriel de développement qui explique comment développer pour [!DNL AEM Projects].  Dans ce tutoriel, nous allons créer un modèle de projet personnalisé qui pourra être utilisé pour créer des projets dans AEM afin de gérer les processus et les tâches de création de contenu.
 
->[!VIDEO](https://video.tv.adobe.com/v/16904/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/16904?quality=12&learn=on)
 
 *Cette vidéo présente une brève démonstration du processus terminé créé dans le tutoriel ci-dessous.*
 
@@ -351,7 +351,7 @@ Emplacement du modèle de workflow dans la version 6.4+
 
    Commencez par supprimer l’étape de participant qui est créée par défaut. Dans le sidekick du menu Composants, développez la variable **&quot;Projets&quot;** sous-titre et faites glisser et déposez le **&quot;Créer une tâche de projet&quot;** sur le modèle.
 
-   Double-cliquez sur l’étape &quot;Créer une tâche de projet&quot; pour ouvrir la boîte de dialogue du processus. Configurez les propriétés suivantes :
+   Double-cliquez sur l’étape &quot;Créer une tâche de projet&quot; pour ouvrir la boîte de dialogue du processus. Configurez les propriétés suivantes :
 
    Cet onglet est commun à toutes les étapes du processus de workflow et nous définirons le Titre et la Description (ceux-ci ne seront pas visibles par l’utilisateur final). La propriété importante que nous définirons est l’étape du processus sur **&quot;Modifier le contenu&quot;** dans le menu déroulant.
 
@@ -637,7 +637,7 @@ La création d’un assistant personnalisé peut s’avérer très efficace, car
 
 1. Nous ajouterons un champ supplémentaire à l’assistant qui est utilisé pour définir la personne désignée de la première tâche dans le workflow (voir [Création d’un modèle de processus](#create-workflow-model): Étape 5).
 
-   Sous `../content-approval-start/jcr:content/items/column2/items` créer un noeud de type `nt:unstructured` named **&quot;assign&quot;**. Nous utiliserons le composant Sélecteur d’utilisateur de projets (basé sur l’ [Composant de sélecteur d’utilisateur Granite](https://experienceleague.adobe.com/docs/)). Ce champ de formulaire permet de restreindre facilement la sélection de l’utilisateur et du groupe à ceux appartenant au projet en cours.
+   Sous `../content-approval-start/jcr:content/items/column2/items` créer un noeud de type `nt:unstructured` named **&quot;assign&quot;**. Nous utiliserons le composant Sélecteur d’utilisateur de projets (basé sur l’ [Composant de sélecteur d’utilisateur Granite](https://experienceleague.adobe.com/docs/?lang=fr)). Ce champ de formulaire permet de restreindre facilement la sélection de l’utilisateur et du groupe à ceux appartenant au projet en cours.
 
    Vous trouverez ci-dessous la représentation XML de la variable **affecter** node:
 
@@ -693,7 +693,7 @@ La création d’un assistant personnalisé peut s’avérer très efficace, car
    </priority>
    ```
 
-1. Nous autoriserons l’initiateur du workflow à définir la date d’échéance de la tâche initiale. Nous utiliserons la variable [Sélecteur de date de l’IU Granite](https://experienceleague.adobe.com/docs/) champ de formulaire pour capturer cette entrée. Nous ajouterons également un champ masqué avec une [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) pour vous assurer que l’entrée est stockée en tant que propriété de type Date dans le JCR.
+1. Nous autoriserons l’initiateur du workflow à définir la date d’échéance de la tâche initiale. Nous utiliserons la variable [Sélecteur de date de l’IU Granite](https://experienceleague.adobe.com/docs/?lang=fr) champ de formulaire pour capturer cette entrée. Nous ajouterons également un champ masqué avec une [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) pour vous assurer que l’entrée est stockée en tant que propriété de type Date dans le JCR.
 
    Ajouter deux **nt:unstructured** noeuds avec les propriétés suivantes représentées ci-dessous en XML :
 

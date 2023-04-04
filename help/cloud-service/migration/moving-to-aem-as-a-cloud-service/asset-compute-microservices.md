@@ -9,7 +9,7 @@ level: Experienced
 kt: 8635
 thumbnail: 336990.jpeg
 exl-id: 327e8663-086b-4b31-b159-a0cf30480b45
-source-git-commit: 1dcb66bc3535231c89f3e7fc127688fcf96f2b61
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 5%
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 Découvrez comment les microservices d’asset compute d’AEM Assets as a Cloud Service vous permettent de générer automatiquement et efficacement n’importe quel rendu pour vos ressources, en remplaçant ce rôle de workflow d’AEM traditionnel.
 
->[!VIDEO](https://video.tv.adobe.com/v/336990/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336990?quality=12&learn=on)
 
 ## Outil de migration des workflows
 
@@ -42,7 +42,7 @@ Appliquez vos connaissances en essayant ce que vous avez appris grâce à cet ex
 Avant d’essayer l’exercice pratique, assurez-vous d’avoir visionné et compris la vidéo ci-dessus, ainsi que les documents suivants :
 
 + [Penser différemment à AEM as a Cloud Service](./introduction.md)
-+ [Intégration ](./onboarding.md)
++ [Intégration](./onboarding.md)
 
 Assurez-vous également que vous avez terminé l’exercice pratique précédent :
 

@@ -6,7 +6,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: ece0bf0d-c4af-4962-9c00-f2849c2d8f6f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 2%
@@ -89,7 +89,7 @@ Pour ce faire, nous pouvons mettre en correspondance ces exigences avec les comp
 1. Cependant, assurez-vous que la variable **conteneur de mises en page** is **verrouillé** pour empêcher l’ajout d’autres composants ou la suppression de ces trois composants.
 1. Appuyer **[!UICONTROL Informations sur la page] > [!UICONTROL Afficher dans Admin]** pour revenir au [!DNL WKND Mobile] la liste des modèles. Sélectionnez la **[!DNL Events API]** modèle et appuyez sur **[!UICONTROL Activer]** dans la barre d’actions supérieure.
 
->[!VIDEO](https://video.tv.adobe.com/v/28342/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28342?quality=12&learn=on)
 
 >[!NOTE]
 >

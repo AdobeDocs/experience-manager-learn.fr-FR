@@ -1,23 +1,23 @@
 ---
 title: Procédure d’activation de la trace de trace de trace (configuration Unix)
-description: 'Configuration des journaux de suivi pour la résolution des problèmes de PDF Generator '
+description: Configuration des journaux de démarrage pour résoudre les problèmes liés à PDF Generator
 type: Troubleshooting
 role: Admin
 level: Intermediate
 version: 6.5
 feature: PDF Generator
-topic: 'Administration  '
+topic: Administration
 index: y
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: e7a3f63e-549a-493c-a8f1-cb0bca2c07e0
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 7%
+source-wordcount: '39'
+ht-degree: 0%
 
 ---
-
 
 # Procédure d’activation de la trace de trace de trace dans la configuration Unix
 
 *Cette vidéo décrit les étapes à suivre pour activer la trace de trace de trace dans la configuration Unix pour AEM Forms PDFG.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335525?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/335525?quality=12&learn=on)

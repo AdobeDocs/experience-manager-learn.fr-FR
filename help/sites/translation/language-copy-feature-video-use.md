@@ -11,7 +11,7 @@ topic: Localization
 role: User
 level: Beginner
 exl-id: 49613808-6369-4e43-bc26-fd3041265339
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 5%
@@ -22,9 +22,9 @@ ht-degree: 5%
 
 Avec l’amélioration de la traduction du site de l’assistant Créer une copie de langue d’AEM 6.3, les utilisateurs peuvent créer une copie de langue à partir de la langue principale sans avoir à créer une page racine.
 
->[!VIDEO](https://video.tv.adobe.com/v/17116/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/17116?quality=12&learn=on)
 
 ## Ressources supplémentaires {#additional-resources}
 
 * [Documentation de l’Assistant Copie de langue](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-wizard.html)
-* [Bonnes pratiques MSM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)
+* [Bonnes pratiques relatives à MSM](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/msm-best-practices.html)

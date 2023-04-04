@@ -8,7 +8,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 8b05fc02-c0c5-48ad-a53e-d73b805ee91f
-source-git-commit: 30c882da3a89820b5e11bc2902bb92dd0629efe9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 12%
@@ -40,7 +40,7 @@ Si les modèles de fragment de contenu sont **not** activée pour une configurat
 >
 >Lorsque la variable `global` est utilisée, la configuration s’applique à tout le contenu, et `cq:conf` ne doit pas être défini.
 >
->Pour plus d’informations, consultez la documentation relative au [[!UICONTROL Navigateur de configuration].](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)
+>Pour plus d’informations, consultez la documentation relative au [[!UICONTROL Navigateur de configuration].](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=fr)
 
 1. Connectez-vous à l’auteur AEM en tant qu’utilisateur avec les autorisations appropriées pour modifier la configuration appropriée.
    * Pour ce tutoriel, la variable **admin** peut être utilisé.
@@ -70,7 +70,7 @@ Si les modèles de fragment de contenu sont **not** activée pour une configurat
    1. Vérifiez les **[!UICONTROL Configuration du cloud]** est défini sur **/conf/wknd-mobile**
    1. Appuyer **[!UICONTROL Enregistrer et fermer]** dans le coin supérieur droit pour conserver les modifications
 
->[!VIDEO](https://video.tv.adobe.com/v/28336/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28336?quality=12&learn=on)
 
 >[!WARNING]
 >
@@ -93,7 +93,7 @@ Armé du mappage, nous pouvons définir le fragment de contenu utilisé pour col
 1. Appuyer **[!UICONTROL Créer]** pour ouvrir l’assistant de création d’un modèle de fragment de contenu.
 1. Entrée **[!DNL Event]** comme la propriété **[!UICONTROL Titre du modèle]** *(description facultative)* et appuyez sur **[!UICONTROL Créer]** pour enregistrer.
 
->[!VIDEO](https://video.tv.adobe.com/v/28337/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28337?quality=12&learn=on)
 
 ## Définition de la structure du modèle de fragment de contenu
 
@@ -128,7 +128,7 @@ Répétez ces étapes en utilisant les définitions d’entrée définies ci-des
 * [!UICONTROL Nom de la propriété] : `eventDateAndTime`
 * [!UICONTROL Requis] : `Yes`
 
-### Type d&#39;évmt
+### Type d’événement
 
 * [!UICONTROL Type de données] : `Enumeration`
 * [!UICONTROL Libellé du champ] : `Event Type`
@@ -150,7 +150,7 @@ Répétez ces étapes en utilisant les définitions d’entrée définies ci-des
 * [!UICONTROL Afficher comme] : `contentreference`
 * [!UICONTROL Libellé du champ] : `Event Image`
 * [!UICONTROL Nom de la propriété] : `eventImage`
-* [!UICONTROL Chemin racine] : `/content/dam/wknd-mobile/images`
+* [!UICONTROL Chemin d’accès racine] : `/content/dam/wknd-mobile/images`
 * [!UICONTROL Requis] : `Yes`
 
 ### Nom du lieu
@@ -169,7 +169,7 @@ Répétez ces étapes en utilisant les définitions d’entrée définies ci-des
 * [!UICONTROL Nom de la propriété] : `venueCity`
 * [!UICONTROL Options] : `Basel,London,Los Angeles,Paris,New York,Tokyo`
 
->[!VIDEO](https://video.tv.adobe.com/v/28335/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28335?quality=12&learn=on)
 
 >[!NOTE]
 >

@@ -13,7 +13,7 @@ topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 707657ad-221e-4dab-ac2a-46a4fcbc55bc
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 3%
@@ -26,7 +26,7 @@ Ce tutoriel nécessite que les services suivants soient mis en service et access
 
 Tous les services Adobe doivent être accessibles via la même organisation Adobe, à l’aide de votre Adobe ID.
 
-+ [AEM as a Cloud Service](#aem-as-a-cloud-service)
++ [AEM as a Cloud Service](#aem-as-a-cloud-service)
 + [App Builder](#app-builder)
    + La mise en service peut prendre entre 2 et 10 jours
 + Stockage dans le cloud
@@ -39,7 +39,7 @@ Tous les services Adobe doivent être accessibles via la même organisation Adob
 > 
 > Consultez les sections ci-dessous pour savoir comment définir et fournir les services requis.
 
-## AEM as a Cloud Service{#aem-as-a-cloud-service}
+## AEM as a Cloud Service{#aem-as-a-cloud-service}
 
 L’accès à un environnement as a Cloud Service AEM est requis pour configurer les profils de traitement AEM Assets afin d’appeler le programme de travail d’Asset compute personnalisé.
 
@@ -63,13 +63,13 @@ Le stockage dans le cloud est nécessaire pour le développement local de projet
 
 Lorsque les objets Worker Asset compute sont déployés dans Adobe I/O Runtime pour une utilisation directe par AEM as a Cloud Service, cet espace de stockage dans le cloud n’est pas strictement requis, car AEM fournit l’espace de stockage dans le cloud à partir duquel la ressource est lue et le rendu écrit.
 
-### Stockage Microsoft Azure Blob{#azure-blob-storage}
+### Microsoft Azure Blob Storage{#azure-blob-storage}
 
 Si vous n’avez pas déjà accès au stockage Blob de Microsoft Azure, inscrivez-vous à un [compte gratuit de 12 mois](https://azure.microsoft.com/en-us/free/).
 
 Ce tutoriel utilisera Azure Blob Storage, cependant. [Amazon S3](#amazon-s3) peut être utilisé, ainsi que des variations mineures du tutoriel.
 
->[!VIDEO](https://video.tv.adobe.com/v/40377/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40377?quality=12&learn=on)
 
 _Clic publicitaire de la configuration du stockage Azure Blob (sans audio)_
 
@@ -84,7 +84,7 @@ _Clic publicitaire de la configuration du stockage Azure Blob (sans audio)_
    + Si vous le souhaitez, sélectionnez la variable __location__ proche de toi.
 1. Vérifiez la demande d’approvisionnement pour vous assurer qu’elle est correcte, puis appuyez sur __Créer__ si satifié
 
-### Amazon S3{#amazon-s3}
+### Amazon S3{#amazon-s3}
 
 Utilisation [Stockage Azure Blob de Microsoft](#azure-blob-storage) est recommandé pour suivre ce tutoriel, mais [Amazon S3](https://aws.amazon.com/s3/?did=ft_card&amp;trk=ft_card) peut également être utilisé.
 

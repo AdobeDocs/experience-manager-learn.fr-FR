@@ -7,7 +7,7 @@ level: Intermediate
 thumbnail: 343623.jpeg
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 Étape souvent négligée dans le développement de logiciels, les tests unitaires sont une activité extrêmement importante que tout développeur devrait réaliser. AEM fournit de nombreux contrôles de qualité par défaut en mode natif, mais ils ne peuvent pas tester tout ce que vous avez personnalisé ou modifié.
 
->[!VIDEO](https://video.tv.adobe.com/v/343623)
+>[!VIDEO](https://video.tv.adobe.com/v/343623?quality=12&learn=on)
 
 ## Contenu couvert par cette vidéo
 

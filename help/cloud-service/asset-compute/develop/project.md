@@ -8,10 +8,10 @@ feature: Asset Compute Microservices
 role: Developer
 level: Intermediate, Experienced
 exl-id: ebb11eab-1412-4af5-bc09-e965b9116ac9
-source-git-commit: 839152aa67ba7ab2929f2c8093bfdc873761a645
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ Les projets Asset compute sont des projets Node.js, générés à l’aide de l�
 
 ## Génération d’un projet
 
->[!VIDEO](https://video.tv.adobe.com/v/40197/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40197?quality=12&learn=on)
 
 _Clic publicitaire pour la génération d’un projet d’Asset compute (sans audio)_
 
@@ -54,12 +54,12 @@ L’outil de développement nécessite un fichier nommé `console.json` qui cont
 1. Sélectionnez l’espace de travail du projet à télécharger. `console.json` informations d’identification pour, dans ce cas, sélectionnez `Development`
 1. Accédez à la racine du projet Adobe I/O et appuyez sur __Tout télécharger__ dans le coin supérieur droit.
 1. Un fichier est téléchargé sous la forme d’un `.json` avec le préfixe du projet et de l’espace de travail, par exemple : `wkndAemAssetCompute-81368-Development.json`
-1. Vous pouvez effectuer l&#39;une des opérations suivantes :
+1. Vous pouvez effectuer l’une des opérations suivantes :
    + Renommez le fichier en `console.json` et déplacez-le à la racine de votre projet Asset compute Worker. Il s’agit de l’approche préconisée dans ce tutoriel.
    + Déplacez-le dans un dossier arbitraire ET référencez-le à partir de votre `.env` fichier avec une entrée de configuration `ASSET_COMPUTE_INTEGRATION_FILE_PATH`. Le chemin d’accès au fichier peut être absolu ou relatif à la racine de votre projet. Par exemple :
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=/Users/example-user/secrets/wkndAemAssetCompute-81368-Development.json`
 
-      Ou
+      OU
       + `ASSET_COMPUTE_INTEGRATION_FILE_PATH=../../secrets/wkndAemAssetCompute-81368-Development.json.json`
 
 

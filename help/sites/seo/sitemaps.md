@@ -10,7 +10,7 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-10-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 6%
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 Découvrez comment optimiser votre optimisation du référencement en créant des plans de site pour AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/337960/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
 ## Ressources
 
@@ -53,7 +53,7 @@ AEM sitemap prend en charge les URL absolues en utilisant [Mappage Sling](https:
 
 Exemple de définition de noeud de mappage Sling pour `https://wknd.com` peut être défini sous `/etc/map/https` comme suit :
 
-| Chemin | Nom de la propriété | Type de propriété | Valeur de la propriété |
+| Chemin d’accès | Nom de la propriété | Type de propriété | Valeur de propriété |
 |------|----------|---------------|-------|
 | `/etc/map/https/wknd-site` | `jcr:primaryType` | Chaîne | `nt:unstructured` |
 | `/etc/map/https/wknd-site` | `sling:internalRedirect` | Chaîne | `/content/wknd/(.*)` |

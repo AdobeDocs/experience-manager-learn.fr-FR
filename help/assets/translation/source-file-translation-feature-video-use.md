@@ -8,7 +8,7 @@ level: Intermediate
 last-substantial-update: 2022-09-02T00:00:00Z
 thumbnail: 18331.jpg
 exl-id: 19155d51-18a7-42ca-9a73-1b5fa1355d58
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Adobe Experience Manager (AEM) Assets vous permet d’identifier les ressources 
 
 ## Gestion de fichiers source de ressources multisite {#multisite-asset-source-file-management}
 
->[!VIDEO](https://video.tv.adobe.com/v/18331/?quality=9&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/18331?quality=12&learn=on)
 
 Les ressources connexes aident les utilisateurs à mieux gérer les ressources interconnectées avec des caractéristiques partagées, des propriétés et à rationaliser les workflows :
 

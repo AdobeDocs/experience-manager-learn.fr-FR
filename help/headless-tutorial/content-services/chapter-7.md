@@ -6,7 +6,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d6b6d425-842a-43a9-9041-edf78e51d962
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 1%
@@ -37,13 +37,13 @@ Android est utilisé pour les tutoriels en raison de la possibilité d’exécut
 
 ## Démonstration de l’application mobile
 
->[!VIDEO](https://video.tv.adobe.com/v/28345/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28345?quality=12&learn=on)
 
 ### Configuration de l’application mobile pour une utilisation autre que localhost
 
 Si AEM Publish n’est pas exécuté sur **http://localhost:4503** l’hôte et le port peuvent être mis à jour dans le rapport [!DNL Settings] pour pointer vers la propriété hôte/port de publication AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/28344/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28344?quality=12&learn=on)
 
 ## Exécution locale de l’application mobile
 
@@ -75,7 +75,7 @@ Si AEM Publish n’est pas exécuté sur **http://localhost:4503** l’hôte et 
    * Pour faire défiler l’appareil virtuel, maintenez la touche enfoncée et faites glisser.
    * Pour actualiser le contenu à partir d’AEM, effectuez une descente depuis le haut jusqu’à ce que l’icône Actualiser s’affiche, puis lancez .
 
->[!VIDEO](https://video.tv.adobe.com/v/28341/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28341?quality=12&learn=on)
 
 ## Code de l’application mobile
 
