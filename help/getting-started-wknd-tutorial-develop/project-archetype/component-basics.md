@@ -12,10 +12,10 @@ kt: 4081
 thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 3%
+source-wordcount: '1226'
+ht-degree: 2%
 
 ---
 
@@ -255,11 +255,17 @@ Ensuite, mettons à jour les `HelloWorldModel` Modèle Sling afin d’appliquer 
    >
    > Pour AEM 6.4/6.5, utilisez `mvn clean install -PautoInstallBundle -Pclassic`
 
-1. Mettre à jour le fichier `helloworld.html` at `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` pour utiliser les méthodes nouvellement créées de la variable `HelloWorld` model :
+1. Mettre à jour le fichier `helloworld.html` at `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` pour utiliser les méthodes nouvellement créées de la variable `HelloWorld` modèle.
+
+   Le `HelloWorld` Le modèle est appelé pour cette instance de composant via la directive HTL : `data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel"`, enregistrement de l’instance dans la variable `model`.
+
+   Le `HelloWorld` L’instance de modèle est désormais disponible dans le fichier HTL via le `model` à l’aide de la variable `HelloWord`. Ces appels de méthodes peuvent utiliser une syntaxe de méthode abrégée, par exemple : `${model.getTitle()}` peut être raccourci vers `${model.title}`.
+
+   De même, tous les scripts HTL sont injectés avec [objet global](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html) accessibles en utilisant la même syntaxe que les objets de modèle Sling.
 
    ```html
-   <div class="cmp-helloworld" data-cmp-is="helloworld"
-   data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel">
+   <div class="cmp-helloworld" data-cmp-is="helloworld" 
+       data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel">
        <h1 class="cmp-helloworld__title">${model.title}</h1>
        <div class="cmp-helloworld__item" data-sly-test="${properties.text}">
            <p class="cmp-helloworld__item-label">Text property:</p>
@@ -268,10 +274,6 @@ Ensuite, mettons à jour les `HelloWorldModel` Modèle Sling afin d’appliquer 
        <div class="cmp-helloworld__item" data-sly-test="${model.text}">
            <p class="cmp-helloworld__item-label">Sling Model getText() property:</p>
            <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld="property">${model.text}</pre>
-       </div>
-       <div class="cmp-helloworld__item"  data-sly-test="${model.message}">
-           <p class="cmp-helloworld__item-label">Model message:</p>
-           <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld="model">${model.message}</pre>
        </div>
    </div>
    ```

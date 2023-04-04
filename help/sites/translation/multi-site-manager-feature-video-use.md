@@ -15,16 +15,16 @@ topic: Localization
 role: User
 level: Beginner
 exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 14%
+source-wordcount: '148'
+ht-degree: 17%
 
 ---
 
 # Utilisation de Multi Site Manager {#using-multi-site-manager-with-aem-sites}
 
-[!UICONTROL Présentation de la Live Copy] et [!UICONTROL Gestionnaire de configuration du plan directeur] sont des interfaces d’auteur AEM pour l’utilisation de la fonctionnalité Multi Site Manager d’Adobe Experience Manager Sites.
+Aperçu de la Live Copy et Gestionnaire de configuration du plan directeur sont des interfaces d’auteur AEM pour travailler avec [Multi Site Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=fr) dans Adobe Experience Manager Sites.
 
 ## Aperçu de la live copy {#live-copy-overview}
 

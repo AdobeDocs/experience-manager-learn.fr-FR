@@ -10,10 +10,10 @@ kt: 5882
 thumbnail: KT-5882.jpg
 last-substantial-update: 2022-10-06T00:00:00Z
 exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
-source-git-commit: d0b13fd37f1ed42042431246f755a913b56625ec
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 8%
+source-wordcount: '626'
+ht-degree: 7%
 
 ---
 
@@ -33,6 +33,11 @@ Découvrez comment les utilisateurs, groupes et profils de produits Adobe IMS so
 ## Utilisateurs Adobe IMS
 
 Les utilisateurs nécessitant l’accès au service AEM Author sont gérés en tant que [Utilisateurs Adobe IMS](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html) in [Admin Console de l’Adobe](https://adminconsole.adobe.com). Découvrez ce que sont les utilisateurs Adobe IMS et comment ils sont accessibles et gérés en Admin Console.
+
+>[!NOTE]
+>
+>Lorsqu’un utilisateur IMS est supprimé d’Admin Console, il n’est pas automatiquement supprimé de l’AEM, mais une fois AEM session (jeton) expirée, il ne peut PAS se connecter à l’.
+
 
 [En savoir plus sur les utilisateurs Adobe IMS](./adobe-ims-users.md)
 
@@ -67,6 +72,6 @@ Présentation rapide de la configuration des utilisateurs, groupes d’utilisate
 
 La documentation suivante couvre [Adobe Admin Console](https://adminconsole.adobe.com)- des détails et des préoccupations spécifiques qui peuvent aider à une meilleure compréhension de Adobe Admin Console et à l’utiliser pour gérer les utilisateurs et accéder à l’ensemble des produits Experience Cloud.
 
-+ [Présentation de Adobe Admin Console Identity](https://helpx.adobe.com/enterprise/using/identity.html)
++ [Présentation de Adobe Admin Console Identity](https://helpx.adobe.com/fr/enterprise/using/identity.html)
 + [Rôles d’administrateur Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-roles.html)
 + [Rôles de développement Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/manage-developers.html)

@@ -10,10 +10,10 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-10-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 6%
+source-wordcount: '263'
+ht-degree: 5%
 
 ---
 
@@ -21,33 +21,15 @@ ht-degree: 6%
 
 Découvrez comment optimiser votre optimisation du référencement en créant des plans de site pour AEM Sites.
 
+>[!WARNING]
+>
+>Cette vidéo présente l’utilisation des URL relatives dans le plan du site. Plans de site [doit utiliser des URL absolues](https://sitemaps.org/protocol.html). Voir [Configurations](#absolute-sitemap-urls) pour savoir comment activer les URL absolues, car cela n’est pas décrit dans la vidéo ci-dessous.
+
 >[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
-
-## Ressources
-
-+ [Documentation AEM plan de site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
-+ [Documentation du plan de site Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
-+ [Documentation du plan du site Sitemap.org](https://www.sitemaps.org/protocol.html)
-+ [Documentation du fichier d’index Sitemap.org](https://www.sitemaps.org/protocol.html#index)
-+ [Cronmaker](http://www.cronmaker.com/)
 
 ## Configurations
 
-### Configuration OSGi du planificateur de plan de site
-
-Définit la variable [Configuration d’usine OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) pour la fréquence (en utilisant [expressions cron](http://www.cronmaker.com)) les plans de site sont regénérés/générés et mis en cache dans AEM.
-
-`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
-
-```json
-{
-  "scheduler.name": "WKND Sitemaps",
-  "scheduler.expression": "0 0 2 1/1 * ? *",
-  "searchPath": "/content/wknd"
-}
-```
-
-### URL absolue du plan de site
+### URL absolue du plan de site{#absolute-sitemap-urls}
 
 AEM sitemap prend en charge les URL absolues en utilisant [Mappage Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Pour ce faire, créez des noeuds de mappage sur les services AEM générant des plans de site (généralement le service AEM Publish).
 
@@ -63,6 +45,20 @@ La capture d’écran ci-dessous illustre une configuration similaire, mais pour
 
 ![Configuration des URL absolues du plan de site](../assets/sitemaps/sitemaps-absolute-urls.jpg)
 
+
+### Configuration OSGi du planificateur de plan de site
+
+Définit la variable [Configuration d’usine OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) pour la fréquence (en utilisant [expressions cron](http://www.cronmaker.com)) les plans de site sont regénérés/générés et mis en cache dans AEM.
+
+`ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
+
+```json
+{
+  "scheduler.name": "WKND Sitemaps",
+  "scheduler.expression": "0 0 2 1/1 * ? *",
+  "searchPath": "/content/wknd"
+}
+```
 
 ### Règle de filtre d’autorisation de Dispatcher
 
@@ -88,3 +84,11 @@ Assurez-vous que `.xml` les requêtes HTTP sitemap sont acheminées vers la page
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.xml)$
 RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 ```
+
+## Ressources
+
++ [Documentation AEM plan de site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
++ [Documentation du plan de site Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
++ [Documentation du plan du site Sitemap.org](https://www.sitemaps.org/protocol.html)
++ [Documentation du fichier d’index Sitemap.org](https://www.sitemaps.org/protocol.html#index)
++ [Cronmaker](http://www.cronmaker.com/)

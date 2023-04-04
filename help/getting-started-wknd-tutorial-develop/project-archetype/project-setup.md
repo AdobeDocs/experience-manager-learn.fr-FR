@@ -12,9 +12,9 @@ kt: 3418
 thumbnail: 30152.jpg
 exl-id: bb0cae58-79bd-427f-9116-d46afabdca59
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1839'
 ht-degree: 6%
 
 ---
@@ -87,6 +87,8 @@ La série d’étapes suivante s’effectuera à l’aide d’un terminal de lig
    >[!NOTE]
    >
    > Pour cibler AEM version 6.5.14+, remplacez `aemVersion="cloud"` avec `aemVersion="6.5.14"`.
+   >
+   > En outre, utilisez toujours la dernière `archetypeVersion` en faisant référence à la variable [AEM Archétype de projet > Utilisation](https://github.com/adobe/aem-project-archetype#usage)
 
    Liste complète des propriétés disponibles pour la configuration d’un projet [peut être consulté ici](https://github.com/adobe/aem-project-archetype#available-properties).
 

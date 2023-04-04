@@ -4,9 +4,9 @@ description: Regardez nos vidéos et tutoriels pour obtenir de l’aide sur Adob
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: af0fe7fb-873b-4d2d-a5a3-59a5a3da9b96
-source-git-commit: d712fb988dc554b4f95ab2298ffc0f54df48f6f3
+source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '215'
 ht-degree: 1%
 
 ---
@@ -25,9 +25,6 @@ Adobe Experience Manager fournit un ensemble commun de fonctionnalités disponib
 
 * **[Présentation de Cloud Manager pour AEM (vidéo)](./cloud-manager/understand-cloud-manager-for-aem.md)**\
    *Cloud Manager pour AEM permet une gestion, une inspection et un libre-service aisés des environnements AEM.*
-
-* **[Configuration de clés publiques et privées à utiliser avec Adobe I/O (tutoriel)](./authentication/set-up-public-private-keys-for-use-with-aem-and-adobe-io.md)**\
-   *Découvrez comment les clés et les keystores sont générés à l’aide de [!DNL openssl] qui fonctionnent avec AEM et Adobe I/O.*
 
 * **[Utilisation du pipeline CI/CD de Cloud Manager (vidéo)](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)**\
    *Découvrez comment utiliser le pipeline CI/CD de Cloud Manager pour garantir des déploiements sûrs et cohérents.*
