@@ -8,9 +8,9 @@ role: Developer
 level: Beginner, Intermediate
 thumbnail: 34338.jpeg
 exl-id: beac60c6-11ae-4d0c-a055-cd3d05aeb126
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 45e7c58efd1d89537752fe7f890c0e80f7be7d67
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,13 @@ Le démarrage rapide local du SDK AEM permet le débogage Java à distance à pa
 Pour connecter un débogueur distant à AEM, le démarrage rapide local du SDK AEM doit être démarré avec des paramètres spécifiques (`-agentlib:...`) permettant à l’IDE de s’y connecter.
 
 ```
-$ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar aem-author-p4502.jar   
+$ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar aem-author-p4502.jar   
 ```
 
++ Le SDK AEM ne prend en charge que Java 11
 + `address` indique que l’AEM du port est activé pour les connexions de débogage à distance et peut être remplacé par n’importe quel port disponible sur l’ordinateur de développement local.
 + Le dernier paramètre (par ex. `aem-author-p4502.jar`) est le fichier Jar de démarrage rapide du SDK AEM. Il peut s’agir du service AEM Author (`aem-author-p4502.jar`) ou le service AEM Publish (`aem-publish-p4503.jar`).
+
 
 ## Instructions de configuration IDE
 
