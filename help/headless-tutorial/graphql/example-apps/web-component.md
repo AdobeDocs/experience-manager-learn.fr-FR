@@ -8,17 +8,17 @@ role: Developer
 level: Beginner
 kt: 10797
 thumbnail: kt-10797.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '566'
+ht-degree: 7%
 
 ---
 
 
 # Composant Web
 
-Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application de composant web explique comment interroger le contenu à l’aide des API GraphQL AEM à l’aide de requêtes persistantes et effectuer le rendu d’une partie de l’interface utilisateur, à l’aide du code JavaScript pur.
+Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application de composant Web explique comment interroger le contenu à l’aide des API GraphQL d’AEM à l’aide de requêtes persistantes et effectuer le rendu d’une partie de l’interface utilisateur, à l’aide du code JavaScript pur.
 
 ![Composant web avec AEM sans affichage](./assets/web-component/web-component.png)
 
@@ -29,8 +29,7 @@ Afficher la variable [code source sur GitHub](https://github.com/adobe/aem-guide
 Les outils suivants doivent être installés localement :
 
 + [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.properties.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) (si vous vous connectez au SDK local AEM 6.5 ou AEM)
-+ [Node.js v10+](https://nodejs.org/en/)
-+ [npm 6+](https://www.npmjs.com/)
++ [Node.js v18](https://nodejs.org/en/)
 + [Git](https://git-scm.com/)
 
 ## Configuration requise AEM
@@ -97,7 +96,7 @@ Tous les déploiements nécessitent le `tutorial-solution-content.zip` de la [Fi
 
 ## Le code
 
-Vous trouverez ci-dessous un résumé de la création du composant Web, de sa connexion à AEM sans affichage pour récupérer du contenu à l’aide de requêtes persistantes GraphQL et de la manière dont ces données sont présentées. Le code complet se trouve sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component).
+Vous trouverez ci-dessous un résumé de la création du composant Web, de la manière dont il se connecte à AEM sans affichage pour récupérer du contenu à l’aide des requêtes persistantes de GraphQL et de la manière dont ces données sont présentées. Le code complet se trouve sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/web-component).
 
 ### Balise de HTML de composant web
 
@@ -116,7 +115,7 @@ Le `person.js` définit la fonctionnalité des composants web. Vous trouverez ci
 
 #### Implémentation de l’élément PersonInfo
 
-Le `<person-info>` l’objet de classe d’élément personnalisé définit la fonctionnalité à l’aide de la fonction `connectedCallback()` méthodes de cycle de vie, association d’une racine fantôme, récupération de la requête persistante GraphQL et manipulation DOM pour créer la structure DOM interne de l’élément fantôme personnalisé.
+Le `<person-info>` l’objet de classe d’élément personnalisé définit la fonctionnalité à l’aide de la fonction `connectedCallback()` méthodes de cycle de vie, association d’une racine fantôme, récupération de la requête persistante GraphQL et manipulation DOM pour créer la structure DOM fantôme interne de l’élément personnalisé.
 
 ```javascript
 // Create a Class for our Custom Element (person-info)

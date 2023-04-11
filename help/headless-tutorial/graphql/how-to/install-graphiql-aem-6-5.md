@@ -1,6 +1,6 @@
 ---
-title: Installation de l’IDE GraphiQL sur AEM 6.5.X
-description: Découvrez comment installer et configurer l’IDE GraphiQL sur AEM version 6.5.X
+title: Installation de l’IDE GraphiQL sur AEM 6.5
+description: Découvrez comment installer et configurer l’IDE GraphiQL sur AEM 6.5
 version: 6.5
 topic: Headless
 feature: GraphQL API
@@ -8,21 +8,21 @@ role: Developer
 level: Intermediate
 kt: 11614
 thumbnail: KT-10253.jpeg
-source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 24%
+source-wordcount: '210'
+ht-degree: 25%
 
 ---
 
 
-# Installation de l’IDE GraphiQL sur AEM 6.5.X
+# Installation de l’IDE GraphiQL sur AEM 6.5
 
-Dans AEM 6.5, l’outil IDE GraphiQL doit être installé manuellement, suivez les étapes ci-dessous pour l’installation et la configuration.
+Dans AEM 6.5, l’outil IDE GraphiQL doit être installé manuellement.
 
 1. Accédez au **[Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)** > **AEM as a Cloud Service**.
-1. Recherchez « GraphiQL » (veillez à inclure le **i** dans **GraphiQL**.
-1. Télécharger la dernière version du **Package de contenu GraphiQL v.x.x.x**
+1. Recherchez « GraphiQL » (veillez à inclure le **i** dans **GraphiQL**).
+1. Télécharger la dernière version du **Package de contenu GraphiQL v.x.x.x**.
 
    ![Téléchargement du package GraphiQL](assets/graphiql/software-distribution.png)
 
@@ -39,7 +39,8 @@ Dans AEM 6.5, l’outil IDE GraphiQL doit être installé manuellement, suivez l
 
 1. Accédez au **Configuration de la console web** Interface utilisateur > Rechercher **Filtre CSRF** configuration (par exemple,<http://localhost:4502/system/console/configMgr/com.adobe.granite.csrf.impl.CSRFFilter)>
 1. Dans le `Excluded Paths` mise à jour du champ de nom de propriété, chemin d’accès du point de terminaison WKND GraphQL vers `/content/cq:graphql/wknd-shared/endpoint`.
-   ![Modification de la valeur de la propriété Exclure les chemins](assets/graphiql/exclude-paths-value-change.png)
+
+![Modification de la valeur de la propriété Exclure les chemins](assets/graphiql/exclude-paths-value-change.png)
 
 1. Accédez à l’éditeur GraphiQL à l’aide de `//HOST:PORT/content/graphiql.html`et vérifiez que vous pouvez créer une requête ou exécuter une requête existante. (par exemple, <http://localhost:4502/content/graphiql.html>)
 
@@ -47,4 +48,4 @@ Dans AEM 6.5, l’outil IDE GraphiQL doit être installé manuellement, suivez l
 
 >[!TIP]
 >
->Pour prendre en charge l’exécution de requêtes et de schémas GraphQL spécifiques à votre projet, vous devez apporter les modifications correspondantes au `endpoint` et `Excluded Paths` dans les étapes ci-dessus.
+>Pour prendre en charge l’exécution des requêtes et du schéma GraphQL spécifiques à votre projet, vous devez apporter les modifications correspondantes au `endpoint` et `Excluded Paths` dans les étapes ci-dessus.

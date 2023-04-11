@@ -8,10 +8,10 @@ role: Developer
 level: Beginner
 kt: 10798
 thumbnail: KT-10798.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '472'
+ht-degree: 6%
 
 ---
 
@@ -27,8 +27,7 @@ Afficher la variable [code source sur GitHub](https://github.com/adobe/aem-guide
 
 Les outils suivants doivent être installés localement :
 
-+ [Node.js v10+](https://nodejs.org/en/)
-+ [npm 6+](https://www.npmjs.com/)
++ [Node.js v18](https://nodejs.org/en/)
 + [Git](https://git-scm.com/)
 
 ## Configuration requise AEM
@@ -77,7 +76,7 @@ Cette application Node.js peut se connecter à AEM Author ou AEM Publish en fonc
 
 ## Le code
 
-Vous trouverez ci-dessous un résumé de la création de l’application Node.js serveur à serveur, de la manière dont elle se connecte à AEM sans affichage pour récupérer du contenu à l’aide de requêtes persistantes GraphQL et de la manière dont ces données sont présentées. Le code complet se trouve sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app).
+Vous trouverez ci-dessous un résumé de la création de l’application Node.js serveur à serveur, de la manière dont elle se connecte à AEM sans affichage pour récupérer du contenu à l’aide des requêtes persistantes de GraphQL et de la manière dont ces données sont présentées. Le code complet se trouve sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app).
 
 Le cas d’utilisation courant pour les AEM sans affichage serveur consiste à synchroniser les données de fragments de contenu d’AEM dans d’autres systèmes. Toutefois, cette application est intentionnellement simple et imprime les résultats JSON de la requête persistante.
 
@@ -145,7 +144,7 @@ async function run() {
 
 AEM requêtes persistantes sont exécutées sur une GET HTTP et, par conséquent, la variable [AEM client sans affichage pour Node.js](https://github.com/adobe/aem-headless-client-nodejs) est utilisé pour [exécuter les requêtes GraphQL persistantes ;](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) par rapport à AEM et récupère le contenu de l’aventure.
 
-La requête conservée est appelée en appelant `aemHeadlessClient.runPersistedQuery(...)`, et transmission du nom de requête GraphQL persistant. Une fois que GraphQL renvoie les données, transmettez-les à la méthode simplifiée `doSomethingWithDataFromAEM(..)` , qui imprime les résultats, mais envoie généralement les données à un autre système, ou génère une sortie basée sur les données récupérées.
+La requête conservée est appelée en appelant `aemHeadlessClient.runPersistedQuery(...)`et transmission du nom de la requête GraphQL persistante. Une fois que GraphQL renvoie les données, transmettez-les à la méthode simplifiée `doSomethingWithDataFromAEM(..)` , qui imprime les résultats, mais envoie généralement les données à un autre système, ou génère une sortie basée sur les données récupérées.
 
 ```js
 // index.js

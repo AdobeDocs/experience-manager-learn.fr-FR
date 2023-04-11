@@ -1,5 +1,5 @@
 ---
-title: AEM Configuration rapide sans affichage à l’aide du SDK local
+title: Configuration rapide AEM sans affichage à l’aide du SDK AEM local
 description: Prise en main d’Adobe Experience Manager (AEM) et de GraphQL. Installez le SDK AEM, ajoutez un exemple de contenu et déployez une application qui consomme du contenu d’AEM à l’aide de ses API GraphQL. Découvrez comment AEM alimente les expériences omnicanal.
 version: Cloud Service
 mini-toc-levels: 1
@@ -10,14 +10,14 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
-source-git-commit: f63ed212a5a8a6689b25bd0bc9438c605a129729
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '1256'
+source-wordcount: '1257'
 ht-degree: 2%
 
 ---
 
-# AEM Configuration rapide sans affichage à l’aide du SDK local {#setup}
+# Configuration rapide AEM sans affichage à l’aide du SDK AEM local {#setup}
 
 La configuration rapide AEM sans affichage vous permet d’utiliser AEM sans affichage à l’aide du contenu de l’exemple de projet de site WKND, ainsi qu’un exemple d’application React (a SPA) qui consomme le contenu via les API GraphQL sans affichage . Ce guide utilise la méthode [AEM SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
 
@@ -26,7 +26,7 @@ La configuration rapide AEM sans affichage vous permet d’utiliser AEM sans aff
 Les outils suivants doivent être installés localement :
 
 * [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.properties.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-* [Node.js v14.x](https://nodejs.org/en/)
+* [Node.js v18](https://nodejs.org/en/)
 * [Git](https://git-scm.com/)
 
 ## 1. Installation du SDK AEM {#aem-sdk}

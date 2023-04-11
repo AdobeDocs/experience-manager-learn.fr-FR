@@ -1,6 +1,6 @@
 ---
-title: Prise en main d’AEM tutoriel main sans tête - GraphQL
-description: Tutoriel complet illustrant comment créer et exposer du contenu à l’aide des API GraphQL AEM.
+title: Tutoriel sur la prise en main d’AEM sans tête - GraphQL
+description: Tutoriel complet illustrant comment créer et exposer du contenu à l’aide AEM API GraphQL.
 doc-type: tutorial
 mini-toc-levels: 1
 kt: 6678
@@ -11,18 +11,18 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 8%
+source-wordcount: '287'
+ht-degree: 7%
 
 ---
 
 # Prise en main d’AEM Headless - GraphQL 
 
-Tutoriel complet illustrant comment créer et exposer du contenu à l’aide des API GraphQL AEM et utilisé par une application externe, dans un scénario CMS sans interface.
+Tutoriel complet illustrant comment créer et exposer du contenu à l’aide AEM API GraphQL et utilisé par une application externe, dans un scénario CMS sans interface.
 
-Ce tutoriel explique comment AEM API GraphQL et les fonctionnalités sans tête peuvent être utilisées pour alimenter les expériences affichées dans une application externe.
+Ce tutoriel explique comment AEM API GraphQL et les fonctionnalités headless peuvent être utilisées pour alimenter les expériences affichées dans une application externe.
 
 Ce tutoriel couvre les rubriques suivantes :
 
@@ -33,15 +33,13 @@ Ce tutoriel couvre les rubriques suivantes :
 * Pour stocker ou conserver les requêtes GraphQL à AEM
 * Utilisation de requêtes GraphQL persistantes à partir d’un exemple d’application React
 
-
 ## Prérequis {#prerequisites}
 
 Pour suivre ce tutoriel, vous devez suivre les étapes suivantes :
 
 * Compétences de base en HTML et JavaScript
 * Les outils suivants doivent être installés localement :
-   * [Node.js v14+](https://nodejs.org/en/)
-   * [npm 6+](https://www.npmjs.com/)
+   * [Node.js v18](https://nodejs.org/)
    * [Git](https://git-scm.com/)
    * Un IDE (par exemple, [Microsoft® Visual Studio Code](https://code.visualstudio.com/))
 
@@ -57,4 +55,4 @@ Commencez le tutoriel par [Définition de modèles de fragment de contenu](conte
 
 Le code source et les packages de contenu sont disponibles sur la page [AEM Guides - Projet GitHub WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql).
 
-Si vous rencontrez un problème avec le tutoriel ou le code, veuillez laisser une [Problème GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+Si vous rencontrez un problème avec le tutoriel ou le code, laissez une [Problème GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).

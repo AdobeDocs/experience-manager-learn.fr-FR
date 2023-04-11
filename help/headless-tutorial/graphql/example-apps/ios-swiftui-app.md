@@ -1,6 +1,6 @@
 ---
 title: Application iOS - AEM exemple sans affichage
-description: Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application iOS explique comment interroger du contenu à l’aide des API GraphQL AEM à l’aide de requêtes persistantes.
+description: Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application iOS explique comment interroger du contenu à l’aide des API GraphQL d’AEM à l’aide de requêtes persistantes.
 version: Cloud Service
 mini-toc-levels: 2
 kt: 10587
@@ -10,7 +10,7 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 5%
@@ -19,7 +19,7 @@ ht-degree: 5%
 
 # application iOS
 
-Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application iOS explique comment interroger du contenu à l’aide des API GraphQL AEM à l’aide de requêtes persistantes.
+Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application iOS explique comment interroger du contenu à l’aide des API GraphQL d’AEM à l’aide de requêtes persistantes.
 
 ![Application iOS SwiftUI avec AEM sans affichage](./assets/ios-swiftui-app/ios-app.png)
 
@@ -29,7 +29,7 @@ Afficher la variable [code source sur GitHub](https://github.com/adobe/aem-guide
 
 Les outils suivants doivent être installés localement :
 
-+ [Xcode 9.3+](https://developer.apple.com/xcode/) (nécessite macOS)
++ [Xcode](https://developer.apple.com/xcode/) (nécessite macOS)
 + [Git](https://git-scm.com/)
 
 ## Configuration requise AEM
@@ -74,7 +74,7 @@ L’application iOS est conçue pour se connecter à une __Publication AEM__ , m
 
    __Authentification des jetons__
 
-   Le `AEM_TOKEN` est un [jeton d’accès](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html) qui s’authentifie auprès d’un utilisateur AEM ayant accès au contenu GraphQL WKND.
+   Le `AEM_TOKEN` est un [jeton d’accès](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html) qui s’authentifie auprès d’un utilisateur AEM ayant accès au contenu WKND GraphQL.
 
    ```plain
    AEM_AUTH_TYPE = token
@@ -183,7 +183,7 @@ AEM requêtes persistantes sont exécutées sur des GET HTTP. Par conséquent, l
 1. Le fonds public appelle un fonds privé. `makeRequest(..)` qui appelle une demande de GET HTTP asynchrone à AEM sans affichage et renvoie les données JSON.
 1. Chaque fonction publique décode ensuite les données JSON et effectue toutes les vérifications ou transformations requises, avant de renvoyer les données Adventure à la vue.
 
-   + AEM les données JSON GraphQL sont décodées à l’aide des structs/classes définis dans `AEM/Models.swift`, qui correspondait aux objets JSON renvoyait mon AEM sans affichage.
+   + AEM données JSON GraphQL sont décodées à l’aide des structs/classes définis dans `AEM/Models.swift`, qui correspondait aux objets JSON renvoyait mon AEM sans affichage.
 
 ```swift
     /// # getAdventures(..)
@@ -324,5 +324,5 @@ Une approche similaire peut être utilisée avec SwiftUI-native [AsyncImage](htt
 
 ## Ressources supplémentaires
 
-+ [Prise en main d’AEM sans affichage - Tutoriel GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)
++ [Prise en main d’AEM sans affichage - Tutoriel GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=fr)
 + [Tutoriel sur les listes et la navigation dans SwiftUI](https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation)
