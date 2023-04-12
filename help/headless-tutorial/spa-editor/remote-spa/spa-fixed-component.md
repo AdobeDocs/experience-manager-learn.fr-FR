@@ -1,6 +1,6 @@
 ---
-title: Ajout de composants fixes modifiables à un SPA distant
-description: Découvrez comment ajouter des composants fixes modifiables à un SPA distant.
+title: Ajouter des composants fixes modifiables à une SPA distante
+description: Découvrez comment ajouter des composants fixes modifiables à une SPA distante.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
 role: Developer, Architect
@@ -11,39 +11,39 @@ last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
 source-git-commit: ece15ba61124972bed0667738ccb37575d43de13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '536'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Composants fixes modifiables
 
-Les composants React modifiables peuvent être &quot;corrigés&quot; ou codés en dur dans les vues SPA. Cela permet aux développeurs de placer SPA composants compatibles avec l’éditeur dans les vues SPA et aux utilisateurs de créer le contenu des composants dans l’éditeur d’.
+Les composants React modifiables peuvent être « fixés » ou codés en dur dans les vues de la SPA. Cela permet aux développeurs et développeuses de placer des composants compatibles avec l’éditeur de SPA dans les vues de la SPA et aux utilisateurs et utilisatrices de créer le contenu des composants dans l’éditeur de SPA d’AEM.
 
-![Composants fixes](./assets/spa-fixed-component/intro.png)
+![Composants fixes.](./assets/spa-fixed-component/intro.png)
 
-Dans ce chapitre, nous remplaçons le titre de la vue d’accueil, &quot;Current Adventures&quot;, qui est un texte codé en dur dans `Home.js` avec un composant Titre fixe mais modifiable. Les composants fixes garantissent le placement du titre, mais permettent également la création du texte du titre et le changement en dehors du cycle de développement.
+Dans ce chapitre, nous remplaçons le titre de la vue d’accueil, « Current Adventures », un texte codé en dur dans `Home.js`, par un composant de titre fixe, mais modifiable. Les composants fixes garantissent le placement du titre, mais permettent également la création du texte du titre et sa modification en dehors du cycle de développement.
 
-## Mise à jour de l’application WKND
+## Mettre à jour l’application WKND
 
-Pour ajouter une __Fixe__ composant à la vue d’accueil :
+Pour ajouter un composant __fixe__ à la vue d’accueil :
 
-+ Créez un composant Titre modifiable personnalisé et enregistrez-le dans le type de ressource Titre du projet.
-+ Placez le composant Titre modifiable dans la vue d’accueil SPA
++ Créez un composant personnalisé de titre modifiable et enregistrez-le dans le type de ressource Titre du projet.
++ Placez le composant de titre modifiable dans la vue d’accueil de la SPA.
 
-### Création d’un composant React Title modifiable
+### Créez un composant de titre React modifiable.
 
-Dans la vue Accueil SPA, remplacez le texte codé en dur. `<h2>Current Adventures</h2>` avec un composant Titre modifiable personnalisé. Avant de pouvoir utiliser le composant Titre, nous devons :
+Dans la vue d’accueil de la SPA, remplacez le texte codé en dur `<h2>Current Adventures</h2>` par un composant de titre modifiable personnalisé. Avant de pouvoir utiliser le composant de titre, nous devons :
 
-1. Création d’un composant Titre React personnalisé
-1. Décorez le composant Titre personnalisé à l’aide de méthodes issues de `@adobe/aem-react-editable-components` pour le rendre modifiable.
-1. Enregistrez le composant Titre modifiable avec `MapTo` afin qu’il puisse être utilisé dans [composant de conteneur ultérieur](./spa-container-component.md).
+1. créer un composant personnalisé de titre React ;
+1. décorer le composant personnalisé de titre à l’aide de méthodes issues de `@adobe/aem-react-editable-components` pour le rendre modifiable ;
+1. enregistrer le composant de titre modifiable avec `MapTo` afin qu’il puisse être utilisé dans le [composant de conteneur ultérieurement](./spa-container-component.md).
 
 Pour ce faire :
 
-1. Ouvrez le projet SPA à distance à l’adresse `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` dans votre IDE
-1. Créez un composant React à l’adresse `react-app/src/components/editable/core/Title.js`
+1. Ouvrez le projet de SPA distante à l’adresse `~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/react-app` dans votre IDE.
+1. Créez un composant React sous `react-app/src/components/editable/core/Title.js`.
 1. Ajoutez le code suivant à `Title.js`.
 
    ```javascript
@@ -89,11 +89,11 @@ Pour ce faire :
    export const titleIsEmpty = (props) => props.text == null || props.text.trim().length === 0
    ```
 
-   Notez que ce composant React n’est pas encore modifiable à l’aide d’AEM SPA Editor. Ce composant de base sera rendu modifiable à l’étape suivante.
+   Notez que ce composant React n’est pas encore modifiable à l’aide de l’éditeur de SPA d’AEM. Ce composant de base sera rendu modifiable à l’étape suivante.
 
    Lisez les commentaires du code pour plus d’informations sur l’implémentation.
 
-1. Créez un composant React à l’adresse `react-app/src/components/editable/EditableTitle.js`
+1. Créez un composant React sous `react-app/src/components/editable/EditableTitle.js`.
 1. Ajoutez le code suivant à `EditableTitle.js`.
 
    ```javascript
@@ -130,14 +130,14 @@ Pour ce faire :
    export default EditableTitle;
    ```
 
-   Ceci `EditableTitle` Le composant React encapsule la propriété `Title` Composant React, encapsulation et décoration pour qu’il soit modifiable dans AEM SPA Editor.
+   Ce composant `EditableTitle` React recouvre le composant `Title` React, en l’enveloppant et en le décorant pour qu’il soit modifiable dans l’éditeur de SPA d’AEM.
 
-### Utilisation du composant React EditableTitle
+### Utiliser le composant de titre modifiable React
 
-Maintenant que le composant React EditableTitle est enregistré dans et disponible pour utilisation dans l’application React, remplacez le texte du titre codé en dur sur la vue Accueil.
+Maintenant que le composant de titre modifiable React est enregistré et disponible pour être utilisé dans l’application React, remplacez le texte du titre codé en dur sur la vue d’accueil.
 
 1. Modifier `react-app/src/components/Home.js`
-1. Dans le `Home()` en bas, importez `EditableTitle` et remplacez le titre codé en dur par le nouveau `AEMTitle` component :
+1. Dans l’élément `Home()` en bas, importez `EditableTitle` et remplacez le titre codé en dur par le nouveau composant `AEMTitle` :
 
    ```javascript
    ...
@@ -157,41 +157,41 @@ Maintenant que le composant React EditableTitle est enregistré dans et disponib
    }
    ```
 
-Le `Home.js` doit se présenter comme suit :
+Le fichier `Home.js` doit se présenter comme suit :
 
-![Home.js](./assets/spa-fixed-component/home-js-update.png)
+![Home.js.](./assets/spa-fixed-component/home-js-update.png)
 
-## Création du composant Titre dans AEM
+## Créer le composant de titre dans AEM
 
-1. Connexion à l’auteur AEM
-1. Accédez à __Sites > Application WKND__
-1. Appuyer __Accueil__ et sélectionnez __Modifier__ à partir de la barre d’actions supérieure
-1. Sélectionner __Modifier__ dans le sélecteur de mode d’édition en haut à droite de l’éditeur de page ;
-1. Passez la souris sur le texte de titre par défaut sous le logo WKND et au-dessus de la liste des aventures, jusqu’à ce que la composition de modification bleue s’affiche.
-1. Appuyez sur pour afficher la barre d’actions du composant, puis appuyez sur la __clé à molette__  pour modifier
+1. Connectez-vous au service de création AEM.
+1. Accédez à __Sites > Application WKND__.
+1. Appuyez sur __Accueil__ et sélectionnez __Modifier__ à partir de la barre d’actions supérieure.
+1. Sélectionnez __Modifier__ dans le sélecteur de mode d’édition en haut à droite de l’éditeur de page.
+1. Pointez sur le texte de titre par défaut sous le logo WKND et au-dessus de la liste des Adventures, jusqu’à ce que le contour de modification bleu s’affiche.
+1. Appuyez dessus pour afficher la barre d’actions du composant, puis sur la __clé à molette__ pour le modifier.
 
-   ![Barre d’actions du composant Titre](./assets/spa-fixed-component/title-action-bar.png)
+   ![Barre d’actions du composant de titre.](./assets/spa-fixed-component/title-action-bar.png)
 
-1. Créez le composant Titre :
-   + Titre : __Les aventures de WKND__
-   + Type/Taille : __H2__
+1. Créez le composant de titre :
+   + Titre : __WKND Adventures__
+   + Type/Taille : __H2__
 
-      ![Boîte de dialogue du composant Titre](./assets/spa-fixed-component/title-dialog.png)
+      ![Boîte de dialogue du composant de titre.](./assets/spa-fixed-component/title-dialog.png)
 
-1. Appuyer __Terminé__ pour enregistrer
-1. Prévisualisez vos modifications dans AEM Éditeur SPA
-1. Actualisez l’application WKND s’exécutant localement sur [http://localhost:3000](http://localhost:3000) et voir les modifications du titre créé immédiatement répercutées.
+1. Appuyez sur __Terminé__ pour enregistrer.
+1. Prévisualisez vos modifications dans l’éditeur de SPA d’AEM.
+1. Actualisez l’application WKND exécutée localement sur [http://localhost:3000](http://localhost:3000) et constatez les modifications du titre immédiatement répercutées.
 
-   ![Composant du titre dans SPA](./assets/spa-fixed-component/title-final.png)
+   ![Composant de titre dans la SPA.](./assets/spa-fixed-component/title-final.png)
 
-## Félicitations !
+## Félicitations.
 
-Vous avez ajouté un composant fixe et modifiable à l’application WKND ! Vous savez maintenant comment :
+Vous avez ajouté un composant fixe et modifiable à l’application WKND. Vous savez maintenant comment :
 
-+ Création d’un composant fixe, mais modifiable, dans le SPA
-+ Créez le composant fixe dans AEM
-+ Voir le contenu créé dans la SPA distante
++ Créer un composant fixe, mais modifiable, dans la SPA
++ Créer le composant fixe dans AEM
++ Voir le contenu créé dans la SPA distante.
 
 ## Étapes suivantes
 
-Les prochaines étapes sont les suivantes : [ajout d’un composant de conteneur ResponsiveGrid AEM](./spa-container-component.md) à la SPA qui permet à l’auteur d’ajouter et de modifier des composants au SPA !
+Les étapes suivantes consistent à [ajouter un composant de conteneur d’AEM ResponsiveGrid](./spa-container-component.md) à la SPA qui permet aux créateurs et créatrices d’ajouter des composants modifiables à la SPA.
