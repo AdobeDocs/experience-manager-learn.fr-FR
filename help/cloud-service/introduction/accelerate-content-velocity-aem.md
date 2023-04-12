@@ -1,95 +1,95 @@
 ---
 title: Accélérer la vitesse du contenu avec les systèmes de style AEM
-description: Découvrez comment utiliser AEM système de style pour permettre aux concepteurs, aux auteurs de contenu et aux développeurs de votre entreprise de créer et de diffuser des expériences à la vitesse et à l’échelle attendues par vos clients.
+description: Découvrez comment utiliser les systèmes de style d’AEM pour permettre aux personnes travaillant dans la conception, la création de contenu et le développement dans votre organisation de créer et de diffuser des expériences à la vitesse et à l’échelle attendues par votre clientèle.
 solution: Experience Manager
 exl-id: 449cd133-6ab6-456e-a0ad-30e3dea9b75b
 source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '830'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Accélérer la vitesse du contenu avec les systèmes de style AEM
 
-Dans cet article, vous découvrez comment utiliser des systèmes de type AEM pour permettre aux concepteurs, aux auteurs de contenu et aux développeurs de votre entreprise de créer et de diffuser des expériences à la vitesse et à l’échelle attendues par vos clients.
+Dans cet article, vous découvrez comment utiliser les systèmes de style d’AEM pour permettre aux personnes travaillant dans la conception, la création de contenu et le développement dans votre organisation de créer et de diffuser des expériences à la vitesse et à l’échelle attendues par votre clientèle.
 
-##  du commerce électronique
+## Présentation
 
-Les systèmes de style AEM présentent quatre avantages principaux :
+Les systèmes de style d’AEM présentent quatre avantages principaux :
 
-* Les auteurs de modèles peuvent définir des classes de style dans la stratégie de contenu d’un composant ou d’une page.
-* Les auteurs de contenu peuvent sélectionner des styles à appliquer à une page entière ou lors de la modification d’un composant sur une page.
-* Les composants et les modèles sont plus flexibles en permettant aux auteurs de rendre des variantes visuelles de remplacement.
-* La nécessité de développer un composant personnalisé et/ou des boîtes de dialogue complexes pour présenter des variations de composant est complètement réduite ou éliminée.
+* Les personnes créant des modèles peuvent définir des classes de style dans la stratégie de contenu d’un composant ou d’une page.
+* Les personnes créant du contenu peuvent sélectionner des styles à appliquer à une page entière ou lors de la modification d’un composant sur une page.
+* Les composants et les modèles sont plus flexibles et permettent aux personnes créatrices de proposer des variations visuelles alternatives.
+* La nécessité de développer un composant personnalisé et/ou des boîtes de dialogue complexes pour présenter des variations de composant est réduite voire éliminée complètement.
 
 ## Configuration initiale et utilisation
 
-La configuration en 5 étapes est très similaire à un workflow de développement de composant standard.
+La configuration en 5 étapes est très similaire à un workflow de développement de composant standard.
 
-| **Leadership** | **Designer** | **Développeur/Architecte** | **Créateur de modèles** | **Auteur de contenu** |
+| **Direction** | **Designer** | **Équipe de développement et d’architecture** | **Créateur de modèles** | **Créateur de contenu** |
 | --- | --- | --- | --- | --- |
-| Détermine le contenu et les objectifs de ce composant | Détermine la présentation visuelle et expérientielle du contenu | Développe CSS et JS pour prendre en charge l’expérience ; définit et fournit des noms de classe à utiliser ; | Configure les stratégies de modèle pour les composants stylisés en ajoutant les noms de classe CSS définis par les développeurs. Les noms conviviaux doivent être utilisés pour chaque style. | Lors de la création de pages, applique les styles selon les besoins pour obtenir l’aspect souhaité. |
+| Détermine le contenu et les objectifs de ce composant. | Détermine la présentation visuelle et expérimentale du contenu. | Développe le CSS et le JS pour alimenter l’expérience ; définit et fournit des noms de classe à utiliser. | Configure les stratégies de modèle pour les composants stylisés en ajoutant les noms de classe CSS définis par l’équipe de développement. Des noms conviviaux doivent être utilisés pour chaque style. | Lors de la création de pages, applique les styles selon les besoins pour obtenir l’aspect souhaité. |
 
-Bien qu’il s’agisse de la configuration initiale, de nombreux clients ont plus d’agilité en rationalisant ce processus, par exemple en chargeant leur page CSS dans la gestion des ressources numériques, ce qui permet de mettre à jour les styles sans avoir à effectuer de déploiement. D’autres clients disposent d’un ensemble complet de classes d’utilitaires, ce qui leur permet de développer des composants et des styles qui peuvent ensuite être utilisés sans déploiement ni développement.
+Bien qu’il s’agisse de la configuration initiale, de nombreux clientes et clients obtiennent plus d’agilité en rationalisant ce processus, par exemple en chargeant leur page CSS dans la gestion des ressources numériques (DAM), ce qui permet de mettre à jour les styles sans avoir à effectuer de déploiement. D’autres clientes et clients disposent d’un ensemble complet de classes d’utilitaires, ce qui leur permet de développer des composants et des styles qui peuvent ensuite être utilisés sans déploiement ni développement.
 
-Les systèmes de style se présentent sous des formes différentes :
+Les systèmes de style se présentent sous des formes différentes :
 
 1. Styles de disposition
 
-   * Modifications à plusieurs facettes de la conception et de la mise en page
+   * Modifications à plusieurs facettes de la conception et de la disposition.
 
-   * Utilisé pour le rendu bien défini et identifiable
+   * Utilisés pour un rendu bien défini et identifiable.
 
 1. Styles d’affichage
-   * Variations mineures qui ne modifient pas la nature fondamentale du style
+   * Variations mineures qui ne modifient pas la nature fondamentale du style.
 
-   * Par exemple, modifier le modèle de couleurs, la police, l’orientation de l’image, etc.
+   * Par exemple, la modification du modèle de couleurs, de la police, de l’orientation de l’image, etc.
 
 1. Styles d’information
 
-   * Afficher/masquer les champs
+   * Affichent/masquent les champs.
 
 >[!NOTE]
 >
->Pour une démonstration de ces fonctionnalités, nous vous recommandons de regarder notre [Webinaire sur la réussite client](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) avec Will Brisbane et Joseph Van Buskirk.
+>Pour une démonstration de ces fonctionnalités, nous vous recommandons de regarder notre [Webinaire consacré au Succès client](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) avec Will Brisbane et Joseph Van Buskirk.
 
 ## Bonnes pratiques
 
-* Donner la priorité au style par défaut
-   * Disposition et affichage du composant lorsqu’il est déposé sur la page avant l’application de systèmes de style
+* Donnez la priorité au style par défaut.
+   * La disposition et l’affichage du composant déposé sur la page passent avant l’application des systèmes de style.
    * Il doit s’agir du rendu le plus utilisé.
-* Essayez d’afficher uniquement les options de style qui ont un effet lorsque cela est possible.
+* Dans la mesure du possible, essayez d’afficher uniquement les options de style qui ont un effet.
    * Si des combinaisons inefficaces sont exposées, assurez-vous qu’elles ne provoquent pas d’effets négatifs.
-   * Par exemple, un style de mise en page qui détermine la position de l’image et est accompagné d’un style d’affichage inefficace qui contrôle la position de l’image.
-* Opt-on pour les styles de mise en page par rapport aux styles d’affichage combinés
-   * Réduit le nombre de permutations qui doivent être vérifiées en termes de qualité.
-   * Garantit le respect des normes de marque
-   * Simplification de la création pour les auteurs de contenu
-   * Permet de créer une identité de marque cohérente sur le site
-* Soyez prudent avec les styles combinés
-   * À la fois dans les catégories
-* Attribuer le temps approprié pour tester minutieusement les styles combinés
-   * Permet d’éviter les effets indésirables
-* Minimiser le nombre d’options de style et de permutations
-   * Trop d’options peut entraîner un manque de cohérence de la marque pour l’aspect
-   * Peut créer de la confusion pour les auteurs de contenu sur les combinaisons nécessaires pour obtenir l’effet souhaité.
-   * Augmente les permutations qui doivent être vérifiées en termes de qualité
-* Utilisation des libellés et des catégories de style conviviaux pour les entreprises
-   * &quot;Bleu&quot; et &quot;Rouge&quot; au lieu de &quot;Principal&quot; et &quot;Secondaire&quot;
-   * &quot;Carte&quot; et &quot;Héros&quot; au lieu de &quot;Variation A&quot; et &quot;Variation B&quot;
-   * Cela peut être plus général pour certains clients ; l’équipe de conception, l’équipe d’entreprise et l’équipe de contenu connaissent bien leurs couleurs Principales et secondaires ou les variations qu’elles testent. Mais pour la flexibilité et tout potentiel de changements futurs, l&#39;utilisation de termes spécifiques peut être plus efficace.
+   * Par exemple, un style de disposition déterminant la position de l’image et accompagné d’un style d’affichage inefficace qui contrôle la position de l’image.
+* Préférez les styles de disposition à une combinaison de styles d’affichage.
+   * Cela réduit le nombre de permutations qui doivent être vérifiées en termes de qualité.
+   * Cela garantit le respect des normes de marque.
+   * Cela simplifie la création pour les personnes créant du contenu.
+   * Cela permet de créer une identité de marque cohérente sur le site.
+* Maniez les combinaisons de styles avec prudence.
+   * À la fois entre les catégories et au sein des catégories.
+* Consacrez le temps qu’il faut pour tester minutieusement les combinaison de styles.
+   * Cela permet d’éviter les effets indésirables.
+* Minimisez le nombre d’options et de permutations de style.
+   * Un nombre trop important d’options peut entraîner un manque de cohérence dans l’aspect de la marque.
+   * Cela peut créer de la confusion pour les personnes créant du contenu quant aux combinaisons nécessaires pour obtenir l’effet souhaité.
+   * Cela augmente les permutations qui doivent être vérifiées en termes de qualité.
+* Utilisez des libellés et des catégories de style conviviaux pour les personnes professionnelles.
+   * « Bleu » et « Rouge » au lieu de « Primaire » et « Secondaire ».
+   * « Carte » et « Héros » au lieu de « Variation A » et « Variation B ».
+   * Il peut s’agir d’une banalité pour certains clientes et clients, mais l’équipe de conception, l’équipe commerciale et celle chargée du contenu connaissent très bien leurs couleurs primaires et secondaires ou les variations qu’elles testent. Mais dans un but de flexibilité et de prévision de potentielles modifications futures, l’utilisation de termes spécifiques peut être plus efficace.
 
-## Principales acquisitions
+## Principaux points à retenir
 
-Les systèmes de style réduisent le besoin de boîtes de dialogue complexes, mais il ne s’agit pas d’un remplacement de boîte de dialogue. Ils aident à simplifier les choses, mais il peut arriver que vous souhaitiez utiliser des propriétés de composant ou une boîte de dialogue plutôt que de créer un système de style pour celle-ci.
+Les systèmes de style permettent de réduire le recours à des boîtes de dialogues complexes, mais ils ne les remplacent pas. Ils permettent de faciliter les opérations, mais il est possible que, dans certains cas, vous souhaitiez utiliser les propriétés ou la boîte de dialogue du composant plutôt que de créer un système de style pour celui-ci.
 
-Ils peuvent rationaliser les processus du point de vue du développement. Vous pouvez obtenir plusieurs styles du même contenu avec un seul système de style. De même, du point de vue de la création, plutôt que de former les auteurs et les auteurs qui doivent se rappeler quel composant utiliser dans quel palais, vous pouvez accélérer la vitesse de création.
+Ils peuvent rationaliser les processus du point de vue du développement. Vous pouvez obtenir plusieurs styles du même contenu avec un seul système de style. De même, du point de vue de la création, il est possible d’accélérer le processus de création plutôt que de former les créateurs et créatrices et de les obliger à se rappeler quel composant utiliser à quel endroit.
 
-Les choses sont tout simplement plus propres. Le HTML au sein des composants principaux est très détaillé. Tout cela au niveau CSS rend le composant plus rapide et le code plus propre.
+Les choses sont tout simplement plus épurées. Le HTML au sein des composants principaux est très détaillé. Le fait de réaliser tout cela au niveau du CSS accélère la construction du composant et permet d’avoir un code plus épuré.
 
-Enfin, l&#39;utilisation des systèmes de style est plus de l&#39;art que de la science. Comme nous l’avons expliqué, il existe plusieurs bonnes pratiques, mais vous disposez d’une certaine souplesse dans la personnalisation de la configuration de votre entreprise.
+Pour finir, l’utilisation des systèmes de style relève plus de l’art que de la science. Comme nous l’avons vu, il y a plusieurs bonnes pratiques, mais vous aurez toute liberté pour personnaliser la configuration de votre organisation.
 
-Pour plus d’informations, consultez notre [Webinaire sur le succès client](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) avec Will Brisbane et Joseph Van Buskirk.
+Pour plus d’informations, consultez notre [Webinaire sur le succès client](https://adobecustomersuccess.adobeconnect.com/pob610c9mffjmp4/) avec Will Brisbane et Joseph Van Buskirk.
 
-Pour en savoir plus sur la stratégie et le leadership de la pensée, voir [Succès des clients](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html) hub.
+Pour en savoir plus sur la stratégie et le leadership de la pensée, consultez le hub [Succès client](https://experienceleague.adobe.com/docs/customer-success/customer-success/overview.html?lang=fr).
