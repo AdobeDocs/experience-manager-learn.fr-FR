@@ -1,6 +1,6 @@
 ---
-title: AEM Déploiements serveur à serveur sans affichage
-description: Découvrez les points à prendre en compte pour le déploiement AEM serveur à serveur sans affichage.
+title: Déploiements serveur à serveur d’AEM Headless
+description: Découvrez les points à prendre en compte pour les déploiements serveur à serveur d’AEM Headless.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -9,34 +9,34 @@ level: Intermediate
 kt: 10798
 thumbnail: kt-10798.jpg
 source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '248'
+ht-degree: 100%
 
 ---
 
 
-# AEM Déploiements serveur à serveur sans affichage
+# Déploiements serveur à serveur d’AEM Headless
 
-AEM les déploiements serveur à serveur sans affichage impliquent des applications ou des processus côté serveur qui consomment et interagissent avec le contenu d’AEM de manière transparente.
+Les déploiements serveur à serveur d’AEM Headless impliquent des applications ou des processus côté serveur qui consomment et interagissent avec le contenu d’AEM de manière découplée.
 
-Les déploiements serveur à serveur nécessitent une configuration minimale, car les connexions HTTP à AEM API sans affichage ne sont pas initiées dans le contexte d’un navigateur.
+Les déploiements serveur à serveur nécessitent une configuration minimale, car les connexions HTTP aux API AEM Headless ne sont pas initiées dans le contexte d’un navigateur.
 
 ## Configurations de déploiement
 
-La configuration de déploiement suivante doit être statique pour les déploiements d’applications serveur à serveur.
+La configuration de déploiement suivante doit être en place pour les déploiements d’applications serveur à serveur.
 
-| L’application serveur à serveur se connecte à | Auteur AEM | Publication AEM | Aperçu AEM |
+| L’application serveur à serveur se connecte aux éléments suivants : | Création AEM | Publication AEM | Prévisualisation AEM |
 |---------------------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Filtres Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
-| Partage de ressources cross-origin (CORS) | ✘ | ✘ | ✘ |
-| [Hôtes AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [Filtres Dispatcher.](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| Partage de ressources entre origines multiples (CORS) | ✘ | ✘ | ✘ |
+| [Hôtes AEM.](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Exigences d’autorisation
 
-Les demandes autorisées pour AEM aux API GraphQL se produisent généralement dans le contexte des applications serveur à serveur, puisque d’autres types d’applications, tels que [applications d’une seule page](./spa.md), [mobile](./mobile.md)ou [Composants web](./web-component.md), utilisez généralement l’autorisation, car il est difficile de sécuriser les informations d’identification .
+Les requêtes autorisées pour les API GraphQL AEM se produisent généralement dans le contexte des applications serveur à serveur, puisque d’autres types d’applications, tels que les [applications monopages](./spa.md), [mobiles](./mobile.md) ou [Composants web](./web-component.md), utilisent généralement une autorisation, car il est difficile de sécuriser les informations d’identification.
 
-Lorsque vous autorisez des requêtes à AEM as a Cloud Service, utilisez [authentification par jeton basé sur les informations d’identification du service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html). Pour en savoir plus sur l’authentification des requêtes à AEM as a Cloud Service, consultez la section [tutoriel sur l’authentification par jeton](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html). Le tutoriel explore l’authentification par jeton à l’aide de [API HTTP AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html) mais les mêmes concepts et approches s’appliquent aux applications qui interagissent avec AEM API GraphQL sans interface utilisateur.
+Lorsque vous autorisez des requêtes à AEM as a Cloud Service, utilisez l’[authentification par jeton basée sur les informations d’identification du service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr). Pour en savoir plus sur l’authentification des requêtes à AEM as a Cloud Service, consultez la section [Tutoriel sur l’authentification par jeton](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr). Le tutoriel explore l’authentification par jeton à l’aide des [API HTTP AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=fr), mais les mêmes concepts et approches s’appliquent aux applications qui interagissent avec les API GraphQL AEM Headless.
 
 ## Exemple d’application serveur à serveur
 
@@ -56,10 +56,10 @@ Adobe fournit un exemple d’application serveur à serveur codée dans Node.js.
            <div class="card-content is-padded-small">
                <div class="content">
                    <p class="headline is-size-6 has-text-weight-bold"><a href="../example-apps/server-to-server-app.md" title="Application serveur à serveur">Application serveur à serveur</a></p>
-                   <p class="is-size-6">Exemple d’application serveur à serveur, écrite dans Node.js, qui consomme du contenu des API GraphQL AEM sans affichage.</p>
+                   <p class="is-size-6">Exemple d’application serveur à serveur, écrite dans Node.js, qui consomme du contenu des API GraphQL AEM Headless.</p>
                    <a href="../example-apps/server-to-server-app.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Exemple de vue</span>
-                   </a>
+<span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Afficher l’exemple</span>
+</a>
                </div>
            </div>
        </div>
