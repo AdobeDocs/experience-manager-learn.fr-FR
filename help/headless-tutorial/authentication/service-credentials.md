@@ -1,6 +1,6 @@
 ---
-title: Informations d’identification du service
-description: Découvrez comment utiliser les informations d’identification du service utilisées pour faciliter les applications, systèmes et services externes afin d’interagir par programmation avec les services de création ou de publication sur HTTP.
+title: Informations d’identification de service
+description: Découvrez comment utiliser les informations d’identification de service utilisées pour aider les applications, systèmes et services externes à intéragir par programmation avec les services de création ou de publication via HTTP.
 version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
@@ -17,118 +17,118 @@ exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1937'
-ht-degree: 0%
+ht-degree: 99%
 
 ---
 
-# Informations d’identification du service
+# Informations d’identification de service
 
-Les intégrations avec Adobe Experience Manager (AEM) as a Cloud Service doivent pouvoir s’authentifier en toute sécurité au service AEM. AEM Developer Console accorde l’accès aux informations d’identification du service, qui sont utilisées pour faciliter les applications, systèmes et services externes pour interagir par programmation avec les services AEM Author ou Publish sur HTTP.
+Les intégrations à Adobe Experience Manager (AEM) as a Cloud Service doivent pouvoir s’authentifier en toute sécurité auprès du service AEM. La Developer Console d’AEM accorde l’accès aux informations d’identification de service, qui sont utilisées pour aider les applications, systèmes et services externes à interagir par programmation avec les services de création et de publication via HTTP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
-Les informations d’identification du service peuvent apparaître similaires. [Jetons d’accès au développement local](./local-development-access-token.md) mais sont différents de plusieurs manières clés :
+Bien que les informations d’identification de service puissent apparaître similaires aux [jetons d’accès au développement local](./local-development-access-token.md), elles sont différentes de plusieurs manières importantes :
 
-+ Les informations d’identification du service sont associées aux comptes techniques. Plusieurs informations d’identification de service peuvent être principales pour un compte technique.
-+ Les informations d’identification du service sont _not_ les jetons d’accès ; il s’agit plutôt d’informations d’identification utilisées pour _obtenir_ jetons d’accès.
-+ Les informations d’identification du service sont plus permanentes (leur certificat expire tous les 365 jours) et ne changent pas à moins d’être révoqué, tandis que les jetons d’accès au développement local expirent tous les jours.
-+ Les informations d’identification du service pour un environnement as a Cloud Service AEM sont mappées à un utilisateur de compte technique unique AEM, tandis que les jetons d’accès au développement local s’authentifient en tant qu’utilisateur  ayant généré le jeton d’accès.
-+ Un environnement as a Cloud Service AEM peut comporter jusqu’à dix comptes techniques, chacun disposant de ses propres informations d’identification de service, chacune d’elles étant associée à un compte technique distinct AEM utilisateur.
++ Les informations d’identification de service sont associées aux comptes techniques. Plusieurs informations d’identification de service peuvent être actives pour un seul et même compte technique.
++ Les informations d’identification de service _ne sont pas_ des jetons d’accès, mais plutôt des informations d’identification utilisées pour _obtenir_ des jetons d’accès.
++ Les informations d’identification de service sont plus permanentes (leur certificat expire tous les 365 jours) et ne changent pas à moins d’être révoquées, tandis que les jetons d’accès au développement local expirent tous les jours.
++ Les informations d’identification de service pour un environnement AEM as a Cloud Service sont mappées à une personne utilisatrice de compte technique AEM unique, tandis que les jetons d’accès au développement local s’authentifient en tant que personne utilisatrice ayant généré le jeton d’accès.
++ Un environnement AEM as a Cloud Service peut comporter jusqu’à dix comptes techniques, chacun disposant de ses propres informations d’identification de service, chacun étant associé à une personne utilisatrice de compte technique AEM distincte.
 
-Les informations d’identification du service et les jetons d’accès qu’ils génèrent, ainsi que les jetons d’accès au développement local, doivent être gardés secrets. Comme les trois peuvent être utilisés pour obtenir, l&#39;accès à leur environnement as a Cloud Service respectif AEM.
+Les informations d’identification de service et les jetons d’accès qu’elles génèrent, ainsi que les jetons d’accès au développement local, doivent être gardés secrets. En effet, les trois peuvent être utilisés pour obtenir l’accès à leur environnement AEM as a Cloud Service respectif.
 
-## Générer les informations d’identification du service
+## Généer des informations d’identification de service
 
-La génération des informations d’identification du service est divisée en deux étapes :
+La génération des informations d’identification de service est divisée en deux étapes :
 
-1. Création ponctuelle d’un compte technique par un administrateur de l’organisation Adobe IMS
-1. Téléchargement et utilisation des informations d’identification du service du compte technique JSON
+1. La création ponctuelle d’un compte technique par l’administration de l’organisation Adobe IMS.
+1. Le téléchargement et l’utilisation du JSON des informations d’identification de service du compte technique.
 
 ### Créer un compte technique
 
-Contrairement aux jetons d’accès au développement local, les informations d’identification du service requièrent la création d’un compte technique par un administrateur IMS de l’organisation d’Adobe avant de pouvoir les télécharger. Des comptes techniques distincts doivent être créés pour chaque client qui nécessite un accès programmatique à AEM.
+Contrairement aux jetons d’accès au développement local, les informations d’identification de service requièrent la création d’un compte technique par l’administration de l’organisation Adobe IMS avant de pouvoir être téléchargées. Des comptes techniques distincts doivent être créés pour chaque client ou cliente qui nécessite un accès programmatique à AEM.
 
-![Créer un compte technique](assets/service-credentials/initialize-service-credentials.png)
+![Création d’un compte technique.](assets/service-credentials/initialize-service-credentials.png)
 
-Les comptes techniques sont créés une seule fois, mais les clés privées utilisent pour gérer les informations d’identification du service associées au compte technique. Par exemple, les nouvelles informations d’identification de clé privée/service doivent être générées avant l’expiration de la clé privée actuelle, afin de permettre un accès ininterrompu à un utilisateur des informations d’identification du service.
+Les comptes techniques sont créés une seule fois, mais les clés privées utilisées pour gérer les informations d’identification de service associées au compte technique peuvent être gérées au fil du temps. Par exemple, les nouvelles informations d’identification de service ou de clé privée doivent être générées avant l’expiration de la clé privée actuelle, afin de permettre un accès ininterrompu à une personne utilisatrice des informations d’identification de service.
 
-1. Vérifiez que vous êtes connecté en tant que :
-   + __Administrateur de l’organisation Adobe IMS__
-   + Membre du __Administrateurs AEM__ Profil de produit IMS sur __Auteur AEM__
-1. Connectez-vous à [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
-1. Ouvrez le programme contenant l’environnement as a Cloud Service AEM pour intégrer la configuration des informations d’identification du service pour
-1. Appuyez sur les points de suspension en regard de l’environnement dans la __Environnements__ et sélectionnez __Developer Console__
-1. Appuyez sur __Intégrations__ tab
-1. Appuyez sur le bouton __Comptes techniques__ tab
-1. Appuyer __Créer un compte technique__ button
-1. Les informations d’identification du service du compte technique sont initialisées et affichées au format JSON.
+1. Vérifiez votre connexion en tant que :
+   + __personne de l’administration de l’organisation Adobe IMS__ ;
+   + membre du profil de produit IMS de l’__administration AEM__ sur l’__instance de création AEM__.
+1. Connectez-vous à [Adobe Cloud Manager](https://my.cloudmanager.adobe.com).
+1. Ouvrez le programme contenant l’environnement AEM as a Cloud Service pour intégrer la configuration des informations d’identification de service.
+1. Appuyez sur les points de suspension en regard de l’environnement dans la section __Environnements__ et sélectionnez __Developer Console__.
+1. Appuyez sur l’onglet __Intégrations__.
+1. Appuyez sur l’onglet __Comptes techniques__.
+1. Appuyez sur le bouton __Créer un compte technique__.
+1. Les informations d’identification du service de compte technique sont initialisées et affichées au format JSON.
 
-![AEM Developer Console - Intégrations - Obtention des informations d’identification du service](./assets/service-credentials/developer-console.png)
+![AEM Developer Console - Intégrations - Obtention des informations d’identification de service.](./assets/service-credentials/developer-console.png)
 
-Une fois l’AEM comme informations d’identification de service de l’environnement de Cloud Service initialisé, d’autres développeurs AEM de votre organisation Adobe IMS peuvent les télécharger.
+Une fois les informations d’identification de service de l’environnement AEM as a Cloud Service initialisées, d’autres personnes développeuses d’AEM de votre organisation Adobe IMS peuvent les télécharger.
 
-### Téléchargement des informations d’identification du service
+### Télécharger les informations d’identification de service
 
-![Téléchargement des informations d’identification du service](assets/service-credentials/download-service-credentials.png)
+![Téléchargement des informations d’identification de service.](assets/service-credentials/download-service-credentials.png)
 
-Le téléchargement des informations d’identification du service suit les étapes similaires à l’initialisation.
+Le téléchargement des informations d’identification de service suit des étapes similaires à l’initialisation.
 
-1. Vérifiez que vous êtes connecté en tant que :
-   + __Administrateur de l’organisation Adobe IMS__
-   + Membre du __Administrateurs AEM__ Profil de produit IMS sur __Auteur AEM__
-1. Connectez-vous à [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
-1. Ouvrez le programme contenant l’environnement as a Cloud Service AEM à intégrer à
-1. Appuyez sur les points de suspension en regard de l’environnement dans la __Environnements__ et sélectionnez __Developer Console__
-1. Appuyez sur __Intégrations__ tab
-1. Appuyez sur le bouton __Comptes techniques__ tab
-1. Développez l’objet __Compte technique__ à utiliser
-1. Développez l’objet __Clé privée__ dont les informations d’identification du service seront téléchargées et vérifiez que l’état est __Principal__
-1. Appuyez sur le __...__ > __Affichage__ associé à la propriété __Clé privée__, qui affiche les informations d’identification du service JSON.
-1. Appuyez sur le bouton de téléchargement dans le coin supérieur gauche pour télécharger le fichier JSON contenant la valeur Service Credentials (Informations d’identification du service), puis enregistrez le fichier à un emplacement sécurisé.
+1. Vérifiez votre connexion en tant que :
+   + __personne de l’administration de l’organisation Adobe IMS__ ;
+   + membre du profil de produit IMS de l’__administration AEM__ sur l’__instance de création AEM__.
+1. Connectez-vous à [Adobe Cloud Manager](https://my.cloudmanager.adobe.com).
+1. Ouvrez le programme contenant l’environnement AEM as a Cloud Service auquel s’intégrer.
+1. Appuyez sur les points de suspension en regard de l’environnement dans la section __Environnements__ et sélectionnez __Developer Console__.
+1. Appuyez sur l’onglet __Intégrations__.
+1. Appuyez sur l’onglet __Comptes techniques__.
+1. Développez le __Compte technique__ à utiliser.
+1. Développez la __Clé privée__ dont les informations d’identification de service seront téléchargées et vérifiez que le statut est __Actif__.
+1. Appuyez sur __…__ > __Affichage__ pour accéder à l’affichage associé à la __Clé privée__, qui affiche le fchier JSON des informations d’identification de service.
+1. Appuyez sur le bouton de téléchargement dans le coin supérieur gauche pour télécharger le fichier JSON contenant la valeur des informations d’identification de service, et enregistrez le fichier à un emplacement sécurisé.
 
-## Installation des informations d’identification du service
+## Installer les informations d’identification de service
 
-Les informations d’identification du service fournissent les détails nécessaires à la génération d’un jeton JWT, qui est échangé contre un jeton d’accès utilisé pour s’authentifier avec AEM as a Cloud Service. Les informations d’identification du service doivent être stockées dans un emplacement sécurisé accessible par les applications, systèmes ou services externes qui l’utilisent pour accéder à AEM. Le mode et l’emplacement de gestion des informations d’identification du service sont uniques par client.
+Les informations d’identification de service fournissent les détails nécessaires à la génération d’un jeton JWT, qui est échangé contre un jeton d’accès utilisé pour s’authentifier avec AEM as a Cloud Service. Les informations d’identification de service doivent être stockées dans un emplacement sécurisé accessible par les systèmes, services ou applications externes qui les utilisent pour accéder à AEM. Le mode et l’emplacement de gestion des informations d’identification du service sont uniques pour chaque personne cliente.
 
-Pour plus de simplicité, ce tutoriel transmet les informations d’identification du service dans via la ligne de commande. Toutefois, travaillez avec votre équipe de sécurité informatique pour comprendre comment stocker ces informations d’identification et y accéder conformément aux directives de sécurité de votre entreprise.
+Pour plus de simplicité, ce tutoriel transmet les informations d’identification de service via la ligne de commande. Toutefois, travaillez avec votre équipe de sécurité informatique pour comprendre comment stocker ces informations d’identification et y accéder conformément aux directives de sécurité de votre organisation.
 
-1. Copiez le [téléchargé JSON Informations d’identification du service.](#download-service-credentials) dans un fichier nommé `service_token.json` à la racine du projet
-   + Souvenez-vous, ne jamais commettre _toutes les informations d’identification_ à Git !
+1. Copiez le [JSON d’informations d’identification de service téléchargé](#download-service-credentials) dans un fichier nommé `service_token.json` à la racine du projet.
+   + Souvenez-vous de ne jamais enregistrer _d’informations d’identification_ sur Git.
 
-## Utilisation des informations d’identification du service
+## Utiliser les informations d’identification de service
 
-Les informations d’identification du service, un objet JSON entièrement formé, ne sont pas identiques au JWT ni au jeton d’accès. Les informations d’identification du service (qui contiennent une clé privée) sont utilisées pour générer un jeton d’accès JWT qui est échangé avec les API Adobe IMS.
+Les informations d’identification de service consistent en un objet JSON entièrement formé et diffèrent du jeton JWT et du jeton d’accès. Les informations d’identification de service (qui contiennent une clé privée) sont plutôt utilisées pour générer un jeton JWT qui est échangé avec les API d’Adobe IMS contre un jeton d’accès.
 
-![Informations d’identification du service - Application externe](assets/service-credentials/service-credentials-external-application.png)
+![Informations d’identification de service - Application externe.](assets/service-credentials/service-credentials-external-application.png)
 
-1. Téléchargez les informations d’identification du service depuis AEM Developer Console vers un emplacement sécurisé.
-1. L’application externe doit interagir par programmation avec AEM environnement as a Cloud Service.
-1. L’application externe lit les informations d’identification du service à partir d’un emplacement sécurisé.
-1. L’application externe utilise les informations d’identification du service pour construire un jeton JWT.
-1. Le jeton JWT est envoyé à Adobe IMS pour échanger contre un jeton d’accès.
-1. Adobe IMS renvoie un jeton d’accès qui peut être utilisé pour accéder à AEM as a Cloud Service
-   + Une expiration peut être demandée pour les jetons d’accès. Il est préférable de raccourcir la durée de vie du jeton d’accès et de l’actualiser si nécessaire.
-1. L’application externe effectue des requêtes HTTP pour AEM as a Cloud Service, en ajoutant le jeton d’accès en tant que jeton porteur à l’en-tête d’autorisation des requêtes HTTP.
-1. AEM as a Cloud Service reçoit la requête HTTP, authentifie la requête et effectue le travail demandé par la requête HTTP, puis renvoie une réponse HTTP à l’application externe.
+1. Téléchargez les informations d’identification de service depuis la Developer Console d’AEM vers un emplacement sécurisé.
+1. L’application externe doit interagir par programmation avec l’environnement AEM as a Cloud Service.
+1. L’application externe lit les informations d’identification de service à partir d’un emplacement sécurisé.
+1. L’application externe utilise les informations d’identification de service pour créer un jeton JWT.
+1. Le jeton JWT est envoyé à Adobe IMS pour être échangé contre un jeton d’accès.
+1. Adobe IMS renvoie un jeton d’accès qui peut être utilisé pour accéder à AEM as a Cloud Service.
+   + Une expiration peut être demandée pour les jetons d’accès. Il est préférable que la durée de vie du jeton d’accès soit courte et actualisée si nécessaire.
+1. L’application externe effectue des requêtes HTTP à AEM as a Cloud Service, en ajoutant le jeton d’accès en tant que jeton porteur à l’en-tête d’autorisation des requêtes HTTP.
+1. AEM as a Cloud Service reçoit la requête HTTP, authentifie la requête et effectue le travail demandé par la requête HTTP, puis renvoie une réponse HTTP à l’application externe.
 
 ### Mises à jour de l’application externe
 
-Pour accéder à AEM as a Cloud Service à l’aide des informations d’identification du service, l’application externe doit être mise à jour de trois façons :
+Pour accéder à AEM as a Cloud Service à l’aide des informations d’identification de service, l’application externe doit être mise à jour de trois façons :
 
-1. Lecture dans les informations d’identification du service
+1. Lecture dans les informations d’identification de service
 
-+ Pour plus de simplicité, les informations d’identification du service sont lues à partir du fichier JSON téléchargé. Toutefois, dans les scénarios d’utilisation réelle, les informations d’identification du service doivent être stockées en toute sécurité conformément aux directives de sécurité de votre entreprise.
++ Pour plus de simplicité, les informations d’identification de service sont lues à partir du fichier JSON téléchargé. Toutefois, dans les scénarios d’utilisation réelle, les informations d’identification de service doivent être stockées en toute sécurité conformément aux directives de sécurité de votre organisation.
 
-1. Génération d’un JWT à partir des informations d’identification du service
-1. Échange du JWT pour un jeton d’accès
+1. Génération d’un jeton JWT à partir des informations d’identification de service
+1. Échange du jeton JWT contre un jeton d’accès
 
-+ Lorsque les informations d’identification du service sont présentes, l’application externe utilise ce jeton d’accès au lieu du jeton d’accès au développement local lors de l’accès à AEM as a Cloud Service
++ Lorsque les informations d’identification de service sont présentes, l’application externe utilise ce jeton d’accès au lieu du jeton d’accès au développement local lors de l’accès à AEM as a Cloud Service.
 
-Dans ce tutoriel, Adobe `@adobe/jwt-auth` Le module npm est utilisé pour (1) générer le JWT à partir des informations d’identification du service et (2) l’échanger contre un jeton d’accès, dans un seul appel de fonction. Si votre application n’est pas basée sur JavaScript, veuillez consulter la section [exemple de code dans d’autres langues](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) pour savoir comment créer un jeton JWT à partir des informations d’identification du service et l’échanger contre un jeton d’accès avec Adobe IMS.
+Dans ce tutoriel, le module npm `@adobe/jwt-auth` d’Adobe est utilisé pour 1), générer le jeton JWT à partir des informations d’identification de service et 2), l’échanger contre un jeton d’accès, dans un seul appel de fonction. Si votre application n’est pas basée sur JavaScript, consultez l’[exemple de code dans d’autres langages](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) pour savoir comment créer un jeton JWT à partir des informations d’identification de service et l’échanger contre un jeton d’accès avec Adobe IMS.
 
-## Lire les informations d’identification du service
+## Lire les informations d’identification de service
 
-Consultez la section `getCommandLineParams()` voyez donc comment le fichier JSON Informations d’identification du service est lu en utilisant le même code que celui utilisé pour lire dans le JSON JSON Jeton d’accès au développement local.
+Consultez `getCommandLineParams()` pour savoir comment le fichier JSON d’informations d’identification de service est lu à l’aide du même code que celui utilisé pour lire dans le JSON du jeton d’accès au développement local.
 
 ```javascript
 function getCommandLineParams() {
@@ -145,15 +145,15 @@ function getCommandLineParams() {
 }
 ```
 
-## Création d’un JWT et échange d’un jeton d’accès
+## Créer un jeton JWT et l’échanger contre un jeton d’accès
 
-Une fois les informations d’identification du service lues, elles sont utilisées pour générer un jeton d’accès JWT qui est ensuite échangé avec les API Adobe IMS. Ce jeton d’accès peut ensuite être utilisé pour accéder à AEM as a Cloud Service.
+Une fois les informations d’identification de service lues, elles sont utilisées pour générer un jeton JWT qui est ensuite échangé avec les API d’Adobe IMS contre un jeton d’accès. Ce jeton d’accès peut ensuite être utilisé pour accéder à AEM as a Cloud Service.
 
-Cet exemple d’application est basé sur Node.js. Il est donc préférable d’utiliser [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) module npm pour faciliter la génération (1) JWT et l’échange (20) avec Adobe IMS. Si votre application est développée à l’aide d’une autre langue, veuillez consulter [les exemples de code appropriés ;](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) sur la manière de construire la requête HTTP vers Adobe IMS à l’aide d’autres langages de programmation.
+Cet exemple d’application est basé sur Node.js. Il est donc préférable d’utiliser le module npm [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) pour faciliter 1), la génération du jeton JWT et 2), l’échange avec Adobe IMS. Si votre application est développée à l’aide d’un autre langage, consultez [les exemples de code appropriés](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) sur la manière de créer la requête HTTP à Adobe IMS à l’aide d’autres langages de programmation.
 
-1. Mettez à jour le `getAccessToken(..)` pour examiner le contenu du fichier JSON et déterminer s’il représente un jeton d’accès au développement local ou des informations d’identification du service. Pour ce faire, il suffit de vérifier l’existence de la variable `.accessToken` qui n’existe que pour le JSON JSON du jeton d’accès au développement local.
+1. Mettez à jour le `getAccessToken(..)` pour examiner le contenu du fichier JSON et déterminer s’il représente un jeton d’accès au développement local ou des informations d’identification de service. Pour ce faire, il suffit de vérifier l’existence de la propriété du `.accessToken`, qui n’existe que pour le JSON du jeton d’accès au développement local.
 
-   Si les informations d’identification du service sont fournies, l’application génère un JWT et l’échange avec Adobe IMS pour un jeton d’accès. Utilisez la variable [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth)&#39;s `auth(...)` qui génère un JWT et l’échange pour un jeton d’accès dans un appel de fonction unique. Les paramètres de `auth(..)` sont [Objet JSON composé d’informations spécifiques](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) disponible à partir du JSON des informations d’identification du service, comme décrit ci-dessous dans le code .
+   Si les informations d’identification de service sont fournies, l’application génère un jeton JWT et l’échange avec Adobe IMS contre un jeton d’accès. Utilisez la fonction `auth(...)` de [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) qui génère un jeton JWT et l’échange contre un jeton d’accès dans un appel de fonction unique. Les paramètres de la méthode `auth(..)` sont un [objet JSON composé d’informations spécifiques](https://www.npmjs.com/package/@adobe/jwt-auth#config-object) disponible dans le fichier JSON des informations d’identification du service, comme indiqué ci-dessous dans le code.
 
 ```javascript
  async function getAccessToken(developerConsoleCredentials) {
@@ -182,11 +182,11 @@ Cet exemple d’application est basé sur Node.js. Il est donc préférable d’
  }
 ```
 
-    Désormais, en fonction du fichier JSON transmis par le biais de ce paramètre de ligne de commande, soit le JSON JSON du jeton d’accès au développement local, soit le JSON des informations d’identification du service, l’application obtient un jeton d’accès.
+    En fonction du fichier JSON transmis par le biais du paramètre de ligne de commande « file » (le fichier JSON du jeton d’accès au développement local ou le fichier JSON des informations d’identification du service), l’application obtient un jeton d’accès.
     
-    N’oubliez pas que même si les informations d’identification du service expirent tous les 365 jours, le jeton d’accès JWT et le jeton d’accès correspondant expirent fréquemment et doivent être actualisés avant expiration. Pour ce faire, utilisez un &quot;refresh_token&quot; [fourni par Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens).
+    N’oubliez pas que même si les informations d’identification du service expirent tous les 365 jours, le jeton JWT et le jeton d’accès correspondant expirent fréquemment et doivent être actualisés avant leur expiration. Pour ce faire, utilisez la commande « refresh_token » [fournie par Adobe IMS](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/OAuth/OAuth.md#access-tokens).
 
-1. Une fois ces modifications en place, le fichier JSON des informations d’identification du service a été téléchargé à partir d’AEM Developer Console et, pour plus de simplicité, enregistré sous la forme `service_token.json` dans le même dossier que celui-ci `index.js`. Maintenant, exécutez l’application en remplaçant le paramètre de ligne de commande `file` avec `service_token.json`et de mettre à jour la variable `propertyValue` à une nouvelle valeur afin que les effets soient visibles dans AEM.
+1. Une fois ces modifications en place, le fichier JSON des informations d’identification du service est téléchargé depuis la Developer Console d’AEM et, pour plus de simplicité, enregistré sous `service_token.json` dans le même dossier que `index.js`. À présent, exécutez l’application en remplaçant le paramètre de ligne de commande `file` par `service_token.json` et en mettant à jour la `propertyValue` vers une nouvelle valeur afin que les effets soient visibles dans AEM.
 
    ```shell
    $ node index.js \
@@ -197,7 +197,7 @@ Cet exemple d’application est basé sur Node.js. Il est donc préférable d’
        file=service_token.json
    ```
 
-   La sortie vers le terminal ressemble à ce qui suit :
+   La sortie vers le terminal ressemble à ce qui suit :
 
    ```shell
    200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting.json
@@ -207,26 +207,26 @@ Cet exemple d’application est basé sur Node.js. Il est donc préférable d’
    403 - Forbidden @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_286664352.jpg.json
    ```
 
-   Le __403 - Interdit__ lignes, indiquez les erreurs dans les appels API HTTP à AEM as a Cloud Service. Ces erreurs 403 interdites se produisent lors de la tentative de mise à jour des métadonnées des ressources.
+   Les lignes __403 Interdit__ signalent les erreurs dans les appels d’API HTTP vers AEM as a Cloud Service. Ces erreurs 403 d’interdiction se produisent lors de la tentative de mise à jour des métadonnées des ressources.
 
-   Cela s’explique par le fait que le jeton d’accès dérivé des informations d’identification du service authentifie la demande d’AEM à l’aide d’un compte technique créé automatiquement AEM utilisateur qui, par défaut, dispose uniquement d’un accès en lecture. Pour permettre l’accès en écriture de l’application à AEM, l’utilisateur du compte technique AEM associé au jeton d’accès doit se voir accorder l’autorisation dans l’.
+   Cela s’explique par le fait que le jeton d’accès dérivé des informations d’identification du service authentifie la demande d’AEM à l’aide d’un profil d’utilisation de compte technique AEM créé automatiquement qui, par défaut, dispose uniquement d’un accès en lecture seule. Pour permettre l’accès en écriture de l’application à AEM, le profil d’utilisation du compte technique AEM associé au jeton d’accès doit bénéficier de l’autorisation dans AEM.
 
 ## Configurer l’accès dans AEM
 
-Le jeton d’accès dérivé des informations d’identification du service utilise un compte technique AEM utilisateur qui est membre du __Contributeurs__ AEM groupe d’utilisateurs.
+Le jeton d’accès dérivé des informations d’identification du service utilise un profil d’utilisation de compte technique AEM membre du groupe d’utilisateurs __Contributeurs__ d’AEM.
 
-![Informations d’identification du service - Utilisateur AEM compte technique](./assets/service-credentials/technical-account-user.png)
+![Informations d’identification du service - Profil d’utilisation de compte technique AEM.](./assets/service-credentials/technical-account-user.png)
 
-Une fois que le compte technique AEM utilisateur existe dans AEM (après la première requête HTTP avec le jeton d’accès), les autorisations de cet utilisateur peuvent être gérées de la même manière que les autres utilisateurs .
+Une fois que le profil d’utilisation de compte technique AEM existe dans AEM (après la première requête HTTP avec le jeton d’accès), les autorisations d’utilisation peuvent être gérées de la même manière que celles des autres utilisateurs et utilisatrices d’AEM.
 
-1. Tout d’abord, recherchez le nom de connexion AEM du compte technique en ouvrant le fichier JSON des informations d’identification du service téléchargé à partir d’AEM Developer Console, puis recherchez le `integration.email` qui doit ressembler à : `12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com`.
-1. Connectez-vous au service Auteur de l’environnement AEM correspondant en tant qu’administrateur AEM
-1. Accédez à __Outils__ > __Sécurité__ > __Utilisateurs__
-1. Localisez l’utilisateur AEM avec le __Nom de connexion__ identifié à l’étape 1 et ouvrez le __Propriétés__
-1. Accédez au __Groupes__ et ajoutez le __Utilisateurs de DAM__ groupe (qui écrit l’accès aux ressources)
-1. Appuyer __Enregistrer et fermer__
+1. Tout d’abord, recherchez l’identifiant de connexion AEM du compte technique en ouvrant le fichier JSON des informations d’identification du service téléchargé depuis la Developer Console d’AEM, puis recherchez la valeur `integration.email` qui doit ressembler à : `12345678-abcd-9000-efgh-0987654321c@techacct.adobe.com`.
+1. Connectez-vous au service de création de l’environnement AEM correspondant en tant que personne administratrice d’AEM.
+1. Accédez à __Outils__ > __Sécurité__ > __Utilisateurs__.
+1. Localisez la personne utilisatrice d’AEM à l’aide de l’__identifiant de connexion__ identifié à l’étape 1 et ouvrez ses __Propriétés__.
+1. Accédez à l’onglet __Groupes__ et ajoutez le groupe d’__utilisation de gestion des ressources numériques (DAM)__ (dont les membres bénéficient de l’accès en écriture aux ressources).
+1. Appuyez sur __Enregistrer et fermer__.
 
-Avec le compte technique autorisé dans AEM à disposer d’autorisations d’écriture sur les ressources, réexécutez l’application :
+Maintenant que le compte technique dispose des autorisations d’écriture sur les ressources dans AEM, réexécutez l’application :
 
 ```shell
 $ node index.js \
@@ -237,7 +237,7 @@ $ node index.js \
     file=service_token.json
 ```
 
-La sortie vers le terminal ressemble à ce qui suit :
+La sortie vers le terminal ressemble à ce qui suit :
 
 ```
 200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting.json
@@ -247,17 +247,17 @@ La sortie vers le terminal ressemble à ce qui suit :
 200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_280313729.jpg.json
 ```
 
-## Vérifier les modifications
+## Vérifiez les modifications
 
-1. Connectez-vous à l’environnement as a Cloud Service AEM qui a été mis à jour (en utilisant le même nom d’hôte que celui fourni dans la variable `aem` paramètre de ligne de commande)
-1. Accédez au __Ressources__ > __Fichiers__
-1. Accédez au dossier de ressources spécifié par la propriété `folder` paramètre de ligne de commande, par exemple __WKND__ > __Anglais__ > __Aventures__ > __Goûts du vin de Napa__
-1. Ouvrez le __Propriétés__ pour toute ressource du dossier
-1. Accédez au __Avancé__ tab
-1. Vérifiez la valeur de la propriété mise à jour, par exemple __Copyright__ qui est mappé à la mise à jour `metadata/dc:rights` Propriété JCR, qui reflète désormais la valeur fournie dans la propriété `propertyValue` par exemple, __Utilisation restreinte de WKND__
+1. Connectez-vous à l’environnement AEM as a Cloud Service mis à jour (en utilisant le même nom d’hôte que celui fourni dans le paramètre de ligne de commande `aem`).
+1. Accédez à __Ressources__ > __Fichiers__.
+1. Accédez au dossier de ressources spécifié par le paramètre de ligne de commande `folder`, par exemple __WKND__ > __English__ > __Adventures__ > __Napa Wine Tasting__.
+1. Ouvrez les __Propriétés__ de n’importe quelle ressource du dossier.
+1. Accédez à l’onglet __Avancé__.
+1. Vérifiez la valeur de la propriété mise à jour, par exemple __Copyright__, qui est mappée à la propriété JCR `metadata/dc:rights` mise à jour. Elle reflète désormais la valeur fournie dans le paramètre `propertyValue`, par exemple, __Utilisation restreinte de WKND__.
 
-![Mise à jour des métadonnées d’utilisation restreinte WKND](./assets/service-credentials/asset-metadata.png)
+![Mise à jour des métadonnées d’utilisation restreinte de WKND.](./assets/service-credentials/asset-metadata.png)
 
-## Félicitations !
+## Félicitations.
 
-Maintenant que nous avons accédé par programmation à AEM as a Cloud Service à l’aide d’un jeton d’accès au développement local et d’un jeton d’accès service à service prêt pour la production !
+Vous venez d’accéder par programmation à AEM as a Cloud Service à l’aide d’un jeton d’accès au développement local et d’un jeton d’accès service à service pour la production.

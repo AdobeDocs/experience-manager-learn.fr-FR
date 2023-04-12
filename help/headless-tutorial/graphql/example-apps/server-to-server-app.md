@@ -1,6 +1,6 @@
 ---
-title: Application Node.js serveur à serveur - AEM exemple sans affichage
-description: Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application Node.js côté serveur explique comment interroger le contenu à l’aide des API GraphQL AEM à l’aide de requêtes persistantes.
+title: Application Node.js serveur à serveur - Exemple AEM Headless
+description: Découvrez les fonctionnalités découplées d’Adobe Experience Manager (AEM) grâce aux exemples d’applications. Cette application Node.js côté serveur montre comment interroger du contenu à l’aide des API GraphQL d’AEM et des requêtes persistantes.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -11,80 +11,80 @@ thumbnail: KT-10798.jpg
 source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 # Application Node.js serveur à serveur
 
-Les exemples d’applications sont un excellent moyen d’explorer les fonctionnalités d’Adobe Experience Manager (AEM) sans interface utilisateur. Cette application serveur à serveur explique comment interroger le contenu à l’aide des API GraphQL AEM à l’aide de requêtes persistantes et l’imprimer sur un terminal.
+Découvrez les fonctionnalités découplées d’Adobe Experience Manager (AEM) grâce aux exemples d’applications. Cette application serveur à serveur montre comment interroger du contenu à l’aide des API GraphQL d’AEM en utilisant des requêtes persistantes et l’imprimer sur un terminal.
 
-![Application Node.js serveur à serveur avec AEM sans affichage](./assets/server-to-server-app/server-to-server-app.png)
+![Application Node.js serveur à serveur avec AEM Headless.](./assets/server-to-server-app/server-to-server-app.png)
 
-Afficher la variable [code source sur GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app)
+Afficher le [code source sur GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app)
 
 ## Prérequis {#prerequisites}
 
-Les outils suivants doivent être installés localement :
+Les outils suivants doivent être installés localement :
 
-+ [Node.js v18](https://nodejs.org/en/)
++ [Node.js v18](https://nodejs.org/fr/)
 + [Git](https://git-scm.com/)
 
-## Configuration requise AEM
+## Configuration requise d’AEM
 
-L’application Node.js fonctionne avec les options de déploiement AEM suivantes. Tous les déploiements nécessitent la variable [Site WKND v2.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) à installer.
+L’application Node.js fonctionne avec les options de déploiement d’AEM suivantes. Tous les déploiements nécessitent que la version [v2.0.0 ou supérieure du site WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) soit installée.
 
-+ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr)
-+ Éventuellement, [informations d’identification du service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html) si vous autorisez des requêtes (par exemple, la connexion au service AEM Author).
++ [AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr)
++ Vous aurez éventuellement besoin des [informations d’identification du service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr) si vous autorisez des requêtes (par exemple, la connexion au service création AEM).
 
-Cette application Node.js peut se connecter à AEM Author ou AEM Publish en fonction des paramètres de ligne de commande.
+Cette application Node.js peut se connecter à l’instance de création ou de publication AEM en fonction des paramètres de ligne de commande.
 
 ## Utilisation
 
-1. Cloner le `adobe/aem-guides-wknd-graphql` référentiel :
+1. Clonez le référentiel `adobe/aem-guides-wknd-graphql` :
 
    ```shell
    $ git clone git@github.com:adobe/aem-guides-wknd-graphql.git
    ```
 
-1. Ouvrez un terminal et exécutez les commandes :
+1. Ouvrez un terminal et exécutez les commandes :
 
    ```shell
    $ cd aem-guides-wknd-graphql/server-to-server-app
    $ npm install
    ```
 
-1. L’application peut être exécutée à l’aide de la commande :
+1. L’application peut être exécutée à l’aide de la commande :
 
    ```
    $ node index.js <AEM_HOST> <OPTIONAL_SERVICE_CONFIG_FILE_PATH>
    ```
 
-   Par exemple, pour exécuter l’application sur AEM Publish sans autorisation :
+   Par exemple, pour exécuter l’application sur l’instance de publication AEM sans autorisation, saisissez les commandes suivantes :
 
    ```shell
    $ node index.js https://publish-p123-e789.adobeaemcloud.com
    ```
 
-   Pour exécuter l’application par rapport à l’auteur AEM avec autorisation :
+   Pour exécuter l’application sur l’instance de création AEM avec autorisation, saisissez les commandes :
 
    ```shell
    $ node index.js https://author-p123-e456.adobeaemcloud.com ./service-config.json
    ```
 
-1. Une liste JSON des aventures du site de référence WKND doit être imprimée dans le terminal.
+1. Une liste JSON des Adventures du site de référence WKND doit être imprimée dans le terminal.
 
 ## Le code
 
-Vous trouverez ci-dessous un résumé de la création de l’application Node.js serveur à serveur, de la manière dont elle se connecte à AEM sans affichage pour récupérer du contenu à l’aide des requêtes persistantes de GraphQL et de la manière dont ces données sont présentées. Le code complet se trouve sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app).
+Vous trouverez ci-dessous un résumé de la création de l’application Node.js serveur à serveur, de la manière dont elle se connecte à AEM Headless pour récupérer du contenu à l’aide des requêtes persistantes GraphQL et de la façon dont ces données sont présentées. Le code complet se trouve sur [GitHub](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/server-to-server-app).
 
-Le cas d’utilisation courant pour les AEM sans affichage serveur consiste à synchroniser les données de fragments de contenu d’AEM dans d’autres systèmes. Toutefois, cette application est intentionnellement simple et imprime les résultats JSON de la requête persistante.
+Un cas d’utilisation courant des applications AEM Headless serveur à serveur consiste à synchroniser les données de fragments de contenu d’AEM dans d’autres systèmes. Toutefois, cette application est volontairement simple et imprime les résultats JSON de la requête persistante.
 
 ### Requêtes persistantes
 
-En suivant AEM bonnes pratiques sans affichage, l’application utilise AEM requêtes persistantes GraphQL pour interroger les données d’aventure. L’application utilise deux requêtes persistantes :
+Conformément aux bonnes pratiques d’AEM Headless, l’application utilise les requêtes persistantes GraphQL d’AEM pour interroger les données d’Adventure. L’application utilise deux requêtes persistantes :
 
-+ `wknd/adventures-all` requête persistante, qui renvoie toutes les aventures d’AEM avec un jeu abrégé de propriétés. Cette requête persistante entraîne la liste des aventures de la vue initiale.
++ La requête persistante `wknd/adventures-all`, qui renvoie toutes les Adventures dans AEM avec un ensemble abrégé de propriétés. Cette requête persistante génère la liste des Adventures de la vue initiale.
 
 ```
 # Retrieves a list of all adventures
@@ -109,7 +109,7 @@ En suivant AEM bonnes pratiques sans affichage, l’application utilise AEM requ
 }
 ```
 
-### Création d’AEM client sans affichage
+### Créer un client AEM Headless
 
 ```javascript
 const { AEMHeadless, getToken } = require('@adobe/aem-headless-client-nodejs');
@@ -142,9 +142,9 @@ async function run() {
 
 ### Exécuter la requête persistante GraphQL
 
-AEM requêtes persistantes sont exécutées sur une GET HTTP et, par conséquent, la variable [AEM client sans affichage pour Node.js](https://github.com/adobe/aem-headless-client-nodejs) est utilisé pour [exécuter les requêtes GraphQL persistantes ;](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) par rapport à AEM et récupère le contenu de l’aventure.
+Les requêtes persistantes d’AEM sont exécutées à l’aide de la méthode HTTP GET et, par conséquent, le [client AEM Headless pour Node.js](https://github.com/adobe/aem-headless-client-nodejs) est utilisé pour [exécuter les requêtes persistantes GraphQL](https://github.com/adobe/aem-headless-client-nodejs#within-asyncawait) sur AEM et récupérer le contenu de l’Adventure.
 
-La requête conservée est appelée en appelant `aemHeadlessClient.runPersistedQuery(...)`et transmission du nom de la requête GraphQL persistante. Une fois que GraphQL renvoie les données, transmettez-les à la méthode simplifiée `doSomethingWithDataFromAEM(..)` , qui imprime les résultats, mais envoie généralement les données à un autre système, ou génère une sortie basée sur les données récupérées.
+La requête persistante est appelée en appelant `aemHeadlessClient.runPersistedQuery(...)` et en transmettant le nom de la requête persistante GraphQL. Une fois que GraphQL renvoie les données, transmettez-les à la fonction simplifiée `doSomethingWithDataFromAEM(..)`. Cette dernière imprime les résultats, mais envoie généralement les données à un autre système, ou génère une sortie basée sur les données récupérées.
 
 ```js
 // index.js

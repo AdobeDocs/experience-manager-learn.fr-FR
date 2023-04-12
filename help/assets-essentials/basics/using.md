@@ -1,6 +1,6 @@
 ---
-title: Utilisation d’Assets Essentials
-description: Découvrez comment télécharger des ressources dans Assets Essentials.
+title: Utiliser Assets Essentials
+description: Découvrez comment télécharger des ressources dans Assets Essentials.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -13,12 +13,12 @@ exl-id: 83bf8d76-2e36-45d4-bfff-03758e5f7bdc
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '28'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Utilisation d’Assets Essentials
+# Utiliser Assets Essentials
 
-Découvrez comment filtrer, rechercher et télécharger des ressources dans Assets Essentials.
+Découvrez comment filtrer, rechercher et télécharger des ressources dans Assets Essentials.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335861?quality=12&learn=on)

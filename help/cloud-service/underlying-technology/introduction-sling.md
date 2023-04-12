@@ -1,6 +1,6 @@
 ---
 title: Introduction à Sling
-description: Présentation de Sling, un framework web RESTful open source qui fait partie de la pile de technologies sous-jacente de Adobe Experience Manager.
+description: Présentation de Sling, un framework web RESTful en open source qui fait partie de la pile technologique sous-jacente d’Adobe Experience Manager.
 topics: sling, architecture
 audience: administrator, developer
 doc-type: technical video
@@ -15,12 +15,12 @@ exl-id: 92afc9c4-3d58-4787-86f6-46495d89c4d4
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '41'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
-# Présentation d’[!DNL Sling] {#introduction-sling}
+# Introduction à [!DNL Sling] {#introduction-sling}
 
-Introduction à [!DNL Sling], un open source [!DNL RESTful] framework web qui fait partie de la pile de technologie sous-jacente de Adobe Experience Manager.
+Présentation de [!DNL Sling], un framework web [!DNL RESTful] en open-source qui fait partie de la pile technologique sous-jacente d’Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32032?quality=12&learn=on)

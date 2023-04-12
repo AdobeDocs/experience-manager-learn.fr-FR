@@ -17,54 +17,54 @@ last-substantial-update: 2022-08-25T00:00:00Z
 source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
 # Créer votre première SPA React dans AEM {#overview}
 
-Bienvenue dans un tutoriel en plusieurs parties conçu pour les développeurs qui découvrent le **Éditeur de SPA** dans Adobe Experience Manager (AEM). Ce tutoriel décrit la mise en oeuvre d’une application React pour une marque de style de vie fictive, WKND. L’application React est développée et conçue pour être déployée avec AEM SPA Editor, qui mappe les composants React aux composants d’AEM. Les SPA terminées, déployées sur AEM, peuvent être créées dynamiquement à l’aide des outils de modification en ligne traditionnels d’.
+Bienvenue dans un tutoriel en plusieurs parties conçu pour les développeurs et développeuses qui découvrent l’**éditeur de SPA** dans Adobe Experience Manager (AEM). Ce tutoriel présente l’implémentation d’une application React pour une marque fictive de style de vie, WKND. L’application React est développée et conçue pour être déployée avec l’éditeur de SPA d’AEM, qui mappe les composants React aux composants d’AEM. Les SPA terminées, déployées sur AEM, peuvent être créées dynamiquement à l’aide des outils de modification en ligne traditionnels d’AEM.
 
-![SPA finale implémentée](assets/wknd-spa-implementation.png)
+![SPA finale implémentée.](assets/wknd-spa-implementation.png)
 
-*Implémentation SPA WKND*
+*Implémentation de la SPA WKND*
 
 ## À propos
 
-Le tutoriel est conçu pour fonctionner avec **AEM as a Cloud Service** et est rétrocompatible avec **AEM 6.5.4+** et **AEM 6.4.8+**.
+Le tutoriel est conçu pour fonctionner avec **AEM as a Cloud Service** et est rétrocompatible avec **AEM 6.5.4+** et **AEM 6.4.8+**.
 
 ## Dernier code
 
 Vous trouverez tout le code du tutoriel sur [GitHub](https://github.com/adobe/aem-guides-wknd-spa).
 
-Le [base de code la plus récente](https://github.com/adobe/aem-guides-wknd-spa/releases) est disponible sous forme de packages AEM téléchargeables.
+La [base de code la plus récente](https://github.com/adobe/aem-guides-wknd-spa/releases) est disponible sous forme de packages AEM téléchargeables.
 
 ## Prérequis
 
-Avant de commencer ce tutoriel, vous aurez besoin des éléments suivants :
+Avant de commencer ce tutoriel, il vous faut :
 
-* Connaissances de base en HTML, CSS et JavaScript
-* Familiarité de base avec [React](https://reactjs.org/tutorial/tutorial.html)
+* Des connaissances de base en HTML, CSS et JavaScript
+* Des connaissance de base de [React](https://reactjs.org/tutorial/tutorial.html)
 
-*Bien qu’il ne soit pas nécessaire, il est préférable de posséder une compréhension élémentaire de la fonction [développement des composants AEM Sites traditionnels](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr).*
+*Bien que cela ne soit pas obligatoire, il est préférable de comprendre les bases du [développement des composants traditionnels d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr).*
 
 ## Environnement de développement local {#local-dev-environment}
 
-Un environnement de développement local est nécessaire pour terminer ce tutoriel. Les captures d’écran et les vidéos sont capturées à l’aide AEM SDK as a Cloud Service s’exécutant dans un environnement Mac OS avec [Visual Studio Code](https://code.visualstudio.com/) comme IDE. Les commandes et le code doivent être indépendants du système d’exploitation local, sauf indication contraire.
+Pour suivre ce tutoriel, un environnement de développement local est nécessaire. Les captures d’écran et les vidéos sont enregistrées à l’aide du SDK AEM as a Cloud Service exécuté dans un environnement macOS avec [Visual Studio Code](https://code.visualstudio.com/) comme IDE. Sauf indication contraire, les commandes et le code doivent être indépendants du système d’exploitation local.
 
 ### Logiciels requis
 
-* [AEM SDK as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=fr), [AEM 6.5.4+](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en#aem-65) ou [AEM 6.4.8+](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en#aem-64)
+* [SDK d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=fr), [AEM 6.5.4+](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr#aem-65) ou [AEM 6.4.8+](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr#aem-64)
 * [Java](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 * [Apache Maven](https://maven.apache.org/) (3.3.9 ou version ultérieure)
 * [Node.js](https://nodejs.org/en/) et [npm](https://www.npmjs.com/)
 
 >[!NOTE]
 >
-> **Vous découvrez AEM as a Cloud Service ?** Consultez la section [le guide suivant pour configurer un environnement de développement local à l’aide du SDK as a Cloud Service AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr).
+> **Vous découvrez AEM as a Cloud Service ?** Consultez le [guide suivant pour configurer un environnement de développement local à l’aide du SDK d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr).
 >
-> **Vous découvrez AEM 6.5 ?** Consultez la section [guide de configuration d’un environnement de développement local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr).
+> **Vous découvrez AEM 6.5 ?** Consultez le [guide suivant pour configurer un environnement de développement local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr).
 
 ## Étapes suivantes {#next-steps}
 
-Qu&#39;attendez-vous?! Démarrez le tutoriel en accédant à la [Créer un projet](create-project.md) chapitres et découvrez comment générer un projet activé pour SPA Editor à l’aide d’AEM Project Archetype.
+Qu’attendez-vous ? Démarrez le tutoriel en accédant au chapitre [Créer un projet](create-project.md) et découvrez comment générer un projet activé pour l’éditeur de SPA à l’aide de l’archétype de projet d’AEM.

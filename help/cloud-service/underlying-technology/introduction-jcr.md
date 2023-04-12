@@ -1,6 +1,6 @@
 ---
 title: Présentation du référentiel de contenu Java (JCR)
-description: Cette section présente le JCR (Java Content Repository) utilisé par Adobe Experience Manager. Le JCR est le niveau de base de la pile de technologie d’AEM et est responsable de la persistance, du stockage, de la recherche, du contrôle d’accès sous-jacent, etc.
+description: Cette section présente le référentiel de contenu Java (JCR) utilisé par Adobe Experience Manager. Le JCR est la pierre angulaire de la pile de technologie d’AEM sur laquelle reposent la persistance du contenu, le stockage, la recherche, le contrôle d’accès sous-jacents, etc.
 topics: jcr, architecture
 audience: administrator, developer
 doc-type: technical video
@@ -15,12 +15,12 @@ exl-id: 1e419597-3f60-4110-bafd-a4acb0fad7a0
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Présentation du référentiel de contenu Java (JCR) {#introduction-jcr}
 
-Cette section présente le référentiel de contenu Java (JCR) utilisé par Adobe Experience Manager. Le JCR est le niveau de base de la pile de technologie d’AEM et est responsable de la persistance, du stockage, de la recherche, du contrôle d’accès sous-jacent, etc.
+Cette section présente le référentiel de contenu Java (JCR) utilisé par Adobe Experience Manager. Le JCR est la pierre angulaire de la pile de technologie d’AEM sur laquelle reposent la persistance du contenu, le stockage, la recherche, le contrôle d’accès sous-jacents, etc.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32030?quality=12&learn=on)

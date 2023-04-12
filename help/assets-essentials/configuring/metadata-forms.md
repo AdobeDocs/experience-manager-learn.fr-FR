@@ -1,6 +1,6 @@
 ---
-title: Forms de métadonnées Assets Essentials
-description: Découvrez comment Assets Essentials Metadata Forms peut être rapidement et facilement configuré pour personnaliser les métadonnées de ressources.
+title: Formulaires de métadonnées Assets Essentials
+description: Découvrez comment les formulaires de métadonnées d’Assets Essentials peuvent être configurés rapidement et facilement pour adapter les métadonnées des ressources.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -13,12 +13,12 @@ exl-id: 9e68efbb-38bd-4538-b899-5fd356c9322d
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '40'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Forms de métadonnées dans Assets Essentials
+# Formulaires de métadonnées dans Assets Essentials
 
-Découvrez comment Assets Essentials Metadata Forms peut être rapidement et facilement configuré pour personnaliser une ressource.
+Découvrez comment les formulaires de métadonnées d’Assets Essentials peuvent être configurés rapidement et facilement pour adapter les ressources.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342154?quality=12&learn=on)

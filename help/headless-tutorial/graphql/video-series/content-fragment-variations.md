@@ -12,7 +12,7 @@ exl-id: c7fb28b8-494f-47d6-95b7-01ef444abe99
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '79'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 7%
 
 Découvrez comment créer des variantes de fragments de contenu et explorez certains cas d’utilisation courants.
 
-Dans cette vidéo, vous allez :
+Dans cette vidéo, vous allez :
 
-+ Découvrez comment créer une variation d’un fragment de contenu
-+ Découvrez comment les variations peuvent être utilisées dans un scénario réel
-+ Examinez la syntaxe GraphQL pour demander une variation spécifique.
++ découvrir comment créer une variante d’un fragment de contenu ;
++ découvrir comment les variantes peuvent être utilisées dans un scénario réel ;
++ examiner la syntaxe GraphQL pour demander une variation spécifique.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333295?quality=12&learn=on)
 
-_Téléchargez la [Collection Postman](./assets/aem-headless-video-series.postman_collection.json) utilisée dans toute la série AEM de vidéos sans affichage._
+_Téléchargez la [Collection Postman](./assets/aem-headless-video-series.postman_collection.json) utilisée dans toute la série de vidéos AEM Headless._

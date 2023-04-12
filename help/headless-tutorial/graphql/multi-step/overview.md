@@ -1,6 +1,6 @@
 ---
-title: Tutoriel sur la prise en main d’AEM sans tête - GraphQL
-description: Tutoriel complet illustrant comment créer et exposer du contenu à l’aide AEM API GraphQL.
+title: Prise en main à l’aide du tutoriel pratique d’AEM Headless - GraphQL
+description: Tutoriel complet illustrant comment développer et exposer du contenu à l’aide des API AEM GraphQ
 doc-type: tutorial
 mini-toc-levels: 1
 kt: 6678
@@ -14,42 +14,42 @@ exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 7%
+ht-degree: 94%
 
 ---
 
-# Prise en main d’AEM Headless - GraphQL 
+# Prise en main d’AEM Headless - GraphQL
 
-Tutoriel complet illustrant comment créer et exposer du contenu à l’aide AEM API GraphQL et utilisé par une application externe, dans un scénario CMS sans interface.
+Tutoriel complet illustrant comment développer et exposer du contenu à l’aide des API AEM GraphQ et utilisé par une application externe, dans un scénario CMS découplé.
 
-Ce tutoriel explique comment AEM API GraphQL et les fonctionnalités headless peuvent être utilisées pour alimenter les expériences affichées dans une application externe.
+Ce tutoriel explique comment les API AEM GraphQL et les fonctionnalités découplées peuvent être utilisées pour alimenter les expériences affichées dans une application externe.
 
-Ce tutoriel couvre les rubriques suivantes :
+Ce tutoriel couvre les sujets suivants :
 
-* Création d’une configuration de projet
-* Création de modèles de fragment de contenu pour modéliser les données
-* Créez des fragments de contenu en fonction des modèles précédemment créés.
-* Découvrez comment interroger les fragments de contenu dans AEM à l’aide de l’outil de développement GraphiQL intégré.
-* Pour stocker ou conserver les requêtes GraphQL à AEM
-* Utilisation de requêtes GraphQL persistantes à partir d’un exemple d’application React
+* Créer une configuration de projet
+* Créer des modèles de fragment de contenu pour modéliser les données
+* Créer des fragments de contenu en fonction des modèles précédemment créés
+* Découvrir comment interroger les fragments de contenu dans AEM à l&#39;aide de l’outil de développement GraphiQL intégré
+* Stocker ou conserver les requêtes GraphQL dans AEM
+* Utiliser des requêtes GraphQL persistantes à partir d’un exemple d’application React
 
 ## Prérequis {#prerequisites}
 
-Pour suivre ce tutoriel, vous devez suivre les étapes suivantes :
+Pour suivre ce tutoriel, vous devez suivre les étapes ci-après :
 
 * Compétences de base en HTML et JavaScript
-* Les outils suivants doivent être installés localement :
+* Les outils suivants doivent être installés localement :
    * [Node.js v18](https://nodejs.org/)
    * [Git](https://git-scm.com/)
    * Un IDE (par exemple, [Microsoft® Visual Studio Code](https://code.visualstudio.com/))
 
 ### Environnement AEM
 
-Pour suivre ce tutoriel, AEM’accès administrateur à un environnement AEM as a Cloud Service est recommandé. Si vous n’avez pas accès à AEM environnement as a Cloud Service, vous pouvez utiliser la variable [AEM local as a Cloud Service SDK de démarrage rapide](/help/cloud-service/local-development-environment/aem-runtime.md). Toutefois, il est important de noter que certains écrans de l’interface utilisateur du produit, tels que la navigation dans les fragments de contenu, sont différents.
+Pour suivre ce tutoriel, il est recommandé de disposer d’un accès administrateur AEM à un environnement AEM as a Cloud Service. Si vous n’avez pas accès à l’environnement AEM as a Cloud Service, vous pouvez utiliser le [SDK de démarrage rapide local d’AEM as a Cloud Service](/help/cloud-service/local-development-environment/aem-runtime.md). Toutefois, il est important de noter que certains écrans de l’interface utilisateur du produit, tels que la navigation dans les fragments de contenu, sont différents.
 
-## Commençons !
+## Commençons !
 
-Commencez le tutoriel par [Définition de modèles de fragment de contenu](content-fragment-models.md).
+Commencez le tutoriel par la section [Définition de modèles de fragment de contenu](content-fragment-models.md).
 
 ## Projet GitHub
 

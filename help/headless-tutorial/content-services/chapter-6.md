@@ -1,6 +1,6 @@
 ---
-title: Chapitre 6 - Exposition du contenu sur AEM Publish as JSON - Content Services
-description: Le chapitre 6 du tutoriel AEM sans affichage vous assure que tous les modules, configurations et contenus nécessaires se trouvent sur AEM Publish pour permettre la consommation à partir de l’application mobile.
+title: 'Chapitre 6 : exposer le contenu sur une instance de publication AEM en tant que JSON - Content Services'
+description: Dans le chapitre 6 du tutoriel AEM Headless, vous allez découvrir comment installer tous les packages, configurations et contenu nécessaires sur l’instance de publication AEM, afin de permettre leur consultation à partir de l’application mobile.
 feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
@@ -9,63 +9,63 @@ exl-id: b33d1509-531d-40c3-9b26-1d18c8d86a97
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Chapitre 6 - Exposition du contenu sur la publication AEM pour diffusion
+# Chapitre 6 : exposer le contenu sur l’instance de publication AEM pour sa diffusion
 
-Le chapitre 6 du tutoriel AEM sans affichage vous assure que tous les modules, configurations et contenus nécessaires se trouvent sur AEM Publish pour permettre leur consommation par l’application mobile.
+Dans le chapitre 6 du tutoriel AEM Headless, vous allez découvrir comment installer tous les packages, configurations et contenu nécessaires sur l’instance de publication AEM, afin de permettre leur consultation à partir de l’application mobile.
 
-## Publication de contenu pour AEM Content Services
+## Publier du contenu pour AEM Content Services
 
-La configuration et le contenu créés pour piloter les événements via AEM Content Services doivent être publiés sur AEM Publish afin que l’application mobile puisse y accéder.
+La configuration et le contenu créés pour piloter les événements via AEM Content Services doivent être publiés sur l’instance de publication AEM afin que l’application mobile puisse y accéder.
 
-Comme AEM Content Services est basé sur Configuration (modèles de fragment de contenu, modèles modifiables), Ressources (fragments de contenu, images) et Pages, tous ces éléments disposent automatiquement de fonctionnalités AEM gestion de contenu, notamment :
+Comme AEM Content Services repose sur des éléments de configuration (modèles de fragment de contenu, modèles modifiables), des ressources (fragments de contenu, images) et des pages, ces derniers bénéficient automatiquement des fonctionnalités de gestion de contenu d’AEM, notamment :
 
-* Processus de révision et de traitement
-* et activation/désactivation pour la publication et l’extraction de contenu à partir des points d’entrée AEM Content Services de la publication AEM
+* Workflow de révision et de traitement
+* et activation et désactivation pour la publication et l’extraction de contenu à partir des points de terminaison AEM Content Services de l’instance de publication AEM
 
-1. Assurez-vous que la variable **[!DNL WKND Mobile]Packages d’applications**, répertoriés dans [Chapitre 1](./chapter-1.md#wknd-mobile-application-packages), sont installés sur **Publication AEM** using [!UICONTROL Gestionnaire de modules].
+1. Assurez-vous que les packages de l’application **[!DNL WKND Mobile]**, répertoriés au [Chapitre 1](./chapter-1.md#wknd-mobile-application-packages), sont installés sur l’**instance de publication AEM** à l’aide du [!UICONTROL Gestionnaire de modules].
    * [http://localhost:4503/crx/packmgr](http://localhost:4503/crx/packmgr)
 
-1. Publiez le **[!DNL WKND Mobile Events API]Modèle modifiable**
+1. Publiez le modèle modifiable **[!DNL WKND Mobile Events API]**
    1. Accédez à **[!UICONTROL AEM] > [!UICONTROL Outils] > [!UICONTROL Général] > [!UICONTROL Modèles] >[!DNL WKND Mobile]**
-   1. Sélectionnez la **[!DNL Event API]** modèle
-   1. Appuyer **[!UICONTROL Publier]** dans la barre d’actions supérieure
-   1. Publiez le **modèle** et **toutes les références** (stratégies de contenu, mappages de stratégies de contenu et modèles)
+   1. Sélectionnez le modèle **[!DNL Event API]**
+   1. Appuyez sur **[!UICONTROL Publier]** dans la barre d’actions supérieure
+   1. Publiez le **modèle** et **toutes les références** (politiques de contenu, mappages de politiques de contenu et modèles)
 
-1. Publiez le **[!DNL WKND Mobile Events]fragments de contenu**.
+1. Publiez les fragments de contenu **[!DNL WKND Mobile Events]**.
 
-   Notez que cela est nécessaire, car l’API Events utilise le composant Content Fragment List, qui ne fait pas spécifiquement référence aux fragments de contenu.
+   Cette opération est nécessaire, car l’API Events utilise le composant Liste des fragments de contenu, qui ne fait pas spécifiquement référence aux fragments de contenu.
 
    1. Accédez à **[!UICONTROL AEM] > [!UICONTROL Ressources] > [!UICONTROL Fichiers] > [!DNL WKND Mobile] > [!DNL English] >[!DNL Events]**
-   1. Sélectionnez l’ensemble des **[!DNL Event]** fragments de contenu
+   1. Sélectionnez tous les fragments de contenu **[!DNL Event]**
    1. Appuyez sur le bouton **[!UICONTROL Gérer la publication]** dans la barre d’actions supérieure
-   1. Laissez la valeur par défaut **Publier** action en l’état, appuyez sur **[!UICONTROL Suivant]** dans la barre d’actions supérieure
-   1. Sélectionner **all** fragments de contenu
-   1. Appuyer **[!UICONTROL Publier]** dans la barre d’actions supérieure
-      * *Le [!DNL Events] Le modèle de fragment de contenu et les images d’événement de référence sont automatiquement publiés avec les fragments de contenu.*
+   1. Laissez l’action par défaut **Publier** en l’état, puis appuyez sur **[!UICONTROL Suivant]** dans la barre d’actions supérieure
+   1. Sélectionnez **tous** les fragments de contenu
+   1. Appuyez sur **[!UICONTROL Publier]** dans la barre d’actions supérieure
+      * *Le modèle de fragment de contenu [!DNL Events] et les images d’événements de référence seront automatiquement publiés avec les fragments de contenu.*
 
-1. Publiez le **[!DNL Events API]page**.
+1. Publiez la page **[!DNL Events API]**
    1. Accédez à **[!UICONTROL AEM] > [!UICONTROL Sites] > [!DNL WKND Mobile] > [!DNL English] >[!DNL API]**
-   1. Sélectionnez la **[!DNL Events]** page
-   1. Appuyez sur le bouton **[!UICONTROL Gérer la publication]** dans la barre d’actions supérieure
-   1. Laissez la valeur par défaut **Publier** action en l’état, appuyez sur **[!UICONTROL Suivant]** dans la barre d’actions supérieure
-   1. Sélectionnez la **[!DNL Events]** page
-   1. Appuyer **[!DNL Publish]** dans la barre d’actions supérieure
+   1. Sélectionnez la page **[!DNL Events]**
+   1. Appuyez sur **[!UICONTROL Gérer la publication]** dans la barre d’actions supérieure
+   1. Laissez l’action par défaut **Publier**, puis appuyez sur **[!UICONTROL Suivant]** dans la barre d’actions supérieure
+   1. Sélectionnez la page **[!DNL Events]**
+   1. Appuyez sur **[!DNL Publish]** dans la barre d’actions supérieure.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28343?quality=12&learn=on)
 
-## Vérification de la publication AEM
+## Vérifier l’instance de publication AEM
 
-1. Dans un nouveau navigateur Web, assurez-vous d’être déconnecté d’AEM Publish et demandez les URL suivantes (en les remplaçant par `http://localhost:4503` pour tout hôte (hôte : port sur lequel AEM Publish est exécuté).
+1. Dans un nouveau navigateur web, vérifiez la déconnexion de l’instance de publication AEM, puis demandez les URL suivantes (en remplaçant `http://localhost:4503` par l’hôte et le port sur lesquels l’instance de publication AEM est exécutée).
 
    * [http://localhost:4503/content/wknd-mobile/en/api/events.model.json](http://localhost:4503/content/wknd-mobile/en/api/events.model.tidy.json)
-   Ces requêtes doivent renvoyer la même réponse JSON que lors de la révision des points de terminaison AEM Author correspondants. Dans le cas contraire, vérifiez que toutes les publications ont réussi (vérifiez les files d’attente de réplication), la variable [!DNL WKND Mobile] `ui.apps` Le module est installé sur AEM Publish et passez en revue les `error.log` pour AEM Publish.
+   Ces requêtes doivent renvoyer la même réponse JSON que celle obtenue lors de la révision des points d’entrée de l’instance de création AEM correspondante. Dans le cas contraire, vérifiez que toutes les publications ont réussi (vérifiez les files d’attente de réplication), que le package [!DNL WKND Mobile] `ui.apps` est installé sur l’instance de publication AEM et consultez le fichier `error.log` de l’instance de publication AEM.
 
 ## Étape suivante
 
-Il n’y a aucun package supplémentaire à installer. Assurez-vous que le contenu et la configuration décrits dans cette section sont publiés sur AEM Publish, sinon les chapitres suivants ne fonctionneront pas.
+Aucun package supplémentaire ne doit être installé. Avant de passer au chapitre suivant, assurez-vous que le contenu et la configuration décrits dans cette section sont publiés sur l’instance de publication AEM.
 
-* [Chapitre 7 - Consommation AEM Content Services à partir d’une application mobile](./chapter-7.md)
+* [Chapitre 7 : consulter AEM Content Services à partir d’une application mobile](./chapter-7.md)

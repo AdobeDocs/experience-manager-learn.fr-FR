@@ -1,6 +1,6 @@
 ---
-title: Utilisation de texte enrichi avec AEM sans affichage
-description: Découvrez comment créer du contenu et incorporer du contenu référencé à l’aide d’un éditeur de texte enrichi multiligne avec des fragments de contenu Adobe Experience Manager et comment le texte enrichi est diffusé par AEM API GraphQL sous la forme JSON et est utilisé par les applications sans interface utilisateur.
+title: Utiliser du texte enrichi avec AEM Headless
+description: Découvrez comment créer du contenu et incorporer du contenu référencé à l’aide d’un éditeur de texte enrichi multiligne avec des fragments de contenu d’Adobe Experience Manager. Découvrez en outre comment le texte enrichi est diffusé par les API GraphQL d’AEM sous un format JSON utilisé par les applications découplées.
 version: Cloud Service
 doc-type: article
 kt: 9985
@@ -11,63 +11,63 @@ exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '1464'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Texte enrichi avec AEM sans affichage
+# Texte enrichi avec AEM Headless
 
-Le champ de texte multiligne est un type de données de fragments de contenu qui permet aux auteurs de créer du contenu de texte enrichi. Les références à d’autres contenus, tels que des images ou d’autres fragments de contenu, peuvent être insérées dynamiquement dans la ligne au sein du flux du texte. Le champ de texte Une seule ligne est un autre type de données de fragments de contenu qui doit être utilisé pour les éléments de texte simples.
+Le champ de texte multiligne est un type de données de fragments de contenu qui permet aux créateurs et créatrices de créer du contenu de texte enrichi. Les références à d’autres contenus, tels que des images ou d’autres fragments de contenu, peuvent être intégrées dynamiquement au sein du flux du texte. Le champ de texte monoligne est un autre type de données de fragments de contenu devant être utilisé pour les éléments de texte simples.
 
-L’API GraphQL d’AEM offre une fonctionnalité robuste pour renvoyer du texte enrichi sous forme de HTML, de texte brut ou de code JSON pur. La représentation JSON est puissante, car elle donne à l’application cliente un contrôle total sur la manière de générer le contenu.
+L’API GraphQL d’AEM offre une fonctionnalité robuste permettant de renvoyer du texte enrichi sous forme de HTML, de texte brut ou de JSON pur. La représentation JSON est puissante, car elle donne à l’application cliente un contrôle total sur la manière de rendre le contenu.
 
-## Éditeur multi-lignes
+## Éditeur multiligne
 
 >[!VIDEO](https://video.tv.adobe.com/v/342104?quality=12&learn=on)
 
-Dans l’éditeur de fragment de contenu, la barre de menu du champ de texte multiligne fournit aux auteurs des fonctionnalités standard de mise en forme de texte enrichi, telles que : **gras**, *italique* et soulignez. L’ouverture d’un champ multiligne en mode plein écran active la fonction [d’autres outils de mise en forme tels que le type Paragraphe, la recherche et le remplacement, la vérification orthographique, etc.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html?lang=fr).
+Dans l’éditeur de fragment de contenu, la barre de menu du champ de texte multiligne fournit aux créateurs et créatrices des fonctionnalités standard de mise en forme de texte enrichi, telles que **gras**, *italique* et souligné. L’ouverture d’un champ multiligne en mode plein écran active [d’autres outils de mise en forme, tels que le type de paragraphe, la recherche et le remplacement, la vérification orthographique, etc.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html?lang=fr)
 
 >[!NOTE]
 >
-> Les modules externes de texte enrichi de l’éditeur multiligne ne peuvent pas être personnalisés.
+> Les modules de texte enrichi de l’éditeur multiligne ne peuvent pas être personnalisés.
 
 ## Type de données de texte multiligne {#multi-line-data-type}
 
-Utilisez la variable **Texte multi-lignes** type de données lors de la définition de votre modèle de fragment de contenu pour activer la création de texte enrichi.
+Utilisez le type de données **Texte multiligne** pour définir votre modèle de fragment de contenu et activer la création de texte enrichi.
 
-![Type de données de texte enrichi multiligne](assets/rich-text/multi-line-rich-text.png)
+![Type de données de texte enrichi multiligne.](assets/rich-text/multi-line-rich-text.png)
 
 Plusieurs propriétés du champ multiligne peuvent être configurées.
 
-Le **Rendu en tant que** peut être définie sur :
+La propriété **Rendre en tant que** peut être définie sur :
 
-* Zone de texte : effectue le rendu d’un seul champ multiligne.
-* Multiple Field : effectue le rendu de plusieurs champs de ligne multiples
+* Zone de texte : effectue le rendu d’un seul champ multiligne.
+* Plusieurs champs : effectue le rendu de plusieurs champs multilignes.
 
 
-Le **Type par défaut** peut être défini sur :
+Le **type par défaut** peut être défini sur :
 
 * Texte enrichi
 * Texte (Markdown)
 * Texte brut
 
-Le **Type par défaut** influence directement l’expérience de modification et détermine si les outils de texte enrichi sont présents.
+L’option **Type par défaut** influence directement l’expérience de modification et détermine si les outils de texte enrichi sont présents.
 
-Vous pouvez également [activation des références en ligne](#insert-fragment-references) à d’autres fragments de contenu en vérifiant la variable **Autoriser la référence du fragment** et de la configuration du **Modèles de fragment de contenu autorisés**.
+Vous pouvez également [activer les références intégrées](#insert-fragment-references) à d’autres fragments de contenu en cochant **Autoriser la référence du fragment** et en configurant les **modèles de fragment de contenu autorisés**.
 
-Vérifiez les **Traductible** , si le contenu doit être localisé. Seuls le texte enrichi et le texte brut peuvent être localisés. Voir [utilisation de contenu localisé pour plus d’informations](./localized-content.md).
+Cochez la case **Traduisible** si le contenu doit être localisé. Seuls le texte enrichi et le texte brut peuvent être localisés. Voir [Utiliser du contenu localisé pour plus d’informations](./localized-content.md).
 
 ## Réponse de texte enrichi avec l’API GraphQL
 
-Lors de la création d’une requête GraphQL, les développeurs peuvent choisir différents types de réponse parmi `html`, `plaintext`, `markdown`, et `json` à partir d’un champ multiligne.
+Lors de la création d’une requête GraphQL, les développeurs et développeuses peuvent choisir différents types de réponse parmi `html`, `plaintext`, `markdown` et `json` à partir d’un champ multiligne.
 
-Les développeurs peuvent utiliser la variable [Aperçu JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html) dans l’éditeur de fragment de contenu pour afficher toutes les valeurs du fragment de contenu actuel qui peuvent être renvoyées à l’aide de l’API GraphQL.
+Les développeurs et développeuses peuvent utiliser la variable [Aperçu JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=fr) dans l’éditeur de fragment de contenu pour afficher toutes les valeurs du fragment de contenu actuel qui peuvent être renvoyées à l’aide de l’API GraphQL.
 
 ## Requête persistante GraphQL
 
-En sélectionnant le `json` le format de réponse du champ multiligne offre la plus grande flexibilité lorsque vous utilisez du contenu de texte enrichi. Le contenu en texte enrichi est diffusé sous la forme d’un tableau de types de noeuds JSON qui peuvent être traités de manière unique en fonction de la plateforme client.
+Le fait de sélectionner le format de réponse `json` du champ multiligne offre la plus grande flexibilité lorsque vous utilisez du contenu de texte enrichi. Le contenu de texte enrichi est diffusé sous la forme d’un tableau de types de nœuds JSON qui peuvent être traités de manière unique en fonction de la plateforme cliente.
 
-Vous trouverez ci-dessous un type de réponse JSON d’un champ à plusieurs lignes nommé `main` qui contient un paragraphe : &quot;*Il s’agit d’un paragraphe qui comprend **important**contenu.*&quot;où &quot;important&quot; est marqué comme **gras**.
+Voici un type de réponse JSON d’un champ multiligne nommé `main`, qui contient un paragraphe : « *This is a paragraph taht includes **important**content (Il s’agit d’un paragraphe qui comprend du contenu important).* » (Il s’agit d’un paragraphe qui comprend du contenu important) où « important » est marqué comme étant en **gras**.
 
 ```graphql
 query ($path: String!) {
@@ -83,9 +83,9 @@ query ($path: String!) {
 }
 ```
 
-Le `$path` utilisée dans la variable `_path` Le filtre nécessite le chemin d’accès complet au fragment de contenu (par exemple `/content/dam/wknd/en/magazine/sample-article`).
+La variable `$path` utilisée dans le filtre `_path` nécessite le chemin d’accès complet au fragment de contenu (par exemple, `/content/dam/wknd/en/magazine/sample-article`).
 
-**Réponse GraphQL :**
+**Réponse GraphQL :**
 
 ```json
 {
@@ -127,11 +127,11 @@ Le `$path` utilisée dans la variable `_path` Le filtre nécessite le chemin d�
 
 ### Autres exemples
 
-Vous trouverez ci-dessous plusieurs exemples de types de réponse d’un champ à plusieurs lignes nommé `main` qui contient un paragraphe : &quot;Il s’agit d’un paragraphe qui comprend **important** contenu.&quot; où &quot;important&quot; est marqué comme **gras**.
+Ci-dessous se trouvent plusieurs exemples de types de réponse d’un champ multiligne nommé `main`, qui contient un paragraphe : « This is a paragraph that includes **important** content. » (Il s’agit d’un paragraphe qui comprend du contenu important) où « important » est marqué comme étant en **gras**.
 
-Exemple de +++HTML
+Exemple HTML
 
-**Requête persistante GraphQL :**
+**Requête persistante GraphQL :**
 
 ```graphql
 query ($path: String!) {
@@ -147,7 +147,7 @@ query ($path: String!) {
 }
 ```
 
-**Réponse GraphQL :**
+**Réponse GraphQL :**
 
 ```json
 {
@@ -166,9 +166,9 @@ query ($path: String!) {
 
 +++
 
-Exemple +++Markdown
+Exemple Markdown
 
-**Requête persistante GraphQL :**
+**Requête persistante GraphQL :**
 
 ```graphql
 query ($path: String!) {
@@ -184,7 +184,7 @@ query ($path: String!) {
 }
 ```
 
-**Réponse GraphQL :**
+**Réponse GraphQL :**
 
 ```json
 {
@@ -203,9 +203,9 @@ query ($path: String!) {
 
 +++
 
-+++Exemple de texte d’accompagnement
+Exemple de texte brut
 
-**Requête persistante GraphQL :**
+**Requête persistante GraphQL :**
 
 ```graphql
 query ($path: String!) {
@@ -221,7 +221,7 @@ query ($path: String!) {
 }
 ```
 
-**Réponse GraphQL :**
+**Réponse GraphQL :**
 
 ```json
 {
@@ -238,16 +238,16 @@ query ($path: String!) {
 }
 ```
 
-Le `plaintext` l’option de rendu supprime toute mise en forme.
+L’option de rendu `plaintext` supprime toute mise en forme.
 
 +++
 
 
-## Rendu d’une réponse JSON de texte enrichi {#render-multiline-json-richtext}
+## Effectuer le rendu d’une réponse JSON de texte enrichi {#render-multiline-json-richtext}
 
-La réponse JSON en texte enrichi du champ multiligne est structurée sous la forme d’une arborescence hiérarchique. Chaque objet ou noeud représente un bloc de HTML différent du texte enrichi.
+La réponse JSON en texte enrichi du champ multiligne est structurée sous la forme d’une arborescence hiérarchique. Chaque objet ou nœud représente un bloc HTML différent du texte enrichi.
 
-Vous trouverez ci-dessous un exemple de réponse JSON d’un champ de texte multiligne. Notez que chaque objet, ou noeud, comprend une `nodeType` qui représente le bloc de HTML du texte enrichi comme `paragraph`, `link`, et `text`. Chaque noeud peut contenir `content` qui est un sous-tableau contenant tous les enfants du noeud actif.
+Vous trouverez ci-dessous un exemple de réponse JSON d’un champ de texte multiligne. Notez que chaque objet ou nœud comprend un `nodeType` qui représente le bloc HTML du texte enrichi comme `paragraph`, `link`, et `text`. Chaque nœud peut contenir `content` qui est un sous-tableau contenant tous les enfants du nœud actuel.
 
 ```json
 "json": [// root "content" or child nodes
@@ -279,9 +279,9 @@ Vous trouverez ci-dessous un exemple de réponse JSON d’un champ de texte mult
 ]
 ```
 
-Méthode la plus simple pour effectuer le rendu de plusieurs lignes `json` La réponse consiste à traiter chaque objet, ou noeud, dans la réponse, puis à traiter tous les enfants du noeud actif. Une fonction récursive peut être utilisée pour parcourir l’arborescence JSON.
+La méthode la plus simple pour effectuer le rendu de la réponse `json` multiligne consiste à traiter chaque objet ou nœud dans la réponse, puis à traiter tous les enfants du nœud actuel. Une fonction récursive peut être utilisée pour parcourir l’arborescence JSON.
 
-Vous trouverez ci-dessous un exemple de code qui illustre une approche transversale récursive. Les exemples sont basés sur JavaScript et utilisent React’s [JSX](https://reactjs.org/docs/introducing-jsx.html), cependant, les concepts de programmation peuvent être appliqués à n’importe quel langage.
+Vous trouverez ci-dessous un exemple de code qui illustre une approche récursive traversante. Les exemples sont basés sur JavaScript et utilisent le [JSX](https://reactjs.org/docs/introducing-jsx.html) de React. Cependant, les concepts de programmation peuvent être appliqués à n’importe quel langage.
 
 ```javascript
 // renderNodeList - renders a list of nodes
@@ -298,7 +298,7 @@ function renderNodeList(childNodes) {
 }
 ```
 
-`renderNodeList` est une fonction récursive qui utilise un tableau de `childNodes`. Chaque noeud du tableau est ensuite transmis à une fonction. `renderNode`, qui à son tour appelle `renderNodeList` si le noeud a des enfants.
+`renderNodeList` est une fonction récursive qui utilise un tableau de `childNodes`. Chaque nœud du tableau est ensuite transmis à une fonction `renderNode`, qui à son tour appelle `renderNodeList` si le nœud a des enfants.
 
 ```javascript
 // renderNode - renders an individual node
@@ -312,7 +312,7 @@ function renderNode(node) {
 }
 ```
 
-Le `renderNode` exige un objet unique nommé `node`. Un noeud peut avoir des enfants qui sont traités de manière récursive à l’aide de la variable `renderNodeList` fonction décrite ci-dessus. Enfin, une `nodeMap` est utilisé pour effectuer le rendu du contenu du noeud en fonction de ses `nodeType`.
+La fonction `renderNode` exige un objet unique nommé `node`. Un nœud peut avoir des enfants qui sont traités de manière récursive à l’aide de la fonction `renderNodeList` décrite ci-dessus. Enfin, un élément `nodeMap` est utilisé pour effectuer le rendu du contenu du nœud en fonction de son `nodeType`.
 
 ```javascript
 // nodeMap - object literal that maps a JSX response based on a given key (nodeType)
@@ -327,43 +327,43 @@ const nodeMap = {
 }
 ```
 
-Le `nodeMap` est un littéral d’objet JavaScript utilisé comme map. Chacune des &quot;clés&quot; représente une `nodeType`. Paramètres de `node` et `children` peut être transmis aux fonctions résultantes qui effectuent le rendu du noeud. Le type de retour utilisé dans cet exemple est JSX, mais l’approche peut être adaptée pour créer un littéral de chaîne représentant le contenu du HTML.
+L’élément `nodeMap` est un littéral d’objet JavaScript utilisé comme mappage. Chacune des « clés » représente un `nodeType` différent. Les paramètres `node` et `children` peuvent être transmis aux fonctions résultantes qui effectuent le rendu du nœud. Le type de retour utilisé dans cet exemple est JSX, mais l’approche peut être adaptée pour créer un littéral de chaîne représentant du contenu HTML.
 
 ### Exemple de code complet
 
-Vous trouverez un utilitaire de rendu de texte enrichi réutilisable dans la variable [Exemple de WKND GraphQL React](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+Vous trouverez un utilitaire de rendu de texte enrichi réutilisable dans l’[exemple React GraphQL WKND](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
-* [renderRichText.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/utils/renderRichText.js) - Utilitaire réutilisable exposant une fonction `mapJsonRichText`. Cet utilitaire peut être utilisé par les composants qui souhaitent effectuer le rendu d’une réponse JSON de texte enrichi en tant que JSX React.
-* [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) - Exemple de composant qui émet une requête GraphQL contenant du texte enrichi. Le composant utilise la variable `mapJsonRichText` pour effectuer le rendu du texte enrichi et des références.
+* [renderRichText.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/utils/renderRichText.js) : utilitaire réutilisable exposant une fonction `mapJsonRichText`. Cet utilitaire peut être utilisé par les composants qui souhaitent effectuer le rendu d’une réponse JSON de texte enrichi en tant que JSX React.
+* [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) : exemple de composant qui effectue une requête GraphQL contenant du texte enrichi. Le composant utilise l’utilitaire `mapJsonRichText` pour effectuer le rendu du texte enrichi et des références.
 
 
-## Ajout de références intégrées au texte enrichi {#insert-fragment-references}
+## Ajouter des références intégrées au texte enrichi {#insert-fragment-references}
 
-Le champ Ligne commutée permet aux auteurs d’insérer des images ou d’autres ressources numériques d’AEM Assets dans le flux du texte enrichi.
+Le champ multiligne permet aux créateurs et créatrices d’insérer des images ou d’autres ressources numériques d’AEM Assets dans le flux du texte enrichi.
 
-![image d&#39;insertion](assets/rich-text/insert-image.png)
+![Insértion de l’image.](assets/rich-text/insert-image.png)
 
-La capture d’écran ci-dessus illustre une image insérée dans le champ multiligne à l’aide de la propriété **Insérer une ressource** bouton .
+La capture d’écran ci-dessus illustre une image insérée dans le champ multiligne à l’aide du bouton **Insérer une ressource**.
 
-Les références à d’autres fragments de contenu peuvent également être liées ou insérées dans le champ multiligne à l’aide du **Insérer un fragment de contenu** bouton .
+Les références à d’autres fragments de contenu peuvent également être liées ou insérées dans le champ multiligne à l’aide du bouton **Insérer un fragment de contenu**.
 
-![Insérer une référence à un fragment de contenu](assets/rich-text/insert-contentfragment.png)
+![Insertion d’une référence de fragment de contenu.](assets/rich-text/insert-contentfragment.png)
 
-La capture d&#39;écran ci-dessus montre un autre fragment de contenu, Guide Ultimate de La Skate Parks, inséré dans le champ multiligne. Les types de fragments de contenu qui peuvent être insérés dans le champ sont contrôlés par la variable **Modèles de fragment de contenu autorisés** dans la [type de données multiligne](#multi-line-data-type) dans le modèle de fragment de contenu.
+La capture d’écran ci-dessus montre un autre fragment de contenu, Ultimate Guide to LA Skate Parks, inséré dans le champ multiligne. Les types de fragments de contenu qui peuvent être insérés dans le champ sont contrôlés par la configuration des **Modèles de fragment de contenu autorisés** dans le [type de données multiligne](#multi-line-data-type) dans le modèle de fragment de contenu.
 
-## Requête de références en ligne avec GraphQL
+## Demander des références intégrées avec GraphQL
 
-L’API GraphQL permet aux développeurs de créer une requête qui inclut des propriétés supplémentaires sur les références insérées dans un champ multiligne. La réponse JSON comprend une `_references` qui répertorie ces propriétés supplémentaires. La réponse JSON permet aux développeurs de contrôler pleinement la manière de générer les références ou les liens au lieu d’avoir à gérer les HTMLS avec opinion.
+L’API GraphQL permet aux développeurs et développpeuses de créer une requête qui inclut des propriétés supplémentaires sur les références insérées dans un champ multiligne. La réponse JSON comprend un objet `_references` séparé qui répertorie ces propriétés supplémentaires. La réponse JSON permet aux développeurs et développeuses de contrôler pleinement la manière d’effectuer le rendu des références ou des liens au lieu d’avoir à gérer du HTML obstiné.
 
-Par exemple, vous pouvez :
+Par exemple, vous pouvez :
 
-* Inclure une logique de routage personnalisée pour la gestion des liens vers d’autres fragments de contenu lors de l’implémentation d’une application d’une seule page, comme l’utilisation du routeur React ou du fichier Next.js
-* Rendu d’une image intégrée à l’aide du chemin absolu vers un environnement de publication AEM en tant que `src` .
-* Déterminez comment rendre une référence incorporée à un autre fragment de contenu avec des propriétés personnalisées supplémentaires.
+* inclure une logique de routage personnalisée pour la gestion des liens vers d’autres fragments de contenu lors de l’implémentation d’une application monopage, comme l’utilisation du routeur React ou de Next.js ;
+* effectuer le rendu d’une image intégrée à l’aide du chemin d’accès absolu vers un environnement de publication AEM en tant que valeur `src` ;
+* déterminer comment effectuer le rendu d’une référence incorporée sur un autre fragment de contenu avec des propriétés personnalisées supplémentaires.
 
-Utilisez la variable `json` type de retour et inclusion de la variable `_references` lors de la création d’une requête GraphQL :
+Utilisez le type de retour `json` et incluez l’objet `_references` lors de la création d’une requête GraphQL :
 
-**Requête persistante GraphQL :**
+**Requête persistante GraphQL :**
 
 ```graphql
 query ($path: String!) {
@@ -393,9 +393,9 @@ query ($path: String!) {
 }
 ```
 
-Dans la requête ci-dessus, la variable `main` est renvoyé en tant que JSON. Le `_references` inclut des fragments pour gérer les références de type `ImageRef` ou de type `ArticleModel`.
+Dans la requête ci-dessus, le champ `main` est renvoyé en tant que JSON. L’objet `_references` inclut des fragments pour gérer les références de type `ImageRef` ou `ArticleModel`.
 
-**Réponse JSON :**
+**Réponse JSON :**
 
 ```json
 {
@@ -477,13 +477,13 @@ Dans la requête ci-dessus, la variable `main` est renvoyé en tant que JSON. Le
 }
 ```
 
-La réponse JSON inclut l’emplacement où la référence a été insérée dans le texte enrichi avec la variable `"nodeType": "reference"`. Le `_references` inclut ensuite chaque référence avec les propriétés supplémentaires demandées. Par exemple, la variable `ImageRef` renvoie la variable `width` de l’image référencée dans l’article.
+La réponse JSON inclut l’emplacement où la référence a été insérée dans le texte enrichi avec `"nodeType": "reference"`. L’objet `_references` inclut ensuite chaque référence avec les propriétés supplémentaires demandées. Par exemple, `ImageRef` renvoie la `width` de l’image référencée dans l’article.
 
-## Rendu de références en ligne dans du texte enrichi
+## Effectuer le rendu de références intégrées dans du texte enrichi
 
-Pour effectuer le rendu des références en ligne, l’approche récursive décrite à la section [Rendu d’une réponse JSON à plusieurs lignes](#render-multiline-json-richtext) peut être développé.
+Pour effectuer le rendu des références intégrées, l’approche récursive décrite à la section [Effectuer le rendu d’une réponse JSON multiligne](#render-multiline-json-richtext) peut être étendue.
 
-Où `nodeMap` est le mappage qui effectue le rendu des noeuds JSON.
+Ici, `nodeMap` est le mappage qui effectue le rendu des nœuds JSON.
 
 ```javascript
 const nodeMap = {
@@ -509,9 +509,9 @@ const nodeMap = {
     }
 ```
 
-L’approche de haut niveau consiste à examiner chaque fois qu’une `nodeType` est égal à `reference` dans la réponse JSON de ligne Mutli. Une fonction de rendu personnalisée peut alors être appelée, qui inclut la fonction `_references` renvoyée dans la réponse GraphQL.
+L’approche de haut niveau consiste à examiner chaque fois que `nodeType` est égal à `reference` dans la réponse JSON multiligne. Une fonction de rendu personnalisée peut alors être appelée, qui inclut l’objet `_references` renvoyé dans la réponse GraphQL.
 
-Le chemin de référence en ligne peut ensuite être comparé à l’entrée correspondante dans la variable `_references` objet et une autre carte personnalisée `renderReference` peut être appelée.
+Le chemin d’accès à la référence intégrée peut ensuite être comparé à l’entrée correspondante dans l’objet `_references` et un autre mappage personnalisé `renderReference` peut être appelé.
 
 ```javascript
 const renderReference = {
@@ -528,19 +528,19 @@ const renderReference = {
 }
 ```
 
-Le `__typename` de `_references` peut être utilisé pour mapper différents types de référence à différentes fonctions de rendu.
+L’élément `__typename` de l’objet `_references` peut être utilisé pour mapper différents types de référence à différentes fonctions de rendu.
 
 ### Exemple de code complet
 
-Vous trouverez un exemple complet d’écriture d’un rendu de références personnalisé dans la section [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js) dans le [Exemple de WKND GraphQL React](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
+Vous trouverez un exemple complet d’écriture d’un générateur de rendu de références personnalisé dans [AdventureDetail.js](https://github.com/adobe/aem-guides-wknd-graphql/blob/main/react-app/src/components/AdventureDetail.js), dans le cadre de l’[Exemple React GraphQL WKND](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/react-app).
 
 ## Exemple de bout en bout
 
 >[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
 
-La vidéo précédente présente un exemple de bout en bout :
+La vidéo précédente présente un exemple de bout en bout :
 
-1. Mise à jour du champ de texte multiligne d’un modèle de fragment de contenu pour autoriser les références de fragment
+1. Mise à jour du champ de texte multiligne d’un modèle de fragment de contenu pour autoriser les références de fragment.
 1. Utilisation de l’éditeur de fragment de contenu pour inclure une image et une référence à un autre fragment dans un champ de texte multiligne.
-1. Création d’une requête GraphQL qui inclut la réponse textuelle multiligne au format JSON et toute `_references` utilisé.
-1. Écriture d’un SPA React qui effectue le rendu des références en ligne de la réponse de texte enrichi.
+1. Création d’une requête GraphQL qui inclut la réponse textuelle multiligne au format JSON et tout élément `_references` utilisé.
+1. Écriture d’une SPA React qui effectue le rendu des références intégrées de la réponse de texte enrichi.

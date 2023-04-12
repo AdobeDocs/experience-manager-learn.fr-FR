@@ -1,6 +1,6 @@
 ---
 title: Application Next.js de base
-description: Application Next.js de base qui affiche la liste des aventures WKND et leurs détails
+description: Application Next.js de base qui affiche la liste des WKND Adventures et leurs détails.
 version: Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments, GraphQL API
@@ -15,21 +15,21 @@ hidefromtoc: true
 source-git-commit: 772acab316ba2ff463fa5cacff02013bea920579
 workflow-type: tm+mt
 source-wordcount: '122'
-ht-degree: 0%
+ht-degree: 95%
 
 ---
 
 
 # Application Next.js de base
 
-Ceci [Next.js](https://nextjs.org/) L’application explique comment interroger du contenu à l’aide AEM API GraphQL à l’aide de requêtes persistantes. Cette application rend un fichier de WKND Adventures, et lorsque vous sélectionnez une aventure, affiche les détails complets de l’aventure.
+Cette application [Next.js](https://nextjs.org/) explique comment interroger du contenu à l’aide d’API GraphQL d’AEM et en utilisant des requêtes persistantes. Cette application rend une liste filtrable des WKND Adventures, et lorsque vous sélectionnez une Adventure, elle affiche les détails complets de celle-ci.
 
-Ce code :
+Ce code :
 
 + Se connecte à un service de publication AEM et ne nécessite pas d’authentification
-+ Utilise les requêtes persistantes de WKND : `wknd-shared/adventures-all` et `wknd-shared/adventures-by-slug`
++ Utilise les requêtes persistantes de WKND : `wknd-shared/adventures-all` et `wknd-shared/adventures-by-slug`
 
-Pour une analyse plus approfondie de la création de cette application Next.js, reportez-vous à la section [Exemple de documentation de l’application Next.js](../example-apps/next-js.md).
+Pour une analyse plus approfondie de la conception de cette application Next.js, reportez-vous à la [documentation d’exemple d’application Next.js](../example-apps/next-js.md).
 
 >[!IMPORTANT]
 >

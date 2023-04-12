@@ -1,5 +1,5 @@
 ---
-title: Maintenance de l’historique des versions avec Adobe Workfront et Assets Essentials
+title: Gestion de l’historique des versions avec Adobe Workfront et Assets Essentials
 description: Découvrez comment Adobe Workfront et Experience Manager Assets Essentials vous aident à gérer des versions de documents Workfront et de ressources Assets Essentials.
 version: Cloud Service
 feature: Assets Essentials
@@ -13,11 +13,11 @@ exl-id: 42c0e51d-abb2-4445-98bd-65d813f580ca
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '52'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Maintenance de l’historique des versions
+# Gestion de l’historique des versions
 
 Découvrez comment Adobe Workfront et Experience Manager Assets Essentials vous aident à gérer des versions de documents Workfront et de ressources Assets Essentials.
 

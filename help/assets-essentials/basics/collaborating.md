@@ -1,6 +1,6 @@
 ---
-title: Collaboration dans Assets Essentials
-description: Découvrez comment collaborer à la gestion des ressources à l’aide de commentaires, d’annotations et de tâches.
+title: Collaboration dans Assets Essentials
+description: Apprenez à collaborer dans le cadre de la gestion des ressources numériques en utilisant des commentaires, des annotations et des tâches.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -13,12 +13,12 @@ exl-id: 0de60565-1a73-4642-a3b9-1625e25ea2dc
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
 source-wordcount: '32'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Collaboration dans Assets Essentials
+# Collaboration dans Assets Essentials
 
-Découvrez comment collaborer à la gestion des ressources à l’aide de commentaires, d’annotations et de tâches.
+Apprenez à collaborer dans le cadre de la gestion des ressources numériques en utilisant des commentaires, des annotations et des tâches.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335856?quality=12&learn=on)
