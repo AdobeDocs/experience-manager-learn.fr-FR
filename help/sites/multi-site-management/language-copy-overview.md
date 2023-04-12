@@ -1,7 +1,7 @@
 ---
 title: Présentation de la copie de la langue
 seo-title: Introduction to Language Copy
-description: Découvrez comment créer un site multilingue à l’aide de la copie de la langue dans AEM Sites
+description: Découvrez comment créer un site multilingue à l’aide de la copie de la langue dans AEM Sites
 seo-description: Get an overview of how to create a multilingual site using Language Copy in AEM Sites
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
@@ -16,14 +16,14 @@ role: User
 level: Beginner
 exl-id: 9085d60e-0e88-46ab-8f1f-4999063e48d2
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '40'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Présentation de la copie de la langue {#introduction-language-copy}
 
-Découvrez comment créer un site multilingue à l’aide de la copie de langue dans AEM Sites.
+Découvrez comment créer un site multilingue à l’aide de la copie de la langue dans AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36487?quality=12&learn=on)
