@@ -1,17 +1,17 @@
 ---
-title: Tutoriels Adobe Experience Manager Managed Services
-description: Ensemble de tutoriels pour Adobe Experience Manager (AEM) Managed Services
+title: Tutoriels Adobe Experience Manager Managed Services
+description: Ensemble de tutoriels pour Adobe Experience Manager (AEM) Managed Services.
 sub-product: Adobe Managed Services
 source-git-commit: 3bc3a0f38d97c9dbe4428686a46d281d7567f627
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '38'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 
-# Tutoriels Managed Services AEM {#overview}
+# Tutoriels AEM Managed Services {#overview}
 
-AEM Managed Services est ...
+AEM Managed Services est :
 
 <div id="whats-new-section">
 
@@ -31,4 +31,4 @@ AEM Managed Services est ...
 
 ## Ressources supplémentaires
 
-* [Documentation d’Adobe Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr)
+* [Documentation Adobe Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr)
