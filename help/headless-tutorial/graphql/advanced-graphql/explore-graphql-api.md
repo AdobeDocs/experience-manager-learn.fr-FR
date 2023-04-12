@@ -1,6 +1,6 @@
 ---
-title: Explorez l’API GraphQL d’AEM - Concepts avancés d’AEM sans affichage - GraphQL
-description: Envoyez des requêtes GraphQL à l’aide de l’IDE GraphiQL. Découvrez les requêtes avancées à l’aide de filtres, de variables et de directives. Requête pour les références de fragment et de contenu, y compris les références à partir de champs de texte multiligne.
+title: Explorer l’API GraphQL d’AEM - Concepts avancés d’AEM Headless - GraphQL
+description: Envoyez des requêtes GraphQL à l’aide de l’IDE GraphiQL. Découvrez les requêtes avancées à l’aide de filtres, de variables et de directives. Effectuez une requête pour les références de fragment et de contenu, y compris les références à partir de champs de texte multiligne.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -8,17 +8,17 @@ role: Developer
 level: Intermediate
 exl-id: bd7916be-8caa-4321-add0-4c9031306d60
 source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1322'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Exploration de l’API GraphQL d’AEM
+# Explorer l’API GraphQL d’AEM
 
 L’API GraphQL d’AEM vous permet d’exposer les données de fragments de contenu aux applications en aval. Dans le tutoriel de base [tutoriel GraphQL en plusieurs étapes](../multi-step/explore-graphql-api.md), vous avez utilisé l’explorateur GraphiQL pour tester et affiner les requêtes GraphQL.
 
-Dans ce chapitre, vous utilisez l’Explorateur GraphiQL pour définir des requêtes plus avancées afin de rassembler les données des fragments de contenu que vous avez créés dans la variable [chapitre précédent](../advanced-graphql/author-content-fragments.md).
+Dans ce chapitre, vous utilisez l’explorateur GraphiQL pour définir des requêtes plus avancées afin de rassembler les données des fragments de contenu que vous avez créés dans le [chapitre précédent](../advanced-graphql/author-content-fragments.md).
 
 ## Prérequis {#prerequisites}
 
@@ -26,45 +26,45 @@ Ce document fait partie d’un tutoriel en plusieurs parties. Assurez-vous que l
 
 ## Objectifs {#objectives}
 
-Dans ce chapitre, vous apprendrez à :
+Dans ce chapitre, vous apprenez à :
 
-* Filtrage d’une liste de fragments de contenu avec des références à l’aide de variables de requête
-* Filtrage du contenu dans une référence à un fragment
-* Requête pour le contenu intégré et les références aux fragments à partir d’un champ de texte multiligne
-* Requête utilisant des directives
-* Requête pour le type de contenu Objet JSON
+* Filtrer une liste de fragments de contenu avec des références à l’aide de variables de requête
+* Filtrer du contenu dans une référence de fragment
+* Effectuer des requêtes pour le contenu intégré et les références de fragment à partir d’un champ de texte multiligne
+* Effectuer des requêtes à l’aide de directives
+* Effectuer des requêtes pour le type de contenu de l’objet JSON
 
-## Utilisation de l’explorateur GraphiQL
+## Utiliser l’explorateur GraphiQL
 
 
-Le [Explorateur GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html) Cet outil permet aux développeurs de créer et de tester des requêtes par rapport au contenu de l’environnement AEM actuel. L’outil GraphiQL permet également aux utilisateurs de **persister ou enregistrer** requêtes à utiliser par les applications clientes dans un paramètre de production.
+L’outil [explorateur GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=fr) permet aux développeurs et développeuses de créer et de tester des requêtes par rapport au contenu de l’environnement AEM actuel. L’outil GraphiQL permet également aux utilisateurs et utilisatrices de **conserver ou enregistrer** les requêtes à utiliser par les applications clientes dans un paramètre de production.
 
 Ensuite, explorez la puissance de l’API GraphQL d’AEM à l’aide de l’explorateur GraphiQL intégré.
 
-1. Dans l’écran AEM Démarrer, accédez à **Outils** > **Général** > **Éditeur de requêtes GraphQL**.
+1. Dans l’écran de démarrage AEM, accédez à **Outils** > **Général** > **Éditeur de requêtes GraphQL**.
 
-   ![Accédez à l’IDE GraphiQL](assets/explore-graphql-api/navigate-graphql-query-editor.png)
+   ![Accéder à l’IDE GraphiQL.](assets/explore-graphql-api/navigate-graphql-query-editor.png)
 
 >[!IMPORTANT]
 >
->Dans, certaines versions d’AEM (6.X.X) l’outil d’explorateur GraphiQL (ou IDE GraphiQL) doivent être installés manuellement, suivez la section [instruction d’ici](../how-to/install-graphiql-aem-6-5.md).
+>Dans certaines versions d’AEM (6.X.X) l’outil explorateur GraphiQL (ou IDE GraphiQL) doit être installé manuellement, suivez les [instructions ici](../how-to/install-graphiql-aem-6-5.md).
 
-1. Dans le coin supérieur droit, assurez-vous que le point de fin est défini sur **Point de terminaison partagé WKND**. Changement de la variable _Point d’entrée_ cette valeur de liste déroulante affiche la valeur existante _Requêtes persistantes_ dans le coin supérieur gauche.
+1. Dans le coin supérieur droit, assurez-vous que le point d’entrée est défini sur **Point d’entrée WKND Shared**. Lorsque la valeur de menu déroulant du _point d’entrée_ est modifiée ici, les _requêtes persistantes_ existantes s’affichent dans le coin supérieur gauche.
 
-   ![Définir le point de terminaison GraphQL](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
+   ![Définir le point d’entrée GraphQL.](assets/explore-graphql-api/set-wknd-shared-endpoint.png)
 
-Cela permettra d’étendre toutes les requêtes aux modèles créés dans la variable **WKND partagé** projet.
+Cela permettra d’identifier toutes les requêtes avec les modèles créés dans le projet **WKND Shared**.
 
 
-## Filtrage d’une liste de fragments de contenu à l’aide de variables de requête
+## Filtrer une liste de fragments de contenu à l’aide de variables de requête
 
-Dans la section précédente [tutoriel GraphQL en plusieurs étapes](../multi-step/explore-graphql-api.md), vous avez défini et utilisé des requêtes persistantes de base pour obtenir des données de fragments de contenu. Ici, vous développez ces connaissances et filtrez les données de fragments de contenu en transmettant des variables aux requêtes persistantes.
+Dans le précédent [tutoriel GraphQL en plusieurs étapes](../multi-step/explore-graphql-api.md), vous avez défini et utilisé des requêtes persistantes de base pour obtenir des données de fragments de contenu. Ici, vous développez ces connaissances et filtrez les données de fragments de contenu en transmettant des variables aux requêtes persistantes.
 
-Lors du développement d’applications clientes, vous devez généralement filtrer les fragments de contenu en fonction d’arguments dynamiques. L’API GraphQL d’AEM vous permet de transmettre ces arguments en tant que variables dans une requête afin d’éviter la construction de chaînes du côté client au moment de l’exécution. Pour plus d’informations sur les variables GraphQL, voir [Documentation GraphQL](https://graphql.org/learn/queries/#variables).
+Lors du développement d’applications clientes, vous devez généralement filtrer les fragments de contenu en fonction d’arguments dynamiques. L’API GraphQL d’AEM vous permet de transmettre ces arguments en tant que variables dans une requête afin d’éviter la construction de chaînes du côté client au moment de l’exécution. Pour plus d’informations sur les variables GraphQL, consultez la [documentation GraphQL](https://graphql.org/learn/queries/#variables).
 
-Pour cet exemple, interrogez tous les instructeurs ayant une compétence particulière.
+Pour cet exemple, interrogez les instructeurs et instructrices ayant une compétence particulière.
 
-1. Dans l’IDE GraphiQL, collez la requête suivante dans le panneau de gauche :
+1. Dans l’IDE GraphiQL, collez la requête suivante dans le panneau de gauche :
 
    ```graphql
    query listPersonBySkill ($skillFilter: String!){
@@ -93,9 +93,9 @@ Pour cet exemple, interrogez tous les instructeurs ayant une compétence particu
    }
    ```
 
-   Le `listPersonBySkill` La requête ci-dessus accepte une variable (`skillFilter`) qui est obligatoire `String`. Cette requête effectue une recherche par rapport à tous les fragments de contenu de personne et les filtre en fonction de la variable `skills` et la chaîne transmise `skillFilter`.
+   La requête `listPersonBySkill` ci-dessus accepte une variable (`skillFilter`) qui est une `String` obligatoire. Cette requête effectue une recherche par rapport à tous les fragments de contenu de personne et les filtre en fonction du champ `skills` et de la chaîne transmise dans `skillFilter`.
 
-   Le `listPersonBySkill` inclut la variable `contactInfo` , qui est une référence de fragment au modèle Contact Info défini dans les chapitres précédents. Le modèle Coordonnées contient `phone` et `email` champs. Au moins un de ces champs de la requête doit être présent pour qu’elle s’exécute correctement.
+   La requête `listPersonBySkill` inclut la propriété `contactInfo`, qui est une référence de fragment au modèle d’informations de contact défini dans les chapitres précédents. Le modèle d’informations de contact contient les champs `phone` et `email`. Au moins un de ces champs de la requête doit être présent pour qu’elle s’exécute correctement.
 
    ```graphql
    contactInfo {
@@ -104,7 +104,7 @@ Pour cet exemple, interrogez tous les instructeurs ayant une compétence particu
          }
    ```
 
-1. Ensuite, définissons `skillFilter` et obtenir tous les instructeurs qui maîtrisent le ski. Collez la chaîne JSON suivante dans le panneau Variables de requête de l’IDE GraphiQL :
+1. Ensuite, définissez `skillFilter` et obtenez les instructeurs et instructrices qui maîtrisent Skiing. Collez la chaîne JSON suivante dans le panneau Variables de requête de l’IDE GraphiQL :
 
    ```json
    {
@@ -112,7 +112,7 @@ Pour cet exemple, interrogez tous les instructeurs ayant une compétence particu
    }
    ```
 
-1. Exécutez la requête. Le résultat doit ressembler à ce qui suit :
+1. Exécutez la requête. Le résultat devrait ressembler à ceci :
 
    ```json
    {
@@ -144,19 +144,19 @@ Pour cet exemple, interrogez tous les instructeurs ayant une compétence particu
    }
    ```
 
-Appuyez sur la touche **Play** dans le menu supérieur pour exécuter la requête. Vous devriez voir les résultats des fragments de contenu du chapitre précédent :
+Appuyez sur le bouton **Lire** dans le menu supérieur pour exécuter la requête. Vous devriez voir les résultats des fragments de contenu du chapitre précédent :
 
-![Personne par résultats de compétences](assets/explore-graphql-api/person-by-skill.png)
+![Résultats des personnes par compétence.](assets/explore-graphql-api/person-by-skill.png)
 
-## Filtrage du contenu dans une référence à un fragment
+## Filtrer du contenu dans une référence de fragment
 
-L’API GraphQL d’AEM vous permet d’interroger des fragments de contenu imbriqués. Dans le chapitre précédent, vous avez ajouté trois nouvelles références à un fragment de contenu aventure : `location`, `instructorTeam`, et `administrator`. Désormais, filtrons toutes les aventures pour tout administrateur portant un nom particulier.
+L’API GraphQL d’AEM vous permet d’interroger des fragments de contenu imbriqués. Dans le chapitre précédent, vous avez ajouté trois nouvelles références de fragment à un fragment de contenu Adventure : `location`, `instructorTeam` et `administrator`. Désormais, filtrons toutes les Adventures pour tout administrateur ou administratrice portant un nom particulier.
 
 >[!CAUTION]
 >
 >Un seul modèle doit être autorisé comme référence pour que cette requête s’exécute correctement.
 
-1. Dans l’IDE GraphiQL, collez la requête suivante dans le panneau de gauche :
+1. Dans l’IDE GraphiQL, collez la requête suivante dans le panneau de gauche :
 
    ```graphql
    query getAdventureAdministratorDetailsByAdministratorName ($name: String!){
@@ -181,7 +181,7 @@ L’API GraphQL d’AEM vous permet d’interroger des fragments de contenu imbr
    }
    ```
 
-1. Ensuite, collez la chaîne JSON suivante dans le panneau Variables de requête :
+1. Ensuite, collez la chaîne JSON suivante dans le panneau Variables de requête :
 
    ```json
    {
@@ -189,9 +189,9 @@ L’API GraphQL d’AEM vous permet d’interroger des fragments de contenu imbr
    }
    ```
 
-   Le `getAdventureAdministratorDetailsByAdministratorName` requête filtre toutes les aventures pour n’importe quelle `administrator` de `fullName` &quot;Jacob Wester&quot;, renvoyant des informations provenant de deux fragments de contenu imbriqués : L&#39;aventure et l&#39;instructeur.
+   La requête `getAdventureAdministratorDetailsByAdministratorName` filtre toutes les Adventures pour tout `administrator` au `fullName` de « Jacob Wester », renvoyant des informations provenant de deux fragments de contenu imbriqués : Adventure et instructeur.
 
-1. Exécutez la requête. Le résultat doit ressembler à ce qui suit :
+1. Exécutez la requête. Le résultat devrait ressembler à ceci :
 
    ```json
    {
@@ -227,11 +227,11 @@ L’API GraphQL d’AEM vous permet d’interroger des fragments de contenu imbr
    }
    ```
 
-## Requête pour les références intégrées à partir d’un champ de texte multiligne {#query-rte-reference}
+## Rechercher des références intégrées dans un champ de texte multiligne {#query-rte-reference}
 
-L’API GraphQL d’AEM vous permet de rechercher du contenu et des références à des fragments dans des champs de texte multiligne. Dans le chapitre précédent, vous avez ajouté les deux types de référence dans la variable **Description** champ du fragment de contenu de l’équipe Yosemite. Maintenant, récupérons ces références.
+L’API GraphQL d’AEM vous permet de rechercher du contenu et des références à des fragments dans des champs de texte multiligne. Dans le chapitre précédent, vous avez ajouté les deux types de référence dans le champ **Description** du fragment de contenu de l’équipe Yosemite. Maintenant, récupérons ces références.
 
-1. Dans l’IDE GraphiQL, collez la requête suivante dans le panneau de gauche :
+1. Dans l’IDE GraphiQL, collez la requête suivante dans le panneau de gauche :
 
    ```graphql
    query getTeamByAdventurePath ($fragmentPath: String!){
@@ -275,15 +275,15 @@ L’API GraphQL d’AEM vous permet de rechercher du contenu et des références
    }
    ```
 
-   Le `getTeamByAdventurePath` la requête filtre toutes les aventures par chemin et renvoie des données pour la variable `instructorTeam` référence de fragment d’une aventure spécifique.
+   La requête `getTeamByAdventurePath` filtre toutes les Adventures par chemin et renvoie les données pour la référence de fragment `instructorTeam` d’une Adventure spécifique.
 
    `_references` est un champ généré par le système utilisé pour afficher les références, y compris celles insérées dans des champs de texte multiligne.
 
-   Le `getTeamByAdventurePath` requête récupère plusieurs références. Tout d’abord, il utilise le `ImageRef` pour récupérer l’objet `_path` et `__typename` des images insérées en tant que références de contenu dans le champ de texte multiligne. Ensuite, il utilise `LocationModel` pour récupérer les données du fragment de contenu d’emplacement inséré dans le même champ.
+   La requête `getTeamByAdventurePath` récupère plusieurs références. Tout d’abord, elle utilise l’objet `ImageRef` intégré pour récupérer le `_path` et le `__typename` des images insérées en tant que références de contenu dans le champ de texte multiligne. Ensuite, elle utilise `LocationModel` pour récupérer les données du fragment de contenu d’emplacement inséré dans le même champ.
 
-   La requête inclut également la variable `_metadata` champ . Vous pouvez ainsi récupérer le nom du fragment de contenu d’équipe et l’afficher ultérieurement dans l’application WKND.
+   La requête inclut également le champ `_metadata`. Vous pouvez ainsi récupérer le nom du fragment de contenu d’équipe et l’afficher ultérieurement dans l’application WKND.
 
-1. Ensuite, collez la chaîne JSON suivante dans le panneau Variables de requête pour obtenir l’aventure Yosemite de décompression :
+1. Ensuite, collez la chaîne JSON suivante dans le panneau Variables de requête pour obtenir l’Adventure Yosemite Backpacking :
 
    ```json
    {
@@ -291,7 +291,7 @@ L’API GraphQL d’AEM vous permet de rechercher du contenu et des références
    }
    ```
 
-1. Exécutez la requête. Le résultat doit ressembler à ce qui suit :
+1. Exécutez la requête. Le résultat devrait ressembler à ceci :
 
    ```json
    {
@@ -343,16 +343,16 @@ L’API GraphQL d’AEM vous permet de rechercher du contenu et des références
    }
    ```
 
-   Le `_references` affiche à la fois l’image du logo et le fragment de contenu Yosemite Valley Log qui a été inséré dans la **Description** champ .
+   Le champ `_references` affiche à la fois l’image du logo et le fragment de contenu Yosemite Valley Lodge qui a été inséré dans le champ **Description**.
 
 
-## Requête utilisant des directives
+## Effectuer des requêtes à l’aide de directives
 
-Parfois, lorsque vous développez des applications clientes, vous devez modifier de manière conditionnelle la structure de vos requêtes. Dans ce cas, l’API GraphQL d’AEM vous permet d’utiliser les directives GraphQL afin de modifier le comportement de vos requêtes en fonction des critères fournis. Pour plus d’informations sur les directives GraphQL, voir [Documentation GraphQL](https://graphql.org/learn/queries/#directives).
+Parfois, lorsque vous développez des applications clientes, vous devez modifier de manière conditionnelle la structure de vos requêtes. Dans ce cas, l’API GraphQL d’AEM vous permet d’utiliser les directives GraphQL afin de modifier le comportement de vos requêtes en fonction des critères fournis. Pour plus d’informations sur les directives GraphQL, consultez la [documentation GraphQL](https://graphql.org/learn/queries/#directives).
 
-Dans le [section précédente](#query-rte-reference), vous avez appris à rechercher des références intégrées dans des champs de texte multiligne. Le contenu a été récupéré à partir du `description` dans le champ `plaintext` format. Ensuite, étendons cette requête et utilisons une directive pour récupérer de manière conditionnelle. `description` dans le `json` format également.
+Dans la [section précédente](#query-rte-reference), vous avez appris à rechercher des références intégrées dans des champs de texte multiligne. Le contenu a été récupéré à partir du champ `description` au format `plaintext`. Maintenant, étendons cette requête et utilisons une directive pour récupérer de manière conditionnelle `description` au format `json` également.
 
-1. Dans l’IDE GraphiQL, collez la requête suivante dans le panneau de gauche :
+1. Dans l’IDE GraphiQL, collez la requête suivante dans le panneau de gauche :
 
    ```graphql
    query getTeamByAdventurePath ($fragmentPath: String!, $includeJson: Boolean!){
@@ -397,9 +397,9 @@ Dans le [section précédente](#query-rte-reference), vous avez appris à recher
    }
    ```
 
-   La requête ci-dessus accepte une variable supplémentaire (`includeJson`) qui est obligatoire `Boolean`, également appelée directive de la requête. Une directive peut être utilisée pour inclure de manière conditionnelle des données provenant de la variable `description` dans le champ `json` format basé sur la valeur booléenne transmise `includeJson`.
+   La requête ci-dessus accepte une variable supplémentaire (`includeJson`) qui est une valeur `Boolean` obligatoire, également appelée directive de la requête. Une directive peut être utilisée pour inclure de manière conditionnelle des données du champ `description` au format `json` basé sur la valeur booléenne transmise dans `includeJson`.
 
-1. Ensuite, collez la chaîne JSON suivante dans le panneau Variables de requête :
+1. Ensuite, collez la chaîne JSON suivante dans le panneau Variables de requête :
 
    ```json
    {
@@ -408,9 +408,9 @@ Dans le [section précédente](#query-rte-reference), vous avez appris à recher
    }
    ```
 
-1. Exécutez la requête. Vous devriez obtenir le même résultat que dans la section précédente sur [Requête pour des références intégrées dans des champs de texte multiligne](#query-rte-reference).
+1. Exécutez la requête. Vous devriez obtenir le même résultat que dans la section précédente sur [la façon de rechercher des références intégrées dans des champs de texte multiligne](#query-rte-reference).
 
-1. Mettez à jour le `includeJson` de `true` et exécuter à nouveau la requête. Le résultat doit ressembler à ce qui suit :
+1. Mettez à jour la directive `includeJson` sur `true` et exécutez à nouveau la requête. Le résultat devrait ressembler à ceci :
 
    ```json
    {
@@ -498,11 +498,11 @@ Dans le [section précédente](#query-rte-reference), vous avez appris à recher
    }
    ```
 
-## Requête pour le type de contenu Objet JSON
+## Effectuer des requêtes pour le type de contenu de l’objet JSON
 
-N’oubliez pas que dans le chapitre précédent sur la création de fragments de contenu, vous avez ajouté un objet JSON à la variable **La météo par saison** champ . Maintenant, récupérons ces données dans le fragment de contenu de l’emplacement.
+N’oubliez pas que dans le chapitre précédent sur la création de fragments de contenu, vous avez ajouté un objet JSON dans le champ **Météo par saison**. Maintenant, récupérons ces données dans le fragment de contenu de l’emplacement.
 
-1. Dans l’IDE GraphiQL, collez la requête suivante dans le panneau de gauche :
+1. Dans l’IDE GraphiQL, collez la requête suivante dans le panneau de gauche :
 
    ```graphql
    query getLocationDetailsByLocationPath ($fragmentPath: String!) {
@@ -534,7 +534,7 @@ N’oubliez pas que dans le chapitre précédent sur la création de fragments d
    }
    ```
 
-1. Ensuite, collez la chaîne JSON suivante dans le panneau Variables de requête :
+1. Ensuite, collez la chaîne JSON suivante dans le panneau Variables de requête :
 
    ```json
    {
@@ -542,7 +542,7 @@ N’oubliez pas que dans le chapitre précédent sur la création de fragments d
    }
    ```
 
-1. Exécutez la requête. Le résultat doit ressembler à ce qui suit :
+1. Exécutez la requête. Le résultat devrait ressembler à ceci :
 
    ```json
    {
@@ -598,13 +598,13 @@ N’oubliez pas que dans le chapitre précédent sur la création de fragments d
    }
    ```
 
-   Le `weatherBySeason` contient l’objet JSON ajouté au chapitre précédent.
+   Le champ `weatherBySeason` contient l’objet JSON ajouté au chapitre précédent.
 
-## Requête pour tout contenu à la fois
+## Effectuer une requête pour obtenir tout le contenu à la fois
 
-Jusqu’à présent, plusieurs requêtes ont été exécutées pour illustrer les fonctionnalités de l’API GraphQL AEM.
+Jusqu’à présent, plusieurs requêtes ont été exécutées pour illustrer les fonctionnalités de l’API GraphQL d’AEM.
 
-Les mêmes données ont pu être récupérées avec une seule requête et cette requête est ensuite utilisée dans l’application cliente pour récupérer des informations supplémentaires telles que l’emplacement, le nom de l’équipe, les membres de l’équipe d’une aventure :
+Les mêmes données peuvent être récupérées avec une seule requête et cette requête est ensuite utilisée dans l’application cliente pour récupérer des informations supplémentaires telles que l’emplacement, le nom de l’équipe et les membres de l’équipe d’une Adventure :
 
 ```graphql
 query getAdventureDetailsBySlug($slug: String!) {
@@ -719,10 +719,10 @@ query getAdventureDetailsBySlug($slug: String!) {
 }
 ```
 
-## Félicitations !
+## Félicitations.
 
-Félicitations ! Vous avez maintenant testé des requêtes avancées afin de collecter les données des fragments de contenu que vous avez créés dans le chapitre précédent.
+Félicitations. Vous avez maintenant testé des requêtes avancées afin de collecter les données des fragments de contenu que vous avez créés dans le chapitre précédent.
 
 ## Étapes suivantes
 
-Dans le [chapitre suivant](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md), vous apprendrez comment conserver les requêtes GraphQL et pourquoi il est recommandé d’utiliser les requêtes persistantes dans vos applications.
+Dans le [chapitre suivant](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md), vous apprendrez comment rendre les requêtes GraphQL persistantes et pourquoi il est recommandé d’utiliser les requêtes persistantes dans vos applications.
