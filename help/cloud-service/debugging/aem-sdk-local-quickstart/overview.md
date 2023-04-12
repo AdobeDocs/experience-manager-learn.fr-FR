@@ -1,6 +1,6 @@
 ---
-title: Débogage AEM SDK
-description: AEM SDK est l’environnement de développement Principal utilisé par les développeurs. Il prend en charge une multitude de méthodes de débogage AEM et d’applications déployées.
+title: Déboguer le SDK d’AEM
+description: Le SDK d’AEM est l’environnement de développement principal utilisé par les développeurs et développeuses. Il prend en charge une multitude de méthodes pour déboguer AEM et les applications déployées.
 feature: Developer Tools
 topics: development
 version: Cloud Service
@@ -13,36 +13,36 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: e27cf3de-ef89-44d7-819b-157f85f5a80f
 source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Débogage AEM SDK
+# Déboguer le SDK d’AEM
 
-Le démarrage rapide local du SDK AEM est l’environnement de développement Principal utilisé par les développeurs. Il prend en charge une multitude de méthodes de débogage d’AEM et d’applications déployées. Ce guide d’utilisation vous guide tout au long des outils de débogage et des consoles les plus courants pour déboguer votre application sur le démarrage rapide local du SDK AEM.
+Le démarrage rapide local du SDK d’AEM est l’environnement de développement principal utilisé par les développeurs et développeuses. Il prend en charge une multitude de méthodes pour déboguer AEM et les applications déployées. Ce guide d’utilisation vous accompagne dans l’utilisation des outils et consoles de débogage les plus courants pour déboguer votre application sur le démarrage rapide local du SDK d’AEM.
 
 ## Journaux
 
-Les journaux jouent le rôle de première ligne pour le débogage des applications AEM, mais dépendent d’une journalisation adéquate dans l’application AEM déployée.
+Les journaux sont en première ligne pour le débogage des applications AEM, mais dépendent d’une journalisation adéquate dans l’application AEM déployée.
 
-[Débogage AEM SDK à l’aide des journaux](./logs.md)
+[Déboguer le SDK d’AEM à l’aide de journaux](./logs.md)
 
-## Débogage à distance
+## Déboguer à distance
 
-Le débogage à distance du code Java s’exécutant dans le démarrage rapide local du SDK AEM permet l’exécution du code en direct dans AEM à partir de votre IDE.
+Le débogage à distance du code Java s’exécutant dans le démarrage rapide local du SDK d’AEM permet l’exécution du code en direct dans AEM à partir de votre IDE.
 
-[Débogage à distance du SDK AEM](./remote-debugging.md)
+[Déboguer à distance le SDK d’AEM](./remote-debugging.md)
 
 ## Consoles web OSGi
 
-Le démarrage rapide local du SDK d’AEM dispose d’une console web OSGi qui fournit diverses informations et introspections dans le runtime AEM local. Ces informations sont utiles pour comprendre comment votre application est reconnue par les fonctions et d’ d’.
+Le démarrage rapide local du SDK d’AEM dispose d’une console web OSGi qui fournit diverses informations et introspections dans l’exécution locale d’AEM qui sont utiles pour comprendre comment votre application est reconnue par AEM et comment elle fonctionne en son sein.
 
-[Débogage du SDK AEM à l’aide de la console web OSGi](./osgi-web-consoles.md)
+[Déboguer le SDK d’AEM à l’aide de la console web OSGi](./osgi-web-consoles.md)
 
 ## Autres outils
 
-Divers autres outils peuvent vous aider à déboguer votre application sur le démarrage rapide local du SDK AEM.
+Plusieurs autres outils peuvent vous aider à déboguer votre application sur le démarrage rapide local du SDK d’AEM.
 
-[Autres outils de débogage AEM SDK](./other-tools.md)
+[Autres outils de débogage du SDK d’AEM](./other-tools.md)
