@@ -1,6 +1,6 @@
 ---
 title: Application SvelteKit simple
-description: Application SvelteKit simple qui affiche des aventures WKND modélisées à l’aide de fragments de contenu.
+description: Application SvelteKit simple qui affiche des WKND Adventures modélisées à l’aide de fragments de contenu.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
@@ -13,20 +13,20 @@ hide: true
 recommendations: noCatalog, noDisplay
 hidefromtoc: true
 source-git-commit: a0a1c7e5d3dd74454b9b8ab787ce7447e73ee098
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Filtrage de l’application SvelteKit
+# Filtrer l’application SvelteKit
 
-Découvrez AEM les API GraphQL sans affichage pour répertorier les données à l’aide d’une [SvelteKit](https://kit.svelte.dev/) application. Cette application SvelteKit crée une liste des aventures WKND, qui peut être sélectionnée pour afficher les détails de l’aventure.
+Découvrez les possibilités offertes par les API GraphQL d’AEM Headless pour répertorier les données à l’aide d’une application [SvelteKit](https://kit.svelte.dev/). Cette application SvelteKit crée une liste des WKND Adventures, qui peuvent être sélectionnées pour en afficher les détails.
 
-Ce code illustre l’utilisation d’Adobe. [AEM client sans affichage pour JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) pour appeler les requêtes GraphQL persistantes à partir de SvelteKit. Cette application utilise la variable `wknd-shared/adventures-all` requête persistante pour collecter toutes les aventures et obtenir une liste des types d’activité disponibles. Les détails de l’aventure sont demandés par le biais du `wknd-shared/adventures-by-slug` requête persistante.
+Ce code illustre l’utilisation du [client AEM Headless pour JavaScript](https://github.com/adobe/aem-headless-client-js/blob/main/api-reference.md) d’Adobe pour appeler les requêtes GraphQL persistantes à partir de SvelteKit. Cette application utilise la requête persistante `wknd-shared/adventures-all` pour collecter toutes les Adventures et obtenir une liste des types d’Activity disponibles. Les détails de l’Adventure sont demandés par le biais de la requête persistante `wknd-shared/adventures-by-slug`.
 
-Ce code :
+Ce code :
 
 + Se connecte à un service de publication AEM et ne nécessite pas d’authentification
-+ Utilise les requêtes persistantes de WKND : `wknd-shared/adventures-all` et `wknd-shared/adventures-by-slug`
++ Utilise les requêtes persistantes de WKND : `wknd-shared/adventures-all` et `wknd-shared/adventures-by-slug`
