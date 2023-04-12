@@ -1,6 +1,6 @@
 ---
-title: AEM Déploiements sans affichage
-description: Découvrez les différents points à prendre en compte pour le déploiement des applications AEM sans affichage.
+title: Déploiements d’AEM Headless
+description: Découvrez les différents points à prendre en compte pour le déploiement des applications AEM Headless.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
@@ -10,34 +10,34 @@ kt: 10794
 thumbnail: kt-10794.jpg
 last-substantial-update: 2022-08-26T00:00:00Z
 source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '315'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# AEM Déploiements sans affichage
+# Déploiements d’AEM Headless
 
-AEM les déploiements de clients sans affichage prennent de nombreuses formes ; SPA hébergé AEM, site Web, application mobile ou même processus serveur à serveur.
+Les déploiements de clients d’AEM Headless peuvent prendre plusieurs formes : SPA hébergée par AEM, SPA externe, site web, application mobile, ou même processus de serveur à serveur.
 
-En fonction du client et de la manière dont il est déployé, AEM déploiements sans affichage ont des considérations différentes.
+En fonction du client et de la manière dont il est déployé, les déploiements d’AEM Headless présentent différents points à prendre en compte.
 
-## Architecture AEM service
+## Architecture de service AEM
 
-Avant d’explorer les considérations liées au déploiement, il est impératif de comprendre AEM architecture logique, ainsi que la séparation et les rôles des niveaux de service d’AEM as a Cloud Service. AEM as a Cloud Service comprend deux services logiques :
+Avant d’explorer les points à prendre en compte pour le déploiement, il est impératif de comprendre l’architecture logique d’AEM, ainsi que la séparation et les rôles des niveaux de service d’AEM as a Cloud Service. AEM as a Cloud Service comprend deux services logiques :
 
-+ __Auteur AEM__ est le service vers lequel les équipes créent, collaborent et publient des fragments de contenu (et d’autres ressources).
-+ __Publication AEM__ est le service qui a été publié ; les fragments de contenu (et d’autres ressources) sont répliqués pour une utilisation générale.
-+ __Aperçu AEM__ est le service qui imite AEM Publish dans le comportement, mais qui contient du contenu publié à des fins de prévisualisation ou de révision. AEM Aperçu est destiné aux audiences internes et non à la diffusion générale de contenu. L’utilisation de l’aperçu AEM est facultative, selon le workflow souhaité.
++ Le service de __Création AEM__ permet aux équipes de créer, collaborer et publier des fragments de contenu (et d’autres ressources).
++ Le service de __Publication AEM__ permet aux fragments de contenu publiés (et aux autres ressources) d’être répliqués pour la consommation générale.
++ Le service de __Prévisualisation AEM__ imite le service de Publication AEM sur le plan du comportement, mais son contenu est publié à des fins de prévisualisation ou de révision. Le service de Prévisualisation AEM est destiné à un public interne, et non à la diffusion générale de contenu. L’utilisation du service de Prévisualisation AEM est facultative, et dépend du workflow souhaité.
 
-![Architecture AEM service](./assets/overview/aem-service-architecture.png)
+![Architecture de service AEM.](./assets/overview/aem-service-architecture.png)
 
-Architecture de déploiement as a Cloud Service sans tête standard AEM
+Architecture classique d’un déploiement découplé d’AEM as a Cloud Service :
 
-AEM clients sans affichage opérant dans une capacité de production interagissent généralement avec AEM Publish, qui contient le contenu approuvé et publié. Les clients qui interagissent avec l’auteur AEM doivent faire preuve d’une attention particulière, car l’auteur AEM est sécurisé par défaut, ce qui nécessite une autorisation pour toutes les requêtes. Il peut également contenir du travail en cours ou du contenu non approuvé.
+Les clients et clientes AEM Headless opérant dans le cadre d’une capacité de production interagissent généralement avec le service de Publication AEM, qui contient le contenu approuvé et publié. Les clients et clientes qui interagissent avec la service de Création AEM doivent être particulièrement vigilants, car le service de Création AEM est sécurisé par défaut et nécessite une autorisation pour toutes les requêtes, et peut également contenir des travaux en cours, ou du contenu non approuvé.
 
-## Déploiements de clients sans affichage
+## Déploiements de clients découplés
 
 <div class="columns is-multiline">
     <!-- Single-page App (SPA) -->
@@ -45,18 +45,18 @@ AEM clients sans affichage opérant dans une capacité de production interagisse
        <div class="card">
            <div class="card-image">
                <figure class="image is-16by9">
-                   <a href="./spa.md" title="Application d’une seule page (SPA)" tabindex="-1">
-                       <img class="is-bordered-r-small" src="./assets/spa/spa-card.png" alt="Applications d’une seule page (SPA)">
+                   <a href="./spa.md" title="Application web monopage (SPA)" tabindex="-1">
+                       <img class="is-bordered-r-small" src="./assets/spa/spa-card.png" alt="Applications web monopages (SPA)">
                    </a>
                </figure>
            </div>
            <div class="card-content is-padded-small">
                <div class="content">
-                   <p class="headline is-size-6 has-text-weight-bold"><a href="./spa.md" title="Application d’une seule page (SPA)">Application d’une seule page (SPA)</a></p>
-                   <p class="is-size-6">Découvrez les considérations relatives au déploiement pour les applications d’une seule page (SPA).</p>
+                   <p class="headline is-size-6 has-text-weight-bold"><a href="./spa.md" title="Application web monopage (SPA)">Application web monopage (SPA)</a></p>
+                   <p class="is-size-6">Découvrez les considérations relatives au déploiement des applications web monopages (SPA).</p>
                    <a href="./spa.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                       <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
-                   </a>
+<span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Apprendre</span>
+</a>
                </div>
            </div>
        </div>
@@ -74,10 +74,10 @@ AEM clients sans affichage opérant dans une capacité de production interagisse
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="./web-component.md" title="Composant Web/JS">Composant Web/JS</a></p>
-               <p class="is-size-6">Découvrez les points à prendre en compte concernant le déploiement des composants web et des clients JavaScript sans interface utilisateur de navigateur.</p>
+               <p class="is-size-6">Découvrez les points à prendre en compte pour le déploiement des composants web et des consommateurs et consommatrices JavaScript découplés basés sur le navigateur.</p>
                <a href="./web-component.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
-               </a>
+<span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Apprendre</span>
+</a>
            </div>
        </div>
    </div>
@@ -95,10 +95,10 @@ AEM clients sans affichage opérant dans une capacité de production interagisse
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="./mobile.md" title="Applications mobiles">Application mobile</a></p>
-               <p class="is-size-6">Découvrez les considérations relatives au déploiement pour les applications mobiles.</p>
+               <p class="is-size-6">Découvrez les points à prendre en compte pour le déploiement des applications mobiles.</p>
                <a href="./mobile.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
-               </a>
+<span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Apprendre</span>
+</a>
            </div>
        </div>
    </div>
@@ -116,10 +116,10 @@ AEM clients sans affichage opérant dans une capacité de production interagisse
        <div class="card-content is-padded-small">
            <div class="content">
                <p class="headline is-size-6 has-text-weight-bold"><a href="./server-to-server.md" title="Applications serveur à serveur">Application serveur à serveur</a></p>
-               <p class="is-size-6">En savoir plus sur les considérations de déploiement pour les applications serveur à serveur</p>
+               <p class="is-size-6">Découvrez les points à prendre en compte pour le déploiement des applications de serveur à serveur.</p>
                <a href="./server-to-server.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
-                   <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
-               </a>
+<span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Apprendre</span>
+</a>
            </div>
        </div>
    </div>
