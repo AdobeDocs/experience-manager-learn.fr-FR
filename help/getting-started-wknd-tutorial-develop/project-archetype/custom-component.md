@@ -439,7 +439,7 @@ Créez une interface Java™ publique pour la signature. Le `Byline.java` défin
 
    Étant donné que le package Java™ `com.adobe.aem.guides.wknd.core.models` de la source WKND déclare la version de `1.0.0`, et qu’une interface publique et des méthodes avec des modifications mineures sont ajoutées, la version doit passer à `1.1.0`. Ouvrez le fichier à `core/src/main/java/com/adobe/aem/guides/wknd/core/models/package-info.java` et modifiez `@Version("1.0.0")` en `@Version("2.1.0")`.
 
-       ```
+     ```
      @Version(&quot;2.1.0&quot;)
      package com.adobe.aem.guides.wknd.core.models;
      
