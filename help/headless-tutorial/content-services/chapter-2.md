@@ -57,7 +57,6 @@ Si les modèles de fragment de contenu ne sont **pas** activés pour une configu
    >    1. Ouvrez [CRXDE Lite](http://localhost:4502/crx/de).
    >    1. Accédez à `/conf/wknd-mobile/settings/dam/cfm`.
    >    1. Supprimez le nœud `models`.
-
    >    
    >Tous les modèles de fragment de contenu existants créés sous cette configuration sont supprimés, et leurs définitions sont stockées sous `/conf/wknd-mobile/settings/dam/cfm/models`.
 
