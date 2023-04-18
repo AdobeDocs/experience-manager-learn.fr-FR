@@ -8,7 +8,7 @@ role: Developer
 level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
+source-git-commit: 1011c700a33b932c3c0a766727fc1d90bf2940f4
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -26,7 +26,8 @@ Un lot d’AEM personnalisé a été développé pour créer et renvoyer le form
 ## Création d’une configuration OSGi Acrobat Sign
 
 L’API REST Acrobat Sign requiert la clé d’intégration et le courrier électronique associés à la clé d’intégration. Ces deux valeurs sont fournies sous forme de propriétés de configuration OSGi, comme illustré ci-dessous.
-![sign-configuration](assets/sign-configuration.jpg)
+
+![sign-configuration](assets/sign-configuration.png)
 
 ```java
 package com.acrobatsign.core.configuration;

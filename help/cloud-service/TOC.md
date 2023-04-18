@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 9917b16248ef1f0a9c86f03a024c634636b2304e
+source-git-commit: 1011c700a33b932c3c0a766727fc1d90bf2940f4
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 98%
+source-wordcount: '932'
+ht-degree: 95%
 
 ---
 
@@ -114,7 +114,7 @@ ht-degree: 98%
       + [Developer Console](./debugging/cloud-service/developer-console.md)
       + [Navigateur de référentiel](./debugging/cloud-service/repository-browser.md)
       + Risques{#risks}
-         + [Avertissements transversaux](./debugging/cloud-service/risks/traversals.md)
+         + [Avertissements relatifs aux conversions](./debugging/cloud-service/risks/traversals.md)
 + Diffusion de contenu{#content-delivery}
    + [Redirections d’URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=fr)
 + Accéder à AEM{#accessing}
@@ -259,6 +259,9 @@ ht-degree: 98%
       + [Créer un modèle de données de formulaire](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [Tester un envoi de formulaire](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Tester un événement de clic](./forms/integrate-with-salesforce/create-lead-click-event.md)
+   + Stocker les envois de formulaire dans un lecteur et un point de partage{#one-drive}
+      + [Stocker les données de formulaire sur un lecteur](./forms/forms-cs-one-drive/store-form-submission-one-drive.md)
+      + [Stocker les données de formulaire dans sharepoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
 + Extensibilité Assets Compute{#asset-compute}
    + [Présentation](./asset-compute/overview.md)
    + Configuration{#set-up}
