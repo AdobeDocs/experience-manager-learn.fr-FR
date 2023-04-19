@@ -8,10 +8,10 @@ role: Developer, Architect
 level: Intermediate
 kt: 10830
 thumbnail: KT-10830.jpg
-source-git-commit: 6f1000db880c3126a01fa0b74abdb39ffc38a227
-workflow-type: ht
-source-wordcount: '572'
-ht-degree: 100%
+source-git-commit: cc78e59fe70686e909928e407899fcf629a651b9
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 92%
 
 ---
 
@@ -19,6 +19,8 @@ ht-degree: 100%
 # Partage de ressources entre origines multiples (CORS)
 
 Le partage des ressources cross-origin (CORS) d’Adobe Experience Manager as a Cloud Service facilite les propriétés web non-AEM pour effectuer des appels côté client basés sur un navigateur vers les API GraphQL d’AEM.
+
+L’article suivant décrit comment configurer _origine unique_ accès à un ensemble spécifique de points de terminaison AEM sans affichage via CORS. Une origine unique signifie que seul un accès à un domaine non AEM unique est AEM, par exemple, https://app.example.com se connectant à https://www.example.com. L’accès à plusieurs origines peut ne pas fonctionner avec cette approche en raison de problèmes de mise en cache.
 
 >[!TIP]
 >
@@ -28,7 +30,7 @@ Le partage des ressources cross-origin (CORS) d’Adobe Experience Manager as a 
 
 CORS est obligatoire pour les connexions par navigateur aux API GraphQL d’AEM, quand le client qui se connecte à AEM n’est PAS pris en charge à partir de la même origine (également appelée hôte ou domaine) qu’AEM.
 
-| Type de client | [Application monopage (SPA)](../spa.md) | [Composant web/JS](../web-component.md) | [Mobile](../mobile.md) | [Serveur à serveur](../server-to-server.md) |
+| Type de client | [Application monopage (SPA)](../spa.md) | [Composant Web/JS](../web-component.md) | [Mobile](../mobile.md) | [Serveur à serveur](../server-to-server.md) |
 |----------------------------:|:---------------------:|:-------------:|:---------:|:----------------:|
 | Configuration CORS requise | ✔ | ✔ | ✘ | ✘ |
 
@@ -36,7 +38,7 @@ CORS est obligatoire pour les connexions par navigateur aux API GraphQL d’AEM,
 
 La configuration OSGi de CORS AEM définit les critères d’autorisation pour accepter les requêtes HTTP CORS.
 
-| Le client se connecte à : | l’instance de création AEM, | l’instance de publication AEM, | Prévisualisation AEM |
+| Le client se connecte à : | l’instance de création AEM, | Publication AEM | Prévisualisation AEM |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Nécessite une configuration OSGi CORS | ✔ | ✔ | ✔ |
 
@@ -63,7 +65,6 @@ Cet exemple de configuration prend en charge l’utilisation des requêtes persi
     "https://spa.external.com/"
   ],
   "alloworiginregexp":[
-    "http://localhost:.*"
   ],
   "allowedpaths": [
     "/graphql/execute.json.*",
@@ -127,7 +128,7 @@ Par exemple, ces deux paramètres sont définis comme suit dans une configuratio
 
 Le Dispatcher du service Publication AEM (et aperçu) doit être configuré pour prendre en charge CORS.
 
-| Le client se connecte à : | l’instance de création AEM, | l’instance de publication AEM, | Prévisualisation AEM |
+| Le client se connecte à : | l’instance de création AEM, | Publication AEM | Prévisualisation AEM |
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Nécessite une configuration CORS de Dispatcher | ✘ | ✔ | ✔ |
 
