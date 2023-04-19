@@ -9,10 +9,10 @@ level: Intermediate
 kt: 10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
-source-git-commit: 595d990b7d8ed3c801a085892fef38d780082a15
-workflow-type: ht
-source-wordcount: '415'
-ht-degree: 100%
+source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 91%
 
 ---
 
@@ -203,3 +203,37 @@ De nouveaux hooks `useEffect` peuvent être créés pour chaque requête persist
 
 AEM prend en charge les requêtes GraphQL définies par le client, mais il est recommandé d’utiliser les [requêtes GraphQL persistantes](#persisted-graphql-queries) dans AEM.
 
+## Webpack 5+
+
+Le SDK JS AEM sans affichage comporte des dépendances sur `util` qui n’est pas inclus par défaut dans Webpack 5+. Si vous utilisez Webpack 5+ et recevez l’erreur suivante :
+
+```
+Compiled with problems:
+× ERROR in ./node_modules/@adobe/aio-lib-core-errors/src/AioCoreSDKErrorWrapper.js 12:13-28
+Module not found: Error: Can't resolve 'util' in '/Users/me/Code/wknd-headless-examples/node_modules/@adobe/aio-lib-core-errors/src'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to:
+    - add a fallback 'resolve.fallback: { "util": require.resolve("util/") }'
+    - install 'util'
+If you don't want to include a polyfill, you can use an empty module like this:
+    resolve.fallback: { "util": false }
+```
+
+Ajoutez ce qui suit : `devDependencies` à `package.json` fichier :
+
+```json
+  "devDependencies": {
+    "buffer": "npm:buffer@^6.0.3",
+    "crypto": "npm:crypto-browserify@^3.12.0",
+    "http": "npm:stream-http@^3.2.0",
+    "https": "npm:https-browserify@^1.0.0",
+    "stream": "npm:stream-browserify@^3.0.0",
+    "util": "npm:util@^0.12.5",
+    "zlib": "npm:browserify-zlib@^0.2.0"
+  },
+```
+
+Exécutez ensuite `npm install` pour installer les dépendances.
