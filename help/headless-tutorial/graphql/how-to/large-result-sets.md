@@ -10,10 +10,10 @@ doc-type: Article
 last-substantial-update: 2023-04-14T00:00:00Z
 jira: KT-13102
 thumbnail: 3418381.jpeg
-source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
+source-git-commit: 9eb706e49f12a3ebd5222e733f540db4cf2c8748
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 1%
+source-wordcount: '841'
+ht-degree: 2%
 
 ---
 
@@ -34,9 +34,11 @@ La pagination et le tri peuvent être utilisés par rapport à n’importe quel 
 
 Lors de l’utilisation de jeux de données volumineux, la pagination décalée, limitée et basée sur le curseur peut être utilisée pour récupérer un sous-ensemble spécifique des données. Cependant, il existe des différences entre les deux techniques, qui peuvent rendre l&#39;une plus appropriée que l&#39;autre dans certaines situations.
 
-### Requête de liste
+### Décalage/limite
 
 Liste des requêtes, à l’aide de `limit` et `offset` proposer une approche simple qui spécifie le point de départ (`offset`) et le nombre d’enregistrements à récupérer (`limit`). Cette approche permet de sélectionner un sous-ensemble de résultats à partir de n’importe quel emplacement du jeu de résultats complet, comme accéder à une page de résultats spécifique. Bien qu’il soit facile à mettre en oeuvre, il peut être lent et inefficace lorsque vous traitez de gros résultats, car la récupération de nombreux enregistrements nécessite une analyse de tous les enregistrements précédents. Cette approche peut également entraîner des problèmes de performances lorsque la valeur de décalage est élevée, car elle peut nécessiter la récupération et le rejet de nombreux résultats.
+
+#### Requête GraphQL
 
 ```graphql
 # Retrieves a list of Adventures sorted price descending, and title ascending if there is the prices are the same.
@@ -51,7 +53,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
   }
 ```
 
-#### Variables de requête
+##### Variables de requête
 
 ```json
 {
@@ -60,7 +62,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
 }
 ```
 
-### Réponse de liste
+#### Réponse GraphQL
 
 La réponse JSON résultante contient les 2e, 3e, 4e et 5e aventures les plus coûteuses. Les deux premières aventures dans les résultats ont le même prix (`4500` Ainsi, la variable [requête de liste](#list-queries) indique que les aventures au prix identique sont ensuite triées par titre dans l’ordre croissant.)
 
@@ -99,10 +101,11 @@ La réponse JSON résultante contient les 2e, 3e, 4e et 5e aventures les plus co
 
 La pagination basée sur un curseur, disponible dans les requêtes paginées, implique l’utilisation d’un curseur (une référence à un enregistrement spécifique) pour récupérer l’ensemble de résultats suivant. Cette approche est plus efficace, car elle évite d’analyser tous les enregistrements précédents pour récupérer le sous-ensemble de données requis. Les requêtes paginées sont idéales pour itérer à travers de grands ensembles de résultats du début à un certain point au milieu ou à la fin. Liste des requêtes, à l’aide de `limit` et `offset` proposer une approche simple qui spécifie le point de départ (`offset`) et le nombre d’enregistrements à récupérer (`limit`). Cette approche permet de sélectionner un sous-ensemble de résultats à partir de n’importe quel emplacement du jeu de résultats complet, comme accéder à une page de résultats spécifique. Bien qu’il soit facile à mettre en oeuvre, il peut être lent et inefficace lorsque vous traitez de gros résultats, car la récupération de nombreux enregistrements nécessite une analyse de tous les enregistrements précédents. Cette approche peut également entraîner des problèmes de performances lorsque la valeur de décalage est élevée, car elle peut nécessiter la récupération et le rejet de nombreux résultats.
 
+#### Requête GraphQL
 
 ```graphql
 # Retrieves the most expensive Adventures (sorted by title ascending if there is the prices are the same)
-query adventuresByPaginated($first:Int!, $after:String) {
+query adventuresByPaginated($first:Int, $after:String) {
  adventurePaginated(first: $first, after: $after, sort: "price DESC, title ASC") {
        edges {
           cursor
@@ -120,7 +123,7 @@ query adventuresByPaginated($first:Int!, $after:String) {
   }
 ```
 
-#### Variables de requête
+##### Variables de requête
 
 ```json
 {
@@ -128,7 +131,7 @@ query adventuresByPaginated($first:Int!, $after:String) {
 }
 ```
 
-### Réponse paginée
+#### Réponse GraphQL
 
 La réponse JSON résultante contient les 2e, 3e, 4e et 5e aventures les plus coûteuses. Les deux premières aventures dans les résultats ont le même prix (`4500` Ainsi, la variable [requête de liste](#list-queries) indique que les aventures au prix identique sont ensuite triées par titre dans l’ordre croissant.)
 
@@ -171,11 +174,11 @@ La réponse JSON résultante contient les 2e, 3e, 4e et 5e aventures les plus co
 }
 ```
 
-### Prochain jeu de résultats paginés
+#### Prochain jeu de résultats paginés
 
 L’ensemble de résultats suivant peut être récupéré à l’aide de la variable `after` et le paramètre `endCursor` de la requête précédente. S’il n’y a plus de résultats à récupérer, `hasNextPage` is `false`.
 
-#### Variables de requête
+##### Variables de requête
 
 ```json
 {
