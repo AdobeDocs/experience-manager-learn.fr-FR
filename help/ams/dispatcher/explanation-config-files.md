@@ -7,7 +7,7 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 7815b1a78949c433f2c53ff752bf39dd55f9ac94
+source-git-commit: cc085af90b9b8ea0e650546c251fbf14cc222989
 workflow-type: tm+mt
 source-wordcount: '1705'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Le serveur web Apache ne se soucie pas vraiment de l’extension de fichier d’
 | FILENAME`_rewrite.rules` | `/etc/httpd/conf.d/rewrites/` | `*_rewrite.rules` magasin de fichiers `mod_rewrite` règles à inclure et à utiliser explicitement par une `vhost` fichier |
 | FILENAME`_whitelist.rules` | `/etc/httpd/conf.d/whitelists/` | `*_ipwhitelist.rules` Les fichiers sont inclus dans la variable `*.vhost` fichiers . Elle contient une expression régulière IP ou autorise les règles de refus à autoriser l’liste autorisée d’adresses IP. Si vous essayez de restreindre l’affichage d’un hôte virtuel en fonction des adresses IP, vous allez générer l’un de ces fichiers et l’inclure à partir de votre `*.vhost` fichier |
 
-## Fichiers contenus dans conf.modules.d/
+## Fichiers contenus dans conf.dispatcher.d/
 
 | File | Destination du fichier | Description |
 | --- | --- | --- |
@@ -85,7 +85,7 @@ Si la variable `vhost` est accidentellement placé dans la variable `rewrites` e
 
 <b>Comment cela devient généralement un problème</b>
 
-Si la variable `two files` sont téléchargés dans le `same` emplacement où ils peuvent `overwrite themselves` ou rendre le processus de déploiement indissociable.
+Si la variable `two files` sont téléchargés dans le `same` emplacement où ils peuvent `overwrite themselves` ou rendre le processus de déploiement indissociable, ce qui en fait un cauchemar.
 
 <b>Les extensions de fichier sont identiques et incluent automatiquement</b>
 
