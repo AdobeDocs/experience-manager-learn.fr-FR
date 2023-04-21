@@ -12,8 +12,8 @@ last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 8%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_devtools"
 >title="Configurer des outils de développement"
->abstract="Le développement d’Adobe Experience Manager (AEM) nécessite l’installation et la configuration d’un ensemble minimal d’outils de développement sur l’appareil du développeur ou de la développeuse. Ces outils comprennent Java, Maven, Adobe I/O CLI, Development IDE, etc."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr" text="Conseils de développement"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html?lang=fr" text="Bases du développement"
+>abstract="Le développement d&#39;Adobe Experience Manager (AEM) nécessite l&#39;installation et la configuration d&#39;un jeu minimal d&#39;outils de développement sur la machine du développeur. Ces outils comprennent Java, Maven, Adobe I/O CLI, Development IDE, etc."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr" text="Consignes de développement"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/basics/aem-sdk.html?lang=fr" text="Principes de base de développement"
 
-Le développement d’Adobe Experience Manager (AEM) nécessite l’installation et la configuration d’un ensemble minimal d’outils de développement sur l’appareil du développeur ou de la développeuse. Ces outils prennent en charge le développement et la création de projets AEM.
+Le développement d&#39;Adobe Experience Manager (AEM) nécessite l&#39;installation et la configuration d&#39;un jeu minimal d&#39;outils de développement sur la machine du développeur. Ces outils prennent en charge le développement et la création de projets AEM.
 
 Notez que `~` est utilisé comme abrégé pour le répertoire de l’utilisateur. Sous Windows, il s’agit de l’équivalent de `%HOMEPATH%`.
 
@@ -34,7 +34,7 @@ Notez que `~` est utilisé comme abrégé pour le répertoire de l’utilisateur
 
 Experience Manager est une application Java qui requiert donc le SDK Java pour prendre en charge le développement et le SDK as a Cloud Service AEM.
 
-1. [Téléchargez et installez la dernière version du SDK Java 11.](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.properties.operation=equals&amp;1_group.properties.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
+1. [Téléchargez et installez la dernière version du SDK Java 11.](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
 1. Vérifiez que le SDK Java 11 est installé en exécutant la commande :
    + Windows : `java -version`
    + macOS / Linux : `java --version`
@@ -190,7 +190,7 @@ Visual Studio Code est le choix idéal pour les développeurs front-end qui cré
 
 + [Télécharger le code Visual Studio](https://code.visualstudio.com/Download)
 + [Téléchargement de l’outil Repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)
-+ [Télécharger l’extension aemfed VS Code](https://aemfed.io/)
++ [Télécharger l’extension aemfed VS Code](https://aemfed.io)
 + [Télécharger l’extension AEM synchronisation VS Code](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)
 
 ### Eclipse

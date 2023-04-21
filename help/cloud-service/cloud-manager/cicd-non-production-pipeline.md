@@ -1,6 +1,6 @@
 ---
 title: Utilisation d’Adobe Cloud Manager - pipeline hors production CI/CD
-description: 'Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager. Les pipelines de déploiement prennent en charge le déploiement automatisé de code du référentiel Git vers tout environnement hors production, c’est-à-dire tout environnement d’AEM configuré qui n’est ni dans l’environnement intermédiaire ni dans l’environnement de production.'
+description: 'Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager. Les pipelines de déploiement prennent en charge le déploiement automatisé du code du référentiel Git vers tout environnement hors production, c''est-à-dire tout environnement AEM provisionné qui n''est ni en évaluation ni en production.'
 topics: Administration
 audience: administrator
 doc-type: feature video
@@ -14,8 +14,8 @@ level: Beginner
 exl-id: b28805d3-bb2d-4f66-8daa-9a8eb7ecf0a1
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 47%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 47%
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_nonprodpipeline"
 >title="Pipeline hors production CI/CD"
->abstract="Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager. Les pipelines de déploiement prennent en charge le déploiement automatisé de code du référentiel Git vers tout environnement hors production, c’est-à-dire tout environnement d’AEM configuré qui n’est ni dans l’environnement intermédiaire ni dans l’environnement de production."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#non-production-%26-code-quality-only-pipelines" text="Pipelines de la qualité du code et hors production uniquement"
+>abstract="Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager. Les pipelines de déploiement prennent en charge le déploiement automatisé du code du référentiel Git vers tout environnement hors production, c&#39;est-à-dire tout environnement AEM provisionné qui n&#39;est ni en évaluation ni en production."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=fr#non-production-%26-code-quality-only-pipelines" text="Pipelines de la qualité du code et hors production uniquement"
 
-[Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#non-production-%26-code-quality-only-pipelines) Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager. Les pipelines de déploiement prennent en charge le déploiement automatisé de code du référentiel Git vers tout environnement hors production, c’est-à-dire tout environnement d’AEM configuré qui n’est ni dans l’environnement intermédiaire ni dans l’environnement de production.
+[Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=fr#non-production-%26-code-quality-only-pipelines) Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager. Les pipelines de déploiement prennent en charge le déploiement automatisé du code du référentiel Git vers tout environnement hors production, c&#39;est-à-dire tout environnement AEM provisionné qui n&#39;est ni en évaluation ni en production.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316?quality=12&learn=on)

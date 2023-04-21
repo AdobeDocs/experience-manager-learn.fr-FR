@@ -11,8 +11,8 @@ thumbnail: 330540.jpg
 exl-id: 2ddd241a-0e8a-4397-8006-6f807be4fb12
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 17%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_testresult"
 >title="Analyse des résultats des tests"
->abstract="Explorer les erreurs de compilation dans votre code et si ce code suit ou non les bonnes pratiques pour AEM as a Cloud Service"
+>abstract="Découvrez les erreurs de compilation dans votre code et déterminez si ce code suit les bonnes pratiques pour AEM as a Cloud Service"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=fr#how-to-use" text="Présentation des résultats des tests"
 
 Explorer les erreurs de compilation dans votre code et déterminer si ce code suit ou non les bonnes pratiques pour AEM as a Cloud Service

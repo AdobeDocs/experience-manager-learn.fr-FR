@@ -1,29 +1,29 @@
 ---
-title: Vidéos et tutoriels AEM Assets
-description: Regardez nos vidéos pour obtenir AEM assistance et assistance pour les ressources.
+title: Vidéos et tutoriels AEM Assets
+description: Regardez nos vidéos pour obtenir de l’aide avec AEM Asset.
 sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Vidéos et tutoriels AEM Assets {#overview}
+# Vidéos et tutoriels AEM Assets {#overview}
 
-Adobe Experience Manager (AEM) Assets est un outil de gestion des ressources numériques d’AEM Platform qui permet aux utilisateurs de créer, gérer et partager leurs ressources numériques (images, vidéos, documents et clips audio) dans un référentiel web. Ce guide de l’utilisateur contient des vidéos et des tutoriels sur les nombreuses fonctionnalités d’AEM Assets.
+Adobe Experience Manager (AEM) Assets est un outil de gestion des ressources numériques disponible sur la plateforme AEM. Il permet aux utilisateurs et utilisatrices de créer, gérer et partager leurs ressources numériques (images, vidéos, documents et clips audio) dans un référentiel web. Ce guide d’utilisation contient des vidéos et des tutoriels sur les nombreuses fonctionnalités dʼAEM Assets.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_assets_overview"
 >title="AEM Assets"
 >abstract="Découvrez comment rechercher et modifier rapidement les ressources dont vous avez besoin."
->additional-url="https://video.tv.adobe.com/v/336196/?captions=fre_fr" text="Présentation d’AEM Assets"
+>additional-url="https://video.tv.adobe.com/v/336196/?captions=fre_fr" text="Présentation d’AEM Assets"
 
-## Présentation d’AEM Assets
+## Présentation d’AEM Assets
 
-Découvrez ce qu’est AEM Assets et comment il peut être utilisé pour atteindre les objectifs commerciaux de votre entreprise.
+Découvrez AEM Assets et comment l’utiliser pour atteindre les objectifs commerciaux de votre organisation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336196?quality=12&learn=on)
 
@@ -45,37 +45,37 @@ Découvrez ce qu’est AEM Assets et comment il peut être utilisé pour atteind
    </a>
    <div>
       <a href="./creative-workflows/aem-desktop-app.md">
-      <strong>Utilisation de AEM Desktop App</strong>
-      </a>
+<strong>Utiliser l’application de bureau AEM</strong>
+</a>
    </div>
    <p>
-      <em>Accès direct aux ressources dans AEM depuis l’ordinateur de bureau</em>
+      <em>Accédez directement aux ressources dans AEM depuis l’ordinateur de bureau.</em>
    </p>
 </td>
 <td>
    <a href="./advanced/asset-insights-launch-tutorial.md">
-   <img alt="AEM Assets Insights" src="./assets/overview/asset-insights.png"/>
+   <img alt="Insights AEM Assets" src="./assets/overview/asset-insights.png"/>
    </a>
    <div>
       <a href="./advanced/asset-insights-launch-tutorial.md">
-      <strong>Utilisation d’AEM Statistiques sur les ressources avec Launch</strong>
-      </a>
+<strong>Utiliser les Insights AEM Assets avec Launch</strong>
+</a>
    </div>
    <p>
-      <em>Obtenir des informations sur l’utilisation des ressources</em>
+      <em>Obtenez des informations sur l’utilisation des ressources.</em>
    <p>
 </td>
 <td>
    <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-   <img alt="Présentation de Dynamic Media" src="./assets/overview/dynamic-media.png" />
+   <img alt="Présentation de Dynamic Media" src="./assets/overview/dynamic-media.png" />
    </a>
    <div>
       <a href="./dynamic-media/dynamic-media-overview-feature-video-use.md">
-      <strong>Présentation de Dynamic Media</strong>
-      </a>
+<strong>Présentation de Dynamic Media</strong>
+</a>
    </div>
    <p>
-      <em>Gestion et accès au contenu multimédia à l’aide de Dynamic Media</em>
+      <em>Gérez le contenu multimédia et accédez-y à l’aide de Dynamic Media.</em>
    <p>
 </td>
 </table>
@@ -84,8 +84,8 @@ Découvrez ce qu’est AEM Assets et comment il peut être utilisé pour atteind
 
 ## Ressources supplémentaires
 
-* [Documentation d’AEM Assets ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=en)
-* [AEM tutoriels as a Cloud Service](/help/cloud-service/overview.md)
-* [Tutoriels AEM Sites](/help/sites/overview.md)
-* [Tutoriels AEM Forms](/help/forms/overview.md)
-* [Tutoriels sur AEM Foundation](/help/foundation/overview.md)
+* [Documentation d’AEM Assets.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=fr)
+* [Tutoriels sur AEM as a Cloud Service](/help/cloud-service/overview.md)
+* [Tutoriels sur AEM Sites](/help/sites/overview.md)
+* [Tutoriels sur AEM Forms](/help/forms/overview.md)
+* [Tutoriels sur AEM Foundation](/help/foundation/overview.md)
