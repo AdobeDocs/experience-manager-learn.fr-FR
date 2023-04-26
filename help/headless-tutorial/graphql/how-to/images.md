@@ -10,9 +10,9 @@ kt: 10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 71b2dc0e8ebec1157694ae55118f2426558566e3
+source-git-commit: ec2609ed256ebe6cdd7935f3e8d476c1ff53b500
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '932'
 ht-degree: 31%
 
 ---
@@ -58,10 +58,15 @@ Les types de champ sont examinés dans le [modèle de fragment de contenu](https
 Dans la requête GraphQL, renvoyez le champ comme `ImageRef` saisissez et demandez la variable `_dynamicUrl` champ . Par exemple, interroger une aventure dans le [Projet de site WKND](https://github.com/adobe/aem-guides-wknd) et inclure l’URL de l’image pour les références de ressources d’image dans `primaryImage` champ, peut être effectué avec une nouvelle requête conservée. `wknd-shared/adventure-image-by-path` défini comme :
 
 ```graphql {highlight="11"}
-query($path: String!, $assetTransform: AssetTransform!) {
+query($path: String!, $imageFormat: AssetTransformFormat=JPG, $imageSeoName: String, $imageWidth: Int, $imageQuality: Int) {
   adventureByPath(
     _path: $path
-    _assetTransform: $assetTransform
+    _assetTransform: {
+      format: $imageFormat
+      width: $imageWidth
+      quality: $imageQuality
+      preferWebp: true
+    }
   ) {
     item {
       _path
@@ -81,7 +86,8 @@ query($path: String!, $assetTransform: AssetTransform!) {
 ```json
 { 
   "path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp",
-  "assetTransform": { "format": "JPG", "quality": 80, "preferWebp": true}
+  "imageFormat": "JPG",
+  "imageWidth": 1000,
 }
 ```
 
@@ -89,17 +95,17 @@ La variable `$path` utilisée dans le filtre `_path` nécessite le chemin d’ac
 
 Le `_assetTransform` définit la manière dont la variable `_dynamicUrl` est construit pour optimiser le rendu d’image servi. Les URL des images optimisées pour le web peuvent également être ajustées sur le client en modifiant les paramètres de requête de l’URL.
 
-| Paramètre GraphQL | paramètre d’URL | Description | Requise | Valeurs de variable GraphQL | Valeurs des paramètres d’URL | Exemple de variable GraphQL | Exemple de paramètre d’URL |
-|:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:---|:--|
-| `format` | `format` | Format de la ressource image. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | S/O | `{ format: JPG }` | S/O |
-| `seoName` | S/O | Nom du segment de fichier dans l’URL. Si aucun nom n’est fourni, le nom de la ressource image est utilisé. | ✘ | Alphanumérique, `-`ou `_` | S/O | `{ seoName: "bali-surf-camp" }` | S/O |
-| `crop` | `crop` | Le cadre de recadrage extrait de l’image doit être de la taille de l’image. | ✘ | Entiers positifs définissant une zone de recadrage dans les limites des dimensions de l’image d’origine | Chaîne de coordonnées numériques délimitée par des virgules `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `{ crop: { xOrigin: 10, yOrigin: 20, width: 300, height: 400} }` | `?crop=10,20,300,400` |
-| `size` | `size` | Taille de l’image de sortie (hauteur et largeur) en pixels. | ✘ | Entiers positifs | Entiers positifs délimités par des virgules dans l’ordre `<WIDTH>,<HEIGHT>` | `{ size: { width: 1200, height: 800 } }` | `?size=1200,800` |
-| `rotation` | `rotate` | Rotation de l’image en degrés. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `{ rotation: R90 }` | `?rotate=90` |
-| `flip` | `flip` | Retourner l’image. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `{ flip: horizontal }` | `?flip=h` |
-| `quality` | `quality` | Qualité de l’image en pourcentage de la qualité d’origine. | ✘ | 1-100 | 1-100 | `{ quality: 80 }` | `?quality=80` |
-| `width` | `width` | Largeur de l’image de sortie en pixels. When `size` est fournie `width` est ignorée. | ✘ | Entier positif | Entier positif | `{ width: 1600 }` | `?width=1600` |
-| `preferWebP` | `preferwebp` | If `true` et AEM sert un WebP si le navigateur le prend en charge, quelle que soit la variable `format`. | ✘ | `true`, `false` | `true`, `false` | `{ preferWebp: true }` | `?preferwebp=true` |
+| Paramètre GraphQL | paramètre d’URL | Description | Requise | Valeurs de variable GraphQL | Valeurs des paramètres d’URL | Exemple de paramètre d’URL |
+|:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
+| `format` | `format` | Format de la ressource image. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | S/O | S/O |
+| `seoName` | S/O | Nom du segment de fichier dans l’URL. Si aucun nom n’est fourni, le nom de la ressource image est utilisé. | ✘ | Alphanumérique, `-`ou `_` | S/O | S/O |
+| `crop` | `crop` | Le cadre de recadrage extrait de l’image doit être de la taille de l’image. | ✘ | Entiers positifs définissant une zone de recadrage dans les limites des dimensions de l’image d’origine | Chaîne de coordonnées numériques délimitée par des virgules `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
+| `size` | `size` | Taille de l’image de sortie (hauteur et largeur) en pixels. | ✘ | Entiers positifs | Entiers positifs délimités par des virgules dans l’ordre `<WIDTH>,<HEIGHT>` | `?size=1200,800` |
+| `rotation` | `rotate` | Rotation de l’image en degrés. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `?rotate=90` |
+| `flip` | `flip` | Retourner l’image. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `?flip=h` |
+| `quality` | `quality` | Qualité de l’image en pourcentage de la qualité d’origine. | ✘ | 1-100 | 1-100 | `?quality=80` |
+| `width` | `width` | Largeur de l’image de sortie en pixels. When `size` est fournie `width` est ignorée. | ✘ | Entier positif | Entier positif | `?width=1600` |
+| `preferWebP` | `preferwebp` | If `true` et AEM sert un WebP si le navigateur le prend en charge, quelle que soit la variable `format`. | ✘ | `true`, `false` | `true`, `false` | `?preferwebp=true` |
 
 ## Réponse GraphQL
 
@@ -113,7 +119,7 @@ La réponse JSON résultante contient les champs demandés contenant l’URL opt
         "_path": "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp",
         "title": "Bali Surf Camp",
         "primaryImage": {
-          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--a38886f7-4537-4791-aa20-3f6ef0ac3fcd/adobestock_175749320.jpg?preferwebp=true&quality=80"
+          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--a38886f7-4537-4791-aa20-3f6ef0ac3fcd/adobestock_175749320.jpg?preferwebp=true&width=1000&quality=80"
         }
       }
     }
@@ -219,7 +225,7 @@ function App() {
   // The 2nd parameter define the base GraphQL query parameters used to request the web-optimized image
   let { data, error } = useAdventureByPath(
         "/content/dam/wknd-shared/en/adventures/bali-surf-camp/bali-surf-camp", 
-        { assetTransform: { format: "JPG", preferWebp: true } }
+        { imageFormat: "JPG" }
       );
 
   // Wait for AEM Headless APIs to provide data
