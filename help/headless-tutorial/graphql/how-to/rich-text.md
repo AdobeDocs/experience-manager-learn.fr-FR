@@ -8,10 +8,10 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 117b67bd185ce5af9c83bd0c343010fab6cd0982
 workflow-type: tm+mt
-source-wordcount: '1464'
-ht-degree: 100%
+source-wordcount: '1465'
+ht-degree: 98%
 
 ---
 
@@ -367,7 +367,7 @@ Utilisez le type de retour `json` et incluez l’objet `_references` lors de la 
 
 ```graphql
 query ($path: String!) {
-  articleByPath(_path: $path)
+  articleByPath(_path: $path, _assetTransform: { format: JPG, preferWebp: true })
   {
     item {
       _path
@@ -377,17 +377,14 @@ query ($path: String!) {
     }
     _references {
       ...on ImageRef {
-        _path
-        _publishUrl
-        width
+        _dynamicUrl
         __typename
       }
       ...on ArticleModel {
         _path
         author
         __typename
-      }
-      
+      }  
     }
   }
 }
@@ -461,9 +458,7 @@ Dans la requête ci-dessus, le champ `main` est renvoyé en tant que JSON. L’o
       },
       "_references": [
         {
-          "_path": "/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "_publishUrl": "http://publish-p123-e456.adobeaemcloud.com/content/dam/wknd/en/activities/climbing/sport-climbing.jpg",
-          "width": 1920,
+          "_dynamicUrl": "/adobe/dynamicmedia/deliver/dm-aid--dd42d814-88ec-4c4d-b5ef-e3dc4bc0cb42/sport-climbing.jpg?preferwebp=true",
           "__typename": "ImageRef"
         },
         {
@@ -477,7 +472,7 @@ Dans la requête ci-dessus, le champ `main` est renvoyé en tant que JSON. L’o
 }
 ```
 
-La réponse JSON inclut l’emplacement où la référence a été insérée dans le texte enrichi avec `"nodeType": "reference"`. L’objet `_references` inclut ensuite chaque référence avec les propriétés supplémentaires demandées. Par exemple, `ImageRef` renvoie la `width` de l’image référencée dans l’article.
+La réponse JSON inclut l’emplacement où la référence a été insérée dans le texte enrichi avec `"nodeType": "reference"`. Le `_references` inclut ensuite chaque référence.
 
 ## Effectuer le rendu de références intégrées dans du texte enrichi
 
@@ -493,12 +488,12 @@ const nodeMap = {
             let reference;
             
             // asset reference
-            if(node.data.path) {
+            if (node.data.path) {
                 // find reference based on path
                 reference = references.find( ref => ref._path === node.data.path);
             }
             // Fragment Reference
-            if(node.data.href) {
+            if (node.data.href) {
                 // find in-line reference within _references array based on href and _path properties
                 reference = references.find( ref => ref._path === node.data.href);
             }
@@ -518,7 +513,7 @@ const renderReference = {
     // node contains merged properties of the in-line reference and _references object
     'ImageRef': (node) => {
         // when __typename === ImageRef
-        return <img src={node._publishUrl} alt={'in-line reference'} /> 
+        return <img src={node._dynamicUrl} alt={'in-line reference'} /> 
     },
     'ArticleModel': (node) => {
         // when __typename === ArticleModel
@@ -538,9 +533,14 @@ Vous trouverez un exemple complet d’écriture d’un générateur de rendu de 
 
 >[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
 
+>[!NOTE]
+>
+> La vidéo ci-dessus utilise `_publishUrl` pour effectuer le rendu de la référence de l’image. Au lieu de cela, préférez `_dynamicUrl` comme expliqué dans la section [procédures relatives aux images optimisées pour le web](./images.md);
+
+
 La vidéo précédente présente un exemple de bout en bout :
 
 1. Mise à jour du champ de texte multiligne d’un modèle de fragment de contenu pour autoriser les références de fragment.
-1. Utilisation de l’éditeur de fragment de contenu pour inclure une image et une référence à un autre fragment dans un champ de texte multiligne.
-1. Création d’une requête GraphQL qui inclut la réponse textuelle multiligne au format JSON et tout élément `_references` utilisé.
-1. Écriture d’une SPA React qui effectue le rendu des références intégrées de la réponse de texte enrichi.
+2. Utilisation de l’éditeur de fragment de contenu pour inclure une image et une référence à un autre fragment dans un champ de texte multiligne.
+3. Création d’une requête GraphQL qui inclut la réponse textuelle multiligne au format JSON et tout élément `_references` utilisé.
+4. Écriture d’une SPA React qui effectue le rendu des références intégrées de la réponse de texte enrichi.
