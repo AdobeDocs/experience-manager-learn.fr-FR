@@ -10,9 +10,9 @@ kt: 10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: ec2609ed256ebe6cdd7935f3e8d476c1ff53b500
+source-git-commit: 09f9530cab0ec651b7c37c8c078631c79e8cfe4a
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '934'
 ht-degree: 31%
 
 ---
@@ -97,7 +97,7 @@ Le `_assetTransform` définit la manière dont la variable `_dynamicUrl` est con
 
 | Paramètre GraphQL | paramètre d’URL | Description | Requise | Valeurs de variable GraphQL | Valeurs des paramètres d’URL | Exemple de paramètre d’URL |
 |:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
-| `format` | `format` | Format de la ressource image. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | S/O | S/O |
+| `format` | S/O | Format de la ressource image. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`,  `WEBP`, `WEBPLL`, `WEBPLY` | S/O | S/O |
 | `seoName` | S/O | Nom du segment de fichier dans l’URL. Si aucun nom n’est fourni, le nom de la ressource image est utilisé. | ✘ | Alphanumérique, `-`ou `_` | S/O | S/O |
 | `crop` | `crop` | Le cadre de recadrage extrait de l’image doit être de la taille de l’image. | ✘ | Entiers positifs définissant une zone de recadrage dans les limites des dimensions de l’image d’origine | Chaîne de coordonnées numériques délimitée par des virgules `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
 | `size` | `size` | Taille de l’image de sortie (hauteur et largeur) en pixels. | ✘ | Entiers positifs | Entiers positifs délimités par des virgules dans l’ordre `<WIDTH>,<HEIGHT>` | `?size=1200,800` |
