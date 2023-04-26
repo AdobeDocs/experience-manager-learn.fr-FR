@@ -10,7 +10,7 @@ kt: 10253
 thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
-source-git-commit: 09f9530cab0ec651b7c37c8c078631c79e8cfe4a
+source-git-commit: 97a311e043d3903070cd249d993036b5d88a21dd
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 31%
@@ -141,7 +141,7 @@ let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
 
 Souvenez-vous, `_dynamicUrl` n’inclut pas le domaine AEM. Vous devez donc fournir l’origine souhaitée de l’URL de l’image à résoudre.
 
-### URL réactives
+## URL réactives
 
 L’exemple ci-dessus illustre l’utilisation d’une image à taille unique. Toutefois, dans les expériences web, des visionneuses d’images réactives sont souvent requises. Les images réactives peuvent être mises en oeuvre à l’aide de [img srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) ou [éléments d’image](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). Le fragment de code suivant montre comment utiliser la variable `_dynamicUrl` en tant que base et en ajoutant différents paramètres de largeur, afin d’alimenter différentes vues réactives. Non seulement la variable `width` le paramètre de requête peut être utilisé, mais d’autres paramètres de requête peuvent être ajoutés par le client pour optimiser davantage la ressource image en fonction de ses besoins.
 
@@ -155,7 +155,7 @@ let alt = data.adventureByPath.item.title;
 {/*-- Example img srcset --*/}
 document.body.innerHTML=`<img>
     alt="${alt}"
-    src="${${dynamicUrl}&width=1000}"
+    src="${dynamicUrl}&width=1000}"
     srcset="`
       ${dynamicUrl}&width=1000 1000w,
       ${dynamicUrl}&width=1600 1600w,
@@ -171,26 +171,26 @@ document.body.innerHTML=`<picture>
     </picture>`;
 ```
 
-### Exemple pour React
+## Exemple pour React
 
 Créons une application React simple qui affiche des images optimisées pour le web comme suit : [modèles d’image réactifs](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/). Il existe deux modèles principaux pour les images réactives :
 
 + [Importer un élément avec srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) pour des performances accrues
 + [Elément Image](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) pour le contrôle de conception
 
-#### Importer un élément avec srcset
+### Importer un élément avec srcset
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418556/?quality=12&learn=on)
 
 [Importation d’éléments avec srcset](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) sont utilisés avec la fonction `sizes` pour fournir différentes ressources d’image pour différentes tailles d’écran. Les jeux de balises d’image sont utiles lorsque vous fournissez des ressources d’image différentes pour différentes tailles d’écran.
 
-#### Elément Image
+### Elément Image
 
 [Éléments d’image](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-picture) sont utilisés avec plusieurs `source` afin de fournir différentes ressources d’image pour différentes tailles d’écran. Les éléments d’image sont utiles lorsque vous fournissez différents rendus d’image pour différentes tailles d’écran.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418555/?quality=12&learn=on)
 
-#### Exemple de code
+### Exemple de code
 
 Cette application React simple utilise la méthode [AEM SDK sans affichage](./aem-headless-sdk.md) pour interroger AEM API sans affichage pour obtenir du contenu Adventure, et affiche l’image optimisée pour le web à l’aide de [élément img avec srcset](#img-element-with-srcset) et [élément picture](#picture-element). Le `srcset` et `sources` utiliser une `setParams` pour ajouter le paramètre de requête de diffusion optimisé pour le web à la fonction `_dynamicUrl` de l’image, modifiez donc le rendu d’image diffusé en fonction des besoins du client web.
 
