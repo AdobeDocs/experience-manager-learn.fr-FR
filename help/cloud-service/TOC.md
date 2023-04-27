@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 1011c700a33b932c3c0a766727fc1d90bf2940f4
+source-git-commit: fc6c225f30132baec6245955318c7ca180d3ad62
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '934'
 ht-degree: 95%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 95%
 # Tutoriels d’Adobe Experience Manager as a Cloud Service {#cloud-service}
 
 + [Présentation](./overview.md)
++ [Essais AEM](./aem-trials/index.md)
 + Présentation d’AEM as a Cloud Service{#introduction}
    + [Qu’est-ce qu’AEM as a Cloud Service ?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Évolution](./introduction/evolution.md)
