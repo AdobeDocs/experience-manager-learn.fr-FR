@@ -8,14 +8,15 @@ role: Developer
 level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
+exl-id: d970d58b-77a4-4012-9e72-b97d60ef028a
+source-git-commit: 4709035983a5c6705c4e807d877ee71145f48987
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 0%
+source-wordcount: '70'
+ht-degree: 2%
 
 ---
 
-# Créer un servlet
+# Créer une URL de formulaire web Acrobat Sign
 
 Le code suivant a été écrit pour exposer un point de terminaison de POST. Ce point de terminaison extrait l’icTemplateName des données envoyées et renvoie une URL de formulaire web Acrobat Sign que l’utilisateur final doit signer.
 
@@ -85,3 +86,8 @@ public class GetWidgetUrl extends SlingAllMethodsServlet {
 
 }
 ```
+
+## Étapes suivantes
+
+[Déployer les ressources du tutoriel sur votre système local](./deploy-assets-on-your-server.md)
+
