@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: a5e5aad4-064f-4638-a53a-88dfb1d27c8f
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 0%
+source-wordcount: '243'
+ht-degree: 1%
 
 ---
 
@@ -242,3 +242,7 @@ public class CampaignServiceImpl implements CampaignService {
 ## Générer un jeton d’accès {#generate-access-token}
 
 Nous échangeons ensuite le jeton JWT généré pour un jeton d’accès en effectuant un appel de POST. Ce jeton d’accès sera alors envoyé en tant que clé d’autorisation dans l’en-tête HTTP pour les appels REST suivants
+
+## Étapes suivantes
+
+[Création d’un profil dans ACS lors de l’envoi du formulaire](./parttwo.md)

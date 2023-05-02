@@ -7,16 +7,16 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 14%
+source-wordcount: '386'
+ht-degree: 11%
 
 ---
 
-# Configuration de la source de données
+# Configurer la source de données
 
-L’intégration de données AEM Forms permet de configurer des sources de données disparates et de s’y connecter. La prise en charge est assurée par défaut pour les types suivants. Cependant, avec une petite personnalisation, vous pouvez également intégrer d’autres sources de données.
+L’intégration de données AEM Forms permet de configurer des sources de données disparates et de s’y connecter. Les types suivants sont pris en charge par défaut. Cependant, avec une petite personnalisation, vous pouvez également intégrer d’autres sources de données.
 
 1. Bases de données relationnelles : MySQL, Microsoft SQL Server, IBM DB2 et Oracle RDBMS
 1. Profil utilisateur AEM
@@ -31,7 +31,7 @@ Pour l’intégration d’AEM Forms à Marketo, nous utilisons les services web 
 L’hôte de propriété est spécifique à votre instance Marketo.
 Le type d’authentification est personnalisé et l’implémentation de l’authentification doit correspondre à &quot;AemForms avec Marketo&quot;. (Sauf si vous avez modifié cette variable dans votre code).
 
-## Création d’un modèle de données de formulaire
+## Créer un modèle de données de formulaire
 
 Ensuite, lors de la configuration de la source de données, l’étape suivante consiste à créer un modèle de données de formulaire basé sur la source de données configurée à l’étape précédente. Pour créer un modèle de données de formulaire, procédez comme suit :
 
@@ -49,3 +49,8 @@ Pointez votre navigateur sur la [intégrations de données .](http://localhost:4
 1. Sélectionnez le seul service répertorié, puis cliquez sur le service de test.
 1. Fournissez un leadId valide et cliquez sur Test. Si tout se passe bien, vous devriez récupérer les détails de la piste comme illustré dans la capture d’écran ci-dessous.
    ![testresults](assets/testresults.jfif)
+
+## Étapes suivantes
+
+[Assemblage pour le test](./part4.md)
+

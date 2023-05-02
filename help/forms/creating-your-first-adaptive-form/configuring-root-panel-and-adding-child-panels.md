@@ -9,16 +9,23 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: a68c41b8-3e80-4b25-a933-9ceb8aee1e01
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '58'
-ht-degree: 0%
+source-wordcount: '73'
+ht-degree: 2%
 
 ---
 
 # Ajout de panneaux enfants au panneau racine {#adding-child-panels-to-root-panel}
 
-Lors de l’ajout de panneaux enfants au panneau racine, veuillez **Assurez-vous que vous êtes en mode d’édition. Le bouton Modifier se trouve en haut à droite du navigateur.**
+Ajoutez des panneaux enfants au panneau racine.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28536?quality=12&learn=on)
+
+>[!NOTE]
+>Lors de l’ajout de panneaux enfants au panneau racine, veuillez **Assurez-vous que vous êtes en mode d’édition. Le bouton Modifier se trouve en haut à droite du navigateur.**
+
+## Étapes suivantes
+
+[Ajout de composants au panneau Personnes](./adding-components-to-people-panel.md)

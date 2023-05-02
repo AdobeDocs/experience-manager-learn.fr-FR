@@ -7,10 +7,10 @@ role: Developer
 level: Beginner
 kt: 5859
 thumbnail: 37324.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 3%
+source-wordcount: '135'
+ht-degree: 8%
 
 ---
 
@@ -28,5 +28,8 @@ Reportez-vous à la section [documentation sur le modèle de formulaire adaptati
 Si nécessaire, vous pouvez télécharger la variable [modèle de formulaire adaptatif](assets/peak-application-template.zip) et importez dans AEM à l’aide du [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp)
 
 
+## Étapes suivantes
+
+[Créer un fragment de formulaire adaptatif](./create-form-fragment.md)
 
 

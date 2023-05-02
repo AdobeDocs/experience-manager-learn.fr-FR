@@ -8,10 +8,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 86a67f43-882f-4e97-b528-17492689fcfc
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 39%
+source-wordcount: '110'
+ht-degree: 41%
 
 ---
 
@@ -27,3 +27,7 @@ Un fragment est une partie réutilisable d’un formulaire. Un fragment peut tr�
 Reportez-vous à la section [documentation sur le modèle de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) pour plus de détails
 
 Si nécessaire, vous pouvez télécharger la variable [Conjoint-details-fragment ](assets/spouse-details-fragment.zip) et importez dans AEM à l’aide du [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp)
+
+## Étapes suivantes
+
+[Créer un formulaire adaptatif](./create-adaptive-form.md)

@@ -7,9 +7,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '340'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Pour préremplir le formulaire adaptatif en récupérant des données d’ACS, n
 
 Les étapes suivantes sont nécessaires pour récupérer les informations de profil d’ACS à l’aide de l’API REST
 
-* Génération de JWT
+* Génération du JWT
 * Exchange JWT pour le jeton d’accès
 * Effectuer un appel REST à ACS et récupérer un profil par courrier électronique
 * Créer un document XML avec les informations de profil
@@ -233,4 +233,9 @@ Pour que cela fonctionne sur votre système, suivez les instructions suivantes :
 * [Assurez-vous d’avoir suivi les étapes décrites ici](aem-forms-with-campaign-standard-getting-started-tutorial.md)
 * [Importer un exemple de formulaire adaptatif dans AEM à l’aide du gestionnaire de modules](assets/pre-fill-af-from-campaign.zip)
 * Assurez-vous de vous connecter à AEM avec un utilisateur dont l’ID d’adresse électronique est partagé par un profil dans Adobe Campaign. Par exemple, si l’ID d’adresse électronique de l’utilisateur AEM est johndoe@adobe.com, vous devez disposer dans ACS d’un profil dont l’adresse électronique est johndoe@adobe.com.
-* [Prévisualiser le formulaire](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
+* [Aperçu du formulaire](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
+
+## Étapes suivantes
+
+[Création d’un profil Adobe Campaign à l’aide du modèle de données de formulaire](./partfour.md)
+

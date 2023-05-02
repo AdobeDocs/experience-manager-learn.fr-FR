@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 exl-id: e028837b-13d8-4058-ac25-ed095f49524c
 last-substantial-update: 2020-03-20T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 3%
+source-wordcount: '258'
+ht-degree: 2%
 
 ---
 
@@ -38,3 +38,7 @@ Pour commencer, suivez les instructions suivantes :
 * [Créer un utilisateur de service comme mentionné dans cet article](/help/forms/adaptive-forms/service-user-tutorial-develop.md). Veillez à déployer le lot OSGi associé à l’article.
 * Stockez la clé privée ACS dans etc/key/campaign/private.key. Vous devrez créer un dossier appelé campaign sous etc/key.
 * [Fournissez un accès en lecture au dossier de campagne aux &quot;données&quot; de l’utilisateur du service.](http://localhost:4502/useradmin)
+
+## Étapes suivantes
+
+[Génération de JWT et du jeton d’accès](partone.md)
