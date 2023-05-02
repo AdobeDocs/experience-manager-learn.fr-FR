@@ -11,9 +11,9 @@ kt: 4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
+source-git-commit: 434f56e143bc0f969723de48abd26d49a308af9b
 workflow-type: tm+mt
-source-wordcount: '4066'
+source-wordcount: '4061'
 ht-degree: 99%
 
 ---
@@ -439,13 +439,13 @@ Créez une interface Java™ publique pour la signature. Le `Byline.java` défin
 
    Étant donné que le package Java™ `com.adobe.aem.guides.wknd.core.models` de la source WKND déclare la version de `1.0.0`, et qu’une interface publique et des méthodes avec des modifications mineures sont ajoutées, la version doit passer à `1.1.0`. Ouvrez le fichier à `core/src/main/java/com/adobe/aem/guides/wknd/core/models/package-info.java` et modifiez `@Version("1.0.0")` en `@Version("2.1.0")`.
 
-     ```
-     @Version(&quot;2.1.0&quot;)
-     package com.adobe.aem.guides.wknd.core.models;
-     
-     import org.osgi.annotation.versioning.Version;
-     ```
+   ```
+   @Version("2.1.0")
+   package com.adobe.aem.guides.wknd.core.models;
    
+   import org.osgi.annotation.versioning.Version;
+   ```
+
 Lorsqu’une modification est apportée aux fichiers de ce package, [la version du package doit être ajustée sémantiquement](https://semver.org/). Si ce n’est pas le cas, le [bnd-baseline-maven-plugin](https://github.com/bndtools/bnd/tree/master/maven/bnd-baseline-maven-plugin) du projet Maven détecte une version de package non valide et rompt la version. Heureusement, en cas d’échec, le plug-in Maven signale la version non valide du package Java™ et la version devant être utilisée. Mettez à jour la déclaration `@Version("...")` dans le `package-info.java` du package Java™ en infraction à la version recommandée par le plug-in à corriger.
 
 ### Implémentation par signature {#byline-implementation}
