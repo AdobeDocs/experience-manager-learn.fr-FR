@@ -14,7 +14,7 @@ level: Experienced
 exl-id: 52dd8a3f-6461-4acb-87ca-5dd9567d15a6
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: KT-781.jpg
-source-git-commit: a156877ff4439ad21fb79f231d273b8983924199
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 4%
@@ -50,4 +50,4 @@ Dans , les utilisateurs Admin Console doivent se voir accorder l’accès via de
 
 ### Application des autorisations dans Adobe Experience Manager
 
-Dans Adobe Experience Manager, les groupes d’utilisateurs synchronisés à partir d’Adobe IMS doivent être ajoutés dans le terme à [Groupes d’utilisateurs AEM fournis](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security.html?lang=fr), qui sont préconfigurés avec les autorisations appropriées pour exécuter des ensembles de tâches spécifiques dans AEM. Les utilisateurs synchronisés depuis Adobe IMS ne doivent pas être directement ajoutés à [Groupes d’utilisateurs AEM fournis](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security.html).
+Dans Adobe Experience Manager, les groupes d’utilisateurs synchronisés à partir d’Adobe IMS doivent être ajoutés dans le terme à [Groupes d’utilisateurs AEM fournis](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr), qui sont préconfigurés avec les autorisations appropriées pour exécuter des ensembles de tâches spécifiques dans AEM. Les utilisateurs synchronisés depuis Adobe IMS ne doivent pas être directement ajoutés à [Groupes d’utilisateurs AEM fournis](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr).

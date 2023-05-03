@@ -6,7 +6,7 @@ topics: development
 audience: developer
 doc-type: article
 activity: implement
-version: 6.4,6.5
+version: 6.5
 kt: 4419
 thumbnail: kt-4419.jpg
 topic: Development
@@ -14,16 +14,16 @@ role: User
 level: Beginner
 exl-id: 67a01c41-d284-4518-adb5-21702e22ccfa
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '481'
-ht-degree: 12%
+ht-degree: 6%
 
 ---
 
 # Création de formulaires HTML5
 
-HTML5 forms est une nouvelle fonctionnalité d’Adobe Experience Manager qui offre le rendu des modèles de formulaire XFA (xdp) au format HTML5. Cette fonctionnalité permet le rendu des formulaires sur les périphériques mobiles et les navigateurs de bureau ne prenant pas en charge les documents XFA en PDF. Les formulaires HTML5 prennent en charge les fonctionnalités existantes des modèles de formulaires XFA, mais ajoutent également de nouvelles fonctionnalités, telles que la signature tactile, pour les appareils mobiles.
+HTML5 forms est une nouvelle fonctionnalité d’Adobe Experience Manager qui offre le rendu des modèles de formulaire XFA (xdp) au format HTML5. Cette fonctionnalité permet le rendu des formulaires sur les périphériques mobiles et les navigateurs de bureau ne prenant pas en charge les documents XFA en PDF. Les formulaires HTML5 prennent non seulement en charge les fonctionnalités existantes des modèles de formulaires XFA, mais ajoutent également de nouvelles fonctionnalités, telles que la signature tactile, pour les appareils mobiles.
 
 ## Prérequis
 
@@ -36,7 +36,7 @@ Vérifiez que vous disposez d’une instance de travail d’AEM Forms. Veuillez 
 3. Cliquez sur Créer -> Téléchargement du fichier
 4. Sélectionnez le modèle xdp téléchargé à l’étape 2.
 
-## Aperçu au format HTML
+## Aperçu en tant que HTML
 
 Le xdp peut être prévisualisé au format HTML5 ou PDF. Pour prévisualiser le fichier xdp au format HTML5, procédez comme suit :
 
@@ -59,6 +59,6 @@ Les propriétés avancées du modèle xdp vous permettent de définir la date de
 
 **Submit URL** - Il s’agit de l’URL qui gérera l’envoi du formulaire HTML5. Nous aborderons cela dans la prochaine leçon. Si aucune URL d’envoi n’est spécifiée ici, le gestionnaire d’envoi par défaut est appelé, ce qui renvoie les données de formulaire au navigateur.
 
-**Profil de rendu de HTML** - Les formulaires HTML5 ont la notion de Profils qui sont exposés en tant que points de fin REST pour activer le rendu mobile des modèles de formulaire. La majorité des fois où le profil de rendu par défaut doit être suffisant pour générer le formulaire. Si le profil de rendu par défaut ne répond pas à vos besoins, une [profil personnalisé](https://experienceleague.adobe.com/docs/experience-manager-64/forms/html5-forms/custom-profile.html) peut être créé et associé au formulaire.
+**Profil de rendu de HTML** - Les formulaires HTML5 ont la notion de Profils qui sont exposés en tant que points de fin REST pour activer le rendu mobile des modèles de formulaire. La majorité des fois où le profil de rendu par défaut doit être suffisant pour générer le formulaire. Si le profil de rendu par défaut ne répond pas à vos besoins, une [profil personnalisé](https://experienceleague.adobe.com/docs/experience-manager-65/forms/html5-forms/custom-profile.html) peut être créé et associé au formulaire.
 
 **Service de préremplissage** - Le service de préremplissage est généralement utilisé pour remplir votre formulaire avec des données récupérées à partir d’une source de données d’arrière-plan.

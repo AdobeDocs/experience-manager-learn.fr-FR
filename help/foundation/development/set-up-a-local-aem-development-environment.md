@@ -1,7 +1,7 @@
 ---
 title: Configuration d’un environnement de développement AEM local
 description: Découvrez comment configurer un environnement de développement local pour Experience Manager. Familiarisez-vous avec l’installation locale, Apache Maven, les environnements de développement intégrés, le débogage et la résolution des problèmes. Utilisez Eclipse IDE, CRXDE-Lite, Visual Studio Code et IntelliJ.
-version: 6.4, 6.5
+version: 6.5
 feature: Developer Tools
 topics: development
 activity: develop
@@ -12,10 +12,10 @@ level: Beginner
 exl-id: 58851624-71c9-4745-aaaf-305acf6ccb14
 last-substantial-update: 2022-07-20T00:00:00Z
 thumbnail: aem-local-dev-env.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
 source-wordcount: '2603'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -124,7 +124,7 @@ Vous trouverez ci-dessous quelques-uns des IDE les plus utilisés avec le dével
 
 >[!NOTE]
 >
-> Le projet WKND a été mis à jour par défaut pour fonctionner sur AEM as a Cloud Service. Il a été mis à jour pour être [rétrocompatible avec la version 6.5/6.4](https://github.com/adobe/aem-guides-wknd#building-for-aem-6xx). Si vous utilisez AEM version 6.5 ou 6.4, ajoutez la variable `classic` profile à n’importe quelle commande Maven.
+> Le projet WKND a été mis à jour par défaut pour fonctionner sur AEM as a Cloud Service. Il a été mis à jour pour être [rétrocompatible avec la version 6.5/6.4](https://github.com/adobe/aem-guides-wknd#building-for-aem-6xx). Si vous utilisez AEM 6.5 ou 6.4, ajoutez le profil `classic` à n’importe quelle commande Maven.
 
 ```shell
 $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -138,7 +138,7 @@ Lorsque, utilisez un IDE, veillez à vérifier `classic` dans l’onglet Profil 
 
 ### [!DNL Eclipse] IDE
 
-Le **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** est l’un des IDE les plus populaires pour le développement de Java™, en grande partie parce qu’il est open source et ***free***! Adobe fournit un module externe, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/aem-eclipse.html?lang=fr)**, pour [!DNL Eclipse] pour faciliter le développement avec une interface utilisateur graphique conviviale afin de synchroniser le code avec une instance d’AEM locale. Le [!DNL Eclipse] Il est recommandé aux développeurs qui découvrent l’AEM en grande partie en raison de la prise en charge de l’interface utilisateur graphique par [!DNL AEM Developer Tools].
+Le **[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** est l’un des IDE les plus populaires pour le développement de Java™, en grande partie parce qu’il est open source et ***free***! Adobe fournit un module externe, **[[!DNL AEM Developer Tools]](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/aem-eclipse.html?lang=fr)**, pour [!DNL Eclipse] pour faciliter le développement avec une interface utilisateur graphique conviviale afin de synchroniser le code avec une instance d’AEM locale. Le [!DNL Eclipse] Il est recommandé aux développeurs qui découvrent l’AEM en grande partie en raison de la prise en charge de l’interface utilisateur graphique par [!DNL AEM Developer Tools].
 
 #### Installation et configuration
 
@@ -180,7 +180,7 @@ Le **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** est un IDE puissant pour
 
 * [**Télécharger**](https://code.visualstudio.com/Download) **Visual Studio Code**
 * **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** - Outil de type FTP pour le contenu JCR
-* **[aemfed](https://aemfed.io/)** - Accélérer votre workflow front-end AEM
+* **[aemfed](https://aemfed.io)** - Accélérer votre workflow front-end AEM
 * **[Synchronisation des AEM](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** - Prise en charge par la communauté&#42; extension pour Visual Studio Code
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
@@ -194,7 +194,7 @@ Le **[IntelliJ IDEA](https://www.jetbrains.com/idea/)** est un IDE puissant pour
 
 ### [!DNL CRXDE Lite]
 
-[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html) est une vue navigateur du référentiel AEM. [!DNL CRXDE Lite] est incorporé dans AEM et permet à un développeur d’effectuer des tâches de développement standard telles que la modification de fichiers, la définition de composants, de boîtes de dialogue et de modèles. [!DNL CRXDE Lite] is ***not*** est conçu pour être un environnement de développement complet, mais fonctionne comme un outil de débogage. [!DNL CRXDE Lite] est utile pour étendre ou simplement comprendre le code de produit en dehors de votre base de code. [!DNL CRXDE Lite] fournit une vue puissante du référentiel et un moyen de tester et de gérer efficacement les autorisations.
+[CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/developing-with-crxde-lite.html) est une vue navigateur du référentiel AEM. [!DNL CRXDE Lite] est incorporé dans AEM et permet à un développeur d’effectuer des tâches de développement standard telles que la modification de fichiers, la définition de composants, de boîtes de dialogue et de modèles. [!DNL CRXDE Lite] is ***not*** est conçu pour être un environnement de développement complet, mais fonctionne comme un outil de débogage. [!DNL CRXDE Lite] est utile pour étendre ou simplement comprendre le code de produit en dehors de votre base de code. [!DNL CRXDE Lite] fournit une vue puissante du référentiel et un moyen de tester et de gérer efficacement les autorisations.
 
 [!DNL CRXDE Lite] doit être utilisé avec d’autres IDE pour tester et déboguer le code, mais jamais comme outil de développement Principal. Il offre une prise en charge de la syntaxe limitée, aucune fonctionnalité de saisie automatique et une intégration limitée aux systèmes de gestion du contrôle de code source.
 
@@ -274,12 +274,12 @@ Un autre problème fréquemment rencontré lors du développement du code fronta
 
 #### Débogage des bibliothèques clientes
 
-Avec les différentes méthodes de catégories et d’incorporations pour inclure plusieurs bibliothèques clientes, il peut s’avérer fastidieux de résoudre les problèmes. AEM expose plusieurs outils pour faciliter cette tâche. L’un des outils les plus importants est [!UICONTROL Reconstruire les bibliothèques clientes] qui force AEM à recompiler les fichiers LESS et à générer le CSS.
+Avec les différentes méthodes de catégories et d’incorporations pour inclure plusieurs bibliothèques clientes, il peut s’avérer fastidieux de résoudre les problèmes. AEM propose plusieurs outils pour faciliter cette tâche. L’un des outils les plus importants est [!UICONTROL Reconstruire les bibliothèques clientes] qui force AEM à recompiler les fichiers LESS et à générer le CSS.
 
 * [Effacer les bibliothèques](http://localhost:4502/libs/granite/ui/content/dumplibs.html) - Répertorie toutes les bibliothèques clientes enregistrées dans l’instance AEM. &lt;host>/libs/granite/ui/content/dumplibs.html
-* [Test Output](http://localhost:4502/libs/granite/ui/content/dumplibs.test.html) - permet à un utilisateur d’afficher la sortie de HTML attendue des inclusions clientlib en fonction de la catégorie. &lt;host>/libs/granite/ui/content/dumplibs.test
-* [Validation des dépendances des bibliothèques](http://localhost:4502/libs/granite/ui/content/dumplibs.validate.html) - met en évidence les dépendances ou les catégories incorporées introuvables. &lt;host>/libs/granite/ui/content/dumplibs.validate
-* [Reconstruire les bibliothèques clientes](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) - permet à un utilisateur de forcer AEM à recréer toutes les bibliothèques clientes ou d’invalider le cache des bibliothèques clientes. Cet outil est efficace lors du développement avec LESS, car il peut forcer AEM à recompiler le CSS généré. En règle générale, il est plus efficace d’invalider les caches, puis d’effectuer une actualisation de page plutôt que de recréer toutes les bibliothèques. &lt;host>/libs/granite/ui/content/dumplibs.rebuild
+* [Test de la sortie](http://localhost:4502/libs/granite/ui/content/dumplibs.test.html) : permet à un utilisateur ou une utilisatrice d’afficher la sortie HTML prévue des inclusions de bibliothèque cliente en fonction de la catégorie. &lt;host>/libs/granite/ui/content/dumplibs.test
+* [Validation des dépendances des bibliothèques](http://localhost:4502/libs/granite/ui/content/dumplibs.validate.html) : met en évidence les dépendances ou les catégories incorporées introuvables. &lt;host>/libs/granite/ui/content/dumplibs.validate
+* [Reconstruire les bibliothèques clientes](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html) - permet à un utilisateur de forcer AEM à recréer toutes les bibliothèques clientes ou d’invalider le cache des bibliothèques clientes. Cet outil est efficace lors du développement avec LESS, car il peut forcer AEM à recompiler le code CSS généré. En règle générale, il est plus efficace d’invalider les caches, puis d’effectuer une actualisation de page plutôt que de recréer toutes les bibliothèques. &lt;host>/libs/granite/ui/content/dumplibs.rebuild
 
 ![Débogage des bibliothèques clientes](assets/set-up-a-local-aem-development-environment/debugging-clientlibs.png)
 

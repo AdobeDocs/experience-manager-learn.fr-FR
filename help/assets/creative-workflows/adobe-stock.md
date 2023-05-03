@@ -2,15 +2,15 @@
 title: Utilisation de ressources Adobe Stock avec AEM Assets
 description: AEM permet aux utilisateurs de rechercher, de prévisualiser, d’enregistrer et d’acquérir sous licence des ressources Adobe Stock directement à partir d’AEM. Les entreprises peuvent désormais intégrer leur formule d’abonnement pour entreprise Adobe Stock à AEM Assets pour s’assurer que les ressources sous licence sont désormais largement disponibles pour leurs projets de création et marketing, avec les puissantes fonctionnalités de gestion de ressources d’AEM.
 feature: Adobe Stock
-version: 6.4, 6.5
+version: 6.5
 topic: Content Management
 role: User
 level: Beginner
 last-substantial-update: 2022-06-26T00:00:00Z
 exl-id: a3c3a01e-97a6-494f-b7a9-22057e91f4eb
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '975'
 ht-degree: 4%
 
 ---
@@ -107,7 +107,7 @@ AEM 6.4.2 permet aux utilisateurs de rechercher, prévisualiser, enregistrer et 
 ### Ressources supplémentaires
 
 * [Formule Entreprise Stock](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html)
-* [Notes de mise à jour d’AEM 6.4 Service Pack 2](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html?lang=fr)
+* [Notes de mise à jour d’AEM 6.4 Service Pack 2](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=fr)
 * [Intégration d’AEM et d’Adobe Stock](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html)
 * [API d’intégration d’Adobe I/O Console](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)
 * [Documents de l’API Adobe Stock](https://www.adobe.io/apis/creativecloud/stock/docs.html)

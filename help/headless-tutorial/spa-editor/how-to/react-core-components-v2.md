@@ -8,13 +8,13 @@ role: Developer
 level: Intermediate
 kt: 10900
 thumbnail: kt-10900.jpeg
-source-git-commit: f02d5e01388ee61228254951b05c37c336423348
-workflow-type: ht
+exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
+source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 100%
 
 ---
-
 
 # Comment utiliser les composants React modifiables v2 d’AEM
 
@@ -33,7 +33,7 @@ Pour plus d’informations et d’exemples de code pour les composants React mod
 
 ## Pages AEM
 
-Les composants React modifiables v2 d’AEM fonctionnent avec l’éditeur de SPA ou les applications React de SPA distante. Le contenu renseignant les composants React modifiables doit être exposé via les pages d’AEM qui étendent le [composant de page de SPA](https://experienceleague.adobe.com/docs/experience-manager-64/developing/headless/spas/spa-page-component.html?lang=fr). Les composants AEM, qui mappent les composants React modifiables, doivent implémenter le [cadre de l’exporteur de composants](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html?lang=fr) d’AEM, tels que les [composants principaux de gestion de contenu web d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
+Les composants React modifiables v2 d’AEM fonctionnent avec l’éditeur de SPA ou les applications React de SPA distante. Le contenu renseignant les composants React modifiables doit être exposé via les pages d’AEM qui étendent le [composant de page de SPA](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/spas/spa-page-component.html?lang=fr). Les composants AEM, qui mappent les composants React modifiables, doivent implémenter le [cadre de l’exporteur de composants](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html?lang=fr) d’AEM, tels que les [composants principaux de gestion de contenu web d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
 
 
 ## Dépendances
@@ -231,6 +231,3 @@ const EditableEmbedding = (props) => {
 // Export as default the mapped EditableEmbedding
 export default MapTo("wknd-examples/components/embedding")(EditableEmbedding);
 ```
-
-
-
