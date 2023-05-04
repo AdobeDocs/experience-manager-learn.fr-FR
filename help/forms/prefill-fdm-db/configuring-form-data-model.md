@@ -1,5 +1,5 @@
 ---
-title: Configuration du modèle de données de formulaire
+title: Configuration d’un modèle de données de formulaire
 description: Création d’un modèle de données de formulaire basé sur la source de données SGBDR
 feature: Adaptive Forms
 version: 6.4,6.5
@@ -9,14 +9,14 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 5fa4638f-9faa-40e0-a20d-fdde3dbb528a
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 3%
+source-wordcount: '498'
+ht-degree: 4%
 
 ---
 
-# Configuration du modèle de données de formulaire
+# Configuration d’un modèle de données de formulaire
 
 ## Source de données en pool de la connexion Apache Sling
 
@@ -85,3 +85,7 @@ Notre modèle de données de formulaire comporte maintenant **_get_** service qu
 * Fournissez un ID de produit (emp) valide et cliquez sur _Test_
 * Vous devriez obtenir les résultats comme illustré dans la capture d’écran ci-dessous.
 * ![test-fdm](assets/test-form-data-model.png)
+
+## Étapes suivantes
+
+[Obtention de l’empID à partir de l’URL](./get-request-parameter.md)

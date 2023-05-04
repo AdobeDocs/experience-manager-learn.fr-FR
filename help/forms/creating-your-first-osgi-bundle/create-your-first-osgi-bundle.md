@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 exl-id: 307cc3b2-87e5-4429-8f21-5266cf03b78f
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: 381812397fa7d15f6ee34ef85ddf0aa0acc0af42
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '672'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 Un lot OSGi est un fichier d’archive Java™ qui contient du code Java, des ressources et un manifeste qui décrit le lot et ses dépendances. Le lot est l’unité de déploiement d’une application. Cet article est destiné aux développeurs qui souhaitent créer un service OSGi ou un servlet utilisant AEM Forms 6.4 ou 6.5. Pour créer votre premier bundle OSGi, procédez comme suit :
 
 
-## Installation du JDK
+## Installation de JDK
 
 Installez la version prise en charge de JDK. J’ai utilisé JDK1.8. Assurez-vous que vous avez ajouté **JAVA_HOME** dans vos variables d’environnement et pointe vers le dossier racine de votre installation JDK.
 Ajoutez %JAVA_HOME%/bin au chemin
@@ -51,7 +51,7 @@ Maven est un outil d’automatisation de génération utilisé principalement po
 ![data-source](assets/mvn-version.JPG)
 
 
-## Installation d’Eclipse
+## Installer Eclipse
 
 Installez la dernière version de [eclipse](https://www.eclipse.org/downloads/)
 
@@ -119,3 +119,8 @@ Pour créer votre projet, procédez comme suit :
 * Exécutez la commande `mvn clean install -PautoInstallBundle`
 La commande ci-dessus crée et installe le lot dans le serveur AEM s’exécutant sur `http://localhost:4502`. Le lot est également disponible sur le système de fichiers à l’adresse
    `C:\AEMFormsBundles\mysite\core\target` et peuvent être déployés à l’aide de [Console web Felix](http://localhost:4502/system/console/bundles)
+
+## Étapes suivantes
+
+[Créer un service OSGi](./create-osgi-service.md)
+

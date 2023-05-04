@@ -13,10 +13,10 @@ role: Developer
 level: Experienced
 exl-id: 3e1d86ab-e0c4-45d4-b998-75a44a7e4a3f
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 29%
+source-wordcount: '206'
+ht-degree: 30%
 
 ---
 
@@ -45,7 +45,7 @@ Dans l’interface utilisateur de personnalisation des colonnes, vous pouvez eff
 * Réorganiser les colonnes
 * Renommer les colonnes
 
-## Personnalisation de l’identité graphique
+## Personnaliser l’identité graphique
 
 Dans la personnalisation de la marque, vous pouvez effectuer les opérations suivantes :
 
@@ -55,3 +55,7 @@ Dans la personnalisation de la marque, vous pouvez effectuer les opérations sui
 * Masquer les options de navigation
 
 ![inbox-branding](assets/branding-customization.PNG)
+
+## Étapes suivantes
+
+[Ajouter une colonne Marié(e)](./add-married-column.md)

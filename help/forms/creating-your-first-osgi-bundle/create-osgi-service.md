@@ -8,9 +8,9 @@ role: Developer
 level: Beginner
 exl-id: 2f15782e-b60d-40c6-b95b-6c7aa8290691
 last-substantial-update: 2021-04-23T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '354'
 ht-degree: 4%
 
 ---
@@ -110,3 +110,8 @@ Importez et installez le package dans AEM à l’aide de la méthode [gestionnai
 
 Utilisez Postman pour effectuer un appel POST et fournir les paramètres d’entrée comme illustré dans la capture d’écran ci-dessous.
 ![postman](assets/test-service-postman.JPG)
+
+## Étapes suivantes
+
+[Création d’un servlet Sling](./create-servlet.md)
+

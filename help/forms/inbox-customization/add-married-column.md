@@ -12,9 +12,9 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '311'
 ht-degree: 8%
 
 ---
@@ -88,10 +88,14 @@ return isMarried(inboxItem);
 * Ajouter une colonne Marié(e) à la boîte de réception et enregistrer vos modifications
 * [Accédez à l’interface utilisateur FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
 * [Importation de l’exemple de formulaire](assets/snap-form.zip) en sélectionnant _Téléchargement du fichier_ de _Créer_ menu
-* [Prévisualiser le formulaire](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
+* [Aperçu du formulaire](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
 * Sélectionnez la _état civil_ et envoyer le formulaire
    [Boîte de réception d’affichage](http://localhost:4502/aem/inbox)
 
 L’envoi du formulaire déclenche le workflow et une tâche est assignée à l’utilisateur &quot;administrateur&quot;. Une valeur devrait s’afficher sous la colonne Marié(e) , comme illustré dans cette capture d’écran.
 
 ![marié-colonne](assets/married-column.PNG)
+
+## Étapes suivantes
+
+[Afficher la colonne Marié](./use-sightly-template.md)
