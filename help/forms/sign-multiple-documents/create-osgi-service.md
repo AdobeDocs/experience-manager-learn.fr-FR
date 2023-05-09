@@ -9,14 +9,14 @@ topic: Development
 role: Developer
 level: Experienced
 exl-id: 49e7bd65-33fb-44d4-aaa2-50832dffffb0
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 0%
+source-wordcount: '362'
+ht-degree: 2%
 
 ---
 
-# Création d’un service OSGi
+# Créer un service OSGi
 
 Le code suivant a été écrit pour stocker les formulaires à signer. Chaque formulaire à signer est associé à un guid unique et à un ID de client. Ainsi, un ou plusieurs formulaires peuvent être associés au même ID de client, mais un GUID unique leur est affecté.
 
@@ -202,6 +202,10 @@ public String getNextFormToSign(int customerID) {
 
 
 
-## Assets
+## Ressources
 
 Le lot OSGi avec les services mentionnés ci-dessus peut être [téléchargé ici](assets/sign-multiple-forms.jar)
+
+## Étapes suivantes
+
+[Créer un workflow principal pour gérer l’envoi initial du formulaire](./create-main-workflow.md)

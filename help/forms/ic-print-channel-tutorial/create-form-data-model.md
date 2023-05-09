@@ -16,9 +16,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 4e64aa99-0b1c-49e9-95a7-d254017b80f4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -36,3 +36,7 @@ Le modèle de données de formulaire dépend d’une source de données correcte
 Le modèle de données de formulaire est la base de toutes vos communications interactives. L’opération Get/Read du modèle de données de formulaire récupère les données de votre source de données principale et est utilisée pour remplir le document Interactive Communications.
 
 Une fois que vous avez créé le modèle de données de formulaire, vous pouvez l’utiliser comme base pour créer des fragments de document et des documents de communication interactive.
+
+## Étapes suivantes
+
+[Créer un modèle à l’aide de Designer](./create-xdp-layout-using-forms-designer.md)

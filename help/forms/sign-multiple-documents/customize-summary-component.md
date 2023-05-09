@@ -1,20 +1,20 @@
 ---
 title: Personnalisation du composant Résumé
 description: Étendez le composant d’étape de résumé pour inclure la possibilité d’accéder au formulaire suivant dans le module.
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6894
 thumbnail: 6894.jpg
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: fb68579d-241c-414d-92f4-13194f4d1923
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 2%
+source-wordcount: '185'
+ht-degree: 1%
 
 ---
-
 
 # Personnalisation de l’étape de résumé
 
@@ -33,7 +33,7 @@ Le nouveau composant est basé sur le composant de résumé prêt à l’emploi.
 Nous avons ajouté un bouton pour accéder au formulaire suivant à signer.
 ![template-code](assets/template-code.PNG)
 
-summary.jsp comporte le code suivant. Il fait référence à la bibliothèque cliente identifiée par l’ID de catégorie **getnextform**
+summary.jsp comporte le code suivant. Il fait référence à la bibliothèque cliente identifiée par l’ID de catégorie. **getnextform**
 
 ```java
 <%--
@@ -48,4 +48,6 @@ summary.jsp comporte le code suivant. Il fait référence à la bibliothèque cl
 
 Le composant de résumé personnalisé peut être [téléchargé ici](assets/custom-summary-step.zip)
 
+## Étapes suivantes
 
+[Obtenir le formulaire suivant pour la signature](./create-client-lib.md)

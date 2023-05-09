@@ -14,10 +14,10 @@ role: Developer
 level: Beginner
 exl-id: 65b1af30-9e22-4df0-ab91-479d5406df61
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 3%
+source-wordcount: '158'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 Les communications interactives sont une nouveauté dans AEM Forms 6.4. Ce document vous guide tout au long des étapes nécessaires à la création d’une communication interactive pour le canal d’impression.
 
-## Conditions préalables {#prerequistes}
+## Prérequis {#prerequistes}
 
 [Téléchargez et importez la ressource associée à ce tutoriel dans AEM à l’aide du gestionnaire de packages.](assets/gettingstartedassets.zip). Ce fichier zip contient des images et des fragments de document utilisés dans ce tutoriel.
 
@@ -33,8 +33,12 @@ Les communications interactives sont une nouveauté dans AEM Forms 6.4. Ce docum
 
 Lorsque vous avez terminé ce tutoriel, vous avez appris ce qui suit :
 
-* Création d’une source de données
-* Création d’un modèle de données de formulaire
+* Créer une source de données
+* Créer un modèle de données de formulaire
 * Créer des fragments de document
 * Configuration de tableaux et de tableaux
 * Diffuser des documents de canal web
+
+## Étapes suivantes
+
+[Installer Tomcat](./partone.md)

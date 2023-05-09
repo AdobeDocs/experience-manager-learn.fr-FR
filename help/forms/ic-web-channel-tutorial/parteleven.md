@@ -1,26 +1,26 @@
 ---
 title: Configuration du panneau de correctif d’investissement
-seo-title: Configuration du panneau de correctif d’investissement
+seo-title: Configuring Investment Mix Panel
 description: Ce didacticiel en plusieurs étapes est la 11 partie du premier document de communication interactive. Dans cette partie, nous allons ajouter des secteurs pour afficher le mélange actuel d’investissement et de modèle.
-seo-description: Ce didacticiel en plusieurs étapes est la 11 partie du premier document de communication interactive. Dans cette partie, nous allons ajouter des secteurs pour afficher le mélange actuel d’investissement et de modèle.
+seo-description: This is part 11 of multistep tutorial for creating your first interactive communications document.In this part, we will add pie charts to display the current and model investment mix.
 uuid: b0132912-cb6e-4dec-8309-5125d29ad291
-feature: Communication interactive
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 77de4e76-53ee-467c-a71c-d1d3ea15283b
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 774d7a6e-2b8f-4a70-98c5-e7712478ff75
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
-
 
 # Configuration du panneau de correctif d’investissement
 
@@ -34,7 +34,7 @@ Dans cette partie, nous allons ajouter des secteurs afin d’afficher la combina
 
 * Nous ajouterons 2 secteurs pour représenter le mélange actuel et modèle d’investissement du détenteur de compte.
 
-## Combinaison de ressources actuelle {#current-asset-mix}
+## Mappage de ressources actuel {#current-asset-mix}
 
 * Appuyez sur le panneau &quot;CurrentAssetMix&quot; à droite et sélectionnez l’icône &quot;+&quot; et insérez le composant de texte. Remplacez le texte par défaut par &quot;Current Asset Mix&quot;.
 
@@ -46,7 +46,7 @@ Dans cette partie, nous allons ajouter des secteurs afin d’afficher la combina
 
 * ![currentassetmix](assets/currentassetmixchart.png)
 
-## Mix de ressource de modèle {#model-asset-mix}
+## Mappage de ressources de modèle {#model-asset-mix}
 
 * Appuyez sur le panneau &quot;RecommandedAssetMix&quot; sur le côté droit, sélectionnez l’icône &quot;+&quot; et insérez le composant de texte. Remplacez le texte par défaut par &quot;Model Asset Mix&quot;.
 
@@ -58,3 +58,6 @@ Dans cette partie, nous allons ajouter des secteurs afin d’afficher la combina
 
 * ![assettype](assets/modelassettypechart.png)
 
+## Étapes suivantes
+
+[Préparation de la diffusion du document canal web](./parttwelve.md)

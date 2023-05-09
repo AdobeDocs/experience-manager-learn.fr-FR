@@ -10,10 +10,11 @@ topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2023-01-22T00:00:00Z
-source-git-commit: d3531e76d3341e0964e5ed878fc72037024a11fd
+exl-id: fa971850-0e89-4f74-a747-ec99051be2f1
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 0%
+source-wordcount: '91'
+ht-degree: 2%
 
 ---
 
@@ -28,3 +29,7 @@ Pour suivre ce tutoriel, il est recommandé d’installer les éléments suivant
 * AEM version 6.5 ou ultérieure avec module complémentaire de formulaires approprié
 
 Il est également recommandé de posséder un certain niveau d’expérience des développeurs avec AEM et AEM Forms.
+
+## Étapes suivantes
+
+[Résumer des données à l’aide d’un composant personnalisé](./create-component.md)

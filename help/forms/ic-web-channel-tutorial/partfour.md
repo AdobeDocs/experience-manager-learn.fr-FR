@@ -15,10 +15,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: d742d77b-a064-46e8-862a-2d3e1cc56f63
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 0%
+source-wordcount: '123'
+ht-degree: 1%
 
 ---
 
@@ -34,3 +34,7 @@ Création d’un modèle de document de canal web dans AEM Forms 6.5
 Le modèle comportera des zones cible/espaces réservés qui contiendront différents types de fragments de documents. Par exemple, un modèle peut comporter des zones cible pour les logos et une autre zone cible pour le contenu textuel.
 
 Une fois le modèle de document de canal web créé, vous pouvez créer des documents de communication interactive basés sur le modèle.
+
+## Étapes suivantes
+
+[Créer un fragment de document](./partfive.md)

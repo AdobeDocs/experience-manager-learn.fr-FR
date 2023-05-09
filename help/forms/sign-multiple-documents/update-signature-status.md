@@ -1,20 +1,20 @@
 ---
 title: Mettre à jour l’état de signature du formulaire dans la base de données
 description: Mettre à jour l’état de signature du formulaire signé dans la base de données à l’aide du workflow AEM
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6888
 thumbnail: 6888.jpg
-topic: Développement
+topic: Development
 role: Developer
 level: Experienced
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 75852a4b-7008-4c65-bab1-cc5dbf525e20
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 3%
+source-wordcount: '116'
+ht-degree: 2%
 
 ---
-
 
 # Mettre à jour l’état de signature
 
@@ -70,5 +70,8 @@ public class UpdateSignatureStatusWorkflowStep implements WorkflowProcess {
 
 ## Ressources
 
-Le processus de mise à jour de l’état de la signature peut être [téléchargé à partir d’ici](assets/update-signature-status-workflow.zip)
+Le processus de mise à jour de l’état de la signature peut être [téléchargé ici](assets/update-signature-status-workflow.zip)
 
+## Étapes suivantes
+
+[Personnalisation de l’étape de résumé pour afficher le formulaire suivant à signer](./customize-summary-component.md)

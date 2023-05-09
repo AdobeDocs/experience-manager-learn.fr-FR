@@ -15,9 +15,9 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 1d7093a8-3765-46ec-912a-b5a5503fd5af
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -37,3 +37,7 @@ L’éditeur de fragment de document permet également d’insérer des conditio
 >[!NOTE]
 >
 >Assurez-vous que les éléments de modèle de données de formulaire que vous insérez dans un document sont des descendants de l’élément racine. Par exemple, dans ce cas pratique, assurez-vous que les éléments de l’objet utilisateur que vous sélectionnez sont l’enfant de l’objet soldes .
+
+## Étapes suivantes
+
+[Créer un document de communication interactive](./partsix.md)

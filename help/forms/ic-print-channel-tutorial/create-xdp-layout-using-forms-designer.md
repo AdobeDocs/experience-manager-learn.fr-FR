@@ -1,5 +1,5 @@
 ---
-title: Création d’une mise en page à l’aide de Forms Designer
+title: Créer une disposition à l’aide de Forms Designer
 seo-title: Create Layout using Forms Designer
 description: Ce didacticiel en 4 parties est consacré à la création de votre premier document de communication interactive pour le canal d’impression. Dans cette partie, nous examinons le fichier de mise en page créé à l’aide d’AEM Forms Designer.
 seo-description: This is part 4 of multipart tutorial for creating your first interactive communication document for the print channel.In this part, we look at the layout file created using AEM Forms Designer.
@@ -17,14 +17,14 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 1bda648c-01be-44f1-aa73-3f5e7365d094
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 0%
+source-wordcount: '131'
+ht-degree: 9%
 
 ---
 
-# Création d’une mise en page à l’aide de Forms Designer {#create-layout-using-forms-designer}
+# Créer une disposition à l’aide de Forms Designer {#create-layout-using-forms-designer}
 
 Dans cette partie, nous examinons le fichier de mise en page créé à l’aide d’AEM Forms Designer.
 
@@ -33,3 +33,7 @@ Chaque document du canal d’impression est basé sur un modèle créé à l’a
 La vidéo suivante présente les sections ou les zones cible définies dans la mise en page utilisée dans ce tutoriel.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37890?quality=12&learn=on)
+
+## Étapes suivantes
+
+[Créer un fragment de document](./create-document-fragment.md)

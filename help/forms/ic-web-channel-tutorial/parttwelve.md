@@ -1,26 +1,26 @@
 ---
 title: Configuration de la diffusion du document de canal web
-seo-title: Configuration de la diffusion du document de canal web
+seo-title: Setting up the delivery of web channel document
 description: Il s’agit de la dernière partie d’un tutoriel en plusieurs étapes pour créer votre premier document de communication interactive. Dans cette partie, nous examinons la diffusion de documents de canal web par email.
-seo-description: Il s’agit de la dernière partie d’un tutoriel en plusieurs étapes pour créer votre premier document de communication interactive. Dans cette partie, nous examinons la diffusion de documents de canal web par email.
+seo-description: This is the final part of a multistep tutorial for creating your first interactive communications document. In this part, we look at the delivery of web channel document via email.
 uuid: c1066600-1abd-4401-b04f-b93c28603cc7
-feature: Communication interactive
+feature: Interactive Communication
 topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
 version: 6.4,6.5
 discoiquuid: 1a7cf095-c5d8-4d92-a018-883cda76fe70
-topic: Développement
+topic: Development
 role: Developer
 level: Beginner
-source-git-commit: d9714b9a291ec3ee5f3dba9723de72bb120d2149
+exl-id: 510d1782-59b9-41a6-a071-a16170f2cd06
+source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '357'
+ht-degree: 1%
 
 ---
-
 
 # Configuration de la diffusion du document de canal web {#setting-up-the-delivery-of-web-channel-document}
 
@@ -52,7 +52,7 @@ Connectez-vous à AEM Forms.
 * Veillez à enregistrer vos modifications.
    ![fdm](assets/requestattribute.gif)
 
-## Tester la diffusion par e-mail du document de canal web {#test-email-delivery-of-web-channel-document}
+## Tester la diffusion par courrier électronique d’un document de canal web {#test-email-delivery-of-web-channel-document}
 
 * [Installation des exemples de ressources à l’aide du gestionnaire de modules](assets/webchanneldelivery.zip)
 * [Connexion à crx](http://localhost:4502/crx/de/index.jsp#)
@@ -73,4 +73,8 @@ Connectez-vous à AEM Forms.
 
 >[!NOTE]
 >
->Veuillez consulter le fichier **/apps/AEMForms/fetchad/GET.jsp** dans crx. Assurez-vous que la variable String webChannelDocument pointe vers un chemin d’accès de document de communication valide.
+>Jetez un oeil au **/apps/AEMForms/fetchad/GET.jsp** dans crx. Assurez-vous que la variable String webChannelDocument pointe vers un chemin d’accès de document de communication valide.
+
+## Étapes suivantes
+
+[Configurer une diffusion par courrier électronique](../interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
