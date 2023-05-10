@@ -9,7 +9,7 @@ role: Admin
 level: Beginner
 exl-id: 80288765-0b51-44a9-95d3-3bdb2da38615
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 757c8ad251d058bbe48cc3cd354fec533ec4e968
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 12%
@@ -40,10 +40,9 @@ Bien que nous recommandions de suivre la [documentation officielle](https://help
 
 * Assurez-vous que le JDK approprié est installé.
    * AEM 6.2 vous devez : Oracle SE 8 JDK 1.8.x (64 bits)
-* 
    * AEM 6.3 et AEM 6.4, vous avez besoin des éléments suivants : Oracle SE 8 JDK 1.8.x (64 bits)
-* AEM 6.5 vous avez besoin de JDK 8 ou JDK 11
-* [Exigences JDK officielles](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=en) sont répertoriées ici
+   * AEM 6.5 vous avez besoin de JDK 8 ou JDK 11
+   * [Exigences JDK officielles](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=en) sont répertoriées ici
 * Assurez-vous que JAVA_HOME est défini pour pointer vers le JDK que vous avez installé.
    * Pour créer la variable JAVA_HOME dans Windows, procédez comme suit :
       * Cliquez avec le bouton droit de la souris sur Poste de travail et sélectionnez Propriétés.
@@ -71,20 +70,20 @@ Bien que nous recommandions de suivre la [documentation officielle](https://help
 * Ces deux propriétés sont requises pour que Document Services fonctionne.
 * Enregistrez le fichier sling.properties
 * [Téléchargez le module complémentaire de formulaires approprié](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
-* Installez le module complémentaire de formulaires à l’aide de [gestionnaire de modules.](http://localhost:4502/crx/packmgr/index.jsp)
+* Installez le module complémentaire de formulaires à l’aide de [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp).
 * Une fois que vous avez installé le module complémentaire, les étapes suivantes doivent être suivies :
 
-       * **Assurez-vous que tous les lots sont à principal état. (Sauf pour le lot Signatures AEMFD).**
-       * **Il faudrait généralement 5 minutes ou plus pour que tous les lots atteignent l’état principal.**
-   
+   * **Assurez-vous que tous les lots sont à principal état. (Sauf pour le lot Signatures AEMFD).**
+   * **Il faudrait généralement 5 minutes ou plus à tous les lots pour atteindre un état principal.**
+
    * **Une fois que tous les lots sont principaux (sauf le lot AEMFD Signatures), redémarrez votre système pour terminer l’installation d’AEM Forms.**
 
 ## package sun.util.calendar dans la liste autorisée
 
 1. Ouvrez la console web Felix dans votre [fenêtre du navigateur](http://localhost:4502/system/console/configMgr)
-2. Recherchez et ouvrez la configuration du pare-feu de désérialisation: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
-3. Ajouter `sun.util.calendar` comme nouvelle entrée sous `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
-4. Enregistrez les modifications.
+1. Recherchez et ouvrez la configuration du pare-feu de désérialisation: `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
+1. Ajouter `sun.util.calendar` comme nouvelle entrée sous `com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.firewall.deserialization.whitelist.name`
+1. Enregistrez les modifications.
 
 Félicitations!!! Vous avez maintenant installé et configuré AEM Forms sur votre système.
 Selon vos besoins, vous pouvez configurer des  [Extensions de Reader](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) ou [ PDFG](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/install-configure-document-services.html) sur votre serveur
