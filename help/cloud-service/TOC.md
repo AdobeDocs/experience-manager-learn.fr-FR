@@ -5,10 +5,10 @@ breadcrumb-title: Tutoriels d’AEM as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: b3cc9c4fbd36cdf5be46e4546a174fea0c8da05c
+source-git-commit: 31d6b75f481bbc1a716974b2188a0f4f460c1df6
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 95%
+source-wordcount: '953'
+ht-degree: 94%
 
 ---
 
@@ -319,3 +319,8 @@ ht-degree: 95%
    + [Éditeur de SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=fr)
    + [AEM Sites et Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=fr)
    + [Authentification basée sur les jetons](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr)
++ Ressources expertes {#expert-resources}
+   + AEM champions {#aem-champions}
+      + [Manuel d’intégration de Cloud Manager](./expert-resources/onboarding-playbook.md)
+      + [Types d’environnement de Cloud Manager](./expert-resources/environment-types.md)
+      + [Interface utilisateur de Cloud Manager](./expert-resources/cloud-manager-ui.md)
