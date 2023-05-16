@@ -7,9 +7,9 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: c2e105123302ae37dc7cfca9533110a655e83858
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Cette série de vidéos en plusieurs parties présente un aperçu de la gestion et de l’accès au contenu multimédia à l’aide d’Adobe Experience Manager Dynamic Media en tant que service de diffusion de contenu. Dynamic Media vous permet de gérer et de publier des expériences numériques dynamiques : une fonctionnalité propre à Experience Manager Assets. Notre structure et notre suite de composants permettent aux marketeurs de personnaliser et de diffuser des expériences multimédias interactives sur tous les appareils.
 
-## Présentation de Dynamic Media
+## Présentation de Dynamic Media
 
 >[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
 
@@ -34,7 +34,7 @@ Cette vidéo décrit comment le contenu multimédia est géré et accessible à 
 * Copie d’URL vers des images et des visionneuses réactives
 * Recadrage intelligent de variations vers des URL
 
-## Dynamic Media avec AEM Sites et tout autre CMS
+## Utilisation avec AEM Sites
 
 >[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
@@ -48,7 +48,7 @@ Cette vidéo décrit comment le contenu multimédia est géré dans Adobe Experi
 * Téléchargement local avec des paramètres d’image prédéfinis
 * Création et publication d’une bannière interactive
 
-## Dynamic Media pour créer une collection de médias mixtes et une visionneuse personnalisée
+## Création d’une collection de médias mixtes
 
 >[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
@@ -63,7 +63,7 @@ Cette vidéo décrit le processus de création simple d’une collection de ress
 * Créer une visionneuse de médias mixtes à partir d’une visionneuse à 360°, d’une vidéo et de photos
 * Modification et utilisation d’une visionneuse de supports variés personnalisée
 
-## Paramètres d’image prédéfinis Dynamic Media
+## Paramètres prédéfinis d’image
 
 >[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
@@ -74,7 +74,7 @@ Cette vidéo décrit comment les paramètres d’image prédéfinis sont créés
 * Toujours utiliser l’accentuation
 * Champ de modificateur d’URL pour ajouter des commandes supplémentaires pour redimensionner le paramètre d’image prédéfini
 
-## Modificateurs d’URL avancés Dynamic Media
+## Modificateurs d’URL avancés
 
 >[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
@@ -86,7 +86,7 @@ Cette vidéo décrit comment, au-delà du redimensionnement des images, tirer pa
 * Recadrage d’un chemin d’image
 * Création d’un modèle de texte à partir d’un fichier Photoshop
 
-## Dynamic Media Contrôle de la taille des fichiers du JPEG en kilo-octets
+## Gestion de la taille de fichier JPEG
 
 >[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
@@ -97,13 +97,13 @@ Cette vidéo décrit comment, au-delà du redimensionnement des images, tirer pa
 
 Équilibrer la qualité de l’image jpeg à la taille de fichier obtenue (en kilo-octets) afin d’améliorer la vitesse de chargement des pages, à l’aide de 2 commandes pour ajuster les paramètres de compression jpeg. QLT définit la qualité de l’image en réglant les paramètres de qualité de compression JPEG. La commande Taille du JPEG vous permet de désigner la taille de fichier à réaliser à l’aide de la compression.
 
-## Ajout d’un sous-titrage codé CC à la vidéo Dynamic Media
+## Sous-titrage codé
 
 >[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 Ajoutez facilement le sous-titrage codé à la vidéo Dynamic Media en ajoutant l’option Copier l’URL pour qu’elle pointe vers un autre document sous-titrage codé, un fichier sidecar web.VTT, contenant les informations CC pour n’importe quelle vidéo.
 
-## Utilisation de l’accentuation d’image avec AEM Dynamic Media
+## Accentuation de l’image
 
 Cette vidéo explique pourquoi l’accentuation d’une image est essentielle pour maintenir la fidélité de l’image et pour savoir comment utiliser des paramètres avancés pour créer l’image parfaite.
 
