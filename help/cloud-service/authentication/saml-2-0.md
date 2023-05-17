@@ -10,9 +10,9 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: d049eb78e2302aa97de0d228b65fba842ad38b74
+source-git-commit: f6a9e7b32d876a8cd5ce7bf6a2e13aeb5faaf35b
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '3123'
 ht-degree: 2%
 
 ---
@@ -138,8 +138,21 @@ _La création d’un KeyStore pour authentication-service est requise lorsque la
    + A [le KeyStore public/privé est installé dans ce KeyStore.](#install-aem-public-private-key-pair) uniquement si le chiffrement de la signature AuthnRequest/de l’assertion SAML est requis.
    + Si cette intégration SAML prend en charge la déconnexion, mais pas l’assertion de signature/SAML AuthnRequest, alors un fichier de stockage de clés vide est suffisant.
 1. Sélectionner __Enregistrer et fermer__.
-1. Sélectionner __authentication-service__ et sélectionnez __Activer__ dans la barre d’actions supérieure.
+1. Créer un package contenant la mise à jour __authentication-service__ utilisateur.
 
+   _Utilisez la solution de contournement temporaire suivante à l’aide de packages :_
+
+   1. Accédez à __Outils > Déploiement > Packages__.
+   1. Créer un package
+      + Nom du module : `Authentication Service`
+      + Version: `1.0.0`
+      + Groupe : `com.your.company`
+   1. Modifiez la nouvelle __Key Store du service d’authentification__ module.
+   1. Sélectionnez la __Filtres__ et ajouter un filtre pour le chemin d’accès racine. `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
+      + Le `<AUTHENTICATION SERVICE UUID>` est accessible en accédant à __Outils > Sécurité > Utilisateurs__ et en sélectionnant __authentication-service__ utilisateur. L’UUID est la dernière partie de l’URL.
+   1. Sélectionner __Terminé__ puis __Enregistrer__.
+   1. Sélectionnez la __Build__ pour le bouton __Key Store du service d’authentification__ module.
+   1. Une fois la création terminée, sélectionnez __Plus__ > __Répliquer__ pour activer le magasin de clés du service d’authentification dans AEM Publish.
 
 ## Installer AEM paire de clés publique/privée{#install-aem-public-private-key-pair}
 
@@ -212,7 +225,21 @@ La signature de la requête d’auteur et le chiffrement de l’assertion SAML s
 1. Le certificat nouvellement ajouté s’affiche au-dessus du __Ajout d’un certificat à partir d’un fichier CRT__ .
    + Prenez note de la __alias__ car il est utilisé dans la variable [Configuration OSGi du gestionnaire d’authentification SAML 2.0](#saml-20-authentication-handler-osgi-configuration)
 1. Sélectionner __Enregistrer et fermer__.
-1. Sélectionner __authentication-service__ et sélectionnez __Activer__ dans la barre d’actions supérieure.
+1. Créer un package contenant la mise à jour __authentication-service__ utilisateur.
+
+   _Utilisez la solution de contournement temporaire suivante à l’aide de packages :_
+
+   1. Accédez à __Outils > Déploiement > Packages__.
+   1. Créer un package
+      + Nom du module : `Authentication Service`
+      + Version: `1.0.0`
+      + Groupe : `com.your.company`
+   1. Modifiez la nouvelle __Key Store du service d’authentification__ module.
+   1. Sélectionnez la __Filtres__ et ajouter un filtre pour le chemin d’accès racine. `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
+      + Le `<AUTHENTICATION SERVICE UUID>` est accessible en accédant à __Outils > Sécurité > Utilisateurs__ et en sélectionnant __authentication-service__ utilisateur. L’UUID est la dernière partie de l’URL.
+   1. Sélectionner __Terminé__ puis __Enregistrer__.
+   1. Sélectionnez la __Build__ pour le bouton __Key Store du service d’authentification__ module.
+   1. Une fois la création terminée, sélectionnez __Plus__ > __Répliquer__ pour activer le magasin de clés du service d’authentification dans AEM Publish.
 
 ## Configuration du gestionnaire d’authentification SAML 2.0{#configure-saml-2-0-authentication-handler}
 
