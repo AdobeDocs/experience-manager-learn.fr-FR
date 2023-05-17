@@ -8,11 +8,12 @@ role: Developer
 level: Beginner
 kt: 7872
 thumbnail: 333429.jpeg
+last-substantial-update: 2023-05-17T00:00:00Z
 exl-id: 06ba38c4-95fe-4ff5-b4d9-237ef9dec944
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 83c4d82a3cce44ae9f99389fdfd7d485d42d13e2
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 100%
+source-wordcount: '60'
+ht-degree: 85%
 
 ---
 
@@ -24,13 +25,6 @@ Dans cette vidéo, vous allez :
 
 + Découvrir comment activer les requêtes persistantes GraphQL.
 + Découvrir comment créer, mettre à jour et exécuter des requêtes GraphQL.
-+ Comprendre les avantages et inconvénients des requêtes côté serveur et des requêtes côté client.
-
->[!CAUTION]
->
->Le chapitre **Créer, mettre à jour et exécuter des requêtes persistantes** commençant à 2:05 utilise [Postman](https://www.postman.com/) pour exécuter la tâche. Toutefois, dans les versions plus récentes d’AEM as a Cloud Service, une version intégrée de l’**Explorateur GraphiQL** est fournie. Voir [Utiliser l’IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/graphiql-ide.html?lang=fr) pour plus d’informations.
-
++ Présentation des avantages des requêtes persistantes par rapport aux requêtes côté client
 
 >[!VIDEO](https://video.tv.adobe.com/v/333429?quality=12&learn=on)
-
-_Téléchargez la [collection Postman](./assets/aem-headless-video-series.postman_collection.json) utilisée dans la série de vidéos d’AEM Headless._
