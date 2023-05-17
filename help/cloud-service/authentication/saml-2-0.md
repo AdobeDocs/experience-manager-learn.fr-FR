@@ -10,9 +10,9 @@ kt: 9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: d049eb78e2302aa97de0d228b65fba842ad38b74
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2943'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Découvrez comment configurer et authentifier les utilisateurs finaux (et non AE
 
 L’intégration de SAML 2.0 à AEM Publish (ou Preview) permet aux utilisateurs finaux d’une expérience web basée sur AEM de s’authentifier auprès d’un fournisseur d’identité (fournisseur d’identité) non-Adobe et d’accéder à AEM en tant qu’utilisateur autorisé et nommé.
 
-|  | Auteur AEM | Publication AEM |
+|  | Création AEM | Publication AEM |
 |-----------------------|:----------:|:-----------:|
 | Prise en charge de SAML 2.0 | ✘ | ✔ |
 
@@ -119,7 +119,7 @@ Le Trust Store global est configuré avec le certificat public du fournisseur d�
 1. Accédez à __Outils > Déploiement > Packages__.
 1. Créer un package
    + Nom du module : `Global Trust Store`
-   + d’Adobe Experience Manager Forms 6.5: `1.0.0`
+   + Version: `1.0.0`
    + Groupe : `com.your.company`
 1. Modifiez la nouvelle __Trust Store mondial__ module.
 1. Sélectionnez la __Filtres__ et ajouter un filtre pour le chemin d’accès racine. `/etc/truststore`.
@@ -132,7 +132,6 @@ Le Trust Store global est configuré avec le certificat public du fournisseur d�
 _La création d’un KeyStore pour authentication-service est requise lorsque la variable [Propriété de configuration OSGi du gestionnaire d’authentification SAML 2.0 `handleLogout` est défini sur `true`](#saml-20-authenticationsaml-2-0-authentication) ou [AuthnRequest signing/SAML assertion ecryption](#install-aem-public-private-key-pair) est requis_
 
 1. Connectez-vous à l’auteur AEM en tant qu’administrateur AEM pour charger la clé privée.
-1. Accédez à __Outils > Sécurité > Trust Store__, puis sélectionnez __authentication-service__ et sélectionnez __Propriétés__ dans la barre d’actions supérieure.
 1. Accédez à __Outils > Sécurité > Utilisateurs__, puis sélectionnez __authentication-service__ et sélectionnez __Propriétés__ dans la barre d’actions supérieure.
 1. Sélectionnez la __Keystore__ .
 1. Créez ou ouvrez le KeyStore. Si vous créez un fichier de stockage de clés, assurez-vous que le mot de passe est sécurisé.
