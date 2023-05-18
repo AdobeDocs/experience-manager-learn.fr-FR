@@ -6,14 +6,13 @@ audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
 doc-type: technical video
 activity: setup
-version: Cloud Service
 kt: 5982
 thumbnail: 38566.jpg
 topic: Integrations
 role: Developer
 level: Intermediate
 exl-id: a72ddced-37de-4b62-9e28-fa5b6c8ce5b7
-source-git-commit: 18a72187290d26007cdc09c45a050df8f152833b
+source-git-commit: 1d2daf53cd28fcd35cb2ea5c50e29b447790917a
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -64,7 +63,7 @@ Il est maintenant temps de vérifier que la propriété Tag et ses bibliothèque
 
    ![Propriété de balise sur les pages de création et de publication](assets/tag-property-on-author-publish-pages.png)
 
-Félicitations ! Vous avez terminé l’intégration AEM et de la balise de collecte de données qui injecte du code JavaScript dans votre site AEM sans mettre à jour le code de projet d’AEM.
+Félicitations. Vous avez terminé l’intégration AEM et de la balise de collecte de données qui injecte du code JavaScript dans votre site AEM sans mettre à jour le code de projet d’AEM.
 
 ## Défi : mettre à jour et publier la règle dans la propriété Tag
 
