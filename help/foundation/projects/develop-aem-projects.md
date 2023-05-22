@@ -11,7 +11,7 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 481b8877e252b885da307fcf4d96f8a50f026fa6
 workflow-type: tm+mt
 source-wordcount: '4571'
 ht-degree: 1%
@@ -154,7 +154,7 @@ Puisque nous copions/configurons principalement des noeuds, nous utiliserons CRX
    1. Ajouter un autre **nt:unstructured** noeud &quot;approbateurs&quot; étiquetés en tant qu’enfant du noeud rôles.
    1. Ajouter des propriétés de chaîne **jcr:title** = &quot;**Approbateurs**&quot;, **roleclass** =&quot;**propriétaire**&quot;, **roleid**=&quot;**approbateurs**&quot;.
       1. Le nom du noeud approbateurs, ainsi que jcr:title et roleid peuvent être n’importe quelle valeur de chaîne (tant que roleid est unique).
-      1. **roleclass** détermine les autorisations appliquées à ce rôle en fonction de la variable [3 rôles OTB](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User Rôles dans un projet) : **propriétaire**, **éditeur**, et **observateur**.
+      1. **roleclass** détermine les autorisations appliquées à ce rôle en fonction de la variable [3 rôles OTB](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User%20Roles%20in%20a%20Project): **propriétaire**, **éditeur**, et **observateur**.
       1. En général, si le rôle personnalisé est davantage un rôle de gestion, la classe de rôles peut être **propriétaire;** s’il s’agit d’un rôle de création plus spécifique comme Photographe ou Designer, **éditeur** roleclass devrait suffire. La grande différence entre **propriétaire** et **éditeur** est que les propriétaires de projet peuvent mettre à jour les propriétés du projet et ajouter de nouveaux utilisateurs au projet.
 
    ```shell
