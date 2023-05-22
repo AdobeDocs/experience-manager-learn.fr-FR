@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
-source-git-commit: 12b3888552d5a131628dabf380840f0586798ea5
+source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 4%
@@ -20,13 +20,15 @@ ht-degree: 4%
 
 # Premier tutoriel AEM sans affichage
 
-![Premier tutoriel AEM sans tête](./assets/overview/overview.png)
+{{aem-headless-trials-promo}}
 
 Bienvenue dans le tutoriel sur la création d’une expérience web à l’aide de React, entièrement piloté par AEM API et GraphQL sans affichage. Dans ce tutoriel, nous vous guiderons tout au long du processus de création d’une application web dynamique et interactive en combinant la puissance de React, des API Adobe Experience Manager (AEM) sans affichage et GraphQL.
 
 React est une bibliothèque JavaScript populaire pour la création d’interfaces utilisateur, connue pour sa simplicité, sa convivialité et son architecture basée sur des composants. AEM fournit de puissantes fonctionnalités de gestion de contenu et expose des API sans affichage qui permettent aux développeurs d’accéder au contenu et aux données stockés dans AEM par le biais de divers canaux et applications.
 
 En exploitant AEM API sans affichage, vous pouvez récupérer du contenu, des ressources et des données de votre instance AEM et les utiliser pour alimenter votre application React. GraphQL, langage de requête flexible pour les API, offre un moyen efficace et précis de demander des données spécifiques à votre instance AEM, ce qui permet une intégration transparente entre React et AEM.
+
+![Premier tutoriel AEM sans tête](./assets/overview/overview.png)
 
 Dans ce tutoriel, nous vous guidons tout au long du processus étape par étape de création d’une expérience web à l’aide des API React et AEM sans affichage avec GraphQL. Vous apprendrez à configurer votre environnement de développement, à établir une connexion entre React et AEM, à récupérer du contenu à l’aide des requêtes GraphQL et à le rendre dynamiquement dans votre application web.
 
