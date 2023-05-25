@@ -5,9 +5,9 @@ breadcrumb-title: Tutoriels AEM Managed Services
 sub-product: Experience Manager
 version: 6.5
 team: TM
-source-git-commit: df3afc60f765c18915eca3bb2d3556379383fafc
-workflow-type: ht
-source-wordcount: '60'
+source-git-commit: 9f242d753748354faabf613112246cebe9ed5daa
+workflow-type: tm+mt
+source-wordcount: '59'
 ht-degree: 100%
 
 ---
@@ -15,7 +15,6 @@ ht-degree: 100%
 
 # Adobe Experience Manager Managed Services {#ams}
 
-+ [Présentation](./overview.md)
 + Dispatcher{#dispatcher}
    + [Manuel de Dispatcher - Présentation](./dispatcher/overview.md)
    + [Qu’est-ce que le Dispatcher ?](./dispatcher/what-is-the-dispatcher.md)
