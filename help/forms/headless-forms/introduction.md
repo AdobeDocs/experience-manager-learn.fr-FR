@@ -7,9 +7,9 @@ kt: 13285
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: c6e83a627743c40355559d9cdbca2b70db7f23ed
+source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 2%
 
 ---
@@ -17,8 +17,11 @@ ht-degree: 2%
 
 # Incorporation d’un formulaire adaptatif sans affichage
 
-Cet article aborde les principes de base de l’incorporation d’un formulaire adaptatif sans tête dans votre site web d’application de spa. Cet article suppose que vous disposez d’une application monopage existante et que vous souhaitez incorporer un formulaire adaptatif créé dans AEM Forms 6.5.16 à l’aide des composants principaux.
-L’inclusion d’un formulaire dans une application d’une seule page permet aux utilisateurs de saisir et d’envoyer des données en toute transparence, sans avoir à actualiser une page. Cela améliore l’interactivité et l’efficacité de l’application.
+Ceci [Ce tutoriel abordera les différentes API sans interface utilisateur graphique.](https://opensource.adobe.com/aem-forms-af-runtime/api/#section/Introduction) qui vous permettent de répertorier, d’afficher et d’envoyer le formulaire.
+
+Cet article couvre les différentes API sans interface utilisateur graphique fournies pour vous permettre de répertorier, d’afficher et d’envoyer des formulaires adaptatifs sans interface utilisateur.
+
+Cet article suppose que vous disposez d’une application monopage existante et que vous souhaitez répertorier et afficher les formulaires adaptatifs sans en-tête dans votre site web de spa.
 
 La capture d’écran suivante montre un formulaire de contact incorporé dans SPA
 

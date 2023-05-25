@@ -7,10 +7,10 @@ kt: 13285
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: c6e83a627743c40355559d9cdbca2b70db7f23ed
+source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 0%
+source-wordcount: '149'
+ht-degree: 1%
 
 ---
 
@@ -76,3 +76,7 @@ export default function Contact(){
 ```
 
 Le code ci-dessus utilise des composants HTML natifs qui sont mappés aux composants utilisés dans le formulaire adaptatif. Par exemple, nous mappons le composant de formulaire adaptatif d’entrée de texte au composant TextField. Composants natifs utilisés dans l’article [peut être téléchargé ici](./assets/native-components.zip)
+
+## Étapes suivantes
+
+[Sélectionner un formulaire dans la liste déroulante](./select-form-from-drop-down-list.md)
