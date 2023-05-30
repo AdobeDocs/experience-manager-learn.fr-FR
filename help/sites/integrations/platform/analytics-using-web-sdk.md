@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-25T00:00:00Z
 jira: KT-13328
 thumbnail: KT-13328.jpeg
-source-git-commit: 19c31819f3df7c6c43753d6ec4de8f6ecf4e55dd
+source-git-commit: 3831c6ed1467018c9f5bf15aa9f6b8ee78034c02
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1646'
 ht-degree: 3%
 
 ---
@@ -73,7 +73,7 @@ Le document SDR offre un aperçu complet du plan de mise en oeuvre, en veillant 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
 
-Pour plus d’informations sur les concepts et les différents éléments qui doivent être inclus dans le document SDR, consultez la rubrique [Créer et gérer un document de référence de conception de solution (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). Vous pouvez également télécharger un exemple de modèle Excel, mais une version spécifique à WKND est également disponible. [here](./assets/Analytics-SDR-Template.xlsx).
+Pour plus d’informations sur les concepts et les différents éléments qui doivent être inclus dans le document SDR, consultez la rubrique [Créer et gérer un document de référence de conception de solution (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html). Vous pouvez également télécharger un exemple de modèle Excel, mais une version spécifique à WKND est également disponible. [here](./assets/Initial-WKND-WebSDK-BRD-SDR.xlsx).
 
 ## Configuration d’Analytics - suite de rapports, Analysis Workspace
 
@@ -83,7 +83,7 @@ Dans ce tutoriel,  `eVar5, eVar6, and eVar7` track  _Nom de page WKND, ID CTA WK
 
 Pour analyser, collecter des informations et partager ces informations avec d’autres à partir des données collectées, un projet Analysis Workspace est créé.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419874?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419875?quality=12&learn=on)
 
 Pour en savoir plus sur la configuration et les concepts d’Analytics, nous vous recommandons vivement les ressources suivantes :
 
@@ -121,6 +121,10 @@ Dans le [tutoriel précédent](./web-sdk.md), une propriété de balise est cré
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419882?quality=12&learn=on)
+
+>[!TIP]
+>
+>L’élément de données et le code d’événement de règle affiché dans la vidéo sont disponibles à titre de référence, **développer l’élément d’accordéon ci-dessous ;**. Cependant, si vous n’utilisez PAS la couche de données client Adobe, vous devez modifier le code ci-dessous, mais le concept de définition des éléments de données et de leur utilisation dans la définition de règle s’applique toujours.
 
 +++ Élément de données et code d’événement de règle
 
@@ -209,6 +213,13 @@ Dans le [tutoriel précédent](./web-sdk.md), une propriété de balise est cré
 
 Pour plus d’informations sur l’intégration des composants principaux AEM à la couche de données client Adobe, reportez-vous à la section [Utilisation du guide Adobe de la couche de données client avec AEM composants principaux](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=fr).
 
+
+>[!INFO]
+>
+>Pour une compréhension complète de la variable **Carte des variables** Détails des propriétés de l’onglet dans le document Solution Design Reference (SDR) , accédez à la version complète spécifique à WKND à télécharger [here](./assets/Final-WKND-WebSDK-BRD-SDR.xlsx).
+
+
+
 ## Vérification de la propriété de balise mise à jour sur WKND
 
 Pour vous assurer que la propriété de balise mise à jour est créée, publiée et fonctionne correctement sur les pages du site WKND. Utilisation du navigateur web Google Chrome [Extension Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob):
@@ -235,7 +246,7 @@ Le jeu de données est une structure de stockage et de gestion pour une collecte
 
 Analysis Workspace est un outil puissant d’Adobe Analytics qui permet d’explorer et de visualiser les données de manière flexible et interactive. Il offre une interface par glisser-déposer pour créer des rapports personnalisés, effectuer une segmentation avancée et appliquer diverses visualisations de données.
 
-rouvrons le projet Analysis Workspace créé dans le [Configuration d’Analytics](#setup-analytics---report-suite-analysis-workspace) étape . Dans le **Pages principales** , examinez diverses mesures telles que les visites, les visiteurs uniques, les entrées, le taux de rebond, etc. Pour évaluer les performances des CTAS des pages WKND et de la page d’accueil, effectuez un glisser-déposer des dimensions spécifiques à WKND (nom de page WKND, nom CTA WKND) et des mesures (événement de clic CTA WKND). Ces informations s’avèrent utiles pour les marketeurs afin de déterminer les CTAS les plus efficaces et de prendre des décisions axées sur les données en fonction de leurs objectifs commerciaux.
+rouvrons le projet Analysis Workspace créé dans le [Configuration d’Analytics](#setup-analytics---report-suite-analysis-workspace) étape . Dans le **Pages principales** , examinez diverses mesures telles que les visites, les visiteurs uniques, les entrées, le taux de rebond, etc. Pour évaluer les performances des CTAS des pages WKND et de la page d’accueil, effectuez un glisser-déposer des dimensions spécifiques à WKND (nom de page WKND, nom CTA WKND) et des mesures (événement de clic CTA WKND). Ces informations s’avèrent utiles pour les marketeurs afin de déterminer les CTAS les plus efficaces et de prendre des décisions fondées sur les données, en fonction de leurs objectifs commerciaux.
 
 Pour visualiser les parcours utilisateur, utilisez la visualisation Flux , en commençant par le **Nom de page WKND** et se développer en différents chemins.
 
@@ -250,6 +261,12 @@ La mise en oeuvre d’Adobe Analytics est essentielle pour que les équipes mark
 En implémentant les étapes recommandées et en utilisant les ressources fournies, telles que le document de référence pour la conception de solution (SDR) et en comprenant les concepts clés d’Analytics, les marketeurs peuvent collecter et analyser efficacement les données.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419888?quality=12&learn=on)
+
+
+>[!AVAILABILITY]
+>
+>Si vous préférez la variable **vidéo de bout en bout** qui couvre l’ensemble du processus d’intégration au lieu des vidéos individuelles de l’étape de configuration, vous pouvez cliquer sur [here](https://video.tv.adobe.com/v/3419889/) pour y accéder.
+
 
 ## Ressources supplémentaires
 
