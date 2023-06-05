@@ -7,17 +7,20 @@ kt: 13311
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
+exl-id: 7316ca02-be57-4ecf-b162-43a736b992b3
+source-git-commit: 3bbf80d5c301953b3a34ef8256702ac7445c40da
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
 
-
 # Récupérer et afficher les formulaires au format de carte
 
-Le format d’affichage Carte est un modèle de conception qui présente des informations ou des données sous la forme de cartes. Chaque carte représente un élément distinct de contenu ou de saisie de données et se compose généralement d’un conteneur visuellement distinct avec des éléments spécifiques organisés dans celui-ci. Dans cet article, nous utiliserons la variable [API listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) pour récupérer les formulaires et les afficher au format de carte, comme illustré ci-dessous
+Le format d’affichage Carte est un modèle de conception qui présente des informations ou des données sous la forme de cartes. Chaque carte représente un élément distinct de contenu ou de saisie de données et se compose généralement d’un conteneur visuellement distinct avec des éléments spécifiques organisés dans celui-ci.
+Les cartes cliquables dans React sont des composants interactifs qui ressemblent à des cartes ou des mosaïques et peuvent être cliqués ou Appuyés par l’utilisateur. Lorsqu’un utilisateur clique ou appuie sur une carte cliquable, cela déclenche une action ou un comportement spécifié, comme la navigation vers une autre page, l’ouverture d’un modal ou la mise à jour de l’interface utilisateur.
+
+Dans cet article, nous utiliserons la variable [API listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) pour récupérer les formulaires et les afficher au format carte, ouvrez le formulaire adaptatif sur l’événement click.
 
 ![carte-view](./assets/card-view-forms.png)
 
@@ -25,37 +28,59 @@ Le format d’affichage Carte est un modèle de conception qui présente des inf
 
 Le code suivant a été utilisé pour concevoir le modèle de carte. Le modèle de carte affiche le titre et la description du formulaire adaptatif, ainsi que le logo de l’Adobe. [Composants de l’interface utilisateur matérielle](https://mui.com/) ont été utilisés pour créer cette mise en page.
 
+
+
 ```javascript
-import Paper from "@mui/material/Paper";
-import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
-import { Typography } from "@mui/material";
+import Form from './Form';
+import PlainText from './plainText'
+import TextField from './TextField'
+import Button from './Button';
+import { AdaptiveForm } from "@aemforms/af-react-renderer";
+
+import { CardActionArea, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-const FormCard =({headlessForm}) => {
+import { useState,useEffect } from "react";
+import DisplayForm from "../DisplayForm";
+import { Link } from "react-router-dom";
+export default function FormCard({headlessForm}) {
+const extendMappings =
+    {
+        'plain-text' : PlainText,
+        'text-input' : TextField,
+        'button' : Button,
+        'form': Form
+    };
+    const[formPath, setFormPath] = useState('');
+    const [selectedForm, setForm] = useState('');
     return (
-              <Grid item xs={3}>
+        
+            <Grid item xs={3}>
                 <Paper elevation={3}>
                     <img src="/content/dam/formsanddocuments/registrationform/jcr:content/renditions/cq5dam.thumbnail.48.48.png" className="img"/>
                     <Box padding={3}>
-                    <Typography variant="subtititle2" component="h2">
-                        {headlessForm.title}
-                    
-                    </Typography>
-                    <Typography variant="subtititle3" component="h4">
-                        {headlessForm.description}
-                    
-                    </Typography>
+                        <Link style={{ textDecoration: 'none' }} to={`/displayForm${headlessForm.path}`}>
+                            <Typography variant="subtititle2" component="h2">
+                                {headlessForm.title}
+                            </Typography>
+                            <Typography variant="subtititle3" component="h4">
+                                {headlessForm.description}
+                            </Typography>
+                        </Link>
+                
                     </Box>
                 </Paper>
-                </Grid>
-          
-
-
+            </Grid>
     );
     
 
 };
-export default FormCard;
+```
+
+L’itinéraire suivant a été défini dans le fichier Main.js pour accéder à DisplayForm.js.
+
+```javascript
+    <Route path="/displayForm/*" element={<DisplayForm/>} exact/>
 ```
 
 ## Récupération des formulaires
@@ -104,3 +129,7 @@ export default function ListForm(){
 ```
 
 Dans le code ci-dessus, nous itérons via la fonction fetchedForms à l’aide de la fonction map et pour chaque élément du tableau fetchedForms, un composant FormCard est créé et ajouté au conteneur Grid. Vous pouvez désormais utiliser le composant ListForm dans votre application React selon vos besoins.
+
+## Étapes suivantes
+
+[Afficher le formulaire adaptatif lorsque l’utilisateur clique sur une carte](./open-form-card-view.md)
