@@ -12,10 +12,10 @@ topic: SPA
 role: Developer
 level: Beginner
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
-workflow-type: ht
-source-wordcount: '1617'
-ht-degree: 100%
+source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+workflow-type: tm+mt
+source-wordcount: '1621'
+ht-degree: 98%
 
 ---
 
@@ -26,12 +26,12 @@ Découvrez comment plusieurs vues de la SPA peuvent être prises en charge par u
 ## Objectif
 
 1. Découvrez les options de routage du modèle SPA disponibles lors de l’utilisation de l’éditeur de SPA.
-1. Découvrez comment utiliser le [React Router](https://reacttraining.com/react-router/) pour naviguer entre les différentes vues de la SPA.
+1. Découvrez comment utiliser le [React Router](https://reacttraining.com/react-router) pour naviguer entre les différentes vues de la SPA.
 1. Utilisez les composants principaux React d’AEM pour implémenter une navigation dynamique pilotée par la hiérarchie de pages d’AEM.
 
 ## Ce que vous allez créer
 
-Ce chapitre ajoute une navigation à une SPA dans AEM. Le menu de navigation est piloté par la hiérarchie de pages d’AEM et utilise le modèle JSON fourni par le [Composant principal de navigation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=fr).
+Ce chapitre ajoute une navigation à une SPA dans AEM. Le menu de navigation est piloté par la hiérarchie de pages d’AEM et utilise le modèle JSON fourni par le [Composant principal de navigation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
 
 ![Navigation ajoutée.](assets/navigation-routing/navigation-added.png)
 
@@ -209,9 +209,9 @@ Examinez ensuite le modèle JSON qui anime l’expérience d’affichage multipl
 
 ## Examiner le routage React  {#react-routing}
 
-La navigation et le routage sont implémentés avec le [React Router](https://reactrouter.com/). Le React Router est une collection de composants de navigation pour les applications React. Les [composants principaux React d’AEM](https://github.com/adobe/aem-react-core-wcm-components-base) utilisent les fonctionnalités du React Router pour implémenter le composant **Navigation** utilisé dans les étapes précédentes.
+La navigation et le routage sont implémentés avec le [React Router](https://reactrouter.com/en/main). Le React Router est une collection de composants de navigation pour les applications React. Les [composants principaux React d’AEM](https://github.com/adobe/aem-react-core-wcm-components-base) utilisent les fonctionnalités du React Router pour implémenter le composant **Navigation** utilisé dans les étapes précédentes.
 
-Ensuite, examinez la manière dont le React Router est intégré à la SPA et effectuez des tests à l’aide du composant [Lien](https://reactrouter.com/web/api/Link).
+Ensuite, examinez la manière dont le React Router est intégré à la SPA et effectuez des tests à l’aide du composant [Lien](https://reactrouter.com/en/main/components/link).
 
 1. Dans l’IDE, ouvrez le fichier `index.js` sur `ui.frontend/src/index.js`.
 
@@ -238,7 +238,7 @@ Ensuite, examinez la manière dont le React Router est intégré à la SPA et e
    });
    ```
 
-   Notez que l’`App` est encapsulée dans le composant `Router` du [React Router](https://reacttraining.com/react-router/). Le `ModelManager`, fourni par le SDK JS de l’éditeur de SPA d’AEM, ajoute les itinéraires dynamiques aux pages AEM en fonction de l’API du modèle JSON.
+   Notez que l’`App` est encapsulée dans le composant `Router` du [React Router](https://reacttraining.com/react-router). Le `ModelManager`, fourni par le SDK JS de l’éditeur de SPA d’AEM, ajoute les itinéraires dynamiques aux pages AEM en fonction de l’API du modèle JSON.
 
 1. Ouvrez le fichier `Page.js` dans `ui.frontend/src/components/Page/Page.js`.
 
@@ -260,7 +260,7 @@ Ensuite, examinez la manière dont le React Router est intégré à la SPA et e
    Le composant SPA `Page` utilise la fonction `MapTo` pour mapper des **pages** dans AEM à un composant SPA correspondant. L’utilitaire `withRoute` aide à acheminer dynamiquement la SPA vers la page enfant AEM appropriée en fonction de la propriété `cqPath`.
 
 1. Ouvrez le composant `Header.js` sur `ui.frontend/src/components/Header/Header.js`.
-1. Mettez à jour l’`Header` pour encapsuler la balise `<h1>` dans un [lien](https://reactrouter.com/web/api/Link) vers la page d’accueil :
+1. Mettez à jour l’`Header` pour encapsuler la balise `<h1>` dans un [lien](https://reactrouter.com/en/main/components/link) vers la page d’accueil :
 
    ```diff
      //Header.js
