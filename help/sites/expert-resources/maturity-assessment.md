@@ -4,13 +4,14 @@ seo-title: AEM Sites Maturity Assessment
 description: Cette liste de contrôle présente un aperçu des questions clés auxquelles vous et votre équipe devez répondre lors de l’évaluation de la maturité de votre instance AEM Sites.
 seo-description: This checklist provides an overview of key questions you and your team should be answering when evaluating the maturity of your AEM Sites instance
 audience: author, marketer, developer
-source-git-commit: 3335069883db38a2748af114ab7505cc34dec270
+feature: Learn From Your Peers
+exl-id: 22164a0e-7239-43f4-8356-c12f68133255
+source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 2%
 
 ---
-
 
 # Votre liste de contrôle d’évaluation de la maturité d’AEM Sites
 
@@ -35,4 +36,3 @@ Dans la plupart des cas, l’évaluation de la maturité AEM aidera à effectuer
 Domaines d’évaluation recommandés AEM maturité : Conception et architecture, Gestion et stratégie des produits, Gestion et diffusion des ressources numériques, Analytics, Tests et sécurité.
 
 Un énorme hurlement pour AEM champion Greg Dimeris d&#39;agréger ces informations de multiples articles Experience League ainsi que de ses propres bonnes pratiques !
-

@@ -4,8 +4,9 @@ seo-title: Your Routine Site Maintenance Guide
 description: Que vous soyez administrateur, auteur ou développeur, la maintenance du site touche tous les aspects de votre instance AEM Sites. Utilisez ce guide pour vous assurer que votre stratégie est configurée pour réussir.
 seo-description: Whether you're an admin, author, or developer, site maintenance touches every aspect of your AEM Sites instance. Use this guide to ensure your strategy is set up for success.
 audience: author, marketer, developer
+feature: Learn From Your Peers
 exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 10%

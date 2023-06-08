@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 19c31819f3df7c6c43753d6ec4de8f6ecf4e55dd
+source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 91%
+source-wordcount: '458'
+ht-degree: 89%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 91%
    + [Système de style](page-authoring/style-system-feature-video-use.md)
    + [Distorsion du temps](page-authoring/timewarp-feature-video-use.md)
    + [Lancements](page-authoring/launches.md)
-   + Conseils experts {#expert-advice}
+   + Apprenez de vos pairs {#expert-advice}
       + [Conseils sur la hiérarchie du site](page-authoring/expert-advice/site-hierarchy.md)
 + Composants {#components}
    + [Développement des composants](components/component-development.md)
@@ -123,7 +123,7 @@ ht-degree: 91%
       + [Créer une Activity Target à l’aide d’offres de fragments d’expérience](integrations/adobe-target/create-target-activity.md)
       + [Personnalisation à l’aide du compositeur d’expérience visuelle](integrations/adobe-target/personalization-using-vec.md)
       + [Personnaliser l’expérience complète d’une page web](integrations/adobe-target/personalization-web-page.md)
-+ Ressources expertes {#expert-resources}
++ Apprenez de vos pairs {#expert-resources}
    + [Évaluation de la maturité d’AEM Sites](expert-resources/maturity-assessment.md)
    + [Maintenance du site](expert-resources/site-maintenance.md)
    + [Conseils et astuces AEM Champion : session 1](expert-resources/champion-tips-1.md)

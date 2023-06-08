@@ -4,13 +4,14 @@ seo-title: AEM Sites Site Hierarchy, Taxonomy, and Tagging Guide
 description: Présentation complète des métadonnées, du balisage, de la taxonomie et de la hiérarchie AEM Sites. Utilisez ce guide pour vous assurer que votre stratégie de contenu est cohérente et suivez les bonnes pratiques
 seo-description: A full overview of AEM Sites metadata, tagging, taxonomy, and hierarchy. Use this guide to ensure your content strategy is consistent and following best practices
 audience: author, marketer
-source-git-commit: d545e7bb5e937959e2ede2b3c1ecfc312df5a044
+feature: Learn From Your Peers
+exl-id: c88c3ec7-9060-43e2-a6a2-d47bba6f7cf3
+source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
 workflow-type: tm+mt
 source-wordcount: '2034'
 ht-degree: 0%
 
 ---
-
 
 # Bonnes pratiques relatives aux balises, à la taxonomie et aux métadonnées : Résumé de haut niveau
 
@@ -47,7 +48,7 @@ Les dossiers sont un moyen naturel de parcourir le contenu dans AEM. Comment vos
 
 * Navigation
 * Navigation
-* Categorization
+* Catégorisation
 * Contrôle d’accès
 
 Pour AEM Sites, la navigation est essentielle. Les dossiers permettent de contrôler l’accès aux ressources et aux pages.
@@ -125,7 +126,7 @@ En outre, au lieu de saisir &quot;voiture&quot; manuellement, le système peut f
 
 Toutes les métadonnées ne doivent pas être considérées comme candidates au système de balisage. Les métadonnées techniques peuvent, inutilement, dupliquer les informations. Le meilleur candidat pour les balises est les métadonnées commerciales. .Les balises sont un bon choix pour appliquer un vocabulaire cohérent, une recherche facettée et une navigation cohérente.
 
-## Gestion des balises
+## Gestion des tags
 
 La gestion des balises bénéficie des avantages d’une équipe principale dédiée. Les nouveaux membres doivent d’abord connaître l’objectif et le fonctionnement de la taxonomie avant d’ajouter de nouvelles balises.  Des experts chevronnés, agissant comme gardiens de nouvelles balises, réduiront les incohérences à long terme.
 
