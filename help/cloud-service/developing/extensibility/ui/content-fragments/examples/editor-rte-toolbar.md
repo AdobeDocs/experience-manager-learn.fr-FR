@@ -10,7 +10,7 @@ jira: KT-13464
 thumbnail: KT-13464.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: c54d078c6282f8ace936dd4a9ee0d5cc39490230
+source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Ajout d’un bouton personnalisé à la barre d’outils de l’éditeur de texte enrichi (RTE)
 
-![Exemple d’extension de barre d’outils de l’éditeur de fragments de contenu](./assets/rte-toolbar/hero.png){align="center"}
+![Exemple d’extension de barre d’outils de l’éditeur de fragments de contenu](./assets/rte/rte-toolbar-hero.png){align="center"}
 
 Des boutons personnalisés peuvent être ajoutés au **Barre d’outils de l’éditeur de texte enrichi** dans l’éditeur de fragment de contenu à l’aide de la méthode `rte` point d’extension. Cet exemple montre comment ajouter un bouton personnalisé appelé _Ajouter un conseil_ dans la barre d’outils de l’éditeur de texte enrichi et modifiez le contenu dans l’éditeur de texte enrichi.
 
