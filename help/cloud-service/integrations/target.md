@@ -10,20 +10,15 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-09T00:00:00Z
 jira: KT-12433
 thumbnail: KT-12433.jpeg
-source-git-commit: b3cc9c4fbd36cdf5be46e4546a174fea0c8da05c
+exl-id: 60a3e18a-090f-4b0e-8ba0-d4afd30577dd
+source-git-commit: d81c66e041abbd56e7115f37732550cf10e59359
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1671'
 ht-degree: 2%
 
 ---
 
 # Personnalisation AEM expériences sans affichage avec des fragments de contenu
-
->[!IMPORTANT]
->
-> L’exportation de fragments de contenu Adobe Experience Manager vers Adobe Target est disponible dans la section disponible dans l’AEM as a Cloud Service [canal prerrelease](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#new-features).
-
-
 
 Ce tutoriel explique comment AEM fragments de contenu sont exportés vers Adobe Target, puis utilisés pour personnaliser les expériences sans interface à l’aide du SDK Web Adobe. Le [React WKND App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) est utilisé pour découvrir comment ajouter à l’expérience une activité Target personnalisée à l’aide d’offres de fragments de contenu, afin de promouvoir une aventure WKND.
 
@@ -65,7 +60,7 @@ Le Cloud Service Adobe Target, configuré dans une configuration contextuelle, d
 
 1. Connectez-vous à __Service AEM Author__ en tant qu’administrateur DAM
 1. Accédez à __Ressources > Fichiers__, recherchez le dossier de ressources qui contient la variable `/conf` appliqué à
-1. Sélectionnez le dossier de ressources, puis cliquez sur __Propriétés__ à partir de la barre d’actions supérieure
+1. Sélectionnez le dossier de ressources, puis __Propriétés__ à partir de la barre d’actions supérieure
 1. Sélectionnez l’onglet __Services cloud__
 1. Assurez-vous que la configuration du cloud est définie sur la configuration contextuelle (`/conf`) contenant la configuration des Cloud Services Adobe Target.
 1. Sélectionner __Adobe Target__ de la __Configurations de Cloud Service__ menu déroulant.
