@@ -1,5 +1,5 @@
 ---
-title: Déploiement dans l’environnement de développement
+title: Déployer sur l’environnement de développement
 description: Déployez le code de votre branche de référentiel de cloud manager
 solution: Experience Manager
 type: Documentation
@@ -8,15 +8,15 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 8851
-source-git-commit: 9063c3dfd9ab9ac537850694ce6545a3fdc840e9
+exl-id: daf7d316-e9ec-41b5-89c8-fe4f4ada9701
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 0%
+source-wordcount: '118'
+ht-degree: 8%
 
 ---
 
-
-# Déploiement dans l’environnement de développement
+# Déployer sur l’environnement de développement
 
 Au cours de l’étape précédente, nous avons transféré notre branche principale de notre référentiel git local vers la branche MyFirstAF du référentiel cloud manager.
 
@@ -40,3 +40,7 @@ Exécution du pipeline
 ![run-pipeline](assets/run-pipeline.png)
 
 Une fois le code déployé, les modifications doivent s’afficher dans votre instance de service cloud d’AEM Forms.
+
+## Étapes suivantes
+
+[Mise à jour du projet d’archétype Maven](./updating-project-archetype.md)

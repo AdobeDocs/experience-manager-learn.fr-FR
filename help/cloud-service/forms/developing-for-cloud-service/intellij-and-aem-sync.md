@@ -9,10 +9,10 @@ version: Cloud Service
 topic: Development
 kt: 8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 3%
+source-wordcount: '515'
+ht-degree: 5%
 
 ---
 
@@ -26,7 +26,7 @@ Installer [Cygwin](https://www.cygwin.com/). J’ai installé dans C:\cygwin64 f
 
 Créez un dossier appelé adoberepo sous c:\cloudmanager.
 
-[Installation de l’outil de référentiel].(https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo).Installing l’outil de référentiel n’est rien d’autre que de copier le fichier de référentiel et de le placer dans votre c:\cloudmanger\adoberepo folder.
+[Installation de l’outil de référentiel](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) L’installation de l’outil de référentiel n’est rien d’autre que la copie du fichier de référentiel et son placement dans votre c:\cloudmanger\adoberepo folder.
 
 Ajoutez ce qui suit à la variable d’environnement Path C:\cygwin64\bin;C:\CloudManager\adoberepo;
 
@@ -35,7 +35,7 @@ Ajoutez ce qui suit à la variable d’environnement Path C:\cygwin64\bin;C:\Clo
 * Launch IntelliJ
 * Appuyez sur les touches Ctrl+Alt+S pour lancer la fenêtre de paramètres.
 * Sélectionnez Outils -> Outils externes, puis cliquez sur le signe + et saisissez ce qui suit, comme illustré dans la capture d’écran.
-   ![rep](assets/repo.png)
+  ![rep](assets/repo.png)
 * Veillez à créer un groupe appelé repo en saisissant &quot;repo&quot; dans le champ déroulant Groupe et toutes les commandes que vous créez appartiennent au **repo** group
 
 
@@ -73,7 +73,7 @@ Sélectionnez un projet dans votre projet aem-banking-application, tel que ui.co
 Les étapes suivantes peuvent être suivies pour configurer rapidement une instance prête pour le cloud sur votre système local.
 * [Téléchargement du dernier SDK AEM](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
 
-* [Télécharger le dernier module complémentaire AEM Forms](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+* [Télécharger le dernier module complémentaire AEM Forms](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?lang=fr)
 
 * Créez la structure de dossiers suivante c:\aemformscs\aem-sdk\author
 
@@ -85,3 +85,7 @@ Les étapes suivantes peuvent être suivies pour configurer rapidement une insta
 * Créez la structure de dossiers suivante.C:\aemformscs\aem-sdk\author\crx-quickstart\install
 * Copiez aem-forms-addon-xxxxxx.far dans le dossier d’installation.
 * Ouvrez une invite de commande et accédez à c:\aemformscs\aem-sdk\author enter the following command java -jar aem-author-p4502.jar -gui. Le module complémentaire de formulaires sera ainsi déployé dans votre instance AEM.
+
+## Étapes suivantes
+
+[Synchroniser vos formulaires et modèles AEM avec le projet AEM](./deploy-your-first-form.md)

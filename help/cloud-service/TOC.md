@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 91%
+source-wordcount: '961'
+ht-degree: 87%
 
 ---
 
@@ -183,17 +183,18 @@ ht-degree: 91%
       + [Utiliser Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
 + Forms{#forms}
    + Développer pour Forms as a Cloud Service{#developing-for-cloud-service}
-      + [Prise en main](./forms/developing-for-cloud-service/getting-started.md)
-      + [Installer IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
-      + [Configurer Git](./forms/developing-for-cloud-service/setup-git.md)
-      + [Synchroniser IntelliJ avec AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
-      + [Créer un formulaire](./forms/developing-for-cloud-service/deploy-your-first-form.md)
-      + [Activer les composants du Portail Formulaires](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [Inclure Cloud Services et FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
-      + [Configuration cloud basée sur le contexte](./forms/developing-for-cloud-service/context-aware-fdm.md)
-      + [Transmettre à Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
-      + [Déployer sur l’environnement de développement](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
-      + [Mettre à jour l’archétype Maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
+      + [1 - Prise en main](./forms/developing-for-cloud-service/getting-started.md)
+      + [2 - Installation de IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
+      + [3 - Configuration Git](./forms/developing-for-cloud-service/setup-git.md)
+      + [4 - Synchroniser IntelliJ avec AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
+      + [5 - Création d’un formulaire](./forms/developing-for-cloud-service/deploy-your-first-form.md)
+      + [6 - Gestionnaire d’envoi personnalisé](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
+      + [7 - Activation des composants du portail Forms](./forms/developing-for-cloud-service/forms-portal-components.md)
+      + [8 - Inclure les Cloud Services et FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [9 - Configuration cloud contextuelle](./forms/developing-for-cloud-service/context-aware-fdm.md)
+      + [10 - Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [11 - Déploiement dans l’environnement de développement](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [12 - Mise à jour de l’archétype Maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + Créer un formulaire adaptatif{#create-first-af}
       + [Présentation](./forms/create-first-af/introduction.md)
       + [Créer un thème](./forms/create-first-af/create-theme.md)

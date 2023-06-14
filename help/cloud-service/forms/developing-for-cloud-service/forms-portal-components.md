@@ -7,10 +7,11 @@ level: Beginner, Intermediate
 version: Cloud Service
 topic: Development
 kt: 10373
-source-git-commit: 55583effd0400bac2e38756483d69f5bd114cb21
+exl-id: ab01573a-e95f-4041-8ccf-16046d723aba
+source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 17%
+source-wordcount: '349'
+ht-degree: 15%
 
 ---
 
@@ -20,7 +21,7 @@ AEM Forms fournit les composants de portail suivants prêts à l’emploi :
 
 **Search &amp; Lister**: Ce composant vous permet de répertorier les formulaires du référentiel de formulaires sur votre page de portail et fournit des options de configuration pour répertorier les formulaires selon des critères spécifiés.
 
-**Brouillons et envois**: Tandis que le composant Search &amp; Lister affiche les formulaires rendus publics par l’auteur Forms, le composant Drafts &amp; Submissions (Brouillons et envois) affiche les formulaires enregistrés en tant que brouillons en vue de les compléter ultérieurement et les formulaires envoyés. Ce composant offre un environnement personnalisé à tout utilisateur connecté.
+**Brouillons et envois**: Tandis que le composant Search &amp; Lister affiche les formulaires rendus publics par l’auteur Forms, le composant Drafts &amp; Submissions (Brouillons et envois) affiche les formulaires enregistrés en tant que brouillons en vue de les compléter ultérieurement et les formulaires envoyés. Ce composant fournit une expérience personnalisée à tout utilisateur connecté.
 
 **Lien**: Ce composant permet de créer un lien vers un formulaire n’importe où sur la page.
 
@@ -50,7 +51,7 @@ Remplacez le contenu de la fonction `.content.xml` avec le code XML suivant :
           componentGroup="BankingApplication - Content"/>
 ```
 
-### Search and Lister
+### Recherche et énumérateur
 
 Effectuez une copie du composant Bouton et renommez-le en _searchandlister_.
 Remplacez le contenu de la fonction `.content.xml` avec le code XML suivant :
@@ -81,3 +82,7 @@ Remplacez le contenu de la fonction `.content.xml` avec le code XML suivant :
 ```
 
 Une fois votre projet déployé, vous devez pouvoir utiliser ces composants dans votre page AEM pour créer Forms Portal.
+
+## Étapes suivantes
+
+[Inclure la configuration des services cloud](./azure-storage-fdm.md)
