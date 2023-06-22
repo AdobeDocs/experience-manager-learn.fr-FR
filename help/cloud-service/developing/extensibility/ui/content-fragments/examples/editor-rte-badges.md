@@ -10,9 +10,9 @@ jira: KT-13466
 thumbnail: KT-13466.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: 8e99c660fed409d44d34cf4edf6bf1b59fa29e34
+source-git-commit: c965d5ff3f49f4859779e657674dab8602fb831b
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Ajout de badges à l’éditeur de texte enrichi (RTE)
 
-![Exemple de badges de l’éditeur de fragment de contenu](./assets/rte/rte-badge-home.png){align="center"}
+>[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
 [Badge de l’éditeur de texte enrichi](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/)  sont des extensions qui rendent le texte de l’éditeur de texte enrichi (RTE) non modifiable. Ainsi, un badge déclaré comme tel ne peut être complètement supprimé que et ne peut pas être partiellement édité. Ces badges prennent également en charge les couleurs spéciales dans l’éditeur de texte enrichi, indiquant clairement aux auteurs de contenu que le texte est un badge et qu’il n’est donc pas modifiable. De plus, ils fournissent des indices visuels sur la signification du texte du badge.
 
