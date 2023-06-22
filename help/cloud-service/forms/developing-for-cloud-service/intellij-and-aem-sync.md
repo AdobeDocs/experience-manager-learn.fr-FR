@@ -9,7 +9,7 @@ version: Cloud Service
 topic: Development
 kt: 8844
 exl-id: 9a7ed792-ca0d-458f-b8dd-9129aba37df6
-source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
+source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 5%
@@ -68,7 +68,7 @@ Ouvrez le fichier .gitignore et ajoutez ce qui suit en bas du fichier et enregis
 
 Sélectionnez un projet dans votre projet aem-banking-application, tel que ui.content et cliquez avec le bouton droit de la souris. L’option de référentiel devrait s’afficher. Sous l’option de référentiel, vous verrez les 4 commandes que nous avons ajoutées précédemment.
 
-## Configuration de l’instance d’auteur AEM
+## Configuration de l’instance d’auteur AEM{#set-up-aem-author-instance}
 
 Les étapes suivantes peuvent être suivies pour configurer rapidement une instance prête pour le cloud sur votre système local.
 * [Téléchargement du dernier SDK AEM](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)

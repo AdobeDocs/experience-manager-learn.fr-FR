@@ -8,10 +8,10 @@ role: Developer
 level: Experienced
 exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
 last-substantial-update: 2021-04-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
+source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 2%
+source-wordcount: '207'
+ht-degree: 5%
 
 ---
 
@@ -24,11 +24,15 @@ Cet article décrit les étapes nécessaires à la création d’une action d’
 * Connexion à crx
 * Créez un noeud de type &quot;sling:folder&quot; sous apps. Appelons ce noeud CustomSubmitHelpx.
 * Enregistrez le noeud que vous venez de créer.
-* Ajoutez les deux propriétés suivantes au noeud que vous venez de créer.
-* PropertyName | Valeur de la propriété
-* guideComponentType | fd/af/components/guidesubmittype
-* guideDataModel | xfa,xsd,basic
-* jcr:description | CustomSubmitHelpx
+* Ajoutez les trois propriétés suivantes au noeud que vous venez de créer.
+
+| Nom de la propriété | Valeur de la propriété |
+|----------------    | ---------------------------------|
+| guideComponentType | fd/af/components/guidesubmittype |
+| guideDataModel | xfa,xsd,basic |
+| jcr:description | CustomSubmitHelpx |
+
+
 * Enregistrez les modifications
 * Créez un nouveau fichier nommé post.POST.jsp sous le noeud CustomSubmitHelpx . Lorsqu’un formulaire adaptatif est envoyé, ce JSP est appelé. Vous pouvez écrire le code JSP selon vos besoins dans ce fichier. Le code suivant transfère la demande au servlet.
 
