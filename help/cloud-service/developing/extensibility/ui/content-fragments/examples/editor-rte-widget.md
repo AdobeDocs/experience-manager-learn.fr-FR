@@ -10,17 +10,17 @@ jira: KT-13465
 thumbnail: KT-13465.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
-source-git-commit: e59c9d1f17c6ade169e834a21b9d5f50ac3a569e
+exl-id: be4c0a6a-5c1f-4408-9ac6-56b8f0653d42
+source-git-commit: 9c8c03df7c510ab697d5222f9dffd5111519b712
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
 
-
 # Ajout de widgets à l’éditeur de texte enrichi (RTE)
 
-![Exemple de widgets de l’éditeur de fragment de contenu](./assets/rte/rte-widget-hero.png){align="center"}
+>[!VIDEO](https://video.tv.adobe.com/v/3420822?quality=12&learn=on)
 
 Pour ajouter du contenu dynamique dans l’éditeur de texte enrichi (RTE), la variable **widgets** peut être utilisée. Les widgets permettent d’intégrer l’interface utilisateur simple ou complexe dans l’éditeur de texte enrichi et l’interface utilisateur peut être créée à l’aide du framework JS de votre choix. Ils peuvent être considérés comme des boîtes de dialogue ouvertes en appuyant sur `{` clé spéciale dans l’éditeur de texte enrichi.
 
@@ -230,4 +230,3 @@ const DiscountCodes = () => {
 
 export default DiscountCodes;
 ```
-
