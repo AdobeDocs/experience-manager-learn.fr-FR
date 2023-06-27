@@ -9,10 +9,11 @@ activity: setup
 kt: 6047
 thumbnail: 38567.jpg
 topic: Integrations
+feature: Integrations
 role: Developer
 level: Intermediate
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
-source-git-commit: 1d2daf53cd28fcd35cb2ea5c50e29b447790917a
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -43,16 +44,16 @@ Pour activer le débogage côté client, appelez la fonction `setDebug(true)` su
 
 ## Débogage via Adobe Experience Platform Debugger
 
-Adobe fournit Adobe Experience Platform Debugger [Extension Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) et [Module complémentaire Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) pour déboguer, comprendre et obtenir des informations sur l’intégration.
+Adobe fournit un Adobe Experience Platform Debugger [Extension Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) et [Module complémentaire Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) pour déboguer, comprendre et obtenir des informations sur l’intégration.
 
 1. Ouvrez l’extension Adobe Experience Platform Debugger et ouvrez la page du site sur l’instance de publication.
 
-1. Dans le **Débogueur Adobe Experience Platform > Résumé > Balises Adobe Experience Platform** , vérifiez les détails de la propriété de balise tels que le nom, la version, la date de création, l’environnement et les extensions.
+1. Dans le **Adobe Experience Platform Debugger > Résumé > Balises Adobe Experience Platform** , vérifiez les détails de la propriété de balise tels que le nom, la version, la date de création, l’environnement et les extensions.
 
-   ![Détails de la propriété de balise et du débogueur Adobe Experience Platform](assets/tag-property-details.png)
+   ![Détails de la propriété Adobe Experience Platform Debugger et Tag](assets/tag-property-details.png)
 
 ## Ressources supplémentaires {#additional-resources}
 
-+ [Présentation du débogueur Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Présentation de l’Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
 
 + [Référence d’objet satellite](https://experienceleague.adobe.com/docs/experience-platform/tags/client-side/satellite-object.html)

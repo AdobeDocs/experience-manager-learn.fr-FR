@@ -1,5 +1,5 @@
 ---
-title: Présentation d’Adobe Cloud Manager
+title: Comprendre Adobe Cloud Manager
 description: Adobe Cloud Manager offre une solution simple et robuste qui permet une gestion, des introspections et un libre-service aisés des environnements AEM.
 sub-product: Experience Manager Cloud Manager, Experience Manager
 topics: best-practices, cicd, development, operations, governance
@@ -7,19 +7,20 @@ doc-type: feature video
 activity: understand
 audience: developer, implementer, administrator, architect
 topic: Architecture
+feature: Cloud Manager
 role: Architect
 level: Beginner
 exl-id: 53279cbb-70c8-4319-b5bb-9a7d350a7f72
 last-substantial-update: 2022-05-10T00:00:00Z
 thumbnail: understand-cloud-manager.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 18%
+ht-degree: 27%
 
 ---
 
-# Présentation d’Adobe Cloud Manager
+# Comprendre Adobe Cloud Manager
 
 Adobe Cloud Manager offre une solution simple et robuste qui permet une gestion, des introspections et un libre-service aisés des environnements AEM.
 
@@ -32,7 +33,7 @@ Cette série vidéo explore les fonctionnalités clés de Cloud Manager pour AEM
 * [Rapports](#reports)
 * [Pipeline de production CI/CD](#cicd-production-pipeline)
 * [Pipelines hors production CI/CD](#cicd-non-production-pipeline)
-* [Activité](#activity)
+* [Activity](#activity)
 
 Pour une présentation complète, consultez le [Guide de l’utilisateur de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=fr).
 
@@ -76,11 +77,11 @@ Le [Pipeline de production CI/CD](https://experienceleague.adobe.com/docs/experi
 
 ## Pipelines hors production CI/CD {#cicd-non-production-pipeline}
 
-[Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager. Les pipelines de déploiement prennent en charge le déploiement automatisé de code du référentiel Git vers tout environnement hors production, c’est-à-dire tout environnement d’AEM configuré qui n’est ni dans l’environnement intermédiaire ni dans l’environnement de production.
+[Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. ](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html) Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager. Les pipelines de déploiement prennent en charge le déploiement automatisé du code du référentiel Git vers tout environnement hors production, c&#39;est-à-dire tout environnement AEM provisionné qui n&#39;est ni en évaluation ni en production.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316?quality=12&learn=on)
 
-## Activité {#activity}
+## Activity {#activity}
 
 Cloud Manager fournit une vue consolidée de l’activité d’un programme, répertoriant toutes les exécutions de pipeline CI/CD, à la fois en production et hors production, ce qui permet de connaître l’activité passée et présente, et les détails de toute activité peuvent être examinés.
 

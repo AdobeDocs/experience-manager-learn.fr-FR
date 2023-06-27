@@ -2,12 +2,14 @@
 title: Variables dans AEM Workflow[Part2]
 description: Utilisation de variables de type XML, JSON, ArrayList, Document dans un workflow AEM
 version: 6.5
-topic: Développement
+topic: Development
+feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: e7d3e0be-5194-47c2-a668-ce78e727986e
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -32,7 +34,7 @@ Vous pouvez mapper le schéma avec la variable de type JSON dans votre modèle d
 Pour que les ressources fonctionnent sur votre système, procédez comme suit :
 
 * [Télécharger et importer les ressources dans AEM à l’aide du gestionnaire de packages](assets/jsonandstringvariable.zip)
-* [Explorez le ](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) modèle de workflow pour comprendre les variables utilisées dans le workflow.
+* [Exploration du modèle de workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/jsonvariable.html) pour comprendre les variables utilisées dans le workflow
 * [Configuration du service de messagerie](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/notification.html#ConfiguringtheMailService)
 * [Ouvrir le formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/afbasedonjson/jcr:content?wcmmode=disabled)
 * Renseignez les détails et envoyez le formulaire

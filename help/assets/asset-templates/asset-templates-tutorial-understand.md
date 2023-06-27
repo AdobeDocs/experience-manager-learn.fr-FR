@@ -3,10 +3,11 @@ title: Présentation des fichiers d’InDesign et des modèles de ressources dan
 description: Ce tutoriel vidéo vous guide tout au long de la définition d’un fichier d’InDesign et de toutes les considérations qui l’accompagnent, en vue de l’utiliser dans la fonction Modèles de ressources d’AEM Assets.
 version: 6.4, 6.5
 topic: Content Management
+feature: Templates
 role: User
 level: Intermediate
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 2%
@@ -35,6 +36,7 @@ Ce tutoriel vidéo vous guide tout au long de la définition d’un fichier d’
 4. Ajout de l’image du logo FPO ([fourni dans le fichier zip](assets/asset-templates-tutorial-video--supporting-files.zip)) à l’élément Logo sur la page de Principal.
 
    * **Clic droit** et sélectionnez **Ajuster > Options d’ajustement des cadres... > Ajustement du contenu > Remplir le cadre proportionnellement**
+
    [En savoir plus sur les options d’ajustement des images](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames), et qui convient à votre cas d’utilisation.
 
 5. Copiez l’en-tête (Logo et Nom de la société) du modèle de Principal dans Page et Page via Coller en place.

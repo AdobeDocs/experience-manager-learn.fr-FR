@@ -3,10 +3,11 @@ title: Utilisation du catalogue de ressources avec AEM Commerce et InDesign Serv
 description: L’amélioration du catalogue d’AEM 6.4 permet de créer des pages de catalogue à l’aide de modèles de ressources et d’InDesign Server AEM.  Un utilisateur peut créer une page de catalogue à l’aide du modèle d’InDesign et mapper les propriétés de produit aux champs modifiables, qui peuvent ensuite être utilisés pour créer des pages similaires pour différents produits.
 version: 6.4, 6.5
 topic: Content Management
+feature: Templates
 role: User
 level: Beginner
 exl-id: 45daa8e3-ce3b-43de-b3d6-276107215dd4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 0%

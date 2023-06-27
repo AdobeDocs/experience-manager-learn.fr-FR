@@ -1,5 +1,5 @@
 ---
-title: Utilisation du pipeline CI/CD dans Adobe Cloud Manager
+title: Utiliser le pipeline CI/CD dans Adobe Cloud Manager
 description: Adobe Cloud Manager fournit un pipeline CI/CD en libre-service simple mais flexible qui permet à AEM équipes de projet de déployer du code rapidement, en toute sécurité et de manière cohérente vers tous les environnements AEM hébergés dans AMS. Cette série de vidéos explore la configuration et l’exécution du pipeline CI/CD de Cloud Manager dans des scénarios d’échec et de succès.
 sub-product: Experience Manager Cloud Manager, Experience Manager
 topics: cicd, performance, best-practices, development, governance
@@ -7,19 +7,20 @@ doc-type: feature video
 activity: understand
 audience: all
 topic: Architecture
+feature: Cloud Manager
 role: Developer
 level: Beginner
 exl-id: d5d59ef5-9343-4ac2-9053-a010decdb9b6
 last-substantial-update: 2022-08-15T00:00:00Z
 thumbnail: cm-pipeline.jpg
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '312'
-ht-degree: 2%
+ht-degree: 10%
 
 ---
 
-# Utilisation du pipeline CI/CD dans Adobe Cloud Manager
+# Utiliser le pipeline CI/CD dans Adobe Cloud Manager
 
 Adobe Cloud Manager fournit un pipeline CI/CD en libre-service simple mais flexible qui permet à AEM équipes de projet de déployer du code rapidement, en toute sécurité et de manière cohérente vers tous les environnements AEM hébergés dans AMS. Cette série de vidéos explore la configuration et l’exécution du pipeline CI/CD de Cloud Manager dans des scénarios d’échec et de succès.
 
@@ -56,6 +57,6 @@ Cette vidéo aborde également la [!UICONTROL Activité] dans Cloud Manager, qui
 ## Documents annexes
 
 * [Guide de l’utilisateur de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=fr)
-* [Téléchargement de l’analyse du code [!DNL SonarQube] rules](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html)
+* [Téléchargement de l’analyse du code [!DNL SonarQube] rules](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-quality-testing.html?lang=fr)
    * *XLSX disponible au bas de la section liée*
 * [[!DNL SonarQube] Index des règles Java™](https://rules.sonarsource.com/java/)

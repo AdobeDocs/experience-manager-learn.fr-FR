@@ -3,10 +3,11 @@ title: Comprendre les raisons de mettre à niveau
 description: Une ventilation de haut niveau des fonctionnalités clés pour les clients qui envisagent d’effectuer une mise à niveau vers la dernière version d’Adobe Experience Manager 6.
 version: 6.5
 topic: Upgrade
+feature: Release Information
 role: Leader, Architect, Developer, Admin, User
 level: Beginner
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '2602'
 ht-degree: 8%
@@ -42,7 +43,7 @@ AEM continue d’adopter des expériences fluides avec des outils nouveaux et am
 
 + **Fragments de contenu** prendre en charge la comparaison/comparaison de versions et les annotations.
 + **API HTTP AEM Assets** prend en charge l’exposition **Fragments de contenu** directement dans la gestion des actifs numériques en tant que **JSON**.
-   **Fragments d’expérience** support **Recherche de texte intégral** et **Invalidation du cache de Dispatcher AEM** pour le référencement **Pages**.
+  **Fragments d’expérience** support **Recherche de texte intégral** et **Invalidation du cache de Dispatcher AEM** pour le référencement **Pages**.
 
 ### Gestion des ressources
 

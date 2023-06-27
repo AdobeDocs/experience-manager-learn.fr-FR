@@ -2,16 +2,17 @@
 title: Variables dans AEM Workflow[Part4]
 description: Utilisation de variables de type XML, JSON, ArrayList, Document dans un workflow AEM
 version: 6.5
-topic: Développement
+topic: Development
+feature: Adaptive Forms, Workflow
 role: Developer
 level: Beginner
-source-git-commit: 462417d384c4aa5d99110f1b8dadd165ea9b2a49
+exl-id: 269e43f7-24cf-4786-9439-f51bfe91d39c
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
-
 
 # Variable ArrayList dans AEM Workflow
 
@@ -71,7 +72,7 @@ Une fois la variable ArrayList CustomRoutes initialisée avec les valeurs des do
 Pour tester ce workflow sur votre système, procédez comme suit :
 
 * Téléchargez et enregistrez le fichier ArrayListVariable.zip dans votre système de fichiers.
-* [Importez le ](assets/arraylistvariable.zip) fichier zip à l’aide du gestionnaire de modules AEM
+* [Importez le fichier zip](assets/arraylistvariable.zip) à l’aide du gestionnaire de modules AEM
 * [Ouvrez le formulaire TravelExpenseReport .](http://localhost:4502/content/dam/formsanddocuments/helpx/travelexpensereport/jcr:content?wcmmode=disabled)
 * Saisissez quelques dépenses et les deux noms du responsable
 * Appuyez sur le bouton Envoyer .
@@ -79,4 +80,4 @@ Pour tester ce workflow sur votre système, procédez comme suit :
 * Une nouvelle tâche intitulée &quot;Assigner à l’administrateur des dépenses&quot; devrait s’afficher.
 * Ouvrir le formulaire associé à la tâche
 * Vous devriez voir deux itinéraires personnalisés avec les noms du gestionnaire.
-   [Explorez le Workflow ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Ce workflow utilise la variable ArrayList, la variable de type JSON, l’éditeur de règles dans le composant Ou-Fractionner.
+  [Explorez le Workflow ReviewExpenseReportWorkflow.](http://localhost:4502/editor.html/conf/global/settings/workflow/models/ReviewExpenseReport.html) Ce workflow utilise la variable ArrayList, la variable de type JSON, l’éditeur de règles dans le composant Ou-Fractionner.

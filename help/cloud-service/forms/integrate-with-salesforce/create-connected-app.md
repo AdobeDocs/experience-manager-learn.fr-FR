@@ -6,12 +6,12 @@ type: Documentation
 role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
-feature: Adaptive Forms
+feature: Adaptive Forms, Integrations
 topic: Development
 kt: 7152
 thumbnail: 331757.jpg
 exl-id: 6e130397-9747-4d60-9975-4c45c5aab87b
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
+source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -25,4 +25,4 @@ Une application connectée est une structure qui permet à une application exter
 >[!VIDEO](https://video.tv.adobe.com/v/331757?quality=12&learn=on)
 
 >[!NOTE]
->Veillez à créer un compte dans l’[édition développeur Salesforce](https://developer.salesforce.com/signup), car les API REST sont activées par défaut dans l’édition développeur.
+>Veillez à créer un compte dans la variable [Salesforce Developer Edition](https://developer.salesforce.com/signup) car les API REST sont activées par défaut dans l’édition développeur.
