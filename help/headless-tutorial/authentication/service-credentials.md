@@ -14,9 +14,9 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 96d576ae24305c1f41073921fbb904e07c1206f6
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1924'
 ht-degree: 99%
 
 ---
@@ -107,7 +107,7 @@ Les informations d’identification de service consistent en un objet JSON enti�
 1. L’application externe utilise les informations d’identification de service pour créer un jeton JWT.
 1. Le jeton JWT est envoyé à Adobe IMS pour être échangé contre un jeton d’accès.
 1. Adobe IMS renvoie un jeton d’accès qui peut être utilisé pour accéder à AEM as a Cloud Service.
-   + Une expiration peut être demandée pour les jetons d’accès. Il est préférable que la durée de vie du jeton d’accès soit courte et actualisée si nécessaire.
+   + Les jetons d’accès ne peuvent pas modifier un délai d’expiration.
 1. L’application externe effectue des requêtes HTTP à AEM as a Cloud Service, en ajoutant le jeton d’accès en tant que jeton porteur à l’en-tête d’autorisation des requêtes HTTP.
 1. AEM as a Cloud Service reçoit la requête HTTP, authentifie la requête et effectue le travail demandé par la requête HTTP, puis renvoie une réponse HTTP à l’application externe.
 
