@@ -9,13 +9,13 @@ level: Beginner
 jira: KT-11862
 thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
+source-git-commit: 27d065761643030de68176ebb4ca10bc152844df
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 1%
 
 ---
-
 
 # Utilisation de l’environnement de développement rapide
 
@@ -43,7 +43,7 @@ Ensuite, créez-le et déployez-le sur le AEM-SDK local en exécutant la command
 
 ```
 $ cd aem-guides-wknd/
-$ mvn clean install -PautoInstallSinglePackage
+$ mvn clean package
 ```
 
 ## Déploiement d’artefacts AEM à l’aide du module externe AEM-RDE
