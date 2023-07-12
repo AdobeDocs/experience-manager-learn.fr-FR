@@ -7,10 +7,10 @@ role: Developer
 level: Beginner
 feature: Security
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 46728ac6ad37590413e247d23262233626b0575b
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 98%
+source-wordcount: '318'
+ht-degree: 82%
 
 ---
 
@@ -94,26 +94,48 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Configuration du Dispatcher {#dispatcher-configuration}
 
-Pour permettre la mise en cache et la diffusion des en-têtes CORS sur le contenu mis en cache, ajoutez la [configuration /clientheaders](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#specifying-the-http-headers-to-pass-through-clientheaders) suivante à tous les fichiers `dispatcher.any` porteurs de l’instance de publication AEM.
+### Autorisation des en-têtes de requête CORS
+
+Pour autoriser le [En-têtes de requête HTTP à transmettre à AEM pour traitement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#specifying-the-http-headers-to-pass-through-clientheaders), ils doivent être autorisés dans le `/clientheaders` configuration.
 
 ```
-/myfarm { 
-  ...
-  /clientheaders {
-      "Access-Control-Allow-Origin"
-      "Access-Control-Expose-Headers"
-      "Access-Control-Max-Age"
-      "Access-Control-Allow-Credentials"
-      "Access-Control-Allow-Methods"
-      "Access-Control-Allow-Headers"
-  }
-  ...
+/clientheaders {
+   ...
+   "Origin"
+   "Access-Control-Request-Method"
+   "Access-Control-Request-Headers"
+}
+```
+
+### Mise en cache des en-têtes de réponse CORS
+
+Pour permettre la mise en cache et la diffusion des en-têtes CORS sur le contenu mis en cache, ajoutez les éléments suivants : [/cache /headers configuration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#caching-http-response-headers) Publication dans AEM `dispatcher.any` fichier .
+
+```
+/publishfarm {
+    ...
+    /cache {
+        ...
+        # CORS HTTP response headers
+        # https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#the_http_response_headers
+        /headers {
+            ...
+            "Access-Control-Allow-Origin"
+            "Access-Control-Expose-Headers"
+            "Access-Control-Max-Age"
+            "Access-Control-Allow-Credentials"
+            "Access-Control-Allow-Methods"
+            "Access-Control-Allow-Headers"
+        }
+    ...
+    }
+...
 }
 ```
 
 **Redémarrez l’application de serveur web** après avoir apporté des modifications au fichier `dispatcher.any`.
 
-Il est probable que l’effacement complet du cache soit nécessaire pour que les en-têtes soient correctement mis en cache dans la requête suivante après une mise à jour de la configuration `/clientheaders`.
+Il est probable que l’effacement complet du cache soit nécessaire pour que les en-têtes soient correctement mis en cache dans la requête suivante après une mise à jour de la configuration `/cache /headers`.
 
 ## Documents annexes {#supporting-materials}
 
