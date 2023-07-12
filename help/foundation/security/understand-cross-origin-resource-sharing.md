@@ -12,10 +12,10 @@ topic: Security
 role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
-source-git-commit: 325c0204c33686e09deb82dd159557e0b8743df6
+source-git-commit: d2a9596ddadd897793a0fce8421aa8b246b45b12
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 93%
+source-wordcount: '1007'
+ht-degree: 88%
 
 ---
 
@@ -64,7 +64,7 @@ Si aucune politique n’est configurée, les requêtes [!DNL CORS] ne recevront 
 #### [!UICONTROL En-têtes exposés]
 
 * `"exposedheaders" <header>`
-* Liste des paramètres d’en-tête indiquant les en-têtes de réponse auxquels les navigateurs sont autorisés à accéder.
+* Liste des paramètres d’en-tête indiquant les en-têtes de réponse auxquels les navigateurs sont autorisés à accéder. Pour les requêtes CORS (et non avant le vol), si elles ne sont pas vides, ces valeurs sont copiées dans la variable `Access-Control-Expose-Headers` en-tête de la réponse. Les valeurs de la liste (noms d’en-tête) sont ensuite rendues accessibles au navigateur ; sans cela, ces en-têtes ne sont pas lisibles par le navigateur.
 
 #### [!UICONTROL Âge maximum]
 
@@ -74,7 +74,7 @@ Si aucune politique n’est configurée, les requêtes [!DNL CORS] ne recevront 
 #### [!UICONTROL En-têtes pris en charge]
 
 * `"supportedheaders" <header>`
-* Liste des paramètres `header` indiquant quels en-têtes HTTP peuvent être utilisés lors de la requête réelle.
+* Liste de `header` paramètres indiquant quels en-têtes de requête HTTP peuvent être utilisés lors de la requête réelle.
 
 #### [!UICONTROL Méthodes autorisées]
 
@@ -98,8 +98,7 @@ Le site 1 est un scénario de base, accessible anonymement et en lecture seule 
   ],
   "supportedmethods":[
     "GET",
-    "HEAD",
-    "OPTIONS"
+    "HEAD"
   ],
   "alloworigin":[
     "http://127.0.0.1:3000",
@@ -140,7 +139,6 @@ Le site 2 est plus complexe et nécessite des requêtes autorisées et de mutat
     "HEAD"
     "POST",
     "DELETE",
-    "OPTIONS",
     "PUT"
   ],
   "alloworigin":[
