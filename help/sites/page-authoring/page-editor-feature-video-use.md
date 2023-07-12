@@ -15,10 +15,10 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: d0027647ce3157173d2592728757150199db930d
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 8%
+source-wordcount: '127'
+ht-degree: 18%
 
 ---
 
@@ -26,35 +26,15 @@ ht-degree: 8%
 
 L’éditeur de page d’AEM site est un outil puissant pour créer et modifier du contenu web. Les outils et fonctionnalités de l’éditeur de page sont accessibles à partir de la barre d’outils de l’interface utilisateur de l’éditeur de page.
 
-La vidéo suivante présente les principales fonctionnalités de l’éditeur de page.
+La vidéo suivante présente certaines des principales fonctionnalités de l’éditeur de page.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32011?quality=12&learn=on)
 
-Les fonctionnalités de l’éditeur de page sont les suivantes :
 
-* Glisser-déposer des composants et des ressources
-* Arborescence de contenu fournissant un index de tous les composants de la page
-* Le panneau Informations sur la page vous donne accès à des informations supplémentaires et à des actions rapides pour un auteur de contenu.
-   * Ouvrir les propriétés
-   * Déployer la page
-   * Démarrer le workflow
-   * Verrouiller la page / Déverrouiller la page
-   * Publier / Annuler la publication d’une page
-   * Modifier le modèle
-   * Afficher comme publié(e)
-   * Afficher en administrateur
-   * Aide
-* Ajout des icônes et de la description du composant au panneau du composant
-* Lien direct pour modifier des ressources dans la gestion des ressources numériques
-* Émulateur pour l’édition de contenu intégré et une gestion plus rapide des composants sur la grille réactive
-* Modes de modification de page
-   * Mode d’édition
-   * Mode Mise en page
-   * Mode Développeur
-* Remplir automatiquement et rechercher par mot-clé le champ de formulaire pathfinder
-* Barre d’état de workflow de la page active
+Voir [Documentation AEM pour un aperçu complet des fonctionnalités de l’éditeur de page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=fr).
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Modification de la documentation sur le contenu de la page](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guide de l’utilisateur pour la création de sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html)
+* [AEM Documentation de l’éditeur de page[(https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html)
+* [Modification de la documentation sur le contenu de la page](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=fr)
+* [Guide d’utilisation de la création de sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=fr)
