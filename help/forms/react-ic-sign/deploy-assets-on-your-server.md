@@ -8,9 +8,10 @@ role: Developer
 level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 155e6e42d4251b731d00e2b456004016152f81fe
+exl-id: 44f4261b-d6fe-42ad-a3aa-2a36ca897b5e
+source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -24,14 +25,21 @@ Les ressources/configurations suivantes ont été déployées sur un serveur de 
 * [Exemple de modèle de communication interactive](assets/waiver-interactive-communication.zip)
 * [Déploiement du lot DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
 * Ajoutez l’entrée suivante dans le service Apache Sling Service User Mapper à l’aide de la configurationMgr OSGi.
-   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
-* [Vous pouvez télécharger un exemple de code d’application React ici](assets/src.zip)
+  **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 
+## Déploiement de l’exemple d’application de réaction
 
+* [Téléchargez l’exemple d’application de réaction](assets/mult-step-form1.zip)
+* Décompressez le contenu de l’application de réaction dans un nouveau dossier.
+* Accédez au dossier et exécutez les commandes suivantes
 
-L’exemple d’application de réaction doit être déployé sur votre environnement local.
+```java
+npm install
+npm start
+```
 
-Vous devrez modifier l’URL du point de terminaison pour qu’elle corresponde à votre environnement. Ouvrez le fichier EmergencyContact.js et modifiez l’URL dans la méthode de récupération .
+Ouvrez le fichier EmergencyContact.js et modifiez l’URL dans la méthode de récupération pour qu’elle corresponde à votre environnement.
+
 
 ```javascript
  const getWebForm=async()=>
@@ -48,9 +56,6 @@ Vous devrez modifier l’URL du point de terminaison pour qu’elle corresponde 
  
 ```
 
-Pour activer l’envoi d’appels POST vers le point de terminaison AEM à partir de votre application REACT, vous devez spécifier les entrées appropriées dans le champ Origines autorisées dans la configuration de la stratégie de partage des ressources cross-origin Adobe Granite
+Pour activer l’envoi d’appels POST vers le point de terminaison AEM à partir de votre application REACT, vous devez spécifier les entrées appropriées dans le champ Origines autorisées dans la configuration Adobe Granite Cross-Origin Resource Sharing Policy.
 
 ![paramètre de rendu](assets/cors-settings.png)
-
-
-

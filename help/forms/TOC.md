@@ -8,9 +8,9 @@ breadcrumb-title: Tutoriels d’AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
+source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1832'
 ht-degree: 81%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 81%
    + [Extraction des données OCR](some-useful-integrations/ocr-data-extraction.md)
    + [Listes déroulantes en cascade](some-useful-integrations/geonames-org.md)
    + [Intégration à ServiceNow](some-useful-integrations/service-now.md)
+   + [Envoyer des emails avec SendGrid](some-useful-integrations/send-grid.md)
 + Création d’un bundle OSGi {#creating-your-first-osgi-bundle}
    + [1 - Configuration de votre environnement](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [2 - Création d’un service OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
