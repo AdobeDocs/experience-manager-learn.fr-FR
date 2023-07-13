@@ -14,9 +14,9 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: 96d576ae24305c1f41073921fbb904e07c1206f6
+source-git-commit: f8ed9fddb5f244860ba229b46a80638a7269d95e
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1925'
 ht-degree: 99%
 
 ---
@@ -53,7 +53,7 @@ Contrairement aux jetons d’accès au développement local, les informations d�
 Les comptes techniques sont créés une seule fois, mais les clés privées utilisées pour gérer les informations d’identification de service associées au compte technique peuvent être gérées au fil du temps. Par exemple, les nouvelles informations d’identification de service ou de clé privée doivent être générées avant l’expiration de la clé privée actuelle, afin de permettre un accès ininterrompu à une personne utilisatrice des informations d’identification de service.
 
 1. Vérifiez votre connexion en tant que :
-   + __personne de l’administration de l’organisation Adobe IMS__ ;
+   + __Administrateur système de l’organisation Adobe IMS__
    + membre du profil de produit IMS de l’__administration AEM__ sur l’__instance de création AEM__.
 1. Connectez-vous à [Adobe Cloud Manager](https://my.cloudmanager.adobe.com).
 1. Ouvrez le programme contenant l’environnement AEM as a Cloud Service pour intégrer la configuration des informations d’identification de service.
