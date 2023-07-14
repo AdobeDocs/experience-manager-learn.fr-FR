@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 5feeed5c0725c7985a8fe85794315c272e5cde4b
+source-git-commit: 695cccfdd03618505b2d3419b1ad82d8dbd0a122
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '987'
 ht-degree: 85%
 
 ---
@@ -16,10 +16,10 @@ ht-degree: 85%
 
 # Tutoriels d’Adobe Experience Manager as a Cloud Service {#cloud-service}
 
-+ [Présentation](./overview.md)
++ [Vue d’ensemble](./overview.md)
 + Essais AEM {#aem-trials}
    + [Images](./aem-trials/images.md)
-+ Présentation d’AEM as a Cloud Service{#introduction}
++ Présentation d&#39;AEM as a Cloud Service{#introduction}
    + [Qu’est-ce qu’AEM as a Cloud Service ?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Évolution](./introduction/evolution.md)
    + [Architecture](./introduction/architecture.md)
@@ -62,7 +62,7 @@ ht-degree: 85%
       + App Builder{#app-builder}
          + [Générer un jeton d’accès](./developing/extensibility/app-builder/jwt-auth.md)
       + Extensibilité de l’interface utilisateur{#ui}
-         + [Présentation](./developing/extensibility/ui/overview.md)
+         + [Vue d’ensemble](./developing/extensibility/ui/overview.md)
          + [Projet de console Adobe Developer](./developing/extensibility/ui/adobe-developer-console-project.md)
          + [Initialisation de l’application](./developing/extensibility/ui/app-initialization.md)
          + [Enregistrer l’extension](./developing/extensibility/ui/extension-registration.md)
@@ -71,7 +71,7 @@ ht-degree: 85%
          + [Vérifier](./developing/extensibility/ui/verify.md)
          + [Déployer](./developing/extensibility/ui/deploy.md)
          + Fragments de contenu{#content-fragments}
-            + [Présentation](./developing/extensibility/ui/content-fragments/overview.md)
+            + [Vue d’ensemble](./developing/extensibility/ui/content-fragments/overview.md)
             + Exemples{#examples}
                + [Génération d’images AI](./developing/extensibility/ui/content-fragments/examples/console-image-generation-and-image-upload.md)
                + [Mise à jour de propriété en bloc](./developing/extensibility/ui/content-fragments/examples/console-bulk-property-update.md)
@@ -99,12 +99,13 @@ ht-degree: 85%
       + [Principes de base des configurations OSGi](./developing/osgi-services/configurations.md)
       + [Configurations OSGi à l’aide d’OCD](./developing/osgi-services/configurations-ocd.md)
    + Avancé{#advanced}
-      + [API d’images optimisées pour le web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
-      + [Utilisateurs et utilisatrices de service](./developing/advanced/service-users.md)
-      + [Espaces de noms personnalisés](./developing/advanced/custom-namespaces.md)
       + [Mettre en cache des variantes de page](./developing/advanced/variant-caching.md)
+      + [Protection CSRF](./developing/advanced/csrf-protection.md)
+      + [Espaces de noms personnalisés](./developing/advanced/custom-namespaces.md)
+      + [Utilisateurs et utilisatrices de service](./developing/advanced/service-users.md)
+      + [API d’images optimisées pour le web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
    + Environnement de développement rapide{#rde}
-      + [Présentation](./developing/rde/overview.md)
+      + [Vue d’ensemble](./developing/rde/overview.md)
       + [Configuration](./developing/rde/how-to-setup.md)
       + [Utilisation](./developing/rde/how-to-use.md)
       + [Cycle de vie du développement](./developing/rde/development-life-cycle.md)
