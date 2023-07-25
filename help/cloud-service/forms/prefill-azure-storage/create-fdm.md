@@ -1,0 +1,31 @@
+---
+title: Créer un modèle de données de formulaire avec stockage Azure
+description: Intégration d’AEM Forms CS au stockage Azure à l’aide du modèle de données de formulaire
+feature: Adaptive Forms
+type: Documentation
+role: Developer
+level: Beginner
+version: Cloud Service
+topic: Integrations
+kt: 13717
+source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+workflow-type: tm+mt
+source-wordcount: '82'
+ht-degree: 6%
+
+---
+
+# Création de l’intégration avec Azure Storage
+
+L’étape suivante consiste à créer l’intégration entre AEM Forms CS et Azure Storage à l’aide du modèle de données de formulaire.
+La vidéo suivante vous guide tout au long des étapes nécessaires à la création de l’intégration.
+
+>[!VIDEO](https://video.tv.adobe.com/v/335385?quality=12&learn=on)
+
+Pour les besoins de ce tutoriel, un modèle de données de formulaire appelé SaveAndRetrieveFromAzurePortal a été créé avec une entité appelée CreditApplications.
+![fdm-entity](./assets/fdm-entity.png)
+
+## Étapes suivantes
+
+[Créer un formulaire adaptatif](./create-af.md)
+
