@@ -11,14 +11,16 @@ thumbnail: KT-13464.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 2b72c282-bce8-4f2a-bce6-f2f31e96ec88
-source-git-commit: 6f537a0c7605b96f6c6b43ff8c5bf634369171cc
+source-git-commit: 6a82bbb2bbfc95e3292735ac8490eecd5e7ddb84
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '418'
 ht-degree: 1%
 
 ---
 
 # Ajout d’un bouton personnalisé à la barre d’outils de l’éditeur de texte enrichi (RTE)
+
+Découvrez comment ajouter un bouton personnalisé à la barre d’outils de l’éditeur de texte enrichi (RTE) dans l’éditeur de fragments de contenu AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420768?quality=12&learn=on)
 
@@ -30,7 +32,7 @@ Cet exemple montre comment insérer une note ou un conseil en surbrillance à l�
 
 ## Point d’extension
 
-Cet exemple s’étend au point d’extension `rte` pour ajouter un bouton personnalisé à la barre d’outils de l’éditeur de fragment de contenu.
+Cet exemple étend au point d’extension `rte` pour ajouter un bouton personnalisé à la barre d’outils de l’éditeur de fragment de contenu.
 
 | Interface utilisateur AEM étendue | Point d’extension |
 | ------------------------ | --------------------- | 
@@ -47,11 +49,11 @@ Le code indique comment ajouter le bouton personnalisé à l’aide d’une icô
 `ExtensionRegistration.js`, mappé à l’itinéraire index.html, est le point d’entrée de l’extension AEM et définit :
 
 + Définition du bouton de barre d’outils de l’éditeur de texte enrichi dans `getCustomButtons()` fonction avec `id, tooltip and icon` attributs.
-+ Le gestionnaire de clics du bouton, dans la variable `onClick()` fonction .
++ Le gestionnaire de clics du bouton, dans la variable `onClick()` de la fonction
 + La fonction de gestionnaire de clics reçoit la `state` comme argument pour obtenir le contenu de l’éditeur de texte enrichi au format HTML ou texte. Cependant, dans cet exemple, il n’est pas utilisé.
-+ La fonction click handler renvoie un tableau d’instructions. Ce tableau comporte un objet avec `type` et `value` attributs. Pour insérer le contenu, le `value` Attribut le fragment de code de HTML, le `type` utilise l’attribut `insertContent`. Si un cas pratique de remplacement du contenu est présent, utilisez le cas suivant : `replaceContent` type d’instruction.
++ La fonction click handler renvoie un tableau d’instructions. Ce tableau comporte un objet avec `type` et `value` attributs. Pour insérer le contenu, la variable `value` Attribut le fragment de code de HTML, le `type` utilise l’attribut `insertContent`. Si un cas pratique de remplacement du contenu est présent, utilisez le cas suivant : `replaceContent` type d’instruction.
 
-Le `insertContent` value est une chaîne de HTML, `<div class=\"cmp-contentfragment__element-tip\"><div>TIP</div><div>Add your tip text here...</div></div>`. Classes CSS `cmp-contentfragment__element-tip` utilisé pour afficher la valeur ne sont pas définis dans le widget, mais plutôt implémentés sur l’expérience web sur laquelle ce champ Fragment de contenu s’affiche.
+La variable `insertContent` value est une chaîne de HTML, `<div class=\"cmp-contentfragment__element-tip\"><div>TIP</div><div>Add your tip text here...</div></div>`. Classes CSS `cmp-contentfragment__element-tip` utilisé pour afficher la valeur ne sont pas définis dans le widget, mais plutôt implémentés sur l’expérience web sur laquelle ce champ Fragment de contenu s’affiche.
 
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`

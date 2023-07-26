@@ -11,14 +11,16 @@ thumbnail: KT-13465.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: be4c0a6a-5c1f-4408-9ac6-56b8f0653d42
-source-git-commit: 9c8c03df7c510ab697d5222f9dffd5111519b712
+source-git-commit: 6a82bbb2bbfc95e3292735ac8490eecd5e7ddb84
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
 
 # Ajout de widgets à l’éditeur de texte enrichi (RTE)
+
+Découvrez comment ajouter des widgets à l’éditeur de texte enrichi (RTE) dans l’éditeur de fragment de contenu AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420822?quality=12&learn=on)
 
@@ -26,7 +28,7 @@ Pour ajouter du contenu dynamique dans l’éditeur de texte enrichi (RTE), la v
 
 En règle générale, les widgets sont utilisés pour insérer le contenu dynamique avec une dépendance système externe ou qui peut changer en fonction du contexte actuel.
 
-Le **widgets** sont ajoutés au **RTE** dans l’éditeur de fragment de contenu à l’aide de la méthode `rte` point d’extension. Utilisation `rte` point d’extension `getWidgets()` Un ou plusieurs widgets sont ajoutés. Elles sont déclenchées en appuyant sur la fonction `{` clé spéciale pour ouvrir l’option de menu contextuel, puis sélectionnez le widget souhaité pour charger l’interface utilisateur de la boîte de dialogue personnalisée.
+La variable **widgets** sont ajoutés au **RTE** dans l’éditeur de fragment de contenu à l’aide de la méthode `rte` point d’extension. Utilisation `rte` point d’extension `getWidgets()` Un ou plusieurs widgets sont ajoutés. Elles sont déclenchées en appuyant sur la fonction `{` clé spéciale pour ouvrir l’option de menu contextuel, puis sélectionnez le widget souhaité pour charger l’interface utilisateur de la boîte de dialogue personnalisée.
 
 Cet exemple montre comment ajouter un widget appelé _Liste des codes de réduction_ pour rechercher, sélectionner et ajouter le code de remise spécifique à l’aventure WKND dans un contenu d’éditeur de texte enrichi. Ces codes de remise peuvent être gérés dans un système externe tel que le système de gestion des commandes (OMS), la gestion des informations sur les produits (PIM), une application locale ou une action Adobe AppBuilder.
 
@@ -34,7 +36,7 @@ Pour simplifier les choses, cet exemple utilise la méthode [Adobe React Spectru
 
 ## Point d’extension
 
-Cet exemple s’étend au point d’extension `rte` pour ajouter un widget à l’éditeur de texte enrichi dans l’éditeur de fragment de contenu.
+Cet exemple étend au point d’extension `rte` pour ajouter un widget à l’éditeur de texte enrichi dans l’éditeur de fragment de contenu.
 
 | Interface utilisateur AEM étendue | Point d’extension |
 | ------------------------ | --------------------- | 
@@ -51,7 +53,7 @@ Les auteurs de contenu WKND peuvent rechercher, sélectionner et ajouter le code
 `ExtensionRegistration.js`, mappé à l’itinéraire index.html, est le point d’entrée de l’extension AEM et définit :
 
 + Définition du widget dans `getWidgets()` fonction avec `id, label and url` attributs.
-+ Le `url` valeur d’attribut, un chemin d’URL relatif (`/index.html#/discountCodes`) pour charger l’interface utilisateur de la boîte de dialogue.
++ La variable `url` valeur d’attribut, un chemin d’URL relatif (`/index.html#/discountCodes`) pour charger l’interface utilisateur de la boîte de dialogue.
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -111,13 +113,13 @@ Dans le composant React principal `App.js`, ajoutez le `discountCodes` itinérai
 
 ### Créer `DiscountCodes` Composant React{#create-widget-react-component}
 
-L’interface utilisateur du widget ou de la boîte de dialogue est créée à l’aide de la fonction [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) framework. Le `DiscountCodes` le code de composant est le suivant : voici les principales caractéristiques :
+L’interface utilisateur du widget ou de la boîte de dialogue est créée à l’aide de la fonction [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) framework. La variable `DiscountCodes` le code de composant est le suivant : voici les principales caractéristiques :
 
 + L’interface utilisateur est rendue à l’aide des composants React Spectrum, tels que [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [Bouton](https://react-spectrum.adobe.com/react-spectrum/Button.html)
-+ Le `adventureDiscountCodes` a un mappage codé en dur du nom de l’aventure et du code de réduction. Dans un scénario réel, ces données peuvent être récupérées à partir de l’action AppBuilder Adobe ou de systèmes externes tels que PIM, OMS ou une passerelle API locale ou basée sur un fournisseur de cloud.
-+ Le `guestConnection` est initialisé à l’aide de la fonction `useEffect` [React hook](https://react.dev/reference/react/useEffect) et géré en tant qu’état du composant. Il est utilisé pour communiquer avec l’hôte AEM.
-+ Le `handleDiscountCodeChange` récupère le code de réduction du nom de l’aventure sélectionnée et met à jour la variable d’état.
-+ Le `addDiscountCode` fonction utilisant `guestConnection` fournit des instructions d’exécution d’éditeur de texte enrichi. Dans ce cas `insertContent` code d’instruction et de HTML du code de remise réel à insérer dans l’éditeur de texte enrichi.
++ La variable `adventureDiscountCodes` a un mappage codé en dur du nom de l’aventure et du code de réduction. Dans un scénario réel, ces données peuvent être récupérées à partir de l’action AppBuilder Adobe ou de systèmes externes tels que PIM, OMS ou une passerelle API locale ou basée sur un fournisseur de cloud.
++ La variable `guestConnection` est initialisé à l’aide de la fonction `useEffect` [React hook](https://react.dev/reference/react/useEffect) et géré en tant qu’état du composant. Il est utilisé pour communiquer avec l’hôte AEM.
++ La variable `handleDiscountCodeChange` récupère le code de réduction du nom de l’aventure sélectionnée et met à jour la variable d’état.
++ La variable `addDiscountCode` fonction utilisant `guestConnection` fournit des instructions d’exécution de l’éditeur de texte enrichi. Dans ce cas `insertContent` code d’instruction et de HTML du code de remise réel à insérer dans l’éditeur de texte enrichi.
 
 `src/aem-cf-editor-1/web-src/src/components/DiscountCodes.js`
 
