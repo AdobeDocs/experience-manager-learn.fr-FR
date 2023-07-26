@@ -1,6 +1,6 @@
 ---
-title: Personnalisation AEM sans affichage et Target
-description: Ce tutoriel explique comment AEM fragments de contenu sont exportés vers Adobe Target, puis utilisés pour personnaliser les expériences sans interface à l’aide du SDK Web Adobe.
+title: Intégration d’AEM sans affichage et de Target
+description: Découvrez comment intégrer AEM sans affichage et Adobe Target pour personnaliser les expériences sans affichage à l’aide du SDK Web Experience Platform.
 version: Cloud Service
 feature: Content Fragments, Integrations
 topic: Personalization, Headless
@@ -10,30 +10,32 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-09T00:00:00Z
 jira: KT-12433
 thumbnail: KT-12433.jpeg
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="AEM sans affichage as a Cloud Service" before-title="false"
 exl-id: 60a3e18a-090f-4b0e-8ba0-d4afd30577dd
-source-git-commit: d81c66e041abbd56e7115f37732550cf10e59359
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1679'
 ht-degree: 2%
 
 ---
 
-# Personnalisation AEM expériences sans affichage avec des fragments de contenu
+# Intégration d’AEM sans affichage et de Target
 
-Ce tutoriel explique comment AEM fragments de contenu sont exportés vers Adobe Target, puis utilisés pour personnaliser les expériences sans interface à l’aide du SDK Web Adobe. Le [React WKND App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) est utilisé pour découvrir comment ajouter à l’expérience une activité Target personnalisée à l’aide d’offres de fragments de contenu, afin de promouvoir une aventure WKND.
+Découvrez comment intégrer AEM sans affichage à Adobe Target en exportant AEM fragments de contenu vers Adobe Target et en les utilisant pour personnaliser les expériences sans affichage à l’aide du fichier alloy.js du SDK web Adobe Experience Platform. Le [React WKND App](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) est utilisé pour découvrir comment ajouter à l’expérience une activité Target personnalisée à l’aide d’offres de fragments de contenu, afin de promouvoir une aventure WKND.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
 
 Le tutoriel décrit les étapes à suivre pour configurer AEM et Adobe Target :
 
 1. [Création d’une configuration Adobe IMS pour Adobe Target](#adobe-ims-configuration) dans AEM Author
-1. [Création d’un Cloud Service Adobe Target](#adobe-target-cloud-service) dans AEM Author
-1. [Application du Cloud Service Adobe Target aux dossiers AEM Assets](#configure-asset-folders) dans AEM Author
-1. [Autorisation du Cloud Service Adobe Target](#permission) dans Adobe Admin Console
-1. [Exportation de fragments de contenu](#export-content-fragments) de l’auteur AEM à Target
-1. [Création d’une activité à l’aide d’offres de fragments de contenu](#activity) dans Adobe Target
-1. [Création d’un flux de données Experience Platform](#datastream-id) dans Experience Platform
-1. [Intégration de la personnalisation dans une application AEM React sans affichage](#code) à l’aide du SDK Web Adobe.
+2. [Création d’un Cloud Service Adobe Target](#adobe-target-cloud-service) dans AEM Author
+3. [Application du Cloud Service Adobe Target aux dossiers AEM Assets](#configure-asset-folders) dans AEM Author
+4. [Autorisation du Cloud Service Adobe Target](#permission) dans Adobe Admin Console
+5. [Exportation de fragments de contenu](#export-content-fragments) de l’auteur AEM à Target
+6. [Création d’une activité à l’aide d’offres de fragments de contenu](#activity) dans Adobe Target
+7. [Création d’un flux de données Experience Platform](#datastream-id) dans Experience Platform
+8. [Intégration de la personnalisation dans une application AEM React sans affichage](#code) à l’aide du SDK Web Adobe.
 
 ## Configuration Adobe IMS{#adobe-ims-configuration}
 
@@ -197,7 +199,7 @@ Ce tutoriel explique comment personnaliser une application React simple à l’a
 
 Les expériences mobiles Android™ et iOS peuvent être personnalisées en suivant des modèles similaires à l’aide de la variable [SDK Mobile d’Adobe](https://developer.adobe.com/client-sdks/documentation/).
 
-### Prérequis
+### Conditions préalables
 
 + Node.js 14
 + Git

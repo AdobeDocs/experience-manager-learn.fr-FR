@@ -7,12 +7,15 @@ role: Developer
 level: Beginner, Intermediate
 version: Cloud Service
 feature: Adaptive Forms
-topic: Development
+topic: Integrations, Development
 kt: 12557
-source-git-commit: 672941b4047bb0cfe8c602e3b1ab75866c10216a
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
+exl-id: 9982e041-fff7-4be6-91c9-e322d2fd3e01
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 0%
+source-wordcount: '232'
+ht-degree: 5%
 
 ---
 
@@ -51,3 +54,7 @@ Les variables Adobe Analytics - Set sont configurées comme suit.
 ![form-submit-rule-set-variables](assets/form-submit-set-variable.png)
 
 Lorsque vous êtes prêt à tester votre code de balises,[publier les modifications apportées aux balises ;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html) à l’aide du flux de publication.
+
+## Étapes suivantes
+
+[Tester la solution](./test.md)

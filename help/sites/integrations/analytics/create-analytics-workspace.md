@@ -9,10 +9,11 @@ level: Intermediate
 kt: 6409
 thumbnail: KT-6296.jpg
 exl-id: b5722fe2-93bf-4b25-8e08-4cb8206771cb
+badgeIntegration: label="Intégration" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
-source-git-commit: 5a8d3983a22df4e273034c8d8441b31e6bc764ba
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2162'
 ht-degree: 1%
 
 ---
@@ -46,7 +47,7 @@ Vous trouverez ci-dessous les variables Analytics actuellement suivies :
 1. Créez un [Projet Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) pour analyser les données à l’aide d’outils qui vous permettent de créer, d’analyser et de partager rapidement des informations.
 1. Partagez le projet Analysis Workspace avec d’autres membres de l’équipe.
 
-## Prérequis
+## Conditions préalables
 
 Ce tutoriel est une suite de [Suivi des composants cliqués avec Adobe Analytics](./track-clicked-component.md) et suppose que vous avez :
 
@@ -152,12 +153,10 @@ Créez ensuite un tableau pour créer une représentation visuelle de la manièr
 1. Divisons la page en fonction de son type de modèle. Sélectionnez la mesure de modèle de page à partir de composants, puis faites glisser-déposez la mesure Modèle de page sur la dimension Nom de page . Vous pouvez désormais afficher le nom de la page ventilé selon son type de modèle.
 
    * **Avant**
-
-      ![eVar5](assets/create-analytics-workspace/evar5.png)
+     ![eVar5](assets/create-analytics-workspace/evar5.png)
 
    * **Après**
-
-      ![Mesures eVar5](assets/create-analytics-workspace/evar5-metrics.png)
+     ![Mesures eVar5](assets/create-analytics-workspace/evar5-metrics.png)
 
 1. Pour comprendre comment les utilisateurs interagissent avec les boutons CTA lorsqu’ils se trouvent sur les pages du site WKND, une ventilation plus détaillée en ajoutant la mesure ID de bouton (eVar8) est nécessaire.
 
@@ -244,11 +243,9 @@ Téléchargeons ensuite le modèle de classification pour la variable d’identi
 1. Dans l’outil de recherche de composant, recherchez **Boutons CTA WKND** et faites glisser le **Boutons CTA WKND (Id De Bouton)** sur la mesure Id de bouton et remplacez-la.
 
    * **Avant**
-
-      ![Bouton Espace de travail avant](assets/create-analytics-workspace/wknd-button-before.png)
+     ![Bouton Espace de travail avant](assets/create-analytics-workspace/wknd-button-before.png)
    * **Après**
-
-      ![Bouton Espace de travail après](assets/create-analytics-workspace/wknd-button-after.png)
+     ![Bouton Espace de travail après](assets/create-analytics-workspace/wknd-button-after.png)
 
 1. Vous pouvez remarquer que la mesure d’identifiant de bouton qui contenait l’identifiant de bouton d’un bouton CTA (Appel à l’action) est désormais remplacée par un nom correspondant fourni dans le modèle de classification.
 1. Comparons le tableau de l’espace de travail Analytics à la page d’accueil WKND et comprenons le nombre de clics sur le bouton CTA et son analyse. Selon les données du tableau à structure libre de l’espace de travail, il est clair que 22 fois que les utilisateurs ont cliqué sur la variable **SKI MAINTENANT** Bouton et quatre fois pour la campagne de la page d’accueil WKND en Australie occidentale **En savoir plus** bouton .

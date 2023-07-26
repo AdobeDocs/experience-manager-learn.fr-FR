@@ -8,10 +8,11 @@ role: Developer
 level: Intermediate
 kt: 6296
 thumbnail: KT-6296.jpg
+badgeIntegration: label="Intégration" type="positive"
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
-source-git-commit: 5a8d3983a22df4e273034c8d8441b31e6bc764ba
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1886'
 ht-degree: 3%
 
 ---
@@ -36,7 +37,7 @@ L’équipe marketing WKND s’intéresse à savoir laquelle `Call to Action (CT
 1. Filtrez les différents événements par type de ressource de composant.
 1. Définissez l’identifiant du composant et envoyez un événement à Adobe Analytics avec la balise de lien de suivi.
 
-## Prérequis
+## Conditions préalables
 
 Ce tutoriel est une suite [Collecte de données de page avec Adobe Analytics](./collect-data-analytics.md) et suppose que vous avez :
 

@@ -1,33 +1,34 @@
 ---
-title: Intégration d’Adobe Experience Manager à Adobe Target
-seo-title: An article covering different ways to integrate Adobe Experience Manager(AEM) with Adobe Target for delivering personalized content.
+title: Intégration d’AEM Sites à Adobe Target
+seo-title: An article covering different ways to integrate Adobe Experience Manager (AEM) Sites with Adobe Target for delivering personalized content.
 description: Article décrivant comment configurer Adobe Experience Manager avec Adobe Target pour différents scénarios.
 seo-description: An article covering how to set up Adobe Experience Manager with Adobe Target for different scenarios.
 feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 54a30cd9-d94a-4de5-82a1-69ab2263980d
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '661'
 ht-degree: 5%
 
 ---
 
-# Intégration d’Adobe Experience Manager à Adobe Target
+# Intégration d’AEM Sites à Adobe Target
 
-Dans cette section, nous allons discuter de la configuration d’Adobe Experience Manager avec Adobe Target pour différents scénarios. Selon votre scénario et les exigences de votre organisation.
+Dans cette section, nous allons discuter de la configuration d’Adobe Experience Manager Sites avec Adobe Target pour différents scénarios. Selon votre scénario et les exigences de votre organisation.
 
 * **Ajout de la bibliothèque JavaScript Adobe Target (obligatoire pour tous les scénarios)**
-Pour les sites hébergés sur AEM, vous pouvez ajouter des bibliothèques Target à votre site à l’aide de : [Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html). Launch offre un moyen simple de déployer et de gérer toutes les balises nécessaires pour offrir des expériences client pertinentes.
+Pour les sites hébergés sur AEM, vous pouvez ajouter des bibliothèques Target à votre site à l’aide de : [Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr). Launch offre un moyen simple de déployer et de gérer toutes les balises nécessaires pour offrir des expériences client pertinentes.
 * **Ajout des Cloud Services Adobe Target (requis pour le scénario Fragments d’expérience)**
-Pour les clients AEM qui souhaitent utiliser les offres de fragments d’expérience pour créer une activité dans Adobe Target, vous devez intégrer Adobe Target à AEM à l’aide des Cloud Services hérités. Cette intégration est nécessaire pour transmettre les fragments d’expérience d’AEM à Target en tant qu’offres HTML/JSON et pour que les offres restent synchronisées avec AEM. 
-*Cette intégration est requise pour la mise en oeuvre du scénario 1.*
+Pour les clients AEM qui souhaitent utiliser les offres de fragments d’expérience pour créer une activité dans Adobe Target, vous devez intégrer Adobe Target à AEM à l’aide des Cloud Services hérités. Cette intégration est nécessaire pour transmettre les fragments d’expérience d’AEM à Target en tant qu’offres HTML/JSON et pour que les offres restent synchronisées avec AEM. *Cette intégration est requise pour la mise en oeuvre du scénario 1.*
 
-## Prérequis
+## Conditions préalables
 
-* **Adobe Experience Manager (AEM){#aem}**
+* **Adobe Experience Manager (AEM){#aem}**
    * AEM 6.5 (*Le dernier Service Pack est recommandé*)
    * Télécharger AEM packages de site de référence WKND
       * [aem-guides-wknd.ui.apps-0.0.1-SNAPSHOT.zip](https://github.com/adobe/aem-guides-wknd/releases/download/archetype-18.1/aem-guides-wknd.ui.apps-0.0.1-SNAPSHOT.zip)
@@ -35,7 +36,7 @@ Pour les clients AEM qui souhaitent utiliser les offres de fragments d’expéri
       * [Composants principaux](https://github.com/adobe/aem-core-wcm-components/releases/download/core.wcm.components.reactor-2.5.0/core.wcm.components.all-2.5.0.zip)
       * [Couche de données numérique](assets/implementation/digital-data-layer.zip)
 
-* **Experience Cloud**
+* **Experience Cloud**
    * Accès à vos organisations Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud fourni avec les solutions suivantes
       * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)

@@ -5,15 +5,17 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
-source-git-commit: 2f02a4e202390434de831ce1547001b2cef01562
-workflow-type: ht
-source-wordcount: '840'
-ht-degree: 100%
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+workflow-type: tm+mt
+source-wordcount: '842'
+ht-degree: 99%
 
 ---
 
-# Prise en main d’AEM et d’Adobe Target {#getting-started-with-aem-target}
+# Intégration d’AEM Sites et d’Adobe Target {#getting-started-with-aem-target}
 
 AEM et Target sont deux solutions puissantes offrant des fonctionnalités qui peuvent sembler redondantes. Les clientes et clients ont parfois du mal à comprendre comment et quand utiliser ces produits conjointement pour offrir une expérience personnalisée. Pour offrir une expérience optimisée à chaque utilisateur final ou utilisatrice finale, les différentes équipes de votre organisation doivent travailler en étroite collaboration et définir les tâches de chacun et chacune.
 
@@ -38,7 +40,7 @@ Les **Fragments d’expérience** représentent un énorme pas en avant permetta
 * Target utilise le balisage de Fragment d’expérience d’AEM comme offres dans les Activities.
 * Target diffuse le HTML de Fragment d’expérience et AEM fournit des images référencées.
 
-   ![Personnalisation à l’aide du diagramme de Fragments d’expérience.](assets/personalization-use-case-1/use-case-1-diagram.png)
+  ![Personnalisation à l’aide du diagramme de Fragments d’expérience.](assets/personalization-use-case-1/use-case-1-diagram.png)
 
 **Pour implémenter ce scénario, vous devez effectuer les actions suivantes :**
 
@@ -59,7 +61,7 @@ Le compositeur d’expérience visuelle est l’une des principales fonctionnali
 * Le nouveau contenu réseau est créé à l’aide du compositeur d’expérience visuelle d’Adobe Target.
 * S’applique aux sites hébergés par AEM et aux autres sites.
 
-   ![Personnalisation à l’aide du diagramme du compositeur d’expérience visuelle.](assets/personalization-use-case-3/use-case-diagram-3.png)
+  ![Personnalisation à l’aide du diagramme du compositeur d’expérience visuelle.](assets/personalization-use-case-3/use-case-diagram-3.png)
 
 **Pour implémenter ce scénario, vous devez effectuer l’action suivante :**
 
@@ -77,7 +79,7 @@ L’intégration d’Adobe Experience Manager à Adobe Target vous permet de 
 * Aucun nouveau contenu réseau n’est créé ici.
 * S’applique aux sites AEM et aux autres sites.
 
-   ![Diagramme.](assets/personalization-use-case-2/use-case-2-diagram.png)
+  ![Diagramme.](assets/personalization-use-case-2/use-case-2-diagram.png)
 
 **Pour implémenter ce scénario, vous devez effectuer l’action suivante :**
 

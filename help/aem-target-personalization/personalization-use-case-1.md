@@ -7,11 +7,13 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 47446e2a-73d1-44ba-b233-fa1b7f16bc76
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 1%
+source-wordcount: '1694'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +23,7 @@ Grâce à la possibilité d’exporter des fragments d’expérience AEM vers Ad
 
 AEM rassemble l’ensemble de votre contenu et de vos ressources à un emplacement central afin d’alimenter votre stratégie de personnalisation. AEM vous permet de créer facilement du contenu pour les ordinateurs de bureau, les tablettes et les appareils mobiles à un seul emplacement sans devoir écrire de code. Il n’est pas nécessaire de créer des pages pour chaque appareil : AEM ajuste automatiquement chaque expérience à l’aide de votre contenu.
 
-Target vous permet de proposer des expériences personnalisées à grande échelle en fonction d’une combinaison d’approches d’apprentissage automatique basées sur des règles et basées sur l’IA qui intègrent des variables comportementales, contextuelles et hors ligne.  Avec Target, vous pouvez facilement configurer et exécuter des activités A/B et multivariées (MVT) afin de déterminer les meilleures offres, contenus et expériences.
+Target vous permet de proposer des expériences personnalisées à grande échelle en fonction d’une combinaison d’approches d’apprentissage automatique basées sur des règles et basées sur l’IA qui intègrent des variables comportementales, contextuelles et hors ligne.  Avec Target, vous pouvez facilement configurer et exécuter des activités A/B et multivariées (MVT) afin de déterminer les offres, expériences et contenus les mieux adaptés.
 
 Les fragments d’expérience représentent un énorme pas en avant pour lier les créateurs de contenu aux marketeurs qui génèrent des résultats commerciaux à l’aide de Target.
 
@@ -36,11 +38,11 @@ Pour cet exercice, les utilisateurs suivants doivent être impliqués et effectu
 * **Producteur de contenu/éditeur de contenu** (Adobe Experience Manager)
 * **Marketer** (Adobe Target/équipe d’optimisation)
 
-### Prérequis
+### Conditions préalables
 
-* **AEM **
+* **AEM**
    * [AEM instance de création et de publication](./implementation.md#getting-aem) s’exécutant sur localhost 4502 et 4503, respectivement.
-* **Experience Cloud**
+* **Experience Cloud**
    * Accès à vos organisations Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud fourni avec les solutions suivantes
       * [Adobe Target](https://experiencecloud.adobe.com)

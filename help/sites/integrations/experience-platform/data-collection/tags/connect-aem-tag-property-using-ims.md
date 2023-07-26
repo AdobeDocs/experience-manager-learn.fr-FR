@@ -1,6 +1,6 @@
 ---
-title: Connexion d’AEM avec la propriété de balise à l’aide d’IMS
-description: Découvrez comment connecter AEM avec la propriété de balise à l’aide de la configuration IMS dans AEM. Cette configuration authentifie AEM avec l’API Launch et permet à AEM de communiquer via les API Launch pour accéder aux propriétés de balise.
+title: Connexion d’AEM Sites à la propriété de balise à l’aide d’IMS
+description: Découvrez comment connecter AEM Sites à la propriété de balise à l’aide de la configuration IMS dans AEM. Cette configuration authentifie AEM avec l’API Launch et permet à AEM de communiquer via les API Launch pour accéder aux propriétés de balise.
 topics: integrations
 audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
@@ -12,15 +12,17 @@ topic: Integrations
 feature: Integrations
 role: Developer
 level: Intermediate
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 92dbd185-bad4-4a4d-b979-0d8f5d47c54b
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '313'
 ht-degree: 2%
 
 ---
 
-# Connexion d’AEM avec la propriété de balise à l’aide d’IMS{#connect-aem-and-tag-property-using-ims}
+# Connexion d’AEM Sites à la propriété de balise à l’aide d’IMS{#connect-aem-and-tag-property-using-ims}
 
 >[!NOTE]
 >

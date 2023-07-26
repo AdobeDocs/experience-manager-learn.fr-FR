@@ -4,7 +4,6 @@ description: Découvrez comment créer une activité Target pour rediriger vos p
 topics: integrations, authoring, personalization, activity, offers
 audience: all
 doc-type: feature video
-activity: use
 version: Cloud Service
 kt: 6353
 thumbnail: 6353-personalization-web-page.jpg
@@ -12,10 +11,12 @@ topic: Integrations
 feature: Integrations
 role: Developer
 level: Intermediate
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2d201b48-c0fb-4bb4-a7d8-da9f4702e9ff
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '470'
 ht-degree: 4%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 4%
 
 Découvrez comment créer une activité pour rediriger les pages de votre site hébergées sur AEM vers une nouvelle page à l’aide d’Adobe Target.
 
-## Prérequis
+## Conditions préalables
 
 Pour personnaliser les pages complètes d’un site web AEM, la configuration suivante doit être effectuée :
 

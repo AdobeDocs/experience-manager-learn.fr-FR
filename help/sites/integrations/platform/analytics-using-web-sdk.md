@@ -1,6 +1,6 @@
 ---
-title: Intégration d’Adobe Analytics à l’aide du SDK Web Platform
-description: Découvrez l’approche moderne de l’intégration d’Adobe Experience Manager (AEM) et d’Adobe Analytics à l’aide du SDK Web Platform. Ce tutoriel vous guide tout au long de la collecte de données de clics CTA et de pages vues pour obtenir des informations sur les données dans Adobe Analytics Workspace.
+title: Intégration d’AEM Sites et d’Adobe Analytics au SDK Web de Platform
+description: Intégrez AEM Sites et Adobe Analytics à l’aide de l’approche SDK Web Platform moderne.
 version: Cloud Service
 feature: Integrations
 topic: Integrations, Architecture
@@ -10,19 +10,21 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-25T00:00:00Z
 jira: KT-13328
 thumbnail: KT-13328.jpeg
-source-git-commit: 542313c0da6f5eab5befe0da1b80ab38948156ac
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+exl-id: 9f54995f-4ce7-45f2-9021-6fdfe42ff89a
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1637'
 ht-degree: 3%
 
 ---
 
-
-# Intégration d’Adobe Analytics à l’aide du SDK Web Platform
+# Intégration d’AEM Sites et d’Adobe Analytics au SDK Web de Platform
 
 En savoir plus **approche moderne** sur l’intégration d’Adobe Experience Manager (AEM) et d’Adobe Analytics à l’aide du SDK Web Platform. Ce tutoriel complet vous guide tout au long du processus de collecte transparente [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) données pageview et CTA click. Obtenez des informations précieuses en visualisant les données collectées dans Adobe Analysis Workspace, où vous pouvez explorer diverses mesures et dimensions. Explorez également le jeu de données Platform pour vérifier et analyser les données. Rejoignez-nous sur ce parcours pour exploiter la puissance d’AEM et d’Adobe Analytics pour une prise de décision basée sur les données.
 
-## Présentation
+## Vue d’ensemble
 
 L’obtention d’informations sur le comportement des utilisateurs est un objectif essentiel pour chaque équipe marketing. En comprenant comment les utilisateurs interagissent avec leur contenu, les équipes peuvent prendre des décisions éclairées, optimiser des stratégies et générer de meilleurs résultats. L’équipe marketing WKND, une entité fictive, a défini ses objectifs en mettant en oeuvre Adobe Analytics sur son site web pour atteindre cet objectif. L’objectif Principal est de collecter des données sur deux mesures clés : pageviews et clics CTA (Appel à l’action de la page d’accueil).
 
@@ -31,7 +33,7 @@ En suivant les pages vues, l’équipe peut analyser les pages qui reçoivent le
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419872?quality=12&learn=on)
 
-## Prérequis
+## Conditions préalables
 
 Les éléments suivants sont requis lors de l’intégration d’Adobe Analytics à l’aide du SDK Web Platform.
 
@@ -272,7 +274,7 @@ En implémentant les étapes recommandées et en utilisant les ressources fourni
 
 + [Intégrer le SDK Web Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform/web-sdk.html)
 + [Utilisation de la couche de données client Adobe avec les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=fr)
-+ [Intégration de balises de collecte de données Experience Platform et d’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
++ [Intégration de balises de collecte de données Experience Platform et d’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr)
 + [SDK web Adobe Experience Platform et présentation du réseau Edge](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [Tutoriels sur la collecte de données](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [Présentation de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

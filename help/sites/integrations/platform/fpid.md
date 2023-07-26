@@ -1,6 +1,6 @@
 ---
-title: Génération de FPID Adobe Experience Platform avec des AEM
-description: Découvrez comment générer ou actualiser les cookies FPID Adobe Experience Platform à l’aide d’AEM.
+title: Génération de FPID Adobe Experience Platform avec AEM Sites
+description: Découvrez comment générer ou actualiser des cookies Adobe Experience Platform FPID à l’aide d’AEM Sites.
 version: Cloud Service
 feature: Integrations, APIs, Dispatcher
 topic: Integrations, Personalization, Development
@@ -9,16 +9,19 @@ level: Beginner
 last-substantial-update: 2022-10-20T00:00:00Z
 kt: 11336
 thumbnail: kt-11336.jpeg
-source-git-commit: aeeed85ec05de9538b78edee67db4d632cffaaab
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+exl-id: 18a22f54-da58-4326-a7b0-3b1ac40ea0b5
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
 
-# Génération de FPID Experience Platform avec AEM
+# Génération de FPID Experience Platform avec AEM Sites
 
-Pour intégrer Adobe Experience Manager (AEM) à Adobe Experience Platform (AEP), AEM doit générer et gérer un cookie FPID (identifiant d’appareil propriétaire unique) afin d’effectuer un suivi unique de l’activité des utilisateurs.
+Pour intégrer Adobe Experience Manager (AEM) Sites à Adobe Experience Platform (AEP), AEM doit générer et gérer un cookie FPID (identifiant d’appareil propriétaire unique) afin de suivre de manière unique l’activité des utilisateurs.
 
 Lisez la documentation de support à la rubrique [découvrez les détails du fonctionnement conjoint des identifiants d’appareil et des identifiants Experience Cloud propriétaires](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=en).
 
@@ -150,7 +153,7 @@ Un script JavaScript personnalisé côté client doit être ajouté à la page p
 
 Ce script JavaScript est généralement ajouté à la page à l’aide de l’une des méthodes suivantes :
 
-+ [Balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
++ [Balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)
 + [Bibliothèque cliente AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/clientlibs.html?lang=en)
 
 L’appel XHR au servlet FPID d’AEM personnalisé est rapide, bien qu’asynchrone, de sorte qu’il est possible pour un utilisateur de consulter une page web diffusée par AEM et de quitter le site avant que la requête ne puisse être terminée.
@@ -203,5 +206,3 @@ Consultez la documentation Experience Platform suivante pour les identifiants d�
 + [Génération d’identifiants d’appareil propriétaires](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html)
 + [Identifiants d’appareil propriétaires dans le SDK Web Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html)
 + [Données d’identité dans le SDK Web Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html)
-
-

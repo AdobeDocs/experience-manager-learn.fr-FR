@@ -7,11 +7,13 @@ kt: 6115
 topic: Development
 role: User
 level: Beginner
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 9aab3eb0-03a5-4962-a2ff-d44a17dc140e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 75%
+source-wordcount: '134'
+ht-degree: 84%
 
 ---
 
@@ -22,3 +24,7 @@ Le service de conversion automatisée de formulaires AEM Forms, optimisé par A
 La vidéo suivante explique les étapes nécessaires pour convertir un formulaire PDF en formulaire adaptatif à l’aide d’Automated forms conversion Service
 
 >[!VIDEO](https://video.tv.adobe.com/v/39495?quality=12&learn=on)
+
+## Étapes suivantes
+
+[Configurer un formulaire adaptatif converti](./configure-converted-adaptive-form.md)

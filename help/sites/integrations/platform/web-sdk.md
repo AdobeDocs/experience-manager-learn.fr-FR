@@ -1,6 +1,6 @@
 ---
-title: Intégrer le SDK Web Experience Platform
-description: Découvrez comment intégrer AEM as a Cloud Service avec le SDK Web Experience Platform. Cette étape essentielle est essentielle pour intégrer des produits Adobe Experience Cloud, tels qu’Adobe Analytics, Target, ou des produits innovants récents tels que Real-time Customer Data Platform, Customer Journey Analytics et Journey Optimizer.
+title: Intégration d’AEM Sites et du SDK Web Experience Platform
+description: Découvrez comment intégrer AEM Sites as a Cloud Service au SDK Web Experience Platform. Cette étape essentielle est essentielle pour intégrer des produits Adobe Experience Cloud, tels qu’Adobe Analytics, Target, ou des produits innovants récents tels que Real-time Customer Data Platform, Customer Journey Analytics et Journey Optimizer.
 version: Cloud Service
 feature: Integrations
 topic: Integrations, Architecture
@@ -10,15 +10,17 @@ doc-type: Tutorial
 last-substantial-update: 2023-04-26T00:00:00Z
 jira: KT-13156
 thumbnail: KT-13156.jpeg
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: b5182d35-ec38-4ffd-ae5a-ade2dd3f856d
-source-git-commit: 32472c8591aeb47a7c6a7253afd7ad9ab0e45171
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 5%
+source-wordcount: '1354'
+ht-degree: 6%
 
 ---
 
-# Intégrer le SDK Web Experience Platform
+# Intégration d’AEM Sites et du SDK Web Experience Platform
 
 Découvrez comment intégrer AEM as a Cloud Service à Experience Platform [SDK Web](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html). Cette étape essentielle est essentielle pour intégrer des produits Adobe Experience Cloud, tels qu’Adobe Analytics, Target, ou des produits innovants récents tels que Real-time Customer Data Platform, Customer Journey Analytics et Journey Optimizer.
 
@@ -26,7 +28,7 @@ Vous apprenez également à collecter et à envoyer [WKND - exemple de projet Ad
 
 Après avoir terminé cette configuration, vous avez mis en oeuvre une base solide. En outre, vous êtes prêt à faire avancer la mise en oeuvre de l’Experience Platform à l’aide d’applications telles que [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html), et [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=fr). L’implémentation avancée permet d’augmenter l’engagement des clients en normalisant les données web et clients.
 
-## Prérequis
+## Conditions préalables
 
 Les éléments suivants sont requis lors de l’intégration du SDK Web Experience Platform.
 
@@ -92,75 +94,75 @@ Lors de la création et de la publication de la bibliothèque de balises à l’
 
 + Le `Page Name` Code d’élément de données.
 
-   ```javascript
-   if(event && event.component && event.component.hasOwnProperty('dc:title')) {
-       // return value of 'dc:title' from the data layer Page object, which is propogated via 'cmp:show` event
-       return event.component['dc:title'];
-   }
-   ```
+  ```javascript
+  if(event && event.component && event.component.hasOwnProperty('dc:title')) {
+      // return value of 'dc:title' from the data layer Page object, which is propogated via 'cmp:show` event
+      return event.component['dc:title'];
+  }
+  ```
 
 + Le `Site Section` Code d’élément de données.
 
-   ```javascript
-   if(event && event.component && event.component.hasOwnProperty('repo:path')) {
-   let pagePath = event.component['repo:path'];
-   
-   let siteSection = '';
-   
-   //Check of html String in URL.
-   if (pagePath.indexOf('.html') > -1) { 
-    siteSection = pagePath.substring(0, pagePath.lastIndexOf('.html'));
-   
-    //replace slash with colon
-    siteSection = siteSection.replaceAll('/', ':');
-   
-    //remove `:content`
-    siteSection = siteSection.replaceAll(':content:','');
-   }
-   
-       return siteSection 
-   }
-   ```
+  ```javascript
+  if(event && event.component && event.component.hasOwnProperty('repo:path')) {
+  let pagePath = event.component['repo:path'];
+  
+  let siteSection = '';
+  
+  //Check of html String in URL.
+  if (pagePath.indexOf('.html') > -1) { 
+   siteSection = pagePath.substring(0, pagePath.lastIndexOf('.html'));
+  
+   //replace slash with colon
+   siteSection = siteSection.replaceAll('/', ':');
+  
+   //remove `:content`
+   siteSection = siteSection.replaceAll(':content:','');
+  }
+  
+      return siteSection 
+  }
+  ```
 
 + Le `Host Name` Code d’élément de données.
 
-   ```javascript
-   if(window && window.location && window.location.hostname) {
-       return window.location.hostname;
-   }
-   ```
+  ```javascript
+  if(window && window.location && window.location.hostname) {
+      return window.location.hostname;
+  }
+  ```
 
 + Le `all pages - on load` Code d’événement de règle
 
-   ```javascript
-   var pageShownEventHandler = function(evt) {
-   // defensive coding to avoid a null pointer exception
-   if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
-       //trigger Launch Rule and pass event
-       console.debug("cmp:show event: " + evt.eventInfo.path);
-       var event = {
-           //include the path of the component that triggered the event
-           path: evt.eventInfo.path,
-           //get the state of the component that triggered the event
-           component: window.adobeDataLayer.getState(evt.eventInfo.path)
-       };
-   
-       //Trigger the Launch Rule, passing in the new 'event' object
-       // the 'event' obj can now be referenced by the reserved name 'event' by other Launch data elements
-       // i.e 'event.component['someKey']'
-       trigger(event);
-       }
-   }
-   
-   //set the namespace to avoid a potential race condition
-   window.adobeDataLayer = window.adobeDataLayer || [];
-   
-   //push the event listener for cmp:show into the data layer
-   window.adobeDataLayer.push(function (dl) {
-       //add event listener for 'cmp:show' and callback to the 'pageShownEventHandler' function
-       dl.addEventListener("cmp:show", pageShownEventHandler);
-   });
-   ```
+  ```javascript
+  var pageShownEventHandler = function(evt) {
+  // defensive coding to avoid a null pointer exception
+  if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
+      //trigger Launch Rule and pass event
+      console.debug("cmp:show event: " + evt.eventInfo.path);
+      var event = {
+          //include the path of the component that triggered the event
+          path: evt.eventInfo.path,
+          //get the state of the component that triggered the event
+          component: window.adobeDataLayer.getState(evt.eventInfo.path)
+      };
+  
+      //Trigger the Launch Rule, passing in the new 'event' object
+      // the 'event' obj can now be referenced by the reserved name 'event' by other Launch data elements
+      // i.e 'event.component['someKey']'
+      trigger(event);
+      }
+  }
+  
+  //set the namespace to avoid a potential race condition
+  window.adobeDataLayer = window.adobeDataLayer || [];
+  
+  //push the event listener for cmp:show into the data layer
+  window.adobeDataLayer.push(function (dl) {
+      //add event listener for 'cmp:show' and callback to the 'pageShownEventHandler' function
+      dl.addEventListener("cmp:show", pageShownEventHandler);
+  });
+  ```
 
 +++
 
@@ -177,7 +179,7 @@ Après avoir lié la propriété de balise, le site WKND peut charger la bibliot
 
 ### Vérification du chargement de la propriété de balise sur WKND
 
-Utilisation du débogueur Adobe Experience Platform [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) ou [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) , vérifiez si la propriété de balise se charge sur les pages WKND. Vous pouvez vérifier,
+Utilisation de l’Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) ou [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) , vérifiez si la propriété de balise se charge sur les pages WKND. Vous pouvez vérifier,
 
 + Les détails de propriété de balise tels que l’extension, la version, le nom, etc.
 + Version de la bibliothèque SDK Web de Platform, ID de flux de données
@@ -216,7 +218,7 @@ Très bon travail ! Vous avez terminé la configuration d’AEM avec le SDK web
 ## Ressources supplémentaires
 
 + [Utilisation de la couche de données client Adobe avec les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=fr)
-+ [Intégration de balises de collecte de données Experience Platform et d’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
++ [Intégration de balises de collecte de données Experience Platform et d’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr)
 + [SDK web Adobe Experience Platform et présentation du réseau Edge](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [Tutoriels sur la collecte de données](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
 + [Présentation de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

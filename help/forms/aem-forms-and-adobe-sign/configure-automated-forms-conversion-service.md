@@ -7,11 +7,13 @@ kt: 6114
 topic: Development
 role: Admin
 level: Beginner
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 0715a2cc-c042-4ddc-85a1-7720f420351b
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 59%
+source-wordcount: '264'
+ht-degree: 60%
 
 ---
 
@@ -38,3 +40,7 @@ Pour utiliser le service de conversion automatisée de formulaires, les conditio
 * La vidéo explique les étapes nécessaires pour connecter votre instance AEM Forms locale au service Automated forms conversion sur Adobe Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39493?quality=12&learn=on)
+
+## Étapes suivantes
+
+[Convertir un formulaire PDF en formulaire adaptatif](./convert-pdf-form-into-adaptive-form.md)

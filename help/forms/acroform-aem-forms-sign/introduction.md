@@ -6,10 +6,12 @@ topics: development
 audience: developer
 doc-type: tutorial
 activity: implement
-version: 6.4
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
+version: 6.5
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '257'
 ht-degree: 4%
 
 ---
@@ -23,7 +25,7 @@ Les organisations ont une grande variété de formes. Certains de ces formulaire
 >
 >Si vous utilisez AEM Forms 6.5, utilisez la fonctionnalité d’Automated forms conversion.
 
-## Prérequis
+## Conditions préalables
 
 * AEM Forms 6.3 ou 6.4 installé et configuré
 * Accès à Adobe Acrobat

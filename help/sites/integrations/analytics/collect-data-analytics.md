@@ -1,6 +1,6 @@
 ---
-title: Collecter des données de page avec Adobe Analytics
-description: Utilisez la couche de données client Adobe orientée événement pour collecter des données sur l’activité des utilisateurs sur un site web créé avec Adobe Experience Manager. Découvrez comment utiliser les règles de balise pour écouter ces événements et envoyer des données à une suite de rapports Adobe Analytics.
+title: Intégration d’AEM Sites à Adobe Analytics avec l’extension de balises Adobe Analytics
+description: Intégrez AEM Sites à Adobe Analytics, en utilisant la couche de données client d’Adobe orientée événement pour collecter des données sur l’activité des utilisateurs sur un site web créé avec Adobe Experience Manager. Découvrez comment utiliser les règles de balise pour écouter ces événements et envoyer des données à une suite de rapports Adobe Analytics.
 version: Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
@@ -8,22 +8,23 @@ role: Developer
 level: Intermediate
 kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
+badgeIntegration: label="Intégration" type="positive"
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: 6a5e62a2a897adc421585e79c5f36f6aa759feaa
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '2447'
-ht-degree: 6%
+source-wordcount: '2470'
+ht-degree: 5%
 
 ---
 
-# Collecter des données de page avec Adobe Analytics
+# Intégration d’AEM Sites et d’Adobe Analytics
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch a été rebaptisé en tant que suite de technologies de collecte de données dans Adobe Experience Platform. Plusieurs modifications terminologiques ont par conséquent été apportées à la documentation du produit. Reportez-vous aux [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) pour une référence consolidée des modifications terminologiques.
 
 
-Découvrez comment utiliser les fonctionnalités intégrées de la [Adobe de la couche de données client avec les composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr) pour collecter des données sur une page dans Adobe Experience Manager Sites. [Balises dans Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) et le [Extension Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=fr) sont utilisées pour créer des règles pour envoyer des données de page à Adobe Analytics.
+Découvrez comment intégrer AEM Sites et Adobe Analytics à l’extension de balises Adobe Analytics à l’aide des fonctionnalités intégrées de la [Adobe de la couche de données client avec les composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr) pour collecter des données sur une page dans Adobe Experience Manager Sites. [Balises dans Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) et le [Extension Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=fr) sont utilisées pour créer des règles pour envoyer des données de page à Adobe Analytics.
 
 ## Ce que vous allez construire {#what-build}
 
@@ -37,7 +38,7 @@ Dans ce tutoriel, vous allez déclencher une règle de balise basée sur un év�
 1. Mappage des propriétés de couche de données de page aux éléments de données dans la propriété de balise
 1. Collecte et envoi de données de page dans Adobe Analytics à l’aide de la balise de page vue
 
-## Prérequis
+## Conditions préalables
 
 Les éléments suivants sont requis :
 
@@ -183,7 +184,7 @@ La couche de données client Adobe est une **event** couche de données pilotée
 
    >[!NOTE]
    >
-   > Il peut s’avérer utile d’utiliser la variable [Débogueur Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) pour changer le code incorporé en **Développement** environnement.
+   > Il peut s’avérer utile d’utiliser la variable [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) pour changer le code incorporé en **Développement** environnement.
 
 1. Accédez à votre site AEM et ouvrez les outils de développement pour afficher la console. Actualisez la page. Vous devriez constater que les messages de la console ont été enregistrés :
 

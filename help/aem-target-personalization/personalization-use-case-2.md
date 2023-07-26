@@ -7,10 +7,12 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 53cafd06-3a0a-4995-947d-179146b89234
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '589'
 ht-degree: 2%
 
 ---
@@ -36,12 +38,12 @@ Pour cet exercice, les utilisateurs suivants doivent être impliqués et effectu
 
 ![Scénario 1 AEM](assets/personalization-use-case-2/aem-target-use-case-2.png)
 
-### Prérequis
+### Conditions préalables
 
-* **AEM **
+* **AEM**
    * [AEM instance de création et de publication](./implementation.md#getting-aem) s’exécutant sur localhost 4502 et 4503, respectivement.
    * [AEM intégré à Adobe Target à l’aide d’Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
-* **Experience Cloud**
+* **Experience Cloud**
    * Accès à vos organisations Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud fourni avec les solutions suivantes
       * [Adobe Target](https://experiencecloud.adobe.com)
@@ -57,7 +59,6 @@ Pour cet exercice, les utilisateurs suivants doivent être impliqués et effectu
 1. Le marketeur crée une activité de ciblage A/B avec l’offre de redirection comme expérience et un trafic de site web à 100 % affecté à la nouvelle page d’accueil avec un objectif de succès et des mesures ajoutées.
    1. Dans la fenêtre Adobe Target, accédez à **Activités** .
    2. Cliquez sur **Création d’une activité** et sélectionnez le type d’activité comme **Test A/B**
-
       ![Adobe Target - Création d’une activité](assets/personalization-use-case-2/create-ab-activity.png)
    3. Sélectionnez la **Web** et choisissez le canal **Compositeur d’expérience visuelle**.
    4. Saisissez le **URL d’activité** et cliquez sur **Suivant** pour ouvrir le compositeur d’expérience visuelle.

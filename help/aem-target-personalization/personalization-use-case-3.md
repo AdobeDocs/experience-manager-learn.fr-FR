@@ -7,11 +7,13 @@ feature: Experience Fragments
 topic: Personalization
 role: Developer
 level: Intermediate
+badgeIntegration: label="Intégration" type="positive"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: 1550e6a7-04b5-4a40-9d7b-88074283402f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
+source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 2%
+source-wordcount: '585'
+ht-degree: 3%
 
 ---
 
@@ -34,12 +36,12 @@ Pour cet exercice, les utilisateurs suivants doivent être impliqués et effectu
 
 ![Scénario 1 AEM](assets/personalization-use-case-3/aem-target-use-case-3.png)
 
-### Prérequis
+### Conditions préalables
 
-* **AEM **
+* **AEM**
    * [AEM instance de publication](./implementation.md#getting-aem) s’exécutant sur 4503
    * [AEM intégré à Adobe Target à l’aide d’Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
-* **Experience Cloud**
+* **Experience Cloud**
    * Accès à vos organisations Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud fourni avec [Adobe Target](https://experiencecloud.adobe.com)
 
@@ -48,7 +50,6 @@ Pour cet exercice, les utilisateurs suivants doivent être impliqués et effectu
 1. Le marketeur crée une activité de ciblage A/B dans Adobe Target.
    1. Dans la fenêtre Adobe Target, accédez à **Activités** .
    2. Cliquez sur **Création d’une activité** et sélectionnez le type d’activité comme **Test A/B**
-
       ![Adobe Target - Création d’une activité](assets/personalization-use-case-2/create-ab-activity.png)
    3. Sélectionnez la **Web** et choisissez le canal **Compositeur d’expérience visuelle**.
    4. Saisissez le **URL d’activité** et cliquez sur **Suivant** pour ouvrir le compositeur d’expérience visuelle.
@@ -63,7 +64,6 @@ Pour cet exercice, les utilisateurs suivants doivent être impliqués et effectu
       ![Sélection du conteneur](assets/personalization-use-case-3/container-selection.png)
    9. Cliquez sur le conteneur que vous souhaitez réorganiser et faites-le glisser jusqu’à l’emplacement souhaité. Réorganisons le *Meilleurs rotors* conteneur de la 1ère ligne de la 1ère colonne à la 3e ligne de la 1ère colonne. Maintenant, la *Meilleurs rotors* conteneur est à côté de *Expositions de photos* conteneur.
       ![Permutation de conteneur](assets/personalization-use-case-3/container-swap.png)
-
       **Après le changement**
       ![Conteneur échangé](assets/personalization-use-case-3/after-swap-1-3.png)
    10. De même, réorganisez les positions des autres conteneurs de carte.
