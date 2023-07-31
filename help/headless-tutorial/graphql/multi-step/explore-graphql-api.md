@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 508b0211-fa21-4a73-b8b4-c6c34e3ba696
-source-git-commit: ae27cbc50fc5c4c2e8215d7946887b99d480d668
-workflow-type: ht
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
+workflow-type: tm+mt
 source-wordcount: '1454'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -391,7 +391,7 @@ Après examen et vérification, publiez le `GraphQL Endpoint` et les `Persisted 
 
 ## Fichiers de solution {#solution-files}
 
-Téléchargez le contenu, les modèles et les requêtes persistantes créés dans les trois derniers chapitres : [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip).
+Téléchargez le contenu, les modèles et les requêtes persistantes créés dans les trois derniers chapitres : [basic-tutorial-solution.content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip)
 
 ## Ressources supplémentaires
 

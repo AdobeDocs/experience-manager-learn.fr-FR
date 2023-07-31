@@ -9,10 +9,11 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
-source-git-commit: 985d52f02025dc9cb2b9c70ead4a88af07c63f29
-workflow-type: ht
-source-wordcount: '765'
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
+workflow-type: tm+mt
+source-wordcount: '681'
 ht-degree: 100%
 
 ---
@@ -35,11 +36,9 @@ Les outils suivants doivent être installés localement :
 
 ## Configuration requise d’AEM
 
-L’application Android fonctionne avec les options de déploiement AEM suivantes. Tous les déploiements nécessitent que la version [v2.0.0 ou supérieure du site WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) soit installée.
+L’application Android fonctionne avec les options de déploiement AEM suivantes. Tous les déploiements nécessitent que la version [v3.0.0 ou supérieure du site WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) soit installée.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr)
-+ Configuration locale à l’aide du [SDK AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr)
-+ [AEM 6.5 SP13+ QuickStart](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr?lang=fr#install-local-aem-instances)
 
 L’application Android est conçue pour se connecter à un environnement de __publication AEM__. Toutefois, elle peut extraire du contenu à partir de l’instance de création AEM si l’authentification est fournie dans la configuration de l’application Android.
 
@@ -55,7 +54,7 @@ L’application Android est conçue pour se connecter à un environnement de __p
 1. Modifiez le fichier `config.properties` sous `app/src/main/assets/config.properties` et mettez à jour `contentApi.endpoint` pour qu’il corresponde à votre environnement AEM cible :
 
    ```plain
-   contentApi.endpoint=http://10.0.2.2:4503
+   contentApi.endpoint=https://publish-p123-e456.adobeaemcloud.com
    ```
 
    __Authentification de base__
@@ -63,7 +62,7 @@ L’application Android est conçue pour se connecter à un environnement de __p
    `contentApi.user` et `contentApi.password` authentifient un utilisateur ou une utilisatrice AEM local ayant accès au contenu GraphQL de WKND.
 
    ```plain
-   contentApi.endpoint=http://10.0.2.2:4502
+   contentApi.endpoint=https://author-p123-e456.adobeaemcloud.com
    contentApi.user=admin
    contentApi.password=admin
    ```
@@ -74,9 +73,7 @@ L’application Android est conçue pour se connecter à un environnement de __p
 
 ### Se connecter à des environnements AEM
 
-`10.0.2.2` est un [IP d’alias spécial](https://developer.android.com/studio/run/emulator-networking) pour localhost lors de l’utilisation de l’émulateur rendant `10.0.2.2:4502` équivalent à `localhost:4502`. Si vous vous connectez à un environnement de publication AEM (recommandé), aucune autorisation n’est requise et `contentAPi.user` et `contentApi.password` peuvent être laissés vides.
-
-Si vous vous connectez à un environnement de création AEM, une [autorisation](https://github.com/adobe/aem-headless-client-java#using-authorization) est obligatoire. Par défaut, l’application est configurée pour utiliser une authentification de base avec un nom d’utilisateur et un mot de passe `admin:admin`. L’[AEMHeadlessClientBuilder](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java) permet d’utiliser des [authentifications par jeton](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr). Pour utiliser l’authentification par jeton, mettez à jour le générateur de client dans `AdventureLoader.java` et `AdventuresLoader.java` :
+Si vous vous connectez à un environnement de création AEM, une [autorisation](https://github.com/adobe/aem-headless-client-java#using-authorization) est obligatoire. L’[AEMHeadlessClientBuilder](https://github.com/adobe/aem-headless-client-java/blob/main/client/src/main/java/com/adobe/aem/graphql/client/AEMHeadlessClientBuilder.java) permet d’utiliser des [authentifications par jeton](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr). Pour utiliser l’authentification par jeton, mettez à jour le générateur de client dans `AdventureLoader.java` et `AdventuresLoader.java` :
 
 ```java
 /* Comment out basicAuth
@@ -111,10 +108,7 @@ En suivant les bonnes pratiques d’AEM Headless, l’application iOS utilise l
             tripLength
             primaryImage {
                 ... on ImageRef {
-                _path
-                mimeType
-                width
-                height
+                _dynamicUrl
                 }
             }
         }
@@ -150,10 +144,7 @@ query($slug: String!) {
       price
       primaryImage {
         ... on ImageRef {
-          _path
-          mimeType
-          width
-          height
+          _dynamicUrl
         }
       }
       description {
@@ -186,11 +177,11 @@ Chaque requête conservée possède une classe « loader » correspondante, qu
 
 + `loader/AdventuresLoader.java`
 
-   Récupère la liste des Adventures sur l’écran d’accueil de l’application à l’aide de la requête persistante `wknd-shared/adventures-all`.
+  Récupère la liste des Adventures sur l’écran d’accueil de l’application à l’aide de la requête persistante `wknd-shared/adventures-all`.
 
 + `loader/AdventureLoader.java`
 
-   Récupère une seule Adventure en la sélectionnant via le paramètre `slug`, à l’aide de la requête persistante `wknd-shared/adventure-by-slug`.
+  Récupère une seule Adventure en la sélectionnant via le paramètre `slug`, à l’aide de la requête persistante `wknd-shared/adventure-by-slug`.
 
 ```java
 //AdventuresLoader.java
@@ -222,11 +213,11 @@ L’application Android utilise deux vues pour présenter les données des Adven
 
 + `AdventureListFragment.java`
 
-   Appelle `AdventuresLoader` et affiche les Adventures renvoyées dans une liste.
+  Appelle `AdventuresLoader` et affiche les Adventures renvoyées dans une liste.
 
 + `AdventureDetailFragment.java`
 
-   Appelle `AdventureLoader` en utilisant le paramètre `slug` transmis via la sélection des Adventures sur la vue `AdventureListFragment` et affiche les détails d’une seule Adventure.
+  Appelle `AdventureLoader` en utilisant le paramètre `slug` transmis via la sélection des Adventures sur la vue `AdventureListFragment` et affiche les détails d’une seule Adventure.
 
 ### Images distantes
 

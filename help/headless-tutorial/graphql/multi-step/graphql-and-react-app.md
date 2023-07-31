@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 7938325427b6becb38ac230a3bc4b031353ca8b1
 workflow-type: tm+mt
 source-wordcount: '1188'
-ht-degree: 90%
+ht-degree: 87%
 
 ---
 
@@ -26,7 +26,7 @@ Une application React simple est utilisée pour interroger et afficher du conten
 
 ## Prérequis
 
-Nous partons du principe que les étapes décrites dans les parties précédentes de ce tutoriel en plusieurs parties ont été terminées, ou que [tutorial-solution-content.zip](assets/explore-graphql-api/tutorial-solution-content.zip) est installé sur vos services de création et de publication d’AEM as a Cloud Service.
+Nous partons du principe que les étapes décrites dans les parties précédentes de ce tutoriel en plusieurs parties ont été terminées, ou [basic-tutorial-solution.content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip) est installé sur vos services de création et de publication as a Cloud Service AEM.
 
 _Les captures d’écran de l’IDE de ce chapitre proviennent de [Visual Studio Code](https://code.visualstudio.com/)_.
 
@@ -71,6 +71,7 @@ Pour obtenir l’application React :
 1. Mettez à jour `.env.development` pour vous connecter au service de publication d’AEM as a Cloud Service.
 
    - Définissez la valeur de `REACT_APP_HOST_URI` sur votre URL d’instance de publication AEM as Cloud Service (par exemple, `REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com`) et la valeur de `REACT_APP_AUTH_METHOD` sur `none`.
+
    >[!NOTE]
    >
    > Assurez-vous que vous avez publié la configuration du projet, les modèles de fragment de contenu, les fragments de contenu créés, les points d’entrée GraphQL et les requêtes persistantes des étapes précédentes.
@@ -102,6 +103,7 @@ Pour obtenir l’application React :
 >  // Tâche : implémentez ceci en suivant les étapes du tutoriel sur AEM Headless.
 >
 >  //*********************************
+>
 
 ## Anatomie de l’application React
 
@@ -490,7 +492,7 @@ Vérifiez l’application [http://localhost:3000/](http://localhost:3000/) et cl
 
 ## Ce qui se passe
 
-Ouvrez le **Outils de développement** > **Réseau** et _Filtrer_ pour `all-teams` requête. Remarquez la demande d’API GraphQL. `/graphql/execute.json/my-project/all-teams` est contre `http://localhost:3000` et **NOT** par rapport à la valeur de `REACT_APP_HOST_URI` (par exemple, <https://publish-p123-e456.adobeaemcloud.com>). Les demandes sont effectuées par rapport au domaine de l’application React, car [configuration du proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) est activé à l’aide de `http-proxy-middleware` module .
+Ouvrez le **Outils de développement** > **Réseau** et _Filtrer_ pour `all-teams` requête. Remarquez la demande d’API GraphQL `/graphql/execute.json/my-project/all-teams` est contre `http://localhost:3000` et **NOT** contre la valeur de `REACT_APP_HOST_URI` (par exemple, <https://publish-p123-e456.adobeaemcloud.com>). Les demandes sont effectuées par rapport au domaine de l’application React, car [configuration du proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) est activé à l’aide de `http-proxy-middleware` module .
 
 
 ![Requête de l’API GraphQL via proxy.](assets/graphql-and-external-app/graphql-api-request-via-proxy.png)
