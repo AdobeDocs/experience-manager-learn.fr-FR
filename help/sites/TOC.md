@@ -6,9 +6,9 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 2a137f71cbd876db0164e84ab437e8eda982270e
+source-git-commit: e7e5a07ecada8e5760cd1496bdb44b3d035373dd
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '459'
 ht-degree: 89%
 
 ---
@@ -102,7 +102,7 @@ ht-degree: 89%
       + [SDK Web](integrations/platform/web-sdk.md)
       + [Analytics à l’aide du SDK Web Platform](integrations/platform/analytics-using-web-sdk.md)
    + Balises de collecte de données Experience Platform (Launch) {#experience-platform-data-collection-tags}
-      + [Présentation](integrations/experience-platform/data-collection/tags/overview.md)
+      + [Vue d’ensemble](integrations/experience-platform/data-collection/tags/overview.md)
       + [Création d’une propriété de balise](integrations/experience-platform/data-collection/tags/create-tag-property.md)
       + [Connexion d’AEM et de la propriété de balise à l’aide d’IMS](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
       + [Création d’AEM Launch Cloud Service](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
@@ -124,6 +124,7 @@ ht-degree: 89%
       + [Personnalisation à l’aide du compositeur d’expérience visuelle](integrations/adobe-target/personalization-using-vec.md)
       + [Personnaliser l’expérience complète d’une page web](integrations/adobe-target/personalization-web-page.md)
 + Apprenez de vos pairs {#expert-resources}
+   + [Vue d’ensemble](expert-resources/learn-from-your-peers-overview.md)
    + [Évaluation de la maturité d’AEM Sites](expert-resources/maturity-assessment.md)
    + [Maintenance du site](expert-resources/site-maintenance.md)
    + [Conseils et astuces AEM Champion : session 1](expert-resources/champion-tips-1.md)
