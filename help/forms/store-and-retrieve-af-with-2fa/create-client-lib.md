@@ -10,7 +10,7 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: c90eea73-bd44-40af-aa98-d766aa572415
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 8%
@@ -45,7 +45,7 @@ $(document).ready(function () {
             success: function (x) {
               bootbox.alert(
                 "This is your reference number.<br>" +
-                  x.data.path +
+                  x.data.applicationID +
                   " <br>You will need this to retrieve your application",
                 function () {
                   console.log(
@@ -69,8 +69,8 @@ $(document).ready(function () {
 >[!NOTE]
 > Nous avons utilisé [bibliothèque javascript bootbox](http://bootboxjs.com/examples.html) pour afficher la boîte de dialogue
 
-Les bibliothèques clientes utilisées dans cet exemple peuvent être [téléchargé ici](assets/client-libraries.zip)
+Les bibliothèques clientes utilisées dans cet exemple peuvent être [téléchargé ici](assets/store-af-with-attachments-client-lib.zip)
 
 ## Étapes suivantes
 
-[Vérification des utilisateurs à l’aide du service OTP](./verify-users-with-otp.md)
+[Vérifier les utilisateurs avec le service OTP](./verify-users-with-otp.md)

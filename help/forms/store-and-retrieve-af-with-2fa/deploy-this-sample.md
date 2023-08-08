@@ -1,5 +1,5 @@
 ---
-title: Déploiement de l’exemple
+title: Déployer l’exemple
 description: Cas d’utilisation en cours d’exécution sur votre instance AEM Forms locale
 feature: Adaptive Forms
 type: Tutorial
@@ -10,14 +10,14 @@ topic: Development
 role: Developer
 level: Intermediate
 exl-id: cdfae631-86d7-438f-9baf-afd621802723
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 1%
+source-wordcount: '391'
+ht-degree: 3%
 
 ---
 
-# Déploiement de l’exemple
+# Déployer l’exemple
 
 Pour que ce cas pratique fonctionne sur votre système, suivez les instructions suivantes :
 
@@ -31,9 +31,9 @@ Cet exemple utilise la base de données MySQL pour stocker les données de formu
 
 ## Création d’une source de données
 
-Vous devez créer une source de données appelée **StoreAndRetrieveAfData**. Le code du lot OSGi utilise ce nom de source de données.
+Vous devez créer une source de données partagée Apache Sling Connection appelée **StoreAndRetrieveAfData** pointant vers le schéma de base de données créé à l’étape précédente. Le code du lot OSGi utilise ce nom de source de données.
 
-## Création d’un modèle de données de formulaire
+## Créer un modèle de données de formulaire
 
 Le modèle de données de formulaire doit être créé en fonction de cette source de données appelée **StoreAndRetrieveAfData**. Ce modèle de données de formulaire est utilisé pour récupérer le numéro de téléphone mobile associé à l’ID de l’application. Le modèle de données de formulaire peut être [téléchargé ici.](assets/2-Factor-Authentication-DataSource-and-FDM.zip)
 
@@ -43,13 +43,13 @@ Création d’un compte développeur avec [Nexmo](https://dashboard.nexmo.com/) 
 
 ## Déployer les lots OSGi suivants
 
-Déployez le lot qui a la propriété [code pour stocker et récupérer des données de la base de données](assets/FetchPartiallyCompletedForm.PartiallyCompletedForm.core-1.0-SNAPSHOT.jar)
+Déployez le lot qui a la propriété [code pour stocker et récupérer des données de la base de données](assets/SaveAndResume.core-1.0.0-SNAPSHOT.jar)
 Téléchargez et décompressez le fichier [developing withserviceuser.zip](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip).
 Déployez le fichier DevelopingWithServiceUser.jar à l’aide de la console web Felix.
 
 ## Déploiement de la bibliothèque cliente
 
-L’exemple utilise 2 bibliothèques clientes. Importez les [bibliothèques clientes](assets/client-libraries.zip) dans AEM.
+L’exemple utilise 2 bibliothèques clientes. Importez les [bibliothèques clientes](assets/store-af-with-attachments-client-lib.zip) dans AEM.
 
 ## Importation du modèle de formulaire adaptatif personnalisé
 
@@ -59,7 +59,7 @@ Les exemples de formulaires utilisés dans cette démonstration sont basés sur 
 
 Les deux formulaires qui constituent cet exemple doivent être importés dans AEM. Les exemples de formulaires peuvent être [téléchargé ici](assets/sample-forms.zip)
 
-Ouvrez le [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) en mode d’édition. Spécifiez les valeurs de clé API et de secret API dans les champs appropriés du formulaire adaptatif.
+Ouvrez le [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) en mode d’édition. Spécifiez les valeurs Clé API de validation et Clé secrète dans les champs appropriés du formulaire adaptatif.
 
 ## Tester la solution
 
@@ -67,6 +67,6 @@ Aperçu de la [StoreAFWithAttachments](http://localhost:4502/content/dam/formsan
 Saisissez votre numéro de mobile, y compris le code de pays, renseignez les détails de votre utilisateur et ajoutez des pièces jointes. Cliquez sur le bouton &quot;Enregistrer et quitter&quot; pour enregistrer le formulaire adaptatif et ses pièces jointes.
 
 
-## Démonstration du cas pratique
+## Démonstration du cas d’utilisation
 
 >[!VIDEO](https://video.tv.adobe.com/v/327122?quality=12&learn=on)

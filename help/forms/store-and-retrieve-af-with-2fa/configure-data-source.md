@@ -10,10 +10,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: a87ff428-15f7-43c9-ad03-707eab6216a9
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
+source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 5%
+source-wordcount: '320'
+ht-degree: 8%
 
 ---
 
@@ -23,14 +23,18 @@ AEM permet l’intégration à une base de données externe de différentes mani
 La première étape consiste à télécharger et déployer les [Pilotes MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) à AEM.
 Définissez ensuite les propriétés Sling Connection Pooled DataSource spécifiques à votre base de données. La capture d’écran suivante montre les paramètres utilisés pour ce tutoriel. Le schéma de base de données vous est fourni dans le cadre de ces ressources de tutoriel.
 
+>[!NOTE]
+>Veillez à nommer votre source de données. `StoreAndRetrieveAfData` comme nom utilisé dans le service OSGi.
+
+
 ![data-source](assets/data-source.JPG)
 
-
-* Classe de pilote JDBC : `com.mysql.cj.jdbc.Driver`
-* URI de connexion JDBC : `jdbc:mysql://localhost:3306/aemformstutorial`
-
->[!NOTE]
->Veillez à nommer votre source de données `StoreAndRetrieveAfData` car il s’agit du nom utilisé dans le service OSGi.
+| Nom de la propriété | Valeur de la propriété |   |
+|---------------------|------------------------------------------------------------------------------------|---|
+| Nom de la source de données | StoreAndRetrieveAfData |   |
+| Classe de lecteur JDBC | jdbc:mysql://localhost:3306/aemformstutorial |   |
+| URI de connexion JDBC | jdbc:mysql://localhost:3306/aemformstutorial?serverTimezone=UTC&amp;autoReconnect=true |   |
+|                     |                                                                                    |   |
 
 
 ## Créer une base de données
