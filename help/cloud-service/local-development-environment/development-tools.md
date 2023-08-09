@@ -10,10 +10,10 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
+source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 13%
+source-wordcount: '1484'
+ht-degree: 14%
 
 ---
 
@@ -28,16 +28,38 @@ ht-degree: 13%
 
 Le développement d&#39;Adobe Experience Manager (AEM) nécessite l&#39;installation et la configuration d&#39;un jeu minimal d&#39;outils de développement sur la machine du développeur. Ces outils prennent en charge le développement et la création de projets AEM.
 
-Notez que `~` est utilisé comme abrégé pour le répertoire de l’utilisateur. Sous Windows, il s’agit de l’équivalent de `%HOMEPATH%`.
+Notez que `~` est utilisé comme abrégé pour le répertoire de l’utilisateur. Sous Windows, cela équivaut à `%HOMEPATH%`.
 
 ## Installer Java
 
 Experience Manager est une application Java qui requiert donc le SDK Java pour prendre en charge le développement et le SDK as a Cloud Service AEM.
 
 1. [Téléchargez et installez la dernière version du SDK Java 11.](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-1. Vérifiez que le SDK Java 11 est installé en exécutant la commande :
-   + Windows : `java -version`
-   + macOS / Linux : `java --version`
+1. Vérifiez que le SDK Oracle Java 11 est installé en exécutant la commande :
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+```shell
+$ java --version
+```
+
+>[!TAB Windows]
+
+
+
+```shell
+$ java -version
+```
+
+>[!TAB Linux]
+
+```shell
+$ java --version
+```
+
+>[!ENDTABS]
 
 ![Java](./assets/development-tools/java.png)
 
@@ -59,20 +81,27 @@ Homebrew est un gestionnaire de packages Open Source pour macOS, Windows et Linu
 
 ![Homebrew](./assets/development-tools/homebrew.png)
 
-Si vous utilisez Homebrew, suivez la __Installation à l’aide de Homebrew__ dans les sections ci-dessous. Si vous êtes __not__ à l’aide d’Homebrew, installez les outils à l’aide des liens spécifiques au système d’exploitation.
+Si vous utilisez Homebrew, suivez la __Installation à l’aide de Homebrew__ dans les sections ci-dessous. Si vous __not__ à l’aide d’Homebrew, installez les outils à l’aide des liens spécifiques au système d’exploitation.
 
-## Installer Git
+## Installation de Git
 
 [Git](https://git-scm.com/) est le système de gestion du contrôle de code source utilisé par [Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/source-code-repository.html), et est donc nécessaire au développement.
 
-+ Installation de Git à l’aide de Homebrew
-   1. Ouvrez votre invite de commande/terminal.
-   1. Exécutez la commande : `brew install git`
-   1. Vérifiez que Git est installé à l’aide de la commande : `git --version`
-+ Ou, téléchargez et installez Git (macOS, Linux ou Windows).
-   1. [Télécharger et installer Git](https://git-scm.com/downloads)
-   1. Ouvrez votre invite de commande/terminal.
-   1. Vérifiez que Git est installé à l’aide de la commande : `git --version`
+>[!BEGINTABS]
+
+>[!TAB Installation de Git à l’aide de Homebrew]
+
+1. Ouvrez votre invite de commande/terminal.
+1. Exécutez la commande : `$ brew install git`
+1. Vérifiez que Git est installé à l’aide de la commande : `$ git --version`
+
+>[!TAB Télécharger et installer Git]
+
+1. [Télécharger et installer Git](https://git-scm.com/downloads)
+1. Ouvrez votre invite de commande/terminal.
+1. Vérifiez que Git est installé à l’aide de la commande : `$ git --version`
+
+>[!ENDTABS]
 
 ![Git](./assets/development-tools/git.png)
 
@@ -80,16 +109,23 @@ Si vous utilisez Homebrew, suivez la __Installation à l’aide de Homebrew__ da
 
 [Node.js](https://nodejs.org) est un environnement d’exécution JavaScript utilisé pour fonctionner avec les ressources front-end d’un projet AEM __ui.frontend__ sous-projet. Node.js est distribué avec [npm](https://www.npmjs.com/), est le gestionnaire de modules Node.js par défaut, utilisé pour gérer les dépendances JavaScript.
 
-+ Installation de Node.js à l’aide de Homebrew
-   1. Ouvrez votre invite de commande/terminal.
-   1. Exécutez la commande : `brew install node`
-   1. Vérifiez que Node.js est installé à l’aide de la commande : `node -v`
-   1. Vérifiez que npm est installé à l’aide de la commande : `npm -v`
-+ Ou, téléchargez et installez Node.js (macOS, Linux ou Windows).
-   1. [Télécharger et installer Node.js](https://nodejs.org/en/download/)
-   1. Ouvrez votre invite de commande/terminal.
-   1. Vérifiez que Node.js est installé à l’aide de la commande : `node -v`
-   1. Vérifiez que npm est installé à l’aide de la commande : `npm -v`
+>[!BEGINTABS]
+
+>[!TAB Installation de Node.js à l’aide de Homebrew]
+
+1. Ouvrez votre invite de commande/terminal.
+1. Exécutez la commande : `$ brew install node`
+1. Vérifiez que Node.js est installé à l’aide de la commande : `$ node -v`
+1. Vérifiez que npm est installé à l’aide de la commande : `$ npm -v`
+
+>[!TAB Télécharger et installer Node.js]
+
+1. [Télécharger et installer Node.js](https://nodejs.org/en/download/)
+2. Ouvrez votre invite de commande/terminal.
+3. Vérifiez que Node.js est installé à l’aide de la commande : `$ node -v`
+4. Vérifiez que npm est installé à l’aide de la commande : `$ npm -v`
+
+>[!ENDTABS]
 
 ![Node.js et npm](./assets/development-tools/nodejs-and-npm.png)
 
@@ -103,21 +139,29 @@ Si vous utilisez Homebrew, suivez la __Installation à l’aide de Homebrew__ da
 
 Apache Maven est l’outil de ligne de commande Java open source utilisé pour créer AEM projets générés à partir de l’archétype Maven de projet AEM. Tous les principaux IDE ([IntelliJ IDEA](https://www.jetbrains.com/idea/), [Visual Studio Code](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/), etc.) ont intégré la prise en charge de Maven.
 
-+ Installation de Maven à l’aide de Homebrew
-   1. Ouvrez votre invite de commande/terminal.
-   1. Exécutez la commande : `brew install maven`
-   1. Vérifiez que Maven est installé à l’aide de la commande : `mvn -v`
-+ Ou, téléchargez et installez Maven (macOS, Linux ou Windows).
-   1. [Télécharger Maven](https://maven.apache.org/download.cgi)
-   1. [Installer Maven](https://maven.apache.org/install.html)
-   1. Ouvrez votre invite de commande/terminal.
-   1. Vérifiez que Maven est installé à l’aide de la commande : `mvn -v`
+
+>[!BEGINTABS]
+
+>[!TAB Installation de Maven à l’aide de Homebrew]
+
+1. Ouvrez votre invite de commande/terminal.
+1. Exécutez la commande : `$ brew install maven`
+1. Vérifiez que Maven est installé à l’aide de la commande : `$ mvn -v`
+
+>[!TAB Télécharger et installer Maven]
+
+1. [Télécharger Maven](https://maven.apache.org/download.cgi)
+1. [Installer Maven](https://maven.apache.org/install.html)
+1. Ouvrez votre invite de commande/terminal.
+1. Vérifiez que Maven est installé à l’aide de la commande : `$ mvn -v`
+
+>[!ENDTABS]
 
 ![Maven](./assets/development-tools/maven.png)
 
 ## Configuration de l’interface de ligne de commande Adobe I/O{#aio-cli}
 
-Le [Interface de ligne de commande d’Adobe I/O](https://github.com/adobe/aio-cli)ou `aio`, permet d’accéder à divers services Adobe en ligne de commande, notamment : [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) et [asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). L’interface de ligne de commande d’Adobe I/O joue un rôle essentiel dans le développement sur AEM as a Cloud Service, car elle permet aux développeurs de :
+La variable [Interface de ligne de commande Adobe I/O](https://github.com/adobe/aio-cli), ou `aio`, permet d’accéder à divers services Adobe en ligne de commande, notamment : [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) et [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). L’interface de ligne de commande d’Adobe I/O joue un rôle essentiel dans le développement sur AEM as a Cloud Service, car elle permet aux développeurs de :
 
 + Suivi des journaux à partir d’AEM as a Cloud Services services
 + Gestion des pipelines de Cloud Manager à partir de l’interface de ligne de commande
@@ -125,7 +169,7 @@ Le [Interface de ligne de commande d’Adobe I/O](https://github.com/adobe/aio-c
 
 ### Installation de l’interface de ligne de commande d’Adobe I/O
 
-1. Assurez-vous que [Node.js est installé](#node-js) car l’interface de ligne de commande d’Adobe I/O est un module npm
+1. Assurez-vous que [Node.js est installé](#node-js) car l’interface de ligne de commande Adobe I/O est un module npm
    + Exécuter `node --version` confirmer
 1. Exécuter `npm install -g @adobe/aio-cli` pour installer le `aio` module npm globalement
 
@@ -137,13 +181,13 @@ Le module externe Adobe I/O Cloud Manager permet à l’interface de ligne de co
 
 #### Configuration de l’authentification de l’interface de ligne de commande Adobe I/O
 
-Pour que l’interface de ligne de commande de l’Adobe I/O communique avec Cloud Manager, une [L’intégration de Cloud Manager doit être créée dans Adobe I/O Console](https://github.com/adobe/aio-cli-plugin-cloudmanager), et les informations d’identification doivent être obtenues pour réussir l’authentification.
+Pour que l’interface de ligne de commande de l’Adobe I/O communique avec Cloud Manager, une [L’intégration de Cloud Manager doit être créée dans Adobe I/O Console](https://github.com/adobe/aio-cli-plugin-cloudmanager), et les informations d’identification doivent être obtenues pour une authentification réussie.
 
-1. Connectez-vous à [console.adobe.io](https://console.adobe.io)
+1. Connexion à [console.adobe.io](https://console.adobe.io)
 1. Assurez-vous que votre organisation qui comprend le produit Cloud Manager auquel se connecter est principale dans le sélecteur d’organisation Adobe
 1. Créer ou ouvrir un [Programme Adobe I/O](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md)
    + Les programmes Adobe I/O Console sont simplement des regroupements organisationnels d’intégrations, de créer ou d’utiliser et de programmes existants en fonction de la manière dont vous souhaitez gérer vos intégrations.
-   + Si vous créez un projet, sélectionnez &quot;Projet vide&quot; si vous y êtes invité (ou &quot;Créer à partir d’un modèle&quot;)
+   + Si vous créez un projet, sélectionnez &quot;Projet vide&quot; si vous y êtes invité (au lieu de &quot;Créer à partir d’un modèle&quot;).
    + Les programmes Adobe I/O Console sont des concepts différents des programmes Cloud Manager.
 1. Créez une nouvelle intégration de l’API Cloud Manager avec le profil &quot;Développeur - Cloud Service&quot;
 1. L’obtention des informations d’identification du compte de service (JWT) doit être renseignée dans l’interface de ligne de commande d’Adobe I/O. [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication)
@@ -166,7 +210,6 @@ Le module externe Adobe I/O Cloud Manager permet à l’interface de ligne de co
 
 1. Exécuter `aio plugins:install @adobe/aio-cli-plugin-asset-compute` pour installer le [module externe aio Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute).
 
-
 ## Configuration de l’IDE de développement
 
 Le développement AEM consiste principalement en un développement Java et front-end (JavaScript, CSS, etc.) et en une gestion XML. Voici les IDE les plus populaires pour le développement AEM.
@@ -184,7 +227,7 @@ __[IntelliJ IDEA](https://www.jetbrains.com/idea/)__ est un IDE puissant pour le
 
 __[Visual Studio Code](https://code.visualstudio.com/)__ (VS Code) est un outil libre et open source pour les développeurs front-end. Visual Studio Code peut être configuré pour intégrer la synchronisation de contenu avec AEM à l’aide d’un outil Adobe, __[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)__.
 
-Visual Studio Code est le choix idéal pour les développeurs front-end qui créent principalement du code frontal ; JavaScript, CSS et HTML. Bien que VS Code dispose d’une prise en charge Java via [extensions](https://code.visualstudio.com/docs/java/java-tutorial), il peut ne pas disposer de certaines fonctionnalités avancées fournies par des fonctionnalités plus spécifiques à Java.
+Visual Studio Code est le choix idéal pour les développeurs front-end qui créent principalement du code frontal : JavaScript, CSS et HTML. Bien que VS Code dispose d’une prise en charge Java via [extensions](https://code.visualstudio.com/docs/java/java-tutorial), il peut ne pas disposer de certaines fonctionnalités avancées fournies par des fonctionnalités plus spécifiques à Java.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 
