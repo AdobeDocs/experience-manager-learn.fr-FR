@@ -10,9 +10,9 @@ kt: 10830
 thumbnail: KT-10830.jpg
 exl-id: 394792e4-59c8-43c1-914e-a92cdfde2f8a
 last-substantial-update: 2023-08-08T00:00:00Z
-source-git-commit: f8fd13d3f315aa0bd9f268b9fe81b9d9c17b243c
+source-git-commit: f619c431d91271b2031dcb233f3e08c3008b78ed
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '627'
 ht-degree: 42%
 
 ---
@@ -116,25 +116,6 @@ Le Dispatcher du service Publication AEM (et aperçu) doit être configuré pour
 |-------------------------------------:|:----------:|:-------------:|:-------------:|
 | Nécessite une configuration CORS de Dispatcher | ✘ | ✔ | ✔ |
 
-#### Définition de la variable d’environnement de Dispatcher
-
-1. Ouvrez le fichier global.vars pour la configuration AEM Dispatcher, généralement à l’adresse `dispatcher/src/conf.d/variables/global.vars`.
-2. Ajoutez les éléments suivants au fichier :
-
-   ```
-   # Enable CORS handling in the dispatcher
-   #
-   # By default, CORS is handled by the AEM publish server.
-   # If you uncomment and define the ENABLE_CORS variable, then CORS will be handled in the dispatcher.
-   # See the default.vhost file for a suggested dispatcher configuration. Note that:
-   #   a. You will need to adapt the regex from default.vhost to match your CORS domains
-   #   b. Remove the "Origin" header (if it exists) from the clientheaders.any file
-   #   c. If you have any CORS domains configured in your AEM publish server origin, you have to move those to the dispatcher
-   #       (i.e. accordingly update regex in default.vhost to match those domains)
-   #
-   Define ENABLE_CORS
-   ```
-
 #### Définition des en-têtes CORS dans vhost
 
 1. Ouvrez le fichier de configuration vhost pour le service AEM Publish, dans votre projet de configuration de Dispatcher, généralement à l’adresse `dispatcher/src/conf.d/available_vhosts/<example>.vhost`
@@ -144,8 +125,6 @@ Le Dispatcher du service Publication AEM (et aperçu) doit être configuré pour
    <VirtualHost *:80>
      ...
      <IfModule mod_headers.c>
-       ...
-       <IfDefine ENABLE_CORS>
          ################## Start of CORS configuration ##################
    
          SetEnvIfExpr "req_novary('Origin') == ''" CORSType=none CORSProcessing=false
@@ -192,8 +171,6 @@ Le Dispatcher du service Publication AEM (et aperçu) doit être configuré pour
          RequestHeader unset Origin
    
          ################## End of CORS configuration ##################
-       </IfDefine>
-       ...
      </IfModule>
      ...
    </VirtualHost>
