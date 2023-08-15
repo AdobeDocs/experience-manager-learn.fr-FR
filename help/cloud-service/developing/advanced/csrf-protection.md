@@ -10,7 +10,7 @@ doc-type: Code Sample
 last-substantial-update: 2023-07-14T00:00:00Z
 jira: KT-13651
 thumbnail: KT-13651.jpeg
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 38db146129ceab83af50bf97cd6eb2d7179adbbf
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Découvrez comment générer et ajouter AEM jetons CSRF aux demandes POST, PUT et Supprimer autorisées à AEM pour les utilisateurs authentifiés.
 
-AEM nécessite l’envoi d’un jeton CSRF valide pour __authentifié__ __POST__, __PUT ou __DELETE__ Demandes HTTP aux services AEM Author et Publish.
+AEM nécessite l’envoi d’un jeton CSRF valide pour __authentifié__ __POST__, __PUT ou __DELETE__ Requêtes HTTP pour AEM les services Auteur et Publication.
 
 Le jeton CSRF n’est pas requis pour __GET__ requêtes, ou __anonyme__ requêtes.
 
@@ -61,7 +61,7 @@ document.querySelector('form').addEventListener('submit', async (event) => {
     let csrfTokenInput = form.querySelector('input[name=":cq_csrf_token"]');
     if (!csrfTokenInput?.value) {
         // If the form does not have a CSRF token input, add one.
-        form.insertAdjacentHTML('afterend', `<input type="hidden" name=":cq_csrf_token" value="${json.token}">`);
+        form.insertAdjacentHTML('beforeend', `<input type="hidden" name=":cq_csrf_token" value="${json.token}">`);
     } else {
         // If the form already has a CSRF token input, update the value.
         csrfTokenInput.value = json.token;
@@ -101,7 +101,7 @@ await fetch('/path/to/aem/endpoint', {
 
 ## Configuration du Dispatcher
 
-Lors de l’utilisation de jetons CSRF sur le service de publication AEM, la configuration de Dispatcher doit être mise à jour afin d’autoriser les requêtes de GET au point de terminaison de jeton CSRF. La configuration suivante permet d’envoyer des requêtes de GET au point de terminaison du jeton CSRF sur le service de publication AEM. Si cette configuration n’est pas ajoutée, le point de terminaison du jeton CSRF renvoie une réponse 404 Not Found.
+Lors de l’utilisation de jetons CSRF sur AEM service de publication, la configuration de Dispatcher doit être mise à jour afin d’autoriser les requêtes de GET au point de terminaison de jeton CSRF. La configuration suivante permet d’envoyer des requêtes de GET au point de terminaison du jeton CSRF sur le service de publication AEM. Si cette configuration n’est pas ajoutée, le point de terminaison du jeton CSRF renvoie une réponse 404 Not Found.
 
 * `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 
