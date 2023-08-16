@@ -8,9 +8,9 @@ breadcrumb-title: Tutoriels d’AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
+source-git-commit: 17f6148ce6f897052d9d13f23e3f1792646eb958
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1838'
 ht-degree: 81%
 
 ---
@@ -46,9 +46,10 @@ ht-degree: 81%
    + [Listes déroulantes en cascade](some-useful-integrations/geonames-org.md)
    + [Intégration à ServiceNow](some-useful-integrations/service-now.md)
    + [Envoyer des emails avec SendGrid](some-useful-integrations/send-grid.md)
+   + [Stocker les données de formulaire dans le stockage Azure](some-useful-integrations/store-form-data-in-azure-storage.md)
 + Création d’un bundle OSGi {#creating-your-first-osgi-bundle}
    + [1 - Configuration de votre environnement](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
-   + [2 - Création d’un service OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
+   + [2 - Créer un service OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
    + [3 - Création d’un servlet Sling](creating-your-first-osgi-bundle/create-servlet.md)
    + [4 - Inclusion de lots tiers](creating-your-first-osgi-bundle/include-third-party-jars.md)
 + Formulaires adaptatifs {#adaptive-forms}
@@ -121,7 +122,7 @@ ht-degree: 81%
    + [Champs de saisie automatique](ui-tips-tricks/auto-complete.md)
 + Personnalisation de la boîte de réception{#inbox-customization}
    + [1 - Introduction](inbox-customization/introduction.md)
-   + [2 - Ajout d’une colonne personnalisée](inbox-customization/add-married-column.md)
+   + [2 - Ajouter une colonne personnalisée](inbox-customization/add-married-column.md)
    + [3 - Utilisation d’un modèle de rapport](inbox-customization/use-sightly-template.md)
 + Pièces jointes du formulaire d’e-mail{#zipping-form-attachments}
    + [1 - Introduction](zipping-form-attachments/introduction.md)
@@ -161,11 +162,11 @@ ht-degree: 81%
 + Signer plusieurs formulaires{#sign-multiple-documents}
    + [1 - Introduction](sign-multiple-documents/introduction.md)
    + [2 - Configuration de la source de données](sign-multiple-documents/configure-data-source.md)
-   + [3 - Création d’un service OSGi](sign-multiple-documents/create-osgi-service.md)
+   + [3 - Création du service OSGi](sign-multiple-documents/create-osgi-service.md)
    + [4 - Créer le workflow principal](sign-multiple-documents/create-main-workflow.md)
    + [5 - Processus de mise à jour de l’état de la signature](sign-multiple-documents/update-signature-status.md)
    + [6 - Personnalisation du composant de résumé](sign-multiple-documents/customize-summary-component.md)
-   + [7 - Créer une bibliothèque cliente](sign-multiple-documents/create-client-lib.md)
+   + [7 - Création de la bibliothèque cliente](sign-multiple-documents/create-client-lib.md)
    + [8 - Créer un modèle de formulaire](sign-multiple-documents/create-af-template.md)
    + [9 - Créer un formulaire initial](sign-multiple-documents/create-initial-form.md)
    + [10 - Création de formulaires pour la signature](sign-multiple-documents/create-forms-for-signing.md)
@@ -188,7 +189,7 @@ ht-degree: 81%
    + [Éditeur de règles dans le workflow AEM](variables-aem-workflow/part5.md)
 + Vérifier les données de formulaire{#review-form-data}
    + [1 - Introduction](review-form-data/introduction.md)
-   + [2 - Création d’un composant](review-form-data/create-component.md)
+   + [2 - Créer un composant](review-form-data/create-component.md)
    + [3 - Déploiement des ressources](review-form-data/deploy-on-your-system.md)
 + Stockage et récupération des données de formulaire dans la base de données MySQL{#storing-and-retrieving-form-data}
    + [Présentation](storing-retrieving-form-data/introduction.md)
@@ -273,7 +274,7 @@ ht-degree: 81%
    + [1 - Introduction](ic-print-channel-tutorial/introduction.md)
    + [2 - Configurer Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
    + [3 - Créer une source de données](ic-print-channel-tutorial/create-data-source.md)
-   + [4 - Créer un modèle de données de formulaire](ic-print-channel-tutorial/create-form-data-model.md)
+   + [4 - Création d’un modèle de données de formulaire](ic-print-channel-tutorial/create-form-data-model.md)
    + [5 - Création d’une mise en page XDP à l’aide de Forms Designer](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
    + [6 - Créer un fragment de document](ic-print-channel-tutorial/create-document-fragment.md)
    + [7 - Création d’un document de canal d’impression](ic-print-channel-tutorial/create-print-channel-document.md)
@@ -300,7 +301,7 @@ ht-degree: 81%
    + [1 - Introduction](ic-web-channel-tutorial/introduction.md)
    + [2 - Configurer Tomcat](ic-web-channel-tutorial/partone.md)
    + [3 - Créer une source de données](ic-web-channel-tutorial/parttwo.md)
-   + [4 - Créer un modèle de données de formulaire](ic-web-channel-tutorial/partthree.md)
+   + [4 - Création d’un modèle de données de formulaire](ic-web-channel-tutorial/partthree.md)
    + [5 - Création du modèle de document de canal web](ic-web-channel-tutorial/partfour.md)
    + [6 - Création de fragments de document](ic-web-channel-tutorial/partfive.md)
    + [7 - Création d’un document de communication interactive](ic-web-channel-tutorial/partsix.md)
