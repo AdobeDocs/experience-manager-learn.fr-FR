@@ -1,5 +1,5 @@
 ---
-title: Service de préremplissage dans Forms adaptatif
+title: Service de préremplissage des formulaires adaptatifs
 description: Préremplir les formulaires adaptatifs en récupérant des données à partir de sources de données principales.
 feature: Adaptive Forms
 version: 6.4,6.5
@@ -8,16 +8,16 @@ role: Developer
 level: Intermediate
 exl-id: f2c324a3-cbfa-4942-b3bd-dc47d8a3f7b5
 last-substantial-update: 2021-11-27T00:00:00Z
-source-git-commit: 381812397fa7d15f6ee34ef85ddf0aa0acc0af42
+source-git-commit: cf37afeb9bea65b540c9cfde75070d4106a01976
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 9%
+source-wordcount: '459'
+ht-degree: 6%
 
 ---
 
 # Utilisation du service de préremplissage dans Forms adaptatif
 
-Vous pouvez préremplir les champs d’un formulaire adaptatif à l’aide de données existantes. Lorsqu’un utilisateur ouvre un formulaire, les valeurs de ces champs sont préremplies. Il existe plusieurs façons de préremplir des champs de formulaires adaptatifs. Dans cet article, nous allons examiner le préremplissage d’un formulaire adaptatif à l’aide du service de préremplissage AEM Forms.
+Vous pouvez préremplir les champs d’un formulaire adaptatif à l’aide de données existantes. Lorsqu’un utilisateur ou une utilisatrice ouvre un formulaire, les valeurs de ces champs sont préremplies. Il existe plusieurs façons de préremplir des champs de formulaires adaptatifs. Dans cet article, nous allons examiner le préremplissage d’un formulaire adaptatif à l’aide du service de préremplissage AEM Forms.
 
 Pour en savoir plus sur les différentes méthodes de préremplissage de formulaires adaptatifs, [veuillez suivre cette documentation](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
 
@@ -26,6 +26,10 @@ Pour préremplir un formulaire adaptatif à l’aide du service de préremplissa
 Dans le fragment de code ci-dessous, nous avons une classe qui implémente l’interface DataXMLProvider . Nous avons accès à l’utilisateur connecté, puis nous récupérons les informations de profil de l’utilisateur connecté. Nous créons ensuite un document XML avec un élément de noeud racine appelé &quot;data&quot; et ajoutons les éléments appropriés à ce noeud de données. Une fois le document XML construit, le flux d’entrée du document XML est renvoyé.
 
 Cette classe est ensuite transformée en lot OSGi et déployée dans AEM. Une fois le lot déployé, ce service de préremplissage est alors disponible pour être utilisé comme service de préremplissage de votre formulaire adaptatif.
+
+>[!NOTE]
+>
+>Vous pouvez préremplir un formulaire à l’aide de données xml ou json en appliquant l’approche répertoriée dans cet article .
 
 ```java
 package com.aem.prefill.core;
@@ -138,8 +142,8 @@ Pour tester cette fonctionnalité sur votre serveur, procédez comme suit :
 * [Téléchargez et extrayez le contenu du fichier zip sur votre ordinateur.](assets/prefillservice.zip)
 * Déployez le lot prefill.core-1.0.0-SNAPSHOT à l’aide du [AEM console web](http://localhost:4502/system/console/bundles)
 * Importez le formulaire adaptatif à l’aide de l’option Créer | Téléchargement du fichier depuis le [Section FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Assurez-vous que la variable [formulaire](http://localhost:4502/editor.html/content/forms/af/prefill.html) utilise **&quot;Service AEM Forms PreFill personnalisé&quot;** comme service de préremplissage. Cela peut être vérifié à partir des propriétés de configuration de la variable **Conteneur de formulaires** .
-* [Prévisualiser le formulaire](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Le formulaire doit être renseigné avec les valeurs correctes.
+* Assurez-vous que la variable [formulaire](http://localhost:4502/editor.html/content/forms/af/prefill.html) est utilisé **&quot;Service AEM Forms PreFill personnalisé&quot;** comme service de préremplissage. Cela peut être vérifié à partir des propriétés de configuration de la variable **Conteneur de formulaires** .
+* [Aperçu du formulaire](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Le formulaire doit être renseigné avec les valeurs correctes.
 
 >[!NOTE]
 >
