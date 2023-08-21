@@ -9,9 +9,9 @@ level: Experienced
 kt: 8634
 thumbnail: 336963.jpeg
 exl-id: f752df86-27d4-4dbf-a3cb-ee97b7d9a17e
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 77b960315c07ba194642a412a0cc6049edcf7bd2
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '332'
 ht-degree: 2%
 
 ---
@@ -26,12 +26,14 @@ Découvrez les index de recherche d’AEM as a Cloud Service, comment convertir 
 
 ![Outil convertisseur d’index](./assets/index-converter.png)
 
-Dans le cadre de la refactorisation de votre base de code, utilisez le [Outil convertisseur d’index](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) pour convertir des définitions d’index Oak personnalisées en AEM de définitions d’index compatibles as a Cloud Service.
+Dans le cadre de la refactorisation de votre base de code, utilisez le [Outil convertisseur d’index](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) pour convertir des définitions d’index Oak personnalisées en définitions d’index compatibles AEM.
+
+Consultez la section [documentation du convertisseur d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html) pour l’ensemble complet et actuel des fonctionnalités du convertisseur d’index.
 
 ## Activités clés
 
 + Utilisez la variable [Adobe I/O Workflow Migrator](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) pour migrer les workflows de traitement des ressources afin d’utiliser les microservices Asset compute.
-+ Configurez une [environnement de développement local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr) et déployez les index personnalisés. Assurez-vous que les index mis à jour sont à jour.
++ Configurez une [environnement de développement local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr) et déployez les index personnalisés. Vérifiez que les index mis à jour sont à jour.
 + Déployez la base de code mise à jour dans un environnement de développement as a Cloud Service AEM et continuez à valider.
 + Si vous modifiez un index prêt à l’emploi **TOUJOURS** copiez la dernière définition d’index à partir d’un environnement as a Cloud Service AEM s’exécutant sur la dernière version. Modifiez la définition d’index copiée selon vos besoins.
 
