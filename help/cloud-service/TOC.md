@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+source-git-commit: 6cbd8f3c49d44e75337715c35c198008da8ae7b9
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1023'
 ht-degree: 82%
 
 ---
@@ -108,7 +108,7 @@ ht-degree: 82%
       + [Vue d’ensemble](./developing/rde/overview.md)
       + [Configuration](./developing/rde/how-to-setup.md)
       + [Utilisation](./developing/rde/how-to-use.md)
-      + [Cycle de vie du développement](./developing/rde/development-life-cycle.md)
+      + [Cycle de vie d&#39;un développement](./developing/rde/development-life-cycle.md)
    + [Documentation JavaDocs de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html)
 + Déboguer AEM{#debugging}
    + Déboguer le SDK AEM{#debugging-aem-sdk}
@@ -128,6 +128,10 @@ ht-degree: 82%
          + [Avertissements relatifs aux conversions](./debugging/cloud-service/risks/traversals.md)
 + Diffusion de contenu{#content-delivery}
    + [Redirections d’URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=fr)
++ Mise en cache{#caching}
+   + [Vue d’ensemble](./caching/overview.md)
+   + [Service de publication d’AEM](./caching/publish.md)
+   + [Service d’auteur AEM](./caching/author.md)
 + Accéder à AEM{#accessing}
    + [Présentation](./accessing/overview.md)
    + [Utilisateurs Adobe IMS](./accessing/adobe-ims-users.md)
@@ -193,7 +197,7 @@ ht-degree: 82%
       + [5 - Création d’un formulaire](./forms/developing-for-cloud-service/deploy-your-first-form.md)
       + [6 - Gestionnaire d’envoi personnalisé](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
       + [7 - Activation des composants du portail Forms](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [8 - Inclure les Cloud Services et FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [8 - Inclure les Cloud Service et FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
       + [9 - Configuration cloud contextuelle](./forms/developing-for-cloud-service/context-aware-fdm.md)
       + [10 - Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
       + [11 - Déploiement dans l’environnement de développement](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
