@@ -10,9 +10,9 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
-source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
+source-git-commit: 7a240374c42e2555be25e682c803f51f442fb7f7
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1483'
 ht-degree: 14%
 
 ---
@@ -72,11 +72,29 @@ Homebrew est un gestionnaire de packages Open Source pour macOS, Windows et Linu
 1. Ouvrez votre terminal.
 1. Vérifiez si Homebrew est déjà installé en exécutant la commande : `brew --version`.
 1. Si Homebrew n’est pas installé, installez Homebrew.
-   + [Installation de Homebrew sur macOS](https://brew.sh/)
-      + Le raccourci sur macOS nécessite [Xcode](https://apps.apple.com/us/app/xcode/id497799835) ou [Outils de ligne de commande](https://developer.apple.com/download/more/), install-able via la commande :
-         + `xcode-select --install`
-   + [Installer Homebrew sous Linux](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
-   + [Installation de Homebrew sous Windows 10](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
+
+>[!BEGINTABS]
+
+>[!TAB macOS]
+
+[Homebrew sur macOS](https://brew.sh/) require [Xcode](https://apps.apple.com/us/app/xcode/id497799835) ou [Outils de ligne de commande](https://developer.apple.com/download/more/), install-able via la commande :
+
+```shell
+$ xcode-select --install
+```
+
+>[!TAB Windows]
+
+
+
+[Installation de Homebrew sous Windows 10](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
+
+>[!TAB Linux]
+
+[Installer Homebrew sous Linux](https://docs.brew.sh/Installation#linux-or-windows-10-subsystem-for-linux)
+
+>[!ENDTABS]
+
 1. Vérifiez que Homebrew est installé en exécutant la commande : `brew --version`
 
 ![Homebrew](./assets/development-tools/homebrew.png)
@@ -163,7 +181,7 @@ Apache Maven est l’outil de ligne de commande Java open source utilisé pour c
 
 La variable [Interface de ligne de commande Adobe I/O](https://github.com/adobe/aio-cli), ou `aio`, permet d’accéder à divers services Adobe en ligne de commande, notamment : [Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager) et [Asset compute](https://github.com/adobe/aio-cli-plugin-asset-compute). L’interface de ligne de commande d’Adobe I/O joue un rôle essentiel dans le développement sur AEM as a Cloud Service, car elle permet aux développeurs de :
 
-+ Suivi des journaux à partir d’AEM as a Cloud Services services
++ Suivi des journaux à partir d’AEM as a Cloud Service services
 + Gestion des pipelines de Cloud Manager à partir de l’interface de ligne de commande
 + Déployer sur [AEM Environnements de développement rapide](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html)
 
@@ -184,7 +202,7 @@ Le module externe Adobe I/O Cloud Manager permet à l’interface de ligne de co
 Pour que l’interface de ligne de commande de l’Adobe I/O communique avec Cloud Manager, une [L’intégration de Cloud Manager doit être créée dans Adobe I/O Console](https://github.com/adobe/aio-cli-plugin-cloudmanager), et les informations d’identification doivent être obtenues pour une authentification réussie.
 
 1. Connexion à [console.adobe.io](https://console.adobe.io)
-1. Assurez-vous que votre organisation qui comprend le produit Cloud Manager auquel se connecter est principale dans le sélecteur d’organisation Adobe
+1. Assurez-vous que votre organisation qui comprend le produit Cloud Manager auquel se connecter est active dans le sélecteur d’organisation Adobe.
 1. Créer ou ouvrir un [Programme Adobe I/O](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md)
    + Les programmes Adobe I/O Console sont simplement des regroupements organisationnels d’intégrations, de créer ou d’utiliser et de programmes existants en fonction de la manière dont vous souhaitez gérer vos intégrations.
    + Si vous créez un projet, sélectionnez &quot;Projet vide&quot; si vous y êtes invité (au lieu de &quot;Créer à partir d’un modèle&quot;).
