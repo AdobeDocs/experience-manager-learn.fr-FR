@@ -10,19 +10,20 @@ feature: Content Fragments
 topic: Content Management
 role: User
 team: TM
-source-git-commit: 73c7a13586edc5dbe16c16e017ee6f8ac91c1380
+source-git-commit: 89bc02b9ead98063ea31301b2e1f5a4d43cb5760
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 26%
+source-wordcount: '70'
+ht-degree: 24%
 
 ---
 
 
 # Vidéos AEM la console Fragments de contenu {#content-fragments-console}
 
-+ [Présentation](overview.md)
++ [Vue d’ensemble](overview.md)
 + Concepts de base{#basics}
-   + [Présentation](./basics/content-fragments-console.md)
+   + [Présentation de la console](./basics/content-fragments-console.md)
+   + [Présentation de l’éditeur](./basics/content-fragment-editor.md)
 + Recherche et découverte{#search}
    + [Filtrage rapide](search/fast-filtering.md)
    + [Références](search/references.md)
