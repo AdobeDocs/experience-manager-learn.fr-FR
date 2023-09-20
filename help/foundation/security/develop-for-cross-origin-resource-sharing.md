@@ -7,16 +7,21 @@ role: Developer
 level: Beginner
 feature: Security
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
-source-git-commit: 46728ac6ad37590413e247d23262233626b0575b
+source-git-commit: 6754ccd7c17bcfa30b7200cb67f5ebd290912cb4
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 82%
+source-wordcount: '376'
+ht-degree: 69%
 
 ---
 
 # Développer pour le partage de ressources entre origines multiples (CORS)
 
-Court exemple d’utilisation de [!DNL CORS] pour accéder au contenu d’AEM à partir d’une application web externe via du code JavaScript côté client.
+Court exemple d’utilisation de [!DNL CORS] pour accéder au contenu d’AEM à partir d’une application web externe via du code JavaScript côté client. Cet exemple utilise la configuration OSGi CORS pour activer l’accès à CORS sur AEM. L’approche de configuration OSGi est viable dans les cas suivants :
+
++ Une origine unique accède à AEM Publier du contenu
++ L’accès à la norme CORS est requis pour AEM Auteur
+
+Si un accès multi-origines à AEM Publication est requis, reportez-vous à la section [cette documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
 
@@ -109,7 +114,7 @@ Pour autoriser le [En-têtes de requête HTTP à transmettre à AEM pour traitem
 
 ### Mise en cache des en-têtes de réponse CORS
 
-Pour permettre la mise en cache et la diffusion des en-têtes CORS sur le contenu mis en cache, ajoutez les éléments suivants : [/cache /headers configuration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#caching-http-response-headers) Publication dans AEM `dispatcher.any` fichier .
+Pour permettre la mise en cache et la diffusion des en-têtes CORS sur le contenu mis en cache, ajoutez les éléments suivants : [/cache /headers configuration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#caching-http-response-headers) à l’AEM de publication `dispatcher.any` fichier .
 
 ```
 /publishfarm {
