@@ -10,7 +10,7 @@ kt: 10830
 thumbnail: KT-10830.jpg
 exl-id: 394792e4-59c8-43c1-914e-a92cdfde2f8a
 last-substantial-update: 2023-08-08T00:00:00Z
-source-git-commit: f619c431d91271b2031dcb233f3e08c3008b78ed
+source-git-commit: 58347d4f8ef50375385342671f68c26502aecba4
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 42%
@@ -35,7 +35,7 @@ CORS est obligatoire pour les connexions par navigateur aux API GraphQL d’AEM,
 
 ## Création AEM
 
-L’activation de CORS sur le service AEM Author diffère des services de publication et d’aperçu d’AEM AEM. Le service AEM Author requiert une configuration OSGi à ajouter au dossier de mode d’exécution du service AEM Author et n’utilise pas de configuration de Dispatcher.
+L’activation de la norme CORS sur AEM service Auteur diffère des services AEM Publication et Aperçu d’AEM. AEM service Auteur nécessite qu’une configuration OSGi soit ajoutée au dossier de mode d’exécution du service AEM Auteur et n’utilise pas de configuration Dispatcher.
 
 ### Configuration OSGi
 
@@ -46,7 +46,7 @@ La configuration OSGi de CORS AEM définit les critères d’autorisation pour a
 | Nécessite une configuration OSGi CORS | ✔ | ✘ | ✘ |
 
 
-L’exemple ci-dessous définit une configuration OSGi pour l’auteur AEM (`../config.author/..`) est donc principal uniquement sur le service AEM Author.
+L’exemple ci-dessous définit une configuration OSGi pour AEM Auteur (`../config.author/..`) est donc uniquement actif sur le service d’auteur AEM.
 
 Les principales propriétés de configuration sont :
 
@@ -55,12 +55,12 @@ Les principales propriétés de configuration sont :
    + Pour prendre en charge les requêtes persistantes GraphQL d’AEM, ajoutez le motif : `/graphql/execute.json.*`
    + Pour prendre en charge les fragments d’expérience, ajoutez le motif : `/content/experience-fragments/.*`
 + `supportedmethods` spécifie les méthodes HTTP autorisées pour les requêtes CORS. Pour prendre en charge AEM requêtes persistantes GraphQL (et les fragments d’expérience), ajoutez `GET` .
-+ `supportedheaders` inclut `"Authorization"` Les requêtes envoyées à l’auteur AEM doivent être autorisées.
-+ `supportscredentials` est défini sur `true` comme requête à l’auteur AEM doit être autorisé.
++ `supportedheaders` inclut `"Authorization"` comme les demandes à AEM Auteur doivent être autorisées.
++ `supportscredentials` est défini sur `true` comme demande à AEM auteur doit être autorisée.
 
 [En savoir plus sur la configuration OSGi CORS.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr)
 
-L’exemple suivant prend en charge AEM requêtes persistantes GraphQL sur l’auteur AEM. Pour utiliser des requêtes GraphQL définies par le client, ajoutez une URL de point de terminaison GraphQL dans `allowedpaths` et `POST` à `supportedmethods`.
+L’exemple suivant prend en charge AEM requêtes persistantes GraphQL sur AEM Auteur. Pour utiliser des requêtes GraphQL définies par le client, ajoutez une URL de point de terminaison GraphQL dans `allowedpaths` et `POST` à `supportedmethods`.
 
 + `/ui.config/src/main/content/jcr_root/apps/wknd-examples/osgiconfig/config.author/com.adobe.granite.cors.impl.CORSPolicyImpl~graphql.cfg.json`
 
@@ -101,12 +101,12 @@ L’exemple suivant prend en charge AEM requêtes persistantes GraphQL sur l’a
 
 ## Publication AEM
 
-L’activation de CORS sur les services de publication (et d’aperçu) AEM diffère du service d’auteur AEM. Le service AEM Publish nécessite l’ajout d’une configuration du Dispatcher AEM à la configuration du Dispatcher AEM Publish. AEM Publish n’utilise pas de [Configuration OSGi](#osgi-configuration).
+L’activation de CORS sur les services de publication (et d’aperçu) d’AEM est différente du service d’auteur AEM. AEM service de publication nécessite l’ajout d’une configuration AEM Dispatcher à la configuration du Dispatcher de la publication d’Adobe. AEM Publier n’utilise pas une [Configuration OSGi](#osgi-configuration).
 
-Lors de la configuration de CORS sur AEM Publish, assurez-vous que :
+Lors de la configuration de la norme CORS sur AEM Publish, assurez-vous que :
 
-+ La variable `Origin` L’en-tête de requête HTTP ne peut pas être envoyé au service de publication AEM, en supprimant `Origin` En-tête (s’il a été ajouté) du projet AEM Dispatcher `clientheaders.any` fichier . Quelconque `Access-Control-` Les en-têtes doivent être supprimés du `clientheaders.any` et Dispatcher les gèrent, et non le service de publication AEM.
-+ Si vous avez des [Configurations OSGi CORS](#osgi-configuration) activée sur votre service AEM Publish, vous devez les supprimer et migrer leurs configurations vers le [Configuration du vhost de Dispatcher](#set-cors-headers-in-vhost) décrite ci-dessous.
++ La variable `Origin` L’en-tête de requête HTTP ne peut pas être envoyé au service de publication AEM, en supprimant la propriété `Origin` En-tête (s’il a été ajouté) du projet AEM Dispatcher `clientheaders.any` fichier . Quelconque `Access-Control-` Les en-têtes doivent être supprimés du `clientheaders.any` et Dispatcher les gère, et non AEM service de publication.
++ Si vous avez des [Configurations OSGi CORS](#osgi-configuration) activée sur votre service de publication d’AEM, vous devez les supprimer et migrer leurs configurations vers le [Configuration du vhost de Dispatcher](#set-cors-headers-in-vhost) décrite ci-dessous.
 
 ### Configuration du Dispatcher
 
@@ -118,10 +118,10 @@ Le Dispatcher du service Publication AEM (et aperçu) doit être configuré pour
 
 #### Définition des en-têtes CORS dans vhost
 
-1. Ouvrez le fichier de configuration vhost pour le service AEM Publish, dans votre projet de configuration de Dispatcher, généralement à l’adresse `dispatcher/src/conf.d/available_vhosts/<example>.vhost`
+1. Ouvrez le fichier de configuration vhost pour le service de publication AEM, dans votre projet de configuration de Dispatcher, généralement à l’adresse `dispatcher/src/conf.d/available_vhosts/<example>.vhost`
 2. Copiez le contenu de la `<IfDefine ENABLE_CORS>...</IfDefine>` ci-dessous, dans votre fichier de configuration vhost activé.
 
-   ```{ highlight="19"}
+   ```{ highlight="17"}
    <VirtualHost *:80>
      ...
      <IfModule mod_headers.c>
@@ -176,7 +176,7 @@ Le Dispatcher du service Publication AEM (et aperçu) doit être configuré pour
    </VirtualHost>
    ```
 
-3. Faites correspondre les origines souhaitées accédant à votre service de publication AEM en mettant à jour l’expression régulière dans la ligne ci-dessous. Si plusieurs origines sont requises, dupliquez cette ligne et mettez à jour pour chaque origine/origine modèle.
+3. Correspondez aux origines souhaitées accédant à votre service de publication AEM en mettant à jour l’expression régulière dans la ligne ci-dessous. Si plusieurs origines sont requises, dupliquez cette ligne et mettez à jour pour chaque origine/origine modèle.
 
    ```
    SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*.your-domain.tld(:\d+)?$)#" CORSTrusted=true
