@@ -1,6 +1,6 @@
 ---
-title: Configuration de l’exécution AEM locale pour AEM développement as a Cloud Service
-description: Configurez le Runtime AEM local à l’aide du fichier Jar de démarrage rapide du SDK as a Cloud Service.
+title: Configuration du SDK AEM local pour AEM développement as a Cloud Service
+description: Configurez l’exécution du SDK AEM local à l’aide du fichier Jar de démarrage rapide du SDK as a Cloud Service AEM.
 feature: Developer Tools
 version: Cloud Service
 kt: 4678, 4677
@@ -10,14 +10,14 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
-source-git-commit: 9073c1d41c67ec654b232aea9177878f11793d07
+source-git-commit: 2a412126ac7a67a756d4101d56c1715f0da86453
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1793'
 ht-degree: 16%
 
 ---
 
-# Configuration de l’exécution d’AEM locale {#set-up-local-aem-runtime}
+# Configuration du SDK d’AEM local {#set-up-local-aem-sdk}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
@@ -65,7 +65,7 @@ $ java --version
 
 ## Téléchargement du SDK as a Cloud Service AEM
 
-Le SDK as a Cloud Service AEM, ou SDK AEM, contient le fichier Quickstart Jar utilisé pour exécuter AEM Author et Publier localement pour le développement, ainsi que la version compatible des outils Dispatcher.
+Le SDK as a Cloud Service AEM, ou SDK AEM, contient le fichier Quickstart Jar utilisé pour exécuter l’instance de création et de publication d’Adobe en local pour le développement, ainsi que la version compatible des outils de Dispatcher.
 
 1. Connexion à [https://experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads) avec votre Adobe ID
    + Notez que votre organisation Adobe __must__ être configuré pour AEM as a Cloud Service pour télécharger le SDK as a Cloud Service AEM.
@@ -78,18 +78,18 @@ Le SDK as a Cloud Service AEM, ou SDK AEM, contient le fichier Quickstart Jar ut
 
 1. Décompressez le fichier téléchargé. `aem-sdk-XXX.zip` fichier
 
-## Configuration du service AEM Author local{#set-up-local-aem-author-service}
+## Configuration du service d’auteur d’AEM local{#set-up-local-aem-author-service}
 
-Le service AEM Author local fournit aux développeurs une expérience locale que les spécialistes du marketing numérique/auteurs de contenu peuvent partager pour créer et gérer du contenu.  Le service d’auteur AEM est conçu comme un environnement de création et de prévisualisation. Il permet d’effectuer la plupart des validations du développement de fonctionnalités par rapport à celui-ci, ce qui en fait un élément essentiel du processus de développement local.
+Le service de création d’AEM local fournit aux développeurs une expérience locale que les spécialistes du marketing numérique/auteurs de contenu vont partager pour créer et gérer du contenu.  Le service de création d’AEM est conçu comme un environnement de création et de prévisualisation. Il permet d’effectuer la plupart des validations du développement de fonctionnalités, ce qui en fait un élément essentiel du processus de développement local.
 
 1. Création du dossier `~/aem-sdk/author`
 1. Copiez le __Quickstart JAR__ vers  `~/aem-sdk/author` et renommez-le en `aem-author-p4502.jar`
-1. Démarrez le service AEM Author local en exécutant les éléments suivants à partir de la ligne de commande :
+1. Démarrez le service d’auteur d’AEM local en exécutant ce qui suit à partir de la ligne de commande :
    + `java -jar aem-author-p4502.jar`
       + Indiquez le mot de passe administrateur en tant que `admin`. Tout mot de passe administrateur est acceptable, mais il est recommandé d’utiliser la valeur par défaut pour le développement local afin de réduire la nécessité de reconfigurer.
 
    You *cannot* Démarrez l’AEM en tant que fichier Jar de démarrage rapide Cloud Service [en double-cliquant](#troubleshooting-double-click).
-1. Accédez au service AEM Author local à l’adresse [http://localhost:4502](http://localhost:4502) dans un navigateur Web
+1. Accédez au service d’auteur d’AEM local à l’adresse [http://localhost:4502](http://localhost:4502) dans un navigateur Web
 
 >[!BEGINTABS]
 
@@ -125,13 +125,13 @@ $ java -jar aem-author-p4502.jar
 >[!ENDTABS]
 
 
-## Configuration du service de publication AEM local
+## Configuration du service de publication d’AEM local
 
-Le service de publication AEM local fournit aux développeurs l’expérience locale que les utilisateurs finaux de l’AEM auront, comme la navigation sur le site Web hébergé sur AEM. Un service de publication AEM local est important dans la mesure où il s’intègre aux SDK AEM [Outils de Dispatcher](./dispatcher-tools.md) et permet aux développeurs de tester et d’affiner l’expérience de contact de l’utilisateur final.
+Le service de publication d’AEM local fournit aux développeurs l’expérience locale que les utilisateurs finaux de l’AEM auront, comme la navigation sur le site Web hébergé sur l’. Un service de publication d’AEM local est important, car il s’intègre aux SDK d’AEM [Outils de Dispatcher](./dispatcher-tools.md) et permet aux développeurs de tester et d’affiner l’expérience de contact de l’utilisateur final.
 
 1. Création du dossier `~/aem-sdk/publish`
 1. Copiez le __Quickstart JAR__ vers  `~/aem-sdk/publish` et renommez-le en `aem-publish-p4503.jar`
-1. Démarrez le service de publication AEM local en exécutant les éléments suivants à partir de la ligne de commande :
+1. Démarrez le service de publication d’AEM local en exécutant ce qui suit à partir de la ligne de commande :
    + `java -jar aem-publish-p4503.jar`
       + Indiquez le mot de passe administrateur en tant que `admin`. Tout mot de passe administrateur est acceptable, mais il est recommandé d’utiliser la valeur par défaut pour le développement local afin de réduire la nécessité de reconfigurer.
 
@@ -174,7 +174,7 @@ $ java -jar aem-publish-p4503.jar
 
 ## Configuration des services d’AEM locaux en mode bêta
 
-L’exécution AEM locale peut être démarrée dans [mode bêta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr) permettant à un développeur de se positionner par rapport aux fonctionnalités de la prochaine version d’AEM as a Cloud Service. La version préliminaire est activée en transmettant le `-r prerelease` sur le premier démarrage de l’exécution AEM locale. Vous pouvez l’utiliser avec les services AEM Author et AEM Publish locaux.
+L’exécution AEM locale peut être démarrée dans [mode bêta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr) permettant à un développeur de se positionner par rapport aux fonctionnalités de la prochaine version d’AEM as a Cloud Service. La version préliminaire est activée en transmettant le `-r prerelease` sur le premier démarrage de l’exécution AEM locale. Vous pouvez l’utiliser avec les services d’auteur AEM local et de publication AEM.
 
 
 >[!BEGINTABS]
@@ -267,14 +267,14 @@ Les permutations disponibles sont les suivantes :
 
 Notez que le numéro de port peut être n’importe quel port disponible sur la machine de développement locale, par convention :
 
-+ Port __4502__ est utilisé pour la variable __service AEM Author local__
-+ Port __4503__ est utilisé pour la variable __service AEM Publish local__
++ Port __4502__ est utilisé pour la variable __service d’auteur d’AEM local__
++ Port __4503__ est utilisé pour la variable __service de publication d’AEM local__
 
 Pour les modifier, il peut être nécessaire d’apporter des modifications aux configurations AEM SDK.
 
 ## Arrêt d’une exécution d’AEM locale
 
-Pour arrêter une exécution d’AEM locale, qu’il s’agisse d’un service AEM Author ou de publication, ouvrez la fenêtre de ligne de commande qui a été utilisée pour démarrer l’exécution AEM, puis appuyez sur `Ctrl-C`. Attendez la fermeture de AEM. Une fois le processus d’arrêt terminé, l’invite de ligne de commande est disponible.
+Pour arrêter une exécution d’AEM locale, qu’il s’agisse d’AEM Author ou de service Publish, ouvrez la fenêtre de ligne de commande qui a été utilisée pour démarrer l’exécution d’AEM, puis appuyez sur `Ctrl-C`. Attendez la fermeture de AEM. Une fois le processus d’arrêt terminé, l’invite de ligne de commande est disponible.
 
 ## Tâches facultatives de configuration de l’exécution d’AEM locale
 
@@ -308,7 +308,7 @@ Lorsque vous double-cliquez sur le fichier Quickstart Jar pour démarrer, un mod
 
 Cela est dû au fait qu’AEM fichier Jar de démarrage rapide as a Cloud Service ne prend pas en charge le double-clic sur le fichier Jar de démarrage rapide pour commencer AEM localement. Vous devez plutôt exécuter le fichier Jar à partir de cette ligne de commande.
 
-Pour démarrer le service AEM Author, `cd` dans le répertoire contenant le fichier Quickstart Jar et exécutez la commande :
+Pour démarrer AEM service Auteur, `cd` dans le répertoire contenant le fichier Quickstart Jar et exécutez la commande :
 
 >[!BEGINTABS]
 
@@ -334,7 +334,7 @@ $ java -jar aem-author-p4502.jar
 
 >[!ENDTABS]
 
-ou pour démarrer le service de publication AEM, `cd` dans le répertoire contenant le fichier Quickstart Jar et exécutez la commande :
+ou pour lancer AEM service de publication, `cd` dans le répertoire contenant le fichier Quickstart Jar et exécutez la commande :
 
 >[!BEGINTABS]
 
@@ -377,7 +377,7 @@ Quickstart: aborting
 
 En effet, AEM as a Cloud Service nécessite Java SDK 11 et vous exécutez une version différente, probablement Java 8. Pour résoudre ce problème, téléchargez et installez [Oracle Java SDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14).
 
-Une fois le SDK Java 11 Oracle installé, vérifiez qu’il s’agit de la version principale en exécutant la commande à partir de la ligne de commande :
+Une fois le SDK Java 11 Oracle installé, vérifiez qu’il s’agit de la version active en exécutant la commande à partir de la ligne de commande :
 
 >[!BEGINTABS]
 
