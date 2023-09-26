@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: d24649d4b1411f57a46595edddb601ac49b51643
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 100%
@@ -13,6 +13,8 @@ ht-degree: 100%
 ---
 
 # Vidéos et tutoriels sur AEM Sites {#overview}
+
+{{edge-delivery-services}}
 
 Adobe Experience Manager (AEM) Sites est une plateforme de gestion de l’expérience de premier plan. Ce guide d’utilisation contient des vidéos et des tutoriels sur les nombreuses fonctions et capacités d’AEM Sites.
 
@@ -22,24 +24,19 @@ Adobe Experience Manager (AEM) Sites est une plateforme de gestion de l’ex
 ## Nouveautés
 
 * **[Utiliser les lancements avec AEM Sites (vidéo).](./page-authoring/launches.md)**
-
-   *Découvrez les lancements d’AEM Sites et la manière dont ils peuvent être utilisés pour préparer le contenu d’un site web pour une publication future.*
+  *Découvrez les lancements d’AEM Sites et la manière dont ils peuvent être utilisés pour préparer le contenu d’un site web pour une publication future.*
 
 * **[Personnaliser la couche de données client Adobe avec les composants AEM (tutoriel).](./integrations/adobe-client-data-layer/data-layer-customize.md)**
-
-   *Apprenez à mettre à jour la couche de données client Adobe avec le contenu des composants AEM personnalisés.*
+  *Apprenez à mettre à jour la couche de données client Adobe avec le contenu des composants AEM personnalisés.*
 
 * **[Démarrer avec AEM Headless GraphQL (tutoriel).](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)**
-
-   *Comment exposer le contenu d’AEM pour qu’il soit consommé par une application mobile native en utilisant les API GraphQL d’AEM.*
+  *Comment exposer le contenu d’AEM pour qu’il soit consommé par une application mobile native en utilisant les API GraphQL d’AEM.*
 
 * **[Utilisation des fragments de contenu (série de vidéos).](./content-fragments/content-fragments-feature-video-use.md)**
-
-   *Les fragments de contenu sont des morceaux de contenu agnostiques de canal pouvant être réutilisés.*
+  *Les fragments de contenu sont des morceaux de contenu agnostiques de canal pouvant être réutilisés.*
 
 * **[Utilisation de l’éditeur de SPA (vidéo).](./spa-editor/spa-editor-framework-feature-video-use.md)**
-
-   *Découvrez les capacités d’édition d’AEM pour les applications monopages (SPA).*
+  *Découvrez les capacités d’édition d’AEM pour les applications monopages (SPA).*
 
 </div>
 

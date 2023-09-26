@@ -10,7 +10,7 @@ kt: 4082
 thumbnail: 30214.jpg
 exl-id: e9d06dc2-ac3b-48c5-ae00-fdaf5bb45b54
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '3040'
 ht-degree: 99%
@@ -18,6 +18,8 @@ ht-degree: 99%
 ---
 
 # Pages et modèles {#pages-and-template}
+
+{{edge-delivery-services-and-page-editor}}
 
 Dans ce chapitre, explorons la relation entre un composant de page de base et des modèles modifiables. Découvrez comment créer un modèle d’article sans style basé sur certaines maquettes d’[Adobe XD](https://helpx.adobe.com/fr/support/xd.html). Lors du processus de création du modèle, les composants principaux et les configurations de politiques avancées des modèles modifiables sont traités.
 

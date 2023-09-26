@@ -14,20 +14,22 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2213d1f2-37ed-4897-a68d-04ef423395a3
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '218'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
 # Utilisation de modèles de page modifiables{#using-template-editor-with-aem-sites}
 
+{{edge-delivery-services-and-page-editor}}
+
 Les modèles modifiables permettent aux auteurs spécialisés de créer et de mettre à jour des modèles de page et de gérer des configurations de stratégie avancées avec Adobe Experience Manager (AEM) Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/326784?quality=12&learn=on)
 
-Les modèles modifiables sont la recommandation pour créer AEM Sites.
+Les modèles modifiables sont la recommandation pour la création d’AEM Sites.
 
 **Expérience de création cohérente** - Les améliorations apportées à la création AEM Sites sont transférées à l’édition de modèles, notamment le mode Mise en page en ligne et le panneau Arborescence de contenu.
 

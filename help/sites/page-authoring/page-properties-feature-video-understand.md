@@ -9,14 +9,16 @@ level: Beginner
 kt: 4321
 thumbnail: 32192.jpg
 exl-id: 41b40982-9796-418e-9bfc-af6fc720e9b8
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 42%
+ht-degree: 55%
 
 ---
 
 # Présentation des propriétés de page {#understanding-page-properties-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 La vidéo suivante présente les propriétés de page associées à une page dans Adobe Experience Manager.
 
@@ -35,14 +37,14 @@ Dans cette vidéo, les éléments de propriété de page suivants sont abordés 
       * Sous-titre
       * Description
    * Heure d’activation/de désactivation
-   * URL Vanity
+   * URL de redirection
 * Avancé
    * Paramètres
       * Langue
       * Rediriger
       * Conception
       * Alias
-   * Configuration du cloud
+   * Configuration du cloud.
    * Paramètres de modèles
    * Exigence d’authentification
    * Exportation
@@ -57,5 +59,5 @@ Dans cette vidéo, les éléments de propriété de page suivants sont abordés 
 ## Ressources supplémentaires {#additional-resources}
 
 * [Modification de la documentation des propriétés de page](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
-* [Modification de la documentation sur le contenu de la page](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html)
-* [Guide rapide pour la création de pages](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+* [Documentation sur la modification de contenu d’une page.](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=fr)
+* [Guide rapide pour la création de pages.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=fr)

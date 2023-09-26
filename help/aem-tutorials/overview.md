@@ -2,14 +2,16 @@
 title: Tutoriels AEM
 description: Ensemble de vidéos et de tutoriels pour Adobe Experience Manager.
 exl-id: fe83a2dc-b43a-4e71-9b03-d31ec4f6a6ff
-source-git-commit: ebe252116f677ff7486346077736d0ee450896c1
-workflow-type: ht
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 100%
 
 ---
 
 # Tutoriels sur Experience Manager {#overview}
+
+{{edge-delivery-services}}
 
 Adobe Experience Manager (AEM) est la principale plateforme de gestion de l’expérience. Ce guide d’utilisation contient des vidéos et des tutoriels qui vous aident à tirer le meilleur parti d’AEM.
 

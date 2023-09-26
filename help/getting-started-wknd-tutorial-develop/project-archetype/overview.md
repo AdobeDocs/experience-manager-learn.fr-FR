@@ -11,14 +11,16 @@ mini-toc-levels: 1
 index: y
 exl-id: 90d14734-f644-4a45-9361-1e47a5b52fff
 recommendations: disable
-source-git-commit: bbdb045edf5f2c68eec5094e55c1688e725378dc
-workflow-type: ht
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 100%
 
 ---
 
 # Prendre en main AEM Sites - Archétype de projet {#project-archetype}
+
+{{edge-delivery-services-and-page-editor}}
 
 Bienvenue dans ce tutoriel en plusieurs parties conçu pour les développeurs et développeuses qui découvrent Adobe Experience Manager (AEM). Ce tutoriel décrit l’implémentation d’un site AEM pour une marque de style de vie fictive, WKND.
 
@@ -54,7 +56,7 @@ Les logiciels suivants doivent être installés localement :
 
 >[!NOTE]
 >
-> **Vous découvrez AEM as a Cloud Service ?** Consultez le [guide suivant pour configurer un environnement de développement local avec le SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr).
+> **Vous découvrez AEM as a Cloud Service ?** Consultez le [guide suivant pour configurer un environnement de développement local à l’aide du SDK d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr).
 >
 > **Vous découvrez AEM 6.5 ?** Consultez le [guide de configuration suivant pour mettre en place un environnement de développement local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr).
 

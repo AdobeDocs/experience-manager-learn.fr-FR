@@ -1,7 +1,7 @@
 ---
 title: Utilisation de la différence de page avec AEM Sites
 seo-title: Using Page Difference with AEM Sites
-description: Les fonctionnalités de différences de page d’AEM Sites affichent une vue rapide et codée en couleur de ce que le contenu a changé dans une page (version, Live Copy, lancements, copie de langue).
+description: Les fonctionnalités de différence de page d’AEM Sites affichent une vue rapide et codée en couleur de ce que le contenu a changé dans une page (version, Live Copy, lancements, copie de langue).
 seo-description: AEM Sites' page difference capabilities show provides a quick, color-coded view of what content has changed in a page (version, live copy, launches, language copy).
 topics: authoring
 audience: author, marketer
@@ -16,7 +16,7 @@ feature: Authoring
 role: User
 level: Beginner
 exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 1%
@@ -25,7 +25,9 @@ ht-degree: 1%
 
 # Utilisation de la fonction Différence de page {#using-page-difference-with-aem-sites}
 
-Les fonctionnalités de différences de page d’AEM Sites affichent une vue rapide et codée en couleur de ce que le contenu a changé dans une page (version, Live Copy, lancements, copie de langue).
+{{edge-delivery-services-and-page-editor}}
+
+Les fonctionnalités de différence de page d’AEM Sites affichent une vue rapide et codée en couleur de ce que le contenu a changé dans une page (version, Live Copy, lancements, copie de langue).
 
 ## Comparaison des versions de page {#comparing-page-versions}
 
@@ -33,14 +35,14 @@ Les fonctionnalités de différences de page d’AEM Sites affichent une vue rap
 
 **Modifications du HTML**
 
-* **Vert**: Nouveau contenu
-* **Rouge**: Contenu supprimé
+* **Vert**: nouveau contenu
+* **Rouge**: contenu supprimé
 
 **Modifications des composants**
 
-* **Vert**: Nouveau composant
-* **Rouge**: Composant supprimé
-* **Bleu**: Composant modifié
+* **Vert**: nouveau composant
+* **Rouge**: composant supprimé
+* **bleu**: composant modifié
 
 ## Comparaison des pages de lancement {#comparing-launch-pages}
 

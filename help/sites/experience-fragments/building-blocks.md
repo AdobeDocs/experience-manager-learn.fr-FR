@@ -11,7 +11,7 @@ doc-type: feature video
 kt: 660
 thumbnail: 331786.jpg
 exl-id: cc758602-3c20-4eca-9b87-f04b6dc96bfe
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -20,6 +20,7 @@ ht-degree: 0%
 
 # Création de blocs avec des fragments d’expérience {#building-blocks}
 
+{{edge-delivery-services-and-page-editor}}
 
 Les blocs de création sont une sous-fonctionnalité des fragments d’expérience. Les blocs de création permettent aux auteurs de contenu de réutiliser des composants dans différentes variantes des fragments d’expérience.
 

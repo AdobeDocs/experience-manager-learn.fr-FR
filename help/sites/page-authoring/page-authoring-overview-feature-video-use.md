@@ -15,14 +15,16 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: a14c511f-504a-48ce-864b-b1a30cbaea9a
-source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 21%
+ht-degree: 31%
 
 ---
 
 # Création d’une page {#authoring-page-aem-sites}
+
+{{edge-delivery-services-and-page-editor}}
 
 Découvrez comment créer une page dans Adobe Experience Manager Sites à l’aide de l’interface utilisateur de l’éditeur de site.
 
@@ -35,9 +37,9 @@ Dans cette vidéo, les fonctionnalités suivantes sont abordées :
    * Modifier
    * Mise en page
    * Développeur
-   * Distorsion du temps Timewarp
+   * Distorsion du temps
 * Fonctionnalités de l’éditeur de page
-   * Outil de recherche de composant
+   * Outil de recherche
    * Outil de recherche de ressources
 * Ajouter du contenu à un composant existant
 * Ajout d’un nouveau composant à votre page
@@ -49,5 +51,5 @@ Dans cette vidéo, les fonctionnalités suivantes sont abordées :
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Modification de la documentation sur le contenu de la page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=fr)
-* [Guide rapide pour la création de pages](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)
+* [Documentation sur la modification de contenu d’une page.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=fr)
+* [Guide rapide pour la création de pages.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=fr)

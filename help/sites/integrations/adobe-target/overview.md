@@ -13,7 +13,7 @@ level: Beginner
 badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 50%
@@ -22,9 +22,11 @@ ht-degree: 50%
 
 # Intégration d’AEM Sites et d’Adobe Target
 
+{{edge-delivery-services-and-page-editor}}
+
 Découvrez comment intégrer AEM Sites et Adobe Target pour offrir des expériences personnalisées.
 
-Adobe Experience Manager (AEM) et Adobe Target sont de puissantes solutions dotées de fonctionnalités complémentaires, offrant une intégration transparente pour offrir des expériences personnalisées. Cependant, les clients peuvent rencontrer des difficultés pour comprendre comment et quand utiliser efficacement ces produits ensemble. Afin d’optimiser l’expérience pour chaque utilisateur final, il est essentiel que différentes équipes au sein de votre organisation collaborent étroitement et définissent des rôles et des responsabilités clairs. En tirant parti de l’intégration entre AEM et Adobe Target, vos équipes peuvent travailler harmonieusement pour offrir des expériences personnalisées exceptionnelles.
+Adobe Experience Manager (AEM) et Adobe Target sont des solutions puissantes dotées de fonctionnalités complémentaires, qui offrent une intégration transparente pour offrir des expériences personnalisées. Cependant, les clients peuvent rencontrer des difficultés pour comprendre comment et quand utiliser efficacement ces produits ensemble. Afin d’optimiser l’expérience pour chaque utilisateur final, il est essentiel que différentes équipes au sein de votre organisation collaborent étroitement et définissent des rôles et des responsabilités clairs. En tirant parti de l’intégration entre AEM et Adobe Target, vos équipes peuvent travailler harmonieusement pour offrir des expériences personnalisées exceptionnelles.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41241?quality=12&learn=on)
 
