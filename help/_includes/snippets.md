@@ -1,7 +1,7 @@
 ---
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
+source-git-commit: 7f7bffa24539d0bba0dc9ac8cc94d0c8d1f2e871
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
@@ -13,12 +13,12 @@ ht-degree: 0%
 
 ## Services de diffusion Edge{#edge-delivery-services}
 
-[!BADGE Pour la publication d’AEM aux Edge Delivery Services, cliquez ici.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publier des AEM vers des Edge Delivery Services"}
+[!BADGE Pour publier à partir d’AEM Sites à l’aide d’Edge Delivery Services, cliquez ici.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publier des AEM vers des Edge Delivery Services"}
 
 ## Edge Delivery Services et éditeur de page{#edge-delivery-services-and-page-editor}
 
-[!BADGE Pour la publication d’AEM aux Edge Delivery Services, cliquez ici.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publier des AEM vers des Edge Delivery Services"}
+[!BADGE Pour publier à partir d’AEM Sites à l’aide d’Edge Delivery Services, cliquez ici.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publier des AEM vers des Edge Delivery Services"}
 
 ## Edge Delivery Services et éditeur visuel universel{#edge-delivery-services-and-universal-visual-editor}
 
-[!BADGE Pour la publication d’AEM aux Edge Delivery Services, cliquez ici.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publier des AEM vers des Edge Delivery Services"}
+[!BADGE Pour publier à partir d’AEM Sites à l’aide d’Edge Delivery Services, cliquez ici.]{type=Positive url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html" tooltip="Publier des AEM vers des Edge Delivery Services"}
