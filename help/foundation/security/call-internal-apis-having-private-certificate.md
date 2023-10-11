@@ -10,17 +10,19 @@ kt: 11548
 thumbnail: KT-11548.png
 doc-type: article
 last-substantial-update: 2023-08-25T00:00:00Z
-source-git-commit: d4859d8af066d456f16f76869e99432aaa5b9863
+exl-id: c88aa724-9680-450a-9fe8-96e14c0c6643
+source-git-commit: 68aaa58c8f95e72e1a7cb89f849c77d1210f31ee
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
 
-
 # Appel d’API internes avec des certificats privés
 
 Découvrez comment effectuer des appels HTTPS d’AEM aux API web à l’aide de certificats privés ou auto-signés.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424853?quality=12&learn=on)
 
 Par défaut, lorsque vous tentez d’établir une connexion HTTPS à une API web qui utilise un certificat auto-signé, la connexion échoue avec l’erreur :
 
@@ -148,3 +150,10 @@ Suivez les étapes ci-dessous :
 Pour appeler efficacement les API internes avec des certificats privés, une approche conventionnelle consiste à modifier le KeyStore JVM. Pour ce faire, vous devez importer les certificats privés à l’aide de Java™ [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) .
 
 Toutefois, cette méthode n’est pas alignée sur les bonnes pratiques en matière de sécurité et AEM offre une option supérieure grâce à l’utilisation de la variable **Trust Store mondial** et [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
+
+
+## Package de solution
+
+L’exemple de projet Node.js illustré dans la vidéo peut être téléchargé à partir de [here](assets/internal-api-call/REST-APIs.zip).
+
+Le code du servlet AEM est disponible dans le projet WKND Sites `tutorial/web-api-invocation` branche, [see](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
