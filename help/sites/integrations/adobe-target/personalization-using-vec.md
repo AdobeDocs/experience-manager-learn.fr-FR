@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '522'
 ht-degree: 7%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 7%
 
 Découvrez comment créer une activité Target de test A/B à l’aide du compositeur d’expérience visuelle (VEC).
 
-## Conditions préalables
+## Conditions préalables requises
 
 Pour utiliser le compositeur d’expérience visuelle sur un site web AEM, la configuration suivante doit être effectuée :
 
@@ -38,19 +38,19 @@ La page d’accueil du site WKND présente les activités locales ou les meilleu
 
 ## Procédure de création d’un test A/B à l’aide du compositeur d’expérience visuelle (VEC)
 
-1. Connectez-vous à [Adobe Experience Cloud](https://experience.adobe.com/), appuyez sur . __Cible__, accédez au __Activités__ tab
+1. Connexion à [Adobe Experience Cloud](https://experience.adobe.com/), appuyez sur . __Cible__, accédez à la __Activités__ tab
 
-   + Si vous ne voyez pas __Cible__ dans le tableau de bord de l’Experience Cloud, assurez-vous que la bonne organisation d’Adobe est sélectionnée dans le sélecteur d’organisation en haut à droite et que l’accès à Target a été accordé à votre utilisateur dans [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Si vous ne voyez pas __Cible__ dans le tableau de bord de l’Experience Cloud, assurez-vous que la bonne organisation d’Adobe est sélectionnée dans le sélecteur d’organisation en haut à droite et que l’utilisateur a accès à Target dans [Adobe Admin Console](https://adminconsole.adobe.com/).
 
-1. Cliquez sur **Création d’une activité** puis choisissez **Test A/B** activité
+1. Cliquez sur **Créer une activité** puis choisissez **Test A/B** activité
 
    ![Activité A/B](assets/ab-target-activity.png)
 
-1. Sélectionnez la **Compositeur d’expérience visuelle** , indiquez l’URL d’activité, puis cliquez sur **Suivant**
+1. Sélectionnez la variable **Compositeur d’expérience visuelle** , indiquez l’URL d’activité, puis cliquez sur **Suivant**
 
    ![URL d’activité](assets/ab-test-url.png)
 
-1. Le compositeur d’expérience visuelle affiche deux onglets sur le côté gauche après la création d’une activité : *Expérience A* et *Expérience B*. Sélectionnez une expérience dans la liste. Vous pouvez ajouter de nouvelles expériences à la liste à l’aide du **Ajout d’une expérience** bouton .
+1. Le compositeur d’expérience visuelle affiche deux onglets sur le côté gauche après la création d’une activité : *Expérience A* et *Expérience B*. Sélectionnez une expérience dans la liste. Vous pouvez ajouter de nouvelles expériences à la liste à l’aide du **Ajouter une expérience** bouton .
 
    ![Expérience A](assets/experience.png)
 
@@ -86,9 +86,9 @@ La page d’accueil du site WKND présente les activités locales ou les meilleu
 
 ## Résumé
 
-Dans ce chapitre, un marketeur a pu créer une expérience à l’aide du compositeur d’expérience visuelle en faisant glisser et en déposant, en permutant et en modifiant la mise en page et le contenu d’une page web sans modifier de code pour exécuter un test.
+Dans ce chapitre, un spécialiste du marketing a pu créer une expérience à l’aide du compositeur d’expérience visuelle en faisant glisser et en déposant, en permutant et en modifiant la mise en page et le contenu d’une page web sans modifier le code pour exécuter un test.
 
 ## Liens pris en charge
 
-+ [Débogueur Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Débogueur Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Débogueur Adobe Experience Cloud - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)

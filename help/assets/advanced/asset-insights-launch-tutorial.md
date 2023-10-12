@@ -1,6 +1,6 @@
 ---
 title: Configuration des statistiques sur les ressources avec AEM Assets et Adobe Launch
-description: Dans cette série de vidéos en 5 parties, nous examinons la configuration et la configuration des statistiques sur les ressources pour le Experience Manager déployé via Launch by Adobe.
+description: Dans cette série de vidéos en cinq parties, examinons la configuration et la configuration des statistiques sur les ressources pour le Experience Manager déployé via Launch by Adobe.
 feature: Asset Insights
 version: 6.4, 6.5
 topic: Integrations
@@ -10,18 +10,18 @@ last-substantial-update: 2022-06-04T00:00:00Z
 badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
 
 # Configuration des statistiques sur les ressources avec AEM Assets et Adobe Experience Platform Launch
 
-Dans cette série de vidéos en 5 parties, nous examinons la configuration et la configuration des statistiques sur les ressources pour les Experience Manager déployés via Adobe Launch.
+Dans cette série de vidéos en cinq parties, examinons la configuration et la configuration des statistiques sur les ressources pour Experience Manager déployées via Adobe Launch.
 
-## Partie 1 : Présentation des statistiques sur les ressources {#overview}
+## Partie 1 : présentation des statistiques sur les ressources {#overview}
 
 Présentation des statistiques sur les ressources. Installez les composants principaux, l’exemple de composant d’image et d’autres modules de contenu pour préparer votre environnement.
 
@@ -35,12 +35,12 @@ Présentation des statistiques sur les ressources. Installez les composants prin
 >
 >Veillez à télécharger le [dernière version des composants principaux](https://github.com/adobe/aem-core-wcm-components) pour votre mise en oeuvre.
 
-La vidéo utilise les composants principaux v2.2.2 qui ne sont plus la dernière version ; veillez à utiliser la dernière version avant de passer à la section suivante.
+La vidéo utilise les composants principaux v2.2.2, qui n’est pas la dernière version. Veillez à utiliser la dernière version avant de passer à la section suivante.
 
 * Télécharger [Exemple de contenu d’image pour Asset Insights](./assets/asset-insights-launch-tutorial/aem-assets-insights-sample.zip)
 * Télécharger [les derniers composants principaux de la gestion de contenu web AEM](https://github.com/adobe/aem-core-wcm-components/releases)
 
-## Partie 2 : Activation du suivi des statistiques sur les ressources pour un exemple de composant d’image {#sample-image-component-asset-insights}
+## Partie 2 : activation du suivi des statistiques sur les ressources pour un exemple de composant d’image {#sample-image-component-asset-insights}
 
 Améliorations apportées aux composants principaux et utilisation du composant proxy (exemple de composant Image) pour les statistiques sur les ressources. Modification des stratégies de modèle de page de contenu afin d’activer un exemple de composant d’image pour le site de référence.
 
@@ -52,16 +52,16 @@ Améliorations apportées aux composants principaux et utilisation du composant 
 
 Le composant Image principale utilise les ***data-asset-id*** dans le parent &lt;div> d’une balise d’image pour activer/désactiver cette fonction. Le composant proxy remplace le composant principal par les modifications suivantes.
 
-* Supprime la variable ***data-asset-id*** à partir de la balise div parente d’un  &lt;img> élément dans le fichier image.html
-* Ajouts ***data-aem-asset-id*** directement à l’ &lt;img> élément dans image.html
-* Ajouts ***data-trackable=&#39;true&#39;*** à l’ &lt;img> élément dans image.html.
+* Supprime la variable ***data-asset-id*** de la balise div parente d’un &lt;img> élément dans le fichier image.html
+* Ajouts ***data-aem-asset-id*** directement à l’&lt;img>élément dans image.html.
+* Ajouts ***data-trackable=&#39;true&#39;*** à l’&lt;img>élément dans image.html.
 * ***data-aem-asset-id*** et ***data-trackable=&#39;true&#39;*** sont conservées au même niveau de noeud.
 
 >[!NOTE]
 >
->*data-aem-asset-id=&#39;image.UUID&#39;* et *data-trackable=&#39;true&#39;* sont les attributs clés qui doivent être présents pour les impressions de ressources. Pour Asset Click Insights, en plus des attributs de données ci-dessus présents dans la  &lt;img> balise , la balise parente doit avoir une valeur href valide.
+>*data-aem-asset-id=&#39;image.UUID&#39;* et *data-trackable=&#39;true&#39;* sont les attributs clés qui doivent être présents pour les impressions de ressources. Pour Asset Click Insights, en plus des attributs de données ci-dessus présents dans la &lt;img> balise , la balise parente doit avoir une valeur href valide.
 
-## Partie 3 : Adobe Analytics : création de suites de rapports, activation de la collecte de données en temps réel et de la création de rapports AEM Assets {#adobe-analytics-asset-insights}
+## Partie 3 : Adobe Analytics - Création de suites de rapports, activation de la collecte de données en temps réel et de la création de rapports AEM Assets {#adobe-analytics-asset-insights}
 
 La suite de rapports avec collecte de données en temps réel est créée pour le suivi des ressources. La configuration d’AEM Assets Insights est configurée à l’aide des informations d’identification Adobe Analytics.
 
@@ -69,9 +69,9 @@ La suite de rapports avec collecte de données en temps réel est créée pour l
 
 >[!NOTE]
 >
-La collecte de données en temps réel et la création de rapports de ressources AEM doivent être activées pour votre suite de rapports Adobe Analytics. L’activation du reporting d’AEM ressources réserve des variables d’analyse pour le suivi des informations sur les ressources.
+La collecte de données en temps réel et la création de rapports AEM de ressources doivent être activées pour votre suite de rapports Adobe Analytics. L’activation du reporting d’AEM ressources réserve des variables d’analyse pour le suivi des informations sur les ressources.
 
-Pour la configuration d’AEM Assets Insights, vous avez besoin des informations d’identification suivantes :
+Pour la configuration d’AEM Assets Insights, vous avez besoin des informations d’identification suivantes
 
 * Centre de données
 * Nom de la société Analytics
@@ -79,7 +79,7 @@ Pour la configuration d’AEM Assets Insights, vous avez besoin des informations
 * Secret partagé (peut être obtenu à partir de *Adobe Analytics > Admin > Paramètres de la société > Service Web*).
 * Suite de rapports (veillez à sélectionner la suite de rapports appropriée utilisée pour les rapports de ressources)
 
-## Partie 4 : Utilisation d’Adobe Experience Platform Launch pour l’ajout d’une extension Adobe Analytics {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
+## Partie 4 : utilisation d’Adobe Experience Platform Launch pour l’ajout d’une extension Adobe Analytics {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
 
 Ajout de l’extension Adobe Analytics, création de règles de chargement de page et intégration d’AEM à Launch avec le compte technique Adobe IMS.
 
@@ -89,7 +89,7 @@ Ajout de l’extension Adobe Analytics, création de règles de chargement de pa
 >
 Veillez à répliquer toutes vos modifications de l’instance de création vers l’instance de publication.
 
-### Règle 1 : Suivi de page (pagetracker.js) {#rule-page-tracker-pagetracker-js}
+### Règle 1 : outil de suivi de page (pagetracker.js) {#rule-page-tracker-pagetracker-js}
 
 ```javascript
 //For AEM 6.3
@@ -104,14 +104,14 @@ Veillez à répliquer toutes vos modifications de l’instance de création vers
 Le dispositif de suivi de page met en oeuvre deux rappels (enregistrés dans le code incorporé de la ressource).
 
 * **\&lt;code>assetAnalytics.core.assetLoaded\&lt;code>** : appelé lorsque l’événement &quot;load&quot; est distribué pour l’élément asset-DOM.
-* **\&lt;code>assetAnalytics.core.assetClicked\&lt;code>** : appelé lorsque l’événement &quot;click&quot; est distribué pour l’élément asset-DOM, cela n’est pertinent que lorsque l’élément asset-DOM-element a une balise d’ancrage parent avec un attribut &quot;href&quot; externe valide
+* **\&lt;code>assetAnalytics.core.assetClicked\&lt;code>** : appelé lorsque l’événement &quot;click&quot; est distribué pour l’élément asset-DOM, cela n’est pertinent que si l’élément asset-DOM-element comporte une balise d’ancrage en tant que parent avec un attribut &quot;href&quot; externe valide
 
-Enfin, Pagetracker met en oeuvre une fonction d’initialisation en tant que .
+Enfin, le dispositif de suivi de page met en oeuvre une fonction d’initialisation en tant que .
 
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : appelé pour initialiser le composant Pagetracker. Il DOIT être appelé avant que l’un des événements-insights-de-ressource (impressions et/ou clics) ne soit généré à partir de la page web.
-* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : accepte éventuellement un objet AppMeasurement : s’il est fourni, il ne tente pas de créer une nouvelle instance d’objet AppMeasurement.
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : appelé pour initialiser le composant de suivi de page. Il DOIT être appelé avant que l’un des événements-insights-de-ressource (impressions et/ou clics) ne soit généré à partir de la page web.
+* **\&lt;code>assetAnalytics.dispatcher.init()\&lt;code>** : accepte éventuellement un objet AppMeasurement ; s’il est fourni, il ne tente pas de créer une instance d’objet AppMeasurement.
 
-### Règle 2 : Suivi d’image — Action 1 (asset-insights.js) {#rule-image-tracker-action-asset-insights-js}
+### Règle 2 : Suivi d’images — Action 1 (asset-insights.js) {#rule-image-tracker-action-asset-insights-js}
 
 ```javascript
 /*
@@ -189,11 +189,11 @@ document.querySelectorAll(".cmp-image__image");
 Deux extensions de navigateur Google Chrome sont référencées dans la vidéo pour déboguer Analytics. Des extensions similaires sont également disponibles pour d’autres navigateurs.
 
 * [Extension Launch Switch Chrome](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en)
-* [Débogueur Adobe Experience Cloud](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?hl=en)
+* [Débogueur Adobe Experience Cloud](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-Il est également possible de passer la gestion dynamique des balises en mode de débogage avec l’extension Chrome suivante : [Launch et DTM Switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Cela facilite la vérification des erreurs liées au déploiement de la gestion dynamique des balises. En outre, vous pouvez basculer manuellement la gestion dynamique des balises vers le mode de débogage via n’importe quel navigateur. *Outils de développement -> Console JS* en ajoutant le fragment de code suivant :
+Il est également possible de passer la gestion dynamique des balises en mode de débogage avec l’extension Chrome suivante : [Launch et DTM Switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=en). Cela facilite la vérification des erreurs liées au déploiement de la gestion dynamique des balises. En outre, vous pouvez passer manuellement la gestion dynamique des balises au mode de débogage via n’importe quel navigateur. *outil de développement -> Console JS* en ajoutant le fragment de code suivant :
 
-## Partie 5 : Test du suivi Analytics et synchronisation des données Insight{#analytics-tracking-asset-insights}
+## Partie 5 : test du suivi Analytics et synchronisation des données Insight{#analytics-tracking-asset-insights}
 
 Configuration AEM rapport Planificateur de tâche de synchronisation de rapports de ressources et Statistiques sur les ressources
 

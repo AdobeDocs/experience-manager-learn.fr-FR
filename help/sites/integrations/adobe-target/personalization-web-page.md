@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2d201b48-c0fb-4bb4-a7d8-da9f4702e9ff
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '466'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 Découvrez comment créer une activité pour rediriger les pages de votre site hébergées sur AEM vers une nouvelle page à l’aide d’Adobe Target.
 
-## Conditions préalables
+## Conditions préalables requises
 
 Pour personnaliser les pages complètes d’un site web AEM, la configuration suivante doit être effectuée :
 
@@ -39,15 +39,15 @@ Le site WKND a repensé sa page d’accueil et souhaite rediriger les visiteurs 
 ## Procédure de création d’un test A/B à l’aide du compositeur d’expérience visuelle (VEC)
 
 1. Connectez-vous à Adobe Target et accédez à l’onglet Activités .
-1. Cliquez sur **Création d’une activité** puis choisissez **Test A/B** activité
+1. Cliquez sur **Créer une activité** puis choisissez **Test A/B** activité
 
    ![Activité A/B](assets/ab-target-activity.png)
 
-1. Sélectionnez la **Compositeur d’expérience visuelle** , indiquez l’URL d’activité, puis cliquez sur **Suivant**
+1. Sélectionnez la variable **Compositeur d’expérience visuelle** , indiquez l’URL d’activité, puis cliquez sur **Suivant**
 
    ![URL d’activité](assets/ab-test-url.png)
 
-1. Le compositeur d’expérience visuelle affiche deux onglets sur le côté gauche après la création d’une activité : *Expérience A* et *Expérience B*. Sélectionnez une expérience dans la liste. Vous pouvez ajouter de nouvelles expériences à la liste à l’aide du **Ajout d’une expérience** bouton .
+1. Le compositeur d’expérience visuelle affiche deux onglets sur le côté gauche après la création d’une activité : *Expérience A* et *Expérience B*. Sélectionnez une expérience dans la liste. Vous pouvez ajouter de nouvelles expériences à la liste à l’aide du **Ajouter une expérience** bouton .
 
    ![Options d’expérience](assets/experience-options.png)
 
@@ -82,5 +82,5 @@ En tant que marketeur, vous avez été en mesure de créer une activité pour re
 
 ## Liens pris en charge
 
-* [Débogueur Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
+* [Débogueur Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [Débogueur Adobe Experience Cloud - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)

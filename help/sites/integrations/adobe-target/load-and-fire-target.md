@@ -14,9 +14,9 @@ level: Intermediate
 badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '613'
 ht-degree: 8%
 
 ---
@@ -29,19 +29,19 @@ Découvrez comment charger, transférer des paramètres à une requête de page 
 
 ## Règle de chargement de page
 
-La couche de données client Adobe est une couche de données pilotée par les événements. Lorsque la couche de données Page d’AEM est chargée, elle déclenche un événement . `cmp:show` . Dans la vidéo, la variable `Launch Library Loaded` est appelée à l’aide d’un événement personnalisé. Vous trouverez ci-dessous les fragments de code utilisés dans la vidéo pour l’événement personnalisé ainsi que pour les éléments de données.
+La couche de données client Adobe est une couche de données pilotée par les événements. Lorsque la couche de données Page AEM est chargée, elle déclenche un événement . `cmp:show` . Dans la vidéo, la variable `Launch Library Loaded` est appelée à l’aide d’un événement personnalisé. Vous trouverez ci-dessous les fragments de code utilisés dans la vidéo pour l’événement personnalisé et pour les éléments de données.
 
 ### Événement Page vue personnalisée{#page-event}
 
 ![Configuration d’événement et code personnalisé de la page affichée](assets/load-and-fire-target-call.png)
 
-Dans la propriété Launch, ajoutez une nouvelle **Événement** au **Règle**
+Dans la propriété Launch, ajoutez une nouvelle **Événement** à la fonction **Règle**
 
 + __Extension :__ Core
 + __Type d’événement :__ Code personnalisé
 + __Nom :__ Gestionnaire d’événements d’affichage de page (ou descriptif)
 
-Appuyez sur le bouton __Ouvrir l’éditeur__ peut être collé dans le fragment de code suivant. Ce code __must__ être ajouté à la variable __Configuration d’événement__ et suivant __Action__.
+Appuyez sur le bouton __Ouvrir l’éditeur__ et collez-les dans le fragment de code suivant. Ce code __must__ être ajouté à la variable __Configuration d’événement__ et suivant __Action__.
 
 ```javascript
 // Define the event handler function
@@ -85,7 +85,7 @@ Une fonction personnalisée définit la variable `pageShownEventHandler`et écou
 
 La règle Launch est déclenchée à l’aide du `trigger(...)` qui est __only__ disponible à partir de la définition de fragment de code de code personnalisé d’un événement de règle.
 
-Le `trigger(...)` prend un objet d’événement comme paramètre qui, à son tour, est exposé dans les éléments de données Launch par un autre nom réservé dans Launch nommé `event`. Les éléments de données de Launch peuvent désormais référencer des données à partir de cet objet d’événement à partir de la variable `event` objet utilisant une syntaxe comme `event.component['someKey']`.
+La variable `trigger(...)` prend un objet d’événement comme paramètre qui, à son tour, est exposé dans les éléments de données Launch par un autre nom réservé dans Launch nommé `event`. Les éléments de données de Launch peuvent désormais référencer des données à partir de cet objet d’événement à partir de la variable `event` objet utilisant une syntaxe comme `event.component['someKey']`.
 
 If `trigger(...)` est utilisé en dehors du contexte du type d’événement Code personnalisé d’un événement (par exemple, dans une action), l’erreur JavaScript `trigger is undefined` est généré sur le site Web intégré à la propriété Launch.
 
@@ -94,7 +94,7 @@ If `trigger(...)` est utilisé en dehors du contexte du type d’événement Cod
 
 ![Éléments de données](assets/data-elements.png)
 
-Les éléments de données Adobe Launch mappent les données de l’objet d’événement. [déclenché dans l’événement personnalisé Page affichée](#page-event) aux variables disponibles dans Adobe Target, via le type d’élément de données Code personnalisé de l’extension Core.
+Adobe Launch Data Elements fait correspondre les données de l’objet d’événement [déclenché dans l’événement personnalisé Page affichée](#page-event) aux variables disponibles dans Adobe Target, via le type d’élément de données Code personnalisé de l’extension Core.
 
 #### Élément de données ID de page
 
@@ -162,7 +162,7 @@ window.targetGlobalSettings = {
 ## Liens pris en charge
 
 + [Documentation sur la couche de données client Adobe](https://github.com/adobe/adobe-client-data-layer/wiki)
-+ [Débogueur Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
++ [Débogueur Adobe Experience Cloud - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 + [Débogueur Adobe Experience Cloud - Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 + [Documentation sur l’utilisation de la couche de données client Adobe et des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr)
-+ [Présentation de l’Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/experience-platform-debugger/introduction-to-the-experience-platform-debugger.html)
++ [Présentation de l’Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

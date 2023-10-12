@@ -10,10 +10,10 @@ kt: 9165
 thumbnail: 337960.jpeg
 last-substantial-update: 2022-10-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -31,7 +31,7 @@ Découvrez comment optimiser votre optimisation du référencement en créant de
 
 ### URL absolue du plan de site{#absolute-sitemap-urls}
 
-AEM sitemap prend en charge les URL absolues en utilisant [Mappage Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Pour ce faire, créez des noeuds de mappage sur les services AEM générant des plans de site (généralement le service AEM Publish).
+AEM sitemap prend en charge les URL absolues en utilisant [Mappage Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html). Pour ce faire, créez des noeuds de mappage sur les services AEM générant des plans de site (généralement le service de publication AEM).
 
 Exemple de définition de noeud de mappage Sling pour `https://wknd.com` peut être défini sous `/etc/map/https` comme suit :
 
@@ -48,7 +48,7 @@ La capture d’écran ci-dessous illustre une configuration similaire, mais pour
 
 ### Configuration OSGi du planificateur de plan de site
 
-Définit la variable [Configuration d’usine OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) pour la fréquence (en utilisant [expressions cron](http://www.cronmaker.com)) les plans de site sont regénérés/générés et mis en cache dans AEM.
+Définit la variable [Configuration d’usine OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) pour la fréquence (à l’aide de [expressions cron](http://www.cronmaker.com/)) les plans de site sont regénérés/générés et mis en cache dans AEM.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -87,8 +87,8 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Ressources
 
-+ [Documentation AEM plan de site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/seo-and-url-management.html?lang=en#building-an-xml-sitemap-on-aem)
++ [Documentation AEM plan de site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
 + [Documentation du plan de site Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
-+ [Documentation du plan du site Sitemap.org](https://www.sitemaps.org/protocol.html)
-+ [Documentation du fichier d’index Sitemap.org](https://www.sitemaps.org/protocol.html#index)
++ [Sitemap.org Documentation du plan de site](https://www.sitemaps.org/protocol.html)
++ [Sitemap.org Documentation du fichier d’index du plan de site](https://www.sitemaps.org/protocol.html#index)
 + [Cronmaker](http://www.cronmaker.com/)

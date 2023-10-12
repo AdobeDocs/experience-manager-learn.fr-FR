@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
-source-git-commit: 65244bf81666c20fd5d9d804ad8ea97df8b83d9f
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
 source-wordcount: '1218'
-ht-degree: 85%
+ht-degree: 83%
 
 ---
 
@@ -100,7 +100,7 @@ Pour obtenir l’application React :
 >
 > //*********************************
 >
->  // Tâche : implémentez ceci en suivant les étapes du tutoriel sur AEM Headless.
+>  // TODO Implémentez cela en suivant les étapes du tutoriel AEM sans affichage
 >
 >  //*********************************
 >
@@ -496,7 +496,7 @@ Vérifiez l’application [http://localhost:3000/](http://localhost:3000/) et cl
 
 ## Ce qui se passe
 
-Ouvrez le **Outils de développement** > **Réseau** et _Filtrer_ pour `all-teams` requête. Remarquez la demande d’API GraphQL `/graphql/execute.json/my-project/all-teams` est contre `http://localhost:3000` et **NOT** contre la valeur de `REACT_APP_HOST_URI` (par exemple, <https://publish-p123-e456.adobeaemcloud.com>). Les demandes sont effectuées par rapport au domaine de l’application React, car [configuration du proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) est activé à l’aide de `http-proxy-middleware` module .
+Ouvrez le **Outils de développement** > **Réseau** et _Filtrer_ pour `all-teams` requête. Remarquez la demande d’API GraphQL `/graphql/execute.json/my-project/all-teams` est contre `http://localhost:3000` et **NOT** contre la valeur de `REACT_APP_HOST_URI`, par exemple `<https://publish-pxxx-exxx.adobeaemcloud.com`. Les demandes sont effectuées par rapport au domaine de l’application React, car [configuration du proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) est activé à l’aide de `http-proxy-middleware` module .
 
 
 ![Requête de l’API GraphQL via proxy.](assets/graphql-and-external-app/graphql-api-request-via-proxy.png)

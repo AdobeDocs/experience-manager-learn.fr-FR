@@ -10,10 +10,10 @@ kt: 5332
 thumbnail: 5332-collect-data-analytics.jpg
 badgeIntegration: label="Intégration" type="positive"
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
-source-wordcount: '2470'
-ht-degree: 5%
+source-wordcount: '2468'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 5%
 >Adobe Experience Platform Launch a été rebaptisé en tant que suite de technologies de collecte de données dans Adobe Experience Platform. Plusieurs modifications terminologiques ont par conséquent été apportées à la documentation du produit. Reportez-vous aux [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) pour une référence consolidée des modifications terminologiques.
 
 
-Découvrez comment intégrer AEM Sites et Adobe Analytics à l’extension de balises Adobe Analytics à l’aide des fonctionnalités intégrées de la [Adobe de la couche de données client avec les composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr) pour collecter des données sur une page dans Adobe Experience Manager Sites. [Balises dans Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) et le [Extension Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=fr) sont utilisées pour créer des règles pour envoyer des données de page à Adobe Analytics.
+Découvrez comment intégrer AEM Sites et Adobe Analytics à l’extension de balises Adobe Analytics à l’aide des fonctionnalités intégrées de la [Adobe de la couche de données client avec les composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr) pour collecter des données sur une page dans Adobe Experience Manager Sites. [Balises dans Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) et la variable [Extension Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=fr) sont utilisées pour créer des règles pour envoyer des données de page à Adobe Analytics.
 
 ## Ce que vous allez construire {#what-build}
 
@@ -34,11 +34,11 @@ Dans ce tutoriel, vous allez déclencher une règle de balise basée sur un év�
 
 ### Objectifs {#objective}
 
-1. Créez une règle pilotée par un événement dans la propriété de balise qui capture les modifications à partir de la couche de données.
+1. Créez une règle pilotée par un événement dans la propriété de balise qui capture les modifications de la couche de données.
 1. Mappage des propriétés de couche de données de page aux éléments de données dans la propriété de balise
 1. Collecte et envoi de données de page dans Adobe Analytics à l’aide de la balise de page vue
 
-## Conditions préalables
+## Conditions préalables requises
 
 Les éléments suivants sont requis :
 
@@ -53,9 +53,9 @@ Les éléments suivants sont requis :
 
 ## Changement d’environnement de balise pour le site WKND
 
-Le [WKND](http://wknd.site/us/en.html) est un site public basé sur [un projet open source](https://github.com/adobe/aem-guides-wknd) conçu comme une référence et [tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr) pour une mise en oeuvre AEM.
+La variable [WKND](https://wknd.site/fr/fr.html) est un site ouvert au public, basé sur [un projet open source](https://github.com/adobe/aem-guides-wknd) conçu comme une référence et [tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr) pour une mise en oeuvre AEM.
 
-Au lieu de configurer un environnement AEM et d’installer la base de code WKND, vous pouvez utiliser le débogueur Experience Platform pour **switch** la live [Site WKND](http://wknd.site/us/en.html) to *your* propriété de balise. Cependant, vous pouvez utiliser votre propre site AEM s’il comporte déjà la variable [Adobe de la couche de données client activée](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr#installation-activation).
+Au lieu de configurer un environnement AEM et d’installer la base de code WKND, vous pouvez utiliser le débogueur Experience Platform pour **switch** la live [Site WKND](https://wknd.site/fr/fr.html) to *your* propriété de balise. Cependant, vous pouvez utiliser votre propre site AEM s’il comporte déjà la variable [Adobe de la couche de données client activée](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr#installation-activation).
 
 1. Connectez-vous à Experience Platform et [créer une propriété Tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) (si ce n&#39;est déjà fait).
 1. Assurez-vous qu’une balise initiale JavaScript [La bibliothèque a été créée](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library) et converti en balise [environnement](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=fr).
@@ -63,7 +63,7 @@ Au lieu de configurer un environnement AEM et d’installer la base de code WKND
 
    ![Copier le code incorporé de la propriété de balise](assets/collect-data-analytics/launch-environment-copy.png)
 
-1. Dans votre navigateur, ouvrez un nouvel onglet et accédez à [Site WKND](http://wknd.site/us/en.html)
+1. Dans votre navigateur, ouvrez un nouvel onglet et accédez à [Site WKND](https://wknd.site/fr/fr.html)
 1. Ouvrez l’extension de navigateur du débogueur Experience Platform.
 
    ![Débogueur Experience Platform](assets/collect-data-analytics/experience-platform-debugger-extension.png)
@@ -78,9 +78,9 @@ Au lieu de configurer un environnement AEM et d’installer la base de code WKND
 
 ## Vérifier la couche de données client Adobe sur le site WKND
 
-Le [Projet de référence WKND](https://github.com/adobe/aem-guides-wknd) est créé avec AEM composants principaux et possède la variable [Adobe de la couche de données client activée](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr#installation-activation) par défaut. Vérifiez ensuite que la couche de données client Adobe est activée.
+La variable [Projet de référence WKND](https://github.com/adobe/aem-guides-wknd) est créé avec AEM composants principaux et possède la variable [Adobe de la couche de données client activée](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr#installation-activation) par défaut. Vérifiez ensuite que la couche de données client Adobe est activée.
 
-1. Accédez à [Site WKND](http://wknd.site/us/en.html).
+1. Accédez à [Site WKND](https://wknd.site/us/en.html).
 1. Ouvrez les outils de développement du navigateur et accédez au **Console**. Exécutez la commande suivante :
 
    ```js
@@ -113,20 +113,20 @@ Le [Projet de référence WKND](https://github.com/adobe/aem-guides-wknd) est cr
    >
    > Si vous ne voyez pas le `adobeDataLayer` Objet JavaScript ? Assurez-vous que la variable [La couche de données client Adobe a été activée.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr#installation-activation) sur votre site.
 
-## Créer une règle Page chargée
+## Création d’une règle Page chargée
 
-La couche de données client Adobe est une **event** couche de données pilotée. Lorsque la couche de données Page AEM est chargée, elle déclenche une `cmp:show` . Créez une règle qui est déclenchée lorsque la variable `cmp:show` est déclenché à partir de la couche de données de page.
+La couche de données client Adobe est une **piloté par les événements** couche de données. Lorsque la couche de données Page d’AEM est chargée, elle déclenche une `cmp:show` . Créez une règle qui est déclenchée lorsque la variable `cmp:show` est déclenché à partir de la couche de données de page.
 
 1. Accédez à Experience Platform et à la propriété de balise intégrée au site AEM.
 1. Accédez au **Règles** dans l’interface utilisateur de la propriété de balise, puis cliquez sur **Créer une règle**.
 
    ![Créer une règle](assets/collect-data-analytics/analytics-create-rule.png)
 
-1. Attribuer un nom à la règle **Page chargée**.
+1. Nommer la règle **Page chargée**.
 1. Dans le **Événements** sous-section, cliquez sur **Ajouter** pour ouvrir le **Configuration d’événement** assistant.
 1. Pour **Type d’événement** champ, sélectionnez **Code personnalisé**.
 
-   ![Attribuez un nom à la règle et ajoutez l’événement de code personnalisé](assets/collect-data-analytics/custom-code-event.png)
+   ![Nommez la règle et ajoutez l’événement de code personnalisé](assets/collect-data-analytics/custom-code-event.png)
 
 1. Cliquez sur **Ouvrir l’éditeur** dans le panneau principal et saisissez le fragment de code suivant :
 
@@ -161,7 +161,7 @@ La couche de données client Adobe est une **event** couche de données pilotée
 
    Le fragment de code ci-dessus ajoute un écouteur d’événement par [publication d’une fonction](https://github.com/adobe/adobe-client-data-layer/wiki#pushing-a-function) dans la couche de données. When `cmp:show` est déclenché. `pageShownEventHandler` est appelée. Dans cette fonction, quelques contrôles d’intégrité sont ajoutés et un nouveau `event` est construit avec la dernière [état de la couche de données](https://github.com/adobe/adobe-client-data-layer/wiki#getstate) pour le composant qui a déclenché l’événement.
 
-   Enfin, le `trigger(event)` est appelée. Le `trigger()` est un nom réservé dans la propriété tag et il **triggers** la règle. Le `event` est transmis en tant que paramètre qui, à son tour, est exposé par un autre nom réservé dans la propriété tag . Les éléments de données de la propriété de balise peuvent désormais référencer diverses propriétés à l’aide d’un fragment de code comme `event.component['someKey']`.
+   Enfin, le `trigger(event)` est appelée. La variable `trigger()` est un nom réservé dans la propriété tag et il **triggers** la règle. La variable `event` est transmis en tant que paramètre qui, à son tour, est exposé par un autre nom réservé dans la propriété tag . Les éléments de données de la propriété de balise peuvent désormais référencer diverses propriétés à l’aide d’un fragment de code comme `event.component['someKey']`.
 
 1. Enregistrez les modifications.
 1. Suivant sous **Actions** click **Ajouter** pour ouvrir le **Configuration d’action** assistant.
@@ -178,7 +178,7 @@ La couche de données client Adobe est une **event** couche de données pilotée
    console.log("Page template: " + event.component['xdm:template']);
    ```
 
-   Le `event` est transmis à partir de `trigger()` appelée dans l’événement personnalisé. Ici, le `component` est la page active dérivée de la couche de données. `getState` dans l’événement personnalisé.
+   La variable `event` est transmis à partir de `trigger()` appelée dans l’événement personnalisé. Ici, le `component` est la page active dérivée de la couche de données. `getState` dans l’événement personnalisé.
 
 1. Enregistrez les modifications et exécutez une [build](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html) dans la propriété tag pour promouvoir le code vers la propriété [environnement](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=fr) utilisé sur votre site AEM.
 
@@ -186,7 +186,7 @@ La couche de données client Adobe est une **event** couche de données pilotée
    >
    > Il peut s’avérer utile d’utiliser la variable [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html) pour changer le code incorporé en **Développement** environnement.
 
-1. Accédez à votre site AEM et ouvrez les outils de développement pour afficher la console. Actualisez la page. Vous devriez constater que les messages de la console ont été enregistrés :
+1. Accédez à votre site d’AEM et ouvrez les outils de développement pour afficher la console. Actualisez la page. Vous devriez constater que les messages de la console ont été enregistrés :
 
 ![Messages de la console chargés en page](assets/collect-data-analytics/page-show-event-console.png)
 
@@ -200,7 +200,7 @@ Les éléments de données sont mappés à la variable `@type`, `dc:title`, et `
 
 1. Accédez à Experience Platform et à la propriété de balise intégrée au site AEM.
 1. Accédez au **Éléments de données** et cliquez sur **Créer un élément de données**.
-1. Pour le **Nom** , saisissez la **Type de ressource de composant**.
+1. Pour le **Nom** , saisissez la valeur **Type de ressource de composant**.
 1. Pour le **Type d’élément de données** champ, sélectionnez **Code personnalisé**.
 
    ![Type de ressource de composant](assets/collect-data-analytics/component-resource-type-form.png)
@@ -273,7 +273,7 @@ Ajoutez ensuite l’extension Analytics à votre propriété de balise pour envo
 
    >[!TIP]
    >
-   >Il est recommandé d’utiliser la variable *Gérer la bibliothèque pour moi, option* en tant que paramètre de gestion des bibliothèques , car il facilite la conservation de la variable `AppMeasurement.js` bibliothèque à jour.
+   >Il est recommandé d’utiliser la variable *Gérer la bibliothèque pour moi, option* en tant que paramètre de gestion des bibliothèques , car il facilite la conservation de la variable `AppMeasurement.js` à jour de la bibliothèque.
 
 1. Cochez la case pour activer . **Utiliser le Activity Map**.
 
@@ -299,7 +299,7 @@ Mettez ensuite à jour la variable **Page chargée** pour utiliser la règle **T
 
    >[!NOTE]
    >
-   > Il est possible d’ajouter cette condition dans la fonction de code personnalisé qui écoute la variable `cmp:show` créé plus tôt dans le tutoriel. Cependant, l’ajout de cette règle dans l’interface utilisateur offre une plus grande visibilité aux utilisateurs supplémentaires qui peuvent avoir besoin d’apporter des modifications à la règle. De plus, nous pouvons utiliser notre élément de données .
+   > Il est possible d’ajouter cette condition dans la fonction de code personnalisé qui écoute la variable `cmp:show` créé plus tôt dans le tutoriel. Toutefois, l’ajout de cette règle dans l’interface utilisateur offre une plus grande visibilité aux utilisateurs supplémentaires qui peuvent avoir besoin d’apporter des modifications à la règle. De plus, nous pouvons utiliser notre élément de données .
 
 1. Enregistrez les modifications.
 
@@ -311,7 +311,7 @@ Actuellement, la variable **Page chargée** génère simplement une instruction 
 
    ![Suppression d’une action de code personnalisé](assets/collect-data-analytics/remove-console-statements.png)
 
-1. Sous la sous-section Actions , cliquez sur **Ajouter** pour ajouter une nouvelle action.
+1. Sous la section Actions , cliquez sur **Ajouter** pour ajouter une nouvelle action.
 
 1. Définissez la variable **Extension** saisir **Adobe Analytics** et définissez la variable **Type d’action** to  **Définition de variables**
 
@@ -319,7 +319,7 @@ Actuellement, la variable **Page chargée** génère simplement une instruction 
 
 1. Dans le panneau principal, sélectionnez une **eVar** et défini comme valeur de l’élément de données **Modèle de page**. Utiliser l’icône Éléments de données ![Icône Éléments de données](assets/collect-data-analytics/cylinder-icon.png) pour sélectionner la variable **Modèle de page** élément .
 
-   ![Définir comme modèle de page d’eVar](assets/collect-data-analytics/set-evar-page-template.png)
+   ![Définir comme modèle de page eVar](assets/collect-data-analytics/set-evar-page-template.png)
 
 1. Faites défiler la page vers le bas, sous **Paramètres supplémentaires** set **Nom de la page** à l’élément de données **Nom de la page**:
 
@@ -329,20 +329,20 @@ Actuellement, la variable **Page chargée** génère simplement une instruction 
 
 1. Ajoutez ensuite une action supplémentaire à droite du **Adobe Analytics - Définition de variables** en appuyant sur le bouton **plus** icon :
 
-   ![Ajout d’une action de règle de balise supplémentaire](assets/collect-data-analytics/add-additional-launch-action.png)
+   ![Ajouter une action de règle de balise supplémentaire](assets/collect-data-analytics/add-additional-launch-action.png)
 
 1. Définissez la variable **Extension** saisir **Adobe Analytics** et définissez la variable **Type d’action** to  **Envoyer la balise**. Puisque cette action est considérée comme une page vue, laissez le suivi par défaut défini sur **`s.t()`**.
 
    ![Action Envoyer la balise Adobe Analytics](assets/track-clicked-component/send-page-view-beacon-config.png)
 
-1. Enregistrez les modifications. Le **Page chargée** doit maintenant avoir la configuration suivante :
+1. Enregistrez les modifications. La variable **Page chargée** doit maintenant avoir la configuration suivante :
 
    ![Configuration finale de la règle de balise](assets/collect-data-analytics/final-page-loaded-config.png)
 
    * **1.** Écoute de la `cmp:show` .
    * **2.** Vérifiez que l’événement a été déclenché par une page.
    * **3.** Définition des variables Analytics pour **Nom de la page** et **Modèle de page**
-   * **4.** Envoyer la balise de page vue Analytics
+   * **4.** Envoi de la balise Page vue Analytics
 
 1. Enregistrez toutes les modifications et créez votre bibliothèque de balises, en effectuant la promotion vers l’environnement approprié.
 
@@ -350,14 +350,14 @@ Actuellement, la variable **Page chargée** génère simplement une instruction 
 
 Maintenant que la variable **Page chargée** envoie la balise Analytics. Vous devriez pouvoir voir les variables de suivi Analytics à l’aide du débogueur Experience Platform.
 
-1. Ouvrez le [Site WKND](https://wknd.site/us/en.html) dans votre navigateur.
-1. Cliquez sur l’icône Debugger . ![Icône du débogueur Experience Platform](assets/collect-data-analytics/experience-cloud-debugger.png) pour ouvrir le débogueur Experience Platform.
+1. Ouvrez le [Site WKND](https://wknd.site/fr/fr.html) dans votre navigateur.
+1. Cliquez sur l’icône Debugger ![Icône du débogueur Experience Platform](assets/collect-data-analytics/experience-cloud-debugger.png) pour ouvrir le débogueur Experience Platform.
 1. Assurez-vous que le débogueur mappe la propriété de balise à *your* Environnement de développement, comme décrit précédemment et **Journalisation de la console** est cochée.
 1. Ouvrez le menu Analytics et vérifiez que la suite de rapports est définie sur *your* suite de rapports. Le Nom de page doit également être renseigné :
 
    ![Débogueur de l’onglet Analytics](assets/collect-data-analytics/analytics-tab-debugger.png)
 
-1. Faire défiler vers le bas et développer **Requêtes réseau**. Vous devriez être en mesure de trouver la variable **evar** défini pour le **Modèle de page**:
+1. Faire défiler vers le bas et développer **Requêtes réseau**. Vous devriez être en mesure de trouver le **evar** défini pour la variable **Modèle de page**:
 
    ![Evar et nom de page définis](assets/collect-data-analytics/evar-page-name-set.png)
 
@@ -379,8 +379,8 @@ Maintenant que la variable **Page chargée** envoie la balise Analytics. Vous de
 
 ## Félicitations.
 
-Vous venez d’utiliser la couche de données client et les balises Adobe basées sur un événement dans Experience Platform pour collecter les données de page de données d’un site AEM et les envoyer à Adobe Analytics.
+Vous venez d’utiliser la couche de données client et les balises Adobe pilotées par l’événement dans Experience Platform pour collecter les données de page de données d’un site AEM et les envoyer à Adobe Analytics.
 
 ### Étapes suivantes
 
-Consultez le tutoriel suivant pour savoir comment utiliser la couche de données client Adobe orientée événement pour [suivi des clics de composants spécifiques sur un site Adobe Experience Manager ;](track-clicked-component.md).
+Consultez le tutoriel suivant pour savoir comment utiliser la couche de données client Adobe orientée événement pour [suivi des clics sur des composants spécifiques sur un site Adobe Experience Manager ;](track-clicked-component.md).
