@@ -8,7 +8,7 @@ sub-product: Experience Manager Sites
 version: 6.5, Cloud Service
 kt: 2963
 index: y
-source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
+source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 94%
@@ -20,7 +20,7 @@ ht-degree: 94%
 
 + [Présentation d’AEM Headless](./overview.md)
 + GraphQL {#graphql}
-   + [Portail de développement d’AEM Headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
+   + [Portail de développement d’AEM Headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr){target=_blank}
    + [Présentation](./graphql/overview.md)
    + Configuration rapide {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)
@@ -47,7 +47,7 @@ ht-degree: 94%
       + [4 - Requêtes GraphQL persistantes](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 - Intégration de l’application cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
    + Premier tutoriel sans tête{#headless-first}
-      + [Présentation](./graphql/headless-first-tutorial/overview.md)
+      + [Vue d’ensemble](./graphql/headless-first-tutorial/overview.md)
       + [1 - Modélisation de contenu](./graphql/headless-first-tutorial/1-content-modeling.md)
       + [2 - AEM API sans affichage et React](./graphql/headless-first-tutorial/2-aem-headless-apis-and-react.md)
       + [3 - Composants complexes](./graphql/headless-first-tutorial/3-complex-components.md)

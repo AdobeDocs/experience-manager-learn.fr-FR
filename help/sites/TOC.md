@@ -6,7 +6,7 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: e7e5a07ecada8e5760cd1496bdb44b3d035373dd
+source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 89%
@@ -43,7 +43,7 @@ ht-degree: 89%
    + [Diffusion d’images optimisée pour le web](components/web-optimized-image-delivery.md)
    + [Console des composants](components/components-console-feature-video-use.md)
 + Fragments de contenu {#content-fragments}
-   + [Console Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html)
+   + [Console Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
    + [Créer des fragments de contenu](content-fragments/content-fragments-feature-video-use.md)
    + [Diffuser des fragments de contenu](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Traduire des fragments de contenu](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -51,13 +51,13 @@ ht-degree: 89%
 + Fragments d’expérience {#experience-fragments}
    + [Utiliser des fragments d’expérience](experience-fragments/experience-fragments-feature-video-use.md)
    + [Créer des blocs](experience-fragments/building-blocks.md)
-   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 
 + Développement {#developing}
    + [Archétype de projet AEM](developing/aem-project-archetype.md)
-   + [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
-   + [Prise en main d’AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
-   + [Prise en main de l’éditeur de SPA d’AEM et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=fr)
+   + [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr){target=_blank}.
+   + [Prise en main d’AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr){target=_blank}
+   + [Prise en main de l’éditeur de SPA d’AEM et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=fr){target=_blank}
    + [Étendre les propriétés de page](developing/page-properties-technical-video-develop.md)
    + [Points d’arrêt réactifs](developing/responsive-breakpoints.md)
    + [Développer avec le système de style](developing/style-system-technical-video-understand.md)
@@ -67,7 +67,7 @@ ht-degree: 89%
    + [Partager sur les médias sociaux](developing/social-media-sharing-technical-video-use.md)
    + [Personnaliser les icônes de composant](developing/component-icons-technical-video-develop.md)
 + Personnalisation {#personalization}
-   + [Intégration avec Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html?lang=fr)
+   + [Intégration avec Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html?lang=fr){target=_blank}.
    + [Configurer les fragments d’expérience et Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Utiliser les fragments d’expérience avec Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configurer ContextHub](personalization/context-hub-technical-video-setup.md)
@@ -75,7 +75,7 @@ ht-degree: 89%
    + [Plans de site](./seo/sitemaps.md)
 + Applications monopages {#spa-editor}
    + [Utiliser l’éditeur de SPA](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [Prise en main de l’éditeur de SPA d’AEM et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=fr)
+   + [Prise en main de l’éditeur de SPA d’AEM et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=fr){target=_blank}.
 + Gestion de plusieurs sites {#multi-site-management}
    + [Présentation de la copie de la langue](./multi-site-management/language-copy-overview.md)
    + [Live Copy et plan directeur](./multi-site-management/live-copy-and-blueprint.md)
