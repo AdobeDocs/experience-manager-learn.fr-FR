@@ -10,17 +10,19 @@ kt: 13881
 thumbnail: KT-13881.png
 doc-type: article
 last-substantial-update: 2023-10-10T00:00:00Z
-source-git-commit: d4835fac83f06482c1252ae962e867de06d326e8
+exl-id: 7238f091-4101-40b5-81d9-87b4d57ccdb2
+source-git-commit: 549b444d0a195fb9b5b8fd7ff48cf133746e5fd2
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
 
-
 # Authentification Mutual Transport Layer Security (mTLS) à partir d’AEM
 
 Découvrez comment effectuer des appels HTTPS d’AEM aux API web qui nécessitent une authentification Mutual Transport Layer Security (mTLS).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
 
 L’authentification TLS mTLS ou TLS bidirectionnelle renforce la sécurité du protocole TLS en exigeant **client et serveur pour s’authentifier l’un l’autre**. Cette authentification est effectuée à l’aide de certificats numériques. Elle est généralement utilisée dans les cas où une sécurité renforcée et une vérification de l’identité sont essentielles.
 
@@ -221,3 +223,9 @@ private KeyStore getAEMTrustStore(KeyStoreService keyStoreService, ResourceResol
 Pour appeler efficacement les API mTLS avec des certificats privés, une approche conventionnelle consiste à modifier le KeyStore JVM. Pour ce faire, vous devez importer les certificats privés à l’aide de Java™ [keytool](https://docs.oracle.com/en/java/javase/11/tools/keytool.html#GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) .
 
 Toutefois, cette méthode n’est pas alignée sur les bonnes pratiques en matière de sécurité et AEM offre une option supérieure grâce à l’utilisation de la variable **KeyStores spécifiques à l’utilisateur et TrustStore global** et [KeyStoreService](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/com/adobe/granite/keystore/KeyStoreService.html).
+
+## Package de solution
+
+L’exemple de projet Node.js illustré dans la vidéo peut être téléchargé à partir de [here](assets/internal-api-call/REST-APIs.zip).
+
+Le code du servlet AEM est disponible dans le projet WKND Sites `tutorial/web-api-invocation` branche, [see](https://github.com/adobe/aem-guides-wknd/tree/tutorial/web-api-invocation/core/src/main/java/com/adobe/aem/guides/wknd/core/servlets).
