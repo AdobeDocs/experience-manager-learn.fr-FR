@@ -1,28 +1,29 @@
 ---
 title: Vidéos de la console Fragments de contenu
-description: Découvrez AEM la console Fragments de contenu qui facilite la gestion et la création de fragments de contenu !
+description: Découvrez la console Fragments de contenu d’AEM qui facilite la gestion et la création de fragments de contenu.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
 role: User
 level: Beginner
+jira: KT-14200
 doc-type: Catalog
 last-substantial-update: 2023-05-12T00:00:00Z
 exl-id: d92c36e2-fbfa-43a3-8c5f-0371cc99f352
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
+source-git-commit: 82926e56d01222186a4d677b29ab9230aa71458a
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 13%
+ht-degree: 91%
 
 ---
 
 # Vidéos de la console Fragments de contenu
 
-![AEM Éditeur de fragments de contenu](./assets/main.png)
+![Éditeur de fragments de contenu AEM.](./assets/main.png)
 
-La console Adobe Experience Manager des fragments de contenu facilite la gestion et la création de fragments de contenu. Découvrez comment tirer le meilleur parti de la console de fragments de contenu avec ces vidéos.
+La console Fragments de contenu d’Adobe Experience Manager facilite la gestion et la création de fragments de contenu. Découvrez comment tirer le meilleur parti de la console Fragments de contenu avec ces vidéos.
 
-Consultez la section [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=fr)  pour obtenir des détails complets sur la console de fragments de contenu et ses fonctionnalités.
+Consultez la section [Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=fr) pour obtenir des détails complets sur la console Fragments de contenu et ses fonctionnalités.
 
 ## Vidéos
 
@@ -49,13 +50,13 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./basics/content-fragments-console.md" title="Vue d’ensemble">Présentation de la console</a>
             </p>
-            <p class="is-size-6">Présentation rapide de la console Fragments de contenu.</p>
+            <p class="is-size-6">Vue d’ensemble rapide de la console Fragments de contenu.</p>
             <a href="./basics/content-fragments-console.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
-              <span class="spectrum-Button-label has-no-wrap
+<span class="spectrum-Button-label has-no-wrap
                 has-text-weight-bold">Regarder la vidéo</span>
-            </a>
+</a>
           </div>
         </div>
       </div>
@@ -85,9 +86,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <a href="./basics/content-fragment-editor.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
-              <span class="spectrum-Button-label has-no-wrap
+<span class="spectrum-Button-label has-no-wrap
                 has-text-weight-bold">Regarder la vidéo</span>
-            </a>
+</a>
           </div>
         </div>
       </div>
@@ -112,13 +113,13 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./search/fast-filtering.md" title="Filtrage rapide">Filtrage rapide</a>
             </p>
-            <p class="is-size-6">Localisez rapidement les fragments de contenu avec filtrage en ligne.</p>
+            <p class="is-size-6">Localisez rapidement des fragments de contenu avec le filtrage intégré.</p>
             <a href="./search/fast-filtering.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
-              <span class="spectrum-Button-label has-no-wrap
+<span class="spectrum-Button-label has-no-wrap
                 has-text-weight-bold">Regarder la vidéo</span>
-            </a>
+</a>
           </div>
         </div>
       </div>
@@ -129,10 +130,10 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./editor/new-editor-toggle.md" title="Nouvelle bascule de l’éditeur"
+            <a href="./editor/new-editor-toggle.md" title="Nouveau bouton (bascule) d’éditeur"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419312?format=jpeg" alt="Nouvelle bascule de l’éditeur">
+                src="https://video.tv.adobe.com/v/3419312?format=jpeg" alt="Nouveau bouton (bascule) d’éditeur">
             </a>
           </figure>
         </div>
@@ -141,15 +142,15 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minute</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/new-editor-toggle.md" title="Nouvelle bascule de l’éditeur">Nouvelle bascule de l’éditeur</a>
+              <a href="./editor/new-editor-toggle.md" title="Nouveau bouton (bascule) d’éditeur">Nouveau bouton (bascule) d’éditeur</a>
             </p>
-            <p class="is-size-6">Transition en toute transparence de l’éditeur classique au nouvel éditeur.</p>
+            <p class="is-size-6">Transition fluide entre l’éditeur classique et le nouvel éditeur.</p>
             <a href="./editor/new-editor-toggle.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
-              <span class="spectrum-Button-label has-no-wrap
+<span class="spectrum-Button-label has-no-wrap
                 has-text-weight-bold">Regarder la vidéo</span>
-            </a>
+</a>
           </div>
         </div>
       </div>
@@ -160,10 +161,10 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./editor/non-asset-content-references.md" title="Références de contenu autres que des ressources" tabindex="-1">
+            <a href="./editor/non-asset-content-references.md" title="Références de contenu autre que des ressources" tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3419313?format=jpeg"
-                alt="Références de contenu autres que des ressources">
+                alt="Références au contenu autres que des ressources">
             </a>
           </figure>
         </div>
@@ -172,15 +173,15 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minute</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./editor/non-asset-content-references.md" title="Références de contenu autres que des ressources">Références de contenu autres que des ressources</a>
+              <a href="./editor/non-asset-content-references.md" title="Références de contenu autre que des ressources">Références de contenu autre que des ressources</a>
             </p>
             <p class="is-size-6">Incorporez des fragments d’expérience et des pages dans vos fragments de contenu.</p>
             <a href="./editor/non-asset-content-references.md"
               class="spectrum-Button spectrum-Button--outline
               spectrum-Button--primary spectrum-Button--sizeM">
-              <span class="spectrum-Button-label has-no-wrap
+<span class="spectrum-Button-label has-no-wrap
                 has-text-weight-bold">Regarder la vidéo</span>
-            </a>
+</a>
           </div>
         </div>
       </div>
@@ -209,9 +210,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <a href="./editor/rte-variant-compare.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
-              <span class="spectrum-Button-label has-no-wrap
+<span class="spectrum-Button-label has-no-wrap
                 has-text-weight-bold">Regarder la vidéo</span>
-            </a>
+</a>
           </div>
         </div>
       </div>
@@ -237,13 +238,13 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./editor/language-copies.md" title="Copies de langue">Copies de langue</a>
             </p>
-            <p class="is-size-6">Gérer facilement vos copies de langue de fragment de contenu</p>
+            <p class="is-size-6">Gérez facilement vos copies de langue de fragment de contenu</p>
             <a href="./editor/language-copies.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
-              <span class="spectrum-Button-label has-no-wrap
+<span class="spectrum-Button-label has-no-wrap
                 has-text-weight-bold">Regarder la vidéo</span>
-            </a>
+</a>
           </div>
         </div>
       </div>
@@ -273,9 +274,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <a href="./search/references.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
-              <span class="spectrum-Button-label has-no-wrap
+<span class="spectrum-Button-label has-no-wrap
                 has-text-weight-bold">Regarder la vidéo</span>
-            </a>
+</a>
           </div>
         </div>
       </div>
