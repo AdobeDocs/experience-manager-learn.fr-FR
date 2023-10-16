@@ -1,6 +1,6 @@
 ---
 title: Listes déroulantes en cascade
-description: Renseignez les listes déroulantes en fonction d’une sélection précédente de liste déroulante.
+description: Renseignez les listes déroulantes en fonction d’une sélection préalable de liste déroulante.
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 9724
@@ -9,78 +9,86 @@ role: Developer
 level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
+source-git-commit: 5fc4a11b7f7f26a62f49cc8614e6bf699cc1697a
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 1%
+source-wordcount: '636'
+ht-degree: 91%
 
 ---
 
 # Listes déroulantes en cascade
 
-Une liste déroulante en cascade est une série de contrôles DropDownList dépendants dans laquelle un contrôle DropDownList dépend des contrôles DropList parent ou précédent. Les éléments du contrôle DropDownList sont renseignés en fonction d’un élément sélectionné par l’utilisateur à partir d’un autre contrôle DropDownList.
+Une liste déroulante en cascade est une série de contrôles DropDownList dépendants dans laquelle un contrôle DropDownList dépend des contrôles DropList parents ou précédents. Les éléments du contrôle DropDownList sont renseignés en fonction d’un élément sélectionné par l’utilisateur ou l’utilisatrice à partir d’un autre contrôle DropDownList.
 
-## Démonstration du cas pratique
+## Démonstration du cas d’utilisation
 
 >[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
 
-Pour les besoins de ce tutoriel, j’ai utilisé [API REST Geonames](http://api.geonames.org/) pour démontrer cette capacité.
-Un certain nombre d’entreprises proposent ce type de service et tant qu’elles disposent d’API REST bien documentées, vous pouvez facilement intégrer AEM Forms à l’aide de la fonctionnalité d’intégration des données.
+Dans ce tutoriel, j’ai utilisé l’[API REST Geonames](http://api.geonames.org/) pour démontrer cette fonctionnalité.
+Un certain nombre d’organisations proposent ce type de service. Tant que vous disposez d’API REST bien documentées, vous pouvez facilement intégrer AEM Forms à l’aide de la fonctionnalité d’intégration des données.
 
-Les étapes suivantes ont été suivies pour mettre en oeuvre des listes déroulantes en cascade dans AEM Forms
+Les étapes suivantes servent à mettre en œuvre des listes déroulantes en cascade dans AEM Forms.
 
-## Créer un compte de développeur
+## Créer un compte de développement
 
-Création d’un compte développeur avec [Geonames](https://www.geonames.org/login). Notez le nom d’utilisateur. Ce nom d’utilisateur est nécessaire pour appeler les API REST de geonames.org.
+Créez un compte de développement avec [Geonames](https://www.geonames.org/login). Notez le nom d’utilisateur ou d’utilisatrice. Ce nom d’utilisateur ou d’utilisatrice est nécessaire pour appeler les API REST de geonames.org.
 
-## Création d’un fichier Swagger/OpenAPI
+## Créer un fichier Swagger/OpenAPI
 
-OpenAPI Specification (anciennement Swagger Specification) est un format de description d’API pour les API REST. Un fichier OpenAPI vous permet de décrire l’ensemble de votre API, notamment :
+La spécification OpenAPI (anciennement spécification Swagger) est un format de description d’API pour les API REST. Un fichier OpenAPI vous permet de décrire l’ensemble de votre API, notamment :
 
-* Points de terminaison disponibles (/users) et opérations sur chaque point de terminaison (GET /users, POST /users)
-* Paramètres d’opération Entrée et sortie pour chaque opération Méthodes d’authentification
+* les points d’entrée (/users) et les opérations disponibles sur chaque point d’entrée (GET/users, POST /users) ;
+* les paramètres d’opération d’entrée et de sortie pour chaque opération.
+Méthodes d’authentification
 * Coordonnées, licences, conditions d’utilisation et autres informations.
-* Les spécifications d’API peuvent être écrites dans YAML ou JSON. Ce format est facile à apprendre et à lire pour les humains comme pour les machines.
+* Les spécifications d’API peuvent être écrites en YAML ou JSON. Ce format est facile à apprendre et à lire pour les humains comme pour les machines.
 
-Pour créer votre premier fichier swagger/OpenAPI, suivez la procédure décrite à la rubrique [Documentation OpenAPI](https://swagger.io/docs/specification/2-0/basic-structure/)
+Pour créer votre premier fichier Swagger/OpenAPI, suivez la procédure décrite dans la [documentation OpenAPI](https://swagger.io/docs/specification/2-0/basic-structure/).
 
 >[!NOTE]
-> AEM Forms prend en charge la spécification OpenAPI version 2.0 (FKA Swagger).
+> AEM Forms prend en charge la spécification OpenAPI version 2.0 (FKA Swagger).
 
-Utilisez la variable [éditeur de swagger](https://editor.swagger.io/) pour créer votre fichier swagger afin de décrire les opérations qui récupèrent tous les pays et éléments enfants du pays ou de l’état. Le fichier swagger peut être créé au format JSON ou YAML. Le fichier swagger terminé peut être téléchargé à partir de [here](assets/swagger-files.zip)
-Les fichiers swagger décrivent l’API REST suivante :
-* [Obtenir tous les pays](http://api.geonames.org/countryInfoJSON?username=yourusername)
-* [Obtention des enfants de l’objet Geoname](http://api.geonames.org/childrenJSON?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+Utilisez l’[éditeur de Swagger](https://editor.swagger.io/) pour créer votre fichier Swagger afin de décrire les opérations qui récupèrent tous les pays et éléments enfants du pays ou de l’État. Le fichier Swagger peut être créé au format JSON ou YAML.
 
-## Création de sources de données
+## Créer des sources de données
 
-Pour intégrer AEM/AEM Forms à des applications tierces, nous devons [création d’une source de données](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) dans la configuration des services cloud. Veuillez utiliser la variable [fichiers swagger](assets/swagger-files.zip) pour créer vos sources de données.
-Vous devez créer 2 sources de données (l’une pour récupérer tous les pays et l’autre pour obtenir des éléments enfants).
+Pour intégrer AEM/AEM Forms à des applications tierces, nous devons [créer une source de données](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html?lang=fr) dans la configuration des services cloud. Veuillez utiliser les [fichiers Swagger](assets/geonames-swagger-files.zip) pour créer vos sources de données.
+Vous devez créer 2 sources de données (l’une pour récupérer tous les pays et l’autre pour obtenir des éléments enfants).
 
 
-## Création d’un modèle de données de formulaire
+## Créer un modèle de données de formulaire
 
-L’intégration de données AEM Forms offre une interface utilisateur intuitive pour créer et utiliser des [modèles de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=fr). Basez le modèle de données de formulaire sur les sources de données créées à l’étape précédente. Modèle de données de formulaire avec 2 sources de données
+L’intégration de données d’AEM Forms fournit une interface utilisateur intuitive permettant de créer et d’utiliser des [modèles de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=fr). Basez le modèle de données de formulaire sur les sources de données créées à l’étape précédente. Modèle de données de formulaire avec 2 sources de données
 
-![fdm](assets/geonames-fdm.png)
+![Modèle de données de formulaire.](assets/geonames-fdm.png)
 
 
 ## Créer un formulaire adaptatif
 
-Intégrez les GET d’appel du modèle de données de formulaire à votre formulaire adaptatif pour remplir les listes déroulantes.
-Créez un formulaire adaptatif avec 2 listes déroulantes. Un pour répertorier les pays, et un autre pour répertorier les états/provinces en fonction du pays sélectionné.
+Intégrez les appels GET du modèle de données de formulaire à votre formulaire adaptatif pour renseigner les listes déroulantes.
+Créez un formulaire adaptatif avec 2 listes déroulantes. Une liste pour répertorier les pays, et l’autre pour répertorier les États/provinces en fonction du pays sélectionné.
 
-### Liste déroulante Renseigner les pays
+### Renseigner la liste déroulante Pays
 
-La liste des pays est renseignée lors de la première initialisation du formulaire. La capture d’écran suivante montre l’éditeur de règles configuré pour renseigner les options de la liste déroulante des pays. Pour que cela fonctionne, vous devrez fournir votre nom d’utilisateur avec le compte geonames.
+La liste des pays est renseignée lors de la première initialisation du formulaire. La capture d’écran suivante montre l’éditeur de règles configuré pour renseigner les options de la liste déroulante des pays. Pour que cela fonctionne, vous devrez fournir votre nom d’utilisateur ou d’utilisatrice avec le compte Geonames.
 ![get-countries](assets/get-countries-rule-editor.png)
 
-#### Remplissage de la liste déroulante État/Province
+#### Renseigner la liste déroulante État/Province
 
-Nous devons remplir la liste déroulante Etat/Province en fonction du pays sélectionné. La capture d’écran suivante présente la configuration de l’éditeur de règles
+La liste déroulante État/Province doit être renseignée en fonction du pays sélectionné. La capture d’écran suivante présente la configuration de l’éditeur de règles.
 ![state-province-options](assets/state-province-options.png)
 
 ### Exercice
 
-Ajoutez 2 listes déroulantes appelées villes et départements dans le formulaire pour répertorier les départements et villes en fonction du pays et de l&#39;état/province sélectionnés.
-![exercice](assets/cascading-drop-down-exercise.png)
+Ajoutez 2 listes déroulantes appelées Villes et Départements dans le formulaire pour répertorier les villes et départements en fonction du pays et de l’État ou de la province sélectionnés.
+![Exercice.](assets/cascading-drop-down-exercise.png)
+
+
+### Exemples de ressources
+
+Vous pouvez télécharger les ressources suivantes pour démarrer rapidement la création de l’exemple de liste déroulante en cascade Les fichiers swagger terminés peuvent être téléchargés depuis [here](assets/geonames-swagger-files.zip)
+Les fichiers swagger décrivent l’API REST suivante :
+* [Obtenir tous les pays](http://api.geonames.org/countryInfoJSON?username=yourusername)
+* [Obtenir les enfants de l’objet Geoname](http://api.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+
+Terminé [Le modèle de données de formulaire peut être téléchargé ici](assets/geonames-api-form-data-model.zip)
