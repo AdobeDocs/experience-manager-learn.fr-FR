@@ -7,12 +7,13 @@ topic: Content Management
 role: User
 level: Beginner
 thumbnail: 28988.jpg
+jira: KT-8413, KT-3707
 last-substantial-update: 2022-06-25T00:00:00Z
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
+source-git-commit: 8dfc538e93ea5dc114cf0a5d57dd82d924e476ff
 workflow-type: tm+mt
 source-wordcount: '1047'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +25,11 @@ L’extension Adobe Asset Link pour Adobe Creative Cloud for enterprise é
 
 >[!TIP]
 >
-> En savoir plus sur la manière dont la variable [Programme de formation Adobe XD Premium](https://helpx.adobe.com/fr/support/xd.html) peut vous aider à intégrer Asset Link à votre workflow Adobe Experience Manager.
+> En savoir plus sur la manière dont le [programme de formation Adobe XD Premium](https://helpx.adobe.com/fr/support/xd.html) peut vous aider à intégrer Asset Link à votre workflow Adobe Experience Manager.
 
-## Adobe d’un lien vers les ressources et de processus créatifs
+## Workflows créatifs d’Adobe Asset Link et d’AEM
 
-La vidéo suivante illustre un processus courant utilisé par les créatifs qui travaillent dans des applications Adobe Creative Cloud et qui s’intègrent directement à AEM à l’aide d’Adobe Asset Link.
+La vidéo suivante illustre un workflow courant utilisé par les créateurs et créatrices qui travaillent avec des applications Adobe Creative Cloud et qui s’intègrent directement à AEM à l’aide d’Adobe Asset Link.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335927?quality=12&learn=on)
 
@@ -51,7 +52,7 @@ La vidéo suivante illustre un processus courant utilisé par les créatifs qui 
    + Versions
 + Placez, téléchargez ou faites glisser et déposez des ressources dans leur disposition.
 + Modifiez des ressources en les extrayant d’AEM et en travaillant dessus dans leur compte de ressources Creative Cloud.
-+ Réarchivez une ressource dans AEM une fois qu’elle a été modifiée, et la nouvelle version est répercutée dans AEM
++ Archivez une ressource dans AEM après sa modification et disposez de la nouvelle version dans AEM.
 + Recherchez des ressources dans AEM à partir du panneau in-app dans Adobe Asset Link.
 + Parcourez les collections d’AEM Assets et les collections dynamiques directement à partir du panneau d’Asset Link.
 + Ajoutez des ressources nouvellement créées à AEM directement à partir du panneau.
@@ -95,9 +96,9 @@ Découvrez comment fonctionne l’authentification d’Adobe Asset Link avec l
 ![Architecture Adobe Asset Link.](assets/adobe-asset-link-article-understand.png)
 
 1. L’extension Adobe Asset Link émet une requête d’autorisation via l’application de bureau Adobe Creative Cloud au service Identity Manager (IMS) d’Adobe et, en cas de succès, reçoit un jeton porteur.
-1. L’extension Adobe Asset Link se connecte à l’auteur AEM via HTTP(S), y compris le jeton porteur obtenu dans **Étape 1**, à l’aide du schéma (HTTP/HTTPS), de l’hôte et du port fournis dans les paramètres JSON de l’extension.
-1. AEM Gestionnaire d’authentification du porteur extrait le jeton du porteur de la requête et le valide avec Adobe IMS.
-1. Une fois qu’Adobe IMS valide le jeton porteur, un utilisateur est créé dans AEM (s’il n’existe pas déjà) et synchronise les données de profil et de groupe/adhésions d’Adobe IMS. L’utilisateur ou l’utilisatrice d’AEM se voit attribuer un jeton de connexion AEM standard, qui est renvoyé à l’extension Adobe Asset Link en tant que cookie sur la réponse HTTP(S).
+1. L’extension Adobe Asset Link se connecte au service de création d’AEM via HTTP(S), en incluant le jeton porteur obtenu à l’**étape 1**, à l’aide du schéma (HTTP/HTTPS), de l’hôte et du port fournis dans le JSON des paramètres de l’extension.
+1. Le gestionnaire d’authentification de jeton de support d’AEM extrait le jeton porteur de la requête et le valide avec Adobe IMS.
+1. Une fois qu’Adobe IMS valide le jeton porteur, un profil utilisateur est créé dans AEM (s’il n’existe pas déjà) et synchronise les données de profil, de groupe et d’appartenances d’Adobe IMS. L’utilisateur ou l’utilisatrice d’AEM se voit attribuer un jeton de connexion AEM standard, qui est renvoyé à l’extension Adobe Asset Link en tant que cookie sur la réponse HTTP(S).
 1. Les interactions suivantes (c’est-à-dire la navigation, la recherche, l’archivage et l’extraction de ressources, etc.) avec l’extension Adobe Asset Link génèrent des requêtes HTTP(S) au service de création d’AEM qui sont validées à l’aide du jeton de connexion AEM, avec le gestionnaire d’authentification de jeton AEM standard.
 
 >[!NOTE]
