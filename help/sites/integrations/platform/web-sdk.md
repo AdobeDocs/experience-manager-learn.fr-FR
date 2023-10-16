@@ -12,8 +12,8 @@ jira: KT-13156
 thumbnail: KT-13156.jpeg
 badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
-exl-id: b5182d35-ec38-4ffd-ae5a-ade2dd3f856d
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '1354'
 ht-degree: 6%
@@ -28,7 +28,7 @@ Vous apprenez également à collecter et à envoyer [WKND - exemple de projet Ad
 
 Après avoir terminé cette configuration, vous avez mis en oeuvre une base solide. En outre, vous êtes prêt à faire avancer la mise en oeuvre de l’Experience Platform à l’aide d’applications telles que [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/docs/customer-journey-analytics.html), et [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=fr). L’implémentation avancée permet d’augmenter l’engagement des clients en normalisant les données web et clients.
 
-## Conditions préalables
+## Conditions préalables requises
 
 Les éléments suivants sont requis lors de l’intégration du SDK Web Experience Platform.
 
@@ -50,7 +50,7 @@ Si vous ne disposez pas des autorisations nécessaires, votre administrateur sys
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418856?quality=12&learn=on)
 
-## Création d’un schéma XDM - Experience Platform
+## Créer un schéma XDM - Experience Platform
 
 Le schéma de modèle de données d’expérience (XDM) vous aide à normaliser les données d’expérience client. Pour collecter le **Pageview WKND** données, créer un schéma XDM et utiliser les groupes de champs fournis par l’Adobe `AEP Web SDK ExperienceEvent` pour la collecte de données web.
 
@@ -59,9 +59,9 @@ Il existe des secteurs génériques et spécifiques, par exemple le commerce de 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418894?quality=12&learn=on)
 
-Découvrez le schéma XDM et les concepts associés, tels que les groupes de champs, les types, les classes et les types de données, issus de [Présentation du système XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+Découvrez le schéma XDM et les concepts associés tels que les groupes de champs, les types, les classes et les types de données de [Présentation du système XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
-Le [Présentation du système XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) est une excellente ressource pour en savoir plus sur le schéma XDM et les concepts connexes tels que les groupes de champs, les types, les classes et les types de données. Il offre une compréhension complète du modèle de données XDM et de la création et de la gestion de schémas XDM pour normaliser les données dans l’entreprise. Explorez-le pour mieux comprendre le schéma XDM et les avantages qu’il peut présenter à vos processus de collecte et de gestion des données.
+La variable [Présentation du système XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) est une excellente ressource pour en savoir plus sur le schéma XDM et les concepts connexes tels que les groupes de champs, les types, les classes et les types de données. Il offre une compréhension complète du modèle de données XDM et de la création et de la gestion de schémas XDM pour normaliser les données dans l’entreprise. Explorez-le pour mieux comprendre le schéma XDM et les avantages qu’il peut présenter à vos processus de collecte et de gestion des données.
 
 ## Créer un flux de données - Experience Platform
 
@@ -77,8 +77,8 @@ Familiarisez-vous avec le concept des flux de données et les sujets connexes, t
 Découvrez comment créer une propriété de balise (anciennement connue sous le nom de Launch) dans Experience Platform pour ajouter la bibliothèque JavaScript du SDK Web au site Web WKND. La propriété de balise nouvellement définie comporte les ressources suivantes :
 
 + Extensions de balise : [Core](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) et [SDK Web Adobe Experience Platform](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
-+ Éléments de données : Éléments de données de type de code personnalisé qui extraient page-name, site-section et nom-hôte à l’aide de la couche de données client Adobe du site WKND. En outre, l’élément de données de type objet XDM conforme à la version de schéma XDM WKND que vous venez de créer. [Création d’un schéma XDM](#create-xdm-schema---experience-platform) étape .
-+ Règle : Envoyez des données à Platform Edge Network chaque fois qu’une page web WKND est visitée à l’aide de la couche de données client d’Adobe déclenchée. `cmp:show` .
++ Éléments de données : éléments de données de type de code personnalisé qui extraient page-name, site-section et host-name à l’aide de la couche de données client d’Adobe du site WKND. En outre, l’élément de données de type objet XDM conforme à la version de schéma XDM WKND nouvellement créée précédemment. [Créer un schéma XDM](#create-xdm-schema---experience-platform) étape .
++ Règle : envoyer des données à Platform Edge Network chaque fois qu’une page web WKND est visitée à l’aide de la couche de données client Adobe déclenchée `cmp:show` .
 
 Lors de la création et de la publication de la bibliothèque de balises à l’aide de la variable **Flux de publication**, vous pouvez utiliser la variable **Ajouter toutes les ressources modifiées** bouton . Pour sélectionner toutes les ressources telles que Data Element, Rule et Tag Extensions au lieu d’identifier et de sélectionner une ressource individuelle. En outre, pendant la phase de développement, vous pouvez publier la bibliothèque uniquement sur le _Développement_ , puis vérifiez et validez sur la page _Évaluation_ ou _Production_ environnement.
 
@@ -92,7 +92,7 @@ Lors de la création et de la publication de la bibliothèque de balises à l’
 
 +++ Élément de données et code d’événement de règle
 
-+ Le `Page Name` Code d’élément de données.
++ La variable `Page Name` Code d’élément de données.
 
   ```javascript
   if(event && event.component && event.component.hasOwnProperty('dc:title')) {
@@ -101,7 +101,7 @@ Lors de la création et de la publication de la bibliothèque de balises à l’
   }
   ```
 
-+ Le `Site Section` Code d’élément de données.
++ La variable `Site Section` Code d’élément de données.
 
   ```javascript
   if(event && event.component && event.component.hasOwnProperty('repo:path')) {
@@ -124,7 +124,7 @@ Lors de la création et de la publication de la bibliothèque de balises à l’
   }
   ```
 
-+ Le `Host Name` Code d’élément de données.
++ La variable `Host Name` Code d’élément de données.
 
   ```javascript
   if(window && window.location && window.location.hostname) {
@@ -132,7 +132,7 @@ Lors de la création et de la publication de la bibliothèque de balises à l’
   }
   ```
 
-+ Le `all pages - on load` Code d’événement de règle
++ La variable `all pages - on load` Code d’événement de règle
 
   ```javascript
   var pageShownEventHandler = function(evt) {
@@ -167,7 +167,7 @@ Lors de la création et de la publication de la bibliothèque de balises à l’
 +++
 
 
-Le [Présentation des balises](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) fournit des connaissances approfondies sur des concepts importants tels que les éléments de données, les règles et les extensions.
+La variable [Présentation des balises](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) fournit des connaissances approfondies sur des concepts importants tels que les éléments de données, les règles et les extensions.
 
 Pour plus d’informations sur l’intégration des composants principaux AEM à la couche de données client Adobe, reportez-vous à la section [Utilisation du guide Adobe de la couche de données client avec AEM composants principaux](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=fr).
 
@@ -179,7 +179,7 @@ Après avoir lié la propriété de balise, le site WKND peut charger la bibliot
 
 ### Vérification du chargement de la propriété de balise sur WKND
 
-Utilisation de l’Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) ou [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) , vérifiez si la propriété de balise se charge sur les pages WKND. Vous pouvez vérifier,
+Utilisation d’Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) ou [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) , vérifiez si la propriété de balise se charge sur les pages WKND. Vous pouvez vérifier,
 
 + Les détails de propriété de balise tels que l’extension, la version, le nom, etc.
 + Version de la bibliothèque SDK Web de Platform, ID de flux de données
@@ -194,7 +194,7 @@ Les données pageview collectées à l’aide du SDK Web sont stockées dans le 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418898?quality=12&learn=on)
 
-Le [Présentation des jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=fr) fournit des informations supplémentaires sur les concepts, les configurations et d’autres fonctionnalités d’ingestion.
+La variable [Présentation des jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=fr) fournit des informations supplémentaires sur les concepts, les configurations et d’autres fonctionnalités d’ingestion.
 
 
 ## Données WKND pageview dans Experience Platform
@@ -206,7 +206,7 @@ Après la configuration du SDK Web avec AEM, en particulier sur le site WKND, il
 
 ## Résumé
 
-Très bon travail ! Vous avez terminé la configuration d’AEM avec le SDK web Experience Platform pour collecter et ingérer des données à partir d’un site web. Grâce à cette fondation, vous pouvez désormais explorer d’autres possibilités d’amélioration et d’intégration de produits tels qu’Analytics, Target, Customer Journey Analytics (CJA), et de nombreux autres afin de créer des expériences riches et personnalisées pour vos clients. Continuez à apprendre et à explorer pour exploiter tout le potentiel de Adobe Experience Cloud.
+Très bon travail ! Vous avez terminé la configuration d’AEM avec le SDK web Experience Platform pour collecter et ingérer des données à partir d’un site web. Grâce à cette fondation, vous pouvez désormais explorer d’autres possibilités d’amélioration et d’intégration de produits tels qu’Analytics, Target, Customer Journey Analytics (CJA) et de nombreux autres afin de créer des expériences riches et personnalisées pour vos clients. Continuez à apprendre et à explorer pour exploiter tout le potentiel de Adobe Experience Cloud.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418900?quality=12&learn=on)
 
@@ -221,4 +221,4 @@ Très bon travail ! Vous avez terminé la configuration d’AEM avec le SDK web
 + [Intégration de balises de collecte de données Experience Platform et d’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr)
 + [SDK web Adobe Experience Platform et présentation du réseau Edge](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [Tutoriels sur la collecte de données](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
-+ [Présentation de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Adobe Experience Platform Debugger - Aperçu](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

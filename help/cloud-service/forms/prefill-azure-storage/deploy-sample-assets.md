@@ -8,7 +8,8 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 kt: 13717
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+exl-id: ae8104fa-7af2-49c2-9e6b-704152d49149
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
@@ -25,10 +26,8 @@ Pour que ce cas d’utilisation fonctionne sur votre système, déployez les res
 
 * [Installation du modèle de données de formulaire SendGrid](./assets/send-grid-form-data-model.zip). Vous devrez fournir votre clé d’API et SendGrid vérifié à partir de l’adresse pour que ce modèle de données de formulaire fonctionne. Tester le modèle de données de formulaire dans l’éditeur de modèle de données de formulaire
 
-* [Installation du modèle de données de formulaire pris en charge par Azure](./assets/azure-storage-fdm.zip). Vous devrez fournir vos informations d’identification de compte Azure Storage pour que le modèle de données de formulaire fonctionne. Testez le modèle de données de formulaire dans l’éditeur de modèle de données de formulaire.
+* [Installation du modèle de données de formulaire soutenu par Azure](./assets/azure-storage-fdm.zip). Vous devrez fournir vos informations d’identification de compte Azure Storage pour que le modèle de données de formulaire fonctionne. Testez le modèle de données de formulaire dans l’éditeur de modèle de données de formulaire.
 
 * [Importation de l’exemple de formulaire adaptatif](./assets/credit-applications-af.zip)
 * [Importation de la bibliothèque cliente](./assets/client-lib.zip)
 * [Aperçu du formulaire](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/creditapplications/jcr:content?wcmmode=disabled). Saisissez un e-mail valide et cliquez sur le bouton Enregistrer . Les données de formulaire doivent être stockées dans le stockage Azure et un courrier électronique contenant un lien vers le formulaire enregistré sera envoyé à l’adresse électronique indiquée.
-
-

@@ -8,7 +8,8 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 kt: 13717
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+exl-id: 4b2d1e50-9fa1-4934-820b-7dae984cee00
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 12%
@@ -26,12 +27,10 @@ Nous avons utilisé l’API SendGrid pour envoyer des emails à l’aide d’un 
 Suivez les étapes suivantes pour créer l’intégration entre AEM Forms et SendGrid.
 
 * Créez une source de données RESTful à l’aide du [fichier swagger](./assets/SendGridWithDynamicTemplate.yaml). [Suivez cette vidéo pour obtenir des instructions détaillées](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) sur la création de sources de données dans AEM Forms
-* Créez un modèle de données de formulaire basé sur la source de données créée à l’étape précédente.[Consultez la documentation détaillée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html) lors de la création d’un modèle de données de formulaire.
+* Créez un modèle de données de formulaire basé sur la source de données créée à l’étape précédente.[Consultez la documentation détaillée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html) lors de la création du modèle de données de formulaire.
 
 Le modèle de données de formulaire créé pour ce tutoriel est inclus dans les ressources de l’article.
 
 ### Étapes suivantes
 
 [Création d’une intégration de stockage Azure](./create-fdm.md)
-
-

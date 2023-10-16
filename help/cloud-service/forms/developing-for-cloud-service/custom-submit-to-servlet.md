@@ -9,8 +9,8 @@ version: Cloud Service
 topic: Development
 feature: Developer Tools
 kt: 8852
-exl-id: 832f7e82-3e03-4ac6-9c8b-e96f0efecd32
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
+exl-id: 983e0394-7142-481f-bd5e-6c9acefbfdd0
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 2%
@@ -52,7 +52,7 @@ Le code suivant dans le fichier post.POST.jsp transfère simplement la demande a
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,"/bin/formstutorial",null,null);
 ```
 
-Dans votre projet AEM dans IntelliJ, cliquez avec le bouton droit de la souris sur l’objet `apps/bankingapplication` et sélectionnez Nouveau | Package et saisissez SubmitToAEMServlet après apps.bankingapplication dans la boîte de dialogue du nouveau package. Cliquez avec le bouton droit sur le noeud SubmitToAEMServlet et sélectionnez repo. | Obtenir la commande pour synchroniser le projet AEM avec le référentiel de serveur AEM.
+Dans votre projet AEM dans IntelliJ, cliquez avec le bouton droit de la souris `apps/bankingapplication` et sélectionnez Nouveau | Package et saisissez SubmitToAEMServlet après apps.bankingapplication dans la boîte de dialogue du nouveau package. Cliquez avec le bouton droit sur le noeud SubmitToAEMServlet et sélectionnez repo. | Obtenir la commande pour synchroniser le projet AEM avec le référentiel de serveur AEM.
 
 
 ## Configurer un formulaire adaptatif

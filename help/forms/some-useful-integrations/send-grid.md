@@ -8,7 +8,8 @@ topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2023-07-14T00:00:00Z
-source-git-commit: cc24ebca488ea286e8a4605edfb39420c1c10022
+exl-id: 62b73f4b-69d8-4ede-9d57-3d6472d25d5a
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 1%
@@ -25,13 +26,13 @@ De plus, nous allons nous familiariser avec l&#39;utilisation du fichier Swagger
 
 Suivez les instructions détaillées de ce document pour exploiter la puissance des modèles dynamiques SendGrid et d’AEM Forms, et augmenter vos communications par e-mail jusqu’à de nouveaux niveaux d’engagement et de pertinence. Commençons !
 
-## Conditions préalables
+## Conditions préalables requises
 
 Avant de procéder à l’envoi d’emails à l’aide de modèles dynamiques SendGrid à partir d’AEM Forms, vérifiez que vous avez satisfait aux conditions préalables suivantes :
 
-1. **Compte SendGrid**: Inscrivez-vous à un compte SendGrid à l’adresse [https://sendgrid.com](https://sendgrid.com) pour accéder à leurs services de diffusion email. Vous aurez besoin des informations d’identification du compte pour intégrer SendGrid à AEM Forms.
-1. **Familiarisation avec la création de sources de données**: posséder des connaissances opérationnelles de la création de sources de données dans AEM Forms. Si nécessaire, reportez-vous à la documentation relative à la [création de sources de données](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) pour obtenir des instructions détaillées.
-1. **Familiarité avec le modèle de données de formulaire**: Comprendre le concept du modèle de données de formulaire dans AEM Forms. Si nécessaire, passez en revue la documentation relative à [création de modèles de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=fr) pour vous assurer d’avoir la compréhension nécessaire.
+1. **Compte SendGrid**: inscrivez-vous à un compte SendGrid à l’adresse [https://sendgrid.com](https://sendgrid.com) pour accéder à leurs services de diffusion email. Vous aurez besoin des informations d’identification du compte pour intégrer SendGrid à AEM Forms.
+1. **Familiarisation avec la création de sources de données**: posséder des connaissances opérationnelles sur la création de sources de données dans AEM Forms. Si nécessaire, reportez-vous à la documentation relative à [création de sources de données](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/parttwo.html) pour obtenir des instructions détaillées.
+1. **Familiarité avec le modèle de données de formulaire**: comprendre le concept du modèle de données de formulaire dans AEM Forms. Si nécessaire, passez en revue la documentation relative à [création de modèles de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=fr) pour vous assurer d’avoir la compréhension nécessaire.
 
 En remplissant ces conditions préalables, vous disposez des connaissances et des ressources essentielles pour envoyer efficacement des emails à l’aide de modèles dynamiques SendGrid à partir d’AEM Forms.
 
@@ -39,7 +40,7 @@ En remplissant ces conditions préalables, vous disposez des connaissances et de
 
 Les exemples de ressources fournis avec cet article sont les suivants :
 
-* **[Fichier Swagger](assets/SendGridWithDynamicTemplate.yaml)**: Ce fichier permet d&#39;envoyer des emails à l&#39;aide d&#39;un modèle d&#39;email dynamique. Il fournit les spécifications et configurations nécessaires à l’intégration à SendGrid et AEM Forms pour une diffusion email transparente.
+* **[Fichier Swagger](assets/SendGridWithDynamicTemplate.yaml)**: ce fichier permet d’envoyer des emails à l’aide d’un modèle d’email dynamique. Il fournit les spécifications et configurations nécessaires à l’intégration à SendGrid et AEM Forms pour une diffusion email transparente.
 
 N’hésitez pas à utiliser le fichier Swagger fourni comme référence ou point de départ pour la mise en oeuvre de la fonctionnalité d’email avec des modèles dynamiques.
 
@@ -76,4 +77,3 @@ L’exemple de charge utile pour le service est le suivant. Remplacez les valeur
 Assurez-vous que la variable `template_id` correspond à l’identifiant de votre modèle d’email dynamique SendGrid, et les adresses email sont valides et vérifiées par SendGrid. Les valeurs de la variable `personalizations` vous permet de personnaliser l’email à l’aide des données saisies par l’utilisateur à partir du formulaire adaptatif.
 
 En suivant ces étapes et en personnalisant la payload fournie, vous pouvez tester efficacement l’intégration des modèles dynamiques SendGrid avec AEM Forms.
-

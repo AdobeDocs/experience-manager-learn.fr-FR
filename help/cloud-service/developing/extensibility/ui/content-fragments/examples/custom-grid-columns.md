@@ -10,13 +10,13 @@ jira: KT-13453
 thumbnail: KT-13453.jpeg
 doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 2%
 
 ---
-
 
 # Colonnes de grille personnalisées
 
@@ -26,7 +26,7 @@ Vous pouvez ajouter des colonnes de grille personnalisées à la console Fragmen
 
 ## Point d’extension
 
-Cet exemple s’étend au point d’extension `contentFragmentGrid` pour ajouter une colonne personnalisée à la console de fragments de contenu.
+Cet exemple étend au point d’extension `contentFragmentGrid` pour ajouter une colonne personnalisée à la console de fragments de contenu.
 
 | Interface utilisateur AEM étendue | Point d’extension |
 | ------------------------ | --------------------- | 
@@ -147,7 +147,7 @@ export default ExtensionRegistration;
 
 #### Données de fragment de contenu
 
-Le `render(..)` dans `getColumns()` est transmis par un tableau de fragments. Chaque objet du tableau représente une ligne dans la grille et contient les métadonnées suivantes sur le fragment de contenu. Ces métadonnées peuvent être utilisées pour les colonnes personnalisées populaires dans la grille.
+La variable `render(..)` dans `getColumns()` est transmis par un tableau de fragments. Chaque objet du tableau représente une ligne dans la grille et contient les métadonnées suivantes sur le fragment de contenu. Ces métadonnées peuvent être utilisées pour les colonnes personnalisées populaires dans la grille.
 
 
 ```javascript
@@ -206,9 +206,9 @@ Si d’autres données sont requises pour remplir la colonne personnalisée, des
 
 >[!IMPORTANT]
 >
-> Assurez-vous que l’instance AEM Author est configurée pour autoriser [demandes cross-origin](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) à partir des origines de l’application AppBuilder en cours d’exécution. Les origines autorisées incluent `https://localhost:9080`, l’origine de l’évaluation AppBuilder et l’origine de production AppBuilder.
+> Assurez-vous que l’instance d’auteur AEM est configurée pour autoriser [demandes cross-origin](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) à partir des origines de l’application AppBuilder en cours d’exécution. Les origines autorisées incluent `https://localhost:9080`, l’origine de l’évaluation AppBuilder et l’origine de production AppBuilder.
 >
-> L’extension peut également appeler une [Action AppBuilder](../../runtime-action.md) qui envoie la requête à l’auteur AEM au nom de l’extension.
+> L’extension peut également appeler une [Action AppBuilder](../../runtime-action.md) qui émet la requête à AEM Auteur pour le compte de l’extension.
 
 
 ```javascript

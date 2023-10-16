@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
-source-git-commit: 12b3888552d5a131628dabf380840f0586798ea5
+exl-id: 6e5e3cb4-9a47-42af-86af-da33fd80cb47
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 9%
 
 ---
-
 
 # Modélisation de contenu
 
@@ -30,9 +30,9 @@ Nous allons ensuite aborder la création de modèles de fragment, qui définisse
 
 Ensuite, nous allons démontrer la création de fragments de contenu à partir des modèles, en fournissant des conseils détaillés sur la création et la publication.
 
-En outre, nous allons explorer la définition AEM points de terminaison GraphQL. GraphQL récupère efficacement les données d’AEM et nous allons configurer et configurer des points de terminaison pour exposer les données souhaitées. Les requêtes persistantes optimisent les performances et la mise en cache.
+En outre, nous allons explorer la définition AEM points de terminaison GraphQL. GraphQL récupère efficacement les données d’AEM et nous configurerons et configurerons des points de terminaison pour exposer les données souhaitées. Les requêtes persistantes optimisent les performances et la mise en cache.
 
-Tout au long du tutoriel, nous proposons des explications, des exemples de code et des conseils pratiques. D’ici la fin, vous disposerez des compétences nécessaires pour activer les fragments de contenu, créer des modèles de fragment, générer des fragments et définir des points de terminaison GraphQL AEM et des requêtes persistantes. Commençons !
+Tout au long du tutoriel, nous vous proposons des explications, des exemples de code et des conseils pratiques. D’ici la fin, vous disposerez des compétences nécessaires pour activer les fragments de contenu, créer des modèles de fragment, générer des fragments et définir des points de terminaison GraphQL AEM et des requêtes persistantes. Commençons !
 
 ## Configuration contextuelle
 
@@ -51,7 +51,7 @@ Tout au long du tutoriel, nous proposons des explications, des exemples de code 
 
 1. Dans le dossier, sélectionnez __Créer__ et donnez au modèle le nom __Teaser__. Ajoutez les types de données suivants au __Teaser__ modèle.
 
-   | Type de données | Nom | Requise | Options |
+   | Type de données | Nom | Requis | Options |
    |----------|------|----------|---------|
    | Référence de contenu | Asset | oui | Ajoutez une image par défaut si vous le souhaitez. Ex : /content/dam/wknd-headless/assets/AdobeStock_307513975.mp4 |
    | Une seule ligne de texte | Titre | oui |
@@ -63,7 +63,7 @@ Tout au long du tutoriel, nous proposons des explications, des exemples de code 
 
 1. Dans le dossier, créez un deuxième modèle nommé __Offre__. Cliquez sur Créer et donnez au modèle le nom &quot;Offre&quot; et ajoutez les types de données suivants :
 
-   | Type de données | Nom | Requise | Options |
+   | Type de données | Nom | Requis | Options |
    |----------|------|----------|---------|
    | Référence de contenu | Asset | oui | Ajoutez une image par défaut. Ex. : `/content/dam/wknd-headless/assets/AdobeStock_238607111.jpeg` |
    | Plusieurs lignes de texte | Description | non |  |
@@ -73,7 +73,7 @@ Tout au long du tutoriel, nous proposons des explications, des exemples de code 
 
 1. Dans le dossier, créez un troisième modèle nommé __Liste des images__. Cliquez sur Créer et donnez au modèle le nom &quot;Liste des images&quot; et ajoutez les types de données suivants :
 
-   | Type de données | Nom | Requise | Options |
+   | Type de données | Nom | Requis | Options |
    |----------|------|----------|---------|
    | Référence du fragment | Énumérer les éléments | oui | Rendu en tant que champ multiple. Le modèle de fragment de contenu autorisé est Offre. |
 
@@ -88,7 +88,7 @@ Tout au long du tutoriel, nous proposons des explications, des exemples de code 
 1. Une fois le dossier créé, sélectionnez-le et ouvrez-le. __Propriétés__.
 1. Dans le dossier __Configurations du cloud__ , sélectionnez la configuration [créé précédemment](#enable-content-fragments-and-graphql).
 
-   ![Fichier de ressources AEM configuration cloud sans affichage](./assets/1/cloud-config.png)
+   ![Dossier de ressources AEM configuration de cloud sans affichage](./assets/1/cloud-config.png)
 
    Cliquez dans le nouveau dossier et créez un teaser. Cliquez sur __Créer__ et __Fragment de contenu__ et sélectionnez la variable __Teaser__ modèle. Nommer le modèle __Hero__ et cliquez sur __Créer__.
 
@@ -131,7 +131,7 @@ Tout au long du tutoriel, nous proposons des explications, des exemples de code 
 
    Vous devriez obtenir une liste contenant le fragment unique créé. [above](#create-content).
 
-   Pour cet exercice, créez une requête complète que l’application AEM sans interface utilisateur. Créez une requête qui renvoie un seul teaser par chemin. Dans l&#39;éditeur de requêtes, saisissez la requête suivante :
+   Pour cet exercice, créez une requête complète que l’application AEM sans interface utilisateur. Créez une requête qui renvoie un seul teaser par chemin d’accès. Dans l&#39;éditeur de requêtes, saisissez la requête suivante :
 
    ```graphql
    query TeaserByPath($path: String!) {

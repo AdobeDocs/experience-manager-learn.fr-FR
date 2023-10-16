@@ -10,19 +10,19 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
-source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
+exl-id: b0ac4b50-5fe5-41a1-9530-8e593d7000c9
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 4%
 
 ---
 
-
 # Premier tutoriel AEM sans affichage
 
 {{aem-headless-trials-promo}}
 
-Bienvenue dans le tutoriel sur la création d’une expérience web à l’aide de React, entièrement piloté par AEM API et GraphQL sans affichage. Dans ce tutoriel, nous vous guiderons tout au long du processus de création d’une application web dynamique et interactive en combinant la puissance de React, des API Adobe Experience Manager (AEM) sans affichage et GraphQL.
+Bienvenue dans le tutoriel sur la création d’une expérience web à l’aide de React, entièrement piloté par AEM API et GraphQL sans affichage. Dans ce tutoriel, nous vous guiderons tout au long du processus de création d’une application web dynamique et interactive en combinant la puissance des API React, Adobe Experience Manager (AEM) sans affichage et GraphQL.
 
 React est une bibliothèque JavaScript populaire pour la création d’interfaces utilisateur, connue pour sa simplicité, sa convivialité et son architecture basée sur des composants. AEM fournit de puissantes fonctionnalités de gestion de contenu et expose des API sans affichage qui permettent aux développeurs d’accéder au contenu et aux données stockés dans AEM par le biais de divers canaux et applications.
 
@@ -36,7 +36,7 @@ Nous aborderons des sujets tels que la configuration de votre projet React, la c
 
 D’ici la fin de ce tutoriel, vous aurez une bonne compréhension de la manière d’exploiter React, les API AEM sans affichage et GraphQL pour créer une expérience web puissante et attrayante. Donc, plongeons et commençons à construire votre prochaine application web !
 
-## Prérequis
+## Conditions préalables requises
 
 ### Compétences
 
@@ -51,7 +51,7 @@ Ce tutoriel nécessite un accès administrateur à un environnement as a Cloud S
 ### Logiciels
 
 + [Node.js v16 et ultérieure.](https://nodejs.org/en/)
-   + Vérifiez votre version de noeud en exécutant `node -v` de la ligne de commande
+   + Vérifiez la version de votre noeud en exécutant `node -v` de la ligne de commande
 + [npm 6+](https://www.npmjs.com/)
    + Vérifiez votre version npm en exécutant `npm -v` de la ligne de commande
 + [Git](https://git-scm.com/)

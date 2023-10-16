@@ -9,13 +9,13 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 kt: 13520
-source-git-commit: 2dceb4dd4ee1079c100c9cbca94332d61d17ef57
+exl-id: c23275d7-daf7-4a42-83b6-4d04b297c470
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 1%
 
 ---
-
 
 # Création d’un envoi personnalisé
 
@@ -28,9 +28,9 @@ Pour créer un service d’envoi personnalisé, les étapes suivantes ont été 
 Si vous disposez déjà d’un projet AEM Forms Cloud Service, vous pouvez [saut à l’écriture d’un service d’envoi personnalisé](#Write-the-custom-submit-service)
 
 * Créez un dossier appelé cloudmanager sur votre disque c.
-* Accédez à ce dossier nouvellement créé.
+* Accédez à ce dossier nouvellement créé
 * Copiez et collez le contenu de [ce fichier texte](./assets/creating-maven-project.txt) dans la fenêtre de l’invite de commande. Vous devrez peut-être modifier DarchetypeVersion=41 en fonction du [dernière version](https://github.com/adobe/aem-project-archetype/releases). La dernière version était 41 au moment de la rédaction de cet article.
-* Exécutez la commande en appuyant sur la touche Entrée. Si tout se passe correctement, un message de réussite de création s’affiche.
+* Exécutez la commande en appuyant sur la touche Entrée. Si tout se passe correctement, le message de réussite de la création s’affiche.
 
 ## Écrire le service d’envoi personnalisé{#Write-the-custom-submit-service}
 
@@ -119,21 +119,9 @@ Cela déploie le code sous la forme d’un package unique sur votre instance de 
 Après avoir vérifié le code sur votre instance locale, poussez-le vers votre instance cloud.
 Envoyez les modifications à votre référentiel git local, puis au référentiel de cloud manager. Vous pouvez consulter la section  [Configuration Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/setup-git.html), [transfert d’AEM projet dans le référentiel de cloud manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/push-project-to-cloud-manager-git.html) et [déploiement dans l’environnement de développement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/deploy-to-dev-environment.html) articles.
 
-Une fois que le pipeline s’est exécuté correctement, vous devriez être en mesure d’associer l’action d’envoi de votre formulaire au gestionnaire d’envoi personnalisé, comme illustré dans la capture d’écran ci-dessous.
+Une fois le pipeline exécuté correctement, vous devriez être en mesure d’associer l’action d’envoi de votre formulaire au gestionnaire d’envoi personnalisé, comme illustré dans la capture d’écran ci-dessous.
 ![submit-action](./assets/configure-submit-action.png)
 
 ## Étapes suivantes
 
 [Affichage de la réponse personnalisée dans votre application de réaction](./handle-response-react-app.md)
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,8 +8,8 @@ role: Developer
 level: Beginner
 kt: 13099
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: b7ddc0bd-db93-44e0-83cc-bccde604bd91
-source-git-commit: 4709035983a5c6705c4e807d877ee71145f48987
+exl-id: 15364571-070c-4497-a256-f0483d6f9585
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -21,12 +21,12 @@ ht-degree: 0%
 Un lot d’AEM personnalisé a été développé pour créer et renvoyer le formulaire web à l’utilisateur final.
 
 * [Créer un document transitoire](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). Le document transféré via cet appel est considéré comme transitoire, car il n’est disponible que pendant 7 jours après le chargement. L’ID de document transitoire renvoyé peut être utilisé dans les appels API où le fichier chargé doit être référencé. La requête de document transitoire est une requête en plusieurs parties composée de trois parties : nom du fichier, type MIME et flux de fichiers. Vous ne pouvez charger qu’un seul fichier à la fois dans cette requête.
-* [Créer un formulaire web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).Il s’agit d’un Principal point de terminaison utilisé pour créer un formulaire web. Le formulaire web a été créé dans un état PRINCIPAL pour héberger immédiatement le formulaire web.
+* [Créer un formulaire web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).Il s’agit d’un point de terminaison principal utilisé pour créer un formulaire web. Le formulaire web a été créé à l’état ACTIF pour héberger immédiatement le formulaire web.
 * [Récupération du formulaire web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets).Récupérez le web de l’utilisateur. Ce formulaire web est ensuite présenté à l’application qui appelle pour signer le document.
 
 ## Création d’une configuration OSGi Acrobat Sign
 
-L’API REST Acrobat Sign requiert la clé d’intégration et le courrier électronique associés à la clé d’intégration. Ces deux valeurs sont fournies sous forme de propriétés de configuration OSGi, comme illustré ci-dessous.
+L’API REST Acrobat Sign requiert la clé d’intégration et le courrier électronique associés à la clé d’intégration. Ces deux valeurs sont fournies sous la forme de propriétés de configuration OSGi, comme illustré ci-dessous.
 
 ![sign-configuration](assets/sign-configuration.png)
 

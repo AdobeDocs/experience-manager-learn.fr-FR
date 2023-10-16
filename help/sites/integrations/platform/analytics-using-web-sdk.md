@@ -12,8 +12,8 @@ jira: KT-13328
 thumbnail: KT-13328.jpeg
 badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
-exl-id: 9f54995f-4ce7-45f2-9021-6fdfe42ff89a
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
+exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '1637'
 ht-degree: 3%
@@ -22,18 +22,18 @@ ht-degree: 3%
 
 # Intégration d’AEM Sites et d’Adobe Analytics au SDK Web de Platform
 
-En savoir plus **approche moderne** sur l’intégration d’Adobe Experience Manager (AEM) et d’Adobe Analytics à l’aide du SDK Web Platform. Ce tutoriel complet vous guide tout au long du processus de collecte transparente [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) données pageview et CTA click. Obtenez des informations précieuses en visualisant les données collectées dans Adobe Analysis Workspace, où vous pouvez explorer diverses mesures et dimensions. Explorez également le jeu de données Platform pour vérifier et analyser les données. Rejoignez-nous sur ce parcours pour exploiter la puissance d’AEM et d’Adobe Analytics pour une prise de décision basée sur les données.
+En savoir plus **approche moderne** sur la manière d’intégrer Adobe Experience Manager (AEM) et Adobe Analytics à l’aide du SDK Web Platform. Ce tutoriel complet vous guide tout au long du processus de collecte transparente [WKND](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) données pageview et CTA click. Obtenez des informations précieuses en visualisant les données collectées dans Adobe Analysis Workspace, où vous pouvez explorer diverses mesures et dimensions. Explorez également le jeu de données Platform pour vérifier et analyser les données. Rejoignez-nous sur ce parcours pour exploiter la puissance d’AEM et d’Adobe Analytics pour une prise de décision basée sur les données.
 
 ## Vue d’ensemble
 
-L’obtention d’informations sur le comportement des utilisateurs est un objectif essentiel pour chaque équipe marketing. En comprenant comment les utilisateurs interagissent avec leur contenu, les équipes peuvent prendre des décisions éclairées, optimiser des stratégies et générer de meilleurs résultats. L’équipe marketing WKND, une entité fictive, a défini ses objectifs en mettant en oeuvre Adobe Analytics sur son site web pour atteindre cet objectif. L’objectif Principal est de collecter des données sur deux mesures clés : pageviews et clics CTA (Appel à l’action de la page d’accueil).
+L’obtention d’informations sur le comportement des utilisateurs est un objectif essentiel pour chaque équipe marketing. En comprenant comment les utilisateurs interagissent avec leur contenu, les équipes peuvent prendre des décisions éclairées, optimiser des stratégies et générer de meilleurs résultats. L’équipe marketing WKND, une entité fictive, a défini ses objectifs en mettant en oeuvre Adobe Analytics sur son site web pour atteindre cet objectif. L’objectif principal est de collecter des données sur deux mesures clés : pages vues et clics CTA (homepage call-to-action).
 
 En suivant les pages vues, l’équipe peut analyser les pages qui reçoivent le plus d’attention de la part des utilisateurs. En outre, le suivi des clics CTA sur la page d’accueil fournit des informations précieuses sur l’efficacité des éléments d’appel à l’action de l’équipe. Ces données peuvent révéler quelles CTA intéressent les utilisateurs, lesquels doivent être ajustés, et potentiellement découvrir de nouvelles opportunités pour améliorer l’engagement des utilisateurs et générer des conversions.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419872?quality=12&learn=on)
 
-## Conditions préalables
+## Conditions préalables requises
 
 Les éléments suivants sont requis lors de l’intégration d’Adobe Analytics à l’aide du SDK Web Platform.
 
@@ -81,7 +81,7 @@ Pour plus d’informations sur les concepts et les différents éléments qui do
 
 La première étape consiste à configurer Adobe Analytics, en particulier une suite de rapports avec des variables de conversion (ou eVar) et des événements de succès. Les variables de conversion sont utilisées pour mesurer les causes et les effets. Les événements de succès servent à effectuer le suivi des actions.
 
-Dans ce tutoriel,  `eVar5, eVar6, and eVar7` track  _Nom de page WKND, ID CTA WKND et nom CTA WKND_ respectivement, et `event7` est utilisé pour le suivi  _Événement de clic CTA WKND_.
+Dans ce tutoriel,  `eVar5, eVar6, and eVar7` track  _Nom de page WKND, ID CTA WKND et nom CTA WKND_ respectivement, et `event7` est utilisé pour effectuer le suivi  _Événement de clic CTA WKND_.
 
 Pour analyser, collecter des informations et partager ces informations avec d’autres à partir des données collectées, un projet Analysis Workspace est créé.
 
@@ -100,7 +100,7 @@ Un flux de données indique au réseau Platform Edge où envoyer les données co
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419876?quality=12&learn=on)
 
-## Création d’un schéma XDM
+## Créer un schéma XDM
 
 Le schéma de modèle de données d’expérience (XDM) vous aide à normaliser les données collectées. Dans le [tutoriel précédent](./web-sdk.md), un schéma XDM avec `AEP Web SDK ExperienceEvent` un groupe de champs est créé. En outre, l’utilisation de ce schéma XDM crée un jeu de données pour stocker les données collectées dans l’Experience Platform.
 
@@ -130,7 +130,7 @@ Dans le [tutoriel précédent](./web-sdk.md), une propriété de balise est cré
 
 +++ Élément de données et code d’événement de règle
 
-+ Le `Component ID` Code d’élément de données.
++ La variable `Component ID` Code d’élément de données.
 
   ```javascript
   if(event && event.path && event.path.includes('.')) {    
@@ -142,7 +142,7 @@ Dans le [tutoriel précédent](./web-sdk.md), une propriété de balise est cré
   }
   ```
 
-+ Le `Component Name` Code d’élément de données.
++ La variable `Component Name` Code d’élément de données.
 
   ```javascript
   if(event && event.component && event.component.hasOwnProperty('dc:title')) {
@@ -154,7 +154,7 @@ Dans le [tutoriel précédent](./web-sdk.md), une propriété de balise est cré
   }    
   ```
 
-+ Le `all pages - on load` **Rule-Condition** code
++ La variable `all pages - on load` **Rule-Condition** code
 
   ```javascript
   if(event && event.component && event.component.hasOwnProperty('@type') && event.component.hasOwnProperty('xdm:template')) {
@@ -164,7 +164,7 @@ Dans le [tutoriel précédent](./web-sdk.md), une propriété de balise est cré
   }    
   ```
 
-+ Le `home page - cta click` **Rule-Event** code
++ La variable `home page - cta click` **Rule-Event** code
 
   ```javascript
   var componentClickedHandler = function(evt) {
@@ -196,7 +196,7 @@ Dans le [tutoriel précédent](./web-sdk.md), une propriété de balise est cré
   });    
   ```
 
-+ Le `home page - cta click` **Rule-Condition** code
++ La variable `home page - cta click` **Rule-Condition** code
 
   ```javascript
   if(event && event.component && event.component.hasOwnProperty('@type')) {
@@ -277,4 +277,4 @@ En implémentant les étapes recommandées et en utilisant les ressources fourni
 + [Intégration de balises de collecte de données Experience Platform et d’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr)
 + [SDK web Adobe Experience Platform et présentation du réseau Edge](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)
 + [Tutoriels sur la collecte de données](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html)
-+ [Présentation de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)
++ [Adobe Experience Platform Debugger - Aperçu](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html)

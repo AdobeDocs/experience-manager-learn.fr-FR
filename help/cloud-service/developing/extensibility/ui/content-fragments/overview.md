@@ -10,8 +10,8 @@ recommendations: noDisplay
 kt: 11603
 thumbnail: KT-11603.png
 last-substantial-update: 2023-06-02T00:00:00Z
-exl-id: 4e3bb09c-8437-4f1d-bc88-a882a38e246c
-source-git-commit: 8e99c660fed409d44d34cf4edf6bf1b59fa29e34
+exl-id: 9164423b-a609-4bc5-9777-112d229ae748
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 14%
@@ -85,7 +85,7 @@ Les points d’extension de la console de fragments de contenu suivants sont dis
       <div class="card-content is-padded-small">
         <div class="content">
           <p class="headline is-size-6 has-text-weight-bold"><a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/" title="Menu d’en-tête" target="_blank" rel="referrer">Menu d’en-tête</a></p>
-          <p class="is-size-6">Personnalisez les actions pour lorsqu’aucun fragment de contenu n’est sélectionné.</p>
+          <p class="is-size-6">Personnalisez les actions lorsque aucun fragment de contenu n’est sélectionné.</p>
           <a href="https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/header-menu/" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" target="_blank" rel="referrer">
             <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Affichage des documents</span>
           </a>
@@ -191,7 +191,7 @@ Les points d’extension suivants de l’éditeur de fragments de contenu sont d
 
 ## Exemples d’extensions
 
-Bienvenue dans une collection d’exemples de code d’extensibilité de l’interface utilisateur AEM ! Cette ressource est conçue pour vous fournir des démonstrations pratiques et des informations sur l’extension de l’interface utilisateur d’Adobe Experience Manager (AEM). Que vous soyez développeur et que vous souhaitiez améliorer les fonctionnalités d’AEM, ces exemples de code constituent une référence précieuse.
+Bienvenue dans une collection d’exemples de code d’extensibilité de l’interface utilisateur AEM ! Cette ressource est conçue pour vous fournir des démonstrations pratiques et des informations sur l’extension de l’interface utilisateur de Adobe Experience Manager (AEM). Que vous soyez développeur et que vous souhaitiez améliorer les fonctionnalités d’AEM, ces exemples de code constituent une référence précieuse.
 
 <div class="columns is-multiline">
   <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Bulk property update">
@@ -298,14 +298,14 @@ Bienvenue dans une collection d’exemples de code d’extensibilité de l’int
     <div class="card" style="height: 100%">
       <div class="card-image">
         <figure class="image is-16by9">
-          <a href="./examples/editor-rte-widget.md" title="Widget d’éditeur de texte enrichi" tabindex="-1">
-            <img class="is-bordered-r-small" src="./examples/assets/rte/rte-widget-card.png" alt="Widget d’éditeur de texte enrichi">
+          <a href="./examples/editor-rte-widget.md" title="Widget de l’éditeur de texte enrichi" tabindex="-1">
+            <img class="is-bordered-r-small" src="./examples/assets/rte/rte-widget-card.png" alt="Widget de l’éditeur de texte enrichi">
           </a>
         </figure>
       </div>
       <div class="card-content is-padded-small">
         <div class="content">
-          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-toolbar.md" title="Widget d’éditeur de texte enrichi">Widget d’éditeur de texte enrichi</a></p>
+          <p class="headline is-size-6 has-text-weight-bold"><a href="./examples/editor-rte-toolbar.md" title="Widget de l’éditeur de texte enrichi">Widget de l’éditeur de texte enrichi</a></p>
           <p class="is-size-6">Ajoutez des widgets à l’éditeur de texte enrichi dans l’éditeur de fragment de contenu.</p>
           <a href="./examples/editor-rte-widget.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
             <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Afficher l’exemple</span>

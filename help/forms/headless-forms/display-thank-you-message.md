@@ -7,7 +7,8 @@ kt: 13490
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
+exl-id: 489970a6-1b05-4616-84e8-52b8c87edcda
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -105,4 +106,3 @@ export default function Contact(){
 ```
 
 Le code ci-dessus utilise des composants HTML natifs qui sont mappés aux composants utilisés dans le formulaire adaptatif. Par exemple, nous mappons le composant de formulaire adaptatif d’entrée de texte au composant TextField. Composants natifs utilisés dans l’article [peut être téléchargé ici](./assets/native-components.zip)
-

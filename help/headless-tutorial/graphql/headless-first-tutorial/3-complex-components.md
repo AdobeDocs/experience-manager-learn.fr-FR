@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
-source-git-commit: 12b3888552d5a131628dabf380840f0586798ea5
+exl-id: ad06b0f3-afa7-4661-aa66-0674d2e6bb43
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 2%
 
 ---
-
 
 # Créer un composant complexe
 
@@ -40,7 +40,7 @@ D’ici la fin de ce chapitre de tutoriel, vous disposerez d’un composant de l
 
    Notre type de modèle est Liste des images.  Attribuez au fragment un titre et un nom.
 
-1. Une liste d’images étant un fragment de type conteneur qui contient des références à d’autres fragments, de nouvelles offres peuvent être directement créées à partir de l’éditeur.  Créez un fragment d’offre, ainsi qu’une description d’image et d’inclusion, et un article.  Vous pouvez couper et coller du texte en dessous.  Nous utilisons le titre du fragment comme titre de la carte.
+1. Une liste d’images étant un fragment de type conteneur qui contient des références à d’autres fragments, de nouvelles offres peuvent être directement créées à partir de l’éditeur.  Créez un fragment d’offre, ainsi qu’une description d’image et d’inclusion, et un article.  Vous pouvez couper et coller le texte ci-dessous.  Nous utilisons le titre du fragment comme titre de la carte.
 
    __Article1__
 
@@ -232,7 +232,7 @@ D’ici la fin de ce chapitre de tutoriel, vous disposerez d’un composant de l
    const [list, setList] = useState({});
    ```
 
-   Dans `useEffect()` une nouvelle requête pour la requête imagelist.
+   Inside `useEffect()` une nouvelle requête pour la requête imagelist.
 
    ```javascript
    sdk.runPersistedQuery('pure-headless/imagelist')
@@ -292,7 +292,7 @@ D’ici la fin de ce chapitre de tutoriel, vous disposerez d’un composant de l
    ];
    ```
 
-## Activer Universal Editor
+## Activation d’Universal Editor
 
 1. Ajouter `<meta />` à l’application.  Ouvrir `App.js` et insérez l’importation en haut du fichier.
 

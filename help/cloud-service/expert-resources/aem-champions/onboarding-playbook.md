@@ -9,8 +9,8 @@ level: Beginner
 doc-type: Value Video
 last-substantial-update: 2023-05-11T00:00:00Z
 jira: KT-13228
-exl-id: a52b253c-14b4-465b-9714-7f321435a945
-source-git-commit: 2e37a7ae14f98e2298bcb0a625f8ed55edcee6ad
+exl-id: d1745cea-906b-46fa-adcc-7da6e7ee95db
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 5%
@@ -19,13 +19,13 @@ ht-degree: 5%
 
 # AEM Conseils et astuces pour les champions - Manuel d’intégration de Cloud Manager
 
-Le manuel d’intégration vous aidera à prendre en charge AEM as a Cloud Service en tant que nouvel administrateur et développeur. Dans la feuille de calcul téléchargeable, nous vous guidons tout au long des activités que vous devriez réaliser au cours des trois premières semaines de votre travail au démarrage de votre parcours d’intégration.
+Le manuel d’intégration vous aidera à prendre en charge AEM as a Cloud Service en tant que nouvel administrateur et développeur. Dans la feuille de calcul téléchargeable, nous vous guidons tout au long des activités que vous devriez réaliser au cours des trois premières semaines de travail, au démarrage de votre parcours d’intégration.
 
 >[!TIP]
 >
 >Téléchargez la [Guide d’intégration ici.](./assets/Cloud-Manager-for-AEM-as-a-Cloud-Service.xlsx)
 
-Consultez ces conseils de votre collègue responsable technique, Rakesh Pasupuleti. Rakesh est un champion d&#39;Adobe Experience Manager, et il partage des idées sur l&#39;utilisation du manuel d&#39;intégration.
+Consultez ces conseils de votre collègue responsable technique, Rakesh Pasupuleti. Rakesh est un champion de Adobe Experience Manager, et il partage des idées sur l&#39;utilisation du manuel d&#39;intégration.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419299?quality=12&learn=on)
 

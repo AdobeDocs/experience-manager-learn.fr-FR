@@ -7,11 +7,11 @@ kt: 13346
 topic: Development
 role: User
 level: Intermediate
-exl-id: 31008bb3-316b-4035-89ea-e830b429b927
-source-git-commit: 529e98269a08431152686202a8a2890712b9c835
+exl-id: 49b6a172-8c96-4fc6-8d31-c2109f65faac
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -23,7 +23,7 @@ Les listes déroulantes offrent un moyen compact et organisé de présenter une 
 
 ## Liste déroulante
 
-Le code suivant a été utilisé pour remplir la liste déroulante avec les résultats de l’appel de l’API listforms. Selon la sélection de l’utilisateur, le formulaire adaptatif s’affiche pour que l’utilisateur puisse le remplir et l’envoyer. [Composants de l’interface utilisateur matérielle](https://mui.com/) ont été utilisés pour créer cette interface.
+Le code suivant a été utilisé pour remplir la liste déroulante avec les résultats de l’appel de l’API listforms. Selon la sélection de l’utilisateur, le formulaire adaptatif s’affiche pour que l’utilisateur puisse le remplir et l’envoyer. [Composants de l’interface utilisateur matérielle](https://mui.com/) ont été utilisés lors de la création de cette interface ;
 
 ```javascript
 import * as React from 'react';

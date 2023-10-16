@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-05-16T00:00:00Z
 jira: KT-13270
 thumbnail: KT-13270.jpeg
-source-git-commit: 12b3888552d5a131628dabf380840f0586798ea5
+exl-id: 2b726473-5a32-4046-bce8-6da3c57a1b60
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 1%
 
 ---
-
 
 # AEM API sans affichage et React
 
@@ -28,7 +28,7 @@ Ensuite, nous utiliserons le SDK AEM sans affichage pour récupérer les donnée
 
 Une fois que nous aurons les données de fragment de contenu, nous les intégrerons à votre application React. Vous apprendrez à formater et afficher les données de manière attrayante. Nous aborderons les bonnes pratiques relatives à la gestion et au rendu des données de fragments de contenu dans les composants React, afin d’assurer une intégration transparente à l’interface utilisateur de votre application.
 
-Tout au long du tutoriel, nous proposons des explications, des exemples de code et des conseils pratiques. D’ici la fin, vous pourrez configurer votre application React pour vous connecter aux API AEM sans affichage, récupérer les données de fragments de contenu à l’aide du SDK AEM sans affichage et les afficher facilement dans votre application React. Commençons !
+Tout au long du tutoriel, nous vous proposons des explications, des exemples de code et des conseils pratiques. D’ici la fin, vous pourrez configurer votre application React pour vous connecter aux API AEM sans affichage, récupérer les données de fragments de contenu à l’aide du SDK AEM sans affichage et les afficher facilement dans votre application React. Commençons !
 
 
 ## Clonage de l’application React
@@ -57,7 +57,7 @@ Tout au long du tutoriel, nous proposons des explications, des exemples de code 
    REACT_APP_TOKEN=<developer token>
    ```
 
-1. Vous pouvez récupérer un jeton de développeur dans Cloud Manager. Connectez-vous à [Adobe Cloud Manager](https://experience.adobe.com/). Cliquez sur __Experience Manager > Cloud Manager__. Sélectionnez le Programme approprié, puis cliquez sur les ellipses en regard de l’environnement.
+1. Vous pouvez récupérer un jeton de développeur dans Cloud Manager. Connexion à [Adobe Cloud Manager](https://experience.adobe.com/). Cliquez sur __Experience Manager > Cloud Manager__. Sélectionnez le Programme approprié, puis cliquez sur les ellipses en regard de l’environnement.
 
    ![AEM Developer Console](./assets/2/developer-console.png)
 
@@ -145,7 +145,7 @@ Tout au long du tutoriel, nous proposons des explications, des exemples de code 
    import AEMHeadless from '@adobe/aem-headless-client-js';
    ```
 
-   Ajoutez ce qui suit : `{ useContext, useEffect, useState }` au` React` instruction d’importation.
+   Ajoutez ce qui suit : `{ useContext, useEffect, useState }` à la fonction` React` instruction d’importation.
 
    ```javascript
    import React, { useContext, useEffect, useState } from 'react';
@@ -180,7 +180,7 @@ Tout au long du tutoriel, nous proposons des explications, des exemples de code 
 
    >[!NOTE]
    >
-   > Il existe une `context.js` fichier sous `/utils` qui lit des éléments de la fonction `.env` fichier . À titre de référence, le `context.url` est l’URL de l’environnement as a Cloud Service AEM. Le `context.endpoint` est le chemin d’accès complet au point de terminaison créé dans la leçon précédente. Enfin, la variable `context.token` est le jeton développeur.
+   > Il existe une `context.js` fichier sous `/utils` qui lit des éléments de la fonction `.env` fichier . À titre de référence, le `context.url` est l’URL de l’environnement as a Cloud Service AEM. La variable `context.endpoint` est le chemin d’accès complet au point de terminaison créé dans la leçon précédente. Enfin, la variable `context.token` est le jeton développeur.
 
 
 1. Créez un état React qui expose le contenu provenant du SDK AEM sans affichage.
@@ -210,7 +210,7 @@ Tout au long du tutoriel, nous proposons des explications, des exemples de code 
    }, [context]);
    ```
 
-1. Ouvrez la vue Réseau des outils de développement pour examiner la requête GraphQL.
+1. Ouvrez la vue Réseau des outils de développement pour passer en revue la requête GraphQL.
 
    `<url to environment>/graphql/execute.json/pure-headless/teaser%3Bpath%3D%2Fcontent%2Fdam%2Fpure-headless%2Fhero`
 
@@ -237,7 +237,7 @@ Tout au long du tutoriel, nous proposons des explications, des exemples de code 
 
    Le champ titre du teaser doit s’afficher à l’écran.
 
-1. La dernière étape consiste à ajouter le teaser à la page. Un composant de teaser React est inclus dans le module. Tout d’abord, incluons l’importation. En haut de la `home.js` ajoutez la ligne :
+1. La dernière étape consiste à ajouter le teaser à la page. Un composant de teaser React est inclus dans le module. Tout d’abord, incluons l’importation. En haut de la page `home.js` ajoutez la ligne :
 
    `import Teaser from '../../components/teaser/teaser';`
 
@@ -260,4 +260,4 @@ Félicitations. Vous avez correctement mis à jour l’application React afin de
 
 Créez ensuite un composant de liste d’images plus complexe qui effectue dynamiquement le rendu des fragments de contenu référencés à partir d’AEM.
 
-[Chapitre suivant : Création d’un composant Liste d’images](./3-complex-components.md)
+[Chapitre suivant : création d’un composant Liste d’images](./3-complex-components.md)

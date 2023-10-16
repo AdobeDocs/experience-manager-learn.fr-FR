@@ -10,25 +10,25 @@ jira: KT-13309
 thumbnail: KT-13309.jpg
 doc-type: article
 last-substantial-update: 2023-06-02T00:00:00Z
-source-git-commit: c54d078c6282f8ace936dd4a9ee0d5cc39490230
+exl-id: 70adb2c1-9e08-4a4b-b8f1-16bddd84c23d
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 2%
 
 ---
 
-
 # Exportation du fragment de contenu au format XML
 
 ![Exemple d’extension de menu d’en-tête de l’éditeur de fragment de contenu](./assets/export-to-xml/hero.png){align="center"}
 
-Vous pouvez ajouter des boutons personnalisés au menu d’en-tête de l’éditeur de fragments de contenu à l’aide de la fonction `headerMenu` point d’extension. Cet exemple montre comment ajouter un bouton au menu d’en-tête et comment gérer l’événement click pour exporter le principal fragment de contenu au format XML ou CSV.
+Vous pouvez ajouter des boutons personnalisés au menu d’en-tête de l’éditeur de fragments de contenu à l’aide de la fonction `headerMenu` point d’extension. Cet exemple montre comment ajouter un bouton au menu d’en-tête et comment gérer l’événement click pour exporter le fragment de contenu actif au format XML ou CSV.
 
 Les boutons d’en-tête peuvent exister sous la forme d’un bouton unique ou d’un bouton avec des sous-éléments. Cet exemple montre comment implémenter un bouton avec des sous-éléments. Cependant, inclut le code commenté pour implémenter un seul bouton.
 
 ## Point d’extension
 
-Cet exemple s’étend au point d’extension `headerBar` pour ajouter un bouton personnalisé à l’éditeur de fragment de contenu.
+Cet exemple étend au point d’extension `headerBar` pour ajouter un bouton personnalisé à l’éditeur de fragment de contenu.
 
 | Interface utilisateur AEM étendue | Point d’extension |
 | ------------------------ | --------------------- | 
@@ -36,7 +36,7 @@ Cet exemple s’étend au point d’extension `headerBar` pour ajouter un bouton
 
 ## Exemple d’extension
 
-L’exemple suivant crée un bouton de menu d’en-tête avec deux sous-éléments : un pour exporter le principal fragment de contenu au format XML (implémenté) et un autre pour exporter le principal fragment de contenu au format CSV (non implémenté).
+L’exemple suivant crée un bouton de menu d’en-tête avec deux sous-éléments : l’un pour exporter le fragment de contenu actif au format XML (implémenté) et l’autre pour exporter le fragment de contenu actif au format CSV (non implémenté).
 
 Le code indique comment obtenir le contenu du fragment de contenu dans le fichier d’enregistrement de l’extension et comment exporter le contenu JSON du fragment de contenu.
 
@@ -145,13 +145,13 @@ export default ExtensionRegistration;
 
 #### Données de fragment de contenu
 
-Le principal fragment de contenu peut être récupéré à l’aide du `getContentFragment()` sur la méthode `guestConnection.host.contentFragment` .
+Le fragment de contenu actif peut être récupéré à l’aide du `getContentFragment()` sur la méthode `guestConnection.host.contentFragment` .
 
 ```javascript
 const contentFragment = await guestConnection.host.contentFragment.getContentFragment();
 ```
 
-Le `contentFragment` contient toutes les informations sur le fragment de contenu, y compris le chemin, le modèle, les métadonnées, le contenu principal et toute variante.
+La variable `contentFragment` contient toutes les informations sur le fragment de contenu, y compris le chemin, le modèle, les métadonnées, le contenu principal et toute variante.
 
 ```json
 {

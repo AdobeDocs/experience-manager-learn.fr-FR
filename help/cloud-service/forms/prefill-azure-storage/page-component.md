@@ -1,6 +1,6 @@
 ---
 title: Créer un composant de page
-description: Création d’un composant de page
+description: Créer un composant de page
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -8,13 +8,13 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 kt: 13717
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+exl-id: 7469aa7f-1794-40dd-990c-af5d45e85223
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 12%
 
 ---
-
 
 # Composant de page
 
@@ -84,4 +84,3 @@ Dans ce code, nous obtenons la valeur du paramètre de requête **guid** et stoc
 ### Étapes suivantes
 
 [Associer le composant de page au modèle](./associate-page-component.md)
-

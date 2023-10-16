@@ -1,6 +1,6 @@
 ---
 title: Extensibilité de l’interface utilisateur AEM
-description: Découvrez l’extensibilité de l’interface utilisateur AEM à l’aide d’App Builder pour créer des extensions.
+description: Découvrez l’extensibilité de l’interface utilisateur AEM à l’aide du générateur d’applications pour créer des extensions.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,13 +9,13 @@ level: Beginner
 recommendations: noDisplay
 thumbnail: null
 last-substantial-update: 2023-06-02T00:00:00Z
-source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
+exl-id: 73f5d90d-e007-41a0-9bb3-b8f36a9b1547
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 6%
 
 ---
-
 
 # Extensibilité de l’interface utilisateur AEM
 
@@ -41,8 +41,8 @@ Les vidéos et les vidéos pas à pas fournies, liées ci-dessous, présentent l
 1. [Développement d’un modal](./modal.md)
 1. [Développement d’une action Adobe I/O Runtime](./runtime-action.md)
 1. [Vérification d’une extension](./verify.md)
-1. [Déploiement d’une extension](./deploy.md)
+1. [Déployer une extension](./deploy.md)
 
 ## Documentation Adobe Developer
 
-Adobe Developer contient des informations détaillées sur les développeurs concernant l’extensibilité de l’interface utilisateur AEM. Veuillez consulter la section [contenu Adobe Developer pour plus de détails techniques](https://developer.adobe.com/uix/docs/).
+Adobe Developer contient des informations détaillées sur les développeurs concernant l’extensibilité de l’interface utilisateur d’AEM. Veuillez consulter la section [contenu Adobe Developer pour plus de détails techniques](https://developer.adobe.com/uix/docs/).

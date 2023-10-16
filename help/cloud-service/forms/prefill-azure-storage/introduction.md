@@ -8,7 +8,8 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 kt: 13717
-source-git-commit: 52c8d96a03b4d6e4f2a0a3c92f4307203e236417
+exl-id: b40b0ef4-efa9-400e-82d8-aa0c7feb7be4
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 3%
@@ -17,7 +18,7 @@ ht-degree: 3%
 
 # Présentation
 
-Dans ce tutoriel, nous allons mettre en oeuvre un cas d’utilisation simple qui permet à l’utilisateur d’enregistrer et de reprendre le processus de remplissage du formulaire. Le flux du cas d’utilisation est le suivant :
+Dans ce tutoriel, nous allons mettre en oeuvre un cas d’utilisation simple qui permet à l’utilisateur d’enregistrer et de reprendre le processus de remplissage du formulaire. Le flux du cas pratique est le suivant :
 
 * L’utilisateur commence à remplir un formulaire adaptatif.
 * L’utilisateur enregistre le formulaire et souhaite le compléter ultérieurement.
@@ -38,5 +39,3 @@ Pour mettre en oeuvre le cas d’utilisation ci-dessus dans AEM Forms CS, vous a
 ### Étapes suivantes
 
 [Créer un composant de page](./page-component.md)
-
-

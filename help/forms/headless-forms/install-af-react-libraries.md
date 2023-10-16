@@ -7,20 +7,20 @@ kt: 13285
 topic: Development
 role: User
 level: Intermediate
-source-git-commit: 6aa3dff44a7e6f1f8ac896e30319958d84ecf57f
+exl-id: 0ed44016-d52a-4980-a0b1-06da149c3cb1
+source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
-
 
 # Installation des dépendances requises
 
 Pour commencer à utiliser des formulaires adaptatifs sans interface dans votre projet de réaction, installez les dépendances suivantes dans votre projet de réaction.
 
-* @aemforms/af-response-components
-* @aemforms/af-response-renderer
+* @aemforms/af-react-components
+* @aemforms/af-react-renderer
 
 Mettez à jour le fichier package.json pour inclure les dépendances suivantes. Au moment de l&#39;écriture 0.22.41 était la version actuelle
 
