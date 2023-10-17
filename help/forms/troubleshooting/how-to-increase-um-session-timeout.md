@@ -1,6 +1,6 @@
 ---
-title: Comment augmenter le délai d’expiration de la session de UM
-description: Procédure d’augmentation du délai d’expiration de la session de gestion des utilisateurs pour un utilisateur
+title: Comment augmenter le délai d’expiration de session de User Management
+description: Procédure pour augmenter le délai d’expiration de la session de User Management pour un utilisateur ou une utilisatrice
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -10,15 +10,15 @@ feature: Operations
 index: y
 exl-id: edb97c88-2689-4508-82a6-256b344133c0
 source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '34'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Comment augmenter le délai d’expiration de la session de UM
+# Comment augmenter le délai d’expiration de session de User Management
 
-*Cette vidéo décrit le processus d’augmentation du délai d’expiration de la session de la messagerie unifiée.*
+*Cette vidéo décrit le processus permettant d’augmenter le délai d’expiration de la session de User Management.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335503?quality=12&learn=on)
