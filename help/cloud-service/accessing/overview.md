@@ -11,9 +11,9 @@ thumbnail: KT-5882.jpg
 last-substantial-update: 2022-10-06T00:00:00Z
 exl-id: 4846a394-cf8e-4d52-8f8b-9e874f2f457b
 source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '626'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Les utilisateurs et utilisatrices nécessitant l’accès au service de créatio
 
 >[!NOTE]
 >
->Lorsqu’un utilisateur IMS est supprimé d’Admin Console, il n’est pas automatiquement supprimé de l’AEM, mais une fois AEM session (jeton) expirée, il ne peut PAS se connecter à l’.
+>Lorsqu’une personne utilisatrice IMS est supprimée de l’Admin Console, elle n’est pas automatiquement supprimée d’AEM ; mais une fois la session (jeton) AEM expirée, elle ne peut PLUS se connecter à AEM.
 
 
 [En savoir plus sur les utilisateurs et utilisatrices d’Adobe IMS.](./adobe-ims-users.md)
