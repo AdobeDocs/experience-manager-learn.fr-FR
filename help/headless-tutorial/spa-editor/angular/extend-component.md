@@ -60,7 +60,7 @@ Examinez les outils et les instructions nécessaires pour configurer un [environ
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   Si vous utilisez [AEM 6.x](overview.md#compatibility), ajoutez le profil `classic` :
+   Si vous utilisez [AEM 6.x](overview.md#compatibility) ajoutez le profil `classic` :
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -68,7 +68,7 @@ Examinez les outils et les instructions nécessaires pour configurer un [environ
 
 3. Installez le package terminé pour le [site de référence WKND](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-2.1.0) traditionnel. Les images fournies par le [site de référence WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) sont réutilisées sur la SPA WKND. Le package peut être installé à l’aide du [Gestionnaire de packages d’AEM](http://localhost:4502/crx/packmgr/index.jsp).
 
-   ![Gestionnaire de packages installant wknd.all.](./assets/map-components/package-manager-wknd-all.png)
+   ![Installation du gestionnaire de packages wknd.all](./assets/map-components/package-manager-wknd-all.png)
 
 Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/adobe/aem-guides-wknd-spa/tree/Angular/extend-component-solution) ou consulter le code localement en passant à la branche `Angular/extend-component-solution`.
 
