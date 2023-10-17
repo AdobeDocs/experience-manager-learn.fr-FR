@@ -1,6 +1,6 @@
 ---
-title: Paramètres d’image prédéfinis
-description: Paramètres d’image prédéfinis dans Dynamic Media Classic, contient tous les paramètres nécessaires à la création d’une image à une taille, un format, une qualité et une accentuation spécifiques. Les paramètres d’image prédéfinis sont un composant clé du dimensionnement dynamique. Lorsque vous examinez une URL dans Dynamic Media Classic, vous pouvez facilement voir si un paramètre d’image prédéfini est en cours d’utilisation. Découvrez les paramètres d’image prédéfinis, pourquoi ils sont si utiles et comment en créer un.
+title: Paramètres prédéfinis d’image
+description: Les paramètres d’image prédéfinis dans Dynamic Media Classic contiennent tous les paramètres nécessaires pour créer une image à une taille, un format, une qualité et une accentuation spécifiques. Les paramètres prédéfinis d’image sont un composant clé du dimensionnement dynamique. Lorsque vous examinez une URL dans Dynamic Media Classic, vous pouvez facilement voir si un paramètre prédéfini d’image est en cours d’utilisation. Découvrez les paramètres prédéfinis d’image, pourquoi ils sont si utiles et comment en créer un.
 feature: Dynamic Media Classic, Image Presets
 doc-type: tutorial
 topics: development, authoring, configuring
@@ -11,61 +11,61 @@ role: User
 level: Beginner
 exl-id: e472db7c-ac3f-4f66-85af-5a4c68ba609e
 source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '670'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Paramètres d’image prédéfinis {#image-presets}
+# Paramètres prédéfinis d’image {#image-presets}
 
-Un paramètre d’image prédéfini est essentiellement une recette qui contient tous les paramètres nécessaires pour créer une image à une taille, un format, une qualité et une accentuation spécifiques. Les paramètres d’image prédéfinis sont un composant clé du dimensionnement dynamique.
+Un paramètre prédéfini d’image est essentiellement une recette qui contient tous les paramètres nécessaires pour créer une image à une taille, un format, une qualité et une accentuation spécifiques. Les paramètres prédéfinis d’image sont un composant clé du dimensionnement dynamique.
 
-Si vous examinez les URL de pratiquement n’importe quel client Dynamic Media Classic, vous verrez probablement un paramètre d’image prédéfini en cours d’utilisation. Il vous suffit de rechercher $name$ à la fin de l’URL (avec un ou plusieurs mots remplacés par le nom).
+Si vous examinez les URL de pratiquement n’importe quelle personne cliente de Dynamic Media Classic, vous verrez probablement un paramètre prédéfini d’image en cours d’utilisation. Il vous suffit de rechercher $name$ à la fin de l’URL (avec un ou plusieurs mots remplaçant « name »).
 
-Les paramètres d’image prédéfinis raccourcissent l’URL. Ainsi, au lieu d’écrire plusieurs instructions de diffusion d’images par requête, vous pouvez écrire un seul paramètre d’image prédéfini. Par exemple, ces deux URL produisent la même image de JPEG 300 x 300 avec accentuation, mais la seconde utilise un paramètre d’image prédéfini :
+Les paramètres prédéfinis d’image raccourcissent l’URL. Ainsi, au lieu d’écrire plusieurs instructions de diffusion d’images par requête, vous pouvez écrire un seul paramètre prédéfini d’image. Par exemple, ces deux URL produisent la même image JPEG de 300x300 avec accentuation, mais la seconde utilise un paramètre prédéfini d’image :
 
 ![image](assets/image-presets/image-preset-2.png)
 
-La valeur réelle des paramètres d’image prédéfinis est que tout administrateur d’entreprise peut mettre à jour la définition de ce paramètre d’image prédéfini et affecter chaque image utilisant ce format, sans modifier de code web. Vous verrez les résultats de toute modification apportée à un paramètre d’image prédéfini après l’effacement du cache de l’URL.
+La valeur réelle des paramètres prédéfinis d’image est que toute personne chargée de l’administration d’entreprise peut mettre à jour la définition de ce paramètre prédéfini d’image et affecter chaque image utilisant ce format, sans modifier de code web. Vous verrez les résultats de toute modification apportée à un paramètre prédéfini d’image après l’effacement du cache de l’URL.
 
 >[!IMPORTANT]
 >
->Lors du redimensionnement d’une image, le rapport L/H, le rapport largeur/hauteur de l’image, doit toujours être conservé proportionnel afin que l’image ne soit pas déformée.
+>Lors du redimensionnement d’une image, le format, le rapport largeur/hauteur de l’image, doit toujours être maintenu proportionnel afin que l’image ne soit pas déformée.
 
-Un paramètre d’image prédéfini comporte un symbole dollar ($) des deux côtés de son nom et suit le point d’interrogation (?) séparateur.
-
->[!TIP]
->
->Créez un paramètre d’image prédéfini par taille d’image unique sur votre site. Par exemple, si vous avez besoin d’une image 350 x 350 pour la page des détails du produit, d’une image 120 x 120 pour les pages de navigation/recherche et d’une image 90 x 90 pour une vente croisée/un article présenté, vous avez besoin de trois paramètres d’image prédéfinis, que vous ayez 500 00.
-
-- En savoir plus sur [Paramètres d’image prédéfinis](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html).
-- Découvrez comment [Création d’un paramètre d’image prédéfini](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html#creating-an-image-preset).
-
-## Paramètres d’image prédéfinis et accentuation
-
-Les paramètres d’image prédéfinis redimensionnent généralement une image. Dès que vous redimensionnez une image à partir de sa taille d’origine, vous devez ajouter une accentuation. Cela est dû au fait que le redimensionnement entraîne la fusion et la fusion de nombreux pixels dans un espace plus petit, ce qui rend l’image douce et floue. L’accentuation augmente le contraste des bords et des zones à fort contraste dans une image.
-
-Nous prévoyons que les images haute résolution que vous téléchargez dans Dynamic Media Classic n’ont pas besoin d’accentuation lorsqu’elles sont affichées en taille réelle, lors du zoom avant. Toutefois, à une taille plus petite, une accentuation est généralement souhaitable.
+Un paramètre prédéfini d’image comporte un symbole dollar ($) des deux côtés de son nom et suit le point d’interrogation (?). séparateur.
 
 >[!TIP]
 >
->Toujours accentuer lors du redimensionnement des images Cela signifie que vous devrez ajouter une accentuation à chaque paramètre d’image prédéfini (et au paramètre prédéfini de visionneuse, dont nous parlerons plus loin).
+>Créez un paramètre prédéfini d’image par taille d’image unique sur votre site. Par exemple, si vous avez besoin d’une image de 350x350 pour la page des détails du produit, d’une image de 120x120 pour les pages de navigation/recherche et d’une image de 90x90 pour une vente croisée/un article présenté, il vous faut trois paramètres prédéfinis d’image, que vous ayez 500 images ou 500 000.
+
+- En savoir plus sur les [Paramètres prédéfinis d’image](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html?lang=fr).
+- Découvrir comment [Créer un paramètre prédéfini d’image](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/image-sizing/setting-image-presets.html?lang=fr#creating-an-image-preset).
+
+## Paramètres prédéfinis d’image et accentuation
+
+Les paramètres prédéfinis d’image redimensionnent généralement une image. Dès que vous redimensionnez une image à partir de sa taille d’origine, il est judicieux d’ajouter une accentuation. Cela est dû au fait que le redimensionnement entraîne la fusion de nombreux pixels dans un espace plus petit. Résultat, l’image devient floue. L’accentuation augmente le contraste des bords et des zones à fort contraste dans une image.
+
+Il est probable que les images haute résolution que vous chargez dans Dynamic Media Classic n’ont pas besoin d’accentuation lorsqu’elles sont affichées en taille réelle, lors du zoom avant. Toutefois, à une taille plus petite, une accentuation est généralement souhaitable.
+
+>[!TIP]
 >
->Si vos images n’ont pas l’air en forme, c’est probablement parce qu’elles ont besoin d’une accentuation ou peut-être que la qualité était médiocre pour commencer.
+>Accentuez toujours lorsque vous redimensionnez des images. Cela signifie que vous devrez ajouter une accentuation à chaque paramètre prédéfini d’image (et au paramètre prédéfini de la visionneuse, dont nous parlerons plus loin).
+>
+>Si vos images ne sont pas belles, c’est probablement parce qu’elles ont besoin d’une accentuation, ou peut-être que la qualité était médiocre à la base.
 
-Le degré d’accentuation à ajouter est entièrement subjectif. Certaines personnes aiment les images plus douces, tandis que d&#39;autres les apprécient très nettement. Il est facile d’améliorer une image en exécutant une combinaison de filtres d’accentuation sur une image. Cependant, il est également facile de surcharger et d’accentuer une image de manière excessive.
+Le degré de l’accentuation à ajouter est entièrement subjectif. Certaines personnes aiment les images plus floues, tandis que d’autres les apprécient très nettes. Il est facile d’améliorer une image en exécutant une combinaison de filtres d’accentuation sur une image. Cependant, il est également facile de surcharger et d’accentuer une image de manière excessive.
 
-Le graphique suivant montre trois niveaux d’accentuation. De droite à gauche vous n&#39;avez pas d&#39;accentuation, juste la bonne quantité, et trop.
+Le graphique suivant montre trois niveaux d’accentuation. De droite à gauche, les images présentent d’abord l’absence d’accentuation, puis la quantité idéale, et enfin une quantité excessive.
 
 ![image](assets/image-presets/image-presets-1.jpg)
 
-Dynamic Media Classic permet trois types d’accentuation : Accentuation simple, mode Rééchantillonnage et masquage flou.
+Dynamic Media Classic permet trois types d’accentuation : accentuation simple, mode rééchantillonnage et accentuation.
 
-En savoir plus sur [Options d’accentuation de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html#sharpening_an_image).
+En savoir plus sur les [Options d’accentuation de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/master-files/sharpening-image.html?lang=fr#sharpening_an_image).
 
 ## Ressources supplémentaires
 
-[Guide des paramètres d’image prédéfinis](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). Paramètres à utiliser pour optimiser la qualité de l’image et la vitesse de chargement.
+[Guide des paramètres prédéfinis d’image](https://www.adobe.com/content/dam/www/us/en/experience-manager/pdfs/dynamic-media-image-preset-guide.pdf). Paramètres à utiliser pour optimiser la qualité des images et la vitesse de chargement.
 
-[L&#39;Image C&#39;Est Tout, Partie 2 : Ce n&#39;est jamais qu&#39;un flou — Qualité contre vitesse](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Article de blog traitant de l’utilisation des paramètres d’image prédéfinis pour la diffusion d’images à chargement rapide de haute qualité.
+[Image Is Everything partie 2 : ce n’est jamais qu’un flou — Qualité ou vitesse](https://theblog.adobe.com/image-is-everything-part-2-its-never-just-a-blur-quality-versus-speed/). Article de blog traitant de l’utilisation des paramètres prédéfinis d’image pour la diffusion d’images à chargement rapide de haute qualité.
