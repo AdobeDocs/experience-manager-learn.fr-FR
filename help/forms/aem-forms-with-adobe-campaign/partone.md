@@ -1,38 +1,38 @@
 ---
-title: Génération du jeton web JSON et du jeton d’accès
-description: Cet article explique le code nécessaire à la génération de JWT et de jeton d’accès nécessaires pour effectuer des appels REST vers Adobe Campaign Standard.
+title: Générer le jeton web JSON et le jeton d’accès
+description: Cet article explique le code nécessaire à la génération du jeton web JSON (JWT) et du jeton d’accès requis pour effectuer des appels REST vers Adobe Campaign Standard.
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
 badgeIntegration: label="Intégration" type="positive"
-badgeVersions: label="AEM Forms 6.5" before-title="false"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: a5e5aad4-064f-4638-a53a-88dfb1d27c8f
 source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '246'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Génération du jeton web JSON et du jeton d’accès {#generating-json-web-token-and-access-token}
+# Générer le jeton web JSON et le jeton d’accès {#generating-json-web-token-and-access-token}
 
-Cet article explique le code nécessaire à la génération de JWT et de jeton d’accès nécessaires pour effectuer des appels REST vers Adobe Campaign Standard.
+Cet article explique le code nécessaire à la génération du jeton web JSON (JWT) et du jeton d’accès requis pour effectuer des appels REST vers Adobe Campaign Standard.
 
-## Générer un jeton Web JSON {#generate-json-web-token}
+## Générer un jeton web JSON {#generate-json-web-token}
 
-La première étape de l’utilisation de l’API Adobe Campaign consiste à générer JWT. Il existe de nombreux exemples de code sur la manière de générer JWT pour ACS. Vous pouvez suivre cette [exemple de code java](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) pour générer JWT.
+La première étape de l’utilisation de l’API Adobe Campaign consiste à générer un JWT. Il existe de nombreux exemples de code sur la manière de générer un JWT pour ACS. Vous pouvez suivre cet [exemple de code Java](https://github.com/AdobeDocs/adobeio-auth/tree/stage/JWT/samples/adobe-jwt-java) pour générer le JWT.
 
-Pour utiliser l’API ACS avec AEM Forms, nous devons créer JWT dans un lot OSGi. Le fragment de code suivant a été utilisé pour générer JWT dans cet exemple de lot OSGI. Les détails de l’instance ACS sont récupérés à partir des propriétés de configuration OSGI définies comme illustré ci-dessus.
+Pour utiliser l’API ACS avec AEM Forms, nous devons créer le JWT dans un lot OSGi. L’extrait de code suivant a été utilisé pour générer le JWT dans cet exemple de lot OSGI. Les détails de l’instance ACS sont récupérés à partir des propriétés de configuration OSGI définies comme illustré ci-dessus.
 
-![configuration](assets/campaignconfiguration.gif)
+![Configuration.](assets/campaignconfiguration.gif)
 
-**A.** Les valeurs affichées ici sont des valeurs factices.
+**A.** Les valeurs affichées ici sont factices.
 
-Le code suivant récupère les détails sur le serveur Adobe Campaign à partir de la configuration OSGI. Nous créons une clé privée des lignes 80 à 104.
+Le code suivant récupère les détails sur le serveur Adobe Campaign à partir de la configuration OSGI. Nous créons une clé privée des lignes 80 à 104.
 
-Une fois que nous avons la clé privée, nous créons le jeton Web JSON.
+Une fois que nous avons la clé privée, nous créons le jeton web JSON.
 
 ```java
 package aemformwithcampaign.core.services.impl;
@@ -243,8 +243,8 @@ public class CampaignServiceImpl implements CampaignService {
 
 ## Générer un jeton d’accès {#generate-access-token}
 
-Nous échangeons ensuite le jeton JWT généré pour un jeton d’accès en effectuant un appel de POST. Ce jeton d’accès sera alors envoyé en tant que clé d’autorisation dans l’en-tête HTTP pour les appels REST suivants
+Nous échangeons ensuite le JWT généré pour un jeton d’accès en effectuant un appel POST. Ce jeton d’accès est alors envoyé en tant que clé d’autorisation dans l’en-tête HTTP pour les appels REST suivants.
 
 ## Étapes suivantes
 
-[Création d’un profil dans ACS lors de l’envoi du formulaire](./parttwo.md)
+[Créer un profil dans ACS lors de l’envoi de formulaire](./parttwo.md)
