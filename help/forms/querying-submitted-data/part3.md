@@ -1,7 +1,7 @@
 ---
-title: AEM Forms avec schéma et données JSON [Partie3]
+title: AEM Forms avec schéma et données JSON [Partie 3]
 seo-title: AEM Forms with JSON Schema and Data[Part3]
-description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes nécessaires à la création d’un formulaire adaptatif avec un schéma JSON et à l’interrogation des données envoyées.
+description: Il s’agit d’un tutoriel en plusieurs parties consacré à la création de formulaires adaptatifs avec les schémas JSON et à l’interrogation des données envoyées.
 seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
 topics: development
@@ -14,18 +14,18 @@ role: Developer
 level: Experienced
 exl-id: 412eea77-3cf4-43bb-9d2f-ae860cd9d3be
 source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '252'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Stockage du schéma JSON dans la base de données {#storing-json-schema-in-database}
+# Stocker le schéma JSON dans la base de données {#storing-json-schema-in-database}
 
 
-Pour pouvoir interroger les données envoyées, nous devrons stocker le schéma JSON associé au formulaire envoyé. Le schéma JSON est utilisé dans le Query Builder pour créer la requête.
+Pour interroger les données envoyées, nous devons au préalable stocker le schéma JSON associé au formulaire envoyé. Le schéma JSON est utilisé dans Query Builder pour créer la requête.
 
-Lorsqu’un formulaire adaptatif est envoyé, nous vérifions si le schéma JSON associé se trouve dans la base de données. Si le schéma JSON n’existe pas, nous récupérons le schéma JSON et le stockons dans le tableau approprié. Nous associons également le nom du formulaire au schéma JSON. La capture d’écran suivante montre le tableau dans lequel les schémas JSON sont stockés.
+Lorsqu’un formulaire adaptatif est envoyé, vérifiez si le schéma JSON associé figure dans la base de données. Si le schéma JSON n’existe pas, récupérez le schéma JSON et stockez-le dans le tableau approprié. Le nom du formulaire est également associé au schéma JSON. La copie d’écran suivante montre le tableau dans lequel les schémas JSON sont stockés.
 
 ![jsonschema](assets/jsonschemas.gif)
 
@@ -107,9 +107,9 @@ public String getJSONSchema(String afPath) {
 
 >[!NOTE]
 >
->Lors de la création d’un formulaire adaptatif, vous pouvez utiliser le schéma JSON qui se trouve dans le référentiel ou charger un schéma JSON. Le code ci-dessus fonctionne pour les deux cas.
+>Lors de la création d’un formulaire adaptatif, vous pouvez utiliser le schéma JSON qui se trouve dans le référentiel ou télécharger un schéma JSON. Le code ci-dessus fonctionne pour les deux cas.
 
-Le schéma récupéré est stocké dans la base de données à l’aide des opérations JDBC standard. Le code suivant insère le schéma dans la base de données :
+Le schéma récupéré est stocké dans la base de données à l’aide des opérations JDBC standard. Le code suivant insère le schéma dans la base de données :
 
 ```java
 public void insertJsonSchema(JSONObject jsonSchema, String afForm) {
@@ -145,10 +145,10 @@ public void insertJsonSchema(JSONObject jsonSchema, String afForm) {
  }
 ```
 
-Pour résumer, nous avons fait ce qui suit jusqu’à présent :
+En résumé, nous avons réalisé les opérations suivantes jusqu’à présent :
 
-* Création d’un formulaire adaptatif basé sur un schéma JSON
+* Créer un formulaire adaptatif basé sur un schéma JSON
 * Si le formulaire est envoyé la première fois, le schéma JSON associé au formulaire est stocké dans la base de données.
-* Nous stockons les données liées du formulaire adaptatif dans la base de données.
+* Les données liées du formulaire adaptatif sont stockées dans la base de données.
 
-Les étapes suivantes consistent à utiliser QueryBuilder pour afficher les champs à rechercher en fonction du schéma JSON.
+Les étapes suivantes utilisent QueryBuilder pour afficher les champs à rechercher en fonction du schéma JSON.
