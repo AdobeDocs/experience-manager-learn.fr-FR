@@ -1,6 +1,6 @@
 ---
-title: Générer un jeton d’accès dans l’action App Builder
-description: Découvrez comment générer un jeton d’accès à l’aide des informations d’identification JWT à utiliser dans une action App Builder.
+title: Générer un jeton d’accès dans une action Créateur d’applications
+description: Découvrez comment générer un jeton d’accès à l’aide des informations d’identification JWT à utiliser dans une action Créateur d’applications.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -8,32 +8,32 @@ role: Developer
 level: Intermediate
 kt: 11743
 last-substantial-update: 2023-01-17T00:00:00Z
-source-git-commit: 40679e80fd9270dd9fad8174a986fd1fdd5e3d29
-workflow-type: tm+mt
+exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '469'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
+# Générer un jeton d’accès dans une action Créateur d’applications
 
-# Générer un jeton d’accès dans l’action App Builder
+Les actions Créateur d’applications peuvent avoir besoin d’interagir avec les API d’Adobe associées aux projets Adobe Developer Console sur lesquels l’application Créateur d’applications est déployée.
 
-Les actions du créateur d’applications peuvent avoir besoin d’interagir avec les API d’Adobe associées aux projets de la console Adobe Developer sur lesquels l’application du créateur d’applications est déployée.
-
-Cela peut nécessiter que l’action App Builder génère son propre jeton d’accès associé au projet de console Adobe Developer souhaité.
+Cela peut nécessiter que l’action Créateur d’applications génère son propre jeton d’accès associé au projet Adobe Developer Console souhaité.
 
 >[!IMPORTANT]
 >
-> Réviser [Documentation de sécurité d’App Builder](https://developer.adobe.com/app-builder/docs/guides/security/) pour comprendre quand il est approprié de générer des jetons d’accès plutôt que d’utiliser des jetons d’accès fournis.
+> Référez-vous à la [documentation de sécurité du Créateur d’applications](https://developer.adobe.com/app-builder/docs/guides/security/) pour comprendre quand il est approprié de générer des jetons d’accès plutôt que d’utiliser des jetons d’accès fournis.
 >
-> L’action personnalisée peut nécessiter de fournir ses propres contrôles de sécurité pour s’assurer que seuls les clients autorisés peuvent accéder à l’action App Builder et aux services Adobe qui la sous-tendent.
+> L’action personnalisée peut avoir besoin de fournir ses propres contrôles de sécurité pour s’assurer que seuls les consommateurs et consommatrices autorisés peuvent accéder à l’action Créateur d’applications et aux services Adobe en arrière-plan.
 
 
-## fichier .env
+## Fichier .env
 
-Dans le fichier du projet App Builder `.env` , ajoutez des clés personnalisées pour chacune des informations d’identification JWT du projet Adobe Developer Console. Les valeurs d’informations d’identification JWT peuvent être obtenues à partir du __Informations d’identification__ > __Compte de service (JWT)__ pour un espace de travail donné.
+Dans le fichier `.env` du projet Créateur d’applications, ajoutez des clés personnalisées pour chacune des informations d’identification JWT du projet Adobe Developer Console. Les valeurs des informations d’identification JWT peuvent être obtenues à partir des __Informations d’identification__ > __Compte de service (JWT)__ du projet Adobe Developer Console pour un espace de travail donné.
 
-![Informations d’identification du service JWT de la console Adobe Developer](./assets/jwt-auth/jwt-credentials.png)
+![Informations d’identification du service JWT Adobe Developer Console](./assets/jwt-auth/jwt-credentials.png).
 
 ```
 ...
@@ -45,14 +45,14 @@ JWT_METASCOPES=https://ims-na1.adobelogin.com/s/ent_analytics_bulk_ingest_sdk,ht
 JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 ```
 
-Les valeurs de `JWT_CLIENT_ID`, `JWT_CLIENT_SECRET`, `JWT_TECHNICAL_ACCOUNT_ID`, `JWT_IMS_ORG` peut être directement copié à partir de l’écran Informations d’identification JWT du projet Adobe Developer Console.
+Les valeurs de `JWT_CLIENT_ID`, `JWT_CLIENT_SECRET`, `JWT_TECHNICAL_ACCOUNT_ID`, `JWT_IMS_ORG` peuvent être directement copiées à partir de l’écran Informations d’identification JWT du projet Adobe Developer Console.
 
 ### Métascopes
 
-Déterminez les API d’Adobe et leurs métadonnées avec lesquelles l’action App Builder interagit. Répertorier les métadonnées à l’aide de délimiteurs de virgules dans la variable `JWT_METASCOPES` clé. Les métascopes valides sont répertoriés dans la section [Documentation du métascope JWT d’Adobe](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
+Déterminez les API d’Adobe et leurs métascopes avec lesquels l’action Créateur d’applications interagit. Répertoriez les métascopes à l’aide de délimiteurs de virgules dans la clé `JWT_METASCOPES`. Les métascopes valides sont répertoriés dans la [documentation du métascope JWT d’Adobe](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/Scopes/).
 
 
-Par exemple, la valeur suivante peut être ajoutée à la variable `JWT_METASCOPES` dans la `.env`:
+Par exemple, la valeur suivante peut être ajoutée à la clé `JWT_METASCOPES` dans le fichier `.env` :
 
 ```
 ...
@@ -62,46 +62,44 @@ JWT_METASCOPES=https://ims-na1.adobelogin.com/s/ent_analytics_bulk_ingest_sdk,ht
 
 ### Clé privée
 
-Le `JWT_PRIVATE_KEY` doit être spécialement formaté, car il s’agit d’une valeur multi-lignes native, qui n’est pas prise en charge dans `.env` fichiers . Le moyen le plus simple est de coder la clé privée base64. Base64 encodant la clé privée (`-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----`) peut être réalisé à l’aide d’outils natifs fournis par votre système d’exploitation.
+La `JWT_PRIVATE_KEY` doit être spécialement formatée, car il s’agit d’une valeur multiligne native, qui n’est pas prise en charge dans les fichiers `.env`. Le moyen le plus simple est de coder la clé privée en base64. L’encodage de la clé privée en Base64 (`-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----`) peut être réalisé à l’aide d’outils natifs fournis par votre système d’exploitation.
 
 >[!BEGINTABS]
 
 >[!TAB macOS]
 
-1. Ouvrez `Terminal`
-1. Exécution de la commande `base64 -i /path/to/private.key | pbcopy`
-1. La sortie base64 est automatiquement copiée dans le presse-papiers.
-1. Coller dans `.env` comme valeur de la clé correspondante
+1. Ouvrez `Terminal`.
+1. Exécutez la commande `base64 -i /path/to/private.key | pbcopy`.
+1. La sortie en base64 est automatiquement copiée dans le presse-papiers.
+1. Collez-la dans `.env` en tant que valeur de la clé correspondante.
 
 >[!TAB Windows]
 
-
-
-1. Ouvrez `Command Prompt`
-1. Exécution de la commande `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
-1. Exécution de la commande `findstr /v CERTIFICATE C:\path\to\encoded-private.key`
-1. Copiez la sortie base64 dans le Presse-papiers.
-1. Coller dans `.env` comme valeur de la clé correspondante
+1. Ouvrez `Command Prompt`.
+1. Exécutez la commande `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`.
+1. Exécutez la commande `findstr /v CERTIFICATE C:\path\to\encoded-private.key`.
+1. Copiez la sortie en base64 dans le presse-papiers.
+1. Collez-la dans `.env` en tant que valeur de la clé correspondante.
 
 >[!TAB Linux®]
 
-1. Ouvrir le terminal
-1. Exécution de la commande `base64 private.key`
-1. Copiez la sortie base64 dans le Presse-papiers.
-1. Coller dans `.env` comme valeur de la clé correspondante
+1. Ouvrez le terminal.
+1. Exécutez la commande `base64 private.key`.
+1. Copiez la sortie en base64 dans le presse-papiers.
+1. Collez-la dans `.env` en tant que valeur de la clé correspondante.
 
 >[!ENDTABS]
 
-Par exemple, la clé privée encodée en base64 suivante peut être ajoutée au `JWT_PRIVATE_KEY` dans la `.env`:
+Par exemple, la clé privée encodée en base64 suivante peut être ajoutée à la clé `JWT_PRIVATE_KEY` dans le fichier `.env` :
 
 ```
 ...
 JWT_PRIVATE_KEY=LS0tLS1C..kQgUFJJVkFURSBLRVktLS0tLQ==
 ```
 
-## Mappage des entrées
+## Mapper des entrées
 
-Avec la valeur d’identification JWT définie dans la variable `.env` , ils doivent être mappés aux entrées d’action AppBuilder pour pouvoir être lus dans l’action elle-même. Pour ce faire, ajoutez des entrées pour chaque variable dans la variable `ext.config.yaml` action `inputs` au format : `PARAMS_INPUT_NAME: $ENV_KEY`.
+Avec la valeur d’identification JWT définie dans le fichier `.env`, celles-ci doivent être mappées aux entrées d’action Créateur d’applications pour pouvoir être lues dans l’action elle-même. Pour ce faire, ajoutez des entrées pour chaque variable dans les `inputs` de l’action `ext.config.yaml` au format : `PARAMS_INPUT_NAME: $ENV_KEY`.
 
 Par exemple :
 
@@ -132,12 +130,12 @@ runtimeManifest:
             final: true
 ```
 
-Les clés définies sous `inputs` sont disponibles sur la `params` fournie à l’action App Builder.
+Les clés définies sous `inputs` sont disponibles sur l’objet `params` fourni à l’action Créateur d’applications.
 
 
-## Informations d’identification JWT pour accéder au jeton
+## Informations d’identification JWT pour le jeton d’accès
 
-Dans l’action App Builder, les informations d’identification JWT sont disponibles dans la variable `params` et utilisable par [`@adobe/jwt-auth`](https://www.npmjs.com/package/@adobe/jwt-auth) pour générer un jeton d’accès, qui peut à son tour accéder à d’autres API et services Adobe.
+Dans l’action Créateur d’applications, les informations d’identification JWT sont disponibles dans l’objet `params` et utilisables par [`@adobe/jwt-auth`](https://www.npmjs.com/package/@adobe/jwt-auth) pour générer un jeton d’accès, qui peut à son tour accéder à d’autres API et services Adobe.
 
 ```javascript
 const fetch = require("node-fetch");
