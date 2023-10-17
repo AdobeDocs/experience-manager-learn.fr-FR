@@ -1,6 +1,6 @@
 ---
-title: Conversion d’une chaîne séparée par des virgules en tableau de chaînes dans AEM Forms Workflow
-description: lorsque votre modèle de données de formulaire comporte un tableau de chaînes comme paramètre d’entrée, vous devez masquer les données générées à partir de l’action d’envoi d’un formulaire adaptatif avant d’appeler l’action d’envoi du modèle de données de formulaire.
+title: Convertir une chaîne séparée par des virgules en séquence de chaînes de caractères dans AEM Forms Workflow
+description: Lorsque votre modèle de données de formulaire comporte une séquence de chaînes de caractères comme paramètre d’entrée, vous devez masquer les données générées à partir de l’action d’envoi d’un formulaire adaptatif avant d’appeler l’action d’envoi du modèle de données de formulaire.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -10,34 +10,34 @@ kt: 8507
 exl-id: 9ad69407-2413-416f-9cec-43f88989b31d
 last-substantial-update: 2021-06-09T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '340'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Conversion d’une chaîne séparée par des virgules en tableau de chaîne {#setting-value-of-json-data-element-in-aem-forms-workflow}
+# Convertir une chaîne séparée par des virgules en séquence de chaînes de caractères {#setting-value-of-json-data-element-in-aem-forms-workflow}
 
-Lorsque votre formulaire est basé sur un modèle de données de formulaire qui comporte un tableau de chaînes comme paramètre d’entrée, vous devez manipuler les données de formulaire adaptatif envoyées pour insérer un tableau de chaînes. Par exemple, si vous avez lié un champ de case à cocher à un élément de modèle de données de formulaire de type tableau de chaîne, les données du champ de case à cocher sont dans un format de chaîne séparé par des virgules. L’exemple de code répertorié ci-dessous vous montre comment remplacer la chaîne séparée par des virgules par un tableau de chaînes.
+Lorsque votre formulaire est basé sur un modèle de données de formulaire qui comporte une séquence de chaînes de caractères comme paramètre d’entrée, vous devez manipuler les données du formulaire adaptatif envoyées pour insérer une séquence de chaînes de caractères. Par exemple, si vous avez lié un champ de case à cocher à un élément de modèle de données de formulaire de type séquence de chaînes de caractères, les données du champ de case à cocher sont dans un format de chaîne séparé par des virgules. L’exemple de code répertorié ci-dessous vous montre comment remplacer la chaîne séparée par des virgules par une séquence de chaînes de caractères.
 
-## Création d’une étape de processus
+## Créer une étape de processus
 
 Une étape de processus est utilisée dans un workflow AEM lorsque nous voulons que notre workflow exécute une certaine logique. L’étape de processus peut être associée à un script ECMA ou à un service OSGi. Notre étape de processus personnalisée exécute le service OSGi.
 
-Les données envoyées sont au format suivant. La valeur de l’élément businessUnits est une chaîne séparée par des virgules qui doit être convertie en un tableau de chaînes.
+Les données envoyées sont au format suivant. La valeur de l’élément businessUnits est une chaîne séparée par des virgules qui doit être convertie en séquence de chaînes de caractères.
 
-![submit-data](assets/submitted-data-string.png)
+![submitted-data](assets/submitted-data-string.png)
 
-Les données d’entrée pour le point de terminaison rest associé au modèle de données de formulaire attendent un tableau de chaînes comme illustré dans cette capture d’écran. Le code personnalisé de l’étape du processus convertit les données envoyées dans le format correct.
+Les données d’entrée pour le point d’entrée REST associé au modèle de données de formulaire attendent une séquence de chaînes de caractères comme illustré dans cette capture d’écran. Le code personnalisé de l’étape du processus convertit les données envoyées dans le format correct.
 
 ![fdm-string-array](assets/string-array-fdm.png)
 
-Nous transmettons le chemin d’accès à l’objet JSON et le nom de l’élément à l’étape de processus. Le code de l’étape de processus remplace les valeurs séparées par des virgules de l’élément en un tableau de chaînes.
+Nous transmettons le chemin d’accès à l’objet JSON et le nom de l’élément à l’étape de processus. Le code de l’étape de processus remplace les valeurs séparées par des virgules de l’élément par une séquence de chaînes de caractère.
 ![process-step](assets/create-string-array.png)
 
 >[!NOTE]
 >
->Assurez-vous que le chemin d’accès au fichier de données dans les options d’envoi du formulaire adaptatif est défini sur &quot;Data.xml&quot;. En effet, le code de l’étape de processus recherche un fichier appelé Data.xml sous le dossier de charge utile.
+>Assurez-vous que le chemin d’accès au fichier de données dans les options d’envoi du formulaire adaptatif est défini sur « Data.xml ». En effet, le code de l’étape de processus recherche un fichier appelé Data.xml sous le dossier de payload.
 
 ## Code d’étape du processus
 
@@ -141,4 +141,4 @@ public class CreateStringArray implements WorkflowProcess {
 }
 ```
 
-L’exemple de lot peut être [téléchargé ici](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar)
+L’exemple de lot peut être [téléchargé ici](assets/CreateStringArray.CreateStringArray.core-1.0-SNAPSHOT.jar).
