@@ -1,6 +1,6 @@
 ---
-title: Quelle est la structure de projet as a Cloud Service AEM ?
-description: Découvrez les bonnes pratiques pour structurer un projet Maven pour AEM as a Cloud Service.
+title: En quoi consiste la structure de projet AEM as a Cloud Service ?
+description: Découvrez les bonnes pratiques pour structurer un projet Maven pour AEM as a Cloud Service.
 role: Developer
 level: Beginner
 type: Tutorial
@@ -10,14 +10,14 @@ kt: 6932
 thumbnail: 330557.jpg
 exl-id: abd75b0b-8c3e-4612-bb8a-bfad50946294
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '52'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# AEM structure du projet
+# Structure de projet AEM
 
-Explorer les bonnes pratiques pour structurer et [Projet AEM Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html#developing) pour AEM as a Cloud Service.
+Découvrez les bonnes pratiques pour structurer un [projet Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr#developing) pour AEM as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330557?quality=12&learn=on)
