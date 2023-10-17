@@ -1,6 +1,6 @@
 ---
-title: Configuration d’un serveur d’aperçu sécurisé pour AEM Dynamic Media
-description: Configurez le serveur d’images de test pour un aperçu sécurisé à l’aide d’AEM Dynamic Media Classic App.
+title: Configurer un serveur de prévisualisation sécurisé pour AEM Dynamic Media
+description: Configurez le serveur d’images de test pour une prévisualisation sécurisée à l’aide de l’application AEM Dynamic Media Classic.
 version: Cloud Service
 role: Developer
 level: Intermediate
@@ -9,14 +9,14 @@ feature: Operations
 index: y
 exl-id: 7c12fc14-cdaf-45eb-807a-64de86a2a36a
 source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '58'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Configuration d’un serveur d’aperçu sécurisé pour AEM Dynamic Media
+# Configurer un serveur de prévisualisation sécurisé pour AEM Dynamic Media
 
-Cette vidéo décrit le processus d’ajout des détails d’un test Image Server (filtres IP du client) dans Dynamic Media pour un aperçu sécurisé à l’aide de l’application Dynamic Media Classic.
+Cette vidéo décrit le processus d’ajout des détails d’un serveur d’images de test (filtres IP du client) dans Dynamic Media pour une prévisualisation sécurisée à l’aide de l’application Dynamic Media Classic.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335462?quality=12&learn=on)
