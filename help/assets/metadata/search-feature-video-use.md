@@ -1,25 +1,25 @@
 ---
-title: Utilisation de la recherche dans AEM Assets
-description: Dans ces vidéos, nous examinons certaines améliorations apportées à la recherche de ressources dans AEM. Les auteurs peuvent améliorer certaines ressources dans les résultats de recherche par mot-clé en mettant à jour les propriétés de métadonnées respectives. Nous examinons également certaines configurations avancées des prédicats Omni-recherche de ressources.
+title: Utiliser la recherche dans AEM Assets
+description: Ces vidéos décrivent les améliorations apportées à la recherche de ressources dans AEM. Les auteurs et autrices peuvent mettre en avant certaines ressources dans les résultats de recherche par mot-clé en mettant à jour les propriétés des métadonnées correspondantes. Nous examinons également quelques configurations avancées pour les prédicats d’Omnisearch Assets.
 version: 6.4, 6.5
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '133'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Utilisation de la recherche dans AEM Assets{#using-search-in-aem-assets}
+# Utiliser la recherche dans AEM Assets{#using-search-in-aem-assets}
 
-Dans ces vidéos, nous examinons certaines améliorations apportées à la recherche de ressources dans AEM. Les auteurs peuvent améliorer certaines ressources dans les résultats de recherche par mot-clé en mettant à jour les propriétés de métadonnées respectives. Nous examinons également certaines configurations avancées des prédicats Omni-recherche de ressources.
+Ces vidéos décrivent les améliorations apportées à la recherche de ressources dans AEM. Les auteurs et autrices peuvent mettre en avant certaines ressources dans les résultats de recherche par mot-clé en mettant à jour les propriétés des métadonnées correspondantes. Nous examinons également quelques configurations avancées pour les prédicats d’Omnisearch Assets.
 
-## Amélioration de la recherche avec les métadonnées de ressource {#search-boost-asset}
+## Optimisation de la recherche avec les métadonnées de ressource {#search-boost-asset}
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766?quality=12&learn=on)
 
 ## Configuration avancée des prédicats de recherche de balises et à plusieurs valeurs {#multi-value-tag-predicates}
 
-Le **prédicat de recherche à plusieurs valeurs** est rendu disponible pour une correspondance de texte facile dans les résultats de recherche. Plusieurs améliorations ont également été apportées au prédicat Balise pour un filtrage plus efficace des résultats de recherche de ressources.
+Le **prédicat de recherche à plusieurs valeurs** permet une correspondance de texte facile dans les résultats de recherche. Plusieurs améliorations ont également été apportées au prédicat de balise pour un filtrage plus efficace des résultats de la recherche de ressources.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16457?quality=12&learn=on)
