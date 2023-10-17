@@ -1,6 +1,6 @@
 ---
-title: Votre évaluation de la maturité d’AEM Sites
-description: Cette liste de contrôle présente un aperçu des questions clés auxquelles vous et votre équipe devez répondre lors de l’évaluation de la maturité de votre instance AEM Sites.
+title: Évaluation de la maturité d’AEM Sites
+description: Cette liste de contrôle présente un aperçu des questions clés auxquelles vous et votre équipe devez répondre lors de l’évaluation de la maturité de votre instance AEM Sites.
 audience: author, marketer, developer
 role: Admin
 level: Intermediate
@@ -8,32 +8,32 @@ topic: Administration
 feature: Learn From Your Peers
 exl-id: 22164a0e-7239-43f4-8356-c12f68133255
 source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Votre liste de contrôle d’évaluation de la maturité d’AEM Sites
+# Liste de contrôle d’évaluation de la maturité d’AEM Sites
 
-L’évaluation de l’état actuel de votre instance AEM Sites peut vous sembler accablant. En règle générale, le meilleur point de départ est de contrôler votre instance et vous pouvez maintenant utiliser cette liste de contrôle d’évaluation de la maturité pour vous guider tout au long de ce processus.
+L’évaluation de l’état actuel de votre instance AEM Sites peut vous sembler fastidieuse. En règle générale, le meilleur point de départ est de faire l’audit de votre instance. Vous pouvez désormais utiliser cette liste de contrôle d’évaluation de la maturité pour vous guider tout au long de ce processus.
 
 [Télécharger la liste de contrôle](assets/AEM-Sites-Maturity-Assessment.xlsx)
 
-Les évaluations AEM maturité ciblent principalement les mises en oeuvre on-premise et de services gérés. Chaque mise en oeuvre d’AEM est unique en raison des définitions de succès et des objectifs configurés par chaque client au cours de la phase de découverte et de pré-intégration jusqu’à la phase de déploiement AEM. L’évaluation de la maturité joue le rôle des contrôles de l’intégrité après activation.
+Les évaluations de la maturité d’AEM ciblent principalement les implémentations sur site (On-Premise) et de services gérés (Managed Services). Chaque implémentation d’AEM est unique en raison des définitions de succès et des objectifs configurés par chaque client ou cliente au cours de la phase de découverte et de pré-intégration jusqu’à la phase du déploiement d’AEM. L’évaluation de la maturité permet de contrôler l’intégrité après activation.
 
-L’évaluation de la maturité permet l’évaluation et le respect des normes AEM et des bonnes pratiques.
+L’évaluation de la maturité permet l’évaluation et le respect des normes et des bonnes pratiques AEM.
 
-Pour connaître les bonnes pratiques en matière d’administration, de développement ou de création, consultez les ressources suivantes :
+Pour les bonnes pratiques d’administration, de développement ou de création, consultez l’une des ressources suivantes :
 
-* [Bonnes pratiques d’administration](https://experienceleague.adobe.com/docs/experience-manager-65/administering/bestpractices/administer-best-practices.html?lang=en)
-* [Bonnes pratiques de développement](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=en)
-* [Bonnes pratiques de création](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/best-practices.html?lang=en)
+* [Bonnes pratiques d’administration](https://experienceleague.adobe.com/docs/experience-manager-65/administering/bestpractices/administer-best-practices.html?lang=fr)
+* [Bonnes pratiques de développement](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html?lang=fr)
+* [Bonnes pratiques de création](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/best-practices.html?lang=fr)
 
-Chacun de ces domaines de bonnes pratiques ci-dessus inclut également d’autres bonnes pratiques pour la création, le développement et le déploiement d’AEM.
+Chacun des domaines de bonnes pratiques ci-dessus inclut également d’autres bonnes pratiques pour la création, le développement et le déploiement AEM.
 
-Dans la plupart des cas, l’évaluation de la maturité AEM aidera à effectuer un examen diagnostique des bonnes pratiques d’AEM et donnera lieu à une feuille de route pour la découverte, la résolution et la prévention proactive des problèmes potentiels. Il est recommandé d’effectuer les évaluations avec les équipes qui faisaient également partie de la phase de découverte de la mise en oeuvre AEM (migration avant AEM). Les rôles qui doivent être impliqués peuvent inclure : Propriétaires d’applications, propriétaires de site, équipes de développement, responsables techniques, équipes de sécurité/infrastructure, équipes d’optimisation pour les moteurs de recherche et équipes d’assistance (par exemple, auteurs de contenu, administrateurs).
+Dans la plupart des cas, l’évaluation de la maturité AEM aide à effectuer un examen diagnostique des bonnes pratiques d’AEM et donne lieu à une feuille de route pour la découverte, la résolution et la prévention proactive des problèmes potentiels. Il est recommandé d’effectuer les évaluations avec les équipes qui faisaient également partie de la phase de découverte de l’implémentation AEM (migration avant AEM). Les rôles qui doivent être impliqués peuvent inclure : les personnes propriétaires des applications, les personnes propriétaires des sites, les équipes de développement, les personnes responsables des aspects techniques, les équipes de sécurité/d’infrastructure, les équipes d’optimisation du moteur de recherche et les équipes d’assistance (par exemple, les créateurs et créatrices de contenu, les administrateurs et administratrices).
 
-Domaines d’évaluation recommandés AEM maturité : Conception et architecture, Gestion et stratégie des produits, Gestion et diffusion des ressources numériques, Analytics, Tests et sécurité.
+Domaines d’évaluation de la maturité AEM recommandés : conception et architecture, gestion et stratégie des produits, gestion et diffusion des ressources numériques, analyses, tests et sécurité.
 
-Un énorme hurlement pour AEM champion Greg Dimeris d&#39;agréger ces informations de multiples articles Experience League ainsi que de ses propres bonnes pratiques !
+Un grand merci au champion AEM Greg Dimeris qui a rassemblé ces informations à partir de multiples articles Experience League ainsi que de ses propres bonnes pratiques.
