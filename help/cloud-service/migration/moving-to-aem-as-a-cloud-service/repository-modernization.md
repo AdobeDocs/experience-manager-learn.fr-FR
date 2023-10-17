@@ -1,6 +1,6 @@
 ---
 title: Modernisation du référentiel
-description: Découvrez la modernisation du référentiel, le contenu modifiable et non modifiable, la structure du package et l’outil d’interface de ligne de commande de l’outil de modernisation du référentiel.
+description: Découvrez la modernisation du référentiel, le contenu modifiable et non modifiable, la structure du package et l’outil d’interface de ligne de commande de modernisation du référentiel.
 version: Cloud Service
 feature: Developer Tools
 topic: Migration, Upgrade
@@ -10,27 +10,27 @@ kt: 8630
 thumbnail: 336958.jpeg
 exl-id: e9bd9035-1f2d-4a34-a581-9c1ec2c7bc04
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '161'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
 # Modernisation du référentiel
 
-Découvrez la modernisation du référentiel, le contenu modifiable et non modifiable, la structure du package et l’outil d’interface de ligne de commande de l’outil de modernisation du référentiel.
+Découvrez la modernisation du référentiel, le contenu modifiable et non modifiable, la structure du package et l’outil d’interface de ligne de commande de modernisation du référentiel.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336958?quality=12&learn=on)
 
-## Outil Repository Modernizer
+## Outil de modernisation du référentiel (Repository Modernizer)
 
-![Repository Modernizer](./assets/repository-modernizer.png)
+![Repository Modernizer.](./assets/repository-modernizer.png)
 
-Dans le cadre de la refactorisation de votre base de code, utilisez le [Outil Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=fr) pour restructurer une base de code 6.x en une structure plus moderne.
+Dans le cadre de la refactorisation de votre base de code, utilisez [l’outil de modernisation du référentiel (Repository Modernizer)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=fr) pour restructurer une base de code 6.x en une structure plus moderne.
 
 ## Activités clés
 
-* Utilisez la variable [Adobe I/O Repository Modernizer](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) pour restructurer un projet en fonction de la structure attendue d’un projet as a Cloud Service AEM.
+* Utilisez l’outil de [modernisation du référentiel (Repository Modernizer) d’Adobe I/O](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationrepository-modernizer) pour restructurer un projet en fonction de la structure attendue d’un projet AEM as a Cloud Service.
 * Ajustez et corrigez manuellement les erreurs de génération dans la base de code mise à jour.
-* Configurez une [environnement de développement local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr) et déployez la base de code mise à jour. Répétez jusqu’à ce que le projet soit dans un état stable.
-* Déployez la base de code mise à jour dans un environnement de développement as a Cloud Service AEM et continuez à valider.
+* Configurez un [environnement de développement local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr) et déployez la base de code mise à jour. Répétez l’étape jusqu’à ce que le projet soit dans un état stable.
+* Déployez la base de code mise à jour dans un environnement de développement AEM as a Cloud Service et cliquez sur Continuer pour valider.
