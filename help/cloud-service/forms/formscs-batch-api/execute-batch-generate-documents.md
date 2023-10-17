@@ -1,6 +1,6 @@
 ---
-title: Exécution de la configuration du lot
-description: Lancez le processus de génération de document en exécutant le lot
+title: Exécuter la configuration par lot
+description: Lancez le processus de génération de document en exécutant le lot.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,24 +10,24 @@ topic: Development
 kt: 9674
 exl-id: 17f91f81-96d8-49d6-b1e3-53d8899695ae
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '81'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Exécution de la configuration par lots
+# Exécuter la configuration par lot
 
-Pour exécuter le lot, envoyez une requête de POST à l’API suivante
+Pour exécuter le lot, envoyez une requête POST à l’API suivante.
 
 ```xml
 <baseURL>/confi/<configName>/execution
 ```
 
-Cette API exige un objet json vide comme paramètre dans le corps de la requête.
-Cette API renvoie une URL unique dans l’en-tête de réponse identifié par **location** clé.
-Une demande de GET à cette URL unique vous indique l’état de l’exécution du lot.
+Cette API exige un objet JSON vide comme paramètre dans le corps de la requête.
+L’API renvoie une URL unique dans l’en-tête de réponse, identifiée par la clé **location**.
+Une requête GET à cette URL unique vous indique le statut d’exécution du lot.
 
-La vidéo suivante montre le déclenchement de la configuration du lot
+La vidéo suivante montre le déclenchement de la configuration par lot.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340242?quality=12&learn=on)
