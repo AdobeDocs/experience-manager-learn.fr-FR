@@ -1,6 +1,6 @@
 ---
-title: Installation et configuration de Git
-description: Initialisation de votre référentiel git local
+title: Installer et configurer Git
+description: Initialiser votre référentiel git local
 solution: Experience Manager
 type: Documentation
 role: Developer
@@ -10,27 +10,29 @@ topic: Development
 kt: 8848
 exl-id: 31487027-d528-48ea-b626-a740b94dceb8
 source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Installer Git
 
 
-[Installer Git](https://git-scm.com/downloads). Vous pouvez sélectionner les paramètres par défaut et terminer le processus d’installation.
-Accédez à l’invite de commande à l’adresse c:\cloudmanager\aem-banking-app type in git —version. Vous devriez voir la version de GIT installée sur votre système.
+[Installer Git](https://git-scm.com/downloads). Sélectionnez les paramètres par défaut et terminez le processus d’installation.
+Accédez à l’invite de commande.
+Accédez à c:\cloudmanager\aem-banking-app.
+Saisissez git --version. La version de GIT installée sur votre système s’affiche.
 
-## Initialisation Du Référentiel Git Local
+## Initialiser le référentiel git local
 
-Vérifiez que vous vous trouvez dans le fichier c:\cloudmanager\aem-banking-app folder
+Vérifiez que vous vous trouvez dans le dossier c:\cloudmanager\aem-banking-app
 
 ```
 git init
 ```
 
-La commande ci-dessus initialise le projet en tant que référentiel local Git.
+La commande ci-dessus initialise le projet en tant que référentiel local git.
 
 ```
 git add .
@@ -46,37 +48,37 @@ Cela valide les fichiers dans le référentiel git.
 
 
 
-## Enregistrer le référentiel de gestionnaire de cloud avec notre référentiel Git local
+## Enregistrer le référentiel de Cloud Manager avec notre référentiel Git local
 
-Accès au référentiel de votre gestionnaire de cloud
-![accéder aux informations sur les rep](assets/cloud-manager-repo.png)
-Obtention des informations d’identification du référentiel de cloud manager
+Accédez à votre référentiel de Cloud Manager.
+![Accès aux informations sur les reférentiels.](assets/cloud-manager-repo.png)
+Obtenez les informations d’identification du référentiel de Cloud Manager.
 ![get-credentials](assets/cloud-manager-repo1.png)
 
-Enregistrez le nom d’utilisateur dans le fichier de configuration.
+Enregistrez le nom d’utilisateur ou d’utilisatrice dans le fichier de configuration.
 
 ```java
 git config --global credential.username "gbedekar-adobe-com"
 ```
 
-enregistrer le mot de passe dans le fichier de configuration ;
+Enregistrez le mot de passe dans le fichier de configuration.
 
 ```java
 git config --global user.password "XXXX"
 ```
 
-(Le mot de passe est votre mot de passe du référentiel git de cloud manager)
+(Le mot de passe est le mot de passe de votre référentiel git de Cloud Manager.)
 
-Enregistrez le référentiel git de Cloud Manager avec votre référentiel git local. La commande ci-dessous associe **application bancaire** avec le référentiel git de cloud manager distant. Vous pouvez utiliser n’importe quel nom au lieu de **application bancaire**
+Enregistrez le référentiel git de Cloud Manager avec votre référentiel git local. La commande ci-dessous associe **bankingapp** avec le référentiel git de Cloud Manager distant. Vous pouvez utiliser n’importe quel nom au lieu de **bankingapp**.
 
 
 ```shell
 git remote add bankingapp https://git.cloudmanager.adobe.com/<cloud-manager-repo-path>
 ```
 
-(Assurez-vous d’utiliser l’URL de votre référentiel)
+(Assurez-vous d’utiliser l’URL de votre référentiel.)
 
-Vérifier si le référentiel distant est enregistré
+Vérifiez si le référentiel distant est enregistré.
 
 ```java
 git remote -v
@@ -84,4 +86,4 @@ git remote -v
 
 ## Étapes suivantes
 
-[Synchronisation des AEM avec AEM projet dans IntelliJ](./intellij-and-aem-sync.md)
+[Synchroniser AEM avec le projet AEM dans IntelliJ](./intellij-and-aem-sync.md)
