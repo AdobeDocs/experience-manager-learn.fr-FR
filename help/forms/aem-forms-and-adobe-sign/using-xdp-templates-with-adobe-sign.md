@@ -1,6 +1,6 @@
 ---
-title: Utilisation de modèles XDP avec AEM Forms et Acrobat Sign
-description: Utilisation de modèles XDP avec AEM Forms et Acrobat Sign. Vidéo présentant l’utilisation de modèles XDP existants avec l’intégration AEM Forms et Sign.
+title: Utiliser les modèles XDP avec AEM Forms et Acrobat Sign
+description: Utilisez les modèles XDP avec AEM Forms et Acrobat Sign. Vidéo illustrant l’utilisation de modèles XDP existants avec l’intégration AEM Forms et Sign.
 feature: Adaptive Forms
 thumbnail: 39705.jpg
 kt: 6143
@@ -8,22 +8,22 @@ topic: Development
 role: Developer
 level: Beginner
 badgeIntegration: label="Intégration" type="positive"
-badgeVersions: label="AEM Forms 6.5" before-title="false"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: faf0143a-0944-41fb-a211-0d83ae1978d4
 source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '70'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# Utilisation de modèles XDP avec AEM Forms et Acrobat Sign
+# Utiliser les modèles XDP avec AEM Forms et Acrobat Sign
 
-Utilisation des modèles XDP existants avec l’intégration AEM Forms et Sign.
+Utilisez des modèles XDP existants avec l’intégration AEM Forms et Sign.
 
 >[!VIDEO](https://video.tv.adobe.com/v/39705?quality=12&learn=on)
 
-Les ressources liées à cette vidéo peuvent être téléchargées à partir des liens suivants :
+Les ressources liées à cette vidéo peuvent être téléchargées à partir des liens suivants :
 
 * [Modèle NDA](assets/nda-agreement-xdp-template.zip)
 * [Formulaire adaptatif](assets/nda-agreement-af-with-xdp-template.zip)
