@@ -1,6 +1,6 @@
 ---
 title: Schémas de métadonnées
-description: Les schémas de métadonnées définissent l’interface dans laquelle les utilisateurs interagissent avec les métadonnées des ressources dans AEM. Leur définition et leur application aux ressources sont essentielles à la gestion des ressources numériques.
+description: Les schémas de métadonnées définissent l’interface dans laquelle les utilisateurs et utilisatrices interagissent avec les métadonnées des ressources dans AEM. Leur définition et leur application aux ressources sont essentielles à la gestion des ressources numériques.
 feature: Metadata
 version: Cloud Service
 kt: 4981
@@ -11,14 +11,14 @@ level: Beginner
 last-substantial-update: 2021-09-17T00:00:00Z
 exl-id: 5d8c1040-4c85-4b28-9975-6fa0c899ccee
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '54'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 # Schémas de métadonnées
 
-Les schémas de métadonnées définissent l’interface dans laquelle les utilisateurs interagissent avec les métadonnées des ressources dans AEM. Leur définition et leur application aux ressources sont essentielles à la gestion des ressources numériques.
+Les schémas de métadonnées définissent l’interface dans laquelle les utilisateurs et utilisatrices interagissent avec les métadonnées des ressources dans AEM. Leur définition et leur application aux ressources sont essentielles à la gestion des ressources numériques.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33696?quality=12&learn=on)
