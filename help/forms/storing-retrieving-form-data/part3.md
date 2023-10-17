@@ -1,6 +1,6 @@
 ---
-title: Stockage et récupération des données de formulaire à partir de la base de données MySQL
-description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes impliquées dans le stockage et la récupération des données de formulaire
+title: Stocker et récupérer des données de formulaire de la base de données MySQL
+description: Tutoriel en plusieurs parties détaillant les étapes impliquées dans le stockage et la récupération des données de formulaire
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -9,15 +9,15 @@ role: Developer
 level: Experienced
 exl-id: 9cce47e7-07b4-43c3-8746-197620855c3f
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '93'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Création d’un service OSGi pour récupérer des données
+# Créer un service OSGi pour récupérer des données
 
-Le code suivant a été écrit pour stocker et récupérer les données de formulaire adaptatif stockées. Une requête simple est utilisée pour récupérer les données de formulaire adaptatif associées à un GUID donné. Les données récupérées sont ensuite renvoyées à l’application appelante. La même source de données créée à l’étape précédente est référencée dans ce code.
+Le code suivant a été écrit pour stocker et récupérer les données de formulaire adaptatif stockées. Une requête simple est utilisée pour récupérer les données du formulaire adaptatif associées à un GUID donné. Les données récupérées sont ensuite renvoyées à l’application qui effectue l’appel. La source de données créée à l’étape précédente est référencée dans ce code.
 
 
 ```java
@@ -154,7 +154,7 @@ public class FetchFormData implements com.aemforms.saveandcontinue.core.FetchSto
 
 ## Interface
 
-Voici la déclaration d’interface utilisée :
+Voici la déclaration d’interface utilisée :
 
 ```java
 package com.aemforms.saveandcontinue.core;
