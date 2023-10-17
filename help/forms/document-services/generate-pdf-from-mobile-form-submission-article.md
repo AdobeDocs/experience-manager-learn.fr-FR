@@ -1,6 +1,6 @@
 ---
-title: Générer un PDF à partir de l’envoi de formulaire HTM5
-description: Générer un PDF à partir de l’envoi du formulaire pour périphériques mobiles
+title: Générer un PDF à partir de l’envoi du formulaire HTML5
+description: Générer un PDF à partir de l’envoi du formulaire mobile
 feature: Mobile Forms
 version: 6.4,6.5
 topic: Development
@@ -9,26 +9,26 @@ level: Experienced
 exl-id: 91b4a134-44a7-474e-b769-fe45562105b2
 last-substantial-update: 2020-01-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '544'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Générer un PDF à partir de l’envoi de formulaire HTM5 {#generate-pdf-from-htm-form-submission}
+# Générer un PDF à partir de l’envoi du formulaire HTML5 {#generate-pdf-from-htm-form-submission}
 
-Cet article décrit les étapes à suivre pour générer des pdf à partir d’un envoi de formulaire HTML5 (alias Mobile Forms). Cette démonstration explique également les étapes nécessaires à l’ajout d’une image au formulaire HTML5 et à la fusion de l’image dans le pdf final.
+Cet article décrit les étapes à suivre pour générer des PDF à partir d’un envoi du formulaire HTML5 (ou formulaire mobile). Cette démonstration explique également les étapes nécessaires à l’ajout d’une image au formulaire HTML5 et à la fusion de l’image dans le PDF final.
 
 
-Pour fusionner les données envoyées dans le modèle xdp, procédez comme suit :
+Pour fusionner les données envoyées dans le modèle XDP, procédez comme suit :
 
-Écrire un servlet pour gérer l’envoi du formulaire HTML5
+Écrivez un servlet pour gérer l’envoi du formulaire HTML5.
 
 * Dans ce servlet, récupérez les données envoyées.
-* Fusionner ces données avec le modèle xdp pour générer le fichier pdf.
-* Rediffuser le pdf vers l’application appelante
+* Fusionnez ces données avec le modèle XDP pour générer le fichier PDF.
+* Rediffusez le PDF vers l’application appelante.
 
-Voici le code de servlet qui extrait les données envoyées de la requête. Il appelle ensuite la méthode personnalisée documentServices .mobileFormToPDF pour obtenir le pdf.
+Voici le code de servlet qui extrait les données envoyées de la requête. Il appelle ensuite la méthode personnalisée .mobileFormToPDF de documentServices pour obtenir le PDF.
 
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
@@ -66,9 +66,9 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
  }
 ```
 
-Pour ajouter une image au formulaire mobile et l’afficher dans le pdf, nous avons utilisé les éléments suivants :
+Pour ajouter une image au formulaire mobile et l’afficher dans le PDF, nous avons utilisé les éléments suivants :
 
-Modèle XDP : dans le modèle xdp, nous avons ajouté un champ d’image et un bouton appelé btnAddImage. Le code suivant gère l’événement click de btnAddImage dans notre profil personnalisé. Comme vous pouvez le constater, nous déclenchons l’événement de clic file1. Aucun codage n’est nécessaire dans le xdp pour réaliser ce cas d’utilisation.
+Modèle XDP : dans le modèle XDP, nous avons ajouté un champ d’image et un bouton appelé btnAddImage. Le code suivant gère l’événement de clic de btnAddImage dans notre profil personnalisé. Comme vous pouvez le constater, nous déclenchons l’événement de clic file1. Aucun codage n’est nécessaire dans le XDP pour réaliser ce cas d’utilisation.
 
 ```javascript
 $(".btnAddImage").click(function(){
@@ -78,9 +78,9 @@ $("#file1").click();
 });
 ```
 
-[Profil personnalisé](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles). L’utilisation d’un profil personnalisé facilite la manipulation des objets DOM de HTML du formulaire mobile. Un élément de fichier masqué est ajouté au fichier HTML.jsp. Lorsque l’utilisateur clique sur &quot;Ajouter votre photo&quot;, l’événement click de l’élément de fichier est déclenché. L’utilisateur peut ainsi parcourir et sélectionner la photo à joindre. Nous utilisons ensuite l’objet JavaScript FileReader pour obtenir la chaîne codée base64 de l’image. La chaîne d’image base64 est stockée dans le champ de texte du formulaire. Lorsque le formulaire est envoyé, nous extrayons cette valeur et l’insérons dans l’élément img du XML. Ce XML est ensuite utilisé pour fusionner avec le xdp afin de générer le pdf final.
+[Profil personnalisé](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html#CreatingCustomProfiles). L’utilisation d’un profil personnalisé facilite la manipulation des objets DOM de HTML du formulaire mobile. Un élément de fichier masqué est ajouté au fichier HTML.jsp. Lorsque l’utilisateur ou l’utilisatrice clique sur « Ajouter votre photo », l’événement de clic de l’élément de fichier est déclenché. L’utilisateur ou l’utilisatrice peut ainsi parcourir et sélectionner la photo à joindre. Nous utilisons ensuite l’objet JavaScript FileReader pour obtenir la chaîne codée en base64 de l’image. La chaîne d’image en base64 est stockée dans le champ de texte du formulaire. Lorsque le formulaire est envoyé, nous extrayons cette valeur et l’insérons dans l’élément img du XML. Ce XML est ensuite utilisé pour fusionner avec le XDP afin de générer le PDF final.
 
-Le profil personnalisé utilisé pour cet article vous a été mis à votre disposition dans le cadre des ressources de cet article.
+Le profil personnalisé utilisé pour cet article a été mis à votre disposition dans le cadre des ressources de cet article.
 
 ```javascript
 function readURL(input) {
@@ -100,23 +100,23 @@ function readURL(input) {
         }
 ```
 
-Le code ci-dessus est exécuté lorsque nous déclenchons l’événement click de l’élément de fichier . Ligne 5 : extrait le contenu du fichier téléchargé sous la forme d’une chaîne base64 et le stocke dans le champ de texte. Cette valeur est ensuite extraite lorsque le formulaire est envoyé à notre servlet.
+Le code ci-dessus est exécuté lorsque nous déclenchons l’événement de clic de l’élément de fichier. Ligne 5 :extraction du contenu du fichier téléchargé sous la forme d’une chaîne en base64 et stockage dans le champ de texte. Cette valeur est ensuite extraite lorsque le formulaire est envoyé à notre servlet.
 
-Nous configurons ensuite les propriétés suivantes (avancées) de notre formulaire mobile dans AEM
+Nous configurons ensuite les propriétés suivantes (avancées) de notre formulaire mobile dans AEM.
 
-* Submit URL - http://localhost:4502/bin/handlemobileformsubmission. Il s’agit de notre servlet qui fusionnera les données envoyées avec le modèle xdp.
-* Profil de rendu de HTML : assurez-vous de sélectionner &quot;AddImageToMobileForm&quot;. Cela déclenche le code permettant d’ajouter une image au formulaire.
+* URL d’envoi : http://localhost:4502/bin/handlemobileformsubmission. Il s’agit de notre servlet qui fusionnera les données envoyées avec le modèle XDP.
+* Profil de rendu de HTML : assurez-vous de sélectionner « AddImageToMobileForm ». Cela déclenche le code permettant d’ajouter une image au formulaire.
 
-Pour tester cette fonctionnalité sur votre propre serveur, procédez comme suit :
+Pour tester cette fonctionnalité sur votre propre serveur, procédez comme suit :
 
-* [Déploiement du lot AemFormsDocumentServices](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* [Déployez le lot AemFormsDocumentServices.](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
 
-* [Déploiement du développement avec le lot Utilisateur du service](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* [Déployez le lot Developing with Service User.](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
 * [Téléchargez et installez le package associé à cet article.](assets/pdf-from-mobile-form-submission.zip)
 
-* Assurez-vous que l’URL d’envoi et le profil de rendu de HTML sont correctement définis en affichant la page des propriétés de  [xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp)
+* Assurez-vous que l’URL d’envoi et le profil de rendu de HTML sont correctement définis en affichant la page des propriétés du [XDP](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/schengen.xdp).
 
-* [Aperçu du XDP au format html](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
+* [Prévisualiser le XDP au format HTML](http://localhost:4502/content/dam/formsanddocuments/schengen.xdp/jcr:content)
 
-* Ajoutez une image au formulaire et envoyez-la. Vous devriez retrouver le PDF avec l&#39;image qu&#39;il contient.
+* Ajoutez une image au formulaire et envoyez-le. Vous devriez récupérer le PDF avec l’image dedans.
