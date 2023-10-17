@@ -1,6 +1,6 @@
 ---
-title: Configuration d’un formulaire adaptatif pour déclencher AEM Workflow - Aperçu
-description: Configuration des options de payload lors du déclenchement AEM processus lors de l’envoi du formulaire
+title: Vue d’ensemble de la configuration d’un formulaire adaptatif pour déclencher un workflow AEM
+description: Configurer des options de payload lors du déclenchement du workflow AEM à l’envoi d’un formulaire
 feature: Workflow
 topics: integrations
 audience: developer
@@ -15,34 +15,34 @@ level: Beginner
 exl-id: 9f1dbd02-774a-4b84-90fa-02d4e468cbac
 last-substantial-update: 2020-07-07T00:00:00Z
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '165'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
-# Configuration d’un formulaire adaptatif pour déclencher AEM processus
+# Configurer un formulaire adaptatif pour déclencher un workflow AEM
 
-## Prérequis
+## Conditions préalables
 
-L’exemple de formulaire utilisé dans ce processus est basé sur un modèle de formulaire adaptatif personnalisé qui doit être importé dans votre serveur AEM. L’exemple de formulaire fourni doit être importé après l’importation du modèle.
+L’exemple de formulaire utilisé dans ce workflow est basé sur un modèle de formulaire adaptatif personnalisé qui doit être importé dans votre serveur AEM. L’exemple de formulaire fourni doit être importé après l’import du modèle.
 
-### Obtention des modèles de formulaire adaptatif
+### Obtenir les modèles de formulaire adaptatif
 
-* Télécharger [Modèle de formulaire adaptatif](assets/af-form-template.zip)
-* [Importez le modèle à l’aide du gestionnaire de packages](http://localhost:4502/crx/packmgr/index.jsp)
-* Télécharger et installer le modèle de formulaire adaptatif
+* Téléchargez un [modèle de formulaire adaptatif](assets/af-form-template.zip).
+* [Importez le modèle à l’aide du gestionnaire de packages](http://localhost:4502/crx/packmgr/index.jsp).
+* Chargez et installez le modèle de formulaire adaptatif.
 
-### Obtention de l’exemple de formulaire adaptatif
+### Obtenir l’exemple de formulaire adaptatif
 
-* Télécharger [Formulaire adaptatif](assets/peak-application-form.zip)
-* Accédez à [Formulaire Et Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Cliquez sur Créer -> Téléchargement du fichier
-* L’exemple de formulaire adaptatif est placé dans un dossier appelé [Forms d’application](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms)
+* Téléchargez le [formulaire adaptatif](assets/peak-application-form.zip).
+* Accédez à [Formulaires et documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Cliquez sur Créer > Charger un fichier.
+* L’exemple de formulaire adaptatif est placé dans un dossier appelé [Formulaires de l’application](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms).
 
-La vidéo suivante explique comment configurer un formulaire adaptatif pour déclencher un processus AEM
+La vidéo suivante explique comment configurer un formulaire adaptatif pour déclencher un workflow AEM.
 >[!VIDEO](https://video.tv.adobe.com/v/40258?quality=12&learn=on)
 
-La vidéo suivante présente la charge utile de workflow et d’autres détails dans le référentiel crx.
+La vidéo suivante présente la payload de workflow et d’autres détails dans le référentiel crx.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40259?quality=12&learn=on)
