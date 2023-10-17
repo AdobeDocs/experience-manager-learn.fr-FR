@@ -1,6 +1,6 @@
 ---
-title: Mise en oeuvre d’une étape de processus personnalisée avec la boîte de dialogue
-description: Écriture de pièces jointes de formulaire adaptatif dans un système de fichiers à l’aide d’une étape de processus personnalisée
+title: Mettre en œuvre une étape de processus personnalisée avec la boîte de dialogue
+description: Écrire des pièces jointes de formulaire adaptatif dans un système de fichiers à l’aide d’une étape de processus personnalisée
 feature: Workflow
 version: 6.5
 topic: Development
@@ -9,30 +9,31 @@ level: Experienced
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 149d2c8c-bf44-4318-bba8-bec7e25da01b
 source-git-commit: 38e0332ef2ef45a73a81f318975afc25600392a8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '462'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Étape de processus personnalisée
 
-Ce tutoriel est destiné aux clients AEM Forms qui doivent implémenter un composant de workflow personnalisé. La première étape de la création d’un composant de workflow est d’écrire votre code Java qui sera associé au composant de workflow. Pour les besoins de ce tutoriel, nous allons écrire une classe Java simple pour stocker les pièces jointes de formulaire adaptatif dans le système de fichiers. Ce code Java lira les arguments spécifiés dans le composant de workflow.
+Ce tutoriel est destiné aux clientes et clients d’AEM Forms qui doivent implémenter un composant de workflow personnalisé. La première étape de la création d’un composant de workflow est d’écrire votre code Java qui sera associé au composant de workflow. Pour les besoins de ce tutoriel, nous allons écrire une classe Java simple pour stocker les pièces jointes de formulaire adaptatif dans le système de fichiers. Ce code Java lira les arguments spécifiés dans le composant de workflow.
 
-Les étapes suivantes sont requises pour écrire la classe java et déployer la classe en tant que lot OSGi.
+Les étapes suivantes sont requises pour écrire la classe Java et déployer la classe en tant que lot OSGi.
 
-## Créer un projet Maven
+## Créer le projet Maven
 
-La première étape consiste à créer un projet Maven à l’aide de l’archétype Maven d’Adobe approprié. Les étapes détaillées sont répertoriées dans cette section [article](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html). Une fois votre projet Maven importé dans eclipse, vous êtes prêt à commencer à écrire votre premier composant OSGi qui peut être utilisé dans votre étape de processus.
+La première étape consiste à créer un projet Maven à l’aide de l’archétype Maven Adobe approprié. Les étapes détaillées sont répertoriées dans cet [article](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=fr). Une fois votre projet Maven importé dans Eclipse, vous êtes en mesure de commencer à écrire votre premier composant OSGi qui peut être utilisé dans votre étape de processus.
 
 
 ### Créer une classe qui implémente WorkflowProcess
 
-Ouvrez le projet Maven dans votre IDE eclipse. Développer **projectname** > **core** dossier. Développez le dossier src/main/java . Vous devriez voir un package qui se termine par &quot;core&quot;. Créez une classe Java qui implémente WorkflowProcess dans ce module. Vous devez remplacer la méthode d’exécution. La signature de la méthode d’exécution est la suivante : public void execute(WorkItem, WorkflowSession workflowSession, MetaDataMap processArguments)renvoie WorkflowException
+Ouvrez le projet Maven dans votre IDE Eclipse. Développez le dossier **projectname** > **core**. Développez le dossier src/main/java. Vous devriez voir un package qui se termine par « core ». Créez une classe Java qui implémente WorkflowProcess dans ce package. Vous devez remplacer la méthode d’exécution. La signature de la méthode d’exécution est la suivante :
+public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments)throws WorkflowException
 
-Dans ce tutoriel, nous allons écrire les pièces jointes ajoutées au formulaire adaptatif dans le système de fichiers dans le cadre du processus AEM.
+Dans ce tutoriel, nous allons écrire les pièces jointes ajoutées au formulaire adaptatif dans le système de fichiers dans le cadre du workflow AEM.
 
-Pour réaliser ce cas d’utilisation, la classe Java suivante a été écrite :
+Pour réaliser ce cas d’utilisation, la classe Java suivante a été écrite :
 
 Regardons ce code.
 
@@ -116,20 +117,20 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
 ```
 
 
-* attachmentsPath : il s’agit du même emplacement que celui que vous avez spécifié dans le formulaire adaptatif lorsque vous avez configuré l’action d’envoi du formulaire adaptatif pour appeler AEM processus. Il s’agit du nom du dossier dans lequel vous souhaitez que les pièces jointes soient enregistrées dans AEM par rapport à la charge utile du workflow.
+* attachmentsPath : il s’agit du même emplacement que celui que vous avez spécifié dans le formulaire adaptatif lorsque vous avez configuré l’action d’envoi du formulaire adaptatif pour appeler le workflow AEM. Il s’agit du nom du dossier dans lequel vous souhaitez que les pièces jointes soient enregistrées dans AEM par rapport à la payload du workflow.
 
-* saveToLocation : emplacement où vous souhaitez que les pièces jointes soient enregistrées sur le système de fichiers de votre serveur AEM.
+* saveToLocation : il s’agit de l’emplacement où vous souhaitez que les pièces jointes soient enregistrées sur le système de fichiers de votre serveur AEM.
 
-Ces deux valeurs sont transmises en tant qu’arguments de processus à l’aide de la boîte de dialogue du composant de processus.
+Ces deux valeurs sont transmises en tant qu’arguments de processus à l’aide de la boîte de dialogue du composant de workflow.
 
-![ProcessStep](assets/custom-workflow-component.png)
+![ProcessStep.](assets/custom-workflow-component.png)
 
-Le service QueryBuilder est utilisé pour interroger des noeuds de type nt:file sous le dossier attachmentsPath . Le reste du code parcourt les résultats de recherche pour créer l’objet Document et l’enregistrer dans le système de fichiers.
+Le service QueryBuilder est utilisé pour interroger des nœuds de type nt:file sous le dossier attachmentsPath. Le reste du code parcourt les résultats de recherche pour créer l’objet Document et l’enregistrer dans le système de fichiers.
 
 
 >[!NOTE]
 >
->Puisque nous utilisons l’objet Document spécifique à AEM Forms, vous devez inclure la dépendance aemfd-client-sdk dans votre projet Maven.
+>Puisque nous utilisons l’objet Document spécifique à AEM Forms, vous devez inclure la dépendance aemfd-client-sdk dans votre projet Maven.
 
 ```xml
 <dependency>
@@ -139,12 +140,12 @@ Le service QueryBuilder est utilisé pour interroger des noeuds de type nt:file 
 </dependency>
 ```
 
-#### Création et déploiement
+#### Créer et déployer
 
-[Créez le lot comme décrit ici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
-[Assurez-vous que le lot est déployé et en principal état](http://localhost:4502/system/console/bundles)
+[Créez le lot comme décrit ici.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=fr)
+[Assurez-vous que le lot est déployé et à l’état actif.](http://localhost:4502/system/console/bundles)
 
 ## Étapes suivantes
 
-Créez votre [composant de workflow personnalisé](./custom-workflow-component.md)
+Créer votre [composant de workflow personnalisé](./custom-workflow-component.md)
 
