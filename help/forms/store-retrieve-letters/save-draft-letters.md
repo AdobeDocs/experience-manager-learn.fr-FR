@@ -1,5 +1,5 @@
 ---
-title: Enregistrement et récupération des brouillons de lettres
+title: Enregistrer et récupérer des brouillons de lettres
 description: Découvrez comment enregistrer et récupérer des brouillons de lettres
 feature: Interactive Communication
 topics: development
@@ -13,15 +13,15 @@ level: Intermediate
 kt: 10208
 exl-id: dc6f64a0-7059-4392-9c29-e66bdef4fd4d
 source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '227'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Enregistrement et récupération des brouillons de lettres
+# Enregistrer et récupérer des brouillons de lettres
 
-Le code suivant est utilisé pour enregistrer l’instance de lettre. Les métadonnées de l’instance de lettre sont stockées dans la variable _icdraft_ table. Une chaîne unique (draftID) est générée et renvoyée. Cette chaîne unique est ensuite utilisée pour récupérer l’instance de lettre enregistrée.
+Le code suivant permet d’enregistrer l’instance de lettre. Les métadonnées de l’instance de lettre sont stockées dans le tableau _icdraft_. Une chaîne unique (draftID) est générée et renvoyée. Cette chaîne unique est ensuite utilisée pour récupérer l’instance de lettre enregistrée.
 
 ```java
 public String save(CCRDocumentInstance letterToSave) throws CCRDocumentException {
@@ -69,8 +69,8 @@ public String save(CCRDocumentInstance letterToSave) throws CCRDocumentException
 
 ## Obtenir la lettre
 
-Le code suivant a été écrit pour récupérer le brouillon enregistré de la lettre.
-Pour charger des instances de lettre enregistrées, vous devez fournir l’ID de brouillon. En fonction de cet ID de brouillon, nous effectuons des requêtes dans la base de données pour obtenir les métadonnées supplémentaires sur la lettre. Le même draftID est utilisé pour créer les données de la lettre en lisant le fichier XML approprié à partir du système de fichiers. Un objet CCRDocumentInstance est alors construit et renvoyé.
+Le code suivant permet de récupérer le brouillon de lettre enregistré.
+Pour charger des instances de lettre enregistrées, vous devez fournir l’ID de brouillon draftID. Des requêtes basées sur l’ID de brouillon draftID sont ensuite envoyées à la base de données afin d’obtenir les métadonnées supplémentaires sur la lettre. Le même ID de brouillon draftID est utilisé pour créer les données de la lettre en lisant le fichier XML approprié à partir du système de fichiers. Un objet CCRDocumentInstance est alors créé et renvoyé.
 
 
 ```java
@@ -101,7 +101,7 @@ public CCRDocumentInstance get(String draftID) throws CCRDocumentException {
 
 ### Mettre à jour la lettre
 
-Le code suivant a été utilisé pour mettre à jour l’instance de lettre enregistrée. Les données de la lettre mise à jour sont écrites dans le système de fichiers à l’aide de l’ID de lettre.
+Le code suivant permet de mettre à jour l’instance de lettre enregistrée. Les données de la lettre mise à jour sont écrites dans le système de fichiers à l’aide de l’ID de lettre.
 
 ```java
 public void update(CCRDocumentInstance letterInstanceToUpdate) throws CCRDocumentException {
@@ -122,8 +122,8 @@ public void update(CCRDocumentInstance letterInstanceToUpdate) throws CCRDocumen
 
 ### Obtenir toutes les lettres enregistrées
 
-AEM Forms ne fournit aucune interface utilisateur prête à l’emploi pour répertorier les lettres enregistrées. Pour cet article, je répertorie les instances de lettre enregistrées dans un format tabulaire à l’aide d’un formulaire adaptatif.
-Vous pouvez personnaliser la requête pour récupérer les instances de lettre enregistrées. Dans cet exemple, je demande une instance de lettre enregistrée par &quot;admin&quot;.
+AEM Forms ne dispose d’aucune interface utilisateur prête à l’emploi pour répertorier les lettres enregistrées. Dans le cadre de cet article, les instances de lettre enregistrées sont répertoriées au format tabulaire à l’aide d’un formulaire adaptatif.
+Vous pouvez personnaliser la requête pour récupérer les instances de lettre enregistrées. Dans cet exemple, la requête porte sur une instance de lettre enregistrée par « admin ».
 
 ```java
     public List < CCRDocumentInstance > getAll(String arg0, Date arg1, Date arg2, Map < String, Object > arg3) throws CCRDocumentException {
@@ -170,4 +170,4 @@ Vous pouvez personnaliser la requête pour récupérer les instances de lettre e
 
 ### Projet Eclipse
 
-Le projet eclipse avec exemple de mise en oeuvre peut être [téléchargé ici](assets/icdrafts-eclipse-project.zip)
+Le projet Eclipse avec l’exemple de mise en œuvre peut être [téléchargé ici](assets/icdrafts-eclipse-project.zip).
