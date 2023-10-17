@@ -1,6 +1,6 @@
 ---
-title: Placez les boutons Suivant et Précédent de la barre d’outils.
-description: Placer les boutons de la barre d’outils
+title: Espacer les boutons Suivant et Précédent de la barre d’outils
+description: Espacer les boutons de la barre d’outils
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -11,34 +11,34 @@ kt: 9291
 exl-id: 1b55b6d2-3bab-4907-af89-c81a3b1a44cb
 last-substantial-update: 2019-07-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 7%
+workflow-type: ht
+source-wordcount: '196'
+ht-degree: 100%
 
 ---
 
-# Bouton de la barre d’outils
+# Espacer les boutons de la barre d’outils
 
-Lorsque vous ajoutez les boutons Suivant et Précédent à la barre d’outils dans AEM Forms, les boutons sont placés par défaut les uns à côté des autres. Vous pouvez appuyer sur le bouton Suivant à l’extrême droite de la barre d’outils tout en maintenant le bouton précédent/précédent à gauche.
+Lorsque vous ajoutez les boutons Suivant et Précédent à la barre d’outils dans AEM Forms, les boutons sont placés par défaut les uns à côté des autres. Vous pouvez appuyer sur le bouton Suivant à l’extrême droite de la barre d’outils tout en maintenant le bouton Précédent/Arrière à gauche.
 
 ![toolbar-spacing](assets/toolbar-spacing.png)
 
 
 ## Style de la barre d’outils
 
-Le cas d’utilisation ci-dessus peut être facilement réalisé à l’aide de l’éditeur de style. Une fois que vous avez ajouté le bouton Précédent/Suivant à la barre d’outils, assurez-vous d’avoir sélectionné le calque Style dans le menu d’édition. Lorsque le mode Style est sélectionné, sélectionnez la barre d’outils pour ouvrir sa feuille de propriétés de style. Développez la section Dimensions et position et vérifiez que toutes les propriétés s’affichent. Définissez les propriétés suivantes
+Le cas d’utilisation ci-dessus peut être facilement réalisé à l’aide de l’éditeur de style. Une fois que vous avez ajouté le bouton Précédent/Suivant à la barre d’outils, assurez-vous d’avoir sélectionné le calque Style dans le menu d’édition. Lorsque le mode Style est sélectionné, sélectionnez la barre d’outils pour ouvrir sa feuille de propriétés de style. Développez la section Dimensions et position et vérifiez que toutes les propriétés s’affichent. Définissez les propriétés suivantes :
 * Dimensions et position
-   * Largeur: 100%
-   * Position : relative
+   * Largeur : 100 %
+   * Position : relative
 
-Enregistrez vos modifications
+Enregistrez vos modifications.
 
 ## Style du bouton Suivant
 
-Sélectionnez le bouton Suivant et veillez à ouvrir la feuille de propriétés de style du bouton suivant (et non le texte du bouton suivant). Définissez les propriétés suivantes
+Sélectionnez le bouton Suivant et veillez à ouvrir la feuille de propriétés de style du bouton Suivant (et non le texte du bouton Suivant). Définissez les propriétés suivantes :
 * Dimensions et position
-   * position : top 1 px droite 1 px
+   * Position : absolue haut 1 px droite 1 px
 * Bordure
-   * Rayon de bordure : 4 px(Haut,Droite,Bas,Gauche)
+   * Rayon de bordure : 4 px (haut, droite, bas, gauche)
 
-Enregistrez vos modifications
+Enregistrez vos modifications.
