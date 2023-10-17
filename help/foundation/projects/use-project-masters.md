@@ -1,6 +1,6 @@
 ---
-title: Utilisation des Principal de projet dans AEM
-description: Les Principal de projet simplifient considérablement la gestion des utilisateurs et des équipes avec AEM Projets.
+title: Utilisation des projets principaux dans AEM
+description: Les projets principaux simplifient considérablement la gestion des projets AEM par les utilisateurs, les utilisatrices et les équipes.
 version: 6.4, 6.5, Cloud Service
 topic: Content Management, Collaboration
 feature: Projects
@@ -10,45 +10,45 @@ kt: 256
 thumbnail: 17740.jpg
 exl-id: 78ff62ad-1017-4a02-80e9-81228f9e01eb
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '368'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Utilisation de Principal de projet
+# Utiliser des Project Masters
 
-Les Principal de projet simplifient considérablement la gestion des utilisateurs et des équipes avec [!DNL AEM Projects].
+Les projets principaux simplifient considérablement la gestion de [!DNL AEM Projects] par les utilisateurs, les utilisatrices et les équipes.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17740?quality=12&learn=on)
 
-Les administrateurs peuvent désormais créer un **[!DNL Master Project]** et affecter des utilisateurs à des rôles/autorisations dans le cadre d’une équipe de projet. Les projets peuvent être créés à partir d’un projet Principal et héritent automatiquement de l’appartenance à l’équipe. Cela offre plusieurs avantages :
+Les administrateurs et les administrarices peuvent désormais créer un **[!DNL Master Project]** et affecter des utilisateurs et utilisatrices à des rôles/autorisations dans le cadre d’une équipe de projet. Les projets peuvent être créés à partir d’un projet principal et héritent automatiquement de l’appartenance à l’équipe. Ceci offre plusieurs avantages :
 
-* Réutilisation d’équipes existantes sur plusieurs projets
-* accélère la création du projet, car les équipes n’ont pas à être recréées à la main ;
-* Gérer l’appartenance à l’équipe depuis un emplacement central et toutes les mises à jour apportées aux équipes sont automatiquement héritées par les projets.
-* évite la création de listes de contrôle d’accès en double, ce qui peut entraîner des problèmes de performances.
+* Réutiliser les équipes existantes sur plusieurs projets ;
+* Accélérer la création du projet, car les équipes n’ont pas à être recréées à la main ;
+* Gérer l’appartenance à l’équipe depuis un emplacement central et les mises à jour apportées aux équipes sont automatiquement héritées par les projets ;
+* Éviter la création de listes de contrôle d’accès en double, ce qui peut entraîner des problèmes de performances.
 
-[!DNL Master Projects] peut être créé sous le [!UICONTROL Principal] Dossier sous [!UICONTROL Projets AEM]. Une fois qu’un projet Principal est créé, il s’affiche en tant qu’option en même temps que les modèles disponibles dans l’assistant lors de la création de projets.
+Les [!DNL Master Projects] peuvent être créés sous le dossier [!UICONTROL Principaux] sous [!UICONTROL Projets AEM]. Une fois qu’un projet principal est créé, il s’affiche en tant qu’option à côté des modèles disponibles dans l’assistant lors de la création de projets.
 
-[!DNL Project Masters] URL (instance d’auteur AEM locale) : [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
+URL [!DNL Project Masters] (instance de création AEM locale) : [http://localhost:4502/projects.html/content/projects/masters](http://localhost:4502/projects.html/content/projects/masters)
 
 ## Supprimer [!DNL Project Masters]
 
-La suppression d’un projet maître entraîne des projets dérivés inutilisables.
+La suppression d’un projet principal rend les projets dérivés inutilisables.
 
-Avant de supprimer un projet maître, assurez-vous que tous les projets dérivés sont terminés et supprimés d’AEM. Veillez à enregistrer les données de projet requises avant de supprimer les projets dérivés. Une fois que tous les projets dérivés sont supprimés d’AEM, le projet maître peut être supprimé en toute sécurité.
+Avant de supprimer un projet principal, assurez-vous que tous les projets dérivés sont terminés et supprimés d’AEM. Veillez à enregistrer les données de projet requises avant de supprimer les projets dérivés. Une fois que tous les projets dérivés sont supprimés d’AEM, le projet principal peut être supprimé en toute sécurité.
 
-## Marquer [!DNL Project Masters] comme inactif
+## Marquer les [!DNL Project Masters] comme inactifs
 
-En définissant l’état du projet maître sur inactif dans les propriétés du projet, les projets maîtres inactifs disparaissent de la liste des projets maîtres.
+Si vous définissez le statut d’un projet principal sur inactif dans les propriétés du projet, les projets principaux inactifs disparaissent de la liste des projets principaux.
 
-Pour afficher les projets maîtres inactifs, activez le bouton de filtre &quot;Afficher principal&quot; dans la barre supérieure (en regard du bouton d’affichage de liste). Pour que le projet inactif soit à nouveau principal, sélectionnez simplement le projet maître inactif, modifiez les propriétés du projet et redéfinissez-le sur principal.
+Pour afficher les projets principaux inactifs, appuyez sur le bouton de filtre « Afficher les projets actifs » dans la barre supérieure (en regard du bouton d’affichage de liste). Pour que le projet inactif soit à nouveau actif, sélectionnez simplement le projet principal inactif, modifiez les propriétés du projet et redéfinissez-le sur actif.
 
-## Comprendre [!DNL Project Masters]
+## Comprendre les [!DNL Project Masters]
 
-![Vue technique des chefs de projet](assets/use-project-masters/project-masters-architecture.png)
+![Vue technique des projets principaux](assets/use-project-masters/project-masters-architecture.png)
 
-[!DNL Project Masters] définissez un ensemble de groupes d’utilisateurs AEM (propriétaires, éditeurs et observateurs) et autorisez les projets dérivés à référencer et à réutiliser ces groupes d’utilisateurs définis de manière centralisée.
+Les [!DNL Project Masters] fonctionnent en définissant un ensemble de groupes d’utilisateurs et d’utilisatrices AEM (propriétaires, éditeurs et éditrices et observateurs et observatrices) et en autorisant les projets dérivés à référencer et à réutiliser ces groupes d’utilisateurs et d’utilisatrices définis de manière centralisée.
 
-Cela réduit le nombre total de groupes d’utilisateurs requis dans AEM. Avant [!DNL Project Masters], chaque projet a créé 3 groupes d’utilisateurs avec les listes de contrôle d’accès associées pour appliquer l’autorisation, de sorte que 100 projets ont généré 300 groupes d’utilisateurs. Les Principal de projet permettent à n’importe quel nombre de projets de réutiliser les mêmes trois groupes, en supposant que l’appartenance partagée s’aligne sur les besoins professionnels dans l’ensemble du projet.
+Cela réduit le nombre total de groupes d’utilisateurs et d’utilisatrices requis dans AEM. Avant les [!DNL Project Masters], chaque projet créait 3 groupes d’utilisateurs avec les listes de contrôle d’accès correspondantes pour appliquer l’autorisation, de sorte que 100 projets généraient 300 groupes d’utilisateurs. Les projets principaux permettent à n’importe quel nombre de projets de réutiliser les mêmes trois groupes, en supposant que l’appartenance partagée s’aligne sur les besoins professionnels dans l’ensemble du projet.
