@@ -7,7 +7,7 @@ role: Developer
 level: Beginner
 exl-id: 873d8e69-5a05-44ac-8dae-bba21f82b823
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '596'
 ht-degree: 100%
 
@@ -83,7 +83,6 @@ La rupture de ce contrat sur une API publiée peut entraîner un comportement in
 >
 > Ce fichier JSON peut être généré de façon **propre** (formaté) pour la lisibilité humaine à l’aide du sélecteur `.tidy` :
 > * [http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json](http://localhost:4502/content/wknd-mobile/en/api/events.model.tidy.json).
-
 
 ## Étape suivante
 
