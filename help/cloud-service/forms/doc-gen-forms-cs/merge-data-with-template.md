@@ -1,6 +1,6 @@
 ---
 title: Fusionner les données avec le modèle XDP
-description: Effectuez une requête de POST jusqu’au point de terminaison avec les paramètres nécessaires.
+description: Effectuer une requête POST au point d’entrée avec les paramètres requis
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -9,19 +9,20 @@ feature: Output Service
 topic: Development
 kt: 8185
 thumbnail: 332439.jpg
-source-git-commit: f712e86600ed18aee43187a5fb105324b14b7b89
-workflow-type: tm+mt
+exl-id: d144b3f6-7c7a-46a7-bc5f-1767895749d0
+source-git-commit: 47d36e472719049de1346c5f0bba010c9af4e039
+workflow-type: ht
 source-wordcount: '138'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Effectuer l’appel du POST
+# Effectuer l’appel POST
 
 
-L’étape suivante consiste à effectuer un appel de POST HTTP vers le point de terminaison avec les paramètres nécessaires. Le modèle et les fichiers de données sont fournis sous forme de fichiers de ressources. Les propriétés du pdf généré sont spécifiées via le paramètre de l’option dans la requête. La propriété embedFonts est utilisée pour incorporer des polices personnalisées dans le pdf généré.[Suivez cette documentation pour déployer des polices personnalisées sur votre instance cloud Forms.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=en) Les propriétés sont spécifiées dans le fichier de ressource options.json . Depuis, le point de fin dispose d’une authentification basée sur les jetons. Nous transmettons le jeton d’accès dans l’en-tête de la requête.
+L’étape suivante consiste à effectuer un appel POST HTTP au point d’entrée avec les paramètres nécessaires. Le modèle et les fichiers de données sont fournis sous forme de fichiers de ressources. Les propriétés du PDF généré sont spécifiées via le paramètre de l’option dans la requête. La propriété embedFonts permet d’incorporer des polices personnalisées dans le PDF généré.[Consultez cette documentation pour déployer des polices personnalisées sur votre instance cloud de Forms.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=fr) Les propriétés sont spécifiées dans le fichier de ressource options.json. Puisque le point d’entrée dispose d’une authentification basée sur les jetons, nous transmettons le jeton d’accès dans l’en-tête de la requête.
 
-Le code suivant a été utilisé pour générer le pdf en fusionnant les données avec le modèle .
+Le code suivant a été utilisé pour générer le PDF en fusionnant les données avec le modèle.
 
 ```java
 public class DocumentGeneration
