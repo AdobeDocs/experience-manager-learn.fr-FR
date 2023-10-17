@@ -35,7 +35,7 @@ Dans ce chapitre, un nouveau projet AEM est généré en fonction de l’[arché
 
 ## Prérequis
 
-Examinez les instructions et outils requis pour configurer un [environnement de développement local](overview.md#local-dev-environment). Assurez-vous qu’une nouvelle instance d’Adobe Experience Manager, démarrée en mode **création**, s’exécute localement.
+Examinez les outils et les instructions nécessaires à la configuration d’un [environnement de développement local](overview.md#local-dev-environment). Assurez-vous qu’une nouvelle instance d’Adobe Experience Manager, démarrée en mode **création**, s’exécute localement.
 
 ## Créer le projet {#create}
 
@@ -158,7 +158,7 @@ Ouvrez ensuite la SPA de démarrage générée par l’archétype et mettez à j
 
    ![Mise à jour du composant de texte.](./assets/create-project/update-text-component.gif)
 
-4. Ajoutez un autre composant de **texte** à la page.
+4. Ajoutez un composant de **texte** supplémentaire à la page.
 
    Notez que l’expérience de création est similaire à celle d’une page AEM Sites traditionnelle. Actuellement, un nombre limité de composants peuvent être utilisés. D’autres éléments seront ajoutés au cours du tutoriel.
 
