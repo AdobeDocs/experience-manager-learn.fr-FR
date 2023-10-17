@@ -1,5 +1,5 @@
 ---
-title: Déploiement d’une extension d’interface utilisateur AEM
+title: Déployer une extension d’interface utilisateur AEM
 description: Découvrez comment déployer une extension d’interface utilisateur AEM.
 feature: Developer Tools
 version: Cloud Service
@@ -11,137 +11,137 @@ kt: 11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
 source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '777'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Déploiement d’une extension
+# Déployer une extension
 
-Pour une utilisation dans AEM environnements as a Cloud Service, l’application App Builder d’extension doit être déployée et approuvée.
+Pour une utilisation dans les environnements AEM as a Cloud Service, l’extension de l’application Créateur d’applications doit être déployée et approuvée.
 
-Plusieurs points doivent être pris en compte lors du déploiement des applications App Builder d’extension :
+Plusieurs points doivent être pris en compte lors du déploiement des extensions d’applications Créateur d’applications :
 
-+ Les extensions sont déployées dans l’espace de travail du projet de la console Adobe Developer. Les espaces de travail par défaut sont les suivants :
-   + __Production__ workspace contient des déploiements d’extension disponibles dans tous les AEM as a Cloud Service.
-   + __Évaluation__ workspace fait office d’espace de travail développeur. Les extensions déployées dans l’espace de travail Stage ne sont pas disponibles dans AEM as a Cloud Service.
-Les espaces de travail de la console Adobe Developer ne comportent aucune corrélation directe avec les types d’environnements as a Cloud Service AEM.
-+ Une extension déployée dans l’espace de travail de production s’affiche dans tous les environnements as a Cloud Service AEM dans l’organisation Adobe dans laquelle l’extension existe.
-Une extension ne peut pas être limitée aux environnements dans lesquels elle est enregistrée en ajoutant [logique conditionnelle qui vérifie le nom d’hôte as a Cloud Service AEM](https://developer.adobe.com/uix/docs/guides/publication/#enabling-extension-only-on-specific-aem-environments).
-+ Plusieurs extensions peuvent être utilisées sur AEM as a Cloud Service. Adobe recommande que chaque application App Builder d’extension soit utilisée pour résoudre un seul objectif commercial. Cela dit, une seule application App Builder d’extension peut mettre en oeuvre plusieurs points d’extension qui prennent en charge un objectif commercial commun.
++ Les extensions sont déployées dans l’espace de travail du projet de l’Adobe Developer Console. Les espaces de travail par défaut sont les suivants :
+   + L’espace de travail __Production__ contient des déploiements d’extension disponibles dans toutes les instances AEM as a Cloud Service.
+   + L’espace de travail __Évaluation__ fait office d’espace de travail de développement. Les extensions déployées dans l’espace de travail Évaluation ne sont pas disponibles dans AEM as a Cloud Service.
+Les espaces de travail de l’Adobe Developer Console ne comportent aucune corrélation directe avec les types d’environnements AEM as a Cloud Service.
++ Une extension déployée dans l’espace de travail de production s’affiche dans tous les environnements AEM as a Cloud Service dans l’organisation Adobe dans laquelle l’extension existe.
+Une extension ne peut pas être limitée aux environnements dans lesquels elle est enregistrée en ajoutant une [logique conditionnelle qui vérifie le nom d’hôte AEM as a Cloud Service](https://developer.adobe.com/uix/docs/guides/publication/#enabling-extension-only-on-specific-aem-environments).
++ Plusieurs extensions peuvent être utilisées sur AEM as a Cloud Service. Adobe recommande que chaque extension de l’application Créateur d’applications soit utilisée pour résoudre un seul objectif commercial. Cela dit, une seule extension de l’application Créateur d’applications peut mettre en œuvre plusieurs points d’extension qui prennent en charge un objectif commercial commun.
 
 ## Déploiement initial
 
-Pour qu’une extension soit disponible dans AEM environnements as a Cloud Service, elle doit être déployée sur la console Adobe Developer.
+Pour qu’une extension soit disponible dans les environnements AEM as a Cloud Service, elle doit être déployée sur l’Adobe Developer Console.
 
-Le processus de déploiement se divise en deux étapes logiques :
+Le processus de déploiement se divise en deux étapes logiques :
 
-1. Déploiement de l’application App Builder d’extension vers la console Adobe Developer par un développeur.
-1. Validation de l’extension par un responsable de déploiement ou un propriétaire d’entreprise.
+1. Déploiement de l’extension de l’application Créateur d’applications vers Adobe Developer Console par un développeur ou une développeuse.
+1. Validation de l’extension par une personne responsable du déploiement ou une personne propriétaire d’entreprise.
 
 ### Déployer l’extension
 
-Déployez l’extension dans l’espace de travail Production. Les extensions déployées dans l’espace de travail de production sont automatiquement ajoutées à tous les services d’auteur as a Cloud Service AEM dans l’organisation Adobe vers laquelle l’extension est déployée.
+Déployez l’extension dans l’espace de travail de production. Les extensions déployées dans l’espace de travail de production sont automatiquement ajoutées à tous les services de création d’AEM as a Cloud Service dans l’organisation Adobe vers laquelle l’extension est déployée.
 
-1. Ouvrez une ligne de commande à la racine de l’extension mise à jour de l’application App Builder.
-1. Assurez-vous que l’espace de travail Production est principal
+1. Ouvrez une ligne de commande à la racine de l’extension mise à jour de l’application du créateur d’applications.
+1. Assurez-vous que l’espace de travail de production est actif.
 
    ```shell
    $ aio app use -w Production
    ```
 
-   Fusionner toutes les modifications dans `.env` et `.aio`.
+   Fusionnez toutes les modifications dans `.env` et `.aio`.
 
-1. Déployez l’extension mise à jour de l’application App Builder.
+1. Déployez l’extension mise à jour de l’application Créateur d’applications.
 
    ```shell
    $ aio app deploy
    ```
 
-#### Demande d’approbation de déploiement
+#### Demander l’approbation du déploiement
 
-![Soumettre l’extension à validation](./assets/deploy/submit-for-approval.png){align="center"}
+![Soumission de l’extension pour validation.](./assets/deploy/submit-for-approval.png){align="center"}
 
-1. Connectez-vous à [Console Adobe Developer](https://developer.adobe.com)
-1. Sélectionner __Console__
-1. Accédez à __Projets__
-1. Sélectionner le projet associé à l’extension
-1. Sélectionnez la __Production__ workspace
-1. Sélectionner __Soumettre à validation__
+1. Connectez-vous à l’[Adobe Developer Console](https://developer.adobe.com).
+1. Sélectionnez __Console__.
+1. Accédez à __Projets__.
+1. Sélectionnez le projet associé à l’extension.
+1. Sélectionnez l’espace de travail __Production__.
+1. Sélectionnez __Soumettre pour validation__.
 1. Remplissez et envoyez le formulaire, en mettant à jour les champs selon vos besoins.
 
-### Validation de déploiement
+### Validation du déploiement
 
-![Validation des extensions](./assets/deploy/adobe-exchange.png){align="center"}
+![Validation des extensions.](./assets/deploy/adobe-exchange.png){align="center"}
 
-1. Connectez-vous à [Adobe Exchange](https://exchange.adobe.com/)
-1. Accédez à __Gérer__ > __Applications en attente de révision__
-1. __Réviser__ l’application App Builder d’extension
-1. Si les modifications d’extension sont acceptables __Accepter__ la révision. Cette opération injecte immédiatement l’extension sur tous les services de création as a Cloud Service AEM dans l’organisation Adobe.
+1. Connectez-vous à [Adobe Exchange](https://exchange.adobe.com/).
+1. Accédez à __Gérer__ > __Applications en attente de révision__.
+1. __Révisez__ l’extension de l’application Créateur d’applications.
+1. Si les modifications d’extension sont acceptables, __Acceptez__ la révision. Cette opération injecte immédiatement l’extension sur tous les services de création d’AEM as a Cloud Service dans l’organisation Adobe.
 
-Une fois la demande d’extension approuvée, l’extension devient immédiatement principale dans les services d’auteur as a Cloud Service AEM.
+Une fois la demande d’extension approuvée, l’extension devient immédiatement active dans les services de création d’AEM as a Cloud Service.
 
 ## Mettre à jour une extension
 
-La mise à jour et l’extension de l’application App Builder suivent le même processus que le [déploiement initial](#initial-deployment), avec l’écart selon lequel le déploiement d’extension existant doit d’abord être révoqué.
+Mettre à jour une extension de l’application Créateur d’applications suit le même processus que le [déploiement initial](#initial-deployment), à la différence que le déploiement d’extension existant doit d’abord être révoqué.
 
 ### Révoquer l’extension
 
-Pour déployer une nouvelle version d’une extension, celle-ci doit d’abord être révoquée (ou supprimée). Bien que l’extension soit Révoquée, elle n’est pas disponible dans AEM consoles.
+Pour déployer une nouvelle version d’une extension, celle-ci doit d’abord être révoquée (ou supprimée). Quand l’extension est révoquée, elle n’est pas disponible dans les consoles AEM.
 
-1. Connectez-vous à [Adobe Exchange](https://exchange.adobe.com/)
-1. Accédez à __Gérer__ > __Applications de créateur d’applications__
-1. __Révoquer__ l’extension à mettre à jour
+1. Connectez-vous à [Adobe Exchange](https://exchange.adobe.com/).
+1. Accédez à __Gérer__ > __Applications Créateur d’applications__.
+1. __Révoquez__ l’extension à mettre à jour.
 
 ### Déployer l’extension
 
-Déployez l’extension dans l’espace de travail Production. Les extensions déployées dans l’espace de travail de production sont automatiquement ajoutées à tous les services d’auteur as a Cloud Service AEM dans l’organisation Adobe vers laquelle l’extension est déployée.
+Déployez l’extension dans l’espace de travail de production. Les extensions déployées dans l’espace de travail de production sont automatiquement ajoutées à tous les services de création d’AEM as a Cloud Service dans l’organisation Adobe vers laquelle l’extension est déployée.
 
-1. Ouvrez une ligne de commande à la racine de l’extension mise à jour de l’application App Builder.
-1. Assurez-vous que l’espace de travail Production est principal
+1. Ouvrez une ligne de commande à la racine de l’extension mise à jour de l’application du créateur d’applications.
+1. Assurez-vous que l’espace de travail de production est actif.
 
    ```shell
    $ aio app use -w Production
    ```
 
-   Fusionner toutes les modifications dans `.env` et `.aio`.
+   Fusionnez toutes les modifications dans `.env` et `.aio`.
 
-1. Déployez l’extension mise à jour de l’application App Builder.
+1. Déployez l’extension mise à jour de l’application Créateur d’applications.
 
    ```shell
    $ aio app deploy
    ```
 
-#### Demande d’approbation de déploiement
+#### Demander l’approbation du déploiement
 
-![Soumettre l’extension à validation](./assets/deploy/submit-for-approval.png){align="center"}
+![Soumission de l’extension pour validation.](./assets/deploy/submit-for-approval.png){align="center"}
 
-1. Connectez-vous à [Console Adobe Developer](https://developer.adobe.com)
-1. Sélectionner __Console__
-1. Accédez à __Projets__
-1. Sélectionner le projet associé à l’extension
-1. Sélectionnez la __Production__ workspace
-1. Sélectionner __Soumettre à validation__
+1. Connectez-vous à l’[Adobe Developer Console](https://developer.adobe.com).
+1. Sélectionnez __Console__.
+1. Accédez à __Projets__.
+1. Sélectionnez le projet associé à l’extension.
+1. Sélectionnez l’espace de travail __Production__.
+1. Sélectionnez __Soumettre pour validation__.
 1. Remplissez et envoyez le formulaire, en mettant à jour les champs selon vos besoins.
 
-#### Approuver la requête de déploiement
+#### Approuvez la requête de déploiement.
 
-![Validation des extensions](./assets/deploy/adobe-exchange.png){align="center"}
+![Validation des extensions.](./assets/deploy/adobe-exchange.png){align="center"}
 
-1. Connectez-vous à [Adobe Exchange](https://exchange.adobe.com/)
-1. Accédez à __Gérer__ > __Applications en attente de révision__
-1. __Réviser__ l’application App Builder d’extension
-1. Si les modifications d’extension sont acceptables __Accepter__ la révision. Cette opération injecte immédiatement l’extension sur tous les services de création as a Cloud Service AEM dans l’organisation Adobe.
+1. Connectez-vous à [Adobe Exchange](https://exchange.adobe.com/).
+1. Accédez à __Gérer__ > __Applications en attente de révision__.
+1. __Révisez__ l’extension de l’application Créateur d’applications.
+1. Si les modifications d’extension sont acceptables, __Acceptez__ la révision. Cette opération injecte immédiatement l’extension sur tous les services de création d’AEM as a Cloud Service dans l’organisation Adobe.
 
-Une fois la demande d’extension approuvée, l’extension devient immédiatement principale dans les services d’auteur as a Cloud Service AEM.
+Une fois la demande d’extension approuvée, l’extension devient immédiatement active dans les services de création d’AEM as a Cloud Service.
 
-## Suppression d’une extension
+## Supprimer une extension
 
-![Suppression d’une extension](./assets/deploy/revoke.png)
+![Suppression d’une extension.](./assets/deploy/revoke.png)
 
-Pour supprimer une extension, révoquez-la (ou supprimez-la) d’Adobe Exchange. Lorsque l’extension est révoquée, elle est supprimée de tous les services de création as a Cloud Service AEM.
+Pour supprimer une extension, révoquez-la (ou supprimez-la) d’Adobe Exchange. Lorsque l’extension est révoquée, elle est supprimée de tous les services de création d’AEM as a Cloud Service.
 
-1. Connectez-vous à [Adobe Exchange](https://exchange.adobe.com/)
-1. Accédez à __Gérer__ > __Applications de créateur d’applications__
-1. __Révoquer__ l’extension à supprimer
+1. Connectez-vous à [Adobe Exchange](https://exchange.adobe.com/).
+1. Accédez à __Gérer__ > __Applications de créateur d’applications__.
+1. __Révoquez__ l’extension à supprimer.
