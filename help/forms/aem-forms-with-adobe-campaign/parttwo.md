@@ -1,34 +1,34 @@
 ---
-title: Création d’un profil Campaign sur l’envoi de formulaire adaptatif
-description: Cet article explique les étapes nécessaires à la création d’un profil dans Adobe Campaign Standard lors d’un envoi de formulaire adaptatif. Ce processus utilise un mécanisme d’envoi personnalisé pour gérer l’envoi du formulaire adaptatif.
+title: Créer un profil Campaign lors de l’envoi de formulaire adaptatif
+description: Cet article explique les étapes nécessaires à la création d’un profil dans Adobe Campaign Standard lors d’un envoi de formulaire adaptatif. Ce processus utilise un mécanisme d’envoi personnalisé pour gérer l’envoi du formulaire adaptatif.
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
 badgeIntegration: label="Intégration" type="positive"
-badgeVersions: label="AEM Forms 6.5" before-title="false"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: deef09d9-82ec-4e61-b7ee-e72d1cd4e9e0
 source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '370'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Création d’un profil Campaign sur l’envoi de formulaire adaptatif {#creating-campaign-profile-on-adaptive-form-submission}
+# Créer un profil Campaign lors de l’envoi de formulaire adaptatif {#creating-campaign-profile-on-adaptive-form-submission}
 
-Cet article explique les étapes nécessaires à la création d’un profil dans Adobe Campaign Standard lors d’un envoi de formulaire adaptatif. Ce processus utilise un mécanisme d’envoi personnalisé pour gérer l’envoi du formulaire adaptatif.
+Cet article explique les étapes nécessaires à la création d’un profil dans Adobe Campaign Standard lors d’un envoi de formulaire adaptatif. Ce processus utilise un mécanisme d’envoi personnalisé pour gérer l’envoi du formulaire adaptatif.
 
-Ce tutoriel décrit les étapes à suivre pour créer un profil Campaign lors de l’envoi d’un formulaire adaptatif. Pour réaliser ce cas pratique, procédez comme suit :
+Ce tutoriel décrit les étapes à suivre pour créer un profil Campaign lors de l’envoi d’un formulaire adaptatif. Pour réaliser ce cas d’utilisation, procédez comme suit :
 
-* Création d’un service AEM (CampaignService) pour créer un profil Adobe Campaign Standard à l’aide de l’API REST
+* Créer un service AEM (CampaignService) pour créer un profil Adobe Campaign Standard à l’aide de l’API REST
 * Créer une action d’envoi personnalisée pour gérer l’envoi de formulaire adaptatif
 * Appeler la méthode createProfile de CampaignService
 
-## Création d’un service AEM {#create-aem-service}
+## Créer un service AEM {#create-aem-service}
 
-Créez AEM service pour créer un profil Adobe Campaign. Ce service AEM récupérera les informations d’identification Adobe Campaign de la configuration OSGI. Une fois les informations d’identification de la campagne obtenues, un jeton d’accès est généré et l’appel HTTP Post du jeton d’accès est effectué pour créer le profil dans Adobe Campaign. Voici le code de création de profil .
+Créez un service AEM pour créer un profil Adobe Campaign. Ce service AEM récupérera les informations d’identification Adobe Campaign depuis la configuration OSGI. Une fois les informations d’identification de la campagne obtenues, un jeton d’accès est généré et l’appel HTTP Post du jeton d’accès est effectué pour créer le profil dans Adobe Campaign. Voici le code de création de profil :
 
 ```java
 package aemformwithcampaign.core.services.impl;
@@ -241,13 +241,13 @@ return null;
 }
 ```
 
-## Envoyer personnalisé {#custom-submit}
+## Envoi personnalisé {#custom-submit}
 
 Créez un gestionnaire d’envoi personnalisé pour gérer l’envoi du formulaire adaptatif. Dans ce gestionnaire d’envoi personnalisé, nous allons appeler la méthode createProfile de CampaignService. La méthode createProfile accepte un objet JSONObject qui représente le profil qui doit être créé.
 
-Pour en savoir plus sur le gestionnaire d’envoi personnalisé dans AEM Forms, suivez cette procédure [link](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md)
+Pour en savoir plus sur le gestionnaire d’envoi personnalisé dans AEM Forms, suivez ce [lien](/help/forms/adaptive-forms/custom-submit-aem-forms-article.md).
 
-Voici le code de l’envoi personnalisé.
+Voici le code d’envoi personnalisé :
 
 ```java
 aemforms.campaign.core.CampaignService addNewProfile = sling.getService(aemforms.campaign.core.CampaignService.class);
@@ -262,13 +262,13 @@ String pkey = addNewProfile.createProfile(profile);
 
 ## Tester la solution {#test-the-solution}
 
-Une fois que nous avons défini le service et l’action d’envoi personnalisée, nous sommes prêts à tester notre solution. Pour tester la solution, procédez comme suit :
+Une fois que nous avons défini le service et l’action d’envoi personnalisé, nous pouvons tester notre solution. Pour tester la solution, procédez comme suit :
 
 
-* [Assurez-vous d’avoir suivi les étapes décrites ici](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importation d’un formulaire adaptatif et d’un gestionnaire d’envoi personnalisé à l’aide du gestionnaire de package](assets/create-acs-profile-on-af-submission.zip).Ce package contient le formulaire adaptatif configuré pour l’envoi à une action d’envoi personnalisée.
-* Aperçu de la [formulaire](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled)
-* Renseignez tous les champs et envoyez
+* [Veillez à suivre les étapes décrites ici](aem-forms-with-campaign-standard-getting-started-tutorial.md).
+* [Importez un formulaire adaptatif et un gestionnaire d’envoi personnalisé à l’aide du gestionnaire de packages](assets/create-acs-profile-on-af-submission.zip). Ce package contient le formulaire adaptatif configuré pour l’envoi à une action d’envoi personnalisé.
+* Prévisualisez le [formulaire](http://localhost:4502/content/dam/formsanddocuments/createcampaignprofile/jcr:content?wcmmode=disabled).
+* Renseignez tous les champs et procédez à l’envoi.
 * Un nouveau profil est créé dans votre instance ACS.
 
 ## Étapes suivantes
