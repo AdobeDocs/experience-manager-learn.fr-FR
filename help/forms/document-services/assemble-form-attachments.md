@@ -1,6 +1,6 @@
 ---
-title: Assemblage de pièces jointes de formulaire
-description: Assemblage de pièces jointes de formulaire dans l’ordre spécifié
+title: Assembler des pièces jointes de formulaire
+description: Assembler des pièces jointes de formulaire dans l’ordre spécifié
 feature: Assembler
 version: 6.4,6.5
 kt: 6406
@@ -11,46 +11,46 @@ level: Experienced
 exl-id: a5df8780-b7ab-4b91-86f6-a24392752107
 last-substantial-update: 2021-07-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '633'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Assemblage de pièces jointes de formulaire
+# Assembler des pièces jointes de formulaire
 
-Cet article fournit des ressources pour assembler des pièces jointes de formulaire adaptatif dans un ordre spécifié. Les pièces jointes du formulaire doivent être au format pdf pour que cet exemple de code fonctionne. Voici le cas d’utilisation.
-L’utilisateur qui remplit un formulaire adaptatif joint un ou plusieurs documents pdf au formulaire.
-Lors de l’envoi du formulaire, assemblez les pièces jointes du formulaire pour générer un pdf. Vous pouvez spécifier l’ordre dans lequel les pièces jointes sont assemblées pour générer le pdf final.
+Cet article fournit des ressources pour assembler des pièces jointes de formulaire adaptatif dans un ordre spécifié. Les pièces jointes du formulaire doivent être au format PDF pour que cet exemple de code fonctionne. Voici le cas d’utilisation.
+L’utilisateur ou l’utilisatrice qui remplit un formulaire adaptatif joint un ou plusieurs documents PDF au formulaire.
+Lors de l’envoi du formulaire, assemblez les pièces jointes du formulaire pour générer un PDF. Vous pouvez spécifier l’ordre dans lequel les pièces jointes sont assemblées pour générer le PDF final.
 
 ## Créer un composant OSGi qui implémente l’interface WorkflowProcess
 
-Créez un composant OSGi qui implémente le [Interface com.adobe.granite.workflow.exec.WorkflowProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). Le code de ce composant peut être associé au composant d’étape de processus dans le workflow AEM. La méthode execute de l’interface com.adobe.granite.workflow.exec.WorkflowProcess est implémentée dans ce composant.
+Créez un composant OSGi qui implémente l’[interface com.adobe.granite.workflow.exec.WorkflowProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowProcess.html). Le code de ce composant peut être associé au composant d’étape de processus dans le workflow AEM. La méthode execute de l’interface com.adobe.granite.workflow.exec.WorkflowProcess est implémentée dans ce composant.
 
-Lorsqu’un formulaire adaptatif est envoyé pour déclencher un processus d’AEM, les données envoyées sont stockées dans le fichier spécifié sous le dossier de charge utile. Il s’agit, par exemple, du fichier de données envoyé. Nous devons assembler les pièces jointes spécifiées sous la balise &quot;idcard&quot; et &quot;bankstatement&quot;.
-![submit-data](assets/submitted-data.JPG).
+Lorsqu’un formulaire adaptatif est envoyé pour déclencher un workflow AEM, les données envoyées sont stockées dans le fichier spécifié sous le dossier de payload. Il s’agit, par exemple, du fichier de données envoyé. Nous devons assembler les pièces jointes spécifiées sous les balises idcard et bankstatements.
+![submitted-data](assets/submitted-data.JPG).
 
-### Obtention des noms de balise
+### Obtenir les noms de balise
 
-L’ordre des pièces jointes est spécifié en tant qu’arguments d’étape du processus dans le workflow, comme illustré dans la capture d’écran ci-dessous. Ici, nous assemblons les pièces jointes ajoutées à la carte d&#39;identité du champ suivies de relevés de compte.
+L’ordre des pièces jointes est spécifié en tant qu’arguments d’étape de processus dans le workflow, comme illustré dans la capture d’écran ci-dessous. Ici, nous assemblons les pièces jointes ajoutées au champ idcard suivi de bankstatements.
 
 ![process-step](assets/process-step.JPG)
 
-Le fragment de code suivant extrait les noms des pièces jointes des arguments de processus.
+L’extrait de code suivant extrait les noms des pièces jointes des arguments de processus.
 
 ```java
 String  []attachmentNames  = arg2.get("PROCESS_ARGS","string").toString().split(",");
 ```
 
-### Création de DDX à partir des noms de pièces jointes
+### Créer un document DDX à partir des noms de pièces jointes
 
-Nous devons ensuite créer [Document Description XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) document utilisé par le service Assembler pour assembler des documents. Voici le DDX créé à partir des arguments de processus. L’élément NoForms vous permet d’aplatir les documents basés sur XFA avant qu’ils ne soient assemblés. Notez que les éléments source du PDF sont dans le bon ordre, comme indiqué dans les arguments du processus.
+Nous devons ensuite créer un document [Description de document XML (DDX)](https://helpx.adobe.com/pdf/aem-forms/6-2/ddxRef.pdf) utilisé par le service Assembler pour assembler des documents. Voici le DDX qui a été créé à partir des arguments de processus. L’élément NoForms vous permet d’aplatir les documents basés sur XFA avant qu’ils ne soient assemblés. Notez que les éléments source du PDF sont dans le bon ordre, comme indiqué dans les arguments de processus.
 
 ![ddx-xml](assets/ddx.PNG)
 
-### Créer une carte des documents
+### Créer une carte de documents
 
-Nous créons ensuite une carte des documents avec le nom de la pièce jointe comme clé et la pièce jointe comme valeur. Query Builder a été utilisé pour interroger les pièces jointes sous le chemin de charge utile et créer la carte des documents. Cette carte du document avec le DDX est nécessaire pour que le service Assembler assemble le pdf final.
+Nous créons ensuite une carte de documents avec le nom de la pièce jointe comme clé et la pièce jointe comme valeur. Le service Query Builder a été utilisé pour interroger les pièces jointes sous le chemin de payload et créer la carte de documents. Cette carte de documents et le DDX sont nécessaires pour que le service Assembler assemble le PDF final.
 
 ```java
 public Map<String, Object> createMapOfDocuments(String payloadPath,WorkflowSession workflowSession )
@@ -85,10 +85,10 @@ return mapOfDocuments;
 }
 ```
 
-### Utilisation d’AssemblerService pour assembler les documents
+### Utiliser le service Assembler pour assembler les documents
 
-Une fois le DDX et le document map créés, l’étape suivante consiste à utiliser AssemblerService pour assembler les documents.
-Le code suivant assemble et renvoie le pdf assemblé.
+Une fois le DDX et la carte de documents créés, l’étape suivante consiste à utiliser le service Assembler pour assembler les documents.
+Le code suivant assemble et renvoie le PDF assemblé.
 
 ```java
 private com.adobe.aemfd.docmanager.Document assembleDocuments(Map<String, Object> mapOfDocuments, com.adobe.aemfd.docmanager.Document ddxDocument)
@@ -110,10 +110,10 @@ private com.adobe.aemfd.docmanager.Document assembleDocuments(Map<String, Object
 }
 ```
 
-### Enregistrez le fichier pdf assemblé sous le dossier de charge utile.
+### Enregistrez le fichier PDF assemblé sous le dossier de payload.
 
-La dernière étape consiste à enregistrer le fichier pdf assemblé sous le dossier de charge utile. Ce pdf est ensuite accessible dans les étapes suivantes du workflow pour un traitement ultérieur.
-Le fragment de code suivant a été utilisé pour enregistrer le fichier sous le dossier de charge utile.
+La dernière étape consiste à enregistrer le fichier PDF assemblé sous le dossier de payload. Ce PDF est ensuite accessible dans les étapes suivantes du workflow pour un traitement ultérieur.
+L’extrait de code suivant a été utilisé pour enregistrer le fichier sous le dossier de payload.
 
 ```java
 Session session = workflowSession.adaptTo(Session.class);
@@ -127,21 +127,21 @@ log.debug("Saved !!!!!!");
 session.save();
 ```
 
-Voici la structure de dossiers de charge utile après l’assemblage et le stockage des pièces jointes du formulaire.
+Voici la structure de dossiers de payload après l’assemblage et le stockage des pièces jointes du formulaire.
 
 ![payload-structure](assets/payload-structure.JPG)
 
-### Pour que cette fonctionnalité fonctionne sur votre serveur AEM
+### Pour que cette fonctionnalité soit valide sur votre serveur AEM :
 
-* Téléchargez la [Formulaire Assemblage de pièces jointes de formulaire](assets/assemble-form-attachments-af.zip) à votre système local.
-* Importez le formulaire à partir du[Forms Et Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments) page.
-* Télécharger [workflow](assets/assemble-form-attachments.zip) et importez dans AEM à l’aide de package manager.
-* Téléchargez la [lot personnalisé](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar)
-* Déployez et démarrez le lot à l’aide du [console web](http://localhost:4502/system/console/bundles)
-* Pointez votre navigateur sur [Formulaire AssembleAttachments](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled)
-* Ajoutez une pièce jointe dans le document d’identification et quelques documents pdf à la section des relevés de banque.
-* Envoyer le formulaire pour déclencher le workflow
-* Vérifiez le [dossier de charge utile dans le crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) pour le pdf assemblé
+* Téléchargez le [formulaire d’assemblage de pièces jointes de formulaire](assets/assemble-form-attachments-af.zip) dans votre système local.
+* Importez le formulaire à partir de la page [Formulaires et documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Téléchargez le [workflow](assets/assemble-form-attachments.zip) et importez-le dans AEM à l’aide du gestionnaire de packages.
+* Téléchargez le [lot personnalisé](assets/assembletaskattachments.assembletaskattachments.core-1.0-SNAPSHOT.jar).
+* Déployez et démarrez le lot à l’aide de la [console web](http://localhost:4502/system/console/bundles).
+* Dirigez votre navigateur sur le [formulaire AssembleAttachments](http://localhost:4502/content/dam/formsanddocuments/assembleattachments/jcr:content?wcmmode=disabled).
+* Ajoutez une pièce jointe dans le document d’identification et quelques documents PDF à la section des relevés de banque.
+* Envoyez le formulaire pour déclencher le workflow.
+* Vérifiez le [dossier de payload du workflow dans le crx](http://localhost:4502/crx/de/index.jsp#/var/fd/dashboard/payload) pour le PDF assemblé.
 
 >[!NOTE]
-> Si vous avez activé l’enregistreur pour le lot personnalisé, le DDX et le fichier assemblé sont écrits dans le dossier de votre installation AEM.
+> Si vous avez activé l’enregistreur pour le lot personnalisé, le DDX et le fichier assemblé sont écrits dans le dossier de votre installation AEM.
