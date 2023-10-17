@@ -40,7 +40,7 @@ Un `Custom Component` illustre les étapes nécessaires à la création d’un n
 
 ## Prérequis
 
-Passez en revue les outils obligatoires et les instructions pour configurer un [environnement de développement local](overview.md#local-dev-environment).
+Examinez les outils et les instructions nécessaires pour configurer un [environnement de développement local](overview.md#local-dev-environment).
 
 ### Obtenir le code
 
@@ -90,11 +90,11 @@ Un composant AEM est défini comme un nœud et des propriétés. Dans le projet,
        componentGroup="WKND SPA Angular - Content"/>
    ```
 
-   ![Créer une définition de composant personnalisé](assets/custom-component/aem-custom-component-definition.png)
+   ![Définition d’un composant personnalisé de création.](assets/custom-component/aem-custom-component-definition.png)
 
-   `jcr:primaryType="cq:Component"` - identifie que ce nœud est un composant AEM.
+   `jcr:primaryType="cq:Component"` : identifie que ce nœud est un composant AEM.
 
-   `jcr:title` est la valeur qui est affichée aux créateurs et créatrices de contenu et `componentGroup` détermine le regroupement des composants dans l’interface utilisateur de création.
+   `jcr:title` est la valeur affichée pour les auteurs et autrices de contenu et le `componentGroup` détermine le regroupement des composants dans l’interface utilisateur de création.
 
 4. Sous le dossier `custom-component`, créez un autre dossier appelé `_cq_dialog`.
 5. Sous le dossier `_cq_dialog`, créez un fichier appelé `.content.xml` et remplissez-le avec les éléments suivants :
@@ -236,7 +236,8 @@ Dans le contexte de l’éditeur de SPA, les modèles Sling exposent le contenu 
    Une « logique commerciale » supplémentaire est ajoutée pour renvoyer la valeur du message en majuscules. Cela nous permet de voir la différence entre la valeur brute stockée par la boîte de dialogue de création et la valeur exposée par le modèle Sling.
 
    >[!NOTE]
-   >Vous pouvez visualiser ici le [CustomComponentImpl.java terminé](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
+   >
+   Vous pouvez visualiser ici le [CustomComponentImpl.java terminé](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
 ## Mettre à jour le composant Angular
 
@@ -292,9 +293,9 @@ Ensuite, accédez à AEM pour vérifier les mises à jour et autoriser le `Custo
 2. Accédez au modèle de page SPA à l’adresse [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html).
 3. Mettez à jour la stratégie du conteneur de disposition pour ajouter le nouveau `Custom Component` en tant que composant autorisé :
 
-   ![Mise à jour de la stratégie de conteneur de disposition.](assets/custom-component/custom-component-allowed.png)
+   ![Mise à jour de la stratégie du conteneur de disposition.](assets/custom-component/custom-component-allowed.png)
 
-   Enregistrez les modifications apportées à la stratégie et observez le `Custom Component` en tant que composant autorisé :
+   Enregistrez les modifications apportées à la stratégie et observez le composant `Custom Component` en tant que composant autorisé :
 
    ![Composant personnalisé en tant que composant autorisé.](assets/custom-component/custom-component-allowed-layout-container.png)
 
