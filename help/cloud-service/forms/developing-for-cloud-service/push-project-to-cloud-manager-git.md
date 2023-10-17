@@ -1,6 +1,6 @@
 ---
-title: Push AEM project to cloud manager repository
-description: Poussez le référentiel git local vers le référentiel cloud manager
+title: Envoyer le projet AEM vers le référentiel Cloud Manager
+description: Envoyer le référentiel Git local vers le référentiel Cloud Manager
 solution: Experience Manager
 type: Documentation
 role: Developer
@@ -10,35 +10,36 @@ topic: Development
 kt: 8851
 exl-id: e61cea37-b931-49c6-9e5d-899628535480
 source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '147'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Push AEM project to cloud manager git repo
+# Envoyer le projet AEM vers le référentiel Git Cloud Manager
 
-Au cours de l’étape précédente, nous avons synchronisé notre projet AEM avec le Forms adaptatif et les thèmes créés dans l’instance AEM.
-Nous devons maintenant ajouter ces modifications à notre référentiel git local, puis envoyer le référentiel git local vers le référentiel git de cloud manager.
-Ouvrez une invite de commande et accédez à c:\cloudmanager\aem-banking-app Execute the following commands
+Au cours de l’étape précédente, nous avons synchronisé notre projet AEM avec les formulaires adaptatifs et les thèmes créés dans l’instance AEM.
+Nous devons maintenant ajouter ces modifications à notre référentiel Git local, puis envoyer le référentiel Git local vers le référentiel Git Cloud Manager.
+Ouvrez une invite de commande et accédez à c:\cloudmanager\aem-banking-app.
+Exécutez les commandes suivantes :
 
 ```
 git add .
 ```
 
-Les nouveaux fichiers sont alors ajoutés à la branche intermédiaire du référentiel git local.
+Les nouveaux fichiers sont alors ajoutés à la branche d’évaluation du référentiel Git local.
 
 ```
 git commit -m "My First AF"
 ```
 
-Cela valide les fichiers à la branche principale de notre référentiel git local.
+Cela valide les fichiers à la branche principale de notre référentiel Git local.
 
 ```
 git push -f bankingapp master:"MyFirstAF"
 ```
 
-Dans la commande ci-dessus, nous mettons en oeuvre la branche principale de notre référentiel git local vers la branche MyFirstAF du référentiel de gestion de cloud identifié par le nom convivial de l’application bancaire.
+Dans la commande ci-dessus, nous envoyons la branche principale de notre référentiel Git local vers la branche MyFirstAF du référentiel Cloud Manager identifié par le nom convivial de l’application bancaire.
 
 ## Étapes suivantes
 
