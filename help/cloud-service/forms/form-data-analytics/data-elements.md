@@ -1,6 +1,6 @@
 ---
-title: Rapport sur les champs de données de formulaire envoyés à l’aide d’Adobe Analytics
-description: Intégration d’AEM Forms CS à Adobe Analytics pour créer des rapports sur les champs de données de formulaire
+title: Créer un rapport sur les champs de données de formulaire envoyés à l’aide d’Adobe Analytics
+description: Intégrer AEM Forms CS à Adobe Analytics pour créer des rapports sur les champs de données de formulaire
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -13,24 +13,24 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
 exl-id: b9dc505d-72c8-4b6a-974b-fc619ff7c256
 source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '138'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
-# Création d’éléments de données
+# Créer des éléments de données
 
-Dans la propriété Tags, nous avons ajouté deux nouveaux éléments de données (applicantStateOfReference et validationError).
+Dans la propriété des balises, nous avons ajouté deux nouveaux éléments de données (ApplicantsStateOfResidence et validationError).
 
-![formulaire adaptatif](assets/data_elements.png)
+![adaptive-form](assets/data_elements.png)
 
-## ApplicantStateOfRésidence
+## ApplicantStateOfResidence
 
-Le **ApplicantStateOfRésidence** l’élément de données a été configuré en sélectionnant **Core** dans la liste déroulante d’extension et **Code personnalisé** pour le type d’élément de données, comme illustré dans la capture d’écran ci-dessous.
-![candidat-state-résidence](assets/applicantstateofresidence.png)
+L’élément de données **ApplicantStateOfResidence** a été configuré en sélectionnant **Core** dans la liste déroulante d’extension et **Code personnalisé** pour le type d’élément de données, comme illustré dans la capture d’écran ci-dessous.
+![applicant-state-residence](assets/applicantstateofresidence.png)
 
-Le code personnalisé suivant a été utilisé pour capturer la valeur de la variable **_state_** champ de formulaire adaptatif.
+Le code personnalisé suivant a été utilisé pour capturer la valeur du champ de formulaire adaptatif **_state_**.
 
 ```javascript
 // use the GuideBridge API to access adaptive form elements
@@ -42,11 +42,11 @@ return ApplicantsStateOfResidence;
 
 ## validationError
 
-Le **ValidationError** l’élément de données a été configuré en sélectionnant **Core** dans la liste déroulante d’extension et **Code personnalisé** pour le type d’élément de données, comme illustré dans la capture d’écran ci-dessous.
+L’élément de données **ValidationError** a été configuré en sélectionnant **Core** dans la liste déroulante d’extension et **Code personnalisé** pour le type d’élément de données, comme illustré dans la capture d’écran ci-dessous.
 
 ![validation-error](assets/validation-error.png)
 
-Le code personnalisé suivant a été écrit pour définir la variable `validationError` valeur de l’élément de données.
+Le code personnalisé suivant a été écrit pour définir la valeur de l’élément de données `validationError`.
 
 ```javascript
 var validationError = "";
@@ -72,4 +72,4 @@ return validationError;
 
 ## Étapes suivantes
 
-[Création de règles](./rules.md)
+[Créer des règles](./rules.md)
