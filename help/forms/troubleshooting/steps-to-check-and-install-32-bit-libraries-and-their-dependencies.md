@@ -1,6 +1,6 @@
 ---
-title: Étapes pour vérifier les redistribuables Microsoft Visual C++ 32 bits requis
-description: Installez les redistribuables Microsoft Visual C++ 32 bits.
+title: Procédure de vérification des redistribuables Microsoft Visual C++ 32 bits requis
+description: Installer les redistribuables Microsoft Visual C++ 32 bits.
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -10,14 +10,14 @@ feature: Operations
 index: y
 exl-id: de4315b4-9e9b-4c5a-8c04-2c225a8b9f73
 source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '45'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Procédure de vérification et d’installation des redistribuables Microsoft Visual C++ 32 bits requis
+# Procédure de vérification et d’installation des redistribuables Microsoft Visual C++ 32 bits requis
 
-*Cette vidéo décrit le processus de vérification et d’installation des redistribuables Microsoft Visual C++ 32 bits requis.*
+*Cette vidéo décrit le processus de vérification et d’installation des redistribuables Microsoft Visual C++ 32 bits requis.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335520?quality=12&learn=on)
