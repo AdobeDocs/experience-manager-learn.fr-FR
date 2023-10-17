@@ -1,6 +1,6 @@
 ---
-title: Améliorations de la traduction dans AEM
-description: AEM structure de traduction robuste permet AEM contenu d’être traduit en toute simplicité par les fournisseurs de traduction pris en charge. Découvrez les dernières améliorations.
+title: Améliorations apportées à la traduction dans AEM
+description: Le framework de traduction robuste d’AEM permet aux fournisseurs de traduction pris en charge de traduire du contenu AEM en toute simplicité. Découvrez les dernières améliorations apportées.
 version: 6.4, 6.5
 topic: Localization
 feature: Multi Site Manager, Language Copy
@@ -8,38 +8,38 @@ role: User
 level: Beginner
 exl-id: 21633308-ffe4-4023-affe-59269504da69
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '334'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# Améliorations de la traduction avec le gestionnaire multisite {#translation-enhancements}
+# Améliorations de la traduction avec Multi-Site Manager {#translation-enhancements}
 
-AEM structure de traduction robuste permet AEM contenu d’être traduit en toute simplicité par les fournisseurs de traduction pris en charge.
+Le framework de traduction robuste d’AEM permet aux fournisseurs de traduction pris en charge de traduire du contenu AEM en toute simplicité.
 
-## Améliorations apportées à la traduction dans AEM 6.5
+## Améliorations apportées à la traduction dans AEM 6.5
 
 >[!VIDEO](https://video.tv.adobe.com/v/27405?quality=12&learn=on)
 
-AEM version 6.5 de la traduction comprend :
+Les améliorations apportées à la traduction d’AEM 6.5 incluent les éléments suivants :
 
-**Approbation automatique des tâches de traduction**: L’indicateur d’approbation dans la tâche de traduction est une propriété binaire. Il ne génère pas ou ne s’intègre pas aux workflows de révision et d’approbation prêts à l’emploi. Pour réduire au minimum le nombre d’étapes d’une tâche de traduction, il est défini par défaut sur &quot;approbation automatique&quot; dans [!UICONTROL Propriétés avancées] d’un projet de traduction. Si votre entreprise nécessite l’approbation d’une tâche de traduction, vous pouvez décocher l’option &quot;Approbation automatique&quot; dans [!UICONTROL Propriétés avancées] d’un projet de traduction.
+**Approbation automatique des tâches de traduction** : l’indicateur d’approbation de la tâche de traduction est une propriété binaire. Il ne génère pas de workflows de révision et d’approbation prêts à l’emploi et ne s’intègre pas à ces derniers. Pour réduire au minimum le nombre d’étapes d’une tâche de traduction, l’option « Approbation automatique » est choisie par défaut dans les [!UICONTROL Propriétés avancées] des projets de traduction. Si votre organisation nécessite l’approbation d’une tâche de traduction, vous pouvez décocher l’option « Approbation automatique » dans les [!UICONTROL Propriétés avancées] des projets de traduction.
 
-**Suppression automatique des lancements de traduction**: Plutôt que de supprimer manuellement les lancements de traduction dans l’administrateur Lancements, il est désormais possible de supprimer automatiquement les lancements de traduction une fois qu’ils ont été promus.
+**Suppression automatique des lancements de traduction** : au lieu de supprimer manuellement et après coup les lancements de traduction dans l’administration des lancements, il est désormais possible de les supprimer automatiquement après leur conversion.
 
-**Exportation d’objets de traduction au format JSON**: AEM version 6.4 et antérieure prennent en charge les formats XML et XLIFF des objets de traduction. Vous pouvez maintenant configurer le format d’exportation au format JSON à l’aide de la console de vos systèmes. [!UICONTROL Configuration Manager]. Rechercher [!UICONTROL Configuration de la plateforme de traduction], puis vous pouvez sélectionner le format d’exportation au format JSON.
+**Export d’objets de traduction au format JSON** : AEM 6.4 et les versions antérieures prennent en charge les formats XML et XLIFF des objets de traduction. Vous pouvez maintenant configurer le format d’export au format JSON à l’aide de votre console système [!UICONTROL Config Manager]. Recherchez [!UICONTROL Configuration de la plateforme de traduction], puis sélectionnez le format d’export JSON.
 
-**Mise à jour du contenu AEM traduit dans la mémoire de traduction (TMS)**: l’auteur local qui n’a pas accès à AEM peut apporter des mises à jour au contenu traduit, qui a déjà été ingéré dans AEM, directement dans la gestion dynamique des balises (mémoire de traduction, dans TMS), et mettre à jour les traductions dans l’ en renvoyant la tâche de traduction de TMS à.
+**Mise à jour du contenu AEM traduit dans la mémoire de traduction (TMS)** : la personne locale chargée de la création qui n’a pas accès à AEM peut apporter des mises à jour au contenu traduit déjà ingéré dans AEM, c’est-à-dire directement dans la TM (mémoire de traduction, dans TMS), puis mettre à jour les traductions dans AEM en renvoyant la tâche de traduction de TMS vers AEM
 
-## Améliorations de la traduction dans AEM 6.4
+## Améliorations apportées à la traduction dans AEM 6.4
 
 >[!VIDEO](https://video.tv.adobe.com/v/21309?quality=12&learn=on)
 
-Les auteurs peuvent désormais créer rapidement et facilement des projets de traduction multilingue directement depuis l’administrateur Sites ou l’administrateur Projets, configurer ces projets pour promouvoir automatiquement les lancements et même définir des calendriers d’automatisation.
+Les auteurs et autrices peuvent désormais créer rapidement et facilement des projets de traduction multilingues directement depuis l’administration Sites ou l’administration Projets, configurer ces projets pour convertir automatiquement les lancements et même définir des calendriers d’automatisation.
 
 ## Ressources supplémentaires {#additional-resources}
 
 * [Traduction de contenu pour les sites multilingues](https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/translation.html)
-* [https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html)
-* [Bonnes pratiques de traduction](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-bp.html)
+* [https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-manage.html?lang=fr](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-manage.html?lang=fr)
+* [Bonnes pratiques de traduction](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-bp.html?lang=fr)
