@@ -1,6 +1,6 @@
 ---
-title: Extraire le noeud du xml de données envoyées
-description: Étape de processus personnalisée pour ajouter au système de fichiers le document d’écriture résidant sous le dossier de charge utile
+title: Extraire le nœud du XML de données envoyé
+description: Il s’agit d’une étape de processus personnalisée permettant d’écrire sur le système de fichiers le document résidant sous le dossier de payload.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -10,25 +10,25 @@ kt: kt-9860
 exl-id: 5282034f-275a-479d-aacb-fc5387da793d
 last-substantial-update: 2020-07-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '179'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Extraire le noeud du xml de données envoyées
+# Extraire le nœud du XML de données envoyé
 
-Cette étape de processus personnalisée consiste à créer un document XML en extrayant le noeud d’un autre document XML. Vous devez l’utiliser lorsque vous souhaitez fusionner les données envoyées avec le modèle xdp pour générer le fichier pdf. Par exemple, lorsque vous envoyez un formulaire adaptatif, les données que vous devez fusionner avec le modèle xdp se trouvent dans l’élément de données . Dans ce cas, vous devez créer un autre document XML en extrayant l’élément de données approprié.
+Cette étape de processus personnalisée consiste à créer un document XML en extrayant le nœud d’un autre document XML. Suivez cette étape lorsque vous souhaitez fusionner les données soumises avec le modèle XDP pour générer le fichier PDF. Par exemple, lorsque vous soumettez un formulaire adaptatif, les données que vous devez fusionner avec le modèle XDP se trouvent dans l’élément de données. Dans ce cas, vous devez créer un autre document XML en en procédant à l’extraction de l’élément de données approprié.
 
 La capture d’écran suivante montre les arguments que vous devez transmettre à l’étape de processus personnalisée.
 ![process-step](assets/create-xml-process-step.png)
-Voici les paramètres :
-* Data.xml : fichier xml à partir duquel vous souhaitez extraire le noeud.
-* datatomerge.xml : nouveau fichier xml créé avec le noeud extrait
-* /afData/afUnboundData/data - Noeud à extraire
+Voici les paramètres :
+* Data.xml : le fichier XML à partir duquel vous souhaitez extraire le nœud.
+* datatomerge.xml : le nouveau fichier XML créé avec le nœud extrait.
+* /afData/afUnboundData/data : le nœud à extraire.
 
 
-La capture d’écran suivante montre le fichier datamerge.xml en cours de création sous le dossier de charge utile.
-![create-xml](assets/create-xml.png)
+La capture d’écran suivante montre le fichier datamerge.xml en cours de création sous le dossier de payload.
+![create-xml](assets/create-xml.png).
 
-[Le lot personnalisé peut être téléchargé ici](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)
+[Le lot personnalisé peut être téléchargé ici.](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar)
