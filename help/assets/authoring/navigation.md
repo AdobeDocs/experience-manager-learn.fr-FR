@@ -1,6 +1,6 @@
 ---
 title: Navigation
-description: Explorez les principes de base de la navigation dans AEM Assets.
+description: Explorez les principes de base de la navigation dans AEM Assets.
 feature: Asset Management
 role: User
 level: Beginner
@@ -11,14 +11,14 @@ topic: Content Management
 last-substantial-update: 2021-09-23T00:00:00Z
 exl-id: eba697fc-02ca-4ac8-82d5-7b230ef4d45b
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '16'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
 # Navigation
 
-Explorez les principes de base de la navigation dans AEM Assets.
+Explorez les principes de base de la navigation dans AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32046?quality=12&learn=on)
