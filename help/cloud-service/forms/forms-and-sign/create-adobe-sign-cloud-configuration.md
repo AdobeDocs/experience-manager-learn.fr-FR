@@ -1,6 +1,6 @@
 ---
-title: Création d’un Cloud Service de configuration Acrobat Sign Cloud
-description: Créez l’intégration d’AEM Forms et d’Acrobat Sign à l’aide de la configuration des services cloud.
+title: Créer un service cloud de configuration cloud Acrobat Sign
+description: Créez l’intégration d’AEM Forms et d’Acrobat Sign à l’aide de la configuration des services cloud.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -14,27 +14,27 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
 exl-id: a55773a5-0486-413f-ada6-bb589315f0b1
 source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '166'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
-# Créer une configuration cloud Acrobat Sign
+# Créer une configuration cloud Acrobat Sign
 
 La configuration des services cloud dans AEM vous permet de créer une intégration entre AEM et d’autres applications cloud.
 
-La vidéo suivante décrit les étapes nécessaires à la création d’une configuration de services cloud pour intégrer AEM à Acrobat Sign
+La vidéo suivante décrit les étapes nécessaires à la création d’une configuration de services cloud pour intégrer AEM à Acrobat Sign.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332437?quality=12&learn=on)
 
 ## Résolution des problèmes
 
-Si vous obtenez une erreur lors de la configuration de la configuration du cloud Abobe Sign, les étapes suivantes peuvent être entreprises pour vous empêcher de tirer le meilleur parti.
-* Assurez-vous que l’URL de redirection spécifiée dans l’application API Acrobat Sign est au format suivant
-&lt;your instance=&quot;&quot; name=&quot;&quot;>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
-Par exemple : https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS est le nom du conteneur qui va contenir la configuration de cloud.
-* Assurez-vous que l’URL oAuth est correcte
-* Vérifiez votre ID de client et votre secret de client.
-* Essayer le mode de fenêtre incognito
+Si vous obtenez une erreur lors de la configuration de la configuration cloud d’Abobe Sign, les étapes suivantes peuvent vous permettre de résoudre le problème.
+* Assurez-vous que l’URL de redirection spécifiée dans l’application d’API Acrobat Sign est au format suivant
+&lt;your instance name>/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/&lt;container>.
+Par exemple : https://author-p24107-e32034.adobeaemcloud.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/FormsCS. FormsCS est le nom du conteneur qui va contenir la configuration cloud.
+* Vérifiez que l’URL oAuth est correcte.
+* Vérifiez votre ID client et votre secret client.
+* Essayer le mode fenêtre incognito
 
