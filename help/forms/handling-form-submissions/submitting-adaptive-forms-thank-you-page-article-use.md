@@ -1,7 +1,7 @@
 ---
-title: Envoi À La Page De Remerciement
+title: Rediriger vers la page de remerciement lors de l’envoi du formulaire
 seo-title: Submitting To Thank You Page
-description: Affichage d’une page de remerciement sur l’envoi d’un formulaire adaptatif
+description: Affichez une page de remerciement lors de l’envoi d’un formulaire adaptatif.
 seo-description: Display a thank you page on submitting Adaptive Form
 uuid: ec695b87-083a-47f6-92ac-c9a6dc2b85fb
 feature: Adaptive Forms
@@ -17,31 +17,31 @@ level: Beginner
 exl-id: 85e1b450-39c0-4bb8-be5d-d7f50b102f3d
 last-substantial-update: 2020-07-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '260'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
-# Envoi À La Page De Remerciement {#submitting-to-thank-you-page}
+# Rediriger vers la page de remerciement lors de l’envoi du formulaire {#submitting-to-thank-you-page}
 
-L’option Envoyer vers le point de fin REST transmet les données renseignées dans le formulaire à une page de confirmation configurée dans le cadre de la demande de GET HTTP. Vous pouvez ajouter le nom des champs à la requête. Le format de la requête est le suivant :
+L’option Envoyer vers le point d’entrée REST transmet les données renseignées dans le formulaire à une page de confirmation configurée dans le cadre de la requête HTTP GET. Vous pouvez ajouter le nom des champs à demander. Le format de la requête est :
 
-\{fieldName\} = \{parameterName\}. Par exemple, submitterName est le nom d’un champ de formulaire adaptatif et submitter le nom du paramètre. Dans la page de remerciement, vous pouvez accéder au paramètre submitter à l’aide de request.getParameter(&quot;submitter&quot;) pour obtenir la valeur du champ du nom de l’expéditeur.
+\{fieldName\} = \{parameterName\}. Par exemple, « submitterName » est le nom d’un champ de formulaire adaptatif et « submitter » le nom du paramètre. Sur la page de remerciement, transmettez la propriété request.getParameter(&quot;submitter&quot;) pour accéder au paramètre « submitter » et ainsi obtenir la valeur du champ du nom de la personne qui a envoyé le formulaire.
 
 `submitterName=submitter`
 
-Dans la capture d’écran ci-dessous, nous envoyons le formulaire adaptatif pour vous remercier, sur la page /content/thankyou. À cette page de remerciement, nous transmettons 3 attributs de requête contenant les valeurs des champs de formulaire.
+Dans la copie d’écran ci-dessous, le formulaire adaptatif est envoyé à la page de remerciement, située sous /content/thankyou. Trois attributs de requête, contenant les valeurs des champs de formulaire, sont transmis à cette page de remerciement.
 
-![Page de remerciement](assets/thankyoupage.gif)
+![Page de remerciement.](assets/thankyoupage.gif)
 
-Vous pouvez également envoyer vers le point de terminaison externe via POST. Pour ce faire, il vous suffit de cocher la case &quot;Activer la requête post&quot; et de fournir l’URL du point de terminaison externe. Lorsque vous envoyez votre formulaire, vous obtenez une page de remerciement et le point de terminaison du POST est appelé simultanément.
+Vous pouvez également envoyer le formulaire vers le point d’entrée externe via une requête POST. Pour ce faire, il vous suffit de cocher la case « Activer la requête POST » et d’indiquer l’URL du point d’entrée externe. Lorsque vous envoyez le formulaire, une page de remerciement s’affiche et le point d’entrée POST est appelé simultanément.
 
-![Configuration de capture](assets/capture.gif)
+![Configuration de la capture](assets/capture.gif).
 
-Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-dessous :
+Pour tester cette fonctionnalité sur votre serveur, procédez comme suit :
 
-* Importez la variable [fichier de ressources associé à cet article dans AEM à l’aide du gestionnaire de modules](assets/submittingtorestendpoint.zip)
-* Pointez votre navigateur sur la [Formulaire de demande d’activation du délai](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled)
-* Renseignez le champ requis et envoyez le formulaire
-* Vous devriez obtenir la page de remerciement avec vos informations renseignées sur la page.
+* Importez le [fichier de ressources associé à cet article dans AEM à l’aide du gestionnaire de packages](assets/submittingtorestendpoint.zip).
+* Pointez votre navigateur sur le [Formulaire de demande de congés](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
+* Renseignez le champ obligatoire et envoyez le formulaire.
+* La page de remerciement s’affiche et contient les informations que vous avez renseignées.
