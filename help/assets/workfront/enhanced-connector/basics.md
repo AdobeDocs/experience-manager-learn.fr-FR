@@ -1,5 +1,5 @@
 ---
-title: Principes de base du connecteur amélioré de Workfront
+title: Principes de base du connecteur amélioré Workfront
 description: Découvrez les principes de base du connecteur amélioré Adobe Workfront et Experience Manager Assets.
 version: Cloud Service
 topic: Content Management, Integrations
@@ -10,23 +10,23 @@ kt: 9124
 thumbnail: 337575.jpeg
 last-substantial-update: 2022-09-02T00:00:00Z
 badgeIntegration: label="Intégration" type="positive"
-badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
+badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: fe9d1305-7add-4434-a4a9-16e0fb805574
 source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '62'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
-# Notions de base sur les connecteurs améliorés Workfront
+# Principes de base du connecteur amélioré Workfront
 
-Découvrez les principes de base du connecteur Adobe Workfront et Experience Manager Assets amélioré, notamment comment :
+Découvrez les principes de base du connecteur amélioré Adobe Workfront et Experience Manager Assets, et apprenez notamment à :
 
-+ Lier des ressources et des dossiers
-+ Définition des mappages de métadonnées
-+ Envoi de ressources à AEM
-+ Version des ressources
-+ Publication automatique de ressources
++ lier des ressources et des dossiers ;
++ définir des mappages de métadonnées ;
++ envoyer des ressources vers AEM ;
++ créer des versions des ressources ;
++ publier automatiquement des ressources
 
 >[!VIDEO](https://video.tv.adobe.com/v/337575?quality=12&learn=on)
