@@ -10,9 +10,9 @@ kt: 10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
 source-git-commit: 31948793786a2c430533d433ae2b9df149ec5fc0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '454'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -203,9 +203,9 @@ De nouveaux hooks `useEffect` peuvent être créés pour chaque requête persist
 
 AEM prend en charge les requêtes GraphQL définies par le client, mais il est recommandé d’utiliser les [requêtes GraphQL persistantes](#persisted-graphql-queries) dans AEM.
 
-## Webpack 5+
+## Webpack 5 et versions ultérieures
 
-Le SDK JS AEM sans affichage comporte des dépendances sur `util` qui n’est pas inclus par défaut dans Webpack 5+. Si vous utilisez Webpack 5+ et recevez l’erreur suivante :
+Le SDK JS AEM Headless a des dépendances sur `util`, ce qui n’est pas inclus par défaut dans Webpack 5 et versions ultérieures. Si vous utilisez Webpack 5 ou une version ultérieure et recevez l’erreur suivante :
 
 ```
 Compiled with problems:
@@ -222,7 +222,7 @@ If you don't want to include a polyfill, you can use an empty module like this:
     resolve.fallback: { "util": false }
 ```
 
-Ajoutez ce qui suit : `devDependencies` à `package.json` fichier :
+Ajoutez les éléments `devDependencies` suivants au fichier `package.json` :
 
 ```json
   "devDependencies": {
