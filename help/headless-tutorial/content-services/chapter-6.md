@@ -7,7 +7,7 @@ role: Developer
 level: Beginner
 exl-id: b33d1509-531d-40c3-9b26-1d18c8d86a97
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '465'
 ht-degree: 100%
 
@@ -62,6 +62,7 @@ Comme AEM Content Services repose sur des éléments de configuration (modèle
 1. Dans un nouveau navigateur web, vérifiez la déconnexion de l’instance de publication AEM, puis demandez les URL suivantes (en remplaçant `http://localhost:4503` par l’hôte et le port sur lesquels l’instance de publication AEM est exécutée).
 
    * [http://localhost:4503/content/wknd-mobile/en/api/events.model.json](http://localhost:4503/content/wknd-mobile/en/api/events.model.tidy.json)
+
    Ces requêtes doivent renvoyer la même réponse JSON que celle obtenue lors de la révision des points d’entrée de l’instance de création AEM correspondante. Dans le cas contraire, vérifiez que toutes les publications ont réussi (vérifiez les files d’attente de réplication), que le package [!DNL WKND Mobile] `ui.apps` est installé sur l’instance de publication AEM et consultez le fichier `error.log` de l’instance de publication AEM.
 
 ## Étape suivante
