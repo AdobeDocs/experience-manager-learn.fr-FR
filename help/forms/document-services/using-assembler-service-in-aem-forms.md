@@ -1,6 +1,6 @@
 ---
-title: Utilisation du service Assembler dans AEM Forms
-description: Utilisation du service Assembler dans AEM Forms pour assembler plusieurs fichiers pdf
+title: Utiliser le service Assembler dans AEM Forms
+description: Utiliser le service Assembler dans AEM Forms pour assembler plusieurs fichiers PDF
 feature: Assembler
 version: 6.4,6.5
 topic: Development
@@ -9,15 +9,15 @@ level: Experienced
 exl-id: 18da12ea-b1ea-48e4-979e-3cb59584dfbd
 last-substantial-update: 2020-07-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '207'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# Utilisation du service Assembler dans AEM Forms{#using-assembler-service-in-aem-forms}
+# Utiliser le service Assembler dans AEM Forms{#using-assembler-service-in-aem-forms}
 
-Cet article vous fournit les ressources qui vous permettent de faire glisser et de déposer plusieurs fichiers de PDF dans le navigateur et d’enregistrer le fichier pdf assemblé dans votre système de fichiers. Voici le code du servlet qui assemble les fichiers pdf téléchargés à l’aide du navigateur.
+Cet article vous fournit les ressources pour illuster la fonctionalité de faire glisser-déposer plusieurs fichiers PDF dans le navigateur et d’enregistrer le fichier PDF assemblé dans votre système de fichiers. Voici le code du servlet qui assemble les fichiers PDF téléchargés à l’aide du navigateur.
 
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
@@ -100,27 +100,26 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-Pour que cette fonctionnalité fonctionne sur votre serveur AEM
+Pour que cette fonctionnalité soit valide sur votre serveur AEM :
 
-* Téléchargez la [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) à votre système local.
-* Téléchargez et installez le module à l’aide de la fonction [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp)
-* Télécharger[Offre groupée de services de document personnalisés](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* Télécharger [Développement avec le bundle d’utilisateurs du service](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* Déployez et démarrez les lots à l’aide du [console web felix](http://localhost:4502/system/console/bundles)
-* Pointez votre navigateur sur [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html)
-* Glisser-déposer quelques fichiers de PDF
+* Téléchargez [AssembleMultipleFiles.zip](assets/assemble-multiple-files.zip) dans votre système local.
+* Chargez et installez le package à l’aide du [gestionnaire de packages](http://localhost:4502/crx/packmgr/index.jsp).
+* Téléchargez le [lot Document Services personnalisé](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).
+* Téléchargez le [lot Developing with Service User](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* Déployez et démarrez les lots à l’aide de la [console web felix](http://localhost:4502/system/console/bundles).
+* Pointez votre navigateur sur [AssemblePdfs.html](http://localhost:4502/content/DocumentServices/AssemblePdfs.html).
+* Faites glisser et déposez quelques fichiers PDF.
 
 >[!NOTE]
 >
->Assurez-vous que votre installation d’AEM Forms est terminée. Tous vos lots doivent être en principal état.
+>Assurez-vous que votre installation d’AEM Forms est terminée. Tous vos lots doivent être à l’état actif.
 >
->Assurez-vous d’avoir ajouté : déléguez le démarrage des bibliothèques RSA et BouncyCastle comme indiqué dans cette section. [Installation d’AEM Forms](https://helpx.adobe.com/aem-forms/6-3/installing-configuring-aem-forms-osgi.html)
+>Assurez-vous d’avoir ajouté les bibliothèques Boot delegate RSA et BouncyCastle comme indiqué dans la section [Installation d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/6-3/installing-configuring-aem-forms-osgi.html).
 >
 >**Avertissements pour cette démonstration**
 >
-> * Le code ne gère pas les documents de PDF basés sur XFA.
+> * Le code ne gère pas les documents PDF basés sur XFA.
 >
-> * Veillez à ne faire glisser que des fichiers PDF.
+> * Veillez à ne faire glisser et déposer que des fichiers PDF.
 >
 >
-
