@@ -1,38 +1,38 @@
 ---
-title: Débogage des outils de Dispatcher
-description: Les outils de Dispatcher fournissent un environnement de serveur web Apache en conteneur qui peut être utilisé pour simuler localement le Dispatcher du service de publication AEM en tant que Cloud Services. Le débogage des journaux et du contenu du cache des outils de Dispatcher peut s’avérer essentiel pour s’assurer que l’application AEM de bout en bout et la prise en charge des configurations du cache et de sécurité sont correctes.
+title: Déboguer les outils du Dispatcher
+description: Les outils du Dispatcher fournissent un environnement de serveur web Apache en conteneur qui peut être utilisé pour simuler localement le Dispatcher du service de publication AEM as a Cloud Service. Le débogage des journaux et du contenu du cache des outils du Dispatcher peut s’avérer essentiel pour s’assurer que l’application AEM de bout en bout et la prise en charge des configurations du cache et de sécurité sont correctes.
 feature: Dispatcher
 kt: 5918
 topic: Development
 role: Developer
 level: Beginner, Intermediate
-source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
-workflow-type: tm+mt
+exl-id: f0adf7a6-c7c2-449a-9fa5-402c54b812e5
+source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
+workflow-type: ht
 source-wordcount: '230'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Déboguer les outils du Dispatcher
 
-# Débogage des outils de Dispatcher
+Les outils du Dispatcher fournissent un environnement de serveur web Apache en conteneur qui peut être utilisé pour simuler localement le Dispatcher du service de publication AEM as a Cloud Service.
 
-Les outils de Dispatcher fournissent un environnement de serveur web Apache en conteneur qui peut être utilisé pour simuler localement le Dispatcher du service de publication AEM en tant que Cloud Services.
-
-Le débogage des journaux et du contenu du cache des outils de Dispatcher peut s’avérer essentiel pour s’assurer que l’application AEM de bout en bout et la prise en charge des configurations du cache et de sécurité sont correctes.
+Le débogage des journaux et du contenu du cache des outils du Dispatcher peut s’avérer essentiel pour s’assurer que l’application AEM de bout en bout et la prise en charge des configurations du cache et de sécurité sont correctes.
 
 >[!NOTE]
 >
->Comme les outils Dispatcher sont basés sur des conteneurs, les journaux précédents et le contenu du cache sont détruits chaque fois qu’ils sont redémarrés.
+>Comme les outils du Dispatcher sont basés sur des conteneurs, les journaux précédents et le contenu du cache sont détruits chaque fois qu’ils sont redémarrés.
 
-## Journaux des outils Dispatcher
+## Journaux des outils du Dispatcher
 
-Les journaux des outils de Dispatcher sont disponibles via la commande `stdout` ou `bin/docker_run`, ou avec plus de détails, dans le conteneur Docker à l’adresse `/etc/https/logs`.
+Les journaux des outils du Dispatcher sont disponibles via `stdout` ou la commande `bin/docker_run` ou, avec plus de détails, disponibles dans le conteneur Docker à l’adresse `/etc/https/logs`.
 
-Voir [Journaux de Dispatcher](./logs.md#dispatcher-logs) pour obtenir des instructions sur la manière d’accéder directement aux journaux du conteneur Docker des outils de Dispatcher.
+Voir [journaux du Dispatcher](./logs.md#dispatcher-logs) pour obtenir des instructions sur la manière d’accéder directement aux journaux du conteneur Docker des outils du Dispatcher.
 
-## Cache des outils de Dispatcher
+## Cache des outils du Dispatcher
 
-### Accès aux journaux dans le conteneur Docker
+### Accéder aux journaux dans le conteneur Docker
 
 Le cache de Dispatcher peut être directement accessible dans le conteneur Docker à l’adresse ` /mnt/var/www/html`.
 
@@ -52,9 +52,9 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 /# exit
 ```
 
-### Copie des journaux Docker vers le système de fichiers local
+### Copier les journaux Docker vers le système de fichiers local
 
-Les journaux de Dispatcher peuvent être copiés hors du conteneur Docker à l’adresse `/mnt/var/www/html` vers le système de fichiers local pour une inspection à l’aide de vos outils préférés. Notez qu’il s’agit d’une copie ponctuelle qui ne fournit pas de mises à jour en temps réel au cache.
+Les journaux de Dispatcher peuvent être copiés hors du conteneur Docker à l’adresse `/mnt/var/www/html` vers le système de fichiers local pour l’inspection à l’aide de vos outils préférés. Notez qu’il s’agit d’une copie ponctuelle qui ne fournit pas de mises à jour en temps réel au cache.
 
 ```shell
 $ docker ps
@@ -66,4 +66,3 @@ CONTAINER ID        IMAGE                                       COMMAND         
 $ docker cp -L <CONTAINER ID>:/mnt/var/www/html cache 
 $ cd cache
 ```
-
