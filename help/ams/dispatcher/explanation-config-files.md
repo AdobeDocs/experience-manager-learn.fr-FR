@@ -1,61 +1,61 @@
 ---
 title: Explication des fichiers de configuration de Dispatcher
-description: Comprendre les fichiers de configuration, les conventions d’affectation des noms, etc.
+description: Apprenez à connaître les fichiers de configuration, les conventions de nommage et bien d’autres choses encore.
 version: 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: cc085af90b9b8ea0e650546c251fbf14cc222989
-workflow-type: tm+mt
+exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '1705'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
-
 
 # Explication des fichiers de configuration
 
 [Table des matières](./overview.md)
 
-[&lt;- Précédent : Mise en page de base du fichier](./basic-file-layout.md)
+[&lt;- Précédent : Disposition de base du fichier](./basic-file-layout.md)
 
-Ce document ventile et explique chacun des fichiers de configuration déployés dans un serveur Dispatcher standard intégré configuré dans Adobe Managed Services. Leur utilisation, convention de nommage, etc...
+Ce document ventile et explique chacun des fichiers de configuration déployés dans un serveur Dispatcher standard configuré dans Adobe Managed Services. Utilisation, convention de nommage, etc.
 
-## Convention d’affectation de nom
+## Convention de nommage
 
-Le serveur web Apache ne se soucie pas vraiment de l’extension de fichier d’un fichier lorsqu’il est ciblé avec une `Include` ou `IncludeOptional` .  Nommer correctement les noms avec des noms qui éliminent les conflits et la confusion permet d’obtenir une <b>ton</b>. Les noms utilisés décrivent la portée de l’application du fichier, ce qui facilite la vie. Si tout est nommé `.conf` ça devient vraiment déroutant. Nous voulons éviter les fichiers et les extensions mal nommés.  Vous trouverez ci-dessous une liste des différentes extensions de fichier personnalisées et des conventions d’appellation utilisées dans un Dispatcher configuré par AMS classique.
+L’extension de fichier n’a pas réellement d’importance pour un serveur web Apache lorsque le fichier est ciblé avec une instruction `Include` ou `IncludeOptional`.Les nommer correctement avec des noms qui éliminent les conflits et la confusion aide <b>énormément</b>. Les noms utilisés décrivent la portée de l’application du fichier, ce qui facilite la vie. Si tout est nommé `.conf`, la situation devient vraiment confuse. Mieux vaut éviter les fichiers et les extensions mal nommés.Vous trouverez ci-dessous une liste des différentes extensions de fichier personnalisées et des conventions de nommage utilisées dans un Dispatcher classique configuré dans AMS.
 
 ## Fichiers contenus dans conf.d/
 
-| File | Destination du fichier | Description |
+| Fichier | Destination du fichier | Description |
 | ---- | ---------------- | ----------- |
-| FILENAME`.conf` | `/etc/httpd/conf.d/` | Une installation Enterprise Linux par défaut utilise cette extension de fichier et inclut le dossier comme emplacement pour remplacer les paramètres déclarés dans httpd.conf et vous permettre d’ajouter des fonctionnalités supplémentaires à un niveau global dans Apache. |
-| FILENAME`.vhost` | Intermédiaire : `/etc/httpd/conf.d/available_vhosts/`<br>Principal : `/etc/httpd/conf.d/enabled_vhosts/`<br/><br/><div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b> Les fichiers .vhost ne doivent pas être copiés dans le dossier enabled_vhosts, mais utiliser des liens symboliques vers un chemin relatif au fichier available_vhosts/\*.vhost .</div></u><br><br> | Les fichiers \*.vhost (Virtual Host) sont `<VirtualHosts>`  des entrées correspondant aux noms d’hôtes et permettant à Apache de gérer chaque trafic de domaine avec des règles différentes. Dans la `.vhost` fichier, d’autres fichiers tels que `rewrites`, `whitelisting`, `etc` sera inclus. |
-| FILENAME`_rewrite.rules` | `/etc/httpd/conf.d/rewrites/` | `*_rewrite.rules` magasin de fichiers `mod_rewrite` règles à inclure et à utiliser explicitement par une `vhost` fichier |
-| FILENAME`_whitelist.rules` | `/etc/httpd/conf.d/whitelists/` | `*_ipwhitelist.rules` Les fichiers sont inclus dans la variable `*.vhost` fichiers . Elle contient une expression régulière IP ou autorise les règles de refus à autoriser l’liste autorisée d’adresses IP. Si vous essayez de restreindre l’affichage d’un hôte virtuel en fonction des adresses IP, vous allez générer l’un de ces fichiers et l’inclure à partir de votre `*.vhost` fichier |
+| FILENAME`.conf` | `/etc/httpd/conf.d/` | Une installation Enterprise de Linux par défaut utilise cette extension de fichier et inclut le dossier comme emplacement pour remplacer les paramètres déclarés dans httpd.conf et vous permet d’ajouter des fonctionnalités supplémentaires à un niveau global dans Apache. |
+| FILENAME`.vhost` | Intermédiaire : `/etc/httpd/conf.d/available_vhosts/`<br>Actif : `/etc/httpd/conf.d/enabled_vhosts/`<br/><br/><div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b> les fichiers .vhost ne doivent pas être copiés dans le dossier enabled_vhosts, ils doivent plutôt utiliser des liens symboliques vers un chemin relatif au fichier available_vhosts/\*.vhost.</div></u><br><br> | Les fichiers \*.vhost (Virtual Host, hôte virtuel) sont des entrées `<VirtualHosts>` correspondant aux noms d’hôtes et permettant à Apache de gérer chaque trafic de domaine avec des règles différentes. Dans le fichier `.vhost`, d’autres fichiers tels que `rewrites`, `whitelisting`, `etc` seront inclus. |
+| FILENAME`_rewrite.rules` | `/etc/httpd/conf.d/rewrites/` | Les fichiers `*_rewrite.rules` stockent des règles `mod_rewrite` à inclure et à utiliser explicitement par un fichier `vhost`. |
+| FILENAME`_whitelist.rules` | `/etc/httpd/conf.d/whitelists/` | Les fichiers `*_ipwhitelist.rules` sont inclus dans les fichiers `*.vhost`. Ils contiennent une expression régulière d’IP ou des règles d’autorisation et de refus pour permettre l’établissement d’une liste autorisée d’IP. Si vous essayez de restreindre l’affichage d’un hôte virtuel en fonction des adresses IP, vous allez générer l’un de ces fichiers et l’inclure à partir de votre fichier `*.vhost`. |
 
 ## Fichiers contenus dans conf.dispatcher.d/
 
-| File | Destination du fichier | Description |
+| Fichier | Destination du fichier | Description |
 | --- | --- | --- |
-| FILENAME`.any` | `/etc/httpd/conf.dispatcher.d/` | Le module Apache de Dispatcher AEM sources ses paramètres à partir de `*.any` fichiers . Le fichier d’inclusion parent par défaut est : `conf.dispatcher.d/dispatcher.any` |
-| FILENAME`_farm.any` | Intermédiaire : `/etc/httpd/conf.dispatcher.d/available_farms/`<br>Principal : `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b> ces fichiers de fermes ne doivent pas être copiés dans la variable `enabled_farms` mais utilisez `symlinks` à un chemin relatif vers la propriété `available_farms/*_farm.any` fichier </div> <br/>`*_farm.any` Les fichiers sont inclus dans la variable `conf.dispatcher.d/dispatcher.any` fichier . Ces fichiers de fermes parents existent pour contrôler le comportement du module pour chaque type de rendu ou de site web. Les fichiers sont créés dans la variable `available_farms` et activé avec un `symlink` dans la `enabled_farms` répertoire .  <br/>Elle les inclut automatiquement par nom à partir du `dispatcher.any` fichier .<br/><b>Ligne de base</b> Les fichiers de fermes commencent par `000_` pour vous assurer qu’elles sont chargées en premier.<br><b>Personnalisé</b> Les fichiers de fermes doivent être chargés après en démarrant leur modèle de nombre à l’adresse `100_` pour assurer le comportement d’inclusion approprié. |
-| FILENAME`_filters.any` | `/etc/httpd/conf.dispatcher.d/filters/` | `*_filters.any` Les fichiers sont inclus dans la variable `conf.dispatcher.d/enabled_farms/*_farm.any` fichiers . Chaque ferme de serveurs comporte un ensemble de règles qui modifient le trafic qui doit être filtré et ne pas atteindre les moteurs de rendu. |
-| FILENAME`_vhosts.any` | `/etc/httpd/conf.dispatcher.d/vhosts/` | `*_vhosts.any` Les fichiers sont inclus dans la variable `conf.dispatcher.d/enabled_farms/*_farm.any` fichiers . Ces fichiers sont une liste de noms d’hôtes ou de chemins d’accès uri à mettre en correspondance d’objets blob pour déterminer le moteur de rendu à utiliser pour diffuser cette requête. |
-| FILENAME`_cache.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_cache.any` Les fichiers sont inclus dans la variable `conf.dispatcher.d/enabled_farms/*_farm.any` fichiers . Ces fichiers spécifient les éléments qui sont mis en cache et ceux qui ne le sont pas. |
-| FILENAME`_invalidate_allowed.any` | `/etc/httpd/conf.dispatcher.d/cache/` | `*_invalidate_allowed.any` Les fichiers sont inclus dans la variable `conf.dispatcher.d/enabled_farms/*_farm.any` fichiers . Ils spécifient les adresses IP autorisées à envoyer des demandes de purge et d’invalidation. |
-| FILENAME`_clientheaders.any` | `/etc/httpd/conf.dispatcher.d/clientheaders/` | `*_clientheaders.any` Les fichiers sont inclus dans la variable `conf.dispatcher.d/enabled_farms/*_farm.any` fichiers . Ils spécifient les en-têtes client à transmettre à chaque moteur de rendu. |
-| FILENAME`_renders.any` | `/etc/httpd/conf.dispatcher.d/renders/` | `*_renders.any` Les fichiers sont inclus dans la variable `conf.dispatcher.d/enabled_farms/*_farm.any` fichiers . Ils spécifient les paramètres d’adresse IP, de port et de délai d’expiration pour chaque moteur de rendu. Un moteur de rendu correct peut être un serveur LiveCycle ou tout système AEM sur lequel Dispatcher peut récupérer/remplacer les requêtes de |
+| FILENAME`.any` | `/etc/httpd/conf.dispatcher.d/` | Le module Apache de Dispatcher AEM tire ses paramètres des fichiers `*.any`. Le fichier d’inclusion parent par défaut est : `conf.dispatcher.d/dispatcher.any`. |
+| FILENAME`_farm.any` | Intermédiaire : `/etc/httpd/conf.dispatcher.d/available_farms/`<br>Actif : `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b> ces fichiers de batterie ne doivent pas être copiés dans le dossier `enabled_farms` mais utiliser `symlinks` comme chemin relatif vers le fichier `available_farms/*_farm.any`. </div> Les fichiers <br/>`*_farm.any` sont inclus dans le fichier `conf.dispatcher.d/dispatcher.any`. Ces fichiers de batterie parents sont destinés à contrôler le comportement du module pour chaque type de rendu ou de site web. Les fichiers sont créés dans le répertoire `available_farms` et activés avec un `symlink` dans le répertoire `enabled_farms`.  <br/>Il les inclut automatiquement par leur nom dans le fichier `dispatcher.any`.Les fichiers de batterie <br/><b>de référence</b> commencent par `000_` pour qu’ils soient toujours chargés en premier.Les fichiers de batterie <br><b>personnalisés</b> doivent être chargés ensuite en démarrant leur modèle de nombre à `100_` pour assurer le comportement d’inclusion approprié. |
+| FILENAME`_filters.any` | `/etc/httpd/conf.dispatcher.d/filters/` | Les fichiers `*_filters.any` sont inclus dans les fichiers `conf.dispatcher.d/enabled_farms/*_farm.any`. Chaque batterie comporte un ensemble de règles qui indiquent le trafic qui doit être filtré et ne doit pas atteindre les moteurs de rendu. |
+| FILENAME`_vhosts.any` | `/etc/httpd/conf.dispatcher.d/vhosts/` | Les fichiers `*_vhosts.any` sont inclus dans les fichiers `conf.dispatcher.d/enabled_farms/*_farm.any`. Ces fichiers sont une liste de noms d’hôtes ou de chemins d’accès URI à mettre en correspondance avec des objets blob pour déterminer le moteur de rendu à utiliser pour diffuser cette requête. |
+| FILENAME`_cache.any` | `/etc/httpd/conf.dispatcher.d/cache/` | Les fichiers `*_cache.any` sont inclus dans les fichiers `conf.dispatcher.d/enabled_farms/*_farm.any`. Ces fichiers spécifient les éléments qui sont mis en cache et ceux qui ne le sont pas. |
+| FILENAME`_invalidate_allowed.any` | `/etc/httpd/conf.dispatcher.d/cache/` | Les fichiers `*_invalidate_allowed.any` sont inclus dans les fichiers `conf.dispatcher.d/enabled_farms/*_farm.any`. Ils spécifient les adresses IP autorisées à envoyer des demandes de purge et d’invalidation. |
+| FILENAME`_clientheaders.any` | `/etc/httpd/conf.dispatcher.d/clientheaders/` | Les fichiers `*_clientheaders.any` sont inclus dans les fichiers `conf.dispatcher.d/enabled_farms/*_farm.any`. Ils spécifient les en-têtes clients à transmettre à chaque moteur de rendu. |
+| FILENAME`_renders.any` | `/etc/httpd/conf.dispatcher.d/renders/` | Les fichiers `*_renders.any` sont inclus dans les fichiers `conf.dispatcher.d/enabled_farms/*_farm.any`. Ils spécifient les paramètres d’IP, de port et de délai d’expiration pour chaque moteur de rendu. Un moteur de rendu correct peut être un serveur LiveCycle ou tout système AEM à partir duquel Dispatcher peut récupérer/remplacer les demandes. |
 
 ## Problèmes évités
 
-Lorsque vous suivez la convention de dénomination, vous pouvez éviter des erreurs assez faciles à commettre qui peuvent avoir des résultats catastrophiques.  Nous allons en présenter quelques exemples.
+Lorsque vous suivez la convention de nommage, vous pouvez éviter des erreurs courantes qui peuvent avoir des résultats catastrophiques.Nous allons en présenter quelques exemples.
 
 ### Exemple de problème
 
-Comme exemple de site pour ExempleCo, deux fichiers de configuration ont été créés par les développeurs des configurations du Dispatcher.
+Comme exemple de site pour ExempleCo, deux fichiers de configuration ont été créés par les développeurs et développeuses des configurations du Dispatcher.
 
 <b>/etc/httpd/conf.d/exampleco.conf</b>
 
@@ -81,45 +81,45 @@ RewriteRule ^/robots.txt$ /content/dam/exampleco/robots.txt [PT,L]
 
 #### `POTENTIAL DANGER - The file names are the same`
 
-Si la variable `vhost` est accidentellement placé dans la variable `rewrites` et le dossier `rewrites file` est placé dans la variable `vhosts` dossier.  Il semble qu’il soit déployé correctement par nom de fichier, mais Apache lance une *ERROR* et le problème ne sera pas évident immédiatement.
+Si le fichier `vhost` est accidentellement placé dans le dossier `rewrites` et que le `rewrites file` est placé dans le dossier `vhosts`.Il semblerait qu’il soit déployé correctement par nom de fichier, mais Apache lance une *ERREUR* et le problème ne sera pas évident immédiatement.
 
 <b>Comment cela devient généralement un problème</b>
 
-Si la variable `two files` sont téléchargés dans le `same` emplacement où ils peuvent `overwrite themselves` ou rendre le processus de déploiement indissociable, ce qui en fait un cauchemar.
+Si les `two files` sont téléchargés à l’emplacement `same`, ils peuvent `overwrite themselves` ou devenir indissociables, auxquels cas le déploiement devient un cauchemar.
 
-<b>Les extensions de fichier sont identiques et incluent automatiquement</b>
+<b>Les extensions de fichier sont identiques et sujettes à l’inclusion automatique</b>
 
-Les extensions de fichier sont les mêmes et utilisent l’extension auto-incluse qu’Apache va `auto include` any `.conf` dans la plupart de ses dossiers par défaut.
+Les extensions de fichier sont identiques et utilisent l’extension d’inclusion automatique qui permet à Apache d’`auto include` tous les fichiers `.conf` dans la plupart de ses dossiers par défaut.
 
 <b>Comment cela devient généralement un problème</b>
 
-Si le fichier vhost avec l’extension de `.conf` est placé dans la variable `/etc/httpd/conf.d/` le dossier tente de le charger en mémoire sur Apache, ce qui est généralement correct, mais si le fichier de règles de réécriture avec l’extension de `.conf` est placé dans la variable `/etc/httpd/conf.d/` , il sera inclus automatiquement et appliqué globalement, ce qui provoquera des résultats déroutants et indésirables.
+Si le fichier vhost avec l’extension `.conf` est placé dans le dossier `/etc/httpd/conf.d/`, il tente de le charger en mémoire sur Apache, ce qui ne pose généralement pas de problème. Mais si le fichier de règles de réécriture avec l’extension `.conf` est placé dans le dossier `/etc/httpd/conf.d/`, il sera inclus automatiquement et appliqué globalement, ce qui provoquera des résultats confus et indésirables.
 
 ## Résolution
 
-Nommez les fichiers en fonction de ce qu’ils font et en toute sécurité en dehors de l’espace de noms des règles d’inclusion automatique.
+Nommez les fichiers en fonction de ce qu’ils font et maintenez-les en dehors de l’espace de noms des règles d’inclusion automatique pour une sécurité optimale.
 
-S’il s’agit d’un nom de fichier d’hôte virtuel avec `.vhost` comme extension.
+S’il s’agit d’un fichier d’hôte virtuel, nommez-le avec `.vhost` comme extension.
 
-S’il s’agit d’un fichier de règle de réécriture, nommez-le par site.`_rewrite.rules` comme suffixe et extension. Cette convention d’affectation des noms indique clairement à quel site il sert et qu’il s’agit d’un ensemble de règles de réécriture.
+S’il s’agit d’un fichier de règle de réécriture, nommez-le avec site`_rewrite.rules` comme suffixe et extension. Cette convention de nommage indique clairement à quel site il est destiné et qu’il s’agit d’un ensemble de règles de réécriture.
 
-S’il s’agit d’un fichier de règle de liste autorisée IP, nommez-le par description.`_whitelist.rules` comme suffixe et extension. Cette convention d’affectation des noms donnera une description de son utilité et du fait qu’il s’agit d’un ensemble de règles de correspondance d’adresses IP.
+S’il s’agit d’un fichier de règle de liste d’adresses IP autorisées, nommez-le avec description`_whitelist.rules` comme suffixe et extension.Cette convention de nommage indique son utilité et qu’il s’agit d’un ensemble de règles de correspondance d’adresses IP.
 
-L’utilisation de ces conventions d’affectation de noms permet d’éviter des problèmes si un fichier est déplacé dans un répertoire d’inclusion automatique auquel il n’appartient pas.
+L’utilisation de ces conventions de nommage permet d’éviter des problèmes si un fichier est déplacé dans un répertoire d’inclusion automatique auquel il n’appartient pas.
 
-Par exemple, pour placer un fichier nommé avec `.rules`, `.any`ou `.vhost` dans le dossier d’inclusion automatique de `/etc/httpd/conf.d/` n&#39;aurait aucun effet.
+Par exemple, placer un fichier nommé avec `.rules`, `.any`, ou `.vhost` dans le dossier d’inclusion automatique `/etc/httpd/conf.d/` n’aurait aucun effet.
 
-Si une requête de modification de déploiement indique &quot;Veuillez déployer exampleco_rewrite.rules vers les Dispatchers de production&quot;, la personne qui déploie les modifications peut déjà savoir qu’elle n’ajoute pas de nouveau site, elle se contente de mettre à jour les règles de réécriture comme indiqué par le nom du fichier.
+Si une requête de modification de déploiement indique « Veuillez déployer exampleco_rewrite.rules vers les Dispatchers de production », la personne qui déploie les modifications peut déjà savoir qu’elle n’ajoute pas de nouveau site. Au lieu de cela, elle se contente de mettre à jour les règles de réécriture comme indiqué par le nom du fichier.
 
-### Inclure la commande
+### Inclure l’ordre
 
-Lors de l’extension des fonctionnalités et des configurations dans le serveur web Apache installé sur Enterprise Linux, vous disposez de commandes d’inclusion importantes que vous souhaitez comprendre.
+Lors de l’extension des fonctionnalités et des configurations dans le serveur web Apache installé sur Enterprise Linux, il y a des ordres d’inclusion importants à comprendre.
 
-### Inclusions de la ligne de base Apache
+### Inclusions de ligne de base Apache
 
 ![](assets/explanation-config-files/Apache-Webserver-Baseline-Includes.png)
 
-Comme le montre le diagramme ci-dessus, le binaire httpd ne regarde que le fichier httpd.conf comme fichier de configuration.  Ce fichier contient les instructions suivantes :
+Comme le montre le diagramme ci-dessus, le binaire httpd ne regarde que le fichier httpd.conf comme fichier de configuration.Ce fichier contient les instructions suivantes :
 
 ```
 Include conf.modules.d/*.conf 
@@ -130,18 +130,18 @@ IncludeOptional conf.d/*.conf
 
 Lorsque nous avons appliqué notre norme, nous avons ajouté d’autres types de fichiers et inclus les nôtres.
 
-Voici les répertoires de base AMS et les inclusions de niveau supérieur.
-![La ligne de base AMS comprend un fichier dispatcher_vhost.conf qui inclura n’importe quel fichier avec le *.vhost du répertoire /etc/httpd/conf.d/enabled_vhosts/ .  Les éléments du répertoire /etc/httpd/conf.d/enabled_vhosts/ sont des liens symboliques vers le fichier de configuration réel qui se trouve dans /etc/httpd/conf.d/available_vhosts/](assets/explanation-config-files/Apache-Webserver-AMS-Baseline-Includes.png "Apache-Webserver-AMS-Baseline-Includes")
+Voici les répertoires de référence AMS et les inclusions de niveau supérieur.
+![Les inclusions de ligne de base AMS démarrent par un fichier dispatcher_vhost.conf qui inclura n’importe quel fichier avec le *.vhost du répertoire /etc/httpd/conf.d/enabled_vhosts/.  Les éléments du répertoire /etc/httpd/conf.d/enabled_vhosts/ sont des liens symboliques vers le fichier de configuration réel qui se trouve dans /etc/httpd/conf.d/available_vhosts/](assets/explanation-config-files/Apache-Webserver-AMS-Baseline-Includes.png "Apache-Webserver-AMS-Baseline-Includes").
 
-En partant de la ligne de base d’Apache, nous montrons comment AMS a créé des dossiers supplémentaires et des inclusions de niveau supérieur pour `conf.d` ainsi que les répertoires spécifiques aux modules imbriqués sous `/etc/httpd/conf.dispatcher.d/`
+En partant de la ligne de base Apache, nous montrons comment AMS a créé des dossiers supplémentaires et des inclusions de niveau supérieur pour les dossiers `conf.d` ainsi que des répertoires spécifiques aux modules imbriqués sous `/etc/httpd/conf.dispatcher.d/`.
 
-Au chargement d’Apache, l’élément `/etc/httpd/conf.modules.d/02-dispatcher.conf` et ce fichier inclut le fichier binaire. `/etc/httpd/modules/mod_dispatcher.so` dans son état d&#39;exécution.
+Au chargement d’Apache, ce dernier récupère `/etc/httpd/conf.modules.d/02-dispatcher.conf` et ce fichier inclut le fichier binaire `/etc/httpd/modules/mod_dispatcher.so` dans son état d’exécution.
 
 ```
 LoadModule dispatcher_module modules /mod_dispatcher .so
 ```
 
-Pour utiliser le module dans notre `<VirtualHost />` nous déposerons un fichier de configuration dans `/etc/httpd/conf.d/` named `dispatcher_vhost.conf` et dans ce fichier, vous verrez utiliser configuration des paramètres de base nécessaires au fonctionnement du module :
+Pour utiliser le module dans notre `<VirtualHost />`, nous déposons un fichier de configuration dans `/etc/httpd/conf.d/` appelé `dispatcher_vhost.conf` et dans ce fichier, vous verrez la configuration des paramètres de base nécessaires au fonctionnement du module :
 
 ```
 <IfModule disp_apache2.c> 
@@ -150,9 +150,9 @@ Pour utiliser le module dans notre `<VirtualHost />` nous déposerons un fichi
 </IfModule>
 ```
 
-Comme vous pouvez le voir ci-dessus, cela inclut le niveau supérieur `dispatcher.any` pour que notre module de Dispatcher récupère ses fichiers de configuration à partir de `/etc/httpd/conf.dispatcher.d/dispatcher.any`
+Comme vous pouvez le voir ci-dessus, cela inclut le fichier de niveau supérieur `dispatcher.any` pour que notre module Dispatcher récupère ses fichiers de configuration de `/etc/httpd/conf.dispatcher.d/dispatcher.any`.
 
-Attention au contenu de ce fichier :
+Prêtez attention au contenu de ce fichier :
 
 ```
 /farms { 
@@ -160,15 +160,15 @@ Attention au contenu de ce fichier :
 }
 ```
 
-Niveau supérieur `dispatcher.any` comprend tous les fichiers de fermes activés qui se trouvent dans `/etc/httpd/conf.dispatcher.d/enabled_farms/` avec le nom de fichier de `FILENAME_farm.any` qui suit notre convention de dénomination standard.
+Le fichier de niveau supérieur `dispatcher.any` comprend tous les fichiers de batterie activés qui se trouvent dans `/etc/httpd/conf.dispatcher.d/enabled_farms/` avec le nom de fichier `FILENAME_farm.any` qui suit notre convention de nommage standard.
 
-Plus tard dans la `dispatcher_vhost.conf` fichier mentionné précédemment, nous faisons également une instruction d’inclusion pour activer chaque fichier d’hôte virtuel activé qui se trouve dans `/etc/httpd/conf.d/enabled_vhosts/` avec le nom de fichier de `FILENAME.vhost` qui suit notre convention de dénomination standard.
+Plus tard, dans le fichier `dispatcher_vhost.conf` mentionné précédemment, nous faisons également une instruction d’inclusion pour activer chaque fichier d’hôte virtuel activé qui se trouve dans `/etc/httpd/conf.d/enabled_vhosts/` avec le nom de fichier `FILENAME.vhost` qui suit notre convention de nommage standard.
 
 ```
 IncludeOptional /etc/httpd/conf.d/enabled_vhosts/*.vhost
 ```
 
-Dans chacun de nos fichiers .vhost, vous remarquerez que le module de Dispatcher est initialisé en tant que gestionnaire de fichiers par défaut pour un répertoire.  Voici un exemple de fichier .vhost pour afficher la syntaxe :
+Dans chacun de nos fichiers .vhost, vous remarquerez que le module de Dispatcher est initialisé en tant que gestionnaire de fichiers par défaut pour un répertoire.Voici un exemple de fichier .vhost pour illustrer la syntaxe :
 
 ```
 <VirtualHost *:80> 
@@ -185,17 +185,17 @@ Dans chacun de nos fichiers .vhost, vous remarquerez que le module de Dispatcher
 </VirtualHost>
 ```
 
-Une fois que les inclusions de niveau supérieur sont résolues, elles comportent d’autres sous-inclusions qui méritent d’être mentionnées.  Voici un diagramme de haut niveau sur la manière dont les fichiers de fermes de serveurs et vhosts incluent d’autres sous-éléments.
+Une fois que les inclusions de niveau supérieur sont résolues, elles comportent d’autres sous-inclusions qui méritent d’être mentionnées.Voici un diagramme de haut niveau sur la manière dont les fichiers de batterie de serveurs et vhosts incluent d’autres sous-éléments.
 
 ### Inclusions d’hôte virtuel AMS
 
-![Cette image montre comment un fichier .vhost inclut des fichiers provenant de variables, de listes autorisées et de dossiers de réécriture.](assets/explanation-config-files/Apache-Webserver-AMS-Vhost-Includes.png "Apache-Webserver-AMS-Vhost-Includes")
+![Cette image montre comment un fichier .vhost inclut des fichiers provenant de variables, de listes autorisées et de dossiers de réécriture](assets/explanation-config-files/Apache-Webserver-AMS-Vhost-Includes.png "Apache-Webserver-AMS-Vhost-Includes").
 
-Lorsque `.vhost` fichiers provenant de `/etc/httpd/conf.d/availabled_vhosts/` créer un lien symbolique dans le répertoire `/etc/httpd/conf.d/enabled_vhosts/` Ils seront utilisés dans la configuration en cours d’exécution.
+Lorsque des fichiers `.vhost` provenant du référentiel `/etc/httpd/conf.d/availabled_vhosts/` sont liés par un lien symbolique au répertoire `/etc/httpd/conf.d/enabled_vhosts/`, ils sont utilisés dans la configuration en cours d’exécution.
 
-Le `.vhost` Les fichiers ont des sous-inclusions basées sur des éléments communs que nous avons trouvés.  Il s’agit de variables, de listes autorisées et de règles de réécriture.
+Les fichiers `.vhost` ont des sous-inclusions basées sur des éléments communs que nous avons trouvés.Il s’agit de variables, de listes autorisées et de règles de réécriture.
 
-Le `.vhost` comporte des instructions d’inclusion pour chaque fichier en fonction de l’endroit où ils doivent être inclus dans la variable `.vhost` fichier .  Voici un exemple de syntaxe d’une `.vhost` comme référence appropriée :
+Le fichier `.vhost` comporte des instructions d’inclusion pour chaque fichier en fonction de l’endroit où ils doivent être inclus dans le fichier `.vhost`.Voici un exemple de syntaxe d’un fichier `.vhost` comme référence :
 
 ```
 Include /etc/httpd/conf.d/variables/weretail.vars 
@@ -220,13 +220,13 @@ Include /etc/httpd/conf.d/variables/weretail.vars
 
 Comme vous pouvez le voir dans l’exemple ci-dessus, il existe une inclusion pour les variables nécessaires dans ce fichier de configuration qui sont utilisées ultérieurement.
 
-Dans le fichier `/etc/httpd/conf.d/variables/weretail.vars` nous pouvons voir les variables qui sont définies :
+Dans le fichier `/etc/httpd/conf.d/variables/weretail.vars`, nous pouvons voir les variables qui sont définies :
 
 ```
 Define MAIN_DOMAIN dev.weretail.com
 ```
 
-Vous pouvez également voir une ligne qui comprend une liste de `_whitelist.rules` qui restreignent qui peut afficher ce contenu en fonction de différents critères de liste autorisée.  Examinons le contenu d’un des fichiers de liste autorisée. `/etc/httpd/conf.d/whitelists/weretail_mainoffice_whitelist.rules`:
+Vous pouvez également voir une ligne qui comprend une liste de fichiers `_whitelist.rules` qui restreignent qui peut afficher ce contenu en fonction de différents critères de liste autorisée.Examinons le contenu d’un des fichiers de liste autorisée `/etc/httpd/conf.d/whitelists/weretail_mainoffice_whitelist.rules` :
 
 ```
 <RequireAny> 
@@ -234,7 +234,7 @@ Vous pouvez également voir une ligne qui comprend une liste de `_whitelist.rule
 </RequireAny>
 ```
 
-Vous pouvez également voir une ligne qui comprend un ensemble de règles de réécriture.  Regardons le contenu de la `weretail_rewrite.rules` fichier :
+Vous pouvez également voir une ligne qui comprend un ensemble de règles de réécriture.Regardons le contenu du fichier `weretail_rewrite.rules` :
 
 ```
 RewriteRule ^/robots.txt$ /content/dam/weretail/robots.txt [NC,PT] 
@@ -245,15 +245,15 @@ RewriteRule ^/sitemap.xml$ /content/weretail/general/sitemap.xml [NC,PT]
 RewriteRule ^/logo.jpg$ /content/dam/weretail/general/logo.jpg [NC,PT]
 ```
 
-### Inclusions de la ferme AMS
+### Inclusions de la batterie AMS
 
-![<FILENAME>_farms.any inclura des fichiers .any secondaires pour terminer la configuration de la ferme.  Dans cette image, vous pouvez voir qu’une ferme de serveurs va inclure chaque cache de fichiers de section de niveau supérieur, les en-têtes clients, les filtres, les rendus et les fichiers vhosts .any.](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png "Apache-Webserver-AMS-Farm-Includes")
+![<FILENAME>_farms.any inclut des fichiers .any secondaires pour terminer la configuration de la batterie.  Dans cette image, vous pouvez voir qu’une batterie va inclure chaque cache de fichiers de section de niveau supérieur, les en-têtes clients, les filtres, les rendus et les fichiers vhosts .any](assets/explanation-config-files/Apache-Webserver-AMS-Farm-Includes.png "Apache-Webserver-AMS-Farm-Includes").
 
-Lorsque des fichiers FILENAME_farm.any sont `/etc/httpd/conf.dispatcher.d/available_farms/` créer un lien symbolique dans le répertoire `/etc/httpd/conf.dispatcher.d/enabled_farms/` Ils seront utilisés dans la configuration en cours d’exécution.
+Lorsque des fichiers FILENAME_farm.any du répertoire `/etc/httpd/conf.dispatcher.d/available_farms/` sont liés par un lien symbolique au répertoire `/etc/httpd/conf.dispatcher.d/enabled_farms/`, ils sont utilisés dans la configuration en cours d’exécution.
 
-Les fichiers de fermes comportent des sous-inclusions basées sur [sections de niveau supérieur de la ferme de serveurs](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#defining-farms-farms) comme cache, clientheaders, filtres, rendus et vhosts.
+Les fichiers de batterie comportent des sous-inclusions basées sur les [sections de niveau supérieur de la batterie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#defining-farms-farms), comme le cache, les en-têtes clients, les filtres, les rendus et les fichiers vhosts.
 
-Le `FILENAME_farm.any` Les fichiers contiennent des instructions pour chaque fichier en fonction de l’endroit où ils doivent être inclus dans le fichier de ferme.  Voici un exemple de syntaxe d’une `FILENAME_farm.any` comme référence appropriée :
+Les fichiers `FILENAME_farm.any` contiennent des instructions pour chaque fichier en fonction de l’endroit où ils doivent être inclus dans le fichier de batterie.Voici un exemple de syntaxe d’un fichier `FILENAME_farm.any` comme référence :
 
 ```
 /weretailfarm {   
@@ -290,7 +290,7 @@ Le `FILENAME_farm.any` Les fichiers contiennent des instructions pour chaque fic
 }
 ```
 
-Comme vous pouvez voir chaque section pour la ferme de serveurs weretail au lieu de disposer de toutes les syntaxes nécessaires, elle utilise plutôt une instruction d’inclusion.
+Comme vous pouvez le voir, chaque section de la batterie weretail utilise une instruction d’inclusion au lieu de contenir toute la syntaxe nécessaire.
 
 Examinons la syntaxe de quelques-unes de ces inclusions pour avoir une idée de ce à quoi ressemblerait chaque sous-inclusion.
 
@@ -302,9 +302,9 @@ Examinons la syntaxe de quelques-unes de ces inclusions pour avoir une idée de 
 "www.weretail.comf"
 ```
 
-Comme vous pouvez le constater, il s’agit d’une nouvelle liste de noms de domaine séparés par des lignes qui doivent être rendus à partir de cette ferme de serveurs par rapport aux autres.
+Comme vous pouvez le constater, il s’agit d’une nouvelle liste de noms de domaine séparés par des lignes qui doivent être rendus à partir de cette batterie plutôt que par les autres.
 
-Regardons ensuite le `/etc/httpd/conf.dispatcher.d/filters/weretail_search_filters.any`:
+Regardons ensuite le fichier `/etc/httpd/conf.dispatcher.d/filters/weretail_search_filters.any` :
 
 ```
 /400 { /type "allow" /method "GET" /path "/bin/weretail/lists/*" /extension "json" } 
