@@ -1,6 +1,6 @@
 ---
 title: Prise en main du développement d’AEM Sites – Tutoriel WKND
-description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les bonnes pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
+description: Vous ne connaissez pas le développement AEM ? Vous avez besoin d’une mise à niveau sur les bonnes pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur ou à une développeuse qui découvre AEM à mettre en œuvre un site web dans AEM en utilisant les dernières normes et technologies.
 feature: AEM Project Archetype, Core Components, Page Editor, Editable Templates
 topic: Development
 role: Developer
@@ -14,13 +14,13 @@ ht-degree: 100%
 ---
 
 
-# Prise en main du développement d’AEM Sites – Tutoriel WKND {#getting-started-developing-aem-sites-wknd-tutorial}
+# Prise en main du développement d’AEM Sites – Tutoriel WKND{#getting-started-developing-aem-sites-wknd-tutorial}
 
 ## Présentation {#overview}
 
 Vous ne connaissez pas bien le développement d’Adobe Experience Manager as a Cloud Service ? Besoin d’une actualisation sur les toutes dernières pratiques ? Voici l’endroit idéal pour bien commencer !
 
-L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes. Ce tutoriel poursuit un double objectif : vous faire assimiler les bases de la plate-forme AEM et vous faire connaître quelques-uns des modèles de conception courants.
+L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur ou à une développeuse qui découvre AEM à mettre en œuvre un site web dans AEM en utilisant les dernières normes et technologies. À la fin de ce tutoriel, vous devriez comprendre les bases de la plateforme AEM et connaître certains des modèles de conception courants.
 
 ## Tutoriel du développeur WKND {#wknd-developer-tutorial}
 
