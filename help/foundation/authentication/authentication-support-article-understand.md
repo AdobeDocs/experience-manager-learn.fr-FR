@@ -1,5 +1,5 @@
 ---
-title: Présentation de la prise en charge de l’authentification dans AEM
+title: Comprendre la prise en charge de l’authentification dans AEM
 description: Une vue consolidée dans les mécanismes d’authentification (et parfois d’autorisation) pris en charge par AEM.
 version: 6.4, 6.5
 feature: User and Groups
@@ -15,17 +15,17 @@ exl-id: 96c542ae-6ab6-4d8a-94df-a58b03469320
 last-substantial-update: 2022-09-10T00:00:00Z
 thumbnail: KT-406.jpg
 source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 17%
+ht-degree: 100%
 
 ---
 
-# Présentation de la prise en charge de l’authentification dans AEM 6.x
+# Comprendre la prise en charge de l’authentification dans AEM 6.x
 
 Une vue consolidée dans les mécanismes d’authentification (et parfois d’autorisation) pris en charge par AEM.
 
-*Le tableau suivant décrit comment les utilisateurs peuvent s’authentifier dans AEM.*
+*Le tableau suivant décrit comment les personnes peuvent s’authentifier dans AEM.*
 
 <table>
     <tbody>
@@ -48,13 +48,13 @@ Une vue consolidée dans les mécanismes d’authentification (et parfois d’au
             <td>✔</td>
         </tr>
         <tr>
-            <td>Basé sur Forms</td>
+            <td>Basée sur les formulaires</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
         </tr>
         <tr>
-            <td>Basé sur les jetons (w/ <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html" target="_blank">jeton encapsulé</a>)</td>
+            <td>Basée sur les jetons (avec <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html?lang=fr" target="_blank">jeton encapsulé</a>)</td>
             <td>✔</td>
             <td>✔</td>
             <td>✔</td>
@@ -65,7 +65,7 @@ Une vue consolidée dans les mécanismes d’authentification (et parfois d’au
             <td></td>
             <td></td>
             <tr>
-                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ldap-config.html" target="_blank">LDAP</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ldap-config.html?lang=fr" target="_blank">LDAP</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>
@@ -83,7 +83,7 @@ Une vue consolidée dans les mécanismes d’authentification (et parfois d’au
                 <td>✔</td>
             </tr>
             <tr>
-                <td><a href="https://experienceleague.adobe.com/docs/events/assets/oauth-server-functionality-in-aem-7-23-14.pdf" target="_blank">OAuth 1.0a et 2.0</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/events/assets/oauth-server-functionality-in-aem-7-23-14.pdf" target="_blank">OAuth 1.0a et 2.0</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>
