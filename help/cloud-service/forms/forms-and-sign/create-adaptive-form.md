@@ -1,6 +1,6 @@
 ---
-title: Créer un formulaire adaptatif pour utiliser la configuration de Cloud Services Acrobat Sign créée
-description: Créer un formulaire adaptatif à utiliser avec Acrobat Sign
+title: Créer un formulaire adaptatif pour utiliser la configuration de services cloud Acrobat Sign créée
+description: Créer un formulaire adaptatif à utiliser avec Acrobat Sign
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -13,14 +13,14 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
 exl-id: 6bdfb841-3b7e-4c22-8907-a1b98df42ae5
 source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '44'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
-# Formulaire adaptatif avec Acrobat Sign
+# Formulaire adaptatif avec Acrobat Sign
 
-Création d’un formulaire adaptatif pour utiliser la configuration de cloud Acrobat Sign
+Créer un formulaire adaptatif pour utiliser la configuration cloud Acrobat Sign
 
 >[!VIDEO](https://video.tv.adobe.com/v/332438?quality=12&learn=on)
