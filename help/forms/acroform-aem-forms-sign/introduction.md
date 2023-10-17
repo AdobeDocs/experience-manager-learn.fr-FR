@@ -1,6 +1,6 @@
 ---
-title: Acroforms avec AEM Forms
-description: Tutoriel qui décrit la création d’un formulaire adaptatif à l’aide d’Acrobat et la fusion des données pour obtenir un PDF. Le PDF contenant les données fusionnées peut ensuite être envoyé pour signature à l’aide d’Acrobat Sign.
+title: AcroForms avec AEM Forms
+description: Tutoriel décrivant la création d’un formulaire adaptatif à l’aide d’AcroForm, ainsi que la fusion des données pour obtenir un PDF. Le PDF contenant les données fusionnées peut ensuite être envoyé pour signature à l’aide d’Acrobat Sign.
 feature: adaptive-forms
 topics: development
 audience: developer
@@ -8,39 +8,39 @@ doc-type: tutorial
 activity: implement
 version: 6.5
 badgeIntegration: label="Intégration" type="positive"
-badgeVersions: label="AEM Forms 6.5" before-title="false"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
-# Création de Forms adaptatif à partir d’Acrobat
+# Créer des formulaires adaptatifs à partir d’AcroForms
 
-Les organisations ont une grande variété de formes. Certains de ces formulaires sont créés dans Microsoft Word et convertis en PDF. Par défaut, ces formulaires ne peuvent pas être remplis à l’aide d’Adobe Reader ou d’Acrobat. Pour que ces formulaires puissent être remplis à l’aide d’Acrobat ou de Reader, nous devons les convertir en Acrobat. Les Acroforms sont des formulaires créés à l’aide d’Acrobat. Cet article décrit la création d’un formulaire adaptatif à partir d’Acrobat et la fusion des données dans Acrobat pour obtenir le PDF. Le PDF avec les données fusionnées peut également être envoyé pour signature à l’aide d’Acrobat Sign.
+Les organisations utilisent un grand nombre de formulaires. Certains sont créés dans Microsoft Word et convertis en PDF. Par défaut, ces formulaires ne peuvent pas être remplis à l’aide d’Adobe Reader ou d’Acrobat. Pour ce faire, ils doivent d’abord être convertis en AcroForms. Les AcroForms sont des formulaires créés à l’aide d’Acrobat. Cet article décrit la création d’un formulaire adaptatif à partir d’AcroForm et la fusion des données dans AcroForm pour obtenir le PDF. Le PDF contenant les données fusionnées peut également être envoyé pour signature à l’aide d’Acrobat Sign.
 
 >[!NOTE]
 >
->Si vous utilisez AEM Forms 6.5, utilisez la fonctionnalité d’Automated forms conversion.
+>Si vous utilisez AEM Forms 6.5, aidez-vous de la fonction de conversion automatisée de formulaires.
 
 ## Conditions préalables
 
-* AEM Forms 6.3 ou 6.4 installé et configuré
-* Accès à Adobe Acrobat
-* Familiarité avec AEM/AEM Forms.
+* AEM Forms 6.3 ou 6.4 installé et configuré
+* Accès à Adobe Acrobat
+* Bonnes connaissances d’AEM/AEM Forms.
 
-### Les éléments suivants sont nécessaires pour que cette fonctionnalité fonctionne sur votre système :
+### Les éléments suivants sont nécessaires pour que cette fonctionnalité soit activée sur votre système :
 
-* Téléchargez et déployez les lots à l’aide du [Console web Felix](http://localhost:4502/system/console/bundles)
-* [DocumentServicesBundle](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
-* [DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-* [AcroFormsToAEMFormsBundle](https://forms.enablementadobe.com/content/DemoServerBundles/AcroFormToAEMForm.core-1.0-SNAPSHOT.jar)
-* [Téléchargez et importez ce package dans AEM](assets/acro-form-aem-form.zip). Ce module contient l’exemple de workflow et de page HTML pour créer un fichier XSD à partir d’acroform.
-* Ouvrez le [configMgr](http://localhost:4502/system/console/configMgr)
-   * Recherchez &quot;Service de mappage des utilisateurs du service Apache Sling&quot; et cliquez pour ouvrir les propriétés.
-   * Cliquez sur le bouton `+` (plus) pour ajouter le mappage de service suivant
+* Téléchargez et déployez les lots à l’aide de la [Console web Felix](http://localhost:4502/system/console/bundles).
+* [DocumentServicesBundle.](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)
+* [DevelopingWithServiceUser.](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+* [AcroFormsToAEMFormsBundle](https://forms.enablementadobe.com/content/DemoServerBundles/AcroFormToAEMForm.core-1.0-SNAPSHOT.jar).
+* [Téléchargez et importez ce package dans AEM](assets/acro-form-aem-form.zip). Ce package contient l’exemple de workflow et de page HTML permettant de créer un fichier XSD à partir d’AcroForm.
+* Ouvrez [configMgr](http://localhost:4502/system/console/configMgr).
+   * Recherchez « service de mappage utilisateur de service Apache Sling » et cliquez pour ouvrir les propriétés.
+   * Cliquez sur l’icône `+` (plus) pour ajouter le mappage de service suivant.
       * `DevelopingWithServiceUser.core:getresourceresolver=data`
       * `DevelopingWithServiceUser.core:getformsresourceresolver=fd-service`
-   * Cliquez sur &quot;Enregistrer&quot;.
+   * Cliquez sur Enregistrer.
