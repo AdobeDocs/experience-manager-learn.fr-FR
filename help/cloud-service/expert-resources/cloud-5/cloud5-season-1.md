@@ -1,14 +1,14 @@
 ---
-title: Cloud 5 - Saison 1
-description: Découvrez Adobe Experience Manager (AEM) as a Cloud Service de la part des ingénieurs experts de l’Adobe qui l’ont créé et des services d’experts qui l’ont livré.
+title: Cloud 5 - Saison 1
+description: Découvrez Adobe Experience Manager (AEM) as a Cloud Service grâce aux ingénieures et ingénieurs experts d’Adobe qui l’ont créé et aux services experts qui le mettent en œuvre.
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 210e5483-d79e-47ac-aa09-b6956cca2e62
 source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '550'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 3%
 
 ## Présentation
 
-Bienvenue dans la série Cloud 5 de AEM Engineering. L’un des Principaux problèmes de la phase de mise en oeuvre d’un produit est de disposer de suffisamment d’échantillons de code et/ou de démonstrations en direct de ces exemples, outils ou API. L’objectif de cette série est de fournir des informations utiles sur AEM as a Cloud Service en 5 minutes ou moins.
+Bienvenue dans la série Cloud 5 des équipes d’ingénierie d’AEM. L’un des principaux problèmes de la phase de mise en œuvre d’un produit est de disposer de suffisamment d’exemples de code et/ou de démonstrations en direct de ces exemples, outils ou API. L’objectif de cette série est de fournir des informations utiles sur AEM as a Cloud Service en 5 minutes ou moins.
 
-Visitez le [Zone de suggestion](https://forms.office.com/r/74P5Xz4UH0) pour soumettre des idées de rubrique.
+Consultez la [zone de suggestion](https://forms.office.com/r/74P5Xz4UH0) pour soumettre des idées de sujet.
 
 ## Saison 1
 
-Chaque saison varie en longueur et est diffusée selon un calendrier fixe. Les sujets de la saison 1 proviennent principalement des demandes antérieures que nous avons rencontrées dans nos interactions quotidiennes avec des clients et des partenaires. Consultez cette page pour des mises à jour hebdomadaires ou suivez-nous sur le réseau social de votre choix.
+Chaque saison varie en longueur et est diffusée selon un planning fixe. Les sujets de la saison 1 proviennent principalement des demandes antérieures issues de nos interactions quotidiennes avec des clientes et clients et des partenaires. Consultez cette page pour des mises à jour hebdomadaires ou suivez-nous sur le réseau social de votre choix.
 
 <table>
   <tr>
@@ -33,12 +33,12 @@ Chaque saison varie en longueur et est diffusée selon un calendrier fixe. Les s
       <img alt="Réseau CDN AEM Partie 1" src="./imgs/001-thumb.png"/>
       </a>
       <div>
-         <a href="./cloud5-aem-cdn-part1.md"><strong>AEM plongée profonde sur le réseau CDN (partie 1)</strong></a>         
-         <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
+         <a href="./cloud5-aem-cdn-part1.md"><strong>Analyse approfondie du réseau CDN d’AEM (partie 1)</strong></a>
+<br/><em>avec Darin Kuntze et James Talbot, architectes cloud senior</em>
       </div>
       <p>
         <br/>
-         La partie 1 porte sur le réseau de diffusion de contenu d’AEM as a Cloud Service et sur la manière de l’utiliser dans votre mise en oeuvre.
+La partie 1 porte sur le réseau CDN d’AEM as a Cloud Service et sur la manière de l’utiliser dans votre implémentation.
       </p>
      </td>   
      <td>
@@ -46,25 +46,25 @@ Chaque saison varie en longueur et est diffusée selon un calendrier fixe. Les s
          <img alt="Réseau CDN AEM Partie 2" src="./imgs/002-thumb.png"/>
       </a>
       <div>
-         <a href="./cloud5-aem-cdn-part2.md"><strong>Séance approfondie sur le réseau de diffusion de contenu AEM (partie 2)</strong></a>
-         <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
+         <a href="./cloud5-aem-cdn-part2.md"><strong>Analyse approfondie du réseau CDN d’AEM (partie 2)</strong></a>
+<br/><em>avec Darin Kuntze et James Talbot, architectes cloud senior</em>
       </div>
       <p>
         <br/>
-         La partie 2 est la suite de notre analyse du réseau de diffusion de contenu as a Cloud Service AEM. Nous répondons à quelques-unes des questions et mythes les plus courants sur les fonctionnalités que vous obtenez du nouveau réseau de diffusion de contenu.
+La partie 2 est la suite de notre analyse du réseau CDN d’AEM as a Cloud Service. Nous répondons aux questions et mythes les plus courants sur les fonctionnalités que vous obtenez avec le nouveau réseau CDN.
       </p>
    </td>
      <td>
         <a href="./cloud5-aem-log-files.md">
-            <img alt="Fichiers journaux et journaux" src="./imgs/003-thumb.png"/>
+            <img alt="Fichiers journaux et journalisation" src="./imgs/003-thumb.png"/>
         </a>
       <div>
-         <a href="./cloud5-aem-log-files.md"><strong>Fichiers journaux et journaux</strong></a>
-         <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
+         <a href="./cloud5-aem-log-files.md"><strong>Fichiers journaux et journalisation</strong></a>
+<br/><em>avec Darin Kuntze et James Talbot, architectes cloud senior</em>
       </div>
       <p>
         <br/>
-         Il s’agit d’un aperçu rapide de la manière dont accéder aux journaux dans AEM as a Cloud Service, y compris comment y accéder via l’interface utilisateur ainsi que depuis les API.
+Il s’agit d’un aperçu de la manière d’accéder aux journaux dans AEM as a Cloud Service, à partir de l’interface utilisateur ainsi que depuis les API.
       </p>
    </td> 
   </tr>
@@ -74,12 +74,12 @@ Chaque saison varie en longueur et est diffusée selon un calendrier fixe. Les s
             <img alt="Jetons d’accès" src="./imgs/004-thumb.png"/>
         </a>
       <div>
-        <a href="./cloud5-getting-login-token-integrations.md"><strong>Intégration des jetons d’accès</strong></a>        
-         <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
+        <a href="./cloud5-getting-login-token-integrations.md"><strong>Intégration des jetons d’accès</strong></a>
+<br/><em>avec Darin Kuntze et James Talbot, architectes cloud senior</em>
       </div>
       <p>
         <br/>
-         Présentation rapide et démonstration de l’interaction avec les jetons de connexion pour le travail d’intégration dans les environnements de service cloud.
+Vue d’ensemble rapide et démonstration de l’interaction avec les jetons de connexion pour le travail d’intégration dans les environnements de service cloud.
       </p>
      </td>   
      <td>
@@ -88,79 +88,79 @@ Chaque saison varie en longueur et est diffusée selon un calendrier fixe. Les s
        </a>  
       <div>
         <a href="./cloud5-aem-dispatcher-cloud.md"><strong>Dispatcher en mode cloud</strong></a>
-         <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
+<br/><em>avec Darin Kuntze et James Talbot, architectes cloud senior</em>
       </div>
       <p>
         <br/>
-        Darin et James discutent du Dispatcher dans AEM Cloud, notamment de certaines bonnes pratiques et différences par rapport à AMS/On-Prem. 
+Darin et James parlent du Dispatcher dans le cloud AEM, notamment de certaines bonnes pratiques et différences par rapport à AMS/On-Prem. 
       </p>
    </td>
      <td>
         <a href="./cloud5-aem-content-migration-part-1.md">
-            <img alt="Migration (partie 1)" src="./imgs/006-thumb.png"/>
+            <img alt="Migration (partie 1)" src="./imgs/006-thumb.png"/>
         </a>
       <div>
-         <a href="./cloud5-aem-content-migration-part-1.md"><strong>Migration (partie 1)</strong></a>
-         <br/><em>avec Darin Kuntze et James Talbot, Senior Cloud Architects &amp; Dr. Applesmith</em>
+         <a href="./cloud5-aem-content-migration-part-1.md"><strong>Migration (partie 1)</strong></a>
+<br/><em>avec Darin Kuntze et James Talbot, architectes cloud senior, et Dr Applesmith</em>
       </div>
       <p>
         <br/>
-         Première partie (de deux) de nos conseils et astuces pour la migration vers le cloud. Notre Principale priorité dans la première partie est la bonne pratique et la préparation qui vous permettent de migrer.
+Partie 1 (sur deux) de nos conseils et astuces pour la migration vers le cloud. Dans la première partie, nous nous concentrons sur les bonnes pratiques et la préparation qui vous permettent de migrer.
       </p>
    </td> 
   </tr>
 <tr>
    <td>
         <a href="./cloud5-aem-content-migration-part-2.md">
-            <img alt="Migration (partie 2)" src="./imgs/007-thumb.png"/>
+            <img alt="Migration (partie 2)" src="./imgs/007-thumb.png"/>
         </a>
       <div>
-        <a href="./cloud5-aem-content-migration-part-2.md"><strong>Migration (partie 2)</strong></a>     
-         <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
+        <a href="./cloud5-aem-content-migration-part-2.md"><strong>Migration (partie 2)</strong></a>
+<br/><em>avec Darin Kuntze et James Talbot, architectes cloud senior</em>
       </div>
       <p>
         <br/>
-         Partie deux (de deux) de nos conseils et astuces pour la migration vers le cloud. La deuxième partie porte principalement sur l’utilisation des outils disponibles pour la migration.
+Partie 2 (sur deux) de nos conseils et astuces pour la migration vers le cloud. La deuxième partie porte principalement sur l’utilisation des outils disponibles pour la migration.
       </p>
      </td>   
      <td>
         <a href="./cloud5-aem-dispatcher-validator.md">
-            <img alt="Validateur du Dispatcher" src="./imgs/008-thumb.png"/>
+            <img alt="Programme de validation du Dispatcher" src="./imgs/008-thumb.png"/>
         </a>
       <div>
-         <a href="./cloud5-aem-dispatcher-validator.md"><strong>Dispatcher Validator</strong></a>
-         <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
+         <a href="./cloud5-aem-dispatcher-validator.md"><strong>Programme de validation du Dispatcher</strong></a>
+<br/><em>avec Darin Kuntze et James Talbot, architectes cloud senior</em>
       </div>
       <p>
         <br/>
-         Une capture d’écran des discussions précédentes sur la migration, nous examinons le programme de validation du Dispatcher et certaines des tâches qu’il peut réaliser.
+Dans le prolongement des discussions précédentes sur la migration, nous examinons le programme de validation du Dispatcher et les tâches qu’il peut réaliser.
       </p>
    </td>
      <td>
         <a href="./cloud5-aem-search-and-indexing.md">
-            <img alt="Indexation et conseils de recherche" src="./imgs/009-thumb.png"/>
+            <img alt="Conseils pour l’indexation et la recherche" src="./imgs/009-thumb.png"/>
         </a>
       <div>
-         <a href="./cloud5-aem-search-and-indexing.md"><strong>Indexation et conseils de recherche</strong></a>
-         <br/><em>Darin Kuntze et James Talbot, architectes senior du cloud</em>
+         <a href="./cloud5-aem-search-and-indexing.md"><strong>Conseils pour l’indexation et la recherche</strong></a>
+<br/><em>avec Darin Kuntze et James Talbot, architectes cloud senior</em>
       </div>
       <p>
         <br/>
-         Pour quelque chose d’aussi complexe que l’indexation et la recherche, l’équipe vous montre quelques victoires faciles pour optimiser votre temps de développement et résoudre les problèmes avant qu’ils ne deviennent des problèmes.
+Pour quelque chose d’aussi complexe que l’indexation et la recherche, l’équipe vous montre des solutions faciles pour optimiser votre temps de développement et résoudre les problèmes de manière proactive.
       </p>
    </td> 
   </tr>
     <tr>
         <td>
             <a href="./cloud5-adobe-app-builder.md">
-                <img alt="Adobe App Builder" src="./imgs/010-thumb.png"/>
+                <img alt="Créateur d’applications Adobe" src="./imgs/010-thumb.png"/>
             </a>
             <div>
-                <a href="./cloud5-adobe-app-builder.md"><strong>Adobe App Builder</strong></a><br/>        
-                <em>avec Darin Kuntze et James Talbot, Senior Cloud Architects &amp; Amol Anand</em>
+                <a href="./cloud5-adobe-app-builder.md"><strong>Créateur d’applications Adobe</strong></a><br/>
+<em>avec Darin Kuntze et James Talbot, architectes cloud senior, et Amol Anand</em>
             </div>
             <p><br/>
-                Découvrez des choses intéressantes que vous pouvez faire avec Adobe App Builder et découvrez quelque chose de nouveau sur l’avenir des personnalisations dans le cloud.
+                Observez des choses intéressantes que vous pouvez faire avec le créateur d’applications Adobe et découvrez quelque chose de nouveau sur l’avenir des personnalisations dans le cloud.
             </p>
         </td>
         <td></td>
