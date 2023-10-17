@@ -1,6 +1,6 @@
 ---
-title: Comment appliquer une stratégie créée à l’aide du module Document Security dans Acrobat
-description: Configuration d’Acrobat pour appliquer une stratégie à un document à l’aide de Document Security
+title: Appliquer une politique créée à l’aide du module Document Security dans Acrobat
+description: Configurer Acrobat pour appliquer une stratégie à un document à l’aide de Document Security
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -10,14 +10,14 @@ topic: Development
 index: y
 exl-id: 086afdf4-c9a4-4bb9-b242-e6337281ef9b
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '49'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Comment appliquer une stratégie créée à l’aide du module Document Security dans Acrobat
+# Appliquer une politique créée à l’aide du module Document Security dans Acrobat
 
-*Cette vidéo décrit le processus d’application de stratégies créées à l’aide du module Document Security dans Acrobat.*
+*Cette vidéo décrit le processus d’application de stratégies créées à l’aide du module Document Security dans Acrobat.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335486?quality=12&learn=on)
