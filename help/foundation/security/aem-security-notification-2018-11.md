@@ -52,4 +52,3 @@ Cet article traite de quelques vulnérabilités, récentes et anciennes, récemm
 >* [Guide d’utilisation d’AEM Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/user-guide.html)
 >* [Notes de mise à jour d’AEM Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/release-notes.html)
 >* [Bulletins de sécurité AEM](https://helpx.adobe.com/fr/security.html#experience-manager)
-
