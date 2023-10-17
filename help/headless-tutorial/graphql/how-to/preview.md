@@ -1,6 +1,6 @@
 ---
-title: Aperçu du fragment de contenu
-description: Découvrez comment utiliser l’aperçu de fragment de contenu pour tous les auteurs afin de voir rapidement comment les modifications de contenu affectent vos expériences AEM sans affichage.
+title: Prévisualiser le fragment de contenu
+description: Découvrez comment utiliser la prévisualisation de fragment de contenu pour les auteurs et autrices afin de voir rapidement comment les modifications de contenu affectent vos expériences AEM Headless.
 version: Cloud Service
 feature: Content Fragments
 topic: Headless, Content Management, Development
@@ -10,74 +10,74 @@ doc-type: Tutorial
 last-substantial-update: 2023-03-17T00:00:00Z
 jira: KT-10841
 thumbnail: 3416906.jpeg
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
-workflow-type: tm+mt
+exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '513'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Prévisualiser le fragment de contenu
 
-# Aperçu du fragment de contenu
-
-Les applications AEM sans affichage prennent en charge la prévisualisation de création intégrée. L’expérience d’aperçu relie l’éditeur de fragment de contenu de l’auteur AEM à votre application personnalisée (accessible via HTTP), ce qui permet d’insérer un lien profond dans l’application qui effectue le rendu du fragment de contenu en cours de prévisualisation.
+Les applications AEM Headless prennent en charge la prévisualisation de création intégrée. L’expérience de prévisualisation relie l’éditeur de fragment de contenu de l’instance de création d’AEM à votre application personnalisée (adressable via HTTP), ce qui permet d’insérer un lien profond dans l’application qui effectue le rendu du fragment de contenu en cours de prévisualisation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
 
-Pour utiliser l’aperçu du fragment de contenu, plusieurs conditions doivent être remplies :
+Pour utiliser la prévisualisation du fragment de contenu, plusieurs conditions doivent être remplies :
 
-1. L’application doit être déployée vers une URL accessible aux auteurs.
-1. L’application doit être configurée pour se connecter au service AEM Author (plutôt qu’au service AEM Publish).
-1. L’application doit être conçue avec des URL ou des itinéraires pouvant utiliser [Chemin ou identifiant du fragment de contenu](#url-expressions) pour sélectionner les fragments de contenu à afficher en vue d’un aperçu dans l’expérience de l’application.
+1. L’application doit être déployée vers une URL accessible aux auteurs et autrices.
+1. L’application doit être configurée pour se connecter au service de création AEM (plutôt qu’au service de publication AEM).
+1. L’application doit être conçue avec des URL ou des itinéraires pouvant utiliser [un chemin ou un identifiant du fragment de contenu](#url-expressions) pour sélectionner les fragments de contenu à afficher en vue d’une prévisualisation dans l’expérience de l’application.
 
-## URL d’aperçu
+## URL de prévisualisation
 
-URL d’aperçu, à l’aide de [Expressions d’URL](#url-expressions), sont définis sur les propriétés du modèle de fragment de contenu.
+Les URL de prévisualisation, à l’aide des [expressions d’URL](#url-expressions), sont définies sur les propriétés du modèle de fragment de contenu.
 
-![URL d’aperçu du modèle de fragment de contenu](./assets/preview/cf-model-preview-url.png)
+![URL de prévisualisation du modèle de fragment de contenu.](./assets/preview/cf-model-preview-url.png)
 
-1. Connectez-vous au service Auteur AEM en tant qu’administrateur.
-1. Accédez à __Outils > Général > Modèles de fragment de contenu__
-1. Sélectionnez la __Modèle de fragment de contenu__ et sélectionnez __Propriétés__ dans la barre d’actions supérieure.
-1. Saisissez l’URL d’aperçu du modèle de fragment de contenu à l’aide de [Expressions d’URL](#url-expressions)
-   + L’URL d’aperçu doit pointer vers un déploiement de l’application qui se connecte au service AEM Author.
+1. Connectez-vous au service de création AEM en tant qu’administrateur ou administratrice.
+1. Accédez à __Outils > Général > Modèles de fragment de contenu__.
+1. Sélectionnez le __modèle de fragment de contenu__ et sélectionnez __Propriétés__ dans la barre d’action supérieure.
+1. Saisissez l’URL de prévisualisation du modèle de fragment de contenu à l’aide des [expressions d’URL](#url-expressions).
+   + L’URL de prévisualisation doit pointer vers un déploiement de l’application qui se connecte au service de création AEM.
 
 ### Expressions d’URL
 
-Un URL d’aperçu peut être défini pour chaque modèle de fragment de contenu. L’URL d’aperçu peut être paramétrée par fragment de contenu à l’aide des expressions d’URL répertoriées dans le tableau ci-dessous. Plusieurs expressions d’URL peuvent être utilisées dans une seule URL d’aperçu.
+Une URL de prévisualisation peut être définie pour chaque modèle de fragment de contenu. L’URL de prévisualisation peut être paramétrée par fragment de contenu à l’aide des expressions d’URL répertoriées dans le tableau ci-dessous. Plusieurs expressions d’URL peuvent être utilisées dans une seule URL de prévisualisation.
 
-|  | Expression d’URL | Valeur  |
+|                                         | Expression d’URL | Valeur |
 | --------------------------------------- | ----------------------------------- | ----------- |
 | Chemin du fragment de contenu | `${contentFragment.path}` | `/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali` |
 | Identifiant du fragment de contenu | `${contentFragment.id}` | `12c34567-8901-2aa3-45b6-d7890aa1c23c` |
 | Variation de fragment de contenu | `${contentFragment.variation}` | `main` |
-| Chemin du modèle de fragment de contenu | `${contentFragment.model.path}` | `/conf/wknd-shared/settings/dam/cfm/models/adventure` |
-| Nom du modèle de fragment de contenu | `${contentFragment.model.name}` | `adventure` |
+| Chemin de modèle de fragment de contenu | `${contentFragment.model.path}` | `/conf/wknd-shared/settings/dam/cfm/models/adventure` |
+| Nom de modèle de fragment de contenu | `${contentFragment.model.name}` | `adventure` |
 
-Exemples d’URL d’aperçu :
+Exemples d’URL de prévisualisation :
 
-+ Une URL d’aperçu sur la __Adventure__ modèle pourrait ressembler à `https://preview.app.wknd.site/adventure${contentFragment.path}` qui résout sur `https://preview.app.wknd.site/adventure/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali`
-+ Une URL d’aperçu sur la __Article__ modèle pourrait ressembler à `https://preview.news.wknd.site/${contentFragment.model.name}/${contentFragment.id}.html?variation=${contentFragment.variation}` la résolution `https://preview.news.wknd.site/article/99c34317-1901-2ab3-35b6-d7890aa1c23c.html?variation=main`
++ Une URL de prévisualisation sur le modèle __Adventure__ pourrait ressembler à `https://preview.app.wknd.site/adventure${contentFragment.path}` qui se résout en `https://preview.app.wknd.site/adventure/content/dam/wknd-shared/en/adventures/surf-camp-bali/surf-camp-bali`.
++ Une URL de prévisualisation sur le modèle __Article__ pourrait ressembler à `https://preview.news.wknd.site/${contentFragment.model.name}/${contentFragment.id}.html?variation=${contentFragment.variation}` qui se résout en `https://preview.news.wknd.site/article/99c34317-1901-2ab3-35b6-d7890aa1c23c.html?variation=main`.
 
-## Aperçu in-app
+## Prévisualisation in-app
 
-Tout fragment de contenu utilisant le modèle de fragment de contenu configuré comporte un bouton Aperçu . Le bouton Aperçu ouvre l’URL d’aperçu du modèle de fragment de contenu et injecte les valeurs du fragment de contenu ouvert dans la variable [Expressions d’URL](#url-expressions).
+Tout fragment de contenu utilisant le modèle de fragment de contenu configuré comporte un bouton Prévisualisation. Le bouton Prévisualisation ouvre l’URL de prévisualisation du modèle de fragment de contenu et injecte les valeurs du fragment de contenu ouvert dans les [expressions d’URL](#url-expressions).
 
-![Bouton Aperçu](./assets/preview/preview-button.png)
+![Bouton Aperçu.](./assets/preview/preview-button.png)
 
-Effectuez une actualisation stricte (effacer le cache local du navigateur) lors de la prévisualisation des modifications du fragment de contenu dans l’application.
+Effectuez une actualisation stricte (qui efface le cache local du navigateur) lors de la prévisualisation des modifications du fragment de contenu dans l’application.
 
-## Exemple React
+## Exemple pour React
 
-Explorons l’application WKND, une application React simple qui présente les aventures d’AEM en utilisant AEM API GraphQL sans affichage.
+Explorons l’application WKND, une application React simple qui présente les aventures d’AEM en utilisant des API GraphQL AEM Headless.
 
 L’exemple de code est disponible sur [Github.com](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/preview-tutorial).
 
 ## URL et itinéraires
 
-Les URL ou les itinéraires utilisés pour prévisualiser un fragment de contenu doivent pouvoir être composites à l’aide de [Expressions d’URL](#url-expressions). Dans cette version de l’application WKND avec prévisualisation, les fragments de contenu aventure s’affichent via le `AdventureDetail` composant lié à l’itinéraire `/adventure<CONTENT FRAGMENT PATH>`. Par conséquent, l’URL d’aperçu du modèle WKND Adventure doit être définie sur `https://preview.app.wknd.site:3000/adventure${contentFragment.path}` pour résoudre ce problème.
+Les URL ou les itinéraires utilisés pour prévisualiser un fragment de contenu doivent pouvoir être composables à l’aide des [expressions d’URL](#url-expressions). Dans cette version avec prévisualisation de l’application WKND, les fragments de contenu d’aventure s’affichent via le composant `AdventureDetail` lié à l’itinéraire `/adventure<CONTENT FRAGMENT PATH>`. Par conséquent, l’URL de prévisualisation du modèle WKND Adventure doit être définie sur `https://preview.app.wknd.site:3000/adventure${contentFragment.path}` pour résoudre cet itinéraire.
 
-L’aperçu de fragment de contenu ne fonctionne que si l’application dispose d’un itinéraire adressable pouvant être renseigné par [Expressions d’URL](#url-expressions) qui restituent ce fragment de contenu dans l’application d’une manière prévisualisable.
+La prévisualisation de fragment de contenu ne fonctionne que si l’application dispose d’un itinéraire adressable pouvant être renseigné par des [expressions d’URL](#url-expressions) qui effectuent le rendu de ce fragment de contenu dans l’application d’une manière prévisualisable.
 
 + `src/App.js`
 
@@ -108,7 +108,7 @@ export default App;
 
 ### Afficher le contenu créé
 
-Le `AdventureDetail` Le composant analyse simplement le chemin d’accès au fragment de contenu, injecté dans l’URL d’aperçu via la propriété `${contentFragment.path}` [Expression d’URL](#url-expressions), à partir de l’URL de l’itinéraire et l’utilise pour collecter et effectuer le rendu de WKND Adventure.
+Le composant `AdventureDetail` analyse simplement le chemin d’accès au fragment de contenu, injecté dans l’URL de prévisualisation via l’[expression d’URL](#url-expressions) `${contentFragment.path}`, à partir de l’URL de l’itinéraire, et l’utilise pour collecter et effectuer le rendu de WKND Adventure.
 
 + `src/components/AdventureDetail.js`
 
