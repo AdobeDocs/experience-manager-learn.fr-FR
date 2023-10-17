@@ -1,6 +1,6 @@
 ---
-title: Installation de l’édition de la communauté IntelliJ
-description: Installation et importation du projet AEM dans IntelliJ
+title: Installer IntelliJ Community Edition
+description: Installer et importer le projet AEM dans IntelliJ
 solution: Experience Manager
 type: Documentation
 role: Developer
@@ -10,38 +10,38 @@ topic: Development
 kt: 8843
 exl-id: 34840d28-ad47-4a69-b15d-cd9593626527
 source-git-commit: 10ff0d87991d7766d5ca9563062a2f7be6035e43
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '226'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Installation d’IntelliJ
+# Installer IntelliJ
 
-Installer [Edition de la communauté IntelliJ](https://www.jetbrains.com/idea/download/#section=windows). Vous pouvez accepter les paramètres par défaut lors de l’installation.
+Installez [IntelliJ Community Edition](https://www.jetbrains.com/idea/download/#section=windows). Vous pouvez accepter les paramètres par défaut suggérés lors de l’installation.
 
-## Importation du projet AEM
+## Importer le projet AEM
 
-* Launch IntelliJ
-* Importez le projet AEM que vous avez créé à l’étape précédente. Une fois le projet importé, votre écran doit ressembler à ceci : ![aem-banking-app](assets/aem-banking-app.png). Vous travaillez généralement avec les sous-projets core, ui.apps, ui.config et ui.content .
-* Si vous ne voyez pas la fenêtre Maven et Terminal, accédez à view->Tools Window et sélectionnez Maven and Terminal.
+* Lancer IntelliJ
+* Importez le projet AEM que vous avez créé à l’étape précédente. Une fois le projet importé, votre écran doit ressembler à ceci : ![aem-banking-app](assets/aem-banking-app.png). Vous travaillez généralement avec les sous-projets principaux, ui.apps, ui.config et ui.content.
+* Si vous ne voyez pas la fenêtre Maven et Terminal, accédez à la fenêtre Afficher > Outils et sélectionnez Maven et Terminal.
 
-## Ajout du module polices
+## Ajouter le module des polices
 
-Si vous souhaitez utiliser des polices personnalisées dans votre fichier de PDF, vous devrez transmettre les polices personnalisées à l’instance AEM Forms CS. Suivez les étapes suivantes :
+Si vous souhaitez utiliser des polices personnalisées dans votre fichier PDF, vous devrez transmettre les polices personnalisées à l’instance AEM Forms CS. Veuillez suivre les étapes suivantes :
 
-* Créez un dossier appelé **polices** dans C:\CloudManager\aem-banking-application
-* Extraire le contenu de [font.zip](assets/fonts.zip) dans le dossier des polices nouvellement créé.
-* Certaines polices personnalisées sont incluses dans le module Polices. Vous pouvez ajouter les polices personnalisées de votre entreprise au dossier C:\CloudManager\aem-banking-application\fonts\src\main\resources folder of the fonts module
-* Ouvrez le fichier C:\CloudManager\aem-banking-application\pom.xml .
-* Ajoutez la ligne suivante :  ```<module>fonts</module>``` dans la section modules du fichier pom.xml
-* Enregistrez votre fichier pom.xml
-* Actualisez le projet aem-banking-application dans IntelliJ
+* Créez un dossier appelé **fonts** dans C:\CloudManager\aem-banking-application
+* Extrayez le contenu de [font.zip](assets/fonts.zip) dans le dossier fonts (polices) nouvellement créé.
+* Certaines polices personnalisées sont incluses dans le module des polices. Vous pouvez ajouter les polices personnalisées de votre organisation au dossier C:\CloudManager\aem-banking-application\fonts\src\main\resources du module des polices.
+* Ouvrez le fichierC:\CloudManager\aem-banking-application\pom.xml.
+* Ajoutez la ligne suivante ```<module>fonts</module>``` dans la section de modules du fichier pom.xml.
+* Enregistrez votre fichier pom.xml.
+* Actualisez le projet aem-banking-application dans IntelliJ.
 
-Structure du projet avec module de polices
+Structure du projet avec module des polices
 ![fonts-module](assets/fonts-module.png)
 
-Module Polices inclus dans le POM des projets
+Module des polices inclus dans le fichier POM des projets
 ![fonts-pom](assets/fonts-module-pom.png)
 
 ## Étapes suivantes
