@@ -13,9 +13,9 @@ role: Developer
 level: Beginner
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
 source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1621'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Découvrez comment plusieurs vues de la SPA peuvent être prises en charge par u
 
 ## Ce que vous allez créer
 
-Ce chapitre ajoute une navigation à une SPA dans AEM. Le menu de navigation est piloté par la hiérarchie de pages d’AEM et utilise le modèle JSON fourni par le [Composant principal de navigation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html).
+Ce chapitre ajoute une navigation à une SPA dans AEM. Le menu de navigation est piloté par la hiérarchie de pages d’AEM et utilise le modèle JSON fourni par le [Composant principal de navigation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html?lang=fr).
 
 ![Navigation ajoutée.](assets/navigation-routing/navigation-added.png)
 
