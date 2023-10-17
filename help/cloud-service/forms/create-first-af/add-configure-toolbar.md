@@ -1,5 +1,5 @@
 ---
-title: Ajout et configuration de la barre d’outils
+title: Ajouter et configurer la barre d’outils
 description: Ajout de la possibilité de naviguer entre les panneaux de formulaire.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
@@ -12,13 +12,13 @@ kt: 7389
 thumbnail: 332236.jpg
 exl-id: 3155059c-fbe6-4b9a-8ef3-8f152658e1af
 source-git-commit: 2f619bc6ebaae36c8b9d05d8c4ff5c1cc8c18332
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '48'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Ajout et configuration de la barre d’outils
+# Ajouter et configurer la barre d’outils
 
 La barre d’outils est généralement ajoutée au niveau du conteneur de formulaires. La barre d’outils peut contenir des boutons pour accéder aux panneaux suivant et précédent de votre formulaire, envoyer le formulaire, enregistrer les données du formulaire, etc.
 
