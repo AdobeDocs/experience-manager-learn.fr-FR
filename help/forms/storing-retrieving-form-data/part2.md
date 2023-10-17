@@ -1,6 +1,6 @@
 ---
-title: Stockage et récupération des données de formulaire de la base de données MySQL - Servlet pour stocker des données de formulaire
-description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes impliquées dans le stockage et la récupération des données de formulaire
+title: Stocker et récupérer les données de formulaire à partir d’un servlet de la base de données MySQL pour stocker des données de formulaire
+description: Tutoriel en plusieurs parties détaillant les étapes impliquées dans le stockage et la récupération des données de formulaire
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -9,15 +9,15 @@ role: Developer
 level: Experienced
 exl-id: dd82f309-dd4e-42ce-8856-e51c898024f5
 source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '95'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Servlet de stockage des données de formulaire
 
-L’étape suivante consiste à créer un servlet qui insère ou met à jour les données de formulaire. Le servlet appelle les méthodes appropriées du service OSGi pour insérer ou mettre à jour la base de données. Les données de formulaire adaptatif stockées sont associées à un GUID. Le même GUID est ensuite utilisé pour mettre à jour les données de formulaire. Cette servlet est appelée lorsque l’utilisateur clique sur le bouton &quot;SaveAndContinueLater&quot;.
+L’étape suivante consiste à créer un servlet qui insère ou met à jour les données de formulaire. Le servlet appelle les méthodes appropriées du service OSGi pour insérer ou mettre à jour la base de données. Les données de formulaire adaptatif stockées sont associées à un GUID. Le même GUID est ensuite utilisé pour mettre à jour les données de formulaire. Ce servlet est appelé lorsque l’utilisateur ou l’utilisatrice clique sur le bouton « SaveAndContinueLater ».
 
 ```java
 package com.aemforms.saveandcontinue.core.servlets;
