@@ -319,6 +319,6 @@ La vue principale de l’application React WKND vous permet de filtrer ces Adven
 * Un clic sur l’option d’emplacement désirée dans la liste doit afficher uniquement les Adventures correspondantes.
 * Si une seule Adventure correspond, la vue Détails de l’Adventure s’affiche.
 
-## Félicitations
+## Félicitations.
 
 Félicitations. Vous avez maintenant terminé l’intégration et l’implémentation des requêtes persistantes dans l’exemple d’application WKND.
