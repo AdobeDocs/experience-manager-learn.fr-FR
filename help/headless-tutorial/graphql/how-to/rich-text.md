@@ -10,9 +10,9 @@ level: Intermediate
 role: Developer
 exl-id: 790a33a9-b4f4-4568-8dfe-7e473a5b68b6
 source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1465'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -473,7 +473,7 @@ Dans la requête ci-dessus, le champ `main` est renvoyé en tant que JSON. L’o
 }
 ```
 
-La réponse JSON inclut l’emplacement où la référence a été insérée dans le texte enrichi avec `"nodeType": "reference"`. Le `_references` inclut ensuite chaque référence.
+La réponse JSON inclut l’emplacement où la référence a été insérée dans le texte enrichi avec `"nodeType": "reference"`. L’objet `_references` inclut ensuite chaque référence.
 
 ## Effectuer le rendu de références intégrées dans du texte enrichi
 
@@ -536,7 +536,7 @@ Vous trouverez un exemple complet d’écriture d’un générateur de rendu de 
 
 >[!NOTE]
 >
-> La vidéo ci-dessus utilise `_publishUrl` pour effectuer le rendu de la référence de l’image. Au lieu de cela, préférez `_dynamicUrl` comme expliqué dans la section [procédures relatives aux images optimisées pour le web](./images.md);
+> La vidéo ci-dessus utilise `_publishUrl` pour effectuer le rendu de la référence de l’image. Préférez plutôt `_dynamicUrl` comme expliqué dans les [procédures relatives aux images optimisées pour le web](./images.md).
 
 
 La vidéo précédente présente un exemple de bout en bout :
