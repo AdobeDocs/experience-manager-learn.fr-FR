@@ -1,6 +1,6 @@
 ---
-title: Créez une Live Copy
-description: Découvrez comment créer une Live Copy pour votre site à partir d’un plan directeur à l’aide de l’assistant Créer une Live Copy .
+title: Créer une Live Copy
+description: Découvrez comment créer une Live Copy pour votre site à partir d’un plan directeur à l’aide de l’assistant Créer une Live Copy.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -14,14 +14,14 @@ role: User
 level: Beginner
 exl-id: 44540dee-909b-4140-b007-402ef9af58c4
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
-ht-degree: 17%
+ht-degree: 100%
 
 ---
 
-# Créez une Live Copy {#create-livecopy}
+# Créer une Live Copy {#create-livecopy}
 
-Découvrez comment créer une Live Copy pour votre site à partir d’un plan directeur à l’aide de l’assistant Créer une Live Copy .
+Découvrez comment créer une Live Copy pour votre site à partir d’un plan directeur à l’aide de l’assistant Créer une Live Copy.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36677?quality=12&learn=on)
