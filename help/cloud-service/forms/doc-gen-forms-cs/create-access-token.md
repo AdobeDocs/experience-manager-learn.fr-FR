@@ -1,6 +1,6 @@
 ---
-title: Exchange JWT pour le jeton d’accès
-description: Échangez le jeton Web JSON (JWT) avec les API Adobe IMS pour un jeton d’accès AEM.
+title: Exchanger un jeton JWT contre un jeton d’accès
+description: Échangez le jeton web JSON (JWT) avec les API Adobe IMS contre un jeton d’accès AEM.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -11,18 +11,18 @@ kt: 8185
 thumbnail: KT-8185.jpg
 exl-id: ab7b8a06-3009-477d-9e98-590912e8e176
 source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '87'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Exchange JWT pour le jeton d’accès
+# Exchanger un jeton JWT contre un jeton d’accès
 
 
-Le jeton JWT créé à l’étape précédente est échangé avec les API Adobe IMS pour un jeton d’accès, qui peut ensuite être utilisé pour accéder à AEM as a Cloud Service. Pour demander un jeton d’accès, envoyez une demande de POST contenant le JWT, client_id, client_secret au service d’authentification IMS.
+Le jeton JWT créé à l’étape précédente est échangé avec les API Adobe IMS contre un jeton d’accès, qui peut ensuite être utilisé pour accéder à AEM as a Cloud Service. Pour demander un jeton d’accès, envoyez une requête POST contenant le jeton JWT, le client_id et le client_secret au service d’authentification IMS.
 
-Le code suivant a été utilisé pour générer l’échange JWT pour le jeton d’accès.
+Le code suivant a été utilisé pour générer l’échange du jeton JWT contre le jeton d’accès.
 
 ```java
 public String getAccessToken() {
