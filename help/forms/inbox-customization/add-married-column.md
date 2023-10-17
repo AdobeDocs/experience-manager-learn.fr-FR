@@ -1,5 +1,5 @@
 ---
-title: Ajout de colonnes personnalisées
+title: Ajouter des colonnes personnalisées
 description: Ajouter des colonnes personnalisées pour afficher les données additionnelles du workflow
 feature: Adaptive Forms
 topics: development
@@ -13,25 +13,25 @@ role: Developer
 level: Experienced
 exl-id: 0b141b37-6041-4f87-bd50-dade8c0fee7d
 source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '311'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
-# Ajout de colonnes personnalisées 
+# Ajouter des colonnes personnalisées
 
-Pour afficher les données de workflow dans la boîte de réception, nous devons définir et renseigner les variables dans le workflow. La valeur de la variable doit être définie avant qu’une tâche ne soit affectée à un utilisateur. Pour démarrer, nous vous avons fourni un exemple de workflow prêt à être déployé sur votre serveur AEM.
+Pour afficher les données de workflow dans la boîte de réception, nous devons définir et renseigner les variables dans le workflow. La valeur de la variable doit être définie avant qu’une tâche ne soit affectée à un utilisateur ou une utilisatrice. Pour démarrer, nous vous avons fourni un exemple de workflow prêt à être déployé sur votre serveur AEM.
 
 * [Connexion à AEM](http://localhost:4502/crx/de/index.jsp)
-* [Importation du processus de révision](assets/review-workflow.zip)
+* [Import du workflow de révision](assets/review-workflow.zip)
 * [Vérification du workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/reviewworkflow.html)
 
-Deux variables sont définies pour ce workflow (isMarié et revenu) et ses valeurs sont définies à l’aide du composant de variable définie. Ces variables sont disponibles sous forme de colonnes à ajouter à AEM boîte de réception
+Deux variables sont définies pour ce workflow (isMarried et income) et ses valeurs sont définies à l’aide du composant de définition de la variable. Ces variables sont disponibles sous forme de colonnes à ajouter à la boîte de réception AEM.
 
 ## Créer un service
 
-Pour chaque colonne que nous devons afficher dans notre boîte de réception, nous devons écrire un service. Le service suivant nous permet d’ajouter une colonne pour afficher la valeur de la variable isMarry .
+Pour chaque colonne que nous devons afficher dans notre boîte de réception, nous devons écrire un service. Le service suivant nous permet d’ajouter une colonne pour afficher la valeur de la variable isMarried.
 
 ```java
 import com.adobe.cq.inbox.ui.column.Column;
@@ -75,27 +75,27 @@ return isMarried(inboxItem);
 
 >[!NOTE]
 >
->Vous devez inclure AEM 6.5.5 Uber.jar dans votre projet pour que le code ci-dessus fonctionne.
+>Vous devez inclure AEM 6.5.5 Uber.jar dans votre projet pour que le code ci-dessus fonctionne.
 
 ![uber-jar](assets/uber-jar.PNG)
 
-## Test sur votre serveur
+## Tester sur votre serveur
 
-* [Connexion à AEM console web](http://localhost:4502/system/console/bundles)
-* [Déploiement et démarrage du lot de personnalisation de la boîte de réception](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
+* [Connexion à la console web AEM](http://localhost:4502/system/console/bundles)
+* [Déployez et démarrez le lot de personnalisation de la boîte de réception.](assets/inboxcustomization.inboxcustomization.core-1.0-SNAPSHOT.jar)
 * [Ouvrir votre boîte de réception](http://localhost:4502/aem/inbox)
-* Ouvrez le contrôle d’administration en cliquant sur _Mode Liste_ en regard de _Créer_ button
+* Ouvrir le contrôle administration en cliquant sur l’icône _Vue Liste_ en regard du bouton _Créer_.
 * Ajouter une colonne Marié(e) à la boîte de réception et enregistrer vos modifications
-* [Accédez à l’interface utilisateur FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Importation de l’exemple de formulaire](assets/snap-form.zip) en sélectionnant _Téléchargement du fichier_ de _Créer_ menu
-* [Aperçu du formulaire](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Sélectionnez la _état civil_ et envoyer le formulaire
-   [Boîte de réception d’affichage](http://localhost:4502/aem/inbox)
+* [Accédez à l’interface utilisateur Formulaires et documents.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Importez l’exemple de formulaire](assets/snap-form.zip) en sélectionnant _Chargement du fichier_ dans le menu _Créer_.
+* [Prévisualisez le formulaire](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled).
+* Sélectionnez l’_état civil_ et envoyez le formulaire.
+  [Affichez la boîte de réception](http://localhost:4502/aem/inbox).
 
-L’envoi du formulaire déclenche le workflow et une tâche est assignée à l’utilisateur &quot;administrateur&quot;. Une valeur devrait s’afficher sous la colonne Marié(e) , comme illustré dans cette capture d’écran.
+L’envoi du formulaire déclenche le workflow et une tâche est assignée à l’administrateur ou à l’administratrice. Une valeur devrait s’afficher sous la colonne Marié(e), comme illustré dans cette capture d’écran.
 
-![marié-colonne](assets/married-column.PNG)
+![colonne-marié(e)](assets/married-column.PNG)
 
 ## Étapes suivantes
 
-[Afficher la colonne Marié](./use-sightly-template.md)
+[Affichez la colonne Marié(e).](./use-sightly-template.md)
