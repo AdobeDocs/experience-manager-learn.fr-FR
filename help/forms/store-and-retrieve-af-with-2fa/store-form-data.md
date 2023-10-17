@@ -1,5 +1,5 @@
 ---
-title: Stocker les données de formulaire
+title: Stocker les données d’un formulaire
 description: Stocker les données de formulaire avec le nouveau mappage de pièces jointes dans la base de données
 feature: Adaptive Forms
 type: Tutorial
@@ -11,19 +11,19 @@ role: Developer
 level: Experienced
 exl-id: 2bd9fe63-8f42-4b89-95a0-13ade49bc31b
 source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '75'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Stocker les données de formulaire
+# Stocker les données d’un formulaire
 
 L’étape suivante consiste à créer un service pour insérer une nouvelle ligne dans la base de données afin de stocker les données de formulaire adaptatif et les informations sur les pièces jointes associées.
-La capture d’écran suivante montre une ligne dans la base de données.
+La copie d’écran suivante montre une ligne dans la base de données.
 
 
-![exemple de ligne](assets/sample-row.JPG)
+![Exemple de ligne.](assets/sample-row.JPG)
 
 
 Le code suivant insère une nouvelle ligne dans la base de données avec les données appropriées.
@@ -72,5 +72,5 @@ public String storeFormData(String formData, String attachmentsInfo, String tele
 
 ## Étapes suivantes
 
-[Mise en oeuvre de la fonction Enregistrer et quitter](./create-servlet.md)
+[Implémenter Enregistrer et quitter](./create-servlet.md)
 
