@@ -1,6 +1,6 @@
 ---
-title: Utilisation de modèles de données de formulaire basés sur JDBC avec AEM Forms
-description: Cette vidéo explique comment créer un modèle de données de formulaire basé sur une source de données JDBC, un formulaire adaptatif basé sur le modèle de données de formulaire et comment utiliser l’opération "INSERT" à l’aide du modèle de données de formulaire.
+title: Utiliser les modèles de données de formulaire basés sur JDBC avec AEM Forms
+description: Cette vidéo explique comment créer un modèle de données de formulaire basé sur une source de données JDBC, un formulaire adaptatif basé sur le modèle de données de formulaire et comment utiliser l’opération « INSERT » à l’aide du modèle de données de formulaire.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -9,18 +9,18 @@ level: Beginner
 exl-id: 2ee1efe7-ba7a-42a1-baaf-8c3b9d4e69ec
 last-substantial-update: 2020-02-09T00:00:00Z
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '126'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Utilisation de modèles de données de formulaire basés sur JDBC avec AEM Forms {#using-jdbc-based-form-data-models-with-aem-forms}
+# Utiliser les modèles de données de formulaire basés sur JDBC avec AEM Forms {#using-jdbc-based-form-data-models-with-aem-forms}
 
-Cette vidéo explique comment créer un modèle de données de formulaire basé sur une source de données JDBC, un formulaire adaptatif basé sur le modèle de données de formulaire et comment utiliser l’opération &quot;INSERT&quot; à l’aide du modèle de données de formulaire.
+Cette vidéo explique comment créer un modèle de données de formulaire basé sur une source de données JDBC, un formulaire adaptatif basé sur le modèle de données de formulaire et comment utiliser l’opération « INSERT » à l’aide du modèle de données de formulaire.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17736?quality=12&learn=on)
 
 >[!NOTE]
 >
->Toute source de données SGBDR peut être utilisée tant que les pilotes de base de données requis sont déployés sur AEM en tant que lot OSGi. La configuration d’une source de données SGBDR dans AEM est traitée dans [Configuration de l’intégration des données avec AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
+>Toute source de données RDBMS peut être utilisée tant que les pilotes de base de données requis sont déployés sur AEM en tant que lot OSGi. Pour en savoir plus sur la configuration d’une source de données RDBMS dans AEM, consultez la section [Configurer l’intégration des données avec AEM Forms](/help/forms/adaptive-forms/data-integration-technical-video-setup.md).
