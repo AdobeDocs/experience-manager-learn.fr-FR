@@ -1,6 +1,6 @@
 ---
-title: Qu’est-ce que l’amplification de recherche dans AEM Assets ?
-description: Découvrez comment ajouter des mots-clés et des expressions pour améliorer la pertinence de recherche d’une ressource dans Adobe Experience Manager.
+title: Qu’est-ce que l’amplification de recherche dans AEM Assets ?
+description: Découvrez comment ajouter des mots-clés et des expressions pour améliorer la pertinence de recherche d’une ressource dans Adobe Experience Manager.
 topic: Content Management
 feature: Search
 role: User
@@ -11,9 +11,9 @@ thumbnail: 16766.jpg
 last-substantial-update: 2022-06-02T00:00:00Z
 exl-id: 3020f040-4d61-4cb6-ad46-e8a188335cec
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '27'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
