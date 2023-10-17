@@ -1,7 +1,7 @@
 ---
-title: Déclencher AEM processus sur l’envoi de formulaire HTM5 - Gérer l’envoi du PDF
+title: Déclencher le workflow AEM sur l’envoi de formulaire HTM5 - Gérer l’envoi du PDF
 seo-title: Trigger AEM Workflow on HTML5 Form Submission
-description: Continuez à remplir le formulaire mobile en mode hors ligne et envoyez le formulaire mobile pour déclencher AEM processus.
+description: Continuez à remplir le formulaire mobile en mode hors ligne et soumettez-le pour déclencher le workflow AEM.
 seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
 topics: development
@@ -14,17 +14,17 @@ role: Developer
 level: Experienced
 exl-id: eafeafe1-7a72-4023-b5bb-d83b056ba207
 source-git-commit: 012850e3fa80021317f59384c57adf56d67f0280
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '236'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Gérer l’envoi du PDF
 
-Dans cette partie, nous allons créer un servlet simple qui s’exécute sur AEM Publish pour gérer l’envoi du PDF depuis Acrobat/Reader. Ce servlet, à son tour, envoie une requête de POST HTTP à un servlet s’exécutant dans un AEM instance d’auteur responsable de l’enregistrement des données envoyées en tant que `nt:file` dans le référentiel de l’auteur AEM.
+Dans cette partie, nous allons créer un servlet simple qui s’exécute sur l’instance de publication AEM pour gérer l’envoi du PDF depuis Acrobat/Reader. Ce servlet, à son tour, envoie une requête HTTP POST à un servlet s’exécutant dans une instance de création AEM responsable de l’enregistrement des données envoyées en tant que nœud `nt:file` dans le référentiel de l’instance de création AEM.
 
-Voici le code du servlet qui gère l’envoi du PDF. Dans cette servlet, nous effectuons un appel POST vers une servlet montée sur **/bin/startworkflow** dans une instance AEM Author. Ce servlet enregistre les données de formulaire dans le référentiel de l’auteur AEM.
+Voici le code du servlet qui gère l’envoi du PDF. Dans ce servlet, nous effectuons un appel POST vers un servlet monté sur **/bin/startworkflow** dans une instance de création AEM. Ce servlet enregistre les données de formulaire dans le référentiel de l’instance de création AEM.
 
 
 ## Servlet de publication AEM
@@ -102,9 +102,9 @@ public class HandlePDFSubmission extends SlingAllMethodsServlet {
 }
 ```
 
-## Servlet AEM Author
+## Servlet de création AEM
 
-L’étape suivante consiste à stocker les données envoyées dans le référentiel de l’auteur AEM. Servlet monté sur `/bin/startworkflow` enregistre les données envoyées.
+L’étape suivante consiste à stocker les données envoyées dans le référentiel de l’instance de création AEM. Le servlet monté sur `/bin/startworkflow` enregistre les données envoyées.
 
 ```java
 import java.io.BufferedReader;
@@ -202,6 +202,6 @@ public class StartWorkflow extends SlingAllMethodsServlet {
 }
 ```
 
-Un lanceur de workflow AEM est configuré pour se déclencher chaque fois qu’une nouvelle ressource de type `nt:file` est créé sous le `/content/pdfsubmissions` noeud . Ce workflow crée un PDF non interactif ou statique en fusionnant les données envoyées avec le modèle xdp. Le pdf généré est ensuite affecté à un utilisateur pour révision et approbation.
+Un lanceur de workflow AEM est configuré pour se déclencher chaque fois qu’une nouvelle ressource de type `nt:file` est créée sous le nœud `/content/pdfsubmissions`. Ce workflow crée un PDF non interactif ou statique en fusionnant les données envoyées avec le modèle XDP. Le PDF généré est ensuite affecté à un utilisateur ou une utilisatrice pour révision et approbation.
 
-Pour stocker les données envoyées sous `/content/pdfsubmissions` noeud, nous utilisons `GetResolver` Le service OSGi nous permet d’enregistrer les données envoyées à l’aide du `fd-service` utilisateur système disponible dans chaque installation d’AEM Forms.
+Pour stocker les données envoyées sous le nœud `/content/pdfsubmissions`, nous utilisons le service OSGi `GetResolver` qui nous permet d’enregistrer les données envoyées à l’aide du profil utilisateur système `fd-service` disponible dans chaque installation AEM Forms.
