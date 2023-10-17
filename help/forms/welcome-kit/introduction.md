@@ -1,30 +1,29 @@
 ---
 title: Créer un kit de bienvenue
-description: Créez une page de sites d’AEM avec des liens pour télécharger des ressources en fonction des données de formulaire envoyées.
+description: Créez une page AEM Sites avec des liens pour télécharger des ressources en fonction des données de formulaire envoyées.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-12-14T00:00:00Z
-source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
-workflow-type: tm+mt
+exl-id: 7aba25d1-0d4d-4c49-8132-f844a288e8f3
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '107'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Kit de bienvenue
 
-Ce tutoriel vous aide à créer une page AEM avec des liens pour télécharger divers actifs en fonction des données de formulaire envoyées. Vous pouvez utiliser l’exemple de code pour générer un kit de bienvenue afin de permettre aux nouveaux clients de télécharger des documents pertinents ou de générer une page AEM avec des liens pour télécharger les documents demandés.
+Ce tutoriel vous aide à associer une page AEM à des liens pour télécharger diverses ressources en fonction des données de formulaire envoyées. Vous pouvez utiliser l’exemple de code pour générer un kit de bienvenue afin de permettre aux nouveaux clientes et clientes de télécharger des documents pertinents ou de générer une page AEM avec des liens pour télécharger les documents demandés.
 
-## Prérequis
+## Conditions préalables
 
-Vous aurez besoin des éléments suivants :
+Vous aurez besoin des éléments suivants :
 
-Une instance de travail de l’AEM avec le package de module complémentaire de formulaire installé avec les composants principaux installés
+Une instance de travail d’AEM avec le package de module complémentaire de formulaire installé.
+Composants principaux installés.
 
-[Configuration de l’environnement de développement selon ce document](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
-
-
-
+[Configuration de l’environnement de développement conformément à ce document](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=fr)
