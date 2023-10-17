@@ -1,6 +1,6 @@
 ---
-title: Balisage et stockage d’un document d’enregistrement AEM Forms dans la gestion des ressources numériques
-description: Cet article décrit le cas pratique de stockage et de balisage du document d’enregistrement généré par AEM Forms dans AEM DAM. Le balisage du document est effectué en fonction des données de formulaire envoyées.
+title: Baliser et stocker un document d’enregistrement AEM Forms dans la gestion des ressources numériques
+description: Cet article décrit le cas d’utilisation de stockage et de balisage du document d’enregistrement généré par AEM Forms dans la gestion des ressources numériques AEM. Le balisage du document est effectué en fonction des données de formulaire envoyées.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -9,27 +9,27 @@ level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
 last-substantial-update: 2019-03-20T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '611'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Balisage et stockage d’un document d’enregistrement AEM Forms dans la gestion des ressources numériques {#tagging-and-storing-aem-forms-dor-in-dam}
+# Baliser et stocker un document d’enregistrement AEM Forms dans la gestion des ressources numériques {#tagging-and-storing-aem-forms-dor-in-dam}
 
-Cet article décrit le cas pratique de stockage et de balisage du document d’enregistrement généré par AEM Forms dans AEM DAM. Le balisage du document est effectué en fonction des données de formulaire envoyées.
+Cet article décrit le cas d’utilisation de stockage et de balisage du document d’enregistrement généré par AEM Forms dans la gestion des ressources numériques AEM. Le balisage du document est effectué en fonction des données de formulaire envoyées.
 
-Les clients ont généralement pour tâche de stocker et de baliser le document d’enregistrement généré par AEM Forms dans AEM DAM. Le balisage du document doit être basé sur les données envoyées par la Forms adaptative. Par exemple, si l’état de l’emploi dans les données envoyées est &quot;Retiré&quot;, nous voulons baliser le document avec la balise &quot;Retiré&quot; et le stocker dans la gestion des ressources numériques.
+Une demande courante de la clientèle est le stockage et balisage du document d’enregistrement généré par AEM Forms dans la gestion des ressources numériques AEM. Le balisage du document doit reposer sur les données envoyées par le formulaire adaptatif. Par exemple, si le statut professionnel indiqué dans les données envoyées est « Retraité(e) », ajoutez la balise « Retraité(e) » au document et stockez ce dernier dans la gestion des ressources numériques.
 
-Le cas pratique est le suivant :
+Consultez le cas d’utilisation suivant :
 
-* Un utilisateur remplit un formulaire adaptatif. Dans le formulaire adaptatif, l’état civil de l’utilisateur (ex Célibataire) et l’état de l’emploi (ex. Retraité) sont capturés.
-* Lors de l’envoi du formulaire, un workflow d’AEM est déclenché. Ce processus balise le document avec l’état civil (célibataire) et l’état de travail (retraité) et stocke le document dans la gestion des ressources numériques.
-* Une fois le document stocké dans DAM, l’administrateur doit pouvoir le rechercher à l’aide de ces balises. Par exemple, la recherche sur un document d’enregistrement unique ou à la retraite récupérerait les DE appropriés.
+* Un utilisateur ou une utilisatrice remplit un formulaire adaptatif. Dans le formulaire adaptatif, l’état civil de la personne (par exemple, célibataire) et le statut professionnel (par exemple, retraité(e)) sont renseignés.
+* L’envoi du formulaire déclenche un workflow AEM. Ce workflow permet d’ajouter les balises relatives à l’état civil (célibataire) et au statut professionnel (retraité(e)) au document et stocke ce dernier dans la gestion des ressources numériques.
+* Une fois le document stocké dans la gestion des ressources numériques, l’administrateur ou l’administratrice peut utiliser ces balises pour le rechercher. Par exemple, une recherche portant sur le terme « célibataire » ou « retraité(e) » permet d’identifier le document d’enregistrement pertinent.
 
-Pour répondre à ce cas d’utilisation, une étape de processus personnalisée a été écrite. Au cours de cette étape, nous récupérons les valeurs des éléments de données appropriés à partir des données envoyées. Nous construisons ensuite la mosaïque de balise à l’aide de cette valeur. Par exemple, si la valeur de l’élément d’état civil est &quot;Célibataire&quot;, le titre de la balise devient **Pic:EmploiStatus/Célibataire. **À l’aide de l’ API TagManager , nous recherchons la balise et nous l’appliquons au DE.
+Pour répondre à ce cas d’utilisation, une étape de processus personnalisée a été ajoutée. Au cours de cette étape, les valeurs des éléments de données appropriés sont récupérées à partir des données envoyées. Le titre des balises s’inspire de cette valeur. Par exemple, si la valeur de l’élément État civil est « Célibataire », le titre de la balise est le suivant : **Peak:EmploymentStatus/Célibataire. **À l’aide de l’API TagManager, la balise est recherchée et appliquée au document d’enregistrement.
 
-Voici le code complet pour baliser et stocker le document d’enregistrement dans AEM DAM.
+Voici le code complet pour baliser et stocker le document d’enregistrement dans la gestion des ressources numériques AEM.
 
 ```java
 package com.aemforms.setvalue.core;
@@ -156,27 +156,27 @@ public class TagAndStoreDoRinDAM implements WorkflowProcess
 }
 ```
 
-Pour que cet exemple fonctionne sur votre système, procédez comme suit :
-* [Déployer le lot Developer withserviceuser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+Pour que cet exemple fonctionne sur votre système, procédez comme suit :
+* [Déployez le lot Developingwithserviceuser.](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
 
-* [Télécharger et déployer le lot setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Il s’agit du lot OSGI personnalisé qui définit les balises à partir des données de formulaire envoyées.
+* [Téléchargez et déployez le lot setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Il s’agit du lot OSGI personnalisé qui définit les balises à partir des données de formulaire envoyées.
 
-* [Téléchargement de l’exemple de formulaire adaptatif](assets/tag-and-store-in-dam-adaptive-form.zip)
+* [Téléchargez l’exemple de formulaire adaptatif.](assets/tag-and-store-in-dam-adaptive-form.zip)
 
-* [Accès à Forms et documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* [Accédez à Formulaires et documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 
-* Cliquez sur Créer | Téléchargez le fichier et téléchargez le fichier tag-and-store-in-dam-adaptive-form.zip
+* Cliquez sur Créer | Charger un fichier et chargez le fichier tag-and-store-in-dam-adaptive-form.zip.
 
-* [Importation des actifs de l’article](assets/tag-and-store-in-dam-assets.zip) utilisation d’AEM gestionnaire de packages
-* Ouvrez le [exemple de formulaire en mode aperçu](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Renseignez tous les champs** et envoyez le formulaire.
-* [Accédez au dossier Pic dans DAM](http://localhost:4502/assets.html/content/dam/Peak). Vous devriez voir le document d’enregistrement dans le dossier Pic . Vérifiez les propriétés du document. Il doit être correctement balisé.
-Félicitations!! Vous avez installé l’exemple sur votre système.
+* [Importez les ressources de l’article](assets/tag-and-store-in-dam-assets.zip) à l’aide du gestionnaire de packages AEM.
+* Ouvrez l’[exemple de formulaire en mode de prévisualisation](http://localhost:4502/content/dam/formsanddocuments/tagandstoreindam/jcr:content?wcmmode=disabled). **Renseignez tous les champs** et soumettez le formulaire.
+* [Accédez au dossier Peak dans la gestion des ressources numériques](http://localhost:4502/assets.html/content/dam/Peak). Le document d’enregistrement doit être présent dans le dossier Peak. Vérifiez les propriétés du document. Il doit disposer des balises appropriées.
+Félicitations. Vous avez installé l’exemple sur votre système.
 
-* Explorons le [workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) qui est déclenché lors de l’envoi du formulaire.
-* La première étape du workflow crée un nom de fichier unique en concaténant le nom et le lieu de résidence des candidats.
-* La deuxième étape du workflow transmet la hiérarchie de balises et les éléments de champs de formulaire qui doivent être balisés. L’étape de processus extrait la valeur des données envoyées et construit le titre de la balise qui doit marquer le document.
-* Si vous souhaitez stocker un document d’enregistrement dans un autre dossier de la gestion des actifs numériques, vous devez spécifier l’emplacement du dossier à l’aide des propriétés de configuration, comme indiqué dans la capture d’écran ci-dessous.
+* Penchons-nous sur le [workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/TagAndStoreDoRinDAM.html) qui est déclenché lors de la soumission du formulaire.
+* La première étape du workflow consiste à créer un nom de fichier unique en concaténant le nom et le lieu de résidence des candidates et des candidats.
+* La deuxième étape du workflow transmet la hiérarchie de balises et les éléments de champs de formulaire qui doivent être balisés. L’étape de processus extrait la valeur des données envoyées et renseigne le titre de la balise qui doit marquer le document.
+* Si vous souhaitez stocker un document d’enregistrement dans un autre dossier de la gestion des ressources numériques, vous devez spécifier l’emplacement du dossier à l’aide des propriétés de configuration, comme indiqué dans la copie d’écran ci-dessous.
 
-Les deux autres paramètres sont spécifiques au DE et au chemin d’accès au fichier de données, comme indiqué dans les options d’envoi du formulaire adaptatif. Assurez-vous que les valeurs que vous spécifiez ici correspondent aux valeurs que vous avez spécifiées dans les options d’envoi du formulaire adaptatif.
+Les deux autres paramètres sont spécifiques au document d’enregistrement et au chemin d’accès au fichier de données, comme indiqué dans les options d’envoi du formulaire adaptatif. Assurez-vous que les valeurs que vous renseignez ici correspondent aux valeurs indiquées dans les options d’envoi du formulaire adaptatif.
 
-![Balise Dor](assets/tag_dor_service_configuration.gif)
+![Balisage du document d’enregistrement](assets/tag_dor_service_configuration.gif).
