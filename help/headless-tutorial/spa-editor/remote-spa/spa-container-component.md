@@ -200,7 +200,7 @@ L’implémentation du composant Texte modifiable doit se présenter comme suit�
    };
    ```
 
-1. Créez un composant React modifiable sous `src/components/editable/EditableImage.js`.
+1. Créez un composant modifiable React sous `src/components/editable/EditableImage.js`.
 1. Ajoutez le code suivant à `EditableImage.js`.
 
 ```javascript
