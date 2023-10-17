@@ -1,6 +1,6 @@
 ---
-title: Utilisation des fonctions et de l’éditeur de code
-description: Utilisation de fonctions et d’un éditeur de code pour créer des règles de fonctionnement
+title: Utiliser des fonctions et l’éditeur de code
+description: Utiliser des fonctions et l’éditeur de code pour créer des règles commerciales
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 4270
@@ -10,30 +10,30 @@ role: Developer
 level: Beginner
 exl-id: 7b2a4075-bfdf-49f3-b507-34d86193bf64
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '136'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Utilisation de fonctions personnalisées et de l’éditeur de code {#using-functions-and-code-editor}
+# Utiliser des fonctions personnalisées et l’éditeur de code {#using-functions-and-code-editor}
 
-Dans cette partie, nous utiliserons les fonctions personnalisées et l’éditeur de code pour créer des règles de fonctionnement.
+Dans cette partie, nous allons utiliser les fonctions personnalisées et l’éditeur de code pour créer des règles commerciales.
 
-vous avez déjà installé le [ClientLib avec fonction personnalisée](assets/client-libs-and-logo.zip) plus tôt dans ce tutoriel.
+Vous avez déjà installé la [bibliothèque cliente avec fonction personnalisée](assets/client-libs-and-logo.zip) plus tôt dans ce tutoriel.
 
-En règle générale, une bibliothèque cliente se compose d’un fichier CSS et JavaScript. Cette bibliothèque cliente contient un fichier JavaScript qui expose une fonction permettant de renseigner les valeurs de la liste déroulante.
+En règle générale, une bibliothèque cliente se compose d’un fichier CSS et JavaScript. Cette bibliothèque cliente contient un fichier JavaScript qui expose une fonction permettant de remplir les valeurs de la liste déroulante.
 
 
-## Fonction à remplir dans la liste déroulante {#function-to-populate-drop-down-list}
+## Fonction pour remplir la liste déroulante {#function-to-populate-drop-down-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22282?quality=12&learn=on)
 
-### Définition du titre de résumé du panneau {#set-the-summary-title-of-panels}
+### Définir le titre de résumé du panneau {#set-the-summary-title-of-panels}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
 
-#### Validation du panneau {#validate-panels-using-rule-editor}
+#### Valider le panneau {#validate-panels-using-rule-editor}
 
 >[!VIDEO](https://video.tv.adobe.com/v/28409?quality=12&learn=on)
 
@@ -60,12 +60,12 @@ else
   }
 ```
 
-Vous pouvez annuler la mise en commentaire de la ligne 1 pour déboguer le code dans la fenêtre du navigateur.
+Vous pouvez annuler la mise en commentaire de la ligne 1 pour déboguer le code dans la fenêtre du navigateur.
 
-Ligne 4 - Obtention du panneau actuel
+Ligne 4 - Obtention du panneau actuel.
 
-Ligne 5 - Validez le panneau actuel.
+Ligne 5 - Validation du panneau actuel.
 
-Ligne 9 - Si aucune erreur n’est déplacée vers le panneau suivant
+Ligne 9 - Si aucune erreur n’est détectée, passez au panneau suivant.
 
 Prévisualisez le formulaire et testez la nouvelle fonctionnalité activée.
