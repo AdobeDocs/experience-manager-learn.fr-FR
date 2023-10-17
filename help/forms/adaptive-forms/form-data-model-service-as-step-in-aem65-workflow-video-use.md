@@ -1,6 +1,6 @@
 ---
-title: Utilisation du service de modèle de données de formulaire comme étape dans AEM flux de travaux 6.5
-description: AEM Forms 6.5 a introduit la possibilité de créer des variables dans le workflow AEM. Grâce à cette nouvelle fonctionnalité, l’utilisation du "service de modèle de données de formulaire d’appel" dans AEM Workflow est devenue très simple. La vidéo suivante vous guide tout au long des étapes à suivre pour utiliser le service de modèle de données de formulaire Invoke dans AEM Workflow.
+title: Utiliser le service de modèle de données de formulaire comme étape dans le workflow d’AEM 6.5
+description: AEM Forms 6.5 a introduit la possibilité de créer des variables dans le workflow AEM. Grâce à cette nouvelle fonctionnalité, utiliser « Appeler le service de modèle de données de formulaire » dans le workflow AEM est devenue très facile. La vidéo suivante vous guide tout au long des étapes à suivre pour utiliser Appeler le service de modèle de données de formulaire dans le workflow AEM.
 feature: Workflow
 type: Tutorial
 version: 6.5
@@ -10,32 +10,32 @@ level: Intermediate
 exl-id: 1f13d82e-c1d0-4c8c-8468-b4a4c5897c71
 last-substantial-update: 2021-02-09T00:00:00Z
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '272'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Utilisation du service de modèle de données de formulaire comme étape dans AEM flux de travaux 6.5 {#using-form-data-model-service-as-step-in-workflow}
+# Utiliser le service de modèle de données de formulaire comme étape dans le workflow d’AEM 6.5 {#using-form-data-model-service-as-step-in-workflow}
 
-À compter d’AEM Forms 6.4, nous pouvons désormais utiliser le service de modèle de données de formulaire dans le cadre d’AEM Workflow. La vidéo suivante décrit les étapes nécessaires à la configuration de l’étape Modèle de données de formulaire dans AEM Workflow
+À partir d’AEM Forms 6.4, nous avons la possibilité d’utiliser le service de modèle de données de formulaire dans le cadre du workflow AEM. La vidéo suivante décrit les étapes nécessaires à la configuration de l’étape Modèle de données de formulaire dans le workflow AEM.
 
->!![NOTE]La fonctionnalité présentée dans cette vidéo nécessite AEM Forms 6.5.1
+>La fonctionnalité présentée dans cette vidéo nécessite AEM Forms 6.5.1.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28145?quality=12&learn=on)
 
 Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-dessous.
 
-* Configurez tomcat avec le fichier SampleRest.war comme décrit [here](https://helpx.adobe.com/experience-manager/kt/forms/using/preparing-datasource-for-form-data-model-tutorial-use.html).Le fichier war déployé dans Tomcat comporte le code permettant de renvoyer le score de crédit du demandeur. Le score de crédit est un nombre aléatoire compris entre 200 et 800.
+* Configurez Tomcat avec le fichier SampleRest.war comme décrit [ici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/set-up-tomcat.html?lang=fr). Le fichier war déployé dans Tomcat contient le code permettant de renvoyer le score de crédit du demandeur ou de la demandeuse. Le score de crédit est un nombre aléatoire compris entre 200 et 800.
 
-* [ Importez les ressources dans AEM à l’aide du gestionnaire de modules.](assets/aem65-loanapplication.zip)
-* Le module contient les éléments suivants :
+* [Importez les ressources dans AEM à l’aide du gestionnaire de packages.](assets/aem65-loanapplication.zip)
+* Le package contient les éléments suivants :
 
-   * Modèle de workflow qui utilise l’étape FDM.
-   * Modèle de données de formulaire utilisé à l’étape FDM.
-   * Formulaire adaptatif pour déclencher le processus lors de l’envoi.
-* Ouvrez le [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Renseignez les détails et envoyez-les. Lors de l’envoi du formulaire, [workflow loanapplication](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) est déclenchée.
+   * Le modèle de workflow qui utilise l’étape Modèle de données de formulaire.
+   * Le modèle de données de formulaire utilisé à l’étape Modèle de données de formulaire.
+   * Le formulaire adaptatif pour déclencher le workflow lors de l’envoi.
+* Ouvrez le formulaire [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Remplissez les informations et envoyez-le. Lors de l’envoi du formulaire, le [workflow loanapplication](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) est déclenché.
 
-![ flux de travail ](assets/invokefdm651.PNG).
-Le workflow utilise le composant Division ou pour acheminer la demande vers l’administrateur si le score de crédit est supérieur à 500. Si le score de crédit est inférieur à 500, la demande est acheminée vers la cavery.
+![Workflow](assets/invokefdm651.PNG).
+Le workflow utilise le composant Division OU pour acheminer la demande vers l’administrateur ou l’administratrice si le score de crédit est supérieur à 500. Si le score de crédit est inférieur à 500, la demande est acheminée vers le cavery.
