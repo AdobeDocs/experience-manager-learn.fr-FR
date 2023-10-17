@@ -1,6 +1,6 @@
 ---
 title: Imagerie dynamique
-description: L’imagerie dynamique dans Dynamic Media Classic améliore les performances de diffusion des images en optimisant automatiquement le format et la qualité des images en fonction des fonctionnalités du navigateur client. Pour ce faire, il exploite les fonctionnalités d’Adobe Sensei AI et utilise les paramètres d’image prédéfinis existants. Découvrez l’imagerie dynamique et comment l’utiliser pour offrir de meilleures expériences client grâce à des chargements de page plus rapides.
+description: L’imagerie dynamique de Dynamic Media Classic permet d’améliorer les performances de diffusion des images en optimisant automatiquement le format et la qualité de celles-ci en fonction des fonctionnalités du navigateur client. Pour ce faire, l’imagerie dynamique tire parti des fonctionnalités d’IA d’Adobe Sensei et utilise les paramètres d’image prédéfinis existants. Découvrez l’imagerie dynamique et apprenez à l’utiliser afin d’offrir de meilleures expériences à votre clientèle grâce à des chargements de page plus rapides.
 feature: Dynamic Media Classic
 doc-type: tutorial
 topics: development, authoring, configuring, renditions, images
@@ -11,50 +11,50 @@ role: User
 level: Beginner
 exl-id: 678671c3-af25-4da1-bc14-cbc4cc19be8d
 source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '687'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 # Imagerie dynamique {#smart-imaging}
 
-Le temps de chargement des pages est l’un des aspects les plus importants de l’expérience client sur votre site web ou mobile ou sur votre application. Les clients abandonnent souvent un site ou une application si le chargement d’une page prend trop de temps. Les images constituent la majeure partie du temps de chargement de la page. L’imagerie dynamique dans Dynamic Media Classic améliore les performances de diffusion des images en optimisant automatiquement le format et la qualité des images en fonction des fonctionnalités du navigateur client. Pour ce faire, il exploite les fonctionnalités d’Adobe Sensei AI et utilise les paramètres d’image prédéfinis existants. L’imagerie dynamique réduit les tailles d’image de 30 % ou plus, ce qui se traduit par des chargements de page plus rapides et de meilleures expériences client.
+Les temps de chargement des pages ont un impact décisif sur l’expérience client sur votre site web, mobile ou sur votre application. Les visiteurs et visiteuses n’hésiteront pas à abandonner un site ou une application si le chargement d’une page prend trop de temps. Le temps de chargement d’une page dépend en grande partie des images présentes sur celle-ci. L’imagerie dynamique de Dynamic Media Classic permet d’améliorer les performances de diffusion des images en optimisant automatiquement le format et la qualité de celles-ci en fonction des fonctionnalités du navigateur client. Pour ce faire, l’imagerie dynamique tire parti des fonctionnalités d’IA d’Adobe Sensei et utilise les paramètres d’image prédéfinis existants. L’imagerie dynamique réduit les tailles d’image de 30 % ou plus, ce qui se traduit par des chargements de page plus rapides et de meilleures expériences pour votre clientèle.
 
-L’imagerie dynamique bénéficie également de l’amélioration des performances grâce à une intégration complète avec le service haut de gamme haut de gamme d’Adobe. Ce service recherche l’itinéraire Internet optimal entre les serveurs, réseaux et points d’appairage ; c’est-à-dire l’itinéraire ayant une latence et/ou un taux de perte de paquets plus faibles que l’itinéraire par défaut sur Internet.
+L’imagerie dynamique tire également parti d’une parfaite intégration dans un service haut de gamme d’Adobe pour offrir un gain de performance accru. Ce service recherche l’itinéraire Internet optimal entre les serveurs, réseaux et points d’appairage ; c’est-à-dire l’itinéraire ayant une latence et/ou un taux de perte de paquets plus faibles que l’itinéraire par défaut sur Internet.
 
-En savoir plus sur [Imagerie dynamique](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
+En savoir plus sur l’[Imagerie dynamique](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html?lang=fr).
 
 ## Avantages de l’imagerie dynamique
 
-Comme les images constituent la majeure partie du temps de chargement d’une page, l’amélioration des performances de l’imagerie dynamique peut avoir un impact profond sur les indicateurs clés de performance métier, tels qu’une conversion plus élevée, la durée de la visite du site et un taux de rebond plus faible.
+Les images sont les éléments qui demandent le plus de temps lors du chargement d’une page. Aussi une amélioration des performances grâce à l’imagerie dynamique peut-elle avoir une incidence considérable sur les KPI d’entreprise, tels qu’un taux de conversion plus élevé, une augmentation du temps passé sur le site et un taux de rebond moindre.
 
 ![image](assets/smart-imaging/smart-imaging-1.png)
 
 ## Fonctionnement de l’imagerie dynamique
 
-Comme nous l’avons vu précédemment, l’imagerie dynamique tire parti des fonctionnalités d’Adobe Sensei AI et fonctionne avec les paramètres d’image prédéfinis existants pour convertir automatiquement les images en formats d’image de nouvelle génération optimaux, tels que WebP, tout en conservant la fidélité visuelle.
+Comme nous l’avons vu précédemment, l’imagerie dynamique tire parti des fonctionnalités d’IA d’Adobe Sensei et utilise les paramètres d’image prédéfinis existants pour convertir automatiquement les images dans les formats d’image optimaux de nouvelle génération, tels que WebP, tout en conservant la fidélité visuelle.
 
-En savoir plus sur [Fonctionnement de l’imagerie dynamique](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html#how-does-smart-imaging-work), notamment des détails tels que les formats d’image pris en charge (et ce qui se passe si vous n’utilisez pas ces formats) et son impact sur les paramètres d’image prédéfinis existants en cours d’utilisation.
+En savoir plus sur le [Fonctionnement de l’imagerie dynamique](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html?lang=fr#how-does-smart-imaging-work), notamment les formats d’image pris en charge (et ce qui se passe si vous n’utilisez pas ces formats) et son impact sur les paramètres d’image prédéfinis existants qui sont utilisés.
 
 ## Impacts de l’imagerie dynamique
 
-Il est probable que vous ayez à apporter des modifications à vos URL, paramètres d’image prédéfinis et code sur votre site pour tirer parti de l’imagerie dynamique. Si vous remplissez les conditions préalables requises pour utiliser l’imagerie dynamique et que vous utilisez uniquement des images dans les formats d’image de JPEG et PNG pris en charge, vous n’avez pas à apporter de modifications.
+Pour utiliser l’imagerie dynamique, vous devrez probablement apporter certaines modifications aux éléments de votre site, tels que les URL, les paramètres d’image prédéfinis et le code. Si vous remplissez les conditions préalables à l’utilisation de l’imagerie dynamique et que vous n’utilisez que les formats d’image JPEG et PNG pris en charge, vous n’avez pas à apporter de modification.
 
-L’imagerie dynamique fonctionne avec les images diffusées sur HTTP, HTTPS et HTTP/2.
+L’imagerie dynamique prend en charge les images diffusées sur HTTP, HTTPS et HTTP/2.
 
 >[!NOTE]
 >
->Le passage à l’imagerie dynamique efface votre cache sur le réseau de diffusion de contenu. Le cache du réseau de diffusion de contenu est généralement reconstitué dans un ou deux jours.
+>L’utilisation de l’imagerie dynamique efface votre cache sur le réseau CDN. Le cache du réseau CDN est généralement reconstitué en l’espace d’un ou deux jours.
 
-L’imagerie dynamique est incluse dans votre licence Dynamic Media Classic existante. Cette fonctionnalité n’engendre aucuns frais supplémentaires. Pour en tirer parti, vous devez répondre à deux exigences : posséder un réseau de diffusion de contenu avec Adobe et un domaine dédié. Vous devez ensuite l’activer pour votre compte, car il n’est pas activé automatiquement.
+L’imagerie dynamique est incluse dans votre licence Dynamic Media Classic existante. Cette fonctionnalité n’entraîne aucun frais supplémentaire. Pour l’utiliser, vous devez répondre aux deux conditions suivantes : posséder un réseau CDN avec Adobe et un domaine dédié. Vous devez ensuite l’activer pour votre compte, car l’imagerie dynamique n’est pas activée automatiquement.
 
-L’activation de l’imagerie dynamique commence par l’envoi d’une demande d’assistance technique en |création d’un cas de support| [https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). La prise en charge de vous permet de configurer un domaine personnalisé que vous associerez à l’imagerie dynamique. Vous allez modifier un paramètre associé à la mise en cache (durée de vie ou TTL) et la prise en charge va effacer le cache. Vous pouvez également effectuer une étape d’évaluation facultative si vous le souhaitez avant de passer en production. Ensuite, lorsque l’imagerie dynamique est activée, vous proposez aux clients des images de petite taille, mais avec la même qualité que celle requise. Cela signifie qu’ils ont des temps de chargement de page plus rapides — et tout cela est fait automatiquement parce qu’Adobe Sensei aide à choisir la taille la plus efficace.
+Pour activer l’imagerie dynamique, procédez comme suit : envoyez une demande d’assistance technique en |créant un cas d’assistance| [https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). L’assistance Adobe vous contactera pour configurer un domaine personnalisé réservé à l’imagerie dynamique. Vous devrez ensuite modifier un paramètre associé à la mise en cache (durée de vie ou TTL) et l’assistance Adobe effacera le cache. Si vous le souhaitez, vous pouvez tester la fonctionnalité dans un environnement d’évaluation avant de passer en production. Lorsque l’imagerie dynamique est activée, vous diffuserez des images de plus petite taille à vos clientes et clients, tout en conservant la qualité d’image requise. À la clé, des temps de chargement de page plus rapides. Cerise sur le gâteau, le processus est automatique, car Adobe Sensei aide à choisir la taille la plus efficace.
 
-Une fois que vous avez activé l’imagerie dynamique, vous souhaiterez vérifier qu’elle fonctionne comme prévu.
+Une fois l’imagerie dynamique activée, assurez-vous de son fonctionnement correct.
 
-Vous avez probablement d’autres questions sur l’imagerie dynamique. Nous avons compilé une liste de questions fréquentes avec des réponses. Lisez le [Questions fréquentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html).
+Vous avez probablement d’autres questions à propos de l’imagerie dynamique. Pour y répondre de manière efficace, nous avons dressé une liste de questions fréquentes. Consultez la section [Questions fréquentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html?lang=fr).
 
 ## Ressources supplémentaires
 
-Regardez la [Dynamic Media Classic Optimisation des performances de page Skill Builder](https://seminars.adobeconnect.com/pzc1gw0cihpv) webinaire à la demande pour en savoir plus sur l’imagerie dynamique.
+Regardez le webinaire à la demande [Accroître ses compétences sur l’optimisation des performances des pages dans Dynamic Media Classic](https://seminars.adobeconnect.com/pzc1gw0cihpv) pour en savoir plus sur l’imagerie dynamique.
