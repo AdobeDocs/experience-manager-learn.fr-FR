@@ -1,6 +1,6 @@
 ---
 title: Jeton d’accès au développement local
-description: Les jetons d’accès AEM développement local sont utilisés pour accélérer le développement des intégrations avec AEM as a Cloud Service qui interagissent par programmation avec les services AEM Author ou Publish sur HTTP.
+description: Les jetons d’accès au développement local d’AEM sont utilisés pour accélérer le développement des intégrations avec AEM as a Cloud Service qui interagissent par programmation avec les services de création et de publication d’AEM via HTTP.
 version: Cloud Service
 doc-type: tutorial
 topics: Development, Security
@@ -15,73 +15,73 @@ level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1067'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Jeton d’accès au développement local
 
-Les développeurs qui créent des intégrations nécessitant un accès programmatique à AEM as a Cloud Service ont besoin d’un moyen simple et rapide d’obtenir des jetons d’accès temporaires pour AEM afin de faciliter les activités de développement local. Pour répondre à ce besoin, AEM Developer Console permet aux développeurs de générer eux-mêmes des jetons d’accès temporaires qui peuvent être utilisés pour accéder par programmation à AEM.
+Les développeurs et développeuses qui créent des intégrations nécessitant un accès par programmation à AEM as a Cloud Service ont besoin d’un moyen simple et rapide d’obtenir des jetons d’accès temporaires pour AEM afin de faciliter les activités de développement local. Pour répondre à ce besoin, la Developer Console d’AEM permet aux développeurs et développeuses de générer eux-mêmes des jetons d’accès temporaires qui peuvent être utilisés pour accéder par programmation à AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330477?quality=12&learn=on)
 
-## Génération d’un jeton d’accès au développement local
+## Générer un jeton d’accès au développement local
 
-![Obtention d’un jeton d’accès au développement local](assets/local-development-access-token/getting-a-local-development-access-token.png)
+![Obtention d’un jeton d’accès au développement local.](assets/local-development-access-token/getting-a-local-development-access-token.png)
 
-Le jeton d’accès au développement local permet d’accéder aux services AEM Author et Publish en tant qu’utilisateur ayant généré le jeton, ainsi que ses autorisations. Bien qu’il s’agisse d’un jeton de développement, ne partagez pas ce jeton, ni ne le stockez dans le contrôle de code source.
+Le jeton d’accès au développement local permet d’accéder aux services de création et de publication d’AEM en tant que personne ayant généré le jeton, ainsi qu’à ses autorisations. Bien qu’il s’agisse d’un jeton de développement, ne le partagez pas et ne le stockez pas dans le contrôle de code source.
 
-1. Dans [Adobe Admin Console](https://adminconsole.adobe.com/) assurez-vous, en tant que développeur, que vous êtes membre de :
-   + __Cloud Manager - Développeur__ Profil de produit IMS (accorde l’accès à AEM Developer Console)
-   + Soit le __Administrateurs AEM__ ou __Utilisateurs AEM__ Profil de produit IMS pour le service de l’environnement AEM auquel le jeton d’accès s’intègre
-   + Les environnements Sandbox AEM as a Cloud Service ne nécessitent qu’une adhésion à l’une ou l’autre des __Administrateurs AEM__ ou __Utilisateurs AEM__ Profil de produits
-1. Connectez-vous à [Adobe Cloud Manager](https://my.cloudmanager.adobe.com)
-1. Ouvrez le programme contenant l’environnement as a Cloud Service AEM à intégrer à
-1. Appuyez sur le bouton __ellipse__ en regard de l’environnement dans la variable __Environnements__ et sélectionnez __Developer Console__
-1. Appuyez sur __Intégrations__ tab
-1. Appuyez sur le bouton __Jeton local__ tab
-1. Appuyer __Obtention du jeton de développement local__ button
-1. Appuyez sur le __bouton de téléchargement__ dans le coin supérieur gauche pour télécharger le fichier JSON contenant `accessToken` et enregistrez le fichier JSON à un emplacement sécurisé sur votre ordinateur de développement.
-   + Il s’agit de votre jeton d’accès développeur 24 heures sur 24 à l’environnement as a Cloud Service AEM.
+1. Dans [Adobe Admin Console](https://adminconsole.adobe.com/), assurez-vous, en tant que personne responsable du développement, que vous appartenez aux profils suivants :
+   + Profil de produit IMS __Cloud Manager - Développement__ (accorde l’accès à la Developer Console d’AEM).
+   + Profil de produit IMS __Administration d’AEM__ ou __Utilisateurs et utilisatrices d’AEM__ pour le service de l’environnement AEM auquel le jeton d’accès s’intègre.
+   + L’environnement sandbox AEM as a Cloud Service ne nécessite qu’une adhésion à un profil de produit, __Administration d’AEM__ ou __Utilisateurs et utilisatrices d’AEM__.
+1. Connectez-vous à [Adobe Cloud Manager](https://my.cloudmanager.adobe.com).
+1. Ouvrez le programme contenant l’environnement AEM as a Cloud Service auquel s’intégrer.
+1. Appuyez sur les __points de suspension__ en regard de l’environnement dans la section __Environnements__ et sélectionnez __Developer Console__.
+1. Appuyez sur l’onglet __Intégrations__.
+1. Appuyez sur l’onglet __Jeton local__.
+1. Appuyez sur le bouton __Obtenir le jeton de développement local__.
+1. Appuyez sur le __bouton de téléchargement__ dans le coin supérieur gauche pour télécharger le fichier JSON contenant la valeur `accessToken` et enregistrez le fichier JSON à un emplacement sécurisé sur votre ordinateur de développement.
+   + Il s’agit de votre jeton d’accès de développement valable 24 heures permettant d’accéder à l’environnement d’AEM as a Cloud Service.
 
-![AEM Developer Console - Intégrations - Obtenir un jeton de développement local](./assets/local-development-access-token/developer-console.png)
+![Developer Console d’AEM - Intégrations - Obtention d’un jeton de développement local.](./assets/local-development-access-token/developer-console.png)
 
-## Utilisation du jeton d’accès au développement local{#use-local-development-access-token}
+## Utiliser le jeton d’accès au développement local{#use-local-development-access-token}
 
-![Jeton d’accès au développement local - Application externe](assets/local-development-access-token/local-development-access-token-external-application.png)
+![Jeton d’accès au développement local - Application externe.](assets/local-development-access-token/local-development-access-token-external-application.png)
 
-1. Téléchargez le jeton d’accès au développement local temporaire depuis AEM Developer Console
-   + Le jeton d’accès au développement local expire toutes les 24 heures. Les développeurs doivent donc télécharger de nouveaux jetons d’accès tous les jours.
-1. Une application externe est en cours de développement qui interagit par programmation avec AEM as a Cloud Service
-1. L’application externe se lit dans le jeton d’accès au développement local.
-1. L’application externe crée des requêtes HTTP pour AEM as a Cloud Service, en ajoutant le jeton d’accès au développement local en tant que jeton porteur à l’en-tête d’autorisation des requêtes HTTP.
-1. AEM as a Cloud Service reçoit la requête HTTP, authentifie la requête et effectue le travail demandé par la requête HTTP, puis renvoie une réponse HTTP à l’application externe.
+1. Téléchargez le jeton d’accès au développement local temporaire depuis la Developer Console d’AEM.
+   + Le jeton d’accès au développement local expire toutes les 24 heures. Les développeurs et développeuses doivent donc télécharger de nouveaux jetons d’accès tous les jours.
+1. Une application externe est en cours de développement, qui interagit par programmation avec AEM as a Cloud Service.
+1. L’application externe lit dans le jeton d’accès au développement local.
+1. L’application externe crée des requêtes HTTP pour AEM as a Cloud Service en ajoutant le jeton d’accès au développement local en tant que jeton porteur à l’en-tête d’autorisation des requêtes HTTP.
+1. AEM as a Cloud Service reçoit la requête HTTP, authentifie la requête et effectue le travail demandé par la requête HTTP, puis renvoie une réponse HTTP à l’application externe.
 
 ### Exemple d’application externe
 
-Nous allons créer une application JavaScript externe simple pour illustrer comment accéder par programmation à AEM as a Cloud Service via HTTPS à l’aide du jeton d’accès du développeur local. Cela illustre la manière dont _any_ l’application ou le système s’exécutant en dehors d’AEM, indépendamment de la structure ou de la langue, peut utiliser le jeton d’accès pour s’authentifier par programmation et y accéder AEM as a Cloud Service. Dans le [section suivante](./service-credentials.md), nous mettrons à jour ce code d’application afin de prendre en charge l’approche de génération d’un jeton en vue d’une utilisation en production.
+Nous allons créer une application JavaScript externe simple pour illustrer comment accéder par programmation à AEM as a Cloud Service via HTTPS à l’aide du jeton d’accès au développement local. Cette méthode illustre la manière dont _tout(e)_ application ou système s’exécutant en dehors d’AEM, indépendamment de la structure ou de la langue, peut utiliser le jeton d’accès pour s’authentifier par programmation et accéder à AEM as a Cloud Service. Dans la [section suivante](./service-credentials.md), nous mettrons à jour ce code d’application afin de prendre en charge l’approche de génération d’un jeton en vue d’une utilisation en production.
 
-Cet exemple d’application est exécuté à partir de la ligne de commande et met à jour AEM métadonnées des ressources à l’aide des API HTTP AEM Assets, à l’aide du flux suivant :
+Cet exemple d’application est exécuté à partir de la ligne de commande et met à jour les métadonnées des ressources d’AEM à l’aide des API HTTP d’AEM Assets, à l’aide du flux suivant :
 
-1. Lit les paramètres de la ligne de commande (`getCommandLineParams()`)
-1. Obtient le jeton d’accès utilisé pour s’authentifier sur AEM as a Cloud Service (`getAccessToken(...)`)
-1. Répertorie toutes les ressources d’un dossier de ressources AEM spécifié dans des paramètres de ligne de commande (`listAssetsByFolder(...)`)
-1. Mise à jour des métadonnées des ressources répertoriées avec les valeurs spécifiées dans les paramètres de ligne de commande (`updateMetadata(...)`)
+1. Lit les paramètres de la ligne de commande (`getCommandLineParams()`).
+1. Obtient le jeton d’accès utilisé pour s’authentifier sur AEM as a Cloud Service (`getAccessToken(...)`).
+1. Répertorie toutes les ressources d’un dossier de ressources d’AEM spécifié dans des paramètres de ligne de commande (`listAssetsByFolder(...)`).
+1. Met à jour les métadonnées des ressources répertoriées avec les valeurs spécifiées dans les paramètres de ligne de commande (`updateMetadata(...)`).
 
-L’élément clé de l’authentification par programmation pour AEM à l’aide du jeton d’accès est l’ajout d’un en-tête de requête HTTP d’autorisation à toutes les requêtes HTTP envoyées à AEM, au format suivant :
+L’élément clé sur lequel repose l’authentification par programmation à AEM à l’aide du jeton d’accès consiste en l’ajout d’un en-tête de requête HTTP d’autorisation à toutes les requêtes HTTP envoyées à AEM, au format suivant :
 
 + `Authorization: Bearer ACCESS_TOKEN`
 
-## Exécution de l’application externe
+## Exécuter l’application externe
 
-1. Assurez-vous que [Node.js](/help/cloud-service/local-development-environment/development-tools.md?lang=en#node-js) est installé sur votre machine de développement locale, qui est utilisée pour exécuter l’application externe.
-1. Téléchargez et décompressez le fichier [exemple d’application externe](./assets/aem-guides_token-authentication-external-application.zip)
-1. Sur la ligne de commande, dans le dossier de ce projet, exécutez `npm install`
-1. Copiez le [téléchargé le jeton d’accès au développement local.](#download-local-development-access-token) dans un fichier nommé `local_development_token.json` à la racine du projet
-   + Mais rappelez-vous, ne validez jamais vos identifiants à Git !
-1. Ouvrir `index.js` et passez en revue le code et les commentaires de l’application externe.
+1. Assurez-vous que [Node.js](/help/cloud-service/local-development-environment/development-tools.md?lang=en#node-js) est installé sur votre ordinateur de développement local chargé d’exécuter l’application.
+1. Téléchargez et décompressez l’[exemple d’application externe](./assets/aem-guides_token-authentication-external-application.zip).
+1. Sur la ligne de commande, dans le dossier de ce projet, exécutez `npm install`.
+1. Copiez le [jeton d’accès au développement local téléchargé](#download-local-development-access-token) dans un fichier nommé `local_development_token.json` à la racine du projet.
+   + Souvenez-vous cependant de ne jamais enregistrer vos informations d’identification sur Git.
+1. Ouvrez `index.js` et examinez le code et les commentaires de l’application externe.
 
    ```javascript
    const fetch = require('node-fetch');
@@ -212,7 +212,7 @@ L’élément clé de l’authentification par programmation pour AEM à l’aid
    }
    ```
 
-   Consultez la section `fetch(..)` les appels dans la variable `listAssetsByFolder(...)` et `updateMetadata(...)`, et notez `headers` définir la variable `Authorization` En-tête de requête HTTP avec la valeur `Bearer ACCESS_TOKEN`. C’est de cette manière que la requête HTTP provenant de l’application externe s’authentifie auprès d’AEM as a Cloud Service.
+   Examinez les appels `fetch(..)` dans `listAssetsByFolder(...)` et `updateMetadata(...)`, puis notez que l’en-tête `headers` définit l’en-tête de requête HTTP `Authorization` avec la valeur `Bearer ACCESS_TOKEN`. La requête HTTP provenant de l’application externe s’authentifie de cette manière auprès d’AEM as a Cloud Service.
 
    ```javascript
    ...
@@ -225,9 +225,9 @@ L’élément clé de l’authentification par programmation pour AEM à l’aid
    })...
    ```
 
-   Toute requête HTTP à AEM as a Cloud Service doit définir le jeton d’accès du porteur dans l’en-tête Authorization. Souvenez-vous que chaque environnement as a Cloud Service AEM nécessite son propre jeton d’accès. Le jeton d’accès du développement ne fonctionne pas sur l’environnement d’évaluation ou de production, l’environnement d’évaluation ne fonctionne pas sur le développement ou la production et celui de la production ne fonctionne pas sur l’environnement de développement ou d’évaluation.
+   Toute requête HTTP à AEM as a Cloud Service doit définir le jeton d’accès porteur dans l’en-tête d’autorisation. Souvenez-vous que chaque environnement AEM as a Cloud Service nécessite son propre jeton d’accès. Le jeton d’accès n’est valable que dans son propre environnement (le jeton d’accès de l’environnement de développement n’est pas valable sur l’environnement d’évaluation ou de production etc.).
 
-1. A l’aide de la ligne de commande, à partir de la racine du projet, exécutez l’application, en transmettant les paramètres suivants :
+1. Utilisez la ligne de commande à partir de la racine du projet et exécutez l’application en transmettant les paramètres suivants :
 
    ```shell
    $ node index.js \
@@ -238,15 +238,15 @@ L’élément clé de l’authentification par programmation pour AEM à l’aid
        file=local_development_token.json
    ```
 
-   Les paramètres suivants sont transmis :
+   Les paramètres suivants sont transmis :
 
-   + `aem`: Le schéma et le nom d’hôte de l’environnement as a Cloud Service AEM avec lequel l’application interagit (ex. `https://author-p1234-e5678.adobeaemcloud.com`).
-   + `folder`: Chemin d’accès au dossier de ressources dont les ressources sont mises à jour avec la variable `propertyValue`; n’ajoutez PAS la variable `/content/dam` préfixe (ex. `/wknd-shared/en/adventures/napa-wine-tasting`)
-   + `propertyName`: Nom de la propriété de ressource à mettre à jour, par rapport à `[dam:Asset]/jcr:content` (ex. `metadata/dc:rights`).
-   + `propertyValue`: La valeur pour définir la variable `propertyName` à; Les valeurs avec espaces doivent être encapsulées avec `"` (ex. `"WKND Limited Use"`)
-   + `file`: Chemin d’accès au fichier JSON téléchargé depuis AEM Developer Console.
+   + `aem` : le schéma et le nom d’hôte de l’environnement AEM as a Cloud Service avec lequel l’application interagit (`https://author-p1234-e5678.adobeaemcloud.com`, par exemple).
+   + `folder` : le chemin d’accès au dossier de ressources dont les ressources sont mises à jour avec la `propertyValue`. N’ajoutez pas le préfixe `/content/dam` (`/wknd-shared/en/adventures/napa-wine-tasting`, par exemple).
+   + `propertyName` : le nom de la propriété de la ressource à mettre à jour, par rapport à `[dam:Asset]/jcr:content` (ex. `metadata/dc:rights`).
+   + `propertyValue` : la valeur de la propriété `propertyName`. Les valeurs comportant des espaces doivent être encapsulées avec `"` (par exemple, `"WKND Limited Use"`).
+   + `file` : le chemin d’accès au fichier JSON téléchargé à partir de la Developer Console d’AEM.
 
-   Une exécution réussie de l’application donne des résultats pour chaque ressource mise à jour :
+   Les résultats des ressources mises à jour s’affichent en cas de réussite de l’application :
 
    ```shell
    200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting.json
@@ -256,21 +256,21 @@ L’élément clé de l’authentification par programmation pour AEM à l’aid
    200 - OK @ https://author-p1234-e5678.adobeaemcloud.com/api/assets/wknd-shared/en/adventures/napa-wine-tasting/AdobeStock_286664352.jpg.json
    ```
 
-### Vérification de la mise à jour des métadonnées dans AEM
+### Vérifier la mise à jour des métadonnées dans AEM
 
-Vérifiez que les métadonnées ont été mises à jour en vous connectant à l’environnement as a Cloud Service AEM (assurez-vous que le même hôte a été transmis dans la variable `aem` le paramètre de ligne de commande est accessible).
+Vérifiez la mise à jour des métadonnées en vous connectant à l’environnement AEM as a Cloud Service (assurez-vous d’accéder au même hôte que celui transmis dans le paramètre de ligne de commande `aem`).
 
-1. Connectez-vous à l’environnement as a Cloud Service AEM avec lequel l’application externe a interagi (utilisez le même hôte fourni dans la variable `aem` paramètre de ligne de commande)
-1. Accédez au __Ressources__ > __Fichiers__
-1. Accédez au dossier de ressources spécifié par la propriété `folder` paramètre de ligne de commande, par exemple __WKND__ > __Anglais__ > __Aventures__ > __Goûts du vin de Napa__
-1. Ouvrez le __Propriétés__ pour toute ressource (autre que le fragment de contenu) dans le dossier
-1. Appuyez sur le bouton __Avancé__ tab
-1. Vérifiez la valeur de la propriété mise à jour, par exemple __Copyright__ qui est mappé à la mise à jour `metadata/dc:rights` Propriété JCR, qui reflète la valeur fournie dans la propriété `propertyValue` par exemple, __Utilisation limitée WKND__
+1. Connectez-vous à l’environnement AEM as a Cloud Service avec lequel l’application externe a interagi (utilisez le même hôte que celui fourni dans le paramètre de ligne de commande `aem`).
+1. Accédez à __Ressources__ > __Fichiers__.
+1. Accédez au dossier de ressources spécifié par le paramètre de ligne de commande `folder`, par exemple __WKND__ > __English__ > __Adventures__ > __Napa Wine Tasting__.
+1. Ouvrez les __Propriétés__ de n’importe quelle ressource (autre qu’un fragment de contenu) présente dans le dossier.
+1. Cliquez sur l’onglet __Avancé__.
+1. Vérifiez la valeur de la propriété mise à jour, par exemple __Copyright__, qui est mappée à la propriété JCR `metadata/dc:rights` mise à jour, laquelle reflète la valeur fournie dans le paramètre `propertyValue` (par exemple, __WKND Limited Use__).
 
-![Mise à jour des métadonnées d’utilisation limitée WKND](./assets/local-development-access-token/asset-metadata.png)
+![Mise à jour des métadonnées de WKND Limited Use.](./assets/local-development-access-token/asset-metadata.png)
 
 ## Étapes suivantes
 
-Maintenant que nous avons accédé par programmation à AEM as a Cloud Service à l’aide du jeton de développement local. Ensuite, nous devons mettre à jour l’application pour gérer l’utilisation des informations d’identification du service, afin que cette application puisse être utilisée dans un contexte de production.
+Vous avez réussi à accéder par programmation à AEM as a Cloud Service à l’aide du jeton de développement local. Dans la section suivante, vous allez mettre à jour l’application afin de prendre en charge l’utilisation des informations d’identification de service, de sorte que cette application puisse être utilisée dans un environnement de production.
 
-+ [Utilisation des informations d’identification du service](./service-credentials.md)
++ [Utiliser les informations d’identification de service](./service-credentials.md)
