@@ -1,6 +1,6 @@
 ---
-title: Comment mettre à jour la conversion du serveur et le délai d’expiration global du serveur dans le service PDFG
-description: Configuration de la conversion de serveur et du délai d’expiration global du serveur pour PDF Generator
+title: Mettre à jour la conversion du serveur et le délai d’expiration global du serveur dans le service PDFG
+description: Configurer la conversion de serveur et le délai d’expiration global du serveur pour PDF Generator
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -10,14 +10,14 @@ topic: Administration
 index: y
 exl-id: 669dde4b-777c-4fea-b0e8-50f797c21757
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '54'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Comment mettre à jour la conversion du serveur et le délai d’expiration global dans le service PDFG
+# Mettre à jour la conversion et le délai d’expiration global du serveur dans le service PDFG
 
-*Cette vidéo décrit le processus de mise à jour de la conversion de serveur et du délai d’expiration global du serveur dans le service Forms PDFG.*
+*Cette vidéo décrit le processus de mise à jour de la conversion du serveur et du délai d’expiration global du serveur dans le service de formulaires PDFG.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335514?quality=12&learn=on)
