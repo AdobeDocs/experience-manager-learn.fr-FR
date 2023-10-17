@@ -1,5 +1,5 @@
 ---
-title: Ajout d’éléments de dossier DAM au composant de groupe de choix
+title: Ajouter des éléments de dossier DAM au composant de groupe de choix
 description: Ajouter dynamiquement des éléments au composant de groupe de choix
 feature: Adaptive Forms
 version: 6.5
@@ -9,19 +9,19 @@ level: Beginner
 last-substantial-update: 2023-01-01T00:00:00Z
 exl-id: 29f56d13-c2e2-4bc2-bfdc-664c848dd851
 source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '228'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Ajout dynamique d’éléments au composant de groupe de choix
+# Ajouter dynamiquement des éléments au composant de groupe de choix
 
-AEM Forms 6.5 offre la possibilité d’ajouter dynamiquement des éléments à un composant de groupe de choix de Forms adaptatif tel que Case à cocher, Bouton radio et Liste d’images. Dans cet article, nous allons examiner le cas d’utilisation de remplissage d’un composant de groupe de choix avec le contenu du dossier DAM. Dans la capture d’écran, les 3 fichiers se trouvent dans le dossier intitulé newsletter. Chaque fois qu’une nouvelle newsletter est ajoutée au dossier, le composant de groupe de choix est mis à jour pour répertorier automatiquement son contenu. L’utilisateur peut sélectionner une ou plusieurs newsletters à télécharger.
+AEM Forms 6.5 offre la possibilité d’ajouter dynamiquement des éléments à un composant de groupe de choix de formulaire adaptatif, comme Case à cocher, Bouton radio et Liste d’images. Dans cet article, nous allons examiner le cas d’utilisation de remplissage d’un composant de groupe de choix avec le contenu du dossier DAM. Dans la copie d’écran, les 3 fichiers se trouvent dans le dossier intitulé Newsletter. Chaque fois qu’une nouvelle newsletter est ajoutée au dossier, le composant de groupe de choix est mis à jour pour répertorier automatiquement son contenu. L’utilisateur ou l’utilisatrice peut sélectionner une ou plusieurs newsletters à télécharger.
 
 ![Éditeur de règles](assets/newsletters-download.png)
 
-## Création d’un servlet pour renvoyer le contenu du dossier DAM
+## Créer un servlet pour renvoyer le contenu du dossier DAM
 
 Le code suivant a été écrit pour renvoyer le contenu du dossier DAM au format JSON.
 
@@ -82,7 +82,7 @@ public class ListFolderContent extends SlingSafeMethodsServlet {
 }
 ```
 
-## Création d’une bibliothèque cliente avec une fonction JavaScript
+## Créer une bibliothèque cliente avec une fonction JavaScript
 
 Le servlet est appelé à partir d’une fonction JavaScript. La fonction renvoie un objet de tableau qui sera utilisé pour remplir le composant de groupe de choix.
 
@@ -110,11 +110,11 @@ function getDAMFolderAssets(damFolder) {
 
 ## Créer un formulaire adaptatif
 
-Créer un formulaire adaptatif et associer le formulaire à la bibliothèque cliente **listfolderassets**. Ajoutez un composant de case à cocher à votre formulaire. Utilisez l’éditeur de règles pour remplir les options de la case à cocher, comme indiqué dans la capture d’écran.
+Créez un formulaire adaptatif et associez-le à la bibliothèque cliente **listfolderassets**. Ajoutez un composant de case à cocher à votre formulaire. Utilisez l’éditeur de règles pour remplir les options de la case à cocher, comme indiqué dans la copie d’écran.
 ![set-options](assets/set-options-newsletter.png)
 
-La fonction JavaScript appelée **getDAMFolderAssets** et transmission du chemin d’accès aux ressources du dossier DAM à répertorier dans le formulaire.
+Nous invoquons la fonction JavaScript appelée **getDAMFolderAssets** et transmettons le chemin d’accès aux ressources du dossier DAM à répertorier dans le formulaire.
 
 ## Étapes suivantes
 
-[Assemblage de ressources sélectionnées](./assemble-selected-newsletters.md)
+[Assembler les ressources sélectionnées](./assemble-selected-newsletters.md)
