@@ -1,7 +1,7 @@
 ---
-title: Créer Une Communication Interactive Pour Le Canal D’Impression
+title: Créer une communication interactive pour le canal d’impression
 seo-title: Create Interactive Communication For Print Channel
-description: Ce didacticiel en plusieurs parties est la 6 partie qui vous permet de créer votre premier document de communication interactive pour le canal d’impression. Dans cette partie, le document de communication interactive pour le canal d’impression est créé.
+description: Il s’agit de la partie 6 du tutoriel en plusieurs étapes sur la création de votre premier document de communication interactive pour le canal d’impression. Dans cette partie, le document de communication interactive pour le canal d’impression est créé.
 seo-description: This is part 6 of multipart tutorial for creating your first interactive communication document for the print channel. In this part, Interactive Communication Document for Print channel is created.
 uuid: 25318a2a-be9d-47d8-806b-d99c8e1c6a74
 feature: Interactive Communication
@@ -18,13 +18,13 @@ role: Developer
 level: Beginner
 exl-id: d4355f72-aefa-4ab3-ba7e-ebd7f7b536f0
 source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '78'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Créer Une Communication Interactive Pour Le Canal D’Impression {#create-interactive-communication-for-print-channel}
+# Créer une communication interactive pour le canal d’impression {#create-interactive-communication-for-print-channel}
 
 Dans cette partie, le document de communication interactive pour le canal d’impression est créé.
 
