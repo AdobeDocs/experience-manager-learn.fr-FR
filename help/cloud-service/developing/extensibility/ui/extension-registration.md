@@ -1,6 +1,6 @@
 ---
-title: Enregistrement de l’extension d’interface utilisateur AEM
-description: Découvrez comment enregistrer une extension d’interface utilisateur AEM.
+title: Enregistrement de l’extension de l’interface utilisateur AEM
+description: Découvrez comment enregistrer une extension de l’interface utilisateur AEM.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -11,23 +11,23 @@ kt: 11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: ef2290d9-ba40-429b-b10d-e82d6c1c20f6
 source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '304'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Enregistrement d’une extension
 
-Les extensions de l’interface utilisateur d’AEM sont des applications spécialisées du générateur d’applications, reposant sur React et utilisant la variable [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/) Structure de l’interface utilisateur.
+Les extensions de l’interface utilisateur d’AEM sont des applications spécialisées du Créateur d’applications, basées sur React et qui utilisent le framework de l’interface utilisateur [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/).
 
-Pour définir où et comment l’extension d’interface utilisateur d’AEM apparaît, deux configurations sont requises dans l’application App Builder de l’extension : routage de l’application et enregistrement de l’extension.
+Pour définir où et comment l’extension de l’interface utilisateur AEM apparaît, deux configurations sont requises dans l’application du Créateur d’applications de l’extension : le routage de l’application et l’enregistrement de l’extension.
 
-## Itinéraires des applications{#app-routes}
+## Itinéraires de l’application{#app-routes}
 
-L’extension `App.js` déclare la variable [Routeur React](https://reactrouter.com/en/main) qui inclut un itinéraire d’index qui enregistre l’extension dans l’interface utilisateur d’AEM.
+L’`App.js` de l’extension déclare le [routeur React](https://reactrouter.com/en/main) qui inclut un itinéraire d’index qui enregistre l’extension dans l’interface utilisateur AEM.
 
-L’itinéraire de l’index est appelé lors du chargement initial de l’interface utilisateur d’AEM, et la cible de cet itinéraire définit la manière dont l’extension est exposée dans la console.
+L’itinéraire de l’index est appelé lors du chargement initial de l’interface utilisateur AEM, et la cible de cet itinéraire définit la manière dont l’extension est exposée dans la console.
 
 + `./src/aem-ui-extension/web-src/src/components/App.js`
 
@@ -54,28 +54,28 @@ function App(props) {
 
 `ExtensionRegistration.js` doit être immédiatement chargé via l’itinéraire d’index de l’extension et agit sur le point d’enregistrement de l’extension.
 
-Basé sur le modèle d’extension de l’interface utilisateur AEM sélectionné lors de la [initialisation de l’extension de l’application App Builder](./app-initialization.md), différents points d’extension sont pris en charge.
+Selon le modèle d’extension de l’interface utilisateur AEM sélectionné lors de l’[initialisation de l’extension de l’application du Créateur d’applications](./app-initialization.md), différents points d’extension sont pris en charge.
 
 + [Points d’extension de l’interface utilisateur des fragments de contenu](./content-fragments/overview.md#extension-points)
 
 
 ## Inclusion conditionnelle d’extensions
 
-Les extensions de l’interface utilisateur d’AEM peuvent exécuter une logique personnalisée pour limiter les environnements AEM dans lesquels l’extension apparaît. Cette vérification est effectuée avant la `register` dans le `ExtensionRegistration` et renvoie immédiatement si l’extension ne doit pas être affichée.
+Les extensions de l’interface utilisateur AEM peuvent exécuter une logique personnalisée pour limiter les environnements AEM dans lesquels l’extension apparaît. Cette vérification est effectuée avant l’appel `register` dans le composant `ExtensionRegistration` et renvoie immédiatement si l’extension ne doit pas être affichée.
 
-Le contexte disponible pour ce contrôle est limité :
+Le contexte disponible pour cette vérification est limité :
 
-+ L’hôte AEM sur lequel l’extension est en cours de chargement.
-+ Jeton d’accès AEM de l’utilisateur actuel.
++ l’hôte AEM sur lequel l’extension est en cours de chargement ;
++ le jeton d’accès AEM de la personne utilisatrice actuelle.
 
-Les contrôles les plus courants pour le chargement d’une extension sont les suivants :
+Les vérifications les plus courantes pour charger une extension sont les suivantes :
 
-+ Utilisation de l’hôte AEM (`new URLSearchParams(window.location.search).get('repo')`) pour déterminer si l’extension doit se charger.
-   + Affichez uniquement l’extension sur les environnements AEM qui font partie d’un programme spécifique (comme illustré dans l’exemple ci-dessous).
-   + Affiche uniquement l’extension sur un environnement AEM spécifique (hôte AEM).
-+ Utilisation d’une [Action Adobe I/O Runtime](./runtime-action.md) pour effectuer un appel HTTP vers AEM afin de déterminer si l’utilisateur actuel doit voir l’extension.
++ Utiliser l’hôte AEM (`new URLSearchParams(window.location.search).get('repo')`) pour déterminer si l’extension doit charger.
+   + Afficher uniquement l’extension sur les environnements AEM qui font partie d’un programme spécifique (comme illustré dans l’exemple ci-dessous).
+   + Afficher uniquement l’extension sur un environnement AEM spécifique (hôte AEM).
++ Utiliser une [Action Adobe I/O Runtime](./runtime-action.md) pour effectuer un appel HTTP vers AEM afin de déterminer si la personne utilisatrice actuelle doit voir l’extension.
 
-L’exemple ci-dessous illustre la limitation de l’extension à tous les environnements du programme. `p12345`.
+L’exemple ci-dessous illustre la limitation de l’extension à tous les environnements du programme `p12345`.
 
 + `./src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
