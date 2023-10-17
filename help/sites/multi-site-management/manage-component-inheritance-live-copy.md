@@ -1,6 +1,6 @@
 ---
-title: Gérer l’héritage de la Live Copy sur un composant
-description: Comprendre comment gérer l’héritage entre une Live Copy et son plan directeur au niveau du composant
+title: Gérer l’héritage de la Live Copy sur un composant
+description: Découvrez comment gérer l’héritage entre une Live Copy et son plan directeur au niveau des composants.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -14,14 +14,14 @@ role: User
 level: Beginner
 exl-id: 924fbe94-2e58-4998-a2a9-b77f1aebd61e
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Gérer l’héritage de la Live Copy sur un composant {#manage-live-copy-component}
+# Gérer l’héritage de la Live Copy sur un composant {#manage-live-copy-component}
 
-Découvrez comment gérer l’héritage entre une Live Copy et son plan directeur au niveau des composants.
+Découvrez comment gérer l’héritage entre une Live Copy et son plan directeur au niveau des composants.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36678?quality=12&learn=on)
