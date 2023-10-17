@@ -8,19 +8,19 @@ role: Developer, Architect
 level: Intermediate
 kt: 10829
 thumbnail: kt-10829.jpg
-source-git-commit: 442020d854d8f42c5d8a1340afd907548875866e
+exl-id: b76b7c46-5cbd-4039-8fd6-9f0f10a4a84f
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: ht
 source-wordcount: '211'
 ht-degree: 100%
 
 ---
 
-
 # Filtres Dispatcher
 
 Adobe Experience Manager as a Cloud Service utilise les filtres du Dispatcher de publication AEM pour s’assurer que seules les requêtes qui doivent atteindre AEM atteignent AEM. Par défaut, toutes les requêtes sont refusées et les modèles des URL autorisées doivent être explicitement ajoutés.
 
-| Type de client | [Application monopage (SPA)](../spa.md) | [Composant web/JS](../web-component.md) | [Mobile](../mobile.md) | [Serveur à serveur](../server-to-server.md) |
+| Type de client | [Application monopage (SPA)](../spa.md) | [Composant Web/JS](../web-component.md) | [Mobile](../mobile.md) | [Serveur à serveur](../server-to-server.md) |
 |------------------------------------------:|:---------------------:|:----------------:|:---------:|:----------------:|
 | Configuration des filtres du Dispatcher requise | ✔ | ✔ | ✔ | ✔ |
 
@@ -32,7 +32,7 @@ Adobe Experience Manager as a Cloud Service utilise les filtres du Dispatc
 
 La configuration des filtres du Dispatcher de l’instance de publication AEM définit les modèles d’URL autorisés à atteindre AEM. Elle doit inclure le préfixe d’URL pour le point d’entrée de la requête persistante d’AEM.
 
-| Le client se connecte à : | l’instance de création AEM, | l’instance de publication AEM, | Prévisualisation AEM |
+| Le client se connecte à : | l’instance de création AEM, | Publication AEM | Prévisualisation AEM |
 |------------------------------------------:|:----------:|:-------------:|:-------------:|
 | Configuration des filtres du Dispatcher requise | ✘ | ✔ | ✔ |
 
