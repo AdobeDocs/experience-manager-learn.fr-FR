@@ -1,7 +1,7 @@
 ---
-title: Configuration du panneau Outlook de retraite
+title: Configurer le panneau d’estimation de retraite
 seo-title: Configuring Retirement Outlook Panel
-description: Ce didacticiel en plusieurs étapes constitue la 10 partie d’un premier document de communication interactive. Dans cette partie, nous allons configurer le panneau Outlook de retraite en ajoutant des composants de texte et de graphique.
+description: Il s’agit de la partie 10 du tutoriel en plusieurs étapes sur la création de votre premier document de communication interactive. Dans cette partie, nous allons configurer le panneau d’estimation de retraite en ajoutant des composants de texte et de graphique.
 seo-description: This is part 10 of a multi-step tutorial for creating your first interactive communications document. In this part, we will configure Retirement Outlook Panel by adding text and chart components.
 uuid: 1d5119b5-e797-4bf0-9b10-995b3f051f92
 feature: Interactive Communication
@@ -16,64 +16,64 @@ role: Developer
 level: Beginner
 exl-id: 0dd8a430-9a4e-4dc7-ad75-6ad2490430f2
 source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '349'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Configuration du panneau Outlook de retraite{#configuring-retirement-outlook-panel}
+# Configurer le panneau d’estimation de retraite{#configuring-retirement-outlook-panel}
 
-* Ce didacticiel en plusieurs étapes constitue la 10 partie d’un premier document de communication interactive. Dans cette partie, nous allons configurer le panneau Outlook de retraite en ajoutant des composants de texte et de graphique.
+* Il s’agit de la partie 10 du tutoriel en plusieurs étapes sur la création de votre premier document de communication interactive. Dans cette partie, nous allons configurer le panneau d’estimation de retraite en ajoutant des composants de texte et de graphique.
 
-* Connectez-vous à AEM Forms et accédez à Adobe Experience Manager > Forms > Forms et documents.
+* Connectez-vous à AEM Forms et accédez à Adobe Experience Manager > Forms > Formulaires et documents.
 
-* Ouvrez le dossier 401KStatement .
+* Ouvrez le dossier 401KStatement.
 
-* Ouvrez le document 401KStatement en mode d’édition.
+* Ouvrez le document 401KStatement en mode édition.
 
-**Configuration de la zone cible Panneau gauche**
+**Configurer la zone cible Panneau gauche**
 
-* Appuyez sur la zone cible LeftPanel à droite et cliquez sur l’icône &quot;+&quot; pour ouvrir la boîte de dialogue Insérer le composant.
+* Appuyez sur la zone cible Panneau gauche à droite et cliquez sur l’icône « + » pour ouvrir la boîte de dialogue Insérer le composant.
 
-* Insérez le composant Texte.
-
-* Appuyez avec douceur sur le nouveau composant de texte ajouté pour afficher la barre d’outils du composant.
-
-* Sélectionnez l&#39;icône &quot;crayon&quot; pour modifier le texte par défaut.
-
-* Remplacez le texte par défaut par &quot;**Votre avenir du revenu de retraite&quot;**
-
-**Configuration de la zone cible du panneau droit**
-
-* Appuyez sur la zone cible du panneau de droite à droite et cliquez sur l’icône &quot;+&quot; pour ouvrir la boîte de dialogue Insérer le composant.
-
-* Insérez le composant Texte.
+* Insérez le composant de texte.
 
 * Appuyez doucement sur le nouveau composant de texte ajouté pour afficher la barre d’outils du composant.
 
-* Sélectionnez l&#39;icône &quot;crayon&quot; pour modifier le texte par défaut.
+* Sélectionnez l’icône en forme de crayon pour modifier le texte par défaut.
 
-* Remplacez le texte par défaut par &quot;**Estimation du revenu mensuel de retraite&quot;**
+* Remplacez le texte par défaut par **« Estimation de votre pension de retraite »**.
 
-## Ajouter un fragment de document Outlook de revenu de retraite {#add-retirement-income-outlook-document-fragment}
+**Configurer la zone cible Panneau droit**
 
-* Cliquez sur l’icône Ressources et appliquez le filtre pour afficher les ressources de type &quot;Fragments de document&quot;. Faites glisser et déposez le fragment de document RetirementRevenueOutlook dans la zone cible Panneau de gauche.
+* Appuyez sur la zone cible Panneau droit à droite et cliquez sur l’icône « + » pour ouvrir la boîte de dialogue Insérer le composant.
 
-* Vous pouvez consulter [à cette page](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html) lors de l’ajout d’un fragment de document aux zones de contenu.
+* Insérez le composant de texte.
 
-## Ajout d’un graphique des revenus mensuels estimés {#adding-estimated-monthly-income-chart}
+* Appuyez doucement sur le nouveau composant de texte ajouté pour afficher la barre d’outils du composant.
 
-* Cliquez sur la zone cible du panneau de droite dans la partie droite. Cliquez sur l’icône &quot;+&quot; pour insérer le composant de graphique. Nous utiliserons un graphique en colonnes pour afficher les revenus mensuels estimés. Appuyez doucement sur le composant de graphique nouvellement inséré. Sélectionnez l&#39;icône &quot;clé à molette&quot; pour ouvrir la feuille des propriétés de configuration. Configurez le graphique avec les propriétés suivantes, comme illustré dans la capture d&#39;écran ci-dessous.
+* Sélectionnez l’icône en forme de crayon pour modifier le texte par défaut.
 
-**AEM Forms 6.4 - Configuration du graphique à colonnes de revenus mensuels estimés**
+* Remplacez le texte par défaut par **« Pension mensuelle de retraite estimée »**.
+
+## Ajouter un fragment de document Estimation de pension de retraite {#add-retirement-income-outlook-document-fragment}
+
+* Cliquez sur l’icône Ressources et appliquez le filtre pour afficher les ressources de type « Fragments de document ». Faites glisser et déposez le fragment de document RetirementRevenueOutlook dans la zone cible Panneau de gauche.
+
+* Vous pouvez vous référer à [cette page](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-web-channel-tutorial/partseven.html?lang=fr) pour l’ajout d’un fragment de document aux zones de contenu.
+
+## Ajouter un graphique des revenus mensuels estimés {#adding-estimated-monthly-income-chart}
+
+* Cliquez sur la zone cible Panneau droit dans la partie droite. Cliquez sur l’icône « + » pour insérer le composant de graphique. Nous utiliserons un graphique en colonnes pour afficher les revenus mensuels estimés. Appuyez doucement sur le composant de graphique nouvellement inséré. Sélectionnez l’icône en forme de clé à molette pour ouvrir la feuille des propriétés de configuration. Configurez le graphique avec les propriétés suivantes, comme illustré dans la copie d’écran ci-dessous.
+
+**AEM Forms 6.4 - Configuration du graphique à colonnes des revenus mensuels estimés**
 
 ![form64](assets/estimatedmonthlyincomechart.png)
 
-**AEM Forms 6.5 - Configuration du graphique à colonnes de revenus mensuels estimés**
+**AEM Forms 6.5 - Configuration du graphique à colonnes des revenus mensuels estimés**
 
 ![forms65](assets/estimatedmonthlyincomechart65.PNG)
 
 ## Étapes suivantes
 
-[Configuration du graphique circulaire](./parteleven.md)
+[Configurer un graphique en secteurs](./parteleven.md)
