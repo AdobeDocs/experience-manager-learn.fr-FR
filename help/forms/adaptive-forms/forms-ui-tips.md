@@ -1,6 +1,6 @@
 ---
-title: Quelques conseils et astuces utiles sur l’interface utilisateur
-description: Document pour montrer quelques conseils utiles sur l’interface utilisateur
+title: Conseils et astuces utiles sur l’interface utilisateur
+description: Document contenant quelques conseils utiles sur l’interface utilisateur
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -10,23 +10,23 @@ level: Beginner
 kt: 9270
 last-substantial-update: 2019-06-09T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
-# Activation/désactivation de la visibilité du champ de mot de passe
+# Activer/désactiver la visibilité du champ de mot de passe
 
-Un cas pratique courant consiste à permettre à l’utilisateur de basculer vers la visibilité du texte saisi dans le champ du mot de passe.
-Pour réaliser ce cas d’utilisation, j’ai utilisé l’icône en forme d’oeil du [Bibliothèque Font Awesome](https://fontawesome.com/). Les fichiers CSS requis et eye.svg sont inclus dans la bibliothèque cliente créée pour cette démonstration.
+Un cas pratique courant consiste à permettre aux utilisateurs et utilisatrices de formulaire de basculer vers la visibilité du texte saisi dans le champ du mot de passe.
+Pour réaliser ce cas d’utilisation, j’ai utilisé l’icône en forme d’œil de la [Bibliothèque de polices Awesome](https://fontawesome.com/). Les fichiers CSS requis et eye.svg sont inclus dans la bibliothèque cliente créée pour cette démonstration.
 
 
 ## Exemple de code
 
 Le formulaire adaptatif comporte un champ de type PasswordBox appelé **ssnField**.
 
-Le code suivant est exécuté au chargement du formulaire.
+Le code suivant est exécuté lors du chargement du formulaire.
 
 ```javascript
 $(document).ready(function() {
@@ -48,7 +48,7 @@ $(document).ready(function() {
 });
 ```
 
-Le CSS suivant a été utilisé pour positionner la variable **oeil** dans le champ du mot de passe
+Le CSS suivant a été utilisé pour positionner l’icône **œil** dans le champ du mot de passe.
 
 ```javascript
 .svg-inline--fa {
@@ -63,12 +63,12 @@ Le CSS suivant a été utilisé pour positionner la variable **oeil** dans le ch
 }
 ```
 
-## Déploiement de l’exemple de mot de passe de basculement
+## Déployez l’exemple de bouton (bascule) du mot de passe.
 
-* Téléchargez la [bibliothèque cliente](assets/simple-ui-tips.zip)
-* Téléchargez la [exemple de formulaire](assets/simple-ui-tricks-form.zip)
-* Importez la bibliothèque cliente à l’aide de la méthode [interface utilisateur du gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp)
-* Importez l’exemple de formulaire à l’aide du [Forms et document](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* [Prévisualiser le formulaire](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled)
+* Téléchargez la [bibliothèque cliente](assets/simple-ui-tips.zip).
+* Téléchargez l’[exemple de formulaire](assets/simple-ui-tricks-form.zip).
+* Importez la bibliothèque cliente à l’aide de l’[interface utilisateur du gestionnaire de packages](http://localhost:4502/crx/packmgr/index.jsp).
+* Importez l’exemple de formulaire à l’aide de [Formulaires et documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* [Prévisualisez le formulaire](http://localhost:4502/content/dam/formsanddocuments/simpleuitips/jcr:content?wcmmode=disabled).
 
 
