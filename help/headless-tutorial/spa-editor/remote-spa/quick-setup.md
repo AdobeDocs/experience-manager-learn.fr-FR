@@ -11,7 +11,7 @@ last-substantial-update: 2022-11-11T00:00:00Z
 recommendations: noDisplay, noCatalog
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
 source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '793'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ _Présentation vidéo de la configuration rapide._
 Ce tutoriel nécessite les éléments suivants :
 
 + [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=fr)
-+ [Node.js v18](https://nodejs.org/fr/)
++ [Node.js v18](https://nodejs.org/fr/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6 et ultérieure](https://maven.apache.org/)
 + [Git](https://git-scm.com/downloads)
