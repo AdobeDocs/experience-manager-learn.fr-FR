@@ -1,6 +1,6 @@
 ---
-title: Utilisation de la vidéo interactive avec AEM Dynamic Media
-description: AEM Assets offre désormais la possibilité de créer des vidéos interactives, dans lesquelles les utilisateurs peuvent diviser une vidéo en segments plus petits ou combiner de petits segments pour créer un segment important, ce qui permet aux utilisateurs d’associer des appels à l’action.
+title: Utiliser la vidéo interactive avec AEM Dynamic Media
+description: AEM Assets offre désormais la possibilité de créer des vidéos interactives, dans lesquelles les utilisateurs et utilisatrices peuvent diviser une vidéo en segments plus petits ou combiner de petits segments pour en créer un grand, leur permettant ainsi d’associer des appels à l’action.
 feature: Video Profiles, Viewer Presets, Mixed Media Sets
 version: 6.4, 6.5
 topic: Content Management
@@ -8,14 +8,14 @@ role: User
 level: Beginner
 exl-id: 2a27d8bc-ee7b-4d13-8512-8f3dc1eb8f13
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '82'
-ht-degree: 17%
+ht-degree: 100%
 
 ---
 
-# Utilisation de la vidéo interactive avec AEM Dynamic Media{#using-interactive-video-with-aem-dynamic-media}
+# Utiliser la vidéo interactive avec AEM Dynamic Media{#using-interactive-video-with-aem-dynamic-media}
 
-AEM Assets offre désormais la possibilité de créer des vidéos interactives, dans lesquelles les utilisateurs peuvent diviser une vidéo en segments plus petits ou combiner de petits segments pour créer un segment important, ce qui permet aux utilisateurs d’associer des appels à l’action.
+AEM Assets offre désormais la possibilité de créer des vidéos interactives, dans lesquelles les utilisateurs et utilisatrices peuvent diviser une vidéo en segments plus petits ou combiner de petits segments pour en créer un grand, leur permettant ainsi d’associer des appels à l’action.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16516?quality=12&learn=on)
