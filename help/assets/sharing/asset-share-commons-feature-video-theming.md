@@ -1,6 +1,6 @@
 ---
-title: Présentation du thème dans Asset Share Commons
-description: Matériel de compréhension à la fois fonctionnelle et technique Ressources Share Commons
+title: Présentation des thèmes dans Asset Share Commons
+description: Éléments pour la compréhension à la fois fonctionnelle et technique d’Assets Share Commons.
 version: 6.4, 6.5
 topic: Content Management
 feature: Asset Distribution
@@ -9,19 +9,19 @@ level: Intermediate
 last-substantial-update: 2022-06-22T00:00:00Z
 exl-id: b7d0b6b1-145a-4987-a9dc-7263efa4d9fb
 source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '112'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Présentation du thème dans Asset Share Commons {#asset-share-commons-theme}
+# Présentation des thèmes dans Asset Share Commons {#asset-share-commons-theme}
 
-Une brève introduction à ce thème dans Asset Share Commons. La vidéo décrit le processus de création d’un thème avec un modèle de couleurs personnalisé.
+Une brève introduction aux thèmes dans Asset Share Commons. La vidéo passe en revue le processus de création d’un thème avec un modèle de couleurs personnalisé.
 
 >[!VIDEO](https://video.tv.adobe.com/v/20572?quality=12&learn=on)
 
-Dans cette vidéo, un nouveau thème est créé à partir du thème Asset Share Commons Dark. Le modèle de couleurs correspondra à un logo personnalisé pour donner au site une apparence cohérente.
+Dans cette vidéo, nous créons un thème à partir du thème sombre d’Asset Share Commons. Le modèle de couleurs correspondra à un logo personnalisé pour donner au site un aspect cohérent.
 
 ## Variables de thème
 
@@ -78,5 +78,5 @@ Télécharger [Thème de bibliothèque cliente personnalisée](assets/asc-theme-
 
 ## Ressources supplémentaires{#additional-resources}
 
-* [Téléchargements de versions d’Asset Share Commons](https://github.com/Adobe-Marketing-Cloud/asset-share-commons/releases)
-* [Téléchargements des versions d’ACS AEM Commons 3.11.0+](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)
+* [Téléchargements de versions d’Asset Share Commons](https://github.com/adobe/asset-share-commons/releases)
+* [Téléchargements des versions d’AEM Commons 3.11.0 et ultérieures d’ACS](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)
