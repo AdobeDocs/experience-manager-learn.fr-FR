@@ -8,13 +8,13 @@ role: Developer, Architect
 level: Intermediate
 kt: 10796
 thumbnail: KT-10796.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+exl-id: 1f536079-b3ce-4807-be88-804378e75d37
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: ht
 source-wordcount: '152'
 ht-degree: 100%
 
 ---
-
 
 # Déploiements mobiles d’AEM Headless
 
@@ -26,7 +26,7 @@ Les déploiements mobiles nécessitent une configuration minimale, car les conne
 
 La configuration de déploiement suivante doit être mise en place pour les déploiements d’applications mobiles.
 
-| L’application mobile se connecte à | l’instance de création AEM, | l’instance de publication AEM, | Prévisualisation AEM |
+| L’application mobile se connecte à | l’instance de création AEM, | Publication AEM | Prévisualisation AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtres Dispatcher.](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Partage de ressources entre origines multiples (CORS) | ✘ | ✘ | ✘ |
@@ -80,5 +80,3 @@ Adobe fournit des exemples d’applications mobiles iOS et Android™.
        </div>
     </div>
 </div>
-
-
