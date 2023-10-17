@@ -1,7 +1,7 @@
 ---
-title: Envoi de courrier électronique lors de l’envoi d’un formulaire adaptatif
+title: Envoyer un e-mail lors de l’envoi d’un formulaire adaptatif
 seo-title: Sending Email on Adaptive Form Submission
-description: Envoyer un courrier électronique de confirmation lors de l’envoi du formulaire adaptatif à l’aide du composant Envoyer un courrier électronique
+description: Envoyer un e-mail de confirmation lors de l’envoi d’un formulaire adaptatif à l’aide du composant Envoyer un e-mail
 seo-description: Send confirmation email on adaptive form submission using the send email component
 uuid: 6c9549ba-cb56-4d69-902c-45272a8fd17e
 feature: Adaptive Forms
@@ -16,38 +16,38 @@ level: Beginner
 exl-id: 19c5aeec-2893-4ada-b6df-b80c4be2468a
 last-substantial-update: 2020-07-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Envoi de courrier électronique lors de l’envoi d’un formulaire adaptatif {#sending-email-on-adaptive-form-submission}
+# Envoyer un e-mail lors de l’envoi d’un formulaire adaptatif {#sending-email-on-adaptive-form-submission}
 
-L’une des actions courantes consiste à envoyer un email de confirmation à l’auteur de l’envoi lors d’un envoi réussi de formulaire adaptatif. Pour ce faire, nous sélectionnerons &quot;Envoyer un courrier électronique&quot; comme action d’envoi.
+Il est courant d’envoyer un e-mail de confirmation à l’auteur ou à l’autrice lors de l’envoi abouti d’un formulaire adaptatif. Pour ce faire, sélectionnons « Envoyer un e-mail » comme action d’envoi.
 
-Vous pouvez utiliser un modèle d&#39;email ou simplement saisir le corps de l&#39;email comme illustré dans cette capture d&#39;écran ci-dessous.
+Vous pouvez utiliser un modèle d’e-mail ou simplement saisir le corps de l’e-mail, comme illustré dans cette capture d’écran ci-dessous.
 
-Notez la syntaxe pour insérer des valeurs de champ de formulaire dans le courrier électronique. Vous avez également la possibilité d’inclure des pièces jointes de formulaire dans le courrier électronique, en cochant la case &quot;inclure des pièces jointes&quot; dans les propriétés de configuration.
+Notez la syntaxe permettant d’insérer des valeurs de champ de formulaire dans l’e-mail. Vous avez également la possibilité d’inclure des pièces jointes de formulaire dans l’e-mail, en cochant la case « Inclure les pièces jointes » dans les propriétés de configuration.
 
-Lorsque le formulaire adaptatif est envoyé, le destinataire reçoit un courrier électronique.
+Lorsque le formulaire adaptatif est envoyé, le ou la destinataire reçoit un e-mail.
 
 ![SendEmail](assets/sendemailaction.gif)
 
-## Configurations nécessaires {#configurations-needed}
+## Configurations requises {#configurations-needed}
 
-Vous devrez configurer le service de messagerie Day CQ. Cela peut être configuré en pointant votre navigateur vers [Felix Configuration Manager](http://localhost:4502/system/console/configMgr)
+Vous devrez configurer le service de messagerie Day CQ. Pour cela, pointez votre navigateur vers le [gestionnaire de configuration Felix](http://localhost:4502/system/console/configMgr).
 
 La capture d’écran présente les propriétés de configuration du serveur de messagerie Adobe.
 
 ![mailservice](assets/mailservice.png)
 
-Pour essayer cela sur votre serveur, procédez comme suit :
+Pour essayer cela sur votre serveur, procédez comme suit :
 
-* [Importation des ressources](assets/timeoffrequest.zip) associé à cet article dans AEM utilisant le gestionnaire de packages.
+* [Importez les ressources](assets/timeoffrequest.zip) associées à cet article dans AEM à l’aide du gestionnaire de packages.
 
 * Ouvrez le [TimeOffRequestForm](http://localhost:4502/content/dam/formsanddocuments/helpx/timeoffrequestform/jcr:content?wcmmode=disabled).
 
-* Renseignez les détails. Veillez à indiquer une adresse électronique valide dans le champ Courriel.
+* Remplissez les détails. Veillez à indiquer une adresse e-mail valide dans le champ E-mail.
 
-* Envoyer le formulaire.
+* Envoyez le formulaire.
