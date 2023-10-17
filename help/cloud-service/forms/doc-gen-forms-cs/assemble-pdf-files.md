@@ -1,6 +1,6 @@
 ---
-title: Assemblage de fichiers de PDF
-description: Utilisez l’opération invokeDDX pour manipuler les fichiers pdf.
+title: Assembler des fichiers PDF
+description: Utilisez l’opération invokeDDX pour manipuler les fichiers PDF.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,18 +10,18 @@ topic: Development
 kt: 9958
 thumbnail: 332439.jpg
 source-git-commit: b7ff98dccc1381abe057a80b96268742d0a0629b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '133'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Manipulation de fichiers PDF à l’aide du point d’entrée invoke DDX
+# Manipuler des fichiers PDF à l’aide du point d’entrée Invoke DDX
 
 
-L’étape suivante consiste à effectuer un appel de POST HTTP vers le point de terminaison avec les paramètres nécessaires. Le modèle et les fichiers de données sont fournis sous forme de fichiers de ressources. Les propriétés du pdf généré sont spécifiées via le paramètre de l’option dans la requête. La propriété embedFonts est utilisée pour incorporer des polices personnalisées dans le pdf généré. Veuillez suivre [cette documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html) pour déployer des polices personnalisées sur votre instance cloud Forms. Les propriétés sont spécifiées dans le fichier de ressource options.json . Depuis, le point de fin dispose d’une authentification basée sur les jetons. Nous transmettons le jeton d’accès dans l’en-tête de la requête.
+L’étape suivante consiste à effectuer un appel POST HTTP au point d’entrée avec les paramètres nécessaires. Le modèle et les fichiers de données sont fournis sous forme de fichiers de ressources. Les propriétés du PDF généré sont spécifiées via le paramètre de l’option dans la requête. La propriété embedFonts permet d’incorporer des polices personnalisées dans le PDF généré. Veuillez suivre [cette documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-set-up.html?lang=fr) pour déployer des polices personnalisées sur votre instance cloud de Forms. Les propriétés sont spécifiées dans le fichier de ressource options.json. Puisque le point d’entrée dispose d’une authentification basée sur les jetons, nous transmettons le jeton d’accès dans l’en-tête de la requête.
 
-Le code suivant a été utilisé pour générer le pdf en fusionnant les données avec le modèle .
+Le code suivant a été utilisé pour générer le PDF en fusionnant les données avec le modèle.
 
 ```java
 public class DocumentGeneration
