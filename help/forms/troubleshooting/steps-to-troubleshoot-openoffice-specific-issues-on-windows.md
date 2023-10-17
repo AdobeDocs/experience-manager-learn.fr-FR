@@ -1,6 +1,6 @@
 ---
 title: Procédure de résolution des problèmes spécifiques à OpenOffice dans une configuration Windows
-description: Résolution des problèmes OpenOffice liés à PDF Generator dans la configuration de Windows.
+description: Résolution des problèmes liés à OpenOffice et PDF Generator dans une configuration Windows.
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -10,13 +10,13 @@ topic: Development
 index: y
 exl-id: 5c4f9c93-1328-4d06-beb5-500787d987d7
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '50'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Procédure de dépannage des échecs spécifiques OpenOffice dans une configuration Windows pour la conversion AEM Forms PDFG
+# Procédure de résolution des problèmes spécifiques à OpenOffice dans une configuration Windows pour la conversion d’AEM Forms PDFG
 
 *Cette vidéo décrit le processus de résolution des problèmes spécifiques à OpenOffice dans une configuration Windows.*
 
