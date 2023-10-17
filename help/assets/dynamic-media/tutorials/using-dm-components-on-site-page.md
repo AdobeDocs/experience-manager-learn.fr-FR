@@ -1,6 +1,6 @@
 ---
-title: Utilisation des composants principaux Dynamic Media
-description: Procédure d’utilisation des composants Dynamic Media sur la page Sites
+title: Utiliser des composants principaux de Dynamic Media
+description: Étapes d’utilisation des composants Dynamic Media sur la page Sites
 role: Developer
 level: Intermediate
 version: Cloud Service
@@ -9,14 +9,14 @@ topic: Development
 index: y
 exl-id: b500261a-5b96-41b8-8270-fb6bde95d48a
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '35'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Utilisation des composants principaux Dynamic Media
+# Utiliser des composants principaux de Dynamic Media
 
-Cette vidéo décrit le processus d’utilisation des composants principaux activés pour Dynamic Media sur une page web AEM Sites.
+Cette vidéo décrit le processus d’utilisation des composants principaux activés pour Dynamic Media sur une page web AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335461?quality=12&learn=on)
