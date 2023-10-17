@@ -1,6 +1,6 @@
 ---
-title: Combinaison de newsletters sélectionnées dans un fichier
-description: Combiner des newsletters sélectionnées à l’aide du service Assembler
+title: Combiner les newsletters sélectionnées dans un fichier
+description: Combiner les newsletters sélectionnées à l’aide du service Assembler
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -9,20 +9,20 @@ level: Beginner
 last-substantial-update: 2023-01-01T00:00:00Z
 exl-id: 3a64315f-f699-4538-b999-626e7a998c05
 source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '173'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Combiner les newsletters sélectionnées en un pdf
+# Combine selected newsletters into one PDF
 
-Les sélections de l’utilisateur sont stockées dans un champ masqué. La valeur de ce champ masqué est transmise au servlet qui combine les sélections dans un pdf à l’aide de [Service Forms Assembler](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
+Les sélections de l’utilisateur ou de l’utilisatrice sont stockées dans un champ masqué. La valeur de ce champ masqué est transmise au servlet qui combine les sélections dans un PDF à l’aide du [service Forms Assembler](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html).
 
 
-## Servlet d’assemblage de fichiers pdf
+## Servlet d’assemblage de fichiers PDF
 
-Le code suivant effectue l’assemblage des newsletters sélectionnées. Le code crée une carte des documents à partir des sélections de l’utilisateur. À partir de cette carte, un DDX est créé et ce DDX ainsi que le mappage des documents sont transmis à la méthode invoke du service Assembler pour obtenir le document combiné. Le pdf assemblé est stocké dans le référentiel et son chemin d’accès est renvoyé à l’application appelante.
+Le code suivant effectue l’assemblage des newsletters sélectionnées. Le code crée un mappage des documents à partir des sélections de l’utilisateur ou de l’utilisatrice. À partir de ce mappage, un DDX est créé. Ce DDX ainsi que le mappage des documents sont transmis à la méthode d’appel du service Assembler pour obtenir le document combiné. Le PDF assemblé est stocké dans le référentiel et son chemin d’accès est renvoyé à l’application appelante.
 
 ```java
 protected void doPost(SlingHttpServletRequest request,SlingHttpServletResponse response)
@@ -78,9 +78,9 @@ protected void doPost(SlingHttpServletRequest request,SlingHttpServletResponse r
    }
 ```
 
-## Fonctions Utiles
+## Fonctions utilitaires
 
-Les fonctions utilitaires suivantes ont été utilisées pour assembler les newsletters. Ces fonctions d’utilitaire créent DDX à partir du mappage de documents et convertissent l’objet de document org.w3c.dom.Document en AEMFD.
+Les fonctions utilitaires suivantes ont été utilisées pour assembler les newsletters. Ces fonctions utilitaires créent des DDX à partir d’un mappage de documents et convertissent le document org.w3c.dom.en objet de document AEMFD.
 
 
 ```java
@@ -144,4 +144,4 @@ public Document orgw3cDocumentToAEMFDDocument( org.w3c.dom.Document xmlDocument)
 
 ## Étapes suivantes
 
-[Déployer les exemples de ressources sur votre système](./deploy-on-your-system.md)
+[Déployer les exemples de fichiers sur votre système](./deploy-on-your-system.md)
