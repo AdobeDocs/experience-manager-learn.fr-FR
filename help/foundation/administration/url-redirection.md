@@ -1,6 +1,6 @@
 ---
 title: Redirections d’URL
-description: Découvrez les différentes options permettant d'effectuer la redirection URL dans AEM.
+description: Découvrez les différentes options dédiées à la redirection des URL dans AEM.
 version: 6.4, 6.5, Cloud Service
 topic: Development, Administration
 feature: Operations, Dispatcher
@@ -9,77 +9,76 @@ level: Intermediate
 kt: 11466
 last-substantial-update: 2022-10-14T00:00:00Z
 index: y
-source-git-commit: 00ea3a8e6b69cd99cf293093d38b59df51f6a26d
-workflow-type: tm+mt
+exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-
 # Redirections d’URL
 
-La redirection d’URL est un aspect courant dans le cadre du fonctionnement du site web. Les architectes et les administrateurs doivent trouver la meilleure solution pour gérer les redirections d’URL, pour plus de flexibilité et un temps de déploiement de redirection rapide.
+La redirection d’URL est une opération standard de toute conception de site web. Les personnes chargées de l’architecture et de l’administration doivent rivaliser d’ingéniosité dans la gestion des redirections d’URL, afin d’offrir plus de flexibilité et un délai de redirection plus rapide.
 
-Assurez-vous que vous connaissez les [AEM (6.x) ou AEM Classic](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-2.html#the-%E2%80%9Clegacy%E2%80%9D-setup) et [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/architecture.html#runtime-architecture) infrastructure. Les principales différences sont les suivantes :
+Assurez-vous que vous connaissez les bases de l’infrastructure d’[AEM (6.x) ou AEM Classic](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-2.html?lang=fr#the-%E2%80%9Clegacy%E2%80%9D-setup) et d’[AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/architecture.html?lang=fr#runtime-architecture). Les principales différences sont les suivantes :
 
-1. AEM as a Cloud Service a [réseau de diffusion de contenu intégré](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=fr)Toutefois, les clients peuvent fournir un réseau de diffusion de contenu (BYOCDN) devant le réseau de diffusion de contenu géré par AEM.
-1. AEM 6.x, qu’on-premise ou Adobe Managed Services (AMS) n’inclut pas de réseau de diffusion de contenu AEM géré, et les clients doivent apporter les leurs.
+1. AEM as a Cloud Service dispose d’un [réseau CDN intégré](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=fr). Toutefois, la clientèle peut activer un réseau CDN (BYOCDN) autre que le réseau CDN géré par AEM.
+1. AEM 6.x, On-Premise ou Adobe Managed Services (AMS), n’inclut pas de réseau CDN géré par AEM, la clientèle doit fournir son propre réseau CDN.
 
-Les autres services d’AEM (AEM Author/Publish et Dispatcher) sont similaires sur le plan conceptuel entre AEM 6.x et les services as a Cloud Service.
+Il en va de même pour les autres services AEM (création et publication, et Dispatcher) et les différences entre AEM 6.x et AEM as a Cloud Service sont également de rigueur.
 
-AEM les solutions de redirection d’URL sont les suivantes :
+Les solutions de redirection d’URL proposées par AEM sont les suivantes :
 
-|  | Géré et déployé en tant que code de projet AEM | Possibilité de modifier par l’équipe marketing/contenu | AEM compatible avec Cloud Service | Où l&#39;exécution de la redirection se produit |
+|                                                   | Géré et déployé en tant que code de projet AEM | Possibilité de modification par l’équipe de marketing/contenu | Compatible avec AEM as a Cloud Service | Emplacement de l’exécution de la redirection |
 |---------------------------------------------------|:-----------------------:|:---------------------:|:---------------------:| :---------------------:|
-| [Sur Edge via votre propre réseau de diffusion de contenu](#at-edge-via-bring-your-own-cdn) | ✘ | ✘ | ✔ | Edge/CDN |
-| [Apache `mod_rewrite` règles en tant que configuration de Dispatcher ](#apache-mod_rewrite-module) | ✔ | ✘ | ✔ | Dispatcher |
-| [ACS Commons - Gestionnaire des cartes de redirection](#redirect-map-manager) | ✘ | ✔ | ✘ | Dispatcher |
-| [ACS Commons - Gestionnaire de redirection](#redirect-manager) | ✘ | ✔ | ✔ | AEM |
-| [Le `Redirect` propriété de page](#the-redirect-page-property) | ✘ | ✔ | ✔ | AEM |
+| [Sur Edge via votre propre réseau CDN](#at-edge-via-bring-your-own-cdn) | ✘ | ✘ | ✔ | Edge/réseau CDN |
+| [Apache, règles `mod_rewrite` en tant que configuration de Dispatcher](#apache-mod_rewrite-module) | ✔ | ✘ | ✔ | Dispatcher |
+| [ACS Commons : gestionnaire de mappage de redirection](#redirect-map-manager) | ✘ | ✔ | ✘ | Dispatcher |
+| [ACS Commons : gestionnaire de redirection](#redirect-manager) | ✘ | ✔ | ✔ | AEM |
+| [Propriété de page `Redirect`](#the-redirect-page-property) | ✘ | ✔ | ✔ | AEM |
 
 
-## Options de solution
+## Solutions
 
-Vous trouverez ci-dessous des options de solution afin de vous rapprocher du navigateur du visiteur du site web.
+Les solutions suivantes sont présentées dans l’ordre où elles sont les plus proches du navigateur du visiteur ou de la visiteuse du site web.
 
-### Sur Edge via votre propre réseau de diffusion de contenu
+### Sur Edge via votre propre réseau CDN
 
-Certains services CDN proposent des solutions de redirection au niveau de Edge, réduisant ainsi les allers-retours vers l’origine. Voir [Redirecteur Akamai Edge](https://techdocs.akamai.com/cloudlets/docs/what-edge-redirector), [Fonctions AWS CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html). Veuillez consulter votre fournisseur de service CDN pour connaître la fonctionnalité de redirection au niveau Edge.
+Certains services CDN proposent des solutions de redirection au niveau d’Edge, réduisant ainsi les allers-retours vers l’origine. Consultez les articles [Redirection Akamai Edge](https://techdocs.akamai.com/cloudlets/docs/what-edge-redirector) et [Fonctions AWS CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html). Contactez votre fournisseur de service CDN à propos de la fonctionnalité de redirection au niveau Edge.
 
-La gestion des redirections au niveau du réseau Edge ou CDN présente des avantages en termes de performances. Toutefois, elles ne sont pas gérées dans le cadre de projets AEM mais plutôt de projets discrets. Pour éviter des problèmes, un processus bien pensé pour gérer et déployer les règles de redirection est essentiel.
-
-
-### Apache `mod_rewrite` module
-
-Une solution commune utilise [Module Apache mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html). Le [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype) fournit une structure de projet Dispatcher pour les deux [AEM 6.x](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.ams#file-structure) et [AEM as a Cloud Service](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud#file-structure) projet. Les règles de réécriture personnalisées et par défaut (non modifiables) sont définies dans la variable `conf.d/rewrites` et que le moteur de réécriture est activé pour `virtualhosts` qui écoute sur le port `80` via `conf.d/dispatcher_vhost.conf` fichier . Un exemple de mise en oeuvre est disponible dans la section [AEM projet WKND Sites](https://github.com/adobe/aem-guides-wknd/tree/main/dispatcher/src/conf.d/rewrites).
-
-Dans AEM as a Cloud Service, ces règles de redirection sont gérées dans le cadre du code AEM et déployées via Cloud Manager. [Pipeline de configuration de niveau web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html#web-tier-config-pipelines) ou [Pipeline à pile complète](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html#full-stack-pipeline). Ainsi, votre processus spécifique au projet AEM est en jeu pour gérer, déployer et suivre les règles de redirection.
-
-La plupart des services CDN mettent en cache les redirections HTTP 301 et 302 en fonction de leurs `Cache-Control` ou `Expires` en-têtes. Cela permet d’éviter l’aller-retour après la redirection initiale en provenance d’Apache/Dispatcher.
+La gestion des redirections au niveau du réseau Edge ou CDN présente des avantages en termes de performances. Toutefois, elles ne sont pas gérées dans le cadre de projets AEM mais plutôt de projets distincts. Pour éviter des problèmes, un processus réfléchi pour gérer et déployer les règles de redirection est essentiel.
 
 
-### ACS AEM Commons
+### Module Apache `mod_rewrite`
 
-Deux fonctionnalités sont disponibles dans [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) pour gérer les redirections d’URL. Veuillez noter qu&#39;ACS AEM Commons est un projet communautaire et open source qui n&#39;est pas pris en charge par Adobe.
+Une solution courante consiste à utiliser le [Module Apache mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html). L’[Archétype de projet AEM](https://github.com/adobe/aem-project-archetype) fournit une structure de projet Dispatcher pour les projets [AEM 6.x](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.ams#file-structure) et [AEM as a Cloud Service](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud#file-structure). Les règles de réécriture personnalisées et par défaut (non modifiables) sont définies dans le dossier `conf.d/rewrites` et le moteur de réécriture est activé pour `virtualhosts`, qui écoute sur le port `80` via le fichier `conf.d/dispatcher_vhost.conf`. Un exemple de mise en œuvre est disponible dans la section [Projet AEM WKND Sites](https://github.com/adobe/aem-guides-wknd/tree/main/dispatcher/src/conf.d/rewrites).
 
-#### Gestionnaire des cartes de redirection
+Dans AEM as a Cloud Service, ces règles de redirection sont gérées dans le cadre du code AEM et déployées via le [Pipeline de configuration de niveau web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=fr#web-tier-config-pipelines) ou le [Pipeline full-stack](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=fr#full-stack-pipeline) de Cloud Manager. Ainsi, le processus spécifique à votre projet AEM intervient dans la gestion, le déploiement et la traçabilité des règles de redirection.
 
-[Gestionnaire des cartes de redirection](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) permet aux administrateurs d’AEM 6.x de facilement gérer et publier [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) sans accéder directement au serveur web Apache ni nécessiter un redémarrage du serveur web Apache. Cette fonctionnalité permet aux utilisateurs des autorisations de créer, mettre à jour et supprimer des règles de redirection à partir d’une console dans AEM, sans l’aide de l’équipe de développement ou d’un déploiement AEM. Le Gestionnaire de mappage de redirection **NON AEM compatible as a Cloud Service**.
+La plupart des services de réseau CDN mettent en cache les redirections HTTP 301 et 302 en fonction de leurs en-têtes `Cache-Control` ou `Expires`. Cela permet d’éviter l’aller-retour après la redirection initiale en provenance d’Apache/du Dispatcher.
+
+
+### ACS AEM Commons
+
+Deux fonctionnalités d’[ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) sont dédiées à la gestion des redirections d’URL. Veuillez noter qu’ACS AEM Commons est un projet communautaire et open source qui n’est pas pris en charge par Adobe.
+
+#### Gestionnaire de mappage de redirection
+
+Le [Gestionnaire de mappage de redirection](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) permet aux administrateurs et aux administratrices d’AEM 6 x de gérer et de publier les fichiers [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) en toute facilité, sans besoin d’accès direct ou de redémarrage du serveur web Apache. Cette fonctionnalité permet aux utilisateurs et aux utilisatrices dotés des autorisations appropriées de créer, mettre à jour et supprimer des règles de redirection à partir d’une console dans AEM, sans l’aide de l’équipe de développement ou d’un déploiement AEM. Le Gestionnaire de mappage de redirection **n’est PAS compatible avec AEM as a Cloud Service**.
 
 #### Gestionnaire de redirection
 
-[Gestionnaire de redirection](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) permet aux utilisateurs d’AEM de gérer et de publier facilement les redirections à partir d’AEM. L’implémentation est basée sur le filtre de servlet Java™, ce qui permet une consommation de ressources JVM standard. Cette fonctionnalité élimine également la dépendance à l’égard de l’équipe de développement AEM et des déploiements AEM. Le Gestionnaire de redirection est **AEM as a Cloud Service** et **AEM 6.x** compatible. Bien que la requête de redirection initiale doive accéder au service de publication AEM pour générer le 301/302 de cache de 301/302 (la plupart) CDN par défaut, ce qui permet aux requêtes suivantes d’être redirigées vers le serveur Edge/CDN.
+Les [Gestionnaire de redirection](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) permet aux utilisateurs et aux utilisatrices d’AEM de gérer et de publier en toute facilité les redirections à partir d’AEM. L’implémentation est basée sur le filtre de servlet Java™, ce qui permet une consommation de ressources JVM standard. Cette fonctionnalité élimine également la dépendance à l’égard de l’équipe de développement AEM et des déploiements AEM. Le Gestionnaire de redirection est compatible avec **AEM as a Cloud Service** et **AEM 6.x**. Bien que la requête de redirection initiale doive accéder au service de publication AEM pour générer les redirections HTTP 301/302, la plupart des réseaux CDN mettent en cache ces redirections HTTP 301/302 par défaut, ce qui permet aux requêtes suivantes d’être redirigées vers le réseau Edge/CDN.
 
-### Le `Redirect` propriété de page
+### La propriété de page `Redirect`
 
-La clé en main `Redirect` de la propriété de page [Onglet Avancé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/page-properties.html#advanced) permet aux auteurs de contenu de définir l’emplacement de redirection de la page active. Cette solution est préférable pour les scénarios de redirection par page et ne dispose pas d’un emplacement central pour afficher et gérer les redirections de page.
+La propriété de page prête à l’emploi `Redirect` de l’[Onglet Avancé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/page-properties.html?lang=fr#advanced) permet aux auteurs et autrices de contenu de définir l’emplacement de redirection de la page active. Cette solution est préférable pour les scénarios de redirection par page et ne dispose pas d’un emplacement central pour afficher et gérer les redirections de page.
 
-## Quelle solution convient à la mise en oeuvre ?
+## Quelle solution se prête le mieux à la mise en œuvre ?
 
-Vous trouverez ci-dessous quelques critères pour déterminer la bonne solution. Le processus informatique et marketing de votre entreprise doit également vous aider à choisir la bonne solution.
+Vous trouverez ci-dessous quelques critères pour déterminer la bonne solution. Le processus informatique et marketing de votre entreprise doit également apporter son grain de sel et vous aider à choisir la bonne solution.
 
-1. Permet à l’équipe marketing ou aux super-utilisateurs de gérer les règles de redirection sans l’équipe de développement AEM et les déploiements AEM.
+1. Permettre à l’équipe marketing ou aux super-utilisateurs et super-utilisatrices de gérer les règles de redirection sans l’équipe de développement AEM ni les déploiements AEM.
 1. Processus de gestion, de vérification, de suivi et d’annulation des modifications ou de l’atténuation des risques.
-1. Disponibilité de _Expertise en matière de sujet_ pour **À Edge via le service CDN** solution.
-
+1. Disponibilité d’une _Expertise en la matière_ pour la solution **Sur Edge via le service de réseau CDN**.
