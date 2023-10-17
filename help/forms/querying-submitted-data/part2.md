@@ -1,7 +1,7 @@
 ---
-title: AEM Forms avec schéma JSON et données [Partie2]
+title: AEM Forms avec schéma et données JSON [Partie 2]
 seo-title: AEM Forms with JSON Schema and Data[Part2]
-description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes nécessaires à la création d’un formulaire adaptatif avec un schéma JSON et à l’interrogation des données envoyées.
+description: Il s’agit d’un tutoriel en plusieurs parties consacré à la création de formulaires adaptatifs avec les schémas JSON et à l’interrogation des données envoyées.
 seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
 topics: development
@@ -14,24 +14,24 @@ role: Developer
 level: Experienced
 exl-id: 29195c70-af12-4a22-8484-3c87a1e07378
 source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Stockage des données envoyées dans la base de données
+# Stocker les données envoyées dans la base de données
 
 
 >[!NOTE]
 >
->Il est recommandé d’utiliser MySQL 8 comme base de données, car il prend en charge le type de données JSON. Vous devez également installer le pilote approprié pour MySQL DB. J’ai utilisé le pilote disponible à cet emplacement https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.12
+>Il est recommandé d’utiliser la base de données MySQL 8, car elle prend en charge le type de données JSON. Vous devez également installer le pilote approprié pour MySQL DB. J’ai utilisé le pilote disponible à cet emplacement : https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.12.
 
-Pour stocker les données envoyées dans la base de données, nous allons écrire un servlet afin d’extraire les données liées, le nom du formulaire et le magasin. Le code complet pour gérer l’envoi du formulaire et stocker afBoundData dans la base de données est indiqué ci-dessous.
+Pour stocker les données envoyées dans la base de données, nous allons écrire un servlet afin d’extraire les données liées, le nom du formulaire et le magasin. Consultez le code complet pour gérer l’envoi du formulaire et stocker afBoundData dans la base de données ci-dessous.
 
 Nous avons créé un envoi personnalisé pour gérer l’envoi du formulaire. Dans le fichier post.POST.jsp de cet envoi personnalisé, nous transférons la demande à notre servlet.
 
-Pour en savoir plus sur les requêtes d’envoi personnalisées, lisez cette section [article](https://helpx.adobe.com/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html)
+Pour en savoir plus sur les envois personnalisés, consulez cet [article](https://helpx.adobe.com/fr/experience-manager/kt/forms/using/custom-submit-aem-forms-article.html).
 
 com.adobe.aemds.guide.utils.GuideSubmitUtils.setForwardPath(slingRequest,&quot;/bin/storeafsubmission&quot;,null,null);
 
@@ -143,14 +143,14 @@ public class HandleAdaptiveFormSubmission extends SlingAllMethodsServlet {
 
 ![connectionpool](assets/connectionpooled.gif)
 
-Pour que cela fonctionne, procédez comme suit :
+Pour que cette opération fonctionne sur votre système, procédez comme suit :
 
-* [Télécharger et décompresser le fichier zip](assets/aemformswithjson.zip)
-* Créez AdaptiveForm Avec Le Schéma JSON. Vous pouvez utiliser le schéma JSON fourni dans le cadre des ressources de cet article. Assurez-vous que l’action d’envoi du formulaire est correctement configurée. L’action Envoyer doit être configurée sur &quot;CustomSubmitHelpx&quot;.
-* Créez un schéma dans votre instance MySQL en important le fichier schema.sql à l’aide de l’outil MySQL Workbench. Le fichier schema.sql vous est également fourni dans le cadre de ces ressources de tutoriel.
-* Configuration de Apache Sling Connection Pooled DataSource à partir de la console web Felix
-* Veillez à nommer votre nom de source de données &quot;aemformswithjson&quot;. Il s’agit du nom utilisé par l’exemple de lot OSGi qui vous est fourni.
-* Reportez-vous à l’image ci-dessus pour connaître les propriétés. Cela suppose que vous allez utiliser MySQL comme base de données.
-* Déployez le ou les lots OSGi fournis dans le cadre des ressources de cet article.
+* [Téléchargez et décompressez le fichier zip.](assets/aemformswithjson.zip)
+* Créez un formulaire adaptatif avec un schéma JSON. Vous pouvez utiliser le schéma JSON fourni dans la section Ressources de cet article. Assurez-vous que l’action d’envoi du formulaire est correctement configurée. L’action d’envoi doit être configurée sur « CustomSubmitHelpx ».
+* Créez un schéma dans votre instance MySQL en important le fichier schema.sql à l’aide de l’outil MySQL Workbench. Le fichier schema.sql est également fourni dans les ressources du tutoriel.
+* Configurez la source de données mise en pool de la connexion Apache Sling à partir de la console web Felix.
+* Veillez à nommer votre source de données « aemformswithjson ». Il s’agit du nom utilisé par l’exemple de lot OSGi qui vous est fourni.
+* Consultez l’image ci-dessus pour connaître les propriétés. Cela suppose l’utilisation de MySQL comme base de données.
+* Déployez le ou les lots OSGi fournis dans les ressources de cet article.
 * Prévisualisez le formulaire et envoyez-le.
-* Les données JSON sont stockées dans la base de données qui a été créée lorsque vous avez importé le fichier &quot;schema.sql&quot;.
+* Les données JSON sont stockées dans la base de données créée lors de l’import du fichier « schema.sql ».
