@@ -102,7 +102,6 @@ Si vous placez `<ResponsiveGrid...>` dans le composant `AdventureDetail`, vous c
 
    + `/content/wknd-app/us/en/home/adventure/${slug}/jcr:content/root/responsivegrid`
 
-
 Mettez à jour `AdventureDetail.js` avec les lignes suivantes :
 
 ```javascript
