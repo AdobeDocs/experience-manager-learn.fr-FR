@@ -13,9 +13,9 @@ thumbnail: 30177.jpg
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
 source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1226'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ L’IDE utilisé dans les vidéos est [Visual Studio Code](https://code.visual
 1. Découvrez comment les boîtes de dialogue sont utilisées pour faciliter la création de contenu.
 1. Découvrez les principes de base des bibliothèques côté client pour inclure CSS et JavaScript pour prendre en charge un composant.
 
-## Ce que vous allez construire {#what-build}
+## Ce que vous allez créer {#what-build}
 
 Dans ce chapitre, vous apportez plusieurs modifications à un simple composant `HelloWorld`. Lorsque vous apporterez des modification au composant `HelloWorld`, vous découvrirez les principaux domaines du développement de composant d’AEM.
 
@@ -255,13 +255,13 @@ Ensuite, effectuons des mises à jour sur le modèle Sling `HelloWorldModel` pou
    >
    > Pour les versions 6.4 et 6.5 d’AEM, utilisez `mvn clean install -PautoInstallBundle -Pclassic`.
 
-1. Mettre à jour le fichier `helloworld.html` at `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` pour utiliser les méthodes nouvellement créées de la variable `HelloWorld` modèle.
+1. Mettez à jour le fichier `helloworld.html` sur `aem-guides-wknd.ui.apps/src/main/content/jcr_root/apps/wknd/components/content/helloworld/helloworld.html` pour utiliser les méthodes nouvellement créées du modèle `HelloWorld`.
 
-   Le `HelloWorld` Le modèle est appelé pour cette instance de composant via la directive HTL : `data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel"`, enregistrement de l’instance dans la variable `model`.
+   Le modèle `HelloWorld` est appelé pour cette instance de composant via la directive HTL : `data-sly-use.model="com.adobe.aem.guides.wknd.core.models.HelloWorldModel"`, enregistrant l’instance dans la variable `model`.
 
-   Le `HelloWorld` L’instance de modèle est désormais disponible dans le fichier HTL via le `model` à l’aide de la variable `HelloWord`. Ces appels de méthodes peuvent utiliser une syntaxe de méthode abrégée, par exemple : `${model.getTitle()}` peut être raccourci vers `${model.title}`.
+   L’instance de modèle `HelloWorld` est désormais disponible dans le fichier HTL via la variable `model` à l’aide de `HelloWord`. Ces appels de méthodes peuvent utiliser une syntaxe de méthode abrégée. Par exemple, `${model.getTitle()}` peut être raccourci en `${model.title}`.
 
-   De même, tous les scripts HTL sont injectés avec [objet global](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html?lang=fr) accessibles en utilisant la même syntaxe que les objets de modèle Sling.
+   De même, tous les scripts HTL sont injectés avec les [objets globaux](https://experienceleague.adobe.com/docs/experience-manager-htl/content/global-objects.html?lang=fr) accessibles en utilisant la même syntaxe que les objets de modèle Sling.
 
    ```html
    <div class="cmp-helloworld" data-cmp-is="helloworld" 
