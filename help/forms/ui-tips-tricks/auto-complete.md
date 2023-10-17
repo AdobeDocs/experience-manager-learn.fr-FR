@@ -1,6 +1,6 @@
 ---
-title: Fonctionnalité de saisie automatique dans AEM Forms
-description: Permet aux utilisateurs de rechercher et de sélectionner rapidement dans une liste préremplie de valeurs au fur et à mesure de leur saisie, en exploitant la recherche et le filtrage.
+title: Fonctionnalité de saisie automatique dans AEM Forms
+description: Permet aux utilisateurs et utilisatrices de rechercher et de sélectionner rapidement dans une liste préremplie de valeurs au fur et à mesure de leur saisie, en exploitant la recherche et le filtrage.
 feature: Adaptive Forms
 type: Tutorial
 version: 6.5
@@ -9,27 +9,28 @@ role: Developer
 level: Beginner
 kt: 11374
 last-substantial-update: 2022-11-01T00:00:00Z
-source-git-commit: 4af14b7d72ebdbea04e68a9a64afa1a96d1c1aeb
-workflow-type: tm+mt
+exl-id: e9a696f9-ba63-462d-93a8-e9a7a1e94e72
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Mise en oeuvre automatique
+# Implémenter la saisie automatique
 
-Mettez en oeuvre la fonctionnalité de saisie automatique dans AEM forms à l’aide de la fonction de saisie automatique de jquery.
-L’exemple inclus dans cet article utilise diverses sources de données (tableau statique, tableau dynamique renseigné à partir d’une réponse de l’API REST) pour renseigner les suggestions lorsque l’utilisateur commence à saisir du texte dans le champ.
+Implémentez la fonctionnalité de saisie automatique dans AEM Forms à l’aide de la fonction de saisie automatique de jQuery.
+L’exemple inclus dans cet article utilise diverses sources de données (tableau statique, tableau dynamique renseigné à partir d’une réponse de l’API REST) pour renseigner les suggestions lorsque l’utilisateur ou l’utilisatrice commence à saisir du texte dans le champ.
 
-Le code utilisé pour accomplir la fonctionnalité de saisie semi-automatique est associé à l’événement initialize du champ.
+Le code utilisé pour accomplir la fonctionnalité de saisie automatique est associé à l’événement initialize du champ.
 
 ## Suggestion d’adresse
 
-![suggestions de pays](assets/auto-complete2.png)
+![country-suggestions](assets/auto-complete2.png)
 
 
 
-Voici le code utilisé pour fournir des suggestions d’adresses de rue :
+Voici le code utilisé pour fournir des suggestions d’adresses de rue :
 
 ```javascript
 $(".streetAddress input").autocomplete({
@@ -62,11 +63,11 @@ $(".streetAddress input").autocomplete({
 
 
 
-## Suggestions avec l’émoticône
+## Suggestions avec des émoticônes
 
-![suggestions de pays](assets/auto-complete3.png)
+![country-suggestions](assets/auto-complete3.png)
 
-Le code suivant a été utilisé pour afficher les émoticônes dans la liste de suggestions.
+Le code suivant a été utilisé pour afficher des émoticônes dans la liste de suggestions.
 
 ```javascript
 var values=["Wolf \u{1F98A}", "Lion \u{1F981}","Puppy \u{1F436}","Giraffe \u{1F992}","Frog \u{1F438}"];
@@ -77,8 +78,8 @@ minLength: 1, source: values, delay: 0
 );
 ```
 
-Le [exemple de formulaire peut être téléchargé](assets/auto-complete-form.zip) d’ici. Veillez à fournir votre propre nom d’utilisateur/clé d’API à l’aide de l’éditeur de code pour que le code effectue des appels REST réussis.
+L’[exemple de formulaire peut être téléchargé](assets/auto-complete-form.zip) ici. Veillez à fournir votre propre nom d’utilisateur ou d’utilisatrice et clé d’API à l’aide de l’éditeur de code pour que le code effectue des appels REST réussis.
 
 >[!NOTE]
 >
-> Pour que la saisie automatique fonctionne, assurez-vous que votre formulaire utilise la bibliothèque cliente suivante : **cq.jquery.ui**. Cette bibliothèque cliente est fournie avec AEM.
+> Pour que la saisie automatique fonctionne, assurez-vous que votre formulaire utilise la bibliothèque cliente suivante : **cq.jquery.ui**. Cette bibliothèque cliente est fournie avec AEM.
