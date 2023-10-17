@@ -1,6 +1,6 @@
 ---
-title: Liste des types de ressources personnalisés dans AEM Forms
-description: Partie 2 de la liste des types de ressources personnalisés dans AEM Forms
+title: Lister les types de ressources personnalisés dans AEM Forms
+description: Partie 2 - Lister les types de ressources personnalisés dans AEM Forms
 uuid: 6467ec34-e452-4c21-9bb5-504f9630466a
 feature: Adaptive Forms
 topics: development
@@ -15,26 +15,26 @@ level: Experienced
 exl-id: f221d8ee-0452-4690-a936-74bab506d7ca
 last-substantial-update: 2019-07-10T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '593'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Liste des types de ressources personnalisés dans AEM Forms {#listing-custom-asset-types-in-aem-forms}
+# Lister les types de ressources personnalisés dans AEM Forms {#listing-custom-asset-types-in-aem-forms}
 
 ## Créer un modèle personnalisé {#creating-custom-template}
 
-Pour les besoins de cet article, nous allons créer un modèle personnalisé pour afficher les types de ressources personnalisés et les types de ressources prêts à l’emploi sur la même page. Pour créer un modèle personnalisé, suivez les instructions suivantes :
+Pour les besoins de cet article, nous allons créer un modèle personnalisé permettant d’afficher les types de ressources personnalisés et les types de ressources prêts à l’emploi sur la même page. Pour créer un modèle personnalisé, suivez les instructions suivantes :
 
-1. Créez un sling : sous /apps. Nommez-le &quot;myportalcomponent&quot;
-1. Ajoutez une propriété « fpContentType ». Définissez sa valeur sur &quot;**/libs/fd/ fp/formTemplate&quot;.**
-1. Ajoutez une propriété &quot;title&quot; et définissez sa valeur sur &quot;modèle personnalisé&quot;. Il s’agit du nom qui s’affiche dans la liste déroulante du composant Search and Lister.
-1. Créez un &quot;template.html&quot; sous ce dossier. Ce fichier contient le code à mettre en forme et affiche les différents types de ressources.
+1. Créez un dossier sling: sous /apps. Nommez-le « myportalcomponent ».
+1. Ajoutez une propriété « fpContentType ». Définissez sa valeur sur « **/libs/fd/ fp/formTemplate ».**
+1. Ajoutez une propriété « title » et définissez sa valeur sur « custom template ». Il s’agit du nom qui s’affichera dans la liste déroulante du composant Search and Lister.
+1. Créez un fichier « template.html » sous ce dossier. Ce fichier contiendra le code à mettre en forme et affichera les différents types de ressources.
 
 ![appsfolder](assets/appsfolder_.png)
 
-Le code suivant répertorie les différents types de ressources à l’aide du composant de recherche et de liste. Nous créons des éléments HTML distincts pour chaque type de ressource, comme illustré par la balise data-type = &quot;videos&quot;. Pour le type de ressource &quot;vidéos&quot;, nous utilisons la variable &lt;video> pour lire la vidéo intégrée. Pour le type de ressource &quot;documents de mots&quot;, nous utilisons un marquage HTML différent.
+Le code suivant répertorie les différents types de ressources à l’aide du composant Search and Lister. Nous créons des éléments HTML distincts pour chaque type de ressource, comme illustré par la balise data-type = &quot;videos&quot;. Pour le type de ressource « videos », nous utilisons l’élément &lt;video> pour lire la vidéo intégrée. Pour le type de ressource « worddocuments », nous utilisons un marquage HTML différent.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -72,47 +72,47 @@ Le code suivant répertorie les différents types de ressources à l’aide du c
 
 >[!NOTE]
 >
->Ligne 11 - Modifiez l’image src pour qu’elle pointe vers une image de votre choix dans la gestion des ressources numériques.
+>Ligne 11 - Modifiez l’image src pour qu’elle pointe vers une image de votre choix dans la DAM.
 >
->Pour répertorier le Forms adaptatif dans ce modèle, créez une balise div et définissez son attribut data-type sur &quot;guide&quot;. Vous pouvez copier et coller la balise div dont data-type=&quot;printForm&quot; et définir le type de données de la balise div nouvellement copiée sur &quot;guide&quot;.
+>Pour lister les formulaires adaptatifs dans ce modèle, créez un élément div et définissez son attribut data-type sur « guide ». Vous pouvez copier et coller l’élément div où data-type=&quot;printForm&quot; et définir le type de données de l’élément div nouvellement copié sur « guide ».
 
-## Configuration Du Composant Search And Lister {#configure-search-and-lister-component}
+## Configurer le composant Search and Lister {#configure-search-and-lister-component}
 
-Une fois le modèle personnalisé défini, nous devons l’associer au composant &quot;Search and Lister&quot;. Pointez votre navigateur [à cette URL ](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
+Une fois le modèle personnalisé défini, nous devons l’associer au composant « Search and Lister ». Pointez votre navigateur [sur cette URL](http://localhost:4502/editor.html/content/AemForms/CustomPortal.html).
 
-Passez en mode Conception et configurez le système de paragraphes pour inclure le composant Search And Lister dans le groupe de composants autorisés. Le composant Search and Lister fait partie du groupe Document Services.
+Passez en mode de conception et configurez le système de paragraphes pour inclure le composant Search and Lister dans le groupe de composants autorisés. Le composant Search and Lister fait partie du groupe Document Services.
 
-Passez en mode d’édition et ajoutez le composant Search and Lister à ParSys.
+Passez en mode d’édition et ajoutez le composant Search and Lister à ParSys.
 
-Ouvrez les propriétés de configuration du composant &quot;Search and Lister&quot;. Assurez-vous que l’onglet &quot;Dossiers de ressources&quot; est sélectionné. Sélectionnez les dossiers à partir desquels vous souhaitez répertorier les ressources dans le composant de recherche et de liste. Pour les besoins du présent article, j’ai sélectionné
+Ouvrez les propriétés de configuration du composant « Search and Lister ». Assurez-vous que l’onglet « Dossiers de ressources » est sélectionné. Sélectionnez les dossiers à partir desquels vous souhaitez lister les ressources dans le composant Search and Lister. Pour les besoins de cet article, j’ai sélectionné :
 
 * /content/dam/VideosAndWordDocuments
 * /content/dam/formsanddocuments/assettypes
 
 ![assetfolder](assets/selectingassetfolders.png)
 
-Appuyez sur l’onglet &quot;Affichage&quot;. Vous choisirez ici le modèle dont vous souhaitez afficher les ressources dans le composant Recherche et énumérateur.
+Appuyez sur l’onglet « Affichage ». Choisissez ici le modèle dont vous souhaitez afficher les ressources dans le composant Search and Lister.
 
-Sélectionnez &quot;modèle personnalisé&quot; dans la liste déroulante, comme illustré ci-dessous.
+Sélectionnez « custom template » dans la liste déroulante, comme illustré ci-dessous.
 
 ![searchandlister](assets/searchandlistercomponent.gif)
 
-Configurez les types de ressources que vous souhaitez répertorier dans le portail. Pour configurer les types de l’onglet de la ressource sur la &quot;Liste des ressources&quot; et les types de ressources, procédez comme suit : Dans cet exemple, nous avons configuré les types de ressources suivants :
+Configurez les types de ressources que vous souhaitez lister dans le portail. Pour configurer les types de ressources, accédez à l’onglet « Liste des ressources » et configurez les types de ressources. Dans cet exemple, nous avons configuré les types de ressources suivants :
 
-1. Fichiers MP4
+1. Fichiers MP4
 1. Documents Word
 1. Document (type de ressource prêt à l’emploi)
 1. Modèle de formulaire (type de ressource prêt à l’emploi)
 
-La capture d’écran suivante montre les types de ressources configurés pour être répertoriés
+La copie d’écran suivante montre les types de ressources configurés pour être listés.
 
 ![assettypes](assets/assettypes.png)
 
-Maintenant que vous avez configuré votre composant Search and Lister Portal, il est temps de voir la liste en action. Pointez votre navigateur [à cette URL ](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). Les résultats doivent ressembler à l’image illustrée ci-dessous.
+Maintenant que vous avez configuré votre composant de portail Search and Lister, il est temps de voir la liste en action. Pointez votre navigateur [sur cette URL](http://localhost:4502/content/AemForms/CustomPortal.html?wcmmode=disabled). Les résultats doivent ressembler à l’image affichée ci-dessous.
 
 >[!NOTE]
 >
->Si votre portail répertorie les types de ressources personnalisés sur un serveur de publication, veillez à accorder l’autorisation &quot;lecture&quot; à l’utilisateur &quot;fd-service&quot; sur le noeud . **/apps/fd/fp/extensions/querybuilder**
+>Si votre portail répertorie les types de ressources personnalisés sur un serveur de publication, veillez à accorder l’autorisation « lecture » à l’utilisateur ou utilisatrice « fd-service » sur le nœud **/apps/fd/fp/extensions/querybuilder**.
 
 ![assettypes](assets/assettypeslistings.png)
-[Téléchargez et installez ce package à l’aide du gestionnaire de packages.](assets/customassettypekt1.zip) Il contient des exemples de documents mp4 et Word et de fichiers xdp utilisés comme types de ressources à répertorier à l’aide du composant search and lister.
+[Téléchargez et installez ce package à l’aide du gestionnaire de packages.](assets/customassettypekt1.zip) Il contient des exemples de documents MP4 et Word et de fichiers XDP utilisés comme types de ressources à répertorier à l’aide du composant Search and Lister.
