@@ -1,6 +1,6 @@
 ---
-title: Débogage AEM SDK à l’aide des journaux
-description: Les journaux jouent le rôle de première ligne pour le débogage des applications AEM, mais dépendent d’une journalisation adéquate dans l’application AEM déployée.
+title: Déboguer le SDK d’AEM à l’aide de journaux
+description: Les journaux sont en première ligne pour le débogage des applications AEM, mais dépendent d’une journalisation adéquate dans l’application AEM déployée.
 feature: Developer Tools
 topics: development
 version: Cloud Service
@@ -13,49 +13,49 @@ role: Developer
 level: Beginner, Intermediate
 exl-id: 91aa4a10-47fe-4313-acd2-ca753e5484d9
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Débogage AEM SDK à l’aide des journaux
+# Déboguer le SDK d’AEM à l’aide de journaux
 
-L’accès aux journaux du SDK AEM, que ce soit les fichiers Jar de démarrage rapide locaux du SDK AEM ou les outils de Dispatcher peuvent fournir des informations clés sur le débogage d’applications d’AEM.
+Les journaux du SDK AEM, qu’il s’agisse des fichiers Jar de démarrage rapide locaux du SDK AEM ou des outils du Dispatcher, peuvent fournir des informations clés sur le débogage des applications AEM.
 
 ## Journaux AEM
 
 >[!VIDEO](https://video.tv.adobe.com/v/34334?quality=12&learn=on)
 
-Les journaux jouent le rôle de première ligne pour le débogage des applications AEM, mais dépendent d’une journalisation adéquate dans l’application AEM déployée. Adobe recommande de conserver autant que possible les configurations de journalisation de développement local et de développement as a Cloud Service, car cela normalise la visibilité du journal sur le démarrage rapide local du SDK AEM et les environnements de développement d’as a Cloud Service, ce qui réduit le délai de configuration et le redéploiement.
+Les journaux sont en première ligne pour le débogage des applications AEM, mais dépendent d’une journalisation adéquate dans l’application AEM déployée. Adobe recommande, dans la mesure du possible, de ne pas modifier la configuration de la journalisation pour l’environnement de développement local et l’environnement de développement AEM as a Cloud Service, car cela permet de normaliser la visibilité de la journalisation dans les environnements locaux de démarrage rapide du SDK AEM et de développement AEM as a Cloud Service, ce qui réduit le temps de configuration et de redéploiement.
 
-Le [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype) configure la journalisation au niveau DEBUG pour les packages Java de votre application AEM pour le développement local via la configuration OSGi Sling Logger qui se trouve à l’adresse
+L’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype) permet de configurer la journalisation au niveau DEBUG pour les packages Java de votre application AEM pour le développement local via la configuration OSGi des journaux Sling, qui se trouve à l’emplacement suivant :
 
 `ui.apps/src/main/content/jcr_root/apps/example/config/org.apache.sling.commons.log.LogManager.factory.config-example.cfg.json`
 
-qui se connecte au `error.log`.
+Elle consigne les informations dans le fichier `error.log`.
 
-Si la journalisation par défaut n’est pas suffisante pour le développement local, la journalisation ad hoc peut être configurée via la console web de prise en charge des journaux locale du SDK AEM, à l’adresse ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)), toutefois, il n’est pas recommandé que les modifications ad hoc soient conservées dans Git, sauf si ces mêmes configurations de journal sont également nécessaires dans AEM environnements de développement as a Cloud Service. Gardez à l’esprit que les modifications effectuées via la console Prise en charge du journal sont conservées directement dans le référentiel de démarrage rapide local du SDK AEM.
+Si la journalisation par défaut n’est pas suffisante pour le développement local, la journalisation ad hoc peut être configurée via la console web de prise en charge des journaux du démarrage rapide local du SDK AEM, à l’emplacement ([/system/console/slinglog](http://localhost:4502/system/console/slinglog)). Il n’est toutefois pas recommandé que les modifications apportées soient conservées dans Git, sauf si ces mêmes configurations de journal sont également nécessaires dans les environnements de développement AEM as a Cloud Service. Gardez à l’esprit que les modifications effectuées via la console de prise en charge de la journalisation sont conservées directement dans le référentiel de démarrage rapide local du SDK AEM.
 
-Les instructions du journal Java peuvent être visualisées dans la variable `error.log` fichier :
+Les instructions du journal Java peuvent être visualisées dans le fichier `error.log` :
 
 ```
 $ ~/aem-sdk/author/crx-quickstart/logs/error.log
 ```
 
-Souvent, il est utile de &quot;tail&quot; la `error.log` qui diffuse sa sortie vers le terminal.
+Souvent, il est utile d’analyser le `error.log` qui diffuse sa sortie vers le terminal.
 
 + macOS/Linux
    + `$ tail -f ~/aem-sdk/author/crx-quickstart/logs/error.log`
-+ Windows nécessite [Applications tierces](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) ou l’utilisation de [Commande Get-Content de PowerShell](https://stackoverflow.com/a/46444596/133936).
++ Windows nécessite des [applications d’analyse tierces](https://stackoverflow.com/questions/187587/a-windows-equivalent-of-the-unix-tail-command) ou l’utilisation d’une [commande Get-Content de PowerShell](https://stackoverflow.com/a/46444596/133936).
 
 ## Journaux de Dispatcher
 
-Les journaux de Dispatcher sont sortis en mode stdout lorsque `bin/docker_run` est appelée, mais les journaux peuvent être directement accessibles avec dans le contenu Docker.
+Les journaux de Dispatcher sont envoyés vers stdout lorsque `bin/docker_run` est appelé, mais les journaux peuvent être directement accessibles dans le conteneur Docker.
 
-### Accès aux journaux dans le conteneur Docker{#dispatcher-tools-access-logs}
+### Accéder aux journaux dans le conteneur Docker{#dispatcher-tools-access-logs}
 
-Les journaux de Dispatcher peuvent accéder directement dans le conteneur Docker à l’adresse `/etc/httpd/logs`.
+Il est possible d’accéder directement aux journaux de Dispatcher dans le conteneur Docker à l’emplacement `/etc/httpd/logs`.
 
 ```shell
 $ docker ps
@@ -75,12 +75,12 @@ $ docker exec -it <CONTAINER ID> /bin/sh
 /# exit
 ```
 
-_Le `<CONTAINER ID>` in `docker exec -it <CONTAINER ID> /bin/sh` doit être remplacé par l’ID de CONTENEUR Docker cible répertorié dans la variable `docker ps` ._
+_L’`<CONTAINER ID>` dans `docker exec -it <CONTAINER ID> /bin/sh` doit être remplacé par l’ID de conteneur Docker cible répertorié dans la commande `docker ps`._
 
 
-### Copie des journaux Docker vers le système de fichiers local{#dispatcher-tools-copy-logs}
+### Copier les journaux Docker vers le système de fichiers local{#dispatcher-tools-copy-logs}
 
-Les journaux de Dispatcher peuvent être copiés hors du conteneur Docker à l’adresse `/etc/httpd/logs` au système de fichiers local pour l’inspection à l’aide de votre outil d’analyse de journal préféré. Notez qu’il s’agit d’une copie ponctuelle qui ne fournit pas de mises à jour en temps réel des journaux.
+Les journaux de Dispatcher peuvent être copiés du conteneur Docker à l’emplacement `/etc/httpd/logs` vers le système de fichiers local pour inspection à l’aide de votre outil d’analyse de journal préféré. Notez qu’il s’agit d’une copie ponctuelle qui ne fournit pas de mises à jour en temps réel des journaux.
 
 ```shell
 $ docker ps
@@ -95,4 +95,4 @@ $ ls
     dispatcher.log          healthcheck_access_log  httpd_access.log        httpd_error.log
 ```
 
-_Le `<CONTAINER_ID>` in `docker cp <CONTAINER_ID>:/var/log/apache2 ./` doit être remplacé par l’ID de CONTENEUR Docker cible répertorié dans la variable `docker ps` ._
+_L’`<CONTAINER_ID>` dans `docker cp <CONTAINER_ID>:/var/log/apache2 ./` doit être remplacé par l’ID de conteneur Docker cible répertorié dans la commande `docker ps`._
