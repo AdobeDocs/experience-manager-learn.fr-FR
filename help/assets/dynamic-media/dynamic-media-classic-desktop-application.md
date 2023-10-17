@@ -1,6 +1,6 @@
 ---
-title: Utilisation de l’application de bureau Dynamic Media Classic
-description: Adobe introduit une application de bureau pour les utilisateurs de Dynamic Media Classic qui ne repose plus sur la technologie Adobe Flash dans le navigateur.
+title: Utiliser l’application de bureau Dynamic Media Classic
+description: Adobe lance une application de bureau pour les utilisateurs de Dynamic Media Classic qui ne repose plus sur la technologie Adobe Flash dans le navigateur.
 feature: Dynamic Media Classic
 version: 6.5
 kt: 5808
@@ -10,31 +10,31 @@ role: User
 level: Beginner
 exl-id: 1600c0c0-0054-49ce-9b99-f8e6e29d6132
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '189'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# Utilisation de l’application de bureau Dynamic Media Classic{#using-dynamic-media-desktop-application}
+# Utiliser l’application de bureau Dynamic Media Classic{#using-dynamic-media-desktop-application}
 
-Adobe introduit une application de bureau pour Dynamic Media Classic qui fournit une expérience similaire à un navigateur et une interface fonctionnellement équivalente qui ne dépend pas du lecteur de Flash d’Adobe.
+Adobe lance une application de bureau pour Dynamic Media Classic qui fournit une expérience similaire à un navigateur et une interface fonctionnellement équivalente qui ne dépend pas du Flash Player d’Adobe.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36645?quality=12&learn=on)
 
 >[!NOTE]
 >
-> Nous vous recommandons d’installer la nouvelle appli de bureau Adobe Dynamic Media Classic d’ici le 1er octobre 2020. Cela vous assurera une transition en douceur avant que le Flash Player Adobe ne soit abandonné le 31 décembre 2020. À cette date, vous ne pourrez plus vous connecter à la version navigateur de l’interface utilisateur d’Adobe Dynamic Media Classic, appelée Scene7 Publishing System dans le produit.
+> Nous vous recommandons d’installer la nouvelle application de bureau Adobe Dynamic Media Classic avant le 1er octobre 2020. Vous bénéficierez ainsi d’une transition en douceur avant que Flash Player d’Adobe ne soit abandonné le 31 décembre 2020. À cette date, vous ne pourrez plus vous connecter à la version navigateur de l’interface utilisateur d’Adobe Dynamic Media Classic, appelée Scene7 Publishing System dans le produit.
 
 ## Configuration requise
 
-L’appli de bureau Adobe Dynamic Media Classic est compatible avec les systèmes d’exploitation suivants :
+L’application de bureau Adobe Dynamic Media Classic est compatible avec les systèmes d’exploitation suivants :
 
-* macOS 10.10 ou version ultérieure
-* Windows 7 ou version ultérieure
+* macOS 10.10 ou version ultérieure
+* Windows 7 ou version ultérieure
 
-## Supports
+## Documents annexes
 
-* [Documentation de l’application de bureau Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=fr)
-* [Questions fréquentes sur Adobe Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
-* [Télécharger l’appli de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html)
+* [Documentation de l’application de bureau Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=fr)
+* [Questions fréquentes sur Adobe Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html?lang=fr)
+* [Télécharger l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/new-ui-2020.html?lang=fr)
