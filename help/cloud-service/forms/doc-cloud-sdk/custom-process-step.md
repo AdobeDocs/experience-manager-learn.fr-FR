@@ -1,6 +1,6 @@
 ---
 title: Créer une étape de processus personnalisée
-description: Étape de processus personnalisée pour convertir un mot, Excel pièces jointes au format PDF à l’aide de Document Cloud.
+description: Étape de processus personnalisée pour convertir des pièces jointes Word et Excel en PDF à l’aide de Document Cloud.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -11,17 +11,17 @@ thumbnail: 7837.jpg
 kt: 7837
 exl-id: 24a788bb-f0dc-4774-91ab-26fde2de098f
 source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '77'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Étape de processus personnalisée
 
-Voici le code complet de l’étape de processus personnalisée qui convertit et remplace les fichiers natifs par les fichiers pdf convertis.
+Voici le code complet de l’étape de processus personnalisée qui convertit et remplace les fichiers natifs par les fichiers PDF convertis.
 Cette étape personnalisée recherche toutes les pièces jointes sous le nom de dossier fourni comme argument de processus dans le workflow.
-Cette étape de processus personnalisée utilise les méthodes du service DocumentCloudSDKService personnalisé pour créer des fichiers PDF.
+Cette étape de processus personnalisée utilise les méthodes du service DocumentCloudSDKService personnalisé pour créer des PDF.
 
 
 ```java
