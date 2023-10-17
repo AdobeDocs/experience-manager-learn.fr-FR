@@ -1,6 +1,6 @@
 ---
-title: Création d’une copie de langue
-description: Découvrez comment créer une copie de la langue pour votre site AEM à l’aide de l’assistant Créer une copie de la langue .
+title: Créer une copie de la langue
+description: Découvrez comment créer une copie de la langue pour votre site AEM à l’aide de l’assistant Créer une copie de la langue.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -14,14 +14,14 @@ role: User
 level: Beginner
 exl-id: d1f557bd-c48f-4534-8735-59e479ec92b5
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '42'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Création d’une copie de langue {#create-language-copy}
+# Créer une copie de la langue {#create-language-copy}
 
-Découvrez comment créer une copie de la langue pour votre site AEM à l’aide de l’assistant Créer une copie de la langue .
+Découvrez comment créer une copie de la langue pour votre site AEM à l’aide de l’assistant Créer une copie de la langue.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36483?quality=12&learn=on)
