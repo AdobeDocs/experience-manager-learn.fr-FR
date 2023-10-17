@@ -1,6 +1,6 @@
 ---
-title: AEM Balises, dossiers liés au projet et métadonnées de dossier pour Workfront pour AEM connecteur amélioré
-description: Découvrez comment piloter AEM Balises utilisées sur les ressources via les données Workfront, utiliser des dossiers liés à un projet et des données Workfront pour AEM des schémas de métadonnées de dossier de ressources.
+title: Balises AEM, dossiers liés à un projet et métadonnées de dossier pour le connecteur amélioré Workfront pour AEM
+description: Découvrez comment piloter l’utilisation des balises AEM sur les ressources via les données Workfront, utiliser des dossiers liés à un projet et des données Workfront pour des schémas de métadonnées de dossier de ressources AEM.
 version: Cloud Service
 topic: Content Management, Integrations
 feature: Asset Management
@@ -11,12 +11,12 @@ thumbnail: 340333.jpeg
 hidefromtoc: false
 last-substantial-update: 2022-09-02T00:00:00Z
 badgeIntegration: label="Intégration" type="positive"
-badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
+badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 520a75cd-757a-4ae9-acf6-3c1f5e1f3747
 source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '118'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
@@ -24,12 +24,12 @@ ht-degree: 10%
 
 ![AEM Experts Series.](./assets/banner.png)
 
-Découvrez comment piloter AEM Balises utilisées sur les ressources via les données Workfront, configurer et utiliser des dossiers liés au projet et des données Workfront pour AEM des schémas de métadonnées de dossier de ressources.
+Découvrez comment piloter l’utilisation des balises AEM sur les ressources via les données Workfront, configurer et utiliser des dossiers liés à un projet, et des données Workfront pour des schémas de métadonnées de dossier de ressources AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340333?quality=12&learn=on)
 
-_Partie trois de a [série d’experts en quatre parties sur Workfront pour Experience Manager Enhanced connector](./overview.md)_
+_Partie trois d’une [série de niveau expert en quatre parties sur le connecteur amélioré Workfront pour Experience Manager](./overview.md)_
 
 ## Corrections
 
-+ __@ 4:34 et 6:20__ La syntaxe des balises AEM est incorrecte. Affichages de vidéos `we-retail:apparel/footwear`. La syntaxe correcte est la suivante : `["we-retail:apparel/footwear"]` ou plus généralement `["namespace:tag/childtag"]`.
++ __À 4:34 et 6:20__, la syntaxe des balises AEM est incorrecte. La vidéo affiche `we-retail:apparel/footwear`. La syntaxe correcte est `["we-retail:apparel/footwear"]` ou plus généralement `["namespace:tag/childtag"]`.
