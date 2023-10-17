@@ -1,6 +1,6 @@
 ---
-title: Débogage d’AEM avec l’explorateur de référentiels
-description: Repository Browser est un outil puissant qui offre une visibilité sur AEM entrepôt de données sous-jacent, ce qui permet de déboguer facilement AEM environnement as a Cloud Service.
+title: Déboguer AEM avec l’explorateur de référentiels
+description: L’explorateur de référentiels est un outil puissant qui offre une visibilité sur l’entrepôt de données AEM sous-jacent, ce qui permet de déboguer facilement l’environnement d’AEM as a Cloud Service.
 feature: Developer Tools
 topics: development
 version: Cloud Service
@@ -14,37 +14,37 @@ role: Developer
 level: Beginner
 exl-id: 88af40fc-deff-4b92-84b1-88df2dbdd90b
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '270'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Débogage AEM as a Cloud Service avec l’explorateur de référentiel
+# Déboguer AEM as a Cloud Service avec l’explorateur de référentiels
 
-Repository Browser est un outil puissant qui offre une visibilité sur AEM entrepôt de données sous-jacent, ce qui permet de déboguer facilement AEM environnement as a Cloud Service. Repository Browser prend en charge une vue en lecture seule des ressources et des propriétés d’AEM dans les services de production, d’évaluation et de développement, ainsi que dans les services de création, de publication et d’aperçu.
+L’explorateur de référentiels est un outil puissant qui offre une visibilité sur l’entrepôt de données AEM sous-jacent, ce qui permet de déboguer facilement l’environnement d’AEM as a Cloud Service. L’explorateur de référentiels prend en charge une vue en lecture seule des ressources et des propriétés d’AEM pour les services de production, d’évaluation et de développement, ainsi que pour les services de création, de publication et de prévisualisation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341464?quality=12&learn=on)
 
-Repository Browser est __UNIQUEMENT__ disponible sur AEM environnements as a Cloud Service (utilisez [CRXDE Lite](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) pour déboguer le SDK d’AEM local).
+L’explorateur de référentiels est __UNIQUEMENT__ disponible sur les environnements AEM as a Cloud Service (utilisez [CRXDE Lite](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) pour déboguer le SDK AEM local).
 
-## Accès à l’explorateur de référentiels
+## Accéder à l’explorateur de référentiels
 
-Pour accéder à l’explorateur de référentiels sur AEM as a Cloud Service :
+Pour accéder à l’explorateur de référentiels sur AEM as a Cloud Service :
 
-1. Assurez-vous que votre utilisateur a [l’accès requis](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#access-prerequisites)
-1. Connectez-vous à [Cloud Manager](https://my.cloudmanager.adobe.com)
-1. Sélectionnez le Programme contenant l’environnement as a Cloud Service AEM à déboguer.
-1. Ouvrez le [Developer Console](./developer-console.md) correspondant à l’environnement as a Cloud Service AEM à déboguer.
-1. Sélectionnez la __Explorateur de référentiels__ tab
+1. Assurez-vous que votre utilisateur ou utilisatrice dispose de [l’accès requis](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html?lang=fr#access-prerequisites).
+1. Connectez-vous à [Cloud Manager](https://my.cloudmanager.adobe.com).
+1. Sélectionnez le programme contenant l’environnement AEM as a Cloud Service à déboguer.
+1. Ouvrez la [Developer Console](./developer-console.md) correspondant à l’environnement AEM as a Cloud Service à déboguer.
+1. Sélectionnez l’onglet __Explorateur de référentiels__.
 1. Sélectionnez le niveau de service AEM à parcourir.
-   + Tous les auteurs
-   + Tous les éditeurs
-   + Tous les aperçus
-1. Sélectionner __Ouvrir l’explorateur de référentiels__
+   + Toutes les personnes chargées de la création
+   + Toutes les personnes chargées de la publication
+   + Toutes les prévisualisations
+1. Sélectionnez __Ouvrir l’explorateur de référentiel__.
 
-L’explorateur de référentiels s’ouvre pour le niveau de service sélectionné (Auteur, Publier ou Aperçu) en mode lecture seule, affichant les ressources et les propriétés auxquelles votre utilisateur a accès.
+L’explorateur de référentiels s’ouvre pour le niveau de service sélectionné (Création, Publication ou Prévisualisation) en mode lecture seule, affichant les ressources et les propriétés auxquelles votre utilisateur ou votre utilisatrice a accès.
 
-## Accès à la publication et à la prévisualisation
+## Accéder à la publication et à la prévisualisation
 
-Par défaut, l’accès à Publier ou Aperçu est limité, ce qui réduit les ressources disponibles dans l’explorateur de référentiels. [Pour afficher toutes les ressources sur Publier (ou Aperçu), ajoutez des utilisateurs à un rôle Administrateurs de publication (ou Aperçu).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html#navigate-the-hierarchy)
+Par défaut, l’accès à la publication ou à la prévisualisation est limité, ce qui réduit les ressources disponibles dans l’explorateur de référentiels. [Pour afficher toutes les ressources sur l’instance de publication (ou de prévisualisation), ajoutez les utilisateurs et utilisatrices à un rôle d’administration de publication (ou prévisualisation).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/repository-browser.html?lang=fr#navigate-the-hierarchy)
