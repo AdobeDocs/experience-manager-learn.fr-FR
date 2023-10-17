@@ -1,6 +1,6 @@
 ---
 title: Procédure de résolution des problèmes spécifiques à HtmltoPDF dans une configuration Windows
-description: Résolution des problèmes HtmltoPDF sous Windows
+description: Résoudre des problèmes HtmltoPDF sous Windows
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -10,9 +10,9 @@ topic: Development
 index: y
 exl-id: 10b32182-3095-45f5-9edf-3cc4804713ab
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '40'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
