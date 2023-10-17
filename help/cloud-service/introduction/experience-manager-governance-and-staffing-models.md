@@ -4,9 +4,9 @@ description: Découvrez comment implémenter votre plateforme Adobe Experience�
 solution: Experience Manager
 exl-id: 808ab7a6-5ec5-4bbd-9a6e-cfc0b447430d
 source-git-commit: dcd69c7444eae0f8c86464c1963bff35e6f11238
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1133'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Vous trouverez ci-dessous des exemples de rôles pour un scénario léger (entre
 
    * Développement CSS : crée des artefacts d’expérience en redéfinissant l’objectif des composants avec de nouveaux styles.
    * Développement back-end : crée de nouveaux composants ou peut étendre un composant principal. Si cette opération est effectuée correctement, ce rôle ne doit pas comporter plus d’une personne, sauf s’il est nécessaire d’effectuer des tâches d’animation volumineuses.
-   * Gestion des versions : supervise le déploiement du code et fait office d’équipe du compte d’Adobe actuelle.
+   * Gestion de version : supervise le déploiement du code et fait office d’équipe Adobe en charge des comptes.
    * Propriétaire de produit : collabore avec l’unité opérationnelle sur l’alliance des visions techniques et stratégiques ; crée des tâches de maintenance et des améliorations, tout en faisant office de propriétaire de solution.
    * Administrateur ou administratrice de création : met à jour l’habillage CSS et fournit des conseils aux auteurs et autrices qui mettent à jour et appliquent du contenu. Ce rôle fonctionne sur les configurations de workflow et crée une documentation d’orientation à destination des créateurs et créatrices de contenu. REMARQUE : dans la version 6.5, Adobe recommande d’utiliser des modèles modifiables.
    * Créateurs ou créatrices de contenu : appliquent le contenu et la propriété à plusieurs niveaux, tout en faisant part des problèmes de communication et des préoccupations au fur et à mesure qu’ils surviennent avec votre CSM.
