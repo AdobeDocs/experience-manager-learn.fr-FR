@@ -9,24 +9,24 @@ level: Beginner
 kt: kt-8063
 exl-id: 09d9eabf-4815-4159-b6c7-cf2ebc8a2df5
 source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Étape de processus personnalisée
 
 
-Une étape de processus personnalisée a été mise en oeuvre pour renseigner les variables de workflow de type Liste de tableaux avec les pièces jointes et les noms des pièces jointes. Cette variable est ensuite utilisée dans le composant de workflow Envoyer un courrier électronique . Si vous ne connaissez pas la création d’un lot OSGi, veuillez [suivez ces instructions :](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Une étape de processus personnalisée a été mise en œuvre pour renseigner les variables de workflow de type Liste de tableaux avec les pièces jointes et les noms des pièces jointes. Cette variable est ensuite utilisée dans le composant de workflow Envoyer un e-mail. Si vous ne maîtrisez pas la création de lot OSGi, [suivez ces instructions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=fr).
 
-Le code de l’étape de processus personnalisé effectue les opérations suivantes :
+Le code de l’étape de processus personnalisée effectue les opérations suivantes :
 
-* Requête pour toutes les pièces jointes de formulaire adaptatif sous le dossier de charge utile. Le nom du dossier est transmis en tant qu’argument de processus à l’étape de processus.
+* Requête de toutes les pièces jointes de formulaire adaptatif sous le dossier de payload. Le nom du dossier est transmis en tant qu’argument de processus à l’étape de processus.
 
-* Renseigner `listOfDocuments` variable de workflow
-* Renseigner `attachmentNames` variable de workflow
-* Définir la valeur de la variable de workflow (`no_of_attachments`)
+* Renseignez la variable de workflow `listOfDocuments`.
+* Renseignez la variable de workflow `attachmentNames`.
+* Définissez la valeur d’une variable de workflow (`no_of_attachments`).
 
 ```java
  package com.aemforms.formattachments.core;
@@ -112,10 +112,10 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 >[!NOTE]
 >
 > Assurez-vous que les variables suivantes sont définies dans votre workflow pour que le code fonctionne.
-> *listOfDocuments* - variable de type ArrayList of Documents
-> *attachmentNames* - variable de type ArrayList of String
-> *no_of_attachments* - variable de type Double
+> *listOfDocuments* - variable de type ArrayList de documents
+> *attachmentNames* - variable de type ArrayList de chaîne
+> *no_of_attachments* - variable de type Double.
 
 ## Étapes suivantes
 
-[Test de la solution sur votre système local](./test.md)
+[Tester la solution sur votre système local](./test.md)
