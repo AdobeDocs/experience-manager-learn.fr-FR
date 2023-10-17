@@ -1,6 +1,6 @@
 ---
-title: Création de Forms pour la signature
-description: Créez des formulaires qui doivent être inclus dans le package de signature.
+title: Créer des formulaires à signer
+description: Créez des formulaires à inclure dans le package de signature.
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6893
@@ -10,44 +10,44 @@ role: User
 level: Beginner
 exl-id: 565d81a4-2918-44ea-a3e9-ed79f246f08a
 source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Créer des formulaires à signer
 
-L’étape suivante consiste à créer les formulaires adaptatifs que vous souhaitez inclure dans le module. N’oubliez pas de respecter les points suivants lors de la création de formulaires à signer :
+L’étape suivante consiste à créer les formulaires adaptatifs que vous souhaitez inclure dans le package. Veillez à respecter les points suivants lors de la création de formulaires à signer :
 
-* Assurez-vous que les formulaires reposent sur la variable **SignMultipleForms** modèle. Ainsi, les formulaires sont préremplis avec les données récupérées dans la base de données.
+* Assurez-vous que les formulaires reposent sur le modèle **SignMultipleForms**. Cela permet de s’assurer que les formulaires sont préremplis avec les données issues de la base de données.
 
-* Les formulaires doivent être configurés pour utiliser Acrobat Sign et le champ signer1 doit être associé au champ Email du client.
-* Les formulaires doivent également être associés à clientLib appelé **getnextform**
+* Les formulaires doivent être configurés pour utiliser Acrobat Sign et le champ signer1 doit être associé au champ E-mail du client ou de la cliente.
+* Les formulaires doivent également être associés à la bibliothèque cliente **getnextform**.
 * Les formulaires doivent utiliser le composant Étape de signature.
-* Le formulaire doit également utiliser la variable **Signature de plusieurs formulaires** composant. Ce composant vous permet d’accéder au formulaire suivant pour vous connecter au module.
-* L’envoi du formulaire doit être configuré pour déclencher AEM workflow **Mettre à jour le statut de la signature**
-* Assurez-vous que le chemin d’accès au fichier de données est défini sur **Data.xml**. Ceci est très important, car l’exemple de code recherche un fichier appelé Data.xml dans la payload du processus d’envoi du formulaire.
+* Le formulaire doit également utiliser le composant **Signer plusieurs formulaires**. Ce composant vous permet d’accéder au formulaire suivant à signer dans le package.
+* L’envoi du formulaire doit être configuré pour déclencher le workflow AEM **Mettre à jour le statut de la signature**.
+* Assurez-vous que le chemin d’accès au fichier de données est défini sur **Data.xml**. Cette étape est très importante, car l’exemple de code recherche un fichier appelé Data.xml dans la payload du processus d’envoi du formulaire.
 
-Une fois le formulaire créé, incluez la variable **commonfields** fragment de formulaire adaptatif dans le formulaire. Le fragment est marqué comme masqué. Ce fragment contient les champs suivants.
+Une fois le formulaire créé, incluez le fragment de formulaire adaptatif **commonfields** dans le formulaire. Le fragment est marqué comme masqué. Ce fragment contient les champs suivants.
 
-* **signed** - Le champ contenant l’état de la signature
-* **guid** - Identifiant unique permettant d’identifier le formulaire dans le module
-* **customerEmail** - Ce champ contient l’adresse électronique du client.
+* **signed** : le champ contenant le statut de la signature.
+* **guid** : identifiant unique permettant d’identifier le formulaire dans le package.
+* **customerEmail** : ce champ contient l’adresse e-mail du client ou de la cliente.
 
 
 
 >[!NOTE]
->Si vous souhaitez porter les données d’un formulaire vers un autre dans le package, veillez à ce que les champs du formulaire soient nommés de manière identique dans tous les formulaires.
+>Si vous souhaitez transposer les données d’un formulaire à un autre dans le package, veillez à nommer les champs du formulaire de manière identique dans tous les formulaires.
 
-## Tout le formulaire terminé
+## Formulaire « All Done » (Tous les champs sont remplis)
 
-Une fois que tous les formulaires du package sont remplis et signés, nous devons afficher le message approprié. Ce message s’affiche à l’aide d’un formulaire Tout fait. Le formulaire Autorisé est inclus dans les exemples de formulaires.
+Une fois tous les formulaires du package complétés et signés, nous devons afficher un message approprié. Ce message s’affiche à l’aide du formulaire « Alldone » (Tous les champs sont remplis). Le formulaire « Alldone » est inclus dans les exemples de formulaires.
 
 ## Ressources
 
-Les exemples de formulaires, y compris ceux utilisés dans ce tutoriel, peuvent être [téléchargé ici](assets/forms-for-signing.zip)
+[Téléchargez ici](assets/forms-for-signing.zip) les exemples de formulaires, y compris ceux utilisés dans ce tutoriel.
 
 ## Étapes suivantes
 
-[Test de la solution sur votre système local](./testing-and-trouble-shooting.md)
+[Tester la solution sur votre système local](./testing-and-trouble-shooting.md)
