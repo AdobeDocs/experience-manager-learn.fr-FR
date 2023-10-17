@@ -1,7 +1,7 @@
 ---
-title: Ouverture de l’interface utilisateur de l’agent lors de l’envoi du POST
+title: Ouvrir l’interface utilisateur de l’agent lors de l’envoi POST
 seo-title: Opening Agent UI On POST Submission
-description: Il s’agit de la 11e partie du tutoriel en plusieurs étapes pour créer votre premier document de communication interactive pour le canal d’impression. Dans cette partie, nous allons lancer l’interface utilisateur de l’agent pour créer une correspondance ad hoc lors de l’envoi du formulaire.
+description: Il s’agit de la partie 11 du tutoriel en plusieurs étapes sur la création de votre premier document de communication interactive pour le canal d’impression. Dans cette partie, nous allons lancer l’interface utilisateur de l’agent pour créer une correspondance ad hoc lors de l’envoi du formulaire.
 seo-description: This is part 11 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will launch the agent ui interface for creating ad-hoc correspondence on form submission.
 uuid: 96f34986-a5c3-400b-b51b-775da5d2cbd7
 feature: Interactive Communication
@@ -17,19 +17,19 @@ role: Developer
 level: Intermediate
 exl-id: 509b4d0d-9f3c-46cb-8ef7-07e831775086
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Ouverture de l’interface utilisateur de l’agent lors de l’envoi du POST
+# Ouvrir l’interface utilisateur de l’agent lors de l’envoi POST
 
 Dans cette partie, nous allons lancer l’interface utilisateur de l’agent pour créer une correspondance ad hoc lors de l’envoi du formulaire.
 
-Cet article décrit les étapes à suivre pour ouvrir l’interface utilisateur de l’agent lors de l’envoi d’un formulaire. Le cas d’utilisation type consiste à ce que l’agent du service client remplisse un formulaire avec certains paramètres d’entrée et que l’interface utilisateur de l’agent d’envoi de formulaire s’ouvre avec des données préremplies à partir du service de préremplissage du modèle de données de formulaire. Les paramètres d’entrée du service de préremplissage du modèle de données de formulaire sont extraits de l’envoi du formulaire.
+Cet article décrit les étapes à suivre pour ouvrir l’interface utilisateur de l’agent lors de l’envoi d’un formulaire. Le cas d’utilisation type consiste à ce que l’agent du service clientèle remplisse un formulaire avec certains paramètres d’entrée et que l’interface utilisateur de l’agent s’ouvre avec des données préremplies à partir du service de préremplissage du modèle de données de formulaire. Les paramètres d’entrée du service de préremplissage sont extraits de l’envoi du formulaire.
 
-La vidéo suivante présente un cas pratique
+La vidéo suivante présente un cas d’utilisation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40122?quality=12&learn=on)
 
@@ -49,27 +49,27 @@ CustomParameterRequest wrapperRequest = new CustomParameterRequest(slingRequest,
 wrapperRequest.getRequestDispatcher("/aem/forms/createcorrespondence.html").include(wrapperRequest, response);
 ```
 
-Ligne 1 : Obtention du numéro de compte à partir du paramètre de requête
+Ligne 1 : obtenir le numéro de compte à partir de requestparameter.
 
-Ligne 2-8 : Créez un mappage de paramètres et définissez les clés et valeurs appropriées pour refléter documentId, Random.
+Lignes 2-8 : créer un mappage de paramètres et définir les clés et valeurs appropriées pour refléter documentId,Random.
 
-Ligne 9 à 10 : Créez un autre objet Map destiné à contenir le paramètre d’entrée défini dans le modèle de données de formulaire.
+Lignes 9-10 : créer un autre objet de mappage destiné à contenir le paramètre d’entrée défini dans le modèle de données de formulaire.
 
-Ligne 11 : Définition de l’attribut slingRequest &quot;paramMap&quot;
+Ligne 11 : définir l’attribut slingRequest « paramMap ».
 
-Ligne 12-13 : Transfert de la requête vers la servlet
+Lignes 12-13 : transférer la requête vers le servlet.
 
-Pour tester cette fonctionnalité sur votre serveur
+Pour tester cette fonctionnalité sur votre serveur :
 
-* [Importez et installez les actifs liés à cet article à l’aide du gestionnaire de packages.](assets/launch-agent-ui.zip)
-* [Connexion à configMgr](http://localhost:4502/system/console/configMgr)
-* Rechercher _Adobe du filtre CSRF Granite_
-* Ajouter _/content/getprintchannel_ dans les chemins d’accès exclus
+* [Importez et installez les fichiers liés à cet article à l’aide du gestionnaire de packes.](assets/launch-agent-ui.zip)
+* [Connectez-vous à configMgr](http://localhost:4502/system/console/configMgr).
+* Recherchez _Filtre Adobe CSRF Granite_.
+* Ajoutez _/content/getprintchannel_ dans les chemins exclus.
 * Enregistrez vos modifications.
-* [Ouvrez POST.jsp](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Assurez-vous que la chaîne transmise à FormFieldRequestParameter est un documentId valide.(Ligne 19).
-* [Ouvrir la page web](http://localhost:4502/content/OpenPrintChannel.html) et saisissez le numéro de compte et envoyez le formulaire.
-* L’interface utilisateur de l’agent doit s’ouvrir avec les données prérenseignées spécifiques au numéro de compte saisi dans le formulaire.
+* [Ouvrez POST.jsp](http://localhost:4502/apps/AEMForms/openprintchannel/POST.jsp). Assurez-vous que la chaîne transmise à FormFieldRequestParameter est un documentId valide.(Ligne 19).
+* [Ouvrez la page web](http://localhost:4502/content/OpenPrintChannel.html), saisissez le numéro de compte et envoyez le formulaire.
+* L’interface utilisateur de l’agent doit s’ouvrir avec les données préremplies spécifiques au numéro de compte saisi dans le formulaire.
 
 >[!NOTE]
 >
->Assurez-vous que le paramètre d’entrée de l’opération Get de votre modèle de données de formulaire est lié à l’attribut de demande appelé &quot;numéro de compte&quot; pour que cela fonctionne. Si vous remplacez le nom de la valeur de liaison par un autre nom, assurez-vous que la modification est répercutée à la ligne 25 du fichier POST.jsp.
+>Assurez-vous que le paramètre d’entrée de l’opération GET de votre modèle de données de formulaire est lié à l’attribut de demande « accountnumber » pour que cela fonctionne. Si vous remplacez le nom de bindingvalue par un autre nom, assurez-vous que la modification est répercutée à la ligne 25 du fichier POST.jsp.
