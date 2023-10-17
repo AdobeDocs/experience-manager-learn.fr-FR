@@ -1,6 +1,6 @@
 ---
-title: Utilisation de ressources connectées avec AEM Sites
-description: La fonction Ressources connectées permet à un auteur AEM Sites de partager facilement des ressources numériques hébergées sur une autre instance d’AEM.
+title: Utiliser les ressources connectées avec AEM Sites
+description: La fonction de ressources connectées permet à un créateur ou une créatrice AEM Sites de partager facilement des ressources numériques hébergées sur une autre instance d’AEM.
 feature: Connected Assets
 version: 6.5
 topic: Content Management
@@ -9,21 +9,21 @@ level: Intermediate
 last-substantial-update: 2022-06-23T00:00:00Z
 exl-id: 2eceb65f-362a-48e1-a8c6-e9f6954dc2a0
 source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '102'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Utilisation de ressources connectées avec AEM Assets{#using-connected-assets-with-aem-assets}
+# Utiliser les ressources connectées avec AEM Assets{#using-connected-assets-with-aem-assets}
 
-La fonction Ressources connectées permet à un auteur AEM Sites de partager facilement des ressources numériques hébergées sur une autre instance d’AEM.
+La fonction de ressources connectées permet à un créateur ou une créatrice AEM Sites de partager facilement des ressources numériques hébergées sur une autre instance d’AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26060?quality=12&learn=on)
 
 * 00:00 — Architecture de haut niveau
 * 02:52 — Authentification aux ressources connectées
 * 03:30 — Utilisation d’une image des ressources connectées
-* 04:42 — Configurations de l’administrateur pour activer la fonction Ressources connectées
+* 04:42 — Configurations d’administration pour activer la fonction de ressources connectées
 
-Veuillez consulter la section [Déploiements pris en charge pour les ressources connectées](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html#prerequisites) pour savoir si votre déploiement AEM peut prendre en charge les ressources connectées.
+Veuillez consulter les [déploiements pris en charge pour les ressources connectées](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=fr#prerequisites) pour savoir si votre déploiement AEM peut prendre en charge les ressources connectées.
