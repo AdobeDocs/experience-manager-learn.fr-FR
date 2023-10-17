@@ -1,6 +1,6 @@
 ---
 title: Comment ajuster les paramètres de performances de Workbench
-description: Procédure de réglage des paramètres de performances de Workbench
+description: Procédure d’ajustement des paramètres de performances de Workbench
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -10,14 +10,14 @@ topic: Administration
 index: y
 exl-id: 6cb41242-18d3-420a-9e33-87091a648703
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '30'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Comment ajuster les paramètres de performances de Workbench
 
-*Cette vidéo décrit le processus de réglage des paramètres de performances de Workbench .*
+*Cette vidéo décrit le processus d’ajustement des paramètres de performances de Workbench.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335511?quality=12&learn=on)
