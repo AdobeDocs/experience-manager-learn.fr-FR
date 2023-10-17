@@ -33,7 +33,7 @@ Ce chapitre ajoute un simple composant `Header` à la SPA. Au cours de la créat
 
 ![Nouvel en-tête dans AEM.](./assets/integrate-spa/final-header-component.png)
 
-*La SPA est étendue pour ajouter un composant `Header` statique.*
+*La SPA est étendue pour ajouter un composant `Header` statique*.
 
 ## Prérequis
 
@@ -43,13 +43,13 @@ Examinez les outils et les instructions requis pour configurer un [environnement
 
 Deux modules ont été créés dans le cadre du projet AEM : `ui.apps` et `ui.frontend`.
 
-Le module `ui.frontend` est un projet [Webpack](https://webpack.js.org/) qui contient tout le code source de la SPA. La majorité du développement et des tests SPA est effectuée dans le projet Webpack. Lorsqu’une version de production est déclenchée, la SPA est créée et compilée à l’aide de Webpack. Les artefacts compilés (CSS et Javascript) sont copiés dans le module `ui.apps` qui est ensuite déployé sur le runtime AEM.
+Le module `ui.frontend` est un projet [webpack](https://webpack.js.org/) qui contient tout le code source de la SPA. La majorité du développement et des tests SPA est effectuée dans le projet Webpack. Lorsqu’une version de production est déclenchée, la SPA est créée et compilée à l’aide de Webpack. Les artefacts compilés (CSS et Javascript) sont copiés dans le module `ui.apps` qui est ensuite déployé sur l’exécution locale d’AEM.
 
 ![Architecture de haut niveau ui.frontend.](assets/integrate-spa/ui-frontend-architecture.png)
 
 *Représentation de haut niveau de l’intégration SPA.*
 
-Des informations supplémentaires sur la version front-end peuvent être consultées [ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=fr).
+Des informations supplémentaires sur la création front-end peuvent être consultées [ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend-react.html?lang=fr).
 
 ## Inspection de l’intégration SPA {#inspect-spa-integration}
 
@@ -98,9 +98,9 @@ Ensuite, examinez le module `ui.frontend` pour comprendre la SPA qui a été gé
 
 1. Inspectez le fichier `ui.frontend/clientlib.config.js`. Ce fichier de configuration est utilisé par [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) pour déterminer comment générer la bibliothèque cliente.
 
-1. Inspectez le fichier `ui.frontend/pom.xml`. Ce fichier transforme le dossier `ui.frontend` en un [Module Maven](https://maven.apache.org/guides/mini/guide-multiple-modules.html). Le fichier `pom.xml` a été mis à jour de sorte à utiliser le [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) pour **tester** et **créer** la SPA lors d’une création Maven.
+1. Inspectez le fichier `ui.frontend/pom.xml`. Ce fichier transforme le dossier `ui.frontend` en un [module Maven](https://maven.apache.org/guides/mini/guide-multiple-modules.html). Le fichier `pom.xml` a été mis à jour pour utiliser le [plugin frontend-maven](https://github.com/eirslett/frontend-maven-plugin) pour **tester** et **créer** la SPA lors d’une création Maven.
 
-1. Inspectez le fichier `index.js` à `ui.frontend/src/index.js` :
+1. Inspectez le fichier `index.js` sous `ui.frontend/src/index.js` :
 
    ```js
    //ui.frontend/src/index.js
@@ -125,7 +125,7 @@ Ensuite, examinez le module `ui.frontend` pour comprendre la SPA qui a été gé
    });
    ```
 
-   `index.js` est le point d’entrée du SPA. `ModelManager` est fourni par le SDK JS de l’éditeur de SPA d’AEM. Il est chargé d’appeler et d’injecter le `pageModel` (le contenu JSON) dans l’application.
+   `index.js` est le point d’entrée de la SPA. `ModelManager` est fourni par le SDK JS de l’éditeur de SPA d’AEM. Il est chargé d’appeler et d’injecter le `pageModel` (le contenu JSON) dans l’application.
 
 1. Inspectez le fichier `import-components.js` à `ui.frontend/src/components/import-components.js`. Ce fichier importe les **Composants principaux de React** prêts à l’emploi et les rend disponibles pour le projet. Le chapitre suivant examine le mappage du contenu AEM aux composants SPA.
 
@@ -198,7 +198,7 @@ Ajoutez ensuite un nouveau composant à la SPA et déployez les modifications su
 
 1. Accédez au dossier `ui.apps`. Sous `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/clientlibs/clientlib-react`, vous devriez constater que les fichiers SPA compilés ont été copiés à partir du dossier `ui.frontend/build`.
 
-   ![Bibliothèque cliente générée dans les applications d’IU.](./assets/integrate-spa/compiled-spa-uiapps.png)
+   ![Bibliothèque cliente générée dans ui.apps.](./assets/integrate-spa/compiled-spa-uiapps.png)
 
 1. Retournez dans le terminal et accédez au dossier `ui.apps`. Exécutez la commande Maven suivante :
 
