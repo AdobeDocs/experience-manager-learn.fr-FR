@@ -1,6 +1,6 @@
 ---
-title: Stockage des données de formulaire adaptatif
-description: Stockage des données de formulaire adaptatif dans DataBase dans le cadre de votre processus AEM
+title: Stocker des données de formulaire adaptatif
+description: Stocker des données de formulaire adaptatif dans la base de données dans le cadre de votre workflow AEM
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Development
@@ -9,37 +9,37 @@ level: Experienced
 exl-id: 3dd552da-fc7c-4fc7-97ec-f20b6cc33df0
 last-substantial-update: 2020-03-20T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Stockage des envois de formulaire adaptatif dans la base de données
+# Stocker des envois de formulaire adaptatif dans la base de données
 
-Il existe plusieurs façons de stocker les données de formulaire envoyées dans la base de données de votre choix. Une source de données JDBC peut être utilisée pour stocker directement les données dans la base de données. Un lot OSGI personnalisé peut être écrit pour stocker les données dans la base de données. Cet article utilise une étape de processus personnalisée dans AEM workflow pour stocker les données.
-Le cas d’utilisation consiste à déclencher un processus AEM lors de l’envoi d’un formulaire adaptatif et une étape du processus stocke les données envoyées dans la base de données.
+Il existe plusieurs façons de stocker les données de formulaire envoyées dans la base de données de votre choix. Une source de données JDBC peut être utilisée pour stocker directement les données dans la base de données. Un lot OSGI personnalisé peut être écrit pour stocker les données dans la base de données. Cet article utilise une étape de processus personnalisée dans un workflow AEM pour stocker les données.
+Le cas d’utilisation consiste à déclencher un workflow AEM lors de l’envoi d’un formulaire adaptatif et une étape du workflow stocke les données envoyées dans la base de données.
 
 
 
 ## Pool de connexions JDBC
 
-* Accédez à [ConfigMgr](http://localhost:4502/system/console/configMgr)
+* Accédez à [ConfigMgr](http://localhost:4502/system/console/configMgr).
 
-   * Recherchez &quot;JDBC Connection Pool&quot;. Créez un pool de connexions JDBC Day Commons. Spécifiez les paramètres spécifiques à votre base de données.
+   * Recherchez « JDBC Connection Pool ». Créez un pool de connexions JDBC Day Commons. Spécifiez les paramètres spécifiques à votre base de données.
 
-   * ![Configuration OSGi du pool de connexions JDBC](assets/aemformstutorial-jdbc.png)
+   * ![Configuration OSGi du pool de connexions JDBC.](assets/aemformstutorial-jdbc.png)
 
-## Spécification des détails de base de données
+## Spécifier les détails de la base de données
 
-* Recherchez &quot;**Spécification des détails de la base de données**&quot;
+* Recherchez « **Spécifier les détails de la base de données** ».
 * Spécifiez les propriétés spécifiques à votre base de données.
-   * DataSourceName : nom de la source de données que vous avez configurée précédemment.
-   * NomTableau : nom de la table dans laquelle vous souhaitez stocker les données du formulaire adaptatif
-   * FormName : nom de colonne destiné à contenir le nom du formulaire.
-   * ColumnName : nom de colonne destiné à contenir les données AF.
+   * DataSourceName : nom de la source de données que vous avez configurée précédemment.
+   * TableName : nom du tableau dans laquelle vous souhaitez stocker les données du formulaire adaptatif.
+   * FormName : nom de la colonne contenant le nom du formulaire.
+   * ColumnName : nom de la colonne destinée à contenir les données du formulaire adaptatif.
 
-   ![Spécification de la configuration OSGi des détails de la base de données](assets/specify-database-details.png)
+  ![Spécification de la configuration OSGi des détails de la base de données.](assets/specify-database-details.png)
 
 
 
@@ -66,7 +66,7 @@ public @interface InsertFormDataConfiguration {
 }
 ```
 
-## Lire les valeurs de configuration
+## Lisez les valeurs de configuration.
 
 ```java
 package com.aemforms.dbsamples.core.insertFormData;
@@ -206,15 +206,15 @@ public class InsertAfData implements WorkflowProcess {
 }
 ```
 
-## Déploiement des exemples de ressources
+## Déployer des exemples de ressources
 
 * Vérifiez que vous avez configuré votre pool de connexions JDBC.
-* Spécifiez les détails de la base de données à l’aide de configMgr
-* [Téléchargez le fichier Zip et extrayez son contenu sur votre disque dur.](assets/article-assets.zip)
+* Spécifiez les détails de la base de données à l’aide de configMgr.
+* [Téléchargez le fichier zip et extrayez son contenu sur votre disque dur.](assets/article-assets.zip)
 
-   * Déployez le fichier jar à l’aide de [AEM console web](http://localhost:4502/system/console/bundles). Ce fichier jar contient le code permettant de stocker les données de formulaire dans la base de données.
+   * Déployez le fichier jar à l’aide de la [console web AEM](http://localhost:4502/system/console/bundles). Ce fichier jar contient le code permettant de stocker les données de formulaire dans la base de données.
 
-   * Importez les deux fichiers zip dans [AEM à l’aide du gestionnaire de packages](http://localhost:4502/crx/packmgr/index.jsp). Vous obtiendrez le [exemple de workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) et le [exemple de formulaire adaptatif](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) qui déclenche le processus lors de l’envoi du formulaire. Notez les arguments de processus dans l’étape du processus. Ces arguments indiquent le nom du formulaire et le nom du fichier de données qui contiendra les données de formulaire adaptatif. Le fichier de données est stocké sous le dossier de charge utile dans le référentiel crx. Remarquez comment la variable [formulaire adaptatif](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) est configuré pour déclencher le workflow AEM lors de l’envoi et la configuration du fichier de données (data.xml)
+   * Importez les deux fichiers zip dans [AEM à l’aide du gestionnaire de packages](http://localhost:4502/crx/packmgr/index.jsp). Vous obtiendrez l’[exemple de workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/storeformdata.html) et l’[exemple de formulaire adaptatif](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) qui déclenchera le workflow lors de l’envoi du formulaire. Notez les arguments de processus dans l’étape du workflow. Ces arguments indiquent le nom du formulaire et le nom du fichier de données qui contiendra les données du formulaire adaptatif. Le fichier de données est stocké sous le dossier de payload dans le référentiel crx. Remarquez comment le [formulaire adaptatif](http://localhost:4502/editor.html/content/forms/af/addformdataindb.html) est configuré pour déclencher le workflow AEM lors de l’envoi et de la configuration du fichier de données (data.xml).
 
    * Prévisualisez et remplissez le formulaire et envoyez-le. Vous devriez voir une nouvelle ligne créée dans votre base de données.
 
