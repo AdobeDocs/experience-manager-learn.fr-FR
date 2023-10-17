@@ -1,5 +1,5 @@
 ---
-title: Utilisation du composant Tableau dans le document Canal d’impression AEM Forms
+title: Utiliser le composant Tableau dans le document de canal d’impression AEM Forms
 seo-title: Using Table Component in AEM Forms Print Channel Document
 description: La vidéo suivante décrit les étapes requises pour utiliser le composant de tableau dans les communications interactives pour les documents de canal d’impression.
 feature: Interactive Communication
@@ -14,31 +14,31 @@ level: Intermediate
 exl-id: 54afd047-c6e6-4557-9336-39420f30df88
 last-substantial-update: 2019-07-07T00:00:00Z
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Utilisation du composant Tableau dans le document Canal d’impression AEM Forms {#using-table-component-in-aem-forms-print-channel-document}
+# Utiliser le composant Tableau dans le document de canal d’impression AEM Forms {#using-table-component-in-aem-forms-print-channel-document}
 
 La vidéo suivante décrit les étapes requises pour utiliser le composant de tableau dans les communications interactives pour les documents de canal d’impression.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27769?quality=12&learn=on)
 
-Les tableaux sont utilisés pour afficher les données sous forme tabulaire. Les lignes du tableau doivent s’agrandir ou se rétrécir en fonction des données renvoyées par la source de données. Pour utiliser un tableau dans le document du canal d’impression, nous devons créer un fichier de mise en page (fichier xdp) à l’aide d’AEM Forms Designer. Dans ce fichier de mise en page, nous ajoutons le tableau avec le nombre de colonnes requis. Assurez-vous que le type d’objet de champ de colonne est TextField ou Numeric Field selon vos besoins. Pour chaque colonne, les champs s’assurent que la liaison de données est définie sur Utiliser le nom.
+Les tableaux sont utilisés pour afficher les données sous forme tabulaire. Les lignes du tableau doivent être agrandies ou réduites en fonction des données renvoyées par la source de données. Pour utiliser un tableau dans le document du canal d’impression, nous devons créer un fichier de disposition (fichier xdp) à l’aide d’AEM Forms Designer. Dans ce fichier de disposition, nous ajoutons le tableau avec le nombre de colonnes requis. Assurez-vous que le type d’objet de champ de colonne est TextField ou NumericField selon vos besoins. Pour chaque colonne, les champs s’assurent que la liaison de données est définie sur Utiliser le nom.
 
 >[!NOTE]
 >
 >Pour rendre le tableau dynamique, assurez-vous d’avoir marqué la ligne comme répétitive.
 
-**Essayez-le sur votre propre serveur**
+**Essayez sur votre propre serveur.**
 
 * [Téléchargez et décompressez le fichier de ressources sur votre disque dur.](assets/usingtablesinprintchannel.zip)
 
-* Importez les deux fichiers zip dans AEM à l’aide du gestionnaire de package.
+* Importez les deux fichiers zip dans AEM à l’aide du gestionnaire de packages.
 
-* Les ressources associées à cet article sont les suivantes :
+* Les ressources associées à cet article sont les suivantes :
 
    * Fragment de disposition
 
@@ -47,9 +47,9 @@ Les tableaux sont utilisés pour afficher les données sous forme tabulaire. Les
    * Document de communication interactive
    * sampleretirementaccountdata.json
 
-* Ouvrez le document de communication interactive dans [mode d’édition](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
+* Ouvrez le document de communication interactive en [mode de modification](http://localhost:4502/editor.html/content/forms/af/401kstatement/tablesinprintdocument/channels/print.html).
 
-* Ajoutez le fragment de disposition TableDemo à la section des contributions .
-* Lier les cellules de tableau aux éléments de modèle de données de formulaire appropriés, comme indiqué dans la vidéo
+* Ajoutez le fragment de disposition TableDemo à la section des contributions.
+* Liez les cellules du tableau aux éléments de modèle de données de formulaire appropriés, comme indiqué dans la vidéo.
 
-* Aperçu du document de communication interactive avec l’exemple de fichier de données json fourni
+* Prévisualiser le document de communication interactive avec l’exemple de fichier de données json fourni
