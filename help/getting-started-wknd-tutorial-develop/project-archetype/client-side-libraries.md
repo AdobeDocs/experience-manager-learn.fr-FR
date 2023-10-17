@@ -12,9 +12,9 @@ thumbnail: 30359.jpg
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
 source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2799'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/a
 1. Découvrez comment utiliser le module `ui.frontend` et un serveur de développement webpack pour le développement front-end dédié.
 1. Comprenez le workflow de bout en bout de la diffusion de code CSS et JavaScript compilé sur une implémentation de Sites.
 
-## Ce que vous allez construire {#what-build}
+## Ce que vous allez créer {#what-build}
 
 Dans ce chapitre, vous ajoutez quelques styles de ligne de base pour le site WKND et le modèle de page d’article afin de rapprocher l’implémentation des [maquettes de conception d’interface utilisateur](assets/pages-templates/wknd-article-design.xd). Vous utilisez un workflow front-end avancé pour intégrer un projet webpack dans une bibliothèque cliente AEM.
 
