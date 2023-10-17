@@ -1,6 +1,6 @@
 ---
-title: Utilisation d’un modèle de rapport pour afficher les données de boîte de réception
-description: Ajout de colonnes personnalisées pour afficher des données additionnelles du workflow à l’aide d’un modèle de rapport
+title: Utiliser un modèle Sightly pour afficher les données de boîte de réception
+description: Ajouter des colonnes personnalisées pour afficher des données supplémentaires du workflow à l’aide d’un modèle Sightly
 feature: Adaptive Forms
 topics: development
 audience: developer
@@ -13,22 +13,22 @@ role: Developer
 level: Experienced
 exl-id: d09b46ed-3516-44cf-a616-4cb6e9dfdf41
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
-# Utilisation d’un modèle de rapport pour afficher les données de boîte de réception
+# Utiliser un modèle Sightly pour afficher les données de boîte de réception
 
-Vous pouvez utiliser un modèle simple pour mettre en forme les données à afficher dans les colonnes de la boîte de réception. Dans cet exemple, nous allons afficher les icônes de l’interface utilisateur coral en fonction de la valeur de la colonne des revenus. La capture d’écran suivante montre l’utilisation des icônes dans la colonne des revenus
-![revenu-icons](assets/income-column.PNG)
+Vous pouvez utiliser un modèle Sightly pour formater les données à afficher dans les colonnes de la boîte de réception. Dans cet exemple, nous allons afficher les icônes de l’interface utilisateur Coral UI en fonction de la valeur de la colonne des revenus. La copie d’écran suivante montre l’utilisation des icônes dans la colonne des revenus.
+![income-icons](assets/income-column.PNG)
 
-[Le modèle Sightly](assets/sightly-template.zip) Les icônes d’interface utilisateur coral personnalisées sont fournies dans le cadre de cet article.
+[Le modèle Sightly](assets/sightly-template.zip) utilisé pour afficher les icônes d’interface utilisateur Coral UI personnalisées est fourni dans cet article.
 
 ## Modèle Sightly
 
-Voici le modèle Sightly. Le code du modèle affiche une icône en fonction des revenus. Les icônes sont disponibles dans le [bibliothèque d’icônes de l’interface utilisateur coral](https://helpx.adobe.com/fr/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) qui vient avec AEM.
+Voici le modèle Sightly. Le code du modèle affiche une icône en fonction des revenus. Les icônes sont disponibles dans la [bibliothèque d’icônes de l’interface utilisateur Coral UI](https://helpx.adobe.com/fr/experience-manager/6-3/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) fournie avec AEM.
 
 ```java
 <template data-sly-template.incomeTemplate="${@ item}>">
@@ -43,11 +43,11 @@ Voici le modèle Sightly. Le code du modèle affiche une icône en fonction des 
 </template>
 ```
 
-## Mise en oeuvre du service
+## Mise en œuvre du service
 
-Le code suivant correspond à la mise en oeuvre du service pour l’affichage de la colonne des revenus.
+Le code suivant correspond à la mise en œuvre du service pour l’affichage de la colonne des revenus.
 
-La ligne 12 associe la colonne au modèle de rapport
+La ligne 12 associe la colonne au modèle Sightly.
 
 ```java
 import java.util.Map;
@@ -78,21 +78,21 @@ return val;
 }
 ```
 
-## Test sur votre serveur
+## Tester sur votre serveur
 
 >[!NOTE]
 >
->Cet article suppose que vous avez installé le [exemple de workflow](assets/review-workflow.zip) et [exemple de formulaire](assets/snap-form.zip) de [article précédent](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html) dans cette série.
+>Cet article suppose que vous avez installé l’[exemple de workflow](assets/review-workflow.zip) et l’[exemple de formulaire](assets/snap-form.zip) de l’[article précédent](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/inbox-customization/add-married-column.html?lang=fr) dans cette série.
 
-* [Connectez-vous à crx en tant qu’utilisateur administrateur.](http://localhost:4502/crx/de/index.jsp)
-* [modèle d&#39;import sightly](assets/sightly-template.zip)
-* [Connexion à AEM console web](http://localhost:4502/system/console/bundles)
-* [Déploiement et démarrage du lot de personnalisation de la boîte de réception](assets/income-column-customization.jar)
-* [Ouvrir votre boîte de réception](http://localhost:4502/aem/inbox)
-* Ouvrez le contrôle d’administration en cliquant sur le bouton Afficher en regard du bouton Créer
-* Ajouter une colonne de revenu à la boîte de réception et enregistrer vos modifications
-* [Prévisualiser le formulaire](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled)
-* Sélectionnez la _état civil_ et envoyer le formulaire
-* [Afficher la boîte de réception](http://localhost:4502/aem/inbox)
+* [Connectez-vous à CRX en tant qu’administrateur ou administratrice](http://localhost:4502/crx/de/index.jsp).
+* [Importez le modèle Sightly.](assets/sightly-template.zip)
+* [Connectez-vous à la console web AEM](http://localhost:4502/system/console/bundles).
+* [Déployez et démarrez le lot de personnalisation de la boîte de réception.](assets/income-column-customization.jar)
+* [Ouvrez votre boîte de réception](http://localhost:4502/aem/inbox).
+* Ouvrez le contrôle d’administration en cliquant sur la vue Liste en regard du bouton Créer.
+* Ajoutez une colonne des revenus à la boîte de réception et enregistrez vos modifications.
+* [Prévisualisez le formulaire](http://localhost:4502/content/dam/formsanddocuments/snapform/jcr:content?wcmmode=disabled).
+* Sélectionnez l’_état civil_ et envoyez le formulaire.
+* [Affichez la boîte de réception](http://localhost:4502/aem/inbox).
 
-L’envoi du formulaire déclenche le workflow et une tâche est assignée à l’utilisateur &quot;administrateur&quot;. L’icône appropriée s’affiche sous la colonne de revenu.
+L’envoi du formulaire déclenche le workflow et une tâche est assignée à l’administrateur ou à l’administratrice. L’icône appropriée devrait s’afficher sous la colonne des revenus.
