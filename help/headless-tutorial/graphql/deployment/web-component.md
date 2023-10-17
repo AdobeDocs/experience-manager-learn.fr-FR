@@ -8,13 +8,13 @@ role: Developer, Architect
 level: Intermediate
 kt: 10797
 thumbnail: kt-10797.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+exl-id: 9d4aab4c-82af-4917-8c1b-3935f19691e6
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: ht
 source-wordcount: '161'
 ht-degree: 100%
 
 ---
-
 
 # Déploiements de composants web AEM Headless
 
@@ -25,9 +25,9 @@ Les déploiements AEM Headless des [composants web](https://developer.mozilla.o
 
 La configuration de déploiement suivante doit être en place pour les déploiements de composants web et JS.
 
-| L’application composant web et JS se connecte à | l’instance de création AEM, | l’instance de publication AEM, | Prévisualisation AEM |
+| L’application composant web et JS se connecte à | l’instance de création AEM, | Publication AEM | Prévisualisation AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Filtres du Dispatcher.](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [Filtres Dispatcher.](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Partage de ressources entre origines multiples (CORS).](./configurations/cors.md) | ✔ | ✔ | ✔ |
 | [Hôtes AEM.](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
