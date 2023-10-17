@@ -51,20 +51,20 @@ Le concept de base consiste à mapper un composant SPA à un composant AEM. Les 
 
 ## Examinez le composant Texte
 
-L’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype) fournit un composant `Text` qui est mappé au [composant textuel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr) AEM. Il s’agit d’un exemple de composant de **contenu**, en ceci qu’il effectue le rendu du *contenu* depuis AEM.
+L’[Archétype de projet AEM](https://github.com/adobe/aem-project-archetype) fournit un composant `Text` qui est mappé au [composant de texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr) d’AEM. Il s’agit d’un exemple de **contenu** du composant, dans la mesure où il restitue le *contenu* d’AEM.
 
 Voyons comment fonctionne le composant.
 
 ### Examen du modèle JSON
 
-1. Avant de passer au code SPA, il est important de comprendre le modèle JSON fourni par AEM. Accédez à la [Bibliothèque de composants principaux](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) et visualisez la page du composant Texte. La bibliothèque des composants principaux fournit des exemples de tous les composants principaux AEM.
+1. Avant de passer au code SPA, il est important de comprendre le modèle JSON fourni par AEM. Accédez à la [bibliothèque de composants principaux](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/text.html) et affichez la page du composant de texte. La bibliothèque des composants principaux fournit des exemples de tous les composants principaux AEM.
 1. Sélectionnez l’onglet **JSON** pour l’un des exemples :
 
-   ![Modèle JSON de texte](./assets/map-components/text-json.png)
+   ![Modèle JSON de texte.](./assets/map-components/text-json.png)
 
-   Vous devriez voir trois propriétés : `text`, `richText`, et `:type`.
+   Vous devriez voir trois propriétés : `text`, `richText` et `:type`.
 
-   `:type` est une propriété réservée qui répertorie la variable (ou chemin) `sling:resourceType` du composant AEM. La valeur de `:type` est utilisée pour mapper le composant AEM au composant SPA.
+   `:type` est une propriété réservée qui répertorie le `sling:resourceType` (ou chemin d’accès) du composant AEM. La valeur de `:type` est utilisée pour mapper le composant AEM au composant SPA.
 
    `text` et `richText` sont des propriétés supplémentaires qui sont exposées au composant SPA.
 
@@ -172,19 +172,19 @@ Les politiques sont une fonctionnalité des modèles AEM qui permet aux dévelop
 
    ![Définir des composants par défaut](./assets/map-components/default-components.png)
 
-   Saisissez un **type MIME** de `image/*`.
+   Saisissez un **type MIME** d’`image/*`.
 
    Cliquez sur **Terminé** pour enregistrer les mises à jour des politiques.
 
 1. Dans le **Conteneur de disposition**, cliquez sur l’icône **politique** pour le composant **Texte**.
 
-   Créez une politique nommée **WKND SPA Text**. Sous **Plug-in** > **Formatage** > cochez toutes les cases pour activer des options de formatage supplémentaires :
+   Créez une politique nommée **WKND SPA Text**. Sous **Plugins** > **Formatage**, cochez toutes les cases pour activer des options de formatage supplémentaires :
 
-   ![Activer le formatage de l’outil RTE](assets/map-components/enable-formatting-rte.png)
+   ![Activation du formatage de l’éditeur de texte enrichi.](assets/map-components/enable-formatting-rte.png)
 
-   Sous **Plug-ins** > **Styles de paragraphe** >, cochez la case pour **activer des styles de paragraphe** :
+   Sous **Plugins** > **Styles de paragraphe**, cochez la case pour **activer les styles de paragraphe** :
 
-   ![Activer les styles de paragraphe](./assets/map-components/text-policy-enable-paragraphstyles.png)
+   ![Activation des styles de paragraphe.](./assets/map-components/text-policy-enable-paragraphstyles.png)
 
    Cliquez sur **Terminé** pour enregistrer la mise à jour de la politique.
 
@@ -198,21 +198,21 @@ Les politiques sont une fonctionnalité des modèles AEM qui permet aux dévelop
 
 1. Vous devriez également pouvoir modifier le composant `Text` et ajouter des styles de paragraphe supplémentaires en mode **plein écran**.
 
-   ![Modification de texte enrichi en mode plein écran](assets/map-components/full-screen-rte.png)
+   ![Modification de texte enrichi en plein écran.](assets/map-components/full-screen-rte.png)
 
-1. Vous devriez également pouvoir glisser et déposer une image à partir de l’**outil de recherche de ressources** :
+1. Vous pouvez aussi glisser et déposer une image à partir de l’**Outil de recherche de ressources** :
 
    ![Glisser et déposer une image](assets/map-components/drag-drop-image.png)
 
 1. Testez les composants **Titre** et **Teaser**.
 
-1. Ajoutez vos propres images via [AEM Assets](http://localhost:4502/assets.html/content/dam) ou installez la base de code terminée pour la norme [Site de référence WKND](https://github.com/adobe/aem-guides-wknd/releases/latest). Le [site de référence WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) inclut de nombreuses images qui peuvent être réutilisées sur la SPA WKND. Le module peut être installé à l’aide du [Gestionnaire de modules d’AEM](http://localhost:4502/crx/packmgr/index.jsp).
+1. Ajoutez vos propres images via [AEM Assets](http://localhost:4502/assets.html/content/dam) ou installez la base de code terminée pour la norme [Site de référence WKND](https://github.com/adobe/aem-guides-wknd/releases/latest). Le [site de référence WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) inclut de nombreuses images qui peuvent être réutilisées sur la SPA WKND. Le package peut être installé à l’aide du [gestionnaire de packages d’AEM](http://localhost:4502/crx/packmgr/index.jsp).
 
-   ![Package Manager install wknd.all](./assets/map-components/package-manager-wknd-all.png)
+   ![Installation du gestionnaire de packages wknd.all.](./assets/map-components/package-manager-wknd-all.png)
 
 ## Inspecter le conteneur de disposition
 
-La prise en charge du **conteneur de disposition** est automatiquement fournie par le SDK de l’éditeur de SPA AEM. Le **conteneur de disposition**, comme l’indique son nom, est un composant de **conteneur**. Les composants de conteneur sont des composants qui acceptent les structures JSON qui représentent d’*autres* composants et les instancient de manière dynamique.
+La prise en charge du **Conteneur de disposition** est automatiquement fournie par le SDK de l’éditeur de SPA d’AEM. Le **conteneur de disposition**, comme son nom l’indique, est un composant de **conteneur**. Les composants de conteneur sont des composants qui acceptent les structures JSON qui représentent *d’autres* composants et qui les instancient de manière dynamique.
 
 Examinons davantage le conteneur de dispositions.
 
@@ -220,7 +220,7 @@ Examinons davantage le conteneur de dispositions.
 
    ![API de modèle JSON - Grille réactive](./assets/map-components/responsive-grid-modeljson.png)
 
-   Le **conteneur de dispositions** comporte un composant `sling:resourceType` de `wcm/foundation/components/responsivegrid` et est reconnu par l’éditeur de SPA à l’aide de la propriété `:type`, tout comme les composants `Text` et `Image`.
+   Le composant de **conteneur de disposition** comporte un `sling:resourceType` de `wcm/foundation/components/responsivegrid` et est reconnu par l’éditeur de SPA avec la propriété `:type`, comme les composants `Text` et `Image`.
 
    Les mêmes fonctionnalités de redimensionnement d’un composant à l’aide du [mode de disposition](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) sont disponibles avec l’éditeur de SPA.
 
@@ -232,15 +232,15 @@ Examinons davantage le conteneur de dispositions.
 
    ![Noms de classe des colonnes](./assets/map-components/responsive-grid-classnames.png)
 
-   Le nom de la classe `aem-GridColumn--default--4` indique que le composant doit comporter 4 colonnes dans la largeur sur une grille de 12 colonnes. Vous trouverez davantage d’informations sur la [grille réactive ici](https://adobe-marketing-cloud.github.io/aem-responsivegrid/).
+   Le nom de la classe `aem-GridColumn--default--4` indique que le composant doit comporter 4 colonnes en largeur sur une grille de 12 colonnes. Vous trouverez davantage d’informations sur la [grille réactive ici](https://adobe-marketing-cloud.github.io/aem-responsivegrid/).
 
-4. Revenez à l’IDE. Dans le module `ui.apps`, il y a une bibliothèque côté client définie à l’adresse `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/clientlibs/clientlib-grid`. Ouvrez le fichier `less/grid.less`.
+4. Revenez à l’IDE et dans le module `ui.apps`, il existe une bibliothèque côté client définie à l’adresse `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/clientlibs/clientlib-grid`. Ouvrez le fichier `less/grid.less`.
 
-   Ce fichier détermine les points d’arrêt (`default`, `tablet` et `phone`) utilisés par le **conteneur de disposition**. Ce fichier est conçu pour être personnalisé selon les spécifications du projet. Actuellement, les points d’arrêt sont définis sur `1200px` et `768px`.
+   Ce fichier détermine les points d’arrêt (`default`, `tablet`, et `phone`) utilisés par le **conteneur de disposition**. Ce fichier est conçu pour être personnalisé selon les spécifications du projet. Actuellement, les points d’arrêt sont définis sur `1200px` et `768px`.
 
-5. Vous devriez être en mesure d’utiliser les fonctionnalités réactives et les politiques de texte enrichi mises à jour du composant `Text` pour créer une vue comme la suivante :
+5. Vous devez pouvoir utiliser les capacités réactives et les stratégies de texte enrichi mises à jour du composant `Text` pour créer une vue de ce type :
 
-   ![Exemple de création finale de chapitre](assets/map-components/final-page.png)
+   ![Exemple de création finale de chapitre.](assets/map-components/final-page.png)
 
 ## Félicitations ! {#congratulations}
 
@@ -254,21 +254,21 @@ Félicitations, vous avez appris à mapper des composants SPA à des composants 
 
 Dans de nombreux cas, en particulier au début d’un projet AEM, il est utile de conserver les configurations, comme les modèles et les politiques de contenu associées, pour le contrôle de code source. Cela garantit que tous les développeurs et développeuses travaillent sur le même ensemble de contenu et de configurations et peut garantir une cohérence supplémentaire entre les environnements. Une fois qu’un projet atteint un certain niveau de maturité, la gestion des modèles peut être transmise à un groupe spécial d’utilisateurs et utilisatrices expérimentés.
 
-Les étapes suivantes se dérouleront avec l’IDE Visual Studio Code et [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync), mais vous pouvez utiliser n’importe quel outil et n’importe quel IDE que vous avez configuré pour **extraire** ou **importer** du contenu d’une instance locale d’AEM.
+Les étapes suivantes se dérouleront à l’aide de l’IDE Visual Studio Code et [VSCode AEM Sync](https://marketplace.visualstudio.com/items?itemName=yamato-ltd.vscode-aem-sync) mais il est possible d’utiliser n’importe quel outil et IDE que vous avez configuré pour **extraire** ou **importer** du contenu d’une instance locale d’AEM.
 
-1. Dans l’IDE Visual Studio Code, assurez-vous que **VSCode AEM Sync** est installé via l’extension de Marketplace :
+1. Dans l’IDE Visual Studio Code, assurez-vous que **VSCode AEM Sync** est installé via l’extension Marketplace :
 
-   ![VSCode AEM Sync](./assets/map-components/vscode-aem-sync.png)
+   ![VSCode AEM Sync.](./assets/map-components/vscode-aem-sync.png)
 
 2. Développez le module **ui.content** dans l’explorateur de projets et accédez à `/conf/wknd-spa-react/settings/wcm/templates`.
 
-3. **Cliquez avec le bouton droit** sur le dossier `templates` et sélectionnez **Importer depuis le serveur AEM** :
+3. Faites un **Clic droit** sur le dossier `templates` et sélectionnez **Importer depuis le serveur AEM** :
 
-   ![Modèle d’import VSCode](./assets/map-components/import-aem-servervscode.png)
+   ![Modèle d’import VSCode.](./assets/map-components/import-aem-servervscode.png)
 
-4. Répétez les étapes pour importer du contenu, mais sélectionnez le dossier **politiques** situé à `/conf/wknd-spa-react/settings/wcm/templates/policies`.
+4. Répétez les étapes pour importer du contenu, mais sélectionnez le dossier **stratégies** situé à l’emplacement `/conf/wknd-spa-react/settings/wcm/templates/policies`.
 
-5. Examinez le fichier `filter.xml` situé à `ui.content/src/main/content/META-INF/vault/filter.xml`.
+5. Examinez le `filter.xml`fichier situé à l’emplacement `ui.content/src/main/content/META-INF/vault/filter.xml`.
 
    ```xml
    <!--ui.content filter.xml-->
@@ -281,7 +281,7 @@ Les étapes suivantes se dérouleront avec l’IDE Visual Studio Code et [VSCo
     </workspaceFilter>
    ```
 
-   Le fichier `filter.xml` est chargé d’identifier les chemins d’accès des nœuds installés avec le package. Remarquez le `mode="merge"` sur chacun des filtres indiquant que le contenu existant ne sera pas modifié et que seul un nouveau contenu peut être ajouté. Étant donné que les créateurs de contenu peuvent mettre à jour ces chemins, il est important qu’un déploiement de code **ne** remplace aucun contenu. Consultez la [Documentation de FileVault](https://jackrabbit.apache.org/filevault/filter.html) pour plus d’informations sur l’utilisation des éléments de filtre.
+   Le fichier `filter.xml` doit identifier les chemins d’accès des nœuds installés avec le package. Remarquez l’élément `mode="merge"` sur chacun des filtres qui indique que le contenu existant ne sera pas modifié et que seul du nouveau contenu est ajouté. Étant donné que les personnes créatrices de contenu peuvent mettre à jour ces chemins, il est important qu’un déploiement de code **ne remplace pas** le contenu. Voir la [Documentation FileVault](https://jackrabbit.apache.org/filevault/filter.html) pour plus d’informations sur l’utilisation des éléments de filtre.
 
    Comparez `ui.content/src/main/content/META-INF/vault/filter.xml` et `ui.apps/src/main/content/META-INF/vault/filter.xml` pour comprendre les différents nœuds gérés par chaque module.
 
@@ -293,15 +293,15 @@ Un composant d’image SPA a déjà été fourni par les composants principaux R
 
 Avant de vous lancer dans le code SPA, examinez le modèle JSON fourni par AEM.
 
-1. Accédez aux exemples d’images[ dans la bibliothèque de composants principaux](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html).
+1. Accédez aux [exemples d’images dans la bibliothèque de composants principaux](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html).
 
-   ![JSON du composant principal d’image](./assets/map-components/image-json.png)
+   ![JSON du composant principal d’image.](./assets/map-components/image-json.png)
 
-   Les propriétés de `src`, `alt`, et `title` sont utilisées pour remplir le composant `Image` SPA.
+   Les propriétés de `src`, `alt` et `title` sont utilisées pour remplir le composant SPA d’`Image`.
 
    >[!NOTE]
    >
-   > D’autres propriétés d’image sont exposées (`lazyEnabled`, `widths`) et permettent à l’équipe de développement de créer un composant adaptatif et à chargement différé. Le composant créé dans ce tutoriel est simple et n’utilise **pas** ces propriétés avancées.
+   > D’autres propriétés d’image sont exposées (`lazyEnabled`, `widths`) et permettent à un développeur ou à une développeuse de créer un composant de chargement adaptatif et différé. Le composant créé dans ce tutoriel est simple et n’utilise **pas** ces propriétés avancées.
 
 ### Mettre en œuvre le composant d’image
 
