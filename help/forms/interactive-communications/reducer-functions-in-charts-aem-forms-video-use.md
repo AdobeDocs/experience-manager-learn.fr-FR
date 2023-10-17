@@ -1,5 +1,5 @@
 ---
-title: Utilisation des fonctions de réducteur dans les graphiques
+title: Utiliser les fonctions de réducteur dans les graphiques
 seo-title: Using Reducer Functions in AEM Forms - Charts
 description: Les fonctions de réducteur sont utilisées pour agréger ou regrouper les valeurs affichées dans le graphique. La vidéo suivante décrit les étapes à suivre pour utiliser les fonctions de réducteur.
 seo-description: Reducer functions are used to aggregate or group values that are displayed in the chart.The following video walks through the steps involved in using reducer functions.
@@ -17,18 +17,18 @@ level: Intermediate
 exl-id: 866749d9-0f62-470b-afeb-4dece4e0b169
 last-substantial-update: 2019-07-07T00:00:00Z
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '94'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Utilisation des fonctions de réducteur dans AEM Forms - Graphiques{#using-reducer-functions-in-aem-forms-charts}
+# Utiliser les fonctions de réducteur dans AEM Forms - Graphiques{#using-reducer-functions-in-aem-forms-charts}
 
 Les fonctions de réducteur sont utilisées pour agréger ou regrouper les valeurs affichées dans le graphique.
 
 
-Par exemple, nous pouvons utiliser les fonctions de réducteur pour afficher le nombre de transactions par catégorie, ou afficher les dépenses les plus élevées par catégorie dans les exemples de données ci-dessous.
+Par exemple, les fonctions de réducteur peuvent être utilisées pour afficher le nombre de transactions par catégorie, ou afficher les dépenses les plus élevées par catégorie dans les exemples de données ci-dessous.
 
 ```json
 [{
