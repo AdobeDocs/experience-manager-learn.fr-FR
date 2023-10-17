@@ -1,7 +1,7 @@
 ---
-title: Configuration d’un graphique en courbes pour votre premier document de communication interactive, partie 8
+title: 'Configurer un graphique linéaire pour votre premier document de communication interactive : partie 8'
 seo-title: Configuring line chart for your first interactive communication document
-description: Ce didacticiel en 8 étapes est consacré à la création de votre premier document de communication interactive. Dans cette partie, nous allons ajouter un graphique en courbes au panneau de progression du compte.
+description: Il s’agit de la partie 8 du tutoriel en plusieurs étapes consacré à la création de votre premier document de communication interactive. Dans cette partie, nous allons ajouter un graphique linéaire au panneau de progression du compte.
 seo-description: This is part 8 of multistep tutorial for creating your first interactive communications document. In this part, we will add a Line chart to the account progress panel.
 uuid: 08c3e7af-e3cb-4ee0-bdc1-d112bfa70e40
 feature: Interactive Communication
@@ -16,40 +16,40 @@ role: Developer
 level: Beginner
 exl-id: ba9ce6a2-f6e8-4e84-a23a-f4803879f635
 source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Configuration d’un graphique en courbes pour votre premier document de communication interactive
+# Configurer un graphique linéaire pour votre premier document de communication interactive
 
-Dans cette partie, nous allons ajouter un graphique en courbes au panneau de progression du compte.
+Dans cette partie, nous allons ajouter un graphique linéaire au panneau de progression du compte.
 
-Connectez-vous à AEM Forms et accédez à Adobe Experience Manager > Forms > Forms et documents.
+Connectez-vous à AEM Forms et accédez à Adobe Experience Manager > Forms > Formulaires et documents.
 
-Ouvrez le dossier 401KStatement .
+Ouvrez le dossier 401KStatement.
 
-Ouvrez l’instruction 401KStatement en mode d’édition.
+Ouvrez le dossier 401KStatement en mode édition.
 
-AEM Forms 6.4 a rendu très simple l’affichage de données à l’aide de différents types de graphiques. Nous allons utiliser un graphique en courbes pour afficher les soldes par année.
+Grâce à AEM Forms 6.4, l’affichage de données à l’aide de différents types de graphiques est simple comme bonjour. Nous allons utiliser un graphique linéaire pour afficher les soldes par année.
 
-Appuyez sur le **Progression du compte** zone cible à droite et cliquez sur l’icône &quot;+&quot; pour ouvrir la boîte de dialogue insérer le composant.
+Appuyez sur la zone cible **Progression du compte** à droite et cliquez sur l’icône « + » pour ouvrir la boîte de dialogue Insérer le composant.
 
-Sélectionnez Graphique pour insérer le composant de graphique.
+Sélectionnez Graphique pour insérer le composant éponyme.
 
-Configurez le composant de graphique en fonction des paramètres de la capture d’écran ci-dessous et enregistrez vos paramètres en cliquant sur l’icône représentant une coche bleue.
+Configurez le composant Graphique selon les paramètres de la copie d’écran ci-dessous et enregistrez vos paramètres en cliquant sur l’icône de coche bleue.
 
-Veillez à sélectionner l’élément de modèle de données de formulaire approprié sur les axes x et y.
+Sélectionnez l’élément de modèle de données de formulaire approprié sur les axes X et Y.
 
-**Paramètres de graphique en courbes dans AEM Forms 6.4**
+**Paramètres de graphique linéaire dans AEM Forms 6.4**.
 
 ![linechart64](assets/linechart.png)
 
-**Paramètres de graphique en courbes dans AEM Forms 6.5**
+**Paramètres de graphique linéaire dans AEM Forms 6.5**.
 
 ![linechart64](assets/linechart65.PNG)
 
 ## Étapes suivantes
 
-[Configuration du tableau](./partnine.md)
+[Configurer le tableau](./partnine.md)
