@@ -1,6 +1,6 @@
 ---
-title: Rapport sur les champs de données de formulaire envoyés à l’aide d’Adobe Analytics
-description: Intégration d’AEM Forms CS à Adobe Analytics pour créer des rapports sur les champs de données de formulaire
+title: Créer un rapport sur les champs de données de formulaire envoyés à l’aide d’Adobe Analytics
+description: Intégrer AEM Forms CS à Adobe Analytics pour créer des rapports sur les champs de données de formulaire
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -13,47 +13,47 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
 exl-id: 9982e041-fff7-4be6-91c9-e322d2fd3e01
 source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 # Définir la règle
 
-Dans la propriété Balises, nous avons créé 2 nouvelles [rules](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html) (**Erreur de validation du champ et FormSubmit**).
+Dans la propriété Balises, nous avons créé 2 nouvelles [règles](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html?lang=fr) (**Erreur de validation du champ et Envoi de formulaire**).
 
-![formulaire adaptatif](assets/rules.png)
+![adaptive-form](assets/rules.png)
 
 
 ## Erreur de validation du champ
 
-Le **Erreur de validation du champ** est déclenchée chaque fois qu’une erreur de validation se produit dans le champ de formulaire adaptatif. Par exemple, dans notre formulaire, si le numéro de téléphone ou l’email n’est pas au format attendu, un message d’erreur de validation s’affiche.
+La règle **Erreur de validation du champ** est déclenchée chaque fois qu’une erreur de validation se produit dans le champ du formulaire adaptatif. Par exemple, dans notre formulaire, si le numéro de téléphone ou l’e-mail n’est pas au format attendu, un message d’erreur de validation s’affiche.
 
-La règle d’erreur de validation de champ est configurée en définissant l’événement sur _**Adobe Experience Manager Forms-Error**_ comme illustré dans la capture d’écran
+La règle Erreur de validation du champ est configurée en définissant l’événement sur _**Adobe Experience Manager Forms-Error**_ comme illustré dans la copie d’écran.
 
 
 
-![candidat-state-résidence](assets/field_validation_error_rule.png)
+![applicant-state-residence](assets/field_validation_error_rule.png)
 
-Adobe Analytics - Set Variables est configuré comme suit :
+La définition des variables Adobe Analytics est configurée comme suit :
 
-![action de définition](assets/field_validation_action_rule.png)
+![set action](assets/field_validation_action_rule.png)
 
 ## Règle d’envoi de formulaire
 
-La règle d’envoi de formulaire est déclenchée chaque fois qu’un formulaire adaptatif est envoyé avec succès.
+La règle Envoi de formulaire est déclenchée chaque fois qu’un formulaire adaptatif est envoyé avec succès.
 
-La règle d’envoi de formulaire est configurée à l’aide de la fonction _**Adobe Experience Manager Forms - Envoyer**_ event
+La règle Envoi de formulaire est configurée à l’aide de l’événement _**Adobe Experience Manager Forms - Submit**_.
 
 ![form-submit-rule](assets/form-submit-rule.png)
 
-Dans la règle d’envoi de formulaire, la valeur de l’élément de données _**applicantStateOfRésidence**_ est mappé sur prop5 et la valeur de l’élément de données FormTitle est mappée sur prop8.
+Dans la règle Envoi de formulaire, la valeur de l’élément de données _**ApplicantsStateOfResidence**_ est mappée sur prop5 et celle de l’élément de données FormTitle sur prop8.
 
-Les variables Adobe Analytics - Set sont configurées comme suit.
+La définition des variables Adobe Analytics est configurée comme suit :
 ![form-submit-rule-set-variables](assets/form-submit-set-variable.png)
 
-Lorsque vous êtes prêt à tester votre code de balises,[publier les modifications apportées aux balises ;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html) à l’aide du flux de publication.
+Lorsque vous êtes prêt ou prête à tester votre code de balises, [publiez les modifications apportées aux balises](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/publishing-flow.html?lang=fr) à l’aide du flux de publication.
 
 ## Étapes suivantes
 
