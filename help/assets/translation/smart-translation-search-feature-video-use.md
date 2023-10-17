@@ -1,6 +1,6 @@
 ---
-title: Utilisation de la recherche de traduction dynamique avec AEM Assets
-description: La recherche de traduction intelligente permet la recherche et la découverte multilingue automatiquement dans AEM contenu, Ressources et Pages, prenant en charge plus de 50 langues et réduisant le besoin de traduction manuelle du contenu.
+title: Utiliser la recherche de traduction intelligente avec AEM Assets
+description: La recherche de traduction intelligente permet la recherche et la découverte multilingues automatiques dans le contenu AEM, y compris les ressources et les pages. Elle prend en charge plus de 50 langues et réduit, dès lors, le besoin de traduction manuelle du contenu.
 version: 6.4, 6.5
 feature: Search
 topic: Content Management
@@ -10,34 +10,34 @@ last-substantial-update: 2022-09-03T00:00:00Z
 thumbnail: 21297.jpg
 exl-id: 4f35e3f7-ae29-4f93-bba9-48c60b800238
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '266'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Utilisation de la recherche de traduction dynamique avec AEM Assets{#using-smart-translation-search-with-aem-assets}
+# Utiliser la recherche de traduction intelligente avec AEM Assets{#using-smart-translation-search-with-aem-assets}
 
-La recherche de traduction intelligente permet la recherche et la découverte multilingue automatiquement dans AEM contenu, Ressources et Pages, prenant en charge plus de 50 langues et réduisant le besoin de traduction manuelle du contenu.
+La recherche de traduction intelligente permet la recherche et la découverte multilingues automatiques dans le contenu AEM, y compris les ressources et les pages. Elle prend en charge plus de 50 langues et réduit, dès lors, le besoin de traduction manuelle du contenu.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21297?quality=12&learn=on)
 
-AEM Recherche de traduction intelligente permet aux utilisateurs d’effectuer des recherches de contenu dans AEM en utilisant des termes non anglais, afin de faire correspondre les ressources d’comportant des termes anglais équivalents.
+La recherche de traduction intelligente AEM permet de rechercher le contenu AEM dans une autre langue que celle de Shakespeare, afin de trouver les ressources d’AEM avec les termes anglais correspondants.
 
-La recherche de traduction intelligente est un parfait compliment à l’AEM des balises intelligentes qui sont appliquées aux ressources en anglais.
+La recherche de traduction intelligente est le compagnon idéal des balises intelligentes AEM appliquées aux ressources en anglais.
 
-Cette vidéo suppose [AEM Recherche de traduction intelligente](smart-translation-search-technical-video-setup.md) a été configuré.
+Cette vidéo part du principe que vous avez déjà configuré la [recherche de traduction intelligente AEM](smart-translation-search-technical-video-setup.md).
 
-## Fonctionnement de la recherche de traduction dynamique {#how-smart-translation-search-works}
+## Fonctionnement de la recherche de traduction intelligente {#how-smart-translation-search-works}
 
-![Diagramme de flux de recherche de traduction dynamique](assets/smart-translation-search-flow.png)
+![Diagramme de flux de la recherche de traduction intelligente.](assets/smart-translation-search-flow.png)
 
-1. AEM utilisateur effectue une recherche de texte intégral, fournissant ainsi un terme de recherche localisé (par exemple, le terme espagnol pour &quot;homme&quot;, &quot;hombre&quot;).
-2. La recherche de traduction intelligente, fournie par le lot OSGi de traduction automatique Apache Oak, est engagée et évalue si les termes de recherche fournis peuvent être traduits à l’aide des modules de langue enregistrés.
-3. Tous les termes traduits de l’étape #2 sont collectés et la requête est augmentée en interne afin de les inclure comme termes de recherche. Cet ensemble augmenté de termes de recherche s’ils sont évalués normalement par rapport aux index de recherche AEM qui recherchent des correspondances pertinentes.
-4. Les résultats de la recherche qui correspondent au terme d’origine (&#39;hombre&#39;) ou au terme traduit (&#39;man&#39;) sont collectés et renvoyés à l’utilisateur comme résultats de la recherche.
+1. L’utilisateur ou l’utilisatrice d’AEM effectue une recherche en texte intégral et saisit un terme de recherche localisé (par exemple, le mot espagnol pour « homme », « hombre » (« man » en anglais)).
+2. La recherche de traduction intelligente, fournie par le lot OSGi de traduction automatique Apache Oak, démarre et évalue si les termes de recherche saisis peuvent être traduits à l’aide des modules linguistiques enregistrés.
+3. Tous les termes traduits de l’étape 2 sont collectés et la requête est enrichie en interne afin de les inclure comme termes de recherche. Ce jeu enrichi de termes de recherche est évalué normalement par rapport aux index de recherche d’AEM, ce qui permet de trouver des correspondances pertinentes.
+4. Les résultats de la recherche qui correspondent au terme d’origine (« hombre ») ou au terme traduit (« man ») sont collectés et renvoyés à l’utilisateur ou l’utilisatrice comme résultats de la recherche.
 
 ## Ressources supplémentaires{#additional-resources}
 
-* [Configuration de la recherche de traduction dynamique avec AEM Assets](smart-translation-search-technical-video-setup.md)
-* [Packs de langues Apache Joshua](https://cwiki.apache.org/confluence/display/JOSHUA/Language+Packs)
+* [Configurer la recherche de traduction intelligente avec AEM Assets](smart-translation-search-technical-video-setup.md)
+* [Modules linguistiques Apache Joshua](https://cwiki.apache.org/confluence/display/JOSHUA/Language+Packs)
