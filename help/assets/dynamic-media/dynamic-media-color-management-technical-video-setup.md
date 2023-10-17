@@ -1,6 +1,6 @@
 ---
 title: Explication de la gestion des couleurs avec AEM Dynamic Media
-description: Dans cette vidéo, nous examinons la gestion des couleurs de Dynamic Media et comment elle peut être utilisée pour fournir des fonctionnalités d’aperçu de la correction des couleurs dans pour AEM Assets.
+description: Cette vidéo est consacrée à la gestion des couleurs de Dynamic Media et à ses fonctionnalités de prévisualisation de la correction des couleurs pour AEM Assets.
 feature: Image Profiles, Video Profiles
 version: 6.4, 6.5
 topic: Content Management
@@ -8,27 +8,27 @@ role: Developer
 level: Intermediate
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '319'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 # Explication de la gestion des couleurs avec AEM Dynamic Media{#understanding-color-management-with-aem-dynamic-media}
 
-Dans cette vidéo, nous examinons la gestion des couleurs de Dynamic Media et comment elle peut être utilisée pour fournir des fonctionnalités d’aperçu de la correction des couleurs dans pour AEM Assets.
+Cette vidéo est consacrée à la gestion des couleurs de Dynamic Media et à ses fonctionnalités de prévisualisation de la correction des couleurs pour AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
 
 >[!NOTE]
 >
->[Activer Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) dans AEM pour utiliser cette fonctionnalité.
+>[Activez Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) dans AEM pour utiliser cette fonctionnalité.
 
-Cette fonctionnalité est disponible pour AEM versions 6.1 et 6.2 en tant que Feature Pack.
+Cette fonctionnalité est disponible dans AEM 6.1 et 6.2 en tant que pack de fonctionnalités.
 
-## Modèle XML pour le noeud de configuration de la gestion des couleurs {#xml-template-for-the-color-management-configuration-node}
+## Modèle XML pour le nœud de configuration de la gestion des couleurs {#xml-template-for-the-color-management-configuration-node}
 
-Voici le modèle XML du noeud de configuration de la gestion des couleurs. Ce modèle XML peut être copié dans le projet de développement AEM et configuré avec les configurations appropriées au projet.
+Voici le modèle XML du nœud de configuration de la gestion des couleurs. Ce modèle XML peut être copié dans le projet de développement AEM et doté des configurations de projet appropriées.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -84,7 +84,7 @@ Voici le modèle XML du noeud de configuration de la gestion des couleurs. Ce mo
 />
 ```
 
-### La liste des profils colorimétriques d’Adobe par défaut est répertoriée ci-dessous. {#list-of-default-adobe-color-profiles-are-listed-below}
+### La liste des profils Adobe Color par défaut est répertoriée ci-dessous. {#list-of-default-adobe-color-profiles-are-listed-below}
 
 | Nom | Espace colorimétrique | Description |
 | ------------------- | ---------- | ------------------------------------- |
@@ -96,8 +96,8 @@ Voici le modèle XML du noeud de configuration de la gestion des couleurs. Ce mo
 | CoatedGraCol | CMJN | Coated GRACoL 2006 (ISO 12647-2:2004) |
 | ColorMatchRGB | RVB | RGB ColorMatch |
 | EuropeISOCoated | CMJN | Europe ISO Coated FOGRA27 |
-| EuroscaleCoated | CMJN | Euroscale Coated v2 |
-| EuroscaleUncoated | CMJN | Euroscale Uncoute v2 |
+| EuroscaleCoated | CMJN | Euroscale Coated v2 |
+| EuroscaleUncoated | CMJN | Euroscale Uncoated v2 |
 | JapanColorCoated | CMJN | Japan Color 2001 Coated |
 | JapanColorNewspaper | CMJN | Japan Color 2002 Newspaper |
 | JapanColorUncoated | CMJN | Japan Color 2001 Uncoated |
@@ -123,4 +123,4 @@ Voici le modèle XML du noeud de configuration de la gestion des couleurs. Ce mo
 
 ## Ressources supplémentaires{#additional-resources}
 
-* [Configuration de la gestion des couleurs Dynamic Media](https://helpx.adobe.com/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
+* [Configuration de la gestion des couleurs Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=fr)
