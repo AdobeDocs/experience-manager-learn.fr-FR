@@ -10,7 +10,7 @@ kt: 9442
 thumbnail: 339073.jpg
 exl-id: 62e807b7-b1a4-4344-9b1e-2c626b869e10
 source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1081'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Les éléments suivants sont nécessaires pour effectuer cette configuration rap
    + Un accès d’__administration AEM__ à AEM as a Cloud Service.
    + Un accès de __gestionnaire déploiement de Cloud Manager__ à Cloud Manager.
 + Les outils suivants doivent être installés localement :
-   + [Node.js v18](https://nodejs.org/fr/)
+   + [Node.js v18](https://nodejs.org/fr/)
    + [Git](https://git-scm.com/)
    + Un IDE (par exemple, [Microsoft® Visual Studio Code](https://code.visualstudio.com/)).
 
