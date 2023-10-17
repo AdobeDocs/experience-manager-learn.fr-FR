@@ -1,7 +1,7 @@
 ---
-title: Créer une disposition à l’aide de Forms Designer
+title: Créer une disposition à l’aide de Forms Designer
 seo-title: Create Layout using Forms Designer
-description: Ce didacticiel en 4 parties est consacré à la création de votre premier document de communication interactive pour le canal d’impression. Dans cette partie, nous examinons le fichier de mise en page créé à l’aide d’AEM Forms Designer.
+description: Ceci est la partie 4 du tutoriel en plusieurs étapes consacré à la création de votre premier document de communication interactive pour le canal d’impression. Dans cette partie, nous examinons le fichier de disposition créé à l’aide d’AEM Forms Designer.
 seo-description: This is part 4 of multipart tutorial for creating your first interactive communication document for the print channel.In this part, we look at the layout file created using AEM Forms Designer.
 uuid: 2f014c58-1ae1-40e8-a45d-7ffe9c86f693
 feature: Interactive Communication
@@ -18,19 +18,19 @@ role: Developer
 level: Beginner
 exl-id: 1bda648c-01be-44f1-aa73-3f5e7365d094
 source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '131'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
-# Créer une disposition à l’aide de Forms Designer {#create-layout-using-forms-designer}
+# Créer une disposition à l’aide de Forms Designer {#create-layout-using-forms-designer}
 
-Dans cette partie, nous examinons le fichier de mise en page créé à l’aide d’AEM Forms Designer.
+Dans cette partie, nous examinons le fichier de disposition créé à l’aide d’AEM Forms Designer.
 
-Chaque document du canal d’impression est basé sur un modèle créé à l’aide de l’outil AEM Forms Designer. En règle générale, vous créez des sections ou des zones cible dans votre modèle pour contenir des fragments de document, des images ou des fragments de mise en page. Idéalement, aucun contenu n’est défini pour la mise en page. Cette opération désassocie la mise en page au contenu, ce qui est recommandé.
+Chaque document du canal d’impression est basé sur un modèle créé à l’aide de l’outil AEM Forms Designer. En règle générale, vous créez des sections ou des zones cible dans votre modèle pour contenir des fragments de document, des images ou des fragments de disposition. Idéalement, aucun contenu n’est défini pour la disposition. Cette opération désassocie la disposition du contenu, ce qui est recommandé.
 
-La vidéo suivante présente les sections ou les zones cible définies dans la mise en page utilisée dans ce tutoriel.
+La vidéo suivante souligne les sections ou les zones cible définies dans la disposition utilisée dans ce tutoriel.
 
 >[!VIDEO](https://video.tv.adobe.com/v/37890?quality=12&learn=on)
 
