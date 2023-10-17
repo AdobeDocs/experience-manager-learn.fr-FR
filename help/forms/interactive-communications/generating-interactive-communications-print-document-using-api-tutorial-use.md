@@ -1,7 +1,7 @@
 ---
-title: Génération d’un document de communications interactives pour le canal d’impression à l’aide du mécanisme de dossier de contrôle
+title: Génération d’un document de communications interactives pour le canal d’impression à l’aide d’un mécanisme de dossier de contrôle
 seo-title: Generating Interactive Communications Document for print channel using watch folder mechanism
-description: Utilisation du dossier de contrôle pour générer des documents du canal d’impression
+description: Utilisez un dossier de contrôle pour générer des documents du canal d’impression.
 seo-description: Use watched folder to generate print channel documents
 feature: Interactive Communication
 topics: development
@@ -15,15 +15,15 @@ level: Intermediate
 exl-id: f5ab4801-cde5-426d-bfe4-ce0a985e25e8
 last-substantial-update: 2019-07-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Génération d’un document de communications interactives pour le canal d’impression à l’aide du mécanisme de dossier de contrôle
+# Génération d’un document de communications interactives pour le canal d’impression à l’aide d’un mécanisme de dossier de contrôle
 
-Après avoir conçu et testé votre document de canal d’impression, vous devez généralement générer le document en effectuant un appel REST ou en générant des documents d’impression à l’aide du mécanisme du dossier de contrôle.
+Après avoir conçu et testé votre document de canal d’impression, vous devez généralement générer le document en effectuant un appel REST ou en générant des documents d’impression à l’aide du mécanisme de dossier de contrôle.
 
 Cet article explique le cas d’utilisation de la génération de documents de canal d’impression à l’aide du mécanisme de dossier de contrôle.
 
@@ -43,23 +43,23 @@ Le fichier déposé dans le dossier de contrôle possède la structure suivante.
 
 &lt;/accountnumbers>
 
-La liste de code ci-dessous effectue les opérations suivantes :
+La liste de code ci-dessous effectue les opérations suivantes :
 
-Ligne 1 - Chemin d’accès à InteractiveCommunicationsDocument
+Ligne 1 : chemin d’accès au document de communications interactives
 
-Lignes 15 à 20 : Obtenir la liste des numéros de compte du document XML déposé dans le dossier de contrôle
+Lignes 15 à 20 : obtenir la liste des numéros de compte à partir du document XML déposé dans le dossier de contrôle
 
-Lignes 24 à 25 : Obtenez les canaux PrintChannelService et Print Channel associés au document.
+Lignes 24 à 25 : obtenir le service de canal d’impression et le canal d’impression associés au document.
 
-Ligne 30 : Transmettez le numéro de compte comme élément clé au modèle de données de formulaire.
+Ligne 30 : transmettre le numéro de compte comme élément clé au modèle de données de formulaire.
 
-Lignes 32 à 36 : Définissez les Options de données du document à générer.
+Lignes 32 à 36 : définir les Options de données du document à générer.
 
-Ligne 38 : Rendre le document.
+Ligne 38 : effectuer le rendu du document.
 
-Lignes 39 à 40 - Enregistre le document généré dans le système de fichiers.
+Lignes 39 à 40 : enregistrer le document généré dans le système de fichiers.
 
-Le point de terminaison REST du modèle de données de formulaire attend un identifiant comme paramètre d’entrée. cet identifiant est mappé à un attribut de requête appelé numéro de compte, comme illustré dans la capture d’écran ci-dessous.
+Le point d’entrée REST du modèle de données de formulaire attend un identifiant comme paramètre d’entrée. Cet identifiant est mappé à un attribut de requête appelé numéro de compte, comme illustré dans la copie d’écran ci-dessous.
 
 ![requestatattribute](assets/requestattributeprintchannel.gif)
 
@@ -111,26 +111,26 @@ resourceResolverHelper.callWith(resourceResolver, {call: function()
 ```
 
 
-**Pour le tester sur votre système local, suivez les instructions suivantes :**
+**Pour le tester sur votre système local, suivez les instructions suivantes :**
 
-* Configurez Tomcat comme décrit ici [article.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat possède le fichier war qui génère les données d&#39;exemple.
-* Configuration du service alias utilisateur système comme décrit dans cette section [article](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
-Assurez-vous que cet utilisateur système dispose des autorisations de lecture sur le noeud suivant. Pour accorder les autorisations de connexion à [administrateur utilisateur](https://localhost:4502/useradmin) et recherchez &quot;data&quot; de l’utilisateur système et attribuez les autorisations de lecture sur le noeud suivant en accédant à l’onglet autorisations
+* Configurez Tomcat comme décrit dans cet [article.](/help/forms/ic-print-channel-tutorial/set-up-tomcat.md) Tomcat possède le fichier war qui génère les données d’exemple.
+* Configurez le service, c’est-à-dire la personne utilisatrice système, comme décrit dans cet [article](/help/forms/adaptive-forms/service-user-tutorial-develop.md).
+Assurez-vous que cette personne utilisatrice système dispose des autorisations de lecture sur le nœud suivant. Pour accorder les autorisations, connectez-vous à la [personne en charge de l’administration](https://localhost:4502/useradmin) et recherchez les « données » de la personne utilisatrice système et attribuez les autorisations de lecture sur le nœud suivant en accédant à l’onglet Autorisations.
    * /content/dam/formsanddocuments
    * /content/dam/formsanddocuments-fdm
    * /content/forms/af
-* Importez le ou les packages suivants dans AEM à l’aide du gestionnaire de packages. Ce package contient les éléments suivants :
+* Importez le ou les packages suivants dans AEM à l’aide du gestionnaire de modules. Ce package contient les éléments suivants :
 
 
 * [Exemple de document de communications interactives](assets/retirementstatementprint.zip)
-* [Watched Folder Script](assets/printchanneldocumentusingwatchedfolder.zip)
+* [Script de dossier de contrôle](assets/printchanneldocumentusingwatchedfolder.zip)
 * [Configuration de la source de données](assets/datasource.zip)
 
-* Ouvrez le fichier /etc/fd/watchfolder/scripts/PrintPDF.ecma . Assurez-vous que le chemin d’accès à interactiveCommunicationsDocument dans la ligne 1 pointe vers le document correct que vous souhaitez imprimer.
+* Ouvrez le fichier /etc/fd/watchfolder/scripts/PrintPDF.ecma. Assurez-vous que le chemin d’accès au document de communications interactives dans la ligne 1 pointe vers le document correct que vous souhaitez imprimer.
 
-* Modifiez saveLocation en fonction de vos préférences sur la ligne 2.
+* Modifiez l’emplacement d’enregistrement en fonction de vos préférences sur la ligne 2.
 
-* Créez le fichier accountnuméros.xml avec le contenu suivant
+* Créez un fichier accountnumbers.xml avec le contenu suivant.
 
 ```xml
 <accountnumbers>
@@ -144,12 +144,12 @@ Assurez-vous que cet utilisateur système dispose des autorisations de lecture s
 ```
 
 
-* Déposez le fichier accountnuméros.xml dans le dossier C:\RenderPrintChannel\input folder.
+* Déposez le fichier accountnuméros.xml dans le dossier C:\RenderPrintChannel\input.
 
-* Les fichiers de PDF générés sont écrits dans saveLocation comme spécifié dans le script ecma.
+* Les fichiers PDF générés sont écrits dans l’emplacement d’enregistrement comme spécifié dans le script ecma.
 
 >[!NOTE]
 >
 >Si vous prévoyez de l’utiliser sur un système d’exploitation autre que Windows, accédez à
 >
->/etc/fd/watchfolder /config/PrintChannelDocument et modifiez folderPath en fonction de vos préférences.
+>/etc/fd/watchfolder /config/PrintChannelDocument et modifiez le chemin du dossier en fonction de vos préférences.
