@@ -1,6 +1,6 @@
 ---
-title: Création d’un jeton Web JSON (JWT)
-description: Créez un jeton Web JSON (JWT) qui peut être échangé avec les API Adobe IMS pour un jeton d’accès AEM.
+title: Créer un jeton web JSON (JWT)
+description: Créez un jeton web JSON (JWT) qui peut être échangé avec les API Adobe IMS contre un jeton d’accès AEM.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,18 +10,18 @@ topic: Development
 kt: 9980
 exl-id: 0e3e186b-9fbe-40ad-a6cc-bdbf58b23009
 source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '114'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Création d’un jeton Web JSON (JWT)
+# Créer un jeton web JSON (JWT)
 
-Les jetons web JSON sont une méthode ouverte, standard RFC 7519, permettant de représenter en toute sécurité les revendications entre deux parties. Les bibliothèques JWT.io ont été utilisées dans cet exemple pour générer le JWT.
-Les informations d’identification de service que vous avez téléchargées à l’étape précédente contiennent la clé privée au format PKCS#1. Pour extraire la clé privée de cette chaîne, nous avons utilisé [BouncyCastle](https://www.bouncycastle.org/) bibliothèques. Les bibliothèques de cryptage qui font partie de java ne prennent pas en charge le format PKCS#1.
+Les jetons web JSON constituent une méthode ouverte, conforme à la norme RFC 7519, permettant de représenter en toute sécurité les demandes entre deux parties. Les bibliothèques JWT.io ont été utilisées dans cet exemple pour générer le JWT.
+Les informations d’identification de service que vous avez téléchargées à l’étape précédente contiennent la clé privée au format PKCS#1. Pour extraire la clé privée de cette chaîne, nous avons utilisé les bilbiothèques [BouncyCastle](https://www.bouncycastle.org/). Les bibliothèques de cryptage qui font partie de Java ne prennent pas en charge le format PKCS#1.
 
-Le code suivant a été utilisé pour générer le JWT :
+Le code suivant a été utilisé pour générer le JWT :
 
 ```java
 public String getJWTToken()
