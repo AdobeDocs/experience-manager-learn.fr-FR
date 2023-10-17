@@ -1,36 +1,33 @@
 ---
 title: Déployer les ressources localement
-description: Déployez les ressources du tutoriel sur votre instance d’AEM locale.
+description: Déployez les ressources du tutoriel sur votre instance AEM locale.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2023-01-04T00:00:00Z
-source-git-commit: ddef90067d3ae4a3c6a705b5e109e474bab34f6d
-workflow-type: tm+mt
+exl-id: d23b51ba-1efb-4505-b5b3-44a02177e467
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '158'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 # Déployer sur votre système
 
-Suivez les étapes répertoriées ci-dessous pour que ce cas pratique fonctionne sur votre instance AEM locale.
+Suivez la procédure ci-dessous pour appliquer ce cas d’utilisation sur votre instance AEM locale.
 
-* [Déploiement du bundle DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip) contenu dans le fichier zip.
+* [Déployez le lot DevelopingWithServiceUser](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=fr) de l’archive zip.
 
-* Ajoutez l’entrée suivante dans le service Apache Sling Service User Mapper **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** en utilisant la variable [configMgr](http://localhost:4502/system/console/configMgr).
+* Ajoutez l’entrée suivante dans le service de mappage utilisateur de service Apache Sling **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service** à l’aide du [configMgr](http://localhost:4502/system/console/configMgr).
 
-* [Déployer le lot de newsletters](assets/Newsletters.core-1.0.0-SNAPSHOT.jar). Ce lot contient le code permettant de répertorier le contenu du dossier et d’assembler la ou les newsletter sélectionnées.
+* [Déployez le lot newsletters](assets/Newsletters.core-1.0.0-SNAPSHOT.jar). Il contient le code permettant de répertorier le contenu du dossier et d’assembler la ou les newsletters sélectionnées.
 
-* [Importez le package à l’aide de Package Manager](assets/newsletter.zip). Ce package contient la bibliothèque cliente et des exemples de fichiers pdf pour tester la solution.
+* [Importez le package à l’aide du gestionnaire de packages](assets/newsletter.zip). Ce package contient la bibliothèque cliente et des exemples de fichiers pdf pour tester la solution.
 
-* [Importation de l’exemple de formulaire adaptatif](assets/sample-adaptive-form.zip). Ce formulaire répertorie les newsletters qui peuvent être sélectionnées.
+* [Importez l’exemple de formulaire adaptatif](assets/sample-adaptive-form.zip). Ce formulaire répertorie les newsletters qui peuvent être sélectionnées.
 
-* [Prévisualiser le formulaire](http://localhost:4502/content/dam/formsanddocuments/downloadarchivednewsletters/jcr:content?wcmmode=disabled).
-Sélectionnez deux newsletters à télécharger. Les newsletters sélectionnées seront combinées dans un pdf et vous seront renvoyées.
-
-
-
-
+* [Prévisualisez le formulaire](http://localhost:4502/content/dam/formsanddocuments/downloadarchivednewsletters/jcr:content?wcmmode=disabled).
+Sélectionnez deux newsletters à télécharger. Les newsletters sélectionnées seront combinées dans un seul PDF et vous seront renvoyées.
