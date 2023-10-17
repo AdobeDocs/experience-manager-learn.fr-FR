@@ -1,6 +1,6 @@
 ---
-title: Utilisation du chemin de chargement des éléments pour remplir la liste déroulante
-description: Configuration et remplissage d’une liste déroulante pour lire les valeurs d’un noeud crx
+title: Utiliser le chemin de chargement des éléments pour remplir la liste déroulante
+description: Configurer et remplir une liste déroulante pour lire les valeurs d’un nœud CRX
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 10961
@@ -9,25 +9,26 @@ role: Developer
 level: Beginner
 last-substantial-update: 2022-09-20T00:00:00Z
 thumbnail: item-load.jpg
-source-git-commit: e1c16ff347f5f398c7bc47233049427eeffa2aab
-workflow-type: tm+mt
+exl-id: 89c486c8-95c3-4cd4-bf8e-a1b3558f17d6
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '180'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Propriété de chargement d’élément dans AEM Forms
+# Propriété de chargement des éléments dans AEM Forms
 
-Configurez et renseignez la liste déroulante à l’aide de la propriété item load path .
-Le champ Chemin de chargement de l’élément permet à un auteur de fournir une URL à partir de laquelle il charge les options disponibles dans une liste déroulante.
-Pour créer un tel noeud dans crx, procédez comme suit :
-* Connexion à crx
-* Créez un noeud appelé assets (vous pouvez nommer ce noeud selon vos besoins) de type sling:folder sous content.
-* Enregistrer
-* Cliquez sur le noeud de ressources nouvellement créé et définissez ses propriétés comme illustré ci-dessous.
+Configurez et renseignez la liste déroulante à l’aide de la propriété du chemin de chargement des éléments.
+Le champ Chemin de chargement des éléments permet à une personne créatrice de fournir une URL à partir de laquelle elle charge les options disponibles dans une liste déroulante.
+Pour créer un tel nœud dans CRX, procédez comme suit :
+* connectez-vous à CRX ;
+* créez un nœud appelé assets (vous pouvez nommer ce nœud selon vos besoins) de type sling:folder sous content ;
+* enregistrez ;
+* cliquez sur le nœud de ressources nouvellement créé et définissez ses propriétés comme illustré ci-dessous.
 * Vous devez créer une propriété de type Chaîne appelée assettypes (vous pouvez la nommer selon vos besoins). Assurez-vous que la propriété est composée de plusieurs valeurs. Indiquez les valeurs que vous souhaitez et enregistrez.
-   ![item-load-path](assets/item-load-path-crx.png)
+  ![item-load-path](assets/item-load-path-crx.png)
 
-Pour charger ces valeurs dans votre liste déroulante, indiquez le chemin suivant dans la propriété de chemin de chargement d’élément .  **/content/assets/assettypes**
+Pour charger ces valeurs dans votre liste déroulante, indiquez le chemin suivant dans la propriété du chemin de chargement d’éléments **/content/assets/assettypes**.
 
-L’exemple de package peut être [téléchargé ici](assets/item-load-path-package.zip)
+L’exemple de package peut être [téléchargé ici](assets/item-load-path-package.zip).
