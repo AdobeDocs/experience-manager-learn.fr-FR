@@ -1,44 +1,44 @@
 ---
-title: Préremplissage d’un formulaire adaptatif à l’aide d’un profil ACS
-description: Préremplissage de Forms adaptatif à l’aide d’un profil ACS
+title: Préremplir un formulaire adaptatif à l’aide d’un profil ACS
+description: Préremplir des formulaires adaptatifs à l’aide d’un profil ACS
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
 badgeIntegration: label="Intégration" type="positive"
-badgeVersions: label="AEM Forms 6.5" before-title="false"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 502f4bdf-d4af-409f-a611-62b7a1a6065a
 source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Préremplissage d’un formulaire adaptatif à l’aide d’un profil ACS {#prefilling-adaptive-form-using-acs-profile}
+# Préremplir un formulaire adaptatif à l’aide d’un profil ACS {#prefilling-adaptive-form-using-acs-profile}
 
-Dans cette partie, nous pré-remplissons le formulaire adaptatif avec les informations de profil extraites d’ACS. AEM Forms dispose de cette puissante fonctionnalité pour préremplir les formulaires adaptatifs.
+Dans cette partie, nous préremplissons un formulaire adaptatif avec les informations de profil extraites d’ACS. AEM Forms dispose de cette puissante fonctionnalité permettant de préremplir les formulaires adaptatifs.
 
-Pour en savoir plus sur le préremplissage de formulaires adaptatifs, lisez cette section [tutoriel](https://helpx.adobe.com/experience-manager/kt/forms/using/prefill-service-adaptive-forms-article-use.html).
+Pour en savoir plus sur le préremplissage de formulaires adaptatifs, lisez ce [tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html?lang=fr).
 
-Pour préremplir le formulaire adaptatif en récupérant des données d’ACS, nous supposons qu’il existe un profil dans ACS qui a le même adresse électronique que l’utilisateur AEM connecté. Par exemple, si l’ID d’adresse électronique de la personne connectée à AEM est csimms@adobe.com, nous prévoyons de trouver un profil dans ACS dont l’adresse électronique est csimms@adobe.com.
+Pour préremplir le formulaire adaptatif en récupérant des données d’ACS, nous supposons qu’il existe un profil dans ACS qui a la même adresse e-mail que le profil d’utilisateur AEM connecté. Par exemple, si l’ID d’adresse e-mail de la personne connectée à AEM est csimms@adobe.com, nous nous attendons à trouver un profil dans ACS dont l’adresse e-mail est csimms@adobe.com.
 
-Les étapes suivantes sont nécessaires pour récupérer les informations de profil d’ACS à l’aide de l’API REST
+Les étapes suivantes sont nécessaires pour récupérer les informations de profil d’ACS à l’aide de l’API REST.
 
-* Génération du JWT
-* Exchange JWT pour le jeton d’accès
-* Effectuer un appel REST à ACS et récupérer un profil par courrier électronique
-* Créer un document XML avec les informations de profil
-* Retour InputStream du document XML utilisé par AEM Forms
+* Générer le JWT
+* Exchanger un jeton JWT contre un jeton d’accès
+* Effectuer un appel REST à ACS et récupérer un profil par adresse e-mail
+* Créer un document XML avec les informations du profil
+* Renvoyer le flux d’entrée du document XML utilisé par AEM Forms
 
 ![prefillservice](assets/prefillserviceaf.gif)
 
-Association du service de préremplissage au formulaire adaptatif
+Associer le service de préremplissage au formulaire adaptatif
 
 Voici le code permettant de récupérer et de renvoyer des informations de profil d’ACS.
 
-Dans la ligne 68, nous récupérons l’ID d’adresse électronique de l’utilisateur AEM. Les détails du profil sont récupérés en effectuant un appel REST vers Adobe Campaign Standard. À partir des détails du profil récupéré, le document XML est construit d’une manière comprise par AEM Forms. Le flux d’entrée de ce document est renvoyé pour consommation par AEM Forms.
+Dans la ligne 68, nous récupérons l’ID d’adresse e-mail du profil d’utilisateur AEM. Les détails du profil sont récupérés en effectuant un appel REST à Adobe Campaign Standard. À partir des détails du profil récupérés, le document XML est construit d’une manière comprise par AEM Forms. Le flux d’entrée de ce document est renvoyé pour consommation par AEM Forms.
 
 ```java
 package aemforms.campaign.core;
@@ -230,14 +230,14 @@ return "Pre Fill Forms Using Campaign Profile";
 }
 ```
 
-Pour que cela fonctionne sur votre système, suivez les instructions suivantes :
+Pour que cela fonctionne sur votre système, suivez les instructions suivantes :
 
-* [Assurez-vous d’avoir suivi les étapes décrites ici](aem-forms-with-campaign-standard-getting-started-tutorial.md)
-* [Importer un exemple de formulaire adaptatif dans AEM à l’aide du gestionnaire de modules](assets/pre-fill-af-from-campaign.zip)
-* Assurez-vous de vous connecter à AEM avec un utilisateur dont l’ID d’adresse électronique est partagé par un profil dans Adobe Campaign. Par exemple, si l’ID d’adresse électronique de l’utilisateur AEM est johndoe@adobe.com, vous devez disposer dans ACS d’un profil dont l’adresse électronique est johndoe@adobe.com.
-* [Aperçu du formulaire](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
+* [Veillez à suivre les étapes décrites ici.](aem-forms-with-campaign-standard-getting-started-tutorial.md)
+* [Importer un exemple de formulaire adaptatif dans AEM à l’aide du gestionnaire de packages](assets/pre-fill-af-from-campaign.zip)
+* Assurez-vous de vous connecter à AEM avec un profil utilisateur dont l’ID d’adresse e-mail est partagé par un profil dans Adobe Campaign. Par exemple, si l’ID d’adresse e-mail du profil utilisateur AEM est johndoe@adobe.com, vous devez disposer d’un profil dans ACS dont l’adresse e-mail est johndoe@adobe.com.
+* [Prévisualisation du formulaire](http://localhost:4502/content/dam/formsanddocuments/prefillfromcampaign/jcr:content?wcmmode=disabled).
 
 ## Étapes suivantes
 
-[Création d’un profil Adobe Campaign à l’aide du modèle de données de formulaire](./partfour.md)
+[Créer un profil Adobe Campaign à l’aide du modèle de données de formulaire](./partfour.md)
 
