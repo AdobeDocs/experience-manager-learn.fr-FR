@@ -1,6 +1,6 @@
 ---
-title: Utilisation du tableau de bord de présentation du système dans AEM
-description: Dans les versions précédentes d’AEM, les administrateurs devaient consulter plusieurs emplacements afin d’obtenir une vue d’ensemble de l’instance AEM. L’ aperçu du système vise à résoudre ce problème en fournissant une vue de haut niveau de la configuration, du matériel et de l’intégrité de l’instance AEM, le tout à partir d’un seul tableau de bord.
+title: Utiliser le tableau de bord de présentation du système dans AEM
+description: Dans les versions précédentes d’AEM, les administrateurs et administratrices devaient consulter plusieurs emplacements afin d’avoir une vue d’ensemble de l’instance AEM. La vue d’ensemble du système vise à résoudre ce problème en offrant une vue détaillée de la configuration, du matériel et de l’intégrité de l’instance AEM, le tout à partir d’un seul tableau de bord.
 version: 6.4, 6.5
 topics: administration, operations, monitoring
 feature: Operations
@@ -13,24 +13,24 @@ role: Admin
 level: Beginner
 exl-id: af8f499c-4955-44b5-8f21-085263ca31a3
 source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '142'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Utiliser le tableau de bord de présentation du système
+# Utiliser le tableau de bord de vue d’ensemble du système
 
-Adobe Experience Manager (AEM) [!UICONTROL Présentation du système] fournit une vue de haut niveau de la configuration, du matériel et de l’intégrité de l’instance AEM, le tout à partir d’un seul tableau de bord.
+La [!UICONTROL vue d’ensemble du système] d’Adobe Experience Manager (AEM) offre une vue détaillée de la configuration, du matériel et de l’intégrité de l’instance AEM, le tout à partir d’un seul tableau de bord.
 
 >[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
 
-1. L’ aperçu du système est accessible à partir de : **AEM** > **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Présentation du système]**
+1. La vue d’ensemble du système est accessible à partir de : **Démarrage d’AEM** > **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Vue d’ensemble du système]**.
 
    Directement à **`<server-host>/libs/granite/operations/content/systemoverview.html`**
 
-1. Les informations de la variable [!UICONTROL Présentation du système] peut être exporté en cliquant sur le [!UICONTROL Télécharger] bouton . Les informations sont également exposées au travers des éléments suivants : [!DNL REST] endpoint :
-1. Vous trouverez ci-dessous un exemple de sortie du fichier JSON qui est exporté à partir du [!UICONTROL Présentation du système]:
+1. Les informations de la [!UICONTROL vue d’ensemble du système] peuvent être exportées en cliquant sur le bouton [!UICONTROL Télécharger]. Les informations sont également exposées via le point d’entrée [!DNL REST] suivant :
+1. Vous trouverez ci-dessous un exemple de sortie du fichier JSON qui est exporté à partir de la [!UICONTROL vue d’ensemble du système] :
 
    ```json
    {
