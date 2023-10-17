@@ -1,6 +1,6 @@
 ---
-title: Exécution de tests de chargement à partir de l’interface utilisateur à l’aide d’exemples OOTB FormsIVS et OutputIVS
-description: Configuration de tests de chargement à l’aide de FormsIVS et OutputIVS
+title: Exécuter des tests de chargement à partir de l’interface utilisateur à l’aide d’exemples prêts à l’emploi FormsIVS et OutputIVS
+description: Configurer des tests de chargement à l’aide de FormsIVS et OutputIVS
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -10,13 +10,13 @@ topic: Development
 index: y
 exl-id: caf413ee-a124-4629-ae02-177f4deff4e6
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Exécution de tests de chargement à l’aide de FormsIVS et OutputIVS
+# Exécuter des tests de chargement à l’aide de FormsIVS et OutputIVS
 
 *Cette vidéo décrit les étapes à suivre pour exécuter des tests de chargement à partir de l’interface utilisateur à l’aide des exemples FormsIVS et OutputIVS.*
 
