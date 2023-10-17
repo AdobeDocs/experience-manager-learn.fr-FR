@@ -1,7 +1,7 @@
 ---
-title: Ajout de contenu de texte et d’image au document du canal d’impression
+title: Ajouter du contenu textuel et des images au document du canal d’impression
 seo-title: Adding text and image content to print channel document
-description: Ce tutoriel en plusieurs étapes fait partie 7 du premier document de communication interactive. Dans cette partie, nous allons ajouter des images et du contenu texte aux zones cible définies dans la mise en page (xdp).
+description: Passons au chapitre 7 du tutoriel consacré à la création de votre premier document de communication interactive. Nous allons à présent ajouter des images et du contenu textuel aux zones cibles définies dans la disposition (xdp).
 seo-description: This is part 7 of a multi-step tutorial for creating your first interactive communications document. In this part, we will add images and text content to the target areas defined in the layout(xdp).
 uuid: f20d6974-6faf-4b90-a7ff-8aa8a620fcaa
 feature: Interactive Communication
@@ -18,26 +18,26 @@ role: Developer
 level: Beginner
 exl-id: 49080c16-617f-4840-8bb4-7b080fa291c4
 source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '159'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Ajout de contenu de texte et d’image au document du canal d’impression
+# Ajouter du contenu textuel et des images au document du canal d’impression
 
-Dans cette partie, nous allons ajouter des images et du contenu texte aux zones cible définies dans la mise en page (xdp).
+Nous allons à présent ajouter des images et du contenu textuel aux zones cibles définies dans la disposition (xdp).
 
-Maintenant que vous avez créé votre premier fragment de document qui contiendra le nom et l’adresse du destinataire, nous devrons ajouter le fragment de document au document du canal d’impression.
+Maintenant que vous avez créé votre premier fragment de document, qui contiendra le nom et l’adresse de la personne destinataire, nous devons ajouter le fragment de document au document du canal d’impression.
 
-Vous pouvez ajouter du contenu de différents types tels que Fragments de document, Images, Fragments de mise en page, etc. au document du canal d’impression.
+Vous pouvez ajouter différents type de contenu, comme des fragments de document, des images, des fragments de disposition, etc. au document du canal d’impression.
 
-Pour ajouter du contenu au document du canal d’impression, suivez la vidéo ci-dessous.
+Regardez la vidéo ci-dessous pour ajouter du contenu au document du canal d’impression.
 
-La vidéo vous guide tout au long des étapes nécessaires à l’ajout de contenu aux zones cible appropriées dans le document du canal d’impression.
+Suivez les étapes décrites dans la vidéo pour ajouter du contenu aux zones cibles appropriées dans le document du canal d’impression.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22379?quality=12&learn=on)
 
 ## Étapes suivantes
 
-[Configuration du graphique en courbes](./configuring-line-chart.md)
+[Configurer le graphique linéaire](./configuring-line-chart.md)
