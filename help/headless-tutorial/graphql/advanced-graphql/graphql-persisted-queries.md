@@ -22,7 +22,7 @@ Dans le chapitre précédent, vous avez exploré certaines requêtes GraphQL ava
 
 ## Prérequis {#prerequisites}
 
-Ce document fait partie d’un tutoriel en plusieurs parties. Veuillez vous assurer que le [chapitre précédent](explore-graphql-api.md) a été complété avant de passer à ce chapitre.
+Ce document fait partie d’un tutoriel en plusieurs parties. Assurez-vous que le [chapitre précédent](explore-graphql-api.md) est terminé avant de passer à ce chapitre.
 
 ## Objectifs {#objectives}
 
