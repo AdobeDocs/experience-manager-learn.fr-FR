@@ -10,17 +10,17 @@ role: Developer
 level: Intermediate
 exl-id: 3c148b30-2c7d-428d-9a3c-f3067ca3a239
 source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '91'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Création d’une bibliothèque cliente
+# Créer une bibliothèque cliente
 
-Créez une bibliothèque cliente personnalisée, clientlib pour abréger, pour extraire les paramètres d’URL et transmettre ces paramètres dans l’appel de GET. L’appel GET est effectué vers un servlet monté sur /bin/getnextformtosign qui renvoie l’URL du formulaire suivant pour se connecter au package.
+Créez une bibliothèque cliente personnalisée, clientlib en abrégé, pour extraire les paramètres d’URL et transmettre ces paramètres dans l’appel GET. L’appel GET est effectué vers un servlet monté sur /bin/getnextformtosign qui renvoie l’URL du formulaire suivant pour se connecter au package.
 
-Voici le code utilisé dans la fonction JavaScript clientlib .
+Voici le code utilisé dans la fonction JavaScript de la clientlib.
 
 
 ```java
@@ -74,7 +74,7 @@ $(document).ready(function()
 
 ## Ressources
 
-[La bibliothèque cliente peut être téléchargée ici.](assets/get-next-form-client-lib.zip)
+[La clientlib peut être téléchargée ici.](assets/get-next-form-client-lib.zip)
 
 ## Étapes suivantes
 
