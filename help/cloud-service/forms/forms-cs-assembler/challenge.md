@@ -1,6 +1,6 @@
 ---
-title: Testez votre compréhension de Forms assember
-description: Effectuez les exercices
+title: Tester votre compréhension de Forms Assembler
+description: Effectuer les exercices
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,16 +10,16 @@ topic: Development
 kt: 9980
 exl-id: 6bd47a37-5a4e-47a9-9be7-782f611d8f13
 source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '31'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Exercices
 
-## Assemblage de fichiers de PDF
+## Assembler des fichiers PDF
 
-Modifiez le `assemble2pdfs.ddx` pour assembler 3 fichiers PDF.
+Modifiez le fichier `assemble2pdfs.ddx` pour assembler trois fichiers PDF.
 
-Vous allez placer le troisième pdf sous le dossier resources/pdffiles .
+Vous allez placer le troisième PDF sous le dossier resources/pdffiles.
