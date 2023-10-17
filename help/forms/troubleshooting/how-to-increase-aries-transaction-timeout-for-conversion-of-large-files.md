@@ -1,6 +1,6 @@
 ---
-title: Comment augmenter "aries.transaction.timeout" pour résoudre les problèmes liés à la conversion de fichiers volumineux
-description: Procédure d’augmentation de "aries.transaction.timeout" pour la conversion de fichiers volumineux
+title: Comment augmenter « aries.transaction.timeout » pour résoudre les problèmes liés à la conversion de fichiers volumineux
+description: Procédure pour augmenter « aries.transaction.timeout » pour la conversion de fichiers volumineux
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -10,14 +10,14 @@ topic: Administration
 index: y
 exl-id: acb3a3b4-e596-48d8-9737-63fc5b765beb
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '56'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Comment augmenter &quot;aries.transaction.timeout&quot; pour résoudre les problèmes liés à la conversion de fichiers volumineux
+# Comment augmenter « aries.transaction.timeout » pour résoudre les problèmes liés à la conversion de fichiers volumineux
 
-*Cette vidéo passe en revue le processus d’augmentation de &quot;aries.transaction.timeout&quot; pour résoudre les problèmes liés à la conversion des fichiers volumineux.*
+*Cette vidéo passe en revue le processus d’augmentation de « aries.transaction.timeout » pour résoudre les problèmes liés à la conversion des fichiers volumineux.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335502?quality=12&learn=on)
