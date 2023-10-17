@@ -1,6 +1,6 @@
 ---
-title: Développement de projets dans AEM
-description: Tutoriel de développement illustrant comment développer pour AEM Projets.  Dans ce tutoriel, nous allons créer un modèle de projet personnalisé qui pourra être utilisé pour créer des projets dans AEM afin de gérer les processus et les tâches de création de contenu.
+title: Développer des projets dans AEM
+description: Tutoriel de développement expliquant comment développer des projets AEM.  Dans ce tutoriel, nous allons créer un modèle de projet personnalisé qui pourra être utilisé pour créer des projets dans AEM afin de gérer les workflows et les tâches de création de contenu.
 version: 6.4, 6.5
 feature: Projects, Workflow
 topics: collaboration, development, governance
@@ -12,44 +12,44 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 source-git-commit: 481b8877e252b885da307fcf4d96f8a50f026fa6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4571'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Développement de projets dans AEM
+# Développer des projets dans AEM
 
-Il s’agit d’un tutoriel de développement qui explique comment développer pour [!DNL AEM Projects].  Dans ce tutoriel, nous allons créer un modèle de projet personnalisé qui pourra être utilisé pour créer des projets dans AEM afin de gérer les processus et les tâches de création de contenu.
+Ce tutoriel de développement explique comment développer des [!DNL AEM Projects].  Dans ce tutoriel, nous allons créer un modèle de projet personnalisé qui pourra être utilisé pour créer des projets dans AEM afin de gérer les workflows et les tâches de création de contenu.
 
 >[!VIDEO](https://video.tv.adobe.com/v/16904?quality=12&learn=on)
 
-*Cette vidéo présente une brève démonstration du processus terminé créé dans le tutoriel ci-dessous.*
+*Cette vidéo présente une brève démonstration du workflow terminé créé dans le tutoriel ci-dessous.*
 
 ## Présentation {#introduction}
 
-[[!DNL AEM Projects]](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html) est une fonctionnalité d’AEM conçue pour faciliter la gestion et le regroupement de tous les workflows et tâches associés à la création de contenu dans le cadre d’une mise en oeuvre d’AEM Sites ou d’Assets.
+[[!DNL AEM Projects]](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects.html?lang=fr) est une fonctionnalité d’AEM conçue pour faciliter la gestion et le regroupement de tous les workflows et tâches associés à la création de contenu dans le cadre d’une mise en œuvre d’AEM Sites ou Assets.
 
-AEM Projets est fourni avec plusieurs [Modèles de projet prêts à l’emploi](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTemplates). Lors de la création d’un projet, les auteurs peuvent choisir parmi ces modèles disponibles. Les mises en oeuvre d’AEM volumineuses avec des besoins commerciaux uniques voudront créer des modèles de projet personnalisés, adaptés à leurs besoins. En créant un modèle de projet personnalisé, les développeurs peuvent configurer le tableau de bord du projet, se connecter aux workflows personnalisés et créer des rôles professionnels supplémentaires pour un projet. Nous allons examiner la structure d’un modèle de projet et en créer un exemple.
+Les projets AEM sont fournis avec plusieurs [modèles de projet prêts à l’emploi](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects.html?lang=fr#ProjectTemplates). Lors de la création d’un projet, les créateurs et créatrices peuvent choisir parmi ces modèles disponibles. Les mises en œuvre d’AEM volumineuses avec des besoins commerciaux uniques voudront créer des modèles de projet personnalisés et adaptés à leurs besoins. En créant un modèle de projet personnalisé, les développeurs et développeuses peuvent configurer le tableau de bord du projet, se connecter aux workflows personnalisés et créer des rôles professionnels supplémentaires pour un projet. Nous allons examiner la structure d’un modèle de projet et en créer un exemple.
 
-![Carte de projet personnalisée](./assets/develop-aem-projects/custom-project-card.png)
+![Carte de projet personnalisée.](./assets/develop-aem-projects/custom-project-card.png)
 
 ## Configuration
 
 Ce tutoriel décrit le code nécessaire à la création d’un modèle de projet personnalisé. Vous pouvez télécharger et installer le [package joint](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip) dans un environnement local à suivre avec le tutoriel. Vous pouvez également accéder au projet Maven complet hébergé sur [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide).
 
-* [Tutoriel terminé](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
+* [Package de tutoriel terminé](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Référentiel de code complet sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Ce tutoriel suppose des connaissances de base sur les [Bonnes pratiques de développement AEM](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/the-basics.html) et une certaine familiarité avec [Configuration AEM projet Maven](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Tout le code mentionné est destiné à être utilisé comme référence et ne doit être déployé que sur une [instance d’AEM de développement local](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingStarted).
+Ce tutoriel suppose d’avoir des connaissances de base sur les [bonnes pratiques de développement AEM](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/the-basics.html) et une certaine familiarité avec la [configuration de projet Maven AEM](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/ht-projects-maven.html). Tout le code mentionné est destiné à être utilisé comme référence et ne doit être déployé que sur une [instance AEM de développement local](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=frl#GettingStarted).
 
 ## Structure d’un modèle de projet
 
-Les modèles de projet doivent être placés sous contrôle source et doivent se trouver sous votre dossier d’application sous /apps. Idéalement, ils doivent être placés dans un sous-dossier avec la convention de dénomination de **&#42;/projects/templates/**&lt;my-template>. En suivant cette convention d’affectation des noms, les nouveaux modèles personnalisés deviennent automatiquement disponibles pour les auteurs lors de la création d’un projet. La configuration des modèles de projet disponibles est définie à l’emplacement suivant : **/content/projects/jcr:content** par le noeud **cq:allowedTemplates** . Par défaut, il s’agit d’une expression régulière : **/(apps|libs)/.&#42;/projects/templates/.&#42;**
+Les modèles de projet doivent être placés sous contrôle de code source et doivent se trouver sous votre dossier d’application sous /apps. Idéalement, ils doivent être placés dans un sous-dossier avec la convention de nommage de **&#42;/projects/templates/**&lt;my-template>. En suivant cette convention de nommage, les nouveaux modèles personnalisés deviennent automatiquement disponibles pour les créateurs et créatrices lors de la création d’un projet. La configuration des modèles de projet disponibles est définie au niveau du nœud **/content/projects/jcr:content** par la propriété **cq:allowedTemplates**. Par défaut, il s’agit d’une expression régulière : **/(apps|libs)/.&#42;/projects/templates/.&#42;**
 
-Le noeud racine d’un modèle de projet comporte un **jcr:primaryType** de **cq:Template**. Sous le noeud racine, il existe 3 noeuds : **gadgets**, **rôles**, et **workflows**. Ces noeuds sont tous **nt:unstructured**. Sous le noeud racine peut également se trouver un fichier thumbnail.png qui s’affiche lors de la sélection du modèle dans l’assistant Créer un projet .
+Le nœud racine d’un modèle de projet aura un **jcr:primaryType** de **cq:Template**. Sous le nœud racine, il existe 3 nœuds : **gadgets**, **roles**, et **workflows**. Ces nœuds sont tous **nt:unstructured**. Sous le nœud racine peut également se trouver un fichier thumbnail.png qui s’affiche lors de la sélection du modèle dans l’assistant de création de projets.
 
-La structure de noeud complète :
+La structure de nœud complète est la suivante :
 
 ```shell
 /apps/<my-app>
@@ -63,23 +63,23 @@ La structure de noeud complète :
 
 ### Racine du modèle de projet
 
-Le noeud racine du modèle de projet est de type **cq:Template**. Sur ce noeud, vous pouvez configurer des propriétés. **jcr:title** et **jcr:description** qui s’affiche dans l’assistant Créer un projet . Il existe également une propriété appelée **assistant** qui pointe vers un formulaire qui renseigne les propriétés du projet. La valeur par défaut de : **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** devrait fonctionner normalement dans la plupart des cas, car cela permet à l’utilisateur de renseigner les propriétés de base du projet et d’ajouter des membres au groupe.
+Le nœud racine du modèle de projet est de type **cq:Template**. Sur ce nœud, vous pouvez configurer des propriétés **jcr:title** et **jcr:description** qui s’affichent dans l’assistant de création de projets. Il existe également une propriété appelée **wizard** qui pointe vers un formulaire qui renseigne les propriétés du projet. La valeur par défaut de **/libs/cq/core/content/projects/wizard/steps/defaultproject.html** devrait fonctionner normalement dans la plupart des cas, car cela permet à l’utilisateur ou utilisatrice de renseigner les propriétés de base du projet et d’ajouter des personnes membres au groupe.
 
-*&#42;Notez que l’assistant Créer un projet n’utilise pas le servlet du POST Sling. À la place, les valeurs sont publiées sur un servlet personnalisé :**com.adobe.cq.projects.impl.servlet.ProjectServlet**. Cela doit être pris en compte lors de l’ajout de champs personnalisés.*
+*&#42;Notez que l’assistant de création de projets n’utilise pas le servlet POST Sling. À la place, les valeurs sont publiées sur un servlet personnalisé :**com.adobe.cq.projects.impl.servlet.ProjectServlet**. Cela doit être pris en compte lors de l’ajout de champs personnalisés.*
 
-Vous trouverez un exemple d’assistant personnalisé pour le modèle de projet de traduction : **/libs/cq/core/content/projects/wizard/translation/project/defaultproject**.
+Vous trouverez un exemple d’assistant personnalisé pour le modèle de projet de traduction : **/libs/cq/core/content/projects/wizard/translationproject/defaultproject**.
 
 ### Gadgets {#gadgets}
 
-Il n’existe aucune propriété supplémentaire sur ce noeud, à l’exception des enfants du noeud gadgets, qui contrôlent quelles mosaïques de projet renseignent le tableau de bord du projet lorsqu’un nouveau projet est créé. [Mosaïques du projet](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#ProjectTiles) (également appelés gadgets ou capsules) sont des cartes simples qui renseignent le lieu de travail d’un projet. Vous trouverez une liste complète des mosaïques d’usine sous : **/libs/cq/gui/components/projects/admin/pod. **Les propriétaires de projet peuvent toujours ajouter/supprimer des mosaïques après la création d’un projet.
+Il n’existe aucune propriété supplémentaire sur ce nœud, mais les enfants du nœud gadgets contrôlent quelles mosaïques de projet renseignent le tableau de bord du projet lorsqu’un nouveau projet est créé. Les [mosaïques du projet](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects.html?lang=fr#ProjectTiles) (également appelés gadgets ou capsules) sont des cartes simples qui renseignent l’espace de travail d’un projet. Vous trouverez une liste complète des mosaïques prêtes à l’emploi sous : **/libs/cq/gui/components/projects/admin/pod. **Les personnes propriétaires de projet peuvent toujours ajouter/supprimer des mosaïques après la création d’un projet.
 
 ### Rôles {#roles}
 
-Il y en a 3 [Rôles par défaut](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html#UserRolesinaProject) pour chaque projet : **Observateurs**, **Éditeurs**, et **Propriétaires**. En ajoutant des noeuds enfants sous le noeud de rôles, vous pouvez ajouter des rôles de projet spécifiques à l’entreprise supplémentaires pour le modèle. Vous pouvez ensuite lier ces rôles à des workflows spécifiques associés au projet.
+Il existe 3 [rôles par défaut](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects.html?lang=fr#UserRolesinaProject) pour chaque projet : **Observateurs**, **Éditeurs**, et **Propriétaires**. En ajoutant des nœuds enfants sous le nœud roles, vous pouvez ajouter des rôles de projet spécifiques à l’entreprise supplémentaires pour le modèle. Vous pouvez ensuite lier ces rôles à des workflows spécifiques associés au projet.
 
 ### Workflows {#workflows}
 
-L’une des raisons les plus attrayantes pour créer un modèle de projet personnalisé est qu’il vous donne la possibilité de configurer les workflows disponibles à utiliser avec le projet. Il peut s’agir de workflows prêts à l’emploi ou de workflows personnalisés. Sous la **workflows** doit être un noeud **models** Noeud (également `nt:unstructured`) et les noeuds enfants sous spécifient les modèles de workflow disponibles. La propriété **modelId **pointe vers le modèle de workflow sous /etc/workflow et la propriété **assistant** pointe vers la boîte de dialogue utilisée lors du démarrage du workflow. L’avantage des projets est la possibilité d’ajouter une boîte de dialogue personnalisée (assistant) pour capturer des métadonnées spécifiques à l’entreprise au début du workflow, ce qui peut déclencher d’autres actions dans le workflow.
+L’une des raisons les plus intéressantes de la création d’un modèle de projet personnalisé est qu’il vous donne la possibilité de configurer les workflows disponibles à utiliser avec le projet. Il peut s’agir de workflows prêts à l’emploi ou personnalisés. Sous le nœud **workflows**, il doit y avoir un nœud **models** (également `nt:unstructured`) et les nœuds enfants spécifient les modèles de workflow disponibles. La propriété **modelId **pointe vers le modèle de workflow sous /etc/workflow et la propriété **wizard** pointe vers la boîte de dialogue utilisée lors du démarrage du workflow. L’avantage des projets est la possibilité d’ajouter une boîte de dialogue personnalisée (assistant) pour capturer des métadonnées spécifiques à l’entreprise au démarrage du workflow, ce qui peut déclencher d’autres actions dans le workflow.
 
 ```shell
 <projects-template-root> (cq:Template)
@@ -90,11 +90,11 @@ L’une des raisons les plus attrayantes pour créer un modèle de projet person
                    - wizard = dialog used to start the workflow
 ```
 
-## Création d’un modèle de projet {#creating-project-template}
+## Créer un modèle de projet {#creating-project-template}
 
-Puisque nous copions/configurons principalement des noeuds, nous utiliserons CRXDE Lite. Dans votre instance d’AEM locale, ouvrez [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
+Puisque nous copions/configurons principalement des nœuds, nous utiliserons CRXDE Lite. Dans votre instance AEM locale, ouvrez [CRXDE Lite](http://localhost:4502/crx/de/index.jsp).
 
-1. Commencez par créer un dossier sous `/apps/&lt;your-app-folder&gt;` named `projects`. Créez un autre dossier sous celui nommé `templates`.
+1. Commencez par créer un dossier sous `/apps/&lt;your-app-folder&gt;` nommé `projects`. Créez un autre dossier sous le précédent nommé `templates`.
 
    ```shell
    /apps/aem-guides/projects-tasks/
@@ -104,7 +104,7 @@ Puisque nous copions/configurons principalement des noeuds, nous utiliserons CRX
 
 1. Pour faciliter les choses, nous allons démarrer notre modèle personnalisé à partir du modèle de projet simple existant.
 
-   1. Copiez et collez le noeud **/libs/cq/core/content/projects/templates/default** sous le *templates* dossier créé à l’étape 1.
+   1. Copiez et collez le nœud **/libs/cq/core/content/projects/templates/default** sous le dossier *templates* créé à l’étape 1.
 
    ```shell
    /apps/aem-guides/projects-tasks/
@@ -112,11 +112,11 @@ Puisque nous copions/configurons principalement des noeuds, nous utiliserons CRX
                      + default (cq:Template)
    ```
 
-1. Vous devriez maintenant avoir un chemin comme **/apps/aem-guides/projects/projects/templates/authoring-project**.
+1. Vous devriez maintenant avoir un chemin qui ressemble à **/apps/aem-guides/projects-tasks/projects/templates/authoring-project**.
 
-   1. Modifiez la variable **jcr:title** et **jcr:description** propriétés du noeud author-project en valeurs de titre et de description personnalisées.
+   1. Remplacez les propriétés **jcr:title** et **jcr:description** du nœud author-project par des valeurs de titre et de description personnalisées.
 
-      1. Laissez le champ **assistant** pointant vers les propriétés par défaut du projet.
+      1. Laissez la propriété **wizard** pointer vers les propriétés par défaut du projet.
 
    ```shell
    /apps/aem-guides/projects-tasks/projects/
@@ -127,11 +127,11 @@ Puisque nous copions/configurons principalement des noeuds, nous utiliserons CRX
                       - wizard = "/libs/cq/core/content/projects/wizard/steps/defaultproject.html"
    ```
 
-1. Pour ce modèle de projet, nous voulons utiliser Tâches.
-   1. Ajouter un nouveau **nt:unstructured** noeud sous authoring-project/gadgets appelé **tâches**.
-   1. Ajoutez des propriétés String au noeud de tâches pour **cardWeight** = &quot;100&quot;, **jcr:title**=&quot;Tâches&quot; et **sling:resourceType**=&quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
+1. Pour ce modèle de projet, nous voulons utiliser des tâches.
+   1. Ajouter un nouveau nœud **nt:unstructured** sous authoring-project/gadgets nommé **tasks**.
+   1. Ajoutez des propriétés de chaîne au nœud tasks pour **cardWeight** = &quot;100&quot;, **jcr:title** = &quot;Tasks&quot; et **sling:resourceType** = &quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
 
-   Maintenant, la [Mosaïque Tâches](https://experienceleague.adobe.com/docs/#Tasks) s’affiche par défaut lors de la création d’un projet.
+   Désormais, la [mosaïque des tâches](https://experienceleague.adobe.com/docs/?lang=fr#Tasks) s’affiche par défaut lors de la création d’un projet.
 
    ```shell
    ../projects/templates/authoring-project
@@ -148,14 +148,14 @@ Puisque nous copions/configurons principalement des noeuds, nous utiliserons CRX
                  - sling:resourceType = "cq/gui/components/projects/admin/pod/taskpod"
    ```
 
-1. Nous ajouterons un rôle d’approbateur personnalisé à notre modèle de projet.
+1. Nous ajouterons un rôle Approbateur personnalisé à notre modèle de projet.
 
-   1. Sous le noeud de modèle de projet (authoring-project), ajoutez une nouvelle **nt:unstructured** noeud étiqueté **rôles**.
-   1. Ajouter un autre **nt:unstructured** noeud &quot;approbateurs&quot; étiquetés en tant qu’enfant du noeud rôles.
-   1. Ajouter des propriétés de chaîne **jcr:title** = &quot;**Approbateurs**&quot;, **roleclass** =&quot;**propriétaire**&quot;, **roleid**=&quot;**approbateurs**&quot;.
-      1. Le nom du noeud approbateurs, ainsi que jcr:title et roleid peuvent être n’importe quelle valeur de chaîne (tant que roleid est unique).
-      1. **roleclass** détermine les autorisations appliquées à ce rôle en fonction de la variable [3 rôles OTB](https://docs.adobe.com/docs/en/aem/6-3/author/projects.html#User%20Roles%20in%20a%20Project): **propriétaire**, **éditeur**, et **observateur**.
-      1. En général, si le rôle personnalisé est davantage un rôle de gestion, la classe de rôles peut être **propriétaire;** s’il s’agit d’un rôle de création plus spécifique comme Photographe ou Designer, **éditeur** roleclass devrait suffire. La grande différence entre **propriétaire** et **éditeur** est que les propriétaires de projet peuvent mettre à jour les propriétés du projet et ajouter de nouveaux utilisateurs au projet.
+   1. Sous le nœud de modèle de projet (authoring-project), ajoutez un nouveau nœud **nt:unstructured** étiqueté **roles**.
+   1. Ajoutez un autre nœud **nt:unstructured** étiqueté « approvers » en tant qu’enfant du nœud roles.
+   1. Ajoutez des propriétés de chaîne **jcr:title** = &quot;**Approvers**&quot;, **roleclass** = &quot;**owner**&quot;, **roleid** = &quot;**approvers**&quot;.
+      1. Le nom du nœud des approbateurs et approbatrices, ainsi que jcr:title et roleid, peuvent être n’importe quelle valeur de chaîne (tant que roleid est unique).
+      1. **roleclass** détermine les autorisations appliquées à ce rôle en fonction des [3 rôles prêts à l’emploi](https://experienceleague.adobe.com/docs/?lang=fr#User%20Roles%20in%20a%20Project) : **propriétaire**, **éditeur**, et **observateur**.
+      1. En général, si le rôle personnalisé est davantage un rôle de gestion, la roleclass peut être **propriétaire** ; s’il s’agit d’un rôle de création plus spécifique comme photographe ou designer, la roleclass **éditeur** devrait suffire. La grande différence entre les rôles **propriétaire** et **éditeur** est que les personnes propriétaires d’un projet peuvent mettre à jour les propriétés du projet et ajouter de nouveaux utilisateurs et utilisatrices au projet.
 
    ```shell
    ../projects/templates/authoring-project
@@ -167,7 +167,7 @@ Puisque nous copions/configurons principalement des noeuds, nous utiliserons CRX
                 - roleid = "approver"
    ```
 
-1. En copiant le modèle Projet simple , vous obtiendrez 4 workflows prêts à l’emploi configurés. Chaque noeud sous workflows/modèles pointe vers un workflow spécifique et un assistant de démarrage de boîte de dialogue pour ce workflow. Plus loin dans ce tutoriel, nous allons créer un workflow personnalisé pour ce projet. Pour l’instant, supprimez les noeuds sous workflow/models :
+1. En copiant le modèle Projet simple, vous obtiendrez 4 workflows prêts à l’emploi configurés. Chaque nœud sous workflows/models pointe vers un workflow spécifique et un assistant de démarrage de boîte de dialogue pour ce workflow. Plus loin dans ce tutoriel, nous allons créer un workflow personnalisé pour ce projet. Pour l’instant, supprimez les nœuds sous workflow/models :
 
    ```shell
    ../projects/templates/authoring-project
@@ -178,10 +178,10 @@ Puisque nous copions/configurons principalement des noeuds, nous utiliserons CRX
                - (remove ootb models)
    ```
 
-1. Afin que les auteurs de contenu puissent facilement identifier le modèle de projet, vous pouvez ajouter une miniature personnalisée. La taille recommandée est de 319 x 319 pixels.
-   1. Dans CRXDE Lite, créez un fichier en tant que frère de gadgets, de rôles et de noeuds de processus nommés **thumbnail.png**.
-   1. Enregistrez, puis accédez au `jcr:content` et double-cliquez sur le noeud `jcr:data` (évitez de cliquer sur &quot;afficher&quot;).
-      1. Cela devrait vous inviter à modifier `jcr:data` et vous pouvez télécharger une miniature personnalisée.
+1. Afin que les créateurs et créatrices de contenu puissent facilement identifier le modèle de projet, vous pouvez ajouter une miniature personnalisée. La taille recommandée est de 319x319 pixels.
+   1. Dans CRXDE Lite, créez un fichier en tant qu’objet apparenté aux gadgets, aux rôles et aux nœuds de workflows nommé **thumbnail.png**.
+   1. Enregistrez, puis accédez au nœud `jcr:content` et double-cliquez sur la propriété `jcr:data` (évitez de cliquer sur « afficher »).
+      1. Cela devrait vous inviter à modifier la boîte de dialogue de fichier `jcr:data` et vous pouvez alors charger une miniature personnalisée.
 
    ```shell
    ../projects/templates/authoring-project
@@ -191,7 +191,7 @@ Puisque nous copions/configurons principalement des noeuds, nous utiliserons CRX
        + thumbnail.png (nt:file)
    ```
 
-Représentation XML terminée du modèle de projet :
+Représentation XML terminée du modèle de projet :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -247,113 +247,113 @@ Représentation XML terminée du modèle de projet :
 </jcr:root>
 ```
 
-## Test du modèle de projet personnalisé
+## Tester le modèle de projet personnalisé
 
 Nous pouvons maintenant tester notre modèle de projet en créant un nouveau projet.
 
-1. Vous devriez voir le modèle personnalisé comme l’une des options de création de projet.
+1. Vous devriez voir le modèle personnalisé comme l’une des options de création d’un projet.
 
-   ![Choisir un modèle](./assets/develop-aem-projects/choose-template.png)
+   ![Choix d’un modèle.](./assets/develop-aem-projects/choose-template.png)
 
-1. Après avoir sélectionné le modèle personnalisé, cliquez sur &quot;Suivant&quot; et notez que lorsque vous renseignez les membres du projet, vous pouvez les ajouter en tant que rôle d’approbateur.
+1. Après avoir sélectionné le modèle personnalisé, cliquez sur « Suivant » et notez que lorsque vous renseignez les personnes membres du projet, vous pouvez les ajouter en tant que rôle d’approbateur ou d’approbatrice.
 
-   ![Approuver](./assets/develop-aem-projects/user-approver.png)
+   ![Approuver.](./assets/develop-aem-projects/user-approver.png)
 
-1. Cliquez sur &quot;Créer&quot; pour terminer la création du projet à partir du modèle personnalisé. Vous remarquerez sur le tableau de bord du projet que la mosaïque Tâches et les autres mosaïques configurées sous les gadgets apparaissent automatiquement.
+1. Cliquez sur « Créer » pour terminer la création du projet à partir du modèle personnalisé. Vous remarquerez sur le tableau de bord du projet que la mosaïque Tâches et les autres mosaïques configurées sous les gadgets apparaissent automatiquement.
 
-   ![Mosaïque Tâches](./assets/develop-aem-projects/tasks-tile.png)
+   ![Mosaïque Tâches.](./assets/develop-aem-projects/tasks-tile.png)
 
 
-## Pourquoi un workflow ?
+## Pourquoi un workflow ?
 
-Les processus traditionnellement AEM qui se centrent autour d’un processus d’approbation utilisent les étapes de processus Participant . AEM boîte de réception contient des détails sur les tâches et les workflows et une intégration améliorée avec AEM Projects. Ces fonctionnalités rendent l’utilisation du processus de création de tâche des projets plus attrayante.
+Traditionnellement, les workflows AEM qui se centrent autour d’un processus d’approbation ont suivi les étapes de workflow de participant ou participante. La boîte de réception AEM contient des détails sur les tâches et les workflows et une intégration améliorée avec les projets AEM. Ces fonctionnalités rendent l’utilisation des étapes du processus de création de tâche des projets plus attrayante.
 
-### Pourquoi les tâches ?
+### Pourquoi des tâches ?
 
-L’utilisation d’une étape de création de tâche par rapport aux étapes Participant traditionnelles offre plusieurs avantages :
+L’utilisation d’une étape de création de tâche par rapport aux étapes de participant et ou participante traditionnelles offre plusieurs avantages :
 
-* **Date de début et d’échéance** - facilite la gestion du temps par les auteurs. La nouvelle fonction Calendrier utilise ces dates.
-* **Priorité** - les priorités intégrées Faible, Normale et Élevée permettent aux auteurs de hiérarchiser les travaux.
-* **Commentaires threads** - lorsque les auteurs travaillent sur une tâche, ils ont la possibilité de laisser des commentaires accroissant la collaboration
-* **Visibilité** - Les mosaïques de tâches et les vues avec les projets permettent aux gestionnaires de déterminer le temps passé
-* **Intégration de projets** - Les tâches sont déjà intégrées aux rôles de projet et aux tableaux de bord
+* **Date de début et d’échéance** : facilite la gestion du temps par les créateurs et les créatrices. La nouvelle fonction Calendrier utilise ces dates.
+* **Priorité** : les priorités intégrées Faible, Normale et Élevée permettent aux créateurs et aux créatrices de hiérarchiser les travaux.
+* **Commentaires threads** : lorsque les créateurs et les créatrices travaillent sur une tâche, ils ont la possibilité de laisser des commentaires afin d’améliorer la collaboration.
+* **Visibilité** : les affichages et les mosaïques de tâches dans les projets permettent aux personnes responsables de déterminer comment le temps est utilisé.
+* **Intégration de projets** : les tâches sont déjà intégrées aux rôles des projets et aux tableaux de bord.
 
-À l’instar des étapes Participant, les tâches peuvent être affectées et acheminées dynamiquement. Les métadonnées de tâche telles que Titre et Priorité peuvent également être définies dynamiquement en fonction des actions précédentes, comme nous le verrons dans le tutoriel suivant.
+À l’instar des étapes de participant ou participante, les tâches peuvent être affectées et acheminées dynamiquement. Les métadonnées de tâche telles que Titre et Priorité peuvent également être définies dynamiquement en fonction des actions précédentes, comme nous le verrons dans le tutoriel suivant.
 
-Bien que les tâches présentent certains avantages par rapport aux étapes du participant, elles comportent des frais supplémentaires et ne sont pas aussi utiles en dehors d’un projet. En outre, tous les comportements dynamiques des tâches doivent être codés à l’aide de scripts ecma ayant leurs propres limites.
+Bien que les tâches présentent certains avantages par rapport aux étapes de participant ou participante, elles sont plus gourmandes et ne sont pas aussi utiles en dehors d’un projet. En outre, tous les comportements dynamiques des tâches doivent être codés à l’aide de scripts ecma ayant leurs propres limites.
 
-## Exemples d’exigences de cas d’utilisation {#goals-tutorial}
+## Conditions requises pour les exemples de cas d’utilisation : {#goals-tutorial}
 
-![Diagramme de processus de workflow](./assets/develop-aem-projects/workflow-process-diagram.png)
+![Diagramme de processus de workflow.](./assets/develop-aem-projects/workflow-process-diagram.png)
 
-Le diagramme ci-dessus décrit les exigences de haut niveau pour notre processus d’approbation des exemples.
+Le diagramme ci-dessus décrit les conditions requises de haut niveau pour notre workflow d’approbation des exemples.
 
-La première étape consiste à créer une tâche pour terminer la modification d’un élément de contenu. Nous autoriserons l’initiateur du workflow à choisir la personne désignée pour cette première tâche.
+La première étape consiste à créer une tâche pour terminer la modification d’un élément de contenu. Nous autoriserons l’initiateur ou l’initiatrice du workflow à choisir la personne désignée pour cette première tâche.
 
-Une fois la première tâche terminée, la personne désignée dispose de trois options pour le routage du workflow :
+Une fois la première tâche terminée, la personne désignée dispose de trois options pour le routage du workflow :
 
-**Normale ** : le routage normal crée une tâche affectée au groupe Approbateur du projet pour révision et approbation. La priorité de la tâche est Normale et la date d&#39;échéance est fixée à 5 jours à compter de sa création.
+**Normal** : le routage normal crée une tâche affectée au groupe d’approbation du projet pour sa révision et son approbation. La priorité de la tâche est Normale et la date d’échéance est fixée à 5 jours à compter de sa création.
 
-**Rush** - le routage des notifications push crée également une tâche affectée au groupe Approbateur du projet. La priorité de la tâche est Haute et la date d&#39;échéance n&#39;est que d&#39;un jour.
+**Rapide** : le routage rapide crée également une tâche affectée au groupe d’approbation du projet. La priorité de la tâche est Haute et la date d’échéance n’est que d’un jour.
 
-**Contournement** - dans cet exemple de workflow, le participant initial a la possibilité de contourner le groupe de validation. (oui, cela peut déjouer l’objectif d’un workflow &quot;Validation&quot;, mais cela nous permet d’illustrer des fonctionnalités de routage supplémentaires)
+**Contournement** : dans cet exemple de workflow, la personne initiale a la possibilité de contourner le groupe d’approbation. (cela peut effectivement rendre nul l’objectif d’un workflow d’« Approbation », mais cela nous permet d’illustrer des fonctionnalités de routage supplémentaires).
 
-Le groupe d’approbateurs peut approuver le contenu ou le renvoyer à la personne désignée initiale pour le retravail. Dans le cas d’un renvoi en vue du retravail, une nouvelle tâche est créée et correctement étiquetée &quot;Envoyé pour le retravail&quot;.
+Le groupe d’approbation peut approuver le contenu ou le renvoyer à la personne désignée initiale pour le retravail. Dans le cas d’un renvoi en vue du retravail, une nouvelle tâche est créée et correctement étiquetée « Renvoyé pour le retravail ».
 
-La dernière étape du workflow utilise l’étape de processus Activer la page/ressource de l’onglet et réplique la charge utile.
+La dernière étape du workflow utilise l’étape de processus Activer la page/ressource prête à l’emploi et réplique la payload.
 
-## Création du modèle de workflow
+## Créer un modèle de workflow
 
-1. Dans le menu AEM Démarrer, accédez à Outils -> Workflow -> Modèles. Cliquez sur &quot;Créer&quot; dans le coin supérieur droit pour créer un modèle de workflow.
+1. Dans le menu Démarrage d’AEM, accédez à Outils > Workflow > Modèles. Cliquez sur « Créer » dans le coin supérieur droit pour créer un modèle de workflow.
 
-   Attribuez un titre au nouveau modèle : &quot;Processus d’approbation de contenu&quot; et un nom d’URL : &quot;content-approval-workflow&quot;.
+   Attribuez un titre au nouveau modèle : « Processus d’approbation du contenu » et un nom d’URL : « content-approval-workflow ».
 
-   ![Boîte de dialogue de création de workflow](./assets/develop-aem-projects/workflow-create-dialog.png)
+   ![Boîte de dialogue de création de workflow.](./assets/develop-aem-projects/workflow-create-dialog.png)
 
-   Pour plus d’informations sur les [création de workflows lire ici](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-models.html).
+   Vous trouverez plus d’informations sur la [création de workflows ici](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr).
 
-1. Il est recommandé de regrouper les workflows personnalisés dans leur propre dossier sous /etc/workflow/models. Dans CRXDE Lite, créez une **&#39;nt:folder&#39;** Sous /etc/workflow/models nommé **&quot;aem-guides&quot;**. L’ajout d’un sous-dossier permet de s’assurer que les workflows personnalisés ne sont pas écrasés accidentellement lors des mises à niveau ou des installations du Service Pack.
+1. Il est recommandé de regrouper les workflows personnalisés dans leur propre dossier sous /etc/workflow/models. Dans CRXDE Lite, créez un dossier « **nt:folder** » sous /etc/workflow/models nommé **« aem-guides »**. L’ajout d’un sous-dossier permet de s’assurer que les workflows personnalisés ne sont pas écrasés accidentellement lors des mises à niveau ou des installations du pack de services.
 
-   &#42;Notez qu’il est important de ne jamais placer le dossier ou les workflows personnalisés sous des sous-dossiers d’usine tels que /etc/workflow/models/dam ou /etc/workflow/models/projects, car le sous-dossier entier peut également être remplacé par des mises à niveau ou des Service Packs.
+   &#42;Notez qu’il est important de ne jamais placer le dossier ou les workflows personnalisés dans des sous-dossiers prêts à l’emploi tels que /etc/workflow/models/dam ou /etc/workflow/models/projects, car le sous-dossier entier peut également être écrasé par des mises à niveau ou des packs de services.
 
-   ![Emplacement du modèle de workflow dans la version 6.3](./assets/develop-aem-projects/custom-workflow-subfolder.png)
+   ![Emplacement du modèle de workflow dans la version 6.3.](./assets/develop-aem-projects/custom-workflow-subfolder.png)
 
-   Emplacement du modèle de workflow dans la version 6.3
+   Emplacement du modèle de workflow dans la version 6.3
 
    >[!NOTE]
    >
-   >Si vous utilisez AEM version 6.4+, l’emplacement du workflow a changé. Pour plus d’informations, rendez-vous [ici.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
+   >Si vous utilisez AEM version 6.4 ou ultérieure, l’emplacement du workflow a changé. [Pour plus d’informations, rendez-vous ici.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=fr)
 
-   Si vous utilisez AEM version 6.4+, le modèle de workflow est créé sous `/conf/global/settings/workflow/models`. Répétez les étapes ci-dessus avec le répertoire /conf et ajoutez un sous-dossier nommé `aem-guides` et déplacez le `content-approval-workflow` en-dessous.
+   Si vous utilisez AEM version 6.4 ou ultérieure, le modèle de workflow est créé sous `/conf/global/settings/workflow/models`. Répétez les étapes ci-dessus avec le répertoire /conf et ajoutez un sous-dossier nommé `aem-guides` et déplacez le `content-approval-workflow` dans ce dossier.
 
-   ![Emplacement de définition de workflow moderne](./assets/develop-aem-projects/modern-workflow-definition-location.png)
-Emplacement du modèle de workflow dans la version 6.4+
+   ![Emplacement de définition de workflow moderne.](./assets/develop-aem-projects/modern-workflow-definition-location.png)
+Emplacement du modèle de workflow dans la version 6.4 et ultérieure
 
-1. La possibilité d’ajouter des étapes de processus à un workflow donné est introduite dans AEM 6.3. Les étapes s’affichent pour l’utilisateur à partir de la boîte de réception dans l’onglet Informations sur le workflow . Il montre à l&#39;utilisateur l&#39;étape actuelle du workflow ainsi que les étapes qui le précèdent et qui le suivent.
+1. La possibilité d’ajouter des étapes de processus à un workflow donné est introduite dans AEM 6.3. Les étapes s’affichent pour l’utilisateur ou l’utilisatrice à partir de la boîte de réception dans l’onglet Informations sur le workflow. Elle montre à l’utilisateur ou l’utilisatrice l’étape actuelle du workflow ainsi que les étapes précédentes et suivantes.
 
-   Pour configurer les étapes, ouvrez la boîte de dialogue Propriétés de page dans le SideKick. Le quatrième onglet est intitulé &quot;Phases&quot;. Ajoutez les valeurs suivantes pour paramétrer les trois étapes de ce workflow :
+   Pour configurer les étapes, ouvrez la boîte de dialogue Propriétés de la page dans le Sidekick. Le quatrième onglet est intitulé « Étapes ». Ajoutez les valeurs suivantes pour paramétrer les trois étapes de ce workflow :
 
    1. Modifier le contenu
    1. Approbation
-   1. Publication
+   1. Publier
 
-   ![configuration des étapes de workflow](./assets/develop-aem-projects/workflow-model-stage-properties.png)
+   ![Configuration des étapes de workflow.](./assets/develop-aem-projects/workflow-model-stage-properties.png)
 
-   Configurez les phases de workflow dans la boîte de dialogue Propriétés de la page .
+   Configurez les étapes de workflow dans la boîte de dialogue Propriétés de la page.
 
-   ![barre de progression du workflow](./assets/develop-aem-projects/workflow-info-progress.png)
+   ![Barre de progression du workflow.](./assets/develop-aem-projects/workflow-info-progress.png)
 
-   La barre de progression du workflow tel qu’elle s’affiche dans la boîte de réception AEM.
+   La barre de progression du workflow telle qu’elle s’affiche dans la boîte de réception AEM.
 
-   Vous pouvez éventuellement télécharger une **Image** dans les Propriétés de page utilisées comme miniature de workflow lorsque les utilisateurs la sélectionnent. Les dimensions de l’image doivent être de 319x319 pixels. Ajouter un **Description** Les propriétés de page s’affichent également lorsqu’un utilisateur sélectionne le workflow.
+   Vous pouvez éventuellement charger une **image** dans les Propriétés de page qui servira de miniature du workflow lorsque les utilisateurs et utilisatrices le sélectionnent. Les dimensions de l’image doivent être de 319x319 pixels. L’ajout d’une **Description** aux Propriétés de page apparaîtra également lorsqu’un utilisateur ou une utilisatrice sélectionne le workflow.
 
-1. Le processus Créer une tâche de projet est conçu pour créer une tâche en tant qu’étape dans le processus. Ce n’est qu’après avoir terminé la tâche que le workflow sera avancé. L’étape Créer une tâche de projet présente un aspect puissant : elle peut lire les valeurs de métadonnées de workflow et les utiliser pour créer la tâche de manière dynamique.
+1. Le processus de workflow Créer une tâche de projet est conçu pour créer une tâche en tant qu’étape dans le workflow. Ce n’est qu’après avoir terminé la tâche que le workflow progresse. L’étape Créer une tâche de projet présente un aspect intéressant : elle peut lire les valeurs de métadonnées de workflow et les utiliser pour créer la tâche de manière dynamique.
 
-   Commencez par supprimer l’étape de participant qui est créée par défaut. Dans le sidekick du menu Composants, développez la variable **&quot;Projets&quot;** sous-titre et faites glisser et déposez le **&quot;Créer une tâche de projet&quot;** sur le modèle.
+   Commencez par supprimer l’étape de participant ou participante créée par défaut. Dans le menu Composants du Sidekick, développez le sous en-tête **Projets** et faites glisser et déposez l’étape **Créer une tâche de projet** sur le modèle.
 
-   Double-cliquez sur l’étape &quot;Créer une tâche de projet&quot; pour ouvrir la boîte de dialogue du processus. Configurez les propriétés suivantes :
+   Double-cliquez sur l’étape Créer une tâche de projet pour ouvrir la boîte de dialogue du workflow. Configurez les propriétés suivantes :
 
-   Cet onglet est commun à toutes les étapes du processus de workflow et nous définirons le Titre et la Description (ceux-ci ne seront pas visibles par l’utilisateur final). La propriété importante que nous définirons est l’étape du processus sur **&quot;Modifier le contenu&quot;** dans le menu déroulant.
+   Cet onglet est commun à toutes les étapes du processus de workflow et nous définirons le Titre et la Description (ceux-ci ne seront pas visibles par la personne finale). La propriété importante que nous définirons est l’étape du workflow sur **Modifier le contenu** dans le menu déroulant.
 
    ```shell
    Common Tab
@@ -363,7 +363,7 @@ Emplacement du modèle de workflow dans la version 6.4+
        Workflow Stage = "Edit Content"
    ```
 
-   Le processus Créer une tâche de projet est conçu pour créer une tâche en tant qu’étape dans le processus. L’onglet Tâche permet de définir toutes les valeurs de la tâche. Dans notre cas, nous voulons que le cessionnaire soit dynamique, de sorte que nous le laisserons vide. Le reste des valeurs de propriété :
+   Le processus de workflow Créer une tâche de projet est conçu pour créer une tâche en tant qu’étape dans le workflow. L’onglet Tâche permet de définir toutes les valeurs de la tâche. Dans notre cas, nous voulons que la personne désignée soit dynamique, nous la laissons donc vide. Le reste des valeurs de propriété :
 
    ```shell
    Task Tab
@@ -374,7 +374,7 @@ Emplacement du modèle de workflow dans la version 6.4+
        Due In - Days = "2"
    ```
 
-   L’onglet Routage est une boîte de dialogue facultative qui peut spécifier les actions disponibles pour l’utilisateur qui effectue la tâche. Ces actions ne sont que des valeurs de chaîne et sont enregistrées dans les métadonnées du workflow. Ces valeurs peuvent être lues par des scripts et/ou des étapes de processus ultérieures du workflow pour &quot;acheminer&quot; dynamiquement le workflow. Selon la variable [objectifs du workflow](#goals-tutorial) trois actions sont ajoutées à cet onglet :
+   L’onglet Routage est une boîte de dialogue facultative qui peut spécifier les actions disponibles pour l’utilisateur ou l’utilisatrice qui effectue la tâche. Ces actions ne sont que des valeurs de chaîne et sont enregistrées dans les métadonnées du workflow. Ces valeurs peuvent être lues par des scripts et/ou des étapes de processus plus tard dans le workflow pour « acheminer » dynamiquement le workflow. Selon les [objectifs du workflow](#goals-tutorial), nous ajoutons trois actions à cet onglet :
 
    ```shell
    Routing Tab
@@ -385,7 +385,7 @@ Emplacement du modèle de workflow dans la version 6.4+
            "Bypass Approval"
    ```
 
-   Cet onglet nous permet de configurer un script de création préalable de tâche dans lequel nous pouvons choisir par programmation différentes valeurs de la tâche avant qu’elle ne soit créée. Nous avons la possibilité de pointer le script vers un fichier externe ou d’incorporer un script court directement dans la boîte de dialogue. Dans notre cas, nous pointerons le script de création préalable de tâche vers un fichier externe. À l’étape 5, nous allons créer ce script.
+   Cet onglet nous permet de configurer un script de création préalable de tâche dans lequel nous pouvons choisir par programmation différentes valeurs de la tâche avant qu’elle ne soit créée. Nous avons la possibilité de pointer le script vers un fichier externe ou d’incorporer un script court directement dans la boîte de dialogue. Dans notre cas, nous pointons le script de création préalable de tâche vers un fichier externe. À l’étape 5, nous allons créer ce script.
 
    ```shell
    Advanced Settings Tab
@@ -393,11 +393,11 @@ Emplacement du modèle de workflow dans la version 6.4+
       Pre-Create Task Script = "/apps/aem-guides/projects/scripts/start-task-config.ecma"
    ```
 
-1. À l’étape précédente, nous avons référencé un script de précréation de tâche. Nous allons créer ce script dans lequel nous définirons le cessionnaire de la tâche en fonction de la valeur d’une valeur de métadonnées de workflow &quot;**cessionnaire**&quot;. Le **&quot;cessionnaire&quot;** est définie au déclenchement du workflow. Nous allons également lire les métadonnées de workflow pour choisir dynamiquement la priorité de la tâche en lisant le &quot;**taskPriority&quot;** valeur des métadonnées du workflow, ainsi que la **&quot;taskdueDate&quot; **à définir dynamiquement le moment où la première tâche doit être effectuée.
+1. À l’étape précédente, nous avons référencé un script de création préalable de tâche. Nous allons créer ce script dans lequel nous définirons la personne désignée de la tâche en fonction de la valeur d’une valeur de métadonnées de workflow « **assignee** ». La valeur **assignee** est définie au déclenchement du workflow. Nous allons également lire les métadonnées de workflow pour choisir dynamiquement la priorité de la tâche en lisant la valeur **taskPriority** des métadonnées du workflow, ainsi que la taskdueDate (date d’échéance de la tâche) pour définir dynamiquement le moment où la première tâche doit être effectuée.
 
-   À des fins d’organisation, nous avons créé un dossier sous notre dossier d’application destiné à contenir tous les scripts liés au projet : **/apps/aem-guides/projects-tasks/projects/scripts**. Créez un fichier sous ce dossier nommé **&quot;start-task-config.ecma&quot;**. &#42;Notez que le chemin d’accès à votre fichier start-task-config.ecma correspond au chemin d’accès défini dans l’onglet Paramètres avancés de l’étape 4.
+   À des fins d’organisation, nous avons créé un dossier sous notre dossier d’application destiné à contenir tous les scripts liés au projet : **/apps/aem-guides/projects-tasks/projects/scripts**. Créez un fichier sous ce dossier nommé « **start-task-config.ecma** ». &#42;Notez que le chemin d’accès à votre fichier start-task-config.ecma correspond au chemin d’accès défini dans l’onglet Paramètres avancés de l’étape 4.
 
-   Ajoutez les éléments suivants comme contenu du fichier :
+   Ajoutez les éléments suivants comme contenu du fichier :
 
    ```
    // start-task-config.ecma
@@ -418,7 +418,7 @@ Emplacement du modèle de workflow dans la version 6.4+
    task.setProperty("taskPriority", taskPriority);
    ```
 
-1. Revenez au processus d’approbation du contenu. Faites glisser et déposez le **Division OU** composant (situé dans le sidekick sous la catégorie &quot;Workflow&quot;) sous la propriété **Tâche de début** Étape Dans la boîte de dialogue commune, sélectionnez le bouton radio correspondant à 3 branches. La division OU lit la valeur des métadonnées du workflow. **&quot;lastTaskAction&quot;** pour déterminer l’itinéraire du workflow. Le **&quot;lastTaskAction&quot;** est définie sur l’une des valeurs de l’onglet Routage configuré à l’étape 4. Pour chacun des onglets Branche, renseignez la variable **Script** zone de texte avec les valeurs suivantes :
+1. Revenez au workflow d’approbation du contenu. Faites glisser et déposez le composant **Division OU** (situé dans le Sidekick sous la catégorie « Workflow ») sous l’étape **Démarrer la tâche**. Dans la boîte de dialogue commune, sélectionnez le bouton radio correspondant à 3 branches. La Division OU lit la valeur des métadonnées du workflow « **lastTaskAction** » pour déterminer l’itinéraire du workflow. La propriété « **lastTaskAction** » est définie sur l’une des valeurs de l’onglet Routage configuré à l’étape 4. Pour chacun des onglets Branche, renseignez la zone de texte **Script** avec les valeurs suivantes :
 
    ```
    function check() {
@@ -456,9 +456,9 @@ Emplacement du modèle de workflow dans la version 6.4+
    }
    ```
 
-   &#42;Notez que nous effectuons une correspondance de chaîne directe pour déterminer l’itinéraire. Il est donc important que les valeurs définies dans les scripts Branch correspondent aux valeurs d’itinéraire définies à l’étape 4.
+   &#42;Notez que nous effectuons une correspondance de chaîne directe pour déterminer l’itinéraire. Il est donc important que les valeurs définies dans les scripts Branch correspondent aux valeurs d’itinéraire définies à l’étape 4.
 
-1. Faites glisser et déposez un autre &quot;**Créer une tâche de projet**&quot; sur le modèle à l’extrême gauche (Branche 1) sous la division OU. Renseignez la boîte de dialogue avec les propriétés suivantes :
+1. Faites glisser et déposez une autre étape **Créer une tâche de projet** sur le modèle le plus à gauche (Branch 1) sous la Division OU. Renseignez la boîte de dialogue avec les propriétés suivantes :
 
    ```
    Common Tab
@@ -480,11 +480,11 @@ Emplacement du modèle de workflow dans la version 6.4+
        "Send Back for Revision"
    ```
 
-   Puisqu’il s’agit de l’itinéraire de validation normal, la priorité de la tâche est définie sur Moyen. De plus, nous donnons au groupe des approbateurs 5 jours pour terminer la tâche. Le cessionnaire reste vide dans l’onglet Tâche , car nous l’affecterons de manière dynamique dans l’onglet Paramètres avancés . Nous donnons au groupe Approbateurs deux itinéraires possibles lors de l’exécution de cette tâche : **&quot;Approuver et publier&quot;** s’ils approuvent le contenu et qu’il peut être publié et **&quot;Retour en vue de la révision&quot;** si des problèmes doivent être corrigés par l’éditeur d’origine. L’approbateur peut laisser des commentaires que l’éditeur d’origine verra si le workflow lui est renvoyé.
+   Puisqu’il s’agit de l’itinéraire de validation normal, la priorité de la tâche est définie sur Moyenne. De plus, nous donnons au groupe d’approbation 5 jours pour terminer la tâche. La personne désignée reste vide dans l’onglet Tâche, car nous l’affecterons de manière dynamique dans l’onglet Paramètres avancés. Nous donnons au groupe d’approbation deux itinéraires possibles lors de l’exécution de cette tâche : **« Approuver et publier »** si les personnes du groupe approuvent le contenu et qu’il peut être publié et **« Envoyer pour révision »** si des problèmes doivent être corrigés par l’éditeur ou éditrice d’origine. La personne chargée de l’approbation peut laisser des commentaires que l’éditeur ou éditrice d’origine verra si le workflow lui est renvoyé.
 
-Plus tôt dans ce tutoriel, nous avons créé un modèle de projet qui incluait un rôle d’approbateur. Chaque fois qu’un nouveau projet est créé à partir de ce modèle, un groupe spécifique au projet est créé pour le rôle Approbateurs . Tout comme une étape de participant, une tâche ne peut être affectée qu’à un utilisateur ou à un groupe. Nous souhaitons affecter cette tâche au groupe de projets correspondant au groupe Approbateurs . Tous les workflows lancés à partir d’un projet disposeront de métadonnées qui mappent les rôles de projet au groupe spécifique au projet.
+Plus tôt dans ce tutoriel, nous avons créé un modèle de projet qui incluait un rôle Approbateurs. Chaque fois qu’un nouveau projet est créé à partir de ce modèle, un groupe spécifique au projet est créé pour le rôle Approbateurs. Tout comme une étape de participant ou participante, une tâche ne peut être affectée qu’à un utilisateur ou une utilisatrice, ou à un groupe. Nous souhaitons affecter cette tâche au groupe de projets correspondant au groupe d’approbation. Tous les workflows lancés à partir d’un projet disposeront de métadonnées qui mappent les rôles de projet au groupe spécifique au projet.
 
-Copiez+Collez le code suivant dans le **Script** zone de texte de l’onglet **Paramètres avancés**. Ce code lit les métadonnées du workflow et affecte la tâche au groupe Approbateurs du projet. S’il ne trouve pas la valeur du groupe d’approbateurs, il revient à attribuer la tâche au groupe Administrateurs.
+Copiez et collez le code suivant dans la zone de texte **Script** de l’onglet Paramètres avancés. Ce code lit les métadonnées du workflow et affecte la tâche au groupe d’approbation du projet. S’il ne trouve pas la valeur du groupe d’approbation, il attribue la tâche au groupe d’administration.
 
 ```
 var projectApproverGrp = workflowData.getMetaDataMap().get("project.group.approvers","administrators");
@@ -492,7 +492,7 @@ var projectApproverGrp = workflowData.getMetaDataMap().get("project.group.approv
 task.setCurrentAssignee(projectApproverGrp);
 ```
 
-1. Faites glisser et déposez un autre &quot;**Créer une tâche de projet**&quot; à la branche centrale (Branche 2) sous la division OU. Renseignez la boîte de dialogue avec les propriétés suivantes :
+1. Faites glisser et déposez une autre étape **Créer une tâche de projet** sur le modèle à la branche centrale (Branch 2) sous la Division OU. Renseignez la boîte de dialogue avec les propriétés suivantes :
 
    ```
    Common Tab
@@ -514,9 +514,9 @@ task.setCurrentAssignee(projectApproverGrp);
        "Send Back for Revision"
    ```
 
-   Puisqu’il s’agit de l’itinéraire de validation push, la priorité de la tâche est définie sur Élevée. De plus, nous ne donnons au groupe Approbateurs qu’un seul jour pour terminer la tâche. Le cessionnaire reste vide dans l’onglet Tâche , car nous l’affecterons de manière dynamique dans l’onglet Paramètres avancés .
+   Puisqu’il s’agit de l’itinéraire d’approbation rapide, la priorité de la tâche est définie sur Élevée. De plus, nous ne donnons au groupe d’approbation qu’un seul jour pour terminer la tâche. La personne désignée reste vide dans l’onglet Tâche, car nous l’affecterons de manière dynamique dans l’onglet Paramètres avancés.
 
-   Nous pouvons réutiliser le même fragment de code de script que à l’étape 7 pour renseigner la variable **Script** zone de texte dans l’onglet ** Paramètres avancés **. Copiez+Collez le code ci-dessous :
+   Nous pouvons réutiliser le même fragment de script qu’à l’étape 7 pour renseigner la zone de texte **Script** dans l’onglet Paramètres avancés. Copiez et collez le code ci-dessous :
 
    ```
    var projectApproverGrp = workflowData.getMetaDataMap().get("project.group.approvers","administrators");
@@ -524,9 +524,9 @@ task.setCurrentAssignee(projectApproverGrp);
    task.setCurrentAssignee(projectApproverGrp);
    ```
 
-1. Faites glisser et déposez un composant** Aucune opération** vers la branche d’extrême droite (Branche 3). Le composant Aucune opération n’effectue aucune action et progresse immédiatement, ce qui représente le désir de l’éditeur d’origine de contourner l’étape d’approbation. Techniquement, nous pourrions laisser cette branche sans aucune étape de workflow, mais nous allons ajouter une étape Aucune opération en tant que bonne pratique. Cela permet aux autres développeurs de déterminer l’objectif de la Branche 3.
+1. Faites glisser et déposez un composant Aucune opération vers la branche la plus à droite (Branch 3). Le composant Aucune opération n’effectue aucune action et progresse immédiatement, ce qui représente la volonté de l’éditeur ou éditrice d’origine de contourner l’étape d’approbation. Techniquement, nous pourrions laisser cette branche sans aucune étape de workflow, mais nous allons ajouter une étape Aucune opération en tant que bonne pratique. Cela permet aux autres développeurs et développeuses de déterminer l’objectif de la Branch 3.
 
-   Double-cliquez sur l’étape du workflow et configurez le Titre et la Description :
+   Double-cliquez sur l’étape du workflow et configurez le Titre et la Description :
 
    ```
    Common Tab
@@ -535,13 +535,13 @@ task.setCurrentAssignee(projectApproverGrp);
        Description = "Placeholder step to indicate that the original editor decided to bypass the approver group."
    ```
 
-   ![modèle de workflow OU division](./assets/develop-aem-projects/workflow-stage-after-orsplit.png)
+   ![Division OU du modèle de workflow.](./assets/develop-aem-projects/workflow-stage-after-orsplit.png)
 
-   Le modèle de workflow doit ressembler à ceci une fois que les trois branches de la division OU ont été configurées.
+   Le modèle de workflow doit ressembler à ceci une fois que les trois branches de la Division OU ont été configurées.
 
-1. Puisque le groupe Approbateurs a la possibilité de renvoyer le workflow à l’éditeur d’origine pour d’autres révisions, nous comptons sur la variable **Atteindre** pour lire la dernière action effectuée et router le workflow vers le début ou le laisser continuer.
+1. Puisque le groupe d’approbation a la possibilité de renvoyer le workflow à l’éditeur ou l’éditrice d’origine pour d’autres révisions, l’étape **Atteindre** est nécessaire pour lire la dernière action effectuée et acheminer le workflow vers le début ou le laisser continuer.
 
-   Faites glisser et déposez le composant Atteindre l’étape (situé dans le sidekick sous Processus) sous la division OU où il se joint à nouveau. Double-cliquez et configurez les propriétés suivantes dans la boîte de dialogue :
+   Faites glisser et déposez le composant Étape Atteindre (situé dans le Sidekick, sous Workflow) sous la Division OU où il se joint à nouveau. Double-cliquez et configurez les propriétés suivantes dans la boîte de dialogue :
 
    ```
    Common Tab
@@ -554,11 +554,11 @@ task.setCurrentAssignee(projectApproverGrp);
        The step to go to. = "Start Task Creation"
    ```
 
-   La dernière étape que nous allons configurer est Script dans le cadre de l’étape de processus Atteindre . La valeur Script peut être incorporée via la boîte de dialogue ou configurée pour pointer vers un fichier externe. Le script Atteindre doit contenir un **function check()** et renvoyer la valeur true si le workflow doit atteindre l’étape spécifiée. Un renvoi de faux résultats fait avancer le workflow.
+   Le dernier élément que nous allons configurer est le script, qui fait partie de l’étape du processus Atteindre. La valeur du Script peut être incorporée via la boîte de dialogue ou configurée pour renvoyer vers un fichier externe. Le script Atteindre doit contenir une **fonction check()** et renvoyer la valeur « true » si le workflow doit atteindre l’étape spécifiée. Le renvoi de résultats « false » fait avancer le workflow.
 
-   Si le groupe d’approbateurs choisit la variable **&quot;Retour en vue de la révision&quot;** action (configurée aux étapes 7 et 8), nous souhaitons renvoyer le workflow au **&quot;Start Task Creation&quot;** étape .
+   Si le groupe d’approbation choisit l’action **Renvoyer pour révision** (configurée aux étapes 7 et 8), le workflow doit retourner à l’étape **Commencer la création de la tâche**.
 
-   Dans l’onglet Processus , ajoutez le fragment de code suivant à la zone de texte Script :
+   Sous l’onglet Processus, ajoutez le fragment de code suivant à la zone de texte Script :
 
    ```
    function check() {
@@ -572,17 +572,17 @@ task.setCurrentAssignee(projectApproverGrp);
    }
    ```
 
-1. Pour publier la payload, nous utiliserons l’onglet . **Activer la page/ressource** Étape du processus. Cette étape de processus nécessite peu de configuration et ajoute la charge utile du workflow à la file d’attente de réplication pour activation. Nous allons ajouter l’étape sous l’étape Atteindre , de sorte qu’elle ne peut être atteinte que si le groupe d’approbateurs a approuvé le contenu à publier ou si l’éditeur d’origine a choisi l’itinéraire Contourner l’approbation .
+1. Pour publier la payload, nous utiliserons l’étape du processus **Activer la page/ressource** prête à l’emploi. Cette étape de processus nécessite peu de configuration et ajoute la payload du workflow à la file d’attente de réplication pour activation. Nous allons ajouter l’étape sous l’étape Atteindre. Elle ne sera ainsi atteinte que si le groupe d’approbation a approuvé le contenu à publier ou si l’éditeur ou l’éditrice d’origine a choisi l’itinéraire Contourner l’approbation.
 
-   Faites glisser et déposez le **Activer la page/ressource** Étape du processus (disponible dans le sidekick sous Processus de gestion du contenu web) sous Atteindre l’étape dans le modèle.
+   Faites glisser l’étape de processus **Activer la page/ressource** (qui se trouve dans le Sidekick, sous le workflow de gestion de contenu web) dans l’étape Atteindre du modèle.
 
-   ![fin du modèle de workflow](assets/develop-aem-projects/workflow-model-final.png)
+   ![Modèle de workflow terminé](assets/develop-aem-projects/workflow-model-final.png).
 
-   À quoi doit ressembler le modèle de workflow après avoir ajouté les étapes Atteindre et Activer la page/ressource .
+   Le modèle de workflow doit ressembler à ceci après l’ajout des étapes Atteindre et Activer la page/ressource.
 
-1. Si le groupe Approbateur renvoie le contenu pour révision, nous voulons informer l’éditeur d’origine. Pour ce faire, nous pouvons modifier dynamiquement les propriétés de création de tâche. Nous allons déclencher la valeur de la propriété lastActionTaken de **&quot;Retour en vue de la révision&quot;**. Si cette valeur est présente, nous modifierons le titre et la description afin d’indiquer que cette tâche est le résultat du contenu renvoyé pour révision. Nous mettrons également à jour la priorité sur **&quot;High&quot;** afin qu’il s’agisse du premier élément sur lequel l’éditeur travaille. Enfin, nous définirons la date d’échéance de la tâche à un jour à partir du moment où le workflow a été renvoyé pour révision.
+1. Si le groupe d’approbation renvoie le contenu pour révision, la personne éditrice d’origine doit en être informée. Pour ce faire, nous pouvons modifier dynamiquement les propriétés de création de tâche. Nous modifierons la valeur de la propriété lastActionTaken de **Renvoyer pour révision**. Si cette valeur est présente, nous modifierons le titre et la description afin d’indiquer que cette tâche est le résultat du contenu renvoyé pour révision. Nous définirons également la priorité sur **Élevée**, afin que l’éditeur ou l’éditrice s’attelle à cette tâche en priorité. Enfin, nous définirons la date d’échéance de la tâche à « un jour » à partir du moment où le workflow a été renvoyé pour révision.
 
-   Remplacer le début `start-task-config.ecma` script (créé à l’étape 5) avec les éléments suivants :
+   Remplacez le script de démarrage `start-task-config.ecma` (créé à l’étape 5) par les éléments suivants :
 
    ```
    // start-task-config.ecma
@@ -623,23 +623,23 @@ task.setCurrentAssignee(projectApproverGrp);
    }
    ```
 
-## Créer l&#39;assistant &quot;démarrer le workflow&quot; {#start-workflow-wizard}
+## Créer l’assistant « Démarrer le workflow » {#start-workflow-wizard}
 
-Lorsque vous démarrez un workflow à partir d’un projet, vous devez spécifier un assistant pour démarrer le workflow. L’assistant par défaut : `/libs/cq/core/content/projects/workflowwizards/default_workflow` permet à l’utilisateur de saisir un titre de workflow, un commentaire de démarrage et un chemin de charge utile pour l’exécution du workflow. Vous trouverez également plusieurs autres exemples ci-dessous : `/libs/cq/core/content/projects/workflowwizards`.
+Lorsque vous démarrez un workflow au sein d’un projet, vous devez spécifier un assistant pour le lancer. L’assistant par défaut : `/libs/cq/core/content/projects/workflowwizards/default_workflow` permet à l’utilisateur ou l’utilisatrice de saisir un titre de workflow, un commentaire de démarrage et un chemin de payload pour l’exécution du workflow. Vous trouverez également plusieurs autres exemples ci-dessous : `/libs/cq/core/content/projects/workflowwizards`.
 
-La création d’un assistant personnalisé peut s’avérer très efficace, car vous pouvez collecter des informations essentielles avant le démarrage du workflow. Les données sont stockées dans le cadre des métadonnées du workflow. Les processus du workflow peuvent les lire et modifier dynamiquement le comportement en fonction des valeurs renseignées. Nous allons créer un assistant personnalisé pour affecter dynamiquement la première tâche du workflow à partir d&#39;une valeur de l&#39;assistant de démarrage.
+La création d’un assistant personnalisé peut s’avérer très efficace, car vous pouvez collecter des informations essentielles avant le démarrage du workflow. Les données sont stockées dans le cadre des métadonnées du workflow. Les processus du workflow peuvent les lire et modifier dynamiquement le comportement en fonction des valeurs renseignées. Nous allons créer un assistant personnalisé pour affecter dynamiquement la première tâche du workflow en fonction d’une valeur de l’assistant de démarrage.
 
-1. Dans CRXDE-Lite, nous allons créer un sous-dossier sous `/apps/aem-guides/projects-tasks/projects` dossier appelé &quot;assistants&quot;. Copiez l’assistant par défaut de : `/libs/cq/core/content/projects/workflowwizards/default_workflow` sous le dossier wizards nouvellement créé et renommez-le en **content-approval-start**. Le chemin complet doit maintenant être : `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`.
+1. Dans CRXDE-Lite, nous allons créer un sous-dossier dans le dossier `/apps/aem-guides/projects-tasks/projects` appelé « wizards » (assistants). Copiez l’assistant par défaut à partir de : `/libs/cq/core/content/projects/workflowwizards/default_workflow` sous le dossier « wizards » nouvellement créé et renommez-le en **content-approval-start**. Le chemin complet est le suivant : `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`.
 
-   L’assistant par défaut est un assistant à 2 colonnes dont la première colonne indique le titre, la description et la miniature du modèle de workflow sélectionné. La deuxième colonne comprend des champs pour le Titre du workflow, Commentaire de démarrage et Chemin d’accès à la charge utile. L’assistant est un formulaire d’IU tactile standard et utilise les [Composants de formulaire de l’IU Granite](https://experienceleague.adobe.com/docs/?lang=fr) pour renseigner les champs.
+   L’assistant par défaut est un assistant à 2 colonnes. La première colonne indique le titre, la description et la miniature du modèle de workflow sélectionné. La deuxième colonne comprend des champs pour le titre du workflow, les commentaires de démarrage et le chemin d’accès à la payload. L’assistant est un formulaire d’interface utilisateur tactile standard et utilise les [Composants de formulaire de l’IU Granite](https://experienceleague.adobe.com/docs/?lang=fr) pour renseigner les champs.
 
-   ![assistant de workflow de validation du contenu](./assets/develop-aem-projects/content-approval-start-wizard.png)
+   ![Assistant de workflow d’approbation du contenu](./assets/develop-aem-projects/content-approval-start-wizard.png).
 
-1. Nous ajouterons un champ supplémentaire à l’assistant qui est utilisé pour définir la personne désignée de la première tâche dans le workflow (voir [Création d’un modèle de processus](#create-workflow-model): Étape 5).
+1. Nous ajouterons un champ supplémentaire à l’assistant qui est utilisé pour définir la personne désignée de la première tâche dans le workflow (consultez l’étape 5 de la section [Créer un modèle de workflow](#create-workflow-model)).
 
-   Sous `../content-approval-start/jcr:content/items/column2/items` créer un noeud de type `nt:unstructured` named **&quot;assign&quot;**. Nous utiliserons le composant Sélecteur d’utilisateur de projets (basé sur l’ [Composant de sélecteur d’utilisateur Granite](https://experienceleague.adobe.com/docs/?lang=fr)). Ce champ de formulaire permet de restreindre facilement la sélection de l’utilisateur et du groupe à ceux appartenant au projet en cours.
+   Sous `../content-approval-start/jcr:content/items/column2/items`, créez un nœud de type `nt:unstructured` et nommez-le **« assign »**. Nous utiliserons le composant Sélecteur d’utilisateur ou d’utilisatrice de projets (basé sur le [Composant de sélecteur d’utilisateur ou d’utilisatrice Granite](https://experienceleague.adobe.com/docs/?lang=fr)). Ce champ de formulaire permet de limiter la sélection des utilisateurs et utilisatrices et des groupes à ceux qui appartiennent au projet en cours.
 
-   Vous trouverez ci-dessous la représentation XML de la variable **affecter** node:
+   Vous trouverez ci-dessous la représentation XML du nœud **assign** :
 
    ```xml
    <assign
@@ -655,19 +655,19 @@ La création d’un assistant personnalisé peut s’avérer très efficace, car
        required="{Boolean}true"/>
    ```
 
-1. Nous ajouterons également un champ de sélection des priorités qui déterminera la priorité de la première tâche du workflow (voir [Création d’un modèle de processus](#create-workflow-model): Étape 5).
+1. Nous ajouterons également un champ de sélection des priorités qui déterminera la priorité de la première tâche du workflow (consultez l’étape 5 de la section [Créer un modèle de workflow](#create-workflow-model)).
 
-   Sous `/content-approval-start/jcr:content/items/column2/items` créer un noeud de type `nt:unstructured` named **priority**. Nous utiliserons la variable [Composant Sélection de l’IU Granite](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) pour remplir le champ de formulaire.
+   Sous `/content-approval-start/jcr:content/items/column2/items`, créez un nœud de type `nt:unstructured` et nommez-le **priority**. Nous utiliserons le [composant Sélection de l’IU Granite](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) pour remplir le champ de formulaire.
 
-   Sous la **priority** noeud auquel nous allons ajouter un **items** noeud de **nt:unstructured**. Sous la **items** ajoutez 3 noeuds supplémentaires pour remplir les options de sélection pour Élevé, Moyen et Faible. Chaque noeud est de type **nt:unstructured** et doit avoir une **text** et **value** . Le texte et la valeur doivent être identiques :
+   Sous le nœud **priority**, nous allons ajouter un nœud **items** de **nt:unstructured**. Sous le nœud **items**, ajoutez 3 nœuds supplémentaires pour remplir les options de sélection pour High, Medium et Low (Élevé, Moyen et Faible). Chaque nœud est de type **nt:unstructured** et doit avoir une propriété **text** et **value**. Les valeurs de ces 2 propriétés doivent être identiques :
 
    1. Élevée
    1. Moyenne
    1. Faible
 
-   Pour le noeud Medium , ajoutez une propriété booléenne supplémentaire nommée &quot;**selected&quot;** avec une valeur définie sur **true**. Cela permet de s’assurer que Support est la valeur par défaut dans le champ de sélection.
+   Pour le nœud Medium, ajoutez une propriété booléenne supplémentaire nommée « **selected »** et définissez la valeur suivante : **true**. Cela permet de s’assurer que Medium est la valeur par défaut dans le champ de sélection.
 
-   Vous trouverez ci-dessous une représentation XML de la structure et des propriétés du noeud :
+   Vous trouverez ci-dessous une représentation XML de la structure et des propriétés du nœud :
 
    ```xml
    <priority
@@ -693,9 +693,9 @@ La création d’un assistant personnalisé peut s’avérer très efficace, car
    </priority>
    ```
 
-1. Nous autoriserons l’initiateur du workflow à définir la date d’échéance de la tâche initiale. Nous utiliserons la variable [Sélecteur de date de l’IU Granite](https://experienceleague.adobe.com/docs/?lang=fr) champ de formulaire pour capturer cette entrée. Nous ajouterons également un champ masqué avec une [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) pour vous assurer que l’entrée est stockée en tant que propriété de type Date dans le JCR.
+1. Nous autorisons à présent la personne à l’origine du workflow à définir la date d’échéance de la tâche initiale. Le champ de formulaire [Sélecteur de date de l’IU Granite](https://experienceleague.adobe.com/docs/?lang=fr) permet de capturer cette entrée. Le champ masqué [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) est ajouté pour s’assurer que l’entrée est stockée en tant que propriété de type Date dans JCR.
 
-   Ajouter deux **nt:unstructured** noeuds avec les propriétés suivantes représentées ci-dessous en XML :
+   Ajoutez deux nœuds **nt:unstructured** avec les propriétés suivantes représentées ci-dessous en code XML :
 
    ```xml
    <duedate
@@ -715,17 +715,17 @@ La création d’un assistant personnalisé peut s’avérer très efficace, car
        value="Calendar"/>
    ```
 
-1. Vous pouvez afficher le code complet de la boîte de dialogue de l’assistant de démarrage. [here](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/projects-tasks-guide/ui.apps/src/main/content/jcr_root/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start/.content.xml).
+1. Pour consulter le code complet de la boîte de dialogue de l’assistant de démarrage, rendez-vous [ici](https://github.com/Adobe-Marketing-Cloud/aem-guides/blob/master/projects-tasks-guide/ui.apps/src/main/content/jcr_root/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start/.content.xml).
 
-## Connexion du workflow et du modèle de projet {#connecting-workflow-project}
+## Connecter le workflow et le modèle de projet {#connecting-workflow-project}
 
-La dernière chose que nous devons faire est de nous assurer que le modèle de workflow est disponible pour être lancé depuis l’un des projets. Pour ce faire, nous devons revoir le modèle de projet que nous avons créé dans la partie 1 de cette série.
+Il ne reste plus qu’à s’assurer que le modèle de workflow est disponible pour être lancé à partir de l’un des projets. Pour ce faire, nous devons revoir le modèle de projet que nous avons créé dans la partie 1 du tutoriel.
 
-La configuration de workflow est une zone d’un modèle de projet qui spécifie les workflows disponibles à utiliser avec ce projet. La configuration est également chargée de spécifier l’assistant Démarrer le workflow lors du lancement du workflow (que nous avons créé dans la [étapes précédentes)](#start-workflow-wizard). La configuration Workflow d’un modèle de projet est &quot;en ligne&quot;, ce qui signifie que la mise à jour de la configuration de workflow aura un effet sur les nouveaux projets créés ainsi que sur les projets existants qui utilisent le modèle.
+La configuration de workflow est une zone d’un modèle de projet qui indique les workflows disponibles pour le projet. La configuration indique également l’assistant de démarrage du workflow lors du lancement du workflow (que nous avons créé dans les [étapes précédentes)](#start-workflow-wizard). La configuration du workflow d’un modèle de projet est « active », ce qui signifie que la mise à jour de la configuration de workflow affectera les nouveaux projets créés ainsi que les projets existants qui utilisent le modèle.
 
-1. Dans CRXDE-Lite, accédez au modèle de projet de création créé précédemment à l’adresse `/apps/aem-guides/projects-tasks/projects/templates/authoring-project/workflows/models`.
+1. Dans CRXDE-Lite, accédez au modèle de projet de création créé précédemment dans `/apps/aem-guides/projects-tasks/projects/templates/authoring-project/workflows/models`.
 
-   Sous le noeud models , ajoutez un nouveau noeud nommé **contentapproval** avec un type de noeud **nt:unstructured**. Ajoutez les propriétés suivantes au nœud :
+   Sous le nœud models, ajoutez un nouveau nœud nommé **contentapproval** avec le type de nœud **nt:unstructured**. Ajoutez les propriétés suivantes au nœud :
 
    ```xml
    <contentapproval
@@ -737,10 +737,10 @@ La configuration de workflow est une zone d’un modèle de projet qui spécifie
 
    >[!NOTE]
    >
-   >Si vous utilisez AEM 6.4, l’emplacement du workflow a changé. Pointez la `modelId` à l’emplacement du modèle de processus d’exécution sous `/var/workflow/models/aem-guides/content-approval-workflow`
+   >Si vous utilisez AEM 6.4, l’emplacement du workflow a été modifié. Pointez la propriété `modelId` sur l’emplacement du modèle de workflow d’exécution sous `/var/workflow/models/aem-guides/content-approval-workflow`.
    >
    >
-   >Voir [ici pour plus d’informations sur le changement de l’emplacement du workflow.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/workflows-best-practices.html#LocationsWorkflowModels)
+   >Rendez-vous [ici pour en savoir plus sur le nouvel emplacement du workflow.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=fr)
 
    ```xml
    <contentapproval
@@ -750,10 +750,10 @@ La configuration de workflow est une zone d’un modèle de projet qui spécifie
    />
    ```
 
-1. Une fois que le workflow d’approbation de contenu a été ajouté au modèle de projet, il doit être disponible pour démarrer à partir de la mosaïque Processus du projet. Allez-y, lancez-vous et jouez avec les différents itinéraires que nous avons créés.
+1. Une fois que le workflow d’approbation de contenu a été ajouté au modèle de projet, il doit pouvoir être lancé à partir de la mosaïque Workflow du projet. Après l’effort, le réconfort. Lancez-vous et essayez les différents itinéraires que nous avons créés.
 
 ## Documents annexes
 
-* [Télécharger le module de tutoriel terminé](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
+* [Télécharger le package de tutoriel terminé](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Référentiel de code complet sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
-* [Documentation AEM Projets](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects.html)
+* [Documentation des projets AEM](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects.html?lang=fr)
