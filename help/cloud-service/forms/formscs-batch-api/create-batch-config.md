@@ -1,6 +1,6 @@
 ---
-title: Configuration des données par lots
-description: Configuration des données par lots
+title: Configurer des données par lot
+description: Configurer des données par lot
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,31 +10,31 @@ topic: Development
 kt: 9673
 exl-id: db25e5a2-e1a8-40ad-af97-35604d515450
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '135'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
-# Création d’une configuration par lots
+# Créer une configuration par lot
 
-Pour utiliser une API de lot, créez une configuration de lot et exécutez une exécution basée sur cette configuration. La vidéo suivante présente une démonstration de la création d’une configuration par lots à l’aide de l’API
+Pour utiliser une API Batch, créez une configuration par lot et lancez une exécution basée sur cette configuration. La vidéo suivante illustre la création d’une configuration par lot à l’aide de l’API.
 
 >[!NOTE]
->Assurez-vous que l’utilisateur AEM appartient à ```forms-users``` groupe pour effectuer des appels API.
+>Assurez-vous que l’utilisateur ou l’utilisatrice AEM appartient au groupe ```forms-users``` pour effectuer des appels d’API.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)
 
-## Création d’une configuration de lot
+## Créer une configuration par lot
 
-Voici le point de terminaison du POST pour la création d’une configuration par lots.
+Voici le point d’entrée POST pour la création d’une configuration par lot.
 
 ```xml
 <baseURL>/config
 ```
 
-Voici la configuration minimale à spécifier lors de la création de la configuration par lots. Elle doit être transmise en tant qu’objet JSON dans le corps de la requête HTTP
+Voici la configuration minimale qui doit être spécifiée lors de la création de la configuration par lot. Elle doit être transmise en tant qu’objet JSON dans le corps de la requête HTTP.
 
 ```
 {
@@ -48,13 +48,13 @@ Voici la configuration minimale à spécifier lors de la création de la configu
 }
 ```
 
-## Vérifier la configuration du lot
+## Vérifier la configuration par lot
 
-Pour vérifier la création réussie de la configuration par lots, vous pouvez effectuer un appel de demande de GET vers le point de terminaison suivant.
+Pour vérifier la création corecte de la configuration par lot, vous pouvez lancer une requête GET au point d’entrée suivant.
 
 
 ```xml
 <baseURL>/config/monthlystatements
 ```
 
-Il vous suffit de transmettre un objet JSON vide dans le corps de la requête HTTP.
+Il suffit de transmettre un objet JSON vide dans le corps de la requête HTTP.
