@@ -1,6 +1,6 @@
 ---
 title: Concepts de base du développement des services OSGi
-description: Découvrez les principes de base du développement d’un service OSGi
+description: Découvrez les concepts de base du développement d’un service OSGi.
 role: Developer
 level: Beginner
 topic: Development
@@ -10,18 +10,18 @@ thumbnail: 335476.jpeg
 last-substantial-update: 2022-09-16T00:00:00Z
 exl-id: a3a9bf59-e9a2-4322-ac93-9c12c70b9a75
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '88'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Services OSGi
 
-Découvrez les principes de base du développement de services OSGi, notamment :
+Découvrez les concepts de base du développement de services OSGi, notamment les éléments suivants :
 
-+ Comment convertir un POJO Java en service OSGi
-+ Comment lier un service OSGi à une interface Java
++ Comment convertir un POJO Java en service OSGi.
++ Comment lier un service OSGi à une interface Java.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335476?quality=12&learn=on)
 
