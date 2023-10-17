@@ -1,6 +1,6 @@
 ---
-title: Mise en oeuvre des méthodes de l’interface
-description: Mettez en oeuvre les méthodes d’interface pour créer des fichiers PDF à l’aide de l’API REST Document Cloud.
+title: Mettre en œuvre des méthodes de l’interface
+description: Mettez en œuvre les méthodes d’interface pour créer des fichiers PDF à l’aide de l’API REST de Document Cloud.
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -11,17 +11,17 @@ thumbnail: 7826.jpg
 kt: 7826
 exl-id: c1fd02aa-577b-453f-8948-ca50e3e8f89b
 source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '43'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Implémentation de l’interface
+# Mise en œuvre de l’interface
 
-Voici le code complet de la classe mettant en oeuvre l’interface.
+Voici le code complet de la classe mettant en œuvre l’interface.
 
-Cette classe utilise 2 méthodes d’utilitaire `getAccessToken`, `getJWTToken` et la méthode statique `getContentAnalyserRequest` de la classe `GetContentAnalyser`.
+Cette classe utilise 2 méthodes d’utilitaire, `getAccessToken` et `getJWTToken`, et la méthode statique `getContentAnalyserRequest` de la classe `GetContentAnalyser`.
 
 
 ```java
