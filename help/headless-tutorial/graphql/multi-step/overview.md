@@ -12,9 +12,9 @@ level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 source-git-commit: 4c0770eafbbbb90bfc00ab49be02e84c41d63057
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Pour suivre ce tutoriel, vous devez suivre les étapes ci-après :
 
 * Compétences de base en HTML et JavaScript
 * Les outils suivants doivent être installés localement :
-   * [Node.js v18](https://nodejs.org/)
+   * [Node.js v18](https://nodejs.org/)
    * [Git](https://git-scm.com/)
    * Un IDE (par exemple, [Microsoft® Visual Studio Code](https://code.visualstudio.com/))
 
@@ -57,4 +57,4 @@ Commencez le tutoriel par la section [Définition de modèles de fragment de con
 
 Le code source et les packages de contenu sont disponibles sur la page [AEM Guides - Projet GitHub WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql).
 
-Si vous rencontrez un problème avec le tutoriel ou le code, laissez une [Problème GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
+Si vous rencontrez un problème avec le tutoriel ou le code, veuillez consigner un [Problème GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
