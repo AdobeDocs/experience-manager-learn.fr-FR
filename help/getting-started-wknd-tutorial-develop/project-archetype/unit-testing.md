@@ -37,7 +37,7 @@ _Si Java™ 8 et Java™ 11 sont tous deux installés sur le système, le prog
 
 Consultez le code de ligne de base sur lequel le tutoriel s’appuie :
 
-1. Consultez la branche `tutorial/unit-testing-start` dans [GitHub](https://github.com/adobe/aem-guides-wknd).
+1. Consultez la branche `tutorial/unit-testing-start` à partir de [GitHub](https://github.com/adobe/aem-guides-wknd).
 
    ```shell
    $ cd aem-guides-wknd
@@ -52,7 +52,7 @@ Consultez le code de ligne de base sur lequel le tutoriel s’appuie :
 
    >[!NOTE]
    >
-   > Si vous utilisez la version 6.5 ou 6.4 d’AEM, ajoutez le profil `classic` à n’importe quelle commande Maven.
+   > Si vous utilisez AEM 6.5 ou 6.4, ajoutez le profil `classic` à n’importe quelle commande Maven.
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -138,8 +138,6 @@ Un test unitaire est généralement mappé à une classe Java™. Dans ce chapit
    1. facilement l’identifier comme fichier de test _pour_ `BylineImpl.java`
    1. mais aussi de différencier le fichier de test _de_ la classe en cours de test, `BylineImpl.java`.
 
-
-
 ## Vérifier le fichier BylineImplTest.java {#reviewing-bylineimpltest-java}
 
 À ce stade, le fichier de test JUnit est une classe Java™ vide.
@@ -184,7 +182,7 @@ Un test unitaire est généralement mappé à une classe Java™. Dans ce chapit
 
    Pour commencer, nous utilisons une méthode de test unique pour chaque méthode publique sur la classe que nous testons, de sorte que :
 
-   | BylineImpl.java |  | BylineImplTest.java |
+   | BylineImpl.java |              | BylineImplTest.java |
    | ------------------|--------------|---------------------|
    | getName() | est testée par | testGetName() |
    | getOccupations() | est testée par | testGetOccupations() |
