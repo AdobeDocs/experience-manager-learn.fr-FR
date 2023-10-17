@@ -1,45 +1,45 @@
 ---
-title: Fichiers en lecture seule ou non modifiables AMS Dispatcher
-description: Comprendre pourquoi certains fichiers sont en lecture seule ou non modifiables et comment effectuer les modifications fonctionnelles que vous souhaitez
+title: Fichiers en lecture seule ou non modifiables du Dispatcher AMS
+description: Découvrir pourquoi certains fichiers sont en lecture seule ou non modifiables et comment effectuer les modifications fonctionnelles que vous souhaitez
 version: 6.5
 topic: Administration, Development
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: d6b7d63ba02ca73d6c1674d90db53c6eebab3bd2
-workflow-type: tm+mt
+exl-id: 7be6b3f9-cd53-41bc-918d-5ab9b633ffb3
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '826'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
-
 
 # Fichiers en lecture seule ou non modifiables dans AMS
 
 [Table des matières](./overview.md)
 
-[&lt;- Précédent : Journaux courants](./common-logs.md)
+[&lt;- Précédent : journaux courants](./common-logs.md)
 
 ## Description
 
 Ce document décrit les fichiers verrouillés et à ne pas modifier, ainsi que la manière de définir correctement les paramètres de configuration souhaités.
 
-Lorsqu’AMS fournit un système, il déploie une configuration de base qui rend tout fonctionnel et sécurisé.  Ce sont des choses qu’AMS veut garantir comme base de fonctionnalités et de sécurité.  Pour ce faire, certains fichiers sont marqués comme étant en lecture seule et immuables afin que vous ne puissiez pas les modifier.
+Lorsqu’AMS fournit un système, il déploie une configuration de base qui rend tout fonctionnel et sécurisé.Ce sont des choses qu’AMS veut garantir comme base de fonctionnalités et de sécurité.Pour ce faire, certains fichiers sont marqués comme étant en lecture seule et non modifiables afin que vous ne puissiez pas les modifier.
 
-La mise en page ne vous empêche pas de modifier leur comportement et de remplacer les modifications dont vous avez besoin.  Au lieu de modifier ces fichiers, vous superposez votre propre fichier qui remplace l’original.
+La disposition ne vous empêche pas de modifier leur comportement et de remplacer les modifications dont vous avez besoin.Au lieu de modifier ces fichiers, vous recouvrez votre propre fichier qui remplace l’original.
 
-Cela vous permet également d’être assuré que lorsqu’AMS corrige les dispatchers avec les derniers correctifs et améliorations de sécurité, ils ne modifieront pas vos fichiers.  Vous pouvez ensuite continuer à bénéficier des améliorations et adopter uniquement les modifications souhaitées.
-![Affiche une piste de bowling avec une balle qui roule le long de la piste.  La balle a une flèche avec le mot qui vous montre.  Les pare-chocs sont surmontés et ils ont les mots fichiers immuables au-dessus.](assets/immutable-files/bowling-file-immutability.png "bowling-file-immutability")
-Comme illustré dans l&#39;image ci-dessus, les fichiers immuables ne vous empêchent pas de jouer au jeu.  Ils vous empêchent juste de faire du mal à votre performance et vous maintiennent dans la file.  Cette méthode nous permet d’accéder aux quelques fonctionnalités clés :
+Cela permet également de garantir que lorsqu’AMS corrige les Dispatchers avec les derniers correctifs et améliorations de sécurité, vos fichiers ne seront pas modifiés.Vous pouvez ensuite continuer à bénéficier des améliorations et adopter uniquement les modifications que vous souhaitez.
+![Montre une piste de bowling avec une boule qui roule le long de la piste.  La boule comporte une flèche avec le mot « you » (vous).  Les rails des gouttières sont levés et les mots « immutable files » (fichiers non modifiables) apparaissent au-dessus.](assets/immutable-files/bowling-file-immutability.png "bowling-file-immutability")
+Comme illustré dans l’image ci-dessus, les fichiers non modifiables ne vous empêchent pas de jouer.Ils vous empêchent juste de nuire à vos performances et vous maintiennent sur la piste.Cette méthode nous permet d’accéder aux quelques fonctionnalités clés :
 
 - Les personnalisations sont gérées dans leurs propres espaces sécurisés.
-- Superposition de modifications personnalisées reflète celle des méthodes de superposition dans AEM
-- Les configurations AMS de correspondance peuvent être effectuées sans modifier les personnalisations.
-- Les tests de l’installation de base par rapport aux configurations personnalisées peuvent être effectués simultanément pour aider à déterminer si les problèmes sont dus à des personnalisations ou à autre chose. Quels fichiers ?
+- Le recouvrement de modifications personnalisées reflète les méthodes de recouvrement dans AEM.
+- La correction des configurations AMS peut être effectuée sans modifier les personnalisations.
+- Les tests de l’installation de base par rapport aux configurations personnalisées peuvent être effectués simultanément pour aider à déterminer si les problèmes sont dus à des personnalisations ou à autre chose. Quels fichiers ?
 
 
-Voici une liste standard de fichiers déployés avec un Dispatcher :
+Voici une liste standard de fichiers déployés avec un Dispatcher :
 
 ```
 /etc/httpd/
@@ -124,13 +124,13 @@ Voici une liste standard de fichiers déployés avec un Dispatcher :
     └── mod_dispatcher.so
 ```
 
-Pour déterminer les fichiers non modifiables, vous pouvez exécuter la commande suivante sur un Dispatcher pour afficher :
+Pour déterminer les fichiers non modifiables, vous pouvez exécuter la commande suivante sur un Dispatcher pour les afficher :
 
 ```
 $ lsattr -Rl /etc/httpd 2>/dev/null | grep Immutable
 ```
 
-Voici un exemple de réponse parmi les fichiers non modifiables :
+Voici un exemple de réponse indiquant quels fichiers sont non modifiables :
 
 ```
 /etc/httpd/conf/httpd.conf   Immutable
@@ -184,7 +184,7 @@ Voici un exemple de réponse parmi les fichiers non modifiables :
 
 ### Variables
 
-Les variables vous permettent d’apporter des modifications fonctionnelles sans modifier les fichiers de configuration eux-mêmes.  Certains éléments de la configuration peuvent être ajustés en ajustant les valeurs des variables.  Exemple que nous pouvons mettre en surbrillance à partir du fichier `/etc/httpd/conf.d/dispatcher_vhost.conf` est illustré ici :
+Les variables vous permettent d’apporter des modifications fonctionnelles sans modifier les fichiers de configuration eux-mêmes.Certains éléments de la configuration peuvent être ajustés en ajustant les valeurs des variables.Voici un exemple à partir du fichier `/etc/httpd/conf.d/dispatcher_vhost.conf` :
 
 ```
 Include /etc/httpd/conf.d/variables/ams_default.vars
@@ -197,7 +197,7 @@ IfModule disp_apache2.c
 /IfModule
 ```
 
-Découvrez comment la directive DispatcherLogLevel comporte une variable `DISP_LOG_LEVEL` au lieu de la valeur normale que vous voyez là.  Au-dessus de cette section de code, une instruction d’inclusion s’affiche également dans un fichier de variables.  Le fichier de variable `/etc/httpd/conf.d/variables/ams_default.vars` C&#39;est là que nous voulons regarder.  Voici le contenu de ce fichier de variables :
+Découvrez comment la directive DispatcherLogLevel comporte une variable de `DISP_LOG_LEVEL` au lieu de la valeur normale que vous devriez voir.Au-dessus de cette section de code, une instruction d’inclusion s’affiche également dans un fichier de variables.Nous allons ensuite regarder le fichier de variables `/etc/httpd/conf.d/variables/ams_default.vars`.Voici le contenu de ce fichier de variables :
 
 ```
 Define DISP_LOG_LEVEL info
@@ -209,17 +209,17 @@ Define PUBLISH_FORCE_SSL 0
 Define LIVECYCLE_FORCE_SSL 1
 ```
 
-Vous pouvez voir ci-dessus que la valeur actuelle de `DISP_LOG_LEVEL` est `info`.  Nous pouvons l’ajuster pour suivre ou déboguer, ou pour la valeur/le niveau de nombre de votre choix.  Désormais, partout où le contrôle du niveau de journalisation s’ajuste automatiquement.
+Vous pouvez voir ci-dessus que la valeur actuelle de la variable `DISP_LOG_LEVEL` est `info`.Nous pouvons l’ajuster pour le tracking ou le débogage, ou l’ajuster sur la valeur numérique/le niveau de votre choix.Désormais, tout ce qui contrôle le niveau de journalisation s’ajustera automatiquement.
 
 ### Méthode de recouvrement
 
-Veuillez comprendre les fichiers d’inclusion de niveau supérieur, car ils seront le point de départ de toute personnalisation.  Pour commencer avec un exemple simple, nous avons un scénario dans lequel nous voulons ajouter un nouveau nom de domaine que nous prévoyons de pointer vers ce Dispatcher.  L’exemple de domaine que nous utiliserons est we-retail.adobe.com.  Nous allons commencer par copier un fichier de configuration existant vers un nouveau fichier où nous pourrons ajouter nos modifications :
+Veuillez vous familiariser avec les fichiers d’inclusion de niveau supérieur, car ils constituent le point de départ de toute personnalisation.Pour commencer avec un exemple simple, nous avons un scénario dans lequel nous voulons ajouter un nouveau nom de domaine que nous prévoyons de pointer vers ce Dispatcher.L’exemple de domaine que nous utiliserons est we-retail.adobe.com.Nous allons commencer par copier un fichier de configuration existant vers un nouveau fichier où nous pourrons ajouter nos modifications :
 
 ```
 $ cp /etc/httpd/conf.d/available_vhosts/aem_publish.vhost /etc/httpd/conf.d/available_vhosts/weretail_publish.vhost
 ```
 
-Nous avons copié le fichier aem_publish.vhost existant car il contient déjà ce dont nous avons besoin pour que les choses fonctionnent et nous ne voulons pas réinventer un démarrage déjà fort.  Maintenant, nous éditons le nouveau fichier weretail.vhost et apportons les modifications nécessaires.
+Nous avons copié le fichier aem_publish.vhost existant, car il contient déjà ce dont nous avons besoin pour que les choses fonctionnent et nous ne voulons pas réinventer un démarrage déjà fort.Nous allons maintenant éditer le nouveau fichier weretail.vhost et y apporter les modifications nécessaires.
 
 Avant :
 
@@ -257,25 +257,25 @@ VirtualHost *:80
 /VirtualHost
 ```
 
-Maintenant, nous avons mis à jour notre `ServerName` et `ServerAlias` pour correspondre aux nouveaux noms de domaine, ainsi que pour mettre à jour d’autres en-têtes de chemin de navigation.  Nous allons maintenant activer notre nouveau fichier pour permettre à Apache de savoir comment utiliser notre nouveau fichier :
+Maintenant, nous avons mis à jour notre `ServerName` et notre `ServerAlias` pour correspondre aux nouveaux noms de domaine, ainsi que pour mettre à jour d’autres en-têtes de chemin de navigation.Nous allons maintenant activer notre nouveau fichier pour permettre à Apache de savoir comment utiliser notre nouveau fichier :
 
 ```
 $ cd /etc/httpd/conf.d/enabled_vhosts/; ln -s ../available_vhosts/weretail_publish.vhost .
 ```
 
-Le serveur web Apache sait maintenant que le domaine doit générer du trafic, mais nous devons toujours informer le module de Dispatcher qu’il a un nouveau nom de domaine à honorer.  Nous allons commencer par créer une nouvelle `*_vhost.any` fichier `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` et à l&#39;intérieur de ce fichier, nous allons placer le nom de domaine que nous voulons honorer :
+Le serveur web Apache sait maintenant qu’il doit générer du trafic pour ce domaine, mais nous devons toujours informer le module du Dispatcher qu’il a un nouveau nom de domaine à respecter.Nous allons commencer par créer un nouveau fichier `*_vhost.any` `/etc/httpd/conf.dispatcher.d/vhosts/weretail_vhosts.any` et à l’intérieur de ce fichier, nous allons placer le nom de domaine que nous voulons respecter :
 
 ```
 "we-retail.adobe.com"
 ```
 
-Maintenant, nous devons créer un nouveau fichier de ferme qui utilisera notre nouveau fichier d&#39;entrée vhost, et nous allons commencer par copier un fichier de démarrage solide dans notre nouveau fichier.
+Nous devons maintenant créer un nouveau fichier de batterie qui utilisera notre nouveau fichier d’entrée vhost, et nous allons commencer par copier un fichier de démarrage fort dans notre nouveau fichier.
 
 ```
 $ cp /etc/httpd/conf.dispatcher.d/available_farms/999_ams_publish_farm.any /etc/httpd/conf.dispatcher.d/available_farms/400_weretail_publish_farm.any
 ```
 
-Permet d’afficher les modifications que nous devrons apporter à ce fichier de ferme.
+Permet d’afficher les modifications à apporter à ce fichier de batterie.
 
 Avant :
 
@@ -299,17 +299,17 @@ Après :
 }
 ```
 
-Nous avons maintenant mis à jour le nom de la ferme et l’inclusion qu’elle utilise dans la variable `/virtualhosts` de la configuration de la ferme.  Nous devons activer ce nouveau fichier de ferme afin qu’il puisse l’utiliser dans la configuration en cours d’exécution :
+Nous avons maintenant mis à jour le nom de batterie et l’inclusion utilisée dans la section `/virtualhosts` de la configuration de la batterie.Nous devons activer ce nouveau fichier de batterie afin qu’il puisse être utilisé dans la configuration en cours d’exécution :
 
 ```
 $ cd /etc/httpd/conf.dispatcher.d/enabled_farms/; ln -s ../available_farms/400_weretail_publish_farm.any .
 ```
 
-Maintenant nous rechargerions simplement le service de serveur web et utiliserions notre nouveau domaine !
+Il ne nous reste plus qu’à charger à nouveau le service de serveur web et à utiliser notre nouveau domaine.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
 
-Notez que nous avons uniquement modifié les éléments dont nous avions besoin pour modifier et exploiter les inclusions et le code existants fournis avec les fichiers de configuration de ligne de base.  Nous n&#39;avons qu&#39;à délimiter l&#39;élément que nous devons changer.  Cela facilite la tâche et nous permet de conserver moins de code.
+Notez que nous avons uniquement modifié les éléments dont nous avions besoin pour modifier et exploiter les inclusions et le code existants fournis avec les fichiers de configuration de base.Nous n’avons qu’à délimiter l’élément que nous devons modifier.Cela facilite la tâche et nous permet de conserver moins de code.
 </div>
 
-[Suivant -> Contrôle de l’intégrité de Dispatcher](./health-check.md)
+[Suivant -> Contrôle de l’intégrité du Dispatcher](./health-check.md)
