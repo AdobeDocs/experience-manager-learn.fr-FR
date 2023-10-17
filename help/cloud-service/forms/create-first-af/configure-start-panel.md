@@ -1,6 +1,6 @@
 ---
-title: Configuration du panneau de démarrage
-description: Ajoutez un composant de texte statique au panneau de démarrage.
+title: Configurer le panneau Démarrage
+description: Ajoutez un composant de texte statique au panneau Démarrage.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -12,13 +12,13 @@ kt: 7388
 thumbnail: 332235.jpg
 exl-id: f3c01af3-bce1-4a7b-84b7-5e0889bebe28
 source-git-commit: 2f619bc6ebaae36c8b9d05d8c4ff5c1cc8c18332
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '28'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Configuration du panneau de démarrage
+# Configurer le panneau Démarrage
 
 Mettez en forme le texte dans le composant de texte statique à l’aide de l’éditeur de texte enrichi.
 
