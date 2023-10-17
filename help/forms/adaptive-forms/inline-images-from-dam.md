@@ -1,6 +1,6 @@
 ---
-title: Affichage des images DAM intégrées dans Adaptive Forms
-description: Affichage des images DAM intégrées dans Adaptive Forms
+title: Afficher des images DAM intégrées dans les formulaires adaptatifs
+description: Afficher des images DAM intégrées dans les formulaires adaptatifs
 feature: Adaptive Forms
 topics: development
 version: 6.4,6.5
@@ -10,20 +10,21 @@ level: Experienced
 last-substantial-update: 2022-10-20T00:00:00Z
 thumbnail: inline-dam.jpg
 kt: kt-11307
-source-git-commit: 9229a92a0d33c49526d10362ac4a5f14823294ed
-workflow-type: tm+mt
+exl-id: 339eb16e-8ad8-4b98-939c-b4b5fd04d67e
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Affichage de l’image DAM dans Forms adaptatif
+# Afficher une image DAM dans les formulaires adaptatifs
 
 Un cas d’utilisation courant consiste à afficher la ou les images résidant dans le référentiel crx intégré dans un formulaire adaptatif.
 
-## Ajout d’une image d’espace réservé
+## Ajouter une image d’espace réservé
 
-La première étape consiste à ajouter une balise &lt;div> d’espace réservé au composant de panneau. Dans le code ci-dessous, le composant de panneau est identifié par son nom de classe CSS de chargement de photo. La fonction JavaScript fait partie de la bibliothèque cliente associée aux formulaires adaptatifs. Cette fonction est appelée dans l’événement initialize du composant de pièce jointe.
+La première étape consiste à ajouter une balise div d’espace réservé au composant de panneau. Dans le code ci-dessous, le composant de panneau est identifié par son nom de classe CSS, photo-upload. La fonction JavaScript fait partie de la bibliothèque cliente associée aux formulaires adaptatifs. Cette fonction est appelée dans l’événement d’initialisation du composant de pièce jointe.
 
 ```javascript
 /**
@@ -37,7 +38,7 @@ function addPlaceholderDiv(){
 
 ### Afficher une image intégrée
 
-Une fois que l’utilisateur a sélectionné l’image, le champ masqué ImageName est renseigné avec le nom de l’image sélectionné. Ce nom d’image est ensuite transmis à la fonction damURLToFile qui appelle la fonction createFile pour convertir une URL en objet Blob pour FileReader.readAsDataURL().
+Une fois que l’utilisateur ou l’utilisatrice a sélectionné l’image, le champ masqué ImageName est renseigné avec le nom de l’image sélectionnée. Ce nom d’image est ensuite transmis à la fonction damURLToFile qui appelle la fonction createFile pour convertir une URL en objet Blob pour FileReader.readAsDataURL().
 
 ```javascript
 /**
@@ -82,8 +83,8 @@ async function createFile(imageName){
 
 ### Déployer sur votre serveur
 
-* Téléchargez et installez le [bibliothèque cliente et exemples d’images](assets/InlineDAMImage.zip) sur votre instance AEM à l’aide d’AEM Package Manager.
-* Téléchargez et installez le [exemple de formulaire](assets/FieldInspectionForm.zip) sur votre instance AEM à l’aide d’AEM gestionnaire de packages.
-* Pointez votre navigateur sur [FieldInspectionForm](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled)
-* Sélectionner l’un des accessoires
+* Téléchargez et installez la [bibliothèque cliente et les exemples d’images](assets/InlineDAMImage.zip) sur votre instance AEM à l’aide du gestionnaire de packages AEM.
+* Téléchargez et installez l’[exemple de formulaire](assets/FieldInspectionForm.zip) sur votre instance AEM à l’aide du gestionnaire de packages AEM.
+* Pointez votre navigateur sur [FielInspectionForm](http://localhost:4502/content/dam/formsanddocuments/fieldinspection/fieldinspection/jcr:content?wcmmode=disabled).
+* Sélectionnez l’un des éléments.
 * L’image doit s’afficher dans le formulaire.
