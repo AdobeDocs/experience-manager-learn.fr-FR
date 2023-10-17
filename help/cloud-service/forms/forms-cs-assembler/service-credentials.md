@@ -1,6 +1,6 @@
 ---
-title: Informations d’identification du service AEM
-description: Téléchargez les informations d’identification du service depuis AEM Developer Console.
+title: Informations d’identification de service AEM
+description: Téléchargez les informations d’identification du service à partir de la Developer Console d’AEM.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,16 +10,16 @@ topic: Development
 kt: 9980
 exl-id: 4c5173f1-d57d-43ac-83e6-399ce4ead203
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '109'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Informations d’identification du service
+# Informations d’identification de service
 
-Les intégrations à AEM as a Cloud Service doivent pouvoir s’authentifier en toute sécurité dans AEM. AEM’Developer Console génère des informations d’identification de service, qui sont utilisées par des applications, systèmes et services externes pour interagir par programmation avec les services AEM Author ou Publish sur HTTP.
+Les intégrations à AEM as a Cloud Service doivent pouvoir s’authentifier en toute sécurité auprès du service AEM. La Developer Console d’AEM génère des informations d’identification de service, qui sont utilisées par les applications, systèmes et services externes pour interagir par programmation avec les services de création et de publication via HTTP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
-Le fichier d’informations d’identification du service téléchargé est stocké sous la forme d’un fichier de ressources appelé service_token.json dans l’éclipse fournie. Les valeurs du fichier service_token sont utilisées pour générer le JWT et échanger le JWT contre un jeton d’accès. La classe d’utilitaire GetServiceCredentials est utilisée pour récupérer les valeurs de propriété du fichier de ressource service_token.json.
+Le fichier d’informations d’identification du service téléchargé est stocké sous la forme d’un fichier de ressources appelé service_token.json dans l’Eclipse fourni. Les valeurs du fichier service_token sont utilisées pour générer le JWT et échanger le JWT contre un jeton d’accès. La classe d’utilitaire GetServiceCredentials est utilisée pour récupérer les valeurs de propriété du fichier de ressource service_token.json.
