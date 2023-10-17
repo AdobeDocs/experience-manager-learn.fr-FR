@@ -8,13 +8,13 @@ role: Developer, Architect
 level: Intermediate
 kt: 10798
 thumbnail: kt-10798.jpg
-source-git-commit: b98f567e05839db78a1a0a593c106b87af931a49
+exl-id: d4ae08d9-dc43-4414-ab75-26853186a301
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: ht
 source-wordcount: '248'
 ht-degree: 100%
 
 ---
-
 
 # Déploiements serveur à serveur d’AEM Headless
 
