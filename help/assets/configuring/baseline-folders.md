@@ -1,6 +1,6 @@
 ---
 title: Dossiers de base
-description: La définition de dossiers de base dans AEM Assets permet d’établir une architecture de contenu et des bases solides pour la gestion des ressources numériques.
+description: La définition de dossiers de référence dans AEM Assets permet d’établir une architecture de contenu solide et de poser les bases de la gestion des ressources numériques.
 feature: Asset Management
 version: Cloud Service
 kt: 4870
@@ -11,14 +11,14 @@ level: Beginner
 last-substantial-update: 2021-09-14T00:00:00Z
 exl-id: 9d11156d-1ea4-42a6-8e0d-cbc4aae4e34c
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '42'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Dossiers de base
 
-La définition de dossiers de base dans AEM Assets permet d’établir une architecture de contenu et des bases solides pour la gestion des ressources numériques.
+La définition de dossiers de référence dans AEM Assets permet d’établir une architecture de contenu solide et de poser les bases de la gestion des ressources numériques.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33496?quality=12&learn=on)
