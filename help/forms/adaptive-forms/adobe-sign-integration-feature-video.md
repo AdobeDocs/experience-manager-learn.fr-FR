@@ -1,6 +1,6 @@
 ---
-title: Utilisation d’Acrobat Sign avec AEM Forms
-description: Utilisation d’Acrobat Sign avec AEM Forms
+title: Utiliser Acrobat Sign avec AEM Forms
+description: Utiliser Acrobat Sign avec AEM Forms
 feature: Acrobat Sign
 role: Admin
 level: Beginner
@@ -15,23 +15,23 @@ internal: n
 snippet: y
 last-substantial-update: 2020-10-20T00:00:00Z
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '80'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Utilisation d’Acrobat Sign avec AEM Forms{#using-adobe-sign-with-aem-forms}
+# Utiliser Acrobat Sign avec AEM Forms{#using-adobe-sign-with-aem-forms}
 
-Utilisation d’Acrobat Sign avec AEM Forms
+Utiliser Acrobat Sign avec AEM Forms
 
 >[!VIDEO](https://video.tv.adobe.com/v/18696?quality=12&learn=on)
 
-*Cette vidéo décrit le processus de configuration du service cloud Acrobat Sign et d’ajout de plusieurs champs de signature à un formulaire adaptatif AEM.*
+*Cette vidéo décrit le processus de configuration du service cloud Acrobat Sign et d’ajout de plusieurs champs de signature à un formulaire adaptatif AEM.*
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible uniquement avec AEM version 6.3 et ultérieure.
+>Cette fonctionnalité est disponible uniquement avec AEM version 6.3 et ultérieure.
 
-Veuillez consulter le [Exemples AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) pour un lien vers une démonstration en direct de cette fonctionnalité.
+Veuillez consulter la page [exemples AEM Forms](https://forms.enablementadobe.com/content/samples/samples.html?query=0#formsandsign) pour obtenir un lien vers une démonstration en direct de cette fonctionnalité.
