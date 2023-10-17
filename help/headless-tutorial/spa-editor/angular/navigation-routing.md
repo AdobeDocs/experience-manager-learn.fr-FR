@@ -38,7 +38,7 @@ Ce chapitre ajoute un menu de navigation à un composant `Header` existant. Le m
 
 ## Prérequis
 
-Examinez les outils requis et les instructions pour configurer un [environnement de développement local](overview.md#local-dev-environment).
+Examinez les outils et les instructions nécessaires pour configurer un [environnement de développement local](overview.md#local-dev-environment).
 
 ### Obtenir le code
 
@@ -56,7 +56,7 @@ Examinez les outils requis et les instructions pour configurer un [environnement
    $ mvn clean install -PautoInstallSinglePackage
    ```
 
-   Si vous utilisez [AEM 6.x](overview.md#compatibility), ajoutez le profil `classic` :
+   Si vous utilisez [AEM 6.x](overview.md#compatibility) ajoutez le profil `classic` :
 
    ```shell
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
@@ -121,7 +121,7 @@ Dans les chapitres précédents, le composant `HeaderComponent` a été ajouté 
 
 1. Ouvrez un navigateur et connectez-vous à AEM, via [http://localhost:4502/](http://localhost:4502/). La base de code de départ doit déjà être déployée.
 2. Accédez au **[!UICONTROL modèle de page SPA]** : [http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html](http://localhost:4502/editor.html/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template/structure.html).
-3. Sélectionnez le **[!UICONTROL Conteneur de disposition racine]** le plus externe et cliquez sur son icône **[!UICONTROL Politique]**. Veillez à **ne pas** sélectionner le **[!UICONTROL Conteneur de dispositions]** déverrouillé pour la création.
+3. Sélectionnez le **[!UICONTROL Conteneur de disposition racine]** le plus externe et cliquez sur son icône **[!UICONTROL Politique]**. Veillez à **ne pas** sélectionner le **[!UICONTROL Conteneur de disposition]** déverrouillé pour la création.
 
    ![Sélectionner l’icône de politique de conteneur de dispositions racines](assets/navigation-routing/root-layout-container-policy.png)
 
@@ -151,7 +151,7 @@ Dans les chapitres précédents, le composant `HeaderComponent` a été ajouté 
 
    Sous **[!UICONTROL Propriétés]** :
 
-   * Définissez la **[!UICONTROL Racine de navigation]** sur `/content/wknd-spa-angular/us/en`.
+   * Définissez la variable **[!UICONTROL Racine de navigation]** sur `/content/wknd-spa-angular/us/en`.
    * Définissez **[!UICONTROL Exclure les niveaux racine]** sur **1**.
    * Décochez **[!UICONTROL Collecter toutes les pages enfants]**.
    * Définissez la **[!UICONTROL Profondeur de la structure de navigation]** sur **3**.
@@ -220,9 +220,9 @@ Créez ensuite des pages supplémentaires dans AEM qui serviront de vues différ
 
    Cliquez sur **[!UICONTROL Menu Propriétés de la page]** > **[!UICONTROL Stratégie de la page]** :
 
-   ![Ouverture de la stratégie de page pour la racine SPA.](assets/navigation-routing/open-page-policy.png)
+   ![Ouverture de la stratégie de la page pour la SPA racine.](assets/navigation-routing/open-page-policy.png)
 
-8. Le modèle **Racine SPA** comporte un onglet supplémentaire **[!UICONTROL Structure hiérarchique]** pour contrôler le contenu JSON collecté. La **[!UICONTROL Profondeur de la structure]** détermine la profondeur dans la hiérarchie du site pour collecter les pages enfants sous la **racine**. Vous pouvez aussi utiliser le champ **[!UICONTROL Modèles de structure]** pour filtrer les pages supplémentaires en fonction d’une expression régulière.
+8. Le modèle **Racine SPA** comporte un onglet supplémentaire **[!UICONTROL Structure hiérarchique]**, qui permet de contrôler le contenu JSON collecté. La **[!UICONTROL Profondeur de structure]** détermine la profondeur de la hiérarchie du site permettant de collecter les pages enfants sous la **racine**. Vous pouvez aussi utiliser le champ **[!UICONTROL Modèles de structure]** pour filtrer les pages supplémentaires en fonction d’une expression régulière.
 
    Mettez à jour la **[!UICONTROL Profondeur de structure]** sur **« 2 »** :
 
@@ -705,7 +705,7 @@ Maintenant que la navigation a été définie, examinez le routage dans AEM.
 
 2. Accédez à la page d’accueil de la SPA dans AEM : [http://localhost:4502/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/content/wknd-spa-angular/fr/fr/home.html) et ouvrez les outils de développement de votre navigateur. Les captures d’écran ci-dessous sont réalisées à partir du navigateur Google Chrome.
 
-   Actualisez la page et vous devriez voir s’afficher une requête XHR à `/content/wknd-spa-angular/us/en.model.json`, qui est la racine de la SPA. Notez que seules trois pages enfants sont incluses en fonction de la configuration de la profondeur de hiérarchie du modèle racine SPA créé plus tôt dans le tutoriel. Cela n’inclut pas la **page 3**.
+   Actualisez la page et vous devriez voir s’afficher une requête XHR à `/content/wknd-spa-angular/us/en.model.json`, qui est la racine de la SPA. Notez que seules trois pages enfants sont incluses en fonction de la configuration de la profondeur de hiérarchie du modèle racine SPA créé plus tôt dans le tutoriel. Cela n’inclut pas la **page 3**.
 
    ![Requête JSON initiale - racine de la SPA.](assets/navigation-routing/initial-json-request.png)
 
@@ -715,7 +715,7 @@ Maintenant que la navigation a été définie, examinez le routage dans AEM.
 
    Notez qu’une nouvelle requête XHR est envoyée à `/content/wknd-spa-angular/us/en/home/page-2/page-3.model.json`.
 
-   ![Requête XHR de la page 3.](assets/navigation-routing/page-3-xhr-request.png)
+   ![Requête XHR de la page 3.](assets/navigation-routing/page-3-xhr-request.png)
 
    Le gestionnaire de modèles d’AEM comprend que le contenu JSON de la **page 3** n’est pas disponible et déclenche automatiquement la requête XHR supplémentaire.
 
