@@ -1,6 +1,6 @@
 ---
-title: Aperçu du HTML dans Designer - Comment activer l’aperçu du HTML
-description: Procédure de configuration de l’aperçu du HTML dans Designer
+title: Aperçu du HTML dans Designer - Comment activer la prévisualisation HTML
+description: Procédure de configuration de la prévisualisation HTML dans Designer
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -10,15 +10,15 @@ topic: Development
 index: y
 exl-id: 6154883b-53e2-4a4f-ba97-9e0730fe3c13
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '33'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Comment activer le HTML de prévisualisation
+# Comment activer la prévisualisation HTML
 
-*Cette vidéo décrit les étapes à suivre pour activer le HTML de prévisualisation dans Designer.*
+*Cette vidéo décrit les étapes à suivre pour activer la prévisualisation HTML dans Designer.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335498?quality=12&learn=on)
