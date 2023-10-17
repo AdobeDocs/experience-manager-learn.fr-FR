@@ -1,6 +1,6 @@
 ---
-title: Exécution de l’outil de purge de processus à partir de la ligne de commande
-description: Étapes d’exécution de l’outil de purge de processus à partir de la ligne de commande pour supprimer des enregistrements de la table Job Manager
+title: Comment exécuter l’outil de purge de processus à partir de la ligne de commande
+description: Étapes d’exécution de l’outil de purge de processus à partir de la ligne de commande pour supprimer des enregistrements du tableau Gestionnaire de tâches
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -9,13 +9,13 @@ topic: Development
 index: y
 exl-id: 1f539f1c-b3be-4e21-b0fe-6f523a453c5f
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '48'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Exécution de l’outil de purge de processus à partir de la ligne de commande
+# Comment exécuter l’outil de purge de processus à partir de la ligne de commande
 
 *Cette vidéo décrit les étapes à suivre pour exécuter l’outil de purge de processus à partir de la ligne de commande.*
 
