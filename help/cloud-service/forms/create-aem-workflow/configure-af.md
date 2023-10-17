@@ -1,6 +1,6 @@
 ---
-title: Configuration d’un formulaire adaptatif pour déclencher le processus
-description: Déclenchez le processus lors de l’envoi du formulaire adaptatif.
+title: Configurer un formulaire adaptatif pour déclencher un workflow
+description: Déclenchez le workflow lors de l’envoi du formulaire adaptatif.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
 role: Developer
@@ -12,14 +12,14 @@ kt: 7425
 thumbnail: 332435.pg
 exl-id: 7e3d449f-f22e-4bf4-a20e-82f3d76004a2
 source-git-commit: cea9a9dc003b76369db1b7fedb9549062885258d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '26'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Configuration d’un formulaire adaptatif pour déclencher le processus
+# Configurer un formulaire adaptatif pour déclencher un workflow
 
-Configuration d’un formulaire adaptatif pour déclencher le processus de révision
+Configurer un formulaire adaptatif pour déclencher le workflow de révision
 
 >[!VIDEO](https://video.tv.adobe.com/v/332435?quality=12&learn=on)
