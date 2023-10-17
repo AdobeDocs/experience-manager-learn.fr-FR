@@ -1,6 +1,6 @@
 ---
-title: Test d’un Asset compute Worker
-description: Le projet Asset compute définit un modèle permettant de créer et d’exécuter facilement des tests sur les employés d’Asset compute.
+title: Tester un programme de travail Asset Compute
+description: Le projet Asset Compute définit un modèle permettant de créer et d’exécuter facilement des tests des programmes de travail d’Asset Compute.
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
@@ -14,21 +14,21 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 04992caf-b715-4701-94a8-6257e9bd300c
 source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '629'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Test d’un Asset compute Worker
+# Tester un programme de travail Asset Compute
 
-Le projet Asset compute définit un modèle permettant de créer et d’exécuter facilement des [tests des agents d’Asset compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html).
+Le projet Asset Compute définit un modèle permettant de créer et d’exécuter facilement des [tests des programmes de travail d’Asset Compute](https://experienceleague.adobe.com/docs/asset-compute/using/extend/test-custom-application.html?lang=fr).
 
-## Anatomie d’un test de travail
+## Anatomie du test d’un programme de travail
 
-Les tests des agents d’Asset compute sont divisés en suites de tests et, dans chaque suite de tests, un ou plusieurs cas de test affirmant une condition à tester.
+Les tests des programmes de travail d’Asset Compute sont divisés en suites de tests et, dans chaque suite de tests, un ou plusieurs cas de test affirmant une condition à tester.
 
-La structure des tests dans un projet d’Asset compute est la suivante :
+La structure des tests dans un projet Asset Compute est la suivante :
 
 ```
 /actions/<worker-name>/index.js
@@ -44,33 +44,33 @@ La structure des tests dans un projet d’Asset compute est la suivante :
             ...
 ```
 
-Chaque test peut comporter les fichiers suivants :
+Chaque cas de test peut comporter les fichiers suivants :
 
 + `file.<extension>`
-   + Fichier source à tester (l’extension peut être tout sauf `.link`)
+   + Fichier source à tester (l’extension peut être n’importe laquelle sauf `.link`).
    + Requis
 + `rendition.<extension>`
-   + Rendu attendu
-   + Obligatoire, à l’exception des tests d’erreur
+   + Rendu attendu.
+   + Obligatoire, sauf pour les tests d’erreur.
 + `params.json`
-   + Instructions JSON sur le rendu unique
+   + Instructions JSON sur le rendu unique.
    + Facultatif
 + `validate`
-   + Script qui récupère les chemins d’accès aux fichiers de rendu prévus et réels sous forme d’arguments et qui doit renvoyer le code de sortie 0 si le résultat est correct, ou un code de sortie non nul si la validation ou la comparaison a échoué.
-   + Facultatif, la commande `diff` est utilisée par défaut.
-   + Utilisez un script shell qui encapsule une commande docker run pour utiliser différents outils de validation.
+   + Script qui récupère les chemins d’accès aux fichiers de rendu attendus et réels sous forme d’arguments et qui doit renvoyer le code de sortie 0 si le résultat est OK, ou un code de sortie différent de zéro si la validation ou la comparaison a échoué.
+   + Facultatif, par défaut sur la commande `diff`.
+   + Utilisez un script shell qui inclut une commande d’exécution Docker pour utiliser différents outils de validation.
 + `mock-<host-name>.json`
-   + Réponses HTTP au format JSON pour [moquer les appels de service externes](https://www.mock-server.com/mock_server/creating_expectations.html).
-   + Facultatif, utilisé uniquement si le code de traitement effectue ses propres requêtes HTTP
+   + Réponses HTTP au format JSON pour [simuler les appels de service externes](https://www.mock-server.com/mock_server/creating_expectations.html).
+   + Facultatif, utilisé uniquement si le code du programme de travail effectue ses propres requêtes HTTP.
 
-## Ecriture d’un cas de test
+## Écrire un cas de test
 
-Ce cas de test affirme que l’entrée paramétrée (`params.json`) pour le fichier d’entrée (`file.jpg`) génère le rendu PNG attendu (`rendition.png`).
+Ce cas de test affirme l’entrée paramétrée (`params.json`) pour le fichier d’entrée (`file.jpg`) qui génère le rendu PNG attendu (`rendition.png`).
 
-1. Supprimez d’abord le cas de tests `simple-worker` générés automatiquement à l’adresse `/test/asset-compute/simple-worker`, car il n’est pas valide, car notre programme de travail ne copie plus simplement la source dans le rendu.
-1. Créez un dossier de cas de test à l’adresse `/test/asset-compute/worker/success-parameterized` pour tester une exécution réussie du programme de travail qui génère un rendu PNG.
-1. Dans le dossier `success-parameterized` , ajoutez le [fichier d’entrée](./assets/test/success-parameterized/file.jpg) test pour ce cas de test et nommez-le `file.jpg`.
-1. Dans le dossier `success-parameterized` , ajoutez un nouveau fichier nommé `params.json` qui définit les paramètres d’entrée du programme de travail :
+1. Commencez par supprimer le cas de test `simple-worker` généré automatiquement sur `/test/asset-compute/simple-worker`, car il n’est pas valide, étant donné que notre programme de travail ne copie plus simplement la source dans le rendu.
+1. Créez un dossier de cas de test sur `/test/asset-compute/worker/success-parameterized` pour tester une exécution réussie du programme de travail qui génère un rendu PNG.
+1. Dans le dossier `success-parameterized`, ajoutez le [fichier d’entrée](./assets/test/success-parameterized/file.jpg) du test pour ce cas de test et nommez-le `file.jpg`.
+1. Dans le dossier `success-parameterized`, ajoutez un nouveau fichier nommé `params.json` qui définit les paramètres d’entrée du programme de travail :
 
    ```json
    { 
@@ -80,22 +80,22 @@ Ce cas de test affirme que l’entrée paramétrée (`params.json`) pour le fich
    }
    ```
 
-   Il s’agit des mêmes clés/valeurs transmises dans la définition de profil d’Asset compute ](../develop/development-tool.md) de l’outil de développement, moins la clé `worker`.[
+   Il s’agit des mêmes clés/valeurs transmises dans la [définition du profil d’Asset Compute de l’outil de développement](../develop/development-tool.md), à l’exception de la clé `worker`.
 
-1. Ajoutez le [fichier de rendu attendu](./assets/test/success-parameterized/rendition.png) à ce cas de test et nommez-le `rendition.png`. Ce fichier représente la sortie attendue du programme de travail pour l’entrée `file.jpg` donnée.
-1. Sur la ligne de commande, exécutez le test de la racine du projet en exécutant `aio app test`
-   + Vérifiez que [Docker Desktop](../set-up/development-environment.md#docker) et les images Docker prises en charge sont installées et démarrées.
+1. Ajoutez le [fichier de rendu](./assets/test/success-parameterized/rendition.png) attendu à ce cas de test et nommez-le `rendition.png`. Ce fichier représente la sortie attendue du programme de travail pour le fichier `file.jpg` d’entrée donné.
+1. Sur la ligne de commande, exécutez le test de la racine du projet en exécutant `aio app test`.
+   + Assurez-vous que l’application [Docker Desktop](../set-up/development-environment.md#docker) et les images Docker correspondantes sont installées et démarrées.
    + Arrêtez toutes les instances de l’outil de développement en cours d’exécution.
 
-![Test - Réussite  ](./assets/test/success-parameterized/result.png)
+![Test - Réussite.](./assets/test/success-parameterized/result.png)
 
-## Ecriture d’un cas de test de vérification d’erreur
+## Écrire un cas de test de vérification des erreurs
 
-Ce cas de test teste afin de s’assurer que le programme de travail renvoie l’erreur appropriée lorsque le paramètre `contrast` est défini sur une valeur non valide.
+Ce cas de test teste sert à s’assurer que le programme de travail génère l’erreur appropriée lorsque le paramètre `contrast` est défini sur une valeur non valide.
 
-1. Créez un nouveau dossier de cas de test à l’adresse `/test/asset-compute/worker/error-contrast` pour tester une exécution erronée du programme de travail en raison d’une valeur de paramètre `contrast` non valide.
-1. Dans le dossier `error-contrast` , ajoutez le [fichier d’entrée](./assets/test/error-contrast/file.jpg) test pour ce cas de test et nommez-le `file.jpg`. Le contenu de ce fichier n&#39;est pas important pour ce test, il doit simplement exister pour passer la vérification &quot;Source corrompue&quot;, afin d&#39;atteindre les `rendition.instructions` vérifications de validité, que ce cas de test valide.
-1. Dans le dossier `error-contrast` , ajoutez un nouveau fichier nommé `params.json` qui définit les paramètres d’entrée du programme de travail avec le contenu :
+1. Créez un dossier de cas de test sur `/test/asset-compute/worker/error-contrast` pour tester une exécution erronée du programme de travail en raison d’une valeur non valide du paramètre `contrast`.
+1. Dans le dossier `error-contrast`, ajoutez le [fichier d’entrée](./assets/test/error-contrast/file.jpg) du test pour ce cas de test et nommez-le `file.jpg`. Le contenu de ce fichier n’est pas important pour ce test. Il doit simplement exister pour passer le contrôle « Source corrompue », afin d’atteindre les contrôles de validité `rendition.instructions`, que ce cas de test valide.
+1. Dans le dossier `error-contrast`, ajoutez un nouveau fichier nommé `params.json` qui définit les paramètres d’entrée du programme de travail avec le contenu :
 
    ```json
    {
@@ -104,23 +104,23 @@ Ce cas de test teste afin de s’assurer que le programme de travail renvoie l�
    }
    ```
 
-   + Définissez les paramètres `contrast` sur `10`, une valeur non valide, car le contraste doit être compris entre -1 et 1, pour générer une valeur `RenditionInstructionsError`.
-   + Vérifiez que l’erreur appropriée est générée dans les tests en définissant la clé `errorReason` sur la &quot;raison&quot; associée à l’erreur attendue. Ce paramètre de contraste non valide renvoie l’[erreur personnalisée](../develop/worker.md#errors), `RenditionInstructionsError`, et définit donc la `errorReason` sur la raison de cette erreur, ou `rendition_instructions_error` pour affirmer qu’elle est générée.
+   + Définissez les paramètres `contrast` sur `10`, une valeur non valide, car le contraste doit être compris entre -1 et 1, pour générer une `RenditionInstructionsError`.
+   + Affirmez que l’erreur appropriée est générée dans les tests en définissant la clé `errorReason` sur la « raison » associée à l’erreur attendue. Ce paramètre de contraste non valide renvoie l’[erreur personnalisée](../develop/worker.md#errors), `RenditionInstructionsError`, définissez donc `errorReason` sur la raison de cette erreur, ou sur `rendition_instructions_error` pour affirmer qu’elle est générée.
 
 1. Comme aucun rendu ne doit être généré lors d’une exécution erronée, aucun fichier `rendition.<extension>` n’est nécessaire.
-1. Exécutez la suite de tests à partir de la racine du projet en exécutant la commande `aio app test`
-   + Vérifiez que [Docker Desktop](../set-up/development-environment.md#docker) et les images Docker prises en charge sont installées et démarrées.
+1. Exécutez la suite de tests à partir de la racine du projet en exécutant la commande `aio app test`.
+   + Assurez-vous que l’application [Docker Desktop](../set-up/development-environment.md#docker) et les images Docker correspondantes sont installées et démarrées.
    + Arrêtez toutes les instances de l’outil de développement en cours d’exécution.
 
-![Test - Contraste d’erreur](./assets/test/error-contrast/result.png)
+![Test - Contraste d’erreur.](./assets/test/error-contrast/result.png)
 
 ## Cas de test sur Github
 
-Les derniers cas de test sont disponibles sur Github à l’adresse :
+Les cas de test finaux sont disponibles sur Github :
 
 + [aem-guides-wknd-asset-compute/test/asset-compute/worker](https://github.com/adobe/aem-guides-wknd-asset-compute/tree/master/test/asset-compute/worker)
 
 ## Résolution des problèmes
 
 + [Aucun rendu généré lors de l’exécution du test](../troubleshooting.md#test-no-rendition-generated)
-+ [Le test génère un rendu incorrect](../troubleshooting.md#tests-generates-incorrect-rendition)
++ [Le test génère un rendu incorrect.](../troubleshooting.md#tests-generates-incorrect-rendition)
