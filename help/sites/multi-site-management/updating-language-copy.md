@@ -1,5 +1,5 @@
 ---
-title: Mise à jour d’une copie de langue avec des lancements
+title: Mettre à jour une copie de la langue avec des lancements
 description: Découvrez comment mettre à jour, réviser et approuver les modifications dans une copie de langue à l’aide des lancements.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
@@ -14,13 +14,13 @@ role: User
 level: Beginner
 exl-id: c29f64a3-56cd-4594-9265-692974f4c01a
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Mise à jour d’une copie de langue avec des lancements {#update-language-copy-launch}
+# Mettre à jour une copie de la langue avec des lancements {#update-language-copy-launch}
 
 Découvrez comment mettre à jour, réviser et approuver les modifications dans une copie de langue à l’aide des lancements.
 
