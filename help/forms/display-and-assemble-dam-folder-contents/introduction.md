@@ -1,6 +1,6 @@
 ---
-title: Sélection et téléchargement du contenu du dossier DAM
-description: Tutoriel pour remplir le composant de case à cocher avec le contenu du dossier DAM et permettre à l’utilisateur de télécharger le contenu sélectionné.
+title: Sélectionner et télécharger le contenu du dossier de gestion des ressources numériques (DAM)
+description: Tutoriel pour remplir le composant de case à cocher avec le contenu du dossier DAM et permettre à l’utilisateur ou l’utilisatrice de télécharger le contenu sélectionné.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -9,25 +9,25 @@ level: Beginner
 last-substantial-update: 2023-01-04T00:00:00Z
 exl-id: 91fbea23-4886-4892-87ad-1bc4fff5896a
 source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '104'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 # Présentation
 
-Un cas d’utilisation courant consiste à répertorier le contenu du dossier DAM (fichiers pdf, documents Word, etc.) à l’aide du composant de case à cocher et à permettre à l’utilisateur de sélectionner les fichiers à télécharger. Les fichiers sélectionnés seront assemblés dans un fichier que l’utilisateur peut télécharger.
+Un cas d’utilisation courant consiste à répertorier le contenu du dossier DAM (fichiers PDF, documents Word, etc.) à l’aide du composant de case à cocher et à permettre à l’utilisateur ou l’utilisatrice de sélectionner le ou les fichiers à télécharger. Les fichiers sélectionnés seront assemblés dans un fichier que l’utilisateur ou l’utilisatrice peut télécharger.
 
 ![use-case](assets/newsletters-download1.png)
 
-## Prérequis
+## Conditions préalables
 
-Vous aurez besoin des éléments suivants :
+Vous aurez besoin des éléments suivants :
 
-* Une instance opérationnelle de l’AEM avec le package de module complémentaire de formulaire installé
+* Instance de travail d’AEM avec le package de module complémentaire de formulaire installé
 
-* [Configuration de l’environnement de développement selon ce document](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html)
+* [Configuration de l’environnement de développement conformément à ce document](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=fr)
 
 ## Étapes suivantes
 
