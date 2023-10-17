@@ -1,6 +1,6 @@
 ---
-title: Utilisateurs du service
-description: Découvrez comment créer et utiliser des utilisateurs de service dans votre code AEM pour fournir un accès contrôlé et programmatique au référentiel AEM.
+title: Utilisateurs et utilisatrices de service
+description: Découvrez comment créer et utiliser des profils utilisateurs de service dans votre code AEM pour fournir un accès contrôlé et programmatique au référentiel AEM.
 version: Cloud Service
 topic: Development
 feature: OSGI, Security
@@ -11,22 +11,22 @@ thumbnail: 337530.jpeg
 last-substantial-update: 2022-10-10T00:00:00Z
 exl-id: 66f627e4-863d-45d7-bc68-7ec108a1c271
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '70'
-ht-degree: 21%
+ht-degree: 100%
 
 ---
 
-# Utilisateurs du service
+# Utilisateurs et utilisatrices de service
 
-Découvrez comment créer et utiliser des utilisateurs de service dans votre code AEM pour fournir un accès contrôlé et programmatique au référentiel AEM.
+Découvrez comment créer et utiliser des profils utilisateurs de service dans votre code AEM pour fournir un accès contrôlé et programmatique au référentiel AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/337530?quality=12&learn=on)
 
 ## Ressources
 
 + [Documentation sur l’initialisation du référentiel Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html)
-+ [Documentation d’authentification du service Sling](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
++ [Documentation sur l’authentification du service Sling](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html)
 
 ## Code
 
