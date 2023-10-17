@@ -1,6 +1,6 @@
 ---
-title: Cloud 5 AEM Recherche et indexation
-description: Nous plongeons nos orteils dans l'océan qui est la recherche et l'indexation.
+title: Recherche et indexation AEM Cloud 5
+description: Nous nous aventurons dans le vaste sujet de la recherche et de l’indexation.
 version: Cloud Service
 role: Admin, Developer
 level: Intermediate
@@ -10,20 +10,20 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: b2571a84-101f-4330-8a5f-9ef5e4344591
 source-git-commit: a439c72a7b080633d3777eefad3b47f01c92b970
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '78'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
-# Cloud 5 AEM Recherche et indexation
+# Recherche et indexation AEM Cloud 5
 
-Une plongée rapide dans les eaux profondes de la recherche et de l&#39;indexation. Un sujet difficile que nous espérons vous aider à mieux vous éduquer.
+Une approche du vaste sujet de la recherche et de l’indexation. Il s’agit d’un sujet complexe et nous espérons vous aider à l’utiliser de manière plus efficace.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342374?quality=12&learn=on)
 
 ## Contenu couvert par cette vidéo
 
-+ Recherche et indexation [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=fr)
-+ AEM [Convertisseur d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html)
-+ Série d’experts [Exploration approfondie](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md)
++ [Vue d’ensemble](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=fr) de la recherche et de l’indexation
++ [Convertisseur d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html?lang=fr) AEM
++ [Analyse approfondie](../../../cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing.md) pour les personnes expertes (Expert Series)
