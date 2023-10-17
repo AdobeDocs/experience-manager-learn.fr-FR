@@ -1,5 +1,5 @@
 ---
-title: Personnalisation de la notification d’affectation de tâche
+title: Personnaliser la notification d’affectation de tâche
 description: Inclure les données de formulaire dans les e-mails de notification de tâche
 feature: Workflow
 topics: integrations
@@ -15,25 +15,25 @@ level: Experienced
 exl-id: 0cb74afd-87ff-4e79-a4f4-a4634ac48c51
 last-substantial-update: 2020-07-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '489'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
-# Personnalisation de la notification d’affectation de tâche
+# Personnaliser la notification d’affectation de tâche
 
-Le composant Affecter une tâche permet d’affecter des tâches aux participants du workflow. Lorsqu’une tâche est affectée à un utilisateur ou à un groupe, une notification électronique est envoyée à l’utilisateur ou aux membres de groupe définis.
-Cette notification par e-mail contient généralement des données dynamiques liées à la tâche. Ces données dynamiques sont récupérées à l’aide du système généré. [propriétés de métadonnées](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html#using-system-generated-metadata-in-an-email-notification).
-Pour inclure des valeurs des données de formulaire envoyées dans la notification par e-mail, nous devons créer une propriété de métadonnées personnalisée, puis utiliser ces propriétés de métadonnées personnalisées dans le modèle de courrier électronique.
+Le composant Attribuer une tâche permet d’attribuer des tâches aux personnes participantes du workflow. Lorsqu’une tâche est attribuée à un utilisateur, une utilisatrice ou à un groupe, une notification par e-mail est envoyée à l’utilisateur, à l’utilisatrice ou aux personnes membres de groupe, respectivement.
+Cette notification par e-mail contient généralement des données dynamiques liées à la tâche. Ces données dynamiques sont récupérées à l’aide des [propriétés de métadonnées](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/use-metadata-in-email-notifications.html?lang=fr#using-system-generated-metadata-in-an-email-notification) générées par le système.
+Pour inclure des valeurs des données de formulaire envoyées dans la notification par e-mail, nous devons créer une propriété de métadonnées personnalisée, puis utiliser ces propriétés de métadonnées personnalisées dans le modèle d’e-mail.
 
 
 
-## Création d’une propriété de métadonnées personnalisée
+## Créer une propriété de métadonnées personnalisée
 
-L’approche recommandée consiste à créer un composant OSGI qui implémente la méthode getUserMetadata de [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--)
+L’approche recommandée consiste à créer un composant OSGI qui implémente la méthode getUserMetadata de [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--).
 
-Le code suivant crée 4 propriétés de métadonnées (_firstName_,_lastName_,_reason_ et _amountRequested_) et définit sa valeur à partir des données envoyées. Par exemple, la propriété de métadonnées _firstName_ La valeur de est définie sur la valeur de l’élément appelé firstName des données envoyées. Le code suivant suppose que les données envoyées du formulaire adaptatif sont au format xml. Les Forms adaptatives basées sur un schéma JSON ou un modèle de données de formulaire génèrent des données au format JSON.
+Le code suivant crée 4 propriétés de métadonnées (_firstName_, _lastName_, _reason_ et _amountRequested_) et définit les valeurs à partir des données envoyées. Par exemple, la valeur de propriété de métadonnées _firstName_ est définie sur la valeur de l’élément appelé firstName des données envoyées. Le code suivant suppose que les données envoyées du formulaire adaptatif sont au format xml. Les formulaires adaptatifs basés sur un schéma JSON ou un modèle de données de formulaire génèrent des données au format JSON.
 
 
 ```java
@@ -113,44 +113,44 @@ return customMetadataMap;
 }
 ```
 
-## Utiliser les propriétés de métadonnées personnalisées dans le modèle d’email de notification de tâche
+## Utiliser les propriétés de métadonnées personnalisées dans le modèle d’e-mail de notification de tâche
 
-Dans le modèle de courrier électronique, vous pouvez inclure la propriété de métadonnées en utilisant la syntaxe suivante, où amountRequested correspond à la propriété de métadonnées. `${amountRequested}`
+Dans le modèle d’e-mail, vous pouvez inclure la propriété de métadonnées en utilisant la syntaxe suivante, où amountRequested correspond à la propriété de métadonnées `${amountRequested}`.
 
-## Configuration d’Assign Task pour utiliser une propriété de métadonnées personnalisée
+## Configurer l’attribution des tâches pour utiliser une propriété de métadonnées personnalisée
 
-Une fois le composant OSGi créé et déployé sur AEM serveur, configurez le composant Assign Task comme illustré ci-dessous pour utiliser les propriétés de métadonnées personnalisées.
+Une fois le composant OSGi créé et déployé sur le serveur AEM, configurez le composant d’attribution des tâches comme illustré ci-dessous pour utiliser les propriétés de métadonnées personnalisées.
 
 
-![Notification de tâche](assets/task-notification.PNG)
+![Notification de tâche.](assets/task-notification.PNG)
 
-## Activation de l’utilisation de propriétés de métadonnées personnalisées
+## Activer l’utilisation de propriétés de métadonnées personnalisées
 
-![Propriétés Custom Meta Data](assets/custom-meta-data-properties.PNG)
+![Propriétés des métadonnées personnalisées.](assets/custom-meta-data-properties.PNG)
 
-## Pour essayer cela sur votre serveur
+## Pour essayer ceci sur votre serveur
 
 * [Configuration du service de messagerie Day CQ](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=fr#configuring-the-mail-service)
-* Associer un ID de courrier électronique valide à [utilisateur administrateur](http://localhost:4502/security/users.html)
-* Téléchargez et installez le [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) using [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp)
-* Télécharger [Formulaire adaptatif](assets/request-travel-authorization.zip) et importez dans AEM à partir du [Interface utilisateur des formulaires et documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
-* Déployez et démarrez le [Bundle personnalisé](assets/work-items-user-service-bundle.jar) en utilisant la variable [console web](http://localhost:4502/system/console/bundles)
-* [Aperçu et envoi du formulaire](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
+* Associez un ID d’e-mail valide à une [personne administratrice](http://localhost:4502/security/users.html).
+* Téléchargez et installez le [Workflow-and-notification-template](assets/workflow-and-task-notification-template.zip) avec le [gestionnaire de packages](http://localhost:4502/crx/packmgr/index.jsp).
+* Téléchargez le [formulaire adaptatif](assets/request-travel-authorization.zip) et importez-le dans AEM via l’[interface utilisateur des formulaires et documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Déployez et démarrez le [lot personnalisé](assets/work-items-user-service-bundle.jar) en utilisant la [console web](http://localhost:4502/system/console/bundles).
+* [Prévisualiser et envoyer le formulaire](http://localhost:4502/content/dam/formsanddocuments/requestfortravelauhtorization/jcr:content?wcmmode=disabled)
 
-Une fois la tâche d’affectation envoyée au formulaire, la notification est envoyée à l’ID de courrier électronique associé à l’utilisateur administrateur. La capture d’écran suivante présente un exemple de notification d’affectation de tâche
+Lors de l’envoi du formulaire, une notification d’affectation de tâche est envoyée à l’adresse e-mail associée à la personne administratrice. La capture d’écran suivante présente un exemple de notification d’affectation de tâche.
 
-![Notification](assets/task-nitification-email.png)
+![Notification.](assets/task-nitification-email.png)
 
 >[!NOTE]
->Le modèle de courrier électronique pour la notification de tâche d’affectation doit être au format suivant.
+>Le modèle d’e-mail pour la notification d’affectation de tâche doit être au format suivant.
 >
-> subject=Task Assigned - `${workitem_title}`
+> objet = tâche affectée - `${workitem_title}`
 >
-> message=Chaîne représentant votre modèle d’email sans aucun nouveau caractère de ligne.
+> message = chaîne représentant votre modèle d’e-mail sans aucun caractère de nouvelle ligne.
 
-## Notification par e-mail Task Comments dans Assign Task
+## Commentaires de tâche dans l’e-mail de notification d’affectation de tâche
 
-Dans certains cas, vous souhaiterez peut-être inclure les commentaires du propriétaire précédent de la tâche dans les notifications de tâche suivantes. Le code permettant de capturer le dernier commentaire de la tâche est répertorié ci-dessous :
+Dans certains cas, vous souhaiterez peut-être inclure les commentaires de la précédente personne propriétaire de la tâche dans les notifications de tâche. Le code permettant de capturer le dernier commentaire de la tâche est répertorié ci-dessous :
 
 ```java
 package samples.aemforms.taskcomments.core;
@@ -202,4 +202,4 @@ public class CaptureTaskComments implements WorkitemUserMetadataService {
 }
 ```
 
-Le lot avec le code ci-dessus peut être [téléchargé ici](assets/samples.aemforms.taskcomments.taskcomments.core-1.0-SNAPSHOT.jar)
+Le lot avec le code ci-dessus peut être [téléchargé ici](assets/samples.aemforms.taskcomments.taskcomments.core-1.0-SNAPSHOT.jar).
