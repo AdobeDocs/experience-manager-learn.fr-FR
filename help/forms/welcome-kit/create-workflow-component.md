@@ -1,28 +1,29 @@
 ---
 title: Créer un processus de workflow de kit de bienvenue
-description: Créez une page de sites d’AEM avec des liens pour télécharger des ressources en fonction des données de formulaire envoyées.
+description: Créez une page AEM Sites avec des liens pour télécharger des ressources en fonction des données de formulaire envoyées.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-12-14T00:00:00Z
-source-git-commit: 0e27907066c7d688549a980ccd17b3f17d74b60b
-workflow-type: tm+mt
+exl-id: ba9e80af-aecd-4558-a236-798c823e695c
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '106'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Composant Workflow
+# Composant de workflow
 
 Le composant de workflow capture les informations relatives à la page répertoriant les ressources telles que le modèle de page, le type de ressource de composant et le dossier de base pour stocker les pages générées.
 
 ![workflow-component](assets/workflow-component.png)
 
-## Mise en oeuvre des processus de workflow
+## Mise en œuvre des processus de workflow
 
-Le code Java suivant a été associé au composant de workflow. Le code crée la page du kit de bienvenue et extrait les valeurs des variables de workflow (submitterName et documentsSelected). Ces valeurs sont ensuite définies comme propriétés des composants utilisés dans la page. Le code définit également la valeur de la variable de processus de workflow. **welcomekiturl**.
+Le code Java suivant a été associé au composant de workflow. Le code crée la page du kit de bienvenue et extrait les valeurs des variables de workflow (submitterName et documentsSelected). Ces valeurs sont ensuite définies comme propriétés des composants utilisés dans la page. Le code définit également la valeur de la variable de processus de workflow **welcomekiturl**.
 
 ```java
 package com.welcomekit.core.workflowprocess;
@@ -161,7 +162,3 @@ public class CreatePage implements WorkflowProcess {
   }
 }
 ```
-
-
-
-
