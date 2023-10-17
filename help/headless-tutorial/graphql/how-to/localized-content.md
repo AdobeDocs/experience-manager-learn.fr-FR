@@ -1,6 +1,6 @@
 ---
-title: Utilisation de contenu localisé avec AEM sans affichage
-description: Découvrez comment utiliser GraphQL pour interroger AEM contenu localisé.
+title: Utiliser du contenu localisé avec AEM Headless
+description: Découvrez comment utiliser GraphQL pour envoyer une requête de contenu localisé à AEM.
 version: Cloud Service
 feature: GraphQL API
 topic: Headless
@@ -8,37 +8,37 @@ role: Developer
 level: Intermediate
 kt: 10254
 thumbnail: KT-10254.jpeg
-source-git-commit: ae49fb45db6f075a34ae67475f2fcc5658cb0413
-workflow-type: tm+mt
+exl-id: 5e3d115b-f3a1-4edc-86ab-3e0713a36d54
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '508'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
+# Contenu localisé avec AEM Headless
 
-# Contenu localisé avec AEM sans affichage
-
-AEM fournit une [Structure d’intégration de traduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html) pour le contenu sans interface utilisateur, ce qui permet aux fragments de contenu et aux ressources de prise en charge d’être facilement traduits pour une utilisation dans tous les paramètres régionaux. Il s’agit de la même structure que celle utilisée pour traduire d’autres contenus AEM, tels que Pages, Fragments d’expérience, Ressources et Forms. Une fois [la traduction du contenu sans tête](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=fr), puis publié, il est prêt à être utilisé par les applications sans interface utilisateur graphique.
+AEM fournit une [Structure d’intégration de traduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/integration-framework.html?lang=fr) pour le contenu découplé, ce qui permet aux fragments de contenu et aux ressources de prise en charge d’être facilement traduits pour une utilisation dans tous les paramètres régionaux. Il s’agit de la même structure que celle utilisée pour traduire d’autres contenus d’AEM, tels que des pages, des fragments d’expérience, des ressources et des formulaires. Une fois [le contenu découplé traduit](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=fr) et publié, il est prêt à être utilisé par les applications découplées.
 
 ## Structure des dossiers de ressources{#assets-folder-structure}
 
-Assurez-vous que les fragments de contenu localisés dans AEM suivent le [structure de localisation recommandée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html#recommended-structure).
+Assurez-vous que les fragments de contenu localisés dans AEM suivent la [structure de localisation recommandée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/getting-started.html?lang=fr#recommended-structure).
 
-![Dossiers de ressources AEM localisés](./assets/localized-content/asset-folders.jpg)
+![Dossiers de ressources AEM localisés.](./assets/localized-content/asset-folders.jpg)
 
-Les dossiers de paramètres régionaux doivent être des frères, et le nom du dossier, plutôt que le titre, doit être valide. [Code ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) représentant les paramètres régionaux du contenu contenu contenu dans le dossier.
+Les dossiers de paramètres régionaux doivent être apparentés, et le nom du dossier, plutôt que son titre, doit être un [code ISO 639-1](https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1) valide représentant les paramètres régionaux du contenu du dossier.
 
-Le code de paramètres régionaux est également la valeur utilisée pour filtrer les fragments de contenu renvoyés par la requête GraphQL.
+Le code de paramètre régional est également la valeur utilisée pour filtrer les fragments de contenu renvoyés par la requête GraphQL.
 
-| Code de paramètre régional | Chemin AEM | Paramètres régionaux du contenu |
+| Code de paramètre régional | Chemin d’accès AEM | Paramètre régional du contenu |
 |--------------------------------|----------|----------|
-| de | /content/dam/.../**de**/... | Contenu allemand |
+| de | /content/dam/.../**de**/... | Contenu en allemand |
 | en | /content/dam/.../**en**/... | Contenu en anglais |
-| es | /content/dam/.../**es**/... | Contenu espagnol |
+| es | /content/dam/.../**es**/... | Contenu en espagnol |
 
 ## Requête persistante GraphQL
 
-AEM fournit une `_locale` Filtre GraphQL qui filtre automatiquement le contenu par code de paramètres régionaux . Par exemple, en interrogeant toutes les aventures anglaises dans la [Projet de site WKND](https://github.com/adobe/aem-guides-wknd) peut être effectué avec une nouvelle requête conservée. `wknd-shared/adventures-by-locale` défini comme :
+AEM fournit un filtre GraphQL `_locale` qui filtre automatiquement le contenu par code de paramètre régional. Par exemple, il est possible d’interroger toutes les aventures en anglais dans le [projet WKND Site](https://github.com/adobe/aem-guides-wknd) à l’aide d’une nouvelle requête persistante `wknd-shared/adventures-by-locale` définie comme :
 
 ```graphql
 query($locale: String!) {
@@ -51,19 +51,19 @@ query($locale: String!) {
 }
 ```
 
-Le `$locale` utilisée dans la variable `_locale` filtre nécessite le code de paramètres régionaux (par exemple `en`, `en_us`ou `de`), comme indiqué dans [AEM convention de localisation de base de dossiers de ressources](#assets-folder-structure).
+La variable `$locale` utilisée dans le filtre `_locale` nécessite le code de paramètre régional (par exemple `en`, `en_us`ou `de`), comme indiqué dans la [convention de localisation de base des dossiers de ressources AEM](#assets-folder-structure).
 
-## Exemple React
+## Exemple pour React
 
-Créons une application React simple qui contrôle le contenu Adventure à interroger à partir d’AEM en fonction d’un sélecteur de paramètres régionaux à l’aide de la fonction `_locale` filtre.
+Créons une application React simple qui contrôle le contenu d’Adventure à interroger à partir d’AEM en fonction d’un sélecteur de paramètre régional à l’aide du filtre `_locale`.
 
-When __Anglais__ est sélectionné dans le sélecteur de paramètres régionaux, puis dans les fragments de contenu English Adventure sous `/content/dam/wknd/en` sont renvoyés, lorsque __Espagnol__ est sélectionné, puis Fragments de contenu en espagnol sous `/content/dam/wknd/es`, etc.
+Lorsque vous sélectionnez l’__anglais__ dans le sélecteur de paramètre régional, les fragments de contenu d’Adventure en anglais sous `/content/dam/wknd/en` sont renvoyés. Lorsque vous sélectionnez l’__espagnol__, les fragments de contenu en espagnol sous `/content/dam/wknd/es` sont renvoyés, etc.
 
-![Exemple d’application React localisée](./assets/localized-content/react-example.png)
+![Exemple d’application React localisée.](./assets/localized-content/react-example.png)
 
-### Créez un `LocaleContext`{#locale-context}
+### Créer un `LocaleContext`{#locale-context}
 
-Tout d’abord, créez un [Contexte React](https://reactjs.org/docs/context.html) pour permettre l’utilisation des paramètres régionaux dans les composants de l’application React.
+Tout d’abord, créez un [contexte React](https://fr.reactjs.org/docs/context.html) pour permettre l’utilisation des paramètres régionaux dans les composants de l’application React.
 
 ```javascript
 // src/LocaleContext.js
@@ -80,11 +80,11 @@ const LocaleContext = React.createContext({
 export default LocaleContext;
 ```
 
-### Créez un `LocaleSwitcher` Composant React{#locale-switcher}
+### Créer un composant React `LocaleSwitcher`{#locale-switcher}
 
-Ensuite, créez un composant React du sélecteur de paramètres régionaux qui définit comme [LocaleContext](#locale-context) de la sélection de l’utilisateur.
+Ensuite, créez un composant React de sélecteur de paramètre régional qui définit la valeur de [LocaleContext](#locale-context) en fonction de la sélection de l’utilisateur ou de l’utilisatrice.
 
-Cette valeur locale est utilisée pour piloter les requêtes GraphQL, en s’assurant qu’elles renvoient uniquement le contenu correspondant au paramètre régional sélectionné.
+Cette valeur locale est utilisée pour orienter les requêtes GraphQL, en s’assurant qu’elles renvoient uniquement le contenu correspondant au paramètre régional sélectionné.
 
 ```javascript
 // src/LocaleSwitcher.js
@@ -106,13 +106,13 @@ export default function LocaleSwitcher() {
 }
 ```
 
-### Interrogez le contenu à l’aide de la méthode `_locale` filter{#adventures}
+### Interroger le contenu à l’aide du filtre `_locale`{#adventures}
 
-Le composant Aventures interroge AEM toutes les aventures par langue et répertorie leurs titres. Pour ce faire, transmettez la valeur du paramètre régional stockée dans le contexte React à la requête à l’aide de la variable `_locale` filtre.
+Le composant Adventures interroge AEM sur toutes les Adventures en fonction du paramètre régional et répertorie leurs titres. Pour ce faire, transmettez la valeur du paramètre régional stockée dans le contexte React à la requête à l’aide du filtre `_locale`.
 
-Cette approche peut être étendue à d’autres requêtes de votre application, en s’assurant que toutes les requêtes incluent uniquement le contenu spécifié par la sélection des paramètres régionaux d’un utilisateur.
+Cette approche peut s’appliquer à d’autres requêtes de votre application, à condition que toutes les requêtes incluent uniquement le contenu spécifié par la sélection des paramètre régional d’un utilisateur ou d’une utilisatrice.
 
-L’interrogation de l’AEM est effectuée dans le crochet React personnalisé. [getAdventuresByLocale, décrit plus en détail dans la documentation Query AEM GraphQL](./aem-headless-sdk.md).
+L’interrogation d’AEM est effectuée dans le hook React personnalisé [getAdventuresByLocale, sur lequel vous trouverez davantage d’informations dans la documentation GraphQL sur l’interrogation d’AEM](./aem-headless-sdk.md).
 
 ```javascript
 // src/Adventures.js
@@ -138,9 +138,9 @@ export default function Adventures() {
 }
 ```
 
-### Définissez la variable `App.js`{#app-js}
+### Définir le `App.js`{#app-js}
 
-Enfin, liez l’ensemble en encapsulant l’application React avec l’objet `LanguageContext.Provider` et de définir la valeur du paramètre régional. Cela permet aux autres composants React, [LocaleSwitcher](#locale-switcher), et [Aventures](#adventures) pour partager l’état de sélection des paramètres régionaux.
+Enfin, unissez l’ensemble en encapsulant l’application React avec le `LanguageContext.Provider` et en définissant la valeur du paramètre régional. Cela permet aux autres composants React, [LocaleSwitcher](#locale-switcher), et [Adventures](#adventures) de partager l’état de sélection du paramètre régional.
 
 ```javascript
 // src/App.js
