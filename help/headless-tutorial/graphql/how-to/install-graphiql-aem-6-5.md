@@ -1,6 +1,6 @@
 ---
 title: Installer IDE GraphiQL sur AEM 6.5
-description: Découvrez comment installer et configurer l’IDE GraphiQL sur AEM 6.5
+description: Découvrez comment installer et configurer l’IDE GraphiQL sur AEM 6.5.
 version: 6.5
 topic: Headless
 feature: GraphQL API
@@ -8,21 +8,21 @@ role: Developer
 level: Intermediate
 kt: 11614
 thumbnail: KT-10253.jpeg
-source-git-commit: 38a35fe6b02e9aa8c448724d2e83d1aefd8180e7
-workflow-type: tm+mt
+exl-id: 04fcc24c-7433-4443-a109-f01840ef1a89
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
-
 # Installer IDE GraphiQL sur AEM 6.5
 
-Dans AEM 6.5, l’outil IDE GraphiQL doit être installé manuellement.
+Dans AEM 6.5, l’outil IDE GraphiQL doit être installé manuellement.
 
-1. Accédez au **[Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?lang=fr)** > **AEM as a Cloud Service**.
+1. Accédez au **[Portail de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?lang=fr)** > **AEM as a Cloud Service**.
 1. Recherchez « GraphiQL » (veillez à inclure le **i** dans **GraphiQL**).
-1. Télécharger la dernière version du **Package de contenu GraphiQL v.x.x.x**.
+1. Téléchargez la dernière version du **Package de contenu GraphiQL v.x.x.x**.
 
    ![Télécharger le package GraphiQL](assets/graphiql/software-distribution.png)
 
@@ -48,4 +48,4 @@ Dans AEM 6.5, l’outil IDE GraphiQL doit être installé manuellement.
 
 >[!TIP]
 >
->Pour prendre en charge l’exécution des requêtes et du schéma GraphQL spécifiques à votre projet, vous devez apporter les modifications correspondantes au `endpoint` et `Excluded Paths` dans les étapes ci-dessus.
+>Pour prendre en charge le schéma GraphQL et l’exécution des requêtes propres à votre projet, vous devez apporter les modifications correspondantes aux valeurs des propriétés `endpoint` et `Excluded Paths` dans les étapes ci-dessus.
