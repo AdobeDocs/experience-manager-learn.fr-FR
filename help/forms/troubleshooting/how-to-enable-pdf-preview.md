@@ -1,6 +1,6 @@
 ---
-title: Désactivation de l’aperçu du PDF de Designer - Comment activer l’aperçu du PDF
-description: Procédure de configuration de l’aperçu du PDF dans Designer
+title: Aperçu au format PDF de Designer désactivé - Comment activer l’aperçu au format PDF
+description: Procédure de configuration de l’aperçu au format PDF dans Designer
 type: Troubleshooting
 role: Developer
 level: Intermediate
@@ -10,14 +10,14 @@ topic: Development
 index: y
 exl-id: 0d5fb8d1-5aa2-40c7-b1c9-e4b5319e8d36
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '33'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Comment activer Preview PDF
+# Comment activer l’aperçu au format PDF
 
-*Cette vidéo décrit les étapes à suivre pour activer le PDF de prévisualisation dans Designer.*
+*Cette vidéo décrit les étapes à suivre pour activer l’aperçu au format PDF dans Designer.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335500?quality=12&learn=on)
