@@ -1,6 +1,6 @@
 ---
 title: Étape de processus personnalisée pour compresser les fichiers joints
-description: Étape de processus personnalisée pour ajouter des pièces jointes de formulaire adaptatif à un fichier zip et stocker le fichier zip dans une variable de processus
+description: Étape de processus personnalisée pour ajouter des pièces jointes de formulaire adaptatif à un fichier zip et stocker le fichier zip dans une variable de workflow.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -9,23 +9,23 @@ level: Beginner
 kt: kt-8049
 exl-id: 1131dca8-882d-4904-8691-95468fb708b7
 source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '159'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Étape de processus personnalisée
 
 
-Une étape de processus personnalisée a été mise en oeuvre pour créer le fichier zip contenant les pièces jointes du formulaire. Si vous ne connaissez pas la création d’un lot OSGi, veuillez [suivez ces instructions :](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=en)
+Une étape de processus personnalisée a été mise en œuvre pour créer le fichier zip contenant les pièces jointes du formulaire. Si vous ne maîtrisez pas la création de lot OSGi, [suivez ces instructions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=fr).
 
-Le code de l’étape de processus personnalisé effectue les opérations suivantes :
+Le code de l’étape de processus personnalisée effectue les opérations suivantes :
 
-* Requête pour toutes les pièces jointes de formulaire adaptatif sous le dossier de charge utile. Le nom du dossier est transmis en tant qu’argument de processus à l’étape de processus.
+* Requête de toutes les pièces jointes de formulaire adaptatif sous le dossier de payload. Le nom du dossier est transmis en tant qu’argument de processus à l’étape de processus.
 
-* Créez un fichier zip contenant les pièces jointes du formulaire et stockez-le sous le dossier de charge utile.
-* Définir la valeur de la variable de workflow (no_of_attachments)
+* Création d’un fichier zip contenant les pièces jointes du formulaire et stockage dans le sous le dossier de payload.
+* Définition de la valeur de la variable de workflow (no_of_attachments).
 
 
 
@@ -159,8 +159,8 @@ public class ZipFormAttachments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Assurez-vous que vous disposez d’une variable appelée  *no_of_attachments* de type Double dans votre workflow pour que ce code fonctionne.
+> Assurez-vous que vous disposez d’une variable appelée *no_of_attachments* de type Double dans votre workflow pour que ce code fonctionne.
 
 ## Étapes suivantes
 
-[Renseigner les variables de workflow ArrayList avec les pièces jointes et le nom de la pièce jointe](./custom-process-step.md)
+[Renseigner les variables de workflow ArrayList avec les pièces jointes et le nom des pièces jointes](./custom-process-step.md)
