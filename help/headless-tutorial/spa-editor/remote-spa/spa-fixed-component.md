@@ -176,7 +176,7 @@ Le fichier `Home.js` doit se présenter comme suit :
    + Titre : __WKND Adventures__
    + Type/Taille : __H2__
 
-      ![Boîte de dialogue du composant de titre.](./assets/spa-fixed-component/title-dialog.png)
+     ![Boîte de dialogue du composant de titre.](./assets/spa-fixed-component/title-dialog.png)
 
 1. Appuyez sur __Terminé__ pour enregistrer.
 1. Prévisualisez vos modifications dans l’éditeur de SPA d’AEM.
