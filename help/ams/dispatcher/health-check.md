@@ -1,85 +1,86 @@
 ---
-title: Contrôle de l’intégrité du Dispatcher AMS
-description: AMS fournit un script cgi-bin de contrôle de l’intégrité que les équilibreurs de charge du cloud exécuteront pour voir si AEM est sain et doit rester en service pour le trafic public.
+title: Contrôler l’intégrité du Dispatcher AMS
+description: AMS fournit un script cgi-bin de contrôle de l’intégrité que les équilibreurs de charge du cloud exécutent pour vérifier qu’AEM est sain et qu’il peut rester en service pour le trafic public.
 version: 6.5
 topic: Administration
 feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: df3afc60f765c18915eca3bb2d3556379383fafc
-workflow-type: tm+mt
+exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '1139'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Contrôle de l’intégrité du Dispatcher AMS
+# Contrôler l’intégrité du Dispatcher AMS
 
 [Table des matières](./overview.md)
 
-[&lt;- Précédent : Fichiers en lecture seule](./immutable-files.md)
+[&lt;- Précédent : fichiers en lecture seule](./immutable-files.md)
 
-Lorsque Dispatcher est installé sur une ligne de base AMS, il est fourni avec quelques loisirs.  L’une de ces fonctionnalités est un ensemble de scripts de contrôle de l’intégrité.
-Ces scripts permettent à l’équilibreur de charge qui contourne la pile AEM de savoir quels pattes sont saines et de les garder en service.
+Lorsque Dispatcher est installé sur une ligne de base AMS, il est fourni avec quelques fonctionnalités bonus.  L’une de ces fonctionnalités est un ensemble de scripts de contrôle de l’intégrité.
+Ces scripts permettent à l’équilibreur de charge qui soutient la pile AEM de savoir quelles phases sont saines et de les garder en service.
 
-![GIF animé affichant le flux de trafic](assets/load-balancer-healthcheck/health-check.gif "Étapes de contrôle de l’intégrité")
+![GIF animé montrant le flux de trafic ](assets/load-balancer-healthcheck/health-check.gif "Étapes de contrôle de l’intégrité").
 
-## Vérification de l’intégrité de l’équilibreur de charge de base
+## Contrôle de l’intégrité de l’équilibreur de charge de base
 
 Lorsque le trafic client passe par Internet pour atteindre votre instance AEM, il passe par un équilibreur de charge.
 
-![L’image affiche le flux de trafic entre Internet et aem via un répartiteur de charge.](assets/load-balancer-healthcheck/load-balancer-traffic-flow.png "load-balancer-traffic-flow")
+![L’image montre le flux de trafic entre Internet et AEM via un répartiteur de charge ](assets/load-balancer-healthcheck/load-balancer-traffic-flow.png "load-balancer-traffic-flow").
 
-Chaque requête provenant de l’équilibreur de charge tourne vers chaque instance.  L’équilibreur de charge dispose d’un mécanisme de contrôle de l’intégrité intégré pour s’assurer qu’il envoie du trafic vers un hôte sain.
+Chaque requête provenant de l’équilibreur de charge est acheminée vers chaque instance.  L’équilibreur de charge dispose d’un mécanisme de contrôle de l’intégrité intégré pour s’assurer qu’il envoie du trafic vers un hôte sain.
 
-La vérification par défaut est généralement une vérification de port pour voir si les serveurs ciblés dans l’équilibreur de charge écoutent le trafic de port qui se produit (c’est-à-dire TCP 80 et 443).
+Le contrôle par défaut est généralement un contrôle des ports pour voir si les serveurs ciblés dans l’équilibreur de charge écoutent sur le port du trafic entrant (c’est-à-dire TCP 80 et 443).
 
-> `Note:` Bien que cela fonctionne, il n&#39;a pas de réelle jauge sur la santé de l&#39;AEM.  Il vérifie uniquement si Dispatcher (serveur web Apache) est en cours d’exécution.
+> `Note:` bien que cela fonctionne, cela ne permet pas de connaître l’intégrité d’AEM.  Il vérifie uniquement si le Dispatcher (serveur web Apache) fonctionne correctement.
 
 ## Contrôle d’intégrité AMS
 
-Pour éviter d’envoyer du trafic à un dispatcher sain qui dirige une instance d’AEM non saine, AMS a créé quelques ajouts qui évaluent l’intégrité de la jambe et pas seulement celle du dispatcher.
+Pour éviter d’envoyer du trafic à un Dispatcher sain qui fait face à une instance AEM non saine, AMS a créé quelques extras qui évaluent l’intégrité de la phase et pas seulement celle du Dispatcher.
 
-![L’image montre les différentes pièces pour que le contrôle de l’intégrité fonctionne.](assets/load-balancer-healthcheck/health-check-pieces.png "morceaux de contrôle-santé")
+![L’image montre les éléments nécessaires au contrôle de l’intégrité ](assets/load-balancer-healthcheck/health-check-pieces.png "healt-check-pieces").
 
-Le contrôle de l’intégrité comprend les éléments suivants :
-- 1 `Load balancer`
-- 1 `Apache web server`
-- 3 `Apache *VirtualHost* config files`
-- 5 `CGI-Bin scripts`
-- 1 `AEM instance`
-- 1 `AEM package`
+Le contrôle de l’intégrité comprend les éléments suivants :
+- 1 `Load balancer`
+- 1 `Apache web server`
+- 3 `Apache *VirtualHost* config files`
+- 5 `CGI-Bin scripts`
+- 1 `AEM instance`
+- 1 `AEM package`
 
-Nous allons décrire ce que chaque pièce est configurée et leur importance.
+Nous allons décrire le rôle et l’importance de chaque élément.
 
 ### Package AEM
 
 Pour indiquer si AEM fonctionne, vous devez procéder à une compilation de page de base et diffuser la page.  Adobe Managed Services a créé un package de base contenant la page de test.  La page teste que le référentiel est opérationnel et que les ressources et le modèle de page peuvent être rendus.
 
-![L’image affiche le module AMS dans le gestionnaire de modules CRX](assets/load-balancer-healthcheck/health-check-package.png "pack de contrôle-santé")
+![L’image montre le package AMS dans le gestionnaire de packages CRX ](assets/load-balancer-healthcheck/health-check-package.png "healt-check-package").
 
-Voici la page.  Il affiche l’identifiant du référentiel de l’installation.
+Voici la page.  Elle affiche l’ID du référentiel de l’installation.
 
-![L’image affiche la page représentant AMS](assets/load-balancer-healthcheck/health-check-page.png "health-check-page")
+![L’image affiche la page représentant AMS ](assets/load-balancer-healthcheck/health-check-page.png "health-check-page").
 
-> `Note:` Nous nous assurons que la page ne peut pas être mise en cache.  Il ne vérifierait pas l’état réel si chaque fois il renvoyait une page mise en cache.
+> `Note:` nous nous assurons que la page ne peut pas être mise en cache.  Il serait impossible de contrôler le statut réel si, à chaque fois, il renvoyait une page mise en cache.
 
-C&#39;est le point d&#39;entrée de poids léger que nous pouvons tester pour voir que l&#39;AEM est opérationnel.
+C’est le point d’entrée léger que nous pouvons tester pour vérifier qu’AEM fonctionne correctement.
 
-### Configuration de l’équilibreur de charge
+### Configurer l’équilibreur de charge
 
-Nous configurons les équilibreurs de charge pour qu’ils pointent vers un point de terminaison CGI-BIN au lieu d’utiliser une vérification de port.
+Nous configurons les équilibreurs de charge pour qu’ils pointent vers un point d’entrée CGI-BIN au lieu d’utiliser un contrôle du port.
 
-![L’image affiche la configuration du contrôle de l’intégrité de l’équilibreur de charge AWS.](assets/load-balancer-healthcheck/aws-settings.png "aws-lb-settings")
+![L’image montre la configuration du contrôle de l’intégrité de l’équilibreur de charge AWS ](assets/load-balancer-healthcheck/aws-settings.png "aws-lb-settings").
 
-![L’image affiche la configuration de contrôle de l’intégrité de l’équilibreur de charge Azure](assets/load-balancer-healthcheck/azure-settings.png "azure-lb-settings")
+![L’image montre la configuration du contrôle de l’intégrité de l’équilibreur de charge Azure ](assets/load-balancer-healthcheck/azure-settings.png "azure-lb-settings").
 
-### Hôtes virtuels Apache Health Check
+### Hôtes virtuels du contrôle de l’intégrité Apache
 
 #### Hôte virtuel CGI-BIN `(/etc/httpd/conf.d/available_vhosts/ams_health.vhost)`
 
-Il s’agit de la variable `<VirtualHost>` Fichier de configuration Apache qui permet l’exécution des fichiers CGI-bin.
+Il s’agit du fichier de configuration Apache `<VirtualHost>` qui permet l’exécution des fichiers CGI-BIN.
 
 ```
 Listen 81
@@ -90,7 +91,7 @@ Listen 81
 </VirtualHost>
 ```
 
-> `Note:` Les fichiers cgi-bin sont des scripts qui peuvent être exécutés.  Il peut s’agir d’un vecteur d’attaque vulnérable et ces scripts qu’AMS utilise ne sont pas publiquement accessibles uniquement par l’équilibreur de charge à tester.
+> `Note:` les fichiers CGI-BIN sont des scripts qui peuvent être exécutés.  Il peut s’agir d’un vecteur d’attaque vulnérable et ces scripts utilisés par AMS ne sont pas publiquement accessibles, uniquement par l’équilibreur de charge à tester.
 
 
 #### Hôtes virtuels de maintenance non sains
@@ -98,11 +99,11 @@ Listen 81
 - `/etc/httpd/conf.d/available_vhosts/000_unhealthy_author.vhost`
 - `/etc/httpd/conf.d/available_vhosts/000_unhealthy_publish.vhost`
 
-Ces fichiers sont nommés `000_` comme préfixe exprès.  Il est délibérément configuré pour utiliser le même nom de domaine que le site actif.  Ce fichier a l’intention d’être activé lorsque le contrôle de l’intégrité détecte un problème avec l’un des AEM principaux.  Ensuite, proposez une page d’erreur au lieu d’un code de réponse HTTP 503 sans page.  Il volera le trafic de la normale `.vhost` car il est chargé avant cela. `.vhost` lors du partage du même fichier `ServerName` ou `ServerAlias`.  Résultat : les pages destinées à un domaine particulier accèdent au vhost malsain au lieu de celui par défaut, ce qui génère un trafic normal.
+Ces fichiers comportent délibérément le préfixe `000_` dans leur nom.  La configuration est pensée pour utiliser le même nom de domaine que le site actif.  L’idée est que ce fichier soit activé lorsque le contrôle de l’intégrité détecte un problème avec l’un des backends AEM.  Ensuite, proposez une page d’erreur au lieu d’un code de réponse HTTP 503 sans page.  Elle volera le trafic du fichier `.vhost` normal, car elle est chargée avant ce fichier `.vhost` tout en partageant le même `ServerName` ou `ServerAlias`.  Résultat : les pages destinées à un domaine particulier accèdent au vhost non sain au lieu de celui par défaut, ce qui génère un trafic normal.
 
-Lorsque les scripts de contrôle de l’intégrité s’exécutent, ils déconnectent leur état d’intégrité actuel.  Une fois par minute, une tâche cronjob s’exécute sur le serveur qui recherche des entrées non saines dans le journal.  S’il détecte que l’instance d’AEM de création n’est pas saine, il active alors le lien symbolique :
+Lorsque les scripts de contrôle de l’intégrité s’exécutent, ils déconnectent leur statut d’intégrité actuel.  Une fois par minute, une tâche cronjob s’exécutant sur le serveur recherche des entrées non saines dans le journal.  Si elle détecte que l’instance de création d’AEM n’est pas saine, elle active alors le lien symbolique :
 
-Entrée du journal :
+Entrée du journal :
 
 ```
 # grep "ERROR\|publish" /var/log/lb/health_check.log
@@ -110,7 +111,7 @@ E, [2022-11-23T20:13:54.984379 #26794] ERROR -- : AUTHOR -- Exception caught: Co
 I, [2022-11-23T20:13:54.984403 #26794]  INFO -- : [checkpublish]-author:0-publish:1-[checkpublish]
 ```
 
-Cron sélectionne l’erreur et réagit :
+La tâche cron sélectionne l’erreur et réagit :
 
 ```
 # grep symlink /var/log/lb/health_check_reload.log
@@ -124,18 +125,18 @@ Vous pouvez contrôler si les sites de création ou de publication peuvent charg
 RELOAD_MODE='author'
 ```
 
-Options valides :
-- auteur 
+Options valides :
+- Création
    - Il s’agit de l’option par défaut.
-   - Cela met en place une page de maintenance pour l’auteur lorsqu’il n’est pas sain.
-- publish
-   - Cette option met en place une page de maintenance pour l’éditeur lorsqu’il n’est pas sain.
-- toutes
-   - Cette option met en place une page de maintenance pour l’auteur ou l’éditeur ou les deux s’ils ne sont plus sains.
-- aucune
+   - Cela affiche une page de maintenance à l’auteur ou l’autrice si il n’est pas saine ou elle n’est pas saine.
+- Publication
+   - Cette option affiche une page de maintenance à l’éditeur ou l’éditrice si il n’est pas sain ou elle n’est pas saine.
+- Toutes
+   - Cette option affiche une page de maintenance à l’auteur/l’autrice ou l’éditeur ou l’éditrice ou les deux si ils ou elles ne sont plus sain(e)s.
+- Aucune
    - Cette option ignore cette fonctionnalité du contrôle de l’intégrité.
 
-Lorsque vous observez le `VirtualHost` pour ces paramètres, ils chargent le même document qu’une page d’erreur pour chaque requête qui se produit lorsqu’elle est activée :
+Lorsque vous observez le paramètre `VirtualHost` pour ces options, il charge le même document qu’une page d’erreur pour chaque requête qui entre lorsqu’il est activé :
 
 ```
 <VirtualHost *:80>
@@ -172,42 +173,42 @@ X-Dispatcher: dispatcher1useast1
 X-Vhost: unhealthy-author
 ```
 
-Au lieu d’une page vierge, ils obtiendront cette page à la place.
+Au lieu d’une page vierge, cette page s’affichera à la place.
 
-![L’image affiche la page de maintenance par défaut.](assets/load-balancer-healthcheck/unhealthy-page.png "page malsaine")
+![L’image affiche la page de maintenance par défaut ](assets/load-balancer-healthcheck/unhealthy-page.png "page non saine")
 
 ### Scripts CGI-Bin
 
-Il existe 5 scripts différents qui peuvent être configurés par l’ingénieur du service client dans les paramètres de l’équilibreur de charge. Ils modifient le comportement ou les critères lorsque vous souhaitez extraire un répartiteur de l’équilibreur de charge.
+Il existe 5 scripts différents qui peuvent être configurés par l’ingénieur(e) du service clientèle dans les paramètres de répartition de charge. Ils modifient le comportement ou les critères lorsque vous souhaitez extraire un Dispatcher de la répartition de charge.
 
 #### /bin/checkauthor
 
-Lorsqu’il est utilisé, ce script vérifie et consigne toutes les instances qu’il dirige, mais ne renvoie une erreur que si la variable `author` L’instance AEM n’est pas saine
+Lorsqu’il est utilisé, ce script vérifie et consigne toutes les instances qu’il dirige, mais ne renvoie une erreur que si l’instance AEM de `author` n’est pas saine.
 
-> `Note:` Gardez à l’esprit que si l’instance d’AEM de publication n’était pas saine, Dispatcher resterait en service pour permettre le trafic vers l’instance d’AEM de création.
+> `Note:` Gardez à l’esprit que si l’instance AEM de publication n’était pas saine, Dispatcher resterait en service pour autoriser le trafic vers l’instance AEM de création.
 
 #### /bin/checkpublish (par défaut)
 
-Lorsqu’il est utilisé, ce script vérifie et consigne toutes les instances qu’il dirige, mais ne renvoie une erreur que si la variable `publish` L’instance AEM n’est pas saine
+Lorsqu’il est utilisé, ce script vérifie et consigne toutes les instances qu’il dirige, mais ne renvoie une erreur que si l’instance AEM de `publish` n’est pas saine.
 
-> `Note:` Gardez à l’esprit que si l’instance d’AEM de création n’était pas saine, Dispatcher resterait en service pour autoriser le trafic vers l’instance d’AEM de publication.
+> `Note:` Gardez à l’esprit que si l’instance AEM de création n’était pas saine, Dispatcher resterait en service pour autoriser le trafic vers l’instance AEM de publication.
 
 #### /bin/checkether
 
-Lorsqu’il est utilisé, ce script vérifie et consigne toutes les instances qu’il dirige, mais ne renvoie une erreur que si la variable `author` ou le `publisher` L’instance AEM n’est pas saine
+Lorsqu’il est utilisé, ce script vérifie et consigne toutes les instances qu’il dirige, mais ne renvoie une erreur que si l’instance AEM de `author` ou de `publisher` n’est pas saine.
 
-> `Note:` Gardez à l’esprit que si l’instance d’AEM de publication ou l’instance d’AEM de création n’était pas saine, le dispatcher se retirait du service.  En d’autres termes, si l’un d’eux était sain, il ne recevrait pas non plus de trafic.
+> `Note:` Gardez à l’esprit que si l’instance AEM de publication ou de création n’était pas saine, Dispatcher se retirerait du service.  En d’autres termes, si l’une d’elles était saine, il ne recevrait pas non plus de trafic.
 
 #### /bin/checkboth
 
-Lorsqu’il est utilisé, ce script vérifie et consigne toutes les instances qu’il dirige, mais ne renvoie une erreur que si la variable `author` et le `publisher` Les instances AEM ne sont pas saines
+Lorsqu’il est utilisé, ce script vérifie et consigne toutes les instances qu’il dirige, mais ne renvoie une erreur que si les instances AEM de `author` et de `publisher` ne sont pas saines.
 
-> `Note:` Gardez à l’esprit que si l’instance d’AEM de publication ou l’instance d’AEM de création n’était pas saine, Dispatcher ne se retirait pas du service.  En d’autres termes, si l’un d’eux n’était pas sain, il continuerait à recevoir du trafic et à envoyer des erreurs aux personnes demandant des ressources.
+> `Note:` Gardez à l’esprit que si l’instance AEM de publication ou de création n’était pas saine, Dispatcher ne se retirerait pas du service.  En d’autres termes, si l’une d’elles n’était pas saine, il continuerait à recevoir du trafic et à envoyer des erreurs aux personnes demandant des ressources.
 
 #### /bin/health
 
-Lorsqu’il est utilisé, ce script vérifie et consigne toutes les instances qu’il dirige, mais il renvoie simplement sain, que AEM renvoie ou non une erreur.
+Lorsqu’il est utilisé, ce script vérifie et consigne toutes les instances qu’il dirige, mais il renvoie simplement un état sain qu’AEM renvoie ou non une erreur.
 
-> `Note:` Ce script est utilisé lorsque le contrôle de l’intégrité ne fonctionne pas comme vous le souhaitez et permet à un remplacement de conserver AEM instances dans l’équilibreur de charge.
+> `Note:` Ce script est utilisé lorsque le contrôle de l’intégrité ne fonctionne pas comme vous le souhaitez et permet un remplacement pour conserver les instances AEM dans la répartition de charge.
 
-[Suivant -> Symlinks GIT](./git-symlinks.md)
+[Suivant -> Liens symboliques GIT](./git-symlinks.md)
