@@ -7,7 +7,7 @@ role: Developer
 level: Beginner
 exl-id: ece0bf0d-c4af-4962-9c00-f2849c2d8f6f
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '785'
 ht-degree: 100%
 
@@ -70,14 +70,14 @@ Pour ce faire, nous pouvons mettre en correspondance ces exigences avec les comp
    * **[!DNL WKND Mobile > Image]**
 
       * Logo de l’application.
+
    * **[!DNL WKND Mobile > Text]**
 
       * Texte d’introduction de l’application.
+
    * **[!DNL WKND Mobile > Content Fragment List]**
 
       * Liste des catégories d’événement disponibles pour affichage dans l’application.
-
-
 
 1. Cochez la case **[!UICONTROL Terminé]** en haut à droite lorsque vous avez terminé.
 1. **Actualisez** la fenêtre du navigateur pour afficher la liste des nouveaux [!UICONTROL Composants autorisés] dans le rail de gauche.
