@@ -9,13 +9,13 @@ level: Intermediate
 kt: 10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
-source-git-commit: b2bf2a8e454d7ccd09819f2a38e58f7c303cb066
+exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
 workflow-type: ht
 source-wordcount: '637'
 ht-degree: 100%
 
 ---
-
 
 # Déploiements de SPA AEM Headless
 
@@ -52,9 +52,9 @@ Vous pouvez décider de la façon dont le trafic SPA et AEM est acheminé sur le
 
 Vous trouverez ci-dessous les configurations de déploiement requises pour le déploiement de la SPA dans l’instance de production, lorsqu’elles sont hébergées sur le même domaine qu’AEM.
 
-| La SPA se connecte à | l’instance de création AEM, | l’instance de publication AEM, | Prévisualisation AEM |
+| La SPA se connecte à | l’instance de création AEM, | Publication AEM | Prévisualisation AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Filtres du Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [Filtres Dispatcher.](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Partage de ressources entre origines multiples (CORS) | ✘ | ✘ | ✘ |
 | Hôtes AEM | ✘ | ✘ | ✘ |
 
@@ -69,11 +69,11 @@ Comme l’accès à AEM et à la SPA est réalisé via des domaines différents,
 
 Vous trouverez ci-dessous les configurations de déploiement requises pour le déploiement de la SPA dans l’instance de production, lorsqu’elles sont hébergées sur un domaine autre qu’AEM.
 
-| La SPA se connecte à | l’instance de création AEM, | l’instance de publication AEM, | Prévisualisation AEM |
+| La SPA se connecte à | l’instance de création AEM, | Publication AEM | Prévisualisation AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
-| [Filtres du Dispatcher](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
-| [Partage de ressources cross-origin (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
-| [Hôtes AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [Filtres Dispatcher.](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
+| [Partage de ressources entre origines multiples (CORS).](./configurations/cors.md) | ✔ | ✔ | ✔ |
+| [Hôtes AEM.](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 #### Exemple de déploiement d’une SPA sur différents domaines
 
