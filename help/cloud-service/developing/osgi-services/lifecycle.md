@@ -1,6 +1,6 @@
 ---
 title: Cycle de vie des composants OSGi
-description: Découvrez le cycle de vie des composants OSGi, notamment comment lier un service OSGi aux événements de cycle de vie activer, modifier et désactiver.
+description: Découvrez le cycle de vie des composants OSGi, notamment comment lier un service OSGi aux événements de cycle de vie Activer, Modifié et Désactiver.
 role: Developer
 level: Beginner
 topic: Development
@@ -9,21 +9,21 @@ kt: 8228
 thumbnail: 335475.jpeg
 exl-id: 5a65dbcd-649b-464c-9c78-d31c2b6c49c3
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '94'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Cycle de vie du composant OSGi
+# Cycle de vie des composants OSGi
 
-Découvrez le cycle de vie du composant OSGi, notamment comment lier un service OSGi à :
+Découvrez le cycle de vie des composants OSGi, notamment comment lier un service OSGi aux événements de cycle de vie suivants :
 
 + Activer
 + Modifié
-+ et désactiver
++ Désactiver
 
-...événements de cycle de vie.
+...
 
 >[!VIDEO](https://video.tv.adobe.com/v/335475?quality=12&learn=on)
 
