@@ -7,7 +7,7 @@ role: Developer
 level: Beginner
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '334'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Si vous rencontrez un problème avec le tutoriel ou le code, veuillez consigner 
 
 ## AEM GraphQL et AEM Content Services
 
-|  | API AEM GraphQL | AEM Content Services |
+|                                | API AEM GraphQL | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
 | Définition d’un schéma | Modèles structurés de fragment de contenu | Composants AEM |
 | Contenu | Fragments de contenu | Composants AEM |
