@@ -1,6 +1,6 @@
 ---
-title: Résolution des problèmes liés à la signature de plusieurs documents
-description: Tester et résoudre les problèmes liés à la solution
+title: Dépanner les problèmes liés à la signature de plusieurs documents
+description: Tester et dépanner les problèmes liés à la solution
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6960
@@ -10,43 +10,43 @@ role: Developer
 level: Intermediate
 exl-id: 99cba29e-4ae3-4160-a4c7-a5b6579618c0
 source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '388'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Test et dépannage
+# Tester et dépanner
 
 
-## Aperçu du formulaire de refinancement
+## Prévisualiser le formulaire de refinancement
 
-Le cas d’utilisation est déclenché lorsque l’agent du service client remplit et envoie [formulaire de refinancement](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
+Le cas d’utilisation est déclenché lorsque le service clientèle remplit et envoie le [formulaire de refinancement](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
 
-Le processus Sign Multiple Forms obtient des déclencheurs lors de l’envoi de ce formulaire et le client reçoit une notification par courrier électronique avec un lien pour démarrer le processus de remplissage et de signature du formulaire.
+Le processus Signer plusieurs formulaires obtient des déclencheurs lors de l’envoi de ce formulaire. La personne reçoit alors une notification par e-mail, contenant un lien pour démarrer le processus de remplissage et de signature du formulaire.
 
-## Remplissage des formulaires dans le module
+## Remplir des formulaires dans le package
 
-Le client se voit alors présenter pour remplir et signer le premier formulaire du kit. Une fois la signature du formulaire effectuée, le client peut accéder au formulaire suivant dans le module. Une fois que tous les formulaires sont remplis et signés, le client reçoit le message &quot;**AllDone**&quot;.
+La personne doit remplir et signer le premier formulaire du package. Une fois la signature du formulaire effectuée, la personne peut accéder au formulaire suivant dans le package. Une fois que tous les formulaires sont remplis et signés, la personne reçoit le formulaire **« Alldone »**.
 
 ## Résolution des problèmes
 
-### La notification par e-mail n&#39;est pas générée
+### La notification par e-mail n’est pas générée
 
-La notification par courrier électronique est envoyée par le composant Envoyer un courrier électronique dans le processus Signer plusieurs formulaires . Si l’une des étapes de ce workflow échoue, l’email de notification est envoyé. Assurez-vous que l’étape de processus personnalisée du workflow crée des lignes dans votre base de données MySQL. Si les lignes sont en cours de création, vérifiez les paramètres de configuration du service de messagerie Day CQ.
+La notification par e-mail est envoyée par le composant Envoyer un e-mail du workflow Signer plusieurs formulaires. Si l’une des étapes de ce workflow échoue, l’e-mail de notification est envoyé. Assurez-vous que l’étape de processus personnalisée du workflow crée des lignes dans votre base de données MySQL. Si les lignes sont en cours de création, vérifiez les paramètres de configuration du service de messagerie Day CQ.
 
 ### Le lien de la notification par e-mail ne fonctionne pas
 
-Les liens contenus dans les notifications électroniques sont générés dynamiquement. Si votre serveur AEM n’est pas exécuté sur localhost:4502, indiquez le nom et le port corrects du serveur dans les arguments de l’étape Stocker Forms à signer du processus Sign Multiple Forms .
+Les liens contenus dans les notifications par e-mail sont générés dynamiquement. Si votre serveur AEM n’est pas exécuté sur localhost:4502, indiquez le nom et le port corrects du serveur dans les arguments de l’étape Stocker les formulaires à signer du workflow Signer plusieurs formulaires.
 
 ### Impossible de signer le formulaire
 
-Cela peut se produire si le formulaire n’a pas été rempli correctement en récupérant les données de la source de données. Vérifiez les journaux stdout de votre serveur. Le fichier fetchformdata.jsp écrit quelques messages utiles au fichier stdout.
+Cette situation peut se produire si le formulaire n’a pas été rempli correctement lors de la récupération des données de la source de données. Vérifiez les journaux stdout de votre serveur. Le fichier fetchformdata.jsp écrit des messages utiles au fichier stdout.
 
-### Impossible d’accéder au formulaire suivant dans le module
+### Impossible d’accéder au formulaire suivant dans le package
 
-Une fois la signature d’un formulaire dans le module terminée, le workflow Mettre à jour le statut de la signature est déclenché. La première étape du workflow met à jour l’état de signature du formulaire dans la base de données. Vérifiez si l’état du formulaire est mis à jour de 0 à 1.
+Une fois la signature d’un formulaire du package terminée, le workflow Mettre à jour le statut de la signature est déclenché. La première étape du workflow met à jour le statut de signature du formulaire dans la base de données. Vérifiez si le statut du formulaire est mis à jour de 0 à 1.
 
-### Impossible de voir le formulaire AllDone
+### Pas de formulaire AllDone
 
-Lorsqu’il n’y a plus de formulaires à signer dans le package, le formulaire AllDone est présenté à l’utilisateur. Si vous ne voyez pas le formulaire AllDone, veuillez vérifier l’URL utilisée à la ligne 33 du fichier GetNextFormToSign.js qui fait partie du fichier **getnextform** client lib.
+Lorsqu’il n’y a plus de formulaires à signer dans le package, le formulaire AllDone s’affiche. Si vous ne voyez pas le formulaire AllDone, veuillez vérifier l’URL utilisée à la ligne 33 du fichier GetNextFormToSign.js de la bibliothèque cliente **getnextform**.
