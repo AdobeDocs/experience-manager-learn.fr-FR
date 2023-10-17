@@ -10,12 +10,12 @@ kt: 8220
 thumbnail: 336255.jpeg
 last-substantial-update: 2022-10-14T00:00:00Z
 badgeIntegration: label="Intégration" type="positive"
-badgeVersions: label="AEM Assets Essentials" before-title="false"
+badgeVersions: label="AEM Assets Essentials" before-title="false"
 exl-id: e1ec3560-2c74-47ac-ba8a-f05412b6b3e5
 source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '51'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
