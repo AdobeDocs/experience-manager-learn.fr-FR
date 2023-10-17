@@ -1,6 +1,6 @@
 ---
-title: Affichage d’images intégrées dans Adaptive Forms
-description: Affichage des images téléchargées en ligne dans Adaptive Forms
+title: Afficher des images intégrées dans des formulaires adaptatifs
+description: Afficher des images chargées intégrées dans des formulaires adaptatifs
 feature: Adaptive Forms
 topics: development
 version: 6.4,6.5
@@ -10,19 +10,19 @@ level: Experienced
 exl-id: 4a69513d-992c-435a-a520-feb9085820e7
 last-substantial-update: 2020-06-09T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '225'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Images intégrées dans Adaptive Forms
+# Images intégrées dans les formulaires adaptatifs
 
-Un cas d’utilisation courant consiste à afficher l’image téléchargée en tant qu’image intégrée dans un formulaire adaptatif. Par défaut, l’image téléchargée s’affiche sous forme de lien et cette expérience peut être améliorée en affichant l’image dans le formulaire adaptatif. Cet article décrit les étapes à suivre pour afficher une image intégrée.
+Il est arrive souvent d’afficher l’image chargée en tant qu’image intégrée dans un formulaire adaptatif. Par défaut, l’image chargée s’affiche sous forme de lien et cette expérience peut être améliorée en affichant l’image dans le formulaire adaptatif. Cet article décrit les étapes à suivre pour afficher une image intégrée.
 
-## Ajout d’une image d’espace réservé
+## Ajouter une image d’espace réservé
 
-La première étape consiste à ajouter une balise div d’espace réservé au composant de pièce jointe. Dans le code ci-dessous, le composant de pièce jointe est identifié par son nom de classe CSS de téléchargement de photo. La fonction JavaScript fait partie de la bibliothèque cliente associée aux formulaires adaptatifs. Cette fonction est appelée dans l’événement initialize du composant de pièce jointe.
+La première étape consiste à ajouter une balise div d’espace réservé au composant de pièce jointe. Dans le code ci-dessous, le composant de pièce jointe est identifié par son nom de classe CSS, photo-upload. La fonction JavaScript fait partie de la bibliothèque cliente associée aux formulaires adaptatifs. Cette fonction est appelée dans l’événement d’initialisation du composant de pièce jointe.
 
 ```javascript
 /**
@@ -37,7 +37,7 @@ function addTempImage(){
 
 ### Afficher une image intégrée
 
-Une fois que l’utilisateur a chargé l’image, la fonction répertoriée ci-dessous est appelée dans l’événement commit du composant de pièce jointe. La fonction reçoit l’objet de fichier chargé en tant qu’argument.
+Une fois que l’utilisateur ou l’utilisatrice a chargé l’image, la fonction répertoriée ci-dessous est appelée dans l’événement d’engagement du composant de pièce jointe. La fonction reçoit l’objet de fichier chargé en tant qu’argument.
 
 ```javascript
 /**
@@ -65,7 +65,7 @@ function consumeImage (file) {
 
 ### Déployer sur votre serveur
 
-* Téléchargez et installez le [bibliothèque cliente](assets/inline-image-client-library.zip) sur votre instance AEM à l’aide d’AEM gestionnaire de packages.
-* Téléchargez et installez le [exemple de formulaire](assets/inline-image-af.zip) sur votre instance AEM à l’aide d’AEM gestionnaire de packages.
-* Pointez votre navigateur sur [Ajout d’une image intégrée](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled)
-* Cliquez sur le bouton &quot;Joindre votre photo&quot; pour ajouter une image.
+* Téléchargez et installez la [bibliothèque cliente](assets/inline-image-client-library.zip) sur votre instance AEM à l’aide du gestionnaire de packages AEM.
+* Téléchargez et installez l’[exemple de formulaire](assets/inline-image-af.zip) sur votre instance AEM à l’aide du gestionnaire de packages AEM.
+* Pointez votre navigateur sur [Ajouter une image intégrée](http://localhost:4502/content/dam/formsanddocuments/addinlineimage/jcr:content?wcmmode=disabled).
+* Cliquez sur le bouton « Joindre votre photo » pour ajouter une image.
