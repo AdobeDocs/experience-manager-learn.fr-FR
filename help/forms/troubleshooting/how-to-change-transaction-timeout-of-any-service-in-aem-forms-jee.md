@@ -1,6 +1,6 @@
 ---
-title: Comment modifier le délai d’expiration des transactions d’un service dans AEM Forms JEE
-description: Procédure d’augmentation ou de diminution du délai d’expiration des transactions d’un service dans AEM Forms JEE
+title: Modifier le délai d’expiration des transactions d’un service dans AEM Forms JEE
+description: Procédure d’augmentation ou de diminution du délai d’expiration des transactions d’un service dans AEM Forms JEE
 type: Troubleshooting
 role: Admin
 level: Intermediate
@@ -9,14 +9,14 @@ topic: Administration
 index: y
 exl-id: 3f30b17b-2e69-4b77-97fc-3df5a273d002
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '56'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Comment modifier le délai d’expiration des transactions d’un service dans AEM Forms JEE
+# Modifier le délai d’expiration des transactions d’un service dans AEM Forms JEE
 
-*Cette vidéo décrit les étapes à suivre pour modifier le délai d’expiration de transaction d’un service dans AEM Forms JEE.*
+*Cette vidéo décrit les étapes à suivre pour modifier le délai d’expiration des transactions d’un service dans AEM Forms JEE.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335495?quality=12&learn=on)
