@@ -1,6 +1,6 @@
 ---
-title: dʼAEM Forms as a Cloud Service
-description: Découvrez les cas d’utilisation et les fonctionnalités pris en charge par AEM Forms as a Cloud Service.
+title: AEM Forms as a Cloud Service
+description: Découvrez les cas d’utilisation et les fonctionnalités pris en charge par AEM Forms as a Cloud Service.
 version: Cloud Service
 topic: Migration, Upgrade
 feature: Migration
@@ -10,14 +10,14 @@ kt: 8637
 thumbnail: 336968.jpeg
 exl-id: 4d1aea2e-51f5-4752-be41-b08e8ccb6db9
 source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '44'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
-# AEM Forms as a Cloud Service - Passage à AEM CS
+# AEM Forms as a Cloud Service - Passer à AEM CS
 
-Découvrez les cas d’utilisation et les fonctionnalités pris en charge par AEM Forms as a Cloud Service.
+Découvrez les cas d’utilisation et les fonctionnalités pris en charge par AEM Forms as a Cloud Service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336968?quality=12&learn=on)
