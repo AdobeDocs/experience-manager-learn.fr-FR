@@ -1,6 +1,6 @@
 ---
-title: Configuration d’un environnement de développement local pour l’extensibilité des Assets compute
-description: Le développement d’objets Worker Asset compute, qui sont des applications JavaScript Node.js, nécessite des outils de développement spécifiques qui diffèrent du développement AEM traditionnel, allant de Node.js et de divers modules npm à Docker Desktop et Microsoft Visual Studio Code.
+title: Configurer un environnement de développement local pour l’extensibilité Assets Compute
+description: 'Le développement de programmes de travail Assets Compute, qui sont des applications JavaScript Node.js, nécessite des outils de développement spécifiques dont AEM n’est pas coutumier : Node.js, divers modules npm, ainsi que Docker Desktop et Microsoft Visual Studio Code.'
 feature: Asset Compute Microservices
 topics: renditions, development
 version: Cloud Service
@@ -14,32 +14,32 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 162e10e5-fcb0-4f16-b6d1-b951826209d9
 source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Configuration de l’environnement de développement local
+# Configurer l’environnement de développement local
 
-Les projets Adobe Asset compute ne peuvent pas être intégrés au runtime AEM local fourni par le SDK AEM et sont développés à l’aide de leur propre chaîne d’outils, distincte de celle requise par les applications  en fonction de l’archétype de projet Maven.
+Les projets Assets Compute ne peuvent pas être intégrés à l’exécution AEM locale fournie par le SDK AEM et sont développés à l’aide de leur propre chaîne d’outils, distincte de celle requise par les applications en fonction de l’archétype de projet Maven.
 
-Pour étendre les microservices Asset compute, les outils suivants doivent être installés sur la machine locale du développeur.
+Pour étendre les microservices Assets Compute, les outils suivants doivent être installés sur la machine de développement locale.
 
-## Instructions de configuration abrégées
+## Instructions de configuration abrégées.
 
-Vous trouverez ci-dessous des instructions de configuration abrégées. Les détails de ces outils de développement sont décrits dans des sections discrètes ci-dessous.
+Vous trouverez ci-dessous des instructions de configuration abrégées. Ces outils de développement sont décrits dans les sections ci-dessous.
 
-1. [Installez Docker ](https://www.docker.com/products/docker-desktop) Desktopet extrayez les images Docker requises :
+1. [Installez Docker Desktop](https://www.docker.com/products/docker-desktop) et procédez à l’extraction des images Docker requises :
 
    ```
    $ docker pull openwhisk/action-nodejs-v12:latest
    $ docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
    ```
 
-1. [Installation du code Visual Studio](https://code.visualstudio.com/download)
-1. [Installation de Node.js 10+](../../local-development-environment/development-tools.md#node-js)
-1. Installez les modules npm requis et les modules CLI d’Adobe I/O à partir de la ligne de commande :
+1. [Installer Visual Studio Code](https://code.visualstudio.com/download)
+1. [Installer Node.js 10 ou version ultérieure](../../local-development-environment/development-tools.md#node-js)
+1. Installez les modules npm requis et les plug-ins CLI d’Adobe I/O à partir de la ligne de commande :
 
    ```
    $ npm i -g @adobe/aio-cli@7.1.0 @openwhisk/wskdebug ngrok --unsafe-perm=true \
@@ -48,45 +48,45 @@ Vous trouverez ci-dessous des instructions de configuration abrégées. Les dét
 
 Pour plus d’informations sur les instructions d’installation abrégées, consultez les sections ci-dessous.
 
-## Installation du code Visual Studio{#vscode}
+## Installer Visual Studio Code{#vscode}
 
-[Le ](https://code.visualstudio.com/download) code Microsoft Visual Studio est utilisé pour le développement et le débogage des objets Worker Asset compute. Bien que d’autres [IDE compatibles avec JavaScript](../../local-development-environment/development-tools.md#set-up-the-development-ide) puissent être utilisés pour développer le programme de travail, seul le code Visual Studio peut être intégré à [debug](../test-debug/debug.md) Asset compute worker.
+[Microsoft Visual Studio Code](https://code.visualstudio.com/download) est utilisé à des fins de développement et de débogage des programmes de travail Assets Compute. Bien que d’autres [IDE compatibles avec JavaScript](../../local-development-environment/development-tools.md#set-up-the-development-ide) puissent participer au développement du programme de travail, seul Visual Studio Code permet de [déboguer](../test-debug/debug.md) le programme de travail Assets Compute.
 
-Ce tutoriel suppose l’utilisation de Visual Studio Code, car il fournit la meilleure expérience de développement pour étendre l’Asset compute.
+Ce tutoriel utilise Visual Studio Code afin d’offrir la meilleure expérience de développement et tirer pleinement parti d’Asset Compute.
 
-## Installation de Docker Desktop{#docker}
+## Installer Docker Desktop{#docker}
 
-Téléchargez et installez la dernière version de [Docker Desktop](https://www.docker.com/products/docker-desktop), car cela est nécessaire pour [tester](../test-debug/test.md) et [déboguer](../test-debug/debug.md) Asset compute les projets localement.
+Téléchargez et installez la dernière version stable de [Docker Desktop](https://www.docker.com/products/docker-desktop), nécessaire pour [tester](../test-debug/test.md) et [déboguer](../test-debug/debug.md) localement des projets Assets Compute.
 
-Après avoir installé Docker Desktop, démarrez-le et installez les images Docker suivantes à partir de la ligne de commande :
+Une fois Docker Desktop installé, lancez l’application et installez les images Docker suivantes à partir de la ligne de commande :
 
 ```
 $ docker pull openwhisk/action-nodejs-v12:latest
 $ docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
 ```
 
-Les développeurs sur les machines Windows doivent s’assurer qu’ils utilisent des conteneurs Linux pour les images ci-dessus. Les étapes de basculement vers des conteneurs Linux sont décrites dans la [documentation Docker pour Windows](https://docs.docker.com/docker-for-windows/).
+Les développeurs et développeuses Windows doivent s’assurer d’utiliser des conteneurs Linux pour les images ci-dessus. Suivez la procédure d’utilisation des conteneurs Linux dans la section [Documentation de Docker pour Windows](https://docs.docker.com/docker-for-windows/).
 
-## Installation de Node.js (et npm){#node-js}
+## Installer Node.js (et npm){#node-js}
 
-Les objets Worker Asset compute sont basés sur [Node.js](https://nodejs.org/) et nécessitent donc Node.js 10+ (et npm) pour le développement et la création.
+Les programmes de travail Assets Compute sont basés sur [Node.js](https://nodejs.org/) et nécessitent donc Node.js 10 ou version ultérieure (et npm) pour le développement et la création.
 
-+ [Installez Node.js (et npm)](../../local-development-environment/development-tools.md#node-js)  de la même manière que pour le développement AEM traditionnel.
++ [Installez Node.js (et npm)](../../local-development-environment/development-tools.md#node-js) comme pour le développement AEM traditionnel.
 
-## Installation de l’interface de ligne de commande Adobe I/O{#aio}
+## Installer l’interface de ligne de commande Adobe I/O{#aio}
 
-[Installez l’interface de ligne de commande ](../../local-development-environment/development-tools.md#aio-cli) ou le module npm  ____ aiois an command line (CLI) Adobe I/O qui facilite l’utilisation et l’interaction avec les technologies d’Adobe I/O. Il est utilisé pour générer et développer localement des agents d’Asset compute personnalisés.
+[Installez l’interface de ligne de commande d’Adobe I/O](../../local-development-environment/development-tools.md#aio-cli), ou __aio__, qui est un module npm de ligne de commande (CLI) et facilite l’utilisation et l’interaction avec les technologies d’Adobe I/O. Il permet de générer et de développer localement des programmes de travail Assets Compute personnalisés.
 
 ```
 $ npm install -g @adobe/aio-cli@7.1.0
 ```
 
-_La version 7.1.0 de l’interface de ligne de commande d’Adobe I/O est requise. Les versions ultérieures de l’interface de ligne de commande d’Adobe I/O ne sont pas prises en charge pour le moment._
+_L’interface de ligne de commande d’Adobe I/O version 7.1.0 est requise. Les versions ultérieures de l’interface de ligne de commande d’Adobe I/O ne sont pas prises en charge pour le moment._
 
 
-## Installation du module Adobe I/O CLI Asset compute{#aio-asset-compute}
+## Installer le plug-in Asset Compute d’interface de ligne de commande d’Adobe I/O{#aio-asset-compute}
 
-[Module externe d’Asset compute de la ligne de commande d’Adobe I/O](https://github.com/adobe/aio-cli-plugin-asset-compute)
+[Plug-in Asset Compute d’interface de ligne de commande d’Adobe I/O](https://github.com/adobe/aio-cli-plugin-asset-compute)
 
 ```
 $ aio plugins:install @adobe/aio-cli-plugin-asset-compute
@@ -94,9 +94,9 @@ $ aio plugins:install @adobe/aio-cli-plugin-asset-compute
 
 ## Installer wskdebug{#wskdebug}
 
-Téléchargez et installez le module npm [Apache OpenWhisk debug](https://www.npmjs.com/package/@openwhisk/wskdebug) pour faciliter le débogage local des objets Worker Asset compute.
+Téléchargez et installez le module npm de [débogage Apache OpenWhisk](https://www.npmjs.com/package/@openwhisk/wskdebug) pour faciliter le débogage local des programmes de travail Assets Compute.
 
-_Visual Studio Code 1.48.x+ est requis pour que  [](#wskdebug) wskdebugto fonctionne._
+_Visual Studio Code 1.48.x ou version ultérieure est requis pour exécuter [wskdebug](#wskdebug)._
 
 ```
 $ npm install -g @openwhisk/wskdebug
@@ -104,7 +104,7 @@ $ npm install -g @openwhisk/wskdebug
 
 ## Installer ngrok{#ngrok}
 
-Téléchargez et installez le module npm [ngrok](https://www.npmjs.com/package/ngrok), qui permet au public d’accéder à votre machine de développement locale, afin de faciliter le débogage local des objets Worker Asset compute.
+Téléchargez et installez le module npm [ngrok](https://www.npmjs.com/package/ngrok), qui permet au public d’accéder à votre machine de développement locale, afin de faciliter le débogage local des programmes de travail Assets Compute.
 
 ```
 $ npm install -g ngrok --unsafe-perm=true
