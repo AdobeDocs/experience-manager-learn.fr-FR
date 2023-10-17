@@ -1,7 +1,7 @@
 ---
-title: Améliorations de l’éditeur de règles dans AEM Forms
+title: Améliorations de l’éditeur de règles dans AEM Forms
 seo-title: Rule Editor Improvements in AEM Forms
-description: L’éditeur de règles permet aux utilisateurs d’ajouter une logique à AEM Forms adaptatif. AEM version 6.3 améliore l’éditeur de règles de plusieurs manières afin qu’il soit plus facile et plus rapide pour les utilisateurs techniques et non techniques d’ajouter des informations.
+description: L’éditeur de règles permet aux utilisateurs et aux utilisatrices d’ajouter une logique aux formulaires adaptatifs AEM. AEM 6.3 apporte de nombreuses améliorations à l’éditeur de règles. Les utilisateurs et utilisatrices techniques et non techniques peuvent désormais ajouter de l’intelligence de manière plus rapide et facile.
 seo-description: The rule editor enables users to add logic to AEM Adaptive Forms. AEM 6.3 improves the rule editor in several ways making it easier and faster for both technical and non-technical users alike to add intelligence.
 uuid: 35e8cc7c-04cf-43b4-bbc7-41bfd909cfba
 feature: Adaptive Forms
@@ -17,25 +17,25 @@ level: Beginner
 exl-id: 98a35bd9-a659-41f9-a772-267730c1f579
 last-substantial-update: 2019-06-09T00:00:00Z
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Améliorations de l’éditeur de règles dans AEM Forms {#rule-editor-improvements-in-aem-forms}
+# Améliorations de l’éditeur de règles dans AEM Forms {#rule-editor-improvements-in-aem-forms}
 
-L’éditeur de règles permet aux utilisateurs d’ajouter une logique à AEM Forms adaptatif. AEM version 6.3 améliore l’éditeur de règles de plusieurs manières afin qu’il soit plus facile et plus rapide pour les utilisateurs techniques et non techniques d’ajouter des informations.
+L’éditeur de règles permet aux utilisateurs et aux utilisatrices d’ajouter une logique aux formulaires adaptatifs AEM. AEM 6.3 apporte de nombreuses améliorations à l’éditeur de règles. Les utilisateurs et utilisatrices techniques et non techniques peuvent désormais ajouter de l’intelligence de manière plus rapide et facile.
 
 >[!VIDEO](https://video.tv.adobe.com/v/19653?quality=12&learn=on)
 
-**Voici quelques-unes des améliorations apportées à l’éditeur de règles :**
+**Voici quelques-unes des améliorations apportées à l’éditeur de règles :**
 
-* Les composants de formulaire à plusieurs valeurs affichent automatiquement les options de composant.
-* La possibilité de spécifier un service Web WSDL dans l’éditeur visuel
-* La possibilité de désactiver des règles
-* Améliorations apportées à l’éditeur de code, telles que :
-* Mise en surbrillance de la syntaxe
-   * Retrait automatique
-   * Conseils et suggestions pour les objets de formulaire, les fonctions et les propriétés
-   * Remplissage automatique des noms de composants et des fonctions JavaScript courantes
+* Les composants de formulaire contenant plusieurs valeurs affichent automatiquement les options des composants.
+* La possibilité de spécifier un service web WSDL dans l’éditeur visuel.
+* La possibilité de désactiver des règles.
+* Améliorations apportées à l’éditeur de code, telles que :
+* Mise en surbrillance de la syntaxe.
+   * Mise en retrait automatique.
+   * Conseils et suggestions pour les objets, fonctions et propriétés de formulaire.
+   * Remplissage automatique des noms de composants et des fonctions JavaScript courantes.
