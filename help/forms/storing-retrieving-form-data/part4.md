@@ -1,6 +1,6 @@
 ---
-title: Stockage et récupération des données de formulaire de la base de données MySQL - Créer une bibliothèque cliente
-description: Tutoriel en plusieurs parties pour vous guider tout au long des étapes impliquées dans le stockage et la récupération des données de formulaire
+title: Stocker et récupérer des données de formulaire d’une base de données MySQL - Créer une bibliothèque cliente
+description: Tutoriel en plusieurs parties détaillant les étapes impliquées dans le stockage et la récupération des données de formulaire
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -9,19 +9,19 @@ role: Developer
 level: Experienced
 exl-id: eef98a55-80d0-4598-abf2-02a6c5247b64
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '147'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Création d’une bibliothèque cliente
+# Créer une bibliothèque cliente
 
-AEM bibliothèque cliente gère tout le code JavaScript côté client. Pour cet article, j’ai créé un JavaScript simple pour récupérer les données de formulaire adaptatif à l’aide de l’API de passerelle de guide. Une fois les données du formulaire adaptatif récupérées, l’appel du POST est effectué au servlet pour insérer ou mettre à jour les données du formulaire adaptatif dans la base de données. La fonction getALLUrlParams renvoie les paramètres de l’URL. Si le paramètre guid est présent dans l’URL, nous devons effectuer l’opération de mise à jour, si ce n’est pas une opération d’insertion. Le reste des fonctionnalités est géré dans le code associé à l’événement click de la classe .savebutton.
+La bibliothèque cliente AEM gère tout le code JavaScript côté client. Pour cet article, j’ai créé un code JavaScript simple pour récupérer les données de formulaire adaptatif à l’aide de l’API GuideBridge. Une fois les données du formulaire adaptatif récupérées, l’appel POST est effectué au servlet pour insérer ou mettre à jour les données du formulaire adaptatif dans la base de données. La fonction getALLUrlParams renvoie les paramètres de l’URL. Si le paramètre guid est présent dans l’URL, nous devons effectuer l’opération de mise à jour, dans le cas contraire, il s’agira d’une opération d’insertion. Le reste des fonctionnalités est géré dans le code associé à l’événement click de la classe .savebutton.
 
 >[!NOTE]
 >
->La bibliothèque cliente est fournie dans le cadre de ces ressources de tutoriel.
+>La bibliothèque cliente est fournie dans le cadre des ressources de ce tutoriel.
 
 ```javascript
 function getAllUrlParams(url) {
