@@ -1,6 +1,6 @@
 ---
-title: Appliquer les droits d’utilisation au pdf téléchargé
-description: Application des droits d’utilisation à pdf
+title: Appliquer les droits d’utilisation au PDF chargé
+description: Appliquer des droits d’utilisation aux PDF
 version: 6.4,6.5
 feature: Reader Extensions
 topic: Development
@@ -9,22 +9,22 @@ level: Experienced
 exl-id: ea433667-81db-40f7-870d-b16630128871
 last-substantial-update: 2020-07-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '354'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
-# Application d’extensions de Reader
+# Appliquer Reader Extensions
 
-Les extensions de Reader vous permettent de manipuler les droits d’utilisation des documents PDF. Les droits d’utilisation correspondent à une fonctionnalité disponible dans Acrobat , mais non dans Adobe Reader. La fonctionnalité contrôlée par les extensions Reader permet d’ajouter des commentaires à un document, de remplir des formulaires et d’enregistrer le document. Les documents PDF dotés de droits d’utilisation sont appelés des documents dont les droits sont activés. Un utilisateur qui ouvre un document PDF dont les droits sont activés dans Adobe Reader peut effectuer les opérations qui sont autorisées pour ce document.
+Les Reader Extensions vous permettent de manipuler les droits d’utilisation des documents PDF. Les droits d’utilisation se rapportent aux fonctionnalités disponibles dans Acrobat mais pas dans Adobe Reader. Les fonctionnalités contrôlées par Reader Extensions permettent d’ajouter des commentaires à un document, de remplir des formulaires et d’enregistrer le document. Les documents PDF dotés de droits d’utilisation sont appelés des documents dont les droits sont activés. Un utilisateur qui ouvre un document PDF dont les droits sont activés dans Adobe Reader peut effectuer les opérations qui sont autorisées pour ce document.
 
-Pour réaliser ce cas pratique, procédez comme suit :
-* [Ajout du certificat Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html) to `fd-service` utilisateur.
+Pour réaliser ce cas d’utilisation, procédez comme suit :
+* [Ajoutez le certificat Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/configuring-reader-extension-osgi.html?lang=fr) à l’utilisateur ou à l’utilisatrice `fd-service`.
 
-## Création d’un service OSGi personnalisé
+## Créez un service OSGi personnalisé.
 
-Créez un service OSGi personnalisé qui appliquera des droits d’utilisation aux documents. Le code permettant d’y parvenir est répertorié ci-dessous.
+Créez un service OSGi personnalisé qui appliquera des droits d’utilisation aux documents. Le code permettant d’y parvenir est fourni ci-dessous.
 
 ```java
 import com.adobe.aemfd.docmanager.Document;
@@ -70,12 +70,12 @@ public class ApplyUsageRights implements ReaderExtendPDF {
 }
 ```
 
-## Création d’un servlet pour diffuser le PDF étendu du lecteur
+## Créez un servlet pour diffuser le PDF étendu grâce à Reader Extensions.
 
-L’étape suivante consiste à créer une servlet avec une méthode de POST pour renvoyer le PDF étendu du lecteur à l’utilisateur. Dans ce cas, l’utilisateur est invité à enregistrer le PDF dans son système de fichiers. Cela est dû au fait que le PDF est rendu en tant que PDF dynamique et que les visionneuses pdf fournies avec les navigateurs ne prennent pas en charge les pdf dynamiques.
+Vous pouvez également créer un servlet avec une méthode POST pour renvoyer le PDF étendu grâce à Reader Extensions à l’utilisateur ou à l’utilisatrice. Dans ce cas, la personne utilisatrice est invitée à enregistrer le PDF dans son système de fichiers. Cela est dû au fait que le PDF est rendu en tant que PDF dynamique et que les visionneuses PDF fournies avec les navigateurs ne prennent pas en charge les PDF dynamiques.
 
-Voici le code de la servlet. Le servlet est appelé à partir de l’action d’envoi personnalisée du formulaire adaptatif.
-Servlet crée l’objet UsageRights et définit ses propriétés en fonction des valeurs saisies par l’utilisateur dans le formulaire adaptatif. Le servlet appelle ensuite la méthode applyUsageRights du service créé à cet effet.
+Voici le code pour le servlet. Le servlet est appelé à partir de l’action customsubmit du formulaire adaptatif.
+Le servlet crée l’objet UsageRights et définit ses propriétés en fonction des valeurs saisies par l’utilisateur ou l’utilisatrice dans le formulaire adaptatif. Le servlet appelle ensuite la méthode applyUsageRights du service créé à cet effet.
 
 ```java
 package com.aemforms.ares.core.servlets;
@@ -193,12 +193,12 @@ public class GetReaderExtendedPDF extends SlingAllMethodsServlet {
 }
 ```
 
-Pour le tester sur votre serveur local, procédez comme suit :
-1. [Télécharger et installer le bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. [Téléchargez et installez le bundle ares.ares.core-ares.](assets/ares.ares.core-ares.jar). Il dispose du service personnalisé et du servlet pour appliquer des droits d’utilisation et diffuser le pdf en continu.
-1. [Importation des bibliothèques clientes et envoi personnalisé](assets/applyaresdemo.zip)
-1. [Importation du formulaire adaptatif](assets/applyaresform.zip)
-1. Ajoutez le certificat des extensions de Reader à l’utilisateur &quot;fd-service&quot;. Assurez-vous que l&#39;alias est &quot;ares&quot;.
-1. [Aperçu du formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
-1. Sélectionnez les droits appropriés et téléchargez le fichier du PDF
-1. Cliquez sur Envoyer pour obtenir le PDF étendu par Reader.
+Pour tester ceci sur votre serveur local, procédez comme suit :
+1. [Télécharger et installer le lot DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1. [Téléchargez et installez le lot ares.ares.core-ares.](assets/ares.ares.core-ares.jar). Il dispose du service personnalisé et du servlet pour appliquer des droits d’utilisation et renvoyer le PDF.
+1. [Importer les bibliothèques clientes et personnaliser l’envoi](assets/applyaresdemo.zip)
+1. [Importer le formulaire adaptatif](assets/applyaresform.zip)
+1. Ajoutez le certificat Reader Extensions à l’utilisateur ou à l’utilisatrice « fd-service ». Assurez-vous que l’alias est bien « ares ».
+1. [Prévisualiser le formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
+1. Sélectionnez les droits appropriés et chargez le fichier PDF.
+1. Cliquez sur Envoyer pour obtenir le PDF étendu grâce à Reader Extensions.
