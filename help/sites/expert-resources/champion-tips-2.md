@@ -1,7 +1,7 @@
 ---
-title: AEM Conseils et astuces pour champions - Modèles modifiables 2
+title: 'Conseils et astuces AEM Champion : modèles modifiables 2'
 seo-title: AEM Champion Tips and Tricks - Editable Templates 2
-description: Découvrez comment AEM champion Greg Dimeris utilise des modèles modifiables dans AEM Sites. Consultez ces conseils rapides, puis essayez-les dans votre instance dès aujourd’hui.
+description: Découvrez comment le champion d’AEM Greg Dimeris utilise des modèles modifiables dans AEM Sites. Consultez ces conseils rapides, puis essayez-les dans votre instance dès aujourd’hui.
 seo-description: Learn how AEM Champion Greg Dimeris leveraged editable templates in AEM Sites. Review these quick tips and then give them a try in your instance today.
 role: User
 level: Beginner, Intermediate
@@ -9,9 +9,9 @@ topic: Content Management
 feature: Learn From Your Peers
 exl-id: a118dde6-0b25-4cc6-92bf-54b15620bbf4
 source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '39'
-ht-degree: 15%
+ht-degree: 100%
 
 ---
 
