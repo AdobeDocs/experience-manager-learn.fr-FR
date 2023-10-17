@@ -1,24 +1,24 @@
 ---
-title: AEM Forms avec Marketo (partie 2)
-description: Tutoriel pour intégrer AEM Forms à Marketo à l’aide du modèle de données de formulaire AEM Forms.
+title: AEM Forms avec Marketo (Partie 2)
+description: Tutoriel pour intégrer AEM Forms à Marketo à l’aide du modèle de données de formulaire AEM Forms.
 feature: Adaptive Forms, Form Data Model
 version: 6.4,6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
 badgeIntegration: label="Intégration" type="positive"
-badgeVersions: label="AEM Forms 6.5" before-title="false"
+badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: f8ba3d5c-0b9f-4eb7-8609-3e540341d5c2
 source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Service d’authentification Marketo
 
-Les API REST Marketo sont authentifiées avec OAuth 2.0 à 2 jambes. Nous devons créer une authentification personnalisée pour nous authentifier auprès de Marketo. Cette authentification personnalisée est généralement écrite dans un lot OSGI. Le code suivant affiche l’authentificateur personnalisé utilisé dans le cadre de ce tutoriel.
+Les API REST Marketo sont authentifiées avec OAuth 2.0, impliquant deux parties. Nous devons créer une authentification personnalisée pour nous authentifier auprès de Marketo. Cette authentification personnalisée est généralement écrite dans un lot OSGI. Le code suivant affiche l’authentificateur personnalisé utilisé dans le cadre de ce tutoriel.
 
 ## Service d’authentification personnalisé
 
@@ -54,9 +54,9 @@ MarketoService marketoService;
 }
 ```
 
-MarketoAuthenticationService implémente l’interface IAuthentication. Cette interface fait partie du SDK client AEM Forms. Le service récupère le jeton d’accès et insère le jeton dans le HttpHeader de AuthenticationDetails. Une fois que les HttpHeaders de l’objet AuthenticationDetails sont renseignés, l’objet AuthenticationDetails est renvoyé à la couche Dermis du modèle de données de formulaire.
+MarketoAuthenticationService implémente l’interface IAuthentication. Cette interface fait partie du SDK client AEM Forms. Le service récupère le jeton d’accès et insère le jeton dans le HttpHeader de AuthenticationDetails. Une fois que les HttpHeaders de l’objet AuthenticationDetails sont renseignés, l’objet AuthenticationDetails est renvoyé à la couche Dermis du modèle de données de formulaire.
 
-Faites attention à la chaîne renvoyée par la méthode getAuthenticationType. Cette chaîne est utilisée lorsque vous configurez votre source de données.
+Veillez à faire attention à la chaîne renvoyée par la méthode getAuthenticationType. Cette chaîne est utilisée lorsque vous configurez votre source de données.
 
 ### Obtenir le jeton d’accès
 
@@ -69,7 +69,7 @@ public interface MarketoService {
 }
 ```
 
-Le code suivant est celui du service qui renvoie le jeton d’accès qui doit être utilisé pour effectuer les appels de l’API REST. Le code de ce service accède aux paramètres de configuration nécessaires pour effectuer l’appel de GET. Comme vous pouvez le constater, nous transmettons le client_id, client_secret dans l’URL du GET pour générer le jeton d’accès. Ce jeton d’accès est ensuite renvoyé à l’application appelante.
+Le code suivant est celui du service qui renvoie le jeton d’accès qui doit être utilisé pour effectuer les appels de l’API REST. Le code de ce service accède aux paramètres de configuration nécessaires pour effectuer l’appel GET. Comme vous pouvez le constater, nous transmettons le client_id et le client_secret dans l’URL GET pour générer le jeton d’accès. Ce jeton d’accès est ensuite renvoyé à l’application appelante.
 
 ```java
 package com.marketoandforms.core.impl;
@@ -201,9 +201,9 @@ public class MarketoConfigurationService {
 ```
 
 1. Créez et déployez le lot sur votre serveur AEM.
-1. [Pointez votre navigateur sur configMgr](http://localhost:4502/system/console/configMgr) et recherchez &quot;Configuration du service Marketo Credentials&quot;
-1. Spécifiez les propriétés appropriées spécifiques à votre instance Marketo.
+1. [Pointez votre navigateur sur configMgr](http://localhost:4502/system/console/configMgr) et recherchez « Configuration du service d’identification Marketo ».
+1. Spécifiez les propriétés spécifiques à votre instance Marketo.
 
 ## Étapes suivantes
 
-[Création d’une source de données basée sur le service RESTful](./part3.md)
+[Créer une source de données basée sur le service RESTful](./part3.md)
