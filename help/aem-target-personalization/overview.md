@@ -6,16 +6,16 @@ topic: Personalization
 role: Developer
 level: Intermediate
 badgeIntegration: label="Intégration" type="positive"
-badgeVersions: label="AEM Sites 6.5" before-title="false"
+badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
 source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '842'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Intégration d’AEM Sites et d’Adobe Target {#getting-started-with-aem-target}
+# Intégrer AEM Sites et Adobe Target {#getting-started-with-aem-target}
 
 AEM et Target sont deux solutions puissantes offrant des fonctionnalités qui peuvent sembler redondantes. Les clientes et clients ont parfois du mal à comprendre comment et quand utiliser ces produits conjointement pour offrir une expérience personnalisée. Pour offrir une expérience optimisée à chaque utilisateur final ou utilisatrice finale, les différentes équipes de votre organisation doivent travailler en étroite collaboration et définir les tâches de chacun et chacune.
 
