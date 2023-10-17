@@ -1,6 +1,6 @@
 ---
 title: Configurations OSGi en tant qu’objets ObjectClassDefinition
-description: Découvrez comment créer et désigner ObjectClassDefinitions comme représentations de configuration OSGi dans un service OSGi
+description: Découvrez comment créer et désigner des ObjectClassDefinitions comme représentations de configuration OSGi dans un service OSGi.
 role: Developer
 level: Beginner
 topic: Development
@@ -9,15 +9,15 @@ kt: 8269
 thumbnail: 335730.jpeg
 exl-id: 72918da0-d5c4-4451-8082-0a0435c28890
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '104'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Configurations OSGi en tant qu’objets ObjectClassDefinition
 
-Découvrez comment créer et désigner ObjectClassDefinitions comme représentations de configuration OSGi dans un service OSGi.
+Découvrez comment créer et désigner des ObjectClassDefinitions comme représentations de configuration OSGi dans un service OSGi.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335730?quality=12&learn=on)
 
