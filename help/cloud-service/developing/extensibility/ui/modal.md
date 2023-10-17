@@ -1,6 +1,6 @@
 ---
-title: Fenêtre modale de l’extension de l’interface utilisateur AEM
-description: Découvrez comment créer un modal d’extension d’interface utilisateur AEM.
+title: Boîte de dialogue modale de l’extension de l’interface utilisateur AEM
+description: Découvrez comment créer une boîte de dialogue modale de l’extension de l’interface utilisateur AEM.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -11,32 +11,32 @@ kt: 11603
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: e7376eaf-f7d7-48fe-9387-a0e4089806c2
 source-git-commit: 6b5c755bd8fe6bbf497895453b95eb236f69d5f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Fenêtre d’extension
+# Boîte de dialogue modale de l’extension
 
-![Fenêtre modale de l’extension de l’interface utilisateur AEM](./assets/modal/modal.png){align="center"}
+![Boîte de dialogue modale de l’extension de l’interface utilisateur AEM.](./assets/modal/modal.png){align="center"}
 
-AEM modal d’extension d’interface utilisateur permet de joindre une interface utilisateur personnalisée à AEM extensions d’interface utilisateur.
+La boîte de dialogue modale de l’extension de l’interface utilisateur AEM permet de joindre une interface utilisateur personnalisée aux extensions de l’interface utilisateur AEM.
 
-Les modèles sont des applications React, basées sur [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/), et peut créer toute interface utilisateur personnalisée requise par l’extension, notamment, mais sans s’y limiter :
+Les boîtes de dialogue modales sont des applications React, basées sur [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/), et peuvent créer toute interface utilisateur personnalisée requise par l’extension, notamment, mais sans s’y limiter :
 
-+ Boîtes de dialogue de confirmation
-+ [Formulaires de saisie](https://react-spectrum.adobe.com/react-spectrum/#forms)
-+ [Indicateurs de progression](https://react-spectrum.adobe.com/react-spectrum/#status)
-+ [Résumé des résultats](https://react-spectrum.adobe.com/react-spectrum/#collections)
-+ Messages d’erreur
-+ ... ou même une application React à vues multiples et complète !
++ des boîtes de dialogue de confirmation ;
++ des [formulaires de saisie](https://react-spectrum.adobe.com/react-spectrum/#forms) ;
++ des [indicateurs de progression](https://react-spectrum.adobe.com/react-spectrum/#status) ;
++ un [résumé des résultats](https://react-spectrum.adobe.com/react-spectrum/#collections) ;
++ des messages d’erreur ;
++ ou même une application React à vues multiples et complète.
 
-## Itinéraires modaux
+## Itinéraires des boîtes de dialogue modales
 
-L’expérience modale est définie par l’extension Application React du générateur d’applications définie sous la variable `web-src` dossier. Comme pour toute application React, l’expérience complète est orchestrée à l’aide de [Itinéraires React](https://reactrouter.com/en/main/components/routes) rendu [Composants React](https://reactjs.org/docs/components-and-props.html).
+L’expérience modale est définie par l’extension de l’application React du créateur d’applications définie sous le dossier `web-src`. Comme pour toute application React, l’expérience complète est orchestrée à l’aide d’[itinéraires React](https://reactrouter.com/en/main/components/routes) qui effectuent le rendu des [composants React](https://reactjs.org/docs/components-and-props.html).
 
-Au moins un itinéraire est nécessaire pour générer la vue modale initiale. Cet itinéraire initial est appelé dans [enregistrement d’extension](#extension-registration)&#39;s `onClick(..)` , comme illustré ci-dessous.
+Au moins un itinéraire est nécessaire pour générer l’affichage initial de la boîte de dialogue modale. Cet itinéraire initial est appelé dans la fonction `onClick(..)` de l’[enregistrement d’extension](#extension-registration), comme illustré ci-dessous.
 
 
 + `./src/aem-ui-extension/web-src/src/components/App.js`
@@ -80,12 +80,12 @@ function App(props) {
 
 ## Enregistrement d’une extension
 
-Pour ouvrir un modal, un appel à `guestConnection.host.modal.showUrl(..)` est créé à partir du `onClick(..)` fonction . `showUrl(..)` transmet un objet JavaScript avec la clé/les valeurs :
+Pour ouvrir une boîte de dialogue modale, un appel à `guestConnection.host.modal.showUrl(..)` est effectué à partir de la fonction `onClick(..)` de l’extension. `showUrl(..)` transmet un objet JavaScript avec la clé/les valeurs :
 
-+ `title` fournit le nom du titre du modal affiché pour l’utilisateur.
-+ `url` est l’URL qui appelle la variable [Route React](#modal-routes) responsable de la vue initiale du modal.
++ `title` fournit le nom du titre de la boîte de dialogue modale affichée pour l’utilisateur ou l’utilisatrice.
++ `url` est l’URL qui appelle l’[itinéraire React](#modal-routes) responsable de l’affichage initial de la boîte de dialogue modale.
 
-Il est impératif que la `url` transmis à `guestConnection.host.modal.showUrl(..)` résout l’itinéraire dans l’extension, sinon rien ne s’affiche dans le modal.
+Il est impératif que l’`url` transmise à `guestConnection.host.modal.showUrl(..)` soit résolue sur l’itinéraire dans l’extension, sinon rien ne s’affiche dans la boîte de dialogue modale.
 
 + `./src/aem-ui-extension/web-src/src/components/ExtensionRegistration.js`
 
@@ -106,13 +106,13 @@ function ExtensionRegistration() {
 }...
 ```
 
-## Composant modal
+## Composant de boîte de dialogue modale
 
-Chaque route de l&#39;extension, [ce n&#39;est pas le `index` route](./extension-registration.md#app-routes), correspond à un composant React qui peut effectuer le rendu dans le modal de l’extension.
+Chaque itinéraire de l’extension, [qui n’est pas l’itinéraire `index`](./extension-registration.md#app-routes), correspond à un composant React qui peut effectuer le rendu dans la boîte de dialogue modale de l’extension.
 
-Un modal peut être constitué de n’importe quel nombre d’itinéraires React, d’un modal simple à un modal complexe à plusieurs itinéraires.
+Une boîte de dialogue modale peut être constituée de n’importe quel nombre d’itinéraires React, d’une boîte de dialogue modale simple à une boîte de dialogue modale complexe à plusieurs itinéraires.
 
-Le scénario suivant illustre un modal à un seul itinéraire, mais cette vue modale peut contenir des liens React qui invoquent d’autres itinéraires ou comportements.
+Le scénario suivant illustre une boîte de dialogue modale à un seul itinéraire, mais cet affichage modal peut contenir des liens React qui appellent d’autres itinéraires ou comportements.
 
 + `./src/aem-ui-extension/web-src/src/components/MyModal.js`
 
@@ -182,11 +182,11 @@ export default function MyModal() {
 }
 ```
 
-## Fermer le modal
+## Fermer la boîte de dialogue modale
 
-![Bouton de fermeture modale de l’extension de l’interface utilisateur AEM](./assets/modal/close.png){align="center"}
+![Bouton de fermeture de la boîte de dialogue modale de l’extension de l’interface utilisateur AEM.](./assets/modal/close.png){align="center"}
 
-Les modèles doivent fournir leur propre contrôle serré. Pour ce faire, appelez `guestConnection.host.modal.close()`.
+Les boîte de dialogue modale doivent fournir leur propre commande de fermeture. Pour ce faire, appelez `guestConnection.host.modal.close()`.
 
 ```javascript
 <ButtonGroup align="end">
