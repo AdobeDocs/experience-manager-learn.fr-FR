@@ -1,6 +1,6 @@
 ---
-title: Convertir le PDF en PDF/A.
-description: Création et validation de fichiers PDF/A dans Forms CA à l’aide des points de terminaison HTTP
+title: Convertir de PDF en PDF/A.
+description: Créer et valider des fichiers PDF/A dans Forms CA à l’aide des points d’entrée HTTP
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,19 +10,19 @@ topic: Development
 kt: 10105
 exl-id: a4955104-8a87-4add-85c7-c3e3395f5f1a
 source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '102'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Créer et valider des documents PDF/A
 
-PDF/A est une version normalisée selon la norme ISO du Portable Document Format (PDF), spécialisée dans l’archivage et la conservation à long terme des documents électroniques. PDF/A diffère de PDF en interdisant les fonctionnalités inappropriées à l’archivage à long terme, telles que la liaison de polices (par opposition à l’incorporation de polices) et le chiffrement.
+Le PDF/A est une version normalisée selon la norme ISO du Portable Document Format (PDF), réservée à l’archivage et à la conservation à long terme des documents électroniques. Le PDF/A diffère du format PDF en interdisant les fonctionnalités inappropriées à l’archivage à long terme, telles que la liaison de polices (par opposition à l’incorporation de polices) et le chiffrement.
 
 ## Convertir en PDF/A
 
-Le code suivant a été utilisé pour convertir le PDF en PDF/A.
+Le code suivant a été utilisé pour convertir de PDF en PDF/A.
 
 ```java
 package com.aemformscs.documentservices;
