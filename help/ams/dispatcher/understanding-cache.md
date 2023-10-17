@@ -1,49 +1,49 @@
 ---
 title: Présentation de la mise en cache par Dispatcher
-description: Découvrez comment le module de Dispatcher fonctionne son cache.
+description: Découvrez comment le module de Dispatcher gère son cache.
 topic: Administration, Performance
 version: 6.5
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
-source-git-commit: 04cd4002af7028ee9e3b1e1455b6346c56446245
-workflow-type: tm+mt
+exl-id: 66ce0977-1b0d-4a63-a738-8a2021cf0bd5
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '1747'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-
-# Compréhension de la mise en cache
+# Présentation de la mise en cache
 
 [Table des matières](./overview.md)
 
-[&lt;- Précédent : Explication des fichiers de configuration](./explanation-config-files.md)
+[&lt;- Précédent : Explication des fichiers de configuration](./explanation-config-files.md)
 
-Ce document explique comment la mise en cache de Dispatcher se produit et comment elle peut être configurée.
+Ce document explique comment se déroule la mise en cache de Dispatcher et comment elle peut être configurée.
 
 ## Mise en cache des répertoires
 
-Nous utilisons les répertoires de cache par défaut suivants dans nos installations de base.
+Nous utilisons les répertoires de cache par défaut suivants dans nos installations de référence.
 
 - Création
    - `/mnt/var/www/author`
-- Éditeur
+- Publication
    - `/mnt/var/www/html`
 
-Lorsque chaque requête traverse Dispatcher, les requêtes suivent les règles configurées pour conserver une version mise en cache localement en réponse aux éléments éligibles.
+Lorsque chaque requête traverse Dispatcher, les requêtes suivent les règles configurées pour conserver une version locale mise en cache de la réponse des éléments éligibles.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
 
-Nous gardons intentionnellement la charge de travail publiée distincte de celle de l’auteur, car lorsqu’Apache recherche un fichier dans DocumentRoot, il ne sait pas de quelle instance AEM il provient. Ainsi, même si le cache est désactivé dans la ferme de serveurs de création, si le DocumentRoot de l’auteur est identique à l’éditeur, il diffusera les fichiers du cache lorsqu’il est présent. En d’autres termes, vous diffuserez des fichiers d’auteur pour à partir du cache publié et vous fournirez une expérience de correspondance très difficile pour vos visiteurs.
+Nous gardons intentionnellement la charge de travail publiée distincte de celle de l’instance de création, car lorsqu’Apache recherche un fichier dans DocumentRoot, il ne sait pas de quelle instance AEM il provient. Ainsi, même si le cache est désactivé dans la batterie de serveurs de création, si la DocumentRoot de l’instance de création est identique à l’instance de publication, il diffusera les fichiers du cache s’ils sont disponibles. En d’autres termes, vous diffuserez des fichiers d’instance de création à partir du cache publié et vous fournirez à vos visiteurs et visiteuses une expérience combinée très difficile qui ne leur correspondra pas.
 
-Conserver des répertoires DocumentRoot distincts pour différents contenus publiés est également une très mauvaise idée. Vous devrez créer plusieurs éléments remis en cache qui ne diffèrent pas entre les sites comme les clientlibs et vous devrez configurer un agent de vidage de réplication pour chaque DocumentRoot que vous configurez. Augmentation de la quantité de vidage par-dessus la tête à chaque activation de page. Utilisez l’espace de noms des fichiers et leurs chemins d’accès entièrement mis en cache et évitez plusieurs DocumentRoot pour les sites publiés.
+Conserver des répertoires DocumentRoot distincts pour différents contenus publiés est également fortement déconseillé. Vous devrez créer plusieurs éléments remis en cache qui ne diffèrent pas entre les sites comme les clientlibs et vous devrez configurer un agent de vidage de réplication pour chaque DocumentRoot que vous configurez. Augmentation de la quantité de vidage supplémentaire à chaque activation de la page. Utilisez l’espace de noms des fichiers et leurs chemins d’accès entièrement mis en cache et évitez plusieurs DocumentRoot pour les sites publiés.
 </div>
 
 ## Fichiers de configuration
 
-Dispatcher contrôle les éléments qualifiés de pouvant être mis en cache dans la variable `/cache {` de tout fichier de ferme. 
-Dans les fermes de configuration de ligne de base AMS, vous trouverez nos inclusions comme illustré ci-dessous :
+Dispatcher contrôle les éléments qualifiés pour la mise en cache dans la section `/cache {` de tout fichier de batterie.
+Dans les batteries de configuration de référence AMS, vous trouverez nos inclusions comme illustré ci-dessous :
 
 
 ```
@@ -54,17 +54,17 @@ Dans les fermes de configuration de ligne de base AMS, vous trouverez nos inclus
 ```
 
 
-Lors de la création des règles pour ce qui doit être mis en cache ou non, reportez-vous à la documentation [here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Lors de la création des règles pour ce qui doit être mis en cache ou non, reportez-vous à la documentation [ici](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-the-dispatcher-cache-cache).
 
 
-## Création de mise en cache
+## Mise en cache de l’instance de création
 
-Il y a beaucoup d’implémentations que nous avons vues où les gens ne mettent pas en cache le contenu de l’auteur. 
-Ils passent à côté d’une énorme mise à niveau des performances et de la réactivité à leurs auteurs.
+Nous avons vu beaucoup d’applications dans lesquelles le contenu de l’instance de création n’est pas mis en cache.
+Les performances s’en trouvent largement dégradées, tout comme la réactivité des auteurs et des autrices.
 
-Parlons de la stratégie utilisée pour configurer notre ferme de serveurs de création pour qu’elle soit correctement mise en cache.
+Parlons de la stratégie utilisée pour configurer notre batterie de serveurs de création pour qu’elle soit correctement mise en cache.
 
-Voici un auteur de base `/cache {` de notre fichier de ferme d’auteur :
+Voici une section d’instance de création de base `/cache {` de notre fichier de batterie d’instance de création :
 
 
 ```
@@ -91,14 +91,14 @@ Voici un auteur de base `/cache {` de notre fichier de ferme d’auteur :
 }
 ```
 
-Ce qu&#39;il faut noter ici, c&#39;est que le `/docroot` est défini sur le répertoire du cache de l’auteur.
+Notons ici que la `/docroot` est définie sur le répertoire du cache de l’instance de création.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
 
-Assurez-vous que les `DocumentRoot` dans le rapport `.vhost` correspond aux fermes de serveurs `/docroot` parameter
+Assurez-vous que la `DocumentRoot` dans le fichier `.vhost` de l’instance de création correspond au paramètre de la batterie de serveurs `/docroot`.
 </div>
 
-L’instruction d’inclusion des règles de cache inclut le fichier . `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` qui contient les règles suivantes :
+L’instruction d’inclusion des règles de cache inclut le fichier `/etc/httpd/conf.dispatcher.d/cache/ams_author_cache.any` qui contient les règles suivantes :
 
 ```
 /0000 { 
@@ -131,25 +131,25 @@ L’instruction d’inclusion des règles de cache inclut le fichier . `/etc/htt
 }
 ```
 
-Dans un scénario de création, le contenu change tout le temps et volontairement. Vous souhaitez uniquement mettre en cache les éléments qui ne changeront pas fréquemment.
-Nous avons des règles à mettre en cache. `/libs` car ils font partie de l’installation de base d’AEM et changent jusqu’à ce que vous ayez installé un Service Pack, un Cumulative Fix Pack, une mise à niveau ou un correctif. La mise en cache de ces éléments a donc un sens et bénéficie énormément de l’expérience de création des utilisateurs finaux qui utilisent le site.
+Dans un scénario de création, le contenu change en permanence et volontairement. Mieux vaut mettre en cache les éléments qui ne changeront pas fréquemment.
+Nous avons des règles pour mettre les `/libs` en cache car elles font partie de l’installation de base d’AEM et changent jusqu’à ce que vous ayez installé un pack de services, un pack de correctifs cumulatifs, une mise à niveau ou un correctif. La mise en cache de ces éléments a donc un sens et bénéficie énormément de l’expérience de création des personnes qui utilisent le site.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
 
-Gardez à l’esprit que ces règles mettent également en cache <b>`/apps`</b> c’est là que réside le code d’application personnalisé. Si vous développez votre code sur cette instance, il s’avère très déroutant lorsque vous enregistrez votre fichier et que vous ne voyez pas s’il est reflété dans l’interface utilisateur en raison de la diffusion d’une copie mise en cache. L’intention ici est que si vous effectuez un déploiement de votre code dans AEM, il serait également rare et qu’une partie de vos étapes de déploiement devrait être d’effacer le cache de l’auteur. Encore une fois, l’avantage est énorme, ce qui accélère l’exécution de votre code pouvant être mis en cache pour les utilisateurs finaux.
+Gardez à l’esprit que ces règles mettent également en cache les <b>`/apps`</b>, c’est là que réside le code d’application personnalisé. Si vous développez votre code sur cette instance, il sera très perturbant d’enregistrer votre fichier et de ne pas voir s’il est visible dans l’interface utilisateur parce qu’il s’agit d’une copie mise en cache. Si vous effectuez un déploiement de votre code dans AEM, cette opération ne sera pas fréquente non plus et une partie des étapes du déploiement consistera à vider le cache de l’instance de création. Encore une fois, l’avantage est important, et l’exécution de votre code pouvant être mis en cache pour les personnes finales s’en verra accélérée.
 </div>
 
 
-## ServeOnStale (AKA Serve on Stale / SOS)
+## ServeOnStale (ou Serve on Stale/SOS)
 
-C’est l’un de ces atouts d’une fonctionnalité de Dispatcher. Si l’éditeur est en cours de chargement ou ne répond plus, il génère généralement un code de réponse http 502 ou 503. Si cela se produit et que cette fonction est activée, Dispatcher est invité à continuer à servir le contenu qui se trouve encore dans le cache comme un effort, même s’il ne s’agit pas d’une nouvelle copie. Il est préférable de diffuser quelque chose si vous l’avez plutôt que de simplement afficher un message d’erreur qui n’offre aucune fonctionnalité.
+C’est l’une des merveilleuses fonctionnalités du Dispatcher. Si l’éditeur est en cours de chargement ou ne répond plus, il génère généralement un code de réponse http 502 ou 503. Si cela se produit et que cette fonction est activée, le Dispatcher est invité à continuer à servir le contenu qui se trouve encore dans le cache, même s’il ne s’agit pas d’une nouvelle copie. Il est préférable de diffuser quelque chose si vous l’avez plutôt que de simplement afficher un message d’erreur qui n’offre aucune fonctionnalité.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
 
-Gardez à l’esprit que si le moteur de rendu de l’éditeur a un délai d’expiration du socket ou un message d’erreur 500, cette fonctionnalité ne se déclenche pas. Si AEM est simplement inaccessible, cette fonctionnalité ne fait rien
+Souvenez-vous que si le moteur de rendu de l’éditeur a un délai d’expiration du socket ou un message d’erreur 500, cette fonctionnalité ne se déclenche pas. Si AEM est simplement inaccessible, cette fonctionnalité ne fait rien.
 </div>
 
-Ce paramètre peut être défini dans n’importe quelle ferme, mais il est logique de l’appliquer uniquement aux fichiers de ferme de publication. Voici un exemple de syntaxe de la fonctionnalité activée dans un fichier de ferme :
+Ce paramètre peut être défini dans n’importe quelle batterie, mais il est logique de l’appliquer uniquement aux fichiers de batterie de publication. Voici un exemple de syntaxe de la fonctionnalité activée dans un fichier de batterie :
 
 ```
 /cache { 
@@ -160,23 +160,23 @@ Ce paramètre peut être défini dans n’importe quelle ferme, mais il est logi
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
 
-L’un des comportements normaux du module de Dispatcher est que si une requête comporte un paramètre de requête dans l’URI (généralement affiché comme `/content/page.html?myquery=value`) ignore la mise en cache du fichier et accède directement à l’instance AEM. Cette requête est considérée comme une page dynamique et ne doit pas être mise en cache. Cela peut avoir des effets néfastes sur l’efficacité du cache.
+Parmi les comportements normaux du module Dispatcher, si une requête comporte un paramètre de requête dans l’URI (généralement affiché comme `/content/page.html?myquery=value`), il ne met pas le fichier en cache et accède directement à l’instance AEM. Cette requête est considérée comme une page dynamique et ne doit pas être mise en cache. Cela peut avoir des effets néfastes sur l’efficacité du cache.
 </div>
 <br/>
 
-Voir [article](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) montrant l’impact des paramètres de requête importants sur les performances de votre site.
+Consultez cet [article](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner) pour connaître l’impact des paramètres de requête importants sur les performances de votre site.
 
-Par défaut, vous souhaitez définir la variable `ignoreUrlParams` règles d’autorisation `*`.  Cela signifie que tous les paramètres de requête sont ignorés et permettent à toutes les pages d’être mises en cache, quels que soient les paramètres utilisés.
+Par défaut, il faut définir les règles `ignoreUrlParams` pour autoriser `*`.  Cela signifie que tous les paramètres de requête sont ignorés et permettent à toutes les pages d’être mises en cache, quels que soient les paramètres utilisés.
 
-Voici un exemple où quelqu’un a créé un mécanisme de référence de lien profond sur les médias sociaux qui utilise la référence d’argument dans l’URI pour savoir d’où provient la personne.
+Voici un exemple où une personne a créé un mécanisme de référence de lien profond sur les médias sociaux qui utilise la référence d’argument dans l’URI pour savoir d’où provient la personne.
 
-<b>Exemple ignorable :</b>
+<b>Exemple ignorable :</b>
 
 - https://www.we-retail.com/home.html?reference=android
 - https://www.we-retail.com/home.html?reference=facebook
 
-La page peut être mise en cache à 100 %, mais elle ne le fait pas car les arguments sont présents. 
-Configuration de `ignoreUrlParams` en tant que liste autorisée, vous pouvez résoudre ce problème :
+La page peut être mise en cache à 100 %, mais elle ne le fait pas car les arguments sont présents.
+Configurer votre `ignoreUrlParams` en tant que liste autorisée vous aidera à résoudre ce problème :
 
 ```
 /cache { 
@@ -185,16 +185,16 @@ Configuration de `ignoreUrlParams` en tant que liste autorisée, vous pouvez ré
     }
 ```
 
-Désormais, lorsque Dispatcher voit la demande, il ignore le fait que la demande a la valeur `query` du paramètre `?` référencer et mettre toujours la page en cache
+Désormais, lorsque Dispatcher voit la demande, il ignore le fait que la demande a le paramètre `query` de la référence `?` et met toujours la page en cache.
 
-<b>Exemple dynamique :</b>
+<b>Exemple dynamique :</b>
 
 - https://www.we-retail.com/search.html?q=fruit
 - https://www.we-retail.com/search.html?q=vegetables
 
-Gardez à l’esprit que si vous disposez de paramètres de requête qui font une modification de page, la sortie est rendue. Vous devez alors les exclure de la liste ignorée et rendre la page inaccessible à nouveau.  Par exemple, une page de recherche qui utilise un paramètre de requête modifie le code HTML brut rendu.
+Gardez à l’esprit que si vous disposez de paramètres de requête qui modifient le rendu de sortie d’une page, vous devez alors les exclure de la liste ignorée et empêcher la page d’être mise en cache à nouveau.  Par exemple, une page de recherche qui utilise un paramètre de requête modifie le code HTML brut rendu.
 
-Voici donc la source HTML de chaque recherche :
+Voici donc la source HTML de chaque recherche :
 
 `/search.html?q=fruit` :
 
@@ -234,10 +234,10 @@ Voici donc la source HTML de chaque recherche :
 </html>
 ```
 
-Si vous avez visité `/search.html?q=fruit` d’abord, il mettrait en cache le code html avec les résultats qui montrent fruit.
+Si vous avez d’abord consulté `/search.html?q=fruit`, il mettrait en cache le code html avec les résultats qui montrent des fruits.
 
-Ensuite, rendez-vous sur `/search.html?q=vegetables` deuxièmement, mais cela montrerait les résultats de fruit.
-En effet, le paramètre de requête de `q` est ignorée en ce qui concerne la mise en cache.  Pour éviter ce problème, vous devez prendre note des pages qui effectuent le rendu de différents HTMLS en fonction des paramètres de requête et qui refusent la mise en cache de ces derniers.
+Ensuite, vous consultez `/search.html?q=vegetables` en deuxième, mais vous obtenez les résultats de fruits.
+En effet, le paramètre de requête de `q` est ignoré en ce qui concerne la mise en cache.  Pour éviter ce problème, vous devez prendre note des pages qui effectuent le rendu de codes HTML différents en fonction des paramètres de requête et qui refusent la mise en cache de ces derniers.
 
 Exemple :
 
@@ -249,27 +249,27 @@ Exemple :
     }
 ```
 
-Les pages qui utilisent des paramètres de requête via JavaScript continueront à fonctionner entièrement en ignorant les paramètres de ce paramètre.  Parce qu&#39;ils ne modifient pas le fichier HTML au repos.  Ils utilisent JavaScript pour mettre à jour les navigateurs en temps réel sur le navigateur local.  En d’autres termes, si vous utilisez les paramètres de requête avec JavaScript, il est très probable que vous puissiez ignorer ce paramètre pour la mise en cache des pages.  Autorisez cette page à mettre en cache et à profiter de l’amélioration des performances !
+Les pages qui utilisent des paramètres de requête via JavaScript continueront à fonctionner entièrement en ignorant les paramètres de cette configuration.  Parce qu’ils ne modifient pas le fichier HTML au repos.  Ils utilisent JavaScript pour mettre à jour les navigateurs en temps réel sur le navigateur local.  En d’autres termes, si vous utilisez les paramètres de requête avec JavaScript, il est très probable que vous puissiez ignorer ce paramètre pour la mise en cache des pages.  Autorisez cette page à être mise en cache et profitez à nouveau des performances.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
 
-Le suivi de ces pages nécessite une certaine maintenance, mais cela vaut la peine d’être amélioré en termes de performances.  Vous pouvez demander à l’ingénieur du service client d’exécuter un rapport sur le trafic de vos sites web afin de vous donner une liste de toutes les pages utilisant des paramètres de requête au cours des 90 derniers jours pour que vous puissiez analyser et vous assurer que vous savez quelles pages examiner et quels paramètres de requête ne pas ignorer.
+Le suivi de ces pages nécessite une certaine maintenance, mais cela en vaut bien la peine pour retrouver les performances.  Vous pouvez demander à votre CSE de réaliser un rapport sur le trafic de vos sites web, afin de vous donner une liste de toutes les pages utilisant des paramètres de requête au cours des 90 derniers jours, pour que vous puissiez analyser et vous assurer que vous savez quelles pages examiner et quels paramètres de requête ne pas ignorer.
 </div>
 <br/>
 
 ## Mise en cache des en-têtes de réponse
 
-Il est assez évident que Dispatcher met en cache `.html` pages et clientlibs (c.-à-d. `.js`, `.css`), mais saviez-vous qu’il peut également mettre en cache des en-têtes de réponse spécifiques le long du contenu dans un fichier portant le même nom, mais avec un `.h` extension de fichier. Cela permet à la prochaine réponse non seulement au contenu, mais aussi aux en-têtes de réponse qui doivent l’accompagner depuis le cache.
+Il est assez évident que Dispatcher met en cache les pages `.html` et les clientlibs (c’est-à-dire `.js` et `.css`), mais saviez-vous qu’il peut également mettre en cache des en-têtes de réponse spécifiques le long du contenu dans un fichier portant le même nom, mais avec une extension de fichier `.h`. Cela autorise l’accès de la prochaine réponse non seulement au contenu, mais aussi aux en-têtes de réponse qui doivent l’accompagner depuis le cache.
 
-AEM peut gérer plus que le codage UTF-8.
+AEM peut gérer bien plus que le codage UTF-8.
 
-Parfois, les éléments comportent des en-têtes spéciaux qui aident à contrôler les détails de codage du délai d’activation du cache et les horodatages de dernière modification.
+Parfois, les éléments comportent des en-têtes spéciaux qui aident à contrôler les détails de codage du TTL du cache et les horodatages de dernière modification.
 
-Ces valeurs lorsqu’elles sont mises en cache sont supprimées par défaut et le serveur web Apache httpd s’acquitte de sa propre tâche de traitement de la ressource avec ses méthodes de gestion de fichiers normales, qui sont normalement limitées aux suppositions de type mime basées sur les extensions de fichier.
+Lorsqu’elles sont mises en cache, ces valeurs sont supprimées par défaut et le serveur web Apache httpd s’acquitte de sa propre tâche de traitement de la ressource avec ses méthodes de gestion de fichiers normales, qui sont normalement limitées aux suppositions de type MIME basées sur les extensions de fichier.
 
-Si Dispatcher met en cache la ressource et les en-têtes souhaités, vous pouvez exposer l’expérience appropriée et vous assurer que tous les détails l’atteignent dans le navigateur des clients.
+Si le Dispatcher met en cache la ressource et les en-têtes souhaités, vous pouvez exposer l’expérience appropriée et vous assurer que tous les détails atteignent le navigateur des clientes et clients.
 
-Voici un exemple de ferme de serveurs avec les en-têtes à mettre en cache spécifiés :
+Voici un exemple de batterie de serveurs avec les en-têtes à mettre en cache spécifiés :
 
 ```
 /cache { 
@@ -285,27 +285,27 @@ Voici un exemple de ferme de serveurs avec les en-têtes à mettre en cache spé
 ```
 
 
-Dans l’exemple, ils ont configuré AEM pour diffuser des en-têtes que le réseau de diffusion de contenu recherche pour savoir quand invalider son cache. En d’autres termes, AEM peut désormais dicter correctement les fichiers qui sont invalidés en fonction des en-têtes.
+Dans l’exemple, ils ont configuré AEM pour diffuser des en-têtes que le réseau CDN recherche pour savoir quand invalider son cache. En d’autres termes, AEM peut désormais indiquer correctement les fichiers qui sont invalidés en fonction des en-têtes.
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
 
-Gardez à l’esprit que vous ne pouvez pas utiliser d’expressions régulières ou de correspondance glob. C&#39;est une liste littérale des en-têtes à mettre en cache. Placez uniquement dans une liste des en-têtes littéraux que vous souhaitez qu’il mette en cache.
+Gardez à l’esprit que vous ne pouvez pas utiliser d’expressions régulières ou de correspondance glob. Il s’agit d’une liste littérale des en-têtes à mettre en cache. Placez uniquement dans une liste les en-têtes littéraux que vous souhaitez mettre en cache.
 </div>
 
 
-## Invalidation automatique de la période de grâce
+## Invalider automatiquement le délai de grâce
 
-Sur les systèmes d’AEM qui ont une activité importante de la part des auteurs qui effectuent beaucoup d’activations de page, vous pouvez avoir une condition de concurrence où des invalidations répétées se produisent. Les requêtes de purge répétées ne sont pas nécessaires et vous pouvez créer une certaine tolérance pour ne pas répéter une purge tant que la période de grâce n’a pas été effacée.
+Sur les systèmes AEM qui ont une activité importante de la part des créateurs et créatices qui effectuent de nombreuses activations de page, vous pouvez avoir une condition de concurrence où des invalidations répétées se produisent. Les requêtes de purge répétées ne sont pas nécessaires et vous pouvez créer une certaine tolérance pour ne pas répéter une purge tant que le délai de grâce n’a pas été effacé.
 
-### Exemple de fonctionnement :
+### Exemple de fonctionnement :
 
-Si vous avez 5 demandes à invalider `/content/exampleco/en/` tout se passe dans un délai de 3 secondes.
+Si vous avez 5 demandes d’invalidation de `/content/exampleco/en/`, elles se produisent toutes dans un délai de 3 secondes.
 
-Avec cette fonction désactivée, vous invalidez le répertoire du cache. `/content/exampleco/en/` 5 fois
+Si cette fonction est désactivée, vous invalidez le répertoire du cache `/content/exampleco/en/` 5 fois.
 
-Avec cette fonction activée et définie sur 5 secondes, elle invaliderait le répertoire du cache. `/content/exampleco/en/` <b>once</b>
+Si cette fonction est activée et définie sur 5 secondes, elle invalide le répertoire du cache `/content/exampleco/en/` <b>une fois</b>.
 
-Voici un exemple de syntaxe de cette fonctionnalité configurée pour une période de grâce de 5 secondes :
+Voici un exemple de syntaxe de cette fonctionnalité configurée pour un délai de grâce de 5 secondes :
 
 ```
 /cache { 
@@ -314,22 +314,22 @@ Voici un exemple de syntaxe de cette fonctionnalité configurée pour une pério
 
 ## Invalidation basée sur TTL
 
-Une nouvelle fonctionnalité du module de Dispatcher a été `Time To Live (TTL)` options d’invalidation basées sur les éléments mis en cache. Lorsqu’un élément est mis en cache, il recherche la présence d’en-têtes de contrôle du cache et génère un fichier dans le répertoire du cache portant le même nom et une `.ttl` extension .
+Le module Dispatcher possède de nouvelles fonctionnalités, les options d’invalidation basée sur `Time To Live (TTL)` sur les éléments mis en cache. Lorsqu’un élément est mis en cache, il recherche la présence d’en-têtes de contrôle du cache et génère un fichier dans le répertoire du cache portant le même nom et une extension `.ttl`.
 
-Voici un exemple de la fonctionnalité configurée dans le fichier de configuration de la ferme :
+Voici un exemple de la fonctionnalité configurée dans le fichier de configuration de la batterie :
 
 ```
 /cache { 
     /enableTTL "1"
 ```
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
-Gardez à l’esprit que AEM doit toujours être configuré pour envoyer des en-têtes TTL pour que Dispatcher les honore. Si vous activez cette fonction, seul le Dispatcher peut savoir quand supprimer les fichiers pour lesquels AEM a envoyé des en-têtes de contrôle du cache. Si AEM ne commence pas à envoyer des en-têtes TTL, Dispatcher ne fera rien de spécial ici.
+<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
+Gardez à l’esprit qu’AEM doit quand même être configuré pour envoyer des en-têtes TTL pour que Dispatcher les respecte. Si vous activez cette fonction, seul le Dispatcher peut savoir quand supprimer les fichiers pour lesquels AEM a envoyé des en-têtes de contrôle du cache. Si AEM ne commence pas à envoyer des en-têtes TTL, Dispatcher ne fera rien de spécial.
 </div>
 
 ## Règles de filtrage du cache
 
-Voici un exemple de configuration de base pour laquelle les éléments à mettre en cache sur un éditeur :
+Voici un exemple de configuration de base pour les éléments à mettre en cache sur une instance de publication :
 
 ```
 /cache{ 
@@ -345,6 +345,6 @@ Voici un exemple de configuration de base pour laquelle les éléments à mettre
 
 Nous voulons rendre notre site publié aussi gourmand que possible et tout mettre en cache.
 
-Si des éléments rompent l’expérience lors de la mise en cache, vous pouvez ajouter des règles pour supprimer l’option de mise en cache de cet élément. Comme vous pouvez le voir dans l’exemple ci-dessus, les jetons csrf ne doivent jamais être mis en cache et ont été exclus. Vous trouverez plus de détails sur la rédaction de ces règles. [here](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)
+Si des éléments rompent l’expérience lors de la mise en cache, vous pouvez ajouter des règles pour supprimer l’option de mise en cache de cet élément. Comme vous pouvez le voir dans l’exemple ci-dessus, les jetons csrf ne doivent jamais être mis en cache et ont été exclus. Vous trouverez plus de détails sur la rédaction de ces règles [ici](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-the-dispatcher-cache-cache).
 
-[Suivant -> Utilisation et compréhension des variables](./variables.md)
+[Suivant -> Utiliser et comprendre les variables](./variables.md)
