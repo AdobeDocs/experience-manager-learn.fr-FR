@@ -21,16 +21,13 @@ Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gér
 ## Nouveautés
 
 * **[Gérer les messages d’erreur dans l’étape Appeler le service de modèle de données de formulaire](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
-
-   *Une variable dans un modèle de workdlow permet de stocker une valeur en fonction de son type de données*
+  *Une variable dans un modèle de workdlow permet de stocker une valeur en fonction de son type de données*
 
 * **[Graphiques à séries multiples dans les documents de communication interactive (vidéo)](./interactive-communications/multiseriescharts.md)**
-
-   *Positionnez plusieurs séries dans le même graphique. Les graphiques à séries multiples sont généralement utilisés avec le type de graphique à barres, en courbes et histogramme.*
+  *Positionnez plusieurs séries dans le même graphique. Les graphiques à séries multiples sont généralement utilisés avec le type de graphique à barres, en courbes et histogramme.*
 
 * **[Créer des modèles de workflow réutilisables](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
-
-   *Créer des modèles de workflow non liés à un formulaire spécifique*
+  *Créer des modèles de workflow non liés à un formulaire spécifique*
 
 </div>
 
@@ -96,10 +93,10 @@ Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gér
 
 ## Ressources supplémentaires
 
-* [Documentation sur la création AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=fr)
-* [Documentation sur le développement AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html?lang=fr)
-* [Documentation sur l’administration d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html?lang=fr)
-* [Documentation sur le déploiement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html?lang=fr)
+* [Documentation sur la création sur AEM Sites.](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=fr)
+* [Documentation sur le développement sur AEM Sites.](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html?lang=fr)
+* [Documentation sur l’administration sur AEM Sites.](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html?lang=fr)
+* [Documentation sur le déploiement sur AEM Sites.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/home.html?lang=fr)
 * [Tutoriels sur AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriels sur AEM Assets](/help/assets/overview.md)
 * [Tutoriels sur AEM Forms](/help/forms/overview.md)
