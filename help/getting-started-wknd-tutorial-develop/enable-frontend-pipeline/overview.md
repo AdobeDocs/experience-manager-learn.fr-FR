@@ -13,13 +13,13 @@ index: y
 recommendations: disable
 thumbnail: 53409343.jpg
 last-substantial-update: 2022-09-23T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+exl-id: b795e7e8-f611-4fc3-9846-1d3f1a28ccbc
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '490'
 ht-degree: 100%
 
 ---
-
 
 # Activer le pipeline front-end pour l’archétype de projet standard d’AEM{#enable-front-end-pipeline-standard-aem-project}
 
@@ -57,4 +57,3 @@ Veillez à utiliser le [programme Sandbox](https://experienceleague.adobe.com/do
 Un tutoriel détaillé décrit la conversion du [projet AEM Sites WKND](https://github.com/adobe/aem-guides-wknd) pour une activation sur le pipeline front-end.
 
 Qu’attendez-vous ? Commencez le tutoriel par le chapitre [Examiner le projet full-stack](review-uifrontend-module.md) et reprenez le cycle de vie du développement front-end dans le contexte du projet standard d’AEM Sites.
-
