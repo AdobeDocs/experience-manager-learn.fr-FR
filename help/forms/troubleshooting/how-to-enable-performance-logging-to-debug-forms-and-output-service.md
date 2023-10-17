@@ -1,5 +1,5 @@
 ---
-title: Comment activer la journalisation des performances dans AEM Forms pour déboguer les problèmes liés à Forms et au service de sortie
+title: Comment activer la journalisation des performances dans AEM Forms pour déboguer les problèmes liés à Forms et au service de sortie ?
 description: Procédure d’activation de la journalisation des performances pour déboguer les problèmes liés à Forms ou au service de sortie
 type: Troubleshooting
 role: Admin
@@ -10,14 +10,14 @@ topic: Administration
 index: y
 exl-id: 6ccb3053-c28e-4c23-8fc0-e188b3873c36
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '68'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Comment activer la journalisation des performances dans AEM Forms pour déboguer les problèmes liés à Forms et au service de sortie
+# Comment activer la journalisation des performances dans AEM Forms pour déboguer les problèmes liés à Forms et au service de sortie
 
-*Cette vidéo décrit le processus d’activation de la journalisation des performances dans AEM Forms pour déboguer les problèmes liés à Forms et au service de sortie .*
+*Cette vidéo décrit le processus d’activation de la journalisation des performances dans AEM Forms pour déboguer les problèmes liés à Forms et au service de sortie.*
 
 >[!VIDEO](https://video.tv.adobe.com/v/335499?quality=12&learn=on)
