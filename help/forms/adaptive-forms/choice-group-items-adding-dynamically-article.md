@@ -1,5 +1,5 @@
 ---
-title: Ajout d’éléments au composant de groupe de choix
+title: Ajouter des éléments au composant de groupe de choix
 description: Ajouter dynamiquement des éléments au composant de groupe de choix
 feature: Adaptive Forms
 version: 6.5
@@ -9,28 +9,28 @@ level: Beginner
 exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
 last-substantial-update: 2021-09-10T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '489'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Ajout dynamique d’éléments au composant de groupe de choix
+# Ajouter dynamiquement des éléments au composant de groupe de choix
 
-AEM Forms 6.5 offre la possibilité d’ajouter dynamiquement des éléments à un composant de groupe de choix de Forms adaptatif tel que Case à cocher, Bouton radio et Liste d’images.
+AEM Forms 6.5 offre la possibilité d’ajouter dynamiquement des éléments à un composant de groupe de choix de formulaire adaptatif, comme Case à cocher, Bouton radio et Liste d’images.
 
 
 Vous pouvez ajouter des éléments à l’aide de l’éditeur visuel ainsi que de l’éditeur de code en fonction de votre cas d’utilisation.
 
-**À l’aide de l’éditeur visuel :** Vous pouvez renseigner les éléments du groupe de choix à partir des résultats d’un appel de fonction ou d’un appel de service. Par exemple, vous pouvez définir les éléments du groupe de choix en utilisant la réponse d’un appel API REST.
+**À l’aide de l’éditeur visuel :** vous pouvez renseigner les éléments du groupe de choix à partir des résultats d’un appel de fonction ou d’un appel de service. Par exemple, vous pouvez définir les éléments du groupe de choix en utilisant la réponse d’un appel API REST.
 
 Dans la capture d’écran ci-dessous, nous définissons les options de la période de prêt (années) avec les résultats d’un appel de service appelé getLoanPeriods.
 
 ![Éditeur de règles](assets/ruleeditor.png)
 
-**Utilisation de l’éditeur de code**: Lorsque vous souhaitez définir dynamiquement les éléments du groupe de choix en fonction des valeurs saisies dans le formulaire. Par exemple, le fragment de code suivant définit les éléments de la case à cocher sur les valeurs saisies dans les champs du nom du demandeur et de l’épouse du formulaire adaptatif.
+**À l’aide de l’éditeur de code** : lorsque vous souhaitez définir dynamiquement les éléments du groupe de choix en fonction des valeurs saisies dans le formulaire. Par exemple, l’extrait de code suivant définit les éléments de la case à cocher sur les valeurs saisies dans les champs de la personne à l’origine de la demande et de son conjoint ou sa conjointe du formulaire adaptatif.
 
-Dans le fragment de code, nous définissons les éléments de WorkingMembers qui est un composant de case à cocher. Le tableau des éléments est créé dynamiquement en récupérant les valeurs des champs de texte applicantName et épouse des formulaires adaptatifs.
+Dans l’extrait de code, nous définissons les éléments de WorkingMembers qui est un composant Case à cocher. Le tableau des éléments est créé dynamiquement en récupérant les valeurs des champs de texte applicantName et conjoint ou conjointe des formulaires adaptatifs.
 
 ```javascript
  
@@ -44,7 +44,7 @@ else
   }
 ```
 
-Les données envoyées sont les suivantes :
+Les données envoyées sont les suivantes :
 
 ```xml
 <afUnboundData>
@@ -64,39 +64,39 @@ Les données envoyées sont les suivantes :
 </afUnboundData>
 ```
 
-**Ajout d’éléments à l’aide de l’éditeur de règles**
+**Ajouter des éléments à l’aide de l’éditeur de règles**
 
 >[!VIDEO](https://video.tv.adobe.com/v/26847?quality=12&learn=on)
 
-**Ajout d’éléments à l’aide de l’éditeur de code**
+**Ajouter des éléments à l’aide de l’éditeur de code**
 
 >[!VIDEO](https://video.tv.adobe.com/v/26848?quality=12&learn=on)
 
-Pour essayer ceci sur votre système :
+Pour essayer ceci sur votre système :
 
-**Utilisation de l’éditeur de code pour ajouter des éléments**
+**À l’aide de l’éditeur de code pour ajouter des éléments :**
 
-* [Téléchargement des ressources](assets/usingthecodeeditor.zip)
-* [Ouvrir Forms Et Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Cliquez sur &quot;Créer&quot; | Téléchargement du fichier&quot; et chargez le fichier que vous avez téléchargé à l’étape précédente.
-* [Aperçu des formulaires](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
-* Saisissez le nom du demandeur et sélectionnez État civil au mariage
-* Saisissez le nom du conjoint
-* Cliquez sur Suivant
-* Vous devriez voir une case à cocher remplie avec le nom du demandeur et le nom du conjoint si la situation de famille est mariée.
+* [Téléchargez les ressources.](assets/usingthecodeeditor.zip)
+* [Ouvrez Formulaires et documents.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Cliquez sur « Créer | Charger un fichier » et chargez le fichier que vous avez téléchargé à l’étape précédente.
+* [Prévisualisez les formulaires.](http://localhost:4502/content/dam/formsanddocuments/simpleform/jcr:content?wcmmode=disabled)
+* Saisissez le nom de la personne à l’origine de la demande et sélectionnez État civil Marié(e).
+* Saisissez le nom du conjoint ou de la conjointe.
+* Cliquez sur Suivant.
+* Vous devriez voir une case à cocher remplie avec le nom de la personne à l’origine de la demande et le nom du conjoint ou de la conjointe si la situation de famille est « Marié(e) ».
 
-**Utilisation de l’éditeur visuel pour ajouter des éléments**
+**À l’aide de l’éditeur visuel pour ajouter des éléments :**
 
-* [Téléchargement des ressources](assets/usingthevisualeditor.zip)
-* Installez Tomcat si vous ne l&#39;avez pas déjà. [Les instructions d’installation de tomcat sont disponibles ici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html)
+* [Téléchargez les ressources.](assets/usingthevisualeditor.zip)
+* Installez Tomcat si vous ne l’avez pas déjà. [Les instructions d’installation de Tomcat sont disponibles ici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/introduction.html?lang=fr).
 * [Déployez le fichier SampleRest.war contenu dans ce fichier zip dans votre Tomcat.](assets/sample-rest.zip)
-* [Ouvrir Forms Et Documents](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Cliquez sur &quot;Créer&quot; | Téléchargement du fichier&quot; et chargez le fichier que vous avez téléchargé à l’étape précédente.
-* [Aperçu des formulaires](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
+* [Ouvrez Formulaires et documents.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
+* Cliquez sur « Créer | Charger un fichier » et chargez le fichier que vous avez téléchargé à l’étape précédente.
+* [Prévisualisez les formulaires.](http://localhost:4502/content/dam/formsanddocuments/amortizationschedule/jcr:content?wcmmode=disabled)
 * Saisissez le montant du prêt et sortez du champ par tabulation. Cela déclenche la règle qui affiche le champ de période de prêt.
-* Sélectionnez la période de prêt appropriée (les éléments de la période de prêt sont renseignés à partir de l’appel de reste).
-* Sélectionnez le taux d’intérêt et cliquez sur &quot;Obtenir un calendrier d’amortissement&quot;.
-* La table d&#39;amortissement doit être renseignée. Le planning d’amortissement est récupéré à l’aide d’un appel REST.
+* Sélectionnez la période de prêt appropriée (les éléments de la période de prêt sont renseignés à partir de l’appel REST).
+* Sélectionnez le taux d’intérêt et cliquez sur « Obtenir un planning d’amortissement ».
+* Le tableau d’amortissement doit être renseigné. Le planning d’amortissement est récupéré à l’aide d’un appel REST.
 
 >[!NOTE]
-> On suppose que tomcat fonctionne sur le port 8080 et AEM sur le port 4502
+> On suppose que Tomcat fonctionne sur le port 8080 et AEM sur le port 4502.
