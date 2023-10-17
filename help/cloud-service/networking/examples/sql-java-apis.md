@@ -1,6 +1,6 @@
 ---
-title: Connexions SQL à l’aide des API Java™
-description: Découvrez comment vous connecter à des bases de données SQL à partir d’AEM as a Cloud Service à l’aide des API Java™ SQL et des ports de sortie.
+title: Connexions à SQL à l’aide des API Java™
+description: Découvrez comment vous connecter à des bases de données SQL à partir d’AEM as a Cloud Service à l’aide des API SQL Java™ et des ports de sortie.
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -10,31 +10,31 @@ kt: 9356
 thumbnail: KT-9356.jpeg
 exl-id: ec9d37cb-70b6-4414-a92b-3b84b3f458ab
 source-git-commit: d00e47895d1b2b6fb629b8ee9bcf6b722c127fd3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '305'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Connexions SQL à l’aide des API Java™
+# Connexions à SQL à l’aide des API Java™
 
 Les connexions aux bases de données SQL (et autres services non HTTP/HTTPS) doivent être traitées par proxy hors AEM.
 
-L’exception à cette règle est lorsque [adresse ip de sortie dédiée](../dedicated-egress-ip-address.md) est en cours d’utilisation et le service est sur Adobe ou Azure.
+L’exception à cette règle est lorsque l’[adresse IP de sortie dédiée](../dedicated-egress-ip-address.md) est en cours d’utilisation et le service est sur Adobe ou Azure.
 
 ## Prise en charge de la mise en réseau avancée
 
-L’exemple de code suivant est pris en charge par les options de mise en réseau avancées suivantes.
+L’exemple de code suivant est pris en charge par les options de mise en réseau avancée suivantes.
 
-Assurez-vous que la variable [approprié](../advanced-networking.md#advanced-networking) une configuration réseau avancée a été configurée avant de suivre ce tutoriel.
+Assurez-vous que la configuration de mise en réseau avancée [appropriée](../advanced-networking.md#advanced-networking) a été définie avant de suivre ce tutoriel.
 
-| Pas de mise en réseau avancée | [Sortie de port flexible](../flexible-port-egress.md) | [Adresse IP sortante dédiée](../dedicated-egress-ip-address.md) | [Réseau privé virtuel](../vpn.md) |
+| Aucune mise en réseau avancée | [Sortie de port flexible](../flexible-port-egress.md) | [Adresse IP de sortie dédiée](../dedicated-egress-ip-address.md) | [Réseau privé virtuel (VPN)](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
 | ✘ | ✔ | ✔ | ✔ |
 
 ## Configuration OSGi
 
-Puisque les secrets ne doivent pas être stockés dans le code, le nom d’utilisateur et le mot de passe de la connexion SQL sont mieux fournis via [variables de configuration OSGi secrètes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#secret-configuration-values), défini à l’aide de l’interface de ligne de commande AIO ou des API Cloud Manager.
+Puisque les secrets ne doivent pas être stockés dans le code, il vaut mieux fournir le nom d’utilisateur ou d’utilisatrice et le mot de passe de la connexion SQL via les [variables de configuration OSGi secrètes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=fr#secret-configuration-values), définies à l’aide de l’interface de ligne de commande AIO ou des API Cloud Manager.
 
 + `ui.config/src/jcr_root/apps/wknd-examples/osgiconfig/com.adobe.aem.wknd.examples.core.connections.impl.MySqlExternalServiceImpl.cfg.json`
 
@@ -45,7 +45,7 @@ Puisque les secrets ne doivent pas être stockés dans le code, le nom d’utili
 }
 ```
 
-Les éléments suivants `aio CLI` peut être utilisée pour définir les secrets OSGi par environnement :
+La commande `aio CLI` suivante peut être utilisée pour définir les secrets OSGi par environnement :
 
 ```shell
 $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONMENT_ID> --secret MYSQL_USERNAME "mysql-user" --secret MYSQL_PASSWORD "password123"
@@ -53,7 +53,7 @@ $ aio cloudmanager:set-environment-variables --programId=<PROGRAM_ID> <ENVIRONME
 
 ## Exemple de code
 
-Cet exemple de code Java™ illustre un service OSGi qui établit une connexion à un serveur Web de serveur SQL externe, au moyen de l’outil Cloud Manager suivant : `portForwards` de la règle [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration) opération.
+Cet exemple de code Java™ illustre un service OSGi qui établit une connexion à un serveur web de serveur SQL externe, au moyen de la règle `portForwards` Cloud Manager suivante de l’opération [enableEnvironmentAdvancedNetworkingConfiguration](https://www.adobe.io/experience-cloud/cloud-manager/reference/api/#operation/enableEnvironmentAdvancedNetworkingConfiguration).
 
 ```json
 ...
@@ -150,11 +150,11 @@ public class MySqlExternalServiceImpl implements ExternalService {
 
 ## Dépendances des pilotes MySQL
 
-AEM as a Cloud Service nécessite souvent que vous fournissiez des pilotes de base de données Java™ pour prendre en charge les connexions. Il est généralement préférable de fournir les pilotes en incorporant les artefacts de bundle OSGi contenant ces pilotes dans le projet AEM via le `all` module.
+AEM as a Cloud Service nécessite souvent que vous fournissiez des pilotes de base de données Java™ pour prendre en charge les connexions. Il est généralement préférable de fournir les pilotes en incorporant les artefacts de lot OSGi contenant ces pilotes dans le projet AEM via le package `all`.
 
-### Reactor pom.xml
+### Réacteur pom.xml
 
-Inclure les dépendances du pilote de base de données dans le réacteur `pom.xml` puis référencez-les dans le `all` sous-projets.
+Incluez les dépendances des pilotes de base de données dans le réacteur `pom.xml`, puis référencez-les dans les sous-projets `all`.
 
 + `pom.xml`
 
@@ -174,9 +174,9 @@ Inclure les dépendances du pilote de base de données dans le réacteur `pom.xm
 ...
 ```
 
-## Tout pom.xml
+## Tous les pom.xml
 
-Incorporation des artefacts de dépendance de pilote de base de données dans `all` le module vers lequel ils sont déployés est disponible sur AEM as a Cloud Service. Ces artefacts __must__ être des lots OSGi qui exportent la classe Java™ du pilote de base de données.
+Intégrez les artefacts de dépendance des pilotes de base de données dans le package `all` afin qu’ils soient déployés et disponibles sur AEM as a Cloud Service. Ces artefacts __doivent__ être des lots OSGi qui exportent la classe Java™ du pilote de base de données.
 
 + `all/pom.xml`
 
