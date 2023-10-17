@@ -11,13 +11,13 @@ kt: 10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: tm+mt
+exl-id: 65e8d41e-002a-4d80-a050-5366e9ebbdea
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '614'
 ht-degree: 100%
 
 ---
-
 
 # Examinez le module « ui.frontend » du projet AEM full-stack. {#aem-full-stack-ui-frontent}
 
@@ -70,41 +70,41 @@ Les ressources front-end sont diffusées aux navigateurs web via des chemins URI
 
    1. `webpack.common` contient la configuration __commune__ pour indiquer le regroupement et l’optimisation des ressources WKND. La propriété __output__ indique où émettre les fichiers consolidés (également appelés lots JavaScript, mais à ne pas confondre avec les lots OSGi AEM) qu’elle crée. Le nom par défaut est défini sur `clientlib-site/js/[name].bundle.js`.
 
-   ```javascript
-       ...
-       output: {
-               filename: 'clientlib-site/js/[name].bundle.js',
-               path: path.resolve(__dirname, 'dist')
-           }
-       ...    
-   ```
+  ```javascript
+      ...
+      output: {
+              filename: 'clientlib-site/js/[name].bundle.js',
+              path: path.resolve(__dirname, 'dist')
+          }
+      ...    
+  ```
 
    1. `webpack.dev.js` contient la configuration de __développement__ utilisée pour le webpack-dev-server et pointe vers le modèle HTML à utiliser. Il comprend également une configuration proxy utilisée pour une instance AEM s’exécutant sur `localhost:4502`.
 
-   ```javascript
-       ...
-       devServer: {
-           proxy: [{
-               context: ['/content', '/etc.clientlibs', '/libs'],
-               target: 'http://localhost:4502',
-           }],
-       ...    
-   ```
+  ```javascript
+      ...
+      devServer: {
+          proxy: [{
+              context: ['/content', '/etc.clientlibs', '/libs'],
+              target: 'http://localhost:4502',
+          }],
+      ...    
+  ```
 
    1. `webpack.prod.js` contient la configuration de __production__ et utilise les modules externes pour transformer les fichiers de développement en lots optimisés.
 
-   ```javascript
-       ...
-       module.exports = merge(common, {
-           mode: 'production',
-           optimization: {
-               minimize: true,
-               minimizer: [
-                   new TerserPlugin(),
-                   new CssMinimizerPlugin({ ...})
-           }
-       ...    
-   ```
+  ```javascript
+      ...
+      module.exports = merge(common, {
+          mode: 'production',
+          optimization: {
+              minimize: true,
+              minimizer: [
+                  new TerserPlugin(),
+                  new CssMinimizerPlugin({ ...})
+          }
+      ...    
+  ```
 
 
 * Les ressources regroupées sont déplacées vers le module `ui.apps` en utilisant le module externe [aem-clientlib-generator](https://www.npmjs.com/package/aem-clientlib-generator) à l’aide de la configuration gérée dans le fichier `clientlib.config.js`.
