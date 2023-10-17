@@ -1,6 +1,6 @@
 ---
-title: Conventions de dénomination et bonnes pratiques à suivre lors de la création de formulaires adaptatifs
-description: Conventions de dénomination et bonnes pratiques à suivre lors de la création de formulaires adaptatifs
+title: Conventions de nommage et bonnes pratiques à suivre lors de la création de formulaires adaptatifs
+description: Conventions de nommage et bonnes pratiques à suivre lors de la création de formulaires adaptatifs
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -9,35 +9,36 @@ level: Beginner
 exl-id: fbfc74d7-ba7c-495a-9e3b-63166a3025ab
 last-substantial-update: 2020-09-10T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
 # Bonnes pratiques
 
-Adobe Experience Manager (AEM) Forms vous permet de transformer des opérations complexes en de simples et remarquables expériences numériques. Le document suivant décrit certaines autres bonnes pratiques à suivre lors du développement d’Adaptive Forms. Ce document est destiné à être utilisé conjointement avec [ce document](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html#Overview)
+Les formulaires Adobe Experience Manager (AEM) peuvent vous aider à transformer des transactions complexes en expériences numériques simples et agréables. Le document suivant décrit d’autres bonnes pratiques à suivre lors du développement de formulaires adaptatifs. Utilisez ce document conjointement avec [ce document](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html?lang=fr#Overview).
 
-## Conventions de dénomination
+## Conventions de nommage
 
 * **Panneaux**
-   * Les noms de panneau sont des majuscules, en commençant par un caractère majuscule.
+   * Les noms des panneaux sont rédigés en camel case et commencent par une lettre majuscule.
 
 * **Champs de formulaire**
-   * Les noms de champ sont des majuscules commençant par un caractère minuscule.
-   * Ne pas commencer les noms de champ par des nombres
-   * N’incluez pas de tirets &quot;-&quot; dans vos noms. Cela équivaut à un signe moins dans votre code et agit en tant qu’opérateurs dans votre code.
-   * Les noms peuvent contenir des lettres, des chiffres, des traits de soulignement et des signes dollar.
-   * Les noms doivent commencer par une lettre
-   * Les noms sont sensibles à la casse
-   * Les mots réservés (tels que les mots-clés JavaScript) ne peuvent pas être utilisés comme noms. Faites attention à d’autres mots réservés spécifiques à l’AF tels que &quot;panel&quot;, &quot;name&quot;.
-   * N’incluez pas de tirets &quot;-&quot; dans vos noms.
-* **Développement de Forms**
-   * Les fragments de formulaire doivent être pris en compte lors du développement de formulaires volumineux. Activation du chargement différé des fragments de formulaire pour des temps de chargement plus rapides
-   * **DataModel**
+   * Les noms des champs sont rédigés en camel case et commencent par une minuscule.
+   * Ne commencez pas les noms des champs par un chiffre.
+   * N’insérez pas de tirets « - » dans vos noms. Le tiret équivaut à un signe « moins » dans le code et agit en tant qu’opérateur.
+   * Les noms peuvent contenir des lettres, des chiffres, des traits de soulignement et des symboles dollar.
+   * Les noms doivent commencer par une lettre.
+   * Les noms respectent la casse.
+   * Les mots réservés (tels que les mots-clés JavaScript) ne peuvent pas être utilisés comme noms. N’incluez pas les mots réservés spécifiques à l’AF tels que « panel » et « name ».
+   * N’insérez pas de tirets « - » entre les noms.
+* **Développer les formulaires**
+   * Les fragments de formulaire doivent être pris en compte lors du développement de formulaires volumineux. Activez le chargement différé des fragments de formulaire afin d’accélérer les temps de chargement.
+   * **Modèle de données**
       * Il est recommandé d’associer un formulaire adaptatif au modèle de données approprié.
+
    * **Événements d’objet**
-      * Le code associé à la visibilité d’un objet doit toujours être placé dans l’événement de visibilité de cet objet.
+      * Le code reflétant la visibilité d’un objet doit toujours être placé dans l’événement de visibilité de cet objet.
    * **Script**
-      * Si le code que vous écrivez dans un formulaire adaptatif s’étend au-delà de 5 lignes visibles, vous devez déplacer votre code vers une bibliothèque cliente. Dans l’idéal, ajoutez votre fonction à la bibliothèque cliente, puis ajoutez les balises jsdoc appropriées pour que la fonction soit visible dans l’éditeur de règles de formulaire adaptatif.
+      * Si le code que vous écrivez dans un formulaire adaptatif s’étend au-delà de 5 lignes visibles, vous devez déplacer votre code vers une bibliothèque cliente. Dans l’idéal, ajoutez votre fonction à la bibliothèque cliente, puis ajoutez les balises jsdoc appropriées pour que la fonction soit visible dans l’éditeur de règles de formulaire adaptatif.
