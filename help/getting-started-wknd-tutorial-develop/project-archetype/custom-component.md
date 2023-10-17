@@ -12,9 +12,9 @@ mini-toc-levels: 1
 thumbnail: 30181.jpg
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
 source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/a
 1. Découvrir comment encapsuler la logique commerciale avec les modèles Sling
 1. Comprendre comment utiliser un modèle Sling dans un script HTL
 
-## Ce que vous allez construire {#what-build}
+## Ce que vous allez créer {#what-build}
 
 Dans cette partie du tutoriel WKND, un composant de signature est créé afin d’afficher les informations créées sur le contributeur ou la contributrice d’un article.
 
