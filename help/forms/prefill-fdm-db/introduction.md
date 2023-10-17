@@ -11,30 +11,30 @@ level: Intermediate
 exl-id: be519d58-1caa-42ea-97a9-7cd38ce8faca
 last-substantial-update: 2021-01-07T00:00:00Z
 source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '111'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Préremplir le formulaire à l’aide du modèle de données de formulaire
 
 Vous apprendrez à utiliser l’attribut de requête du modèle de données de formulaire pour récupérer des données afin de renseigner le formulaire adaptatif.
-À la fin de ce cours, vous aurez appris ce qui suit.
+À la fin de ce cours, vous serez capable de :
 
-* Créer un modèle de données de formulaire soutenu par RDBMS
-* Créer une association entre deux entités
-* Renseigner le tableau avec les données renvoyées par _get_ service du modèle de données de formulaire
-* Utilisation de l’attribut de requête du modèle de données de formulaire
+* créer un modèle de données de formulaire basé sur RDBMS ;
+* créer une association entre deux entités ;
+* renseigner une table avec les données renvoyées par le service _GET_ du modèle de données de formulaire ;
+* utiliser l’attribut de requête du modèle de données de formulaire.
 
-La vidéo suivante présente un aperçu du cours.
+La vidéo suivante vous donne une vue d’ensemble du cours.
 >[!VIDEO](https://video.tv.adobe.com/v/36387?quality=12&learn=on)
 
-## Prérequis
+## Conditions préalables
 
-* Instance de travail d’AEM Forms
-* Familiarisez-vous avec la base de données MySQL et MySQL Workbench
-* Expérience dans la création d’un Forms adaptatif
+* Instance fonctionnelle d’AEM Forms.
+* Connaissance de la base de données MySQL et de MySQL Workbench.
+* Expérience dans la création de formulaires adaptatifs.
 
 ## Étapes suivantes
 
