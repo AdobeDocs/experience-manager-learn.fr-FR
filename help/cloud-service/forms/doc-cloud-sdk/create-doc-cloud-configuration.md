@@ -1,6 +1,6 @@
 ---
-title: Création d’une configuration OSGi personnalisée
-description: Configuration OSGi personnalisée pour capturer les détails spécifiques à Document Cloud
+title: Créer une configuration OSGi personnalisée
+description: Personnaliser une configuration OSGi pour capturer les détails spécifiques à Document Cloud
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -11,15 +11,15 @@ thumbnail: 7818.jpg
 kt: 7818
 exl-id: 1f34c356-6c0c-46ff-9cea-7baacfc4bb7f
 source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '63'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Présentation
 
-Créer une configuration OSGi personnalisée pour capturer les informations d’identification de votre compte Document Cloud
+Créer une configuration OSGi personnalisée pour capturer les informations d’identification de votre compte Document Cloud
 
 
 Pour créer une configuration OSGi personnalisée, nous devons d’abord créer une interface dont les méthodes publiques représenteront les champs de la configuration.
