@@ -1,7 +1,7 @@
 ---
-title: Création de fragments de document pour contenir le nom et l’adresse du destinataire
+title: Créer des fragments de document pour contenir le nom et l’adresse de la personne destinataire
 seo-title: Creating Document Fragments to hold the recipient name and address
-description: Ce didacticiel en plusieurs étapes est la cinquième partie d’un premier document de communication interactive. Dans cette partie, nous allons créer un fragment de document qui contiendra le nom et l’adresse du destinataire.
+description: Bienvenue dans la partie 5 du tutoriel en plusieurs étapes sur la création de votre premier document de communication interactive. Dans cette partie, nous allons créer un fragment de document qui contiendra le nom et l’adresse de la personne destinataire.
 seo-description: This is part 5 of a multi-step tutorial for creating your first interactive communications document. In this part, we will create document fragment to hold the recipient name and address.
 uuid: 689931e4-a026-4e62-9acd-552918180819
 feature: Interactive Communication
@@ -16,27 +16,27 @@ role: Developer
 level: Beginner
 exl-id: 1d7093a8-3765-46ec-912a-b5a5503fd5af
 source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '244'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Création de fragments de document pour contenir le nom et l’adresse du destinataire {#creating-document-fragments-to-hold-the-recipient-name-and-address}
+# Créer des fragments de document pour contenir le nom et l’adresse de la personne destinataire {#creating-document-fragments-to-hold-the-recipient-name-and-address}
 
-Dans cette partie, nous allons créer un fragment de document qui contiendra le nom et l’adresse du destinataire.
+Dans cette partie, nous allons créer un fragment de document qui contiendra le nom et l’adresse de la personne destinataire.
 
 >[!VIDEO](https://video.tv.adobe.com/v/22350?quality=12&learn=on)
 
-Les fragments de document contiennent le contenu textuel des documents de communication interactive. Ce contenu de texte peut être du texte statique ou inséré à partir des valeurs des éléments de modèle de données sous-jacentes. Par exemple, Dear {name}, où Dear est du texte statique et {name} est le nom de l’élément de données de formulaire. Au moment de l’exécution, cette opération sera résolue sur Cher Gloria Rios ou Cher John Jacobs selon la valeur de l’élément name .
+Les fragments de document contiennent le contenu textuel des documents de communication interactive. Ce contenu de texte peut être du texte statique ou inséré à partir des valeurs des éléments du modèle de données sous-jacent. Par exemple, Cher {name}, où Cher est du texte statique et {name} est le nom de l’élément de données de formulaire. Au moment de l’exécution, cette opération sera résolue sur Chère Gloria Rios ou Cher John Jacobs selon la valeur de l’élément name.
 
-L’éditeur de texte enrichi est suffisamment intuitif pour qu’un utilisateur chargé de la conception de formulaires puisse créer du texte et insérer des éléments de données de formulaire. L’éditeur de fragment de document permet de mettre en forme le texte, de spécifier les types et les styles de police, d’insérer des caractères spéciaux et de créer des hyperliens.
+L’éditeur de texte enrichi est suffisamment intuitif pour qu’une personne utilisatrice professionnelle puisse créer du texte et insérer des éléments de données de formulaire. L’éditeur de fragment de document permet de mettre en forme le texte, de spécifier les types et les styles de police, d’insérer des caractères spéciaux et de créer des hyperliens.
 
-L’éditeur de fragment de document permet également d’insérer des conditions intégrées dans votre texte, comme illustré ci-dessous. [video](https://helpx.adobe.com/experience-manager/kt/forms/using/editing-improvements-correspondence-mgmt-feature-video-use.html)
+L’éditeur de fragment de document permet également d’insérer des conditions intégrées dans votre texte, comme illustré dans cette [vidéo](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/create-document-fragment.html?lang=fr).
 
 >[!NOTE]
 >
->Assurez-vous que les éléments de modèle de données de formulaire que vous insérez dans un document sont des descendants de l’élément racine. Par exemple, dans ce cas pratique, assurez-vous que les éléments de l’objet utilisateur que vous sélectionnez sont l’enfant de l’objet soldes .
+>Assurez-vous que les éléments de modèle de données de formulaire que vous insérez dans un fragment de document sont des descendants de l’élément racine. Par exemple, dans ce cas d’utilisation, assurez-vous que les éléments de l’objet User que vous sélectionnez sont des éléments enfants de l’objet Balances.
 
 ## Étapes suivantes
 
