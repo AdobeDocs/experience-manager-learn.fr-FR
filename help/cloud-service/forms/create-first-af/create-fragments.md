@@ -1,5 +1,5 @@
 ---
-title: Création de fragments de formulaire adaptatif
+title: Créer des fragments de formulaire adaptatif
 description: Un fragment est une partie réutilisable d’un formulaire. Un fragment peut très bien inclure un bloc d’adresse ou un paragraphe juridique, par exemple.
 solution: Experience Manager,Experience Manager Forms
 type: Documentation
@@ -12,13 +12,13 @@ kt: 7383
 thumbnail: 332231.jpg
 exl-id: 845383f2-71e4-44fb-8637-323e956b2808
 source-git-commit: 2f619bc6ebaae36c8b9d05d8c4ff5c1cc8c18332
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '65'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Création de fragments de formulaire adaptatif
+# Créer des fragments de formulaire adaptatif
 
 L’utilisation de fragments simplifie et accélère la création et la gestion d’un grand nombre de formulaires. Lors de la création d’un formulaire, vous insérez une référence au fragment requis et celui-ci s’affiche dans le nouveau formulaire.
 
