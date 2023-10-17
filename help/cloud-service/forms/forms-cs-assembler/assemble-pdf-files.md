@@ -1,6 +1,6 @@
 ---
-title: Assemblage de fichiers PDF à l’aide de l’opération invoke DDX
-description: Effectuez une requête de POST pour appeler le point de terminaison DDX avec les paramètres nécessaires.
+title: Assembler les fichiers PDF à l’aide d’une opération DDX
+description: Effectuer une requête POST pour appeler le point d’entrée DDX avec les paramètres nécessaires
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -8,18 +8,19 @@ version: Cloud Service
 feature: Output Service
 topic: Development
 kt: 9980
-source-git-commit: b7ff98dccc1381abe057a80b96268742d0a0629b
-workflow-type: tm+mt
+exl-id: 693dac88-84f3-4051-8e46-3105093711a3
+source-git-commit: e925b9fa02dc8d4695b85377c5f7f43fbd45ebc8
+workflow-type: ht
 source-wordcount: '124'
-ht-degree: 16%
+ht-degree: 100%
 
 ---
 
-# Effectuer l’appel du POST
+# Effectuer l’appel POST
 
 
-L’étape suivante consiste à effectuer un appel de POST HTTP vers le point de terminaison avec les paramètres nécessaires. Le DDX et les fichiers pdf sont fournis sous forme de fichiers de ressources. Le point de terminaison dispose d’une authentification par jeton. Le jeton d’accès est transmis dans l’en-tête de la requête.
-Le service Assembler utilise un langage de type XML, appelé Document Description XML (DDX), avec lequel vous pouvez décrire la sortie que vous souhaitez obtenir. DDX est un langage de balisage déclaratif dont les éléments représentent des blocs de création de documents. Le DDX suivant a été utilisé pour fusionner les deux documents pdf identifiés dans les éléments source du PDF.
+L’étape suivante consiste à effectuer un appel POST HTTP au point d’entrée avec les paramètres nécessaires. Le code DDX et les fichiers PDF sont disponibles en tant que fichiers de ressources. Le point d’entrée dispose d’une authentification par jeton. Le jeton d’accès est transmis dans l’en-tête de la requête.
+Le service Assembler utilise un langage de type XML, appelé Document Description XML (DDX), avec lequel vous pouvez décrire la sortie que vous souhaitez obtenir. DDX est un langage de balisage déclaratif dont les éléments représentent des blocs de création de documents. Le code DDX suivant permet de fusionner les deux documents PDF identifiés dans les éléments source du PDF.
 
 ```xml
 <DDX xmlns="http://ns.adobe.com/DDX/1.0/">
@@ -30,7 +31,7 @@ Le service Assembler utilise un langage de type XML, appelé Document Descriptio
 </DDX>
 ```
 
-Le code suivant a été utilisé pour combiner des fichiers pdf.
+Le code suivant permet de combiner les fichiers pdf.
 
 ```java
 package com.aemformscs.documentservices;
