@@ -1,6 +1,6 @@
 ---
-title: Enregistrement des données envoyées dans la variable string
-description: Étape personnalisée du processus pour extraire les données liées et les enregistrer dans une variable de workflow de type chaîne
+title: Enregistrer les données envoyées dans la variable string
+description: Étape du processus personnalisée pour extraire les données liées et les enregistrer dans une variable de workflow de type chaîne
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -9,27 +9,28 @@ level: Beginner
 kt: 11199
 last-substantial-update: 2022-10-02T00:00:00Z
 thumbnail: string-variable.jpg
-source-git-commit: e1c16ff347f5f398c7bc47233049427eeffa2aab
-workflow-type: tm+mt
+exl-id: 65dcbfbb-7eb5-4fa3-aeb3-587c59ee2fe9
+source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
+workflow-type: ht
 source-wordcount: '158'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Extraire des données liées et les enregistrer dans une variable string
+# Extraire des données liées et les enregistrer dans une variable de chaîne
 
-Cette fonctionnalité vous permet d’inclure les données envoyées dans le corps de votre email. L’étape de processus personnalisée extrait le **données liées** à partir de l’envoi du formulaire adaptatif et renseigne une variable de type chaîne avec les données. Vous pouvez ensuite utiliser cette variable string pour insérer les données dans votre modèle d&#39;email.
-La capture d’écran suivante montre les arguments que vous devez transmettre à l’étape de processus personnalisée.
+Cette fonctionnalité vous permet d’inclure les données envoyées dans le corps de votre e-mail. L’étape de processus personnalisée extrait les **données liées** à partir de l’envoi du formulaire adaptatif et renseigne une variable de type chaîne avec les données. Vous pouvez ensuite utiliser cette variable de chaîne pour insérer les données dans votre modèle d’e-mail.
+La copie d’écran suivante montre les arguments que vous devez transmettre à l’étape de processus personnalisée.
 ![process-step](assets/save-submitted-data-string.png)
 
-Voici les paramètres :
+Voici les paramètres :
 
-* `data.xml` - Le fichier contenant les données envoyées . Si le format est json, le nom du fichier peut être data.json.
+* `data.xml` : le fichier contenant les données envoyées. Si le format est json, le nom du fichier peut être data.json.
 
-L’étape de processus personnalisée extrait ensuite les données liées et les stocke dans la variable submitDataString définie dans le workflow.
+L’étape de processus personnalisée extrait ensuite les données liées et les stocke dans la variable submittedDataString définie dans le workflow.
 
 
-[Le lot personnalisé peut être téléchargé ici](assets/AEMFormsProcessStep.core-1.0.0-SNAPSHOT.jar)
+[Le lot personnalisé peut être téléchargé ici.](assets/AEMFormsProcessStep.core-1.0.0-SNAPSHOT.jar)
 
 ```java
 package AEMFormsProcessStep.core;
