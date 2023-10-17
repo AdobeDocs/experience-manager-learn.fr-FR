@@ -14,9 +14,9 @@ thumbnail: 30386.jpg
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
 source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1678'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/a
 1. Découvrez la notation BEM et comment elle peut être utilisée pour définir soigneusement la portée des styles.
 1. Appliquez des configurations de stratégie avancées à l’aide de modèles modifiables.
 
-## Ce que vous allez construire {#what-build}
+## Ce que vous allez créer {#what-build}
 
 Ce chapitre utilise la [fonctionnalité de système de style](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/style-system-feature-video-use.html?lang=fr) pour créer des variations des composants de **titre** et de **texte** utilisés dans la page de l’article.
 
