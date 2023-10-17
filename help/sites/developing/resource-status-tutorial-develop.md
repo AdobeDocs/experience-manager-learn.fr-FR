@@ -1,61 +1,61 @@
 ---
-title: Développement d’états de ressources dans AEM Sites
-description: 'Les API Adobe Experience Manager Resource Status sont un framework enfichable permettant d’exposer les messages d’état dans AEM différentes interfaces utilisateur web de l’éditeur. '
+title: Développer des statuts de ressources dans AEM Sites
+description: Les API de statut des ressources d’Adobe Experience Manager constituent un framework enfichable permettant d’afficher les messages de statut dans les différentes interfaces utilisateur web de l’éditeur d’AEM.
 topics: development
 audience: developer
 doc-type: tutorial
 activity: develop
 version: 6.4, 6.5
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '446'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
-# Développement des états de ressources {#developing-resource-statuses-in-aem-sites}
+# Développer des statuts de ressources {#developing-resource-statuses-in-aem-sites}
 
-Les API Adobe Experience Manager Resource Status sont un framework enfichable permettant d’exposer les messages d’état dans AEM différentes interfaces utilisateur web de l’éditeur.
+Les API de statut des ressources d’Adobe Experience Manager constituent un framework enfichable permettant d’afficher les messages de statut dans les différentes interfaces utilisateur web de l’éditeur d’AEM.
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
-La structure Resource Status for Editors fournit des API côté serveur et côté client pour l’affichage et l’interaction avec les états de l’éditeur d’une manière standard et uniforme.
+Le framework du statut des ressources pour les éditeurs fournit des API côté serveur et côté client pour l’affichage et l’interaction avec les statuts de l’éditeur d’une manière standard et uniforme.
 
-Les barres d’état de l’éditeur sont nativement disponibles dans les éditeurs Page, Fragment d’expérience et Modèle d’AEM.
+Les barres de statut de l’éditeur sont intégrées nativement aux éditeurs de pages, de fragments d’expérience et de modèles d’AEM.
 
-Voici des exemples de cas d’utilisation pour les fournisseurs d’état de ressource personnalisés :
+Voici des exemples de cas d’utilisation pour les fournisseurs de statut de ressources personnalisés :
 
-* Notifier les auteurs lorsqu’une page est dans les 2 heures suivant l’activation planifiée
-* Notifier les auteurs qu’une page a été activée au cours des 15 dernières minutes
-* Notifier les auteurs qu’une page a été modifiée au cours des 5 dernières minutes et par qui
+* Avertir les auteurs et autrices de toute activation planifiée d’une page dans les 2 heures.
+* Avertir les auteurs at autrices de toute activation d’une page au cours des 15 dernières minutes.
+* Avertir les auteurs at autrices de toute modification d’une page au cours des 5 dernières minutes et de la personne responsable.
 
-![Présentation de l’état des ressources de l’éditeur AEM](assets/sample-editor-resource-status-screenshot.png)
+![Vue d’ensemble du statut des ressources de l’éditeur AEM.](assets/sample-editor-resource-status-screenshot.png)
 
-## Structure du fournisseur d’état des ressources {#resource-status-provider-framework}
+## Framework du fournisseur de statut des ressources {#resource-status-provider-framework}
 
-Lors du développement d’états de ressources personnalisés, le travail de développement comprend :
+Lors du développement de statuts de ressources personnalisés, le travail de développement comprend les éléments suivants :
 
-1. Mise en oeuvre de ResourceStatusProvider, chargée de déterminer si un état est requis, et les informations de base sur l’état : titre, message, priorité, variante, icône et actions disponibles.
-2. Éventuellement, le code JavaScript de l’IU Granite qui met en oeuvre la fonctionnalité de toutes les actions disponibles.
+1. La mise en œuvre de ResourceStatusProvider, qui permet de déterminer si un statut est requis, et les informations de base sur le statut : titre, message, priorité, variante, icône et actions disponibles.
+2. De manière facultative, le code JavaScript de l’IU Granite qui met en œuvre la fonctionnalité des actions disponibles.
 
-   ![architecture de statut des ressources](assets/sample-editor-resource-status-application-architecture.png)
+   ![Architecture de statut des ressources.](assets/sample-editor-resource-status-application-architecture.png)
 
-3. La ressource d’état fournie dans les éditeurs de page, de fragment d’expérience et de modèle se voit attribuer un type via les ressources &quot;[!DNL statusType]&quot;.
+3. La ressource de statut fournie dans les éditeurs de pages, de fragments d’expérience et de modèles se voit attribuer un type via la propriété « [!DNL statusType] » des ressources.
 
-   * Éditeur de page : `editor`
-   * Éditeur de fragment d’expérience : `editor`
-   * Éditeur de modèles: `template-editor`
+   * Éditeur de pages : `editor`
+   * Éditeur de fragments d’expérience : `editor`
+   * Éditeur de modèles : `template-editor`
 
-4. La ressource d’état `statusType` est associé à enregistré `CompositeStatusType` Configuration OSGi `name` .
+4. La propriété `statusType` de la ressource de statut est associée à la propriété `name` enregistrée `CompositeStatusType` dans la configuration OSGi.
 
-   Pour toutes les correspondances, la variable `CompositeStatusType's` Les types sont collectés et utilisés pour collecter les `ResourceStatusProvider` implémentations de ce type, via `ResourceStatusProvider.getType()`.
+   Pour toutes les correspondances, les types `CompositeStatusType's` sont collectés et utilisés pour collecter les implémentations `ResourceStatusProvider` de ce type, via `ResourceStatusProvider.getType()`.
 
-5. La correspondance `ResourceStatusProvider` est transmis au `resource` dans l’éditeur, et détermine si la variable `resource` a le statut à afficher. Si l’état est nécessaire, cette implémentation est responsable de la création de 0 ou de plusieurs `ResourceStatuses` pour renvoyer la valeur , chacune représentant un état à afficher.
+5. La propriété `ResourceStatusProvider` correspondante reçoit la `resource` dans l’éditeur et détermine si la `resource` dispose d’un statut à afficher. Si le statut est requis, la mise en œuvre va créer 0 ou plusieurs propriétés `ResourceStatuses` à renvoyer, chacune représentant un statut à afficher.
 
-   En règle générale, une `ResourceStatusProvider` renvoie 0 ou 1 `ResourceStatus` per `resource`.
+   En règle générale, la propriété `ResourceStatusProvider` renvoie 0 ou 1 `ResourceStatus` par `resource`.
 
-6. ResourceStatus est une interface qui peut être implémentée par le client ou qui peut fournir des informations utiles. `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` peut être utilisé pour construire un état. Un état comprend :
+6. ResourceStatus est une interface qui peut être implémentée par le client ou la cliente. `com.day.cq.wcm.commons.status.EditorResourceStatus.Builder` permet de créer un statut de manière pratique. Un statut se compose des éléments suivants :
 
    * Titre
    * Message
@@ -65,7 +65,7 @@ Lors du développement d’états de ressources personnalisés, le travail de d�
    * Actions
    * Données
 
-7. Facultatif, si `Actions` sont fournis pour la variable `ResourceStatus` , les clientlibs prises en charge sont nécessaires pour lier la fonctionnalité aux liens d’action dans la barre d’état.
+7. De manière facultative, si les `Actions` sont fournis pour l’objet `ResourceStatus`, les bibliothèques clientes sous-jacentes sont nécessaires pour rendre les liens d’action effectifs dans la barre de statut.
 
    ```js
    (function(jQuery, document) {
@@ -78,15 +78,15 @@ Lors du développement d’états de ressources personnalisés, le travail de d�
    })(jQuery, document);
    ```
 
-8. Tout code JavaScript ou CSS compatible avec les actions doit être envoyé par proxy via les bibliothèques clientes respectives de chaque éditeur pour s’assurer que le code frontal est disponible dans l’éditeur.
+8. Tout code JavaScript ou CSS permettant de rendre les actions effectives doit être envoyé par proxy via les bibliothèques clientes respectives de chaque éditeur afin de s’assurer que le code front-end est disponible dans l’éditeur.
 
-   * Catégorie de l’éditeur de page : `cq.authoring.editor.sites.page`
-   * Catégorie de l’éditeur de fragments d’expérience : `cq.authoring.editor.sites.page`
-   * Catégorie de l’éditeur de modèles : `cq.authoring.editor.sites.template`
+   * Catégorie de l’éditeur de page : `cq.authoring.editor.sites.page`
+   * Catégorie de l’éditeur de fragments d’expérience : `cq.authoring.editor.sites.page`.
+   * Catégorie de l’éditeur de modèles : `cq.authoring.editor.sites.template`.
 
 ## Afficher le code {#view-the-code}
 
-[Voir le code sur GitHub](https://github.com/Adobe-Consulting-Services/acs-aem-samples/tree/master/bundle/src/main/java/com/adobe/acs/samples/resourcestatus/impl/SampleEditorResourceStatusProvider.java)
+[Consulter le code sur GitHub](https://github.com/Adobe-Consulting-Services/acs-aem-samples/tree/master/bundle/src/main/java/com/adobe/acs/samples/resourcestatus/impl/SampleEditorResourceStatusProvider.java)
 
 ## Ressources supplémentaires {#additional-resources}
 
