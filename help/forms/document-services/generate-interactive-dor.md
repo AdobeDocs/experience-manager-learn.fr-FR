@@ -1,6 +1,6 @@
 ---
 title: Générer un document d’enregistrement interactif avec les données de formulaire adaptatif
-description: Fusionner les données de formulaire adaptatif avec le modèle XDP pour générer un pdf téléchargeable
+description: Fusionner les données de formulaire adaptatif avec le modèle XDP pour générer un PDF téléchargeable
 version: 6.4,6.5
 feature: Forms Service
 topic: Development
@@ -10,27 +10,27 @@ kt: 9226
 exl-id: d9618cc8-d399-4850-8714-c38991862045
 last-substantial-update: 2020-02-07T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '543'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Téléchargement d’un document d’enregistrement interactif
+# Télécharger un document d’enregistrement interactif
 
-Un cas d’utilisation courant consiste à télécharger un document d’enregistrement interactif avec les données de formulaire adaptatif. Le document d’enregistrement téléchargé sera alors terminé à l’aide d’Adobe Acrobat ou d’Adobe Reader.
+Un cas d’utilisation courant consiste à télécharger un document d’enregistrement interactif avec les données de formulaire adaptatif. Le document d’enregistrement téléchargé sera alors terminé à l’aide d’Adobe Acrobat ou d’Adobe Reader.
 
 ## Le formulaire adaptatif n’est pas basé sur un schéma XSD
 
-Si votre formulaire XDP et adaptatif ne sont basés sur aucun schéma, procédez comme suit pour générer un document d’enregistrement interactif.
+Si votre XDP et votre formulaire adaptatif ne sont basés sur aucun schéma, procédez comme suit pour générer un document d’enregistrement interactif.
 
 ### Créer un formulaire adaptatif
 
-Créez un formulaire adaptatif et assurez-vous que les noms des champs du formulaire adaptatif sont nommés de la même manière que les noms des champs dans votre modèle xdp.
-Notez le nom de l’élément racine de votre modèle xdp.
+Créez un formulaire adaptatif et assurez-vous que les champs du formulaire adaptatif portent les mêmes noms que ceux des champs dans votre modèle XDP.
+Notez le nom de l’élément racine de votre modèle XDP.
 ![root-element](assets/xfa-root-element.png)
 
-### Lien client
+### Bibliothèque cliente
 
 Le code suivant est déclenché lorsque le bouton Télécharger le PDF est déclenché.
 
@@ -65,23 +65,24 @@ $(document).ready(function() {
 
 ## Formulaire adaptatif basé sur un schéma XSD
 
-Si votre fichier xdp n’est pas basé sur XSD, procédez comme suit pour créer un schéma XSD(schéma) sur lequel vous baserez votre formulaire adaptatif.
+Si votre XDP n’est pas basé sur XSD, procédez comme suit pour créer un schéma XSD sur lequel vous baserez votre formulaire adaptatif.
 
-### Générer des exemples de données pour le XDP
+### Générer des données d’exemple pour le XDP
 
-* Ouvrez le fichier XDP dans AEM Forms Designer.
-* Cliquez sur Fichier | Propriétés du formulaire | Aperçu
-* Cliquez sur Générer les données d’aperçu
-* Cliquez sur Générer
-* Fournissez un nom de fichier significatif tel que &quot;form-data.xml&quot;.
+* Ouvrez le fichier XDP dans AEM Forms Designer.
+* Cliquez sur Fichier | Propriétés du formulaire | Aperçu.
+* Cliquez sur Générer les données d’aperçu.
+* Cliquez sur Générer.
+* Fournissez un nom de fichier significatif, tel que « form-data.xml ».
 
-### Générer un fichier XSD à partir des données xml
+### Générer un fichier XSD à partir de données XML
 
-Vous pouvez utiliser n’importe quel outil en ligne gratuit pour [générer XSD](https://www.freeformatter.com/xsd-generator.html) des données xml générées à l’étape précédente.
+Vous pouvez utiliser n’importe quel outil en ligne gratuit pour [générer le XSD](https://www.freeformatter.com/xsd-generator.html) à partir des données xml générées à l’étape précédente.
 
 ### Créer un formulaire adaptatif
 
-Créez un formulaire adaptatif basé sur le schéma XSD de l’étape précédente. Associez le formulaire pour utiliser la bibliothèque cliente &quot;irs&quot;. Cette bibliothèque cliente dispose du code pour effectuer un appel POST vers la servlet qui renvoie le PDF à l’application qui l’appelle. Le code suivant est déclenché lorsque la variable _PDF de téléchargement_ est cliqué
+Créez un formulaire adaptatif basé sur le schéma XSD de l’étape précédente. Associez le formulaire pour utiliser la bibliothèque cliente « irs ». Cette bibliothèque cliente dispose du code pour effectuer un appel POST vers le servlet qui renvoie le PDF à l’application qui l’appelle.
+Le code suivant est déclenché lorsque l’on clique sur _Télécharger le PDF_.
 
 ```javascript
 $(document).ready(function() {
@@ -114,9 +115,9 @@ $(document).ready(function() {
 
 
 
-## Création d’un servlet personnalisé
+## Créer un servlet personnalisé
 
-Créez un servlet personnalisé qui fusionnera les données avec le modèle XDP et renverra le pdf. Le code permettant d’y parvenir est répertorié ci-dessous. Le servlet personnalisé fait partie de la variable [Groupe AEMFormsDocumentServices.core-1.0-SNAPSHOT](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar)).
+Créez un servlet personnalisé qui fusionnera les données avec le modèle XDP et renverra le PDF. Le code permettant de réaliser cette opération figure ci-dessous. Le servlet personnalisé fait partie du [lot AEMFormsDocumentServices.core-1.0-SNAPSHOT](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar).
 
 ```java
 public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
@@ -209,21 +210,22 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 }
 ```
 
-Dans l’exemple de code, nous extrayons le nom xdp et d’autres paramètres de l’objet de requête. Si le formulaire n’est pas basé sur XSD, le document XML à fusionner avec xdp est créé. Si le formulaire est basé sur XSD, nous extrayons simplement le noeud approprié à partir des données du formulaire adaptatif envoyé pour générer un document XML à fusionner avec le modèle xdp.
+Dans l’exemple de code, nous extrayons le nom XDP et d’autres paramètres de l’objet de la requête. Si le formulaire n’est pas basé sur XSD, le document XML à fusionner avec XDP est créé. Si le formulaire est basé sur XSD, nous extrayons simplement le nœud approprié à partir des données du formulaire adaptatif envoyé pour générer un document XML à fusionner avec le modèle XDP.
 
 ## Déployer l’exemple sur votre serveur
 
-Pour le tester sur votre serveur local, procédez comme suit :
+Pour tester ceci sur votre serveur local, procédez comme suit :
 
-1. [Télécharger et installer le bundle DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
-1. Ajoutez l’entrée suivante dans le service Apache Sling User Mapper du service DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
-1. [Télécharger et installer le lot Document Services personnalisé](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Il dispose du servlet pour fusionner les données avec le modèle XDP et diffuser le pdf en continu.
-1. [Importation de la bibliothèque cliente](assets/generate-interactive-dor-client-lib.zip)
-1. [Importation des actifs d’article (formulaire adaptatif, modèles XDP et schéma XSD)](assets/generate-interactive-dor-sample-assets.zip)
-1. [Aperçu du formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled)
-1. Renseignez quelques champs de formulaire.
+1. [Télécharger et installer le lot DevelopingWithServiceUser](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar)
+1. Ajoutez l’entrée suivante dans le service de mappage utilisateur ou utilisatrice de service Apache Sling.
+DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
+1. [Téléchargez et installez le lot DocumentServices personnalisé](/help/forms/assets/common-osgi-bundles/AEMFormsDocumentServices.core-1.0-SNAPSHOT.jar). Il dispose du servlet pour fusionner les données avec le modèle XDP et renvoyer le PDF.
+1. [Importer la bibliothèque cliente](assets/generate-interactive-dor-client-lib.zip)
+1. [Importez les ressources de l’article (formulaire adaptatif, modèles XDP et schéma XSD).](assets/generate-interactive-dor-sample-assets.zip)
+1. [Prévisualisez le formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled).
+1. Renseignez quelques champs du formulaire.
 1. Cliquez sur Télécharger le PDF pour obtenir le PDF. Vous devrez peut-être attendre quelques secondes pour que le PDF soit téléchargé.
 
 >[!NOTE]
 >
->Vous pouvez essayer le même cas d’utilisation avec [formulaire adaptatif non basé sur xsd](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). Veillez à transmettre les paramètres appropriés au point de terminaison post dans streampdf.js situé dans leur clientlib.
+>Vous pouvez essayer le même cas d’utilisation avec un [formulaire adaptatif non basé sur XSD](http://localhost:4502/content/dam/formsanddocuments/two/jcr:content?wcmmode=disabled). Veillez à transmettre les paramètres appropriés au point d’entrée POST dans streampdf.js situé dans la bibliothèque cliente IRS.
