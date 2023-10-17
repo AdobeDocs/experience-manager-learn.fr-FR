@@ -10,9 +10,9 @@ kt: 10831
 thumbnail: KT-10831.jpg
 exl-id: a932147c-2245-4488-ba1a-99c58045ee2b
 source-git-commit: ec2609ed256ebe6cdd7935f3e8d476c1ff53b500
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1669'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -289,7 +289,7 @@ Lors de la création de l’application Android™ pour différentes utilisation
 
 Les requêtes d’images de l’application découplée à AEM doivent être configurées pour interagir avec le service AEM approprié, comme décrit dans le [tableau ci-dessus](#managing-aem-hosts).
 
-Adobe recommande d’utiliser [images optimisées](../../how-to/images.md) mis à disposition par l’intermédiaire de la fonction `_dynamicUrl` dans les API GraphQL d’AEM. Le `_dynamicUrl` renvoie une URL sans hôte qui peut être précédée de l’hôte de service AEM utilisé pour interroger AEM API GraphQL. Pour le `_dynamicUrl` dans la réponse GraphQL, le champ ressemble à ce qui suit :
+Adobe recommande d’utiliser des [images optimisées](../../how-to/images.md) mises à disposition par le biais du champ `_dynamicUrl` dans les API GraphQL d’AEM. Le champ `_dynamicUrl` renvoie une URL sans hôte qui peut être précédée de l’hôte de service AEM utilisé pour interroger les API GraphQL d’AEM. Pour le champ `_dynamicUrl` dans GraphQL, la réponse ressemble à ce qui suit :
 
 ```json
 {
@@ -421,7 +421,7 @@ AEM_HOST = publish-p123-e789.adobeaemcloud.com
 
 #### Générateur d’URL d’image
 
-Dans `Aem.swift`, l’implémentation client AEM personnalisée sans interface utilisateur, une fonction personnalisée `imageUrl(..)` emprunte le chemin d’accès à l’image, comme indiqué dans la variable `_dynamicUrl` dans la réponse GraphQL et la préfixe avec l’hôte AEM. Cette fonction est ensuite appelée dans les vues iOS chaque fois qu’une image est rendue.
+Dans `Aem.swift`, l’implémentation du client AEM découplé personnalisée, qui est une fonction personnalisée `imageUrl(..)`, emprunte le chemin d’accès à l’image, comme indiqué dans le champ `_dynamicUrl` dans la réponse GraphQL, et y ajoute l’hôte AEM comme préfixe. Cette fonction est ensuite appelée dans les vues iOS chaque fois qu’une image est rendue.
 
 + `WKNDAdventures/AEM/Aem.swift`
 
