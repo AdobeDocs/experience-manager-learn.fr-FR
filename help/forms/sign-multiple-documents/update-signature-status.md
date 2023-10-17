@@ -1,6 +1,6 @@
 ---
-title: Mettre à jour l’état de signature du formulaire dans la base de données
-description: Mettre à jour l’état de signature du formulaire signé dans la base de données à l’aide du workflow AEM
+title: Mettre à jour le statut de la signature du formulaire dans la base de données
+description: Mettre à jour le statut de la signature du formulaire signé dans la base de données à l’aide du workflow AEM
 feature: Adaptive Forms
 version: 6.4,6.5
 kt: 6888
@@ -10,20 +10,20 @@ role: Developer
 level: Experienced
 exl-id: 75852a4b-7008-4c65-bab1-cc5dbf525e20
 source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '116'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Mettre à jour l’état de signature
+# Mettre à jour le statut de signature
 
-Le workflow UpdateSignatureStatus est déclenché lorsque l’utilisateur a terminé la cérémonie de signature. Voici le flux du workflow :
+Le workflow UpdateSignatureStatus est déclenché lorsque l’utilisateur ou l’utilisatrice a terminé la cérémonie de signature. Voici le flux du workflow :
 
 ![main-workflow](assets/update-signature.PNG)
 
-Mettre à jour le statut de la signature est une étape de processus personnalisée.
-La principale raison de l’implémentation de l’étape de processus personnalisé est d’étendre un processus AEM. Voici le code personnalisé utilisé pour mettre à jour l’état de la signature.
+La mise à jour du statut de la signature constitue une étape de processus personnalisée.
+La principale raison de l’implémentation de l’étape de processus personnalisée est d’étendre un workflow AEM. Voici le code personnalisé utilisé pour mettre à jour le statut de la signature.
 Le code de cette étape de processus personnalisée référence le service SignMultipleForms.
 
 
@@ -70,8 +70,8 @@ public class UpdateSignatureStatusWorkflowStep implements WorkflowProcess {
 
 ## Ressources
 
-Le processus de mise à jour de l’état de la signature peut être [téléchargé ici](assets/update-signature-status-workflow.zip)
+Le workflow de mise à jour du statut de la signature peut être [téléchargé ici](assets/update-signature-status-workflow.zip).
 
 ## Étapes suivantes
 
-[Personnalisation de l’étape de résumé pour afficher le formulaire suivant à signer](./customize-summary-component.md)
+[Personnaliser l’étape de résumé pour afficher le prochain formulaire à signer](./customize-summary-component.md)
