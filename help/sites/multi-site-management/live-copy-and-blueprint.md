@@ -1,6 +1,6 @@
 ---
 title: Comprendre la relation entre une Live Copy et son plan directeur
-description: La vidéo suivante explique comment une Live Copy est liée à son plan directeur dans AEM Sites.
+description: La vidéo suivante explique comment une Live Copy est liée à son plan directeur dans AEM Sites.
 feature: Language Copy, Multi Site Manager
 topics: localization, authoring, content-architecture
 audience: all
@@ -14,14 +14,14 @@ role: User
 level: Beginner
 exl-id: 0a640096-f5ed-467d-9919-4280c2d9c4e9
 source-git-commit: 307ed6cd25d5be1e54145406b206a78ec878d548
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '44'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Live Copy et Blue Print {#livecopy-blueprint}
+# Live Copy et plan directeur {#livecopy-blueprint}
 
-Comprendre la relation entre une Live Copy et son plan directeur dans AEM Sites.
+Découvrez la relation entre une Live Copy et son plan directeur dans AEM Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/36676?quality=12&learn=on)
