@@ -1,6 +1,6 @@
 ---
-title: Capture des messages d’erreur dans le service de modèle de données de formulaire en tant qu’étape dans le processus
-description: À compter d’AEM Forms 6.5.1, nous pouvons désormais capturer les messages d’erreur générés lors de l’utilisation du service de modèle de données de formulaire d’appel comme étape dans AEM Workflow. Workflow.
+title: Capturer des messages d’erreur dans le service de modèle de données de formulaire en tant qu’étape du workflow
+description: À partir d’AEM Forms 6.5.1, nous pouvons capturer les messages d’erreur générés lors de l’appel du service de modèle de données de formulaire comme étape du workflow AEM. Workflow.
 feature: Workflow
 version: 6.5
 topic: Development
@@ -9,25 +9,25 @@ level: Intermediate
 exl-id: 8cae155c-c393-4ac3-a412-bf14fc411aac
 last-substantial-update: 2020-06-09T00:00:00Z
 source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Capture des messages d’erreur dans l’étape Invoquer le service de modèle de données de formulaire
+# Capturer les messages d’erreur dans l’étape Appeler le service de modèle de données de formulaire
 
-À compter d’AEM Forms 6.5.1, nous avons désormais la possibilité de capturer les messages d’erreur et de spécifier les options de validation. L’étape Invoquer le service de modèle de données de formulaire a été améliorée afin de fournir les fonctionnalités suivantes.
+À partir d’AEM Forms 6.5.1, nous avons la possibilité de capturer les messages d’erreur et de spécifier les options de validation. L’étape Appeler le service de modèle de données de formulaire a été améliorée afin de fournir les fonctionnalités suivantes.
 
-* Ajout d’une option pour la validation à 3 niveaux (&quot;OFF&quot;, &quot;BASIC&quot; et &quot;FULL&quot;) afin de gérer les exceptions rencontrées lors de l’appel du service de modèle de données de formulaire. Les 3 options indiquent successivement une version plus stricte de la vérification des exigences spécifiques à la base de données.
-   ![niveaux de validation](assets/validation-level.PNG)
+* Ajout d’une option pour la validation à 3 niveaux (« OFF », « BASIC » et « FULL ») afin de gérer les exceptions rencontrées lors de l’appel du service de modèle de données de formulaire. Les 3 options indiquent une version de plus en plus stricte de la vérification des exigences spécifiques à la base de données.
+  ![validation-levels](assets/validation-level.PNG)
 
-* Ajout d’une case à cocher pour personnaliser l’exécution du workflow. Par conséquent, l’utilisateur dispose désormais de la possibilité de poursuivre l’exécution du workflow, même si l’étape Appeler le modèle de données de formulaire renvoie des exceptions.
+* Ajout d’une case à cocher pour personnaliser l’exécution du workflow. Par conséquent, l’utilisateur ou l’utilisatrice dispose désormais de la possibilité de poursuivre l’exécution du workflow, même si l’étape Appeler le modèle de données de formulaire renvoie des exceptions.
 
-* Stockage d’informations importantes sur le message Erreur résultant d’exceptions de validation. Trois sélecteurs de variable de type Autocomplete ont été ajoutés pour sélectionner les variables appropriées afin de stocker les variables ErrorCode(String), ErrorMessage(String) et ErrorDetails(JSON). ErrorDetails est toutefois défini sur null si l’exception n’est pas une exception DermisValidationException.
-   ![capture des messages d’erreur](assets/fdm-error-details.PNG)
+* Stockage d’informations importantes sur les erreurs dues à des exceptions de validation. Trois sélecteurs de variable de type Autocomplete ont été ajoutés pour sélectionner les variables appropriées afin de stocker les variables ErrorCode(String), ErrorMessage(String) et ErrorDetails(JSON). ErrorDetails est toutefois défini sur null si l’exception n’est pas une exception DermisValidationException.
+  ![Capture des messages d’erreur.](assets/fdm-error-details.PNG)
 
-Grâce à ces modifications, l’étape Invoquer le service de modèle de données de formulaire s’assure que les valeurs d’entrée respectent les contraintes de données fournies dans le fichier swagger. Par exemple, le message d’erreur suivant est généré lorsque les valeurs accountId et balance ne sont pas conformes aux contraintes de données spécifiées dans le fichier swagger.
+Grâce à ces modifications, l’étape Appeler le service de modèle de données de formulaire s’assure que les valeurs d’entrée respectent les contraintes de données spécifiées dans le fichier Swagger. Par exemple, le message d’erreur suivant est généré lorsque les valeurs accountId et balance ne sont pas conformes aux contraintes de données spécifiées dans le fichier Swagger.
 
 ```json
 {
