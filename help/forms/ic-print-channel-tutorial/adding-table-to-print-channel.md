@@ -1,7 +1,7 @@
 ---
-title: Ajout d’un tableau à la section des contributions
+title: Ajouter un tableau à la section des contributions
 seo-title: Adding table to contributions section
-description: Ce didacticiel en 9 étapes est consacré à la création de votre premier document de communication interactive. Dans cette partie, nous allons ajouter un tableau à la section des contributions.
+description: Ceci est la partie 9 du didacticiel en plusieurs étapes consacré à la création de votre premier document de communication interactive. Dans cette partie, nous allons ajouter un tableau à la section des contributions.
 seo-description: This is part 9 of multistep tutorial for creating your first interactive communication document.In this part, we will add a table to the contributions section.
 uuid: 9475e769-a3f8-4aec-9b46-e0dc182b78a0
 feature: Interactive Communication
@@ -18,22 +18,22 @@ role: Developer
 level: Beginner
 exl-id: b5a6c1c9-2be1-4622-b85b-a1996fb86a2f
 source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '114'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Ajout d’un tableau à la section des contributions
+# Ajouter un tableau à la section des contributions
 
-Dans cette partie, nous allons ajouter un tableau à la section des contributions .
-Reportez-vous à la section [Utilisation de tableaux dans le canal d’impression](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) pour plus d’informations sur l’utilisation des tableaux dans le document print channel.
+Dans cette partie, nous allons ajouter un tableau à la section des contributions.
+Consultez la section [Utilisation de tableaux dans le canal d’impression](/help/forms/interactive-communications/table-in-print-channel-documents-video-use.md) pour en savoir plus sur l’utilisation des tableaux dans le document du canal d’impression.
 
-Connectez-vous à AEM Forms et accédez à Adobe Experience Manager > Forms > Forms et documents.
+Connectez-vous à AEM Forms et accédez à Adobe Experience Manager > Forms > Formulaires et documents.
 
-Ouvrez le dossier 401KStatementPrint .
+Ouvrez le dossier 401KStatementPrint.
 
-Ouvrez le fichier 401KStatementPrint en mode d’édition.
+Ouvrez le fichier 401KStatementPrint en mode édition.
 
 La vidéo suivante décrit les étapes à suivre pour configurer un tableau dans le document du canal d’impression.
 
@@ -41,4 +41,4 @@ La vidéo suivante décrit les étapes à suivre pour configurer un tableau dans
 
 ## Étapes suivantes
 
-[Utilisation du dossier de contrôle pour générer le document du canal d’impression](./using-watched-folder-to-generate-document.md)
+[Utiliser le dossier de contrôle pour générer le document du canal d’impression](./using-watched-folder-to-generate-document.md)
