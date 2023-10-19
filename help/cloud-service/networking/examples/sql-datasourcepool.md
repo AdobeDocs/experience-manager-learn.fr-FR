@@ -137,7 +137,7 @@ AEM as a Cloud Service nécessite souvent que vous fournissiez des pilotes d
 
 ### Réacteur pom.xml
 
-Inclurez les dépendances des pilotes de base de données dans le réacteur `pom.xml`, puis référencez-les dans les sous-projets `all`.
+Incluez les dépendances des pilotes de base de données dans le réacteur `pom.xml`, puis référencez-les dans les sous-projets `all`.
 
 + `pom.xml`
 
