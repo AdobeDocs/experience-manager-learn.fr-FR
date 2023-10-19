@@ -239,6 +239,6 @@ Pour confirmer que ce problème est bien la cause du comportement défaillant, p
 
 Si les solutions de dépannage ci-dessus sont infructueuses, créez un cas d’assistance Adobe en procédant comme suit :
 
-+ [Adobe Admin Console](https://adminconsole.adobe.com) > Onglet Assistance > Créer un cas.
++ [Adobe Admin Console](https://adminconsole.adobe.com) > Onglet Assistance > Créer un cas
 
   _Si vous êtes une personne membre de plusieurs organisations Adobe, assurez-vous de sélectionner l’organisation Adobe dont le pipeline est en échec dans le sélecteur d’organisation Adobe avant de créer le cas._
