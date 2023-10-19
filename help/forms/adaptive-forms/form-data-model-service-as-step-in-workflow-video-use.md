@@ -36,5 +36,5 @@ Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-
    * Le formulaire adaptatif pour déclencher le workflow lors de l’envoi.
 * Ouvrez le formulaire [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Remplissez les informations et envoyez-le. Lors de l’envoi du formulaire, le [workflow loanapplication](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) est déclenché.
 
-![workflow](assets/fdm-as-service-step-workflow.PNG).
+![Workflow](assets/fdm-as-service-step-workflow.PNG).
 Le workflow utilise le composant Division OU pour acheminer la demande vers l’administrateur ou l’administratrice si le score de crédit est supérieur à 500. Si le score de crédit est inférieur à 500, la demande est acheminée vers le cavery.
