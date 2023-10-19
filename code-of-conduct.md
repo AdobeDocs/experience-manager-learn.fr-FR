@@ -1,7 +1,6 @@
 ---
 source-git-commit: facdd8295b9c4cf1eb09db4a6c8deb3e0fe33c04
-workflow-type: tm+mt
-translation-type: tm+mt
+workflow-type: ht
 source-wordcount: '431'
 ht-degree: 100%
 
@@ -51,7 +50,7 @@ menaçants, injurieux ou nuisibles.
 
 ## Portée
 
-Ce code de conduite s’applique à la fois à l’&#39;espace du projet et
+Ce code de conduite s’applique à la fois à l’espace du projet et
 aux environnements publics lorsqu’une personne représente le projet ou sa communauté. Parmi les exemples de représentation d’un projet ou d’une communauté, citons l’utilisation d’une adresse électronique officielle de projet, la publication par le biais d’un compte de réseau social officiel ou l’agissement en tant que représentant désigné à l’occasion d’un événement en ligne ou hors ligne. La représentation d’un projet peut être définie plus précisément et clarifiée par les responsables du projet.
 
 ## Application
@@ -59,7 +58,7 @@ aux environnements publics lorsqu’une personne représente le projet ou sa com
 Les cas de comportements abusifs, harcelants ou tout autre comportement inacceptable peuvent être signalés en contactant l’équipe du projet à l’adresse Grp-opensourceoffice@adobe.com. Toutes
 les plaintes sont examinées et analysées ; elles se traduiront par une réponse jugée nécessaire et adaptée aux circonstances. L’équipe du projet est
 tenue de maintenir la confidentialité en ce qui concerne le déclarant d’un incident.
-Des informations supplémentaires sur les stratégies d’application spécifiques peuvent être publiées séparément.
+Des informations supplémentaires sur les politiques d’application spécifiques peuvent être publiées séparément.
 
 Les responsables de projet qui ne suivent pas ou n’appliquent pas le code de conduite de bonne
 foi s’exposent temporairement ou de façon permanente à des répercussions définies par d’autres membres de la direction du projet.
