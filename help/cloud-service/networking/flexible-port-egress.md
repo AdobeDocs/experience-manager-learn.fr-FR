@@ -222,7 +222,7 @@ Les connexions à des services externes sont ensuite appelées par l’interméd
 <table><tr>
    <td>
       <a  href="./examples/sql-datasourcepool.md"><img alt="Connexion SQL à l’aide de JDBC DataSourcePool" src="./assets/code-examples__sql-osgi.png"/></a>
-      <div><strong><a href="./examples/sql-datasourcepool.md">Connexion SQL avec le pool de source de données JDBC</a></strong></div>
+      <div><strong><a href="./examples/sql-datasourcepool.md">Connexion SQL à l’aide de JDBC DataSourcePool</a></strong></div>
       <p>
             Exemple de code Java™ se connectant à des bases de données SQL externes en configurant le pool de la source de données JDBC d’AEM.
       </p>
