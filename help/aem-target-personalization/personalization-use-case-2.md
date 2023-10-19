@@ -32,7 +32,7 @@ Le site WKND a repensé sa page d’accueil et souhaite rediriger les visiteurs 
 Pour cet exercice, les utilisateurs et utilisatrices suivants doivent être impliqués et effectuer certaines tâches nécessitant un accès administratif.
 
 * **Producteur ou productrice de contenu/créateur ou créatrice de contenu** (Adobe Experience Manager)
-* **Personne spécialiste marketing** (Adobe Target/équipe d’optimisation)
+* **Marketeur ou marketeuse** (Adobe Target/équipe d’optimisation)
 
 ### Page d’accueil du site WKND
 
@@ -44,7 +44,7 @@ Pour cet exercice, les utilisateurs et utilisatrices suivants doivent être impl
    * [Instances de création et de publication AEM](./implementation.md#getting-aem) s’exécutant sur localhost 4502 et 4503, respectivement.
    * [AEM intégré à Adobe Target à l’aide d’Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
-   * Accéder à vos organisations Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
+   * Accéder à la solution Adobe Experience Cloud de votre organisation - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud est fourni avec les solutions suivantes
       * [Adobe Target](https://experiencecloud.adobe.com)
 
