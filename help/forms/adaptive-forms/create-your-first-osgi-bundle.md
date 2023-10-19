@@ -70,8 +70,8 @@ Installez la dernière version d’[Eclipse](https://www.eclipse.org/downloads/)
 Archetype est une boîte à outils permettant de créer des modèles de projet Maven. Un archétype est défini comme un modèle ou un motif d’origine à partir duquel tous les autres éléments de même type sont créés. Le nom reflète bien notre objectif de fournir un système qui offre un moyen cohérent de générer des projets Maven. Archetype permet de créer des modèles de projet Maven à destination des utilisateurs et des utilisatrices, qui peuvent générer des versions paramétrées de ces modèles de projet.
 Pour créer votre premier projet Maven, procédez comme suit :
 
-* Créez un dossier appelé `aemformsbundles` dans votre lecteur C.
-* Ouvrez une invite de commande et accédez à `c:\aemformsbundles`.
+* Créez un dossier appelé `aemformsbundles` dans votre lecteur C.
+* Ouvrez une invite de commande, puis accédez à `c:\aemformsbundles`.
 * Exécutez la commande suivante dans l’invite de commande :
 * `mvn archetype:generate  -DarchetypeGroupId=com.adobe.granite.archetypes  -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=19`
 
@@ -112,7 +112,7 @@ Sélectionnez les `c:\aemformsbundles\learningaemform` en cliquant sur le bouton
 
 Cliquez sur **Terminer** pour lancer le processus d’import.
 
-Le projet est importé dans Eclipse et vous pouvez alors voir plusieurs dossiers `learningaemforms.xxxx`.
+Le projet est importé dans Eclipse et vous pouvez voir plusieurs dossiers `learningaemforms.xxxx`.
 
 Développez `src/main/java` sous le dossier `learningaemforms.core`. Il s’agit du dossier dans lequel vous écrivez la plupart de votre code.
 
