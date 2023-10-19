@@ -33,5 +33,5 @@ Cette vidéo offre un aperçu des fonctionnalités de création de composants de
 
 ## Ressources supplémentaires{#additional-resources}
 
-* [Téléchargements des versions d’Asset Share Commons](https://github.com/adobe/asset-share-commons/releases)
-* [Téléchargements des versions d’ACS AEM Commons 3.11.0 et ultérieure](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)
+* [Téléchargements de versions d’Asset Share Commons](https://github.com/adobe/asset-share-commons/releases)
+* [Téléchargements des versions d’AEM Commons 3.11.0 et ultérieures d’ACS](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)
