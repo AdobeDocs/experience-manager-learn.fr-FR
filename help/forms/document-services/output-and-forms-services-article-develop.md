@@ -54,7 +54,7 @@ La ligne 6 exporte les données XML xmlData du fichier PDF.
 **Après avoir installé le package, vous devrez placer sur la liste autorisée les URL suivantes dans le filtre Adobe CSRF Granite.**
 
 1. Suivez les étapes mentionnées ci-dessous pour placer sur la liste autorisée les chemins mentionnés ci-dessus.
-1. [Se connecter à configMgr](http://localhost:4502/system/console/configMgr)
+1. [Se connecter à configMgr](http://localhost:4502/system/console/configMgr).
 1. Recherchez un filtre CSRF Adobe Granite.
 1. Ajoutez les 3 chemins suivants dans les sections exclues et enregistrez.
 1. /content/AemFormsSamples/mergedata
