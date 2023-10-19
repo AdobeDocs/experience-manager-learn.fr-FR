@@ -80,7 +80,7 @@ Il existe deux options pour exposer le fragment de contenu au format JSON afin 
 
 * [Créer des fragments de contenu](content-fragments-feature-video-use.md)
 * [Composants principaux de la gestion de contenu web d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
-* [Composant de fragment de contenu principal de gestion de contenu web d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr)
+* [Composant principal des fragments de contenu AEM WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr)
 
 Pour télécharger et installer le package ci-dessous sur une instance AEM 6.4 ou ultérieure pour l’état final de la série vidéo :\
 **[aem_demo_fluid-experiencescontent-fragments-100.zip](assets/aem_demo_fluid-experiencescontent-fragments-100.zip)**
