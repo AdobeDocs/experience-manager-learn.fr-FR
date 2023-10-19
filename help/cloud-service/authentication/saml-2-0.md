@@ -225,9 +225,9 @@ La signature de la requête AuthnRequest et le chiffrement de l’assertion SAML
 1. Le certificat nouvellement ajouté s’affiche au-dessus de la section __Ajouter un certificat à partir d’un fichier CRT__.
    + Prenez note de l’__alias__, car il est utilisé dans la [Configuration OSGi du gestionnaire d’authentification SAML 2.0](#saml-20-authentication-handler-osgi-configuration).
 1. Sélectionnez __Enregistrer et fermer__.
-1. Créer un package contenant l’utilisateur ou l’utilisatrice de __authentication-service__.
+1. Créez un package contenant l’utilisateur ou l’utilisatrice de l’__authentication-service__ mis à jour.
 
-   _Utilisez la solution temporaire suivante à l’aide de packages :_
+   _Utilisez la solution de contournement temporaire suivante à l’aide de packages :_
 
    1. Accédez à __Outils > Déploiement > Packages__.
    1. Créez un package.
@@ -235,9 +235,9 @@ La signature de la requête AuthnRequest et le chiffrement de l’assertion SAML
       + Version : `1.0.0`
       + Groupe : `com.your.company`
    1. Modifiez le nouveau package __KeyStore du service d’authentification__.
-   1. Sélectionnez l’onglet __Filtres__ et ajoutez un filtre pour le chemin d’accès racine `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
-      + Le `<AUTHENTICATION SERVICE UUID>` est accessible en accédant à __Outils > Sécurité > Utilisateurs et utilisatrices__ et en sélectionnant l’utilisateur ou l’utilisatrice de __authentication-service__. L’UUID est la dernière partie de l’URL.
-   1. Sélectionnez __Terminer__, puis __Enregistrer__.
+   1. Sélectionnez l’onglet __Filtres__ et ajoutez un filtre pour le chemin racine `/home/users/system/cq:services/internal/security/<AUTHENTICATION SERVICE UUID>/keystore`.
+      + L’`<AUTHENTICATION SERVICE UUID>` est accessible en accédant à __Outils > Sécurité > Utilisateurs et utilisatrices__ et en sélectionnant l’utilisateur ou l’utilisatrice d’__authentication-service__. L’UUID est la dernière partie de l’URL.
+   1. Sélectionnez __Terminé__, puis __Enregistrer__.
    1. Sélectionnez le bouton __Créer__ pour le package __KeyStore du service d’authentification__.
    1. Une fois créé, sélectionnez __Plus__ > __Répliquer__ pour activer le KeyStore du service d’authentification dans l’instance de publication AEM.
 
