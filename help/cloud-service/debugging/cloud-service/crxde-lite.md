@@ -69,7 +69,7 @@ Pour accéder à la console de test du contrôle d’accès dans CRXDE Lite, ac
 Les résultats s’affichent ci-dessous :
 
 + __Chemin__ répète le chemin qui a été évalué.
-+ __Entité principale__ réitère l’utilisateur ou l’utilisatrice ou le groupe pour lequel ou laquelle le chemin a été évalué.
++ __Entité principale__ réitère l’utilisateur ou l’utilisatrice ou le groupe pour lequel le chemin a été évalué.
 + __Entités principales__ répertorie toutes les entités principales dont fait partie l’entité principale sélectionnée.
    + Cela s’avère utile pour comprendre les appartenances de groupe transitoires qui peuvent fournir des autorisations via l’héritage.
 + __Privilèges au chemin__ répertorie toutes les autorisations JCR dont dispose l’entité principale sélectionnée sur le chemin évalué.
