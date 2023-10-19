@@ -56,6 +56,6 @@ Pour que les ressources fonctionnent sur votre système, procédez comme suit :
 
 * [Téléchargez et importez les ressources dans AEM à l’aide du gestionnaire de packages.](assets/xmlandstringvariable.zip)
 * [Explorez le modèle de workflow](http://localhost:4502/editor.html/conf/global/settings/workflow/models/vacationrequest.html) pour comprendre les variables utilisées dans le workflow.
-* [Configurez le service de messagerie e-mail](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=fr).
+* [Configurer le service de messagerie](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=fr)
 * [Ouvrez le formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/applicationfortimeoff/jcr:content?wcmmode=disabled).
 * Renseignez les détails et envoyez le formulaire.
