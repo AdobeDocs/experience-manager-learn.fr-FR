@@ -172,7 +172,7 @@ La même règle s’applique lorsque l’URL contient un suffixe. Le suffixe doi
 
 **Exemples**
 
-`http://domain.com/home.html/path/suffix.html` peut être **mis en cache**.
+`http://domain.com/home.html/path/suffix.html` peut être **mise en cache**.
 
 `http://domain.com/home.html/path/suffix` **ne peut pas être mis en cache**.
 
