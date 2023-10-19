@@ -11,7 +11,7 @@ last-substantial-update: 2023-05-12T00:00:00Z
 jira: KT-13240
 exl-id: 1862d95e-5a39-4d37-8425-fb5eab2b8bd7
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '52'
 ht-degree: 100%
 
