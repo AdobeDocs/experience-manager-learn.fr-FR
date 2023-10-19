@@ -33,5 +33,5 @@ Adobe Experience Manager réinvente le workflow de personnalisation entre AEM 
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Documentation sur les fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=fr)
+* [Documentation relative aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html?lang=fr)
 * [Utiliser des fragments d’expérience](/help/sites/experience-fragments/experience-fragments-feature-video-use.md)
