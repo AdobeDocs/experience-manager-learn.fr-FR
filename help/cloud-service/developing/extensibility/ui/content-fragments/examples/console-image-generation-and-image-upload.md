@@ -60,7 +60,7 @@ Cet exemple s’étend jusqu’au point d’extension `actionBar` pour ajouter u
 L’exemple utilise un projet Adobe Developer Console existant, ainsi que les options suivantes lors de l’initialisation de l’application de créateur d’applications via `aio app init`.
 
 + Quels modèles voulez-vous rechercher ? : `All Extension Points`
-+ Sélectionner le ou les modèles à installer : ` @adobe/aem-cf-admin-ui-ext-tpl`
++ Sélectionnez le ou les modèles à installer :` @adobe/aem-cf-admin-ui-ext-tpl`
 + Comment souhaitez-vous nommer votre extension ? : `Image generation`
 + Fournir une brève description de votre extension : `An example action bar extension that generates an image using OpenAI and uploads it to AEM DAM.`
 + Avec quelle version souhaitez-vous commencer ? : `0.0.1`
@@ -122,11 +122,11 @@ L’application d’extension de créateur d’applications générée est mise 
 
 ### Itinéraires de l’application{#app-routes}
 
-`src/aem-cf-console-admin-1/web-src/src/components/App.js` contient le [routeur React](https://reactrouter.com/en/main).
+`src/aem-cf-console-admin-1/web-src/src/components/App.js` contient le [Routeur React](https://reactrouter.com/en/main).
 
 Il existe deux ensembles logiques d’itinéraires :
 
-1. Le premier itinéraire mappe les requêtes à la variable `index.html`, qui appelle le composant React responsable de l’[enregistrement d’extension](#extension-registration).
+1. Le premier itinéraire mappe les requêtes à `index.html`, qui appelle le composant React responsable de l’[enregistrement d’extension](#extension-registration).
 
    ```javascript
    <Route index element={<ExtensionRegistration />} />
@@ -145,11 +145,11 @@ Il existe deux ensembles logiques d’itinéraires :
 
 ### Enregistrement d’une extension
 
-`ExtensionRegistration.js`, mappé vers l’itinéraire `index.html`, est le point d’entrée de l’extension AEM et définit :
+`ExtensionRegistration.js`, mappé sur l’itinéraire `index.html`, est le point d’entrée de l’extension AEM et définit les éléments suivants :
 
-1. L’emplacement du bouton d’extension apparaît dans l’expérience de création AEM (`actionBar` ou `headerMenu`)
-1. La définition du bouton d’extension dans la fonction `getButton()`
-1. Le gestionnaire de clics du bouton, dans la fonction `onClick()`
+1. L’emplacement du bouton d’extension apparaît dans l’expérience de création AEM (`actionBar` ou `headerMenu`).
+1. Définition du bouton d’extension dans la fonction `getButton()`
+1. Gestionnaire de clics du bouton, dans la fonction `onClick()`
 
 + `src/aem-cf-console-admin-1/web-src/src/components/ExtensionRegistration.js`
 
