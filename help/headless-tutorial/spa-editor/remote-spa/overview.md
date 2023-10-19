@@ -12,7 +12,7 @@ exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
 source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Le tutoriel est conçu pour fonctionner avec **AEM as a Cloud Service** et e
 Ce tutoriel nécessite les éléments suivants :
 
 + [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=fr)
-+ [Node.js v18](https://nodejs.org/fr/)
++ [Node.js v18](https://nodejs.org/fr/)
 + [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 + [Maven 3.6 et ultérieure](https://maven.apache.org/)
 + [Git.](https://git-scm.com/downloads)

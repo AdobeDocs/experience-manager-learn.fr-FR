@@ -1,5 +1,5 @@
 ---
-title: Création de versions de page pour AEM pages du site
+title: Créer des versions de page pour des pages de site AEM
 description: La vidéo suivante explique comment créer une version de page, prévisualiser, restaurer une version de page et comparer la version actuelle de la page à une version enregistrée.
 topics: authoring
 audience: author, marketer
@@ -16,19 +16,19 @@ exl-id: cc659581-031d-4f2a-90c1-cf721e481689
 source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
-# Création de versions de page {#creating-page-versions-aem-sites}
+# Créer des versions de page {#creating-page-versions-aem-sites}
 
 {{edge-delivery-services-and-page-editor}}
 
-Le contrôle de version des pages permet aux auteurs de contenu de suivre les modifications associées à une page en créant une version de page. Il offre également la possibilité de prévisualiser une version, de restaurer une version et de comparer une version à la version actuelle d’une page.
+Le contrôle de version des pages permet aux auteurs et autrices de contenu de suivre les modifications associées à une page en créant une version de page. Il offre également la possibilité de prévisualiser, de restaurer et de comparer une version à la version actuelle d’une page.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32151?quality=12&learn=on)
 
-Le contrôle de version crée un instantané d’une page à un moment donné. Avec le contrôle de version, vous pouvez effectuer les opérations suivantes :
-* Création d’une version pour une page
-* Restaurez une page à une version précédente afin par exemple d’annuler une modification que vous avez apportée à une page
-* Comparez la version actuelle d’une page à une version précédente avec les différences mises en surbrillance dans le texte et les images
+Le contrôle de version permet de créer un instantané d’une page à un moment donné. Avec le contrôle de version, vous pouvez effectuer les opérations suivantes :
+* Créer une version d’une page
+* Restauration d’une page à une version précédente afin par exemple d’annuler une modification que vous avez apportée à une page.
+* Comparaison de la version actuelle d’une page à une version précédente avec les différences mises en surbrillance dans le texte et les images.

@@ -14,19 +14,19 @@ exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '427'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Colonnes de grille personnalisées
 
-![Colonne de grille personnalisée de la console de fragments de contenu](./assets/custom-grid-columns/hero.png){align="center"}
+![Colonne de grille personnalisée de la console de fragments de contenu.](./assets/custom-grid-columns/hero.png){align="center"}
 
-Vous pouvez ajouter des colonnes de grille personnalisées à la console Fragment de contenu à l’aide de la méthode  `contentFragmentGrid` point d’extension. Cet exemple montre comment ajouter, dans un format lisible, une colonne personnalisée qui affiche la page Fragments de contenu en fonction de sa date de dernière modification.
+Vous pouvez ajouter des colonnes de grille personnalisées à la console de fragments de contenu à l’aide du point d’extension `contentFragmentGrid`. Cet exemple montre comment ajouter, dans un format lisible, une colonne personnalisée qui affiche l’âge des fragments de contenu en fonction de sa date de dernière modification.
 
 ## Point d’extension
 
-Cet exemple étend au point d’extension `contentFragmentGrid` pour ajouter une colonne personnalisée à la console de fragments de contenu.
+Cet exemple s’étend jusqu’au point d’extension `contentFragmentGrid` pour ajouter une colonne personnalisée à la console de fragments de contenu.
 
 | Interface utilisateur AEM étendue | Point d’extension |
 | ------------------------ | --------------------- | 
@@ -34,19 +34,19 @@ Cet exemple étend au point d’extension `contentFragmentGrid` pour ajouter une
 
 ## Exemple d’extension
 
-L&#39;exemple suivant crée une colonne personnalisée, `Age` qui affiche l’âge du fragment de contenu dans un format lisible par l’utilisateur. La page est calculée à partir de la date de dernière modification du fragment de contenu.
+L’exemple suivant crée une colonne personnalisée `Age` qui affiche l’âge du fragment de contenu dans un format lisible. L’âge est calculé à partir de la date de dernière modification du fragment de contenu.
 
-Le code indique comment obtenir les métadonnées du fragment de contenu dans le fichier d’enregistrement de l’extension et comment exporter le contenu JSON du fragment de contenu.
+Le code indique comment obtenir les métadonnées du fragment de contenu dans le fichier d’enregistrement de l’extension et comment transformer et exporter le contenu JSON du fragment de contenu.
 
-Cet exemple utilise la méthode [Luxon](https://moment.github.io/luxon/) pour calculer l’âge du fragment de contenu, installé via `npm i luxon`.
+Cet exemple utilise la bibliothèque [Luxon](https://moment.github.io/luxon/) pour calculer l’âge du fragment de contenu, installée via `npm i luxon`.
 
 ### Enregistrement d’une extension
 
-`ExtensionRegistration.js`, mappé à l’itinéraire index.html, est le point d’entrée de l’extension AEM et définit :
+`ExtensionRegistration.js`, mappé à l’itinéraire index.html, est le point d’entrée de l’extension AEM et définit les éléments suivants :
 
-+ L’emplacement de l’extension s’injecte (`contentFragmentGrid`) dans l’expérience de création AEM
-+ La définition de la colonne personnalisée, dans la variable `getColumns()` function
-+ Valeurs de chaque colonne personnalisée, par ligne
++ L’emplacement de l’extension (`contentFragmentGrid`) s’insère dans l’expérience de création AEM.
++ La définition de la colonne personnalisée, dans la fonction `getColumns()`.
++ Les valeurs de chaque colonne personnalisée, par ligne.
 
 ```javascript
 import { generatePath } from "react-router";
@@ -145,9 +145,9 @@ async function computeAgeColumnValue(fragment, context) {
 export default ExtensionRegistration;
 ```
 
-#### Données de fragment de contenu
+#### Données du fragment de contenu
 
-La variable `render(..)` dans `getColumns()` est transmis par un tableau de fragments. Chaque objet du tableau représente une ligne dans la grille et contient les métadonnées suivantes sur le fragment de contenu. Ces métadonnées peuvent être utilisées pour les colonnes personnalisées populaires dans la grille.
+La méthode `render(..)` dans `getColumns()` est transmise par un tableau de fragments. Chaque objet du tableau représente une ligne dans la grille et contient les métadonnées suivantes sur le fragment de contenu. Ces métadonnées peuvent être utilisées pour renseigner les colonnes personnalisées dans la grille.
 
 
 ```javascript
@@ -159,7 +159,7 @@ render: async function (fragments) {
 }
 ```
 
-Exemple de fichier JSON de fragment de contenu disponible en tant qu’élément de la variable `fragments` du paramètre `render(..)` .
+Exemple de fichier JSON de fragment de contenu disponible en tant qu’élément du paramètre `fragments` dans la méthode `render(..)`.
 
 ```json
 {
@@ -202,13 +202,13 @@ Exemple de fichier JSON de fragment de contenu disponible en tant qu’élément
 }
 ```
 
-Si d’autres données sont requises pour remplir la colonne personnalisée, des requêtes HTTP peuvent être envoyées à l’auteur AEM pour récupérer les données.
+Si d’autres données sont requises pour remplir la colonne personnalisée, des requêtes HTTP peuvent être envoyées à l’instance de création AEM pour récupérer les données.
 
 >[!IMPORTANT]
 >
-> Assurez-vous que l’instance d’auteur AEM est configurée pour autoriser [demandes cross-origin](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html) à partir des origines de l’application AppBuilder en cours d’exécution. Les origines autorisées incluent `https://localhost:9080`, l’origine de l’évaluation AppBuilder et l’origine de production AppBuilder.
+> Assurez-vous que l’instance de creation AEM est configurée pour autoriser les [demandes entre origines multiples](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=fr) à partir des origines de l’application AppBuilder en cours d’exécution. Les origines autorisées incluent `https://localhost:9080`, l’origine de l’évaluation AppBuilder et l’origine de production AppBuilder.
 >
-> L’extension peut également appeler une [Action AppBuilder](../../runtime-action.md) qui émet la requête à AEM Auteur pour le compte de l’extension.
+> L’extension peut également appeler une [action AppBuilder](../../runtime-action.md) personnalisée qui envoie la requête à l’instance de création AEM au nom de l’extension.
 
 
 ```javascript
@@ -225,9 +225,9 @@ const response = await fetch(`${context.aemHost}${fragment.id.slice('/content/da
 
 #### Définition des colonnes
 
-Le résultat de la méthode render est un objet JavaScript dont les clés sont le chemin d’accès du fragment de contenu (ou le `fragment.id`) et que la valeur s’affiche dans la colonne .
+Le résultat de la méthode de rendu est un objet JavaScript dont les clés sont le chemin d’accès du fragment de contenu (ou `fragment.id`) et la valeur s’affiche dans la colonne.
 
-Par exemple, les résultats de cette extension pour la variable `age` sont les suivantes :
+Par exemple, les résultats de cette extension pour la colonne `age` sont les suivants :
 
 ```json
 {

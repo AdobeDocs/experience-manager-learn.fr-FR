@@ -1,6 +1,6 @@
 ---
-title: Sélectionner un formulaire dans une liste de formulaires disponibles
-description: Utilisation de l’API listforms pour remplir la liste déroulante
+title: Sélectionner un formulaire dans une liste des formulaires disponibles
+description: Utiliser l’API listforms pour remplir la liste déroulante
 feature: Adaptive Forms
 version: 6.5
 kt: 13346
@@ -11,19 +11,19 @@ exl-id: 49b6a172-8c96-4fc6-8d31-c2109f65faac
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 # Sélectionner un formulaire à remplir dans une liste déroulante
 
-Les listes déroulantes offrent un moyen compact et organisé de présenter une liste d’options aux utilisateurs. Les éléments de la liste déroulante seront renseignés avec les résultats de [API listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms)
+Les listes déroulantes peuvent être utilisées pour présenter différentes options aux utilisateurs et utilisatrices, dans un format compact et concis. Les éléments de la liste déroulante correspondent aux résultats de l’[API listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms).
 
-![carte-view](./assets/forms-drop-down.png)
+![card-view](./assets/forms-drop-down.png)
 
 ## Liste déroulante
 
-Le code suivant a été utilisé pour remplir la liste déroulante avec les résultats de l’appel de l’API listforms. Selon la sélection de l’utilisateur, le formulaire adaptatif s’affiche pour que l’utilisateur puisse le remplir et l’envoyer. [Composants de l’interface utilisateur matérielle](https://mui.com/) ont été utilisés lors de la création de cette interface ;
+Le code suivant permet de renseigner la liste déroulante avec les résultats de l’appel d’API listforms. Suivant la sélection de l’utilisateur ou de l’utilisatrice, le formulaire adaptatif pertinent lui est présenté et peut être complété et envoyé. Des [Composants Material UI](https://mui.com/) ont été utilisés pour créer cette interface.
 
 ```javascript
 import * as React from 'react';
@@ -123,12 +123,12 @@ const getAFForms =async()=>
 }
 ```
 
-Les deux appels API suivants ont été utilisés pour créer cette interface utilisateur.
+Les deux appels API suivants permettent de créer cette interface utilisateur.
 
-* [ListForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms). L’appel de récupération des formulaires n’est effectué qu’une seule fois lorsque le composant est rendu. Les résultats de l’appel API sont stockés dans la variable afForms .
+* [ListForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms). L’appel de récupération des formulaires n’est effectué qu’une seule fois, au moment du rendu du composant. Les résultats de l’appel API sont stockés dans la variable afForms.
 Dans le code ci-dessus, nous itérons à travers afForms à l’aide de la fonction map et pour chaque élément du tableau afForms, un composant MenuItem est créé et ajouté au composant Select.
 
-* Formulaire de récupération : un appel get est effectué au [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), où l’identifiant est l’identifiant du formulaire adaptatif sélectionné par l’utilisateur dans la liste déroulante. Le résultat de cet appel de GET est stocké dans selectedForm.
+* Récupérer le formulaire : un appel GET est effectué à [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition), dans lequel l’identifiant correspond à l’identifiant du formulaire adaptatif sélectionné par l’utilisateur ou l’utilisatrice dans la liste déroulante. Le résultat de cet appel GET est stocké dans selectedForm.
 
 ```
 const resp = await fetch(`/adobe/forms/af/${formID}`);
@@ -137,7 +137,7 @@ console.log(formJSON.afModelDefinition);
 setForm(formJSON.afModelDefinition);
 ```
 
-* Afficher le formulaire sélectionné. Le code suivant a été utilisé pour afficher le formulaire sélectionné. L’élément AdaptiveForm est fourni dans le package npm aemforms/af-response-renderer et il attend les mappages et le formJson comme ses propriétés.
+* Affichez le formulaire sélectionné. Le code suivant permet d’afficher le formulaire sélectionné. L’élément AdaptiveForm est fourni dans le package npm aemforms/af-response-renderer et attend les mappages et le formJson comme propriétés.
 
 ```
 <div><AdaptiveForm mappings={extendMappings} formJson={selectedForm}/></div>
@@ -145,4 +145,4 @@ setForm(formJSON.afModelDefinition);
 
 ## Étapes suivantes
 
-[Afficher les formulaires en mise en page Carte](./display-forms-card-view.md)
+[Afficher les formulaires dans la disposition Carte](./display-forms-card-view.md)

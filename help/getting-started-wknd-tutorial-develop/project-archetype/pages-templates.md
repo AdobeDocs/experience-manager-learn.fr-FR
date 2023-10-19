@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '3040'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Vous pouvez toujours afficher le code terminé sur [GitHub](https://github.com/a
 1. Découvrez les détails des modèles modifiables et comment les politiques peuvent être utilisées pour appliquer un contrôle granulaire du contenu de la page.
 1. Apprenez comment les modèles et les pages sont liés.
 
-## Ce que vous allez construire {#what-build}
+## Ce que vous allez créer {#what-build}
 
 Dans cette partie du tutoriel, vous créez un modèle de page d’article qui peut être utilisé pour créer des pages d’article et qui s’aligne sur une structure commune. Le modèle de page d’article est basé sur des conceptions et un kit d’interface utilisateur produits dans Adobe XD. Ce chapitre se concentre uniquement sur la création de la structure, ou squelette, du modèle. Aucun style n’est implémenté, mais le modèle et les pages sont fonctionnels.
 

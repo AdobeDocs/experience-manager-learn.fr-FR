@@ -9,12 +9,12 @@ level: Beginner
 kt: 10797
 thumbnail: kt-10797.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM sans affichage as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 4f090809-753e-465c-9970-48cf0d1e4790
 source-git-commit: 701d6d46d716faf51ba5ce3ed31de68928963e54
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -30,7 +30,7 @@ Afficher le [code source sur GitHub](https://github.com/adobe/aem-guides-wknd-gr
 
 Les outils suivants doivent être installés localement :
 
-+ [Node.js v18](https://nodejs.org/fr/)
++ [Node.js v18](https://nodejs.org/fr/)
 + [Git](https://git-scm.com/)
 
 ## Configuration requise d’AEM

@@ -17,7 +17,7 @@ exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 source-git-commit: 65d8fd58f421a186e3624918c70cc5d79ec23700
 workflow-type: tm+mt
 source-wordcount: '1967'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ Contrairement aux jetons d’accès au développement local, les informations d�
 Les comptes techniques sont créés une seule fois, mais les clés privées utilisées pour gérer les informations d’identification de service associées au compte technique peuvent être gérées au fil du temps. Par exemple, les nouvelles informations d’identification de service ou de clé privée doivent être générées avant l’expiration de la clé privée actuelle, afin de permettre un accès ininterrompu à une personne utilisatrice des informations d’identification de service.
 
 1. Vérifiez votre connexion en tant que :
-   + __Administrateur système de l’organisation Adobe IMS__
+   + __Personne de l’administration système de l’organisation Adobe IMS__
    + membre du profil de produit IMS de l’__administration AEM__ sur l’__instance de création AEM__.
 1. Connectez-vous à [Adobe Cloud Manager](https://my.cloudmanager.adobe.com).
 1. Ouvrez le programme contenant l’environnement AEM as a Cloud Service pour intégrer la configuration des informations d’identification de service.
@@ -224,7 +224,7 @@ Une fois que le profil d’utilisation de compte technique AEM existe dans AEM (
 1. Accédez à __Outils__ > __Sécurité__ > __Utilisateurs__.
 1. Localisez la personne utilisatrice d’AEM à l’aide de l’__identifiant de connexion__ identifié à l’étape 1 et ouvrez ses __Propriétés__.
 1. Accédez à l’onglet __Groupes__ et ajoutez le groupe d’__utilisation de gestion des ressources numériques (DAM)__ (dont les membres bénéficient de l’accès en écriture aux ressources).
-   + [Consultez la liste des groupes d’utilisateurs AEM fournis](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#built-in-users-and-groups) pour ajouter l’utilisateur du service à pour obtenir les autorisations optimales. Si aucun groupe d’utilisateurs AEM fourni n’est suffisant, créez le vôtre et ajoutez les autorisations appropriées.
+   + [Consultez la liste des groupes d’utilisateurs AEM fournis](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr#built-in-users-and-groups) pour ajouter l’utilisateur du service à pour obtenir les autorisations optimales. Si aucun groupe d’utilisateurs AEM fourni n’est suffisant, créez le vôtre et ajoutez les autorisations appropriées.
 1. Appuyez sur __Enregistrer et fermer__.
 
 Maintenant que le compte technique dispose des autorisations d’écriture sur les ressources dans AEM, réexécutez l’application :

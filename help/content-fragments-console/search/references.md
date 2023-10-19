@@ -1,6 +1,6 @@
 ---
 title: Références - Fragments de contenu
-description: Découvrez comment AEM console de fragments de contenu et l’éditeur facilitent la gestion du contenu référencé.
+description: Découvrez comment l’éditeur et la console de fragments de contenu d’AEM facilitent la gestion du contenu référencé.
 version: Cloud Service
 feature: Content Fragments
 topic: Content Management
@@ -14,12 +14,12 @@ exl-id: 5af2456b-5255-40b3-a6a5-b953c8d76fc9
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '36'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Références
 
-Découvrez comment la console de fragments de contenu AEM l’éditeur facilite la compréhension et la gestion du contenu référencé.
+Découvrez comment l’éditeur et la console de fragments de contenu d’AEM facilitent la compréhension et la gestion du contenu référencé.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420950/?learn=on)

@@ -1,6 +1,6 @@
 ---
-title: Créer un formulaire web à présenter à l’utilisateur pour signature
-description: Créez AEM lot pour exposer les méthodes de signes Acrobat nécessaires au cas d’utilisation.
+title: Créer un formulaire web à présenter à l’utilisateur ou l’utilisatrice pour signature
+description: Créez un lot AEM pour exposer les méthodes Acrobat Sign nécessaires au cas d’utilisation.
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -12,21 +12,21 @@ exl-id: 15364571-070c-4497-a256-f0483d6f9585
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Création d’un wrapper pour l’API REST Acrobat Sign
+# Créer un Wrapper pour l’API REST d’Acrobat Sign
 
-Un lot d’AEM personnalisé a été développé pour créer et renvoyer le formulaire web à l’utilisateur final.
+Un lot AEM personnalisé a été développé pour créer et renvoyer le formulaire web à la personne finale.
 
-* [Créer un document transitoire](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). Le document transféré via cet appel est considéré comme transitoire, car il n’est disponible que pendant 7 jours après le chargement. L’ID de document transitoire renvoyé peut être utilisé dans les appels API où le fichier chargé doit être référencé. La requête de document transitoire est une requête en plusieurs parties composée de trois parties : nom du fichier, type MIME et flux de fichiers. Vous ne pouvez charger qu’un seul fichier à la fois dans cette requête.
-* [Créer un formulaire web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget).Il s’agit d’un point de terminaison principal utilisé pour créer un formulaire web. Le formulaire web a été créé à l’état ACTIF pour héberger immédiatement le formulaire web.
-* [Récupération du formulaire web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets).Récupérez le web de l’utilisateur. Ce formulaire web est ensuite présenté à l’application qui appelle pour signer le document.
+* [Créez un document transitoire](https://secure.na1.echosign.com/public/docs/restapi/v6#!/transientDocuments/createTransientDocument). Le document chargé via cet appel est considéré comme transitoire, car il n’est disponible que pendant 7 jours après le chargement. L’ID de document transitoire renvoyé peut être utilisé dans les appels d’API où le fichier chargé doit être référencé. La requête de document transitoire est une requête composée de trois parties : le nom du fichier, le type MIME et le flux de fichiers. Vous ne pouvez charger qu’un seul fichier à la fois dans cette requête.
+* [Créer un formulaire web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/createWidget). Il s’agit d’un point d’entrée principal utilisé pour créer un formulaire web. Le formulaire web a été créé dans un état ACTIF pour héberger immédiatement le formulaire web.
+* [Récupérer le formulaire web](https://secure.na1.echosign.com/public/docs/restapi/v6#!/widgets/getWidgets). Récupérez le formulaire web de l’utilisateur ou l’utilisatrice. Ce formulaire web est ensuite présenté à l’application qui appelle pour signer le document.
 
-## Création d’une configuration OSGi Acrobat Sign
+## Créer une configuration OSGi Acrobat Sign
 
-L’API REST Acrobat Sign requiert la clé d’intégration et le courrier électronique associés à la clé d’intégration. Ces deux valeurs sont fournies sous la forme de propriétés de configuration OSGi, comme illustré ci-dessous.
+L’API REST d’Acrobat Sign requiert la clé d’intégration et l’adresse e-mail associée à la clé d’intégration. Ces deux valeurs sont fournies sous la forme de propriétés de configuration OSGi, comme illustré ci-dessous.
 
 ![sign-configuration](assets/sign-configuration.png)
 
@@ -80,7 +80,7 @@ public class AcrobatSignConfigurationService {
 }
 ```
 
-## Obtention de l’ID de document transitoire
+## Obtenir l’ID de document transitoire
 
 Le code suivant a été écrit pour créer un document transitoire.
 
@@ -110,7 +110,7 @@ public String getTransientDocumentID(Document documentForSigning) throws IOExcep
 }
 ```
 
-## Obtention de l’identifiant du widget
+## Obtenir l’identifiant du widget
 
 ```java
 public String getWidgetID(String transientDocumentID) {
@@ -198,4 +198,4 @@ public String getWidgetURL(String widgetId) throws ClientProtocolException, IOEx
 
 ## Étapes suivantes
 
-[Générer l’URL du widget Acrobat Sign](./create-servlet-to-expose-endpoint.md)
+[Générer l’URL du widget Acrobat Sign](./create-servlet-to-expose-endpoint.md)

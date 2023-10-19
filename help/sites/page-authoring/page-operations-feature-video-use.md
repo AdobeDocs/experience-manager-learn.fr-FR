@@ -1,6 +1,6 @@
 ---
-title: Opérations de base sur les pages dans AEM Sites
-description: La vidéo suivante explique comment effectuer des opérations de gestion de page de base pour une page Adobe Experience Manager Sites.
+title: Opérations de base sur les pages dans AEM Sites
+description: La vidéo suivante montre comment effectuer des opérations de gestion de base sur une page Adobe Experience Manager Sites.
 version: 6.4, 6.5
 topic: Content Management
 feature: Page Editor, Editable Templates
@@ -12,15 +12,15 @@ exl-id: d4f33657-d3b1-46d3-848c-8b73ce149797
 source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '69'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
-# Opérations de page de base {#basic-page-operations-aem-sites}
+# Opérations de base sur les pages {#basic-page-operations-aem-sites}
 
 {{edge-delivery-services-and-page-editor}}
 
-Découvrez comment effectuer des opérations de gestion de page de base pour une page Adobe Experience Manager Sites.
+Découvrez comment effectuer des opérations de gestion de base sur une page Adobe Experience Manager Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32147?quality=12&learn=on)
 

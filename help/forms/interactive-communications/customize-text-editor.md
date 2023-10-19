@@ -16,7 +16,7 @@ exl-id: e551ac8d-0bfc-4c94-b773-02ff9bba202e
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -24,23 +24,23 @@ ht-degree: 53%
 
 ## Présentation {#overview}
 
-Vous pouvez personnaliser l’éditeur de texte utilisé pour créer des fragments de document afin d’ajouter davantage de polices et de tailles de police. Ces polices comprennent l’anglais et le non-anglais (japonais, par exemple).
+Vous pouvez personnaliser l’éditeur de texte utilisé pour créer des fragments de document afin d’ajouter davantage de polices et de tailles de police. Ces polices comprennent des polices anglaises et non anglaises, comme les polices japonaises.
 
-Vous pouvez personnaliser pour modifier les éléments suivants dans les paramètres de police :
+Vous pouvez personnaliser pour modifier les paramètres de police suivants :
 
 * Famille et taille de police
 * Propriétés telles que la hauteur et l’interlettrage
 * Valeurs par défaut de la famille et de la taille de police, de la hauteur, de l’interlettrage et du format de date
 * Retraits de puces
 
-Pour ce faire, vous devez :
+Pour ce faire, vous devez :
 
 1. [Personnaliser des polices en modifiant le fichier tbxeditor-config.xml dans CRX](#customizefonts)
 1. [Ajouter des polices personnalisées sur l’ordinateur client](#addcustomfonts)
 
-## Personnaliser les polices en modifiant le fichier tbxeditor-config.xml dans CRX {#customizefonts}
+## Personnaliser des polices en modifiant le fichier tbxeditor-config.xml dans CRX {#customizefonts}
 
-Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, procédez comme suit :
+Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, procédez comme suit :
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
 1. Créez un dossier appelé config dans le dossier des applications dont le chemin ou la structure sont semblables au dossier de configuration (situé dans libs/fd/cm/config) en suivant les étapes ci-dessous :
@@ -65,10 +65,10 @@ Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, pro
 
    1. Cliquez sur **Enregistrer tout**.
 
-1. Créez une copie du fichier tbxeditor-config.xml dans le dossier de configuration que vous venez de créer, en procédant comme suit :
+1. Créez une copie du fichier tbxeditor-config.xml dans le dossier de configuration que vous venez de créer, en procédant comme suit :
 
    1. Cliquez avec le bouton droit sur le fichier tbxeditor-config.xml dans libs/fd/cm/config et sélectionnez **Copier**.
-   1. Cliquez avec le bouton droit sur le dossier suivant et sélectionnez **Coller :**
+   1. Cliquez avec le bouton droit sur le dossier suivant et sélectionnez **Coller**.
 
       `apps/fd/cm/config`
 
@@ -170,7 +170,7 @@ Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, pro
       * Valeurs par défaut de la famille et de la taille de police, de la hauteur, de l’interlettrage et du format de date
       * Retraits de puces
 
-      Par exemple, pour ajouter une police japonaise appelée Sazanami Mincho Medium, vous devez effectuer l’entrée suivante dans le fichier XML : `<font>Sazanami Mincho Medium</font>`. Cette police doit également être installée sur l’ordinateur client utilisé pour accéder à et travailler avec la personnalisation de la police. Pour plus d’informations, reportez-vous à la section [Ajouter des polices personnalisées sur l’ordinateur client](#addcustomfonts).
+      Par exemple, pour ajouter une police japonaise appelée Sazanami Mincho Medium, vous devez effectuer la saisie suivante dans le fichier XML : `<font>Sazanami Mincho Medium</font>`. Cette police doit également être installée sur l’ordinateur client utilisé pour accéder à et travailler avec la personnalisation de la police. Pour plus d’informations, reportez-vous à la section [Ajouter des polices personnalisées sur l’ordinateur client](#addcustomfonts).
 
       Vous pouvez également modifier les valeurs par défaut de divers aspects du texte et, en supprimant les entrées, supprimer les polices de l’éditeur de texte.
 

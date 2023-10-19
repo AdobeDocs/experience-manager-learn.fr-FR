@@ -1,6 +1,6 @@
 ---
 title: Protection CSRF
-description: Découvrez comment générer et ajouter AEM jetons CSRF aux demandes POST, PUT et Supprimer autorisées à AEM pour les utilisateurs authentifiés.
+description: Découvrez comment générer et ajouter des jetons CSRF AEM aux requêtes POST, PUT et DELETE autorisées à AEM pour les personnes authentifiées.
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -14,39 +14,39 @@ exl-id: 747322ed-f01a-48ba-a4a0-483b81f1e904
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '443'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Protection CSRF
 
-Découvrez comment générer et ajouter AEM jetons CSRF aux demandes POST, PUT et Supprimer autorisées à AEM pour les utilisateurs authentifiés.
+Découvrez comment générer et ajouter des jetons CSRF AEM aux requêtes POST, PUT et DELETE autorisées à AEM pour les personnes authentifiées.
 
-AEM nécessite l’envoi d’un jeton CSRF valide pour __authentifié__ __POST__, __PUT ou __DELETE__ Requêtes HTTP pour AEM les services Auteur et Publication.
+AEM nécessite l’envoi d’un jeton CSRF valide pour les requêtes HTTP __authentifiées__ __POST__, PUT ou __DELETE__ aux services de création et de publication AEM.
 
-Le jeton CSRF n’est pas requis pour __GET__ requêtes, ou __anonyme__ requêtes.
+Le jeton CSRF n’est pas requis pour les requêtes __GET__ ou __anonymes__.
 
-Si un jeton CSRF n’est pas envoyé avec une requête de POST, de PUT ou de DELETE, AEM renvoie une réponse 403 Forbidden et AEM consigne l’erreur suivante :
+Si un jeton CSRF n’est pas envoyé avec une requête POST, PUT ou DELETE, AEM renvoie une réponse 403 Forbidden (accès interdit) et AEM consigne l’erreur suivante :
 
 ```log
 [INFO][POST /path/to/aem/endpoint HTTP/1.1][com.adobe.granite.csrf.impl.CSRFFilter] isValidRequest: empty CSRF token - rejecting
 [INFO][POST /path/to/aem/endpoint HTTP/1.1][com.adobe.granite.csrf.impl.CSRFFilter] doFilter: the provided CSRF token is invalid
 ```
 
-Voir [documentation pour plus d’informations sur la protection AEM CSRF](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html).
+Consultez la [documentation pour plus d’informations sur la protection CSRF d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/csrf-protection.html?lang=fr).
 
 
 ## Bibliothèque cliente CSRF
 
-AEM fournit une bibliothèque cliente qui peut être utilisée pour générer et ajouter des requêtes XHR et de POST de formulaire de jetons CSRF, via l’application de correctifs des fonctions de prototypes principales. La fonctionnalité est fournie par la fonction `granite.csrf.standalone` catégorie de bibliothèque cliente.
+AEM fournit une bibliothèque cliente qui peut être utilisée pour générer et ajouter des requêtes XHR de jetons CSRF et POST de formulaire, en appliquant les fonctions de prototype principales. La fonctionnalité est fournie par la catégorie de bibliothèque cliente `granite.csrf.standalone`.
 
-Pour utiliser cette approche, ajoutez `granite.csrf.standalone` en tant que dépendance à la bibliothèque cliente qui se charge sur votre page. Par exemple, si vous utilisez la variable `wknd.site` catégorie de bibliothèque cliente, ajouter `granite.csrf.standalone` en tant que dépendance à la bibliothèque cliente qui se charge sur votre page.
+Pour utiliser cette approche, ajoutez `granite.csrf.standalone` en tant que dépendance à la bibliothèque cliente qui se charge sur votre page. Par exemple, si vous utilisez la catégorie de bibliothèque cliente `wknd.site`, ajoutez `granite.csrf.standalone` en tant que dépendance à la bibliothèque cliente qui se charge sur votre page.
 
-## Envoi de formulaire personnalisé avec protection CSRF
+## Envoyer un formulaire personnalisé avec protection CSRF
 
-Si l’utilisation de [`granite.csrf.standalone` bibliothèque cliente](#csrf-client-library) n’est pas compatible avec votre cas d’utilisation, vous pouvez ajouter manuellement un jeton CSRF à un envoi de formulaire. L’exemple suivant montre comment ajouter un jeton CSRF à un envoi de formulaire.
+Si l’utilisation de bibliothèque cliente [`granite.csrf.standalone`](#csrf-client-library) n’est pas compatible avec votre cas d’utilisation, vous pouvez ajouter manuellement un jeton CSRF à un envoi de formulaire. L’exemple suivant montre comment ajouter un jeton CSRF à un envoi de formulaire.
 
-Ce fragment de code montre comment, lors de l’envoi d’un formulaire, le jeton CSRF peut être récupéré à partir d’AEM et ajouté à une entrée de formulaire nommée `:cq_csrf_token`. Étant donné que le jeton CSRF a une courte durée de vie, il est préférable de récupérer et de définir le jeton CSRF juste avant l’envoi du formulaire, en assurant sa validité.
+Cet extrait de code montre comment, lors de l’envoi d’un formulaire, le jeton CSRF peut être récupéré à partir d’AEM et ajouté à une entrée de formulaire nommée `:cq_csrf_token`. Étant donné que le jeton CSRF a une courte durée de vie, il est préférable de récupérer et de définir le jeton CSRF juste avant l’envoi du formulaire, afin de s’assurer de sa validité.
 
 ```javascript
 // Attach submit handler event to form onSubmit
@@ -71,11 +71,11 @@ document.querySelector('form').addEventListener('submit', async (event) => {
 });
 ```
 
-## Récupération avec protection CSRF
+## Récupérer avec la protection CSRF
 
-Si l’utilisation de [`granite.csrf.standalone` bibliothèque cliente](#csrf-client-library) n’est pas compatible avec votre cas d’utilisation, vous pouvez ajouter manuellement un jeton CSRF à un XHR ou récupérer des requêtes. L’exemple suivant montre comment ajouter un jeton CSRF à un XHR réalisé avec récupération.
+Si l’utilisation de la bibliothèque cliente [`granite.csrf.standalone`](#csrf-client-library) n’est pas compatible avec votre cas d’utilisation, vous pouvez ajouter manuellement un jeton CSRF à des requêtes XHR ou de récupération. L’exemple suivant montre comment ajouter un jeton CSRF à une requête XHR réalisé avec récupération.
 
-Ce fragment de code explique comment récupérer un jeton CSRF d’AEM et l’ajouter à une requête de récupération. `CSRF-Token` En-tête de requête HTTP. Étant donné que le jeton CSRF a une courte durée de vie, il est préférable de récupérer et de définir le jeton CSRF immédiatement avant que la requête de récupération ne soit effectuée, ce qui garantit sa validité.
+Cet extrait de code explique comment récupérer un jeton CSRF à partir d’AEM et l’ajouter à l’en-tête d’une requête HTTP `CSRF-Token` d’une requête de récupération. Étant donné que le jeton CSRF a une courte durée de vie, il est préférable de récupérer et de définir le jeton CSRF immédiatement avant que la requête de récupération ne soit effectuée, afin de s’assurer de sa validité.
 
 ```javascript
 /**
@@ -101,7 +101,7 @@ await fetch('/path/to/aem/endpoint', {
 
 ## Configuration du Dispatcher
 
-Lors de l’utilisation de jetons CSRF sur AEM service de publication, la configuration de Dispatcher doit être mise à jour afin d’autoriser les requêtes de GET au point de terminaison de jeton CSRF. La configuration suivante permet d’envoyer des requêtes de GET au point de terminaison du jeton CSRF sur le service de publication AEM. Si cette configuration n’est pas ajoutée, le point de terminaison du jeton CSRF renvoie une réponse 404 Not Found.
+Lors de l’utilisation de jetons CSRF sur le service de publication AEM, la configuration de Dispatcher doit être mise à jour afin d’autoriser les requêtes GET au point d’entrée de jeton CSRF. La configuration suivante permet d’envoyer des requêtes GET au point d’entrée du jeton CSRF sur le service de publication AEM. Si cette configuration n’est pas ajoutée, le point d’entrée du jeton CSRF renvoie une réponse 404 Introuvable.
 
 * `dispatcher/src/conf.dispatcher.d/filters/filters.any`
 

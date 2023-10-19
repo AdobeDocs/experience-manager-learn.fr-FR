@@ -1,6 +1,6 @@
 ---
 title: Créer un servlet
-description: Créer un servlet pour gérer les demandes du POST pour enregistrer les données de formulaire
+description: Créer un servlet pour gérer les requêtes POST d’enregistrement des données de formulaire
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -13,15 +13,15 @@ exl-id: a24ea445-3997-4324-99c4-926b17c8d2ac
 source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
 workflow-type: tm+mt
 source-wordcount: '88'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Créer un servlet
 
-L’étape suivante consiste à créer un servlet qui appelle les méthodes appropriées de notre service OSGi personnalisé. Le servlet a accès aux données de formulaire adaptatif, aux informations sur les pièces jointes. Le servlet renvoie un ID d’application unique qui peut être utilisé pour récupérer le formulaire adaptatif partiellement rempli.
+L’étape suivante consiste à créer un servlet qui appelle les méthodes appropriées de notre service OSGi personnalisé. Le servlet a accès aux données de formulaire adaptatif et aux informations sur les pièces jointes. Le servlet renvoie un ID d’application unique, qui peut être utilisé pour récupérer le formulaire adaptatif partiellement rempli.
 
-Ce servlet est appelé lorsque l’utilisateur clique sur le bouton Enregistrer et quitter sur le formulaire adaptatif.
+Ce servlet est appelé lorsque l’utilisateur ou l’utilisatrice clique sur le bouton Enregistrer et quitter du formulaire adaptatif.
 
 ```java
 package saveandresume.core.servlets;
@@ -81,4 +81,4 @@ public class StoreDataInDBWithAttachmentsInfo extends SlingAllMethodsServlet {
 
 ## Étapes suivantes
 
-[Rendu du formulaire avec des données de formulaire enregistrées](./retrieve-saved-form.md)
+[Rendre le formulaire avec des données enregistrées](./retrieve-saved-form.md)

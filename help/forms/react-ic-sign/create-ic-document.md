@@ -1,6 +1,6 @@
 ---
 title: Générer un document de communication interactive à l’aide de l’API
-description: Générer un document de communication interactive en fusionnant les données de l’application de réaction
+description: Générer un document de communication interactive en fusionnant les données de l’application React
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -12,18 +12,18 @@ exl-id: d6fb6c80-4bfe-4b9d-b267-7caee3944cc0
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '113'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Générer un document de communication interactive
 
-Pour générer un document de communication interactive à l’aide de l’API, nous devons effectuer les opérations suivantes :
+Pour générer un document de communication interactive à l’aide de l’API, nous devons effectuer les opérations suivantes :
 
-* Création d’un service de préremplissage
+* Créer un service de préremplissage
 * Générer un document de communication interactive
 
-Nom du service `ccm-print-test` est utilisé pour accéder à ce service. Une fois ce service de préremplissage défini, vous pouvez accéder à ce service dans votre mise en oeuvre d’étape de processus ou de servlet pour générer le document de canal d’impression.
+Le nom du service `ccm-print-test` est utilisé pour accéder à ce service. Une fois ce service de préremplissage défini, vous pouvez accéder à ce service dans votre mise en œuvre d’étape de workflow ou de servlet pour générer le document de canal d’impression.
 
 ```java
 package com.acrobatsign.core;
@@ -199,7 +199,7 @@ public class AcrobatSignConfigurationService {
 }
 ```
 
-## Obtention de l’ID de document transitoire
+## Obtenir l’ID de document transitoire
 
 Le code suivant a été écrit pour créer un document transitoire.
 
@@ -229,7 +229,7 @@ public String getTransientDocumentID(Document documentForSigning) throws IOExcep
 }
 ```
 
-## Obtention de l’identifiant du widget
+## Obtenir l’identifiant du widget
 
 ```java
 public String getWidgetID(String transientDocumentID) {
@@ -317,4 +317,4 @@ public String getWidgetURL(String widgetId) throws ClientProtocolException, IOEx
 
 ## Étapes suivantes
 
-Écrire une [wrapper de service OSGi pour exposer l’API Acrobat Sign](./wrapper-sign-api.md)
+Écrire un [wrapper de service OSGi pour exposer l’API Acrobat Sign](./wrapper-sign-api.md)

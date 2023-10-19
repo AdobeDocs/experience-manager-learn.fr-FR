@@ -1,5 +1,5 @@
 ---
-title: AEM API sans affichage et React - AEM premier tutoriel sans affichage
+title: API AEM Headless et React - Premier tutoriel AEM Headless
 description: Découvrez comment couvrir la récupération des données de fragments de contenu des API GraphQL d’AEM et leur affichage dans l’application React.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
@@ -14,41 +14,41 @@ exl-id: 2b726473-5a32-4046-bce8-6da3c57a1b60
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '869'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# AEM API sans affichage et React
+# API AEM Headless et React
 
-Bienvenue dans ce chapitre de tutoriel où nous allons explorer la configuration d’une application React pour établir une connexion avec les API Adobe Experience Manager (AEM) sans affichage à l’aide du SDK AEM sans affichage. Nous allons passer en revue la récupération des données de fragments de contenu des API GraphQL d’AEM et leur affichage dans l’application React.
+Bienvenue dans ce chapitre de tutoriel où nous allons explorer la configuration d’une application React pour établir une connexion avec les API Adobe Experience Manager (AEM) Headless à l’aide du SDK AEM Headless. Nous allons passer en revue la récupération des données de fragments de contenu des API GraphQL d’AEM et leur affichage dans l’application React.
 
-Les API AEM sans affichage permettent d’accéder au contenu AEM à partir de n’importe quelle application cliente. Nous vous guiderons tout au long de la configuration de votre application React pour vous connecter aux API AEM sans affichage à l’aide du SDK AEM sans affichage. Cette configuration établit un canal de communication réutilisable entre votre application React et AEM.
+Les API AEM Headless permettent d’accéder au contenu AEM à partir de n’importe quelle application cliente. Nous vous guiderons tout au long de la configuration de votre application React pour vous connecter aux API AEM Headless à l’aide du SDK AEM Headless. Cette configuration établit un canal de communication réutilisable entre votre application React et AEM.
 
-Ensuite, nous utiliserons le SDK AEM sans affichage pour récupérer les données de fragments de contenu des API GraphQL d’AEM. Les fragments de contenu dans AEM fournissent une gestion de contenu structurée. En utilisant le SDK AEM sans affichage, vous pouvez facilement interroger et récupérer des données de fragments de contenu à l’aide de GraphQL.
+Ensuite, nous utiliserons le SDK AEM Headless pour récupérer les données de fragments de contenu des API GraphQL d’AEM. Les fragments de contenu dans AEM fournissent une gestion de contenu structurée. En utilisant le SDK AEM Headless, vous pouvez facilement interroger et récupérer des données de fragments de contenu à l’aide de GraphQL.
 
 Une fois que nous aurons les données de fragment de contenu, nous les intégrerons à votre application React. Vous apprendrez à formater et afficher les données de manière attrayante. Nous aborderons les bonnes pratiques relatives à la gestion et au rendu des données de fragments de contenu dans les composants React, afin d’assurer une intégration transparente à l’interface utilisateur de votre application.
 
-Tout au long du tutoriel, nous vous proposons des explications, des exemples de code et des conseils pratiques. D’ici la fin, vous pourrez configurer votre application React pour vous connecter aux API AEM sans affichage, récupérer les données de fragments de contenu à l’aide du SDK AEM sans affichage et les afficher facilement dans votre application React. Commençons !
+Tout au long du tutoriel, nous vous proposons des explications, des exemples de code et des conseils pratiques. D’ici la fin, vous pourrez configurer votre application React pour vous connecter aux API AEM Headless, récupérer les données de fragments de contenu à l’aide du SDK AEM Headless et les afficher facilement dans votre application React. Commençons.
 
 
-## Clonage de l’application React
+## Cloner l’application React
 
-1. Cloner l’application depuis [Github](https://github.com/lamontacrook/headless-first/tree/main) en exécutant la commande suivante sur la ligne de commande.
+1. Clonez l’application depuis [Github](https://github.com/lamontacrook/headless-first/tree/main) en exécutant la commande suivante sur la ligne de commande.
 
    ```
    $ git clone git@github.com:lamontacrook/headless-first.git
    ```
 
-1. Changez dans le `headless-first` et installez les dépendances.
+1. Passez au référentiel `headless-first` et installez les dépendances.
 
    ```
    $ cd headless-first
    $ npm ci
    ```
 
-## Configuration de l’application React
+## Configurer l’application React
 
-1. Créez un fichier nommé `.env` à la racine du projet. Dans `.env` définissez les valeurs suivantes :
+1. Créez un fichier nommé `.env` à la racine du projet. Dans `.env`, définissez les valeurs suivantes :
 
    ```
    REACT_APP_AEM=<URL of the AEM instance>
@@ -57,19 +57,19 @@ Tout au long du tutoriel, nous vous proposons des explications, des exemples de 
    REACT_APP_TOKEN=<developer token>
    ```
 
-1. Vous pouvez récupérer un jeton de développeur dans Cloud Manager. Connexion à [Adobe Cloud Manager](https://experience.adobe.com/). Cliquez sur __Experience Manager > Cloud Manager__. Sélectionnez le Programme approprié, puis cliquez sur les ellipses en regard de l’environnement.
+1. Vous pouvez récupérer un jeton de développement dans Cloud Manager. Connectez-vous à [Adobe Cloud Manager](https://experience.adobe.com/). Cliquez sur __Experience Manager > Cloud Manager__. Sélectionnez le Programme approprié, puis cliquez sur les points de suspension à côté d’Environnement.
 
-   ![AEM Developer Console](./assets/2/developer-console.png)
+   ![AEM Developer Console.](./assets/2/developer-console.png)
 
-   1. Cliquez sur dans le __Intégrations__ tab
-   1. Cliquez sur __Onglet Jeton local et Obtenir un jeton de développement local__ button
-   1. Copiez le jeton d’accès commençant après le guillemet ouvert jusqu’à ce qu’il soit avant le guillemet de fermeture.
-   1. Collez le jeton copié comme valeur pour `REACT_APP_TOKEN` dans le `.env` fichier .
+   1. Cliquez sur l’onglet __Intégrations__.
+   1. Cliquez sur l’__onglet Jeton local et sur le bouton Obtenir un jeton de développement local__.
+   1. Copiez le jeton d’accès contenu entre les guillemets.
+   1. Collez le jeton copié comme valeur pour `REACT_APP_TOKEN` dans le fichier `.env`.
    1. Créons maintenant l’application en exécutant `npm ci` sur la ligne de commande.
-   1. Maintenant, démarrez l’application React et en exécutant `npm run start` sur la ligne de commande.
-   1. Dans [./src/utils](https://github.com/lamontacrook/headless-first/tree/main/src/utils) un fichier nommé `context.js`  inclut le code permettant de définir les valeurs dans la variable `.env` dans le contexte de l’application.
+   1. Démarrez l’application React en exécutant `npm run start` sur la ligne de commande.
+   1. Dans [./src/utils](https://github.com/lamontacrook/headless-first/tree/main/src/utils), un fichier nommé `context.js` inclut le code permettant de définir les valeurs dans le fichier `.env` dans le contexte de l’application.
 
-## Exécution de l’application React
+## Démarrer l’application React
 
 1. Démarrez l’application React en exécutant `npm run start` sur la ligne de commande.
 
@@ -79,21 +79,21 @@ Tout au long du tutoriel, nous vous proposons des explications, des exemples de 
 
    L’application React démarre et ouvre une fenêtre de navigateur pour `http://localhost:3000`. Les modifications apportées à l’application React seront automatiquement rechargées dans le navigateur.
 
-## Connexion aux API AEM sans affichage
+## Connexion aux API AEM Headless
 
-1. Pour connecter l’application React à AEM as a Cloud Service, ajoutons quelques éléments à la variable `App.js`. Dans le `React` import, ajout `useContext`.
+1. Pour connecter l’application React à AEM as a Cloud Service, ajoutons quelques éléments à `App.js`. Dans l’import `React`, ajoutez `useContext`.
 
    ```javascript
    import React, {useContext} from 'react';
    ```
 
-   Importer `AppContext` de la `context.js` fichier .
+   Importez `AppContext` depuis le fichier `context.js`.
 
    ```javascript
    import { AppContext } from './utils/context';
    ```
 
-   Désormais, dans le code de l’application, définissez une variable contextuelle.
+   Dans le code de l’application, définissez une variable contextuelle.
 
    ```javascript
    const context = useContext(AppContext);
@@ -110,7 +110,7 @@ Tout au long du tutoriel, nous vous proposons des explications, des exemples de 
    </div>);
    ```
 
-   À titre de référence, le `App.js` devrait maintenant être comme ça.
+   À titre de référence, `App.js` devrait désormais ressembler à ce qui suit.
 
    ```javascript
    import React, {useContext} from 'react';
@@ -137,27 +137,27 @@ Tout au long du tutoriel, nous vous proposons des explications, des exemples de 
    export default App;
    ```
 
-1. Importez la variable `AEMHeadless` SDK. Ce SDK est une bibliothèque d’assistance utilisée par l’application pour interagir avec AEM API sans affichage.
+1. Importez le SDK `AEMHeadless`. Ce SDK est une bibliothèque d’assistance utilisée par l’application pour interagir avec les API AEM Headless.
 
-   Ajoutez cette instruction d’importation à la variable `home.js`.
+   Ajoutez cette instruction d’import à `home.js`.
 
    ```javascript
    import AEMHeadless from '@adobe/aem-headless-client-js';
    ```
 
-   Ajoutez ce qui suit : `{ useContext, useEffect, useState }` à la fonction` React` instruction d’importation.
+   Ajoutez l’élément `{ useContext, useEffect, useState }` suivant à l’instruction d’import ` React`.
 
    ```javascript
    import React, { useContext, useEffect, useState } from 'react';
    ```
 
-   Importez la variable `AppContext`.
+   Importez le `AppContext`.
 
    ```javascript
    import { AppContext } from '../../utils/context';
    ```
 
-   Dans le `Home` , obtenez la variable `context` de la variable `AppContext`.
+   Dans le composant `Home`, obtenez la variable `context` à partir du `AppContext`.
 
    ```javascript
    const Home = () => {
@@ -166,7 +166,7 @@ Tout au long du tutoriel, nous vous proposons des explications, des exemples de 
    }
    ```
 
-1. Initialisation du SDK AEM sans affichage dans une  `useEffect()`, puisque le SDK AEM sans affichage doit changer lorsque la variable  `context` change.
+1. Initialisez le SDK AEM Headless dans un élément `useEffect()`, puisque le SDK AEM Headless doit changer lorsque la variable `context` change.
 
    ```javascript
    useEffect(() => {
@@ -180,10 +180,10 @@ Tout au long du tutoriel, nous vous proposons des explications, des exemples de 
 
    >[!NOTE]
    >
-   > Il existe une `context.js` fichier sous `/utils` qui lit des éléments de la fonction `.env` fichier . À titre de référence, le `context.url` est l’URL de l’environnement as a Cloud Service AEM. La variable `context.endpoint` est le chemin d’accès complet au point de terminaison créé dans la leçon précédente. Enfin, la variable `context.token` est le jeton développeur.
+   > Il existe un fichier `context.js` sous `/utils` qui lit des éléments du fichier `.env`. À titre de référence, l’`context.url` est l’URL de l’environnement AEM as a Cloud Service. Le `context.endpoint` est le chemin d’accès complet au point d’entrée créé dans la leçon précédente. Enfin, le `context.token` est le jeton de développement.
 
 
-1. Créez un état React qui expose le contenu provenant du SDK AEM sans affichage.
+1. Créez un état React qui expose le contenu provenant du SDK AEM Headless.
 
    ```javascript
    const Home = () => {
@@ -192,7 +192,7 @@ Tout au long du tutoriel, nous vous proposons des explications, des exemples de 
    }
    ```
 
-1. Connectez l’application à AEM. Utilisez la requête persistante créée dans la leçon précédente. Ajoutons le code suivant dans la fonction `useEffect` une fois le SDK AEM sans affichage initialisé. Faites en sorte que la variable `useEffect` dépend de la variable  `context` comme illustré ci-dessous.
+1. Connectez l’application à AEM. Utilisez la requête persistante créée dans la leçon précédente. Ajoutez le code suivant dans l’élément `useEffect` une fois le SDK AEM Headless initialisé. Faites en sorte que l’élément `useEffect` dépende de la variable `context` comme illustré ci-dessous.
 
 
    ```javascript
@@ -214,18 +214,18 @@ Tout au long du tutoriel, nous vous proposons des explications, des exemples de 
 
    `<url to environment>/graphql/execute.json/pure-headless/teaser%3Bpath%3D%2Fcontent%2Fdam%2Fpure-headless%2Fhero`
 
-   ![Outils de développement Chrome](./assets/2/dev-tools.png)
+   ![Outils de développement Chrome.](./assets/2/dev-tools.png)
 
-   Le SDK AEM sans affichage code la requête pour GraphQL et ajoute les paramètres fournis. Vous pouvez ouvrir la requête dans le navigateur.
+   Le SDK AEM Headless code la requête pour GraphQL et ajoute les paramètres fournis. Vous pouvez ouvrir la requête dans le navigateur.
 
    >[!NOTE]
    >
-   > Puisque la demande est envoyée à l’environnement de création, vous devez être connecté à l’environnement dans un autre onglet du même navigateur.
+   > Puisque la demande est envoyée à l’environnement de création, vous devez disposer d’une connexion à l’environnement dans un autre onglet du même navigateur.
 
 
-## Rendu du contenu de fragment de contenu
+## Rendre le contenu du fragment de contenu
 
-1. Affichage des fragments de contenu dans l’application. Renvoie une `<div>` avec le titre du teaser.
+1. Affichez les fragments de contenu dans l’application. Renvoyez un élément `<div>` avec le titre du teaser.
 
    ```javascript
    return (
@@ -235,13 +235,13 @@ Tout au long du tutoriel, nous vous proposons des explications, des exemples de 
    );
    ```
 
-   Le champ titre du teaser doit s’afficher à l’écran.
+   Le champ Titre du teaser doit s’afficher à l’écran.
 
-1. La dernière étape consiste à ajouter le teaser à la page. Un composant de teaser React est inclus dans le module. Tout d’abord, incluons l’importation. En haut de la page `home.js` ajoutez la ligne :
+1. La dernière étape consiste à ajouter le teaser à la page. Un composant de teaser React est inclus dans le package. Tout d’abord, incluons l’import. En haut du fichier `home.js`, ajoutez la ligne :
 
    `import Teaser from '../../components/teaser/teaser';`
 
-   Mettez à jour l’instruction de retour :
+   Mettez à jour l’instruction de retour :
 
    ```javascript
    return (
@@ -256,8 +256,8 @@ Tout au long du tutoriel, nous vous proposons des explications, des exemples de 
 
 ## Étapes suivantes
 
-Félicitations. Vous avez correctement mis à jour l’application React afin de l’intégrer aux API AEM sans affichage à l’aide du SDK AEM sans affichage !
+Félicitations. Vous avez correctement mis à jour l’application React afin de l’intégrer aux API AEM Headless à l’aide du SDK AEM Headless.
 
-Créez ensuite un composant de liste d’images plus complexe qui effectue dynamiquement le rendu des fragments de contenu référencés à partir d’AEM.
+Créez ensuite un composant Liste d’images plus complexe qui effectue dynamiquement le rendu des fragments de contenu référencés à partir d’AEM.
 
-[Chapitre suivant : création d’un composant Liste d’images](./3-complex-components.md)
+[Chapitre suivant : créer un composant Liste d’images](./3-complex-components.md)

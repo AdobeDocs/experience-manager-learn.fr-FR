@@ -11,11 +11,11 @@ role: Developer
 level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
-badgeVersions: label="AEM sans affichage as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 source-git-commit: 6f874fd3da09ce808920a7f8ea3386beda726272
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Un [tutoriel détaillé complet](https://experienceleague.adobe.com/docs/experie
 
 Les outils suivants doivent être installés localement :
 
-+ [Node.js v18](https://nodejs.org/fr/)
++ [Node.js v18](https://nodejs.org/fr/)
 + [Git](https://git-scm.com/)
 
 ## Configuration requise d’AEM

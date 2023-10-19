@@ -1,6 +1,6 @@
 ---
 title: Service de préremplissage des formulaires adaptatifs
-description: Préremplir les formulaires adaptatifs en récupérant des données à partir de sources de données principales.
+description: Préremplir les formulaires adaptatifs en récupérant des données à partir de sources de données backend.
 feature: Adaptive Forms
 version: 6.4,6.5
 topic: Development
@@ -11,21 +11,21 @@ last-substantial-update: 2021-11-27T00:00:00Z
 source-git-commit: cf37afeb9bea65b540c9cfde75070d4106a01976
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 6%
+ht-degree: 96%
 
 ---
 
-# Utilisation du service de préremplissage dans Forms adaptatif
+# Utilisation du service de préremplissage des formulaires adaptatifs
 
 Vous pouvez préremplir les champs d’un formulaire adaptatif à l’aide de données existantes. Lorsqu’un utilisateur ou une utilisatrice ouvre un formulaire, les valeurs de ces champs sont préremplies. Il existe plusieurs façons de préremplir des champs de formulaires adaptatifs. Dans cet article, nous allons examiner le préremplissage d’un formulaire adaptatif à l’aide du service de préremplissage AEM Forms.
 
-Pour en savoir plus sur les différentes méthodes de préremplissage de formulaires adaptatifs, [veuillez suivre cette documentation](https://helpx.adobe.com/experience-manager/6-4/forms/using/prepopulate-adaptive-form-fields.html#AEMFormsprefillservice)
+Pour en savoir plus sur les différentes méthodes de préremplissage de formulaires adaptatifs, [veuillez consulter cette documentation](https://experienceleague.adobe.com/docs/experience-manager-64/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=fr).
 
-Pour préremplir un formulaire adaptatif à l’aide du service de préremplissage, vous devez créer une classe qui implémente la fonction `com.adobe.forms.common.service.DataXMLProvider` . La méthode `getDataXMLForDataRef` disposera de la logique nécessaire pour créer et renvoyer les données que le formulaire adaptatif utilisera pour préremplir les champs. Dans cette méthode, vous pouvez récupérer les données de n’importe quelle source et renvoyer le flux d’entrée du document de données. L’exemple de code suivant récupère les informations de profil utilisateur de l’utilisateur connecté et crée un document XML dont le flux d’entrée est renvoyé pour être utilisé par les formulaires adaptatifs.
+Pour préremplir un formulaire adaptatif à l’aide du service de préremplissage, vous devez créer une classe qui implémente l’interface `com.adobe.forms.common.service.DataXMLProvider`. La méthode `getDataXMLForDataRef` disposera de la logique nécessaire pour créer et renvoyer les données que le formulaire adaptatif utilisera pour préremplir les champs. Dans cette méthode, vous pouvez récupérer les données de n’importe quelle source et renvoyer le flux d’entrée du document de données. L’exemple de code suivant récupère les informations de profil de l’utilisateur connecté et crée un document XML dont le flux d’entrée est renvoyé pour être utilisé par les formulaires adaptatifs.
 
-Dans le fragment de code ci-dessous, nous avons une classe qui implémente l’interface DataXMLProvider . Nous avons accès à l’utilisateur connecté, puis nous récupérons les informations de profil de l’utilisateur connecté. Nous créons ensuite un document XML avec un élément de noeud racine appelé &quot;data&quot; et ajoutons les éléments appropriés à ce noeud de données. Une fois le document XML construit, le flux d’entrée du document XML est renvoyé.
+Dans le fragment de code ci-dessous, nous avons une classe qui implémente l’interface DataXMLProvider. Nous accédons à la personne connectée, puis nous récupérons les informations de profil de la personne connectée. Nous créons ensuite un document XML avec un élément de nœud racine appelé « data » et ajoutons les éléments appropriés à ce nœud de données. Une fois le document XML créé, le flux d’entrée du document XML est renvoyé.
 
-Cette classe est ensuite transformée en lot OSGi et déployée dans AEM. Une fois le lot déployé, ce service de préremplissage est alors disponible pour être utilisé comme service de préremplissage de votre formulaire adaptatif.
+Cette classe est ensuite transformée en bundle OSGi et déployée dans AEM. Une fois le bundle déployé, ce service de préremplissage est alors disponible pour être utilisé avec votre formulaire adaptatif.
 
 >[!NOTE]
 >
@@ -136,14 +136,14 @@ public class PrefillAdaptiveForm implements DataXMLProvider {
 }
 ```
 
-Pour tester cette fonctionnalité sur votre serveur, procédez comme suit :
+Pour tester cette fonctionnalité sur votre serveur, procédez comme suit :
 
-* Assurez-vous d’être connecté [profil de l’utilisateur](http://localhost:4502/security/users.html) Les informations sont renseignées. L’exemple recherche les propriétés FirstName, LastName et Email de l’utilisateur connecté.
+* Assurez-vous que les informations du [profil de l’utilisateur](http://localhost:4502/security/users.html) connecté sont renseignées. L’exemple recherche les propriétés FirstName, LastName et Email de la personne connectée.
 * [Téléchargez et extrayez le contenu du fichier zip sur votre ordinateur.](assets/prefillservice.zip)
-* Déployez le lot prefill.core-1.0.0-SNAPSHOT à l’aide du [AEM console web](http://localhost:4502/system/console/bundles)
-* Importez le formulaire adaptatif à l’aide de l’option Créer | Téléchargement du fichier depuis le [Section FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments)
-* Assurez-vous que la variable [formulaire](http://localhost:4502/editor.html/content/forms/af/prefill.html) est utilisé **&quot;Service AEM Forms PreFill personnalisé&quot;** comme service de préremplissage. Cela peut être vérifié à partir des propriétés de configuration de la variable **Conteneur de formulaires** .
-* [Aperçu du formulaire](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Le formulaire doit être renseigné avec les valeurs correctes.
+* Déployez le bundle prefill.core-1.0.0-SNAPSHOT à l’aide de la [console web AEM](http://localhost:4502/system/console/bundles).
+* Importez le formulaire adaptatif à l’aide de l’option Créer | Chargement du fichier depuis la [section FormsAndDocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+* Assurez-vous que le [formulaire](http://localhost:4502/editor.html/content/forms/af/prefill.html) utilise **« Service de préremplissage AEM Forms personnalisé »** comme service de préremplissage. Cela peut être vérifié à partir des propriétés de configuration de la section **Conteneur de formulaires**.
+* [Prévisualisez le formulaire](http://localhost:4502/content/dam/formsanddocuments/prefill/jcr:content?wcmmode=disabled). Le formulaire doit être renseigné avec les valeurs correctes.
 
 >[!NOTE]
 >

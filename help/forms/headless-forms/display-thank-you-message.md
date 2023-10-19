@@ -1,6 +1,6 @@
 ---
 title: Afficher le message de remerciement lors de l’envoi du formulaire
-description: Utilisez le gestionnaire onSubmitSuccess pour afficher le message de remerciement configuré dans l’application de réaction.
+description: Utilisez le gestionnaire onSubmitSuccess pour afficher le message de remerciement configuré dans l’application React.
 feature: Adaptive Forms
 version: 6.5
 kt: 13490
@@ -11,18 +11,18 @@ exl-id: 489970a6-1b05-4616-84e8-52b8c87edcda
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '172'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Afficher le message de remerciement configuré
 
-Un message de remerciement lors de l’envoi du formulaire est un moyen réfléchi d’exprimer votre reconnaissance à l’utilisateur pour avoir rempli et envoyé un formulaire. Il confirme que leur demande a été reçue et appréciée. Le message de remerciement est configuré à l’aide de l’onglet d’envoi du conteneur du guide du formulaire adaptatif.
+Un message de remerciement, affiché lors de l’envoi du formulaire, est une façon attentionnée d’exprimer votre reconnaissance à l’utilisateur ou l’utilisatrice qui a rempli et envoyé un formulaire. Il confirme que l’envoi a bien fonctionné et que vous appréciez ce geste. Le message de remerciement est configuré à l’aide de l’onglet d’envoi du conteneur de guide du formulaire adaptatif.
 
-![merci-vous-message](assets/thank-you-message.png)
+![thank-you-message](assets/thank-you-message.png)
 
-Le message de remerciement configuré est accessible dans le gestionnaire d’événements onSuccess du super composant AdaptiveForm.
-Le code permettant d’associer l’événement onSuccess et le code du gestionnaire d’événements onSuccess sont répertoriés ci-dessous.
+Le message de remerciement configuré est accessible dans le gestionnaire d’événements onSuccess du super-composant AdaptiveForm.
+Le code permettant d’associer l’événement onSuccess et le code du gestionnaire d’événements onSuccess sont répertoriés ci-dessous.
 
 ```javascript
 <AdaptiveForm mappings={extendMappings} onSubmitSuccess={onSuccess} formJson={selectedForm}/>
@@ -38,7 +38,7 @@ const onSuccess=(action) =>{
       }
 ```
 
-Le code complet du composant de fonction Contact est indiqué ci-dessous.
+Le code complet du composant de la fonction Contact est indiqué ci-dessous.
 
 ```javascript
 import Form from './components/Form';
@@ -105,4 +105,4 @@ export default function Contact(){
 }
 ```
 
-Le code ci-dessus utilise des composants HTML natifs qui sont mappés aux composants utilisés dans le formulaire adaptatif. Par exemple, nous mappons le composant de formulaire adaptatif d’entrée de texte au composant TextField. Composants natifs utilisés dans l’article [peut être téléchargé ici](./assets/native-components.zip)
+Le code ci-dessus utilise des composants HTML natifs qui sont mappés aux composants du formulaire adaptatif. Par exemple, le composant de formulaire adaptatif de saisie de texte est mappé au composant TextField. Les composants natifs utilisés dans l’article [peuvent être téléchargés ici](./assets/native-components.zip).

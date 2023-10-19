@@ -1,6 +1,6 @@
 ---
-title: Utilisation de jeux de résultats volumineux dans AEM sans affichage
-description: Découvrez comment utiliser des jeux de résultats volumineux avec AEM sans affichage.
+title: Travailler avec des jeux de résultats volumineux dans AEM Headless
+description: Découvrez comment utiliser des jeux de résultats volumineux avec AEM Headless.
 version: Cloud Service
 topic: Headless
 feature: GraphQL API
@@ -14,29 +14,29 @@ exl-id: 304b4d80-27bd-4336-b2ff-4b613a30f712
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '841'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Jeux de résultats volumineux dans AEM sans affichage
+# Jeux de résultats volumineux dans AEM Headless
 
-AEM requêtes GraphQL sans affichage peuvent renvoyer des résultats volumineux. Cet article décrit comment travailler avec des résultats volumineux dans AEM sans affichage afin d’optimiser les performances de votre application.
+Les requêtes GraphQL d’AEM Headless peuvent renvoyer des résultats volumineux. Cet article décrit comment travailler avec des résultats volumineux dans AEM Headless afin d’optimiser les performances de votre application.
 
-AEM Headless prend en charge une [offset/limit](#list-query) et [pagination basée sur le curseur](#paginated-query) requêtes à des sous-ensembles plus petits d’un plus grand jeu de résultats. Plusieurs demandes peuvent être effectuées pour collecter autant de résultats que nécessaire.
+AEM Headless prend en charge [un décalage/une limite](#list-query) et des requêtes de [pagination basées sur le curseur](#paginated-query) vers des sous-ensembles plus petits d’un ensemble de résultats plus important. Plusieurs requêtes peuvent être effectuées pour collecter autant de résultats que nécessaire.
 
-Les exemples ci-dessous utilisent de petits sous-ensembles de résultats (quatre enregistrements par requête) pour démontrer les techniques. Dans une application réelle, vous utiliseriez un plus grand nombre d’enregistrements par requête pour améliorer les performances. 50 enregistrements par requête est une bonne ligne de base.
+Les exemples ci-dessous utilisent de petits sous-ensembles de résultats (quatre enregistrements par requête) pour démontrer les techniques. Dans une application réelle, vous utiliseriez un plus grand nombre d’enregistrements par requête pour en améliorer les performances. 50 enregistrements par requête est une bonne référence.
 
 ## Modèle de fragment de contenu
 
-La pagination et le tri peuvent être utilisés par rapport à n’importe quel modèle de fragment de contenu.
+La pagination et le tri peuvent être utilisés avec n’importe quel modèle de fragment de contenu.
 
 ## Requêtes persistantes GraphQL
 
-Lors de l’utilisation de jeux de données volumineux, la pagination décalée, limitée et basée sur le curseur peut être utilisée pour récupérer un sous-ensemble spécifique des données. Cependant, il existe des différences entre les deux techniques, qui peuvent rendre l&#39;une plus appropriée que l&#39;autre dans certaines situations.
+Avec des jeux de données volumineux, la pagination décalée, limitée et basée sur le curseur peut être utilisée pour récupérer un sous-ensemble spécifique des données. Cependant, il existe des différences entre les deux techniques, qui peuvent rendre l’une plus appropriée que l’autre dans certaines situations.
 
 ### Décalage/limite
 
-Liste des requêtes, à l’aide de `limit` et `offset` proposer une approche simple qui spécifie le point de départ (`offset`) et le nombre d’enregistrements à récupérer (`limit`). Cette approche permet de sélectionner un sous-ensemble de résultats à partir de n’importe quel emplacement du jeu de résultats complet, comme accéder à une page de résultats spécifique. Bien qu’il soit facile à mettre en oeuvre, il peut être lent et inefficace lorsque vous traitez de gros résultats, car la récupération de nombreux enregistrements nécessite une analyse de tous les enregistrements précédents. Cette approche peut également entraîner des problèmes de performances lorsque la valeur de décalage est élevée, car elle peut nécessiter la récupération et le rejet de nombreux résultats.
+Les requêtes de liste, utilisant `limit` et `offset`, fournissent une approche directe qui spécifie le point de départ (`offset`) et le nombre d’enregistrements à récupérer (`limit`). Cette approche permet de sélectionner un sous-ensemble de résultats à partir de n’importe quel emplacement du jeu de résultats complet, comme accéder à une page de résultats spécifique. Bien qu’elle soit facile à mettre en œuvre, elle peut être lente et inefficace lorsque vous traitez des résultats volumineux, car la récupération de nombreux enregistrements nécessite une analyse de tous les enregistrements précédents. Cette approche peut également entraîner des problèmes de performances lorsque la valeur de décalage est élevée, car elle peut nécessiter la récupération et le rejet de nombreux résultats.
 
 #### Requête GraphQL
 
@@ -64,7 +64,7 @@ query adventuresByOffetAndLimit($offset:Int!, $limit:Int) {
 
 #### Réponse GraphQL
 
-La réponse JSON résultante contient les 2e, 3e, 4e et 5e aventures les plus coûteuses. Les deux premières aventures dans les résultats ont le même prix (`4500` Ainsi, la variable [requête de liste](#list-queries) indique que les aventures au prix identique sont ensuite triées par titre dans l’ordre croissant.)
+La réponse JSON résultante contient les 2e, 3e, 4e et 5e aventures les plus coûteuses. Les deux premières aventures dans les résultats ont le même prix (`4500`, la [requête de liste](#list-queries) indique alors que les aventures au prix identique sont ensuite triées par titre dans l’ordre croissant).
 
 ```json
 {
@@ -99,7 +99,7 @@ La réponse JSON résultante contient les 2e, 3e, 4e et 5e aventures les plus co
 
 ### Requête paginée
 
-La pagination basée sur un curseur, disponible dans les requêtes paginées, implique l’utilisation d’un curseur (une référence à un enregistrement spécifique) pour récupérer l’ensemble de résultats suivant. Cette approche est plus efficace, car elle évite d’analyser tous les enregistrements précédents pour récupérer le sous-ensemble de données requis. Les requêtes paginées sont idéales pour itérer à travers de grands ensembles de résultats, du début à un certain point au milieu ou à la fin. Liste des requêtes, à l’aide de `limit` et `offset` proposer une approche simple qui spécifie le point de départ (`offset`) et le nombre d’enregistrements à récupérer (`limit`). Cette approche permet de sélectionner un sous-ensemble de résultats à partir de n’importe quel emplacement du jeu de résultats complet, comme accéder à une page de résultats spécifique. Bien qu’il soit facile à mettre en oeuvre, il peut être lent et inefficace lorsque vous traitez de gros résultats, car la récupération de nombreux enregistrements nécessite une analyse de tous les enregistrements précédents. Cette approche peut également entraîner des problèmes de performances lorsque la valeur de décalage est élevée, car elle peut nécessiter la récupération et le rejet de nombreux résultats.
+La pagination basée sur le curseur, disponible dans les requêtes paginées, implique l’utilisation d’un curseur (une référence à un enregistrement spécifique) pour récupérer le jeu de résultats suivant. Cette approche est plus efficace, car elle évite d’analyser tous les enregistrements précédents pour récupérer le sous-ensemble de données requis. Les requêtes paginées sont idéales pour itérer à travers les jeux de résultats volumineux de bout en bout. Les requêtes de liste, utilisant `limit` et `offset`, fournissent une approche directe qui spécifie le point de départ (`offset`) et le nombre d’enregistrements à récupérer (`limit`). Cette approche permet de sélectionner un sous-ensemble de résultats à partir de n’importe quel emplacement du jeu de résultats complet, comme accéder à une page de résultats spécifique. Bien qu’elle soit facile à mettre en œuvre, elle peut être lente et inefficace lorsque vous traitez des résultats volumineux, car la récupération de nombreux enregistrements nécessite une analyse de tous les enregistrements précédents. Cette approche peut également entraîner des problèmes de performances lorsque la valeur de décalage est élevée, car elle peut nécessiter la récupération et le rejet de nombreux résultats.
 
 #### Requête GraphQL
 
@@ -133,7 +133,7 @@ query adventuresByPaginated($first:Int, $after:String) {
 
 #### Réponse GraphQL
 
-La réponse JSON résultante contient les 2e, 3e, 4e et 5e aventures les plus coûteuses. Les deux premières aventures dans les résultats ont le même prix (`4500` Ainsi, la variable [requête de liste](#list-queries) indique que les aventures au prix identique sont ensuite triées par titre dans l’ordre croissant.)
+La réponse JSON résultante contient les 2e, 3e, 4e et 5e aventures les plus coûteuses. Les deux premières aventures dans les résultats ont le même prix (`4500`, la [requête de liste](#list-queries) indique alors que les aventures au prix identique sont ensuite triées par titre dans l’ordre croissant).
 
 ```json
 {
@@ -176,7 +176,7 @@ La réponse JSON résultante contient les 2e, 3e, 4e et 5e aventures les plus co
 
 #### Prochain jeu de résultats paginés
 
-L’ensemble de résultats suivant peut être récupéré à l’aide de la variable `after` et le paramètre `endCursor` de la requête précédente. S’il n’y a plus de résultats à récupérer, `hasNextPage` is `false`.
+Le jeu de résultats suivant peut être récupéré à l’aide du paramètre `after` et de la valeur `endCursor` de la requête précédente. S’il n’y a plus de résultats à récupérer, `hasNextPage` est `false`.
 
 ##### Variables de requête
 
@@ -187,9 +187,9 @@ L’ensemble de résultats suivant peut être récupéré à l’aide de la vari
 }
 ```
 
-## Exemples de react
+## Exemples pour React
 
-Voici des exemples React qui montrent comment utiliser [décalage et limite](#offset-and-limit) et [pagination basée sur le curseur](#cursor-based-pagination) approches. En règle générale, le nombre de résultats par requête est plus élevé. Toutefois, pour les besoins de ces exemples, la limite est définie sur 5.
+Voici des exemples pour React qui montrent comment utiliser [les décalages et les limites](#offset-and-limit), mais aussi [la pagination basée sur le curseur](#cursor-based-pagination). En règle générale, le nombre de résultats par requête est plus élevé. Toutefois, pour les besoins de ces exemples, la limite est définie sur 5.
 
 ### Exemple de décalage et de limite
 
@@ -197,9 +197,9 @@ Voici des exemples React qui montrent comment utiliser [décalage et limite](#of
 
 En utilisant le décalage et la limite, les sous-ensembles de résultats peuvent facilement être récupérés et affichés.
 
-#### useEffect hook
+#### Hook useEffect
 
-La variable `useEffect` hook appelle une requête persistante (`adventures-by-offset-and-limit`) qui récupère une liste d’aventures. La requête utilise la variable `offset` et `limit` pour spécifier le point de départ et le nombre de résultats à récupérer. La variable `useEffect` hook est appelé lorsque la fonction `page` change.
+Le hook `useEffect` appelle une requête persistante (`adventures-by-offset-and-limit`) qui récupère une liste d’aventures. La requête utilise les paramètres `offset` et `limit` pour spécifier le point de départ et le nombre de résultats à récupérer. Le hook `useEffect` est appelé lorsque la valeur `page` change.
 
 
 ```javascript
@@ -242,7 +242,7 @@ export function useOffsetLimitAdventures(page, limit) {
 
 #### Composant
 
-Le composant utilise la variable `useOffsetLimitAdventures` pour récupérer une liste d’aventures. La variable `page` est incrémentée et décrémentée pour récupérer le jeu de résultats suivant et précédent. La variable `hasMore` est utilisée pour déterminer si le bouton de page suivante doit être activé.
+Le composant utilise le hook `useOffsetLimitAdventures` pour récupérer une liste d’aventures. La valeur `page` est incrémentée et décrémentée pour récupérer le jeu de résultats suivant et précédent. La valeur `hasMore` est utilisée pour déterminer si le bouton de page suivante doit être activé.
 
 ```javascript
 import { useState } from "react";
@@ -302,16 +302,16 @@ export default function OffsetLimitAdventures() {
 
 ### Exemple paginé
 
-![Exemple paginé](./assets/large-results/paginated-example.png)
+![Exemple paginé.](./assets/large-results/paginated-example.png)
 
 _Chaque zone rouge représente une requête HTTP GraphQL paginée discrète._
 
-À l’aide de la pagination placée sur le curseur, les jeux de résultats volumineux peuvent facilement être récupérés et affichés, en collectant progressivement les résultats et en les concaténant aux résultats existants.
+À l’aide de la pagination basée sur le curseur, les jeux de résultats volumineux peuvent facilement être récupérés et affichés, en collectant progressivement les résultats et en les concaténant aux résultats existants.
 
 
-#### Hochet UseEffect
+#### Hook UseEffect
 
-La variable `useEffect` hook appelle une requête persistante (`adventures-by-paginated`) qui récupère une liste d’aventures. La requête utilise la variable `first` et `after` pour indiquer le nombre de résultats à récupérer et le début du curseur. `fetchData` boucle en continu, collecte le prochain ensemble de résultats paginés, jusqu’à ce qu’il n’y ait plus de résultats à récupérer.
+Le hook `useEffect` appelle une requête persistante (`adventures-by-paginated`) qui récupère une liste d’aventures. La requête utilise les paramètres `first` et `after` pour indiquer le nombre de résultats à récupérer et le début du curseur. `fetchData` boucle en continu et collecte l’ensemble de résultats paginés suivant, jusqu’à ce qu’il n’y ait plus de résultats à récupérer.
 
 ```javascript
 import { useState, useEffect } from "react";
@@ -366,7 +366,7 @@ export function usePaginatedAdventures() {
 
 #### Composant
 
-Le composant utilise la variable `usePaginatedAdventures` pour récupérer une liste d’aventures. La variable `queryCount` est utilisée pour afficher le nombre de requêtes HTTP effectuées pour récupérer la liste des aventures.
+Le composant utilise le hook `usePaginatedAdventures` pour récupérer une liste d’aventures. La valeur `queryCount` est utilisée pour afficher le nombre de requêtes HTTP effectuées pour récupérer la liste des aventures.
 
 ```javascript
 import { useState } from "react";

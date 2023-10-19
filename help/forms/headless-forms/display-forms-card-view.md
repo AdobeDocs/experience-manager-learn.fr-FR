@@ -1,5 +1,5 @@
 ---
-title: Affichage des formulaires récupérés en mode Carte
+title: Afficher les formulaires récupérés en mode Carte
 description: Utiliser l’API listforms pour afficher les formulaires
 feature: Adaptive Forms
 version: 6.5
@@ -11,22 +11,22 @@ exl-id: c01ad68e-23c9-4564-8e3e-1924af34a493
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Récupérer et afficher les formulaires au format de carte
+# Récupérer et afficher les formulaires au format carte
 
-Le format d’affichage Carte est un modèle de conception qui présente des informations ou des données sous la forme de cartes. Chaque carte représente un élément distinct de contenu ou de saisie de données et se compose généralement d’un conteneur visuellement distinct avec des éléments spécifiques organisés dans celui-ci.
-Les cartes cliquables dans React sont des composants interactifs qui ressemblent à des cartes ou des mosaïques et peuvent être cliqués ou Appuyés par l’utilisateur. Lorsqu’un utilisateur clique ou appuie sur une carte cliquable, cela déclenche une action ou un comportement spécifié, comme la navigation vers une autre page, l’ouverture d’un modal ou la mise à jour de l’interface utilisateur.
+Le format du mode Carte est un modèle de conception qui présente des informations ou des données sous la forme de cartes. Chaque carte représente un élément distinct de contenu ou de saisie de données et se compose généralement d’un conteneur visuellement distinct avec des éléments spécifiques organisés dans celui-ci.
+Les cartes cliquables dans React sont des composants interactifs qui ressemblent à des cartes ou à des mosaïques sur lesquelles il est possible de cliquer ou d’appuyer. Lorsqu’une personne clique ou appuie sur une carte cliquable, elle déclenche une action ou un comportement spécifié, comme la navigation vers une autre page, l’ouverture d’un modal ou la mise à jour de l’interface utilisateur.
 
-Dans cet article, nous utiliserons la variable [API listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) pour récupérer les formulaires et les afficher au format carte, ouvrez le formulaire adaptatif sur l’événement click.
+Dans cet article, nous utiliserons l’[API listforms](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/List-Forms/operation/listForms) pour récupérer les formulaires et les afficher au format carte et ouvrir le formulaire adaptatif lors de l’événement de clic.
 
-![carte-view](./assets/card-view-forms.png)
+![card-view](./assets/card-view-forms.png)
 
 ## Modèle de carte
 
-Le code suivant a été utilisé pour concevoir le modèle de carte. Le modèle de carte affiche le titre et la description du formulaire adaptatif, ainsi que le logo de l’Adobe. [Composants de l’interface utilisateur matérielle](https://mui.com/) ont été utilisés pour créer cette mise en page.
+Le code suivant a été utilisé pour concevoir le modèle de carte. Le modèle de carte affiche le titre et la description du formulaire adaptatif, ainsi que le logo d’Adobe. Les [composants de l’interface utilisateur matérielle](https://mui.com/) ont été utilisés pour créer cette disposition.
 
 
 
@@ -82,9 +82,9 @@ L’itinéraire suivant a été défini dans le fichier Main.js pour accéder à
     <Route path="/displayForm/:formID" element={<DisplayForm/>} exact/>
 ```
 
-## Récupération des formulaires
+## Récupérer les formulaires
 
-L’API listforms a été utilisée pour récupérer les formulaires à partir du serveur AEM. L’API renvoie un tableau d’objets JSON, chaque objet JSON représentant un formulaire.
+L’API listforms a été utilisée pour récupérer les formulaires à partir du serveur AEM. L’API renvoie un tableau d’objets JSON, chacun d’eux représentant un formulaire.
 
 ```javascript
 import { useState,useEffect } from "react";
@@ -127,8 +127,8 @@ export default function ListForm(){
 }
 ```
 
-Dans le code ci-dessus, nous itérons via la fonction fetchedForms à l’aide de la fonction map et pour chaque élément du tableau fetchedForms, un composant FormCard est créé et ajouté au conteneur Grid. Vous pouvez désormais utiliser le composant ListForm dans votre application React en fonction de vos besoins.
+Dans le code ci-dessus, nous itérons via la fonction fetchedForms à l’aide de la fonction de mappage. Pour chaque élément du tableau fetchedForms, un composant FormCard est créé et ajouté au conteneur Grid. Vous pouvez désormais utiliser le composant ListForm dans votre application React en fonction de vos besoins.
 
 ## Étapes suivantes
 
-[Afficher le formulaire adaptatif lorsque l’utilisateur clique sur une carte](./open-form-card-view.md)
+[Afficher le formulaire adaptatif lorsque la personne clique sur une carte](./open-form-card-view.md)

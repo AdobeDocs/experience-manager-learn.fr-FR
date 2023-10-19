@@ -15,7 +15,7 @@ exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
 source-git-commit: f47beff14782bb3f570d32818b000fc279394f19
 workflow-type: tm+mt
 source-wordcount: '1052'
-ht-degree: 84%
+ht-degree: 95%
 
 ---
 
@@ -71,7 +71,7 @@ Si aucune politique n’est configurée, les requêtes [!DNL CORS] ne recevront 
 #### [!UICONTROL En-têtes exposés]
 
 * `"exposedheaders" <header>`
-* Liste des paramètres d’en-tête indiquant les en-têtes de réponse auxquels les navigateurs sont autorisés à accéder. Pour les requêtes CORS (et non avant le vol), si elles ne sont pas vides, ces valeurs sont copiées dans la variable `Access-Control-Expose-Headers` en-tête de la réponse. Les valeurs de la liste (noms d’en-tête) sont ensuite rendues accessibles au navigateur ; sans elle, ces en-têtes ne sont pas lisibles par le navigateur.
+* Liste des paramètres d’en-tête indiquant les en-têtes de requête auxquels les navigateurs sont autorisés à accéder. Pour les requêtes CORS (et non de pré-vérification), si elles ne sont pas vides, ces valeurs sont copiées dans l’en-tête de réponse `Access-Control-Expose-Headers`. Les valeurs de la liste (noms d’en-tête) sont ensuite rendues accessibles au navigateur. Sans ces valeurs, le navigateur ne peut pas lire les en-têtes.
 
 #### [!UICONTROL Âge maximum]
 
@@ -81,7 +81,7 @@ Si aucune politique n’est configurée, les requêtes [!DNL CORS] ne recevront 
 #### [!UICONTROL En-têtes pris en charge]
 
 * `"supportedheaders" <header>`
-* Liste de `header` paramètres indiquant quels en-têtes de requête HTTP peuvent être utilisés lors de la requête réelle.
+* Liste des paramètres `header` indiquant quels en-têtes de requêtes HTTP peuvent être utilisés lors de la requête réelle.
 
 #### [!UICONTROL Méthodes autorisées]
 
@@ -187,9 +187,9 @@ Généralement, les mêmes éléments à prendre en compte pour la mise en cache
 | Non | Publication AEM | Authentifié | Évitez de mettre en cache les en-têtes CORS sur les requêtes authentifiées. Cela correspond à la recommandation commune de ne pas mettre en cache les requêtes authentifiées, car il est difficile de déterminer comment le statut d’authentification ou d’autorisation de la personne utilisatrice à l’origine de la requête affectera la ressource diffusée. |
 | Oui | Publication AEM | Anonyme | Les en-têtes de réponse des requêtes anonymes pouvant être mises en cache dans le Dispatcher peuvent également être mis en cache, les futures requêtes CORS pourront donc accéder au contenu mis en cache. Toute modification de configuration CORS sur l’instance de publication AEM **doit** être suivie d’une invalidation des ressources mises en cache affectées. Les bonnes pratiques imposent de purger le cache du Dispatcher lors des déploiements de code ou de configuration, car il est difficile de déterminer quel contenu mis en cache peut être affecté. |
 
-### Autorisation des en-têtes de requête CORS
+### Autoriser les en-têtes de requête CORS
 
-Pour autoriser le [En-têtes de requête HTTP à transmettre à AEM pour traitement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#specifying-the-http-headers-to-pass-through-clientheaders), ils doivent être autorisés dans le `/clientheaders` configuration.
+Pour autoriser les [en-têtes de requête HTTP à être transmis à AEM pour traitement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#specifying-the-http-headers-to-pass-through-clientheaders), ils doivent être autorisés dans la configuration `/clientheaders` de Dispatcher.
 
 ```
 /clientheaders {
@@ -200,9 +200,9 @@ Pour autoriser le [En-têtes de requête HTTP à transmettre à AEM pour traitem
 }
 ```
 
-### Mise en cache des en-têtes de réponse CORS
+### Mettre en cache des en-têtes de réponse CORS
 
-Pour permettre la mise en cache et la diffusion des en-têtes CORS sur le contenu mis en cache, ajoutez les éléments suivants : [/cache /headers configuration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#caching-http-response-headers) à l’AEM de publication `dispatcher.any` fichier .
+Pour permettre la mise en cache et la diffusion des en-têtes CORS sur le contenu mis en cache, ajoutez la [configuration /cache /headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#caching-http-response-headers) au fichier `dispatcher.any` du système de publication AEM.
 
 ```
 /publishfarm {

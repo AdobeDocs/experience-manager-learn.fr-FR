@@ -10,7 +10,7 @@ team: TM
 source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 95%
    + [Relier et dissocier](./authoring/relate-unrelate.md)
 
 + Collaboration{#collaboration}
-   + [Journal et boîte de réception](./collaboration/timeline-and-inbox.md)
+   + [Chronologie et boîte de réception](./collaboration/timeline-and-inbox.md)
    + [Commentaires et annotations](./collaboration/comments-and-annotations.md)
    + [Archivage et extraction](./collaboration/check-in-and-check-out.md)
    + [Versions](./collaboration/versions.md)
@@ -64,7 +64,7 @@ ht-degree: 95%
    + [Balises intelligentes pour les vidéos](metadata/video-smart-tags.md)
    + [Importer et exporter des métadonnées](metadata/metadata-import-export.md)
 
-+ Services de diffusion Edge{#edge-delivery-services}
++ Edge Delivery Services{#edge-delivery-services}
    + [Module externe Sidekick](./edge-delivery-services/sidekick-plugin.md)
 
 + Partage et distribution{#sharing}
@@ -81,7 +81,7 @@ ht-degree: 95%
       + [Asset Share Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [Configurer Asset Share Commons sur AEM local](./sharing/asset-share-commons-technical-video-setup.md)
       + [Établir un thème dans Asset Share Commons](./sharing/asset-share-commons-feature-video-theming.md)
-      + [Kits de ressources Asset Share Commons](./sharing/asset-share/asset-share-commons-asset-kits.md)
+      + [Kits de ressources Asset Share Commons](./sharing/asset-share/asset-share-commons-asset-kits.md)
    + [Ressources connectées](./sharing/connected-assets.md)
 
 + Intégrer aux workflows créatifs{#creative-workflows}
@@ -111,7 +111,7 @@ ht-degree: 95%
    + [Présentation de Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Application de bureau Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Images {#images}
-      + [Instantané Dynamic Media](dynamic-media/dynamic-media-snapshot.md)
+      + [Instantané Dynamic Media](dynamic-media/dynamic-media-snapshot.md)
       + [Recadrage intelligent](dynamic-media/smart-crop-feature-video-use.md)
       + [Accentuation de l’image](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
       + [Gestion des couleurs](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
@@ -127,7 +127,7 @@ ht-degree: 95%
       + [Visionneuses avec Adobe Analytics intégré](dynamic-media/dynamic-media-viewer-extension-use.md)
    + 3D {#3d}
       + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + Utilisation avec AEM Sites {#dm-with-aem-sites}
+   + Utilisation avec AEM Sites {#dm-with-aem-sites}
       + [Fragments d’expérience](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Composants principaux de Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 

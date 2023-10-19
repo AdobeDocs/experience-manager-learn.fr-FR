@@ -1,6 +1,6 @@
 ---
-title: AEM Conseils et astuces pour les champions - Manuel d’intégration de Cloud Manager
-description: Consultez ces conseils pour l’intégration de Cloud Manager et le manuel d’intégration de Rakesh Pasupuleti, champion AEM et expert.
+title: Conseils et astuces des AEM Champion - Playbook d’intégration de Cloud Manager
+description: Consultez ces conseils pour l’intégration de Cloud Manager et le playbook d’intégration de Rakesh Pasupuleti, champion et expert AEM.
 version: Cloud Service
 feature: Cloud Manager
 topic: Administration
@@ -13,22 +13,22 @@ exl-id: d1745cea-906b-46fa-adcc-7da6e7ee95db
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# AEM Conseils et astuces pour les champions - Manuel d’intégration de Cloud Manager
+# Conseils et astuces des AEM Champion - Playbook d’intégration de Cloud Manager
 
-Le manuel d’intégration vous aidera à prendre en charge AEM as a Cloud Service en tant que nouvel administrateur et développeur. Dans la feuille de calcul téléchargeable, nous vous guidons tout au long des activités que vous devriez réaliser au cours des trois premières semaines de travail, au démarrage de votre parcours d’intégration.
+Le playbook d’intégration vous aidera à prendre en main votre nouveau rôle d’administration et de développement dans AEM as a Cloud Service. Dans la feuille de calcul téléchargeable, nous vous guidons tout au long des activités que vous devriez réaliser au cours des trois premières semaines de travail, au début de votre parcours d’intégration.
 
 >[!TIP]
 >
->Téléchargez la [Guide d’intégration ici.](./assets/Cloud-Manager-for-AEM-as-a-Cloud-Service.xlsx)
+>Téléchargez le [playbook d’intégration ici.](./assets/Cloud-Manager-for-AEM-as-a-Cloud-Service.xlsx)
 
-Consultez ces conseils de votre collègue responsable technique, Rakesh Pasupuleti. Rakesh est un champion de Adobe Experience Manager, et il partage des idées sur l&#39;utilisation du manuel d&#39;intégration.
+Consultez ces conseils de votre collègue responsable technique, Rakesh Pasupuleti. Rakesh est un champion Adobe Experience Manager, et il partage des idées sur l’utilisation du playbook d’intégration.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419299?quality=12&learn=on)
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [parcours d’intégration as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr) - Guide détaillé destiné à un nouvel administrateur système qui peut initialement configurer des ressources cloud et affecter des utilisateurs à des rôles en fonction de leurs responsabilités professionnelles afin que chaque membre de l’équipe puisse se connecter et accéder à ses nouvelles ressources as a Cloud Service AEM
+* [Parcours d’intégration AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr) : il s’agit d’un guide détaillé destiné à une personne nouvellement chargée de l’administration système et qui peut initialement configurer des ressources cloud et affecter des utilisateurs et des utilisatrices à des rôles en fonction de leurs responsabilités professionnelles afin que chaque personne membre de l’équipe puisse se connecter et accéder à ses nouvelles ressources AEM as a Cloud Service

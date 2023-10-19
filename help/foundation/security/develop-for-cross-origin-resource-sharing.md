@@ -10,7 +10,7 @@ exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
 source-git-commit: 1114ec01555baa1c6ffc2ccc5e77165ec9827e4d
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 69%
+ht-degree: 84%
 
 ---
 
@@ -99,9 +99,9 @@ Access-Control-Request-Method,Access-Control-Request-Headers]"
 
 ## Configuration du Dispatcher {#dispatcher-configuration}
 
-### Autorisation des en-têtes de requête CORS
+### Autoriser les en-têtes de requête CORS
 
-Pour autoriser le [En-têtes de requête HTTP à transmettre à AEM pour traitement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#specifying-the-http-headers-to-pass-through-clientheaders), ils doivent être autorisés dans le `/clientheaders` configuration.
+Pour autoriser les [en-têtes de requête HTTP à être transmis à AEM pour traitement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#specifying-the-http-headers-to-pass-through-clientheaders), ils doivent être autorisés dans la configuration `/clientheaders` de Dispatcher.
 
 ```
 /clientheaders {
@@ -112,9 +112,9 @@ Pour autoriser le [En-têtes de requête HTTP à transmettre à AEM pour traitem
 }
 ```
 
-### Mise en cache des en-têtes de réponse CORS
+### Mettre en cache des en-têtes de réponse CORS
 
-Pour permettre la mise en cache et la diffusion des en-têtes CORS sur le contenu mis en cache, ajoutez les éléments suivants : [/cache /headers configuration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#caching-http-response-headers) à l’AEM de publication `dispatcher.any` fichier .
+Pour permettre la mise en cache et la diffusion des en-têtes CORS sur le contenu mis en cache, ajoutez la [configuration /cache /headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#caching-http-response-headers) suivante au fichier `dispatcher.any` de l’instance de publication AEM.
 
 ```
 /publishfarm {

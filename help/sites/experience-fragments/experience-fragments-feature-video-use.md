@@ -1,6 +1,6 @@
 ---
-title: Utilisation de fragments d’expérience AEM
-description: Les fragments d’expérience permettent aux auteurs de contenu de réutiliser le contenu sur plusieurs canaux, y compris les pages Sites et les systèmes tiers.
+title: Utiliser des fragments d’expérience AEM
+description: Les fragments d’expérience permettent aux auteurs et aux autrices de contenu de réutiliser le contenu sur plusieurs canaux, y compris les pages Sites et les systèmes tiers.
 sub-product: Experience Manager Sites
 feature: Experience Fragments
 topic: Content Management
@@ -15,7 +15,7 @@ exl-id: 84d2b240-5ecc-4230-97a0-6c2faead8d1a
 source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
@@ -23,15 +23,15 @@ ht-degree: 2%
 
 {{edge-delivery-services-and-page-editor}}
 
-Les fragments d’expérience permettent aux auteurs de contenu de réutiliser le contenu sur plusieurs canaux, y compris les pages Sites et les systèmes tiers.
+Les fragments d’expérience permettent aux auteurs et aux autrices de contenu de réutiliser le contenu sur plusieurs canaux, y compris les pages Sites et les systèmes tiers.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331785?quality=12&learn=on)
 
-Un fragment d’expérience est un ensemble groupé de composants qui, lorsqu’ils sont combinés, créent une expérience. Par exemple, un *Titre*, *Image*, *Description*, et *Bouton Appel À L’Action* peut être combiné pour former une expérience de teaser.
+Un fragment d’expérience est un ensemble groupé de composants qui, lorsqu’ils sont combinés, créent une expérience. À titre d’exemple, un *Titre*, une *Image*, une *Description*, et un *Bouton d’appel à l’action* peuvent être combinés pour former une expérience de teaser.
 
-Avec les fragments d’expérience, les marketeurs peuvent :
+Avec les fragments d’expérience, les personnes chargées du marketing peuvent :
 
-* Réutilisation d’une expérience sur plusieurs canaux (canaux détenus et points de contact tiers)
-* Création de variantes d’une expérience pour des cas d’utilisation spécifiques
-* Maintenir les variations synchronisées avec l’utilisation de la Live Copy
-* Expériences de publication sur Social dans Facebook et Pinterest prêtes à l’emploi
+* réutiliser une expérience sur plusieurs canaux (canaux propres et points de contact tiers) ;
+* créer des variantes d’une expérience pour des cas d’utilisation spécifiques ;
+* maintenir les variations synchronisées avec l’utilisation de la Live Copy.
+* Expériences de publication de réseaux sociaux sur Facebook et Pinterest prêtes à l’emploi

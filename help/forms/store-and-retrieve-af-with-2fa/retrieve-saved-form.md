@@ -1,5 +1,5 @@
 ---
-title: Récupération d’un formulaire adaptatif enregistré
+title: Récupérer un formulaire adaptatif enregistré
 description: Servlet pour effectuer le rendu du formulaire adaptatif avec des données enregistrées
 feature: Adaptive Forms
 type: Tutorial
@@ -13,14 +13,14 @@ exl-id: d722cb9c-6c8a-44de-aaea-fc07a555b864
 source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
 workflow-type: tm+mt
 source-wordcount: '117'
-ht-degree: 1%
+ht-degree: 99%
 
 ---
 
-# Récupération d’un formulaire enregistré
+# Récupérer un formulaire enregistré
 
 L’étape suivante consiste à créer un servlet qui effectuera le rendu du formulaire adaptatif avec les données enregistrées et ses pièces jointes.
-Le code de servlet suivant est exécuté après vérification du code OTP. Les données du formulaire adaptatif et son mappage de pièces jointes associé à l’ID d’application unique sont récupérés de la base de données. L’objet de requête est renseigné avec les données de formulaire adaptatif enregistrées et le mappage des pièces jointes. La demande est ensuite transmise pour que le formulaire &quot;storeafwithattachments&quot; soit prérenseigné avec les données d’origine et ses pièces jointes.
+Le code de servlet suivant est exécuté après vérification du code OTP. Les données du formulaire adaptatif et le mappage de ses pièces jointes associé à l’ID de l’application unique sont récupérés de la base de données. L’objet de requête est renseigné avec les données de formulaire adaptatif enregistrées et le mappage des pièces jointes. La requête est ensuite transmise pour effectuer le rendu du formulaire « storeafwithattachments » prérenseigné avec les données d’origine et ses pièces jointes.
 
 ```java
 import java.io.IOException;
@@ -133,4 +133,4 @@ public class SyntheticSlingHttpServletGetRequest extends SlingHttpServletRequest
 
 ## Étapes suivantes
 
-[Créer la bibliothèque cliente pour appeler le servlet pour stocker les données de formulaire](./create-client-lib.md)
+[Créer la bibliothèque cliente pour appeler le servlet afin de stocker les données de formulaire](./create-client-lib.md)

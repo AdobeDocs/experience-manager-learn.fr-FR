@@ -9,7 +9,7 @@ version: 6.4, 6.5, Cloud Service
 source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 89%
    + [Système de style](page-authoring/style-system-feature-video-use.md)
    + [Distorsion du temps](page-authoring/timewarp-feature-video-use.md)
    + [Lancements](page-authoring/launches.md)
-   + Apprenez de vos pairs {#expert-advice}
+   + Apprendre de vos pairs {#expert-advice}
       + [Conseils sur la hiérarchie du site](page-authoring/expert-advice/site-hierarchy.md)
 + Composants {#components}
    + [Développement des composants](components/component-development.md)
@@ -43,7 +43,7 @@ ht-degree: 89%
    + [Diffusion d’images optimisée pour le web](components/web-optimized-image-delivery.md)
    + [Console des composants](components/components-console-feature-video-use.md)
 + Fragments de contenu {#content-fragments}
-   + [Console Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
+   + [Console Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=fr){target=_blank}
    + [Créer des fragments de contenu](content-fragments/content-fragments-feature-video-use.md)
    + [Diffuser des fragments de contenu](content-fragments/content-fragments-delivery-feature-video-use.md)
    + [Traduire des fragments de contenu](content-fragments/content-fragments-translation-feature-video-use.md)
@@ -55,7 +55,7 @@ ht-degree: 89%
 
 + Développement {#developing}
    + [Archétype de projet AEM](developing/aem-project-archetype.md)
-   + [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr){target=_blank}.
+   + [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr){target=_blank}
    + [Prise en main d’AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr){target=_blank}
    + [Prise en main de l’éditeur de SPA d’AEM et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=fr){target=_blank}
    + [Étendre les propriétés de page](developing/page-properties-technical-video-develop.md)
@@ -67,7 +67,7 @@ ht-degree: 89%
    + [Partager sur les médias sociaux](developing/social-media-sharing-technical-video-use.md)
    + [Personnaliser les icônes de composant](developing/component-icons-technical-video-develop.md)
 + Personnalisation {#personalization}
-   + [Intégration avec Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html?lang=fr){target=_blank}.
+   + [Intégration avec Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html?lang=fr){target=_blank}
    + [Configurer les fragments d’expérience et Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Utiliser les fragments d’expérience avec Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configurer ContextHub](personalization/context-hub-technical-video-setup.md)
@@ -75,7 +75,7 @@ ht-degree: 89%
    + [Plans de site](./seo/sitemaps.md)
 + Applications monopages {#spa-editor}
    + [Utiliser l’éditeur de SPA](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [Prise en main de l’éditeur de SPA d’AEM et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=fr){target=_blank}.
+   + [Prise en main de l’éditeur de SPA d’AEM et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=fr){target=_blank}
 + Gestion de plusieurs sites {#multi-site-management}
    + [Présentation de la copie de la langue](./multi-site-management/language-copy-overview.md)
    + [Live Copy et plan directeur](./multi-site-management/live-copy-and-blueprint.md)
@@ -99,14 +99,14 @@ ht-degree: 89%
 + Intégrations {#integrations}
    + Experience Platform {#experience-platform}
       + [Générer des FPID](integrations/platform/fpid.md)
-      + [SDK Web](integrations/platform/web-sdk.md)
-      + [Analytics à l’aide du SDK Web Platform](integrations/platform/analytics-using-web-sdk.md)
-   + Balises de collecte de données Experience Platform (Launch) {#experience-platform-data-collection-tags}
+      + [SDK web](integrations/platform/web-sdk.md)
+      + [Analyse à l’aide du SDK web Platform](integrations/platform/analytics-using-web-sdk.md)
+   + Balises de collecte de données Experience Platform (Launch) {#experience-platform-data-collection-tags}
       + [Vue d’ensemble](integrations/experience-platform/data-collection/tags/overview.md)
-      + [Création d’une propriété de balise](integrations/experience-platform/data-collection/tags/create-tag-property.md)
-      + [Connexion d’AEM et de la propriété de balise à l’aide d’IMS](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
-      + [Création d’AEM Launch Cloud Service](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
-      + [Débogage d’une implémentation de balises (Launch)](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
+      + [Créer une propriété de balise](integrations/experience-platform/data-collection/tags/create-tag-property.md)
+      + [Connecter AEM et la propriété de balise à l’aide d’IMS](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
+      + [Créer un service cloud Launch AEM](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
+      + [Déboguer une implémentation de balises (Launch)](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Couche de données client Adobe {#adobe-client-data-layer}
       + [Utiliser la couche de données client Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
       + [Personnaliser la couche de données client Adobe](integrations/adobe-client-data-layer/data-layer-customize.md)
@@ -123,7 +123,7 @@ ht-degree: 89%
       + [Créer une Activity Target à l’aide d’offres de fragments d’expérience](integrations/adobe-target/create-target-activity.md)
       + [Personnalisation à l’aide du compositeur d’expérience visuelle](integrations/adobe-target/personalization-using-vec.md)
       + [Personnaliser l’expérience complète d’une page web](integrations/adobe-target/personalization-web-page.md)
-+ Apprenez de vos pairs {#expert-resources}
++ Apprendre de vos pairs {#expert-resources}
    + [Vue d’ensemble](expert-resources/learn-from-your-peers-overview.md)
    + [Évaluation de la maturité d’AEM Sites](expert-resources/maturity-assessment.md)
    + [Maintenance du site](expert-resources/site-maintenance.md)

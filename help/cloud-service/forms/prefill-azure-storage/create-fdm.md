@@ -1,6 +1,6 @@
 ---
-title: Créer un modèle de données de formulaire avec stockage Azure
-description: Intégration d’AEM Forms CS au stockage Azure à l’aide du modèle de données de formulaire
+title: Créer un modèle de données de formulaire hébergé dans l’espace de stockage Azure
+description: Intégrer AEM Forms CS à l’espace de stockage Azure à l’aide du modèle de données de formulaire
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -12,13 +12,13 @@ exl-id: afc0df42-b4fc-4d04-a36e-63e5a9438597
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '82'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
-# Création de l’intégration avec Azure Storage
+# Créer l’intégration à Azure Storage
 
-L’étape suivante consiste à créer l’intégration entre AEM Forms CS et Azure Storage à l’aide du modèle de données de formulaire.
+L’étape suivante consiste à créer l’intégration entre AEM Forms CS et Azure Storage à l’aide du modèle de données de formulaire.
 La vidéo suivante vous guide tout au long des étapes nécessaires à la création de l’intégration.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335385?quality=12&learn=on)

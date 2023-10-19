@@ -1,7 +1,7 @@
 ---
-title: Utilisation de la différence de page avec AEM Sites
+title: Utiliser la différence de page avec AEM Sites
 seo-title: Using Page Difference with AEM Sites
-description: Les fonctionnalités de différence de page d’AEM Sites affichent une vue rapide et codée en couleur de ce que le contenu a changé dans une page (version, Live Copy, lancements, copie de langue).
+description: Les fonctionnalités de différence de page d’AEM Sites affichent une vue rapide et codée en couleur de ce qui a changé dans le contenu d’une page (version, Live Copy, lancements, copie de langue).
 seo-description: AEM Sites' page difference capabilities show provides a quick, color-coded view of what content has changed in a page (version, live copy, launches, language copy).
 topics: authoring
 audience: author, marketer
@@ -19,37 +19,37 @@ exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
 source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Utilisation de la fonction Différence de page {#using-page-difference-with-aem-sites}
+# Utiliser la fonction Différence de page {#using-page-difference-with-aem-sites}
 
 {{edge-delivery-services-and-page-editor}}
 
-Les fonctionnalités de différence de page d’AEM Sites affichent une vue rapide et codée en couleur de ce que le contenu a changé dans une page (version, Live Copy, lancements, copie de langue).
+Les fonctionnalités de différence de page d’AEM Sites affichent une vue rapide et codée en couleur de ce qui a changé dans le contenu d’une page (version, Live Copy, lancements, copie de langue).
 
-## Comparaison des versions de page {#comparing-page-versions}
+## Comparer des versions de page {#comparing-page-versions}
 
 >[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
 
-**Modifications du HTML**
+**Modifications HTML**
 
-* **Vert**: nouveau contenu
-* **Rouge**: contenu supprimé
+* **Vert** : nouveau contenu
+* **Rouge** : contenu supprimé
 
 **Modifications des composants**
 
-* **Vert**: nouveau composant
-* **Rouge**: composant supprimé
-* **bleu**: composant modifié
+* **Vert** : nouveau composant
+* **Rouge** : composant supprimé
+* **Bleu** : composant modifié
 
-## Comparaison des pages de lancement {#comparing-launch-pages}
+## Comparer des pages de lancement {#comparing-launch-pages}
 
 >[!VIDEO](https://video.tv.adobe.com/v/17746?quality=12&learn=on)
 
-La fonction Différence de page peut également être utilisée pour identifier la différence entre les plans directeurs et les Live Copies, ainsi que les plans directeurs et les copies de langue.
+La fonction Différence de page peut également être utilisée pour identifier des différences entre les plans directeurs et les Live Copies, ainsi qu’entre les plans directeurs et les copies de langue.
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Documentation de l’outil de comparaison des pages](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html)
+* [Documentation de la fonction Différence de page](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/page-diff.html?lang=fr)

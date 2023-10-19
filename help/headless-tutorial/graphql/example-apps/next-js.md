@@ -10,12 +10,12 @@ level: Beginner
 kt: 10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM sans affichage as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
 source-git-commit: 29b9e4a23d8f4ae0494fc43f76f7449062364843
 workflow-type: tm+mt
 source-wordcount: '817'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -31,12 +31,12 @@ Afficher le [code source sur GitHub](https://github.com/adobe/aem-guides-wknd-gr
 
 Les outils suivants doivent être installés localement :
 
-+ [Node.js v18](https://nodejs.org/)
++ [Node.js v18](https://nodejs.org/)
 + [Git](https://git-scm.com/)
 
 ## Configuration requise d’AEM
 
-L’application Next.js fonctionne avec les options de déploiement AEM suivantes. Tous les déploiements requis [WKND Shared v3.0.0+](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) ou [Site WKND v3.0.0+](https://github.com/adobe/aem-guides-wknd/releases/latest) à installer dans l&#39;environnement as a Cloud Service AEM.
+L’application Next.js fonctionne avec les options de déploiement AEM suivantes. Tous les déploiements nécessitent que la version [v3.0.0 ou supérieure de WKND Shared](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) ou la version [v3.0.0 ou supérieure du site WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) soient installés dans l’environnement AEM as a Cloud Service.
 
 Cet exemple d’application Next.js est conçu pour se connecter au service de __publication AEM__.
 

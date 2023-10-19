@@ -1,7 +1,7 @@
 ---
-title: Création d’une page dans AEM Sites
+title: Créer une page dans AEM Sites
 seo-title: The following video highlights how to author a new page in Adobe Experience Manager Sites using the Site Editor's UI
-description: La vidéo suivante explique comment créer une page dans Adobe Experience Manager Sites à l’aide de l’interface utilisateur de l’éditeur de site.
+description: La vidéo suivante explique comment créer une page dans Adobe Experience Manager Sites à l’aide de l’interface utilisateur de l’éditeur de site.
 seo-description: The following video highlights how to author a new page in Adobe Experience Manager Sites using the Site Editor's UI
 feature: Page Editor, Editable Templates
 topics: authoring, publishing
@@ -18,32 +18,32 @@ exl-id: a14c511f-504a-48ce-864b-b1a30cbaea9a
 source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
-# Création d’une page {#authoring-page-aem-sites}
+# Créer une page {#authoring-page-aem-sites}
 
 {{edge-delivery-services-and-page-editor}}
 
-Découvrez comment créer une page dans Adobe Experience Manager Sites à l’aide de l’interface utilisateur de l’éditeur de site.
+Découvrez comment créer une page dans Adobe Experience Manager Sites à l’aide de l’interface utilisateur de l’éditeur de site.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31828?quality=12&learn=on)
 
-Dans cette vidéo, les fonctionnalités suivantes sont abordées :
+Dans cette vidéo, les fonctionnalités suivantes sont abordées :
 
-* Créer une page à partir d&#39;un modèle
-* Introduit différents modes de création pour une page
+* Créer une page à partir d’un modèle
+* Il existe différents modes de création d’une page.
    * Modifier
-   * Mise en page
-   * Développeur
-   * Distorsion du temps
+   * Disposition
+   * Développeur ou développeuse
+   * Timewarp
 * Fonctionnalités de l’éditeur de page
-   * Outil de recherche
+   * Outil de recherche de composant
    * Outil de recherche de ressources
 * Ajouter du contenu à un composant existant
-* Ajout d’un nouveau composant à votre page
-* Propriétés de la page
+* Ajouter un nouveau composant à votre page
+* Propriétés de page
    * Publier la page
    * Annuler la publication de la page
    * Modifier le modèle

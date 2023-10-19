@@ -13,7 +13,7 @@ exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
 source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
 source-wordcount: '1218'
-ht-degree: 83%
+ht-degree: 90%
 
 ---
 
@@ -32,7 +32,7 @@ _Les captures d’écran de l’IDE de ce chapitre proviennent de [Visual Studi
 
 Les logiciels suivants doivent être installés :
 
-- [Node.js v18](https://nodejs.org/fr)
+- [Node.js v18](https://nodejs.org/fr)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Objectifs
@@ -95,7 +95,7 @@ Pour obtenir l’application React :
 
 >[!IMPORTANT]
 >
->   Cette application React est partiellement mise en oeuvre. Suivez les étapes de ce tutoriel pour terminer la mise en oeuvre. Les fichiers JavaScript qui doivent être implémentés comportent les commentaires suivants. Veillez à ajouter ou mettre à jour le code dans ces fichiers avec le code spécifié dans ce tutoriel.
+>   Cette application React est partiellement implémentée. Suivez les étapes de ce tutoriel pour terminer la mise en œuvre. Les fichiers JavaScript qui doivent être implémentés comportent les commentaires suivants. Veillez à ajouter ou mettre à jour le code dans ces fichiers avec le code spécifié dans ce tutoriel.
 >
 >
 > //*********************************
@@ -145,7 +145,7 @@ export default aemHeadlessClient;
 
 ## Implémenter pour exécuter les requêtes persistantes GraphQL d’AEM
 
-Pour mettre en oeuvre le générique `fetchPersistedQuery(..)` pour exécuter AEM requêtes persistantes GraphQL, ouvrez la fonction `usePersistedQueries.js` fichier . La fonction `fetchPersistedQuery(..)` utilise la fonction `runPersistedQuery()` de l’objet `aemHeadlessClient` pour exécuter la requête de manière asynchrone avec un comportement basé sur la promesse.
+Pour mettre en œuvre la fonction `fetchPersistedQuery(..)` générique pour exécuter les requêtes persistantes GraphQL AEM, ouvrez le fichier `usePersistedQueries.js`. La fonction `fetchPersistedQuery(..)` utilise la fonction `runPersistedQuery()` de l’objet `aemHeadlessClient` pour exécuter la requête de manière asynchrone avec un comportement basé sur la promesse.
 
 Plus tard, le hook personnalisé `useEffect` de React appelle cette fonction pour récupérer des données spécifiques d’AEM.
 
@@ -496,7 +496,7 @@ Vérifiez l’application [http://localhost:3000/](http://localhost:3000/) et cl
 
 ## Ce qui se passe
 
-Ouvrez le **Outils de développement** > **Réseau** et _Filtrer_ pour `all-teams` requête. Remarquez la demande d’API GraphQL `/graphql/execute.json/my-project/all-teams` est contre `http://localhost:3000` et **NOT** contre la valeur de `REACT_APP_HOST_URI`, par exemple `<https://publish-pxxx-exxx.adobeaemcloud.com`. Les demandes sont effectuées par rapport au domaine de l’application React, car [configuration du proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) est activé à l’aide de `http-proxy-middleware` module .
+Ouvrez le **Outils de développement** > **Réseau** et _Filtrer_ pour `all-teams` requête. Remarquez la demande d’API GraphQL `/graphql/execute.json/my-project/all-teams` est contre `http://localhost:3000` et **NOT** contre la valeur de `REACT_APP_HOST_URI`, par exemple `<https://publish-pxxx-exxx.adobeaemcloud.com`. Les requêtes sont effectuées par rapport au domaine de l’application React, car la [configuration du proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) est activée à l’aide du module `http-proxy-middleware`.
 
 
 ![Requête de l’API GraphQL via proxy.](assets/graphql-and-external-app/graphql-api-request-via-proxy.png)
@@ -511,7 +511,7 @@ module.exports = function(app) {
   ...
 ```
 
-L’utilisation du proxy local n’est pas une option appropriée pour le déploiement en production et vous trouverez plus de détails à l’adresse _Déploiement en production_ .
+Cependant, le proxy local n’est pas une option appropriée pour le déploiement en production et vous trouverez plus de détails dans la section _Déploiement en production_.
 
 ## Félicitations !{#congratulations}
 

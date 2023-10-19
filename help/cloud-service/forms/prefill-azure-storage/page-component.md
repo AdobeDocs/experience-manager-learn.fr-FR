@@ -12,52 +12,52 @@ exl-id: 7469aa7f-1794-40dd-990c-af5d45e85223
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
 # Composant de page
 
-Un composant de page est un composant normal responsable du rendu d’une page. Nous allons créer un composant de page et nous allons associer ce composant de page à un nouveau modèle de formulaire adaptatif. Cela garantit que notre code ne sera exécuté que lorsqu’un formulaire adaptatif est basé sur ce modèle particulier.
+Un composant de page est un composant normal qui se charge du rendu d’une page. Nous allons créer un composant de page et nous allons associer ce composant de page à un nouveau modèle de formulaire adaptatif. Cela garantit que notre code ne sera exécuté que lorsqu’un formulaire adaptatif est basé sur ce modèle particulier.
 
 ## Créer un composant de page
 
-Connectez-vous à votre instance AEM Forms locale prête pour le cloud. Créez la structure suivante sous le dossier des applications
+Connectez-vous à votre instance AEM Forms locale compatible avec le cloud. Créez la structure suivante sous le dossier des applications.
 ![page-component](./assets/page-component1.png)
 
-1. Cliquez avec le bouton droit sur le dossier de page et créez un noeud appelé storeandfetch de type cq:Component .
-1. Enregistrez les modifications
-1. Ajoutez les propriétés suivantes au `storeandfetch` noeud et enregistrement
+1. Cliquez avec le bouton droit sur le dossier de la page et créez un nœud appelé storeandfetch de type cq:Component.
+1. Enregistrez les modifications.
+1. Ajoutez les propriétés suivantes au nœud `storeandfetch` et enregistrez.
 
 | **Nom de la propriété** | **Type de propriété** | **Valeur de la propriété** |
 |-------------------------|-------------------|----------------------------------------|
-| componentGroup | Chaîne | masqué |
+| componentGroup | Chaîne | Masqué |
 | jcr:description | Chaîne | Type de page de modèle de formulaire adaptatif |
 | jcr:title | Chaîne | Page de modèle de formulaire adaptatif |
 | sling:resourceSuperType | Chaîne | `fd/af/components/page2/aftemplatedpage` |
 
-Copiez le `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` et collez-le sous le `storeandfetch` noeud . Renommez la variable `aftemplatedpage.jsp` to `storeandfetch.jsp`.
+Copiez le `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp` et collez-le sous le nœud `storeandfetch`. Renommez le `aftemplatedpage.jsp` en tant que `storeandfetch.jsp`.
 
-Ouvrir `storeandfetch.jsp` et ajoutez la ligne suivante :
+Ouvrez `storeandfetch.jsp` et ajoutez la ligne suivante :
 
 ```jsp
 <cq:include script="azureportal.jsp"/>
 ```
 
-sous le
+sous
 
 ```jsp
 <cq:include script="fallbackLibrary.jsp"/>
 ```
 
-Le code final doit ressembler à ce qui suit :
+Le code final doit ressembler à ce qui suit :
 
 ```jsp
 <cq:include script="fallbackLibrary.jsp"/>
 <cq:include script="azureportal.jsp"/>
 ```
 
-Créez un fichier appelé azureportal.jsp sous le noeud storeandfetch, copiez le code suivant dans le fichier azureportal.jsp et enregistrez les modifications.
+Créez un fichier appelé azureportal.jsp sous le nœud storeandfetch, copiez le code suivant dans le fichier azureportal.jsp et enregistrez les modifications.
 
 ```jsp
 <%@page session="false" %>
@@ -77,7 +77,7 @@ Créez un fichier appelé azureportal.jsp sous le noeud storeandfetch, copiez le
 %>
 ```
 
-Dans ce code, nous obtenons la valeur du paramètre de requête **guid** et stockez-le dans une variable appelée BlobId. Ce BlobId est ensuite transmis dans la requête sling à l’aide de l’attribut paramMap . Pour que ce code fonctionne, il est supposé que vous disposez d’un formulaire basé sur un modèle de données de formulaire pris en charge par Azure Storage et que le service de lecture du modèle de données de formulaire est lié à un attribut de requête appelé BlobId comme illustré dans la capture d’écran ci-dessous.
+Dans ce code, nous obtenons la valeur du paramètre de requête **guid** et nous la stockons dans une variable appelée BlobId. Ce BlobId est ensuite transmis dans la requête sling à l’aide de l’attribut paramMap. Pour que ce code fonctionne, il est supposé que vous disposez d’un formulaire basé sur un modèle de données de formulaire pris en charge par Azure Storage et que le service de lecture du modèle de données de formulaire est lié à un attribut de requête appelé BlobId comme illustré dans la capture d’écran ci-dessous.
 
 ![fdm-request-attribute](./assets/fdm-request-attribute.png)
 

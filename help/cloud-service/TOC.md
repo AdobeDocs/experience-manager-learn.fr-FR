@@ -9,7 +9,7 @@ team: TM
 source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
 workflow-type: tm+mt
 source-wordcount: '1037'
-ht-degree: 80%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 80%
 + [Vue d’ensemble](./overview.md)
 + Essais AEM {#aem-trials}
    + [Images](./aem-trials/images.md)
-+ Présentation d&#39;AEM as a Cloud Service{#introduction}
++ Présentation d’AEM as a Cloud Service{#introduction}
    + [Qu’est-ce qu’AEM as a Cloud Service ?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Évolution](./introduction/evolution.md)
    + [Architecture](./introduction/architecture.md)
@@ -38,7 +38,7 @@ ht-degree: 80%
    + [Sling](./underlying-technology/introduction-sling.md)
    + [Services de création et de publication](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
-+ Services de diffusion Edge {#edge-delivery-services}
++ Edge Delivery Services {#edge-delivery-services}
    + [Module externe AEM Assets Sidekick](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
 + Cloud Manager {#cloud-manager}
    + [Programmes](./cloud-manager/programs.md)
@@ -65,21 +65,21 @@ ht-degree: 80%
          + [Générer un jeton d’accès](./developing/extensibility/app-builder/jwt-auth.md)
       + Extensibilité de l’interface utilisateur{#ui}
          + [Vue d’ensemble](./developing/extensibility/ui/overview.md)
-         + [Projet de console Adobe Developer](./developing/extensibility/ui/adobe-developer-console-project.md)
-         + [Initialisation de l’application](./developing/extensibility/ui/app-initialization.md)
+         + [Projet Adobe Developer Console](./developing/extensibility/ui/adobe-developer-console-project.md)
+         + [Initialiser l’application](./developing/extensibility/ui/app-initialization.md)
          + [Enregistrer l’extension](./developing/extensibility/ui/extension-registration.md)
          + [Boîte de dialogue modale](./developing/extensibility/ui/modal.md)
-         + [Action Adobe I/O Runtime](./developing/extensibility/ui/runtime-action.md)
+         + [Action Adobe I/O Runtime](./developing/extensibility/ui/runtime-action.md)
          + [Vérifier](./developing/extensibility/ui/verify.md)
          + [Déployer](./developing/extensibility/ui/deploy.md)
          + Fragments de contenu{#content-fragments}
             + [Vue d’ensemble](./developing/extensibility/ui/content-fragments/overview.md)
             + Exemples{#examples}
-               + [Génération d’images AI](./developing/extensibility/ui/content-fragments/examples/console-image-generation-and-image-upload.md)
-               + [Mise à jour de propriété en bloc](./developing/extensibility/ui/content-fragments/examples/console-bulk-property-update.md)
+               + [Génération d’images IA](./developing/extensibility/ui/content-fragments/examples/console-image-generation-and-image-upload.md)
+               + [Mise à jour en bloc des propriétés](./developing/extensibility/ui/content-fragments/examples/console-bulk-property-update.md)
                + [Colonnes de grille personnalisées](./developing/extensibility/ui/content-fragments/examples/custom-grid-columns.md)
-               + [Exporter au format XML](./developing/extensibility/ui/content-fragments/examples/editor-export-to-xml.md)
-               + [Bouton Barre d’outils de l’éditeur de texte enrichi](./developing/extensibility/ui/content-fragments/examples/editor-rte-toolbar.md)
+               + [Exports au format XML](./developing/extensibility/ui/content-fragments/examples/editor-export-to-xml.md)
+               + [Bouton de la barre d’outils de l’éditeur de texte enrichi](./developing/extensibility/ui/content-fragments/examples/editor-rte-toolbar.md)
                + [Widgets de l’éditeur de texte enrichi](./developing/extensibility/ui/content-fragments/examples/editor-rte-widget.md)
                + [Badges de l’éditeur de texte enrichi](./developing/extensibility/ui/content-fragments/examples/editor-rte-badges.md)
    + Principes de base de développement{#basics}
@@ -110,7 +110,7 @@ ht-degree: 80%
       + [Vue d’ensemble](./developing/rde/overview.md)
       + [Configuration](./developing/rde/how-to-setup.md)
       + [Utilisation](./developing/rde/how-to-use.md)
-      + [Cycle de vie d&#39;un développement](./developing/rde/development-life-cycle.md)
+      + [Cycle de vie de développement](./developing/rde/development-life-cycle.md)
    + [Documentation JavaDocs de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + Déboguer AEM{#debugging}
    + Déboguer le SDK AEM{#debugging-aem-sdk}
@@ -127,9 +127,9 @@ ht-degree: 80%
       + [Developer Console](./debugging/cloud-service/developer-console.md)
       + [Navigateur de référentiel](./debugging/cloud-service/repository-browser.md)
       + Risques{#risks}
-         + [Avertissements relatifs aux conversions](./debugging/cloud-service/risks/traversals.md)
+         + [Avertissements transversaux](./debugging/cloud-service/risks/traversals.md)
 + Diffusion de contenu{#content-delivery}
-   + [Redirections d’URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=fr){target=_blank}.
+   + [Redirections d’URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=fr){target=_blank}
 + Mise en cache{#caching}
    + [Vue d’ensemble](./caching/overview.md)
    + [Service de publication d’AEM](./caching/publish.md)
@@ -186,24 +186,24 @@ ht-degree: 80%
       + [Modernisateur du référentiel de code](./migration/cloud-acceleration-manager/code-repository-modernizer.md)
       + [Convertisseur du Dispatcher](./migration/cloud-acceleration-manager/dispatcher-converter.md)
       + [Index Converter](./migration/cloud-acceleration-manager/index-converter.md)
-      + [Migration des workflows de ressources  Outil](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
+      + [Outil de migration des workflows de ressources](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Naviguer dans Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Utiliser Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
-+ [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html){target=_blank}
++ [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=fr){target=_blank}
 + Forms{#forms}
    + Développer pour Forms as a Cloud Service{#developing-for-cloud-service}
       + [1 - Prise en main](./forms/developing-for-cloud-service/getting-started.md)
-      + [2 - Installation de IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
-      + [3 - Configuration Git](./forms/developing-for-cloud-service/setup-git.md)
+      + [2 - Installer IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
+      + [3 - Configurer Git](./forms/developing-for-cloud-service/setup-git.md)
       + [4 - Synchroniser IntelliJ avec AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
-      + [5 - Création d’un formulaire](./forms/developing-for-cloud-service/deploy-your-first-form.md)
+      + [5 - Créer un formulaire](./forms/developing-for-cloud-service/deploy-your-first-form.md)
       + [6 - Gestionnaire d’envoi personnalisé](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
-      + [7 - Activation des composants du portail Forms](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [8 - Inclure les Cloud Service et FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
-      + [9 - Configuration cloud contextuelle](./forms/developing-for-cloud-service/context-aware-fdm.md)
-      + [10 - Push to Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
-      + [11 - Déploiement dans l’environnement de développement](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
-      + [12 - Mise à jour de l’archétype Maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
+      + [7 - Activer les composants du Portail Formulaires](./forms/developing-for-cloud-service/forms-portal-components.md)
+      + [8 - Inclure Cloud Services et FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [9 - Configuration cloud basée sur le contexte](./forms/developing-for-cloud-service/context-aware-fdm.md)
+      + [10 -Transmettre à Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [11 - Déployer sur l’environnement de développement](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [12 - Mettre à jour l’archétype Maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + Créer un formulaire adaptatif{#create-first-af}
       + [Présentation](./forms/create-first-af/introduction.md)
       + [Créer un thème](./forms/create-first-af/create-theme.md)
@@ -216,14 +216,14 @@ ht-degree: 80%
       + [Configurer le panneau Ressources](./forms/create-first-af/configure-assets-panel.md)
       + [Configurer le panneau Démarrage](./forms/create-first-af/configure-start-panel.md)
       + [Ajouter et configurer la barre d’outils](./forms/create-first-af/add-configure-toolbar.md)
-   + Service d’envoi personnalisé avec formulaire sans tête{#custom-submit-headless-forms}
-      + [1 - Introduction](./forms/custom-submit-headless-forms/introduction.md)
-      + [2 - Création d’un service d’envoi personnalisé](./forms/custom-submit-headless-forms/custom-submit-service.md)
+   + Service d’envoi personnalisé avec formulaire découplé{#custom-submit-headless-forms}
+      + [1. Présentation](./forms/custom-submit-headless-forms/introduction.md)
+      + [2 - Créer un service d’envoi personnalisé](./forms/custom-submit-headless-forms/custom-submit-service.md)
       + [3 - Afficher la réponse](./forms/custom-submit-headless-forms/handle-response-react-app.md)
-   + AEM Forms et Analytics{#forms-and-analytics}
+   + AEM Forms et Analytics{#forms-and-analytics}
       + [Présentation](./forms/form-data-analytics/introduction.md)
-      + [Création d’éléments de données](./forms/form-data-analytics/data-elements.md)
-      + [Création de règles](./forms/form-data-analytics/rules.md)
+      + [Créer des éléments de données](./forms/form-data-analytics/data-elements.md)
+      + [Créer des règles](./forms/form-data-analytics/rules.md)
       + [Tester la solution](./forms/form-data-analytics/test.md)
    + Génération de documents dans AEM Forms CS{#doc-gen-formscs}
       + [Présentation](./forms/doc-gen-forms-cs/introduction.md)
@@ -255,13 +255,13 @@ ht-degree: 80%
       + [Préremplir un formulaire](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [Envois de requêtes](./forms/forms-cs-azure-portal/query-submitted-data.md)
    + Enregistrer et reprendre le remplissage du formulaire{#prefill-azure-storage}
-      + [1 - Introduction](./forms/prefill-azure-storage/introduction.md)
-      + [2 - Création du composant Page](./forms/prefill-azure-storage/page-component.md)
+      + [1. Présentation](./forms/prefill-azure-storage/introduction.md)
+      + [2 - Créer un composant Page](./forms/prefill-azure-storage/page-component.md)
       + [3 - Créer un modèle de formulaire adaptatif](./forms/prefill-azure-storage/associate-page-component.md)
-      + [4 - Création de l’intégration Azure Storage](./forms/prefill-azure-storage/create-fdm.md)
-      + [5 - Création de l’intégration SendGrid](./forms/prefill-azure-storage/send-grid-fdm.md)
-      + [6 - Création du formulaire adaptatif](./forms/prefill-azure-storage/create-af.md)
-      + [7 - Déploiement des exemples de ressources](./forms/prefill-azure-storage/deploy-sample-assets.md)
+      + [4 - Créer une intégration du stockage Azure](./forms/prefill-azure-storage/create-fdm.md)
+      + [5 - Créer une intégration SendGrid](./forms/prefill-azure-storage/send-grid-fdm.md)
+      + [6 - Créer un formulaire adaptatif](./forms/prefill-azure-storage/create-af.md)
+      + [7 - Déployer les exemples de ressources](./forms/prefill-azure-storage/deploy-sample-assets.md)
 
    + Créer un processus d’analyse{#create-aem-workflow}
       + [Externaliser le stockage des workflows](./forms/create-aem-workflow/externalize-workflow.md)
@@ -291,9 +291,9 @@ ht-degree: 80%
       + [Créer un modèle de données de formulaire](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [Tester un envoi de formulaire](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Tester un événement de clic](./forms/integrate-with-salesforce/create-lead-click-event.md)
-   + Stocker les envois de formulaire dans un lecteur et un point de partage{#one-drive}
+   + Stocker les envois de formulaire sur un lecteur et dans SharePoint{#one-drive}
       + [Stocker les données de formulaire sur un lecteur](./forms/forms-cs-one-drive/store-form-submission-one-drive.md)
-      + [Stocker les données de formulaire dans sharepoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
+      + [Stocker les données de formulaire dans SharePoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
 + Extensibilité Assets Compute{#asset-compute}
    + [Présentation](./asset-compute/overview.md)
    + Configuration{#set-up}
@@ -317,16 +317,16 @@ ht-degree: 80%
    + [Résolution des problèmes](./asset-compute/troubleshooting.md)
 
 + Tutoriels en plusieurs étapes{#multi-step-tutorials}
-   + [Développement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr){target=_blank}.
+   + [Développement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr){target=_blank}
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr){target=_blank}
    + [Éditeur de SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=fr){target=_blank}
    + [AEM Sites et Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=fr){target=_blank}
    + [Authentification basée sur les jetons](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr){target=_blank}
 + Ressources expertes {#expert-resources}
-   + AEM champions {#aem-champions}
-      + [Manuel d’intégration de Cloud Manager](./expert-resources/aem-champions/onboarding-playbook.md)
-      + [Types d’environnement de Cloud Manager](./expert-resources/aem-champions/environment-types.md)
-      + [Interface utilisateur de Cloud Manager](./expert-resources/aem-champions/cloud-manager-ui.md)
+   + AEM Champions {#aem-champions}
+      + [Playbook d’intégration de Cloud Manager](./expert-resources/aem-champions/onboarding-playbook.md)
+      + [Types d’environnements Cloud Manager](./expert-resources/aem-champions/environment-types.md)
+      + [Interface utilisateur de Cloud Manager](./expert-resources/aem-champions/cloud-manager-ui.md)
    + [AEM Experts Series](./expert-resources/expert-series/aem-experts-series.md)
    + Cloud 5{#cloud-5}
       + [Présentation](./expert-resources/cloud-5/cloud5-introduction.md)

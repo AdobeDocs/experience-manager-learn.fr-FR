@@ -1,5 +1,5 @@
 ---
-title: Création de bibliothèques clientes
+title: Créer des bibliothèques clientes
 description: Créer une bibliothèque cliente pour gérer l’événement clic du bouton "Enregistrer et quitter"
 feature: Adaptive Forms
 type: Tutorial
@@ -13,15 +13,15 @@ exl-id: c90eea73-bd44-40af-aa98-d766aa572415
 source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
 source-wordcount: '148'
-ht-degree: 8%
+ht-degree: 54%
 
 ---
 
 # Créer une bibliothèque cliente
 
-Créer [bibliothèque cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=fr) qui inclura le code pour appeler la méthode `doAjaxSubmitWithFileAttachment` de `guideBridge` API sur l’événement click du bouton identifié par la classe CSS **bouton enregistrer**.  Nous transmettons les données du formulaire adaptatif, `fileMap`, et la variable `mobileNumber` au point d’entrée en écoute à l’adresse `**/bin/storeafdatawithattachments`
+Créer [bibliothèque cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=fr) qui inclura le code pour appeler la méthode `doAjaxSubmitWithFileAttachment` de `guideBridge` API sur l’événement click du bouton identifié par la classe CSS **bouton enregistrer**.  Les données du formulaire adaptatif, `fileMap`, et la propriété `mobileNumber` sont transmises au point d’entrée en écoute à l’emplacement `**/bin/storeafdatawithattachments`.
 
-Une fois les données du formulaire enregistrées, un identifiant d’application unique est généré et présenté à l’utilisateur dans une boîte de dialogue. Lorsque la boîte de dialogue est désactivée, l’utilisateur est amené au formulaire, ce qui lui permet de récupérer le formulaire adaptatif enregistré à l’aide de l’ID d’application unique.
+Une fois les données du formulaire enregistrées, un identifiant d’application unique est généré et présenté à l’utilisateur ou à l’utilisatrice dans une boîte de dialogue. En fermant la boîte de dialogue, la personne utilisatrice est amenée au formulaire, ce qui lui permet de récupérer le formulaire adaptatif enregistré à l’aide de l’ID d’application unique.
 
 ```java
 $(document).ready(function () {
@@ -73,4 +73,4 @@ Les bibliothèques clientes utilisées dans cet exemple peuvent être [télécha
 
 ## Étapes suivantes
 
-[Vérifier les utilisateurs avec le service OTP](./verify-users-with-otp.md)
+[Vérifier les utilisateurs et utilisatrices avec le service OTP](./verify-users-with-otp.md)

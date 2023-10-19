@@ -1,6 +1,6 @@
 ---
-title: Création d’un composant de liste d’images complexe - AEM premier tutoriel sans affichage
-description: Découvrez comment utiliser le fragment de contenu, les références de contenu et les images.
+title: Créer un composant Liste d’images complexe - Premier tutoriel AEM Headless
+description: Apprenez à utiliser des fragments de contenu, des références de contenu et des images.
 version: Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Development
@@ -14,35 +14,35 @@ exl-id: ad06b0f3-afa7-4661-aa66-0674d2e6bb43
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Créer un composant complexe
 
-Bienvenue dans ce chapitre de tutoriel où nous allons explorer la création d’un composant de liste d’images complexe qui effectue le rendu des fragments de contenu, des références aux fragments de contenu imbriqués et des ressources d’images référencées. Nous allons aller plus loin en rendant l’application React modifiable à l’aide d’Universal Editor.
+Bienvenue dans ce chapitre du tutoriel dans lequel nous explorerons la création d’un composant Liste d’images complexe qui restitue les fragments de contenu, les références de fragments de contenu imbriquées et les ressources d’image référencées. Nous allons aller plus loin en rendant l’application React modifiable à l’aide de l’éditeur universel.
 
-Les fragments de contenu dans Adobe Experience Manager (AEM) offrent une approche structurée de la gestion du contenu. Nous utilisons des fragments de contenu pour remplir notre composant de liste d’images, en gérant les références imbriquées et en affichant les ressources d’image référencées.
+Les fragments de contenu dans Adobe Experience Manager (AEM) offrent une approche structurée de la gestion du contenu. Nous exploitons les fragments de contenu pour remplir notre composant Liste d’images, en gérant les références imbriquées et en affichant les ressources d’images référencées.
 
-Dans ce tutoriel, nous vous guidons tout au long de la création du composant Liste d’images, en gérant les références imbriquées, en rendant les ressources d’image référencées et en intégrant l’éditeur universel. Vous apprendrez à configurer des dépendances, à concevoir la structure des composants, à récupérer et à analyser les fragments de contenu et à rendre l’application modifiable à l’aide de l’éditeur universel.
+Tout au long de ce tutoriel, nous vous guiderons dans la création du composant Liste d’images, la gestion des références imbriquées, le rendu des ressources d’image référencées et l’intégration de l’éditeur universel. Vous apprendrez à configurer des dépendances, à concevoir la structure des composants, à récupérer et à analyser des fragments de contenu et à rendre l’application modifiable à l’aide de l’éditeur universel.
 
-D’ici la fin de ce chapitre de tutoriel, vous disposerez d’un composant de liste d’images entièrement fonctionnel et modifiable. Vous disposerez des connaissances et des compétences nécessaires pour créer des composants dynamiques dans votre application React, ce qui vous permettra d’améliorer l’expérience de création de contenu avec l’éditeur universel. Commençons à créer votre composant de liste d’images modifiable !
+À la fin de ce chapitre du tutoriel, vous disposerez d’un composant Liste d’images entièrement fonctionnel et modifiable. Vous disposerez des connaissances et des compétences nécessaires pour créer des composants dynamiques dans votre application React, améliorant ainsi l’expérience de création de contenu avec l’éditeur universel. Commençons par créer votre composant Liste d’images modifiable.
 
-## Création d’une liste d’images
+## Créer une Liste d’images
 
-1. Nous devons maintenant créer des fragments d’offre et un composant de liste d’images.  Accédez à la console de fragments de contenu.
+1. Nous devons maintenant créer des fragments d’offre et un composant Liste d’images.  Accédez à la console Fragment de contenu.
 
    ![create-imagelist-fragment](./assets/3/create-imagelist-fragment.png)
 
-   Nous voulons créer un fragment du type `imagelist` (le modèle est `imagelist`) et nous lui donnerons le titre `imagelist`.
+   Nous souhaitons créer un fragment du type `imagelist` (le modèle est `imagelist`) et nous lui donnerons le titre `imagelist`.
 
-   Dans l’éditeur de fragment de contenu, nous avons la possibilité de sélectionner un fragment à inclure ou créer un fragment.  Sélectionnez Créer un fragment.
+   Dans l’éditeur de fragments de contenu, nous pouvons sélectionner un fragment à inclure ou créer un fragment.  Sélectionnez Créer un fragment.
 
-   Notre type de modèle est Liste des images.  Attribuez au fragment un titre et un nom.
+   Notre type de modèle est la liste d’images.  Donnez un titre et un nom au fragment.
 
-1. Une liste d’images étant un fragment de type conteneur qui contient des références à d’autres fragments, de nouvelles offres peuvent être directement créées à partir de l’éditeur.  Créez un fragment d’offre, ainsi qu’une description d’image et d’inclusion, et un article.  Vous pouvez couper et coller le texte ci-dessous.  Nous utilisons le titre du fragment comme titre de la carte.
+1. Puisqu’une liste d’images est un fragment de type conteneur qui inclut des références à d’autres fragments, de nouvelles offres peuvent être créées directement depuis l’éditeur.  Créez un fragment d’offre, une description d’image et un article.  Vous pouvez couper et coller du texte ci-dessous.  Nous utilisons le titre du fragment comme titre de la carte.
 
-   __Article1__
+   __Article 1__
 
    _Titre_
 
@@ -81,7 +81,7 @@ D’ici la fin de ce chapitre de tutoriel, vous disposerez d’un composant de l
    Like a faint torch, a striking green hue shines through the tent fabric, disappearing just as quickly. The sound of zippers does its best to penetrate the ocean's roar, as we curiously peek our heads out into the freezing wind. Moments after, we sprint out in sweatpants, cameras in hand to document the fabled phenomenon the past week's cloud layer has prevented us from seeing; the Aurora Borealis. It starts with only the faintest streaks of green and blue, seemingly appearing out of thin air, only to vanish before our eyes have had a chance to adjust to the dark. Every pulse becoming more radiant, and before we know it we are gazing in awe at the dancing curtains, shifting colors under starry skies. After a week of battling the elements, it's as if Mother Nature has decided to treat us with just a taste of the breathtaking beauty she is capable of, as if we have finally proven ourselves worthy. With our jaws still open, we watch on as the mesmerizing curtains of emerald green are veiled in a dark cloud layer, and the winds once again take hold of the bay. The exhibition is over for now, but these islands will stay in our minds forever. See you next time, Lofoten, may the forces of life yet again gravitate us towards your majestic shores, because in the hardship of finding what we came for, something else has emerged, a yearning for the undisturbed, the unknown and the truly magical. It's waiting for you no matter where you are in the world.
    ```
 
-   __Article 2__
+   __Article 2__
 
    _Titre_
 
@@ -124,7 +124,7 @@ D’ici la fin de ce chapitre de tutoriel, vous disposerez d’un composant de l
    Then there's the surf. A pointbreak breaking for 300 meters down a shallow coral shelf, producing immaculate almond-shaped barrels, grinding down the reef at a barely makeable speed. Even though many of the waves race past me on my struggling backhand, the few that I make it to the end of are some of the best I've ever experienced, and I have a hard time containing my excitement, hooting and hollering to Sofia on the cliffs, with her Canon 5D in hand. The line-up out back is an eclectic mix of old salty men on oversized gun surfboards, young semi-pros with stickered boards, girlfriends on longboards and hippies with dreadlocks and big smiles. Nothing of the notorious localism I have read about online, even though I quickly learn to respect the noticeable pecking order, letting the obviously more skilled crowd get the biggest set waves. There are still plenty of action for everyone, and a friendly smile opens up even the grumpiest old-timer. After the sun has set, the same faces are seen around campfires and tailgate barbeques all over the campground, where many seem to have gotten stuck for the season, ignoring distant calls of civilization urging them to return to normal lives. As the stars come out, we set up our cameras for timelapses, hoping to capture some of the magic that is happening above us, all the while our heads turn heavy from the five hours in the water and the beverages that followed.
    ```
 
-   __Article 3__
+   __Article 3__
 
    _Titre_
 
@@ -157,7 +157,7 @@ D’ici la fin de ce chapitre de tutoriel, vous disposerez d’un composant de l
    Fast forward 5000 years, and although human ingenuity, competition and spirit for invention has further evolved this once crude way of transportation, the principles remain the same. We designed our now countless different models of wooden planks to float on top of powder snow, crafted metal edges to cut through ice, we shaved off every superfluous gram we could find to help us on our journeys, to reach farther, higher and steeper. And today, when in many places, multi-billion dollar corporations charge us big money to ride down over-crowded slopes, many of us are returning to the original way of skiing. Exchanging lift queues for solitude, quantity for quality, and apres-ski beer for trail mix, a new generation of skiers are rediscovering the virtue of earning one's turns, the silence of the mountains, and how far into the unknown a little off-season cardio training can get you.
    ```
 
-   __Article 4__
+   __Article 4__
 
    _Titre_
 
@@ -190,7 +190,7 @@ D’ici la fin de ce chapitre de tutoriel, vous disposerez d’un composant de l
    Eu facilisis sed odio morbi quis. Consequat semper viverra nam libero justo laoreet sit amet. Eget mi proin sed libero enim sed faucibus. Vitae tempus quam pellentesque nec nam aliquam sem. Justo donec enim diam vulputate ut pharetra sit. Risus sed vulputate odio ut enim blandit volutpat maecenas volutpat. Mauris pellentesque pulvinar pellentesque habitant morbi. Iaculis at erat pellentesque adipiscing. Libero id faucibus nisl tincidunt eget nullam non nisi est. Interdum consectetur libero id faucibus nisl tincidunt. Volutpat odio facilisis mauris sit amet massa. Tristique senectus et netus et malesuada fames ac turpis egestas. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Sapien et ligula ullamcorper malesuada proin libero. Interdum consectetur libero id faucibus nisl tincidunt.
    ```
 
-1. Revenons à l’éditeur de requêtes et récupérons ce nouveau composant.  Notez que nous référençons le `OfferModel` dans notre requête et les métadonnées, que nous utiliserons pour le titre de la carte.
+1. Revenons à l’éditeur de requêtes et récupérons ce nouveau composant.  Veuillez noter que nous faisons référence au `OfferModel` dans notre requête et aux métadonnées, que nous utiliserons pour le titre de la carte.
 
    ```graphql
    query imageList {
@@ -226,13 +226,13 @@ D’ici la fin de ce chapitre de tutoriel, vous disposerez d’un composant de l
    }
    ```
 
-1. Maintenant connectez-le à notre application.  Dans notre `home.js`, nous allons référencer notre nouvelle requête. Dessus `useEffect()` nous définirons `list` et `setList`.
+1. Connectez-le maintenant à notre application.  Dans notre `home.js`, nous référencerons notre nouvelle requête. Au-dessus de `useEffect()` nous définirons la `list` et la `setList`.
 
    ```javascript
    const [list, setList] = useState({});
    ```
 
-   Inside `useEffect()` une nouvelle requête pour la requête imagelist.
+   Dans `useEffect()`, une nouvelle demande pour la requête de liste des images apparaît.
 
    ```javascript
    sdk.runPersistedQuery('pure-headless/imagelist')
@@ -252,7 +252,7 @@ D’ici la fin de ce chapitre de tutoriel, vous disposerez d’un composant de l
    <div>{list.cards && <ImageList content={list.cards} />}</div>
    ```
 
-   Regardons notre composant d&#39;imagerie.  Dans la liste imagée, nous faisons le tour de chaque offre.
+   Regardons notre composant de liste d’images.  Dans la liste d’images, faisons le tour de chaque offre.
 
    ```javascript
    {content.items && content.items.map((items) => (
@@ -292,15 +292,15 @@ D’ici la fin de ce chapitre de tutoriel, vous disposerez d’un composant de l
    ];
    ```
 
-## Activation d’Universal Editor
+## Activer l’éditeur universel
 
-1. Ajouter `<meta />` à l’application.  Ouvrir `App.js` et insérez l’importation en haut du fichier.
+1. Ajoutez `<meta />` à l’application.  Ouvrez `App.js` et insérez l’import en haut du fichier.
 
    ```javascript
    import { Helmet } from 'react-helmet';
    ```
 
-   Et dans le renvoi de l’application, ajoutez le code suivant :
+   Et dans le renvoi de l’application, ajoutez le code suivant :
 
    ```javascript
    <Helmet>
@@ -310,19 +310,19 @@ D’ici la fin de ce chapitre de tutoriel, vous disposerez d’un composant de l
 
    >[!TIP]
    >
-   > Nous utilisons la bibliothèque Helmet pour rendre cette dynamique basée sur la variable `.env` vous pouvez toutefois coder ceci de manière irréversible dans le fichier `index.html`.
+   > Nous utilisons la bibliothèque Helmet pour rendre cette dynamique basée sur le fichier `.env`, mais vous pouvez coder ceci en dur de manière irréversible dans le fichier `index.html`.
 
 1. Maintenant, mettons à jour les cartes afin d’identifier le fragment et le type de données pour modifier chaque carte.
 
    Dans `<div className='card' key={card._path}>`
 
-   add
+   ajoutez
 
    ```javascript
    itemID={`urn:aemconnection:${card._path}/jcr:content/data/master`} itemfilter='cf' itemType='reference' itemScope
    ```
 
-   Vous devez maintenant disposer des éléments suivants :
+   Vous devez maintenant avoir ce qui suit :
 
    ```javascript
    <div className='card' key={card._path} itemID={`urn:aemconnection:${card._path}/jcr:content/data/master`} itemfilter='cf' itemType='reference' itemScope>
@@ -330,19 +330,19 @@ D’ici la fin de ce chapitre de tutoriel, vous disposerez d’un composant de l
 
 1. Identifiez maintenant ce qui peut être modifié.
 
-   Pour `<h3 />` add:
+   Pour `<h3 />`, ajoutez :
 
    ```javascript
    itemProp="_metadata" itemType="text"
    ```
 
-   À notre `<div />` add:
+   Dans notre `<div />`, ajoutez :
 
    ```javascript
    itemProp="description" itemType="richtext"
    ```
 
-   Le code final de la carte :
+   Code final de la carte :
 
    ```javascript
    const Cards = ({ content }) => {
@@ -361,7 +361,7 @@ D’ici la fin de ce chapitre de tutoriel, vous disposerez d’un composant de l
    };
    ```
 
-Code final pour `home.js`:
+Code final pour `home.js` :
 
 ```javascript
 import React, { useContext, useEffect, useState } from 'react';
@@ -421,4 +421,4 @@ export default Home;
 
 ## Félicitations.
 
-Vous avez réussi à créer une expérience AEM sans affichage entièrement alimentée par AEM API sans affichage et modifiable avec Universal Editor.
+Vous avez réussi à créer une expérience AEM Headless entièrement alimentée par les API AEM Headless et modifiable avec l’éditeur universel.

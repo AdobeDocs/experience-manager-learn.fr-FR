@@ -1,6 +1,6 @@
 ---
-title: Exposer le point de terminaison pouvant être appelé pour renvoyer l’URL du formulaire web
-description: Créer AEM servlet pour renvoyer l’URL du formulaire web
+title: Exposer le point d’entrée pouvant être appelé pour renvoyer l’URL du formulaire web
+description: Créer un servlet AEM pour renvoyer l’URL du formulaire web
 feature: Adaptive Forms,Acrobat Sign
 version: 6.4,6.5
 topic: Development
@@ -12,13 +12,13 @@ exl-id: 3b7632bd-3820-4c1e-aa3f-8a6a4fc26847
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '70'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Créer une URL de formulaire web Acrobat Sign
+# Créer une URL de formulaire web Acrobat Sign
 
-Le code suivant a été écrit pour exposer un point de terminaison de POST. Ce point de terminaison extrait l’icTemplateName des données envoyées et renvoie une URL de formulaire web Acrobat Sign que l’utilisateur final doit signer.
+Le code suivant a été écrit pour exposer un point d’entrée POST. Ce point d’entrée extrait l’icTemplateName des données envoyées et renvoie une URL de formulaire web Acrobat Sign que la personne utilisatrice finale doit signer.
 
 
 ```java

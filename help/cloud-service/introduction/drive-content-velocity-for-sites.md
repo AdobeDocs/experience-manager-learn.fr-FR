@@ -6,7 +6,7 @@ exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
 source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '2814'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -156,13 +156,13 @@ En général, il est préférable de suivre ces règles de base :
 
 Il n’existe pas de réponse unique concernant la composition des modèles de dotation en personnel d’une implémentation d’AEM Sites. Cependant, il existe des archétypes qu’il est judicieux de respecter pour une fonctionner de manière basique.
 
-AEM Sites : exécution et fonctionnement de base
+AEM Sites : exécution et fonctionnement de base
 
 | Rôle technique | Responsabilités techniques | Responsabilités dans l’entreprise | Rôle dans l’entreprise |
 | --- | --- | --- | --- |
 | Développement CSS | <ul><li>Développement web (CSS ou front-end)</li>Réutilisation des composants<li>Création d’artefacts d’expérience à l’aide d’une réutilisation ou de nouveau contenu</li></ul> | <ul><li>Propriétaire de l’entreprise de la solution</li><li>Création de tâches de maintenance et d’améliorations</li><li>Collaboration avec l’unité opérationnelle sur l’alliance des visions techniques et stratégiques</li></ul> | Propriétaire de produit |
 | Développement back-end | <ul><li>Expériences profondes non effectuées par le biais d’un simple CSS front-end</li>Supervision architecturale<li>Intégrations dynamiques/alignement avec la ou le propriétaire du produit sur des objectifs stratégiques</li></ul> | <ul><li>Assistance des personnes créant le contenu</li><li>Rôle de gouvernance</li><li>Coordination des lancements et gestion des modifications des macros</li></ul> | Créateur ou créatrice disposant des droits d’administration |
-| Gestion de version | <ul><li>Gestion de version</li><li>Déploiements du code</li></li>Équipe du compte Adobe</ul> | <ul><li>Application du contenu (y compris des styles précréés)</li>Propriété à plusieurs niveaux<li>Diffusion et communication des problèmes et des préoccupations qui surviennent avec le CSM</li></ul> | Auteur ou autrice de contenu |
+| Gestion de version | <ul><li>Gestion de version</li><li>Déploiements du code</li></li>Équipe Adobe en charge des comptes</ul> | <ul><li>Application du contenu (y compris des styles précréés)</li>Propriété à plusieurs niveaux<li>Diffusion et communication des problèmes et des préoccupations qui surviennent avec le CSM</li></ul> | Auteur ou autrice de contenu |
 
 ## Pièges potentiels
 

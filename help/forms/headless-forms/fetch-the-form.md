@@ -1,6 +1,6 @@
 ---
-title: Récupération du JSON du formulaire adaptatif à incorporer
-description: Utilisation de l’API pour récupérer le fichier json du formulaire adaptatif
+title: Récupérer le fichier JSON du formulaire adaptatif à incorporer
+description: Utiliser l’API pour récupérer le fichier JSON du formulaire adaptatif
 feature: Adaptive Forms
 version: 6.5
 kt: 13285
@@ -11,17 +11,17 @@ exl-id: ee534724-54ea-48e1-8c92-de1c56a928d4
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Récupération du JSON du formulaire
+# Récupérer le fichier JSON du formulaire
 
-Connectez-vous à votre instance d’auteur AEM Forms et créez un fichier adaptatif à l’aide du **Vide avec les composants principaux** modèle. Publiez votre formulaire sur votre instance de publication.
+Connectez-vous à votre instance de création AEM Forms et créez un formulaire adaptatif à l’aide du modèle **Vierge avec composants principaux**. Publiez le formulaire sur votre instance de publication.
 
-Pour incorporer le formulaire, nous récupérons d’abord le fichier json du formulaire adaptatif en effectuant un appel get sur notre serveur de publication.
+Pour incorporer le formulaire, récupérez d’abord le fichier JSON du formulaire adaptatif à l’aide d’un appel GET au serveur de publication.
 
-Le fragment de code suivant récupère le code json du formulaire adaptatif appelé **contactus**
+L’extrait de code suivant permet de récupérer le code JSON du formulaire adaptatif appelé **contactus**.
 
 ```javascript
 const getForm = async () => {
@@ -34,7 +34,7 @@ const getForm = async () => {
       }
 ```
 
-Le code complet du composant de fonction Contact est indiqué ci-dessous.
+Le code complet du composant de la fonction Contact est indiqué ci-dessous.
 
 ```javascript
 import Form from './components/Form';
@@ -77,7 +77,7 @@ export default function Contact(){
 }
 ```
 
-Le code ci-dessus utilise des composants HTML natifs qui sont mappés aux composants utilisés dans le formulaire adaptatif. Par exemple, nous mappons le composant de formulaire adaptatif d’entrée de texte au composant TextField. Composants natifs utilisés dans l’article [peut être téléchargé ici](./assets/native-components.zip)
+Le code ci-dessus utilise des composants HTML natifs qui sont mappés aux composants du formulaire adaptatif. Par exemple, le composant de formulaire adaptatif de saisie de texte est mappé au composant TextField. Les composants natifs décrits dans l’article [peuvent être téléchargés ici](./assets/native-components.zip).
 
 ## Étapes suivantes
 

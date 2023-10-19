@@ -1,6 +1,6 @@
 ---
-title: Présentation des propriétés de page dans AEM Sites
-description: La vidéo suivante présente les métadonnées des propriétés de page associées à une page dans Adobe Experience Manager.
+title: Présentation des propriétés de page dans AEM Sites
+description: La vidéo suivante présente les métadonnées des propriétés de page associées à une page dans Adobe Experience Manager.
 version: 6.4, 6.5
 topic: Content Management
 feature: Page Editor
@@ -12,7 +12,7 @@ exl-id: 41b40982-9796-418e-9bfc-af6fc720e9b8
 source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
 workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 55%
 
 {{edge-delivery-services-and-page-editor}}
 
-La vidéo suivante présente les propriétés de page associées à une page dans Adobe Experience Manager.
+La vidéo suivante présente les propriétés de page associées à une page dans Adobe Experience Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32192?quality=12&learn=on)
 
-Dans cette vidéo, les éléments de propriété de page suivants sont abordés :
+Dans cette vidéo, les éléments de propriété de page suivants sont abordés :
 
-* De base
+* Éléments de base
    * Titre et balises
       * Titre
       * Balises
@@ -44,20 +44,20 @@ Dans cette vidéo, les éléments de propriété de page suivants sont abordés 
       * Rediriger
       * Conception
       * Alias
-   * Configuration du cloud.
+   * Configuration du cloud
    * Paramètres de modèles
    * Exigence d’authentification
-   * Exportation
+   * Export
 * Miniature
-* Partage sur les réseaux sociaux
-* Configuration de Cloud Services
-* Personnalisation 
+* Partage sur les médias sociaux
+* Configuration de Cloud Services
+* Personnalisation
    * Configurations ContextHub
    * Configuration du ciblage
 * Autorisations
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Modification de la documentation des propriétés de page](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html)
+* [Documentation sur la modification des propriétés d’une page](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-page-properties.html?lang=fr)
 * [Documentation sur la modification de contenu d’une page.](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=fr)
 * [Guide rapide pour la création de pages.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=fr)

@@ -1,6 +1,6 @@
 ---
 title: Copies de langue - Éditeur de fragments de contenu
-description: Découvrez comment AEM interface utilisateur des fragments de contenu facilite la localisation des fragments de contenu à l’aide du filtrage rapide. Grâce à cette fonctionnalité, la recherche de fragments de contenu spécifiques devient rapide et facile.
+description: Découvrez comment l’interface utilisateur des fragments de contenu AEM facilite la localisation des fragments de contenu à l’aide du filtrage rapide. Grâce à cette fonctionnalité, la recherche de fragments de contenu spécifiques devient rapide et facile.
 version: Cloud Service
 role: User
 level: Beginner
@@ -11,7 +11,7 @@ exl-id: e2241a9b-1c50-45d8-b909-ee8a917b4d7c
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '61'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 

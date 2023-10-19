@@ -1,6 +1,6 @@
 ---
 title: Cliquez sur la carte pour afficher le formulaire.
-description: Exploration du formulaire à partir du mode Carte
+description: Analyser en profondeur un formulaire dans la vue Carte
 feature: Adaptive Forms
 version: 6.5
 kt: 13372
@@ -11,13 +11,13 @@ exl-id: c8684cd9-b9c5-4b5b-b990-27c5700cea9f
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '61'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Affichage du formulaire en cas de clic sur la carte
+# Afficher un formulaire en cliquant sur la carte
 
-Le code suivant a été utilisé pour afficher le formulaire lorsque l’utilisateur clique sur une carte. Le chemin d’accès du formulaire à afficher est extrait de l’URL à l’aide de la fonction useParams .
+Le code suivant a été utilisé pour afficher le formulaire lorsque l’utilisateur ou l’utilisatrice clique sur une carte. Le chemin d’accès du formulaire à afficher est extrait de l’URL à l’aide de la fonction useParams.
 
 ```javascript
 import Form from './components/Form';

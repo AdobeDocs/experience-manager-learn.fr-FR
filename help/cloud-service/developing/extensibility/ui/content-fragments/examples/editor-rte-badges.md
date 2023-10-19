@@ -1,6 +1,6 @@
 ---
-title: Ajout de badges à l’éditeur de texte enrichi (RTE)
-description: Découvrez comment ajouter des badges à l’éditeur de texte enrichi (RTE) dans l’éditeur de fragment de contenu AEM
+title: Ajouter des badges à l’éditeur de texte enrichi (RTE)
+description: Découvrez comment ajouter des badges à l’éditeur de texte enrichi (RTE) dans l’éditeur de fragment de contenu AEM.
 feature: Developer Tools, Content Fragments
 version: Cloud Service
 topic: Development
@@ -14,55 +14,55 @@ exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '781'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Ajout de badges à l’éditeur de texte enrichi (RTE)
+# Ajouter des badges à l’éditeur de texte enrichi (RTE)
 
-Découvrez comment ajouter des badges à l’éditeur de texte enrichi (RTE) dans l’éditeur de fragment de contenu AEM.
+Découvrez comment ajouter des badges à l’éditeur de texte enrichi (RTE) dans l’éditeur de fragment de contenu AEM..
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
-[Badge de l’éditeur de texte enrichi](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/)  sont des extensions qui rendent le texte de l’éditeur de texte enrichi (RTE) non modifiable. Cela signifie qu’un badge déclaré comme tel ne peut être complètement supprimé que partiellement modifié. Ces badges prennent également en charge les couleurs spéciales dans l’éditeur de texte enrichi, indiquant clairement aux auteurs de contenu que le texte est un badge et qu’il n’est donc pas modifiable. De plus, ils fournissent des indices visuels sur la signification du texte du badge.
+Les [badges de l’éditeur de texte enrichi](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) sont des extensions qui rendent le texte de l’éditeur de texte enrichi (RTE) non modifiable. Cela signifie qu’un badge déclaré comme tel ne peut être que complètement supprimé et ne peut pas être partiellement modifié. Ces badges prennent également en charge les couleurs spéciales dans le RTE, indiquant clairement aux personnes qui créent le contenu que le texte est un badge et qu’il n’est donc pas modifiable. De plus, ils fournissent des indices visuels sur la signification du texte du badge.
 
-Le cas d’utilisation le plus courant pour les badges d’éditeur de texte enrichi consiste à les utiliser conjointement avec [Widgets d’éditeur de texte enrichi](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/). Cela permet au contenu injecté dans l’éditeur de texte enrichi par le widget de l’éditeur de texte enrichi d’être non modifiable.
+Le cas d’utilisation le plus courant pour les badges RTE consiste à les utiliser conjointement avec les [widgets RTE](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/). Cela permet au contenu inséré dans l’éditeur de texte enrichi par le widget RTE d’être non modifiable.
 
-En règle générale, les badges associés aux widgets sont utilisés pour ajouter le contenu dynamique avec une dépendance système externe, mais _les auteurs de contenu ne peuvent pas modifier_ le contenu dynamique inséré pour préserver l’intégrité. Ils ne peuvent être supprimés que dans leur ensemble.
+En règle générale, les badges associés aux widgets sont utilisés pour ajouter le contenu dynamique avec une dépendance système externe, mais _les personnes qui créent le contenu ne peuvent pas modifier_ le contenu dynamique inséré pour préserver l’intégrité. Ils ne peuvent être supprimés que dans leur ensemble.
 
-La variable **badges** sont ajoutés au **RTE** dans l’éditeur de fragment de contenu à l’aide de la méthode `rte` point d’extension. Utilisation `rte` point d’extension `getBadges()` méthode un ou plusieurs badges sont ajoutés.
+Les **badges** sont ajoutés au **RTE** dans l’éditeur de fragment de contenu à l’aide du point d’extension `rte`. La méthode `getBadges()` du point d’extension `rte` permet d’ajouter un ou plusieurs badges.
 
-Cet exemple montre comment ajouter un widget appelé _Service client des réservations pour grands groupes_ pour rechercher, sélectionner et ajouter les détails spécifiques au service client aventure WKND tels que **Nom du représentant** et **Numéro de téléphone** dans un contenu d’éditeur de texte enrichi. L’utilisation de la fonctionnalité des badges permet de **Numéro de téléphone** est fait **non modifiable** mais les auteurs de contenu WKND peuvent modifier le nom du représentant.
+Cet exemple montre comment ajouter un widget appelé _Service clientèle des réservations pour grands groupes_ pour rechercher, sélectionner et ajouter les informations du service clientèle spécifiques à l’aventure WKND, telles que le **nom du représentant ou de la représentante** et le **numéro de téléphone** dans un contenu d’éditeur de texte enrichi. L’utilisation de la fonctionnalité des badges permet de rendre le **numéro de téléphone** **non modifiable**, mais les personnes qui créent le contenu WKND peuvent modifier le nom du représentant ou de la représentante.
 
-En outre, la variable **Numéro de téléphone** est stylisé différemment (bleu), ce qui est un cas pratique supplémentaire de la fonctionnalité des badges.
+En outre, le **numéro de téléphone** est mis en forme différemment (en bleu), ce qui est un cas d’utilisation supplémentaire de la fonctionnalité des badges.
 
-Pour simplifier les choses, cet exemple utilise la méthode [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) framework permettant de développer l’interface utilisateur du widget ou de la boîte de dialogue et les numéros de téléphone du service client WKND codés de manière irréversible. Pour contrôler l’aspect non modifiable et de style du contenu, la variable `#` est utilisé dans la variable `prefix` et `suffix` de la définition des badges.
+Pour simplifier les choses, cet exemple utilise le framework [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) pour développer l’interface utilisateur du widget ou de la boîte de dialogue et les numéros de téléphone du service clientèle WKND codés en dur. Pour contrôler l’aspect non modifiable et de style du contenu, le caractère `#` est utilisé dans les attributs `prefix` et `suffix` de la définition des badges.
 
 ## Points d’extension
 
-Cet exemple étend au point d’extension `rte` pour ajouter un badge à l’éditeur de texte enrichi dans l’éditeur de fragment de contenu.
+Cet exemple s’étend jusqu’au point d’extension `rte` pour ajouter un badge au RTE dans l’éditeur de fragment de contenu.
 
 | Interface utilisateur AEM étendue | Points d’extension |
 | ------------------------ | --------------------- | 
-| [Éditeur de fragment de contenu](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Badges de l’éditeur de texte enrichi](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) et [Widgets de l’éditeur de texte enrichi](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
+| [Éditeur de fragments de contenu](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Badges de l’éditeur de texte enrichi](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) et [Widgets de l’éditeur de texte enrichi](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
 ## Exemple d’extension
 
-L’exemple suivant crée une _Service client des réservations pour grands groupes_ widget. En appuyant sur la touche `{` Dans l’éditeur de texte enrichi, le menu contextuel des widgets de l’éditeur de texte enrichi s’ouvre. En sélectionnant la variable _Service client des réservations pour grands groupes_ dans le menu contextuel, le modal personnalisé s’ouvre.
+L’exemple suivant permet de créer un widget _Service clientèle des réservations pour grands groupes_. En appuyant sur la touche `{` dans l’éditeur de texte enrichi, le menu contextuel des widgets RTE s’ouvre. En sélectionnant l’option _Service clientèle des réservations pour grands groupes_ dans le menu contextuel, la boîte de dialogue modale personnalisée s’ouvre.
 
-Une fois que le numéro de service client souhaité est ajouté à partir du modal, les badges affichent la variable _Numéro de téléphone non modifiable_ et le met en forme en bleu.
+Une fois que le numéro de service clientèle souhaité est ajouté à partir de la boîte de dialogue modale, les badges rendent le _numéro de téléphone non modifiable_ et le mettent en forme en bleu.
 
 ### Enregistrement d’une extension
 
-`ExtensionRegistration.js`, mappé sur le `index.html` route, est le point d’entrée de l’extension AEM et définit :
+`ExtensionRegistration.js`, mappé vers l’itinéraire `index.html`, est le point d’entrée de l’extension AEM et définit les éléments suivants :
 
-+ La définition du badge est définie dans `getBadges()` utilisation des attributs de configuration `id`, `prefix`, `suffix`, `backgroundColor` et `textColor`.
-+ Dans cet exemple, la variable `#` sert à définir les limites de ce badge, c’est-à-dire toute chaîne de l’éditeur de texte enrichi entourée de `#` est traité comme une instance de ce badge.
++ La définition du badge est définie dans `getBadges()` à l’aide des attributs de configuration `id`, `prefix`, `suffix`, `backgroundColor` et `textColor`.
++ Dans cet exemple, le caractère `#` sert à définir les limites de ce badge, c’est-à-dire toute chaîne de l’éditeur de texte enrichi entourée de `#` est traitée comme une instance de ce badge.
 
-Consultez également les détails clés du widget d’éditeur de texte enrichi :
+Consultez également les détails clés du widget RTE :
 
-+ Définition du widget dans `getWidgets()` fonction avec `id`, `label` et `url` attributs.
-+ La variable `url` valeur d’attribut, un chemin d’URL relatif (`/index.html#/largeBookingsCustomerService`) pour charger le modal.
++ La définition du widget dans la fonction `getWidgets()` avec les attributs `id`, `label` et `url`.
++ La valeur d’attribut `url`, un chemin d’URL relatif (`/index.html#/largeBookingsCustomerService`) pour charger la boîte de dialogue modale.
 
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`
@@ -110,9 +110,9 @@ function ExtensionRegistration() {
 }
 ```
 
-### Ajouter `largeBookingsCustomerService` route `App.js`{#add-widgets-route}
+### Ajouter l’itinéraire `largeBookingsCustomerService` dans `App.js`{#add-widgets-route}
 
-Dans le composant React principal `App.js`, ajoutez le `largeBookingsCustomerService` itinéraire pour effectuer le rendu de l’interface utilisateur pour le chemin d’URL relatif ci-dessus.
+Dans le composant React principal `App.js`, ajoutez l’itinéraire `largeBookingsCustomerService` pour effectuer le rendu de l’interface utilisateur pour le chemin d’URL relatif ci-dessus.
 
 `src/aem-cf-editor-1/web-src/src/components/App.js`
 
@@ -132,20 +132,20 @@ Dans le composant React principal `App.js`, ajoutez le `largeBookingsCustomerSer
 ...
 ```
 
-### Créer `LargeBookingsCustomerService` Composant React{#create-widget-react-component}
+### Créer le composant React `LargeBookingsCustomerService`{#create-widget-react-component}
 
-L’interface utilisateur du widget ou de la boîte de dialogue est créée à l’aide de la fonction [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) framework.
+L’interface utilisateur du widget ou de la boîte de dialogue est créée à l’aide du framework [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html).
 
-Le code du composant React lors de l’ajout des détails du service client, entourez la variable du numéro de téléphone de la variable `#` caractère de badges enregistrés pour le convertir en badges, comme `#${phoneNumber}#`, le rendant ainsi non modifiable.
+Lors de l’ajout des informations du service clientèle, le code du composant React entoure la variable du numéro de téléphone avec les caractères `#` de badges enregistrés pour le convertir en badges, comme `#${phoneNumber}#`, le rendant ainsi non modifiable.
 
-Voici les principaux points forts de `LargeBookingsCustomerService` code :
+Voici les principaux points forts du code `LargeBookingsCustomerService` :
 
-+ L’interface utilisateur est rendue à l’aide des composants React Spectrum, tels que [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html), [Bouton](https://react-spectrum.adobe.com/react-spectrum/Button.html)
-+ La variable `largeGroupCustomerServiceList` a un mappage codé en dur du nom du représentant et du numéro de téléphone. Dans un scénario réel, ces données peuvent être récupérées à partir de l’action Adobe AppBuilder ou de systèmes externes, ou de la passerelle API locale ou basée sur le fournisseur de cloud.
-+ La variable `guestConnection` est initialisé à l’aide de la fonction `useEffect` [React hook](https://react.dev/reference/react/useEffect) et géré en tant qu’état du composant. Il est utilisé pour communiquer avec l’hôte AEM.
-+ La variable `handleCustomerServiceChange` obtient le nom et le numéro de téléphone du représentant et met à jour les variables d’état du composant.
-+ La variable `addCustomerServiceDetails` fonction utilisant `guestConnection` fournit des instructions d’exécution de l’éditeur de texte enrichi. Dans ce cas `insertContent` et fragment de code de HTML.
-+ Pour que la variable **numéro de téléphone non modifiable** à l’aide de badges, la variable `#` un caractère spécial est ajouté avant et après la fonction `phoneNumber` variable, comme `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.
++ L’interface utilisateur est rendue à l’aide des composants React Spectrum, tels que [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html) et [Button](https://react-spectrum.adobe.com/react-spectrum/Button.html).
++ Le tableau `largeGroupCustomerServiceList` a un mappage codé en dur du nom du représentant ou de la représentante et du numéro de téléphone. Dans un scénario réel, ces données peuvent être récupérées à partir de l’action Adobe AppBuilder ou de systèmes externes, ou de la passerelle API locale ou basée sur le fournisseur cloud.
++ La fonction `guestConnection` est initialisée à l’aide du [hook React](https://react.dev/reference/react/useEffect) `useEffect` et gérée en tant que statut du composant. Elle est utilisé pour communiquer avec l’hôte AEM.
++ La fonction `handleCustomerServiceChange` obtient le nom du représentant ou de la représentante et le numéro de téléphone, puis met à jour les variables de statut du composant.
++ La fonction `addCustomerServiceDetails` utilisant l’objet `guestConnection` fournit des instructions d’exécution de l’éditeur de texte enrichi. Dans ce cas, l’instruction `insertContent` et l’extrait de code HTML.
++ Pour rendre le **numéro de téléphone non modifiable** à l’aide de badges, le caractère spécial `#` est ajouté avant et après la variable `phoneNumber`, comme `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.
 
 `src/aem-cf-editor-1/web-src/src/components/LargeBookingsCustomerService.js`
 

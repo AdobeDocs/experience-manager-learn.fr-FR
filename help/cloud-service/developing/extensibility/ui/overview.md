@@ -1,6 +1,6 @@
 ---
 title: Extensibilité de l’interface utilisateur AEM
-description: Découvrez l’extensibilité de l’interface utilisateur AEM à l’aide du générateur d’applications pour créer des extensions.
+description: Découvrez l’extensibilité de l’interface utilisateur AEM à l’aide du créateur d’applications pour créer des extensions.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -13,36 +13,36 @@ exl-id: 73f5d90d-e007-41a0-9bb3-b8f36a9b1547
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 # Extensibilité de l’interface utilisateur AEM
 
-Adobe Experience Manager (AEM) offre une interface utilisateur puissante pour créer des expériences numériques. Pour personnaliser et étendre l’interface utilisateur, Adobe a introduit App Builder. Cet outil permet aux développeurs d’améliorer l’expérience utilisateur sans coder complexe à l’aide de JavaScript et de React.
+Adobe Experience Manager (AEM) offre une interface utilisateur puissante pour créer des expériences numériques. Pour personnaliser et étendre l’interface utilisateur, Adobe a introduit le créateur d’applications. Cet outil permet aux développeurs et développeuses d’améliorer l’expérience utilisateur sans code complexe à l’aide de JavaScript et de React.
 
-App Builder fournit une couche d’implémentation pour la création d’extensions qui sont liées à des points d’extension bien définis dans AEM. App Builder s’intègre de manière transparente à AEM, ce qui permet d’effectuer des prévisualisations et des tests en temps réel. Le déploiement des modifications dans AEM est rapide et simplifié. En utilisant App Builder, les développeurs gagnent du temps et des efforts, ce qui permet de créer rapidement des prototypes et de collaborer avec les parties prenantes.
+Le créateur d’applications fournit une couche d’implémentation pour la création d’extensions qui sont liées à des points d’extension bien définis dans AEM. Le créateur d’applications s’intègre de manière transparente à AEM, ce qui permet d’effectuer des prévisualisations et des tests en temps réel. Le déploiement des modifications dans AEM est rapide et simplifié. Grâce au créateur d’applications, les développeurs et développeuses économisent du temps et du travail, ce qui permet de créer rapidement des prototypes et de collaborer avec les parties prenantes.
 
-## Développement d’une extension d’interface utilisateur AEM
+## Développer une extension d’interface utilisateur AEM
 
-AEM différentes interfaces utilisateur ont des points d’extension différents, mais les concepts de base sont les mêmes.
+Les différentes interfaces utilisateur AEM ont des points d’extension différents, mais les concepts de base sont les mêmes.
 
-Les vidéos et les vidéos pas à pas fournies, liées ci-dessous, présentent l’utilisation d’une extension de la console de fragments de contenu pour illustrer diverses activités. Toutefois, il est important de noter que les concepts couverts peuvent être appliqués à toutes les extensions de l’interface utilisateur d’AEM.
+Les vidéos et les guides fournis ci-dessous présentent l’utilisation d’une extension de la console de fragments de contenu pour illustrer diverses activités. Toutefois, il est important de noter que les concepts abordés peuvent être appliqués à toutes les extensions de l’interface utilisateur AEM.
 
-1. [Création d’un projet de console Adobe Developer](./adobe-developer-console-project.md)
-1. [Initialisation d’une extension](./app-initialization.md)
-1. [Enregistrement d’une extension](./extension-registration.md)
-1. Mise en oeuvre d’un point d’extension
+1. [Créer un projet Adobe Developer Console](./adobe-developer-console-project.md)
+1. [Initialiser une extension](./app-initialization.md)
+1. [Enregistrer une extension](./extension-registration.md)
+1. Implémenter un point d’extension
 
-   Les points d’extension et leurs mises en oeuvre varient en fonction de l’interface utilisateur étendue.
+   Les points d’extension et leurs implémentations varient en fonction de l’interface utilisateur étendue.
 
-   + [Développement d’une extension de l’interface utilisateur de fragments de contenu](./content-fragments/overview.md)
+   + [Développer une extension de l’interface utilisateur de fragments de contenu](./content-fragments/overview.md)
 
-1. [Développement d’un modal](./modal.md)
-1. [Développement d’une action Adobe I/O Runtime](./runtime-action.md)
-1. [Vérification d’une extension](./verify.md)
+1. [Développer un modal](./modal.md)
+1. [Développer une action Adobe I/O Runtime](./runtime-action.md)
+1. [Vérifier une extension](./verify.md)
 1. [Déployer une extension](./deploy.md)
 
 ## Documentation Adobe Developer
 
-Adobe Developer contient des informations détaillées sur les développeurs concernant l’extensibilité de l’interface utilisateur d’AEM. Veuillez consulter la section [contenu Adobe Developer pour plus de détails techniques](https://developer.adobe.com/uix/docs/).
+Adobe Developer contient des informations détaillées pour les développeurs et développeuses concernant l’extensibilité de l’interface utilisateur AEM. Veuillez consulter la section [contenu Adobe Developer pour plus de détails techniques](https://developer.adobe.com/uix/docs/).

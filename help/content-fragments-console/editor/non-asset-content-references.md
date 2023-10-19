@@ -13,11 +13,11 @@ exl-id: aac044b2-903a-47c7-8461-824c43902972
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
 workflow-type: tm+mt
 source-wordcount: '47'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Références de contenu autres que des ressources
+# Références au contenu autres que des ressources
 
 Découvrez comment les champs de contenu de fragment de contenu prennent en charge le référencement de différents types de contenu AEM, tels que les fragments d’expérience et les pages.
 
