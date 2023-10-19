@@ -51,7 +51,7 @@ Pour plus d’informations, regardez la présentation suivante pour découvrir c
 
 >[!VIDEO](https://video.tv.adobe.com/v/342235?quality=12&learn=on)
 
-Ce tutoriel utilise `curl` pour créer les configurations de l’API Cloud Manager. Les commandes `curl` fournies supposent une syntaxe Linux/macOS. Si vous utilisez l’invite de commande Windows, remplacez le caractère de saut de ligne `\` par `^`.
+Ce tutoriel utilise `curl` pour créer les configurations de l’API Cloud Manager. Les commandes `curl` fournies reposent sur la syntaxe Linux/macOS. Si vous utilisez l’invite de commande Windows, remplacez le caractère de saut de ligne `\` par `^`.
 
 ## Activer le réseau privé virtuel par programme
 
@@ -59,7 +59,7 @@ Commencez par activer le réseau privé virtuel sur AEM as a Cloud Service.
 
 1. Tout d’abord, déterminez la région dans laquelle le réseau avancé est nécessaire à l’aide de l’opération [listRegion](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager. Le `region name` est nécessaire pour effectuer les appels d’API Cloud Manager ultérieurs. En règle générale, la région dans laquelle l’environnement de production réside est utilisée.
 
-   Recherchez la région de votre environnement AEM as a Cloud Service dans [Cloud Manager](https://my.cloudmanager.adobe.com) sous les [détails de l’environnement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=fr#viewing-environment). Le nom de région affiché dans Cloud Manager peut être [mappé au code de région](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilisé dans l’API Cloud Manager.
+   Recherchez la région de votre environnement AEM as a Cloud Service AEM dans [Cloud Manager](https://my.cloudmanager.adobe.com) sous les [détails de l’environnement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=fr#viewing-environment). Le nom de région affiché dans Cloud Manager peut être [mappé au code de région](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilisé dans l’API Cloud Manager.
 
    __Requête HTTP listRegions__
 
@@ -149,7 +149,7 @@ Commencez par activer le réseau privé virtuel sur AEM as a Cloud Service.
        -H 'Content-Type: application/json'
    ```
 
-   Vérifiez que la réponse HTTP contient un __statut__ __prêt__. Le cas échéant, vérifiez le statut après quelques minutes.
+   Vérifiez que la réponse HTTP renvoie le __statut__ __prêt__. Le cas échéant, vérifiez le statut après quelques minutes.
 
 ## Configurer les proxys de réseau privé virtuel par environnement
 
@@ -262,7 +262,7 @@ Lors de la création de connexions non HTTP/HTTPS (par exemple, SQL, SMTP, etc.)
 | `AEM_PROXY_HOST` | Hôte proxy pour les connexions non HTTP/HTTPS | `System.getenv("AEM_PROXY_HOST")` | `$[env:AEM_PROXY_HOST]` |
 
 
-Les connexions à des services externes sont ensuite appelées par l’intermédiaire de l’`AEM_PROXY_HOST` et du port mappé (`portForwards.portOrig`), qu’AEM achemine ensuite vers le nom d’hôte externe (`portForwards.name`) et le port (`portForwards.portDest`) mappés.
+Les connexions à des services externes sont ensuite appelées par l’intermédiaire de `AEM_PROXY_HOST` et du port mappé (`portForwards.portOrig`), qu’AEM achemine ensuite vers le nom d’hôte externe mappé (`portForwards.name`) et le port (`portForwards.portDest`).
 
 | Hôte du proxy | Port du proxy |  | Hôte externe | Port externe |
 |---------------------------------|----------|----------------|------------------|----------|
@@ -274,7 +274,7 @@ Les connexions à des services externes sont ensuite appelées par l’interméd
 <table><tr>
    <td>
       <a  href="./examples/sql-datasourcepool.md"><img alt="Connexion SQL à l’aide de JDBC DataSourcePool" src="./assets//code-examples__sql-osgi.png"/></a>
-      <div><strong><a href="./examples/sql-datasourcepool.md">Connexion SQL avec le pool de source de données JDBC</a></strong></div>
+      <div><strong><a href="./examples/sql-datasourcepool.md">Connexion SQL à l’aide de JDBC DataSourcePool</a></strong></div>
       <p>
             Exemple de code Java™ se connectant à des bases de données SQL externes en configurant le pool de la source de données JDBC d’AEM.
       </p>
