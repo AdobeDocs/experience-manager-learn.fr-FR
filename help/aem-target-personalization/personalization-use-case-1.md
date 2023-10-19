@@ -43,7 +43,7 @@ Pour cet exercice, les utilisateurs et utilisatrices suivants doivent être impl
 * **AEM**
    * [Instances de création et de publication AEM](./implementation.md#getting-aem) s’exécutant sur localhost 4502 et 4503, respectivement.
 * **Experience Cloud**
-   * Accéder à vos organisations Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
+   * Accéder à la solution Adobe Experience Cloud de votre organisation - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud est fourni avec les solutions suivantes
       * [Adobe Target](https://experiencecloud.adobe.com)
 
@@ -143,7 +143,7 @@ Jusqu’à présent, vous avez créé des audiences pour tous les visiteurs et v
 
 1. Pour permettre le chargement du **Compositeur d’expérience visuelle**, activez la case **Autoriser le chargement de scripts non sécurisés** dans le navigateur et actualisez la page.
 
-   ![Activité de ciblage d’expérience](assets/personalization-use-case-1/load-unsafe-scripts.png)
+   ![Activité de ciblage d’expérience.](assets/personalization-use-case-1/load-unsafe-scripts.png)
 
 1. Notez que la page d’accueil du site WKND s’ouvre dans l’éditeur du compositeur d’expérience visuelle.
 
