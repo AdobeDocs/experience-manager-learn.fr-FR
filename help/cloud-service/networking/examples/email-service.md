@@ -38,7 +38,7 @@ Consultez également la documentation AEM sur l’[envoi d’un e-mail](https://
 
 L’exemple de code suivant est pris en charge par les options de mise en réseau avancée suivantes.
 
-Assurez-vous que la configuration de mise en réseau avancée [appropriée](../advanced-networking.md#advanced-networking) a été configurée avant de suivre ce tutoriel.
+Assurez-vous que la configuration de mise en réseau avancée [appropriée](../advanced-networking.md#advanced-networking) a été définie avant de suivre ce tutoriel.
 
 | Aucune mise en réseau avancée | [Sortie de port flexible](../flexible-port-egress.md) | [Adresse IP de sortie dédiée](../dedicated-egress-ip-address.md) | [Réseau privé virtuel (VPN)](../vpn.md) |
 |:-----:|:-----:|:------:|:---------:|
