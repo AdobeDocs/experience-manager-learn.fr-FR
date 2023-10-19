@@ -1,6 +1,6 @@
 ---
 title: Prise en main du développement d’AEM Sites – Tutoriel WKND
-description: Vous ne connaissez pas le développement AEM ? Vous avez besoin d’une mise à niveau sur les bonnes pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur ou à une développeuse qui découvre AEM à mettre en œuvre un site web dans AEM en utilisant les dernières normes et technologies.
+description: Vous découvrez le développement AEM ? Vous avez besoin d’une mise à niveau sur les bonnes pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur ou une développeuse qui découvre AEM comment mettre en œuvre un site web dans AEM en utilisant les dernières normes et technologies.
 feature: AEM Project Archetype, Core Components, Page Editor, Editable Templates
 topic: Development
 role: Developer
@@ -16,11 +16,11 @@ ht-degree: 100%
 
 # Prise en main du développement d’AEM Sites – Tutoriel WKND{#getting-started-developing-aem-sites-wknd-tutorial}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Vous ne connaissez pas bien le développement d’Adobe Experience Manager as a Cloud Service ? Besoin d’une actualisation sur les toutes dernières pratiques ? Voici l’endroit idéal pour bien commencer !
 
-L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur ou à une développeuse qui découvre AEM à mettre en œuvre un site web dans AEM en utilisant les dernières normes et technologies. À la fin de ce tutoriel, vous devriez comprendre les bases de la plateforme AEM et connaître certains des modèles de conception courants.
+L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur ou une développeuse qui découvre AEM comment mettre en œuvre un site web dans AEM en utilisant les dernières normes et technologies. Nous espérons qu’à la fin de ce tutoriel, vous comprendrez les fondements de la plateforme AEM et que vous connaîtrez certains des modèles de conception les plus courants.
 
 ## Tutoriel du développeur WKND {#wknd-developer-tutorial}
 
