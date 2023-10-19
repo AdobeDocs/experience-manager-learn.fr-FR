@@ -3,7 +3,7 @@ title: Tutoriels AEM
 description: Ensemble de vidéos et de tutoriels pour Adobe Experience Manager.
 exl-id: fe83a2dc-b43a-4e71-9b03-d31ec4f6a6ff
 source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '170'
 ht-degree: 100%
 
