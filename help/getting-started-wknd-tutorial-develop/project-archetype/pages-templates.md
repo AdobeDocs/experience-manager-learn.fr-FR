@@ -212,7 +212,7 @@ Créez ensuite une page à l’aide du modèle Page d’article. Créez le conte
 
 Étapes de haut niveau pour la vidéo ci-dessus :
 
-1. Accédez à la console Sites à l’adresse [http://localhost:4502/sites.html/content/wknd/us/en/magazine](ttp://localhost:4502/sites.html/content/wknd/us/en/magazine).
+1. Accédez à la console Sites à l’adresse [http://localhost:4502/sites.html/content/wknd/us/en/magazine](http://localhost:4502/sites.html/content/wknd/us/en/magazine).
 1. Créez une page sous **WKND** > **US** > **EN** > **Magazine**.
    * Choisissez le modèle **Page d’article**.
    * Sous **Propriétés**, définissez le **Titre** suivant : « Ultimate Guide to LA Skateparks ».
