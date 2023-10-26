@@ -7,10 +7,10 @@ topic: Security, Administration, Architecture
 role: Admin, Architect
 level: Intermediate
 doc-type: Tutorial
-last-substantial-update: 2023-10-20T00:00:00Z
+last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
+source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 1%
@@ -86,7 +86,7 @@ Analysons les résultats de la `publish-auth-requests` en téléchargeant les jo
 
 - Copiez le fichier journal téléchargé (par exemple : `publish_cdn_2023-10-24.log` dans la capture d’écran ci-dessous) dans la fonction `logs/dev` dossier du projet d’outil Elastic dashboard.
 
-  ![Dossier des journaux d’outils ELK](./assets/elk-tool-logs-folder.png)
+  ![Dossier des journaux d’outils ELK](./assets/elk-tool-logs-folder.png){width="800" zoomable="yes"}
 
 - Actualisez la page de l’outil de tableau de bord Elastic .
    - En haut **Filtre global** , modifiez la section `aem_env_name.keyword` filtrer et sélectionner la variable `dev` valeur d’environnement.

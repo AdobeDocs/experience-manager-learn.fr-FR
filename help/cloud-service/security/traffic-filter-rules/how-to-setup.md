@@ -7,10 +7,10 @@ topic: Security, Administration, Architecture
 role: Admin, Architect
 level: Intermediate
 doc-type: Tutorial
-last-substantial-update: 2023-10-20T00:00:00Z
+last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 67e0a7530549a0d380e9ef82e3747c40d17b1b75
+source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 3%
@@ -56,7 +56,7 @@ data:
 
 Voir un exemple de la fonction `cdn.yaml` dans le projet AEM Guides WKND Sites :
 
-![Fichier et dossier des règles de projet AEM WKND](./assets/wknd-rules-file-and-folder.png)
+![Fichier et dossier des règles de projet AEM WKND](./assets/wknd-rules-file-and-folder.png){width="800" zoomable="yes"}
 
 ### Déploiement de règles via Cloud Manager {#deploy-rules-through-cloud-manager}
 
