@@ -10,7 +10,7 @@ kt: 6914
 thumbnail: 330536.jpg
 exl-id: 8fd8eb06-bbd9-489a-b41b-f8785e140f58
 source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_devops_cicd"
 >title="Intégration continue et Cloud Manager"
->abstract="Découvrez les bonnes pratiques et lʼintégration continue à lʼaide dʼAdobe Cloud Manager."
+>abstract="Découvrez les bonnes pratiques et lʼintégration continue à lʼaide dʼAdobe Cloud Manager."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=fr#non-production-pipelines" text="Configurer votre pipeline CI-CD"
 
 Découvrez les bonnes pratiques et lʼintégration continue à lʼaide dʼAdobe Cloud Manager.
