@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Découvrez comment déclarer différents types de règles de filtrage du trafic et analyser les résultats à l’aide des journaux de réseau de diffusion de contenu et des outils de tableau de bord Adobe Experience Manager as a Cloud Service (AEMCS).
 
-Dans cette section, vous découvrez des exemples pratiques de règles de filtrage du trafic, y compris les règles WAF. Vous apprenez à consigner, autoriser et bloquer des demandes en fonction de l’URI (ou du chemin), de l’adresse IP, du nombre de demandes et de différents types d’attaques à l’aide de la variable [AEM projet WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+Dans cette section, vous découvrirez des exemples pratiques de règles de filtrage du trafic, y compris les règles WAF. Vous apprenez à consigner, autoriser et bloquer des demandes en fonction de l’URI (ou du chemin), de l’adresse IP, du nombre de demandes et de différents types d’attaques à l’aide de la variable [AEM projet WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
 De plus, vous découvrez comment utiliser des outils de tableau de bord qui ingèrent des journaux de réseau de diffusion de contenu AEM pour visualiser des mesures essentielles via des exemples de tableaux de bord fournis par Adobe.
 
@@ -30,7 +30,7 @@ Pour vous aligner sur vos exigences spécifiques, vous pouvez améliorer et cré
 
 ## Exemples
 
-Examinons divers exemples de règles de filtrage du trafic, y compris les règles WAF. Assurez-vous d’avoir effectué le processus de configuration requis, comme décrit dans la section précédente. [configuration](./how-to-setup.md) et que vous avez cloné le [AEM projet WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+Explorons divers exemples de règles de filtrage du trafic, y compris les règles WAF. Assurez-vous d’avoir effectué le processus de configuration requis, comme décrit dans la section précédente. [configuration](./how-to-setup.md) et que vous avez cloné le [AEM projet WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
 ### Journalisation des requêtes
 

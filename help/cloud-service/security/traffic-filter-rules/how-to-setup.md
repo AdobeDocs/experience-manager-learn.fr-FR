@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 # Comment configurer des règles de filtrage du trafic, y compris des règles WAF
 
-Formation **configuration** Règles de filtre de trafic, y compris les règles WAF. Découvrez comment créer, déployer, tester et analyser les résultats.
+Formation **configuration** règles de filtrage du trafic, y compris les règles WAF. Découvrez comment créer, déployer, tester et analyser les résultats.
 
 ## Configuration
 
@@ -118,7 +118,7 @@ Pour tester des règles, divers outils tiers sont disponibles et votre entrepris
 
 Après avoir créé, déployé et testé les règles, vous pouvez analyser les résultats à l’aide de la fonction **Elasticsearch, Logstash et Kibana (ELK)** Outils du tableau de bord. Il peut analyser les journaux de réseau de diffusion de contenu AEMCS, ce qui vous permet de visualiser les résultats sous la forme de plusieurs graphiques.
 
-Les outils des tableaux de bord peuvent être clonés directement à partir de la [Référentiel GitHub AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) et suivez les étapes pour installer et charger le **Règles de filtre de trafic (y compris WAF)** tableau de bord.
+Les outils des tableaux de bord peuvent être clonés directement à partir de la [Référentiel GitHub AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) et suivez les étapes pour installer et charger le **règles de filtrage du trafic (y compris WAF)** tableau de bord.
 
 - Après avoir chargé l’exemple de tableau de bord, la page d’outils du tableau de bord Elastic doit se présenter comme suit :
 
@@ -131,4 +131,4 @@ Les outils des tableaux de bord peuvent être clonés directement à partir de l
 
 ## Étape suivante
 
-Découvrez comment déclarer des règles de filtre de trafic y compris des règles WAF dans la variable [Exemples et analyse des résultats](./examples-and-analysis.md) à l’aide du projet de sites WKND AEM.
+Découvrez comment déclarer des règles de filtrage du trafic y compris des règles WAF dans la variable [Exemples et analyse des résultats](./examples-and-analysis.md) à l’aide du projet de sites WKND AEM.

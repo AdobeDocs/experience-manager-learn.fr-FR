@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-20T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: fa28ae232a5353eb34788fd2abe8402b42a62f66
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Découvrez les bonnes pratiques recommandées pour les règles de filtrage du tr
 
 ## Bonnes pratiques relatives aux règles de filtrage du trafic
 
-Activez sous les règles de filtrage du trafic pour votre projet AEM. Toutefois, les valeurs souhaitées pour `rateLimit` et `clientCountry` Les propriétés doivent être déterminées en collaboration avec votre équipe de sécurité.
+Activez les règles de filtrage du trafic ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour `rateLimit` et `clientCountry` Les propriétés doivent être déterminées en collaboration avec votre équipe de sécurité.
 
 ```yaml
 kind: CDN
