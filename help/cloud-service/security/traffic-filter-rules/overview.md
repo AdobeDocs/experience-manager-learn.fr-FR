@@ -10,10 +10,10 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 4%
+source-wordcount: '285'
+ht-degree: 3%
 
 ---
 
@@ -30,12 +30,13 @@ Les règles de filtrage du trafic sont déployées sur la variable [réseau de d
 
 Ce tutoriel vous guide tout au long du processus de création, de déploiement, de test et d’analyse des résultats des règles de filtrage du trafic, y compris les règles WAF.
 
-Vous pouvez en savoir plus sur les règles de filtrage du trafic dans [cet article](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en)
+Vous pouvez en savoir plus sur les règles de filtrage du trafic dans [cet article](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en).
 
 >[!IMPORTANT]
 >
-> Une sous-catégorie de règles de filtrage du trafic appelée &quot;règles WAF&quot; nécessite une licence de protection WAF-DDoS .
+> Une sous-catégorie de règles de filtrage du trafic appelée &quot;règles WAF&quot; nécessite une licence de protection WAF-DDoS ou une licence de sécurité améliorée.
 
+Nous vous invitons à faire part de vos commentaires ou à poser des questions sur les règles de filtrage de trafic en envoyant un courrier électronique. **aemcs-waf-adopter@adobe.com**.
 
 ## Étape suivante
 

@@ -10,7 +10,7 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 3%
@@ -118,7 +118,7 @@ Pour tester des règles, divers outils tiers sont disponibles et votre entrepris
 
 Après avoir créé, déployé et testé les règles, vous pouvez analyser les résultats à l’aide de la fonction **Elasticsearch, Logstash et Kibana (ELK)** Outils du tableau de bord. Il peut analyser les journaux de réseau de diffusion de contenu AEMCS, ce qui vous permet de visualiser les résultats sous la forme de plusieurs graphiques.
 
-Les outils des tableaux de bord peuvent être clonés directement à partir de la [Référentiel GitHub AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) et suivez les étapes pour installer et charger le **règles de filtrage du trafic (y compris WAF)** tableau de bord.
+Les outils des tableaux de bord peuvent être clonés directement à partir de la [Référentiel GitHub AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) et suivez les étapes pour installer et charger le **Règles de filtre de trafic (y compris WAF)** tableau de bord.
 
 - Après avoir chargé l’exemple de tableau de bord, la page d’outils du tableau de bord Elastic doit se présenter comme suit :
 

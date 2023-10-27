@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1512'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 1%
 
 Découvrez comment déclarer différents types de règles de filtrage du trafic et analyser les résultats à l’aide des journaux de réseau de diffusion de contenu et des outils de tableau de bord Adobe Experience Manager as a Cloud Service (AEMCS).
 
-Dans cette section, vous découvrirez des exemples pratiques de règles de filtrage du trafic, y compris les règles WAF. Vous apprenez à consigner, autoriser et bloquer des demandes en fonction de l’URI (ou du chemin), de l’adresse IP, du nombre de demandes et de différents types d’attaques à l’aide de la variable [AEM projet WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
+Dans cette section, vous allez explorer des exemples pratiques de règles de filtrage du trafic, y compris les règles WAF. Vous apprendrez à consigner, autoriser et bloquer les demandes en fonction de l’URI (ou du chemin), de l’adresse IP, du nombre de demandes et de différents types d’attaques à l’aide de la variable [AEM projet WKND Sites](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project).
 
-De plus, vous découvrez comment utiliser des outils de tableau de bord qui ingèrent des journaux de réseau de diffusion de contenu AEM pour visualiser des mesures essentielles via des exemples de tableaux de bord fournis par Adobe.
+De plus, vous découvrirez comment utiliser des outils de tableau de bord qui ingèrent des journaux de réseau de diffusion de contenu AEM pour visualiser des mesures essentielles au moyen de tableaux de bord d’Adobe fournis.
 
-Pour vous aligner sur vos exigences spécifiques, vous pouvez améliorer et créer des tableaux de bord personnalisés afin d’obtenir des informations plus précises et d’optimiser les configurations de règles pour vos sites AEM.
+Pour vous aligner sur vos exigences spécifiques, vous pouvez améliorer et créer des tableaux de bord personnalisés, afin d’obtenir des informations plus approfondies et d’optimiser les configurations de règles pour vos sites AEM.
 
 ## Exemples
 
@@ -104,11 +104,11 @@ Analysons les résultats de la `publish-auth-requests` en téléchargeant les jo
 
 ### Blocage des requêtes
 
-Dans cet exemple, ajoutons une page dans une _internal_ dossier à `/content/wknd/internal` chemin d’accès dans le projet WKND déployé. Ensuite, déclarez une règle de filtre de trafic qui **bloque le trafic** vers des sous-pages de n’importe quel autre emplacement qu’une adresse IP spécifique qui correspond à votre entreprise (par exemple, un VPN d’entreprise).
+Dans cet exemple, ajoutons une page dans une _internal_ dossier au chemin d’accès `/content/wknd/internal` dans le projet WKND déployé. Ensuite, déclarez une règle de filtre de trafic qui **bloque le trafic** vers des sous-pages de n’importe quel autre emplacement qu’une adresse IP spécifique qui correspond à votre entreprise (par exemple, un VPN d’entreprise).
 
-Vous pouvez créer votre propre page interne (par exemple, `demo-page.html`) ou utilisez la variable [package joint](./assets/demo-internal-pages-package.zip)
+Vous pouvez créer votre propre page interne (par exemple, `demo-page.html`) ou utilisez la variable [package joint](./assets/demo-internal-pages-package.zip).
 
-- Ajoutez la règle suivante dans le fichier du projet WKND `/config/cdn.yaml` fichier .
+- Ajoutez la règle suivante dans le fichier du projet WKND `/config/cdn.yaml` fichier :
 
 ```yaml
 kind: CDN
@@ -200,7 +200,7 @@ data:
   $ echo "GET https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html" | vegeta attack -rate=120 -duration=5s | vegeta report
   ```
 
-  Cette commande effectue 120 demandes pendant 5 secondes et génère un rapport. Comme vous pouvez le constater, le taux de réussite est de 32,5 % et pour le reste, un code de réponse HTTP 406 est reçu, ce qui démontre que le trafic a été bloqué.
+  Cette commande effectue 120 demandes pendant 5 secondes et génère un rapport. Comme vous pouvez le constater, le taux de réussite est de 32,5 % ; un code de réponse HTTP 406 est reçu pour le reste, ce qui démontre que le trafic a été bloqué.
 
   ![Attaque contre la Vegeta DoS](./assets/vegeta-dos-attack.png)
 
@@ -212,7 +212,7 @@ Cette fois, vous devriez voir beaucoup de **Demandes bloquées** et les valeurs 
 
 ![Requête de déni de service dans le tableau de bord de l’outil ELK](./assets/elk-tool-dashboard-dos.png)
 
-En outre, la variable **Les 100 plus grandes attaques par adresse IP du client, pays et agent-utilisateur** affiche des détails supplémentaires, qui peuvent être utilisés pour optimiser davantage la configuration des règles.
+En outre, la variable **Les 100 plus grandes attaques par adresse IP du client, pays et agent-utilisateur** Les panneaux affichent des détails supplémentaires, qui peuvent être utilisés pour optimiser davantage la configuration des règles.
 
 ![Tableau de bord de l’outil ELK - 100 premières requêtes](./assets/elk-tool-dashboard-dos-top-100.png)
 
@@ -220,7 +220,7 @@ En outre, la variable **Les 100 plus grandes attaques par adresse IP du client, 
 
 Jusqu’à présent, tous les clients Sites et Forms peuvent configurer les exemples de règles de filtrage du trafic.
 
-Examinons ensuite l’expérience d’un client qui a acquis une licence de protection sécurisée ou WAF-DDoS améliorée. Vous pouvez ainsi configurer des règles avancées pour protéger vos sites AEM contre des attaques plus complexes.
+Examinons ensuite l’expérience d’un client qui a acquis une licence de protection améliorée ou WAF-DDoS, qui lui permet de configurer des règles avancées pour protéger les sites web contre des attaques plus sophistiquées.
 
 Avant de poursuivre, activez la protection WAF-DDoS pour votre programme, comme décrit dans la documentation des règles de filtrage du trafic . [étapes de configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html?lang=en#setup).
 
@@ -228,7 +228,7 @@ Avant de poursuivre, activez la protection WAF-DDoS pour votre programme, comme 
 
 Commençons par voir l’expérience avant même que les règles WAF ne soient déclarées. Lorsque le WAF-DDoS est activé sur votre programme, votre réseau de diffusion de contenu consigne par défaut toutes les correspondances de trafic malveillant. Vous disposez donc des informations appropriées pour trouver les règles appropriées.
 
-Commençons par attaquer le site WKND sans ajouter de règle WAF (ou utiliser la fonction `wafFlags` ) et analyser les résultats.
+Commençons par attaquer le site WKND sans ajouter de règle WAF (ou par utiliser la fonction `wafFlags` ) et analyser les résultats.
 
 - Pour simuler une attaque, utilisez la variable [Nikto](https://github.com/sullo/nikto) la commande ci-dessous, qui envoie environ 700 demandes malveillantes en 6 minutes.
 
@@ -248,7 +248,7 @@ Cependant, cette fois, vous devriez voir le **Demandes marquées** et les valeur
 
 ![Requête avec indicateur WAF dans le tableau de bord de l’outil ELK](./assets/elk-tool-dashboard-waf-flagged.png)
 
-Notez comment la variable **Distribution des indicateurs WAF et attaques principales** Les panneaux affichent des détails supplémentaires, qui peuvent être utilisés pour optimiser davantage la configuration des règles.
+Notez comment la variable **Distribution des indicateurs WAF** et **Les principales attaques** Les panneaux affichent des détails supplémentaires, qui peuvent être utilisés pour optimiser davantage la configuration des règles.
 
 ![Tableau de bord de l’outil ELK - Demande d’accès aux indicateurs WAF](./assets/elk-tool-dashboard-waf-flagged-top-attacks-1.png)
 
@@ -319,7 +319,7 @@ Cette fois, vous devriez voir des entrées sous **Demandes bloquées** et les va
 
 ![Requête bloquée WAF dans le tableau de bord de l’outil ELK](./assets/elk-tool-dashboard-waf-blocked.png)
 
-En outre, la variable **Distribution des indicateurs WAF et attaques principales** les panneaux affichent des détails supplémentaires.
+En outre, la variable **Distribution des indicateurs WAF** et **Les principales attaques** les panneaux affichent des détails supplémentaires.
 
 ![Tableau de bord de l’outil ELK - Demande d’accès aux indicateurs WAF](./assets/elk-tool-dashboard-waf-blocked-top-attacks-1.png)
 
@@ -327,7 +327,7 @@ En outre, la variable **Distribution des indicateurs WAF et attaques principales
 
 ### Analyse exhaustive
 
-Dans la section ci-dessus _analyse_ , vous avez appris à analyser les résultats des **règle spécifique** à l’aide de l’outil de tableau de bord. Vous pouvez explorer plus en détail l’analyse des résultats à l’aide d’autres panneaux de tableau de bord, notamment :
+Dans la section ci-dessus _analyse_ , vous avez appris à analyser les résultats de règles spécifiques à l’aide de l’outil de tableau de bord. Vous pouvez explorer plus en détail l’analyse des résultats à l’aide d’autres panneaux de tableau de bord, notamment :
 
 
 - Requêtes analysées, marquées et bloquées

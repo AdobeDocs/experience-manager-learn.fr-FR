@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
+source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ data:
 
 >[!WARNING]
 >
->Pour votre environnement de production, collaborez avec votre équipe de sécurité web afin de déterminer les valeurs appropriées pour `rateLimit`,
+>Pour votre environnement de production, collaborez avec votre équipe de sécurité web afin de déterminer les valeurs appropriées pour `rateLimit`
 
 ## Bonnes pratiques relatives aux règles WAF
 
