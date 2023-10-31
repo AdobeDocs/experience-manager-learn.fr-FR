@@ -1,6 +1,6 @@
 ---
 user-guide-title: Prise en main d’AEM Sites – Tutoriel WKND
-user-guide-description: 'Un tutoriel en plusieurs parties pour les développeurs qui découvrent AEM. Implémentez un site AEM pour une marque de style de vie fictive : WKND. Activez le pipeline frontal pour accélérer votre cycle du développement au déploiement.'
+user-guide-description: 'Un tutoriel en plusieurs parties pour les développeurs qui découvrent AEM. Implémentez un site AEM pour une marque de style de vie fictive : WKND. Activez le pipeline front-end pour accélérer votre cycle du développement au déploiement.'
 breadcrumb-title: Tutoriels WKND d’AEM Sites
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
@@ -9,7 +9,7 @@ activity: develop
 audience: developer
 index: y
 source-git-commit: beebd6a354a9efb77d6e5e463559b34be78c006e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 100%
 
