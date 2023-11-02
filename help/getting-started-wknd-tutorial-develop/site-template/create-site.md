@@ -12,9 +12,9 @@ thumbnail: KT-7496.jpg
 exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
 recommendations: noDisplay, noCatalog
 source-git-commit: 0c6294ac468ad4ead041a68f381c6781a5c29b44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1013'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ Dans le cadre de la création rapide de site, utilisez l’Assistant de créatio
 
 Les étapes de ce chapitre se dérouleront dans un environnement Adobe Experience Manager as a Cloud Service. Assurez-vous que vous disposez d’un accès d’administration à l’environnement AEM. Il est recommandé d’utiliser un [programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=fr) et un [environnement de développement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr) lorsque vous suivez ce tutoriel.
 
-[Programme de production](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html?lang=fr) Les environnements peuvent également être utilisés pour ce tutoriel. Veillez toutefois à ce que les activités de ce tutoriel n’affectent pas le travail effectué sur les environnements cibles, car ce tutoriel déploie le contenu et le code dans l’environnement AEM cible.
+Les environnements du [programme de production](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs.html?lang=fr) peuvent également être utilisés pour ce tutoriel. Veillez toutefois à ce que les activités de ce tutoriel n’affectent pas le travail effectué sur les environnements cibles, car ce tutoriel déploie le contenu et le code dans l’environnement AEM cible.
 
-La variable [AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=fr) peut être utilisé pour des parties de ce tutoriel. Aspects de ce tutoriel qui dépendent des services cloud, tels que [déploiement de thèmes avec le pipeline front-end de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=fr), ne peut pas être exécuté sur le SDK AEM.
+Le [SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=fr) peut être utilisé pour certaines parties de ce tutoriel. Certains aspects de ce tutoriel dépendent des services cloud, tels que le [déploiement de thèmes avec le pipeline front-end de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/site-template/theming.html?lang=fr) qui ne peut pas être exécuté sur le SDK AEM.
 
 Consultez les [documentation d’intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=fr) pour plus d’informations.
 
