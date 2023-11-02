@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-10-26T00:00:00Z
 jira: KT-13148
 thumbnail: KT-13148.jpeg
-source-git-commit: 87266a250eb91a82cf39c4a87e8f0119658cf4aa
+exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
+source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
 workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 1%
 
 ---
-
 
 # Exemples et analyse des résultats de règles de filtrage du trafic incluant des règles WAF
 
@@ -27,6 +27,8 @@ Dans cette section, vous allez explorer des exemples pratiques de règles de fil
 De plus, vous découvrirez comment utiliser des outils de tableau de bord qui ingèrent des journaux de réseau de diffusion de contenu AEM pour visualiser des mesures essentielles au moyen de tableaux de bord d’Adobe fournis.
 
 Pour vous aligner sur vos exigences spécifiques, vous pouvez améliorer et créer des tableaux de bord personnalisés, afin d’obtenir des informations plus approfondies et d’optimiser les configurations de règles pour vos sites AEM.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425404?quality=12&learn=on)
 
 ## Exemples
 
@@ -351,4 +353,3 @@ Familiariser avec les recommandations [bonnes pratiques](./best-practices.md) af
 [Syntaxe des règles de filtre de trafic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#rules-syntax)
 
 [Format de journal CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf.html#cdn-log-format)
-
