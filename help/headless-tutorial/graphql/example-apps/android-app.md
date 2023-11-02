@@ -10,10 +10,10 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 7873e263-b05a-4170-87a9-59e8b7c65faa
 source-git-commit: 679b9bf9f0948e2b24d613b530d3ae644c92057d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '687'
 ht-degree: 100%
 
