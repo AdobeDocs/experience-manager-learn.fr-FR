@@ -10,7 +10,7 @@ topic: Integrations
 kt: 13717
 exl-id: 7469aa7f-1794-40dd-990c-af5d45e85223
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
 ht-degree: 100%
 
