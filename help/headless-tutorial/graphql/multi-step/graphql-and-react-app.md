@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
 source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1218'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Une application React simple est utilisée pour interroger et afficher du conten
 
 ## Prérequis
 
-Nous partons du principe que les étapes décrites dans les parties précédentes de ce tutoriel en plusieurs parties ont été terminées, ou [basic-tutorial-solution.content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip) est installé sur vos services de création et de publication as a Cloud Service AEM.
+Nous partons du principe que les étapes décrites dans les parties précédentes de ce tutoriel en plusieurs parties ont été terminées, ou que [basic-tutorial-solution-content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip) est installé sur vos services de création et de publication d’AEM as a Cloud Service.
 
 _Les captures d’écran de l’IDE de ce chapitre proviennent de [Visual Studio Code](https://code.visualstudio.com/)_.
 
@@ -100,7 +100,7 @@ Pour obtenir l’application React :
 >
 > //*********************************
 >
->  // TODO Implémentez cela en suivant les étapes du tutoriel AEM sans affichage
+>  // Tâche : implémentez ceci en suivant les étapes du tutoriel sur AEM Headless.
 >
 >  //*********************************
 >
@@ -492,11 +492,11 @@ Vérifiez l’application [http://localhost:3000/](http://localhost:3000/) et cl
 
 >[!IMPORTANT]
 >
->Pour vérifier les modifications apportées à votre mise en oeuvre ou si vous ne parvenez pas à faire fonctionner l’application après les modifications ci-dessus, reportez-vous à la section [basic-tutorial](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial) branche de solution.
+>Pour vérifier les modifications apportées à votre mise en œuvre ou si vous ne parvenez pas à faire fonctionner l’application après les modifications ci-dessus, reportez-vous à la solution [basic-tutorial](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial).
 
 ## Ce qui se passe
 
-Ouvrez le **Outils de développement** > **Réseau** et _Filtrer_ pour `all-teams` requête. Remarquez la demande d’API GraphQL `/graphql/execute.json/my-project/all-teams` est contre `http://localhost:3000` et **NOT** contre la valeur de `REACT_APP_HOST_URI`, par exemple `<https://publish-pxxx-exxx.adobeaemcloud.com`. Les requêtes sont effectuées par rapport au domaine de l’application React, car la [configuration du proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) est activée à l’aide du module `http-proxy-middleware`.
+Ouvrez **Outils de développement** > **Réseau** dans le navigateur et utilisez le _Filtre_ pour trouver la requête `all-teams`. Notez que la requête de l’API GraphQL `/graphql/execute.json/my-project/all-teams` est effectuée par rapport à `http://localhost:3000` et **NON** par rapport à la valeur de `REACT_APP_HOST_URI` (par exemple, `<https://publish-pxxx-exxx.adobeaemcloud.com`). Les requêtes sont effectuées par rapport au domaine de l’application React, car la [configuration du proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) est activée à l’aide du module `http-proxy-middleware`.
 
 
 ![Requête de l’API GraphQL via proxy.](assets/graphql-and-external-app/graphql-api-request-via-proxy.png)
