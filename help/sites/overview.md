@@ -6,9 +6,9 @@ sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
 source-git-commit: 237560dc634cb3d6c3553dd57386d2a9548ed4e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -22,17 +22,17 @@ Adobe Experience Manager (AEM) Sites est une plateforme de gestion de l’ex
 
 ## Nouveautés
 
-* **[Présentation des AEM et des Edge Delivery Services (vidéo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)**
-  *Découvrez l’univers complet de Adobe Experience Manager (AEM) qui englobe AEM Sites, AEM Assets, AEM sans affichage, AEM Forms et les Edge Delivery Services dans cette vidéo de présentation instructive.*
+* **[Vue d’ensemble d’AEM et d’Edge Delivery Services (vidéo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)**
+  *Découvrez l’univers complet d’Adobe Experience Manager (AEM) qui englobe AEM Sites, AEM Assets, AEM Headless, AEM Forms et Edge Delivery Services dans cette vidéo de présentation instructive.*
 
-* **[Que sont les AEM et les Edge Delivery Services ? (Vidéo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html)**
-  *Découvrez la valeur fournie par Adobe Experience Manager (AEM) et les Edge Delivery Services.*
+* **[Que sont AEM et Edge Delivery Services ? (Vidéo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=fr)**
+  *Découvrez la valeur ajoutée d’Adobe Experience Manager (AEM) et d’Edge Delivery Services.*
 
-* **[En savoir plus sur l’évolution d’AEM (vidéo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/evolution.html)**
-  *Découvrez l’évolution AEM et la valeur qu’elle fournit, d’AEM 6.5 à l’as a Cloud Service, et enfin aux Edge Delivery Services.*
+* **[En savoir plus sur l’évolution d’AEM (vidéo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/evolution.html?lang=fr)**
+  *Découvrez l’évolution d’AEM et sa valeur ajoutée, d’AEM 6.5 à AEM as a Cloud Service en passant par Edge Delivery Services.*
 
-* **[AEM avec présentation de l’architecture Edge Delivery Services (vidéo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)**
-  *Découvrez l&#39;architecture d&#39;AEM as a Cloud Service !*
+* **[Vue d’ensemble de l’architecture d’AEM avec Edge Delivery Services (vidéo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=fr)**
+  *Découvrez l’architecture d’AEM as a Cloud Service.*
 
 
 <div id="recs-overview-body-1"></div>
