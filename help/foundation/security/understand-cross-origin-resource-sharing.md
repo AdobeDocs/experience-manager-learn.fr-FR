@@ -13,9 +13,9 @@ role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
 source-git-commit: f47beff14782bb3f570d32818b000fc279394f19
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1052'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ ht-degree: 95%
 
 Le partage de ressources entre origines multiples d’Adobe Experience Manager ([!DNL CORS]) aide les propriétés web autres qu’AEM à effectuer des appels côté client vers AEM, authentifiés ou non, pour récupérer du contenu ou interagir directement avec AEM.
 
-La configuration OSGI décrite dans ce document est suffisante pour :
+La configuration OSGI décrite dans ce document est suffisante pour les éléments suivants :
 
-1. Partage de ressources d’origine unique sur AEM publication
-2. Accès à la norme CORS à AEM Auteur
+1. Partage de ressources d’origine unique sur l’instance de publication AEM.
+2. Accès CORS à l’instance de création AEM.
 
-Si l’accès à CORS à origines multiples est requis sur AEM publication, reportez-vous à la section [cette documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
+Si l’accès CORS à origines multiples est requis sur l’instance de publication AEM, reportez-vous à [cette documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=fr#dispatcher-configuration).
 
 ## Configuration OSGi de la stratégie de partage de ressources entre origines multiples Adobe Granite
 
