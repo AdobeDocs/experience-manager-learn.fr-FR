@@ -10,9 +10,9 @@ kt: 8634
 thumbnail: 336963.jpeg
 exl-id: f752df86-27d4-4dbf-a3cb-ee97b7d9a17e
 source-git-commit: 77b960315c07ba194642a412a0cc6049edcf7bd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Découvrez les index de recherche d’AEM as a Cloud Service et apprenez à 
 
 Dans le cadre de la refactorisation de votre base de code, utilisez l’[outil convertisseur d’index](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#command-aio-aem-migrationindex-converter) pour convertir des définitions d’index Oak personnalisées en définitions d’index compatibles avec AEM as a Cloud Service.
 
-Consultez la section [documentation du convertisseur d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html?lang=fr) pour l’ensemble complet et actuel des fonctionnalités du convertisseur d’index.
+Consultez la [documentation du convertisseur d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/index-converter.html?lang=fr) pour obtenir l’ensemble complet et actuel des fonctionnalités du convertisseur d’index.
 
 ## Activités clés
 
