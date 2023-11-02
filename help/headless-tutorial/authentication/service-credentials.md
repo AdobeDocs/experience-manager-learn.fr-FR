@@ -15,9 +15,9 @@ level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 source-git-commit: 65d8fd58f421a186e3624918c70cc5d79ec23700
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1967'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -224,7 +224,7 @@ Une fois que le profil d’utilisation de compte technique AEM existe dans AEM (
 1. Accédez à __Outils__ > __Sécurité__ > __Utilisateurs__.
 1. Localisez la personne utilisatrice d’AEM à l’aide de l’__identifiant de connexion__ identifié à l’étape 1 et ouvrez ses __Propriétés__.
 1. Accédez à l’onglet __Groupes__ et ajoutez le groupe d’__utilisation de gestion des ressources numériques (DAM)__ (dont les membres bénéficient de l’accès en écriture aux ressources).
-   + [Consultez la liste des groupes d’utilisateurs AEM fournis](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr#built-in-users-and-groups) pour ajouter l’utilisateur du service à pour obtenir les autorisations optimales. Si aucun groupe d’utilisateurs AEM fourni n’est suffisant, créez le vôtre et ajoutez les autorisations appropriées.
+   + [Consultez la liste des groupes d’utilisateurs et d’utilisatrices AEM fournis](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=fr#built-in-users-and-groups) pour ajouter l’utilisateur ou l’utilisatrice de service afin d’obtenir les autorisations optimales. Si aucun groupe d’utilisateurs et d’utilisatrices AEM fourni n’est suffisant, créez le vôtre et ajoutez les autorisations appropriées.
 1. Appuyez sur __Enregistrer et fermer__.
 
 Maintenant que le compte technique dispose des autorisations d’écriture sur les ressources dans AEM, réexécutez l’application :
