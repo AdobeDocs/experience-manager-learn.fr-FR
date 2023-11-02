@@ -8,20 +8,20 @@ level: Beginner
 feature: Security
 exl-id: 867cf74e-44e7-431b-ac8f-41b63c370635
 source-git-commit: 1114ec01555baa1c6ffc2ccc5e77165ec9827e4d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '376'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # Développer pour le partage de ressources entre origines multiples (CORS)
 
-Court exemple d’utilisation de [!DNL CORS] pour accéder au contenu d’AEM à partir d’une application web externe via du code JavaScript côté client. Cet exemple utilise la configuration OSGi CORS pour activer l’accès à CORS sur AEM. L’approche de configuration OSGi est viable dans les cas suivants :
+Court exemple d’utilisation de [!DNL CORS] pour accéder au contenu d’AEM à partir d’une application web externe via du code JavaScript côté client. Cet exemple utilise la configuration OSGi CORS pour activer l’accès à CORS sur AEM. L’approche de configuration OSGi est viable dans les cas suivants :
 
-* Une origine unique accède à AEM Publier du contenu
-* L’accès à la norme CORS est requis pour AEM Auteur
+* Une origine unique accède au contenu de l’instance de publication AEM
+* L’accès CORS est requis pour l’instance de création AEM.
 
-Si un accès multi-origines à AEM Publication est requis, reportez-vous à la section [cette documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=en#dispatcher-configuration).
+Si un accès de plusieurs origines à l’instance de publication AEM est requis, reportez-vous à [cette documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=fr#dispatcher-configuration).
 
 >[!VIDEO](https://video.tv.adobe.com/v/18837?quality=12&learn=on)
 
