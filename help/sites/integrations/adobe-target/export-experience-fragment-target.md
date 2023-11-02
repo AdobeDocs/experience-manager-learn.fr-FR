@@ -15,9 +15,9 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2c01cda8-f72f-47f7-a36b-95afd241906e
 source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -47,9 +47,9 @@ L’export de fragments d’expérience vers Adobe Target sans les autorisation
 .
 #### Résolution
 
-1. Connexion à [Admin Console](https://adminconsole.adobe.com/) avec des droits d’administration pour le profil de produit Adobe Target utilisé, mais l’intégration AEM
+1. Connectez-vous à [Admin Console](https://adminconsole.adobe.com/) avec des droits d’administration pour le profil de produit Adobe Target utilisé dans l’intégration AEM.
 2. Sélectionnez __Produits > Adobe Target > Profil de produit__.
-3. Sous __Intégrations__ , sélectionnez l’intégration pour votre environnement as a Cloud Service AEM (même nom que le projet Adobe Developer).
+3. Sous l’onglet __Intégrations__, sélectionnez l’intégration de votre environnement AEM as a Cloud Service (même nom que le projet Adobe Developer).
 4. Attribuez le rôle __Éditeur__ ou __Approbateur__.
 
    ![Erreur de l’API Target.](assets/target-permissions.png).
