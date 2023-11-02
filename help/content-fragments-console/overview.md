@@ -11,9 +11,9 @@ doc-type: Catalog
 last-substantial-update: 2023-05-12T00:00:00Z
 exl-id: d92c36e2-fbfa-43a3-8c5f-0371cc99f352
 source-git-commit: 82926e56d01222186a4d677b29ab9230aa71458a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '241'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -35,11 +35,11 @@ Consultez la section [Documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./basics/content-fragments-console.md" title="Présentation de la console"
+            <a href="./basics/content-fragments-console.md" title="Vue d’ensemble de la console"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3409492?format=jpeg"
-                alt="Présentation de la console">
+                alt="Vue d’ensemble de la console">
             </a>
           </figure>
         </div>
@@ -48,7 +48,7 @@ Consultez la section [Documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./basics/content-fragments-console.md" title="Vue d’ensemble">Présentation de la console</a>
+              <a href="./basics/content-fragments-console.md" title="Vue d’ensemble">Vue d’ensemble de la console</a>
             </p>
             <p class="is-size-6">Vue d’ensemble rapide de la console Fragments de contenu.</p>
             <a href="./basics/content-fragments-console.md" class="spectrum-Button
@@ -67,11 +67,11 @@ Consultez la section [Documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./basics/content-fragment-editor.md" title="Présentation de l’éditeur"
+            <a href="./basics/content-fragment-editor.md" title="Vue d’ensemble de l’éditeur"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3424373?format=jpeg"
-                alt="Présentation de l’éditeur">
+                alt="Vue d’ensemble de l’éditeur">
             </a>
           </figure>
         </div>
@@ -80,9 +80,9 @@ Consultez la section [Documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">4 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./basics/content-fragment-editor.md" title="Vue d’ensemble">Présentation de l’éditeur</a>
+              <a href="./basics/content-fragment-editor.md" title="Vue d’ensemble">Vue d’ensemble de l’éditeur</a>
             </p>
-            <p class="is-size-6">Aperçu rapide de l’éditeur de fragments de contenu.</p>
+            <p class="is-size-6">Vue d’ensemble rapide de l’éditeur de Fragments de contenu.</p>
             <a href="./basics/content-fragment-editor.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
