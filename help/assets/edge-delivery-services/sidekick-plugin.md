@@ -1,6 +1,6 @@
 ---
-title: Plug-ins et Edge Delivery Services du Sidekick AEM Assets
-description: Découvrez comment le module externe AEM Assets Sidekick peut être utilisé pour incorporer des ressources gérées dans des expériences à fort impact diffusées par le biais d’Edge Delivery Services.
+title: Modules externes AEM Assets Sidekick et Edge Delivery Services
+description: Découvrez comment le module externe AEM Assets Sidekick peut être utilisé pour incorporer des ressources gérées dans des expériences à fort impact diffusées par le biais d’Edge Delivery Services.
 version: Cloud Service
 feature: Edge Delivery Services, Selectors
 topic: Content Management
@@ -12,16 +12,16 @@ jira: KT-14070
 thumbnail: 3424615.jpeg
 exl-id: e8ed49a5-4ad2-4759-bf0f-1dae8478d996
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '64'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Plug-ins et Edge Delivery Services du Sidekick AEM Assets
+# Modules externes AEM Assets Sidekick et Edge Delivery Services
 
 {{edge-delivery-services}}
 
-Découvrez comment [Module externe AEM Assets Sidekick](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin) peut être utilisé pour incorporer des ressources gérées dans des expériences à fort impact diffusées par le biais d’Edge Delivery Services.
+Découvrez comment le [module externe AEM Assets Sidekick](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin) peut être utilisé pour incorporer des ressources gérées dans des expériences à fort impact diffusées par le biais d’Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424615/?learn=on)
