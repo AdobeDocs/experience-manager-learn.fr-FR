@@ -28,7 +28,7 @@ La couche de données client Adobe introduit une méthode standard pour collecte
 
 ## Explorer la couche de données
 
-Vous pouvez vous faire une idée des fonctionnalités intégrées de la couche de données client Adobe en utilisant simplement les outils de développement de votre navigateur et le [site de référence WKND](https://wknd.site/us/en.html) en ligne.
+Vous pouvez vous faire une idée des fonctionnalités intégrées de la couche de données client Adobe en utilisant simplement les outils de développement de votre navigateur et le [site de référence WKND](https://wknd.site/fr/fr.html) en ligne.
 
 >[!NOTE]
 >
