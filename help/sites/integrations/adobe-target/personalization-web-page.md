@@ -15,9 +15,9 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2d201b48-c0fb-4bb4-a7d8-da9f4702e9ff
 source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '466'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Découvrez comment créer une activité pour rediriger les pages de votre site h
 
 ## Conditions préalables
 
-Pour personnaliser les pages complètes d’un site web AEM, la configuration suivante doit être effectuée :
+Pour personnaliser les pages complètes d’un site web AEM, la configuration suivante doit être effectuée :
 
 1. [Ajouter Adobe Target à votre site web AEM](./add-target-launch-extension.md)
 1. [Déclencher un appel Adobe Target à partir de Launch](./load-and-fire-target.md)
@@ -47,7 +47,7 @@ Le site WKND a repensé sa page d’accueil et souhaite rediriger les visiteurs 
 
    ![URL d’activité.](assets/ab-test-url.png)
 
-1. Le compositeur d’expérience visuelle affiche deux onglets sur le côté gauche après la création d’une activité : *Expérience A* et *Expérience B*. Sélectionnez une expérience dans la liste. Vous pouvez ajouter de nouvelles expériences à la liste à l’aide du **Ajouter une expérience** bouton .
+1. Le compositeur d’expérience visuelle affiche deux onglets sur le côté gauche après la création d’une activité : *Expérience A* et *Expérience B*. Sélectionnez une expérience dans la liste. Vous pouvez ajouter de nouvelles expériences à la liste à l’aide du bouton **Ajouter une expérience**.
 
    ![Options d’expérience.](assets/experience-options.png)
 
