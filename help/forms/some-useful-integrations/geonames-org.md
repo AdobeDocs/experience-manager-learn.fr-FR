@@ -10,9 +10,9 @@ level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
 source-git-commit: 5fc4a11b7f7f26a62f49cc8614e6bf699cc1697a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '636'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -86,9 +86,10 @@ Ajoutez 2 listes déroulantes appelées Villes et Départements dans le formula
 
 ### Exemples de ressources
 
-Vous pouvez télécharger les ressources suivantes pour démarrer rapidement la création de l’exemple de liste déroulante en cascade Les fichiers swagger terminés peuvent être téléchargés depuis [here](assets/geonames-swagger-files.zip)
-Les fichiers swagger décrivent l’API REST suivante :
+Vous pouvez télécharger les ressources suivantes pour commencer à créer une liste déroulante en cascade.
+Les fichiers Swagger complets sont disponibles [ici](assets/geonames-swagger-files.zip).
+Les fichiers Swagger décrivent l’API REST suivante.
 * [Obtenir tous les pays](http://api.geonames.org/countryInfoJSON?username=yourusername)
 * [Obtenir les enfants de l’objet Geoname](http://api.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
 
-Terminé [Le modèle de données de formulaire peut être téléchargé ici](assets/geonames-api-form-data-model.zip)
+Le [modèle de données de formulaire complété peut être téléchargé ici](assets/geonames-api-form-data-model.zip).
