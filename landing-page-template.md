@@ -1,50 +1,46 @@
 ---
-title: titre du guide
-seo-title: titre du seo
-description: description du guide
+title: Titre du guide
+seo-title: seo title
+description: Description du guide
 seo-description: seo-description
-translation-type: tm+mt
 source-git-commit: f6b1af99eb9eb5602234c89ea25f1a7d03d64cc0
-workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 4%
+workflow-type: ht
+source-wordcount: '105'
+ht-degree: 100%
 
 ---
 
 
-# Présentation {#overview}
+# Vue d’ensemble {#overview}
 
-Présentation en 1 à 2 phrases du produit sur lequel se concentre ce guide d’utilisateur. Ce guide d&#39;utilisation contient des vidéos et des didacticiels sur les nombreuses fonctionnalités et fonctionnalités de *xyz*.
+Vue d’ensemble succincte du produit sur lequel se concentre ce guide d’utilisation. Ce guide d’utilisation contient des vidéos et des tutoriels sur les nombreuses fonctionnalités de *xyz*.
 
 ## Nouveautés
 
-* **[Vidéo sur une nouvelle fonctionnalité (vidéo)](README.md)**
+* **[Une nouvelle fonctionnalité vidéo (vidéo)](README.md)**
+  <br>
+  *Apprenez-en plus sur cette super nouvelle fonctionnalité.*
 
-   <br>
-   *Découvrez cette nouvelle fonctionnalité intéressante.*
-
-* **[Vidéo sur une nouvelle fonctionnalité (vidéo)](README.md)**
-
-   <br>
-   *Découvrez cette nouvelle fonctionnalité intéressante.*
+* **[Une nouvelle fonctionnalité vidéo (vidéo)](README.md)**
+  <br>
+  *Apprenez-en plus sur cette super nouvelle fonctionnalité.*
 
 * **[Un nouvel article (article)](README.md)**
+  <br>
+  *Cliquez ici pour en savoir plus sur la fonctionnalité xyz.*
 
-   <br>
-   *Cliquez ici pour en savoir plus sur feature xyz !*
-
-## Sélection du personnel
+## Sélections des personnes membres du personnel
 
 <table>
 <tr>
   <td>
     <a href="#">
-      <img alt="400 x 225 px" src="myimage.png" />
+      <img alt="400x225 px" src="myimage.png" />
     </a>
     <div>
       <a href="#">
-    <strong>Contenu d'activation 1</strong>
-    </a>
+<strong>Contenu d’activation 1</strong>
+</a>
     </div>
     <p>
     <em>Brève description du contenu d’activation.</em>
@@ -52,12 +48,12 @@ Présentation en 1 à 2 phrases du produit sur lequel se concentre ce guide d’
   </td>
    <td>
     <a href="#">
-      <img alt="400 x 225 px" src="myimage.png" />
+      <img alt="400x225 px" src="myimage.png" />
     </a>
     <div>
       <a href="#">
-    <strong>Contenu d'activation 1</strong>
-    </a>
+<strong>Contenu d’activation 1</strong>
+</a>
     </div>
     <p>
     <em>Brève description du contenu d’activation.</em>
@@ -65,12 +61,12 @@ Présentation en 1 à 2 phrases du produit sur lequel se concentre ce guide d’
   </td>
   <td>
     <a href="#">
-      <img alt="400 x 225 px" src="myimage.png" />
+      <img alt="400x225 px" src="myimage.png" />
     </a>
     <div>
       <a href="#">
-    <strong>Contenu d'activation 1</strong>
-    </a>
+<strong>Contenu d’activation 1</strong>
+</a>
     </div>
     <p>
     <em>Brève description du contenu d’activation.</em>
@@ -81,6 +77,6 @@ Présentation en 1 à 2 phrases du produit sur lequel se concentre ce guide d’
 
 ## Ressources supplémentaires
 
-* [Ressource no 1](README.md)
-* [Ressource no 2](README.md)
-* [Ressource no 3](README.md)
+* [Ressource 1](README.md)
+* [Ressource 2](README.md)
+* [Ressource 3](README.md)
