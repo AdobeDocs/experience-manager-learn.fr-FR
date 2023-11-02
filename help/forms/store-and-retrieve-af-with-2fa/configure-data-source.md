@@ -11,9 +11,9 @@ role: Developer
 level: Beginner
 exl-id: a87ff428-15f7-43c9-ad03-707eab6216a9
 source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '320'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Définissez ensuite les propriétés de la source de données mise en pool de la
 | Nom de la propriété | Valeur de la propriété |   |
 |---------------------|------------------------------------------------------------------------------------|---|
 | Nom de la source de données | StoreAndRetrieveAfData |   |
-| Classe de lecteur JDBC | jdbc:mysql://localhost:3306/aemformstutorial |   |
+| Classe de pilote JDBC | jdbc:mysql://localhost:3306/aemformstutorial |   |
 | URI de connexion JDBC | jdbc:mysql://localhost:3306/aemformstutorial?serverTimezone=UTC&amp;autoReconnect=true |   |
 |                     |                                                                                    |   |
 
