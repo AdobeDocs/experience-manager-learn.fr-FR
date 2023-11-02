@@ -1,7 +1,7 @@
 ---
-title: Intégration de Adobe Experience Manager à Adobe Target à l’aide d’Experience Platform Launch et d’Adobe Developer
+title: Intégrer Adobe Experience Manager à Adobe Target à l’aide d’Experience Platform Launch et d’Adobe Developer
 seo-title: Integrating Adobe Experience Manager with Adobe Target using Experience Platform Launch and Adobe I/O
-description: Présentation détaillée de l’intégration de Adobe Experience Manager à Adobe Target à l’aide d’Experience Platform Launch et d’Adobe Developer
+description: Présentation étape par étape de l’intégration d’Adobe Experience Manager à Adobe Target à l’aide d’Experience Platform Launch et d’Adobe Developer
 seo-description: Step by step walk-through on how to integrate Adobe Experience Manager with Adobe Target using Experience Platform Launch and Adobe I/O
 feature: Experience Fragments
 topic: Personalization
@@ -11,23 +11,23 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites 6.5" before-title="false"
 exl-id: b1d7ce04-0127-4539-a5e1-802d7b9427dd
 source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1057'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Utilisation d’Adobe Experience Platform Launch via la console Adobe Developer
+# Utiliser Adobe Experience Platform Launch via Adobe Developer Console
 
 ## Conditions préalables
 
 * [Instance de création et de publication d’AEM](./implementation.md#set-up-aem) s’exécutant sur les ports localhost 4502 et 4503 respectivement.
 * **Experience Cloud**
    * Accéder à la solution Adobe Experience Cloud de votre organisation - `https://<yourcompany>.experiencecloud.adobe.com`
-   * Configuration Experience Cloud avec les solutions suivantes
+   * Experience Cloud est fourni avec les solutions suivantes :
       * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
-      * [Developer Console d’Adobe](https://developer.adobe.com/console/)
+      * [Adobe Developer Console](https://developer.adobe.com/console/)
 
      >[!NOTE]
      >Vous devez disposer des autorisations nécessaires pour développer, approuver, publier, gérer des extensions et gérer des environnement dans Launch. Si vous ne parvenez pas à effectuer l’une de ces étapes car les options de l’interface utilisateur ne sont pas disponibles, contactez votre administrateur ou administratrice Experience Cloud pour en demander l’accès. Pour plus d’informations sur les autorisations de Launch, [voir la documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=fr).
@@ -46,7 +46,7 @@ Pour cette intégration, les audiences suivantes doivent être impliquées. Pour
 
 ## Présentation
 
-AEM offre une intégration à Experience Platform Launch prête à l’emploi. Cette intégration permet aux administrateurs d’AEM de configurer facilement Experience Platform Launch via une interface conviviale, réduisant ainsi le niveau d’effort et le nombre d’erreurs lors de la configuration de ces deux outils. Et rien que le fait d’ajouter l’extension Adobe Target à Experience Platform Launch permet d’utiliser toutes les fonctionnalités d’Adobe Target sur la ou les pages web d’AEM.
+AEM offre une intégration à Experience Platform Launch prête à l’emploi. Cette intégration permet aux administrateurs et administratrices d’AEM de configurer facilement Experience Platform Launch via une interface conviviale, réduisant ainsi le niveau d’effort et le nombre d’erreurs lors de la configuration de ces deux outils. Et rien que le fait d’ajouter l’extension Adobe Target à Experience Platform Launch permet d’utiliser toutes les fonctionnalités d’Adobe Target sur la ou les pages web d’AEM.
 
 Dans cette section, nous passerons en revue les étapes d’intégration suivantes :
 
@@ -88,7 +88,7 @@ Une propriété est un conteneur que vous remplissez d’extensions, de règles,
 
 #### Ajouter une extension Target
 
-L’extension Adobe Target prend en charge les implémentations côté client en utilisant le SDK JavaScript Target pour le web moderne, `at.js`. Les clientes et clients qui utilisent toujours l’ancienne bibliothèque de Target, `mbox.js`, [doivent effectuer la mise à niveau vers at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html) pour utiliser Launch.
+L’extension Adobe Target prend en charge les implémentations côté client en utilisant le SDK JavaScript Target pour le web moderne, `at.js`. Les clientes et clients qui utilisent toujours l’ancienne bibliothèque de Target, `mbox.js`, [doivent effectuer la mise à niveau vers at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html?lang=fr) pour utiliser Launch.
 
 L’extension Target se compose de deux parties principales :
 
@@ -138,9 +138,9 @@ L’extension Target se compose de deux parties principales :
 
 >[!NOTE]
 >
-> Octroyez à l’intégration Adobe Developer l’accès pour sélectionner des espaces de travail avec les [rôle permettant à une équipe centrale d’apporter des modifications pilotées par l’API dans quelques espaces de travail uniquement](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html?lang=fr).
+> Accordez à l’intégration d’Adobe Developer l’accès pour sélectionner des espaces de travail avec le [rôle permettant à une équipe centrale d’apporter des modifications pilotées par l’API dans quelques espaces de travail uniquement](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html?lang=fr).
 
-1. Créez l’intégration IMS dans AEM à l’aide des informations d’identification d’Adobe Developer. (01:12 à 03:55)
+1. Créez l’intégration IMS dans AEM à l’aide des informations d’identification d’Adobe Developer. (01:12 à 03:55)
 2. Dans Experience Platform Launch, créez une propriété. (abordé [ci-dessus](#create-launch-property)).
 3. À l’aide de l’intégration IMS de l’étape 1, créez une intégration Experience Platform Launch pour importer votre propriété Launch.
 4. Dans AEM, mappez l’intégration d’Experience Platform Launch à un site à l’aide de la configuration du navigateur. (05:28 à 06:14)
