@@ -11,9 +11,9 @@ thumbnail: 337960.jpeg
 last-substantial-update: 2022-10-03T00:00:00Z
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
 source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '263'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 
 ## Ressources
 
-+ [Documentation relative au plan du site AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=en)
++ [Documentation relative au plan du site AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=fr)
 + [Documentation relative au plan du site Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [Documentation relative au plan du site sitemap.org](https://www.sitemaps.org/protocol.html)
 + [Documentation relative au fichier d’index du plan du site sitemap.org](https://www.sitemaps.org/protocol.html#index)
