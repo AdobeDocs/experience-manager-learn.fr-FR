@@ -9,12 +9,12 @@ level: Beginner
 kt: 10797
 thumbnail: kt-10797.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 4f090809-753e-465c-9970-48cf0d1e4790
 source-git-commit: 701d6d46d716faf51ba5ce3ed31de68928963e54
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '549'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ Le composant web fonctionne avec les options de déploiement d’AEM ci-après.
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr)
 + Configuration locale à l’aide du [SDK AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr)
-   + Nécessite [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) (si vous vous connectez au SDK local AEM 6.5 ou AEM)
+   + Nécessite [JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) (si vous vous connectez à AEM 6.5 en local ou au SDK AEM).
 
-Cet exemple d’application repose sur [basic-tutorial-solution.content.zip](../multi-step/assets/explore-graphql-api/basic-tutorial-solution.content.zip) à installer et les [configurations de déploiement](../deployment/web-component.md) sont en place.
+Cet exemple d’application repose sur [basic-tutorial-solution.content.zip](../multi-step/assets/explore-graphql-api/basic-tutorial-solution.content.zip) à installer et les [configurations de déploiement](../deployment/web-component.md) en place.
 
 
 >[!IMPORTANT]
