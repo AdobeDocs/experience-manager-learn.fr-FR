@@ -1,5 +1,5 @@
 ---
-title: Variables de journalisation dans AEM Workflow[Partie6]
+title: Enregistrer des variables dans un workflow AEM [Partie 6]
 description: Enregistrer la valeur des variables de workflow AEM
 version: 6.5
 topic: Development
@@ -9,19 +9,19 @@ level: Beginner
 kt: 13783
 exl-id: 6afb3a52-9879-4393-8efd-ec3e5c303063
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '126'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Enregistrer la valeur des variables dans AEM Workflow
+# Enregistrer la valeur des variables dans un workflow AEM
 
-La journalisation de la valeur des variables est une pratique courante dans le développement de logiciels. Il aide les développeurs à suivre et comprendre l’exécution d’un workflow AEM, à diagnostiquer les problèmes et à surveiller le flux de données dans un workflow AEM.
+L’enregistrement de la valeur des variables est une pratique courante dans le développement de logiciels. Il aide les équipes de développement à suivre et à comprendre l’exécution d’un workflow AEM, à diagnostiquer les problèmes et à surveiller le flux de données dans un workflow AEM.
 
 
 
-Le code suivant associé à une étape de processus personnalisée consigne la valeur de tous les types de variables, à l’exception du type FormDataModel.
+Le code suivant associé à une étape de processus personnalisée enregistre la valeur de tous les types de variables, à l’exception du type FormDataModel.
 
 ```java
 package com.variablelogger.core;
@@ -174,9 +174,9 @@ public class LogWorkflowVariables implements WorkflowProcess {
 
 >[!NOTE]
 >
->Les documents sont enregistrés dans le dossier racine de votre installation AEM serveur.
+>Les documents sont enregistrés dans le dossier racine de l’installation du serveur AEM.
 
-## Déploiement de l’exemple de lot
+## Déployer l’exemple de lot
 
-[Déploiement du lot journal de variables](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) à l&#39;aide de la console web Felix.
-Associez ce lot à une étape de processus dans votre workflow AEM pour consigner la valeur de la variable String et Document .
+[Déployer le lot d’enregistreur de variables](assets/VariableLogger.core-1.0.0-SNAPSHOT.jar) à l’aide de la console web Felix.
+Associez ce lot à une étape de processus dans votre workflow AEM pour enregistrer la valeur de la variable Chaîne et Document.
