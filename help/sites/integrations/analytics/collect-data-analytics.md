@@ -11,9 +11,9 @@ thumbnail: 5332-collect-data-analytics.jpg
 badgeIntegration: label="Intégration" type="positive"
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
 source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2468'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Les éléments suivants sont requis :
 
 ## Changement d’environnement de balise pour le site WKND
 
-La variable [WKND](https://wknd.site/fr/fr.html) est un site ouvert au public, basé sur [un projet open source](https://github.com/adobe/aem-guides-wknd) conçu comme une référence et [tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr) pour une mise en oeuvre AEM.
+[WKND](https://wknd.site/fr/fr.html) est un site public basé sur [un projet open source](https://github.com/adobe/aem-guides-wknd) conçu comme une référence et un [tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr) pour une implémentation AEM.
 
 Au lieu de configurer un environnement AEM et d’installer la base de code WKND, vous pouvez utiliser le débogueur Experience Platform pour **changer** le [site WKND](https://wknd.site/fr/fr.html) en direct pour *votre* propriété de balise. Cependant, vous pouvez utiliser votre propre site AEM s’il comporte déjà la [couche de données client Adobe activée](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr#installation-activation).
 
@@ -115,7 +115,7 @@ Le [projet de référence WKND](https://github.com/adobe/aem-guides-wknd) est cr
 
 ## Créer une règle Page chargée
 
-La couche de données client Adobe est une **piloté par les événements** couche de données. Lorsque la couche de données de page AEM est chargée, elle déclenche un événement `cmp:show`. Créez une règle qui se déclenche lorsque l’événement `cmp:show` est déclenché à partir de la couche de données de page.
+La couche de données de la clientèle Adobe est une couche de données **pilotée par les événements**. Lorsque la couche de données de page AEM est chargée, elle déclenche un événement `cmp:show`. Créez une règle qui se déclenche lorsque l’événement `cmp:show` est déclenché à partir de la couche de données de page.
 
 1. Accédez à Experience Platform et à la propriété de balise intégrée au site AEM.
 1. Accédez à la section **Règles** dans l’interface utilisateur de la propriété de balise, puis cliquez sur **Créer une règle**.
@@ -178,7 +178,7 @@ La couche de données client Adobe est une **piloté par les événements** couc
    console.log("Page template: " + event.component['xdm:template']);
    ```
 
-   L’objet `event` est transmis à partir de la méthode `trigger()` appelée dans l’événement personnalisé. Ici, le `component` est la page active dérivée de la couche de données. `getState` dans l’événement personnalisé.
+   L’objet `event` est transmis à partir de la méthode `trigger()` appelée dans l’événement personnalisé. Ici, le `component` est la page actuelle provenant de la couche de données `getState` dans l’événement personnalisé.
 
 1. Enregistrez les modifications et exécutez une [création](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/builds.html?lang=fr) dans la propriété de balise pour promouvoir le code vers l’[environnement](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=fr) utilisé sur votre site AEM.
 
