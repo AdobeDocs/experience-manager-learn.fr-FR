@@ -9,10 +9,10 @@ level: Beginner
 kt: 10798
 thumbnail: KT-10798.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 39b21a29-a75f-4a6c-ba82-377cf5cc1726
 source-git-commit: d3ee129cb228f02d5a5846465400c04ce81dfbb5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
 ht-degree: 100%
 
