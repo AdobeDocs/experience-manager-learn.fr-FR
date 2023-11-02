@@ -9,7 +9,7 @@ feature: Learn From Your Peers
 jira: KT-14255
 exl-id: 37ee3234-f91c-4f0a-b0b7-b9167e7847a9
 source-git-commit: 3752e22455020b58d23524f7e6a99414e773422d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1084'
 ht-degree: 100%
 
@@ -77,7 +77,7 @@ Essayez de ne pas utiliser de composants personnalisés. Utilisez plutôt les [c
 
 ### [Systèmes de style](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=fr)
 
-Les systèmes de style permettent aux composants principaux, et même aux composants personnalisés, de changer d’aspect à la discrétion des auteurs et autrices, qui peuvent ainsi créer des composants entièrement nouveaux. Ces modifications stylistiques impliquent généralement uniquement une personne affectée au design frontal et une personne chargée de la création expérimentée (souvent qualifiée de « super autrice »).
+Les systèmes de style permettent aux composants principaux, et même aux composants personnalisés, de changer d’aspect à la discrétion des auteurs et autrices, qui peuvent ainsi créer des composants entièrement nouveaux. En règle générale, ces modifications stylistiques impliquent uniquement une personne affectée à la conception front-end et une personne chargée de la création expérimentée (souvent qualifiée de « super auteur »).
 
 ### [Lancements](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/launches/overview.html?lang=fr)
 
