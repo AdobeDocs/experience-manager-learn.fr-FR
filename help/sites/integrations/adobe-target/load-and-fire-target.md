@@ -15,9 +15,9 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
 source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '613'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Découvrez comment charger, transférer des paramètres à une requête de page 
 
 ## Règle de chargement de page
 
-La couche de données client Adobe est une couche de données pilotée par les événements. Lorsque la couche de données Page AEM est chargée, elle déclenche un événement . `cmp:show` . Dans la vidéo, la règle `Launch Library Loaded` est appelée à l’aide d’un événement personnalisé. Vous trouverez ci-dessous les fragments de code utilisés dans la vidéo pour l’événement personnalisé et pour les éléments de données.
+La couche de données de la clientèle Adobe est une couche de données pilotée par les événements. Lorsque la couche de données de page AEM est chargée, elle déclenche un événement `cmp:show`. Dans la vidéo, la règle `Launch Library Loaded` est appelée à l’aide d’un événement personnalisé. Vous trouverez ci-dessous les fragments de code utilisés dans la vidéo pour l’événement personnalisé ainsi que pour les éléments de données.
 
 ### Événement d’affichage de page personnalisé{#page-event}
 
@@ -41,7 +41,7 @@ Dans la propriété Launch, ajoutez un nouvel **Événement** à la **Règle**.
 + __Type d’événement :__ code personnalisé
 + __Nom :__ gestionnaire d’événements d’affichage de page (ou quelque chose de descriptif)
 
-Appuyez sur le bouton __Ouvrir l’éditeur__ et collez-les dans le fragment de code suivant. Ce code __doit__ être ajouté à la __Configuration d’événement__ et à une __Action__ ultérieure.
+Appuyez sur le bouton __Ouvrir l’éditeur__ et collez l’extrait de code suivant. Ce code __doit__ être ajouté à la __Configuration d’événement__ et à une __Action__ ultérieure.
 
 ```javascript
 // Define the event handler function
@@ -81,7 +81,7 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Une fonction personnalisée définit la variable `pageShownEventHandler`et écoute les événements émis par AEM Core Components, fournit les informations pertinentes au Core Component, les regroupe dans un objet d’événement et déclenche l’événement Launch avec les informations d’événement dérivées à sa charge utile.
+Une fonction personnalisée définit le `pageShownEventHandler` et écoute les événements émis par les composants principaux d’AEM, déduit les informations pertinentes des composants principaux, les regroupe dans un objet d’événement et déclenche l’événement Launch avec les informations déduites de l’événement dans sa payload.
 
 La règle Launch est déclenchée à l’aide de la fonction `trigger(...)` de Launch qui est __uniquement__ disponible à partir de la définition de l’extrait de code du code personnalisé d’un événement de règle.
 
