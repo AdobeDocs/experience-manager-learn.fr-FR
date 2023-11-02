@@ -11,9 +11,9 @@ level: Intermediate
 last-substantial-update: 2023-05-14T00:00:00Z
 exl-id: 5e423f2c-90d2-474f-8bdc-fa15ae976f18
 source-git-commit: 929fd045b81652463034b54c557de04df3d4e64a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Les workflows à démarrage automatique étendent le traitement des ressources d
 
 >[!NOTE]
 >
->Utilisez des workflows de démarrage automatique pour personnaliser le post-traitement des ressources plutôt que d’utiliser des lanceurs de workflow. Les workflows à démarrage automatique sont _uniquement_ appelés lorsque le traitement d’une ressource est achevé, à la place des lanceurs, qui peuvent être appelés plusieurs fois pendant le traitement de la ressource.
+>Utilisez des workflows à démarrage automatique pour personnaliser le post-traitement des ressources plutôt que d’utiliser des lanceurs de workflow. Les workflows à démarrage automatique sont _uniquement_ appelés lorsque le traitement d’une ressource est achevé, à la place des lanceurs, qui peuvent être appelés plusieurs fois pendant le traitement de la ressource.
 
 ## Personnaliser le workflow de post-traitement
 
@@ -43,7 +43,7 @@ Pour personnaliser le workflow de post-traitement, copiez le [modèle de workflo
 
    >[!NOTE]
    >
-   >Les workflows de démarrage automatique s’exécutent à chaque chargement ou retraitement de ressources, de sorte à prendre en compte l’implication de mise à l’échelle des étapes de workflow, en particulier pour les opérations en masse telles que [Imports en bloc](../../cloud-service/migration/bulk-import.md) ou des migrations.
+   >Les workflows à démarrage automatique s’exécutent à chaque chargement ou nouveau traitement de ressources. Vous devez donc envisager soigneusement l’implication de l’évolution des étapes du workflow, en particulier pour les opérations en bloc telles que les [Imports en bloc](../../cloud-service/migration/bulk-import.md) ou les migrations.
 
 7. Cliquez sur le bouton _Synchronisation_ pour enregistrer vos modifications et synchroniser le modèle de workflow.
 
