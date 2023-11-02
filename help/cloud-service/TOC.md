@@ -9,7 +9,7 @@ team: TM
 source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
 workflow-type: tm+mt
 source-wordcount: '1054'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 97%
    + [Services de création et de publication](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
 + Edge Delivery Services {#edge-delivery-services}
-   + [Module externe AEM Assets Sidekick](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html){target=_blank}
+   + [Module externe AEM Assets Sidekick](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html?lang=fr){target=_blank}
 + Cloud Manager {#cloud-manager}
    + [Programmes](./cloud-manager/programs.md)
    + [Environnements](./cloud-manager/environments.md)
@@ -111,7 +111,7 @@ ht-degree: 97%
       + [Configuration](./developing/rde/how-to-setup.md)
       + [Utilisation](./developing/rde/how-to-use.md)
       + [Cycle de vie de développement](./developing/rde/development-life-cycle.md)
-   + [Documentation JavaDocs de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
+   + [JavaDocs de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + Déboguer AEM{#debugging}
    + Déboguer le SDK AEM{#debugging-aem-sdk}
       + [Présentation](./debugging/aem-sdk-local-quickstart/overview.md)
@@ -132,8 +132,8 @@ ht-degree: 97%
    + [Redirections d’URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=fr){target=_blank}
 + Mise en cache{#caching}
    + [Vue d’ensemble](./caching/overview.md)
-   + [Service de publication d’AEM](./caching/publish.md)
-   + [Service d’auteur AEM](./caching/author.md)
+   + [Service de publication AEM](./caching/publish.md)
+   + [Service de création AEM](./caching/author.md)
 + Accéder à AEM{#accessing}
    + [Présentation](./accessing/overview.md)
    + [Utilisateurs Adobe IMS](./accessing/adobe-ims-users.md)

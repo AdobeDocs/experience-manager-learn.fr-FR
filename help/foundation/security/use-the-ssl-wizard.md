@@ -19,13 +19,13 @@ last-substantial-update: 2023-08-08T00:00:00Z
 source-git-commit: 1a8e3f37554f98c1366a1a06cb4a7b867866dd1b
 workflow-type: tm+mt
 source-wordcount: '447'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
 # Utiliser l’assistant SSL dans AEM
 
-Découvrez comment configurer SSL dans Adobe Experience Manager pour qu’il s’exécute via HTTPS à l’aide de l’assistant SSL intégré.
+Découvrez comment configurer SSL dans Adobe Experience Manager pour qu’il s’exécute via HTTPS à l’aide de l’assistant SSL intégré.
 
 >[!VIDEO](https://video.tv.adobe.com/v/17993?quality=12&learn=on)
 
@@ -36,59 +36,59 @@ Découvrez comment configurer SSL dans Adobe Experience Manager pour qu’il s�
 >
 >Les certificats auto-signés doivent uniquement être utilisés à des fins de développement.
 
-## Utilisation de l’assistant de configuration SSL
+## Utiliser l’assistant de configuration SSL
 
-Accédez à __AEM Auteur > Outils > Sécurité > Configuration SSL__, puis ouvrez le __Assistant de configuration SSL__.
+Accédez à __Instance de création AEM > Outils > Sécurité > Configuration SSL__, puis ouvrez l’__Assistant de configuration SSL__.
 
-![Assistant de configuration SSL](assets/use-the-ssl-wizard/ssl-config-wizard.png)
+![Assistant de configuration SSL.](assets/use-the-ssl-wizard/ssl-config-wizard.png)
 
-### Création d’informations d’identification de magasin
+### Créer des informations d’identification de boutique
 
-Pour créer une _Key Store_ associé à la propriété `ssl-service` utilisateur système et une variable globale _Trust Store_, utilisez le __Informations d’identification de magasin__ étape de l’assistant.
+Pour créer un _KeyStore_ associé à l’utilisateur ou l’utilisatrice système `ssl-service` et un _TrustStore_ global, utilisez l’étape __Informations d’identification de boutique__ de l’assistant.
 
-1. Saisissez le mot de passe et confirmez le mot de passe pour la variable __Key Store__ associé à la propriété `ssl-service` utilisateur système.
-1. Saisissez le mot de passe et confirmez le mot de passe pour le __Trust Store__. Notez qu’il s’agit d’un Trust Store à l’échelle du système et, s’il est déjà créé, le mot de passe saisi est ignoré.
+1. Saisissez le mot de passe et confirmez le mot de passe pour le __KeyStore__ associé à l’utilisateur ou l’utilisatrice système `ssl-service`.
+1. Saisissez le mot de passe et confirmez le mot de passe pour le __TrustStore__. Notez qu’il s’agit d’un TrustStore à l’échelle du système et, s’il est déjà créé, le mot de passe saisi est ignoré.
 
-   ![Configuration SSL - Informations d’identification de magasin](assets/use-the-ssl-wizard/store-credentials.png)
+   ![Configuration SSL - Informations d’identification de boutique.](assets/use-the-ssl-wizard/store-credentials.png)
 
-### Téléchargement d’une clé privée et d’un certificat
+### Charger une clé privée et un certificat
 
-Pour charger la variable _clé privée_ et _Certificat SSL_, utilisez le __Clé et certificat__ étape de l’assistant.
+Pour charger la _clé privée_ et le _certificat SSL_, utilisez l’étape __Clé et certificat__ de l’assistant.
 
-En règle générale, votre service informatique fournit le certificat et la clé approuvés par l’autorité de certification, mais le certificat auto-signé peut être utilisé pour __development__ et __test__ d’ .
+En règle générale, votre service informatique fournit le certificat et la clé approuvés par l’autorité de certification, mais le certificat auto-signé peut être utilisé à des fins de __développement__ et de __test__.
 
 Pour créer ou télécharger le certificat auto-signé, voir [Clé privée et certificat auto-signé](#self-signed-private-key-and-certificate).
 
-1. Téléchargez le __Clé privée__ au format DER (Distinguished Encoding Rules). Contrairement à PEM, les fichiers codés DER ne contiennent pas d’instructions de texte brut telles que `-----BEGIN CERTIFICATE-----`
-1. Charger le __Certificat SSL__ dans le `.crt` format.
+1. Téléchargez la __clé privée__ au format DER (Distinguished Encoding Rules). Contrairement à PEM, les fichiers codés DER ne contiennent pas d’instructions de texte brut telles que `-----BEGIN CERTIFICATE-----`.
+1. Chargez le __Certificat SSL__ au format `.crt`.
 
-   ![Configuration SSL - Clé privée et certificat](assets/use-the-ssl-wizard/privatekey-and-certificate.png)
+   ![Configuration SSL - Clé privée et certificat.](assets/use-the-ssl-wizard/privatekey-and-certificate.png)
 
-### Mise à jour des détails du connecteur SSL
+### Mettre à jour des détails du connecteur SSL
 
-Pour mettre à jour la variable _hostname_ et _port_ utilisez la méthode __Connecteur SSL__ étape de l’assistant.
+Pour mettre à jour le _nom d’hôte_ et le _port_, utilisez l’étape __Connecteur SSL__ de l’assistant.
 
-1. Mettez à jour ou vérifiez le __HTTPS Hostname__ , elle doit correspondre à la variable `Common Name (CN)` du certificat.
-1. Mettez à jour ou vérifiez le __Port HTTPS__ .
+1. Mettez à jour ou vérifiez la valeur du __Nom d’hôte HTTPS__, elle doit correspondre au `Common Name (CN)` du certificat.
+1. Mettez à jour ou vérifiez la valeur __Port HTTPS__.
 
-   ![Configuration SSL - détails du connecteur SSL](assets/use-the-ssl-wizard/ssl-connector-details.png)
+   ![Configuration SSL - Détails du connecteur SSL.](assets/use-the-ssl-wizard/ssl-connector-details.png)
 
-### Vérification de la configuration SSL
+### Vérifier la configuration SSL
 
-1. Pour vérifier le protocole SSL, cliquez sur le bouton __Accéder à l’URL HTTPS__ bouton .
-1. Si vous utilisez un certificat auto-signé, vous voyez `Your connection is not private` erreur.
+1. Pour vérifier le protocole SSL, cliquez sur le bouton __Accéder à l’URL HTTPS__.
+1. Si vous utilisez un certificat auto-signé, vous voyez l’erreur `Your connection is not private`.
 
-   ![Configuration SSL - Vérification de l’AEM via HTTPS](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
+   ![Configuration SSL - Vérification d’AEM via HTTPS.](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
 
 ## Clé privée et certificat auto-signé
 
-Le fichier zip suivant contient [!DNL DER] et [!DNL CRT] fichiers requis pour configurer AEM SSL localement et destinés uniquement à des fins de développement local.
+Le fichier zip suivant contient les fichiers [!DNL DER] et [!DNL CRT] requis pour la configuration locale SSL d’AEM et destinés uniquement à des fins de développement local.
 
 Les fichiers [!DNL DER] et [!DNL CERT] sont fournis pour des raisons de commodité et sont générés en suivant les étapes décrites dans la section Générer une clé privée et un certificat auto-signé ci-dessous.
 
 Si nécessaire, le mot de passe du certificat est **admin**.
 
-Cet hôte local : clé privée et certificat auto-signé.zip (expiration en juillet 2028)
+Ce localhost : fichier .zip de clé privée et de certificat autosigné (expire en juillet 2028)
 
 [Télécharger le fichier de certificat](assets/use-the-ssl-wizard/certificate.zip)
 

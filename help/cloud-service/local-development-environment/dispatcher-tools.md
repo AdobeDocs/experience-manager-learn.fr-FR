@@ -13,7 +13,7 @@ exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
 source-git-commit: 2a412126ac7a67a756d4101d56c1715f0da86453
 workflow-type: tm+mt
 source-wordcount: '1695'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_dispatcher"
 >title="Outils du Dispatcher local"
->abstract="Il fait partie intégrante de l’architecture globale d’Experience Manager et doit faire partie de la configuration de développement local. Le SDK AEM as a Cloud Service comprend la version recommandée des outils du Dispatcher qui facilite la configuration, la validation et la simulation locale du Dispatcher."
+>abstract="Le Dispatcher fait partie intégrante de l’architecture globale d’Experience Manager et doit faire partie de la configuration de développement local. Le SDK AEM as a Cloud Service comprend la version recommandée des outils du Dispatcher qui facilite la configuration, la validation et la simulation locale du Dispatcher."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=fr" text="Dispatcher en mode cloud"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?lang=fr" text="Télécharger le SDK AEM as a Cloud Service"
 
@@ -84,7 +84,7 @@ $ ./aem-sdk-dispatcher-tools-x.x.x-unix.sh
 
 >[!TAB Windows]
 
-Décompresser `aem-sdk-dispatcher-tools-x.x.x-windows.zip` into `C:\Users\<My User>\aem-sdk\dispatcher` (création de dossiers manquants, si nécessaire).
+Décompressez `aem-sdk-dispatcher-tools-x.x.x-windows.zip` dans `C:\Users\<My User>\aem-sdk\dispatcher` (en créant les dossiers manquants si nécessaire).
 
 >[!TAB Linux]
 
@@ -152,7 +152,7 @@ AEM Dispatcher est exécuté localement à l’aide de Docker par rapport aux f
 $ ./bin/docker_run_hot_reload.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
 ```
 
-La variable `docker_run_hot_reload` exécutable est préférable à `docker_run` lors du rechargement des fichiers de configuration au fur et à mesure de leur modification, sans avoir à arrêter et redémarrer manuellement `docker_run`. Vous pouvez également : `docker_run` peut être utilisé, mais il nécessite un arrêt et un redémarrage manuels. `docker_run` lorsque les fichiers de configuration sont modifiés.
+L’exécutable `docker_run_hot_reload` est préférable par rapport à `docker_run`, car il recharge les fichiers de configuration au fur et à mesure de leur modification, sans avoir à arrêter et redémarrer manuellement `docker_run`. `docker_run` peut aussi être utilisé, mais cela nécessite un arrêt et un redémarrage manuels de `docker_run` lorsque les fichiers de configuration sont modifiés.
 
 >[!TAB Windows]
 
@@ -166,7 +166,7 @@ $ bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-
 $ ./bin/docker_run_hot_reload.sh <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
 ```
 
-La variable `docker_run_hot_reload` exécutable est préférable à `docker_run` lors du rechargement des fichiers de configuration au fur et à mesure de leur modification, sans avoir à arrêter et redémarrer manuellement `docker_run`. Vous pouvez également : `docker_run` peut être utilisé, mais il nécessite un arrêt et un redémarrage manuels. `docker_run` lorsque les fichiers de configuration sont modifiés.
+L’exécutable `docker_run_hot_reload` est préférable par rapport à `docker_run`, car il recharge les fichiers de configuration au fur et à mesure de leur modification, sans avoir à arrêter et redémarrer manuellement `docker_run`. `docker_run` peut aussi être utilisé, mais cela nécessite un arrêt et un redémarrage manuels de `docker_run` lorsque les fichiers de configuration sont modifiés.
 
 >[!ENDTABS]
 

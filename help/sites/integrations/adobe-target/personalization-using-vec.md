@@ -17,7 +17,7 @@ exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
 source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -27,20 +27,20 @@ Découvrez comment créer une activité Target de test A/B à l’aide du compos
 
 ## Conditions préalables
 
-Pour utiliser le compositeur d’expérience visuelle sur un site web AEM, la configuration suivante doit être effectuée :
+Pour utiliser le compositeur d’expérience visuelle sur un site web AEM, la configuration suivante doit être effectuée :
 
 1. [Ajouter Adobe Target à votre site web AEM](./add-target-launch-extension.md)
 1. [Déclencher un appel Adobe Target à partir de Launch](./load-and-fire-target.md)
 
 ## Vue d’ensemble du scénario
 
-La page d’accueil du site WKND présente les activités locales ou les meilleures choses à faire autour d’une ville sous la forme de cartes d’information. En tant que personne chargée du marketing, vous avez pour tâche de modifier la page d’accueil en apportant des modifications au texte du teaser de l’aventure en gardant à l’esprit comment améliorer les conversions.
+La page d’accueil du site WKND présente les activités locales ou les meilleures choses à faire dans une ville sous la forme de cartes d’information. En tant que personne chargée du marketing, vous avez pour tâche de modifier la page d’accueil en apportant des modifications au texte du teaser de l’aventure en gardant à l’esprit comment améliorer les conversions.
 
 ## Procédure de création d’un test A/B à l’aide du compositeur d’expérience visuelle (VEC)
 
 1. Connectez-vous à [Adobe Experience Cloud](https://experience.adobe.com/), appuyez sur __Target__ et accédez à l’onglet __Activités__.
 
-   + Si vous ne voyez pas __Cible__ dans le tableau de bord de l’Experience Cloud, assurez-vous que la bonne organisation d’Adobe est sélectionnée dans le sélecteur d’organisation en haut à droite et que l’utilisateur a accès à Target dans [Adobe Admin Console](https://adminconsole.adobe.com/).
+   + Si vous ne trouvez pas __Target__ dans le tableau de bord d’Experience Cloud, assurez-vous que la bonne organisation Adobe apparaît dans le sélecteur d’organisation en haut à droite et que l’accès à Target a été accordé à votre utilisateur ou utilisatrice dans l’[Adobe Admin Console](https://adminconsole.adobe.com/).
 
 1. Cliquez sur le bouton **Créer une activité** puis choisissez l’activité **Test A/B**.
 
@@ -50,7 +50,7 @@ La page d’accueil du site WKND présente les activités locales ou les meilleu
 
    ![URL d’activité.](assets/ab-test-url.png)
 
-1. Le compositeur d’expérience visuelle affiche deux onglets sur le côté gauche après la création d’une activité : *Expérience A* et *Expérience B*. Sélectionnez une expérience dans la liste. Vous pouvez ajouter de nouvelles expériences à la liste à l’aide du **Ajouter une expérience** bouton .
+1. Le compositeur d’expérience visuelle affiche deux onglets sur le côté gauche après la création d’une activité : *Expérience A* et *Expérience B*. Sélectionnez une expérience dans la liste. Vous pouvez ajouter de nouvelles expériences à la liste à l’aide du bouton **Ajouter une expérience**.
 
    ![Expérience A.](assets/experience.png)
 
@@ -86,7 +86,7 @@ La page d’accueil du site WKND présente les activités locales ou les meilleu
 
 ## Résumé
 
-Dans ce chapitre, un spécialiste du marketing a pu créer une expérience à l’aide du compositeur d’expérience visuelle en faisant glisser et en déposant, en permutant et en modifiant la mise en page et le contenu d’une page web sans modifier le code pour exécuter un test.
+Dans ce chapitre, une personne chargée du marketing a pu créer une expérience à l’aide du compositeur d’expérience visuelle en faisant glisser et en déposant du contenu, mais aussi en modifiant la disposition d’une page web sans changer le code pour exécuter un test.
 
 ## Liens connexes
 

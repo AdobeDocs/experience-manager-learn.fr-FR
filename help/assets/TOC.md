@@ -64,8 +64,8 @@ ht-degree: 99%
    + [Balises intelligentes pour les vidéos](metadata/video-smart-tags.md)
    + [Importer et exporter des métadonnées](metadata/metadata-import-export.md)
 
-+ Edge Delivery Services{#edge-delivery-services}
-   + [Module externe Sidekick](./edge-delivery-services/sidekick-plugin.md)
++ Edge Delivery Services{#edge-delivery-services}
+   + [Plug-in Sidekick](./edge-delivery-services/sidekick-plugin.md)
 
 + Partage et distribution{#sharing}
    + [Télécharger des ressources](./sharing/download.md)

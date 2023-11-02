@@ -1,6 +1,6 @@
 ---
-title: Configuration du SDK AEM local pour AEM développement as a Cloud Service
-description: Configurez l’exécution du SDK AEM local à l’aide du fichier Jar de démarrage rapide du SDK as a Cloud Service AEM.
+title: Configurer l’exécution locale du SDK AEM pour le développement AEM as a Cloud Service
+description: Configurez l’exécution locale du SDK AEM à l’aide du fichier Quickstart Jar du SDK d’AEM as a Cloud Service.
 feature: Developer Tools
 version: Cloud Service
 kt: 4678, 4677
@@ -13,11 +13,11 @@ exl-id: 19f72254-2087-450b-909d-2d90c9821486
 source-git-commit: 2a412126ac7a67a756d4101d56c1715f0da86453
 workflow-type: tm+mt
 source-wordcount: '1793'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Configuration du SDK d’AEM local {#set-up-local-aem-sdk}
+# Configurer l’exécution locale du SDK AEM {#set-up-local-aem-sdk}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
@@ -32,10 +32,10 @@ Notez que `~` est utilisé comme raccourci pour le répertoire de l’utilisateu
 
 ## Installer Java
 
-Experience Manager est une application Java qui requiert donc le SDK Java d’Oracle pour prendre en charge l’outil de développement.
+Experience Manager est une application Java qui requiert donc le SDK Oracle Java pour prendre en charge l’outil de développement.
 
 1. [Télécharger et installer le dernier SDK Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-1. Vérifiez que le SDK Oracle Java 11 est installé en exécutant la commande :
+1. Vérifiez que le SDK Oracle Java 11 est installé en exécutant la commande :
 
 >[!BEGINTABS]
 
@@ -324,7 +324,7 @@ $ java -jar aem-author-p4502.jar
 
 >[!ENDTABS]
 
-ou pour démarrer le service de publication AEM, `cd` dans le répertoire contenant le fichier Jar de démarrage rapide et exécutez la commande :
+ou, pour démarrer le service de publication AEM, utilisez `cd` dans le répertoire contenant le fichier Jar de démarrage rapide et exécutez la commande :
 
 >[!BEGINTABS]
 
@@ -365,7 +365,7 @@ Quickstart: aborting
 
 En effet, AEM as a Cloud Service nécessite le SDK Java 11 et vous exécutez une version différente, probablement Java 8. Pour résoudre ce problème, téléchargez et installez [Oracle SDK Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14).
 
-Une fois le SDK Java 11 Oracle installé, vérifiez qu’il s’agit de la version active en exécutant la commande à partir de la ligne de commande :
+Une fois le SDK Oracle Java 11 installé, vérifiez qu’il s’agit de la version active en exécutant la commande à partir de la ligne de commande :
 
 >[!BEGINTABS]
 

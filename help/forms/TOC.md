@@ -35,7 +35,7 @@ ht-degree: 98%
    + [Création d’un workflow de révision](handling-form-submissions/creating-a-review-workflow.md)
    + [Configuration d’un formulaire adaptatif pour déclencher un workflow](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
    + [Affichage de la page de remerciement](handling-form-submissions/submitting-adaptive-forms-thank-you-page-article-use.md)
-   + [Personnalisation de la page de remerciement](handling-form-submissions/thank-you-page-on-fdm-submission.md)
+   + [Personnaliser la page de remerciement](handling-form-submissions/thank-you-page-on-fdm-submission.md)
    + [Envoi au point d’entrée externe](handling-form-submissions/submitting-adaptive-forms-to-external-server-article-use.md)
    + [Envoyer un e-mail](handling-form-submissions/sending-email-on-adaptive-form-submission.md)
    + [Workflow de requête de congés payés](handling-form-submissions/paid-time-off-request-workflow.md)
@@ -196,7 +196,7 @@ ht-degree: 98%
    + [Variable ArrayList](variables-aem-workflow/part4.md)
    + [Variable du modèle de données de formulaire](variables-aem-workflow/form-data-model.md)
    + [Éditeur de règles dans le workflow AEM](variables-aem-workflow/part5.md)
-   + [Variables de workflow de journal](variables-aem-workflow/part6.md)
+   + [Variables du workflow de journal](variables-aem-workflow/part6.md)
 + Vérifier les données de formulaire{#review-form-data}
    + [1. Présentation](review-form-data/introduction.md)
    + [2. Créer un composant](review-form-data/create-component.md)

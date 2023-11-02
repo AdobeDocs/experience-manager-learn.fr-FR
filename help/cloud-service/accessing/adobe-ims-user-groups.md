@@ -22,7 +22,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_adobeims_usergroups"
 >title="Groupes d&#39;utilisateurs Adobe IMS"
->abstract="Les groupes d’utilisateurs et d’utilisatrices Adobe IMS établissent des ensembles logiques d’utilisateurs et d’utilisatrices exposés à AEM, où ils peuvent être utilisés pour définir des autorisations précises pour les utilisateurs et les utilisatrices AEM."
+>abstract="Les groupes d’utilisateurs et d’utilisatrices Adobe IMS établissent des ensembles logiques d’utilisateurs et d’utilisatrices exposés à AEM, où ils peuvent être utilisés pour définir des autorisations précises pour les utilisateurs et les utilisatrices d’AEM."
 
 Les groupes d’utilisateurs et d’utilisatrices Adobe IMS établissent des ensembles logiques d’utilisateurs et d’utilisatrices exposés à AEM, où ils peuvent être utilisés pour définir des autorisations précises pour les utilisateurs et les utilisatrices AEM.
 
