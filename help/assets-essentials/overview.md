@@ -6,9 +6,9 @@ last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: aem-assets-essentials-videos.jpg
 exl-id: 6a8534fa-bc99-438b-9107-2a428e06619c
 source-git-commit: 137f7166a6a10ecd95a85114b27a1a3bd608b965
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '134'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 79%
 
 Experience Manager Assets Essentials offre une interface utilisateur rationalisée pour une gestion et une collaboration légères des ressources numériques.
 
-Consultez ces vidéos sur l’utilisation d’Assets Essentials pour gérer vos ressources et sur la manière dont ils peuvent être intégrés à Adobe Workfront et Adobe Parcours Orchestration.
+Consultez ces vidéos sur l’utilisation d’Assets Essentials pour gérer vos ressources et pour savoir comment procéder à une intégration à Adobe Workfront et à l’orchestrateur d’Adobe Journey.
 
 ## En savoir plus sur Assets Essentials.
 
