@@ -10,12 +10,12 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 6c5373db-86ec-410b-8a3b-9d4f86e06812
 source-git-commit: 3e4960bf2d243e33fb9f36fd3fbb45f57260229a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '990'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -277,7 +277,7 @@ SwiftUI est utilisé pour les différentes vues de l’application. Apple fourni
 
 ### Images distantes
 
-Les images référencées par les fragments de contenu des Adventures sont diffusées par AEM. Cette application iOS utilise le champ de chemin d’accès `_dynamicUrl` dans la réponse GraphQL et ajoute un préfixe à `AEM_SCHEME` et `AEM_HOST` pour créer une URL complète. En cas de développement par rapport au SDK AEM, `_dynamicUrl` renvoie null, de sorte que pour le développement, la version de secours de l’image soit `_path` champ .
+Les images référencées par les fragments de contenu des Adventures sont diffusées par AEM. Cette application iOS utilise le champ de chemin d’accès `_dynamicUrl` dans la réponse GraphQL et ajoute un préfixe à `AEM_SCHEME` et `AEM_HOST` pour créer une URL complète. Si vous développez avec le SDK AEM, `_dynamicUrl` renvoie un résultat nul. Pour le développement, il faut donc utiliser le champ `_path` de l’image.
 
 Si vous vous connectez à des ressources protégées sur AEM qui nécessitent une autorisation, les informations d’identification doivent également être ajoutées aux requêtes d’images.
 
