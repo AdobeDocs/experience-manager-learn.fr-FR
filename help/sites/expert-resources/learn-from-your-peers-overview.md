@@ -1,18 +1,18 @@
 ---
-title: En savoir plus sur vos pairs - Aperçu
-description: En savoir plus sur vos pairs - Aperçu
+title: Vue d’ensemble de la série Apprendre de vos pairs
+description: Vue d’ensemble de la série Apprendre de vos pairs
 feature: Learn From Your Peers
 exl-id: 83f09377-5103-4466-a260-d99b2cbedece
 source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '59'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
-# En savoir plus sur vos pairs - Aperçu
+# Vue d’ensemble de la série Apprendre de vos pairs
 
-Apprenez de vos pairs fournit une série de ressources créées et organisées par des experts AEM pour vous aider à tirer le meilleur parti de Experience Manager.
+Apprendre de vos pairs est une série de ressources créées et organisées par des personnes spécialisées d’AEM pour vous aider à tirer le meilleur parti d’Experience Manager.
 
 * [Évaluation de la maturité d’AEM Sites](/help/sites/expert-resources/maturity-assessment.md)
 * [Maintenance du site](/help/sites/expert-resources/site-maintenance.md)
