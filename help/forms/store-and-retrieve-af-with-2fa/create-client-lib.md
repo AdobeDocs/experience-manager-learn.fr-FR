@@ -1,6 +1,6 @@
 ---
 title: Créer des bibliothèques clientes
-description: Créer une bibliothèque cliente pour gérer l’événement clic du bouton "Enregistrer et quitter"
+description: Créez une bibliothèque cliente pour gérer l’événement de clic du bouton « Enregistrer et quitter ».
 feature: Adaptive Forms
 type: Tutorial
 version: 6.4,6.5
@@ -11,15 +11,15 @@ role: Developer
 level: Intermediate
 exl-id: c90eea73-bd44-40af-aa98-d766aa572415
 source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '148'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
 # Créer une bibliothèque cliente
 
-Créer [bibliothèque cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=fr) qui inclura le code pour appeler la méthode `doAjaxSubmitWithFileAttachment` de `guideBridge` API sur l’événement click du bouton identifié par la classe CSS **bouton enregistrer**.  Les données du formulaire adaptatif, `fileMap`, et la propriété `mobileNumber` sont transmises au point d’entrée en écoute à l’emplacement `**/bin/storeafdatawithattachments`.
+Créez une [bibliothèque cliente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=fr) comprenant le code pour appeler la méthode `doAjaxSubmitWithFileAttachment` de l’API `guideBridge` lors de l’événement de clic du bouton identifié par la classe CSS **Bouton Enregistrer**.  Les données du formulaire adaptatif, `fileMap`, et la propriété `mobileNumber` sont transmises au point d’entrée en écoute à l’emplacement `**/bin/storeafdatawithattachments`.
 
 Une fois les données du formulaire enregistrées, un identifiant d’application unique est généré et présenté à l’utilisateur ou à l’utilisatrice dans une boîte de dialogue. En fermant la boîte de dialogue, la personne utilisatrice est amenée au formulaire, ce qui lui permet de récupérer le formulaire adaptatif enregistré à l’aide de l’ID d’application unique.
 
@@ -67,9 +67,9 @@ $(document).ready(function () {
 ```
 
 >[!NOTE]
-> Nous avons utilisé [bibliothèque JavaScript de bootbox](https://bootboxjs.com/examples.html) pour afficher la boîte de dialogue
+> Pour afficher la boîte de dialogue, la [bibliothèque JavaScript bootbox](https://bootboxjs.com/examples.html) a été utilisée.
 
-Les bibliothèques clientes utilisées dans cet exemple peuvent être [téléchargé ici.](assets/store-af-with-attachments-client-lib.zip)
+Les bibliothèques clientes utilisées dans cet exemple peuvent être [téléchargées ici](assets/store-af-with-attachments-client-lib.zip).
 
 ## Étapes suivantes
 
