@@ -11,9 +11,9 @@ role: Developer
 level: Intermediate
 exl-id: cdfae631-86d7-438f-9baf-afd621802723
 source-git-commit: 51e21c11df63d33a6900fbc331a756f2a7655bcb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '391'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Cet exemple utilise la base de données MySQL pour stocker les données du formu
 
 ## Créer une source de données
 
-Vous devez créer une source de données partagée Apache Sling Connection appelée **StoreAndRetrieveAfData** pointant vers le schéma de base de données créé à l’étape précédente. Le code du lot OSGi utilise ce nom de source de données.
+Vous devez créer une source de données en pool Apache Sling Connection appelée **StoreAndRetrieveAfData** pointant vers le schéma de base de données créé à l’étape précédente. En effet, le code du lot OSGi utilise ce nom de source de données.
 
 ## Créer un modèle de données de formulaire
 
@@ -59,7 +59,7 @@ Les exemples de formulaires utilisés dans cette démonstration reposent sur un 
 
 Les deux formulaires dans cet exemple doivent être importés dans AEM. [Téléchargez ici](assets/sample-forms.zip) les exemples de formulaires.
 
-Ouvrez le formulaire [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) en mode d’édition. Spécifiez les valeurs Clé API de validation et Clé secrète dans les champs appropriés du formulaire adaptatif.
+Ouvrez le formulaire [MyAccountForm](http://localhost:4502/editor.html/content/forms/af/myaccountform.html) en mode d’édition. Indiquez les valeurs de la clé API Vonage et de la clé secrète dans les champs appropriés du formulaire adaptatif.
 
 ## Tester la solution
 
