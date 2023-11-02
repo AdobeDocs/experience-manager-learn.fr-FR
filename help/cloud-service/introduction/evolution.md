@@ -1,6 +1,6 @@
 ---
 title: Évolution d’AEM as a Cloud Service
-description: Découvrez l’évolution AEM et la valeur qu’elle fournit, d’AEM 6.5 à l’as a Cloud Service, et enfin aux Edge Delivery Services.
+description: Découvrez l’évolution d’AEM et sa valeur ajoutée, d’AEM 6.5 à AEM as a Cloud Service, en passant par Edge Delivery Services.
 role: Architect, Developer
 level: Beginner
 type: Tutorial
@@ -10,16 +10,16 @@ thumbnail: 330543.jpg
 last-substantial-update: 2023-09-26T00:00:00Z
 exl-id: 32390a8d-8257-44b7-9009-bfa5e518a1e0
 source-git-commit: 16586b9a42c57b5ad08fee9713cbeb11d65c895e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '56'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
-# Evolution de l&#39;AEM
+# Évolution d’AEM
 
 {{edge-delivery-services}}
 
-Découvrez l’évolution AEM et la valeur qu’elle fournit, d’AEM 6.5 à l’as a Cloud Service, et enfin aux Edge Delivery Services.
+Découvrez l’évolution d’AEM et sa valeur ajoutée, d’AEM 6.5 à AEM as a Cloud Service, en passant par Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330543?quality=12&learn=on)
