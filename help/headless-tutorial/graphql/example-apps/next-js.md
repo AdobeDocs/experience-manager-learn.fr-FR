@@ -10,12 +10,12 @@ level: Beginner
 kt: 10721
 thumbnail: KT-10721.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
-badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 4f67bb37-416a-49d9-9d7b-06c3573909ca
 source-git-commit: 29b9e4a23d8f4ae0494fc43f76f7449062364843
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '817'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Les outils suivants doivent être installés localement :
 
 ## Configuration requise d’AEM
 
-L’application Next.js fonctionne avec les options de déploiement AEM suivantes. Tous les déploiements nécessitent que la version [v3.0.0 ou supérieure de WKND Shared](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) ou la version [v3.0.0 ou supérieure du site WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) soient installés dans l’environnement AEM as a Cloud Service.
+L’application Next.js fonctionne avec les options de déploiement AEM suivantes. Tous les déploiements nécessitent que la version [v3.0.0 ou supérieure de WKND Shared](https://github.com/adobe/aem-guides-wknd-shared/releases/latest) ou la version [v3.0.0 ou supérieure du site WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) soient installées dans l’environnement AEM as a Cloud Service.
 
 Cet exemple d’application Next.js est conçu pour se connecter au service de __publication AEM__.
 
@@ -268,7 +268,7 @@ L’application Next.js utilise deux pages pour présenter les données d’Adve
 
 + `src/pages/adventures/[...slug].js`
 
-  Un [itinéraire dynamique Next.js](https://nextjs.org/docs/routing/dynamic-routes) qui affiche les détails d’une seule Adventure. Cet itinéraire dynamique prérécupère les données de chaque aventure à l’aide de [getStaticProps() de Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) via un appel à `getAdventureBySlug(slug, queryVariables)` en utilisant la variable `slug` param transmis via la sélection aventure sur le `adventures/index.js` et `queryVariables` pour contrôler le format, la largeur et la qualité de l’image.
+  Un [itinéraire dynamique Next.js](https://nextjs.org/docs/routing/dynamic-routes) qui affiche les détails d’une seule Adventure. Cet itinéraire dynamique prérécupère les données de chaque aventure à l’aide de [getStaticProps() de Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) via un appel à `getAdventureBySlug(slug, queryVariables)` à l’aide du paramètre `slug` transmis via la sélection d’aventure sur la page `adventures/index.js` et `queryVariables` pour contrôler le format, la largeur et la qualité de l’image.
 
   L’itinéraire dynamique permet de prérécupérer les détails de toutes les Adventures à l’aide de [getStaticPaths() de Next.js](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) et de renseigner toutes les permutations d’itinéraire possibles en fonction de la liste complète des Adventures renvoyées par la requête GraphQL.`getAdventurePaths()`
 
