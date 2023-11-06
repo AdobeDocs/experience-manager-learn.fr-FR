@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: bca52c7543b35fc20a782dfd3f2b2dc81bee4cde
+source-git-commit: ea9bf14d9a8f62382c43a50dbf65c4d2b88e6bcf
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1053'
 ht-degree: 99%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 99%
    + [Images](./aem-trials/images.md)
 + Présentation d’AEM as a Cloud Service{#introduction}
    + [Qu’est-ce qu’AEM as a Cloud Service ?](./introduction/what-is-aem-as-a-cloud-service.md)
-   + [Évolution](./introduction/evolution.md)
    + [Architecture](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
    + Stratégie et leadership de la pensée{#strategy}
@@ -129,7 +128,7 @@ ht-degree: 99%
       + Risques{#risks}
          + [Avertissements transversaux](./debugging/cloud-service/risks/traversals.md)
 + Diffusion de contenu{#content-delivery}
-   + [Redirections d’URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=fr){target=_blank}
+   + [Redirections d’URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=fr){target=_blank}.
 + Mise en cache{#caching}
    + [Vue d’ensemble](./caching/overview.md)
    + [Service de publication AEM](./caching/publish.md)
@@ -195,7 +194,7 @@ ht-degree: 99%
       + [Outil de migration des workflows de ressources](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Naviguer dans Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Utiliser Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
-+ [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=fr){target=_blank}
++ [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=fr){target=_blank}.
 + Forms{#forms}
    + Développer pour Forms as a Cloud Service{#developing-for-cloud-service}
       + [1 - Prise en main](./forms/developing-for-cloud-service/getting-started.md)
@@ -323,7 +322,7 @@ ht-degree: 99%
    + [Résolution des problèmes](./asset-compute/troubleshooting.md)
 
 + Tutoriels en plusieurs étapes{#multi-step-tutorials}
-   + [Développement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr){target=_blank}
+   + [Développement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr){target=_blank}.
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr){target=_blank}
    + [Éditeur de SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=fr){target=_blank}
    + [AEM Sites et Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=fr){target=_blank}
