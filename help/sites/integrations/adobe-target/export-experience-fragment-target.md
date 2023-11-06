@@ -14,10 +14,10 @@ level: Intermediate
 badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 2c01cda8-f72f-47f7-a36b-95afd241906e
-source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
-workflow-type: ht
-source-wordcount: '200'
-ht-degree: 100%
+source-git-commit: e9c0974d35493a607969124b2906564fc97bcdea
+workflow-type: tm+mt
+source-wordcount: '196'
+ht-degree: 95%
 
 ---
 
@@ -39,11 +39,11 @@ Découvrez comment exporter des fragments d’expérience AEM en tant qu’offre
 
 L’export de fragments d’expérience vers Adobe Target sans les autorisations appropriées dans Adobe Admin Console entraîne l’erreur suivante sur le service de création AEM :
 
-    .[Erreur interface utilisateur API Target](assets/error-target-offer.png)
+![Erreur de l’interface utilisateur de l’API Target](assets/error-target-offer.png)
 
 ... ainsi que les messages de journal suivants dans le journal `aemerror` :
 
-    ![Erreur console API Target](assets/target-console-error.png)
+![Erreur de la console API de Target](assets/target-console-error.png)
 
 #### Résolution
 
