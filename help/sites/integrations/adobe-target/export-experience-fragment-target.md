@@ -43,8 +43,8 @@ L’export de fragments d’expérience vers Adobe Target sans les autorisation
 
 ... ainsi que les messages de journal suivants dans le journal `aemerror` :
 
-    .[Erreur console API Target](assets/target-console-error.png)
-.
+    ![Erreur console API Target](assets/target-console-error.png)
+
 #### Résolution
 
 1. Connectez-vous à [Admin Console](https://adminconsole.adobe.com/) avec des droits d’administration pour le profil de produit Adobe Target utilisé dans l’intégration AEM.
