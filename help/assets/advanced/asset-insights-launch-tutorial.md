@@ -69,7 +69,7 @@ La suite de rapports avec collecte de données en temps réel est créée pour l
 
 >[!NOTE]
 >
-La collecte de données en temps réel et la création de rapports de ressources AEM doivent être activées pour votre suite de rapports Adobe Analytics. L’activation du reporting des ressources AEM réserve des variables d’analyse pour le suivi des insights sur les ressources.
+>La collecte de données en temps réel et la création de rapports de ressources AEM doivent être activées pour votre suite de rapports Adobe Analytics. L’activation du reporting des ressources AEM réserve des variables d’analyse pour le suivi des insights sur les ressources.
 
 Pour la configuration des insights sur les ressources AEM, vous avez besoin des informations d’identification suivantes :
 
@@ -87,7 +87,7 @@ Ajout de l’extension Adobe Analytics, création de règles de chargement de p
 
 >[!NOTE]
 >
-Veillez à répliquer toutes vos modifications de l’instance de création vers l’instance de publication.
+>Veillez à répliquer toutes vos modifications de l’instance de création vers l’instance de publication.
 
 ### Règle 1 : outil de suivi de page (pagetracker.js) {#rule-page-tracker-pagetracker-js}
 
