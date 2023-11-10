@@ -3,10 +3,10 @@ title: Comment générer la vitesse du contenu avec Adobe Experience Manager
 description: Découvrez la vitesse du contenu et sa valeur au sein des entreprises. Découvrez les quatre principes d’une implémentation efficace et les pièges à éviter en cours de route.
 solution: Experience Manager
 exl-id: 9d2e05c3-c8eb-4d92-bad0-931e63550438
-source-git-commit: bca54171856f32ec5c5165f8f1663d027f9fcd5e
-workflow-type: ht
-source-wordcount: '2814'
-ht-degree: 100%
+source-git-commit: bd886704f10834bb07b42d6b5c0f116496da36de
+workflow-type: tm+mt
+source-wordcount: '2795'
+ht-degree: 99%
 
 ---
 
@@ -147,7 +147,7 @@ Voici quatre étapes à développer pendant la phase d’exécution :
 En général, il est préférable de suivre ces règles de base :
 
 * Visez à ne pas avoir moins de 80 % d’expériences pilotées par des [composants prêts à l’emploi](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et des [systèmes de style](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=fr). Selon les témoignages des clientes et clients, cela créera non seulement une base plus évolutive qui vous permettra de tirer parti de la feuille de route du produit, mais augmentera également la vitesse jusqu’à 50 %.
-* [Configurez](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=fr)[ ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=fr)[des modèles modifiables](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=fr) et abandonnez les modèles statiques. Lors de la configuration de modèles modifiables (qui sont nécessaires pour utiliser les systèmes de style), il est nécessaire d’attribuer une personne créant les modèles qui contrôlera les différents styles disponibles pour une page ou une section du site web. Ces mises à jour du modèle lui-même sont assez minimes en termes de travail quotidien.
+* [Configuration de modèles modifiables](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=fr) et abandonner les modèles statiques. Lors de la configuration de modèles modifiables (qui sont nécessaires pour utiliser les systèmes de style), il est nécessaire d’attribuer une personne créant les modèles qui contrôlera les différents styles disponibles pour une page ou une section du site web. Ces mises à jour du modèle lui-même sont assez minimes en termes de travail quotidien.
 * Utilisez les [fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/experience-fragments/experience-fragments-feature-video-use.html?lang=fr) si possible. Bien que le cas d’utilisation général des fragments d’expérience concerne la distribution multicanale, ils peuvent également être utilisés efficacement sur l’ensemble du site pour remplir du contenu dans une zone à la fois au lieu de mettre à jour manuellement le contenu dans plusieurs zones. Cela peut vous faire gagner du temps et économiser des efforts, et l’équipe de création disposera de plus de temps pour travailler sur des expériences plus spécifiques et plus riches.
 * Créez des expériences plus riches. En utilisant la règle 80/20 (mentionnée ci-dessus), une organisation peut utiliser des développements CSS et back-end spécifiques pour des expériences sélectionnées plutôt que des mises à jour de maintenance courantes.
 * Optez pour une base évolutive et un changement d’image rapide. Les systèmes de style qui sont exécutés sur la base d’une implémentation moderne peuvent permettre un changement d’image efficace sur une plateforme. La mise à jour de larges secteurs de contenu par le biais de la modification des habillages CSS permet des tests et des validations rapides, ainsi qu’une amélioration de la qualité de l’expérience du site, avec un impact direct sur le retour sur investissement.
