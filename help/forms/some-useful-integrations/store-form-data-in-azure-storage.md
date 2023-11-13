@@ -10,9 +10,9 @@ last-substantial-update: 2023-08-14T00:00:00Z
 kt: 13781
 exl-id: 2bec5953-2e0c-4ae6-ae98-34492d4cfbe4
 source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '597'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -32,18 +32,18 @@ Nous devons ensuite créer un conteneur pour stocker les données des envois de 
 Sur la page du compte de stockage, cliquez sur l’option de menu Conteneurs située à gauche et créez un conteneur appelé `formssubmissions`. Assurez-vous que le niveau d’accès public est défini sur privé.
 ![container](./assets/new-container.png).
 
-## Création de SAS sur le conteneur
+## Créer la méthode SAS pour le conteneur
 
 Nous allons utiliser la méthode d’autorisation par signature d’accès partagé, ou SAS, pour interagir avec le conteneur de stockage Azure.
-Accédez au conteneur dans le compte de stockage, cliquez sur les points de suspension et sélectionnez l’option Générer le SAS comme illustré dans la capture d’écran.
+Accédez au conteneur dans le compte de stockage, cliquez sur les points de suspension et sélectionnez l’option Générer SAS comme illustré dans la capture d’écran.
 ![sas-on-container](./assets/sas-on-container.png)
-Veillez à spécifier les autorisations appropriées et la date de fin appropriée, comme indiqué dans la capture d’écran ci-dessous, puis cliquez sur Générer un jeton SAS et une URL. Copiez le jeton Blob SAS et l’URL Blob SAS. Nous utiliserons ces deux valeurs pour effectuer nos appels HTTP
+Veillez à spécifier les autorisations et la date de fin appropriées, comme indiqué dans la capture d’écran ci-dessous, puis cliquez sur Générer un jeton SAS et une URL. Copiez le jeton et l’URL Blob SAS. Nous utiliserons ces deux valeurs pour effectuer nos appels HTTP.
 ![shared-access-keys](./assets/shared-access-signature.png)
 
 
 ## Fournir le jeton Blob SAS et l’URI de stockage
 
-Pour rendre le code plus générique, les deux propriétés peuvent être configurées à l’aide de la configuration OSGi, comme illustré ci-dessous. La variable _**aemformstutorial**_ est le nom du compte de stockage, _**formenvois**_ est le conteneur dans lequel les données seront stockées.
+Pour rendre le code plus générique, les deux propriétés peuvent être configurées à l’aide de la configuration OSGi, comme illustré ci-dessous.  _**aemformstutorial**_ est le nom du compte de stockage et _**formsubmissions**_ est le conteneur dans lequel les données seront stockées.
 ![osgi-configuration](./assets/azure-portal-osgi-configuration.png)
 
 
@@ -51,7 +51,8 @@ Pour rendre le code plus générique, les deux propriétés peuvent être config
 
 L’étape suivante consiste à créer une requête PUT pour stocker les données de formulaire envoyées dans le stockage Azure. Chaque envoi de formulaire doit être identifié par un ID d’objet blob unique. L’identifiant d’objet blob unique est généralement créé dans votre code et inséré dans l’URL de la requête PUT.
 Voici l’URL partielle de la requête PUT. `aemformstutorial` est le nom du compte de stockage, formsubmissions est le conteneur dans lequel les données seront stockées avec un identifiant d’objet blob unique. Le reste de l’URL reste le même.
-https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken La fonction suivante est écrite pour stocker les données de formulaire envoyées dans Azure Storage à l’aide d’une demande de PUT. Notez l’utilisation du nom du conteneur et de l’UUID dans l’URL. Vous pouvez créer un service OSGi ou un servlet Sling à l’aide de l’exemple de code répertorié ci-dessous et stocker les envois de formulaire dans le stockage Azure.
+https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken
+La fonction suivante est écrite pour stocker les données de formulaire envoyées dans le stockage Azure à l’aide d’une requête PUT. Notez l’utilisation du nom du conteneur et de l’UUID dans l’URL. Vous pouvez créer un service OSGi ou un servlet Sling à l’aide de l’exemple de code répertorié ci-dessous et stocker les envois de formulaire dans le stockage Azure.
 
 ```java
  public String saveFormDatainAzure(String formData) {
@@ -91,15 +92,15 @@ https://aemformstutorial.blob.core.windows.net/formsubmissions/blobid/sastoken L
 
 ## Tester la solution
 
-* [Déploiement du lot OSGi personnalisé](./assets/SaveAndFetchFromAzure.core-1.0.0-SNAPSHOT.jar)
+* [Déployez le lot OSGi personnalisé.](./assets/SaveAndFetchFromAzure.core-1.0.0-SNAPSHOT.jar)
 
-* [Importez le modèle de formulaire adaptatif personnalisé et le composant de page associé au modèle.](./assets/store-and-fetch-from-azure.zip)
+* [Importez le modèle de formulaire adaptatif personnalisé et le composant de page associé à celui-ci.](./assets/store-and-fetch-from-azure.zip)
 
-* [Import de l’exemple de formulaire adaptatif](./assets/bank-account-sample-form.zip)
+* [Importez l’exemple de formulaire adaptatif.](./assets/bank-account-sample-form.zip)
 
 * Spécifiez les valeurs appropriées dans la configuration du portail Azure à l’aide de la console de configuration OSGi.
-* [Aperçu et envoi du formulaire BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
+* [Prévisualiser et soumettre le formulaire BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
-* Vérifiez que les données sont stockées dans le conteneur de stockage Azure de votre choix. Copiez l’ID de Blob.
-* [Aperçu du formulaire BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) et spécifiez l’ID Blob comme paramètre guid dans l’URL pour que le formulaire soit prérempli avec les données du stockage Azure.
+* Vérifiez que les données sont stockées dans le conteneur de stockage Azure de votre choix. Copiez l’ID d’objet blob.
+* [Prévisualisez le formulaire BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) et spécifiez l’ID d’objet blob comme paramètre guid dans l’URL pour que le formulaire soit prérempli avec les données du stockage Azure.
 
