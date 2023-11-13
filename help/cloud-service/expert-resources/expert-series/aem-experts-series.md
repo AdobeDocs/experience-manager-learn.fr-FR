@@ -6,13 +6,13 @@ topic: Administration, Development
 feature: Developer Tools
 exl-id: ae1cdbe3-0863-41de-bb27-2e88c4640866
 source-git-commit: 4b634d8b3063375f7c135a3e3ef81b90c84e2579
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '700'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# AEM série d&#39;experts as a Cloud Service
+# AEM as a Cloud Service Experts Series
 
 Découvrez Adobe Experience Manager (AEM) as a Cloud Service grâce aux ingénieures et ingénieurs experts d’Adobe qui se chargent de sa conception et à l’équipe de services professionnels qui l’implémente. Rejoignez les personnes expertes d’Adobe pour explorer AEM as a Cloud Service, les similitudes et les différences par rapport à AEM 6, et découvrir comment passer d’AEM 6 à AEM as a Cloud Service.
 
