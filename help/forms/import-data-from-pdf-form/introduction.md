@@ -1,34 +1,35 @@
 ---
-title: Importation de données d’un fichier de PDF dans un formulaire adaptatif
-description: Tutoriel pour remplir un formulaire adaptatif en important un fichier de PDF
+title: Importer des données d’un fichier PDF dans un formulaire adaptatif
+description: Tutoriel sur l’import d’un fichier PDF pour remplir un formulaire adaptatif
 feature: Adaptive Forms
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 kt: 14196
-source-git-commit: 17ab178f385619b589a9dde6089410bfa4515ffa
-workflow-type: tm+mt
+exl-id: a9ad8f4d-695e-4eb3-8d35-a399d1700f90
+source-git-commit: 7a0ec4797fda0436a8c20b84d1e36a8d16af21b9
+workflow-type: ht
 source-wordcount: '96'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
 # Présentation
 
-Un cas d’utilisation courant consiste à pouvoir remplir un formulaire adaptatif à partir d’un formulaire de PDF partiellement rempli.
+Un cas d’utilisation courant consiste à pouvoir compléter un formulaire adaptatif à partir d’un formulaire PDF partiellement rempli.
 
-Pour démontrer ce cas pratique, nous allons utiliser [Formulaire F23 de l&#39;IRS](./assets/f23.pdf)
+Pour démontrer ce cas d’utilisation, nous allons utiliser le [Formulaire F23 du département du Trésor des États-Unis (IRS)](./assets/f23.pdf).
 
 ## Conditions préalables
 
 Vous aurez besoin des éléments suivants :
 
-* Une instance opérationnelle d’AEM avec le package de module complémentaire Forms installé.
+* Instance de travail d’AEM avec le package de module complémentaire Forms installé.
 
 * [Configuration de l’environnement de développement conformément à ce document](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=fr)
 
-* AEM Forms Designer
+* AEM Forms Designer
 
 * Acrobat ou Reader
 
