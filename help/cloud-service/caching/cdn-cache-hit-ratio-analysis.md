@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-11-10T00:00:00Z
 jira: KT-13312
 thumbnail: KT-13312.jpeg
-source-git-commit: bfc4d843c53373010ee04cfa590272cedea7a686
+source-git-commit: be503ba477d63a566b687866289a81a0aa7d01f7
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1231'
 ht-degree: 2%
 
 ---
@@ -41,11 +41,11 @@ Pour télécharger les journaux CDN, procédez comme suit :
 
 1. Pour un environnement AEM souhaité, sélectionnez **Journaux de téléchargement** dans le menu points de suspension.
 
-   ![Journaux de téléchargement - Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="200" zoomable="yes"}
+   ![Journaux de téléchargement - Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="500" zoomable="yes"}
 
 1. Dans le **Journaux de téléchargement** , sélectionnez **Publier** Service dans le menu déroulant, puis cliquez sur l’icône de téléchargement en regard du **cdn** ligne.
 
-   ![Journaux du réseau de diffusion de contenu - Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="200" zoomable="yes"}
+   ![Journaux du réseau de diffusion de contenu - Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="500" zoomable="yes"}
 
 
 Si le fichier journal téléchargé provient de _aujourd’hui_ l’extension de fichier est `.log` sinon, pour les fichiers journaux précédents, l’extension est `.log.gz`.
@@ -71,11 +71,11 @@ Pour identifier les détails clés, nous allons utiliser la variable [AEMCS-CDN-
 
    1. Ouvrez le **Taux d’accès au cache du réseau CDN** en cliquant sur Menu Hamburger > Analytics > Tableau de bord > Rapport d’accès au cache CDN.
 
-      ![Taux d’accès au cache du réseau CDN - Tableau de bord Kibana](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="200" zoomable="yes"}
+      ![Taux d’accès au cache du réseau CDN - Tableau de bord Kibana](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
 
    1. Sélectionnez la période souhaitée dans le coin supérieur droit.
 
-      ![Période - Tableau de bord Kibana](assets/cdn-logs-analysis/time-range.png){width="200" zoomable="yes"}
+      ![Période - Tableau de bord Kibana](assets/cdn-logs-analysis/time-range.png){width="500" zoomable="yes"}
 
    1. La variable **Taux d’accès au cache du réseau CDN** Le tableau de bord est explicite.
 
@@ -83,14 +83,14 @@ Pour identifier les détails clés, nous allons utiliser la variable [AEMCS-CDN-
       - Taux de cache par type de cache
       - Nombre de mises en cache par type de cache
 
-      ![Analyse totale des requêtes - Tableau de bord Kibana](assets/cdn-logs-analysis/total-request-analysis.png){width="200" zoomable="yes"}
+      ![Analyse totale des requêtes - Tableau de bord Kibana](assets/cdn-logs-analysis/total-request-analysis.png){width="500" zoomable="yes"}
 
    1. La variable _Analyse par type de requête ou MIME_ affiche les détails suivants :
       - Taux de cache par type de cache
       - Nombre de mises en cache par type de cache
       - Principales URL MISS et PASS
 
-      ![Analyse par type de requête ou MIME - Tableau de bord Kibana](assets/cdn-logs-analysis/analysis-by-request-or-mime-types.png){width="200" zoomable="yes"}
+      ![Analyse par type de requête ou MIME - Tableau de bord Kibana](assets/cdn-logs-analysis/analysis-by-request-or-mime-types.png){width="500" zoomable="yes"}
 
 #### Filtrage par nom d’environnement ou identifiant de programme
 
@@ -98,11 +98,11 @@ Pour filtrer les journaux ingérés par nom d’environnement, procédez comme s
 
 1. Dans le tableau de bord Rapport d’accès au cache du réseau CDN, cliquez sur le bouton **Ajouter un filtre** Icône
 
-   ![Filtre - Tableau de bord Kibana](assets/cdn-logs-analysis/filter.png){width="200" zoomable="yes"}
+   ![Filtre - Tableau de bord Kibana](assets/cdn-logs-analysis/filter.png){width="500" zoomable="yes"}
 
 1. Dans le **Ajouter un filtre** modal, sélectionnez `aem_env_name.keyword` dans le menu déroulant, et `is` nom de l’opérateur et de l’environnement de votre choix pour le champ suivant, puis cliquez sur _Ajouter un filtre_.
 
-   ![Ajouter un filtre - Tableau de bord Kibana](assets/cdn-logs-analysis/add-filter.png){width="200" zoomable="yes"}
+   ![Ajouter un filtre - Tableau de bord Kibana](assets/cdn-logs-analysis/add-filter.png){width="500" zoomable="yes"}
 
 #### Filtrage par nom d’hôte
 
@@ -110,11 +110,11 @@ Pour filtrer les journaux ingérés par nom d’hôte, procédez comme suit :
 
 1. Dans le tableau de bord Rapport d’accès au cache du réseau CDN, cliquez sur le bouton **Ajouter un filtre** Icône
 
-   ![Filtre - Tableau de bord Kibana](assets/cdn-logs-analysis/filter.png){width="200" zoomable="yes"}
+   ![Filtre - Tableau de bord Kibana](assets/cdn-logs-analysis/filter.png){width="500" zoomable="yes"}
 
 1. Dans le **Ajouter un filtre** modal, sélectionnez `host.keyword` dans le menu déroulant, et `is` l’opérateur et le nom d’hôte souhaité pour le champ suivant, puis cliquez sur _Ajouter un filtre_.
 
-   ![Filtre hôte - Tableau de bord Kibana](assets/cdn-logs-analysis/add-host-filter.png){width="200" zoomable="yes"}
+   ![Filtre hôte - Tableau de bord Kibana](assets/cdn-logs-analysis/add-host-filter.png){width="500" zoomable="yes"}
 
 De même, ajoutez d’autres filtres au tableau de bord en fonction des exigences d’analyse.
 
@@ -127,8 +127,8 @@ Pour accélérer l’analyse des journaux CDN, téléchargez la [AEM-as-a-CloudS
 Téléchargé `aemcs_cdn_logs_analysis.ipynb` Le fichier &quot;Interactive Python Notebook&quot; est explicite, mais les points forts de chaque section sont les suivants :
 
 - **Installation de bibliothèques supplémentaires**: installe la variable `termcolor` et `tabulate` Bibliothèques Python.
-- **Chargement du fichier journal CDN**: charge le fichier journal du réseau de diffusion de contenu à l’aide de `log_file` , veillez à mettre à jour sa valeur. Il transforme également ce journal CDN en [pandas DataFrame](https://pandas.pydata.org/docs/reference/frame.html).
-- **Analyse des performances**: le premier bloc de code est _Afficher le résultat de l’analyse pour les demandes totales, de HTML, JS/CSS et d’image_, il fournit des graphiques en pourcentage du taux d’accès au cache, en barres et en secteurs.
+- **Chargement des journaux CDN**: charge le fichier journal du réseau de diffusion de contenu à l’aide de `log_file` , veillez à mettre à jour sa valeur. Il transforme également ce journal CDN en [pandas DataFrame](https://pandas.pydata.org/docs/reference/frame.html).
+- **Exécution de l’analyse**: le premier bloc de code est _Afficher le résultat de l’analyse pour les demandes totales, de HTML, JS/CSS et d’image_, il fournit des graphiques en pourcentage du taux d’accès au cache, en barres et en secteurs.
 Le second bloc de code est _5 premières URL de demande MISS et PASS pour HTML, JS/CSS et image_, il affiche les URL et leur nombre au format tableau.
 
 #### Exécution du notebook Jupyter dans Experience Platform
@@ -141,33 +141,33 @@ Pour exécuter le notebook Jupyter en Experience Platform, procédez comme suit 
 
 1. Connectez-vous au [Adobe Experience Cloud](https://experience.adobe.com/), dans la page d’accueil > **Accès rapide** > cliquez sur l’icône **Experience Platform**
 
-   ![Experience Platform](assets/cdn-logs-analysis/experience-platform.png){width="200" zoomable="yes"}
+   ![Experience Platform](assets/cdn-logs-analysis/experience-platform.png){width="500" zoomable="yes"}
 
 1. Dans la page d’accueil de Adobe Experience Platform > section Science des données >, cliquez sur le bouton **Notebooks** de menu. Pour démarrer l’environnement Jupyter Notebooks, cliquez sur le bouton **JupyterLab** .
 
-   ![Mise à jour de la valeur du fichier journal du notebook](assets/cdn-logs-analysis/datascience-notebook.png){width="200" zoomable="yes"}
+   ![Mise à jour de la valeur du fichier journal du notebook](assets/cdn-logs-analysis/datascience-notebook.png){width="500" zoomable="yes"}
 
 1. Dans le menu de JupyterLab, à l’aide de la fonction **Chargement de fichiers** , téléchargez le fichier journal téléchargé sur le réseau de diffusion de contenu et `aemcs_cdn_logs_analysis.ipynb` fichier .
 
-   ![Chargement de fichiers - JupyteLab](assets/cdn-logs-analysis/jupyterlab-upload-file.png){width="200" zoomable="yes"}
+   ![Chargement de fichiers - JupyteLab](assets/cdn-logs-analysis/jupyterlab-upload-file.png){width="500" zoomable="yes"}
 
 1. Ouvrez le `aemcs_cdn_logs_analysis.ipynb` en double-cliquant dessus.
 
 1. Dans le **Chargement du fichier journal CDN** du notebook, mettez à jour la variable `log_file` .
 
-   ![Mise à jour de la valeur du fichier journal du notebook](assets/cdn-logs-analysis/notebook-update-variable.png){width="200" zoomable="yes"}
+   ![Mise à jour de la valeur du fichier journal du notebook](assets/cdn-logs-analysis/notebook-update-variable.png){width="500" zoomable="yes"}
 
 1. Pour exécuter la cellule sélectionnée et avancer, cliquez sur le bouton **Play** Icône
 
-   ![Mise à jour de la valeur du fichier journal du notebook](assets/cdn-logs-analysis/notebook-run-cell.png){width="200" zoomable="yes"}
+   ![Mise à jour de la valeur du fichier journal du notebook](assets/cdn-logs-analysis/notebook-run-cell.png){width="500" zoomable="yes"}
 
 1. Après avoir exécuté la variable **Afficher le résultat de l’analyse pour les demandes de total, de HTML, JS/CSS et d’image** , la sortie affiche les graphiques en pourcentage, en barres et en secteurs du taux d’accès au cache.
 
-   ![Mise à jour de la valeur du fichier journal du notebook](assets/cdn-logs-analysis/output-cache-hit-ratio.png){width="200" zoomable="yes"}
+   ![Mise à jour de la valeur du fichier journal du notebook](assets/cdn-logs-analysis/output-cache-hit-ratio.png){width="500" zoomable="yes"}
 
 1. Après avoir exécuté la variable **5 premières URL de demande MISS et PASS pour HTML, JS/CSS et image** , la sortie affiche les 5 premières URL de requête MISS et PASS.
 
-   ![Mise à jour de la valeur du fichier journal du notebook](assets/cdn-logs-analysis/output-top-urls.png){width="200" zoomable="yes"}
+   ![Mise à jour de la valeur du fichier journal du notebook](assets/cdn-logs-analysis/output-top-urls.png){width="500" zoomable="yes"}
 
 Vous pouvez améliorer le notebook Jupyter pour analyser les journaux CDN en fonction de vos besoins.
 
