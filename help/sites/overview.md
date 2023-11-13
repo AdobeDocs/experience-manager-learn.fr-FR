@@ -6,7 +6,7 @@ sub-product: Experience Manager Sites
 topic: Content Management
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
 source-git-commit: ea9bf14d9a8f62382c43a50dbf65c4d2b88e6bcf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
 ht-degree: 100%
 
