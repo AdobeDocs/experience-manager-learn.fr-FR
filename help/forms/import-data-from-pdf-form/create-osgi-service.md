@@ -1,24 +1,25 @@
 ---
-title: Création d’un service OSGi pour exporter des données à partir d’un formulaire de PDF
-description: Exportation des données d’un formulaire de PDF à l’aide de l’API FormsService
+title: Créer un service OSGi pour exporter des données à partir d’un formulaire PDF
+description: Exporter les données d’un formulaire PDF à l’aide de l’API FormsService
 feature: Adaptive Forms
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 kt: 14196
-source-git-commit: 17ab178f385619b589a9dde6089410bfa4515ffa
-workflow-type: tm+mt
+exl-id: c3032669-154c-4565-af6e-32d94e975e37
+source-git-commit: 7a0ec4797fda0436a8c20b84d1e36a8d16af21b9
+workflow-type: ht
 source-wordcount: '135'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Exporter des données
 
-La première étape pour renseigner un formulaire adaptatif à partir d’un fichier de PDF consiste à exporter les données du fichier de PDF donné et à les stocker dans le référentiel AEM.
+La première étape pour renseigner un formulaire adaptatif à partir d’un fichier PDF consiste à exporter les données du fichier PDF et à les stocker dans le référentiel AEM.
 
-Le code suivant a été écrit pour extraire les données du pdf téléchargé et pour les masser afin d’obtenir le format correct qui peut être utilisé pour remplir le formulaire adaptatif.
+Le code suivant permet d’extraire les données du PDF chargé et de les transmettre dans un format correct pour remplir le formulaire adaptatif.
 
 ```java
 public String getFormData(Document pdfForm) {
@@ -61,7 +62,7 @@ public String getFormData(Document pdfForm) {
 }
 ```
 
-Voici la fonction utilitaire écrite pour extraire le _**topmostSubForm**_ avec les espaces de noms appropriés
+Voici la fonction utilitaire écrite pour extraire _**topmostSubForm**_ avec les espaces de noms appropriés.
 
 ```java
 private static org.w3c.dom.Node getChildByTagName(org.w3c.dom.Node parent, String tagName) {
@@ -76,9 +77,8 @@ private static org.w3c.dom.Node getChildByTagName(org.w3c.dom.Node parent, Strin
 }
 ```
 
-Les données extraites sont stockées sous le noeud /content/exporteddata dans le référentiel crx. Le chemin d’accès au fichier des données exportées est alors renvoyé à l’application qui appelle pour renseigner le formulaire adaptatif.
+Les données extraites sont stockées sous le nœud /content/exporteddata dans le référentiel CRX. Le chemin d’accès au fichier des données exportées est alors renvoyé à l’application qui appelle pour renseigner le formulaire adaptatif.
 
 ## Étapes suivantes
 
-[Importation de données à partir d’un fichier pdf](./populate-adaptive-form.md)
-
+[Importer des données d’un fichier PDF](./populate-adaptive-form.md)
