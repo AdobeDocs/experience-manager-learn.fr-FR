@@ -1,6 +1,6 @@
 ---
 title: Bonnes pratiques relatives aux règles de filtrage du trafic, y compris les règles WAF
-description: Découvrez les bonnes pratiques recommandées pour les règles de filtre de trafic, y compris les règles WAF.
+description: Découvrez les bonnes pratiques relatives aux règles de filtrage du trafic, y compris les règles WAF.
 version: Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
@@ -12,32 +12,32 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
 source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '416'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Bonnes pratiques relatives aux règles de filtrage du trafic, y compris les règles WAF
 
-Découvrez les bonnes pratiques recommandées pour les règles de filtrage du trafic, y compris les règles WAF. Il est important de noter que les bonnes pratiques décrites dans le présent article ne sont pas exhaustives et n&#39;ont pas pour but de se substituer à vos propres politiques et procédures de sécurité.
+Découvrez les bonnes pratiques relatives aux règles de filtrage du trafic, y compris les règles WAF. Il est important de noter que les bonnes pratiques décrites dans le présent article ne sont pas exhaustives et n’ont pas pour but de se substituer à vos propres politiques et procédures de sécurité.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425408?quality=12&learn=on)
 
 ## Bonnes pratiques générales
 
-- Pour déterminer les règles appropriées à votre entreprise, collaborez avec votre équipe de sécurité.
-- Toujours tester les règles dans les environnements de développement avant de les déployer dans les environnements d’évaluation et de production.
-- Lorsque vous déclarez et validez des règles, commencez toujours par `action` type `log` pour s’assurer que la règle ne bloque pas le trafic légitime.
-- Pour certaines règles, la transition de `log` to `block` doit être uniquement basé sur l’analyse d’un trafic suffisant sur le site.
-- Introduisez des règles de manière incrémentielle et envisagez d’impliquer vos équipes de test (contrôle qualité, performance, test de pénétration) dans le processus.
-- Analysez régulièrement l’impact des règles en utilisant la variable [Outils du tableau de bord](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool). Selon le volume de trafic de votre site, l’analyse peut être effectuée tous les jours, toutes les semaines ou tous les mois.
-- Pour bloquer le trafic malveillant que vous connaissez peut-être après l’analyse, ajoutez des règles supplémentaires. Par exemple, certaines adresses IP qui ont attaqué votre site.
-- La création, le déploiement et l’analyse de règles doivent être un processus itératif continu. Il ne s’agit pas d’une activité ponctuelle.
+- Consultez votre équipe de sécurité pour déterminer les règles appropriées à votre entreprise.
+- Testez toujours les règles dans les environnements de développement avant de les déployer dans les environnements d’évaluation et de production.
+- Lorsque vous créez et validez des règles, commencez toujours par le type `action` `log` pour vous assurer que la règle ne bloquera pas le trafic légitime.
+- Pour certaines règles, la transition de `log` à `block` doit être uniquement basée sur l’analyse d’un trafic suffisant sur le site.
+- Introduisez les règles de manière incrémentielle et pensez à impliquer vos équipes de test (contrôle qualité, performance, test de pénétration) dans le processus.
+- Analysez régulièrement l’impact des règles grâce aux [Outils du tableau de bord](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool). Selon le volume de trafic sur votre site, l’analyse sera effectuée tous les jours, toutes les semaines ou tous les mois.
+- Pour bloquer le trafic malveillant décelé après l’analyse, ajoutez des règles supplémentaires. Par exemple, les adresses IP qui ont attaqué votre site.
+- La création, le déploiement et l’analyse de règles doivent constituer un processus continu et itératif. Il ne s’agit aucunement d’une activité ponctuelle.
 
 ## Bonnes pratiques relatives aux règles de filtrage du trafic
 
-Activez les règles de filtrage du trafic ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour `rateLimit` et `clientCountry` Les propriétés doivent être déterminées en collaboration avec votre équipe de sécurité.
+Activez les règles de filtrage du trafic ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour les propriétés `rateLimit` et `clientCountry` doivent être déterminées en collaboration avec votre équipe de sécurité.
 
 ```yaml
 kind: CDN
@@ -86,13 +86,13 @@ data:
 
 >[!WARNING]
 >
->Pour votre environnement de production, collaborez avec votre équipe de sécurité web afin de déterminer les valeurs appropriées pour `rateLimit`
+>Pour votre environnement de production, consultez votre équipe de sécurité web afin de déterminer les valeurs appropriées pour `rateLimit`.
 
 ## Bonnes pratiques relatives aux règles WAF
 
-Une fois que la méthode WAF est sous licence et activée pour votre programme, les indicateurs de trafic correspondant à la méthode WAF apparaissent dans les graphiques et les journaux de requêtes, même si vous ne les avez pas déclarés dans une règle. Cela vous permet de toujours être conscient d’un nouveau trafic malveillant potentiel et de créer des règles selon vos besoins. Examinez les indicateurs WAF qui ne sont pas reflétés dans les règles déclarées et envisagez de les déclarer.
+Dès l’activation de votre licence WAF pour le programme, le trafic correspondant aux indicateurs WAF apparaît dans les graphiques et les journaux de requêtes, même si vous ne les avez pas déclarés dans une règle. Cela vous permet de toujours avoir conscience d’un nouveau trafic malveillant potentiel et de créer des règles selon vos besoins. Examinez les indicateurs WAF qui ne sont pas reflétés dans les règles déclarées et envisagez de les créer.
 
-Tenez compte des règles WAF ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour `action` et `wafFlags` doit être déterminée en collaboration avec votre équipe de sécurité.
+Tenez compte des règles WAF ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour `action` et la propriété `wafFlags` doivent être déterminées en collaboration avec votre équipe responsable de la sécurité.
 
 ```yaml
 kind: CDN
@@ -151,7 +151,7 @@ data:
 
 ## Résumé
 
-En conclusion, ce tutoriel vous a fourni les connaissances et les outils nécessaires pour renforcer la sécurité de vos applications web dans Adobe Experience Manager as a Cloud Service (AEMCS). Grâce à des exemples de règles pratiques et des informations sur l’analyse des résultats, vous pouvez protéger efficacement votre site web et vos applications.
+En conclusion, vous disposez grâce à ce tutoriel des connaissances et des outils nécessaires pour renforcer la sécurité de vos applications web dans Adobe Experience Manager as a Cloud Service (AEMCS). Grâce aux exemples de règles concrets et aux informations récoltées suite à l’analyse des résultats, vous pouvez protéger efficacement votre site web et vos applications.
 
 
 
