@@ -12,7 +12,7 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
 source-git-commit: ceb498f751ffc50d0022a16b63f9f52594bc507e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 100%
 
