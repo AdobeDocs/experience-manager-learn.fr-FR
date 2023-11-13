@@ -1,6 +1,6 @@
 ---
-title: Stocker l’envoi du formulaire dans Azure Storage
-description: Stockage des données de formulaire dans Azure Storage à l’aide de l’API REST
+title: Stocker l’envoi de formulaire dans le stockage Azure
+description: Stocker les données de formulaire dans le stockage Azure à l’aide de l’API REST
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -8,21 +8,22 @@ role: Developer
 level: Beginner
 last-substantial-update: 2023-10-23T00:00:00Z
 kt: 14238
-source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
-workflow-type: tm+mt
+exl-id: 77f93aad-0cab-4e52-b0fd-ae5af23a13d0
+source-git-commit: 7a0ec4797fda0436a8c20b84d1e36a8d16af21b9
+workflow-type: ht
 source-wordcount: '282'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Récupérer des données à partir du stockage Azure
 
-Cet article vous explique comment remplir un formulaire adaptatif avec les données stockées dans le stockage Azure.
-Nous partons du principe que vous avez stocké les données de formulaire adaptatif dans le stockage Azure et que vous souhaitez maintenant préremplir votre formulaire adaptatif avec ces données.
+Dans cet article, découvrez comment remplir un formulaire adaptatif avec les données stockées dans le stockage Azure.
+Avant de poursuivre votre lecture, assurez-vous d’avoir stocké les données de formulaire adaptatif dans le stockage Azure. Ces données permettront de préremplir les formulaires adaptatifs.
 
-## Créer une requête de GET
+## Créer une requête GET
 
-L’étape suivante consiste à écrire le code pour récupérer les données du stockage Azure à l’aide de l’blobID. Le code suivant a été écrit pour récupérer les données. L’URL a été créée à l’aide des valeurs sasToken et storageURI de la configuration OSGi et de l’blobID transmis à la fonction getBlobData .
+L’étape suivante consiste à écrire le code permettant de récupérer les données du stockage Azure à l’aide de l’ID d’objet blob. Le code suivant permet de récupérer les données. L’URL a été créée à l’aide des valeurs sasToken et storageURI de la configuration OSGi et de l’ID d’objet blob transmis à la fonction getBlobData.
 
 ```java
  @Override
@@ -56,7 +57,7 @@ public String getBlobData(String blobID) {
 }
 ```
 
-Lorsqu’un formulaire adaptatif est rendu avec un `guid` dans l’URL, le composant de page personnalisé associé au modèle récupère et renseigne le formulaire adaptatif avec les données du stockage Azure.
+Lorsqu’un formulaire adaptatif est rendu avec un paramètre `guid` dans l’URL, le composant de page personnalisé associé au modèle récupère et renseigne le formulaire adaptatif avec les données du stockage Azure.
 Le composant de page associé au modèle comporte le code JSP suivant.
 
 ```java
@@ -75,15 +76,14 @@ if(guid!=null&&!guid.isEmpty())
 
 ## Tester la solution
 
-* [Déploiement du lot OSGi personnalisé](./assets/SaveAndFetchFromAzure.core-1.0.0-SNAPSHOT.jar)
+* [Déployez le lot OSGi personnalisé.](./assets/SaveAndFetchFromAzure.core-1.0.0-SNAPSHOT.jar)
 
-* [Importez le modèle de formulaire adaptatif personnalisé et le composant de page associé au modèle.](./assets/store-and-fetch-from-azure.zip)
+* [Importez le modèle de formulaire adaptatif personnalisé et le composant de page associé à celui-ci.](./assets/store-and-fetch-from-azure.zip)
 
-* [Import de l’exemple de formulaire adaptatif](./assets/bank-account-sample-form.zip)
+* [Importez l’exemple de formulaire adaptatif.](./assets/bank-account-sample-form.zip)
 
 * Spécifiez les valeurs appropriées dans la configuration du portail Azure à l’aide de la console de configuration OSGi.
-* [Aperçu et envoi du formulaire BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
+* [Prévisualiser et soumettre le formulaire BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
-* Vérifiez que les données sont stockées dans le conteneur de stockage Azure de votre choix. Copiez l’ID de Blob.
-* [Aperçu du formulaire BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) et spécifiez l’ID Blob comme paramètre guid dans l’URL pour que le formulaire soit prérempli avec les données du stockage Azure.
-
+* Vérifiez que les données sont stockées dans le conteneur de stockage Azure de votre choix. Copiez l’ID d’objet blob.
+* [Prévisualisez le formulaire BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) et spécifiez l’ID d’objet blob comme paramètre guid dans l’URL pour que le formulaire soit prérempli avec les données provenant du stockage Azure.
