@@ -9,9 +9,9 @@ sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
 source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1874'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 98%
    + [Intégration à ServiceNow](some-useful-integrations/service-now.md)
    + [Envoyer des e-mails avec SendGrid](some-useful-integrations/send-grid.md)
    + [Stocker les données de formulaire dans le stockage Azure](some-useful-integrations/store-form-data-in-azure-storage.md)
-   + [Renseigner le formulaire avec Azure Blob](some-useful-integrations/fetch-form-data-from-azure-storage.md)
+   + [Renseigner le formulaire avec Azure Blob](some-useful-integrations/fetch-form-data-from-azure-storage.md)
 + Créer un bundle OSGi {#creating-your-first-osgi-bundle}
    + [1. Configurer votre environnement](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
    + [2. Créer un service OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
@@ -143,12 +143,12 @@ ht-degree: 98%
    + [9. Créer le formulaire principal](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
    + [10. Créer le formulaire MyAccount](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
    + [11. Déployer l’exemple](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
-+ Importation de données à partir d’un fichier pdf{#import-data-from-pdf-form}
++ Importer des données du fichier PDF{#import-data-from-pdf-form}
    + [1. Présentation](import-data-from-pdf-form/introduction.md)
-   + [2 - Créer un formulaire adaptatif](import-data-from-pdf-form/create-adaptive-form.md)
+   + [2. Créer un formulaire adaptatif](import-data-from-pdf-form/create-adaptive-form.md)
    + [3. Créer un service OSGi](import-data-from-pdf-form/create-osgi-service.md)
-   + [4 - Renseigner le formulaire adaptatif](import-data-from-pdf-form/populate-adaptive-form.md)
-   + [5 - Test de la solution](import-data-from-pdf-form/test-the-solution.md)
+   + [4. Renseigner le formulaire adaptatif](import-data-from-pdf-form/populate-adaptive-form.md)
+   + [5. Tester la solution](import-data-from-pdf-form/test-the-solution.md)
 + Exportation de données envoyées au format CSV{#export-submitted-data-csv-format}
    + [Exporter les données envoyées](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + Formulaires HTML5{#html5-forms}
