@@ -1,22 +1,23 @@
 ---
 title: Renseigner le formulaire adaptatif à l’aide de la méthode setData
-description: Envoyez le fichier pdf chargé pour l’extraction des données et renseignez le formulaire adaptatif avec les données extraites.
+description: Envoyer le fichier PDF chargé et extraire les données pour renseigner le formulaire adaptatif.
 feature: Adaptive Forms
 version: 6.5
 topic: Development
 role: Developer
 level: Beginner
 kt: 14196
-source-git-commit: 17ab178f385619b589a9dde6089410bfa4515ffa
-workflow-type: tm+mt
+exl-id: f380d589-6520-4955-a6ac-2d0fcd5aaf3f
+source-git-commit: 7a0ec4797fda0436a8c20b84d1e36a8d16af21b9
+workflow-type: ht
 source-wordcount: '126'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 # Lancer un appel Ajax
 
-Lorsque l’utilisateur a téléchargé le fichier pdf, nous devons effectuer un appel de POST à un servlet et transmettre le document de PDF téléchargé dans la demande de POST. La requête du POST renvoie un chemin d’accès aux données exportées dans le référentiel crx.
+Une fois le chargement du fichier PDF effectué, nous devons effectuer un appel POST à un servlet et transmettre le document PDF chargé dans la requête POST. La requête POST renvoie un chemin d’accès aux données exportées dans le référentiel CRX.
 
 ```javascript
 $("#fileElem").on('change', function (e) {
@@ -56,11 +57,9 @@ function handleFiles(formData) {
 }
 ```
 
-Le servlet monté sur **_/bin/ExtractDataFromPDF_** extrait les données du fichier du PDF et renvoie le chemin du noeud crx où les données extraites sont stockées.
-La variable [GuideBridge setData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html#setData__anchor) est ensuite utilisée pour définir les données du formulaire adaptatif.
+Le servlet monté sur **_/bin/ExtractDataFromPDF_** extrait les données du fichier PDF et renvoie le chemin d’accès au nœud CRX contenant les données extraites.
+La méthode [GuideBridge setData](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html#setData__anchor) est ensuite utilisée pour définir les données du formulaire adaptatif.
 
 ## Étapes suivantes
 
 [Déployer des exemples de ressources](./test-the-solution.md)
-
-
