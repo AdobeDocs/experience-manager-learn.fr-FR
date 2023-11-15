@@ -9,16 +9,18 @@ level: Experienced
 kt: 8918
 thumbnail: 336969.jpeg
 exl-id: 4944d3d9-52a0-4255-9e6c-eb119160e400
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
-workflow-type: ht
-source-wordcount: '157'
-ht-degree: 100%
+source-git-commit: 8a4f4a1370d93aa592d5d67208ad5f85034db0bf
+workflow-type: tm+mt
+source-wordcount: '201'
+ht-degree: 71%
 
 ---
 
 # Service d’import en bloc
 
 Découvrez comment AEM en tant que service d’import en bloc de services cloud peut être utilisé pour importer des ressources à partir de sources non AEM.
+
+
 
 >[!VIDEO](https://video.tv.adobe.com/v/336969?quality=12&learn=on)
 
@@ -28,9 +30,13 @@ Découvrez comment AEM en tant que service d’import en bloc de services cloud 
 
 Le service d’import en bloc est utilisé pour transférer des fichiers stockés dans le stockage Azure Blob ou Amazon S3 vers AEM as a Cloud Service en tant que ressources.
 
+>[!TIP]
+>
+> Les sources d’entrée de cette vidéo n’affichent que Azure Blob Storage et Amazon S3 ; cependant, les sources disponibles continuent de croître au fil du temps. Pour obtenir la liste complète des sources d’entrée prises en charge, reportez-vous aux options disponibles dans le produit, ou [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+
 ## Activités clés
 
-+ Téléchargez les fichiers à importer dans votre fournisseur d’espace de stockage (stockage Azure Blob ou Amazon S3).
++ Téléchargez les fichiers à importer dans votre fournisseur de stockage dans le cloud.
 + Configurez et exécutez le service d’import en bloc à partir du service de création d’AEM as a Cloud Service.
 + Exécutez l’importateur de services en bloc comme import unique ou planifiez un import périodique.
 
