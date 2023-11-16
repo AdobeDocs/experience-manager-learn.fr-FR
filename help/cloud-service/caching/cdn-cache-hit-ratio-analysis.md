@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2023-11-10T00:00:00Z
 jira: KT-13312
 thumbnail: KT-13312.jpeg
-source-git-commit: be503ba477d63a566b687866289a81a0aa7d01f7
+source-git-commit: 4e93bc88b0ee5a805f2aaf1e66900f084ae01247
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1433'
 ht-degree: 2%
 
 ---
@@ -20,10 +20,12 @@ ht-degree: 2%
 
 # Analyse du taux d’accès du cache CDN
 
-Découvrez comment analyser l’AEM as a Cloud Service fournie **Journaux CDN** et obtenir des informations telles que **taux d’accès au cache**, et **URL principales de _MISS_ et _PASS_ types de cache** à des fins d’optimisation.
+Le contenu mis en cache sur le réseau de diffusion de contenu réduit la latence vécue par les utilisateurs du site web, qui n’ont pas besoin d’attendre que la demande revienne vers Apache/dispatcher ou AEM publication. Dans ce contexte, il est utile d’optimiser le taux d’accès au cache du réseau CDN pour maximiser la quantité de contenu pouvant être mise en cache sur le réseau CDN.
+
+Découvrez comment analyser l’AEM as a Cloud Service fournie **Journaux CDN** et obtenir des informations telles que **taux d’accès au cache**, et **URL principales de _MISS_ et _PASS_ types de cache**, à des fins d’optimisation.
 
 
-Les journaux CDN sont disponibles au format JSON, qui contient divers champs, y compris `url`, `cache`, pour plus d’informations, voir [Format de journal CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=en#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). La variable `cache` fournit des informations sur _état du cache_ et ses valeurs possibles sont HIT, MISS ou PASS. Examinons les détails des valeurs possibles.
+Les journaux CDN sont disponibles au format JSON, qui contient divers champs, y compris `url`, `cache`. Pour plus d’informations, voir [Format de journal CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=en#cdn-log:~:text=Toggle%20Text%20Wrapping-,Log%20Format,-The%20CDN%20logs). La variable `cache` fournit des informations sur _état du cache_ et ses valeurs possibles sont HIT, MISS ou PASS. Examinons les détails des valeurs possibles.
 
 | État du cache </br> Valeur possible | Description |
 |------------------------------------|:-----------------------------------------------------:|
@@ -31,7 +33,12 @@ Les journaux CDN sont disponibles au format JSON, qui contient divers champs, y 
 | MISS | Les données demandées sont : _introuvable dans le cache du réseau de diffusion de contenu et doit être demandé_ à partir du serveur AEM. |
 | PASS | Les données demandées sont : _explicitement défini pour ne pas être mis en cache_ et toujours récupéré à partir du serveur AEM. |
 
-Dans ce tutoriel, la variable [AEM projet WKND](https://github.com/adobe/aem-guides-wknd) est déployé dans l’environnement as a Cloud Service AEM et un petit test de performance est déclenché à l’aide de [Apache JMeter](https://jmeter.apache.org/).
+Pour les besoins de ce tutoriel, le [AEM projet WKND](https://github.com/adobe/aem-guides-wknd) est déployé dans l’environnement as a Cloud Service AEM et un petit test de performance est déclenché à l’aide de [Apache JMeter](https://jmeter.apache.org/).
+
+Ce tutoriel est structuré de manière à vous guider dans le processus suivant :
+1. Téléchargement des journaux CDN via Cloud Manager
+1. L’analyse de ces journaux CDN, qui peuvent être réalisés avec deux méthodes : un tableau de bord installé localement ou un notebook Jupityer accessible à distance (pour ceux qui disposent d’une licence Adobe Experience Platform)
+1. Optimisation de la configuration du cache CDN
 
 ## Téléchargement des journaux CDN
 
@@ -52,12 +59,12 @@ Si le fichier journal téléchargé provient de _aujourd’hui_ l’extension de
 
 ## Analyse des journaux CDN téléchargés
 
-Pour obtenir des informations telles que le taux d’accès au cache et les URL principales des types de cache MISS et PASS, analysez le fichier journal du réseau de diffusion de contenu téléchargé. Ces informations permettent d’optimiser les [Configuration du cache CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=fr) et d’améliorer les performances du site.
+Pour obtenir des informations telles que le taux d’accès au cache et les URL principales des types de cache MISS et PASS, analysez le fichier de journal CDN téléchargé. Ces informations permettent d’optimiser les [Configuration du cache CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=fr) et d’améliorer les performances du site.
 
-Pour analyser les journaux CDN, cet article utilise la variable **Elasticsearch, Logstash et Kibana (ELK)** [Outils du tableau de bord](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) et [Notebook Jupyter](https://jupyter.org/).
+Pour analyser les journaux CDN, cet article présente deux options : **Elasticsearch, Logstash et Kibana (ELK)** [Outils du tableau de bord](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) et [Notebook Jupyter](https://jupyter.org/). L’outil de tableau de bord ELK peut être installé localement sur votre ordinateur portable, tandis que l’outil Notebook Jupityr est accessible à distance. [dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=en) sans installer de logiciel supplémentaire, pour ceux qui disposent d’une licence Adobe Experience Platform.
 
 
-### Utilisation des outils de tableau de bord
+### Option 1 : utilisation des outils de tableau de bord ELK
 
 La variable [Pile ELK](https://www.elastic.co/elastic-stack) est un ensemble d’outils qui fournit une solution évolutive permettant de rechercher, d’analyser et de visualiser les données. Il se compose de Elasticsearch, Logstash et Kibana.
 
@@ -69,7 +76,7 @@ Pour identifier les détails clés, nous allons utiliser la variable [AEMCS-CDN-
 
    1. Copiez le ou les fichiers journaux CDN téléchargés dans le dossier spécifique à l’environnement.
 
-   1. Ouvrez le **Taux d’accès au cache du réseau CDN** en cliquant sur Menu Hamburger > Analytics > Tableau de bord > Rapport d’accès au cache CDN.
+   1. Ouvrez le **Taux d’accès au cache du réseau CDN** en cliquant sur le coin supérieur gauche du menu de navigation > Analytics > Tableau de bord > Rapport d’accès au cache CDN.
 
       ![Taux d’accès au cache du réseau CDN - Tableau de bord Kibana](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
 
@@ -118,26 +125,24 @@ Pour filtrer les journaux ingérés par nom d’hôte, procédez comme suit :
 
 De même, ajoutez d’autres filtres au tableau de bord en fonction des exigences d’analyse.
 
-### Utilisation de Jupyter Notebook
+### Option 2 : utilisation du notebook Jupyter
 
-La variable [Notebook Jupyter](https://jupyter.org/) est une application web open source qui vous permet de créer des documents contenant du code, du texte et des visualisations. Il est utilisé pour la transformation des données, la visualisation et la modélisation statistique.
+Pour ceux qui préfèrent ne pas installer de logiciel localement (c’est-à-dire l’outil de tableau de bord ELK de la section précédente), il existe une autre option, mais elle nécessite une licence pour Adobe Experience Platform.
 
-Pour accélérer l’analyse des journaux CDN, téléchargez la [AEM-as-a-CloudService - Analyse des journaux CDN - notebook Jupyter](./assets/cdn-logs-analysis/aemcs_cdn_logs_analysis.ipynb) fichier .
+La variable [Notebook Jupyter](https://jupyter.org/) est une application web open source qui vous permet de créer des documents contenant du code, du texte et des visualisations. Il est utilisé pour la transformation des données, la visualisation et la modélisation statistique. Il est accessible à distance [dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=en).
 
-Téléchargé `aemcs_cdn_logs_analysis.ipynb` Le fichier &quot;Interactive Python Notebook&quot; est explicite, mais les points forts de chaque section sont les suivants :
+#### Téléchargement du fichier notebook Python interactif
+
+Tout d’abord, téléchargez le [AEM-as-a-CloudService - Analyse des journaux CDN - notebook Jupyter](./assets/cdn-logs-analysis/aemcs_cdn_logs_analysis.ipynb) qui facilite l’analyse des journaux CDN. Ce fichier &quot;Interactive Python Notebook&quot; s’explique parfaitement, cependant, les points forts de chaque section sont les suivants :
 
 - **Installation de bibliothèques supplémentaires**: installe la variable `termcolor` et `tabulate` Bibliothèques Python.
-- **Chargement des journaux CDN**: charge le fichier journal du réseau de diffusion de contenu à l’aide de `log_file` , veillez à mettre à jour sa valeur. Il transforme également ce journal CDN en [pandas DataFrame](https://pandas.pydata.org/docs/reference/frame.html).
-- **Exécution de l’analyse**: le premier bloc de code est _Afficher le résultat de l’analyse pour les demandes totales, de HTML, JS/CSS et d’image_, il fournit des graphiques en pourcentage du taux d’accès au cache, en barres et en secteurs.
-Le second bloc de code est _5 premières URL de demande MISS et PASS pour HTML, JS/CSS et image_, il affiche les URL et leur nombre au format tableau.
+- **Chargement des journaux CDN**: charge le fichier journal du réseau de diffusion de contenu à l’aide de `log_file` de la variable. Veillez à mettre à jour sa valeur. Il transforme également ce journal CDN en [pandas DataFrame](https://pandas.pydata.org/docs/reference/frame.html).
+- **Exécution de l’analyse**: le premier bloc de code est _Afficher le résultat de l’analyse pour les demandes totales, de HTML, JS/CSS et d’image_; il fournit des graphiques en pourcentage du taux d’accès au cache, en barres et en secteurs.
+Le second bloc de code est _5 premières URL de demande MISS et PASS pour HTML, JS/CSS et image_; il affiche les URL et leur nombre au format tableau.
 
-#### Exécution du notebook Jupyter dans Experience Platform
+#### Exécution du notebook Jupyter
 
->[!IMPORTANT]
->
->Si vous utilisez ou possédez une licence pour l’Experience Platform, vous pouvez exécuter le notebook Jupyter sans installer de logiciel supplémentaire.
-
-Pour exécuter le notebook Jupyter en Experience Platform, procédez comme suit :
+Exécutez ensuite le notebook Jupyter dans Adobe Experience Platform en procédant comme suit :
 
 1. Connectez-vous au [Adobe Experience Cloud](https://experience.adobe.com/), dans la page d’accueil > **Accès rapide** > cliquez sur l’icône **Experience Platform**
 
