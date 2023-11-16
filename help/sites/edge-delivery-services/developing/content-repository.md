@@ -8,11 +8,11 @@ role: Developer
 level: Beginner
 doc-type: Technical Video
 last-substantial-update: 2023-11-15T00:00:00Z
-jira: KT-14477, KT-14478, KT-14479
+jira: KT-14477, KT-14478
 thumbnail: 3425712.jpeg
-source-git-commit: d17544c4f8dda03e5147a1f48dbbdae005ee9438
+source-git-commit: 155790de88f6775a6624637dce3f98a018de4afc
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '126'
 ht-degree: 1%
 
 ---
@@ -26,26 +26,18 @@ Pour intégrer Adobe Experience Manager (AEM) aux Edge Delivery Services, commen
 
 Il existe deux référentiels de contenu pris en charge pour [création de documents](../../document-authoring/set-up.md), [SharePoint](#sharepoint) et [Google Drive](#google-drive).
 
-### SharePoint
+>[!BEGINTABS]
+
+>[!TAB SharePoint]
 
 Configurez SharePoint comme référentiel de contenu à utiliser avec les Edge Delivery Services.
 
-Cette vidéo peut être ignorée si [Google Drive](#google-drive) est utilisée à la place.
-
 >[!VIDEO](https://video.tv.adobe.com/v/3425712/?learn=on)
 
-
-### Google Drive
+>[!TAB Google Drive]
 
 Configurez Google Drive en tant que référentiel de contenu à utiliser avec les Edge Delivery Services.
 
-Cette vidéo peut être ignorée si [SharePoint](#sharepoint) est utilisée à la place.
-
 >[!VIDEO](https://video.tv.adobe.com/v/3425711/?learn=on)
 
-
-## Lier le référentiel de contenu
-
-Une fois le référentiel de contenu configuré, il doit être lié au projet Edge Delivery Services.
-
->[!VIDEO](https://video.tv.adobe.com/v/3425713/?learn=on)
+>[!ENDTABS]
