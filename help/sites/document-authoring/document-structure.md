@@ -1,5 +1,5 @@
 ---
-title: Explorer la structure d’un document
+title: Structure de document pour la création de documents
 description: Découvrez comment assembler une création de document.
 version: 6.5, Cloud Service
 feature: Authoring
@@ -10,15 +10,15 @@ doc-type: Feature Video
 last-substantial-update: 2023-11-15T00:00:00Z
 jira: KT-14467
 thumbnail: 3425701.jpeg
-source-git-commit: d17544c4f8dda03e5147a1f48dbbdae005ee9438
+source-git-commit: bfa60ff9690fec036a6fb2e48cb7947ca9b762d4
 workflow-type: tm+mt
-source-wordcount: '33'
+source-wordcount: '28'
 ht-degree: 0%
 
 ---
 
 
-# Explorer la structure d’un document
+# Structure du document
 
 {{edge-delivery-services}}
 
