@@ -1,6 +1,6 @@
 ---
-title: Contenu et sections par défaut
-description: Découvrez en détail les concepts de création de documents du contenu et des sections par défaut.
+title: Blocs et autoblocks dans la création de documents
+description: Utilisation des blocs et des autoblocks dans la création de documents.
 version: 6.5, Cloud Service
 feature: Authoring
 topic: Content Management
@@ -10,18 +10,18 @@ doc-type: Feature Video
 last-substantial-update: 2023-11-15T00:00:00Z
 jira: KT-14468
 thumbnail: 3425702.jpeg
-source-git-commit: d17544c4f8dda03e5147a1f48dbbdae005ee9438
+source-git-commit: 931c48b3687c8d7f8ec0ae8ef5d6dd2390fc119f
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '38'
 ht-degree: 0%
 
 ---
 
 
-# Contenu et sections par défaut
+# Blocs et autoblocks
 
 {{edge-delivery-services}}
 
-Découvrez en détail les concepts de création de documents relatifs aux sections et au contenu par défaut, et comment ces concepts vous aident à améliorer vos expériences web.
+Découvrez comment les blocs et les autoblocks sont utilisés dans la création de documents et comment ils peuvent améliorer le site et l’expérience de création.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425702/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3425703/?learn=on)
