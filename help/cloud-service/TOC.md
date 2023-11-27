@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: bfc4d843c53373010ee04cfa590272cedea7a686
+source-git-commit: b770fc33ee0752911135d1a94144406bad8f295b
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 99%
+source-wordcount: '1084'
+ht-degree: 97%
 
 ---
 
@@ -204,12 +204,13 @@ ht-degree: 99%
       + [4 - Synchroniser IntelliJ avec AEM](./forms/developing-for-cloud-service/intellij-and-aem-sync.md)
       + [5 - Créer un formulaire](./forms/developing-for-cloud-service/deploy-your-first-form.md)
       + [6 - Gestionnaire d’envoi personnalisé](./forms/developing-for-cloud-service/custom-submit-to-servlet.md)
-      + [7 - Activer les composants du Portail Formulaires](./forms/developing-for-cloud-service/forms-portal-components.md)
-      + [8 - Inclure Cloud Services et FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
-      + [9 - Configuration cloud basée sur le contexte](./forms/developing-for-cloud-service/context-aware-fdm.md)
-      + [10 -Transmettre à Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
-      + [11 - Déployer sur l’environnement de développement](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
-      + [12 - Mettre à jour l’archétype Maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
+      + [7 - Enregistrement du servlet à l’aide du type de ressource](./forms/developing-for-cloud-service/registering-servlet-using-resourcetype.md)
+      + [8 - Activer les composants du Portail Formulaires](./forms/developing-for-cloud-service/forms-portal-components.md)
+      + [9 - Inclure Cloud Services et FDM](./forms/developing-for-cloud-service/azure-storage-fdm.md)
+      + [10 - Configuration cloud basée sur le contexte](./forms/developing-for-cloud-service/context-aware-fdm.md)
+      + [11 -Transmettre à Cloud Manager](./forms/developing-for-cloud-service/push-project-to-cloud-manager-git.md)
+      + [12 - Déployer sur l’environnement de développement](./forms/developing-for-cloud-service/deploy-to-dev-environment.md)
+      + [13 - Mettre à jour l’archétype Maven](./forms/developing-for-cloud-service/updating-project-archetype.md)
    + Créer un formulaire adaptatif{#create-first-af}
       + [Présentation](./forms/create-first-af/introduction.md)
       + [Créer un thème](./forms/create-first-af/create-theme.md)
@@ -254,6 +255,12 @@ ht-degree: 99%
       + [Utilitaires PDF/A](./forms/forms-cs-assembler/pdfa-utilities.md)
       + [Tester la solution](./forms/forms-cs-assembler/test.md)
       + [Difficulté](./forms/forms-cs-assembler/challenge.md)
+   + Stocker les envois de formulaire avec des balises d’index blob{#store-submiited-data-with-metadata-tags}
+      + [Présentation](./forms/store-submiited-data-with-metadata-tags/introduction.md)
+      + [Étendre le composant de groupe de choix](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)
+      + [Création d’une configuration OSGi](./forms/store-submiited-data-with-metadata-tags/create-osgi-configuration.md)
+      + [Création de balises d’index](./forms/store-submiited-data-with-metadata-tags/create-blob-index-tags.md)
+      + [Créer un envoi personnalisé](./forms/store-submiited-data-with-metadata-tags/create-custom-submit.md)
    + Stockage de portail Azure{#forms-cs-azure-portal}
       + [Présentation](./forms/forms-cs-azure-portal/introduction.md)
       + [Créer un modèle de données de formulaire](./forms/forms-cs-azure-portal/create-fdm.md)
