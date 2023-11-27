@@ -9,10 +9,10 @@ level: Intermediate
 kt: 9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: ht
-source-wordcount: '1318'
-ht-degree: 100%
+source-git-commit: bccaccd386d065720cddfd689cbadc220609b8a8
+workflow-type: tm+mt
+source-wordcount: '1319'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Les éléments suivants sont requis lors de la configuration du réseau privé v
    + Jeton d’accès (ou jeton porteur)
 + ID de programme Cloud Manager
 + ID d’environnement de Cloud Manager
-+ Réseau privé virtuel, avec accès à tous les paramètres de connexion nécessaires.
++ A **Basé sur des itinéraires** Réseau privé virtuel, avec accès à tous les paramètres de connexion nécessaires.
 
 Pour plus d’informations, regardez la présentation suivante pour découvrir comment installer, configurer et obtenir les informations d’identification de l’API Cloud Manager, et comment les utiliser pour effectuer un appel d’API Cloud Manager.
 
