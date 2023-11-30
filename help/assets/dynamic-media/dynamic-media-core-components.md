@@ -6,10 +6,11 @@ version: Cloud Service
 topic: Content Management
 role: User
 level: Beginner
-kt: 6630
+jira: KT-6630
+doc-type: Feature Video
 exl-id: 12fa3622-428a-40c1-b47f-fa55c2858896
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 100%
 

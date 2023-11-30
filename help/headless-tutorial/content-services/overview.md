@@ -5,9 +5,10 @@ feature: Content Fragments, APIs
 topic: Headless, Content Management
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 100%
 

@@ -7,14 +7,14 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5802
+jira: KT-5802
 thumbnail: KT-5802.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 100%
 

@@ -2,17 +2,14 @@
 title: Utiliser la copie de la langue avec AEM Sites
 description: Avec l’amélioration de la traduction du site de l’assistant Créer une copie de langue d’AEM, les utilisateurs et utilisatrices peuvent créer une copie de langue à partir de la langue principale sans avoir à créer une page racine.
 feature: Language Copy
-topics: localization, authoring, content-architecture
-audience: all
-doc-type: feature video
-activity: use
 version: 6.4, 6.5
 topic: Localization
 role: User
 level: Beginner
+doc-type: Feature Video
 exl-id: 49613808-6369-4e43-bc26-fd3041265339
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 100%
 

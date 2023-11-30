@@ -2,19 +2,16 @@
 title: Mapper des composants SPA aux composants AEM | Prise en main de l’Éditeur de SPA d’AEM et d’Angular
 description: Découvrez comment mapper les composants Angular aux composants Adobe Experience Manager (AEM) avec le SDK JS de l’éditeur de SPA d’AEM. Le mappage de composants permet aux utilisateurs et utilisatrices d’effectuer des mises à jour dynamiques sur les composants de la SPA dans l’éditeur de SPA AEM, comme pour la création AEM traditionnelle.
 feature: SPA Editor
-topics: development
-doc-type: tutorial
 version: Cloud Service
-activity: develop
-audience: developer
-kt: 5311
+jira: KT-5311
 thumbnail: 5311-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '2372'
 ht-degree: 100%
 

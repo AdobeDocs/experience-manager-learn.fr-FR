@@ -7,9 +7,10 @@ feature: Dispatcher
 role: Admin
 level: Beginner
 thumbnail: xx.jpg
+doc-type: Article
 exl-id: 299b32c3-7922-4eee-aa3a-56039a654f70
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 100%
 
@@ -272,7 +273,7 @@ Exemple de configuration
 
 ```
 <VirtualHost *:80> 
-	DocumentRoot	${PUBLISH_DOCROOT} 
+    DocumentRoot    ${PUBLISH_DOCROOT} 
 ```
 
 Maintenant, exécutez les commandes pour voir les sorties compilées.

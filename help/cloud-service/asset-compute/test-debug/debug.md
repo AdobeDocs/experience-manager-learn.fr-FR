@@ -7,14 +7,14 @@ version: Cloud Service
 activity: develop
 audience: developer
 doc-type: tutorial
-kt: 6285
+jira: KT-6285
 thumbnail: 40383.jpg
 topic: Integrations, Development
 role: Developer
 level: Intermediate, Experienced
 exl-id: 4dea9cc4-2133-4ceb-8ced-e9b9874f6d89
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 100%
 

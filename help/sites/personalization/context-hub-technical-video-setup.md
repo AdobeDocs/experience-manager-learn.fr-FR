@@ -2,17 +2,14 @@
 title: Configurer ContextHub pour la personnalisation avec AEM Sites
 description: ContextHub est un framework permettant de stocker, manipuler et présenter des données contextuelles. L’API JavaScript ContextHub vous permet d’accéder aux magasins pour créer, mettre à jour et supprimer des données si nécessaire. En tant que tel, ContextHub représente une couche de données sur vos pages.Cette page décrit comment ajouter ContextHub à vos pages de site AEM.
 feature: Context Hub
-topics: personalization
-audience: developer, architect
-doc-type: technical video
-activity: setup
 version: 6.4, 6.5
 topic: Personalization
 role: Developer
 level: Intermediate
+doc-type: Technical Video
 exl-id: 89308dd3-a7e5-4fec-bffb-5f0974125c0a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 100%
 

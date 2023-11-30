@@ -2,17 +2,17 @@
 title: Planifier l’interface utilisateur avec Adobe XD | Création rapide de site AEM
 description: Découvrez comment les kits d’interface utilisateur d’Adobe XD peuvent être utilisés pour concevoir et accélérer votre mise en œuvre Adobe Experience Manager Sites.
 version: Cloud Service
-type: Tutorial
 topic: Content Management
 feature: Core Components
 role: Developer
 level: Beginner
-kt: 9371
+jira: KT-9371
 thumbnail: 338680.jpg
+doc-type: Tutorial
 exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 100%
 

@@ -6,13 +6,13 @@ feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Beginner
-kt: 10798
+jira: KT-10798
 thumbnail: KT-10798.jpg
 last-substantial-update: 2023-05-10T00:00:00Z
 badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: 39b21a29-a75f-4a6c-ba82-377cf5cc1726
-source-git-commit: d3ee129cb228f02d5a5846465400c04ce81dfbb5
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Les outils suivants doivent être installés localement :
 
 L’application Node.js fonctionne avec les options de déploiement d’AEM suivantes. Tous les déploiements nécessitent que la version [v3.0.0 ou supérieure du site WKND](https://github.com/adobe/aem-guides-wknd/releases/latest) soit installée.
 
-+ [AEM as a Cloud Service.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr)
++ [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr)
 + Vous aurez éventuellement besoin des [informations d’identification du service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=fr) si vous autorisez des requêtes (par exemple, la connexion au service création AEM).
 
 Cette application Node.js peut se connecter à l’instance de création ou de publication AEM en fonction des paramètres de ligne de commande.

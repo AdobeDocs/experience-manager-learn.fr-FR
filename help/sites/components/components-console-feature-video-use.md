@@ -1,18 +1,15 @@
 ---
 title: Utiliser la console des composants avec AEM Sites
 description: La console des composants fournit aux personnes chargées du développement et de l’administration un emplacement central pour gérer tous les différents composants dans une implémentation de Sites. La vidéo suivante présente les fonctionnalités de la console des composants.
-topics: components
-audience: all
-doc-type: feature video
 version: 6.4, 6.5
-activity: use
 feature: Core Components
 topic: Content Management
 role: User
 level: Intermediate
+doc-type: Feature Video
 exl-id: 6f33f121-5564-4c46-ab56-7ea382a0ab5a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 100%
 

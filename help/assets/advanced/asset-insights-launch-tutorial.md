@@ -9,9 +9,10 @@ level: Intermediate
 last-substantial-update: 2022-06-04T00:00:00Z
 badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
-source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 100%
 
@@ -69,7 +70,7 @@ La suite de rapports avec collecte de données en temps réel est créée pour l
 
 >[!NOTE]
 >
->La collecte de données en temps réel et la création de rapports de ressources AEM doivent être activées pour votre suite de rapports Adobe Analytics. L’activation du reporting des ressources AEM réserve des variables d’analyse pour le suivi des insights sur les ressources.
+La collecte de données en temps réel et la création de rapports de ressources AEM doivent être activées pour votre suite de rapports Adobe Analytics. L’activation du reporting des ressources AEM réserve des variables d’analyse pour le suivi des insights sur les ressources.
 
 Pour la configuration des insights sur les ressources AEM, vous avez besoin des informations d’identification suivantes :
 
@@ -87,7 +88,7 @@ Ajout de l’extension Adobe Analytics, création de règles de chargement de p
 
 >[!NOTE]
 >
->Veillez à répliquer toutes vos modifications de l’instance de création vers l’instance de publication.
+Veillez à répliquer toutes vos modifications de l’instance de création vers l’instance de publication.
 
 ### Règle 1 : outil de suivi de page (pagetracker.js) {#rule-page-tracker-pagetracker-js}
 

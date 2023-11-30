@@ -6,12 +6,13 @@ topic: Development, Administration
 feature: Operations, Dispatcher
 role: Developer, Architect
 level: Intermediate
-kt: 11466
+jira: KT-11466
 last-substantial-update: 2022-10-14T00:00:00Z
 index: y
+doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 100%
 

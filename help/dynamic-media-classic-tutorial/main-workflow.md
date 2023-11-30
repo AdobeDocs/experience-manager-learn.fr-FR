@@ -2,16 +2,13 @@
 title: Workflow principal de Dynamic Media Classic et aperçu des ressources
 description: 'Découvrez le workflow principal de Dynamic Media Classic et ses trois étapes : Création (et chargement), Service de création (et publication) et Diffusion. Découvrez comment prévisualiser des ressources dans Dynamic Media Classic.'
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring, architecture, publishing
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '2703'
 ht-degree: 100%
 

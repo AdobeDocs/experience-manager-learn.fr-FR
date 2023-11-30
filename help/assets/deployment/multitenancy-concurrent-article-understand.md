@@ -6,9 +6,10 @@ version: 6.5
 topic: Development
 role: Developer
 level: Intermediate
+doc-type: Article
 exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 100%
 
@@ -149,6 +150,6 @@ approches ne prennent pas facilement en compte les paramètres de configuration 
 
 ## Remarques relatives à la sécurité {#security-considerations}
 
-### Listes ACL {#acls}
+### ACL {#acls}
 
 Il est bien sûr possible d’utiliser des listes de contrôle d’accès (ACL) pour contrôler qui a accès à l’affichage, la création et la suppression de contenu en fonction des chemins de contenu, ce qui nécessite la création et la gestion des groupes d’utilisateurs et d’utilisatrices. La difficulté à gérer les listes de contrôle d’accès et les groupes dépend de l’importance accordée au fait que chaque client n’a aucune connaissance des autres et du fait que les applications déployées s’appuient sur des ressources partagées. Pour assurer l’efficacité de l’administration des listes de contrôle d’accès, des utilisateurs et utilisatrices et des groupes, nous vous recommandons de disposer d’un groupe centralisé avec la supervision nécessaire pour vous assurer que ces contrôles d’accès et entités principales se chevauchent (ou ne se chevauchent pas) d’une manière qui favorise l’efficacité et la sécurité.

@@ -7,14 +7,14 @@ version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
-kt: 5434
+jira: KT-5434
 thumbnail: kt-5424.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '2523'
 ht-degree: 100%
 

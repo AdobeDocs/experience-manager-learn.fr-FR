@@ -6,11 +6,12 @@ feature: Search
 topic: Development
 role: Developer
 level: Intermediate, Experienced
+doc-type: Tutorial
 exl-id: aa268c5f-d29e-4868-a58b-444379cb83be
 last-substantial-update: 2022-08-10T00:00:00Z
 thumbnail: 32090.jpg
-source-git-commit: 1ecd3c761ea7c79036b263ff8528a6cd01af0e76
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 100%
 

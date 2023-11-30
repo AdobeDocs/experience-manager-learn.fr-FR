@@ -2,17 +2,17 @@
 title: Bibliothèques clientes et workflow front-end
 description: Découvrez comment utiliser les bibliothèques clientes pour déployer et gérer le code CSS et JavaScript pour une implémentation d’Adobe Experience Manager (AEM) Sites. Découvrez comment le module ui.frontend, un projet webpack, peut être intégré au processus de génération de bout en bout.
 version: 6.4, 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4083
+jira: KT-4083
 thumbnail: 30359.jpg
+doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
-source-git-commit: 68a7f263284fdf9cfcf82572b8e1e1c0c01e4b55
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '2799'
 ht-degree: 100%
 
@@ -386,9 +386,9 @@ Cette technique est utile si la plupart des styles et du code front-end sont eff
 
 ### aemfed {#develop-aemfed}
 
-**[aemfed](https://aemfed.io)** est un outil de ligne de commande Open Source qui peut être utilisé pour accélérer le développement frontal. Il est alimenté par [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://browsersync.io/), et [Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html).
+**[aemfed](https://aemfed.io)** est un outil de ligne de commande Open Source qui peut être utilisé pour accélérer le développement front-end. Il est alimenté par [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://browsersync.io/), et [Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html).
 
-À un niveau élevé, la variable `aemfed` est conçue pour prendre en compte les modifications apportées aux fichiers dans le module **ui.apps** et les synchroniser automatiquement directement avec une instance AEM en cours d’exécution. En fonction des modifications, un navigateur local s’actualise automatiquement, accélérant ainsi le développement frontal. Il est également conçu pour fonctionner avec le traceur de journal Sling afin d’afficher automatiquement les erreurs côté serveur directement dans le terminal.
+À un niveau élevé, la variable `aemfed` est conçue pour prendre en compte les modifications apportées aux fichiers dans le module **ui.apps** et les synchroniser automatiquement directement avec une instance AEM en cours d’exécution. En fonction des modifications, un navigateur local s’actualise automatiquement, accélérant ainsi le développement front-end. Il est également conçu pour fonctionner avec le traceur de journal Sling afin d’afficher automatiquement les erreurs côté serveur directement dans le terminal.
 
 **aemfed** peut être un outil très utile si vous effectuez beaucoup de travail dans le module **ui.apps**, modifiez des scripts HTL et créez des composants personnalisés. [La documentation complète se trouve ici](https://github.com/abmaonline/aemfed).
 

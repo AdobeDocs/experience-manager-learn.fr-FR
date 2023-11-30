@@ -3,15 +3,16 @@ title: Workflows à démarrage automatique
 description: Les workflows à démarrage automatique étendent le traitement des ressources en appelant automatiquement un workflow personnalisé lors du chargement ou d’un nouveau traitement.
 feature: Asset Compute Microservices, Workflow
 version: Cloud Service
-kt: 4994
+jira: KT-4994
 thumbnail: 37323.jpg
 topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2023-05-14T00:00:00Z
+doc-type: Feature Video
 exl-id: 5e423f2c-90d2-474f-8bdc-fa15ae976f18
-source-git-commit: 929fd045b81652463034b54c557de04df3d4e64a
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 100%
 

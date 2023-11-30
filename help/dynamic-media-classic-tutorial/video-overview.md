@@ -2,16 +2,13 @@
 title: Vue d’ensemble vidéo
 description: Dynamic Media Classic s’accompagne d’une conversion automatique de la vidéo au moment du chargement, du streaming vidéo sur les ordinateurs de bureau et les appareils mobiles, ainsi que de visionneuses adaptatives optimisées pour la lecture en fonction de l’appareil et de la bande passante. En savoir plus sur la gestion des vidéos dans Dynamic Media Classic et obtenir une introduction sur les concepts et la terminologie vidéo. Apprenez ensuite comment charger et coder des vidéos, choisir des paramètres vidéo prédéfinis pour un chargement optimal, ajouter ou modifier un paramètre vidéo prédéfini, prévisualiser des vidéos dans une visionneuse, déployer des vidéos sur des sites web et mobiles, ajouter des sous-titres et des marqueurs de chapitre et publier des visionneuses de vidéos pour les utilisateurs et les utilisatrices de bureau et d’appareils mobiles.
 feature: Dynamic Media Classic, Video Profiles, Viewer Presets
-doc-type: tutorial
-topics: development, authoring, configuring, videos, video-profiles
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: dfbf316f-3922-4bc7-b3f3-2a5bbdeb7063
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '6118'
 ht-degree: 100%
 

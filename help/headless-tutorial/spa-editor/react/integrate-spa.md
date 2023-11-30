@@ -1,16 +1,17 @@
 ---
 title: Intégrer une SPA | Prise en main de l’éditeur de SPA d’AEM et de React
-description: Découvrez comment le code source d’une application web monopage (SPA) écrite dans React peut être intégré à un projet Adobe Experience Manager (AEM). Découvrez comment utiliser des outils front-end modernes, tels qu’un serveur de développement Webpack, pour développer rapidement la SPA par rapport à l’API de modèle JSON AEM.
+description: Découvrez comment le code source d’une application monopage écrite dans React peut être intégré à un projet Adobe Experience Manager (AEM). Découvrez comment utiliser des outils front-end modernes, tels qu’un serveur de développement Webpack, pour développer rapidement la SPA par rapport à l’API de modèle JSON AEM.
 feature: SPA Editor
 version: Cloud Service
-kt: 4853
+jira: KT-4853
 thumbnail: 4853-spa-react.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
-source-git-commit: c34c27955dbc084620ac4dd811ba4051ea83f447
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '1835'
 ht-degree: 100%
 
@@ -18,7 +19,7 @@ ht-degree: 100%
 
 # Intégrer une SPA {#developer-workflow}
 
-Découvrez comment le code source d’une application web monopage (SPA) écrite dans React peut être intégré à un projet Adobe Experience Manager (AEM). Découvrez comment utiliser des outils front-end modernes, tels qu’un serveur de développement Webpack, pour développer rapidement la SPA par rapport à l’API de modèle JSON AEM.
+Découvrez comment le code source d’une application monopage écrite dans React peut être intégré à un projet Adobe Experience Manager (AEM). Découvrez comment utiliser des outils front-end modernes, tels qu’un serveur de développement Webpack, pour développer rapidement la SPA par rapport à l’API de modèle JSON AEM.
 
 ## Objectif
 
@@ -98,7 +99,7 @@ Ensuite, examinez le module `ui.frontend` pour comprendre la SPA qui a été gé
 
 1. Inspectez le fichier `ui.frontend/clientlib.config.js`. Ce fichier de configuration est utilisé par [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) pour déterminer comment générer la bibliothèque cliente.
 
-1. Inspectez le fichier `ui.frontend/pom.xml`. Ce fichier transforme le dossier `ui.frontend` en un [module Maven](https://maven.apache.org/guides/mini/guide-multiple-modules.html). Le fichier `pom.xml` a été mis à jour pour utiliser le [plugin frontend-maven](https://github.com/eirslett/frontend-maven-plugin) pour **tester** et **créer** la SPA lors d’une création Maven.
+1. Inspectez le fichier `ui.frontend/pom.xml`. Ce fichier transforme le dossier `ui.frontend` en un [module Maven](https://maven.apache.org/guides/mini/guide-multiple-modules.html). Le fichier `pom.xml` a été mis à jour pour utiliser le plug-in [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) pour **tester** et **créer** l’application monopage lors d’une création Maven.
 
 1. Inspectez le fichier `index.js` sous `ui.frontend/src/index.js` :
 

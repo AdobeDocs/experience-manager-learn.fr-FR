@@ -2,17 +2,17 @@
 title: Custom Component (composant personnalisé)
 description: Couvre la création de bout en bout d’un composant de signature personnalisé qui affiche le contenu créé. Inclut le développement d’un modèle Sling pour encapsuler la logique commerciale afin de renseigner le composant de signature et le HTL correspondant pour effectuer le rendu du composant.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, APIs
 topic: Content Management, Development
 role: Developer
 level: Beginner
-kt: 4072
+jira: KT-4072
 mini-toc-levels: 1
 thumbnail: 30181.jpg
+doc-type: Tutorial
 exl-id: f54f3dc9-6ec6-4e55-9043-7a006840c905
-source-git-commit: 678ecb99b1e63b9db6c9668adee774f33b2eefab
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '4057'
 ht-degree: 100%
 

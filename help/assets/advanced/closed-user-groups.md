@@ -6,12 +6,13 @@ topic: Administration, Security
 feature: User and Groups
 role: Admin
 level: Intermediate
-kt: 649
+jira: KT-649
 thumbnail: 22155.jpg
 last-substantial-update: 2022-06-06T00:00:00Z
+doc-type: Feature Video
 exl-id: a2bf8a82-15ee-478c-b7c3-de8a991dfeb8
-source-git-commit: f37483f90f2a707c906e1e206795fdebb5f698e9
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 100%
 
@@ -39,7 +40,7 @@ Les groupes d’utilisateurs et utilisatrices fermés (CUG) et les listes de con
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | Utilisation prévue | Configurer et appliquer des autorisations pour le contenu sur l’instance AEM **actuelle**. | Configurer des politiques de CUG pour le contenu sur l’instance de **création** AEM. Appliquer de politiques de CUG pour le contenu sur la ou les instances de **publication** AEM. |
 | Niveaux d’autorisation | Définit les autorisations accordées/refusées pour les utilisateurs et utilisatrices/groupes à tous les niveaux : Lire, Modifier, Créer, Supprimer, Lire une liste de contrôle d’accès, Modifier une liste de contrôle d’accès, Répliquer. | Accorde l’accès en lecture à un ensemble d’utilisateurs et utilisatrices/de groupes. Refuse l’accès en lecture à *tous les autres* utilisateurs et utilisatrices/groupes. |
-| Publication | Les listes ACL ne sont *pas* publiées avec du contenu. | Les politiques de CUG *sont* publiées avec du contenu. |
+| Publication | Les ACL ne sont *pas* publiées avec du contenu. | Les politiques de CUG *sont* publiées avec du contenu. |
 
 ## Liens connexes {#supporting-links}
 

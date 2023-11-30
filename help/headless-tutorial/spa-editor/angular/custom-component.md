@@ -2,19 +2,16 @@
 title: Créer un composant personnalisé | Prise en main de l’éditeur de SPA d’AEM et d’Angular
 description: Découvrez comment créer un composant personnalisé à utiliser avec l’éditeur de SPA d’AEM. Découvrez comment développer des boîtes de dialogue de création et des modèles Sling pour étendre le modèle JSON afin de remplir un composant personnalisé.
 feature: SPA Editor
-doc-type: tutorial
-topics: development
 version: Cloud Service
-activity: develop
-audience: developer
-kt: 5831
+jira: KT-5831
 thumbnail: 5831-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '1471'
 ht-degree: 100%
 
@@ -237,7 +234,7 @@ Dans le contexte de l’éditeur de SPA, les modèles Sling exposent le contenu 
 
    >[!NOTE]
    >
-   >Vous pouvez visualiser ici le [CustomComponentImpl.java terminé](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
+   Vous pouvez visualiser ici le [CustomComponentImpl.java terminé](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
 ## Mettre à jour le composant Angular
 

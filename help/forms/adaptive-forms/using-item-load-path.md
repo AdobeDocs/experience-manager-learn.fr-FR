@@ -3,15 +3,15 @@ title: Utiliser le chemin de chargement des éléments pour remplir la liste dé
 description: Configurer et remplir une liste déroulante pour lire les valeurs d’un nœud CRX
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 10961
+jira: KT-10961
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2022-09-20T00:00:00Z
 thumbnail: item-load.jpg
 exl-id: 89c486c8-95c3-4cd4-bf8e-a1b3558f17d6
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 100%
 

@@ -10,10 +10,10 @@ version: 6.5
 topic: Development
 role: Developer
 level: Intermediate
-kt: 10208
+jira: KT-10208
 exl-id: 9053ee29-436a-439a-b592-c3fef9852ea4
-source-git-commit: db99787c48e49a9861de893e6cb7fbb7b31807b8
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 100%
 

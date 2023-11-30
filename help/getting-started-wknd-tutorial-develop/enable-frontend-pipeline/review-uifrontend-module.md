@@ -2,18 +2,18 @@
 title: Examinez le module ui.frontend du projet full-stack.
 description: Examinez le cycle de vie du développement, du déploiement et de la diffusion front-end d’un projet AEM Sites full-stack basé sur Maven.
 version: Cloud Service
-type: Tutorial
 feature: AEM Project Archetype, Cloud Manager, CI-CD Pipeline
 topic: Content Management, Development, Development, Architecture
 role: Developer, Architect, Admin
 level: Intermediate
-kt: 10689
+jira: KT-10689
 mini-toc-levels: 1
 index: y
 recommendations: noDisplay, noCatalog
+doc-type: Tutorial
 exl-id: 65e8d41e-002a-4d80-a050-5366e9ebbdea
-source-git-commit: da0b536e824f68d97618ac7bce9aec5829c3b48f
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 100%
 
@@ -127,7 +127,7 @@ Les ressources front-end sont diffusées aux navigateurs web via des chemins URI
     ...
 ```
 
-* Le __frontend-maven-plugin__ de `ui.frontend/pom.xml` orchestre le regroupement webpack et la génération de la bilbiothèque cliente pendant la création du projet AEM.
+* Le plug-in __frontend-maven-plugin__ de `ui.frontend/pom.xml` orchestre le regroupement webpack et la génération de la bibliothèque cliente pendant la création du projet AEM.
 
 `$ mvn clean install -PautoInstallSinglePackage`
 

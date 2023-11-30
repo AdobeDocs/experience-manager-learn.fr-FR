@@ -2,20 +2,18 @@
 title: Charger et déclencher un appel Target
 description: Découvrez comment charger, transférer des paramètres à une requête de page et déclencher un appel Target à partir de la page de votre site à l’aide d’une règle Launch. Les informations de page sont récupérées et transmises en tant que paramètres à l’aide de la couche de données de la clientèle Adobe qui vous permet de collecter et de stocker des données sur l’expérience des visiteurs et des visiteuses sur une page web, puis d’accéder facilement à ces données.
 feature: Core Components, Adobe Client Data Layer
-topics: integrations, administration, development
-audience: administrator, developer
-doc-type: technical video
 version: Cloud Service
-kt: 6133
+jira: KT-6133
 thumbnail: 41243.jpg
 topic: Integrations
 role: Developer
 level: Intermediate
 badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
-source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 100%
 

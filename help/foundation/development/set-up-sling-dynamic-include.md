@@ -4,16 +4,13 @@ description: Présentation vidéo de l’installation et de l’utilisation d’
 version: 6.4, 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
-topics: caching
-activity: develop
-audience: architect, developer
-doc-type: technical video
+doc-type: Technical Video
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 6c504710-be8f-4b44-bd8a-aaf480ae6d8a
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 100%
 

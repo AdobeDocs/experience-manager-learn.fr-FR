@@ -6,10 +6,10 @@ version: 6.5
 topic: Development
 role: Developer
 level: Beginner
-kt: 14196
+jira: KT-14196
 exl-id: a9ad8f4d-695e-4eb3-8d35-a399d1700f90
-source-git-commit: 7a0ec4797fda0436a8c20b84d1e36a8d16af21b9
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 100%
 

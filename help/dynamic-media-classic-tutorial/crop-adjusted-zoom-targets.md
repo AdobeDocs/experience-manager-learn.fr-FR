@@ -2,18 +2,15 @@
 title: Recadrage, images ajustées et cibles de zoom
 description: L’image principale de Dynamic Media Classic prend en charge la création de versions recadrées distinctes pour chaque image afin d’afficher les détails ou les nuanciers sans avoir à créer des versions recadrées distinctes pour chaque image. Découvrez comment recadrer des images dans Dynamic Media Classic et les enregistrer en tant que nouveau fichier maître ou nouvelle image virtuelle, enregistrer des images modifiées virtuelles et les utiliser à la place des ressources marketing, puis créer des cibles de zoom sur vos images pour afficher les détails mis en surbrillance.
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: a1d83c77-a9e4-4ed1-9b00-65fb002164c0
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '2653'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -126,7 +123,7 @@ _Vues ajustées pour l’image principale ASIAN_BR_MAIN_
 
 ## Cibles de zoom
 
-Les cibles de zoom se trouvent également dans le menu **Modifier** et la page **Détails** d’une image. Elles vous permettent de définir des « zones réactives » pour mettre en évidence des fonctionnalités de merchandising spécifiques d’une image de zoom. Au lieu de créer des images distinctes en recadrant une grande image principale, la visionneuse de zoom peut afficher les détails au-dessus de l’image, ainsi qu’un libellé court que vous créez.
+Les cibles de zoom se trouvent également dans le menu **Modifier** et la page **Détails** d’une image. Ils vous permettent de définir des &quot;zones réactives&quot; pour mettre en évidence des fonctionnalités de marchandisage spécifiques d’une image de zoom. Au lieu de créer des images distinctes en recadrant une grande image principale, la visionneuse de zoom peut afficher les détails au-dessus de l’image, ainsi qu’un libellé court que vous créez.
 
 ![image](assets/crop-adjusted-zoom-targets/arm-with-watch.jpg)
 
@@ -176,7 +173,7 @@ Lorsque vous chargez l’outil Cible de zoom, la taille d’affichage s’affich
 
 ![image](assets/crop-adjusted-zoom-targets/view-size.jpg)
 
-Vous pouvez voir que le paramètre prédéfini intégré a une taille de 900 x 550, ce qui signifie que la cible ne peut jamais être plus petite que cette taille plutôt grande. C’est probablement trop grand ; si vous avez une image de 2 000 pixels, vous ne pouvez afficher qu’une fonctionnalité d’au moins 900 pixels de large. Vous pouvez effectuer un zoom supplémentaire manuellement, mais vous ne pouvez pas vous rapprocher plus. La définition d’une taille d’affichage de 350x350 permet aux cibles d’effectuer un zoom assez rapproché ou d’être redimensionnées plus grand. Cependant, si vous souhaitez une image de zoom plus grande dans la visionneuse, vous devez créer un nouveau paramètre prédéfini, car le vôtre est limité à 350 pixels.
+Vous pouvez voir que le paramètre prédéfini intégré a une taille de 900 x 550, ce qui signifie que la cible ne peut jamais être plus petite que cette taille plutôt grande. C&#39;est probablement trop grand — si vous avez une image de 2 000 pixels, vous ne pouvez qu&#39;afficher une fonction d&#39;au moins 900 pixels. L’utilisateur peut effectuer un zoom supplémentaire manuellement, mais vous ne pouvez pas le rapprocher. La définition d’une taille d’affichage de 350x350 permet aux cibles d’effectuer un zoom assez rapproché ou d’être redimensionnées plus grand. Mais si vous souhaitez une image de zoom plus grande dans votre visionneuse, vous devez créer un nouveau paramètre prédéfini, car le vôtre est verrouillé à 350 pixels.
 
 ### Créer ou modifier un paramètre prédéfini de visionneuse prenant en charge les cibles de zoom
 

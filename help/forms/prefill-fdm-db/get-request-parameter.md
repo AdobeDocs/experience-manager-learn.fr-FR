@@ -3,14 +3,14 @@ title: Paramètre de requête GET
 description: Accéder au paramètre de requête d’un service de préremplissage de modèle de données de formulaire
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 5815
+jira: KT-5815
 thumbnail: kt-5815.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: a640539d-c67f-4224-ad81-dd0b62e18c79
-source-git-commit: bd41cd9d64253413e793479b5ba900c8e01c0eab
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 100%
 

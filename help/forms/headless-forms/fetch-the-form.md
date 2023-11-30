@@ -3,13 +3,13 @@ title: Récupérer le fichier JSON du formulaire adaptatif à incorporer
 description: Utiliser l’API pour récupérer le fichier JSON du formulaire adaptatif
 feature: Adaptive Forms
 version: 6.5
-kt: 13285
+jira: KT-13285
 topic: Development
 role: User
 level: Intermediate
 exl-id: ee534724-54ea-48e1-8c92-de1c56a928d4
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 100%
 

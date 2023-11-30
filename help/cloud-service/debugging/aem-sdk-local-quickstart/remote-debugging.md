@@ -1,15 +1,15 @@
 ---
 title: Déboguer à distance le SDK d’AEM
 description: Le fichier quickstart local du SDK AEM permet le débogage Java à distance à partir de votre IDE, ce qui vous permet de parcourir l’exécution du code en direct dans AEM pour comprendre le flux d’exécution exact.
-kt: 5251
+jira: KT-5251
 topic: Development
 feature: Developer Tools
 role: Developer
 level: Beginner, Intermediate
 thumbnail: 34338.jpeg
 exl-id: beac60c6-11ae-4d0c-a055-cd3d05aeb126
-source-git-commit: 45e7c58efd1d89537752fe7f890c0e80f7be7d67
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 100%
 

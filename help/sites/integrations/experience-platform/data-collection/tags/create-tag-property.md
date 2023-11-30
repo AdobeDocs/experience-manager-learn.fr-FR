@@ -1,12 +1,8 @@
 ---
 title: Créer une propriété de balise
 description: Découvrez comment créer une propriété de balise avec la configuration minimale à intégrer avec AEM. Les utilisateurs et utilisatrices découvrent l’interface utilisateur des balises et découvrent les extensions, les règles et les workflows de publication.
-topics: integrations
-audience: administrator
 solution: Experience Manager, Data Collection, Experience Platform
-doc-type: technical video
-activity: setup
-kt: 5980
+jira: KT-5980
 thumbnail: 38553.jpg
 topic: Integrations
 feature: Integrations
@@ -14,9 +10,10 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: d5de62ef-a2aa-4283-b500-e1f7cb5dec3b
-source-git-commit: b044c9982fc9309fb73509dd3117f5467903bd6a
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 100%
 

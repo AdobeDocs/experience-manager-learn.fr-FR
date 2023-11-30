@@ -1,12 +1,8 @@
 ---
 title: Ajouter l’extension Target à une propriété Launch
 description: Découvrez comment ajouter l’extension Adobe Target à une propriété Adobe Experience Platform Launch.
-topics: integrations, administration, development
-audience: administrator, developer
-doc-type: technical video
-activity: setup
 version: Cloud Service
-kt: 6131
+jira: KT-6131
 thumbnail: 41247.jpg
 topic: Integrations
 feature: Integrations
@@ -14,9 +10,10 @@ role: Developer
 level: Intermediate
 badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
+doc-type: Tutorial
 exl-id: aa48ffef-1105-4d0d-b4b4-12ac5d2eea23
-source-git-commit: 420dbb7bab84c0f3e79be0cc6b5cff0d5867f303
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 100%
 

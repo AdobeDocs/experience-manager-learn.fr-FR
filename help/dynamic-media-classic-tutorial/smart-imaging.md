@@ -2,16 +2,13 @@
 title: Imagerie dynamique
 description: L’imagerie dynamique de Dynamic Media Classic permet d’améliorer les performances de diffusion des images en optimisant automatiquement le format et la qualité de celles-ci en fonction des fonctionnalités du navigateur client. Pour ce faire, l’imagerie dynamique tire parti des fonctionnalités d’IA d’Adobe Sensei et utilise les paramètres d’image prédéfinis existants. Découvrez l’imagerie dynamique et apprenez à l’utiliser afin d’offrir de meilleures expériences à votre clientèle grâce à des chargements de page plus rapides.
 feature: Dynamic Media Classic
-doc-type: tutorial
-topics: development, authoring, configuring, renditions, images
-audience: all
-activity: use
 topic: Content Management
 role: User
 level: Beginner
+doc-type: Tutorial
 exl-id: 678671c3-af25-4da1-bc14-cbc4cc19be8d
-source-git-commit: 53af8fbc20ff21abf8778bbc165b5ec7fbdf8c8f
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 100%
 

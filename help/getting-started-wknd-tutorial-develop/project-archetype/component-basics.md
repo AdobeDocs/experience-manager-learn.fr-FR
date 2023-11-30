@@ -2,18 +2,18 @@
 title: Prise en main d’AEM Sites - Principes de base des composants
 description: Découvrez la technologie sous-jacente d’un composant d’Adobe Experience Manager (AEM) Sites à l’aide d’un simple exemple « Hello World ». Les rubriques sur HTL, les modèles Sling, les bibliothèques côté client et les boîtes de dialogue de création sont explorées.
 version: 6.5, Cloud Service
-type: Tutorial
 feature: Core Components, Developer Tools
 topic: Content Management, Development
 role: Developer
 level: Beginner
 mini-toc-levels: 1
-kt: 4081
+jira: KT-4081
 thumbnail: 30177.jpg
+doc-type: Tutorial
 exl-id: 7fd021ef-d221-4113-bda1-4908f3a8629f
 recommendations: noDisplay, noCatalog
-source-git-commit: 4c91ab68f6e31f0eb549689c7ecfd0ee009801d9
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 100%
 

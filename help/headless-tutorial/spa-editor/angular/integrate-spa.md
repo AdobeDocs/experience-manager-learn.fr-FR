@@ -2,19 +2,18 @@
 title: Intégrer une SPA | Prise en main de l’éditeur de SPA d’AEM et d’Angular
 description: Découvrez comment le code source d’une application monopage (SPA) écrite dans Angular peut être intégré à un projet Adobe Experience Manager (AEM). Découvrez comment utiliser des outils front-end modernes, tels que l’outil d’interface de ligne de commande d’Angular, pour développer rapidement la SPA par rapport à l’API de modèle JSON d’AEM.
 feature: SPA Editor
-topics: development
-doc-type: tutorial
 version: Cloud Service
 activity: develop
 audience: developer
-kt: 5310
+jira: KT-5310
 thumbnail: 5310-spa-angular.jpg
 topic: SPA
 role: Developer
 level: Beginner
+doc-type: Tutorial
 exl-id: e9386885-86de-4e43-933c-2f0a2c04a2f2
-source-git-commit: f0c6e6cd09c1a2944de667d9f14a2d87d3e2fe1d
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 100%
 
@@ -135,7 +134,7 @@ Ensuite, examinez le module `ui.frontend` pour comprendre la SPA qui a été gé
 
 6. Inspectez le fichier `ui.frontend/clientlib.config.js`. Ce fichier de configuration est utilisé par [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator#clientlibconfigjs) pour déterminer comment générer la bibliothèque cliente.
 
-7. Inspectez le fichier `ui.frontend/pom.xml`. Ce fichier transforme le dossier `ui.frontend` en un [module Maven](https://maven.apache.org/guides/mini/guide-multiple-modules.html). Le fichier `pom.xml` a été mis à jour pour utiliser le [plugin frontend-maven](https://github.com/eirslett/frontend-maven-plugin) pour **tester** et **créer** la SPA lors d’une création Maven.
+7. Inspectez le fichier `ui.frontend/pom.xml`. Ce fichier transforme le dossier `ui.frontend` en un [module Maven](https://maven.apache.org/guides/mini/guide-multiple-modules.html). Le fichier `pom.xml` a été mis à jour pour utiliser le plug-in [frontend-maven-plugin](https://github.com/eirslett/frontend-maven-plugin) pour **tester** et **créer** l’application monopage lors d’une création Maven.
 
 8. Inspectez le fichier `app.component.ts` sous `ui.frontend/src/app/app.component.ts` :
 

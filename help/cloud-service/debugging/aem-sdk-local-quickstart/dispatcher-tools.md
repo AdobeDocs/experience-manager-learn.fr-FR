@@ -2,13 +2,13 @@
 title: Déboguer les outils du Dispatcher
 description: Les outils du Dispatcher fournissent un environnement de serveur web Apache en conteneur qui peut être utilisé pour simuler localement le Dispatcher du service de publication AEM as a Cloud Service. Le débogage des journaux et du contenu du cache des outils du Dispatcher peut s’avérer essentiel pour s’assurer que l’application AEM de bout en bout et la prise en charge des configurations du cache et de sécurité sont correctes.
 feature: Dispatcher
-kt: 5918
+jira: KT-5918
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: f0adf7a6-c7c2-449a-9fa5-402c54b812e5
-source-git-commit: 4b47daf82e27f6bea4be30e3cdd132f497f4c609
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 100%
 

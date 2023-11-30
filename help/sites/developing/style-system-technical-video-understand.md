@@ -2,13 +2,14 @@
 title: Comprendre comment coder pour le système de style AEM
 description: Dans cette vidéo, nous examinerons l’anatomie du code CSS (ou LESS) et du code JavaScript utilisés pour appliquer un style au composant du titre principal d’Adobe Experience Manager à l’aide du système de style, ainsi que la manière dont ces styles sont appliqués au HTML et au DOM.
 feature: Style System
-version: 6.4, 6.5
+version: 6.4, 6.5, Cloud Service
 topic: Development
 role: Developer
 level: Intermediate, Experienced
+doc-type: Technical Video
 exl-id: 8fbc3819-3214-4c58-8629-a27eb6f0c545
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 100%
 

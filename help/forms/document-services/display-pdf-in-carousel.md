@@ -6,11 +6,11 @@ feature: Adaptive Forms
 topic: Development
 role: Developer
 level: Experienced
-kt: 10292
+jira: KT-10292
 exl-id: c1d248c3-8208-476e-b0ae-cab25575cd6a
 last-substantial-update: 2021-10-12T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 100%
 

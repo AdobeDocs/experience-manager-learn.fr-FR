@@ -3,14 +3,14 @@ title: Intégrer à  [!DNL ServiceNow]
 description: Créez et affichez tous les incidents à l’aide du modèle de données de formulaire.
 feature: Adaptive Forms
 version: 6.4,6.5
-kt: 9957
+jira: KT-9957
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 93a177b0-7852-44da-89cc-836d127be4e7
 last-substantial-update: 2022-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: ht
+source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
 
