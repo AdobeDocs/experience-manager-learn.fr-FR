@@ -8,11 +8,10 @@ role: Developer
 level: Beginner
 last-substantial-update: 2023-10-23T00:00:00Z
 kt: 14238
-exl-id: 77f93aad-0cab-4e52-b0fd-ae5af23a13d0
-source-git-commit: 7a0ec4797fda0436a8c20b84d1e36a8d16af21b9
-workflow-type: ht
-source-wordcount: '282'
-ht-degree: 100%
+source-git-commit: 23459de98420d2a489288df4a1b992c17d42972e
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 82%
 
 ---
 
@@ -47,18 +46,18 @@ public String getBlobData(String blobID) {
 
     } catch (ClientProtocolException e) {
 
-        log.error("Got Client Protocol Exception " + e.getMessage());
+        log.debug("Got Client Protocol Exception " + e.getMessage());
     } catch (IOException e) {
 
-        log.error("Got IOEXception " + e.getMessage());
+        log.debug("Got IOEXception " + e.getMessage());
     }
 
     return null;
 }
 ```
 
-Lorsqu’un formulaire adaptatif est rendu avec un paramètre `guid` dans l’URL, le composant de page personnalisé associé au modèle récupère et renseigne le formulaire adaptatif avec les données du stockage Azure.
-Le composant de page associé au modèle comporte le code JSP suivant.
+Lorsqu’un formulaire adaptatif est rendu avec un paramètre guid dans l’URL, le composant de page personnalisé associé au modèle récupère et renseigne le formulaire adaptatif avec les données du stockage Azure.
+Voici le code dans le fichier jsp du composant de page associé au modèle.
 
 ```java
 com.aemforms.saveandfetchfromazure.StoreAndFetchDataFromAzureStorage azureStorage = sling.getService(com.aemforms.saveandfetchfromazure.StoreAndFetchDataFromAzureStorage.class);
@@ -82,8 +81,11 @@ if(guid!=null&&!guid.isEmpty())
 
 * [Importez l’exemple de formulaire adaptatif.](./assets/bank-account-sample-form.zip)
 
-* Spécifiez les valeurs appropriées dans la configuration du portail Azure à l’aide de la console de configuration OSGi.
+* Spécifiez les valeurs appropriées dans la configuration du portail Azure à l’aide de la console de configuration OSGi..
+
 * [Prévisualiser et soumettre le formulaire BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 
 * Vérifiez que les données sont stockées dans le conteneur de stockage Azure de votre choix. Copiez l’ID d’objet blob.
+
 * [Prévisualisez le formulaire BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled&amp;guid=dba8ac0b-8be6-41f2-9929-54f627a649f6) et spécifiez l’ID d’objet blob comme paramètre guid dans l’URL pour que le formulaire soit prérempli avec les données provenant du stockage Azure.
+

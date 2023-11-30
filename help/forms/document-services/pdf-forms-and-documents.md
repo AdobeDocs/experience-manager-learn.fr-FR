@@ -8,12 +8,11 @@ version: 6.4, 6.5
 feature: PDF Generator
 kt: 7071
 topic: Development
-exl-id: ffa9d243-37e5-420c-91dc-86c73a824083
 last-substantial-update: 2020-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: ht
-source-wordcount: '1277'
-ht-degree: 100%
+source-git-commit: 23459de98420d2a489288df4a1b992c17d42972e
+workflow-type: tm+mt
+source-wordcount: '1309'
+ht-degree: 97%
 
 ---
 
@@ -59,6 +58,8 @@ La disposition des PDF XFA dynamiques peut se modifier au moment de l’exécu
 
 * Les formulaires dynamiques prennent en charge les scripts côté client qui modifient la disposition et la pagination du formulaire. Par exemple, le fichier Purchase Order.xdp s’agrandit et modifie sa pagination pour s’adapter à une quantité infinie de données si vous l’enregistrez en tant que formulaire dynamique.
 * Les formulaires dynamiques prennent en charge toutes les propriétés de votre formulaire au moment de l’exécution, tandis que les formulaires statiques ne prennent en charge qu’un sous-ensemble.
+
+* [Consultez ce document pour comprendre les différences entre les formulaires pdf statiques et dynamiques.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents.html#:~:text=Dynamic%20forms%20support%20all%20the,forms%20support%20only%20a%20subset)
 
 >[!NOTE]
 >
