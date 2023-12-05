@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: 54827c36a33437a8bf090eb10cde8ed656446d0b
+source-git-commit: bd33d076cf9caa7c900ef4fe8b1a17e27a791cae
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '491'
+ht-degree: 85%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 0%
 
 + [Présentation](overview.md)
 + Création de documents {#document-authoring}
+   + [Vue d’ensemble](document-authoring/overview.md)
    + [Configuration](document-authoring/set-up.md)
    + [Aperçu et publication](document-authoring/preview-and-publish.md)
    + [Structure du document](document-authoring/document-structure.md)
@@ -64,8 +65,9 @@ ht-degree: 0%
 + Fragments d’expérience {#experience-fragments}
    + [Utiliser des fragments d’expérience](experience-fragments/experience-fragments-feature-video-use.md)
    + [Créer des blocs](experience-fragments/building-blocks.md)
-   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}.
+   + [Fragments de contenu et fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
+   + [Vue d’ensemble](./edge-delivery-services/overview.md)
    + Développement{#developing}
       + [Conditions préalables requises](edge-delivery-services/developing/prerequisites.md)
       + [AEM standard](edge-delivery-services/developing/aem-boilerplate.md)
@@ -80,7 +82,7 @@ ht-degree: 0%
 + Développement {#developing}
    + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [Archétype de projet AEM](developing/aem-project-archetype.md)
-   + [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr){target=_blank}.
+   + [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr){target=_blank}
    + [Prise en main d’AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr){target=_blank}
    + [Prise en main de l’éditeur de SPA d’AEM et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=fr){target=_blank}
    + [Étendre les propriétés de page](developing/page-properties-technical-video-develop.md)
@@ -92,7 +94,7 @@ ht-degree: 0%
    + [Partager sur les médias sociaux](developing/social-media-sharing-technical-video-use.md)
    + [Personnaliser les icônes de composant](developing/component-icons-technical-video-develop.md)
 + Personnalisation {#personalization}
-   + [Intégration avec Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html?lang=fr){target=_blank}.
+   + [Intégration à Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html?lang=fr){target=_blank}
    + [Configurer les fragments d’expérience et Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Utiliser les fragments d’expérience avec Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configurer ContextHub](personalization/context-hub-technical-video-setup.md)
@@ -105,7 +107,7 @@ ht-degree: 0%
    + [Plans de site](./seo/sitemaps.md)
 + Applications monopages {#spa-editor}
    + [Utiliser l’éditeur de SPA](spa-editor/spa-editor-framework-feature-video-use.md)
-   + [Prise en main de l’éditeur de SPA d’AEM et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=fr){target=_blank}.
+   + [Prise en main de l’éditeur de SPA d’AEM et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=fr){target=_blank}
 + Gestion de plusieurs sites {#multi-site-management}
    + [Présentation de la copie de la langue](./multi-site-management/language-copy-overview.md)
    + [Live Copy et plan directeur](./multi-site-management/live-copy-and-blueprint.md)
