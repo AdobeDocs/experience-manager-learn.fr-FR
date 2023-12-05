@@ -2,10 +2,7 @@
 title: Informations d’identification de service
 description: Découvrez comment utiliser les informations d’identification de service utilisées pour aider les applications, systèmes et services externes à intéragir par programmation avec les services de création ou de publication via HTTP.
 version: Cloud Service
-topics: Development, Security
 feature: APIs
-activity: develop
-audience: developer
 jira: KT-6785
 thumbnail: 330519.jpg
 topic: Headless, Integrations
@@ -14,9 +11,10 @@ level: Intermediate, Experienced
 last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1037
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1967'
+source-wordcount: '1930'
 ht-degree: 100%
 
 ---

@@ -2,20 +2,18 @@
 title: Déboguer AEM avec l’explorateur de référentiels
 description: L’explorateur de référentiels est un outil puissant qui offre une visibilité sur l’entrepôt de données AEM sous-jacent, ce qui permet de déboguer facilement l’environnement d’AEM as a Cloud Service.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-10004
 thumbnail: 341464.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: 88af40fc-deff-4b92-84b1-88df2dbdd90b
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 328
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '253'
 ht-degree: 100%
 
 ---

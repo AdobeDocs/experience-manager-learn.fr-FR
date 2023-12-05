@@ -10,13 +10,14 @@ doc-type: Tutorial
 last-substantial-update: 2023-11-10T00:00:00Z
 jira: KT-13312
 thumbnail: KT-13312.jpeg
-source-git-commit: 4e93bc88b0ee5a805f2aaf1e66900f084ae01247
+exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
+duration: 377
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 2%
+source-wordcount: '1352'
+ht-degree: 0%
 
 ---
-
 
 # Analyse du taux d’accès du cache CDN
 
@@ -146,7 +147,7 @@ Exécutez ensuite le notebook Jupyter dans Adobe Experience Platform en procéda
 
 1. Connectez-vous au [Adobe Experience Cloud](https://experience.adobe.com/), dans la page d’accueil > **Accès rapide** > cliquez sur l’icône **Experience Platform**
 
-   ![Experience Platform](assets/cdn-logs-analysis/experience-platform.png){width="500" zoomable="yes"}
+   ![Experience Platform](assets/cdn-logs-analysis/experience-platform.png){width="500" zoomable="yes"}
 
 1. Dans la page d’accueil de Adobe Experience Platform > section Science des données >, cliquez sur le bouton **Notebooks** de menu. Pour démarrer l’environnement Jupyter Notebooks, cliquez sur le bouton **JupyterLab** .
 

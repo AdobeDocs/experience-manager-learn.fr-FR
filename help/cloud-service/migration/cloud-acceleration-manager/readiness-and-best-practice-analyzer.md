@@ -1,6 +1,6 @@
 ---
 title: Préparation aux bonnes pratiques et Best Practice Analyzer
-description: Découvrez comment Best Practice Analyzer peut vous aider à préparer votre application à être déplacée vers Experience Manager as a Cloud Service.
+description: Découvrez comment l’analyseur des bonnes pratiques peut vous aider à préparer votre application à être déplacée vers Experience Manager as a Cloud Service
 version: Cloud Service
 feature: Migration
 topic: Migration, Upgrade
@@ -9,10 +9,11 @@ level: Intermediate
 jira: KT-8659
 thumbnail: 336690.jpeg
 exl-id: b8905917-c385-4a79-99df-9a0fad98dc87
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 243
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '57'
-ht-degree: 100%
+ht-degree: 63%
 
 ---
 

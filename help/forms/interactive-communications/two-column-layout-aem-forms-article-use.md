@@ -1,22 +1,18 @@
 ---
 title: Créer des dispositions à deux colonnes pour les documents de canal d’impression
-seo-title: Creating two column layouts for print channel documents
 description: Créer des dispositions à deux colonnes pour les documents de canal d’impression
-seo-description: Create 2 column layouts for print channel document
 feature: Interactive Communication
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 416e3401-ba9f-4da3-8b07-2d39f9128571
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: ht
-source-wordcount: '223'
+duration: 64
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+workflow-type: tm+mt
+source-wordcount: '218'
 ht-degree: 100%
 
 ---

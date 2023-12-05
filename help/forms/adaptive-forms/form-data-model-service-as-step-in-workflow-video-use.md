@@ -9,9 +9,10 @@ role: Developer
 level: Intermediate
 exl-id: 0c77a853-fa71-46ac-8626-99bc69d6222d
 last-substantial-update: 2020-06-09T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: ht
-source-wordcount: '279'
+duration: 226
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+workflow-type: tm+mt
+source-wordcount: '261'
 ht-degree: 100%
 
 ---

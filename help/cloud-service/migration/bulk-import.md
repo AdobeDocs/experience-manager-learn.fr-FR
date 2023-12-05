@@ -3,10 +3,7 @@ title: Utiliser l’import en bloc avec AEM Assets
 description: L’outil d’import en bloc d’AEM as a Cloud Service permet aux administrateurs et administratrices d’importer en bloc des ressources à partir d’un espace de stockage (stockage Azure Blob ou Amazon S3) de manière sécurisée et efficace.
 version: Cloud Service
 doc-type: technical-video
-topics: Migration
 feature: Migration
-activity: develop
-audience: developer
 jira: KT-6729
 thumbnail: 329680.jpg
 topic: Migration
@@ -14,10 +11,11 @@ role: Architect, Developer
 level: Beginner
 last-substantial-update: 2022-10-05T00:00:00Z
 exl-id: 28644af8-babc-467d-afdb-8538728dc176
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 38
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 47%
+source-wordcount: '138'
+ht-degree: 50%
 
 ---
 

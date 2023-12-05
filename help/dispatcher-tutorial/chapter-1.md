@@ -1,5 +1,5 @@
 ---
-title: '« Chapitre 1 : concepts, modèles et antimodèles du Dispatcher »'
+title: 'Chapitre 1 : concepts, modèles et antimodèles du Dispatcher'
 description: Destinée aux développeurs et développeuses AEM responsables de la conception des composants, cette section succincte présente l’historique et les mécanismes du Dispatcher.
 feature: Dispatcher
 topic: Architecture
@@ -7,9 +7,10 @@ role: Architect
 level: Beginner
 doc-type: Tutorial
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 4820
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '17460'
+source-wordcount: '17384'
 ht-degree: 100%
 
 ---

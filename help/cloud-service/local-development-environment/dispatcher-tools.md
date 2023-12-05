@@ -10,10 +10,11 @@ jira: KT-4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 765
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 100%
+source-wordcount: '1622'
+ht-degree: 98%
 
 ---
 
@@ -364,17 +365,17 @@ Lorsque `bin/docker_run src host.docker.internal:4503 8080` renvoie le message _
 >[!TAB macOS]
 
 + Depuis le terminal, exécutez `ifconfig` et enregistrer l’adresse IP __inet__ de l’hôte, généralement l’appareil __en0__.
-+ Exécutez `docker_run` en utilisant l’adresse IP de l’hôte : `$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`
++ Exécutez `docker_run` en utilisant l’adresse IP de l’hôte : `$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`
 
 >[!TAB Windows]
 
 + Dans l’invite de commande, exécutez `ipconfig`, et enregistrez l’__adresse IPv4__ de l’hôte de l’ordinateur hôte.
-+ Ensuite, exécutez `docker_run` en utilisant cette adresse IP : `$ bin\docker_run src <HOST IP>:4503 8080`
++ Ensuite, exécutez `docker_run` en utilisant cette adresse IP : `$ bin\docker_run src <HOST IP>:4503 8080`
 
 >[!TAB Linux]
 
 + Depuis le terminal, exécutez `ifconfig` et enregistrer l’adresse IP __inet__ de l’hôte, généralement l’appareil __en0__.
-+ Exécutez `docker_run` en utilisant l’adresse IP de l’hôte : `$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`
++ Exécutez `docker_run` en utilisant l’adresse IP de l’hôte : `$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`
 
 >[!ENDTABS]
 

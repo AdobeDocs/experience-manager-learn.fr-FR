@@ -2,18 +2,17 @@
 title: Vérifier les données de formulaire avant envoi
 description: Tutoriel sur la création d’un composant de résumé pour la révision des données de formulaire avant envoi.
 feature: Adaptive Forms
-topics: development
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2023-01-22T00:00:00Z
 exl-id: fa971850-0e89-4f74-a747-ec99051be2f1
-source-git-commit: 48d9ddb870c0e4cd001ae49a3f0e9c547407c1e8
-workflow-type: ht
-source-wordcount: '91'
+duration: 31
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+workflow-type: tm+mt
+source-wordcount: '92'
 ht-degree: 100%
 
 ---

@@ -2,19 +2,17 @@
 title: CRXDE Lite
 description: CRXDE Lite est un outil classique mais puissant pour déboguer les environnements de développement AEM as a Cloud Service. CRXDE Lite offre une suite de fonctionnalités qui facilitent le débogage en inspectant toutes les ressources et propriétés, en manipulant les parties modifiables du JCR et en recherchant les autorisations.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 kt: KT-5481
 thumbnail: kt-5481.jpg
 topic: Development
 role: Developer
 level: Beginner
 exl-id: f3f2c89f-6ec1-49d3-91c7-10a42b897780
-source-git-commit: ad203d7a34f5eff7de4768131c9b4ebae261da93
-workflow-type: ht
+duration: 168
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 100%
 

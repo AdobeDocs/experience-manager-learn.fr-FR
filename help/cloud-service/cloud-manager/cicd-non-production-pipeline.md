@@ -1,10 +1,7 @@
 ---
 title: Utiliser Adobe Cloud Manager - Pipeline hors production CI/CD
 description: 'Les pipelines CI/CD hors production sont divisés en deux catégories : les pipelines de qualité du code et les pipelines de déploiement. Les pipelines de qualité du code canalisent tout le code d’une branche Git pour génération et évaluation par rapport à l’analyse de la qualité du code de Cloud Manager. Les pipelines de déploiement prennent en charge le déploiement automatisé du code du référentiel Git vers tout environnement hors production, c''est-à-dire tout environnement AEM provisionné qui n''est ni en évaluation ni en production.'
-topics: Administration
-audience: administrator
 doc-type: feature video
-activity: use
 version: Cloud Service
 jira: KT-6873
 thumbnail: 26316.jpg
@@ -13,9 +10,10 @@ feature: Cloud Manager, CI-CD Pipeline
 role: Architect, Developer, Admin
 level: Beginner
 exl-id: b28805d3-bb2d-4f66-8daa-9a8eb7ecf0a1
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 227
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '213'
 ht-degree: 100%
 
 ---

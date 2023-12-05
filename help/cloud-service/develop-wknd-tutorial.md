@@ -6,9 +6,10 @@ topic: Development
 role: Developer
 level: Beginner
 thumbnail: 30476.jpeg
-source-git-commit: 0737cd2410b48dbaa9b6dfaaa27b854d44536f15
-workflow-type: ht
-source-wordcount: '300'
+duration: 433
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+workflow-type: tm+mt
+source-wordcount: '290'
 ht-degree: 100%
 
 ---

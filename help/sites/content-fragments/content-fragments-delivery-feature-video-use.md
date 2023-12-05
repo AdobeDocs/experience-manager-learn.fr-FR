@@ -1,8 +1,6 @@
 ---
 title: Diffuser des fragments de contenu dans AEM
-seo-title: Delivering Content Fragments in Adobe Experience Manager
 description: Les fragments de contenu, indépendamment de la disposition, peuvent être utilisés directement dans AEM Sites avec les composants principaux ou peuvent être diffusés de façon découplée sur les canaux en aval.
-seo-description: Content Fragments, independent of layout, can be used directly in AEM Sites with Core Components or can be delivered in a headless manner to downstream channels.
 feature: Content Fragments
 version: 6.4, 6.5
 topic: Content Management
@@ -10,9 +8,10 @@ role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 525cd30c-05bf-4f17-b61b-90609ce757ea
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 913
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '520'
 ht-degree: 100%
 
 ---

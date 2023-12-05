@@ -9,10 +9,11 @@ level: Beginner
 thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 286
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 46%
+source-wordcount: '988'
+ht-degree: 39%
 
 ---
 
@@ -28,7 +29,7 @@ Ce document vous aide à comprendre comment AEM traite les URL de redirection ve
 
 ## Que sont les URL de redirection ?
 
-Lorsque le contenu se trouve dans une structure de dossiers logique, il ne réside pas toujours dans une URL facile à référencer. Les URL de redirection sont l’équivalent de raccourcis. Des URL plus courtes ou uniques qui référencent l’emplacement du contenu réel.
+Lorsque le contenu se trouve dans une structure de dossiers logique, il ne réside pas toujours dans une URL facile à référencer. Les URL Vanity sont comme des raccourcis. Des URL plus courtes ou uniques qui référencent l’emplacement du contenu réel.
 
 Exemple : `/aboutus` redirigé sur `/content/we-retail/us/en/about-us.html`.
 
@@ -167,7 +168,7 @@ Utilisez les deux méthodes, mais voici des conseils et critères à prendre en
 
 <div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
 
-Si vous souhaitez utiliser la fonction AEM de redirection et éviter l’espace de noms, vous pouvez créer une convention de nommage. Utiliser des URL de redirection imbriquées comme `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
+Si vous souhaitez utiliser la fonction AEM Vanity et éviter l’espace de noms, vous pouvez créer une convention d’affectation de nom. Utiliser des URL de redirection imbriquées comme `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
 </div>
 
 [Suivant -> Connexion courante](./common-logs.md)

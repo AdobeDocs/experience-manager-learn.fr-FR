@@ -2,18 +2,16 @@
 title: Créer votre premier lot OSGi avec AEM Forms
 description: Créer votre premier lot OSGi à l’aide de Maven et Eclipse
 feature: Adaptive Forms
-topics: development
-audience: developer
 doc-type: article
-activity: setup
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Beginner
 last-substantial-update: 2021-06-09T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: ht
-source-wordcount: '820'
+duration: 240
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+workflow-type: tm+mt
+source-wordcount: '816'
 ht-degree: 100%
 
 ---

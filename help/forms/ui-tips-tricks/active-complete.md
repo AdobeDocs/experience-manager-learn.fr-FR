@@ -10,9 +10,10 @@ level: Beginner
 jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 111
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '328'
 ht-degree: 100%
 
 ---
@@ -58,7 +59,7 @@ Assurez-vous d’être à l’état actif et appliquez un style aux propriétés
 | Texte | Épaisseur de la police | Gras |
 | Texte | Couleur | #FFF |
 | Texte | Hauteur de ligne | 3 |
-| Texte | Texte Aligner | Gauche |
+| Texte | Alignement du texte | Gauche |
 | Arrière-plan | Couleur | #056dae |
 
 Personnalisez l’image d’arrière-plan comme illustré dans la copie d’écran ci-dessous.
@@ -79,7 +80,7 @@ Assurez-vous d’être à l’état visité et personnalisez les propriétés su
 | Texte | Épaisseur de la police | Gras |
 | Texte | Couleur | #FFF |
 | Texte | Hauteur de ligne | 3 |
-| Texte | Texte Aligner | Gauche |
+| Texte | Alignement du texte | Gauche |
 | Arrière-plan | Couleur | #056dae |
 
 Personnalisez l’image d’arrière-plan comme illustré dans la copie d’écran ci-dessous.

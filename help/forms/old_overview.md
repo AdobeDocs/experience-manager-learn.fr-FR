@@ -4,9 +4,10 @@ description: Ensemble de ressources AEM Forms pour les développeurs et dévelo
 topic: Development
 role: Developer
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 81b96f59450448a3d5b17a61aa025acd60d0cce1
-workflow-type: ht
-source-wordcount: '516'
+duration: 152
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+workflow-type: tm+mt
+source-wordcount: '405'
 ht-degree: 100%
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: « Chapitre 3 - Analyse avancée de la mise en cache dans le Dispatcher »
+title: Chapitre 3 - Rubriques de mise en cache du Dispatcher avancé
 description: Il s’agit de la partie 3 d’une série en trois parties sur la mise en cache dans AEM. Les deux premières parties portaient sur la mise en cache HTTP simple dans le Dispatcher et leurs limites. Cette partie présente quelques idées sur la manière de surmonter ces limites.
 feature: Dispatcher
 topic: Architecture
@@ -7,10 +7,11 @@ role: Architect
 level: Intermediate
 doc-type: Tutorial
 exl-id: 7c7df08d-02a7-4548-96c0-98e27bcbc49b
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 1674
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '6187'
-ht-degree: 100%
+source-wordcount: '6172'
+ht-degree: 99%
 
 ---
 

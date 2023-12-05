@@ -1,21 +1,17 @@
 ---
 title: Déclencher un workflow AEM lors de l’introduction de l’envoi de formulaire HTM5
-seo-title: Trigger AEM Workflow on HTML5 Form Submission
 description: Continuez à remplir le formulaire mobile en mode hors ligne et soumettez-le pour déclencher le workflow AEM.
-seo-description: Continue filling mobile form in offline mode and submit mobile form to trigger AEM workflow
 feature: Mobile Forms
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 88295af5-3022-4462-9194-46d8c979bc8b
 last-substantial-update: 2021-04-07T00:00:00Z
-source-git-commit: b3e9251bdb18a008be95c1fa9e5c79252a74fc98
-workflow-type: ht
+duration: 360
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 100%
 

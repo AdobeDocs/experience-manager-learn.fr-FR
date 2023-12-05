@@ -1,21 +1,17 @@
 ---
 title: AEM Forms avec schéma et données JSON [Partie 1]
-seo-title: AEM Forms with JSON Schema and Data[Part1]
 description: Il s’agit d’un tutoriel en plusieurs parties consacré à la création de formulaires adaptatifs avec les schémas JSON et à l’interrogation des données envoyées.
-seo-description: Multi-Part tutorial to walk you through the steps involved in creating Adaptive Form with JSON schema and querying the submitted data.
 feature: Adaptive Forms
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: c588bdca-b8a8-4de2-97e0-ba08b195699f
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
-workflow-type: ht
-source-wordcount: '265'
+duration: 70
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+workflow-type: tm+mt
+source-wordcount: '258'
 ht-degree: 100%
 
 ---

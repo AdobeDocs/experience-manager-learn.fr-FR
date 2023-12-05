@@ -1,6 +1,5 @@
 ---
 title: Développer avec le système de style
-seo-title: Developing with the Style System
 description: Découvrez comment mettre en œuvre des styles individuels et réutiliser les composants principaux à l’aide du système de style d’Experience Manager. Ce tutoriel détaille le développement du système de style pour étendre les composants principaux avec des configurations CSS et de stratégie avancées spécifiques à la marque de l’éditeur de modèles.
 version: 6.5, Cloud Service
 feature: Core Components, Style System
@@ -13,9 +12,10 @@ thumbnail: 30386.jpg
 doc-type: Tutorial
 exl-id: 5b490132-cddc-4024-92f1-e5c549afd6f1
 recommendations: noDisplay, noCatalog
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 494
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1555'
 ht-degree: 100%
 
 ---

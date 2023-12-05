@@ -2,11 +2,8 @@
 title: Extensibilité des microservices d’Asset Compute pour AEM as a Cloud Service
 description: Ce tutoriel décrit comment créer un programme de travail simple d’Asset Compute qui crée un rendu de ressource en réduisant la ressource originale à un cercle et en appliquant un contraste et une luminosité configurables. Ce tutoriel utilise le programme de travail lui-même pour explorer la création, le développement et le déploiement d’un programme de travail personnalisé d’Asset Compute à utiliser avec AEM as a Cloud Service.
 feature: Asset Compute Microservices
-topics: renditions, development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5802
 thumbnail: KT-5802.jpg
 topic: Integrations, Development
@@ -14,9 +11,10 @@ role: Developer
 level: Intermediate, Experienced
 last-substantial-update: 2022-08-15T00:00:00Z
 exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 340
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '986'
 ht-degree: 100%
 
 ---

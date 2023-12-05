@@ -2,19 +2,17 @@
 title: Utiliser l’API Batch pour générer des documents de communication interactive
 description: Exemples de ressources pour générer des documents de canal d’impression à l’aide de l’API Batch
 feature: Interactive Communication
-topics: development
-audience: developer
 doc-type: article
-activity: implement
 version: 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 2cdf37e6-42ad-469a-a6e4-a693ab2ca908
 last-substantial-update: 2019-07-07T00:00:00Z
-source-git-commit: 7a2bb61ca1dea1013eef088a629b17718dbbf381
-workflow-type: ht
-source-wordcount: '414'
+duration: 109
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+workflow-type: tm+mt
+source-wordcount: '371'
 ht-degree: 100%
 
 ---

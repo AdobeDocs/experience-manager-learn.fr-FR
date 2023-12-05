@@ -2,15 +2,15 @@
 title: Définir votre structure de dossiers et votre convention de nommage des fichiers
 description: Le nommage des fichiers est peut-être la décision la plus importante que vous prendrez lors de l’implémentation de Dynamic Media Classic. La structure de dossiers est également importante. Découvrez pourquoi ces éléments sont si importants et les approches possibles pour la structure de dossiers et les noms de fichiers.
 feature: Dynamic Media Classic
-activity: develop
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 330
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1202'
 ht-degree: 100%
 
 ---

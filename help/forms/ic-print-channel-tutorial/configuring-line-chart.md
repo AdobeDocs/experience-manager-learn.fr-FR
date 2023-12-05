@@ -1,14 +1,8 @@
 ---
 title: Configurer un graphique linéaire pour votre premier document de communication interactive
-seo-title: Configuring line chart for your first interactive communication document
 description: Il s’agit de la partie 8 du tutoriel en plusieurs étapes sur la création de votre premier document de communication interactive pour le canal d’impression. Dans cette partie, nous allons ajouter un graphique linéaire pour afficher le solde du compte.
-seo-description: This is part 8 of multistep tutorial for creating your first interactive communications document for the print channel. In this part, we will add a Line chart to display the account balance.
-uuid: a4394874-a080-4b6a-a3eb-ffc71504919d
 feature: Interactive Communication
-topics: development
-audience: developer
-doc-type: tutorial
-activity: implement
+doc-type: Tutorial
 version: 6.4,6.5
 discoiquuid: 9110e5c6-50ee-4c3e-a779-b680ff49ef23
 jira: KT-5993
@@ -17,9 +11,10 @@ topic: Development
 role: Developer
 level: Beginner
 exl-id: 86a955e2-2463-4973-8d3c-4c694db8c787
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 154
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '132'
 ht-degree: 100%
 
 ---

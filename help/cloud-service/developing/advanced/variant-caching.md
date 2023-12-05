@@ -5,9 +5,10 @@ role: Architect, Developer
 topic: Development
 feature: CDN Cache, Dispatcher
 exl-id: fdf62074-1a16-437b-b5dc-5fb4e11f1355
-source-git-commit: b069d958bbcc40c0079e87d342db6c5e53055bc7
-workflow-type: ht
-source-wordcount: '559'
+duration: 213
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+workflow-type: tm+mt
+source-wordcount: '551'
 ht-degree: 100%
 
 ---

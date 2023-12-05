@@ -7,10 +7,11 @@ role: User
 level: Beginner
 doc-type: Tutorial
 exl-id: 04aacd81-bbb2-4742-9306-f0eabc665a41
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 700
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
-source-wordcount: '2703'
-ht-degree: 100%
+source-wordcount: '2658'
+ht-degree: 99%
 
 ---
 
@@ -57,7 +58,7 @@ Cette option est la règle la plus stricte pour le remplacement. Elle implique q
 - **Remplacement dans le dossier actuel, même nom de ressource de base, quelle que soit l’extension**.
 Nécessite que vous chargiez l’image de remplacement dans le même dossier que l’original, mais l’extension du nom de fichier peut être différente de celle de l’original. Par exemple, chaise.tif remplace chaise.jpg.
 
-- **Remplacer dans un dossier, même nom/extension de ressource de base**.
+- **Remplacer dans un dossier, même nom/même extension de fichier de base**.
 Nécessite que l’image de remplacement ait la même extension que l’image originale (par exemple, chaise.jpg doit remplacer chaise.jpg, et non chaise.tif ). Vous pouvez toutefois charger l’image de remplacement dans un dossier différent de celui de l’image d’origine. L’image mise à jour se trouve dans le nouveau dossier. Le fichier n’est plus accessible à son emplacement d’origine.
 
 - **Remplacement dans un dossier, même nom de ressource de base, quelle que soit l’extension**.

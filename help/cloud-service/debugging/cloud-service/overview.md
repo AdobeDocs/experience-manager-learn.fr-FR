@@ -2,17 +2,15 @@
 title: Débogage d’AEM as a Cloud Service
 description: sur une infrastructure cloud en libre-service et évolutive, ce qui nécessite que les développeurs et développeuses AEM puissent comprendre et déboguer divers aspects d’AEM as a Cloud Service, depuis la version jusqu’au déploiement, en passant par l’obtention de détails sur l’exécution des applications AEM.
 feature: Developer Tools
-topics: development
 version: Cloud Service
-doc-type: tutorial
-activity: develop
-audience: developer
+doc-type: Tutorial
 jira: KT-5346
 topic: Development
 role: Developer
 level: Beginner, Intermediate
 exl-id: 8092fbb4-234f-472e-a405-8a45734b7c65
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+duration: 83
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 100%

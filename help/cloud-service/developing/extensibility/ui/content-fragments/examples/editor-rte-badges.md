@@ -11,16 +11,17 @@ thumbnail: KT-13466.jpg
 doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
-source-git-commit: 097ff8fd0f3a28f3e21c10e03f6dc28695cf9caf
-workflow-type: ht
-source-wordcount: '781'
-ht-degree: 100%
+duration: 664
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+workflow-type: tm+mt
+source-wordcount: '729'
+ht-degree: 97%
 
 ---
 
 # Ajouter des badges à l’éditeur de texte enrichi (RTE)
 
-Découvrez comment ajouter des badges à l’éditeur de texte enrichi (RTE) dans l’éditeur de fragment de contenu AEM..
+Découvrez comment ajouter des badges à l’éditeur de texte enrichi (RTE) dans l’éditeur de fragment de contenu AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 

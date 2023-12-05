@@ -5,9 +5,10 @@ topic: Development
 role: Developer
 sub-product: Experience Manager Forms
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
-source-git-commit: 96ff44c4b9806205682ab305d391614f92bb2536
-workflow-type: ht
-source-wordcount: '297'
+duration: 98
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+workflow-type: tm+mt
+source-wordcount: '277'
 ht-degree: 100%
 
 ---

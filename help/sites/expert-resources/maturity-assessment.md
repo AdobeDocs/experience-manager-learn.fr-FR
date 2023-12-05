@@ -1,15 +1,15 @@
 ---
 title: Évaluation de la maturité d’AEM Sites
 description: Cette liste de contrôle présente un aperçu des questions clés auxquelles vous et votre équipe devez répondre lors de l’évaluation de la maturité de votre instance AEM Sites.
-audience: author, marketer, developer
 role: Admin
 level: Intermediate
 topic: Administration
 feature: Learn From Your Peers
 exl-id: 22164a0e-7239-43f4-8356-c12f68133255
-source-git-commit: eecc275e38390b9330464c8ac0750efa2c702c82
-workflow-type: ht
-source-wordcount: '332'
+duration: 83
+source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+workflow-type: tm+mt
+source-wordcount: '308'
 ht-degree: 100%
 
 ---
