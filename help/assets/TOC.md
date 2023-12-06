@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: f6491d04f7f23da75366904a7965103465d33f87
-workflow-type: ht
-source-wordcount: '403'
-ht-degree: 100%
+source-git-commit: e5c50ffb379f497ed72efd63528af4f874b18ade
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 97%
 
 ---
 
@@ -84,8 +84,9 @@ ht-degree: 100%
       + [Kits de ressources Asset Share Commons](./sharing/asset-share/asset-share-commons-asset-kits.md)
    + [Ressources connectées](./sharing/connected-assets.md)
 
-+ Intégrer aux workflows créatifs{#creative-workflows}
++ Processus créatifs{#creative-workflows}
    + [Adobe Express](./creative-workflows/adobe-express.md)
+   + [Module complémentaire Adobe Express AEM Assets](./creative-workflows/adobe-express-aem-assets-add-on.md)
    + [Application de bureau AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
@@ -173,4 +174,4 @@ ht-degree: 100%
 + Déploiement{#deployment}
    + [Multitenant et développement simultané](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [Assets Essentials.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=fr){target=_blank}
++ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=fr){target=_blank}

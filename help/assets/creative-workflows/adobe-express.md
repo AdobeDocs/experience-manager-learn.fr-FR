@@ -1,26 +1,28 @@
 ---
-title: Intégration d’Adobe Express
-description: Découvrez comment optimiser les chaînes d’approvisionnement de contenu grâce à AEM Assets et Adobe Express et améliorez la productivité et l’accessibilité pour toutes les personnes membres de l’équipe.
+title: AEM Assets et Adobe Express
+description: Découvrez comment créer et modifier du contenu sans effort dans AEM Assets à l’aide d’Adobe Express.
 version: Cloud Service
 feature: Integrations
-topic: Integrations, Content Management
-role: User
-level: Intermediate
-last-substantial-update: 2023-10-26T00:00:00Z
-jira: KT-14192
-thumbnail: 3425193.jpeg
+topic: Integrations, Content Management, Content Supply Chain
+role: Admin, User
+level: Beginner
 doc-type: Feature Video
-exl-id: 4da1b1ff-5472-4282-a998-ae344e7b8309
-duration: 610
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 500
+last-substantial-update: 2023-12-06T00:00:00Z
+jira: KT-14645
+thumbnail: 3425972.jpeg
+source-git-commit: e5c50ffb379f497ed72efd63528af4f874b18ade
 workflow-type: tm+mt
-source-wordcount: '49'
-ht-degree: 100%
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
 
-# Intégration d’Adobe Express
 
-Découvrez comment optimiser les chaînes d’approvisionnement de contenu grâce à AEM Assets et [Adobe Express](https://www.adobe.com/fr/express/), afin d’obtenir des gains de productivité et d’accessibilité pour toutes les personnes membres de l’équipe.
+# AEM Assets et Adobe Express
 
->[!VIDEO](https://video.tv.adobe.com/v/3425193/?learn=on)
+Découvrez comment créer et modifier du contenu sans effort dans Adobe Experience Manager Assets à l’aide d’Adobe Express. Cette vidéo vous guide tout au long des workflows de contenu, en présentant à la fois la modification de ressources existantes et la création de nouvelles ressources, le tout simplifié pour plus d’efficacité et de convivialité.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3425972/?learn=on)
+
+Découvrez comment configurer le [Module complémentaire AEM Assets pour Adobe Express](./adobe-express-aem-assets-add-on.md) pour accéder facilement à AEM Assets à partir d’Adobe Express.
