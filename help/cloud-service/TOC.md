@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: b770fc33ee0752911135d1a94144406bad8f295b
+source-git-commit: 43c021b051806380b3211f2d7357555622217b91
 workflow-type: tm+mt
-source-wordcount: '1084'
-ht-degree: 97%
+source-wordcount: '1072'
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 97%
       + [Experience Manager - Modèles et archétypes de gouvernance et de dotation en personnel](./introduction/experience-manager-governance-and-staffing-models.md)
       + [Comment générer la vitesse du contenu avec Adobe Experience Manager](./introduction/drive-content-velocity-for-sites.md)
       + [Accélérer la vitesse du contenu avec les systèmes de style AEM](./introduction/accelerate-content-velocity-aem.md)
-+ Intégrations Experience Cloud{#integrations}
++ Intégrations Experience Cloud{#integrations}
    + [Intégrations](./integrations/experience-cloud.md)
    + [Adobe Target](./integrations/target.md)
 + Technologie sous-jacente {#underlying-technology}
@@ -128,12 +128,15 @@ ht-degree: 97%
       + Risques{#risks}
          + [Avertissements transversaux](./debugging/cloud-service/risks/traversals.md)
 + Diffusion de contenu{#content-delivery}
-   + [Redirections d’URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=fr){target=_blank}.
+   + [Redirections d’URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=fr){target=_blank}
 + Mise en cache{#caching}
    + [Vue d’ensemble](./caching/overview.md)
    + [Service de publication AEM](./caching/publish.md)
    + [Service de création AEM](./caching/author.md)
    + [Analyse du ratio d’accès au cache du réseau CDN](./caching/cdn-cache-hit-ratio-analysis.md)
+   + Procédures{#how-to}
+      + [Activation de la mise en cache](./caching/how-to/enable-caching.md)
+      + [Désactiver la mise en cache](./caching/how-to/disable-caching.md)
 + Accéder à AEM{#accessing}
    + [Présentation](./accessing/overview.md)
    + [Utilisateurs Adobe IMS](./accessing/adobe-ims-users.md)
@@ -195,7 +198,7 @@ ht-degree: 97%
       + [Outil de migration des workflows de ressources](./migration/cloud-acceleration-manager/asset-workflow-migration-tool.md)
       + [Naviguer dans Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Utiliser Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
-+ [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=fr){target=_blank}.
++ [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=fr){target=_blank}
 + Forms{#forms}
    + Développer pour Forms as a Cloud Service{#developing-for-cloud-service}
       + [1 - Prise en main](./forms/developing-for-cloud-service/getting-started.md)
@@ -330,7 +333,7 @@ ht-degree: 97%
    + [Résolution des problèmes](./asset-compute/troubleshooting.md)
 
 + Tutoriels en plusieurs étapes{#multi-step-tutorials}
-   + [Développement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr){target=_blank}.
+   + [Développement d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr){target=_blank}
    + [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr){target=_blank}
    + [Éditeur de SPA (React)](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=fr){target=_blank}
    + [AEM Sites et Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=fr){target=_blank}
