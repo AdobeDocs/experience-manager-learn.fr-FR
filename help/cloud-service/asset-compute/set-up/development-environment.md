@@ -11,9 +11,9 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 162e10e5-fcb0-4f16-b6d1-b951826209d9
 duration: 140
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 6995b0221e381979aca0aeb540fe04d71b16eaae
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '459'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Vous trouverez ci-dessous des instructions de configuration abrégées. Ces outi
 1. Installez les modules npm requis et les plug-ins CLI d’Adobe I/O à partir de la ligne de commande :
 
    ```
-   $ npm i -g @adobe/aio-cli@7.1.0 @openwhisk/wskdebug ngrok --unsafe-perm=true \
+   $ npm i -g @adobe/aio-cli @openwhisk/wskdebug ngrok --unsafe-perm=true \
    && aio plugins:install @adobe/aio-cli-plugin-asset-compute
    ```
 
@@ -76,11 +76,8 @@ Les programmes de travail Assets Compute sont basés sur [Node.js](https://node
 [Installez l’interface de ligne de commande d’Adobe I/O](../../local-development-environment/development-tools.md#aio-cli), ou __aio__, qui est un module npm de ligne de commande (CLI) et facilite l’utilisation et l’interaction avec les technologies d’Adobe I/O. Il permet de générer et de développer localement des programmes de travail Assets Compute personnalisés.
 
 ```
-$ npm install -g @adobe/aio-cli@7.1.0
+$ npm install -g @adobe/aio-cli
 ```
-
-_L’interface de ligne de commande d’Adobe I/O version 7.1.0 est requise. Les versions ultérieures de l’interface de ligne de commande d’Adobe I/O ne sont pas prises en charge pour le moment._
-
 
 ## Installer le plug-in Asset Compute d’interface de ligne de commande d’Adobe I/O{#aio-asset-compute}
 
