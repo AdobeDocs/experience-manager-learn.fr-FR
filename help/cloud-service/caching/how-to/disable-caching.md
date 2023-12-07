@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2023-11-30T00:00:00Z
 jira: KT-14224
 thumbnail: KT-14224.jpeg
-source-git-commit: 43c021b051806380b3211f2d7357555622217b91
+exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
+source-git-commit: 783f84c821ee9f94c2867c143973bf8596ca6437
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 5%
+source-wordcount: '400'
+ht-degree: 6%
 
 ---
-
 
 # Comment désactiver la mise en cache du réseau CDN
 
@@ -48,16 +48,16 @@ Examinons chacune de ces options.
 
 Cette option est l’approche recommandée pour désactiver la mise en cache, mais elle n’est disponible que pour AEM Publier. Pour mettre à jour les en-têtes de cache, utilisez le `mod_headers` module et `<LocationMatch>` dans le fichier vhost du serveur HTTP Apache. La syntaxe générale est la suivante :
 
-    &quot;conf
-    &lt;locationmatch url=&quot;&quot; url_regex=&quot;&quot;>
-    # Supprime l’en-tête de réponse de ce nom, s’il existe. S’il existe plusieurs en-têtes du même nom, tous sont supprimés.
-    Contrôle de cache non défini de l’en-tête
-    Expire l’en-tête non défini
-    
-    # Indique au réseau de diffusion de contenu de ne pas mettre en cache la réponse.
-    Cache-Control du jeu d’en-tête &quot;privé&quot;
-    &lt;/locationmatch>
-    &quot;
+```
+<LocationMatch "$URL$ || $URL_REGEX$">
+    # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
+    Header unset Cache-Control
+    Header unset Expires
+
+    # Instructs the CDN to not cache the response.
+    Header set Cache-Control "private"
+</LocationMatch>
+```
 
 #### Exemple
 
@@ -68,16 +68,17 @@ Notez que, pour contourner le cache CSS existant, une modification du fichier CS
 1. Dans votre projet AEM, recherchez le fichier vhost souhaité à partir de `dispatcher/src/conf.d/available_vhosts` répertoire .
 1. Mettez à jour le vhost (par ex. `wknd.vhost`) comme suit :
 
-       &quot;conf
-       &lt;locationmatch etc.clientlibs=&quot;&quot;>*\.(css)$&quot;>
-       # Supprime l’en-tête de réponse de ce nom, s’il existe. S’il existe plusieurs en-têtes du même nom, tous sont supprimés.
-       Contrôle de cache non défini de l’en-tête
-       Expire l’en-tête non défini
-       
-       # Indique au réseau de diffusion de contenu de ne pas mettre en cache la réponse.
-       Cache-Control du jeu d’en-tête &quot;privé&quot;
-       &lt;/locationmatch>
-       &quot;
+   ```
+   <LocationMatch "^/etc.clientlibs/.*\.(css)$">
+       # Removes the response header of this name, if it exists. If there are multiple headers of the same name, all will be removed.
+       Header unset Cache-Control
+       Header unset Expires
+   
+       # Instructs the CDN to not cache the response.
+       Header set Cache-Control "private"
+   </LocationMatch>
+   ```
+
    Les fichiers vhost dans `dispatcher/src/conf.d/enabled_vhosts` sont **symlinks** aux fichiers dans `dispatcher/src/conf.d/available_vhosts` , veillez donc à créer des liens symboliques s’ils ne sont pas présents.
 1. Déployez les modifications vhost dans l’environnement as a Cloud Service AEM souhaité à l’aide de la fonction [Cloud Manager - Pipeline de configuration de niveau web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?#web-tier-config-pipelines) ou [Commandes RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=en#deploy-apache-or-dispatcher-configuration).
 
@@ -85,6 +86,6 @@ Notez que, pour contourner le cache CSS existant, une modification du fichier CS
 
 Cette option est disponible pour AEM Publication et Auteur. Pour mettre à jour les en-têtes de cache, utilisez le `SlingHttpServletResponse` dans le code Java™ personnalisé (servlet Sling, filtre de servlet Sling). La syntaxe générale est la suivante :
 
-    &quot;java
-    response.setHeader(&quot;Cache-Control&quot;, &quot;private&quot;);
-    &quot;
+```java
+response.setHeader("Cache-Control", "private");
+```
