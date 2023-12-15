@@ -12,10 +12,10 @@ jira: KT-13102
 thumbnail: 3418381.jpeg
 exl-id: 304b4d80-27bd-4336-b2ff-4b613a30f712
 duration: 439
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: d7f3c5193cc53f050d24dd66705a3979fb710c36
 workflow-type: tm+mt
 source-wordcount: '843'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -177,7 +177,7 @@ La réponse JSON résultante contient les 2e, 3e, 4e et 5e aventures les plus co
 
 #### Prochain jeu de résultats paginés
 
-Le jeu de résultats suivant peut être récupéré à l’aide du paramètre `after` et de la valeur `endCursor` de la requête précédente. S’il n’y a plus de résultats à récupérer, `hasNextPage` est `false`.
+L’ensemble de résultats suivant peut être récupéré à l’aide de la variable `after` et le paramètre `endCursor` de la requête précédente. S’il n’y a plus de résultats à récupérer, `hasNextPage` est `false`.
 
 ##### Variables de requête
 
