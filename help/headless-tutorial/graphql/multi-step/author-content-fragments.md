@@ -11,10 +11,10 @@ role: Developer
 level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
 duration: 227
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 234c163a2936ca07bdf259038f1b22c4363fae3c
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 100%
+source-wordcount: '853'
+ht-degree: 92%
 
 ---
 
@@ -75,6 +75,10 @@ Les fragments de contenu sont stockés dans des dossiers AEM Assets. Pour crée
 
 
 ## Créer un fragment de contenu {#create-content-fragment}
+
+>[!TIP]
+>
+>Pour les utilisateurs locaux du SDK AEM : utilisez l’interface utilisateur d’AEM Assets pour créer et créer des fragments de contenu, au lieu de l’interface utilisateur des fragments de contenu décrite ci-dessous. Pour obtenir des instructions détaillées, reportez-vous à la section [Documentation AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html?lang=fr).
 
 Dans cette section, nous allons créer plusieurs fragments de contenu basés sur les modèles **Équipe** et **Personne**.
 
@@ -145,6 +149,10 @@ Remplissez ensuite les fragments nouvellement créés avec des données.
 1. Appuyez sur **Enregistrer et fermer** pour enregistrer les modifications apportées au fragment Équipe Alpha.
 
 ## Publier des fragments de contenu
+
+>[!TIP]
+>
+>Pour les utilisateurs locaux du SDK AEM : utilisez l’interface utilisateur d’AEM Assets pour publier des fragments de contenu, au lieu de l’interface utilisateur Fragments de contenu décrite ci-dessous. Pour obtenir des instructions détaillées, reportez-vous à la section [Documentation AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
 
 Lors de la révision et de la vérification, publiez les `Content Fragments` crées.
 
