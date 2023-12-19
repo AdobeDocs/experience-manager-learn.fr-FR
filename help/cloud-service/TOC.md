@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 43c021b051806380b3211f2d7357555622217b91
+source-git-commit: d9612adbc2ff3e601c2efe5a779c03ad24769276
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1084'
 ht-degree: 95%
 
 ---
@@ -133,7 +133,7 @@ ht-degree: 95%
    + [Vue d’ensemble](./caching/overview.md)
    + [Service de publication AEM](./caching/publish.md)
    + [Service de création AEM](./caching/author.md)
-   + [Analyse du ratio d’accès au cache du réseau CDN](./caching/cdn-cache-hit-ratio-analysis.md)
+   + [Analyse du taux d’accès au cache du réseau CDN](./caching/cdn-cache-hit-ratio-analysis.md)
    + Procédures{#how-to}
       + [Activation de la mise en cache](./caching/how-to/enable-caching.md)
       + [Désactiver la mise en cache](./caching/how-to/disable-caching.md)
@@ -264,6 +264,10 @@ ht-degree: 95%
       + [Création d’une configuration OSGi](./forms/store-submiited-data-with-metadata-tags/create-osgi-configuration.md)
       + [Création de balises d’index](./forms/store-submiited-data-with-metadata-tags/create-blob-index-tags.md)
       + [Créer un envoi personnalisé](./forms/store-submiited-data-with-metadata-tags/create-custom-submit.md)
+   + Préremplir le formulaire basé sur un composant principal{#prefill-core-component-based-form}
+      + [Présentation](./forms/prefill-core-component-form/introduction.md)
+      + [Service de préremplissage d’écriture](./forms/prefill-core-component-form/pre-fill-service.md)
+      + [Tester la solution](./forms/prefill-core-component-form/test-solution.md)
    + Stockage de portail Azure{#forms-cs-azure-portal}
       + [Présentation](./forms/forms-cs-azure-portal/introduction.md)
       + [Créer un modèle de données de formulaire](./forms/forms-cs-azure-portal/create-fdm.md)
