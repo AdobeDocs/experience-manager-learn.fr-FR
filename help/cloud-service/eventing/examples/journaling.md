@@ -9,11 +9,11 @@ level: Beginner
 doc-type: Tutorial
 duration: 0
 last-substantial-update: 2023-12-07T00:00:00Z
-jira: KT-14649
-thumbnail: KT-14649.jpeg
-source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
+jira: KT-14734
+thumbnail: KT-14734.jpeg
+source-git-commit: 839d552199fe7d10a0cde4011bdfe8cf42cc8ec9
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -81,4 +81,6 @@ Pour simplifier les choses, cette application web hébergée récupère uniqueme
 
 ## Ressources supplémentaires
 
-- [Glitter le code source webhook](https://glitch.com/edit/#!/indigo-speckle-antler)
+- [Glitter le code source webhook](https://glitch.com/edit/#!/indigo-speckle-antler) est disponible à titre de référence. Il s’agit d’une application React simple qui utilise [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) composants pour effectuer le rendu de l’interface utilisateur.
+
+- [API de journalisation des événements Adobe I/O](https://developer.adobe.com/events/docs/guides/api/journaling_api/) fournit des informations détaillées sur l’API, telles que le premier, le suivant et le dernier lot d’événements, la pagination, etc.
