@@ -13,7 +13,7 @@ duration: 26
 source-git-commit: 8a042c561c1a7e48152c2b067d92d709ab5fd53e
 workflow-type: tm+mt
 source-wordcount: '80'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 98%
 >title="Déployer du code"
 >abstract="Intégrez le référentiel Git de Cloud Manager à un référentiel Git externe et déployez un projet sur AEM as a Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/merge-projects.html?lang=fr#cloud-manager" text="Fusionner des projets"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=en" text="Déployer du code avec Cloud Manager"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=fr" text="Déployer du code avec Cloud Manager"
 
 Intégrez le référentiel Git de Cloud Manager à un référentiel Git externe et déployez un projet sur AEM as a Cloud Service.
 
