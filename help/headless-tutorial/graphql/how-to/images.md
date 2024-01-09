@@ -11,7 +11,7 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 449
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 520bb18e464eb48cc2ba0cdfb7f5a7d2af202abf
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 100%
@@ -133,6 +133,7 @@ Pour charger l’image optimisée pour le web de l’image référencée dans vo
 Dans React, l’affichage de l’image optimisée pour le web à partir de l’instance de publication AEM ressemble à ceci :
 
 ```jsx
+// The AEM host is usually read from a environment variable of the SPA.
 const AEM_HOST = "https://publish-p123-e456.adobeaemcloud.com";
 ...
 let dynamicUrl = AEM_HOST + data.adventureByPath.item.primaryImage._dynamicUrl;
@@ -147,6 +148,7 @@ Souvenez-vous, `_dynamicUrl` n’inclut pas le domaine AEM. Vous devez donc four
 L’exemple ci-dessus illustre l’utilisation d’une image à taille unique. Toutefois, dans les expériences web, des visionneuses d’images réactives sont souvent requises. Les images réactives peuvent être implémentées à l’aide de [img srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) ou d’[éléments d’image](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). L’extrait de code suivant montre comment utiliser l’`_dynamicUrl` en tant que base et en ajoutant différents paramètres de largeur pour alimenter différentes vues réactives. Non seulement le paramètre de requête `width` peut être utilisé, mais d’autres paramètres de requête peuvent être ajoutés par le client ou la cliente pour optimiser davantage la ressource image en fonction de ses besoins.
 
 ```javascript
+// The AEM host is usually read from a environment variable of the SPA.
 const AEM_HOST = "https://publish-p123-e456.adobeaemcloud.com";
 ...
 // Read the data from GraphQL response
