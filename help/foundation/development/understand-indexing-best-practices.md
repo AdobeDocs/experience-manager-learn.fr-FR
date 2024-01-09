@@ -12,9 +12,9 @@ duration: 0
 last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
-source-git-commit: 5fe651bc0dc73397ae9602a28d63b7dc084fcc70
+source-git-commit: 7f69fc888a7b603ffefc70d89ea470146971067e
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1418'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,9 @@ Parfois, vous devez créer des index personnalisés pour prendre en charge vos b
 
 ### Personnalisation de l’index prêt à l’emploi
 
-- Lors de la personnalisation de l’index prêt à l’emploi, utilisez **\&lt;ootbindexname>-\&lt;productversion>-custom-\&lt;customversion>** convention d’affectation des noms. Par exemple : `cqPageLucene-custom-1` ou `damAssetLucene-8-custom-1`. Cela permet de fusionner la définition d’index personnalisée chaque fois que l’index prêt à l’emploi est mis à jour. Voir [Modifications apportées aux index prêts à l’emploi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?#changes-to-out-of-the-box-indexes) pour plus d’informations.
+- Dans **AEMCS**, lors de la personnalisation de l’index OOTB, utilisez **\&lt;ootbindexname>-\&lt;productversion>-custom-\&lt;customversion>** convention d’affectation des noms. Par exemple : `cqPageLucene-custom-1` ou `damAssetLucene-8-custom-1`. Cela permet de fusionner la définition d’index personnalisée chaque fois que l’index prêt à l’emploi est mis à jour. Voir [Modifications apportées aux index prêts à l’emploi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?#changes-to-out-of-the-box-indexes) pour plus d’informations.
+
+- Dans **AEM 6.X**, le nom ci-dessus _ne fonctionne pas_, mais il vous suffit de mettre à jour l’index OOTB avec des propriétés supplémentaires dans la variable `indexRules` noeud .
 
 - Copiez toujours la dernière définition d’index prête à l’emploi de l’instance AEM à l’aide du gestionnaire de modules CRX DE (/crx/packmgr/), renommez-la et ajoutez des personnalisations dans le fichier XML.
 
@@ -57,11 +59,13 @@ Parfois, vous devez créer des index personnalisés pour prendre en charge vos b
 
 ### Index entièrement personnalisé
 
-- Lors de la création d’un index entièrement personnalisé, utilisez **\&lt;prefix>.\&lt;customindexname>-\&lt;version>-custom-\&lt;customversion>** convention d’affectation des noms. Par exemple, `wknd.adventures-1-custom-1`. Cela permet d’éviter les conflits de noms. Ici, `wknd` est le préfixe et `adventures` est le nom d’index personnalisé.
+La création d’un index entièrement personnalisé doit être votre dernière option et uniquement si l’option ci-dessus ne fonctionne pas.
+
+- Lors de la création d’un index entièrement personnalisé, utilisez **\&lt;prefix>.\&lt;customindexname>-\&lt;version>-custom-\&lt;customversion>** convention d’affectation des noms. Par exemple, `wknd.adventures-1-custom-1`. Cela permet d’éviter les conflits de noms. Ici, `wknd` est le préfixe et `adventures` est le nom d’index personnalisé. Cette convention s’applique à AEM 6.X et AEMCS et permet de préparer une migration future vers AEM CS.
 
 - AEMCS ne prend en charge que les index Lucene. Pour préparer une migration ultérieure vers AEM, vous devez donc toujours utiliser les index Lucene. Voir [Index Lucene par rapport aux index de propriété](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing.html?#lucene-or-property-indexes) pour plus d’informations.
 
-- Ne créez pas d’index personnalisé sur le `dam:Asset` type de noeud, mais personnalisez l’OOTB. `damAssetLucene` index. Il s’agit d’une cause courante des problèmes de performances et de fonctionnement.
+- Évitez de créer un index personnalisé sur le même type de noeud que l’index prêt à l’emploi. À la place, personnalisez l’index prêt à l’emploi avec des propriétés supplémentaires dans le `indexRules` noeud . Par exemple, ne créez pas d’index personnalisé sur la variable `dam:Asset` type de noeud, mais personnalisez l’OOTB. `damAssetLucene` index. _Il s’agit d’une cause courante des problèmes de performances et de fonctionnement._.
 
 - Évitez également d’ajouter plusieurs types de noeuds, par exemple `cq:Page` et `cq:Tag` sous les règles d&#39;indexation (`indexRules`). Créez plutôt des index distincts pour chaque type de noeud.
 
@@ -70,7 +74,7 @@ Parfois, vous devez créer des index personnalisés pour prendre en charge vos b
 - Les directives de définition d’index sont les suivantes :
    - Le type de noeud (`jcr:primaryType`) doit `oak:QueryIndexDefinition`
    - Le type d’index (`type`) doit `lucene`
-   - La propriété async (`async`) doit `async, rt`
+   - La propriété async (`async`) doit `async,nrt`
    - Utilisation `includedPaths` et évitez `excludedPaths` . Toujours définir `queryPaths` à la même valeur que `includedPaths` .
    - Pour appliquer la restriction de chemin, utilisez `evaluatePathRestrictions` et définissez-la sur `true`.
    - Utilisation `tags` pour baliser l’index et, lors de l’interrogation, spécifiez cette valeur de balise pour utiliser l’index. La syntaxe de requête générale est la suivante : `<query> option(index tag <tagName>)`.
@@ -80,7 +84,7 @@ Parfois, vous devez créer des index personnalisés pour prendre en charge vos b
       - jcr:primaryType = "oak:QueryIndexDefinition"
       - type = "lucene"
       - compatVersion = 2
-      - async = ["async", "rt"]
+      - async = ["async", "nrt"]
       - includedPaths = ["/content/wknd"]
       - queryPaths = ["/content/wknd"]
       - evaluatePathRestrictions = true
@@ -90,7 +94,7 @@ Parfois, vous devez créer des index personnalisés pour prendre en charge vos b
 
 ### Exemples
 
-Examinons quelques exemples pour comprendre les bonnes pratiques.
+Pour comprendre les bonnes pratiques, examinons quelques exemples.
 
 #### Utilisation incorrecte de la propriété de balises
 
