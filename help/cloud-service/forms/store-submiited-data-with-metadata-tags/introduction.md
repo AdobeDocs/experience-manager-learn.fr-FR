@@ -9,21 +9,22 @@ version: Cloud Service
 topic: Integrations
 jira: KT-14501
 duration: 40
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+exl-id: a8531e82-18cd-4b32-8148-d6fc5f6e51c6
+source-git-commit: 016b06d3bd5b62945c168588839454544b2f7d41
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 46%
+source-wordcount: '130'
+ht-degree: 45%
 
 ---
 
 # Présentation
 
-Dans ce tutoriel, nous allons mettre en oeuvre un cas d’utilisation simple de stockage des envois de formulaire dans le stockage Azure avec des balises d’index blob. Les balises d’index Blob offrent des fonctionnalités de gestion et de découverte de données à l’aide d’attributs de balise d’index de valeur clé. Vous pouvez classer et rechercher des objets dans un seul conteneur ou dans tous les conteneurs de votre compte de stockage.
+Dans ce tutoriel, vous découvrez comment mettre en oeuvre un cas d’utilisation simple de stockage des envois de formulaire dans le stockage Azure avec des balises d’index blob. Les balises d’index Blob offrent des fonctionnalités de gestion et de découverte de données à l’aide d’attributs de balise d’index de valeur clé. Vous pouvez classer et rechercher des objets dans un seul conteneur ou dans tous les conteneurs de votre compte de stockage.
 ![blob-index-tags](assets/blob-with-index-tags.png)
 
 ## Prérequis
 
-* Expérience avec AEM Forms CS .
+* Experience avec AEM Forms CS.
 * Expérience du déploiement du code à l’aide de Cloud Manager.
 * Accès à l’instance compatible avec le cloud d’AEM Forms CS.
 
