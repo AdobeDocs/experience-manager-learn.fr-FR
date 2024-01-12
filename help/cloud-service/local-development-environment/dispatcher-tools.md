@@ -14,7 +14,7 @@ duration: 765
 source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
 workflow-type: tm+mt
 source-wordcount: '1621'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_dispatcher"
 >title="Outils du Dispatcher local"
->abstract="Le Dispatcher fait partie intégrante de l’architecture globale d’Experience Manager et doit faire partie de la configuration de développement local. Le SDK as a Cloud Service d’AEM comprend la version recommandée des outils Dispatcher qui facilite la configuration locale de la validation et de la simulation de Dispatcher."
+>abstract="Le Dispatcher fait partie intégrante de l’architecture globale d’Experience Manager et doit faire partie de la configuration de développement local. Le SDK AEM as a Cloud Service comprend la version recommandée des outils du Dispatcher qui facilite la configuration, la validation et la simulation locale du Dispatcher."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=fr" text="Dispatcher en mode cloud"
 >additional-url="https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr" text="Télécharger le SDK AEM as a Cloud Service"
 

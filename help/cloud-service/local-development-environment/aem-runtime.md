@@ -14,7 +14,7 @@ duration: 563
 source-git-commit: 55f5cef46f7451ebb5b42b8cf17e71efeb0329c2
 workflow-type: tm+mt
 source-wordcount: '1696'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_aemruntime"
 >title="Exécution locale d’AEM"
->abstract="Il est possible d&#39;exécuter localement Adobe Experience Manager (AEM) à l&#39;aide du SDK d&#39;AEM as a Cloud Service Quickstart Jar. Cela permet aux développeurs de déployer et de tester du code personnalisé, des configurations et du contenu avant de le soumettre au contrôle de code source et de le déployer dans un environnement as a Cloud Service AEM."
+>abstract="Il est possible d&#39;exécuter localement Adobe Experience Manager (AEM) à l&#39;aide du SDK d&#39;AEM as a Cloud Service Quickstart Jar. Cela permet aux développeurs et aux développeuses de déployer et de tester du code personnalisé, des configurations et du contenu avant de le soumettre à un contrôle de sources et de le déployer dans un environnement AEM as a Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html" text="SDK AEM as a Cloud Service"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?lang=fr" text="Télécharger le SDK AEM as a Cloud Service"
 
-Il est possible d&#39;exécuter localement Adobe Experience Manager (AEM) à l&#39;aide du SDK d&#39;AEM as a Cloud Service Quickstart Jar. Cela permet aux développeurs de déployer et de tester du code personnalisé, des configurations et du contenu avant de le soumettre au contrôle de code source et de le déployer dans un environnement as a Cloud Service AEM.
+Il est possible d&#39;exécuter localement Adobe Experience Manager (AEM) à l&#39;aide du SDK d&#39;AEM as a Cloud Service Quickstart Jar. Cela permet aux développeurs et aux développeuses de déployer et de tester du code personnalisé, des configurations et du contenu avant de le soumettre à un contrôle de sources et de le déployer dans un environnement AEM as a Cloud Service.
 
 Notez que `~` est utilisé comme raccourci pour le répertoire de l’utilisateur ou de l’utilisatrice. Sous Windows, il s’agit de l’équivalent de `%HOMEPATH%`.
 
