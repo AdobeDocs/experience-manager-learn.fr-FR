@@ -4,18 +4,18 @@ description: L’outil d’import en bloc d’AEM as a Cloud Service permet 
 version: Cloud Service
 doc-type: technical-video
 feature: Migration
-jira: KT-6729
+jira: KT-6729, KT-14796
 thumbnail: 329680.jpg
 topic: Migration
 role: Architect, Developer
 level: Beginner
-last-substantial-update: 2022-10-05T00:00:00Z
+last-substantial-update: 2024-01-16T00:00:00Z
 exl-id: 28644af8-babc-467d-afdb-8538728dc176
-duration: 38
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 474
+source-git-commit: 613d280f3aa64d04dd5ef3d636a63d31a4c7bfbd
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 50%
+source-wordcount: '175'
+ht-degree: 40%
 
 ---
 
@@ -23,11 +23,21 @@ ht-degree: 50%
 
 L’outil d’importation en bloc d’AEM as a Cloud Service permet aux administrateurs d’importer en bloc des ressources à partir de l’espace de stockage dans le cloud de manière sécurisée et efficace.
 
+>[!BEGINTABS]
+
+>[!TAB Affichage des ressources]
+
+Découvrez comment importer de nombreux fichiers dans AEM Assets à l’aide du [Affichage des ressources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html) [Importation en bloc](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html), avec Dropbox comme exemple de fournisseur de stockage dans le cloud pour un processus d’intégration clair et facile à suivre.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
+
+>[!TAB Vue Admin]
+
+>[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
+
 >[!TIP]
 >
 > Les sources d’entrée de cette vidéo n’affichent que Azure Blob Storage et Amazon S3 ; cependant, les sources disponibles continuent de croître au fil du temps. Pour obtenir la liste complète des sources d’entrée prises en charge, reportez-vous aux options disponibles dans le produit, ou [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
-
->[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
 
 ## Planifier l’import en bloc
 
@@ -37,3 +47,5 @@ L’import en bloc prend en charge l’exécution planifiée des configurations,
 + Exécutions ponctuelles toutes les heures, tous les jours ou toutes les semaines
 
 ![Planification de l’import en bloc.](./assets/bulk-import/schedule.png)
+
+>[!ENDTABS]
