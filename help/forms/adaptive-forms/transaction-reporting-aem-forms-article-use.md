@@ -9,16 +9,16 @@ level: Beginner
 exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 96
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+source-git-commit: 4b88045a626b5e7bd1386e62ee54ac6fe2ce9282
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 100%
+source-wordcount: '331'
+ht-degree: 87%
 
 ---
 
 # Utiliser les rapports de transaction dans AEM Forms{#using-transaction-reporting-in-aem-forms}
 
-La création de rapports de transaction pour capturer le nombre d’envois de formulaire, le rendu des documents à l’aide des services de document et le rendu des communications interactives (canaux web et d’impression) a été introduite dans AEM Forms 6.4.1. Cette fonctionnalité est principalement destinée aux clientes et clients qui souhaitent obtenir une licence du logiciel basée sur le nombre d’envois de formulaire et/ou de documents rendus. Cette fonctionnalité est actuellement disponible sur la pile OSGi AEM Forms uniquement.
+La création de rapports de transaction pour capturer le nombre d’envois de formulaire, le rendu des documents à l’aide des services de document et le rendu des communications interactives (canaux Web et d’impression) a été introduite avec AEM Forms 6.4.1. Cette fonctionnalité est actuellement disponible sur la pile AEM Forms OSGI uniquement.
 
 ## Activer les rapports de transaction {#enabling-transaction-reporting}
 
