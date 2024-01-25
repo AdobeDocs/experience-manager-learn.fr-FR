@@ -10,8 +10,8 @@ role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 6c1c7f2b-f574-458c-b744-b92419c46f23
-duration: 437
-source-git-commit: af928e60410022f12207082467d3bd9b818af59d
+duration: 393
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 100%
@@ -235,7 +235,7 @@ Dans le contexte de l’éditeur de SPA, les modèles Sling exposent le contenu 
 
    >[!NOTE]
    >
-   >Vous pouvez visualiser ici le [CustomComponentImpl.java terminé](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
+   Vous pouvez visualiser ici le [CustomComponentImpl.java terminé](https://github.com/adobe/aem-guides-wknd-spa/blob/Angular/custom-component-solution/core/src/main/java/com/adobe/aem/guides/wknd/spa/angular/core/models/impl/CustomComponentImpl.java).
 
 ## Mettre à jour le composant Angular
 

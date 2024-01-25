@@ -7,11 +7,11 @@ topic: Development, Architecture, Content Management
 role: Architect, Developer
 level: Beginner
 doc-type: Tutorial
-duration: 0
+duration: 152
 last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
-source-git-commit: 839d552199fe7d10a0cde4011bdfe8cf42cc8ec9
+source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Découvrez comment recevoir des événements AEM sur un webhook et consulter les
 
 Dans cet exemple, en utilisant un Adobe fourni _webhook hébergé_ vous permet de recevoir des événements AEM sans avoir à configurer votre propre webhook. Ce webhook fourni par l’Adobe est hébergé sur [Glitch](https://glitch.com/), une plateforme connue pour proposer un environnement web propice à la création et au déploiement d’applications web. Cependant, l’option permettant d’utiliser votre propre webhook est également disponible si vous le souhaitez.
 
-## Conditions préalables requises
+## Conditions préalables
 
 Pour suivre ce tutoriel, vous devez :
 
