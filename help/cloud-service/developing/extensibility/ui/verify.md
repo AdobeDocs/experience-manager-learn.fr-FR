@@ -11,7 +11,7 @@ jira: KT-11603, KT-13382
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: c5c1df23-1c04-4c04-b0cd-e126c31d5acc
 duration: 637
-source-git-commit: 2a22a1bbe8474b8b7ca95f2b364fd7540b26b894
+source-git-commit: f48fb02887d909a102718dc5a0c4d1ecd2b1ef34
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 96%
@@ -39,9 +39,9 @@ Pour créer une URL qui monte l’extension hors production dans AEM, l’URL de
 Par exemple, pour prévisualiser une extension pour la console Fragments de contenu :
 
 1. Connectez-vous à l’environnement AEM as a Cloud Service souhaité.
-2. Sélectionnez l’icône __Fragments de contenu__.
-3. Attendez que la console de fragments de contenu d’AEM se charge dans le navigateur.
-4. Copiez l’URL de la console de fragments de contenu AEM dans la barre d’adresse du navigateur. Elle doit ressembler à cela :
+1. Sélectionnez l’icône __Fragments de contenu__.
+1. Attendez que la console de fragments de contenu d’AEM se charge dans le navigateur.
+1. Copiez l’URL de la console de fragments de contenu AEM dans la barre d’adresse du navigateur. Elle doit ressembler à cela :
 
    ```
    https://experience.adobe.com/?repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
@@ -80,11 +80,11 @@ Prenez note de l’URL de l’application locale, comme illustré ci-dessus : `
    https://experience.adobe.com/?devMode=true&ext=https://localhost:9080&repo=author-p1234-e5678.adobeaemcloud.com#/@wknd/aem/cf/admin
    ```
 
-2. Copiez et collez l’URL de prévisualisation dans votre navigateur.
+1. Copiez et collez l’URL de prévisualisation dans votre navigateur.
 
    + Vous devrez peut-être [accepter le certificat HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users) (d’abord de manière initiale, puis périodiquement) pour l’hôte de l’application locale (`https://localhost:9080`).
 
-3. L’interface utilisateur AEM se charge avec la version locale de l’extension qui y est injectée pour vérification.
+1. L’interface utilisateur AEM se charge avec la version locale de l’extension qui y est injectée pour vérification.
 
 >[!IMPORTANT]
 >
@@ -144,9 +144,9 @@ Pour faciliter la création d’URL de prévisualisation et d’aperçu décrite
 Le signet d’applet ci-dessous prévisualise les [versions de développement locales](#verify-local-development-builds) de l’extension sur `https://localhost:9080`. Pour prévisualiser les [versions d’environnement d’évaluation](#verify-stage-builds), créez un signet d’applet avec la variable `previewApp` définie sur l’URL de l’application Créateur d’applications déployée.
 
 1. Créez un signet dans votre navigateur.
-2. Modifiez le signet.
-3. Attribuez un nom significatif à un signet, tel que `AEM UI Extension Preview (localhost:9080)`.
-4. Définissez l’URL du signet sur le code suivant :
+1. Modifiez le signet.
+1. Attribuez un nom significatif à un signet, tel que `AEM UI Extension Preview (localhost:9080)`.
+1. Définissez l’URL du signet sur le code suivant :
 
    ```javascript
    javascript: (() => {
@@ -161,7 +161,7 @@ Le signet d’applet ci-dessous prévisualise les [versions de développement lo
    })();
    ```
 
-5. Accédez à une interface utilisateur AEM extensible pour charger l’extension d’aperçu, puis cliquez sur le signet d’applet.
+1. Accédez à une interface utilisateur AEM extensible pour charger l’extension d’aperçu, puis cliquez sur le signet d’applet.
 
 >[!TIP]
 >
