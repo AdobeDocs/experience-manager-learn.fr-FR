@@ -10,11 +10,11 @@ recommendations: noDisplay, noCatalog
 jira: KT-11603, KT-13382
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: c5c1df23-1c04-4c04-b0cd-e126c31d5acc
-duration: 633
-source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
+duration: 637
+source-git-commit: 2a22a1bbe8474b8b7ca95f2b364fd7540b26b894
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 100%
+source-wordcount: '739'
+ht-degree: 96%
 
 ---
 
@@ -67,6 +67,7 @@ Cette URL est utilisée ci-dessous lors de la conception des URL pour le dévelo
 
 Prenez note de l’URL de l’application locale, comme illustré ci-dessus : `-> https://localhost:9080`.
 
+1. Ouvrez initialement (et dès que vous voyez une erreur de connexion). `https://localhost:9080` (ou quelle que soit l’URL de votre application locale) dans votre navigateur web et acceptez manuellement [le certificat HTTPS](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/extension-development/#accepting-the-certificate-first-time-users).
 1. Ajoutez les deux paramètres de requête suivants à l’[URL de l’interface utilisateur AEM](#aem-ui-url).
    + `&devMode=true`
    + `&ext=<LOCAL APPLICATION URL>`, généralement `&ext=https://localhost:9080`.
