@@ -8,10 +8,10 @@ breadcrumb-title: Tutoriels d’AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 5e761ef180182b47c4fd2822b0ad98484db23aab
-workflow-type: ht
-source-wordcount: '1874'
-ht-degree: 100%
+source-git-commit: 236d288c8b88948c5004ab777169768065df16f2
+workflow-type: tm+mt
+source-wordcount: '2001'
+ht-degree: 99%
 
 ---
 
@@ -131,6 +131,11 @@ ht-degree: 100%
    + [2. Pièces jointes du formulaire Zip](zipping-form-attachments/custom-process-step.md)
    + [3. Pièces jointes du formulaire d’e-mail](zipping-form-attachments/populating-list-of-documents.md)
    + [4. Tester la solution](zipping-form-attachments/test.md)
++ Préremplir le formulaire avec des données et des pièces jointes{#prefill-form-with-data-attachments}
+   + [1. Présentation](prefill-form-with-data-attachments/introduction.md)
+   + [2 - Création d’un envoi personnalisé](prefill-form-with-data-attachments/create-custom-submit.md)
+   + [3 - Création d’une configuration OSGi](prefill-form-with-data-attachments/create-osgi-configuration.md)
+   + [4 - Création d’un service de préremplissage](prefill-form-with-data-attachments/create-prefill-service.md)
 + Stocker et récupérer un formulaire adaptatif{#store-and-retrieve-af-with-2fa}
    + [1. Présentation](store-and-retrieve-af-with-2fa/introduction.md)
    + [2. Configurer la source de données](store-and-retrieve-af-with-2fa/configure-data-source.md)
