@@ -8,19 +8,21 @@ role: Developer
 level: Beginner
 recommendations: noDisplay, noCatalog
 jira: KT-11603
-last-substantial-update: 2023-06-02T00:00:00Z
+last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
 duration: 214
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+source-git-commit: 6f1245e804f0311c3f833ea8b2324cbc95272f52
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 100%
+source-wordcount: '767'
+ht-degree: 96%
 
 ---
 
 # Déployer une extension
 
 Pour une utilisation dans les environnements AEM as a Cloud Service, l’extension de l’application Créateur d’applications doit être déployée et approuvée.
+
+![Adobe Exchange](./assets/deploy/adobe-exchange.png){align="center"}
 
 Plusieurs points doivent être pris en compte lors du déploiement des extensions d’applications Créateur d’applications :
 
@@ -77,9 +79,9 @@ Déployez l’extension dans l’espace de travail de production. Les extensions
 ![Validation des extensions.](./assets/deploy/adobe-exchange.png){align="center"}
 
 1. Connectez-vous à [Adobe Exchange](https://exchange.adobe.com/).
-1. Accédez à __Gérer__ > __Applications en attente de révision__.
-1. __Révisez__ l’extension de l’application Créateur d’applications.
-1. Si les modifications d’extension sont acceptables, __Acceptez__ la révision. Cette opération injecte immédiatement l’extension sur tous les services de création d’AEM as a Cloud Service dans l’organisation Adobe.
+2. Accédez à __Gérer__ > __Applications Experience Cloud__
+3. __Révisez__ l’extension de l’application Créateur d’applications.
+4. Si les modifications d’extension sont acceptables, __Acceptez__ la révision. Cette opération injecte immédiatement l’extension sur tous les services de création d’AEM as a Cloud Service dans l’organisation Adobe.
 
 Une fois la demande d’extension approuvée, l’extension devient immédiatement active dans les services de création d’AEM as a Cloud Service.
 
@@ -92,7 +94,7 @@ Mettre à jour une extension de l’application Créateur d’applications suit 
 Pour déployer une nouvelle version d’une extension, celle-ci doit d’abord être révoquée (ou supprimée). Quand l’extension est révoquée, elle n’est pas disponible dans les consoles AEM.
 
 1. Connectez-vous à [Adobe Exchange](https://exchange.adobe.com/).
-1. Accédez à __Gérer__ > __Applications Créateur d’applications__.
+1. Accédez à __Gérer__ > __Applications Experience Cloud__
 1. __Révoquez__ l’extension à mettre à jour.
 
 ### Déployer l’extension
@@ -128,10 +130,10 @@ Déployez l’extension dans l’espace de travail de production. Les extensions
 
 #### Approuvez la requête de déploiement.
 
-![Validation des extensions.](./assets/deploy/adobe-exchange.png){align="center"}
+![Validation des extensions.](./assets/deploy/review.png){align="center"}
 
 1. Connectez-vous à [Adobe Exchange](https://exchange.adobe.com/).
-1. Accédez à __Gérer__ > __Applications en attente de révision__.
+1. Accédez à __Gérer__ > __Applications Experience Cloud__
 1. __Révisez__ l’extension de l’application Créateur d’applications.
 1. Si les modifications d’extension sont acceptables, __Acceptez__ la révision. Cette opération injecte immédiatement l’extension sur tous les services de création d’AEM as a Cloud Service dans l’organisation Adobe.
 
@@ -144,5 +146,5 @@ Une fois la demande d’extension approuvée, l’extension devient immédiateme
 Pour supprimer une extension, révoquez-la (ou supprimez-la) d’Adobe Exchange. Lorsque l’extension est révoquée, elle est supprimée de tous les services de création d’AEM as a Cloud Service.
 
 1. Connectez-vous à [Adobe Exchange](https://exchange.adobe.com/).
-1. Accédez à __Gérer__ > __Applications de créateur d’applications__.
+1. Accédez à __Gérer__ > __Applications Experience Cloud__
 1. __Révoquez__ l’extension à supprimer.
