@@ -43,17 +43,17 @@ Ajoutez et utilisez un Captcha avec les formulaires adaptatifs AEM.
 >Accédez à l’ID du lot sur le système de fichiers de votre instance de création.
 >
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
-* Copier les fichiers HMAC et maîtres
+>* Copier les fichiers HMAC et maîtres
 >
-Ouvrez la [console web Felix](http://localhost:4502/system/console/bundles) sur votre instance de publication. Recherchez le lot com.adobe.granite.crypto.file. Notez l’ID du lot.
+>Ouvrez la [console web Felix](http://localhost:4502/system/console/bundles) sur votre instance de publication. Recherchez le lot com.adobe.granite.crypto.file. Notez l’ID du lot.
 >
-Accédez à l’ID du lot sur le système de fichiers de votre instance de publication.
+>Accédez à l’ID du lot sur le système de fichiers de votre instance de publication.
 >
-* &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
-* Supprimez les fichiers HMAC et maîtres existants.
-* Collez les fichiers HMAC et maîtres copiés à partir de l’instance de création.
+>* &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
+>* Supprimez les fichiers HMAC et maîtres existants.
+>* Collez les fichiers HMAC et maîtres copiés à partir de l’instance de création.
 >
-Redémarrez votre serveur de publication AEM.
+>Redémarrez votre serveur de publication AEM.
 
 ## Documents annexes {#supporting-materials}
 
