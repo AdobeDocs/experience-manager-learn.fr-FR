@@ -11,10 +11,10 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 377
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '901'
-ht-degree: 100%
+source-git-commit: 2aec84f0fbd34678a4e25200ae0cdc6396beca95
+workflow-type: tm+mt
+source-wordcount: '843'
+ht-degree: 90%
 
 ---
 
@@ -27,14 +27,14 @@ Les fragments de contenu utilisés dans la modélisation de contenu d’AEM Hea
 Le type `ImageRef` comporte quatre options d’URL pour les références de contenu :
 
 + `_path` est le chemin d’accès référencé dans AEM et n’inclut pas l’origine AEM (nom d’hôte).
-+ `_dynamicUrl` est l’URL complète de la ressource d’image préférée et optimisée pour le web.
++ `_dynamicUrl` est l’URL vers pour la diffusion optimisée pour le web de la ressource d’image.
    + `_dynamicUrl` n’inclut pas d’origine d’AEM. Par conséquent, le domaine (instance de création AEM ou service de publication AEM) doit être fourni par l’application cliente.
 + `_authorUrl` est l’URL complète de la ressource d’image sur l’instance de création AEM
    + L’[instance de création AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=fr) peut être utilisée pour fournir un aperçu de l’application découplée.
 + `_publishUrl` est l’URL complète de la ressource d’image sur l’instance de publication AEM
    + L’[instance de publication AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=fr) est généralement l’emplacement depuis lequel le déploiement en production de l’application découplée affiche les images.
 
-`_dynamicUrl` est l’URL préférée à utiliser pour les ressources d’image et doit remplacer l’utilisation de `_path`, `_authorUrl`, et `_publishUrl` dans la mesure du possible.
+La variable `_dynamicUrl` est l’URL recommandée pour la diffusion de ressources d’image et doit remplacer l’utilisation de la fonction `_path`, `_authorUrl`, et `_publishUrl` dans la mesure du possible.
 
 |                                | AEM as a Cloud Service | RDE d’AEM as a Cloud Service | SDK AEM | AEM 6.5 |
 | ------------------------------ |:----------------------:|:--------------------------:|:-------:|:-------:|
@@ -96,17 +96,17 @@ La variable `$path` utilisée dans le filtre `_path` nécessite le chemin d’ac
 
 `_assetTransform` définit la manière dont l’`_dynamicUrl` est construite pour optimiser le rendu d’image servi. Les URL des images optimisées pour le web peuvent également être ajustées sur le client ou la cliente en modifiant les paramètres de requête de l’URL.
 
-| Paramètre GraphQL | Paramètre d’URL : | Description | Requis | Valeurs de variable GraphQL | Valeurs des paramètres d’URL | Exemple de paramètre d’URL |
-|:---------|:----------|:-------------------------------|:--:|:--------------------------|:---|:--|
-| `format` | S/O | Format de la ressource image. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`, `WEBP`, `WEBPLL`, `WEBPLY` | S/O | S/O |
-| `seoName` | S/O | Nom du segment de fichier dans l’URL. Si aucun nom n’est fourni, le nom de la ressource image est utilisé. | ✘ | Alphanumérique, `-`, ou `_` | S/O | S/O |
-| `crop` | `crop` | Image de recadrage extraite de l’image, doit être de la taille de l’image | ✘ | Entiers positifs définissant une zone de recadrage dans les limites des dimensions de l’image d’origine | Chaîne de coordonnées numériques délimitée par des virgules `<X_ORIGIN>,<Y_ORIGIN>,<CROP_WIDTH>,<CROP_HEIGHT>` | `?crop=10,20,300,400` |
-| `size` | `size` | Taille de l’image de sortie (hauteur et largeur) en pixels. | ✘ | Entiers positifs | Entiers positifs délimités par des virgules dans l’ordre `<WIDTH>,<HEIGHT>` | `?size=1200,800` |
-| `rotation` | `rotate` | Rotation de l’image en degrés. | ✘ | `R90`, `R180`, `R270` | `90`, `180`, `270` | `?rotate=90` |
-| `flip` | `flip` | Retournement de l’image. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` | `h`, `v`, `hv` | `?flip=h` |
-| `quality` | `quality` | Qualité de l’image en pourcentage de la qualité originale. | ✘ | 1-100 | 1-100 | `?quality=80` |
-| `width` | `width` | Largeur de l’image de sortie en pixels. Lorsque `size` est fourni, `width` est ignoré. | ✘ | Entier positif | Entier positif | `?width=1600` |
-| `preferWebP` | `preferwebp` | Si sa valeur est `true` et qu’AEM sert un WebP et si le navigateur le prend en charge, quel que soit le `format`. | ✘ | `true`, `false` | `true`, `false` | `?preferwebp=true` |
+| Paramètre GraphQL | Description | Requis | Valeurs de variable GraphQL |
+|:---------|:----------|:-------------------------------|:--:|:--------------------------|
+| `format` | Format de la ressource image. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`, `WEBP`, `WEBPLL`, `WEBPLY` |
+| `seoName` | Nom du segment de fichier dans l’URL. Si aucun nom n’est fourni, le nom de la ressource image est utilisé. | ✘ | Alphanumérique, `-`, ou `_` |
+| `crop` | Image de recadrage extraite de l’image, doit être de la taille de l’image | ✘ | Entiers positifs définissant une zone de recadrage dans les limites des dimensions de l’image d’origine |
+| `size` | Taille de l’image de sortie (hauteur et largeur) en pixels. | ✘ | Entiers positifs |
+| `rotation` | Rotation de l’image en degrés. | ✘ | `R90`, `R180`, `R270` |
+| `flip` | Retournement de l’image. | ✘ | `HORIZONTAL`, `VERTICAL`, `HORIZONTAL_AND_VERTICAL` |
+| `quality` | Qualité de l’image en pourcentage de la qualité originale. | ✘ | 1-100 |
+| `width` | Largeur de l’image de sortie en pixels. Lorsque `size` est fourni, `width` est ignoré. | ✘ | Entier positif |
+| `preferWebP` | Si sa valeur est `true` et qu’AEM sert un WebP et si le navigateur le prend en charge, quel que soit le `format`. | ✘ | `true`, `false` |
 
 ## Réponse GraphQL
 
@@ -128,7 +128,7 @@ La réponse JSON obtenue contient les champs demandés, avec l’URL optimisée 
 }
 ```
 
-Pour charger l’image optimisée pour le web de l’image référencée dans votre application, utilisez l’`_dynamicUrl` de l’`primaryImage` comme URL source de l’image.
+Pour charger l’image optimisée pour le web de l’image référencée dans votre application, utilisez la méthode `_dynamicUrl` de `primaryImage` comme URL source de l’image.
 
 Dans React, l’affichage de l’image optimisée pour le web à partir de l’instance de publication AEM ressemble à ceci :
 
@@ -145,7 +145,7 @@ Souvenez-vous, `_dynamicUrl` n’inclut pas le domaine AEM. Vous devez donc four
 
 ## URL réactives
 
-L’exemple ci-dessus illustre l’utilisation d’une image à taille unique. Toutefois, dans les expériences web, des visionneuses d’images réactives sont souvent requises. Les images réactives peuvent être implémentées à l’aide de [img srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) ou d’[éléments d’image](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). L’extrait de code suivant montre comment utiliser l’`_dynamicUrl` en tant que base et en ajoutant différents paramètres de largeur pour alimenter différentes vues réactives. Non seulement le paramètre de requête `width` peut être utilisé, mais d’autres paramètres de requête peuvent être ajoutés par le client ou la cliente pour optimiser davantage la ressource image en fonction de ses besoins.
+L’exemple ci-dessus illustre l’utilisation d’une image à taille unique. Toutefois, dans les expériences web, des visionneuses d’images réactives sont souvent requises. Les images réactives peuvent être implémentées à l’aide de [img srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) ou d’[éléments d’image](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). Le fragment de code suivant montre comment utiliser la variable `_dynamicUrl` comme base. `width` est un paramètre d’URL que vous pouvez ensuite ajouter à `_dynamicUrl` pour alimenter différentes vues réactives.
 
 ```javascript
 // The AEM host is usually read from a environment variable of the SPA.
