@@ -11,7 +11,7 @@ thumbnail: ecma-fragments.jpg
 exl-id: 6b0bd2f1-b8ee-4f96-9813-8c11aedd3621
 duration: 100
 source-git-commit: 9fef4b77a2c70c8cf525d42686f4120e481945ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '347'
 ht-degree: 100%
 
