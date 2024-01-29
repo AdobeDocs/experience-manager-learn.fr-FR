@@ -10,7 +10,7 @@ last-substantial-update: 2022-12-14T00:00:00Z
 exl-id: 7aba25d1-0d4d-4c49-8132-f844a288e8f3
 duration: 23
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '101'
 ht-degree: 100%
 
