@@ -7,8 +7,8 @@ jira: KT-2233
 index: y
 team: TM
 source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
-workflow-type: tm+mt
-source-wordcount: '36'
+workflow-type: ht
+source-wordcount: '39'
 ht-degree: 100%
 
 ---
