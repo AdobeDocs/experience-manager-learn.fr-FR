@@ -11,7 +11,7 @@ thumbnail: KT-10253.jpeg
 last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 377
-source-git-commit: 2aec84f0fbd34678a4e25200ae0cdc6396beca95
+source-git-commit: d178059f6f00228586e692465f7f437129bffaae
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 90%
@@ -97,7 +97,7 @@ La variable `$path` utilisée dans le filtre `_path` nécessite le chemin d’ac
 `_assetTransform` définit la manière dont l’`_dynamicUrl` est construite pour optimiser le rendu d’image servi. Les URL des images optimisées pour le web peuvent également être ajustées sur le client ou la cliente en modifiant les paramètres de requête de l’URL.
 
 | Paramètre GraphQL | Description | Requis | Valeurs de variable GraphQL |
-|:---------|:----------|:-------------------------------|:--:|:--------------------------|
+|-------------------|------------------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------|
 | `format` | Format de la ressource image. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`, `WEBP`, `WEBPLL`, `WEBPLY` |
 | `seoName` | Nom du segment de fichier dans l’URL. Si aucun nom n’est fourni, le nom de la ressource image est utilisé. | ✘ | Alphanumérique, `-`, ou `_` |
 | `crop` | Image de recadrage extraite de l’image, doit être de la taille de l’image | ✘ | Entiers positifs définissant une zone de recadrage dans les limites des dimensions de l’image d’origine |
@@ -107,6 +107,7 @@ La variable `$path` utilisée dans le filtre `_path` nécessite le chemin d’ac
 | `quality` | Qualité de l’image en pourcentage de la qualité originale. | ✘ | 1-100 |
 | `width` | Largeur de l’image de sortie en pixels. Lorsque `size` est fourni, `width` est ignoré. | ✘ | Entier positif |
 | `preferWebP` | Si sa valeur est `true` et qu’AEM sert un WebP et si le navigateur le prend en charge, quel que soit le `format`. | ✘ | `true`, `false` |
+
 
 ## Réponse GraphQL
 
