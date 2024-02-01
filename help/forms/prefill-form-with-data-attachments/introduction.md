@@ -8,9 +8,9 @@ level: Beginner
 version: 6.5
 topic: Integrations
 jira: KT-14794
-source-git-commit: 236d288c8b88948c5004ab777169768065df16f2
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '104'
 ht-degree: 7%
 
 ---
@@ -27,7 +27,7 @@ Dans ce tutoriel, vous apprenez à mettre en oeuvre un cas d’utilisation simpl
 
 Pour mettre en oeuvre le cas d’utilisation ci-dessus dans AEM Forms, vous aurez besoin des éléments suivants :
 
-* Instance AEM Forms 6.5.19
+* AEM Forms 6.5.19 ou version ultérieure
 * [Compte Azure Portal](https://portal.azure.com/)
 
 

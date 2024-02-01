@@ -7,10 +7,10 @@ topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2024-01-29T00:00:00Z
-source-git-commit: 959683f23b7b04e315a5a68c13045e1f7973cf94
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 79%
+source-wordcount: '559'
+ht-degree: 66%
 
 ---
 
@@ -61,16 +61,18 @@ La ligne 6 exporte les données XML xmlData du fichier PDF.
 1. /content/AemFormsSamples/outputservice
 1. /content/AemFormsSamples/renderxdp
 1. Recherchez le filtre référent Sling (« Sling Referrer filter »).
-1. Cochez la case « Autoriser les champs vides ». (Ce paramètre doit être utilisé à des fins de test uniquement.)
-Il existe plusieurs façons de tester l’exemple de code. La plus rapide et la plus simple est d’utiliser l’application Postman. Postman vous permet d’envoyer des requêtes POST à votre serveur. Installez l’application Postman sur votre système.
-Lancez l’application et saisissez l’URL suivante pour tester l’API d’export des données.
+1. Cochez la case « Autoriser les champs vides ». (Ce paramètre doit être utilisé à des fins de test uniquement)
 
-Assurez-vous de sélectionner « POST » dans la liste déroulante.
-http://localhost:4502/content/AemFormsSamples/exportdata.html
-Spécifiez « Autorisation » comme authentification de base. Indiquez le nom d’utilisateur ou d’utilisatrice et le mot de passe du serveur AEM.
-Accédez à l’onglet « Corps » et spécifiez les paramètres de requête comme illustré dans l’image ci-dessous.
-![export](assets/postexport.png)
-Cliquez ensuite sur le bouton Envoyer.
+## Tester les exemples
+
+Il existe plusieurs façons de tester l’exemple de code. La plus rapide et la plus simple est d’utiliser l’application Postman. Postman vous permet d’envoyer des requêtes de POST à votre serveur.
+
+* Installez l’application Postman sur votre système.
+* Lancez l’application et saisissez l’URL appropriée.
+* Assurez-vous d’avoir sélectionné &quot;POST&quot; dans la liste déroulante
+* Veillez à spécifier &quot;Autorisation&quot; comme &quot;Auth de base&quot;. Spécifiez le nom d’utilisateur et le mot de passe du serveur AEM
+* Définition des paramètres de requête dans l’onglet Corps
+* Cliquez sur le bouton Envoyer .
 
 Le package contient 4 exemples. Les paragraphes suivants expliquent à quel moment utiliser le service de sortie ou le service Forms, l’URL du service, les paramètres d’entrée attendus par chaque service.
 

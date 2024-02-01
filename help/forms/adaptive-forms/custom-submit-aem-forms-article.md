@@ -9,16 +9,21 @@ level: Experienced
 exl-id: 64b586a6-e9ef-4a3d-8528-55646ab03cc4
 last-substantial-update: 2021-04-09T00:00:00Z
 duration: 59
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '205'
-ht-degree: 100%
+source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 88%
 
 ---
 
 # Écrire un envoi personnalisé dans AEM Forms {#writing-a-custom-submit-in-aem-forms}
 
 Découvrez une méthode rapide et simple pour créer votre propre action d’envoi personnalisée pour le formulaire adaptatif.
+
+>[!NOTE]
+>Le code de cet article ne fonctionne pas avec le formulaire adaptatif basé sur les composants principaux.
+>[L’article équivalent pour le formulaire adaptatif basé sur les composants principaux est disponible ici](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/custom-submit-headless-forms/custom-submit-service.html?lang=en)
+
 
 Cet article décrit comment créer une action d’envoi personnalisée pour gérer l’envoi d’un formulaire adaptatif.
 
