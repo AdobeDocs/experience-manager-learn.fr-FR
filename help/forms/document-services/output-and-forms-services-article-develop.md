@@ -1,22 +1,22 @@
 ---
 title: Développer avec les services Output et Forms dans AEM Forms
-description: Utiliser l’API des services Output et Forms dans AEM Forms
+description: Découvrez comment développer avec l’API Output et Forms Service dans AEM Forms.
 feature: Output Service
 version: 6.4,6.5
 topic: Development
 role: Developer
 level: Intermediate
 last-substantial-update: 2024-01-29T00:00:00Z
-source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
+source-git-commit: 8e9bf8001e4bb7341aeadd65ffd2543da359e061
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 66%
+source-wordcount: '565'
+ht-degree: 62%
 
 ---
 
 # Développer avec les services Output et Forms dans AEM Forms{#developing-with-output-and-forms-services-in-aem-forms}
 
-Utiliser l’API des services Output et Forms dans AEM Forms
+Découvrez comment développer avec l’API Output et Forms Service dans AEM Forms.
 
 Dans cet article, nous examinerons ce qui suit.
 
