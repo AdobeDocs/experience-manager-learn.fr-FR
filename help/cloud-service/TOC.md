@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 85e1ee33626d27f1b6c07bc631a7c1068930f827
+source-git-commit: 5d8ee3b9ab6fb974f7faebb1d0ce42d699e2063c
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1124'
 ht-degree: 92%
 
 ---
@@ -171,6 +171,7 @@ ht-degree: 92%
       + [Journalisation - Chargement d’événements AEM](./eventing/examples/journaling.md)
       + [Action Adobe I/O Runtime - Réception d’événements AEM](./eventing/examples/runtime-action.md)
       + [Action Adobe I/O Runtime - Événements d’AEM de processus](./eventing/examples/event-processing-using-runtime-action.md)
+      + [Événements AEM Assets - Intégration PIM](./eventing/examples/assets-pim-integration.md)
 + Migration {#migration}
    + [Outil de transfert de contenu](./migration/content-transfer-tool.md)
    + [Importation en bloc de ressources](./migration/bulk-import.md)
@@ -266,13 +267,13 @@ ht-degree: 92%
       + [Tester la solution](./forms/forms-cs-assembler/test.md)
       + [Difficulté](./forms/forms-cs-assembler/challenge.md)
    + Stocker les envois de formulaire avec des balises d’index blob{#store-submiited-data-with-metadata-tags}
-      + [Présentation](./forms/store-submiited-data-with-metadata-tags/introduction.md)
+      + [Introduction](./forms/store-submiited-data-with-metadata-tags/introduction.md)
       + [Étendre le composant de groupe de choix](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)
       + [Création d’une configuration OSGi](./forms/store-submiited-data-with-metadata-tags/create-osgi-configuration.md)
       + [Création de balises d’index](./forms/store-submiited-data-with-metadata-tags/create-blob-index-tags.md)
       + [Créer un envoi personnalisé](./forms/store-submiited-data-with-metadata-tags/create-custom-submit.md)
    + Préremplir le formulaire basé sur un composant principal{#prefill-core-component-based-form}
-      + [Présentation](./forms/prefill-core-component-form/introduction.md)
+      + [Introduction](./forms/prefill-core-component-form/introduction.md)
       + [Service de préremplissage d’écriture](./forms/prefill-core-component-form/pre-fill-service.md)
       + [Tester la solution](./forms/prefill-core-component-form/test-solution.md)
    + Stockage de portail Azure{#forms-cs-azure-portal}
