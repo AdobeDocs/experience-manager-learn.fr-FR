@@ -11,7 +11,7 @@ duration: 0
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: 5d8ee3b9ab6fb974f7faebb1d0ce42d699e2063c
+source-git-commit: f150a2517c4cafe55917e1aa50dca297c9bb3bc5
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 1%
@@ -102,7 +102,7 @@ Pour mettre à jour les métadonnées de la ressource dans AEM à partir du proj
 
 Pour effectuer la récupération et la mise à jour des métadonnées, commencez par mettre à jour la création automatique. _générique_ code d’action dans `src/dx-excshell-1/actions/generic` dossier.
 
-Reportez-vous au fichier joint WKND-Assets-PIM-Integration.zip pour obtenir le code complet. La section ci-dessous met en surbrillance les fichiers clés.
+Consultez la section [WKND-Assets-PIM-Integration.zip](../assets/examples/assets-pim-integration/WKND-Assets-PIM-Integration.zip) pour le code complet et la section ci-dessous met en surbrillance les fichiers clés.
 
 - La variable `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` file moque l’appel de l’API PIM pour récupérer des métadonnées supplémentaires telles que le SKU et le nom du fournisseur.
 
