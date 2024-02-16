@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: f679b4e5e97c9ffba2f04fceaf554e8a231ddfa6
+source-git-commit: 6ef17e61190f58942dcf9345b2ea660d972a8f7e
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1116'
 ht-degree: 1%
 
 ---
@@ -21,15 +21,19 @@ ht-degree: 1%
 
 # Événements AEM Assets pour l’intégration PIM
 
-** REMARQUE : Ce tutoriel utilise des API as a Cloud Service expérimentales AEM.  Pour accéder à ces API, vous devez accepter un contrat logiciel de version préliminaire et activer manuellement ces API pour votre environnement par ingénierie d’Adobe.  Contactez l’assistance Adobe pour demander l’accès. **
+>[!IMPORTANT]
+>
+>Ce tutoriel utilise des API as a Cloud Service expérimentales AEM. Pour accéder à ces API, vous devez accepter un contrat logiciel de version préliminaire et activer manuellement ces API pour votre environnement par ingénierie d’Adobe. Pour demander l’accès, contactez l’assistance Adobe.
 
-Découvrez comment intégrer AEM Assets à un système tiers, tel qu’un système de gestion des informations sur les produits (PIM) ou de gestion des lignes de produits (PLM), pour mettre à jour les métadonnées des ressources **utilisation d’événements d’AEM E/S natifs**. Lors de la réception d’un événement AEM Assets, les métadonnées de la ressource peuvent être mises à jour dans AEM, le PIM ou les deux systèmes, en fonction des besoins de l’entreprise. Cependant, dans cet exemple, nous allons démontrer la mise à jour des métadonnées de la ressource dans AEM.
+Découvrez comment intégrer AEM Assets à un système tiers, tel qu’un système de gestion des informations sur les produits (PIM) ou de gestion des lignes de produits (PLM), pour mettre à jour les métadonnées des ressources **utilisation d’événements d’AEM E/S natifs**. Lors de la réception d’un événement AEM Assets, les métadonnées de la ressource peuvent être mises à jour dans AEM, le PIM ou les deux systèmes, en fonction des besoins de l’entreprise. Cependant, cet exemple illustre la mise à jour des métadonnées de la ressource dans AEM.
 
-Pour exécuter la mise à jour des métadonnées de ressource **code en dehors de l’AEM**, nous tirerons parti de [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), une plateforme sans serveur. Le flux de traitement des événements est le suivant :
+Pour exécuter la mise à jour des métadonnées de ressource **code en dehors de l’AEM**, la variable [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), une plateforme sans serveur est utilisée.
+
+Le flux de traitement des événements est le suivant :
 
 ![Événements AEM Assets pour l’intégration PIM](../assets/examples/assets-pim-integration/aem-assets-pim-integration.png)
 
-1. Le service AEM Author déclenche une _Traitement des ressources terminé_ lorsqu’un chargement de ressources est terminé et que toutes les activités de traitement des ressources sont terminées.  En attendant que le traitement soit terminé, vous avez la garantie que tout traitement prêt à l’emploi, tel que l’extraction des métadonnées, est terminé avant de continuer.
+1. Le service AEM Author déclenche une _Traitement des ressources terminé_ lorsqu’un chargement de ressources est terminé et que toutes les activités de traitement des ressources sont terminées. En attendant que le traitement soit terminé, vous avez la garantie que tout traitement prêt à l’emploi, tel que l’extraction des métadonnées, est terminé.
 1. L’événement est envoyé au [Événements d’Adobe I/O](https://developer.adobe.com/events/) service.
 1. Le service Adobe I/O Events transmet l’événement à la variable [Action Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) pour le traitement.
 1. L’action Adobe I/O Runtime appelle l’API du système PIM pour récupérer des métadonnées supplémentaires telles que le SKU, les informations sur le fournisseur ou d’autres détails.
@@ -54,7 +58,7 @@ Les étapes de développement de haut niveau sont les suivantes :
 1. Configuration du projet dans ADC
 1. Configuration du service d’auteur AEM pour activer la communication du projet ADC
 1. Développement d’une action d’exécution qui orchestre la récupération et la mise à jour des métadonnées
-1. Chargement d’une ressource dans le service de création AEM et vérification de la mise à jour des métadonnées
+1. Téléchargez une ressource vers le service de création AEM et vérifiez que les métadonnées ont été mises à jour.
 
 Pour plus d’informations sur les étapes 1 à 2, reportez-vous au [Action Adobe I/O Runtime et événements AEM](./runtime-action.md#) pour les étapes 3 à 6, reportez-vous aux sections suivantes.
 
@@ -106,7 +110,7 @@ Pour effectuer la récupération et la mise à jour des métadonnées, commencez
 
 Consultez la section [WKND-Assets-PIM-Integration.zip](../assets/examples/assets-pim-integration/WKND-Assets-PIM-Integration.zip) pour le code complet et la section ci-dessous met en surbrillance les fichiers clés.
 
-- La variable `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` file moque l’appel de l’API PIM pour récupérer des métadonnées supplémentaires telles que le SKU et le nom du fournisseur.  Ce fichier est utilisé à des fins de démonstration.  Une fois que le flux de bout en bout fonctionne, remplacez cette fonction par un appel à votre système PIM réel pour récupérer les métadonnées de la ressource.
+- La variable `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` file moque l’appel de l’API PIM pour récupérer des métadonnées supplémentaires telles que le SKU et le nom du fournisseur. Ce fichier est utilisé à des fins de démonstration. Une fois que le flux de bout en bout fonctionne, remplacez cette fonction par un appel à votre système PIM réel pour récupérer les métadonnées de la ressource.
 
   ```javascript
   /**
@@ -209,7 +213,7 @@ Consultez la section [WKND-Assets-PIM-Integration.zip](../assets/examples/assets
 
 - La variable `src/dx-excshell-1/actions/model` Le dossier contient `aemAssetEvent.js` et `errors.js` fichiers, qui sont utilisés par l’action pour analyser l’événement reçu et gérer les erreurs, respectivement.
 
-- La variable `src/dx-excshell-1/actions/generic/index.js` utilise les modules susmentionnés pour orchestrer la récupération et la mise à jour des métadonnées.
+- La variable `src/dx-excshell-1/actions/generic/index.js` utilise les modules mentionnés précédemment pour orchestrer la récupération et la mise à jour des métadonnées.
 
   ```javascript
   ...
@@ -277,7 +281,7 @@ $ aio app deploy
 
 Pour vérifier l’intégration AEM Assets et PIM, procédez comme suit :
 
-- Pour afficher les métadonnées fournies par le modèle PIM comme le SKU et le nom du fournisseur, créez un schéma de métadonnées dans AEM Assets, voir [Schémas de métadonnées](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/metadata-schemas.html) qui affiche les propriétés de métadonnées du SKU et du nom du fournisseur.
+- Pour afficher les métadonnées fournies par le modèle PIM comme le SKU et le nom du fournisseur, créez un schéma de métadonnées dans AEM Assets, voir [Schéma de métadonnées](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/metadata-schemas.html) qui affiche les propriétés de métadonnées du SKU et du nom du fournisseur.
 
 - Chargez une ressource dans AEM service Auteur et vérifiez la mise à jour des métadonnées.
 
