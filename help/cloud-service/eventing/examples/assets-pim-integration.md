@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
-source-git-commit: f150a2517c4cafe55917e1aa50dca297c9bb3bc5
+source-git-commit: f679b4e5e97c9ffba2f04fceaf554e8a231ddfa6
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '1124'
 ht-degree: 1%
 
 ---
@@ -21,17 +21,19 @@ ht-degree: 1%
 
 # Événements AEM Assets pour l’intégration PIM
 
-Découvrez comment intégrer AEM Assets et le système de gestion des informations sur les produits (PIM) pour mettre à jour les métadonnées des ressources **utilisation d’AEM Eventing**. Lors de la réception d’un événement AEM Assets, les métadonnées de la ressource peuvent être mises à jour dans AEM, PIM ou les deux systèmes, en fonction des besoins de l’entreprise. Cependant, dans cet exemple, mettons à jour les métadonnées de la ressource dans AEM.
+** REMARQUE : Ce tutoriel utilise des API as a Cloud Service expérimentales AEM.  Pour accéder à ces API, vous devez accepter un contrat logiciel de version préliminaire et activer manuellement ces API pour votre environnement par ingénierie d’Adobe.  Contactez l’assistance Adobe pour demander l’accès. **
 
-Pour exécuter la mise à jour des métadonnées de ressource **code en dehors de l’AEM**, la variable [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/) une plateforme sans serveur est utilisée. Le flux de traitement des événements est le suivant :
+Découvrez comment intégrer AEM Assets à un système tiers, tel qu’un système de gestion des informations sur les produits (PIM) ou de gestion des lignes de produits (PLM), pour mettre à jour les métadonnées des ressources **utilisation d’événements d’AEM E/S natifs**. Lors de la réception d’un événement AEM Assets, les métadonnées de la ressource peuvent être mises à jour dans AEM, le PIM ou les deux systèmes, en fonction des besoins de l’entreprise. Cependant, dans cet exemple, nous allons démontrer la mise à jour des métadonnées de la ressource dans AEM.
+
+Pour exécuter la mise à jour des métadonnées de ressource **code en dehors de l’AEM**, nous tirerons parti de [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/overview/what_is_runtime/), une plateforme sans serveur. Le flux de traitement des événements est le suivant :
 
 ![Événements AEM Assets pour l’intégration PIM](../assets/examples/assets-pim-integration/aem-assets-pim-integration.png)
 
-1. Le service AEM Author déclenche une _Traitement des ressources terminé_ lorsqu’un chargement de ressource est terminé.
+1. Le service AEM Author déclenche une _Traitement des ressources terminé_ lorsqu’un chargement de ressources est terminé et que toutes les activités de traitement des ressources sont terminées.  En attendant que le traitement soit terminé, vous avez la garantie que tout traitement prêt à l’emploi, tel que l’extraction des métadonnées, est terminé avant de continuer.
 1. L’événement est envoyé au [Événements d’Adobe I/O](https://developer.adobe.com/events/) service.
 1. Le service Adobe I/O Events transmet l’événement à la variable [Action Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) pour le traitement.
-1. L’action Adobe I/O Runtime appelle l’API PIM moquée pour récupérer des métadonnées supplémentaires telles que le SKU, les informations sur les fournisseurs.
-1. Les métadonnées supplémentaires récupérées par PIM sont ensuite mises à jour dans AEM Assets à l’aide de la variable [API de création de ressources](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/).
+1. L’action Adobe I/O Runtime appelle l’API du système PIM pour récupérer des métadonnées supplémentaires telles que le SKU, les informations sur le fournisseur ou d’autres détails.
+1. Les métadonnées supplémentaires extraites du fichier PIM sont ensuite mises à jour dans AEM Assets à l’aide de la variable [API de création de ressources](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/).
 
 ## Conditions préalables
 
@@ -47,22 +49,22 @@ Pour suivre ce tutoriel, vous devez :
 
 Les étapes de développement de haut niveau sont les suivantes :
 
-1. [Créer un projet dans la console Adobe Developer (ADC)](./runtime-action.md#Create-project-in-Adobe-Developer-Console)
+1. [Création d’un projet dans la console Adobe Developer (ADC)](./runtime-action.md#Create-project-in-Adobe-Developer-Console)
 1. [Initialisation du projet pour le développement local](./runtime-action.md#initialize-project-for-local-development)
-1. Configuration d’un projet dans ADC
+1. Configuration du projet dans ADC
 1. Configuration du service d’auteur AEM pour activer la communication du projet ADC
-1. Développer une action d’exécution qui orchestre la récupération et la mise à jour des métadonnées
-1. Chargement d’une ressource dans AEM service Auteur et vérification de la mise à jour des métadonnées
+1. Développement d’une action d’exécution qui orchestre la récupération et la mise à jour des métadonnées
+1. Chargement d’une ressource dans le service de création AEM et vérification de la mise à jour des métadonnées
 
-Pour obtenir des instructions détaillées sur 1-2, reportez-vous à la section [Action Adobe I/O Runtime et événements AEM](./runtime-action.md#) pour les versions 3 à 6, reportez-vous aux sections suivantes.
+Pour plus d’informations sur les étapes 1 à 2, reportez-vous au [Action Adobe I/O Runtime et événements AEM](./runtime-action.md#) pour les étapes 3 à 6, reportez-vous aux sections suivantes.
 
-### Configuration d’un projet dans la console Adobe Developer (ADC)
+### Configuration du projet dans la console Adobe Developer (ADC)
 
 Pour recevoir des événements AEM Assets et exécuter l’action Adobe I/O Runtime créée à l’étape précédente, configurez le projet dans ADC.
 
 - Dans ADC, accédez à la [project](https://developer.adobe.com/console/projects). Sélectionnez la variable `Stage` workspace, c’est là que l’action d’exécution a été déployée.
 
-- Cliquez sur **Ajouter un service** et sélectionnez **Événement** . Dans le **Ajout d’événements** boîte de dialogue, sélectionnez **Experience Cloud** > **AEM Assets**, puis cliquez sur **Suivant**. Suivez d’autres étapes de configuration, sélectionnez l’instance AEMCS, _Traitement des ressources terminé_ , type d’authentification OAuth serveur à serveur et autres détails.
+- Cliquez sur le bouton **Ajouter un service** et sélectionnez l’option **Événement** . Dans le **Ajout d’événements** boîte de dialogue, sélectionnez **Experience Cloud** > **AEM Assets**, puis cliquez sur **Suivant**. Suivez d’autres étapes de configuration, sélectionnez l’instance AEMCS, _Traitement des ressources terminé_ , type d’authentification OAuth serveur à serveur et autres détails.
 
   ![Événement AEM Assets - événement add](../assets/examples/assets-pim-integration/add-aem-assets-event.png)
 
@@ -70,13 +72,13 @@ Pour recevoir des événements AEM Assets et exécuter l’action Adobe I/O Runt
 
   ![Événement AEM Assets - événement de réception](../assets/examples/assets-pim-integration/receive-aem-assets-event.png)
 
-- De même, cliquez sur **Ajouter un service** et sélectionnez **API** . Dans le **Ajout d’une API** modal, sélectionnez **Experience Cloud** > **API AS A CLOUD SERVICE AEM** et cliquez sur **Suivant**.
+- De même, cliquez sur le bouton **Ajouter un service** et sélectionnez l’option **API** . Dans le **Ajout d’une API** modal, sélectionnez **Experience Cloud** > **API AS A CLOUD SERVICE AEM** et cliquez sur **Suivant**.
 
   ![Ajout AEM API as a Cloud Service - Configuration du projet](../assets/examples/assets-pim-integration/add-aem-api.png)
 
 - Sélectionnez **OAuth serveur à serveur** pour le type d’authentification et cliquez sur **Suivant**.
 
-- Sélectionnez ensuite le **AEM Administrateurs-XXX** profil de produit et cliquez sur **Enregistrer l’API configurée**. Pour accéder à des fonctionnalités granulaires et à des autorisations, le profil de produit sélectionné doit être associé à l’événement AEM Assets produisant l’environnement AEMCS.
+- Sélectionnez ensuite le **AEM Administrateurs-XXX** profil de produit et cliquez sur **Enregistrer l’API configurée**. Pour mettre à jour la ressource en question, le profil de produit sélectionné doit être associé à l’environnement AEM Assets à partir duquel l’événement est produit et avoir un accès suffisant pour y mettre à jour les ressources.
 
   ![Ajout AEM API as a Cloud Service - Configuration du projet](../assets/examples/assets-pim-integration/add-aem-api-product-profile-select.png)
 
@@ -104,7 +106,7 @@ Pour effectuer la récupération et la mise à jour des métadonnées, commencez
 
 Consultez la section [WKND-Assets-PIM-Integration.zip](../assets/examples/assets-pim-integration/WKND-Assets-PIM-Integration.zip) pour le code complet et la section ci-dessous met en surbrillance les fichiers clés.
 
-- La variable `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` file moque l’appel de l’API PIM pour récupérer des métadonnées supplémentaires telles que le SKU et le nom du fournisseur.
+- La variable `src/dx-excshell-1/actions/generic/mockPIMCommunicator.js` file moque l’appel de l’API PIM pour récupérer des métadonnées supplémentaires telles que le SKU et le nom du fournisseur.  Ce fichier est utilisé à des fins de démonstration.  Une fois que le flux de bout en bout fonctionne, remplacez cette fonction par un appel à votre système PIM réel pour récupérer les métadonnées de la ressource.
 
   ```javascript
   /**
@@ -285,7 +287,7 @@ Pour vérifier l’intégration AEM Assets et PIM, procédez comme suit :
 
 La synchronisation des métadonnées des ressources entre AEM et d’autres systèmes tels que PIM est souvent requise dans l’entreprise. L’utilisation d’AEM Eventing de telles exigences peut être réalisée.
 
-- Le code de métadonnées de la ressource est exécuté en dehors d’AEM, ce qui permet d’éviter la charge sur AEM service Auteur et donc une architecture pilotée par un événement qui se met à l’échelle indépendamment.
+- Le code de récupération des métadonnées de la ressource est exécuté en dehors d’AEM, ce qui permet d’éviter la charge sur AEM service Auteur et donc une architecture pilotée par un événement qui se met à l’échelle indépendamment.
 - L’API d’auteur de ressources nouvellement introduite est utilisée pour mettre à jour les métadonnées de ressources dans AEM.
 - L’authentification API utilise OAuth serveur à serveur (ou flux d’informations d’identification du client), voir [Guide de mise en oeuvre des informations d’identification OAuth Server-to-Server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/).
 - Au lieu d’actions Adobe I/O Runtime, d’autres webhooks ou Amazon EventBridge peuvent être utilisés pour recevoir l’événement AEM Assets et traiter la mise à jour des métadonnées.
