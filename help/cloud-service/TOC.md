@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 678bda0ea6f6c727170c596e9d3d5f0687ec830f
+source-git-commit: da8d584e04b5ef375ef5731ea1d5f9e2c0438b2a
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1128'
 ht-degree: 92%
 
 ---
@@ -360,6 +360,7 @@ ht-degree: 92%
       + [Présentation](./expert-resources/cloud-5/cloud5-introduction.md)
       + [Saison 1](./expert-resources/cloud-5/cloud5-season-1.md)
       + [Saison 2](./expert-resources/cloud-5/cloud5-season-2.md)
+      + [Saison 3](./expert-resources/cloud-5/cloud5-season-3.md)
       + [Réseau CDN AEM Partie 1](./expert-resources/cloud-5/cloud5-aem-cdn-part1.md)
       + [Réseau CDN AEM Partie 2](./expert-resources/cloud-5/cloud5-aem-cdn-part2.md)
       + [Fichiers journaux AEM](./expert-resources/cloud-5/cloud5-aem-log-files.md)
@@ -381,3 +382,5 @@ ht-degree: 92%
          + [Cloud Manager - Audit de l’expérience](./expert-resources/cloud-5/season-2/cloud5-mocm-experience-audit.md)
          + [Cloud Manager - Tests unitaires](./expert-resources/cloud-5/season-2/cloud5-mocm-unit-tests.md)
          + [Cloud Manager - Tests fonctionnels](./expert-resources/cloud-5/season-2/cloud5-mocm-functional-tests.md)
+      + Saison 3{#season-3}
+         + [Recherche tierce](./expert-resources/cloud-5/season-3/cloud5-3rd-party-search.md)
