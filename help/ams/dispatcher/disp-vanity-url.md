@@ -10,10 +10,10 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
 duration: 267
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '988'
-ht-degree: 100%
+source-git-commit: 0deeaac90e9d181a60b407e17087650e0be1ff28
+workflow-type: tm+mt
+source-wordcount: '1160'
+ht-degree: 80%
 
 ---
 
@@ -99,12 +99,28 @@ Dispatcher comporte une section de configuration dans son fichier de batterie :
 }
 ```
 
-Cette configuration indique à Dispatcher de récupérer cette URL à partir de l’instance AEM qu’il gère toutes les 300 secondes pour récupérer la liste des éléments que nous voulons autoriser.
+La variable `/delay` mesuré en secondes ne fonctionne pas à intervalle fixe, mais plutôt sur une vérification basée sur des conditions. Dispatcher évalue l’horodatage de modification de la variable `/file` (qui stocke la liste des URL de redirection vers un microsite reconnues) lors de la réception d’une demande d’URL non répertoriée. La variable `/file` ne sera pas actualisé si la différence temporelle entre le moment actuel et la variable `/file`La dernière modification de est inférieure à la valeur `/delay` durée. Actualisation de la `/file` se produit dans deux conditions :
+
+1. La requête entrante concerne une URL qui n’est pas mise en cache ou répertoriée dans le `/file`.
+1. Au moins `/delay` les secondes sont écoulées depuis que la fonction `/file` a été mise à jour pour la dernière fois.
+
+Ce mécanisme est conçu pour se protéger des attaques par déni de service (DoS), qui pourraient sinon submerger Dispatcher en requêtes, en exploitant la fonction URL Vanity .
+
+En termes plus simples, la `/file` contenant des URL de redirection vers un microsite n’est mis à jour que si une requête parvient pour une URL qui n’est pas déjà dans la variable `/file` et si la variable `/file`La dernière modification de a remonte à plus longtemps que la `/delay` point.
+
+Pour déclencher explicitement une actualisation de la variable `/file`, vous pouvez demander une URL inexistante après avoir vérifié les `/delay` le temps est écoulé depuis la dernière mise à jour. Voici des exemples d’URL à cet effet :
+
+- `https://dispatcher-host-name.com/this-vanity-url-does-not-exist`
+- `https://dispatcher-host-name.com/please-hand-me-that-planet-maestro`
+- `https://dispatcher-host-name.com/random-vanity-url`
+
+Cette approche force Dispatcher à mettre à jour la variable `/file`, à condition que la variable `/delay` l’intervalle s’est écoulé depuis sa dernière modification.
 
 Il stocke le cache de la réponse dans l’argument `/file` comme le montre cet exemple `/tmp/vanity_urls`.
 
-Ainsi, si vous visitez l’instance AEM au niveau de l’URI, vous voyez ce qu’elle récupère :
-![Capture d’écran du contenu rendu à partir de /libs/granite/dispatcher/content/vanityUrls.html ](assets/disp-vanity-url/vanity-url-component.png "vanity-url-component").
+Ainsi, si vous visitez l’instance AEM à l’URI, vous verrez ce qu’elle récupère :
+
+![capture d’écran du contenu rendu à partir de /libs/granite/dispatcher/content/vanityUrls.html](assets/disp-vanity-url/vanity-url-component.png "vanity-url-component")
 
 Il s’agit en fait d’une liste, très simple.
 
