@@ -10,10 +10,10 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 252
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '799'
-ht-degree: 100%
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 93%
 
 ---
 
@@ -59,10 +59,9 @@ L’une ou l’autre des méthodes proposées permet d’éliminer ce message d�
 
 ## Filtres de refus
 
-
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
-ces entrées ne s’affichent pas toujours même si des refus se produisent si le niveau de journalisation est trop bas. Définissez-le sur Info ou Déboguer pour vous assurer que les filtres refusent les requêtes.
-</div>
+>[!NOTE]
+>
+>Ces entrées ne s’affichent pas toujours même si des rejets se produisent si le niveau de journalisation est trop bas. Définissez-le sur Info ou Déboguer pour vous assurer que les filtres refusent les requêtes.
 
 Exemple d’entrée de journal :
 
@@ -76,10 +75,9 @@ ou :
 Fri Jul 20 22:16:55 2018 I pid 128803 "GET /system/console/" ! - 8ms publishfarm/-
 ```
 
-<div style="color: #000;border-left: 6px solid red;background-color:#ddffff;"><b>Attention :</b>
-
-Il faut comprendre que les règles de Dispatcher ont été définies pour filtrer cette requête. Dans ce cas, la page qui a tenté d’être visitée a été refusée intentionnellement et nous ne ferons rien à ce propos.
-</div>
+>[!CAUTION]
+>
+>Il faut comprendre que les règles de Dispatcher ont été définies pour filtrer cette requête. Dans ce cas, la page qui a tenté d’être visitée a été refusée intentionnellement et nous ne ferons rien à ce propos.
 
 Si votre journal ressemble à cette entrée :
 
@@ -136,9 +134,9 @@ Cela signifie que l’on mesure la récupération au niveau de rendu par rapport
 
 Pour rendre ce nombre le plus élevé possible.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
-même si le fichier de batterie contient vos paramètres de cache pour tout mettre en cache, vous purgez peut-être trop souvent, ou de manière trop agressive, ce qui peut entraîner un taux d’accès au cache inférieur.
-</div>
+>[!NOTE]
+>
+>Même si le fichier de ferme contient vos paramètres de cache pour mettre en cache tout ce que vous purgez trop souvent ou de manière trop agressive, cela peut entraîner un taux d’accès au cache inférieur.
 
 ## Répertoire manquant
 

@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 53baef9c-aa4e-4f18-ab30-ef9f4f5513ee
 duration: 267
-source-git-commit: 0deeaac90e9d181a60b407e17087650e0be1ff28
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1159'
 ht-degree: 80%
 
 ---
@@ -182,9 +182,8 @@ Utilisez les deux méthodes, mais voici des conseils et critères à prendre en
 - Si l’URL de redirection est un point d’entrée de base qui ne change pas souvent et qui est fréquemment utilisé, utilisez une règle `mod_rewrite`.
 - Si l’espace de noms de redirection (par exemple : `/aboutus`) doit être réutilisé pour de nombreuses marques sur la même instance AEM, utilisez alors des règles de réécriture.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
-
-Si vous souhaitez utiliser la fonction AEM de redirection et éviter l’espace de noms, vous pouvez créer une convention de nommage. Utiliser des URL de redirection imbriquées comme `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
-</div>
+>[!NOTE]
+>
+>Si vous souhaitez utiliser la fonction AEM de redirection et éviter l’espace de noms, vous pouvez créer une convention de nommage. Utiliser des URL de redirection imbriquées comme `/brand1/aboutus`, `brand2/aboutus`, `brand3/aboutus`.
 
 [Suivant -> Connexion courante](./common-logs.md)

@@ -10,10 +10,10 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
 duration: 354
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '1132'
-ht-degree: 100%
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
+workflow-type: tm+mt
+source-wordcount: '1130'
+ht-degree: 94%
 
 ---
 
@@ -59,21 +59,23 @@ Lorsque vous suivez et respectez la conception/structure de l’installation, le
 - Permet des cycles de correction entièrement pris en charge par le système d’exploitation sans conflit ni réglages manuels.
 - Évite les violations SELinux de contextes de fichiers mal étiquetés.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
-Les images des serveurs Adobe Managed Services comportent généralement de petits lecteurs racines du système d’exploitation.Nous mettons nos données dans un volume distinct qui est généralement monté dans « /mnt ».
-Ensuite, nous utilisons ce volume au lieu des valeurs par défaut pour les répertoires par défaut suivants.
+>[!BEGINSHADEBOX &quot;Remarque&quot;]
+
+Les images des serveurs Managed Services Adobe ont généralement de petits lecteurs racine du système d’exploitation.  Nous mettons nos données dans un volume distinct, généralement monté dans `/mnt`
+Ensuite, nous utilisons ce volume au lieu des valeurs par défaut des répertoires par défaut suivants.
 
 `DocumentRoot`
 - Valeur par défaut : `/var/www/html`
 - AMS : `/mnt/var/www/html`
 
 `Log Directory`
-- Par défaut : `/var/log/httpd`
-- AMS : `/mnt/var/log/httpd`
+- Valeur par défaut : `/var/log/httpd`
+- AMS : `/mnt/var/log/httpd`
 
 Gardez à l’esprit que les anciens et les nouveaux répertoires sont mappés à nouveau au point de montage d’origine pour éliminer toute confusion.
 L’utilisation d’un volume distinct n’est pas essentielle, mais il est intéressant de la prendre en considération.
-</div>
+
+>[!ENDSHADEBOX]
 
 ## Modules complémentaires AMS
 
@@ -293,9 +295,9 @@ Comme exemple parfait lors de l’ajout du module Dispatcher à Apache, vous cr�
 LoadModule dispatcher_module modules/mod_dispatcher.so
 ```
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
-nous n’avons modifié aucun fichier existant fourni par Apache.Au lieu de cela, nous avons simplement ajouté les nôtres aux répertoires utilisés.
-</div><br/>
+>[!NOTE]
+>
+>Nous n&#39;avons modifié aucun fichier existant fourni par Apache. Au lieu de cela, nous avons simplement ajouté les nôtres aux répertoires qu&#39;ils étaient censés utiliser.
 
 Maintenant, nous utilisons notre module dans le fichier <b>`/etc/httpd/conf.d/dispatcher_vhost.conf`</b> qui initialise notre module et charge le fichier de configuration initial spécifique au module.
 

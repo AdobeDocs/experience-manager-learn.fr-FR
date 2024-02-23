@@ -10,9 +10,9 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7be6b3f9-cd53-41bc-918d-5ab9b633ffb3
 duration: 266
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '825'
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
+workflow-type: tm+mt
+source-wordcount: '824'
 ht-degree: 100%
 
 ---
@@ -309,9 +309,8 @@ $ cd /etc/httpd/conf.dispatcher.d/enabled_farms/; ln -s ../available_farms/400_w
 
 Il ne nous reste plus qu’à charger à nouveau le service de serveur web et à utiliser notre nouveau domaine.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
-
-Notez que nous avons uniquement modifié les éléments dont nous avions besoin pour modifier et exploiter les inclusions et le code existants fournis avec les fichiers de configuration de base.Nous n’avons qu’à délimiter l’élément que nous devons modifier.Cela facilite la tâche et nous permet de conserver moins de code.
-</div>
+>[!NOTE]
+>
+>Notez que nous avons uniquement modifié les éléments dont nous avions besoin pour modifier et exploiter les inclusions et le code existants fournis avec les fichiers de configuration de base.Nous n’avons qu’à délimiter l’élément que nous devons modifier.Cela facilite la tâche et nous permet de conserver moins de code.
 
 [Suivant -> Contrôle de l’intégrité du Dispatcher](./health-check.md)

@@ -10,10 +10,10 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
 duration: 653
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '2227'
-ht-degree: 100%
+source-git-commit: 19beb662b63476f4745291338d944502971638a3
+workflow-type: tm+mt
+source-wordcount: '2225'
+ht-degree: 92%
 
 ---
 
@@ -133,16 +133,17 @@ Si le paramètre de niveau du fichier stat est trop élevé, chaque demande de p
 
 Si le paramètre de ce niveau de fichier est trop bas, la demande de purge peut effacer plus que prévu.Ce qui, à son tour, entraîne l’exécution du cache plus souvent avec moins de demandes traitées à partir du cache, ce qui peut entraîner des problèmes de performances.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
+>[!BEGINSHADEBOX &quot;Remarque&quot;]
 
-Définissez le paramètre `statfilelevel` sur une valeur raisonnable.Examinez la structure de vos dossiers et assurez-vous qu’elle est suffisamment légère pour permettre des purges concises.Effectuez une purge de test pour vérifier que les performance du système restent optimales.
+Définissez la variable `statfilelevel` à un niveau raisonnable. Examinez la structure de vos dossiers et assurez-vous qu’elle est configurée pour permettre des vidages concis sans avoir à parcourir trop de répertoires. Testez-le et assurez-vous qu’il correspond à vos besoins lors d’un test de performance du système.
 
-Un bon exemple est un site qui prend en charge plusieurs langues.L’arborescence de contenu typique comprend les répertoires suivants.
+Un bon exemple est un site qui prend en charge les langues. L’arborescence de contenu classique contiendra les répertoires suivants :
 
 `/content/brand1/en/us/`
 
-Dans cet exemple, définissez le niveau du fichier stat sur 4.Cela permet de vous assurer que lorsque vous videz le contenu sous le dossier <b>`us`</b>, les dossiers des langues sont épargnés.
-</div>
+Dans cet exemple, utilisez un paramètre de niveau fichier stat de 4. Cela vous assure lorsque vous videz du contenu qui se trouve sous la balise **`us`** pour empêcher le vidage des dossiers de langue.
+
+>[!ENDSHADEBOX]
 
 ### Établissement de la connexion de la date et de l’heure du fichier stat
 
@@ -227,11 +228,11 @@ Cette entrée de configuration se trouve dans la section suivante du fichier de 
 
 Vous spécifiez le répertoire dans lequel vous souhaitez que Dispatcher soit renseigné et géré en tant que répertoire de cache.
 
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
-Ce répertoire doit correspondre au paramètre racine du document Apache pour le domaine pour lequel votre serveur web est configuré.
-
-Avoir des dossiers docroot imbriqués pour chaque batterie qui vivent comme sous-dossiers de la racine du document Apache est une mauvaise idée pour de nombreuses raisons.
-</div>
+>[!NOTE]
+>
+>Ce répertoire doit correspondre au paramètre racine du document Apache pour le domaine que votre serveur web est configuré pour utiliser.
+>
+>Avoir des dossiers docroot imbriqués pour chaque batterie qui vivent comme sous-dossiers de la racine du document Apache est une mauvaise idée pour de nombreuses raisons.
 
 ### Niveau de fichiers stat
 
@@ -275,13 +276,11 @@ Le `/statfileslevel` défini sur le nombre suivant avec la racine du document de
    - `/var/www/html/content/damn/brand1/en/.stat`
    - `/var/www/html/content/damn/brand1/en/us/.stat`
 
-
-<div style="color: #000;border-left: 6px solid #2196F3;background-color:#ddffff;"><b>Remarque :</b>
-
-Gardez à l’esprit que lorsque l’établissement de la connexion de date et heure se produit, le fichier `.stat` le plus proche est recherché.
-
-Avoir un niveau de fichier `.stat` de 0 et un fichier stat uniquement à l’adresse `/var/www/html/.stat` signifie que le contenu qui vit sous `/var/www/html/content/dam/brand1/en/us/` rechercherait le fichier `.stat` le plus proche et parcourerait 5 dossiers pour trouver le seul fichier `.stat` qui existe au niveau 0 et comparerait les dates à celui-ci.Cela signifie qu’une purge à ce niveau élevé invaliderait essentiellement tous les éléments mis en cache.
-</div>
+>[!NOTE]
+>
+>Gardez à l’esprit que lorsque l’établissement de la connexion de date et heure se produit, le fichier `.stat` le plus proche est recherché.
+>
+>Pour `.stat` niveau de fichier 0 et un fichier stat uniquement à l’adresse `/var/www/html/.stat` signifie que le contenu qui vit sous `/var/www/html/content/dam/brand1/en/us/` Recherchez le plus proche `.stat` et parcourir 5 dossiers pour trouver le seul `.stat` qui existe au niveau 0 et qui compare des dates à cela. Cela signifie qu’une purge à ce niveau élevé invaliderait essentiellement tous les éléments mis en cache.
 
 ### Invalidation autorisée
 
