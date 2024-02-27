@@ -4,10 +4,10 @@ description: La troisième saison vous permet d’en savoir plus sur AEM service
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: 8a88caeb8d894eb281321fc0b28fd41621c5c8db
+source-git-commit: d7608c552fad52492d36fb64587a5939c0cde7a2
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 36%
+source-wordcount: '223'
+ht-degree: 32%
 
 ---
 
@@ -56,7 +56,19 @@ Chaque saison varie en longueur et est diffusée selon un planning fixe. Les suj
                 Explore Real User Monitoring (RUM) fonctionne avec des Edge Delivery Services.
             </p>
         </td>   
-         <td>           
-         </td> 
+ <td>
+            <a href="./season-3/cloud5-edge-workers.md">
+                <img alt="Travailleurs Edge" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-edge-workers.md">
+                <strong>Travailleurs Edge</strong></a>        
+                <br/><em>avec James Talbot et Amol Anand, AEM Engineering</em>
+            </div>
+            <p>
+                <br/>
+                Explorez l’importance des travailleurs de pointe avec les Edge Delivery Services.
+            </p>
+        </td>   
   </tr>  
 </table>
