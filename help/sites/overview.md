@@ -6,9 +6,9 @@ sub-product: Experience Manager Sites
 topic: Content Management
 doc-type: Catalog
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
-workflow-type: ht
-source-wordcount: '253'
+source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
+workflow-type: tm+mt
+source-wordcount: '175'
 ht-degree: 100%
 
 ---
@@ -18,21 +18,6 @@ ht-degree: 100%
 {{edge-delivery-services}}
 
 Adobe Experience Manager (AEM) Sites est une plateforme de gestion de l’expérience de premier plan. Ce guide d’utilisation contient des vidéos et des tutoriels sur les nombreuses fonctions et capacités d’AEM Sites.
-
-<div id="whats-new-section">
-
-## Nouveautés
-
-* **[Vue d’ensemble d’AEM et d’Edge Delivery Services (vidéo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)**
-  *Découvrez l’univers complet d’Adobe Experience Manager (AEM) qui englobe AEM Sites, AEM Assets, AEM Headless, AEM Forms et Edge Delivery Services dans cette vidéo de présentation instructive.*
-
-* **[Que sont AEM et Edge Delivery Services ? (Vidéo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/what-is-aem-as-a-cloud-service.html?lang=fr)**
-  *Découvrez la valeur ajoutée d’Adobe Experience Manager (AEM) et d’Edge Delivery Services.*
-
-* **[Vue d’ensemble de l’architecture d’AEM avec Edge Delivery Services (vidéo)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=fr)**
-  *Découvrez l’architecture d’AEM as a Cloud Service.*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>

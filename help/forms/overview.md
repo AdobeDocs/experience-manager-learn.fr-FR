@@ -6,9 +6,9 @@ role: Developer
 sub-product: Experience Manager Forms
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
 duration: 88
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '277'
+source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
+workflow-type: tm+mt
+source-wordcount: '203'
 ht-degree: 100%
 
 ---
@@ -16,21 +16,6 @@ ht-degree: 100%
 # Tutoriels et vidéos d’AEM Forms {#overview}
 
 Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gérer, publier et mettre à jour des formulaires numériques complexes tout en s’intégrant aux processus principaux, aux règles métier et aux données. Ce guide d’utilisation contient des vidéos et des tutoriels sur les nombreuses fonctionnalités d’Adobe (AEM) Forms.
-
-<div id="whats-new-section">
-
-## Nouveautés
-
-* **[Gérer les messages d’erreur dans l’étape Appeler le service de modèle de données de formulaire](./adaptive-forms/handling-error-messages-in-invoke-fdm-step.md)**
-  *Une variable dans un modèle de workdlow permet de stocker une valeur en fonction de son type de données*
-
-* **[Graphiques à séries multiples dans les documents de communication interactive (vidéo)](./interactive-communications/multiseriescharts.md)**
-  *Positionnez plusieurs séries dans le même graphique. Les graphiques à séries multiples sont généralement utilisés avec le type de graphique à barres, en courbes et histogramme.*
-
-* **[Créer des modèles de workflow réutilisables](./adaptive-forms/re-usable-aem-forms-workflow-models-article.md)**
-  *Créer des modèles de workflow non liés à un formulaire spécifique*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -88,8 +73,6 @@ Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gér
 </table>
 
 </div>
-
-
 
 
 ## Ressources supplémentaires

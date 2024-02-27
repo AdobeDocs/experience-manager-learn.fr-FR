@@ -6,9 +6,9 @@ jira: KT-3289
 last-substantial-update: 2023-09-26T00:00:00Z
 exl-id: 650ba2d9-6083-4772-84c5-1cdb97b5f0e9
 duration: 490
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '256'
+source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
+workflow-type: tm+mt
+source-wordcount: '156'
 ht-degree: 100%
 
 ---
@@ -20,27 +20,6 @@ ht-degree: 100%
 Adobe Experience Manager (AEM) est désormais disponible as a Cloud Service. AEM as a Cloud Service représente la nouvelle génération de la gamme de produits Experience Manager, qui s’appuie sur les investissements et les innovations passés, tout en préservant et en étendant tous les cas d’utilisation et fonctionnalités.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31085?quality=12&learn=on)
-
-<div id="whats-new-section">
-
-## Nouveautés
-
-* **[Protéger les sites web avec des règles de filtrage du trafic, y compris des règles WAF (tutoriel)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=fr)**
-  *Découvrez comment utiliser les règles de filtrage du trafic, y compris les règles WAF, pour protéger les sites web.*
-
-* **[Authentification basée sur les jetons (tutoriel)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr)**
-  *Découvrez comment utiliser l’authentification basée sur les jetons pour interagir avec AEM as a Cloud Service sur HTTP*.
-
-* **[GraphQL découplé (tutoriel)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)**
-  *Découvrez comment utiliser les API GraphQL d’AEM pour alimenter des expériences dans une application externe.*
-
-* **[Programme de travail de métadonnées Asset Compute (tutoriel)](./asset-compute/advanced/metadata.md)**
-  *Découvrez comment écrire des métadonnées de ressource pour les renvoyer à AEM à partir d’un programme de travail d’Asset Compute*.
-
-* **[Extensibilité des microservices d’Asset Compute (tutoriel)](./asset-compute/overview.md)**
-  *Découvrez comment développer des programmes de travail d’Asset Compute pour générer des rendus de ressources personnalisés*.
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
