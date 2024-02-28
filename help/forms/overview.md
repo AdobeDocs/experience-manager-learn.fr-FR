@@ -6,7 +6,7 @@ role: Developer
 sub-product: Experience Manager Forms
 exl-id: c1972937-56c5-47af-9232-f31bdf69dfbe
 duration: 88
-source-git-commit: 6825b0a4c9770f77e5078c81154080e94d3fd5f4
+source-git-commit: acfd982ce471c8510cb59ed4d353f1d47dcfb5dc
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 100%
@@ -16,6 +16,7 @@ ht-degree: 100%
 # Tutoriels et vidéos d’AEM Forms {#overview}
 
 Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gérer, publier et mettre à jour des formulaires numériques complexes tout en s’intégrant aux processus principaux, aux règles métier et aux données. Ce guide d’utilisation contient des vidéos et des tutoriels sur les nombreuses fonctionnalités d’Adobe (AEM) Forms.
+
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
