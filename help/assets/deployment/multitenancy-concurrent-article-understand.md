@@ -9,10 +9,10 @@ level: Intermediate
 doc-type: Article
 exl-id: c9ee29d4-a8a5-4e61-bc99-498674887da5
 duration: 524
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
+source-git-commit: 3b6de935b5f1fb5ee2d0e50372188f1eba7baeaa
+workflow-type: tm+mt
 source-wordcount: '2022'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -92,7 +92,7 @@ Cela n’élimine pas la nécessité pour plusieurs équipes de dépendre et pot
 
 Pour garantir que les modifications apportées à ce package principal ne perturbent pas les fonctionnalités du système, nous recommandons qu’un développeur ou une développeuse senior ou une équipe de développement soit chargée de la supervision. Vous pouvez disposer d’une équipe unique qui gère toutes les modifications apportées à ce package ou demander aux équipes d’envoyer des demandes d’extraction qui sont examinées et fusionnées par ces ressources. Il est important qu’un modèle de gouvernance soit conçu et accepté par les équipes et que les développeurs et développeuses le suivent.
 
-## Gérer la portée du déploiement {#managing-deployment-scope}
+## Gestion de la portée du déploiement {#managing-deployment-scope}
 
 Lorsque différentes équipes déploient leur code dans le même référentiel, il est important que l’une ne remplace pas les modifications d’une autre. AEM dispose d’un mécanisme pour contrôler cela lors du déploiement des packages de contenu : le fichier xml de filtre. Il est important qu’il n’y ait pas de chevauchement entre les fichiers. xml de filtre, sinon le déploiement d’une équipe risque d’effacer le déploiement précédent d’une autre équipe. Pour illustrer ce point, voici des exemples de fichiers de filtre bien conçus, et d’autres problématiques :
 
