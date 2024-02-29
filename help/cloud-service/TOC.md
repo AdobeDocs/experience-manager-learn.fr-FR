@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: d7608c552fad52492d36fb64587a5939c0cde7a2
+source-git-commit: c77dd9c2872e7e43863d83837cedbff50a7d3c1a
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 91%
+source-wordcount: '1141'
+ht-degree: 90%
 
 ---
 
@@ -60,7 +60,8 @@ ht-degree: 91%
 + Développement{#developing}
    + Extensibilité{#extensibility}
       + App Builder{#app-builder}
-         + [Générer un jeton d’accès](./developing/extensibility/app-builder/jwt-auth.md)
+         + [Génération d’un jeton d’accès JWT](./developing/extensibility/app-builder/jwt-auth.md)
+         + [Générer un jeton d’accès serveur à serveur](./developing/extensibility/app-builder/server-to-server-auth.md)
       + Extensibilité de l’interface utilisateur{#ui}
          + [Vue d’ensemble](./developing/extensibility/ui/overview.md)
          + [Projet Adobe Developer Console](./developing/extensibility/ui/adobe-developer-console-project.md)

@@ -1,6 +1,6 @@
 ---
-title: Générer un jeton d’accès dans une action Créateur d’applications
-description: Découvrez comment générer un jeton d’accès à l’aide des informations d’identification JWT à utiliser dans une action Créateur d’applications.
+title: Génération d’un jeton d’accès JWT dans l’action App Builder
+description: Découvrez comment générer un jeton d’accès à l’aide des informations d’identification JWT à utiliser dans une action App Builder.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -10,18 +10,18 @@ jira: KT-11743
 last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
 duration: 161
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '452'
-ht-degree: 100%
+source-git-commit: c77dd9c2872e7e43863d83837cedbff50a7d3c1a
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 85%
 
 ---
 
-# Générer un jeton d’accès dans une action Créateur d’applications
+# Génération d’un jeton d’accès JWT dans l’action App Builder
 
 Les actions Créateur d’applications peuvent avoir besoin d’interagir avec les API d’Adobe associées aux projets Adobe Developer Console sur lesquels l’application Créateur d’applications est déployée.
 
-Cela peut nécessiter que l’action Créateur d’applications génère son propre jeton d’accès associé au projet Adobe Developer Console souhaité.
+Cela peut nécessiter que l’action App Builder génère son propre jeton d’accès JWT associé au projet de console Adobe Developer souhaité.
 
 >[!IMPORTANT]
 >
@@ -70,22 +70,22 @@ La `JWT_PRIVATE_KEY` doit être spécialement formatée, car il s’agit d’une
 >[!TAB macOS]
 
 1. Ouvrez `Terminal`.
-1. Exécutez la commande `base64 -i /path/to/private.key | pbcopy`.
+1. Exécutez la commande `base64 -i /path/to/private.key | pbcopy`
 1. La sortie en base64 est automatiquement copiée dans le presse-papiers.
 1. Collez-la dans `.env` en tant que valeur de la clé correspondante.
 
 >[!TAB Windows]
 
 1. Ouvrez `Command Prompt`.
-1. Exécutez la commande `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`.
-1. Exécutez la commande `findstr /v CERTIFICATE C:\path\to\encoded-private.key`.
+1. Exécutez la commande `certutil -encode C:\path\to\private.key C:\path\to\encoded-private.key`
+1. Exécutez la commande `findstr /v CERTIFICATE C:\path\to\encoded-private.key`
 1. Copiez la sortie en base64 dans le presse-papiers.
 1. Collez-la dans `.env` en tant que valeur de la clé correspondante.
 
 >[!TAB Linux®]
 
 1. Ouvrez le terminal.
-1. Exécutez la commande `base64 private.key`.
+1. Exécutez la commande `base64 private.key`
 1. Copiez la sortie en base64 dans le presse-papiers.
 1. Collez-la dans `.env` en tant que valeur de la clé correspondante.
 
