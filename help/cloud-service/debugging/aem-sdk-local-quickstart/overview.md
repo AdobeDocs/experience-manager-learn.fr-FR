@@ -10,9 +10,9 @@ level: Beginner, Intermediate
 exl-id: e27cf3de-ef89-44d7-819b-157f85f5a80f
 duration: 50
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Le débogage à distance du code Java s’exécutant dans le démarrage rapide l
 
 ## Consoles web OSGi
 
-Le démarrage rapide local du SDK AEM dispose d’une console web OSGi qui fournit diverses informations et introspections dans le runtime AEM local. Ces informations sont utiles pour comprendre comment votre application est reconnue par les fonctions et d’ d’ dans l’environnement d’.
+Le démarrage rapide local du SDK d’AEM dispose d’une console web OSGi qui fournit diverses informations et introspections dans l’exécution locale d’AEM qui sont utiles pour comprendre comment votre application est reconnue par AEM et comment elle fonctionne en son sein.
 
 [Déboguer le SDK d’AEM à l’aide de la console web OSGi](./osgi-web-consoles.md)
 
