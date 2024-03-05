@@ -1,22 +1,22 @@
 ---
 title: Cloud 5 - Saison 3
-description: La troisième saison vous permet d’en savoir plus sur AEM service de diffusion Edge au moyen d’entretiens approfondis avec des experts qui ont travaillé sur des projets complexes.
+description: La troisième saison vous permet d’en savoir plus sur AEM service Edge Delivery au moyen d’entretiens approfondis avec des experts qui ont travaillé sur des projets complexes.
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: d7608c552fad52492d36fb64587a5939c0cde7a2
+source-git-commit: d8d15d8dd820797e829fe664d74867822782a4c1
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 32%
+source-wordcount: '267'
+ht-degree: 18%
 
 ---
 
 
-# Cloud 5 season 3
+# Saison 3 de Cloud 5
 
-## Introduction
+## Présentation
 
-Bienvenue à la troisième saison de la série Cloud 5 de AEM Engineering. L’un des principaux problèmes de la phase de mise en œuvre d’un produit est de disposer de suffisamment d’exemples de code et/ou de démonstrations en direct de ces exemples, outils ou API. L’objectif de cette série est de fournir des informations utiles sur AEM services Edge Delivery en 5 minutes ou moins.
+Bienvenue à la troisième saison de la série Cloud 5 de AEM Engineering. L’un des principaux problèmes lors de la phase de mise en oeuvre d’un produit est de disposer de suffisamment d’échantillons de code et/ou de démonstrations en direct de ces exemples, outils ou API. L’objectif de cette série est de fournir des informations utiles sur AEM Edge Delivery Services en 5 minutes ou moins.
 
 ## Zone de suggestion
 
@@ -56,7 +56,7 @@ Chaque saison varie en longueur et est diffusée selon un planning fixe. Les suj
                 Explore Real User Monitoring (RUM) fonctionne avec des Edge Delivery Services.
             </p>
         </td>   
- <td>
+        <td>
             <a href="./season-3/cloud5-edge-workers.md">
                 <img alt="Travailleurs Edge" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
             </a>
@@ -70,5 +70,21 @@ Chaque saison varie en longueur et est diffusée selon un planning fixe. Les suj
                 Explorez l’importance des travailleurs de pointe avec les Edge Delivery Services.
             </p>
         </td>   
-  </tr>  
+    </tr>
+    <tr>
+        <td>
+            <a href="./season-3/cloud5-publish-events.md">
+                <img alt="Publier, annuler la publication d’événements dans les Edge Delivery Services" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-publish-events.md">
+                <strong>Publier, annuler la publication d’événements dans les Edge Delivery Services</strong></a>        
+                <br/><em>avec James Talbot et Amol Anand, AEM Engineering</em>
+            </div>
+            <p>
+                <br/>
+                Explorez les événements déclenchés lors de la publication et de l’annulation de la publication dans les Edge Delivery Services, ainsi que des cas d’utilisation et des exemples d’utilisation de ces événements.
+            </p>
+        </td>   
+    </tr>  
 </table>
