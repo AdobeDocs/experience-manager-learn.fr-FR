@@ -1,6 +1,6 @@
 ---
 title: Configurer ContextHub pour la personnalisation avec AEM Sites
-description: ContextHub est un framework permettant de stocker, manipuler et présenter des données contextuelles. L’API JavaScript ContextHub vous permet d’accéder aux magasins pour créer, mettre à jour et supprimer des données si nécessaire. Par conséquent, ContextHub représente une couche de données sur vos pages. Cette page décrit comment ajouter ContextHub à vos pages de site AEM.
+description: ContextHub est un framework permettant de stocker, manipuler et présenter des données contextuelles. L’API JavaScript ContextHub vous permet d’accéder aux magasins pour créer, mettre à jour et supprimer des données si nécessaire. En tant que tel, ContextHub représente une couche de données sur vos pages. Cette page décrit comment ajouter ContextHub à vos pages de site AEM.
 feature: Context Hub
 version: 6.4, 6.5
 topic: Personalization
@@ -10,9 +10,9 @@ doc-type: Technical Video
 exl-id: 89308dd3-a7e5-4fec-bffb-5f0974125c0a
 duration: 375
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Pour activer les fonctionnalités ContextHub et créer un lien vers les biblioth
 
 ## Configuration du site et des segments ContextHub {#site-configuration-and-contexthub-segments}
 
-ContextHub propose un moteur de segmentation qui gère les segments et détermine les segments qui sont résolus pour le contexte actuel. Plusieurs segments sont définis. Vous pouvez utiliser l’API JavaScript pour [déterminer les segments résolus](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-adding.html?lang=fr#determining-resolved-contexthub-segments). Activez les segments ContextHub pour votre site sous l’[[!UICONTROL Explorateur de configurations]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=fr).
+ContextHub propose un moteur de segmentation qui gère les segments et détermine les segments qui sont résolus pour le contexte actuel. Plusieurs segments sont définis. Vous pouvez utiliser l’API JavaScript pour [déterminer les segments résolus](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/ch-adding.html#DeterminingResolvedContextHubSegments). Activez les segments ContextHub pour votre site sous l’[[!UICONTROL Explorateur de configurations]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=fr).
 
 ## Créer des segments {#create-segments}
 
@@ -53,7 +53,7 @@ Affectez le chemin de configuration cloud, le chemin de segmentation et le chemi
 
 Vous pouvez lire plus d’informations sur ContextHub et la segmentation ci-dessous :
 
-* [ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/contexthub.html?lang=fr)
-* [Ajouter ContextHub à la page et accéder aux magasins](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-adding.html?lang=fr)
-* [Fonctionnement de la segmentation](https://experienceleague.adobe.com/docs/experience-manager-65/classic-ui/personalization/classic-personalization-campaigns-segmentation.html?lang=fr)
-* [Configuration de la segmentation avec ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/administering/personalization/segmentation.html?lang=fr)
+* [ContextHub](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/contexthub.html)
+* [Ajouter ContextHub à la page et accéder aux magasins](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/ch-adding.html)
+* [Fonctionnement de la segmentation](https://helpx.adobe.com/fr/experience-manager/6-5/sites/classic-ui-authoring/using/classic-personalization-campaigns-segmentation.html)
+* [Configuration de la segmentation avec ContextHub](https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/segmentation.html)
