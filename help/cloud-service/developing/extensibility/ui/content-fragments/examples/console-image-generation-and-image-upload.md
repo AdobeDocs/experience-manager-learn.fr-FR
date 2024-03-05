@@ -1,6 +1,6 @@
 ---
 title: Génération d’images OpenAI via une extension personnalisée de la console de fragments de contenu
-description: Découvrez comment générer une image numérique à partir d’une description en langage naturel à l’aide d’OpenAI ou de DALL ・ E 2 et télécharger une image générée vers AEM à l’aide d’une extension personnalisée de la console de fragments de contenu.
+description: Découvrez comment générer une image numérique à partir d’une description en langage naturel à l’aide d’OpenAI ou de DALL-E 2 et comment charger une image générée vers AEM à l’aide d’une extension personnalisée de la console de fragments de contenu.
 feature: Developer Tools, Content Fragments
 version: Cloud Service
 topic: Development
@@ -13,23 +13,23 @@ last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: f3047f1d-1c46-4aee-9262-7aab35e9c4cb
 duration: 1380
 source-git-commit: 6f1245e804f0311c3f833ea8b2324cbc95272f52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1289'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # Génération des ressources d’image AEM à l’aide d’OpenAI
 
-Découvrez comment générer une image à l’aide d’OpenAI ou de DALL ・ E 2 et la charger dans AEM DAM pour la vitesse du contenu.
+Découvrez comment générer une image à l’aide d’OpenAI ou de DALL-E 2 et la charger dans la gestion des ressources numériques AEM pour de la vitesse de contenu.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3413093?quality=12&learn=on)
 
-Cet exemple AEM extension de la console de fragments de contenu est une [barre d’actions](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) extension qui génère une image numérique à partir d’une entrée de langage naturel utilisant [API OpenAI](https://openai.com/api/) ou [DALL ・ E 2](https://openai.com/dall-e-2/). L’image générée est chargée dans AEM DAM et la propriété d’image du fragment de contenu sélectionné est mise à jour pour faire référence à cette image nouvellement générée et chargée à partir de DAM.
+Cet exemple d’extension de la console de fragments de contenu AEM est une extension de [barre d’actions](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) qui génère une image numérique à partir d’une entrée de langage naturel utilisant l’[API OpenAI](https://openai.com/api/) ou [DALL-E 2](https://openai.com/dall-e-2/). L’image générée est chargée dans AEM DAM et la propriété d’image du fragment de contenu sélectionné est mise à jour pour faire référence à cette image nouvellement générée et chargée à partir de DAM.
 
 Dans cet exemple, vous apprenez à :
 
-1. Génération d’images à l’aide de [API OpenAI](https://beta.openai.com/docs/guides/images/image-generation-beta) ou [DALL ・ E 2](https://openai.com/dall-e-2/)
+1. Générer des images à l’aide de l’[API OpenAI](https://beta.openai.com/docs/guides/images/image-generation-beta) ou [DALL-E 2](https://openai.com/dall-e-2/).
 2. Charger des images dans AEM
 3. Mettre à jour la propriété de fragment de contenu
 
