@@ -12,9 +12,9 @@ level: Beginner
 exl-id: 772b595d-2a25-4ae6-8c6e-69a646143147
 duration: 436
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1181'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Dans ce chapitre, vous découvrirez comment les API GraphQL d’AEM peuvent pilo
 
 Une application React simple est utilisée pour interroger et afficher du contenu **Équipe** et **Personne** exposé par les API GraphQL d’AEM. L’utilisation de React n’est pas vraiment importante, et l’application externe consommatrice peut être écrite dans n’importe quel framework pour n’importe quelle plateforme.
 
-## Prérequis
+## Conditions préalables
 
 Nous partons du principe que les étapes décrites dans les parties précédentes de ce tutoriel en plusieurs parties ont été terminées, ou que [basic-tutorial-solution-content.zip](assets/explore-graphql-api/basic-tutorial-solution.content.zip) est installé sur vos services de création et de publication d’AEM as a Cloud Service.
 
@@ -146,7 +146,7 @@ export default aemHeadlessClient;
 
 ## Implémenter pour exécuter les requêtes persistantes GraphQL d’AEM
 
-Pour mettre en œuvre la fonction `fetchPersistedQuery(..)` générique pour exécuter les requêtes persistantes GraphQL AEM, ouvrez le fichier `usePersistedQueries.js`. La fonction `fetchPersistedQuery(..)` utilise la fonction `runPersistedQuery()` de l’objet `aemHeadlessClient` pour exécuter la requête de manière asynchrone avec un comportement basé sur la promesse.
+Pour mettre en œuvre la fonction `fetchPersistedQuery(..)` générique pour exécuter les requêtes persistantes GraphQL AEM, ouvrez le fichier `usePersistedQueries.js`. La fonction `fetchPersistedQuery(..)` utilise la fonction `aemHeadlessClient` de l’objet `runPersistedQuery()` pour exécuter la requête de manière asynchrone avec un comportement basé sur la promesse.
 
 Plus tard, le hook personnalisé `useEffect` de React appelle cette fonction pour récupérer des données spécifiques d’AEM.
 
@@ -497,7 +497,7 @@ Vérifiez l’application [http://localhost:3000/](http://localhost:3000/) et cl
 
 ## Ce qui se passe
 
-Ouvrez le **Outils de développement** > **Réseau** et _Filtrer_ pour `all-teams` requête. Remarquez la demande d’API GraphQL `/graphql/execute.json/my-project/all-teams` est contre `http://localhost:3000` et **NOT** contre la valeur de `REACT_APP_HOST_URI`, par exemple `<https://publish-pxxx-exxx.adobeaemcloud.com`. Les requêtes sont effectuées par rapport au domaine de l’application React, car la [configuration du proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) est activée à l’aide du module `http-proxy-middleware`.
+Dans le navigateur, ouvrez **Outils de développement** > **Réseau** et _Filtrez_ pour la requête `all-teams`. Remarquez que la requête `/graphql/execute.json/my-project/all-teams` de l’API GraphQL est faite par rapport à `http://localhost:3000` et **NON** par rapport à la valeur de `REACT_APP_HOST_URI`, par exemple `<https://publish-pxxx-exxx.adobeaemcloud.com`. Les requêtes sont effectuées par rapport au domaine de l’application React, car la [configuration du proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/#configuring-the-proxy-manually) est activée à l’aide du module `http-proxy-middleware`.
 
 
 ![Requête de l’API GraphQL via proxy.](assets/graphql-and-external-app/graphql-api-request-via-proxy.png)
