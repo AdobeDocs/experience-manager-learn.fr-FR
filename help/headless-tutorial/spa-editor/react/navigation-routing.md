@@ -12,7 +12,7 @@ doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
 duration: 437
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1481'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ Ce chapitre ajoute une navigation à une SPA dans AEM. Le menu de navigation est
 
 ![Navigation ajoutée.](assets/navigation-routing/navigation-added.png)
 
-## Prérequis
+## Conditions préalables
 
 Examinez les outils et les instructions nécessaires à la configuration d’un [environnement de développement local](overview.md#local-dev-environment). Ce chapitre est la suite du chapitre [Mapper des composants](map-components.md). Toutefois, vous n’avez besoin pour le suivre que d’un projet AEM compatible avec les SPA déployé sur une instance AEM locale.
 
