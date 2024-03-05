@@ -13,9 +13,9 @@ exl-id: 6d0fdc4d-d85f-4966-8f7d-d53506a7dd08
 recommendations: noDisplay, noCatalog
 duration: 265
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '959'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 Dans le cadre de la création rapide de site, utilisez l’Assistant de création de site dans Adobe Experience Manager (AEM) pour générer un nouveau site web. Le modèle de site standard fourni par Adobe est utilisé comme point de départ pour le nouveau site.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Les étapes de ce chapitre se dérouleront dans un environnement Adobe Experience Manager as a Cloud Service. Assurez-vous que vous disposez d’un accès d’administration à l’environnement AEM. Il est recommandé d’utiliser un [programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=fr) et un [environnement de développement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr) lorsque vous suivez ce tutoriel.
 
