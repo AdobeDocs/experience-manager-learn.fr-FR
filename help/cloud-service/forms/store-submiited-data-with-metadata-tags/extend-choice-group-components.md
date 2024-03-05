@@ -1,5 +1,5 @@
 ---
-title: Tutoriel pour ajouter des balises de métadonnées spécifiées par l’utilisateur
+title: Tutoriel pour ajouter des balises de métadonnées spécifiées par l’utilisateur ou l’utilisatrice
 description: Découvrez comment stocker et récupérer les données de formulaire adaptatif du compte de stockage Azure.
 feature: Adaptive Forms
 type: Documentation
@@ -11,21 +11,21 @@ jira: KT-14501
 duration: 34
 exl-id: 94454327-86d9-468e-9f08-50b8a9c530f3
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '106'
-ht-degree: 14%
+ht-degree: 100%
 
 ---
 
 # Étendre les composants de groupe de choix
 
-Les composants de base checkboxgroup, Dropdown et radiobutton ont été étendus afin d’inclure un onglet Propriétés supplémentaires. L’onglet des propriétés supplémentaires comporte une case à cocher pour indiquer si le champ doit être utilisé comme onglet d’index d’objets blob.
-![additonal-properties](assets/drop-down-additonal-properties.png). Lorsque la case à cocher est sélectionnée, une propriété appelée Recherche est créée et sa valeur est définie sur true dans le référentiel jcr, comme illustré dans la capture d’écran suivante.
+Les composants principaux checkboxgroup, dropdown et radiobutton ont été étendus afin d’inclure un onglet Propriétés supplémentaires. L’onglet Propriétés supplémentaires comporte une case à cocher pour indiquer si le champ doit être utilisé comme onglet d’index d’objets blob.
+![additonal-properties](assets/drop-down-additonal-properties.png). Lorsque la case est cochée, une propriété appelée Indexable est créée et sa valeur est définie sur true dans le référentiel jcr, comme illustré dans la copie d’écran suivante.
 ![searchable](assets/searchable-true.png).
 
-Le fichier .content.xml suivant a été créé sous le dossier _cq_dialog .
+Le fichier .content.xml suivant a été créé sous le dossier _cq_dialog.
 
-![menu déroulant-projet-view](assets/drop-down-project-view.png)
+![drop-down-project-view](assets/drop-down-project-view.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -87,4 +87,4 @@ Le fichier .content.xml suivant a été créé sous le dossier _cq_dialog .
 
 ## Étapes suivantes
 
-[Création d’une configuration Azure Portal](./create-osgi-configuration.md)
+[Créer une configuration de portail Azure](./create-osgi-configuration.md)
