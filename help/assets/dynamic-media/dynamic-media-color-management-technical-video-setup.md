@@ -10,9 +10,9 @@ doc-type: Feature Video
 exl-id: a733532b-db64-43f6-bc43-f7d422d5071a
 duration: 303
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -114,7 +114,7 @@ Voici le modèle XML du nœud de configuration de la gestion des couleurs. Ce mo
 | SheetfedCoated | CMJN | U.S. Sheetfed Coated v2 |
 | SheetfedUncoated | CMJN | U.S. Sheetfed Uncoated v2 |
 | SMPTE | RVB | SMPTE-C |
-| sRVB | sRVB RGB | IEC61966-2.1 |
+| sRVB | RGB sRGB | IEC61966-2.1 |
 | UncoatedFogra29 | CMJN | Uncoated FOGRA29 (ISO 12647-2:2004) |
 | WebCoated | CMJN | U.S. Web Coated (SWOP) v2 |
 | WebCoatedFogra28 | CMJN | Web Coated FOGRA28 (ISO 12647-2:2004) |
@@ -125,4 +125,4 @@ Voici le modèle XML du nœud de configuration de la gestion des couleurs. Ce mo
 
 ## Ressources supplémentaires{#additional-resources}
 
-* [Configuration de la gestion des couleurs Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=fr)
+* [Configuration de la gestion des couleurs Dynamic Media](https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/config-dynamic.html#ConfiguringDynamicMediaColorManagement)
