@@ -5,16 +5,16 @@ user-guide-description: Ensemble de vidéos et de tutoriels d’Adobe Experience
 sub-product: Experience Manager
 index: y
 source-git-commit: 5fe651bc0dc73397ae9602a28d63b7dc084fcc70
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '229'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Vidéos et tutoriels d’AEM Foundation {#foundation}
 
-+ [Présentation](./overview.md)
++ [Vue d’ensemble](./overview.md)
 + Administration {#administration}
    + [Comprendre les raisons de mettre à niveau AEM](./administration/understand-reasons-to-upgrade.md)
    + [Utiliser oak-run.jar pour gérer les index](./administration/use-oak-run-jar-to-manage-indexes.md)
@@ -36,7 +36,7 @@ ht-degree: 96%
    + [Configurer Sling Dynamic Include](./development/set-up-sling-dynamic-include.md)
    + [Bonnes pratiques relatives aux API Java](./development/understand-java-api-best-practices.md)
    + [Comprendre l’exporteur de modèle Sling](./development/understand-sling-model-exporter.md)
-   + [Présentation des bonnes pratiques d’indexation Oak](./development/understand-indexing-best-practices.md)
+   + [Comprendre les bonnes pratiques relatives aux indexations Oak](./development/understand-indexing-best-practices.md)
 + Projets {#projects}
    + [Développer des projets AEM](./projects/develop-aem-projects.md)
    + [Utiliser des Project Masters](./projects/use-project-masters.md)
