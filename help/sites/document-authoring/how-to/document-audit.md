@@ -1,6 +1,6 @@
 ---
-title: Audit de documents avec AEM création de documents
-description: Découvrez comment contrôler des documents avec AEM création de documents
+title: Effectuer l’audit de documents avec la création de documents AEM
+description: Découvrez comment effectuer l’audit des documents avec la création de documents AEM.
 version: 6.5, Cloud Service
 feature: Authoring
 topic: Content Management
@@ -13,16 +13,16 @@ thumbnail: 3425722.jpeg
 duration: 78
 exl-id: 85e3303d-f59a-4b71-bfb7-09470b9ab3c6
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '27'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Audit de document
+# Audit de documents
 
 {{edge-delivery-services}}
 
-Découvrez comment contrôler les documents créés à l’aide de la création AEM document.
+Découvrez comment effectuer l’audit des documents créés à l’aide de la création de documents AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425722/?learn=on)
