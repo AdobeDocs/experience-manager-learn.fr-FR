@@ -1,6 +1,6 @@
 ---
-title: Vidéos Edge Delivery Services
-description: Découvrez comment rendre les sites web rapides avec Edge Delivery.
+title: Vidéos Edge Delivery Services
+description: Découvrez comment rendre les sites web plus rapides avec Edge Delivery.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -12,19 +12,19 @@ duration: 30
 last-substantial-update: 2023-05-12T00:00:00Z
 exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
 source-git-commit: f5f80a898420445335ed34f20aac6579199cc817
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
-# Vidéos Edge Delivery Services
+# Vidéos Edge Delivery Services
 
-Découvrez comment rendre les sites web rapides avec Edge Delivery
+Découvrir comment rendre les sites web plus rapides avec Edge Delivery
 
-Consultez la section [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=fr) pour obtenir des détails complets sur Edge Delivery et ses fonctionnalités.
+Consultez la [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=fr) pour obtenir des détails complets sur Edge Delievery et ses fonctionnalités.
 
-## Prise en main des Edge Delivery Services
+## Prise en main d’Edge Delivery Services
 
 <div class="columns is-multiline">
     <!-- Prerequisites -->
@@ -33,11 +33,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/prerequisites.md" title="Conditions préalables requises"
+            <a href="./developing/prerequisites.md" title="Conditions préalables"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425709/?format=jpeg"
-                alt="Conditions préalables requises">
+                alt="Conditions préalables">
             </a>
           </figure>
         </div>
@@ -46,9 +46,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/prerequisites.md" title="Conditions préalables requises">Conditions préalables pour les développeurs</a>
+              <a href="./developing/prerequisites.md" title="Conditions préalables">Conditions préalables pour l’équipe de développement</a>
             </p>
-            <p class="is-size-6">Ce que vous devrez commencer à développer avec des Edge Delivery Services.</p>
+            <p class="is-size-6">Éléments nécessaires pour commencer le développement avec Edge Delivery Services.</p>
             <a href="./developing/prerequisites.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -68,7 +68,8 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <a href="./developing/aem-boilerplate.md" title="Utiliser un modèle standard"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Configuration standard">
+                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Configuration
+Modèle standard">
             </a>
           </figure>
         </div>
@@ -77,9 +78,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minute</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/aem-boilerplate.md" title="Utiliser un modèle standard">AEM standard</a>
+              <a href="./developing/aem-boilerplate.md" title="Utiliser le modèle standard">Modèle standard AEM</a>
             </p>
-            <p class="is-size-6">Utilisez le modèle AEM standard pour configurer le référentiel de code.</p>
+            <p class="is-size-6">Utilisez le modèle standard AEM pour configurer le référentiel de code.</p>
             <a href="./developing/aem-boilerplate.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -96,10 +97,10 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/content-repository.md" title="Lier le lecteur Google"
+            <a href="./developing/content-repository.md" title="Lier Google Drive"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425711/?format=jpeg" alt="Lier le lecteur Google">
+                src="https://video.tv.adobe.com/v/3425711/?format=jpeg" alt="Lier Google Drive">
             </a>
           </figure>
         </div>
@@ -108,9 +109,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minute</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/content-repository.md" title="Lier le lecteur Google">Lier le lecteur Google</a>
+              <a href="./developing/content-repository.md" title="Lier Google Drive">Lier Google Drive</a>
             </p>
-            <p class="is-size-6">Utilisez Google Drive comme référentiel pour tout le contenu.</p>
+            <p class="is-size-6">Utilisez Google Drive comme référentiel pour tout le contenu.</p>
             <a href="./developing/content-repository.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -127,10 +128,10 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/content-repository.md" title="Link Sharepoint" tabindex="-1">
+            <a href="./developing/content-repository.md" title="Lier Sharepoint" tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425712/?format=jpeg"
-                alt="Link Sharepoint">
+                alt="Lier Sharepoint">
             </a>
           </figure>
         </div>
@@ -139,7 +140,7 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minute</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/content-repository.md" title="Link Sharepoint">Lier SharePoint</a>
+              <a href="./developing/content-repository.md" title="Lier Sharepoint">Lier SharePoint</a>
             </p>
             <p class="is-size-6">Utilisez SharePoint comme référentiel pour tout votre contenu.</p>
             <a href="./developing/content-repository.md"
@@ -158,10 +159,10 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/preview-and-publish.md" title="Aperçu et publication de contenu"
+            <a href="./developing/preview-and-publish.md" title="Prévisualiser et publier du contenu"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Aperçu et publication de contenu">
+                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Prévisualiser et publier du contenu">
             </a>
           </figure>
         </div>
@@ -170,9 +171,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minute</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/preview-and-publish.md" title="Aperçu et publication de contenu">Prévisualiser et publier du contenu</a>
+              <a href="./developing/preview-and-publish.md" title="Prévisualiser et publier du contenu">Prévisualiser et publier du contenu</a>
             </p>
-            <p class="is-size-6">Prévisualisez et publiez du contenu à l’aide du AEM Sidekick.</p>
+            <p class="is-size-6">Prévisualisez et publiez du contenu à l’aide du sidekick d’AEM.</p>
             <a href="./developing/preview-and-publish.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -189,11 +190,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/sidekick.md" title="Utiliser Sidekick"
+            <a href="./developing/sidekick.md" title="Utiliser le sidekick"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425715/?format=jpeg"
-                alt="Utiliser Sidekick">
+                alt="Utiliser le sidekick">
             </a>
           </figure>
         </div>
@@ -202,9 +203,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minute</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/sidekick.md" title="Utiliser Sidekick">Utilisation du AEM Sidekick</a>
+              <a href="./developing/sidekick.md" title="Utiliser le sidekick">Utiliser le sidekick d’AEM</a>
             </p>
-            <p class="is-size-6">Découvrez comment utiliser le AEM Sidekick.</p>
+            <p class="is-size-6">Découvrez comment utiliser le sidekick d’AEM.</p>
             <a href="./developing/sidekick.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -221,11 +222,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/document-structure.md" title="Structure de document"
+            <a href="./developing/document-structure.md" title="Structure des documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425716/?format=jpeg"
-                alt="Structure de document">
+                alt="Structure des documents">
             </a>
           </figure>
         </div>
@@ -234,9 +235,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minute</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/document-structure.md" title="Structure de document">Structure du document</a>
+              <a href="./developing/document-structure.md" title="Structure des documents">Structure de document</a>
             </p>
-            <p class="is-size-6">Explorer la structure du document, y compris le contenu par défaut, les sections et les blocs </p>
+            <p class="is-size-6">Explorez la structure du document, y compris le contenu par défaut, les sections et les blocs. </p>
             <a href="./developing/document-structure.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -285,11 +286,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/git.md" title="Intégration à Git"
+            <a href="./developing/git.md" title="Intégrer à Git"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425718/?format=jpeg"
-                alt="Intégration à Git">
+                alt="Intégrer à Git">
             </a>
           </figure>
         </div>
@@ -298,9 +299,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/git.md" title="Intégration à Git">Intégration à Git</a>
+              <a href="./developing/git.md" title="Intégrer à Git">Intégrer à Git</a>
             </p>
-            <p class="is-size-6">Configurez Git et les Edge Delivery Services.</p>
+            <p class="is-size-6">Configurez Git et Edge Delivery Services.</p>
             <a href="./developing/git.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -322,11 +323,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/rss.md" title="Création de flux RSS"
+            <a href="./how-to/rss.md" title="Créer des flux RSS"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425725/?format=jpeg"
-                alt="Création de flux RSS">
+                alt="Créer des flux RSS">
             </a>
           </figure>
         </div>
@@ -335,7 +336,7 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/rss.md" title="Création de flux RSS">Création de flux RSS</a>
+              <a href="./how-to/rss.md" title="Créer des flux RSS">Créer des flux RSS</a>
             </p>
             <p class="is-size-6">Découvrez comment créer des flux RSS.</p>
             <a href="./how-to/rss.md" class="spectrum-Button
@@ -354,11 +355,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/social-media-sharing.md" title="Partager sur les médias sociaux"
+            <a href="./how-to/social-media-sharing.md" title="Partage sur les médias sociaux"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425974/?format=jpeg"
-                alt="Partager sur les médias sociaux">
+                alt="Partage sur les médias sociaux">
             </a>
           </figure>
         </div>
@@ -367,7 +368,7 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/social-media-sharing.md" title="Partager sur les médias sociaux">Partage sur les médias sociaux</a>
+              <a href="./how-to/social-media-sharing.md" title="Partage sur les médias sociaux">Partage sur les médias sociaux</a>
             </p>
             <p class="is-size-6">Découvrez comment optimiser votre contenu pour le partage sur les médias sociaux.</p>
             <a href="./how-to/social-media-sharing.md" class="spectrum-Button
@@ -386,11 +387,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/delete-page.md" title="Suppression de pages"
+            <a href="./how-to/delete-page.md" title="Supprimer des pages"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425973/?format=jpeg"
-                alt="Suppression de pages">
+                alt="Supprimer des pages">
             </a>
           </figure>
         </div>
@@ -399,7 +400,7 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/delete-page.md" title="Suppression de pages">Suppression de pages</a>
+              <a href="./how-to/delete-page.md" title="Supprimer des pages">Supprimer des pages</a>
             </p>
             <p class="is-size-6">Découvrez comment supprimer des pages.</p>
             <a href="./how-to/delete-page.md" class="spectrum-Button
