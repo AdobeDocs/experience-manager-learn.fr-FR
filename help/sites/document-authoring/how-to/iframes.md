@@ -1,6 +1,6 @@
 ---
-title: Incorporation d’iFrames avec AEM création de documents
-description: Découvrez comment incorporer du contenu à l’aide d’iFrames avec AEM création de documents.
+title: Incorporer des iFrames avec la création de documents AEM
+description: Découvrez comment incorporer du contenu à l’aide d’iFrames avec la création de documents AEM.
 version: 6.5, Cloud Service
 feature: Authoring
 topic: Content Management
@@ -13,16 +13,16 @@ thumbnail: 3425719.jpeg
 duration: 97
 exl-id: 59195777-e2fc-4654-8361-bd449cc19e5a
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '32'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Incorporation de contenu avec des iFrames
+# Incorporer du contenu avec des iFrames
 
 {{edge-delivery-services}}
 
-Découvrez comment incorporer du contenu à l’aide d’iFrames avec AEM création de documents.
+Découvrez comment incorporer du contenu à l’aide d’iFrames avec la création de documents AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425719/?learn=on)
