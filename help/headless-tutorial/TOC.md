@@ -9,8 +9,8 @@ version: 6.5, Cloud Service
 jira: KT-2963
 index: y
 source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
-workflow-type: tm+mt
-source-wordcount: '298'
+workflow-type: ht
+source-wordcount: '339'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 100%
 + [Présentation d’AEM Headless](./overview.md)
 + GraphQL {#graphql}
    + [Portail de développement d’AEM Headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr){target=_blank}
-   + [Présentation](./graphql/overview.md)
+   + [Vue d’ensemble](./graphql/overview.md)
    + Configuration rapide {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)
       + [SDK AEM](./graphql/quick-setup/local-sdk.md)
@@ -34,13 +34,13 @@ ht-degree: 100%
       + [6 - Architecture de création et de publication](./graphql/video-series/author-publish-architecture.md)
       + [7 - Requêtes persistantes GraphQL](./graphql/video-series/graphql-persisted-queries.md)
    + Tutoriel de base{#multi-step}
-      + [Présentation](./graphql/multi-step/overview.md)
+      + [Vue d’ensemble](./graphql/multi-step/overview.md)
       + [1 - Définir des modèles de fragment de contenu](./graphql/multi-step/content-fragment-models.md)
       + [2 - Créer des fragments de contenu](./graphql/multi-step/author-content-fragments.md)
       + [3 - Explorer les API GraphQL](./graphql/multi-step/explore-graphql-api.md)
       + [4 - Créer une application React](./graphql/multi-step/graphql-and-react-app.md)
    + Tutoriel avancé{#advanced-tutorial}
-      + [Présentation](/help/headless-tutorial/graphql/advanced-graphql/overview.md)
+      + [Vue d’ensemble](/help/headless-tutorial/graphql/advanced-graphql/overview.md)
       + [1 - Créer des modèles de fragment de contenu](/help/headless-tutorial/graphql/advanced-graphql/create-content-fragment-models.md)
       + [2 - Créer des fragments de contenu](/help/headless-tutorial/graphql/advanced-graphql/author-content-fragments.md)
       + [3 - Explorer l’API GraphQL d’AEM](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
@@ -78,7 +78,7 @@ ht-degree: 100%
       + [Node.js](./graphql/example-apps/server-to-server-app.md)
 + Éditeur de SPA{#spa-editor}
    + React{#react}
-      + [Présentation](./spa-editor/react/overview.md)
+      + [Vue d’ensemble](./spa-editor/react/overview.md)
       + [1 - Créer un projet](./spa-editor/react/create-project.md)
       + [2 - Intégrer une SPA](./spa-editor/react/integrate-spa.md)
       + [3 - Mapper des composants SPA](./spa-editor/react/map-components.md)
@@ -86,7 +86,7 @@ ht-degree: 100%
       + [5 - Composant personnalisé](./spa-editor/react/custom-component.md)
       + [6 - Étendre un composant](./spa-editor/react/extend-component.md)
    + Angular{#angular}
-      + [Présentation](./spa-editor/angular/overview.md)
+      + [Vue d’ensemble](./spa-editor/angular/overview.md)
       + [1 - Projet d’éditeur de SPA](./spa-editor/angular/create-project.md)
       + [2 - Intégrer une SPA](./spa-editor/angular/integrate-spa.md)
       + [3 - Mapper des composants SPA](./spa-editor/angular/map-components.md)
@@ -94,7 +94,7 @@ ht-degree: 100%
       + [5 - Composant personnalisé](./spa-editor/angular/custom-component.md)
       + [6 - Étendre un composant](./spa-editor/angular/extend-component.md)
    + SPA distante{#remote-spa}
-      + [Présentation](./spa-editor/remote-spa/overview.md)
+      + [Vue d’ensemble](./spa-editor/remote-spa/overview.md)
       + [1 - Configurer AEM](./spa-editor/remote-spa/aem-configure.md)
       + [2 - Amorcer la SPA](./spa-editor/remote-spa/spa-bootstrap.md)
       + [3 - Composants fixes](./spa-editor/remote-spa/spa-fixed-component.md)
@@ -103,11 +103,11 @@ ht-degree: 100%
    + Procédures{#how-to}
       + [Composants React modifiables v2 d’AEM](./spa-editor/how-to/react-core-components-v2.md)
 + Authentification basée sur les jetons {#authentication}
-   + [Présentation](./authentication/overview.md)
+   + [Vue d’ensemble](./authentication/overview.md)
    + [1 - Jeton d’accès au développement local](./authentication/local-development-access-token.md)
    + [2 - Informations d’identification de service](./authentication/service-credentials.md)
 + Content Services {#content-services}
-   + [Présentation](./content-services/overview.md)
+   + [Vue d’ensemble](./content-services/overview.md)
    + [1 - Configuration du tutoriel](./content-services/chapter-1.md)
    + [2 - Définir des modèles de fragment de contenu d’événement](./content-services/chapter-2.md)
    + [3 - Créer des fragments de contenu d’événement](./content-services/chapter-3.md)
