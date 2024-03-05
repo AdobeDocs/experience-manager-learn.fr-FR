@@ -1,6 +1,6 @@
 ---
-title: Prévisualiser et publier du contenu avec des Edge Delivery Services
-description: Prévisualiser et publier du contenu avec des Edge Delivery Services avec le AEM Sidekick
+title: Prévisualiser et publier du contenu avec Edge Delivery Services
+description: Prévisualiser et publier du contenu avec Edge Delivery Services à l’aide du sidekick AEM
 version: 6.5, Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -13,14 +13,14 @@ thumbnail: 3425714.jpeg
 duration: 137
 exl-id: e8ec372e-622e-4954-80df-9c4d73265837
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '36'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Prévisualiser et publier du contenu
 
-Prévisualisez et publiez du contenu avec des Edge Delivery Services à l’aide du [AEM Sidekick](./sidekick.md).
+Prévisualisez et publiez du contenu avec Edge Delivery Services à l’aide du [sidekick AEM](./sidekick.md).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425714/?learn=on)
