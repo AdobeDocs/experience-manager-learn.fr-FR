@@ -1,6 +1,6 @@
 ---
-title: Préremplir le formulaire adaptatif basé sur un composant principal
-description: Découvrez comment préremplir un formulaire adaptatif avec des données
+title: Préremplir un formulaire adaptatif basé sur des composants principaux
+description: Découvrez comment préremplir un formulaire adaptatif avec des données.
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -10,16 +10,16 @@ topic: Integrations
 jira: KT-14675
 duration: 77
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '113'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
-# Implémentation de l’interface DataProvider
+# Implémenter l’interface DataProvider
 
-Créez un projet AEM à l’aide de l’archétype le plus récent et ajoutez le code suivant au projet.
-En règle générale, les données sont récupérées à partir d’une source de données externe telle qu’une base de données, un stockage Azure, un compartiment S3 ou toute autre source. Vous devrez écrire le code pour récupérer les données.
+Créez un projet AEM en utilisant l’archétype le plus récent et ajoutez le code suivant au projet.
+En règle générale, les données sont récupérées à partir d’une source de données externe telle qu’une base de données, un stockage Azure, un compartiment S3 ou toute autre source. Vous devez écrire le code pour récupérer les données.
 
 ```java
 package com.aemforms.prefill;
@@ -108,9 +108,9 @@ logger.info("got data  "+data);
 }
 ```
 
-## Gestionnaire de données
+## Data Manager
 
-Incluez le code suivant dans votre projet. Le code répertorié ci-dessus utilise cette classe DataManager
+Ajoutez le code suivant à votre project. Le code écrit ci-dessus utilise la classe DataManager.
 
 ```java
 import java.io.Serializable;
@@ -183,7 +183,7 @@ public class DataManager implements Serializable {
 
 ## Déployer le code
 
-Vous pouvez déployer le code dans votre environnement prêt pour le cloud local ou vers l’instance cloud à l’aide du gestionnaire de cloud.
+Vous pouvez déployer le code dans votre environnement local compatible avec le cloud ou vers l’instance cloud à l’aide de Cloud Manager.
 
 ### Étapes suivantes
 
