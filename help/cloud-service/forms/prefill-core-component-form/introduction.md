@@ -1,6 +1,6 @@
 ---
-title: Préremplir le formulaire adaptatif basé sur un composant principal
-description: Découvrez comment préremplir un formulaire adaptatif avec des données
+title: Préremplir un formulaire adaptatif basé sur des composants principaux
+description: Découvrez comment préremplir un formulaire adaptatif avec des données.
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -10,9 +10,9 @@ topic: Integrations
 jira: KT-14675
 duration: 20
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '81'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
@@ -22,8 +22,8 @@ Dans ce tutoriel, nous aborderons le cas d’utilisation du préremplissage d’
 
 ## Prérequis
 
-* Experience avec AEM Forms CS.
-* Découvrez comment déployer du code à l’aide d’Adobe Cloud Manager.
+* Experience avec AEM Forms CS.
+* Expérience du déploiement du code à l’aide d’Adobe Cloud Manager.
 * Accès à l’instance compatible avec le cloud d’AEM Forms CS.
 
 Pour mettre en œuvre le cas d’utilisation ci-dessus dans AEM Forms CS, vous aurez besoin des éléments suivants :
@@ -32,4 +32,4 @@ Pour mettre en œuvre le cas d’utilisation ci-dessus dans AEM Forms CS, vous
 
 ### Étapes suivantes
 
-[Service de préremplissage d’écriture](./pre-fill-service.md)
+[Écrire un service de préremplissage](./pre-fill-service.md)
