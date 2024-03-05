@@ -1,6 +1,6 @@
 ---
-title: Utilisation de Git
-description: Comment configurer votre environnement de développement Edge Delivery Services avec Git.
+title: Utiliser Git
+description: Configuration de votre environnement de développement Edge Delivery Services avec Git.
 version: 6.5, Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -13,14 +13,14 @@ thumbnail: 3425718.jpeg
 duration: 149
 exl-id: 68866a41-7790-49f9-bb9e-49b63ae3b3af
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '25'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Configuration Git
+# Configurer Git
 
-Configurez votre environnement de développement Edge Delivery Services avec Git.
+Configurez votre environnement de développement Edge Delivery Services avec Git.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425718/?learn=on)
