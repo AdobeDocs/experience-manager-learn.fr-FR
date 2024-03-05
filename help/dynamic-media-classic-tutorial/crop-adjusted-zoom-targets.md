@@ -9,9 +9,9 @@ doc-type: Tutorial
 exl-id: a1d83c77-a9e4-4ed1-9b00-65fb002164c0
 duration: 681
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2623'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -124,7 +124,7 @@ _Vues ajustées pour l’image principale ASIAN_BR_MAIN_
 
 ## Cibles de zoom
 
-Les cibles de zoom se trouvent également dans le menu **Modifier** et la page **Détails** d’une image. Ils vous permettent de définir des &quot;zones réactives&quot; pour mettre en évidence des fonctionnalités de marchandisage spécifiques d’une image de zoom. Au lieu de créer des images distinctes en recadrant une grande image principale, la visionneuse de zoom peut afficher les détails au-dessus de l’image, ainsi qu’un libellé court que vous créez.
+Les cibles de zoom se trouvent également dans le menu **Modifier** et la page **Détails** d’une image. Elles vous permettent de définir des « zones réactives » pour mettre en évidence des fonctionnalités de merchandising spécifiques d’une image de zoom. Au lieu de créer des images distinctes en recadrant une grande image principale, la visionneuse de zoom peut afficher les détails au-dessus de l’image, ainsi qu’un libellé court que vous créez.
 
 ![image](assets/crop-adjusted-zoom-targets/arm-with-watch.jpg)
 
@@ -174,7 +174,7 @@ Lorsque vous chargez l’outil Cible de zoom, la taille d’affichage s’affich
 
 ![image](assets/crop-adjusted-zoom-targets/view-size.jpg)
 
-Vous pouvez voir que le paramètre prédéfini intégré a une taille de 900 x 550, ce qui signifie que la cible ne peut jamais être plus petite que cette taille plutôt grande. C&#39;est probablement trop grand — si vous avez une image de 2 000 pixels, vous ne pouvez qu&#39;afficher une fonction d&#39;au moins 900 pixels. L’utilisateur peut effectuer un zoom supplémentaire manuellement, mais vous ne pouvez pas le rapprocher. La définition d’une taille d’affichage de 350x350 permet aux cibles d’effectuer un zoom assez rapproché ou d’être redimensionnées plus grand. Mais si vous souhaitez une image de zoom plus grande dans votre visionneuse, vous devez créer un nouveau paramètre prédéfini, car le vôtre est verrouillé à 350 pixels.
+Vous pouvez voir que le paramètre prédéfini intégré a une taille de 900 x 550, ce qui signifie que la cible ne peut jamais être plus petite que cette taille plutôt grande. C’est probablement trop grand : si la largeur de votre image est de 2 000 pixels, vous pouvez seulement afficher une fonctionnalité d’au moins 900 pixels de large. L’utilisateur ou l’utilisatrice peut effectuer un zoom supplémentaire manuellement, mais vous ne pouvez pas le rapprocher plus près. La définition d’une taille d’affichage de 350x350 permet aux cibles d’effectuer un zoom assez rapproché ou d’être redimensionnées plus grand. Cependant, si vous souhaitez une image de zoom plus grande dans la visionneuse, vous devez créer un nouveau paramètre prédéfini, car le vôtre est limité à 350 pixels.
 
 ### Créer ou modifier un paramètre prédéfini de visionneuse prenant en charge les cibles de zoom
 
