@@ -1,6 +1,6 @@
 ---
-title: Structure de document pour la création de documents
-description: Découvrez comment assembler une création de document.
+title: Structure du document pour la création de documents
+description: Découvrez comment la création de document est organisée.
 version: 6.5, Cloud Service
 feature: Authoring
 topic: Content Management
@@ -13,9 +13,9 @@ thumbnail: 3425701.jpeg
 duration: 105
 exl-id: 637a2d44-554d-45e4-aad2-a9e64feb511b
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '28'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -23,6 +23,6 @@ ht-degree: 0%
 
 {{edge-delivery-services}}
 
-Découvrez comment la création de documents est structurée à l’aide du contenu par défaut, des blocs, etc.
+Découvrez comment la création de documents est organisée à l’aide du contenu par défaut, des blocs, etc.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425701/?learn=on)
