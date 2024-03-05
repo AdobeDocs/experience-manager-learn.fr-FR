@@ -12,9 +12,9 @@ level: Beginner
 exl-id: 701fae92-f740-4eb6-8133-1bc45a472d0f
 duration: 242
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '853'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 92%
 
 Dans ce chapitre, vous allez apprendre à créer et modifier un fragment de contenu basé sur un [modèle de fragment de contenu nouvellement défini](./content-fragment-models.md). Vous découvrirez également comment créer des variations de fragments de contenu.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Avant d’aborder ce tutoriel en plusieurs parties, assurez-vous d’avoir suivi les étapes décrites dans la section [Définir des modèles de fragment de contenu](./content-fragment-models.md).
 
@@ -78,7 +78,7 @@ Les fragments de contenu sont stockés dans des dossiers AEM Assets. Pour crée
 
 >[!TIP]
 >
->Pour les utilisateurs locaux du SDK AEM : utilisez l’interface utilisateur d’AEM Assets pour créer et créer des fragments de contenu, au lieu de l’interface utilisateur des fragments de contenu décrite ci-dessous. Pour obtenir des instructions détaillées, reportez-vous à la section [Documentation AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html?lang=fr).
+>Pour les utilisateurs et utilisatrices locaux du SDK AEM : utilisez l’interface utilisateur d’AEM Assets pour créer des fragments de contenu, au lieu de l’interface utilisateur des fragments de contenu décrite ci-dessous. Pour obtenir des instructions détaillées, consultez la [documentation AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html?lang=fr).
 
 Dans cette section, nous allons créer plusieurs fragments de contenu basés sur les modèles **Équipe** et **Personne**.
 
@@ -152,7 +152,7 @@ Remplissez ensuite les fragments nouvellement créés avec des données.
 
 >[!TIP]
 >
->Pour les utilisateurs locaux du SDK AEM : utilisez l’interface utilisateur d’AEM Assets pour publier des fragments de contenu, au lieu de l’interface utilisateur Fragments de contenu décrite ci-dessous. Pour obtenir des instructions détaillées, reportez-vous à la section [Documentation AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html#publishing-and-referencing-a-fragment).
+>Pour les utilisateurs et utilisatrices locaux du SDK AEM : utilisez l’interface utilisateur d’AEM Assets pour publier des fragments de contenu, au lieu de l’interface utilisateur des fragments de contenu décrite ci-dessous. Pour obtenir des instructions détaillées, consultez la [documentation AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-managing.html?lang=fr#publishing-and-referencing-a-fragment).
 
 Lors de la révision et de la vérification, publiez les `Content Fragments` crées.
 
