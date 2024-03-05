@@ -1,5 +1,5 @@
 ---
-title: Chapitre 3 - Rubriques de mise en cache du Dispatcher avancé
+title: 'Chapitre 3 : Analyse avancée de la mise en cache dans le Dispatcher'
 description: Il s’agit de la partie 3 d’une série en trois parties sur la mise en cache dans AEM. Les deux premières parties portaient sur la mise en cache HTTP simple dans le Dispatcher et leurs limites. Cette partie présente quelques idées sur la manière de surmonter ces limites.
 feature: Dispatcher
 topic: Architecture
@@ -9,9 +9,9 @@ doc-type: Tutorial
 exl-id: 7c7df08d-02a7-4548-96c0-98e27bcbc49b
 duration: 1653
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6172'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -403,7 +403,7 @@ Nous vous conseillons d’étudier attentivement la documentation sur les SDI. I
 * [docs.oracle.com - Comment écrire des balises JSP personnalisées](https://docs.oracle.com/cd/E11035_01/wls100/taglib/quickstart.html)
 * [Dominik Süß - Créer et utiliser des filtres de composants](https://www.slideshare.net/connectwebex/prsentation-dominik-suess)
 * [sling.apache.org - Sling Dynamic Includes](https://sling.apache.org/documentation/bundles/dynamic-includes.html)
-* [helpx.adobe.com - Configurer les Sling Dynamic Includes dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html?lang=fr)
+* [helpx.adobe.com - Configurer les Sling Dynamic Includes dans AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/sling-dynamic-include-technical-video-setup.html)
 
 
 #### Mise en cache des modèles
