@@ -1,5 +1,5 @@
 ---
-title: Création d’un service de préremplissage pour le formulaire adaptatif basé sur les composants principaux
+title: Créer un service de préremplissage pour le formulaire adaptatif basé sur les composants principaux
 description: Service de préremplissage pour la récupération des données et des pièces jointes.
 feature: Adaptive Forms
 type: Documentation
@@ -9,15 +9,15 @@ version: 6.5
 topic: Integrations
 jira: KT-14794
 source-git-commit: 236d288c8b88948c5004ab777169768065df16f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '75'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 # Créer un service de préremplissage
 
-Pour préremplir le formulaire avec les données envoyées et les pièces jointes, le service de préremplissage suivant a été écrit :
+Pour préremplir le formulaire avec les données envoyées et les pièces jointes, le service de préremplissage suivant a été écrit :
 
 ```java
 package com.azuredemo.core;
@@ -123,7 +123,7 @@ public String getBlobData(String blobID) {
 
 ## Associer le service de préremplissage au formulaire
 
-Associez le service de préremplissage personnalisé au formulaire adaptatif comme illustré ci-dessous
+Associez le service de préremplissage personnalisé au formulaire adaptatif comme illustré ci-dessous.
 
 ![prefill-service](assets/prefill-service.png)
 
