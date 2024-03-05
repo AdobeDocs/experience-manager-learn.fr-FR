@@ -1,6 +1,6 @@
 ---
 title: Métadonnées de page
-description: Découvrez comment la création de documents traite des métadonnées de page.
+description: Découvrez comment sont traitées les métadonnées de page lors de la création de documents.
 version: 6.5, Cloud Service
 feature: Authoring
 topic: Content Management
@@ -13,9 +13,9 @@ thumbnail: 3425706.jpeg
 duration: 94
 exl-id: e01f08d6-415d-4b15-8d40-cb5b2eb7de8a
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '31'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -23,6 +23,6 @@ ht-degree: 0%
 
 {{edge-delivery-services}}
 
-Découvrez comment la création de documents traite des métadonnées au niveau de la page et comment les auteurs peuvent les mettre à jour sans aucune expertise technique.
+Découvrez comment la création de documents traite les métadonnées au niveau de la page et comment les auteurs et autrices peuvent les mettre à jour sans aucune expertise technique.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425706/?learn=on)
