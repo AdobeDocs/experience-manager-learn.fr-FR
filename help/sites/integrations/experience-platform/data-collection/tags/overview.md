@@ -1,6 +1,6 @@
 ---
 title: Intégrer Balises (Launch) pour la collecte de données Experience Platform et AEM
-description: Balises, pour la collecte de données Experience Platform, représente la solution de nouvelle génération d’Adobe pour la gestion de balises et est aussi le meilleur moyen de déployer Adobe Analytics, Target, Audience Manager et de nombreuses autres solutions. Obtenez un aperçu des balises (anciennement connues sous le nom de Launch) et de l’intégration recommandée à Adobe Experience Manager.
+description: Balises, pour la collecte de données Experience Platform, représente la solution de nouvelle génération d’Adobe pour la gestion de balises et est aussi le meilleur moyen de déployer Adobe Analytics, Target, Audience Manager et de nombreuses autres solutions. Découvrez une vue d’ensemble de Balises (anciennement Launch) et l’intégration recommandée avec Adobe Experience Manager.
 solution: Experience Manager, Data Collection, Experience Platform
 jira: KT-5979
 thumbnail: 39090.jpg
@@ -15,9 +15,9 @@ doc-type: Tutorial
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
 duration: 256
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '320'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
