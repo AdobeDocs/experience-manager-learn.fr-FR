@@ -1,6 +1,6 @@
 ---
-title: AEM Sidekick et Edge Delivery Services
-description: Utilisation du Sidekick dans les Edge Delivery Services pour diffuser du contenu en direct.
+title: Sidekick AEM et Edge Delivery Services
+description: Utilisation du sidekick dans Edge Delivery Services pour mettre le contenu en ligne.
 version: 6.5, Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -13,14 +13,14 @@ thumbnail: 3425715.jpeg
 duration: 138
 exl-id: 47fc8774-43c1-4e0b-8101-cff628059b09
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '31'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# AEM Sidekick
+# Sidekick AEM
 
-Utilisez le AEM Sidekick dans les Edge Delivery Services pour mettre le contenu en ligne.
+Utilisez le sidekick AEM dans Edge Delivery Services pour mettre le contenu en ligne.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425715/?learn=on)
