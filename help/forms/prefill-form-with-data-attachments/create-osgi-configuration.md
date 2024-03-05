@@ -1,6 +1,6 @@
 ---
-title: Création d’une configuration OSGi
-description: Spécifiez les paramètres de configuration Azure Portal à l’aide de la configuration OSGi.
+title: Créer une configuration OSGi
+description: Spécifiez les paramètres de configuration du portail Azure à l’aide de la configuration OSGi.
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -9,15 +9,15 @@ version: 6.5
 topic: Integrations
 jira: KT-14794
 source-git-commit: 236d288c8b88948c5004ab777169768065df16f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '70'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Création d’une configuration OSGi
+# Créer une configuration OSGi
 
-Une configuration OSGi personnalisée appelée Azure Portal Configuration a été créée pour spécifier l’URI de stockage Azure et l’URI de jeton SAS. Ces deux valeurs sont utilisées pour construire l’API REST pour communiquer avec Azure Storage.
+Une configuration OSGi personnalisée appelée Configuration du portail Azure a été créée pour spécifier l’URI de stockage Azure et l’URI de jeton SAS. Ces deux valeurs sont utilisées pour construire l’API REST afin de communiquer avec le stockage Azure.
 
 ![azure-portal-configuration](assets/azure-portal-configuration.png)
 
@@ -101,4 +101,4 @@ public class AzurePortalStorageConfigImpl implements AzurePortalConfigurationSer
 
 ## Étapes suivantes
 
-[Service de préremplissage d’écriture](./create-prefill-service.md)
+[Écrire un service de préremplissage](./create-prefill-service.md)
