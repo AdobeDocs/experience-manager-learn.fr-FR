@@ -1,6 +1,6 @@
 ---
-title: Configurer un référentiel de contenu pour les Edge Delivery Services
-description: Configuration de SharePoint ou de Google Drive avec des Edge Delivery Services
+title: Configurer un référentiel de contenu pour Edge Delivery Services
+description: Configurer SharePoint ou Google Drive avec Edge Delivery Services
 version: 6.5, Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -13,31 +13,31 @@ thumbnail: 3425712.jpeg
 duration: 418
 exl-id: 290184ea-88cb-401e-b784-77c8322c77de
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '126'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Référentiel de contenu
 
-Pour intégrer Adobe Experience Manager (AEM) aux Edge Delivery Services, commencez par configurer [SharePoint](#sharepoint) ou [Google Drive](#google-drive) en tant que référentiel de contenu. Les deux plateformes fonctionnent bien avec AEM, ce qui permet une gestion et une diffusion de contenu fluides. Choisissez celle qui correspond à vos préférences et suivez les étapes pour la mettre en route avec les AEM et les Edge Delivery Services.
+Pour intégrer Adobe Experience Manager (AEM) à Edge Delivery Services, commencez par configurer [SharePoint](#sharepoint) ou [Google Drive](#google-drive) comme référentiel de contenu. Les deux plateformes fonctionnent bien avec AEM, ce qui permet une diffusion et une gestion et de contenu fluides. Choisissez celle qui correspond à vos préférences et suivez les étapes pour la faire fonctionner avec AEM et Edge Delivery Services.
 
 ## Options de création de documents
 
-Il existe deux référentiels de contenu pris en charge pour [création de documents](../../document-authoring/set-up.md), [SharePoint](#sharepoint) et [Google Drive](#google-drive).
+Il existe deux référentiels de contenu pris en charge pour la [création de documents](../../document-authoring/set-up.md), [SharePoint](#sharepoint) et [Google Drive](#google-drive).
 
 >[!BEGINTABS]
 
 >[!TAB SharePoint]
 
-Configurez SharePoint comme référentiel de contenu à utiliser avec les Edge Delivery Services.
+Configurez SharePoint comme référentiel de contenu à utiliser avec Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425712/?learn=on)
 
->[!TAB Google Drive]
+>[!TAB Google Drive]
 
-Configurez Google Drive en tant que référentiel de contenu à utiliser avec les Edge Delivery Services.
+Configurez Google Drive comme référentiel de contenu à utiliser avec Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425711/?learn=on)
 
