@@ -1,6 +1,6 @@
 ---
 title: Sortie de port flexible
-description: Découvrez comment configurer et utiliser la sortie de port flexible pour prendre en charge les connexions externes d’AEM as a Cloud Service à des services externes.
+description: Découvrez comment configurer et utiliser les sorties de port flexibles pour prendre en charge les connexions externes d’AEM as a Cloud Service à des services externes.
 version: Cloud Service
 feature: Security
 topic: Development, Security
@@ -11,9 +11,9 @@ thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
 duration: 906
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1060'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
