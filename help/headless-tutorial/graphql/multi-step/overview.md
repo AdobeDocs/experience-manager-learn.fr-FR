@@ -13,9 +13,9 @@ last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 67
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '266'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Ce tutoriel couvre les sujets suivants :
 * Stocker ou conserver les requêtes GraphQL dans AEM
 * Utiliser des requêtes GraphQL persistantes à partir d’un exemple d’application React
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Pour suivre ce tutoriel, vous devez suivre les étapes ci-après :
 
@@ -48,7 +48,7 @@ Pour suivre ce tutoriel, vous devez suivre les étapes ci-après :
 
 ### Environnement AEM
 
-Pour suivre ce tutoriel, il est recommandé de disposer AEM accès administrateur à un environnement AEM as a Cloud Service. Si vous n’avez pas accès à un environnement as a Cloud Service AEM, veuillez [Inscrivez-vous à AEM essai sans affichage](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=fr) pour explorer AEM fonctionnalités sans interface.
+Pour suivre ce tutoriel, il est recommandé de disposer d’un accès d’administrateur ou d’administratrice AEM à un environnement AEM as a Cloud Service. Si vous n’avez pas accès à un environnement AEM as a Cloud Service, [Inscrivez-vous à la version d’essai d’AEM Headless](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=fr) pour explorer les fonctionnalités découplées d’AEM.
 
 ## Commençons !
 
