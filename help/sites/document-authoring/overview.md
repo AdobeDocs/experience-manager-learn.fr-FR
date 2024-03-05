@@ -1,6 +1,6 @@
 ---
 title: Vidéos de création de documents
-description: Découvrez comment configurer et configurer la création de documents dans AEM.
+description: Découvrez comment configurer la création de documents dans AEM.
 version: Cloud Service
 feature: Authoring
 topic: Content Management
@@ -10,19 +10,19 @@ jira: KT-14609
 doc-type: Catalog
 duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
-source-git-commit: e5e1b1b9313f5c7b031c6e4233052dee67c6bd7c
-workflow-type: tm+mt
+exl-id: 172a477f-d277-43c1-8e47-68870b02203c
+source-git-commit: 6672211ef4e03a3ae4c6c5494dda6a2b5053a647
+workflow-type: ht
 source-wordcount: '419'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
-
 # Vidéos de création de documents
 
-Découvrez comment configurer la création de documents pour permettre aux auteurs AEM de modifier et de publier des documents à l’aide de documents Microsoft Word ou Google.
+Présentation de la configuration de la création de documents pour permettre aux auteurs et aux autrices AEM de modifier et de publier des documents à l’aide de Microsoft Word ou de Google Docs.
 
-Consultez la section [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=fr) pour obtenir des détails complets sur la configuration de la création de documents.
+Consultez la [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=fr) pour obtenir des détails complets sur la configuration de la création de documents.
 
 ## Prise en main de la création de documents
 
@@ -37,7 +37,7 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425699/?format=jpeg"
-                alt="Présentation de la création de documents">
+                alt="Vue d’ensemble de la création de documents">
             </a>
           </figure>
         </div>
@@ -46,7 +46,7 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="set-up.md" title="Configuration de la création de documents">Configuration de la création de documents</a>
+              <a href="set-up.md" title="Configurer la création de documents">Configurer la création de documents</a>
             </p>
             <p class="is-size-6">Découvrez comment configurer la création de documents.</p>
             <a href="set-up.md" class="spectrum-Button
@@ -65,11 +65,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="preview-and-publish.md" title="Prévisualisation et publication de contenu"
+            <a href="preview-and-publish.md" title="Prévisualiser et publier du contenu"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425700/?format=jpeg"
-                alt="Prévisualisation et publication de contenu">
+                alt="Prévisualiser et publier du contenu">
             </a>
           </figure>
         </div>
@@ -78,9 +78,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">4 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="preview-and-publish.md" title="Prévisualisation et publication de contenu">Vue d’ensemble de l’éditeur</a>
+              <a href="preview-and-publish.md" title="Prévisualiser et publier du contenu">Vue d’ensemble de l’éditeur</a>
             </p>
-            <p class="is-size-6">Aperçu rapide de la prévisualisation et de la publication de contenu à l’aide du AEM Sidekick.</p>
+            <p class="is-size-6">Vue d’ensemble rapide de la prévisualisation et de la publication de contenu à l’aide du sidekick d’AEM.</p>
             <a href="preview-and-publish.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -97,10 +97,10 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="document-structure.md" title="Structure de document"
+            <a href="document-structure.md" title="Structure des documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425701/?format=jpeg" alt="Structure de document">
+                src="https://video.tv.adobe.com/v/3425701/?format=jpeg" alt="Structure des documents">
             </a>
           </figure>
         </div>
@@ -109,9 +109,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minute</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="document-structure.md" title="Structure de document">Structure du document</a>
+              <a href="document-structure.md" title="Structure des documents">Structure des documents</a>
             </p>
-            <p class="is-size-6">Explorer la structure des documents.</p>
+            <p class="is-size-6">Explorez la structure des documents.</p>
             <a href="document-structure.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -140,9 +140,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minute</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="default-content-and-sections.md" title="Contenu et sections par défaut">Nouvelle bascule de l’éditeur</a>
+              <a href="default-content-and-sections.md" title="Contenu et sections par défaut">Nouveau bouton (bascule) d’éditeur</a>
             </p>
-            <p class="is-size-6">Explorez les concepts de création de documents du contenu et des sections par défaut.</p>
+            <p class="is-size-6">Explorez les concepts de contenu et de sections par défaut dans la création de documents.</p>
             <a href="default-content-and-sections.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -159,10 +159,10 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="blocks-and-autoblocks.md" title="Blocs et Autoblocks" tabindex="-1">
+            <a href="blocks-and-autoblocks.md" title="Blocs et blocs automatiques" tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425703/?format=jpeg"
-                alt="Blocs et Autoblocks">
+                alt="Blocs et blocs automatiques">
             </a>
           </figure>
         </div>
@@ -171,10 +171,10 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minute</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="blocks-and-autoblocks.md" title="Blocs et autoblocks">
-                Blocs et autoblocks</a>
+              <a href="blocks-and-autoblocks.md" title="Blocs et blocs automatiques">
+Blocs et blocs automatiques</a>
             </p>
-            <p class="is-size-6">Explorez les concepts de la création de documents de blocs et d’autoblocks.</p>
+            <p class="is-size-6">Explorez les concepts de blocs et de blocs automatiques dans la création de documents.</p>
             <a href="blocks-and-autoblocks.md"
               class="spectrum-Button spectrum-Button--outline
               spectrum-Button--primary spectrum-Button--sizeM">
@@ -203,7 +203,7 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minute</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="redirects.md" title="Redirections">Création de redirections</a>
+              <a href="redirects.md" title="Redirections">Créer des redirections</a>
             </p>
             <p class="is-size-6">Découvrez comment les redirections sont créées à l’aide de la création de documents.</p>
             <a href="redirects.md" class="spectrum-Button
@@ -237,7 +237,7 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="bulk-metadata.md" title="Métadonnées en bloc">Copies de langue</a>
             </p>
-            <p class="is-size-6">Découvrez comment les métadonnées en masse sont gérées dans la création de documents.</p>
+            <p class="is-size-6">Découvrez comment les métadonnées en bloc sont gérées dans la création de documents.</p>
             <a href="bulk-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -306,7 +306,7 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/responsive-navigation.md" title="Navigation réactive">Navigation réactive</a>
             </p>
-            <p class="is-size-6">Découvrez comment la création de documents peut définir la navigation réactive.</p>
+            <p class="is-size-6">Découvrez comment la création de documents peut définir une navigation réactive.</p>
             <a href="page-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -323,11 +323,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/document-audit.md" title="Audit du document"
+            <a href="./how-to/document-audit.md" title="Audit de documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425722/?format=jpeg"
-                alt="Audit du document">
+                alt="Audit de documents">
             </a>
           </figure>
         </div>
@@ -336,9 +336,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-audit.md" title="Audit du document">Audit de document</a>
+              <a href="./how-to/document-audit.md" title="Audit de documents">Audit de documents</a>
             </p>
-            <p class="is-size-6">Découvrez comment la création de documents gère le contrôle des documents.</p>
+            <p class="is-size-6">Découvrez comment la création de documents gère l’audit de documents.</p>
             <a href="page-metadata.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -355,11 +355,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/document-permissions.md" title="Autorisations de document"
+            <a href="./how-to/document-permissions.md" title="Autorisations des documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425724/?format=jpeg"
-                alt="Autorisations de document">
+                alt="Autorisations des documents">
             </a>
           </figure>
         </div>
@@ -368,9 +368,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-permissions.md" title="Autorisations de document">Autorisations de document </a>
+              <a href="./how-to/document-permissions.md" title="Autorisations des documents">Autorisations des documents</a>
             </p>
-            <p class="is-size-6">Découvrez comment la création de documents gère les autorisations de document.</p>
+            <p class="is-size-6">Découvrez comment la création de documents gère les autorisations des documents.</p>
             <a href="./how-to/document-permissions.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -387,11 +387,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/document-versions.md" title="Versions de document"
+            <a href="./how-to/document-versions.md" title="Versions de documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425728/?format=jpeg"
-                alt="Versions de document">
+                alt="Versions de documents">
             </a>
           </figure>
         </div>
@@ -400,7 +400,7 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-versions.md" title="Versions de document">Versions de document</a>
+              <a href="./how-to/document-versions.md" title="Versions de documents">Versions de documents</a>
             </p>
             <p class="is-size-6">Découvrez comment la création de documents gère les versions de documents.</p>
             <a href="./how-to/document-versions.md" class="spectrum-Button
@@ -419,11 +419,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/document-workflows.md" title="Processus des documents"
+            <a href="./how-to/document-workflows.md" title="Workflows de documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425720/?format=jpeg"
-                alt="Processus des documents">
+                alt="Workflows de documents">
             </a>
           </figure>
         </div>
@@ -432,9 +432,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/document-workflows.md" title="Processus des documents">Workflows des documents</a>
+              <a href="./how-to/document-workflows.md" title="Workflows de documents">Workflows de documents</a>
             </p>
-            <p class="is-size-6">Découvrez comment la création de documents gère les processus de document.</p>
+            <p class="is-size-6">Découvrez comment la création de documents gère les workflows de documents.</p>
             <a href="./how-to/document-workflows.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -451,11 +451,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/iframes.md" title="Utilisation d’iFrames"
+            <a href="./how-to/iframes.md" title="Utiliser des iFrames"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425719/?format=jpeg"
-                alt="Utilisation d’iFrames">
+                alt="Utiliser des iFrames">
             </a>
           </figure>
         </div>
@@ -464,7 +464,7 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/iframes.md" title="Utilisation d’iFrames">Utilisation d’iFrames</a>
+              <a href="./how-to/iframes.md" title="Utiliser des iFrames">Utiliser des iFrames</a>
             </p>
             <p class="is-size-6">Découvrez comment la création de documents gère les vidéos et les iFrames.</p>
             <a href="./how-to/iframes.md" class="spectrum-Button
@@ -483,11 +483,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/image-alt-text.md" title="Utilisation de texte de remplacement"
+            <a href="./how-to/image-alt-text.md" title="Utiliser du texte de remplacement"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425721/?format=jpeg"
-                alt="Utilisation de texte de remplacement">
+                alt="Utiliser du texte de remplacement">
             </a>
           </figure>
         </div>
@@ -496,9 +496,9 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/image-alt-text.md" title="Utilisation de texte de remplacement">Création de texte alternatif d’image</a>
+              <a href="./how-to/image-alt-text.md" title="Utiliser du texte de remplacement">Créer du texte de remplacement d’image</a>
             </p>
-            <p class="is-size-6">Découvrez comment la création de documents gère le texte secondaire de l’image.</p>
+            <p class="is-size-6">Découvrez comment la création de documents gère le texte de remplacement d’image.</p>
             <a href="./how-to/image-alt-text.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -515,11 +515,11 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/no-index.md" title="Prévention de l’indexation"
+            <a href="./how-to/no-index.md" title="Empêcher l’indexation"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3425726/?format=jpeg"
-                alt="Prévention de l’indexation">
+                alt="Empêcher l’indexation">
             </a>
           </figure>
         </div>
@@ -528,7 +528,7 @@ Consultez la section [documentation](https://experienceleague.adobe.com/docs/exp
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/no-index.md" title="Prévention de l’indexation">Prévention de l’indexation des moteurs de recherche</a>
+              <a href="./how-to/no-index.md" title="Empêcher l’indexation">Empêcher l’indexation par les moteurs de recherche</a>
             </p>
             <p class="is-size-6">Découvrez comment empêcher l’indexation par les moteurs de recherche.</p>
             <a href="./how-to/no-index.md" class="spectrum-Button
