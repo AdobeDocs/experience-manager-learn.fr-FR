@@ -1,6 +1,6 @@
 ---
-title: Rechercher des images similaires dans AEM Assets
-description: Découvrez comment l’option Trouver une image similaire d’AEM Assets facilite la recherche de la meilleure image selon vos besoins.
+title: Rechercher des images similaires dans AEM Assets
+description: Découvrez comment l’option Rechercher une image similaire d’AEM Assets vous permet de rechercher facilement la meilleure image en fonction de vos besoins.
 version: Cloud Service
 topic: Content Management
 feature: Search
@@ -12,15 +12,15 @@ last-substantial-update: 2024-01-08T00:00:00Z
 jira: KT-14752
 thumbnail: 3426796.jpeg
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '45'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Rechercher des images similaires
 
-Découvrez comment l’option Trouver une image similaire d’AEM Assets facilite la recherche de la meilleure image selon vos besoins.
+Découvrez comment l’option Rechercher une image similaire d’AEM Assets vous permet de rechercher facilement la meilleure image en fonction de vos besoins.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426796/?learn=on)
