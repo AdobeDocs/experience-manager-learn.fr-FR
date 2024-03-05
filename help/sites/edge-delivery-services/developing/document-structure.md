@@ -1,6 +1,6 @@
 ---
-title: Structure du document pour les Edge Delivery Services
-description: Découvrez comment un document Edge Delivery Services est assemblé à l’aide de sections, de contenu par défaut, etc.
+title: Structure de document pour Edge Delivery Services
+description: Découvrez comment un document Edge Delivery Services est constituté à l’aide de sections, de contenu par défaut, etc.
 version: 6.5, Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -13,14 +13,14 @@ thumbnail: 3425716.jpeg
 duration: 196
 exl-id: f6e9822b-1803-4aff-aac4-714146568f91
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '40'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Structure du document
 
-Découvrez comment un document Edge Delivery Services est assemblé à l’aide de sections, de contenu par défaut, etc.
+Découvrez comment un document Edge Delivery Services est constituté à l’aide de sections, de contenu par défaut, etc.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425716/?learn=on)
