@@ -1,5 +1,5 @@
 ---
-title: Tutoriel pour ajouter des balises de métadonnées spécifiées par l’utilisateur
+title: Tutoriel pour ajouter des balises de métadonnées spécifiées par l’utilisateur ou l’utilisatrice
 description: Créer un envoi personnalisé pour stocker les données de formulaire avec des balises de métadonnées dans Azure
 feature: Adaptive Forms
 type: Documentation
@@ -11,18 +11,18 @@ jira: KT-14501
 duration: 40
 exl-id: eb9bcd1b-c86f-4894-bcf8-9c17e74dd6ec
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '115'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Ajout de balises d’index de blob
+# Ajouter des balises d’index d’objet blob
 
-À mesure que les jeux de données s’agrandissent, il peut s’avérer difficile de trouver un objet spécifique dans une mer de données. Les balises d’index Blob offrent des fonctionnalités de gestion et de découverte de données à l’aide d’attributs de balise d’index de valeur clé. Vous pouvez classer et rechercher des objets dans un seul conteneur ou dans tous les conteneurs de votre compte de stockage. Par exemple, la balise d’index blob _**CustomerType=Platinum**_, où Platine est la valeur du champ CustomerType.
+À mesure que les jeux de données s’agrandissent, il peut s’avérer difficile de trouver un objet spécifique dans un océan de données. Les balises d’index d’objet blob offrent des fonctionnalités de gestion et de découverte de données à l’aide d’attributs de balise d’index clé-valeur. Vous pouvez classer et rechercher des objets dans un seul conteneur ou dans tous les conteneurs de votre compte de stockage. Par exemple, la balise d’index d’objet blob _**CustomerType=Platinum**_, où Platinum est la valeur du champ CustomerType.
 
 ![index-tags](assets/blob-with-index-tags1.png)
-Le code suivant crée la chaîne de balises de données de l’index blob avec ses valeurs correspondantes à partir des données envoyées.
+Le code suivant crée la chaîne de balises de données d’index d’objet blob avec ses valeurs correspondantes à partir des données envoyées.
 
 ```java
 @Override
