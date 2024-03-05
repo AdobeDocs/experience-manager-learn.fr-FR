@@ -1,6 +1,6 @@
 ---
 title: Métadonnées en bloc
-description: Découvrez comment les métadonnées en masse sont gérées dans la création de documents.
+description: Découvrez comment les métadonnées en bloc sont gérées dans la création de documents.
 version: 6.5, Cloud Service
 feature: Authoring
 topic: Content Management
@@ -13,9 +13,9 @@ thumbnail: 3425705.jpeg
 duration: 98
 exl-id: cada8642-b677-4b61-927b-f640b3e2a1ac
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '33'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -23,6 +23,6 @@ ht-degree: 0%
 
 {{edge-delivery-services}}
 
-Découvrez comment les métadonnées en bloc sont gérées dans la création de documents et comment les auteurs peuvent mettre à jour les métadonnées en masse sans expertise technique.
+Découvrez comment les métadonnées en bloc sont gérées dans la création de documents et comment les auteurs et les autrices peuvent mettre à jour les métadonnées en bloc sans expertise technique.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425705/?learn=on)
