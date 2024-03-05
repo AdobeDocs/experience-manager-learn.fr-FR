@@ -9,15 +9,15 @@ version: 6.5
 topic: Integrations
 jira: KT-14794
 source-git-commit: 236d288c8b88948c5004ab777169768065df16f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Créer un envoi personnalisé pour gérer l’envoi du formulaire
 
-Pour répondre au cas d’utilisation, un service d’envoi personnalisé a été créé pour stocker les données envoyées et les pièces jointes dans Azure. Lorsque le formulaire basé sur des composants principaux est envoyé, les données sont au format suivant :
+Pour répondre au cas d’utilisation, un service d’envoi personnalisé a été créé pour stocker les données et pièces jointes envoyées dans Azure. Lorsque le formulaire basé sur des composants principaux est envoyé, les données sont au format suivant :
 
 ```json
 {
@@ -38,9 +38,9 @@ Pour répondre au cas d’utilisation, un service d’envoi personnalisé a ét�
 }
 ```
 
-L&#39;élément _**contrat copy**_ représente un composant de pièce jointe de fichier et est utilisé pour capturer les pièces jointes envoyées avec le formulaire.
-Pour pouvoir préremplir le formulaire adaptatif avec les données et ses pièces jointes, les pièces jointes envoyées seront enregistrées dans le portail Azure et l’élément de données de l’objet de contrat copy dans les données envoyées sera mis à jour avec l’URL de la pièce jointe enregistrée.
-Le service d’envoi personnalisé extrait et stocke les pièces jointes dans le portail Azure.  Les données envoyées mises à jour ressembleront à ceci :
+L’élément _**contractcopy**_ représente un composant de pièce jointe de fichier et est utilisé pour capturer les pièces jointes envoyées avec le formulaire.
+Pour pouvoir préremplir le formulaire adaptatif avec les données et ses pièces jointes, les pièces jointes envoyées seront enregistrées dans le portail Azure et l’élément de données de l’objet contractcopy dans les données envoyées sera mis à jour avec l’URL de la pièce jointe enregistrée.
+Le service d’envoi personnalisé extrait et stocke les pièces jointes dans le portail Azure.  Les données envoyées mises à jour ressembleront à ceci :
 
 
 ```json
@@ -168,7 +168,7 @@ public class StoreFormDataWithAttachments implements FormSubmitActionService {
 }
 ```
 
-## Enregistrer les pièces jointes de formulaire dans Azure
+## Enregistrer des pièces jointes de formulaire dans Azure
 
 ```java
 @Override
@@ -214,7 +214,7 @@ public String saveFormAttachmentinAzure(InputStream attachmentStream, String fil
 }
 ```
 
-## Enregistrer les données de formulaire dans Azure
+## Enregistrer des données de formulaire dans Azure
 
 ```java
 @Override
@@ -256,4 +256,4 @@ public String saveFormAttachmentinAzure(InputStream attachmentStream, String fil
 
 ## Étapes suivantes
 
-[Configuration OSGi en écriture](./create-osgi-configuration.md)
+[Écrire une configuration OSGi](./create-osgi-configuration.md)
