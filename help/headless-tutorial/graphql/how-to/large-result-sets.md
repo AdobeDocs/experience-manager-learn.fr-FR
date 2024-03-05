@@ -13,9 +13,9 @@ thumbnail: 3418381.jpeg
 exl-id: 304b4d80-27bd-4336-b2ff-4b613a30f712
 duration: 311
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '843'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -177,7 +177,7 @@ La réponse JSON résultante contient les 2e, 3e, 4e et 5e aventures les plus co
 
 #### Prochain jeu de résultats paginés
 
-L’ensemble de résultats suivant peut être récupéré à l’aide de la variable `after` et le paramètre `endCursor` de la requête précédente. S’il n’y a plus de résultats à récupérer, `hasNextPage` est `false`.
+Le jeu de résultats suivant peut être récupéré à l’aide du paramètre `after` et de la valeur `endCursor` de la requête précédente. S’il n’y a plus de résultats à récupérer, `hasNextPage` est `false`.
 
 ##### Variables de requête
 
