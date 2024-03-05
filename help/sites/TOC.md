@@ -7,34 +7,34 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
 source-git-commit: f5f80a898420445335ed34f20aac6579199cc817
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '496'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
 # Vidéos et tutoriels d’AEM Sites {#sites}
 
-+ [Présentation](overview.md)
++ [Vue d’ensemble](overview.md)
 + Création de documents {#document-authoring}
    + [Vue d’ensemble](document-authoring/overview.md)
-   + [Configuration](document-authoring/set-up.md)
-   + [Aperçu et publication](document-authoring/preview-and-publish.md)
+   + [Configurer](document-authoring/set-up.md)
+   + [Prévisualiser et publier](document-authoring/preview-and-publish.md)
    + [Structure du document](document-authoring/document-structure.md)
    + [Contenu et sections par défaut](document-authoring/default-content-and-sections.md)
-   + [Blocs et autoblocks](document-authoring/blocks-and-autoblocks.md)
+   + [Blocs et blocs automatiques](document-authoring/blocks-and-autoblocks.md)
    + [Redirections](document-authoring/redirects.md)
    + [Métadonnées en bloc](document-authoring/bulk-metadata.md)
    + [Métadonnées de page](document-authoring/page-metadata.md)
-   + Procédures{#how-to}
-      + [Audit de document](./document-authoring/how-to/document-audit.md)
+   + Procédure{#how-to}
+      + [Audit de documents](./document-authoring/how-to/document-audit.md)
       + [Autorisations de document](./document-authoring/how-to/document-permissions.md)
       + [Versions de document](./document-authoring/how-to/document-versions.md)
-      + [Workflows des documents](./document-authoring/how-to/document-workflows.md)
+      + [Workflows de document](./document-authoring/how-to/document-workflows.md)
       + [Incorporer les iFrames](./document-authoring/how-to/iframes.md)
-      + [Texte alternatif de l’image](./document-authoring/how-to/image-alt-text.md)
-      + [Prévention de l’indexation des moteurs de recherche](./document-authoring/how-to/no-index.md)
+      + [Texte de remplacement d’image](./document-authoring/how-to/image-alt-text.md)
+      + [Empêcher l’indexation par les moteurs de recherche](./document-authoring/how-to/no-index.md)
       + [Navigation réactive](document-authoring/how-to/responsive-navigation.md)
 + Création de pages {#page-authoring}
    + [Création](page-authoring/aem-sites-authoring-overview.md)
@@ -65,26 +65,26 @@ ht-degree: 85%
 + Fragments d’expérience {#experience-fragments}
    + [Utiliser des fragments d’expérience](experience-fragments/experience-fragments-feature-video-use.md)
    + [Créer des blocs](experience-fragments/building-blocks.md)
-   + [Fragments de contenu et fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
+   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Vue d’ensemble](./edge-delivery-services/overview.md)
    + Développement{#developing}
-      + [Conditions préalables requises](edge-delivery-services/developing/prerequisites.md)
-      + [AEM standard](edge-delivery-services/developing/aem-boilerplate.md)
+      + [Conditions préalables](edge-delivery-services/developing/prerequisites.md)
+      + [Modèle standard AEM](edge-delivery-services/developing/aem-boilerplate.md)
       + [Référentiel de contenu](edge-delivery-services/developing/content-repository.md)
-      + [Aperçu et publication](edge-delivery-services/developing/preview-and-publish.md)
-      + [AEM Sidekick](edge-delivery-services/developing/sidekick.md)
+      + [Prévisualiser et publier](edge-delivery-services/developing/preview-and-publish.md)
+      + [Sidekick AEM](edge-delivery-services/developing/sidekick.md)
       + [Structure du document](edge-delivery-services/developing/document-structure.md)
       + [Développement local](edge-delivery-services/developing/local-development.md)
       + [Git](edge-delivery-services/developing/git.md)
-   + Procédures{#how-to}
+   + Procédure{#how-to}
       + [Flux RSS](edge-delivery-services/how-to/rss.md)
-      + [Partage sur les réseaux sociaux](edge-delivery-services/how-to/social-media-sharing.md)
-      + [Suppression de pages](edge-delivery-services/how-to/delete-page.md)
+      + [Partage sur les médias sociaux](edge-delivery-services/how-to/social-media-sharing.md)
+      + [Supprimer des pages](edge-delivery-services/how-to/delete-page.md)
 + Développement {#developing}
-   + [Edge Delivery Services](developing/edge-delivery-services.md)
+   + [Edge Delivery Services](developing/edge-delivery-services.md)
    + [Archétype de projet AEM](developing/aem-project-archetype.md)
-   + [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr){target=_blank}
+   + [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr){target=_blank}
    + [Prise en main d’AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr){target=_blank}
    + [Prise en main de l’éditeur de SPA d’AEM et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=fr){target=_blank}
    + [Étendre les propriétés de page](developing/page-properties-technical-video-develop.md)
@@ -93,10 +93,10 @@ ht-degree: 85%
    + [Bonnes pratiques relatives au système de style](developing/style-organization-style-system-understand-article.md)
    + [Développer pour la différence de page](developing/page-diff-technical-video-develop.md)
    + [Implémenter la recherche simple](developing/search-tutorial-develop.md)
-   + [Partager sur les médias sociaux](developing/social-media-sharing-technical-video-use.md)
+   + [Partage sur les médias sociaux](developing/social-media-sharing-technical-video-use.md)
    + [Personnaliser les icônes de composant](developing/component-icons-technical-video-develop.md)
 + Personnalisation {#personalization}
-   + [Intégration à Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html?lang=fr){target=_blank}
+   + [Intégration avec Adobe Target](https://helpx.adobe.com/fr/marketing-cloud/how-to/aem-target.html){target=_blank}
    + [Configurer les fragments d’expérience et Adobe Target](personalization/experience-fragment-target-technical-video-setup.md)
    + [Utiliser les fragments d’expérience avec Adobe Target](personalization/experience-fragment-target-offer-feature-video-use.md)
    + [Configurer ContextHub](personalization/context-hub-technical-video-setup.md)
@@ -149,7 +149,7 @@ ht-degree: 85%
       + [Suivre les éléments cliqués avec Adobe Analytics](integrations/analytics/track-clicked-component.md)
       + [Analyser des données avec Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
-      + [Présentation](integrations/adobe-target/overview.md)
+      + [Vue d’ensemble](integrations/adobe-target/overview.md)
       + [Ajouter l’extension Target à la propriété Launch](integrations/adobe-target/add-target-launch-extension.md)
       + [Charger et déclencher un appel Target](integrations/adobe-target/load-and-fire-target.md)
       + [Créer un compte Adobe Target as a Cloud Service](integrations/adobe-target/setup-aem-target-cloud-service.md)
