@@ -1,6 +1,6 @@
 ---
 title: Navigation réactive
-description: Découvrez comment effectuer une navigation réactive dans la création de documents de diffusion Edge.
+description: Découvrez comment effectuer une navigation réactive dans la création de documents Edge Delivery.
 version: 6.5, Cloud Service
 feature: Authoring
 topic: Content Management
@@ -13,9 +13,9 @@ thumbnail: 3425707.jpeg
 duration: 92
 exl-id: 58af7383-61eb-4df1-ac2b-6d7bafb999c3
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '24'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
