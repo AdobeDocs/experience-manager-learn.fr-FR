@@ -12,9 +12,9 @@ doc-type: Feature Video
 exl-id: a62e936f-c231-474d-9671-58815b2cb652
 duration: 2432
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '269'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -28,10 +28,10 @@ Découvrez comment configurer Adobe Asset Link pour AEM as a Cloud Service
 
 >[!VIDEO](https://video.tv.adobe.com/v/338824?quality=12&learn=on)
 
-Non affiché dans la vidéo ci-dessus, Adobe Asset Link peut être ajouté via le __Package géré__ à partir du gestionnaire de packages de Creative Cloud :
+Non affiché dans la vidéo ci-dessus, Adobe Asset Link peut être ajouté via l’option __Package géré__ du gestionnaire de packages de Creative Cloud :
 
-1. Choisir __Adobe du CEP Asset Link__ in __Sélection de modules externes__ step
-2. Sur le __Étape Option__ select __Activer l’installation en libre-service__ et __Autorisation des non-administrateurs à mettre à jour et installer des applications__ pour permettre aux non-administrateurs de disposer de privilèges pour gérer les applications et modules externes de Creative Cloud.
+1. Choisissez __CEP Adobe Asset Link__ à l’étape __Choisir des plug-ins__.
+2. À l’__étape Option__, sélectionnez __Autoriser l’installation en libre-service__ et __Autoriser les personnes non-administratrices à mettre à jour et à installer des applications__ pour permettre aux personnes non-administratrices d’avoir des privilèges pour gérer les applications et les plug-ins de Creative Cloud.
 
 ## Configurer Asset Link pour Managed Services et On-premise
 
