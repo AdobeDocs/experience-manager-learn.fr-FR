@@ -1,5 +1,5 @@
 ---
-title: Tutoriel pour ajouter des balises de métadonnées spécifiées par l’utilisateur
+title: Tutoriel pour ajouter des balises de métadonnées spécifiées par l’utilisateur ou l’utilisatrice
 description: Découvrez comment stocker et récupérer les données de formulaire adaptatif du compte de stockage Azure.
 feature: Adaptive Forms
 type: Documentation
@@ -11,15 +11,15 @@ jira: KT-14501
 duration: 35
 exl-id: 6a3af59d-f916-451f-887c-0f4580cbcb3e
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '81'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 
-# Création d’une configuration OSGi
+# Créer une configuration OSGi
 
-Une configuration OSGi personnalisée appelée Azure Portal Configuration a été créée pour spécifier l’URI de stockage Azure et l’URI de jeton SAS. Ces deux valeurs sont utilisées pour construire l’API REST pour communiquer avec Azure Storage.
+Une configuration OSGi personnalisée appelée Configuration du portail Azure a été créée pour spécifier l’URI de stockage Azure et l’URI de jeton SAS. Ces deux valeurs sont utilisées pour construire l’API REST afin de communiquer avec le stockage Azure.
 
 ![azure-portal-configuration](assets/azure-portal-configuration.png)
 
@@ -103,4 +103,4 @@ public class AzurePortalStorageConfigImpl implements AzurePortalConfigurationSer
 
 ## Étapes suivantes
 
-[Création de balises d’index de blob](./create-blob-index-tags.md)
+[Créer des balises d’index d’objet blob](./create-blob-index-tags.md)
