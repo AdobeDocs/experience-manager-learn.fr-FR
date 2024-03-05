@@ -1,5 +1,5 @@
 ---
-title: Chapitre 2 - infrastructure de Dispatcher
+title: Chapitre 2 – Infrastructure de Dispatcher
 description: Comprenez la topologie de publication et de Dispatcher. Découvrez les topologies et configurations les plus courantes.
 feature: Dispatcher
 topic: Architecture
@@ -9,9 +9,9 @@ doc-type: Tutorial
 exl-id: a25b6f74-3686-40a9-a148-4dcafeda032f
 duration: 504
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1882'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
