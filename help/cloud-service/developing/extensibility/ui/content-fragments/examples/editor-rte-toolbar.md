@@ -13,21 +13,21 @@ last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 6fd93d3b-6d56-43c5-86e6-2e2685deecc9
 duration: 354
 source-git-commit: 6f1245e804f0311c3f833ea8b2324cbc95272f52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '406'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Ajouter un bouton personnalisé à la barre d’outils de l’éditeur de texte enrichi
 
-Découvrez comment ajouter un bouton personnalisé à la barre d’outils de l’éditeur de texte enrichi (RTE) dans l’éditeur de fragments de contenu AEM.
+Découvrez comment ajouter un bouton personnalisé à la barre d’outils de l’éditeur de texte enrichi dans l’éditeur de fragment de contenu AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420768?quality=12&learn=on)
 
 Des boutons personnalisés peuvent être ajoutés à la **barre d’outils de l’éditeur de texte enrichi** dans l’éditeur de fragment de contenu à l’aide du point d’extension `rte`. Cet exemple montre comment ajouter un bouton personnalisé appelé _Ajouter un conseil_ dans la barre d’outils de l’éditeur de texte enrichi et modifier le contenu dans l’éditeur de texte enrichi.
 
-Grâce à la méthode `getCustomButtons()` du point d’extension `rte`, un ou plusieurs boutons personnalisés peuvent être ajoutés à la **barre d’outils de l’éditeur de texte enrichi**. Il est également possible d’ajouter ou de supprimer des boutons standard de l’éditeur de texte enrichi tels que _Copier, Coller, Mettre en gras et Mettre en italique_ à l’aide des méthodes `getCoreButtons()` et `removeButtons)`, respectivement.
+Grâce à la méthode `rte` du point d’extension `getCustomButtons()`, un ou plusieurs boutons personnalisés peuvent être ajoutés à la **barre d’outils de l’éditeur de texte enrichi**. Il est également possible d’ajouter ou de supprimer des boutons standard de l’éditeur de texte enrichi tels que _Copier, Coller, Mettre en gras et Mettre en italique_ à l’aide des méthodes `getCoreButtons()` et `removeButtons)`, respectivement.
 
 Cet exemple montre comment insérer une note ou un conseil en surbrillance à l’aide du bouton personnalisé de la barre d’outils _Ajouter un conseil_. Une mise en forme spéciale est appliquée au contenu de la note ou du conseil en surbrillance via les éléments HTML et les classes CSS associées. Le contenu de l’espace réservé et le code du HTML sont insérés à l’aide de la méthode de rappel `onClick()` du `getCustomButtons()`.
 
