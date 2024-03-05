@@ -1,6 +1,6 @@
 ---
-title: Configuration d’un environnement de développement local pour les Edge Delivery Services
-description: Comment configurer un environnement de développement local pour les Edge Delivery Services.
+title: Configurer un environnement de développement local pour Edge Delivery Services
+description: Configuration d’un environnement de développement local pour Edge Delivery Services.
 version: 6.5, Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -13,28 +13,28 @@ thumbnail: 3425717.jpeg
 duration: 169
 exl-id: 0f3e50f0-88d8-46be-be8b-0f547c3633a6
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '87'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Configuration d’un environnement de développement local
+# Configurer un environnement de développement local
 
-Comment configurer un environnement de développement local pour le développement pour les Edge Delivery Services.
+Configuration d’un environnement de développement local pour le développement d’Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425717/?learn=on)
 
 
 ## Étapes décrites dans la vidéo
 
-1. Installation de l’interface de ligne de commande AEM
+1. Installer l’interface de ligne de commande AEM
 
    ```
    $ sudo npm install -g @adobe/aem-cli
    ```
 
-1. Modifiez le répertoire dans votre répertoire de projet qui est un référentiel Git créé à partir de [AEM standard](https://github.com/adobe/aem-boilerplate) modèle.
+1. Modifiez le répertoire dans votre répertoire de projet qui est un référentiel Git créé à partir du modèle [standard AEM](https://github.com/adobe/aem-boilerplate).
 
    ```
    $ git clone git@github.com:my-org/my-project.git
@@ -60,4 +60,4 @@ Comment configurer un environnement de développement local pour le développeme
    opening default browser: http://localhost:3000/
    ```
 
-1. Ouvrez http://localhost:3000/ votre navigateur web pour afficher votre site web AEM.
+1. Ouvrez http://localhost:3000/ sur votre navigateur web pour afficher votre site web AEM.
