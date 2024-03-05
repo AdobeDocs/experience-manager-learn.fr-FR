@@ -1,6 +1,6 @@
 ---
-title: Empêcher l’indexation du moteur de recherche avec AEM création de documents
-description: Empêcher l’indexation des pages diffusées par les Edge Delivery Services par les moteurs de recherche.
+title: Empêcher l’indexation par les moteurs de recherche avec la création de documents AEM
+description: Empêcher l’indexation des pages diffusées par Edge Delivery Services par les moteurs de recherche.
 version: 6.5, Cloud Service
 feature: Authoring
 topic: Content Management
@@ -13,16 +13,16 @@ thumbnail: 3425726.jpeg
 duration: 94
 exl-id: fa22fa48-667b-42bc-9b6e-d8a8935fa7ed
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '42'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Prévention de l’indexation des moteurs de recherche
+# Empêcher l’indexation par les moteurs de recherche
 
 {{edge-delivery-services}}
 
-Découvrez comment empêcher les pages web créées à l’aide de la création AEM document d’être indexées par les moteurs de recherche.
+Découvrez comment empêcher l’indexation par les moteurs de recherche des pages web créées à l’aide de la création de document AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425726/?learn=on)
