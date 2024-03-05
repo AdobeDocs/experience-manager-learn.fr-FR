@@ -12,9 +12,9 @@ level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
 duration: 277
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '948'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -201,7 +201,7 @@ Cela nécessite la mise à jour des configurations OSGi de journalisation pour u
 Cette approche présente des inconvénients à prendre en compte :
 
 + [Un nombre limité de variables d’environnement est autorisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#number-of-variables) et la création d’une variable pour gérer le niveau de journalisation en utilise une.
-+ Les variables d’environnement peuvent être gérées par programmation via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=fr), [Interface de ligne de commande Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid), et [API HTTP Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#cloud-manager-api-format-for-setting-properties).
++ Les variables d’environnement peuvent être gérées par programmation via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=fr), l’[interface de ligne de commande Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) et les [API HTTP Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#cloud-manager-api-format-for-setting-properties).
 + Les modifications apportées aux variables d’environnement doivent être réinitialisées manuellement par un outil pris en charge. Oublier de réinitialiser un environnement à trafic élevé, tel que celui de production, à un niveau de journalisation moins détaillé peut inonder les journaux et affecter les performances d’AEM.
 
 _Les variables spécifiques à l’environnement ne fonctionnent pas pour les configurations de journaux du serveur web Apache ou de Dispatcher, car elles ne sont pas configurées via la configuration OSGi._
