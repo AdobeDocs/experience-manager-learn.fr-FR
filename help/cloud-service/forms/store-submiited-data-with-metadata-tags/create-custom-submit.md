@@ -1,5 +1,5 @@
 ---
-title: Tutoriel pour ajouter des balises de métadonnées spécifiées par l’utilisateur
+title: Tutoriel pour ajouter des balises de métadonnées spécifiées par l’utilisateur ou l’utilisatrice
 description: Créer un envoi personnalisé pour stocker les données de formulaire avec des balises de métadonnées dans Azure
 feature: Adaptive Forms
 type: Documentation
@@ -11,15 +11,15 @@ jira: KT-14501
 duration: 62
 exl-id: 5cd5e37e-9881-4fce-a0cb-402d738f83ae
 source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '122'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Créer un envoi personnalisé pour gérer l’envoi du formulaire
 
-AEM Forms CS fournit une action d’envoi prête à l’emploi pour stocker les données de formulaire dans Azure, mais il n’a pas la possibilité de créer des balises d’index blob sur l’objet blob. Pour répondre au cas d’utilisation, un service d’envoi personnalisé a été créé pour stocker les données envoyées dans Azure et créer des balises de données d’index blob à l’aide des champs marqués comme pouvant faire l’objet d’une recherche dans le formulaire.
+AEM Forms CS fournit une action d’envoi prête à l’emploi pour stocker les données de formulaire dans Azure, mais n’offre pas la possibilité de créer des balises d’index blob sur l’objet blob. Pour répondre au cas d’utilisation, un service d’envoi personnalisé a été créé pour stocker les données envoyées dans Azure et créer des balises de données d’index blob à l’aide des champs marqués comme pouvant faire l’objet d’une recherche dans le formulaire.
 
 [L’exemple de gestionnaire d’envoi personnalisé pour le formulaire adaptatif basé sur les composants principaux est disponible ici](https://github.com/adobe/aem-core-forms-components/blob/master/it/core/src/main/java/com/adobe/cq/forms/core/components/it/service/CustomAFSubmitService.java#L56). L’envoi personnalisé suivant a été écrit pour gérer l’envoi du formulaire.
 
@@ -107,7 +107,7 @@ public class CustomAFSubmitService implements FormSubmitActionService {
 }
 ```
 
-## Mise en oeuvre du service saveFormDatainAzure
+## Implémentation du service saveFormDatainAzure
 
 ```java
     @Override
