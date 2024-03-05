@@ -13,15 +13,15 @@ last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
 duration: 555
 source-git-commit: 6f1245e804f0311c3f833ea8b2324cbc95272f52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '729'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Ajouter des badges à l’éditeur de texte enrichi (RTE)
 
-Découvrez comment ajouter des badges à l’éditeur de texte enrichi (RTE) dans l’éditeur de fragment de contenu AEM.
+Découvrez comment ajouter des badges à l’éditeur de texte enrichi (RTE) dans l’éditeur de fragment de contenu AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420831?quality=12&learn=on)
 
@@ -31,7 +31,7 @@ Le cas d’utilisation le plus courant pour les badges RTE consiste à les utili
 
 En règle générale, les badges associés aux widgets sont utilisés pour ajouter le contenu dynamique avec une dépendance système externe, mais _les personnes qui créent le contenu ne peuvent pas modifier_ le contenu dynamique inséré pour préserver l’intégrité. Ils ne peuvent être supprimés que dans leur ensemble.
 
-Les **badges** sont ajoutés au **RTE** dans l’éditeur de fragment de contenu à l’aide du point d’extension `rte`. La méthode `getBadges()` du point d’extension `rte` permet d’ajouter un ou plusieurs badges.
+Les **badges** sont ajoutés au **RTE** dans l’éditeur de fragment de contenu à l’aide du point d’extension `rte`. La méthode `rte` du point d’extension `getBadges()` permet d’ajouter un ou plusieurs badges.
 
 Cet exemple montre comment ajouter un widget appelé _Service clientèle des réservations pour grands groupes_ pour rechercher, sélectionner et ajouter les informations du service clientèle spécifiques à l’aventure WKND, telles que le **nom du représentant ou de la représentante** et le **numéro de téléphone** dans un contenu d’éditeur de texte enrichi. L’utilisation de la fonctionnalité des badges permet de rendre le **numéro de téléphone** **non modifiable**, mais les personnes qui créent le contenu WKND peuvent modifier le nom du représentant ou de la représentante.
 
@@ -145,7 +145,7 @@ Voici les principaux points forts du code `LargeBookingsCustomerService` :
 
 + L’interface utilisateur est rendue à l’aide des composants React Spectrum, tels que [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html) et [Button](https://react-spectrum.adobe.com/react-spectrum/Button.html).
 + Le tableau `largeGroupCustomerServiceList` a un mappage codé en dur du nom du représentant ou de la représentante et du numéro de téléphone. Dans un scénario réel, ces données peuvent être récupérées à partir de l’action Adobe AppBuilder ou de systèmes externes, ou de la passerelle API locale ou basée sur le fournisseur cloud.
-+ La fonction `guestConnection` est initialisée à l’aide du [hook React](https://react.dev/reference/react/useEffect) `useEffect` et gérée en tant que statut du composant. Elle est utilisé pour communiquer avec l’hôte AEM.
++ La fonction `guestConnection` est initialisée à l’aide du `useEffect` [hook React](https://react.dev/reference/react/useEffect) et gérée en tant que statut du composant. Elle est utilisé pour communiquer avec l’hôte AEM.
 + La fonction `handleCustomerServiceChange` obtient le nom du représentant ou de la représentante et le numéro de téléphone, puis met à jour les variables de statut du composant.
 + La fonction `addCustomerServiceDetails` utilisant l’objet `guestConnection` fournit des instructions d’exécution de l’éditeur de texte enrichi. Dans ce cas, l’instruction `insertContent` et l’extrait de code HTML.
 + Pour rendre le **numéro de téléphone non modifiable** à l’aide de badges, le caractère spécial `#` est ajouté avant et après la variable `phoneNumber`, comme `...<div><p>Phone Number: #${phoneNumber}#</strong></p></div>`.
