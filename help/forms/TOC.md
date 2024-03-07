@@ -8,9 +8,9 @@ breadcrumb-title: Tutoriels d’AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: b2062d9c67dc029c8d0e41f82f634f930e8249a6
+source-git-commit: ae2a2cbde1bf21314cc77863014cb0f013b6e0bb
 workflow-type: tm+mt
-source-wordcount: '2032'
+source-wordcount: '2034'
 ht-degree: 97%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 97%
 
 # Vidéos et tutoriels d’AEM Forms {#forms}
 
-+ [Présentation](overview.md)
++ [Vue d’ensemble](overview.md)
 + [Bonnes pratiques à suivre](adaptive-forms/best-practices-adaptive-forms.md)
 + [Configuration de l’authentification OKTA avec l’instance Création AEM](adaptive-forms/single-sign-on-with-okta.md)
 + Création de votre premier formulaire adaptatif {#creating-your-first-adaptive-form}
@@ -133,9 +133,9 @@ ht-degree: 97%
    + [4. Tester la solution](zipping-form-attachments/test.md)
 + Préremplir le formulaire avec des données et des pièces jointes{#prefill-form-with-data-attachments}
    + [1. Présentation](prefill-form-with-data-attachments/introduction.md)
-   + [2 - Création d’un envoi personnalisé](prefill-form-with-data-attachments/create-custom-submit.md)
-   + [3 - Création d’une configuration OSGi](prefill-form-with-data-attachments/create-osgi-configuration.md)
-   + [4 - Création d’un service de préremplissage](prefill-form-with-data-attachments/create-prefill-service.md)
+   + [2. Créer un envoi personnalisé](prefill-form-with-data-attachments/create-custom-submit.md)
+   + [3. Créer une configuration OSGi](prefill-form-with-data-attachments/create-osgi-configuration.md)
+   + [4. Créer un service de préremplissage](prefill-form-with-data-attachments/create-prefill-service.md)
 + Stocker et récupérer un formulaire adaptatif{#store-and-retrieve-af-with-2fa}
    + [1. Présentation](store-and-retrieve-af-with-2fa/introduction.md)
    + [2. Configurer la source de données](store-and-retrieve-af-with-2fa/configure-data-source.md)
@@ -220,12 +220,13 @@ ht-degree: 97%
    + [Gérer l’envoi du PDF](offline-mobile-form-submission/part-two.md)
    + [Workflow de révision du PDF](offline-mobile-form-submission/part-three.md)
    + [Déployer sur votre système](offline-mobile-form-submission/part-four.md)
-+ Interroger les données envoyées{#querying-submitted-data}
-   + [Présentation](querying-submitted-data/introduction.md)
-   + [Création d’un formulaire basé sur un schéma JSON](querying-submitted-data/part1.md)
-   + [Stocker les données envoyées](querying-submitted-data/part2.md)
-   + [Stocker le schéma JSON](querying-submitted-data/part3.md)
-   + [Interroger les données envoyées](querying-submitted-data/part4.md)
++ Requête sur les envois de formulaire{#query-form-submissions}
+   + [Présentation](query-form-submissions/introduction.md)
+   + [Création de champs pouvant faire l’objet d’une recherche](query-form-submissions/part1.md)
+   + [Créer un envoi personnalisé](query-form-submissions/part2.md)
+   + [Interface de requête de création](query-form-submissions/part3.md)
+   + [Écrire un service de préremplissage](query-form-submissions/part4.md)
+   + [Déployer l’exemple](query-form-submissions/part5.md)
 + Liste des types de ressources personnalisés dans le portail Formulaires{#listing-custom-asset-types}
    + [Partie 1 - Enregistrement des types de ressources personnalisés](listing-custom-asset-types/part1.md)
    + [Partie 2 - Création d’un modèle personnalisé](listing-custom-asset-types/part2.md)
@@ -286,7 +287,9 @@ ht-degree: 97%
    + [Assembler des pièces jointes de formulaire](document-services/assemble-form-attachments.md)
    + [Services utilitaires utiles](document-services/useful-utility-services.md)
 + Forms Designer{#forms-designer}
+   + [Vue de conception](forms-designer/design-view.md)
    + [Créer votre premier formulaire](forms-designer/create-simple-form.md)
+   + [Créer un modèle de formulaire](forms-designer/creating-form-template.md)
    + [Script de votre formulaire](forms-designer/first-script-designer.md)
    + [Liaison de données XML](forms-designer/xml-data-binding.md)
    + [Liaison de base de données](forms-designer/binding-to-mysql-db.md)
