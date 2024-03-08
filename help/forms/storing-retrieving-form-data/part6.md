@@ -8,9 +8,9 @@ level: Experienced
 version: 6.4,6.5
 exl-id: f520e7a4-d485-4515-aebc-8371feb324eb
 duration: 67
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '249'
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
+workflow-type: tm+mt
+source-wordcount: '243'
 ht-degree: 100%
 
 ---
@@ -36,9 +36,9 @@ Pour tester cette fonctionnalité sur votre instance AEM Forms, procédez comme
 
 | Nom de la propriété | Valeur |
 | ------------------------|---------------------------------------|
-| Nom de la source de données | SaveAndContinue |
-| Classe de pilote JDBC | com.mysql.cj.jdbc.Driver |
-| URI de connexion JDBC | jdbc:mysql://localhost:3306/aemformstutorial |
+| Nom de la source de données | `SaveAndContinue` |
+| Classe de pilote JDBC | `com.mysql.cj.jdbc.Driver` |
+| URI de connexion JDBC | `jdbc:mysql://localhost:3306/aemformstutorial` |
 
 * Ouvrez le [formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/demostoreandretrieveformdata/jcr:content?wcmmode=disabled).
 * Renseignez certains détails et cliquez sur le bouton « Enregistrer et continuer plus tard ».

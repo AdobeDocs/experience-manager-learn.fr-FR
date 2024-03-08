@@ -8,9 +8,9 @@ role: Developer
 level: Experienced
 exl-id: dccca658-3373-4de2-8589-21ccba2b7ba6
 duration: 49
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '193'
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
+workflow-type: tm+mt
+source-wordcount: '187'
 ht-degree: 100%
 
 ---
@@ -34,6 +34,6 @@ Le fichier sql permettant de créer le schéma peut être [téléchargé ici](as
 
 | Nom de la propriété | Valeur |
 | ------------------------|---------------------------------------|
-| Nom de la source de données | SaveAndContinue |
-| Classe de pilote JDBC | com.mysql.cj.jdbc.Driver |
-| URI de connexion JDBC | jdbc:mysql://localhost:3306/aemformstutorial |
+| Nom de la source de données | `SaveAndContinue` |
+| Classe de pilote JDBC | `com.mysql.cj.jdbc.Driver` |
+| URI de connexion JDBC | `jdbc:mysql://localhost:3306/aemformstutorial` |

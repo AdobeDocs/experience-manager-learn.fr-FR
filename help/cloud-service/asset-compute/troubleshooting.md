@@ -11,10 +11,10 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: d851d315-ed0e-46b8-bcd8-417e1e58c0c4
 duration: 335
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '1230'
-ht-degree: 100%
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Vous trouverez ci-dessous un index des problèmes et erreurs courants, ainsi que
 
 ### Fichier Console.json manquant dans le projet Asset Compute{#missing-console-json}
 
-+ __Erreur :__ erreur : fichiers requis manquants lors de la validation (.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY) sur async setupAssetCompute (../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY)
++ __Erreur :__ Erreur : fichiers requis manquants lors de la validation (`.../node_modules/@adobe/asset-compute-client/lib/integrationConfiguration.js:XX:YY`) à async setupAssetCompute (`.../node_modules/@adobe/asset-compute-devtool/src/assetComputeDevTool.js:XX:YY`)
 + __Cause :__ le fichier `console.json` est absent de la racine du projet Asset Compute.
 + __Résolution :__ téléchargez un nouvel élément `console.json` de votre projet Adobe I/O.
    1. Dans console.adobe.io, ouvrez le projet Adobe I/O que le projet Asset Compute est configuré pour utiliser.

@@ -8,10 +8,10 @@ type: Tutorial
 version: 6.4,6.5
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 691
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '614'
-ht-degree: 100%
+source-git-commit: 4f196539ea73d25b480064f7fc349f0ea29d5e0a
+workflow-type: tm+mt
+source-wordcount: '600'
+ht-degree: 98%
 
 ---
 
@@ -32,11 +32,11 @@ Cet article décrit les étapes à suivre pour enregistrer et récupérer les do
 
 La source de données mise en pool de la connexion Apache Sling est configurée pour pointer vers la base de données qui va être utilisée pour stocker les données du formulaire adaptatif. La capture d’écran suivante montre la configuration de mon instance. Les propriétés suivantes peuvent être copiées et collées :
 
-* Nom de la source de données : aemformstutorial - Il s’agit du nom utilisé dans mon code.
+* `Datasource Name:aemformstutorial` - Il s’agit du nom utilisé dans mon code.
 
-* Classe de pilote JDBC : com.mysql.jdbc.Driver
+* `JDBC Driver Class:com.mysql.jdbc.Driver`
 
-* URL de connexion JDBC : :jdbc:mysql://localhost:3306/aemformstutorial
+* `JDBC Connection URL:jdbc:mysql://localhost:3306/aemformstutorial`
 
 ![connectionpool](assets/storingdata.PNG)
 
