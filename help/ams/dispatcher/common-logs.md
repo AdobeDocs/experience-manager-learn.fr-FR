@@ -10,7 +10,7 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 252
-source-git-commit: 19beb662b63476f4745291338d944502971638a3
+source-git-commit: 80c04ce1ad7d60c1fc75ecc194dd54a2ad5b82fa
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 93%
@@ -130,7 +130,7 @@ Exemple d’entrée de journal :
 Fri Jul 20 23:00:19 2018 I pid 16004 (tid 140134145820416) Current cache hit ratio: 87.94 %
 ```
 
-Cela signifie que l’on mesure la récupération au niveau de rendu par rapport au cache. Si vous souhaitez atteindre plus de 80 % du cache, suivez les instructions décrites [ici](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html%3Flang%3Den?lang=fr) :
+Cela signifie que l’on mesure la récupération au niveau de rendu par rapport au cache. Si vous souhaitez atteindre plus de 80 % du cache, suivez les instructions décrites [ici](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=fr) :
 
 Pour rendre ce nombre le plus élevé possible.
 
@@ -169,7 +169,7 @@ Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42
 
 Cette erreur se produit lorsque vous avez configuré Dispatcher pour qu’il utilise le filtre automatique dynamique afin d’autoriser les URL de redirection, mais que vous n’avez pas terminé la configuration en installant le package sur le moteur de rendu AEM.
 
-Pour corriger ce problème, installez le pack de fonctionnalités d’URL de redirection sur l’instance AEM et autorisez l’utilisateur ou l’utilisatrice anonyme à le lire. Plus de détails [ici](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html%3Flang%3Den?lang=fr).
+Pour corriger ce problème, installez le pack de fonctionnalités d’URL de redirection sur l’instance AEM et autorisez l’utilisateur ou l’utilisatrice anonyme à le lire. Plus de détails [ici](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html).
 
 Une configuration fonctionnelle d’URL de redirection ressemble à ceci :
 
