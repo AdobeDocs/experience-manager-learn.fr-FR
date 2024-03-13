@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: d8d15d8dd820797e829fe664d74867822782a4c1
+source-git-commit: 466a19a30dd5f81d50c28cb57034800494255d4b
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1151'
 ht-degree: 95%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 95%
    + [Pipeline de production CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Pipeline hors production CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Activity](./cloud-manager/activity.md)
+   + [Noms de domaine personnalisés](./cloud-manager/custom-domain-names.md)
    + Opérations de développement{#devops}
       + [Déployer le code](./cloud-manager/devops/deploy-code.md)
       + [Fusionner des projets](./cloud-manager/devops/merge-projects.md)
