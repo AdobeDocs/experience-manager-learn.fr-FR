@@ -4,13 +4,13 @@ description: La troisième saison vous permet d’en savoir plus sur AEM service
 sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experience Manager Assets
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
-source-git-commit: d8d15d8dd820797e829fe664d74867822782a4c1
+exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
+source-git-commit: 958dc50dfef808470139a2cab214c6cfeb98ff55
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 18%
+source-wordcount: '298'
+ht-degree: 16%
 
 ---
-
 
 # Saison 3 de Cloud 5
 
@@ -84,6 +84,20 @@ Chaque saison varie en longueur et est diffusée selon un planning fixe. Les suj
             <p>
                 <br/>
                 Explorez les événements déclenchés lors de la publication et de l’annulation de la publication dans les Edge Delivery Services, ainsi que des cas d’utilisation et des exemples d’utilisation de ces événements.
+            </p>
+        </td>  
+        <td>
+            <a href="./season-3/cloud5-query-indexes.md">
+                <img alt="Index de requête et formules Excel" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-query-indexes.md">
+                <strong>Index de requête et formules Excel</strong></a>        
+                <br/><em>avec James Talbot et Varun Mitra, AEM Ingénierie</em>
+            </div>
+            <p>
+                <br/>
+                Explorez les index de requête et comment écrire des formules Excel pour manipuler et trier des jeux de données.
             </p>
         </td>   
     </tr>  
