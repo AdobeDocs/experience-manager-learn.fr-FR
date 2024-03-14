@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 958dc50dfef808470139a2cab214c6cfeb98ff55
+source-git-commit: 3dc1aea74e2a7cf30da9f6fb96ecc5c7edcf6e34
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 95%
+source-wordcount: '1163'
+ht-degree: 94%
 
 ---
 
@@ -325,6 +325,7 @@ ht-degree: 95%
       + [Stocker les données de formulaire sur un lecteur](./forms/forms-cs-one-drive/store-form-submission-one-drive.md)
       + [Stocker les données de formulaire dans SharePoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
       + [Préremplir un formulaire avec les données d’une liste SharePoint](./forms/forms-cs-sharepoint/prefill-data-from-sharepoint-list.md)
+      + [Insérer des données dans la liste SharePoint à l’aide d’un workflow](./forms/forms-cs-sharepoint/submit-data-sharepoint-list-workflow.md)
 + Extensibilité Assets Compute{#asset-compute}
    + [Vue d’ensemble](./asset-compute/overview.md)
    + Configuration{#set-up}

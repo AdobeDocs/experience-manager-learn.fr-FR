@@ -9,10 +9,11 @@ version: Cloud Service
 topic: Integrations
 jira: KT-14795
 duration: 60
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
+exl-id: 9abe9f9d-8fb3-4e01-a830-1dad1c27274d
+source-git-commit: 3dc1aea74e2a7cf30da9f6fb96ecc5c7edcf6e34
+workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -20,11 +21,11 @@ ht-degree: 100%
 
 Dans la version précédente d’AEM Forms (6.5), du code personnalisé devait être écrit à l’aide de l’attribut de requête pour préremplir un formulaire adaptatif soutenu par un modèle de données formulaire. Dans AEM Forms as a Cloud Service, il n’est plus nécessaire d’écrire du code personnalisé.
 
-Cet article explique les étapes nécessaires pour préremplir un formulaire adaptatif avec des données récupérées à partir d’une liste SharePoint en utilisant le service de préremplissage de modèle de données de formulaire.
+Cet article explique les étapes requises pour préremplir/préremplir un formulaire adaptatif avec des données récupérées de la liste SharePoint à l’aide du service de préremplissage du modèle de données de formulaire.
 
-Cet article suppose que vous avez [configuré le formulaire adaptatif pour envoyer des données à la liste SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=fr#connect-af-sharepoint-list)
+Cet article suppose que vous avez [formulaire adaptatif correctement configuré pour envoyer des données à la liste SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=fr#connect-af-sharepoint-list)
 
-Voici les données de la liste SharePoint :
+Voici les données de la liste SharePoint :
 ![sharepoint-list](assets/list-data.png)
 
 Voici les étapes à suivre pour préremplir un formulaire adaptatif avec les données associées à un Guid spécifique :
@@ -52,7 +53,3 @@ Prévisualisez le formulaire en incluant le `submissionid` dans l’URL, comme i
 ```html
 http://localhost:4502/content/dam/formsanddocuments/contactusform/jcr:content?wcmmode=disabled&submissionid=57e12249-751a-4a38-a81f-0a4422b24412
 ```
-
-
-
-
