@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 3dc1aea74e2a7cf30da9f6fb96ecc5c7edcf6e34
+source-git-commit: 7c80bb25b79a77c4a0bb2bbedf8a7c338177b857
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1166'
 ht-degree: 94%
 
 ---
@@ -107,6 +107,7 @@ ht-degree: 94%
       + [Espaces de noms personnalisés](./developing/advanced/custom-namespaces.md)
       + [Utilisateurs et utilisatrices de service](./developing/advanced/service-users.md)
       + [API d’images optimisées pour le web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
+      + [Surveillance des utilisateurs réels](./developing/advanced/real-user-monitoring.md)
    + Environnement de développement rapide{#rde}
       + [Vue d’ensemble](./developing/rde/overview.md)
       + [Configuration](./developing/rde/how-to-setup.md)
