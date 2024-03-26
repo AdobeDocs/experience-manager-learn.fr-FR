@@ -1,6 +1,6 @@
 ---
-title: Prise en charge de l’authentification dans AEM 6.x
-description: Une vue consolidée dans les mécanismes d’authentification pris en charge par AEM 6.x.
+title: Prise en charge de l’authentification dans AEM 6.x
+description: Vue consolidée des mécanismes d’authentification pris en charge par AEM 6.x.
 version: 6.4, 6.5
 feature: User and Groups
 doc-type: Article
@@ -13,13 +13,13 @@ last-substantial-update: 2022-09-10T00:00:00Z
 thumbnail: KT-406.jpg
 duration: 38
 source-git-commit: 9ef35d4d20ea574ac2051d7d3e997ecc18c2aaaa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '116'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
-# Prise en charge de l’authentification dans AEM 6.x
+# Prise en charge de l’authentification dans AEM 6.x
 
 Une vue consolidée dans les mécanismes d’authentification (et parfois d’autorisation) pris en charge par AEM.
 

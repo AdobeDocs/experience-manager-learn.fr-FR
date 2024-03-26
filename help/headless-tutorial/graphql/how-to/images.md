@@ -12,9 +12,9 @@ last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 377
 source-git-commit: d178059f6f00228586e692465f7f437129bffaae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '843'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -27,14 +27,14 @@ Les fragments de contenu utilisés dans la modélisation de contenu d’AEM Hea
 Le type `ImageRef` comporte quatre options d’URL pour les références de contenu :
 
 + `_path` est le chemin d’accès référencé dans AEM et n’inclut pas l’origine AEM (nom d’hôte).
-+ `_dynamicUrl` est l’URL vers pour la diffusion optimisée pour le web de la ressource d’image.
++ `_dynamicUrl` est l’URL à utiliser pour la diffusion optimisée pour le web de la ressource d’image.
    + `_dynamicUrl` n’inclut pas d’origine d’AEM. Par conséquent, le domaine (instance de création AEM ou service de publication AEM) doit être fourni par l’application cliente.
 + `_authorUrl` est l’URL complète de la ressource d’image sur l’instance de création AEM
    + L’[instance de création AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=fr) peut être utilisée pour fournir un aperçu de l’application découplée.
 + `_publishUrl` est l’URL complète de la ressource d’image sur l’instance de publication AEM
    + L’[instance de publication AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-author-publish.html?lang=fr) est généralement l’emplacement depuis lequel le déploiement en production de l’application découplée affiche les images.
 
-La variable `_dynamicUrl` est l’URL recommandée pour la diffusion de ressources d’image et doit remplacer l’utilisation de la fonction `_path`, `_authorUrl`, et `_publishUrl` dans la mesure du possible.
+`_dynamicUrl` est l’URL recommandée à utiliser pour la diffusion de ressource d’image et doit remplacer l’utilisation de `_path`, `_authorUrl` et `_publishUrl` dans la mesure du possible.
 
 |                                | AEM as a Cloud Service | RDE d’AEM as a Cloud Service | SDK AEM | AEM 6.5 |
 | ------------------------------ |:----------------------:|:--------------------------:|:-------:|:-------:|
@@ -129,7 +129,7 @@ La réponse JSON obtenue contient les champs demandés, avec l’URL optimisée 
 }
 ```
 
-Pour charger l’image optimisée pour le web de l’image référencée dans votre application, utilisez la méthode `_dynamicUrl` de `primaryImage` comme URL source de l’image.
+Pour charger l’image optimisée pour le web de l’image référencée dans votre application, utilisez l’`_dynamicUrl` de l’`primaryImage` comme URL source de l’image.
 
 Dans React, l’affichage de l’image optimisée pour le web à partir de l’instance de publication AEM ressemble à ceci :
 
@@ -146,7 +146,7 @@ Souvenez-vous, `_dynamicUrl` n’inclut pas le domaine AEM. Vous devez donc four
 
 ## URL réactives
 
-L’exemple ci-dessus illustre l’utilisation d’une image à taille unique. Toutefois, dans les expériences web, des visionneuses d’images réactives sont souvent requises. Les images réactives peuvent être implémentées à l’aide de [img srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) ou d’[éléments d’image](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). Le fragment de code suivant montre comment utiliser la variable `_dynamicUrl` comme base. `width` est un paramètre d’URL que vous pouvez ensuite ajouter à `_dynamicUrl` pour alimenter différentes vues réactives.
+L’exemple ci-dessus illustre l’utilisation d’une image à taille unique. Toutefois, dans les expériences web, des visionneuses d’images réactives sont souvent requises. Les images réactives peuvent être implémentées à l’aide de [img srcsets](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset) ou d’[éléments d’image](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/#using-srcset). Le fragment de code suivant montre comment utiliser l’`_dynamicUrl` comme base. `width` est un paramètre d’URL que vous pouvez ensuite ajouter à l’`_dynamicUrl` pour alimenter différentes vues réactives.
 
 ```javascript
 // The AEM host is usually read from a environment variable of the SPA.

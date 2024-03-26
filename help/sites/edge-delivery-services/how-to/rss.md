@@ -1,6 +1,6 @@
 ---
-title: Personnalisation du Sidekick Edge Delivery Services
-description: Découvrez comment personnaliser le Sidekick Edge Delivery Services.
+title: Personnalisation du sidekick Edge Delivery Services
+description: Découvrez comment personnaliser le sidekick Edge Delivery Services.
 version: 6.5, Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -13,14 +13,14 @@ thumbnail: 3425725.jpeg
 duration: 90
 exl-id: fe6f5262-05c3-4078-b25e-702d830350b2
 source-git-commit: 1a9c23d1021ce9fc29e914ca25e6609d3ab16732
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '28'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Personnalisation du Sidekick
+# Personnaliser le sidekick
 
-Découvrez comment personnaliser le Sidekick Edge Delivery Services.
+Découvrez comment personnaliser le sidekick Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425725/?learn=on)

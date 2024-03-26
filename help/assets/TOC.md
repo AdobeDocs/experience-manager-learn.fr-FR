@@ -8,16 +8,16 @@ version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
 source-git-commit: 7680564ef0058a362ebf47622e50f96eec2866d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Vidéos et tutoriels d’AEM Assets {#assets}
 
-+ [Présentation](overview.md)
++ [Vue d’ensemble](overview.md)
 
 + Configuration{#configuring}
    + [Dossiers de référence](configuring/baseline-folders.md)
@@ -31,7 +31,7 @@ ht-degree: 96%
    + [Workflows à démarrage automatique](configuring/auto-start-workflows.md)
 
 + Création{#authoring}
-   + [Basculer les vues](./authoring/switch-views.md)
+   + [Changer de vue](./authoring/switch-views.md)
    + [Navigation](./authoring/navigation.md)
    + [Opérations de base](./authoring/basic-operations.md)
    + [Métadonnées](./authoring/metadata.md)
@@ -89,9 +89,9 @@ ht-degree: 96%
       + [Kits de ressources Asset Share Commons](./sharing/asset-share/asset-share-commons-asset-kits.md)
    + [Ressources connectées](./sharing/connected-assets.md)
 
-+ Processus créatifs{#creative-workflows}
++ Workflows créatifs{#creative-workflows}
    + [Adobe Express](./creative-workflows/adobe-express.md)
-   + [Module complémentaire Adobe Express AEM Assets](./creative-workflows/adobe-express-aem-assets-add-on.md)
+   + [Module complémentaire AEM Assets pour Adobe Express](./creative-workflows/adobe-express-aem-assets-add-on.md)
    + [Application de bureau AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
@@ -110,7 +110,7 @@ ht-degree: 96%
    + [Recherche de ressources](./adobe-asset-link/asset-search.md)
 
 + Automatisation de contenu{#content-automation}
-   + [Présentation](./content-automation/overview.md)
+   + [Vue d’ensemble](./content-automation/overview.md)
    + [Opérations de création](./content-automation/creative-operations.md)
    + [Actions Photoshop](./content-automation/photoshop-actions.md)
 
@@ -159,7 +159,7 @@ ht-degree: 96%
       + [Bases du connecteur amélioré](./workfront/enhanced-connector/basics.md)
       + [Dossiers de projets](./workfront/enhanced-connector/project-folders.md)
       + Série d’experts AEM{#aem-experts-series}
-         + [Présentation](./workfront/enhanced-connector/aem-experts-series/overview.md)
+         + [Vue d’ensemble](./workfront/enhanced-connector/aem-experts-series/overview.md)
          + [Configuration](./workfront/enhanced-connector/aem-experts-series/setup.md)
          + [Formulaires Workfront et métadonnées AEM](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
          + [Balises, dossiers liés au projet et métadonnées de dossier](./workfront/enhanced-connector/aem-experts-series/aem-tags-project-linked-folders-and-folder-metadata.md)
@@ -179,4 +179,4 @@ ht-degree: 96%
 + Déploiement{#deployment}
    + [Multitenant et développement simultané](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=fr){target=_blank}
++ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=fr){target=_blank}

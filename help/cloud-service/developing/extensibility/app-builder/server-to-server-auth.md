@@ -1,6 +1,6 @@
 ---
-title: Générer un jeton d’accès serveur à serveur dans l’action App Builder
-description: Découvrez comment générer un jeton d’accès à l’aide des informations d’identification OAuth Server-to-Server à utiliser dans une action App Builder.
+title: Générer un jeton d’accès serveur à serveur dans une action Créateur d’applications
+description: Découvrez comment générer un jeton d’accès à l’aide des informations d’identification OAuth serveur à serveur pour l’utiliser dans une action Créateur d’applications.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -9,38 +9,39 @@ level: Intermediate
 jira: KT-14724
 last-substantial-update: 2024-02-29T00:00:00Z
 duration: null
-source-git-commit: 8fae7510db1eb7b9483d198592a1628cd9867e2b
-workflow-type: tm+mt
+exl-id: 919cb9de-68f8-4380-940a-17274183298f
+source-git-commit: 08ad6e3e6db6940f428568c749901b0b3c6ca171
+workflow-type: ht
 source-wordcount: '400'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
-# Générer un jeton d’accès serveur à serveur dans l’action App Builder
+# Générer un jeton d’accès serveur à serveur dans une action Créateur d’applications
 
-Les actions du créateur d’applications peuvent nécessiter une interaction avec les API d’Adobe qui prennent en charge **Identifiants OAuth serveur à serveur** et sont associés aux projets Adobe Developer Console que l’application App Builder est déployée.
+Les actions Créateur d’applications peuvent avoir besoin d’interagir avec les API d’Adobe qui prennent en charge les **informations d’identification OAuth serveur à serveur** et qui sont associées aux projets Adobe Developer Console sur lesquels l’application Créateur d’applications est déployée.
 
-Ce guide explique comment générer un jeton d’accès à l’aide de _Identifiants OAuth serveur à serveur_ à utiliser dans une action du créateur d’applications.
+Découvrez comment générer un jeton d’accès à l’aide des _informations d’identification OAuth serveur à serveur_ à utiliser dans une action Créateur d’applications.
 
 >[!IMPORTANT]
 >
-> Les informations d’identification du compte de service (JWT) ont été abandonnées au profit des informations d’identification OAuth serveur à serveur. Cependant, certaines API d’Adobe prennent toujours en charge uniquement les informations d’identification du compte de service (JWT) et la migration vers OAuth Server-to-Server est en cours. Consultez la documentation de l’API d’Adobe pour savoir quelles informations d’identification sont prises en charge.
+> Les informations d’identification du compte de service (JWT), ont été rendues obsolètes au profit des informations d’identification OAuth serveur à serveur. Cependant, certaines API Adobe ne prennent toujours en charge que les informations d’identification du compte de service (JWT) et la migration vers OAuth serveur à serveur est en cours. Consultez la documentation des API Adobe pour comprendre quelles informations d’identification sont prises en charge.
 
-## Configurations de projet de la console Adobe Developer
+## Configurations du projet Adobe Developer Console
 
-Lors de l’ajout de l’API d’Adobe souhaitée au projet de console Adobe Developer, dans la variable _Configuration de l’API_ , sélectionnez la **OAuth serveur à serveur** type d’authentification.
+Lors de l’ajout de l’API Adobe souhaitée au projet Adobe Developer Console, dans l’étape _Configurer l’API_, sélectionnez le type d’authentification **OAuth serveur à serveur**.
 
-![Console Adobe Developer - OAuth serveur à serveur](./assets/s2s-auth/oauth-server-to-server.png)
+![Adobe Developer Console - OAuth serveur à serveur](./assets/s2s-auth/oauth-server-to-server.png)
 
-Pour attribuer le compte de service d’intégration créé automatiquement ci-dessus, sélectionnez le profil de produit souhaité. Par conséquent, via le profil de produit, les autorisations du compte de service sont contrôlées.
+Pour attribuer le compte de service d’intégration créé automatiquement ci-dessus, sélectionnez le profil de produit souhaité. Ainsi via le profil produit, les autorisations du compte de service sont contrôlées.
 
-![Console Adobe Developer - Profil du produit](./assets/s2s-auth/select-product-profile.png)
+![Adobe Developer Console - profil produit](./assets/s2s-auth/select-product-profile.png)
 
 ## Fichier .env
 
-Dans le fichier du projet App Builder `.env` , ajoutez des clés personnalisées pour les informations d’identification OAuth Server-to-Server du projet Console Adobe Developer. Les valeurs d’informations d’identification OAuth Server-to-Server peuvent être obtenues à partir du __Informations d’identification__ > __OAuth serveur à serveur__ pour un espace de travail donné.
+Dans le fichier `.env` du projet Créateur d’applications, ajoutez des clés personnalisées pour chacune des informations d’identification OAuth serveur à serveur du projet Adobe Developer Console. Les valeurs des informations d’identification OAuth serveur à serveur peuvent être obtenues à partir des __Informations d’identification__ > __OAuth serveur à serveur__ du projet Adobe Developer Console pour un espace de travail donné.
 
-![Informations d’identification de serveur à serveur OAuth de la console Adobe Developer](./assets/s2s-auth/oauth-server-to-server-credentials.png)
+![Informations d’identification OAuth serveur à serveur Adobe Developer Console](./assets/s2s-auth/oauth-server-to-server-credentials.png)
 
 ```
 ...
@@ -49,11 +50,11 @@ OAUTHS2S_CLIENT_SECRET=p8e-EIRF6kY6EHLBSdw2b-pLUWKodDqJqSz3
 OAUTHS2S_CECREDENTIALS_METASCOPES=AdobeID,openid,ab.manage,additional_info.projectedProductContext,read_organizations,read_profile,account_cluster.read
 ```
 
-Les valeurs de `OAUTHS2S_CLIENT_ID`, `OAUTHS2S_CLIENT_SECRET`, `OAUTHS2S_CECREDENTIALS_METASCOPES` peut être directement copié à partir de l’écran Informations d’identification OAuth Server-to-Server du projet Console Adobe Developer.
+Les valeurs de `OAUTHS2S_CLIENT_ID`, `OAUTHS2S_CLIENT_SECRET` et `OAUTHS2S_CECREDENTIALS_METASCOPES` peuvent être directement copiées à partir de l’écran Informations d’identification OAuth serveur à serveur du projet Adobe Developer Console.
 
 ## Mapper des entrées
 
-Avec la valeur d’identification OAuth Server-to-Server définie dans la variable `.env` , ils doivent être mappés aux entrées d’action AppBuilder afin qu’ils puissent être lus dans l’action elle-même. Pour ce faire, ajoutez des entrées pour chaque variable dans les `inputs` de l’action `ext.config.yaml` au format : `PARAMS_INPUT_NAME: $ENV_KEY`.
+Avec la valeur d’identification OAuth serveur à serveur définie dans le fichier `.env`, celles-ci doivent être mappées aux entrées d’action Créateur d’applications pour pouvoir être lues dans l’action elle-même. Pour ce faire, ajoutez des entrées pour chaque variable dans les `inputs` de l’action `ext.config.yaml` au format : `PARAMS_INPUT_NAME: $ENV_KEY`.
 
 Par exemple :
 
@@ -84,11 +85,11 @@ runtimeManifest:
 
 Les clés définies sous `inputs` sont disponibles sur l’objet `params` fourni à l’action Créateur d’applications.
 
-## Identifiants OAuth serveur à serveur pour accéder au jeton
+## Informations d’identification OAuth serveur à serveur pour le jeton d’accès
 
-Dans l’action App Builder, les informations d’identification OAuth serveur à serveur sont disponibles dans la variable `params` . Grâce à ces informations d’identification, le jeton d’accès peut être généré à l’aide de [Bibliothèques OAuth 2.0](https://oauth.net/code/). Vous pouvez également utiliser la variable [Bibliothèque de récupération des noeuds](https://www.npmjs.com/package/node-fetch) pour envoyer une requête de POST au point de terminaison du jeton Adobe IMS afin d’obtenir le jeton d’accès.
+Dans l’action Créateur d’applications, les informations d’identification OAuth serveur à serveur sont disponibles dans l’objet `params`. En utilisant ces informations d’identification, le jeton d’accès peut être généré en utilisant les [bibliothèques OAuth 2.0](https://oauth.net/code/). Vous pouvez également utiliser la [bibliothèque de récupération de nœuds](https://www.npmjs.com/package/node-fetch) pour envoyer une requête POST au point d’entrée du jeton Adobe IMS afin d’obtenir le jeton d’accès.
 
-L’exemple suivant montre comment utiliser la variable `node-fetch` pour envoyer une requête de POST au point de terminaison du jeton Adobe IMS afin d’obtenir le jeton d’accès.
+L’exemple suivant montre comment utiliser la bibliothèque `node-fetch` pour envoyer une requête POST au point d’entrée du jeton Adobe IMS afin d’obtenir le jeton d’accès.
 
 ```javascript
 const fetch = require("node-fetch");

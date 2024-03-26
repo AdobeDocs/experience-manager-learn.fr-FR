@@ -11,9 +11,9 @@ doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
 duration: 653
 source-git-commit: 19beb662b63476f4745291338d944502971638a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2225'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -133,15 +133,15 @@ Si le paramètre de niveau du fichier stat est trop élevé, chaque demande de p
 
 Si le paramètre de ce niveau de fichier est trop bas, la demande de purge peut effacer plus que prévu.Ce qui, à son tour, entraîne l’exécution du cache plus souvent avec moins de demandes traitées à partir du cache, ce qui peut entraîner des problèmes de performances.
 
->[!BEGINSHADEBOX &quot;Remarque&quot;]
+>[!BEGINSHADEBOX « Remarque »]
 
-Définissez la variable `statfilelevel` à un niveau raisonnable. Examinez la structure de vos dossiers et assurez-vous qu’elle est configurée pour permettre des vidages concis sans avoir à parcourir trop de répertoires. Testez-le et assurez-vous qu’il correspond à vos besoins lors d’un test de performance du système.
+Définissez `statfilelevel` sur une valeur raisonnable. Examinez la structure de vos dossiers et assurez-vous qu’elle est suffisamment légère pour permettre des purges concises sans avoir à passer par de trop nombreux répertoires. Effectuez une purge de test pour vérifier que les performance du système restent optimales.
 
-Un bon exemple est un site qui prend en charge les langues. L’arborescence de contenu classique contiendra les répertoires suivants :
+Un bon exemple est un site qui prend en charge plusieurs langues. L’arborescence de contenu typique comprend les répertoires suivants.
 
 `/content/brand1/en/us/`
 
-Dans cet exemple, utilisez un paramètre de niveau fichier stat de 4. Cela vous assure lorsque vous videz du contenu qui se trouve sous la balise **`us`** pour empêcher le vidage des dossiers de langue.
+Dans cet exemple, définissez le niveau du fichier stat sur 4. Cela permet de vous assurer que lorsque vous videz le contenu sous le dossier **`us`**, les dossiers des langues sont épargnés.
 
 >[!ENDSHADEBOX]
 
@@ -230,7 +230,7 @@ Vous spécifiez le répertoire dans lequel vous souhaitez que Dispatcher soit re
 
 >[!NOTE]
 >
->Ce répertoire doit correspondre au paramètre racine du document Apache pour le domaine que votre serveur web est configuré pour utiliser.
+>Ce répertoire doit correspondre au paramètre racine du document Apache pour le domaine pour lequel votre serveur web est configuré.
 >
 >Avoir des dossiers docroot imbriqués pour chaque batterie qui vivent comme sous-dossiers de la racine du document Apache est une mauvaise idée pour de nombreuses raisons.
 
@@ -278,9 +278,9 @@ Le `/statfileslevel` défini sur le nombre suivant avec la racine du document de
 
 >[!NOTE]
 >
->Gardez à l’esprit que lorsque l’établissement de la connexion de date et heure se produit, le fichier `.stat` le plus proche est recherché.
+>Gardez à l’esprit que lorsque l’établissement de la liaison d’horodatage se produit, le fichier `.stat` le plus proche est recherché.
 >
->Pour `.stat` niveau de fichier 0 et un fichier stat uniquement à l’adresse `/var/www/html/.stat` signifie que le contenu qui vit sous `/var/www/html/content/dam/brand1/en/us/` Recherchez le plus proche `.stat` et parcourir 5 dossiers pour trouver le seul `.stat` qui existe au niveau 0 et qui compare des dates à cela. Cela signifie qu’une purge à ce niveau élevé invaliderait essentiellement tous les éléments mis en cache.
+>Avoir un niveau de fichier `.stat` de 0 et un fichier stat uniquement à `/var/www/html/.stat` signifie que le contenu qui réside sous `/var/www/html/content/dam/brand1/en/us/` rechercherait le fichier `.stat` le plus proche et parcourerait 5 dossiers pour trouver le seul fichier `.stat` qui existe au niveau 0 et comparerait les dates à celui-ci. Cela signifie qu’une purge à ce niveau élevé invaliderait essentiellement tous les éléments mis en cache.
 
 ### Invalidation autorisée
 

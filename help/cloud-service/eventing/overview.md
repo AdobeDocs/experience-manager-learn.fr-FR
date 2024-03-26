@@ -1,6 +1,6 @@
 ---
-title: AEM
-description: Découvrez AEM événement, ce qu’il est, pourquoi et quand l’utiliser et des exemples.
+title: AEM Eventing
+description: Découvrez AEM Eventing, en quoi cela consiste, pourquoi et quand l’utiliser, avec des exemples.
 version: Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
@@ -11,132 +11,132 @@ duration: 573
 last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
-source-git-commit: 5d8ee3b9ab6fb974f7faebb1d0ce42d699e2063c
-workflow-type: tm+mt
+exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
+source-git-commit: 08ad6e3e6db6940f428568c749901b0b3c6ca171
+workflow-type: ht
 source-wordcount: '939'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# AEM Eventing
 
-# AEM
-
-Découvrez AEM événement, ce qu’il est, pourquoi et quand l’utiliser et des exemples.
+Découvrez AEM Eventing, en quoi cela consiste, pourquoi et quand l’utiliser, avec des exemples.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426686?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
->AEM Eventing as a Cloud Service n’est disponible que pour les utilisateurs enregistrés en mode de version préliminaire. Pour activer AEM événements dans votre environnement AEM as a Cloud Service, contactez [AEM Eventing Team](mailto:grp-aem-events@adobe.com).
+>Eventing pour AEM as a Cloud Service n’est disponible que pour les utilisateurs et utilisatrices enregistrés en mode de version préliminaire. Pour activer AEM Eventing dans votre environnement AEM as a Cloud Service, contactez l’équipe [AEM Eventing](mailto:grp-aem-events@adobe.com).
 
-## Qu’est-ce que c’est ?
+## Présentation
 
-AEM Eventing est un système d’événement natif dans le cloud qui permet aux abonnements à des événements AEM pour traitement dans des systèmes externes. Un événement AEM est une notification de changement d’état envoyée par AEM chaque fois qu’une action spécifique se produit. Par exemple, cela peut inclure des événements lorsqu’un fragment de contenu est créé, mis à jour ou supprimé.
+AEM Eventing est un système d’événements natif dans le cloud qui permet de traiter des abonnements à des événements AEM dans des systèmes externes. Un événement AEM est une notification de changement d’état envoyée par AEM chaque fois qu’une action spécifique se produit. Par exemple, cela peut inclure des événements lorsqu’un fragment de contenu est créé, mis à jour ou supprimé.
 
-![AEM](./assets/aem-eventing.png)
+![AEM Eventing](./assets/aem-eventing.png)
 
-Le diagramme ci-dessus a visualisé la manière dont AEM as a Cloud Service génère des événements et les envoie aux événements d’Adobe I/O, ce qui, à son tour, les expose aux abonnés d’événement.
+Le diagramme ci-dessus représente la manière dont AEM as a Cloud Service génère des événements et les envoie aux événements Adobe I/O qui, à leur tour, les envoient aux personnes abonnées aux événements.
 
-En résumé, il existe trois composants principaux :
+En résumé, il existe trois composants principaux :
 
-1. **Fournisseur d’événements :** AEM as a Cloud Service.
-1. **Événements d’Adobe I/O :** Plateforme de développement pour l’intégration, l’extension et la création d’applications et d’expériences en fonction des produits et des technologies de l’Adobe.
-1. **Consommateur d’événement :** Systèmes appartenant au client qui s’abonnent aux événements AEM. Par exemple, un CRM (Customer Relationship Management), PIM (Product Information Management), OMS (Order Management System) ou une application personnalisée.
+1. **Fournisseur d’événements :** AEM as a Cloud Service.
+1. **Événements Adobe I/O :** plateforme de développement pour l’intégration, l’extension et la création d’applications et d’expériences basées sur les produits et les technologies Adobe.
+1. **Consommateur d’événements :** systèmes appartenant au client ou à la cliente qui s’abonnent aux événements AEM. Par exemple, un CRM (gestion de la relation client), un PIM (gestion d’informations sur les produits), un OMS (système de gestion des commandes) ou une application personnalisée.
 
-### En quoi est-ce différent ?
+### Présentation des différences
 
-La variable [Événement Apache Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html), événement OSGi et [observation JCR](https://jackrabbit.apache.org/oak/docs/features/observation.html) tous les mécanismes d’offre pour s’abonner aux événements et les traiter. Toutefois, elles sont distinctes de l’AEM Eventing, comme décrit dans cette documentation.
+[Apache Sling Eventing](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html), OSGi Eventing et l’[observation JCR](https://jackrabbit.apache.org/oak/docs/features/observation.html) offrent tous des dispositifs pour s’abonner aux événements et pour les traiter. Toutefois, ceux-ci sont distincts d’AEM Eventing, comme décrit dans cette documentation.
 
-Les principales distinctions de AEM Eventing sont les suivantes :
+Les principales distinctions d’AEM Eventing incluent :
 
-- Le code du consommateur d’événement est exécuté en dehors d’AEM et ne s’exécute pas dans la même JVM qu’AEM.
-- AEM code de produit est chargé de définir les événements et de les envoyer aux événements d’Adobe I/O.
-- Les informations sur les événements sont normalisées et envoyées au format JSON. Pour plus d’informations, voir [cloudevants](https://cloudevents.io/).
-- Pour communiquer de nouveau avec AEM, le consommateur d’événement utilise l’API as a Cloud Service AEM.
+- Le code consommateur d’événement est exécuté en dehors d’AEM et ne s’exécute pas dans la même JVM qu’AEM.
+- Le code de produit AEM est chargé de définir les événements et de les envoyer aux événements d’Adobe I/O.
+- Les informations sur les événements sont normalisées et envoyées au format JSON. Pour plus d’informations, reportez-vous à [cloudevents](https://cloudevents.io/).
+- Pour communiquer avec AEM, le consommateur d’événement utilise l’API d’AEM as a Cloud Service.
 
 
-## Pourquoi et quand l’utiliser
+## Comprendre pourquoi et comment l’utiliser
 
-AEM Eventing offre de nombreux avantages en termes d’architecture du système et d’efficacité opérationnelle. Les principales raisons d’utiliser AEM Eventing sont les suivantes :
+AEM Eventing offre de nombreux avantages en termes d’architecture système et d’efficacité opérationnelle. Les principales raisons d’utiliser AEM Eventing incluent les suivantes :
 
-- **Pour créer des architectures pilotées par les événements**: facilite la création de systèmes à couplage faible, capables de s’adapter indépendamment et résistants aux défaillances.
-- **Faible code et coûts opérationnels réduits**: évite les personnalisations dans AEM, ce qui se traduit par des systèmes plus faciles à gérer et à étendre, ce qui réduit les dépenses opérationnelles.
-- **Simplification de la communication entre AEM et les systèmes externes**: élimine les connexions point à point en permettant aux événements d’Adobe I/O de gérer les communications, comme déterminer les événements d’AEM qui doivent être diffusés à des systèmes ou services spécifiques.
-- **Durabilité plus élevée des événements**: les événements d’Adobe I/O sont un système hautement disponible et évolutif, conçu pour gérer de grands volumes d’événements et les diffuser de manière fiable aux abonnés.
-- **Traitement parallèle des événements**: permet la diffusion simultanée d’événements à plusieurs abonnés, ce qui permet le traitement distribué des événements sur plusieurs systèmes.
-- **Développement d’applications sans serveur**: prend en charge le déploiement du code de consommateur d’événement en tant qu’application sans serveur, améliorant ainsi la flexibilité et l’évolutivité du système.
+- **Création d’architectures pilotées par des événements** : facilite la création de systèmes à couplage léger, capables de s’adapter de manière indépendante et résistants aux défaillances.
+- **Code réduit et faibles coûts opérationnels** : évite les personnalisations dans AEM, ce qui se traduit par des systèmes plus faciles à gérer et à étendre, réduisant ainsi les dépenses opérationnelles.
+- **Simplification de la communication entre AEM et les systèmes externes** : élimine les connexions point à point en permettant aux événements d’Adobe I/O de gérer des communications, par exemple, déterminer quels événements AEM doivent être diffusés à des systèmes ou des services spécifiques.
+- **Meilleure durabilité des événements** : les événements d’Adobe I/O constituent un système hautement disponible et évolutif, conçu pour gérer de grands volumes d’événements et les diffuser de manière fiable aux personnes abonnées.
+- **Traitement parallèle des événements** : permet la diffusion simultanée d’événements à plusieurs personnes abonnées, ce qui permet un traitement distribué des événements sur plusieurs systèmes.
+- **Développement d’applications sans serveur** : prend en charge le déploiement du code du consommateur d’événement en tant qu’application sans serveur, améliorant ainsi la flexibilité et l’évolutivité du système.
 
 ### Limites
 
-AEM Eventing, bien que puissant, présente certaines limites à prendre en compte :
+AEM Eventing, bien que puissant, présente certaines limites à prendre en compte :
 
-- **Disponibilité limitée à AEM as a Cloud Service**: actuellement, AEM Eventing est exclusivement disponible pour AEM as a Cloud Service.
-- **Prise en charge limitée des événements**: à ce jour, seuls les événements de fragment de contenu AEM sont pris en charge. Toutefois, la portée devrait s’étendre avec l’ajout d’autres événements à l’avenir.
+- **Disponibilité limitée à AEM as a Cloud Service** : actuellement, AEM Eventing est exclusivement disponible pour AEM as a Cloud Service.
+- **Prise en charge limitée des événements** : à ce jour, seuls les événements de fragment de contenu AEM sont pris en charge. Toutefois, la gamme devrait s’élargir avec l’ajout d’événements supplémentaires dans le futur.
 
-## Comment activer
+## Activation
 
-AEM Eventing est activé par environnement as a Cloud Service et disponible uniquement pour les environnements en mode de version préliminaire. Contact [AEM Eventing Team](mailto:grp-aem-events@adobe.com) pour activer votre environnement AEM avec AEM Eventing.
+L’activation AEM Eventing s’effectue pour chaque environnement AEM as a Cloud Service et est disponible uniquement pour les environnements en mode de version préliminaire. Contactez l’équipe [AEM Eventing](mailto:grp-aem-events@adobe.com) pour activer votre environnement AEM avec AEM Eventing.
 
-Si elle est déjà activée, voir [Activation des événements AEM dans votre environnement AEM Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) pour les étapes suivantes.
+S’il est déjà activé, consultez [Activer les événements AEM dans votre environnement AEM Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) pour les étapes suivantes.
 
-## Comment s’abonner
+## Abonnement
 
-Pour vous abonner aux événements AEM, il n’est pas nécessaire d’écrire du code dans AEM, mais plutôt une [Console Adobe Developer](https://developer.adobe.com/) Le projet est configuré. La console Adobe Developer est une passerelle vers les API, SDK, événements, Runtime et App Builder Adobe.
+Pour vous abonner aux événements AEM, il n’est pas nécessaire d’écrire du code dans AEM, mais un projet [Adobe Developer Console](https://developer.adobe.com/) est plutôt configuré. L’Adobe Developer Console est une passerelle vers les API, les SDK, les événements, Runtime et le créateur d’applications d’Adobe.
 
-Dans ce cas, une _project_ dans la console Adobe Developer, vous permet de vous abonner aux événements émis dans AEM environnement as a Cloud Service et de configurer la diffusion des événements sur des systèmes externes.
+Dans ce cas, un _projet_ dans Adobe Developer Console vous permet de vous abonner aux événements émis à partir d’un environnement AEM as a Cloud Service et de configurer la diffusion des événements vers des systèmes externes.
 
-Pour plus d’informations, voir [Comment s’abonner aux événements AEM dans la console Adobe Developer](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
+Pour plus d’informations, consulter [Abonnement aux événements AEM dans l’Adobe Developer Console](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#how-to-subscribe-to-aem-events-in-the-adobe-developer-console).
 
-## Comment consommer
+## Utilisation
 
-Il existe deux méthodes principales pour utiliser les événements AEM : la variable _push_ et la méthode _pull_ .
+Il existe deux méthodes principales pour utiliser les événements AEM : la méthode _push_ (pousser) et la méthode _pull_ (tirer).
 
-- **Méthode push**: dans cette approche, le consommateur d’événement est informé de manière proactive par les événements d’Adobe I/O lorsqu’un événement devient disponible. Les options d’intégration incluent Webhooks, Adobe I/O Runtime et Amazon EventBridge.
-- **Méthode de tirage**: ici, le consommateur d’événement interroge activement les événements d’Adobe I/O pour rechercher de nouveaux événements. L’option principale d’intégration de cette méthode est l’API de journalisation Adobe Developer.
+- **Méthode push** : dans cette approche, l’utilisateur ou l’utilisatrice d’événement reçoit une notification de manière proactive par les événements d’Adobe I/O lorsqu’un événement devient disponible. Les options d’intégration incluent des webhooks, Adobe I/O Runtime et Amazon EventBridge.
+- **Méthode pull** : ici, l’utilisateur ou l’utilisatrice d’événement interroge activement les événements d’Adobe I/O pour rechercher de nouveaux événements. L’option d’intégration principale de cette méthode est l’API de journalisation d’Adobe Developer.
 
-Pour plus d’informations, voir [Traitement des événements AEM via des événements Adobe I/O](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#aem-events-processing-via-adobe-io).
+Pour plus d’informations, consultez [Traitement des événements AEM via des événements Adobe I/O](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#aem-events-processing-via-adobe-io).
 
 ## Exemples
 
 <table>
   <tr>
     <td>
-        <a  href="./examples/webhook.md"><img alt="Réception d’événements AEM sur un webhook" src="./assets/examples/webhook/webhook-example.png"/></a>
-        <div><strong><a href="./examples/webhook.md">Réception d’événements AEM sur un webhook</a></strong></div>
+        <a  href="./examples/webhook.md"><img alt="Récevoir des événements AEM sur un webhook" src="./assets/examples/webhook/webhook-example.png"/></a>
+        <div><strong><a href="./examples/webhook.md">Récevoir des événements AEM sur un webhook</a></strong></div>
         <p>
-          Utilisez le webhook fourni par Adobe pour recevoir AEM événements et consulter les détails de l’événement.
+          Utilisez le webhook fourni par Adobe pour recevoir des événements AEM et consulter les détails de l’événement.
         </p>
       </td>
       <td>
-        <a  href="./examples/journaling.md"><img alt="Chargement du journal des événements AEM" src="./assets/examples/journaling/eventing-journal.png"/></a>
-        <div><strong><a href="./examples/journaling.md">Chargement du journal des événements AEM</a></strong></div>
+        <a  href="./examples/journaling.md"><img alt="Charger le journal des événements AEM" src="./assets/examples/journaling/eventing-journal.png"/></a>
+        <div><strong><a href="./examples/journaling.md">Charger le journal des événements AEM</a></strong></div>
         <p>
-          Utilisez l’application web fournie par Adobe pour charger AEM événements à partir du journal et consulter les détails de l’événement.
+          Utilisez l’application web fournie par Adobe pour charger des événements AEM à partir du journal et consulter les détails des événements.
         </p>
       </td>
     </tr>
   <tr>
     <td>
-        <a  href="./examples/runtime-action.md"><img alt="Réception d’événements AEM sur une action Adobe I/O Runtime" src="./assets/examples/runtime-action/eventing-runtime.png"/></a>
-        <div><strong><a href="./examples/runtime-action.md">Réception d’événements AEM sur une action Adobe I/O Runtime</a></strong></div>
+        <a  href="./examples/runtime-action.md"><img alt="Recevoir des événements AEM sur une action Adobe I/O Runtime" src="./assets/examples/runtime-action/eventing-runtime.png"/></a>
+        <div><strong><a href="./examples/runtime-action.md">Recevoir des événements AEM sur une action Adobe I/O Runtime</a></strong></div>
         <p>
           Recevez des événements AEM et passez en revue les détails de l’événement.
         </p>
       </td>
       <td>
-        <a  href="./examples/event-processing-using-runtime-action.md"><img alt="Traitement des événements AEM à l’aide de l’action Adobe I/O Runtime" src="./assets/examples/event-processing-using-runtime-action/event-processing.png"/></a>
-        <div><strong><a href="./examples/event-processing-using-runtime-action.md">Traitement des événements AEM à l’aide de l’action Adobe I/O Runtime</a></strong></div>
+        <a  href="./examples/event-processing-using-runtime-action.md"><img alt="Traitement des événements AEM à l’aide de l’action Adobe I/O Runtime" src="./assets/examples/event-processing-using-runtime-action/event-processing.png"/></a>
+        <div><strong><a href="./examples/event-processing-using-runtime-action.md">Traitement des événements AEM à l’aide de l’action Adobe I/O Runtime</a></strong></div>
         <p>
-          Découvrez comment traiter les événements AEM reçus à l’aide de l’action Adobe I/O Runtime. Le traitement des événements comprend le rappel AEM, la persistance des données d’événement et leur affichage dans le SPA.
+          Découvrez comment traiter les événements AEM reçus à l’aide de l’action Adobe I/O Runtime. Le traitement des événements comprend le rappel AEM, la persistance des données d’événement et leur affichage dans la SPA.
         </p>
       </td>
   </tr>    
   <tr>
     <td>
-        <a  href="./examples/assets-pim-integration.md"><img alt="Événements AEM Assets pour l’intégration PIM" src="./assets/examples/assets-pim-integration/PIM-integration-tile.png"/></a>
-        <div><strong><a href="./examples/assets-pim-integration.md">Événements AEM Assets pour l’intégration PIM</a></strong></div>
+        <a  href="./examples/assets-pim-integration.md"><img alt="Événements AEM Assets pour l’intégration PIM" src="./assets/examples/assets-pim-integration/PIM-integration-tile.png"/></a>
+        <div><strong><a href="./examples/assets-pim-integration.md">Événements AEM Assets pour l’intégration PIM</a></strong></div>
         <p>
-          Découvrez comment intégrer AEM Assets et les systèmes de gestion des informations sur les produits (PIM) pour les mises à jour de métadonnées.
+          Découvrez comment intégrer AEM Assets et les systèmes PIM pour les mises à jour de métadonnées.
         </p>
       </td>
   </tr>  

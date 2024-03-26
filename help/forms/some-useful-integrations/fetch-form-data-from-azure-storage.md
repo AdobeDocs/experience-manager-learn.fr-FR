@@ -11,18 +11,18 @@ jira: KT-14238
 duration: 81
 exl-id: 77f93aad-0cab-4e52-b0fd-ae5af23a13d0
 source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 # Récupérer des données à partir du stockage Azure
 
 Dans cet article, découvrez comment remplir un formulaire adaptatif avec les données stockées dans le stockage Azure.
-Nous partons du principe que vous avez stocké les données de formulaire adaptatif dans le stockage Azure et que vous souhaitez maintenant préremplir votre formulaire adaptatif avec ces données.
+Avant de poursuivre votre lecture, assurez-vous d’avoir stocké les données de formulaire adaptatif dans le stockage Azure. Ces données permettront de préremplir les formulaires adaptatifs.
 >[!NOTE]
->Le code de cet article ne fonctionne pas avec le formulaire adaptatif basé sur les composants principaux.[L’article équivalent pour le formulaire adaptatif basé sur les composants principaux est disponible ici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+>Le code de cet article ne fonctionne pas avec le formulaire adaptatif basé sur les composants principaux.[L’article équivalent pour le formulaire adaptatif basé sur des composants principaux est disponible ici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=fr).
 
 
 ## Créer une requête GET
@@ -86,7 +86,7 @@ if(guid!=null&&!guid.isEmpty())
 
 * [Importez l’exemple de formulaire adaptatif.](./assets/bank-account-sample-form.zip)
 
-* [Spécifiez les valeurs appropriées dans la configuration du portail Azure à l’aide de la console de configuration OSGi.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+* [Spécifiez les valeurs appropriées dans la configuration du portail Azure à l’aide de la console de configuration OSGi.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=fr#provide-the-blob-sas-token-and-storage-uri)
 
 * [Prévisualiser et soumettre le formulaire BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 

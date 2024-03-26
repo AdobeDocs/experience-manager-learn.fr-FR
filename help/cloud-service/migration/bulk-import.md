@@ -13,31 +13,31 @@ last-substantial-update: 2024-01-16T00:00:00Z
 exl-id: 28644af8-babc-467d-afdb-8538728dc176
 duration: 725
 source-git-commit: 0400242f6a99bc5209a8b483469d5fd88eac077e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '175'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 # Utiliser l’import en bloc
 
-L’outil d’importation en bloc d’AEM as a Cloud Service permet aux administrateurs d’importer en bloc des ressources à partir de l’espace de stockage dans le cloud de manière sécurisée et efficace.
+L’outil d’import en bloc d’AEM as a Cloud Service permet aux administrateurs et administratrices d’importer en bloc des ressources à partir d’un espace de stockage dans le cloud de manière sécurisée et efficace.
 
 >[!BEGINTABS]
 
->[!TAB Affichage des ressources]
+>[!TAB Vue Assets]
 
-Découvrez comment importer de nombreux fichiers dans AEM Assets à l’aide du [Affichage des ressources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html) [Importation en bloc](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html), avec Dropbox comme exemple de fournisseur de stockage dans le cloud pour un processus d’intégration clair et facile à suivre.
+Découvrez comment importer de nombreux fichiers dans AEM Assets à l’aide de l’[Import en bloc](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view.html?lang=fr) en [vue Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/assets-view/assets-view-introduction.html?lang=fr), avec Dropbox comme exemple de fournisseur de stockage dans le cloud pour un processus d’intégration clair et facile à suivre.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on)
 
->[!TAB Vue Admin]
+>[!TAB URL d’administration]
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680?quality=12&learn=on)
 
 >[!TIP]
 >
-> Les sources d’entrée de cette vidéo n’affichent que Azure Blob Storage et Amazon S3 ; cependant, les sources disponibles continuent de croître au fil du temps. Pour obtenir la liste complète des sources d’entrée prises en charge, reportez-vous aux options disponibles dans le produit, ou [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html#bulk-upload).
+> Les sources d’entrée de cette vidéo n’affichent qu’Azure Blob Storage et Amazon S3 ; cependant, la liste des sources disponibles continue d’augmenter au fil du temps. Pour obtenir la liste complète des sources d’entrée prises en charge, reportez-vous aux options disponibles dans le produit, ou à la [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=fr#bulk-upload).
 
 ## Planifier l’import en bloc
 

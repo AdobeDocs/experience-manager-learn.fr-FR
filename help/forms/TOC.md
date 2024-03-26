@@ -9,9 +9,9 @@ sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
 source-git-commit: ae2a2cbde1bf21314cc77863014cb0f013b6e0bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2034'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -220,11 +220,11 @@ ht-degree: 97%
    + [Gérer l’envoi du PDF](offline-mobile-form-submission/part-two.md)
    + [Workflow de révision du PDF](offline-mobile-form-submission/part-three.md)
    + [Déployer sur votre système](offline-mobile-form-submission/part-four.md)
-+ Requête sur les envois de formulaire{#query-form-submissions}
++ Interroger les envois de formulaire{#query-form-submissions}
    + [Présentation](query-form-submissions/introduction.md)
-   + [Création de champs pouvant faire l’objet d’une recherche](query-form-submissions/part1.md)
+   + [Créer des champs pouvant faire l’objet d’une recherche](query-form-submissions/part1.md)
    + [Créer un envoi personnalisé](query-form-submissions/part2.md)
-   + [Interface de requête de création](query-form-submissions/part3.md)
+   + [Créer une interface de requête](query-form-submissions/part3.md)
    + [Écrire un service de préremplissage](query-form-submissions/part4.md)
    + [Déployer l’exemple](query-form-submissions/part5.md)
 + Liste des types de ressources personnalisés dans le portail Formulaires{#listing-custom-asset-types}
@@ -287,14 +287,14 @@ ht-degree: 97%
    + [Assembler des pièces jointes de formulaire](document-services/assemble-form-attachments.md)
    + [Services utilitaires utiles](document-services/useful-utility-services.md)
 + Forms Designer{#forms-designer}
-   + [Vue de conception](forms-designer/design-view.md)
+   + [Mode Conception](forms-designer/design-view.md)
    + [Créer votre premier formulaire](forms-designer/create-simple-form.md)
    + [Créer un modèle de formulaire](forms-designer/creating-form-template.md)
-   + [Script de votre formulaire](forms-designer/first-script-designer.md)
+   + [Appliquer un script à votre formulaire](forms-designer/first-script-designer.md)
    + [Liaison de données XML](forms-designer/xml-data-binding.md)
    + [Liaison de base de données](forms-designer/binding-to-mysql-db.md)
-   + [Utilisation d’une signature tactile](forms-designer/scribble-signature-form.md)
-   + [Utilisation de la signature numérique](forms-designer/adding-dig-signature-field.md)
+   + [Utiliser une signature tactile](forms-designer/scribble-signature-form.md)
+   + [Utiliser une signature numérique](forms-designer/adding-dig-signature-field.md)
    + [Reader d’extension de formulaire](forms-designer/reader-extending-j2ee.md)
 + Communications interactives pour le canal d’impression
 {#ic-print-channel-tutorial}

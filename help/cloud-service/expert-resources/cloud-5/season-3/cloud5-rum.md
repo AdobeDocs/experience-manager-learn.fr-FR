@@ -1,6 +1,6 @@
 ---
-title: Cloud 5 - Surveillance des utilisateurs réels (RUM)
-description: Explore Real User Monitoring (RUM) fonctionne avec des Edge Delivery Services.
+title: Cloud 5 - Surveillance des utilisateurs et utilisatrices réels (RUM)
+description: Découvrez comment la surveillance des utilisateurs et utilisatrices réels (RUM) fonctionne avec Edge Delivery Services.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -9,16 +9,16 @@ level: Intermediate
 jira: KT-14997
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
-source-git-commit: b905d71cc617a69f16471115edc3d5a38fcd0221
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+exl-id: ee5182fd-b995-419b-be18-a59484f18147
+source-git-commit: 08ad6e3e6db6940f428568c749901b0b3c6ca171
+workflow-type: ht
+source-wordcount: '52'
+ht-degree: 100%
 
 ---
 
-# Cloud 5 - Surveillance des utilisateurs réels (RUM)
+# Cloud 5 - Surveillance des utilisateurs et utilisatrices réels (RUM)
 
-Explorez les analyses de surveillance des utilisateurs réels (RUM) qui Adobe les offres sur ses sites d’AEM fournis avec des Edge Delivery Services et comment RUM peut être utilisé pour améliorer un site web.
+Découvrez les analyses de surveillance des utilisateurs et utilisatrices réels (RUM) qu’Adobe propose à ses sites AEM fournis avec Edge Delivery Services, et comment RUM peut être utilisée pour améliorer un site web.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427495?quality=12&learn=on)
-

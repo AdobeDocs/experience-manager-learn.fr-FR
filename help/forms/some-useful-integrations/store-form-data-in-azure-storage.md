@@ -11,9 +11,9 @@ jira: KT-13781
 exl-id: 2bec5953-2e0c-4ae6-ae98-34492d4cfbe4
 duration: 159
 source-git-commit: b1734f75bdda174788d880be28fa19f8e787af0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '601'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Cet article vous explique comment effectuer des appels REST pour stocker les don
 Pour pouvoir stocker les données de formulaire envoyées dans le stockage Azure, les étapes ci-dessous doivent être suivies.
 
 >[!NOTE]
->Le code de cet article ne fonctionne pas avec le formulaire adaptatif basé sur les composants principaux. [L’article équivalent pour le formulaire adaptatif basé sur les composants principaux est disponible ici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=en)
+>Le code de cet article ne fonctionne pas avec le formulaire adaptatif basé sur les composants principaux. [L’article équivalent pour le formulaire adaptatif basé sur des composants principaux est disponible ici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/prefill-form-with-data-attachments/introduction.html?lang=fr).
 
 
 ## Créer un compte de stockage Azure
@@ -49,7 +49,7 @@ Veillez à spécifier les autorisations et la date de fin appropriées, comme in
 ## Fournir le jeton Blob SAS et l’URI de stockage
 
 Pour rendre le code plus générique, les deux propriétés peuvent être configurées à l’aide de la configuration OSGi, comme illustré ci-dessous.  _**aemformstutorial**_ est le nom du compte de stockage et _**formsubmissions**_ est le conteneur dans lequel les données seront stockées.
-Assurez-vous que vous disposez de / à la fin de l’URI de stockage et que le jeton SAS commence par ?
+Assurez-vous que « / » se trouve à la fin de l’URI de stockage et que le jeton SAS commence par « ? ».
 ![osgi-configuration](./assets/azure-portal-osgi-configuration.png)
 
 
@@ -104,7 +104,7 @@ La fonction suivante est écrite pour stocker les données de formulaire envoyé
 
 * [Importez l’exemple de formulaire adaptatif.](./assets/bank-account-sample-form.zip)
 
-* [Spécifiez les valeurs appropriées dans la configuration du portail Azure à l’aide de la console de configuration OSGi.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=en#provide-the-blob-sas-token-and-storage-uri)
+* [Spécifiez les valeurs appropriées dans la configuration du portail Azure à l’aide de la console de configuration OSGi.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/some-useful-integrations/store-form-data-in-azure-storage.html?lang=fr#provide-the-blob-sas-token-and-storage-uri)
 
 * [Prévisualiser et soumettre le formulaire BankAccount](http://localhost:4502/content/dam/formsanddocuments/azureportalstorage/bankaccount/jcr:content?wcmmode=disabled)
 

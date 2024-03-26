@@ -1,6 +1,6 @@
 ---
 title: Autoriser la recherche de certains champs
-description: Tutoriel en plusieurs parties pour vous guider à travers les étapes impliquées dans l’interrogation des envois de formulaire stockés dans Azure Portal
+description: Tutoriel en plusieurs parties détaillant les étapes nécessaires pour interroger les envois de formulaire stockés dans Azure Portal
 feature: Adaptive Forms
 doc-type: Tutorial
 version: 6.5
@@ -9,30 +9,31 @@ role: Developer
 level: Experienced
 jira: KT-14884
 last-substantial-update: 2024-03-03T00:00:00Z
-source-git-commit: ae2a2cbde1bf21314cc77863014cb0f013b6e0bb
-workflow-type: tm+mt
+exl-id: 1fb7ca83-0ba6-48a3-b3d3-079d0ef89245
+source-git-commit: ff4f214758c9c5055215e75ee39d78203cf5cbaf
+workflow-type: ht
 source-wordcount: '107'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 # Autoriser la recherche de certains champs
 
 Les champs pouvant faire l’objet d’une recherche dans un formulaire font généralement référence aux champs du formulaire qui peuvent être utilisés comme critères pour rechercher ou filtrer les données envoyées.
-Dans ce cas pratique, les types de champs suivants ont été étendus pour leur permettre de rechercher :
+Dans ce cas d’utilisation, les types de champs suivants ont été étendus pour qu’ils puissent faire l’objet d’une recherche.
 
 * checkboxgroup
-* menu déroulant
+* dropdown
 * radiobutton
 
-Les auteurs de formulaires peuvent marquer ces types de champ comme pouvant faire l’objet d’une recherche, comme illustré ci-dessous.
+Les personnes qui créent des formulaires peuvent marquer ces types de champs comme pouvant faire l’objet d’une recherche, comme illustré ci-dessous.
 ![searchable-field](assets/searchable-fields.png)
 
-Les champs ont été étendus en créant la structure suivante :
+Les champs ont été étendus en créant la structure suivante :
 
 ![extended-fields](assets/extend-component.png)
 
-Voici le contenu du fichier .content.xml
+Voici le contenu du fichier .content.xml :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

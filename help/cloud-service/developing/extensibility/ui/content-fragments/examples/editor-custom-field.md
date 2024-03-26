@@ -1,5 +1,5 @@
 ---
-title: Console des fragments de contenu - Champs personnalisés
+title: Console de fragments de contenu - champs personnalisés
 description: Découvrez comment créer un champ personnalisé dans l’éditeur de fragments de contenu AEM.
 feature: Developer Tools, Content Fragments
 version: Cloud Service
@@ -10,13 +10,13 @@ duration: 0
 last-substantial-update: 2024-02-27T00:00:00Z
 jira: KT-14903
 thumbnail: KT-14903.jpeg
-source-git-commit: bb902089a709ab00853f4856d9bf42c18a5097e7
-workflow-type: tm+mt
+exl-id: 563bab0e-21e3-487c-9bf3-de15c3a81aba
+source-git-commit: 08ad6e3e6db6940f428568c749901b0b3c6ca171
+workflow-type: ht
 source-wordcount: '473'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
-
 
 # Champs personnalisés
 
@@ -24,34 +24,34 @@ Découvrez comment créer des champs personnalisés dans l’éditeur de fragmen
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
 
-AEM les extensions d’interface utilisateur doivent être développées à l’aide de la fonction [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) qui conserve une apparence cohérente avec le reste de l&#39;AEM et dispose d&#39;une vaste bibliothèque de fonctionnalités préconfigurées, ce qui réduit le temps de développement.
+Les extensions d’interface utilisateur AEM doivent être développées à l’aide du framework [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html), car il conserve un aspect cohérent avec le reste d’AEM, et dispose également d’une vaste bibliothèque de fonctionnalités prédéfinies, réduisant ainsi le temps de développement.
 
 ## Point d’extension
 
-Cet exemple remplace un champ existant de l’éditeur de fragments de contenu par une implémentation personnalisée.
+Cet exemple remplace un fichier existant dans l’éditeur de fragments de contenu par une implémentation personnalisée.
 
 | Interface utilisateur AEM étendue | Point d’extension |
 | ------------------------ | --------------------- | 
-| [Éditeur de fragments de contenu](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Rendu des éléments de formulaire personnalisés](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
+| [Éditeur de fragments de contenu](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Rendu d’élément de formulaire personnalisé](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/) |
 
 ## Exemple d’extension
 
-Cet exemple illustre la limitation des valeurs de champ de l’éditeur de fragments de contenu à un jeu prédéterminé en remplaçant le champ standard par une liste déroulante personnalisée de SKU prédéfinis. Les auteurs peuvent effectuer une sélection dans cette liste spécifique de SKU. Bien que les SKU proviennent généralement d’un système de gestion de l’information sur les produits (PIM), cet exemple simplifie la mise en liste statique des SKU.
+Cet exemple montre la restriction des valeurs de champ dans l’éditeur de fragments de contenu à un ensemble prédéterminé en remplaçant le champ standard par une liste déroulante personnalisée de SKU prédéfinis. Les auteurs et autrices peuvent effectuer une sélection parmi cette liste de SKU spécifique. Alors que les SKU proviennent généralement d’un système PIM, cet exemple permet une simplification en répertoriant statiquement les SKU.
 
-Le code source de cet exemple est : [disponible en téléchargement](./assets/editor-custom-field/content-fragment-editor-custom-field-src.zip).
+Le code source de cet exemple peut être [téléchargé](./assets/editor-custom-field/content-fragment-editor-custom-field-src.zip).
 
-### Définition du modèle de fragment de contenu
+### Définition de modèle de fragment de contenu
 
-Cet exemple est lié à tout champ de fragment de contenu dont le nom est `sku` (via un [correspondance d’expression régulière](#extension-registration) de `^sku$`) et le remplace par un champ personnalisé. L’exemple utilise le modèle de fragment de contenu aventure WKND mis à jour et la définition est la suivante :
+Cet exemple se lie à n’importe quel champ de fragment de contenu dont le nom est `sku` (par l’intermédiaire d’une [correspondance d’expression régulière](#extension-registration) de `^sku$`) et le remplace par un champ personnalisé. L’exemple utilise le modèle de fragment de contenu WKND Adventure qui a été mis à jour. La définition est la suivante :
 
-![Définition du modèle de fragment de contenu](./assets/editor-custom-field/content-fragment-editor.png)
+![Définition de modèle de fragment de contenu](./assets/editor-custom-field/content-fragment-editor.png)
 
-Bien que le champ SKU personnalisé s’affiche sous forme de liste déroulante, son modèle sous-jacent est configuré en tant que champ de texte. L’implémentation des champs personnalisés doit uniquement s’aligner sur le nom et le type de propriété appropriés, ce qui facilite le remplacement du champ standard par la version de liste déroulante personnalisée.
+Bien que le champ SKU personnalisé soit affiché sous forme de liste déroulante, son modèle sous-jacent est configuré comme champ de texte. L’implémentation du champ personnalisé doit uniquement s’aligner sur le nom et le type de propriété appropriés, facilitant ainsi le remplacement du champ standard par la version déroulante personnalisée.
 
 
 ### Itinéraires de l’application
 
-Dans le composant React principal `App.js`, incluez la variable `/sku-field` itinéraire pour effectuer le rendu de `SkuField` Composant React.
+Dans le composant principal React `App.js`, incluez l’itinéraire `/sku-field` pour rendre le composant React `SkuField`.
 
 `src/aem-cf-editor-1/web-src/src/components/App.js`
 
@@ -85,14 +85,14 @@ function App() {
 ...
 ```
 
-Cet itinéraire personnalisé de `/sku-field` est mappée à la variable `SkuField` est utilisé ci-dessous dans la variable [Enregistrement d’une extension](#extension-registration).
+Cet itinéraire personnalisé de `/sku-field` qui mappe vers le composant `SkuField` est utilisé ci-dessous dans l’[enregistrement d’extension](#extension-registration).
 
 ### Enregistrement d’une extension
 
 `ExtensionRegistration.js`, mappé à l’itinéraire index.html, est le point d’entrée de l’extension AEM et définit les éléments suivants :
 
-+ Définition du widget dans `getDefinitions()` fonction avec `fieldNameExp` et `url` attributs. La liste complète des attributs disponibles est disponible dans le [Référence de l’API de rendu d’élément de formulaire personnalisé](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference).
-+ La variable `url` valeur d’attribut, un chemin d’URL relatif (`/index.html#/skuField`) pour charger l’interface utilisateur du champ.
++ La définition du widget dans la fonction `getDefinitions()` avec les attributs `fieldNameExp` et `url`. La liste complète des attributs disponibles figure dans le [guide de référence de l’API de rendu d’élément de formulaire personnalisé](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/custom-fields/#api-reference).
++ La valeur d’attribut `url`, un chemin d’URL relatif (`/index.html#/skuField`) pour charger l’interface utilisateur du champ.
 
 `src/aem-cf-editor-1/web-src/src/components/ExtensionRegistration.js`
 
@@ -132,13 +132,13 @@ export default ExtensionRegistration;
 
 ### Champ personnalisé
 
-La variable `SkuField` Le composant React met à jour l’éditeur de fragment de contenu avec une interface utilisateur personnalisée, en utilisant Adobe React Spectrum pour son formulaire de sélecteur. Voici quelques points forts :
+Le composant React `SkuField` met à jour l’éditeur de fragments de contenu avec une interface utilisateur personnalisée, en utilisant Adobe React Spectrum pour son formulaire de sélecteur. Les points forts incluent les éléments suivants :
 
-+ Utilisation `useEffect` pour l’initialisation et la connexion à AEM’éditeur de fragments de contenu, avec un état de chargement affiché jusqu’à la fin de la configuration.
-+ Le rendu à l’intérieur d’un iFrame ajuste dynamiquement la hauteur de l’iFrame au moyen de l’option `onOpenChange` pour s’adapter à la liste déroulante du sélecteur React Spectrum Adobe.
-+ Communication des sélections de champs à l’hôte à l’aide de `connection.host.field.onChange(value)` dans le `onSelectionChange` , en s’assurant que la valeur sélectionnée est validée et enregistrée automatiquement conformément aux instructions du modèle de fragment de contenu.
++ Utilisation de `useEffect` pour l’initialisation et la connexion à l’éditeur de fragments de contenu d’AEM, avec un état de chargement affiché jusqu’à ce que la configuration soit terminée.
++ Rendu à l’intérieur d’un iFrame, il ajuste dynamiquement la hauteur de l’iFrame via la fonction `onOpenChange` pour s’adapter à la liste déroulante du sélecteur Adobe React Spectrum.
++ Communication des sélections de champs à l’hôte à l’aide de `connection.host.field.onChange(value)` dans la fonction `onSelectionChange`, ce qui garantit que la valeur sélectionnée est validée et enregistrée automatiquement conformément aux directives du modèle de fragment de contenu.
 
-Les champs personnalisés sont rendus dans un iFrame injecté dans l’éditeur de fragments de contenu. La communication entre le code de champ personnalisé et l’éditeur de fragment de contenu est réalisée exclusivement par l’intermédiaire de la fonction `connection` , établi par la fonction `attach` de la fonction `@adobe/uix-guest` module.
+Les champs personnalisés sont rendus dans un iFrame injecté dans l’éditeur de fragments de contenu. La communication entre le code du champ personnalisé et l’éditeur de fragments de contenu s’effectue exclusivement via l’objet `connection`. Elle est établie par la fonction `attach` à partir du package `@adobe/uix-guest`.
 
 `src/aem-cf-editor-1/web-src/src/components/SkuField.js`
 

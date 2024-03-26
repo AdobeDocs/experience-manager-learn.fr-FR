@@ -10,9 +10,9 @@ doc-type: Article
 exl-id: 66ce0977-1b0d-4a63-a738-8a2021cf0bd5
 duration: 491
 source-git-commit: 19beb662b63476f4745291338d944502971638a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1708'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -316,7 +316,7 @@ Voici un exemple de la fonctionnalité configurée dans le fichier de configurat
 
 >[!NOTE]
 >
->Gardez à l’esprit que AEM doit toujours être configuré pour envoyer des en-têtes TTL pour que Dispatcher les honore. Si vous activez cette fonction, seul le Dispatcher peut savoir quand supprimer les fichiers pour lesquels AEM a envoyé des en-têtes de contrôle du cache. Si AEM ne commence pas à envoyer des en-têtes TTL, Dispatcher ne fera rien de spécial.
+>Gardez à l’esprit qu’AEM doit quand même être configuré pour envoyer des en-têtes TTL pour que Dispatcher les respecte. Si vous activez cette fonction, seul le Dispatcher peut savoir quand supprimer les fichiers pour lesquels AEM a envoyé des en-têtes de contrôle du cache. Si AEM ne commence pas à envoyer des en-têtes TTL, Dispatcher ne fera rien de spécial.
 
 ## Règles de filtrage du cache
 

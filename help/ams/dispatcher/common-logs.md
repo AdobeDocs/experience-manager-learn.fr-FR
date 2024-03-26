@@ -11,9 +11,9 @@ doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 252
 source-git-commit: 80c04ce1ad7d60c1fc75ecc194dd54a2ad5b82fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '796'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ L’une ou l’autre des méthodes proposées permet d’éliminer ce message d�
 
 >[!NOTE]
 >
->Ces entrées ne s’affichent pas toujours même si des rejets se produisent si le niveau de journalisation est trop bas. Définissez-le sur Info ou Déboguer pour vous assurer que les filtres refusent les requêtes.
+>Ces entrées ne s’affichent pas toujours même si des refus se produisent si le niveau de journalisation est trop bas. Définissez-le sur Info ou Déboguer pour vous assurer que les filtres refusent les requêtes.
 
 Exemple d’entrée de journal :
 
@@ -136,7 +136,7 @@ Pour rendre ce nombre le plus élevé possible.
 
 >[!NOTE]
 >
->Même si le fichier de ferme contient vos paramètres de cache pour mettre en cache tout ce que vous purgez trop souvent ou de manière trop agressive, cela peut entraîner un taux d’accès au cache inférieur.
+>Même si le fichier de batterie contient vos paramètres de cache pour tout mettre en cache, vous effectuez une purge peut-être trop souvent, ou de manière trop agressive, ce qui peut entraîner un taux d’accès au cache inférieur.
 
 ## Répertoire manquant
 
@@ -169,7 +169,7 @@ Thu Sep 27 17:35:11 2018 W pid 18936 Unable to fetch vanity URLs from 10.43.0.42
 
 Cette erreur se produit lorsque vous avez configuré Dispatcher pour qu’il utilise le filtre automatique dynamique afin d’autoriser les URL de redirection, mais que vous n’avez pas terminé la configuration en installant le package sur le moteur de rendu AEM.
 
-Pour corriger ce problème, installez le pack de fonctionnalités d’URL de redirection sur l’instance AEM et autorisez l’utilisateur ou l’utilisatrice anonyme à le lire. Plus de détails [ici](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html).
+Pour corriger ce problème, installez le pack de fonctionnalités d’URL de redirection sur l’instance AEM et autorisez l’utilisateur ou l’utilisatrice anonyme à le lire. Plus de détails [ici](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17463.html?lang=fr).
 
 Une configuration fonctionnelle d’URL de redirection ressemble à ceci :
 

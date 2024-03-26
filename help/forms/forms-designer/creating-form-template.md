@@ -1,5 +1,5 @@
 ---
-title: AEM Forms Shorts Créer un PDF de modèle de formulaire simple
+title: 'Vidéos courtes AEM Forms : créer un modèle de formulaire simple PDF'
 description: Créer un modèle de formulaire dans Designer
 version: 6.5
 feature: Forms Designer,Designer
@@ -11,16 +11,16 @@ duration: 106
 last-substantial-update: 2024-03-07T00:00:00Z
 jira: KT-15074
 thumbnail: 3427678.jpeg
-source-git-commit: ae2a2cbde1bf21314cc77863014cb0f013b6e0bb
-workflow-type: tm+mt
+exl-id: 0e849225-83d4-491f-b30f-e067cf6910d3
+source-git-commit: ff4f214758c9c5055215e75ee39d78203cf5cbaf
+workflow-type: ht
 source-wordcount: '81'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Vidéos courtes AEM Forms : créer un modèle de formulaire simple
 
-# AEM Forms Shorts Créer un modèle de formulaire simple
-
-Un certain nombre de modèles prêts à l’emploi que vous pouvez utiliser en l’état ou personnaliser selon vos besoins sont proposés. Les modèles peuvent également être créés et gérés dans AEM Forms Designer. Vous pouvez commencer par une page vierge, un modèle, une feuille de calcul, un PDF ou un fichier Microsoft Word. Cette vidéo couvre toutes ces options et ce qui est disponible en standard
+Il existe un certain nombre de modèles fournis prêts à l’emploi que vous pouvez utiliser tels quels ou personnaliser à votre guise. Les modèles peuvent également être créés et gérés dans AEM Forms Designer. Vous pouvez commencer avec une page vierge, un modèle, une feuille de calcul, un PDF ou un fichier Microsoft Word. Cette vidéo couvre toutes ces options et ce qui est disponible prêt à l’emploi.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427678/?learn=on)

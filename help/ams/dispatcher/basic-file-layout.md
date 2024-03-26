@@ -11,9 +11,9 @@ doc-type: Article
 exl-id: 8a3f2bb9-3895-45c6-8bb5-15a6d2aac50e
 duration: 354
 source-git-commit: 19beb662b63476f4745291338d944502971638a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1130'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -59,10 +59,10 @@ Lorsque vous suivez et respectez la conception/structure de l’installation, le
 - Permet des cycles de correction entièrement pris en charge par le système d’exploitation sans conflit ni réglages manuels.
 - Évite les violations SELinux de contextes de fichiers mal étiquetés.
 
->[!BEGINSHADEBOX &quot;Remarque&quot;]
+>[!BEGINSHADEBOX « Remarque »]
 
-Les images des serveurs Managed Services Adobe ont généralement de petits lecteurs racine du système d’exploitation.  Nous mettons nos données dans un volume distinct, généralement monté dans `/mnt`
-Ensuite, nous utilisons ce volume au lieu des valeurs par défaut des répertoires par défaut suivants.
+Les images des serveurs Adobe Managed Services comportent généralement de petits lecteurs racines du système d’exploitation.Nous mettons nos données sur un volume distinct qui est généralement monté dans `/mnt`.
+Ensuite, nous utilisons ce volume au lieu des valeurs par défaut pour les répertoires par défaut suivants.
 
 `DocumentRoot`
 - Valeur par défaut : `/var/www/html`
@@ -70,7 +70,7 @@ Ensuite, nous utilisons ce volume au lieu des valeurs par défaut des répertoir
 
 `Log Directory`
 - Valeur par défaut : `/var/log/httpd`
-- AMS : `/mnt/var/log/httpd`
+- AMS : `/mnt/var/log/httpd`
 
 Gardez à l’esprit que les anciens et les nouveaux répertoires sont mappés à nouveau au point de montage d’origine pour éliminer toute confusion.
 L’utilisation d’un volume distinct n’est pas essentielle, mais il est intéressant de la prendre en considération.
@@ -297,7 +297,7 @@ LoadModule dispatcher_module modules/mod_dispatcher.so
 
 >[!NOTE]
 >
->Nous n&#39;avons modifié aucun fichier existant fourni par Apache. Au lieu de cela, nous avons simplement ajouté les nôtres aux répertoires qu&#39;ils étaient censés utiliser.
+>Nous n’avons modifié aucun fichier existant fourni par Apache. Au lieu de cela, nous avons simplement ajouté les nôtres aux répertoires utilisés.
 
 Maintenant, nous utilisons notre module dans le fichier <b>`/etc/httpd/conf.d/dispatcher_vhost.conf`</b> qui initialise notre module et charge le fichier de configuration initial spécifique au module.
 

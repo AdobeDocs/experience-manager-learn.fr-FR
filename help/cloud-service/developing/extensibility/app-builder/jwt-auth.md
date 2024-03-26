@@ -1,6 +1,6 @@
 ---
-title: Génération d’un jeton d’accès JWT dans l’action App Builder
-description: Découvrez comment générer un jeton d’accès à l’aide des informations d’identification JWT à utiliser dans une action App Builder.
+title: Générer un jeton d’accès JWT dans une action Créateur d’applications
+description: Découvrez comment générer un jeton d’accès à l’aide des informations d’identification JWT à utiliser dans une action Créateur d’applications.
 feature: Developer Tools
 version: Cloud Service
 topic: Development
@@ -11,17 +11,17 @@ last-substantial-update: 2023-01-17T00:00:00Z
 exl-id: 9a3fed96-c99b-43d1-9dba-a4311c65e5b9
 duration: 161
 source-git-commit: c77dd9c2872e7e43863d83837cedbff50a7d3c1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '456'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Génération d’un jeton d’accès JWT dans l’action App Builder
+# Générer un jeton d’accès JWT dans une action Créateur d’applications
 
 Les actions Créateur d’applications peuvent avoir besoin d’interagir avec les API d’Adobe associées aux projets Adobe Developer Console sur lesquels l’application Créateur d’applications est déployée.
 
-Cela peut nécessiter que l’action App Builder génère son propre jeton d’accès JWT associé au projet de console Adobe Developer souhaité.
+Cela peut nécessiter que l’action Créateur d’applications génère son propre jeton d’accès JWT associé au projet Adobe Developer Console souhaité.
 
 >[!IMPORTANT]
 >
