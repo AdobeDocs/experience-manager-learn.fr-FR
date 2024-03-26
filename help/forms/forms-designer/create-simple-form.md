@@ -1,6 +1,6 @@
 ---
-title: Créer un formulaire simple à l’aide de Designer
-description: Vidéo courte (moins de 2 minutes) décrivant la création d’un formulaire simple
+title: Créer un formulaire simple à l’aide du Designer
+description: Courte vidéo (moins de 2 minutes) décrivant la création d’un formulaire simple
 version: 6.5
 feature: Forms Designer,Designer
 topic: Development
@@ -15,21 +15,21 @@ exl-id: ac482951-9941-4c14-95b2-29d274fa610e
 source-git-commit: c4181907c7b398d2ba1a8735a028695831aca90e
 workflow-type: tm+mt
 source-wordcount: '31'
-ht-degree: 3%
+ht-degree: 90%
 
 ---
 
-# Créer un formulaire simple à l’aide d’AEM Forms Designer
+# Créer un formulaire simple à l’aide d’AEM Forms Designer
 
 Présentation
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427622/?learn=on)
 
-Partie 1
+Partie 1
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427620/?learn=on)
 
-Partie 2
+Partie 2
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427621/?learn=on)
 
