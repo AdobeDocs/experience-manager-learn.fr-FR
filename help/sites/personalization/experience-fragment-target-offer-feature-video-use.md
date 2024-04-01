@@ -9,10 +9,10 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 9ee826cf-389f-4570-bfe1-0d43d3fed3e1
 duration: 588
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager réinvente le workflow de personnalisation entre AEM 
 
 >[!NOTE]
 >
->Nous recommandons d’utiliser la bibliothèque cliente `at.js` et la bonne pratique consiste à utiliser des solutions de gestion des balises telles que Platform Launch, Adobe DTM ou toute solution tierce de gestion des balises pour ajouter des bibliothèques cibles aux pages de votre site.
+>Utilisation recommandée `at.js` la bibliothèque cliente et la bonne pratique consiste à utiliser des solutions de gestion des balises telles que les balises dans Adobe Experience Platform ou toute solution tierce de gestion des balises pour ajouter des bibliothèques cibles à vos pages de site.
 
 
 * Le mécanisme de création de contenu convivial et puissant d’Adobe Experience Manager, ainsi que l’intelligence artificielle (IA) et le machine learning d’Adobe Target, aident les auteurs et les autrices de contenu à créer et gérer du contenu pour tous les canaux depuis un emplacement centralisé. Grâce à la possibilité d’exporter des fragments d’expérience vers Adobe Target en tant qu’offres HTML, les personnes spécialisées dans le marketing disposent désormais d’une plus grande flexibilité pour créer une expérience plus personnalisée à l’aide de ces offres et peuvent désormais tester et mettre à l’échelle chaque expérience qu’elles créent.

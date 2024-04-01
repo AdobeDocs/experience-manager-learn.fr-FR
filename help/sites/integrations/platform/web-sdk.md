@@ -14,10 +14,10 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
 duration: 1360
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '1235'
-ht-degree: 100%
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+workflow-type: tm+mt
+source-wordcount: '1232'
+ht-degree: 91%
 
 ---
 
@@ -45,7 +45,7 @@ Dans **Experience Platform** :
 + Accès à **Schémas** sous Gestion des données.
 + Accès à **Jeux de données** sous Gestion des données.
 + Accès à **Trains de données** sous Collecte de données.
-+ Accès à **Balises** (anciennement Launch) sous Collecte de données.
++ Accès à **Balises** Sous Collecte de données
 
 Si vous ne disposez pas des autorisations nécessaires, votre administrateur ou administratrice système peut vous les accorder en utilisant l’[Adobe Admin Console](https://adminconsole.adobe.com/).
 
@@ -75,7 +75,7 @@ Familiarisez-vous avec le concept des trains de données et les sujets connexes,
 
 ## Créer une propriété de balise - Experience Platform
 
-Découvrez comment créer une propriété de balise (anciennement connue sous le nom de Launch) dans Experience Platform pour ajouter la bibliothèque JavaScript du SDK web au site web WKND. La propriété de balise nouvellement définie comporte les ressources suivantes :
+Découvrez comment créer une propriété de balise dans Experience Platform pour ajouter la bibliothèque JavaScript du SDK Web au site Web WKND. La propriété de balise nouvellement définie comporte les ressources suivantes :
 
 + Extensions de balise : [Core](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) et [SDK web Adobe Experience Platform](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
 + Éléments de données : éléments de données de type de code personnalisé qui extraient page-name, site-section et host-name à l’aide de la couche de données cliente Adobe du site WKND. En outre, l’élément de données de type objet XDM conforme au schéma XDM WKND nouvellement créé lors de l’étape précédente [Créer un schéma XDM](#create-xdm-schema---experience-platform).
@@ -139,26 +139,26 @@ Lors de la création et de la publication de la bibliothèque de balises à l’
   var pageShownEventHandler = function(evt) {
   // defensive coding to avoid a null pointer exception
   if(evt.hasOwnProperty("eventInfo") && evt.eventInfo.hasOwnProperty("path")) {
-      //trigger Launch Rule and pass event
+      // trigger tags Rule and pass event
       console.debug("cmp:show event: " + evt.eventInfo.path);
       var event = {
-          //include the path of the component that triggered the event
+          // include the path of the component that triggered the event
           path: evt.eventInfo.path,
-          //get the state of the component that triggered the event
+          // get the state of the component that triggered the event
           component: window.adobeDataLayer.getState(evt.eventInfo.path)
       };
   
-      //Trigger the Launch Rule, passing in the new 'event' object
-      // the 'event' obj can now be referenced by the reserved name 'event' by other Launch data elements
+      // Trigger the tags Rule, passing in the new 'event' object
+      // the 'event' obj can now be referenced by the reserved name 'event' by other tags data elements
       // i.e 'event.component['someKey']'
       trigger(event);
       }
   }
   
-  //set the namespace to avoid a potential race condition
+  // set the namespace to avoid a potential race condition
   window.adobeDataLayer = window.adobeDataLayer || [];
   
-  //push the event listener for cmp:show into the data layer
+  // push the event listener for cmp:show into the data layer
   window.adobeDataLayer.push(function (dl) {
       //add event listener for 'cmp:show' and callback to the 'pageShownEventHandler' function
       dl.addEventListener("cmp:show", pageShownEventHandler);
@@ -174,9 +174,9 @@ Pour plus d’informations sur l’intégration des composants principaux AEM à
 
 ## Connecter la propriété de balise à AEM
 
-Découvrez comment lier la propriété de balise récemment créée à AEM via Adobe IMS et la configuration d’Adobe Launch dans AEM. Lorsqu’un environnement AEM as a Cloud Service est établi, plusieurs configurations de compte technique Adobe IMS sont automatiquement générées, y compris Adobe Launch. Toutefois, pour la version AEM 6.5, vous devez en configurer une manuellement.
+Découvrez comment lier la propriété de balise nouvellement créée à AEM par le biais d’Adobe IMS et de balises dans la configuration Adobe Experience Platform dans AEM. Lorsqu’un environnement as a Cloud Service AEM est établi, plusieurs configurations de compte technique Adobe IMS sont automatiquement générées, y compris les balises. Toutefois, pour la version AEM 6.5, vous devez en configurer une manuellement.
 
-Après avoir lié la propriété de balise, le site WKND peut charger la bibliothèque JavaScript de la propriété de balise sur les pages web à l’aide de la configuration du service cloud Adobe Launch.
+Après avoir lié la propriété de balise, le site WKND peut charger la bibliothèque JavaScript de la propriété de balise sur les pages web à l’aide des balises dans la configuration du service cloud Adobe Experience Platform.
 
 ### Vérifier le chargement de la propriété de balise sur WKND
 

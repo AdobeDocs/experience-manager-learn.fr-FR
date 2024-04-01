@@ -10,10 +10,10 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 1550e6a7-04b5-4a40-9d7b-88074283402f
 duration: 165
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '584'
-ht-degree: 100%
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+workflow-type: tm+mt
+source-wordcount: '581'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Pour cet exercice, les utilisateurs et utilisatrices suivants doivent être impl
 
 * **AEM**
    * [Instance de publication AEM](./implementation.md#getting-aem) exécutée sur le port 4503
-   * [AEM intégré à Adobe Target à l’aide d’Adobe Experience Platform Launch](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
+   * [AEM intégré à Adobe Target à l’aide de balises](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * Accéder à vos organisations Adobe Experience Cloud - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud fourni avec [Adobe Target](https://experiencecloud.adobe.com)

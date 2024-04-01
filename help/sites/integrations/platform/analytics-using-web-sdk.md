@@ -14,10 +14,10 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
 duration: 2330
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '1533'
-ht-degree: 100%
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+workflow-type: tm+mt
+source-wordcount: '1529'
+ht-degree: 99%
 
 ---
 
@@ -57,7 +57,7 @@ Dans **Experience Platform** :
 + Accès à **Schémas** sous Gestion des données.
 + Accès à **Jeux de données** sous Gestion des données.
 + Accès à **Trains de données** sous Collecte de données.
-+ Accès à **Balises** (anciennement Launch) sous Collecte de données.
++ Accès à **Balises**  Sous Collecte de données
 
 Si vous ne disposez pas des autorisations nécessaires, votre administrateur ou administratrice système peut vous les accorder en utilisant l’[Adobe Admin Console](https://adminconsole.adobe.com/).
 

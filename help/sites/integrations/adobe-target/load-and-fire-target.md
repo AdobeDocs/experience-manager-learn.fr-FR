@@ -1,6 +1,6 @@
 ---
 title: Charger et déclencher un appel Target
-description: Découvrez comment charger, transférer des paramètres à une requête de page et déclencher un appel Target à partir de la page de votre site à l’aide d’une règle Launch. Les informations de page sont récupérées et transmises en tant que paramètres à l’aide de la couche de données de la clientèle Adobe qui vous permet de collecter et de stocker des données sur l’expérience des visiteurs et des visiteuses sur une page web, puis d’accéder facilement à ces données.
+description: Découvrez comment charger, transférer des paramètres à une requête de page et déclencher un appel Target à partir de la page de votre site à l’aide d’une règle de balises.
 feature: Core Components, Adobe Client Data Layer
 version: Cloud Service
 jira: KT-6133
@@ -13,28 +13,28 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before
 doc-type: Tutorial
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
 duration: 610
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '587'
-ht-degree: 100%
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+workflow-type: tm+mt
+source-wordcount: '550'
+ht-degree: 58%
 
 ---
 
 # Charger et déclencher un appel Target {#load-fire-target}
 
-Découvrez comment charger, transférer des paramètres à une requête de page et déclencher un appel Target à partir de la page de votre site à l’aide d’une règle Launch. Les informations de page web sont récupérées et transmises en tant que paramètres à l’aide de la couche de données de la clientèle Adobe qui vous permet de collecter et de stocker des données sur l’expérience des visiteurs et des visiteuses sur une page web, puis d’accéder facilement à ces données.
+Découvrez comment charger, transférer des paramètres à une requête de page et déclencher un appel Target à partir de la page de votre site à l’aide d’une règle de balises. Les informations de page web sont récupérées et transmises en tant que paramètres à l’aide de la couche de données de la clientèle Adobe qui vous permet de collecter et de stocker des données sur l’expérience des visiteurs et des visiteuses sur une page web, puis d’accéder facilement à ces données.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
 
 ## Règle de chargement de page
 
-La couche de données de la clientèle Adobe est une couche de données pilotée par les événements. Lorsque la couche de données de page AEM est chargée, elle déclenche un événement `cmp:show`. Dans la vidéo, la règle `Launch Library Loaded` est appelée à l’aide d’un événement personnalisé. Vous trouverez ci-dessous les fragments de code utilisés dans la vidéo pour l’événement personnalisé ainsi que pour les éléments de données.
+La couche de données de la clientèle Adobe est une couche de données pilotée par les événements. Lorsque la couche de données de page AEM est chargée, elle déclenche un événement `cmp:show`. Dans la vidéo, la règle `tags Library Loaded` est appelée à l’aide d’un événement personnalisé. Vous trouverez ci-dessous les fragments de code utilisés dans la vidéo pour l’événement personnalisé ainsi que pour les éléments de données.
 
 ### Événement d’affichage de page personnalisé{#page-event}
 
 ![Configuration et code personnalisé de l’événement d’affichage de page.](assets/load-and-fire-target-call.png)
 
-Dans la propriété Launch, ajoutez un nouvel **Événement** à la **Règle**.
+Dans la propriété tags, ajoutez une nouvelle **Événement** à la fonction **Règle**
 
 + __Extension :__ principale
 + __Type d’événement :__ code personnalisé
@@ -53,7 +53,7 @@ var pageShownEventHandler = function(coreComponentEvent) {
         // Debug the AEM Component path the show event is associated with
         console.debug("cmp:show event: " + coreComponentEvent.eventInfo.path);
 
-        // Create the Launch Event object
+        // Create the tags Event object
         var launchEvent = {
             // Include the ID of the AEM Component that triggered the event
             id: coreComponentEvent.eventInfo.path,
@@ -61,14 +61,14 @@ var pageShownEventHandler = function(coreComponentEvent) {
             component: window.adobeDataLayer.getState(coreComponentEvent.eventInfo.path)
         };
 
-        //Trigger the Launch Rule, passing in the new `event` object
-        // the `event` obj can now be referenced by the reserved name `event` by other Launch data elements
+        // Trigger the tags Rule, passing in the new `event` object
+        // the `event` obj can now be referenced by the reserved name `event` by other tags data elements
         // i.e `event.component['someKey']`
         trigger(launchEvent);
    }
 }
 
-// With the AEM Core Component event handler, that proxies the event and relevant information to Adobe Launch, defined above...
+// With the AEM Core Component event handler, that proxies the event and relevant information to Data Collection, defined above...
 
 // Initialize the adobeDataLayer global object in a safe way
 window.adobeDataLayer = window.adobeDataLayer || [];
@@ -80,20 +80,20 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Une fonction personnalisée définit le `pageShownEventHandler` et écoute les événements émis par les composants principaux d’AEM, déduit les informations pertinentes des composants principaux, les regroupe dans un objet d’événement et déclenche l’événement Launch avec les informations déduites de l’événement dans sa payload.
+Une fonction personnalisée définit la variable `pageShownEventHandler`et écoute les événements émis par AEM Core Components, fournit les informations pertinentes au Core Component, les regroupe dans un objet d’événement et déclenche les balises Event avec les informations d’événement dérivées à sa charge utile.
 
-La règle Launch est déclenchée à l’aide de la fonction `trigger(...)` de Launch qui est __uniquement__ disponible à partir de la définition de l’extrait de code du code personnalisé d’un événement de règle.
+La règle de balises est déclenchée à l’aide du `trigger(...)` qui est __only__ disponible à partir de la définition de fragment de code de code personnalisé d’un événement de règle.
 
-La fonction `trigger(...)` prend un objet d’événement comme paramètre qui, à son tour, est exposé dans les éléments de données Launch par un autre nom réservé dans Launch nommé `event`. Les éléments de données dans Launch peuvent désormais faire référence à des données à partir de cet objet d’événement à partir de l’objet `event` utilisant une syntaxe telle que `event.component['someKey']`.
+La variable `trigger(...)` prend un objet d’événement comme paramètre qui, à son tour, est exposé dans les balises Éléments de données par un autre nom réservé dans les balises nommées `event`. Les éléments de données des balises peuvent désormais référencer des données de cet objet d’événement à partir de la variable `event` objet utilisant une syntaxe comme `event.component['someKey']`.
 
-Si la fonction `trigger(...)` est utilisée en dehors du contexte du type d’événement Code personnalisé d’un événement (par exemple, dans une action), l’erreur JavaScript `trigger is undefined` est générée sur le site web intégré à la propriété Launch.
+If `trigger(...)` est utilisé en dehors du contexte du type d’événement Code personnalisé d’un événement (par exemple, dans une action), l’erreur JavaScript `trigger is undefined` est généré sur le site Web intégré à la propriété tags .
 
 
 ### Éléments de données
 
 ![Éléments de données.](assets/data-elements.png)
 
-Les éléments de données Adobe Launch font correspondre les données de l’objet d’événement [déclenché dans l’événement Affichage de page personnalisé](#page-event) aux variables disponibles dans Adobe Target, via le type d’élément de données Code personnalisé de l’extension principale.
+Les éléments de données de balises mappent les données de l’objet d’événement. [déclenché dans l’événement personnalisé Page affichée](#page-event) aux variables disponibles dans Adobe Target, via le type d’élément de données Code personnalisé de l’extension Core.
 
 #### Élément de données ID de page
 

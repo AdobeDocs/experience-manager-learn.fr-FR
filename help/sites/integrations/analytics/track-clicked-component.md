@@ -12,18 +12,14 @@ badgeIntegration: label="Intégration" type="positive"
 doc-type: Tutorial
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
 duration: 527
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '1795'
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+workflow-type: tm+mt
+source-wordcount: '1750'
 ht-degree: 100%
 
 ---
 
 # Suivre les éléments cliqués avec Adobe Analytics
-
->[!NOTE]
->
->Adobe Experience Platform Launch est mort, vive les suites de collecte de données dans Adobe Experience Platform. Plusieurs modifications terminologiques ont par conséquent été apportées à la documentation du produit. Consultez ce [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=fr) qui recense les modifications de la terminologie.
 
 Utilisez la [Couche de données client Adobe orientée sur les événements avec les composants principaux d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr) pour effectuer le suivi des clics effectués sur des composants spécifiques sur un site Adobe Experience Manager. Découvrez comment utiliser des règles dans les propriétés de balise pour écouter les événements de clics, filtrer par composant et envoyer les données à une instance Adobe Analytics avec une balise de lien de suivi.
 

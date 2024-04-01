@@ -1,6 +1,6 @@
 ---
-title: Intégrer Adobe Experience Manager à Adobe Target à l’aide d’Experience Platform Launch et d’Adobe Developer
-description: Présentation étape par étape de l’intégration d’Adobe Experience Manager à Adobe Target à l’aide d’Experience Platform Launch et d’Adobe Developer
+title: Intégration de Adobe Experience Manager à Adobe Target à l’aide de balises et d’Adobe Developer
+description: Présentation détaillée de l’intégration de Adobe Experience Manager à Adobe Target à l’aide de balises et d’Adobe Developer
 feature: Experience Fragments
 topic: Personalization
 role: Developer
@@ -10,14 +10,14 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: b1d7ce04-0127-4539-a5e1-802d7b9427dd
 duration: 747
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '1021'
-ht-degree: 100%
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 64%
 
 ---
 
-# Utiliser Adobe Experience Platform Launch via Adobe Developer Console
+# Utilisation de balises via la console Adobe Developer
 
 ## Conditions préalables
 
@@ -25,18 +25,17 @@ ht-degree: 100%
 * **Experience Cloud**
    * Accéder à la solution Adobe Experience Cloud de votre organisation - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud est fourni avec les solutions suivantes :
-      * [Adobe Experience Platform Launch](https://experiencecloud.adobe.com)
+      * [Collecte de données](https://experiencecloud.adobe.com)
       * [Adobe Target](https://experiencecloud.adobe.com)
       * [Adobe Developer Console](https://developer.adobe.com/console/)
 
      >[!NOTE]
-     >Vous devez disposer des autorisations nécessaires pour développer, approuver, publier, gérer des extensions et gérer des environnement dans Launch. Si vous ne parvenez pas à effectuer l’une de ces étapes car les options de l’interface utilisateur ne sont pas disponibles, contactez votre administrateur ou administratrice Experience Cloud pour en demander l’accès. Pour plus d’informations sur les autorisations de Launch, [voir la documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=fr).
+     >Vous devez disposer des autorisations Develop (Développer), Approve (Approuver), Publish (Publier), Manage Extensions (Gérer les extensions) et Manage Environments (Gérer les environnements) dans Data Collection. Si vous ne parvenez pas à effectuer l’une de ces étapes car les options de l’interface utilisateur ne sont pas disponibles, contactez votre administrateur ou administratrice Experience Cloud pour en demander l’accès. Pour plus d’informations sur les autorisations de balises, [voir la documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=fr).
 
-* **Plug-ins du navigateur**
-   * Adobe Experience Cloud Debugger ([Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob))
-   * Launch et DTM Switch ([Chrome](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk))
+* **Extensions du navigateur Chrome**
+   * Débogueur Adobe Experience Cloud(https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-## Utilisateurs et utilisatrices impliqués
+## Utilisateurs impliqués
 
 Pour cette intégration, les audiences suivantes doivent être impliquées. Pour effectuer certaines tâches, vous aurez peut-être besoin d’un accès administratif.
 
@@ -46,12 +45,12 @@ Pour cette intégration, les audiences suivantes doivent être impliquées. Pour
 
 ## Présentation
 
-AEM offre une intégration à Experience Platform Launch prête à l’emploi. Cette intégration permet aux administrateurs et administratrices d’AEM de configurer facilement Experience Platform Launch via une interface conviviale, réduisant ainsi le niveau d’effort et le nombre d’erreurs lors de la configuration de ces deux outils. Et rien que le fait d’ajouter l’extension Adobe Target à Experience Platform Launch permet d’utiliser toutes les fonctionnalités d’Adobe Target sur la ou les pages web d’AEM.
+AEM offre une intégration prête à l’emploi avec des balises . Cette intégration permet aux administrateurs d’AEM de configurer facilement des balises via une interface conviviale, réduisant ainsi le niveau d’effort et le nombre d’erreurs lors de la configuration de ces deux outils. De plus, l’ajout de l’extension Adobe Target aux balises nous aidera à utiliser toutes les fonctionnalités d’Adobe Target sur les pages web d’AEM.
 
 Dans cette section, nous passerons en revue les étapes d’intégration suivantes :
 
-* Launch
-   * Créer une propriété Launch
+* Balises
+   * Création d’une propriété de balise
    * Ajouter une extension Target
    * Créer un élément de données
    * Créer une règle de page
@@ -61,34 +60,34 @@ Dans cette section, nous passerons en revue les étapes d’intégration suivant
    * Créer un service cloud
    * Créer
 
-### Launch
+### Balises
 
-#### Créer une propriété Launch
+#### Création d’une propriété de balises
 
 Une propriété est un conteneur que vous remplissez d’extensions, de règles, d’éléments de données et de bibliothèques lorsque vous déployez des balises sur votre site.
 
 1. Accéder à vos organisations [Adobe Experience Cloud](https://experiencecloud.adobe.com/) (`https://<yourcompany>.experiencecloud.adobe.com`)
-2. Connectez-vous à l’aide de votre Adobe ID et vérifiez que vous vous trouvez dans la bonne organisation.
-3. Dans le sélecteur de solution, cliquez sur **Launch** puis sélectionnez le bouton **Accéder à Launch**.
+1. Connectez-vous à l’aide de votre Adobe ID et vérifiez que vous vous trouvez dans la bonne organisation.
+1. Dans le sélecteur de solution, cliquez sur . **Experience Platform**, puis la variable **Collecte de données** et sélectionnez **Balises**.
 
-   ![Experience Cloud - Launch.](assets/using-launch-adobe-io/exc-cloud-launch.png)
+![Experience Cloud - balises](assets/using-launch-adobe-io/exc-cloud-launch.png)
 
-4. Vérifiez que vous vous trouvez dans la bonne organisation, puis créez une propriété Launch.
-   ![Experience Cloud - Launch.](assets/using-launch-adobe-io/launch-create-property.png)
+1. Assurez-vous que vous vous trouvez dans la bonne organisation, puis passez à la création d’une propriété de balises.
+   ![Experience Cloud - balises](assets/using-launch-adobe-io/launch-create-property.png)
 
    *Pour plus d’informations sur la création de propriétés, consultez [Création d’une propriété](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=fr) dans la documentation du produit.*
-5. Cliquez sur le bouton **Nouvelle propriété**.
-6. Attribuez un nom à votre propriété (par exemple, *Tutoriel AEM Target*).
-7. En tant que domaine, saisissez *localhost.com* puisqu’il s’agit du domaine sur lequel le site de démonstration WKND est exécuté. Bien que le champ « *Domaine* » soit obligatoire, la propriété Launch fonctionne sur n’importe quel domaine où elle est implémentée. L’objectif principal de ce champ est de préremplir les options de menu du créateur de règles.
-8. Cliquez sur le bouton **Enregistrer**.
+1. Cliquez sur le bouton **Nouvelle propriété**.
+1. Attribuez un nom à votre propriété (par exemple, *Tutoriel AEM Target*).
+1. En tant que domaine, saisissez *localhost.com* puisqu’il s’agit du domaine sur lequel le site de démonstration WKND est exécuté. Bien que le *Domaine*&quot; est obligatoire, la propriété de balises fonctionnera sur n’importe quel domaine où elle est implémentée. L’objectif principal de ce champ est de préremplir les options de menu du créateur de règles.
+1. Cliquez sur le bouton **Enregistrer**.
 
-   ![Launch - Nouvelle propriété.](assets/using-launch-adobe-io/exc-launch-property.png)
+   ![balises - Nouvelle propriété](assets/using-launch-adobe-io/exc-launch-property.png)
 
-9. Ouvrez la propriété que vous venez de créer, puis cliquez sur l’onglet Extensions.
+1. Ouvrez la propriété que vous venez de créer, puis cliquez sur l’onglet Extensions.
 
-#### Ajouter une extension Target
+#### Ajout de l’extension Target
 
-L’extension Adobe Target prend en charge les implémentations côté client en utilisant le SDK JavaScript Target pour le web moderne, `at.js`. Les clientes et clients qui utilisent toujours l’ancienne bibliothèque de Target, `mbox.js`, [doivent effectuer la mise à niveau vers at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html?lang=fr) pour utiliser Launch.
+L’extension Adobe Target prend en charge les implémentations côté client en utilisant le SDK JavaScript Target pour le web moderne, `at.js`. Clients utilisant toujours la bibliothèque obsolète de Target, `mbox.js`, [doit effectuer la mise à niveau vers at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/upgrading-from-atjs-1x-to-atjs-20.html?lang=fr) pour utiliser des balises.
 
 L’extension Target se compose de deux parties principales :
 
@@ -99,17 +98,17 @@ L’extension Target se compose de deux parties principales :
    * Ajout de paramètres à la mBox globale
    * Déclenchement de la mBox globale
 
-1. Sous **Extensions**, vous pouvez voir la liste des extensions déjà installées pour votre propriété Launch. (l’[extension principale Experience Platform Launch](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) est installée par défaut).
+1. Sous **Extensions**, vous pouvez voir la liste des extensions déjà installées pour la propriété de balises. ([Extension Core Adobe Launch](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) est installé par défaut)
 2. Sélectionnez l’option **Catalogue des extensions**, puis recherchez Target dans le filtre.
 3. Sélectionnez la dernière version du fichier at.js d’Adobe Target et cliquez sur **Installer**.
-   ![Launch - Nouvelle propriété.](assets/using-launch-adobe-io/launch-target-extension.png)
+   ![Balises - Nouvelle propriété](assets/using-launch-adobe-io/launch-target-extension.png)
 
 4. Cliquez sur le bouton **Configurer** et vous verrez apparaître la fenêtre de configuration avec les informations d’identification de votre compte Target importées, ainsi que la version du fichier at.js de cette extension.
    ![Target - Configuration de l’extension.](assets/using-launch-adobe-io/launch-target-extension-2.png)
 
-   Lorsque Target est déployé via des codes asynchrones intégrés à Launch, vous devez coder en dur un extrait de code de masquage préalable sur vos pages avant les codes intégrés à Launch afin de gérer le scintillement du contenu. Nous aborderons plus en détail l’extrait de code de masquage préalable plus tard. Vous pouvez télécharger l’extrait de code de masquage préalable [ici](assets/using-launch-adobe-io/prehiding.js).
+   Lorsque Target est déployé par le biais de codes incorporés de balises asynchrones, vous devez coder en dur un fragment de code de masquage préalable sur vos pages avant les codes incorporés de balises afin de gérer le scintillement de contenu. Nous aborderons plus en détail l’extrait de code de masquage préalable plus tard. Vous pouvez télécharger l’extrait de code de masquage préalable [ici](assets/using-launch-adobe-io/prehiding.js).
 
-5. Cliquez sur **Enregistrer** pour terminer l’ajout de l’extension Target à votre propriété Launch. Vous devriez maintenant pouvoir voir l’extension Target affichée dans la liste des extensions **Installées**.
+5. Cliquez sur **Enregistrer** pour terminer l’ajout de l’extension Target à votre propriété de balises. Vous devriez maintenant pouvoir voir l’extension Target répertoriée sous la **Installé** liste des extensions.
 
 6. Répétez les étapes ci-dessus pour rechercher l’extension « Experience Cloud ID Service » et l’installer.
    ![Extension - Experience Cloud ID Service.](assets/using-launch-adobe-io/launch-extension-experience-cloud.png)
@@ -141,13 +140,12 @@ L’extension Target se compose de deux parties principales :
 > Accordez à l’intégration d’Adobe Developer l’accès pour sélectionner des espaces de travail avec le [rôle permettant à une équipe centrale d’apporter des modifications pilotées par l’API dans quelques espaces de travail uniquement](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/configure-adobe-io-integration.html?lang=fr).
 
 1. Créez l’intégration IMS dans AEM à l’aide des informations d’identification d’Adobe Developer. (01:12 à 03:55)
-2. Dans Experience Platform Launch, créez une propriété. (abordé [ci-dessus](#create-launch-property)).
-3. À l’aide de l’intégration IMS de l’étape 1, créez une intégration Experience Platform Launch pour importer votre propriété Launch.
-4. Dans AEM, mappez l’intégration d’Experience Platform Launch à un site à l’aide de la configuration du navigateur. (05:28 à 06:14)
+2. Dans Collecte de données, créez une propriété . (abordé [ci-dessus](#create-launch-property)).
+3. À l’aide de l’intégration IMS de l’étape 1, créez une intégration de balises pour importer la propriété de balises.
+4. Dans AEM, mappez l’intégration des balises à un site à l’aide de la configuration du navigateur. (05:28 à 06:14)
 5. Validez l’intégration manuellement. (06:15 à 06:33)
-6. Utilisez le plug-in de navigateur Launch/DTM. (06:34 à 06:50)
-7. Utilisez le plug-in externe de navigateur Adobe Experience Cloud Debugger. (06:51 à 07:22)
+6. Utilisez le plug-in externe de navigateur Adobe Experience Cloud Debugger. (06:51 à 07:22)
 
-À ce stade, vous avez correctement intégré [AEM avec Adobe Target à l’aide d’Adobe Experience Platform Launch](./using-aem-cloud-services.md#integrating-aem-target-options) comme décrit dans l’option 1.
+À ce stade, vous avez correctement intégré [AEM avec Adobe Target à l’aide de balises](./using-aem-cloud-services.md#integrating-aem-target-options) comme décrit dans l’Option 1.
 
 Pour utiliser les offres de fragments d’expérience AEM afin d’alimenter vos activités de personnalisation, nous vous proposons de passer au chapitre suivant et d’intégrer AEM à Adobe Target à l’aide des services cloud hérités.

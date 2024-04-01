@@ -1,6 +1,6 @@
 ---
-title: Configurer des insights sur les ressources avec AEM Assets et Adobe Launch
-description: Dans cette série de vidéos en cinq volets, nous présentons la configuration des insights sur les ressources pour Experience Manager déployé via Launch by Adobe.
+title: Configuration des statistiques sur les ressources avec AEM Assets et les balises
+description: Dans cette série de vidéos en cinq parties, examinons la configuration et la configuration des statistiques sur les ressources pour le Experience Manager déployé via des balises.
 feature: Asset Insights
 version: 6.4, 6.5
 topic: Integrations
@@ -12,16 +12,16 @@ badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" befo
 doc-type: Tutorial
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
 duration: 2051
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '811'
-ht-degree: 100%
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 87%
 
 ---
 
-# Configurer des insights sur les ressources avec AEM Assets et Adobe Experience Platform Launch
+# Configuration des statistiques sur les ressources avec AEM Assets et les balises
 
-Dans cette série de vidéos en cinq volets, nous présentons la configuration des insights sur les ressources pour Experience Manager déployé via Adobe Launch.
+Dans cette série de vidéos en cinq parties, examinons la configuration et la configuration des statistiques sur les ressources pour le Experience Manager déployé via des balises.
 
 ## Partie 1 : vue d’ensemble des insights sur les ressources {#overview}
 
@@ -71,7 +71,7 @@ La suite de rapports avec collecte de données en temps réel est créée pour l
 
 >[!NOTE]
 >
->La collecte de données en temps réel et la création de rapports de ressources AEM doivent être activées pour votre suite de rapports Adobe Analytics. L’activation du reporting des ressources AEM réserve des variables d’analyse pour le suivi des insights sur les ressources.
+La collecte de données en temps réel et la création de rapports de ressources AEM doivent être activées pour votre suite de rapports Adobe Analytics. L’activation du reporting des ressources AEM réserve des variables d’analyse pour le suivi des insights sur les ressources.
 
 Pour la configuration des insights sur les ressources AEM, vous avez besoin des informations d’identification suivantes :
 
@@ -81,15 +81,15 @@ Pour la configuration des insights sur les ressources AEM, vous avez besoin des 
 * Secret partagé (peut être obtenu à partir de *Adobe Analytics > Admin > Paramètres de la société > Service Web*).
 * Suite de rapports (veillez à sélectionner la suite de rapports appropriée utilisée pour les rapports de ressources)
 
-## Partie 4 : utiliser Adobe Experience Platform Launch pour l’ajout d’une extension Adobe Analytics {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
+## Partie 4 : utilisation de balises pour ajouter l’extension Adobe Analytics {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
 
-Ajout de l’extension Adobe Analytics, création de règles de chargement de page et intégration d’AEM à Launch avec le compte technique Adobe IMS.
+Ajout de l’extension Adobe Analytics, création de règles de chargement de page et intégration d’AEM avec des balises au compte technique Adobe IMS.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25946?quality=12&learn=on)
 
 >[!NOTE]
 >
->Veillez à répliquer toutes vos modifications de l’instance de création vers l’instance de publication.
+Veillez à répliquer toutes vos modifications de l’instance de création vers l’instance de publication.
 
 ### Règle 1 : outil de suivi de page (pagetracker.js) {#rule-page-tracker-pagetracker-js}
 
@@ -175,13 +175,13 @@ document.querySelectorAll('[data-aem-asset-id]').forEach(function(element) {
 ### Instructions de débogage de la console {#console-debug-statements}
 
 ```javascript
-//Launch Build Info
+// Tags build info
 _satellite.buildInfo
 
 //Enables debug messages
 _satellite.setDebug(true);
 
-//Asset Insight JS Object
+//Asset Insight JavaScript Object
 assetAnalytics
 
 //List of trackable images
@@ -190,10 +190,8 @@ document.querySelectorAll(".cmp-image__image");
 
 Deux extensions de navigateur Google Chrome sont abordées dans la vidéo pour déboguer Analytics. Des extensions similaires sont également disponibles pour d’autres navigateurs.
 
-* [Extension Launch Switch Chrome](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=fr)
-* [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-Il est également possible de passer la gestion dynamique des balises en mode de débogage avec l’extension Chrome suivante : [Launch and DTM Switch](https://chrome.google.com/webstore/detail/launch-and-dtm-switch/nlgdemkdapolikbjimjajpmonpbpmipk?hl=fr). Cela facilite la vérification des erreurs liées au déploiement de la gestion dynamique des balises. En outre, vous pouvez passer manuellement la gestion dynamique des balises au mode de débogage via *Outils de développement -> Console JS* sur n’importe quel navigateur en ajoutant l’extrait de code suivant :
 
 ## Partie 5 : tester le suivi Analytics et synchroniser des données d’insight{#analytics-tracking-asset-insights}
 

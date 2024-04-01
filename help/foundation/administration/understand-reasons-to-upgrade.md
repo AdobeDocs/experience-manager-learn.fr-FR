@@ -9,10 +9,10 @@ level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
 duration: 809
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '2586'
-ht-degree: 100%
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+workflow-type: tm+mt
+source-wordcount: '2589'
+ht-degree: 99%
 
 ---
 
@@ -623,8 +623,8 @@ intégration simple à la solution de campagne par e-mail de nouvelle générati
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/using/aem_launch_adobeio_integration.html" target="_blank">Intégration d’Adobe Launch</a> :</strong>
-intégration au service cloud de gestion des balises de nouvelle génération d’Adobe.</td>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/using/aem_launch_adobeio_integration.html" target="_blank">Balises dans l’intégration Adobe Experience Platform</a>:</strong>
+            Intégration au service cloud de nouvelle génération de gestion des balises d’Adobe.</td>
             <td> </td>
             <td> </td>
             <td> </td>

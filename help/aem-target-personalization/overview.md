@@ -10,10 +10,10 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: b632883f-65fd-4f89-bf39-ec2bce352d2d
 duration: 219
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+workflow-type: tm+mt
 source-wordcount: '846'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ Les **Fragments d’expérience** représentent un énorme pas en avant permetta
 
 **Pour implémenter ce scénario, vous devez effectuer les actions suivantes :**
 
-* [Intégration d’AEM et d’Adobe Target à l’aide de Launch et d’Adobe I/O](./implementation.md#integrating-aem-target-options)
+* [Intégration d’AEM et d’Adobe Target à l’aide de balises et d’Adobe I/O](./implementation.md#integrating-aem-target-options)
 * [Intégration d’AEM et d’Adobe Target à l’aide de services cloud hérités](./implementation.md#integrating-aem-target-options)
 
 ***Après l’implémentation des intégrations ci-dessus, nous vous proposons d’explorer le [scénario en détail](./personalization-use-case-1.md).***
@@ -67,7 +67,7 @@ Le compositeur d’expérience visuelle est l’une des principales fonctionnali
 
 **Pour implémenter ce scénario, vous devez effectuer l’action suivante :**
 
-* [Intégration d’AEM et d’Adobe Target à l’aide de Launch et d’Adobe I/O](./implementation.md#integrating-aem-target-options)
+* [Intégration d’AEM et d’Adobe Target à l’aide de balises et d’Adobe I/O](./implementation.md#integrating-aem-target-options)
 
 ***Après l’implémentation de l’intégration ci-dessus, nous vous proposons d’explorer le [scénario en détail.](./personalization-use-case-3.md)***
 
@@ -85,6 +85,6 @@ L’intégration d’Adobe Experience Manager à Adobe Target vous permet de 
 
 **Pour implémenter ce scénario, vous devez effectuer l’action suivante :**
 
-* [Intégration d’AEM et d’Adobe Target à l’aide de Launch et d’Adobe I/O](./implementation.md#integrating-aem-target-options)
+* [Intégration d’AEM et d’Adobe Target à l’aide de balises et d’Adobe I/O](./implementation.md#integrating-aem-target-options)
 
-***Après l’intégration ci-dessus, nous vous proposons d’explorer le [scénario en détail.](./personalization-use-case-2.md)***
+***Après l’implémentation de l’intégration ci-dessus, nous vous proposons d’explorer le [scénario en détail.](./personalization-use-case-2.md)***

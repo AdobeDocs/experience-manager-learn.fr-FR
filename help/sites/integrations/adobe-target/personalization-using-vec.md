@@ -13,10 +13,10 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before
 doc-type: Tutorial
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
 duration: 141
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Découvrez comment créer une activité Target de test A/B à l’aide du compos
 Pour utiliser le compositeur d’expérience visuelle sur un site web AEM, la configuration suivante doit être effectuée :
 
 1. [Ajouter Adobe Target à votre site web AEM](./add-target-launch-extension.md)
-1. [Déclencher un appel Adobe Target à partir de Launch](./load-and-fire-target.md)
+1. [Déclenchement d’un appel Adobe Target à partir de balises](./load-and-fire-target.md)
 
 ## Vue d’ensemble du scénario
 

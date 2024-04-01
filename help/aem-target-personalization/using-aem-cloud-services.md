@@ -10,10 +10,10 @@ badgeVersions: label="AEM Sites 6.5" before-title="false"
 doc-type: Tutorial
 exl-id: 9b191211-2030-4b62-acad-c7eb45b807ca
 duration: 357
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '358'
-ht-degree: 100%
+source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ Cette section est consacrée à la configuration d’Adobe Experience Manager 
 
 >[!NOTE]
 >
-> L’utilisation conjointe du service cloud hérité d’AEM et d’Adobe Target vise **uniquement** à établir une connexion directe entre l’instance de création AEM et le serveur principal Adobe Target, à des fins de publication de contenu plus facile d’AEM vers Target. Adobe Launch permet d’afficher le contenu Adobe Target sur le site web accessible au public, qui repose sur AEM.
+> L’utilisation conjointe du service cloud hérité d’AEM et d’Adobe Target vise **uniquement** à établir une connexion directe entre l’instance de création AEM et le serveur principal Adobe Target, à des fins de publication de contenu plus facile d’AEM vers Target. Les balises dans Adobe Experience Platform sont utilisées pour exposer Adobe Target sur l’expérience de site Web publique diffusée par AEM.
 
 Dans le chapitre suivant, vous allez découvrir comment tirer parti des offres de fragments d’expérience AEM pour optimiser vos activités de personnalisation, puis intégrer AEM à Adobe Target à l’aide des services cloud hérités. Cette intégration est requise pour transmettre les fragments d’expérience d’AEM à Target en tant qu’offres HTML/JSON et pour que les offres cibles restent synchronisées avec AEM. Cette intégration est requise pour implémenter le [Scénario 1 abordé lors de la vue d’ensemble](./overview.md#personalization-using-aem-experience-fragment).
 
@@ -40,7 +40,7 @@ Dans le chapitre suivant, vous allez découvrir comment tirer parti des offres d
 
      >[!NOTE]
      >
-     > La personne cliente doit être configurée dans Experience Platform Launch et Adobe I/O par le [support Adobe](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html). Contactez l’administration système le cas échéant.
+     > Le client doit être configuré avec la collecte de données et l’Adobe I/O depuis [Prise en charge des Adobes](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) ou contactez votre administrateur système.
 
 ### Intégrer AEM à Adobe Target
 
