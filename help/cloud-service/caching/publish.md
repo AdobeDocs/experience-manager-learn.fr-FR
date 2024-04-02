@@ -12,10 +12,10 @@ jira: KT-13858
 thumbnail: KT-13858.jpeg
 exl-id: 1a1accbe-7706-4f9b-bf63-755090d03c4c
 duration: 325
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
+source-git-commit: baf81bb43a659e49728a05f83e7be394f7fbfb35
+workflow-type: tm+mt
 source-wordcount: '1134'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ La configuration du mode de mise en cache du contenu par le réseau CDN se limit
 
 Le réseau CDN d’AEM as a Cloud Service met en cache uniquement les réponses HTTP, et tous les critères suivants doivent être satisfaits :
 
-+ Le statut de la requête HTTP est `2xx` ou `3xx`.
++ L’état de réponse HTTP est `2xx` ou `3xx`
 + La méthode de requête HTTP est `GET` ou `HEAD`.
 + Au moins un des en-têtes de réponse HTTP suivants est présent : `Cache-Control`, `Surrogate-Control` ou `Expires`.
 + La réponse HTTP peut être n’importe quel type de contenu, y compris les fichiers HTML, JSON, CSS, JS et binaires.
