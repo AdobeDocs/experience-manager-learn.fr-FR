@@ -13,9 +13,9 @@ jira: KT-15053
 thumbnail: 3427620.jpeg
 exl-id: ac482951-9941-4c14-95b2-29d274fa610e
 source-git-commit: c4181907c7b398d2ba1a8735a028695831aca90e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '31'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Partie 2
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427621/?learn=on)
 
-Accès au contenu de l’aide
+Accéder au contenu d’aide
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427622/?learn=on)
 

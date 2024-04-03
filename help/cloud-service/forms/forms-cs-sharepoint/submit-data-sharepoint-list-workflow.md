@@ -1,6 +1,6 @@
 ---
-title: Envoi de données vers la liste SharePoint à l’aide de l’étape de workflow
-description: Insérez des données dans la liste sharepoint à l’aide de l’étape de workflow d’appel FDM
+title: Envoyer des données vers une liste SharePoint à l’aide d’une étape de workflow
+description: Insérer des données dans une liste SharePoint à l’aide de l’étape de workflow d’appel FDM
 feature: Adaptive Forms
 type: Documentation
 role: Developer
@@ -8,37 +8,38 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 jira: KT-15126
-source-git-commit: 3dc1aea74e2a7cf30da9f6fb96ecc5c7edcf6e34
-workflow-type: tm+mt
+exl-id: b369ed05-ba25-4b0e-aa3b-e7fc1621067d
+source-git-commit: c2b969829dc44e8235abafe0b53040b9c50fb91b
+workflow-type: ht
 source-wordcount: '245'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Insérez des données dans la liste SharePoint à l’aide de l’étape de workflow d’appel FDM
+# Insérer des données dans une liste SharePoint à l’aide de l’étape de workflow d’appel FDM
 
 
-Cet article explique les étapes requises pour insérer des données dans la liste SharePoint à l’aide de l’étape d’appel FDM dans AEM workflow.
+Cet article explique les étapes requises pour insérer des données dans une liste SharePoint à l’aide de l’étape d’appel FDM dans un workflow AEM.
 
-Cet article suppose que vous avez [formulaire adaptatif correctement configuré pour envoyer des données à la liste SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=fr#connect-af-sharepoint-list)
+Cet article suppose que vous avez [configuré le formulaire adaptatif pour envoyer des données à une liste SharePoint.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html?lang=fr#connect-af-sharepoint-list)
 
 
-## Création d’un modèle de données de formulaire basé sur la source de données de liste SharePoint
+## Créer un modèle de données de formulaire basé sur la source de données « liste SharePoint »
 
-* Créez un modèle de données de formulaire basé sur la source de données de liste SharePoint.
-* Ajoutez le modèle approprié et le service get du modèle de données de formulaire.
-* Configurez le service insert pour insérer l’objet de modèle de niveau supérieur.
-* Testez le service d’insertion.
+* Créez un nouveau modèle de données de formulaire basé sur la source de données « liste SharePoint ».
+* Ajoutez le modèle approprié et le service Get du modèle de données de formulaire.
+* Configurez le service Insert pour insérer l’objet de modèle du niveau supérieur.
+* Testez le service Insert.
 
 
 ## Créer un workflow
 
-* Créez un workflow simple avec l’étape d’appel FDM.
-* Configurez l’étape d’appel FDM pour utiliser le modèle de données de formulaire créé à l’étape précédente.
-* ![associer-fdm](assets/fdm-insert-1.png)
+* Créez un workflow simple à l’aide de l’étape d’appel FDM.
+* Configurez l’étape d’appel FDM pour utiliser le modèle de données de formulaire créé lors de l’étape précédente.
+* ![associate-fdm](assets/fdm-insert-1.png)
 
 * ![map-input-parameters](assets/fdm-insert-2.png)
-* Notez l’utilisation de la notation par points JSON. Les données envoyées sont au format ci-dessous et nous extrayons l’objet ContactUS des données envoyées.
+* Notez l’utilisation de la notation par points JSON. Les données envoyées sont au format ci-dessous et nous procédons à l’extraction de l’objet ContactUS à partir des données envoyées.
 
 ```json
 {
@@ -53,10 +54,10 @@ Cet article suppose que vous avez [formulaire adaptatif correctement configuré 
 
 
 
-## Configuration d’un formulaire adaptatif pour déclencher AEM processus
+## Configurer un formulaire adaptatif pour déclencher un workflow AEM
 
-* Créez un formulaire adaptatif à l’aide du modèle de données de formulaire créé à l’étape précédente.
-* Faites glisser certains champs de la source de données vers votre formulaire.
+* Créez un formulaire adaptatif basé sur le modèle de données de formulaire créé lors de l’étape précédente.
+* Faites glisser certains champs depuis la source de données vers votre formulaire.
 * Configurer l’action d’envoi du formulaire comme illustré ci-dessous
 * ![submit-action](assets/configure-af.png)
 
@@ -64,5 +65,4 @@ Cet article suppose que vous avez [formulaire adaptatif correctement configuré 
 
 ## Tester le formulaire
 
-Prévisualisez le formulaire créé à l’étape précédente. Remplissez le formulaire et envoyez-le. Les données du formulaire doivent être insérées dans la liste SharePoint.
-
+Prévisualisez le formulaire créé lors de l’étape précédente. Remplissez le formulaire et envoyez-le. Les données du formulaire doivent être insérées dans la liste SharePoint.

@@ -1,6 +1,6 @@
 ---
 title: Vidéos Edge Delivery Services
-description: Découvrez comment rendre les sites web plus rapides avec les Edge Delivery Services.
+description: Découvrez comment rendre les sites web plus rapides avec Edge Delivery Services.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -12,19 +12,19 @@ duration: 660
 last-substantial-update: 2024-03-20T00:00:00Z
 exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
 source-git-commit: df15dc0426918a0e2263efe6fb0de953f49385df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Vidéos Edge Delivery Services
 
-Découvrez comment rendre les sites web plus rapides avec les Edge Delivery Services.
+Découvrez comment rendre les sites web plus rapides avec Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
 
-Consultez la section [documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/overview) pour obtenir des détails complets sur les Edge Delivery Services et leurs fonctionnalités.
+Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/overview) pour obtenir des détails complets sur Edge Delivery Services et ses fonctionnalités.
 
 ## Prise en main d’Edge Delivery Services
 
