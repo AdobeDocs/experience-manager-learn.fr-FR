@@ -10,8 +10,8 @@ level: Beginner
 exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 446
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
+source-git-commit: 4f818f2ad01d9ecadcf5593aa038c7db15b4d496
+workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 100%
 
@@ -21,11 +21,11 @@ ht-degree: 100%
 
 AEM Forms 6.5 offre la possibilité de créer et de configurer des graphiques à séries multiples. Les graphiques à séries multiples sont généralement utilisés avec les types de graphique à barres, en courbes et histogramme. Le graphique suivant est un bon exemple de graphique à séries multiples. Le graphique montre une augmentation de 10 000 dollars pour 3 fonds communs de placement différents sur une période. Pour pouvoir créer et utiliser des graphiques de ce type dans AEM Forms, vous devez créer le modèle de données de formulaire approprié.
 
-![Graphique à séries multiples.](assets/seriescharts.jfif)
+![Graphique à séries multiples.](assets/series_charts.png)
 
 Pour créer des graphiques à séries multiples dans AEM Forms, vous devez créer un modèle de données de formulaire approprié avec les entités et associations nécessaires entre les entités. La capture d’écran suivante présente les entités et les associations entre les 3 entités. Au niveau supérieur, nous avons une entité appelée « Organisation », qui a une association un-à-multiple avec l’entité Fonds. L’entité Fonds, à son tour, a une association de type un-à-multiple avec l’entité Performance.
 
-![Modèle de données de formulaire.](assets/formdatamodel.jfif)
+![Modèle de données de formulaire.](assets/form_data_model.png)
 
 ## Créer un modèle de données de formulaire pour les graphiques à séries multiples
 
