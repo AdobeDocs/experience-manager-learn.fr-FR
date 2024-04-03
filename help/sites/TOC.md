@@ -9,7 +9,7 @@ version: 6.4, 6.5, Cloud Service
 source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 95%
    + [Lancements](page-authoring/launches.md)
    + Apprendre de vos pairs {#expert-advice}
       + [Conseils sur la hiérarchie du site](page-authoring/expert-advice/site-hierarchy.md)
-+ IA générique {#generative-ai}
++ IA générative {#generative-ai}
    + [Générer des variations](./generative-ai/generate-variations.md)
 + Fragments de contenu {#content-fragments}
    + [Console Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=fr){target=_blank}

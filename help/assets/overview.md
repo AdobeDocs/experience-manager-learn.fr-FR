@@ -8,7 +8,7 @@ exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
 source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
 workflow-type: tm+mt
 source-wordcount: '175'
-ht-degree: 87%
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Experience Manager (AEM) Assets est un outil de gestion des ressources 
 
 ## Présentation d’AEM Assets
 
-Découvrez ce qu’est AEM Assets et comment utiliser pour atteindre les objectifs commerciaux de votre entreprise.
+Découvrez AEM Assets et comment l’utiliser pour atteindre les objectifs commerciaux de votre organisation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427944?learn=on)
 
