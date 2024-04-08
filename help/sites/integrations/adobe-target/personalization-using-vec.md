@@ -13,9 +13,9 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before
 doc-type: Tutorial
 exl-id: becf2bed-0541-45e8-9ce2-f9fb023234e0
 duration: 141
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '508'
 ht-degree: 98%
 
 ---
@@ -90,4 +90,3 @@ Dans ce chapitre, une personne chargée du marketing a pu créer une expérience
 ## Liens connexes
 
 + [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-+ [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/fr/firefox/addon/adobe-experience-platform-dbg/)

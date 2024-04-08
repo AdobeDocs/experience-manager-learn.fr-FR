@@ -10,8 +10,8 @@ jira: KT-9352
 thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 duration: 948
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Un programme Cloud Manager ne peut avoir qu’un __seul__ type d’infrastructu
 Les éléments suivants sont requis lors de la configuration du réseau privé virtuel :
 
 + Compte Adobe avec [autorisations de la personne propriétaire d’entreprise Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/).
-+ Accès aux [informations d’authentification de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/authentication/).
++ Accès aux [informations d’authentification de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/).
    + ID d’organisation (ou ID d’organisation IMS)
    + ID client (ou clé API)
    + Jeton d’accès (ou jeton porteur)

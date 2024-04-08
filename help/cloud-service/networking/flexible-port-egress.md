@@ -10,8 +10,8 @@ jira: KT-9350
 thumbnail: KT-9350.jpeg
 exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
 duration: 906
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Un programme Cloud Manager ne peut avoir qu’un type d’infrastructure résea
 Les éléments suivants sont requis lors de la configuration d’une sortie de port flexible :
 
 + Projet Adobe Developer Console avec l’API Cloud Manager activée et les [autorisations de la personne propriétaire de l’entreprise Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/).
-+ Accès aux [Informations d’authentification de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/authentication/).
++ Accès aux [Informations d’authentification de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/).
    + ID d’organisation (ou ID d’organisation IMS)
    + ID client (ou clé API)
    + Jeton d’accès (ou jeton porteur)

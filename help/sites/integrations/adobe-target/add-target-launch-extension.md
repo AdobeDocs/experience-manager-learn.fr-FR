@@ -13,10 +13,10 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before
 doc-type: Tutorial
 exl-id: aa48ffef-1105-4d0d-b4b4-12ac5d2eea23
 duration: 297
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 41%
+source-wordcount: '91'
+ht-degree: 37%
 
 ---
 
@@ -35,5 +35,4 @@ Découvrez comment activer Adobe Target sur votre site web AEM à l’aide de ba
 ## Liens connexes
 
 + [Adobe Experience Cloud Debugger - Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-+ [Adobe Experience Cloud Debugger - Firefox](https://addons.mozilla.org/fr/firefox/addon/adobe-experience-platform-dbg/)
 + [Présentation d’Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=fr)

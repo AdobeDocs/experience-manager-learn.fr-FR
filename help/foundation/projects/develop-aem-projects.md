@@ -9,10 +9,10 @@ role: Developer
 level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1603
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+workflow-type: tm+mt
 source-wordcount: '4441'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -26,9 +26,9 @@ Ce tutoriel de développement explique comment développer des [!DNL AEM Project
 
 ## Présentation {#introduction}
 
-[[!DNL AEM Projects]](https://docs.adobe.com/content/help/fr/experience-manager-65/authoring/projects/projects.html) est une fonctionnalité d’AEM conçue pour faciliter la gestion et le regroupement de tous les workflows et tâches associés à la création de contenu dans le cadre d’une mise en œuvre d’AEM Sites ou Assets.
+[[!DNL AEM Projects]](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) est une fonctionnalité d’AEM conçue pour faciliter la gestion et le regroupement de tous les workflows et tâches associés à la création de contenu dans le cadre d’une mise en œuvre d’AEM Sites ou Assets.
 
-Les projets AEM sont fournis avec plusieurs [modèles de projet prêts à l’emploi](https://docs.adobe.com/content/help/fr/experience-manager-65/authoring/projects/projects.html). Lors de la création d’un projet, les créateurs et créatrices peuvent choisir parmi ces modèles disponibles. Les mises en œuvre d’AEM volumineuses avec des besoins commerciaux uniques voudront créer des modèles de projet personnalisés et adaptés à leurs besoins. En créant un modèle de projet personnalisé, les développeurs et développeuses peuvent configurer le tableau de bord du projet, se connecter aux workflows personnalisés et créer des rôles professionnels supplémentaires pour un projet. Nous allons examiner la structure d’un modèle de projet et créer un exemple de modèle.
+Les projets AEM sont fournis avec plusieurs [modèles de projet prêts à l’emploi](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects). Lors de la création d’un projet, les créateurs et créatrices peuvent choisir parmi ces modèles disponibles. Les mises en œuvre d’AEM volumineuses avec des besoins commerciaux uniques voudront créer des modèles de projet personnalisés et adaptés à leurs besoins. En créant un modèle de projet personnalisé, les développeurs et développeuses peuvent configurer le tableau de bord du projet, se connecter aux workflows personnalisés et créer des rôles professionnels supplémentaires pour un projet. Nous allons examiner la structure d’un modèle de projet et créer un exemple de modèle.
 
 ![Carte de projet personnalisée.](./assets/develop-aem-projects/custom-project-card.png)
 
@@ -39,7 +39,7 @@ Ce tutoriel décrit le code nécessaire à la création d’un modèle de projet
 * [Package de tutoriel terminé](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Référentiel de code complet sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Ce tutoriel suppose d’avoir des connaissances de base sur les [bonnes pratiques de développement AEM](https://docs.adobe.com/content/help/fr/experience-manager-65/developing/introduction/the-basics.html) et une certaine familiarité avec la [configuration de projet Maven AEM](https://docs.adobe.com/content/help/fr/experience-manager-65/developing/devtools/ht-projects-maven.html). Tout le code mentionné est destiné à être utilisé comme référence et ne doit être déployé que sur une [instance AEM de développement local](https://docs.adobe.com/content/help/fr/experience-manager-65/deploying/deploying/deploy.html).
+Ce tutoriel suppose d’avoir des connaissances de base sur les [bonnes pratiques de développement AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) et une certaine familiarité avec la [configuration de projet Maven AEM](https://docs.adobe.com/content/help/fr/experience-manager-65/developing/devtools/ht-projects-maven.html). Tout le code mentionné est destiné à être utilisé comme référence et ne doit être déployé que sur une [instance AEM de développement local](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Structure d’un modèle de projet
 
@@ -69,11 +69,11 @@ Vous trouverez un exemple d’assistant personnalisé pour le modèle de projet 
 
 ### Gadgets {#gadgets}
 
-Il n’existe aucune propriété supplémentaire sur ce nœud, mais les enfants du nœud gadgets contrôlent quelles mosaïques de projet renseignent le tableau de bord du projet lorsqu’un nouveau projet est créé. Les [mosaïques du projet](https://docs.adobe.com/content/help/fr/experience-manager-65/authoring/projects/projects.html) (également appelés gadgets ou capsules) sont des cartes simples qui renseignent l’espace de travail d’un projet. Vous trouverez une liste complète des mosaïques prêtes à l’emploi sous : **/libs/cq/gui/components/projects/admin/pod. **Les personnes propriétaires de projet peuvent toujours ajouter/supprimer des mosaïques après la création d’un projet.
+Il n’existe aucune propriété supplémentaire sur ce nœud, mais les enfants du nœud gadgets contrôlent quelles mosaïques de projet renseignent le tableau de bord du projet lorsqu’un nouveau projet est créé. Les [mosaïques du projet](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) (également appelés gadgets ou capsules) sont des cartes simples qui renseignent l’espace de travail d’un projet. Vous trouverez une liste complète des mosaïques prêtes à l’emploi sous : **/libs/cq/gui/components/projects/admin/pod. **Les personnes propriétaires de projet peuvent toujours ajouter/supprimer des mosaïques après la création d’un projet.
 
 ### Rôles {#roles}
 
-Il existe 3 [rôles par défaut](https://docs.adobe.com/content/help/fr/experience-manager-65/authoring/projects/projects.html) pour chaque projet : **Observateurs et observatrices**, **Éditeurs et éditrices**, et **Personnes propriétaires**. En ajoutant des nœuds enfants sous le nœud roles, vous pouvez ajouter des rôles de projet supplémentaires spécifiques à l’entreprise pour le modèle. Vous pouvez ensuite lier ces rôles à des workflows spécifiques associés au projet.
+Il existe 3 [rôles par défaut](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) pour chaque projet : **Observateurs et observatrices**, **Éditeurs et éditrices**, et **Personnes propriétaires**. En ajoutant des nœuds enfants sous le nœud roles, vous pouvez ajouter des rôles de projet supplémentaires spécifiques à l’entreprise pour le modèle. Vous pouvez ensuite lier ces rôles à des workflows spécifiques associés au projet.
 
 ### Workflows {#workflows}
 
@@ -152,7 +152,7 @@ Une des raisons les plus intéressantes de la création d’un modèle de projet
    1. Ajoutez un autre nœud **nt:unstructured** étiqueté « approvers » en tant qu’enfant du nœud roles.
    1. Ajoutez des propriétés de chaîne **jcr:title** = &quot;**Approvers**&quot;, **roleclass** = &quot;**owner**&quot;, **roleid** = &quot;**approvers**&quot;.
       1. Le nom du nœud des approbateurs et approbatrices, ainsi que jcr:title et roleid, peuvent être n’importe quelle valeur de chaîne (tant que roleid est unique).
-      1. **roleclass** détermine les autorisations appliquées à ce rôle en fonction des [trois rôles prêts à l’emploi](https://docs.adobe.com/content/docs/fr/aem/6-3/author/projects.html) : **personne propriétaire**, **éditeur ou éditrice**, et **observateur ou observatrice**.
+      1. **roleclass** détermine les autorisations appliquées à ce rôle en fonction des [trois rôles prêts à l’emploi](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects) : **personne propriétaire**, **éditeur ou éditrice**, et **observateur ou observatrice**.
       1. En général, si le rôle personnalisé est davantage un rôle de gestion, la roleclass peut être **propriétaire** ; s’il s’agit d’un rôle de création plus spécifique comme photographe ou designer, la roleclass **éditeur** devrait suffire. La grande différence entre les rôles **propriétaire** et **éditeur** est que les personnes propriétaires d’un projet peuvent mettre à jour les propriétés du projet et ajouter de nouveaux utilisateurs et utilisatrices au projet.
 
    ```shell
@@ -308,7 +308,7 @@ La dernière étape du workflow utilise l’étape de processus Activer la page/
 
    ![Boîte de dialogue de création de workflow.](./assets/develop-aem-projects/workflow-create-dialog.png)
 
-   [Vous trouverez plus d’informations sur la création de workflows ici](https://docs.adobe.com/content/help/fr/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html).
+   [Vous trouverez plus d’informations sur la création de workflows ici](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-models).
 
 1. Il est recommandé de regrouper les workflows personnalisés dans leur propre dossier sous /etc/workflow/models. Dans CRXDE Lite, créez un dossier « **nt:folder** » sous /etc/workflow/models nommé « **aem-guides** ». L’ajout d’un sous-dossier permet de s’assurer que les workflows personnalisés ne sont pas écrasés accidentellement lors des mises à niveau ou des installations de packs de services.
 
@@ -320,7 +320,7 @@ La dernière étape du workflow utilise l’étape de processus Activer la page/
 
    >[!NOTE]
    >
-   >Si vous utilisez AEM version 6.4 ou ultérieure, l’emplacement du workflow a changé. [Pour plus d’informations, rendez-vous ici.](https://docs.adobe.com/content/help/fr/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)
+   >Si vous utilisez AEM version 6.4 ou ultérieure, l’emplacement du workflow a changé. [Pour plus d’informations, rendez-vous ici.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
    Si vous utilisez AEM version 6.4 ou ultérieure, le modèle de workflow est créé sous `/conf/global/settings/workflow/models`. Répétez les étapes ci-dessus avec le répertoire /conf et ajoutez un sous-dossier nommé `aem-guides` et déplacez le `content-approval-workflow` sous celui-ci.
 
@@ -738,7 +738,7 @@ La configuration de workflow est une zone d’un modèle de projet qui indique l
    >Si vous utilisez AEM 6.4, l’emplacement du workflow a été modifié. Pointez la propriété `modelId` sur l’emplacement du modèle de workflow d’exécution sous `/var/workflow/models/aem-guides/content-approval-workflow`.
    >
    >
-   >Rendez-vous [ici pour en savoir plus sur le nouvel emplacement du workflow.](https://docs.adobe.com/content/help/fr/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)
+   >Rendez-vous [ici pour en savoir plus sur le nouvel emplacement du workflow.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/extending-aem/extending-workflows/workflows-best-practices)
 
    ```xml
    <contentapproval
@@ -754,4 +754,4 @@ La configuration de workflow est une zone d’un modèle de projet qui indique l
 
 * [Télécharger le package de tutoriel terminé](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Référentiel de code complet sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
-* [Documentation des projets AEM](https://docs.adobe.com/content/help/fr/experience-manager-65/authoring/projects/projects.html)
+* [Documentation des projets AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/projects)

@@ -12,10 +12,10 @@ last-substantial-update: 2022-10-03T00:00:00Z
 doc-type: Technical Video
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
 duration: 957
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '233'
-ht-degree: 100%
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ La capture d’écran ci-dessous illustre une configuration similaire, mais pour
 
 ### Configuration OSGi du planificateur de plan du site
 
-Définit la [configuration d’usine OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) pour la fréquence (à l’aide des [expressions cron](http://www.cronmaker.com/)) à laquelle les plans de site sont générés/regénérés et mis en cache dans AEM.
+Définit la [configuration d’usine OSGi](http://localhost:4502/system/console/configMgr/org.apache.sling.sitemap.impl.SitemapScheduler) pour la fréquence (à l’aide des [expressions cron](https://cron.help/)) à laquelle les plans de site sont générés/regénérés et mis en cache dans AEM.
 
 `ui.config/src/main/jcr_content/apps/wknd/osgiconfig/config.publish`
 
@@ -93,4 +93,4 @@ RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/$1 [PT,L]
 + [Documentation relative au plan du site Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap#readme)
 + [Documentation relative au plan du site sitemap.org](https://www.sitemaps.org/protocol.html)
 + [Documentation relative au fichier d’index du plan du site sitemap.org](https://www.sitemaps.org/protocol.html#index)
-+ [Cronmaker](http://www.cronmaker.com/)
++ [Cron Helper](https://cron.help/)

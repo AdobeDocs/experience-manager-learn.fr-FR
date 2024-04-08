@@ -13,10 +13,10 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before
 doc-type: Tutorial
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
 duration: 279
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '270'
-ht-degree: 100%
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 93%
 
 ---
 
@@ -44,11 +44,11 @@ Pour activer le débogage côté client, appelez la méthode `setDebug(true)` su
 
 ## Débogage via Adobe Experience Platform Debugger
 
-Adobe fournit une [extension Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) et un [module complémentaire Firefox](https://addons.mozilla.org/fr/firefox/addon/adobe-experience-platform-dbg/) Adobe Experience Platform Debugger pour déboguer, comprendre et obtenir des informations sur l’intégration.
+Adobe fournit un Adobe Experience Platform Debugger [Extension Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) pour déboguer, comprendre et obtenir des informations sur l’intégration.
 
 1. Ouvrez l’extension Adobe Experience Platform Debugger et ouvrez la page du site sur l’instance de publication.
 
-1. Dans la section **Adobe Experience Platform Debugger > Résumé > Balises Adobe Experience Platform**, vérifiez les détails de la propriété de balise tels que le nom, la version, la date de création, l’environnement et les extensions.
+2. Dans la section **Adobe Experience Platform Debugger > Résumé > Balises Adobe Experience Platform**, vérifiez les détails de la propriété de balise tels que le nom, la version, la date de création, l’environnement et les extensions.
 
    ![Détails de la propriété de balise et Adobe Experience Platform Debugger.](assets/tag-property-details.png)
 

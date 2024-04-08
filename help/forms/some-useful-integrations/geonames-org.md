@@ -10,10 +10,10 @@ level: Intermediate
 exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
 duration: 218
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
+workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Une liste déroulante en cascade est une série de contrôles DropDownList dépe
 
 >[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
 
-Dans ce tutoriel, j’ai utilisé l’[API REST Geonames](http://api.geonames.org/) pour démontrer cette fonctionnalité.
+Dans ce tutoriel, j’ai utilisé l’[API REST Geonames](https://www.geonames.org/export/web-services.html) pour démontrer cette fonctionnalité.
 Un certain nombre d’organisations proposent ce type de service. Tant que vous disposez d’API REST bien documentées, vous pouvez facilement intégrer AEM Forms à l’aide de la fonctionnalité d’intégration des données.
 
 Les étapes suivantes servent à mettre en œuvre des listes déroulantes en cascade dans AEM Forms.
@@ -90,7 +90,7 @@ Ajoutez 2 listes déroulantes appelées Villes et Départements dans le formula
 Vous pouvez télécharger les ressources suivantes pour commencer à créer une liste déroulante en cascade.
 Les fichiers Swagger complets sont disponibles [ici](assets/geonames-swagger-files.zip).
 Les fichiers Swagger décrivent l’API REST suivante.
-* [Obtenir tous les pays](http://api.geonames.org/countryInfoJSON?username=yourusername)
-* [Obtenir les enfants de l’objet Geoname](http://api.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
+* [Obtenir tous les pays](https://secure.geonames.org/countryInfoJSON?username=yourusername)
+* [Obtenir les enfants de l’objet Geoname](https://secure.geonames.org/children?formatted=true&amp;geonameId=6252001&amp;username=yourusername)
 
 Le [modèle de données de formulaire complété peut être téléchargé ici](assets/geonames-api-form-data-model.zip).

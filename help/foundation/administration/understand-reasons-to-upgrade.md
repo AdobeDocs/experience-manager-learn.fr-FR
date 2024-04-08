@@ -9,10 +9,10 @@ level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
 duration: 809
-source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
+source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
-source-wordcount: '2589'
-ht-degree: 99%
+source-wordcount: '2588'
+ht-degree: 98%
 
 ---
 
@@ -717,8 +717,8 @@ modèles de métadonnées, éditeur de schéma de métadonnées et modification 
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong>Gestion des <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">Tâches</a> et des <a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/projects-with-workflows.html" target="_blank">Workflows</a> :</strong>
-les workflows et les tâches préconfigurés pour la révision et l’approbation des ressources numériques exploitant les projets AEM.</td>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">Tâche</a> et gestion des workflows :</strong>
+            Workflows et tâches préconfigurés pour la révision et l’approbation des ressources numériques exploitant AEM projets.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
