@@ -12,14 +12,14 @@ last-substantial-update: 2024-02-29T00:00:00Z
 jira: KT-15056
 thumbnail: 3427623.jpeg
 exl-id: 9110589e-a325-479f-b89b-a13e6bdde91d
-source-git-commit: 08ad6e3e6db6940f428568c749901b0b3c6ca171
-workflow-type: ht
-source-wordcount: '36'
-ht-degree: 100%
+source-git-commit: 73c15a195c438dd7a07142bba719c6f820bf298a
+workflow-type: tm+mt
+source-wordcount: '33'
+ht-degree: 84%
 
 ---
 
-# Vidéos courtes AEM Forms : créer un formulaire simple DigSig
+# Ajout d’un champ de signature numérique
 
 Une courte vidéo qui décrit l’ajout de signatures numériques à AEM Forms.
 

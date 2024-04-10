@@ -8,10 +8,10 @@ breadcrumb-title: Tutoriels d’AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: ae2a2cbde1bf21314cc77863014cb0f013b6e0bb
-workflow-type: ht
-source-wordcount: '2034'
-ht-degree: 100%
+source-git-commit: 73c15a195c438dd7a07142bba719c6f820bf298a
+workflow-type: tm+mt
+source-wordcount: '2044'
+ht-degree: 99%
 
 ---
 
@@ -105,6 +105,8 @@ ht-degree: 100%
    + [Préremplissage des formulaires HTML5](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modèle de données de formulaire avec Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Ajout dynamique d’éléments au composant Choix](adaptive-forms/choice-group-items-adding-dynamically-article.md)
++ Formulaires basés sur les composants principaux{#core-component-based-forms}
+   + [Accès aux données de formulaire à l’aide de l’API GuideBridge](core-components/submit-data-using-guidebridge-api.md)
 + Sélection et assemblage du contenu du dossier DAM{#select-dam-folder-content}
    + [1. Présentation](display-and-assemble-dam-folder-contents/introduction.md)
    + [2. Renseigner le groupe de choix](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
