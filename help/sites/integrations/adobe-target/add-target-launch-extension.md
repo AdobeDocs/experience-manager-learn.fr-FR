@@ -1,6 +1,6 @@
 ---
-title: Ajout de l’extension Target à une propriété de balise
-description: Découvrez comment ajouter l’extension Adobe Target à une propriété de balises.
+title: Ajouter l’extension Target à une propriété de balises
+description: Découvrez comment ajouter l’extension Adobe Target à une propriété de balises.
 version: Cloud Service
 jira: KT-6131
 thumbnail: 41247.jpg
@@ -16,15 +16,15 @@ duration: 297
 source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '91'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
-# Ajout de l’extension Target à une propriété Tags {#adobe-target-extension}
+# Ajouter l’extension Target à une propriété de balises {#adobe-target-extension}
 
-Pour suivre cette vidéo, vous devez avoir déjà [balises intégrées dans Adobe Experience Platform avec AEM](../experience-platform/data-collection/tags/overview.md).
+Pour suivre cette vidéo, vous devez avoir déjà [intégré des balises dans Adobe Experience Platform avec AEM](../experience-platform/data-collection/tags/overview.md).
 
-Découvrez comment activer Adobe Target sur votre site web AEM à l’aide de balises.
+Découvrez comment activer Adobe Target sur votre site web AEM à l’aide de balises.
 
 >[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 

@@ -17,7 +17,7 @@ duration: 1360
 source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '1229'
-ht-degree: 90%
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ Dans **Experience Platform** :
 + Accès à **Schémas** sous Gestion des données.
 + Accès à **Jeux de données** sous Gestion des données.
 + Accès à **Trains de données** sous Collecte de données.
-+ Accès à **Balises** Sous Collecte de données
++ Accéder à **Balises** sous Collecte de données
 
 Si vous ne disposez pas des autorisations nécessaires, votre administrateur ou administratrice système peut vous les accorder en utilisant l’[Adobe Admin Console](https://adminconsole.adobe.com/).
 
@@ -75,7 +75,7 @@ Familiarisez-vous avec le concept des trains de données et les sujets connexes,
 
 ## Créer une propriété de balise - Experience Platform
 
-Découvrez comment créer une propriété de balise dans Experience Platform pour ajouter la bibliothèque JavaScript du SDK Web au site Web WKND. La propriété de balise nouvellement définie comporte les ressources suivantes :
+Découvrez comment créer une propriété de balise dans Experience Platform pour ajouter la bibliothèque JavaScript du SDK web au site web WKND. La propriété de balise nouvellement définie comporte les ressources suivantes :
 
 + Extensions de balise : [Core](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) et [SDK web Adobe Experience Platform](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
 + Éléments de données : éléments de données de type de code personnalisé qui extraient page-name, site-section et host-name à l’aide de la couche de données cliente Adobe du site WKND. En outre, l’élément de données de type objet XDM conforme au schéma XDM WKND nouvellement créé lors de l’étape précédente [Créer un schéma XDM](#create-xdm-schema---experience-platform).
@@ -174,9 +174,9 @@ Pour plus d’informations sur l’intégration des composants principaux AEM à
 
 ## Connecter la propriété de balise à AEM
 
-Découvrez comment lier la propriété de balise nouvellement créée à AEM par le biais d’Adobe IMS et de balises dans la configuration Adobe Experience Platform dans AEM. Lorsqu’un environnement as a Cloud Service AEM est établi, plusieurs configurations de compte technique Adobe IMS sont automatiquement générées, y compris les balises. Toutefois, pour la version AEM 6.5, vous devez en configurer une manuellement.
+Découvrez comment lier la propriété de balise récemment créée à AEM via Adobe IMS et des balises dans la configuration d’Adobe Experience Platform dans AEM. Lorsqu’un environnement AEM as a Cloud Service est établi, plusieurs configurations de compte technique Adobe IMS sont automatiquement générées, y compris des balises. Toutefois, pour la version AEM 6.5, vous devez en configurer une manuellement.
 
-Après avoir lié la propriété de balise, le site WKND peut charger la bibliothèque JavaScript de la propriété de balise sur les pages web à l’aide des balises dans la configuration du service cloud Adobe Experience Platform.
+Après avoir lié la propriété de balise, le site WKND peut charger la bibliothèque JavaScript de la propriété de balise sur les pages web à l’aide de la configuration du service cloud Adobe Experience Platform.
 
 ### Vérifier le chargement de la propriété de balise sur WKND
 

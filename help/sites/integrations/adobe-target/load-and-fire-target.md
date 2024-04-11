@@ -16,7 +16,7 @@ duration: 610
 source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ La couche de données de la clientèle Adobe est une couche de données pilotée
 
 ![Configuration et code personnalisé de l’événement d’affichage de page.](assets/load-and-fire-target-call.png)
 
-Dans la propriété tags, ajoutez une nouvelle **Événement** à la fonction **Règle**
+Dans la propriété de balises, ajoutez un nouvel **Événement** à la **Règle**.
 
 + __Extension :__ principale
 + __Type d’événement :__ code personnalisé
@@ -80,20 +80,20 @@ window.adobeDataLayer.push(function (dataLayer) {
 });
 ```
 
-Une fonction personnalisée définit la variable `pageShownEventHandler`et écoute les événements émis par AEM Core Components, fournit les informations pertinentes au Core Component, les regroupe dans un objet d’événement et déclenche les balises Event avec les informations d’événement dérivées à sa charge utile.
+Une fonction personnalisée définit le `pageShownEventHandler` et écoute les événements émis par les composants principaux d’AEM, déduit les informations pertinentes des composants principaux, les regroupe dans un objet d’événement et déclenche l’événement de balises avec les informations déduites de l’événement dans sa payload.
 
-La règle de balises est déclenchée à l’aide du `trigger(...)` qui est __only__ disponible à partir de la définition de fragment de code de code personnalisé d’un événement de règle.
+La règle de balises est déclenchée à l’aide de la fonction `trigger(...)` des balises qui est __uniquement__ disponible à partir de la définition de l’extrait de code du code personnalisé d’un événement de règle.
 
-La variable `trigger(...)` prend un objet d’événement comme paramètre qui, à son tour, est exposé dans les balises Éléments de données par un autre nom réservé dans les balises nommées `event`. Les éléments de données des balises peuvent désormais référencer des données de cet objet d’événement à partir de la variable `event` objet utilisant une syntaxe comme `event.component['someKey']`.
+La fonction `trigger(...)` prend un objet d’événement comme paramètre qui, à son tour, est exposé dans les éléments de données de balises par un autre nom réservé dans des balises nommé `event`. Les éléments de données dans des balises peuvent désormais faire référence à des données à partir de cet objet d’événement à partir de l’objet `event` utilisant une syntaxe telle que `event.component['someKey']`.
 
-If `trigger(...)` est utilisé en dehors du contexte du type d’événement Code personnalisé d’un événement (par exemple, dans une action), l’erreur JavaScript `trigger is undefined` est généré sur le site Web intégré à la propriété tags .
+Si la fonction `trigger(...)` est utilisée en dehors du contexte du type d’événement Code personnalisé d’un événement (par exemple, dans une action), l’erreur JavaScript `trigger is undefined` est générée sur le site web intégré à la propriété de balises.
 
 
 ### Éléments de données
 
 ![Éléments de données.](assets/data-elements.png)
 
-Les éléments de données de balises mappent les données de l’objet d’événement. [déclenché dans l’événement personnalisé Page affichée](#page-event) aux variables disponibles dans Adobe Target, via le type d’élément de données Code personnalisé de l’extension Core.
+Les éléments de données Balises font correspondre les données de l’objet d’événement [déclenché dans l’événement Affichage de page personnalisé](#page-event) aux variables disponibles dans Adobe Target, via le type d’élément de données Code personnalisé de l’extension principale.
 
 #### Élément de données ID de page
 

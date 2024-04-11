@@ -15,7 +15,7 @@ duration: 124
 source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Découvrez comment créer une activité pour rediriger les pages de votre site h
 Pour personnaliser les pages complètes d’un site web AEM, la configuration suivante doit être effectuée :
 
 1. [Ajouter Adobe Target à votre site web AEM](./add-target-launch-extension.md)
-1. [Déclenchement d’un appel Adobe Target à partir de balises](./load-and-fire-target.md)
+1. [Déclencher un appel Adobe Target à partir de balises](./load-and-fire-target.md)
 
 ## Vue d’ensemble du scénario
 

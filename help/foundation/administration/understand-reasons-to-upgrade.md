@@ -12,7 +12,7 @@ duration: 809
 source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
 workflow-type: tm+mt
 source-wordcount: '2588'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -623,8 +623,8 @@ intégration simple à la solution de campagne par e-mail de nouvelle générati
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/using/aem_launch_adobeio_integration.html" target="_blank">Balises dans l’intégration Adobe Experience Platform</a>:</strong>
-            Intégration au service cloud de nouvelle génération de gestion des balises d’Adobe.</td>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/using/aem_launch_adobeio_integration.html" target="_blank">Intégration des balises dans Adobe Experience Platform</a> :</strong>
+intégration au service cloud de gestion des balises de nouvelle génération d’Adobe.</td>
             <td> </td>
             <td> </td>
             <td> </td>
