@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
 source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '498'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -137,11 +137,11 @@ ht-degree: 96%
       + [Générer des FPID](integrations/platform/fpid.md)
       + [SDK web](integrations/platform/web-sdk.md)
       + [Analyse à l’aide du SDK web Platform](integrations/platform/analytics-using-web-sdk.md)
-   + Balises dans Adobe Experience Platform {#experience-platform-data-collection-tags}
+   + Balises dans Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Vue d’ensemble](integrations/experience-platform/data-collection/tags/overview.md)
       + [Créer une propriété de balise](integrations/experience-platform/data-collection/tags/create-tag-property.md)
       + [Connecter AEM et la propriété de balise à l’aide d’IMS](integrations/experience-platform/data-collection/tags/connect-aem-tag-property-using-ims.md)
-      + [Création d’un Cloud Service de balises AEM](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
+      + [Créer un service cloud de balises AEM](integrations/experience-platform/data-collection/tags/create-aem-launch-cloud-service.md)
       + [Déboguer une implémentation de balises](integrations/experience-platform/data-collection/tags/debug-tags-implementation.md)
    + Couche de données client Adobe {#adobe-client-data-layer}
       + [Utiliser la couche de données client Adobe](integrations/adobe-client-data-layer/data-layer-overview.md)
@@ -152,7 +152,7 @@ ht-degree: 96%
       + [Analyser des données avec Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
       + [Vue d’ensemble](integrations/adobe-target/overview.md)
-      + [Ajout de l’extension Target à la propriété Tags](integrations/adobe-target/add-target-launch-extension.md)
+      + [Ajouter l’extension Target à la propriété de balises](integrations/adobe-target/add-target-launch-extension.md)
       + [Charger et déclencher un appel Target](integrations/adobe-target/load-and-fire-target.md)
       + [Créer un compte Adobe Target as a Cloud Service](integrations/adobe-target/setup-aem-target-cloud-service.md)
       + [Exporter des fragments d’expérience vers Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)

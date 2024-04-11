@@ -1,6 +1,6 @@
 ---
-title: Configuration des statistiques sur les ressources avec AEM Assets et les balises
-description: Dans cette série de vidéos en cinq parties, examinons la configuration et la configuration des statistiques sur les ressources pour le Experience Manager déployé via des balises.
+title: Configurer des insights sur les ressources avec AEM Assets et des balises
+description: Dans cette série de vidéos en cinq volets, nous présentons la configuration des insights sur les ressources pour Experience Manager déployé via des balises.
 feature: Asset Insights
 version: 6.4, 6.5
 topic: Integrations
@@ -13,15 +13,15 @@ doc-type: Tutorial
 exl-id: 00125fe1-3bb9-4b1a-a83c-61c413403ae2
 duration: 2051
 source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '739'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# Configuration des statistiques sur les ressources avec AEM Assets et les balises
+# Configurer des insights sur les ressources avec AEM Assets et des balises
 
-Dans cette série de vidéos en cinq parties, examinons la configuration et la configuration des statistiques sur les ressources pour le Experience Manager déployé via des balises.
+Dans cette série de vidéos en cinq volets, nous présentons la configuration des insights sur les ressources pour Experience Manager déployé via des balises.
 
 ## Partie 1 : vue d’ensemble des insights sur les ressources {#overview}
 
@@ -81,9 +81,9 @@ Pour la configuration des insights sur les ressources AEM, vous avez besoin des 
 * Secret partagé (peut être obtenu à partir de *Adobe Analytics > Admin > Paramètres de la société > Service Web*).
 * Suite de rapports (veillez à sélectionner la suite de rapports appropriée utilisée pour les rapports de ressources)
 
-## Partie 4 : utilisation de balises pour ajouter l’extension Adobe Analytics {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
+## Partie 4 : utiliser des balises pour l’ajout d’une extension Adobe Analytics {#part-using-launch-by-adobe-for-adding-adobe-analytics-extension}
 
-Ajout de l’extension Adobe Analytics, création de règles de chargement de page et intégration d’AEM avec des balises au compte technique Adobe IMS.
+Ajout de l’extension Adobe Analytics, création de règles de chargement de page et intégration d’AEM à des balises avec le compte technique Adobe IMS.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25946?quality=12&learn=on)
 
@@ -190,7 +190,7 @@ document.querySelectorAll(".cmp-image__image");
 
 Deux extensions de navigateur Google Chrome sont abordées dans la vidéo pour déboguer Analytics. Des extensions similaires sont également disponibles pour d’autres navigateurs.
 
-* [Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 
 ## Partie 5 : tester le suivi Analytics et synchroniser des données d’insight{#analytics-tracking-asset-insights}

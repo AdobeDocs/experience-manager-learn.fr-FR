@@ -1,6 +1,6 @@
 ---
-title: Utilisation des visionneuses Dynamic Media avec Adobe Analytics et des balises
-description: L’extension Visionneuses Dynamic Media pour les balises, ainsi que la version 5.13 des visionneuses Dynamic Media, permettent aux clients de Dynamic Media, Adobe Analytics et des balises d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration de balises.
+title: Utiliser des visionneuses Dynamic Media avec Adobe Analytics et des balises
+description: L’extension visionneuses Dynamic Media pour les balises ainsi que la version 5.13 des visionneuses Dynamic Media permettent aux clientes et clients de Dynamic Media, d’Adobe Analytics et des balises d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration de balises.
 sub-product: Dynamic Media
 feature: Asset Insights
 version: 6.4, 6.5
@@ -11,13 +11,13 @@ doc-type: Feature Video
 exl-id: 9d807f4c-999c-45e6-a9db-6c1776bddda1
 duration: 637
 source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '325'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# Utilisation des visionneuses Dynamic Media avec Adobe Analytics et des balises{#using-dynamic-media-viewers-adobe-analytics-tags}
+# Utiliser des visionneuses Dynamic Media avec Adobe Analytics et des balises{#using-dynamic-media-viewers-adobe-analytics-tags}
 
 Pour les clientes et les clients utilisant Dynamic Media et Adobe Analytics, vous pouvez désormais suivre l’utilisation des visionneuses Dynamic Media sur votre site web à l’aide de l’extension de visionneuse Dynamic Media.
 
@@ -27,11 +27,11 @@ Pour les clientes et les clients utilisant Dynamic Media et Adobe Analytics, v
 >
 > Exécutez Adobe Experience Manager en mode Dynamic Media Scene7 pour cette fonctionnalité. Vous devez également [intégrer des balises à votre instance AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=fr).
 
-Avec l’introduction de l’extension Visionneuse Dynamic Media, Adobe Experience Manager offre désormais une prise en charge avancée des fichiers fournis avec les visionneuses Dynamic Media (5.13), ce qui permet de contrôler plus précisément le suivi des événements lorsqu’une visionneuse Dynamic Media est utilisée sur une page Sites.
+Avec l’introduction de l’extension visionneuse Dynamic Media, Adobe Experience Manager offre désormais une prise en charge avancée des fichiers fournis avec les visionneuses Dynamic Media (5.13), ce qui permet de contrôler plus précisément le suivi des événements lorsqu’une visionneuse Dynamic Media est utilisée sur une page Sites.
 
-Si vous disposez déjà d’AEM Assets et de Sites, vous pouvez intégrer votre propriété de balises à votre instance d’auteur AEM. Une fois l’intégration de lancement associée à votre site web, vous pouvez ajouter un composant Dynamic Media à votre page en activant le suivi des événements pour les visionneuses.
+Si vous disposez déjà d’AEM Assets et de Sites, vous pouvez intégrer votre propriété de balises à votre instance de création d’AEM. Une fois l’intégration de lancement associée à votre site web, vous pouvez ajouter un composant Dynamic Media à votre page en activant le suivi des événements pour les visionneuses.
 
-Pour les clientes et clients utilisant uniquement AEM Assets ou Dynamic Media Classic, il est possible d’obtenir le code incorporé d’une visionneuse et de l’ajouter à la page. Les bibliothèques de script de balises peuvent ensuite être ajoutées manuellement à la page pour le suivi des événements de visionneuse.
+Pour les clientes et clients utilisant uniquement AEM Assets ou Dynamic Media Classic, il est possible d’obtenir le code incorporé d’une visionneuse et de l’ajouter à la page. Les bibliothèques de script de balises peuvent ensuite être ajoutées manuellement à la page pour le suivi des événements de la visionneuse.
 
 Le tableau suivant répertorie les événements de visionneuse Dynamic Media et leurs arguments pris en charge :
 
@@ -166,6 +166,6 @@ Le tableau suivant répertorie les événements de visionneuse Dynamic Media et
 
 ## Ressources supplémentaires{#additional-resources}
 
-* [Intégration d’AEM à des balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=fr)
-* [Exécution d’Adobe Experience Manager en mode Dynamic Media Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=fr)
-* [Intégration des visionneuses Dynamic Media à Adobe Analytics à l’aide de balises](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html?lang=fr)
+* [Intégrer AEM à des balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=fr)
+* [Exécuter Adobe Experience Manager en mode Dynamic Media Scene7](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dms7.html?lang=fr)
+* [Intégrer des visionneuses Dynamic Media à Adobe Analytics à l’aide de balises](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-extension-use.html?lang=fr)

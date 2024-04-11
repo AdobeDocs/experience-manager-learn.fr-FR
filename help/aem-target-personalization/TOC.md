@@ -7,9 +7,9 @@ version: 6.5
 index: y
 jira: KT-2214
 source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '64'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -22,5 +22,5 @@ ht-degree: 84%
 + [Personnalisation des expériences de pages web complètes](./personalization-use-case-2.md)
 + Implémentation {#aem-target-implementation}
    + [Présentation](./implementation.md)
-   + [AEM et Adobe Target à l’aide de balises et d’un Adobe I/O](./using-launch-adobe-io.md)
-   + [Intégration d’AEM et d’Adobe Target à l’aide de services cloud hérités](./using-aem-cloud-services.md)
+   + [AEM et Adobe Target à l’aide de balises et d’Adobe I/O](./using-launch-adobe-io.md)
+   + [AEM et Adobe Target à l’aide de services cloud hérités](./using-aem-cloud-services.md)

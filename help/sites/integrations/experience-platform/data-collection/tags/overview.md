@@ -1,6 +1,6 @@
 ---
-title: Intégration de balises dans Adobe Experience Platform et AEM
-description: Balises, pour la collecte de données Experience Platform, représente la solution de nouvelle génération d’Adobe pour la gestion de balises et est aussi le meilleur moyen de déployer Adobe Analytics, Target, Audience Manager et de nombreuses autres solutions. Obtenez un aperçu des balises dans Adobe Experience Platform et l’intégration recommandée à Adobe Experience Manager.
+title: Intégrer des balises dans Adobe Experience Platform et AEM
+description: Les balises pour la collecte de données Experience Platform constituent la solution de nouvelle génération d’Adobe pour la gestion de balises et constituent aussi le meilleur moyen de déployer Adobe Analytics, Target, Audience Manager et de nombreuses autres solutions. Découvrez une vue d’ensemble des balises dans Adobe Experience Platform et l’intégration recommandée avec Adobe Experience Manager.
 solution: Experience Manager, Data Collection, Experience Platform
 jira: KT-5979
 thumbnail: 39090.jpg
@@ -15,15 +15,15 @@ doc-type: Tutorial
 exl-id: bdae56d8-96e7-4b05-9b8b-3c6c2e998bd8
 duration: 256
 source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '270'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Intégrer Balises pour la collecte de données Experience Platform et AEM {#overview}
 
-Découvrez comment intégrer les balises dans Adobe Experience Platform avec Adobe Experience Manager.
+Découvrez comment intégrer les balises dans Adobe Experience Platform avec Adobe Experience Manager.
 
 Balises représente la nouvelle génération de technologie de gestion des balises d’Adobe Experience Platform. Balises constitue le moyen le plus simple de déployer Adobe Analytics, Target, Audience Manager et de nombreuses autres solutions. Découvrez Balises et l’intégration recommandée avec Adobe Experience Manager.
 
@@ -43,7 +43,7 @@ Les éléments suivants sont requis lors de l’intégration de Balises pour la 
 
 + Dans la collecte de données Adobe Experience Platform, créez une propriété Tag et modifiez-la en _Ajoutant une règle_. Puis _Ajoutez une bibliothèque_, sélectionnez la règle nouvellement ajoutée, approuvez-la et publiez-la.
 + Connecter AEM et Balises à l’aide d’une configuration IMS existante (ou nouvelle)
-+ Dans AEM, créez une configuration de service cloud de balises, puis appliquez-la à un site existant et vérifiez enfin que la propriété Balises et ses bibliothèques sont chargées sur le site Publié ou Auteur.
++ Dans AEM, créez une configuration de services cloud de balises, puis appliquez-la à un site existant et vérifiez que la propriété Balises et ses bibliothèques sont chargées sur le site de publication ou de création.
 
 ## Étapes suivantes
 

@@ -11,13 +11,13 @@ doc-type: Tutorial
 exl-id: 53cafd06-3a0a-4995-947d-179146b89234
 duration: 159
 source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '577'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Personnalisation des expériences de pages web complètes à l’aide d’Adobe Target
+# Personnalisation des expériences de pages web complètes à l’aide d’Adobe Target
 
 Dans le chapitre précédent, nous avons appris à créer une activité basée sur la géolocalisation dans Adobe Target à l’aide de contenu créé en tant que fragments d’expérience et exporté à partir d’AEM en tant qu’offres HTML.
 
@@ -27,7 +27,7 @@ Dans ce chapitre, nous allons explorer la création d’une activité pour redir
 
 Le site WKND a repensé sa page d’accueil et souhaite rediriger les visiteurs et les visiteuses de sa page d’accueil actuelle vers la nouvelle page d’accueil. Vous devez également comprendre comment la nouvelle page d’accueil contribue à améliorer l’engagement des utilisateurs et utilisatrices et le chiffre d’affaires. En tant que personne spécialiste marketing, on vous a confié la tâche de créer une activité pour rediriger les visiteurs et les visiteuses vers la nouvelle page d’accueil. Explorons la page d’accueil du site WKND et apprenons à créer une activité à l’aide d’Adobe Target.
 
-### Utilisateurs impliqués
+### Utilisateurs et utilisatrices impliqués
 
 Pour cet exercice, les utilisateurs et utilisatrices suivants doivent être impliqués et effectuer certaines tâches nécessitant un accès administratif.
 
@@ -42,19 +42,19 @@ Pour cet exercice, les utilisateurs et utilisatrices suivants doivent être impl
 
 * **AEM**
    * [Instances de création et de publication AEM](./implementation.md#getting-aem) s’exécutant sur localhost 4502 et 4503, respectivement.
-   * [AEM intégré à Adobe Target à l’aide de balises](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
+   * [AEM intégré à Adobe Target à l’aide de balises](./using-launch-adobe-io.md#aem-target-using-launch-by-adobe)
 * **Experience Cloud**
    * Accéder à la solution Adobe Experience Cloud de votre organisation - `https://<yourcompany>.experiencecloud.adobe.com`
    * Experience Cloud est fourni avec les solutions suivantes
       * [Adobe Target](https://experiencecloud.adobe.com)
 
-## Activités de l&#39;éditeur de contenu
+## Activités du créateur ou de la créatrice de contenu
 
 1. La personne spécialiste marketing lance la discussion sur la refonte de la page d’accueil WKND avec l’éditeur de contenu AEM et précise les exigences.
    * ***Exigence*** : repenser la page d’accueil du site WKND à l’aide d’une conception basée sur des cartes.
 2. En fonction des exigences, le créateur ou la créatrice de contenu AEM crée ensuite une page d’accueil du site WKND avec une conception basée sur des cartes et publie la nouvelle page d’accueil.
 
-## Activités marketing
+## Activités de la personne spécialisée dans le marketing
 
 1. La personne spécialiste marketing crée une activité de ciblage A/B avec l’offre de redirection comme expérience et un trafic de site web à 100 % affecté à la nouvelle page d’accueil avec un objectif de réussite et des mesures ajoutés.
    1. Dans la fenêtre Adobe Target, accédez à l’onglet **Activités**.

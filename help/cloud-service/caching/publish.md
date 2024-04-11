@@ -13,9 +13,9 @@ thumbnail: KT-13858.jpeg
 exl-id: 1a1accbe-7706-4f9b-bf63-755090d03c4c
 duration: 325
 source-git-commit: baf81bb43a659e49728a05f83e7be394f7fbfb35
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1134'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ La configuration du mode de mise en cache du contenu par le réseau CDN se limit
 
 Le réseau CDN d’AEM as a Cloud Service met en cache uniquement les réponses HTTP, et tous les critères suivants doivent être satisfaits :
 
-+ L’état de réponse HTTP est `2xx` ou `3xx`
++ Le statut de la réponse HTTP est `2xx` ou `3xx`.
 + La méthode de requête HTTP est `GET` ou `HEAD`.
 + Au moins un des en-têtes de réponse HTTP suivants est présent : `Cache-Control`, `Surrogate-Control` ou `Expires`.
 + La réponse HTTP peut être n’importe quel type de contenu, y compris les fichiers HTML, JSON, CSS, JS et binaires.

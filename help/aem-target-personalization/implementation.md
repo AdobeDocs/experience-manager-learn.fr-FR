@@ -11,9 +11,9 @@ doc-type: Tutorial
 exl-id: 54a30cd9-d94a-4de5-82a1-69ab2263980d
 duration: 173
 source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '596'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 86%
 
 Dans cette section, nous allons discuter de la configuration d’Adobe Experience Manager Sites avec Adobe Target pour différents scénarios. La procédure dépend de votre scénario et des exigences de votre organisation.
 
-* **Ajout de la bibliothèque JavaScript Adobe Target (obligatoire pour tous les scénarios)**
-Pour les sites hébergés sur AEM, vous pouvez ajouter des bibliothèques Target à votre site à l’aide de : [balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr). Les balises offrent un moyen simple de déployer et de gérer toutes les balises nécessaires pour offrir des expériences client pertinentes.
+* **Ajouter la bibliothèque JavaScript Adobe Target (obligatoire pour tous les scénarios)**
+Pour les sites hébergés sur AEM, vous pouvez ajouter des bibliothèques Target à votre site à l’aide de [balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr). Les balises offre un moyen simple de déployer et de gérer toutes les balises nécessaires pour offrir des expériences pertinentes à votre clientèle.
 * **Ajouter les services cloud Adobe Target (requis pour le scénario Fragments d’expérience)**
 Pour les clientes et clients AEM qui souhaitent utiliser les offres de fragments d’expérience pour créer une activité dans Adobe Target, vous devez intégrer Adobe Target à AEM à l’aide des services cloud hérités. Cette intégration est requise pour transmettre les fragments d’expérience d’AEM à Target en tant qu’offres HTML/JSON et pour que les offres restent synchronisées avec AEM. *Cette intégration est requise pour la mise en œuvre du scénario 1.*
 
@@ -50,7 +50,7 @@ Pour les clientes et clients AEM qui souhaitent utiliser les offres de fragments
 
 >[!NOTE]
 >
-> Le client doit être configuré avec la collecte de données et l’Adobe I/O depuis [Prise en charge des Adobes](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) ou contactez votre administrateur système.
+> La personne cliente doit être configurée dans Collecte de données et Adobe I/O par le [support Adobe](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html). Contactez l’administration système le cas échéant.
 
 ### Configurer AEM{#set-up-aem}
 
@@ -82,4 +82,4 @@ Mot de passe : **admin**
 10. Après avoir installé les packages sur l’instance de création AEM, sélectionnez chaque package chargé dans le gestionnaire de packages AEM, puis sélectionnez **Plus > Répliquer** pour vous assurer que les packages sont déployés sur l’instance de publication AEM.
 11. À ce stade, vous avez installé avec succès votre site de référence WKND et tous les packages supplémentaires requis pour ce tutoriel.
 
-[CHAPITRE SUIVANT](./using-launch-adobe-io.md): dans le chapitre suivant, vous allez intégrer des balises à AEM.
+[Chapitre suivant](./using-launch-adobe-io.md) : dans le chapitre suivant, vous allez intégrer des balises à AEM.

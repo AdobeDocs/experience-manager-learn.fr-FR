@@ -14,9 +14,9 @@ doc-type: Tutorial
 exl-id: 2bc6cd90-7b23-4dde-bb07-bca0de9fa509
 duration: 278
 source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '260'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Dans cette vidéo, nous présentons trois approches pour utiliser AEM et Target,
 * __Scénario 1 :__ personnalisation à l’aide des offres de fragments d’expérience d’AEM
 
    1. [Ajouter Adobe Target à votre site web AEM](./add-target-launch-extension.md)
-   1. [Déclenchement d’un appel Adobe Target à partir de balises](./load-and-fire-target.md)
+   1. [Déclencher un appel Adobe Target à partir de balises](./load-and-fire-target.md)
    1. [Intégrer le service de création AEM à Adobe Target](./setup-aem-target-cloud-service.md)
    1. [Exportez des fragments d’expérience AEM vers Adobe Target](./export-experience-fragment-target.md)
    1. [Personnaliser une partie d’une page web avec les offres de fragment d’expérience](./create-target-activity.md)
@@ -43,11 +43,11 @@ Dans cette vidéo, nous présentons trois approches pour utiliser AEM et Target,
 * __Scénario 2 :__ personnalisation à l’aide du compositeur d’expérience visuelle (VEC)
 
    1. [Ajouter Adobe Target à votre site web AEM](./add-target-launch-extension.md)
-   1. [Déclenchement d’un appel Adobe Target à partir de balises](./load-and-fire-target.md)
+   1. [Déclencher un appel Adobe Target à partir de balises](./load-and-fire-target.md)
    1. [Personnaliser une partie d’une page web avec le compositeur d’expérience visuelle](./personalization-using-vec.md)
 
 * __Scénario 3 :__ personnalisation des expériences de pages web complètes
 
    1. [Ajouter Adobe Target à votre site web AEM](./add-target-launch-extension.md)
-   1. [Déclenchement d’un appel Adobe Target à partir de balises](./load-and-fire-target.md)
+   1. [Déclencher un appel Adobe Target à partir de balises](./load-and-fire-target.md)
    1. [Personnaliser l’expérience d’une page web complète](./personalization-web-page.md)

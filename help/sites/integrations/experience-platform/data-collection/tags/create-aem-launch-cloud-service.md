@@ -1,6 +1,6 @@
 ---
-title: Création d’une configuration de Cloud Service de balises dans AEM Sites
-description: Découvrez comment créer une configuration de Cloud Service de balises dans AEM.
+title: Créer une configuration du service cloud de balises dans AEM Sites
+description: Découvrez comment créer une configuration du service cloud de balises dans AEM.
 solution: Experience Manager, Data Collection, Experience Platform
 jira: KT-5982
 thumbnail: 38566.jpg
@@ -14,19 +14,19 @@ doc-type: Tutorial
 exl-id: a72ddced-37de-4b62-9e28-fa5b6c8ce5b7
 duration: 139
 source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '495'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# Création d’une configuration de Cloud Service de balises dans AEM {#create-launch-cloud-service}
+# Créer une configuration du service cloud de balises dans AEM {#create-launch-cloud-service}
 
-Découvrez comment créer une configuration de Cloud Service de balises dans Adobe Experience Manager. La configuration du Cloud Service de balises AEM peut alors être appliquée à un site existant et le chargement des bibliothèques de balises peut être observé dans les environnements de création et de publication.
+Découvrez comment créer une configuration du service cloud de balises dans Adobe Experience Manager. La configuration du service cloud de balises d’AEM peut ensuite être appliquée à un site existant et le chargement des bibliothèques de balises peut être consulté dans les environnements de création et de publication.
 
-## Création du service cloud de balises
+## Créer un service cloud de balises
 
-Créez la configuration du service cloud de balises à l’aide des étapes ci-dessous.
+Créez la configuration du service cloud de balises en suivant les étapes ci-dessous.
 
 1. Dans le menu **Outils**, sélectionnez **Services cloud** et cliquez sur **Configurations Adobe Launch**.
 1. Sélectionnez le dossier de configuration de votre site ou sélectionnez **WKND Site** (si vous utilisez le projet de guide WKND), puis cliquez sur **Créer**.
@@ -34,11 +34,11 @@ Créez la configuration du service cloud de balises à l’aide des étapes ci-d
 1. Dans l’onglet _Évaluation_ et _Production_, conservez les configurations par défaut. Toutefois, il est recommandé de vérifier et de modifier les configurations pour la configuration de production réelle, en particulier le bouton (bascule) _Chargement asynchrone de la bibliothèque_ suivant vos besoins de performances et d’optimisation. Notez également que la valeur _URI de bibliothèque_ est différente dans l’environnement d’évaluation et de production.
 1. Enfin, cliquez sur **Créer** pour terminer les services cloud de balises.
 
-   ![Configuration des Cloud Service de balises](assets/launch-cloud-services-config.png)
+   ![Configuration des services cloud de balises](assets/launch-cloud-services-config.png)
 
-## Application du service cloud de balises au site
+## Appliquer le service cloud de balises au site
 
-Pour charger la propriété Tag et ses bibliothèques sur le site AEM, la configuration du service cloud de balises est appliquée au site. À l’étape précédente, la configuration du service cloud est créée sous le dossier du nom du site (WKND Site). Elle doit donc être appliquée automatiquement. Vérifiez-la.
+Pour charger les propriétés de balise et ses bibliothèques sur le site AEM, la configuration du service cloud de balises est appliquée au site. À l’étape précédente, la configuration du service cloud est créée sous le dossier du nom du site (WKND Site). Elle doit donc être appliquée automatiquement. Vérifiez-la.
 
 1. Dans le menu **Navigation**, sélectionnez l’icône **Sites**.
 
@@ -52,7 +52,7 @@ Il est maintenant temps de vérifier que la propriété de la balise et ses bibl
 
 1. Ouvrez votre page de site préférée en mode **Afficher comme publié**. Dans la console du navigateur, le message du journal doit s’afficher. Il s’agit du même message provenant de l’extrait de code JavaScript de la règle de propriété de la balise qui est déclenché lorsque l’événement _Bibliothèque chargée (Haut de page)_ est déclenché.
 
-1. Pour vérifier lors de la publication, commencez par publier votre **service cloud de balises** et ouvrez la page du site sur l’instance de publication.
+1. Pour vérifier sur l’instance de publication, commencez par publier votre configuration du **service cloud de balises** et ouvrez la page du site sur l’instance de publication.
 
    ![Propriété de la balise sur les pages de création et de publication.](assets/tag-property-on-author-publish-pages.png)
 

@@ -6,9 +6,9 @@ version: 6.4, 6.5, Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
 source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '175'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -61,8 +61,8 @@ Découvrez AEM Assets et comment l’utiliser pour atteindre les objectifs comm
    </a>
    <div>
       <a href="./advanced/asset-insights-launch-tutorial.md">
-      <strong>Utilisation de AEM Statistiques sur les ressources avec des balises</strong>
-      </a>
+<strong>Utiliser les insights AEM Assets avec des balises</strong>
+</a>
    </div>
    <p>
       <em>Obtenez des informations sur l’utilisation des ressources.</em>

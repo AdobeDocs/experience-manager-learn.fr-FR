@@ -12,9 +12,9 @@ exl-id: 3e1d86ab-e0c4-45d4-b998-75a44a7e4a3f
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 54
 source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -32,8 +32,8 @@ Vous pouvez personnaliser une boîte de réception Experience Manager en modifi
 
 ## Personnaliser des colonnes
 
-[Ouvrir AEM boîte de réception](http://localhost:4502/aem/inbox)
-Ouvrez le contrôle d’administration en cliquant sur le _Mode Liste_ puis en sélectionnant _Contrôle d’administration_ comme illustré dans la capture d’écran ci-dessous
+[Ouvrir la boîte de réception AEM](http://localhost:4502/aem/inbox)
+Ouvrez le contrôle d’administration en cliquant sur l’icône _vue Liste_, puis en sélectionnant _Contrôle d’administration_ comme illustré dans la capture d’écran ci-dessous.
 
 ![admin-control](assets/open-customization.png)
 

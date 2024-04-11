@@ -15,9 +15,9 @@ badgeVersions: label="d’AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
 duration: 218
 source-git-commit: adf3fe30474bcfe5fc1a1e2a8a3d49060067726d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '682'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -95,9 +95,9 @@ L’intégration d’Adobe Commerce à AEM as a Cloud Service permet aux ma
 + [Guide d’utilisation d’AEM Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=fr)
 
 
-## Balises dans Adobe Experience Platform
+## Balises dans Adobe Experience Platform
 
-Les balises dans Adobe Experience Platform s’intègrent de manière transparente à AEM, offrant ainsi un moyen simple de déployer et de gérer [analytics](#adobe-analytics), [ciblage](#adobe-target), les balises marketing et publicitaires nécessaires pour impliquer les expériences client.
+Les balises dans Adobe Experience Platform s’intègrent de manière transparente à AEM et constituent un moyen simple de déployer et de gérer les balises d’[analyse](#adobe-analytics), de [ciblage](#adobe-target), marketing et publicitaires indispensables à toute expérience client de grand cru.
 
 ### AEM Sites
 

@@ -12,9 +12,9 @@ last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
 duration: 3592
 source-git-commit: 23ae098a1fcb2e6c47fee30f6f45b10e7ff97824
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1301'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -199,15 +199,15 @@ Le plug-in Adobe I/O Cloud Manager permet à l’interface de ligne de command
 Pour que l’interface de ligne de commande d’Adobe I/O communique avec Cloud Manager, une [intégration de Cloud Manager doit être créée dans la console Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager), et les informations d’identification doivent être obtenues pour une authentification réussie.
 
 1. Connectez-vous à [console.adobe.io](https://console.adobe.io).
-1. Assurez-vous que votre organisation qui comprend le produit Cloud Manager auquel se connecter est active dans le sélecteur d’organisation Adobe.
+1. Assurez-vous que votre organisation qui comprend le produit Cloud Manager auquel se connecter est active dans le sélecteur d’organisations Adobe.
 1. Ouvrez un [programme Adobe I/O](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/projects.md) existant ou créez-en un.
-   + Les projets Adobe I/O Console sont simplement des regroupements organisationnels d’intégrations, de créer ou d’utiliser et de projets existants en fonction de la manière dont vous souhaitez gérer vos intégrations.
+   + Les projets de console Adobe I/O sont simplement des regroupements organisationnels d’intégrations. Créez ou utilisez un projet existant en fonction de la manière dont vous souhaitez gérer vos intégrations.
    + Si vous créez un projet, sélectionnez « Projet vide », le cas échéant (au lieu de « Créer à partir d’un modèle »).
    + Les programmes de console Adobe I/O sont des concepts différents des programmes Cloud Manager.
-1. Création d’une intégration d’API Cloud Manager
-   + Sélectionnez le type d’authentification obsolète &quot;Compte de service (JWT)&quot; (OAuth n’est pour l’instant pas pris en charge pour l’interface de ligne de commande).
+1. Créer une intégration d’API Cloud Manager
+   + Sélectionnez le type d’authentification obsolète « Compte de service (JWT) » (OAuth n’est pour l’instant pas pris en charge pour l’interface de ligne de commande).
    + Créez ou chargez des clés.
-   + Sélectionnez le profil de produit &quot;Développeur - Cloud Service&quot;
+   + Sélectionnez le profil de produit « Développeur - Cloud Service ».
 1. Obtenez les informations d’identification du compte de service (JWT) nécessaires pour remplir le fichier [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) de l’interface de ligne de commande d’Adobe I/O.
 
    ```json
