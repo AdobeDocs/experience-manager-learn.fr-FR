@@ -12,10 +12,10 @@ exl-id: 52dd8a3f-6461-4acb-87ca-5dd9567d15a6
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: KT-781.jpg
 duration: 431
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '437'
-ht-degree: 100%
+source-git-commit: c692ad17a27f244764e3f7c63fc49f54ae4e97e6
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 95%
 
 ---
 
@@ -40,11 +40,7 @@ Adobe Experience Manager offre une prise en charge des instances AEM avec Admi
 
 Il est recommandé d’éviter d’appliquer des autorisations et des accès au niveau de l’utilisateur ou de l’utilisatrice dans l’Admin Console et dans Adobe Experience Manager.
 
-Les utilisateurs et les utilisatrices de l’Admin Console doivent se voir accorder l’accès via des groupes d’utilisateurs et d’utilisatrices au niveau du contexte du produit. Les groupes d’utilisateurs et d’utilisatrices sont généralement mieux exprimés par rôle logique au sein de l’organisation afin de promouvoir la réutilisation des groupes dans les produits Adobe Experience Cloud.
-
->[!NOTE]
->
-> Si vous utilisez AEM as a Cloud Service, affectez des utilisateurs et des utilisatrices de l’Admin Console directement aux profils de produit. Les autorisations transitoires entre les utilisateurs et les utilisatrices Admin Console et les profils de produit via les groupes Admin Console ne sont pas prises en charge pour AEM as a Cloud Service.
+Dans Admin Console, les utilisateurs doivent se voir accorder l’accès via des groupes d’utilisateurs au niveau du contexte du produit. Les groupes d’utilisateurs et d’utilisatrices sont généralement mieux exprimés par rôle logique au sein de l’organisation afin de promouvoir la réutilisation des groupes dans les produits Adobe Experience Cloud.
 
 ### Appliquer des autorisations dans Adobe Experience Manager
 
