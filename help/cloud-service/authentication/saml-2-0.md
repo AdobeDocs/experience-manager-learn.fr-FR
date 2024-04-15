@@ -11,9 +11,9 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2430
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '3137'
+source-git-commit: 1f9736acbbccd09cb1b32c247860827b13e85129
+workflow-type: tm+mt
+source-wordcount: '3060'
 ht-degree: 100%
 
 ---
@@ -441,15 +441,6 @@ Une fois l’authentification au fournisseur d’identité réussie, le fourniss
 ```
 
 Si la réécriture de l’URL sur le serveur web Apache est configurée (`dispatcher/src/conf.d/rewrites/rewrite.rules`), assurez-vous que les requêtes vers les points d’entrée `.../saml_login` ne sont pas accidentellement tronquées.
-
-## Activer la synchronisation des données et encapsuler les jetons
-
-Une fois que le flux d’authentification SAML crée un utilisateur ou une utilisatrice dans l’instance de publication AEM, le nœud utilisateur AEM devient authentifiable au niveau du service de publication d’AEM.
-Cela nécessite que la [synchronisation des données](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html?lang=fr#data-synchronization) et les [jetons encapsulés](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier.html?lang=fr#sticky-sessions-and-encapsulated-tokens) soient activés par l’assistance Adobe sur le service de publication AEM.
-
-Envoyez une demande au service clientèle d’Adobe (via [Admin Console](https://adminconsole.adobe.com) > Assistance) exigeant :
-
-> que la synchronisation des données et les jetons encapsulés soient activés sur le service de publication d’AEM pour le programme X et l’environnement Y.
 
 ## Déployer la configuration SAML
 
