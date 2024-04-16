@@ -8,9 +8,10 @@ role: Developer
 level: Experienced
 jira: KT-15286
 last-substantial-update: 2024-04-05T00:00:00Z
-source-git-commit: 73c15a195c438dd7a07142bba719c6f820bf298a
+exl-id: 099aaeaf-2514-4459-81a7-2843baa1c981
+source-git-commit: 537ed10fc056348266472f3e4a59cbcbf1afdca1
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 # Utilisation de l’API GuideBridge pour POST des données de formulaire
 
 L’option &quot;Enregistrer et reprendre&quot; d’un formulaire implique de permettre aux utilisateurs d’enregistrer la progression du remplissage du formulaire et de le reprendre ultérieurement.
-Les étapes suivantes ont été suivies pour utiliser l’API de géolocalisation dans Forms adaptatif. Pour réaliser ce cas d’utilisation, nous devons accéder aux données de formulaire et les envoyer à l’aide de l’API GuideBridge vers le point de terminaison REST pour le stockage et la récupération.
+Pour réaliser ce cas d’utilisation, nous devons accéder aux données de formulaire et les envoyer à l’aide de l’API GuideBridge vers le point de terminaison REST pour le stockage et la récupération.
 
 Les données de formulaire sont enregistrées sur l’événement click d’un bouton à l’aide de l’éditeur de règles.
 ![éditeur de règles](assets/rule-editor.png)
@@ -32,33 +33,35 @@ La fonction JavaScript suivante a été écrite pour envoyer les données au poi
 * @param {string} endpoint in Stringformat
 * @return {string} 
  */
-
-function submitFormDataAndAttachments(endpoint) {
-
+ 
+ function submitFormDataAndAttachments(endpoint) {
     guideBridge.getFormDataObject({
         success: function(resultObj) {
-            afFormData = resultObj.data.data;
-            var formData = new FormData();
+            const afFormData = resultObj.data.data;
+            const formData = new FormData();
             formData.append("dataXml", afFormData);
-            for (i = 0; i < resultObj.data.attachments.length; i++) {
-                var attachment = resultObj.data.attachments[i];
+            resultObj.data.attachments.forEach(attachment => {
                 console.log(attachment.name);
                 formData.append(attachment.name, attachment.data);
-            }
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
+            });
+            fetch(endpoint, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
                     console.log("successfully saved");
-                    var fld = guideBridge.resolveNode("$form.confirmation");
-                    return " Form data was saved successfully";
-
+                    const fld = guideBridge.resolveNode("$form.confirmation");
+                    return "Form data was saved successfully";
+                } else {
+                    throw new Error('Failed to save form data');
                 }
-            };
-            xhttp.open('POST', endpoint)
-            xhttp.send(formData);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
         }
     });
-
 }
 ```
 
