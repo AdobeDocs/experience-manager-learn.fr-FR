@@ -1,5 +1,5 @@
 ---
-user-guide-title: Vidéos et tutoriels d’AEM Assets
+user-guide-title: Vidéos et tutoriels d’AEM Assets
 user-guide-description: Ensemble de vidéos et de tutoriels pour Adobe Experience Manager Assets.
 breadcrumb-title: Tutoriels sur AEM Assets
 solution: Experience Manager, Experience Manager Assets
@@ -8,7 +8,7 @@ version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
 source-git-commit: 7d84d7ec2b2af34ad8522abaae9757c331613cd5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
 ht-degree: 100%
 
@@ -74,7 +74,7 @@ ht-degree: 100%
 
 + Partage et distribution{#sharing}
    + [Télécharger des ressources](./sharing/download.md)
-   + [Exporter les ressources](./sharing/export.md)
+   + [Exporter des ressources](./sharing/export.md)
    + [Publier des ressources](./sharing/publish.md)
 
    + Brand Portal{#brand-portal}

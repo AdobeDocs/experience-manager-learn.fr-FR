@@ -10,9 +10,9 @@ doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
 duration: 809
 source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2588'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -126,7 +126,7 @@ Vous trouverez ci-dessous un tableau des principales fonctionnalités de base pr
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/indexing-via-the-oak-run-jar.html?lang=fr">Prise en charge de l’index oak-run.jar</a> :</strong> amélioration de la réindexation, de la collecte de statistiques et de la vérification de cohérence des index Oak.</td>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/indexing-via-the-oak-run-jar.html?lang=fr">Prise en charge de l’index oak-run.jar</a> :</strong> amélioration de la réindexation, de la collecte de statistiques et de la vérification de cohérence des index Oak.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -354,7 +354,7 @@ Vous trouverez ci-dessous un tableau des principales fonctionnalités de sécuri
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/ldap-config.html" target="_blank">LDAP comme configuration OSGi</a><br>
+        <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ldap-config.html?lang=fr" target="_blank">LDAP comme configuration OSGi</a><br>
 </strong>Simplifie la gestion et les mises à jour de l’authentification LDAP.</td>
         <td></td>
         <td>✔</td>
@@ -376,7 +376,7 @@ Vous trouverez ci-dessous un tableau des principales fonctionnalités de sécuri
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/user-group-ac-admin.html" target="_blank">Améliorations des groupes d’utilisateurs ou utilisatrices fermés</a><br>
+        <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/user-group-ac-admin.html?lang=fr" target="_blank">Améliorations des groupes d’utilisateurs ou utilisatrices fermés</a><br>
 </strong>L’implémentation du groupe d’utilisateurs ou utilisatrices fermé a été réécrite afin de résoudre les problèmes de performances et d’évolutivité.</td>
         <td></td>
         <td></td>
@@ -387,7 +387,7 @@ Vous trouverez ci-dessous un tableau des principales fonctionnalités de sécuri
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/platform-repository/using/ssl-wizard-technical-video-use.html" target="_blank">Assistant SSL</a></strong>
+        <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=fr" target="_blank">Assistant SSL</a></strong>
 <br>Interface utilisateur pour simplifier la configuration et la gestion du protocole SSL.</td>
         <td> </td>
         <td> </td>
@@ -398,7 +398,7 @@ Vous trouverez ci-dessous un tableau des principales fonctionnalités de sécuri
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/encapsulated-token.html" target="_blank">Prise en charge des jetons encapsulés</a></strong>
+        <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encapsulated-token.html?lang=fr" target="_blank">Prise en charge des jetons encapsulés</a></strong>
 <br>Elle n’est plus nécessaire pour que les sessions « persistantes » prennent en charge l’authentification horizontale entre les instances de publication.</td>
         <td> </td>
         <td> </td>
@@ -409,7 +409,7 @@ Vous trouverez ci-dessous un tableau des principales fonctionnalités de sécuri
         <td>✔</td>
     </tr>
     <tr>
-        <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Prise en charge de l’authentification Adobe IMS</a><br>
+        <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/ims-config-and-admin-console.html" target="_blank">Prise en charge de l’authentification Adobe IMS</a><br>
 </strong>Exclusive à Adobe Managed Services (AMS) pour gérer de manière centralisée l’accès aux instances de création AEM via Adobe IMS (Identity Management System).</td>
         <td> </td>
         <td> </td>
@@ -426,7 +426,7 @@ Vous trouverez ci-dessous un tableau des principales fonctionnalités de sécuri
 
 Vous trouverez ci-dessous une matrice des principales fonctionnalités de Sites proposées par AEM. Certaines fonctionnalités ont été introduites dans des versions antérieures et bénéficient d’améliorations à chaque nouvelle version.
 
-+ [Notes de mise à jour d’AEM Sites](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/sites.html)
++ [Notes de mise à jour d’AEM Sites](https://helpx.adobe.com/jp/experience-manager/6-5/release-notes/sites.html?lang=fr)
 
 ***✔<sup>+</sup> : améliorations importantes de la fonctionnalité dans cette version.***
 
@@ -674,7 +674,7 @@ les forums, les commentaires sous forme de threads, les calendriers d’événem
 
 Vous trouverez ci-dessous un tableau avec les principales fonctionnalités d’Assets proposées par AEM. Certaines fonctionnalités ont été introduites dans des versions antérieures et bénéficient d’améliorations à chaque nouvelle version.
 
-+ [Notes de mise à jour d’AEM Assets](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/assets.html)
++ [Notes de mise à jour d’AEM Assets](https://helpx.adobe.com/experience-manager/6-5/release-notes/assets.html?lang=fr)
 
 ***✔ : indique que des améliorations importantes ont été apportées à la fonctionnalité dans cette version.***
 
@@ -717,8 +717,8 @@ modèles de métadonnées, éditeur de schéma de métadonnées et modification 
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/task-content.html" target="_blank">Tâche</a> et gestion des workflows :</strong>
-            Workflows et tâches préconfigurés pour la révision et l’approbation des ressources numériques exploitant AEM projets.</td>
+            <td><strong>Gestion des <a href="https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/task-content.html?lang=fr" target="_blank">tâches</a> et des workflows</strong> :
+ tâches et workflows préconfigurés pour la révision et l’approbation des ressources numériques exploitant les projets AEM.</td>
             <td> </td>
             <td>✔</td>
             <td>✔</td>
@@ -739,7 +739,7 @@ amélioration de la prise en charge de l’ingestion, du chargement et du stocka
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/mac-api-assets.html" target="_blank">API HTTP de ressources</a> :</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=fr" target="_blank">API HTTP de ressources</a> :</strong>
 utilisez la programmation pour interagir avec des ressources via HTTP et JSON.</td>
             <td> </td>
             <td> </td>
@@ -750,7 +750,7 @@ utilisez la programmation pour interagir avec des ressources via HTTP et JSON.</
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/link-sharing.html" target="_blank">Partage de liens</a> :</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=fr" target="_blank">Partage de liens</a> :</strong>
 partage ad hoc simple de ressources numériques sans connexion.</td>
             <td> </td>
             <td> </td>
@@ -772,7 +772,7 @@ solution SAAS du service cloud pour un partage et une distribution transparents 
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/use-assets-across-connected-assets-instances.html" target="_blank">Ressources connectées</a>:</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=fr" target="_blank">Ressources connectées</a>:</strong>
 les instances AEM Sites peuvent facilement accéder aux ressources d’une autre instance AEM Assets et les utiliser.</td>
             <td> </td>
             <td> </td>
@@ -1054,7 +1054,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités du module
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/fr/aem-forms/6-5/whats-new.html#EnhancedintegrationwithAdobeSign" target="_blank">Intégration d’Acrobat Sign</a> :</strong>
+            <td><strong><a href="https://helpx.adobe.com/jp/aem-forms/6-5/whats-new.html?lang=fr" target="_blank">Intégration d’Acrobat Sign</a> :</strong>
             Autorisez le déploiement des scénarios de signature d’Acrobat Sign basés sur les formulaires intégrés.</td>
             <td> </td>
             <td> </td>
@@ -1100,7 +1100,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités du module
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/home.html?lang=fr&amp;topic=%2Fexperience-manager%2F6-5%2Fforms%2Fmorehelp%2Fintegrations.ug.js" target="_blank">Intégration à Marketing Cloud</a> :</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/forms/user-guide.html?topic=/experience-manager/6-5/forms/morehelp/integrations.ug.js" target="_blank">Intégration à Marketing Cloud</a> :</strong>
  Intégration à Adobe Analytics et Adobe Target pour améliorer et mesurer les expériences client.</td>
             <td> </td>
             <td> </td>

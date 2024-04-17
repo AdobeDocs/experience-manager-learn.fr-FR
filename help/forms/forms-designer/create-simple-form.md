@@ -13,19 +13,19 @@ jira: KT-15053
 thumbnail: 3427620.jpeg
 exl-id: ac482951-9941-4c14-95b2-29d274fa610e
 source-git-commit: 73c15a195c438dd7a07142bba719c6f820bf298a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
 # Créer un formulaire simple à l’aide d’AEM Forms Designer
 
-Partie 1 - Ajout de titres, d’images, de champs de texte et de champs de date
+Partie 1 : ajouter des titres, des images, des champs de texte et des champs de date
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427620/?learn=on)
 
-Partie 2 - Ajout et création d’objets personnalisés et de fragments de formulaire
+Partie 2 : ajouter et créer des objets personnalisés et des fragments de formulaire
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427621/?learn=on)
 

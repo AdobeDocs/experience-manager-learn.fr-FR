@@ -10,15 +10,15 @@ exl-id: 36c38cb6-6f6a-4328-abf5-7a30059b66ce
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 81
 source-git-commit: 0f853040911ad92aea0ebac57011e659d7f0b7c0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Utiliser les rapports de transaction dans AEM Forms{#using-transaction-reporting-in-aem-forms}
 
-La fonctionnalité Rapports de transaction pour capturer le nombre d’envois de formulaires, le rendu des documents à l’aide de services de document et le rendu des communications interactives (canaux web et d’impression) a été introduite avec AEM Forms 6.4.1. Cette fonctionnalité a été introduite avec la pile OSGi AEM Forms AEM Forms 6.4.1 et la pile JEE AEM Forms 6.5.20.
+La création de rapports de transaction pour capturer le nombre d’envois de formulaires, le rendu des documents à l’aide des services de document et le rendu des communications interactives (canaux web et d’impression) ont été introduits avec AEM Forms 6.4.1. Cette fonctionnalité est actuellement disponible avec AEM Forms 6.4.1 pour la pile OSGi et 6.5.20 pour la pile JEE.
 
 ## Activer les rapports de transaction {#enabling-transaction-reporting}
 
@@ -49,4 +49,4 @@ Les actions telles que l’envoi d’un formulaire de PDF, l’utilisation de l�
 
 Si vous affichez le rapport de transaction sur l’instance de création, assurez-vous que la réplication inverse est configurée sur toutes les instances de publication.
 
-Pour en savoir plus sur les rapports de transaction, [cliquez ici](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html).
+Pour en savoir plus sur les rapports de transaction, [cliquez ici](https://helpx.adobe.com/fr/experience-manager/6-4/forms/using/transaction-reports-overview.html).

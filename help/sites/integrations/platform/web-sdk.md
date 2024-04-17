@@ -15,9 +15,9 @@ badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
 duration: 1360
 source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1229'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -180,7 +180,7 @@ Après avoir lié la propriété de balise, le site WKND peut charger la bibliot
 
 ### Vérifier le chargement de la propriété de balise sur WKND
 
-Utilisation d’Adobe Experience Platform Debugger [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) , vérifiez si la propriété de balise se charge sur les pages WKND. Vous pouvez vérifier :
+À l’aide de l’extension [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) d’Adobe Experience Platform Debugger, vérifiez si la propriété de balise se charge sur les pages WKND. Vous pouvez vérifier :
 
 + Les détails de propriété de balise tels que l’extension, la version, le nom, etc.
 + La version de la bibliothèque SDK web de Platform, l’ID de train de données.

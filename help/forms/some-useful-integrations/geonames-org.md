@@ -11,9 +11,9 @@ exl-id: f1f2cacc-9ec4-46d6-a6af-dac3f663de78
 last-substantial-update: 2021-02-07T00:00:00Z
 duration: 218
 source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '610'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -71,8 +71,7 @@ Créez un formulaire adaptatif avec 2 listes déroulantes. Une liste pour répe
 
 ### Renseigner la liste déroulante Pays
 
-La liste des pays est renseignée lors de la première initialisation du formulaire. La capture d’écran suivante montre l’éditeur de règles configuré pour renseigner les options de la liste déroulante des pays. Pour que cela fonctionne, vous devrez fournir votre nom d’utilisateur ou d’utilisatrice avec le compte Geonames.
-![get-countries](assets/get-countries-rule-editor.png)
+La liste des pays est renseignée lors de la première initialisation du formulaire. La capture d’écran suivante montre l’éditeur de règles configuré pour renseigner les options de la liste déroulante des pays. Pour que cela fonctionne, vous devrez fournir votre nom d’utilisateur ou d’utilisatrice avec le compte Geonames. ![get-countries](assets/get-countries-rule-editor.png)
 
 #### Renseigner la liste déroulante État/Province
 

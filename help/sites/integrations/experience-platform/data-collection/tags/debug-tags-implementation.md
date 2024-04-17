@@ -14,9 +14,9 @@ doc-type: Tutorial
 exl-id: 647447ca-3c29-4efe-bb3a-d3f53a936a2a
 duration: 279
 source-git-commit: 970093bb54046fee49e2ac209f1588e70582ab67
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '266'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Pour activer le débogage côté client, appelez la méthode `setDebug(true)` su
 
 ## Débogage via Adobe Experience Platform Debugger
 
-Adobe fournit un Adobe Experience Platform Debugger [Extension Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) pour déboguer, comprendre et obtenir des informations sur l’intégration.
+Adobe fournit une [extension Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Adobe Experience Platform Debugger pour déboguer, comprendre et obtenir des informations sur l’intégration.
 
 1. Ouvrez l’extension Adobe Experience Platform Debugger et ouvrez la page du site sur l’instance de publication.
 

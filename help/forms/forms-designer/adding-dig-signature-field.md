@@ -13,13 +13,13 @@ jira: KT-15056
 thumbnail: 3427623.jpeg
 exl-id: 9110589e-a325-479f-b89b-a13e6bdde91d
 source-git-commit: 73c15a195c438dd7a07142bba719c6f820bf298a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '33'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Ajout d’un champ de signature numérique
+# Ajouter un champ de signature numérique
 
 Une courte vidéo qui décrit l’ajout de signatures numériques à AEM Forms.
 

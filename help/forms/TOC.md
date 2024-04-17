@@ -9,9 +9,9 @@ sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
 source-git-commit: 73c15a195c438dd7a07142bba719c6f820bf298a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2044'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -106,8 +106,8 @@ ht-degree: 99%
    + [Modèle de données de formulaire avec Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Ajout dynamique d’éléments au composant Choix](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + Formulaires basés sur les composants principaux{#core-component-based-forms}
-   + [Accès aux données de formulaire à l’aide de l’API GuideBridge](core-components/submit-data-using-guidebridge-api.md)
-+ Sélection et assemblage du contenu du dossier DAM{#select-dam-folder-content}
+   + [Accéder aux données de formulaire à l’aide de l’API GuideBridge](core-components/submit-data-using-guidebridge-api.md)
++ Sélectionner et assembler le contenu du dossier DAM{#select-dam-folder-content}
    + [1. Présentation](display-and-assemble-dam-folder-contents/introduction.md)
    + [2. Renseigner le groupe de choix](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
    + [3. Assembler les ressources sélectionnées](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)

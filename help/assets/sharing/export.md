@@ -1,6 +1,6 @@
 ---
-title: Exportation de ressources
-description: Découvrez comment exporter et télécharger des ressources en bloc sur votre ordinateur local.
+title: Exporter des ressources
+description: Découvrez comment exporter et télécharger en masse des ressources sur votre ordinateur local.
 feature: Asset Management
 version: Cloud Service
 topic: Content Management
@@ -10,29 +10,29 @@ last-substantial-update: 2024-04-08T00:00:00Z
 doc-type: Tutorial
 jira: KT-15313
 thumbnail: KT-15313.jpeg
-source-git-commit: 681263a2f4008980fc3119e88d34b73da23eb260
-workflow-type: tm+mt
+exl-id: d04c3316-6f8f-4fd1-9df1-3fe09d44f735
+source-git-commit: d574b0080d12f59d250685f62fc426dfff3adb04
+workflow-type: ht
 source-wordcount: '517'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Exporter des ressources
 
-# Exportation de ressources
+Découvrez comment exporter des ressources vers votre ordinateur local à l’aide d’un script Node.js personnalisable. Ce script d’export fournit un exemple de téléchargement de ressources par programmation à partir d’AEM à l’aide des [API HTTP AEM Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets), en se concentrant spécifiquement sur les rendus originaux pour garantir la meilleure qualité. Il est conçu pour répliquer la structure de dossiers d’AEM Assets sur votre disque local, ce qui facilite la sauvegarde ou la migration des ressources.
 
-Découvrez comment exporter des ressources vers votre ordinateur local à l’aide d’un script Node.js personnalisable. Ce script d’exportation fournit un exemple de téléchargement par programmation de ressources à partir d’AEM à l’aide de [API HTTP AEM ASSETS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets)en se concentrant spécifiquement sur les rendus originaux pour garantir une qualité optimale. Il est conçu pour répliquer la structure de dossiers d’AEM Assets sur votre lecteur local, ce qui facilite la sauvegarde ou la migration des ressources.
+Le script télécharge uniquement les rendus originaux de la ressource, sans métadonnées associées, sauf si ces métadonnées ont été incorporées comme XMP dans la ressource. Cela signifie que les informations descriptives, les catégories ou les balises stockées dans AEM, mais non intégrées dans les fichiers de ressources ne sont pas incluses dans le téléchargement. D’autres rendus peuvent également être téléchargés en modifiant le script afin de les inclure. Assurez-vous que vous disposez de suffisamment d’espace pour stocker les ressources exportées.
 
-Le script télécharge uniquement les rendus originaux de la ressource, sans métadonnées associées, sauf si ces métadonnées ont été incorporées dans la ressource en tant que XMP. Cela signifie que les informations descriptives, les catégorisations ou les balises stockées dans AEM mais non intégrées aux fichiers de ressources ne sont pas incluses dans le téléchargement. D’autres rendus peuvent également être téléchargés en modifiant le script pour les inclure. Vérifiez que vous disposez de suffisamment d’espace pour stocker les ressources exportées.
+Le script est généralement exécuté par l’instance de création AEM, mais peut également être exécuté par l’instance de publication, à condition que les points d’entrée de l’API HTTP AEM Assets et les rendus de ressources soient accessibles via le Dispatcher.
 
-Le script est généralement exécuté sur l’instance de création AEM, mais peut également être exécuté sur l’instance de publication AEM, à condition que les points d’entrée de l’API HTTP AEM Assets et les rendus de ressources soient accessibles via le Dispatcher.
+Avant d’exécuter le script, vous devez le configurer avec l’URL de votre instance AEM, les informations d’identification de la personne (jeton d’accès) et le chemin d’accès au dossier que vous souhaitez exporter.
 
-Avant d’exécuter le script, vous devez le configurer avec l’URL de votre instance AEM, les informations d’identification de l’utilisateur (jeton d’accès) et le chemin d’accès au dossier que vous souhaitez exporter.
+## Exporter le script
 
-## Script d’export
+Le script, écrit en tant que module JavaScript, fait partie d’un projet Node.js, car il dépend de `node-fetch`. Vous pouvez [télécharger le projet sous la forme d’un fichier zip](./assets/export/export-aem-assets-script.zip) ou copier le script ci-dessous dans un projet Node.js vide de type `module`, puis exécuter `npm install node-fetch` pour installer la dépendance.
 
-Le script, écrit en tant que module JavaScript, fait partie d’un projet Node.js, car il possède une dépendance sur `node-fetch`. Vous pouvez [téléchargez le projet sous la forme d’un fichier zip](./assets/export/export-aem-assets-script.zip)ou copiez le script ci-dessous dans un projet Node.js vide de type . `module`, et exécuter `npm install node-fetch` pour installer la dépendance.
-
-Ce script décrit l’arborescence de dossiers AEM Assets, en téléchargeant des ressources et des dossiers vers un dossier local sur votre ordinateur. Il utilise la variable [API HTTP AEM ASSETS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) pour récupérer les données de dossier et de ressource, et télécharge les rendus originaux des ressources.
+Ce script décrit l’arborescence de dossiers AEM Assets, en téléchargeant les ressources et les dossiers vers un dossier local de votre ordinateur. Il utilise l’[API HTTP AEM ASSETS](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) pour récupérer les données de dossier et de ressource, puis télécharge les rendus originaux des ressources.
 
 ```javascript
 // export-assets.js
@@ -238,11 +238,11 @@ await downloadAssets({
 console.timeEnd('Download AEM assets');
 ```
 
-## Configuration de l’export
+## Configurer l’export
 
 Une fois le script téléchargé, mettez à jour les variables de configuration au bas du script.
 
-Le `AEM_ACCESS_TOKEN` peut être obtenu en suivant les étapes de la section [Authentification basée sur les jetons à AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview) Tutoriel. Souvent, le jeton de développement de 24 heures est suffisant, tant que l’exportation prend moins de 24 heures et que l’utilisateur qui génère le jeton dispose d’un accès en lecture aux ressources à exporter.
+Le `AEM_ACCESS_TOKEN` peut être obtenu en suivant les étapes du tutoriel [Authentification basée sur les jetons à AEM as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview). Le jeton de développement de 24 heures est souvent suffisant, tant que l’export prend moins de 24 heures et que la personne générant le jeton dispose d’un accès en lecture aux ressources à exporter.
 
 ```javascript
 ...
@@ -265,11 +265,11 @@ const LOCAL_DOWNLOAD_FOLDER = './export-assets';
 const MAX_CONCURRENT_DOWNLOADS = 10;
 ```
 
-## Exportation des ressources
+## Exporter les ressources
 
 Exécutez le script à l’aide de Node.js pour exporter les ressources vers votre ordinateur local.
 
-Selon le nombre de ressources et leur taille, l’exécution du script peut prendre un certain temps. Lors de l’exécution du script, il [enregistre la progression](#output) à la console.
+Selon le nombre de ressources et leur taille, l’exécution du script peut prendre un certain temps. Lorsque le script s’exécute, il [consigne la progression](#output) dans la console.
 
 ```shell
 $ node export-assets.js
@@ -277,7 +277,7 @@ $ node export-assets.js
 
 ## Exporter la sortie
 
-Le script d’exportation consigne la progression dans la console, indiquant les ressources en cours de téléchargement. Une fois le script terminé, les ressources sont enregistrées dans le dossier local spécifié dans la configuration et le journal se termine par le temps total nécessaire au téléchargement des ressources.
+Le script d’export consigne la progression dans la console, indiquant les ressources en cours de téléchargement. Une fois le script terminé, les ressources sont enregistrées dans le dossier local spécifié dans la configuration, et le journal se termine par le temps total nécessaire au téléchargement des ressources.
 
 ```plaintext
 ...
@@ -293,6 +293,6 @@ Downloaded asset: exported-assets/wknd-shared/en/magazine/western-australia/adob
 Download AEM assets: 24.770s
 ```
 
-Les ressources exportées se trouvent dans le dossier local spécifié dans la configuration `LOCAL_DOWNLOAD_FOLDER`. La structure de dossiers reflète celle d’AEM Assets, avec les ressources téléchargées dans les sous-dossiers appropriés. Ces fichiers peuvent être chargés vers [fournisseurs de stockage cloud pris en charge](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), pour [importation en bloc](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/bulk-import) dans d’autres instances AEM ou à des fins de sauvegarde.
+Les ressources exportées se trouvent dans le dossier local spécifié dans le `LOCAL_DOWNLOAD_FOLDER` de la configuration. La structure de dossiers reflète la structure de dossiers AEM Assets, avec les ressources téléchargées dans les sous-dossiers appropriés. Ces fichiers peuvent être chargés dans les [fournisseurs d’espace de stockage pris en charge](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view), afin de les [importer en masse](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/migration/bulk-import) dans d’autres instances AEM ou à des fins de sauvegarde.
 
 ![Ressources exportées](./assets/export/exported-assets.png)
