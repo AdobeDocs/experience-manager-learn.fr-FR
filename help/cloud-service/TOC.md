@@ -392,5 +392,5 @@ ht-degree: 99%
          + [Workers Edge](./expert-resources/cloud-5/season-3/cloud5-edge-workers.md)
          + [Publier et annuler la publication d’événements dans Edge Delivery Services](./expert-resources/cloud-5/season-3/cloud5-publish-events.md)
          + [Index de requête et formules Excel](./expert-resources/cloud-5/season-3/cloud5-query-indexes.md)
-         + [Apportez votre propre réseau de diffusion de contenu cloud](./expert-resources/cloud-5/season-3/cloud5-byo-cloudflare-cdn.md)
+         + [Utiliser votre propre réseau de diffusion de contenu Cloudflare](./expert-resources/cloud-5/season-3/cloud5-byo-cloudflare-cdn.md)
          + [Intégration d’AEM Assets](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)

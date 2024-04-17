@@ -1,6 +1,6 @@
 ---
-title: Cloud 5 - Apportez votre propre réseau de diffusion de contenu cloud
-description: Découvrez comment configurer votre propre réseau de diffusion de contenu cloud en Edge Delivery Services.
+title: 'Cloud 5 : utiliser votre propre réseau de diffusion de contenu Cloudflare'
+description: Découvrez comment configurer votre propre réseau de diffusion de contenu Cloudflare dans Edge Delivery Services.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -15,12 +15,12 @@ exl-id: dc841125-641b-47c0-a88f-d166a088e0ec
 source-git-commit: d62332374e8885e077f8227bcdec6a908c782ccc
 workflow-type: tm+mt
 source-wordcount: '38'
-ht-degree: 0%
+ht-degree: 81%
 
 ---
 
 # Cloud 5 - Apportez votre propre réseau de diffusion de contenu cloud
 
-Découvrez comment configurer votre propre réseau de diffusion de contenu cloud en Edge Delivery Services.
+Découvrez comment configurer votre propre réseau de diffusion de contenu Cloudflare dans Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428100/?quality=12&learn=on)

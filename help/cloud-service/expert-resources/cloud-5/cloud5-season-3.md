@@ -8,7 +8,7 @@ exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 source-git-commit: a0fdc061d231fb68fa9bd11440d344be9701eca2
 workflow-type: tm+mt
 source-wordcount: '363'
-ht-degree: 84%
+ht-degree: 92%
 
 ---
 
@@ -34,8 +34,8 @@ Chaque saison varie en longueur et est diffusée selon un planning fixe. Les suj
             </a>
             <div>
                 <a href="./season-3/cloud5-3rd-party-search.md">
-<strong>Recherche tierce</strong></a>
-<br/><em>avec James Talbot et Varun Mitra, AEM Engineering</em>
+                <strong>Recherche tierce</strong></a>        
+                <br/><em>avec James Talbot et Varun Mitra, AEM Engineering</em>
             </div>
             <p>
                 <br/>
@@ -92,8 +92,8 @@ Découvrez les événements déclenchés lors de la publication et de l’annula
             </a>
             <div>
                 <a href="./season-3/cloud5-query-indexes.md">
-<strong>Index de requête et formules Excel</strong></a>
-<br/><em>avec James Talbot et Varun Mitra, AEM Engineering</em>
+                <strong>Index de requête et formules Excel</strong></a>        
+                <br/><em>avec James Talbot et Varun Mitra, AEM Engineering</em>
             </div>
             <p>
                 <br/>
@@ -102,16 +102,16 @@ Découvrez les index de requête et comment écrire des formules Excel pour mani
         </td>  
         <td>
             <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
-                <img alt="Apportez votre propre réseau de diffusion de contenu cloud" src="https://video.tv.adobe.com/v/3428100?format=jpeg"/>
+                <img alt="Utiliser votre propre réseau de diffusion de contenu Cloudflare" src="https://video.tv.adobe.com/v/3428100?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
-                <strong>Apportez votre propre réseau de diffusion de contenu cloud</strong></a>        
+                <strong>Utilisez votre propre réseau de diffusion de contenu Cloudflare</strong></a>        
                 <br/><em>avec James Talbot et Kunwar Saluja, AEM Engineering</em>
             </div>
             <p>
                 <br/>
-                Découvrez comment configurer votre propre réseau de diffusion de contenu cloud en Edge Delivery Services.
+                Découvrez comment configurer votre propre réseau de diffusion de contenu Cloudflare dans Edge Delivery Services.
             </p>
         </td>           
     </tr>  
