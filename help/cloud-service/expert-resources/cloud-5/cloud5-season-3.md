@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 source-git-commit: a0fdc061d231fb68fa9bd11440d344be9701eca2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '363'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -118,16 +118,16 @@ Découvrez les index de requête et comment écrire des formules Excel pour mani
     <tr>
         <td>
             <a href="./season-3/cloud5-integrate-assets.md">
-                <img alt="Intégration d’AEM Assets à la création de documents" src="https://video.tv.adobe.com/v/3428302?format=jpeg"/>
+                <img alt="Intégrer AEM Assets à la création de documents" src="https://video.tv.adobe.com/v/3428302?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-integrate-assets.md">
-                <strong>Intégration d’AEM Assets à la création de documents</strong></a>        
-                <br/><em>avec James Talbot et Darin Kuntze, AEM Engineering</em>
+<strong>Intégrer AEM Assets à la création de documents</strong></a>
+<br/><em>avec James Talbot et Darin Kuntze, équipe d’ingénierie d’AEM</em>
             </div>
             <p>
                 <br/>
-                Découvrez comment intégrer AEM Assets à la création de documents.
+Découvrez comment intégrer AEM Assets à la création de documents.
             </p>
         </td>        
     </tr>      

@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
 source-git-commit: d75c9913e8401bcf86440c0d256b9c3a9d780bbc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -37,10 +37,10 @@ ht-degree: 96%
       + [Empêcher l’indexation par les moteurs de recherche](./document-authoring/how-to/no-index.md)
       + [Navigation réactive](document-authoring/how-to/responsive-navigation.md)
       + [Générer des variations](./document-authoring/how-to/generate-variations.md)
-      + [Configuration de Sidekick pour générer des variations](./document-authoring/how-to/generate-variations-sidekick-config.md)
+      + [Configurer le sidekick pour générer des variations](./document-authoring/how-to/generate-variations-sidekick-config.md)
       + [Modèles d’invite GenAI](./document-authoring/how-to/prompt-templates-for-content-variations.md)
       + [Modèles d’invite personnalisés GenAI](./document-authoring/how-to/custom-prompt-templates.md)
-      + [Enregistrement des modèles d’invite personnalisés par GenAI](./document-authoring/how-to/save-custom-prompt-template.md)
+      + [Enregistrer des modèles d’invite personnalisés GenAI](./document-authoring/how-to/save-custom-prompt-template.md)
 + Création de pages {#page-authoring}
    + [Création](page-authoring/aem-sites-authoring-overview.md)
    + [Navigation](page-authoring/basic-handling-sites-feature-video-use.md)

@@ -11,9 +11,9 @@ last-substantial-update: 2022-09-16T00:00:00Z
 exl-id: a3a9bf59-e9a2-4322-ac93-9c12c70b9a75
 duration: 492
 source-git-commit: a18bf2c8b57eaaac3686a26fa1fb39e6fc075af5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '122'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -95,4 +95,4 @@ package com.adobe.aem.wknd.examples.core.adventures;
 import org.osgi.annotation.versioning.Version;
 ```
 
-Ajout d’un `package-info.java` est requis pour s’assurer que d’autres lots OSGi dans AEM peuvent résoudre l’interface de service OSGi (ou toute classe Java). Si la variable `package-info.java` est manquante, le package Java et ses interfaces ou classes Java ne sont pas exportés. Les autres lots OSGi qui tentent d’importer ces interfaces ou classes Java à partir de ce package Java seront en erreur avec le message __Impossible de résoudre__ dans AEM console du bundle OSGi.
+L’ajout d’un `package-info.java` est requis pour s’assurer que d’autres lots OSGi dans AEM peuvent résoudre l’interface de service OSGi (ou toute classe Java). Si le `package-info.java` est manquant, le package Java et ses interfaces ou classes Java ne sont pas exportés. Les autres lots OSGi qui tentent d’importer ces interfaces ou classes Java à partir de ce package Java afficheront le message d’erreur __Impossible de résoudre__ dans la console du lot OSGi d’AEM.

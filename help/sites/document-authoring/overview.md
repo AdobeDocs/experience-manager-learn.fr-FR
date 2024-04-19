@@ -12,9 +12,9 @@ duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
 exl-id: 172a477f-d277-43c1-8e47-68870b02203c
 source-git-commit: a0fdc061d231fb68fa9bd11440d344be9701eca2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -562,7 +562,7 @@ Blocs et blocs automatiques</a>
             <p class="headline is-size-6 has-text-weight-bold">
               <a href="./how-to/generate-variations.md" title="Générer des variations">Générer des variations</a>
             </p>
-            <p class="is-size-6">Présentation de la génération de variations dans les Edge Delivery Services et compréhension de la manière dont elle peut s’avérer utile aux marketeurs.</p>
+            <p class="is-size-6">Présentation de la génération de variations dans Edge Delivery Services et comprendre la manière dont elle peut s’avérer utile aux personnes spécialisées dans le marketing.</p>
             <a href="./how-to/generate-variations.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -579,22 +579,22 @@ Blocs et blocs automatiques</a>
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/generate-variations-sidekick-config.md" title="Configuration de Sidekick pour générer des variations"
+            <a href="./how-to/generate-variations-sidekick-config.md" title="Configurer le sidekick pour générer des variations"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428306/?format=jpeg"
-                alt="Configuration de Sidekick pour générer des variations">
+                alt="Configurer le sidekick pour générer des variations">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p style="float: right;font-style: italic; color: #363636"
-              class="is-size-6">1 minutes</p>
+              class="is-size-6">1 minute</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations-sidekick-config.md" title="Configuration de Sidekick pour générer des variations">Configuration de Sidekick pour générer des variations</a>
+              <a href="./how-to/generate-variations-sidekick-config.md" title="Configurer le sidekick pour générer des variations">Configurer le sidekick pour générer des variations</a>
             </p>
-            <p class="is-size-6">Découvrez comment configurer le sidekick pour générer des variations dans la création de documents Edge Delivery Services.</p>
+            <p class="is-size-6">Découvrez comment configurer le sidekick pour générer des variations dans la création de documents Edge Delivery Services.</p>
             <a href="./how-to/generate-variations-sidekick-config.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -611,11 +611,11 @@ Blocs et blocs automatiques</a>
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/prompt-templates-for-content-variations.md" title="Utiliser les modèles d’invite GenAI"
+            <a href="./how-to/prompt-templates-for-content-variations.md" title="Utiliser des modèles d’invite GenAI"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
-                alt="Utiliser les modèles d’invite GenAI">
+                alt="Utiliser des modèles d’invite GenAI">
             </a>
           </figure>
         </div>
@@ -624,9 +624,9 @@ Blocs et blocs automatiques</a>
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/prompt-templates-for-content-variations.md" title="Utiliser les modèles d’invite GenAI">Modèles d’invite GenAI</a>
+              <a href="./how-to/prompt-templates-for-content-variations.md" title="Utiliser des modèles d’invite GenAI">Modèles d’invite GenAI</a>
             </p>
-            <p class="is-size-6">Découvrez comment utiliser les modèles d’invite d’intelligence artificielle générative pour générer des variations de contenu.</p>
+            <p class="is-size-6">Découvrez comment utiliser les modèles d’invite d’IA générative pour générer des variations de contenu.</p>
             <a href="./how-to/prompt-templates-for-content-variations.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
@@ -675,11 +675,11 @@ Blocs et blocs automatiques</a>
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./how-to/save-custom-prompt-template.md" title="Modèles d’invite d’enregistrement GenAI"
+            <a href="./how-to/save-custom-prompt-template.md" title="Enregister des modèles d’invite GenAI"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="https://video.tv.adobe.com/v/3428317/?format=jpeg"
-                alt="Modèles d’invite d’enregistrement GenAI">
+                alt="Enregister des modèles d’invite GenAI">
             </a>
           </figure>
         </div>
@@ -688,9 +688,9 @@ Blocs et blocs automatiques</a>
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/save-custom-prompt-template.md" title="Modèles d’invite d’enregistrement GenAI">Modèles d’invite d’enregistrement GenAI</a>
+              <a href="./how-to/save-custom-prompt-template.md" title="Enregister des modèles d’invite GenAI">Enregistrer des modèles d’invite GenAI</a>
             </p>
-            <p class="is-size-6">Découvrez comment enregistrer les modèles d’invite personnalisée d’IA générative pour générer des variations de contenu.</p>
+            <p class="is-size-6">Découvrez comment enregistrer les modèles d’invite personnalisés d’IA générative pour générer des variations de contenu.</p>
             <a href="./how-to/save-custom-prompt-template.md" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
