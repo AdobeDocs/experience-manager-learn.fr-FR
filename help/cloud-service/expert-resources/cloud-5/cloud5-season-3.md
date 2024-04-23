@@ -5,10 +5,10 @@ sub-product: Experience Manager Sites, Experience Manager Cloud Manager, Experie
 solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
-source-git-commit: a0fdc061d231fb68fa9bd11440d344be9701eca2
-workflow-type: ht
-source-wordcount: '363'
-ht-degree: 100%
+source-git-commit: 5f2415b45a99a92c6e2b72dfc80d47f6f899c7ad
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 92%
 
 ---
 
@@ -130,5 +130,19 @@ Découvrez les index de requête et comment écrire des formules Excel pour mani
 Découvrez comment intégrer AEM Assets à la création de documents.
             </p>
         </td>        
+        <td>
+            <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">
+                <img alt="IA générique dans AEM Sites" src="https://video.tv.adobe.com/v/3428436?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">
+                <strong>IA générique dans AEM Sites</strong></a>        
+                <br/><em>avec James Talbot et Karthik Muralidharan, AEM Product Marketing</em>
+            </div>
+            <p>
+                <br/>                
+                Découvrez les nouvelles fonctionnalités de l’IA générique disponibles dans la création de documents AEM Sites.
+            </p>
+        </td>                
     </tr>      
 </table>
