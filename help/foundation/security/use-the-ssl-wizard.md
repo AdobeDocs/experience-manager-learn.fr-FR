@@ -10,10 +10,10 @@ level: Beginner
 exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
 last-substantial-update: 2023-08-08T00:00:00Z
 duration: 595
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
+source-git-commit: 153ce0ff2d433bdbce05ef7fba4856356c0f6d4c
+workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -70,7 +70,7 @@ Pour mettre à jour le _nom d’hôte_ et le _port_, utilisez l’étape __Conne
 ### Vérifier la configuration SSL
 
 1. Pour vérifier le protocole SSL, cliquez sur le bouton __Accéder à l’URL HTTPS__.
-1. Si vous utilisez un certificat auto-signé, vous voyez l’erreur `Your connection is not private`.
+1. Si vous utilisez un certificat auto-signé, vous voyez `Your connection is not private` erreur.
 
    ![Configuration SSL - Vérification d’AEM via HTTPS.](assets/use-the-ssl-wizard/verify-aem-over-ssl.png)
 
