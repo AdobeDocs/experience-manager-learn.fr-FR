@@ -15,7 +15,7 @@ duration: 626
 source-git-commit: 2ab958f672b0d5b029bcdf7937b2f72d43ba651f
 workflow-type: tm+mt
 source-wordcount: '1472'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -219,7 +219,7 @@ En outre, les panneaux **100 principales attaques par adresse IP du client ou d
 
 ![100 principales requêtes DoS dans le tableau de bord de l’outil ELK.](./assets/elk-tool-dashboard-dos-top-100.png)
 
-Pour plus d’informations sur la façon de prévenir les attaques par déni de service (DoS) et par déni de service (DDoS), consultez la section [Blocage des attaques DoS et DDoS à l’aide de règles de filtrage de trafic](../blocking-dos-attack-using-traffic-filter-rules.md) tutoriel .
+Pour plus d’informations sur comment prévenir des attaques DoS et DDoS, consultez le tutoriel [Blocage d’attaques DoS et DDoS à l’aide de règles de filtrage de trafic](../blocking-dos-attack-using-traffic-filter-rules.md).
 
 ### Règles WAF
 

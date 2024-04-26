@@ -9,7 +9,7 @@ team: TM
 source-git-commit: 5f2415b45a99a92c6e2b72dfc80d47f6f899c7ad
 workflow-type: tm+mt
 source-wordcount: '1184'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -161,7 +161,7 @@ ht-degree: 98%
       + [Connexions SQL à l’aide des API Java SQL](./networking/examples/sql-java-apis.md)
       + [Service E-mail](./networking/examples/email-service.md)
 + Sécurité {#security}
-   + [Blocage des attaques DoS/DDoS à l’aide de règles de filtrage du trafic](./security/blocking-dos-attack-using-traffic-filter-rules.md)
+   + [Blocage d’attaques DoS/DDoS à l’aide de règles de filtrage du trafic](./security/blocking-dos-attack-using-traffic-filter-rules.md)
    + Règles de filtre de trafic, y compris les règles WAF{#traffic-filter-and-waf-rules}
       + [Vue d’ensemble](./security/traffic-filter-rules/overview.md)
       + [Configuration](./security/traffic-filter-rules/how-to-setup.md)
