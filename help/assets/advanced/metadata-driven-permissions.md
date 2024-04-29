@@ -9,9 +9,10 @@ level: Intermediate
 jira: KT-13757
 thumbnail: xx.jpg
 doc-type: Tutorial
-source-git-commit: 3b500873ee7307df590ac66dea541a1adf14d726
+exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
+source-git-commit: 03cb7ef0cf79a21ec1b96caf6c11e6f5119f777c
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '682'
 ht-degree: 1%
 
 ---
@@ -42,15 +43,14 @@ Pour mettre en oeuvre les autorisations pilotées par les métadonnées :
    ```json
    {
      "restrictionPropertyNames":[
-       "status"
+       "status",
+       "brand"
      ],
-     "restrictionPaths":[
-       "/content/dam"
-     ]
+     "enabled":true
    }
    ```
 
-1. Remplacez les noms des propriétés et les chemins d’accès aux restrictions par les valeurs requises.
+1. Remplacez les noms des propriétés par les valeurs requises.
 
 
 Avant d’ajouter des entrées de contrôle d’accès basées sur des restrictions, une nouvelle entrée de niveau supérieur doit être ajoutée pour empêcher l’accès en lecture à tous les groupes qui font l’objet d’une évaluation des autorisations pour les ressources (par exemple, &quot;contributeurs&quot; ou similaire) :
