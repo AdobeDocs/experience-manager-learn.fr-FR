@@ -6,9 +6,9 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 source-git-commit: 5f2415b45a99a92c6e2b72dfc80d47f6f899c7ad
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '393'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -132,16 +132,16 @@ Découvrez comment intégrer AEM Assets à la création de documents.
         </td>        
         <td>
             <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">
-                <img alt="IA générique dans AEM Sites" src="https://video.tv.adobe.com/v/3428436?format=jpeg"/>
+                <img alt="IA générative dans AEM Sites" src="https://video.tv.adobe.com/v/3428436?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">
-                <strong>IA générique dans AEM Sites</strong></a>        
-                <br/><em>avec James Talbot et Karthik Muralidharan, AEM Product Marketing</em>
+<strong>IA générative dans AEM Sites</strong></a>
+<br/><em>avec James Talbot et Karthik Muralidharan, marketing produit AEM</em>
             </div>
             <p>
-                <br/>                
-                Découvrez les nouvelles fonctionnalités de l’IA générique disponibles dans la création de documents AEM Sites.
+                <br/>
+Découvrez les nouvelles fonctionnalités de l’IA générative disponibles dans la création de documents AEM Sites.
             </p>
         </td>                
     </tr>      

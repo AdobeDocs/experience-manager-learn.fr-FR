@@ -9,9 +9,9 @@ sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
 source-git-commit: eb4463ae0270725c5b0bd96e9799bada25b06303
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2059'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -105,10 +105,10 @@ ht-degree: 99%
    + [Préremplissage des formulaires HTML5](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modèle de données de formulaire avec Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Ajout dynamique d’éléments au composant Choix](adaptive-forms/choice-group-items-adding-dynamically-article.md)
-+ Remplissage d’un formulaire de PDF avec ChatBot{#chatbot-and-aem-forms}
++ Remplir un formulaire PDF avec ChatBot{#chatbot-and-aem-forms}
    + [1. Présentation](chatbot-and-aem-forms/introduction.md)
-   + [2 - Analyse des données de chatBot](chatbot-and-aem-forms/parse-chat-bot-data.md)
-   + [3 - Créer un PDF](chatbot-and-aem-forms/merge-data-with-template.md)
+   + [2. Analyse des données de ChatBot](chatbot-and-aem-forms/parse-chat-bot-data.md)
+   + [3. Créer un PDF](chatbot-and-aem-forms/merge-data-with-template.md)
 + Formulaires basés sur les composants principaux{#core-component-based-forms}
    + [Accéder aux données de formulaire à l’aide de l’API GuideBridge](core-components/submit-data-using-guidebridge-api.md)
 + Sélectionner et assembler le contenu du dossier DAM{#select-dam-folder-content}
