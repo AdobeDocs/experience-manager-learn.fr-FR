@@ -11,10 +11,10 @@ jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 569
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
-source-wordcount: '2146'
-ht-degree: 100%
+source-git-commit: 85d516d57d818d23372ab7482d25e33242ef0426
+workflow-type: tm+mt
+source-wordcount: '1884'
+ht-degree: 97%
 
 ---
 
@@ -77,22 +77,6 @@ La quantité de ressources nécessaire au processus d’extraction du CTT dépen
 
 Si des environnements de clonage sont utilisés pour la migration, cela n’a aucune incidence sur l’utilisation des ressources du serveur de production en direct, mais présente ses propres inconvénients en ce qui concerne la synchronisation de contenu entre la production en direct et le clone.
 
-### Q : Dans mon système de création source, nous avons configuré l’authentification unique (SSO) pour que les utilisateurs et utilisatrices s’authentifient dans l’instance de création. Dois-je utiliser la fonctionnalité de mappage des utilisateurs et utilisatrices du CTT dans ce cas ?
-
-La réponse courte est « **Oui** ».
-
-L’extraction et l’ingestion du CTT **sans** le mappage des utilisateurs et utilisatrices migrent uniquement le contenu, les principes associés (utilisateurs/utilisatrices, groupes) d’AEM source vers AEMaaCS. Toutefois, ces utilisateurs et utilisatrices (identités) présents dans Adobe IMS doivent avoir accès à l’instance AEMaaCS pour s’authentifier correctement. Le traitement de l’[outil de mappage des utilisateurs et utilisatrices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html?lang=fr) consiste à mapper l’utilisateur ou utilisatrice AEM local à l’utilisateur ou utilisatrice IMS afin que l’authentification et les autorisations fonctionnent ensemble.
-
-Dans ce cas, le fournisseur d’identité SAML est configuré par rapport à Adobe IMS pour utiliser Federated/Enterprise ID plutôt que directement pour AEM à l’aide du gestionnaire d’authentification.
-
-### Q : Dans mon système de création source, nous avons configuré une authentification de base pour que les utilisateurs et utilisatrices s’authentifient dans l’instance de création avec les utilisateurs et utilisatrices AEM locaux. Dois-je utiliser la fonctionnalité de mappage des utilisateurs et utilisatrices du CTT dans ce cas ?
-
-La réponse courte est « **Oui** ».
-
-L’extraction et l’ingestion du CTT sans mappage des utilisateurs et utilisatrices migrent le contenu, les principes associés (utilisateurs/utilisatrices, groupes) d’AEM source vers AEMaaCS. Toutefois, ces utilisateurs et utilisatrices (identités) présents dans Adobe IMS doivent avoir accès à l’instance AEMaaCS pour s’authentifier correctement. Le traitement de l’[outil de mappage des utilisateurs et utilisatrices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/overview-user-mapping-tool-legacy.html?lang=fr) consiste à mapper l’utilisateur ou utilisatrice AEM local à l’utilisateur ou utilisatrice IMS afin que l’authentification et les autorisations fonctionnent ensemble.
-
-Dans ce cas, les utilisateurs et utilisatrices utilisent leur Adobe ID personnel et l’Adobe ID est utilisé par l’administrateur ou administratrice IMS pour fournir l’accès à AEMaaCS.
-
 ### Q : Que signifient les termes « effacer » et « remplacer » dans le contexte du CTT ?
 
 Dans le contexte de la [phase d’extraction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#extraction-setup-phase), les options sont soit de remplacer les données du conteneur d’évaluation des cycles d’extraction précédents, soit d’y ajouter la différence (ajout/mise à jour/suppression). Le conteneur d’évaluation n’est rien d’autre que le conteneur de stockage d’objets blob associé au jeu de migration. Chaque jeu de migration obtient son propre conteneur d’évaluation.
@@ -107,10 +91,11 @@ Oui c’est possible, mais cela nécessite une bonne planification concernant :
    + Vérifiez s’il est acceptable de migrer toutes les ressources dans le cadre d’un jeu de migration, puis d’importer les sites qui les utilisent par phases.
 + Dans l’état actuel, le processus d’ingestion de l’instance de création la rend indisponible pour la création de contenu même si le niveau de publication peut toujours diffuser le contenu.
    + Cela signifie que jusqu’à ce que l’ingestion soit terminée dans la création, les activités de création de contenu sont gelées.
++ Les utilisateurs ne sont plus migrés, bien que les groupes soient
 
 Consultez le processus d’extraction et d’ingestion de complément comme documenté avant de planifier les migrations.
 
-### Q : Mes sites web seront-ils disponibles pour les utilisateurs et utilisatrices finaux même si l’ingestion se produit dans les instances de création ou de publication AEMaaCS ?
+### Q : Mes sites web seront-ils disponibles pour les utilisateurs finaux même si l’ingestion se produit dans les instances d’auteur ou de publication AEMaaCS ?
 
 Oui. Le trafic des utilisateurs et utilisatrices finaux n’est pas interrompu par l’activité de migration de contenu. Cependant, l’ingestion de l’instance de création gèle la création de contenu jusqu’à ce qu’elle se termine.
 
@@ -160,7 +145,6 @@ Le processus CTT nécessite une connexion aux ressources suivantes :
 
 + L’environnement AEM as a Cloud Service cible : `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 + Le service d’enregistrement blob Azure : `casstorageprod.blob.core.windows.net`
-+ Le point d’entrée de l’IO de mappage des utilisateurs : `usermanagement.adobe.io`
 
 Consultez la documentation, pour plus d’informations sur la [connectivité source](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#source-environment-connectivity).
 
@@ -198,7 +182,7 @@ Si le nombre de ressources/nœuds dans l’environnement source est bas (~100 K
 + Continuer à travailler sur site/l’instance de création de production AMS
 + Désormais, exécutez tous les autres tests de cycle de migration avec `wipe=true`.
    + Notez que cette opération migre l’ensemble du magasin de nœuds, mais uniquement les objets blob modifiés, et non les objets blob entiers. L’ensemble précédent d’objets blob se trouve dans le magasin Azure Blob de l’instance AEMaaCS cible.
-   + Utilisez cette preuve de migrations pour mesurer la durée de la migration, le mappage utilisateur, les tests et la validation de toutes les autres fonctionnalités.
+   + Utilisez ce BAT de migrations pour mesurer la durée de migration, les tests et la validation de toutes les autres fonctionnalités.
 + Enfin, avant la semaine de mise en service, effectuez une migration wipe=true.
    + Connexion de Dynamic Media à AEMaaCS
    + Déconnecter la configuration DM de la source sur site AEM
