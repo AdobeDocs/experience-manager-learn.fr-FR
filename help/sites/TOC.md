@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: d75c9913e8401bcf86440c0d256b9c3a9d780bbc
-workflow-type: ht
-source-wordcount: '517'
-ht-degree: 100%
+source-git-commit: 43a8b1eb7e714b27972c0ea2b1327ab8db044d25
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 94%
 
 ---
 
@@ -41,6 +41,14 @@ ht-degree: 100%
       + [Modèles d’invite GenAI](./document-authoring/how-to/prompt-templates-for-content-variations.md)
       + [Modèles d’invite personnalisés GenAI](./document-authoring/how-to/custom-prompt-templates.md)
       + [Enregistrer des modèles d’invite personnalisés GenAI](./document-authoring/how-to/save-custom-prompt-template.md)
+      + [Audiences Target pour générer une variation](./document-authoring/how-to/using-target-audiences-in-generate-variations.md)
+      + [Fichier CSV Audiences pour générer une variation](./document-authoring/how-to/using-audiences-csv-file-in-generate-variations.md)
+      + [Adobe Firefly pour Générer une variation](./document-authoring/how-to/using-adobe-firefly-for-images-in-generate-variations.md)
+      + [Actions de variation générique](./document-authoring/how-to/generate-variations-actions.md)
+      + [Personnalisation des invites à l’aide de métadonnées](./document-authoring/how-to/customizing-prompts-using-metadata.md)
+      + [Confiance et confidentialité de GenAI](./document-authoring/how-to/generate-variations-trust-privacy.md)
+      + [Cadre d’expérience](./document-authoring/how-to/experimentation-framework.md)
+      + [Configuration du cadre d’expérimentation](./document-authoring/how-to/setup-experimentation-framework.md)
 + Création de pages {#page-authoring}
    + [Création](page-authoring/aem-sites-authoring-overview.md)
    + [Navigation](page-authoring/basic-handling-sites-feature-video-use.md)
