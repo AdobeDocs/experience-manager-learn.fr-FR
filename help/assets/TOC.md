@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 1ab4bc0655c70af7f0401e774823950658dc3f77
+source-git-commit: 5cec056bd50c7ddb8f20dbd6227fe8f21d212a11
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 99%
+source-wordcount: '419'
+ht-degree: 98%
 
 ---
 
@@ -126,11 +126,12 @@ ht-degree: 99%
       + [Accentuation de l’image](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
       + [Gestion des couleurs](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
    + Vidéo {#video}
-      + [Vidéo interactive](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
-      + [Lecteur vidéo](dynamic-media/dynamic-media-video-player-feature-video-use.md)
       + [Vidéo 360](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
       + [Miniatures vidéo personnalisées](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
+      + [Diffusion en continu adaptative DASH](dynamic-media/dynamic-media-dash.md)
       + [Vidéo de recadrage intelligent Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
+      + [Vidéo interactive](dynamic-media/dynamic-media-interactive-video-feature-video-use.md)
+      + [Lecteur vidéo](dynamic-media/dynamic-media-video-player-feature-video-use.md)
    + Visionneuses {#viewers}
       + [Visionneuses](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
       + [Visionneuses d’images panoramiques et verticales](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
