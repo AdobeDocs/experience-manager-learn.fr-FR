@@ -12,9 +12,9 @@ exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 906
 source-git-commit: 4e3f77a9e687042901cd3b175d68a20df63a9b65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1280'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Découvrez comment configurer et utiliser les sorties de port flexibles pour pre
 
 Une sortie de port flexible permet l’association de règles de transfert de port personnalisées et spécifiques à AEM as a Cloud Service, ce qui rend possible l’établissement de connexions entre AEM et des services externes.
 
-Un programme Cloud Manager ne peut avoir qu’un type d’infrastructure réseau __unique__. S’assurer que la sortie de port flexible est la plus élevée [type approprié d’infrastructure réseau](./advanced-networking.md) pour votre AEM as a Cloud Service avant d’exécuter les commandes suivantes.
+Un programme Cloud Manager ne peut avoir qu’un type d’infrastructure réseau __unique__. Assurez-vous que la sortie de port flexible est le type le plus [approprié d’infrastructure de réseau](./advanced-networking.md) pour votre instance AEM as a Cloud Service avant d’exécuter les commandes suivantes.
 
 >[!MORELIKETHIS]
 >
@@ -35,7 +35,7 @@ Un programme Cloud Manager ne peut avoir qu’un type d’infrastructure résea
 
 ## Conditions préalables
 
-Les éléments suivants sont requis lors de la définition ou de la configuration d’une sortie de port flexible à l’aide des API Cloud Manager :
+Les éléments suivants sont requis lors de la définition ou de la configuration d’une sortie de port flexible à l’aide des API Cloud Manager :
 
 + Projet Adobe Developer Console avec l’API Cloud Manager activée et les [autorisations de la personne propriétaire de l’entreprise Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/).
 + Accès aux [Informations d’authentification de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/).
@@ -60,34 +60,34 @@ Commencez par activer la sortie de port flexible sur AEM as a Cloud Service.
 
 >[!TAB Cloud Manager]
 
-Vous pouvez activer la vitesse de sortie du port flexible à l’aide de Cloud Manager. Les étapes suivantes décrivent comment activer le débit de port flexible sur AEM as a Cloud Service à l’aide de Cloud Manager.
+Vous pouvez activer la sortie de port flexible à l’aide de Cloud Manager. Les étapes suivantes décrivent comment activer la sortie de port flexible sur AEM as a Cloud Service à l’aide de Cloud Manager.
 
-1. Connectez-vous au [Adobe Experience Manager Cloud Manager](https://experience.adobe.com/cloud-manager/) en tant que propriétaire d’entreprise Cloud Manager.
+1. Connectez-vous à [Adobe Experience Manager Cloud Manager](https://experience.adobe.com/cloud-manager/) en tant que personne propriétaire d’entreprise Cloud Manager.
 1. Accédez au programme souhaité.
-1. Dans le menu de gauche, accédez à __Services > Infrastructure réseau__.
-1. Sélectionnez la variable __Ajout d’une infrastructure réseau__ bouton .
+1. Dans le menu de gauche, accédez à __Services > Infrastructure de réseau__.
+1. Sélectionnez le bouton __Ajouter une infrastructure de réseau__.
 
-   ![Ajout d’une infrastructure réseau](./assets/cloud-manager__add-network-infrastructure.png)
+   ![Ajouter une infrastructure de réseau](./assets/cloud-manager__add-network-infrastructure.png)
 
-1. Dans le __Ajout d’une infrastructure réseau__ , sélectionnez __Sortie de port flexible__ et sélectionnez l’option __Région__ pour créer l’adresse IP de sortie dédiée.
+1. Dans la boîte de dialogue __Ajouter une infrastructure de réseau__, sélectionnez __Sortie de port flexible__ et sélectionnez __Région__ pour créer l’adresse IP de sortie dédiée.
 
-   ![Ajout d’une sortie de port flexible](./assets/flexible-port-egress/select-type.png)
+   ![Ajouter une sortie de port flexible](./assets/flexible-port-egress/select-type.png)
 
-1. Sélectionner __Enregistrer__ pour confirmer l’ajout de la sortie de port flexible.
+1. Sélectionnez __Enregistrer__ pour confirmer l’ajout de la sortie de port flexible.
 
-   ![Confirmation de la création flexible des sorties de port](./assets/flexible-port-egress/confirmation.png)
+   ![Confirmer la création de sortie de port flexible](./assets/flexible-port-egress/confirmation.png)
 
-1. Attendez que l’infrastructure réseau soit créée et marquée comme __Prêt__. Ce processus peut prendre jusqu’à 1 heure.
+1. Attendez que l’infrastructure de réseau soit créée et marquée comme __Prête__. Ce processus peut prendre jusqu’à 1 heure.
 
-   ![Statut de création flexible de sortie de port](./assets/flexible-port-egress/ready.png)
+   ![Statut de création de la sortie de port flexible](./assets/flexible-port-egress/ready.png)
 
-Avec la sortie de port flexible créée, vous pouvez maintenant configurer les règles de transfert de port à l’aide des API Cloud Manager comme décrit ci-dessous.
+Avec la sortie de port flexible créée, vous pouvez maintenant configurer les règles de transfert de port à l’aide des API Cloud Manager comme décrit ci-dessous.
 
->[!TAB API de Cloud Manager]
+>[!TAB API Cloud Manager]
 
-Il est possible d’activer la vitesse d’entrée flexible à l’aide des API de Cloud Manager. Les étapes suivantes décrivent comment activer le débit de port flexible sur AEM as a Cloud Service à l’aide de l’API Cloud Manager.
+Il est possible d’activer la sortie de port flexible à l’aide des API Cloud Manager. Les étapes suivantes décrivent comment activer la sortie de port flexible sur AEM as a Cloud Service à l’aide de l’API Cloud Manager.
 
-1. Tout d’abord, déterminez la région dans laquelle le réseau avancé est configuré à l’aide de l’API Cloud Manager. [listRegion](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) opération. Le `region name` est nécessaire pour effectuer les appels d’API Cloud Manager ultérieurs. En règle générale, la région dans laquelle l’environnement de production réside est utilisée.
+1. Tout d’abord, déterminez la région dans laquelle le réseau avancé est configuré à l’aide de l’opération [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager. Le `region name` est nécessaire pour effectuer les appels d’API Cloud Manager ultérieurs. En règle générale, la région dans laquelle l’environnement de production réside est utilisée.
 
    Recherchez la région de votre environnement AEM as a Cloud Service AEM dans [Cloud Manager](https://my.cloudmanager.adobe.com) sous les [détails de l’environnement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Le nom de région affiché dans Cloud Manager peut être [mappé au code de région](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilisé dans l’API Cloud Manager.
 
@@ -116,7 +116,7 @@ Il est possible d’activer la vitesse d’entrée flexible à l’aide des API 
 
    Patientez 15 minutes pendant que le programme Cloud Manager approvisionne l’infrastructure réseau.
 
-3. Vérifier que l&#39;environnement est terminé __sortie de port flexible__ configuration à l’aide de l’API Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) , à l’aide de la fonction `id` renvoyé par la fonction `createNetworkInfrastructure` Requête HTTP à l’étape précédente.
+3. Vérifiez que l’environnement a terminé la configuration de la __sortie de port flexible__ à l’aide de l’opération [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) de l’API Cloud Manager, en utilisant l’`id` renvoyé par la requête HTTP `createNetworkInfrastructure` de l’étape précédente.
 
    __Requête HTTP getNetworkInfrastructure__
 
@@ -130,7 +130,7 @@ Il est possible d’activer la vitesse d’entrée flexible à l’aide des API 
 
    Vérifiez que la réponse HTTP contient un __statut__ __prêt__. Si elle n’est pas encore prête, revérifiez le statut quelques minutes plus tard.
 
-Avec la sortie de port flexible créée, vous pouvez maintenant configurer les règles de transfert de port à l’aide des API Cloud Manager comme décrit ci-dessous.
+Avec la sortie de port flexible créée, vous pouvez maintenant configurer les règles de transfert de port à l’aide des API Cloud Manager comme décrit ci-dessous.
 
 >[!ENDTABS]
 
@@ -192,7 +192,7 @@ Avec la sortie de port flexible créée, vous pouvez maintenant configurer les r
 
 1. Les configurations de sortie de port flexible peuvent être mises à jour à l’aide de l’opération [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager. Rappelez-vous que `enableEnvironmentAdvancedNetworkingConfiguration` est une opération `PUT`, donc toutes les règles doivent donc être fournies à chaque appel de cette opération.
 
-1. Vous pouvez désormais utiliser la configuration flexible de sortie de port dans votre code et configuration d’AEM personnalisés.
+1. Vous pouvez désormais utiliser la configuration de sortie de port flexible dans votre code AEM personnalisé et dans votre configuration.
 
 
 ## Se connecter à des services externes via une sortie de port flexible

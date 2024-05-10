@@ -10,9 +10,9 @@ jira: KT-15233
 last-substantial-update: 2024-05-01T00:00:00Z
 exl-id: c4b093d4-39b8-4f0b-b759-ecfbb6e9e54f
 source-git-commit: a3d2b2343269d2cfc7cecc5817ef1e07a66a88d3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1151'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 86%
 
 Il est essentiel d’assurer l’intégrité et la sécurité de vos données lors de la diffusion de contenu AEM Headless à partir de l’instance de publication AEM lors de la diffusion de contenu sensible. Cette procédure explique comment sécuriser le contenu fourni par les points d’entrée de l’API GraphQL AEM Headless.
 
-Les conseils de ce tutoriel portent sur les exigences strictes que le contenu doit être accessible exclusivement à des utilisateurs ou à des groupes d’utilisateurs spécifiques. Il est impératif de faire la distinction entre le contenu marketing personnalisé et le contenu privé, tel que les informations d’identification personnelle ou les données financières personnelles, afin d’éviter toute confusion et résultats inattendus. Ce tutoriel porte sur la protection du contenu privé.
+Les conseils de ce tutoriel portent sur les exigences strictes d’accessibilité exclusive à des utilisateurs, des utilisatrices ou des groupes spécifiques. Il est impératif de faire la distinction entre le contenu marketing personnalisé et le contenu privé, tel que les informations d’identification personnelle ou les données financières personnelles, afin d’éviter toute confusion et résultats inattendus. Ce tutoriel porte sur la protection du contenu privé.
 
-Lors de la discussion de contenu marketing, nous faisons référence à un contenu adapté à des utilisateurs ou à des groupes individuels, qui n’est pas destiné à une consommation générale. Cependant, il est essentiel de comprendre que, bien que ce contenu puisse être ciblé pour certains utilisateurs, son exposition en dehors du contexte prévu (par exemple, par la manipulation de requêtes HTTP) ne pose pas de risque sur la sécurité, la légalité ou la réputation.
+Lors de la discussion autour du contenu marketing, nous faisons référence à un contenu adapté à des utilisateurs, des utilisatrices ou des groupes individuels, qui n’est pas destiné à une consommation générale. Cependant, il est essentiel de comprendre que, bien que ce contenu puisse être ciblé pour certaines personnes, son exposition en dehors du contexte prévu (par exemple, par la manipulation de requêtes HTTP) ne pose pas de risque sur la sécurité, la légalité ou la réputation.
 
-Il est souligné que tout le contenu traité dans cet article est supposé être privé et ne peut être visualisé que par des utilisateurs ou des groupes désignés. Le contenu marketing ne nécessite souvent pas de protection, mais sa diffusion à des utilisateurs spécifiques peut être gérée par l’application et mise en cache pour des raisons de performances.
+Bien sûr, tout le contenu traité dans cet article est supposé être privé et ne peut être visualisé que par des utilisateurs, des utilisatrices ou des groupes désignés. Le contenu marketing ne nécessite souvent pas de protection, mais sa diffusion à des personnes spécifiques peut être gérée par l’application et mise en cache pour des raisons de performances.
 
 Ces instructions ne couvrent pas les éléments suivants :
 

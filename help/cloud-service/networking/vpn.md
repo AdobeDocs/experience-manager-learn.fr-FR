@@ -12,9 +12,9 @@ exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 948
 source-git-commit: 4e3f77a9e687042901cd3b175d68a20df63a9b65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1472'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Découvrez comment connecter AEM as a Cloud Service à votre VPN pour créer
 
 ## Qu’est-ce que le réseau privé virtuel ?
 
-Le réseau privé virtuel (VPN) permet à un client ou une cliente AEM as a Cloud Service de connecter **les environnements AEM** d’un programme Cloud Manager à un VPN existant et [pris en charge](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking). Le VPN permet des connexions sécurisées et contrôlées entre AEM as a Cloud Service et les services au sein du réseau du client.
+Le réseau privé virtuel (VPN) permet à un client ou une cliente AEM as a Cloud Service de connecter **les environnements AEM** d’un programme Cloud Manager à un VPN existant et [pris en charge](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking). Le VPN permet des connexions sécurisées et contrôlées entre AEM as a Cloud Service et les services au sein du réseau du client ou de la cliente.
 
 Un programme Cloud Manager ne peut avoir qu’un __seul__ type d’infrastructure réseau. Assurez-vous que le réseau privé virtuel est le type le plus [approprié d’infrastructure réseau](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) pour votre instance AEM as a Cloud Service avant d’exécuter les commandes suivantes.
 
@@ -38,7 +38,7 @@ Un programme Cloud Manager ne peut avoir qu’un __seul__ type d’infrastructu
 
 ## Conditions préalables
 
-Les éléments suivants sont requis lors de la configuration d’un réseau privé virtuel à l’aide des API Cloud Manager :
+Les éléments suivants sont requis lors de la configuration d’un réseau privé virtuel à l’aide des API Cloud Manager :
 
 + Compte Adobe avec [autorisations de la personne propriétaire d’entreprise Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/).
 + Accès aux [informations d’authentification de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/).
@@ -64,44 +64,44 @@ Commencez par activer le réseau privé virtuel sur AEM as a Cloud Service.
 
 >[!TAB Cloud Manager]
 
-Vous pouvez activer la vitesse de sortie du port flexible à l’aide de Cloud Manager. Les étapes suivantes décrivent comment activer le débit de port flexible sur AEM as a Cloud Service à l’aide de Cloud Manager.
+Vous pouvez activer la sortie de port flexible à l’aide de Cloud Manager. Les étapes suivantes décrivent comment activer la sortie de port flexible sur AEM as a Cloud Service à l’aide de Cloud Manager.
 
-1. Connectez-vous au [Adobe Experience Manager Cloud Manager](https://experience.adobe.com/cloud-manager/) en tant que propriétaire d’entreprise Cloud Manager.
+1. Connectez-vous à [Adobe Experience Manager Cloud Manager](https://experience.adobe.com/cloud-manager/) en tant que personne propriétaire d’entreprise Cloud Manager.
 1. Accédez au programme souhaité.
-1. Dans le menu de gauche, accédez à __Services > Infrastructure réseau__.
-1. Sélectionnez la variable __Ajout d’une infrastructure réseau__ bouton .
+1. Dans le menu de gauche, accédez à __Services > Infrastructure de réseau__.
+1. Sélectionnez le bouton __Ajouter une infrastructure de réseau__.
 
-   ![Ajout d’une infrastructure réseau](./assets/cloud-manager__add-network-infrastructure.png)
+   ![Ajouter une infrastructure de réseau](./assets/cloud-manager__add-network-infrastructure.png)
 
-1. Dans le __Ajout d’une infrastructure réseau__ , sélectionnez __Réseau privé virtuel__ . Renseignez les champs et sélectionnez __Continuer__. Contactez l’administrateur réseau de votre entreprise pour obtenir les valeurs correctes.
+1. Dans la boîte de dialogue __Ajouter une infrastructure de réseau__, sélectionnez __Réseau privé virtuel__. Renseignez les champs et sélectionnez __Continuer__. Contactez l’administrateur ou l’administratrice réseau de votre entreprise pour connaître les bonnes valeurs.
 
    ![Ajouter un VPN](./assets/vpn/select-type.png)
 
-1. Créez au moins une connexion VPN. Attribuez un nom significatif à la connexion et sélectionnez la variable __Ajout d’une connexion__ bouton .
+1. Créez au moins une connexion VPN. Attribuez un nom significatif à la connexion et sélectionnez le bouton __Ajouter une connexion__.
 
-   ![Ajout d’une connexion VPN](./assets/vpn/add-connection.png)
+   ![Ajouter une connexion VPN](./assets/vpn/add-connection.png)
 
-1. Configurez la connexion VPN. Contactez l’administrateur réseau de votre entreprise pour obtenir les valeurs correctes. Sélectionner __Enregistrer__ pour confirmer l’ajout de la connexion.
+1. Configurez la connexion VPN. Contactez l’administrateur ou l’administratrice réseau de votre entreprise pour connaître les bonnes valeurs. Sélectionnez __Enregistrer__ pour confirmer l’ajout de la connexion.
 
    ![Configurer la connexion VPN](./assets/vpn/configure-connection.png)
 
-1. Si plusieurs connexions VPN sont requises, plus de connexions sont nécessaires. Lorsque toutes les connexions VPN sont ajoutées, sélectionnez __Continuer__.
+1. Si plusieurs VPN sont requis, plusieurs connexions sont nécessaires. Lorsque toutes les connexions VPN sont ajoutées, sélectionnez __Continuer__.
 
    ![Configurer la connexion VPN](./assets/vpn/connections.png)
 
-1. Sélectionner __Enregistrer__ pour confirmer l&#39;ajout du VPN et de toutes les connexions configurées.
+1. Sélectionnez __Enregistrer__ pour confirmer l’ajout du VPN et de toutes les connexions configurées.
 
-   ![Confirmer la création de VPN](./assets/vpn/confirmation.png)
+   ![Confirmer la création du VPN](./assets/vpn/confirmation.png)
 
-1. Attendez que l’infrastructure réseau soit créée et marquée comme __Prêt__. Ce processus peut prendre jusqu’à 1 heure.
+1. Attendez que l’infrastructure de réseau soit créée et marquée comme __Prête__. Ce processus peut prendre jusqu’à 1 heure.
 
-   ![Statut de création VPN](./assets/vpn/creating.png)
+   ![Statut de création du VPN](./assets/vpn/creating.png)
 
-Une fois le VPN créé, vous pouvez le configurer à l’aide des API Cloud Manager, comme décrit ci-dessous.
+Une fois le VPN créé, vous pouvez le configurer à l’aide des API Cloud Manager, comme décrit ci-dessous.
 
->[!TAB API de Cloud Manager]
+>[!TAB API Cloud Manager]
 
-Il est possible d’activer le réseau privé virtuel à l’aide des API de Cloud Manager. Les étapes suivantes indiquent comment activer VPN sur AEM as a Cloud Service à l’aide de l’API Cloud Manager.
+Il est possible d’activer le réseau privé virtuel à l’aide des API Cloud Manager. Les étapes suivantes indiquent comment activer le VPN sur AEM as a Cloud Service à l’aide de l’API Cloud Manager.
 
 1. Tout d’abord, déterminez la région dans laquelle le réseau avancé est nécessaire à l’aide de l’opération [listRegion](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager. Le `region name` est nécessaire pour effectuer les appels d’API Cloud Manager ultérieurs. En règle générale, la région dans laquelle l’environnement de production réside est utilisée.
 
@@ -183,7 +183,7 @@ Il est possible d’activer le réseau privé virtuel à l’aide des API de Clo
 
    Patientez 45-60 minutes pendant que le programme Cloud Manager approvisionne l’infrastructure réseau.
 
-1. Vérifier que l&#39;environnement est terminé __Réseau privé virtuel__ configuration à l’aide de l’API Cloud Manager [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) , à l’aide de la fonction `id` renvoyé par la fonction `createNetworkInfrastructure` Requête HTTP à l’étape précédente.
+1. Vérifiez que l’environnement a terminé la configuration du __réseau privé virtuel__ à l’aide de l’opération [getNetworkInfrastructure](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) de l’API Cloud Manager, en utilisant l’`id` renvoyé par la requête HTTP `createNetworkInfrastructure` de l’étape précédente.
 
    __Requête HTTP getNetworkInfrastructure__
 
@@ -198,7 +198,7 @@ Il est possible d’activer le réseau privé virtuel à l’aide des API de Clo
    Vérifiez que la réponse HTTP contient un __statut__ __prêt__. Si elle n’est pas encore prête, revérifiez le statut quelques minutes plus tard.
 
 
-Une fois le VPN créé, vous pouvez le configurer à l’aide des API Cloud Manager, comme décrit ci-dessous.
+Une fois le VPN créé, vous pouvez le configurer à l’aide des API Cloud Manager, comme décrit ci-dessous.
 
 >[!ENDTABS]
 
@@ -242,7 +242,7 @@ Une fois le VPN créé, vous pouvez le configurer à l’aide des API Cloud Mana
    }
    ```
 
-   `nonProxyHosts` déclare un ensemble d’hôtes pour lesquels le port 80 ou 443 doit être acheminé par les plages d’adresses IP partagées par défaut plutôt que par l’adresse IP de sortie dédiée. `nonProxyHosts` peut s’avérer utile, car le trafic passant par les adresses IP partagées est optimisé automatiquement par Adobe.
+   `nonProxyHosts` déclare un ensemble d’hôtes pour lesquels le port 80 ou 443 doit être acheminé par les plages d’adresses IP partagées par défaut plutôt que par l’adresse IP de sortie dédiée. `nonProxyHosts` peut s’avérer utile, car le trafic sortant par les adresses IP partagées est optimisé automatiquement par Adobe.
 
    Pour chaque mappage `portForwards`, la mise en réseau avancée définit la règle de transfert suivante :
 
@@ -253,7 +253,7 @@ Une fois le VPN créé, vous pouvez le configurer à l’aide des API Cloud Mana
    Si votre déploiement AEM nécessite __uniquement__ des connexions HTTP/HTTPS vers un service externe, laissez le tableau `portForwards` vide, car ces règles ne s’appliquent qu’aux requêtes autres que HTTP/HTTPS.
 
 
-2. Pour chaque environnement, validez les règles de routage VPN en vigueur à l’aide de l’API Cloud Manager. [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) opération.
+2. Pour chaque environnement, validez les règles de routage VPN en vigueur à l’aide de l’opération [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager.
 
    __Requête HTTP getEnvironmentAdvancedNetworkingConfiguration__
 
@@ -267,7 +267,7 @@ Une fois le VPN créé, vous pouvez le configurer à l’aide des API Cloud Mana
 
 3. Les configurations de réseau privé virtuel peuvent être mises à jour à l’aide de l’opération [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager. N’oubliez pas que `enableEnvironmentAdvancedNetworkingConfiguration` est une opération `PUT`, et que toutes les règles doivent par conséquent être fournies à chaque appel de cette opération.
 
-4. Vous pouvez désormais utiliser la configuration de sortie de réseau privé virtuel dans votre code d’AEM personnalisé et dans votre configuration.
+4. Vous pouvez désormais utiliser la configuration de réseau privé virtuel dans votre code AEM personnalisé et dans votre configuration.
 
 ## Se connecter à des services externes via un réseau privé virtuel
 
@@ -278,7 +278,7 @@ Lorsque le réseau privé virtuel est activé, le code et la configuration AEM p
 1. Appels non HTTP/HTTPS aux services externes
    + Cela inclut tous les appels non HTTP, tels que les connexions aux serveurs de messagerie, aux bases de données SQL ou aux services qui s’exécutent sur d’autres protocoles non HTTP/HTTPS.
 
-Les requêtes HTTP/HTTPS provenant d’AEM sur les ports standard (80/443) sont autorisées par défaut, mais n’utilisent pas la connexion VPN si elles ne sont pas configurées correctement, comme décrit ci-dessous.
+Les requêtes HTTP/HTTPS provenant d’AEM sur les ports standard (80/443) sont autorisées par défaut, mais elles n’utilisent pas la connexion au VPN si elles ne sont pas correctement configurées comme décrit ci-dessous.
 
 ### HTTP/HTTPS
 
@@ -296,7 +296,7 @@ Lors de la création de connexions HTTP/HTTPS à partir d’AEM, lors de l’uti
     <a  href="./examples/http-dedicated-egress-ip-vpn.md"><img alt="HTTP/HTTPS" src="./assets/code-examples__http.png"/></a>
     <div><strong><a href="./examples/http-dedicated-egress-ip-vpn.md">HTTP/HTTPS</a></strong></div>
     <p>
-        Exemple de code Java™ permettant d’établir une connexion HTTP/HTTPS d’AEM as a Cloud Service à un service externe à l’aide du protocole HTTP/HTTPS.
+        Exemple de code Java™ permettant d’établir une connexion HTTP/HTTPS depuis AEM as a Cloud Service vers un service externe à l’aide du protocole HTTP/HTTPS.
     </p>
 </td>
 <td></td>
