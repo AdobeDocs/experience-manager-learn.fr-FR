@@ -242,7 +242,7 @@ Une fois le VPN créé, vous pouvez le configurer à l’aide des API Cloud Man
     }
     ```
 
-`nonProxyHosts` déclare un ensemble d’hôtes pour lesquels le port 80 ou 443 doit être acheminé par les plages d’adresses IP partagées par défaut plutôt que par l’adresse IP de sortie dédiée. `nonProxyHosts` peut s’avérer utile, car le trafic sortant par les adresses IP partagées est optimisé automatiquement par Adobe.
+   `nonProxyHosts` déclare un ensemble d’hôtes pour lesquels le port 80 ou 443 doit être acheminé par les plages d’adresses IP partagées par défaut plutôt que par l’adresse IP de sortie dédiée. `nonProxyHosts` peut s’avérer utile, car le trafic sortant par les adresses IP partagées est optimisé automatiquement par Adobe.
 
     Pour chaque mappage `portForwards`, la mise en réseau avancée définit la règle de transfert suivante :
 
