@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 5f2415b45a99a92c6e2b72dfc80d47f6f899c7ad
-workflow-type: ht
-source-wordcount: '1184'
-ht-degree: 100%
+source-git-commit: 14767141348d3d56c154704cc21d39722bb67aec
+workflow-type: tm+mt
+source-wordcount: '1196'
+ht-degree: 99%
 
 ---
 
@@ -112,6 +112,11 @@ ht-degree: 100%
       + [Configuration](./developing/rde/how-to-setup.md)
       + [Utilisation](./developing/rde/how-to-use.md)
       + [Cycle de vie de développement](./developing/rde/development-life-cycle.md)
+   + Éditeur universel{#universal-editor}
+      + Modification de l’application React{#react-app-editing}
+         + [Vue d’ensemble](./developing/universal-editor/react-app/overview.md)
+         + [Configuration du développement local](./developing/universal-editor/react-app/local-development-setup.md)
+         + [Application React d’instrument](./developing/universal-editor/react-app/instrument-to-edit-content.md)
    + [JavaDocs de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + Déboguer AEM{#debugging}
    + Déboguer le SDK AEM{#debugging-aem-sdk}
