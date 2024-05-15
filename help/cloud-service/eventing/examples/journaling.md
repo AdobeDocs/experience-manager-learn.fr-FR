@@ -7,13 +7,13 @@ topic: Development, Architecture, Content Management
 role: Architect, Developer
 level: Beginner
 doc-type: Tutorial
-duration: 163
+duration: 280
 last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
 exl-id: 33eb0757-f0ed-4c2d-b8b9-fa6648e87640
-source-git-commit: 08ad6e3e6db6940f428568c749901b0b3c6ca171
-workflow-type: ht
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 100%
 

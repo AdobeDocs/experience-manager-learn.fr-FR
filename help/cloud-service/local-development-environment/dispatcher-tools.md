@@ -10,11 +10,11 @@ jira: KT-4679
 thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
-duration: 730
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
+duration: 624
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
 workflow-type: tm+mt
 source-wordcount: '1621'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 92%
 
 Le Dispatcher Adobe Experience Manager (AEM) est un module de serveur web HTTP Apache qui fournit une couche de sécurité et de performances entre le réseau CDN et le niveau de publication d’AEM. Il fait partie intégrante de l’architecture globale d’Experience Manager et doit faire partie de la configuration de développement local.
 
-Le SDK as a Cloud Service d’AEM comprend la version recommandée des outils Dispatcher qui facilite la configuration locale de la validation et de la simulation de Dispatcher. Les outils de Dispatcher se composent des éléments suivants :
+Le SDK AEM as a Cloud Service comprend la version recommandée des outils du Dispatcher qui facilite la configuration, la validation et la simulation locale du Dispatcher. Les outils du Dispatcher se composent des éléments suivants :
 
 + un ensemble de base de fichiers de configuration du serveur web Apache HTTP et du Dispatcher, situé dans le répertoire `.../dispatcher-sdk-x.x.x/src` ;
 + un outil d’interface de ligne de commande du validateur de configuration, situé dans le répertoire `.../dispatcher-sdk-x.x.x/bin/validate` ;
@@ -47,7 +47,7 @@ Notez que `~` est utilisé comme raccourci pour le répertoire de l’utilisateu
 ## Conditions préalables
 
 1. Les utilisateurs et utilisatrices de Windows doivent disposer de Windows 10 Professionel (ou une version prenant en charge Docker).
-1. Installer [Fichier Jar de démarrage rapide de publication Experience Manager](./aem-runtime.md) sur la machine de développement locale.
+1. Installez le [fichier Jar Quickstart de publication d’Experience Manager](./aem-runtime.md) sur la machine de développement locale.
 
 + Vous pouvez éventuellement installer la dernière version du [site de référence AEM](https://github.com/adobe/aem-guides-wknd/releases) sur le service de publication AEM local. Ce site est utilisé dans ce tutoriel pour visualiser un Dispatcher en cours de fonctionnement.
 
@@ -105,11 +105,11 @@ Toutes les commandes émises ci-dessous supposent que le répertoire de travail 
 ## Comprendre les fichiers de configuration de Dispatcher
 
 >[!TIP]
-Projets Experience Manager créés à partir de [Archétype Maven de projet AEM](https://github.com/adobe/aem-project-archetype) sont prérenseignés à cet ensemble de fichiers de configuration de Dispatcher. Il n’est donc pas nécessaire de les copier depuis le dossier src des outils Dispatcher.
+> Les projets Experience Manager créés à partir de l’[Archétype Maven de projet AEM](https://github.com/adobe/aem-project-archetype) sont prérenseignés par cet ensemble de fichiers de configuration de Dispatcher. Il n’est donc pas nécessaire de les copier depuis le dossier src des outils du Dispatcher.
 
 Les outils du Dispatcher fournissent un ensemble de fichiers de configuration du serveur web Apache HTTP et du Dispatcher qui définissent le comportement de tous les environnements, y compris du développement local.
 
-Ces fichiers sont destinés à être copiés dans un projet Maven Experience Manager vers le `dispatcher/src` s’ils n’existent pas dans le projet Maven Experience Manager.
+Ces fichiers sont destinés à être copiés dans un projet Maven d’Experience Manager vers le dossier `dispatcher/src` s’ils n’existent pas déjà dans le projet Maven d’Experience Manager.
 
 Une description complète des fichiers de configuration est disponible dans les outils du Dispatcher décompressés sous la forme `dispatcher-sdk-x.x.x/docs/Config.html`.
 
@@ -331,7 +331,7 @@ Lors de la validation de vos configurations de Dispatcher spécifiques au projet
 
 + Vérifiez les fichiers non modifiables mis à jour comme `dispatcher_vhost.conf`, `default.vhost`, et `default.farm` et, si nécessaire, apportez les modifications pertinentes à vos fichiers personnalisés qui sont dérivés de ces fichiers.
 
-+ Revalider la configuration, elle doit être transmise
++ Revalidez la configuration, et cela devrait fonctionner.
 
 ```shell
 $ ./bin/validate.sh ${YOUR-AEM-PROJECT}/dispatcher/src
@@ -353,7 +353,7 @@ Phase 3 finished
 
 `host.docker.internal` est un nom d’hôte fourni au conteneur Docker qui résout l’hôte. Pour docs.docker.com ([macOS](https://docs.docker.com/desktop/networking/), [Windows](https://docs.docker.com/desktop/networking/)) :
 
->À compter de la version 18.03 de Docker, il est recommandé de se connecter au nom DNS spécial host.docker.internal, qui correspond à l’adresse IP interne utilisée par l’hôte.
+> À compter de la version 18.03 de Docker, il est recommandé de se connecter au nom DNS spécial host.docker.internal, qui correspond à l’adresse IP interne utilisée par l’hôte.
 
 Lorsque `bin/docker_run src host.docker.internal:4503 8080` renvoie le message __En attente jusqu’à ce que host.docker.internal soit disponible__ :
 
@@ -365,17 +365,17 @@ Lorsque `bin/docker_run src host.docker.internal:4503 8080` renvoie le message _
 >[!TAB macOS]
 
 + Depuis le terminal, exécutez `ifconfig` et enregistrer l’adresse IP __inet__ de l’hôte, généralement l’appareil __en0__.
-+ Exécutez `docker_run` en utilisant l’adresse IP de l’hôte : `$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`
++ Exécutez ensuite `docker_run` en utilisant l’adresse IP de l’hôte :`$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`
 
 >[!TAB Windows]
 
 + Dans l’invite de commande, exécutez `ipconfig`, et enregistrez l’__adresse IPv4__ de l’hôte de l’ordinateur hôte.
-+ Ensuite, exécutez `docker_run` en utilisant cette adresse IP : `$ bin\docker_run src <HOST IP>:4503 8080`
++ Ensuite, exécutez `docker_run` en utilisant cette adresse IP :`$ bin\docker_run src <HOST IP>:4503 8080`
 
 >[!TAB Linux®]
 
 + Depuis le terminal, exécutez `ifconfig` et enregistrer l’adresse IP __inet__ de l’hôte, généralement l’appareil __en0__.
-+ Exécutez `docker_run` en utilisant l’adresse IP de l’hôte : `$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`
++ Exécutez ensuite `docker_run` en utilisant l’adresse IP de l’hôte :`$ bin/docker_run_hot_reload.sh src <HOST IP>:4503 8080`
 
 >[!ENDTABS]
 

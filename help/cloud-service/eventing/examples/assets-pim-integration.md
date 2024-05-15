@@ -7,13 +7,13 @@ topic: Development, Architecture, Content Management
 role: Architect, Developer
 level: Beginner
 doc-type: Tutorial
-duration: 0
+duration: 761
 last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 08ad6e3e6db6940f428568c749901b0b3c6ca171
-workflow-type: ht
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 100%
 
@@ -45,9 +45,9 @@ Le flux de traitement des événements est le suivant :
 
 Les éléments suivants sont requis afin de terminer ce tutoriel :
 
-- Environnement AEM as a Cloud Service avec [AEM Eventing activé](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). Aussi, l’exemple de projet [Sites WKND](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) doit être déployé dessus.
+- Environnement AEM as a Cloud Service avec [AEM Eventing activé](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). L’exemple de projet [Sites WKND](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) doit être déployé dessus.
 
-- Accédez à [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
+- Accès à [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
 - [Interface de ligne de commande d’Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installée sur votre ordinateur local.
 

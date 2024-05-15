@@ -8,10 +8,10 @@ level: Beginner
 version: Cloud Service
 topic: Integrations
 jira: KT-14501
-duration: 31
+duration: 24
 exl-id: a8531e82-18cd-4b32-8148-d6fc5f6e51c6
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Dans ce tutoriel, vous découvrez comment mettre en œuvre un cas d’utilisatio
 Pour mettre en œuvre le cas d’utilisation ci-dessus dans AEM Forms CS, vous aurez besoin des éléments suivants :
 
 * [Instance compatible avec le cloud AEM Forms CS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/intellij-and-aem-sync.html?lang=fr#set-up-aem-author-instance)
-* [Compte Azure Portal](https://portal.azure.com/)
+* [Compte de portail Azure](https://portal.azure.com/)
 
 
 ### Étapes suivantes

@@ -3,9 +3,9 @@ title: Développer des statuts de ressources dans AEM Sites
 description: Les API de statut des ressources d’Adobe Experience Manager constituent un framework enfichable permettant d’afficher les messages de statut dans les différentes interfaces utilisateur web de l’éditeur d’AEM.
 doc-type: Tutorial
 version: 6.4, 6.5
-duration: 115
-source-git-commit: f23c2ab86d42531113690df2e342c65060b5c7cd
-workflow-type: ht
+duration: 88
+source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 100%
 
