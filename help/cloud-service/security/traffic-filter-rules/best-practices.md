@@ -12,10 +12,10 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
 duration: 170
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 100%
+source-wordcount: '411'
+ht-degree: 88%
 
 ---
 
@@ -32,13 +32,13 @@ Découvrez les bonnes pratiques relatives aux règles de filtrage du trafic, y c
 - Lorsque vous créez et validez des règles, commencez toujours par le type `action` `log` pour vous assurer que la règle ne bloquera pas le trafic légitime.
 - Pour certaines règles, la transition de `log` à `block` doit être uniquement basée sur l’analyse d’un trafic suffisant sur le site.
 - Introduisez les règles de manière incrémentielle et pensez à impliquer vos équipes de test (contrôle qualité, performance, test de pénétration) dans le processus.
-- Analysez régulièrement l’impact des règles grâce aux [Outils du tableau de bord](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool). Selon le volume de trafic sur votre site, l’analyse sera effectuée tous les jours, toutes les semaines ou tous les mois.
+- Analysez régulièrement l’impact des règles grâce aux [Outils du tableau de bord](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Selon le volume de trafic sur votre site, l’analyse sera effectuée tous les jours, toutes les semaines ou tous les mois.
 - Pour bloquer le trafic malveillant décelé après l’analyse, ajoutez des règles supplémentaires. Par exemple, les adresses IP qui ont attaqué votre site.
 - La création, le déploiement et l’analyse de règles doivent constituer un processus continu et itératif. Il ne s’agit aucunement d’une activité ponctuelle.
 
 ## Bonnes pratiques relatives aux règles de filtrage du trafic
 
-Activez les règles de filtrage du trafic ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour les propriétés `rateLimit` et `clientCountry` doivent être déterminées en collaboration avec votre équipe de sécurité.
+Activez les règles de filtrage du trafic ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour `rateLimit` et `clientCountry` Les propriétés doivent être déterminées en collaboration avec votre équipe de sécurité.
 
 ```yaml
 kind: CDN
@@ -91,9 +91,9 @@ data:
 
 ## Bonnes pratiques relatives aux règles WAF
 
-Dès l’activation de votre licence WAF pour le programme, le trafic correspondant aux indicateurs WAF apparaît dans les graphiques et les journaux de requêtes, même si vous ne les avez pas déclarés dans une règle. Cela vous permet de toujours avoir conscience d’un nouveau trafic malveillant potentiel et de créer des règles selon vos besoins. Examinez les indicateurs WAF qui ne sont pas reflétés dans les règles déclarées et envisagez de les créer.
+Dès l’activation de votre licence WAF pour le programme, le trafic correspondant aux indicateurs WAF apparaît dans les graphiques et les journaux de requêtes, même si vous ne les avez pas déclarés dans une règle. Ainsi, vous êtes toujours conscient du trafic potentiellement malveillant et vous pouvez créer des règles selon vos besoins. Examinez les indicateurs WAF qui ne sont pas reflétés dans les règles déclarées et envisagez de les créer.
 
-Tenez compte des règles WAF ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour `action` et la propriété `wafFlags` doivent être déterminées en collaboration avec votre équipe responsable de la sécurité.
+Tenez compte des règles WAF ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour `action` et `wafFlags` doit être déterminée en collaboration avec votre équipe de sécurité.
 
 ```yaml
 kind: CDN

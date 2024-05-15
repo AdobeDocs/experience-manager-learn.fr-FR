@@ -12,10 +12,10 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
 duration: 292
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 100%
+source-wordcount: '575'
+ht-degree: 79%
 
 ---
 
@@ -63,7 +63,7 @@ Consultez un exemple de fichier `cdn.yaml` dans le projet AEM Guides Sites WKN
 
 ### Déployer les règles via Cloud Manager {#deploy-rules-through-cloud-manager}
 
-Pour déployer les règles, procédez comme suit :
+Pour déployer les règles, procédez comme suit :
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
@@ -95,7 +95,7 @@ Pour déployer les règles, procédez comme suit :
 
 ### Tester les règles en générant du trafic
 
-Pour tester les règles, choisissez parmi les outils tiers disponibles en fonction des préférences de votre entreprise. À des fins de démonstration, nous allons utiliser les outils suivants :
+Pour tester les règles, choisissez parmi les outils tiers disponibles en fonction des préférences de votre entreprise. À des fins de démonstration, nous allons utiliser les outils suivants :
 
 - [Curl](https://curl.se/) pour les tests de base, comme appeler une URL et vérifier le code de réponse.
 
@@ -119,9 +119,11 @@ Pour tester les règles, choisissez parmi les outils tiers disponibles en foncti
 
 ### Analyser les résultats à l’aide des outils du tableau de bord
 
-Une fois que vous avez créé, déployé et testé les règles, vous pouvez analyser les résultats à l’aide des outils du tableau de bord **Elasticsearch, Logstash et Kibana (ELK)**. Ces outils permettent d’analyser les journaux du réseau CDN AEMCS et de visualiser les résultats sous forme de graphiques.
+Après avoir créé, déployé et testé les règles, vous pouvez analyser les résultats à l’aide de la fonction **CDN** logs et **AEMCS-CDN-Log-Analysis-Tooling**. L’outil fournit un ensemble de tableaux de bord pour visualiser les résultats de la pile Splunk et ELK (Elasticsearch, Logstash et Kibana).
 
-Les outils du tableau de bord peuvent être clonés directement à partir du [référentiel GitHub AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool). Suivez également les étapes d’installation et de chargement du tableau de bord **Règles de filtrage de trafic (y compris WAF)**.
+Les outils peuvent être clonés à partir de la fonction [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) Référentiel GitHub. Suivez ensuite les instructions pour installer et charger le **Tableau de bord du trafic CDN** et **Tableau de bord WAF** des tableaux de bord pour l’outil d’observabilité de votre choix.
+
+Dans ce tutoriel, nous allons utiliser la pile ELK. Suivez la [Conteneur Docker ELK pour l’analyse des journaux CDN AEM](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) instructions pour configurer la pile ELK.
 
 - Une fois que vous avez chargé l’exemple de tableau de bord, la page d’outils du tableau de bord Elastic doit se présenter comme suit :
 

@@ -12,10 +12,10 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 100%
+source-wordcount: '1968'
+ht-degree: 91%
 
 ---
 
@@ -34,7 +34,7 @@ Examinons les protections par défaut contre les attaques DDoS de votre site web
 - **Blocage :** le réseau de diffusion de contenu Adobe bloque le trafic vers le point d’origine s’il dépasse un débit défini par Adobe à partir d’une adresse IP spécifique, par PoP (Point de présence) du réseau de diffusion de contenu.
 - **Alertes :** le Centre d’actions envoie une notification d’alerte de pic de trafic au point d’origine lorsque le trafic dépasse un certain débit. Cette alerte se déclenche lorsque le trafic sur un réseau de diffusion de contenu donné dépasse une valeur de taux de requêtes par adresse IP _définie par Adobe_. Voir [Alertes des règles de filtrage de trafic](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) pour plus d’informations.
 
-Ces protections intégrées doivent être considérées comme une référence pour la capacité d’une organisation à minimiser l’impact d’une attaque DDoS sur les performances. Chaque site web ayant des caractéristiques de performances différentes et pouvant ainsi subir une dégradation des performances avant que la limite de débit définie par Adobe ne soit atteinte, il est recommandé d’étendre les protections par défaut via la _configuration des clientes et clients_.
+Ces protections intégrées doivent être considérées comme une référence pour la capacité d’une organisation à minimiser l’impact d’une attaque DDoS sur les performances. Chaque site web ayant des caractéristiques de performances différentes et pouvant constater une dégradation des performances avant que la limite de taux définie par l’Adobe ne soit atteinte, il est recommandé d’étendre les protections par défaut par le biais de _configuration client_.
 
 Voici quelques autres mesures recommandées que les clientes et clients peuvent prendre pour protéger leurs sites contre les attaques DDoS :
 
@@ -76,14 +76,20 @@ Adobe envoie une alerte de pic de trafic à l&#39;origine sous la forme d’une 
 
 ## Analyser les modèles de trafic {#analyze-traffic}
 
-Si votre site est déjà actif, vous pouvez analyser les modèles de trafic à l’aide des journaux du réseau de diffusion de contenu et de l’une des méthodes suivantes :
+Si votre site est déjà actif, vous pouvez analyser les schémas de trafic à l’aide des journaux CDN et des tableaux de bord fournis par l’Adobe.
+
+- **Tableau de bord du trafic CDN**: fournit des informations sur le trafic via le réseau de diffusion de contenu et le taux de demande d’origine, les taux d’erreur 4xx et 5xx, ainsi que les demandes non mises en cache. Fournit également le nombre maximal de demandes de CND et d’origine par seconde par adresse IP client et des informations supplémentaires pour optimiser les configurations de CDN.
+
+- **Taux d’accès au cache du réseau CDN**: fournit des informations sur le taux d’accès au cache total et le nombre total de requêtes par accès, PASS et état MISS. Fournit également les principales URL d’accès, de PASS et de MISS.
+
+Configuration de l’outil de tableau de bord à l’aide de _l’une des options suivantes_:
 
 ### ELK - configurer les outils du tableau de bord
 
 Les outils de tableau de bord **Elasticsearch, Logstash et Kibana (ELK)** fournis par Adobe peuvent être utilisés pour analyser les journaux du réseau de diffusion de contenu. Ces outils incluent un tableau de bord qui affiche les modèles de trafic, qui aide à déterminer les seuils optimaux pour vos règles de filtrage du trafic limitant le débit.
 
-- Clonez le référentiel GitHub [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool).
-- Configurez les outils en suivant la procédure [Configurer le conteneur ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool?tab=readme-ov-file#how-to-set-up-the-elk-docker-container).
+- Cloner le [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) Référentiel GitHub.
+- Configurez les outils en suivant la procédure [Configurer le conteneur ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container).
 - Dans le cadre de la configuration, importez le fichier `traffic-filter-rules-analysis-dashboard.ndjson` pour visualiser les données. Le tableau de bord _Trafic du réseau de diffusion de contenu_ inclut des visualisations qui affichent le nombre maximal de requêtes par adresse IP/PoP au niveau de l’origine et de la périphérie du réseau de diffusion de contenu.
 - À partir de la vignette _Environnements_ de [Cloud Manager](https://my.cloudmanager.adobe.com/), téléchargez les journaux du réseau de diffusion de contenu du service de publication d’AEMCS.
 
@@ -95,9 +101,9 @@ Les outils de tableau de bord **Elasticsearch, Logstash et Kibana (ELK)** fourni
 
 ### Splunk - configurer les outils du tableau de bord
 
-Les clientes et les clients qui ont activé le [Transfert de journal Splunk](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) peuvent créer un tableau de bord pour analyser les modèles de trafic. Le fichier XML suivant vous aide à créer un tableau de bord sur Splunk :
+Clients qui ont [Transfert de journal Splunk activé](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) Vous pouvez créer de nouveaux tableaux de bord pour analyser les schémas de trafic.
 
-- [Réseau de diffusion de contenu - Tableau de bord du trafic](./assets/traffic-dashboard.xml) : ce tableau de bord fournit des informations sur les modèles de trafic à l’origine et Edge du réseau de diffusion de contenu. Il inclut des visualisations qui affichent le nombre maximal de requêtes par adresse IP/PoP pour l’origine et Edge du réseau de diffusion de contenu.
+Pour créer des tableaux de bord dans Splunk, procédez comme suit : [Tableaux de bord Splunk pour l’analyse des journaux de réseau de diffusion de contenu AEM](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md#splunk-dashboards-for-aemcs-cdn-log-analysis) étapes.
 
 ### Observer les données
 

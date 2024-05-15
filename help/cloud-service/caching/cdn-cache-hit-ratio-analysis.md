@@ -12,10 +12,10 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 100%
+source-wordcount: '1458'
+ht-degree: 77%
 
 ---
 
@@ -32,13 +32,14 @@ Les journaux de réseau CDN sont disponibles au format JSON, qui contient divers
 |------------------------------------|:-----------------------------------------------------:|
 | HIT | Les données demandées sont _récupérées dans le cache du réseau CDN et ne nécessitent pas d’effectuer une requête de récupération_ auprès du serveur AEM. |
 | MISS | Les données requises sont _introuvables dans le cache du réseau CDN et doivent faire l’objet d’une requête_ au serveur AEM. |
-| PASS | Les données requises sont _explicitement définies pour ne pas être mises en cache_ et toujours récupérées à partir du serveur AEM. |
+| PASS | Les données demandées sont : _défini explicitement pour ne pas être mis en cache_ et toujours récupéré à partir du serveur AEM. |
 
 Pour les besoins de ce tutoriel, le [projet AEM WKND](https://github.com/adobe/aem-guides-wknd) est déployé dans l’environnement AEM as a Cloud Service et un petit test de performance est déclenché à l’aide d’[Apache JMeter](https://jmeter.apache.org/).
 
 Ce tutoriel est structuré de manière à vous guider dans le processus suivant :
+
 1. Téléchargement des journaux de réseau CDN via Cloud Manager
-1. Analyse de ces journaux de réseau CDN, qui peuvent être réalisés avec deux méthodes : un tableau de bord installé localement ou Jupityer Notebook accessible à distance (pour ceux qui disposent d’une licence Adobe Experience Platform)
+1. L’analyse de ces journaux CDN peut être effectuée avec deux méthodes : un tableau de bord installé localement ou un notebook Splunk ou Jupityer accessible à distance (pour ceux qui disposent d’une licence Adobe Experience Platform).
 1. Optimisation de la configuration du cache de réseau CDN
 
 ## Télécharger les journaux de réseau CDN
@@ -60,24 +61,27 @@ Si le fichier journal téléchargé date d’_aujourd’hui_, l’extension de f
 
 ## Analyser les journaux de réseau CDN téléchargés
 
-Pour obtenir des informations telles que le taux d’accès au cache et les URL principales des types de cache MISS et PASS, analysez le fichier journal de réseau CDN téléchargé. Ces informations permettent d’optimiser la [Configuration du cache de réseau CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=fr) et d’améliorer les performances du site.
+Pour obtenir des informations telles que le taux d’accès au cache et les URL principales des types de cache MISS et PASS, analysez le fichier journal de réseau CDN téléchargé. Ces informations permettent d’optimiser la [Configuration du cache de réseau CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching) et d’améliorer les performances du site.
 
-Pour analyser les journaux de réseau CDN, cet article utilise deux options : les [outils de tableau de bord](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) **Elasticsearch, Logstash et Kibana (ELK)** et [Jupyter Notebook](https://jupyter.org/). Les outils de tableau de bord ELK peuvent être installés localement sur votre ordinateur portable, tandis que l’outil Notebook Jupyter est accessible à distance [dans le cadre d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=fr) sans installer de logiciel supplémentaire, pour les personnes qui disposent d’une licence Adobe Experience Platform.
+Pour analyser les journaux CDN, ce tutoriel présente trois options :
 
+1. **Elasticsearch, Logstash et Kibana (ELK)**: la variable [Outils de tableau de bord ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) peut être installé localement.
+1. **Splunk**: la variable [Outils du tableau de bord Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) nécessite l’accès à Splunk et [Transfert de journal AEMCS activé](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) pour ingérer les journaux CDN.
+1. [Notebook Jupyter](https://jupyter.org/): accessible à distance dans le cadre de [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) sans installer de logiciel supplémentaire, pour les clients qui disposent d’une licence Adobe Experience Platform.
 
 ### Option 1 : utilisation des outils de tableau de bord ELK
 
 La [pile ELK](https://www.elastic.co/elastic-stack) est un ensemble d’outils fournissant une solution évolutive et permettant de rechercher, d’analyser et de visualiser les données. Elle se compose d’Elasticsearch, de Logstash et de Kibana.
 
-Pour identifier les détails clés, nous allons utiliser le projet d’outils de tableau de bord [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool). Ce projet fournit un conteneur Docker de la pile ELK et un tableau de bord Kibana préconfiguré pour analyser les journaux de réseau CDN.
+Pour identifier les détails clés, nous allons utiliser la variable [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) projet. Ce projet fournit un conteneur Docker de la pile ELK et un tableau de bord Kibana préconfiguré pour analyser les journaux de réseau CDN.
 
-1. Suivez les étapes de [Configuration du conteneur ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool#how-to-set-up-the-elk-docker-container) et veillez à importer le tableau de bord Kibana **Taux d’accès au cache du réseau CDN**.
+1. Suivez les étapes de [Configuration du conteneur ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) et veillez à importer la variable **Taux d’accès au cache du réseau CDN** Tableau de bord de Kibana.
 
 1. Pour identifier le taux d’accès au cache du réseau CDN et aux URL principales, procédez comme suit :
 
-   1. Copiez le ou les fichiers journaux de réseau CDN téléchargés dans le dossier spécifique à l’environnement.
+   1. Copiez le ou les fichiers journaux CDN téléchargés dans le dossier des journaux spécifiques à l’environnement, par exemple : `ELK/logs/stage`.
 
-   1. Ouvrez le tableau de bord **Taux d’accès au cache du réseau CDN** en cliquant dans le coin supérieur gauche sur Menu de navigation > Analytics > Tableau de bord > Taux d’accès au cache du réseau CDN.
+   1. Ouvrez le **Taux d’accès au cache du réseau CDN** tableau de bord en cliquant sur le coin supérieur gauche _Menu de navigation > Analytics > Tableau de bord > Rapport d’accès au cache du réseau CDN_.
 
       ![Taux d’accès au cache du réseau CDN : tableau de bord Kibana](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
 
@@ -126,11 +130,22 @@ Pour filtrer les journaux ingérés par nom d’hôte, procédez comme suit :
 
 De même, ajoutez d’autres filtres au tableau de bord en fonction des exigences d’analyse.
 
-### Option 2 : utilisation de Jupyter Notebook
+### Option 2 : utilisation des outils du tableau de bord Splunk
 
-Pour les personnes qui préfèrent ne pas installer de logiciel localement (c’est-à-dire les outils de tableau de bord ELK de la section précédente), il existe une autre option, mais elle nécessite une licence pour Adobe Experience Platform.
+La variable [Splunk](https://www.splunk.com/) est un outil d’analyse des journaux populaire qui permet d’agréger, d’analyser les journaux et de créer des visualisations à des fins de surveillance et de dépannage.
 
-[Jupyter Notebook](https://jupyter.org/) est une application web open source qui permet de créer des documents contenant du code, du texte et des visualisations. Elle est utilisée pour la transformation, la visualisation et la modélisation statistique des données. Elle est accessible à distance [dans le cadre d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data.html?lang=fr).
+Pour identifier les détails clés, nous allons utiliser la variable [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) projet. Ce projet fournit un tableau de bord Splunk pour analyser les journaux CDN.
+
+1. Suivez les étapes de [Tableaux de bord Splunk pour l’analyse des journaux de réseau de diffusion de contenu AEM](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) et veillez à importer la variable **Taux d’accès au cache du réseau CDN** Tableau de bord Splunk.
+1. Si nécessaire, mettez à jour la variable _Index, type de source et autres_ filtrer les valeurs dans le tableau de bord Splunk.
+
+   ![Tableau de bord Splunk](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}
+
+### Option 3 : utilisation de Jupyter Notebook
+
+Pour ceux qui préfèrent ne pas installer de logiciel localement (c’est-à-dire l’outil de tableau de bord ELK de la section précédente), il existe une autre option, mais elle nécessite une licence pour Adobe Experience Platform.
+
+[Jupyter Notebook](https://jupyter.org/) est une application web open source qui permet de créer des documents contenant du code, du texte et des visualisations. Elle est utilisée pour la transformation, la visualisation et la modélisation statistique des données. Elle est accessible à distance [dans le cadre d’Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data).
 
 #### Télécharger le fichier Interactive Python Notebook
 
@@ -181,6 +196,6 @@ Vous pouvez améliorer Jupyter Notebook de sorte à analyser les journaux de r�
 
 Après avoir analysé les journaux de réseau CDN, vous pouvez optimiser la configuration du cache de réseau CDN pour améliorer les performances du site. La bonne pratique AEM consiste à obtenir un taux d’accès au cache de 90 % ou plus.
 
-Pour plus d’informations, voir [Optimisation de la configuration du cache de réseau CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=fr#caching).
+Pour plus d’informations, voir [Optimisation de la configuration du cache de réseau CDN](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching).
 
 Le projet AEM WKND comporte une configuration de réseau CDN de référence. Pour plus d’informations, voir [Configuration du réseau CDN](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L137-L190) dans le fichier `wknd.vhost`.
