@@ -10,10 +10,10 @@ topic: Integrations
 jira: KT-15126
 exl-id: b369ed05-ba25-4b0e-aa3b-e7fc1621067d
 duration: 52
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: e8e51fadaa824d615524a8c4c41aefb656d0391d
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 100%
+source-wordcount: '290'
+ht-degree: 81%
 
 ---
 
@@ -39,8 +39,9 @@ Cet article suppose que vous avez [configuré le formulaire adaptatif pour envoy
 * Configurez l’étape d’appel FDM pour utiliser le modèle de données de formulaire créé lors de l’étape précédente.
 * ![associate-fdm](assets/fdm-insert-1.png)
 
-* ![map-input-parameters](assets/fdm-insert-2.png)
-* Notez l’utilisation de la notation par points JSON. Les données envoyées sont au format ci-dessous et nous procédons à l’extraction de l’objet ContactUS à partir des données envoyées.
+## Formulaire adaptatif basé sur des composants principaux
+
+Les données envoyées sont au format suivant. Nous devons extraire l’objet ContactUS à l’aide de la notation par points à l’étape de workflow d’appel du service de modèle de données de formulaire , comme illustré dans la capture d’écran.
 
 ```json
 {
@@ -54,6 +55,41 @@ Cet article suppose que vous avez [configuré le formulaire adaptatif pour envoy
 ```
 
 
+* ![map-input-parameters](assets/fdm-insert-2.png)
+
+
+## Formulaire adaptatif basé sur des composants de base
+
+Les données envoyées sont au format suivant. Extrayez l’objet JSON ContactUS à l’aide de la notation par point dans l’étape de flux de travaux d’appel du service de modèle de données de formulaire .
+
+```json
+{
+    "afData": {
+        "afUnboundData": {
+            "data": {}
+        },
+        "afBoundData": {
+            "data": {
+                "ContactUS": {
+                    "Title": "Lord",
+                    "HighNetWorth": "true",
+                    "SubmitterName": "John Doe",
+                    "Products": "Forms"
+                }
+            }
+        },
+        "afSubmissionInfo": {
+            "lastFocusItem": "guide[0].guide1[0].guideRootPanel[0].afJsonSchemaRoot[0]",
+            "stateOverrides": {},
+            "signers": {},
+            "afPath": "/content/dam/formsanddocuments/foundationform",
+            "afSubmissionTime": "20240517100126"
+        }
+    }
+}
+```
+
+![foundation-based-form](assets/foundation-based-form.png)
 
 ## Configurer un formulaire adaptatif pour déclencher un workflow AEM
 
