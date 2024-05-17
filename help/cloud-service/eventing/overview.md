@@ -12,10 +12,10 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c0aa4049e846a0f24f8a5f5b014dbaf5bfc8eb2d
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 100%
+source-wordcount: '941'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Découvrez AEM Eventing, en quoi cela consiste, pourquoi et quand l’utiliser,
 
 >[!IMPORTANT]
 >
->Eventing pour AEM as a Cloud Service n’est disponible que pour les utilisateurs et utilisatrices enregistrés en mode de version préliminaire. Pour activer AEM Eventing dans votre environnement AEM as a Cloud Service, contactez l’équipe [AEM Eventing](mailto:grp-aem-events@adobe.com).
+>Eventing pour AEM as a Cloud Service n’est disponible que pour les utilisateurs et utilisatrices enregistrés en mode de version préliminaire. Pour activer AEM événements dans votre environnement AEM as a Cloud Service, contactez le <a href="mailto:grp-aem-events@adobe.com">AEM Eventing Team</a>.
 
 ## Présentation
 
@@ -75,7 +75,7 @@ AEM Eventing, bien que puissant, présente certaines limites à prendre en comp
 
 ## Activation
 
-L’activation AEM Eventing s’effectue pour chaque environnement AEM as a Cloud Service et est disponible uniquement pour les environnements en mode de version préliminaire. Contactez l’équipe [AEM Eventing](mailto:grp-aem-events@adobe.com) pour activer votre environnement AEM avec AEM Eventing.
+L’activation AEM Eventing s’effectue pour chaque environnement AEM as a Cloud Service et est disponible uniquement pour les environnements en mode de version préliminaire. Contactez le <a href="mailto:grp-aem-events@adobe.com">AEM Eventing Team</a> pour activer votre environnement AEM avec AEM Eventing.
 
 S’il est déjà activé, consultez [Activer les événements AEM dans votre environnement AEM Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) pour les étapes suivantes.
 
