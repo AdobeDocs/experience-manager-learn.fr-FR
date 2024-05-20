@@ -12,7 +12,7 @@ last-substantial-update: 2024-05-17T00:00:00Z
 jira: KT-15505
 thumbnail: KT-15505.jpeg
 exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
-source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
+source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 1%
@@ -60,7 +60,7 @@ Pour lancer rapidement l’analyse des journaux, Adobe fournit des tableaux de b
 
 Pour les organisations qui exploitent [Splunk](https://www.splunk.com/en_us/products/observability-cloud.html) et qui ont activé le transfert de journaux AEM vers leurs instances Splunk peuvent rapidement importer des tableaux de bord préconfigurés. Cette configuration facilite l’analyse accélérée des journaux, fournissant ainsi des informations exploitables pour optimiser les mises en oeuvre d’AEM et atténuer les menaces de sécurité telles que les attaques DOS.
 
-Vous pouvez commencer à utiliser la méthode [Tableaux de bord Splunk pour l’analyse des journaux de réseau de diffusion de contenu AEM](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md#splunk-dashboards-for-aemcs-cdn-log-analysis) guide.
+Vous pouvez commencer à utiliser la méthode [Tableaux de bord Splunk pour l’analyse des journaux de réseau de diffusion de contenu AEM](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) guide.
 
 
 ## Intégration ELK

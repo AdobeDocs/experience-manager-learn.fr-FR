@@ -12,7 +12,7 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
+source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 75%
@@ -66,7 +66,7 @@ Pour obtenir des informations telles que le taux d’accès au cache et les URL 
 Pour analyser les journaux CDN, ce tutoriel présente trois options :
 
 1. **Elasticsearch, Logstash et Kibana (ELK)**: la variable [Outils de tableau de bord ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) peut être installé localement.
-1. **Splunk**: la variable [Outils du tableau de bord Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) nécessite l’accès à Splunk et [Transfert de journal AEMCS activé](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) pour ingérer les journaux CDN.
+1. **Splunk**: la variable [Outils du tableau de bord Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) nécessite l’accès à Splunk et [Transfert de journal AEMCS activé](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) pour ingérer les journaux CDN.
 1. **Notebook Jupyter**: accessible à distance dans le cadre de [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) sans installer de logiciel supplémentaire, pour les clients qui disposent d’une licence Adobe Experience Platform.
 
 ### Option 1 : utilisation des outils de tableau de bord ELK
@@ -136,7 +136,7 @@ La variable [Splunk](https://www.splunk.com/) est un outil d’analyse des journ
 
 Pour identifier les détails clés, nous allons utiliser la variable [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) projet. Ce projet fournit un tableau de bord Splunk pour analyser les journaux CDN.
 
-1. Suivez les étapes de [Tableaux de bord Splunk pour l’analyse des journaux de réseau de diffusion de contenu AEM](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) et veillez à importer la variable **Taux d’accès au cache du réseau CDN** Tableau de bord Splunk.
+1. Suivez les étapes de [Tableaux de bord Splunk pour l’analyse des journaux de réseau de diffusion de contenu AEM](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) et veillez à importer la variable **Taux d’accès au cache du réseau CDN** Tableau de bord Splunk.
 1. Si nécessaire, mettez à jour la variable _Index, type de source et autres_ filtrer les valeurs dans le tableau de bord Splunk.
 
    ![Tableau de bord Splunk](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}

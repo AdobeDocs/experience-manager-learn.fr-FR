@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
+source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
 workflow-type: tm+mt
 source-wordcount: '1968'
 ht-degree: 91%
@@ -103,7 +103,7 @@ Les outils de tableau de bord **Elasticsearch, Logstash et Kibana (ELK)** fourni
 
 Clients qui ont [Transfert de journal Splunk activé](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) Vous pouvez créer de nouveaux tableaux de bord pour analyser les schémas de trafic.
 
-Pour créer des tableaux de bord dans Splunk, procédez comme suit : [Tableaux de bord Splunk pour l’analyse des journaux de réseau de diffusion de contenu AEM](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md#splunk-dashboards-for-aemcs-cdn-log-analysis) étapes.
+Pour créer des tableaux de bord dans Splunk, procédez comme suit : [Tableaux de bord Splunk pour l’analyse des journaux de réseau de diffusion de contenu AEM](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md#splunk-dashboards-for-aemcs-cdn-log-analysis) étapes.
 
 ### Observer les données
 
