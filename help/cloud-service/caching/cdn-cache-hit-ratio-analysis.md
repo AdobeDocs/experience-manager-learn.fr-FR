@@ -12,10 +12,10 @@ jira: KT-13312
 thumbnail: KT-13312.jpeg
 exl-id: 43aa7133-7f4a-445a-9220-1d78bb913942
 duration: 276
-source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
+source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
 workflow-type: tm+mt
-source-wordcount: '1458'
-ht-degree: 77%
+source-wordcount: '1476'
+ht-degree: 75%
 
 ---
 
@@ -52,7 +52,7 @@ Pour télécharger les journaux de réseau CDN, procédez comme suit :
 
    ![Télécharger les journaux : Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="500" zoomable="yes"}
 
-1. Dans la boîte de dialogue **Télécharger les journaux**, sélectionnez le service de **Publication** dans le menu déroulant, puis cliquez sur l’icône de téléchargement en regard de la ligne **cdn**.
+1. Dans le **Journaux de téléchargement** , sélectionnez **Publier** Service dans le menu déroulant, puis cliquez sur l’icône de téléchargement en regard du **CDN** ligne.
 
    ![Journaux de réseau CDN : Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="500" zoomable="yes"}
 
@@ -67,7 +67,7 @@ Pour analyser les journaux CDN, ce tutoriel présente trois options :
 
 1. **Elasticsearch, Logstash et Kibana (ELK)**: la variable [Outils de tableau de bord ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) peut être installé localement.
 1. **Splunk**: la variable [Outils du tableau de bord Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/READEME.md) nécessite l’accès à Splunk et [Transfert de journal AEMCS activé](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) pour ingérer les journaux CDN.
-1. [Notebook Jupyter](https://jupyter.org/): accessible à distance dans le cadre de [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) sans installer de logiciel supplémentaire, pour les clients qui disposent d’une licence Adobe Experience Platform.
+1. **Notebook Jupyter**: accessible à distance dans le cadre de [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) sans installer de logiciel supplémentaire, pour les clients qui disposent d’une licence Adobe Experience Platform.
 
 ### Option 1 : utilisation des outils de tableau de bord ELK
 
@@ -140,6 +140,10 @@ Pour identifier les détails clés, nous allons utiliser la variable [AEMCS-CDN-
 1. Si nécessaire, mettez à jour la variable _Index, type de source et autres_ filtrer les valeurs dans le tableau de bord Splunk.
 
    ![Tableau de bord Splunk](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}
+
+>[!NOTE]
+>
+>L’interface utilisateur et les graphiques du tableau de bord du bloc diffèrent du tableau de bord ELK, mais les détails clés sont similaires.
 
 ### Option 3 : utilisation de Jupyter Notebook
 

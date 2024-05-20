@@ -11,13 +11,13 @@ duration: 219
 last-substantial-update: 2024-05-17T00:00:00Z
 jira: KT-15505
 thumbnail: KT-15505.jpeg
-source-git-commit: d2c39b57982478badcd12682f082517ee9531d3e
+exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
+source-git-commit: 8051f262f978cdf5aff48cb27e5408a7ee3c0b9d
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '442'
 ht-degree: 1%
 
 ---
-
 
 # Outil d’analyse des journaux CDN
 
@@ -67,6 +67,4 @@ Vous pouvez commencer à utiliser la méthode [Tableaux de bord Splunk pour l’
 
 La variable [Pile ELK](https://www.elastic.co/elastic-stack), comprenant Elasticsearch, Logstash et Kibana, est une autre option puissante pour l’analyse des logs. Elle est utile pour les organisations qui n’ont pas accès à une configuration Splunk ou à des fonctionnalités de transfert de journal. La configuration locale de la pile ELK est simple, l’outil fournit le fichier Docker Composer pour démarrer rapidement. Vous pouvez ensuite importer les tableaux de bord prédéfinis et ingérer les journaux CDN téléchargés à l’aide d’Adobe Cloud Manager.
 
-Vous pouvez commencer à utiliser la méthode [Conteneur Docker ELK pour l’analyse des journaux CDN AEM](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#elk-docker-container-for-aemcs-cdn-log-analysis)
-
-
+Vous pouvez commencer à utiliser la méthode [Conteneur Docker ELK pour l’analyse des journaux CDN AEM](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#elk-docker-container-for-aemcs-cdn-log-analysis) guide.
