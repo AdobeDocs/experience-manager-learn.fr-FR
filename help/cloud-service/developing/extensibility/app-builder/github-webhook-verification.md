@@ -1,0 +1,217 @@
+---
+title: Github.com vérification des webhook
+description: Découvrez comment vérifier une requête webhook de Github.com dans une action App Builder.
+feature: Developer Tools
+version: Cloud Service
+topic: Development
+role: Developer
+level: Intermediate
+jira: KT-15714
+last-substantial-update: 2023-06-06T00:00:00Z
+source-git-commit: 4b9f784de5fff7d9ba8cf7ddbe1802c271534010
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 0%
+
+---
+
+
+# Github.com vérification des webhook
+
+Les webhooks vous permettent de créer ou de configurer des intégrations qui s’abonnent à certains événements sur GitHub.com. Lorsque l’un de ces événements est déclenché, GitHub envoie une charge de POST HTTP à l’URL configurée du webhook. Cependant, pour des raisons de sécurité, il est important de vérifier que la requête webhook entrante provient bien de GitHub et non d’un acteur malveillant. Ce tutoriel vous guide tout au long des étapes permettant de vérifier une GitHub.com requête webhook dans une action Adobe App Builder à l’aide d’un secret partagé.
+
+## Configuration du secret Github dans AppBuilder
+
+1. **Ajouter un secret à `.env` fichier :**
+
+   Dans le fichier du projet App Builder `.env` ajoutez une clé personnalisée pour le secret webhook GitHub.com :
+
+   ```env
+   # Specify your secrets here
+   # This file must not be committed to source control
+   ...
+   GITHUB_SECRET=my-github-webhook-secret-1234!
+   ```
+
+2. **Mettre à jour `ext.config.yaml` fichier :**
+
+   La variable `ext.config.yaml` doit être mis à jour afin de vérifier la requête GitHub.com webhook .
+
+   - Définition de l’action AppBuilder `web` configuration à `raw` pour recevoir le corps de requête brut de GitHub.com.
+   - Sous `inputs` dans la configuration de l’action AppBuilder, ajoutez le `GITHUB_SECRET` clé, mappage à l’objet `.env` champ contenant le secret. La valeur de cette clé est la valeur `.env` nom du champ précédé du préfixe `$`.
+   - Définissez la variable `require-adobe-auth` annotation dans la configuration de l’action AppBuilder vers `false` pour permettre l’appel de l’action sans nécessiter d’authentification d’Adobe.
+
+   Le résultat `ext.config.yaml` doit ressembler à ceci :
+
+   ```yaml
+   operations:
+     view:
+       - type: web
+         impl: index.html
+   actions: actions
+   web: web-src
+   runtimeManifest:
+     packages:
+       dx-excshell-1:
+         license: Apache-2.0
+         actions:
+           github-to-jira:
+             function: actions/generic/index.js
+             web: 'raw'
+             runtime: nodejs:20
+             inputs:
+               LOG_LEVEL: debug
+               GITHUB_SECRET: $GITHUB_SECRET
+             annotations:
+               require-adobe-auth: false
+               final: true
+   ```
+
+## Ajout du code de vérification à l’action AppBuilder
+
+Ajoutez ensuite le code JavaScript fourni ci-dessous (copié à partir de [Documentation de GitHub.com](https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries#javascript-example)) à votre action AppBuilder. Veillez à exporter le `verifySignature` de la fonction
+
+```javascript
+// src/dx-excshell-1/actions/generic/github-webhook-verification.js
+
+let encoder = new TextEncoder();
+
+async function verifySignature(secret, header, payload) {
+    let parts = header.split("=");
+    let sigHex = parts[1];
+
+    let algorithm = { name: "HMAC", hash: { name: 'SHA-256' } };
+
+    let keyBytes = encoder.encode(secret);
+    let extractable = false;
+    let key = await crypto.subtle.importKey(
+        "raw",
+        keyBytes,
+        algorithm,
+        extractable,
+        [ "sign", "verify" ],
+    );
+
+    let sigBytes = hexToBytes(sigHex);
+    let dataBytes = encoder.encode(payload);
+    let equal = await crypto.subtle.verify(
+        algorithm.name,
+        key,
+        sigBytes,
+        dataBytes,
+    );
+
+    return equal;
+}
+
+function hexToBytes(hex) {
+    let len = hex.length / 2;
+    let bytes = new Uint8Array(len);
+
+    let index = 0;
+    for (let i = 0; i < hex.length; i += 2) {
+        let c = hex.slice(i, i + 2);
+        let b = parseInt(c, 16);
+        bytes[index] = b;
+        index += 1;
+    }
+
+    return bytes;
+}
+
+module.exports = { verifySignature };
+```
+
+## Mise en oeuvre de la vérification dans l’action AppBuilder
+
+Ensuite, vérifiez que la requête provient de GitHub en comparant la signature dans l’en-tête de la requête à la signature générée par la variable `verifySignature` de la fonction
+
+Dans le de l’action AppBuilder `index.js`, ajoutez le code suivant au `main` function:
+
+
+```javascript
+// src/dx-excshell-1/actions/generic/index.js
+
+const { verifySignature } = require("./github-webhook-verification");
+...
+
+// Main function that will be executed by Adobe I/O Runtime
+async function main(params) {
+  // Create a Logger
+  const logger = Core.Logger("main", { level: params?.LOG_LEVEL || "info" });
+
+  try {
+    // Log parameters if LOG_LEVEL is 'debug'
+    logger.debug(stringParameters(params));
+
+    // Define required parameters and headers
+    const requiredParams = [
+      // Verifies the GITHUB_SECRET is present in the action's configuration; add other parameters here as needed.
+      "GITHUB_SECRET"
+    ];
+
+    const requiredHeaders = [
+      // Require the x-hub-signature-256 header, which GitHub.com populates with a sha256 hash of the payload
+      "x-hub-signature-256"
+    ];
+
+    // Check for missing required parameters and headers
+    const errorMessage = checkMissingRequestInputs(params, requiredParams, requiredHeaders);
+
+    if (errorMessage) {
+      // Return and log client errors
+      return errorResponse(400, errorMessage, logger);
+    }
+
+    // Decode the request body (which is base64 encoded) to a string
+    const body = Buffer.from(params.__ow_body, 'base64').toString('utf-8');
+
+    // Verify the GitHub webhook signature
+    const isSignatureValid = await verifySignature(
+      params.GITHUB_SECRET,
+      params.__ow_headers["x-hub-signature-256"],
+      body
+    );
+
+    if (!isSignatureValid) {
+      // GitHub signature verification failed
+      return errorResponse(401, "Unauthorized", logger);
+    } else {
+      logger.debug("Signature verified");
+    }
+
+    // Parse the request body as JSON so its data is useful in the action
+    const githubParams = JSON.parse(body) || {};
+
+    // Optionally, merge the GitHub webhook request parameters with the action parameters
+    const mergedParams = {
+      ...params,
+      ...githubParams
+    };
+
+    // Do work based on the GitHub webhook request
+    doWork(mergedParams);
+
+    return {
+      statusCode: 200,
+      body: { message: "GitHub webhook received and processed!" }
+    };
+
+  } catch (error) {
+    // Log any server errors
+    logger.error(error);
+    // Return with 500 status code
+    return errorResponse(500, "Server error", logger);
+  }
+}
+```
+
+## Configuration du webhook dans GitHub
+
+De retour dans GitHub.com, indiquez la même valeur secrète à GitHub.com lors de la création du webhook. Utilisez la valeur secrète spécifiée dans votre `.env` fichier `GITHUB_SECRET` clé.
+
+Dans GitHub.com, accédez aux paramètres du référentiel et modifiez le webhook. Dans les paramètres webhook, indiquez la valeur secrète dans la variable `Secret` champ . Cliquez sur __Mettre à jour le webhook__ dans la partie inférieure pour enregistrer les modifications.
+
+![Github Webhook Secret](./assets/github-webhook-verification/github-webhook-settings.png)
+
+En suivant ces étapes, vous vous assurez que votre action App Builder peut vérifier en toute sécurité que les requêtes de webhook entrantes proviennent bien de votre webhook GitHub.com.
