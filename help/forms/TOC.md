@@ -8,10 +8,10 @@ breadcrumb-title: Tutoriels d’AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: e20d9f80cc7e1c6f5f6c81233d9a5178551e2fa2
+source-git-commit: 82ef2988d55012ae730e9bbc7adeea547863ba51
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 99%
+source-wordcount: '2080'
+ht-degree: 98%
 
 ---
 
@@ -304,6 +304,10 @@ ht-degree: 99%
    + [Utiliser une signature tactile](forms-designer/scribble-signature-form.md)
    + [Utiliser une signature numérique](forms-designer/adding-dig-signature-field.md)
    + [Reader d’extension de formulaire](forms-designer/reader-extending-j2ee.md)
++ AEM Forms Workbench{#forms-workbench}
+   + [Présentation de Workbench](aem-forms-workbench/workbench-introduction.md)
+   + [Création d’un processus de formulaire](aem-forms-workbench/workbench-creating-a-process.md)
+   + [Processus de débogage](aem-forms-workbench/workbench-recording-and-testing-process.md)
 + Communications interactives pour le canal d’impression
 {#ic-print-channel-tutorial}
    + [1. Présentation](ic-print-channel-tutorial/introduction.md)
