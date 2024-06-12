@@ -12,16 +12,18 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 1a745f4b11007df5636c2fc0bea05d56393ef9c6
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 100%
+source-wordcount: '1963'
+ht-degree: 98%
 
 ---
 
 # Informations d’identification de service
 
 Les intégrations à Adobe Experience Manager (AEM) as a Cloud Service doivent pouvoir s’authentifier en toute sécurité auprès du service AEM. La Developer Console d’AEM accorde l’accès aux informations d’identification de service, qui sont utilisées pour aider les applications, systèmes et services externes à interagir par programmation avec les services de création et de publication via HTTP.
+
+AEM s’intègre à d’autres produits Adobe en utilisant [OAuth S2S géré via la console Adobe Developer](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Pour les intégrations personnalisées avec des comptes de service, les informations d’identification JWT sont utilisées et gérées dans AEM Developer Console.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
