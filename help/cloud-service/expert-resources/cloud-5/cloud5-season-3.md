@@ -6,10 +6,10 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: c67fad3da9b9eaa740c4351448108af3b1542912
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 100%
+source-wordcount: '416'
+ht-degree: 94%
 
 ---
 
@@ -145,5 +145,19 @@ Découvrez comment intégrer AEM Assets à la création de documents.
 Découvrez les nouvelles fonctionnalités de l’IA générative disponibles dans la création de documents AEM Sites.
             </p>
         </td>                
+        <td>
+            <a href="./season-3/cloud5-exploring-universal-editor.md">
+                <img alt="Exploration d’Universal Editor" src="https://video.tv.adobe.com/v/3429656?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-exploring-universal-editor.md">
+                <strong>Exploration d’Universal Editor</strong></a>        
+                <br/><em>avec James Talbot et Dirk Rudolph, AEM Engineering</em>
+            </div>
+            <p>
+                <br/>                
+                 Découvrez Universal Editor et AEM avec des Edge Delivery Services.
+            </p>
+        </td>                    
     </tr>      
 </table>
