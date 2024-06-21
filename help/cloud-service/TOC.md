@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 272ed4e4782b03f284886a3046440960df538286
+source-git-commit: a8fc8fa19ae19e27b07fa81fc931eca51cb982a1
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 97%
+source-wordcount: '1234'
+ht-degree: 96%
 
 ---
 
@@ -249,6 +249,11 @@ ht-degree: 97%
       + [1. Présentation](./forms/custom-submit-headless-forms/introduction.md)
       + [2 - Créer un service d’envoi personnalisé](./forms/custom-submit-headless-forms/custom-submit-service.md)
       + [3 - Afficher la réponse](./forms/custom-submit-headless-forms/handle-response-react-app.md)
+   + Créer un composant de bloc d’adresse{#create-address-block}
+      + [1. Présentation](./forms/create-address-block-component/introduction.md)
+      + [2 - Configuration](./forms/create-address-block-component/set-up.md)
+      + [3 - Créer un composant](./forms/create-address-block-component/creating-address-component.md)
+      + [4 - Déploiement du composant](./forms/create-address-block-component/deploy-your-project.md)
    + AEM Forms et Analytics{#forms-and-analytics}
       + [Présentation](./forms/form-data-analytics/introduction.md)
       + [Créer des éléments de données](./forms/form-data-analytics/data-elements.md)
