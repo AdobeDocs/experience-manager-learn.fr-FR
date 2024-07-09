@@ -6,10 +6,10 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 272ed4e4782b03f284886a3046440960df538286
+source-git-commit: cbba149b23b4d8ecad35f263dc282a3da481fc9f
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 88%
+source-wordcount: '416'
+ht-degree: 94%
 
 ---
 
@@ -57,20 +57,22 @@ Découvrez comment la recherche tierce peut être intégrée au mieux à Edge D
 Découvrez comment la surveillance des utilisateurs et utilisatrices réels (RUM) fonctionne avec Edge Delivery Services.
             </p>
         </td>   
+        <!--
         <td>
             <a href="./season-3/cloud5-rum-explorer.md">
-                <img alt="Explorateur de surveillance des utilisateurs réels (RUM)" src="https://video.tv.adobe.com/v/3429772?format=jpeg"/>
+                <img alt="Real User Monitoring (RUM) Explorer" src="https://video.tv.adobe.com/v/3429772?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-rum-explorer.md">
-                <strong>Explorateur de surveillance des utilisateurs réels (RUM)</strong></a>        
-                <br/><em>avec James Talbot et Damian Langsweirdt, AEM Engineering</em>
+                <strong>Real User Monitoring (RUM) Explorer</strong></a>        
+                <br/><em>with James Talbot & Damian Langsweirdt, AEM Engineering</em>
             </div>
             <p>
                 <br/>
-                Découvrez l’Explorateur de surveillance des utilisateurs réels (RUM) et comment y accéder.
+                Learn about Real User Monitoring (RUM) Explorer and how to access it.
             </p>
         </td>   
+        -->
         <td>
             <a href="./season-3/cloud5-edge-workers.md">
                 <img alt="Workers Edge" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
@@ -170,7 +172,7 @@ Découvrez les nouvelles fonctionnalités de l’IA générative disponibles dan
             </div>
             <p>
                 <br/>                
-                 Découvrez Universal Editor et AEM avec des Edge Delivery Services.
+                 Découvrez l’éditeur universel et l’AEM avec les Edge Delivery Services.
             </p>
         </td>                    
     </tr>      
