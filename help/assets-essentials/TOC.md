@@ -8,15 +8,15 @@ version: Cloud Service
 feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
-source-git-commit: 0c95df469885b84aa7585975a89811efab0ae5e7
-workflow-type: ht
-source-wordcount: '77'
-ht-degree: 100%
+source-git-commit: a5eb7cb6ba9b806a57a27ad1a0e01609af713656
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 88%
 
 ---
 
 
-# Vidéos AEM Assets Essentials {#assets-essentials}
+# Vidéos AEM Assets Essentials {#assets-essentials}
 
 + [Présentation](overview.md)
 
@@ -34,6 +34,7 @@ ht-degree: 100%
    + [Mon espace de travail](configuring/my-workspace.md)
    + [Formulaires de métadonnées](configuring/metadata-forms.md)
    + [Gestion des autorisations](configuring/permissions-management.md)
+   + [Gestion de la taxonomie](configuring/taxonomy-management.md)
 
 + [Intégration de Creative Cloud](integrations/creative-cloud.md)
 
@@ -44,6 +45,6 @@ ht-degree: 100%
    + [Envoi de documents et liaison de ressources](./integrations/workfront/link-send.md)
    + [Historique des versions](./integrations/workfront/versions.md)
 
-+ [Intégration d’Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=fr){target=_blank}
++ [Intégration Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=fr){target=_blank}
 
 + [Documentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=fr){target=_blank}
