@@ -12,10 +12,10 @@ last-substantial-update: 2022-06-13T00:00:00Z
 doc-type: Feature Video
 exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
 duration: 419
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 726715890d997ba3bb85f4833e220ac2222b3a42
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 100%
+source-wordcount: '378'
+ht-degree: 65%
 
 ---
 
@@ -26,6 +26,22 @@ Découvrez comment utiliser les fonctions d’import et d’export des métadonn
 ## Export des métadonnées {#metadata-export}
 
 >[!VIDEO](https://video.tv.adobe.com/v/22132?quality=12&learn=on)
+
+>[!TIP]
+>
+> Lors de l’ouverture d’un fichier CSV d’exportation de métadonnées dans Excel, utilisez la méthode [Importateur Excel](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) plutôt que de double-cliquer sur le fichier pour éviter des problèmes liés aux fichiers CSV codés au format UTF-8.
+>
+> Pour ouvrir le fichier CSV d’exportation de métadonnées dans Excel, procédez comme suit :
+> 
+> 1. Ouvrir Microsoft Excel
+> 1. Sélectionner __Fichier > Nouveau__ pour créer une feuille de calcul vide
+> 1. Une fois la feuille de calcul vide ouverte, sélectionnez __Fichier > Importer__
+> 1. Sélectionner __Texte__ et cliquez sur __Importer__
+> 1. Sélectionnez le fichier CSV exporté dans le système de fichiers et cliquez sur __Obtenir des données__
+> 1. A l&#39;étape 1 de l&#39;assistant d&#39;import, sélectionnez __Délimité__ et défini __Origine du fichier__ to __Unicode (UTF-8)__, puis cliquez sur __Suivant__
+> 1. À l’étape 2, définissez la variable __Délimiteurs__ to __Virgule__, puis cliquez sur __Suivant__
+> 1. À l’étape 3, laissez la variable __Format des données de colonne__ en l’état, puis cliquez sur __Terminer__
+> 1. Sélectionner __Importer__ pour ajouter les données à la feuille de calcul
 
 ## Import de métadonnées {#metadata-import}
 
