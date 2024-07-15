@@ -1,5 +1,5 @@
 ---
-title: Générer des variations - Configurer un Sidekick dans les Edge Delivery Services
+title: Générer des variations - Configurer un Sidekick en Edge Delivery Services
 description: Découvrez comment configurer le sidekick pour générer des variations dans la création de documents Edge Delivery Services.
 version: Cloud Service
 feature: Authoring
@@ -18,7 +18,7 @@ ht-degree: 63%
 
 ---
 
-# Générer des variations - Configurer un Sidekick dans les Edge Delivery Services
+# Générer des variations - Configurer un Sidekick en Edge Delivery Services
 
 {{edge-delivery-services}}
 

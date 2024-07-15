@@ -168,7 +168,7 @@ Découvrez les nouvelles fonctionnalités de l’IA générative disponibles dan
             <div>
                 <a href="./season-3/cloud5-exploring-universal-editor.md">
                 <strong>Exploration d’Universal Editor</strong></a>        
-                <br/><em>avec James Talbot et Dirk Rudolph, AEM Engineering</em>
+                <br/><em>avec James Talbot &amp; Dirk Rudolph, AEM Engineering</em>
             </div>
             <p>
                 <br/>                

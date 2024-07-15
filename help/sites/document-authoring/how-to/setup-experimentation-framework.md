@@ -1,5 +1,5 @@
 ---
-title: Configuration d’un cadre d’expérimentation dans les Edge Delivery Services
+title: Mise en place d’un cadre d’expérimentation en Edge Delivery Services
 description: Découvrez comment configurer la structure d’expérimentation dans la création de documents Edge Delivery Services.
 version: Cloud Service
 feature: Authoring
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ---
 
-# Configuration d’un cadre d’expérimentation dans les Edge Delivery Services
+# Mise en place d’un cadre d’expérimentation en Edge Delivery Services
 
 {{edge-delivery-services}}
 

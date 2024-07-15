@@ -1,5 +1,5 @@
 ---
-title: Générer des variations - Utilisation des audiences de fichiers CSV dans les Edge Delivery Services
+title: Générer des variations - Utilisation des audiences de fichiers CSV en Edge Delivery Services
 description: Découvrez comment utiliser les audiences de fichiers CSV pour cibler la bonne audience avec le contenu approprié dans la création de documents Edge Delivery Services.
 version: Cloud Service
 feature: Authoring
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ---
 
-# Générer des variations - Utilisation des audiences de fichiers CSV dans les Edge Delivery Services
+# Générer des variations - Utilisation des audiences de fichiers CSV en Edge Delivery Services
 
 {{edge-delivery-services}}
 

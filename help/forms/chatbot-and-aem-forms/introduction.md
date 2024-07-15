@@ -22,7 +22,7 @@ Bienvenue dans notre tutoriel sur l’utilisation d’un chatBot pour remplir un
 
 Le ChatBot a été créé à l’aide de [chatbot](https://www.chatbot.com/).
 
-Pour les besoins de ce tutoriel, nous fusionnerons les données capturées dans ChatBot avec une [Formulaire W-9](assets/fw9.xdp)
+Pour les besoins de ce tutoriel, nous allons fusionner les données capturées dans ChatBot avec un [formulaire W-9](assets/fw9.xdp).
 
 La vidéo suivante présente le cas d’utilisation.
 

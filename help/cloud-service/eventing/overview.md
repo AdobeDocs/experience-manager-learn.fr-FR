@@ -27,7 +27,7 @@ Découvrez AEM Eventing, en quoi cela consiste, pourquoi et quand l’utiliser,
 
 >[!IMPORTANT]
 >
->Eventing pour AEM as a Cloud Service n’est disponible que pour les utilisateurs et utilisatrices enregistrés en mode de version préliminaire. Pour activer AEM événements dans votre environnement AEM as a Cloud Service, contactez le <a href="mailto:grp-aem-events@adobe.com">AEM Eventing Team</a>.
+>Eventing pour AEM as a Cloud Service n’est disponible que pour les utilisateurs et utilisatrices enregistrés en mode de version préliminaire. Pour activer AEM événements dans votre environnement AEM as a Cloud Service, contactez l’ <a href="mailto:grp-aem-events@adobe.com">équipe AEM-Eventing</a>.
 
 ## Présentation
 
@@ -75,7 +75,7 @@ AEM Eventing, bien que puissant, présente certaines limites à prendre en comp
 
 ## Activation
 
-L’activation AEM Eventing s’effectue pour chaque environnement AEM as a Cloud Service et est disponible uniquement pour les environnements en mode de version préliminaire. Contactez le <a href="mailto:grp-aem-events@adobe.com">AEM Eventing Team</a> pour activer votre environnement AEM avec AEM Eventing.
+L’activation AEM Eventing s’effectue pour chaque environnement AEM as a Cloud Service et est disponible uniquement pour les environnements en mode de version préliminaire. Contactez l’ <a href="mailto:grp-aem-events@adobe.com">équipe AEM-Eventing</a> pour activer votre environnement AEM avec l’événement d’AEM.
 
 S’il est déjà activé, consultez [Activer les événements AEM dans votre environnement AEM Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) pour les étapes suivantes.
 

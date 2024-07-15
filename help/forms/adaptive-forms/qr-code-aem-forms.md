@@ -9,7 +9,8 @@ role: Developer
 level: Beginner
 jira: KT-15603
 last-substantial-update: 2024-05-28T00:00:00Z
-source-git-commit: e20d9f80cc7e1c6f5f6c81233d9a5178551e2fa2
+exl-id: 0c6079f4-601e-4a82-976c-71dbb2faa671
+source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 1%
@@ -25,7 +26,7 @@ L’exemple de composant utilise [QRCode.js](https://davidshimjs.github.io/qrcod
 Le fichier QRCode.js est une bibliothèque JavaScript pour créer du code QRC. Il prend en charge le mode Cross-browser avec HTML5 Canvas et la balise de tableau dans DOM.
 
 Le composant génère le code QR en fonction de la valeur spécifiée dans la propriété de configuration du composant.
-![image](assets/qr-code-url.png)
+![Image](assets/qr-code-url.png)
 
 Le code suivant a été utilisé dans le fichier body.jsp du composant qr-code-generator .
 
@@ -44,7 +45,7 @@ Le code suivant a été utilisé dans le fichier body.jsp du composant qr-code-g
 
 
 
-Le code suivant utilise la méthode makeCode de la bibliothèque QRCode.js dans la bibliothèque cliente du composant qr-code-generator . Le code QR généré est ajouté à la balise div identifiée par id . **&quot;qrcode&quot;**.
+Le code suivant utilise la méthode makeCode de la bibliothèque QRCode.js dans la bibliothèque cliente du composant qr-code-generator . Le code QR généré est ajouté à la balise div identifiée par l’identifiant **&quot;qrcode&quot;**.
 
 ```javascript
 $(document).ready(function()
@@ -60,5 +61,3 @@ $(document).ready(function()
 * [Téléchargez et installez le composant de code QR à l’aide de Package Manager.](assets/qrcode.zip)
 * [Téléchargez et installez l’exemple de formulaire adaptatif à l’aide de Package Manager.](assets/form-with-qr-code.zip)
 * [Prévisualisation du formulaire](http://localhost:4502/content/dam/formsanddocuments/qrcode/w9form/jcr:content?wcmmode=disabled). La section d’aide du formulaire comporte le code QR.
-
-

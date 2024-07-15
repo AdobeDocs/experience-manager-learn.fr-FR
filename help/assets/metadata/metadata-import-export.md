@@ -29,19 +29,19 @@ Découvrez comment utiliser les fonctions d’import et d’export des métadonn
 
 >[!TIP]
 >
-> Lors de l’ouverture d’un fichier CSV d’exportation de métadonnées dans Excel, utilisez la méthode [Importateur Excel](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) plutôt que de double-cliquer sur le fichier pour éviter des problèmes liés aux fichiers CSV codés au format UTF-8.
+> Lors de l’ouverture d’un fichier CSV d’exportation de métadonnées dans Excel, utilisez l’ [importateur Excel](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) plutôt que de double-cliquer sur le fichier pour éviter des problèmes liés aux fichiers CSV codés au format UTF-8.
 >
 > Pour ouvrir le fichier CSV d’exportation de métadonnées dans Excel, procédez comme suit :
 > 
 > 1. Ouvrir Microsoft Excel
-> 1. Sélectionner __Fichier > Nouveau__ pour créer une feuille de calcul vide
+> 1. Sélectionnez __Fichier > Nouveau__ pour créer une feuille de calcul vide
 > 1. Une fois la feuille de calcul vide ouverte, sélectionnez __Fichier > Importer__
-> 1. Sélectionner __Texte__ et cliquez sur __Importer__
+> 1. Sélectionnez le fichier __Texte__ et cliquez sur __Importer__
 > 1. Sélectionnez le fichier CSV exporté dans le système de fichiers et cliquez sur __Obtenir des données__
-> 1. A l&#39;étape 1 de l&#39;assistant d&#39;import, sélectionnez __Délimité__ et défini __Origine du fichier__ to __Unicode (UTF-8)__, puis cliquez sur __Suivant__
-> 1. À l’étape 2, définissez la variable __Délimiteurs__ to __Virgule__, puis cliquez sur __Suivant__
-> 1. À l’étape 3, laissez la variable __Format des données de colonne__ en l’état, puis cliquez sur __Terminer__
-> 1. Sélectionner __Importer__ pour ajouter les données à la feuille de calcul
+> 1. À l’étape 1 de l’assistant d’importation, sélectionnez __Délimité__ et définissez __Origine du fichier__ sur __Unicode (UTF-8)__, puis cliquez sur __Suivant__
+> 1. À l’étape 2, définissez __Délimiteurs__ sur __Virgule__, puis cliquez sur __Suivant__
+> 1. À l’étape 3, laissez le __format de données de colonne__ tel quel, puis cliquez sur __Terminer__
+> 1. Sélectionnez __Importer__ pour ajouter les données à la feuille de calcul.
 
 ## Import de métadonnées {#metadata-import}
 

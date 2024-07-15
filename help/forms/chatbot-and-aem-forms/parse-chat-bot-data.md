@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Analyse des données ChatBot
 
-A [webhook ChatBot](https://www.chatbot.com/help/webhooks/what-are-webhooks/) a été utilisé pour envoyer les données ChatBot à un servlet AEM.
+Un [webhook ChatBot](https://www.chatbot.com/help/webhooks/what-are-webhooks/) a été utilisé pour envoyer les données ChatBot à un servlet AEM.
 Les données capturées dans le ChatBot sont au format JSON ; l’utilisateur les a entrées dans l’objet attributes, comme illustré ci-dessous.
 ![chatbot-data](assets/chat-bot-data.png)
 

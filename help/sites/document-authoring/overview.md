@@ -299,7 +299,7 @@ Blocs et blocs automatiques</a>
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="author-authentication.md" title="Authentification de création">Authentification de création</a>
+              <a href="author-authentication.md" title="Authentification de création">Author authentication</a>
             </p>
             <p class="is-size-6">Découvrez comment configurer l’authentification de création.</p>
             <a href="author-authentication.md" class="spectrum-Button
@@ -688,7 +688,7 @@ Blocs et blocs automatiques</a>
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">3 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/bulk-importing-using-importer.md" title="Importation en bloc à l’aide de l’importateur">Importation en bloc à l’aide de l’importateur</a>
+              <a href="./how-to/bulk-importing-using-importer.md" title="Importation en bloc à l’aide de l’importateur">Importation en masse à l’aide de l’importateur</a>
             </p>
             <p class="is-size-6">Découvrez comment importer des pages web en bloc à l’aide de l’outil d’AEM d’importateur lors de la migration du site.</p>
             <a href="./how-to/bulk-importing-using-importer.md" class="spectrum-Button
@@ -757,7 +757,7 @@ Blocs et blocs automatiques</a>
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">1 minute</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/generate-variations/configure-sidekick.md" title="Générer des variations - Configurer le Sidekick">Générer des variations - Configurer le Sidekick</a>
+              <a href="./how-to/generate-variations/configure-sidekick.md" title="Générer des variations - Configurer le Sidekick">Générer des variations - Configurer Sidekick</a>
             </p>
             <p class="is-size-6">Découvrez comment configurer le sidekick pour générer des variations dans la création de documents Edge Delivery Services.</p>
             <a href="./how-to/generate-variations/configure-sidekick.md" class="spectrum-Button
@@ -1045,7 +1045,7 @@ Blocs et blocs automatiques</a>
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/experimentation-framework.md" title="Présentation du cadre d’expérimentation">Présentation du cadre d’expérimentation</a>
+              <a href="./how-to/experimentation-framework.md" title="Présentation du cadre d’expérimentation">Présentation de la structure d’expérimentation</a>
             </p>
             <p class="is-size-6">Explorez le cadre d’expérimentation qui permet aux marketeurs de tester les variations de contenu les plus efficaces.</p>
             <a href="./how-to/experimentation-framework.md" class="spectrum-Button
@@ -1077,7 +1077,7 @@ Blocs et blocs automatiques</a>
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">2 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./how-to/setup-experimentation-framework.md" title="Configuration du cadre d’expérimentation">Configuration du cadre d’expérimentation</a>
+              <a href="./how-to/setup-experimentation-framework.md" title="Configuration du cadre d’expérimentation">Configuration de la structure d’expérimentation</a>
             </p>
             <p class="is-size-6">Découvrez comment configurer la structure d’expérimentation dans la création de documents Edge Delivery Services.</p>
             <a href="./how-to/setup-experimentation-framework.md" class="spectrum-Button

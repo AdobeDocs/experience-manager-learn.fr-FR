@@ -32,7 +32,7 @@ Les journaux de réseau CDN sont disponibles au format JSON, qui contient divers
 |------------------------------------|:-----------------------------------------------------:|
 | HIT | Les données demandées sont _récupérées dans le cache du réseau CDN et ne nécessitent pas d’effectuer une requête de récupération_ auprès du serveur AEM. |
 | MISS | Les données requises sont _introuvables dans le cache du réseau CDN et doivent faire l’objet d’une requête_ au serveur AEM. |
-| PASS | Les données demandées sont : _défini explicitement pour ne pas être mis en cache_ et toujours récupéré à partir du serveur AEM. |
+| PASS | Les données demandées sont _explicitement définies pour ne pas être mises en cache_ et être toujours récupérées à partir du serveur AEM. |
 
 Pour les besoins de ce tutoriel, le [projet AEM WKND](https://github.com/adobe/aem-guides-wknd) est déployé dans l’environnement AEM as a Cloud Service et un petit test de performance est déclenché à l’aide d’[Apache JMeter](https://jmeter.apache.org/).
 
@@ -52,7 +52,7 @@ Pour télécharger les journaux de réseau CDN, procédez comme suit :
 
    ![Télécharger les journaux : Cloud Manager](assets/cdn-logs-analysis/download-logs.png){width="500" zoomable="yes"}
 
-1. Dans le **Journaux de téléchargement** , sélectionnez **Publier** Service dans le menu déroulant, puis cliquez sur l’icône de téléchargement en regard du **CDN** ligne.
+1. Dans la boîte de dialogue **Télécharger les journaux**, sélectionnez le service **Publish** dans le menu déroulant, puis cliquez sur l’icône de téléchargement en regard de la ligne **CDN**.
 
    ![Journaux de réseau CDN : Cloud Manager](assets/cdn-logs-analysis/download-cdn-logs.png){width="500" zoomable="yes"}
 
@@ -65,23 +65,23 @@ Pour obtenir des informations telles que le taux d’accès au cache et les URL 
 
 Pour analyser les journaux CDN, ce tutoriel présente trois options :
 
-1. **Elasticsearch, Logstash et Kibana (ELK)**: la variable [Outils de tableau de bord ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) peut être installé localement.
-1. **Splunk**: la variable [Outils du tableau de bord Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) nécessite l’accès à Splunk et [Transfert de journal AEMCS activé](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) pour ingérer les journaux CDN.
-1. **Notebook Jupyter**: accessible à distance dans le cadre de [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) sans installer de logiciel supplémentaire, pour les clients qui disposent d’une licence Adobe Experience Platform.
+1. **Elasticsearch, Logstash et Kibana (ELK)** : l’ [outil de tableau de bord ELK](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) peut être installé localement.
+1. **Splunk** : l’ [outil de tableau de bord Splunk](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) nécessite l’accès à Splunk et le [transfert de journal AEMCS activé](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/logging#splunk-logs) pour ingérer les journaux CDN.
+1. **Jupyter Notebook** : il est accessible à distance dans le cadre de [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-science-workspace/jupyterlab/analyze-your-data) sans installer de logiciel supplémentaire, pour les clients qui disposent d’une licence Adobe Experience Platform.
 
 ### Option 1 : utilisation des outils de tableau de bord ELK
 
 La [pile ELK](https://www.elastic.co/elastic-stack) est un ensemble d’outils fournissant une solution évolutive et permettant de rechercher, d’analyser et de visualiser les données. Elle se compose d’Elasticsearch, de Logstash et de Kibana.
 
-Pour identifier les détails clés, nous allons utiliser la variable [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) projet. Ce projet fournit un conteneur Docker de la pile ELK et un tableau de bord Kibana préconfiguré pour analyser les journaux de réseau CDN.
+Pour identifier les détails clés, nous allons utiliser le projet [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Ce projet fournit un conteneur Docker de la pile ELK et un tableau de bord Kibana préconfiguré pour analyser les journaux de réseau CDN.
 
-1. Suivez les étapes de [Configuration du conteneur ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) et veillez à importer la variable **Taux d’accès au cache du réseau CDN** Tableau de bord de Kibana.
+1. Suivez les étapes de [Configuration du conteneur ELK Docker](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md#how-to-set-up-the-elk-docker-containerhow-to-setup-the-elk-docker-container) et assurez-vous d’importer le tableau de bord **Rapport d’accès au cache CDN** de Kibana.
 
 1. Pour identifier le taux d’accès au cache du réseau CDN et aux URL principales, procédez comme suit :
 
-   1. Copiez le ou les fichiers journaux CDN téléchargés dans le dossier des journaux spécifiques à l’environnement, par exemple : `ELK/logs/stage`.
+   1. Copiez le ou les fichiers journaux CDN téléchargés dans le dossier des journaux spécifiques à l’environnement, par exemple `ELK/logs/stage`.
 
-   1. Ouvrez le **Taux d’accès au cache du réseau CDN** tableau de bord en cliquant sur le coin supérieur gauche _Menu de navigation > Analytics > Tableau de bord > Rapport d’accès au cache du réseau CDN_.
+   1. Ouvrez le tableau de bord **Rapport d’accès au cache CDN** en cliquant sur le coin supérieur gauche _Menu de navigation > Analytics > Tableau de bord > Rapport d’accès au cache CDN_.
 
       ![Taux d’accès au cache du réseau CDN : tableau de bord Kibana](assets/cdn-logs-analysis/cdn-cache-hit-ratio-dashboard.png){width="500" zoomable="yes"}
 
@@ -132,12 +132,12 @@ De même, ajoutez d’autres filtres au tableau de bord en fonction des exigence
 
 ### Option 2 : utilisation des outils du tableau de bord Splunk
 
-La variable [Splunk](https://www.splunk.com/) est un outil d’analyse des journaux populaire qui permet d’agréger, d’analyser les journaux et de créer des visualisations à des fins de surveillance et de dépannage.
+[Splunk](https://www.splunk.com/) est un outil d’analyse de journaux populaire qui permet d’agréger, d’analyser les journaux et de créer des visualisations à des fins de surveillance et de dépannage.
 
-Pour identifier les détails clés, nous allons utiliser la variable [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) projet. Ce projet fournit un tableau de bord Splunk pour analyser les journaux CDN.
+Pour identifier les détails clés, nous allons utiliser le projet [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Ce projet fournit un tableau de bord Splunk pour analyser les journaux CDN.
 
-1. Suivez les étapes de [Tableaux de bord Splunk pour l’analyse des journaux de réseau de diffusion de contenu AEM](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) et veillez à importer la variable **Taux d’accès au cache du réseau CDN** Tableau de bord Splunk.
-1. Si nécessaire, mettez à jour la variable _Index, type de source et autres_ filtrer les valeurs dans le tableau de bord Splunk.
+1. Suivez les étapes de [Tableaux de bord Splunk pour l’analyse du journal CDN AEMCS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/Splunk/README.md) et veillez à importer le tableau de bord Splunk **Rapport d’accès au cache CDN**.
+1. Si nécessaire, mettez à jour les valeurs de filtre _Index, Source Type et autres_ dans le tableau de bord Splunk.
 
    ![Tableau de bord Splunk](assets/cdn-logs-analysis/splunk-CHR-dashboard.png){width="500" zoomable="yes"}
 

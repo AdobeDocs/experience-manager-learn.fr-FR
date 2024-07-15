@@ -1,5 +1,5 @@
 ---
-title: Présentation du cadre d’expérimentation en Edge Delivery Services
+title: Présentation du cadre d'expérimentation en Edge Delivery Services
 description: Explorez le cadre d’expérimentation qui permet aux marketeurs de tester les variantes de contenu les plus efficaces dans la création de documents Edge Delivery Services.
 version: Cloud Service
 feature: Authoring
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ---
 
-# Présentation du cadre d’expérimentation en Edge Delivery Services
+# Présentation du cadre d&#39;expérimentation en Edge Delivery Services
 
 {{edge-delivery-services}}
 

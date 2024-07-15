@@ -38,7 +38,7 @@ Découvrez les bonnes pratiques relatives aux règles de filtrage du trafic, y c
 
 ## Bonnes pratiques relatives aux règles de filtrage du trafic
 
-Activez les règles de filtrage du trafic ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour `rateLimit` et `clientCountry` Les propriétés doivent être déterminées en collaboration avec votre équipe de sécurité.
+Activez les règles de filtrage du trafic ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour les propriétés `rateLimit` et `clientCountry` doivent être déterminées en collaboration avec votre équipe de sécurité.
 
 ```yaml
 kind: CDN
@@ -93,7 +93,7 @@ data:
 
 Dès l’activation de votre licence WAF pour le programme, le trafic correspondant aux indicateurs WAF apparaît dans les graphiques et les journaux de requêtes, même si vous ne les avez pas déclarés dans une règle. Ainsi, vous êtes toujours conscient du trafic potentiellement malveillant et vous pouvez créer des règles selon vos besoins. Examinez les indicateurs WAF qui ne sont pas reflétés dans les règles déclarées et envisagez de les créer.
 
-Tenez compte des règles WAF ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour `action` et `wafFlags` doit être déterminée en collaboration avec votre équipe de sécurité.
+Tenez compte des règles WAF ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour la propriété `action` et `wafFlags` doivent être déterminées en collaboration avec votre équipe de sécurité.
 
 ```yaml
 kind: CDN

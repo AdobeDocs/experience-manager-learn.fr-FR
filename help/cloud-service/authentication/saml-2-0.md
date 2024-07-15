@@ -459,7 +459,7 @@ Déployez la branche Git Cloud Manager cible (dans cet exemple, `develop`), à 
 
 ## Appel de l’authentification SAML
 
-Le flux d’authentification SAML peut être appelé à partir d’une page web d’AEM site, en créant un lien spécialement conçu ou un bouton. Les paramètres décrits ci-dessous peuvent être définis par programmation selon les besoins. Par exemple, un bouton de connexion peut définir la variable `saml_request_path`, où l’utilisateur est amené à effectuer une authentification SAML réussie, vers différentes pages d’AEM, en fonction du contexte du bouton.
+Le flux d’authentification SAML peut être appelé à partir d’une page web d’AEM site, en créant un lien spécialement conçu ou un bouton. Les paramètres décrits ci-dessous peuvent être définis par programmation selon les besoins. Par exemple, un bouton de connexion peut définir le `saml_request_path`, où l’utilisateur est amené à accéder à différentes pages d’AEM en fonction du contexte du bouton.
 
 ### requête GET
 
@@ -471,10 +471,10 @@ et fournissant les paramètres de requête :
 
 | Nom du paramètre de requête | Valeur du paramètre de requête |
 |----------------------|-----------------------|
-| `resource` | Tout chemin d’accès JCR, ou sous-chemin, qui est le gestionnaire d’authentification SAML, est écouté, comme défini dans la variable [Gestionnaire d’authentification OSGi du gestionnaire d’authentification SAML 2.0 Adobe](#configure-saml-2-0-authentication-handler) `path` . |
+| `resource` | Tout chemin d’accès JCR, ou sous-chemin, qui est le gestionnaire d’authentification SAML écoute, comme défini dans la propriété ](#configure-saml-2-0-authentication-handler) `path` de la configuration OSGi  du gestionnaire d’authentification SAML 2.0 Adobe [. |
 | `saml_request_path` | Chemin d’accès à l’URL vers lequel l’utilisateur doit être utilisé après une authentification SAML réussie. |
 
-Par exemple, ce lien de HTML déclenche le flux de connexion SAML. En cas de succès, l’utilisateur doit `/content/wknd/us/en/protected/page.html`. Ces paramètres de requête peuvent être définis par programmation selon les besoins.
+Par exemple, ce lien d’HTML déclenche le flux de connexion SAML et, en cas de succès, l’utilisateur doit passer à `/content/wknd/us/en/protected/page.html`. Ces paramètres de requête peuvent être définis par programmation selon les besoins.
 
 ```html
 <a href="/system/sling/login?resource=/content/wknd&saml_request_path=/content/wknd/us/en/protected/page.html">
@@ -492,11 +492,11 @@ et fournissant les données du formulaire :
 
 | Nom des données de formulaire | Valeur des données de formulaire |
 |----------------------|-----------------------|
-| `resource` | Tout chemin d’accès JCR, ou sous-chemin, qui est le gestionnaire d’authentification SAML, est écouté, comme défini dans la variable [Gestionnaire d’authentification OSGi du gestionnaire d’authentification SAML 2.0 Adobe](#configure-saml-2-0-authentication-handler) `path` . |
+| `resource` | Tout chemin d’accès JCR, ou sous-chemin, qui est le gestionnaire d’authentification SAML écoute, comme défini dans la propriété ](#configure-saml-2-0-authentication-handler) `path` de la configuration OSGi  du gestionnaire d’authentification SAML 2.0 Adobe [. |
 | `saml_request_path` | Chemin d’accès à l’URL vers lequel l’utilisateur doit être utilisé après une authentification SAML réussie. |
 
 
-Par exemple, ce bouton de HTML utilise un POST HTTP pour déclencher le flux de connexion SAML. Une fois l’opération terminée, l’utilisateur doit envoyer la requête `/content/wknd/us/en/protected/page.html`. Ces paramètres de données de formulaire peuvent être définis par programmation selon les besoins.
+Par exemple, ce bouton d’HTML utilisera un POST HTTP pour déclencher le flux de connexion SAML. Une fois l’opération terminée, l’utilisateur sera amené à `/content/wknd/us/en/protected/page.html`. Ces paramètres de données de formulaire peuvent être définis par programmation selon les besoins.
 
 ```html
 <form action="/system/sling/login" method="POST">
@@ -508,7 +508,7 @@ Par exemple, ce bouton de HTML utilise un POST HTTP pour déclencher le flux de 
 
 ### Configuration du Dispatcher
 
-Les méthodes HTTP GET et POST requièrent un accès client à AEM `/system/sling/login` points de terminaison et doivent donc être autorisés via AEM Dispatcher.
+Les méthodes HTTP GET et POST requièrent un accès client aux points de terminaison `/system/sling/login` d’AEM. Elles doivent donc être autorisées via AEM Dispatcher.
 
 Autorisation des modèles d’URL nécessaires en fonction de l’utilisation de GET ou POST
 

@@ -1,6 +1,6 @@
 ---
-title: Générer des variations - Demander des modèles dans les Edge Delivery Services
-description: Découvrez comment utiliser des modèles d’invite pour générer des variantes dans la création de documents Edge Delivery Services.
+title: Générer des variations - Demander des modèles en Edge Delivery Services
+description: Découvrez comment utiliser des modèles d’invite pour générer des variantes dans la création de documents en Edge Delivery Services.
 version: Cloud Service
 feature: Authoring
 topic: Content Management
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 ---
 
-# Générer des variations - Demander des modèles dans les Edge Delivery Services
+# Générer des variations - Demander des modèles en Edge Delivery Services
 
 {{edge-delivery-services}}
 
-Découvrez comment utiliser des modèles d’invite pour générer des variantes dans la création de documents Edge Delivery Services.
+Découvrez comment utiliser des modèles d’invite pour générer des variantes dans la création de documents en Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428307/?learn=on)
 

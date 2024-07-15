@@ -24,4 +24,4 @@ Découvrez comment créer et modifier du contenu facilement dans Adobe Experien
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425972/?learn=on)
 
-Découvrez également comment configurer la variable [Intégration native d’AEM Assets avec Adobe Express](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/integration-adobe-express/native-integration-adobe-express) pour accéder facilement à AEM Assets à partir d’Adobe Express.
+Découvrez également comment configurer l’intégration native [AEM Assets avec Adobe Express](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/integration-adobe-express/native-integration-adobe-express) pour accéder facilement à AEM Assets à partir d’un Adobe Express.

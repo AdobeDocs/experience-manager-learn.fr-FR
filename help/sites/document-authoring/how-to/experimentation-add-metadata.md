@@ -1,6 +1,6 @@
 ---
-title: Ajout de métadonnées pour l’expérimentation dans les Edge Delivery Services
-description: Explorez l’ajout de métadonnées pour l’expérimentation dans la création de documents Edge Delivery Services.
+title: Ajout de métadonnées d’expérimentation en Edge Delivery Services
+description: Explorez l’ajout de métadonnées pour l’expérimentation dans la création de documents en Edge Delivery Services.
 version: Cloud Service
 feature: Authoring
 topic: Content Management
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 ---
 
-# Ajout de métadonnées pour l’expérimentation dans les Edge Delivery Services
+# Ajout de métadonnées d’expérimentation en Edge Delivery Services
 
 {{edge-delivery-services}}
 
-Explorez l’ajout de métadonnées pour l’expérimentation dans la création de documents Edge Delivery Services.
+Explorez l’ajout de métadonnées pour l’expérimentation dans la création de documents en Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428796/?learn=on)

@@ -8,19 +8,19 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-15752
-source-git-commit: a8fc8fa19ae19e27b07fa81fc931eca51cb982a1
+exl-id: 280c9a30-e017-4bc0-9027-096aac82c22c
+source-git-commit: a12b1778413079646814cb25567abfc26a429340
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 1%
 
 ---
 
-
 # Créer un composant Adresse
 
 Connectez-vous à CRXDE de votre instance locale prête pour le cloud d’AEM Forms.
 
-Effectuez une copie de la fonction ``/apps/bankingapplication/components/adaptiveForm/button`` et renommez-le en address block. Sélectionnez le noeud address block et définissez ses propriétés comme illustré ci-dessous.
+Effectuez une copie du noeud ``/apps/bankingapplication/components/adaptiveForm/button`` et renommez-le en bloc d’adresse. Sélectionnez le noeud address block et définissez ses propriétés comme illustré ci-dessous.
 
 >[!NOTE]
 >
@@ -31,12 +31,12 @@ Effectuez une copie de la fonction ``/apps/bankingapplication/components/adaptiv
 
 ## Propriétés du noeud cq-template
 
-Sélectionnez la variable ``cq-template`` sous ``addressblock`` et définissez ses propriétés comme illustré ci-dessous. Notez que le champType est défini sur panneau.
+Sélectionnez le noeud ``cq-template`` sous le noeud ``addressblock`` et définissez ses propriétés comme illustré ci-dessous. Notez que le champType est défini sur panneau.
 ![cq-template](assets/cq-template.png)
 
 ## Ajout de noeuds sous cq-template
 
-Ajoutez les noeuds suivants de type ``nt:unstructured`` under ``cq-template``
+Ajoutez les noeuds suivants de type ``nt:unstructured`` sous ``cq-template``
 
 * streetaddress
 * city
@@ -49,24 +49,24 @@ Ces noeuds représentent les champs du composant de bloc d’adresse. Les champs
 
 >[!NOTE]
 >
-> La variable **_application bancaire_** dans le chemin d’accès fait référence à l’appId du projet Maven. Cela peut être différent dans votre environnement.
+> L’ **_application bancaire_** du chemin d’accès fait référence à l’appId du projet Maven. Cela peut être différent dans votre environnement.
 
-Sélectionnez la variable ``streetaddress`` et définissez ses propriétés comme illustré ci-dessous.
+Sélectionnez le noeud ``streetaddress`` et définissez ses propriétés comme illustré ci-dessous.
 ![street-address](assets/streetaddress.png)
 
 ## Définition des propriétés du noeud city
 
-Sélectionnez la variable ``city`` et définissez ses propriétés comme illustré ci-dessous.
+Sélectionnez le noeud ``city`` et définissez ses propriétés comme illustré ci-dessous.
 ![city](assets/city.png)
 
 ## Définition des propriétés du noeud zip
 
-Sélectionnez la variable ``zip`` et définissez ses propriétés comme illustré ci-dessous.
+Sélectionnez le noeud ``zip`` et définissez ses propriétés comme illustré ci-dessous.
 ![zip](assets/zip.png)
 
 ## Définition des propriétés du noeud d’état
 
-Sélectionnez la variable ``state`` et définissez ses propriétés comme illustré ci-dessous. Remarquez le champType d’état : il est défini comme une liste déroulante.
+Sélectionnez le noeud ``state`` et définissez ses propriétés comme illustré ci-dessous. Remarquez le champType d’état : il est défini comme une liste déroulante.
 ![state](assets/state.png)
 
 Le composant de bloc d’adresse final ressemblera à ceci :
@@ -76,7 +76,3 @@ Le composant de bloc d’adresse final ressemblera à ceci :
 ## Étapes suivantes
 
 [Déploiement du projet](./deploy-your-project.md)
-
-
-
-

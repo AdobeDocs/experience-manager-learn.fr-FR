@@ -185,7 +185,7 @@ L’archétype de projet AEM configure automatiquement cette intégration. Déco
    >
    >L’exécution de `npm install` n’est nécessaire qu’une seule fois, comme après un nouveau clone ou une nouvelle génération du projet.
 
-1. Ouvrir `ui.frontend/package.json` et dans le **scripts** **start** ajout de commande `--env writeToDisk=true`.
+1. Ouvrez `ui.frontend/package.json` et, dans la commande **scripts** **start**, ajoutez `--env writeToDisk=true`.
 
    ```json
    {

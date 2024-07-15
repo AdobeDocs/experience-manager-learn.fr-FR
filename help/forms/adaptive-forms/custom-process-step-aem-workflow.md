@@ -34,7 +34,7 @@ La première étape consiste à créer un projet Maven à l’aide de l’arché
 
 ### Créer une classe qui implémente WorkflowProcess
 
-Ouvrez le projet Maven dans votre IDE Eclipse. Développez le dossier **projectname** > **core**. Développez l’objet `src/main/java` dossier. Vous devriez voir un module qui se termine par `core`. Créez une classe Java™ qui implémente WorkflowProcess dans ce module. Vous devez remplacer la méthode d’exécution. La signature de la méthode execute est la suivante :
+Ouvrez le projet Maven dans votre IDE Eclipse. Développez le dossier **projectname** > **core**. Développez le dossier `src/main/java`. Vous devriez voir un package qui se termine par `core`. Créez une classe Java™ qui implémente WorkflowProcess dans ce module. Vous devez remplacer la méthode d’exécution. La signature de la méthode execute est la suivante :
 
 ```java
 public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException 
@@ -44,7 +44,7 @@ La méthode execute donne accès aux 3 variables suivantes :
 
 **WorkItem** : la variable workItem donne accès aux données relatives au workflow. La documentation de l’API publique est disponible [ici.](https://helpx.adobe.com/fr/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html)
 
-**WorkflowSession**: cette variable workflowSession vous permet de contrôler le workflow. La documentation de l’API publique est disponible [here](https://helpx.adobe.com/fr/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html).
+**WorkflowSession** : cette variable workflowSession vous permet de contrôler le workflow. La documentation de l&#39;API publique est disponible [ici](https://helpx.adobe.com/fr/experience-manager/6-3/sites/developing/using/reference-materials/diff-previous/changes/com.adobe.granite.workflow.WorkflowSession.html).
 
 **MetaDataMap** : toutes les métadonnées associées au workflow. Tous les arguments de processus transmis à l’étape de processus sont disponibles à l’aide de l’objet MetaDataMap.[Documentation de l’API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)
 
@@ -133,7 +133,7 @@ public class WriteFormAttachmentsToFileSystem implements WorkflowProcess {
             }
 ```
 
-Ligne 1 : définit les propriétés de notre composant. La variable `process.label` est ce que vous verrez lors de l’association du composant OSGi à l’étape du processus, comme illustré dans l’une des captures d’écran ci-dessous.
+Ligne 1 : définit les propriétés de notre composant. La propriété `process.label` est ce que vous verrez lors de l’association du composant OSGi à l’étape de processus, comme illustré dans l’une des captures d’écran ci-dessous.
 
 Lignes 13 à 15 : les arguments de processus transmis à ce composant OSGi sont fractionnés à l’aide du séparateur « , ». Les valeurs d’attachmentPath et de saveToLocation sont ensuite extraites du tableau de chaînes.
 
@@ -150,7 +150,7 @@ Le service QueryBuilder est utilisé pour interroger des noeuds de type `nt:file
 
 >[!NOTE]
 >
->Puisque nous utilisons un objet Document spécifique à AEM Forms, vous devez inclure la dépendance aemfd-client-sdk dans votre projet Maven. L’ID de groupe est `com.adobe.aemfd` et l’identifiant d’artefacts est `aemfd-client-sdk`.
+>Puisque nous utilisons un objet Document spécifique à AEM Forms, vous devez inclure la dépendance aemfd-client-sdk dans votre projet Maven. L’ID de groupe est `com.adobe.aemfd` et l’ID d’artefacts est `aemfd-client-sdk`.
 
 #### Créer et déployer
 

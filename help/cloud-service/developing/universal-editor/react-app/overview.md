@@ -31,9 +31,9 @@ Ce tutoriel couvre les sujets suivants :
 
 - Aperçu rapide d’Universal Editor
 - Configuration de l’environnement de développement local
-   - **AEM SDK**: fournit le contenu stocké dans les fragments de contenu pour l’application React à l’aide des API GraphQL.
-   - **application React**: interface utilisateur simple qui affiche le contenu d’AEM.
-   - **Service d’éditeur universel**: a _copie locale du service Universal Editor_ qui lie Universal Editor et le SDK AEM.
+   - **AEM SDK** : il fournit le contenu stocké dans les fragments de contenu pour l’application React à l’aide des API GraphQL.
+   - **Application React** : interface utilisateur simple qui affiche le contenu d’AEM.
+   - **Universal Editor Service** : _copie locale du service Universal Editor_ qui lie Universal Editor et le SDK AEM.
 - Comment instrumenter l’application React pour modifier le contenu à l’aide d’Universal Editor
 - Comment modifier le contenu de l’application React à l’aide d’Universal Editor
 
@@ -50,14 +50,14 @@ Universal Editor permet aux auteurs et développeurs de contenu (front-end et ba
 
 ## Exemple d’application React
 
-Ce tutoriel utilise [**Équipes WKND**](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#react-app---basic-tutorial---teampersons) comme exemple d’application React. La variable **Équipes WKND** L’application React affiche une liste des membres de l’équipe et leurs détails.
+Ce tutoriel utilise [**WKND Teams**](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial#react-app---basic-tutorial---teampersons) comme exemple d’application React. L’application React **WKND Teams** affiche une liste des membres de l’équipe et leurs détails.
 
-Les détails de l’équipe, tels que le titre, la description et les membres de l’équipe, sont stockés sous la forme _Équipe_ Fragments de contenu dans AEM. De même, les détails de la Personne tels que le nom, la biographie et l’image de profil sont stockés sous la forme _Personne_ Fragments de contenu dans AEM.
+Les détails de l’équipe, tels que le titre, la description et les membres de l’équipe, sont stockés en tant que fragments de contenu _Team_ dans AEM. De même, les détails de la personne tels que le nom, la biographie et l’image de profil sont stockés en tant que fragments de contenu _Personne_ dans AEM.
 
 Le contenu de l’application React est fourni par AEM à l’aide des API GraphQL et l’interface utilisateur est créée à l’aide de deux composants React, `Teams` et `Person`.
 
-Un tutoriel correspondant est disponible pour apprendre à créer la variable **Équipes WKND** React App. Vous trouverez le tutoriel [here](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview).
+Un tutoriel correspondant est disponible pour apprendre à créer l’application React **WKND Teams**. Vous trouverez le tutoriel [ici](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview).
 
 ## Étape suivante
 
-Découvrez comment [configurer l’environnement de développement local ;](./local-development-setup.md).
+Découvrez comment [configurer l’environnement de développement local](./local-development-setup.md).

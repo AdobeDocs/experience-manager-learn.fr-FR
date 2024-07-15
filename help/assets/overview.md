@@ -65,7 +65,7 @@ Découvrez AEM Assets et comment l’utiliser pour atteindre les objectifs comm
 </a>
    </div>
    <p>
-      <em>Accélérez la création d’expériences du concept à la conception en passant par la diffusion.</em>
+      <em>Accélérer la création d’expériences du concept à la conception en passant par la diffusion.</em>
    <p>
 </td>
 <td>

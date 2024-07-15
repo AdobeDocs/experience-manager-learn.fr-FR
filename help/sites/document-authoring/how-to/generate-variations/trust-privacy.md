@@ -1,5 +1,5 @@
 ---
-title: Générer des variations - Approbation et confidentialité dans les Edge Delivery Services
+title: Générer des variations - Confiance et confidentialité en Edge Delivery Services
 description: Découvrez comment Adobe gère la confiance et la confidentialité pour générer des variations dans la création de documents Edge Delivery Services.
 version: Cloud Service
 feature: Authoring
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ---
 
-# Générer des variations - Approbation et confidentialité dans les Edge Delivery Services
+# Générer des variations - Confiance et confidentialité en Edge Delivery Services
 
 Découvrez comment Adobe gère la confiance et la confidentialité pour générer des variations dans la création de documents Edge Delivery Services.
 

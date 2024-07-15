@@ -26,7 +26,7 @@ Découvrez comment utiliser la recherche contextuelle dans Adobe Experience Ma
 
 ## Activer/désactiver la recherche contextuelle
 
-Pour activer ou désactiver la recherche contextuelle pour tous les utilisateurs, AEM administrateurs peuvent le faire en accédant à la __Paramètres généraux__ et le basculement de la variable __Recherche contextuelle__ passez au paramètre souhaité.
+Pour activer ou désactiver la recherche contextuelle pour tous les utilisateurs, AEM administrateurs peuvent le faire en accédant aux __Paramètres généraux__ et en passant la fonction de __recherche contextuelle__ au paramètre de votre choix.
 
 Par défaut, la recherche contextuelle est activée pour tous les utilisateurs.
 

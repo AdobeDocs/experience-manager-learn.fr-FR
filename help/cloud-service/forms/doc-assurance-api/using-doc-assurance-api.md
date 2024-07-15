@@ -8,7 +8,8 @@ version: Cloud Service
 feature: Document Services
 topic: Development
 jira: KT-15508
-source-git-commit: 97fbe450823c6122a25dc46c851296094894683e
+exl-id: 40617082-4d23-4c91-a016-2d947187052b
+source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -17,17 +18,17 @@ ht-degree: 0%
 
 # Utilisation de l’API DocAssurance
 
-La variable [Service DocAssurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/docassurance/#tag/DocAssurance) permet d’effectuer diverses opérations de signature ou de chiffrement numériques avec des documents du PDF, tels que la signature, la certification, l’ajout de champs de signature, le chiffrement, le décryptage, etc.
-Cet article vous fournit des fragments de code Java pour vous aider à commencer à utiliser l’API. Le fragment de code utilise le jeton d’accès. [Cet article explique les étapes nécessaires pour générer un jeton d’accès](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/doc-gen-formscs/introduction)
+Le [service DocAssurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/docassurance/#tag/DocAssurance) permet d’effectuer diverses opérations de signature ou de chiffrement numériques avec des documents PDF, tels que la signature, la certification, l’ajout de champs de signature, le chiffrement, le décryptage, etc.
+Cet article vous fournit des fragments de code Java pour vous aider à commencer à utiliser l’API. Le fragment de code utilise le jeton d’accès. [Cet article explique les étapes nécessaires pour générer le jeton d’accès](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/doc-gen-formscs/introduction)
 
 
-<span class="preview">Cette fonctionnalité est disponible sous le programme d’adoption précoce. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme d’adoption précoce et demander l’accès à cette fonctionnalité.</span>
+<span class="preview">Cette fonctionnalité est disponible dans le cadre du programme d’adoption précoce. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme d’adoption précoce et demander l’accès à cette fonctionnalité</span>
 
 
 ## Conditions préalables
 
 * Expérience avec AEM Forms Cloud Service
-* Expérience dans l’utilisation [Composants Apache HTTP](https://hc.apache.org/httpcomponents-client-4.5.x/)
+* Expérience dans l’utilisation des [composants HTTP Apache](https://hc.apache.org/httpcomponents-client-4.5.x/)
 * Accès à l’environnement du Cloud Service AEM Forms
 
 ## Document Inspect
@@ -157,4 +158,4 @@ if (response.getStatusLine().getStatusCode() == 200) {
 
 ### Collection Postman
 
-Une collection Postman de l’API peut être [téléchargé ici à des fins de test](assets/DocAssuranceAPI.postman_collection.json). Vous pouvez utiliser le type d’authentification Authentification de base ou Jeton porteur pour appeler l’API.
+Une collection Postman de l&#39;API peut être [téléchargée ici à des fins de test](assets/DocAssuranceAPI.postman_collection.json). Vous pouvez utiliser le type d’authentification Authentification de base ou Jeton porteur pour appeler l’API.

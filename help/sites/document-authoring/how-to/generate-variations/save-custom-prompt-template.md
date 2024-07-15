@@ -1,6 +1,6 @@
 ---
-title: Générer des variations - Enregistrement des modèles d’invite personnalisés dans les Edge Delivery Services
-description: Découvrez comment enregistrer les modèles d’invite personnalisés pour Générer des variations dans la création de documents Edge Delivery Services.
+title: Générer des variations - Enregistrement des modèles d’invite personnalisés en Edge Delivery Services
+description: Découvrez comment enregistrer les modèles d’invite personnalisés pour Générer des variations dans la création de documents en Edge Delivery Services.
 version: Cloud Service
 feature: Authoring
 topic: Content Management
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 ---
 
-# Générer des variations - Enregistrement des modèles d’invite personnalisés dans les Edge Delivery Services
+# Générer des variations - Enregistrement des modèles d’invite personnalisés en Edge Delivery Services
 
 {{edge-delivery-services}}
 
-Découvrez comment enregistrer les modèles d’invite personnalisés pour Générer des variations dans la création de documents Edge Delivery Services.
+Découvrez comment enregistrer les modèles d’invite personnalisés pour Générer des variations dans la création de documents en Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428317/?learn=on)
 

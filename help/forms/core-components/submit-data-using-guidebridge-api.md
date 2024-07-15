@@ -23,7 +23,7 @@ L’option &quot;Enregistrer et reprendre&quot; d’un formulaire implique de pe
 Pour réaliser ce cas d’utilisation, nous devons accéder aux données de formulaire et les envoyer à l’aide de l’API GuideBridge vers le point de terminaison REST pour le stockage et la récupération.
 
 Les données de formulaire sont enregistrées sur l’événement click d’un bouton à l’aide de l’éditeur de règles.
-![éditeur de règles](assets/rule-editor.png)
+![rule-editor](assets/rule-editor.png)
 
 La fonction JavaScript suivante a été écrite pour envoyer les données au point de terminaison spécifié.
 
@@ -70,7 +70,7 @@ La fonction JavaScript suivante a été écrite pour envoyer les données au poi
 
 ## Code côté serveur
 
-Le code Java côté serveur suivant a été écrit pour gérer les données de formulaire. Voici le servlet Java exécuté dans AEM qui est appelé via l’appel XHR dans le code JavaScript ci-dessus.
+Le code Java côté serveur suivant a été écrit pour gérer les données de formulaire. Voici le servlet Java exécuté dans AEM qui est appelé via l’appel XHR dans le JavaScript ci-dessus.
 
 ```java
 package com.azuredemo.core.servlets;

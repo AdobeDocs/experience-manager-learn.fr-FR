@@ -1,6 +1,6 @@
 ---
 title: 'Générer des variations : utilisez l’Adobe Firefly pour créer des images dans les Edge Delivery Services.'
-description: Découvrez comment utiliser Adobe Firefly pour créer des images utilisées dans les variations de contenu pour cibler la bonne audience dans la création de documents Edge Delivery Services.
+description: Découvrez comment utiliser Adobe Firefly pour créer des images utilisées dans les variations de contenu pour cibler la bonne audience dans la création de documents en Edge Delivery Services.
 version: Cloud Service
 feature: Authoring
 topic: Content Management
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 {{edge-delivery-services}}
 
-Découvrez comment utiliser Adobe Firefly pour créer des images utilisées dans les variations de contenu pour cibler la bonne audience dans la création de documents Edge Delivery Services.
+Découvrez comment utiliser Adobe Firefly pour créer des images utilisées dans les variations de contenu pour cibler la bonne audience dans la création de documents en Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428794/?learn=on)

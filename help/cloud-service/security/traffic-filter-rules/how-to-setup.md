@@ -99,7 +99,7 @@ Pour tester les règles, choisissez parmi les outils tiers disponibles en foncti
 
 - [Curl](https://curl.se/) pour les tests de base, comme appeler une URL et vérifier le code de réponse.
 
-- [Vegeta](https://github.com/tsenart/vegeta) pour effectuer un déni de service (DOS). Suivez les instructions d’installation de la section [Vegeta GitHub](https://github.com/tsenart/vegeta#install).
+- [Vegeta](https://github.com/tsenart/vegeta) pour effectuer un déni de service (DOS). Suivez les instructions d’installation de [Vegeta GitHub](https://github.com/tsenart/vegeta#install).
 
 - [Nikto](https://github.com/sullo/nikto/wiki) pour rechercher des problèmes potentiels et des vulnérabilités de sécurité telles que XSS, l’injection SQL, etc. Suivez les instructions d’installation de la section [Nikto GitHub](https://github.com/sullo/nikto).
 
@@ -119,11 +119,11 @@ Pour tester les règles, choisissez parmi les outils tiers disponibles en foncti
 
 ### Analyser les résultats à l’aide des outils du tableau de bord
 
-Après avoir créé, déployé et testé les règles, vous pouvez analyser les résultats à l’aide de la fonction **CDN** logs et **AEMCS-CDN-Log-Analysis-Tooling**. L’outil fournit un ensemble de tableaux de bord pour visualiser les résultats de la pile Splunk et ELK (Elasticsearch, Logstash et Kibana).
+Après avoir créé, déployé et testé les règles, vous pouvez analyser les résultats à l’aide des **journaux CDN** et **AEMCS-CDN-Log-Analysis-Tooling**. L’outil fournit un ensemble de tableaux de bord pour visualiser les résultats de la pile Splunk et ELK (Elasticsearch, Logstash et Kibana).
 
-Les outils peuvent être clonés à partir de la fonction [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) Référentiel GitHub. Suivez ensuite les instructions pour installer et charger le **Tableau de bord du trafic CDN** et **Tableau de bord WAF** des tableaux de bord pour l’outil d’observabilité de votre choix.
+L’outil peut être cloné à partir du référentiel GitHub [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Suivez ensuite les instructions pour installer et charger le **tableau de bord du trafic CDN** et le **tableau de bord WAF** pour votre outil d’observabilité préféré.
 
-Dans ce tutoriel, nous allons utiliser la pile ELK. Suivez la [Conteneur Docker ELK pour l’analyse des journaux CDN AEM](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) instructions pour configurer la pile ELK.
+Dans ce tutoriel, nous allons utiliser la pile ELK. Suivez les instructions [ELK Docker container for AEMCS CDN Log Analysis](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) pour configurer la pile ELK.
 
 - Une fois que vous avez chargé l’exemple de tableau de bord, la page d’outils du tableau de bord Elastic doit se présenter comme suit :
 

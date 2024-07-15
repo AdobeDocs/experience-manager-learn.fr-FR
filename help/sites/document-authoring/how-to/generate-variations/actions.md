@@ -1,6 +1,6 @@
 ---
 title: Générer des variations - Actions sur une variation générée dans les Edge Delivery Services
-description: Explorez les actions qui peuvent être utilisées sur une variation de contenu générée, notamment l’enregistrement, la copie, l’évaluation et bien plus encore dans la création de documents Edge Delivery Services.
+description: Découvrez les actions qui peuvent être utilisées sur une variation de contenu générée, y compris l’enregistrement, la copie, l’évaluation et plus encore dans la création de documents en Edge Delivery Services.
 version: Cloud Service
 feature: Authoring
 topic: Content Management
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 {{edge-delivery-services}}
 
-Explorez les actions qui peuvent être utilisées sur une variation de contenu générée, notamment l’enregistrement, la copie, l’évaluation et bien plus encore dans la création de documents Edge Delivery Services.
+Découvrez les actions qui peuvent être utilisées sur une variation de contenu générée, y compris l’enregistrement, la copie, l’évaluation et plus encore dans la création de documents en Edge Delivery Services.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428795/?learn=on)

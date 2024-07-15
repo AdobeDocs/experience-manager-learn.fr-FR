@@ -22,5 +22,5 @@ L’étape suivante consiste à fusionner les données XML avec le modèle pour 
 
 ## Utilisation d’OutputService pour générer le PDF
 
-La variable [generatePDF](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-) de la méthode OutputService a été utilisée pour générer le PDF.
+La méthode [generatePDF](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PDFOutputOptions-) de OutputService a été utilisée pour générer le PDF.
 Le PDF généré a ensuite été envoyé pour signature à l’aide de l’API REST Adobe Sign.
