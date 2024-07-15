@@ -253,7 +253,7 @@ Une fois le VPN créé, vous pouvez le configurer à l’aide des API Cloud Man
    Si votre déploiement AEM nécessite __uniquement__ des connexions HTTP/HTTPS vers un service externe, laissez le tableau `portForwards` vide, car ces règles ne s’appliquent qu’aux requêtes autres que HTTP/HTTPS.
 
 
-2. Pour chaque environnement, validez les règles de routage VPN en vigueur à l’aide de l’opération [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager.
+&#x200B;2. Pour chaque environnement, validez les règles de routage VPN en vigueur à l’aide de l’opération [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager.
 
    __Requête HTTP getEnvironmentAdvancedNetworkingConfiguration__
 
@@ -265,9 +265,9 @@ Une fois le VPN créé, vous pouvez le configurer à l’aide des API Cloud Man
        -H 'Content-Type: application/json'
    ```
 
-3. Les configurations de réseau privé virtuel peuvent être mises à jour à l’aide de l’opération [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager. N’oubliez pas que `enableEnvironmentAdvancedNetworkingConfiguration` est une opération `PUT`, et que toutes les règles doivent par conséquent être fournies à chaque appel de cette opération.
+&#x200B;3. Les configurations de réseau privé virtuel peuvent être mises à jour à l’aide de l’opération [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager. N’oubliez pas que `enableEnvironmentAdvancedNetworkingConfiguration` est une opération `PUT`, et que toutes les règles doivent par conséquent être fournies à chaque appel de cette opération.
 
-4. Vous pouvez désormais utiliser la configuration de réseau privé virtuel dans votre code AEM personnalisé et dans votre configuration.
+&#x200B;4. Vous pouvez désormais utiliser la configuration de réseau privé virtuel dans votre code AEM personnalisé et dans votre configuration.
 
 ## Se connecter à des services externes via un réseau privé virtuel
 
