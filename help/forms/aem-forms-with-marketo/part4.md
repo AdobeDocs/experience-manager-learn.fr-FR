@@ -10,17 +10,21 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 8bde459ae9a6e261cfc3aff308babe9de6e56059
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 100%
+source-wordcount: '278'
+ht-degree: 89%
 
 ---
 
-# Créer un formulaire adaptatif à l’aide du modèle de données de formulaire
+# Test de l’intégration
 
-L’étape suivante consiste à créer un formulaire adaptatif et à le baser sur le modèle de données de formulaire créé à l’étape précédente.
-La personne utilisatrice saisit l’ID du lead et il est appelé lorsqu’il sort du service Marketo pour obtenir les leads par identifiant. Les résultats de l’opération de service sont ensuite mappés aux champs appropriés des formulaires adaptatifs.
+Nous allons tester l’intégration en créant une simple récupération de formulaire et en affichant un objet Lead à partir de Market.
+>[!NOTE]
+>
+>Cette fonctionnalité a été testée sur un formulaire basé sur des composants de base.
+
+## Créer un formulaire adaptatif
 
 1. Créez un formulaire adaptatif, basez-le sur « Modèle de formulaire vierge », et associez-le au modèle de données de formulaire créé à l’étape précédente.
 1. Ouvrez le formulaire adaptatif en mode de modification.
@@ -35,12 +39,6 @@ La capture d’écran suivante explique les paramètres de l’éditeur de règl
 
 ![ruleeditor](assets/ruleeditor.png)
 
-## Débogage
-
-Si vous utilisez les lots fournis avec cet article, vous pouvez activer les [journaux de débogage](http://localhost:4502/system/console/slinglog) pour les classes suivantes :
-
-+ `com.marketoandforms.core.impl.MarketoServiceImpl`
-+ `com.marketoandforms.core.MarketoConfigurationService`
 
 ## Félicitations.
 
