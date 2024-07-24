@@ -1,26 +1,24 @@
 ---
-title: Formulaires de métadonnées Assets Essentials
-description: Découvrez comment les formulaires de métadonnées d’Assets Essentials peuvent être configurés rapidement et facilement pour adapter les métadonnées des ressources.
+title: Formulaires de métadonnées
+description: Découvrez comment AEM Assets Metadata Forms peut être rapidement et facilement configuré pour personnaliser les métadonnées de ressources.
 version: Cloud Service
-feature: Assets Essentials
 topic: Content Management
 role: Admin
 level: Beginner
-jira: KT-10230
-thumbnail: 342154.jpeg
-last-substantial-update: 2022-10-10T00:00:00Z
+jira: KT-15654
+last-substantial-update: 2024-07-19T00:00:00Z
 doc-type: Feature Video
 exl-id: 9e68efbb-38bd-4538-b899-5fd356c9322d
-duration: 648
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+duration: 489
+source-git-commit: 54509339ee8e538daf432b329ddebb55e98bb6d9
 workflow-type: tm+mt
-source-wordcount: '40'
-ht-degree: 100%
+source-wordcount: '39'
+ht-degree: 10%
 
 ---
 
-# Formulaires de métadonnées dans Assets Essentials
+# Formulaires de métadonnées
 
-Découvrez comment les formulaires de métadonnées d’Assets Essentials peuvent être configurés rapidement et facilement pour adapter les ressources.
+Découvrez comment Forms de métadonnées peut être rapidement et facilement configuré pour personnaliser les métadonnées de ressources disponibles dans AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/342154?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431686?quality=12&learn=on)

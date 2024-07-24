@@ -11,7 +11,7 @@ jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 399
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: e29eaefb20d466126d0d31ad8eb598b63a0cebcd
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 97%
@@ -91,7 +91,7 @@ Oui c’est possible, mais cela nécessite une bonne planification concernant :
    + Vérifiez s’il est acceptable de migrer toutes les ressources dans le cadre d’un jeu de migration, puis d’importer les sites qui les utilisent par phases.
 + Dans l’état actuel, le processus d’ingestion de l’instance de création la rend indisponible pour la création de contenu même si le niveau de publication peut toujours diffuser le contenu.
    + Cela signifie que jusqu’à ce que l’ingestion soit terminée dans la création, les activités de création de contenu sont gelées.
-+ Les utilisateurs ne sont plus migrés, bien que les groupes soient
++ Les utilisateurs ne sont plus migrés, bien que les groupes le soient.
 
 Consultez le processus d’extraction et d’ingestion de complément comme documenté avant de planifier les migrations.
 

@@ -8,9 +8,9 @@ breadcrumb-title: Tutoriels d’AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: 82ef2988d55012ae730e9bbc7adeea547863ba51
+source-git-commit: d440662bcfbc8fdea8c1b0e8af7f653b1f8667f9
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2086'
 ht-degree: 98%
 
 ---
@@ -240,8 +240,8 @@ ht-degree: 98%
    + [Partie 2 - Création d’un modèle personnalisé](listing-custom-asset-types/part2.md)
 + AEM Forms avec Marketo{#aem-forms-with-marketo}
    + [Partie 1 - Introduction](aem-forms-with-marketo/part1.md)
-   + [Partie 2 - Authentification personnalisée](aem-forms-with-marketo/part2.md)
-   + [Partie 3 - Source de données](aem-forms-with-marketo/part3.md)
+   + [Partie 2 - Source de données](aem-forms-with-marketo/part2.md)
+   + [Partie 3 - Modèle de données de formulaire](aem-forms-with-marketo/part3.md)
    + [Partie 4 - Assemblage](aem-forms-with-marketo/part4.md)
 
 + AEM Forms avec Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
@@ -280,6 +280,7 @@ ht-degree: 98%
    + [Utilisation du dossier de contrôle dans AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Utilisation du service Barcode dans AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
    + [Utilisation du service PDFG dans AEM Forms](document-services/using-pdfg-in-aem-forms.md)
+   + [Chiffrer le PDF avec mot de passe des droits](document-services/encrypt-pdf-permissions-password.md)
    + [Utilisation des services Output et Forms dans AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Utilisation de fragments XDP dans le service de sortie](document-services/using-fragments-in-output-service.md)
    + [Script ECMA pour générer un PDF avec des fragments](document-services/using-fragments-in-output-service-watched-folder.md)
