@@ -12,9 +12,9 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 4111ae0cf8777ce21c224991b8b1c66fb01041b3
+source-git-commit: 1b493d85303e539e07ba8b080ed55ef2af18bfcb
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1947'
 ht-degree: 91%
 
 ---
@@ -42,10 +42,6 @@ Voici quelques autres mesures recommandées que les clientes et clients peuvent 
 - Configurer des **alertes** pour les règles de filtrage du trafic limitant le débit via une « action d’alerte ». Ainsi, lorsque la règle se déclenche, une notification est envoyée par le Centre d’actions.
 - Augmenter la couverture du cache en déclarant des **transformations de requêtes** pour ignorer des paramètres de requête.
 
->[!NOTE]
->
->La fonctionnalité [alertes de règles de filtrage du trafic](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#traffic-filter-rules-alerts) n’a pas encore été publiée. Pour en obtenir l’accès par le biais du programme d’adoption précoce, envoyez un e-mail à **<aemcs-waf-adopter@adobe.com>**.
-
 ### Variantes des règles de filtrage du trafic limitant le débit {#rate-limit-variations}
 
 Il existe deux variantes des règles de filtrage du trafic limitant le débit :
@@ -72,7 +68,6 @@ Comme précisé précédemment, Adobe bloque par défaut le trafic sur le résea
 Idéalement, vous devez configurer les règles avant de passer en production. Dans la pratique, de nombreuses organisations ne déclarent les règles que de manière réactive lorsqu’elles sont alertées d’un pic de trafic indiquant une attaque probable.
 
 Adobe envoie une alerte de pic de trafic à l&#39;origine sous la forme d’une [Notification du Centre d’actions](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/actions-center) lorsque le seuil de trafic par défaut d’une adresse IP unique est dépassé, pour un PoP donné. Si vous avez reçu une telle alerte, il est recommandé de configurer une règles de filtrage du trafic limitant le débit. Cette alerte par défaut est différente des alertes que les clientes et les clients doivent activer explicitement lorsque ceux-ci définissent des règles de filtrage du trafic. Cela vous sera détaillé dans une section ultérieure.
-
 
 ## Analyser les modèles de trafic {#analyze-traffic}
 

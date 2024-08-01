@@ -12,9 +12,9 @@ last-substantial-update: 2024-01-29T00:00:00Z
 jira: KT-14878
 thumbnail: KT-14878.jpeg
 exl-id: b1c127a8-24e7-4521-b535-60589a1391bf
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '699'
 ht-degree: 100%
 
 ---
@@ -46,10 +46,6 @@ Les éléments suivants sont requis afin de terminer ce tutoriel :
 - Accédez à [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
 
 - [Interface de ligne de commande d’Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installée sur votre ordinateur local.
-
->[!IMPORTANT]
->
->Eventing pour AEM as a Cloud Service n’est disponible que pour les utilisateurs et utilisatrices enregistrés en mode de version préliminaire. Pour activer AEM Eventing dans votre environnement AEM as a Cloud Service, contactez l’équipe [AEM Eventing](mailto:grp-aem-events@adobe.com).
 
 ## Créer un projet dans Adobe Developer Console
 

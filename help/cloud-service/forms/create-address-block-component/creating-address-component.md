@@ -9,10 +9,10 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: 280c9a30-e017-4bc0-9027-096aac82c22c
-source-git-commit: a12b1778413079646814cb25567abfc26a429340
+source-git-commit: b1de5c163607163bc702ea7b8ea4916c414f2a3a
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '297'
+ht-degree: 3%
 
 ---
 
@@ -68,6 +68,16 @@ Sélectionnez le noeud ``zip`` et définissez ses propriétés comme illustré c
 
 Sélectionnez le noeud ``state`` et définissez ses propriétés comme illustré ci-dessous. Remarquez le champType d’état : il est défini comme une liste déroulante.
 ![state](assets/state.png)
+
+## Définition des valeurs par défaut du champ d’état
+
+Sélectionnez le noeud ``state`` et ajoutez les propriétés suivantes.
+
+| Nom | Type | Valeur |
+|----------|----------|---------------------|
+| enum | Chaîne[] | CA,NY |
+| enumNames | Chaîne[] | Californie, New York |
+
 
 Le composant de bloc d’adresse final ressemblera à ceci :
 

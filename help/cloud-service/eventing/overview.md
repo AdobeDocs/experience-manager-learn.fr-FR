@@ -12,10 +12,10 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: c0aa4049e846a0f24f8a5f5b014dbaf5bfc8eb2d
+source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 97%
+source-wordcount: '910'
+ht-degree: 98%
 
 ---
 
@@ -24,10 +24,6 @@ ht-degree: 97%
 Découvrez AEM Eventing, en quoi cela consiste, pourquoi et quand l’utiliser, avec des exemples.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426686?quality=12&learn=on)
-
->[!IMPORTANT]
->
->Eventing pour AEM as a Cloud Service n’est disponible que pour les utilisateurs et utilisatrices enregistrés en mode de version préliminaire. Pour activer AEM événements dans votre environnement AEM as a Cloud Service, contactez l’ <a href="mailto:grp-aem-events@adobe.com">équipe AEM-Eventing</a>.
 
 ## Présentation
 

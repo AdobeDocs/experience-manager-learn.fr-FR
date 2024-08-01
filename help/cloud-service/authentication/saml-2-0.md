@@ -11,10 +11,10 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 11c9173cbb2da75bfccba278e33fc4ca567bbda1
+source-git-commit: 49f8df6e658b35aa3ba6e4f70cd39ff225c46120
 workflow-type: tm+mt
-source-wordcount: '3357'
-ht-degree: 91%
+source-wordcount: '3919'
+ht-degree: 78%
 
 ---
 
@@ -441,6 +441,107 @@ Une fois l’authentification au fournisseur d’identité réussie, le fourniss
 ```
 
 Si la réécriture de l’URL sur le serveur web Apache est configurée (`dispatcher/src/conf.d/rewrites/rewrite.rules`), assurez-vous que les requêtes vers les points d’entrée `.../saml_login` ne sont pas accidentellement tronquées.
+
+### Comment activer l’appartenance à un groupe dynamique pour les utilisateurs SAML dans de nouveaux environnements
+
+Pour améliorer considérablement les performances d’évaluation de groupe dans de nouveaux environnements AEM as a Cloud Service, l’activation de la fonction d’appartenance à un groupe dynamique est recommandée dans de nouveaux environnements.
+Cette étape est également nécessaire lorsque la synchronisation des données est activée. Plus de détails [ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
+Pour ce faire, ajoutez la propriété suivante au fichier de configuration OSGI :
+
+`/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
+
+Avec cette configuration, les utilisateurs et les groupes sont créés en tant qu’ [ utilisateurs externes d’Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Dans AEM, les utilisateurs et les groupes externes ont une valeur par défaut `rep:principalName` composée de `[user name];[idp]` ou `[group name];[idp]`.
+Notez que les listes de contrôle d’accès (ACL) sont associées au PrincipalName des utilisateurs ou des groupes.
+Lors du déploiement de cette configuration dans un déploiement existant où auparavant `identitySyncType` n’a pas été spécifié ou défini sur `default`, de nouveaux utilisateurs et groupes seront créés et des listes de contrôle d’accès doivent être appliquées à ces nouveaux utilisateurs et groupes. Notez que les groupes externes ne peuvent pas contenir d’utilisateurs locaux. [Repoinit](https://sling.apache.org/documentation/bundles/repository-initialization.html) peut être utilisé pour créer des listes de contrôle d’accès pour les groupes externes SAML, même s’ils ne sont créés que lorsque l’utilisateur effectue une connexion.
+Pour éviter cette refactorisation sur ACL, une [fonction de migration](#automatic-migration-to-dynamic-group-membership-for-existing-environments) standard a été mise en oeuvre.
+
+### Stockage des adhésions dans des groupes locaux et externes avec une appartenance dynamique à un groupe
+
+Sur les groupes locaux, les membres du groupe sont stockés dans l’attribut oak : `rep:members`. L’attribut contient la liste des uid de chaque membre du groupe. Vous trouverez des détails supplémentaires [ici](https://jackrabbit.apache.org/oak/docs/security/user/membership.html#member-representation-in-the-repository).
+Exemple :
+
+```
+{
+  "jcr:primaryType": "rep:Group",
+  "rep:principalName": "operators",
+  "rep:managedByIdp": "SAML",
+  "rep:members": [
+    "635afa1c-beeb-3262-83c4-38ea31e5549e",
+    "5e496093-feb6-37e9-a2a1-7c87b1cec4b0",
+    ...
+  ],
+   ...
+}
+```
+
+Les groupes externes dotés d’une adhésion de groupe dynamique ne stockent aucun membre dans l’entrée de groupe.
+L’appartenance au groupe est à la place stockée dans les entrées utilisateurs. Vous trouverez plus de documentation [ici](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html). Par exemple, il s’agit du noeud OAK du groupe :
+
+```
+{
+  "jcr:primaryType": "rep:Group",
+  "jcr:mixinTypes": [
+    "rep:AccessControllable"
+  ],
+  "jcr:createdBy": "",
+  "jcr:created": "Tue Jul 16 2024 08:58:47 GMT+0000",
+  "rep:principalName": "GROUP_1;aem-saml-idp-1",
+  "rep:lastSynced": "Tue Jul 16 2024 08:58:47 GMT+0000",
+  "jcr:uuid": "d9c6af8a-35c0-3064-899a-59af55455cd0",
+  "rep:externalId": "GROUP_1;aem-saml-idp-1",
+  "rep:authorizableId": "GROUP_1;aem-saml-idp-1"
+}
+```
+
+Il s’agit du noeud pour un membre utilisateur de ce groupe :
+
+```
+{
+  "jcr:primaryType": "rep:User",
+  "jcr:mixinTypes": [
+    "rep:AccessControllable"
+  ],
+  "surname": "Test",
+  "rep:principalName": "testUser",
+  "rep:externalId": "test;aem-saml-idp-1",
+  "rep:authorizableId": "test",
+  "rep:externalPrincipalNames": [
+    "projects-users;aem-saml-idp-1",
+    "GROUP_2;aem-saml-idp-1",
+    "GROUP_1;aem-saml-idp-1",
+    "operators;aem-saml-idp-1"
+  ],
+  ...
+}
+```
+
+### Migration automatique vers l’appartenance à un groupe dynamique pour les environnements existants
+
+Lorsque cette migration est activée, elle est réalisée lors de l’authentification de l’utilisateur et comprend les étapes suivantes :
+1. L’utilisateur local est migré vers un utilisateur externe tout en conservant le nom d’utilisateur d’origine. Cela signifie que les utilisateurs locaux migrés, agissant désormais en tant qu’utilisateurs externes, conservent leur nom d’utilisateur d’origine au lieu de suivre la syntaxe d’affectation de nom mentionnée dans la section précédente. Une propriété supplémentaire sera ajoutée appelée : `rep:externalId` avec la valeur `[user name];[idp]`. L&#39;utilisateur `PrincipalName` n&#39;est pas modifié.
+2. Pour chaque groupe externe reçu dans l’assertion SAML, un groupe externe est créé. S’il existe un groupe local correspondant, le groupe externe est ajouté en tant que membre au groupe local.
+3. L’utilisateur est ajouté en tant que membre du groupe externe.
+4. L&#39;utilisateur local est alors retiré de tous les groupes locaux de Saml dont il faisait partie. Les groupes locaux Saml sont identifiés par la propriété OAK : `rep:managedByIdp`. Cette propriété est définie par le gestionnaire d’authentification Saml lorsque l’attribut `syncType` n’est pas spécifié ou défini sur `default`.
+
+Par exemple, si, avant la migration, `user1` est un utilisateur local et un membre du groupe local `group1`, les modifications suivantes se produisent après la migration :
+`user1` devient un utilisateur externe. L’attribut `rep:externalId` est ajouté à son profil.
+`user1` devient membre du groupe externe : `group1;idp`
+`user1` n’est plus un membre direct du groupe local : `group1`
+`group1;idp` est membre du groupe local : `group1`.
+`user1` est alors membre du groupe local : `group1` par héritage
+
+L’appartenance au groupe pour les groupes externes est stockée dans le profil utilisateur dans l’attribut `rep:authorizableId`
+
+### Configuration de la migration automatique vers l’appartenance à un groupe dynamique
+
+1. Activez la propriété `"identitySyncType": "idp_dynamic_simplified_id"` dans le fichier de configuration SAML OSGI : `com.adobe.granite.auth.saml.SamlAuthenticationHandler~...cfg.json` :
+2. Configurez le nouveau service OSGI avec le PID : `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~...` avec la propriété :
+
+```
+{
+  "idpIdentifier": "<vaule of identitySyncType of saml configuration to be migrated>"
+}
+```
 
 ## Déployer la configuration SAML
 
