@@ -11,10 +11,10 @@ jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 364d055b7b2e4f273f906c66328fc14f95321611
 workflow-type: tm+mt
 source-wordcount: '328'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -37,9 +37,10 @@ Dans le calque de style, sélectionnez un onglet (onglet Général, par exemple)
 Lors de l’ouverture de l’éditeur de style de l’onglet, vous vous trouvez dans l’état par défaut, comme illustré dans la copie d’écran ci-dessous.
 ![navigation-tab](assets/navigation-tab.png)
 
-Définissez les propriétés CSS d’état par défaut, comme illustré ci-dessous.
+Définissez les propriétés CSS de l’état par défaut, comme illustré ci-dessous.
+
 | Catégorie | Nom de la propriété | Valeur de la propriété |
-|:—|:—|:—|
+|:---|:---|:---|
 | Dimensions et position | Largeur | 50 px |
 | Texte | Épaisseur de la police | Gras |
 | Texte | Couleur | #FFF |

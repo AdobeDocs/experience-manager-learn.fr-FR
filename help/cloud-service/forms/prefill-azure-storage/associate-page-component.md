@@ -9,10 +9,10 @@ version: Cloud Service
 topic: Integrations
 exl-id: 7b2b1e1c-820f-4387-a78b-5d889c31eec0
 duration: 25
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 364d055b7b2e4f273f906c66328fc14f95321611
 workflow-type: tm+mt
 source-wordcount: '150'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -25,7 +25,8 @@ Accédez au nœud /conf/AzurePortalStorage/settings/wcm/templates/storeandrestor
 |--------------------|-------------------|-------------------------------------------------------|
 | sling:resourceType | Chaîne | azureportalpagecomponent/component/page/storeandfetch |
 
-Accédez au nœud /conf/AzurePortalStorage/settings/wcm/templates/storeandrestoreformazure/structure/jcr:content, ajoutez la propriété suivante et enregistrez les modifications.
+Accédez au noeud /conf/AzurePortalStorage/settings/wcm/templates/storeandrestoreformazure/structure/jcr:content , ajoutez la propriété suivante et enregistrez les modifications.
+
 | **Nom de la propriété** | **Type de propriété** | **Valeur de la propriété** |
 |--------------------|-------------------|-------------------------------------------------------|
 | sling:resourceType | Chaîne | azureportalpagecomponent/component/page/storeandfetch |
