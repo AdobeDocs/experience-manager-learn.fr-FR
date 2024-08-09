@@ -1,5 +1,5 @@
 ---
-title: Chiffrer le PDF avec un mot de passe d’accès aux droits
+title: Chiffrer le PDF avec un mot de passe d’autorisation
 description: Utilisez DocAssuranceService pour chiffrer un PDF.
 feature: Document Services
 version: 6.4,6.5
@@ -9,7 +9,7 @@ level: Intermediate
 jira: KT-15849
 last-substantial-update: 2024-07-19T00:00:00Z
 exl-id: 5df8581c-a44c-449c-bf3b-8cdf57635c4d
-source-git-commit: b823f9e294c42ba258049a942816f9a154a6e1a6
+source-git-commit: d01a56cd1fd3085b0230918b15b4635ba375e346
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 31%
