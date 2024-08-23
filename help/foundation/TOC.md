@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriels sur AEM Foundation
 user-guide-description: Ensemble de vidéos et de tutoriels d’Adobe Experience Manager Foundation.
 sub-product: Experience Manager
 index: y
-source-git-commit: a504ace72b1b90c6e7c711a939595b95f24733e6
+source-git-commit: 1e1a33986e202ce2af9cf2d03eca7895514465df
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '241'
+ht-degree: 96%
 
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 100%
 # Vidéos et tutoriels d’AEM Foundation {#foundation}
 
 + [Vue d’ensemble](./overview.md)
++ [POC](./poc.md)
 + Administration {#administration}
    + [Comprendre les raisons de mettre à niveau AEM](./administration/understand-reasons-to-upgrade.md)
    + [Utiliser oak-run.jar pour gérer les index](./administration/use-oak-run-jar-to-manage-indexes.md)
@@ -26,6 +27,7 @@ ht-degree: 100%
    + [Portées OAuth](authentication/oauth-code-sample-develop.md)
    + [Comprendre l’authentification](authentication/authentication-support-article-understand.md)
    + [Comprendre l’authentification IMS sur AMS](authentication/adobe-ims-authentication-technical-video-understand.md)
+   + [Migration des informations d’identification JWT-to-OAuth](authentication/jwt-to-oauth-migration.md)
 + Adobe Cloud Manager{#cloud-manager}
    + [Comprendre Adobe Cloud Manager](./cloud-manager/understand-cloud-manager-for-aem.md)
    + [Pipelines CI/CD](./cloud-manager/use-the-cicd-pipeline-in-cloud-manager-for-aem.md)
@@ -48,6 +50,7 @@ ht-degree: 100%
    + [Protection contre les attaques par déni de service ModSecurity CRS](./security/modsecurity-crs-dos-attack-protection.md)
    + [Connexions HTTPS aux API avec des certificats privés](./security/call-internal-apis-having-private-certificate.md)
    + [Authentification TLS mutuelle (mTLS) à partir d’AEM](./security/mutual-tls-authentication.md)
+   + [Migration des informations d’identification JWT-To-OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
 + Workflow {#workflow}
    + [Utiliser l’éditeur de workflow](./workflow/use-the-workflow-editor.md)
    + [Utiliser un workflow](./workflow/use-workflow.md)
