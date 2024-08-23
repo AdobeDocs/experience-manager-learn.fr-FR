@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 07225f1ae4455e2fa69c8e488851361c725fe9e8
+source-git-commit: 7ef37a71f1daefee484478c3194907d5ce918af4
 workflow-type: tm+mt
-source-wordcount: '1258'
-ht-degree: 94%
+source-wordcount: '1275'
+ht-degree: 93%
 
 ---
 
@@ -152,6 +152,7 @@ ht-degree: 94%
    + Procédure{#how-to}
       + [Activer la mise en cache](./caching/how-to/enable-caching.md)
       + [Désactiver la mise en cache](./caching/how-to/disable-caching.md)
+      + [Purge du cache](./caching/how-to/purge-cache.md)
 + Accéder à AEM{#accessing}
    + [Vue d’ensemble](./accessing/overview.md)
    + [Utilisateurs Adobe IMS](./accessing/adobe-ims-users.md)
@@ -259,6 +260,10 @@ ht-degree: 94%
       + [2 - Configuration](./forms/create-address-block-component/set-up.md)
       + [3 - Créer un composant](./forms/create-address-block-component/creating-address-component.md)
       + [4 - Déploiement du composant](./forms/create-address-block-component/deploy-your-project.md)
+   + Créer un composant d’image cliquable{#clickable-image-component}
+      + [1. Présentation](./forms/clickable-image-component/introduction.md)
+      + [2 - Créer un composant](./forms/clickable-image-component/create-component.md)
+      + [3 - Gérer l’événement de clic](./forms/clickable-image-component/handle-click-event.md)
    + AEM Forms et Analytics{#forms-and-analytics}
       + [Présentation](./forms/form-data-analytics/introduction.md)
       + [Créer des éléments de données](./forms/form-data-analytics/data-elements.md)
@@ -421,3 +426,4 @@ ht-degree: 94%
          + [Intégrer AEM Assets](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
          + [IA générative pour AEM Sites](./expert-resources/cloud-5/season-3/cloud5-generative-ai-for-aem-sites.md)
          + [Exploration d’Universal Editor](./expert-resources/cloud-5/season-3/cloud5-exploring-universal-editor.md)
+         + [Importation de sites](./expert-resources/cloud-5/season-3/cloud5-import-sites-to-edge-delivery-services.md)

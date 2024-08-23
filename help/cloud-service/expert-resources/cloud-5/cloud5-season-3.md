@@ -6,10 +6,10 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: cbba149b23b4d8ecad35f263dc282a3da481fc9f
+source-git-commit: 7ef37a71f1daefee484478c3194907d5ce918af4
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 94%
+source-wordcount: '445'
+ht-degree: 88%
 
 ---
 
@@ -174,6 +174,21 @@ Découvrez les nouvelles fonctionnalités de l’IA générative disponibles dan
                 <br/>                
                  Découvrez l’éditeur universel et l’AEM avec les Edge Delivery Services.
             </p>
-        </td>                    
+        </td>
+        <td>
+            <a href="./season-3/cloud5-import-sites-to-edge-delivery-services.md">
+                <img alt="Importation de sites dans AEM Sites avec des Edge Delivery Services" 
+                     src="https://video.tv.adobe.com/v/3431603?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-import-sites-to-edge-delivery-services.md">
+                <strong>Importer des sites</strong></a>        
+                <br/><em> avec James Talbot et Varun Mitra, Cloud Architect</em>
+            </div>
+            <p>
+                <br/>                
+                 Découvrez l’importation de sites dans AEM Sites avec des Edge Delivery Services.
+            </p>
+        </td>
     </tr>      
 </table>
