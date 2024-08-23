@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 7ef37a71f1daefee484478c3194907d5ce918af4
+source-git-commit: cc7fa9bbaa775b0216c839be079504c2b5467878
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 93%
+source-wordcount: '1279'
+ht-degree: 92%
 
 ---
 
@@ -143,6 +143,7 @@ ht-degree: 93%
    + [Nom de domaine personnalisé avec le réseau de diffusion de contenu géré par Adobe](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
    + [Nom de domaine personnalisé avec le réseau de diffusion de contenu client](./content-delivery/custom-domain-names-with-customer-managed-cdn.md)
    + [Mise en cache](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
+   + [Adobe CDN - au-delà de la mise en cache](./content-delivery/adobe-cdn-beyond-caching.md)
    + [Redirections d’URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=fr){target=_blank}
 + Mise en cache{#caching}
    + [Vue d’ensemble](./caching/overview.md)
