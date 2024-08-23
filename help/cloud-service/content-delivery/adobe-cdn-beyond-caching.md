@@ -1,6 +1,6 @@
 ---
 title: Adobe CDN - Fonctionnalités avancées au-delà de la mise en cache
-description: Découvrez les fonctionnalités avancées du réseau de diffusion de contenu Adobe au-delà de la mise en cache, comme la configuration du trafic sur le réseau de diffusion de contenu, les pages d’erreur sur le réseau de diffusion de contenu, etc.
+description: Découvrez les fonctionnalités avancées du réseau de diffusion de contenu Adobe au-delà de la mise en cache, comme la configuration du trafic sur le réseau de diffusion de contenu, la configuration des jetons et des informations d’identification, les pages d’erreur du réseau de diffusion de contenu, etc.
 version: Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
@@ -11,9 +11,9 @@ duration: 0
 last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: cc7fa9bbaa775b0216c839be079504c2b5467878
+source-git-commit: 10f9ca66a1669e1207237128469852ec7514d110
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Adobe CDN - Fonctionnalités avancées au-delà de la mise en cache
 
-Découvrez les fonctionnalités avancées du réseau de diffusion de contenu Adobe au-delà de la mise en cache, comme la configuration du trafic sur le réseau de diffusion de contenu, les pages d’erreur sur le réseau de diffusion de contenu, etc.
+Découvrez les fonctionnalités avancées d’Adobe Content Delivery Network (CDN) au-delà de la mise en cache, telles que la configuration du trafic sur le CDN, la configuration des jetons et des informations d’identification, les pages d’erreur du CDN, etc.
 
 Outre la mise en cache de contenu, Adobe CDN propose plusieurs fonctionnalités avancées qui peuvent vous aider à optimiser les performances de votre site web. Ces fonctionnalités sont les suivantes :
 
@@ -50,8 +50,7 @@ Découvrez les principales fonctionnalités liées à la _configuration des info
 
 - **Purge API Token** : permet de créer votre propre clé de purge pour la purge d’un seul groupe ou de toutes les ressources du cache.
 - **Authentification de base** : mécanisme d’authentification léger lorsque vous souhaitez restreindre l’accès à votre site web ou à une partie de celui-ci. Cela est principalement nécessaire dans le cadre de divers processus de révision avant la mise en ligne.
-- **Validation d’en-tête HTTP** : utilisé lorsqu’un réseau de diffusion de contenu géré par le client achemine le trafic vers le réseau de diffusion de contenu Adobe. Le CDN Adobe valide la requête entrante en fonction de la valeur d’en-tête `X-AEM-Edge-Key`.
-Permet de créer votre propre valeur pour l’en-tête `X-AEM-Edge-Key`.
+- **Validation d’en-tête HTTP** : utilisé lorsqu’un réseau de diffusion de contenu géré par le client achemine le trafic vers le réseau de diffusion de contenu Adobe. Le CDN Adobe valide la requête entrante en fonction de la valeur d’en-tête `X-AEM-Edge-Key`. Permet de créer votre propre valeur pour l’en-tête `X-AEM-Edge-Key`.
 
 ## Pages d’erreur CDN
 
@@ -87,7 +86,7 @@ data:
           location: /us/en/top3.html
 ```
 
-## Ressources supplémentaires
+## Tutorials associés
 
 [Protection des sites web avec des règles de filtrage du trafic](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
 
@@ -100,7 +99,3 @@ data:
 [Configuration des informations d’identification et de l’authentification CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 
 [Configuration des pages d’erreur CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages)
-
-
-
-
