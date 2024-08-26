@@ -12,10 +12,10 @@ last-substantial-update: 2024-08-12T00:00:00Z
 jira: KT-15121
 thumbnail: KT-15121.jpeg
 exl-id: 8936c3ae-2daf-4d0f-b260-28376ae28087
-source-git-commit: 07225f1ae4455e2fa69c8e488851361c725fe9e8
+source-git-commit: f92e66d6edc929bff1e8cae6adb7f408352aeb77
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 60%
+source-wordcount: '726'
+ht-degree: 59%
 
 ---
 
@@ -150,7 +150,7 @@ Cependant, si vous utilisez le **domaine racine**, vous devez ajouter un type d�
 
 Pour vérifier que le site est accessible via le nom de domaine personnalisé, ouvrez un navigateur web et accédez à l’URL du domaine personnalisé. Assurez-vous que le site est accessible et que le navigateur indique une connexion sécurisée avec l’icône de cadenas.
 
-## Vidéo de présentation complète
+## Vidéo de bout en bout
 
 Vous pouvez également regarder la vidéo de présentation complète qui détaille la vue d’ensemble, les conditions préalables et les étapes ci-dessus pour ajouter un nom de domaine personnalisé à un site hébergé AEM as a Cloud Service.
 
