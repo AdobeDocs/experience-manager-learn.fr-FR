@@ -11,7 +11,7 @@ duration: 0
 last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
-source-git-commit: 10f9ca66a1669e1207237128469852ec7514d110
+source-git-commit: 65e77a329226ca7c7ccb1e583d2a045074feeb3d
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -31,12 +31,13 @@ Outre la mise en cache de contenu, Adobe CDN propose plusieurs fonctionnalités 
 
 Ces fonctionnalités sont des **fonctions en libre-service**. Configuré dans le fichier `cdn.yaml` de votre projet AEM et déployé à l’aide du pipeline de configuration Cloud Manager.
 
+>[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
+
 ## Configuration du trafic sur le réseau de diffusion de contenu
 
 Découvrez les principales fonctionnalités liées à _Configuration du trafic sur le réseau de diffusion de contenu_ :
 
-- **Prévention des attaques par déni de service :** l’Adobe CDN absorbe les attaques par déni de service sur le réseau
-, les empêchant d’atteindre votre serveur d’origine.
+- **Prévention des attaques par déni de service :** l’Adobe CDN absorbe les attaques par déni de service sur la couche réseau, ce qui les empêche d’atteindre votre serveur d’origine.
 - **Limitation de débit :** Pour éviter que votre serveur d’origine ne soit submergé par trop de requêtes, vous pouvez configurer la limitation de débit sur le réseau de diffusion de contenu.
 - **Pare-feu d’applications web (WAF) :** WAF protège votre site web contre les vulnérabilités d’applications web courantes, telles que l’injection SQL, les scripts intersites, etc. La licence de sécurité améliorée ou la licence de protection WAF-DDoS est requise pour utiliser cette fonctionnalité.
 - **Transformation de requêtes :** modifiez les requêtes entrantes telles que la définition ou la non-définition d’en-têtes, la modification des paramètres de requête, des cookies, etc.
