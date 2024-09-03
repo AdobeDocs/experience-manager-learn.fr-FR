@@ -8,9 +8,9 @@ breadcrumb-title: Tutoriels d’AEM Forms
 sub-product: Experience Manager Forms
 version: 6.4, 6.5
 index: y
-source-git-commit: d440662bcfbc8fdea8c1b0e8af7f653b1f8667f9
+source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
 workflow-type: tm+mt
-source-wordcount: '2086'
+source-wordcount: '2089'
 ht-degree: 98%
 
 ---
@@ -224,10 +224,11 @@ ht-degree: 98%
    + [Déployer des exemples de ressources](storing-retrieving-form-data/part6.md)
 + Déclenchement d’un workflow AEM à partir de l’envoi de formulaire mobile{#offline-mobile-form-submission}
    + [Présentation](offline-mobile-form-submission/introduction.md)
-   + [Profil personnalisé](offline-mobile-form-submission/part-one.md)
-   + [Gérer l’envoi du PDF](offline-mobile-form-submission/part-two.md)
-   + [Workflow de révision du PDF](offline-mobile-form-submission/part-three.md)
-   + [Déployer sur votre système](offline-mobile-form-submission/part-four.md)
+   + [Profil personnalisé](offline-mobile-form-submission/custom-profile.md)
+   + [Gérer l’envoi de formulaire](offline-mobile-form-submission/handle-form-submission.md)
+   + [Stocker les données envoyées](offline-mobile-form-submission/author-servlet.md)
+   + [Workflow de révision du PDF](offline-mobile-form-submission/review-workflow.md)
+   + [Déployer sur votre système](offline-mobile-form-submission/deploy-assets.md)
 + Interroger les envois de formulaire{#query-form-submissions}
    + [Présentation](query-form-submissions/introduction.md)
    + [Créer des champs pouvant faire l’objet d’une recherche](query-form-submissions/part1.md)
