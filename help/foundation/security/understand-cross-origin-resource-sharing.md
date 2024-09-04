@@ -10,10 +10,10 @@ role: Developer
 level: Intermediate
 exl-id: 6009d9cf-8aeb-4092-9e8c-e2e6eec46435
 duration: 240
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 6922d885c25d0864560ab3b8e38907060ff3cc70
 workflow-type: tm+mt
 source-wordcount: '1011'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -187,7 +187,7 @@ Généralement, les mêmes éléments à prendre en compte pour la mise en cache
 
 ### Autoriser les en-têtes de requête CORS
 
-Pour autoriser les [en-têtes de requête HTTP à être transmis à AEM pour traitement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#specifying-the-http-headers-to-pass-through-clientheaders), ils doivent être autorisés dans la configuration `/clientheaders` de Dispatcher.
+Pour permettre aux en-têtes de requête [HTTP de passer à l’AEM pour le traitement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#specifying-the-http-headers-to-pass-through-clientheaders), ils doivent être autorisés dans la configuration `/clientheaders` de Dispatcher.
 
 ```
 /clientheaders {
@@ -198,7 +198,7 @@ Pour autoriser les [en-têtes de requête HTTP à être transmis à AEM pour tra
 }
 ```
 
-### Mettre en cache des en-têtes de réponse CORS
+### Mise en cache des en-têtes de réponse CORS
 
 Pour permettre la mise en cache et la diffusion des en-têtes CORS sur le contenu mis en cache, ajoutez la [configuration /cache /headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#caching-http-response-headers) au fichier `dispatcher.any` du système de publication AEM.
 
