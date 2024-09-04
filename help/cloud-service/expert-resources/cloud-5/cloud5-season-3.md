@@ -6,10 +6,10 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 7ef37a71f1daefee484478c3194907d5ce918af4
+source-git-commit: 177cddea03595b686ec75f129c8be7bb14e4c631
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 88%
+source-wordcount: '482'
+ht-degree: 81%
 
 ---
 
@@ -175,6 +175,8 @@ Découvrez les nouvelles fonctionnalités de l’IA générative disponibles dan
                  Découvrez l’éditeur universel et l’AEM avec les Edge Delivery Services.
             </p>
         </td>
+    </tr>  
+    <tr>
         <td>
             <a href="./season-3/cloud5-import-sites-to-edge-delivery-services.md">
                 <img alt="Importation de sites dans AEM Sites avec des Edge Delivery Services" 
@@ -190,5 +192,20 @@ Découvrez les nouvelles fonctionnalités de l’IA générative disponibles dan
                  Découvrez l’importation de sites dans AEM Sites avec des Edge Delivery Services.
             </p>
         </td>
-    </tr>      
+        <td>
+            <a href="./season-3/cloud5-using-admin-api.md">
+                <img alt="Utilisation de l’API d’administration avec des Edge Delivery Services" 
+                     src="https://video.tv.adobe.com/v/3433158?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-using-admin-api.md">
+                <strong>Utilisation de l’API d’administration</strong></a>        
+                <br/><em> avec James Talbot et Varun Mitra, Cloud Architect</em>
+            </div>
+            <p>
+                <br/>                
+                 Découvrez comment utiliser l’API Admin en Edge Delivery Services pour gérer le cycle de vie du contenu et du code.
+            </p>
+        </td>    
+    </tr>    
 </table>

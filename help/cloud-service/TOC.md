@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: f3f5c4c4349c8d02c88e1cf91dbf18f58db1e67e
+source-git-commit: 177cddea03595b686ec75f129c8be7bb14e4c631
 workflow-type: tm+mt
-source-wordcount: '1289'
-ht-degree: 92%
+source-wordcount: '1292'
+ht-degree: 91%
 
 ---
 
@@ -432,3 +432,4 @@ ht-degree: 92%
          + [IA générative pour AEM Sites](./expert-resources/cloud-5/season-3/cloud5-generative-ai-for-aem-sites.md)
          + [Exploration d’Universal Editor](./expert-resources/cloud-5/season-3/cloud5-exploring-universal-editor.md)
          + [Importation de sites](./expert-resources/cloud-5/season-3/cloud5-import-sites-to-edge-delivery-services.md)
+         + [Utilisation de l’API d’administration](./expert-resources/cloud-5/season-3/cloud5-using-admin-api.md)
