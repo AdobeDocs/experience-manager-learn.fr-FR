@@ -6,10 +6,10 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 177cddea03595b686ec75f129c8be7bb14e4c631
+source-git-commit: af962fa9ede0781929e4e7cbbd6b5f00a9dfb0d9
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 81%
+source-wordcount: '511'
+ht-degree: 76%
 
 ---
 
@@ -206,6 +206,21 @@ Découvrez les nouvelles fonctionnalités de l’IA générative disponibles dan
                 <br/>                
                  Découvrez comment utiliser l’API Admin en Edge Delivery Services pour gérer le cycle de vie du contenu et du code.
             </p>
-        </td>    
+        </td>   
+        <td>
+            <a href="./season-3/cloud5-lighthouse-score-optimization.md">
+                <img alt="Optimisation du score Lighthouse" 
+                     src="https://video.tv.adobe.com/v/3433378?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-lighthouse-score-optimization.md">
+                <strong>Optimisation du score de Lighthouse</strong></a>        
+                <br/><em> avec James Talbot et Varun Mitra, Cloud Architect</em>
+            </div>
+            <p>
+                <br/>                
+                 Découvrez ce qu’est un score de phare et les techniques pour obtenir le meilleur score de phare possible.
+            </p>
+        </td>            
     </tr>    
 </table>
