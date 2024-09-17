@@ -6,10 +6,10 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: af962fa9ede0781929e4e7cbbd6b5f00a9dfb0d9
+source-git-commit: 285c652460ff00301d183defc56c07b3f74d8e5c
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 76%
+source-wordcount: '540'
+ht-degree: 72%
 
 ---
 
@@ -208,13 +208,13 @@ Découvrez les nouvelles fonctionnalités de l’IA générative disponibles dan
             </p>
         </td>   
         <td>
-            <a href="./season-3/cloud5-lighthouse-score-optimization.md">
-                <img alt="Optimisation du score Lighthouse" 
+            <a href="./season-3/cloud5-lighthouse-score-optimization-part1.md">
+                <img alt="Optimisation du score Lighthouse - Partie 1" 
                      src="https://video.tv.adobe.com/v/3433378?format=jpeg"/>
             </a>
             <div>
-                <a href="./season-3/cloud5-lighthouse-score-optimization.md">
-                <strong>Optimisation du score de Lighthouse</strong></a>        
+                <a href="./season-3/cloud5-lighthouse-score-optimization-part1.md">
+                <strong>Optimisation du score de Lighthouse - Partie 1</strong></a>
                 <br/><em> avec James Talbot et Varun Mitra, Cloud Architect</em>
             </div>
             <p>
@@ -222,5 +222,22 @@ Découvrez les nouvelles fonctionnalités de l’IA générative disponibles dan
                  Découvrez ce qu’est un score de phare et les techniques pour obtenir le meilleur score de phare possible.
             </p>
         </td>            
-    </tr>    
+    </tr> 
+    <tr>
+        <td>
+            <a href="./season-3/cloud5-lighthouse-score-optimization-part2.md">
+                <img alt="Optimisation du score Lighthouse - Partie 2"
+                     src="https://video.tv.adobe.com/v/3434042?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-lighthouse-score-optimization-part2.md">
+                <strong>Optimisation du score de Lighthouse - Partie 2</strong></a>
+                <br/><em> avec James Talbot et Varun Mitra, Cloud Architect</em>
+            </div>
+            <p>
+                <br/>                
+                 Découvrez les techniques permettant d’améliorer le temps de blocage total.
+            </p>
+        </td>            
+    </tr>        
 </table>
