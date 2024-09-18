@@ -10,18 +10,23 @@ recommendations: noDisplay
 last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 73f5d90d-e007-41a0-9bb3-b8f36a9b1547
 duration: 50
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 12d7f8f0afc1c19f289c847771cb9f4f965c650c
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 100%
+source-wordcount: '275'
+ht-degree: 87%
 
 ---
 
-# Extensibilité de l’interface utilisateur AEM
+# Extensibilité de l’interface utilisateur AEM {#aem-ui-extensibility}
 
 Adobe Experience Manager (AEM) offre une interface utilisateur puissante pour créer des expériences numériques. Pour personnaliser et étendre l’interface utilisateur, Adobe a introduit le créateur d’applications. Cet outil permet aux développeurs et développeuses d’améliorer l’expérience utilisateur sans code complexe à l’aide de JavaScript et de React.
 
 Le créateur d’applications fournit une couche d’implémentation pour la création d’extensions qui sont liées à des points d’extension bien définis dans AEM. Le créateur d’applications s’intègre de manière transparente à AEM, ce qui permet d’effectuer des prévisualisations et des tests en temps réel. Le déploiement des modifications dans AEM est rapide et simplifié. Grâce au créateur d’applications, les développeurs et développeuses économisent du temps et du travail, ce qui permet de créer rapidement des prototypes et de collaborer avec les parties prenantes.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_learn_extensibility_app_builder"
+>title="Prise en main d’Adobe Developer App Builder et d’AEM sans affichage"
+>abstract="Découvrez comment AEM App Builder permet aux développeurs de personnaliser et d’étendre rapidement les interfaces utilisateur d’AEM avec JavaScript et React, ce qui permet une intégration transparente et un déploiement rapide."
 
 ## Développer une extension d’interface utilisateur AEM
 
