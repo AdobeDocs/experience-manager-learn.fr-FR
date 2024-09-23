@@ -6,9 +6,9 @@ version: 6.4, 6.5, Cloud Service
 doc-type: Catalog
 exl-id: 1d0b0183-25ee-4cb4-82a5-3506e7c1c908
 source-git-commit: d0e1513b4e6ea536b40f3dbb69a0f512f7521164
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Découvrez AEM Assets et comment l’utiliser pour atteindre les objectifs comm
 </a>
    </div>
    <p>
-      <em>Accélérer la création d’expériences du concept à la conception en passant par la diffusion.</em>
+      <em>Accélérez la création d’expériences depuis le concept jusqu’à la conception en passant par la diffusion.</em>
    <p>
 </td>
 <td>

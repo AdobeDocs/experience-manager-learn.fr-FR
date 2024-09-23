@@ -13,9 +13,9 @@ thumbnail: KT-13148.jpeg
 exl-id: 4a7acdd2-f442-44ee-8560-f9cb64436acf
 duration: 170
 source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -91,9 +91,9 @@ data:
 
 ## Bonnes pratiques relatives aux règles WAF
 
-Dès l’activation de votre licence WAF pour le programme, le trafic correspondant aux indicateurs WAF apparaît dans les graphiques et les journaux de requêtes, même si vous ne les avez pas déclarés dans une règle. Ainsi, vous êtes toujours conscient du trafic potentiellement malveillant et vous pouvez créer des règles selon vos besoins. Examinez les indicateurs WAF qui ne sont pas reflétés dans les règles déclarées et envisagez de les créer.
+Dès l’activation de votre licence WAF pour le programme, le trafic correspondant aux indicateurs WAF apparaît dans les graphiques et les journaux de requêtes, même si vous ne les avez pas déclarés dans une règle. Cela vous permet de toujours avoir conscience d’un nouveau trafic malveillant potentiel et de créer des règles selon vos besoins. Examinez les indicateurs WAF qui ne sont pas reflétés dans les règles déclarées et envisagez de les créer.
 
-Tenez compte des règles WAF ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour la propriété `action` et `wafFlags` doivent être déterminées en collaboration avec votre équipe de sécurité.
+Tenez compte des règles WAF ci-dessous pour votre projet AEM. Toutefois, les valeurs souhaitées pour `action` et la propriété `wafFlags` doivent être déterminées en collaboration avec votre équipe de sécurité.
 
 ```yaml
 kind: CDN

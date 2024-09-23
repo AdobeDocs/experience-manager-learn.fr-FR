@@ -1,6 +1,6 @@
 ---
-title: Déclencher AEM processus sur l’envoi de formulaire HTML5 - Créer un profil personnalisé
-description: Créez un profil personnalisé pour télécharger un pdf interactif avec les données du formulaire HTML5 partiellement rempli.
+title: Déclencher le workflow AEM lors de l’envoi d’un formulaire HTML5 - Création d’un profil personnalisé
+description: Création d’un profil personnalisé pour télécharger un PDF interactif avec les données du formulaire HTML5 partiellement rempli
 feature: Mobile Forms
 doc-type: article
 version: 6.4, 6.5
@@ -12,13 +12,13 @@ badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: b6e3acee-4a07-4d00-b3a1-f7aedda21e6e
 duration: 102
 source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '244'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# Créer un profil personnalisé
+# Création d’un profil personnalisé
 
 Dans cette partie, nous allons créer un [profil personnalisé.](https://helpx.adobe.com/fr/livecycle/help/mobile-forms/creating-profile.html) Le profil est responsable du rendu du document XDP au format HTML. Un profil par défaut prêt à l’emploi est disponible pour le rendu des documents XDP au format HTML. Il représente une version personnalisée du service de rendu de formulaires mobiles. Vous pouvez utiliser le service de rendu Mobile Forms pour personnaliser l’apparence, le comportement et les interactions des formulaires mobiles. Dans notre profil personnalisé, nous allons capturer les données renseignées dans le formulaire mobile à l’aide de l’API Guidebridge. Ces données sont ensuite envoyées au servlet personnalisé qui génère ensuite un PDF interactif et le diffuse à nouveau vers l’application appelante.
 
@@ -175,4 +175,4 @@ public class GeneratePDFFromMobileFormImpl implements GeneratePDFFromMobileForm 
 
 ## Étapes suivantes
 
-[Gérer l’envoi de formulaire](./handle-form-submission.md)
+[Gestion de l’envoi du formulaire](./handle-form-submission.md)

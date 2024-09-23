@@ -1,6 +1,6 @@
 ---
-title: Utilisation des onglets verticaux dans AEM Forms Cloud Service
-description: Création d’un formulaire adaptatif à l’aide d’onglets verticaux
+title: Utilisation des onglets verticaux dans AEM Forms Cloud Service
+description: Création d’un formulaire adaptatif à l’aide des onglets verticaux
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -9,22 +9,22 @@ version: Cloud Service
 topic: Development
 feature: Adaptive Forms
 thumbnail: 331891.jpg
-badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16023
 exl-id: c5bbd35e-fd15-4293-901e-c81faf6025f9
 source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '109'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 # Navigation entre les onglets
 
-Vous pouvez naviguer entre les onglets en cliquant sur les onglets individuels ou en utilisant les boutons précédent et suivant du formulaire.
-Pour naviguer à l’aide des boutons, ajoutez deux boutons à votre formulaire et nommez-les Précédent et Suivant. Associez la fonction personnalisée suivante à l’événement click du bouton pour naviguer entre les onglets.
+Vous pouvez naviguer entre les onglets en cliquant sur chaque onglet ou en utilisant les boutons précédent et suivant du formulaire.
+Pour naviguer à l’aide des boutons, ajoutez deux boutons à votre formulaire et attribuez-leur les noms Précédent et Suivant. Associez la fonction personnalisée suivante à l’événement clic du bouton pour naviguer entre les onglets.
 
-Voici la fonction personnalisée pour naviguer entre les onglets.
+Vous trouverez ci-dessous la fonction personnalisée pour naviguer entre les onglets.
 
 
 
@@ -42,12 +42,12 @@ function navigateInPanelWithFocusOption(panelField, focusOption, globals)
 }
 ```
 
-Voici l’éditeur de règles pour les boutons Suivant et Précédent
+Vous trouverez ci-dessous l’éditeur de règles pour les boutons Suivant et Précédent
 
 **Bouton Suivant**
 
 ![next-button](assets/next-button.png)
 
-**Bouton précédent**
+**Bouton Précédent**
 
 ![prev-button](assets/prev-button.png)

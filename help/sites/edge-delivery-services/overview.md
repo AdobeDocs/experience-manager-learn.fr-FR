@@ -12,9 +12,9 @@ duration: 660
 last-substantial-update: 2024-03-20T00:00:00Z
 exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
 source-git-commit: 2aa189c46af16813d2709aa2ec02b509c4bb544e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Découvrez comment rendre les sites web plus rapides avec Edge Delivery Servic
 Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/overview) pour obtenir des détails complets sur Edge Delivery Services et ses fonctionnalités.
 
 
-## Tutoriels pour les développeurs Edge Delivery Services
+## Tutoriels pour les développeurs et développeuses Edge Delivery Services
 
 
 <div class="columns is-multiline">
@@ -37,7 +37,7 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Tutoriel sur le site web de création basé sur des documents"
+            <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Tutoriel sur le site web de création basé sur des documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="./assets/overview/document-based-authoring-tutorial.png"
@@ -48,15 +48,15 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
         <div class="card-content is-padded-small">
           <div class="content">
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Tutoriel sur le site web de création basé sur des documents"> Tutoriel sur le site web de création basé sur les documents </a>
+              <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Tutoriel sur le site web de création basé sur des documents">Tutoriel sur le site web de création basé sur des documents</a>
             </p>
             <p class="is-size-6">Découvrez comment créer des sites web Edge Delivery Services créés à l’aide de la création basée sur les documents.</p>
-            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" class="spectrum-Button
+            <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
-              <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Démarrez le tutoriel</span>
-            </a>
+<span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Démarrer le tutoriel</span>
+</a>
           </div>
         </div>
       </div>
@@ -67,26 +67,26 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started" title="Tutoriel sur le site web d’Universal Editor"
+            <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started" title="Tutoriel sur le site web de l’éditeur universel"
               tabindex="-1">
               <img class="is-bordered-r-small"
                 src="./assets/overview/universal-editor-tutorial.png"
-                alt="Tutoriel sur le site web d’Universal Editor">
+                alt="Tutoriel sur le site web de l’éditeur universel">
             </a>
           </figure>
         </div>
         <div class="card-content is-padded-small">
           <div class="content">
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started" title="Tutoriel sur le site web d’Universal Editor">Tutoriel sur le site Web de l’éditeur universel</a>
+              <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started" title="Tutoriel sur le site web de l’éditeur universel">Tutoriel sur le site web de l’éditeur universel</a>
             </p>
-            <p class="is-size-6">Découvrez comment créer des sites web Edge Delivery Services créés à l’aide d’Universal Editor.</p>
-            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started" class="spectrum-Button
+            <p class="is-size-6">Découvrez comment créer des sites web Edge Delivery Services créés à l’aide de l’éditeur universel.</p>
+            <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started" class="spectrum-Button
               spectrum-Button--outline spectrum-Button--primary
               spectrum-Button--sizeM">
-              <span class="spectrum-Button-label has-no-wrap
-                has-text-weight-bold">Démarrez le tutoriel</span>
-            </a>
+<span class="spectrum-Button-label has-no-wrap
+                has-text-weight-bold">Démarrer le tutoriel</span>
+</a>
           </div>
         </div>
       </div>

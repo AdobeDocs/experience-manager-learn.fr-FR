@@ -1,6 +1,6 @@
 ---
-title: Intégration des Adobes Express avec AEM Assets
-description: Découvrez comment utiliser l’intégration d’Adobe Express avec AEM Assets pour optimiser les chaînes d’approvisionnement de contenu, améliorer la productivité et l’accessibilité pour tous les membres de l’équipe.
+title: Intégration d’Adobe Express à AEM Assets
+description: Découvrez comment utiliser l’intégration d’Adobe Express avec AEM Assets afin d’optimiser les chaînes d’approvisionnement de contenu et d’améliorer la productivité et l’accessibilité pour toutes les personnes membres de l’équipe.
 version: Cloud Service
 feature: Integrations
 topic: Integrations, Content Management, Content Supply Chain
@@ -12,14 +12,14 @@ doc-type: Feature Video
 duration: 583
 exl-id: 951bb255-e3e7-4bd5-9d48-7ff0469860af
 source-git-commit: 1977e5103de72a0db5f446eba539d4ae5b810e74
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '60'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Intégration des Adobes Express avec AEM Assets
+# Intégration d’Adobe Express à AEM Assets
 
-Découvrez comment utiliser l&#39;intégration [Adobe Express&#39;](https://www.adobe.com/fr/express/) avec AEM Assets pour optimiser les chaînes d&#39;approvisionnement de contenu et améliorer la productivité et l&#39;accessibilité pour tous les membres de l&#39;équipe.
+Découvrez comment utiliser l’intégration d’[Adobe Express](https://www.adobe.com/fr/express/) avec AEM Assets afin d’optimiser les chaînes d’approvisionnement de contenu et d’améliorer la productivité et l’accessibilité pour toutes les personnes membres de l’équipe.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425193/?learn=on)

@@ -1,5 +1,5 @@
 ---
-title: Utilisation de l’API DocAssurance
+title: Utilisation de lʼAPI DocAssurance
 description: Exemple de code pour appeler l’API DocAssurance à l’aide des composants HTTP Apache dans Java
 type: Documentation
 role: Developer
@@ -7,32 +7,32 @@ level: Beginner, Intermediate
 version: Cloud Service
 feature: Document Services
 topic: Development
-badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-15508
 exl-id: 40617082-4d23-4c91-a016-2d947187052b
 source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '276'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Utilisation de l’API DocAssurance
+# Utilisation de lʼAPI DocAssurance
 
-Le [service DocAssurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/docassurance/#tag/DocAssurance) permet d’effectuer diverses opérations de signature ou de chiffrement numériques avec des documents PDF, tels que la signature, la certification, l’ajout de champs de signature, le chiffrement, le décryptage, etc.
-Cet article vous fournit des fragments de code Java pour vous aider à commencer à utiliser l’API. Le fragment de code utilise le jeton d’accès. [Cet article explique les étapes nécessaires pour générer le jeton d’accès](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/doc-gen-formscs/introduction)
+Le [service DocAssurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/docassurance/#tag/DocAssurance) permet d’effectuer diverses opérations de signature ou de chiffrement numériques avec des documents PDF, tels que la signature, la certification, l’ajout de champs de signature, le chiffrement, le déchiffrement, etc.
+Cet article vous fournit des fragments de code Java pour vous aider à commencer à utiliser l’API. Le fragment de code utilise le jeton d’accès. [Cet article explique les étapes nécessaires pour générer le jeton d’accès](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/forms/doc-gen-formscs/introduction).
 
 
-<span class="preview">Cette fonctionnalité est disponible dans le cadre du programme d’adoption précoce. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme d’adoption précoce et demander l’accès à cette fonctionnalité</span>
+<span class="preview">Cette fonctionnalité est disponible par le biais d’un programme d’adoption précoce. Vous pouvez écrire à aem-forms-ea@adobe.com à partir de votre ID d’e-mail officiel pour rejoindre le programme d’adoption précoce et demander l’accès à cette fonctionnalité.</span>
 
 
 ## Conditions préalables
 
-* Expérience avec AEM Forms Cloud Service
+* Expérience avec AEM Forms Cloud Service
 * Expérience dans l’utilisation des [composants HTTP Apache](https://hc.apache.org/httpcomponents-client-4.5.x/)
-* Accès à l’environnement du Cloud Service AEM Forms
+* Accès à l’environnement AEM Forms Cloud Service
 
-## Document Inspect
+## Inspection d’un document
 
 Utilisez l’API d’inspection pour récupérer le type de sécurité sur un document de PDF donné. Le fragment de code suivant devrait vous aider à démarrer.
 
@@ -65,9 +65,9 @@ catch (Exception e)
 ```
 
 
-## Chiffrer le document
+## Chiffrement d’un document
 
-Utilisez l’API Encrypt pour chiffrer les documents pdf avec un mot de passe. L’exemple de fragment de code suivant chiffre un PDF donné.
+Utilisez l’API Encrypt pour chiffrer les documents PDF avec un mot de passe. L’exemple de fragment de code ci-après chiffre un PDF donné.
 
 ```java
 ...
@@ -102,9 +102,9 @@ catch (Exception e)
 ...
 ```
 
-## Ajout d’un champ de signature au format pdf
+## Ajout d’un champ de signature au PDF
 
-Utilisez l’API Signfield pour ajouter une signature au PDF fourni. L’exemple de fragment de code suivant ajoute un champ de signature appelé SignHere à la page 4 du document.
+Utilisez l’API Signfield pour ajouter une signature au PDF fourni. L’exemple de fragment de code ci-après ajoute un champ de signature appelé SignHere à la page 4 du document.
 
 ```java
 ...
@@ -120,9 +120,9 @@ builder.addTextBody("rectangle", rectangle, ContentType.APPLICATION_JSON);
 ```
 
 
-## Supprimer le chiffrement
+## Suppression du chiffrement
 
-Utilisez l’opération PUT sur l’API de chiffrement pour supprimer le chiffrement du PDF fourni. Le fragment de code Java suivant devrait vous aider à démarrer.
+Utilisez l’opération PUT sur l’API Encrypt pour supprimer le chiffrement du PDF fourni. Le fragment de code Java ci-après devrait vous aider à démarrer.
 
 ```java
 ...
@@ -159,4 +159,4 @@ if (response.getStatusLine().getStatusCode() == 200) {
 
 ### Collection Postman
 
-Une collection Postman de l&#39;API peut être [téléchargée ici à des fins de test](assets/DocAssuranceAPI.postman_collection.json). Vous pouvez utiliser le type d’authentification Authentification de base ou Jeton porteur pour appeler l’API.
+Une collection Postman de l’API peut être [téléchargée ici à des fins de test](assets/DocAssuranceAPI.postman_collection.json). Vous pouvez utiliser le type d’authentification Authentification de base ou Jeton du porteur pour appeler l’API.

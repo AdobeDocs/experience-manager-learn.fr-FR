@@ -1,5 +1,5 @@
 ---
-title: Intégration d’AEM Forms Cloud Service et de Marketo (partie 3)
+title: Intégration d’AEM Forms Cloud Service et de Marketo (partie 3)
 description: Découvrez comment intégrer AEM Forms et Marketo à l’aide du modèle de données de formulaire AEM Forms.
 feature: Form Data Model,Integration
 version: Cloud Service
@@ -7,20 +7,20 @@ topic: Integrations, Development
 role: Developer
 level: Experienced
 badgeIntegration: label="Intégration" type="positive"
-badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 last-substantial-update: 2024-07-24T00:00:00Z
 jira: KT-15876
 exl-id: 43737765-b1ea-4594-853a-d78f41136b5e
 source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
-# Créer un modèle de données de formulaire
+# Création d’un modèle de données de formulaire
 
-Après avoir configuré la source de données, l’étape suivante consiste à créer un modèle de données de formulaire basé sur la source de données configurée à l’étape précédente. Pour créer un modèle de données de formulaire, veuillez procéder comme suit :
+Après la configuration de la source de données, l’étape suivante consiste à créer un modèle de données de formulaire basé sur la source de données configurée à l’étape précédente. Pour créer un modèle de données de formulaire, veuillez procéder comme suit :
 
 Pointez votre navigateur sur la [page d’intégrations de données.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Cette section répertorie toutes les intégrations de données créées sur votre instance AEM.
 

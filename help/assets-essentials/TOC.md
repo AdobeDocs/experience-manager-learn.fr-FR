@@ -9,16 +9,16 @@ feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
 source-git-commit: 27d4b552d270d92d032384aea0a0f4798d5eca8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '69'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
-# Vidéos AEM Assets Essentials {#assets-essentials}
+# Vidéos AEM Assets Essentials {#assets-essentials}
 
-+ [Présentation](overview.md)
++ [Vue d’ensemble](overview.md)
 
 + [Prise en main](./getting-started.md)
 
@@ -45,6 +45,6 @@ ht-degree: 88%
    + [Envoi de documents et liaison de ressources](./integrations/workfront/link-send.md)
    + [Historique des versions](./integrations/workfront/versions.md)
 
-+ [Intégration Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=fr){target=_blank}
++ [Intégration d’Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-messages/create-email-content-with-the-message-editor.html?lang=fr){target=_blank}
 
 + [Documentation](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/introduction.html?lang=fr){target=_blank}

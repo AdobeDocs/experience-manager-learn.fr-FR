@@ -12,9 +12,9 @@ duration: 138
 jira: KT-16142
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 source-git-commit: 8cadbe92a7a2f47c33b0ca0fcf7313dc418ae7a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '498'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -132,7 +132,7 @@ Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-
 * [Téléchargez les exemples de ressources](assets/mult-records-template-and-xml-file.zip). Ce fichier zip contient le modèle et le fichier de données xml.
 * [Pointer votre navigateur vers la console web Felix](http://localhost:4502/system/console/bundles)
 * [Déployez le lot Developingwithserviceuser.](/help/forms/assets/common-osgi-bundles/DevelopingWithServiceUser.jar).
-* Ajoutez l’entrée suivante dans le service User Mapper du service Apache Sling Service à l’aide de configMgr.
+* Ajoutez l’entrée suivante dans le service de mappage des utilisateurs et utilisatrices de serveur Apache Sling à l’aide de configMgr.
 
 ```java
 DevelopingWithServiceUser.core:getformsresourceresolver=fd-service

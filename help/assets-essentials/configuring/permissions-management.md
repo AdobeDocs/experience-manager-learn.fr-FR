@@ -13,14 +13,14 @@ doc-type: Feature Video
 exl-id: d4d80678-e2e2-4e17-8ce5-6db8651ae59e
 duration: 428
 source-git-commit: 54509339ee8e538daf432b329ddebb55e98bb6d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '45'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 # Gestion des autorisations
 
-Découvrez comment la gestion des autorisations AEM Assets permet aux entreprises de contrôler l’accès aux ressources, de protéger leur marque et d’assurer la conformité.
+Découvrez comment la gestion des autorisations d’AEM Assets permet aux organisations de contrôler l’accès aux ressources, de protéger leur marque et de garantir la conformité.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342113?quality=12&learn=on)

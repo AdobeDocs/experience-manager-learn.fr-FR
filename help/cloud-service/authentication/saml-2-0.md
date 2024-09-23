@@ -12,9 +12,9 @@ last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
 source-git-commit: 49f8df6e658b35aa3ba6e4f70cd39ff225c46120
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3919'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -442,22 +442,22 @@ Une fois l’authentification au fournisseur d’identité réussie, le fourniss
 
 Si la réécriture de l’URL sur le serveur web Apache est configurée (`dispatcher/src/conf.d/rewrites/rewrite.rules`), assurez-vous que les requêtes vers les points d’entrée `.../saml_login` ne sont pas accidentellement tronquées.
 
-### Comment activer l’appartenance à un groupe dynamique pour les utilisateurs SAML dans de nouveaux environnements
+### Activation de l’appartenance à un groupe dynamique pour les utilisateurs et utilisatrices SAML dans de nouveaux environnements
 
-Pour améliorer considérablement les performances d’évaluation de groupe dans de nouveaux environnements AEM as a Cloud Service, l’activation de la fonction d’appartenance à un groupe dynamique est recommandée dans de nouveaux environnements.
-Cette étape est également nécessaire lorsque la synchronisation des données est activée. Plus de détails [ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier) .
-Pour ce faire, ajoutez la propriété suivante au fichier de configuration OSGI :
+Pour améliorer considérablement les performances d’évaluation de groupe dans de nouveaux environnements AEM as a Cloud Service, l’activation de la fonctionnalité d’appartenance à un groupe dynamique est recommandée dans de nouveaux environnements.
+Cette étape est également nécessaire lorsque la synchronisation des données est activée. Plus de détails [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier).
+Pour ce faire, ajoutez la propriété suivante au fichier de configuration OSGI :
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
 
-Avec cette configuration, les utilisateurs et les groupes sont créés en tant qu’ [ utilisateurs externes d’Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Dans AEM, les utilisateurs et les groupes externes ont une valeur par défaut `rep:principalName` composée de `[user name];[idp]` ou `[group name];[idp]`.
-Notez que les listes de contrôle d’accès (ACL) sont associées au PrincipalName des utilisateurs ou des groupes.
-Lors du déploiement de cette configuration dans un déploiement existant où auparavant `identitySyncType` n’a pas été spécifié ou défini sur `default`, de nouveaux utilisateurs et groupes seront créés et des listes de contrôle d’accès doivent être appliquées à ces nouveaux utilisateurs et groupes. Notez que les groupes externes ne peuvent pas contenir d’utilisateurs locaux. [Repoinit](https://sling.apache.org/documentation/bundles/repository-initialization.html) peut être utilisé pour créer des listes de contrôle d’accès pour les groupes externes SAML, même s’ils ne sont créés que lorsque l’utilisateur effectue une connexion.
-Pour éviter cette refactorisation sur ACL, une [fonction de migration](#automatic-migration-to-dynamic-group-membership-for-existing-environments) standard a été mise en oeuvre.
+Avec cette configuration, les utilisateurs et utilisatrices et les groupes sont créés en tant qu’[ utilisateurs et utilisatrices externes d’Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Dans AEM, les utilisateurs et utilisatrices et les groupes externes ont une valeur par défaut `rep:principalName` composée des éléments `[user name];[idp]` ou `[group name];[idp]`.
+Notez que les listes de contrôle d’accès (ACL) sont associées au PrincipalName des utilisateurs et utilisatrices ou des groupes.
+Lors du déploiement de cette configuration dans un déploiement existant où `identitySyncType` n’a pas été auparavant spécifié ou défini sur `default`, de nouveaux utilisateurs, utilisatrices et groupes sont créés et des listes de contrôle d’accès doivent être appliquées à ces nouveaux utilisateurs, utilisatrices et groupes. Notez que les groupes externes ne peuvent pas contenir d’utilisateurs et d’utilisatrices locaux. [Repoinit](https://sling.apache.org/documentation/bundles/repository-initialization.html) peut être utilisé pour créer des listes de contrôle d’accès pour les groupes externes SAML, même s’ils ne sont créés que lorsque l’utilisateur ou l’utilisatrice effectue une connexion.
+Pour éviter cette refactorisation sur les listes de contrôle d’accès, une [fonctionnalité de migration](#automatic-migration-to-dynamic-group-membership-for-existing-environments) standard a été mise en œuvre.
 
-### Stockage des adhésions dans des groupes locaux et externes avec une appartenance dynamique à un groupe
+### Stockage des adhésions dans des groupes locaux et externes avec une appartenance à un groupe dynamique
 
-Sur les groupes locaux, les membres du groupe sont stockés dans l’attribut oak : `rep:members`. L’attribut contient la liste des uid de chaque membre du groupe. Vous trouverez des détails supplémentaires [ici](https://jackrabbit.apache.org/oak/docs/security/user/membership.html#member-representation-in-the-repository).
+Sur les groupes locaux, les personnes membres du groupe sont stockées dans l’attribut oak : `rep:members`. L’attribut contient la liste des uid de chaque personne membre du groupe. Vous trouverez des détails supplémentaires [ici](https://jackrabbit.apache.org/oak/docs/security/user/membership.html#member-representation-in-the-repository).
 Exemple :
 
 ```
@@ -474,8 +474,8 @@ Exemple :
 }
 ```
 
-Les groupes externes dotés d’une adhésion de groupe dynamique ne stockent aucun membre dans l’entrée de groupe.
-L’appartenance au groupe est à la place stockée dans les entrées utilisateurs. Vous trouverez plus de documentation [ici](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html). Par exemple, il s’agit du noeud OAK du groupe :
+Les groupes externes dotés d’une appartenance à un groupe dynamique ne stockent aucune personne membre dans l’entrée de groupe.
+L’appartenance à un groupe est à la place stockée dans les entrées des utilisateurs et utilisatrices. Vous trouverez une documentation supplémentaire [ici](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html). Par exemple, il s’agit du nœud OAK du groupe :
 
 ```
 {
@@ -493,7 +493,7 @@ L’appartenance au groupe est à la place stockée dans les entrées utilisateu
 }
 ```
 
-Il s’agit du noeud pour un membre utilisateur de ce groupe :
+Il s’agit du nœud pour une personne membre de ce groupe :
 
 ```
 {
@@ -517,25 +517,25 @@ Il s’agit du noeud pour un membre utilisateur de ce groupe :
 
 ### Migration automatique vers l’appartenance à un groupe dynamique pour les environnements existants
 
-Lorsque cette migration est activée, elle est réalisée lors de l’authentification de l’utilisateur et comprend les étapes suivantes :
-1. L’utilisateur local est migré vers un utilisateur externe tout en conservant le nom d’utilisateur d’origine. Cela signifie que les utilisateurs locaux migrés, agissant désormais en tant qu’utilisateurs externes, conservent leur nom d’utilisateur d’origine au lieu de suivre la syntaxe d’affectation de nom mentionnée dans la section précédente. Une propriété supplémentaire sera ajoutée appelée : `rep:externalId` avec la valeur `[user name];[idp]`. L&#39;utilisateur `PrincipalName` n&#39;est pas modifié.
+Lorsque cette migration est activée, elle est réalisée lors de l’authentification de l’utilisateur ou de l’utilisatrice et comprend les étapes suivantes :
+1. La personne locale est migrée vers un profil utilisateur externe tout en conservant le nom d’utilisation d’origine. Cela signifie que les utilisateurs et utilisatrices locaux migrés, agissant désormais en tant qu’utilisateurs et utilisatrices externes, conservent leur nom d’utilisation d’origine au lieu de suivre la syntaxe d’affectation de nom mentionnée dans la section précédente. Une propriété supplémentaire sera ajoutée, appelée : `rep:externalId` avec la valeur `[user name];[idp]`. Le `PrincipalName` de la personne n’est pas modifié.
 2. Pour chaque groupe externe reçu dans l’assertion SAML, un groupe externe est créé. S’il existe un groupe local correspondant, le groupe externe est ajouté en tant que membre au groupe local.
-3. L’utilisateur est ajouté en tant que membre du groupe externe.
-4. L&#39;utilisateur local est alors retiré de tous les groupes locaux de Saml dont il faisait partie. Les groupes locaux Saml sont identifiés par la propriété OAK : `rep:managedByIdp`. Cette propriété est définie par le gestionnaire d’authentification Saml lorsque l’attribut `syncType` n’est pas spécifié ou défini sur `default`.
+3. La personne est maintenant membre du groupe externe.
+4. La personne locale est alors retirée de tous les groupes locaux SAML dont elle faisait partie. Les groupes locaux SAML sont identifiés par la propriété OAK : `rep:managedByIdp`. Cette propriété est définie par le gestionnaire d’authentification SAML lorsque l’attribut `syncType` n’est pas spécifié ou défini sur `default`.
 
-Par exemple, si, avant la migration, `user1` est un utilisateur local et un membre du groupe local `group1`, les modifications suivantes se produisent après la migration :
-`user1` devient un utilisateur externe. L’attribut `rep:externalId` est ajouté à son profil.
-`user1` devient membre du groupe externe : `group1;idp`
-`user1` n’est plus un membre direct du groupe local : `group1`
-`group1;idp` est membre du groupe local : `group1`.
-`user1` est alors membre du groupe local : `group1` par héritage
+Par exemple, si, avant la migration, `user1` est une personne locale et membre du groupe local `group1`, les modifications suivantes se produisent après la migration :
+`user1` devient un utilisateur ou une utilisatrice externe. L’attribut `rep:externalId` est ajouté à son profil.
+`user1` devient membre du groupe externe : `group1;idp`.
+`user1` n’est plus un membre direct du groupe local : `group1`.
+`group1;idp` est membre du groupe local : `group1`.
+`user1` est alors membre du groupe local : `group1` par héritage.
 
-L’appartenance au groupe pour les groupes externes est stockée dans le profil utilisateur dans l’attribut `rep:authorizableId`
+L’appartenance à un groupe pour les groupes externes est stockée dans le profil d’utilisation dans l’attribut `rep:authorizableId`.
 
 ### Configuration de la migration automatique vers l’appartenance à un groupe dynamique
 
-1. Activez la propriété `"identitySyncType": "idp_dynamic_simplified_id"` dans le fichier de configuration SAML OSGI : `com.adobe.granite.auth.saml.SamlAuthenticationHandler~...cfg.json` :
-2. Configurez le nouveau service OSGI avec le PID : `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~...` avec la propriété :
+1. Activez la propriété `"identitySyncType": "idp_dynamic_simplified_id"` dans le fichier de configuration SAML OSGI : `com.adobe.granite.auth.saml.SamlAuthenticationHandler~...cfg.json` :
+2. Configurez le nouveau service OSGI avec le PID : `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~...` avec la propriété :
 
 ```
 {
@@ -560,22 +560,22 @@ Déployez la branche Git Cloud Manager cible (dans cet exemple, `develop`), à 
 
 ## Appel de l’authentification SAML
 
-Le flux d’authentification SAML peut être appelé à partir d’une page web d’AEM site, en créant un lien spécialement conçu ou un bouton. Les paramètres décrits ci-dessous peuvent être définis par programmation selon les besoins. Par exemple, un bouton de connexion peut définir le `saml_request_path`, où l’utilisateur est amené à accéder à différentes pages d’AEM en fonction du contexte du bouton.
+Le flux d’authentification SAML peut être appelé à partir d’une page web d’un site AEM, en créant un lien spécialement conçu ou un bouton. Les paramètres décrits ci-dessous peuvent être définis par programmation selon les besoins. Par exemple, un bouton de connexion peut définir le `saml_request_path`, où la personne est amenée à accéder à différentes pages d’AEM en fonction du contexte du bouton.
 
-### requête GET
+### Requête GET
 
-L’authentification SAML peut être appelée en créant une requête de GET HTTP au format suivant :
+L’authentification SAML peut être appelée en créant une requête HTTP GET au format suivant :
 
 `HTTP GET /system/sling/login`
 
-et fournissant les paramètres de requête :
+et en fournissant les paramètres de requête :
 
 | Nom du paramètre de requête | Valeur du paramètre de requête |
 |----------------------|-----------------------|
-| `resource` | Tout chemin d’accès JCR, ou sous-chemin, qui est le gestionnaire d’authentification SAML écoute, comme défini dans la propriété ](#configure-saml-2-0-authentication-handler) `path` de la configuration OSGi  du gestionnaire d’authentification SAML 2.0 Adobe [. |
-| `saml_request_path` | Chemin d’accès à l’URL vers lequel l’utilisateur doit être utilisé après une authentification SAML réussie. |
+| `resource` | Tout chemin d’accès JCR, ou sous-chemin, sur lequel le gestionnaire d’authentification SAML écoute, comme défini dans la propriété `path` de la [configuration OSGi du gestionnaire d’authentification SAML 2.0 d’Adobe Granite](#configure-saml-2-0-authentication-handler). |
+| `saml_request_path` | Chemin d’URL vers lequel la personne doit être dirigée après une authentification SAML réussie. |
 
-Par exemple, ce lien d’HTML déclenche le flux de connexion SAML et, en cas de succès, l’utilisateur doit passer à `/content/wknd/us/en/protected/page.html`. Ces paramètres de requête peuvent être définis par programmation selon les besoins.
+Par exemple, ce lien HTML déclenche le flux de connexion SAML et, en cas de succès, la personne doit être dirigée vers `/content/wknd/us/en/protected/page.html`. Ces paramètres de requête peuvent être définis par programmation selon les besoins.
 
 ```html
 <a href="/system/sling/login?resource=/content/wknd&saml_request_path=/content/wknd/us/en/protected/page.html">
@@ -583,21 +583,21 @@ Par exemple, ce lien d’HTML déclenche le flux de connexion SAML et, en cas de
 </a>
 ```
 
-## Demande de POST
+## Requête POST
 
-L’authentification SAML peut être appelée en créant une requête de POST HTTP au format suivant :
+L’authentification SAML peut être appelée en créant une requête HTTP POST au format suivant :
 
 `HTTP POST /system/sling/login`
 
-et fournissant les données du formulaire :
+et en fournissant les données du formulaire :
 
 | Nom des données de formulaire | Valeur des données de formulaire |
 |----------------------|-----------------------|
-| `resource` | Tout chemin d’accès JCR, ou sous-chemin, qui est le gestionnaire d’authentification SAML écoute, comme défini dans la propriété ](#configure-saml-2-0-authentication-handler) `path` de la configuration OSGi  du gestionnaire d’authentification SAML 2.0 Adobe [. |
-| `saml_request_path` | Chemin d’accès à l’URL vers lequel l’utilisateur doit être utilisé après une authentification SAML réussie. |
+| `resource` | Tout chemin d’accès JCR, ou sous-chemin, sur lequel le gestionnaire d’authentification SAML écoute, comme défini dans la propriété `path` de la [configuration OSGi du gestionnaire d’authentification SAML 2.0 d’Adobe Granite](#configure-saml-2-0-authentication-handler). |
+| `saml_request_path` | Chemin d’URL vers lequel la personne doit être dirigée après une authentification SAML réussie. |
 
 
-Par exemple, ce bouton d’HTML utilisera un POST HTTP pour déclencher le flux de connexion SAML. Une fois l’opération terminée, l’utilisateur sera amené à `/content/wknd/us/en/protected/page.html`. Ces paramètres de données de formulaire peuvent être définis par programmation selon les besoins.
+Par exemple, ce bouton HTML utilisera un POST HTTP pour déclencher le flux de connexion SAML. Une fois l’opération terminée, la personne sera dirigée vers `/content/wknd/us/en/protected/page.html`. Ces paramètres de données de formulaire peuvent être définis par programmation selon les besoins.
 
 ```html
 <form action="/system/sling/login" method="POST">
@@ -607,9 +607,9 @@ Par exemple, ce bouton d’HTML utilisera un POST HTTP pour déclencher le flux 
 </form>
 ```
 
-### Configuration du Dispatcher
+### Configuration de Dispatcher
 
-Les méthodes HTTP GET et POST requièrent un accès client aux points de terminaison `/system/sling/login` d’AEM. Elles doivent donc être autorisées via AEM Dispatcher.
+Les méthodes HTTP GET et POST requièrent un accès client aux points d’entrée `/system/sling/login` d’AEM. Elles doivent donc être autorisées via AEM Dispatcher.
 
 Autorisation des modèles d’URL nécessaires en fonction de l’utilisation de GET ou POST
 

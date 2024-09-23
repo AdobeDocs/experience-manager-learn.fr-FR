@@ -8,9 +8,9 @@ version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
 source-git-commit: e7692aceded07426a9c1afce9275e82a5af6b0fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '425'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 93%
 + Recherche et détection{#search-and-discovery}
    + [Recherche](./search-and-discovery/search.md)
    + [Recherche contextuelle](./search-and-discovery/contextual-search.md)
-   + [Intégration des Adobes Firefly](./search-and-discovery/adobe-firefly.md)
+   + [Intégration d’Adobe Firefly](./search-and-discovery/adobe-firefly.md)
    + [Collections](./search-and-discovery/collections.md)
    + [Amplification de recherche](./search-and-discovery/search-boost.md)
    + [Rechercher des images similaires](./search-and-discovery/find-similar-images.md)
@@ -57,12 +57,12 @@ ht-degree: 93%
 + Fonctionnalités avancées{#advanced}
    + [Ressources 3D](./advanced/3d-assets.md)
    + [Sortie du PDF d’annotations](./advanced/customizing-annotations-pdf-output.md)
-   + [Rapports Assets](./advanced/asset-reports.md)
+   + [Rapports sur les ressources](./advanced/asset-reports.md)
    + [Balises bloquées](./advanced/blocked-tags.md)
    + [Extraire l’archive](./advanced/extract-archive.md)
    + [Autorisations (groupes d’utilisateurs et d’utilisatrices fermés)](./advanced/closed-user-groups.md)
    + [Autorisations pilotées par les métadonnées](./advanced/metadata-driven-permissions.md)
-   + [Sous-titres codés de vidéos](./advanced/video-closed-captions.md)
+   + [Sous-titres de vidéos](./advanced/video-closed-captions.md)
    + [Filigranes](./advanced/watermarks.md)
 
 + Gestion avancée des métadonnées{#metadata}
@@ -75,10 +75,10 @@ ht-degree: 93%
 + Edge Delivery Services{#edge-delivery-services}
    + [Plug-in Sidekick](./edge-delivery-services/sidekick-plugin.md)
 
-+ Content Hub{#content-hub}
-   + [Configuration de Content Hub](./content-hub/settingup-content-hub.md)
-   + [Chargement d’Assets et processus d’approbation](./content-hub/uploading-assets-and-approval-process.md)
-   + [Accès et téléchargement d’Assets](./content-hub/accessing-and-downloading-assets.md)
++ Hub de contenus{#content-hub}
+   + [Configuration du hub de contenus](./content-hub/settingup-content-hub.md)
+   + [Chargement des ressources et processus d’approbation](./content-hub/uploading-assets-and-approval-process.md)
+   + [Accès aux ressources et téléchargement](./content-hub/accessing-and-downloading-assets.md)
 
 + Partage et distribution{#sharing}
    + [Télécharger des ressources](./sharing/download.md)
@@ -98,7 +98,7 @@ ht-degree: 93%
 
 + Workflows créatifs{#creative-workflows}
    + [Intégration d’Adobe Express](./creative-workflows/adobe-express.md)
-   + [Adobe Express et AEM Assets](./creative-workflows/adobe-express-aem-assets.md)
+   + [Adobe Express et AEM Assets](./creative-workflows/adobe-express-aem-assets.md)
    + [Application de bureau AEM](./creative-workflows/aem-desktop-app.md)
    + [Adobe Asset Link](./creative-workflows/adobe-asset-link.md)
    + [Adobe Stock](./creative-workflows/adobe-stock.md)
@@ -132,7 +132,7 @@ ht-degree: 93%
    + Vidéo {#video}
       + [Vidéo 360](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
       + [Miniatures vidéo personnalisées](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
-      + [Diffusion en continu adaptative DASH](dynamic-media/dynamic-media-dash.md)
+      + [Streaming adaptatif DASH](dynamic-media/dynamic-media-dash.md)
       + [Vidéo de recadrage intelligent Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
       + [Lecteur vidéo](dynamic-media/dynamic-media-video-player-feature-video-use.md)
    + Visionneuses {#viewers}

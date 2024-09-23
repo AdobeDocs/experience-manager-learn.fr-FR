@@ -10,11 +10,11 @@ topic: Integrations
 jira: KT-15126
 exl-id: b369ed05-ba25-4b0e-aa3b-e7fc1621067d
 duration: 52
-badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Cet article suppose que vous avez [configuré le formulaire adaptatif pour envoy
 
 ## Formulaire adaptatif basé sur des composants principaux
 
-Les données envoyées sont au format suivant. Nous devons extraire l’objet ContactUS à l’aide de la notation par points à l’étape de workflow d’appel du service de modèle de données de formulaire , comme illustré dans la capture d’écran.
+Les données envoyées sont au format suivant. Nous devons extraire l’objet ContactUS à l’aide de la notation par points à l’étape de workflow d’appel du service de modèle de données de formulaire, comme illustré dans la copie d’écran.
 
 ```json
 {
@@ -61,7 +61,7 @@ Les données envoyées sont au format suivant. Nous devons extraire l’objet Co
 
 ## Formulaire adaptatif basé sur des composants de base
 
-Les données envoyées sont au format suivant. Extrayez l’objet JSON ContactUS à l’aide de la notation par point dans l’étape de flux de travaux d’appel du service de modèle de données de formulaire .
+Les données envoyées sont au format suivant. Extrayez l’objet JSON ContactUS à l’aide de la notation par point dans l’étape de workflow d’appel du service de modèle de données de formulaire.
 
 ```json
 {

@@ -15,19 +15,19 @@ badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
 duration: 1303
 source-git-commit: b57fb7ce9483dbfe206de7b89e6cf8dba72429a7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1248'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # Intégrer AEM Sites et le SDK web Experience Platform
 
-Découvrez comment intégrer AEM as a Cloud Service au [SDK web](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html) Experience Platform. Cette étape est essentielle pour intégrer des produits Adobe Experience Cloud, tels qu’Adobe Analytics, Target, ou des produits innovants récents tels que Real-time Customer Data Platform, Customer Journey Analytics et Journey Optimizer.
+Découvrez comment intégrer AEM as a Cloud Service au [SDK web](https://experienceleague.adobe.com/docs/experience-platform/web-sdk/home.html?lang=fr) Experience Platform. Cette étape est essentielle pour intégrer des produits Adobe Experience Cloud, tels qu’Adobe Analytics, Target, ou des produits innovants récents tels que Real-time Customer Data Platform, Customer Journey Analytics et Journey Optimizer.
 
-Vous apprenez également à collecter et à envoyer les données pageview [WKND - exemple de projet Adobe Experience Manager](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) dans [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home).
+Vous apprenez également à collecter et à envoyer les données pageview [WKND - exemple de projet Adobe Experience Manager](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) dans [Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/home).
 
-Après avoir terminé cette configuration, vous disposerez d’une base solide. En outre, vous êtes en mesure de faire progresser la mise en œuvre d’Experience Platform à l’aide d’applications telles que [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=fr), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/en/docs/customer-journey-analytics), et [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/en/docs/journey-optimizer). L’implémentation avancée permet d’augmenter l’engagement des clients en normalisant les données web et clients.
+Après avoir terminé cette configuration, vous disposerez d’une base solide. En outre, vous êtes en mesure de faire progresser la mise en œuvre d’Experience Platform à l’aide d’applications telles que [Real-time Customer Data Platform (Real-Time CDP)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=fr), [Customer Journey Analytics (CJA)](https://experienceleague.adobe.com/fr/docs/customer-journey-analytics), et [Adobe Journey Optimizer (AJO)](https://experienceleague.adobe.com/fr/docs/journey-optimizer). La mise en œuvre avancée permet d’augmenter l’engagement des clientes et clients en normalisant les données web et clientes.
 
 ## Conditions préalables
 
@@ -47,7 +47,7 @@ Dans **Experience Platform** :
 + Accès à **Trains de données** sous Collecte de données.
 + Accéder à **Balises** sous Collecte de données
 
-Si vous ne disposez pas des autorisations nécessaires, votre administrateur système qui utilise [Adobe Admin Console](https://adminconsole.adobe.com/) peut accorder les autorisations nécessaires.
+Si vous ne disposez pas des autorisations nécessaires, l’administrateur ou l’administratrice système peut vous les accorder en utilisant [Adobe Admin Console](https://adminconsole.adobe.com/).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418856?quality=12&learn=on)
 
@@ -55,14 +55,14 @@ Si vous ne disposez pas des autorisations nécessaires, votre administrateur sys
 
 Le schéma de modèle de données d’expérience (XDM) vous aide à normaliser les données d’expérience client. Pour collecter les données **pageView WKND**, créez un schéma XDM et utilisez les groupes de champs `AEP Web SDK ExperienceEvent` fournis par Adobe pour la collecte de données web.
 
-Il existe des modèles de données génériques et spécifiques à certains secteurs, par exemple la vente au détail, les services financiers, les soins de santé et bien d’autres encore. Voir [Vue d’ensemble des modèles de données de secteur](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/industries/overview) pour plus d’informations.
+Il existe des modèles de données génériques et spécifiques à certains secteurs, par exemple la vente au détail, les services financiers, les soins de santé et bien d’autres encore. Voir [Vue d’ensemble des modèles de données de secteur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/industries/overview) pour plus d’informations.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418894?quality=12&learn=on)
 
-Découvrez le schéma XDM et les concepts associés tels que les groupes de champs, les types, les classes et les types de données depuis la [présentation du système XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
+Découvrez le schéma XDM et les concepts associés tels que les groupes de champs, les types, les classes et les types de données dans la [vue d’ensemble du système XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home).
 
-La [vue d’ensemble du système XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) est une excellente ressource pour en savoir plus sur le schéma XDM et les concepts connexes tels que les groupes de champs, les types, les classes et les types de données. Il offre une compréhension complète du modèle de données XDM et de la création et de la gestion de schémas XDM pour normaliser les données dans l’entreprise. Explorez-le pour mieux comprendre le schéma XDM et les avantages qu’il peut présenter à vos processus de collecte et de gestion des données.
+La [vue d’ensemble du système XDM](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home) est une excellente ressource pour en savoir plus sur le schéma XDM et les concepts connexes tels que les groupes de champs, les types, les classes et les types de données. Elle offre une compréhension complète du modèle de données XDM et explique comment créer et gérer les schémas XDM pour normaliser les données dans l’entreprise. Explorez-la pour mieux comprendre le schéma XDM et les avantages qu’il peut présenter pour vos processus de collecte et de gestion des données.
 
 ## Créer un train de données - Experience Platform
 
@@ -71,14 +71,14 @@ Un train de données indique au réseau Platform Edge où envoyer les données 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418895?quality=12&learn=on)
 
-Familiarisez-vous avec le concept des trains de données et les sujets connexes, tels que la gouvernance et la configuration des données, en consultant la page [vue d’ensemble des trains de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
+Familiarisez-vous avec le concept des trains de données et les sujets connexes, tels que la gouvernance et la configuration des données, en consultant la page [vue d’ensemble des trains de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr).
 
 ## Créer une propriété de balise - Experience Platform
 
-Découvrez comment créer une propriété de balise dans Experience Platform pour ajouter la bibliothèque JavaScript du SDK web au site web WKND. La propriété de balise nouvellement définie comporte les ressources suivantes :
+Découvrez comment créer une propriété de balise dans Experience Platform pour ajouter la bibliothèque JavaScript du SDK web au site web WKND. La propriété de balise nouvellement définie comporte les ressources suivantes :
 
 + Extensions de balise : [Core](https://exchange.adobe.com/apps/ec/100223/adobe-launch-core-extension) et [SDK web Adobe Experience Platform](https://exchange.adobe.com/apps/ec/106387/aep-web-sdk)
-+ Éléments de données : éléments de données de type de code personnalisé qui extraient page-name, site-section et host-name à l’aide de la couche de données cliente Adobe du site WKND. En outre, l’élément de données de type objet XDM conforme à la nouvelle version du schéma XDM WKND créée à l’étape [Créer un schéma XDM](#create-xdm-schema---experience-platform) .
++ Éléments de données : éléments de données de type de code personnalisé qui extraient page-name, site-section et host-name à l’aide de la couche de données cliente Adobe du site WKND. En outre, l’élément de données de type objet XDM est conforme au schéma XDM WKND nouvellement créé lors de l’étape précédente [Créer un schéma XDM](#create-xdm-schema---experience-platform).
 + Règle : envoyer des données au réseau Platform Edge chaque fois qu’une page web WKND est visitée à l’aide de l’événement `cmp:show` déclenché par la couche de données cliente Adobe.
 
 Lors de la création et de la publication de la bibliothèque de balises à l’aide du **Flux de publication**, vous pouvez utiliser le bouton **Ajouter toutes les ressources modifiées**. Pour sélectionner toutes les ressources telles qu’un Élément de données, une Règle et des Extensions de balises au lieu d’identifier et de sélectionner une ressource individuelle. En outre, pendant la phase de développement, vous pouvez publier la bibliothèque uniquement sur l’environnement de _Développement_, puis la vérifier et la promouvoir dans l’environnement d’_évaluation_ ou de _Production_.
@@ -170,11 +170,11 @@ Lors de la création et de la publication de la bibliothèque de balises à l’
 
 La [vue d’ensemble des balises](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home) fournit des connaissances approfondies sur des concepts importants tels que les éléments de données, les règles et les extensions.
 
-Pour plus d’informations sur l’intégration des composants principaux AEM à la couche de données cliente Adobe, reportez-vous au [guide Utilisation de la couche de données cliente Adobe avec les composants principaux AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview).
+Pour plus d’informations sur l’intégration des composants principaux AEM à la couche de données cliente Adobe, reportez-vous au [guide Utilisation de la couche de données cliente Adobe avec les composants principaux AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview).
 
 ## Connecter la propriété de balise à AEM
 
-Découvrez comment lier la propriété de balise récemment créée à AEM via Adobe IMS et des balises dans la configuration d’Adobe Experience Platform dans AEM. Lorsqu’un environnement AEM as a Cloud Service est établi, plusieurs configurations de compte technique Adobe IMS sont automatiquement générées, y compris des balises. Pour obtenir des instructions détaillées, voir [Connexion d’AEM Sites à une propriété de balise à l’aide d’IMS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/connect-aem-tag-property-using-ims).
+Découvrez comment lier la propriété de balise récemment créée à AEM via Adobe IMS et des balises dans la configuration d’Adobe Experience Platform dans AEM. Lorsqu’un environnement AEM as a Cloud Service est établi, plusieurs configurations de compte technique Adobe IMS sont automatiquement générées, y compris des balises. Pour obtenir des instructions détaillées, voir [Connexion d’AEM Sites à une propriété de balise à l’aide d’IMS](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/connect-aem-tag-property-using-ims).
 
 Toutefois, pour la version AEM 6.5, vous devez en configurer une manuellement.
 
@@ -184,7 +184,7 @@ Après avoir lié la propriété de balise, le site WKND peut charger la bibliot
 
 ### Vérifier le chargement de la propriété de balise sur WKND
 
-À l’aide de l’extension [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) d’Adobe Experience Platform Debugger, vérifiez si la propriété de balise se charge sur les pages WKND. Vous pouvez vérifier :
+À l’aide de l’extension [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) d’Adobe Experience Platform Debugger, vérifiez si la propriété de balise se charge sur les pages WKND. Vous pouvez vérifier :
 
 + Les détails de propriété de balise tels que l’extension, la version, le nom, etc.
 + La version de la bibliothèque SDK web de Platform, l’ID de train de données.
@@ -194,12 +194,12 @@ Après avoir lié la propriété de balise, le site WKND peut charger la bibliot
 
 ## Créer un jeu de données - Experience Platform
 
-Les données pageview collectées à l’aide du SDK Web sont stockées dans le lac de données Experience Platform sous la forme de jeux de données. Le jeu de données est une structure de stockage et de gestion pour une collecte de données telle qu’un tableau de base de données qui suit un schéma. Découvrez comment créer un jeu de données et configurer le train de données créé précédemment pour envoyer des données vers Experience Platform.
+Les données pageView collectées à l’aide du SDK web sont stockées dans le lac de données Experience Platform sous la forme de jeux de données. Le jeu de données est une structure de stockage et de gestion pour une collecte de données telle qu’un tableau de base de données qui suit un schéma. Découvrez comment créer un jeu de données et configurer le train de données créé précédemment pour envoyer des données vers Experience Platform.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418898?quality=12&learn=on)
 
-La [vue d’ensemble des jeux de données](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) fournit des informations supplémentaires sur les concepts, les configurations et d’autres fonctionnalités d’ingestion.
+La [vue d’ensemble des jeux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/overview) fournit des informations supplémentaires sur les concepts, les configurations et d’autres fonctionnalités d’ingestion.
 
 
 ## Données WKND pageView dans Experience Platform
@@ -222,8 +222,8 @@ Très bon travail. Vous avez terminé la configuration d’AEM avec le SDK web E
 
 ## Ressources supplémentaires
 
-+ [Utilisation de la couche de données de la clientèle Adobe avec les composants principaux](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview)
-+ [Intégration de balises de collecte de données Experience Platform et AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview)
-+ [Vue d’ensemble du SDK web Adobe Experience Platform et du réseau Edge](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)
-+ [Tutoriels sur la collecte de données](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/overview)
-+ [Vue d’ensemble d’Adobe Experience Platform Debugger](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)
++ [Utilisation de la couche de données de la clientèle Adobe avec les composants principaux](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview)
++ [Intégration de balises de collecte de données Experience Platform et AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview)
++ [Vue d’ensemble du SDK web Adobe Experience Platform et du réseau Edge](https://experienceleague.adobe.com/fr/docs/platform-learn/data-collection/web-sdk/overview)
++ [Tutoriels sur la collecte de données](https://experienceleague.adobe.com/fr/docs/platform-learn/data-collection/overview)
++ [Vue d’ensemble d’Adobe Experience Platform Debugger](https://experienceleague.adobe.com/fr/docs/platform-learn/data-collection/debugger/overview)

@@ -1,5 +1,5 @@
 ---
-title: Déclencher le processus AEM sur l’envoi de formulaire HTML5 - Réviser et approuver le PDF
+title: Déclencher le workflow AEM lors de l’envoi du formulaire HTML5 - Révision et approbation du PDF
 description: Workflow de révision du PDF envoyé
 feature: Mobile Forms
 doc-type: article
@@ -11,9 +11,9 @@ jira: kt-16133
 exl-id: a767d8f8-d75e-4472-9139-c08d804ee076
 duration: 32
 source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '169'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ La capture d’écran suivante montre les étapes impliquées dans ce workflow.
 
 ## Étape de workflow Générer un PDF non interactif
 
-Le modèle XDP et les données à fusionner avec le modèle sont spécifiés ici. Les données à fusionner sont les données envoyées du PDF. Ces données envoyées sont stockées sous le noeud ```/content/formsubmissions```
+Le modèle XDP et les données à fusionner avec le modèle sont spécifiés ici. Les données à fusionner sont les données envoyées du PDF. Ces données envoyées sont stockées sous le nœud ```/content/formsubmissions```.
 
 ![workflow](assets/generate-pdf1.PNG)
 
@@ -44,4 +44,4 @@ Le composant de workflow Affecter une tâche est utilisé ici pour affecter le P
 
 ## Étapes suivantes
 
-[Déployer les ressources dans votre environnement](./deploy-assets.md)
+[Déploiement des ressources dans votre environnement](./deploy-assets.md)

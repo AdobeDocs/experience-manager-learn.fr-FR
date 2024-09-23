@@ -13,9 +13,9 @@ jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
 source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '910'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ AEM Eventing, bien que puissant, présente certaines limites à prendre en comp
 
 ## Activation
 
-L’activation AEM Eventing s’effectue pour chaque environnement AEM as a Cloud Service et est disponible uniquement pour les environnements en mode de version préliminaire. Contactez l’ <a href="mailto:grp-aem-events@adobe.com">équipe AEM-Eventing</a> pour activer votre environnement AEM avec l’événement d’AEM.
+L’activation AEM Eventing s’effectue pour chaque environnement AEM as a Cloud Service et est disponible uniquement pour les environnements en mode de version préliminaire. Pour activer votre environnement AEM avec AEM Eventing, contactez l’<a href="mailto:grp-aem-events@adobe.com">équipe AEM Eventing</a> .
 
 S’il est déjà activé, consultez [Activer les événements AEM dans votre environnement AEM Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) pour les étapes suivantes.
 

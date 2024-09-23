@@ -13,14 +13,14 @@ doc-type: Feature Video
 exl-id: 83bf8d76-2e36-45d4-bfff-03758e5f7bdc
 duration: 422
 source-git-commit: 54509339ee8e538daf432b329ddebb55e98bb6d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '28'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 # Utilisation de la vue Assets
 
-Découvrez comment filtrer, rechercher et télécharger des ressources dans AEM Assets.
+Découvrez comment filtrer, rechercher et télécharger des ressources dans AEM Assets.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335861?quality=12&learn=on)

@@ -12,7 +12,7 @@ exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 last-substantial-update: 2024-04-27T00:00:00Z
 duration: 919
 source-git-commit: 1183fc5614f9547b56f22bafd9b54e10279f310f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1472'
 ht-degree: 100%
 
@@ -253,7 +253,7 @@ Une fois le VPN créé, vous pouvez le configurer à l’aide des API Cloud Man
    Si votre déploiement AEM nécessite __uniquement__ des connexions HTTP/HTTPS vers un service externe, laissez le tableau `portForwards` vide, car ces règles ne s’appliquent qu’aux requêtes autres que HTTP/HTTPS.
 
 
-&#x200B;2. Pour chaque environnement, validez les règles de routage VPN en vigueur à l’aide de l’opération [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager.
+2. Pour chaque environnement, validez les règles de routage VPN en vigueur à l’aide de l’opération [getEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager.
 
    __Requête HTTP getEnvironmentAdvancedNetworkingConfiguration__
 
@@ -265,9 +265,9 @@ Une fois le VPN créé, vous pouvez le configurer à l’aide des API Cloud Man
        -H 'Content-Type: application/json'
    ```
 
-&#x200B;3. Les configurations de réseau privé virtuel peuvent être mises à jour à l’aide de l’opération [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager. N’oubliez pas que `enableEnvironmentAdvancedNetworkingConfiguration` est une opération `PUT`, et que toutes les règles doivent par conséquent être fournies à chaque appel de cette opération.
+3. Les configurations de réseau privé virtuel peuvent être mises à jour à l’aide de l’opération [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager. N’oubliez pas que `enableEnvironmentAdvancedNetworkingConfiguration` est une opération `PUT`, et que toutes les règles doivent par conséquent être fournies à chaque appel de cette opération.
 
-&#x200B;4. Vous pouvez désormais utiliser la configuration de réseau privé virtuel dans votre code AEM personnalisé et dans votre configuration.
+4. Vous pouvez désormais utiliser la configuration de réseau privé virtuel dans votre code AEM personnalisé et dans votre configuration.
 
 ## Se connecter à des services externes via un réseau privé virtuel
 

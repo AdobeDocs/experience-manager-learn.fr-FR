@@ -13,14 +13,14 @@ doc-type: Feature Video
 exl-id: 719d3101-2c27-4165-a9d7-97e6f637d71f
 duration: 161
 source-git-commit: 54509339ee8e538daf432b329ddebb55e98bb6d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '66'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
 # Partage de lien public
 
-Découvrez comment le lien de partage d’AEM Assets permet aux utilisateurs de partager des ressources avec des parties prenantes internes et externes tout en réduisant le risque de partage de ressources ou d’informations incorrectes.
+Découvrez comment le partage de lien d’AEM Assets permet aux utilisateurs et aux utilisatrices de partager des ressources avec des parties prenantes internes et externes tout en réduisant le risque de partage de ressources ou d’informations incorrectes.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341025?quality=12&learn=on)

@@ -13,9 +13,9 @@ exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
 duration: 557
 source-git-commit: 58ef1c482f127981083c07e5de5a1aba2f7c3aec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2554'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 Apprenez comment les bibliothèques côté client (clientlibs) sont utilisées afin de déployer et de gérer le code CSS et JavaScript pour une implémentation d’Adobe Experience Manager (AEM) Sites. Ce tutoriel explique également comment le module [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr), un projet [webpack](https://webpack.js.org/) découplé, peut être intégré au processus de génération de bout en bout.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Examinez les outils et les instructions nécessaires pour configurer un [environnement de développement local](overview.md#local-dev-environment).
 

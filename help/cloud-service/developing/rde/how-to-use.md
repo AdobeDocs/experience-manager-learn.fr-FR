@@ -12,9 +12,9 @@ last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
 source-git-commit: 60139d8531d65225fa1aa957f6897a6688033040
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '687'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -49,9 +49,9 @@ $ mvn clean package
 
 ## Déploiement d’artefacts AEM à l’aide du plug-in AEM-RDE
 
-Tout d&#39;abord, assurez-vous que le module [dernier `aio` CLI est installé](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
+Tout d’abord, vérifiez que le [dernier module de ligne de commande `aio` est installé](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
 
-Ensuite, utilisez la commande `aio aem:rde:install` pour déployer divers artefacts AEM. Maintenant que vous devez
+Ensuite, utilisez la commande `aio aem:rde:install` pour déployer divers artefacts AEM. Maintenant que cela est fait, vous devez procéder comme suit :
 
 ### Déployer les packages `all` et `dispatcher`.
 
@@ -96,9 +96,9 @@ Ajoutons le `Hello World Component` et déployons-le sur le RDE.
    ...
    ```
 
-1. Vérifiez les modifications sur le SDK d’AEM local en exécutant la création Maven ou en synchronisant des fichiers individuels.
+1. Vérifiez les modifications sur le SDK AEM local en exécutant le build Maven ou en synchronisant les différents fichiers.
 
-1. Déployez les modifications apportées au RDE via le package `ui.apps` ou en déployant les fichiers Dialog et HTL individuels :
+1. Déployez les modifications apportées au RDE via le package `ui.apps` ou en déployant les fichiers de boîte de dialogue et HTL :
 
    ```shell
    # Using 'ui.apps' package

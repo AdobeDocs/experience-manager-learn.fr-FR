@@ -11,15 +11,15 @@ badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: 7096340b-8ccf-4f5e-b264-9157232e96ba
 duration: 78
 source-git-commit: 7e0d7e87d72aa1e4450649afa6a962099ceb2db4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Créer un modèle de données de formulaire
+# Création d’un modèle de données de formulaire
 
-Après avoir configuré la source de données, l’étape suivante consiste à créer un modèle de données de formulaire basé sur la source de données configurée à l’étape précédente. Pour créer un modèle de données de formulaire, veuillez procéder comme suit :
+Après la configuration de la source de données, l’étape suivante consiste à créer un modèle de données de formulaire basé sur la source de données configurée à l’étape précédente. Pour créer un modèle de données de formulaire, veuillez procéder comme suit :
 
 Pointez votre navigateur sur la [page d’intégrations de données.](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm) Cette section répertorie toutes les intégrations de données créées sur votre instance AEM.
 

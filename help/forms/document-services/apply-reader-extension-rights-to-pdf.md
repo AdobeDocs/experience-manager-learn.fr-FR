@@ -10,9 +10,9 @@ exl-id: ea433667-81db-40f7-870d-b16630128871
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 129
 source-git-commit: f3f5c4c4349c8d02c88e1cf91dbf18f58db1e67e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -204,10 +204,10 @@ Pour tester ceci sur votre serveur local, procédez comme suit :
 ```
 
 ![user-mapper](assets/user-mapper-service.PNG)
-1. [Téléchargez et installez le lot ares.ares.core-ares.](assets/ares.ares.core-ares.jar). Il dispose du service personnalisé et du servlet pour appliquer des droits d’utilisation et diffuser en continu le pdf.
+1. [Téléchargez et installez le lot ares.ares.core-ares.](assets/ares.ares.core-ares.jar). Il dispose du service personnalisé et du servlet pour appliquer des droits d’utilisation et renvoyer le PDF.
 1. [Importer les bibliothèques clientes et personnaliser l’envoi](assets/applyaresdemo.zip)
 1. [Importer le formulaire adaptatif](assets/applyaresform.zip)
-1. Ajoutez le certificat Reader Extensions à l’utilisateur ou à l’utilisatrice « fd-service ». Assurez-vous que l’alias est &quot;**ares**&quot;.
+1. Ajoutez le certificat Reader Extensions à l’utilisateur ou à l’utilisatrice « fd-service ». Assurez-vous que l’alias est bien « **ares** ».
 1. [Prévisualiser le formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/applyreaderextensions/jcr:content?wcmmode=disabled)
 1. Sélectionnez les droits appropriés et chargez le fichier PDF.
 1. Cliquez sur Envoyer pour obtenir le PDF étendu grâce à Reader Extensions.

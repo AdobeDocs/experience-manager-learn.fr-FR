@@ -7,13 +7,13 @@ topic: Integrations, Development
 role: Developer
 level: Experienced
 badgeIntegration: label="Intégration" type="positive"
-badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
 duration: 68
 source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '281'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -24,10 +24,10 @@ Nous allons tester l’intégration en créant une simple récupération de form
 >
 >Cette fonctionnalité a été testée sur un formulaire basé sur des composants de base.
 
-## Créer un formulaire adaptatif
+## Création d’un formulaire adaptatif
 
 1. Créez un formulaire adaptatif, basez-le sur « Modèle de formulaire vierge », et associez-le au modèle de données de formulaire créé à l’étape précédente.
-1. Ouvrez le formulaire adaptatif en mode de modification.
+1. Ouvrez le formulaire en mode d’édition.
 1. Faites glisser et déposez un composant TextField et un composant Panel sur le formulaire adaptatif. Définissez le titre du composant TextField « Enter Lead Id » et définissez son nom sur « LeadId ».
 1. Faites glisser et déposez 2 composants TextField sur le composant Panel.
 1. Définissez le nom et le titre des 2 composants de TextField sur FirstName (Prénom) et LastName (Nom).

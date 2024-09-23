@@ -1,6 +1,6 @@
 ---
-title: Déclencher AEM processus sur l’envoi de formulaire HTML5 - Gérer l’envoi du PDF
-description: Gérer l’envoi du formulaire HTML5/PDF
+title: Déclencher le workflow AEM sur l’envoi de formulaire HTML5 - Gestion de l’envoi du PDF
+description: Gestion de l’envoi du formulaire HTML5/PDF
 feature: Mobile Forms
 doc-type: article
 version: 6.4,6.5
@@ -9,23 +9,24 @@ role: Developer
 jira: kt-16133
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
-source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
-workflow-type: tm+mt
+exl-id: ef8ed87d-37c1-4d01-8df6-7a78c328703d
+source-git-commit: 5ec7ae13051ca9a374007b69e36c70e51ad546a0
+workflow-type: ht
 source-wordcount: '146'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
-# Gérer l’envoi de formulaire
+# Gestion de l’envoi du formulaire
 
-Dans cette partie, nous allons créer un servlet simple qui s’exécute sur AEM Publish pour gérer l’envoi du formulaire PDF ou HTML5. Ce servlet effectue une requête de POST HTTP vers un servlet s’exécutant dans une instance d’auteur AEM responsable de l’enregistrement des données envoyées sous la forme d’un noeud `nt:file` dans le référentiel AEM Author.
+Dans cette partie, nous allons créer un servlet simple qui s’exécute sur l’instance de publication AEM pour gérer l’envoi de formulaire PDF ou HTML5. Ce servlet, à son tour, effectue une requête HTTP POST à un servlet s’exécutant dans une instance de création AEM responsable de l’enregistrement des données envoyées en tant que nœud `nt:file` dans le référentiel de l’instance de création AEM.
 
-Voici le code du servlet qui gère l’envoi du formulaire PDF/HTML5. Dans ce servlet, nous effectuons un appel POST vers un servlet monté sur **/bin/startworkflow** dans une instance de création AEM. Ce servlet enregistre les données de formulaire dans le référentiel de l’instance de création AEM.
+Vous trouverez ci-dessous le code du servlet qui gère l’envoi du formulaire PDF/HTML5. Dans ce servlet, nous effectuons un appel POST vers un servlet monté sur **/bin/startworkflow** dans une instance de création AEM. Ce servlet enregistre les données de formulaire dans le référentiel de l’instance de création AEM.
 
 
 ## Servlet de publication AEM
 
-Le code suivant gère l’envoi du formulaire PDF/HTML5. Ce code s’exécute sur l’instance de publication.
+Le code ci-après gère l’envoi du formulaire PDF/HTML5. Ce code s’exécute sur l’instance de publication.
 
 ```java
 package com.aemforms.mobileforms.core.servlets;
@@ -118,4 +119,4 @@ public class HandleFormSubmission extends SlingAllMethodsServlet implements Seri
 
 ## Étapes suivantes
 
-[Stocker les données envoyées sur l’instance d’auteur](./author-servlet.md)
+[Stockage des données envoyées sur l’instance de création](./author-servlet.md)

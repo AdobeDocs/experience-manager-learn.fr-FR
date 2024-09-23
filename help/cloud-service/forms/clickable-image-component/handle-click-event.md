@@ -1,6 +1,6 @@
 ---
-title: Création d’un composant Image cliquable
-description: Création d’un composant d’image cliquable dans AEM Forms Cloud Service
+title: Création d’un composant d’image cliquable
+description: Création d’un composant d’image cliquable dans AEM Forms Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -8,21 +8,21 @@ version: Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-15968
-badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 54344a6d-51d3-4a63-b1f1-283bddbc0f8f
 source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '83'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
-# Gérer les clics, événement
+# Gestion d’un événement de clic
 
 Créez une bibliothèque cliente et associez-la au composant.
 
-Ajoutez le code suivant dans votre fichier JavaScript de la bibliothèque cliente pour gérer l’événement click.
-Selon l’état sélectionné, les données appropriées renvoyées par le point de fin peuvent être affichées. Les détails du point de terminaison et les données à afficher dépendent de votre cas d’utilisation.
+Ajoutez le code suivant dans votre fichier JavaScript de la bibliothèque cliente pour gérer l’événement de clic.
+Selon l’état sélectionné, les données appropriées renvoyées par le point d’entrée peuvent être affichées. Les détails du point d’entrée et les données à afficher dépendent de votre cas d’utilisation.
 
 
 

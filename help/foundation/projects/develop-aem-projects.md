@@ -10,9 +10,9 @@ level: Beginner
 exl-id: 9bfe3142-bfc1-4886-85ea-d1c6de903484
 duration: 1417
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4441'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Ce tutoriel décrit le code nécessaire à la création d’un modèle de projet
 * [Package de tutoriel terminé](./assets/develop-aem-projects/projects-tasks-guide.ui.apps-0.0.1-SNAPSHOT.zip)
 * [Référentiel de code complet sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-guides/tree/feature/projects-tasks-guide)
 
-Ce tutoriel suppose d’avoir des connaissances de base sur les [bonnes pratiques de développement AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) et une certaine familiarité avec la [configuration de projet Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=en). Tout le code mentionné est destiné à être utilisé comme référence et ne doit être déployé que sur une [instance AEM de développement local](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
+Ce tutoriel suppose d’avoir des connaissances de base sur les [bonnes pratiques de développement AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/introduction/the-basics) et une certaine familiarité avec la [configuration de projet Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/ht-projects-maven.html?lang=fr). Tout le code mentionné est destiné à être utilisé comme référence et ne doit être déployé que sur une [instance AEM de développement local](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/deploying/deploy).
 
 ## Structure d’un modèle de projet
 
@@ -129,7 +129,7 @@ Une des raisons les plus intéressantes de la création d’un modèle de projet
    1. Ajouter un nouveau nœud **nt:unstructured** sous authoring-project/gadgets nommé **tasks**.
    1. Ajoutez des propriétés de chaîne au nœud tasks pour **cardWeight** = &quot;100&quot;, **jcr:title** = &quot;Tasks&quot; et **sling:resourceType** = &quot;cq/gui/components/projects/admin/pod/taskpod&quot;.
 
-   Désormais, la [mosaïque des tâches](https://experienceleague.adobe.com/en/docs) s’affiche par défaut lors de la création d’un projet.
+   Désormais, la [mosaïque des tâches](https://experienceleague.adobe.com/fr/docs) s’affiche par défaut lors de la création d’un projet.
 
    ```shell
    ../projects/templates/authoring-project
@@ -629,13 +629,13 @@ La création d’un assistant personnalisé peut s’avérer très efficace, car
 
 1. Dans CRXDE-Lite, nous allons créer un sous-dossier dans le dossier `/apps/aem-guides/projects-tasks/projects` appelé « wizards » (assistants). Copiez l’assistant par défaut à partir de : `/libs/cq/core/content/projects/workflowwizards/default_workflow` sous le dossier « wizards » nouvellement créé et renommez-le en **content-approval-start**. Le chemin complet est le suivant : `/apps/aem-guides/projects-tasks/projects/wizards/content-approval-start`.
 
-   L’assistant par défaut est un assistant à 2 colonnes. La première colonne indique le titre, la description et la miniature du modèle de workflow sélectionné. La deuxième colonne comprend des champs pour le titre du workflow, les commentaires de démarrage et le chemin d’accès à la payload. L’assistant est un formulaire d’interface utilisateur tactile standard et utilise les [Composants de formulaire de l’IU Granite](https://experienceleague.adobe.com/en/docs) pour renseigner les champs.
+   L’assistant par défaut est un assistant à 2 colonnes. La première colonne indique le titre, la description et la miniature du modèle de workflow sélectionné. La deuxième colonne comprend des champs pour le titre du workflow, les commentaires de démarrage et le chemin d’accès à la payload. L’assistant est un formulaire d’interface utilisateur tactile standard et utilise les [Composants de formulaire de l’IU Granite](https://experienceleague.adobe.com/fr/docs) pour renseigner les champs.
 
    ![Assistant de workflow d’approbation du contenu](./assets/develop-aem-projects/content-approval-start-wizard.png).
 
 1. Nous ajouterons un champ supplémentaire à l’assistant qui est utilisé pour définir la personne désignée de la première tâche dans le workflow (consultez l’étape 5 de la section [Créer un modèle de workflow](#create-workflow-model)).
 
-   Sous `../content-approval-start/jcr:content/items/column2/items`, créez un nœud de type `nt:unstructured` et nommez-le **« assign »**. Nous utiliserons le composant Sélecteur d’utilisateur ou d’utilisatrice de projets (basé sur le [Composant de sélecteur d’utilisateur ou d’utilisatrice Granite](https://experienceleague.adobe.com/en/docs)). Ce champ de formulaire permet de limiter la sélection des utilisateurs et utilisatrices et des groupes à ceux qui appartiennent au projet en cours.
+   Sous `../content-approval-start/jcr:content/items/column2/items`, créez un nœud de type `nt:unstructured` et nommez-le **« assign »**. Nous utiliserons le composant Sélecteur d’utilisateur ou d’utilisatrice de projets (basé sur le [Composant de sélecteur d’utilisateur ou d’utilisatrice Granite](https://experienceleague.adobe.com/fr/docs)). Ce champ de formulaire permet de limiter la sélection des utilisateurs et utilisatrices et des groupes à ceux qui appartiennent au projet en cours.
 
    Vous trouverez ci-dessous la représentation XML du nœud **assign** :
 
@@ -691,7 +691,7 @@ La création d’un assistant personnalisé peut s’avérer très efficace, car
    </priority>
    ```
 
-1. Nous autorisons à présent la personne à l’origine du workflow à définir la date d’échéance de la tâche initiale. Le champ de formulaire [Sélecteur de date de l’IU Granite](https://experienceleague.adobe.com/en/docs) permet de capturer cette entrée. Le champ masqué [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) est ajouté pour s’assurer que l’entrée est stockée en tant que propriété de type Date dans JCR.
+1. Nous autorisons à présent la personne à l’origine du workflow à définir la date d’échéance de la tâche initiale. Le champ de formulaire [Sélecteur de date de l’IU Granite](https://experienceleague.adobe.com/fr/docs) permet de capturer cette entrée. Le champ masqué [TypeHint](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html#typehint) est ajouté pour s’assurer que l’entrée est stockée en tant que propriété de type Date dans JCR.
 
    Ajoutez deux nœuds **nt:unstructured** avec les propriétés suivantes représentées ci-dessous en code XML :
 

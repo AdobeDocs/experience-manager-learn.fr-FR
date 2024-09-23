@@ -1,6 +1,6 @@
 ---
 title: Exploration de l’éditeur universel
-description: Dirk Rudolph de AEM ingénierie est interviewé au sujet de l'éditeur et des Edge Delivery Services universels.
+description: Dirk Rudolph de l’ingénierie AEM est interviewé au sujet de l’éditeur universel et d’Edge Delivery Services.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -14,14 +14,14 @@ last-substantial-update: 2024-06-13T00:00:00Z
 jira: KT-15715
 exl-id: 2f029feb-7273-48e4-91a4-2ac0bf697356
 source-git-commit: ae3912140498f0c305a140305a9d191d0bc151b7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '44'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Exploration de l’éditeur universel
 
-Dirk Rudolph de AEM Engineering est interviewé sur l&#39;éditeur universel et son fonctionnement avec les Edge Delivery Services et AEM.
+Dirk Rudolph de l’ingénierie AEM est interviewé au sujet de l’éditeur universel et de son fonctionnement avec Edge Delivery Services et AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429656/?learn=on)

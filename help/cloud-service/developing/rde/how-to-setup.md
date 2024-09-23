@@ -12,9 +12,9 @@ last-substantial-update: 2024-06-04T00:00:00Z
 exl-id: ab9ee81a-176e-4807-ba39-1ea5bebddeb2
 duration: 485
 source-git-commit: f714adaa9bb637c0c7b17837c1d4b9f2be737c5c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '668'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Cette vidéo montre les éléments suivants :
 - Ajout d’un RDE à votre programme à l’aide de Cloud Manager.
 - Flux de connexion RDE à l’aide d’Adobe IMS, similaire à tout autre environnement AEM as a Cloud Service.
 - Configuration de l’[interface de ligne de commande extensible Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/), également appelée la `aio CLI`.
-- Installation et configuration du module externe RDE AEM et Cloud Manager `aio CLI` à l’aide du mode non interactif. Pour le mode interactif, voir les [instructions de configuration](#setup-the-aem-rde-plugin)
+- Configuration et paramétrage du plug-in `aio CLI` RDE AEM et Cloud Manager à l’aide du mode non interactif. Pour le mode interactif, voir les [instructions de configuration](#setup-the-aem-rde-plugin)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415490?quality=12&learn=on)
 
@@ -50,32 +50,32 @@ Installez l’interface de ligne de commande extensible Adobe I/O Runtime, ég
 $ npm install -g @adobe/aio-cli
 ```
 
-### Installation et configuration des modules externes de ligne de commande aio
+### Installation et configuration des plug-ins de ligne de commande aio
 
-L’interface de ligne de commande aio doit disposer de modules externes installés et configurés avec l’ID d’environnement de l’organisation, du programme et de l’éditeur de texte enrichi pour interagir avec votre éditeur de texte enrichi. La configuration peut être effectuée via l’interface de ligne de commande aio à l’aide du mode interactif plus simple ou du mode non interactif.
+L’interface de ligne de commande aio doit disposer de plug-ins installés et configurés avec l’ID d’environnement de l’organisation, du programme et du RDE pour interagir avec votre RDE. La configuration peut être effectuée via l’interface de ligne de commande aio à l’aide du mode interactif plus simple ou du mode non interactif.
 
 >[!BEGINTABS]
 
 >[!TAB Mode interactif]
 
-Installez et configurez les modules externes RDE AEM à l’aide de la commande `plugins:install` de `aio cli`.
+Installez et configurez les plug-ins RDE AEM à l’aide de la commande `plugins:install` de la `aio cli`.
 
-1. Installez le module externe AEM RDE de l’interface de ligne de commande aio à l’aide de la commande `plugins:install` de `aio cli`.
+1. Installez le plug-in RDE AEM de l’interface de ligne de commande aio à l’aide de la commande `plugins:install` de la `aio cli`.
 
    ```shell
    $ aio plugins:install @adobe/aio-cli-plugin-aem-rde    
    $ aio plugins:update
    ```
 
-   Le plug-in du RDE AEM permet aux développeurs et aux développeuses de déployer du code et du contenu à partir de l’ordinateur local.
+   Le plug-in RDE AEM permet aux développeurs et aux développeuses de déployer du code et du contenu à partir de l’ordinateur local.
 
-2. Connectez-vous à l’interface de ligne de commande Extensible de Adobe I/O Runtime en exécutant la commande suivante pour obtenir le jeton d’accès. Veillez à vous connecter à la même organisation d’Adobe que votre Cloud Manager.
+2. Connectez-vous à l’interface de ligne de commande Extensible d’Adobe I/O Runtime en exécutant la commande suivante pour obtenir le jeton d’accès. Veillez à vous connecter à la même organisation Adobe que Cloud Manager.
 
    ```shell
    $ aio login
    ```
 
-3. Exécutez la commande suivante pour configurer RDE à l’aide du mode interactif.
+3. Exécutez la commande suivante pour configurer le RDE à l’aide du mode interactif.
 
    ```shell
    $ aio aem:rde:setup
@@ -92,9 +92,9 @@ Installez et configurez les modules externes RDE AEM à l’aide de la commande 
 
    - Sélectionnez __Oui__ si vous utilisez plusieurs RDE ou souhaitez stocker votre configuration RDE localement, dans le fichier `.aio` du dossier actuel, pour chaque projet.
 
-5. Sélectionnez ID d’organisation, ID de programme et ID d’environnement de RDE dans la liste des options disponibles.
+5. Sélectionnez les ID d’organisation, de programme et d’environnement RDE dans la liste des options disponibles.
 
-6. Vérifiez que l’organisation, le programme et l’environnement appropriés sont configurés en exécutant la commande suivante.
+6. Vérifiez que l’organisation, le programme et l’environnement appropriés sont configurés en exécutant la commande ci-après.
 
    ```shell
    $ aio aem rde setup --show
@@ -102,7 +102,7 @@ Installez et configurez les modules externes RDE AEM à l’aide de la commande 
 
 >[!TAB Mode non interactif]
 
-Installez et configurez les modules externes Cloud Manager et AEM RDE à l’aide de la commande `plugins:install` de `aio cli`.
+Installez les plug-ins RDE pour Cloud Manager et AEM à l’aide de la commande `plugins:install` de la `aio cli`.
 
 ```shell
 $ aio plugins:install @adobe/aio-cli-plugin-cloudmanager
@@ -112,11 +112,11 @@ $ aio plugins:update
 
 Le plug-in Cloud Manager permet aux développeurs et aux développeuses d’interagir avec Cloud Manager à partir de la ligne de commande.
 
-Le plug-in du RDE AEM permet aux développeurs et aux développeuses de déployer du code et du contenu à partir de l’ordinateur local.
+Le plug-in RDE AEM permet aux développeurs et aux développeuses de déployer du code et du contenu à partir de l’ordinateur local.
 
-Les modules externes d’interface de ligne de commande aio doivent être configurés pour interagir avec votre RDE.
+Les plug-ins de ligne de commande aio doivent être configurés pour interagir avec le RDE.
 
-1. Tout d’abord, à l’aide de Cloud Manager, copiez les valeurs de l’ID d’organisation, de programme et d’environnement.
+1. Tout d’abord, à l’aide de l’interface d’utilisation de Cloud Manager, copiez les valeurs des ID d’organisation, de programme et d’environnement.
 
    - ID d’organisation : copiez la valeur à partir de **Photo de profil > Informations sur le compte (interne) > Fenêtre modale > ID d’organisation actuel**.
 
@@ -130,7 +130,7 @@ Les modules externes d’interface de ligne de commande aio doivent être config
 
    ![ID de programme et d’environnement.](./assets/Program-Environment-Id.png)
 
-1. Utilisez la commande `aio cli` `config:set` pour définir ces valeurs en exécutant la commande suivante.
+1. Ensuite, en utilisant le jeu de commandes `config:set` de la `aio cli`, définissez ces valeurs en exécutant la commande ci-après.
 
    ```shell
    $ aio config:set cloudmanager_orgid <ORGANIZATION ID>
@@ -138,13 +138,13 @@ Les modules externes d’interface de ligne de commande aio doivent être config
    $ aio config:set cloudmanager_environmentid <ENVIRONMENT ID>
    ```
 
-1. Vérifiez les valeurs de configuration actuelles en exécutant la commande suivante.
+1. Vérifiez les valeurs de configuration actuelles en exécutant la commande ci-après.
 
    ```shell
    $ aio config:list
    ```
 
-1. Changez ou vérifiez l’organisation à laquelle vous êtes actuellement connecté :
+1. Changez ou vérifiez l’organisation à laquelle votre connexion est actuellement établie :
 
    ```shell
    $ aio where
@@ -175,6 +175,6 @@ Configurer l’[interface de ligne de commande extensible Adobe I/O Runtime](h
 
 [Utilisation et commandes de l’interface de ligne de commande aio](https://github.com/adobe/aio-cli#usage)
 
-[Module d’interface de ligne de commande Adobe I/O Runtime pour les interactions avec AEM environnements de développement rapide](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
+[Plug-in d’interface de ligne de commande Adobe I/O Runtime pour les interactions avec les environnements de développement rapide AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[Plug-in d’interface de ligne de commande Cloud Manager aio](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+[Plug-in d’interface de ligne de commande aio de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager)

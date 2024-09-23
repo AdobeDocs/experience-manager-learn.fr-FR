@@ -1,6 +1,6 @@
 ---
-title: Rapports Assets
-description: Découvrez comment utiliser les rapports de ressources dans AEM Assets pour obtenir des informations sur votre activité de gestion des ressources numériques.
+title: Rapports sur les ressources
+description: Découvrez comment utiliser les rapports sur les ressources dans AEM Assets pour obtenir des informations sur votre activité de gestion des ressources numériques.
 version: Cloud Service
 feature: Assets Essentials
 topic: Content Management
@@ -12,14 +12,14 @@ last-substantial-update: 2024-08-05T00:00:00Z
 jira: KT-15656
 exl-id: 0ed7aea8-67b6-438a-bf1f-0f4ebd7c95aa
 source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '35'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # Rapports
 
-Découvrez comment utiliser les rapports de ressources dans AEM Assets pour obtenir des informations sur votre activité de gestion des ressources numériques.
+Découvrez comment utiliser les rapports sur les ressources dans AEM Assets pour obtenir des informations sur votre activité de gestion des ressources numériques.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432496/?learn=on)

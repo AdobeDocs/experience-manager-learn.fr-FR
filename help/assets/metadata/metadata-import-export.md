@@ -13,9 +13,9 @@ doc-type: Feature Video
 exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
 duration: 419
 source-git-commit: 726715890d997ba3bb85f4833e220ac2222b3a42
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '378'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -29,18 +29,18 @@ Découvrez comment utiliser les fonctions d’import et d’export des métadonn
 
 >[!TIP]
 >
-> Lors de l’ouverture d’un fichier CSV d’exportation de métadonnées dans Excel, utilisez l’ [importateur Excel](https://support.microsoft.com/en-us/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) plutôt que de double-cliquer sur le fichier pour éviter des problèmes liés aux fichiers CSV codés au format UTF-8.
+> Lors de l’ouverture d’un fichier CSV d’export de métadonnées dans Excel, utilisez l’[importateur Excel](https://support.microsoft.com/fr-fr/office/import-data-from-a-csv-html-or-text-file-b62efe49-4d5b-4429-b788-e1211b5e90f6) plutôt que de double-cliquer sur le fichier pour éviter des problèmes liés aux fichiers CSV codés au format UTF-8.
 >
-> Pour ouvrir le fichier CSV d’exportation de métadonnées dans Excel, procédez comme suit :
+> Pour ouvrir le fichier CSV d’export de métadonnées dans Excel, procédez comme suit :
 > 
-> 1. Ouvrir Microsoft Excel
-> 1. Sélectionnez __Fichier > Nouveau__ pour créer une feuille de calcul vide
-> 1. Une fois la feuille de calcul vide ouverte, sélectionnez __Fichier > Importer__
-> 1. Sélectionnez le fichier __Texte__ et cliquez sur __Importer__
-> 1. Sélectionnez le fichier CSV exporté dans le système de fichiers et cliquez sur __Obtenir des données__
-> 1. À l’étape 1 de l’assistant d’importation, sélectionnez __Délimité__ et définissez __Origine du fichier__ sur __Unicode (UTF-8)__, puis cliquez sur __Suivant__
-> 1. À l’étape 2, définissez __Délimiteurs__ sur __Virgule__, puis cliquez sur __Suivant__
-> 1. À l’étape 3, laissez le __format de données de colonne__ tel quel, puis cliquez sur __Terminer__
+> 1. Ouvrez Microsoft Excel.
+> 1. Sélectionnez __Fichier > Nouveau__ pour créer une feuille de calcul vide.
+> 1. Une fois la feuille de calcul vide ouverte, sélectionnez __Fichier > Importer__.
+> 1. Sélectionnez le fichier __Texte__ et cliquez sur __Importer__.
+> 1. Sélectionnez le fichier CSV exporté dans le système de fichiers et cliquez sur __Récupérer des données__.
+> 1. À l’étape 1 de l’assistant d’import, sélectionnez __Délimité__ et définissez __Origine du fichier__ sur __Unicode (UTF-8)__, puis cliquez sur __Suivant__.
+> 1. À l’étape 2, définissez __Délimiteurs__ sur __Virgule__, puis cliquez sur __Suivant__.
+> 1. À l’étape 3, laissez le __Format de données de colonne__ tel quel, puis cliquez sur __Terminer__.
 > 1. Sélectionnez __Importer__ pour ajouter les données à la feuille de calcul.
 
 ## Import de métadonnées {#metadata-import}
