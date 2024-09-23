@@ -9,7 +9,7 @@ duration: 74
 source-git-commit: 285c652460ff00301d183defc56c07b3f74d8e5c
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 72%
+ht-degree: 92%
 
 ---
 
@@ -163,48 +163,48 @@ Découvrez les nouvelles fonctionnalités de l’IA générative disponibles dan
         </td>                
         <td>
             <a href="./season-3/cloud5-exploring-universal-editor.md">
-                <img alt="Exploration d’Universal Editor" src="https://video.tv.adobe.com/v/3429656?format=jpeg"/>
+                <img alt="Exploration de l’éditeur universel" src="https://video.tv.adobe.com/v/3429656?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-exploring-universal-editor.md">
-                <strong>Exploration d’Universal Editor</strong></a>        
-                <br/><em>avec James Talbot &amp; Dirk Rudolph, AEM Engineering</em>
+<strong>Explorer l’éditeur universel</strong></a>
+<br/><em>avec James Talbot &amp; Dirk Rudolph, ingénierie AEM</em>
             </div>
             <p>
-                <br/>                
-                 Découvrez l’éditeur universel et l’AEM avec les Edge Delivery Services.
+                <br/>
+Découvrez l’éditeur universel et AEM avec Edge Delivery Services.
             </p>
         </td>
     </tr>  
     <tr>
         <td>
             <a href="./season-3/cloud5-import-sites-to-edge-delivery-services.md">
-                <img alt="Importation de sites dans AEM Sites avec des Edge Delivery Services" 
+                <img alt="Import de sites vers AEM Sites avec Edge Delivery Services" 
                      src="https://video.tv.adobe.com/v/3431603?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-import-sites-to-edge-delivery-services.md">
-                <strong>Importer des sites</strong></a>        
-                <br/><em> avec James Talbot et Varun Mitra, Cloud Architect</em>
+<strong>Import de sites</strong></a>
+<br/><em>avec James Talbot et Varun Mitra, architecte cloud</em>
             </div>
             <p>
-                <br/>                
-                 Découvrez l’importation de sites dans AEM Sites avec des Edge Delivery Services.
+                <br/>
+Découvrez l’import de sites dans AEM Sites avec Edge Delivery Services.
             </p>
         </td>
         <td>
             <a href="./season-3/cloud5-using-admin-api.md">
-                <img alt="Utilisation de l’API d’administration avec des Edge Delivery Services" 
+                <img alt="Utilisation de l’API Admin avec Edge Delivery Services" 
                      src="https://video.tv.adobe.com/v/3433158?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-using-admin-api.md">
-                <strong>Utilisation de l’API d’administration</strong></a>        
-                <br/><em> avec James Talbot et Varun Mitra, Cloud Architect</em>
+<strong>Utilisation de l’API Admin</strong></a>
+<br/><em>avec James Talbot et Varun Mitra, architecte cloud</em>
             </div>
             <p>
-                <br/>                
-                 Découvrez comment utiliser l’API Admin en Edge Delivery Services pour gérer le cycle de vie du contenu et du code.
+                <br/>
+Découvrez comment utiliser l’API Admin dans Edge Delivery Services pour gérer le cycle de vie du contenu et du code.
             </p>
         </td>   
         <td>
@@ -218,8 +218,8 @@ Découvrez les nouvelles fonctionnalités de l’IA générative disponibles dan
                 <br/><em> avec James Talbot et Varun Mitra, Cloud Architect</em>
             </div>
             <p>
-                <br/>                
-                 Découvrez ce qu’est un score de phare et les techniques pour obtenir le meilleur score de phare possible.
+                <br/>
+Découvrez ce qu’est un score Lighthouse et les techniques pour obtenir le meilleur score Lighthouse possible.
             </p>
         </td>            
     </tr> 

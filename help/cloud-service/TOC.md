@@ -9,7 +9,7 @@ team: TM
 source-git-commit: 285c652460ff00301d183defc56c07b3f74d8e5c
 workflow-type: tm+mt
 source-wordcount: '1300'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 91%
    + [Pipeline de production CI/CD](./cloud-manager/cicd-production-pipeline.md)
    + [Pipeline hors production CI/CD](./cloud-manager/cicd-non-production-pipeline.md)
    + [Activity](./cloud-manager/activity.md)
-   + [Noms de domaine personnalisés](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
+   + [Noms de domaine personnalisés](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names){target=_blank}
    + Opérations de développement{#devops}
       + [Déployer le code](./cloud-manager/devops/deploy-code.md)
       + [Fusionner des projets](./cloud-manager/devops/merge-projects.md)
@@ -53,7 +53,7 @@ ht-degree: 91%
       + [Intégration continue](./cloud-manager/devops/continuous-integration.md)
       + [Analyser des résultats de test](./cloud-manager/devops/analyze-test-results.md)
       + [Configurations du Dispatcher](./cloud-manager/devops/dispatcher-configurations.md)
-      + [Analyse des journaux CDN](./cloud-manager/devops/cdn-log-analysis.md)
+      + [Analyse de journal de réseau CDN](./cloud-manager/devops/cdn-log-analysis.md)
 + Configuration de l’environnement de développement local {#local-development-environment-set-up}
    + [Vue d’ensemble](./local-development-environment/overview.md)
    + [Outils de développement](./local-development-environment/development-tools.md)
@@ -107,7 +107,7 @@ ht-degree: 91%
       + [Mettre en cache des variantes de page](./developing/advanced/variant-caching.md)
       + [Protection CSRF](./developing/advanced/csrf-protection.md)
       + [Espaces de noms personnalisés](./developing/advanced/custom-namespaces.md)
-      + [Paramétrage des modèles Sling à partir de HTL](./developing/advanced/sling-model-parameters.md)
+      + [Paramétrage de modèles Sling à partir de HTL](./developing/advanced/sling-model-parameters.md)
       + [Secrets](./developing/advanced/secrets.md)
       + [Utilisateurs et utilisatrices de service](./developing/advanced/service-users.md)
       + [API d’images optimisées pour le web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
@@ -120,7 +120,7 @@ ht-degree: 91%
       + Modification de l’application React{#react-app-editing}
          + [Vue d’ensemble](./developing/universal-editor/react-app/overview.md)
          + [Configuration du développement local](./developing/universal-editor/react-app/local-development-setup.md)
-         + [Application React d’instrument](./developing/universal-editor/react-app/instrument-to-edit-content.md)
+         + [Instrumentation d’une application React](./developing/universal-editor/react-app/instrument-to-edit-content.md)
    + [JavaDocs de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + Déboguer AEM{#debugging}
    + Déboguer le SDK AEM{#debugging-aem-sdk}
@@ -140,10 +140,10 @@ ht-degree: 91%
          + [Avertissements transversaux](./debugging/cloud-service/risks/traversals.md)
 + Diffusion de contenu{#content-delivery}
    + [Nom de domaine personnalisé](./content-delivery/custom-domain-names.md)
-   + [Nom de domaine personnalisé avec le réseau de diffusion de contenu géré par Adobe](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
-   + [Nom de domaine personnalisé avec le réseau de diffusion de contenu client](./content-delivery/custom-domain-names-with-customer-managed-cdn.md)
-   + [Mise en cache](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
-   + [Adobe CDN - au-delà de la mise en cache](./content-delivery/adobe-cdn-beyond-caching.md)
+   + [Nom de domaine personnalisé avec le réseau CDN géré par Adobe](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)
+   + [Nom de domaine personnalisé avec le réseau CDN du client ou de la cliente](./content-delivery/custom-domain-names-with-customer-managed-cdn.md)
+   + [Mise en cache](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/caching/overview){target=_blank}
+   + [Réseau CDN Adobe - au-delà de la mise en cache](./content-delivery/adobe-cdn-beyond-caching.md)
    + [Redirections d’URL](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/url-redirection.html?lang=fr){target=_blank}
 + Mise en cache{#caching}
    + [Vue d’ensemble](./caching/overview.md)
@@ -152,7 +152,7 @@ ht-degree: 91%
    + [Analyse du taux d’accès au cache du réseau CDN](./caching/cdn-cache-hit-ratio-analysis.md)
    + Procédure{#how-to}
       + [Activer la mise en cache](./caching/how-to/enable-caching.md)
-      + [Désactiver la mise en cache](./caching/how-to/disable-caching.md)
+      + [Désactivation de la mise en cache](./caching/how-to/disable-caching.md)
       + [Purge du cache](./caching/how-to/purge-cache.md)
 + Accéder à AEM{#accessing}
    + [Vue d’ensemble](./accessing/overview.md)
@@ -253,26 +253,26 @@ ht-degree: 91%
       + [Configurer le panneau Démarrage](./forms/create-first-af/configure-start-panel.md)
       + [Ajouter et configurer la barre d’outils](./forms/create-first-af/add-configure-toolbar.md)
    + Service d’envoi personnalisé avec formulaire découplé{#custom-submit-headless-forms}
-      + [1. Présentation](./forms/custom-submit-headless-forms/introduction.md)
+      + [1 - Présentation](./forms/custom-submit-headless-forms/introduction.md)
       + [2 - Créer un service d’envoi personnalisé](./forms/custom-submit-headless-forms/custom-submit-service.md)
       + [3 - Afficher la réponse](./forms/custom-submit-headless-forms/handle-response-react-app.md)
-   + Créer un composant de bloc d’adresse{#create-address-block}
-      + [1. Présentation](./forms/create-address-block-component/introduction.md)
+   + Création d’un composant de bloc d’adresse{#create-address-block}
+      + [1 - Présentation](./forms/create-address-block-component/introduction.md)
       + [2 - Configuration](./forms/create-address-block-component/set-up.md)
-      + [3 - Créer un composant](./forms/create-address-block-component/creating-address-component.md)
+      + [3 - Création d’un composant](./forms/create-address-block-component/creating-address-component.md)
       + [4 - Déploiement du composant](./forms/create-address-block-component/deploy-your-project.md)
-   + Créer un composant d’image cliquable{#clickable-image-component}
-      + [1. Présentation](./forms/clickable-image-component/introduction.md)
-      + [2 - Créer un composant](./forms/clickable-image-component/create-component.md)
-      + [3 - Gérer l’événement de clic](./forms/clickable-image-component/handle-click-event.md)
+   + Création du composant d’image cliquable{#clickable-image-component}
+      + [1 - Présentation](./forms/clickable-image-component/introduction.md)
+      + [2 - Création d’un composant](./forms/clickable-image-component/create-component.md)
+      + [3 - Gestion de l’événement de clic](./forms/clickable-image-component/handle-click-event.md)
    + AEM Forms et Analytics{#forms-and-analytics}
       + [Présentation](./forms/form-data-analytics/introduction.md)
       + [Créer des éléments de données](./forms/form-data-analytics/data-elements.md)
       + [Créer des règles](./forms/form-data-analytics/rules.md)
       + [Tester la solution](./forms/form-data-analytics/test.md)
    + Utilisation des onglets verticaux{#using-vertical-tabs}
-      + [1. Introduction](./forms/using-vertical-tabs/introduction.md)
-      + [2. Créer un formulaire](./forms/using-vertical-tabs/create-af.md)
+      + [1. Présentation](./forms/using-vertical-tabs/introduction.md)
+      + [2. Création d’un formulaire](./forms/using-vertical-tabs/create-af.md)
       + [3. Navigation](./forms/using-vertical-tabs/navigation.md)
    + Génération de documents dans AEM Forms CS{#doc-gen-formscs}
       + [Présentation](./forms/doc-gen-forms-cs/introduction.md)
@@ -283,7 +283,7 @@ ht-degree: 91%
       + [Tester la solution](./forms/doc-gen-forms-cs/test.md)
       + [Difficulté](./forms/doc-gen-forms-cs/challenge.md)
    + Utilisation de l’API DocAssurance{#doc-assurance-api}
-      + [Extraits de code d’exemple](./forms/doc-assurance-api/using-doc-assurance-api.md)
+      + [Fragments de code utiles](./forms/doc-assurance-api/using-doc-assurance-api.md)
    + Génération de documents à l’aide de l’API par lot{#formscs-batch-api}
       + [Présentation](./forms/formscs-batch-api/introduction.md)
       + [Configurer le stockage Azure](./forms/formscs-batch-api/configure-azure-storage.md)
@@ -301,8 +301,8 @@ ht-degree: 91%
       + [Difficulté](./forms/forms-cs-assembler/challenge.md)
    + Intégration à Marketo{#froms-cs-with-marketo}
       + [Présentation](./forms/forms-cs-with-marketo/part1.md)
-      + [Créer une source de données](./forms/forms-cs-with-marketo/part2.md)
-      + [Créer un modèle de données de formulaire](./forms/forms-cs-with-marketo/part3.md)
+      + [Création d’une source de données](./forms/forms-cs-with-marketo/part2.md)
+      + [Création d’un modèle de données de formulaire](./forms/forms-cs-with-marketo/part3.md)
    + Stocker les envois de formulaire avec des balises d’index Blob{#store-submiited-data-with-metadata-tags}
       + [Présentation](./forms/store-submiited-data-with-metadata-tags/introduction.md)
       + [Étendre le composant de groupe de choix](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)
@@ -315,7 +315,7 @@ ht-degree: 91%
       + [Tester la solution](./forms/prefill-core-component-form/test-solution.md)
    + Stockage de portail Azure{#forms-cs-azure-portal}
       + [Présentation](./forms/forms-cs-azure-portal/introduction.md)
-      + [Créer un modèle de données de formulaire](./forms/forms-cs-azure-portal/create-fdm.md)
+      + [Création d’un modèle de données de formulaire](./forms/forms-cs-azure-portal/create-fdm.md)
       + [Stocker les données de formulaire dans le stockage Azure](./forms/forms-cs-azure-portal/create-af.md)
       + [Préremplir un formulaire](./forms/forms-cs-azure-portal/prefill-af-storage.md)
       + [Envois de requêtes](./forms/forms-cs-azure-portal/query-submitted-data.md)
@@ -336,7 +336,7 @@ ht-degree: 91%
       + [Présentation](./forms/forms-and-sign/introduction.md)
       + [Application d’API Acrobat Sign](./forms/forms-and-sign/create-sign-api-application.md)
       + [Configuration cloud d’Acrobat Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
-      + [Créer un formulaire adaptatif](./forms/forms-and-sign/create-adaptive-form.md)
+      + [Création d’un formulaire adaptatif](./forms/forms-and-sign/create-adaptive-form.md)
       + [Configurer l’outil Remplir et signer](./forms/forms-and-sign/configure-form-fill-and-sign.md)
    + Intégrer à Microsoft Power Automate{#forms-cs-and-power-automate}
       + [Configurer l’intégration](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
@@ -346,8 +346,8 @@ ht-degree: 91%
    + Intégrer à Microsoft Dynamics{#formscs-dynamics-crm}
       + [Créer une application Dynamics](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [Configurer la source de données](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
-      + [Créer un modèle de données de formulaire](./forms/formscs-dynamics-crm/create-form-data-model.md)
-      + [Créer un formulaire adaptatif](./forms/formscs-dynamics-crm/create-adaptive-form.md)
+      + [Création d’un modèle de données de formulaire](./forms/formscs-dynamics-crm/create-form-data-model.md)
+      + [Création d’un formulaire adaptatif](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Intégrer à Salesforce{#integrate-with-salesforce}
       + [Présentation](./forms/integrate-with-salesforce/introduction.md)
       + [Créer une application connectée](./forms/integrate-with-salesforce/create-connected-app.md)
@@ -430,9 +430,9 @@ ht-degree: 91%
          + [Utiliser votre propre réseau de diffusion de contenu Cloudflare](./expert-resources/cloud-5/season-3/cloud5-byo-cloudflare-cdn.md)
          + [Intégrer AEM Assets](./expert-resources/cloud-5/season-3/cloud5-integrate-assets.md)
          + [IA générative pour AEM Sites](./expert-resources/cloud-5/season-3/cloud5-generative-ai-for-aem-sites.md)
-         + [Exploration d’Universal Editor](./expert-resources/cloud-5/season-3/cloud5-exploring-universal-editor.md)
-         + [Importation de sites](./expert-resources/cloud-5/season-3/cloud5-import-sites-to-edge-delivery-services.md)
-         + [Utilisation de l’API d’administration](./expert-resources/cloud-5/season-3/cloud5-using-admin-api.md)
+         + [Exploration de l’éditeur universel](./expert-resources/cloud-5/season-3/cloud5-exploring-universal-editor.md)
+         + [Import de sites](./expert-resources/cloud-5/season-3/cloud5-import-sites-to-edge-delivery-services.md)
+         + [Utilisation de lʼAPI Admin](./expert-resources/cloud-5/season-3/cloud5-using-admin-api.md)
          + [Optimisation du score Lighthouse - Partie 1](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part1.md)
          + [Optimisation du score Lighthouse - Partie 2](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part2.md)
 

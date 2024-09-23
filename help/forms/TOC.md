@@ -11,7 +11,7 @@ index: y
 source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
 workflow-type: tm+mt
 source-wordcount: '2101'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 96%
    + [Installation de packages 32 bits sur Linux](adaptive-forms/installing-aem-form-on-linux.md)
    + [Service de préremplissage des formulaires adaptatifs](adaptive-forms/prefill-service-adaptive-forms-article-use.md)
    + [Renseigner le formulaire adaptatif à l’aide des paramètres de requête](adaptive-forms/prepopulating-adaptive-form-using-query-parameters.md)
-   + [Code QR dans AEM Forms](adaptive-forms/qr-code-aem-forms.md)
+   + [Code QR dans AEM Forms](adaptive-forms/qr-code-aem-forms.md)
    + [Envoi personnalisé dans les formulaires adaptatifs](adaptive-forms/custom-submit-aem-forms-article.md)
    + [Captcha dans les formulaires adaptifs](adaptive-forms/forms-captcha-feature-video-use.md)
    + [Fonctions personnalisées dans l’éditeur de règles](adaptive-forms/custom-functions-aem-forms.md)
@@ -107,7 +107,7 @@ ht-degree: 96%
    + [Modèle de données de formulaire avec Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Ajout dynamique d’éléments au composant Choix](adaptive-forms/choice-group-items-adding-dynamically-article.md)
 + Remplir un formulaire PDF avec ChatBot{#chatbot-and-aem-forms}
-   + [1. Présentation](chatbot-and-aem-forms/introduction.md)
+   + [1 - Présentation](chatbot-and-aem-forms/introduction.md)
    + [2. Analyse des données de ChatBot](chatbot-and-aem-forms/parse-chat-bot-data.md)
    + [3. Créer un PDF](chatbot-and-aem-forms/merge-data-with-template.md)
 + Formulaires basés sur les composants principaux{#core-component-based-forms}
@@ -118,7 +118,7 @@ ht-degree: 96%
    + [3. Assembler les ressources sélectionnées](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)
    + [4. Déployer les ressources localement](display-and-assemble-dam-folder-contents/deploy-on-your-system.md)
 + Préremplir le formulaire adaptatif à l’aide du modèle de données de formulaire{#prefill-fdm-db}
-   + [1. Présentation](prefill-fdm-db/introduction.md)
+   + [1 - Présentation](prefill-fdm-db/introduction.md)
    + [2. Créer des tables de base de données](prefill-fdm-db/create-database-tables.md)
    + [3. Configurer un modèle de données de formulaire](prefill-fdm-db/configuring-form-data-model.md)
    + [4. Paramètre de requête GET](prefill-fdm-db/get-request-parameter.md)
@@ -130,21 +130,21 @@ ht-degree: 96%
    + [Ajouter des icônes aux onglets de navigation](ui-tips-tricks/active-complete.md)
    + [Champs de saisie automatique](ui-tips-tricks/auto-complete.md)
 + Personnalisation de la boîte de réception{#inbox-customization}
-   + [1. Présentation](inbox-customization/introduction.md)
+   + [1 - Présentation](inbox-customization/introduction.md)
    + [2. Ajouter une colonne personnalisée](inbox-customization/add-married-column.md)
    + [3. Utiliser un modèle Sightly](inbox-customization/use-sightly-template.md)
 + Pièces jointes du formulaire d’e-mail{#zipping-form-attachments}
-   + [1. Présentation](zipping-form-attachments/introduction.md)
+   + [1 - Présentation](zipping-form-attachments/introduction.md)
    + [2. Pièces jointes du formulaire Zip](zipping-form-attachments/custom-process-step.md)
    + [3. Pièces jointes du formulaire d’e-mail](zipping-form-attachments/populating-list-of-documents.md)
    + [4. Tester la solution](zipping-form-attachments/test.md)
 + Préremplir le formulaire avec des données et des pièces jointes{#prefill-form-with-data-attachments}
-   + [1. Présentation](prefill-form-with-data-attachments/introduction.md)
+   + [1 - Présentation](prefill-form-with-data-attachments/introduction.md)
    + [2. Créer un envoi personnalisé](prefill-form-with-data-attachments/create-custom-submit.md)
    + [3. Créer une configuration OSGi](prefill-form-with-data-attachments/create-osgi-configuration.md)
    + [4. Créer un service de préremplissage](prefill-form-with-data-attachments/create-prefill-service.md)
 + Stocker et récupérer un formulaire adaptatif{#store-and-retrieve-af-with-2fa}
-   + [1. Présentation](store-and-retrieve-af-with-2fa/introduction.md)
+   + [1 - Présentation](store-and-retrieve-af-with-2fa/introduction.md)
    + [2. Configurer la source de données](store-and-retrieve-af-with-2fa/configure-data-source.md)
    + [3. Stocker les pièces jointes d’un formulaire](store-and-retrieve-af-with-2fa/store-form-attachments.md)
    + [4. Stocker les données d’un formulaire](store-and-retrieve-af-with-2fa/store-form-data.md)
@@ -156,7 +156,7 @@ ht-degree: 96%
    + [10. Créer le formulaire MyAccount](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
    + [11. Déployer l’exemple](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
 + Importer des données du fichier PDF{#import-data-from-pdf-form}
-   + [1. Présentation](import-data-from-pdf-form/introduction.md)
+   + [1 - Présentation](import-data-from-pdf-form/introduction.md)
    + [2. Créer un formulaire adaptatif](import-data-from-pdf-form/create-adaptive-form.md)
    + [3. Créer un service OSGi](import-data-from-pdf-form/create-osgi-service.md)
    + [4. Renseigner le formulaire adaptatif](import-data-from-pdf-form/populate-adaptive-form.md)
@@ -179,9 +179,9 @@ ht-degree: 96%
    + [Convertir un formulaire PDF en formulaire adaptatif](aem-forms-and-adobe-sign/convert-pdf-form-into-adaptive-form.md)
    + [Configurer un formulaire adaptatif converti](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Utilisation de modèles XDP avec Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
-   + [Utilisation des méthodes d’assistance Acrobat Sign](aem-forms-and-adobe-sign/send-documents-signing-using-sign-api.md)
-+ Signer plusieurs formulaires{#sign-multiple-documents}
-   + [1. Présentation](sign-multiple-documents/introduction.md)
+   + [Utilisation des méthodes d’assistance Acrobat Sign](aem-forms-and-adobe-sign/send-documents-signing-using-sign-api.md)
++ Signature de plusieurs formulaires{#sign-multiple-documents}
+   + [1 - Présentation](sign-multiple-documents/introduction.md)
    + [2. Configurer la source de données](sign-multiple-documents/configure-data-source.md)
    + [3. Créer un service OSGi](sign-multiple-documents/create-osgi-service.md)
    + [4. Créer un workflow principal](sign-multiple-documents/create-main-workflow.md)
@@ -211,7 +211,7 @@ ht-degree: 96%
    + [Éditeur de règles dans le workflow AEM](variables-aem-workflow/part5.md)
    + [Variables du workflow de journal](variables-aem-workflow/part6.md)
 + Vérifier les données de formulaire{#review-form-data}
-   + [1. Présentation](review-form-data/introduction.md)
+   + [1 - Présentation](review-form-data/introduction.md)
    + [2. Créer un composant](review-form-data/create-component.md)
    + [3. Déployer des ressources](review-form-data/deploy-on-your-system.md)
 + Stockage et récupération des données de formulaire dans la base de données MySQL{#storing-and-retrieving-form-data}
@@ -247,12 +247,12 @@ ht-degree: 96%
    + [Partie 2 - Création d’un modèle personnalisé](listing-custom-asset-types/part2.md)
 + AEM Forms avec Marketo{#aem-forms-with-marketo}
    + [Partie 1 - Introduction](aem-forms-with-marketo/part1.md)
-   + [Partie 2 - Source de données](aem-forms-with-marketo/part2.md)
-   + [Partie 3 - Modèle de données de formulaire](aem-forms-with-marketo/part3.md)
+   + [Partie 2 - Source de données](aem-forms-with-marketo/part2.md)
+   + [Partie 3 - Modèle de données de formulaire](aem-forms-with-marketo/part3.md)
    + [Partie 4 - Assemblage](aem-forms-with-marketo/part4.md)
 
 + AEM Forms avec Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
-   + [1. Présentation](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
+   + [1 - Présentation](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
    + [2. Générer des jetons](aem-forms-with-adobe-campaign/partone.md)
    + [3. Créer un profil ACS lors de l’envoi du formulaire](aem-forms-with-adobe-campaign/parttwo.md)
    + [4. Préremplir un formulaire à l’aide des informations de profil ACS](aem-forms-with-adobe-campaign/partthree.md)
@@ -264,7 +264,7 @@ ht-degree: 96%
    + [Créer un composant de workflow](welcome-kit/create-workflow-component.md)
    + [Tester la solution](welcome-kit/testing-the-solution.md)
 + API Forms découplées {#embed-form-spa}
-   + [1. Présentation](headless-forms/introduction.md)
+   + [1 - Présentation](headless-forms/introduction.md)
    + [2 - Installer les dépendances](headless-forms/install-af-react-libraries.md)
    + [3. Récupérer le formulaire](headless-forms/fetch-the-form.md)
    + [4. Sélectionner le formulaire à remplir](headless-forms/select-form-from-drop-down-list.md)
@@ -273,7 +273,7 @@ ht-degree: 96%
    + [7. Gérer l’envoi du formulaire](headless-forms/display-thank-you-message.md)
 
 + Application React avec Forms et Acrobat Sign {#react-ic-sign}
-   + [1. Présentation](react-ic-sign/introduction.md)
+   + [1 - Présentation](react-ic-sign/introduction.md)
    + [2. Générer le document](react-ic-sign/create-ic-document.md)
    + [3. Wrapper d’API Acrobat Sign](react-ic-sign/wrapper-sign-api.md)
    + [4. Générer le widget de signature](react-ic-sign/create-servlet-to-expose-endpoint.md)
@@ -287,7 +287,7 @@ ht-degree: 96%
    + [Utilisation du dossier de contrôle dans AEM Forms](document-services/watched-folders-document-services-article-use.md)
    + [Utilisation du service Barcode dans AEM Forms](document-services/barcode-service-adaptive-forms-article.md)
    + [Utilisation du service PDFG dans AEM Forms](document-services/using-pdfg-in-aem-forms.md)
-   + [Chiffrer le PDF avec mot de passe des droits](document-services/encrypt-pdf-permissions-password.md)
+   + [Chiffrement d’un PDF avec mot de passe d’autorisation](document-services/encrypt-pdf-permissions-password.md)
    + [Utilisation des services Output et Forms dans AEM Forms](document-services/output-and-forms-services-article-develop.md)
    + [Utilisation de fragments XDP dans le service de sortie](document-services/using-fragments-in-output-service.md)
    + [Script ECMA pour générer un PDF avec des fragments](document-services/using-fragments-in-output-service-watched-folder.md)
@@ -312,13 +312,13 @@ ht-degree: 96%
    + [Utiliser une signature tactile](forms-designer/scribble-signature-form.md)
    + [Utiliser une signature numérique](forms-designer/adding-dig-signature-field.md)
    + [Reader d’extension de formulaire](forms-designer/reader-extending-j2ee.md)
-+ AEM Forms Workbench{#forms-workbench}
-   + [Présentation de Workbench](aem-forms-workbench/workbench-introduction.md)
++ AEM Forms Workbench{#forms-workbench}
+   + [Présentation du Workbench](aem-forms-workbench/workbench-introduction.md)
    + [Création d’un processus de formulaire](aem-forms-workbench/workbench-creating-a-process.md)
    + [Processus de débogage](aem-forms-workbench/workbench-recording-and-testing-process.md)
 + Communications interactives pour le canal d’impression
 {#ic-print-channel-tutorial}
-   + [1. Présentation](ic-print-channel-tutorial/introduction.md)
+   + [1 - Présentation](ic-print-channel-tutorial/introduction.md)
    + [2. Configurer Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
    + [3. Créer une source de données](ic-print-channel-tutorial/create-data-source.md)
    + [4. Créer un modèle de données de formulaire](ic-print-channel-tutorial/create-form-data-model.md)
@@ -345,7 +345,7 @@ ht-degree: 96%
    + [Personnaliser l’éditeur de texte](interactive-communications/customize-text-editor.md)
 
 + Communication interactive pour canal web {#ic-web-channel-tutorial}
-   + [1. Présentation](ic-web-channel-tutorial/introduction.md)
+   + [1 - Présentation](ic-web-channel-tutorial/introduction.md)
    + [2. Configurer Tomcat](ic-web-channel-tutorial/partone.md)
    + [3. Créer une source de données](ic-web-channel-tutorial/parttwo.md)
    + [4. Créer un modèle de données de formulaire](ic-web-channel-tutorial/partthree.md)

@@ -7,7 +7,7 @@ index: y
 source-git-commit: 33415305f6aa183373eaef4bb4978a59325c8a32
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 95%
    + [Protection contre les attaques par déni de service ModSecurity CRS](./security/modsecurity-crs-dos-attack-protection.md)
    + [Connexions HTTPS aux API avec des certificats privés](./security/call-internal-apis-having-private-certificate.md)
    + [Authentification TLS mutuelle (mTLS) à partir d’AEM](./security/mutual-tls-authentication.md)
-   + [Migration des informations d’identification JWT-To-OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
+   + [Migration des informations d’identification JWT-To-OAuth](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/authentication/jwt-to-oauth-migration){target=_blank}
 + Workflow {#workflow}
    + [Utiliser l’éditeur de workflow](./workflow/use-the-workflow-editor.md)
    + [Utiliser un workflow](./workflow/use-workflow.md)

@@ -1,6 +1,6 @@
 ---
 title: Déclencher AEM processus lors de l’envoi du formulaire du PDF
-description: Continuez à remplir le formulaire mobile en mode hors ligne et soumettez-le pour déclencher le workflow AEM.
+description: Continuez à remplir le formulaire mobile en mode hors ligne et envoyez-le pour déclencher le workflow AEM.
 feature: Mobile Forms
 doc-type: article
 version: 6.4,6.5
@@ -36,4 +36,4 @@ La vidéo suivante présente une vue d’ensemble du cas d’utilisation.
 
 ## Étapes suivantes
 
-[Créer un profil personnalisé](./custom-profile.md)
+[Création d’un profil personnalisé](./custom-profile.md)
