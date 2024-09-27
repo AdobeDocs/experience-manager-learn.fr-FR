@@ -12,9 +12,9 @@ last-substantial-update: 2024-05-03T00:00:00Z
 exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
 duration: 158
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '738'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ L’accès à un environnement AEM as a Cloud Service mis à jour vers la de
 
 ## Configuration OSGi {#configure-permissionable-properties}
 
-Pour mettre en oeuvre des autorisations pilotées par les métadonnées, un développeur doit déployer une configuration OSGi sur AEM as a Cloud Service, qui active des propriétés de métadonnées de ressources spécifiques pour alimenter les autorisations pilotées par les métadonnées.
+Pour implémenter des autorisations pilotées par les métadonnées, un développeur ou une développeuse doit déployer une configuration OSGi sur AEM as a Cloud Service, qui active des propriétés de métadonnées de ressources spécifiques pour alimenter les autorisations pilotées par les métadonnées.
 
 1. Déterminez quelles propriétés de métadonnées de ressource seront utilisées pour le contrôle d’accès. Les noms des propriétés sont les noms des propriétés JCR sur la ressource `jcr:content/metadata` de la ressource. Dans notre cas, il s’agira d’une propriété appelée `status`.
-1. Créez une configuration OSGi `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` dans votre projet Maven AEM.
-1. Collez le fichier JSON suivant dans le fichier créé :
+1. Créez une configuration OSGi `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` dans votre projet AEM Maven.
+1. Collez le JSON suivant dans le fichier créé :
 
    ```json
    {
@@ -52,35 +52,35 @@ Pour mettre en oeuvre des autorisations pilotées par les métadonnées, un dév
 
 1. Remplacez les noms des propriétés par les valeurs requises.
 
-## Réinitialisation des autorisations des ressources de base
+## Réinitialiser les autorisations des ressources de base
 
 Avant d’ajouter des entrées de contrôle d’accès basées sur des restrictions, une nouvelle entrée de niveau supérieur doit être ajoutée pour refuser l’accès en lecture à tous les groupes soumis à une évaluation des autorisations pour les ressources (par exemple, « contributeurs et contributrices » ou similaire) :
 
-1. Accédez à l’écran __Outils → Sécurité → Autorisations__
-1. Sélectionnez le groupe __Contributeurs__ (ou tout autre groupe personnalisé auquel tous les groupes d’utilisateurs appartiennent)
-1. Cliquez sur __Ajouter ACE__ dans le coin supérieur droit de l’écran.
-1. Sélectionnez `/content/dam` pour __Path__
-1. Saisissez `jcr:read` pour __Privilèges__
-1. Sélectionnez `Deny` pour __Type d’autorisation__
+1. Accédez à l’écran __Outils → Sécurité → Autorisations__.
+1. Sélectionnez le groupe __Contributeurs et contributrices__ (ou tout autre groupe personnalisé auquel tous les groupes d’utilisateurs et d’utilisatrices appartiennent).
+1. Cliquez sur __Ajouter une entrée de contrôle d’accès__ dans le coin supérieur droit de l’écran.
+1. Sélectionnez `/content/dam` pour le __chemin__.
+1. Saisissez `jcr:read` pour les __privilèges__.
+1. Sélectionnez `Deny` pour le __type d’autorisation__.
 1. Sous Restrictions, sélectionnez `rep:ntNames` et saisissez `dam:Asset` comme __Valeur de restriction__.
-1. Cliquez sur __Enregistrer__
+1. Cliquez sur __Enregistrer__.
 
 ![Refuser l’accès](./assets/metadata-driven-permissions/deny-access.png)
 
 ## Accorder l’accès aux ressources par métadonnées
 
-Il est désormais possible d’ajouter des entrées de contrôle d’accès pour accorder un accès en lecture aux groupes d’utilisateurs en fonction des [ valeurs de propriété de métadonnées de ressource configurée](#configure-permissionable-properties).
+Il est désormais possible d’ajouter des entrées de contrôle d’accès afin d’accorder un accès en lecture aux groupes d’utilisateurs et d’utilisatrices en fonction des [valeurs des propriétés de métadonnées de ressource configurées](#configure-permissionable-properties).
 
-1. Accédez à l’écran __Outils → Sécurité → Autorisations__
-1. Sélectionner les groupes d’utilisateurs qui doivent avoir accès aux ressources
-1. Cliquez sur __Ajouter ACE__ dans le coin supérieur droit de l’écran.
-1. Sélectionnez `/content/dam` (ou un sous-dossier) pour __Path__
-1. Saisissez `jcr:read` pour __Privilèges__
-1. Sélectionnez `Allow` pour __Type d’autorisation__
-1. Sous __Restrictions__, sélectionnez l’un des [ noms de propriétés de métadonnées de ressource configurées dans la configuration OSGi ](#configure-permissionable-properties).
-1. Saisissez la valeur de propriété de métadonnées requise dans le champ __Restriction Value__
+1. Accédez à l’écran __Outils → Sécurité → Autorisations__.
+1. Sélectionner les groupes d’utilisateurs et d’utilisatrices qui doivent avoir accès aux ressources.
+1. Cliquez sur __Ajouter une entrée de contrôle d’accès__ dans le coin supérieur droit de l’écran.
+1. Sélectionnez `/content/dam` (ou un sous-dossier) pour le __chemin__.
+1. Saisissez `jcr:read` pour les __privilèges__.
+1. Sélectionnez `Allow` pour le __type d’autorisation__.
+1. Sous __Restrictions__, sélectionnez l’un des [noms de propriétés de métadonnées de ressource configurées dans la configuration OSGi](#configure-permissionable-properties).
+1. Saisissez la valeur de propriété de métadonnées requise dans le champ __Valeur de restriction__.
 1. Cliquez sur l’icône __+__ pour ajouter la restriction à l’entrée de contrôle d’accès.
-1. Cliquez sur __Enregistrer__
+1. Cliquez sur __Enregistrer__.
 
 ![Autorisation d’accès](./assets/metadata-driven-permissions/allow-access.png)
 
@@ -96,7 +96,7 @@ Une fois que vous avez configuré les autorisations et défini les propriétés 
 
 ## Avantages et considérations
 
-Les avantages des autorisations gérées par les métadonnées incluent :
+Les avantages des autorisations pilotées par les métadonnées sont les suivants :
 
 - Contrôle précis de l’accès aux ressources en fonction d’attributs spécifiques.
 - Découplage des politique de contrôle d’accès de la structure de dossiers, ce qui permet une organisation des ressources plus flexible.
@@ -106,10 +106,10 @@ Les avantages des autorisations gérées par les métadonnées incluent :
 >
 > Il est important de noter :
 > 
-> - Les propriétés de métadonnées sont évaluées par rapport aux restrictions à l’aide de l’ __égalité de chaîne__ (`=`) (d’autres types de données ou opérateurs ne sont pas encore pris en charge, pour les propriétés supérieures à (`>`) ou de date).
+> - Les propriétés de métadonnées sont évaluées par rapport aux restrictions à l’aide de l’__égalité de chaîne__ (`=`) (d’autres types de données ou opérateurs ne sont pas encore pris en charge, pour les propriétés supérieures à (`>`) ou de date).
 > - Pour autoriser plusieurs valeurs pour une propriété de restriction, vous pouvez ajouter des restrictions supplémentaires à l’entrée de contrôle d’accès en sélectionnant la même propriété dans la liste déroulante « Sélectionner un type » et en saisissant une nouvelle valeur de restriction (par exemple, `status=approved`, `status=wip`) et cliquez sur « + » pour ajouter la restriction à l’entrée.
 > ![Autoriser plusieurs valeurs](./assets/metadata-driven-permissions/allow-multiple-values.png)
-> - __Les restrictions AND__ sont prises en charge, par le biais de plusieurs restrictions dans une seule entrée de contrôle d’accès avec différents noms de propriété (par exemple, `status=approved`, `brand=Adobe`) seront évaluées comme condition AND, c’est-à-dire que le groupe d’utilisateurs sélectionné se verra accorder un accès en lecture aux ressources avec `status=approved AND brand=Adobe`.
+> - Les __restrictions AND__ sont prises en charge via plusieurs restrictions dans une seule entrée de contrôle d’accès avec différents noms de propriété (par exemple, `status=approved`, `brand=Adobe`) qui seront évaluées en tant que condition AND, c’est-à-dire que le groupe d’utilisateurs et d’utilisatrices sélectionné se verra accorder un accès en lecture aux ressources avec `status=approved AND brand=Adobe`.
 > ![Autoriser plusieurs restrictions](./assets/metadata-driven-permissions/allow-multiple-restrictions.png)
-> - __Les restrictions OR__ sont prises en charge en ajoutant une nouvelle entrée de contrôle d’accès avec une restriction de propriété de métadonnées qui établit une condition OR pour les entrées, par exemple une entrée unique avec restriction `status=approved` et une entrée unique avec `brand=Adobe` sera évaluée comme `status=approved OR brand=Adobe`.
+> - Les __restrictions OR__ sont prises en charges en ajoutant une nouvelle entrée de contrôle d’accès avec une restriction de propriété de métadonnées qui établit une condition OR pour les entrées, par exemple une seule entrée avec la restriction `status=approved` et une seule entrée avec `brand=Adobe` seront évaluées comme `status=approved OR brand=Adobe`.
 > ![Autoriser plusieurs restrictions](./assets/metadata-driven-permissions/allow-multiple-aces.png)

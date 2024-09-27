@@ -5,9 +5,9 @@ user-guide-description: Ensemble de vidéos et de tutoriels d’Adobe Experience
 sub-product: Experience Manager
 index: y
 source-git-commit: 33415305f6aa183373eaef4bb4978a59325c8a32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '244'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 98%
    + [Bonnes pratiques relatives aux API Java](./development/understand-java-api-best-practices.md)
    + [Comprendre l’exporteur de modèle Sling](./development/understand-sling-model-exporter.md)
    + [Comprendre les bonnes pratiques relatives aux indexations Oak](./development/understand-indexing-best-practices.md)
-   + [Installation d’artefacts tiers](./development/install-third-party-artifacts.md)
+   + [Installer des artefacts tiers](./development/install-third-party-artifacts.md)
 + Projets {#projects}
    + [Développer des projets AEM](./projects/develop-aem-projects.md)
    + [Utiliser des Project Masters](./projects/use-project-masters.md)

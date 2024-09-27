@@ -13,9 +13,9 @@ thumbnail: KT-13148.jpeg
 exl-id: b67bf642-3341-48d0-8ea9-5f262febf414
 duration: 292
 source-git-commit: c7c78ca56c1d72f13d2dc80229a10704ab0f14ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Consultez un exemple de fichier `cdn.yaml` dans le projet AEM Guides Sites WKN
 
 ### Déployer les règles via Cloud Manager {#deploy-rules-through-cloud-manager}
 
-Pour déployer les règles, procédez comme suit :
+Pour déployer les règles, procédez comme suit :
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
@@ -95,11 +95,11 @@ Pour déployer les règles, procédez comme suit :
 
 ### Tester les règles en générant du trafic
 
-Pour tester les règles, choisissez parmi les outils tiers disponibles en fonction des préférences de votre entreprise. À des fins de démonstration, nous allons utiliser les outils suivants :
+Pour tester les règles, choisissez parmi les outils tiers disponibles en fonction des préférences de votre entreprise. À des fins de démonstration, nous allons utiliser les outils suivants :
 
 - [Curl](https://curl.se/) pour les tests de base, comme appeler une URL et vérifier le code de réponse.
 
-- [Vegeta](https://github.com/tsenart/vegeta) pour effectuer un déni de service (DOS). Suivez les instructions d’installation de [Vegeta GitHub](https://github.com/tsenart/vegeta#install).
+- [Vegeta](https://github.com/tsenart/vegeta) pour effectuer un déni de service (DOS). Suivez les instructions d’installation de la section [Vegeta GitHub](https://github.com/tsenart/vegeta#install).
 
 - [Nikto](https://github.com/sullo/nikto/wiki) pour rechercher des problèmes potentiels et des vulnérabilités de sécurité telles que XSS, l’injection SQL, etc. Suivez les instructions d’installation de la section [Nikto GitHub](https://github.com/sullo/nikto).
 
@@ -119,11 +119,11 @@ Pour tester les règles, choisissez parmi les outils tiers disponibles en foncti
 
 ### Analyser les résultats à l’aide des outils du tableau de bord
 
-Après avoir créé, déployé et testé les règles, vous pouvez analyser les résultats à l’aide des **journaux CDN** et **AEMCS-CDN-Log-Analysis-Tooling**. L’outil fournit un ensemble de tableaux de bord pour visualiser les résultats de la pile Splunk et ELK (Elasticsearch, Logstash et Kibana).
+Une fois que vous avez créé, déployé et testé les règles, vous pouvez analyser les résultats à l’aide des journaux de réseau **CDN** et de **AEMCS-CDN-Log-Analysis-Tooling**. L’outil fournit un ensemble de tableaux de bord pour visualiser les résultats de la pile Splunk et ELK (Elasticsearch, Logstash et Kibana).
 
-L’outil peut être cloné à partir du référentiel GitHub [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Suivez ensuite les instructions pour installer et charger le **tableau de bord du trafic CDN** et le **tableau de bord WAF** pour votre outil d’observabilité préféré.
+L’outil peut être cloné directement à partir du référentiel GitHub [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling). Suivez ensuite les instructions pour installer et charger le **tableau de bord du trafic de réseau CDN** et le **tableau de bord WAF** pour votre outil d’observabilité préféré.
 
-Dans ce tutoriel, nous allons utiliser la pile ELK. Suivez les instructions [ELK Docker container for AEMCS CDN Log Analysis](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) pour configurer la pile ELK.
+Dans ce tutoriel, nous allons utiliser la pile ELK. Suivez les instructions [Conteneur ELK Docker pour l’analyse de journal de réseau CDN AEMCS](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling/blob/main/ELK/README.md) pour configurer la pile ELK.
 
 - Une fois que vous avez chargé l’exemple de tableau de bord, la page d’outils du tableau de bord Elastic doit se présenter comme suit :
 

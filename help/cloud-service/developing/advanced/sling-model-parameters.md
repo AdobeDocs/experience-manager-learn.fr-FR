@@ -1,6 +1,6 @@
 ---
-title: Paramétrage des modèles Sling à partir de HTL
-description: Découvrez comment transmettre des paramètres de HTL à un modèle Sling dans AEM.
+title: Paramétrage de modèles Sling à partir de HTL
+description: Découvrez comment transmettre des paramètres à partir de HTL vers un modèle Sling dans AEM.
 version: Cloud Service
 topic: Development
 feature: Sling Model
@@ -9,21 +9,21 @@ jira: KT-15923
 level: Intermediate, Experienced
 exl-id: 5d852617-720a-4a00-aecd-26d0ab77d9b3
 source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Paramétrage des modèles Sling à partir de HTL
+# Paramétrage de modèles Sling à partir de HTL
 
-Adobe Experience Manager (AEM) offre un cadre robuste pour la création d’applications web dynamiques et adaptables. L’une de ses puissantes fonctionnalités est la possibilité de paramétrer des modèles Sling, ce qui améliore leur flexibilité et leur réutilisation. Ce tutoriel vous guide tout au long de la création d’un modèle Sling paramétré et de son utilisation dans HTL (HTML Template Language) pour le rendu du contenu dynamique.
+Adobe Experience Manager (AEM) offre une infrastructure robuste pour la création d’applications web dynamiques et adaptables. L’une de ses puissantes fonctionnalités est la possibilité de paramétrer des modèles Sling, ce qui améliore leur flexibilité et leur capacité de réutilisation. Ce tutoriel vous guide tout au long de la création d’un modèle Sling paramétré et de son utilisation dans du HTL (HTML Template Language) pour effectuer du rendu de contenu dynamique.
 
 ## Script HTL
 
 Dans cet exemple, le script HTL envoie deux paramètres au modèle Sling `ParameterizedModel`. Le modèle manipule ces paramètres dans sa méthode `getValue()` et renvoie le résultat pour l’affichage.
 
-Cet exemple transmet deux paramètres de chaîne, mais vous pouvez transmettre n’importe quel type de valeur ou d’objet au modèle Sling, à condition que le type de champ [Modèle Sling, annoté avec `@RequestAttribute`](#sling-model-implementation) corresponde au type d’objet ou de valeur transmis à partir de HTL.
+Cet exemple transmet deux paramètres de chaîne, mais vous pouvez transmettre n’importe quel type de valeur ou d’objet au modèle Sling, à condition que le type de champ [Modèle Sling, annoté avec `@RequestAttribute`](#sling-model-implementation), corresponde au type d’objet ou de valeur transmis à partir du HTL.
 
 ```html
 <sly data-sly-use.myModel="${'com.example.core.models.ParameterizedModel' @ myParameterOne='Hello', myParameterTwo='World'}"
@@ -40,13 +40,13 @@ Cet exemple transmet deux paramètres de chaîne, mais vous pouvez transmettre n
 </sly>
 ```
 
-- **Parameterization:** L’instruction `data-sly-use` crée une instance de `ParameterizedModel` avec `myParameterOne` et `myParameterTwo`.
-- **Rendu conditionnel :** `data-sly-test` vérifie si le modèle est prêt avant d’afficher le contenu.
-- **Appel d’espace réservé :** `placeholderTemplate` gère les cas où le modèle n’est pas prêt.
+- **Paramétrisation :** l’instruction `data-sly-use` crée une instance de `ParameterizedModel` avec `myParameterOne` et `myParameterTwo`.
+- **Rendu conditionnel :** `data-sly-test` vérifie si le modèle est prêt avant d’afficher le contenu.
+- **Appel d’espace réservé :** `placeholderTemplate` gère les cas où le modèle n’est pas prêt.
 
-## Implémentation du modèle Sling
+## Implémentation de modèles Sling
 
-Voici comment mettre en oeuvre le modèle Sling :
+Voici comment implémenter le modèle Sling :
 
 ```java
 package com.example.core.models.impl;
@@ -87,11 +87,11 @@ public class ParameterizedModelImpl implements ParameterizedModel {
 }
 ```
 
-- **Annotation de modèle :** L’annotation `@Model` désigne cette classe en tant que modèle Sling, adaptable à partir de `SlingHttpServletRequest` et met en oeuvre l’interface `ParameterizedModel`.
-- **Attributs de requête :** L’annotation `@RequestAttribute` injecte des paramètres HTL dans le modèle.
-- **Méthodes :** `getValue()` concatène les paramètres et `isReady()` vérifie que les paramètres ne sont pas vides.
+- **Annotation de modèle :** l’annotation `@Model` désigne cette classe en tant que modèle Sling, adaptable à partir de `SlingHttpServletRequest` et implémentant l’interface `ParameterizedModel`.
+- **Attributs de requête :** l’annotation `@RequestAttribute` injecte des paramètres HTL dans le modèle.
+- **Méthodes :** `getValue()` concatène les paramètres et `isReady()` vérifie que les paramètres ne sont pas vides.
 
-L&#39;interface `ParameterizedModel` est définie comme suit :
+L’interface `ParameterizedModel` est définie comme suit :
 
 ```java
 package com.example.core.models;
@@ -118,7 +118,7 @@ public interface ParameterizedModel {
 
 ## Exemple de sortie
 
-Avec les paramètres `"Hello"` et `"World"`, le script HTL génère la sortie suivante :
+Avec les paramètres `"Hello"` et `"World"`, le script HTL génère la sortie suivante :
 
 ```html
 <p>
@@ -126,4 +126,4 @@ Avec les paramètres `"Hello"` et `"World"`, le script HTL génère la sortie su
 </p>
 ```
 
-Cela montre comment les modèles Sling paramétrés dans AEM peuvent être influencés en fonction des paramètres d’entrée fournis via HTL.
+Cela illustre comment les modèles Sling paramétrés dans AEM peuvent être affectés par des paramètres d’entrée fournis via HTL.

@@ -1,5 +1,5 @@
 ---
-title: Intégration d’AEM Forms Cloud Service et de Marketo
+title: Intégration d’AEM Forms Cloud Service et de Marketo
 description: Découvrez comment intégrer AEM Forms et Marketo à l’aide du modèle de données de formulaire AEM Forms.
 feature: Form Data Model,Integration
 version: Cloud Service
@@ -7,14 +7,14 @@ topic: Integrations, Development
 role: Developer
 level: Experienced
 badgeIntegration: label="Intégration" type="positive"
-badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 last-substantial-update: 2024-07-24T00:00:00Z
 jira: KT-15876
 exl-id: c3145149-bfa4-4dcb-acde-c359e9348f99
 source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Pour commencer, il est vivement recommandé de vous familiariser avec les rubriq
 
 ## Prérequis
 
-1. Accès à l’instance AEM Forms Cloud Service
+1. Accès à l’instance AEM Forms Cloud Service
 1. Se familiariser avec le modèle de données de formulaire
 1. Connaissances de base des fichiers Swagger
 1. Créer des formulaires adaptatifs
@@ -51,13 +51,13 @@ La première étape de l’intégration de Marketo avec AEM Forms consiste à o
 
 **Avant de commencer**
 
-* [Télécharger et décompresser les ressources liées à ce tutoriel](assets/marketo.zip)
+* [Téléchargement et décompression des ressources liées à ce tutoriel](assets/marketo.zip)
 
-Le fichier zip contient les éléments suivants :
+Le fichier .zip contient les fichiers suivants :
 
 1. marketo.json : fichier Swagger utilisé pour configurer la source de données.
-1. Veillez à modifier la propriété hôte dans le fichier marketo.json pour qu’il pointe vers votre instance de marketo.
+1. Veillez à modifier la propriété hôte dans le fichier marketo.json pour qu’il pointe vers votre instance Marketo.
 
 ## Étapes suivantes
 
-[Créer une source de données](./part2.md)
+[Création d’une source de données](./part2.md)

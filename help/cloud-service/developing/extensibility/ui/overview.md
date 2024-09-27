@@ -11,9 +11,9 @@ last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 73f5d90d-e007-41a0-9bb3-b8f36a9b1547
 duration: 50
 source-git-commit: 12d7f8f0afc1c19f289c847771cb9f4f965c650c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ Le créateur d’applications fournit une couche d’implémentation pour la cr�
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_learn_extensibility_app_builder"
->title="Prise en main d’Adobe Developer App Builder et d’AEM sans affichage"
->abstract="Découvrez comment AEM App Builder permet aux développeurs de personnaliser et d’étendre rapidement les interfaces utilisateur d’AEM avec JavaScript et React, ce qui permet une intégration transparente et un déploiement rapide."
+>title="Commencer avec Adobe Developer App Builder et AEM Headless"
+>abstract="Découvrez comment AEM App Builder permet à l’équipe de développement de personnaliser et d’étendre rapidement les interfaces d’utilisation d’AEM avec JavaScript et React, ce qui permet une intégration facile et un déploiement rapide."
 
 ## Développer une extension d’interface utilisateur AEM
 

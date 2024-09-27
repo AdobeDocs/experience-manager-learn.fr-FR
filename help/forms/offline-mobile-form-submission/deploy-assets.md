@@ -1,6 +1,6 @@
 ---
-title: Déclencher le processus AEM sur l’envoi de formulaire HTML5 - Obtention d’un cas pratique pour travailler
-description: Déployer les exemples de ressources sur votre système local
+title: 'Déclencher le workflow AEM lors de la soumission du formulaire HTML5 : application de ce cas d’utilisation'
+description: Déployer les exemples de fichiers sur votre système
 feature: Mobile Forms
 doc-type: article
 version: 6.4,6.5
@@ -12,61 +12,61 @@ exl-id: 79935ef0-bc73-4625-97dd-767d47a8b8bb
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 90
 source-git-commit: 9545fae5a5f5edd6f525729e648b2ca34ddbfd9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '457'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
-# Appliquer ce cas d’utilisation sur votre système
+# Application de ce cas d’utilisation sur votre système
 
 >[!NOTE]
 >
->Pour que les exemples de ressources fonctionnent sur votre système, on suppose que vous avez accès à une instance de création et de publication AEM Forms.
+>Pour que les exemples de ressources fonctionnent sur votre système, il est supposé que vous avez accès à une instance de création et de publication AEM Forms.
 
 Pour que ce cas d’utilisation fonctionne sur votre système local, procédez comme suit :
 
-## Déployez les éléments suivants sur votre instance d’auteur AEM Forms
+## Déployez les éléments suivants sur votre instance de création AEM Forms.
 
-* [Installation du lot MobileFormToWorkflow](assets/MobileFormToWorkflow.core-1.0.0-SNAPSHOT.jar)
+* [Installez le lot MobileFormToWorkflow.](assets/MobileFormToWorkflow.core-1.0.0-SNAPSHOT.jar)
 
-* [Importez le profil personnalisé](assets/customprofile.zip) qui fusionne les données du formulaire HTML5 avec le formulaire XDP et renvoie un pdf interactif.
+* [Importez le profil personnalisé](assets/customprofile.zip) qui fusionne les données du formulaire HTML5 avec le formulaire XDP et renvoie un PDF interactif.
 
-* [Déploiement du développement avec le lot d’utilisateurs du service](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=en)
-Ajoutez l’entrée suivante dans le service Apache Sling Service User Mapper à l’aide de configMgr
+* [Déployer le développement avec le lot d’utilisateurs et d’utilisatrices du service](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=fr)
+Ajoutez l’entrée suivante dans le mappage des utilisateurs et utilisatrices de serveur Apache Sling à l’aide du configMgr.
 
 ```
 DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 ```
 
-* Vous pouvez stocker les envois de formulaire dans un autre dossier en spécifiant le nom du dossier dans la configuration des informations d’identification AEM serveur à l’aide de [configMgr](http://localhost:4502/system/console/configMg). Si vous modifiez le dossier, veillez à créer un lanceur sur le dossier pour déclencher le workflow **ReviewSubmittedPDF**
+* Vous pouvez stocker les envois de formulaire dans un autre dossier en spécifiant le nom du dossier dans la configuration des informations d’identification de serveur AEM à l’aide de [configMgr](http://localhost:4502/system/console/configMg). Si vous modifiez le dossier, veillez à créer un lanceur sur le dossier pour déclencher le workflow **ReviewSubmittedPDF**.
 
 ![config-author](assets/author-config.png)
-* [Importez l’exemple xdp et le module de processus à l’aide du gestionnaire de modules](assets/xdp-form-and-workflow.zip).
+* [Importez l’exemple xdp et le package de workflow à l’aide du gestionnaire de packages](assets/xdp-form-and-workflow.zip).
 
 
-## Déployer les ressources suivantes sur l’instance de publication
+## Déployer les ressources suivantes sur l’instance de publication.
 
-* [Installation du lot MobileFormToWorkflow](assets/MobileFormToWorkflow.core-1.0.0-SNAPSHOT.jar)
+* [Installez le lot MobileFormToWorkflow.](assets/MobileFormToWorkflow.core-1.0.0-SNAPSHOT.jar)
 
-* Indiquez le nom d’utilisateur/mot de passe de l’instance d’auteur et un emplacement **existant dans votre référentiel AEM** pour stocker les données envoyées dans les informations d’identification AEM serveur à l’aide de [configMgr](http://localhost:4503/system/console/configMgr). Vous pouvez laisser l’URL du point de terminaison tel quel sur AEM Workflow Server. Il s’agit du point de terminaison qui extrait et stocke les données de l’envoi dans le noeud spécifié.
+* Indiquez le nom d’utilisateur ou d’utilisatrice/mot de passe de l’instance de création et un **emplacement existant dans votre référentiel AEM** pour stocker les données envoyées dans les informations d’identification de serveur AEM à l’aide de [configMgr](http://localhost:4503/system/console/configMgr). Vous pouvez laisser l’URL du point d’entrée telle quelle sur le serveur de workflow AEM. Il s’agit du point d’entrée qui extrait et stocke les données de l’envoi dans le nœud spécifié.
   ![publish-config](assets/publish-config.png)
 
-* [Déploiement du développement avec le lot d’utilisateurs du service](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=en)
+* [Déployer le lot Développer avec un utilisateur ou une utilisatrice de service](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=fr)
 * [Ouvrez la configuration OSGi](http://localhost:4503/system/console/configMgr).
 * Recherchez **Filtre référent Apache Sling**. Assurez-vous que la case Autoriser les champs vides est cochée.
-* [Importez le profil personnalisé](assets/customprofile.zip) qui fusionne les données du formulaire HTML5 avec le formulaire XDP et renvoie un pdf interactif.
+* [Importez le profil personnalisé](assets/customprofile.zip) qui fusionne les données du formulaire HTML5 avec le formulaire XDP et renvoie un PDF interactif.
 
 
 ## Tester la solution
 
-* Connexion à votre instance d’auteur
+* Connectez-vous à votre instance de création.
 * [Modifiez les propriétés avancées du w9.xdp](http://localhost:4502/libs/fd/fm/gui/content/forms/formmetadataeditor.html/content/dam/formsanddocuments/w9.xdp). Assurez-vous que l’URL d’envoi et le profil de rendu sont correctement définis comme illustré ci-dessous.
   ![xdp-advanced-properties](assets/mobile-form-properties.png)
 
-* Publish du w9.xdp
-* Connexion à l’instance de publication
-* [Aperçu du formulaire w9](http://localhost:4503/content/dam/formsanddocuments/w9.xdp/jcr:content)
+* Publiez le w9.xdp.
+* Connectez-vous à l’instance de publication.
+* [Prévisualisez le formulaire w9](http://localhost:4503/content/dam/formsanddocuments/w9.xdp/jcr:content).
 * Renseignez plusieurs champs, puis cliquez sur le bouton de la barre d’outils pour télécharger le PDF interactif.
 * Complétez le PDF téléchargé à l’aide d’Acrobat et appuyez sur le bouton Envoyer.
 * Un message indiquant la réussite de l’opération s’affiche.

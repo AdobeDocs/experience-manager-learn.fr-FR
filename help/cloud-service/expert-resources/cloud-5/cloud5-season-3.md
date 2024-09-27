@@ -7,9 +7,9 @@ recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
 source-git-commit: 285c652460ff00301d183defc56c07b3f74d8e5c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '540'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -209,13 +209,13 @@ Découvrez comment utiliser l’API Admin dans Edge Delivery Services pour gére
         </td>   
         <td>
             <a href="./season-3/cloud5-lighthouse-score-optimization-part1.md">
-                <img alt="Optimisation du score Lighthouse - Partie 1" 
+                <img alt="Optimisation du score Lighthouse - Partie 1" 
                      src="https://video.tv.adobe.com/v/3433378?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-lighthouse-score-optimization-part1.md">
-                <strong>Optimisation du score de Lighthouse - Partie 1</strong></a>
-                <br/><em> avec James Talbot et Varun Mitra, Cloud Architect</em>
+<strong>Optimisation du score Lighthouse - Partie 1</strong></a>
+<br/><em>avec James Talbot et Varun Mitra, architecte cloud</em>
             </div>
             <p>
                 <br/>
@@ -226,17 +226,17 @@ Découvrez ce qu’est un score Lighthouse et les techniques pour obtenir le mei
     <tr>
         <td>
             <a href="./season-3/cloud5-lighthouse-score-optimization-part2.md">
-                <img alt="Optimisation du score Lighthouse - Partie 2"
+                <img alt="Optimisation du score Lighthouse - Partie 2"
                      src="https://video.tv.adobe.com/v/3434042?format=jpeg"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-lighthouse-score-optimization-part2.md">
-                <strong>Optimisation du score de Lighthouse - Partie 2</strong></a>
-                <br/><em> avec James Talbot et Varun Mitra, Cloud Architect</em>
+<strong>Optimisation du score Lighthouse - Partie 2</strong></a>
+<br/><em>avec James Talbot et Varun Mitra, architecte cloud</em>
             </div>
             <p>
-                <br/>                
-                 Découvrez les techniques permettant d’améliorer le temps de blocage total.
+                <br/>
+Découvrez les techniques permettant d’améliorer le temps de blocage total.
             </p>
         </td>            
     </tr>        

@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
 source-git-commit: 4903b0742dca59e621707691f487a430b91e832b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -38,22 +38,22 @@ ht-degree: 91%
       + [Empêcher l’indexation par les moteurs de recherche](./document-authoring/how-to/no-index.md)
       + [Navigation réactive](document-authoring/how-to/responsive-navigation.md)
       + [Dynamic Media](./document-authoring/how-to/using-dynamic-media.md)
-      + [Migration du site à l’aide de l’importateur](./document-authoring/how-to/migration-using-importer.md)
+      + [Migration de site à l’aide de l’importateur](./document-authoring/how-to/migration-using-importer.md)
       + [Personnalisation de l’importateur](./document-authoring/how-to/customizing-importer.md)
-      + [Importation en bloc à l’aide de l’importateur](./document-authoring/how-to/bulk-importing-using-importer.md)
+      + [Import en masse à l’aide de l’importateur](./document-authoring/how-to/bulk-importing-using-importer.md)
       + Générer des variations{#generate-variations}
          + [Vue d’ensemble](./document-authoring/how-to/generate-variations/overview.md)
-         + [Configurer Sidekick](./document-authoring/how-to/generate-variations/configure-sidekick.md)
-         + [Demander des modèles](./document-authoring/how-to/generate-variations/prompt-templates.md)
-         + [Modèles d’invite personnalisés](./document-authoring/how-to/generate-variations/custom-prompt-templates.md)
-         + [Enregistrement de modèles d’invite personnalisés](./document-authoring/how-to/generate-variations/save-custom-prompt-template.md)
-         + [Audiences Adobe Target](./document-authoring/how-to/generate-variations/using-target-audiences.md)
+         + [Configurer le sidekick](./document-authoring/how-to/generate-variations/configure-sidekick.md)
+         + [Modèles de prompt](./document-authoring/how-to/generate-variations/prompt-templates.md)
+         + [Modèles de prompt personnalisés](./document-authoring/how-to/generate-variations/custom-prompt-templates.md)
+         + [Enregistrer les modèles de prompt personnalisés](./document-authoring/how-to/generate-variations/save-custom-prompt-template.md)
+         + [Audiences Adobe Target](./document-authoring/how-to/generate-variations/using-target-audiences.md)
          + [Audiences de fichiers CSV](./document-authoring/how-to/generate-variations/using-csv-file-audiences.md)
-         + [Adobe Firefly](./document-authoring/how-to/generate-variations/using-adobe-firefly-for-images.md)
+         + [Adobe Firefly](./document-authoring/how-to/generate-variations/using-adobe-firefly-for-images.md)
          + [Actions](./document-authoring/how-to/generate-variations/actions.md)
          + [Confiance et confidentialité](./document-authoring/how-to/generate-variations/trust-privacy.md)
-      + [Cadre d’expérience](./document-authoring/how-to/experimentation-framework.md)
-      + [Configuration du cadre d’expérimentation](./document-authoring/how-to/setup-experimentation-framework.md)
+      + [Cadre d’expérimentation](./document-authoring/how-to/experimentation-framework.md)
+      + [Configurer le cadre d’expérimentation](./document-authoring/how-to/setup-experimentation-framework.md)
       + [Métadonnées pour l’expérimentation](./document-authoring/how-to/experimentation-add-metadata.md)
 + Création de pages {#page-authoring}
    + [Création](page-authoring/aem-sites-authoring-overview.md)

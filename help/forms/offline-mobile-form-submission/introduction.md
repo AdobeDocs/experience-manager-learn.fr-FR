@@ -1,5 +1,5 @@
 ---
-title: Déclencher AEM processus lors de l’envoi du formulaire du PDF
+title: Déclencher un workflow AEM lors de l’envoi du formulaire PDF
 description: Continuez à remplir le formulaire mobile en mode hors ligne et envoyez-le pour déclencher le workflow AEM.
 feature: Mobile Forms
 doc-type: article
@@ -13,13 +13,13 @@ jira: kt-16133
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 342
 source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Téléchargement d’un formulaire mobile partiellement terminé et envoi pour déclencher un processus AEM
+# Télécharger un formulaire mobile partiellement terminé et l’envoyer pour déclencher un workflow AEM
 
 Un cas d’utilisation courant consiste à avoir la possibilité d’effectuer le rendu du fichier XDP en tant que HTML pour les activités de capture de données. Cela fonctionne bien lorsque les formulaires sont simples et peuvent être remplis et envoyés en ligne. Cependant, le formulaire peut être complexe et les utilisateurs et utilisatrices peuvent ne pas être en mesure de le remplir en ligne. Nous devons permettre aux utilisateurs et aux utilisatrices de télécharger la version interactive du formulaire à remplir en utilisant Acrobat/Reader hors ligne. Une fois le formulaire rempli, l’utilisateur ou l’utilisatrice peut se connecter pour envoyer le formulaire.
 Pour ce cas d’utilisation, procédez comme suit :

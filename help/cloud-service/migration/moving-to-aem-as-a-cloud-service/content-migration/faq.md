@@ -12,9 +12,9 @@ thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 399
 source-git-commit: e29eaefb20d466126d0d31ad8eb598b63a0cebcd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1884'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -91,11 +91,11 @@ Oui c’est possible, mais cela nécessite une bonne planification concernant :
    + Vérifiez s’il est acceptable de migrer toutes les ressources dans le cadre d’un jeu de migration, puis d’importer les sites qui les utilisent par phases.
 + Dans l’état actuel, le processus d’ingestion de l’instance de création la rend indisponible pour la création de contenu même si le niveau de publication peut toujours diffuser le contenu.
    + Cela signifie que jusqu’à ce que l’ingestion soit terminée dans la création, les activités de création de contenu sont gelées.
-+ Les utilisateurs ne sont plus migrés, bien que les groupes le soient.
++ Les personnes ne sont plus migrées, bien que les groupes le soient.
 
 Consultez le processus d’extraction et d’ingestion de complément comme documenté avant de planifier les migrations.
 
-### Q : Mes sites web seront-ils disponibles pour les utilisateurs finaux même si l’ingestion se produit dans les instances d’auteur ou de publication AEMaaCS ?
+### Q : mes sites web seront-ils disponibles pour les utilisateurs et utilisatrices finaux même si l’ingestion se produit dans les instances de création ou de publication AEMaaCS ?
 
 Oui. Le trafic des utilisateurs et utilisatrices finaux n’est pas interrompu par l’activité de migration de contenu. Cependant, l’ingestion de l’instance de création gèle la création de contenu jusqu’à ce qu’elle se termine.
 
@@ -182,7 +182,7 @@ Si le nombre de ressources/nœuds dans l’environnement source est bas (~100 K
 + Continuer à travailler sur site/l’instance de création de production AMS
 + Désormais, exécutez tous les autres tests de cycle de migration avec `wipe=true`.
    + Notez que cette opération migre l’ensemble du magasin de nœuds, mais uniquement les objets blob modifiés, et non les objets blob entiers. L’ensemble précédent d’objets blob se trouve dans le magasin Azure Blob de l’instance AEMaaCS cible.
-   + Utilisez ce BAT de migrations pour mesurer la durée de migration, les tests et la validation de toutes les autres fonctionnalités.
+   + Utilisez cette preuve de migrations pour mesurer la durée de la migration, les tests et la validation de toutes les autres fonctionnalités.
 + Enfin, avant la semaine de mise en service, effectuez une migration wipe=true.
    + Connexion de Dynamic Media à AEMaaCS
    + Déconnecter la configuration DM de la source sur site AEM

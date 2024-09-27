@@ -1,6 +1,6 @@
 ---
-title: Comment purger le cache CDN
-description: Découvrez comment purger ou supprimer la réponse HTTP mise en cache du réseau de diffusion de contenu AEM as a Cloud Service.
+title: Purge du cache du réseau CDN
+description: Découvrez comment purger ou supprimer la réponse HTTP mise en cache du réseau CDN d’AEM as a Cloud Service.
 version: Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
@@ -13,41 +13,41 @@ jira: KT-15963
 thumbnail: KT-15963.jpeg
 exl-id: 5d81f6ee-a7df-470f-84b9-12374c878a1b
 source-git-commit: 0639217a3bab7799eec3bbcc40c1a69ed1b12682
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '924'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Comment purger le cache CDN
+# Purge du cache du réseau CDN
 
-Découvrez comment purger ou supprimer la réponse HTTP mise en cache du réseau de diffusion de contenu AEM as a Cloud Service. À l’aide de la fonction en libre-service appelée **Purge du jeton API**, vous pouvez purger le cache d’une ressource spécifique, d’un groupe de ressources et de l’ensemble du cache.
+Découvrez comment purger ou supprimer la réponse HTTP mise en cache du réseau CDN d’AEM as a Cloud Service. À l’aide de la fonctionnalité en libre-service appelée **Purger le jeton API**, vous pouvez purger le cache d’une ressource spécifique, d’un groupe de ressources et de l’ensemble du cache.
 
-Dans ce tutoriel, vous apprenez à configurer et à utiliser le jeton API de purge pour purger le cache CDN de l’exemple de site [AEM WKND](https://github.com/adobe/aem-guides-wknd) à l’aide de la fonctionnalité de libre-service.
+Dans ce tutoriel, découvrez comment configurer et utiliser la fonctionnalité Purger le jeton API pour purger le cache du réseau CDN de l’exemple de site [AEM WKND](https://github.com/adobe/aem-guides-wknd) à l’aide de la fonctionnalité de libre-service.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432948?quality=12&learn=on)
 
-## Invalidation du cache par rapport à la purge explicite
+## Invalidation du cache et purge explicite
 
-Il existe deux façons de supprimer les ressources mises en cache du réseau de diffusion de contenu :
+Il existe deux façons de supprimer les ressources mises en cache du réseau CDN :
 
-1. **Invalidation du cache :** Il s’agit du processus de suppression des ressources mises en cache du CDN en fonction des en-têtes de cache tels que `Cache-Control`, `Surrogate-Control` ou `Expires`. La valeur d’attribut `max-age` de l’en-tête du cache est utilisée pour déterminer la durée de vie du cache des ressources, également appelée délai d’activation du cache. À l’expiration de la durée de vie du cache, les ressources mises en cache sont automatiquement supprimées du cache CDN.
+1. **Invalidation du cache :** il s’agit du processus de suppression des ressources mises en cache du réseau CDN en fonction des en-têtes de cache tels que `Cache-Control`, `Surrogate-Control` ou `Expires`. La valeur d’attribut `max-age` de l’en-tête du cache est utilisée pour déterminer la durée de vie du cache des ressources, également appelée TTL (délai d’expiration) du cache. À l’expiration de la durée de vie du cache, les ressources mises en cache sont automatiquement supprimées du cache du réseau CDN.
 
-1. **Purge explicite :** Il s’agit du processus de suppression manuelle des ressources mises en cache du cache CDN avant l’expiration du délai d’activation. La purge explicite est utile lorsque vous souhaitez supprimer immédiatement les ressources mises en cache. Cependant, cela augmente le trafic vers le serveur d’origine.
+1. **Purge explicite :** il s’agit du processus de suppression manuelle des ressources mises en cache du cache du réseau CDN avant l’expiration du TTL. La purge explicite est utile lorsque vous souhaitez supprimer immédiatement les ressources mises en cache. Cependant, cela augmente le trafic vers le serveur d’origine.
 
-Lorsque des ressources mises en cache sont supprimées du cache CDN, la requête suivante pour la même ressource récupère la dernière version du serveur d’origine.
+Lorsque des ressources mises en cache sont supprimées du cache du réseau CDN, la requête suivante pour la même ressource récupère la dernière version du serveur d’origine.
 
-## Configuration du jeton API de purge
+## Configurer la purge du jeton API
 
-Découvrez comment configurer le jeton API de purge pour purger le cache CDN.
+Découvrez comment configurer la purge du jeton API pour purger le cache du réseau CDN.
 
-### Configuration de la règle CDN
+### Configurer la règle du réseau CDN
 
-Le jeton API de purge est créé en configurant la règle CDN dans le code de votre projet AEM.
+Le jeton d’API de purge est créé en configurant la règle du réseau CDN dans le code de votre projet AEM.
 
-1. Ouvrez le fichier `cdn.yaml` du dossier `config` principal de votre projet AEM. Par exemple, le fichier [cdn.yaml](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml) du projet WKND.
+1. Ouvrez le fichier `cdn.yaml` dans le dossier `config` principal de votre projet AEM. Par exemple, le fichier [cdn.yaml du projet WKND](https://github.com/adobe/aem-guides-wknd/blob/main/config/cdn.yaml).
 
-1. Ajoutez la règle CDN suivante au fichier `cdn.yaml` :
+1. Ajoutez les règles de réseau CDN suivantes au fichier `cdn.yaml` :
 
 ```yaml
 kind: "CDN"
@@ -71,48 +71,48 @@ data:
 
 Dans la règle ci-dessus, `purgeKey1` et `purgeKey2` sont ajoutés depuis le début pour prendre en charge la rotation des secrets sans interruption. Cependant, vous pouvez commencer avec uniquement `purgeKey1` et ajouter `purgeKey2` ultérieurement lors de la rotation des secrets.
 
-1. Enregistrez, validez et poussez les modifications dans le référentiel Adobe en amont.
+1. Enregistrez, validez et publiez les modifications dans le référentiel Adobe en amont.
 
-### Création d’une variable d’environnement Cloud Manager
+### Créer une variable d’environnement Cloud Manager
 
-Créez ensuite les variables d’environnement Cloud Manager pour stocker la valeur Purge API Token .
+Créez ensuite les variables d’environnement Cloud Manager pour stocker la valeur Purger le jeton API.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez votre organisation et votre programme.
 
-1. Dans la section __Environments__ (Environnements), cliquez sur les **ellipses** (...) en regard de l’environnement souhaité, puis sélectionnez **Afficher les détails**.
+1. Dans la section __Environnements__, cliquez sur les **points de suspension** (…) en regard de l’environnement souhaité, puis sélectionnez **Afficher les détails**.
 
    ![Afficher les détails](../assets/how-to/view-env-details.png)
 
-1. Sélectionnez ensuite l’onglet **Configuration** et cliquez sur le bouton **Ajouter la configuration** .
+1. Sélectionnez ensuite l’onglet **Configuration** et cliquez sur le bouton **Ajouter la configuration**.
 
-1. Dans la boîte de dialogue **Configuration de l’environnement**, saisissez les détails suivants :
-   - **Name** : saisissez le nom de la variable d’environnement. Elle doit correspondre à la valeur `purgeKey1` ou `purgeKey2` du fichier `cdn.yaml`.
-   - **Valeur** : entrez la valeur du jeton API de purge.
-   - **Service appliqué** : sélectionnez l’option **Tous** .
-   - **Type** : sélectionnez l’option **Secret** .
+1. Dans la boîte de dialogue **Configuration de l’environnement**, indiquez ce qui suit :
+   - **Nom** : saisissez le nom de la variable d’environnement. Elle doit correspondre à la valeur `purgeKey1` ou `purgeKey2` du fichier `cdn.yaml`.
+   - **Valeur** : saisissez la valeur Purger le jeton API.
+   - **Service appliqué** : sélectionnez l’option **Tous**.
+   - **Type** : sélectionnez l’option **Secret**.
    - Cliquez sur le bouton **Ajouter**.
 
    ![Ajouter une variable](../assets/how-to/add-cloud-manager-secrete-variable.png)
 
 1. Répétez les étapes ci-dessus pour créer la seconde variable d’environnement pour la valeur `purgeKey2`.
 
-1. Cliquez sur **Enregistrer** pour enregistrer et appliquer les modifications.
+1. Cliquez sur **Enregistrer** pour enregistrer les modifications.
 
-### Déploiement de la règle CDN
+### Déployer la règle du réseau CDN
 
-Enfin, déployez la règle CDN configurée sur l’environnement AEM as a Cloud Service à l’aide du pipeline Cloud Manager.
+Enfin, déployez la règle du réseau CDN configurée sur l’environnement AEM as a Cloud Service à l’aide du pipeline Cloud Manager.
 
-1. Dans Cloud Manager, accédez à la section **Pipelines** .
+1. Dans Cloud Manager, accédez à la section **Pipelines**.
 
-1. Créez un nouveau pipeline ou sélectionnez le pipeline existant qui déploie uniquement les fichiers **Config**. Pour obtenir des instructions détaillées, voir [Création d’un pipeline de configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
+1. Créez un pipeline ou sélectionnez le pipeline existant qui déploie uniquement les fichiers **Config**. Pour obtenir des instructions détaillées, voir [Créer un pipeline de configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager).
 
 1. Cliquez sur le bouton **Exécuter** pour déployer la règle CDN.
 
    ![Exécuter le pipeline](../assets/how-to/run-config-pipeline.png)
 
-## Utilisation du jeton API de purge
+## Utiliser le jeton API de purge
 
-Pour purger le cache CDN, appelez l’URL de domaine spécifique au service AEM avec le jeton API de purge. La syntaxe pour purger le cache est la suivante :
+Pour purger le cache CDN, appelez l’URL de domaine spécifique au service AEM avec le jeton API de purge. La syntaxe pour purger le cache se présente comme suit :
 
 ```
 PURGE <URL> HTTP/1.1
@@ -124,10 +124,10 @@ Surrogate-Key: <SURROGATE_KEY>
 
 Où :
 
-- **PURGE`<URL>`** : la méthode `PURGE` est suivie du chemin URL de la ressource que vous souhaitez purger.
-- **Hôte :`<AEM_SERVICE_SPECIFIC_DOMAIN>`** : il spécifie le domaine du service AEM.
-- **X-AEM-Purge-Key :`<PURGE_API_TOKEN>`** : un en-tête personnalisé qui contient la valeur du jeton API de purge.
-- **X-AEM-Purge :`<PURGE_TYPE>`** : un en-tête personnalisé qui spécifie le type d’opération de purge. La valeur peut être `hard`, `soft` ou `all`. Le tableau suivant décrit chaque type de purge :
+- **PURGE`<URL>`** : la méthode `PURGE` est suivie du chemin URL de la ressource que vous souhaitez purger.
+- **Host:`<AEM_SERVICE_SPECIFIC_DOMAIN>`** : il spécifie le domaine du service AEM.
+- **X-AEM-Purge-Key:`<PURGE_API_TOKEN>`** : un en-tête personnalisé qui contient la valeur du jeton API de purge.
+- **X-AEM-Purge:`<PURGE_TYPE>`** : un en-tête personnalisé qui spécifie le type d’opération de purge. La valeur peut être `hard`, `soft` ou `all`. Le tableau suivant décrit chaque type de purge :
 
   | Type de purge | Description |
   |:------------:|:-------------:|
@@ -135,15 +135,15 @@ Où :
   | soft | Marque la ressource mise en cache comme obsolète et récupère la dernière version du serveur d’origine. |
   | tout | Supprime toutes les ressources mises en cache du cache CDN. |
 
-- **Surrogate-Key :`<SURROGATE_KEY>`** : (facultatif) en-tête personnalisé qui spécifie les clés de substitution (séparées par un espace) des groupes de ressources à purger. La clé de substitution est utilisée pour regrouper les ressources et doit être définie dans l’en-tête de réponse de la ressource.
+- **Surrogate-Key:`<SURROGATE_KEY>`** : (facultatif) en-tête personnalisé qui spécifie les clés de substitution (séparées par un espace) des groupes de ressources à purger. La clé de substitution est utilisée pour regrouper les ressources et doit être définie dans l’en-tête de réponse de la ressource.
 
 >[!TIP]
 >
->Dans les exemples ci-dessous, le `X-AEM-Purge: hard` est utilisé à des fins de démonstration. Vous pouvez le remplacer par `soft` ou `all` en fonction de vos besoins. Soyez prudent lorsque vous utilisez le type de purge `hard`, car cela augmente le trafic vers le serveur d’origine.
+>Dans les exemples ci-dessous, `X-AEM-Purge: hard` est utilisé à des fins de démonstration. Vous pouvez le remplacer par `soft` ou `all` en fonction de vos besoins. Faites preuve de prudence lorsque vous utilisez le type de purge `hard`, car cela augmente le trafic vers le serveur d’origine.
 
-### Purge du cache d’une ressource spécifique
+### Purger le cache d’une ressource spécifique
 
-Dans cet exemple, la commande `curl` purge le cache de la ressource `/us/en.html` sur le site WKND déployé dans un environnement AEM as a Cloud Service.
+Dans cet exemple, la commande `curl` purge le cache de la ressource `/us/en.html` sur le site WKND déployé dans un environnement AEM as a Cloud Service.
 
 ```bash
 curl -X PURGE "https://publish-p46652-e1315806.adobeaemcloud.com/us/en.html" \
@@ -157,9 +157,9 @@ Une fois la purge terminée, une réponse `200 OK` est renvoyée avec du contenu
 { "status": "ok", "id": "1000098-1722961031-13237063" }
 ```
 
-### Purge du cache d’un groupe de ressources
+### Purger le cache d’un groupe de ressources
 
-Dans cet exemple, la commande `curl` purge le cache du groupe de ressources avec la clé de substitution `wknd-assets`. L’en-tête de réponse `Surrogate-Key` est défini dans [`wknd.vhost`](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L176), par exemple :
+Dans cet exemple, la commande `curl` purge le cache du groupe de ressources avec la clé de substitution `wknd-assets`. L’en-tête de réponse `Surrogate-Key` est défini dans [`wknd.vhost`](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L176), par exemple :
 
 ```http
 <VirtualHost *:80>
@@ -190,9 +190,9 @@ Une fois la purge terminée, une réponse `200 OK` est renvoyée avec du contenu
 { "wknd-assets": "10027-1723478994-2597809-1" }
 ```
 
-### Purge de l’intégralité du cache
+### Purger l’intégralité du cache
 
-Dans cet exemple, à l’aide de la commande `curl`, l’intégralité du cache est purgée de l’exemple de site WKND déployé sur l’environnement AEM as a Cloud Service.
+Dans cet exemple, à l’aide de la commande `curl`, l’intégralité du cache est purgée de l’exemple de site WKND déployé sur l’environnement AEM as a Cloud Service.
 
 ```bash
 curl -X PURGE "https://publish-p46652-e1315806.adobeaemcloud.com/" \
@@ -206,7 +206,7 @@ Une fois la purge terminée, une réponse `200 OK` est renvoyée avec du contenu
 {"status":"ok"}
 ```
 
-### Vérification de la purge du cache
+### Vérifier la purge du cache
 
 Pour vérifier la purge du cache, accédez à l’URL de la ressource dans le navigateur web et passez en revue les en-têtes de réponse. La valeur de l’en-tête `X-Cache` doit être `MISS`.
 
