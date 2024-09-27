@@ -9,7 +9,7 @@ team: TM
 source-git-commit: acecb13a5b7f3c75bc6cd8eb36d398f8cebfe0a6
 workflow-type: tm+mt
 source-wordcount: '1303'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -264,7 +264,7 @@ ht-degree: 99%
       + [4 - Déploiement du composant](./forms/create-address-block-component/deploy-your-project.md)
    + Création du composant d’image cliquable{#clickable-image-component}
       + [1 - Présentation](./forms/clickable-image-component/introduction.md)
-      + [2 - Création d’un composant](./forms/clickable-image-component/create-component.md)
+      + [2 - Créer un composant](./forms/clickable-image-component/create-component.md)
       + [3 - Gestion de l’événement de clic](./forms/clickable-image-component/handle-click-event.md)
    + AEM Forms et Analytics{#forms-and-analytics}
       + [Présentation](./forms/form-data-analytics/introduction.md)
@@ -337,7 +337,7 @@ ht-degree: 99%
       + [Présentation](./forms/forms-and-sign/introduction.md)
       + [Application d’API Acrobat Sign](./forms/forms-and-sign/create-sign-api-application.md)
       + [Configuration cloud d’Acrobat Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
-      + [Création d’un formulaire adaptatif](./forms/forms-and-sign/create-adaptive-form.md)
+      + [Créer un formulaire adaptatif](./forms/forms-and-sign/create-adaptive-form.md)
       + [Configurer l’outil Remplir et signer](./forms/forms-and-sign/configure-form-fill-and-sign.md)
    + Intégrer à Microsoft Power Automate{#forms-cs-and-power-automate}
       + [Configurer l’intégration](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
@@ -348,7 +348,7 @@ ht-degree: 99%
       + [Créer une application Dynamics](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [Configurer la source de données](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
       + [Création d’un modèle de données de formulaire](./forms/formscs-dynamics-crm/create-form-data-model.md)
-      + [Création d’un formulaire adaptatif](./forms/formscs-dynamics-crm/create-adaptive-form.md)
+      + [Créer un formulaire adaptatif](./forms/formscs-dynamics-crm/create-adaptive-form.md)
    + Intégrer à Salesforce{#integrate-with-salesforce}
       + [Présentation](./forms/integrate-with-salesforce/introduction.md)
       + [Créer une application connectée](./forms/integrate-with-salesforce/create-connected-app.md)
@@ -434,6 +434,6 @@ ht-degree: 99%
          + [Exploration de l’éditeur universel](./expert-resources/cloud-5/season-3/cloud5-exploring-universal-editor.md)
          + [Import de sites](./expert-resources/cloud-5/season-3/cloud5-import-sites-to-edge-delivery-services.md)
          + [Utilisation de lʼAPI Admin](./expert-resources/cloud-5/season-3/cloud5-using-admin-api.md)
-         + [Optimisation du score Lighthouse - Partie 1](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part1.md)
-         + [Optimisation du score Lighthouse - Partie 2](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part2.md)
+         + [Optimisation du score Lighthouse - Partie 1](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part1.md)
+         + [Optimisation du score Lighthouse - Partie 2](./expert-resources/cloud-5/season-3/cloud5-lighthouse-score-optimization-part2.md)
 
