@@ -6,10 +6,10 @@ solution: Experience Manager as a Cloud Service, Experience Manager
 recommendations: noDisplay, noCatalog
 exl-id: 3bd7b9f5-5775-4572-8b4a-4d09619e20b9
 duration: 74
-source-git-commit: 285c652460ff00301d183defc56c07b3f74d8e5c
-workflow-type: ht
-source-wordcount: '540'
-ht-degree: 100%
+source-git-commit: 4806312931038cc31e6bcf67f242483f62723387
+workflow-type: tm+mt
+source-wordcount: '566'
+ht-degree: 98%
 
 ---
 
@@ -237,6 +237,21 @@ Découvrez ce qu’est un score Lighthouse et les techniques pour obtenir le mei
             <p>
                 <br/>
 Découvrez les techniques permettant d’améliorer le temps de blocage total.
+            </p>
+        </td>            
+        <td>
+            <a href="./season-3/cloud5-lighthouse-score-optimization-part3.md">
+                <img alt="Optimisation du score Lighthouse - Partie 3"
+                     src="https://video.tv.adobe.com/v/3435001?format=jpeg"/>
+            </a>
+            <div>
+                <a href="./season-3/cloud5-lighthouse-score-optimization-part3.md">
+<strong>Optimisation du score Lighthouse - Partie 3</strong></a>
+<br/><em>avec James Talbot et Varun Mitra, architecte cloud</em>
+            </div>
+            <p>
+                <br/>                
+                 Découvrez les techniques d’amélioration de la plus grande peinture contentful (LCP).
             </p>
         </td>            
     </tr>        
