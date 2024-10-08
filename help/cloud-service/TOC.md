@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 4806312931038cc31e6bcf67f242483f62723387
+source-git-commit: 8d9e6bc44164ff3acfa2c7eadffc60bbc5e8306e
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1297'
 ht-degree: 99%
 
 ---
@@ -190,7 +190,6 @@ ht-degree: 99%
       + [Journalisation – Charger des événements AEM](./eventing/examples/journaling.md)
       + [Action Adobe I/O Runtime - réception d’événements AEM](./eventing/examples/runtime-action.md)
       + [Action Adobe I/O Runtime - traitement des événements AEM](./eventing/examples/event-processing-using-runtime-action.md)
-      + [Événements AEM Assets - intégration PIM](./eventing/examples/assets-pim-integration.md)
 + Migration {#migration}
    + [Outil de transfert de contenu](./migration/content-transfer-tool.md)
    + [Importation en bloc de ressources](./migration/bulk-import.md)
