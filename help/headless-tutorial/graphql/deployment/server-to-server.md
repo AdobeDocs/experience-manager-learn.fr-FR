@@ -10,10 +10,10 @@ jira: KT-10798
 thumbnail: kt-10798.jpg
 exl-id: d4ae08d9-dc43-4414-ab75-26853186a301
 duration: 48
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: b607ea10e0eed73b70751b1dd76266a4812d5280
+workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -27,7 +27,7 @@ Les déploiements serveur à serveur nécessitent une configuration minimale, ca
 
 La configuration de déploiement suivante doit être en place pour les déploiements d’applications serveur à serveur.
 
-| L’application serveur à serveur se connecte aux éléments suivants : | Création AEM | Publication AEM | Prévisualisation AEM |
+| L’application serveur à serveur se connecte à → | Création AEM | Publication AEM | Prévisualisation AEM |
 |---------------------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtres Dispatcher.](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Partage de ressources entre origines multiples (CORS) | ✘ | ✘ | ✘ |

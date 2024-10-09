@@ -10,10 +10,10 @@ jira: KT-10796
 thumbnail: KT-10796.jpg
 exl-id: 1f536079-b3ce-4807-be88-804378e75d37
 duration: 31
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 23ea95cfdf7e4c9fde4b53e9f68079b4d267ca20
+workflow-type: tm+mt
 source-wordcount: '161'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Les déploiements mobiles nécessitent une configuration minimale, car les conne
 
 La configuration de déploiement suivante doit être mise en place pour les déploiements d’applications mobiles.
 
-| L’application mobile se connecte à | l’instance de création AEM, | Publication AEM | Prévisualisation AEM |
+| L’application mobile se connecte à → | Création AEM | Publication AEM | Prévisualisation AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtres Dispatcher.](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Partage de ressources entre origines multiples (CORS) | ✘ | ✘ | ✘ |
