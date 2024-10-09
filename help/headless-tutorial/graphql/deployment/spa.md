@@ -11,10 +11,10 @@ thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: f1b13bba9e83ac1d25f2af23ff2673554726eb19
+workflow-type: tm+mt
 source-wordcount: '655'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ Vous pouvez décider de la façon dont le trafic SPA et AEM est acheminé sur le
 
 Vous trouverez ci-dessous les configurations de déploiement requises pour le déploiement de la SPA dans l’instance de production, lorsqu’elles sont hébergées sur le même domaine qu’AEM.
 
-| La SPA se connecte à | l’instance de création AEM, | Publication AEM | Prévisualisation AEM |
+| SPA se connecte à → | Création AEM | Publication AEM | Prévisualisation AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtres Dispatcher.](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Partage de ressources entre origines multiples (CORS) | ✘ | ✘ | ✘ |
@@ -70,7 +70,7 @@ Comme l’accès à AEM et à la SPA est réalisé via des domaines différents,
 
 Vous trouverez ci-dessous les configurations de déploiement requises pour le déploiement de la SPA dans l’instance de production, lorsqu’elles sont hébergées sur un domaine autre qu’AEM.
 
-| La SPA se connecte à | l’instance de création AEM, | Publication AEM | Prévisualisation AEM |
+| SPA se connecte à → | Création AEM | Publication AEM | Prévisualisation AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtres Dispatcher.](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | [Partage de ressources entre origines multiples (CORS).](./configurations/cors.md) | ✔ | ✔ | ✔ |
