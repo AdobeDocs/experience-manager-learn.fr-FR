@@ -12,9 +12,9 @@ doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
 duration: 4537
 source-git-commit: d731a7131b997fa272013e8d62aa2251e25c08e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2423'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -181,7 +181,7 @@ L’**[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** est l’un des IDE le
 * **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** : outil de type FTP pour le contenu JCR.
 * **[aemfed](https://aemfed.io)** : accélérer votre workflow front-end AEM.
 * **[Synchroniser AEM](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** : l’extension &#42; prise en charge par la communauté pour Visual Studio Code.
-* **[Projet WKND](https://github.com/adobe/aem-guides-wknd)** - Exemple AEM projet présenté dans cette vidéo.
+* **[Projet WKND](https://github.com/adobe/aem-guides-wknd)** - Exemple de projet AEM présenté dans cette vidéo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)
 
