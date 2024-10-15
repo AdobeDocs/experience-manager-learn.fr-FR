@@ -12,10 +12,10 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: 8d9e6bc44164ff3acfa2c7eadffc60bbc5e8306e
-workflow-type: ht
-source-wordcount: '883'
-ht-degree: 100%
+source-git-commit: ede52c6c9feb0b35bc3729e28591cb4e7c7600f7
+workflow-type: tm+mt
+source-wordcount: '833'
+ht-degree: 96%
 
 ---
 
@@ -67,13 +67,12 @@ AEM Eventing offre de nombreux avantages en termes d’architecture système et
 AEM Eventing, bien que puissant, présente certaines limites à prendre en compte :
 
 - **Disponibilité limitée à AEM as a Cloud Service** : actuellement, AEM Eventing est exclusivement disponible pour AEM as a Cloud Service.
-- **Prise en charge limitée des événements** : à ce jour, seuls les événements de fragment de contenu AEM sont pris en charge. Toutefois, la gamme devrait s’élargir avec l’ajout d’événements supplémentaires dans le futur.
+
+- **Types d’événements disponibles** : consultez la liste actuelle des types d’événements disponibles [ici](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#available-event-types).
 
 ## Activation
 
-L’activation AEM Eventing s’effectue pour chaque environnement AEM as a Cloud Service et est disponible uniquement pour les environnements en mode de version préliminaire. Pour activer votre environnement AEM avec AEM Eventing, contactez l’<a href="mailto:grp-aem-events@adobe.com">équipe AEM Eventing</a> .
-
-S’il est déjà activé, consultez [Activer les événements AEM dans votre environnement AEM Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) pour les étapes suivantes.
+Voir [Activation des événements AEM dans votre environnement AEM Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) pour connaître les étapes suivantes.
 
 ## Abonnement
 
