@@ -14,15 +14,15 @@ badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before
 exl-id: 18a22f54-da58-4326-a7b0-3b1ac40ea0b5
 duration: 266
 source-git-commit: c638c1e012952f2f43806a325d729cde088ab9f5
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1015'
+ht-degree: 100%
 
 ---
 
 # Générer des FPID Experience Platform avec AEM Sites
 
-L’intégration de Adobe Experience Manager (AEM) Sites livrés via AEM Publish, avec Adobe Experience Platform (AEP) nécessite d’avoir des  pour générer et gérer un cookie FPID (identifiant d’appareil propriétaire unique), afin de suivre de manière unique l’activité des utilisateurs.
+Pour intégrer Adobe Experience Manager (AEM) Sites délivré via la publication AEM à Adobe Experience Platform (AEP), AEM doit générer et gérer un cookie FPID unique (identifiant d’appareil propriétaire) afin de suivre de manière unique l’activité des utilisateurs et utilisatrices.
 
 Lisez la documentation de support pour [découvrir les détails du fonctionnement conjoint des identifiants d’appareil propriétaire et des identifiants Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=fr).
 
@@ -53,9 +53,9 @@ Le diagramme suivant décrit la manière dont le service de publication AEM gèr
 
 Le code et la configuration suivants peuvent être déployés vers le service de publication AEM pour créer un point d’entrée qui génère ou prolonge la durée de vie d’un cookie FPID existant et renvoie le FPID au format JSON.
 
-### AEM servlet de cookie FPID Publish
+### Servlet de cookie FPID de la publication AEM
 
-Un point d’entrée HTTP Publish doit être créé pour générer ou étendre un cookie FPID à l’aide d’une [servlet Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html#registering-a-servlet-using-java-annotations-1).
+Un point d’entrée HTTP de publication AEM doit être créé pour générer ou prolonger un cookie FPID à l’aide d’un [servlet Sling](https://sling.apache.org/documentation/the-sling-engine/servlets.html#registering-a-servlet-using-java-annotations-1).
 
 + Le servlet est lié à `/bin/aem/fpid`, car l’authentification n’est pas requise pour y accéder. Si une authentification est requise, liez-vous à un type de ressource Sling.
 + Le servlet accepte les requêtes GET HTTP. La réponse est marquée par `Cache-Control: no-store` pour empêcher la mise en cache, mais ce point d’entrée doit également être demandé en utilisant des paramètres uniques de requête de contournement de la mémoire cache.
@@ -67,9 +67,9 @@ Lorsqu’une requête HTTP atteint le servlet, ce dernier vérifie si un cookie 
 
 Le servlet écrit ensuite le FPID à la réponse en tant qu’objet JSON dans le formulaire : `{ fpid: "<FPID VALUE>" }`.
 
-Il est important de fournir le FPID au client dans le corps puisque le cookie FPID est marqué `HttpOnly`, ce qui signifie que seul le serveur peut lire sa valeur et JavaScript côté client ne peut pas le faire. Pour éviter de récupérer inutilement le FPID à chaque chargement de page, un cookie `FPID_CLIENT` est également défini, indiquant que le FPID a été généré et exposant la valeur au JavaScript côté client en vue de son utilisation.
+Il est important de fournir le FPID au client ou à la cliente dans le corps puisque le cookie FPID est marqué `HttpOnly`, ce qui signifie que seul le serveur peut lire sa valeur et que JavaScript côté client ne peut pas le faire. Pour éviter de récupérer inutilement le FPID à chaque chargement de page, un cookie `FPID_CLIENT` est également défini, indiquant que le FPID a été généré et exposant la valeur à JavaScript côté client en vue de son utilisation.
 
-La valeur FPID est utilisée pour paramétrer les appels à l’aide du SDK Web Platform.
+La valeur FPID est utilisée pour paramétrer les appels à l’aide du SDK web Platform.
 
 Vous trouverez ci-dessous un exemple de code d’un point d’entrée de servlet AEM (disponible via `HTTP GET /bin/aep/fpid`) qui génère ou actualise un cookie FPID et renvoie le FPID au format JSON.
 
@@ -159,7 +159,7 @@ public class FpidServlet extends SlingAllMethodsServlet {
 
 Un script JavaScript personnalisé côté client doit être ajouté à la page pour appeler de manière asynchrone le servlet, générer ou actualiser le cookie FPID et renvoyer le FPID dans la réponse.
 
-Ce script JavaScript est généralement ajouté à la page à l’aide de l’une des méthodes suivantes :
+Ce script JavaScript est généralement ajouté à la page à l’aide de l’une des méthodes suivantes :
 
 + [Balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)
 + [Bibliothèque cliente AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/clientlibs.html?lang=fr)

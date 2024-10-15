@@ -11,9 +11,9 @@ thumbnail: KT-10796.jpg
 exl-id: 1f536079-b3ce-4807-be88-804378e75d37
 duration: 31
 source-git-commit: 23ea95cfdf7e4c9fde4b53e9f68079b4d267ca20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '161'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
