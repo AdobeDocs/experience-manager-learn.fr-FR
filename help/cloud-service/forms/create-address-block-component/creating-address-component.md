@@ -9,10 +9,10 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: 280c9a30-e017-4bc0-9027-096aac82c22c
-source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
-workflow-type: ht
-source-wordcount: '297'
-ht-degree: 100%
+source-git-commit: ed64dd303a384d48f76c9b8e8e925f5d3b8f3247
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Sélectionnez le nœud ``zip`` et définissez ses propriétés comme illustré c
 Sélectionnez le nœud ``state`` et définissez ses propriétés comme illustré ci-dessous. Remarquez le fieldType du champ state : il est défini comme une liste déroulante.
 ![state](assets/state.png)
 
-## Définition des valeurs par défaut du champ state
+## Définition des options du champ d’état
 
 Sélectionnez le nœud ``state`` et ajoutez les propriétés suivantes.
 
