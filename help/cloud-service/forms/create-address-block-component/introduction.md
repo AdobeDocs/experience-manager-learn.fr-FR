@@ -1,6 +1,6 @@
 ---
 title: Création d’un composant d’adresse
-description: Création d’un composant principal d’adresse dans AEM Forms Cloud Service
+description: Création d’un composant principal d’adresse dans AEM Forms as a Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,10 +10,10 @@ topic: Development
 jira: KT-15752
 exl-id: 21b6640e-5cfa-4902-9660-a2b1c91b285d
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
-source-git-commit: ed64dd303a384d48f76c9b8e8e925f5d3b8f3247
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 97%
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,7 @@ Dans ce tutoriel, nous allons créer un composant de bloc d’adresse. Le compos
 
 ## Conditions préalables
 
-* Accès à l’instance AEM Forms Cloud Service
+* Accès à l’instance as a Cloud Service AEM Forms
 * Expérience dans le développement de formulaires à l’aide du module AEM Forms
 * Expérience dans la configuration de l’environnement de développement pour AEM/AEM Forms(Git, IntelliJ, etc.)
 

@@ -1,6 +1,6 @@
 ---
 title: Création d’un composant d’adresse
-description: Création d’un composant principal d’adresse dans AEM Forms Cloud Service
+description: Création d’un composant principal d’adresse dans AEM Forms as a Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -9,16 +9,16 @@ feature: Adaptive Forms
 topic: Development
 jira: KT-15752
 exl-id: be25be52-2914-4820-9356-678a326f8edc
-source-git-commit: a12b1778413079646814cb25567abfc26a429340
-workflow-type: ht
-source-wordcount: '196'
-ht-degree: 100%
+source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 78%
 
 ---
 
 # Déployer votre projet
 
-Avant de commencer à déployer le projet sur votre service cloud AEM Forms, il est recommandé de le déployer sur votre instance AEM Forms locale prête pour le cloud.
+Avant de commencer à déployer le projet sur votre as a Cloud Service AEM Forms, il est recommandé de déployer le projet sur votre instance AEM Forms prête pour le cloud local.
 
 ## Synchroniser les modifications avec votre projet AEM
 
