@@ -1,5 +1,5 @@
 ---
-title: Utilisation du système de style dans AEM Forms
+title: Utilisation du système de style dans AEM Forms
 description: Création du projet de thème
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -11,37 +11,37 @@ feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
 source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# Tester les modifications
+# Test des modifications
 
-Créez un formulaire adaptatif basé sur le modèle **&quot;Vierge avec composants principaux&quot;** . Faites glisser et déposez 3 boutons sur le formulaire et étiquetez-les &quot;Entreprise&quot;, &quot;Marketing&quot; et &quot;Par défaut&quot;.
-Attribuez les variantes de style appropriées aux boutons d’entreprise et de marketing en sélectionnant le pinceau comme indiqué.
+Créez un formulaire adaptatif basé sur le modèle **« Vierge avec composants principaux »**. Faites glisser et déposez 3 boutons sur le formulaire et étiquetez-les « Corporate », « Marketing » et « Default».
+Attribuez les variantes de style appropriées aux boutons Entreprise et Marketing en sélectionnant le pinceau comme indiqué.
 
 ![styles](assets/marketing-variation.png)
 
 ## Création du projet de thème
 
-L’étape suivante consiste à créer le projet de thème. Accédez au dossier racine de votre projet de thème et exécutez la commande _**npm run build**_ comme illustré dans la capture d’écran ci-dessous.
+L’étape suivante consiste à créer le projet de thème. Accédez au dossier racine de votre projet de thème et exécutez la commande _**npm run build**_ comme illustré dans la copie d’écran ci-dessous.
 
 ![build-theme](assets/build-theme.png)
 
-Une fois le projet de thème créé, vous êtes prêt à tester les modifications.
+Une fois le projet de thème créé, vous pouvez tester les modifications.
 
-## Méthode simple et rapide de test de votre CSS
+## Méthode simple et rapide pour tester votre CSS
 
-* Ouvrez le fichier theme.css situé sous le dossier dist de votre projet de thème. Sélectionnez et copiez le contenu complet du fichier.
+* Ouvrez le fichier theme.css situé sous le dossier dist de votre projet de thème. Sélectionnez et copiez l’intégralité du contenu du fichier.
 * Prévisualisez le formulaire créé à l’étape précédente.
-* Cliquez avec le bouton droit de la souris sur l’un des boutons et sélectionnez Inspect pour ouvrir la console de développement.
-* Dans la console de développement, cliquez sur theme.css pour ouvrir le theme.css.
-* Sélectionnez et supprimez l’intégralité du contenu de theme.css à l’aide du CTR-A et appuyez sur le bouton de suppression.
+* Cliquez avec le bouton droit de la souris sur l’un des boutons et sélectionnez Inspecter pour ouvrir la Developer Console.
+* Dans la Developer Console, cliquez sur theme.css pour ouvrir theme.css.
+* Sélectionnez et supprimez l’intégralité du contenu de theme.css à l’aide de CTR+A et appuyez sur le bouton Supprimer.
 * Copiez et collez le contenu de theme.css que vous avez créé à l’étape précédente.
 * Les boutons doivent être mis à jour avec les styles appropriés, comme illustré ci-dessous.
 
-![final-button](assets/final-state-buttons.png)
+![final-buttons](assets/final-state-buttons.png)
 

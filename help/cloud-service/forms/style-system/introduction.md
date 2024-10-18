@@ -1,6 +1,6 @@
 ---
-title: Utilisation du système de style dans AEM Forms
-description: Création de variations de style pour le composant Bouton
+title: Utilisation du système de style dans AEM Forms
+description: Création de variations de style pour le composant de bouton
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -11,33 +11,33 @@ feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
 source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '231'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
 # Présentation
 
-Le système de style de Adobe Experience Manager (AEM) permet aux utilisateurs de créer plusieurs variantes visuelles d’un composant, puis de sélectionner le style à utiliser lors de la création d’un formulaire. Cela rend les composants plus flexibles et réutilisables, sans avoir à créer des composants personnalisés pour chaque style.
+Le système de style d’Adobe Experience Manager (AEM) permet aux utilisateurs et utilisatrices de créer plusieurs variations visuelles d’un composant, puis de sélectionner le style à utiliser lors de la création d’un formulaire. Cela rend les composants plus flexibles et réutilisables, sans avoir à créer des composants personnalisés pour chaque style.
 
-Cet article vous aidera à créer des variantes du composant de bouton et à tester les variations dans votre environnement cloud local avant d’envoyer les modifications à l’instance cloud à l’aide de cloud manager.
+Cet article vous aidera à créer des variations du composant de bouton et à tester les variations dans votre environnement compatible avec le cloud local avant d’envoyer les modifications à l’instance cloud à l’aide de Cloud Manager.
 
-La capture d’écran affiche les 2 variantes de style du composant de bouton disponibles pour l’auteur du formulaire.
+La capture d’écran affiche les 2 variations de style du composant de bouton disponibles pour l’auteur ou l’autrice du formulaire.
 
 
 ![button-variations](assets/button-variations.png)
 
 ## Conditions préalables
 
-* Instance AEM Forms prête pour le cloud avec les composants principaux.
-* Clonage d’un thème : vous devez vous familiariser avec le clonage d’un thème. Pour les besoins de ce tutoriel, nous avons cloné le thème [easel theme](https://github.com/adobe/aem-forms-theme-easel). Vous pouvez cloner n’importe quel thème disponible en fonction de vos besoins.
+* Instance AEM Forms compatible avec le cloud avec les composants principaux.
+* Clonage d’un thème : vous devez vous familiariser avec le clonage d’un thème. Pour les besoins de ce tutoriel, nous avons cloné le [thème Chevalet](https://github.com/adobe/aem-forms-theme-easel). Vous pouvez cloner n’importe quel thème disponible en fonction de vos besoins.
 
-* Installez la dernière version d’Apache Maven. Apache Maven est un outil d’automatisation de génération couramment utilisé pour les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
+* Installez la dernière version d’Apache Maven. Apache Maven est un outil d’automatisation de création couramment utilisé dans les projets Java™. L’installation de la dernière version vous garantit les dépendances nécessaires à la personnalisation du thème.
 * Installez un éditeur de texte brut. Par exemple, Microsoft® Visual Studio Code. L’utilisation d’un éditeur de texte brut tel que Microsoft® Visual Studio Code fournit un environnement convivial pour la création et la modification de fichiers de thème.
 
 
 
 ## Étapes suivantes
 
-[Créer une stratégie de style](./style-policy.md)
+[Création d’une politique de style](./style-policy.md)

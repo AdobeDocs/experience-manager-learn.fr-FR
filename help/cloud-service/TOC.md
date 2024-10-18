@@ -7,9 +7,9 @@ sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
 source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1307'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -271,9 +271,9 @@ ht-degree: 99%
       + [Tester la solution](./forms/form-data-analytics/test.md)
    + Création de variations de bouton{#style-system}
       + [Présentation](./forms/style-system/introduction.md)
-      + [Définition d’une stratégie](./forms/style-system/style-policy.md)
-      + [Définition de variations](./forms/style-system/create-variations.md)
-      + [Variations de test](./forms/style-system/build.md)
+      + [Définition d’une politique](./forms/style-system/style-policy.md)
+      + [Définition des variations](./forms/style-system/create-variations.md)
+      + [Test des variations](./forms/style-system/build.md)
    + Utilisation des onglets verticaux{#using-vertical-tabs}
       + [1. Présentation](./forms/using-vertical-tabs/introduction.md)
       + [2. Création d’un formulaire](./forms/using-vertical-tabs/create-af.md)
