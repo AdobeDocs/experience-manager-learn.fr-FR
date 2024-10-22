@@ -7,15 +7,15 @@ feature: Operations, Dispatcher
 role: Developer, Architect
 level: Intermediate
 jira: KT-11466
-last-substantial-update: 2022-10-14T00:00:00Z
+last-substantial-update: 2024-10-22T00:00:00Z
 index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: 3cc9b4fa0a30d36638a8c28a73663ffa455ba4a3
-workflow-type: ht
-source-wordcount: '877'
-ht-degree: 100%
+source-git-commit: 9e093e87c8c369ddd750be4a7dc30e2bf86495d5
+workflow-type: tm+mt
+source-wordcount: '878'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ Les solutions de redirection d’URL proposées par AEM sont les suivantes :
 | [Sur Edge via le réseau CDN géré par AEM](#at-edge-via-aem-managed-cdn) | ✔ | ✘ | ✔ | Edge/CDN (intégré) |
 | [Sur Edge via votre propre réseau CDN (BYOCDN)](#at-edge-via-bring-your-own-cdn) | ✘ | ✘ | ✔ | Edge/CDN (BYOCDN) |
 | [Apache, règles `mod_rewrite` en tant que configuration de Dispatcher](#apache-mod_rewrite-module) | ✔ | ✘ | ✔ | Dispatcher |
-| [ACS Commons : gestionnaire de mappage de redirection](#redirect-map-manager) | ✘ | ✔ | ✘ | Dispatcher |
+| [ACS Commons : gestionnaire de mappage de redirection](#redirect-map-manager) | ✘ | ✔ | ✔ | Dispatcher |
 | [ACS Commons : gestionnaire de redirection](#redirect-manager) | ✘ | ✔ | ✔ | AEM |
 | [Propriété de page `Redirect`](#the-redirect-page-property) | ✘ | ✔ | ✔ | AEM |
 
@@ -76,7 +76,7 @@ Deux fonctionnalités d’[ACS AEM Commons](https://adobe-consulting-services
 
 #### Gestionnaire de mappage de redirection
 
-Le [Gestionnaire de mappage de redirection](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) permet aux administrateurs et aux administratrices d’AEM 6.x de gérer et de publier les fichiers [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) en toute facilité, sans besoin d’accès direct ou de redémarrage du serveur web Apache. Cette fonctionnalité permet aux utilisateurs et aux utilisatrices dotés des autorisations appropriées de créer, mettre à jour et supprimer des règles de redirection à partir d’une console dans AEM, sans l’aide de l’équipe de développement ou d’un déploiement AEM. Le Gestionnaire de mappage de redirection **n’est PAS compatible avec AEM as a Cloud Service**.
+[ Le gestionnaire de cartes de redirection ](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) aide AEM administrateurs à facilement gérer et publier les fichiers [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) sans accéder directement au serveur web Apache ou nécessiter un redémarrage du serveur web Apache. Cette fonctionnalité permet aux utilisateurs et aux utilisatrices dotés des autorisations appropriées de créer, mettre à jour et supprimer des règles de redirection à partir d’une console dans AEM, sans l’aide de l’équipe de développement ou d’un déploiement AEM. Le Gestionnaire de redirection est compatible avec **AEM as a Cloud Service** et **AEM 6.x**.
 
 #### Gestionnaire de redirection
 
