@@ -10,10 +10,10 @@ topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: 86d282b426402c9ad6be84e9db92598d0dc54f85
-workflow-type: ht
-source-wordcount: '219'
-ht-degree: 100%
+source-git-commit: a0de7eaa391749b6b0d90e7cf3e363c2d5a232b5
+workflow-type: tm+mt
+source-wordcount: '229'
+ht-degree: 87%
 
 ---
 
@@ -21,9 +21,11 @@ ht-degree: 100%
 # Test des modifications
 
 Créez un formulaire adaptatif basé sur le modèle **« Vierge avec composants principaux »**. Faites glisser et déposez 3 boutons sur le formulaire et étiquetez-les « Corporate », « Marketing » et « Default».
-Attribuez les variantes de style appropriées aux boutons Entreprise et Marketing en sélectionnant le pinceau comme indiqué.
+Attribuez les variantes de style appropriées aux boutons d’entreprise et de marketing en sélectionnant le pinceau comme illustré ci-dessous.
 
 ![styles](assets/marketing-variation.png)
+
+Le style par défaut est appliqué au troisième bouton.
 
 ## Création du projet de thème
 
