@@ -13,9 +13,9 @@ jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
 source-git-commit: ede52c6c9feb0b35bc3729e28591cb4e7c7600f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '833'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -68,11 +68,11 @@ AEM Eventing, bien que puissant, présente certaines limites à prendre en comp
 
 - **Disponibilité limitée à AEM as a Cloud Service** : actuellement, AEM Eventing est exclusivement disponible pour AEM as a Cloud Service.
 
-- **Types d’événements disponibles** : consultez la liste actuelle des types d’événements disponibles [ici](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#available-event-types).
+- **Types d’événements disponibles** : consultez la liste actuelle des types d’événements disponibles [ici](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#available-event-types).
 
 ## Activation
 
-Voir [Activation des événements AEM dans votre environnement AEM Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) pour connaître les étapes suivantes.
+Voir [Activer les événements AEM dans votre environnement AEM Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment) pour les étapes suivantes.
 
 ## Abonnement
 
