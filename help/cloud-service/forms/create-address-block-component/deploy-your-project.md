@@ -1,6 +1,6 @@
 ---
 title: Création d’un composant d’adresse
-description: Création d’un composant principal d’adresse dans AEM Forms as a Cloud Service
+description: Création d’un composant principal d’adresse dans AEM Forms as a Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,15 +10,15 @@ topic: Development
 jira: KT-15752
 exl-id: be25be52-2914-4820-9356-678a326f8edc
 source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # Déployer votre projet
 
-Avant de commencer à déployer le projet sur votre as a Cloud Service AEM Forms, il est recommandé de déployer le projet sur votre instance AEM Forms prête pour le cloud local.
+Avant de commencer à déployer le projet sur AEM Forms as a Cloud Service, il est recommandé de le déployer sur votre instance AEM Forms locale prête pour le cloud.
 
 ## Synchroniser les modifications avec votre projet AEM
 

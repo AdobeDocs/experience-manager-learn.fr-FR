@@ -1,6 +1,6 @@
 ---
 title: Créer un composant d’image cliquable
-description: Créez des composants d’image cliquables dans AEM Forms as a Cloud Service.
+description: Créez des composants d’image cliquable dans AEM Forms as a Cloud Service.
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -11,9 +11,9 @@ jira: KT-15968
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: c451472f-d282-4662-9852-8a3e73c5c853
 source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '138'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 

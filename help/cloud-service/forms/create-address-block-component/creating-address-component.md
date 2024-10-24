@@ -1,6 +1,6 @@
 ---
 title: Création d’un composant d’adresse
-description: Création d’un composant principal d’adresse dans AEM Forms as a Cloud Service
+description: Création d’un composant principal d’adresse dans AEM Forms as a Cloud Service
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,9 +10,9 @@ topic: Development
 jira: KT-15752
 exl-id: 280c9a30-e017-4bc0-9027-096aac82c22c
 source-git-commit: b4df652fcda0af5d01077b97aa7fa17cfe2abf4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '298'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Sélectionnez le nœud ``zip`` et définissez ses propriétés comme illustré c
 Sélectionnez le nœud ``state`` et définissez ses propriétés comme illustré ci-dessous. Remarquez le fieldType du champ state : il est défini comme une liste déroulante.
 ![state](assets/state.png)
 
-## Définition des options du champ d’état
+## Définition des valeurs par défaut du champ state
 
 Sélectionnez le nœud ``state`` et ajoutez les propriétés suivantes.
 
