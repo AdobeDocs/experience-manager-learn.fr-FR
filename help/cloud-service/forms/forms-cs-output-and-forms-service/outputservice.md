@@ -1,6 +1,6 @@
 ---
-title: Générer des documents PDF à l’aide du service de sortie
-description: Fusionner les données avec le modèle XDP pour générer un PDF non interactif
+title: Générer des documents PDF à l’aide du service Output
+description: Fusionner les données avec le modèle XDP pour générer un PDF non interactif
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -10,27 +10,27 @@ topic: Development
 jira: KT-16384
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 source-git-commit: a0de7eaa391749b6b0d90e7cf3e363c2d5a232b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '207'
-ht-degree: 18%
+ht-degree: 100%
 
 ---
 
 
-# Générer des documents PDF à l’aide du service de sortie
+# Générer des documents PDF à l’aide du service Output
 
-Le [service Output](https://javadoc.io/static/com.adobe.aem/aem-forms-sdk-api/2024.07.31.00-240800/com/adobe/fd/output/api/OutputService.html) est un service OSGi qui fait partie d’AEM Document Services. Il prend en charge divers formats de sortie et fonctions de conception d’AEM Forms Designer. Le service Output convertit les modèles XFA et les données XML pour générer des documents d’impression dans différents formats.
+Le [service Output](https://javadoc.io/static/com.adobe.aem/aem-forms-sdk-api/2024.07.31.00-240800/com/adobe/fd/output/api/OutputService.html) est un service OSGi qui fait partie d’AEM Document Services. Il prend en charge divers formats et fonctions de conception de sortie d’AEM Forms Designer. Le service Output convertit des modèles XFA et des données XML pour générer des documents d’impression dans différents formats.
 
-Le service Output d’AEM Forms as a Cloud Service ressemble de près à celui d’AEM Forms 6.5. Par conséquent, si vous maîtrisez l’utilisation du service Output dans AEM Forms 6.5, la transition vers AEM Forms as a Cloud Service doit être simple.
+Le service Output d’AEM Forms as a Cloud Service ressemble de près à celui d’AEM Forms 6.5. Par conséquent, si vous maîtrisez l’utilisation du service Output dans AEM Forms 6.5, la transition vers AEM Forms as a Cloud Service doit être simple.
 
-Avec le service Output, vous pouvez créer des applications qui vous permettent d’effectuer les opérations suivantes :
+Avec le service Output, vous pouvez créer des applications qui vous permettent d’effectuer les opérations suivantes :
 
 + Générer des documents de formulaire définitifs en complétant des fichiers de modèle avec des données XML.
 + Générer des formulaires de sortie dans différents formats, y compris des flux d’impression PDF non interactifs, PostScript, PCL et ZPL.
 + Générer des fichiers PDF d’impression à partir de fichiers PDF de formulaire XFA.
-+ Générez des documents PDF, PostScript, PCL et ZPL en bloc en fusionnant plusieurs jeux de données avec les modèles fournis.
++ Générez des documents PDF, PostScript, PCL et ZPL en blocs en fusionnant plusieurs jeux de données avec les modèles fournis.
 
-Ce service est conçu pour être utilisé dans le contexte d’une instance as a Cloud Service AEM Forms. Le fragment de code suivant génère un document PDF dans une servlet à l’aide de `OutputService`.
+Ce service est conçu pour être utilisé dans le contexte d’une instance AEM Forms as a Cloud Service. Le fragment de code suivant génère un document PDF dans un servlet à l’aide de `OutputService`.
 
 ```java
 import com.adobe.fd.output.api.OutputService;
