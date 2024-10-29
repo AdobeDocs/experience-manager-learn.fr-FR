@@ -279,8 +279,8 @@ ht-degree: 99%
       + [1. Présentation](./forms/using-vertical-tabs/introduction.md)
       + [2. Création d’un formulaire](./forms/using-vertical-tabs/create-af.md)
       + [3. Navigation](./forms/using-vertical-tabs/navigation.md)
-   + Utilisation de la sortie et du service Forms{#forms-cs-output-and-forms-service}
-      + [Generate PDF](./forms/forms-cs-output-and-forms-service/outputservice.md)
+   + Utilisation des services Output et Forms{#forms-cs-output-and-forms-service}
+      + [Générer des PDF](./forms/forms-cs-output-and-forms-service/outputservice.md)
    + Génération de documents dans AEM Forms CS{#doc-gen-formscs}
       + [Présentation](./forms/doc-gen-forms-cs/introduction.md)
       + [Créer des informations d’identification de service](./forms/doc-gen-forms-cs/service-credentials.md)
