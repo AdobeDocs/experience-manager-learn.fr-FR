@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
-source-git-commit: 7dca86137d476418c39af62c3c7fa612635c0583
+source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1325'
 ht-degree: 99%
 
 ---
@@ -279,6 +279,7 @@ ht-degree: 99%
       + [1. Présentation](./forms/using-vertical-tabs/introduction.md)
       + [2. Création d’un formulaire](./forms/using-vertical-tabs/create-af.md)
       + [3. Navigation](./forms/using-vertical-tabs/navigation.md)
+      + [4. Ajout d’icônes](./forms/using-vertical-tabs/icons.md)
    + Utilisation des services Output et Forms{#forms-cs-output-and-forms-service}
       + [Générer des PDF](./forms/forms-cs-output-and-forms-service/outputservice.md)
    + Génération de documents dans AEM Forms CS{#doc-gen-formscs}
