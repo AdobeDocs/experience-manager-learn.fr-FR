@@ -1,6 +1,6 @@
 ---
-title: Exécution d’une tâche sur l’instance principale dans AEM as a Cloud Service
-description: Découvrez comment exécuter une tâche sur l’instance principale dans AEM as a Cloud Service.
+title: Exécution d’une tâche sur l’instance principale dans AEM as a Cloud Service
+description: Découvrez comment exécuter une tâche sur l’instance principale dans AEM as a Cloud Service.
 version: Cloud Service
 topic: Development
 feature: OSGI, Cloud Manager
@@ -12,28 +12,28 @@ last-substantial-update: 2024-10-23T00:00:00Z
 jira: KT-16399
 thumbnail: KT-16399.jpeg
 source-git-commit: 7dca86137d476418c39af62c3c7fa612635c0583
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '557'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Exécution d’une tâche sur l’instance principale dans AEM as a Cloud Service
+# Exécution d’une tâche sur l’instance principale dans AEM as a Cloud Service
 
-Découvrez comment exécuter une tâche sur l’instance principale dans le service de création d’AEM dans AEM as a Cloud Service et comment la configurer pour qu’elle s’exécute une seule fois.
+Découvrez comment exécuter une tâche sur l’instance principale du service de création AEM dans le cadre d’AEM as a Cloud Service et la configurer pour qu’elle ne s’exécute qu’une seule fois.
 
-Les tâches Sling sont des tâches asynchrones qui fonctionnent en arrière-plan, conçues pour gérer les événements système ou déclenchés par l’utilisateur. Par défaut, ces tâches sont réparties uniformément entre toutes les instances (capsules) de la grappe.
+Les tâches Sling sont des tâches asynchrones qui fonctionnent en arrière-plan, conçues pour gérer les événements déclenchés par le système ou les personnes qui les utilisent. Par défaut, ces tâches sont réparties uniformément entre toutes les instances (capsules) du cluster.
 
-Pour plus d’informations, voir [Gestion des tâches et des événements Apache Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).
+Pour plus d’informations, consultez la section [Gestion des tâches et des événements Apache Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).
 
 ## Création et traitement de tâches
 
-À des fins de démonstration, créons une tâche _simple qui demande au processeur de tâches de consigner un message_.
+À des fins de démonstration, créons une _tâche simple qui demande au processeur de tâche de consigner un message_.
 
 ### Création d’une tâche
 
-Utilisez le code ci-dessous pour _créer_ une tâche Apache Sling :
+Utilisez le code ci-dessous pour _créer_ une tâche Apache Sling :
 
 ```java
 package com.adobe.aem.guides.wknd.core.sling.jobs.impl;
@@ -77,14 +77,14 @@ public class SimpleJobCreaterImpl {
 }
 ```
 
-Les points clés à noter dans le code ci-dessus sont les suivants :
+Les points clés à noter dans le code ci-dessus sont les suivants :
 
-- La charge utile de tâche possède deux propriétés : `action` et `message`.
-- À l’aide de la méthode `addJob(...)` de [JobManager](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/apache/sling/event/jobs/JobManager.html), la tâche est ajoutée à la rubrique `wknd/simple/job/topic`.
+- La payload de la tâche possède deux propriétés : `action` et `message`.
+- En utilisant la méthode `addJob(...)` de [JobManager](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/org/apache/sling/event/jobs/JobManager.html), la tâche est ajoutée à la rubrique `wknd/simple/job/topic`.
 
 ### Traitement d’une tâche
 
-Utilisez le code ci-dessous pour _process_ de la tâche Apache Sling ci-dessus :
+Utilisez le code ci-dessous pour _traiter_ la tâche Apache Sling ci-dessus :
 
 ```java
 package com.adobe.aem.guides.wknd.core.sling.jobs.impl;
@@ -120,28 +120,28 @@ public class SimpleJobConsumerImpl implements JobConsumer {
 }
 ```
 
-Les points clés à noter dans le code ci-dessus sont les suivants :
+Les points clés à noter dans le code ci-dessus sont les suivants :
 
-- La classe `SimpleJobConsumerImpl` met en oeuvre l’interface `JobConsumer`.
-- Il s’agit d’un service enregistré pour consommer des tâches de la rubrique `wknd/simple/job/topic`.
-- La méthode `process(...)` traite la tâche en enregistrant la propriété `message` de la charge utile de tâche.
+- La classe `SimpleJobConsumerImpl` met en œuvre l’interface `JobConsumer`.
+- Il s’agit d’un service enregistré pour consommer les tâches de la rubrique `wknd/simple/job/topic`.
+- La méthode `process(...)` traite la tâche en enregistrant la propriété `message` de la payload de la tâche.
 
 ### Traitement des tâches par défaut
 
-Lorsque vous déployez le code ci-dessus dans un environnement AEM as a Cloud Service et que vous l’exécutez sur le service d’auteur d’AEM, qui fonctionne comme une grappe avec plusieurs JVM d’auteur d’AEM, la tâche s’exécute une fois sur chaque instance d’auteur d’AEM (pod), ce qui signifie que le nombre de tâches créées correspondra au nombre de capsules. Le nombre de capsules sera toujours supérieur à un (pour les environnements non-RDE), mais fluctuera en fonction de la gestion des ressources internes d’AEM as a Cloud Service.
+Lorsque vous déployez le code ci-dessus dans un environnement AEM as a Cloud Service et que vous l’exécutez sur le service de création AEM, qui fonctionne comme un cluster avec plusieurs JVM de création AEM, la tâche s’exécute une fois sur chaque instance de création AEM (capsule), ce qui signifie que le nombre de tâches créées correspondra au nombre de capsules. Le nombre de capsules est toujours supérieur à un (pour les environnements non-RDE), mais fluctue en fonction de la gestion des ressources internes d’AEM as a Cloud Service.
 
-La tâche est exécutée sur chaque instance d’auteur AEM (pod), car `wknd/simple/job/topic` est associé à AEM file d’attente principale d’qui distribue les tâches sur toutes les instances disponibles.
+La tâche est exécutée sur chaque instance de création AEM (capsule), car la `wknd/simple/job/topic` est associée à la file d’attente principale d’AEM, qui distribue les tâches à toutes les instances disponibles.
 
-Cela est souvent problématique si la tâche est responsable de la modification de l’état, comme la création ou la mise à jour de ressources ou de services externes.
+Cela devient souvent problématique lorsque la tâche est responsable de modifier un état, comme la création ou la mise à jour de ressources ou de services externes.
 
-Si vous souhaitez que la tâche ne s’exécute qu’une seule fois sur le service d’auteur AEM, ajoutez la [configuration de la file d’attente de travaux](#how-to-run-a-job-on-the-leader-instance) décrite ci-dessous.
+Si vous souhaitez que la tâche ne s’exécute qu’une seule fois sur le service de création AEM, ajoutez la [configuration de la file d’attente des tâches](#how-to-run-a-job-on-the-leader-instance) décrite ci-dessous.
 
-Vous pouvez le vérifier en consultant les journaux du service d’auteur AEM dans [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager).
+Vous pouvez confirmer l’exécution en consultant les journaux du service de création AEM dans [Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#cloud-manager).
 
 ![Traitement de la tâche par toutes les instances](./assets/run-job-once/job-processed-by-all-instances.png)
 
 
-Vous devriez voir :
+Vous devriez voir :
 
 ```
 <DD.MM.YYYY HH:mm:ss.SSS> [cm-pxxxx-exxxx-aem-author-68775db964-nxxcx] *INFO* [sling-oak-observation-15] org.apache.sling.event.impl.jobs.queues.JobQueueImpl.<main queue> Starting job queue <main queue>
@@ -151,11 +151,11 @@ Vous devriez voir :
 <DD.MM.YYYY HH:mm:ss.SSS> INFO [com.adobe.aem.guides.wknd.core.sling.jobs.impl.SimpleJobConsumerImpl] Processing WKND Job, and Job metadata is: Created in activate method
 ```
 
-Il existe deux entrées de journal, une pour chaque instance d’auteur AEM (`68775db964-nxxcx` et `68775db964-r4zk7`), indiquant que chaque instance (capsule) a traité la tâche.
+deux entrées de journal, une pour chaque instance de création AEM (`68775db964-nxxcx` et `68775db964-r4zk7`), indiquant que chaque instance (capsule) a bien traité la tâche.
 
 ## Exécution d’une tâche sur l’instance principale
 
-Pour exécuter une tâche _une seule fois_ sur le service d’auteur AEM, créez une nouvelle file d’attente de tâche Sling de type **Ordered** et associez votre rubrique de tâche (`wknd/simple/job/topic`) à cette file d’attente. Avec cette configuration, seule l’instance d’auteur (pod) de l’AEM principale pourra traiter la tâche.
+Pour exécuter une tâche _une seule fois_ sur le service de création AEM, créez une nouvelle file d’attente des tâches Sling de type **Ordered** et associez votre rubrique de tâche (`wknd/simple/job/topic`) à cette file d’attente. Avec cette configuration, seule l’instance principale de création (capsule) AEM peut traiter la tâche.
 
 Dans le module `ui.config` de votre projet AEM, créez un fichier de configuration OSGi (`org.apache.sling.event.jobs.QueueConfiguration~wknd.cfg.json`) et stockez-le dans le dossier `ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig/config.author`.
 
@@ -171,13 +171,13 @@ Dans le module `ui.config` de votre projet AEM, créez un fichier de configurati
   }
 ```
 
-Les points clés à noter dans la configuration ci-dessus sont les suivants :
+Les points clés à noter dans la configuration ci-dessus sont les suivants :
 
-- La rubrique de la file d’attente est définie sur `wknd/simple/job/topic`.
+- La rubrique de file d’attente est définie sur `wknd/simple/job/topic`.
 - Le type de file d’attente est défini sur `ORDERED`.
 - Le nombre maximal de tâches parallèles est défini sur `1`.
 
-Une fois la configuration ci-dessus déployée, la tâche est traitée exclusivement par l’instance principale, en s’assurant qu’elle ne s’exécute qu’une seule fois sur l’ensemble du service d’auteur AEM.
+Une fois la configuration ci-dessus déployée, la tâche est traitée exclusivement par l’instance principale, garantissant qu’elle ne s’exécute qu’une seule fois sur l’ensemble du service de création AEM.
 
 ```
 <DD.MM.YYYY HH:mm:ss.SSS> [cm-pxxxx-exxxx-aem-author-7475cf85df-qdbq5] *INFO* [FelixLogListener] Events.Service.org.apache.sling.event Service [QueueMBean for queue WKND Queue - ORDERED,7755, [org.apache.sling.event.jobs.jmx.StatisticsMBean]] ServiceEvent REGISTERED
