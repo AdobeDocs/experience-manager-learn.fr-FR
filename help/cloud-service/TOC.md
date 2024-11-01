@@ -111,7 +111,7 @@ ht-degree: 99%
       + [Secrets](./developing/advanced/secrets.md)
       + [Utilisateurs et utilisatrices de service](./developing/advanced/service-users.md)
       + [API d’images optimisées pour le web](./developing/advanced/web-optimized-image-delivery-java-apis.md)
-      + [Exécution de la tâche sur l’instance principale dans AEM Auteur](./developing/advanced/run-job-on-leader-instance-in-aem-author.md)
+      + [Exécution d’une tâche sur l’instance principale dans AEM Author](./developing/advanced/run-job-on-leader-instance-in-aem-author.md)
    + Environnement de développement rapide{#rde}
       + [Vue d’ensemble](./developing/rde/overview.md)
       + [Configuration](./developing/rde/how-to-setup.md)

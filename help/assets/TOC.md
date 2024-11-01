@@ -10,7 +10,7 @@ team: TM
 source-git-commit: 511823c39f0141155bc1efd7fc599b4b9b05ce69
 workflow-type: tm+mt
 source-wordcount: '426'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -78,14 +78,14 @@ ht-degree: 98%
 + Hub de contenus{#content-hub}
    + [Vue d’ensemble](./content-hub/overview.md)
    + [Configuration](./content-hub/set-up.md)
-   + [Ajouter des ressources](./content-hub/add-assets.md)
-   + [Télécharger des ressources](./content-hub/download-assets.md)
-   + [Variantes d’image utilisant Adobe Express](./content-hub/image-variants.md)
+   + [Ajout de ressources](./content-hub/add-assets.md)
+   + [Téléchargement de ressources](./content-hub/download-assets.md)
+   + [Variantes d’image à l’aide d’Adobe Express](./content-hub/image-variants.md)
    + [Collections](./content-hub/collections.md)
    + [Partage](./content-hub/share.md)
 
 + Partage et distribution{#sharing}
-   + [Télécharger des ressources](./sharing/download.md)
+   + [Téléchargement de ressources](./sharing/download.md)
    + [Exporter des ressources](./sharing/export.md)
    + [Publier des ressources](./sharing/publish.md)
 
