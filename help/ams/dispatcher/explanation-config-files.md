@@ -10,10 +10,10 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
 duration: 379
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '1688'
-ht-degree: 100%
+source-git-commit: ef9c70e7895176e3cd535141a5de3c49886e666e
+workflow-type: tm+mt
+source-wordcount: '1694'
+ht-degree: 99%
 
 ---
 
@@ -119,7 +119,7 @@ Lors de l’extension des fonctionnalités et des configurations dans le serveur
 
 ### Inclusions de ligne de base Apache
 
-![](assets/explanation-config-files/Apache-Webserver-Baseline-Includes.png)
+![La ligne de base du serveur web Apache HTTPD comprend](assets/explanation-config-files/Apache-Webserver-Baseline-Includes.png)
 
 Comme le montre le diagramme ci-dessus, le binaire httpd ne regarde que le fichier httpd.conf comme fichier de configuration.Ce fichier contient les instructions suivantes :
 
