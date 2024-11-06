@@ -12,10 +12,10 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: 9e093e87c8c369ddd750be4a7dc30e2bf86495d5
-workflow-type: ht
-source-wordcount: '878'
-ht-degree: 100%
+source-git-commit: d5dff9378f31acb0fbce0bb86e2d0022ee725f83
+workflow-type: tm+mt
+source-wordcount: '884'
+ht-degree: 97%
 
 ---
 
@@ -76,7 +76,7 @@ Deux fonctionnalités d’[ACS AEM Commons](https://adobe-consulting-services
 
 #### Gestionnaire de mappage de redirection
 
-Le [Gestionnaire de mappage de redirection](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) permet aux administrateurs et aux administratrices d’AEM de gérer et de publier les fichiers [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) en toute facilité, sans besoin d’accès direct ou de redémarrage du serveur web Apache. Cette fonctionnalité permet aux utilisateurs et aux utilisatrices dotés des autorisations appropriées de créer, mettre à jour et supprimer des règles de redirection à partir d’une console dans AEM, sans l’aide de l’équipe de développement ou d’un déploiement AEM. Le Gestionnaire de redirection est compatible avec **AEM as a Cloud Service** et **AEM 6.x**.
+Le [Gestionnaire de mappage de redirection](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) permet aux administrateurs et aux administratrices d’AEM de gérer et de publier les fichiers [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) en toute facilité, sans besoin d’accès direct ou de redémarrage du serveur web Apache. Cette fonctionnalité permet aux utilisateurs et aux utilisatrices dotés des autorisations appropriées de créer, mettre à jour et supprimer des règles de redirection à partir d’une console dans AEM, sans l’aide de l’équipe de développement ou d’un déploiement AEM. Le Gestionnaire de redirection est à la fois **AEM as a Cloud Service** (voir la stratégie [ Redirections d’URL sans pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects)) et **AEM 6.x** compatible.
 
 #### Gestionnaire de redirection
 
