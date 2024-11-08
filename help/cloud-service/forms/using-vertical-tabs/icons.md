@@ -1,5 +1,5 @@
 ---
-title: Utilisation des onglets verticaux dans AEM Forms as a Cloud Service
+title: Ajout d’icônes personnalisées
 description: Ajout d’icônes personnalisées aux onglets verticaux
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
@@ -11,10 +11,11 @@ feature: Adaptive Forms
 thumbnail: 331891.jpg
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16418
-source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
+exl-id: 20e44be0-5490-4414-9183-bb2d2a80bdf0
+source-git-commit: faa859897b6b9fbb0acff02000611de216ddda3e
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 2%
+source-wordcount: '676'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +25,7 @@ L’ajout d’icônes personnalisées aux onglets peut améliorer l’expérienc
 
 * Amélioration de l’utilisation : les icônes peuvent rapidement indiquer l’objectif de chaque onglet, ce qui facilite la recherche rapide de ce qu’ils recherchent. Les repères visuels tels que les icônes aident les utilisateurs à naviguer de manière plus intuitive.
 
-* Hiérarchie visuelle et Mise au point : les icônes créent une séparation plus distincte entre les onglets, ce qui améliore la hiérarchie visuelle. Cela peut aider les onglets importants à se distinguer et à guider plus efficacement l’attention des utilisateurs.
+* Hiérarchie visuelle et Mise au point : les icônes créent une séparation plus distincte entre les onglets, ce qui améliore la hiérarchie visuelle. Cela peut aider les onglets importants à se distinguer et à guider efficacement l’attention des utilisateurs.
 En suivant cet article, vous devriez pouvoir placer les icônes comme illustré ci-dessous.
 
 ![icons](assets/icons.png)
@@ -44,7 +45,7 @@ Les icônes marquées en rouge sont les nouvelles icônes ajoutées.
 
 Créez le icon-map dans le fichier _variable.scss . Le mappage SCSS $icon-map est un ensemble de paires clé-valeur, où chaque clé représente un nom d’icône (comme la maison, la famille, etc.), et chaque valeur est le chemin d’accès au fichier image associé à cette icône.
 
-![variable-scss](assets/variable.scss)
+![variable-scss](assets/variable_scss.png)
 
 ```css
 $icon-map: (
@@ -81,8 +82,7 @@ Ajoutez le code suivant au fichier _mixin.scss.
 
 Le mixin add-icon-to-vertical-tab est conçu pour ajouter une icône personnalisée en regard du texte sur un onglet vertical. Il vous permet d’inclure facilement une image en tant qu’icône sur les onglets, de la positionner à côté du texte et de la mettre en forme pour garantir cohérence et alignement.
 
-Répartition du mixin
-Voici ce que fait chaque partie du mixin :
+Ventilation du mixin. Voici ce que fait chaque partie du mixin :
 
 Paramètres:
 
