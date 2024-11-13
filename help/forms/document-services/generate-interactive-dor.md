@@ -10,10 +10,10 @@ jira: KT-9226
 exl-id: d9618cc8-d399-4850-8714-c38991862045
 last-substantial-update: 2020-02-07T00:00:00Z
 duration: 177
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '521'
-ht-degree: 100%
+source-git-commit: 2625a9127c36ee191eb67128546864c9f6901663
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 74%
 
 ---
 
@@ -82,8 +82,8 @@ Vous pouvez utiliser n’importe quel outil en ligne gratuit pour [générer le 
 
 ### Créer un formulaire adaptatif
 
-Créez un formulaire adaptatif basé sur le schéma XSD de l’étape précédente. Associez le formulaire pour utiliser la bibliothèque cliente « irs ». Cette bibliothèque cliente dispose du code pour effectuer un appel POST vers le servlet qui renvoie le PDF à l’application qui l’appelle.
-Le code suivant est déclenché lorsque l’on clique sur _Télécharger le PDF_.
+Créez un formulaire adaptatif basé sur le schéma XSD de l’étape précédente. Associez le formulaire pour utiliser la bibliothèque cliente « irs ». Cette bibliothèque cliente dispose du code permettant d’effectuer un appel POST vers la servlet, qui renvoie le PDF à l’application qui l’appelle.
+Le code suivant est déclenché lorsque vous cliquez sur le _PDF de téléchargement_
 
 ```javascript
 $(document).ready(function() {
@@ -211,7 +211,7 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 }
 ```
 
-Dans l’exemple de code, nous extrayons le nom XDP et d’autres paramètres de l’objet de la requête. Si le formulaire n’est pas basé sur XSD, le document XML à fusionner avec XDP est créé. Si le formulaire est basé sur XSD, nous extrayons simplement le nœud approprié à partir des données du formulaire adaptatif envoyé pour générer un document XML à fusionner avec le modèle XDP.
+Dans cet exemple de code, le nom xdp et d’autres paramètres sont extraits de l’objet de requête. Si le formulaire n’est pas basé sur un schéma XSD, un nouveau document XML est créé pour fusionner avec le fichier xdp. Cependant, si le formulaire est basé sur XSD, le noeud approprié est extrait directement des données envoyées du formulaire adaptatif et un document XML est généré pour fusionner avec le modèle xdp en conséquence.
 
 ## Déployer l’exemple sur votre serveur
 
@@ -226,6 +226,11 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 1. [Prévisualisez le formulaire adaptatif](http://localhost:4502/content/dam/formsanddocuments/f8918complete/jcr:content?wcmmode=disabled).
 1. Renseignez quelques champs du formulaire.
 1. Cliquez sur Télécharger le PDF pour obtenir le PDF. Vous devrez peut-être attendre quelques secondes pour que le PDF soit téléchargé.
+
+>[!NOTE]
+>
+>Lorsque vous ouvrez le PDF téléchargé à l’aide de la visionneuse pdf du navigateur, les données ne s’affichent pas dans le pdf. Ouvrez le PDF téléchargé à l’aide d’Adobe Acrobat ou d’Adobe Reader.
+
 
 >[!NOTE]
 >
