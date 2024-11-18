@@ -1,5 +1,5 @@
 ---
-title: Listes de lecture d’une vue Assets AEM Assets
+title: Listes de lecture vidéo d’une vue AEM Assets Assets
 description: Découvrez comment utiliser AEM Assets as a Cloud Service dans la vue Assets avec cette collection de listes de lecture vidéo conçue pour améliorer votre expertise produit.
 version: Cloud Service
 topic: Content Management
@@ -9,16 +9,16 @@ last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 76af4062-4d8d-4908-bd3d-ce5a8af2111a
-source-git-commit: c939bf218211ef4f515ac8c7eea67cc5425eb3a9
+source-git-commit: bee9c6dfa7a2e3c55f6ec938cffff4622d800004
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '403'
 ht-degree: 1%
 
 ---
 
 # Listes de lecture vidéo d’une vue AEM Assets Assets
 
-Explorez ces listes de lecture pour maîtriser la vue d’administration as a Cloud Service d’AEM Assets, qui couvre la configuration, l’optimisation, l’utilisation et l’intégration transparente aux workflows créatifs. Obtenez les informations dont vous avez besoin pour réussir avec AEM Assets as a Cloud Service.
+Explorez ces listes de lecture pour maîtriser la vue Assets as a Cloud Service d’AEM Assets, qui couvre la configuration, l’optimisation, l’utilisation et l’intégration transparente aux workflows créatifs. Obtenez les informations dont vous avez besoin pour réussir avec AEM Assets as a Cloud Service.
 
 ## Configuration de la vue Assets
 
