@@ -9,14 +9,14 @@ last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
 exl-id: 924b3bab-e0ed-4b07-bded-344aab61eac5
-source-git-commit: 74e9962dfb7f451d395a3ec1a56989e3cbc4295b
+source-git-commit: 0905e084001dafa5445d3ea9d42b07c592af9149
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-# Listes de lecture vidéo de la vue d’administration AEM Assets
+# Listes de lecture vidéo de l’affichage administrateur d’AEM Assets
 
 Explorez ces listes de lecture pour maîtriser la vue d’administration as a Cloud Service d’AEM Assets, qui couvre la configuration, l’optimisation, l’utilisation et l’intégration transparente aux workflows créatifs. Obtenez les informations dont vous avez besoin pour réussir avec AEM Assets as a Cloud Service.
 
