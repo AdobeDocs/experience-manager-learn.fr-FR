@@ -11,10 +11,10 @@ thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 891
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '1365'
-ht-degree: 100%
+source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
+workflow-type: tm+mt
+source-wordcount: '1360'
+ht-degree: 98%
 
 ---
 
@@ -44,9 +44,7 @@ Les éléments suivants sont requis lors de la configuration d’une adresse IP 
 + ID de programme Cloud Manager
 + ID d’environnement de Cloud Manager
 
-Pour plus d’informations, regardez la présentation suivante pour découvrir comment installer, configurer et obtenir les informations d’identification de l’API Cloud Manager, et comment les utiliser pour effectuer un appel d’API Cloud Manager.
-
->[!VIDEO](https://video.tv.adobe.com/v/342235?quality=12&learn=on)
+Pour plus d’informations, [passez en revue la configuration, la configuration et l’obtention des informations d’identification de l’API Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth) afin de les utiliser pour effectuer un appel de l’API Cloud Manager.
 
 Ce tutoriel utilise `curl` pour créer les configurations de l’API Cloud Manager. Les commandes `curl` fournies reposent sur la syntaxe Linux/macOS. Si vous utilisez l’invite de commande Windows, remplacez le caractère de saut de ligne `\` par `^`.
 

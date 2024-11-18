@@ -11,10 +11,10 @@ thumbnail: KT-9352.jpeg
 exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 last-substantial-update: 2024-04-27T00:00:00Z
 duration: 919
-source-git-commit: 1183fc5614f9547b56f22bafd9b54e10279f310f
-workflow-type: ht
-source-wordcount: '1472'
-ht-degree: 100%
+source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
+workflow-type: tm+mt
+source-wordcount: '1467'
+ht-degree: 98%
 
 ---
 
@@ -49,9 +49,7 @@ Les éléments suivants sont requis lors de la configuration d’un réseau priv
 + ID d’environnement de Cloud Manager
 + Réseau privé virtuel **basé sur des itinéraires**, avec accès à tous les paramètres de connexion nécessaires.
 
-Pour plus d’informations, regardez la présentation suivante pour découvrir comment installer, configurer et obtenir les informations d’identification de l’API Cloud Manager, et comment les utiliser pour effectuer un appel d’API Cloud Manager.
-
->[!VIDEO](https://video.tv.adobe.com/v/342235?quality=12&learn=on)
+Pour plus d’informations, [passez en revue la configuration, la configuration et l’obtention des informations d’identification de l’API Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth) afin de les utiliser pour effectuer un appel de l’API Cloud Manager.
 
 Ce tutoriel utilise `curl` pour créer les configurations de l’API Cloud Manager. Les commandes `curl` fournies reposent sur la syntaxe Linux/macOS. Si vous utilisez l’invite de commande Windows, remplacez le caractère de saut de ligne `\` par `^`.
 
@@ -219,7 +217,7 @@ Une fois le VPN créé, vous pouvez le configurer à l’aide des API Cloud Man
 
    Définissez les paramètres JSON d’un objet `vpn-configure.json` fourni à cURL via l’objet `... -d @./vpn-configure.json`.
 
-   [Télécharger l’exemple vpn-configure.json](./assets/vpn-configure.json)
+[Télécharger l’exemple vpn-configure.json](./assets/vpn-configure.json)
 
    ```json
    {
