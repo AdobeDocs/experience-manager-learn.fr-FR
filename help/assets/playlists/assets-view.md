@@ -8,15 +8,15 @@ level: Beginner
 last-substantial-update: 2024-11-01T00:00:00Z
 doc-type: Catalog
 duration: 60
-source-git-commit: 197f8b0d664971283cd893417a43e4e85e1b4923
+exl-id: 76af4062-4d8d-4908-bd3d-ce5a8af2111a
+source-git-commit: c939bf218211ef4f515ac8c7eea67cc5425eb3a9
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '402'
 ht-degree: 1%
 
 ---
 
-
-# Listes de lecture d’une vue Assets AEM Assets
+# Listes de lecture vidéo d’une vue AEM Assets Assets
 
 Explorez ces listes de lecture pour maîtriser la vue d’administration as a Cloud Service d’AEM Assets, qui couvre la configuration, l’optimisation, l’utilisation et l’intégration transparente aux workflows créatifs. Obtenez les informations dont vous avez besoin pour réussir avec AEM Assets as a Cloud Service.
 
@@ -184,5 +184,3 @@ Déverrouillez une collaboration fluide en intégrant AEM Assets as a Cloud Serv
     </div>
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
-
-
