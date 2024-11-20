@@ -11,13 +11,13 @@ jira: KT-16515
 thumbnail: KT-16515.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
-source-git-commit: 6b8a8dc5cdcddfa2d8572bfd195bc67906882f67
+exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
+source-git-commit: 316e08e6647d6fd731cd49ae1bc139ce57c3a7f4
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 2%
 
 ---
-
 
 # Présentation des API d’AEM{#aem-apis-overview}
 
@@ -71,7 +71,7 @@ La [spécification OpenAPI](https://swagger.io/specification/) (anciennement con
 
 **Forms**
 
-- [ Services Acrobat Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) : API pour travailler avec des formulaires et des documents.
+- [API de communications Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) : API pour travailler avec des formulaires et des documents.
 
 Dans les prochaines versions, d’autres API d’AEM basées sur OpenAPI seront ajoutées pour prendre en charge des cas d’utilisation supplémentaires.
 
@@ -89,7 +89,7 @@ Les API d’AEM basées sur OpenAPI prennent en charge les méthodes d’authent
 
 Avant d’accéder aux API Adobe, il est essentiel de comprendre ces concepts clés :
 
-- **[Adobe Developer Console](https://developer.adobe.com/)** : centre de développement pour l’accès aux API d’Adobe, aux SDK, aux événements en temps réel, aux fonctions sans serveur, etc. Notez qu’il s’agit d’une différence par rapport au Developer Console _AEM_ utilisé pour le débogage des applications AEM.
+- **[Adobe Developer Console](https://developer.adobe.com/)** : centre de développement pour l’accès aux API d’Adobe, aux SDK, aux événements en temps réel, aux fonctions sans serveur, etc. Notez qu’il est différent de la Developer Console _AEM_ utilisée pour le débogage des applications AEM.
 
 - **[Projet Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/projects/)** : emplacement central pour la gestion des intégrations API, des événements et des fonctions d’exécution. Ici, vous configurez les API, définissez l’authentification et générez les informations d’identification requises.
 
