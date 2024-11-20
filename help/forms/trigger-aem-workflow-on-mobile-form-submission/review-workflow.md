@@ -1,5 +1,5 @@
 ---
-title: Déclencher le processus AEM sur l’envoi de formulaire HTML5 - Réviser et approuver le PDF
+title: Déclencher le workflow AEM lors de l’envoi du formulaire HTML5 - Révision et approbation du PDF
 description: Workflow de révision du PDF envoyé
 feature: Mobile Forms
 doc-type: article
@@ -10,15 +10,15 @@ level: Experienced
 jira: kt-16215
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '172'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 # Workflow de révision et d’approbation du PDF envoyé
 
-La dernière et dernière étape consiste à créer AEM workflow qui génère un PDF statique ou non interactif pour révision et approbation. Le workflow est déclenché par un lanceur AEM configuré sur le nœud `/content/formsubmissions`.
+La toute dernière étape consiste à créer un workflow AEM qui génère un PDF statique, ou non interactif, à des fins de révision et d’approbation. Le workflow est déclenché par un lanceur AEM configuré sur le nœud `/content/formsubmissions`.
 
 La capture d’écran suivante montre les étapes impliquées dans ce workflow.
 
@@ -26,7 +26,7 @@ La capture d’écran suivante montre les étapes impliquées dans ce workflow.
 
 ## Étape de workflow Générer un PDF non interactif
 
-Le modèle XDP et les données à fusionner avec le modèle sont spécifiés ici. Les données à fusionner sont les données envoyées du PDF. Ces données envoyées sont stockées sous le noeud ```/content/formsubmissions```
+Le modèle XDP et les données à fusionner avec le modèle sont spécifiés ici. Les données à fusionner sont les données envoyées du PDF. Ces données envoyées sont stockées sous le nœud ```/content/formsubmissions```.
 
 ![workflow](assets/generate-pdf1.PNG)
 
@@ -43,4 +43,4 @@ Le composant de workflow Affecter une tâche est utilisé ici pour affecter le P
 
 ## Étapes suivantes
 
-[Déployer les ressources dans votre environnement](./deploy-assets.md)
+[Déploiement des ressources dans votre environnement](./deploy-assets.md)

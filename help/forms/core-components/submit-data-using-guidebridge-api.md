@@ -11,21 +11,21 @@ last-substantial-update: 2024-04-05T00:00:00Z
 exl-id: 099aaeaf-2514-4459-81a7-2843baa1c981
 duration: 68
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '148'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Utilisation de l’API GuideBridge pour POST des données de formulaire
+# Utilisation de l’API POST GuideBridge pour envoyer des données de formulaire
 
-L’option &quot;Enregistrer et reprendre&quot; d’un formulaire implique de permettre aux utilisateurs d’enregistrer la progression du remplissage du formulaire et de le reprendre ultérieurement.
-Pour réaliser ce cas d’utilisation, nous devons accéder aux données de formulaire et les envoyer à l’aide de l’API GuideBridge vers le point de terminaison REST pour le stockage et la récupération.
+L’option « Enregistrer et reprendre » d’un formulaire implique de permettre aux utilisateurs et utilisatrices d’enregistrer la progression du remplissage du formulaire et de le reprendre ultérieurement.
+Pour réaliser ce cas d’utilisation, nous devons accéder aux données de formulaire et les envoyer à l’aide de l’API GuideBridge vers le point d’entrée REST pour le stockage et la récupération.
 
-Les données de formulaire sont enregistrées sur l’événement click d’un bouton à l’aide de l’éditeur de règles.
+Les données de formulaire sont enregistrées sur l’événement de clic d’un bouton à l’aide de l’éditeur de règles.
 ![rule-editor](assets/rule-editor.png)
 
-La fonction JavaScript suivante a été écrite pour envoyer les données au point de terminaison spécifié.
+La fonction JavaScript suivante a été écrite pour envoyer les données au point d’entrée spécifié.
 
 ```javascript
 /**

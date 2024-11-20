@@ -1,5 +1,5 @@
 ---
-title: Déclencher le processus AEM sur l’envoi de formulaire HTML5
+title: Déclencher un workflow AEM lors de l’envoi du formulaire HTML5
 description: Gérer l’envoi du formulaire HTML5
 feature: Mobile Forms
 doc-type: article
@@ -10,22 +10,22 @@ jira: kt-16215
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
 source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '138'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
-# Gérer l’envoi de formulaire
+# Gestion de l’envoi du formulaire
 
-Dans cette partie, nous allons créer un servlet simple qui s’exécute sur AEM Publish pour gérer l’envoi du formulaire HTML5. Ce servlet effectue une requête de POST HTTP vers un servlet s’exécutant dans une instance d’auteur AEM responsable de l’enregistrement des données envoyées sous la forme d’un noeud `nt:file` dans le référentiel AEM Author.
+Dans cette partie, nous allons créer un servlet simple qui s’exécute sur l’instance de publication AEM pour gérer l’envoi de formulaire HTML5. Ce servlet, à son tour, effectue une requête HTTP POST à un servlet s’exécutant dans une instance de création AEM responsable de l’enregistrement des données envoyées en tant que nœud `nt:file` dans le référentiel de l’instance de création AEM.
 
-Voici le code du servlet qui gère l’envoi du formulaire HTML5. Dans ce servlet, nous effectuons un appel POST vers un servlet monté sur **/bin/startworkflow** dans une instance de création AEM. Ce servlet enregistre les données de formulaire dans le référentiel de l’instance de création AEM.
+Vous trouverez ci-dessous le code du servlet qui gère l’envoi du formulaire HTML5. Dans ce servlet, nous effectuons un appel POST vers un servlet monté sur **/bin/startworkflow** dans une instance de création AEM. Ce servlet enregistre les données de formulaire dans le référentiel de l’instance de création AEM.
 
 
 ## Servlet de publication AEM
 
-Le code suivant gère l’envoi du formulaire HTML5. Ce code s’exécute sur l’instance de publication.
+Le code ci-après gère l’envoi du formulaire HTML5. Ce code s’exécute sur l’instance de publication.
 
 ```java
 package com.aemforms.mobileforms.core.servlets;
@@ -118,4 +118,4 @@ public class HandleFormSubmission extends SlingAllMethodsServlet implements Seri
 
 ## Étapes suivantes
 
-[Stocker les données envoyées sur l’instance d’auteur](./author-servlet.md)
+[Stockage des données envoyées sur l’instance de création](./author-servlet.md)

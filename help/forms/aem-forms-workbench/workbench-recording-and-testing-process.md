@@ -1,6 +1,6 @@
 ---
 title: Enregistrement et test du processus des formulaires
-description: Débogage du processus des formulaires dans Workbench
+description: Déboguer le processus des formulaires dans Workbench
 version: 6.5
 feature: Workbench
 topic: Development
@@ -11,14 +11,14 @@ last-substantial-update: 2024-06-11T00:00:00Z
 jira: KT-15638
 exl-id: d384627c-4b2f-4850-a599-e2b0e8f53320
 source-git-commit: 3001560b62cb4dbec92179a9db42abd84590c400
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '28'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Processus Workbench d’enregistrement et de lecture
 
-Une courte vidéo qui décrit le débogage du processus des formulaires dans Workbench
+Courte vidéo qui décrit le débogage du processus des formulaires dans Workbench
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429495/?learn=on)

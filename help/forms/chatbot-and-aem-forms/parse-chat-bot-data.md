@@ -1,6 +1,6 @@
 ---
-title: Utilisation d’AEM Forms avec Chatbot
-description: Analyse des données ChatBot
+title: Utilisation d’AEM Forms avec Chatbot
+description: Analyser les données de ChatBot
 feature: Adaptive Forms
 version: 6.5
 jira: KT-15344
@@ -10,16 +10,16 @@ level: Intermediate
 exl-id: 3c304b0a-33f8-49ed-a576-883df4759076
 duration: 22
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Analyse des données ChatBot
+# Analyser les données de ChatBot
 
 Un [webhook ChatBot](https://www.chatbot.com/help/webhooks/what-are-webhooks/) a été utilisé pour envoyer les données ChatBot à un servlet AEM.
-Les données capturées dans le ChatBot sont au format JSON ; l’utilisateur les a entrées dans l’objet attributes, comme illustré ci-dessous.
+Les données capturées dans le ChatBot sont au format JSON ; la personne les a saisies dans l’objet attributes, comme illustré ci-dessous.
 ![chatbot-data](assets/chat-bot-data.png)
 
 Pour fusionner les données avec le modèle XDP, nous devons créer le XML suivant. Notez l’élément racine du fichier xml. Il doit correspondre à l’élément racine du modèle XDP pour que la fusion des données se déroule correctement.

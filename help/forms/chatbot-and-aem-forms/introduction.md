@@ -1,6 +1,6 @@
 ---
-title: Utilisation d’AEM Forms avec Chatbot
-description: Remplissage d’un formulaire de PDF à l’aide de Chatbot
+title: Utilisation d’AEM Forms avec Chatbot
+description: Remplir un formulaire PDF avec ChatBot
 feature: Adaptive Forms
 version: 6.5
 jira: KT-15344
@@ -10,15 +10,15 @@ level: Intermediate
 exl-id: 8c51a374-7444-4a6a-99ed-dce671dc57cb
 duration: 161
 source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '102'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Remplissage d’un formulaire de PDF à l’aide de ChatBot
+# Remplir un formulaire PDF avec ChatBot
 
-Bienvenue dans notre tutoriel sur l’utilisation d’un chatBot pour remplir un formulaire de PDF avec Adobe Experience Manager Forms (AEM Forms) et l’envoyer pour signature numérique à l’aide d’Adobe Sign.
+Bienvenue dans notre tutoriel sur l’utilisation d’un ChatBot pour remplir un formulaire PDF avec Adobe Experience Manager Forms (AEM Forms) et l’envoyer pour signature numérique à l’aide d’Adobe Sign.
 
 Le ChatBot a été créé à l’aide de [chatbot](https://www.chatbot.com/).
 
@@ -30,10 +30,10 @@ La vidéo suivante présente le cas d’utilisation.
 
 ## Prérequis
 
-* Expérience avec AEM Forms.
-* Bonne compréhension d’AEM Forms OutputService.
-* Expérience avec AEM Forms Designer.
+* Experience avec AEM Forms.
+* Bonne compréhension d’AEM Forms OutputService.
+* Experience avec AEM Forms Designer.
 
 ## Étapes suivantes
 
-[Analyse des données ChatBot](parse-chat-bot-data.md)
+[Analyser les données de ChatBot](parse-chat-bot-data.md)

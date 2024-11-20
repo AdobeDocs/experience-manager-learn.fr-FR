@@ -11,9 +11,9 @@ feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
 source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '253'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Le style par défaut est appliqué au troisième bouton.
 
 ## Création du projet de thème
 
-L’étape suivante consiste à créer le projet de thème. Accédez au dossier racine de votre projet de thème et exécutez la commande _**npm run build**_ comme illustré dans la capture d’écran ci-dessous.
+L’étape suivante consiste à créer le projet de thème. Accédez au dossier racine de votre projet de thème et exécutez la commande _**npm run build**_ comme illustré dans la copie d’écran ci-dessous.
 
 ![build-theme](assets/build-theme.png)
 
@@ -47,7 +47,7 @@ Une fois le projet de thème créé, vous pouvez tester les modifications.
 
 ![final-buttons](assets/final-state-buttons.png)
 
-## Envoyer les modifications
+## Transmettre les modifications
 
-Si vous êtes satisfait des modifications, vous pouvez transmettre les modifications à votre instance cloud à l’aide du [pipeline front-end](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline)
+Si les modifications vous satisfont, vous pouvez transmettre les modifications à votre instance cloud à l’aide du [pipeline front-end](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline).
 

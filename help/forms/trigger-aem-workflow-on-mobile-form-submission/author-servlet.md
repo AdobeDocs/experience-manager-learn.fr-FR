@@ -1,6 +1,6 @@
 ---
-title: Déclencher le processus d’AEM sur l’envoi de formulaire HTML5 - Gérer l’envoi de formulaire
-description: Découvrez comment déclencher AEM workflow lorsque le formulaire HTML5 est envoyé et stocker les données envoyées dans le référentiel.
+title: Déclencher le workflow AEM sur l’envoi de formulaire HTM5 - Gestion de l’envoi du formulaire
+description: Découvrez comment déclencher le workflow AEM lorsque le formulaire HTML5 est envoyé et stocker les données envoyées dans le référentiel.
 feature: Mobile Forms
 doc-type: article
 version: 6.4,6.5
@@ -10,21 +10,21 @@ badgeVersions: label="AEM Forms 6.5" before-title="false"
 level: Experienced
 jira: kt-16215
 source-git-commit: 5f42678502a785ead29982044d1f3f5ecf023e0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '171'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
 
-# Stocker les données envoyées
+# Stockage des données envoyées
 
 L’étape suivante consiste à stocker les données envoyées dans le référentiel de l’instance de création AEM. Le servlet monté sur `/bin/startworkflow` enregistre les données envoyées.
-Un lanceur de workflow d’AEM est configuré pour se déclencher chaque fois qu’une nouvelle ressource de type `nt:file` est créée sous le noeud &lt;node_to_store_submit_data>. Ce workflow crée un PDF non interactif ou statique en fusionnant les données envoyées avec le modèle XDP. Le PDF généré est ensuite affecté à un utilisateur ou une utilisatrice pour révision et approbation.
+Un lanceur de workflows AEM est configuré pour se déclencher chaque fois qu’une nouvelle ressource de type `nt:file` est créée sous le nœud &lt;node_to_store_submitted_data>. Ce workflow crée un PDF non interactif ou statique en fusionnant les données envoyées avec le modèle XDP. Le PDF généré est ensuite affecté à un utilisateur ou une utilisatrice pour révision et approbation.
 
-Pour stocker les données envoyées sous le noeud &lt;node_to_store_submit_data> , nous utilisons le service OSGi `GetResolver` qui nous permet d’enregistrer les données envoyées à l’aide de l’utilisateur système `fd-service` disponible dans chaque installation AEM Forms.
+Pour stocker les données envoyées sous le nœud &lt;node_to_store_submitted_data>, nous utilisons le service OSGi `GetResolver` qui nous permet d’enregistrer les données envoyées à l’aide du profil d’utilisation système `fd-service` disponible dans chaque installation AEM Forms.
 
-Le noeud sous lequel les données envoyées sont stockées peut être configuré à l’aide de ConfigMgr comme expliqué dans la section [déploiement d’exemples de ressources](./deploy-assets.md)
+Le nœud sous lequel les données envoyées sont stockées peut être configuré à l’aide de ConfigMgr comme expliqué dans la section [déploiement d’exemples de ressources](./deploy-assets.md)
 
 ```java
 package com.aemforms.mobileforms.core.servlets;
@@ -123,5 +123,5 @@ public class StartWorkflow extends SlingAllMethodsServlet {
 
 ## Étapes suivantes
 
-[Lanceur de workflow et workflow](./review-workflow.md)
+[Lanceur de workflows et workflow](./review-workflow.md)
 
