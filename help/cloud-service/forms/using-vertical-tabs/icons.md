@@ -13,9 +13,9 @@ badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16418
 exl-id: 20e44be0-5490-4414-9183-bb2d2a80bdf0
 source-git-commit: faa859897b6b9fbb0acff02000611de216ddda3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '676'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ L’ajout d’icônes personnalisées aux onglets peut améliorer l’expérienc
 
 * Amélioration de l’utilisation : les icônes peuvent rapidement indiquer l’objectif de chaque onglet, ce qui facilite la recherche rapide des utilisateurs et utilisatrices. Les repères visuels tels que les icônes aident les utilisateurs et utilisatrices à naviguer de manière plus intuitive.
 
-* Hiérarchie visuelle et concentration : les icônes créent une séparation plus distincte entre les onglets, ce qui améliore la hiérarchie visuelle. Cela peut aider les onglets importants à se distinguer et à guider efficacement l’attention des utilisateurs.
+* Hiérarchie visuelle et concentration : les icônes créent une séparation plus distincte entre les onglets, ce qui améliore la hiérarchie visuelle. Les onglets importants sont ainsi distingués et l’attention des utilisateurs et utilisatrices est guidée plus efficacement.
 En suivant cet article, vous devriez pouvoir placer les icônes comme illustré ci-dessous.
 
 ![Icônes](assets/icons.png)
@@ -43,7 +43,7 @@ Les icônes marquées en rouge sont les nouvelles icônes ajoutées.
 
 ## Créer icon-map pour stocker les icônes
 
-Créez le icon-map dans le fichier _variable.scss . Le mappage SCSS $icon-map est un ensemble de paires clé-valeur, où chaque clé représente un nom d’icône (comme la maison, famille, etc.), et chaque valeur est le chemin d’accès au fichier image associé à cette icône.
+Créez l’élément icon-map dans le fichier _variable.scss. Le mappage SCSS $icon-map est un ensemble de paires clé-valeur, où chaque clé représente un nom d’icône (comme la maison, famille, etc.), et chaque valeur est le chemin d’accès au fichier image associé à cette icône.
 
 ![variable-scss](assets/variable_scss.png)
 
@@ -82,7 +82,7 @@ Ajoutez le code suivant au fichier _mixin.scss.
 
 Le mixin add-icon-to-vertical-tab est conçu pour ajouter une icône personnalisée en regard du texte sur un onglet vertical. Il vous permet d’inclure facilement une image en tant qu’icône sur les onglets, de la positionner à côté du texte et de la mettre en forme pour garantir cohérence et alignement.
 
-Ventilation du mixin. Voici ce que fait chaque partie du mixin :
+Répartition du mixin. Voici le rôle de chaque partie du mixin :
 
 Paramètres :
 

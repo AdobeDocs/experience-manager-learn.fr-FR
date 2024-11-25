@@ -7,9 +7,9 @@ sub-product: Experience Manager as a Cloud Service
 version: Cloud Service
 team: TM
 source-git-commit: 6b8a8dc5cdcddfa2d8572bfd195bc67906882f67
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1335'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 + Essais AEM {#aem-trials}
    + [Images](./aem-trials/images.md)
 + Listes de lecture{#playlists}
-   + [Développement AEM](./playlists/development.md)
+   + [Développement d’AEM](./playlists/development.md)
 + Présentation d’AEM as a Cloud Service{#introduction}
    + [Qu’est-ce qu’AEM as a Cloud Service ?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Architecture](./introduction/architecture.md)
@@ -141,9 +141,9 @@ ht-degree: 99%
       + [Navigateur de référentiel](./debugging/cloud-service/repository-browser.md)
       + Risques{#risks}
          + [Avertissements transversaux](./debugging/cloud-service/risks/traversals.md)
-+ AEM API{#aem-apis}
++ API d’AEM{#aem-apis}
    + [Vue d’ensemble](./apis/overview.md)
-   + [Appel des API d’AEM OpenAPI](./apis/invoke-openapi-based-aem-apis.md)
+   + [Appeler des API AEM basées sur OpenAPI](./apis/invoke-openapi-based-aem-apis.md)
 + Diffusion de contenu{#content-delivery}
    + [Nom de domaine personnalisé](./content-delivery/custom-domain-names.md)
    + [Nom de domaine personnalisé avec le réseau CDN géré par Adobe](./content-delivery/custom-domain-name-with-adobe-managed-cdn.md)

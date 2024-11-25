@@ -14,9 +14,9 @@ badgeIntegration: label="Intégration" type="positive"
 last-substantial-update: 2022-06-15T00:00:00Z
 duration: 443
 source-git-commit: 606607b85fae012e76d57b0b35820247a6862e32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2072'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Vous trouverez ci-dessous les variables Analytics qui font l’objet d’un suiv
 ### Objectifs {#objective}
 
 1. Créez une suite de rapports ou utilisez-en une existante.
-1. Configurez les [variables de conversion (eVars)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=fr) et les [événements de succès (événements)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event) dans la suite de rapports.
+1. Configurez les [variables de conversion (eVars)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=fr) et les [événements de succès (événements)](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-event) dans la suite de rapports.
 1. Créez un [projet Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=fr) pour analyser les données à l’aide d’outils qui vous permettent de créer, d’analyser et de partager rapidement des informations.
 1. Partagez le projet Analysis Workspace avec les autres personnes membres de l’équipe.
 

@@ -12,9 +12,9 @@ exl-id: 74cca740-bf5e-4cbd-9660-b0579301a3b4
 last-substantial-update: 2024-04-27T00:00:00Z
 duration: 919
 source-git-commit: 29ac030f3774da2c514525f7cb85f6f48b84369f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1467'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Les éléments suivants sont requis lors de la configuration d’un réseau priv
 + ID d’environnement de Cloud Manager
 + Réseau privé virtuel **basé sur des itinéraires**, avec accès à tous les paramètres de connexion nécessaires.
 
-Pour plus d’informations, [passez en revue la configuration, la configuration et l’obtention des informations d’identification de l’API Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth) afin de les utiliser pour effectuer un appel de l’API Cloud Manager.
+Pour plus d’informations, [découvrez comment installer, configurer et obtenir les informations d’identification d’API Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/extensibility/app-builder/server-to-server-auth), puis apprenez à les utiliser pour effectuer un appel API Cloud Manager.
 
 Ce tutoriel utilise `curl` pour créer les configurations de l’API Cloud Manager. Les commandes `curl` fournies reposent sur la syntaxe Linux/macOS. Si vous utilisez l’invite de commande Windows, remplacez le caractère de saut de ligne `\` par `^`.
 

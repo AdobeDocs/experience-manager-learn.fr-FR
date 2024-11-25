@@ -11,9 +11,9 @@ exl-id: d9618cc8-d399-4850-8714-c38991862045
 last-substantial-update: 2020-02-07T00:00:00Z
 duration: 177
 source-git-commit: 2625a9127c36ee191eb67128546864c9f6901663
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '558'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -82,8 +82,8 @@ Vous pouvez utiliser n’importe quel outil en ligne gratuit pour [générer le 
 
 ### Créer un formulaire adaptatif
 
-Créez un formulaire adaptatif basé sur le schéma XSD de l’étape précédente. Associez le formulaire pour utiliser la bibliothèque cliente « irs ». Cette bibliothèque cliente dispose du code permettant d’effectuer un appel POST vers la servlet, qui renvoie le PDF à l’application qui l’appelle.
-Le code suivant est déclenché lorsque vous cliquez sur le _PDF de téléchargement_
+Créez un formulaire adaptatif basé sur le XSD de l’étape précédente. Associez le formulaire pour utiliser la bibliothèque cliente « irs ». Cette bibliothèque cliente dispose du code permettant d’effectuer un appel POST vers le servlet, qui renvoie le PDF à l’application qui l’appelle.
+Le code suivant est déclenché lorsque vous cliquez sur le bouton _Télécharger le PDF_.
 
 ```javascript
 $(document).ready(function() {
@@ -211,7 +211,7 @@ public class GenerateIInteractiveDor extends SlingAllMethodsServlet {
 }
 ```
 
-Dans cet exemple de code, le nom xdp et d’autres paramètres sont extraits de l’objet de requête. Si le formulaire n’est pas basé sur un schéma XSD, un nouveau document XML est créé pour fusionner avec le fichier xdp. Cependant, si le formulaire est basé sur XSD, le noeud approprié est extrait directement des données envoyées du formulaire adaptatif et un document XML est généré pour fusionner avec le modèle xdp en conséquence.
+Dans cet exemple de code, le nom xdp et d’autres paramètres sont extraits de l’objet de requête. Si le formulaire n’est pas basé sur un schéma XSD, un nouveau document XML est créé pour fusionner avec le fichier xdp. Cependant, si le formulaire est basé sur XSD, le nœud approprié est extrait directement des données envoyées du formulaire adaptatif et un document XML est généré pour fusionner avec le modèle xdp en conséquence.
 
 ## Déployer l’exemple sur votre serveur
 
@@ -229,7 +229,7 @@ DevelopingWithServiceUser.core:getformsresourceresolver=fd-service
 
 >[!NOTE]
 >
->Lorsque vous ouvrez le PDF téléchargé à l’aide de la visionneuse pdf du navigateur, les données ne s’affichent pas dans le pdf. Ouvrez le PDF téléchargé à l’aide d’Adobe Acrobat ou d’Adobe Reader.
+>Lorsque vous ouvrez le PDF téléchargé à l’aide de la visionneuse de PDF du navigateur, les données ne s’affichent pas dans le PDF. Ouvrez le PDF téléchargé à l’aide d’Adobe Acrobat ou Adobe Reader.
 
 
 >[!NOTE]
