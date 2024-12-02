@@ -12,8 +12,8 @@ last-substantial-update: 2024-01-30T00:00:00Z
 jira: KT-14879
 thumbnail: KT-14879.jpeg
 exl-id: c362011e-89e4-479c-9a6c-2e5caa3b6e02
-source-git-commit: efa0a16649c41fab8309786a766483cfeab98867
-workflow-type: ht
+source-git-commit: 315bc1029b133f2ae857196f65e39229caaecaa1
+workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 100%
 
@@ -259,3 +259,4 @@ Les exigences de traitement des événements diffèrent d’un projet à l’aut
 - Le traitement des événements peut être effectué à l’aide de l’action Adobe I/O Runtime.
 - L’action Runtime peut communiquer avec des systèmes tels que vos applications internes, des solutions tierces et des solutions Adobe.
 - L’action Runtime sert de point d’entrée à un processus métier conçu autour d’un changement de contenu.
+
