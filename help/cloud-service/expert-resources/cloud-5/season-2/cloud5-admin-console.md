@@ -9,10 +9,10 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: eec1764e-1234-4b4c-993f-6584717e3c9e
 duration: 317
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '64'
-ht-degree: 100%
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+workflow-type: tm+mt
+source-wordcount: '76'
+ht-degree: 86%
 
 ---
 
@@ -26,3 +26,7 @@ Avez-vous déjà pensé à ce que fait chaque élément d’AEM dans l’Admin 
 
 + [Découvrir l’Admin Console](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/admin-console.html?lang=fr)
 + [Vue d’ensemble de l’Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html)
+
+## Ressources supplémentaires
+
+Regardez les vidéos connexes sur la page [Cloud 5 season 2](../cloud5-season-2.md) .

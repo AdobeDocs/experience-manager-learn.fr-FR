@@ -9,10 +9,10 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 09a4b4fd-b4b5-413b-bd27-d0c1c41b1c8d
 duration: 315
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '76'
-ht-degree: 100%
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+workflow-type: tm+mt
+source-wordcount: '88'
+ht-degree: 88%
 
 ---
 
@@ -26,3 +26,7 @@ ht-degree: 100%
 
 + Vue d’ensemble des contrôles automatisés
 + [Règles de qualité du code personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=fr)
+
+## Ressources supplémentaires
+
+Regardez les vidéos connexes sur la page [Cloud 5 season 2](../cloud5-season-2.md) .

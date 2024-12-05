@@ -10,10 +10,10 @@ recommendations: noDisplay, noCatalog
 thumbnail: 342133.jpeg
 exl-id: 817ea20d-d902-4497-83d3-5800ed6aaa8f
 duration: 315
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '88'
-ht-degree: 100%
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+workflow-type: tm+mt
+source-wordcount: '100'
+ht-degree: 90%
 
 ---
 
@@ -31,3 +31,7 @@ Darin et James discutent du Dispatcher AEM en mode cloud, notamment de certaines
 + [repostats](https://github.com/chetanmeh/oak-console-scripts/tree/master/src/main/groovy/repostats)
 + [Outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/)
 + [Outils de migration de Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration)
+
+## Ressources supplémentaires
+
+Regardez les vidéos connexes sur la page [Cloud 5 season 1](cloud5-season-1.md) .

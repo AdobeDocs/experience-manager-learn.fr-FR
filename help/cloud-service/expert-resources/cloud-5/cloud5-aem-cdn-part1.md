@@ -11,10 +11,10 @@ jira: KT-9797
 thumbnail: 340760.jpeg
 exl-id: 8b608b05-48ee-434f-8d5a-6c5ff1969dcf
 duration: 297
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '87'
-ht-degree: 100%
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+workflow-type: tm+mt
+source-wordcount: '99'
+ht-degree: 89%
 
 ---
 
@@ -32,3 +32,7 @@ Il s’agit d’une analyse profonde du réseau CDN fourni dans le cadre d’AEM
 + Protection DDOS
 
 [Afficher la partie 2](cloud5-aem-cdn-part2.md)
+
+## Ressources supplémentaires
+
+Regardez les vidéos connexes sur la page [Cloud 5 season 1](cloud5-season-1.md) .

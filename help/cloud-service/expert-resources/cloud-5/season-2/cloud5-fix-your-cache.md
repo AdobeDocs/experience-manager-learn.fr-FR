@@ -9,10 +9,10 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 591ed430-80b3-49fa-b52f-0d07a2e5ac0e
 duration: 311
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '61'
-ht-degree: 100%
+source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+workflow-type: tm+mt
+source-wordcount: '73'
+ht-degree: 86%
 
 ---
 
@@ -26,3 +26,7 @@ Dans une série en deux parties, découvrez comment optimiser votre mise en cach
 
 + [Mise en cache et diffusion de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html?lang=fr)
 + [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
+
+## Ressources supplémentaires
+
+Regardez les vidéos connexes sur la page [Cloud 5 season 2](../cloud5-season-2.md) .
