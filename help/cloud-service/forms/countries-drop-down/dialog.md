@@ -1,6 +1,6 @@
 ---
-title: Création de la boîte de dialogue pour le composant Pays
-description: Création de la boîte de dialogue pour le composant
+title: Créer la boîte de dialogue pour le composant Pays
+description: Créer la boîte de dialogue pour le composant
 solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
@@ -11,24 +11,24 @@ feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
 source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '132'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
-# Création de la boîte de dialogue pour le composant pays
+# Créer la boîte de dialogue pour le composant Pays
 
-Le composant Pays hérite de la structure de boîte de dialogue du composant déroulant, mais introduit une nouvelle propriété appelée continent. En outre, la boîte de dialogue est personnalisée pour masquer certains champs hérités du composant déroulant, tout en permettant aux auteurs de sélectionner le continent souhaité.
+Le composant Pays hérite de la structure de boîte de dialogue du composant déroulant, mais introduit une nouvelle propriété appelée Continent. En outre, la boîte de dialogue est personnalisée pour masquer certains champs hérités du composant déroulant, tout en permettant aux auteurs et autrices de sélectionner le continent souhaité.
 
-La méthode la plus simple pour créer cette boîte de dialogue est la suivante :
+La méthode la plus simple pour créer cette boîte de dialogue est la suivante :
 
-1. Dans votre projet AEM, créez un dossier nommé _cq_dialog sous le dossier du composant pays.
+1. Dans votre projet AEM, créez un dossier nommé _cq_dialog sous le dossier du composant Pays.
 2. Dans le dossier _cq_dialog, créez un fichier nommé .content.xml.
-3. Collez le code XML fourni ci-dessous dans ce fichier.
-4. Enregistrez vos modifications et synchronisez votre projet avec AEM.
+3. Collez le code XML fourni ci-dessous dans ce fichier.
+4. Enregistrez vos modifications et synchronisez votre projet avec AEM.
 
-Cette opération ajoute la configuration de la boîte de dialogue pour le composant Pays .
+Cette opération ajoute la configuration de la boîte de dialogue pour le composant Pays.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

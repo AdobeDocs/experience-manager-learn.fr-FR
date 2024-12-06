@@ -11,40 +11,40 @@ feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16517
 source-git-commit: f9a1fb40aabb6fdc1157e1f2576f9c0d9cf1b099
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '384'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
 # Créer un modèle Sling pour le composant
 
-Un modèle Sling dans AEM est une structure basée sur Java utilisée pour simplifier le développement de la logique principale pour les composants. Il permet aux développeurs de mapper des données provenant de ressources AEM (noeuds JCR) à des objets Java à l’aide d’annotations, offrant ainsi un moyen propre et efficace de gérer les données dynamiques pour les composants.
-Cette classe, CountriesDropDownImpl, est une implémentation de l’interface CountriesDropDown dans un projet AEM (Adobe Experience Manager). Il alimente un composant de liste déroulante dans lequel les utilisateurs peuvent sélectionner un pays en fonction de leur continent sélectionné. Les données de liste déroulante sont chargées dynamiquement à partir d’un fichier JSON stocké dans la gestion des actifs numériques AEM (Digital Asset Manager).
+Un modèle Sling dans AEM est un cadre basé sur Java, utilisé pour simplifier le développement de la logique de back-end pour les composants. Il permet aux développeurs et développeuses de mapper des données provenant de ressources AEM (nœuds JCR) avec des objets Java à l’aide d’annotations, offrant ainsi un moyen net et efficace de gérer les données dynamiques pour les composants.
+Cette classe, CountriesDropDownImpl, est une implémentation de l’interface CountriesDropDown dans un projet AEM (Adobe Experience Manager). Elle alimente un composant déroulant dans lequel il est possible de sélectionner un pays en fonction du continent sélectionné. Les données de liste déroulante sont chargées dynamiquement à partir d’un fichier JSON stocké dans la gestion des actifs numériques AEM (AEM DAM).
 
 **Champs dans la classe**
 
-* **multiSelect** : indique si la liste déroulante autorise plusieurs sélections.
-injecté à partir des propriétés du composant à l’aide de @ValueMapValue avec la valeur par défaut false.
-* **request** : représente la requête HTTP actuelle. Utile pour accéder à des informations spécifiques au contexte.
-* **continent** : stocke le continent sélectionné pour la liste déroulante (par exemple, &quot;asie&quot;, &quot;europe&quot;).
-injecté à partir de la boîte de dialogue de propriété du composant, avec une valeur par défaut &quot;asia&quot; si aucun n’est fourni.
-* **resourceResolver** : utilisé pour accéder et manipuler des ressources dans le référentiel AEM.
-* **jsonData** : objet JSONObject qui stocke les données analysées du fichier JSON correspondant au continent sélectionné.
+* **multiSelect** : indique si la liste déroulante autorise plusieurs sélections.
+Injecté à partir des propriétés du composant à l’aide de @ValueMapValue avec la valeur par défaut false.
+* **request** : représente la requête HTTP actuelle. Utile pour accéder à des informations spécifiques au contexte.
+* **continent** : stocke le continent sélectionné pour la liste déroulante (par exemple, « asie », « europe »).
+Injecté à partir de la boîte de dialogue de propriétés du composant, avec la valeur par défaut « asia » si aucune n’est fournie.
+* **resourceResolver** : utilisé pour accéder à des ressources dans le référentiel AEM et les manipuler.
+* **jsonData** : objet JSONObject qui stocke les données analysées du fichier JSON correspondant au continent sélectionné.
 
 **Méthodes de la classe**
 
 * **getContinent()** Méthode simple pour renvoyer la valeur du champ continent.
 Consigne la valeur renvoyée à des fins de débogage.
-* **init()** Méthode de cycle de vie annotée avec @PostConstruct, exécutée après la création de la classe et l’injection des dépendances. Construit dynamiquement le chemin d’accès au fichier JSON en fonction de la valeur de continent.
-Récupère le fichier JSON de la gestion des actifs numériques AEM à l’aide de resourceResolver.
-Adapte le fichier à une ressource, lit son contenu et l’analyse dans un objet JSONObject.
+* **init()** Méthode de cycle de vie annotée avec @PostConstruct, exécutée après la création de la classe et l’injection des dépendances. Construit dynamiquement le chemin d’accès au fichier JSON en fonction de la valeur de continent.
+Récupère le fichier JSON à partir de la gestion des actifs numériques AEM à l’aide de resourceResolver.
+Adapte le fichier à une ressource, lit son contenu et l’analyse dans un objet JSONObject.
 Consigne les erreurs ou les avertissements pendant ce processus.
-* **getEnums()** Récupère toutes les clés (codes pays) des données JSON analysées.
+* **getEnums()** Récupère toutes les clés (codes pays) à partir des données JSON analysées.
 Trie les clés par ordre alphabétique et les renvoie sous la forme d’un tableau.
 Consigne le nombre de codes pays renvoyés.
-* **getEnumNames()** Extrait tous les noms de pays des données JSON analysées.
+* **getEnumNames()** Extrait tous les noms de pays à partir des données JSON analysées.
 Trie les noms par ordre alphabétique et les renvoie sous la forme d’un tableau.
 Consigne le nombre total de pays et chaque nom de pays récupéré.
 * **isMultiSelect()** Renvoie la valeur du champ multiSelect pour indiquer si la liste déroulante autorise plusieurs sélections.
