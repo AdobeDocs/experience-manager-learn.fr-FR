@@ -11,14 +11,15 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 last-substantial-update: 2020-03-20T00:00:00Z
 duration: 77
-source-git-commit: 7e0d7e87d72aa1e4450649afa6a962099ceb2db4
-workflow-type: ht
-source-wordcount: '352'
-ht-degree: 100%
+source-git-commit: e02c3f66787c78152700b24236c29e9796f721de
+workflow-type: tm+mt
+source-wordcount: '386'
+ht-degree: 91%
 
 ---
 
 # Intégrer AEM Forms et Marketo
+
 
 Marketo, qui fait partie d’Adobe, fournit un logiciel d’automatisation du marketing axé sur le compte (Account-Based Marketing), notamment via les e-mails, les dispositifs mobiles, les réseaux sociaux, les publicités numériques, la gestion du web et les analyses.
 
@@ -27,6 +28,10 @@ Grâce au modèle de données de formulaire d’AEM Forms, nous pouvons désorm
 [En savoir plus sur le modèle de données de formulaire](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/data-integration.html).
 
 Marketo fournit une API REST qui permet l’exécution à distance de nombreuses fonctionnalités du système. De la création de programmes à l’import de Leads en bloc, de nombreuses options permettent un contrôle précis d’une instance Marketo. L’utilisation du modèle de données de formulaire est assez simple pour intégrer AEM Forms avec Marketo.
+
+>[!NOTE]
+>
+>Ce tutoriel est spécialement adapté à AEM Forms 6.5. Si vous souhaitez intégrer AEM Forms as a Cloud Service à Adobe Marketo Engage, reportez-vous à la [documentation dédiée à cette intégration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-adaptive-form-with-market-engage/integrate-form-to-marketo-engage).
 
 Ce tutoriel vous indiquera les étapes nécessaires à l’intégration d’AEM Forms avec Marketo à l’aide du modèle de données de formulaire. Une fois le tutoriel terminé, vous disposerez d’un lot OSGi qui effectuera l’authentification personnalisée par rapport à Marketo. Vous avez également configuré la source de données à l’aide du fichier Swagger fourni.
 
