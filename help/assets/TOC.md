@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 30745ba12e9b1bd9e1f3f137c68456efb67cf39a
-workflow-type: ht
-source-wordcount: '445'
-ht-degree: 100%
+source-git-commit: efaf77a9f8e68f679be3469c39697b57366684b3
+workflow-type: tm+mt
+source-wordcount: '447'
+ht-degree: 99%
 
 ---
 
@@ -62,6 +62,7 @@ ht-degree: 100%
    + [Ressources 3D](./advanced/3d-assets.md)
    + [Sortie du PDF d’annotations](./advanced/customizing-annotations-pdf-output.md)
    + [Rapports sur les ressources](./advanced/asset-reports.md)
+   + [Contents credentials](./advanced/content-credentials.md)
    + [Balises bloquées](./advanced/blocked-tags.md)
    + [Extraire l’archive](./advanced/extract-archive.md)
    + [Autorisations (groupes d’utilisateurs et d’utilisatrices fermés)](./advanced/closed-user-groups.md)
