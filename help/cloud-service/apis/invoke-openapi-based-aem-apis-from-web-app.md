@@ -1,5 +1,5 @@
 ---
-title: Comment appeler des API AEM basées sur OpenAPI à partir d’une application web
+title: Appeler des API AEM basées sur OpenAPI avec authentification de l’utilisateur à partir d’une application web
 description: Découvrez comment appeler les API AEM basées sur OpenAPI sur AEM as a Cloud Service à partir d’une application web personnalisée à l’aide de l’authentification par application web OAuth.
 version: Cloud Service
 feature: Developing
@@ -9,15 +9,15 @@ level: Intermediate
 doc-type: Tutorial
 jira: KT-16718
 thumbnail: KT-16718.jpeg
-last-substantial-update: 2024-12-17T00:00:00Z
+last-substantial-update: 2025-01-09T00:00:00Z
 duration: 0
-source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
+exl-id: dc35256a-3873-413f-b282-90948efd5f31
+source-git-commit: 3e91387368943b1b0d62c57f8172a0306758b28f
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2433'
 ht-degree: 1%
 
 ---
-
 
 # Appeler des API AEM basées sur OpenAPI avec authentification de l’utilisateur à partir d’une application web{#invoke-openapi-based-aem-apis-from-web-app}
 
@@ -36,6 +36,8 @@ Avant de commencer, comprenons l’exemple d’application web, la gestion des i
 L’application WKND PIM est un exemple d’application web conçue pour gérer les attributs de produit et les métadonnées de ses ressources stockées dans AEM as a Cloud Service. Cet exemple montre comment les applications web peuvent s’intégrer de manière transparente aux API d’Adobe pour fournir des workflows efficaces et axés sur l’utilisateur.
 
 Le projet Adobe Developer Console (ADC) est configuré pour accéder à l’API de création Assets à l’aide de l’authentification de l’application web OAuth. Il fournit les _client_id_ et _client_secret_ nécessaires à l’application web WKND-PIM pour lancer le flux d’octroi _authorization_code_.
+
+>[!VIDEO](https://video.tv.adobe.com/v/34260?quality=12&learn=on)
 
 Le diagramme suivant illustre le flux fonctionnel de l’application web WKND-PIM _obtention de jetons d’accès spécifiques à l’utilisateur pour interagir avec l’API de création Assets_.
 
@@ -404,6 +406,11 @@ Les appels d’API AEM basés sur OpenAPI sont effectués côté serveur (middle
 
 Pour actualiser le jeton d’accès avant son expiration, vous pouvez implémenter le flux de jeton d’actualisation. Toutefois, pour que le tutoriel reste simple, l’application web WKND-PIM n’implémente pas le flux de jeton d’actualisation.
 
+
+>[!TIP]
+>
+>Vous pouvez suivre la section suivante pour tester l’application web WKND-PIM sur votre ordinateur local et obtenir une expérience pratique avec le flux d’authentification et les appels API de l’application web OAuth.
+
 ## Configuration et exécution de l’application web
 
 Configurez et exécutez l’application web WKND-PIM sur votre ordinateur local pour comprendre le flux d’authentification et les appels API de l’application web OAuth.
@@ -526,7 +533,7 @@ Par défaut, le projet WKND Sites ne dispose pas du schéma de métadonnées de 
 
    ![Accéder au dossier](assets/web-app/navigate-to-folder.png)
 
-1. Créez **PIM** et créez-y le dossier **Camping**, puis téléchargez [exemples d’images](./assets/web-app/camping-gear-imgs.zip) dans le dossier **Camping**.
+1. Créez un **PIM** et, à l’intérieur de celui-ci, créez le dossier **Camping**, puis téléchargez [exemples d’images](./assets/web-app/camping-gear-imgs.zip) dans le dossier **Camping**.
 
    ![Dossier PIM](assets/web-app/pim-folder.png)
 
@@ -644,7 +651,7 @@ Grâce aux étapes ci-dessus, les ressources du dossier **PIM** sont prêtes à 
 
 >[!IMPORTANT]
 >
->Si l’utilisateur authentifié ne dispose pas des autorisations nécessaires pour réviser ou mettre à jour les métadonnées des ressources, les API AEM basées sur OpenAPI renvoient une erreur 403 Interdit. Ainsi, même si l’utilisateur est authentifié et possède un jeton d’accès IMS valide, il ne peut pas accéder aux ressources AEM sans les autorisations requises.
+>Si l’utilisateur authentifié ne dispose pas des autorisations nécessaires pour réviser ou mettre à jour les métadonnées de la ressource, les API AEM basées sur OpenAPI renvoient une erreur 403 Interdit. Ainsi, même si l’utilisateur est authentifié et possède un jeton d’accès IMS valide, il ne peut pas accéder aux ressources AEM sans les autorisations requises.
 
 
 ### Vérifier le code de l’application
