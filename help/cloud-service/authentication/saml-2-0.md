@@ -11,10 +11,10 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 87dd4873152d4690abb1efcfebd43d10033afa0a
-workflow-type: ht
-source-wordcount: '3919'
-ht-degree: 100%
+source-git-commit: a1f7395cc5f83174259d7a993fefc9964368b4bc
+workflow-type: tm+mt
+source-wordcount: '4037'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ Le flux type d’une intégration SAML de publication AEM est le suivant :
    + Le fournisseur d’identité demande à l’utilisateur ou l’utilisatrice ses informations d’identification.
    + L’utilisateur ou l’utilisatrice est déjà authentifié(e) auprès du fournisseur d’identité et n’a pas à fournir d’informations d’identification supplémentaires.
 1. Le fournisseur d’identité génère une assertion SAML contenant les données de l’utilisateur ou de l’utilisatrice et la signe à l’aide du certificat privé du fournisseur d’identité.
-1. Le fournisseur d’identité envoie l’assertion SAML via une HTTP POST, par le biais du navigateur web de l’utilisateur ou de l’utilisatrice, au service de publication AEM.
+1. Le fournisseur d’identité envoie l’assertion SAML à AEM Publish via le POST HTTP, par le biais du navigateur web de l’utilisateur (RESPECTIVE_PROTECTED_PATH/saml_login).
 1. Le service de publication AEM reçoit l’assertion SAML et valide l’intégrité et l’authenticité de l’assertion SAML à l’aide du certificat public du fournisseur d’identité.
 1. Le service de publication AEM gère l’enregistrement de l’utilisateur ou de l’utilisatrice AEM en fonction de la configuration OSGi SAML 2.0 et du contenu de l’assertion SAML.
    + Crée un utilisateur ou une utilisatrice
@@ -440,6 +440,9 @@ Une fois l’authentification au fournisseur d’identité réussie, le fourniss
 /0190 { /type "allow" /method "POST" /url "*/saml_login" }
 ```
 
+>[!NOTE]
+>Lors du déploiement de plusieurs configurations SAML dans AEM pour divers chemins protégés et points d’entrée IDP distincts, assurez-vous que l’IDP publie au point d’entrée RESPECTIVE_PROTECTED_PATH/saml_login pour sélectionner la configuration SAML appropriée du côté AEM. S’il existe des configurations SAML en double pour le même chemin protégé, la sélection de la configuration SAML se produit de manière aléatoire.
+
 Si la réécriture de l’URL sur le serveur web Apache est configurée (`dispatcher/src/conf.d/rewrites/rewrite.rules`), assurez-vous que les requêtes vers les points d’entrée `.../saml_login` ne sont pas accidentellement tronquées.
 
 ### Activation de l’appartenance à un groupe dynamique pour les utilisateurs et utilisatrices SAML dans de nouveaux environnements
@@ -561,6 +564,12 @@ Déployez la branche Git Cloud Manager cible (dans cet exemple, `develop`), à 
 ## Appel de l’authentification SAML
 
 Le flux d’authentification SAML peut être appelé à partir d’une page web d’un site AEM, en créant un lien spécialement conçu ou un bouton. Les paramètres décrits ci-dessous peuvent être définis par programmation selon les besoins. Par exemple, un bouton de connexion peut définir le `saml_request_path`, où la personne est amenée à accéder à différentes pages d’AEM en fonction du contexte du bouton.
+
+## Mise en cache sécurisée lors de l’utilisation de SAML
+
+Sur l’instance de publication AEM, la plupart des pages sont généralement mises en cache. Toutefois, pour les chemins protégés par SAML, la mise en cache doit être désactivée ou la mise en cache sécurisée activée à l’aide de la configuration auth_checker. Pour plus d’informations, reportez-vous aux détails fournis [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/configuring/permissions-cache)
+
+Gardez à l’esprit que si vous mettez en cache des chemins protégés sans activer auth_checker, vous pouvez rencontrer un comportement imprévisible.
 
 ### Requête GET
 
