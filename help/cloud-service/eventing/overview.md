@@ -12,9 +12,9 @@ last-substantial-update: 2023-12-07T00:00:00Z
 jira: KT-14649
 thumbnail: KT-14649.jpeg
 exl-id: 142ed6ae-1659-4849-80a3-50132b2f1a86
-source-git-commit: ede52c6c9feb0b35bc3729e28591cb4e7c7600f7
-workflow-type: ht
-source-wordcount: '833'
+source-git-commit: 99aa43460a76460175123a5bfe5138767491252b
+workflow-type: tm+mt
+source-wordcount: '860'
 ht-degree: 100%
 
 ---
@@ -125,5 +125,14 @@ Pour plus d’informations, consultez [Traitement des événements AEM via des �
           Découvrez comment traiter les événements AEM reçus à l’aide de l’action Adobe I/O Runtime. Le traitement des événements comprend le rappel AEM, la persistance des données d’événement et leur affichage dans la SPA.
         </p>
       </td>
-  </tr>    
+  </tr>
+  <tr>
+    <td>
+        <a  href="./examples/assets-pim-integration.md"><img alt="Événements AEM Assets pour l’intégration PIM" src="./assets/examples/assets-pim-integration/PIM-integration-tile.png"/></a>
+        <div><strong><a href="./examples/assets-pim-integration.md">Événements AEM Assets pour l’intégration PIM</a></strong></div>
+        <p>
+          Découvrez comment intégrer AEM Assets et les systèmes PIM pour les mises à jour de métadonnées.
+        </p>
+      </td>
+  </tr> 
 </table>
