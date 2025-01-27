@@ -11,22 +11,22 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: 60139d8531d65225fa1aa957f6897a6688033040
-workflow-type: ht
-source-wordcount: '687'
-ht-degree: 100%
+source-git-commit: d199ff3b9f4d995614c193f52dc90270f2283adf
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 80%
 
 ---
 
 # Comment utiliser l’environnement de développement rapide
 
-Découvrez l’**utilisation** de l’environnement de développement rapide (RDE) dans AEM as a Cloud Service. Déployez du code et du contenu pour accélérer les cycles de développement de votre code quasi-final vers le RDE, à partir de votre environnement de développement intégré (IDE) préféré.
+Découvrez **comment utiliser** l’environnement de développement rapide (RDE) dans AEM as a Cloud Service. Déployez du code et du contenu pour accélérer les cycles de développement de votre code quasi-final vers le RDE, à partir de votre environnement de développement intégré (IDE) préféré.
 
 Utilisez le [projet de sites WKND AEM](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) pour apprendre à déployer divers artefacts AEM sur le RDE en exécutant la commande `install` du RDE d’AEM à partir de votre IDE favori.
 
 - Déploiement du code AEM et du package de contenu (tous, ui.apps)
 - Déploiement du lot OSGi et du fichier de configuration
-- Apache et Dispatcher configurent le déploiement en tant que fichier zip.
+- Déploiement des configurations Apache et Dispatcher sous la forme d’un fichier zip
 - Déploiement de fichiers individuels tels que HTL, `.content.xml` (boîte de dialogue XML)
 - Examinez d’autres commandes du RDE, comme `status, reset and delete`.
 
@@ -96,7 +96,7 @@ Ajoutons le `Hello World Component` et déployons-le sur le RDE.
    ...
    ```
 
-1. Vérifiez les modifications sur le SDK AEM local en exécutant le build Maven ou en synchronisant les différents fichiers.
+1. Vérifiez les modifications sur le SDK AEM local en exécutant la version Maven ou en synchronisant des fichiers individuels.
 
 1. Déployez les modifications apportées au RDE via le package `ui.apps` ou en déployant les fichiers de boîte de dialogue et HTL :
 
@@ -191,7 +191,7 @@ Les fichiers de configuration Apache ou Dispatcher **ne peuvent pas être déplo
    ...
    ```
 
-1. Vérifiez les modifications localement, et consultez [Exécution locale de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=fr#ex%C3%A9cution-locale-de-dispatcher) pour plus d’informations.
+1. Vérifiez les modifications localement, et consultez [Exécution locale de Dispatcher](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) pour plus d’informations.
 1. Déployez les modifications apportées au RDE en exécutant la commande suivante :
 
    ```shell
@@ -200,7 +200,49 @@ Les fichiers de configuration Apache ou Dispatcher **ne peuvent pas être déplo
    $ aio aem:rde:install target/aem-guides-wknd.dispatcher.cloud-2.1.3-SNAPSHOT.zip
    ```
 
+1. Vérifiez les modifications sur le RDE.
+
+### Déploiement des fichiers de configuration (YAML)
+
+Le réseau CDN, les tâches de maintenance, le transfert de journal et les fichiers de configuration de l’authentification de l’API AEM peuvent être déployés sur le RDE à l’aide de la commande `install`. Ces configurations sont gérées en tant que fichiers YAML dans le dossier `config` du projet AEM. Pour plus d’informations, voir [Configurations prises en charge](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations).
+
+Pour savoir comment déployer les fichiers de configuration, nous allons améliorer le fichier de configuration `cdn` et le déployer sur le RDE.
+
+1. Ouvrez le fichier `cdn.yaml` à partir du dossier `config` .
+1. Mettez à jour la configuration souhaitée, par exemple, mettez à jour la limite de débit à 200 requêtes par seconde
+
+   ```yaml
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev", "stage", "prod"]
+   data:
+     trafficFilters:
+       rules:
+       #  Block client for 5m when it exceeds an average of 100 req/sec to origin on a time window of 10sec
+       - name: limit-origin-requests-client-ip
+         when:
+           reqProperty: tier
+           equals: 'publish'
+         rateLimit:
+           limit: 200 # updated rate limit
+           window: 10
+           count: fetches
+           penalty: 300
+           groupBy:
+             - reqProperty: clientIp
+         action: log
+   ...
+   ```
+
+1. Déployez les modifications apportées au RDE en exécutant la commande suivante :
+
+   ```shell
+   $ aio aem:rde:install -t env-config ./config/cdn.yaml
+   ```
+
 1. Vérifier les modifications apportées au RDE
+
 
 ## Commandes supplémentaires du plug-in du RDE AEM
 
@@ -222,7 +264,7 @@ aem rde restart  Restart the author and publish of an RDE
 aem rde status   Get a list of the bundles and configs deployed to the current rde.
 ```
 
-À l’aide des commandes ci-dessus, votre RDE peut être géré à partir de votre IDE favori pour accélérer le cycle de vie du développement/déploiement.
+À l’aide des commandes ci-dessus, votre RDE peut être géré à partir de votre IDE préféré pour un cycle de vie de développement/déploiement plus rapide.
 
 ## Étape suivante
 
@@ -231,8 +273,8 @@ En savoir plus sur les [cycle de vie de développement/déploiement à l’aide 
 
 ## Ressources supplémentaires
 
-[Documentation relatives aux commandes du RDE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html?lang=fr#rde-cli-commands)
+[Documentation relatives aux commandes du RDE](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
 [Plug-in d’interface de ligne de commande Adobe I/O Runtime pour les interactions avec les environnements de développement rapide AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 
-[Configuration du projet AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=fr)
+[Configuration du projet AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup)
