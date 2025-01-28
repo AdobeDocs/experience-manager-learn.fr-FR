@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 900
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
+source-git-commit: fcd2d7ae7a0bddb0d80aada2f206be7629b676e3
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1705'
 ht-degree: 0%
 
 ---
-
 
 # Créer un nouveau bloc
 
@@ -136,6 +136,12 @@ Le teaser se compose de deux zones logiques : image et texte. Pour simplifier le
 - Regroupez les champs de contenu texte à l’aide de [regroupement d’éléments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) et [ réduction de champ pour le CTA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
 
 Si vous ne connaissez pas les notions de [réduction de champ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse), [regroupement d’éléments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) ou [inférence de type](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) consultez la documentation liée avant de continuer, car elles sont essentielles pour créer un modèle de bloc bien structuré.
+
+Dans l&#39;exemple ci-dessous :
+
+- [Inférence de type](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) est utilisé pour créer automatiquement un élément d’HTML `<img>` à partir du champ `image`. La réduction de champ est utilisée avec les champs `image` et `imageAlt` pour créer un élément d’HTML `<img>`. L’attribut `src` est défini sur la valeur du champ `image`, tandis que l’attribut `alt` est défini sur la valeur du champ `imageAlt`.
+- `textContent` est un nom de groupe utilisé pour classer les champs. Elle doit être sémantique, mais peut être n’importe quoi d’autre propre à ce bloc. Cela indique à l’éditeur universel de rendre tous les champs avec ce préfixe dans le même élément `<div>` dans la sortie d’HTML finale.
+- La réduction du champ est également appliquée dans le groupe de `textContent` pour l’appel à l’action (CTA). Le CTA est créé en tant que `<a>` via une [inférence de type](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference). Le champ `cta` est utilisé pour définir l’attribut `href` de l’élément `<a>` et le champ `ctaText` fournit le contenu textuel du lien dans les balises `<a ...>`.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
