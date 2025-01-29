@@ -9,9 +9,10 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 500
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: d1ebcaf4-cea6-4820-8b05-3a0c71749d33
+source-git-commit: 567d2803c5cee274104b38f847820f7665320195
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -43,3 +44,4 @@ Après avoir créé le site dans l’instance de création AEM, publiez-le dans 
 3. Choisissez **Aperçu** sous **Destinations** et cliquez sur **Suivant**.
 4. Sous **Inclure les paramètres enfants**, sélectionnez **Inclure les enfants**, désélectionnez d’autres options, puis cliquez sur **OK**.
 5. Cliquez sur **Publish** pour publier le contenu du site à prévisualiser.
+6. Une fois publiées pour la prévisualisation, les pages sont disponibles dans l’environnement de prévisualisation des Edge Delivery Services (les pages n’apparaîtront pas dans le service de prévisualisation AEM).
