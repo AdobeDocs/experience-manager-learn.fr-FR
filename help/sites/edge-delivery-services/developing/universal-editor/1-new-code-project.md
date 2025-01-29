@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 900
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: e1fb7a58-2bba-4952-ad53-53ecf80836db
+source-git-commit: 9b10d79190d805b86884f033e040891655c3c890
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '269'
 ht-degree: 1%
 
 ---
-
 
 # Création d’un projet de code Edge Delivery Services
 
@@ -32,7 +32,7 @@ Pour créer un projet de code Edge Delivery Services dont le contenu est modifia
 3. **Installez l’application GitHub de synchronisation du code AEM** et accordez l’accès au référentiel. Vous pouvez trouver l’application [ ici](https://github.com/apps/aem-code-sync).
 4. **Configurez la`fstab.yaml`** de votre nouveau projet pour pointer vers le service de création AEM approprié.
 
-   * Pour tester, vous pouvez utiliser des environnements AEM as a Cloud Service inférieurs (évaluation, développement ou RDE), mais les implémentations de sites web réels doivent être configurées pour utiliser un service de création AEM de production.
+   * Pour réaliser des expériences, vous pouvez utiliser des environnements AEM as a Cloud Service inférieurs (évaluation ou développement), mais les implémentations de sites web réels doivent être configurées pour utiliser un service AEM de production.
 
 5. **Modifiez le`paths.json`** de votre nouveau projet pour mapper le chemin du service de création AEM à la racine de votre site web.
 
