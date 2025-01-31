@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 500
 exl-id: d1ebcaf4-cea6-4820-8b05-3a0c71749d33
-source-git-commit: 567d2803c5cee274104b38f847820f7665320195
+source-git-commit: b40bf5afc28cb350c470336e38f8ca127fb05d79
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,15 @@ Le site AEM est l’endroit où le contenu du site web est stocké et créé. L�
 
 ![Nouveau site AEM pour Edge Delivery Services et éditeur universel](./assets/2-new-aem-site/new-site.png)
 
-Pour créer un site AEM, procédez comme suit :
-
+Pour créer un site AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) suivez la [procédure détaillée décrite dans la documentation.  Vous trouverez ci-dessous un résumé des étapes, y compris les valeurs utilisées dans ce tutoriel.
 1. **Créez un site** dans l’instance de création AEM. Ce tutoriel utilise les noms de site suivants :
    * Titre du site : `WKND (Universal Editor)`
    * Nom du site : `aem-wknd-eds-ue`
+
+      * La valeur du nom du site doit correspondre au nom du chemin du site [ajouté à `paths.json`](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/path-mapping).
+
 2. **Importez le dernier modèle** à partir du modèle de site de création [Edge Delivery Services avec AEM](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 3. **Nommez le site** pour correspondre au nom du référentiel GitHub et définissez l’URL GitHub comme URL du référentiel.
-
-Pour obtenir des instructions détaillées, consultez la section [Création et modification d’un site AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-aem-site) du guide de prise en main.
 
 ## Publish du nouveau site à prévisualiser
 
