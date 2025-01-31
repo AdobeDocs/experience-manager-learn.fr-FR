@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 700
 exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
-source-git-commit: 6f0cbdd638ed909b5897521557b65dcf74ac1012
+source-git-commit: ecf37e1f964d0cda90eeca11b224ab950727d2ad
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 2%
@@ -187,8 +187,8 @@ Ces scripts ne sont pas préconfigurés avec le modèle AEM Boilerplate XWalk, m
 
 | Script NPM | Commande | Description |
 |------------------|------------------------------------------------|-------------------------------------------------------|
-| `lint:js:fix` | `npm run lint:js --fix` | Correction automatique des problèmes de liaison JavaScript. |
-| `lint:css:fix` | `stylelint blocks/**/*.css styles/*.css --fix` | Correction automatique des problèmes de liaison CSS. |
+| `lint:js:fix` | `npm run lint:js -- --fix` | Correction automatique des problèmes de liaison JavaScript. |
+| `lint:css:fix` | `stylelint blocks/**/*.css styles/*.css -- --fix` | Correction automatique des problèmes de liaison CSS. |
 | `lint:fix` | `npm run lint:js:fix && npm run lint:css:fix` | Exécute les scripts de correctif JS et CSS pour un nettoyage rapide. |
 
 >[!TAB exemple package.json]
@@ -200,8 +200,8 @@ Les entrées de script suivantes peuvent être ajoutées au tableau de `scripts`
   ...
   "scripts": [
     ...,
-    "lint:js:fix": "npm run lint:js --fix",
-    "lint:css:fix": "npm run lint:css --fix",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "lint:css:fix": "npm run lint:css -- --fix",
     "lint:fix": "npm run lint:js:fix && npm run lint:css:fix",
     ...
   ]
