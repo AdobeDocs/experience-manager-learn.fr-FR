@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
-source-git-commit: fcd2d7ae7a0bddb0d80aada2f206be7629b676e3
+source-git-commit: 775821f37df87905ea176b11ecf0ed4a42d00940
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1742'
 ht-degree: 0%
 
 ---
@@ -322,6 +322,8 @@ La définition de bloc enregistre le bloc dans l’éditeur universel. Voici une
 | `definition.plugins.xwalk.page.resourceType` | Définit le type de ressource Sling pour le rendu du composant dans l’éditeur universel. Utilisez toujours un type de ressource `core/franklin/components/block/v#/block`. |
 | `definition.plugins.xwalk.page.template.name` | Nom du bloc. Il doit être en minuscules et séparé par des tirets pour correspondre au nom de dossier du bloc. Cette valeur est également utilisée pour libeller l’instance du bloc dans l’éditeur universel. |
 | `definition.plugins.xwalk.page.template.model` | Associe cette définition à sa définition `model`, qui contrôle les champs de création affichés pour le bloc dans l’éditeur universel. La valeur ici doit correspondre à une valeur `model.id`. |
+| `definition.plugins.xwalk.page.template.classes` | Propriété facultative, dont la valeur est ajoutée à l’attribut `class` de l’élément d’HTML de bloc. Cela permet d’avoir des variantes d’un même bloc. La valeur `classes` peut être rendue modifiable en [ajoutant un champ de classes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) au [modèle](#block-model) du bloc. |
+
 
 Voici un exemple JSON pour la définition de bloc :
 
