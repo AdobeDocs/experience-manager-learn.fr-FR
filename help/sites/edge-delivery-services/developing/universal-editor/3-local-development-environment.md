@@ -9,13 +9,13 @@ level: Beginner
 doc-type: Tutorial
 jira: KT-15832
 duration: 700
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
+source-git-commit: 6f0cbdd638ed909b5897521557b65dcf74ac1012
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '967'
 ht-degree: 2%
 
 ---
-
 
 # Configurer un environnement de développement local
 
@@ -65,7 +65,7 @@ Avant de commencer le développement, installez les éléments suivants sur votr
 
 ## Clonage du référentiel GitHub
 
-Clonez le [référentiel GitHub](./1-new-code-project.md) contenant le projet de code AEM Edge Delivery Services dans votre environnement de développement local.
+Clonez le [référentiel GitHub créé dans le chapitre Nouveau projet de code](./1-new-code-project.md) qui contient le projet de code AEM Edge Delivery Services dans votre environnement de développement local.
 
 ![Clone de référentiel GitHub](./assets/3-local-development-environment/github-clone.png)
 
@@ -120,6 +120,8 @@ info: Enabled reverse proxy to https://main--aem-wknd-eds-ue--<YOUR_ORG>.aem.pag
 ```
 
 L’interface de ligne de commande AEM ouvre le site web dans votre navigateur à l’adresse `http://localhost:3000/`. Les modifications apportées au projet sont automatiquement rechargées à chaud dans le navigateur web, tandis que les modifications du contenu [nécessitent une publication dans l’environnement d’aperçu](./6-author-block.md) et une actualisation du navigateur web.
+
+Si le site web s’ouvre avec une page 404, il est probable que les fichiers [fstab.yaml ou paths.json](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) mis à jour dans [nouveau projet de code](./1-new-code-project.md) ne soient pas correctement configurés, ou que les modifications n’aient pas été validées dans la branche `main`.
 
 ## Créer des fragments JSON
 
@@ -208,4 +210,3 @@ Les entrées de script suivantes peuvent être ajoutées au tableau de `scripts`
 ```
 
 >[!ENDTABS]
-
