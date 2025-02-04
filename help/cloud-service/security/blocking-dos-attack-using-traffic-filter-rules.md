@@ -12,10 +12,10 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 1b493d85303e539e07ba8b080ed55ef2af18bfcb
-workflow-type: ht
-source-wordcount: '1947'
-ht-degree: 100%
+source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
+workflow-type: tm+mt
+source-wordcount: '1924'
+ht-degree: 98%
 
 ---
 
@@ -109,7 +109,7 @@ Les visualisations suivantes sont disponibles dans les tableaux de bord ELK et S
   **Tableau de bord ELK** :
   ![Tableau de bord ELK - Nombre maximum de requêtes par adresse IP/PoP](./assets/elk-edge-max-per-ip-pop.png)
 
-  **Tableau de bord Splunk** :\
+  **Tableau de bord Splunk** :
   ![Tableau de bord Splunk - Nombre maximum de requêtes par adresse IP/PoP](./assets/splunk-edge-max-per-ip-pop.png)
 
 - **Requêtes par seconde (RPS) à l’origine par adresse IP du client et PoP** : cette visualisation affiche le nombre maximal de requêtes par adresse IP/PoP **à l’origine**. Le pic sur la visualisation indique le nombre maximal de requêtes.
@@ -168,10 +168,10 @@ data:
           count: all # count all requests
           groupBy:
             - reqProperty: clientIp
-        action: 
+        action:
           type: log
-          experimental_alert: true
-    #  Prevent attack at origin by blocking client for 5 minutes if they make more than 100 requests per second on average            
+          alert: true
+    #  Prevent attack at origin by blocking client for 5 minutes if they make more than 100 requests per second on average
       - name: prevent-dos-attacks-origin
         when:
           reqProperty: tier
@@ -183,17 +183,12 @@ data:
           count: fetches # count only fetches
           groupBy:
             - reqProperty: clientIp
-        action: 
+        action:
           type: log
-          experimental_alert: true   
-          
+          alert: true
 ```
 
 Notez que les règles d’origine et Edge sont déclarées et que la propriété alert est définie sur `true`, vous permettant de recevoir des alertes chaque fois que le seuil est atteint, ce qui indique probablement une attaque.
-
->[!NOTE]
->
->Le préfixe _experimental_ devant la fonction « experimental_alert » sera supprimé lorsque la fonctionnalité d’alerte sera publiée. Pour rejoindre le programme d’adoption précoce, envoyez un e-mail à **<aemcs-waf-adopter@adobe.com>**.
 
 Il est recommandé de définir le type d’action de manière à pouvoir surveiller le trafic pendant quelques heures ou quelques jours, afin de s’assurer que le trafic légitime ne dépasse pas ces débits. Au bout de quelques jours, passez en mode bloc.
 
@@ -211,13 +206,13 @@ En plus des règles de filtrage du trafic limitant le débit, il est recommandé
 kind: "CDN"
 version: "1"
 metadata:
-  envTypes: 
+  envTypes:
     - dev
     - stage
-    - prod  
-data:  
-  experimental_requestTransformations:
-    rules:            
+    - prod
+data:
+  requestTransformations:
+    rules:
       - name: unset-all-query-params-except-those-needed
         when:
           reqProperty: tier
@@ -229,7 +224,7 @@ data:
 
 ## Recevoir des alertes sur les règles de filtrage du trafic {#receiving-alerts}
 
-Comme mentionné ci-dessus, si la règle de filtrage du trafic inclut *experimental_alert: true*, une alerte est reçue lorsque la règle est satisfaite.
+Comme mentionné ci-dessus, si la règle de filtrage du trafic inclut *alert : true*, une alerte est reçue lorsque la règle correspond.
 
 ## Agir en réponse aux alertes {#acting-on-alerts}
 
@@ -242,7 +237,7 @@ Cette section décrit les méthodes de simulation d’une attaque par déni de s
 >[!CAUTION]
 >
 > N’effectuez pas ces étapes dans un environnement de production. Les étapes suivantes sont destinées uniquement à des fins de simulation.
-> 
+>
 >Si vous avez reçu une alerte indiquant un pic de trafic, passez à la section [Analyse des modèles de trafic](#analyzing-traffic-patterns).
 
 Pour simuler une attaque, des outils tels qu’[Apache Benchmark](https://httpd.apache.org/docs/2.4/programs/ab.html), [Apache JMeter](https://jmeter.apache.org/), [Vegeta](https://github.com/tsenart/vegeta), ou autres, peuvent être utilisés.
