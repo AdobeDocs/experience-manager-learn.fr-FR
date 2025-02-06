@@ -12,7 +12,7 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 23b2be0d-a8d4-4521-96ba-78b70f4e9cba
-source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 2%
@@ -75,7 +75,7 @@ La [spécification OpenAPI](https://swagger.io/specification/) (anciennement con
 
 Dans les prochaines versions, d’autres API AEM basées sur OpenAPI seront ajoutées pour prendre en charge d’autres cas d’utilisation.
 
-## Prise en charge de l’authentification{#authentication-support}
+### Prise en charge de l’authentification{#authentication-support}
 
 Les API AEM basées sur OpenAPI prennent en charge les méthodes d’authentification suivantes :
 
@@ -95,7 +95,7 @@ Les API AEM basées sur OpenAPI prennent en charge les méthodes d’authentific
 | Considérations relatives à la sécurité | Stockez en toute sécurité les informations d’identification sensibles (`client_id`, `client_secret`) dans les systèmes principaux. | Les utilisateurs s’authentifient et se voient accorder leur propre jeton d’accès temporaire. Stockez en toute sécurité les informations d’identification sensibles (`client_id`, `client_secret`) dans les systèmes principaux. |
 | Type d’octroi | _client_credentials_ | _code_autorisation_ |
 
-## Accès aux API Adobe et aux concepts associés{#accessing-adobe-apis-and-related-concepts}
+### Accès aux API Adobe et aux concepts associés{#accessing-adobe-apis-and-related-concepts}
 
 Avant d’accéder aux API Adobe, il est essentiel de connaître les concepts clés suivants :
 

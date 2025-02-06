@@ -12,9 +12,9 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-01-09T00:00:00Z
 duration: 0
 exl-id: dc35256a-3873-413f-b282-90948efd5f31
-source-git-commit: 7fe1116de7cf69b3b7ce14ac0b97906f8986546b
+source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2462'
 ht-degree: 1%
 
 ---
@@ -410,7 +410,7 @@ Pour actualiser le jeton d’accès avant son expiration, vous pouvez implément
 
 >[!TIP]
 >
->Vous pouvez suivre la section suivante pour tester l’application web WKND-PIM sur votre ordinateur local et obtenir une expérience pratique avec le flux d’authentification et les appels API de l’application web OAuth.
+>Vous pouvez suivre la section suivante pour tester l’application web WKND-PIM sur votre ordinateur local et acquérir une expérience pratique du flux d’authentification et des appels API de l’application web OAuth.
 
 ## Configuration et exécution de l’application web
 
@@ -519,6 +519,11 @@ Pour ce faire, définissez la configuration dans le fichier `config.yaml` du pro
    ```
 
    Remplacez `<ADC Project's OAuth Web App credential ClientID>` par l’ID client réel des informations d’identification OAuth de l’application web du projet ADC. Le point d’entrée d’API utilisé dans ce tutoriel est disponible uniquement au niveau création, mais pour les autres API, la configuration yaml peut également avoir un nœud _publication_ ou _aperçu_.
+
+   >[!CAUTION]
+   >
+   > À des fins de démonstration, le même ClientID est utilisé pour tous les environnements. Il est recommandé d’utiliser des ID client distincts par environnement (développement, évaluation, production) pour une meilleure sécurité et un meilleur contrôle.
+
 
 1. Validez les modifications de configuration dans le référentiel Git et transmettez les modifications au référentiel distant.
 
