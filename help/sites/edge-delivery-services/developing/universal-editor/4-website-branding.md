@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
-source-git-commit: ceb82c48af10191cece72fe5f53dd79287f805d0
+source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -292,6 +292,8 @@ Les `roboto-fallback` et `roboto-condensed-fallback` sont des polices de secours
 Les polices web ont souvent un impact sur les performances en raison de leur taille, augmentant potentiellement les scores de décalage de mise en page cumulé (CLS) et réduisant les scores globaux de Lighthouse. Pour garantir un affichage instantané du texte pendant le chargement des polices web, les projets Edge Delivery Services utilisent des polices de remplacement natives dans le navigateur. Cette approche permet de maintenir une expérience utilisateur fluide pendant que la police souhaitée s’applique.
 
 Pour sélectionner la meilleure police de secours, utilisez l’extension Chrome de secours [Helix Font Fallback](https://www.aem.live/developer/font-fallback) d’Adobe, qui détermine une police étroitement correspondante que les navigateurs peuvent utiliser avant le chargement de la police personnalisée. Les déclarations de police de secours qui en résultent doivent être ajoutées au fichier `styles/styles.css` pour améliorer les performances et garantir une expérience fluide pour les utilisateurs.
+
+![Extension Helix Font Fallback Chrome](./assets/4-website-branding/font-fallback-chrome-plugin.png){align=center}
 
 Pour utiliser l’extension [Chrome de secours de polices Helix](https://www.aem.live/developer/font-fallback), assurez-vous que les polices web sont appliquées à la page web dans les mêmes variations que celles utilisées sur le site web Edge Delivery Services. Ce tutoriel présente l’extension sur [wknd.site](http://wknd.site/fr.html). Lors du développement d’un site web, appliquez l’extension au site sur lequel vous travaillez plutôt qu’à [wknd.site](http://wknd.site/fr.html).
 
