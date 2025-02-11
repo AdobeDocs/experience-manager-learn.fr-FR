@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 9698c17a-0ac8-426d-bccb-729b048cabd1
-source-git-commit: 775821f37df87905ea176b11ecf0ed4a42d00940
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Le nom du dossier de blocs fait office d’identifiant du bloc et est utilisé p
 Le bloc JSON définit trois aspects clés du bloc :
 
 - **Définition** : enregistre le bloc en tant que composant modifiable dans l’éditeur universel, en le liant à un modèle de bloc et éventuellement à un filtre.
-- **Modèle** : spécifie les champs de création du bloc et la manière dont ces champs sont rendus en tant qu’HTML de Edge Delivery Services sémantique.
+- **Modèle** : spécifie les champs de création du bloc et la manière dont ces champs sont rendus en tant qu’HTML Edge Delivery Services sémantique.
 - **Filtrer** : configure les règles de filtrage pour limiter les conteneurs auxquels le bloc peut être ajouté via l’éditeur universel. La plupart des blocs ne sont pas des conteneurs, mais leurs identifiants sont ajoutés aux filtres d’autres blocs de conteneurs.
 
 Créez un fichier à l’adresse `/blocks/teaser/_teaser.json` avec la structure initiale suivante, dans l’ordre exact. Si les clés ne sont pas dans le bon ordre, elles risquent de ne pas se construire correctement.
@@ -93,7 +93,7 @@ Le modèle de bloc est une partie essentielle de la configuration du bloc, dans 
 
    ![Champs de l’éditeur universel](./assets/5-new-block/fields-in-universal-editor.png)
 
-2. Comment les valeurs du champ sont rendues dans l’HTML Edge Delivery Services.
+2. Rendu des valeurs du champ dans Edge Delivery Services HTML.
 
 Les modèles se voient attribuer une `id` correspondant à la définition du bloc [block](#block-definition) et incluent un tableau `fields` pour spécifier les champs modifiables.
 
@@ -130,7 +130,7 @@ Définissez les champs requis pour le bloc : image, texte secondaire de l’imag
 
 **Cet onglet illustre la bonne manière de modéliser le bloc de teaser.**
 
-Le teaser se compose de deux zones logiques : image et texte. Pour simplifier le code nécessaire à l’affichage de l’HTML Edge Delivery Services comme expérience web souhaitée, le modèle de bloc doit refléter cette structure.
+Le teaser se compose de deux zones logiques : image et texte. Pour simplifier le code nécessaire à l’affichage de l’HTML Edge Delivery Services en tant qu’expérience web souhaitée, le modèle de bloc doit refléter cette structure.
 
 - Regroupez les **image** et **texte secondaire de l’image** à l’aide de [réduction du champ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
 - Regroupez les champs de contenu texte à l’aide de [regroupement d’éléments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) et [ réduction de champ pour le CTA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
@@ -139,8 +139,8 @@ Si vous ne connaissez pas les notions de [réduction de champ](https://experienc
 
 Dans l&#39;exemple ci-dessous :
 
-- [Inférence de type](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) est utilisé pour créer automatiquement un élément d’HTML `<img>` à partir du champ `image`. La réduction de champ est utilisée avec les champs `image` et `imageAlt` pour créer un élément d’HTML `<img>`. L’attribut `src` est défini sur la valeur du champ `image`, tandis que l’attribut `alt` est défini sur la valeur du champ `imageAlt`.
-- `textContent` est un nom de groupe utilisé pour classer les champs. Elle doit être sémantique, mais peut être n’importe quoi d’autre propre à ce bloc. Cela indique à l’éditeur universel de rendre tous les champs avec ce préfixe dans le même élément `<div>` dans la sortie d’HTML finale.
+- [Inférence de type](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) est utilisé pour créer automatiquement un élément HTML `<img>` à partir du champ `image`. La réduction de champ est utilisée avec les champs `image` et `imageAlt` pour créer un élément HTML `<img>`. L’attribut `src` est défini sur la valeur du champ `image`, tandis que l’attribut `alt` est défini sur la valeur du champ `imageAlt`.
+- `textContent` est un nom de groupe utilisé pour classer les champs. Elle doit être sémantique, mais peut être n’importe quoi d’autre propre à ce bloc. Cela indique à l’éditeur universel de rendre tous les champs avec ce préfixe dans le même élément `<div>` dans la sortie HTML finale.
 - La réduction du champ est également appliquée dans le groupe de `textContent` pour l’appel à l’action (CTA). Le CTA est créé en tant que `<a>` via une [inférence de type](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference). Le champ `cta` est utilisé pour définir l’attribut `href` de l’élément `<a>` et le champ `ctaText` fournit le contenu textuel du lien dans les balises `<a ...>`.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
@@ -194,7 +194,7 @@ Dans l&#39;exemple ci-dessous :
 
 Ce modèle définit les entrées de création dans l’éditeur universel pour le bloc.
 
-L’HTML de Edge Delivery Services obtenu pour ce bloc place l’image dans le premier div et le groupe d’éléments `textContent` les champs dans le second div.
+L’HTML Edge Delivery Services obtenue pour ce bloc place l’image dans la première balise div et le groupe d’éléments `textContent` les champs dans la seconde balise div.
 
 ```html
 <div>
@@ -215,7 +215,7 @@ L’HTML de Edge Delivery Services obtenu pour ce bloc place l’image dans le p
 </div>        
 ```
 
-Comme illustré [dans le chapitre suivant](./7a-block-css.md), cette structure d’HTML simplifie le style du bloc en tant qu’unité cohésive.
+Comme illustré [dans le chapitre suivant](./7a-block-css.md), cette structure HTML simplifie la mise en forme du bloc en tant qu’unité cohérente.
 
 Pour comprendre les conséquences de ne pas utiliser la réduction de champ et le regroupement d’éléments, consultez l’onglet **Dans le mauvais sens** ci-dessus.
 
@@ -276,7 +276,7 @@ Par exemple, le modèle de teaser peut être défini **sans** réduction de cham
 }
 ```
 
-L’HTML Edge Delivery Services du bloc effectue le rendu de la valeur de chaque champ dans un `div` séparé, ce qui complique la compréhension du contenu, l’application du style et les ajustements de la structure de l’HTML pour obtenir la conception souhaitée.
+L’HTML Edge Delivery Services pour le bloc effectue le rendu de la valeur de chaque champ dans un `div` distinct, ce qui complique la compréhension du contenu, l’application du style et les ajustements de structure HTML pour obtenir la conception souhaitée.
 
 ```html
 <div>
@@ -322,7 +322,7 @@ La définition de bloc enregistre le bloc dans l’éditeur universel. Voici une
 | `definition.plugins.xwalk.page.resourceType` | Définit le type de ressource Sling pour le rendu du composant dans l’éditeur universel. Utilisez toujours un type de ressource `core/franklin/components/block/v#/block`. |
 | `definition.plugins.xwalk.page.template.name` | Nom du bloc. Il doit être en minuscules et séparé par des tirets pour correspondre au nom de dossier du bloc. Cette valeur est également utilisée pour libeller l’instance du bloc dans l’éditeur universel. |
 | `definition.plugins.xwalk.page.template.model` | Associe cette définition à sa définition `model`, qui contrôle les champs de création affichés pour le bloc dans l’éditeur universel. La valeur ici doit correspondre à une valeur `model.id`. |
-| `definition.plugins.xwalk.page.template.classes` | Propriété facultative, dont la valeur est ajoutée à l’attribut `class` de l’élément d’HTML de bloc. Cela permet d’avoir des variantes d’un même bloc. La valeur `classes` peut être rendue modifiable en [ajoutant un champ de classes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) au [modèle](#block-model) du bloc. |
+| `definition.plugins.xwalk.page.template.classes` | Propriété facultative, dont la valeur est ajoutée à l’attribut `class` de l’élément HTML du bloc. Cela permet d’avoir des variantes d’un même bloc. La valeur `classes` peut être rendue modifiable en [ajoutant un champ de classes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) au [modèle](#block-model) du bloc. |
 
 
 Voici un exemple JSON pour la définition de bloc :
@@ -379,7 +379,7 @@ Le composant Teaser n’est pas un [bloc conteneur](https://experienceleague.ado
 
 ![Bloquer les filtres](./assets/5-new-block/filters.png)
 
-Les blocs fournis par Adobe, tels que le bloc de section, stockent les filtres dans le dossier `models` du projet. Pour effectuer des réglages, recherchez le fichier JSON du bloc fourni par l’Adobe (par exemple, `/models/_section.json`) et ajoutez l’identifiant du teaser (`teaser`) à la liste des filtres. La configuration indique à l’éditeur universel que le composant Teaser peut être ajouté au bloc Conteneur de sections .
+Les blocs fournis par Adobe, tels que le bloc de section, stockent les filtres dans le dossier `models` du projet. Pour effectuer des réglages, recherchez le fichier JSON pour le bloc fourni par Adobe (par exemple, `/models/_section.json`) et ajoutez l’identifiant du teaser (`teaser`) à la liste des filtres. La configuration indique à l’éditeur universel que le composant Teaser peut être ajouté au bloc Conteneur de sections .
 
 [!BADGE /models/_section.json]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
@@ -420,15 +420,11 @@ $ npm run lint:js
 
 ## Créer le projet JSON
 
-Après avoir configuré le bloc de fichiers JSON (`blocks/teaser/_teaser.json`, `models/_section.json`), ils doivent être compilés dans les fichiers `component-models.json`, `component-definitions.json` et `component-filters.json` du projet. La compilation est effectuée en exécutant les scripts npm [JSON](./3-local-development-environment.md#build-json-fragments) du projet.
+Après la configuration des fichiers JSON du bloc (par exemple, `blocks/teaser/_teaser.json`, `models/_section.json`), ils sont automatiquement compilés dans les fichiers `component-models.json`, `component-definitions.json` et `component-filters.json` du projet. Cette compilation est gérée automatiquement par un hook de pré-validation [Husky](https://typicode.github.io/husky/) inclus dans le [modèle de projet AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
-```bash
-# ~/Code/aem-wknd-eds-ue
+Les versions peuvent également être déclenchées manuellement ou par programmation à l’aide des scripts NPM [JSON de version](./3-local-development-environment.md#build-json-fragments) du projet.
 
-$ npm run build:json
-```
-
-## Déployer la définition du bloc
+## Déployer le bloc JSON
 
 Pour rendre le bloc disponible dans l’éditeur universel, le projet doit être validé et placé dans la branche d’un référentiel GitHub, dans ce cas la branche `teaser`.
 
@@ -439,6 +435,7 @@ Le nom de branche exact qu’utilise l’éditeur universel peut être ajusté, 
 
 $ git add .
 $ git commit -m "Add teaser block JSON files so it is available in Universal Editor"
+# JSON files are compiled automatically and added to the commit via a husky precommit hook
 $ git push origin teaser
 ```
 

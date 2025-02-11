@@ -1,6 +1,6 @@
 ---
 title: Configurer un environnement de développement local
-description: Configurez un environnement de développement local pour les sites fournis avec des Edge Delivery Services et modifiables avec l’éditeur universel.
+description: Configurez un environnement de développement local pour les sites fournis avec Edge Delivery Services et modifiables avec l’éditeur universel.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -10,18 +10,18 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 700
 exl-id: 187c305a-eb86-4229-9896-a74f5d9d822e
-source-git-commit: 66bc4cb6f992c64b1a7e32310ce3e26515f3d380
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '994'
 ht-degree: 2%
 
 ---
 
 # Configurer un environnement de développement local
 
-Un environnement de développement local est essentiel pour développer rapidement les sites web diffusés par les Edge Delivery Services. L’environnement utilise du code développé localement lors de l’approvisionnement du contenu à partir des Edge Delivery Services, ce qui permet aux développeurs d’afficher instantanément les modifications de code. Une telle configuration prend en charge le développement et les tests rapides et itératifs.
+Un environnement de développement local est essentiel pour développer rapidement les sites web diffusés par Edge Delivery Services. L’environnement utilise du code développé localement lors de l’approvisionnement du contenu à partir de Edge Delivery Services, ce qui permet aux développeurs et développeuses d’afficher instantanément les modifications de code. Une telle configuration prend en charge le développement et les tests rapides et itératifs.
 
-Les outils et processus de développement d’un projet de site web Edge Delivery Services sont conçus pour être familiers avec les développeurs web et fournir une expérience de développement rapide et efficace.
+Les outils et processus de développement d’un projet de site web Edge Delivery Services sont conçus pour être familiers aux développeurs web et fournir une expérience de développement rapide et efficace.
 
 ## Topologie de développement
 
@@ -38,7 +38,7 @@ Cette vidéo présente un aperçu de la topologie de développement d’un proje
 
 - **Service de création AEM** :
    - **Objectif** : sert de référentiel de contenu canonique où le contenu du site web est modifié et géré.
-   - **Fonctionnalité** : le contenu est lu et écrit par l’**éditeur universel**. Le contenu modifié est publié sur **les Edge Delivery Services** dans les environnements **de production** ou **d’aperçu**.
+   - **Fonctionnalité** : le contenu est lu et écrit par l’**éditeur universel**. Le contenu modifié est publié dans **Edge Delivery Services** dans les environnements **de production** ou **d’aperçu**.
 
 - **Éditeur universel** :
    - **Objectif** : fournit une interface WYSIWYG pour la modification du contenu du site web.
@@ -50,13 +50,13 @@ Cette vidéo présente un aperçu de la topologie de développement d’un proje
       - **Fonctionnalité** : diffuse le contenu publié à partir du service de création **AEM** à l’aide du code de la **branche principale** du référentiel **GitHub**.
    - **Environnement de prévisualisation** :
       - **Objectif** : fournit un environnement d’évaluation pour tester et prévisualiser le contenu et le code avant le déploiement.
-      - **Fonctionnalité** : diffuse le contenu publié à partir du service de création **AEM** à l’aide du code d’une branche du **référentiel GitHub**, ce qui permet d’effectuer des tests approfondis sans affecter le site web actif.
+      - **Fonctionnalité** : diffuse le contenu publié à partir du service de création **AEM** à l’aide du code de n’importe quelle branche du **référentiel GitHub**, ce qui permet d’effectuer des tests approfondis sans affecter le site web actif.
 
 - **Environnement de développement local** :
    - **Objectif** : permet aux développeurs et développeuses d’écrire et de tester du code (CSS et JavaScript) localement.
    - **Structure** :
       - Clone local du **référentiel GitHub** pour le développement basé sur les branches.
-      - L’interface de ligne de commande **AEM**, qui agit comme un serveur de développement, apporte des modifications de code local à l’environnement **Aperçu** pour une expérience de rechargement à chaud.
+      - L’**interface de ligne de commande AEM**, qui agit comme un serveur de développement, applique des modifications de code local à l’environnement **Aperçu** pour une expérience de rechargement à chaud.
    - **Workflow** : les développeurs écrivent du code localement, valident les modifications dans une branche de travail, poussent la branche vers GitHub, le valident dans l’**éditeur universel** (à l’aide de la branche spécifiée) et le fusionnent dans la **branche principale** lorsqu’ils sont prêts pour le déploiement en production.
 
 +++
@@ -94,7 +94,7 @@ $ npm install
 
 ## Installer l’interface de ligne de commande AEM
 
-L’interface de ligne de commande AEM est un outil de ligne de commande Node.js conçu pour rationaliser le développement de sites web AEM Edge Delivery Services et fournir un serveur de développement local pour le développement et les tests rapides de votre site web.
+L’interface de ligne de commande AEM est un outil de ligne de commande Node.js conçu pour rationaliser le développement de sites web AEM basés sur Edge Delivery Services, fournissant un serveur de développement local pour le développement et le test rapides de votre site web.
 
 Pour installer l’interface de ligne de commande AEM, exécutez :
 
@@ -104,11 +104,11 @@ Pour installer l’interface de ligne de commande AEM, exécutez :
 $ npm install @adobe/aem-cli
 ```
 
-L’interface de ligne de commande AEM peut également être installée globalement à l’aide de `npm install --global @adobe/aem-cli`.
+L’interface de ligne de commande d’AEM peut également être installée globalement à l’aide de `npm install --global @adobe/aem-cli`.
 
 ## Démarrer le serveur de développement AEM local
 
-La commande `aem up` démarre le serveur de développement local et ouvre automatiquement une fenêtre de navigateur vers l’URL du serveur. Ce serveur fait office de proxy inverse vers l’environnement de Edge Delivery Services et diffuse du contenu à partir de cet environnement tout en utilisant votre base de code locale pour le développement.
+La commande `aem up` démarre le serveur de développement local et ouvre automatiquement une fenêtre de navigateur vers l’URL du serveur. Ce serveur agit comme un proxy inverse de l’environnement Edge Delivery Services, en y diffusant du contenu tout en utilisant votre base de code locale pour le développement.
 
 ```bash
 $ cd ~/Code/aem-wknd-eds-ue 
@@ -131,14 +131,17 @@ Si le site web s’ouvre avec une page 404, il est probable que les fichiers [fs
 
 ## Créer des fragments JSON
 
-Les projets Edge Delivery Services, créés à l’aide du modèle AEM Boilerplate XWalk [](https://github.com/adobe-rnd/aem-boilerplate-xwalk), reposent sur des configurations JSON qui activent la création de blocs dans l’éditeur universel.
+Les projets Edge Delivery Services, créés à l’aide du [modèle AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk), reposent sur des configurations JSON qui activent la création de blocs dans l’éditeur universel.
 
 - **Fragments JSON** : stockés avec leurs blocs associés et définissez les modèles, définitions et filtres de bloc.
    - **Fragments de modèle** : stocké à l’`/blocks/example/_example.json`.
    - **Fragments de définition** : stocké en `/blocks/example/_example.json`.
    - **Fragments de filtre** : stocké à l’`/blocks/example/_example.json`.
 
-Les scripts NPM compilent ces fragments JSON et les placent aux emplacements appropriés dans la racine du projet. Pour créer des fichiers JSON, utilisez les scripts NPM fournis. Par exemple, pour compiler tous les fragments, exécutez :
+
+Le modèle de projet XWalk [AEM Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-xwalk) comprend un hook de pré-validation [Husky](https://typicode.github.io/husky/) qui détecte les modifications apportées aux fragments JSON et les compile dans les fichiers `component-*.json` appropriés lors de l’`git commit`.
+
+Bien que les scripts NPM suivants puissent être exécutés manuellement via `npm run` pour créer les fichiers JSON, cela est généralement inutile, car le hook de pré-validation husky les gère automatiquement.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue

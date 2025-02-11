@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: 6.4, 6.5, Cloud Service
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 96%
+source-wordcount: '585'
+ht-degree: 95%
 
 ---
 
@@ -108,6 +108,8 @@ ht-degree: 96%
          + [Créer le bloc](./edge-delivery-services/developing/universal-editor/6-author-block.md)
          + [Bloquer avec uniquement CSS](./edge-delivery-services/developing/universal-editor/7a-block-css.md)
          + [Bloquer avec CSS et JS](./edge-delivery-services/developing/universal-editor/7b-block-js-css.md)
+         + Procédure{#how-to}
+            + [Options de bloc](./edge-delivery-services/developing/universal-editor/how-to/block-options.md)
    + Procédure{#how-to}
       + [Flux RSS](edge-delivery-services/how-to/rss.md)
       + [Partage sur les médias sociaux](edge-delivery-services/how-to/social-media-sharing.md)

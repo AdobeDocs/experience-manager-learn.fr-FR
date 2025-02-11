@@ -1,6 +1,6 @@
 ---
 title: Développement d’un bloc avec CSS et JS
-description: Développez un bloc avec CSS et JavaScript pour les Edge Delivery Services, modifiable à l’aide de l’éditeur universel.
+description: Développez un bloc avec CSS et JavaScript pour Edge Delivery Services, modifiable à l’aide de l’éditeur universel.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 41c4cfcf-0813-46b7-bca0-7c13de31a20e
-source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 0%
@@ -31,15 +31,15 @@ Cet exemple montre comment améliorer un bloc de trois façons :
 
 Cette approche est particulièrement utile dans les scénarios suivants :
 
-- **Gestion CSS externe :** lorsque le fichier CSS du bloc est géré en dehors des Edge Delivery Services et ne s’aligne pas sur sa structure d’HTML.
+- **Gestion CSS externe :** lorsque le fichier CSS du bloc est géré en dehors de Edge Delivery Services et ne s’aligne pas sur sa structure HTML.
 - **Attributs supplémentaires :** lorsque des attributs supplémentaires, tels que [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) pour l’accessibilité ou [microdonnées](https://developer.mozilla.org/fr/docs/Web/HTML/Microdata), sont requis.
 - **Améliorations de JavaScript :** lorsque des fonctions interactives, telles que des écouteurs d’événement, sont nécessaires.
 
 Cette méthode repose sur la manipulation DOM JavaScript native du navigateur, mais requiert de la prudence lors de la modification du DOM, en particulier lors du déplacement d’éléments. Ces modifications peuvent perturber l’expérience de création de l’éditeur universel. Idéalement, le [modèle de contenu](./5-new-block.md#block-model) du bloc doit être soigneusement conçu pour minimiser le besoin de modifications DOM importantes.
 
-## HTML en bloc
+## Bloquer HTML
 
-Pour aborder le développement par blocs, commencez par examiner le DOM exposé par les Edge Delivery Services. La structure est améliorée avec JavaScript et stylisée avec CSS.
+Pour aborder le développement par blocs, commencez par examiner le DOM exposé par Edge Delivery Services. La structure est améliorée avec JavaScript et stylisée avec CSS.
 
 >[!BEGINTABS]
 
@@ -85,7 +85,7 @@ Voici le DOM du bloc de teaser qui est la cible de la décoration à l’aide de
 
 Pour trouver le DOM à décorer, ouvrez la page avec le bloc non décoré dans votre environnement de développement local, sélectionnez le bloc et inspectez le DOM.
 
-![DOM du bloc Inspect](./assets/7a-block-css/inspect-block-dom.png)
+![Inspecter le DOM du bloc](./assets/7a-block-css/inspect-block-dom.png)
 
 >[!ENDTABS]
 
@@ -100,7 +100,7 @@ Le fichier JavaScript doit exporter une fonction par défaut :
 export default function decorate(block) { ... }
 ```
 
-La fonction par défaut prend l’élément/l’arborescence DOM représentant le bloc à l’HTML Edge Delivery Services et contient le JavaScript personnalisé exécuté lors du rendu du bloc.
+La fonction par défaut prend l’élément/l’arborescence DOM représentant le bloc dans l’HTML Edge Delivery Services et contient le JavaScript personnalisé exécuté lors du rendu du bloc.
 
 Cet exemple de JavaScript effectue trois actions principales :
 
@@ -195,27 +195,32 @@ Les éléments nus peuvent toujours être stylisés directement ou avec les clas
     left: 50%; 
     transform: translateX(-50%);
     height: 500px;
+    overflow: hidden; 
 
     /* The teaser image */
-    & .image-wrapper {
+    .image-wrapper {
         position: absolute;
         z-index: -1;
         inset: 0;
         box-sizing: border-box;
         overflow: hidden; 
 
-        & .image {
+        .image {
             object-fit: cover;
             object-position: center;
             width: 100%;
             height: 100%;
             transform: scale(1); 
             transition: transform 0.6s ease-in-out;
+
+            .zoom {
+                transform: scale(1.1);
+            }            
         }
     }
 
     /* The teaser text content */
-    & .content {
+    .content {
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -225,55 +230,51 @@ Les éléments nus peuvent toujours être stylisés directement ou avec les clas
         width: 80vw;
         max-width: 1200px;
   
-        & .title {
+        .title {
             font-size: var(--heading-font-size-xl);
             margin: 0;
         }
 
-        & .title::after {
+        .title::after {
             border-bottom: 0;
         }
 
-        & p {
+        p {
             font-size: var(--body-font-size-s);
             margin-bottom: 1rem;
             animation: teaser-fade-in .6s;
-        }
-
-        & p.terms-and-conditions {
-            font-size: var(--body-font-size-xs);
-            color: var(--secondary-color);
-            padding: .5rem 1rem;
-            font-style: italic;
-            border: solid var(--light-color);
-            border-width: 0 0 0 10px;
+        
+            &.terms-and-conditions {
+                font-size: var(--body-font-size-xs);
+                color: var(--secondary-color);
+                padding: .5rem 1rem;
+                font-style: italic;
+                border: solid var(--light-color);
+                border-width: 0 0 0 10px;
+            }
         }
 
         /* Add underlines to links in the text */
-        & a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
         /* Add specific spacing to buttons. These button CSS classes are automatically added by Edge Delivery Services. */
-        & .button-container {
+        .button-container {
             margin: 0;
             padding: 0;
+        
+            .button {   
+                background-color: var(--primary-color);
+                border-radius: 0;
+                color: var(--dark-color);
+                font-size: var(--body-font-size-xs);
+                font-weight: bold;
+                padding: 1em 2.5em;
+                margin: 0;
+                text-transform: uppercase;
+            }
         }
-
-        & .button {   
-            background-color: var(--primary-color);
-            border-radius: 0;
-            color: var(--dark-color);
-            font-size: var(--body-font-size-xs);
-            font-weight: bold;
-            padding: 1em 2.5em;
-            margin: 0;
-            text-transform: uppercase;
-        }
-    }
-
-    & .zoom {
-        transform: scale(1.1);
     }
 }
 
@@ -311,7 +312,7 @@ Vérifiez que le paragraphe est rendu avec le style des termes et conditions dan
 
 ## Aperçu du développement
 
-À mesure que les feuilles CSS et JavaScript sont ajoutées, l’environnement de développement local de l’interface de ligne de commande d’AEM recharge à chaud les modifications, ce qui permet de visualiser rapidement et facilement l’impact du code sur le bloc. Pointez sur le CTA et vérifiez que l’image du teaser effectue un zoom avant et arrière.
+À mesure que les feuilles CSS et JavaScript sont ajoutées, l’environnement de développement local de l’interface de ligne de commande d’AEM recharge à chaud les modifications, ce qui permet une visualisation rapide et facile de l’impact du code sur le bloc. Pointez sur le CTA et vérifiez que l’image du teaser effectue un zoom avant et arrière.
 
 ![Aperçu du développement local du teaser à l’aide de CSS et JS](./assets/7b-block-js-css/local-development-preview.png)
 

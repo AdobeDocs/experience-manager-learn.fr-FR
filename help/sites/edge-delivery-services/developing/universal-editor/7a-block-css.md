@@ -1,6 +1,6 @@
 ---
 title: Développement d’un bloc avec CSS
-description: Développez un bloc avec CSS pour les Edge Delivery Services, modifiable à l’aide de l’éditeur universel.
+description: Développez un bloc avec CSS pour Edge Delivery Services, modifiable à l’aide de l’éditeur universel.
 version: Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: 14cda9d4-752b-4425-a469-8b6f283ce1db
-source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
+source-git-commit: 2722a4d4a34172e2f418f571f9de3872872e682a
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # Développement d’un bloc avec CSS
 
-Les blocs en Edge Delivery Services sont stylisés à l’aide de CSS. Le fichier CSS d’un bloc est stocké dans le répertoire du bloc et porte le même nom que le bloc. Par exemple, le fichier CSS d’un bloc nommé `teaser` se trouve à l’emplacement `blocks/teaser/teaser.css`.
+Les blocs dans Edge Delivery Services sont stylisés à l’aide de CSS. Le fichier CSS d’un bloc est stocké dans le répertoire du bloc et porte le même nom que le bloc. Par exemple, le fichier CSS d’un bloc nommé `teaser` se trouve à l’emplacement `blocks/teaser/teaser.css`.
 
 Idéalement, un bloc ne doit avoir besoin que de CSS pour le style, sans compter sur JavaScript pour modifier le DOM ou ajouter des classes CSS. Le besoin de JavaScript dépend de la [modélisation de contenu](./5-new-block.md#block-model) du bloc et de sa complexité. Si nécessaire, vous pouvez ajouter [block JavaScript](./7b-block-js-css.md).
 
-En utilisant une approche uniquement CSS, les éléments d’HTML sémantique nu (principalement) du bloc sont ciblés et stylisés.
+En utilisant une approche uniquement CSS, les éléments d’HTML sémantiques nus (pour la plupart) du bloc sont ciblés et stylisés.
 
-## HTML en bloc
+## Bloquer HTML
 
-Pour comprendre comment mettre en forme un bloc, passez d’abord en revue le DOM exposé par les Edge Delivery Services, car c’est ce qui est disponible pour la mise en forme. Vous pouvez trouver le DOM en examinant le bloc desservi par l’environnement de développement local de l’interface de ligne de commande AEM. Évitez d’utiliser le DOM de l’éditeur universel, car il diffère légèrement.
+Pour comprendre comment mettre en forme un bloc, passez d’abord en revue le DOM exposé par Edge Delivery Services, car c’est ce qui est disponible pour la mise en forme. Vous pouvez trouver le DOM en examinant le bloc desservi par l’environnement de développement local de l’interface de ligne de commande d’AEM. Évitez d’utiliser le DOM de l’éditeur universel, car il diffère légèrement.
 
 >[!BEGINTABS]
 
@@ -35,7 +35,7 @@ Pour comprendre comment mettre en forme un bloc, passez d’abord en revue le DO
 
 Voici le DOM du bloc de teaser qui est la cible du style.
 
-Notez la `<p class="button-container">...` qui est [augmentée automatiquement](./4-website-branding.md#inferred-elements) comme un élément déduit par JavaScript Edge Delivery Services.
+Notez la `<p class="button-container">...` qui est [augmentée automatiquement](./4-website-branding.md#inferred-elements) comme un élément déduit par Edge Delivery Services JavaScript.
 
 ```html
 ...
@@ -75,7 +75,7 @@ Notez la `<p class="button-container">...` qui est [augmentée automatiquement](
 
 Pour trouver le DOM à mettre en forme, ouvrez la page avec le bloc sans style dans votre environnement de développement local, sélectionnez le bloc et inspectez le DOM.
 
-![DOM du bloc Inspect](./assets/7a-block-css/inspect-block-dom.png)
+![Inspecter le DOM du bloc](./assets/7a-block-css/inspect-block-dom.png)
 
 >[!ENDTABS]
 
@@ -83,7 +83,7 @@ Pour trouver le DOM à mettre en forme, ouvrez la page avec le bloc sans style d
 
 Créez un fichier CSS dans le dossier du bloc, en utilisant le nom du bloc comme nom de fichier. Par exemple, pour le bloc **teaser**, le fichier se trouve à l’emplacement `/blocks/teaser/teaser.css`.
 
-Ce fichier CSS est automatiquement chargé lorsque Edge Delivery Services JavaScript détecte un élément DOM sur la page représentant un teaser.
+Ce fichier CSS est automatiquement chargé lorsque le JavaScript des services de diffusion Edge détecte un élément DOM sur la page représentant un bloc de teaser.
 
 [!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
@@ -99,15 +99,16 @@ Ce fichier CSS est automatiquement chargé lorsque Edge Delivery Services JavaSc
     left: 50%; 
     transform: translateX(-50%);
     height: 500px;
+    overflow: hidden; 
 
     /* The image is rendered to the first div in the block */
-    & picture {
+    picture {
         position: absolute;
         z-index: -1;
         inset: 0;
         box-sizing: border-box;
 
-        & img {
+        img {
             object-fit: cover;
             object-position: center;
             width: 100%;
@@ -143,53 +144,52 @@ Ce fichier CSS est automatiquement chargé lorsque Edge Delivery Services JavaSc
         **/
 
         /* Regardless of the authored heading level, we only want one style the heading */
-        & h1,
-        & h2,
-        & h3,
-        & h4,
-        & h5,
-        & h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-size: var(--heading-font-size-xl);
             margin: 0;
         }
 
-        & h1::after,
-        & h2::after,
-        & h3::after,
-        & h4::after,
-        & h5::after,
-        & h6::after {
+        h1::after,
+        h2::after,
+        h3::after,
+        h4::after,
+        h5::after,
+        h6::after {
             border-bottom: 0;
         }
 
-        & p {
+        p {
             font-size: var(--body-font-size-s);
             margin-bottom: 1rem;
         }
 
         /* Add underlines to links in the text */
-        & a:hover {
+        a:hover {
             text-decoration: underline;
         }
 
         /* Add specific spacing to buttons. These button CSS classes are automatically added by Edge Delivery Services. */
-        & .button-container {
+        .button-container {
             margin: 0;
             padding: 0;
-        }
 
-        & .button {
-            background-color: var(--primary-color);
-            border-radius: 0;
-            color: var(--dark-color);
-            font-size: var(--body-font-size-xs);
-            font-weight: bold;
-            padding: 1em 2.5em;
-            margin: 0;
-            text-transform: uppercase;
+            .button {
+                background-color: var(--primary-color);
+                border-radius: 0;
+                color: var(--dark-color);
+                font-size: var(--body-font-size-xs);
+                font-weight: bold;
+                padding: 1em 2.5em;
+                margin: 0;
+                text-transform: uppercase;
+            }
         }
     }
-
 }
 
 /** Animations 
