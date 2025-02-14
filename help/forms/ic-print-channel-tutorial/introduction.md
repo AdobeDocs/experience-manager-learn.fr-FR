@@ -1,6 +1,6 @@
 ---
 title: Créer votre première communication interactive pour le canal d’impression
-description: Les communications interactives sont nouvelles dans AEM Forms 6.4. Ce document décrit les étapes nécessaires à la création d’une communication interactive pour le canal d’impression.
+description: Découvrez les étapes nécessaires à la création d’une communication interactive pour le canal d’impression. Les communications interactives sont une nouveauté d’AEM Forms 6.4.
 feature: Interactive Communication
 doc-type: Tutorial
 version: 6.4,6.5
@@ -10,10 +10,10 @@ level: Beginner
 exl-id: 1949aeff-ae56-4abd-8e63-23c2fb4859f2
 last-substantial-update: 2019-08-07T00:00:00Z
 duration: 31
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '174'
-ht-degree: 100%
+source-git-commit: 61d97738e295d9dc39281cb59e6ef1ca73944387
+workflow-type: tm+mt
+source-wordcount: '169'
+ht-degree: 76%
 
 ---
 
@@ -29,8 +29,8 @@ Les communications interactives sont nouvelles dans AEM Forms 6.4. Ce document
 
 Lorsque vous aurez terminé ce tutoriel, vous aurez appris à :
 
-* Créer une source de données
-* Créer un modèle de données de formulaire
+* Création d’une source de données
+* Création d’un modèle de données de formulaire
 * créer des fragments de document ;
 * configurer des tableaux et des graphiques ;
 * utiliser des dossiers de contrôle pour générer des documents en mode batch.
