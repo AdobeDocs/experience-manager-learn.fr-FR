@@ -11,7 +11,7 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: d199ff3b9f4d995614c193f52dc90270f2283adf
+source-git-commit: 98d67d5b624b386c6a579cd03117372bc9058acb
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 80%
@@ -238,7 +238,7 @@ Pour savoir comment déployer les fichiers de configuration, nous allons amélio
 1. Déployez les modifications apportées au RDE en exécutant la commande suivante :
 
    ```shell
-   $ aio aem:rde:install -t env-config ./config/cdn.yaml
+   $ aio aem:rde:install -t env-config ./config
    ```
 
 1. Vérifier les modifications apportées au RDE
