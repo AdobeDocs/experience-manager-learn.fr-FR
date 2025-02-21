@@ -1,6 +1,6 @@
 ---
-title: Appeler des API AEM basées sur OpenAPI pour l’authentification de serveur à serveur
-description: Découvrez comment configurer et appeler des API AEM basées sur OpenAPI sur AEM as a Cloud Service à partir d’applications personnalisées à l’aide de l’authentification de serveur à serveur OAuth.
+title: Appeler les API AEM basées sur OpenAPI pour l’authentification de serveur à serveur
+description: Découvrez comment configurer et appeler les API AEM basées sur OpenAPI sur AEM as a Cloud Service à partir d’applications personnalisées à l’aide de l’authentification de serveur à serveur OAuth.
 version: Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
@@ -12,16 +12,16 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2024-11-20T00:00:00Z
 duration: 0
 exl-id: 24c641e7-ab4b-45ee-bbc7-bf6b88b40276
-source-git-commit: 2b5f7a033921270113eb7f41df33444c4f3d7723
+source-git-commit: b3d053a09dfc8989441a21bf0d8c4771d816106f
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1855'
 ht-degree: 1%
 
 ---
 
-# Appeler des API AEM basées sur OpenAPI pour l’authentification de serveur à serveur{#invoke-openapi-based-aem-apis}
+# Appeler les API AEM basées sur OpenAPI pour l’authentification de serveur à serveur{#invoke-openapi-based-aem-apis}
 
-Découvrez comment configurer et appeler des API AEM OpenAPI sur AEM as a Cloud Service à partir d’applications personnalisées à l’aide de l’authentification _OAuth de serveur à serveur_.
+Découvrez comment configurer et appeler les API AEM basées sur OpenAPI sur AEM as a Cloud Service à partir d’applications personnalisées à l’aide de l’authentification _OAuth de serveur à serveur_.
 
 L’authentification de serveur à serveur OAuth est idéale pour les services principaux nécessitant un accès à l’API sans interaction de l’utilisateur. Il utilise le type d’octroi OAuth 2.0 _client_credentials_ pour authentifier l’application cliente.
 
@@ -77,7 +77,7 @@ La modernisation de l’environnement AEM as a Cloud Service est un processus en
 
 ### Mise à jour de l’instance AEM
 
-Pour mettre à jour l’instance AEM, dans la section _Environnements_ de l’Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/), sélectionnez l’icône _points de suspension_ en regard du nom de l’environnement, puis sélectionnez l’option **Mettre à jour**.
+Pour mettre à jour l’instance AEM, dans la section _Environnements_ d’Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/), sélectionnez l’icône _points de suspension_ en regard du nom de l’environnement, puis sélectionnez l’option **Mettre à jour**.
 
 ![Mettre à jour l’instance AEM](assets/update-aem-instance.png)
 
@@ -89,13 +89,13 @@ Dans mon cas, le nom du pipeline Fullstack est _Dev :: Fullstack-Deploy_ et le n
 
 ### Ajouter de nouveaux profils de produit
 
-Pour ajouter de nouveaux profils de produit à l’instance AEM, dans la section _Environnements_ de l’Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/), sélectionnez l’icône _points de suspension_ en regard du nom de l’environnement, puis sélectionnez l’option **Ajouter des profils de produit**.
+Pour ajouter de nouveaux profils de produit à l’instance AEM, dans la section _Environnements_ d’Adobe [Cloud Manager](https://my.cloudmanager.adobe.com/), sélectionnez l’icône _points de suspension_ en regard du nom de l’environnement, puis sélectionnez l’option **Ajouter des profils de produit**.
 
 ![Ajouter de nouveaux profils de produit](assets/add-new-product-profiles.png)
 
 Vous pouvez examiner les profils de produit nouvellement ajoutés en cliquant sur l’icône _points de suspension_ à côté du nom de l’environnement et en sélectionnant **Gérer l’accès** > **Créer des profils**.
 
-La fenêtre _Admin Console_ affiche les profils de produit nouvellement ajoutés.
+La fenêtre _Admin Console_ affiche les nouveaux profils de produit ajoutés.
 
 ![Vérification des nouveaux profils de produit](assets/review-new-product-profiles.png)
 
@@ -105,7 +105,7 @@ Les étapes ci-dessus complètent la modernisation de l’environnement AEM as a
 
 Les nouveaux profils de produit activent l’accès à l’API AEM basée sur OpenAPI dans Adobe Developer Console (ADC).
 
-Les profils de produit nouvellement ajoutés sont associés aux _Services_ qui représentent des groupes d’utilisateurs AEM avec des listes de contrôle d’accès (ACL) prédéfinies. Les _Services_ sont utilisés pour contrôler le niveau d’accès aux API d’AEM.
+Les nouveaux profils de produit sont associés aux _Services_ qui représentent des groupes d’utilisateurs AEM avec des listes de contrôle d’accès (ACL) prédéfinies. Les _Services_ sont utilisés pour contrôler le niveau d’accès aux API d’AEM.
 
 Vous pouvez également sélectionner ou désélectionner le _Services_ associé au profil de produit pour réduire ou augmenter le niveau d’accès.
 
@@ -117,11 +117,11 @@ Par défaut, le service **Utilisateurs de l’API AEM Assets** n’est associé 
 
 ![Associer le service Utilisateurs de l’API AEM Assets au profil de produit](assets/associate-aem-assets-api-users-service-with-product-profile.png)
 
-Il est important de noter qu’avant la modernisation, dans l’instance d’auteur AEM, deux profils de produit étaient disponibles : **AEM Administrators-XXX** et **AEM Users-XXX**. Il est également possible d’associer ces profils de produit existants aux nouveaux services.
+Il est important de noter qu’avant la modernisation, dans l’instance d’auteur AEM, deux profils de produit étaient disponibles : **Administrateurs AEM-XXX** et **Utilisateurs AEM-XXX**. Il est également possible d’associer ces profils de produit existants aux nouveaux services.
 
 ## Créer un projet Adobe Developer Console (ADC)
 
-Créez ensuite un projet ADC pour accéder aux API AEM.
+Créez ensuite un projet ADC pour accéder aux API d’AEM.
 
 1. Connectez-vous à [Adobe Developer Console](https://developer.adobe.com/console) à l’aide de votre Adobe ID.
 
@@ -141,7 +141,7 @@ Créez ensuite un projet ADC pour accéder aux API AEM.
 
 ## Configurer le projet ADC
 
-Ensuite, configurez le projet ADC pour ajouter des API AEM, configurer son authentification et associer le profil de produit.
+Configurez ensuite le projet ADC pour ajouter des API AEM, configurer son authentification et associer le profil de produit.
 
 1. Pour ajouter des API AEM, cliquez sur le bouton **Ajouter une API**.
 
@@ -163,12 +163,16 @@ Ensuite, configurez le projet ADC pour ajouter des API AEM, configurer son authe
 
    ![Sélectionner le profil de produit](assets/select-product-profile.png)
 
-1. Examinez la configuration de l’API et de l’authentification AEM.
+   >[!CAUTION]
+   >
+   >    Notez que l’utilisateur du compte de service (ou compte technique) obtient l’accès COMPLET, car il est associé au profil de produit **Administrateurs AEM - XX - XX**.
+
+
+1. Examinez l’API AEM et la configuration de l’authentification.
 
    ![Configuration de l’API AEM](assets/aem-api-configuration.png)
 
    ![Configuration de l’authentification](assets/authentication-configuration.png)
-
 
 ## Configurer l’instance AEM pour activer la communication de projet ADC
 
@@ -225,11 +229,11 @@ Pour récupérer les métadonnées d’une ressource spécifique, vous avez beso
 
 L’`assetId` est l’UUID JCR de la ressource avec le préfixe `urn:aaid:aem:`, par exemple `urn:aaid:aem:a200faf1-6d12-4abc-bc16-1b9a21f870da`. Il existe plusieurs façons d’obtenir le `assetId` :
 
-- Ajoutez l’extension de `.json` de chemin de ressource AEM pour obtenir les métadonnées de la ressource. Par exemple, `https://author-p63947-e1420429.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/cycling-southern-utah/adobestock-221043703.jpg.json` et recherchez la propriété `jcr:uuid` .
+- Ajoutez l’extension de `.json` Chemin d’accès à la ressource AEM pour obtenir les métadonnées de la ressource. Par exemple, `https://author-p63947-e1420429.adobeaemcloud.com/content/dam/wknd-shared/en/adventures/cycling-southern-utah/adobestock-221043703.jpg.json` et recherchez la propriété `jcr:uuid` .
 
 - Vous pouvez également obtenir le `assetId` en examinant la ressource dans l’inspecteur d’éléments du navigateur. Recherchez l’attribut `data-id="urn:aaid:aem:..."` .
 
-  ![ressource Inspect](assets/inspect-asset.png)
+  ![Inspecter la ressource](assets/inspect-asset.png)
 
 ### Appeler l’API à l’aide du navigateur
 
@@ -258,7 +262,7 @@ Avant de développer l’application, appelons l’API à l’aide de la fonctio
 
    ![Appeler l’API - réponse](assets/invoke-api-response.png)
 
-Les étapes ci-dessus confirment la modernisation de l’environnement AEM as a Cloud Service, en permettant l’accès aux API AEM. Cela confirme également la réussite de la configuration du projet ADC et de la communication des informations d’identification OAuth de serveur à serveur ClientID avec l’instance d’auteur AEM.
+Les étapes ci-dessus confirment la modernisation de l’environnement AEM as a Cloud Service en permettant l’accès aux API AEM. Elle confirme également la réussite de la configuration du projet ADC et de la communication des informations d’identification de serveur à serveur ClientID OAuth avec l’instance d’auteur AEM.
 
 ### Exemple d’application NodeJS
 
