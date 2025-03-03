@@ -10,9 +10,9 @@ doc-type: Tutorial
 jira: KT-17296
 duration: 700
 exl-id: f41dff22-bd47-4ea0-98cc-f5ca30b22c4b
-source-git-commit: ae3ade0f31846776aa9bdd3a615d6514b626f48d
+source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1961'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,9 @@ Dans ce tutoriel, vous allez ajouter des options de bloc au bloc Teaser, ce qui 
 
 Les cas d’utilisation courants pour l’utilisation des **options de bloc** dans le développement de **Edge Delivery Services** et de **l’éditeur universel** incluent, sans s’y limiter :
 
-1. **Variantes de mise en page :** basculez facilement entre les mises en page. Par exemple, horizontal vs. vertical ou grille vs. liste.
-2. **Variations de style :** Basculez facilement entre les thèmes ou les traitements visuels. Par exemple, le mode clair ou sombre, ou le grand ou le petit texte.
-3. **Contrôle de l’affichage du contenu :** basculez la visibilité des éléments ou basculez entre les styles de contenu (compact ou détaillé).
+1. **Variantes de disposition :** basculez facilement entre les dispositions. Par exemple, horizontal ou vertical ou grille ou liste.
+2. **Variantes de style :** basculez facilement entre les thèmes ou les traitements visuels. Par exemple, le mode clair ou sombre ou le texte grand ou petit.
+3. **Contrôle de l’affichage du contenu :** basculer la visibilité des éléments ou basculer entre les styles de contenu (compact ou détaillé).
 
 Ces options offrent flexibilité et efficacité dans la création de blocs dynamiques et adaptables.
 
@@ -39,11 +39,11 @@ Ce tutoriel présente le cas d’utilisation des variations de mise en page, dan
 
 ## Modèle de bloc
 
-Pour ajouter des options de bloc au bloc Teaser, ouvrez son fragment JSON à l’adresse `/block/teaser/_teaser.json` et ajoutez un nouveau champ à la définition du modèle. Ce champ définit sa `name` propriété sur `classes`, qui est un champ protégé utilisé par AEM pour stocker des options de bloc, qui sont appliquées au code HTML Edge Delivery Services du bloc.
+Pour ajouter des options de bloc au bloc Teaser, ouvrez son fragment JSON à l’adresse `/block/teaser/_teaser.json` et ajoutez un nouveau champ à la définition de modèle. Ce champ définit sa propriété `name` sur `classes`, qui est un champ protégé utilisé par AEM pour stocker les options de bloc, qui sont appliquées au HTML Edge Delivery Services du bloc.
 
-### Configuration de champ
+### Configurations de champ
 
-Les onglets ci-dessous illustrent différentes façons de configurer les options de bloc dans le modèle de bloc, y compris la sélection unique avec une seule classe CSS, la sélection unique avec plusieurs classes CSS et la sélection multiple avec plusieurs classes CSS. Ce tutoriel [implémente l’approche](#field-configuration-for-this-tutorial) plus simple utilisée dans **la sélection avec une classe** CSS unique.
+Les onglets ci-dessous illustrent différentes manières de configurer les options de bloc dans le modèle de bloc, y compris la sélection unique avec une seule classe CSS, la sélection unique avec plusieurs classes CSS et la sélection multiple avec plusieurs classes CSS. Ce tutoriel [met en œuvre l’approche plus simple](#field-configuration-for-this-tutorial) utilisée dans **select avec une seule classe CSS**.
 
 >[!BEGINTABS]
 
@@ -256,11 +256,11 @@ Pour éviter les problèmes et créer de la confusion lors de l’utilisation de
 
 **Cette approche n’est pas utilisée dans ce tutoriel, mais elle illustre une autre méthode et des options de bloc avancées.**
 
-Les options de bloc peuvent être définies par défaut lors de l’ajout d’une nouvelle instance de bloc à une page dans l’éditeur universel. Pour ce faire, définissez la valeur par défaut de la `classes` propriété dans la [définition](../5-new-block.md#block-definition) du bloc.
+Les options de bloc peuvent être définies par défaut lors de l’ajout d’une nouvelle instance de bloc à une page dans l’éditeur universel. Pour ce faire, définissez la valeur par défaut de la propriété `classes` dans la définition du [ bloc ](../5-new-block.md#block-definition).
 
-#### Définition de bloc
+#### Définition du bloc
 
-Dans l’exemple ci-dessous, l’option par défaut est définie sur Side-by-Side **en affectant la `value` propriété du `classes` champ à `side-by-side`.** L’entrée d’option de bloc correspondante dans le modèle de bloc est facultative.
+Dans l’exemple ci-dessous, l’option par défaut est définie sur **Côte à côte** en attribuant la propriété `value` du champ `classes` à `side-by-side`. L’entrée d’option de bloc correspondante dans le modèle de bloc est facultative.
 
 Vous pouvez également définir plusieurs entrées pour le même bloc, chacune avec un nom et une classe différents. Cela permet à l’éditeur universel d’afficher des entrées de bloc distinctes, chacune préconfigurée avec une option de bloc spécifique. Bien qu’ils apparaissent en tant que blocs distincts dans l’éditeur, la base de code contient un seul bloc dont le rendu est effectué dynamiquement en fonction de l’option sélectionnée.
 
@@ -295,12 +295,12 @@ Vous pouvez également définir plusieurs entrées pour le même bloc, chacune a
 >[!ENDTABS]
 
 
-### Configuration des champs pour ce didacticiel
+### Configuration de champ pour ce tutoriel
 
 
-Dans ce didacticiel, nous utiliserons l’approche de sélection avec une seule classe CSS décrite ci-dessus dans le premier onglet, qui permet deux options de bloc discrètes : **Par défaut** et **Côte à côte**.
+Dans ce tutoriel, nous utiliserons l’approche Sélectionner avec une seule classe CSS décrite ci-dessus dans le premier onglet, qui permet deux options de bloc discrètes : **Par défaut** et **Côte à côte**.
 
-Dans la définition du modèle dans le fragment JSON du bloc, ajoutez un seul champ de sélection pour les options de bloc. Ce champ permet aux créateurs et aux créatrices de choisir entre la mise en page par défaut et une mise en page côte à côte.
+Dans la définition du modèle au sein du fragment JSON du bloc, ajoutez un seul champ de sélection pour les options de bloc. Ce champ permet aux créateurs et aux créatrices de choisir entre la mise en page par défaut et une mise en page côte à côte.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
@@ -404,7 +404,7 @@ Vous pouvez éventuellement ajouter deux blocs **Teaser**, l’un défini sur **
 
 ### Publier pour prévisualisation
 
-Une fois le bloc de teaser ajouté à la page, [publiez la page à prévisualiser](../6-author-block.md) à l’aide de **Gérer les publications** et de l’administrateur du site de l’auteur AEM.
+Une fois le bloc de teaser ajouté à la page, [publiez la page à prévisualiser](../6-author-block.md) à l’aide du bouton **Publier** et choisissez Publier sur **Prévisualiser** dans l’éditeur universel.
 
 ## Bloquer HTML
 
@@ -762,7 +762,7 @@ export default function decorate(block) {
 
 ## Étiqueter votre code
 
-Veillez à [peindre fréquemment](../3-local-development-environment.md#linting) vos modifications de code pour le garder propre et cohérent. Une liaison régulière permet de détecter les problèmes tôt, ce qui réduit le temps de développement global. N’oubliez pas que vous ne pouvez pas fusionner votre travail de développement dans la `main` branche tant que tous les problèmes de revêtement ne sont pas résolus !
+Veillez à [peindre fréquemment](../3-local-development-environment.md#linting) vos modifications de code pour le garder propre et cohérent. Une liaison régulière permet de détecter les problèmes tôt, ce qui réduit le temps de développement global. N’oubliez pas que vous ne pouvez pas fusionner votre travail de développement dans la branche `main` tant que tous les problèmes de liaison ne sont pas résolus.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -772,7 +772,7 @@ $ npm run lint
 
 ## Aperçu dans l’éditeur universel
 
-Pour afficher les modifications apportées à l’éditeur universel de AEM, ajoutez-les, validez et transférez-les vers la branche de référentiel Git utilisée par l’éditeur universel. Cela garantit que l’implémentation du bloc ne perturbe pas l’expérience de création.
+Pour afficher les modifications dans l’éditeur universel d’AEM, ajoutez-les, validez-les et envoyez-les à la branche de référentiel Git utilisée par l’éditeur universel. Cela permet de s’assurer que l’implémentation du bloc ne perturbe pas l’expérience de création.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -790,6 +790,6 @@ Désormais, les modifications sont visibles dans l’éditeur universel lors de 
 
 ## Félicitations.
 
-Vous avez maintenant exploré les options de bloc dans Edge Delivery Services et Universal Editor, ce qui vous donne les outils nécessaires pour personnaliser et rationaliser l’édition de contenu avec une plus grande flexibilité. Commencez à appliquer ces options dans vos projets pour améliorer l’efficacité et maintenir la cohérence.
+Vous avez maintenant exploré les options de bloc dans Edge Delivery Services et l’éditeur universel, ce qui vous donne les outils nécessaires pour personnaliser et rationaliser l’édition de contenu avec une plus grande flexibilité. Commencez à appliquer ces options dans vos projets pour améliorer l’efficacité et maintenir la cohérence.
 
-Pour plus de meilleures pratiques et de techniques avancées, consultez la documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) de l’éditeur [universel.
+Pour découvrir les bonnes pratiques et les techniques avancées, consultez la [documentation de l’éditeur universel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

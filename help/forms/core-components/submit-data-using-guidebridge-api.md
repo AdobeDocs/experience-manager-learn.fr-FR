@@ -1,6 +1,7 @@
 ---
-title: Utilisation de l’API GuideBridge pour accéder aux données de formulaire
-description: Accédez aux données de formulaire et aux pièces jointes à l’aide de l’API GuideBridge pour un formulaire adaptatif basé sur des composants principaux.
+title: Utilisation de l’API GuideBridge pour publier des données de formulaire
+description: Découvrez comment accéder aux données de formulaire et les envoyer à l’aide de l’API GuideBridge pour les formulaires adaptatifs. Enregistrez et récupérez facilement les données de formulaire.
+duration: 68
 feature: Adaptive Forms
 version: 6.5
 topic: Development
@@ -9,33 +10,33 @@ level: Experienced
 jira: KT-15286
 last-substantial-update: 2024-04-05T00:00:00Z
 exl-id: 099aaeaf-2514-4459-81a7-2843baa1c981
-duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '148'
-ht-degree: 100%
+source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 1%
 
 ---
 
-# Utilisation de l’API POST GuideBridge pour envoyer des données de formulaire
 
-L’option « Enregistrer et reprendre » d’un formulaire implique de permettre aux utilisateurs et utilisatrices d’enregistrer la progression du remplissage du formulaire et de le reprendre ultérieurement.
-Pour réaliser ce cas d’utilisation, nous devons accéder aux données de formulaire et les envoyer à l’aide de l’API GuideBridge vers le point d’entrée REST pour le stockage et la récupération.
+# Accès et envoi de données de formulaire avec l’API GuideBridge
 
-Les données de formulaire sont enregistrées sur l’événement de clic d’un bouton à l’aide de l’éditeur de règles.
-![rule-editor](assets/rule-editor.png)
+Découvrez comment utiliser l’API GuideBridge pour accéder aux données de formulaire et les envoyer à un point d’entrée REST pour le stockage et la récupération. Cette fonctionnalité permet aux utilisateurs d’enregistrer et de reprendre facilement la saisie du formulaire.
 
-La fonction JavaScript suivante a été écrite pour envoyer les données au point d’entrée spécifié.
+Les données du formulaire sont enregistrées en déclenchant une fonction JavaScript lors d’un clic sur un bouton dans l’éditeur de règles.
+
+![Éditeur de règles](assets/rule-editor.png)
+
+La fonction JavaScript ci-dessous montre comment envoyer les données de formulaire au point d’entrée spécifié :
 
 ```javascript
 /**
 * Submits data and attachments 
-* @name submitFormDataAndAttachments Submit form data and attachments to REST end point
-* @param {string} endpoint in Stringformat
+* @name submitFormDataAndAttachments Submit form data and attachments to REST endpoint
+* @param {string} endpoint in String format
 * @return {string} 
  */
  
- function submitFormDataAndAttachments(endpoint) {
+function submitFormDataAndAttachments(endpoint) {
     guideBridge.getFormDataObject({
         success: function(resultObj) {
             const afFormData = resultObj.data.data;
@@ -51,7 +52,7 @@ La fonction JavaScript suivante a été écrite pour envoyer les données au poi
             })
             .then(response => {
                 if (response.ok) {
-                    console.log("successfully saved");
+                    console.log("Successfully saved");
                     const fld = guideBridge.resolveNode("$form.confirmation");
                     return "Form data was saved successfully";
                 } else {
@@ -66,14 +67,13 @@ La fonction JavaScript suivante a été écrite pour envoyer les données au poi
 }
 ```
 
-
-
 ## Code côté serveur
 
-Le code Java côté serveur suivant a été écrit pour gérer les données de formulaire. Voici le servlet Java exécuté dans AEM qui est appelé via l’appel XHR dans le JavaScript ci-dessus.
+Le code Java côté serveur suivant gère le traitement des données de formulaire. Cette servlet Java dans AEM est appelée via un appel XHR dans la fonction JavaScript ci-dessus.
 
 ```java
 package com.azuredemo.core.servlets;
+
 import com.adobe.aemfd.docmanager.Document;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
@@ -83,12 +83,14 @@ import org.apache.sling.servlets.annotations.SlingServletResourceTypes;
 import org.osgi.service.component.annotations.Component;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import javax.servlet.Servlet;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.List;
+
 @Component(
    service = {
       Servlet.class
@@ -100,14 +102,17 @@ import java.util.List;
    extensions = "json"
 )
 public class StoreFormSubmission extends SlingAllMethodsServlet implements Serializable {
-   private static final long serialVersionUID = 1 L;
+   private static final long serialVersionUID = 1L;
    private final transient Logger log = LoggerFactory.getLogger(this.getClass());
+
    protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
-      List < RequestParameter > listOfRequestParameters = request.getRequestParameterList();
-      log.debug("The size of list is " + listOfRequestParameters.size());
+      List<RequestParameter> listOfRequestParameters = request.getRequestParameterList();
+      log.debug("The size of the list is " + listOfRequestParameters.size());
+      
       for (int i = 0; i < listOfRequestParameters.size(); i++) {
          RequestParameter requestParameter = listOfRequestParameters.get(i);
-         log.debug("is this request parameter a form field?" + requestParameter.isFormField());
+         log.debug("Is this request parameter a form field?" + requestParameter.isFormField());
+         
          if (!requestParameter.isFormField()) {
             Document attachmentDOC = new Document(requestParameter.getInputStream());
             attachmentDOC.copyToFile(new File(requestParameter.getName()));
@@ -116,6 +121,7 @@ public class StoreFormSubmission extends SlingAllMethodsServlet implements Seria
             log.debug(requestParameter.getString());
          }
       }
+      
       response.setStatus(HttpServletResponse.SC_OK);
    }
 }

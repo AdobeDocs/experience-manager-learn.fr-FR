@@ -1,6 +1,6 @@
 ---
 title: Étape de processus personnalisée pour renseigner les variables de liste
-description: Étape de processus personnalisée pour renseigner les variables de liste de type document et chaîne
+description: Découvrez comment créer une étape de processus personnalisée pour renseigner les variables de liste de type document et chaîne dans Adobe Experience Manager.
 feature: Workflow
 topic: Development
 version: 6.5
@@ -9,28 +9,29 @@ level: Beginner
 kt: kt-8063
 exl-id: 09d9eabf-4815-4159-b6c7-cf2ebc8a2df5
 duration: 68
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '157'
-ht-degree: 100%
+source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 7%
 
 ---
 
+
 # Étape de processus personnalisée
 
+Ce guide vous guidera tout au long de la création d’une étape de processus personnalisé pour renseigner les variables de liste de type Liste de tableaux avec des pièces jointes et des noms de pièces jointes dans Adobe Experience Manager. Ces variables sont essentielles pour le composant de workflow Envoyer un e-mail .
 
-Une étape de processus personnalisée a été mise en œuvre pour renseigner les variables de workflow de type Liste de tableaux avec les pièces jointes et les noms des pièces jointes. Cette variable est ensuite utilisée dans le composant de workflow Envoyer un e-mail. Si vous ne maîtrisez pas la création de lot OSGi, [suivez ces instructions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=fr).
+Si vous ne connaissez pas la création d’un bundle OSGi, suivez ces [instructions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=fr).
 
-Le code de l’étape de processus personnalisée effectue les opérations suivantes :
+Le code de l’étape de processus personnalisé effectue les actions suivantes :
 
-* Requête de toutes les pièces jointes de formulaire adaptatif sous le dossier de payload. Le nom du dossier est transmis en tant qu’argument de processus à l’étape de processus.
-
-* Renseignez la variable de workflow `listOfDocuments`.
-* Renseignez la variable de workflow `attachmentNames`.
-* Définissez la valeur d’une variable de workflow (`no_of_attachments`).
+1. Requête pour toutes les pièces jointes de formulaire adaptatif sous le dossier de payload. Le nom du dossier est transmis en tant qu’argument de processus à l’étape.
+2. Remplit la variable de workflow `listOfDocuments`.
+3. Remplit la variable de workflow `attachmentNames`.
+4. Définit la valeur de la variable de workflow `no_of_attachments`.
 
 ```java
- package com.aemforms.formattachments.core;
+package com.aemforms.formattachments.core;
 
 import java.io.InputStream;
 import java.util.HashMap;
@@ -57,9 +58,8 @@ import com.day.cq.search.result.SearchResult;
 
 @Component(property = {
         Constants.SERVICE_DESCRIPTION + "=PopulateListOfDocuments",
-        "process.label" + "=PopulateListOfDocuments"
+        "process.label=PopulateListOfDocuments"
 })
-
 public class PopulateListOfDocuments implements WorkflowProcess {
 
         private static final Logger log = LoggerFactory.getLogger(PopulateListOfDocuments.class);
@@ -70,7 +70,7 @@ public class PopulateListOfDocuments implements WorkflowProcess {
         public void execute(WorkItem workItem, WorkflowSession workflowSession, MetaDataMap processArguments) throws WorkflowException
         {
                 String payloadPath = workItem.getWorkflowData().getPayload().toString();
-                log.debug("The payload path  is" + payloadPath);
+                log.debug("The payload path is" + payloadPath);
                 MetaDataMap metaDataMap = workItem.getWorkflow().getWorkflowData().getMetaDataMap();
                 Session session = workflowSession.adaptTo(Session.class);
                 Map < String, String > map = new HashMap < String, String > ();
@@ -112,10 +112,11 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Assurez-vous que les variables suivantes sont définies dans votre workflow pour que le code fonctionne.
-> *listOfDocuments* - variable de type ArrayList de documents
-> *attachmentNames* - variable de type ArrayList de chaîne
-> *no_of_attachments* - variable de type Double.
+> Assurez-vous que les variables suivantes sont définies dans votre workflow pour que le code fonctionne :
+> 
+> - `listOfDocuments` : variable de type ArrayList de documents
+> - `attachmentNames` : variable de type ArrayList de chaîne
+> - `no_of_attachments` : variable de type Double
 
 ## Étapes suivantes
 
