@@ -9,13 +9,13 @@ level: Intermediate, Experienced
 doc-type: Tutorial
 jira: KT-17470
 duration: 300
-source-git-commit: 52b7e6afbfe448fd350e84c3e8987973c87c4718
+exl-id: 70ed4362-d4f1-4223-8528-314b2bf06c7c
+source-git-commit: d201afc730010f0bf202a1d72af4dfa3867239bc
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1207'
 ht-degree: 0%
 
 ---
-
 
 # Développer un en-tête et un pied de page
 
@@ -370,7 +370,7 @@ Le pied de page doit être implémenté avec une disposition à trois colonnes c
 
 ![Aperçu du pied de page](./assets/header-and-footer/footer-preview.png){align="center"}
 
->[!TAB Créez le pied de page]
+>[!TAB Contenu du pied de page ]
 
 Utilisez le bloc Colonnes de la page Pied de page pour créer l’effet à trois colonnes.
 
