@@ -1,0 +1,62 @@
+---
+title: Configuration de l’API de communication d’AEM Forms
+description: Configurer des API de communication AEM Forms basées sur OpenAPI pour l’authentification de serveur à serveur
+type: Documentation
+role: Developer
+level: Beginner, Intermediate
+version: Cloud Service
+feature: Document Services
+topic: Development
+jira: KT-17479
+badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
+source-git-commit: a72f533b36940ce735d5c01d1625c6f477ef4850
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 6%
+
+---
+
+# Configuration des API de communication AEM Forms basées sur OpenAPI sur AEM Forms as a Cloud Service
+
+## Prérequis
+
+* Dernière instance d’AEM Forms as a Cloud Service.
+* Tous les [profils de produit nécessaires sont ajoutés à l’environnement.](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis)
+
+* Activez l’accès de l’API AEM au profil de produit comme illustré ci-dessous
+  ![product_profile1](assets/product-profiles1.png)
+  ![product_profile](assets/product-profiles.png)
+
+## Créer un projet Adobe Developer Console
+
+Connectez-vous à [Adobe Developer Console](https://developer.adobe.com/console/) à l’aide de votre Adobe ID.
+Créez un projet en cliquant sur l’icône appropriée.
+![nouveau-projet](assets/new-project.png)
+
+Attribuez un nom significatif au projet et cliquez sur l’icône Ajouter une API .
+![nouveau-projet](assets/new-project2.png)
+
+Sélectionner Experience Cloud
+![new-project3](assets/new-project3.png)
+Sélectionnez l’API AEM Forms Communications et cliquez sur Suivant .
+![new-project4](assets/new-project4.png)
+
+Vérifiez que vous avez sélectionné l’authentification serveur à serveur, puis cliquez sur Suivant
+![new-project5](assets/new-project5.png)
+Sélectionnez les profils et cliquez sur le bouton Enregistrer l’API configurée pour enregistrer vos paramètres
+![new-project6](assets/new-project6.png)
+Cliquez dans le fichier OAuth de serveur à serveur.
+![new-project7](assets/new-project7.png)
+Copiez l’ID client, le secret client et les portées
+![new-project8](assets/new-project8.png)
+
+## Configurer l’instance AEM pour activer la communication de projet ADC
+
+Si vous disposez déjà d’un projet AEM Forms, [suivez ces instructions](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) pour permettre à l’ID client des informations d’identification OAuth de serveur à serveur du projet Adobe Developer Console de communiquer avec l’instance AEM
+
+Si vous ne disposez pas d’un projet AEM Forms, veuillez créer un [projet AEM Forms en suivant cette documentation.](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/forms/developing-for-cloud-service/getting-started) puis activez les informations d’identification OAuth de serveur à serveur du projet Adobe Developer Console ClientID pour communiquer avec l’instance AEM [à l’aide de cette documentation](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis).
+
+
+## Étapes suivantes
+
+[Générer un jeton d’accès](./generate-access-token.md)
