@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: 6.4, 6.5, Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: efaf77a9f8e68f679be3469c39697b57366684b3
+source-git-commit: 77beb9f543bc6dc8c1ab4993c969375ce3e238e8
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 99%
+source-wordcount: '450'
+ht-degree: 98%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 99%
    + [Ressources 3D](./advanced/3d-assets.md)
    + [Sortie du PDF d’annotations](./advanced/customizing-annotations-pdf-output.md)
    + [Rapports sur les ressources](./advanced/asset-reports.md)
-   + [Contents credentials](./advanced/content-credentials.md)
+   + [Informations d’identification du contenu](./advanced/content-credentials.md)
    + [Balises bloquées](./advanced/blocked-tags.md)
    + [Extraire l’archive](./advanced/extract-archive.md)
    + [Autorisations (groupes d’utilisateurs et d’utilisatrices fermés)](./advanced/closed-user-groups.md)
@@ -138,6 +138,7 @@ ht-degree: 99%
    + [Vue d’ensemble de Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Application de bureau Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Images {#images}
+      + [Modèles Dynamic Media](dynamic-media/dynamic-media-templates.md)
       + [Instantané Dynamic Media](dynamic-media/dynamic-media-snapshot.md)
       + [Recadrage intelligent](dynamic-media/smart-crop-feature-video-use.md)
       + [Accentuation de l’image](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
