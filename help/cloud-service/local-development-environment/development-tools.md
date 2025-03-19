@@ -11,10 +11,10 @@ level: Beginner
 last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
 duration: 3508
-source-git-commit: e7a85e8d072d808683580a201dd10b3a847efaaa
-workflow-type: ht
-source-wordcount: '1301'
-ht-degree: 100%
+source-git-commit: b865156776865b1155af7c7f3bd234bd337be796
+workflow-type: tm+mt
+source-wordcount: '1308'
+ht-degree: 94%
 
 ---
 
@@ -152,7 +152,7 @@ Si vous utilisez Homebrew, suivez les instructions __Installation à l’aide de
 
 ## Installer Maven
 
-Apache Maven est l’outil de ligne de commande Java open source utilisé pour créer des projets AEM générés à partir de l’archétype Maven de projet AEM. Tous les principaux IDE ([IntelliJ IDEA](https://www.jetbrains.com/idea/), [Visual Studio Code](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/), etc.) ont intégré la prise en charge de Maven.
+Apache Maven est l’outil de ligne de commande Java open source utilisé pour créer des projets AEM générés à partir de l’archétype Maven de projet AEM. Tous les principaux IDE ([IntelliJ IDEA](https://www.jetbrains.com/idea/), [Visual Studio Code](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/), etc.) ont intégré la prise en charge de Maven.
 
 
 >[!BEGINTABS]
@@ -205,28 +205,13 @@ Pour que l’interface de ligne de commande d’Adobe I/O communique avec Cloud
    + Si vous créez un projet, sélectionnez « Projet vide », le cas échéant (au lieu de « Créer à partir d’un modèle »).
    + Les programmes de console Adobe I/O sont des concepts différents des programmes Cloud Manager.
 1. Créer une intégration d’API Cloud Manager
-   + Sélectionnez le type d’authentification obsolète « Compte de service (JWT) » (OAuth n’est pour l’instant pas pris en charge pour l’interface de ligne de commande).
-   + Créez ou chargez des clés.
-   + Sélectionnez le profil de produit « Développeur - Cloud Service ».
-1. Obtenez les informations d’identification du compte de service (JWT) nécessaires pour remplir le fichier [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) de l’interface de ligne de commande d’Adobe I/O.
-
-   ```json
-   //config.json 
-   {
-      "client_id": "Client ID from Service Account (JWT) credential",
-      "client_secret": "Client Secret from Service Account (JWT) credential",
-      "technical_account_id": "Technical Account ID from Service Account (JWT) credential",
-      "ims_org_id": "Organization ID from Service Account (JWT) credential",
-      "meta_scopes": [
-        "ent_cloudmgr_sdk"
-      ]
-   }
-   ```
-
+   + Sélectionnez le type d’informations d’identification « Oauth serveur à serveur ».
+   + Sélectionnez le profil de produit « Gestionnaire de déploiement - Cloud Service ».
+   + Enregistrer l’API configurée
+1. Obtenez les informations d’identification nécessaires pour renseigner le fichier [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) de l’interface de ligne de commande d’Adobe I/O en ouvrant les informations d’identification « OAuth serveur à serveur » nouvellement créées, puis en sélectionnant « Télécharger JSON » dans la barre d’actions supérieure droite.
+1. Ouvrez le fichier JSON téléchargé et renommez toutes les clés en minuscules. Par exemple, `CLIENT_ID` devient `client_id`.
 1. Chargez le fichier `config.json` dans l’interface de ligne de commande d’Adobe I/O.
-   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager ./path/to/config.json --file --json`
-1. Chargez le fichier `private.key` dans l’interface de ligne de commande d’Adobe I/O.
-   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager.private_key ./path/to/private.key --file`
+   + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager /path/to/downloaded/json --file --json`
 
 Commencez à [exécuter des commandes](https://github.com/adobe/aio-cli-plugin-cloudmanager#commands) pour Cloud Manager via l’interface de ligne de commande d’Adobe I/O.
 
