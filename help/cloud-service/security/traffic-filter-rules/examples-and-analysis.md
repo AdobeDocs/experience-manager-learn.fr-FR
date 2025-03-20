@@ -12,8 +12,8 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: 49becbcb-7965-4378-bb8e-b662fda716b7
 duration: 532
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 67091c068634e6c309afaf78942849db626128f6
+workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 100%
 
@@ -200,7 +200,7 @@ data:
 - Pour simuler l’attaque DoS, entrez la commande [Vegeta](https://github.com/tsenart/vegeta) suivante.
 
   ```shell
-  $ echo "GET https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html" | vegeta attack -rate=120 -duration=5s | vegeta report
+  $ echo "GET https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html" | vegeta attack -rate=120 -duration=60s | vegeta report
   ```
 
   Cette commande effectue 120 demandes pendant 5 secondes et génère un rapport. Comme vous pouvez le constater, le taux de réussite est de 32,5 % et un code de réponse HTTP 406 est reçu pour le reste, ce qui démontre que le trafic a été bloqué.

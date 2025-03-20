@@ -12,7 +12,7 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
-source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
+source-git-commit: 67091c068634e6c309afaf78942849db626128f6
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 98%
@@ -247,7 +247,7 @@ Pour simuler une attaque, des outils tels qu’[Apache Benchmark](https://httpd.
 En utilisant la commande [Vegeta](https://github.com/tsenart/vegeta) suivante, vous pouvez envoyer de nombreuses requêtes à votre site web :
 
 ```shell
-$ echo "GET https://<YOUR-WEBSITE-DOMAIN>" | vegeta attack -rate=120 -duration=5s | vegeta report
+$ echo "GET https://<YOUR-WEBSITE-DOMAIN>" | vegeta attack -rate=120 -duration=60s | vegeta report
 ```
 
 Cette commande effectue 120 requêtes pendant 5 secondes et génère un rapport. En supposant que le débit du site web ne soit pas limité, cela peut entraîner un pic de trafic.
