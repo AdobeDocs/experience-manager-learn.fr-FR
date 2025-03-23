@@ -1,7 +1,7 @@
 ---
 title: Utilisateurs et utilisatrices, groupes et autorisations AEM
 description: Adobe Experience Manager s’appuie sur les utilisateurs et utilisatrices, groupes d’utilisateurs et d’utilisatrices, et profils de produit d’Adobe IMS pour offrir aux utilisateurs et utilisatrices un accès personnalisable à AEM. Découvrez comment définir les groupes et les autorisations AEM et comment ils fonctionnent de concert avec les abstractions Adobe IMS afin de fournir un accès transparent et personnalisable à AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Administration, Security
 feature: User and Groups
 role: Admin
@@ -10,7 +10,7 @@ jira: KT-6060
 thumbnail: 39151.jpg
 exl-id: 7d7942ae-7e38-4abd-9900-5b8e3542f5e1
 duration: 315
-source-git-commit: d5745a17af6b72b1871925dd7c50cbbb152012fe
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 99%

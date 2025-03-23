@@ -1,7 +1,7 @@
 ---
 title: Prise en charge de l’authentification dans AEM 6.x
 description: Vue consolidée des mécanismes d’authentification pris en charge par AEM 6.x.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: User and Groups
 doc-type: Article
 jira: KT-406
@@ -12,8 +12,8 @@ exl-id: 96c542ae-6ab6-4d8a-94df-a58b03469320
 last-substantial-update: 2022-09-10T00:00:00Z
 thumbnail: KT-406.jpg
 duration: 22
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 100%
 

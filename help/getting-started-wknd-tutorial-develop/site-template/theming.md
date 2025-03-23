@@ -1,7 +1,7 @@
 ---
 title: Workflow de thème | Création rapide de site AEM
 description: Découvrez comment mettre à jour les sources de thème d’un site Adobe Experience Manager pour appliquer des styles spécifiques à la marque. Découvrez comment utiliser un serveur proxy pour afficher un aperçu en direct des mises à jour CSS et JavaScript. Ce tutoriel explique également comment déployer des mises à jour de thème sur un site AEM à l’aide du pipeline front-end d’Adobe Cloud Manager.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Core Components
 topic: Content Management, Development
 role: Developer
@@ -12,8 +12,8 @@ doc-type: Tutorial
 exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
 recommendations: noDisplay, noCatalog
 duration: 1275
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 100%
 

@@ -1,7 +1,7 @@
 ---
 title: Configurer un environnement de développement AEM local
 description: Découvrez comment configurer un environnement de développement local pour Experience Manager. Découvrez l’installation locale, Apache Maven, les environnements de développement intégrés, le débogage et la résolution des problèmes. Utilisez Eclipse IDE, CRXDE-Lite, Visual Studio Code et IntelliJ.
-version: 6.5
+version: Experience Manager 6.5
 feature: Developer Tools
 topic: Development
 role: Developer
@@ -11,8 +11,8 @@ last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
 duration: 4537
-source-git-commit: d731a7131b997fa272013e8d62aa2251e25c08e4
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '2423'
 ht-degree: 100%
 

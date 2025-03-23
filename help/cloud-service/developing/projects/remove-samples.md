@@ -1,7 +1,7 @@
 ---
 title: Supprimer les exemples d’un projet AEM Maven
 description: Découvrez comment nettoyer et supprimer un exemple de code d’un projet AEM généré par l’archétype de projet AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: AEM Project Archetype
 role: Developer
@@ -10,8 +10,8 @@ jira: KT-9092
 thumbnail: 337263.jpeg
 exl-id: 4e10c2b7-41b6-41a0-b8d4-9207a9d3f9c8
 duration: 341
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 100%
 

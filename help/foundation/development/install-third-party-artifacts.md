@@ -1,7 +1,7 @@
 ---
 title: Installer des artefacts tiers - non disponibles dans le référentiel Maven public
 description: Découvrez comment installer des artefacts tiers qui ne sont *pas disponibles dans le référentiel Maven public* lors de la création et du déploiement d’un projet AEM.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: OSGI
 topic: Development
 role: Architect, Developer
@@ -11,13 +11,13 @@ duration: 0
 last-substantial-update: 2024-09-13T00:00:00Z
 jira: KT-16207
 thumbnail: KT-16207.jpeg
-source-git-commit: 33415305f6aa183373eaef4bb4978a59325c8a32
-workflow-type: ht
+exl-id: 0cec14b3-4be5-4666-a36c-968ea2fc634f
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 100%
 
 ---
-
 
 # Installer des artefacts tiers - non disponibles dans le référentiel Maven public
 
@@ -258,7 +258,7 @@ Utilisons le service `MyHelloWorldService` du fichier `my-example-jar` dans le p
   }    
   ```
 
-- Dans le fichier `pom.xml` racine du projet WKND AEM, ajoutez `my-example-jar` en tant que dépendance.
+- Dans le fichier `pom.xml` racine du projet WKND AEM, ajoutez le lot `my-example-jar` en tant que dépendance.
 
   ```xml
   ...

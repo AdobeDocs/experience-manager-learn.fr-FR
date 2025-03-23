@@ -1,7 +1,7 @@
 ---
 title: Optimisation du score Lighthouse - Partie 3
 description: Découvrez les techniques permettant d’améliorer le LCP (Largest Contentful Paint) et d’obtenir les meilleurs scores Lighthouse possibles pour votre projet Edge Delivery Services.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer, Leader, User
@@ -13,7 +13,7 @@ jira: KT-16300
 hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 0f74a746-b16e-4b95-97f1-55e3002d7f7f
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 84%
@@ -28,4 +28,4 @@ Découvrez les techniques permettant d’améliorer le LCP (Largest Contentful�
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 season 3](../cloud5-season-3.md) .
+Regardez les vidéos connexes sur la page [Cloud 5 saison 3](../cloud5-season-3.md).

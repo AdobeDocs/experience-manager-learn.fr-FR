@@ -2,7 +2,7 @@
 title: Utiliser le recadrage intelligent Dynamic Media pour la vidéo
 description: Le recadrage intelligent Dynamic Media pour la vidéo utilise Adobe Sensei pour effectuer un suivi intelligent du point d’intérêt de la vidéo, ce qui garantit un rendu optimal sur toutes les tailles d’écran.
 feature: Smart Crop, Video Profiles, Viewer Presets
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5977
 thumbnail: 37958.jpg
 topic: Content Management
@@ -11,8 +11,8 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 15eb725c-d6f6-4ab9-8d39-dc05fbba1ff3
 duration: 397
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 100%
 

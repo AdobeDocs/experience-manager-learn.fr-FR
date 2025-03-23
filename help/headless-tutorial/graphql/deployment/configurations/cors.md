@@ -1,7 +1,7 @@
 ---
 title: Configuration CORS pour AEM GraphQL
 description: Découvrez comment configurer le partage des ressources cross-origin (CORS) pour l’utiliser avec AEM GraphQL.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
@@ -11,10 +11,10 @@ thumbnail: KT-10830.jpg
 exl-id: 394792e4-59c8-43c1-914e-a92cdfde2f8a
 last-substantial-update: 2024-03-22T00:00:00Z
 duration: 185
-source-git-commit: 1ad0c609ca0edb34e556c1453462c6d1041f5807
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '603'
+ht-degree: 100%
 
 ---
 

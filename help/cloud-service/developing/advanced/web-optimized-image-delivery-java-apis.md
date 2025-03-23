@@ -1,7 +1,7 @@
 ---
 title: API Java™ de diffusion d’images optimisées pour le web
 description: Découvrez comment utiliser les API Java™ de diffusion d’images optimisées pour le web d’AEM as a Cloud Service pour développer des expériences web hautement performantes.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: APIs, Sling Model, OSGI, HTL or HTML Template Language
 topic: Performance, Development
 role: Architect, Developer
@@ -12,8 +12,8 @@ jira: KT-13014
 thumbnail: KT-13014.jpeg
 exl-id: c6bb9d6d-aef0-42d5-a189-f904bbbd7694
 duration: 352
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 100%
 

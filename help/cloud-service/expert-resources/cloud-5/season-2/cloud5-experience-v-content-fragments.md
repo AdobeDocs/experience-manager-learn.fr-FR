@@ -1,7 +1,7 @@
 ---
 title: Cloud 5 - Fragments d’expérience ou fragments de contenu
 description: Analyse comparative des différences entre un fragment d’expérience et un fragment de contenu
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Admin, Developer
 level: Intermediate
 thumbnail: 342864.jpeg
@@ -9,7 +9,7 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: bfd455c4-9a51-4537-ae6d-548d552e13e6
 duration: 278
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 85%
@@ -30,4 +30,4 @@ Analyse comparative des différences entre un fragment d’expérience et un fra
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 season 2](../cloud5-season-2.md) .
+Regardez les vidéos connexes sur la page [Cloud 5 saison 2](../cloud5-season-2.md).

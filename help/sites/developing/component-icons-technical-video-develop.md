@@ -1,7 +1,7 @@
 ---
 title: Personnaliser les icônes de composant dans Adobe Experience Manager Sites
 description: Les icônes de composant permettent aux auteurs et autrices d’identifier rapidement un composant grâce aux icônes ou abréviations explicites. Les auteurs et autrices peuvent désormais trouver plus rapidement que jamais les composants requis pour créer leurs expériences web.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Core Components
 topic: Development
 role: User
@@ -9,8 +9,8 @@ level: Intermediate
 doc-type: Technical Video
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
 duration: 379
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 100%
 

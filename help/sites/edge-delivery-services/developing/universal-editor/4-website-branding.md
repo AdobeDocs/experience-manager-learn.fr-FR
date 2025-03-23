@@ -1,7 +1,7 @@
 ---
 title: Ajouter une image de marque à un site web
 description: Définissez des variables CSS et CSS globales et des polices web pour un site Edge Delivery Services.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -10,7 +10,7 @@ doc-type: Tutorial
 jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
-source-git-commit: ecd3ce33204fa6f3f2c27ebf36e20ec26e429981
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%
@@ -96,7 +96,7 @@ Lorsque vous développez un site web et que vous vous trouvez à répéter les m
 
 Les éléments nus sont stylisés directement par le biais de leur nom d’élément au lieu d’utiliser une classe CSS. Par exemple, plutôt que de mettre en forme une classe CSS `.page-heading`, les styles sont appliqués à l’élément `h1` à l’aide de `h1 { ... }`.
 
-Dans le fichier `styles/styles.css`, un ensemble de styles de base est appliqué aux éléments en HTML nu. Les sites web Edge Delivery Services donnent la priorité à l’utilisation d’éléments nus, car ils s’alignent sur l’HTML sémantique natif d’Edge Delivery Service.
+Dans le fichier `styles/styles.css`, un ensemble de styles de base est appliqué aux éléments HTML nus. Les sites web Edge Delivery Services donnent la priorité à l’utilisation d’éléments nus, car ils s’alignent sur l’HTML sémantique native d’Edge Delivery Service.
 
 Pour nous aligner sur le branding WKND, nous allons mettre en forme certains éléments nus en `styles.css` :
 
@@ -123,11 +123,11 @@ Ces styles garantissent que les éléments `h2`, sauf s’ils sont remplacés, s
 
 ### Eléments déduits
 
-En Edge Delivery Services, le code `scripts.js` et `aem.js` du projet améliore automatiquement des éléments HTMLS nus spécifiques en fonction de leur contexte dans l’HTML.
+Dans Edge Delivery Services, le code `scripts.js` et `aem.js` du projet améliore automatiquement des éléments HTML nus spécifiques en fonction de leur contexte dans HTML.
 
 Par exemple, les éléments d’ancrage (`<a>`) créés sur leur propre ligne (plutôt que sur le texte qui les entoure) sont considérés comme des boutons en fonction de ce contexte. Ces ancres sont automatiquement enveloppées avec un conteneur `div` avec des `button-container` de classe CSS et l’élément d’ancrage dispose d’une classe CSS `button` ajoutée.
 
-Par exemple, lorsqu’un lien est créé sur sa propre ligne, JavaScript Edge Delivery Services met à jour son DOM de la manière suivante :
+Par exemple, lorsqu’un lien est créé sur sa propre ligne, Edge Delivery Services JavaScript met à jour son DOM de la manière suivante :
 
 ```html
 <p class="button-container">
@@ -291,7 +291,7 @@ Les `roboto-fallback` et `roboto-condensed-fallback` sont des polices de secours
 
 Les polices web ont souvent un impact sur les performances en raison de leur taille, augmentant potentiellement les scores de décalage de mise en page cumulé (CLS) et réduisant les scores globaux de Lighthouse. Pour garantir un affichage instantané du texte pendant le chargement des polices web, les projets Edge Delivery Services utilisent des polices de remplacement natives dans le navigateur. Cette approche permet de maintenir une expérience utilisateur fluide pendant que la police souhaitée s’applique.
 
-Pour sélectionner la meilleure police de secours, utilisez l’extension Chrome de secours [Helix Font Fallback](https://www.aem.live/developer/font-fallback) d’Adobe, qui détermine une police étroitement correspondante que les navigateurs peuvent utiliser avant le chargement de la police personnalisée. Les déclarations de police de secours qui en résultent doivent être ajoutées au fichier `styles/styles.css` pour améliorer les performances et garantir une expérience fluide pour les utilisateurs.
+Pour sélectionner la meilleure police de secours, utilisez l’extension Adobe [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), qui détermine une police étroitement correspondante que les navigateurs peuvent utiliser avant le chargement de la police personnalisée. Les déclarations de police de secours qui en résultent doivent être ajoutées au fichier `styles/styles.css` pour améliorer les performances et garantir une expérience fluide pour les utilisateurs.
 
 ![Extension Helix Font Fallback Chrome](./assets/4-website-branding/font-fallback-chrome-plugin.png){align=center}
 
@@ -388,7 +388,7 @@ Une fois les modifications transmises à la branche `wknd-styles`, créez une re
    * Les URL de test indiquent à AEM Code Sync les branches à utiliser pour la validation et la comparaison. L’URL « Après » utilise le `wknd-styles` de branche de travail pour vérifier comment les modifications de code affectent les performances du site web.
 
 6. Cliquez sur **Créer une demande d’extraction**.
-7. Attendez que l’application GitHub de synchronisation de code AEM [](./1-new-code-project.md) **effectue des vérifications de qualité**. En cas d’échec, résolvez les erreurs et réexécutez les vérifications.
+7. Attendez que l’application GitHub de synchronisation de code AEM [](./1-new-code-project.md) **termine les vérifications de qualité**. En cas d’échec, résolvez les erreurs et réexécutez les vérifications.
 8. Une fois les vérifications effectuées, **fusionnez la requête de tirage** dans `main`.
 
 Une fois les modifications fusionnées dans `main`, elles sont considérées comme déployées en production et le nouveau développement peut se poursuivre en fonction de ces mises à jour.

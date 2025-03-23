@@ -1,7 +1,7 @@
 ---
 title: Mapper des métadonnées et des formulaires personnalisés avec le connecteur amélioré Workfront pour AEM
 description: Découvrez comment configurer Workfront et AEM Assets pour gérer et synchroniser les métadonnées des ressources à l’aide de formulaires personnalisés Workfront et de schémas de métadonnées AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management, Integrations
 feature: Asset Management
 role: Admin, Architect, Developer
@@ -13,8 +13,8 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 40d76e0c-69f3-4003-9f34-f393e6fb8561
 duration: 3314
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 100%
 

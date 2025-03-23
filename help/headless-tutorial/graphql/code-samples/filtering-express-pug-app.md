@@ -1,7 +1,7 @@
 ---
 title: Filtrer l’application Express
 description: Une simple application Express qui filtre les WKND Adventures modélisées à l’aide de fragments de contenu.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
@@ -14,8 +14,8 @@ hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: b64f33ab-cd18-4cbc-a57e-baf505f1442a
 duration: 29
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 100%
 

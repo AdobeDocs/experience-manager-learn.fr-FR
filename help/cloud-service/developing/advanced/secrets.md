@@ -1,15 +1,15 @@
 ---
 title: Gestion des secrets dans AEM as a Cloud Service
 description: Découvrez les bonnes pratiques de gestion des secrets dans AEM as a Cloud Service. Utilisez les outils et les techniques proposés par AEM pour protéger vos informations sensibles, en vous assurant que votre application reste sécurisée et confidentielle.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development, Security
 feature: OSGI, Cloud Manager
 role: Developer
 jira: KT-15880
 level: Intermediate, Experienced
 exl-id: 856b7da4-9ee4-44db-b245-4fdd220e8a4e
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 100%
 

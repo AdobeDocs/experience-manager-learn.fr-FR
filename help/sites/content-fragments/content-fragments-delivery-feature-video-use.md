@@ -2,15 +2,15 @@
 title: Diffuser des fragments de contenu dans AEM
 description: Les fragments de contenu, indépendamment de la disposition, peuvent être utilisés directement dans AEM Sites avec les composants principaux ou peuvent être diffusés de façon découplée sur les canaux en aval.
 feature: Content Fragments
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 525cd30c-05bf-4f17-b61b-90609ce757ea
 duration: 878
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 100%
 

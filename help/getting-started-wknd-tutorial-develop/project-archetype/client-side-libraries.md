@@ -1,7 +1,7 @@
 ---
 title: Bibliothèques clientes et workflow front-end
 description: Découvrez comment utiliser les bibliothèques clientes pour déployer et gérer le code CSS et JavaScript pour une implémentation d’Adobe Experience Manager (AEM) Sites. Découvrez comment le module ui.frontend, un projet webpack, peut être intégré au processus de génération de bout en bout.
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Core Components, AEM Project Archetype
 topic: Content Management, Development
 role: Developer
@@ -12,8 +12,8 @@ doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
 duration: 557
-source-git-commit: 58ef1c482f127981083c07e5de5a1aba2f7c3aec
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 100%
 

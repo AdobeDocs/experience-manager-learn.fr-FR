@@ -1,7 +1,7 @@
 ---
 title: Initialiser une application du Créateur d’applications pour l’interface utilisateur AEM
 description: Découvrez comment initialiser une extension d’application du Créateur d’applications de l’interface utilisateur AEM qui définit l’emplacement d’affichage de l’extension et le travail qu’elle effectue.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developer Tools
 topic: Development
 role: Developer
@@ -13,8 +13,8 @@ jira: KT-11659
 thumbnail: 3412876.jpeg
 exl-id: ef5ad335-7278-4c00-beb6-233a3d1e330e
 duration: 265
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 100%
 

@@ -2,7 +2,7 @@
 title: Utiliser Brand Portal
 description: Présentation vidéo de l’intégration d’AEM Assets Brand Portal à l’instance de création AEM.
 feature: Brand Portal
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
@@ -10,10 +10,10 @@ last-substantial-update: 2022-06-15T00:00:00Z
 doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
 duration: 2460
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '1703'
-ht-degree: 100%
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
+source-wordcount: '1702'
+ht-degree: 98%
 
 ---
 
@@ -101,7 +101,7 @@ Les codes vidéo Dynamic Media peuvent être téléchargés à partir de :
 
 ### Publication planifiée sur Brand Portal
 
-Le workflow de publication des ressources (et dossiers) de l’instance d’auteur d’[AEM (6.4.2.0)](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) sur Brand Portal peut être planifié à des date et heure ultérieures.
+Le workflow de publication Assets (et dossiers) depuis [AEM (6.4.2.0)](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) l’instance d’auteur vers Brand Portal peut être planifiée à une date et une heure ultérieures.
 
 De façon similaire, les ressources publiées peuvent être supprimées du portail à une date (ou heure) ultérieure, en planifiant le workflow Dépublier sur Brand Portal.
 

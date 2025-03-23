@@ -1,7 +1,7 @@
 ---
 title: Intégration d’Adobe Express à AEM Assets
 description: Découvrez comment utiliser l’intégration d’Adobe Express avec AEM Assets afin d’optimiser les chaînes d’approvisionnement de contenu et d’améliorer la productivité et l’accessibilité pour toutes les personnes membres de l’équipe.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Integrations
 topic: Integrations, Content Management, Content Supply Chain
 role: User
@@ -11,7 +11,7 @@ jira: KT-15375
 doc-type: Feature Video
 duration: 583
 exl-id: 951bb255-e3e7-4bd5-9d48-7ff0469860af
-source-git-commit: 04037791eb5fe7a3b390b29d5c25f3260e5d41c9
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 59%

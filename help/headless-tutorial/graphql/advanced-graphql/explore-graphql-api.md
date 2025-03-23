@@ -1,15 +1,15 @@
 ---
 title: Explorer l’API GraphQL d’AEM - Concepts avancés d’AEM Headless - GraphQL
 description: Envoyez des requêtes GraphQL à l’aide de l’IDE GraphiQL. Découvrez les requêtes avancées à l’aide de filtres, de variables et de directives. Effectuez une requête pour les références de fragment et de contenu, y compris les références à partir de champs de texte multiligne.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
 level: Intermediate
 exl-id: bd7916be-8caa-4321-add0-4c9031306d60
 duration: 438
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 100%
 

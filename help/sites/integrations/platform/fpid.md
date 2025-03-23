@@ -1,7 +1,7 @@
 ---
 title: Générer des FPID Adobe Experience Platform avec AEM Sites
 description: Découvrez comment générer ou actualiser des cookies FPID Adobe Experience Platform à l’aide d’AEM Sites.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Integrations, APIs, Dispatcher
 topic: Integrations, Personalization, Development
 role: Developer
@@ -13,7 +13,7 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 18a22f54-da58-4326-a7b0-3b1ac40ea0b5
 duration: 266
-source-git-commit: 241c56d34c851cf9bac553cb9fc545a835e495d2
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 96%
@@ -24,7 +24,7 @@ ht-degree: 96%
 
 Pour intégrer Adobe Experience Manager (AEM) Sites délivré via la publication AEM à Adobe Experience Platform (AEP), AEM doit générer et gérer un cookie FPID unique (identifiant d’appareil propriétaire) afin de suivre de manière unique l’activité des utilisateurs et utilisatrices.
 
-Le cookie FPID doit être défini par le serveur (AEM Publish) au lieu d’utiliser JavaScript pour créer un cookie côté client. En effet, les navigateurs modernes, tels que Safari et Firefox, peuvent bloquer ou faire expirer rapidement les cookies générés par JavaScript.
+Le cookie FPID doit être défini par le serveur (publication AEM) au lieu d’utiliser JavaScript pour créer un cookie côté client. En effet, les navigateurs modernes, tels que Safari et Firefox, peuvent bloquer ou faire expirer rapidement les cookies générés par JavaScript.
 
 Lisez la documentation de support pour [découvrir les détails du fonctionnement conjoint des identifiants d’appareil propriétaire et des identifiants Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=fr).
 

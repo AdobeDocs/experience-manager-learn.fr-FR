@@ -1,7 +1,7 @@
 ---
 title: Microservices AEM Assets et passage à AEM as a Cloud Service
 description: Découvrez comment les microservices Asset Compute d’AEM Assets as a Cloud Service vous permettent de générer automatiquement et efficacement n’importe quel rendu pour vos ressources, en remplaçant ainsi le rôle du workflow AEM habituel.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Asset Compute Microservices
 topic: Migration, Upgrade
 role: Developer
@@ -10,8 +10,8 @@ jira: KT-8635
 thumbnail: 336990.jpeg
 exl-id: 327e8663-086b-4b31-b159-a0cf30480b45
 duration: 973
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 100%
 

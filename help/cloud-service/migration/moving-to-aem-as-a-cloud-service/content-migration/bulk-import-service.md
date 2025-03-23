@@ -1,7 +1,7 @@
 ---
 title: Migration de contenu à l’aide du service d’import en bloc
 description: Découvrez comment AEM en tant que service d’import en bloc de services cloud peut être utilisé pour importer des ressources à partir de sources non AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Migration, Upgrade
 feature: Migration
 role: Developer
@@ -10,8 +10,8 @@ jira: KT-8918
 thumbnail: 336969.jpeg
 exl-id: 4944d3d9-52a0-4255-9e6c-eb119160e400
 duration: 650
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 100%
 

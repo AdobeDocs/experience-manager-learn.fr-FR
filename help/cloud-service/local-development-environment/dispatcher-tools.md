@@ -1,7 +1,7 @@
 ---
 title: Configurer des outils du Dispatcher pour le développement AEM as a Cloud Service
 description: Les outils du Dispatcher du SDK AEM facilitent le développement local de projets Adobe Experience Manager (AEM) en facilitant l’installation, l’exécution et le dépannage local du Dispatcher.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Dispatcher, Developer Tools
 role: Developer
@@ -11,10 +11,10 @@ thumbnail: 30603.jpg
 last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
 duration: 624
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '1621'
-ht-degree: 100%
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
+source-wordcount: '1620'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Notez que `~` est utilisé comme raccourci pour le répertoire de l’utilisateu
 
 + Vous pouvez éventuellement installer la dernière version du [site de référence AEM](https://github.com/adobe/aem-guides-wknd/releases) sur le service de publication AEM local. Ce site est utilisé dans ce tutoriel pour visualiser un Dispatcher en cours de fonctionnement.
 
-1. Installez et démarrez la dernière version de [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5 ou ultérieure/Docker Engine v19.03.9 ou ultérieure) sur l’ordinateur de développement local.
+1. Installez et démarrez la dernière version de [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+) sur l’ordinateur de développement local.
 
 ## Télécharger les outils du Dispatcher (dans le cadre du SDK AEM)
 

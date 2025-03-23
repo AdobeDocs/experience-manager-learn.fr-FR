@@ -1,7 +1,7 @@
 ---
 title: Utiliser le SDK d’AEM Headless
 description: Découvrez comment effectuer des requêtes GraphQL à l’aide du SDK d’AEM Headless.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Headless
 feature: GraphQL API
 role: Developer
@@ -10,10 +10,10 @@ jira: KT-10269
 thumbnail: KT-10269.jpeg
 exl-id: 922a464a-2286-4132-9af8-f5a1fb5ce268
 duration: 200
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -88,7 +88,7 @@ let { data, errors } = executePersistedQuery('wknd-shared/adventures-by-slug', {
 
 +++
 
-+++ React useEffect(..) exemple
++++ Exemple d’utilisation de React useEffect(..)
 
 Installez [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-client-js) en exécutant la commande `npm install` à partir de la racine de votre projet React.
 
@@ -96,7 +96,7 @@ Installez [@adobe/aem-headless-client-js](https://github.com/adobe/aem-headless-
 $ npm i @adobe/aem-headless-client-js
 ```
 
-Cet exemple de code montre comment utiliser le [hook React useEffect(..) ](https://reactjs.org/docs/hooks-effect.html) pour exécuter un appel asynchrone vers AEM GraphQL.
+Cet exemple de code montre comment utiliser le hook [React useEffect(..)](https://reactjs.org/docs/hooks-effect.html) pour exécuter un appel asynchrone vers AEM GraphQL.
 
 L’utilisation de `useEffect` pour effectuer l’appel GraphQL asynchrone dans React est utile car :
 

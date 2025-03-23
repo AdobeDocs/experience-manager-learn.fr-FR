@@ -1,7 +1,7 @@
 ---
 title: Conditions préalables pour l’équipe de développement Edge Delivery Services
 description: Cette vidéo décrit tous les éléments dont une équipe de développement aura besoin avant de commencer à développer pour Edge Delivery Services.
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -12,8 +12,8 @@ jira: KT-14475, KT-14476
 thumbnail: 3425709.jpeg
 duration: 185
 exl-id: 12b2ad4d-ee66-4eb0-b8e6-05b4b6e41d76
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 100%
 

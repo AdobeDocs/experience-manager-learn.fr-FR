@@ -2,7 +2,7 @@
 title: Utiliser les ressources Adobe Stock avec AEM Assets
 description: AEM permet aux utilisateurs et aux utilisatrices de rechercher, de prévisualiser, d’enregistrer et d’acquérir des ressources Adobe Stock sous licence directement à partir d’AEM. Les organisations peuvent désormais intégrer leur forfait entreprise Adobe Stock à AEM Assets pour s’assurer que les ressources sous licence sont désormais disponibles pour tous leurs projets de création et marketing, avec les puissantes fonctionnalités de gestion de ressources numériques d’AEM.
 feature: Adobe Stock
-version: 6.5
+version: Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
@@ -10,8 +10,8 @@ last-substantial-update: 2022-06-26T00:00:00Z
 doc-type: Feature Video
 exl-id: a3c3a01e-97a6-494f-b7a9-22057e91f4eb
 duration: 1079
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 100%
 

@@ -1,7 +1,7 @@
 ---
 title: Déploiement en production à l’aide d’un service de pucliation AEM - Prise en maiin d’AEM Headless - GraphQL
 description: Découvrez les services de création et de publication d’AEM et le modèle de déploiement recommandé pour les applications découplées. Dans ce tutoriel, apprenez à utiliser les variables d’environnement pour modifier dynamiquement un point d’entrée GraphQL en fonction de l’environnement cible. Apprenez à configurer correctement AEM pour le partage de ressources entre origines multiples (CORS).
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
@@ -11,8 +11,8 @@ jira: KT-7131
 thumbnail: KT-7131.jpg
 exl-id: 8c8b2620-6bc3-4a21-8d8d-8e45a6e9fc70
 duration: 486
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '2137'
 ht-degree: 100%
 

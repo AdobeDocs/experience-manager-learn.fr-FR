@@ -1,7 +1,7 @@
 ---
 title: Modules externes AEM Assets Sidekick et Edge Delivery Services
 description: Découvrez comment le module externe AEM Assets Sidekick peut être utilisé pour incorporer des ressources gérées dans des expériences à fort impact diffusées par le biais d’Edge Delivery Services.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services, Selectors
 topic: Content Management
 role: User
@@ -12,8 +12,8 @@ jira: KT-14070
 thumbnail: 3424615.jpeg
 exl-id: e8ed49a5-4ad2-4759-bf0f-1dae8478d996
 duration: 149
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 100%
 

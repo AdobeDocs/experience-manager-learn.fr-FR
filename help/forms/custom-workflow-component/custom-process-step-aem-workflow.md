@@ -2,15 +2,15 @@
 title: Mettre en œuvre une étape de processus personnalisée avec la boîte de dialogue
 description: Écrire des pièces jointes de formulaire adaptatif dans un système de fichiers à l’aide d’une étape de processus personnalisée
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 149d2c8c-bf44-4318-bba8-bec7e25da01b
 duration: 135
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 100%
 

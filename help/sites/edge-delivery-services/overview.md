@@ -1,7 +1,7 @@
 ---
 title: Vidéos Edge Delivery Services
 description: Découvrez comment rendre les sites web plus rapides avec Edge Delivery Services.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
 role: Developer
@@ -11,7 +11,7 @@ doc-type: Catalog
 duration: 660
 last-substantial-update: 2024-03-20T00:00:00Z
 exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
-source-git-commit: e8ce91b0be577ec6cf8f3ab07ba9ff09c7e7a6ab
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 82%
@@ -48,8 +48,8 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Tutoriel sur la création de documents et le Edge Delivery Services" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="Tutoriel sur la création de documents et le Edge Delivery Services"
+                    <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Tutoriel sur la création basée sur des documents et Edge Delivery Services" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="Tutoriel sur la création basée sur des documents et Edge Delivery Services"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -57,7 +57,7 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" title="Tutoriel sur la création de documents et le Edge Delivery Services">Tutoriel de création et de Edge Delivery Services basé sur des documents</a>
+                        <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" title="Tutoriel sur la création basée sur des documents et Edge Delivery Services">Tutoriel sur la création de documents et Edge Delivery Services</a>
                     </p>
                     <p class="is-size-6">Découvrez comment créer des sites web Edge Delivery Services créés à l’aide de la création basée sur les documents.</p>
                 </div>
@@ -71,8 +71,8 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./developing/universal-editor/0-overview.md" title="Tutoriel sur l’éditeur universel et le Edge Delivery Services" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="developing/universal-editor/assets/0-overview/hero.png" alt="Tutoriel sur l’éditeur universel et le Edge Delivery Services"
+                    <a href="./developing/universal-editor/0-overview.md" title="Tutoriel sur l’éditeur universel et Edge Delivery Services" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="developing/universal-editor/assets/0-overview/hero.png" alt="Tutoriel sur l’éditeur universel et Edge Delivery Services"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -80,9 +80,9 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" title="Tutoriel sur l’éditeur universel et le Edge Delivery Services">Tutoriel sur l’éditeur universel et le Edge Delivery Services </a>
+                        <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" title="Tutoriel sur l’éditeur universel et Edge Delivery Services">Tutoriel sur l’éditeur universel et Edge Delivery Services</a>
                     </p>
-                    <p class="is-size-6">Découvrez les principes de base de la création d’un site web Edge Delivery Services avec l’éditeur universel.</p>
+                    <p class="is-size-6">Découvrez les principes de base de la création de sites web Edge Delivery Services à l’aide de l’éditeur universel.</p>
                 </div>
                 <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Démarrer le tutoriel</span>

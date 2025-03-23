@@ -1,7 +1,7 @@
 ---
 title: Créer un projet Adobe Developer Console pour l’extensibilité de l’interface utilisateur AEM
 description: Créez un projet Adobe Developer Console qui définit son accès aux autres services Adobe et gère ses déploiements.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Developer Tools
 topic: Development
 role: Developer
@@ -13,8 +13,8 @@ jira: KT-11658
 thumbnail: 3412875.jpeg
 exl-id: 06afb6d0-6ae6-47d4-a3d9-c48bb7d572f6
 duration: 163
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 100%
 

@@ -1,7 +1,7 @@
 ---
 title: Jeton d’accès au développement local
 description: Les jetons d’accès au développement local d’AEM sont utilisés pour accélérer le développement des intégrations avec AEM as a Cloud Service qui interagissent par programmation avec les services de création et de publication d’AEM via HTTP.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: APIs
 jira: KT-6785
 thumbnail: 330477.jpg
@@ -12,8 +12,8 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
 duration: 572
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 100%
 

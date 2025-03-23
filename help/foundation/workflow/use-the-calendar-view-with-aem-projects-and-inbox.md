@@ -1,15 +1,15 @@
 ---
 title: Utiliser la vue Calendrier avec les projets AEM et la boîte de réception
 description: La vue Calendrier d’AEM effectue le suivi des projets et des tâches dans un calendrier afin de faciliter la gestion et la planification des projets. En vue Calendrier, la personne dispose d’une visibilité globale sur les tâches et les projets en cours, prévus, en échéance proche et en échéance dépassée.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Workflow, Projects
 doc-type: Feature Video
 topic: Collaboration
 role: User
 level: Beginner
 duration: 478
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 100%
 

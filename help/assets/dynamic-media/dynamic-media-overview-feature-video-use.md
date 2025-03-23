@@ -2,14 +2,14 @@
 title: Vue d’ensemble de Dynamic Media avec AEM Assets
 description: 'Cette série de vidéos présente un aperçu de la gestion et de l’accès du contenu multimédia à l’aide d’Adobe Experience Manager Dynamic Media en tant que service de diffusion de contenu. Dynamic Media vous permet de gérer et de publier des expériences numériques dynamiques : une fonctionnalité propre à Experience Manager Assets. Notre framework et notre suite de composants permettent aux spécialistes marketing de personnaliser et de diffuser des expériences multimédias interactives sur tous les appareils.'
 feature: Smart Crop, Video Profiles, Image Profiles, Viewer Presets, 360 VR Video, Image Sets, Spin Sets
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
 duration: 2516
-source-git-commit: fd372c7ee387504e4316a6ca657a77fe0a0c511e
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 93%
@@ -20,11 +20,11 @@ ht-degree: 93%
 
 Cette série de vidéos en plusieurs parties présente un aperçu de la gestion et de l’accès au contenu multimédia à l’aide d’Adobe Experience Manager Dynamic Media en tant que service de diffusion de contenu. Dynamic Media vous permet de gérer et de publier des expériences numériques dynamiques : une fonctionnalité propre à Experience Manager Assets. Notre framework et notre suite de composants permettent aux spécialistes marketing de personnaliser et de diffuser des expériences multimédias interactives sur tous les appareils.
 
-## Démonstration en direct de Dynamic Media
+## Démo Dynamic Media en direct
 
-[![Démo en direct AEM Assets Dynamic Media](./assets/overview/live-demo.png)](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+[![Démonstration en direct d’AEM Assets Dynamic Media](./assets/overview/live-demo.png)](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
 
-Explorez les possibilités d’Adobe Dynamic Media avec notre [**Live Demo**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), où des solutions de pointe prennent vie. Découvrez comment [**Dynamic Assets**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html) rationalisez les workflows et améliorez la gestion de contenu, et découvrez les [**expériences interactives**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html) qui captivent les audiences sur chaque canal. [Découvrez comment Dynamic Media peut transformer votre stratégie de contenu ](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) !
+Explorez les possibilités offertes par Adobe Dynamic Media avec notre [**Démo en direct**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), qui donne vie à des solutions de pointe. Découvrez comment [**Dynamic Assets**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html) rationalisez les workflows, améliorez la gestion de contenu et découvrez [**les expériences interactives**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html) qui captivent les audiences sur tous les canaux. [Découvrez comment Dynamic Media peut transformer votre stratégie de contenu](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) !
 
 ## Vue d’ensemble de Dynamic Media
 

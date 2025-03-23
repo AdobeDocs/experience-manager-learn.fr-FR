@@ -1,7 +1,7 @@
 ---
 title: Intégrer AEM Sites à Adobe Analytics avec l’extension de balises Adobe Analytics
 description: Intégrez AEM Sites à Adobe Analytics en utilisant la couche de données client d’Adobe orientée événement pour collecter des données sur l’activité des utilisateurs et utilisatrices sur un site web créé avec Adobe Experience Manager. Découvrez comment utiliser les règles de balise pour écouter ces événements et envoyer des données à une suite de rapports Adobe Analytics.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Integrations
 feature: Adobe Client Data Layer
 role: Developer
@@ -12,8 +12,8 @@ badgeIntegration: label="Intégration" type="positive"
 doc-type: Tutorial
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
 duration: 490
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '2262'
 ht-degree: 100%
 

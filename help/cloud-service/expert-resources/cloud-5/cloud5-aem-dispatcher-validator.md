@@ -1,7 +1,7 @@
 ---
 title: Programme de validation du Dispatcher AEM Cloud 5
 description: Cet épisode se concentre un peu plus sur le programme de validation du Dispatcher et ses nuances.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Admin, Developer
 level: Intermediate
 jira: KT-10271
@@ -10,7 +10,7 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: e95e7530-100d-4495-abae-4c568e7978b3
 duration: 310
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 86%
@@ -32,4 +32,4 @@ Exemple rapide d’utilisation du programme de validation du Dispatcher dans vos
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 season 1](cloud5-season-1.md) .
+Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).

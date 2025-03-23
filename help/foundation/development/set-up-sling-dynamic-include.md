@@ -1,7 +1,7 @@
 ---
 title: Configurer Sling Dynamic Include pour AEM
 description: Présentation vidéo de l’installation et de l’utilisation d’Apache Sling Dynamic Include avec AEM Dispatcher s’exécutant sur le serveur web Apache HTTP.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 sub-product: Experience Manager, Experience Manager Sites
 feature: APIs
 doc-type: Technical Video
@@ -10,8 +10,8 @@ role: Developer
 level: Experienced
 exl-id: 6c504710-be8f-4b44-bd8a-aaf480ae6d8a
 duration: 863
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 100%
 

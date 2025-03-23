@@ -3,15 +3,15 @@ title: Utiliser des composants principaux de Dynamic Media
 description: Étapes d’utilisation des composants Dynamic Media sur la page Sites
 role: Developer
 level: Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Core Components
 topic: Development
 index: y
 doc-type: Tutorial
 exl-id: b500261a-5b96-41b8-8270-fb6bde95d48a
 duration: 112
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '35'
 ht-degree: 100%
 

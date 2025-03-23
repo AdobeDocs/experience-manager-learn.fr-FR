@@ -1,7 +1,7 @@
 ---
 title: Fichiers en lecture seule ou non modifiables du Dispatcher AMS
 description: Découvrir pourquoi certains fichiers sont en lecture seule ou non modifiables et comment effectuer les modifications fonctionnelles que vous souhaitez
-version: 6.5
+version: Experience Manager 6.5
 topic: Administration, Development
 feature: Dispatcher
 role: Admin
@@ -10,8 +10,8 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 7be6b3f9-cd53-41bc-918d-5ab9b633ffb3
 duration: 253
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 100%
 

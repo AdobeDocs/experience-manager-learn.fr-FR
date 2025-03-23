@@ -1,7 +1,7 @@
 ---
 title: Utiliser le tableau de bord de présentation du système dans AEM
 description: Dans les versions précédentes d’AEM, les administrateurs et administratrices devaient consulter plusieurs emplacements afin d’avoir une vue d’ensemble de l’instance AEM. La vue d’ensemble du système vise à résoudre ce problème en offrant une vue détaillée de la configuration, du matériel et de l’intégrité de l’instance AEM, le tout à partir d’un seul tableau de bord.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: Operations
 doc-type: Technical Video
 topic: Administration
@@ -9,8 +9,8 @@ role: Admin
 level: Beginner
 exl-id: af8f499c-4955-44b5-8f21-085263ca31a3
 duration: 357
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 100%
 

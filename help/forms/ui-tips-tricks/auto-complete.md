@@ -3,7 +3,7 @@ title: Fonctionnalité de saisie automatique dans AEM Forms
 description: Permet aux utilisateurs et utilisatrices de rechercher et de sélectionner rapidement dans une liste préremplie de valeurs au fur et à mesure de leur saisie, en exploitant la recherche et le filtrage.
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -11,8 +11,8 @@ jira: KT-11374
 last-substantial-update: 2022-11-01T00:00:00Z
 exl-id: e9a696f9-ba63-462d-93a8-e9a7a1e94e72
 duration: 47
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 100%
 

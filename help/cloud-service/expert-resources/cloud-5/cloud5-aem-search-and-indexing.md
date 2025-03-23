@@ -1,7 +1,7 @@
 ---
 title: Recherche et indexation AEM Cloud 5
 description: Nous nous aventurons dans le vaste sujet de la recherche et de l’indexation.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Admin, Developer
 level: Intermediate
 jira: KT-10275
@@ -10,7 +10,7 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: b2571a84-101f-4330-8a5f-9ef5e4344591
 duration: 286
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 87%
@@ -32,4 +32,4 @@ Une approche du vaste sujet de la recherche et de l’indexation. Il s’agit d�
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 season 1](cloud5-season-1.md) .
+Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).

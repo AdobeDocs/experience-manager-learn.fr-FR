@@ -2,7 +2,7 @@
 title: Adobe Asset Link et AEM
 description: Les ressources d’Adobe Experience Manager peuvent être utilisées par les concepteurs et conceptrices ainsi que les utilisateurs et utilisatrices créatifs dans leurs applications de bureau Adobe Creative Cloud préférées. L’extension Adobe Asset Link pour Adobe Creative Cloud for enterprise étend la fonctionnalité de recherche, de tri, de prévisualisation, de chargement de ressources, d’extraction, de modification, d’archivage et d’affichage des métadonnées des ressources d’AEM dans des outils de Creative Cloud tels qu’Adobe XD, Photoshop, InDesign et Illustrator.
 feature: Adobe Asset Link
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Content Management
 role: User
 level: Beginner
@@ -12,10 +12,10 @@ last-substantial-update: 2022-06-25T00:00:00Z
 doc-type: Feature Video
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
 duration: 1027
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '1039'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -101,7 +101,7 @@ Découvrez comment fonctionne l’authentification d’Adobe Asset Link avec l
 1. L’extension Adobe Asset Link se connecte au service de création d’AEM via HTTP(S), en incluant le jeton porteur obtenu à l’**étape 1**, à l’aide du schéma (HTTP/HTTPS), de l’hôte et du port fournis dans le JSON des paramètres de l’extension.
 1. Le gestionnaire d’authentification de jeton de support d’AEM extrait le jeton porteur de la requête et le valide avec Adobe IMS.
 1. Une fois qu’Adobe IMS valide le jeton porteur, un profil utilisateur est créé dans AEM (s’il n’existe pas déjà) et synchronise les données de profil, de groupe et d’appartenances d’Adobe IMS. L’utilisateur ou l’utilisatrice d’AEM se voit attribuer un jeton de connexion AEM standard, qui est renvoyé à l’extension Adobe Asset Link en tant que cookie sur la réponse HTTP(S).
-1. Les interactions suivantes (c’est-à-dire la navigation, la recherche, l’archivage et l’extraction de ressources, etc.) avec l’extension Adobe Asset Link génèrent des requêtes HTTP(S) au service de création d’AEM qui sont validées à l’aide du jeton de connexion AEM, avec le gestionnaire d’authentification de jeton AEM standard.
+1. Les interactions suivantes (c’est-à-dire la navigation, la recherche, l’archivage et l’extraction de ressources, etc.) avec l’extension Adobe Asset Link génèrent des requêtes HTTP(S) au service de création d’AEM qui sont validées à l’aide du jeton de connexion AEM, avec le gestionnaire d’authentification de jeton AEM standard.
 
 >[!NOTE]
 >

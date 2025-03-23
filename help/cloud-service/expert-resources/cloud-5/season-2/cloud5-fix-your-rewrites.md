@@ -1,7 +1,7 @@
 ---
 title: Cloud 5 - Résolvez vos... Réécritures
 description: Quelques conseils simples pour optimiser les réécritures et accélérer votre site.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Admin, Developer
 level: Intermediate
 thumbnail: 343600.jpeg
@@ -9,7 +9,7 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 38580af1-e5ad-431a-b41d-634fb136ce64
 duration: 290
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 86%
@@ -29,4 +29,4 @@ Dans la deuxième partie de la série, nous explorons quelques éléments qui pe
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 season 2](../cloud5-season-2.md) .
+Regardez les vidéos connexes sur la page [Cloud 5 saison 2](../cloud5-season-2.md).

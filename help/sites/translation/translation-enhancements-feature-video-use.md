@@ -1,7 +1,7 @@
 ---
 title: Améliorations apportées à la traduction dans AEM
 description: Le framework de traduction robuste d’AEM permet aux fournisseurs de traduction pris en charge de traduire du contenu AEM en toute simplicité. Découvrez les dernières améliorations apportées.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Localization
 feature: Multi Site Manager, Language Copy
 role: User
@@ -9,8 +9,8 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 21633308-ffe4-4023-affe-59269504da69
 duration: 677
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 100%
 

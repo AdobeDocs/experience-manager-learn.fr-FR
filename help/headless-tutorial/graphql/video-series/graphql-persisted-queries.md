@@ -1,7 +1,7 @@
 ---
 title: Requêtes persistantes GraphQL
 description: Découvrez comment activer, créer, mettre à jour et exécuter des requêtes persistantes dans AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Headless, Content Management
 feature: GraphQL API
 role: Developer
@@ -11,8 +11,8 @@ thumbnail: 333429.jpeg
 last-substantial-update: 2023-05-17T00:00:00Z
 exl-id: 06ba38c4-95fe-4ff5-b4d9-237ef9dec944
 duration: 281
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 100%
 

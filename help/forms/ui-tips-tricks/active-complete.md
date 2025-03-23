@@ -3,7 +3,7 @@ title: Ajouter des icônes aux onglets de navigation de gauche
 description: Ajouter des icônes pour différencier les onglets actifs et terminés
 feature: Adaptive Forms
 type: Tutorial
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
@@ -11,8 +11,8 @@ jira: KT-9359
 exl-id: f7c1f991-0486-4355-8502-cd5b038537e3
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 68
-source-git-commit: 364d055b7b2e4f273f906c66328fc14f95321611
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 100%
 

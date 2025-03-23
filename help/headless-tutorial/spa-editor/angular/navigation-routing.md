@@ -2,7 +2,7 @@
 title: Ajouter la navigation et le routage | Prise en main de l’Éditeur de SPA d’AEM et d’Angular
 description: Découvrez comment plusieurs vues sont prises en charge dans la SPA à l’aide des pages AEM et du SDK de l’éditeur de SPA. La navigation dynamique est mise en œuvre à l’aide des itinéraires Angular et ajoutée à un composant En-tête existant.
 feature: SPA Editor
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-5312
 thumbnail: 5312-spa-angular.jpg
 topic: SPA
@@ -11,8 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 197a0c1f-4d0a-4b99-ba89-cdff2e6ac4ec
 duration: 669
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '2531'
 ht-degree: 100%
 

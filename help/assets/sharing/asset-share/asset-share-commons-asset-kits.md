@@ -1,7 +1,7 @@
 ---
 title: Kit de ressources Asset Share Commons
 description: Découvrez comment utiliser le kit de ressources Asset Share Commons pour générer des pages web personnalisées et partageables qui répertorient les ressources des dossiers ou collections AEM Assets.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management
 feature: Asset Distribution
 role: Admin, Architect, Developer, User
@@ -12,8 +12,8 @@ jira: KT-11868
 thumbnail: 3415467.jpeg
 exl-id: fb8adf75-02d7-44e5-a84e-e0731100dc58
 duration: 643
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 100%
 

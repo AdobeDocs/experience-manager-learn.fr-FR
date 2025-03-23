@@ -2,7 +2,7 @@
 title: Générer un jeton d’accès serveur à serveur dans une action Créateur d’applications
 description: Découvrez comment générer un jeton d’accès à l’aide des informations d’identification OAuth serveur à serveur pour l’utiliser dans une action Créateur d’applications.
 feature: Developer Tools
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 role: Developer
 level: Intermediate
@@ -10,8 +10,8 @@ jira: KT-14724
 last-substantial-update: 2024-02-29T00:00:00Z
 duration: 122
 exl-id: 919cb9de-68f8-4380-940a-17274183298f
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 100%
 

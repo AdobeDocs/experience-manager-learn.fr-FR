@@ -1,7 +1,7 @@
 ---
 title: Utiliser l’éditeur de SPA avec AEM Sites
 description: Le framework de l’éditeur d’applications monopages d’AEM permet aux auteurs et aux autrices de modifier le contenu d’une application monopage, aussi appelée SPA. Les développeurs et les développeuses qui utilisent les frameworks React créent une SPA, puis mappent des zones de la SPA vers des composants AEM, ce qui permet aux auteurs et aux autrices d’utiliser des outils de modification AEM Sites qui leur sont familiers.
-version: 6.4, 6.5, Cloud Service
+version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: SPA
 feature: SPA Editor
 role: Developer
@@ -11,8 +11,8 @@ thumbnail: 22229.jpg
 doc-type: Feature Video
 exl-id: 645b6986-830f-4409-b46c-ddf15c33e84c
 duration: 473
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 100%
 

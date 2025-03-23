@@ -1,7 +1,7 @@
 ---
 title: Filtrer l’application Vue
 description: L’application Vue filtre en toute simplicité les WKND Adventures modélisées à l’aide de fragments de contenu.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
@@ -13,8 +13,8 @@ hide: true
 hidefromtoc: true
 exl-id: 8f96093a-4449-4249-9257-028e2ffd979b
 duration: 26
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 100%
 

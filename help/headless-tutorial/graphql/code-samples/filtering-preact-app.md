@@ -1,7 +1,7 @@
 ---
 title: Filtrer l’application Preact
 description: Une application simple Preact qui filtre les WKND Adventures modélisées à l’aide de fragments de contenu.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments, GraphQL API
 topic: Headless, Content Management
 role: Developer
@@ -13,8 +13,8 @@ hide: true
 hidefromtoc: true
 exl-id: d2b7e8ab-8bbc-495f-94f1-362ea47b3853
 duration: 26
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 100%
 

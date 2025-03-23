@@ -1,7 +1,7 @@
 ---
 title: Intégrer à AEM as a Cloud Service
 description: Découvrez l’intégration vers AEM as a Cloud Service, de la phase d’établissement du contrat à la configuration des environnements à l’aide de Cloud Manager.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Onboarding
 topic: Migration, Upgrade
 role: Developer
@@ -10,8 +10,8 @@ jira: KT-8631
 thumbnail: 336959.jpeg
 exl-id: 9d2004e5-e928-4190-8298-695635c8e92c
 duration: 504
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 100%
 

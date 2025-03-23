@@ -1,7 +1,7 @@
 ---
 title: Configurer un serveur de prévisualisation sécurisé pour AEM Dynamic Media
 description: Configurez le serveur d’images de test pour une prévisualisation sécurisée à l’aide de l’application AEM Dynamic Media Classic.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Developer
 level: Intermediate
 topic: Development
@@ -10,8 +10,8 @@ index: y
 doc-type: Tutorial
 exl-id: 7c12fc14-cdaf-45eb-807a-64de86a2a36a
 duration: 74
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 100%
 

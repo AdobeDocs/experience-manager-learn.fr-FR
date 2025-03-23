@@ -2,7 +2,7 @@
 title: Utiliser ModSecurity pour protéger votre site AEM des attaques par déni de service (DoS)
 description: Découvrez comment activer ModSecurity pour protéger votre site contre les attaques par déni de service (DoS) à l’aide de l’ensemble de règles de base (CRS) OWASP ModSecurity.
 feature: Security
-version: 6.5, Cloud Service
+version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
 role: Admin, Architect
 level: Experienced
@@ -12,10 +12,10 @@ doc-type: Article
 last-substantial-update: 2023-08-18T00:00:00Z
 exl-id: 9f689bd9-c846-4c3f-ae88-20454112cf9a
 duration: 783
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '1172'
-ht-degree: 100%
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
+source-wordcount: '1171'
+ht-degree: 98%
 
 ---
 
@@ -111,7 +111,7 @@ Dans cet exemple de configuration de règle, **DOS_COUNTER_THRESHOLD** est de 25
 Pour initialiser le CRS, supprimer les faux positifs courants et ajouter des exceptions locales pour votre site, procédez comme suit :
 
 1. Pour initialiser le CRS, supprimez `.disabled` du fichier **REQUEST-901-INITIALIZATION**. En d’autres termes, renommez le fichier `REQUEST-901-INITIALIZATION.conf.disabled` en `REQUEST-901-INITIALIZATION.conf`.
-1. Pour supprimer les faux positifs courants tels que le ping de l’adresse IP locale (127.0.0.1), supprimez `.disabled` du fichier **REQUEST-905-COMMON-EXCEPTIONS**.
+1. Pour supprimer les faux positifs courants tels que le ping IP local (127.0.0.1), supprimez `.disabled` du fichier **REQUEST-905-COMMON-EXCEPTIONS**.
 1. Pour ajouter des exceptions locales telles que la plateforme AEM ou des chemins spécifiques à votre site, renommez `REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf.example` en `REQUEST-900-EXCLUSION-RULES-BEFORE-CRS.conf`
    1. Ajoutez des exceptions de chemin d’accès spécifiques à la plateforme AEM au fichier nouvellement renommé.
 

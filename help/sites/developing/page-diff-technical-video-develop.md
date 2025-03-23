@@ -2,15 +2,15 @@
 title: Développer pour la différence de page dans AEM Sites
 description: Cette vidéo montre comment fournir des styles personnalisés pour la fonctionnalité Différence de page d’AEM Sites.
 feature: Authoring
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Beginner
 doc-type: Technical Video
 exl-id: 7d600b16-bbb3-4f21-ae33-4df59b1bb39d
 duration: 281
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 100%
 

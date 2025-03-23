@@ -1,7 +1,7 @@
 ---
 title: Rechercher et indexer dans AEM as a Cloud Service
 description: Découvrez les index de recherche d’AEM as a Cloud Service et apprenez à convertir les définitions d’index d’AEM 6 ainsi qu’à déployer des index.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Search
 topic: Migration, Upgrade
 role: Developer
@@ -10,8 +10,8 @@ jira: KT-8634
 thumbnail: 336963.jpeg
 exl-id: f752df86-27d4-4dbf-a3cb-ee97b7d9a17e
 duration: 1231
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 100%
 

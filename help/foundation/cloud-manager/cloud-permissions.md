@@ -1,7 +1,7 @@
 ---
 title: Autorisations personnalisées de Cloud Manager
 description: Découvrez comment utiliser les autorisations personnalisées de Cloud Manager dans AEM pour gérer stratégiquement l’accès de différentes équipes, en assurant une gestion et un déploiement de projet efficaces et sécurisés.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Cloud Manager
 topic: Administration
 role: Admin
@@ -12,8 +12,8 @@ jira: KT-14608
 thumbnail: 3425892.jpeg
 duration: 358
 exl-id: d659fc1e-fb4b-4e15-8167-8b035d92eae1
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 100%
 

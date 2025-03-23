@@ -2,15 +2,15 @@
 title: Capturer des messages d’erreur dans le service de modèle de données de formulaire en tant qu’étape du workflow
 description: À partir d’AEM Forms 6.5.1, nous pouvons capturer les messages d’erreur générés lors de l’appel du service de modèle de données de formulaire comme étape du workflow AEM. Workflow.
 feature: Workflow
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 8cae155c-c393-4ac3-a412-bf14fc411aac
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 51
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 100%
 

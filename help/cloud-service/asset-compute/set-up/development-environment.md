@@ -2,7 +2,7 @@
 title: Configurer un environnement de développement local pour l’extensibilité Assets Compute
 description: 'Le développement de programmes de travail Assets Compute, qui sont des applications JavaScript Node.js, nécessite des outils de développement spécifiques dont AEM n’est pas coutumier : Node.js, divers modules npm, ainsi que Docker Desktop et Microsoft Visual Studio Code.'
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6266
 thumbnail: KT-6266.jpg
@@ -11,8 +11,8 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 162e10e5-fcb0-4f16-b6d1-b951826209d9
 duration: 96
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 100%
 

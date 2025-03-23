@@ -1,7 +1,7 @@
 ---
 title: Créer des variantes d’image à l’aide d’Adobe Express dans AEM Assets Content Hub
 description: Découvrez comment créer et modifier des variations d’image à l’aide d’Adobe Express dans Experience Manager Assets Content Hub.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Asset Management
 topic: Content Supply Chain, Content Management, Artificial Intelligence
 role: User
@@ -11,13 +11,13 @@ duration: 196
 last-substantial-update: 2024-10-08T00:00:00Z
 jira: KT-15991
 thumbnail: KT-15991.jpeg
-source-git-commit: db8e776458879018fcfdd4d30c518cafc3a2ab14
-workflow-type: ht
+exl-id: 955acc4f-209f-4cbe-a9c7-9e33b5044159
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 100%
 
 ---
-
 
 # Créer des variantes d’image à l’aide d’Adobe Express dans AEM Assets Content Hub
 

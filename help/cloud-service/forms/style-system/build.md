@@ -5,18 +5,18 @@ solution: Experience Manager, Experience Manager Forms
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Adaptive Forms
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 jira: KT-16276
-source-git-commit: 1ed08d7784833b6c49139da525341af5ee587345
-workflow-type: ht
+exl-id: 4a02f494-ca0e-42d4-bbb9-6223ff8685e3
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 100%
 
 ---
-
 
 # Test des modifications
 
@@ -50,4 +50,3 @@ Une fois le projet de thème créé, vous pouvez tester les modifications.
 ## Transmettre les modifications
 
 Si les modifications vous satisfont, vous pouvez transmettre les modifications à votre instance cloud à l’aide du [pipeline front-end](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline).
-

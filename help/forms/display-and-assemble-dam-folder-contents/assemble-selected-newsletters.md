@@ -2,15 +2,15 @@
 title: Combiner les newsletters sélectionnées dans un fichier
 description: Combiner les newsletters sélectionnées à l’aide du service Assembler
 feature: Adaptive Forms
-version: 6.5
+version: Experience Manager 6.5
 topic: Development
 role: User
 level: Beginner
 last-substantial-update: 2023-01-01T00:00:00Z
 exl-id: 3a64315f-f699-4538-b999-626e7a998c05
 duration: 79
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 100%
 

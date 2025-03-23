@@ -2,7 +2,7 @@
 title: Utiliser des modèles de page modifiables avec AEM Sites
 description: Les modèles modifiables permettent à des auteurs et autrices spécialisés de créer et de mettre à jour des modèles de page et de gérer des configurations de politique avancées avec AEM Sites.
 feature: Editable Templates
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 jira: KT-193
 topic: Content Management
 role: User
@@ -10,8 +10,8 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 2213d1f2-37ed-4897-a68d-04ef423395a3
 duration: 369
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 100%
 

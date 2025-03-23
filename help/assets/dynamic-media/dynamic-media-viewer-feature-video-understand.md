@@ -3,15 +3,15 @@ title: Présentation de la visionneuse d’éléments avec AEM Dynamic Media
 description: Les améliorations apportées à la visionneuse AEM Dynamic Media permettent aux et aux créatrices AEM de définir et de personnaliser la présentation des ressources à l’utilisateur ou à l’utilisatrice du site web.
 sub-product: Experience Manager Assets
 feature: Viewer Presets, Image Profiles
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: Developer
 level: Intermediate
 doc-type: Feature Video
 exl-id: db4fc561-2368-4df8-9b02-fc08afa00805
 duration: 254
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 100%
 

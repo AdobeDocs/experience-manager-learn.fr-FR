@@ -1,7 +1,7 @@
 ---
 title: Effectuer la configuration rapide d’AEM Headless à l’aide du SDK AEM local
 description: Prise en main d’Adobe Experience Manager (AEM) et de GraphQL. Installez le SDK AEM, ajoutez un exemple de contenu et déployez une application qui consomme du contenu AEM à l’aide de ses API GraphQL. Découvrez comment AEM alimente les expériences omnicanal.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-6386
 thumbnail: KT-6386.jpg
@@ -11,8 +11,8 @@ role: Developer
 level: Beginner
 exl-id: d2da6efa-1f77-4391-adda-e3180c42addc
 duration: 242
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '1151'
 ht-degree: 100%
 

@@ -1,7 +1,7 @@
 ---
 title: Balises AEM, dossiers liés à un projet et métadonnées de dossier pour le connecteur amélioré Workfront pour AEM
 description: Découvrez comment piloter l’utilisation des balises AEM sur les ressources via les données Workfront, utiliser des dossiers liés à un projet et des données Workfront pour des schémas de métadonnées de dossier de ressources AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management, Integrations
 feature: Asset Management
 role: Admin, Architect, Developer
@@ -14,8 +14,8 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 520a75cd-757a-4ae9-acf6-3c1f5e1f3747
 duration: 2633
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 100%
 

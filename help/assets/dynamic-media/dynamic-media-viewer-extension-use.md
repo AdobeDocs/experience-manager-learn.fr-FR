@@ -3,15 +3,15 @@ title: Utiliser des visionneuses Dynamic Media avec Adobe Analytics et des bal
 description: L’extension visionneuses Dynamic Media pour les balises ainsi que la version 5.13 des visionneuses Dynamic Media permettent aux clientes et clients de Dynamic Media, d’Adobe Analytics et des balises d’utiliser des événements et des données spécifiques aux visionneuses Dynamic Media dans leur configuration de balises.
 sub-product: Dynamic Media
 feature: Asset Insights
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Content Management
 role: User
 level: Beginner
 doc-type: Feature Video
 exl-id: 9d807f4c-999c-45e6-a9db-6c1776bddda1
 duration: 576
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 100%
 

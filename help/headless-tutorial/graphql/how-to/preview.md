@@ -1,7 +1,7 @@
 ---
 title: Prévisualiser le fragment de contenu
 description: Découvrez comment utiliser la prévisualisation de fragment de contenu pour les auteurs et autrices afin de voir rapidement comment les modifications de contenu affectent vos expériences AEM Headless.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Content Fragments
 topic: Headless, Content Management, Development
 role: Architect, Developer
@@ -12,8 +12,8 @@ jira: KT-10841
 thumbnail: 3416906.jpeg
 exl-id: 247d40a3-ff67-4c1f-86bf-3794d7ce3e32
 duration: 463
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 100%
 

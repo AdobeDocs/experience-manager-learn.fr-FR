@@ -1,7 +1,7 @@
 ---
 title: Filtres du Dispatcher pour GraphQL d’AEM
 description: Découvrez comment configurer les filtres du Dispatcher de publication AEM à utiliser avec GraphQL d’AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
 role: Developer, Architect
@@ -10,8 +10,8 @@ jira: KT-10829
 thumbnail: kt-10829.jpg
 exl-id: b76b7c46-5cbd-4039-8fd6-9f0f10a4a84f
 duration: 48
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 100%
 

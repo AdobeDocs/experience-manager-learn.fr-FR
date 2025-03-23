@@ -1,7 +1,7 @@
 ---
 title: Protéger les sites web avec des règles de filtrage du trafic (y compris des règles WAF)
 description: Découvrez les règles de filtrage du trafic, y compris la sous-catégorie de règles WAF (pare-feu d’application web). Découvrez comment créer, déployer et tester les règles. Analysez également les résultats et protégez vos sites AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
 role: Admin, Architect
@@ -12,8 +12,8 @@ jira: KT-13148
 thumbnail: KT-13148.jpeg
 exl-id: e6d67204-2f76-441c-a178-a34798fe266d
 duration: 165
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 100%
 

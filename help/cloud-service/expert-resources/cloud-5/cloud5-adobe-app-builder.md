@@ -1,7 +1,7 @@
 ---
 title: Créateur d’applications Adobe Cloud 5
 description: Cet épisode examine le modèle d’intégration externe qui utilise le créateur d’applications Adobe.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 role: Admin, Developer
 level: Intermediate
 jira: KT-10279
@@ -10,7 +10,7 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 799539ba-00aa-40c0-89de-cab38b0066a3
 duration: 312
-source-git-commit: 5976e220ac54e901be5f064dbf541d901fccfec5
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 88%
@@ -33,4 +33,4 @@ Amol Anand nous présente les intégrations avec le créateur d’applications 
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 season 1](cloud5-season-1.md) .
+Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).

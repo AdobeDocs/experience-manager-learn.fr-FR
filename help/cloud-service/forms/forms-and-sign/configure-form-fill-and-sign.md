@@ -4,7 +4,7 @@ description: Dans ce scénario, la personne qui remplit le formulaire et la pers
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Adaptive Forms
 topic: Development
 jira: KT-7432
@@ -13,8 +13,8 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
 exl-id: feab7e1d-3998-41ba-8326-bbff14564494
 duration: 204
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 100%
 

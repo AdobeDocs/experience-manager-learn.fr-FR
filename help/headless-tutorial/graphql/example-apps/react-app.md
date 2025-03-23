@@ -1,7 +1,7 @@
 ---
 title: Application React - Exemple AEM Headless
 description: Découvrez les fonctionnalités découplées d’Adobe Experience Manager (AEM) grâce aux exemples d’applications. Cette application React montre comment interroger le contenu à l’aide des API GraphQL d’AEM en utilisant des requêtes persistantes.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 jira: KT-10715
 thumbnail: KT-10715.jpg
@@ -13,8 +13,8 @@ last-substantial-update: 2023-05-10T00:00:00Z
 exl-id: b1ab2a13-8b0e-4d7f-82b5-78b1dda248ba
 badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 duration: 256
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 100%
 

@@ -1,15 +1,15 @@
 ---
 title: Paramétrage de modèles Sling à partir de HTL
 description: Découvrez comment transmettre des paramètres à partir de HTL vers un modèle Sling dans AEM.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Development
 feature: Sling Model
 role: Developer
 jira: KT-15923
 level: Intermediate, Experienced
 exl-id: 5d852617-720a-4a00-aecd-26d0ab77d9b3
-source-git-commit: ba744f95f8d1f0b982cd5430860f0cb0945a4cda
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 100%
 

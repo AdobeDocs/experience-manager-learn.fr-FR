@@ -1,7 +1,7 @@
 ---
 title: Paramètres avancés et workflows pour Workfront pour le connecteur amélioré AEM
 description: Découvrez les paramètres avancés de Workfront pour le connecteur amélioré AEM et comment configurer des workflows et des lanceurs avancés dans AEM pour gérer la synchronisation des données entre AEM et Workfront.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 topic: Content Management, Integrations
 feature: Asset Management
 role: Admin, Architect, Developer
@@ -14,8 +14,8 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Assets as a Cloud Service, AEM Assets 6.5" before-title="false"
 exl-id: 7d44e1b7-7216-431d-b866-6adcc8673d53
 duration: 2844
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 100%
 

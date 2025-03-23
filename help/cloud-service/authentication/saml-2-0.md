@@ -1,7 +1,7 @@
 ---
 title: SAML 2.0 sur AEM as a Cloud Service
 description: Découvrez comment configurer l’authentification SAML 2.0 sur le service de publication AEM as a Cloud Service.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
 role: Architect, Developer
@@ -11,7 +11,7 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 6f8d2bdd4ffb1c643cebcdd59fb529d8da1c44cf
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '4262'
 ht-degree: 90%
@@ -43,7 +43,7 @@ Le flux type d’une intégration SAML de publication AEM est le suivant :
    + Le fournisseur d’identité demande à l’utilisateur ou l’utilisatrice ses informations d’identification.
    + L’utilisateur ou l’utilisatrice est déjà authentifié(e) auprès du fournisseur d’identité et n’a pas à fournir d’informations d’identification supplémentaires.
 1. Le fournisseur d’identité génère une assertion SAML contenant les données de l’utilisateur ou de l’utilisatrice et la signe à l’aide du certificat privé du fournisseur d’identité.
-1. Le fournisseur d’identité envoie l’assertion SAML à AEM Publish via le POST HTTP, par le biais du navigateur web de l’utilisateur (RESPECTIVE_PROTECTED_PATH/saml_login).
+1. Le fournisseur d’identité envoie l’assertion SAML au service de publication AEM via HTTP POST, par le biais du navigateur web de l’utilisateur (RESPECTIVE_PROTECTED_PATH/saml_login).
 1. Le service de publication AEM reçoit l’assertion SAML et valide l’intégrité et l’authenticité de l’assertion SAML à l’aide du certificat public du fournisseur d’identité.
 1. Le service de publication AEM gère l’enregistrement de l’utilisateur ou de l’utilisatrice AEM en fonction de la configuration OSGi SAML 2.0 et du contenu de l’assertion SAML.
    + Crée un utilisateur ou une utilisatrice
@@ -441,7 +441,7 @@ Une fois l’authentification au fournisseur d’identité réussie, le fourniss
 ```
 
 >[!NOTE]
->Lors du déploiement de plusieurs configurations SAML dans AEM pour divers chemins protégés et points d’entrée IDP distincts, assurez-vous que l’IDP publie au point d’entrée RESPECTIVE_PROTECTED_PATH/saml_login pour sélectionner la configuration SAML appropriée du côté AEM. S’il existe des configurations SAML en double pour le même chemin protégé, la sélection de la configuration SAML se produit de manière aléatoire.
+>Lors du déploiement de plusieurs configurations SAML dans AEM pour divers chemins protégés et points d’entrée IDP distincts, assurez-vous que le fournisseur d’identité publie au point d’entrée RESPECTIVE_PROTECTED_PATH/saml_login pour sélectionner la configuration SAML appropriée côté AEM. S’il existe des configurations SAML en double pour le même chemin protégé, la sélection de la configuration SAML se produit de manière aléatoire.
 
 Si la réécriture de l’URL sur le serveur web Apache est configurée (`dispatcher/src/conf.d/rewrites/rewrite.rules`), assurez-vous que les requêtes vers les points d’entrée `.../saml_login` ne sont pas accidentellement tronquées.
 

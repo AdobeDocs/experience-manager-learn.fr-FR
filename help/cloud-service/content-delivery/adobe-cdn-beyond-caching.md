@@ -1,7 +1,7 @@
 ---
 title: Réseau CDN Adobe - Fonctionnalités avancées au-delà de la mise en cache
 description: Découvrez les fonctionnalités avancées du réseau CDN Adobe au-delà de la mise en cache, comme la configuration du trafic sur le réseau CDN, la configuration des jetons et des informations d’identification, les pages d’erreur du réseau CDN, etc.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
 role: Developer, Architect, User, Leader
@@ -12,7 +12,7 @@ last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: 8948a900-01e9-49ed-9ce5-3a057f5077e4
-source-git-commit: 0e8b76b6e870978c6db9c9e7a07a6259e931bdcc
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%

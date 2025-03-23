@@ -2,7 +2,7 @@
 title: Ajouter la navigation et le routage | Prendre en main l’éditeur de SPA d’AEM et React
 description: Découvrez comment plusieurs vues de la SPA peuvent être prises en charge par un mappage sur les pages AEM avec le SDK de l’éditeur de SPA. La navigation dynamique est mise en œuvre à l’aide des composants principaux React et React Router.
 feature: SPA Editor
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 jira: KT-4988
 thumbnail: 4988-spa-react.jpg
 topic: SPA
@@ -11,8 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 9c3d47c7-1bb9-441c-a0e6-85887a32c817
 duration: 337
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '1481'
 ht-degree: 100%
 

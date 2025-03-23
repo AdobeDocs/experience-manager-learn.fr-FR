@@ -1,7 +1,7 @@
 ---
 title: Comprendre l’authentification Adobe IMS avec AEM sur Adobe Managed Services
 description: Adobe Experience Manager offre une prise en charge des instances AEM avec Admin Console ainsi qu’une authentification basée sur Adobe IMS (Identity Management System) pour AEM sur Managed Services.   Cette intégration permet aux clientes et clients Managed Services d’AEM de gérer tous les utilisateurs et utilisatrices d’Experience Cloud dans une seule console web unifiée. Les utilisateurs, les utilisatrices et les groupes peuvent être affectés aux profils de produit associés aux instances AEM, ce qui permet d’accorder un accès géré de manière centralisée aux instances AEM spécifiques.
-version: 6.4, 6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 feature: User and Groups
 doc-type: Technical Video
 jira: KT-781
@@ -12,8 +12,8 @@ exl-id: 52dd8a3f-6461-4acb-87ca-5dd9567d15a6
 last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: KT-781.jpg
 duration: 405
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 100%
 

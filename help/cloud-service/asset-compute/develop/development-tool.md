@@ -2,7 +2,7 @@
 title: Outil de développement d’Asset Compute
 description: L’outil de développement d’Asset Compute est un outil web local qui permet aux personnes chargées du développement de configurer et d’exécuter localement les programme de travail d’Asset Compute, en dehors du contexte du SDK AEM par rapport aux ressources d’Asset Compute dans Adobe I/O Runtime.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6283
 thumbnail: 40241.jpg
@@ -11,8 +11,8 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: cbe08570-e353-4daf-94d1-a91a8d63406d
 duration: 171
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 100%
 

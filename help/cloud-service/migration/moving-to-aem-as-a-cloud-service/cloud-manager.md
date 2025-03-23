@@ -1,7 +1,7 @@
 ---
 title: Utiliser Cloud Manager avec AEM as a Cloud Service
 description: Découvrez Cloud Manager pour AEM as a Cloud Service et ses différences avec Cloud Manager pour AEM sur Adobe Manage Services (AMS).
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Cloud Manager
 topic: Migration, Upgrade
 role: Architect, Developer
@@ -10,8 +10,8 @@ jira: KT-8632
 thumbnail: 336961.jpeg
 exl-id: 9c641a90-be62-49c1-b8c0-d45d26055b94
 duration: 843
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 100%
 

@@ -2,7 +2,7 @@
 title: Déployer des programmes de travail d’Asset Compute sur Adobe I/O Runtime pour une utilisation avec AEM as a Cloud Service
 description: Les projets Asset Compute et les programmes de travail inclus doivent être déployés sur Adobe I/O Runtime pour être utilisés avec AEM as a Cloud Service.
 feature: Asset Compute Microservices
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: Tutorial
 jira: KT-6286
 thumbnail: KT-6286.jpg
@@ -11,8 +11,8 @@ role: Developer
 level: Intermediate, Experienced
 exl-id: 0327cf61-fd51-4fa7-856d-3febd49c01a0
 duration: 128
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 100%
 

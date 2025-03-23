@@ -1,7 +1,7 @@
 ---
 title: Informations d’identification de service
 description: Découvrez comment utiliser les informations d’identification de service utilisées pour aider les applications, systèmes et services externes à intéragir par programmation avec les services de création ou de publication via HTTP.
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 feature: APIs
 jira: KT-6785
 thumbnail: 330519.jpg
@@ -12,8 +12,8 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: 1a745f4b11007df5636c2fc0bea05d56393ef9c6
-workflow-type: ht
+source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+workflow-type: tm+mt
 source-wordcount: '1963'
 ht-degree: 100%
 
