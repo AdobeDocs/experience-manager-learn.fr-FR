@@ -3,7 +3,7 @@ title: Ajouter du contenu textuel et des images au document du canal d’impress
 description: Passons au chapitre 7 du tutoriel consacré à la création de votre premier document de communication interactive. Nous allons à présent ajouter des images et du contenu textuel aux zones cibles définies dans la disposition (xdp).
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: a79bf219-2423-4819-89fc-dcfe976e08b7
 jira: KT-5992
 thumbnail: 22379.jpg
@@ -12,8 +12,8 @@ role: Developer
 level: Beginner
 exl-id: 49080c16-617f-4840-8bb4-7b080fa291c4
 duration: 156
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
+workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 100%
 

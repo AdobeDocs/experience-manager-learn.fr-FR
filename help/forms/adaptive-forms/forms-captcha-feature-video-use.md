@@ -2,15 +2,15 @@
 title: Utiliser Captcha avec les formulaires adaptatifs AEM
 description: Ajoutez et utilisez un Captcha avec les formulaires adaptatifs AEM.
 feature: Adaptive Forms,Workflow
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Intermediate
 exl-id: 7e5dcc6e-fe56-49af-97e3-7dfaa9c8738f
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 260
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
+workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 100%
 
@@ -43,17 +43,17 @@ Ajoutez et utilisez un Captcha avec les formulaires adaptatifs AEM.
 >Accédez à l’ID du lot sur le système de fichiers de votre instance de création.
 >
 >* &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
->* Copier les fichiers HMAC et maîtres
+* Copier les fichiers HMAC et maîtres
 >
->Ouvrez la [console web Felix](http://localhost:4502/system/console/bundles) sur votre instance de publication. Recherchez le lot com.adobe.granite.crypto.file. Notez l’ID du lot.
+Ouvrez la [console web Felix](http://localhost:4502/system/console/bundles) sur votre instance de publication. Recherchez le lot com.adobe.granite.crypto.file. Notez l’ID du lot.
 >
->Accédez à l’ID du lot sur le système de fichiers de votre instance de publication.
+Accédez à l’ID du lot sur le système de fichiers de votre instance de publication.
 >
->* &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
->* Supprimez les fichiers HMAC et maîtres existants.
->* Collez les fichiers HMAC et maîtres copiés à partir de l’instance de création.
+* &lt;publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle20/data
+* Supprimez les fichiers HMAC et maîtres existants.
+* Collez les fichiers HMAC et maîtres copiés à partir de l’instance de création.
 >
->Redémarrez votre serveur de publication AEM.
+Redémarrez votre serveur de publication AEM.
 
 ## Documents annexes {#supporting-materials}
 

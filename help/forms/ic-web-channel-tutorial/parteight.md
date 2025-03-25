@@ -3,15 +3,15 @@ title: 'Configurer un graphique linéaire pour votre premier document de communi
 description: Il s’agit de la partie 8 du tutoriel en plusieurs étapes consacré à la création de votre premier document de communication interactive. Dans cette partie, nous allons ajouter un graphique linéaire au panneau de progression du compte.
 feature: Interactive Communication
 doc-type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 discoiquuid: 4292303c-3ef4-4df2-b537-fdb011412670
 topic: Development
 role: Developer
 level: Beginner
 exl-id: ba9ce6a2-f6e8-4e84-a23a-f4803879f635
 duration: 37
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
+workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 100%
 

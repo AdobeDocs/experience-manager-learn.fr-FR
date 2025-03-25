@@ -2,7 +2,7 @@
 title: AEM Forms avec Marketo (partie 4)
 description: Tutoriel pour intégrer AEM Forms à Marketo à l’aide du modèle de données de formulaire AEM Forms.
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -10,8 +10,8 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 6b44e6b2-15f7-45b2-8d21-d47f122c809d
 duration: 68
-source-git-commit: 426020f59c7103829b7b7b74acb0ddb7159b39fa
-workflow-type: ht
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
+workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 100%
 
@@ -20,6 +20,7 @@ ht-degree: 100%
 # Test de l’intégration
 
 Nous allons tester l’intégration en créant une simple récupération de formulaire et en affichant un objet Lead à partir de Market.
+
 >[!NOTE]
 >
 >Cette fonctionnalité a été testée sur un formulaire basé sur des composants de base.

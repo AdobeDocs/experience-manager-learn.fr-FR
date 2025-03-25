@@ -3,15 +3,15 @@ title: Introduction au stockage et à la récupération des données de formulai
 description: Tutoriel en plusieurs parties détaillant les étapes impliquées dans le stockage et la récupération des données de formulaire
 feature: Adaptive Forms
 type: Tutorial
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 95795102-4278-4556-8e0f-1b8a359ab093
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 236
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
+workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 100%
 

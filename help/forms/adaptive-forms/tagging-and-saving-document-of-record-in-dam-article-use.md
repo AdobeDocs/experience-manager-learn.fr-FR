@@ -2,15 +2,15 @@
 title: Baliser et stocker un document d’enregistrement AEM Forms dans la gestion des ressources numériques
 description: Cet article décrit le cas d’utilisation de stockage et de balisage du document d’enregistrement généré par AEM Forms dans la gestion des ressources numériques AEM. Le balisage du document est effectué en fonction des données de formulaire envoyées.
 feature: Adaptive Forms
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
 exl-id: 832f04b4-f22f-4cf9-8136-e3c1081de7a9
 last-substantial-update: 2019-03-20T00:00:00Z
 duration: 191
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
+workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 100%
 

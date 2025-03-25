@@ -2,7 +2,7 @@
 title: Générer plusieurs PDF à partir d’un fichier de données
 description: OutputService fournit plusieurs méthodes pour créer des documents à l’aide d’une conception de formulaire et de données à fusionner avec la conception de formulaire. Découvrez comment générer plusieurs PDF à partir d’un fichier XML volumineux contenant plusieurs enregistrements.
 feature: Output Service
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Development
 role: Developer
 level: Experienced
@@ -11,8 +11,8 @@ last-substantial-update: 2020-01-07T00:00:00Z
 duration: 138
 jira: KT-16142
 badgeVersions: label="AEM Forms 6.5" before-title="false"
-source-git-commit: 8cadbe92a7a2f47c33b0ca0fcf7313dc418ae7a4
-workflow-type: ht
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
+workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 100%
 

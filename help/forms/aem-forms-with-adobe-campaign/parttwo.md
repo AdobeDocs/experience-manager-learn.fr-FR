@@ -2,7 +2,7 @@
 title: Créer un profil Campaign lors de l’envoi de formulaire adaptatif
 description: Cet article explique les étapes nécessaires à la création d’un profil dans Adobe Campaign Standard lors d’un envoi de formulaire adaptatif. Ce processus utilise un mécanisme d’envoi personnalisé pour gérer l’envoi du formulaire adaptatif.
 feature: Adaptive Forms, Form Data Model
-version: 6.4,6.5
+version: Experience Manager 6.4, Experience Manager 6.5
 topic: Integrations, Development
 role: Developer
 level: Experienced
@@ -10,7 +10,7 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 exl-id: deef09d9-82ec-4e61-b7ee-e72d1cd4e9e0
 duration: 182
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
+source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 100%
