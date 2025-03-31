@@ -12,7 +12,7 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
 workflow-type: tm+mt
 source-wordcount: '2245'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Découvrez comment appeler les API AEM basées sur OpenAPI sur AEM as a Cloud Service à l’aide de l’authentification de l’utilisateur à partir d’une application web personnalisée qui utilise l’application web OAuth.
 
-L’authentification OAuth Web App est idéale pour les applications web avec des composants front-end et _back-end_ qui doivent **accéder aux API d’AEM au nom d’un utilisateur**. Elle utilise le type d’octroi OAuth 2.0 _authorization_code_ pour obtenir un jeton d’accès au nom de l’utilisateur afin d’accéder aux API AEM. Pour plus d’informations, voir [Différence entre les informations d’identification OAuth de serveur à serveur et OAuth Web App/Single Page App](../overview.md#difference-between-oauth-server-to-server-and-oauth-web-appsingle-page-app-credentials).
+L’authentification OAuth Web App est idéale pour les applications web avec des composants front-end et _back-end_ qui doivent **accéder aux API d’AEM au nom d’un utilisateur**. Elle utilise le type d’octroi OAuth 2.0 _authorization_code_ pour obtenir un jeton d’accès au nom de l’utilisateur afin d’accéder aux API AEM. Pour plus d’informations, voir [Différence entre les informations d’identification OAuth de serveur à serveur, d’application web et d’application d’une seule page](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
 
 >[!AVAILABILITY]
 >

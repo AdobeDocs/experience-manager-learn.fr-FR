@@ -12,9 +12,9 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '1015'
 ht-degree: 2%
 
 ---
@@ -59,15 +59,18 @@ Les API d’AEM basées sur OpenAPI prennent en charge l’authentification OAut
 
 - **Informations d’identification d’application d’une seule page OAuth** : conçu pour les SPA s’exécutant dans le navigateur, qui doit accéder aux API au nom d’un utilisateur sans serveur principal. Il utilise le type d’octroi _authorization_code_ et s’appuie sur des mécanismes de sécurité côté client utilisant PKCE (Proof Key for Code Exchange) pour sécuriser le flux de code d’autorisation. Pour plus d’informations, voir Informations d’identification d’application d’une seule page [OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation/#oauth-single-page-app-credential).
 
-## Différence entre les informations d’identification OAuth de serveur à serveur et OAuth Web App/Single Page App{#difference-between-oauth-server-to-server-and-oauth-web-app-single-page-app-credentials}
+## Différence entre les informations d’identification OAuth de serveur à serveur et les informations d’identification d’application web et d’application d’une seule page{#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials}
 
-| | OAuth serveur à serveur | Authentification de l’utilisateur OAuth (web-app) |
-| --- | --- | --- |
-| Objectif de l’authentification | Conçu pour les interactions entre machines. | Conçu pour les interactions orientées utilisateur. |
-| Comportement des jetons | Émet des jetons d’accès qui représentent l’application cliente elle-même. | Émet des jetons d’accès au nom d’un utilisateur authentifié. |
-| Cas d’utilisation | Services principaux nécessitant un accès à l’API sans interaction de l’utilisateur. | Applications web avec composants frontaux et principaux accédant aux API pour le compte des utilisateurs. |
-| Considérations relatives à la sécurité | Stockez en toute sécurité les informations d’identification sensibles (`client_id`, `client_secret`) dans les systèmes principaux. | Les utilisateurs s’authentifient et se voient accorder leur propre jeton d’accès temporaire. Stockez en toute sécurité les informations d’identification sensibles (`client_id`, `client_secret`) dans les systèmes principaux. |
-| Type d’octroi | _client_credentials_ | _code_autorisation_ |
+Le tableau suivant résume les différences entre les trois méthodes d’authentification OAuth prises en charge par les API AEM basées sur OpenAPI :
+
+|  | OAuth de serveur à serveur | Application web OAuth | Application monopage (SPA) OAuth |
+| --- | --- | --- | --- |
+| **Objectif de l’authentification** | Conçu pour les interactions entre machines. | Conçu pour les interactions pilotées par l’utilisateur dans une application web avec un _serveur principal_. | Conçu pour les interactions pilotées par l’utilisateur dans une _application JavaScript côté client_. |
+| **Comportement des jetons** | Émet des jetons d’accès qui représentent l’application cliente elle-même. | Émet des jetons d’accès au nom d’un utilisateur authentifié _via un serveur principal_. | Émet des jetons d’accès au nom d’un utilisateur authentifié _via un flux frontal uniquement_. |
+| **Cas d’utilisation** | Services principaux nécessitant un accès à l’API sans interaction de l’utilisateur. | Applications web avec composants frontaux et principaux accédant aux API pour le compte des utilisateurs. | Applications frontales pures (JavaScript) accédant aux API pour le compte d’utilisateurs sans serveur principal. |
+| **Considérations de sécurité** | Stockez en toute sécurité les informations d’identification sensibles (`client_id`, `client_secret`) dans les systèmes principaux. | Après l’authentification de l’utilisateur, il se voit accorder son propre jeton d’accès _temporaire via un appel du serveur principal_. Stockez en toute sécurité les informations d’identification sensibles (`client_id`, `client_secret`) dans les systèmes principaux pour échanger le code d’autorisation contre le jeton d’accès. | Après l’authentification de l’utilisateur, il se voit accorder son propre jeton d’accès _temporaire via un appel frontal_. N’utilise pas `client_secret`, car le stockage dans les applications frontales n’est pas sécurisé. Dépend de PKCE pour échanger le code d’autorisation pour le jeton d’accès. |
+| **Type d’octroi** | _client_credentials_ | _code_autorisation_ | _authorization_code_ avec **PKCE** |
+| **Type d’informations d’identification Adobe Developer Console** | OAuth de serveur à serveur | Application web OAuth | Application monopage OAuth |
 
 ## Accès aux API Adobe et aux concepts associés{#accessing-adobe-apis-and-related-concepts}
 

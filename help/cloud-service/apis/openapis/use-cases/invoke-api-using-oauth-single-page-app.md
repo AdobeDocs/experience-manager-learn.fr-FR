@@ -11,13 +11,13 @@ jira: KT-17430
 thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
+source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2104'
 ht-degree: 1%
 
 ---
-
 
 # Appeler des API AEM basées sur OpenAPI à l’aide de l’application monopage OAuth
 
@@ -25,7 +25,7 @@ Découvrez comment appeler les API AEM basées sur OpenAPI sur AEM as a Cloud Se
 
 L’authentification par application d’une seule page OAuth est idéale pour les applications JavaScript exécutées dans le navigateur. S’il manque un serveur principal ou s’il doit récupérer des jetons d’accès pour interagir avec les API d’AEM au nom d’un utilisateur.
 
-Le flux PKCE étend le type d’octroi OAuth 2.0 _authorization_code_, ce qui renforce la sécurité en empêchant l’interception du code d’autorisation. Pour plus d’informations, voir la [Différence entre les informations d’identification OAuth de serveur à serveur et OAuth Web App/Single Page App](../overview.md#difference-between-oauth-server-to-server-and-oauth-web-appsingle-page-app-credentials).
+Le flux PKCE étend le type d’octroi OAuth 2.0 _authorization_code_, ce qui renforce la sécurité en empêchant l’interception du code d’autorisation. Pour plus d’informations, consultez la section [Différence entre les informations d’identification OAuth de serveur à serveur, d’application web et d’application d’une seule page](../overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials).
 
 >[!AVAILABILITY]
 >
