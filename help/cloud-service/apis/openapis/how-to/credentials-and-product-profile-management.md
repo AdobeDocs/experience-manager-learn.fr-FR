@@ -12,9 +12,9 @@ thumbnail: KT-17428.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 277b4789-b035-4904-b489-c827c970fb55
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: f125cffc72a6f0eb558492f8dde6f4f30bc074ec
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -93,24 +93,25 @@ Par exemple, lorsque l’appel de l’API de création d’AEM Assets reçoit un
 
 Pour ajouter des profils de produit pour une API AEM, cliquez sur **Modifier les profils de produit** dans la section **API** du projet ADC, sélectionnez le profil de produit souhaité dans la boîte de dialogue **Configurer l’API** et enregistrez vos modifications.
 
-    .[Modifier les profils de produit](../assets/how-to/edit-product-profiles.png)
+![Modifier les profils de produit](../assets/how-to/edit-product-profiles.png)
 
 Sélectionnez le profil de produit souhaité (par exemple, **Administrateurs AEM - auteur - Programme XXX - Environnement XXX**) associé aux services requis, puis enregistrez vos modifications.
 
-    .[Sélectionner un profil de produit](../assets/how-to/select-product-profile.png)
+![Sélectionner le profil de produit](../assets/how-to/select-product-profile.png)
 
 Notez que le profil de produit **Administrateurs AEM - auteur - Programme XXX - Environnement XXX** est associé au service **Administrateurs AEM** et au service **Utilisateurs de l’API AEM Assets**. Sans ce dernier, le profil de produit n’apparaîtra pas dans la liste des profils de produit disponibles.
 
-    .[Services de profil produit](../assets/how-to/product-profile-services.png)
+![Services de profil de produit](../assets/how-to/product-profile-services.png)
 
 La requête **PATCH** de mise à jour des métadonnées de la ressource devrait maintenant fonctionner sans problème.
 
-    .[Requête PATCH](../assets/how-to/patch-request.png)
+![Requête PATCH](../assets/how-to/patch-request.png)
 
 
 >[!TAB Supprimer les profils de produit]
 
 Pour supprimer les profils de produit d’une API AEM, cliquez sur **Modifier les profils de produit** dans la section **API** du projet ADC, désélectionnez le profil de produit souhaité dans la boîte de dialogue **Configurer l’API** et enregistrez vos modifications.
+
 ![Désélectionner le profil de produit](../assets/how-to/deselect-product-profile.png)
 
 >[!ENDTABS]
