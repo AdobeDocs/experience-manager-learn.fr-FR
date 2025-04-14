@@ -11,10 +11,10 @@ thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 891
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 24d634fd1e62e873bc1dbb3ac0cd18f70129ee86
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 100%
+source-wordcount: '1370'
+ht-degree: 98%
 
 ---
 
@@ -226,7 +226,7 @@ Les requêtes HTTP/HTTPS provenant d’AEM sur les ports standard (80/443) sont 
 
 ### HTTP/HTTPS
 
-Lors de la création de connexions HTTP/HTTPS à partir d’AEM et de l’utilisation d’adresses IP de sortie dédiées, les connexions HTTP/HTTPS sont automatiquement traitées par proxy hors d’AEM à l’aide de l’adresse IP de sortie dédiée. La prise en charge des connexions HTTP/HTTPS ne nécessite pas de code ou de configuration supplémentaire.
+Lors de la création de connexions HTTP/HTTPS à partir d’AEM et de l’utilisation d’adresses IP de sortie dédiées, les connexions HTTP/HTTPS sont automatiquement traitées par proxy hors d’AEM à l’aide de l’adresse IP de sortie dédiée. Aucun code ou configuration supplémentaire n’est nécessaire pour prendre en charge les connexions HTTP/HTTPS, à l’exception de la configuration de la mise en réseau avancée d’adresses IP sortantes dédiées.
 
 #### Exemples de code
 
