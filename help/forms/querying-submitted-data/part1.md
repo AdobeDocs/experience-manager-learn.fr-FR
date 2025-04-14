@@ -9,7 +9,7 @@ role: Developer
 level: Experienced
 exl-id: c588bdca-b8a8-4de2-97e0-ba08b195699f
 duration: 50
-source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
+source-git-commit: ed8749f312dc5ad18e047163bcae28d6753b6f8c
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 100%
@@ -17,7 +17,6 @@ ht-degree: 100%
 ---
 
 # Créer un formulaire adaptatif basé sur un schéma JSON
-
 
 La possibilité de créer des formulaires adaptatifs basés sur un schéma JSON a été introduite avec la version 6.3 d’AEM Forms. Les informations sur la création de formulaires adaptatifs avec un schéma JSON sont expliquées en détail dans cet [article](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html?lang=fr).
 
@@ -31,8 +30,6 @@ La copie d’écran suivante montre les données de formulaire envoyées stocké
 >
 >Assurez-vous que votre fichier de schéma json est nommé correctement. Par exemple, il doit être nommé au format suivant : &lt;name>schema.json. Votre fichier de schéma peut donc être mortgage.schema.json ou credit.schema.json.
 
-
 ![datastored](assets/datastored.gif)
-
 
 [Exemples de schémas JSON pouvant être utilisés pour créer des formulaires adaptatifs.](assets/samplejsonschemas.zip). Téléchargez et décompressez le fichier zip pour obtenir les schémas JSON.
