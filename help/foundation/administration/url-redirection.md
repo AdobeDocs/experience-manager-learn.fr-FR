@@ -12,10 +12,10 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 62887c6251b09ac22664cfeb9c5513363efb555e
 workflow-type: tm+mt
 source-wordcount: '961'
-ht-degree: 90%
+ht-degree: 87%
 
 ---
 
@@ -50,7 +50,7 @@ Les solutions suivantes sont présentées dans l’ordre où elles sont les plus
 
 Cette option est uniquement disponible pour les clientes et les clients AEM as a Cloud Service.
 
-Le [réseau CDN géré par AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn) fournit une solution de redirection au niveau Edge, réduisant ainsi les allers-retours vers l’origine. La fonctionnalité [Redirections côté client](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#client-side-redirectors) vous permet de configurer les règles de redirection dans le code du projet AEM et de les déployer à l’aide du [pipeline de configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager). La taille du fichier de configuration du réseau CDN (`cdn.yaml`) ne doit pas dépasser 100 Ko.
+Le [réseau CDN géré par AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn) fournit une solution de redirection au niveau Edge, réduisant ainsi les allers-retours vers l’origine. La fonction [Redirections côté serveur](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#server-side-redirectors) vous permet de configurer les règles de redirection dans le code du projet AEM et de les déployer à l’aide du [Pipeline de configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager). La taille du fichier de configuration du réseau CDN (`cdn.yaml`) ne doit pas dépasser 100 Ko.
 
 La gestion des redirections au niveau Edge ou du réseau CDN présente des avantages en termes de performances.
 
