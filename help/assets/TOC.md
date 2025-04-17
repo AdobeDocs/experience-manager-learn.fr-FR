@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: ebc609ae621ea5d4d0eba0e28202448b6eaeb8cc
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 98%
+source-wordcount: '454'
+ht-degree: 91%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 98%
 
 + [Vue d’ensemble](overview.md)
 
-+ Listes de lectures vidéo{#video-playlists}
++ Listes de lecture vidéo{#video-playlists}
    + [Vue Assets](playlists/assets-view.md)
    + [Vue d’administration](playlists/admin-view.md)
 
-+ Configuration{#configuring}
++ Configurer{#configuring}
    + [Dossiers de référence](configuring/baseline-folders.md)
    + [Permissions de référence](configuring/baseline-permissions.md)
    + [Balisage](configuring/tagging.md)
@@ -50,7 +50,7 @@ ht-degree: 98%
    + [Versions](./collaboration/versions.md)
    + [Tâche de révision](./collaboration/review-task.md)
 
-+ Recherche et détection{#search-and-discovery}
++ Recherche et découverte{#search-and-discovery}
    + [Recherche](./search-and-discovery/search.md)
    + [Recherche contextuelle](./search-and-discovery/contextual-search.md)
    + [Intégration d’Adobe Firefly](./search-and-discovery/adobe-firefly.md)
@@ -86,11 +86,13 @@ ht-degree: 98%
    + [Variantes d’image à l’aide d’Adobe Express](./content-hub/image-variants.md)
    + [Collections](./content-hub/collections.md)
    + [Partage](./content-hub/share.md)
+   + Cas d’utilisation{#use-cases}
+      + [Gestion des ressources](./content-hub/use-cases/manage-assets.md)
 
 + Edge Delivery Services{#edge-delivery-services}
    + [Plug-in Sidekick](./edge-delivery-services/sidekick-plugin.md)
 
-+ Adobe GenStudio{#adobe-genstudio}
++ Adobe GenStudio{#adobe-genstudio}
    + [AEM Assets et GenStudio for Performance Marketing](https://experienceleague.adobe.com/fr/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
 
 + Partage et distribution{#sharing}
@@ -103,13 +105,13 @@ ht-degree: 98%
       + [Configurer l’approvisionnement des ressources](brand-portal/configure-asset-sourcing.md)
       + [Activer les téléchargements de rendu](brand-portal/enable-renditions-download.md)
 
-   + Partage de ressources{#assets-share}
+   + Asset share{#assets-share}
       + [Asset Share Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [Configurer Asset Share Commons sur AEM local](./sharing/asset-share-commons-technical-video-setup.md)
       + [Établir un thème dans Asset Share Commons](./sharing/asset-share-commons-feature-video-theming.md)
       + [Kits de ressources Asset Share Commons](./sharing/asset-share/asset-share-commons-asset-kits.md)
 
-+ Workflows créatifs{#creative-workflows}
++ Workflows Creative{#creative-workflows}
    + [Intégration d’Adobe Express](./creative-workflows/adobe-express.md)
    + [Adobe Express et AEM Assets](./creative-workflows/adobe-express-aem-assets.md)
    + [Application de bureau AEM](./creative-workflows/aem-desktop-app.md)
@@ -129,7 +131,7 @@ ht-degree: 98%
    + [For Placements Only (FPO)](./adobe-asset-link/for-placement-only.md)
    + [Recherche de ressources](./adobe-asset-link/asset-search.md)
 
-+ Automatisation de contenu{#content-automation}
++ Automatisation du contenu{#content-automation}
    + [Vue d’ensemble](./content-automation/overview.md)
    + [Opérations de création](./content-automation/creative-operations.md)
    + [Actions Photoshop](./content-automation/photoshop-actions.md)
@@ -155,7 +157,7 @@ ht-degree: 98%
       + [Visionneuses avec Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + 3D {#3d}
       + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + Utilisation avec AEM Sites {#dm-with-aem-sites}
+   + Utilisation d’avec AEM Sites {#dm-with-aem-sites}
       + [Fragments d’expérience](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Composants principaux de Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
@@ -167,7 +169,7 @@ ht-degree: 98%
       + [Créer des profils vidéo](dynamic-media/tutorials/creating-video-profile-to-process-videos-in-dynamic-media.md)
       + [Traitement de ressources](dynamic-media/tutorials/how-to-run-dam-update-asset-workflow-on-an-asset-with-dynamic-media-enabled.md)
       + [Configuration d’un serveur de prévisualisation sécurisé](dynamic-media/tutorials/adding-test-image-server-details-in-dynamic-media-for-secure-preview.md)
-      + [Générer des URL et des codes incorporés](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
+      + [Générer des URL et des codes intégrés](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
       + [Déclencher un traitement d’export](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
       + [Invalider le cache du réseau CDN](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
       + [Utilisation de composants principaux de Dynamic Media](dynamic-media/tutorials/using-dm-components-on-site-page.md)
@@ -175,11 +177,11 @@ ht-degree: 98%
       + [Télécharger des ressources dans l’application Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [API IPS Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
-+ Intégration Workfront{#workfront}
++ Intégration de Workfront{#workfront}
    + Connecteur amélioré{#enhanced-connector}
       + [Bases du connecteur amélioré](./workfront/enhanced-connector/basics.md)
       + [Dossiers de projets](./workfront/enhanced-connector/project-folders.md)
-      + Série d’experts AEM{#aem-experts-series}
+      + Série AEM Experts{#aem-experts-series}
          + [Vue d’ensemble](./workfront/enhanced-connector/aem-experts-series/overview.md)
          + [Configurer](./workfront/enhanced-connector/aem-experts-series/setup.md)
          + [Formulaires Workfront et métadonnées AEM](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)
@@ -198,4 +200,4 @@ ht-degree: 98%
 + Déploiement{#deployment}
    + [Développement multitenant et simultané](deployment/multitenancy-concurrent-article-understand.md)
 
-+ [Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=fr){target=_blank}
++ [Assets Essentials.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/overview.html?lang=fr){target=_blank}
