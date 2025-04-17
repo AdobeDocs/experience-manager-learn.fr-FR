@@ -12,9 +12,9 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 4cdab2b243af74a8075ae65e8f24e7f56ef2a23b
+source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1274'
 ht-degree: 1%
 
 ---
@@ -23,12 +23,7 @@ ht-degree: 1%
 
 Découvrez comment configurer votre environnement AEM as a Cloud Service pour activer l’accès aux API AEM basées sur OpenAPI.
 
->[!AVAILABILITY]
->
->Les API AEM basées sur OpenAPI sont disponibles dans le cadre d’un programme d’accès anticipé. Si vous souhaitez y accéder, nous vous encourageons à envoyer un e-mail à l’adresse [aem-apis@adobe.com](mailto:aem-apis@adobe.com) avec une description de votre cas d’utilisation.
-
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
-
 
 Le processus de configuration de haut niveau comprend les étapes suivantes :
 
@@ -151,14 +146,13 @@ Si vous choisissez la méthode d’authentification **OAuth Web App** ou **OAuth
 
 Pour permettre à l’ID client du projet ADC de communiquer avec l’instance AEM, vous devez configurer l’instance AEM.
 
-Pour ce faire, définissez la configuration de l’API dans le fichier `config.yaml` de .
-le projet AEM et son déploiement à l’aide du pipeline de configuration dans Cloud Manager.
+Pour ce faire, définissez la configuration de l’API dans un fichier YAML et déployez-la à l’aide du pipeline de configuration dans le Cloud Manager. Le fichier YAML définit les ID client autorisés à partir du projet ADC qui peuvent communiquer avec l’instance AEM.
 
-1. Dans AEM Project, recherchez ou créez le fichier `config.yaml` à partir du dossier `config` .
+1. Dans AEM Project, recherchez ou créez le fichier `api.yaml` à partir du dossier `config` .
 
-   ![Localisation de la configuration YAML](./assets/setup/locate-config-yaml.png)
+   ![Localisation de l’API YAML](./assets/setup/locate-api-yaml.png){width="500" zoomable="no"}
 
-1. Ajoutez la configuration suivante au fichier `config.yaml`.
+1. Ajoutez la configuration suivante au fichier `api.yaml`.
 
    ```yaml
    kind: "API"
@@ -179,9 +173,9 @@ le projet AEM et son déploiement à l’aide du pipeline de configuration dans 
 
 1. Validez les modifications de configuration et envoyez les modifications au référentiel Git distant auquel le pipeline Cloud Manager est connecté.
 
-1. Déployez les modifications ci-dessus à l’aide du pipeline de configuration dans le Cloud Manager. Notez que le fichier `config.yaml` peut également être installé dans un RDE à l’aide de l’outil de ligne de commande.
+1. Déployez les modifications ci-dessus à l’aide du pipeline de configuration dans le Cloud Manager. Notez que le fichier `api.yaml` peut également être installé dans un RDE à l’aide de l’outil de ligne de commande.
 
-   ![Déployer config.yaml](./assets/setup/config-pipeline.png)
+   ![Déployer YAML](./assets/setup/config-pipeline.png)
 
 ## Étapes suivantes
 

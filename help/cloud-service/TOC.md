@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 52aad0b0e568ff7e4acd23742fc70f10b1dd14ee
+source-git-commit: 380bd2b3121db5810e4d295a5f7f9d1139d22402
 workflow-type: tm+mt
-source-wordcount: '1383'
-ht-degree: 97%
+source-wordcount: '1385'
+ht-degree: 85%
 
 ---
 
@@ -25,11 +25,11 @@ ht-degree: 97%
    + [Qu’est-ce qu’AEM as a Cloud Service ?](./introduction/what-is-aem-as-a-cloud-service.md)
    + [Architecture](./introduction/architecture.md)
    + [Cloud Manager](./introduction/cloud-manager.md)
-   + Stratégie et leadership de la pensée{#strategy}
+   + Stratégie et leadership{#strategy}
       + [Experience Manager - Modèles et archétypes de gouvernance et de dotation en personnel](./introduction/experience-manager-governance-and-staffing-models.md)
 + Intégrations Experience Cloud{#integrations}
    + [Intégrations](./integrations/experience-cloud.md)
-   + [Adobe Target](./integrations/target.md)
+   + [AEM découplé et Target](./integrations/target.md)
 + Technologie sous-jacente {#underlying-technology}
    + [Architecture AEM](./underlying-technology/introduction-architecture.md)
    + [OSGi](./underlying-technology/introduction-osgi.md)
@@ -37,8 +37,8 @@ ht-degree: 97%
    + [Sling](./underlying-technology/introduction-sling.md)
    + [Services de création et de publication](./underlying-technology/introduction-author-publish.md)
    + [Dispatcher](./underlying-technology/introduction-dispatcher.md)
-+ Edge Delivery Services {#edge-delivery-services}
-   + [Module externe AEM Assets Sidekick](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html?lang=fr){target=_blank}
++ Edge Delivery Services {#edge-delivery-services}
+   + [Plug-in AEM Assets Sidekick](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/edge-delivery-services/sidekick-plugin.html?lang=fr){target=_blank}
 + Cloud Manager {#cloud-manager}
    + [Programmes](./cloud-manager/programs.md)
    + [Environnements](./cloud-manager/environments.md)
@@ -63,7 +63,7 @@ ht-degree: 97%
    + [Outils du Dispatcher local](./local-development-environment/dispatcher-tools.md)
 + Développement{#developing}
    + Extensibilité{#extensibility}
-      + App Builder{#app-builder}
+      + Créateur d’applications{#app-builder}
          + [Générer le jeton d’accès JWT](./developing/extensibility/app-builder/jwt-auth.md)
          + [Générer un jeton d’accès server à serveur](./developing/extensibility/app-builder/server-to-server-auth.md)
          + [Vérification du webhook Github](./developing/extensibility/app-builder/github-webhook-verification.md)
@@ -124,7 +124,7 @@ ht-degree: 97%
          + [Vue d’ensemble](./developing/universal-editor/react-app/overview.md)
          + [Configuration du développement local](./developing/universal-editor/react-app/local-development-setup.md)
          + [Instrumentation d’une application React](./developing/universal-editor/react-app/instrument-to-edit-content.md)
-   + [JavaDocs de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
+   + [Documentation JavaDocs de l’API SDK AEM](https://javadoc.io/doc/com.adobe.aem/aem-sdk-api/latest/index.html){target=_blank}
 + Déboguer AEM{#debugging}
    + Déboguer le SDK AEM{#debugging-aem-sdk}
       + [Vue d’ensemble](./debugging/aem-sdk-local-quickstart/overview.md)
@@ -133,7 +133,7 @@ ht-degree: 97%
       + [Console web OSGi](./debugging/aem-sdk-local-quickstart/osgi-web-consoles.md)
       + [Outils Dispatcher](./debugging/aem-sdk-local-quickstart/dispatcher-tools.md)
       + [Autres outils](./debugging/aem-sdk-local-quickstart/other-tools.md)
-   + Déboguer AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
+   + Débogage d’AEM as a Cloud Service{#debugging-aem-as-a-cloud-service}
       + [Vue d’ensemble](./debugging/cloud-service/overview.md)
       + [Journaux](./debugging/cloud-service/logs.md)
       + [Version et déploiement](./debugging/cloud-service/build-and-deployment.md)
@@ -149,7 +149,7 @@ ht-degree: 97%
       + [Authentification serveur à serveur](./apis/openapis/use-cases/invoke-api-using-oauth-s2s.md)
       + [Authentification de l’utilisateur (application web)](./apis/openapis/use-cases/invoke-api-using-oauth-web-app.md)
       + [Authentification utilisateur (SPA)](./apis/openapis/use-cases/invoke-api-using-oauth-single-page-app.md)
-      + Procédure{#how-to}
+      + Comment{#how-to}
          + [Gestion des informations d’identification et des profils de produit](./apis/openapis/how-to/credentials-and-product-profile-management.md)
          + [Gestion des autorisations](./apis/openapis/how-to/services-user-group-permission-management.md)
 + Diffusion de contenu{#content-delivery}
@@ -165,11 +165,11 @@ ht-degree: 97%
    + [Service de publication AEM](./caching/publish.md)
    + [Service de création AEM](./caching/author.md)
    + [Analyse du taux d’accès au cache du réseau CDN](./caching/cdn-cache-hit-ratio-analysis.md)
-   + Procédure{#how-to}
+   + Comment{#how-to}
       + [Activer la mise en cache](./caching/how-to/enable-caching.md)
       + [Désactivation de la mise en cache](./caching/how-to/disable-caching.md)
       + [Purge du cache](./caching/how-to/purge-cache.md)
-+ Accéder à AEM{#accessing}
++ Accès à AEM{#accessing}
    + [Vue d’ensemble](./accessing/overview.md)
    + [Utilisateurs Adobe IMS](./accessing/adobe-ims-users.md)
    + [Groupes d’utilisateurs Adobe IMS](./accessing/adobe-ims-user-groups.md)
@@ -192,7 +192,7 @@ ht-degree: 97%
       + [Service E-mail](./networking/examples/email-service.md)
 + Sécurité {#security}
    + [Blocage d’attaques DoS/DDoS à l’aide de règles de filtrage du trafic](./security/blocking-dos-attack-using-traffic-filter-rules.md)
-   + Règles de filtre de trafic, y compris les règles WAF{#traffic-filter-and-waf-rules}
+   + Règles de filtrage du trafic, y compris les règles WAF{#traffic-filter-and-waf-rules}
       + [Vue d’ensemble](./security/traffic-filter-rules/overview.md)
       + [Configuration](./security/traffic-filter-rules/how-to-setup.md)
       + [Exemples et analyse des résultats](./security/traffic-filter-rules/examples-and-analysis.md)
@@ -208,7 +208,7 @@ ht-degree: 97%
 + Migration {#migration}
    + [Outil de transfert de contenu](./migration/content-transfer-tool.md)
    + [Importation en bloc de ressources](./migration/bulk-import.md)
-   + Transition vers AEM as a Cloud Service {#moving-to-aem-as-a-cloud-service}
+   + Transition vers AEM as a Cloud Service {#moving-to-aem-as-a-cloud-service}
       + [Présentation](./migration/moving-to-aem-as-a-cloud-service/introduction.md)
       + [Intégration](./migration/moving-to-aem-as-a-cloud-service/onboarding.md)
       + [Cloud Manager](./migration/moving-to-aem-as-a-cloud-service/cloud-manager.md)
@@ -223,7 +223,7 @@ ht-degree: 97%
          + [Outil de transfert de contenu](./migration/moving-to-aem-as-a-cloud-service/content-migration/content-transfer-tool.md)
          + [FAQ](./migration/moving-to-aem-as-a-cloud-service/content-migration/faq.md)
       + [Résolution des problèmes](./migration/moving-to-aem-as-a-cloud-service/troubleshooting.md)
-      + dʼAEM Forms as a Cloud Service {#aem-forms}
+      + AEM Forms as a Cloud Service {#aem-forms}
          + [Présentation](./migration/moving-to-aem-as-a-cloud-service/aem-forms/introduction.md)
          + [Inscription numérique](./migration/moving-to-aem-as-a-cloud-service/aem-forms/digital-enrollment.md)
          + [Communications](./migration/moving-to-aem-as-a-cloud-service/aem-forms/communications.md)
@@ -239,8 +239,8 @@ ht-degree: 97%
       + [Naviguer dans Cloud Acceleration Manager](./migration/cloud-acceleration-manager/navigating.md)
       + [Utiliser Cloud Acceleration Manager](./migration/cloud-acceleration-manager/using.md)
 + [Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/content-fragments-console/overview.html?lang=fr){target=_blank}
-+ Forms{#forms}
-   + Développer pour Forms as a Cloud Service{#developing-for-cloud-service}
++ Formulaires{#forms}
+   + Développement pour Forms as a Cloud Service{#developing-for-cloud-service}
       + [1 - Prise en main](./forms/developing-for-cloud-service/getting-started.md)
       + [2 - Installer IntelliJ](./forms/developing-for-cloud-service/intellij-set-up.md)
       + [3 - Configurer Git](./forms/developing-for-cloud-service/setup-git.md)
@@ -270,21 +270,21 @@ ht-degree: 97%
       + [1 - Présentation](./forms/custom-submit-headless-forms/introduction.md)
       + [2 - Créer un service d’envoi personnalisé](./forms/custom-submit-headless-forms/custom-submit-service.md)
       + [3 - Afficher la réponse](./forms/custom-submit-headless-forms/handle-response-react-app.md)
-   + Création d’un composant de bloc d’adresse{#create-address-block}
+   + Créer un composant de bloc d’adresse{#create-address-block}
       + [1 - Présentation](./forms/create-address-block-component/introduction.md)
       + [2 - Configuration](./forms/create-address-block-component/set-up.md)
       + [3 - Création d’un composant](./forms/create-address-block-component/creating-address-component.md)
       + [4 - Déploiement du composant](./forms/create-address-block-component/deploy-your-project.md)
-   + Création du composant d’image cliquable{#clickable-image-component}
+   + Créer un composant d’image cliquable{#clickable-image-component}
       + [1 - Présentation](./forms/clickable-image-component/introduction.md)
       + [2 - Créer un composant](./forms/clickable-image-component/create-component.md)
       + [3 - Gestion de l’événement de clic](./forms/clickable-image-component/handle-click-event.md)
-   + AEM Forms et Analytics{#forms-and-analytics}
+   + AEM Forms et Analytics{#forms-and-analytics}
       + [Présentation](./forms/form-data-analytics/introduction.md)
       + [Créer des éléments de données](./forms/form-data-analytics/data-elements.md)
       + [Créer des règles](./forms/form-data-analytics/rules.md)
       + [Tester la solution](./forms/form-data-analytics/test.md)
-   + Créer un composant déroulant Pays{#countries-drop-down}
+   + Création d’un composant déroulant Pays{#countries-drop-down}
       + [Présentation](./forms/countries-drop-down/introduction.md)
       + [Créer un composant](./forms/countries-drop-down/component.md)
       + [Créer une boîte de dialogue](./forms/countries-drop-down/dialog.md)
@@ -302,7 +302,7 @@ ht-degree: 97%
       + [4. Ajout d’icônes](./forms/using-vertical-tabs/icons.md)
    + Utilisation des services Output et Forms{#forms-cs-output-and-forms-service}
       + [Générer des PDF](./forms/forms-cs-output-and-forms-service/outputservice.md)
-   + Génération de documents dans AEM Forms CS{#doc-gen-formscs}
+   + Génération de documents dans AEM Forms CS{#doc-gen-formscs}
       + [Présentation](./forms/doc-gen-forms-cs/introduction.md)
       + [Créer des informations d’identification de service](./forms/doc-gen-forms-cs/service-credentials.md)
       + [Créer un jeton JWT](./forms/doc-gen-forms-cs/create-jwt.md)
@@ -322,7 +322,7 @@ ht-degree: 97%
       + [Créer une configuration par lot USC](./forms/formscs-batch-api/configure-usc-batch.md)
       + [Créer une configuration par lot](./forms/formscs-batch-api/create-batch-config.md)
       + [Exécuter le lot](./forms/formscs-batch-api/execute-batch-generate-documents.md)
-   + Manipulation de PDF dans Forms CS{#forms-cs-assembler}
+   + Manipulation de PDF dans Forms CS{#forms-cs-assembler}
       + [Présentation](./forms/forms-cs-assembler/introduction.md)
       + [Créer des informations d’identification de service](./forms/forms-cs-assembler/service-credentials.md)
       + [Créer un jeton JWT](./forms/forms-cs-assembler/create-jwt.md)
@@ -335,13 +335,13 @@ ht-degree: 97%
       + [Présentation](./forms/forms-cs-with-marketo/part1.md)
       + [Création d’une source de données](./forms/forms-cs-with-marketo/part2.md)
       + [Création d’un modèle de données de formulaire](./forms/forms-cs-with-marketo/part3.md)
-   + Stocker les envois de formulaire avec des balises d’index Blob{#store-submiited-data-with-metadata-tags}
+   + Stocker les envois de formulaire avec les balises d’index Blob{#store-submiited-data-with-metadata-tags}
       + [Présentation](./forms/store-submiited-data-with-metadata-tags/introduction.md)
       + [Étendre le composant de groupe de choix](./forms/store-submiited-data-with-metadata-tags/extend-choice-group-components.md)
       + [Créer une configuration OSGi](./forms/store-submiited-data-with-metadata-tags/create-osgi-configuration.md)
       + [Créer des balises d’index](./forms/store-submiited-data-with-metadata-tags/create-blob-index-tags.md)
       + [Créer un envoi personnalisé](./forms/store-submiited-data-with-metadata-tags/create-custom-submit.md)
-   + Préremplir un formulaire basé sur des composants principaux{#prefill-core-component-based-form}
+   + Préremplissage du formulaire basé sur les composants principaux{#prefill-core-component-based-form}
       + [Présentation](./forms/prefill-core-component-form/introduction.md)
       + [Écrire un service de préremplissage](./forms/prefill-core-component-form/pre-fill-service.md)
       + [Tester la solution](./forms/prefill-core-component-form/test-solution.md)
@@ -360,27 +360,27 @@ ht-degree: 97%
       + [6 - Créer un formulaire adaptatif](./forms/prefill-azure-storage/create-af.md)
       + [7 - Déployer les exemples de ressources](./forms/prefill-azure-storage/deploy-sample-assets.md)
 
-   + Créer un processus d’analyse{#create-aem-workflow}
+   + Créer un workflow de révision{#create-aem-workflow}
       + [Externaliser le stockage des workflows](./forms/create-aem-workflow/externalize-workflow.md)
       + [Créer un modèle de workflow](./forms/create-aem-workflow/create-workflow.md)
       + [Déclencher un workflow](./forms/create-aem-workflow/configure-af.md)
-   + Acrobat Sign avec AEM Forms{#forms-and-sign}
+   + Acrobat Sign avec AEM Forms{#forms-and-sign}
       + [Présentation](./forms/forms-and-sign/introduction.md)
       + [Application d’API Acrobat Sign](./forms/forms-and-sign/create-sign-api-application.md)
       + [Configuration cloud d’Acrobat Sign](./forms/forms-and-sign/create-adobe-sign-cloud-configuration.md)
       + [Créer un formulaire adaptatif](./forms/forms-and-sign/create-adaptive-form.md)
       + [Configurer l’outil Remplir et signer](./forms/forms-and-sign/configure-form-fill-and-sign.md)
-   + Intégrer à Microsoft Power Automate{#forms-cs-and-power-automate}
+   + Intégration à Microsoft Power Automate{#forms-cs-and-power-automate}
       + [Configurer l’intégration](./forms/forms-cs-and-power-automate/integrate-formscs-power-automate.md)
       + [Analyser les données de formulaire envoyées](./forms/forms-cs-and-power-automate/send-email-notification.md)
       + [Envoyer un document d’enregistrement en tant que pièce jointe d’un e-mail](./forms/forms-cs-and-power-automate/send-dor-email-attachment.md)
       + [Extraire les pièces jointes de formulaire des données envoyées](./forms/forms-cs-and-power-automate/send-af-attachments-in-email.md)
-   + Intégrer à Microsoft Dynamics{#formscs-dynamics-crm}
+   + Intégration à Microsoft Dynamics{#formscs-dynamics-crm}
       + [Créer une application Dynamics](./forms/formscs-dynamics-crm/create-dynamics-account.md)
       + [Configurer la source de données](./forms/formscs-dynamics-crm/configure-odata-data-source.md)
       + [Création d’un modèle de données de formulaire](./forms/formscs-dynamics-crm/create-form-data-model.md)
       + [Créer un formulaire adaptatif](./forms/formscs-dynamics-crm/create-adaptive-form.md)
-   + Intégrer à Salesforce{#integrate-with-salesforce}
+   + Intégration à Salesforce{#integrate-with-salesforce}
       + [Présentation](./forms/integrate-with-salesforce/introduction.md)
       + [Créer une application connectée](./forms/integrate-with-salesforce/create-connected-app.md)
       + [Créer un fichier Swagger](./forms/integrate-with-salesforce/describe-rest-api.md)
@@ -388,14 +388,14 @@ ht-degree: 97%
       + [Créer un modèle de données de formulaire](./forms/integrate-with-salesforce/create-form-data-model.md)
       + [Tester un envoi de formulaire](./forms/integrate-with-salesforce/create-lead-submitting-form.md)
       + [Tester un événement de clic](./forms/integrate-with-salesforce/create-lead-click-event.md)
-   + Stocker les envois de formulaire sur un lecteur et dans SharePoint{#one-drive}
+   + Stocker les envois de formulaire sur un seul lecteur et dans SharePoint{#one-drive}
       + [Stocker les données de formulaire sur un lecteur](./forms/forms-cs-one-drive/store-form-submission-one-drive.md)
       + [Stocker les données de formulaire dans SharePoint](./forms/forms-cs-sharepoint/store-form-submission-in-sharepoint.md)
       + [Préremplir un formulaire avec les données d’une liste SharePoint](./forms/forms-cs-sharepoint/prefill-data-from-sharepoint-list.md)
       + [Insérer des données dans une liste SharePoint à l’aide d’un workflow](./forms/forms-cs-sharepoint/submit-data-sharepoint-list-workflow.md)
-+ Extensibilité Assets Compute{#asset-compute}
++ Extensibilité d’Asset Compute{#asset-compute}
    + [Vue d’ensemble](./asset-compute/overview.md)
-   + Configuration{#set-up}
+   + Configurer{#set-up}
       + [Approvisionnement des comptes et des services](./asset-compute/set-up/accounts-and-services.md)
       + [Environnement de développement local](./asset-compute/set-up/development-environment.md)
       + [App Builder](./asset-compute/set-up/app-builder.md)
@@ -422,7 +422,7 @@ ht-degree: 97%
    + [AEM Sites et Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-target-tutorial/overview.html?lang=fr){target=_blank}
    + [Authentification basée sur les jetons](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr){target=_blank}
 + Ressources expertes {#expert-resources}
-   + AEM Champions {#aem-champions}
+   + AEM Champions {#aem-champions}
       + [Playbook d’intégration de Cloud Manager](./expert-resources/aem-champions/onboarding-playbook.md)
       + [Types d’environnements Cloud Manager](./expert-resources/aem-champions/environment-types.md)
       + [Interface utilisateur de Cloud Manager](./expert-resources/aem-champions/cloud-manager-ui.md)
