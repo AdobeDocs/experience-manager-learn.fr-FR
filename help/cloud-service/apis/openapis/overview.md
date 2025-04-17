@@ -12,9 +12,9 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: 34aaecb7b82d7fae068549fad3ec9a4895fb9ec7
+source-git-commit: 182d7b76411ab885ab93b7724b97bf75cc52323c
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1002'
 ht-degree: 2%
 
 ---
@@ -45,10 +45,6 @@ La [spécification OpenAPI](https://swagger.io/specification/) (anciennement con
 
 Dans les prochaines versions, d’autres API AEM basées sur OpenAPI seront ajoutées pour prendre en charge d’autres cas d’utilisation.
 
->[!AVAILABILITY]
->
->Les API AEM basées sur OpenAPI sont disponibles dans le cadre d’un programme d’accès anticipé. Si vous souhaitez y accéder, nous vous encourageons à envoyer un e-mail à l’adresse [aem-apis@adobe.com](mailto:aem-apis@adobe.com) avec une description de votre cas d’utilisation.
-
 ## Prise en charge de l’authentification{#authentication-support}
 
 Les API d’AEM basées sur OpenAPI prennent en charge l’authentification OAuth 2.0, y compris les types d’octroi suivants :
@@ -71,6 +67,7 @@ Le tableau suivant résume les différences entre les trois méthodes d’authen
 | **Considérations de sécurité** | Stockez en toute sécurité les informations d’identification sensibles (`client_id`, `client_secret`) dans les systèmes principaux. | Après l’authentification de l’utilisateur, il se voit accorder son propre jeton d’accès _temporaire via un appel du serveur principal_. Stockez en toute sécurité les informations d’identification sensibles (`client_id`, `client_secret`) dans les systèmes principaux pour échanger le code d’autorisation contre le jeton d’accès. | Après l’authentification de l’utilisateur, il se voit accorder son propre jeton d’accès _temporaire via un appel frontal_. N’utilise pas `client_secret`, car le stockage dans les applications frontales n’est pas sécurisé. Dépend de PKCE pour échanger le code d’autorisation pour le jeton d’accès. |
 | **Type d’octroi** | _client_credentials_ | _code_autorisation_ | _authorization_code_ avec **PKCE** |
 | **Type d’informations d’identification Adobe Developer Console** | OAuth de serveur à serveur | Application web OAuth | Application monopage OAuth |
+| **Tutoriel** | [Appeler l’API à l’aide de l’authentification de serveur à serveur](./use-cases/invoke-api-using-oauth-s2s.md) | [Appeler l’API à l’aide de l’authentification des applications web](./use-cases/invoke-api-using-oauth-web-app.md) | [Appeler l’API à l’aide de l’authentification par application monopage](./use-cases/invoke-api-using-oauth-single-page-app.md) |
 
 ## Accès aux API Adobe et aux concepts associés{#accessing-adobe-apis-and-related-concepts}
 
@@ -116,8 +113,8 @@ Découvrez comment configurer votre environnement AEM as a Cloud Service et un p
                     <p class="is-size-6">Découvrez comment configurer votre environnement AEM as a Cloud Service pour activer l’accès aux API AEM basées sur OpenAPI.</p>
                 </div>
                 <a href="./setup.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
-                </a>
+<span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
+</a>
             </div>
         </div>
     </div>
@@ -165,8 +162,8 @@ Découvrez comment utiliser les API AEM basées sur OpenAPI à l’aide de diff�
                     <p class="is-size-6">Découvrez comment appeler les API AEM basées sur OpenAPI à partir d’une application NodeJS personnalisée à l’aide de l’authentification de serveur à serveur OAuth.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-s2s.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
-                </a>
+<span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
+</a>
             </div>
         </div>
     </div>
@@ -188,8 +185,8 @@ Découvrez comment utiliser les API AEM basées sur OpenAPI à l’aide de diff�
                     <p class="is-size-6">Découvrez comment appeler les API AEM basées sur OpenAPI à partir d’une application web personnalisée à l’aide de l’authentification par application web OAuth.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
-                </a>
+<span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
+</a>
             </div>
         </div>
     </div>
@@ -211,8 +208,8 @@ Découvrez comment utiliser les API AEM basées sur OpenAPI à l’aide de diff�
                     <p class="is-size-6">Découvrez comment appeler les API AEM basées sur OpenAPI à partir d’une application d’une seule page (SPA) personnalisée à l’aide de l’authentification par application d’une seule page OAuth.</p>
                 </div>
                 <a href="./use-cases/invoke-api-using-oauth-single-page-app.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
-                </a>
+<span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
+</a>
             </div>
         </div>
     </div>
