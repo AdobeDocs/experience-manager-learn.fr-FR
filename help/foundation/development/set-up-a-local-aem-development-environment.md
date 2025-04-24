@@ -11,9 +11,9 @@ last-substantial-update: 2022-07-20T00:00:00Z
 doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
 duration: 4537
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 3ad201aad77e71b42d46d69fdda50bcc77316151
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '2408'
 ht-degree: 100%
 
 ---
@@ -179,7 +179,6 @@ L’**[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** est l’un des IDE le
 
 * [**Télécharger**](https://code.visualstudio.com/Download) **Visual Studio Code**
 * **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** : outil de type FTP pour le contenu JCR.
-* **[aemfed](https://aemfed.io)** : accélérer votre workflow front-end AEM.
 * **[Synchroniser AEM](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** : l’extension &#42; prise en charge par la communauté pour Visual Studio Code.
 * **[Projet WKND](https://github.com/adobe/aem-guides-wknd)** - Exemple de projet AEM présenté dans cette vidéo.
 
@@ -189,8 +188,7 @@ L’**[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** est l’un des IDE le
 * 00:53 - Création et déploiement du code source avec Maven
 * 04:03 - Envoi des modifications de code à l’aide de l’outil de ligne de commande Repo
 * 08:29 - Extraction des modifications de code à l’aide de l’outil de ligne de commande Repo
-* 10:40 - Envoi des modifications de code à l’aide de l’outil aemfed
-* 14:24 - Dépannage et recréation de bibliothèques clientes
+* 10:32 - Dépannage et recréation de bibliothèques clientes
 
 ### [!DNL CRXDE Lite]
 

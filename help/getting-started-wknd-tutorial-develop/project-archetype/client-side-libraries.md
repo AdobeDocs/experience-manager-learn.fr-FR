@@ -12,9 +12,9 @@ doc-type: Tutorial
 exl-id: 8d3026e9-a7e2-4a76-8a16-a8197a5e04e3
 recommendations: noDisplay, noCatalog
 duration: 557
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 3ad201aad77e71b42d46d69fdda50bcc77316151
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2432'
 ht-degree: 100%
 
 ---
@@ -394,14 +394,6 @@ Cette technique est utile si la plupart des styles et du code front-end sont eff
    > La source d’image du balisage statique pointe vers un composant d’image dynamique sur une instance AEM locale. Les images apparaissent altérées si le chemin d’accès à l’image change, si AEM n’est pas lancé ou si le navigateur ne s’est pas connecté à l’instance locale AEM. En cas de remise à une ressource externe, il est également possible de remplacer les images par des références statiques.
 
 1. Vous pouvez **arrêter** le webpack server à partir de la ligne de commande en saisissant `CTRL+C`.
-
-### aemfed {#develop-aemfed}
-
-**[aemfed](https://aemfed.io)** est un outil de ligne de commande Open Source qui peut être utilisé pour accélérer le développement front-end. Il est alimenté par [aemsync](https://www.npmjs.com/package/aemsync), [Browsersync](https://browsersync.io/), et [Sling Log Tracer](https://sling.apache.org/documentation/bundles/log-tracers.html).
-
-À un niveau élevé, la variable `aemfed` est conçue pour prendre en compte les modifications apportées aux fichiers dans le module **ui.apps** et les synchroniser automatiquement directement avec une instance AEM en cours d’exécution. En fonction des modifications, un navigateur local s’actualise automatiquement, accélérant ainsi le développement front-end. Il est également conçu pour fonctionner avec le traceur de journal Sling afin d’afficher automatiquement les erreurs côté serveur directement dans le terminal.
-
-**aemfed** peut être un outil très utile si vous effectuez beaucoup de travail dans le module **ui.apps**, modifiez des scripts HTL et créez des composants personnalisés. [La documentation complète se trouve ici](https://github.com/abmaonline/aemfed).
 
 ### Débogage des bibliothèques côté client {#debugging-clientlibs}
 
