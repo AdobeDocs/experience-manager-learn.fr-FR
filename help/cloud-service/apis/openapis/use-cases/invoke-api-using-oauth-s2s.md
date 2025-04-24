@@ -12,7 +12,7 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '1687'
 ht-degree: 3%
@@ -50,7 +50,7 @@ Les éléments suivants sont requis afin de terminer ce tutoriel :
 
 - L’exemple de projet [Sites WKND](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) doit y être déployé.
 
-- Accès à [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
+- Accès à [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
 - Installez [Node.js](https://nodejs.org/fr/) sur votre ordinateur local pour exécuter l’exemple d’application NodeJS.
 
@@ -117,7 +117,7 @@ Vous pouvez utiliser d’autres langages de programmation tels que Java, Python,
 
 ### Vérifier l’API
 
-Avant de développer l’application, examinons [diffuser le point d’entrée des métadonnées de la ressource spécifiée](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/../assets/author/#operation/getAssetMetadata) à partir de l’API de création _Assets_. La syntaxe API est la suivante :
+Avant de développer l’application, examinons [diffuser le point d’entrée des métadonnées de la ressource spécifiée](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/#operation/getAssetMetadata) à partir de l’API de création _Assets_. La syntaxe API est la suivante :
 
 ```http
 GET https://{bucket}.adobeaemcloud.com/adobe/../assets/{assetId}/metadata
@@ -471,4 +471,4 @@ Dans le projet ADC, vous avez ajouté les API AEM, configuré son type d’authe
 
 ## Ressources supplémentaires
 
-- [Guide de mise en œuvre des informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+- [Guide de mise en œuvre des informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)

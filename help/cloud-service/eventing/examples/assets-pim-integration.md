@@ -12,7 +12,7 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 31%
@@ -49,7 +49,7 @@ Les éléments suivants sont requis afin de terminer ce tutoriel :
 
 - Environnement AEM as a Cloud Service avec [AEM Eventing activé](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/events/#enable-aem-events-on-your-aem-cloud-service-environment). L’exemple de projet [Sites WKND](https://github.com/adobe/aem-guides-wknd?#aem-wknd-sites-project) doit être déployé dessus.
 
-- Accès à [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started/).
+- Accès à [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started).
 
 - [Interface de ligne de commande d’Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) installée sur votre ordinateur local.
 
@@ -335,6 +335,6 @@ La synchronisation des métadonnées des ressources entre AEM et d’autres syst
 
 - Le code de récupération des métadonnées de la ressource est exécuté en dehors d’AEM, ce qui évite la charge sur le service de création AEM. Il s’agit donc d’une architecture orientée événement qui évolue indépendamment.
 - La nouvelle API de création Assets est utilisée pour mettre à jour les métadonnées des ressources dans AEM.
-- L’authentification API utilise OAuth de serveur à serveur (c’est-à-dire le flux d’informations d’identification du client). Consultez le [guide de mise en œuvre des informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/).
+- L’authentification API utilise OAuth de serveur à serveur (c’est-à-dire le flux d’informations d’identification du client). Consultez le [guide de mise en œuvre des informations d’identification OAuth de serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation).
 - Au lieu des actions Adobe I/O Runtime, d’autres webhooks ou Amazon EventBridge peuvent être utilisés pour recevoir l’événement AEM Assets et traiter la mise à jour des métadonnées.
 - Les événements de ressources via les événements AEM permettent aux entreprises d’automatiser et de rationaliser les processus critiques, ce qui favorise l’efficacité et la cohérence dans l’écosystème de contenu.

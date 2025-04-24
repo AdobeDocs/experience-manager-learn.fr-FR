@@ -12,10 +12,10 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
 workflow-type: tm+mt
 source-wordcount: '1963'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -149,7 +149,7 @@ function getCommandLineParams() {
 
 Une fois les informations d’identification de service lues, elles sont utilisées pour générer un jeton JWT qui est ensuite échangé avec les API d’Adobe IMS contre un jeton d’accès. Ce jeton d’accès peut ensuite être utilisé pour accéder à AEM as a Cloud Service.
 
-Cet exemple d’application est basé sur Node.js. Il est donc préférable d’utiliser le module npm [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) pour faciliter 1), la génération du jeton JWT et 2), l’échange avec Adobe IMS. Si votre application est développée à l’aide d’un autre langage, consultez [les exemples de code appropriés](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) sur la manière de créer la requête HTTP à Adobe IMS à l’aide d’autres langages de programmation.
+Cet exemple d’application est basé sur Node.js. Il est donc préférable d’utiliser le module npm [@adobe/jwt-auth](https://www.npmjs.com/package/@adobe/jwt-auth) pour faciliter 1), la génération du jeton JWT et 2), l’échange avec Adobe IMS. Si votre application est développée à l’aide d’un autre langage, consultez [les exemples de code appropriés](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples) sur la manière de créer la requête HTTP à Adobe IMS à l’aide d’autres langages de programmation.
 
 1. Mettez à jour le `getAccessToken(..)` pour examiner le contenu du fichier JSON et déterminer s’il représente un jeton d’accès au développement local ou des informations d’identification de service. Pour ce faire, il suffit de vérifier l’existence de la propriété du `.accessToken`, qui n’existe que pour le JSON du jeton d’accès au développement local.
 
