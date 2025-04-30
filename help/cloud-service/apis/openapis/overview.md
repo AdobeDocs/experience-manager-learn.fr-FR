@@ -12,9 +12,9 @@ thumbnail: KT-16515.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 0eb0054d-0c0a-4ac0-b7b2-fdaceaa6479b
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 58ae9e503bd278479d78d4df6ffe39356d5ec59b
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1100'
 ht-degree: 2%
 
 ---
@@ -54,6 +54,15 @@ Les API d’AEM basées sur OpenAPI prennent en charge l’authentification OAut
 - **Informations d’identification de l’application web OAuth** : adapté aux applications web avec des composants frontaux et _principaux_ qui accèdent aux API d’AEM pour le compte des utilisateurs et utilisatrices. Il utilise le type d’octroi _authorization_code_, où le serveur principal gère en toute sécurité les secrets et les jetons. Pour plus d’informations, voir Informations d’identification de l’application web [OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential).
 
 - **Informations d’identification d’application d’une seule page OAuth** : conçu pour les SPA s’exécutant dans le navigateur, qui doit accéder aux API au nom d’un utilisateur sans serveur principal. Il utilise le type d’octroi _authorization_code_ et s’appuie sur des mécanismes de sécurité côté client utilisant PKCE (Proof Key for Code Exchange) pour sécuriser le flux de code d’autorisation. Pour plus d’informations, voir Informations d’identification d’application d’une seule page [OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential).
+
+## Quelle méthode d’authentification utiliser ?{#auth-method-decision}
+
+Lorsque vous décidez de la méthode d’authentification à utiliser, tenez compte des points suivants :
+
+![Quelle méthode d’authentification utiliser ?](./assets/overview/which-authentication-method-to-use.png)
+
+L’authentification de l’utilisateur (application web ou application d’une seule page) doit être le choix par défaut chaque fois que le contexte utilisateur AEM est impliqué. Cela permet de s’assurer que toutes les actions du référentiel sont correctement attribuées à l’utilisateur authentifié et que celui-ci est limité aux seules autorisations auxquelles il a droit.
+L’utilisation de serveur à serveur (ou d’un compte système technique) pour effectuer des actions au nom d’un utilisateur individuel contourne le modèle de sécurité et introduit des risques tels que la réaffectation des privilèges et un audit inexact.
 
 ## Différence entre les informations d’identification OAuth de serveur à serveur et les informations d’identification d’application web et d’application d’une seule page{#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials}
 
