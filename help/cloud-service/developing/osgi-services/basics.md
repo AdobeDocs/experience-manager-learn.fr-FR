@@ -24,7 +24,7 @@ Découvrez les concepts de base du développement de services OSGi, notamment le
 + Comment convertir un POJO Java en service OSGi.
 + Comment lier un service OSGi à une interface Java.
 
->[!VIDEO](https://video.tv.adobe.com/v/335476?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417185?quality=12&learn=on&captions=fre_fr)
 
 ## Ressources
 

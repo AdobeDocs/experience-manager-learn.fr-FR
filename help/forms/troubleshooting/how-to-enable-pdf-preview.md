@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour activer l’aperçu au format PDF dans Designer.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335500?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417685?quality=12&learn=on&captions=fre_fr)

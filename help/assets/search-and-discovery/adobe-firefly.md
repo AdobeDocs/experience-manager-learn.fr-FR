@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Découvrez comment Adobe Experience Manager Assets, intégré à Adobe Firefly, transforme les résultats de recherche vides en une expérience de génération de ressources productive, ce qui permet aux utilisateurs et aux utilisatrices de rechercher et de charger facilement des ressources directement dans leur workflow.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429070/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438259/?learn=on&captions=fre_fr)
 
 
 >[!TIP]

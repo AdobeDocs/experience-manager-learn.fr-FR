@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment le partage de lien d’AEM Assets permet aux utilisateurs et aux utilisatrices de partager des ressources avec des parties prenantes internes et externes tout en réduisant le risque de partage de ressources ou d’informations incorrectes.
 
->[!VIDEO](https://video.tv.adobe.com/v/341025?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345006?quality=12&learn=on&captions=fre_fr)

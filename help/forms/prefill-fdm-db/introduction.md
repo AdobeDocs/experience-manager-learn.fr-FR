@@ -29,7 +29,7 @@ Vous apprendrez à utiliser l’attribut de requête du modèle de données de f
 * utiliser l’attribut de requête du modèle de données de formulaire.
 
 La vidéo suivante vous donne une vue d’ensemble du cours.
->[!VIDEO](https://video.tv.adobe.com/v/36387?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409944?quality=12&learn=on&captions=fre_fr)
 
 ## Conditions préalables
 

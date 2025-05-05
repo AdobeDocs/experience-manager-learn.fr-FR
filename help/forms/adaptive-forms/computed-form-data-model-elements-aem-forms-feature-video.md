@@ -28,8 +28,8 @@ La capture d’écran suivante montre les éléments calculés StateaandZip et m
 
 ## Créer l’élément calculé monthlySalary
 
->[!VIDEO](https://video.tv.adobe.com/v/23855?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40173?quality=12&learn=on&captions=fre_fr)
 
 ### Créer l’élément calculé StateandZip
 
->[!VIDEO](https://video.tv.adobe.com/v/23856?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40176?quality=12&learn=on&captions=fre_fr)

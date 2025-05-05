@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Les schémas de dossiers de métadonnées permettent aux utilisateurs et utilisatrices de gérer et de revoir les métadonnées associées aux dossiers de ressources eux-mêmes, plutôt que directement sur les ressources.
 
->[!VIDEO](https://video.tv.adobe.com/v/34071?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37292?quality=12&learn=on&captions=fre_fr)

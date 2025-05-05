@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez la relation entre une Live Copy et son plan directeur dans AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/36676?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41571?quality=12&learn=on&captions=fre_fr)

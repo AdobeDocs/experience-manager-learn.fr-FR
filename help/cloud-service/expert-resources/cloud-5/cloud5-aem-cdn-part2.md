@@ -20,7 +20,7 @@ ht-degree: 87%
 
 Voici la deuxième partie de l’utilisation du réseau CDN AEM et pour explorer en détail différentes options.
 
->[!VIDEO](https://video.tv.adobe.com/v/340994?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448410?quality=12&learn=on&captions=fre_fr)
 
 ## Contenu présenté dans la deuxième partie de cette série
 

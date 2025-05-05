@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Vidéo courte sur le mode Conception dans AEM Forms Designer
 
->[!VIDEO](https://video.tv.adobe.com/v/3427615/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436819/?learn=on&captions=fre_fr)

@@ -23,4 +23,4 @@ ht-degree: 100%
 
 La gestion de l’accès des utilisateurs et utilisatrices aux [dossiers de ressources de base](./baseline-folders.md) est un aspect essentiel de la gouvernance et garantit que les processus sont correctement pris en charge.
 
->[!VIDEO](https://video.tv.adobe.com/v/37696?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327049?quality=12&learn=on&captions=fre_fr)

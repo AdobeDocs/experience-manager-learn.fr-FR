@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez l’expérience de navigation de Cloud Acceleration Manager pour Experience Manager as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336698?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446724?quality=12&learn=on&captions=fre_fr)

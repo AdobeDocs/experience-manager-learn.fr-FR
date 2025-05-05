@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment naviguer dans les onglets disponibles et personnaliser les options de configuration pour répondre aux besoins de votre entreprise. Cette vidéo aide les administrateurs et administratrices à comprendre les différents paramètres. Elle fournit des instructions de haut niveau sur leur personnalisation pour des performances optimales et pour garantir l’alignement sur les objectifs de l’entreprise.
 
->[!VIDEO](https://video.tv.adobe.com/v/3439311/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3439313/?learn=on&enablevpops&captions=fre_fr)

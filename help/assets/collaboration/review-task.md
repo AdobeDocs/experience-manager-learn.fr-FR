@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment la tâche de révision d’AEM Assets facilite les processus de révision et d’approbation les plus courants.
 
->[!VIDEO](https://video.tv.adobe.com/v/32050?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36737?quality=12&learn=on&captions=fre_fr)

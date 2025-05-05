@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour résoudre les problèmes de dépendance avec les bibliothèques C++ dans Designer.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335576?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417621?quality=12&learn=on&captions=fre_fr)

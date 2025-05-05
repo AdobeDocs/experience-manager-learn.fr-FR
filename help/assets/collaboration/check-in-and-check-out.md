@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment utiliser les fonctions d’archivage et d’extraction d’AEM pour faciliter la collaboration entre plusieurs utilisateurs et utilisatrices sur les ressources.
 
->[!VIDEO](https://video.tv.adobe.com/v/32048?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36894?quality=12&learn=on&captions=fre_fr)

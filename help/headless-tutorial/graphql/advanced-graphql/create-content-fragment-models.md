@@ -43,7 +43,7 @@ Il s’agit d’un tutoriel avancé. Avant de passer à ce chapitre, veuillez vo
 
 La vidéo suivante présente brièvement les modèles de fragment de contenu et la manière dont ils sont utilisés dans ce tutoriel.
 
->[!VIDEO](https://video.tv.adobe.com/v/340037?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449521?quality=12&learn=on&captions=fre_fr)
 
 ## Créer des modèles de fragment de contenu {#create-models}
 

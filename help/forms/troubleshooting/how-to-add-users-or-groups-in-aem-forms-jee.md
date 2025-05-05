@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit le processus d’ajout d’utilisateurs et d’utilisatrices et de groupes dans User Management.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335485?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417656?quality=12&learn=on&captions=fre_fr)

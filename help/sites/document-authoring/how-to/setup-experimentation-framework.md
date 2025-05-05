@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment configurer le cadre d’expérimentation dans la création de documents Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429062/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438929/?learn=on&captions=fre_fr)

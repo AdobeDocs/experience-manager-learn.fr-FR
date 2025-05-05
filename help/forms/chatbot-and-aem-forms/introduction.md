@@ -26,7 +26,7 @@ Pour les besoins de ce tutoriel, nous allons fusionner les données capturées d
 
 La vidéo suivante présente le cas d’utilisation.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428432?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441794?learn=on&captions=fre_fr)
 
 ## Prérequis
 

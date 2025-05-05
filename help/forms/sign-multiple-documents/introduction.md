@@ -22,7 +22,7 @@ ht-degree: 100%
 Que vous effectuiez une demande de prêt immobilier ou que vous ouvriez un nouveau compte bancaire, vous devez remplir et signer plusieurs formulaires. L’intégration entre AEM Forms et Acrobat Sign facilite le remplissage et la signature de plusieurs formulaires.
 La vidéo suivante vous guide tout au long des cas d’utilisation de signature de plusieurs formulaires.
 
->[!VIDEO](https://video.tv.adobe.com/v/330165?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444970?quality=12&learn=on&captions=fre_fr)
 
 ## Conditions préalables
 

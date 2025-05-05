@@ -38,7 +38,7 @@ Consultez la section [Documentation](https://experienceleague.adobe.com/docs/exp
             <a href="./basics/content-fragments-console.md" title="Vue d’ensemble de la console"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3409492?format=jpeg"
+                src="https://video.tv.adobe.com/v/3449333?format=jpeg&captions=fre_fr"
                 alt="Vue d’ensemble de la console">
             </a>
           </figure>
@@ -102,7 +102,7 @@ Consultez la section [Documentation](https://experienceleague.adobe.com/docs/exp
             <a href="./search/fast-filtering.md" title="Filtrage rapide"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419310?format=jpeg" alt="Filtrage rapide">
+                src="https://video.tv.adobe.com/v/3436698?format=jpeg&captions=fre_fr" alt="Filtrage rapide">
             </a>
           </figure>
         </div>
@@ -163,7 +163,7 @@ Consultez la section [Documentation](https://experienceleague.adobe.com/docs/exp
           <figure class="image is-16by9">
             <a href="./editor/non-asset-content-references.md" title="Références de contenu autre que des ressources" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419313?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436764?format=jpeg&captions=fre_fr"
                 alt="Références au contenu autres que des ressources">
             </a>
           </figure>
@@ -195,7 +195,7 @@ Consultez la section [Documentation](https://experienceleague.adobe.com/docs/exp
             <a href="./editor/rte-variant-compare.md" title="Comparaison des variantes de l’éditeur de texte enrichi"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419314?format=jpeg" alt="Comparaison des variantes de l’éditeur de texte enrichi">
+                src="https://video.tv.adobe.com/v/3437548?format=jpeg&captions=fre_fr" alt="Comparaison des variantes de l’éditeur de texte enrichi">
             </a>
           </figure>
         </div>
@@ -226,7 +226,7 @@ Consultez la section [Documentation](https://experienceleague.adobe.com/docs/exp
             <a href="./editor/language-copies.md" title="Copies de langue"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419311?format=jpeg"
+                src="https://video.tv.adobe.com/v/3436958?format=jpeg&captions=fre_fr"
                 alt="Copies de langue">
             </a>
           </figure>
@@ -258,7 +258,7 @@ Consultez la section [Documentation](https://experienceleague.adobe.com/docs/exp
             <a href="./search/references.md" title="Références"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3420950?format=jpeg"
+                src="https://video.tv.adobe.com/v/3423637?format=jpeg&captions=fre_fr"
                 alt="Références">
             </a>
           </figure>

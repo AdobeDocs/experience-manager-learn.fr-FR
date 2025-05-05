@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Initialisez une extension d’application du Créateur d’applications de l’interface utilisateur AEM qui définit l’emplacement d’affichage de l’extension et le travail qu’elle effectue.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412876?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447078?quality=12&learn=on&captions=fre_fr)
 
 >[!IMPORTANT]
 >

@@ -533,7 +533,7 @@ Vous trouverez un exemple complet d’écriture d’un générateur de rendu de 
 
 ## Exemple de bout en bout
 
->[!VIDEO](https://video.tv.adobe.com/v/342105?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449702?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

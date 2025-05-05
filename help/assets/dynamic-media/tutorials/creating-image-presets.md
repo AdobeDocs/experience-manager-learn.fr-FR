@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Cette vidéo décrit les étapes à suivre pour créer des paramètres d’image prédéfinis dans Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335459?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418240?quality=12&learn=on&captions=fre_fr)

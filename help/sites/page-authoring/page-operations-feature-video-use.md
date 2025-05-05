@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Découvrez comment effectuer des opérations de gestion de base sur une page Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/32147?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37199?quality=12&learn=on&captions=fre_fr)
 
 
 ## Ressources supplémentaires {#additional-resources}

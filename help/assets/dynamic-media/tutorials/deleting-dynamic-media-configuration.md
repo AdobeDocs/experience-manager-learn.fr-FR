@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Cette vidéo décrit les étapes à suivre pour supprimer une configuration AEM Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335363?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418264?quality=12&learn=on&captions=fre_fr)

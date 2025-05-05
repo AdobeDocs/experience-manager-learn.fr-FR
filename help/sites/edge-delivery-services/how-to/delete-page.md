@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment supprimer une page dans Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425973/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438092/?learn=on&captions=fre_fr)

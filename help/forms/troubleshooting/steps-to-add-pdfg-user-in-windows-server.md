@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes supplémentaires à suivre pour ajouter un utilisateur ou une utilisatrice de PDFG dans AEM Forms sous Windows 2016.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335479?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417205?quality=12&learn=on&captions=fre_fr)

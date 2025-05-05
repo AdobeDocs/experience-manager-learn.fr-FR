@@ -21,7 +21,7 @@ ht-degree: 88%
 
 Amol Anand nous présente les intégrations avec le créateur d’applications Adobe et nous explique où et quand les utiliser.
 
->[!VIDEO](https://video.tv.adobe.com/v/342375?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448752?quality=12&learn=on&captions=fre_fr)
 
 ## Contenu couvert par cette vidéo
 

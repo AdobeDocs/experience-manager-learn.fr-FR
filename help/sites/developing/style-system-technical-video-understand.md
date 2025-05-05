@@ -23,7 +23,7 @@ Dans cette vidéo, nous allons examiner l’anatomie du code CSS (ou [!DNL LESS]
 
 ## Comprendre comment coder pour le système de style {#understanding-how-to-code-for-the-style-system}
 
->[!VIDEO](https://video.tv.adobe.com/v/21538?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40161?quality=12&learn=on&captions=fre_fr)
 
 Le package AEM fourni (**technical-review.sites.style-system-1.0.0.zip**) installe l’exemple de style du titre, les exemples de stratégies pour les composants de conteneur de disposition We.Retail et de titre, ainsi qu’un exemple de page.
 

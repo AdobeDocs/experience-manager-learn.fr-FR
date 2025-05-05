@@ -19,4 +19,4 @@ ht-degree: 100%
 
 La vidéo suivante présente les concepts de base de la gestion multisite dans AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36710?quality=12&learn=on&captions=fre_fr)

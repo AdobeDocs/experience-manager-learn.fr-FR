@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Familiarisez-vous avec les consoles web clés d’AEM Assets utilisées pour la collaboration.
 
->[!VIDEO](https://video.tv.adobe.com/v/32051?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36709?quality=12&learn=on&captions=fre_fr)

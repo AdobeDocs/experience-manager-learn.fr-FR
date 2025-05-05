@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes supplémentaires à suivre pour vérifier les autorisations de dossier sous Windows Server 2016.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335519?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417210?quality=12&learn=on&captions=fre_fr)

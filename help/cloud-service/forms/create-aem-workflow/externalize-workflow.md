@@ -23,4 +23,4 @@ ht-degree: 100%
 
 AEM Forms CS dispose d’une nouvelle fonctionnalité pour stocker vos données de workflow telles que des variables, des pièces jointes, etc., dans un compte de stockage externe. Cette vidéo vous explique comment stocker vos données de processus dans un espace de stockage Azure.
 
->[!VIDEO](https://video.tv.adobe.com/v/339610?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342964?quality=12&learn=on&captions=fre_fr)

@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment configurer l’authentification de création via le Sidekick AEM dans la création de documents avec Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429594/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438180/?learn=on&captions=fre_fr)

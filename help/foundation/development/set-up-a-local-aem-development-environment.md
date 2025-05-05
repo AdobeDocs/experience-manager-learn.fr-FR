@@ -161,7 +161,7 @@ L’**[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** est l’un des IDE le
 1. Téléchargez et installez [!DNL IntelliJ IDEA] : [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download).
 1. Installez [!DNL Repo] (outil de ligne de commande) : [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation).
 
->[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39739?quality=12&learn=on&captions=fre_fr)
 
 * 00:00 - Import du projet Maven
 * 05:47 - Création et déploiement du code source avec Maven

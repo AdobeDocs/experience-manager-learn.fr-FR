@@ -22,7 +22,7 @@ Chaque formulaire adaptatif est basé sur un modèle de formulaire adaptatif. Le
 Le modèle créé ici est désormais la base de notre formulaire adaptatif.
 La vidéo suivante présente le processus de base pour la création d’un modèle de formulaire adaptatif.
 
->[!VIDEO](https://video.tv.adobe.com/v/37324?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326686?quality=12&learn=on&captions=fre_fr)
 
 Pour plus d’informations, reportez-vous à la [documentation sur les modèles de formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=fr).
 

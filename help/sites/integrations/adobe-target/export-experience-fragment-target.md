@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Découvrez comment exporter des fragments d’expérience AEM en tant qu’offres Adobe Target.
 
->[!VIDEO](https://video.tv.adobe.com/v/41245?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328970?quality=12&learn=on&captions=fre_fr)
 
 ## Étapes suivantes
 

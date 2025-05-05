@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Cette section présente brièvement le nettoyage des révisions en ligne, qui atténue la nécessité de procéder à des nettoyages fréquents des révisions hors ligne.
 
->[!VIDEO](https://video.tv.adobe.com/v/17004?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424583?quality=12&learn=on&captions=fre_fr)
 
 ## Documents annexes
 

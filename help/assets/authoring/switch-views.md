@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment basculer efficacement entre les [vues Ressources et Administration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/overview.html?lang=fr#persona-based-experiences) dans AEM Assets as a Cloud Service afin de garantir une gestion des ressources fluide.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426806/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439029/?learn=on&captions=fre_fr)

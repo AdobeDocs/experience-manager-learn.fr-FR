@@ -22,4 +22,4 @@ ht-degree: 100%
 
 La configuration des données par lots vous permet de configurer une instance spécifique de stockage Blob pour les API Batch. Elle vous permet de spécifier les emplacements d’entrée et de sortie dans le stockage Azure Blob de Microsoft détenu par le client ou la cliente.
 
->[!VIDEO](https://video.tv.adobe.com/v/340128?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343713?quality=12&learn=on&captions=fre_fr)

@@ -22,4 +22,4 @@ ht-degree: 100%
 
 La vidéo suivante décrit les étapes à suivre pour créer et configurer un formulaire adaptatif afin de créer et d’afficher des objets Lead.
 
->[!VIDEO](https://video.tv.adobe.com/v/340791?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449310?quality=12&learn=on&captions=fre_fr)

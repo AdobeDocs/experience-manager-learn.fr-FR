@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment charger des ressources, appliquer des balises et comprendre le workflow d’approbation dans Adobe Experience Manager Assets Content Hub.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3450284/?learn=on&captions=fre_fr)

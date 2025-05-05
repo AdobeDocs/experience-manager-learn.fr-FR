@@ -21,7 +21,7 @@ ht-degree: 87%
 
 Une approche du vaste sujet de la recherche et de l’indexation. Il s’agit d’un sujet complexe et nous espérons vous aider à l’utiliser de manière plus efficace.
 
->[!VIDEO](https://video.tv.adobe.com/v/342374?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448108?quality=12&learn=on&captions=fre_fr)
 
 ## Contenu couvert par cette vidéo
 

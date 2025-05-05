@@ -24,7 +24,7 @@ Une fois que vous avez converti le formulaire PDF en formulaire adaptatif, vous 
 
 Regardez la vidéo suivante pour connaître les étapes nécessaires à la configuration du formulaire pour une expérience de signature sur place.
 
->[!VIDEO](https://video.tv.adobe.com/v/39574?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327703?quality=12&learn=on&captions=fre_fr)
 
 ## Félicitations.
 

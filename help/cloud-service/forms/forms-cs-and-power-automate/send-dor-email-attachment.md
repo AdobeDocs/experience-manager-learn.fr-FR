@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Extrayez un document d’enregistrement et envoyez-le en tant que pièce jointe d’un e-mail dans le workflow Power Automate.
 La vidéo suivante explique les étapes nécessaires pour extraire un document d’enregistrement des données envoyées.
->[!VIDEO](https://video.tv.adobe.com/v/346731?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413034?quality=12&learn=on&captions=fre_fr)

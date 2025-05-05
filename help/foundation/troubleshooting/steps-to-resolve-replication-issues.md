@@ -22,4 +22,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour résoudre les problèmes de réplication dans AEM.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335471?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418324?quality=12&learn=on&captions=fre_fr)

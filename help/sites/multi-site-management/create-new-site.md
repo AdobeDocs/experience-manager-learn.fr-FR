@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment créer un site national à partir de copies de langue existantes à l’aide de l’assistant Créer un site.
 
->[!VIDEO](https://video.tv.adobe.com/v/36684?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41538?quality=12&learn=on&captions=fre_fr)

@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit le processus de résolution des problèmes de conversion PDFG pour plusieurs utilisateurs et utilisatrices dans une configuration Windows.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335550?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417225?quality=12&learn=on&captions=fre_fr)

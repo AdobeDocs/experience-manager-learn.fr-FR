@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment effectuer une navigation réactive dans la création de documents.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425707/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438165/?learn=on&captions=fre_fr)

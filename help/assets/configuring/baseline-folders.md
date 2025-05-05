@@ -23,4 +23,4 @@ ht-degree: 100%
 
 La définition de dossiers de référence dans AEM Assets permet d’établir une architecture de contenu solide et de poser les bases de la gestion des ressources numériques.
 
->[!VIDEO](https://video.tv.adobe.com/v/33496?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37328?quality=12&learn=on&captions=fre_fr)

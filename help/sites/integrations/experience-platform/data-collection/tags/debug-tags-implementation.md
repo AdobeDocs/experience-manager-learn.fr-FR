@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Cette section présente les outils et techniques courants utilisés pour déboguer une implémentation de balises. Découvrez comment utiliser la console de développement du navigateur et l’extension Experience Platform Debugger pour identifier et résoudre les problèmes principaux liés à une implémentation des balises.
 
->[!VIDEO](https://video.tv.adobe.com/v/38567?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327403?quality=12&learn=on&captions=fre_fr)
 
 ## Débogage côté client via un objet satellite
 

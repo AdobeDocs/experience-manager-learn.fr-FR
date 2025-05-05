@@ -24,7 +24,7 @@ ht-degree: 100%
 
 La fonction de distorsion du temps d’Adobe Experience Manager Sites permet aux auteurs et autrices de consulter rapidement l’état d’une page à un moment donné dans le passé.
 
->[!VIDEO](https://video.tv.adobe.com/v/17453?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410305?quality=12&learn=on&captions=fre_fr)
 
 ## Plus de ressources {#more-resources}
 

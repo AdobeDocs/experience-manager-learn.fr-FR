@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Cette vidéo est consacrée à la gestion des couleurs de Dynamic Media et à ses fonctionnalités de prévisualisation de la correction des couleurs pour AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/16792?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37966?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

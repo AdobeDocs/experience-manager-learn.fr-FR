@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Utilisez les bonnes pratiques et les exemples pour découvrir comment le Dispatcher fonctionne avec AEM as a Cloud Service et Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/330538?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345843?quality=12&learn=on&captions=fre_fr)

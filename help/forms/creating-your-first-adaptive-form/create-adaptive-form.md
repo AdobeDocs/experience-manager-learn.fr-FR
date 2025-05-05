@@ -22,7 +22,7 @@ Nous allons créer un formulaire adaptatif à partir du modèle créé dans la l
 
 **Créer votre premier formulaire adaptatif**
 
->[!VIDEO](https://video.tv.adobe.com/v/22173?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327841?quality=12&learn=on&captions=fre_fr)
 
 ## Étapes suivantes
 

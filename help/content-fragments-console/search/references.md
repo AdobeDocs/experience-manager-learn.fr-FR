@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment l’éditeur et la console de fragments de contenu d’AEM facilitent la compréhension et la gestion du contenu référencé.
 
->[!VIDEO](https://video.tv.adobe.com/v/3420950/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423637/?learn=on&captions=fre_fr)

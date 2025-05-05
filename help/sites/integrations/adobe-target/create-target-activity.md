@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Découvrez comment créer et tester une activité Adobe Target à l’aide d’offres de fragments d’expérience AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/41246?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328962?quality=12&learn=on&captions=fre_fr)
 
 ## Conditions préalables
 

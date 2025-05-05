@@ -29,11 +29,11 @@ Pour créer des graphiques à séries multiples dans AEM Forms, vous devez cré
 
 ## Créer un modèle de données de formulaire pour les graphiques à séries multiples
 
->[!VIDEO](https://video.tv.adobe.com/v/26352?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33113?quality=12&learn=on&captions=fre_fr)
 
 ### Configurer des graphiques à séries linéaires
 
->[!VIDEO](https://video.tv.adobe.com/v/26353?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33116?quality=12&learn=on&captions=fre_fr)
 
 Pour tester cela sur votre système, veuillez procéder comme suit :
 

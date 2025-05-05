@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Cette vidéo décrit le processus d’utilisation des composants principaux activés pour Dynamic Media sur une page web AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/335461?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417722?quality=12&learn=on&captions=fre_fr)

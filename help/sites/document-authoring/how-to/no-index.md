@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment empêcher l’indexation par les moteurs de recherche des pages web créées à l’aide de la création de document AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425726/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438114/?learn=on&captions=fre_fr)

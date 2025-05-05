@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Vidéo courte décrivant la liaison d’un formulaire AEM à une source de données XML
 
->[!VIDEO](https://video.tv.adobe.com/v/3427625/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439828/?learn=on&captions=fre_fr)

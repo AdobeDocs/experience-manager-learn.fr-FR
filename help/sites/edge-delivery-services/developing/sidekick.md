@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Utilisez le sidekick AEM dans Edge Delivery Services pour mettre le contenu en ligne.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425715/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441284/?learn=on&captions=fre_fr)

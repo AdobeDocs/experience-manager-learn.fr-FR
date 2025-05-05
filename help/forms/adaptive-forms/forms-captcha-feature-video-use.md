@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Ajoutez et utilisez un Captcha avec les formulaires adaptatifs AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/18336?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39203?quality=12&learn=on&captions=fre_fr)
 
 *Cette vidéo décrit le processus d’ajout d’un Captcha à un formulaire adaptatif AEM à l’aide du service intégré Captcha d’AEM ainsi que du service reCaptcha de Google.*
 

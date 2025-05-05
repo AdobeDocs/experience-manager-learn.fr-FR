@@ -23,4 +23,4 @@ ht-degree: 100%
 Un compte de stockage Azure contient tous vos objets de données de stockage Azure, y compris les blobs, les partages de fichiers, les files d’attente, les tableaux et les disques. Le compte de stockage fournit un espace de noms unique pour vos données de stockage Azure, accessible de n’importe où dans le monde via HTTP ou HTTPS. Les données de votre compte de stockage sont durables, hautement disponibles, sécurisées et massivement évolutives.
 La vidéo suivante décrit les étapes de configuration de votre compte de stockage Azure.
 
->[!VIDEO](https://video.tv.adobe.com/v/340127?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343720?quality=12&learn=on&captions=fre_fr)

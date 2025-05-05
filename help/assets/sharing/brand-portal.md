@@ -29,7 +29,7 @@ La version de septembre 2019 de Brand Portal introduit l’approvisionnement d
 
 La fonctionnalité d’approvisionnement des ressources de Brand Portal permet de collecter des ressources d’équipes et d’agences tierces et de les synchroniser en toute transparence sur l’instance de création d’Experience Manager à des fins de révision et d’utilisation.
 
->[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33200?quality=12&learn=on&captions=fre_fr)
 
 *L’instance de création Experience Manager 6.5 SP2 (6.5.2) ou version ultérieure est requise pour utiliser l’approvisionnement des ressources*.
 
@@ -37,7 +37,7 @@ Consultez la section [Activer l’instance de création Experience Manager pour
 
 ## Fonctionnalités et améliorations de la version de février 2019 de Brand Portal{#brand-portal-features-and-enhancements-644}
 
->[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40329?quality=12&learn=on&captions=fre_fr)
 
 La version de février 2019 de Brand Portal apporte des améliorations à la recherche de texte et aux principales demandes des clientes et clients.
 
@@ -165,7 +165,7 @@ Brand Portal utilise l’interface Adobe I/O [https://legacy-oauth.cloud.adobe
 
 Les nouvelles fonctionnalités cherchent à aligner Brand Portal sur AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40329?quality=12&learn=on&captions=fre_fr)
 
 ### Améliorations de la navigation
 

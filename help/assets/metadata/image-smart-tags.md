@@ -23,14 +23,14 @@ ht-degree: 100%
 
 Les balises intelligentes d’AEM Assets pour les images améliorent la recherche d’AEM Assets en ajoutant automatiquement des balises de métadonnées dérivées aux ressources d’image, ce qui améliore l’expérience de création en facilitant et en accélérant la recherche de la bonne image.
 
->[!VIDEO](https://video.tv.adobe.com/v/17019?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444056?quality=12&learn=on&captions=fre_fr)
 
 ## Configuration pour AEM 6.x{#set-up}
 
 >[!NOTE]
 > Les balises intelligentes pour les images sont fournies automatiquement pour AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/17023?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444167?quality=12&learn=on&captions=fre_fr)
 
 Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respecter les conditions suivantes pour créer une intégration sur Adobe I/O :
 

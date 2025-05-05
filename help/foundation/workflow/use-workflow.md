@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Les processus AEM permettent de collaborer, de gérer et de traiter du contenu dans AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/27848?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410287?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

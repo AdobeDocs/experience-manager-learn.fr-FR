@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Capturez les ressources du candidat ou de la candidate à l’aide d’un panneau répétable à la disposition en accordéon.
 
->[!VIDEO](https://video.tv.adobe.com/v/336473?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445180?quality=12&learn=on&captions=fre_fr)

@@ -27,7 +27,7 @@ Découvrez comment intégrer les balises dans Adobe Experience Platform avec A
 
 Balises représente la nouvelle génération de technologie de gestion des balises d’Adobe Experience Platform. Balises constitue le moyen le plus simple de déployer Adobe Analytics, Target, Audience Manager et de nombreuses autres solutions. Découvrez Balises et l’intégration recommandée avec Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3417061?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445202?quality=12&learn=on&captions=fre_fr)
 
 ## Conditions préalables
 

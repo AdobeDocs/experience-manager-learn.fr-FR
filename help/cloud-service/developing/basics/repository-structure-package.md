@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Explorez le [package de structure de référentiel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/repository-structure-package.html?lang=fr) d’une application AEM, découvrez son importance et comment le définir de manière optimale.
 
->[!VIDEO](https://video.tv.adobe.com/v/330550?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345916?quality=12&learn=on&captions=fre_fr)

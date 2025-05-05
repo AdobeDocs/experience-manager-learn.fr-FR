@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Créer un modèle de données de formulaire basé sur la source de données configurée à l’étape précédente
 
->[!VIDEO](https://video.tv.adobe.com/v/331756?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411544?quality=12&learn=on&captions=fre_fr)

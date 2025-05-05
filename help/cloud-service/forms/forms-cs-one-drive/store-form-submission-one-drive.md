@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Stockez les données des formulaires adaptatifs dans Microsoft OneDrive.
 
->[!VIDEO](https://video.tv.adobe.com/v/3415792/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431097/?quality=12&learn=on&captions=fre_fr)

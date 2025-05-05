@@ -23,7 +23,7 @@ Une liste déroulante en cascade est une série de contrôles DropDownList dépe
 
 ## Démonstration du cas d’utilisation
 
->[!VIDEO](https://video.tv.adobe.com/v/340344?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437308?quality=12&learn=on&captions=fre_fr)
 
 Dans ce tutoriel, j’ai utilisé l’[API REST Geonames](https://www.geonames.org/export/web-services.html) pour démontrer cette fonctionnalité.
 Un certain nombre d’organisations proposent ce type de service. Tant que vous disposez d’API REST bien documentées, vous pouvez facilement intégrer AEM Forms à l’aide de la fonctionnalité d’intégration des données.

@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez la prise en charge des ressources 3D dans AEM Assets as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3420690/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423673/?learn=on&captions=fre_fr)

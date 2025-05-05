@@ -24,7 +24,7 @@ Vous devez créer une application d’API sur votre instance Acrobat Sign pour 
 
 La vidéo suivante explique les étapes nécessaires à la création d’une application d’API Acrobat Sign.
 
->[!VIDEO](https://video.tv.adobe.com/v/38178?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327833?quality=12&learn=on&captions=fre_fr)
 
 ## Étapes suivantes
 

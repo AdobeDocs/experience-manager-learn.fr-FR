@@ -31,7 +31,7 @@ Chaque saison varie en longueur et est diffusée selon un planning fixe. Les suj
     <tr>
         <td>
             <a href="./season-3/cloud5-3rd-party-search.md">
-                <img alt="Recherche tierce" src="https://video.tv.adobe.com/v/3427040?format=jpeg"/>
+                <img alt="Recherche tierce" src="https://video.tv.adobe.com/v/3452598?format=jpeg&captions=fre_fr"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-3rd-party-search.md">
@@ -45,7 +45,7 @@ Découvrez comment la recherche tierce peut être intégrée au mieux à Edge D
         </td>   
         <td>
             <a href="./season-3/cloud5-edge-workers.md">
-                <img alt="Workers Edge" src="https://video.tv.adobe.com/v/3427589?format=jpeg"/>
+                <img alt="Workers Edge" src="https://video.tv.adobe.com/v/3448118?format=jpeg&captions=fre_fr"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-edge-workers.md">
@@ -59,7 +59,7 @@ Découvrez l’importance des workers Edge avec Edge Delivery Services.
         </td>   
         <td>
             <a href="./season-3/cloud5-publish-events.md">
-                <img alt="Publier et annuler la publication d’événements dans Edge Delivery Services" src="https://video.tv.adobe.com/v/3427681?format=jpeg"/>
+                <img alt="Publier et annuler la publication d’événements dans Edge Delivery Services" src="https://video.tv.adobe.com/v/3446658?format=jpeg&captions=fre_fr"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-publish-events.md">
@@ -75,7 +75,7 @@ Découvrez les événements déclenchés lors de la publication et de l’annula
     <tr>
         <td>
             <a href="./season-3/cloud5-query-indexes.md">
-                <img alt="Index de requête et formules Excel dans Edge Delivery Services" src="https://video.tv.adobe.com/v/3427787?format=jpeg"/>
+                <img alt="Index de requête et formules Excel dans Edge Delivery Services" src="https://video.tv.adobe.com/v/3453765?format=jpeg&captions=fre_fr"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-query-indexes.md">
@@ -89,7 +89,7 @@ Découvrez les index de requête et comment écrire des formules Excel pour mani
         </td>  
         <td>
             <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
-                <img alt="Utiliser votre propre réseau de diffusion de contenu Cloudflare" src="https://video.tv.adobe.com/v/3428100?format=jpeg"/>
+                <img alt="Utiliser votre propre réseau de diffusion de contenu Cloudflare" src="https://video.tv.adobe.com/v/3452538?format=jpeg&captions=fre_fr"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-byo-cloudflare-cdn.md">
@@ -103,7 +103,7 @@ Découvrez les index de requête et comment écrire des formules Excel pour mani
         </td>           
         <td>
             <a href="./season-3/cloud5-integrate-assets.md">
-                <img alt="Intégrer AEM Assets à la création de documents" src="https://video.tv.adobe.com/v/3428302?format=jpeg"/>
+                <img alt="Intégrer AEM Assets à la création de documents" src="https://video.tv.adobe.com/v/3448942?format=jpeg&captions=fre_fr"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-integrate-assets.md">
@@ -119,7 +119,7 @@ Découvrez comment intégrer AEM Assets à la création de documents.
     <tr>
         <td>
             <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">
-                <img alt="IA générative dans AEM Sites" src="https://video.tv.adobe.com/v/3428436?format=jpeg"/>
+                <img alt="IA générative dans AEM Sites" src="https://video.tv.adobe.com/v/3451117?format=jpeg&captions=fre_fr"/>
             </a>
             <div>
                 <a href="./season-3/cloud5-generative-ai-for-aem-sites.md">

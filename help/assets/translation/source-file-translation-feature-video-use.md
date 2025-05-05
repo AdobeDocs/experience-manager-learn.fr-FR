@@ -25,7 +25,7 @@ Adobe Experience Manager (AEM) Assets vous permet d’identifier les ressource
 
 ## Gestion de fichiers source de ressources de sites multiples {#multisite-asset-source-file-management}
 
->[!VIDEO](https://video.tv.adobe.com/v/18331?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38548?quality=12&learn=on&captions=fre_fr)
 
 Les ressources associées aident les personnes à mieux gérer les ressources, à les relier à des caractéristiques et des propriétés communes, et à rationaliser les workflows :
 

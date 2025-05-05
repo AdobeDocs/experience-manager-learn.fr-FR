@@ -28,5 +28,5 @@ Dans cette vidéo, vous allez :
 + Apprendre à interroger une liste de fragments de contenu et un seul fragment de contenu
 + Apprendre à filtrer et à demander des attributs de données spécifiques
 
->[!VIDEO](https://video.tv.adobe.com/v/332860?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412892?quality=12&learn=on&captions=fre_fr)
 

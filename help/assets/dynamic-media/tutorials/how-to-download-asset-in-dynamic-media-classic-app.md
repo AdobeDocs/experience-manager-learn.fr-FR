@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Cette vidéo décrit les étapes à suivre pour télécharger un fichier dans l’application Dynamic Media Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/335458?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417832?quality=12&learn=on&captions=fre_fr)

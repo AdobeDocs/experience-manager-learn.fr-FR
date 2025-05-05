@@ -23,7 +23,7 @@ ht-degree: 100%
 
 La vidéo suivante décrit les différentes étapes nécessaires à la configuration d’un formulaire adaptatif avec personne signataire unique.
 
->[!VIDEO](https://video.tv.adobe.com/v/39475?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327729?quality=12&learn=on&captions=fre_fr)
 
 Les ressources liées à cette vidéo peuvent être téléchargées à partir du lien suivant :
 

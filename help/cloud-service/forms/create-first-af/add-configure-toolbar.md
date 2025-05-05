@@ -23,4 +23,4 @@ ht-degree: 100%
 
 La barre d’outils est généralement ajoutée au niveau du conteneur de formulaires. La barre d’outils peut contenir des boutons pour accéder aux panneaux suivant et précédent de votre formulaire, envoyer le formulaire, enregistrer les données du formulaire, etc.
 
->[!VIDEO](https://video.tv.adobe.com/v/332236?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424958?quality=12&learn=on&captions=fre_fr)

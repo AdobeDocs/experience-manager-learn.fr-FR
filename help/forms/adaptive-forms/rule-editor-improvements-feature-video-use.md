@@ -22,7 +22,7 @@ ht-degree: 100%
 
 L’éditeur de règles permet aux utilisateurs et aux utilisatrices d’ajouter une logique aux formulaires adaptatifs AEM. AEM 6.3 apporte de nombreuses améliorations à l’éditeur de règles. Les utilisateurs et utilisatrices techniques et non techniques peuvent désormais ajouter de l’intelligence de manière plus rapide et facile.
 
->[!VIDEO](https://video.tv.adobe.com/v/19653?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39208?quality=12&learn=on&captions=fre_fr)
 
 **Voici quelques-unes des améliorations apportées à l’éditeur de règles :**
 

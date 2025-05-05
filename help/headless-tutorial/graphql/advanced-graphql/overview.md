@@ -45,7 +45,7 @@ Ce tutoriel couvre les sujets suivants :
 
 La vidéo suivante présente un aperçu général des concepts abordés dans ce tutoriel. Le tutoriel comprend la définition de modèles de fragment de contenu avec des types de données plus avancés, l’imbrication de fragments de contenu et la conservation de requêtes GraphQL dans AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/340035?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446129?quality=12&learn=on&captions=fre_fr)
 
 >[!CAUTION]
 >

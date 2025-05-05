@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment gérer l’héritage entre une Live Copy et son plan directeur au niveau des composants.
 
->[!VIDEO](https://video.tv.adobe.com/v/36678?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41596?quality=12&learn=on&captions=fre_fr)

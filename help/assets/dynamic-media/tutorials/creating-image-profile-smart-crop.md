@@ -20,4 +20,4 @@ ht-degree: 100%
 
 Cette vidéo décrit les étapes pour créer un profil d’image avec recadrage intelligent dans AEM Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335460?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418216?quality=12&learn=on&captions=fre_fr)

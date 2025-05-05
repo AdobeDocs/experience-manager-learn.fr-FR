@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment les champs de contenu de fragment de contenu prennent en charge le référencement de différents types de contenu AEM, tels que les fragments d’expérience et les pages.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419313/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436764/?learn=on&captions=fre_fr)

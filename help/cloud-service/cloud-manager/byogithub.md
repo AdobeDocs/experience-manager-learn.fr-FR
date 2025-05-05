@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment connecter un référentiel GitHub privé à AEM Cloud Manager pour une gestion rationnalisée de la qualité du code et des workflows automatisés. Améliorez votre processus de développement grâce à des contrôles intégrés et une collaboration transparente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429302/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452417/?learn=on&captions=fre_fr)

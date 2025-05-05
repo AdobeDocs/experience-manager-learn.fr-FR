@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Présentation de l’intégration entre Adobe Experience Manager Forms as a Cloud Service et Salesforce.
 
->[!VIDEO](https://video.tv.adobe.com/v/331891?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411574?quality=12&learn=on&captions=fre_fr)

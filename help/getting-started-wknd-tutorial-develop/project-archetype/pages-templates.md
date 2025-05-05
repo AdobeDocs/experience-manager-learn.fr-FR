@@ -76,7 +76,7 @@ Dans cette partie du tutoriel, vous créez un modèle de page d’article qui pe
 
 En règle générale, la planification d’un nouveau site web commence par des maquettes et des conceptions statiques. [Adobe XD](https://helpx.adobe.com/fr/support/xd.html) est un outil de conception qui crée une expérience utilisateur. Examinons ensuite un kit d’interface utilisateur et des maquettes pour planifier la structure du modèle de page d’article.
 
->[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36076?quality=12&learn=on&captions=fre_fr)
 
 **Téléchargez le [fichier de conception d’article WKND](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND-article-design.xd)**.
 
@@ -96,7 +96,7 @@ Il existe trois domaines principaux dans les [Modèles modifiables](https://expe
 
 Créez ensuite un modèle dans AEM qui correspond à la structure des maquettes. Cela se produit dans une instance locale d’AEM. Suivez les étapes de la vidéo ci-dessous :
 
->[!VIDEO](https://video.tv.adobe.com/v/330991?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36069?quality=12&learn=on&captions=fre_fr)
 
 Étapes de haut niveau pour la vidéo ci-dessus :
 
@@ -164,7 +164,7 @@ Une pratique courante lors de la création d’un contenu global, tel qu’un en
 
 L’archétype de projet AEM a généré un en-tête et un pied de page. Ensuite, mettez à jour les fragments d’expérience pour qu’ils correspondent aux maquettes. Suivez les étapes de la vidéo ci-dessous :
 
->[!VIDEO](https://video.tv.adobe.com/v/330992?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447491?quality=12&learn=on&captions=fre_fr)
 
 Étapes de haut niveau pour la vidéo ci-dessus :
 
@@ -210,7 +210,7 @@ L’archétype de projet AEM a généré un en-tête et un pied de page. Ensuite
 
 Créez ensuite une page à l’aide du modèle Page d’article. Créez le contenu de la page pour qu’il corresponde aux maquettes du site. Suivez les étapes de la vidéo ci-dessous :
 
->[!VIDEO](https://video.tv.adobe.com/v/330993?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446444?quality=12&learn=on&captions=fre_fr)
 
 Étapes de haut niveau pour la vidéo ci-dessus :
 

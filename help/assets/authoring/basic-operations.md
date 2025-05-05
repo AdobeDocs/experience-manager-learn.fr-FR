@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez les opérations de base d’AEM Assets, notamment la création de dossiers, ainsi que le chargement, la copie, le déplacement et la suppression de ressources.
 
->[!VIDEO](https://video.tv.adobe.com/v/32044?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37149?quality=12&learn=on&captions=fre_fr)

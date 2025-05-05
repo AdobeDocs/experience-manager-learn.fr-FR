@@ -24,5 +24,5 @@ ht-degree: 100%
 
 Découvrez comment enregistrer les modèles de prompt personnalisés pour générer des variations dans la création de documents Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428317/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437504/?learn=on&captions=fre_fr)
 

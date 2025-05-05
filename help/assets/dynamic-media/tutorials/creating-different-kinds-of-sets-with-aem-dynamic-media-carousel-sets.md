@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Cette vidéo décrit le processus de création d’un ensemble de carrousels avec AEM Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335380?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418228?quality=12&learn=on&captions=fre_fr)

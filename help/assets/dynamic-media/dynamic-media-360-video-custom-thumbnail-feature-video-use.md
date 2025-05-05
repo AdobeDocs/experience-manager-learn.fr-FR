@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Les améliorations apportées à la visionneuse Dynamic Media dans AEM 6.5 incluent la prise en charge du rendu vidéo 360, des visionneuses de médias 360 (video360Social et video360VR) et la possibilité de sélectionner des miniatures vidéo personnalisées.
 
->[!VIDEO](https://video.tv.adobe.com/v/26391?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34473?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

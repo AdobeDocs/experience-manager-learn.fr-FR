@@ -22,7 +22,7 @@ ht-degree: 100%
 
 La couche de données client Adobe introduit une méthode standard pour collecter et stocker des données sur une expérience de visite sur une page web, puis faciliter l’accès à ces données. La couche de données client Adobe est indépendante de la plateforme, mais elle est entièrement intégrée aux composants principaux pour l’utilisation avec AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/41195?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330108?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

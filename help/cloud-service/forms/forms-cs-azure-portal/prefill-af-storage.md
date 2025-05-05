@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment utiliser le service de préremplissage d’AEM Forms pour remplir des formulaires adaptatifs à partir du stockage Azure Blob Storage.
 
->[!VIDEO](https://video.tv.adobe.com/v/335714?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419005?quality=12&learn=on&captions=fre_fr)

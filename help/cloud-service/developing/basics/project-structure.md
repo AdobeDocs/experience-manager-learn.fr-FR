@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez les bonnes pratiques pour structurer un [projet Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr#developing) pour AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/330557?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345888?quality=12&learn=on&captions=fre_fr)

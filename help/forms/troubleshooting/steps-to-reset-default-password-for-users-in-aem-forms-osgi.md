@@ -20,4 +20,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour réinitialiser le mot de passe par défaut pour l’administrateur ou l’administratrice dans AEM Forms OSGi.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335542?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417712?quality=12&learn=on&captions=fre_fr)

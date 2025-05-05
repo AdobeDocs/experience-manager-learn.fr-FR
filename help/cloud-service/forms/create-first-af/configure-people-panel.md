@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Ajoutez le fragment des informations sur le conjoint ou la conjointe au panneau Personnes.
 
->[!VIDEO](https://video.tv.adobe.com/v/332234?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3425101?quality=12&learn=on&captions=fre_fr)

@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez les rendus dans AEM Assets et comment les prévisualiser.
 
->[!VIDEO](https://video.tv.adobe.com/v/32047?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36959?quality=12&learn=on&captions=fre_fr)

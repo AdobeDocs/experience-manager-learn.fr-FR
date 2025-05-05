@@ -26,7 +26,7 @@ L’éditeur de page d’AEM Sites est un outil puissant pour créer et modifie
 
 La vidéo suivante présente certaines des principales fonctionnalités de l’éditeur de page.
 
->[!VIDEO](https://video.tv.adobe.com/v/32011?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37181?quality=12&learn=on&captions=fre_fr)
 
 
 Voir [Documentation AEM pour une vue d’ensemble des fonctionnalités de l’éditeur de page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=fr).

@@ -40,7 +40,7 @@ Pour utiliser le service de conversion automatisée de formulaires, les conditio
 
 * La vidéo explique les étapes nécessaires pour connecter votre instance AEM Forms locale au service de conversion automatisée de formulaires sur Adobe Cloud.
 
->[!VIDEO](https://video.tv.adobe.com/v/39493?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327720?quality=12&learn=on&captions=fre_fr)
 
 ## Étapes suivantes
 

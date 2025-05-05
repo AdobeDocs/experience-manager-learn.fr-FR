@@ -48,7 +48,7 @@ Ce chapitre s’appuie sur un projet générique généré par l’[archétype d
 >
 > Si vous avez terminé avec succès le chapitre précédent, vous pouvez réutiliser le projet et ignorer les étapes de consultation du projet de démarrage.
 
->[!VIDEO](https://video.tv.adobe.com/v/330985?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345302?quality=12&learn=on&captions=fre_fr)
 
 Ouvrez un nouveau terminal de ligne de commande et effectuez les actions suivantes.
 
@@ -88,7 +88,7 @@ Ouvrez un nouveau terminal de ligne de commande et effectuez les actions suivant
 
 Les composants peuvent être considérés comme de petits blocs de création modulaires d’une page web. Pour réutiliser les composants, ceux-ci doivent pouvoir être configurés. Pour ce faire, utilisez la boîte de dialogue de création. Créons ensuite un composant simple et examinons comment les valeurs de la boîte de dialogue sont conservées dans AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/330986?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345292?quality=12&learn=on&captions=fre_fr)
 
 Vous trouverez ci-dessous les étapes générales effectuées dans la vidéo ci-dessus.
 
@@ -106,7 +106,7 @@ Les **boîtes de dialogue** définissent les configurations disponibles qui peuv
 
 Nous allons maintenant mettre à jour le script HTL `HelloWorld` pour afficher un message de salutations supplémentaire avant le message texte.
 
->[!VIDEO](https://video.tv.adobe.com/v/330987?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345284?quality=12&learn=on&captions=fre_fr)
 
 Vous trouverez ci-dessous les étapes générales effectuées dans la vidéo ci-dessus.
 
@@ -176,7 +176,7 @@ Les modèles Sling sont des objets POJO (Plain Old Java™ Object) Java™ pilot
 
 Ensuite, effectuons des mises à jour sur le modèle Sling `HelloWorldModel` pour appliquer une logique commerciale aux valeurs stockées dans le JCR avant de les générer sur la page.
 
->[!VIDEO](https://video.tv.adobe.com/v/330988?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35573?quality=12&learn=on&captions=fre_fr)
 
 1. Ouvrez le fichier `HelloWorldModel.java`, qui est le modèle Sling utilisé avec le composant `HelloWorld`.
 
@@ -289,7 +289,7 @@ Le module [ui.frontend](https://experienceleague.adobe.com/docs/experience-manag
 
 Ensuite, mettez à jour les styles CSS pour le composant `HelloWorld`.
 
->[!VIDEO](https://video.tv.adobe.com/v/340750?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/344334?quality=12&learn=on&captions=fre_fr)
 
 Vous trouverez ci-dessous les étapes générales effectuées dans la vidéo ci-dessus.
 

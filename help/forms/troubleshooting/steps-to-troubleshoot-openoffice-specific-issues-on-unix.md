@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit le processus de résolution des problèmes spécifiques à OpenOffice sous Unix pour le PDF Generator d’AEM Forms.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335551?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417250?quality=12&learn=on&captions=fre_fr)

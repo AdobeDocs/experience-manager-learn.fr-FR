@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Découvrez comment créer et désigner des ObjectClassDefinitions comme représentations de configuration OSGi dans un service OSGi.
 
->[!VIDEO](https://video.tv.adobe.com/v/335730?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417816?quality=12&learn=on&captions=fre_fr)
 
 ## Ressources
 

@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez comment plusieurs projets peuvent être fusionnés en un seul projet pour un déploiement sur AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/330535?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345857?quality=12&learn=on&captions=fre_fr)

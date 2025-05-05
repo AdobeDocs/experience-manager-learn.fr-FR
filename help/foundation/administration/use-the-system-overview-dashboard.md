@@ -20,7 +20,7 @@ ht-degree: 100%
 
 La [!UICONTROL vue d’ensemble du système] d’Adobe Experience Manager (AEM) offre une vue détaillée de la configuration, du matériel et de l’intégrité de l’instance AEM, le tout à partir d’un seul tableau de bord.
 
->[!VIDEO](https://video.tv.adobe.com/v/21340?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424582?quality=12&learn=on&captions=fre_fr)
 
 1. La vue d’ensemble du système est accessible à partir de : **Démarrage d’AEM** > **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Vue d’ensemble du système]**.
 

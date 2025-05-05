@@ -32,4 +32,4 @@ Une requête GET à cette URL unique vous indique le statut d’exécution du lo
 
 La vidéo suivante montre le déclenchement de la configuration par lot.
 
->[!VIDEO](https://video.tv.adobe.com/v/340242?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343706?quality=12&learn=on&captions=fre_fr)

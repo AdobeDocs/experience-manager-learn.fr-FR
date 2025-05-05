@@ -28,4 +28,4 @@ ht-degree: 100%
 
 Intégrez le référentiel Git de Cloud Manager à un référentiel Git externe et déployez un projet sur AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/330534?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345864?quality=12&learn=on&captions=fre_fr)

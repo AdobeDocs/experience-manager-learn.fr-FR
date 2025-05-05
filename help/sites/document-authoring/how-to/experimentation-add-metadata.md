@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Explorez l’ajout de métadonnées pour l’expérimentation dans la création de documents Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428796/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440107/?learn=on&captions=fre_fr)

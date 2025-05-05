@@ -22,4 +22,4 @@ ht-degree: 0%
 
 Découvrez comment AEM Assets [informations d’identification de contenu](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/content-credentials) fournit des métadonnées vérifiables pour garantir l’authenticité et l’intégrité des ressources numériques, ce qui favorise la confiance et la transparence dans la création de contenu.
 
->[!VIDEO](https://video.tv.adobe.com/v/3441700/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441713/?learn=on&enablevpops&captions=fre_fr)

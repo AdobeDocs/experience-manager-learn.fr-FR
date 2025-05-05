@@ -24,4 +24,4 @@ ht-degree: 0%
 
 Des récits à partir des tranchées : découvrez comment intégrer des services de diffusion Edge à Google Maps et optimiser les performances avec les intégrations.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440977/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440991/?learn=on&enablevpops&captions=fre_fr)

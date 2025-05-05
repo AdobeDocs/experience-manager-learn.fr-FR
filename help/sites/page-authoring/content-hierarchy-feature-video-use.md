@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment créer et organiser les pages du site de votre entreprise dans AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/31785?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410348?quality=12&learn=on&captions=fre_fr)

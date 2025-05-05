@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment créer des pages de site à l’aide de modèles de page dans Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/31827?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37207?quality=12&learn=on&captions=fre_fr)

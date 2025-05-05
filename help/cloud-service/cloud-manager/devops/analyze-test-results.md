@@ -27,4 +27,4 @@ ht-degree: 100%
 
 Découvrez les erreurs de compilation dans votre code et déterminez si ce code suit les bonnes pratiques pour AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/330540?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345719?quality=12&learn=on&captions=fre_fr)

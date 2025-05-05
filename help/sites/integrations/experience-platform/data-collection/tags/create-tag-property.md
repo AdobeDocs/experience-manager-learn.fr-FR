@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Découvrez comment créer une propriété de balise avec la configuration minimale à intégrer avec Adobe Experience Manager. Les utilisateurs et utilisatrices découvrent l’interface utilisateur des balises et découvrent les extensions, les règles et les workflows de publication.
 
->[!VIDEO](https://video.tv.adobe.com/v/38553?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327443?quality=12&learn=on&captions=fre_fr)
 
 ## Créer une propriété de balise
 

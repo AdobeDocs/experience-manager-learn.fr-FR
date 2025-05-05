@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment ajouter du texte de remplacement pour les images dans les pages créées à l’aide de la création de documents AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425721/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438677/?learn=on&captions=fre_fr)

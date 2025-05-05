@@ -49,7 +49,7 @@ Il existe 3 domaines principaux dans les [Modèles de page](https://experiencel
 
 Créez ensuite un modèle dans AEM qui correspond à la structure des maquettes. Cela se produit dans une instance locale d’AEM. Suivez les étapes de la vidéo ci-dessous :
 
->[!VIDEO](https://video.tv.adobe.com/v/332915?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412998?quality=12&learn=on&captions=fre_fr)
 
 Vous pouvez utiliser la miniature suivante pour identifier votre modèle (ou télécharger la vôtre).
 
@@ -66,7 +66,7 @@ Une pratique courante lors de la création d’un contenu global, tel qu’un en
 
 Le modèle de site a généré un en-tête et un pied de page. Ensuite, mettez à jour les fragments d’expérience pour qu’ils correspondent aux maquettes. Suivez les étapes de la vidéo ci-dessous :
 
->[!VIDEO](https://video.tv.adobe.com/v/332916?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447801?quality=12&learn=on&captions=fre_fr)
 
 Étapes de haut niveau pour la vidéo ci-dessous :
 
@@ -78,7 +78,7 @@ Le modèle de site a généré un en-tête et un pied de page. Ensuite, mettez �
 
 Créez ensuite une page à l’aide du modèle de page d’article de magazine. Créez le contenu de la page pour qu’il corresponde aux maquettes du site. Suivez les étapes de la vidéo ci-dessous :
 
->[!VIDEO](https://video.tv.adobe.com/v/332917?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343312?quality=12&learn=on&captions=fre_fr)
 
 Utilisez le [texte fourni](./assets/page-templates/la-skateparks-copy.txt) pour remplir le corps de l’article.
 

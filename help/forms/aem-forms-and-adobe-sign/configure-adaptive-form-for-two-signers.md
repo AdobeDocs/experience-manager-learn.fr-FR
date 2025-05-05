@@ -22,7 +22,7 @@ ht-degree: 100%
 
 La vidéo explique les différentes étapes nécessaires à la configuration d’un formulaire adaptatif avec 2 personnes signataires.
 
->[!VIDEO](https://video.tv.adobe.com/v/39294?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327741?quality=12&learn=on&captions=fre_fr)
 
 Les ressources liées à cette vidéo peuvent être téléchargées à partir des liens suivants :
 

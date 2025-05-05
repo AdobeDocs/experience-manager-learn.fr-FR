@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Vidéo courte décrivant l’ajout d’une signature tactile à AEM Forms.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427626/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437322/?learn=on&captions=fre_fr)

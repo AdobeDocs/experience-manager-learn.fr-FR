@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment utiliser des ressources d’AEM Assets à l’aide de l’opération Placer une copie.
 
->[!VIDEO](https://video.tv.adobe.com/v/34049?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38614?quality=12&learn=on&captions=fre_fr)

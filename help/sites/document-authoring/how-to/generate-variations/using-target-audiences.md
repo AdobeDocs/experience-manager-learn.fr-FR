@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment utiliser les audiences Adobe Target pour cibler la bonne audience avec le contenu approprié dans la création de documents Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428792/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437757/?learn=on&captions=fre_fr)

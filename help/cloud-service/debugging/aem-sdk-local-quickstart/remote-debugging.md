@@ -18,7 +18,7 @@ ht-degree: 100%
 
 # Déboguer à distance le SDK d’AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/34338?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38080?quality=12&learn=on&captions=fre_fr)
 
 Le fichier quickstart local du SDK AEM permet le débogage Java à distance à partir de votre IDE, ce qui vous permet de parcourir l’exécution du code en direct dans AEM pour comprendre le flux d’exécution exact.
 

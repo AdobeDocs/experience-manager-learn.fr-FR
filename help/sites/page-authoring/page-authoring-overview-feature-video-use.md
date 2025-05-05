@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Découvrez comment créer une page dans Adobe Experience Manager Sites à l’aide de l’interface utilisateur de l’éditeur de site.
 
->[!VIDEO](https://video.tv.adobe.com/v/31828?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36938?quality=12&learn=on&captions=fre_fr)
 
 Dans cette vidéo, les fonctionnalités suivantes sont abordées :
 

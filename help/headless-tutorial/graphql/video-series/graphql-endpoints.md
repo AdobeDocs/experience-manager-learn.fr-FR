@@ -28,4 +28,4 @@ Dans cette vidéo, vous allez :
 + Découvrir comment exécuter des requêtes GraphQL sur des points d’entrée
 + Comprendre comment publier et sécuriser des points d’entrée GraphQL
 
->[!VIDEO](https://video.tv.adobe.com/v/333339?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445025?quality=12&learn=on&captions=fre_fr)

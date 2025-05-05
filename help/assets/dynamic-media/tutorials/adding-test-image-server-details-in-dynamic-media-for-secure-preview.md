@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Cette vidéo décrit le processus d’ajout des détails d’un serveur d’images de test (filtres IP du client) dans Dynamic Media pour une prévisualisation sécurisée à l’aide de l’application Dynamic Media Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/335462?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418276?quality=12&learn=on&captions=fre_fr)

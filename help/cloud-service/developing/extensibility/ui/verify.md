@@ -24,7 +24,7 @@ Les extensions d’interface utilisateur AEM peuvent être vérifiées par rappo
 
 Le test d’une extension est effectué par le biais d’une URL spécialement conçue qui indique à AEM de charger l’extension, et ce uniquement pour cette requête.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412877?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417480?quality=12&learn=on&captions=fre_fr)
 
 >[!IMPORTANT]
 >

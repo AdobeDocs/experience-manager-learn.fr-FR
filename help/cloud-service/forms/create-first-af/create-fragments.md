@@ -23,4 +23,4 @@ ht-degree: 100%
 
 L’utilisation de fragments simplifie et accélère la création et la gestion d’un grand nombre de formulaires. Lors de la création d’un formulaire, vous insérez une référence au fragment requis et celui-ci s’affiche dans le nouveau formulaire.
 
->[!VIDEO](https://video.tv.adobe.com/v/332231?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438418?quality=12&learn=on&captions=fre_fr)

@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Dans cette partie, nous allons créer un fragment de document qui contiendra le nom et l’adresse de la personne destinataire.
 
->[!VIDEO](https://video.tv.adobe.com/v/22350?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36366?quality=12&learn=on&captions=fre_fr)
 
 Les fragments de document contiennent le contenu textuel des documents de communication interactive. Ce contenu de texte peut être du texte statique ou inséré à partir des valeurs des éléments du modèle de données sous-jacent. Par exemple, Cher {name}, où Cher est du texte statique et {name} est le nom de l’élément de données de formulaire. Au moment de l’exécution, cette opération sera résolue sur Chère Gloria Rios ou Cher John Jacobs selon la valeur de l’élément name.
 

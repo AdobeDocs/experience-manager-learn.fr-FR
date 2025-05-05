@@ -31,7 +31,7 @@ Outre la mise en cache de contenu, le réseau CDN Adobe propose plusieurs foncti
 
 Ces fonctionnalités sont des fonctionnalités en **libre-service**. Configuré dans le fichier `cdn.yaml` de votre projet AEM et déployé à l’aide du pipeline de configuration Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440271?quality=12&learn=on&captions=fre_fr)
 
 ## Configuration du trafic sur le réseau CDN
 

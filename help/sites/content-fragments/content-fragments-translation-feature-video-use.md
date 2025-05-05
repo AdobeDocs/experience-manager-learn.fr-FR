@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Découvrez comment les fragments de contenu peuvent être localisés et traduits avec Adobe Experience Manager. Les ressources multimédias mixtes associées à un fragment de contenu peuvent également être extraites et traduites.
 
->[!VIDEO](https://video.tv.adobe.com/v/18131?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410324?quality=12&learn=on&captions=fre_fr)
 
 ## Cas d’utilisation de la traduction de fragments de contenu {#content-fragment-translation-use-cases}
 

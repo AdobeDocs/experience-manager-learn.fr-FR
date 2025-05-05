@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Les icônes de composant permettent aux auteurs et autrices d’identifier rapidement un composant grâce aux icônes ou abréviations explicites. Les auteurs et autrices peuvent désormais trouver plus rapidement que jamais les composants requis pour créer leurs expériences web.
 
->[!VIDEO](https://video.tv.adobe.com/v/16778?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38289?quality=12&learn=on&captions=fre_fr)
 
 L’explorateur de composants arbore un thème gris cohérent et affiche les éléments suivants :
 

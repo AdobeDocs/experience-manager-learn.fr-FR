@@ -21,7 +21,7 @@ ht-degree: 100%
 Un fragment est une partie réutilisable d’un formulaire. Un fragment peut très bien inclure un bloc d’adresse ou un paragraphe juridique, par exemple. L’utilisation de fragments simplifie et accélère la création et la gestion d’un grand nombre de formulaires.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/37325?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326677?quality=12&learn=on&captions=fre_fr)
 
 
 

@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Aperçu rapide de la structure et des sous-projets d’un projet Maven AEM et de leur utilisation.
 
->[!VIDEO](https://video.tv.adobe.com/v/334280?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417165?quality=12&learn=on&captions=fre_fr)

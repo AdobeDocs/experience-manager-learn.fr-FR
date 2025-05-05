@@ -28,4 +28,4 @@ Dans cette vidéo, vous allez :
 + Découvrir comment créer, mettre à jour et exécuter des requêtes GraphQL.
 + Présentation des avantages des requêtes persistantes par rapport aux requêtes côté client
 
->[!VIDEO](https://video.tv.adobe.com/v/333429?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447379?quality=12&learn=on&captions=fre_fr)

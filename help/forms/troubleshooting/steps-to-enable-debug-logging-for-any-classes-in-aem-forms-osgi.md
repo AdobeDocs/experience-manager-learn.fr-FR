@@ -20,4 +20,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour activer la journalisation du débogage pour n’importe quelle classe dans AEM Forms OSGi.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335521?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418246?quality=12&learn=on&captions=fre_fr)

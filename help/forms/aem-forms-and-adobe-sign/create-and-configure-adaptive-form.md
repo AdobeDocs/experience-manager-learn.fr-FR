@@ -22,7 +22,7 @@ ht-degree: 100%
 
 La vidéo suivante présente les étapes nécessaires à la création et à la configuration d’un formulaire adaptatif pour générer automatiquement un document d’enregistrement. La vidéo vous guide également tout au long des étapes nécessaires à la configuration d’un formulaire adaptatif pour déclencher un workflow AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/38348?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327809?quality=12&learn=on&captions=fre_fr)
 
 ## Étapes suivantes
 

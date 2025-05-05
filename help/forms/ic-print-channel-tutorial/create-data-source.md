@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Dans cette partie, nous allons créer une source de données prise en charge par REST.  La vidéo suivante décrit les étapes à suivre pour créer la source de données.
 
->[!VIDEO](https://video.tv.adobe.com/v/27765?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34431?quality=12&learn=on&captions=fre_fr)
 
 Utilisez le fichier Swagger fourni dans le cadre des ressources relatives à ce tutoriel. Les ressources sont disponibles dans l’[introduction](introduction.md) de ce tutoriel.
 

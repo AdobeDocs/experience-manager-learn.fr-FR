@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Cette vidéo décrit les étapes à suivre pour déclencher un traitement d’export dans Dynamic Media lors du paramètre d’opération de traitement de soumission.
 
->[!VIDEO](https://video.tv.adobe.com/v/335454?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417837?quality=12&learn=on&captions=fre_fr)

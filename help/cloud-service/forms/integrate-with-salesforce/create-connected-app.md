@@ -24,7 +24,7 @@ ht-degree: 100%
 Une application connectée est un framework permettant à une application externe de s’intégrer à Salesforce à l’aide d’API et de protocoles standard tels que SAML, OAuth et OpenID Connect. Les applications connectées utilisent ces protocoles pour authentifier, autoriser et fournir une authentification unique (SSO) aux applications externes.
 <!--- 331757 was the old video -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3447257?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447259?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >Veillez à créer un compte dans l’[édition de développement de Salesforce](https://developer.salesforce.com/signup), car les API REST sont activées par défaut dans l’édition de développement.

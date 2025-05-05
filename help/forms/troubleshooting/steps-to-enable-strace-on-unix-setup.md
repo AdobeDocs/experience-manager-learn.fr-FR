@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour activer Strace dans la configuration Unix pour AEM Forms PDFG.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335525?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417636?quality=12&learn=on&captions=fre_fr)

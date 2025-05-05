@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Prévisualisez et publiez du contenu avec Edge Delivery Services à l’aide du [sidekick AEM](./sidekick.md).
 
->[!VIDEO](https://video.tv.adobe.com/v/3425714/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434711/?learn=on&captions=fre_fr)

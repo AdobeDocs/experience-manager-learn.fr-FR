@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Configurez le référentiel de code Git avec le [modèle standard d’AEM](https://github.com/adobe/aem-boilerplate) pour Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425713/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434613/?learn=on&captions=fre_fr)

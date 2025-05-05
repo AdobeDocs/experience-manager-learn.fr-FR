@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Le workflow permet de gérer des processus métier dans Experience Manager. Il est utilisé pour traiter automatiquement le contenu et pour faciliter la gouvernance et les processus nécessitant une prise de décision humaine. Le workflow est défini via des modèles de workflow composés d’une série d’étapes et ils sont créés et gérés dans l’[!UICONTROL Éditeur de modèle de workflow].
 
->[!VIDEO](https://video.tv.adobe.com/v/22201?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/347048?quality=12&learn=on&captions=fre_fr)

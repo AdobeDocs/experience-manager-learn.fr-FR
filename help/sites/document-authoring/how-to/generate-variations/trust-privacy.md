@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment Adobe gère la confiance et la confidentialité pour générer des variations dans la création de documents Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429060/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440016/?learn=on&captions=fre_fr)

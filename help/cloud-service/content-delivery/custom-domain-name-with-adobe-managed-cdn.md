@@ -46,7 +46,7 @@ Si vous n’avez pas accès à des services tiers, _collaborez avec votre équip
 
 ## Générer un certificat SSL
 
->[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441473?quality=12&learn=on&captions=fre_fr)
 
 Vous disposez de deux options :
 

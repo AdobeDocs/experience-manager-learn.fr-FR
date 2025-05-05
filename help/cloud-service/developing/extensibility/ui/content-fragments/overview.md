@@ -341,7 +341,7 @@ Voici une collection d’exemples de code d’extensibilité de l’interface ut
       <div class="card-image">
         <figure class="image is-16by9">
           <a href="./examples/editor-custom-field.md" title="Champs personnalisés" tabindex="-1">
-            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3427585?format=jpeg" alt="Champs personnalisés">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3437636?format=jpeg&captions=fre_fr" alt="Champs personnalisés">
           </a>
         </figure>
       </div>

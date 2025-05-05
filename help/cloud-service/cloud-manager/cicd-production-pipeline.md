@@ -31,10 +31,10 @@ ht-degree: 100%
 
 La configuration du [pipeline de production CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/pipelines/configuring-production-pipelines.html?lang=fr) définit le déclencheur qui lancera le pipeline, les paramètres contrôlant le déploiement en production et les paramètres de test de performances.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327601?quality=12&learn=on&captions=fre_fr)
 
 ### Exécution du pipeline
 
 Le [pipeline de production CI/CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html?lang=fr) sert à créer et déployer du code via l’environnement d’évaluation vers l’environnement de production, ce qui réduit le délai de valorisation.
 
->[!VIDEO](https://video.tv.adobe.com/v/26317?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327607?quality=12&learn=on&captions=fre_fr)

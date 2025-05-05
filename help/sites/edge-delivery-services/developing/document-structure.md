@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment un document Edge Delivery Services est constituté à l’aide de sections, de contenu par défaut, etc.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425716/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445191/?learn=on&captions=fre_fr)

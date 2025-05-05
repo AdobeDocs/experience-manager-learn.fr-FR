@@ -20,7 +20,7 @@ ht-degree: 91%
 
 Suivez le guide complet sur la manière d’obtenir un jeton de connexion pour les intégrations Cloud Service et consultez les cas d’utilisation courants.
 
->[!VIDEO](https://video.tv.adobe.com/v/341277?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448639?quality=12&learn=on&captions=fre_fr)
 
 ## Contenu couvert par cette vidéo
 

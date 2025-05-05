@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment créer une copie de la langue pour votre site AEM à l’aide de l’assistant Créer une copie de la langue.
 
->[!VIDEO](https://video.tv.adobe.com/v/36483?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41604?quality=12&learn=on&captions=fre_fr)

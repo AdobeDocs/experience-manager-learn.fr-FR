@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment gérer les autorisations des documents avec la création de documents AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425724/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438103/?learn=on&captions=fre_fr)

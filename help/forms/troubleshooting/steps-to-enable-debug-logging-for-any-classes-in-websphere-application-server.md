@@ -20,4 +20,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour activer la journalisation du débogage pour toutes les classes du serveur d’applications WebSphere.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335523?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418365?quality=12&learn=on&captions=fre_fr)

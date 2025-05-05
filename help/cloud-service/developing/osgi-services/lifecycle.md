@@ -26,7 +26,7 @@ Découvrez le cycle de vie des composants OSGi, notamment comment lier un servi
 
 ...
 
->[!VIDEO](https://video.tv.adobe.com/v/335475?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417190?quality=12&learn=on&captions=fre_fr)
 
 ## Ressources
 

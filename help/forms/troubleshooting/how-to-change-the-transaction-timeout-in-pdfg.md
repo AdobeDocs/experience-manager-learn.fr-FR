@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit le processus de modification du délai d’expiration des transactions d’un serveur d’applications dans le service PDFG de Forms.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335555?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417601?quality=12&learn=on&captions=fre_fr)

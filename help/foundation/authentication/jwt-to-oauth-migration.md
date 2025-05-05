@@ -25,4 +25,4 @@ Découvrez comment migrer d’autres solutions d’Adobe vers les nouvelles info
 Bien que les informations d’identification du compte de service (JWT) aient été marquées comme étant obsolètes, elles continueront à fonctionner jusqu’au 27 janvier 2025. Par conséquent, vous devez migrer votre application ou intégration pour utiliser les nouvelles informations d’identification OAuth serveur à serveur avant le 27 janvier 2025. Pour plus d’informations, reportez-vous au [guide de migration](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3432960/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449240/?learn=on&captions=fre_fr)

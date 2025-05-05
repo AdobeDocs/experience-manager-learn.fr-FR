@@ -24,7 +24,7 @@ ht-degree: 82%
 
 Découvrez les index de requête et comment écrire des formules Excel pour manipuler et trier des jeux de données avec Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427787/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453765/?learn=on&captions=fre_fr)
 
 ## Ressources supplémentaires
 

@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment utiliser Adobe Firefly pour créer des images utilisées dans les variations de contenu pour cibler la bonne audience dans la création de documents Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428794/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438358/?learn=on&captions=fre_fr)

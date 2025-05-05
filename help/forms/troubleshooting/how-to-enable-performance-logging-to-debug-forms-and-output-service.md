@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit le processus d’activation de la journalisation des performances dans AEM Forms pour déboguer les problèmes liés à Forms et au service de sortie.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335499?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439717?quality=12&learn=on&captions=fre_fr)

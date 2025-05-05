@@ -21,7 +21,7 @@ ht-degree: 90%
 
 Darin et James discutent du Dispatcher AEM en mode cloud, notamment de certaines bonnes pratiques et différences par rapport à AMS/On-Prem. Ils abordent également la migration vers le cloud.
 
->[!VIDEO](https://video.tv.adobe.com/v/342133?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448730?quality=12&learn=on&captions=fre_fr)
 
 ## Contenu couvert par cette vidéo
 

@@ -23,6 +23,6 @@ ht-degree: 100%
 
 Découvrez comment utiliser le [kit de ressources](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) Asset Share Commons pour générer des pages web personnalisées et partageables qui répertorient les ressources des dossiers ou collections AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3415467?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453449?quality=12&learn=on&captions=fre_fr)
 
 Le _[Kit de ressources](https://opensource.adobe.com/asset-share-commons/pages/asset-kit/overview/) est disponible uniquement pour Asset Share Commons 2.5.4 et versions ultérieures_.

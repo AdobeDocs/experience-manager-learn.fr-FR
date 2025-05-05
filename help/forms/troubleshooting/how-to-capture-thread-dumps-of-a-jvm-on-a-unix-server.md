@@ -20,4 +20,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour capturer les images mémoires des segments de mémoire d’une JVM sur un serveur Unix.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335492?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417728?quality=12&learn=on&captions=fre_fr)

@@ -22,7 +22,7 @@ ht-degree: 100%
 
 L’outil de transfert de contenu est la méthode recommandée pour migrer le contenu d’une version On-Premise ou hébergée par AMS d’AEM vers un environnement AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/35460?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327069?quality=12&learn=on&captions=fre_fr)
 
 ## Ressources supplémentaires {#additional-resources}
 

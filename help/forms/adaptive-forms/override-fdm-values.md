@@ -32,4 +32,4 @@ La vidéo suivante présente la fonctionnalité et le cas pratique.
 
 >[!NOTE]
 >La fonctionnalité présentée dans cette vidéo nécessite AEM Forms 6.5.13.
->[!VIDEO](https://video.tv.adobe.com/v/343762?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410228?quality=12&learn=on&captions=fre_fr)

@@ -21,4 +21,4 @@ ht-degree: 100%
 # Gérer l’héritage de Live Copy sur une page {#manage-live-copy-page}
 
 Découvrez comment gérer l’héritage entre une Live Copy et son plan directeur au niveau de la page.
->[!VIDEO](https://video.tv.adobe.com/v/36679?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41588?quality=12&learn=on&captions=fre_fr)

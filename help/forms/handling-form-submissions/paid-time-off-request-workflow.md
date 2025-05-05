@@ -31,11 +31,11 @@ Pour répondre au critère ci-dessus, nous utilisons un champ masqué appelé **
 
 **Configurer un formulaire pour déclencher un workflow AEM**
 
->[!VIDEO](https://video.tv.adobe.com/v/28406?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33131?quality=12&learn=on&captions=fre_fr)
 
 **Présentation du workflow**
 
->[!VIDEO](https://video.tv.adobe.com/v/28407?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33134?quality=12&learn=on&captions=fre_fr)
 
 **Vue de la personne qui envoie le formulaire sur le formulaire de requête de congés**
 

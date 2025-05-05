@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment télécharger des ressources et leurs rendus sur votre ordinateur local en vue de leur utilisation et partage.
 
->[!VIDEO](https://video.tv.adobe.com/v/35090?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39505?quality=12&learn=on&captions=fre_fr)

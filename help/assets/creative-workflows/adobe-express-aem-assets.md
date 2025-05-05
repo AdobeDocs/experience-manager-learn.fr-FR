@@ -22,4 +22,4 @@ ht-degree: 59%
 
 Découvrez comment utiliser l’intégration [Adobe Express](https://www.adobe.com/fr/express/) avec AEM Assets pour optimiser les chaînes d’approvisionnement de contenu et améliorer la productivité et l’accessibilité pour tous les membres de l’équipe.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425193/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453134/?learn=on&captions=fre_fr)

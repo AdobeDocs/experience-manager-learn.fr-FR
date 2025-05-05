@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment créer une Live Copy pour votre site à partir d’un plan directeur à l’aide de l’assistant Créer une Live Copy.
 
->[!VIDEO](https://video.tv.adobe.com/v/36677?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41579?quality=12&learn=on&captions=fre_fr)

@@ -20,7 +20,7 @@ ht-degree: 91%
 
 Il s’agit d’une analyse approfondie de l’accès aux journaux dans AEM as a Cloud Service, y compris l’accès via l’interface utilisateur et les API.
 
->[!VIDEO](https://video.tv.adobe.com/v/341156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448480?quality=12&learn=on&captions=fre_fr)
 
 ## Contenu couvert par cette vidéo
 

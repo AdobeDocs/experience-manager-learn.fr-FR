@@ -26,7 +26,7 @@ ht-degree: 100%
 
 Utiliser Acrobat Sign avec AEM Forms
 
->[!VIDEO](https://video.tv.adobe.com/v/18696?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38336?quality=12&learn=on&captions=fre_fr)
 
 *Cette vidéo décrit le processus de configuration du service cloud Acrobat Sign et d’ajout de plusieurs champs de signature à un formulaire adaptatif AEM.*
 

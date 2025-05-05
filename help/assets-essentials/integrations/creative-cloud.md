@@ -26,4 +26,4 @@ Découvrez comment intégrer AEM Assets à des bibliothèques Adobe Creative 
 + Rendre les fichiers d’AEM Assets accessibles de manière transparente via les bibliothèques Creative Cloud
 + Partager les fichiers des bibliothèques Creative Cloud avec Assets Essentials.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432401?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444010?quality=12&learn=on&captions=fre_fr)

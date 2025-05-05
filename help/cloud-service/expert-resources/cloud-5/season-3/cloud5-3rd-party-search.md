@@ -21,7 +21,7 @@ ht-degree: 77%
 
 Découvrez la meilleure manière d’intégrer la recherche tierce à Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427040?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452598?quality=12&learn=on&captions=fre_fr)
 
 ## Ressources supplémentaires
 

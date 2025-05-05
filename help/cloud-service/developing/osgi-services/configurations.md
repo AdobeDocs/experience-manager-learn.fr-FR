@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Découvrez l’approche de bas niveau de l’utilisation de paires clé/valeur de configuration OSGi pour définir et exposer les données de configuration OSGi aux services OSGi.
 
->[!VIDEO](https://video.tv.adobe.com/v/335729?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417822?quality=12&learn=on&captions=fre_fr)
 
 ## Ressources
 

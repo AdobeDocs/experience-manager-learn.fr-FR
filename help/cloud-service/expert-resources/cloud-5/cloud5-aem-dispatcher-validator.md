@@ -21,7 +21,7 @@ ht-degree: 86%
 
 Exemple rapide d’utilisation du programme de validation du Dispatcher dans vos workflows de développement AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/342358?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448421?quality=12&learn=on&captions=fre_fr)
 
 ## Contenu couvert par cette vidéo
 

@@ -23,7 +23,7 @@ ht-degree: 100%
 Créez un workflow AEM à l’aide du composant de signature de document. Utilisez le document d’enregistrement généré automatiquement afin d’envoyer pour signatures à l’aide du composant de signature.
 La vidéo explique les différentes étapes nécessaires à la création d’un workflow efficace pour envoyer des documents à signer.
 
->[!VIDEO](https://video.tv.adobe.com/v/38182?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327817?quality=12&learn=on&captions=fre_fr)
 
 ## Étapes suivantes
 

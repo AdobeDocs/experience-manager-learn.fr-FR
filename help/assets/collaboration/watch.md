@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Découvrez comment recevoir des notifications chaque fois qu’une ressource, un dossier ou une collection sous surveillance fait l’objet d’une modification dans AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427646/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439627/?learn=on&captions=fre_fr)
 
 >[!TIP]
 >
