@@ -82,7 +82,7 @@ En règle générale, la planification d’un nouveau site web commence par des 
 
 >[!NOTE]
 >
-> Un [kit d’interface utilisateur des composants principaux d’AEM est également disponible](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) comme point de départ pour les projets personnalisés.
+> Un [kit d’interface utilisateur des composants principaux d’AEM est également disponible](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd?lang=fr) comme point de départ pour les projets personnalisés.
 
 ## Créer le modèle de page d’article
 
@@ -262,7 +262,7 @@ Utilisez l’outil CRXDE-Lite sur une instance AEM locale pour afficher la struc
 
    Il n’existe que deux scripts HTL, `customfooterlibs.html` et `customheaderlibs.html`, sous le composant Page. *Comment ce composant effectue-t-il le rendu de la page ?*
 
-   La propriété `sling:resourceSuperType` pointe sur `core/wcm/components/page/v2/page`. Cette propriété permet au composant de page de WKND d’hériter de **toutes** les fonctionnalités du composant Page des composants principaux. Voici le premier exemple d’un élément appelé [Modèle de composant proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html#ProxyComponentPattern). Vous trouverez plus d’informations [ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html).
+   La propriété `sling:resourceSuperType` pointe sur `core/wcm/components/page/v2/page`. Cette propriété permet au composant de page de WKND d’hériter de **toutes** les fonctionnalités du composant Page des composants principaux. Voici le premier exemple d’un élément appelé [Modèle de composant proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=fr#ProxyComponentPattern). Vous trouverez plus d’informations [ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/guidelines.html?lang=fr).
 
 1. Examinez un autre composant dans les composants WKND : le composant `Breadcrumb` à partir de : `/apps/wknd/components/breadcrumb`. Notez que la même propriété `sling:resourceSuperType` est disponible, mais cette fois, elle pointe vers `core/wcm/components/breadcrumb/v2/breadcrumb`. Il s’agit d’un autre exemple d’utilisation du modèle de composant proxy pour inclure un composant principal. En fait, tous les composants de la base de code WKND sont des proxy des composants principaux d’AEM (à l’exception du composant HelloWorld de démonstration personnalisé). Il est recommandé de réutiliser autant de fonctionnalités des composants principaux que possible *avant* d’écrire du code personnalisé.
 

@@ -33,4 +33,4 @@ Adobe Experience Manager s’appuie sur les utilisateurs et utilisatrices, gro
 ## Ressources supplémentaires
 
 + [Prise en charge IMS d’Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=fr)
-+ [Groupes d’utilisateurs et d’utilisatrices fournis par AEM et leurs autorisations](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/security.html)
++ [Groupes d’utilisateurs et d’utilisatrices fournis par AEM et leurs autorisations](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/security.html?lang=fr)

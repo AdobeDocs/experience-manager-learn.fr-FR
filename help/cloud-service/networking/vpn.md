@@ -26,21 +26,21 @@ Découvrez comment connecter AEM as a Cloud Service à votre VPN pour créer
 >
 >Vous pouvez configurer des VPN et le transfert de port via l’interface utilisateur de Cloud Manager ou à l’aide d’appels d’API. Ce tutoriel se concentre sur la méthode API.
 >
->Si vous préférez utiliser l’interface utilisateur, consultez [Configuration de la mise en réseau avancée pour AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+>Si vous préférez utiliser l’interface utilisateur, consultez [Configuration de la mise en réseau avancée pour AEM as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 ## Qu’est-ce qu’un réseau privé virtuel ?
 
-Le réseau privé virtuel (VPN) permet à un client ou une cliente AEM as a Cloud Service de connecter **les environnements AEM** d’un programme Cloud Manager à un VPN existant et [pris en charge](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking). Le VPN permet des connexions sécurisées et contrôlées entre AEM as a Cloud Service et les services au sein du réseau du client ou de la cliente.
+Le réseau privé virtuel (VPN) permet à un client ou une cliente AEM as a Cloud Service de connecter **les environnements AEM** d’un programme Cloud Manager à un VPN existant et [pris en charge](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking). Le VPN permet des connexions sécurisées et contrôlées entre AEM as a Cloud Service et les services au sein du réseau du client ou de la cliente.
 
-Un programme Cloud Manager ne peut avoir qu’un __seul__ type d’infrastructure réseau. Assurez-vous que le réseau privé virtuel est le type le plus [approprié d’infrastructure réseau](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) pour votre instance AEM as a Cloud Service avant d’exécuter les commandes suivantes.
+Un programme Cloud Manager ne peut avoir qu’un __seul__ type d’infrastructure réseau. Assurez-vous que le réseau privé virtuel est le type le plus [approprié d’infrastructure réseau](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) pour votre instance AEM as a Cloud Service avant d’exécuter les commandes suivantes.
 
 >[!NOTE]
 >
->Veuillez noter que la connexion de l’environnement de création de Cloud Manager à un VPN n’est pas prise en charge. Si vous devez accéder aux artefacts binaires d’un référentiel privé, vous devez configurer un référentiel sécurisé et protégé par mot de passe avec une URL disponible sur l’Internet public [tel que décrit ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project).
+>Veuillez noter que la connexion de l’environnement de création de Cloud Manager à un VPN n’est pas prise en charge. Si vous devez accéder aux artefacts binaires d’un référentiel privé, vous devez configurer un référentiel sécurisé et protégé par mot de passe avec une URL disponible sur l’Internet public [tel que décrit ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project).
 
 >[!MORELIKETHIS]
 >
-> Veuillez consulter la [documentation sur la configuration réseau avancée](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) pour AEM as a Cloud Service pour plus d’informations sur le réseau privé virtuel.
+> Veuillez consulter la [documentation sur la configuration réseau avancée](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) pour AEM as a Cloud Service pour plus d’informations sur le réseau privé virtuel.
 
 ## Conditions préalables
 
@@ -61,7 +61,7 @@ Pour plus d’informations [consultez la procédure de configuration et d’obte
 >
 >Ce tutoriel utilise `curl` pour effectuer les configurations de l’API Cloud Manager, *si vous préférez une approche par programmation*. Les commandes `curl` fournies supposent une syntaxe Linux® ou macOS. Si vous utilisez l’invite de commande Windows, remplacez le caractère saut de ligne `\` par `^`.
 >
->Vous pouvez également effectuer la même tâche via l’interface utilisateur de Cloud Manager. *Si vous préférez l’approche de l’interface utilisateur* consultez [Configuration de la mise en réseau avancée pour AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+>Vous pouvez également effectuer la même tâche via l’interface utilisateur de Cloud Manager. *Si vous préférez l’approche de l’interface utilisateur* consultez [Configuration de la mise en réseau avancée pour AEM as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 ## Activer le réseau privé virtuel par programme
 
@@ -113,7 +113,7 @@ Il est possible d’activer le réseau privé virtuel à l’aide des API Cloud�
 
 1. Tout d’abord, déterminez la région dans laquelle le réseau avancé est nécessaire à l’aide de l’opération [listRegion](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager. Le `region name` est nécessaire pour effectuer les appels d’API Cloud Manager ultérieurs. En règle générale, la région dans laquelle l’environnement de production réside est utilisée.
 
-   Recherchez la région de votre environnement AEM as a Cloud Service AEM dans [Cloud Manager](https://my.cloudmanager.adobe.com) sous les [détails de l’environnement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Le nom de région affiché dans Cloud Manager peut être [mappé au code de région](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilisé dans l’API Cloud Manager.
+   Recherchez la région de votre environnement AEM as a Cloud Service AEM dans [Cloud Manager](https://my.cloudmanager.adobe.com) sous les [détails de l’environnement](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Le nom de région affiché dans Cloud Manager peut être [mappé au code de région](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilisé dans l’API Cloud Manager.
 
    __Requête HTTP listRegions__
 
@@ -294,7 +294,7 @@ Lors de la création de connexions HTTP/HTTPS à partir d’AEM, lors de l’uti
 
 >[!TIP]
 >
-> Consultez la documentation sur le réseau privé virtuel d’AEM as a Cloud Service pour connaître [l’ensemble des règles de routage](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+> Consultez la documentation sur le réseau privé virtuel d’AEM as a Cloud Service pour connaître [l’ensemble des règles de routage](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 #### Exemples de code
 
@@ -362,8 +362,8 @@ La configuration du réseau privé virtuel limite l’accès aux environnements 
 
 <table><tr>
    <td>
-      <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list"><img alt="Appliquer une liste d’adresses IP autorisées" src="./assets/code_examples__vpn-allow-list.png"/></a>
-      <div><strong><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list">Appliquer une liste d’adresses IP autorisées</a></strong></div>
+      <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list"><img alt="Appliquer une liste d’adresses IP autorisées" src="./assets/code_examples__vpn-allow-list.png"/></a>
+      <div><strong><a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list">Appliquer une liste d’adresses IP autorisées</a></strong></div>
       <p>
             Configurez une liste d’adresses IP autorisées de sorte que seul le trafic VPN puisse accéder à AEM.
       </p>

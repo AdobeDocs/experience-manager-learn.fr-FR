@@ -221,7 +221,7 @@ Examinons davantage le conteneur de dispositions.
 
    Le composant de **conteneur de disposition** comporte un `sling:resourceType` de `wcm/foundation/components/responsivegrid` et est reconnu par l’éditeur de SPA avec la propriété `:type`, comme les composants `Text` et `Image`.
 
-   Les mêmes fonctionnalités de redimensionnement d’un composant à l’aide du [mode de disposition](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) sont disponibles avec l’éditeur de SPA.
+   Les mêmes fonctionnalités de redimensionnement d’un composant à l’aide du [mode de disposition](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=fr#defining-layouts-layout-mode) sont disponibles avec l’éditeur de SPA.
 
 2. Revenez sur [http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-react/us/en/home.html). Ajoutez d’autres composants **Image** et essayez de les redimensionner à l’aide de l’option **Disposition** :
 

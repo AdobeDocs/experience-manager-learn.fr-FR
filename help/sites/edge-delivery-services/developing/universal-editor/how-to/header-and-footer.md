@@ -471,4 +471,4 @@ Vous avez maintenant exploré la manière dont les en-têtes et pieds de page so
 
 Ce modèle offre une approche flexible et gérable pour la mise en œuvre de composants de navigation à l’échelle du site.
 
-Pour découvrir les bonnes pratiques et les techniques avancées, consultez la [documentation de l’éditeur universel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).
+Pour découvrir les bonnes pratiques et les techniques avancées, consultez la [documentation de l’éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options).

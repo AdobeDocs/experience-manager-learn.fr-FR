@@ -31,7 +31,7 @@ Marketo fournit une API REST qui permet l’exécution à distance de nombreuses
 
 >[!NOTE]
 >
->Ce tutoriel est spécialement adapté à AEM Forms 6.5. Si vous souhaitez intégrer AEM Forms as a Cloud Service à Adobe Marketo Engage, reportez-vous à la [documentation dédiée à cette intégration](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-adaptive-form-with-market-engage/integrate-form-to-marketo-engage).
+>Ce tutoriel est spécialement adapté à AEM Forms 6.5. Si vous souhaitez intégrer AEM Forms as a Cloud Service à Adobe Marketo Engage, reportez-vous à la [documentation dédiée à cette intégration](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-adaptive-form-with-market-engage/integrate-form-to-marketo-engage).
 
 Ce tutoriel vous indiquera les étapes nécessaires à l’intégration d’AEM Forms avec Marketo à l’aide du modèle de données de formulaire. Une fois le tutoriel terminé, vous disposerez d’un lot OSGi qui effectuera l’authentification personnalisée par rapport à Marketo. Vous avez également configuré la source de données à l’aide du fichier Swagger fourni.
 

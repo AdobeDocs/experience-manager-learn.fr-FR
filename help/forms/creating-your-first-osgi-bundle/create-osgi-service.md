@@ -80,7 +80,7 @@ public class MyfirstInterfaceImpl implements MyfirstInterface {
 
 L’annotation `@Component(...)` sur la ligne 10 marque cette classe Java en tant que composant OSGi et l’enregistre en tant que service OSGi.
 
-L’annotation `@Reference` fait partie des services déclaratifs OSGi et est utilisée pour injecter une référence du service [Outputservice](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) dans la variable `outputService`.
+L’annotation `@Reference` fait partie des services déclaratifs OSGi et est utilisée pour injecter une référence du service [Outputservice](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) dans la variable `outputService`.
 
 
 ## Créer et déployer le lot

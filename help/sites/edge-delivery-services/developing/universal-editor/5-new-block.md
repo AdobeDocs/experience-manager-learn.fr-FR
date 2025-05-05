@@ -101,11 +101,11 @@ Chaque champ du tableau `fields` comporte un objet JSON qui inclut les propriét
 
 | Propriété JSON | Description |
 |---------------|-----------------------------------------------------------------------------------------------------------------------|
-| `component` | Le [type de champ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#component-types) tel que `text`, `reference` ou `aem-content`. |
+| `component` | Le [type de champ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#component-types) tel que `text`, `reference` ou `aem-content`. |
 | `name` | Nom du champ, en mappant à la propriété JCR où la valeur est stockée dans AEM. |
 | `label` | Libellé affiché pour les auteurs dans l’éditeur universel. |
 
-Pour obtenir la liste complète des propriétés, y compris les propriétés facultatives, consultez la [documentation des champs de l’éditeur universel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#fields).
+Pour obtenir la liste complète des propriétés, y compris les propriétés facultatives, consultez la [documentation des champs de l’éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#fields).
 
 #### Conception de bloc
 
@@ -132,16 +132,16 @@ Définissez les champs requis pour le bloc : image, texte secondaire de l’imag
 
 Le teaser se compose de deux zones logiques : image et texte. Pour simplifier le code nécessaire à l’affichage de l’HTML Edge Delivery Services en tant qu’expérience web souhaitée, le modèle de bloc doit refléter cette structure.
 
-- Regroupez les **image** et **texte secondaire de l’image** à l’aide de [réduction du champ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
-- Regroupez les champs de contenu texte à l’aide de [regroupement d’éléments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) et [ réduction de champ pour le CTA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
+- Regroupez les **image** et **texte secondaire de l’image** à l’aide de [réduction du champ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
+- Regroupez les champs de contenu texte à l’aide de [regroupement d’éléments](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) et [ réduction de champ pour le CTA](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse).
 
-Si vous ne connaissez pas les notions de [réduction de champ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse), [regroupement d’éléments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) ou [inférence de type](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) consultez la documentation liée avant de continuer, car elles sont essentielles pour créer un modèle de bloc bien structuré.
+Si vous ne connaissez pas les notions de [réduction de champ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse), [regroupement d’éléments](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) ou [inférence de type](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) consultez la documentation liée avant de continuer, car elles sont essentielles pour créer un modèle de bloc bien structuré.
 
 Dans l&#39;exemple ci-dessous :
 
-- [Inférence de type](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) est utilisé pour créer automatiquement un élément HTML `<img>` à partir du champ `image`. La réduction de champ est utilisée avec les champs `image` et `imageAlt` pour créer un élément HTML `<img>`. L’attribut `src` est défini sur la valeur du champ `image`, tandis que l’attribut `alt` est défini sur la valeur du champ `imageAlt`.
+- [Inférence de type](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference) est utilisé pour créer automatiquement un élément HTML `<img>` à partir du champ `image`. La réduction de champ est utilisée avec les champs `image` et `imageAlt` pour créer un élément HTML `<img>`. L’attribut `src` est défini sur la valeur du champ `image`, tandis que l’attribut `alt` est défini sur la valeur du champ `imageAlt`.
 - `textContent` est un nom de groupe utilisé pour classer les champs. Elle doit être sémantique, mais peut être n’importe quoi d’autre propre à ce bloc. Cela indique à l’éditeur universel de rendre tous les champs avec ce préfixe dans le même élément `<div>` dans la sortie HTML finale.
-- La réduction du champ est également appliquée dans le groupe de `textContent` pour l’appel à l’action (CTA). Le CTA est créé en tant que `<a>` via une [inférence de type](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference). Le champ `cta` est utilisé pour définir l’attribut `href` de l’élément `<a>` et le champ `ctaText` fournit le contenu textuel du lien dans les balises `<a ...>`.
+- La réduction du champ est également appliquée dans le groupe de `textContent` pour l’appel à l’action (CTA). Le CTA est créé en tant que `<a>` via une [inférence de type](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#type-inference). Le champ `cta` est utilisé pour définir l’attribut `href` de l’élément `<a>` et le champ `ctaText` fournit le contenu textuel du lien dans les balises `<a ...>`.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
@@ -223,7 +223,7 @@ Pour comprendre les conséquences de ne pas utiliser la réduction de champ et l
 
 **Cet onglet illustre une méthode sous-optimale de modélisation du bloc de teaser, et n’est qu’une juxtaposition à la bonne méthode.**
 
-Définir chaque champ comme champ autonome dans le modèle de bloc sans utiliser [réduction du champ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) et [regroupement d’éléments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) peut sembler tentant. Cependant, cette omission complique la mise en forme du bloc en tant qu’unité cohérente.
+Définir chaque champ comme champ autonome dans le modèle de bloc sans utiliser [réduction du champ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) et [regroupement d’éléments](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) peut sembler tentant. Cependant, cette omission complique la mise en forme du bloc en tant qu’unité cohérente.
 
 Par exemple, le modèle de teaser peut être défini **sans** réduction de champ ni regroupement d’éléments comme suit :
 
@@ -304,7 +304,7 @@ L’HTML Edge Delivery Services pour le bloc effectue le rendu de la valeur de c
 </div>        
 ```
 
-Chaque champ est isolé dans son propre `div`, ce qui complique le style de l’image et du contenu textuel en tant qu’unités cohérentes. Il est possible d’obtenir la conception souhaitée avec effort et créativité, mais l’utilisation du [regroupement des éléments](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) pour regrouper les champs de contenu de texte et du [réduction du champ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) pour ajouter des valeurs créées en tant qu’attributs d’élément est plus simple, plus facile et sémantiquement correcte.
+Chaque champ est isolé dans son propre `div`, ce qui complique le style de l’image et du contenu textuel en tant qu’unités cohérentes. Il est possible d’obtenir la conception souhaitée avec effort et créativité, mais l’utilisation du [regroupement des éléments](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#element-grouping) pour regrouper les champs de contenu de texte et du [réduction du champ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#field-collapse) pour ajouter des valeurs créées en tant qu’attributs d’élément est plus simple, plus facile et sémantiquement correcte.
 
 Consultez l’onglet **Méthode d’écriture** ci-dessus pour savoir comment mieux modéliser le bloc de teaser.
 
@@ -322,7 +322,7 @@ La définition de bloc enregistre le bloc dans l’éditeur universel. Voici une
 | `definition.plugins.xwalk.page.resourceType` | Définit le type de ressource Sling pour le rendu du composant dans l’éditeur universel. Utilisez toujours un type de ressource `core/franklin/components/block/v#/block`. |
 | `definition.plugins.xwalk.page.template.name` | Nom du bloc. Il doit être en minuscules et séparé par des tirets pour correspondre au nom de dossier du bloc. Cette valeur est également utilisée pour libeller l’instance du bloc dans l’éditeur universel. |
 | `definition.plugins.xwalk.page.template.model` | Associe cette définition à sa définition `model`, qui contrôle les champs de création affichés pour le bloc dans l’éditeur universel. La valeur ici doit correspondre à une valeur `model.id`. |
-| `definition.plugins.xwalk.page.template.classes` | Propriété facultative, dont la valeur est ajoutée à l’attribut `class` de l’élément HTML du bloc. Cela permet d’avoir des variantes d’un même bloc. La valeur `classes` peut être rendue modifiable en [ajoutant un champ de classes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) au [modèle](#block-model) du bloc. |
+| `definition.plugins.xwalk.page.template.classes` | Propriété facultative, dont la valeur est ajoutée à l’attribut `class` de l’élément HTML du bloc. Cela permet d’avoir des variantes d’un même bloc. La valeur `classes` peut être rendue modifiable en [ajoutant un champ de classes](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block#block-options) au [modèle](#block-model) du bloc. |
 
 
 Voici un exemple JSON pour la définition de bloc :
@@ -363,7 +363,7 @@ Cette structure garantit que le bloc est configuré dans l’éditeur universel 
 
 ### Bloquer les filtres
 
-Le tableau de `filters` du bloc définit, par exemple [ blocs de conteneur ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), les autres blocs qui peuvent être ajoutés au conteneur. Les filtres définissent une liste d’identifiants de bloc (`model.id`) qui peuvent être ajoutés au conteneur.
+Le tableau de `filters` du bloc définit, par exemple [ blocs de conteneur ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), les autres blocs qui peuvent être ajoutés au conteneur. Les filtres définissent une liste d’identifiants de bloc (`model.id`) qui peuvent être ajoutés au conteneur.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
@@ -375,7 +375,7 @@ Le tableau de `filters` du bloc définit, par exemple [ blocs de conteneur ](htt
 }
 ```
 
-Le composant Teaser n’est pas un [bloc conteneur](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), ce qui signifie que vous ne pouvez pas y ajouter d’autres blocs. Par conséquent, son tableau `filters` reste vide. Au lieu de cela, ajoutez l’identifiant du teaser à la liste de filtres du bloc de section, de sorte que le teaser puisse être ajouté à une section.
+Le composant Teaser n’est pas un [bloc conteneur](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling#container), ce qui signifie que vous ne pouvez pas y ajouter d’autres blocs. Par conséquent, son tableau `filters` reste vide. Au lieu de cela, ajoutez l’identifiant du teaser à la liste de filtres du bloc de section, de sorte que le teaser puisse être ajouté à une section.
 
 ![Bloquer les filtres](./assets/5-new-block/filters.png)
 

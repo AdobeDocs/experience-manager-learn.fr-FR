@@ -493,7 +493,7 @@ Suivez les instructions de l’article [Configurer les API AEM basées sur OpenA
 
 Par défaut, le projet WKND Sites ne dispose pas du schéma de métadonnées de ressource requis pour afficher les attributs du produit. Créons et appliquons le schéma de métadonnées de la ressource à un dossier de ressources dans l’instance AEM.
 
-1. Connectez-vous à l’instance AEM as a Cloud Service Asset. À l’aide de la vue [Ressources](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/authoring/switch-views) accédez au dossier `/content/dam/wknd-shared/en` .
+1. Connectez-vous à l’instance AEM as a Cloud Service Asset. À l’aide de la vue [Ressources](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/authoring/switch-views) accédez au dossier `/content/dam/wknd-shared/en` .
 
    ![Accéder au dossier](../assets/web-app/navigate-to-folder.png)
 

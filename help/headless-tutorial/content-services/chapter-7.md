@@ -201,7 +201,7 @@ Après chaque étape, actualisez l’application mobile en balayant du haut de l
 
 Pour en savoir plus sur AEM Content Services et AEM en tant que CMS découplé, consultez d’autres documentations et supports de formation d’Adobe :
 
-* [Utiliser les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)
+* [Utiliser les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr)
 * [Guide d’utilisation des composants principaux du gestionnaire de contenu web d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * [Bibliothèque de composants principaux du gestionnaire de contenu web d’AEM](https://opensource.adobe.com/aem-core-wcm-components/library.html)
 * [Projet GitHub des composants principaux du gestionnaire de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components)

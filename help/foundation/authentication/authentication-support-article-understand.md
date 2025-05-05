@@ -81,7 +81,7 @@ Une vue consolidée dans les mécanismes d’authentification (et parfois d’au
                 <td>✔</td>
             </tr>
             <tr>
-                <td><a href="https://experienceleague.adobe.com/docs/events/assets/oauth-server-functionality-in-aem-7-23-14.pdf" target="_blank">OAuth 1.0a et 2.0</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/events/assets/oauth-server-functionality-in-aem-7-23-14.pdf?lang=fr" target="_blank">OAuth 1.0a et 2.0</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>

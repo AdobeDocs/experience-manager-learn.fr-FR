@@ -175,7 +175,7 @@ Le fichier est donc plus ancien que le fichier `.stat` et il est supprimé. Un n
 
 ## Paramètres du fichier de batterie
 
-La documentation concernant l’ensemble des options de configuration est disponible à l’adresse suivante : [https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr).
+La documentation concernant l’ensemble des options de configuration est disponible à l’adresse suivante : [https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr).
 
 Nous allons décrire certaines options dédiées à la purge du cache.
 

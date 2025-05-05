@@ -127,7 +127,7 @@ info: Enabled reverse proxy to https://main--aem-wknd-eds-ue--<YOUR_ORG>.aem.pag
 
 L’interface de ligne de commande AEM ouvre le site web dans votre navigateur à l’adresse `http://localhost:3000/`. Les modifications apportées au projet sont automatiquement rechargées à chaud dans le navigateur web, tandis que les modifications du contenu [nécessitent une publication dans l’environnement d’aperçu](./6-author-block.md) et une actualisation du navigateur web.
 
-Si le site web s’ouvre avec une page 404, il est probable que les fichiers [fstab.yaml ou paths.json](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) mis à jour dans [nouveau projet de code](./1-new-code-project.md) ne soient pas correctement configurés, ou que les modifications n’aient pas été validées dans la branche `main`.
+Si le site web s’ouvre avec une page 404, il est probable que les fichiers [fstab.yaml ou paths.json](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started#create-github-project) mis à jour dans [nouveau projet de code](./1-new-code-project.md) ne soient pas correctement configurés, ou que les modifications n’aient pas été validées dans la branche `main`.
 
 ## Créer des fragments JSON
 

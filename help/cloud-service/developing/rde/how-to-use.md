@@ -204,7 +204,7 @@ Les fichiers de configuration Apache ou Dispatcher **ne peuvent pas être déplo
 
 ### Déploiement des fichiers de configuration (YAML)
 
-Le réseau CDN, les tâches de maintenance, le transfert de journal et les fichiers de configuration de l’authentification de l’API AEM peuvent être déployés sur le RDE à l’aide de la commande `install`. Ces configurations sont gérées en tant que fichiers YAML dans le dossier `config` du projet AEM. Pour plus d’informations, voir [Configurations prises en charge](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations).
+Le réseau CDN, les tâches de maintenance, le transfert de journal et les fichiers de configuration de l’authentification de l’API AEM peuvent être déployés sur le RDE à l’aide de la commande `install`. Ces configurations sont gérées en tant que fichiers YAML dans le dossier `config` du projet AEM. Pour plus d’informations, voir [Configurations prises en charge](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/config-pipeline#configurations).
 
 Pour savoir comment déployer les fichiers de configuration, nous allons améliorer le fichier de configuration `cdn` et le déployer sur le RDE.
 
@@ -273,7 +273,7 @@ En savoir plus sur les [cycle de vie de développement/déploiement à l’aide 
 
 ## Ressources supplémentaires
 
-[Documentation relatives aux commandes du RDE](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
+[Documentation relatives aux commandes du RDE](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments)
 
 [Plug-in d’interface de ligne de commande Adobe I/O Runtime pour les interactions avec les environnements de développement rapide AEM](https://github.com/adobe/aio-cli-plugin-aem-rde#aio-cli-plugin-aem-rde)
 

@@ -175,7 +175,7 @@ Adobe Experience Manager (AEM) offre une solution conviviale pour créer, gér
 
 ## Ressources supplémentaires
 
-* [Experience League - Explorer AEM](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager)
+* [Experience League - Explorer AEM](https://experienceleague.adobe.com/fr?lang=fr#recommended/solutions/experience-manager)
 * [Documentation sur la création dans AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/home.html?lang=fr)
 * [Documentation sur le développement dans AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html?lang=fr)
 * [Documentation sur l’administration dans AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-65/administering/home.html?lang=fr)

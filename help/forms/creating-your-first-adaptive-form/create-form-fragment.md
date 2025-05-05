@@ -25,7 +25,7 @@ Un fragment est une partie réutilisable d’un formulaire. Un fragment peut tr�
 
 
 
-Pour plus d’informations, reportez-vous à la [documentation sur les modèles de formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html).
+Pour plus d’informations, reportez-vous à la [documentation sur les modèles de formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=fr).
 
 Si nécessaire, vous pouvez télécharger [Conjoint-details-fragment](assets/spouse-details-fragment.zip) et l’importer dans AEM à l’aide du [gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp)
 

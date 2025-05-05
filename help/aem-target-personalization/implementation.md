@@ -58,7 +58,7 @@ Vous devez disposer d’une instance de création et de publication AEM avant de
 
 #### Configurer des instances de création et de publication AEM
 
-1. Obtenez une copie du [fichier JAR de démarrage rapide AEM et une licence.](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware?lang=fr)
+1. Obtenez une copie du [fichier JAR de démarrage rapide AEM et une licence.](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/deploy.html#GettingtheSoftware?lang=fr)
 2. Créez une structure de dossiers sur votre ordinateur comme suit :
    ![Structure de dossiers.](assets/implementation/aem-setup-1.png)
 3. Renommez le fichier JAR de démarrage rapide en `aem-author-p4502.jar` et placez-le sous le répertoire `/author`. Ajoutez le fichier `license.properties` sous le répertoire `/author`.

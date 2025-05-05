@@ -229,7 +229,7 @@ RewriteRule ^(.*)$ ${skicampaign:$1|/} [L,R=301]
 >
 >Le terme *sans pipeline* est utilisé pour souligner que les configurations ne sont *déployées qu’une seule fois* et que l’équipe marketing peut gérer les redirections d’URL en mettant à jour le fichier texte.
 
-Pour déployer les configurations, utilisez le pipeline [full-stack](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) ou [configuration de niveau web](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) dans le [Cloud Manager](https://my.cloudmanager.adobe.com/).
+Pour déployer les configurations, utilisez le pipeline [full-stack](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#full-stack-pipeline) ou [configuration de niveau web](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines#web-tier-config-pipelines) dans le [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
 ![Déploiement via un pipeline full stack](./assets/pipeline-free-redirects/deploy-full-stack-pipeline.png)
 

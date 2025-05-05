@@ -35,7 +35,7 @@ Comment [configurer](./how-to-setup.md) un RDE dans AEM as a Cloud Service.
 
 ## Ressources supplémentaires
 
-[Une présentation de la documentation sur les RDE.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#introduction)
+[Une présentation de la documentation sur les RDE.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html?lang=fr#introduction)
 
 [Pipeline CI/CD Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=fr)
 

@@ -28,8 +28,8 @@ Commencez avec les configurations et les paramétrages essentiels pour que AEM A
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials {title=Get started with Assets view}
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-all-configure-administrative-access
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-get-started-assets-essentials {title=Get started with Assets view}
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -38,8 +38,8 @@ Commencez avec les configurations et les paramétrages essentiels pour que AEM A
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" title="Configuration de l’accès administratif à Experience Manager" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1130bb3c4cd41705ba451f3219632a7d57f9b3f85.jpeg?width=400&format=pjpg&optimize=medium" alt="Configuration de l’accès administratif à Experience Manager"
+                    <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-all-configure-administrative-access" title="Configuration de l’accès administratif à Experience Manager" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1130bb3c4cd41705ba451f3219632a7d57f9b3f85.jpeg?width=400&format=pjpg&optimize=medium" alt="Configuration de l’accès administratif à Experience Manager"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -47,11 +47,11 @@ Commencez avec les configurations et les paramétrages essentiels pour que AEM A
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" title="Configuration de l’accès administratif à Experience Manager">Configuration de l’accès administratif à Experience Manager</a>
+                        <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" title="Configuration de l’accès administratif à Experience Manager">Configuration de l’accès administratif à Experience Manager</a>
                     </p>
                     <p class="is-size-6">Découvrez comment les utilisateurs s’authentifient à l’aide d’Adobe IMS pour AEM as a Cloud Service et comment les utilisateurs, groupes d’utilisateurs et profils de produits Adobe IMS sont utilisés pour contrôler l’accès à AEM et à ses fonctionnalités.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-all-configure-administrative-access" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
@@ -61,8 +61,8 @@ Commencez avec les configurations et les paramétrages essentiels pour que AEM A
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials" title="Prise en main d’AEM Assets Essentials" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1bdc0e38944ddc90ff77140bb859bb728cc5d4065.jpeg?width=400&format=pjpg&optimize=medium" alt="Prise en main d’AEM Assets Essentials"
+                    <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-get-started-assets-essentials" title="Prise en main d’AEM Assets Essentials" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1bdc0e38944ddc90ff77140bb859bb728cc5d4065.jpeg?width=400&format=pjpg&optimize=medium" alt="Prise en main d’AEM Assets Essentials"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -70,11 +70,11 @@ Commencez avec les configurations et les paramétrages essentiels pour que AEM A
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials" target="_blank" rel="referrer" title="Prise en main de la vue Assets">Prise en main de la vue Assets</a>
+                        <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-get-started-assets-essentials" target="_blank" rel="referrer" title="Prise en main de la vue Assets">Prise en main de la vue Assets</a>
                     </p>
                     <p class="is-size-6">Découvrez comment AEM Assets Essentials peut rationaliser la gestion des ressources numériques pour votre service.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-get-started-assets-essentials" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
@@ -98,8 +98,8 @@ Naviguez dans l’interface d’affichage d’Assets comme un pro : découvrez l
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-assets-view-search-use
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-assets-view-search-use
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -108,8 +108,8 @@ Naviguez dans l’interface d’affichage d’Assets comme un pro : découvrez l
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" title="Générer une image Assets à l’aide d’Adobe Firefly" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_16fdb25830809ba4c0fe9fda9afa150b64b0f83f5.jpeg?width=400&format=pjpg&optimize=medium" alt="Générer une image Assets à l’aide d’Adobe Firefly"
+                    <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" title="Générer une image Assets à l’aide d’Adobe Firefly" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_16fdb25830809ba4c0fe9fda9afa150b64b0f83f5.jpeg?width=400&format=pjpg&optimize=medium" alt="Générer une image Assets à l’aide d’Adobe Firefly"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,11 +117,11 @@ Naviguez dans l’interface d’affichage d’Assets comme un pro : découvrez l
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" target="_blank" rel="referrer" title="Générer une image Assets à l’aide d’Adobe Firefly">Générer une image Assets à l’aide d’Adobe Firefly</a>
+                        <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" target="_blank" rel="referrer" title="Générer une image Assets à l’aide d’Adobe Firefly">Générer une image Assets à l’aide d’Adobe Firefly</a>
                     </p>
                     <p class="is-size-6">Découvrez comment AEM Assets peut augmenter la vitesse du contenu à l’aide d’Adobe Firefly et de l’IA dédiée aux généralités.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
@@ -131,8 +131,8 @@ Naviguez dans l’interface d’affichage d’Assets comme un pro : découvrez l
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-assets-view-search-use" title="Recherchez Assets dans la vue AEM Assets Assets." target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_10a54527c0613cd760d10f3c5c95141203d88a0aa.jpeg?width=400&format=pjpg&optimize=medium" alt="Recherchez Assets dans la vue AEM Assets Assets."
+                    <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-assets-view-search-use" title="Recherchez Assets dans la vue AEM Assets Assets." target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_10a54527c0613cd760d10f3c5c95141203d88a0aa.jpeg?width=400&format=pjpg&optimize=medium" alt="Recherchez Assets dans la vue AEM Assets Assets."
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -140,11 +140,11 @@ Naviguez dans l’interface d’affichage d’Assets comme un pro : découvrez l
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-assets-view-search-use" target="_blank" rel="referrer" title="Recherchez Assets dans la vue AEM Assets Assets.">Recherchez Assets dans la vue AEM Assets Assets</a>
+                        <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-assets-view-search-use" target="_blank" rel="referrer" title="Recherchez Assets dans la vue AEM Assets Assets.">Recherchez Assets dans la vue AEM Assets Assets</a>
                     </p>
                     <p class="is-size-6">Découvrez comment la recherche de vues AEM Assets Assets peut vous aider à rechercher rapidement et facilement des ressources.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-assets-view-search-use" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-assets-view-search-use" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
@@ -161,7 +161,7 @@ Bénéficiez d’une collaboration fluide en intégrant AEM Assets as a Cloud Se
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials
   { title = Manage Creative Workflows Using Workfront and AEM Assets }
   { description = Learn how Adobe Workfront and AEM Assets help your organization manage the creative workflow. }
 
@@ -172,8 +172,8 @@ Bénéficiez d’une collaboration fluide en intégrant AEM Assets as a Cloud Se
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" title="Gestion des workflows Creative à l’aide de Workfront et d’Assets Essentials" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1781139425d77174a992697a33d097a8bd5b54d5b.jpeg?width=400&format=pjpg&optimize=medium" alt="Gestion des workflows Creative à l’aide de Workfront et d’Assets Essentials"
+                    <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" title="Gestion des workflows Creative à l’aide de Workfront et d’Assets Essentials" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1781139425d77174a992697a33d097a8bd5b54d5b.jpeg?width=400&format=pjpg&optimize=medium" alt="Gestion des workflows Creative à l’aide de Workfront et d’Assets Essentials"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -181,11 +181,11 @@ Bénéficiez d’une collaboration fluide en intégrant AEM Assets as a Cloud Se
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" title="Gestion des workflows Creative à l’aide de Workfront et d’Assets Essentials">Gestion des workflows Creative à l’aide de Workfront et d’AEM Assets</a>
+                        <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" title="Gestion des workflows Creative à l’aide de Workfront et d’Assets Essentials">Gestion des workflows Creative à l’aide de Workfront et d’AEM Assets</a>
                     </p>
                     <p class="is-size-6">Découvrez comment Adobe Workfront et AEM Assets aident votre entreprise à gérer le workflow de création.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>
                 </a>
             </div>
