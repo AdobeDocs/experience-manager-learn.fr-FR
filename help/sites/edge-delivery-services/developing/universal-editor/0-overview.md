@@ -19,7 +19,7 @@ ht-degree: 7%
 
 # Tutoriel de développement sur Edge Delivery Services et l’éditeur universel
 
-Tutoriel de développement sur Edge Delivery Services et l’éditeur universel ](./assets/0-overview/hero.png)![
+Tutoriel de développement sur Edge Delivery Services et l’éditeur universel ![&#128279;](./assets/0-overview/hero.png)
 
 Dans ce tutoriel, vous apprendrez les principes de base de la création d’un site web AEM qui associe une création puissante à l’éditeur universel et une diffusion ultra-rapide à l’aide de Edge Delivery Services. À la fin, vous aurez une compréhension de base de la création d’un projet, de la configuration d’un environnement de développement local et de la création d’un bloc.
 

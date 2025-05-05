@@ -135,7 +135,7 @@ L’`assetId` est l’UUID JCR de la ressource avec le préfixe `urn:aaid:aem:`,
 
 ### Appeler l’API à l’aide du navigateur
 
-Avant de développer l’application, appelons l’API à l’aide de la fonctionnalité **Essayer** de la documentation de l’API [](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/).
+Avant de développer l’application, appelons l’API à l’aide de la fonctionnalité **Essayer** de la documentation de l’API [&#128279;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/).
 
 1. Ouvrez la documentation de l’API de création [Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) dans le navigateur.
 

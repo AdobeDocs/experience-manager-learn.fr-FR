@@ -388,7 +388,7 @@ Une fois les modifications transmises à la branche `wknd-styles`, créez une re
    * Les URL de test indiquent à AEM Code Sync les branches à utiliser pour la validation et la comparaison. L’URL « Après » utilise le `wknd-styles` de branche de travail pour vérifier comment les modifications de code affectent les performances du site web.
 
 6. Cliquez sur **Créer une demande d’extraction**.
-7. Attendez que l’application GitHub de synchronisation de code AEM [](./1-new-code-project.md) **termine les vérifications de qualité**. En cas d’échec, résolvez les erreurs et réexécutez les vérifications.
+7. Attendez que l’application GitHub de synchronisation de code AEM [&#128279;](./1-new-code-project.md) **termine les vérifications de qualité**. En cas d’échec, résolvez les erreurs et réexécutez les vérifications.
 8. Une fois les vérifications effectuées, **fusionnez la requête de tirage** dans `main`.
 
 Une fois les modifications fusionnées dans `main`, elles sont considérées comme déployées en production et le nouveau développement peut se poursuivre en fonction de ces mises à jour.

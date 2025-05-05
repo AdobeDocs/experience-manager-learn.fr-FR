@@ -28,6 +28,7 @@ ht-degree: 8%
    * Localisez le fichier `resources/credentials/server_credentials.json`
    * Ouvrez-le et **mettez à jour les informations d’identification** spécifiques à votre environnement.
    * Assurez-vous qu’il comprend des valeurs valides pour :
+
      `clientId`, `clientSecret`, `adobeIMSV3TokenEndpointURL` et
      `scopes`
 

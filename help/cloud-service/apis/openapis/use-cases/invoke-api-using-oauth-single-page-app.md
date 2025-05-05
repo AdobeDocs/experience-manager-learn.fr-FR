@@ -403,7 +403,7 @@ L’étape Configurer le projet ADC est _répétée_ à partir de l’[Configure
 
    ![Enregistrer l’API configurée](../assets/spa/save-configured-api.png)
 
-1. Répétez les étapes ci-dessus pour ajouter l’API de création AEM Assets ****.
+1. Répétez les étapes ci-dessus pour ajouter l’API de création AEM Assets **&#x200B;**.
 
 1. Examinez l’API AEM et la configuration de l’authentification.
 

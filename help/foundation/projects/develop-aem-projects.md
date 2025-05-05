@@ -69,7 +69,7 @@ Vous trouverez un exemple d’assistant personnalisé pour le modèle de projet 
 
 ### Gadgets {#gadgets}
 
-Il n’existe aucune propriété supplémentaire sur ce nœud, mais les enfants du nœud gadgets contrôlent quelles mosaïques de projet renseignent le tableau de bord du projet lorsqu’un nouveau projet est créé. Les [mosaïques du projet](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/sites/authoring/projects/projects) (également appelés gadgets ou capsules) sont des cartes simples qui renseignent l’espace de travail d’un projet. Vous trouverez une liste complète des mosaïques prêtes à l’emploi sous : **/libs/cq/gui/components/projects/admin/pod. **Les personnes propriétaires de projet peuvent toujours ajouter/supprimer des mosaïques après la création d’un projet.
+Il n’existe aucune propriété supplémentaire sur ce nœud, mais les enfants du nœud gadgets contrôlent quelles mosaïques de projet renseignent le tableau de bord du projet lorsqu’un nouveau projet est créé. Les [mosaïques du projet](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/sites/authoring/projects/projects) (également appelés gadgets ou capsules) sont des cartes simples qui renseignent l’espace de travail d’un projet. Vous trouverez une liste complète des mosaïques prêtes à l’emploi sous : **/libs/cq/gui/components/projects/admin/pod. &#x200B;** Les personnes propriétaires de projet peuvent toujours ajouter/supprimer des mosaïques après la création d’un projet.
 
 ### Rôles {#roles}
 
@@ -77,7 +77,7 @@ Il existe 3 [rôles par défaut](https://experienceleague.adobe.com/fr/docs/exp
 
 ### Workflows {#workflows}
 
-Une des raisons les plus intéressantes de la création d’un modèle de projet personnalisé est qu’il vous offre la possibilité de configurer les workflows disponibles pour être utilisés dans le projet. Il peut s’agir de workflows prêts à l’emploi ou personnalisés. Sous le nœud **workflows**, il doit y avoir un nœud **models** (également `nt:unstructured`) et les nœuds enfants spécifient les modèles de workflow disponibles. La propriété **modelId **pointe vers le modèle de workflow sous /etc/workflow et la propriété **wizard** pointe vers la boîte de dialogue utilisée lors du démarrage du workflow. L’un des avantages remarquables des projets est la possibilité d’ajouter une boîte de dialogue personnalisée (assistant) pour capturer des métadonnées spécifiques à l’entreprise au démarrage du workflow, ce qui peut ensuite déclencher d’autres actions dans le workflow.
+Une des raisons les plus intéressantes de la création d’un modèle de projet personnalisé est qu’il vous offre la possibilité de configurer les workflows disponibles pour être utilisés dans le projet. Il peut s’agir de workflows prêts à l’emploi ou personnalisés. Sous le nœud **workflows**, il doit y avoir un nœud **models** (également `nt:unstructured`) et les nœuds enfants spécifient les modèles de workflow disponibles. La propriété **modelId &#x200B;** pointe vers le modèle de workflow sous /etc/workflow et la propriété **wizard** pointe vers la boîte de dialogue utilisée lors du démarrage du workflow. L’un des avantages remarquables des projets est la possibilité d’ajouter une boîte de dialogue personnalisée (assistant) pour capturer des métadonnées spécifiques à l’entreprise au démarrage du workflow, ce qui peut ensuite déclencher d’autres actions dans le workflow.
 
 ```shell
 <projects-template-root> (cq:Template)
