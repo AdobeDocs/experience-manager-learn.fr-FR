@@ -52,7 +52,7 @@ Découvrez chacun des trois chemins d’accès à créer avec AEM Sites au moyen
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
+* https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
   {title = Traditional Sites - WKND Tutorial}
   {description = Learn how to build a sample AEM Sites project using the WKND tutorial. This guide walks you through project setup, Core Components, Editable Templates, client-side libraries, and component development.}
   {image = ./assets/aem-wknd-spa-editor-tutorial.png}
@@ -62,7 +62,7 @@ Découvrez chacun des trois chemins d’accès à créer avec AEM Sites au moyen
   {description = Explore Edge Delivery Services with comprehensive guides. The Build, Publish, and Launch guides cover everything you need to get started with EDS.}
   {image = ./assets/edge-delivery-services.png}
   {target = _blank}
-* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview
+* https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/overview
   {title = Headless/API-First - Tutorials}
   {description = Learn how to build headless applications powered by AEM content. Tutorials cover frameworks like iOS, Android, and React—choose what fits your stack.}
   {image = ./assets/headless.png}
@@ -120,7 +120,7 @@ Découvrez chacun des trois chemins d’accès à créer avec AEM Sites au moyen
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview" title="Headless/API-First - Tutoriels" target="_self" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/overview" title="Headless/API-First - Tutoriels" target="_self" rel="referrer">
                         <img class="is-bordered-r-small" src="./assets/headless.png" alt="Headless/API-First - Tutoriels"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -129,11 +129,11 @@ Découvrez chacun des trois chemins d’accès à créer avec AEM Sites au moyen
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" title="Headless/API-First - Tutoriels">Headless/API-First - Tutoriels</a>
+                        <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" title="Headless/API-First - Tutoriels">Headless/API-First - Tutoriels</a>
                     </p>
                     <p class="is-size-6">Découvrez comment créer des applications découplées optimisées par du contenu AEM. Les tutoriels couvrent des frameworks tels qu’iOS™ Android et React. Choisissez ce qui correspond à votre pile.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/overview" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
 </a>
             </div>
@@ -146,9 +146,9 @@ Découvrez chacun des trois chemins d’accès à créer avec AEM Sites au moyen
 ## Ressources supplémentaires
 
 * [Documentation sur la création sur AEM Sites.](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/sites/authoring/essentials/first-steps)
-* [Documentation sur le développement sur AEM Sites.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/introduction/getting-started)
-* [Documentation sur l’administration sur AEM Sites.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/home)
-* [Documentation sur le déploiement sur AEM Sites.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/introduction/platform)
+* [Documentation sur le développement sur AEM Sites.](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/developing/introduction/getting-started)
+* [Documentation sur l’administration sur AEM Sites.](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/sites/administering/home)
+* [Documentation sur le déploiement sur AEM Sites.](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/introduction/platform)
 * [Tutoriels sur AEM as a Cloud Service](/help/cloud-service/overview.md)
 * [Tutoriels sur AEM Assets](/help/assets/overview.md)
 * [Tutoriels sur AEM Forms](/help/forms/overview.md)
