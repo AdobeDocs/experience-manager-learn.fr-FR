@@ -12,9 +12,9 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
+source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1727'
 ht-degree: 3%
 
 ---
@@ -89,6 +89,10 @@ L’étape Configurer le projet ADC est _répétée_ à partir de l’[Configure
 
    ![Sélectionner l’authentification](../assets/s2s/select-authentication.png)
 
+   >[!TIP]
+   >
+   >Si vous ne voyez pas l’option d’authentification de serveur à serveur , cela signifie que l’utilisateur ou l’utilisatrice qui configure l’intégration n’est pas ajouté(e) en tant que développeur ou développeuse au profil de produit auquel le service est associé. Voir [Activer l’authentification de serveur à serveur](../setup.md#enable-server-to-server-authentication) pour plus d’informations.
+
 1. Renommez les informations d’identification pour une identification plus facile (si nécessaire), puis cliquez sur **Suivant**. À des fins de démonstration, le nom par défaut est utilisé.
 
    ![Renommer les informations d’identification](../assets/s2s/rename-credential.png)
@@ -135,7 +139,7 @@ L’`assetId` est l’UUID JCR de la ressource avec le préfixe `urn:aaid:aem:`,
 
 ### Appeler l’API à l’aide du navigateur
 
-Avant de développer l’application, appelons l’API à l’aide de la fonctionnalité **Essayer** de la documentation de l’API [&#128279;](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/).
+Avant de développer l’application, appelons l’API à l’aide de la fonctionnalité **Essayer** de la documentation de l’API [](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/).
 
 1. Ouvrez la documentation de l’API de création [Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) dans le navigateur.
 

@@ -12,9 +12,9 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 610fe6fc91a400baa9d7f5d40a6a5c2084f93ed0
+source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1440'
 ht-degree: 1%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 1%
 # Configurer les API AEM basées sur OpenAPI
 
 Découvrez comment configurer votre environnement AEM as a Cloud Service pour activer l’accès aux API AEM basées sur OpenAPI.
+
+Dans cet exemple, l’API AEM Assets utilisant la méthode d’authentification de serveur à serveur est utilisée pour démontrer le processus de configuration. Vous pouvez suivre les mêmes étapes pour d’autres API AEM basées sur OpenAPI.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
 
@@ -78,13 +80,25 @@ Vérifiez l’association en cliquant sur l’icône _Afficher les détails_ à 
 
 ![Services de révision associés au profil de produit](./assets/setup/review-services-associated-with-product-profile.png)
 
-Par défaut, le service **Utilisateurs de l’API AEM Assets** n’est associé à aucun profil de produit. Associons-le au profil de produit **Utilisateurs AEM Assets Collaborator - auteur - Programme XXX - Environnement XXX** nouvellement ajouté. Après cette association, l’_API de création de ressources_ du projet ADC peut configurer l’authentification de serveur à serveur souhaitée et associer le compte d’authentification du projet ADC (créé à l’étape suivante) au profil de produit.
+### Activer l’accès aux API AEM Assets{#enable-aem-assets-apis-access}
+
+Par défaut, le service **Utilisateurs de l’API AEM Assets** n’est associé à aucun profil de produit. Associons-le au profil de produit **Utilisateurs AEM Assets Collaborator - auteur - Programme XXX - Environnement XXX** nouvellement ajouté ou à tout autre profil de produit que vous souhaitez utiliser pour l’accès à l’API AEM Assets.
 
 ![Associer le service Utilisateurs de l’API AEM Assets au profil de produit](./assets/setup/associate-aem-assets-api-users-service-with-product-profile.png)
 
+### Activer l’authentification de serveur à serveur
+
+Pour activer l’authentification de serveur à serveur pour les API AEM souhaitées, l’utilisateur configurant l’intégration à l’aide de Adobe Developer Console (ADC) doit être ajouté en tant que développeur au profil de produit auquel le service est associé.
+
+Par exemple, pour activer l’authentification de serveur à serveur pour l’API AEM Assets, l’utilisateur doit être ajouté en tant que développeur au profil de produit **Utilisateurs AEM Assets Collaborator - auteur - Programme XXX - Environnement XXX**.
+
+![Associer le développeur au profil de produit](./assets/setup/associate-developer-to-product-profile.png)
+
+Après cette association, l’_API de création de ressources_ du projet ADC peut configurer l’authentification de serveur à serveur souhaitée et associer le compte d’authentification du projet ADC (créé à l’étape suivante) au profil de produit.
+
 >[!IMPORTANT]
 >
->L’étape ci-dessus est essentielle pour activer l’authentification de serveur à serveur pour l’API AEM Assets. Sans cette association, l’API AEM Assets ne peut pas être utilisée avec la méthode d’authentification de serveur à serveur.
+>L’étape ci-dessus est essentielle pour activer l’authentification de serveur à serveur pour l’API AEM souhaitée. Sans cette association, l’API AEM ne peut pas être utilisée avec la méthode d’authentification de serveur à serveur.
 
 ## Créer un projet Adobe Developer Console (ADC){#adc-project}
 
@@ -125,6 +139,11 @@ Après avoir créé le projet ADC, vous devez ajouter les API AEM souhaitées, c
    ![Sélectionner l’authentification](./assets/s2s/select-authentication.png)
 
    L’authentification de serveur à serveur est idéale pour les services principaux nécessitant un accès à l’API sans interaction de l’utilisateur. Les options d’authentification Application web et Application d’une seule page sont adaptées aux applications nécessitant un accès API pour le compte des utilisateurs. Consultez [ Différence entre les informations d’identification OAuth de serveur à serveur et les informations d’identification d’application web et d’application d’une seule page ](./overview.md#difference-between-oauth-server-to-server-vs-web-app-vs-single-page-app-credentials) pour plus d’informations.
+
+   >[!TIP]
+   >
+   >Si vous ne voyez pas l’option d’authentification de serveur à serveur , cela signifie que l’utilisateur ou l’utilisatrice qui configure l’intégration n’est pas ajouté(e) en tant que développeur ou développeuse au profil de produit auquel le service est associé. Voir [Activer l’authentification de serveur à serveur](#enable-server-to-server-authentication) pour plus d’informations.
+
 
 1. Si nécessaire, vous pouvez renommer l’API pour une identification plus facile. À des fins de démonstration, le nom par défaut est utilisé.
 
