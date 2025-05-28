@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: ebc609ae621ea5d4d0eba0e28202448b6eaeb8cc
+source-git-commit: 2ffe4706856f0dbf63f2916af010f23bdb7b0045
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '456'
 ht-degree: 91%
 
 ---
@@ -140,6 +140,7 @@ ht-degree: 91%
    + [Vue d’ensemble de Dynamic Media](dynamic-media/dynamic-media-overview-feature-video-use.md)
    + [Application de bureau Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Images {#images}
+      + [Automatisation des images](dynamic-media/dynamic-media-image-automation.md)
       + [Modèles Dynamic Media](dynamic-media/dynamic-media-templates.md)
       + [Instantané Dynamic Media](dynamic-media/dynamic-media-snapshot.md)
       + [Recadrage intelligent](dynamic-media/smart-crop-feature-video-use.md)
