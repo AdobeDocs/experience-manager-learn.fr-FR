@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
-source-git-commit: 17aa4aeb053a0bc0beca5e005185c49cf7a06a67
+source-git-commit: d138fd849f8d82228b48b0f5b21f1198388e82af
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 92%
+source-wordcount: '588'
+ht-degree: 93%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 92%
 + Fragments d’expérience {#experience-fragments}
    + [Utiliser des fragments d’expérience](experience-fragments/experience-fragments-feature-video-use.md)
    + [Créer des blocs](experience-fragments/building-blocks.md)
-   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr){target=_blank}
+   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Vue d’ensemble](./edge-delivery-services/overview.md)
    + Développement{#developing}
@@ -194,7 +194,6 @@ ht-degree: 92%
       + [Personnaliser l’expérience complète d’une page web](integrations/adobe-target/personalization-web-page.md)
 + Apprendre De Vos Pairs {#expert-resources}
    + [Vue d’ensemble](expert-resources/learn-from-your-peers-overview.md)
-   + [Création D’Un Guide De Création Dans AEM Sites](expert-resources/authoring-guide-in-sites.md)
    + [Évaluation de la maturité d’AEM Sites](expert-resources/maturity-assessment.md)
    + [Maintenance du site](expert-resources/site-maintenance.md)
    + [Conseils et astuces AEM Champion : session 1](expert-resources/champion-tips-1.md)
