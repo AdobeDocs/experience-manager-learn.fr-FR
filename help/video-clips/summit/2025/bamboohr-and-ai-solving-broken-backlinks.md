@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Découvrez comment BambooHR a utilisé l’IA pour identifier et corriger les liens entrants rompus, ce qui a entraîné une augmentation de 4 % du trafic organique.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459238/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461989/?learn=on&enablevpops&captions=fre_fr)

@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Découvrez comment les modèles Dynamic Media permettent aux marketeurs de créer du contenu en direct et personnalisable pour des campagnes personnalisées.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459241/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462348/?learn=on&enablevpops&captions=fre_fr)

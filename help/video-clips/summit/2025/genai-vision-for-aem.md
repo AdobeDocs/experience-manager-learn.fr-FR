@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Découvrez l’approche d’Adobe pour réduire les barrières à l’entrée, unifier les workflows et optimiser l’impact commercial avec les outils GenAI.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459231/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462143/?learn=on&enablevpops&captions=fre_fr)

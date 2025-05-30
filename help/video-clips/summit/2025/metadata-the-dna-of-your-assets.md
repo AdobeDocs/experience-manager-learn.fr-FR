@@ -25,4 +25,4 @@ ht-degree: 0%
 
 Découvrez comment les métadonnées génèrent des workflows, des recherches et des informations, et comment l’automatisation peut enrichir les métadonnées pour s’aligner sur les normes de la marque.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459218/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461967/?learn=on&enablevpops&captions=fre_fr)
