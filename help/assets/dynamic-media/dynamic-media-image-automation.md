@@ -21,7 +21,7 @@ ht-degree: 6%
 
 Découvrez comment utiliser Dynamic Media dans AEM pour créer des rendus virtuels, gérer la transparence et automatiser le traitement des images en vue d’une réutilisation de contenu évolutive.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459589/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463047/?learn=on&enablevpops&captions=fre_fr)
 
 
 ## Exemple de ressources Dynamic Media
