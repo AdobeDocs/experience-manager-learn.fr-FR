@@ -3,7 +3,7 @@ user-guide-title: Courts métrages vidéo Adobe Experience Manager
 breadcrumb-title: Courts métrages vidéo
 user-guide-description: Collection masquée
 auto-video-transcripts: true
-source-git-commit: 0d93dab6ccdae1420589a00f3a46eef10bc16ec8
+source-git-commit: 57a207cc492912537be024315119d4a8d9dadebe
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-# Courts métrages vidéo Adobe Experience Manager {#video-shorts}
+# Courts métrages vidéo Adobe Experience Manager {#video-clips}
 
 + Adobe Summit {#summit}
    + 2025 {#2025}
