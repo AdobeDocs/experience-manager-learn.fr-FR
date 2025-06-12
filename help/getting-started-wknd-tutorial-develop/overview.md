@@ -30,7 +30,7 @@ Bienvenue dans ce tutoriel en plusieurs parties conçu pour les développeurs et
 
 Ce tutoriel en plusieurs parties a pour objectif d’apprendre aux développeurs et développeuses comment mettre en œuvre un site web à l’aide des dernières normes et technologies d’Adobe Experience Manager (AEM). Après avoir terminé ce tutoriel, le développeur ou la développeuse doit comprendre les bases de la plateforme et les schémas de conception courants dans AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35576?quality=12&learn=on&captions=fre_fr)
 
 ## Options de démarrage d’un projet Sites
 
