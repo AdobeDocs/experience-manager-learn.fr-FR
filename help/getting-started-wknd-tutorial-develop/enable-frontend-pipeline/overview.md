@@ -15,7 +15,7 @@ last-substantial-update: 2022-09-23T00:00:00Z
 doc-type: Tutorial
 exl-id: b795e7e8-f611-4fc3-9846-1d3f1a28ccbc
 duration: 206
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: dbf63f30ccfd06e4f4d7883c2f7bc4ac78245364
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 100%
@@ -23,6 +23,8 @@ ht-degree: 100%
 ---
 
 # Activer le pipeline front-end pour l’archétype de projet standard d’AEM{#enable-front-end-pipeline-standard-aem-project}
+
+{{traditional-aem}}
 
 Découvrez comment activer le [projet AEM Sites WKND](https://github.com/adobe/aem-guides-wknd) (ou projet standard d’AEM) créé à l’aide de l’[archétype de projet d’AEM](https://github.com/adobe/aem-project-archetype) pour déployer des ressources front-end telles que CSS, JavaScript, des polices et des icônes à l’aide d’un pipeline front-end qui accélère le cycle du développement vers le déploiement. Le développement front-end est séparé du développement back-end full-stack sur AEM. Vous découvrirez également que ces ressources front-end ne sont __pas__ diffusées à partir du référentiel AEM, mais à partir du réseau CDN, un changement de paradigme de diffusion.
 

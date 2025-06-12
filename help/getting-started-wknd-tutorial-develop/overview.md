@@ -13,7 +13,7 @@ level: Beginner
 doc-type: Catalog
 exl-id: 09a600f4-1ada-4fb7-ae44-586364cff389
 recommendations: disable
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: dbf63f30ccfd06e4f4d7883c2f7bc4ac78245364
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 # Commencer avec AEM Sites - Tutoriel sur WKND {#introduction}
 
-{{edge-delivery-services}}
+{{traditional-aem}}
 
 Bienvenue dans ce tutoriel en plusieurs parties conçu pour les développeurs et développeuses qui découvrent Adobe Experience Manager (AEM). Ce tutoriel décrit la mise en œuvre d’un site AEM pour une marque de style de vie fictive, WKND. Le tutoriel aborde des sujets fondamentaux tels que la configuration de projet, les composants principaux, les modèles modifiables, les bibliothèques côté client et le développement de composants avec Adobe Experience Manager Sites.
 
@@ -30,7 +30,7 @@ Bienvenue dans ce tutoriel en plusieurs parties conçu pour les développeurs et
 
 Ce tutoriel en plusieurs parties a pour objectif d’apprendre aux développeurs et développeuses comment mettre en œuvre un site web à l’aide des dernières normes et technologies d’Adobe Experience Manager (AEM). Après avoir terminé ce tutoriel, le développeur ou la développeuse doit comprendre les bases de la plateforme et les schémas de conception courants dans AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/35576?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/30476?quality=12&learn=on)
 
 ## Options de démarrage d’un projet Sites
 
