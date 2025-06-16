@@ -11,7 +11,8 @@ thumbnail: kt-10900.jpeg
 doc-type: Tutorial
 exl-id: e055b356-dd26-4366-8608-5a0ccf5b4c49
 duration: 190
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 100%
@@ -20,20 +21,20 @@ ht-degree: 100%
 
 # Comment utiliser les composants React modifiables v2 d’AEM
 
-{{edge-delivery-services}}
+{{spa-editor-deprecation}}
 
 AEM fournit les [composants React modifiables v2 d’AEM](https://www.npmjs.com/package/@adobe/aem-react-editable-components), un SDK basé sur Node.js qui permet la création de composants React prenant en charge la modification de composants dans le contexte à l’aide de l’éditeur de SPA d’AEM.
 
-+ [Module npm](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-+ [Projet GitHub](https://github.com/adobe/aem-react-editable-components)
-+ [Documentation Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html?lang=fr)
+* [Module npm](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+* [Projet GitHub](https://github.com/adobe/aem-react-editable-components)
+* [Documentation Adobe](https://experienceleague.adobe.com/docs/experience-manager-65/developing/spas/spa-reference-materials.html?lang=fr)
 
 
 Pour plus d’informations et d’exemples de code pour les composants React modifiables v2 d’AEM, consultez la documentation technique :
 
-+ [Documentation d’intégration à AEM](https://github.com/adobe/aem-react-editable-components/tree/master/src/core)
-+ [Documentation des composants modifiables](https://github.com/adobe/aem-react-editable-components/tree/master/src/components)
-+ [Documentation sur les outils d’aide](https://github.com/adobe/aem-react-editable-components/tree/master/src/api)
+* [Documentation d’intégration à AEM](https://github.com/adobe/aem-react-editable-components/tree/master/src/core)
+* [Documentation des composants modifiables](https://github.com/adobe/aem-react-editable-components/tree/master/src/components)
+* [Documentation sur les outils d’aide](https://github.com/adobe/aem-react-editable-components/tree/master/src/api)
 
 ## Pages AEM
 
@@ -46,8 +47,7 @@ Assurez-vous que l’application React utilise Node.js 14+.
 
 L’ensemble minimal de dépendances pour que l’application React utilise les composants React modifiables v2 d’AEM est le suivant : `@adobe/aem-react-editable-components`, `@adobe/aem-spa-component-mapping` et `@adobe/aem-spa-page-model-manager`.
 
-
-+ `package.json`
+* `package.json`
 
 ```json
 {
@@ -75,7 +75,7 @@ Lors de l’utilisation des composants React modifiables d’AEM avec une applic
 
 Encapsulez l’application React avec un ModelManager initialisé et effectuez le rendu de l’application React. L’application React doit contenir une instance du composant `<Page>`, composant exporté depuis `@adobe/aem-react-editable-components`. Le composant `<Page>` suit une logique permettant de créer dynamiquement des composants React en fonction du `.model.json` fourni par AEM.
 
-+ `src/index.js`
+* `src/index.js`
 
 ```javascript
 import { Constants, ModelManager } from '@adobe/aem-spa-page-model-manager';
@@ -107,7 +107,7 @@ Le composant `<Page>` est transmis en tant que représentation de la page AEM au
 
 Le composant `<Page>` est transmis en tant que représentation de la page AEM au format JSON, via le `ModelManager`. Le composant `<Page>` crée ensuite dynamiquement des composants React pour chaque objet dans le fichier JSON en faisant correspondre la valeur `resourceType` de l’objet JS avec un composant React qui s’enregistre auprès du type de ressource via l’appel `MapTo(..)` du composant. Par exemple, ce qui suit peut être utilisé pour instancier une instance.
 
-+ `HTTP GET /content/.../home.model.json`
+* `HTTP GET /content/.../home.model.json`
 
 ```json
 ...
@@ -181,7 +181,7 @@ Les composants modifiables peuvent être réutilisés et incorporés les uns dan
 1. Le contenu JSON d’AEM pour le composant d’incorporation doit inclure le contenu pour satisfaire les composants incorporés. Pour ce faire, créez une boîte de dialogue pour le composant AEM qui collecte les données requises.
 1. L’instance « non modifiable » du composant React doit être incorporée, plutôt que l’instance « modifiable » encapsulée avec `<EditableComponent>`. En effet, si le composant incorporé possède le wrapper `<EditableComponent>`, l’éditeur de SPA tente d’habiller le composant interne avec la fonction Modifier de Chrome (zone de survol bleue), plutôt qu’avec le composant d’incorporation externe.
 
-+ `HTTP GET /content/.../home.model.json`
+* `HTTP GET /content/.../home.model.json`
 
 ```json
 ...

@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 31416399-6a4e-47d1-8ed8-be842a01a727
 duration: 409
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 100%
@@ -19,6 +20,8 @@ ht-degree: 100%
 ---
 
 # Intégrer une SPA {#developer-workflow}
+
+{{spa-editor-deprecation}}
 
 Découvrez comment le code source d’une application monopage écrite dans React peut être intégré à un projet Adobe Experience Manager (AEM). Découvrez comment utiliser des outils front-end modernes, tels qu’un serveur de développement Webpack, pour développer rapidement la SPA par rapport à l’API de modèle JSON AEM.
 

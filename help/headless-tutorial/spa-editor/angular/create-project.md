@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 49fcd603-ab1a-4f1e-ae1f-49d3ff373439
 duration: 252
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 100%
@@ -19,6 +20,8 @@ ht-degree: 100%
 ---
 
 # Projet d’éditeur de SPA {#create-project}
+
+{{spa-editor-deprecation}}
 
 Apprenez à utiliser un projet Maven d’Adobe Experience Manager (AEM) comme point de départ pour une application Angular intégrée à l’éditeur de SPA d’AEM.
 

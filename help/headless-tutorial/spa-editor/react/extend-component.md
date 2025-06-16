@@ -11,7 +11,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 44433595-08bc-4a82-9232-49d46c31b07b
 duration: 316
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
 workflow-type: tm+mt
 source-wordcount: '1058'
 ht-degree: 100%
@@ -19,6 +20,8 @@ ht-degree: 100%
 ---
 
 # Étendre un composant principal {#extend-component}
+
+{{spa-editor-deprecation}}
 
 Découvrez comment étendre un composant principal existant à utiliser avec l’éditeur de SPA d’AEM. Comprendre comment étendre un composant existant est une technique puissante permettant de personnaliser et développer les fonctionnalités d’une implémentation de l’éditeur de SPA d’AEM.
 

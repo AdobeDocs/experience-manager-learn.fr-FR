@@ -12,14 +12,17 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
 duration: 647
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 100%
 
 ---
 
 # Configuration rapide
+
+{{spa-editor-deprecation}}
 
 La configuration rapide est un parcours accéléré qui illustre comment installer et exécuter l’application WKND en tant que SPA distante, puis la créer à l’aide de l’éditeur de SPA d’AEM.
 
@@ -56,7 +59,7 @@ Ce tutoriel fonctionne avec les éléments suivants :
 
 Téléchargez et installez le démarrage rapide du SDK d’AEM sur le port 4502, avec les informations d’identification `admin/admin` par défaut.
 
-1. [Télécharger le dernier SDK d’AEM](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1)
+1. [Télécharger le dernier SDK d’AEM](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=1)
 1. Décompressez le SDK d’AEM vers `~/aem-sdk`.
 1. Exécutez le fichier Jar de démarrage rapide du SDK d’AEM.
 

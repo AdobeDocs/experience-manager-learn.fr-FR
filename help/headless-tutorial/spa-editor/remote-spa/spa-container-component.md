@@ -12,14 +12,17 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
 duration: 306
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+workflow-type: tm+mt
 source-wordcount: '1112'
 ht-degree: 100%
 
 ---
 
 # Composants de conteneur modifiables
+
+{{spa-editor-deprecation}}
 
 Les [composants fixes](./spa-fixed-component.md) offrent une certaine flexibilité pour créer du contenu SPA, mais cette approche est rigide et nécessite que le développement définisse la composition exacte du contenu modifiable. Pour que les créateurs et créatrices puissent proposer des expériences exceptionnelles, l’éditeur de SPA prend en charge l’utilisation de composants de conteneur dans la SPA. Les composants de conteneur permettent aux créateurs et créatrices de glisser-déposer des composants autorisés dans le conteneur afin de les créer, tout comme ils procèdent dans la création traditionnelle d’AEM Sites.
 
@@ -31,8 +34,8 @@ Dans ce chapitre, nous ajoutons un conteneur modifiable à la vue d’accueil, c
 
 Pour ajouter un composant de conteneur à la vue d’accueil :
 
-+ Importez le composant `ResponsiveGrid` du composant React modifiable d’AEM
-+ Importez et enregistrez des composants React modifiables personnalisés (texte et image) à utiliser dans le composant ResponsiveGrid
+* Importez le composant `ResponsiveGrid` du composant React modifiable d’AEM
+* Importez et enregistrez des composants React modifiables personnalisés (texte et image) à utiliser dans le composant ResponsiveGrid
 
 ### Utiliser le composant ResponsiveGrid.
 
@@ -41,12 +44,12 @@ Pour ajouter un domaine modifiable à la vue d’accueil :
 1. Ouvrez et modifiez `react-app/src/components/Home.js`
 1. Importez le composant `ResponsiveGrid` depuis `@adobe/aem-react-editable-components` et ajoutez-le au composant `Home`.
 1. Définissez les attributs suivants sur le composant `<ResponsiveGrid...>`.
-   + `pagePath = '/content/wknd-app/us/en/home'`
-   + `itemPath = 'root/responsivegrid'`
+   1. `pagePath = '/content/wknd-app/us/en/home'`
+   1. `itemPath = 'root/responsivegrid'`
 
    Cette instruction indique au composant `ResponsiveGrid` de récupérer son contenu à partir de la ressource AEM :
 
-   + `/content/wknd-app/us/en/home/jcr:content/root/responsivegrid`
+   1. `/content/wknd-app/us/en/home/jcr:content/root/responsivegrid`
 
    L’attribut `itemPath` est mappé au nœud `responsivegrid` défini dans le modèle AEM `Remote SPA Page` et est automatiquement créé sur les nouvelles pages AEM conçues à partir du modèle AEM `Remote SPA Page`.
 
@@ -284,9 +287,9 @@ Si ces importations ne sont _pas_ ajoutées, les codes `EditableText` et `Editab
 
 Les composants de conteneur AEM utilisent des stratégies pour dicter leurs composants autorisés. Il s’agit d’une configuration essentielle lors de l’utilisation de l’éditeur de SPA, car seuls les composants AEM ayant mappé des homologues de composant de SPA sont rendus par la SPA. Assurez-vous que seuls les composants pour lesquels nous avons fourni des implémentations de SPA sont autorisés :
 
-+ `EditableTitle` mappé à `wknd-app/components/title`
-+ `EditableText` mappé à `wknd-app/components/text`
-+ `EditableImage` mappé à `wknd-app/components/image`.
+* `EditableTitle` mappé à `wknd-app/components/title`
+* `EditableText` mappé à `wknd-app/components/text`
+* `EditableImage` mappé à `wknd-app/components/image`.
 
 Pour configurer le conteneur reponsivegrid du modèle de page de SPA distante :
 
@@ -304,9 +307,9 @@ Pour configurer le conteneur reponsivegrid du modèle de page de SPA distante :
 
 1. Sur la droite, sous l’onglet __Composants autorisés__, développez __APPLICATION WKND - CONTENU__.
 1. Assurez-vous que seuls les éléments suivants sont sélectionnés :
-   + Image
-   + Texte
-   + Titre
+   1. Image
+   1. Texte
+   1. Titre
 
    ![Page de SPA distante.](./assets/spa-container-component/templates-allowed-components.png)
 
@@ -319,13 +322,13 @@ Après la mise à jour de la SPA pour incorporer `<ResponsiveGrid...>` et les wr
 1. Connectez-vous au service de création AEM.
 1. Accédez à __Sites > Application WKND__.
 1. Cliquez sur __Accueil__, puis sélectionnez __Modifier__ dans la barre d’actions du haut.
-   + Un composant de texte « Hello World » s’affiche, car il a été automatiquement ajouté lors de la génération du projet à partir de l’archétype de projet AEM.
+   1. Un composant de texte « Hello World » s’affiche, car il a été automatiquement ajouté lors de la génération du projet à partir de l’archétype de projet AEM.
 1. Sélectionnez __Modifier__ dans le sélecteur de mode en haut à droite de l’éditeur de page.
 1. Recherchez le domaine modifiable du __conteneur de disposition__ sous le titre.
 1. Ouvrez la __barre latérale de l’éditeur de page__, puis sélectionnez la __vue Composants__.
 1. Faites glisser les composants suivants dans le __conteneur de disposition__ :
-   + Image
-   + Titre
+   1. Image
+   1. Titre
 1. Faites glisser les composants pour les réorganiser dans l’ordre suivant :
    1. Titre
    1. Image
@@ -333,8 +336,8 @@ Après la mise à jour de la SPA pour incorporer `<ResponsiveGrid...>` et les wr
 1. __Créez__ le composant de __titre__.
    1. Appuyez sur le composant de titre, puis sur l’icône __clé à molette__ pour __modifier__ le composant de titre.
    1. Ajoutez le texte suivant :
-      + Titre : __L’été arrive, profitons-en au maximum.__
-      + Type : __H1__
+      1. Titre : __L’été arrive, profitons-en au maximum.__
+      1. Type : __H1__
    1. Appuyez sur __Terminé__.
 1. __Créez__ le composant d’__image__.
    1. Faites glisser une image à partir de la barre latérale (après avoir basculé sur le mode d’affichage Ressources) sur le composant d’image.
@@ -344,19 +347,19 @@ Après la mise à jour de la SPA pour incorporer `<ResponsiveGrid...>` et les wr
 1. __Créez__ le composant de __texte__.
    1. Modifiez le composant de texte en appuyant dessus et en cliquant sur l’icône __clé à molette__.
    1. Ajoutez le texte suivant :
-      + _Actuellement, vous pouvez obtenir 15 % de réduction sur toutes les Adventures d’une semaine et 20 % sur toutes celles de 2 semaines ou plus. Au passage en caisse, ajoutez le code de campagne SUMMERISCOMING pour obtenir vos remises._
+      1. _Actuellement, vous pouvez obtenir 15 % de réduction sur toutes les Adventures d’une semaine et 20 % sur toutes celles de 2 semaines ou plus. Au passage en caisse, ajoutez le code de campagne SUMMERISCOMING pour obtenir vos remises._
    1. Appuyez sur __Terminé__.
 
 1. Vos composants ont été créés, mais s’empilent verticalement.
 
    ![Composants créés.](./assets/spa-container-component/authored-components.png)
 
-Utilisez le mode de disposition d’AEM pour ajuster la taille et la mise en page des composants.
+   Utilisez le mode de disposition d’AEM pour ajuster la taille et la mise en page des composants.
 
 1. Basculez sur le __mode de disposition__ à l’aide du sélecteur de mode situé en haut à droite.
 1. __Redimensionnez__ les composants Image et Texte, de manière à ce qu’ils soient côte à côte ;
-   + Le composant __Image__ doit avoir une __largeur de 8 colonnes__.
-   + Le composant __Texte__ doit avoir une __largeur de 3 colonnes__.
+   1. Le composant __Image__ doit avoir une __largeur de 8 colonnes__.
+   1. Le composant __Texte__ doit avoir une __largeur de 3 colonnes__.
 
    ![Composants de disposition.](./assets/spa-container-component/layout-components.png)
 
@@ -370,11 +373,11 @@ Utilisez le mode de disposition d’AEM pour ajuster la taille et la mise en pag
 
 Vous avez ajouté un composant de conteneur qui autorise les composants modifiables à être ajoutés par les créateurs et créatrices sur l’application WKND. Vous savez maintenant comment :
 
-+ Utiliser le composant `ResponsiveGrid` du composant React modifiable d’AEM dans la SPA
-+ Créer et enregistrer des composants React modifiables (texte et image) à utiliser dans la SPA via le composant de conteneur
-+ Configurer le modèle de page SPA distante pour autoriser les composants SPA
-+ Ajouter des composants modifiables au composant de conteneur
-+ Créer et disposer des composants dans l’éditeur de SPA.
+* Utiliser le composant `ResponsiveGrid` du composant React modifiable d’AEM dans la SPA
+* Créer et enregistrer des composants React modifiables (texte et image) à utiliser dans la SPA via le composant de conteneur
+* Configurer le modèle de page SPA distante pour autoriser les composants SPA
+* Ajouter des composants modifiables au composant de conteneur
+* Créer et disposer des composants dans l’éditeur de SPA.
 
 ## Étapes suivantes
 

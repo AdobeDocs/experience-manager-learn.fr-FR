@@ -12,14 +12,17 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: edd18f2f-6f24-4299-a31a-54ccc4f6d86e
 duration: 164
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 100%
 
 ---
 
 # Composants fixes modifiables
+
+{{spa-editor-deprecation}}
 
 Les composants React modifiables peuvent être « fixés » ou codés en dur dans les vues de la SPA. Cela permet aux développeurs et développeuses de placer des composants compatibles avec l’éditeur de SPA dans les vues de la SPA et aux utilisateurs et utilisatrices de créer le contenu des composants dans l’éditeur de SPA d’AEM.
 
@@ -31,8 +34,8 @@ Dans ce chapitre, nous remplaçons le titre de la vue d’accueil, « Current A
 
 Pour ajouter un composant __fixe__ à la vue d’accueil :
 
-+ Créez un composant personnalisé de titre modifiable et enregistrez-le dans le type de ressource Titre du projet.
-+ Placez le composant de titre modifiable dans la vue d’accueil de la SPA.
+* Créez un composant personnalisé de titre modifiable et enregistrez-le dans le type de ressource Titre du projet.
+* Placez le composant de titre modifiable dans la vue d’accueil de la SPA.
 
 ### Créez un composant de titre React modifiable.
 
@@ -175,10 +178,10 @@ Le fichier `Home.js` doit se présenter comme suit :
    ![Barre d’actions du composant de titre.](./assets/spa-fixed-component/title-action-bar.png)
 
 1. Créez le composant de titre :
-   + Titre : __WKND Adventures__
-   + Type/Taille : __H2__
+   1. Titre : __WKND Adventures__
+   1. Type/Taille : __H2__
 
-     ![Boîte de dialogue du composant de titre.](./assets/spa-fixed-component/title-dialog.png)
+      ![Boîte de dialogue du composant de titre.](./assets/spa-fixed-component/title-dialog.png)
 
 1. Appuyez sur __Terminé__ pour enregistrer.
 1. Prévisualisez vos modifications dans l’éditeur de SPA d’AEM.
@@ -190,9 +193,9 @@ Le fichier `Home.js` doit se présenter comme suit :
 
 Vous avez ajouté un composant fixe et modifiable à l’application WKND. Vous savez maintenant comment :
 
-+ Créer un composant fixe, mais modifiable, dans la SPA
-+ Créer le composant fixe dans AEM
-+ Voir le contenu créé dans la SPA distante.
+* Créer un composant fixe, mais modifiable, dans la SPA
+* Créer le composant fixe dans AEM
+* Voir le contenu créé dans la SPA distante.
 
 ## Étapes suivantes
 

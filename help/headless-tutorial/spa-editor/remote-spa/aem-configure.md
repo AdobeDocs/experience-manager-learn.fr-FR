@@ -12,23 +12,26 @@ recommendations: noDisplay, noCatalog
 doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
 duration: 297
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '1230'
-ht-degree: 100%
+hide: true
+source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
+workflow-type: tm+mt
+source-wordcount: '1229'
+ht-degree: 97%
 
 ---
 
 # Configurer AEM pour l’éditeur de SPA
 
+{{spa-editor-deprecation}}
+
 Bien que la base de code SPA soit gérée en dehors d’AEM, un projet AEM est nécessaire pour configurer la prise en charge des exigences en matière de contenu. Ce chapitre décrit la création d’un projet AEM qui contient les configurations nécessaires :
 
-+ Proxys des composants principaux de gestion de contenu web d’AEM
-+ Proxy de page SPA distante AEM
-+ Modèles de page SPA distante AEM
-+ Pages AEM de SPA distante de référence
-+ Sous-projet pour définir une SPA dans les mappages URL d’AEM
-+ Dossiers de configuration OSGi
+* Proxys des composants principaux de gestion de contenu web d’AEM
+* Proxy de page SPA distante AEM
+* Modèles de page SPA distante AEM
+* Pages AEM de SPA distante de référence
+* Sous-projet pour définir une SPA dans les mappages URL d’AEM
+* Dossiers de configuration OSGi
 
 ## Télécharger le projet de base à partir de GitHub
 
@@ -60,18 +63,18 @@ $ mvn -B archetype:generate \
 $ mv ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/wknd-app ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app
 ```
 
-_La dernière commande renomme simplement le dossier de projet AEM afin qu’il soit clair qu’il s’agit du projet AEM, qui ne doit pas être confondu avec la SPA distante._
+_La dernière commande renomme simplement le dossier de projet AEM afin qu’il soit clair qu’il s’agit du projet AEM, qui ne doit pas être confondu avec la SPA distante**
 
 Alors que `frontendModule="react"` est spécifié, le projet `ui.frontend` n’est pas utilisé pour le cas d’utilisation de SPA distante. La SPA est développée et gérée en externe sur AEM et utilise uniquement l’API de contenu d’AEM. L’indicateur `frontendModule="react"` est requis pour que le projet inclue les dépendances Java™ AEM `spa-project` et configure les modèles de page de SPA distante.
 
 L’archétype de projet AEM génère les éléments suivants qui servent à configurer AEM pour l’intégration à la SPA.
 
-+ __Proxys des composants principaux de gestion de contenu web AEM__ sur `ui.apps/src/.../apps/wknd-app/components`.
-+ __Proxy de page distante SPA AEM__ sur `ui.apps/src/.../apps/wknd-app/components/remotepage`.
-+ __Modèles de page AEM__ sur `ui.content/src/.../conf/wknd-app/settings/wcm/templates`.
-+ __Sous-projet pour définir les mappages de contenu__ sur `ui.content/src/...`.
-+ __Pages d’AEM de SPA distante de référence__ sur `ui.content/src/.../content/wknd-app`.
-+ __Dossiers de configuration OSGi__ sur `ui.config/src/.../apps/wknd-app/osgiconfig`.
+* **Proxys des composants principaux de gestion de contenu web AEM** sur `ui.apps/src/.../apps/wknd-app/components`.
+* **Proxy de page distante SPA AEM** sur `ui.apps/src/.../apps/wknd-app/components/remotepage`.
+* **Modèles de page AEM** sur `ui.content/src/.../conf/wknd-app/settings/wcm/templates`.
+* **Sous-projet pour définir les mappages de contenu** sur `ui.content/src/...`.
+* **Pages d’AEM de SPA distante de référence** sur `ui.content/src/.../content/wknd-app`.
+* **Dossiers de configuration OSGi** sur `ui.config/src/.../apps/wknd-app/osgiconfig`.
 
 Avec le projet AEM de base généré, quelques réglages assurent la compatibilité de l’éditeur de SPA avec les SPA distantes.
 
@@ -258,20 +261,20 @@ Le fichier `com.adobe.granite.cors.impl.CORSPolicyImpl~wknd-app_remote-spa.cfg.j
 
 Les principaux éléments de configuration sont :
 
-+ `alloworigin` indique les hôtes autorisés à récupérer du contenu d’AEM.
-   + `localhost:3000` est ajouté à la prise en charge de la SPA s’exécutant localement.
-   + `https://external-hosted-app` agit comme un espace réservé à remplacer par le domaine sur lequel la SPA distante est hébergée.
-+ `allowedpaths` spécifie les chemins d’accès dans AEM couverts par cette configuration CORS. Le paramètre par défaut permet d’accéder à tout le contenu d’AEM, mais il ne peut être défini que sur les chemins d’accès spécifiques auxquels la SPA peut accéder, par exemple : `/content/wknd-app`.
+* `alloworigin` indique les hôtes autorisés à récupérer du contenu d’AEM.
+   * `localhost:3000` est ajouté à la prise en charge de la SPA s’exécutant localement.
+   * `https://external-hosted-app` agit comme un espace réservé à remplacer par le domaine sur lequel la SPA distante est hébergée.
+* `allowedpaths` spécifie les chemins d’accès dans AEM couverts par cette configuration CORS. Le paramètre par défaut permet d’accéder à tout le contenu d’AEM, mais il ne peut être défini que sur les chemins d’accès spécifiques auxquels la SPA peut accéder, par exemple : `/content/wknd-app`.
 
 ## Définir la page AEM en tant que modèle de page SPA distante
 
-L’archétype de projet AEM génère un projet prêt à l’intégration d’AEM avec une SPA distante, cependant un petit réglage important est nécessaire dans la structure de page d’AEM générée automatiquement. Le type de page d’AEM générée automatiquement doit être remplacé par __page SPA distante__, au lieu de __page SPA__.
+L’archétype de projet AEM génère un projet prêt à l’intégration d’AEM avec une SPA distante, cependant un petit réglage important est nécessaire dans la structure de page d’AEM générée automatiquement. Le type de page d’AEM générée automatiquement doit être remplacé par **page SPA distante**, au lieu de **page SPA**.
 
 1. Dans votre IDE, ouvrez le sous-projet `ui.content`.
 1. Ouvrez vers `src/main/content/jcr_root/content/wknd-app/us/en/home/.content.xml`.
 1. Mettez à jour ce fichier `.content.xml` avec :
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
            jcr:primaryType="cq:Page">
@@ -301,8 +304,8 @@ L’archétype de projet AEM génère un projet prêt à l’intégration d’AE
 
 Les modifications clés sont des mises à jour vers les nœuds `jcr:content` :
 
-+ `cq:template` vers `/conf/wknd-app/settings/wcm/templates/spa-remote-page`
-+ `sling:resourceType` vers `wknd-app/components/remotepage`
+* `cq:template` vers `/conf/wknd-app/settings/wcm/templates/spa-remote-page`
+* `sling:resourceType` vers `wknd-app/components/remotepage`
 
 Le fichier `src/main/content/jcr_root/content/wknd-app/us/en/home/.content.xml` doit se présenter comme suit :
 
@@ -312,7 +315,7 @@ Ces modifications permettent à cette page, qui agit comme la racine de la SPA d
 
 >[!NOTE]
 >
->Si ce projet a été précédemment déployé sur AEM, veillez à supprimer la page AEM en tant que __Sites > Application WKND > us > en > Page d’accueil de l’application WKND__, étant donné que le projet `ui.content` est défini sur __fusion__ des nœuds plutôt que sur __mise à jour__.
+>Si ce projet a été précédemment déployé sur AEM, veillez à supprimer la page AEM en tant que **Sites > Application WKND > us > en > Page d’accueil de l’application WKND**, étant donné que le projet `ui.content` est défini sur **fusion** des nœuds plutôt que sur **mise à jour**.
 
 Cette page peut également être supprimée et recréée en tant que page SPA distante directement dans AEM, mais étant donné qu’elle est créée automatiquement dans le projet `ui.content`, il est préférable de la mettre à jour dans la base de code.
 
@@ -333,21 +336,21 @@ Cette page peut également être supprimée et recréée en tant que page SPA di
 Une fois le projet AEM déployé, une dernière étape est nécessaire pour préparer l’éditeur de SPA à charger la SPA distante. Dans AEM, marquez la page AEM correspondant à la racine de la SPA,`/content/wknd-app/us/en/home`, générée par l’archétype de projet AEM.
 
 1. Connectez-vous au service de création AEM.
-1. Accédez à __Sites > Application WKND > us > en__.
-1. Sélectionnez __Page d’accueil de l’application WKND__ puis __Propriétés__.
+1. Accédez à **Sites > Application WKND > us > en**.
+1. Sélectionnez **Page d’accueil de l’application WKND** puis **Propriétés**.
 
    ![Page d’accueil de l’application WKND - Propriétés.](./assets/aem-content/edit-home-properties.png)
 
-1. Accédez à l’onglet __SPA__.
-1. Remplissez la __Configuration des SPA distantes__.
-   + __URL de l’hôte SPA__ : `http://localhost:3000`.
-      + URL de la racine de la SPA distante.
+1. Accédez à l’onglet **SPA**.
+1. Remplissez la **Configuration des SPA distantes**.
+   1. **URL de l’hôte SPA** : `http://localhost:3000`.
+      1. URL de la racine de la SPA distante.
 
    ![Page d’accueil de l’application WKND - Configuration de la SPA distante.](./assets/aem-content/remote-spa-configuration.png)
 
-1. Appuyez sur __Enregistrer et fermer__.
+1. Appuyez sur **Enregistrer et fermer**.
 
-N’oubliez pas que nous avons remplacé le type de cette page par __Page SPA distante__, ce qui nous permet de voir l’onglet __SPA__ dans __Propriétés de la page__.
+N’oubliez pas que nous avons remplacé le type de cette page par **Page SPA distante**, ce qui nous permet de voir l’onglet **SPA** dans **Propriétés de la page**.
 
 Cette configuration ne doit être définie que sur la page AEM correspondant à la racine de la SPA. Toutes les pages AEM situées sous cette page héritent de cette valeur.
 
@@ -355,11 +358,11 @@ Cette configuration ne doit être définie que sur la page AEM correspondant à 
 
 Vous avez maintenant préparé les configurations AEM et vous les avez déployées sur votre instance de création AEM locale. Vous savez maintenant comment :
 
-+ Supprimer la SPA générée par l’archétype de projet AEM en commentant les dépendances dans `ui.frontend`.
-+ Ajouter des mappages Sling à AEM qui mappent les itinéraires SPA aux ressources dans AEM.
-+ Configurer des stratégies de sécurité de partage de ressources entre origines multiples (CORS) permettant à la SPA distante d’utiliser du contenu provenant d’AEM.
-+ Déployer un projet AEM sur votre service de création de SDK d’AEM local.
-+ Marquer une page AEM en tant que racine SPA distante à l’aide de la propriété de page URL d’hôte de la SPA.
+* Supprimer la SPA générée par l’archétype de projet AEM en commentant les dépendances dans `ui.frontend`.
+* Ajouter des mappages Sling à AEM qui mappent les itinéraires SPA aux ressources dans AEM.
+* Configurer des stratégies de sécurité de partage de ressources entre origines multiples (CORS) permettant à la SPA distante d’utiliser du contenu provenant d’AEM.
+* Déployer un projet AEM sur votre service de création de SDK d’AEM local.
+* Marquer une page AEM en tant que racine SPA distante à l’aide de la propriété de page URL d’hôte de la SPA.
 
 ## Étapes suivantes
 
