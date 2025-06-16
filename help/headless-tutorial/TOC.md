@@ -8,10 +8,10 @@ sub-product: Experience Manager Sites
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-2963
 index: y
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
+source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 100%
+source-wordcount: '317'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 + [Présentation d’AEM Headless](./overview.md)
 + GraphQL {#graphql}
    + [Portail de développement d’AEM Headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr){target=_blank}
-   + [Vue d’ensemble](./graphql/overview.md)
+   + [Présentation](./graphql/overview.md)
    + Configuration rapide {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)
       + [SDK AEM](./graphql/quick-setup/local-sdk.md)
@@ -46,11 +46,11 @@ ht-degree: 100%
       + [3 - Explorer l’API GraphQL d’AEM](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
       + [4 - Requêtes GraphQL persistantes](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 - Intégration de l’application cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
-   + Premier tutoriel Headless{#headless-first}
+   + Tutoriel initial sur le découplage{#headless-first}
       + [Vue d’ensemble](./graphql/headless-first-tutorial/overview.md)
-      + [1. Modélisation de contenu](./graphql/headless-first-tutorial/1-content-modeling.md)
-      + [2. API AEM Headless et React](./graphql/headless-first-tutorial/2-aem-headless-apis-and-react.md)
-      + [3. Composants complexes](./graphql/headless-first-tutorial/3-complex-components.md)
+      + [&#x200B;1. Modélisation de contenu](./graphql/headless-first-tutorial/1-content-modeling.md)
+      + [&#x200B;2. API AEM Headless et React](./graphql/headless-first-tutorial/2-aem-headless-apis-and-react.md)
+      + [&#x200B;3. Composants complexes](./graphql/headless-first-tutorial/3-complex-components.md)
 + Déploiements{#deployments}
    + [Présentation](./graphql/deployment/overview.md)
    + [Application monopage (SPA)](./graphql/deployment/spa.md)
@@ -61,7 +61,7 @@ ht-degree: 100%
       + [Hôtes AEM](./graphql/deployment/configurations/aem-hosts.md)
       + [CORS](./graphql/deployment/configurations/cors.md)
       + [Filtres Dispatcher](./graphql/deployment/configurations/dispatcher-filters.md)
-+ Procédures {#how-to}
++ Comment {#how-to}
    + [Texte enrichi](./graphql/how-to/rich-text.md)
    + [Images](./graphql/how-to/images.md)
    + [Contenu localisé](./graphql/how-to/localized-content.md)
@@ -72,20 +72,11 @@ ht-degree: 100%
    + [Installer GraphiQL sur AEM 6.5](./graphql/how-to/install-graphiql-aem-6-5.md)
    + Exemples {#example-apps}
       + [React](./graphql/example-apps/react-app.md)
-      + [Next.js](./graphql/example-apps/next-js.md)
       + [Composant web](./graphql/example-apps/web-component.md)
       + [iOS](./graphql/example-apps/ios-swiftui-app.md)
       + [Android](./graphql/example-apps/android-app.md)
       + [Node.js](./graphql/example-apps/server-to-server-app.md)
 + Éditeur de SPA{#spa-editor}
-   + React{#react}
-      + [Vue d’ensemble](./spa-editor/react/overview.md)
-      + [1 - Créer un projet](./spa-editor/react/create-project.md)
-      + [2 - Intégrer une SPA](./spa-editor/react/integrate-spa.md)
-      + [3 - Mapper des composants SPA](./spa-editor/react/map-components.md)
-      + [4 - Navigation et routage](./spa-editor/react/navigation-routing.md)
-      + [5 - Composant personnalisé](./spa-editor/react/custom-component.md)
-      + [6 - Étendre un composant](./spa-editor/react/extend-component.md)
    + Angular{#angular}
       + [Vue d’ensemble](./spa-editor/angular/overview.md)
       + [1 - Projet d’éditeur de SPA](./spa-editor/angular/create-project.md)
@@ -101,9 +92,9 @@ ht-degree: 100%
       + [3 - Composants fixes](./spa-editor/remote-spa/spa-fixed-component.md)
       + [4 - Composants de conteneur](./spa-editor/remote-spa/spa-container-component.md)
       + [5 - Itinéraires dynamiques](./spa-editor/remote-spa/spa-dynamic-routes.md)
-   + Procédures{#how-to}
+   + Comment{#how-to}
       + [Composants React modifiables v2 d’AEM](./spa-editor/how-to/react-core-components-v2.md)
-+ Authentification basée sur les jetons {#authentication}
++ Authentification par jeton {#authentication}
    + [Vue d’ensemble](./authentication/overview.md)
    + [1 - Jeton d’accès au développement local](./authentication/local-development-access-token.md)
    + [2 - Informations d’identification de service](./authentication/service-credentials.md)
