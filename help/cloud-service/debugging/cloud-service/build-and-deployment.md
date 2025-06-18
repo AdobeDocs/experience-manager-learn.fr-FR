@@ -102,7 +102,7 @@ set the 'mergeConfigurations' flag to 'true' if you want to merge multiple confi
 #### Cause 2
 
 + __Cause :__ le projet AEM inclut incorrectement le même package de code deux fois, ce qui entraîne la duplication de toute configuration OSGi contenue dans ce package.
-+ __Résolution :__ examinez tous les fichiers pom.xml des packages incorporés dans l’ensemble du projet et assurez-vous que la [configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?mt=false&amp;lang=fr#cloud-manager-target) `filevault-package-maven-plugin` est définie sur `<cloudManagerTarget>none</cloudManagerTarget>`.
++ __Résolution :__ examinez tous les fichiers pom.xml des packages incorporés dans l’ensemble du projet et assurez-vous que la [configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=fr&mt=false&amp;lang=fr#cloud-manager-target) `filevault-package-maven-plugin` est définie sur `<cloudManagerTarget>none</cloudManagerTarget>`.
 
 ### Script repoinit mal formé
 

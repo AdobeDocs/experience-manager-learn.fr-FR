@@ -24,10 +24,10 @@ Maîtrisez les compétences essentielles et les bonnes pratiques pour le dévelo
 
 <!-- CARDS 
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-sites-understand-architects
-* https://experienceleague.adobe.com/en/playlists/experience-manager-all-understand-back-end-development
-* https://experienceleague.adobe.com/en/playlists/experience-manager-all-setup-local-development
-* https://experienceleague.adobe.com/en/playlists/experience-manager-all-develop-rde
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-sites-understand-architects
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-all-understand-back-end-development
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-all-setup-local-development
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-all-develop-rde
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -37,7 +37,7 @@ Maîtrisez les compétences essentielles et les bonnes pratiques pour le dévelo
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-sites-understand-architects" title="Comprendre AEM Sites pour les architectes">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1079d7d05b9f1ad433bdec71fac7e04436e1684f1.jpeg?width=400&format=pjpg&optimize=medium" alt="Comprendre AEM Sites pour les architectes"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1079d7d05b9f1ad433bdec71fac7e04436e1684f1.jpeg?width=400&format=pjpg&optimize=medium" alt="Comprendre AEM Sites pour les architectes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -60,7 +60,7 @@ Maîtrisez les compétences essentielles et les bonnes pratiques pour le dévelo
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-all-understand-back-end-development" title="Comprendre le développement back-end">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1c88e99f3fe604dccf409b32d697b66f60431eee7.jpeg?width=400&format=pjpg&optimize=medium" alt="Comprendre le développement back-end"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1c88e99f3fe604dccf409b32d697b66f60431eee7.jpeg?width=400&format=pjpg&optimize=medium" alt="Comprendre le développement back-end"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -83,7 +83,7 @@ Maîtrisez les compétences essentielles et les bonnes pratiques pour le dévelo
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-all-setup-local-development" title="Configurer un environnement de développement local">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1b3dccbab8c493251ffdc7f23e39fde9fded0f255.jpeg?width=400&format=pjpg&optimize=medium" alt="Configurer un environnement de développement local"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1b3dccbab8c493251ffdc7f23e39fde9fded0f255.jpeg?width=400&format=pjpg&optimize=medium" alt="Configurer un environnement de développement local"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -106,7 +106,7 @@ Maîtrisez les compétences essentielles et les bonnes pratiques pour le dévelo
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-all-develop-rde" title="Environnement de développement rapide (RDE)">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_102cf0aa068306e35b13599b5ccef446e89a78890.jpeg?width=400&format=pjpg&optimize=medium" alt="Environnement de développement rapide (RDE)"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_102cf0aa068306e35b13599b5ccef446e89a78890.jpeg?width=400&format=pjpg&optimize=medium" alt="Environnement de développement rapide (RDE)"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -134,8 +134,8 @@ Découvrez comment utiliser Cloud Manager pour déployer du code vers AEM as 
 
 <!-- CARDS 
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-cloud-manager-understand
-* https://experienceleague.adobe.com/en/playlists/experience-manager-cloud-manager-deploy-ci-cd
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-cloud-manager-understand
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-cloud-manager-deploy-ci-cd
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -145,7 +145,7 @@ Découvrez comment utiliser Cloud Manager pour déployer du code vers AEM as 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-cloud-manager-understand" title="Comprendre Adobe Cloud Manager">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1383686274558dee2e609c6c1b74ff1ded52dbcf3.jpeg?width=400&format=pjpg&optimize=medium" alt="Comprendre Adobe Cloud Manager"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1383686274558dee2e609c6c1b74ff1ded52dbcf3.jpeg?width=400&format=pjpg&optimize=medium" alt="Comprendre Adobe Cloud Manager"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -168,7 +168,7 @@ Découvrez comment utiliser Cloud Manager pour déployer du code vers AEM as 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-cloud-manager-deploy-ci-cd" title="Déployer du code avec les pipelines CI/CD dans Adobe Cloud Manager">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_10c2e4d034d80903a1172b1c2c2735f56e10b88d4.jpeg?width=400&format=pjpg&optimize=medium" alt="Déployer du code avec les pipelines CI/CD dans Adobe Cloud Manager"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_10c2e4d034d80903a1172b1c2c2735f56e10b88d4.jpeg?width=400&format=pjpg&optimize=medium" alt="Déployer du code avec les pipelines CI/CD dans Adobe Cloud Manager"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -196,12 +196,12 @@ Découvrez des cas pratiques d’utilisation de développement et des guides dé
 
 <!-- CARDS 
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-all-develop-osgi-services
-* https://experienceleague.adobe.com/en/playlists/experience-manager-all-prevent-dos-and-doss-attacks
-* https://experienceleague.adobe.com/en/playlists/experience-manager-all-invoke-protected-apis
-* https://experienceleague.adobe.com/en/playlists/experience-manager-all-authenticate-with-tokens
-* https://experienceleague.adobe.com/en/playlists/experience-manager-all-build-event-driven-applications
-* https://experienceleague.adobe.com/en/playlists/experience-manager-forms-create-adaptive-form
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-all-develop-osgi-services
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-all-prevent-dos-and-doss-attacks
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-all-invoke-protected-apis
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-all-authenticate-with-tokens
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-all-build-event-driven-applications
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-forms-create-adaptive-form
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -211,7 +211,7 @@ Découvrez des cas pratiques d’utilisation de développement et des guides dé
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-all-develop-osgi-services" title="Découvrir comment développer des services OSGi">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_10efbe00bbfa3f785119b47b83c95138a045fe0dc.jpeg?width=400&format=pjpg&optimize=medium" alt="Découvrir comment développer des services OSGi"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_10efbe00bbfa3f785119b47b83c95138a045fe0dc.jpeg?width=400&format=pjpg&optimize=medium" alt="Découvrir comment développer des services OSGi"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -234,7 +234,7 @@ Découvrez des cas pratiques d’utilisation de développement et des guides dé
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-all-prevent-dos-and-doss-attacks" title="Prévenir les attaques DOS et DDOS">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1df5af469c6cea05d7a157601e839fc8262fb224d.jpeg?width=400&format=pjpg&optimize=medium" alt="Prévenir les attaques DOS et DDOS"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1df5af469c6cea05d7a157601e839fc8262fb224d.jpeg?width=400&format=pjpg&optimize=medium" alt="Prévenir les attaques DOS et DDOS"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -257,7 +257,7 @@ Découvrez des cas pratiques d’utilisation de développement et des guides dé
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-all-invoke-protected-apis" title="Appeler des API HTTP protégées à partir d’AEM as a Cloud Service">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_124127b06939a25e2f759269c33a6f3d6e1e73f83.jpeg?width=400&format=pjpg&optimize=medium" alt="Appeler des API HTTP protégées à partir d’AEM as a Cloud Service"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_124127b06939a25e2f759269c33a6f3d6e1e73f83.jpeg?width=400&format=pjpg&optimize=medium" alt="Appeler des API HTTP protégées à partir d’AEM as a Cloud Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -280,7 +280,7 @@ Découvrez des cas pratiques d’utilisation de développement et des guides dé
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-all-authenticate-with-tokens" title="S’authentifier dans AEM as a Cloud Service à partir d’une application externe à l’aide de jetons">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_19739c42fb856d41a44a824965e52a0e9d1d0ff93.jpeg?width=400&format=pjpg&optimize=medium" alt="S’authentifier dans AEM as a Cloud Service à partir d’une application externe à l’aide de jetons"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_19739c42fb856d41a44a824965e52a0e9d1d0ff93.jpeg?width=400&format=pjpg&optimize=medium" alt="S’authentifier dans AEM as a Cloud Service à partir d’une application externe à l’aide de jetons"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -303,7 +303,7 @@ Découvrez des cas pratiques d’utilisation de développement et des guides dé
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-all-build-event-driven-applications" title="Créer des applications pilotées par les événements avec AEM Eventing">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1f862db6d4010a36681241b51b791e14d0bceed88.jpeg?width=400&format=pjpg&optimize=medium" alt="Créer des applications pilotées par les événements avec AEM Eventing"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1f862db6d4010a36681241b51b791e14d0bceed88.jpeg?width=400&format=pjpg&optimize=medium" alt="Créer des applications pilotées par les événements avec AEM Eventing"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -326,7 +326,7 @@ Découvrez des cas pratiques d’utilisation de développement et des guides dé
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-forms-create-adaptive-form" title="Créer un formulaire adaptatif">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1d2800b28928f6b1f7b8b4087fbcd9eb7b5cdccca.jpeg?width=400&format=pjpg&optimize=medium" alt="Créer un formulaire adaptatif"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1d2800b28928f6b1f7b8b4087fbcd9eb7b5cdccca.jpeg?width=400&format=pjpg&optimize=medium" alt="Créer un formulaire adaptatif"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -354,10 +354,10 @@ Découvrez comment intégrer AEM as a Cloud Service à des systèmes, des ou
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-forms-integrate-adobe-sign
-* https://experienceleague.adobe.com/en/playlists/experience-manager-forms-integrate-salesforce
-* https://experienceleague.adobe.com/en/playlists/experience-manager-forms-store-data-in-azure-storage
-* https://experienceleague.adobe.com/en/playlists/commerce-integrate-aem-sites
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-forms-integrate-adobe-sign
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-forms-integrate-salesforce
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-forms-store-data-in-azure-storage
+* https://experienceleague.adobe.com/fr/playlists/commerce-integrate-aem-sites
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -367,7 +367,7 @@ Découvrez comment intégrer AEM as a Cloud Service à des systèmes, des ou
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-forms-integrate-adobe-sign" title="Intégrer AEM Forms et Adobe Sign">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1f0841a26b2f3b55ff8b9d340f7046f88f4f58751.jpeg?width=400&format=pjpg&optimize=medium" alt="Intégrer AEM Forms et Adobe Sign"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1f0841a26b2f3b55ff8b9d340f7046f88f4f58751.jpeg?width=400&format=pjpg&optimize=medium" alt="Intégrer AEM Forms et Adobe Sign"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -390,7 +390,7 @@ Découvrez comment intégrer AEM as a Cloud Service à des systèmes, des ou
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-forms-integrate-salesforce" title="Intégrer AEM Forms à Salesforce">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_19b9fbd448095e10c30786f3468961ee4c58c36e3.jpeg?width=400&format=pjpg&optimize=medium" alt="Intégrer AEM Forms à Salesforce"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_19b9fbd448095e10c30786f3468961ee4c58c36e3.jpeg?width=400&format=pjpg&optimize=medium" alt="Intégrer AEM Forms à Salesforce"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -413,7 +413,7 @@ Découvrez comment intégrer AEM as a Cloud Service à des systèmes, des ou
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-forms-store-data-in-azure-storage" title="Stocker les données AEM Forms dans le stockage Azure">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_15978409f33cd3858199e6fa80be80839bf9a2515.jpeg?width=400&format=pjpg&optimize=medium" alt="Stocker les données AEM Forms dans le stockage Azure"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_15978409f33cd3858199e6fa80be80839bf9a2515.jpeg?width=400&format=pjpg&optimize=medium" alt="Stocker les données AEM Forms dans le stockage Azure"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -436,7 +436,7 @@ Découvrez comment intégrer AEM as a Cloud Service à des systèmes, des ou
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/commerce-integrate-aem-sites" title="Ajouter des fonctionnalités Commerce à votre site AEM">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1da2787808c6705e2c29bbbd9799563771a8bb314.jpeg?width=400&format=pjpg&optimize=medium" alt="Ajouter des fonctionnalités Commerce à votre site AEM"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1da2787808c6705e2c29bbbd9799563771a8bb314.jpeg?width=400&format=pjpg&optimize=medium" alt="Ajouter des fonctionnalités Commerce à votre site AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

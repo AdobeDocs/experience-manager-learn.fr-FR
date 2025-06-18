@@ -28,8 +28,8 @@ Commencez avec les configurations et les paramétrages essentiels pour qu’AEM�
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-configure-administrators
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-all-configure-administrative-access
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-configure-administrators
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -39,7 +39,7 @@ Commencez avec les configurations et les paramétrages essentiels pour qu’AEM�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-all-configure-administrative-access" title="Configurer l’accès administratif à Experience Manager" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1130bb3c4cd41705ba451f3219632a7d57f9b3f85.jpeg?width=400&format=pjpg&optimize=medium" alt="Configurer l’accès administratif à Experience Manager"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1130bb3c4cd41705ba451f3219632a7d57f9b3f85.jpeg?width=400&format=pjpg&optimize=medium" alt="Configurer l’accès administratif à Experience Manager"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -62,7 +62,7 @@ Commencez avec les configurations et les paramétrages essentiels pour qu’AEM�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-configure-administrators" title="Configurer AEM Assets" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_10ff5e029664c15b4f0982e17cd2420f86892026e.jpeg?width=400&format=pjpg&optimize=medium" alt="Configurer AEM Assets"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_10ff5e029664c15b4f0982e17cd2420f86892026e.jpeg?width=400&format=pjpg&optimize=medium" alt="Configurer AEM Assets"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -96,10 +96,10 @@ Naviguez dans l’interface d’administration de manière professionnelle : d�
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-business-users  
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-understand-metadata
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-optimize-search
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-use-smart-tags
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-get-started-business-users  
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-understand-metadata
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-optimize-search
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-use-smart-tags
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -109,7 +109,7 @@ Naviguez dans l’interface d’administration de manière professionnelle : d�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-get-started-business-users" title="Commencer avec la vue d’administration AEM Assets pour les utilisateurs et utilisatrices professionnels" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1ef8147e9c1eae5160028ef72a069e1dc359f67d6.jpeg?width=400&format=pjpg&optimize=medium" alt="Commencer avec la vue d’administration AEM Assets pour les utilisateurs et utilisatrices professionnels"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1ef8147e9c1eae5160028ef72a069e1dc359f67d6.jpeg?width=400&format=pjpg&optimize=medium" alt="Commencer avec la vue d’administration AEM Assets pour les utilisateurs et utilisatrices professionnels"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -132,7 +132,7 @@ Naviguez dans l’interface d’administration de manière professionnelle : d�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-understand-metadata" title="Comprendre les métadonnées de ressources dans AEM Assets" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_14b36b75c74414a6466b1285aaec1e8c77fa3df5c.jpeg?width=400&format=pjpg&optimize=medium" alt="Comprendre les métadonnées de ressources dans AEM Assets"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_14b36b75c74414a6466b1285aaec1e8c77fa3df5c.jpeg?width=400&format=pjpg&optimize=medium" alt="Comprendre les métadonnées de ressources dans AEM Assets"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -155,7 +155,7 @@ Naviguez dans l’interface d’administration de manière professionnelle : d�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-optimize-search" title="Optimiser la recherche dans AEM Assets" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1f15aea73bd3e4e5dda006cf15154ffa716096f29.jpeg?width=400&format=pjpg&optimize=medium" alt="Optimiser la recherche dans AEM Assets"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1f15aea73bd3e4e5dda006cf15154ffa716096f29.jpeg?width=400&format=pjpg&optimize=medium" alt="Optimiser la recherche dans AEM Assets"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -178,7 +178,7 @@ Naviguez dans l’interface d’administration de manière professionnelle : d�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-use-smart-tags" title="Utiliser les balises intelligentes pour améliorer la découverte de ressources" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1812d95f81d708d5f0fef7e1003bcab6413afe4aa.jpeg?width=400&format=pjpg&optimize=medium" alt="Utiliser les balises intelligentes pour améliorer la découverte de ressources"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1812d95f81d708d5f0fef7e1003bcab6413afe4aa.jpeg?width=400&format=pjpg&optimize=medium" alt="Utiliser les balises intelligentes pour améliorer la découverte de ressources"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -212,8 +212,8 @@ Bénéficiez d’une collaboration fluide en intégrant AEM Assets as a Clou
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-create-renditions-content-automation
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-use-creative-operations-with-content-automation
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-create-renditions-content-automation
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-use-creative-operations-with-content-automation
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -223,7 +223,7 @@ Bénéficiez d’une collaboration fluide en intégrant AEM Assets as a Clou
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-create-renditions-content-automation" title="Créer des rendus personnalisés avec l’automatisation de contenu AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_13985b4766ee5b638f540f60e2a52fb024471662e.jpeg?width=400&format=pjpg&optimize=medium" alt="Créer des rendus personnalisés avec l’automatisation de contenu AEM"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_13985b4766ee5b638f540f60e2a52fb024471662e.jpeg?width=400&format=pjpg&optimize=medium" alt="Créer des rendus personnalisés avec l’automatisation de contenu AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -246,7 +246,7 @@ Bénéficiez d’une collaboration fluide en intégrant AEM Assets as a Clou
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-use-creative-operations-with-content-automation" title="Utiliser les opérations de création avec l’automatisation du contenu AEM Assets" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1d229d6d304f8ef16f59a8e759bd1b55a9b3b4d1d.jpeg?width=400&format=pjpg&optimize=medium" alt="Utiliser les opérations de création avec l’automatisation du contenu AEM Assets"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1d229d6d304f8ef16f59a8e759bd1b55a9b3b4d1d.jpeg?width=400&format=pjpg&optimize=medium" alt="Utiliser les opérations de création avec l’automatisation du contenu AEM Assets"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

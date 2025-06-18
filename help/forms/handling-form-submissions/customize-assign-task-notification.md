@@ -29,7 +29,7 @@ Pour inclure des valeurs des données de formulaire envoyées dans la notificati
 
 ## Créer une propriété de métadonnées personnalisée
 
-L’approche recommandée consiste à créer un composant OSGI qui implémente la méthode getUserMetadata de [WorkitemUserMetadataService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--).
+L’approche recommandée consiste à créer un composant OSGI qui implémente la méthode getUserMetadata de [WorkitemUserMetadataService](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/workspace/service/external/WorkitemUserMetadataService.html#getUserMetadataMap--).
 
 Le code suivant crée 4 propriétés de métadonnées (_firstName_, _lastName_, _reason_ et _amountRequested_) et définit les valeurs à partir des données envoyées. Par exemple, la valeur de propriété de métadonnées _firstName_ est définie sur la valeur de l’élément appelé firstName des données envoyées. Le code suivant suppose que les données envoyées du formulaire adaptatif sont au format xml. Les formulaires adaptatifs basés sur un schéma JSON ou un modèle de données de formulaire génèrent des données au format JSON.
 

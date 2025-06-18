@@ -54,7 +54,7 @@ Présentation vidéo de l’installation et de l’utilisation d’[!DNL Apache 
    -->
    ```
 
-1. (Facultatif) Répétez la dernière étape pour autoriser les composants sur [contenu verrouillé (initial) des modèles modifiables](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html?lang=fr) à être diffusés via [!DNL SDI] également. La raison de la configuration supplémentaire est que le contenu verrouillé des modèles modifiables est diffusé à partir de `/conf` au lieu de `/content`.
+1. (Facultatif) Répétez la dernière étape pour autoriser les composants sur [contenu verrouillé (initial) des modèles modifiables](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/page-templates-editable.html?lang=fr) à être diffusés via [!DNL SDI] également. La raison de la configuration supplémentaire est que le contenu verrouillé des modèles modifiables est diffusé à partir de `/conf` au lieu de `/content`.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>

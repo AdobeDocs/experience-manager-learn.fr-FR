@@ -28,8 +28,8 @@ Commencez avec les configurations et les paramétrages essentiels pour qu’AEM�
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-all-configure-administrative-access
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-get-started-assets-essentials {title=Get started with Assets view}
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-all-configure-administrative-access
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-get-started-assets-essentials {title=Get started with Assets view}
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -39,7 +39,7 @@ Commencez avec les configurations et les paramétrages essentiels pour qu’AEM�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-all-configure-administrative-access" title="Configurer l’accès administratif à Experience Manager" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1130bb3c4cd41705ba451f3219632a7d57f9b3f85.jpeg?width=400&format=pjpg&optimize=medium" alt="Configurer l’accès administratif à Experience Manager"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1130bb3c4cd41705ba451f3219632a7d57f9b3f85.jpeg?width=400&format=pjpg&optimize=medium" alt="Configurer l’accès administratif à Experience Manager"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -60,7 +60,7 @@ Commencez avec les configurations et les paramétrages essentiels pour qu’AEM�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-get-started-assets-essentials" title="Commencer avec AEM Assets Essentials" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1bdc0e38944ddc90ff77140bb859bb728cc5d4065.jpeg?width=400&format=pjpg&optimize=medium" alt="Commencer avec AEM Assets Essentials"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1bdc0e38944ddc90ff77140bb859bb728cc5d4065.jpeg?width=400&format=pjpg&optimize=medium" alt="Commencer avec AEM Assets Essentials"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -94,8 +94,8 @@ Naviguez dans l’interface de la vue Assets de manière professionnelle : déc
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-assets-view-search-use
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-assets-view-search-use
 
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -105,7 +105,7 @@ Naviguez dans l’interface de la vue Assets de manière professionnelle : déc
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-generate-image-assets-with-adobe-firefly" title="Générer des ressources d’image à l’aide d’Adobe Firefly" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_16fdb25830809ba4c0fe9fda9afa150b64b0f83f5.jpeg?width=400&format=pjpg&optimize=medium" alt="Générer des ressources d’image à l’aide d’Adobe Firefly"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_16fdb25830809ba4c0fe9fda9afa150b64b0f83f5.jpeg?width=400&format=pjpg&optimize=medium" alt="Générer des ressources d’image à l’aide d’Adobe Firefly"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -126,7 +126,7 @@ Naviguez dans l’interface de la vue Assets de manière professionnelle : déc
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-assets-view-search-use" title="Rechercher dans la vue Assets d’AEM Assets pour trouver des ressources" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_10a54527c0613cd760d10f3c5c95141203d88a0aa.jpeg?width=400&format=pjpg&optimize=medium" alt="Rechercher dans la vue Assets d’AEM Assets pour trouver des ressources"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_10a54527c0613cd760d10f3c5c95141203d88a0aa.jpeg?width=400&format=pjpg&optimize=medium" alt="Rechercher dans la vue Assets d’AEM Assets pour trouver des ressources"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -155,7 +155,7 @@ Bénéficiez d’une collaboration fluide en intégrant AEM Assets as a Clou
 
 <!-- CARDS
 
-* https://experienceleague.adobe.com/en/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials
+* https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials
   { title = Manage Creative Workflows Using Workfront and AEM Assets }
   { description = Learn how Adobe Workfront and AEM Assets help your organization manage the creative workflow. }
 
@@ -167,7 +167,7 @@ Bénéficiez d’une collaboration fluide en intégrant AEM Assets as a Clou
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/playlists/experience-manager-assets-manage-creative-workflows-with-workfront-and-assets-essentials" title="Gérer des workflows créatifs à l’aide de Workfront et d’Assets Essentials" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/playlists/media_1781139425d77174a992697a33d097a8bd5b54d5b.jpeg?width=400&format=pjpg&optimize=medium" alt="Gérer des workflows créatifs à l’aide de Workfront et d’Assets Essentials"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/playlists/media_1781139425d77174a992697a33d097a8bd5b54d5b.jpeg?width=400&format=pjpg&optimize=medium" alt="Gérer des workflows créatifs à l’aide de Workfront et d’Assets Essentials"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

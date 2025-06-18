@@ -18,7 +18,7 @@ ht-degree: 100%
 
 # Bonnes pratiques
 
-Les formulaires Adobe Experience Manager (AEM) peuvent vous aider à transformer des transactions complexes en expériences numériques simples et agréables. Le document suivant décrit d’autres bonnes pratiques à suivre lors du développement de formulaires adaptatifs. Utilisez ce document conjointement avec [ce document](https://helpx.adobe.com/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html?lang=fr#Overview).
+Les formulaires Adobe Experience Manager (AEM) peuvent vous aider à transformer des transactions complexes en expériences numériques simples et agréables. Le document suivant décrit d’autres bonnes pratiques à suivre lors du développement de formulaires adaptatifs. Utilisez ce document conjointement avec [ce document](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/adaptive-forms-best-practices.html?lang=fr#Overview).
 
 ## Conventions de nommage
 

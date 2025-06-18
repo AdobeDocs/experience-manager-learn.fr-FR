@@ -34,7 +34,7 @@ Voici le flux du cas d’utilisation :
 Pour que le cas d’utilisation fonctionne, vous aurez besoin des éléments suivants :
 
 * un serveur AEM avec package de module complémentaire Forms ;
-* une [clé d’intégration pour une application Acrobat Sign](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html).
+* une [clé d’intégration pour une application Acrobat Sign](https://helpx.adobe.com/fr/sign/kb/how-to-create-an-integration-key.html).
 
 ## Étapes suivantes
 

@@ -23,7 +23,7 @@ ht-degree: 100%
 
 # Intégrer AEM Headless et Target
 
-Découvrez comment intégrer AEM Headless à Adobe Target en exportant des fragments de contenu AEM vers Adobe Target et en les utilisant pour personnaliser les expériences découplées à l’aide du fichier alloy.js du SDK web Adobe Experience Platform. L’[application React WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) est utilisée pour découvrir comment ajouter à l’expérience une activité Target personnalisée à l’aide d’offres de fragments de contenu, afin de promouvoir une aventure WKND.
+Découvrez comment intégrer AEM Headless à Adobe Target en exportant des fragments de contenu AEM vers Adobe Target et en les utilisant pour personnaliser les expériences découplées à l’aide du fichier alloy.js du SDK web Adobe Experience Platform. L’[application React WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=fr) est utilisée pour découvrir comment ajouter à l’expérience une activité Target personnalisée à l’aide d’offres de fragments de contenu, afin de promouvoir une aventure WKND.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
 
@@ -164,7 +164,7 @@ L’activité Adobe Target qui cible l’emplacement `wknd-adventure-promo` peu
 
 ## Identifiant du train de données Experience Platform{#datastream-id}
 
-Un ID de [train de données Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html) est requis pour que les applications AEM découplées interagissent avec Adobe Target à l’aide du [SDK web d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
+Un ID de [train de données Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html?lang=fr) est requis pour que les applications AEM découplées interagissent avec Adobe Target à l’aide du [SDK web d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=fr).
 
 +++Développer pour obtenir des instructions détaillées
 
@@ -184,7 +184,7 @@ Un ID de [train de données Adobe Experience Platform](https://experienceleagu
       + L’environnement Target peut être défini dans Adobe Target sous __Administration > Hôtes__.
    + Espace de noms de l’ID tiers de Target : __Laisser vide__.
 1. Sélectionnez __Enregistrer__.
-1. Sur le côté droit, copiez l’__ID du train de données__ pour l’utiliser dans l’appel de configuration du [SDK web d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
+1. Sur le côté droit, copiez l’__ID du train de données__ pour l’utiliser dans l’appel de configuration du [SDK web d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=fr).
 
 +++
 
@@ -230,7 +230,7 @@ Les expériences mobiles Android™ et iOS peuvent être personnalisées en suiv
    $ npm run start
    ```
 
-1. Installez le [SDK web d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html#option-3%3A-using-the-npm-package) sous la forme d’un package NPM.
+1. Installez le [SDK web d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=fr#option-3%3A-using-the-npm-package) sous la forme d’un package NPM.
 
    ```shell
    $ cd ~/Code/aem-guides-wknd-graphql/personalization-tutorial

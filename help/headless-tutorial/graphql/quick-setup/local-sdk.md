@@ -20,7 +20,7 @@ ht-degree: 100%
 
 # Effectuer la configuration rapide d’AEM Headless à l’aide du SDK AEM local {#setup}
 
-La configuration rapide d’AEM Headless vous permet de vous familiariser avec AEM Headless en utilisant le contenu de l’exemple de projet du site WKND et un exemple d’application React (SPA) qui consomme le contenu via les API GraphQL d’AEM Headless. Ce guide utilise le [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html).
+La configuration rapide d’AEM Headless vous permet de vous familiariser avec AEM Headless en utilisant le contenu de l’exemple de projet du site WKND et un exemple d’application React (SPA) qui consomme le contenu via les API GraphQL d’AEM Headless. Ce guide utilise le [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=fr).
 
 ## Prérequis {#prerequisites}
 
@@ -32,7 +32,7 @@ Les outils suivants doivent être installés localement :
 
 ## 1. Installer le SDK AEM {#aem-sdk}
 
-Cette configuration utilise le [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?#aem-as-a-cloud-service-sdk) pour explorer les API GraphQL d’AEM. Cette section fournit un guide rapide pour l’installation du SDK AEM et son exécution en mode de création. Un guide plus détaillé pour la configuration d’un environnement de développement local [est disponible ici](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html#local-development-environment-set-up).
+Cette configuration utilise le [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=fr&#aem-as-a-cloud-service-sdk) pour explorer les API GraphQL d’AEM. Cette section fournit un guide rapide pour l’installation du SDK AEM et son exécution en mode de création. Un guide plus détaillé pour la configuration d’un environnement de développement local [est disponible ici](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr#local-development-environment-set-up).
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Cette configuration utilise le [SDK AEM as a Cloud Service](https://experiencele
 
 L’exemple de contenu provenant du **Site de référence WKND** est utilisé en vue d’accélérer le tutoriel. WKND est une marque de loisirs fictive, souvent prise en exemple pour les formations AEM.
 
-Le site WKND comprend les configurations requises pour exposer un [point d’entrée GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html). Dans une mise en œuvre concrète, suivez les étapes documentées pour [inclure les points d’entrée GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html) dans votre projet client. Un [CORS](#cors-config) a également été compilé dans le cadre du site WKND. Une configuration CORS est requise pour accorder l’accès à une application externe. Vous trouverez plus d’informations sur [CORS](#cors-config) ci-dessous.
+Le site WKND comprend les configurations requises pour exposer un [point d’entrée GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html?lang=fr). Dans une mise en œuvre concrète, suivez les étapes documentées pour [inclure les points d’entrée GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/content-fragments.html?lang=fr) dans votre projet client. Un [CORS](#cors-config) a également été compilé dans le cadre du site WKND. Une configuration CORS est requise pour accorder l’accès à une application externe. Vous trouverez plus d’informations sur [CORS](#cors-config) ci-dessous.
 
 1. Téléchargez le dernier package AEM compilé pour le site WKND : [aem-guides-wknd.all-x.x.x.zip](https://github.com/adobe/aem-guides-wknd/releases/latest).
 
@@ -98,7 +98,7 @@ Le site WKND comprend les configurations requises pour exposer un [point d’ent
 
 >[!NOTE]
 >
-> Si vous utilisez un environnement Cloud Service, consultez la documentation pour savoir comment [déployer une base de code telle que le site de référence WKND vers un environnement Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#coding-against-the-right-aem-version).
+> Si vous utilisez un environnement Cloud Service, consultez la documentation pour savoir comment [déployer une base de code telle que le site de référence WKND vers un environnement Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#coding-against-the-right-aem-version).
 
 ## 3. Télécharger et exécuter l’application React WKND {#sample-app}
 
