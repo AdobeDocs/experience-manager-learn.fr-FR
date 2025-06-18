@@ -12,7 +12,7 @@ last-substantial-update: 2023-05-19T00:00:00Z
 exl-id: 0ca50fa4-0b2a-4e6d-becb-7a91fc6b4166
 duration: 504
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '115'
 ht-degree: 100%
 
@@ -27,4 +27,4 @@ ht-degree: 100%
 
 Une présentation rapide de la configuration des utilisateurs et utilisatrices, groupes d’utilisateurs et d’utilisatrices et profils de produits Adobe IMS dans l’Adobe Admin Console et de la manière d’exploiter ces abstractions Adobe IMS dans l’instance de création AEM pour définir et gérer des autorisations spécifiques basées sur des groupes.
 
->[!VIDEO](https://video.tv.adobe.com/v/327370?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/39155?quality=12&learn=on)

@@ -12,7 +12,7 @@ doc-type: Feature Video
 exl-id: 45e0f3d5-db56-44e7-ad68-4d60991a6d77
 duration: 737
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '165'
 ht-degree: 100%
 
@@ -30,10 +30,10 @@ Le modèle de ressources d’AEM permet aux personnes spécialisées dans le mar
 
 Cette vidéo présente les concepts et étapes à suivre pour générer des ressources prêtes à être imprimées dans AEM, à l’aide d’Adobe InDesign, d’Adobe InDesign Server et d’AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/34830?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/25170?quality=12&learn=on)
 
 ## Vue d’ensemble technique {#technical-overview}
 
 Cette vidéo offre une vue d’ensemble plus technique de la fonctionnalité de modèle de ressources d’AEM Assets et explique comment AEM facilite la composition de ressources et de contenu AEM à l’aide d’InDesign pour créer des expériences d’impression riches et attrayantes.
 
->[!VIDEO](https://video.tv.adobe.com/v/38226?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/17071?quality=12&learn=on)

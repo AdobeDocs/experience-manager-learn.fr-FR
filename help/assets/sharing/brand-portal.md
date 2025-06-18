@@ -11,9 +11,9 @@ doc-type: Feature Video
 exl-id: 42f13a19-52bf-413d-a141-63f1f0910dce
 duration: 2460
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1702'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ La version de septembre 2019 de Brand Portal introduit l’approvisionnement d
 
 La fonctionnalité d’approvisionnement des ressources de Brand Portal permet de collecter des ressources d’équipes et d’agences tierces et de les synchroniser en toute transparence sur l’instance de création d’Experience Manager à des fins de révision et d’utilisation.
 
->[!VIDEO](https://video.tv.adobe.com/v/33200?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/29365?quality=12&learn=on)
 
 *L’instance de création Experience Manager 6.5 SP2 (6.5.2) ou version ultérieure est requise pour utiliser l’approvisionnement des ressources*.
 
@@ -37,7 +37,7 @@ Consultez la section [Activer l’instance de création Experience Manager pour
 
 ## Fonctionnalités et améliorations de la version de février 2019 de Brand Portal{#brand-portal-features-and-enhancements-644}
 
->[!VIDEO](https://video.tv.adobe.com/v/40329?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
 
 La version de février 2019 de Brand Portal apporte des améliorations à la recherche de texte et aux principales demandes des clientes et clients.
 
@@ -90,18 +90,18 @@ Pour autoriser la prévisualisation et le téléchargement des rendus Dynamic M
 
 Vous pouvez prévisualiser les vidéos Dynamic Media sur :
 
-* la page des détails de la ressource ;
+* la page des détails de la ressource :
 * l’affichage de la carte de la ressource ;
 * la page de prévisualisation du partage de lien.
 
 Les codes vidéo Dynamic Media peuvent être téléchargés à partir de :
 
-* Brand Portal
+* Brand Portal
 * Lien partagé
 
 ### Publication planifiée sur Brand Portal
 
-Le workflow de publication Assets (et dossiers) depuis [AEM (6.4.2.0)](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) l’instance d’auteur vers Brand Portal peut être planifiée à une date et une heure ultérieures.
+Le workflow de publication des ressources (et dossiers) de l’instance de création [AEM (6.4.2.0)](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/sp-release-notes.html#main-pars_header_9658011) sur Brand Portal peut être planifié à des dates et heures ultérieures.
 
 De façon similaire, les ressources publiées peuvent être supprimées du portail à une date (ou heure) ultérieure, en planifiant le workflow Dépublier sur Brand Portal.
 
@@ -157,7 +157,7 @@ Six nouvelles configurations sont ajoutées pour permettre aux administrateurs 
 * *Chemin de hiérarchie de dossiers en mode Carte et Liste* : permet aux utilisateurs et aux utilisatrices de connaître l’emplacement des dossiers stockés dans une instance Brand Portal. Permet aux utilisateurs et aux utilisatrices de différencier les dossiers portant le même nom dans différentes hiérarchies de dossiers.
 * *Option vue d’ensemble* : fournit des métadonnées aux utilisateurs et utilisatrices qui ne disposent pas de droits d’administration sur la ressource/le dossier en sélectionnant la ressource/le dossier, puis en cliquant sur l’option de vue d’ensemble dans la barre d’outils. Pour l’instant, le titre, la date de création et le chemin d’accès sont affichés.
 
-### Interface utilisateur Adobe I/O pour configurer les intégrations OAuth
+### Adobe I/O héberge une interface d’utilisation pour configurer les intégrations OAuth
 
 Brand Portal utilise l’interface Adobe I/O [https://legacy-oauth.cloud.adobe.io/](https://legacy-oauth.cloud.adobe.io/) pour créer l’application JWT qui rend possible la configuration des intégrations OAuth de façon à permettre l’intégration d’AEM Assets à Brand Portal. Auparavant, l’IU de configuration des intégrations OAuth était hébergée à l’adresse `https://marketing.adobe.com/developer/`. Pour en savoir plus sur l’intégration d’AEM Assets à Brand Portal pour publier des ressources et des collections sur Brand Portal, consultez [Configuration de l’intégration d’AEM Assets à Brand Portal](https://helpx.adobe.com/fr/experience-manager/6-4/assets/using/brand-portal-configuring-integration.html).
 
@@ -165,7 +165,7 @@ Brand Portal utilise l’interface Adobe I/O [https://legacy-oauth.cloud.adobe
 
 Les nouvelles fonctionnalités cherchent à aligner Brand Portal sur AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/40329?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26354?quality=12&learn=on)
 
 ### Améliorations de la navigation
 

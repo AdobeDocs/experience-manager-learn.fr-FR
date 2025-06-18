@@ -11,8 +11,8 @@ level: Beginner
 exl-id: 1d7093a8-3765-46ec-912a-b5a5503fd5af
 duration: 219
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
-source-wordcount: '239'
+workflow-type: ht
+source-wordcount: '237'
 ht-degree: 100%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 100%
 
 Dans cette partie, nous allons créer un fragment de document qui contiendra le nom et l’adresse de la personne destinataire.
 
->[!VIDEO](https://video.tv.adobe.com/v/36366?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/22350?quality=12&learn=on)
 
-Les fragments de document contiennent le contenu textuel des documents de communication interactive. Ce contenu de texte peut être du texte statique ou inséré à partir des valeurs des éléments du modèle de données sous-jacent. Par exemple, Cher {name}, où Cher est du texte statique et {name} est le nom de l’élément de données de formulaire. Au moment de l’exécution, cette opération sera résolue sur Chère Gloria Rios ou Cher John Jacobs selon la valeur de l’élément name.
+Les fragments de document contiennent le contenu textuel des documents de communication interactive. Ce contenu de texte peut être du texte statique ou inséré à partir des valeurs des éléments du modèle de données sous-jacent. Par exemple, Cher/Chère {name}, où Cher/Chère est du texte statique et {name} est le nom de l’élément de données de formulaire. Au moment de l’exécution, cette opération sera résolue sur Chère Gloria Rios ou Cher John Jacobs selon la valeur de l’élément name.
 
 L’éditeur de texte enrichi est suffisamment intuitif pour qu’une personne utilisatrice professionnelle puisse créer du texte et insérer des éléments de données de formulaire. L’éditeur de fragment de document permet de mettre en forme le texte, de spécifier les types et les styles de police, d’insérer des caractères spéciaux et de créer des hyperliens.
 

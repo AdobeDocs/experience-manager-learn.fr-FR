@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: f0ce734b-c342-4005-96c7-185245a1a3d7
 duration: 193
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '32'
 ht-degree: 100%
 
@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment la tâche de révision d’AEM Assets facilite les processus de révision et d’approbation les plus courants.
 
->[!VIDEO](https://video.tv.adobe.com/v/36737?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/32050?quality=12&learn=on)

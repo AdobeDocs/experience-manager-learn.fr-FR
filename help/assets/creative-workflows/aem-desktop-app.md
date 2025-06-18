@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: 6765758f-0719-4ed9-83be-8ed192a75b41
 duration: 367
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '129'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Utilisez l’application de bureau AEM pour simplifier l’accès à toute ressource gérée dans AEM sur le bureau, quel que soit le format d’application ou de fichier.
 
->[!VIDEO](https://video.tv.adobe.com/v/32779?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/28868?quality=12&learn=on)
 
 + Découvrez des ressources dans AEM via la navigation et la recherche à l’aide d’une application de bureau dédiée.
 + Une gestion optimisée de la bande passante permet le chargement et le téléchargement de nombreuses ressources volumineuses.

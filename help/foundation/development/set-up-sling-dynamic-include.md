@@ -11,7 +11,7 @@ level: Experienced
 exl-id: 6c504710-be8f-4b44-bd8a-aaf480ae6d8a
 duration: 863
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '230'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Présentation vidéo de l’installation et de l’utilisation d’[!DNL Apache Sling Dynamic Include] avec [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) s’exécutant sur [!DNL Apache HTTP Web Server].
 
->[!VIDEO](https://video.tv.adobe.com/v/3424581?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/17040?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Présentation vidéo de l’installation et de l’utilisation d’[!DNL Apache 
    -->
    ```
 
-1. (Facultatif) Répétez la dernière étape pour autoriser les composants sur [contenu verrouillé (initial) des modèles modifiables](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/page-templates-editable.html?lang=fr) à être diffusés via [!DNL SDI] également. La raison de la configuration supplémentaire est que le contenu verrouillé des modèles modifiables est diffusé à partir de `/conf` au lieu de `/content`.
+1. (Facultatif) Répétez la dernière étape pour autoriser les composants sur [contenu verrouillé (initial) des modèles modifiables](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/page-templates-editable.html?lang=fr) à être diffusés via [!DNL SDI] également. La raison de la configuration supplémentaire est que le contenu verrouillé des modèles modifiables est diffusé à partir de `/conf` au lieu de `/content`.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>

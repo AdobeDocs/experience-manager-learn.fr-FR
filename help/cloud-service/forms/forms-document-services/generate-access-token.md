@@ -1,6 +1,6 @@
 ---
 title: Générer un jeton d’accès
-description: Exemple de code pour générer un jeton d’accès pour appeler l’API Forms Document Services
+description: Exemple de code pour générer un jeton d’accès et appeler l’API Forms Document Services
 type: Documentation
 role: Developer
 level: Beginner, Intermediate
@@ -11,15 +11,15 @@ jira: KT-17479
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 100cab4b-16bd-4358-b0f0-61dbfd64d412
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '180'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 # Générer un jeton d’accès
 
-Un jeton d’accès est une information d’identification utilisée pour authentifier et autoriser les requêtes à une API REST. Il est généralement émis par un serveur d’authentification (tel qu’OAuth 2.0 ou OpenID Connect) après la connexion réussie d’un utilisateur ou d’une application. Lors de l’appel d’une API Document Services Forms sécurisée, un jeton d’accès est inclus dans l’en-tête de la requête pour vérifier l’identité du client.
+Un jeton d’accès est une information d’identification utilisée pour authentifier et autoriser les requêtes à une API REST. Il est généralement émis par un serveur d’authentification (tel qu’OAuth 2.0 ou OpenID Connect) après la connexion réussie d’un utilisateur ou d’une utilisatrice ou d’une application. Lors de l’appel d’une API Forms Document Services sécurisée, un jeton d’accès est inclus dans l’en-tête de la requête pour vérifier l’identité du client ou de la cliente.
 Voici un exemple de requête d’envoi de jeton d’accès
 
 ```java
@@ -28,7 +28,7 @@ Host: example.com
 Authorization: Bearer eyJhbGciOiJIUzI1...
 ```
 
-Le code suivant a été utilisé pour générer le jeton d’accès
+Le code suivant a été utilisé pour générer le jeton d’accès.
 
 ```java
 import java.io.InputStream;
@@ -100,7 +100,7 @@ public class AccessTokenService {
 }
 ```
 
-La classe AccessTokenService est chargée de récupérer un jeton d’accès OAuth à partir du service d’authentification IMS Adobe. Il lit les informations d’identification du client à partir d’un fichier JSON (server_credentials.json), crée une demande d’authentification et l’envoie au point d’entrée du jeton Adobe. La réponse est ensuite analysée pour extraire le jeton d’accès, qui est utilisé pour les appels API sécurisés. La classe inclut une journalisation et une gestion des erreurs appropriées pour garantir la fiabilité et un débogage plus facile.
+La classe AccessTokenService est chargée de récupérer un jeton d’accès OAuth à partir du service d’authentification IMS d’Adobe. Elle lit les informations d’identification du client ou de la cliente à partir d’un fichier JSON (server_credentials.json), crée une demande d’authentification et l’envoie au point d’entrée du jeton Adobe. La réponse est ensuite analysée pour extraire le jeton d’accès, qui est utilisé pour les appels API sécurisés. La classe inclut un enregistrement et une gestion des erreurs appropriés pour garantir la fiabilité et un débogage plus facile.
 
 ## Étapes suivantes
 

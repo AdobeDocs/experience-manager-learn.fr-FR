@@ -12,7 +12,7 @@ doc-type: Feature Video
 exl-id: e71b106d-a44b-44af-ba85-7fb5806cdb83
 duration: 214
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '65'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 La vidéo suivante présente les concepts de base de la création dans un environnement de création AEM pour AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/36710?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/33594?quality=12&learn=on)
 
 ## Ressources supplémentaires {#additional-resources}
 

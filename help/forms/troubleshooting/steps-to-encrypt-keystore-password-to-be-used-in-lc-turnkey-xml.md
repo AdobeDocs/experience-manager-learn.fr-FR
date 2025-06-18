@@ -10,7 +10,7 @@ index: y
 exl-id: e5b1b526-022e-4a82-9f4b-5f60210bb9ff
 duration: 145
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '43'
 ht-degree: 100%
 
@@ -20,4 +20,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes de chiffrement du mot de passe du KeyStore à utiliser dans lc_turnkey.xml.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3417697?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335538?quality=12&learn=on)

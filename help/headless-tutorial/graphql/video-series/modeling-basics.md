@@ -12,7 +12,7 @@ last-substantial-update: 2023-05-17T00:00:00Z
 exl-id: 0d22b06f-bf78-4a54-85be-6a932177f36f
 duration: 548
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '79'
 ht-degree: 100%
 
@@ -28,4 +28,4 @@ Dans cette vidéo, vous allez :
 + Découvrir les différents types de données utilisés pour créer le modèle de fragment de contenu
 + Comprendre comment le modèle de fragment de contenu génère l’API GraphQL
 
->[!VIDEO](https://video.tv.adobe.com/v/3412905?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/332858?quality=12&learn=on)

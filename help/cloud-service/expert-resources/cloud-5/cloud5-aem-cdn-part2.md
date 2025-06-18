@@ -10,9 +10,9 @@ hidefromtoc: true
 exl-id: 3d6f3506-e1ec-4eeb-869f-02db2821b8c6
 duration: 311
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '82'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 87%
 
 Voici la deuxième partie de l’utilisation du réseau CDN AEM et pour explorer en détail différentes options.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448410?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/340994?quality=12&learn=on)
 
 ## Contenu présenté dans la deuxième partie de cette série
 
@@ -33,4 +33,4 @@ Voici la deuxième partie de l’utilisation du réseau CDN AEM et pour explorer
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).
+Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).

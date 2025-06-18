@@ -10,7 +10,7 @@ exl-id: 1471929f-d269-4adc-88ad-2ad3682305e1
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 75
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Un document certifié fournit aux personnes destinataires d’un document et de 
 
 Pour certifier un document, vous pouvez utiliser Acrobat DC sur le bureau ou AEM Forms Document Services dans le cadre d’un processus automatisé sur un serveur.
 
-Cet article fournit un exemple de lot OSGI pour certifier des documents PDF à l’aide d’AEM Forms Document Services. Le code utilisé dans l’exemple est [disponible ici](https://helpx.adobe.com/fr/experience-manager/6-4/forms/using/aem-document-services-programmatically.html).
+Cet article fournit un exemple de lot OSGI pour certifier des documents PDF à l’aide d’AEM Forms Document Services. Le code utilisé dans l’exemple est [disponible ici](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html).
 
 Pour certifier des documents à l’aide d’AEM Forms, procédez comme suit :
 
@@ -43,7 +43,7 @@ Suivez les étapes mentionnées ci-dessous pour ajouter le certificat au KeyStor
 Vous pouvez créer votre propre lot OSGi et utiliser le SDK client AEM Forms pour mettre en œuvre un service de certification des documents PDF. Les liens suivants peuvent être utiles pour écrire votre propre lot OSGi.
 
 * [Créer votre premier lot OSGi](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=fr)
-* [Utiliser l’API Document Service](https://helpx.adobe.com/fr/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
+* [Utiliser l’API Document Service](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)
 
 Vous pouvez également utiliser l’exemple de lot inclus dans les ressources de ce tutoriel.
 

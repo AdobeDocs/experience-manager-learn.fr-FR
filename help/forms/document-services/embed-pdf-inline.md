@@ -1,6 +1,6 @@
 ---
 title: Afficher le document d’enregistrement intégré
-description: Fusionnez les données de formulaire adaptatif avec le modèle XDP et affichez le PDF intégré à l’aide de l’API de PDF d’intégration de Document Cloud.
+description: Fusionnez les données de formulaire adaptatif avec le modèle XDP et affichez le PDF intégré à l’aide de l’API Embed PDF de Document Cloud.
 version: Experience Manager 6.4, Experience Manager 6.5
 feature: Forms Service
 topic: Development
@@ -11,7 +11,7 @@ exl-id: 327ffe26-e88e-49f0-9f5a-63e2a92e1c8a
 last-substantial-update: 2021-07-07T00:00:00Z
 duration: 165
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Un cas d’utilisation courant consiste à afficher un document PDF avec les données saisies par l’utilisateur ou l’utilisatrice du formulaire.
 
-Pour réaliser ce cas d’utilisation, nous avons utilisé l’[API intégré Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html?lang=fr).
+Pour réaliser ce cas d’utilisation, nous avons utilisé l’[API Adobe PDF Embed](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html?lang=fr).
 
 Les étapes suivantes ont été suivies pour effectuer l’intégration :
 
@@ -31,7 +31,7 @@ Un composant personnalisé (embed-pdf) a été créé pour incorporer le PDF re
 
 ## Bibliothèque cliente
 
-Le code suivant est exécuté lorsque vous cliquez sur le bouton de case à cocher `viewPDF`. Nous transmettons les données du formulaire adaptatif et le nom du modèle au point d’entrée pour générer le PDF. Le fichier PDF généré est ensuite affiché pour l’utilisateur ou l’utilisatrice du formulaire à l’aide de la bibliothèque JavaScript PDF intégrée.
+Le code suivant est exécuté lorsque vous cliquez sur le bouton de case à cocher `viewPDF`. Nous transmettons les données du formulaire adaptatif et le nom du modèle au point d’entrée pour générer le PDF. Le fichier PDF généré est ensuite affiché pour l’utilisateur ou l’utilisatrice du formulaire à l’aide de la bibliothèque JavaScript PDF incorporée.
 
 ```javascript
 $(document).ready(function() {

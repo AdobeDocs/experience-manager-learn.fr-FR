@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: 33f2fd25-8696-42fd-b496-dd21b88397b2
 duration: 490
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2262'
 ht-degree: 100%
 
@@ -56,18 +56,18 @@ Au lieu de configurer un environnement AEM et d’installer la base de code WKND
 
 1. Connectez-vous à Experience Platform et [créez une propriété de balise](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=fr) (si ce n’est déjà fait).
 1. Assurez-vous qu’une bibliothèque JavaScript de balises initiale [a été créée](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html#create-a-library?lang=fr) et convertie en [environnement](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=fr) de balises.
-1. Copiez le code incorporé JavaScript de l’environnement de balises dans lequel votre bibliothèque a été publiée.
+1. Copiez le code intégré JavaScript de l’environnement de balises dans lequel votre bibliothèque a été publiée.
 
-   ![Copier le code incorporé de la propriété de balise](assets/collect-data-analytics/launch-environment-copy.png)
+   ![Copier le code intégré de la propriété de balise](assets/collect-data-analytics/launch-environment-copy.png)
 
 1. Dans votre navigateur, ouvrez un nouvel onglet et accédez au [site WKND](https://wknd.site/fr/fr.html).
 1. Ouvrez l’extension de navigateur du débogueur Experience Platform.
 
    ![Débogueur Experience Platform](assets/collect-data-analytics/experience-platform-debugger-extension.png)
 
-1. Accédez à **Balises Experience Platform** > **Configuration** et sous **Codes incorporés injectés**, remplacez le code incorporé existant par *votre* code incorporé copié à l’étape 3.
+1. Accédez à **Balises Experience Platform** > **Configuration** et sous **Codes intégrés injectés**, remplacez le code intégré existant par *votre* code intégré copié à l’étape 3.
 
-   ![Remplacer le code incorporé](assets/collect-data-analytics/platform-debugger-replace-embed.png)
+   ![Remplacer le code intégré](assets/collect-data-analytics/platform-debugger-replace-embed.png)
 
 1. Il faut ensuite activer la **Journalisation de la console** et **Verrouiller** le débogueur dans l’onglet WKND.
 
@@ -181,7 +181,7 @@ La couche de données de la clientèle Adobe est une couche de données **pilot�
 
    >[!NOTE]
    >
-   > Il peut s’avérer utile d’utiliser [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=fr) pour changer le code incorporé dans un environnement de **développement**.
+   > Il peut s’avérer utile d’utiliser [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=fr) pour changer le code intégré dans un environnement de **développement**.
 
 1. Accédez à votre site AEM et ouvrez les outils de développement pour afficher la console. Actualisez la page. Vous devriez constater que les messages de la console ont été enregistrés :
 

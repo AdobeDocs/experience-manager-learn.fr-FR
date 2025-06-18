@@ -12,7 +12,7 @@ badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 521084fc-d70b-4a89-8e17-714820341e21
 duration: 300
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '48'
 ht-degree: 100%
 
@@ -22,4 +22,4 @@ ht-degree: 100%
 
 La configuration des données par lots vous permet de configurer une instance spécifique de stockage Blob pour les API Batch. Elle vous permet de spécifier les emplacements d’entrée et de sortie dans le stockage Azure Blob de Microsoft détenu par le client ou la cliente.
 
->[!VIDEO](https://video.tv.adobe.com/v/343713?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/340128?quality=12&learn=on)

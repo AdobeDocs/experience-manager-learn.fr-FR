@@ -15,7 +15,7 @@ badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
 exl-id: 1eb43bdc-2718-4724-a5b8-d0f22cf84418
 duration: 101
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '77'
 ht-degree: 100%
 
@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Vous devez créer une application d’API sur votre instance Acrobat Sign pour l’intégrer à votre plateforme Acrobat Sign. L’application d’API agit en tant que représentant d’une application cliente, qui interagit avec la plateforme Acrobat Sign. Vous pouvez créer l’application d’API sur le domaine du client ou du partenaire.
 
->[!VIDEO](https://video.tv.adobe.com/v/3411762?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/332436?quality=12&learn=on)

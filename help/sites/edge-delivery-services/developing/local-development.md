@@ -13,7 +13,7 @@ thumbnail: 3425717.jpeg
 duration: 169
 exl-id: 0f3e50f0-88d8-46be-be8b-0f547c3633a6
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '87'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Configuration d’un environnement de développement local pour le développement d’Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3434733/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3425717/?learn=on)
 
 
 ## Étapes décrites dans la vidéo

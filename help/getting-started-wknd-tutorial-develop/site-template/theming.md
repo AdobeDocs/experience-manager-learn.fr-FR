@@ -13,7 +13,7 @@ exl-id: 98946462-1536-45f9-94e2-9bc5d41902d4
 recommendations: noDisplay, noCatalog
 duration: 1275
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '458'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Il s’agit d’un tutoriel en plusieurs parties qui suppose que les étapes dé
 
 Ensuite, apportez des modifications aux sources de thème afin que le site corresponde à l’aspect de la marque WKND.
 
->[!VIDEO](https://video.tv.adobe.com/v/3453622?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/332918?quality=12&learn=on)
 
 Étapes de haut niveau pour la vidéo :
 

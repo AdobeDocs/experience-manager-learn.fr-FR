@@ -12,7 +12,7 @@ doc-type: Feature Video
 exl-id: b120fb79-729e-4155-ba10-e5f7bb07eefa
 duration: 395
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '100'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ L’éditeur de page d’AEM Sites est un outil puissant pour créer et modifie
 
 La vidéo suivante présente certaines des principales fonctionnalités de l’éditeur de page.
 
->[!VIDEO](https://video.tv.adobe.com/v/37181?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/32011?quality=12&learn=on)
 
 
 Voir [Documentation AEM pour une vue d’ensemble des fonctionnalités de l’éditeur de page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=fr).

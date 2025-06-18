@@ -11,7 +11,7 @@ index: y
 exl-id: ec94ea5d-6f65-4c16-af63-d7c7766fe5f6
 duration: 64
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '49'
 ht-degree: 100%
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes supplémentaires à suivre pour vérifier les autorisations de dossier sous Windows Server 2016.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3417210?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335519?quality=12&learn=on)

@@ -12,7 +12,7 @@ doc-type: Feature Video
 exl-id: 5a6bf1f2-1dd5-40b4-8ceb-03672a36869d
 duration: 204
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '67'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Les processus AEM permettent de collaborer, de gérer et de traiter du contenu dans AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410287?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27848?quality=12&learn=on)
 
 >[!NOTE]
 >

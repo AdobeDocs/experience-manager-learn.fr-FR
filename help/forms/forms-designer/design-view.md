@@ -13,7 +13,7 @@ jira: KT-15052
 thumbnail: 3427615.jpeg
 exl-id: 12376f66-4f0d-419a-89d4-be59ebc51939
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '24'
 ht-degree: 100%
 
@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Vidéo courte sur le mode Conception dans AEM Forms Designer
 
->[!VIDEO](https://video.tv.adobe.com/v/3436819/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3427615/?learn=on)

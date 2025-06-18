@@ -10,7 +10,7 @@ jira: KT-13239
 exl-id: e2241a9b-1c50-45d8-b909-ee8a917b4d7c
 duration: 66
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '61'
 ht-degree: 100%
 
@@ -20,4 +20,4 @@ ht-degree: 100%
 
 Découvrez comment l’éditeur de fragments de contenu AEM facilite la localisation des fragments de contenu à l’aide du filtrage rapide. Grâce à cette fonctionnalité, la recherche de fragments de contenu spécifiques devient rapide et facile.
 
->[!VIDEO](https://video.tv.adobe.com/v/3436958/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3419311/?learn=on)

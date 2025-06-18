@@ -12,7 +12,7 @@ last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: c5c1df23-1c04-4c04-b0cd-e126c31d5acc
 duration: 600
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '739'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Les extensions d’interface utilisateur AEM peuvent être vérifiées par rappo
 
 Le test d’une extension est effectué par le biais d’une URL spécialement conçue qui indique à AEM de charger l’extension, et ce uniquement pour cette requête.
 
->[!VIDEO](https://video.tv.adobe.com/v/3417480?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3412877?quality=12&learn=on)
 
 >[!IMPORTANT]
 >

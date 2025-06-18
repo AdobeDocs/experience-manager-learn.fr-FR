@@ -13,9 +13,9 @@ doc-type: Feature Video
 exl-id: 6c49f8c2-f468-4b29-b7b6-029c8ab39ce9
 duration: 1027
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1039'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ L’extension Adobe Asset Link pour Adobe Creative Cloud for enterprise é
 
 La vidéo suivante illustre un workflow courant utilisé par les créateurs et créatrices qui travaillent avec des applications Adobe Creative Cloud et qui s’intègrent directement à AEM à l’aide d’Adobe Asset Link.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418440?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335927?quality=12&learn=on)
 
 ## Fonctionnalités d’Adobe Asset Link
 
@@ -64,7 +64,7 @@ La vidéo suivante illustre un workflow courant utilisé par les créateurs et c
 
 Adobe Asset Link fournit une liaison directe avec InDesign entre Adobe Asset Link et AEM. Avec la prise en charge des liens directs à InDesign, vous pouvez placer (__Placer un lien__ ou __Placer une copie__) ou faire glisser des ressources numériques vers InDesign à partir d’AEM via le panneau Adobe Asset Link. Le service offre également le rendu *For Placement Only+ (FPO).
 
->[!VIDEO](https://video.tv.adobe.com/v/37231?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/28988?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ Découvrez comment fonctionne l’authentification d’Adobe Asset Link avec l
 1. L’extension Adobe Asset Link se connecte au service de création d’AEM via HTTP(S), en incluant le jeton porteur obtenu à l’**étape 1**, à l’aide du schéma (HTTP/HTTPS), de l’hôte et du port fournis dans le JSON des paramètres de l’extension.
 1. Le gestionnaire d’authentification de jeton de support d’AEM extrait le jeton porteur de la requête et le valide avec Adobe IMS.
 1. Une fois qu’Adobe IMS valide le jeton porteur, un profil utilisateur est créé dans AEM (s’il n’existe pas déjà) et synchronise les données de profil, de groupe et d’appartenances d’Adobe IMS. L’utilisateur ou l’utilisatrice d’AEM se voit attribuer un jeton de connexion AEM standard, qui est renvoyé à l’extension Adobe Asset Link en tant que cookie sur la réponse HTTP(S).
-1. Les interactions suivantes (c’est-à-dire la navigation, la recherche, l’archivage et l’extraction de ressources, etc.) avec l’extension Adobe Asset Link génèrent des requêtes HTTP(S) au service de création d’AEM qui sont validées à l’aide du jeton de connexion AEM, avec le gestionnaire d’authentification de jeton AEM standard.
+1. Les interactions suivantes (c’est-à-dire navigation, recherche, archivage/extraction de ressources, etc.) avec l’extension Adobe Asset Link génèrent des requêtes HTTP(S) au service de création d’AEM qui sont validées à l’aide du jeton de connexion AEM, avec le gestionnaire d’authentification de jeton AEM standard.
 
 >[!NOTE]
 >

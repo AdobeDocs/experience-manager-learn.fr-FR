@@ -11,7 +11,7 @@ thumbnail: 336959.jpeg
 exl-id: 9d2004e5-e928-4190-8298-695635c8e92c
 duration: 504
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Découvrez comment intégrer AEM as a Cloud Service, de la phase d’établissement du contrat à la configuration des environnements à l’aide de Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431499?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/336959?quality=12&learn=on)
 
 ## Cloud Manager et Admin Console
 

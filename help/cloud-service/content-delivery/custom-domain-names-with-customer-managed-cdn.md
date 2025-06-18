@@ -13,7 +13,7 @@ jira: KT-15945
 thumbnail: KT-15945.jpeg
 exl-id: fa9ee14f-130e-491b-91b6-594ba47a7278
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1051'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Si vous n’avez pas accès à des services tiers, _collaborez avec votre équip
 
 ## Générer un certificat SSL
 
->[!VIDEO](https://video.tv.adobe.com/v/3441473?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
 
 Vous disposez de deux options :
 
@@ -222,7 +222,7 @@ Pour configurer et déployer la règle de réseau CDN de validation d’en-tête
 
 ## Transmettre le secret dans l’en-tête HTTP X-AEM-Edge-Key
 
->[!VIDEO](https://video.tv.adobe.com/v/3445047?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
 
 Mettez à jour le réseau CDN du client ou de la cliente pour transmettre le secret dans l’en-tête HTTP `X-AEM-Edge-Key`. Le secret est utilisé par le réseau CDN Adobe pour valider que la demande provient du réseau CDN du client ou de la cliente et transformer la valeur d’en-tête `Host` en valeur de `X-Forwarded-Host` reçue du réseau CDN du client ou de la cliente.
 

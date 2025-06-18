@@ -10,7 +10,7 @@ doc-type: Feature Video
 exl-id: 21633308-ffe4-4023-affe-59269504da69
 duration: 677
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '314'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Le framework de traduction robuste d’AEM permet aux fournisseurs de traduction
 
 ## Améliorations apportées à la traduction dans AEM 6.5
 
->[!VIDEO](https://video.tv.adobe.com/v/34370?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27405?quality=12&learn=on)
 
 Les améliorations apportées à la traduction d’AEM 6.5 incluent les éléments suivants :
 
@@ -36,7 +36,7 @@ Les améliorations apportées à la traduction d’AEM 6.5 incluent les éléme
 
 ## Améliorations apportées à la traduction dans AEM 6.4
 
->[!VIDEO](https://video.tv.adobe.com/v/38294?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/21309?quality=12&learn=on)
 
 Les auteurs et autrices peuvent désormais créer rapidement et facilement des projets de traduction multilingues directement depuis l’administration Sites ou l’administration Projets, configurer ces projets pour convertir automatiquement les lancements et même définir des calendriers d’automatisation.
 

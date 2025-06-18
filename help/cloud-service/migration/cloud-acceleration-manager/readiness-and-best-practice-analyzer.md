@@ -11,7 +11,7 @@ thumbnail: 336690.jpeg
 exl-id: b8905917-c385-4a79-99df-9a0fad98dc87
 duration: 232
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '57'
 ht-degree: 100%
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez comment Best Practice Analyzer peut vous aider à vous préparer à passer d’AEM On-Prem ou Adobe Managed Services à Experience Manager as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446455?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/336690?quality=12&learn=on)

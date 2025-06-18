@@ -12,7 +12,7 @@ doc-type: Feature Video
 exl-id: 394fc981-9593-492d-9961-b81a627730b1
 duration: 730
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '45'
 ht-degree: 100%
 
@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez les principes fondamentaux de la création d’une structure de dossiers, les opérations de base telles que le déplacement, la copie et le renommage, ainsi que les collections.
 
->[!VIDEO](https://video.tv.adobe.com/v/3413850?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335733?quality=12&learn=on)

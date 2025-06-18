@@ -11,7 +11,7 @@ doc-type: Tutorial
 exl-id: 7c12fc14-cdaf-45eb-807a-64de86a2a36a
 duration: 74
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '58'
 ht-degree: 100%
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Cette vidéo décrit le processus d’ajout des détails d’un serveur d’images de test (filtres IP du client) dans Dynamic Media pour une prévisualisation sécurisée à l’aide de l’application Dynamic Media Classic.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418276?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335462?quality=12&learn=on)

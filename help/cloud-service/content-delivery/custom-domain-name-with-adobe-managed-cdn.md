@@ -13,7 +13,7 @@ jira: KT-15121
 thumbnail: KT-15121.jpeg
 exl-id: 8936c3ae-2daf-4d0f-b260-28376ae28087
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '726'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Si vous n’avez pas accès à des services tiers, _collaborez avec votre équip
 
 ## Générer un certificat SSL
 
->[!VIDEO](https://video.tv.adobe.com/v/3441473?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
 
 Vous disposez de deux options :
 

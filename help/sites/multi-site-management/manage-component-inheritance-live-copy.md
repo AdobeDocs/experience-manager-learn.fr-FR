@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 924fbe94-2e58-4998-a2a9-b77f1aebd61e
 duration: 473
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
 ht-degree: 100%
 
@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment gérer l’héritage entre une Live Copy et son plan directeur au niveau des composants.
 
->[!VIDEO](https://video.tv.adobe.com/v/41596?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/36678?quality=12&learn=on)

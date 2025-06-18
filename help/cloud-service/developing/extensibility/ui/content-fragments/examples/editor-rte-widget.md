@@ -13,7 +13,7 @@ last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 167a4b11-1202-4c7a-b022-f3f996348a4e
 duration: 476
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '553'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Découvrez comment ajouter des widgets à l’éditeur de texte enrichi (RTE) dans l’éditeur de fragment de contenu AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447434?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3420822?quality=12&learn=on)
 
 Pour ajouter du contenu dynamique dans l’éditeur de texte enrichi (RTE), utilisez la fonctionnalité **widgets**. Les widgets permettent d’intégrer l’interface utilisateur simple ou complexe à l’éditeur de texte enrichi. Cette interface utilisateur peut être créée à l’aide du framework JS de votre choix. Les widgets sont en quelque sorte des boîtes de dialogue qui sont ouvertes en appuyant sur la touche spéciale `{` dans l’éditeur de texte enrichi.
 

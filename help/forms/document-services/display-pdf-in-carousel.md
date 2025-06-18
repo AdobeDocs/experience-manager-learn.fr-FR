@@ -11,7 +11,7 @@ exl-id: c1d248c3-8208-476e-b0ae-cab25575cd6a
 last-substantial-update: 2021-10-12T00:00:00Z
 duration: 66
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '320'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Un cas d’utilisation courant consiste à afficher plusieurs documents PDF à l’utilisateur ou l’utilisatrice avant de soumettre le formulaire.
 
-Pour réaliser ce cas d’utilisation, nous avons utilisé l’[API intégré Adobe PDF](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html?lang=fr).
+Pour réaliser ce cas d’utilisation, nous avons utilisé l’[API Adobe PDF Embed](https://www.adobe.io/apis/documentcloud/dcsdk/pdf-embed.html?lang=fr).
 
 [Vous pouvez voir une démonstration de cet exemple ici.](https://forms.enablementadobe.com/content/dam/formsanddocuments/wefinancecreditcard/jcr:content?wcmmode=disabled)
 
@@ -33,7 +33,7 @@ Un composant personnalisé (carousel de PDF) a été créé pour parcourir les d
 
 ## Bibliothèque cliente
 
-Une bibliothèque cliente a été créée pour afficher les PDF à l’aide de l’API d’intégration d’Adobe PDF. Les PDF à afficher sont spécifiés dans les composants de carrousel de PDF.
+Une bibliothèque cliente a été créée pour afficher les PDF à l’aide de l’API Adobe PDF Embed. Les PDF à afficher sont spécifiés dans les composants de carrousel de PDF.
 
 ## Créer un formulaire adaptatif
 

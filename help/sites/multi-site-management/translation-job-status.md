@@ -12,7 +12,7 @@ level: Beginner
 exl-id: be4d015b-97c9-4523-8eb4-a367242fcdd6
 duration: 276
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '36'
 ht-degree: 100%
 
@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Comprendre les différents états associés à une tâche de traduction ou à un élément de la tâche.
 
->[!VIDEO](https://video.tv.adobe.com/v/41554?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/36685?quality=12&learn=on)

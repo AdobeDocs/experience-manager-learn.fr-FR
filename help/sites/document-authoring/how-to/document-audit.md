@@ -13,7 +13,7 @@ thumbnail: 3425722.jpeg
 duration: 77
 exl-id: 85e3303d-f59a-4b71-bfb7-09470b9ab3c6
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '27'
 ht-degree: 100%
 
@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment effectuer l’audit des documents créés à l’aide de la création de documents AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3437713/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3425722/?learn=on)

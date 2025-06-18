@@ -14,7 +14,7 @@ thumbnail: 3412876.jpeg
 exl-id: ef5ad335-7278-4c00-beb6-233a3d1e330e
 duration: 265
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '102'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Initialisez une extension d’application du Créateur d’applications de l’interface utilisateur AEM qui définit l’emplacement d’affichage de l’extension et le travail qu’elle effectue.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447078?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3412876?quality=12&learn=on)
 
 >[!IMPORTANT]
 >

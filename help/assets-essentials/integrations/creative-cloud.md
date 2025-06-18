@@ -12,7 +12,7 @@ duration: 302
 last-substantial-update: 2024-08-01T00:00:00Z
 jira: KT-15657
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '57'
 ht-degree: 100%
 
@@ -26,4 +26,4 @@ Découvrez comment intégrer AEM Assets à des bibliothèques Adobe Creative 
 + Rendre les fichiers d’AEM Assets accessibles de manière transparente via les bibliothèques Creative Cloud
 + Partager les fichiers des bibliothèques Creative Cloud avec Assets Essentials.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444010?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3432401?quality=12&learn=on)

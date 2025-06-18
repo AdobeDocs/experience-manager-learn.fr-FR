@@ -11,7 +11,7 @@ level: Beginner
 exl-id: 7b2a4075-bfdf-49f3-b507-34d86193bf64
 duration: 460
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '140'
 ht-degree: 100%
 
@@ -28,15 +28,15 @@ En règle générale, une bibliothèque cliente se compose d’un fichier CSS et
 
 ## Fonction pour remplir la liste déroulante {#function-to-populate-drop-down-list}
 
->[!VIDEO](https://video.tv.adobe.com/v/326875?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/22282?quality=12&learn=on)
 
 ### Définir le titre de résumé du panneau {#set-the-summary-title-of-panels}
 
->[!VIDEO](https://video.tv.adobe.com/v/33130?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
 
 #### Valider le panneau {#validate-panels-using-rule-editor}
 
->[!VIDEO](https://video.tv.adobe.com/v/33127?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/28409?quality=12&learn=on)
 
 Voici le code utilisé pour valider les champs du panneau.
 

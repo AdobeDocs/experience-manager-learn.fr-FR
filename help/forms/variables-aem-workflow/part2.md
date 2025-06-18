@@ -9,7 +9,7 @@ level: Beginner
 exl-id: e7d3e0be-5194-47c2-a668-ce78e727986e
 duration: 354
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '262'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Lorsque vous créez une variable de type JSON pour capturer les données envoyé
 
 Vous pouvez mapper le schéma avec la variable de type JSON dans votre modèle de workflow. Vous pouvez ensuite utiliser l’explorateur de schéma pour mapper les éléments de schéma avec vos variables chaîne/nombre dans votre modèle de workflow.
 
->[!VIDEO](https://video.tv.adobe.com/v/34825?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/28097?quality=12&learn=on)
 
 Pour que les ressources fonctionnent sur votre système, procédez comme suit :
 

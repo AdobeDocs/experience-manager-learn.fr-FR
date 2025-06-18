@@ -13,7 +13,7 @@ thumbnail: 331754.jpg
 exl-id: e406fe4d-f0b6-4e5d-9e18-c28d30a456c7
 duration: 73
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '45'
 ht-degree: 100%
 
@@ -23,6 +23,6 @@ ht-degree: 100%
 
 Décrivez l’API REST Salesforce à l’aide de la [spécification de l’API OPEN 2.0](https://swagger.io/docs/specification/2-0/basic-structure/).
 
->[!VIDEO](https://video.tv.adobe.com/v/3411568?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/331754?quality=12&learn=on)
 
 Le fichier Swagger peut être téléchargé [ici](assets/sfdc-rest-swagger.zip).

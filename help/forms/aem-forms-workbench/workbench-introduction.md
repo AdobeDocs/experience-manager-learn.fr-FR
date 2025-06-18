@@ -11,7 +11,7 @@ last-substantial-update: 2024-06-11T00:00:00Z
 jira: KT-15636
 exl-id: 96d0e2e9-0321-48b6-8434-4b7b1fa3c665
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '27'
 ht-degree: 100%
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Vidéo courte présentant l’interface d’utilisation d’AEM Forms Workbench
 
->[!VIDEO](https://video.tv.adobe.com/v/3439800/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3429493/?learn=on)

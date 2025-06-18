@@ -13,9 +13,9 @@ doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
 source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1963'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Les intégrations à Adobe Experience Manager (AEM) as a Cloud Service do
 
 AEM s’intègre à d’autres produits Adobe à l’aide de [S2S OAuth géré via Adobe Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Pour les intégrations personnalisées avec des comptes de service, les informations d’identification JWT sont utilisées et gérées dans AEM Developer Console.
 
->[!VIDEO](https://video.tv.adobe.com/v/342221?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
 Bien que les informations d’identification de service puissent apparaître similaires aux [jetons d’accès au développement local](./local-development-access-token.md), elles sont différentes de plusieurs manières importantes :
 

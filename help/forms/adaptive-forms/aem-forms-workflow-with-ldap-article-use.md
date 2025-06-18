@@ -10,7 +10,7 @@ exl-id: 2e9754ff-49fe-4260-b911-796bcc4fd266
 last-substantial-update: 2021-09-18T00:00:00Z
 duration: 111
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
 ht-degree: 100%
 
@@ -62,7 +62,7 @@ Nous contactons la personne qui a lancé le workflow. Nous obtenons ensuite la v
 
 Selon la manière dont la propriété manager est stockée dans votre LDAP, vous devrez peut-être effectuer une manipulation de chaîne pour obtenir l’ID de la personne responsable.
 
-Veuillez lire cet article pour mettre en œuvre votre propre [ParticipantChooser.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
+Veuillez lire cet article pour mettre en œuvre votre propre [ParticipantChooser.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
 
 Pour le tester sur votre système (pour les employées et employés d’Adobe, vous pouvez utiliser cet exemple prêt à l’emploi) :
 

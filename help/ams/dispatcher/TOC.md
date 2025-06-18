@@ -7,7 +7,7 @@ version: Experience Manager 6.5
 feature: Dispatcher
 team: TM
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '60'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 # Adobe Experience Manager Managed Services {#ams}
 
-+ [Présentation](./overview.md)
++ [Vue d’ensemble](./overview.md)
 + Dispatcher{#dispatcher}
    + [Manuel de Dispatcher - Présentation](./dispatcher/overview.md)
    + [Qu’est-ce que le Dispatcher ?](./dispatcher/what-is-the-dispatcher.md)

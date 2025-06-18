@@ -12,7 +12,7 @@ last-substantial-update: 2024-05-09T00:00:00Z
 jira: KT-15487
 exl-id: db65da7a-56dd-4edb-a6e4-a0c55402c55e
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '47'
 ht-degree: 100%
 
@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment le protocole de streaming adaptatif DASH d’AEM Assets Dynamic Media garantit que les vidéos diffusées s’adaptent à la bande passante disponible et garantissent une expérience de lecture fluide.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443619/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3429072/?learn=on)

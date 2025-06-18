@@ -11,9 +11,9 @@ recommendations: noDisplay, noCatalog
 exl-id: e95e7530-100d-4495-abae-4c568e7978b3
 duration: 310
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '76'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 86%
 
 Exemple rapide d’utilisation du programme de validation du Dispatcher dans vos workflows de développement AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448421?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/342358?quality=12&learn=on)
 
 ## Contenu couvert par cette vidéo
 
@@ -32,4 +32,4 @@ Exemple rapide d’utilisation du programme de validation du Dispatcher dans vos
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).
+Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).

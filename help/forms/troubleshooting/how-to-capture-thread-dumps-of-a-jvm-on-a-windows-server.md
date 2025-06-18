@@ -10,7 +10,7 @@ index: y
 exl-id: e960c149-13e2-4861-b99e-6419fac85222
 duration: 129
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '55'
 ht-degree: 100%
 
@@ -20,4 +20,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour capturer les images mémoires des segments de mémoire d’une JVM sur un serveur Windows.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3418288?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335493?quality=12&learn=on)

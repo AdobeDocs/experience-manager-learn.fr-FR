@@ -1,6 +1,6 @@
 ---
-title: Cloud 5 - Bonnes pratiques de développement pour Edge Delivery Services
-description: Explorez les techniques de développement dans Edge Delivery Services avec un architecte chevronné.
+title: Cloud 5 - Bonnes pratiques de développement pour Edge Delivery Services
+description: Explorez les techniques de développement dans Edge Delivery Services avec un ou une architecte chevronné(e).
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
 topic: Development
@@ -14,14 +14,14 @@ last-substantial-update: 2024-12-12T00:00:00Z
 jira: KT-16667
 exl-id: fac67cdd-ef7a-4b82-8690-9798d0b01ff4
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '61'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Cloud 5 - Bonnes pratiques de développement pour Edge Delivery Services
+# Cloud 5 - Bonnes pratiques de développement pour Edge Delivery Services
 
-Explorez les techniques de développement dans Edge Delivery Services avec un architecte chevronné. Kiran vous guidera à travers de nombreux problèmes auxquels il a été confronté sur des projets et comment les résoudre.
+Explorez les techniques de développement dans Edge Delivery Services avec un ou une architecte chevronné(e). Kiran vous guidera à travers de nombreux problèmes auxquels il a été confronté sur des projets et comment les résoudre.
 
->[!VIDEO](https://video.tv.adobe.com/v/3441002/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3440978/?learn=on&enablevpops)

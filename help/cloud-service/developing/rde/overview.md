@@ -12,7 +12,7 @@ last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 8fc6d0ef-8753-480b-a504-e7943de8883c
 duration: 99
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '87'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Dans cette vidéo vous verrez :
 - Ce que sont les RDE.
 - Comment les utiliser pour rendre le développement des cycles de déploiement plus rapide ?
 
->[!VIDEO](https://video.tv.adobe.com/v/3453600?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3414128?quality=12&learn=on)
 
 ## Étape suivante
 
@@ -35,7 +35,7 @@ Comment [configurer](./how-to-setup.md) un RDE dans AEM as a Cloud Service.
 
 ## Ressources supplémentaires
 
-[Une présentation de la documentation sur les RDE.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html?lang=fr#introduction)
+[Une présentation de la documentation sur les RDE.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/rapid-development-environments.html#introduction)
 
 [Pipeline CI/CD Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=fr)
 

@@ -10,7 +10,7 @@ exl-id: a2d21f2e-3dbb-454f-8a02-101dc3af9b1e
 last-substantial-update: 2020-02-09T00:00:00Z
 duration: 522
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 La version 6.3 d’AEM introduit plusieurs nouvelles fonctionnalités et améliorations pour simplifier la création de formulaires et documents adaptatifs. Les améliorations permettent de réduire le délai de mise sur le marché et permettent aux utilisateurs et utilisatrices professionnels de travailler avec des formulaires et des documents.
 
->[!VIDEO](https://video.tv.adobe.com/v/38445?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/19500?quality=12&learn=on)
 
 **Voici quelques-unes des principales améliorations apportées à l’éditeur de formulaire adaptatif :**
 
@@ -32,8 +32,8 @@ La version 6.3 d’AEM introduit plusieurs nouvelles fonctionnalités et améli
 
 * [Modification intégrée du titre du composant](https://helpx.adobe.com/fr/aem-forms/6-3/introduction-forms-authoring.html)
 * [Validation par défaut dans les composants](https://helpx.adobe.com/fr/aem-forms/6-3/introduction-forms-authoring.html)
-* [Raccourcis clavier pour accélérer la création de contenu](https://helpx.adobe.com/fr/aem-forms/6-3/keyboard-shortcuts.html#AdaptiveFormEditor)
-* [Prise en charge du schéma JSON pour la création de formulaires adaptatifs](https://helpx.adobe.com/fr/aem-forms/6-3/adaptive-form-json-schema-form-model.html)
-* [Captcha dans les formulaires adaptatifs](https://helpx.adobe.com/fr/aem-forms/6-3/captcha-adaptive-forms.html)
-* [Amélioration de l’intégration d’Acrobat Sign](https://helpx.adobe.com/fr/aem-forms/6-3/working-with-adobe-sign.html)
-* [Envois asynchrones de formulaires](https://helpx.adobe.com/fr/aem-forms/6-3/asynchronous-submissions-adaptive-forms.html)
+* [Raccourcis clavier pour accélérer la création de contenu](https://helpx.adobe.com/aem-forms/6-3/keyboard-shortcuts.html#AdaptiveFormEditor)
+* [Prise en charge du schéma JSON pour la création de formulaires adaptatifs](https://helpx.adobe.com/aem-forms/6-3/adaptive-form-json-schema-form-model.html)
+* [Captcha dans les formulaires adaptatifs](https://helpx.adobe.com/aem-forms/6-3/captcha-adaptive-forms.html)
+* [Amélioration de l’intégration d’Acrobat Sign](https://helpx.adobe.com/aem-forms/6-3/working-with-adobe-sign.html)
+* [Envois asynchrones de formulaires](https://helpx.adobe.com/aem-forms/6-3/asynchronous-submissions-adaptive-forms.html)

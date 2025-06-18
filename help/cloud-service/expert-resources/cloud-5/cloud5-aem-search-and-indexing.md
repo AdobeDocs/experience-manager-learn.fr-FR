@@ -11,9 +11,9 @@ recommendations: noDisplay, noCatalog
 exl-id: b2571a84-101f-4330-8a5f-9ef5e4344591
 duration: 286
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '79'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 87%
 
 Une approche du vaste sujet de la recherche et de l’indexation. Il s’agit d’un sujet complexe et nous espérons vous aider à l’utiliser de manière plus efficace.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448108?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/342374?quality=12&learn=on)
 
 ## Contenu couvert par cette vidéo
 
@@ -32,4 +32,4 @@ Une approche du vaste sujet de la recherche et de l’indexation. Il s’agit d�
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).
+Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).

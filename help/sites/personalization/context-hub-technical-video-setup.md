@@ -10,7 +10,7 @@ doc-type: Technical Video
 exl-id: 89308dd3-a7e5-4fec-bffb-5f0974125c0a
 duration: 357
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ContextHub est un framework permettant de stocker, manipuler et présenter des données contextuelles. L’API JavaScript ContextHub vous permet d’accéder aux magasins pour créer, mettre à jour et supprimer des données si nécessaire. En tant que tel, ContextHub représente une couche de données sur vos pages.Cette page décrit comment ajouter ContextHub à vos pages de site AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/38096?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/23765?quality=12&learn=on)
 
 >[!NOTE]
 >

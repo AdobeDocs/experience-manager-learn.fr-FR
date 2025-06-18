@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 95d3d5a7-a73f-4261-b496-b91a9ff7fe8d
 duration: 253
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '50'
 ht-degree: 100%
 
@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment créer une page dans une copie de la langue existante, puis traduire le contenu dans une autre copie de la langue.
 
->[!VIDEO](https://video.tv.adobe.com/v/41546?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/36682?quality=12&learn=on)

@@ -12,7 +12,7 @@ exl-id: 5c1ff98f-d1f6-42ac-a5d5-676a54ef683c
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 870
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1275'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Un programme Cloud Manager ne peut avoir qu’un type d’infrastructure résea
 
 >[!MORELIKETHIS]
 >
-> Consultez la [documentation sur la configuration réseau avancée](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) pour AEM as a Cloud Service pour obtenir plus d’informations sur la sortie de port flexible.
+> Consultez la [documentation sur la configuration réseau avancée](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) pour AEM as a Cloud Service pour obtenir plus d’informations sur la sortie de port flexible.
 
 
 ## Conditions préalables
@@ -87,7 +87,7 @@ Il est possible d’activer la sortie de port flexible à l’aide des API Cloud
 
 1. Tout d’abord, déterminez la région dans laquelle le réseau avancé est configuré à l’aide de l’opération [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager. Le `region name` est nécessaire pour effectuer les appels d’API Cloud Manager ultérieurs. En règle générale, la région dans laquelle l’environnement de production réside est utilisée.
 
-   Recherchez la région de votre environnement AEM as a Cloud Service AEM dans [Cloud Manager](https://my.cloudmanager.adobe.com) sous les [détails de l’environnement](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Le nom de région affiché dans Cloud Manager peut être [mappé au code de région](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilisé dans l’API Cloud Manager.
+   Recherchez la région de votre environnement AEM as a Cloud Service AEM dans [Cloud Manager](https://my.cloudmanager.adobe.com) sous les [détails de l’environnement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Le nom de région affiché dans Cloud Manager peut être [mappé au code de région](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilisé dans l’API Cloud Manager.
 
    __Requête HTTP listRegions__
 
@@ -221,7 +221,7 @@ Lors d’appels HTTP/HTTPS à des services externes sur des ports non standard, 
 
 >[!TIP]
 >
-> Consultez la documentation sur la sortie de port flexible d’AEM as a Cloud Service pour connaître [l’ensemble des règles de routage](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+> Consultez la documentation sur la sortie de port flexible d’AEM as a Cloud Service pour connaître [l’ensemble des règles de routage](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 #### Exemples de code
 

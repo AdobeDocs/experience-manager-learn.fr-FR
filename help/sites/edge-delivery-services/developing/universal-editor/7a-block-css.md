@@ -1,5 +1,5 @@
 ---
-title: Développement d’un bloc avec CSS
+title: Développer un bloc avec CSS
 description: Développez un bloc avec CSS pour Edge Delivery Services, modifiable à l’aide de l’éditeur universel.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
@@ -11,31 +11,31 @@ jira: KT-15832
 duration: 900
 exl-id: 14cda9d4-752b-4425-a469-8b6f283ce1db
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '437'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Développement d’un bloc avec CSS
+# Développer un bloc avec CSS
 
 Les blocs dans Edge Delivery Services sont stylisés à l’aide de CSS. Le fichier CSS d’un bloc est stocké dans le répertoire du bloc et porte le même nom que le bloc. Par exemple, le fichier CSS d’un bloc nommé `teaser` se trouve à l’emplacement `blocks/teaser/teaser.css`.
 
-Idéalement, un bloc ne doit avoir besoin que de CSS pour le style, sans compter sur JavaScript pour modifier le DOM ou ajouter des classes CSS. Le besoin de JavaScript dépend de la [modélisation de contenu](./5-new-block.md#block-model) du bloc et de sa complexité. Si nécessaire, vous pouvez ajouter [block JavaScript](./7b-block-js-css.md).
+Idéalement, un bloc ne doit avoir besoin que de CSS pour le style, sans compter sur JavaScript pour modifier le DOM ou ajouter des classes CSS. Le besoin de JavaScript dépend de la [modélisation de contenu](./5-new-block.md#block-model) du bloc et de sa complexité. Si nécessaire, vous pouvez ajouter du [JavaScript de bloc](./7b-block-js-css.md).
 
-En utilisant une approche uniquement CSS, les éléments d’HTML sémantiques nus (pour la plupart) du bloc sont ciblés et stylisés.
+En utilisant une approche uniquement CSS, les éléments de code HTML sémantique (principalement) nus du bloc sont ciblés et stylisés.
 
-## Bloquer HTML
+## HTML de bloc
 
 Pour comprendre comment mettre en forme un bloc, passez d’abord en revue le DOM exposé par Edge Delivery Services, car c’est ce qui est disponible pour la mise en forme. Vous pouvez trouver le DOM en examinant le bloc desservi par l’environnement de développement local de l’interface de ligne de commande d’AEM. Évitez d’utiliser le DOM de l’éditeur universel, car il diffère légèrement.
 
 >[!BEGINTABS]
 
->[!TAB DOM pour le style]
+>[!TAB DOM à mettre en forme]
 
-Voici le DOM du bloc de teaser qui est la cible du style.
+Voici le DOM du bloc de teaser qui est la cible de la mise en forme.
 
-Notez la `<p class="button-container">...` qui est [augmentée automatiquement](./4-website-branding.md#inferred-elements) comme un élément déduit par Edge Delivery Services JavaScript.
+Notez l’élément `<p class="button-container">...` qui est [augmenté automatiquement](./4-website-branding.md#inferred-elements) comme un élément déduit par le JavaScript Edge Delivery Services.
 
 ```html
 ...
@@ -71,7 +71,7 @@ Notez la `<p class="button-container">...` qui est [augmentée automatiquement](
 ...
 ```
 
->[!TAB Comment trouver le DOM ]
+>[!TAB Comment trouver le DOM]
 
 Pour trouver le DOM à mettre en forme, ouvrez la page avec le bloc sans style dans votre environnement de développement local, sélectionnez le bloc et inspectez le DOM.
 
@@ -79,11 +79,11 @@ Pour trouver le DOM à mettre en forme, ouvrez la page avec le bloc sans style d
 
 >[!ENDTABS]
 
-## Bloquer CSS
+## CSS de bloc
 
 Créez un fichier CSS dans le dossier du bloc, en utilisant le nom du bloc comme nom de fichier. Par exemple, pour le bloc **teaser**, le fichier se trouve à l’emplacement `/blocks/teaser/teaser.css`.
 
-Ce fichier CSS est automatiquement chargé lorsque le JavaScript des services de diffusion Edge détecte un élément DOM sur la page représentant un bloc de teaser.
+Ce fichier CSS est automatiquement chargé lorsque le JavaScript Edge Delivery Services détecte un élément DOM sur la page représentant un bloc de teaser.
 
 [!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
@@ -213,11 +213,11 @@ Ce fichier CSS est automatiquement chargé lorsque le JavaScript des services de
 
 Comme le CSS est écrit dans le projet de code, les modifications sont rechargées à chaud par l’interface de ligne de commande d’AEM, ce qui permet de comprendre rapidement et facilement comment le CSS affecte le bloc.
 
-![Aperçu CSS uniquement](./assets/7a-block-css/local-development-preview.png)
+![Prévisualisation CSS uniquement](./assets/7a-block-css/local-development-preview.png)
 
-## Étiqueter votre code
+## Appliquer lint à votre code
 
-Assurez-vous que vous [modifiez fréquemment](./3-local-development-environment.md#linting) votre code pour vous assurer qu’il est propre et cohérent. La liaison permet de détecter les problèmes tôt et de réduire le temps de développement global. N’oubliez pas que vous ne pouvez pas fusionner votre travail de développement pour `main` tant que tous vos problèmes de lint ne sont pas résolus.
+Veillez à [appliquer lint fréquemment](./3-local-development-environment.md#linting) à votre code pour vous assurer qu’il est clair et cohérent. Le linting permet de détecter les problèmes tôt et de réduire le temps de développement global. N’oubliez pas que vous ne pouvez pas fusionner votre travail de développement avec `main` tant que tous vos problèmes de linting ne sont pas résolus.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -239,4 +239,4 @@ $ git push origin teaser
 
 Vous pouvez désormais prévisualiser les modifications dans l’éditeur universel lorsque vous ajoutez le paramètre de requête `?ref=teaser`.
 
-![ Teaser dans l’éditeur universel ](./assets/7a-block-css/universal-editor-preview.png)
+![Teaser dans l’éditeur universel](./assets/7a-block-css/universal-editor-preview.png)

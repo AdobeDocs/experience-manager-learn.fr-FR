@@ -10,7 +10,7 @@ doc-type: Feature Video
 exl-id: 00746678-da23-4d0a-b775-e1de4ed87c56
 duration: 507
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '124'
 ht-degree: 100%
 
@@ -22,13 +22,13 @@ La vue d’ensemble de la Live Copy et le gestionnaire de configuration de plan
 
 ## Vue d’ensemble de la Live Copy {#live-copy-overview}
 
->[!VIDEO](https://video.tv.adobe.com/v/38316?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/17054?quality=12&learn=on)
 
 *La vue d’ensemble de la Live Copy est une interface utilisateur tactile permettant d’effectuer la gestion des Live Copies et de leurs plans directeurs respectifs. Cette fonctionnalité, introduite dans AEM 6.3, remplace le centre de contrôle de plans directeurs de l’interface utilisateur classique.*
 
 ## Gestionnaire de configuration de plans directeurs - Interface tactile {#blueprint-config-mgr}
 
->[!VIDEO](https://video.tv.adobe.com/v/37962?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/17056?quality=12&learn=on)
 
 *AEM 6.3 introduit une interface tactile pour gérer les configurations de plans directeurs à utiliser dans Multi Site Manager.*
 

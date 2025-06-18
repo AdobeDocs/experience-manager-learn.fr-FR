@@ -12,7 +12,7 @@ doc-type: Technical Video
 exl-id: 9f46ce7e-9c6d-429d-9d8a-c93c274f70d7
 duration: 704
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '65'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Le projet AEM contient l’ensemble du code et des configurations pour une implémentation. L’[!DNL AEM Project Archetype] crée un projet Adobe Experience Manager minimal qui s’appuie sur des bonnes pratiques pour que vous puissiez démarrer vos propres projets AEM sur des bases saines.
 
->[!VIDEO](https://video.tv.adobe.com/v/36954?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/32550?quality=12&learn=on)
 
 ## Ressources supplémentaires {#additional-resources}
 

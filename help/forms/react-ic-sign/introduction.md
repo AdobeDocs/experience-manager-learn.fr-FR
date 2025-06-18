@@ -11,7 +11,7 @@ last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: 64172af3-2905-4bc8-8311-68c2a70fb39e
 duration: 31
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '169'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ Voici le flux du cas d’utilisation :
 Pour que le cas d’utilisation fonctionne, vous aurez besoin des éléments suivants :
 
 * un serveur AEM avec package de module complémentaire Forms ;
-* une [clé d’intégration pour une application Acrobat Sign](https://helpx.adobe.com/fr/sign/kb/how-to-create-an-integration-key.html).
+* une [clé d’intégration pour une application Acrobat Sign](https://helpx.adobe.com/sign/kb/how-to-create-an-integration-key.html).
 
 ## Étapes suivantes
 

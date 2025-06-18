@@ -13,7 +13,7 @@ last-substantial-update: 2022-09-10T00:00:00Z
 thumbnail: KT-406.jpg
 duration: 22
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '116'
 ht-degree: 100%
 
@@ -81,7 +81,7 @@ Une vue consolidée dans les mécanismes d’authentification (et parfois d’au
                 <td>✔</td>
             </tr>
             <tr>
-                <td><a href="https://experienceleague.adobe.com/docs/events/assets/oauth-server-functionality-in-aem-7-23-14.pdf?lang=fr" target="_blank">OAuth 1.0a et 2.0</a></td>
+                <td><a href="https://experienceleague.adobe.com/docs/events/assets/oauth-server-functionality-in-aem-7-23-14.pdf" target="_blank">OAuth 1.0a et 2.0</a></td>
                 <td>✔</td>
                 <td>✔</td>
                 <td>✔</td>

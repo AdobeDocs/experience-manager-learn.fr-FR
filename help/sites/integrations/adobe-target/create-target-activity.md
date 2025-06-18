@@ -14,7 +14,7 @@ doc-type: Tutorial
 exl-id: f581a4fb-1182-44bb-8c46-4250cf37b55f
 duration: 260
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '109'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Découvrez comment créer et tester une activité Adobe Target à l’aide d’offres de fragments d’expérience AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/328962?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/41246?quality=12&learn=on)
 
 ## Conditions préalables
 

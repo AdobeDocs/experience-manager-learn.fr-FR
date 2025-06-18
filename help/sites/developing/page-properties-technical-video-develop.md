@@ -12,7 +12,7 @@ doc-type: Technical Video
 exl-id: 500f4e07-2686-42a2-8e44-d96dde02a112
 duration: 488
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '198'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 La personnalisation des champs de métadonnées des propriétés de page est une exigence courante dans toute implémentation de Sites. Cette vidéo présente le moyen le plus efficace d’y parvenir en utilisant les fonctionnalités de Sling Resource Merger.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410342?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/25173?quality=12&learn=on)
 
 La vidéo ci-dessus montre la personnalisation des propriétés de page pour le [site de référence WKND](https://github.com/adobe/aem-guides-wknd).
 

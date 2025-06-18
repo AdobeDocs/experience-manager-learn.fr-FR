@@ -11,7 +11,7 @@ level: Beginner
 exl-id: 16170f0d-6933-47f2-aefa-951599d163c0
 duration: 623
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '94'
 ht-degree: 100%
 
@@ -23,15 +23,15 @@ Configurez le panneau Personnes en ajoutant le fragment des informations sur le 
 
 **Configurer le panneau Personnes dans AEM Forms 6.3 et 6.4**
 
->[!VIDEO](https://video.tv.adobe.com/v/326919?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/22193?quality=12&learn=on)
 
 **Configurer le panneau Personnes dans AEM Forms 6.5 et les versions ultérieures**
 
->[!VIDEO](https://video.tv.adobe.com/v/326935?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/28385?quality=12&learn=on)
 
 **Règles sur les informations du conjoint ou de la conjointe**
 
->[!VIDEO](https://video.tv.adobe.com/v/326927?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/22195?quality=12&learn=on)
 
 ## Étapes suivantes
 

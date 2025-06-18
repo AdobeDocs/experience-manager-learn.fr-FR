@@ -12,7 +12,7 @@ doc-type: Feature Video
 exl-id: 78ff62ad-1017-4a02-80e9-81228f9e01eb
 duration: 260
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Les projets principaux simplifient considérablement la gestion de [!DNL AEM Projects] par les utilisateurs, les utilisatrices et les équipes.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410330?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/17740?quality=12&learn=on)
 
 Les administrateurs et les administrarices peuvent désormais créer un **[!DNL Master Project]** et affecter des utilisateurs et utilisatrices à des rôles/autorisations dans le cadre d’une équipe de projet. Les projets peuvent être créés à partir d’un projet principal et héritent automatiquement de l’appartenance à l’équipe. Ceci offre plusieurs avantages :
 

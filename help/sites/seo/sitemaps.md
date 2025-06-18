@@ -13,7 +13,7 @@ doc-type: Technical Video
 exl-id: 40bb55f9-011d-4261-9f44-b1104a591252
 duration: 937
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '234'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Découvrez comment optimiser votre SEO en créant des plans de site pour AEM Si
 >
 >Cette vidéo présente l’utilisation des URL relatives dans le plan du site. Les plans de site [doivent utiliser des URL absolues](https://sitemaps.org/protocol.html). Consultez la section [Configurations](#absolute-sitemap-urls) pour savoir comment activer les URL absolues, car cela n’est pas abordé dans la vidéo ci-dessous.
 
->[!VIDEO](https://video.tv.adobe.com/v/3454363?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/337960?quality=12&learn=on)
 
 ## Configurations
 

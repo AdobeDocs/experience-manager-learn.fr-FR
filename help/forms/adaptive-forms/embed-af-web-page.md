@@ -12,7 +12,7 @@ exl-id: 068e38df-9c71-4f55-b6d6-e1486c29d0a9
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 398
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '138'
 ht-degree: 100%
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 Le formulaire adaptatif incorporé est entièrement fonctionnel et les utilisateurs et utilisatrices peuvent le remplir et l’envoyer sans quitter la page. Cela permet à l’utilisateur ou à l’utilisatrice de rester dans le contexte des autres éléments de la page web et d’interagir simultanément avec le formulaire.
 
-La vidéo suivante explique les étapes nécessaires à l’intégration d’un formulaire adaptatif ou HTML5 dans une page web.
+La vidéo suivante explique les étapes nécessaires pour incorporer un formulaire adaptatif ou HTML5 dans une page web.
 Reportez-vous à la [documentation](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=fr) pour connaître les bonnes conditions préalables, les bonnes pratiques, etc.
->[!VIDEO](https://video.tv.adobe.com/v/3418455?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335893?quality=12&learn=on)
 
 Vous pouvez télécharger les exemples de fichiers utilisés dans la vidéo [ici](assets/embedding-af-web-page.zip).
 

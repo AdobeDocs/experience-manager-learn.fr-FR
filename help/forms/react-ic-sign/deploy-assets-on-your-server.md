@@ -11,7 +11,7 @@ last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: f12f83fa-673a-454c-aa52-6ea769a182b7
 duration: 36
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '157'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Les ressources/configurations suivantes ont été déployées sur un serveur de 
 * [Lot de Wrappers Adobe Sign](assets/AcrobatSign.core-1.0.0-SNAPSHOT.jar)
 
 * [Exemple de modèle de communication interactive](assets/waiver-interactive-communication.zip)
-* [Déployez le lot Developingwithserviceuser.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip?lang=fr)
+* [Déployez le lot Developingwithserviceuser.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/developingwithserviceuser.zip)
 * Ajoutez l’entrée suivante dans le mappage des utilisateurs et utilisatrices de serveur Apache Sling à l’aide du configMgr OSGi.
   **DevelopingWithServiceUser.core:getformsresourceresolver=fd-service**
 

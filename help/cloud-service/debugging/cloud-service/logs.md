@@ -12,9 +12,9 @@ level: Beginner
 exl-id: d0bd64bd-9e6c-4a28-a8d9-52bb37b27a09
 duration: 229
 source-git-commit: 0363505b426d6e4733c57409e17e9d69f7a567c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '962'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -167,7 +167,7 @@ __Pod cm-p12345-e56789-aem-author-abcdefg-2222__
 
 ## Niveaux de journal recommandés{#log-levels}
 
-Les instructions générales d’Adobe sur les niveaux de journal par environnement AEM as a Cloud Service consistent à respecter les paramètres de journal par défaut d’AEM (avec le niveau de journal par défaut de `INFO`). Adobe recommande que le code personnalisé soit également instrumenté avec des instructions de journal, ce qui permet de l’exécuter avec le niveau de journal de `INFO`. Les niveaux de journal sont conservés dans le code
+Les instructions générales d’Adobe sur les niveaux de journal conformément à l’environnement AEM as a Cloud Service consistent à respecter les paramètres de journal par défaut d’AEM (avec le niveau de journal par défaut `INFO`). Adobe recommande que le code personnalisé soit également instrumenté avec des instructions de journal, ce qui permet de l’exécuter avec le niveau de journal `INFO`. Les niveaux de journal sont conservés dans le code.
 
 + Les configurations de journal Java sont conservées dans les configurations OSGi.
 + Les niveaux de journalisation du serveur web Apache et du Dispatcher sont conservés dans le projet du Dispatcher

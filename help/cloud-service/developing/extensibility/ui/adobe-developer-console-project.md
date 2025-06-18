@@ -14,7 +14,7 @@ thumbnail: 3412875.jpeg
 exl-id: 06afb6d0-6ae6-47d4-a3d9-c48bb7d572f6
 duration: 163
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '107'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Créez un projet Adobe Developer Console qui définit son accès aux autres services Adobe et gère ses déploiements.
 
->[!VIDEO](https://video.tv.adobe.com/v/3442016?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3412875?quality=12&learn=on)
 
 >[!IMPORTANT]
 >

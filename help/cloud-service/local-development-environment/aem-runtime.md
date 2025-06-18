@@ -12,9 +12,9 @@ last-substantial-update: 2022-09-02T00:00:00Z
 exl-id: 19f72254-2087-450b-909d-2d90c9821486
 duration: 411
 source-git-commit: 99e3cadc71ca4e26f9e4034085788dfc5407d1bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1696'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Notez que `~` est utilisé comme raccourci pour le répertoire de l’utilisateu
 
 Experience Manager est une application Java™ qui requiert donc le SDK Oracle Java™ pour prendre en charge l’outil de développement.
 
-1. [Télécharger et installer le dernier SDK Java™ 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
+1. [Télécharger et installer le dernier SDK Java™ 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14)
 1. Vérifiez que le SDK Oracle Java™ 11 est installé en exécutant la commande :
 
 >[!BEGINTABS]
@@ -66,7 +66,7 @@ $ java --version
 
 Le SDK AEM as a Cloud Service, ou SDK AEM, contient le fichier Quickstart Jar utilisé pour exécuter localement l’instance de création et de publication AEM pour le développement, ainsi que la version compatible des outils Dispatcher.
 
-1. Connectez-vous à [https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?lang=fr) avec votre Adobe ID
+1. Connectez-vous à [https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?lang=fr) avec votre Adobe ID.
    + Votre organisation Adobe __doit__ être configurée pour AEM as a Cloud Service afin de télécharger le SDK AEM as a Cloud Service.
 1. Accédez à l’onglet __AEM as a Cloud Service__.
 1. Effectuez un tri par __date de publication__ dans l’ordre __décroissant__
@@ -364,7 +364,7 @@ java.lang.Exception: Quickstart requires a Java Specification 11 VM, but your VM
 Quickstart: aborting
 ```
 
-En effet, AEM as a Cloud Service nécessite le SDK Java™ 11 et vous exécutez une version différente, probablement Java™ 8. Pour résoudre ce problème, téléchargez et installez le [SDK Oracle Java™ 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14).
+En effet, AEM as a Cloud Service nécessite le SDK Java™ 11 et vous exécutez une version différente, probablement Java™ 8. Pour résoudre ce problème, téléchargez et installez le [SDK Oracle Java™ 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14).
 
 Une fois le SDK Oracle Java™ 11 installé, vérifiez qu’il s’agit de la version active en exécutant la commande à partir de la ligne de commande :
 

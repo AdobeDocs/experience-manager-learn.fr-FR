@@ -14,7 +14,7 @@ doc-type: Tutorial
 exl-id: aa48ffef-1105-4d0d-b4b4-12ac5d2eea23
 duration: 290
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '91'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Pour suivre cette vidéo, vous devez avoir déjà [intégré des balises dans Ad
 
 Découvrez comment activer Adobe Target sur votre site web AEM à l’aide de balises.
 
->[!VIDEO](https://video.tv.adobe.com/v/329003?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
 
 ## Étapes suivantes
 

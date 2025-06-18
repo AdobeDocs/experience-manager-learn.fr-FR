@@ -14,9 +14,9 @@ recommendations: noDisplay, noCatalog
 jira: KT-15348
 exl-id: c7020e3e-2664-42f1-a3b4-c23eb17cbf4b
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '76'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 86%
 
 Découvrez les nouvelles fonctionnalités de l’IA générative disponibles dans la création de documents AEM Sites. Nous couvrons les fonctionnalités, l’intégration avec Adobe Firefly et Adobe Express ainsi que la technologie utilisée en arrière-plan, les modèles de données utilisés, et la manière dont ces modèles sont entraînés.
 
->[!VIDEO](https://video.tv.adobe.com/v/3451117/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3428436/?learn=on)
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 saison 3](../cloud5-season-3.md).
+Regardez les vidéos connexes sur la page [Cloud 5 saison 3](../cloud5-season-3.md).

@@ -11,8 +11,8 @@ thumbnail: kt-10798.jpg
 exl-id: d4ae08d9-dc43-4414-ab75-26853186a301
 duration: 48
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
-source-wordcount: '237'
+workflow-type: ht
+source-wordcount: '228'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ La configuration de déploiement suivante doit être en place pour les déploiem
 |---------------------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtres Dispatcher.](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
 | Partage de ressources entre origines multiples (CORS) | ✘ | ✘ | ✘ |
-| [Hôtes AEM.](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [Hôtes AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Exigences d’autorisation
 

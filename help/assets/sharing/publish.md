@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: b69508c9-4be3-43c9-9d54-84ac0a2b4b6b
 duration: 335
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '50'
 ht-degree: 100%
 
@@ -23,6 +23,6 @@ ht-degree: 100%
 
 Découvrez comment publier des ressources et leurs rendus depuis le service de création AEM vers le service de publication AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/344739?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/330932?quality=12&learn=on)
 
 _Assurez-vous que le déploiement AEM Assets dispose d’un service de publication AEM sous licence avant de publier des ressources._

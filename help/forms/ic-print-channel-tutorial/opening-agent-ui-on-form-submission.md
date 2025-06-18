@@ -12,7 +12,7 @@ level: Intermediate
 exl-id: 509b4d0d-9f3c-46cb-8ef7-07e831775086
 duration: 170
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '322'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Cet article décrit les étapes à suivre pour ouvrir l’interface utilisateur 
 
 La vidéo suivante présente un cas d’utilisation.
 
->[!VIDEO](https://video.tv.adobe.com/v/328987?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/40122?quality=12&learn=on)
 
 ```java
 String accountNumber = request.getParameter("accountnumber"))

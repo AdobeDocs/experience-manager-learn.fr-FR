@@ -13,9 +13,9 @@ doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
 source-git-commit: 62887c6251b09ac22664cfeb9c5513363efb555e
-workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 87%
+workflow-type: ht
+source-wordcount: '943'
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Les solutions de redirection d’URL proposées par AEM sont les suivantes :
 | [Sur Edge via votre propre réseau CDN (BYOCDN)](#at-edge-via-bring-your-own-cdn) | ✘ | ✘ | ✔ | Edge/CDN (BYOCDN) |
 | [Apache, règles `mod_rewrite` en tant que configuration de Dispatcher](#apache-mod_rewrite-module) | ✔ | ✘ | ✔ | Dispatcher |
 | [ACS Commons : gestionnaire de mappage de redirection](#redirect-map-manager) | ✘ | ✔ | ✔ | Dispatcher |
-| [ACS Commons : gestionnaire de redirection](#redirect-manager) | ✘ | ✔ | ✔ | AEM/Dispatcher |
+| [ACS Commons : gestionnaire de redirection](#redirect-manager) | ✘ | ✔ | ✔ | AEM / Dispatcher |
 | [Propriété de page `Redirect`](#the-redirect-page-property) | ✘ | ✔ | ✔ | AEM |
 
 
@@ -50,7 +50,7 @@ Les solutions suivantes sont présentées dans l’ordre où elles sont les plus
 
 Cette option est uniquement disponible pour les clientes et les clients AEM as a Cloud Service.
 
-Le [réseau CDN géré par AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn) fournit une solution de redirection au niveau Edge, réduisant ainsi les allers-retours vers l’origine. La fonction [Redirections côté serveur](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#server-side-redirectors) vous permet de configurer les règles de redirection dans le code du projet AEM et de les déployer à l’aide du [Pipeline de configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager). La taille du fichier de configuration du réseau CDN (`cdn.yaml`) ne doit pas dépasser 100 Ko.
+Le [réseau CDN géré par AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn) fournit une solution de redirection au niveau Edge, réduisant ainsi les allers-retours vers l’origine. La fonctionnalité [Redirections côté serveur](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#server-side-redirectors) vous permet de configurer les règles de redirection dans le code du projet AEM et de les déployer à l’aide du [pipeline de configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/how-to-setup#deploy-rules-through-cloud-manager). La taille du fichier de configuration du réseau CDN (`cdn.yaml`) ne doit pas dépasser 100 Ko.
 
 La gestion des redirections au niveau Edge ou du réseau CDN présente des avantages en termes de performances.
 
@@ -76,13 +76,13 @@ Deux fonctionnalités d’[ACS AEM Commons](https://adobe-consulting-services
 
 #### Gestionnaire de mappage de redirection
 
-Le [Gestionnaire de mappage de redirection](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) permet aux administrateurs et aux administratrices d’AEM de gérer et de publier les fichiers [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) en toute facilité, sans besoin d’accès direct ou de redémarrage du serveur web Apache. Cette fonctionnalité permet aux utilisateurs et aux utilisatrices dotés des autorisations appropriées de créer, mettre à jour et supprimer des règles de redirection à partir d’une console dans AEM, sans l’aide de l’équipe de développement ou d’un déploiement AEM. Redirect Map Manager est compatible avec **AEM as a Cloud Service** (voir [Stratégie de redirection d’URL sans pipeline](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) et [tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects#acs-commons---redirect-map-manager) associé) et **AEM 6.x**.
+Le [Gestionnaire de mappage de redirection](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) permet aux administrateurs et aux administratrices d’AEM de gérer et de publier les fichiers [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html) en toute facilité, sans besoin d’accès direct ou de redémarrage du serveur web Apache. Cette fonctionnalité permet aux utilisateurs et aux utilisatrices dotés des autorisations appropriées de créer, mettre à jour et supprimer des règles de redirection à partir d’une console dans AEM, sans l’aide de l’équipe de développement ou d’un déploiement AEM. Le gestionnaire de mappage de redirection est compatible à la fois avec **AEM as a Cloud Service** (consultez la stratégie [Redirections d’URL sans pipeline](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) et le [tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects#acs-commons---redirect-map-manager) connexe) et avec **AEM 6.x**.
 
 #### Gestionnaire de redirection
 
 Les [Gestionnaire de redirection](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) permet aux utilisateurs et aux utilisatrices d’AEM de gérer et de publier en toute facilité les redirections à partir d’AEM. L’implémentation est basée sur le filtre de servlet Java™, ce qui permet une consommation de ressources JVM standard. Cette fonctionnalité élimine également la dépendance à l’égard de l’équipe de développement AEM et des déploiements AEM. Le Gestionnaire de redirection est compatible avec **AEM as a Cloud Service** et **AEM 6.x**. Bien que la requête de redirection initiale doive accéder au service de publication AEM pour générer les redirections HTTP 301/302, la plupart des réseaux CDN mettent en cache ces redirections HTTP 301/302 par défaut, ce qui permet aux requêtes suivantes d’être redirigées vers le réseau Edge/CDN.
 
-Le [Gestionnaire de redirection](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) prend également en charge la stratégie [Redirections d’URL sans pipeline](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) pour **AEM as a Cloud Service** en [compilant les redirections dans un fichier texte](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) pour [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html), afin de permettre la mise à jour des redirections utilisées dans le serveur web Apache sans y accéder directement ni nécessiter son redémarrage. Pour plus d’informations, consultez le [tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects#acs-commons---redirect-manager). Dans ce scénario, la demande de redirection initiale atteint le serveur web Apache, et non le service de publication AEM.
+Le [Gestionnaire de redirection](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/index.html) prend également en charge la stratégie [Redirections d’URL sans pipeline](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/content-delivery/pipeline-free-url-redirects) pour **AEM as a Cloud Service** en [compilant les redirections dans un fichier texte](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) pour [Apache RewriteMap](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html), afin de permettre la mise à jour des redirections utilisées dans le serveur web Apache sans y accéder directement ni nécessiter son redémarrage. Pour plus d’informations, consultez le [tutoriel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects#acs-commons---redirect-manager). Dans ce scénario, la demande de redirection initiale atteint le serveur web Apache, et non le service de publication AEM.
 
 ### La propriété de page `Redirect`
 

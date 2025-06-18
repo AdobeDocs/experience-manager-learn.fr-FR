@@ -11,7 +11,7 @@ index: y
 exl-id: caf413ee-a124-4629-ae02-177f4deff4e6
 duration: 142
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
 ht-degree: 100%
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour exécuter des tests de chargement à partir de l’interface utilisateur à l’aide des exemples FormsIVS et OutputIVS.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3441470?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335507?quality=12&learn=on)

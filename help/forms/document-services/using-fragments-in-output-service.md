@@ -10,7 +10,7 @@ last-substantial-update: 2022-07-09T00:00:00Z
 exl-id: d7887e2e-c2d4-4f0c-b117-ba7c41ea539a
 duration: 106
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '432'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Voici la structure de dossiers de l’exemple d’xdp qui utilise 2 fragments.
 ![forms&amp;document](assets/fragment-folder-structure-ui.png).
 
 
-* Service Output : en règle générale, ce service est utilisé pour fusionner des données XML avec un modèle xdp ou un PDF, afin de générer un PDF aplati. Pour plus d’informations, reportez-vous au [javadoc](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) pour le service Output. Dans cet exemple, nous utilisons des fragments résidant dans le référentiel crx.
+* Service Output : en règle générale, ce service est utilisé pour fusionner des données XML avec un modèle xdp ou un PDF, afin de générer un PDF aplati. Pour plus d’informations, reportez-vous au [javadoc](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) pour le service Output. Dans cet exemple, nous utilisons des fragments résidant dans le référentiel crx.
 
 
 Le code suivant a été utilisé pour inclure des fragments dans le fichier PDF.

@@ -12,7 +12,7 @@ duration: 40
 last-substantial-update: 2023-12-01T00:00:00Z
 exl-id: 172a477f-d277-43c1-8e47-68870b02203c
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Consultez la [documentation](https://experienceleague.adobe.com/docs/experience-
             <a href="set-up.md" title="Configuration de la création de documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438864/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425699/?format=jpeg"
                 alt="Vue d’ensemble de la création de documents">
             </a>
           </figure>
@@ -68,7 +68,7 @@ Consultez la [documentation](https://experienceleague.adobe.com/docs/experience-
             <a href="preview-and-publish.md" title="Prévisualiser et publier du contenu"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3441339/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425700/?format=jpeg"
                 alt="Prévisualiser et publier du contenu">
             </a>
           </figure>
@@ -100,7 +100,7 @@ Consultez la [documentation](https://experienceleague.adobe.com/docs/experience-
             <a href="document-structure.md" title="Structure des documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438809/?format=jpeg&captions=fre_fr" alt="Structure des documents">
+                src="https://video.tv.adobe.com/v/3425701/?format=jpeg" alt="Structure des documents">
             </a>
           </figure>
         </div>
@@ -131,7 +131,7 @@ Consultez la [documentation](https://experienceleague.adobe.com/docs/experience-
             <a href="default-content-and-sections.md" title="Contenu et sections par défaut"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437977/?format=jpeg&captions=fre_fr" alt="Contenu et sections par défaut">
+                src="https://video.tv.adobe.com/v/3425702/?format=jpeg" alt="Contenu et sections par défaut">
             </a>
           </figure>
         </div>
@@ -161,7 +161,7 @@ Consultez la [documentation](https://experienceleague.adobe.com/docs/experience-
           <figure class="image is-16by9">
             <a href="blocks-and-autoblocks.md" title="Blocs et blocs automatiques" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3439501/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425703/?format=jpeg"
                 alt="Blocs et blocs automatiques">
             </a>
           </figure>
@@ -194,7 +194,7 @@ Blocs et blocs automatiques</a>
             <a href="redirects.md" title="Redirections"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438545/?format=jpeg&captions=fre_fr" alt="Redirections">
+                src="https://video.tv.adobe.com/v/3425704/?format=jpeg" alt="Redirections">
             </a>
           </figure>
         </div>
@@ -225,7 +225,7 @@ Blocs et blocs automatiques</a>
             <a href="bulk-metadata.md" title="Métadonnées en bloc"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438409/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425705/?format=jpeg"
                 alt="Métadonnées en bloc">
             </a>
           </figure>
@@ -257,7 +257,7 @@ Blocs et blocs automatiques</a>
             <a href="page-metadata.md" title="Métadonnées de page"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438067/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425706/?format=jpeg"
                 alt="Métadonnées de page">
             </a>
           </figure>
@@ -289,7 +289,7 @@ Blocs et blocs automatiques</a>
             <a href="author-authentication.md" title="Authentification de création"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438180/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3429594/?format=jpeg"
                 alt="Authentification de création">
             </a>
           </figure>
@@ -326,7 +326,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/responsive-navigation.md" title="Navigation réactive"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438165/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425707/?format=jpeg"
                 alt="Navigation réactive">
             </a>
           </figure>
@@ -358,7 +358,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/document-audit.md" title="Audit de documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437713/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425722/?format=jpeg"
                 alt="Audit de documents">
             </a>
           </figure>
@@ -390,7 +390,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/document-permissions.md" title="Autorisations des documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438103/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425724/?format=jpeg"
                 alt="Autorisations des documents">
             </a>
           </figure>
@@ -422,7 +422,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/document-versions.md" title="Versions de documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438796/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425728/?format=jpeg"
                 alt="Versions de documents">
             </a>
           </figure>
@@ -454,7 +454,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/document-workflows.md" title="Workflows de documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438292/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425720/?format=jpeg"
                 alt="Workflows de documents">
             </a>
           </figure>
@@ -486,7 +486,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/iframes.md" title="Utiliser des iFrames"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438391/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425719/?format=jpeg"
                 alt="Utiliser des iFrames">
             </a>
           </figure>
@@ -518,7 +518,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/image-alt-text.md" title="Utiliser du texte de remplacement"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438677/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425721/?format=jpeg"
                 alt="Utiliser du texte de remplacement">
             </a>
           </figure>
@@ -550,7 +550,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/no-index.md" title="Empêcher l’indexation"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438114/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425726/?format=jpeg"
                 alt="Empêcher l’indexation">
             </a>
           </figure>
@@ -582,7 +582,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/using-dynamic-media.md" title="Dynamic Media"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438899/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3429593/?format=jpeg"
                 alt="Dynamic Media">
             </a>
           </figure>
@@ -614,7 +614,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/migration-using-importer.md" title="Migration de site à l’aide de l’importateur"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3443698/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3429595/?format=jpeg"
                 alt="Migration de site à l’aide de l’importateur">
             </a>
           </figure>
@@ -646,7 +646,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/customizing-importer.md" title="Personnalisation de l’importateur"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3444247/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3429596/?format=jpeg"
                 alt="Personnalisation de l’importateur">
             </a>
           </figure>
@@ -678,7 +678,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/bulk-importing-using-importer.md" title="Import en masse à l’aide de l’importateur"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3445887/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3429597/?format=jpeg"
                 alt="Import en masse à l’aide de l’importateur">
             </a>
           </figure>
@@ -715,7 +715,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/generate-variations/overview.md" title="Générer des variations"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3441332/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
                 alt="Générer des variations">
             </a>
           </figure>
@@ -747,7 +747,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/generate-variations/configure-sidekick.md" title="Générer des variations - Configuration du Sidekick"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3436989/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3428306/?format=jpeg"
                 alt="Générer des variations - Configuration du Sidekick">
             </a>
           </figure>
@@ -779,7 +779,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/generate-variations/prompt-templates.md" title="Générer des variations - Modèles de prompt"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3441332/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3428307/?format=jpeg"
                 alt="Générer des variations - Modèles de prompt">
             </a>
           </figure>
@@ -811,7 +811,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Générer des variations - Modèles de prompt personnalisés"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438501/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3428316/?format=jpeg"
                 alt="Générer des variations - Modèles de prompt personnalisés">
             </a>
           </figure>
@@ -843,7 +843,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/generate-variations/custom-prompt-templates.md" title="Générer des variations - Enregistrement des modèles de prompt personnalisés"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437504/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3428317/?format=jpeg"
                 alt="Générer des variations - Enregistrement des modèles de prompt personnalisés">
             </a>
           </figure>
@@ -875,7 +875,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/generate-variations/using-target-audiences.md" title="Générer des variations - Utilisation des audiences Adobe Target"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437757/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3428792/?format=jpeg"
                 alt="Générer des variations - Utilisation des audiences Adobe Target">
             </a>
           </figure>
@@ -907,7 +907,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/generate-variations/using-csv-file-audiences.md" title="Générer des variations - Utilisation des audiences de fichiers CSV"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3436889/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3428793/?format=jpeg"
                 alt="Générer des variations - Utilisation des audiences de fichiers CSV">
             </a>
           </figure>
@@ -939,7 +939,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/generate-variations/using-adobe-firefly-for-images.md" title="Générer des variations - Utilisation d’Adobe Firefly"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438358/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3428794/?format=jpeg"
                 alt="Générer des variations - Utilisation d’Adobe Firefly">
             </a>
           </figure>
@@ -971,7 +971,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/generate-variations/actions.md" title="Générer des variations - Actions sur une variation générée"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437275/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3428795/?format=jpeg"
                 alt="Générer des variations - Actions sur une variation générée">
             </a>
           </figure>
@@ -1003,7 +1003,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/generate-variations/trust-privacy.md" title="Générer des variations - Confiance et confidentialité"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3440016/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3429060/?format=jpeg"
                 alt="Générer des variations - Confiance et confidentialité">
             </a>
           </figure>
@@ -1035,7 +1035,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/experimentation-framework.md" title="Vue d’ensemble du cadre d’expérimentation"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3437856/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3429061/?format=jpeg"
                 alt="Vue d’ensemble du cadre d’expérimentation">
             </a>
           </figure>
@@ -1067,7 +1067,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/setup-experimentation-framework.md" title="Configuration du cadre d’expérimentation"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438929/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3429062/?format=jpeg"
                 alt="Configuration du cadre d’expérimentation">
             </a>
           </figure>
@@ -1099,7 +1099,7 @@ Blocs et blocs automatiques</a>
             <a href="./how-to/experimentation-add-metadata.md" title="Ajout de métadonnées pour l’expérimentation"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3440107/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3428796/?format=jpeg"
                 alt="Ajout de métadonnées pour l’expérimentation">
             </a>
           </figure>

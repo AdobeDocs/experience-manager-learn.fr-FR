@@ -14,7 +14,7 @@ badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
 exl-id: feab7e1d-3998-41ba-8326-bbff14564494
 duration: 204
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '56'
 ht-degree: 100%
 
@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Dans cette vidéo, nous configurons le formulaire pour lequel la personne qui le remplit et la personne qui le signe sont la même personne.
 
->[!VIDEO](https://video.tv.adobe.com/v/3411756?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/332439?quality=12&learn=on)

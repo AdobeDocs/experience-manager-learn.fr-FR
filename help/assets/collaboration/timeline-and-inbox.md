@@ -14,7 +14,7 @@ doc-type: Feature Video
 exl-id: 868dc44b-23ca-4e52-a0bc-229480cfae10
 duration: 110
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '36'
 ht-degree: 100%
 
@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Familiarisez-vous avec les consoles web clés d’AEM Assets utilisées pour la collaboration.
 
->[!VIDEO](https://video.tv.adobe.com/v/36709?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/32051?quality=12&learn=on)

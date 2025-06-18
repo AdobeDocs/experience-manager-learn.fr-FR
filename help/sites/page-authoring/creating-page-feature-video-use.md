@@ -12,7 +12,7 @@ doc-type: Feature Video
 exl-id: 2ad1554e-312a-4150-b365-7e00eab1fa43
 duration: 141
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '41'
 ht-degree: 100%
 
@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment créer des pages de site à l’aide de modèles de page dans Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/37207?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/31827?quality=12&learn=on)

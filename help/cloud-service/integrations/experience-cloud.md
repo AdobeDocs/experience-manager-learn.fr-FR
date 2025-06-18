@@ -15,8 +15,8 @@ badgeVersions: label="d’AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
 duration: 135
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
-source-wordcount: '682'
+workflow-type: ht
+source-wordcount: '667'
 ht-degree: 100%
 
 ---
@@ -171,5 +171,5 @@ L’intégration d’Adobe Workfront à AEM as a Cloud Service simplifie le
 + [Vidéos sur le connecteur amélioré Workfront](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html?lang=fr)
 + AEM Assets Essentials
 
-   + [Guide d’utilisation d’Adobe Workfront pour Assets Essentials](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)
+   + [Guide d’utilisation d’Adobe Workfront pour Assets Essentials](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2F_workfront-for-aem-asset-essentials.htm)
    + [Vidéos Adobe Workfront et Assets Essentials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html?lang=fr)

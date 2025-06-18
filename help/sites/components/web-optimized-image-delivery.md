@@ -13,7 +13,7 @@ duration: 363
 doc-type: Feature Video
 exl-id: d16c0c7b-3d0e-4e4f-a1e0-baa8a44cc366
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
 ht-degree: 100%
 
@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment activer la diffusion d’images optimisée pour le web sur AEM as a Cloud Service Sites à l’aide des composants principaux AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449994?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/346064?quality=12&learn=on)

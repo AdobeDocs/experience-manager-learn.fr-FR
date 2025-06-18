@@ -13,9 +13,9 @@ thumbnail: KT-15313.jpeg
 exl-id: d04c3316-6f8f-4fd1-9df1-3fe09d44f735
 duration: 256
 source-git-commit: 107a9a77a1bf2337f309d503a4a310d8d0781f0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '510'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Avant d’exécuter le script, vous devez le configurer avec l’URL de votre in
 
 ## Exporter le script
 
-Le script, écrit en tant que module JavaScript, fait partie d’un projet Node.js, car il possède une dépendance sur `node-fetch` et `p-limit`. Vous pouvez copier le script ci-dessous dans un projet Node.js vide de type `module`, puis exécuter `npm install node-fetch p-limit` pour installer la dépendance.
+Le script, écrit en tant que module JavaScript, fait partie d’un projet Node.js, car il dépend de `node-fetch` et `p-limit`. Vous pouvez copier le script ci-dessous dans un projet Node.js vide de type `module`, puis exécuter `npm install node-fetch p-limit` pour installer la dépendance.
 
 Ce script décrit l’arborescence de dossiers AEM Assets, en téléchargeant les ressources et les dossiers vers un dossier local de votre ordinateur. Il utilise l’[API HTTP AEM ASSETS](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets) pour récupérer les données de dossier et de ressource, puis télécharge les rendus originaux des ressources.
 

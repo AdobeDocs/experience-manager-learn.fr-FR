@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: ab051363-d3e8-4c07-b1fa-3a5d24757496
 duration: 394
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1750'
 ht-degree: 100%
 
@@ -151,7 +151,7 @@ La couche de données client Adobe est basée sur les **événements**. Lorsque 
 
    >[!NOTE]
    >
-   > Il peut s’avérer utile d’utiliser [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=fr) pour changer le code incorporé dans un environnement de **développement**.
+   > Il peut s’avérer utile d’utiliser [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=fr) pour changer le code intégré dans un environnement de **développement**.
 
 1. Accédez au [site WKND](https://wknd.site/fr/fr.html) et ouvrez les outils de développement pour afficher la console. Sélectionnez également la case à cocher **Conserver le journal**.
 

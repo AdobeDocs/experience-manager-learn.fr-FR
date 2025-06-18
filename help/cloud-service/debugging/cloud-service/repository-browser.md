@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 88af40fc-deff-4b92-84b1-88df2dbdd90b
 duration: 305
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '253'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 L’explorateur de référentiels est un outil puissant qui offre une visibilité sur l’entrepôt de données AEM sous-jacent, ce qui permet de déboguer facilement l’environnement d’AEM as a Cloud Service. L’explorateur de référentiels prend en charge une vue en lecture seule des ressources et des propriétés d’AEM pour les services de production, d’évaluation et de développement, ainsi que pour les services de création, de publication et de prévisualisation.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447056?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/341464?quality=12&learn=on)
 
 L’explorateur de référentiels est __UNIQUEMENT__ disponible sur les environnements AEM as a Cloud Service (utilisez [CRXDE Lite](../aem-sdk-local-quickstart/other-tools.md#crxde-lite) pour déboguer le SDK AEM local).
 

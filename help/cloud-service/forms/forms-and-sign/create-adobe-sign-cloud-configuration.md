@@ -15,7 +15,7 @@ badgeVersions: label="dʼAEM Forms as a Cloud Service" before-title="false"
 exl-id: a55773a5-0486-413f-ada6-bb589315f0b1
 duration: 222
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '155'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ La configuration des services cloud dans AEM vous permet de créer une intégrat
 
 La vidéo suivante décrit les étapes nécessaires à la création d’une configuration de services cloud pour intégrer AEM à Acrobat Sign.
 
->[!VIDEO](https://video.tv.adobe.com/v/3411768?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/332437?quality=12&learn=on)
 
 ## Résolution des problèmes
 

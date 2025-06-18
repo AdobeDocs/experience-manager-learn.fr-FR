@@ -13,9 +13,9 @@ jira: KT-15184
 thumbnail: KT-15184.jpeg
 exl-id: 60c2306f-3cb6-4a6e-9588-5fa71472acf7
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1924'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -224,7 +224,7 @@ data:
 
 ## Recevoir des alertes sur les règles de filtrage du trafic {#receiving-alerts}
 
-Comme mentionné ci-dessus, si la règle de filtrage du trafic inclut *alert : true*, une alerte est reçue lorsque la règle correspond.
+Comme mentionné ci-dessus, si la règle de filtrage du trafic inclut *alert: true*, une alerte est reçue lorsque la règle est satisfaite.
 
 ## Agir en réponse aux alertes {#acting-on-alerts}
 

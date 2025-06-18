@@ -12,7 +12,7 @@ doc-type: Feature Video
 exl-id: 12490c29-91f4-4bb7-b7b6-7ed7cd3fb76d
 duration: 220
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '188'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Le système de style d’Adobe Experience Manager permet de créer des variantes visuelles des composants sans développement back-end. À la clé, une meilleure réutilisation des composants AEM et une création de contenu plus polyvalente et efficace. Le système de style, utilisé conjointement avec les composants principaux d’AEM, l’éditeur de modèles et la disposition réactive, offre des fonctionnalités puissantes dédiées à l’élaboration rapide d’expériences hautes en couleur.
 
->[!VIDEO](https://video.tv.adobe.com/v/340442?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/21750?quality=12&learn=on)
 
 Cette vidéo illustre l’utilisation du système de style pour créer des aspects visuels complètement distincts pour un seul composant, à l’aide du langage CSS uniquement.
 

@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: 83bf8d76-2e36-45d4-bfff-03758e5f7bdc
 duration: 422
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '28'
 ht-degree: 100%
 
@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment filtrer, rechercher et télécharger des ressources dans AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418460?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335861?quality=12&learn=on)

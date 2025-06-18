@@ -1,6 +1,6 @@
 ---
 title: Étape de processus personnalisée pour renseigner les variables de liste
-description: Découvrez comment créer une étape de processus personnalisée pour renseigner les variables de liste de type document et chaîne dans Adobe Experience Manager.
+description: Découvrez comment créer une étape de processus personnalisée pour renseigner les variables de liste de type document et chaîne dans Adobe Experience Manager.
 feature: Workflow
 topic: Development
 version: Experience Manager 6.5
@@ -10,24 +10,24 @@ kt: kt-8063
 exl-id: 09d9eabf-4815-4159-b6c7-cf2ebc8a2df5
 duration: 68
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '170'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
 
 # Étape de processus personnalisée
 
-Ce guide vous guidera tout au long de la création d’une étape de processus personnalisé pour renseigner les variables de liste de type Liste de tableaux avec des pièces jointes et des noms de pièces jointes dans Adobe Experience Manager. Ces variables sont essentielles pour le composant de workflow Envoyer un e-mail .
+Ce guide vous guidera tout au long de la création d’une étape de processus personnalisée pour renseigner les variables de liste de type Liste de tableaux avec des pièces jointes et des noms de pièces jointes dans Adobe Experience Manager. Ces variables sont essentielles pour le composant de workflow Envoyer un e-mail.
 
-Si vous ne connaissez pas la création d’un bundle OSGi, suivez ces [instructions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=fr).
+Si vous ne maîtrisez pas la création d’un bundle OSGi, suivez ces [instructions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-osgi-bundle/create-your-first-osgi-bundle.html?lang=fr).
 
-Le code de l’étape de processus personnalisé effectue les actions suivantes :
+Le code de l’étape de processus personnalisée effectue les opérations suivantes :
 
-1. Requête pour toutes les pièces jointes de formulaire adaptatif sous le dossier de payload. Le nom du dossier est transmis en tant qu’argument de processus à l’étape.
-2. Remplit la variable de workflow `listOfDocuments`.
-3. Remplit la variable de workflow `attachmentNames`.
+1. Interroge toutes les pièces jointes de formulaire adaptatif dans le dossier de payload. Le nom du dossier est transmis en tant qu’argument de processus à l’étape.
+2. Renseigne la variable de workflow `listOfDocuments`.
+3. Renseigne la variable de workflow `attachmentNames`.
 4. Définit la valeur de la variable de workflow `no_of_attachments`.
 
 ```java
@@ -112,11 +112,11 @@ public class PopulateListOfDocuments implements WorkflowProcess {
 
 >[!NOTE]
 >
-> Assurez-vous que les variables suivantes sont définies dans votre workflow pour que le code fonctionne :
+> Assurez-vous que les variables suivantes sont définies dans votre workflow pour que le code fonctionne :
 > 
-> - `listOfDocuments` : variable de type ArrayList de documents
-> - `attachmentNames` : variable de type ArrayList de chaîne
-> - `no_of_attachments` : variable de type Double
+> - `listOfDocuments` : variable de type ArrayList de documents
+> - `attachmentNames` : variable de type ArrayList de chaîne
+> - `no_of_attachments` : variable de type Double
 
 ## Étapes suivantes
 

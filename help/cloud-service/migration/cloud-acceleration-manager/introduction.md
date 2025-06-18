@@ -11,7 +11,7 @@ thumbnail: 336689.jpeg
 exl-id: 87f1ef0c-dc47-49a7-bb7a-513d4c260dd8
 duration: 529
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '48'
 ht-degree: 100%
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez comment Cloud Acceleration Manager peut vous aider à passer rapidement et facilement à Experience Manager as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452716?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/336689?quality=12&learn=on)

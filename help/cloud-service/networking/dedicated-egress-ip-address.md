@@ -12,9 +12,9 @@ exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 891
 source-git-commit: 24d634fd1e62e873bc1dbb3ac0cd18f70129ee86
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1370'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Un programme Cloud Manager ne peut avoir qu’un __seul__ type d’infrastructu
 >
 > Lisez la [documentation sur la configuration réseau avancée](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking) d’AEM as a Cloud Service pour plus d’informations sur les adresses IP de sorties dédiées.
 
-## Conditions préalables
+## Prérequis
 
 Les éléments suivants sont requis lors de la configuration d’une adresse IP de sortie dédiée qui utilise les API Cloud Manager :
 
@@ -86,7 +86,7 @@ Les adresses IP de sortie dédiées peuvent être activées à l’aide des API 
 
 1. Tout d’abord, déterminez la région dans laquelle la mise en réseau avancée est nécessaire à l’aide de l’opération [listRegion](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager. Le `region name` est nécessaire pour effectuer les appels d’API Cloud Manager ultérieurs. En règle générale, la région dans laquelle l’environnement de production réside est utilisée.
 
-   Recherchez la région de votre environnement AEM as a Cloud Service AEM dans [Cloud Manager](https://my.cloudmanager.adobe.com) sous les [détails de l’environnement](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Le nom de région affiché dans Cloud Manager peut être [mappé au code de région](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilisé dans l’API Cloud Manager.
+   Recherchez la région de votre environnement AEM as a Cloud Service AEM dans [Cloud Manager](https://my.cloudmanager.adobe.com) sous les [détails de l’environnement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Le nom de région affiché dans Cloud Manager peut être [mappé au code de région](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilisé dans l’API Cloud Manager.
 
    __Requête HTTP listRegion__
 

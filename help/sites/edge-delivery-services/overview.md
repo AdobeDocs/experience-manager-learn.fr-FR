@@ -12,9 +12,9 @@ duration: 660
 last-substantial-update: 2024-03-20T00:00:00Z
 exl-id: 4f08bc07-0c9c-42fc-af42-3d51af9f37c4
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 82%
 
 Découvrez comment rendre les sites web plus rapides avec Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3453446/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
 
 Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/overview) pour obtenir des détails complets sur Edge Delivery Services et ses fonctionnalités.
 
@@ -31,7 +31,7 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
 
 <!-- CARDS 
 
-* https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial
+* https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial
   {title = Document-based authoring and Edge Delivery Services tutorial}
   {description = Learn how to create Edge Delivery Services web sites authored using Document-based authoring.}
   {cta = Start the tutorial}
@@ -49,7 +49,7 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" title="Tutoriel sur la création basée sur des documents et Edge Delivery Services" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="Tutoriel sur la création basée sur des documents et Edge Delivery Services"
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial./media_18d1c2a9ecd6557f129e41b42a03a8dfbff1e27e9.png?width=400&format=png&optimize=medium" alt="Tutoriel sur la création basée sur des documents et Edge Delivery Services"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -57,13 +57,13 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" title="Tutoriel sur la création basée sur des documents et Edge Delivery Services">Tutoriel sur la création de documents et Edge Delivery Services</a>
+                        <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" title="Tutoriel sur la création basée sur des documents et Edge Delivery Services">Tutoriel sur la création basée sur des documents et Edge Delivery Services</a>
                     </p>
                     <p class="is-size-6">Découvrez comment créer des sites web Edge Delivery Services créés à l’aide de la création basée sur les documents.</p>
                 </div>
                 <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/build/tutorial" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Démarrer le tutoriel</span>
-                </a>
+<span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Démarrer le tutoriel</span>
+</a>
             </div>
         </div>
     </div>
@@ -85,8 +85,8 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
                     <p class="is-size-6">Découvrez les principes de base de la création de sites web Edge Delivery Services à l’aide de l’éditeur universel.</p>
                 </div>
                 <a href="./developing/universal-editor/0-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Démarrer le tutoriel</span>
-                </a>
+<span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Démarrer le tutoriel</span>
+</a>
             </div>
         </div>
     </div>
@@ -105,11 +105,11 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
       <div class="card">
         <div class="card-image">
           <figure class="image is-16by9">
-            <a href="./developing/prerequisites.md" title="Conditions préalables"
+            <a href="./developing/prerequisites.md" title="Prérequis"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3434586/?format=jpeg&captions=fre_fr"
-                alt="Conditions préalables">
+                src="https://video.tv.adobe.com/v/3425709/?format=jpeg"
+                alt="Prérequis">
             </a>
           </figure>
         </div>
@@ -118,7 +118,7 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
             <p style="float: right;font-style: italic; color: #363636"
               class="is-size-6">5 minutes</p>
             <p class="headline is-size-6 has-text-weight-bold">
-              <a href="./developing/prerequisites.md" title="Conditions préalables">Conditions préalables pour l’équipe de développement</a>
+              <a href="./developing/prerequisites.md" title="Prérequis">Conditions préalables pour l’équipe de développement</a>
             </p>
             <p class="is-size-6">Éléments nécessaires pour commencer le développement avec Edge Delivery Services.</p>
             <a href="./developing/prerequisites.md" class="spectrum-Button
@@ -140,7 +140,7 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
             <a href="./developing/aem-boilerplate.md" title="Utiliser un modèle standard"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3434613/?format=jpeg&captions=fre_fr" alt="Configuration
+                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Configuration
 Modèle standard">
             </a>
           </figure>
@@ -172,7 +172,7 @@ Modèle standard">
             <a href="./developing/content-repository.md" title="Lier Google Drive"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3434722/?format=jpeg&captions=fre_fr" alt="Lier Google Drive">
+                src="https://video.tv.adobe.com/v/3425711/?format=jpeg" alt="Lier Google Drive">
             </a>
           </figure>
         </div>
@@ -202,7 +202,7 @@ Modèle standard">
           <figure class="image is-16by9">
             <a href="./developing/content-repository.md" title="Lier Sharepoint" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3446030/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425712/?format=jpeg"
                 alt="Lier Sharepoint">
             </a>
           </figure>
@@ -234,7 +234,7 @@ Modèle standard">
             <a href="./developing/preview-and-publish.md" title="Prévisualiser et publier du contenu"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3434711/?format=jpeg&captions=fre_fr" alt="Prévisualiser et publier du contenu">
+                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Prévisualiser et publier du contenu">
             </a>
           </figure>
         </div>
@@ -265,7 +265,7 @@ Modèle standard">
             <a href="./developing/sidekick.md" title="Utiliser le sidekick"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3441284/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425715/?format=jpeg"
                 alt="Utiliser le sidekick">
             </a>
           </figure>
@@ -297,7 +297,7 @@ Modèle standard">
             <a href="./developing/document-structure.md" title="Structure des documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3445191/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425716/?format=jpeg"
                 alt="Structure des documents">
             </a>
           </figure>
@@ -329,7 +329,7 @@ Modèle standard">
             <a href="./developing/local-development.md" title="Développement local"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3434733/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425717/?format=jpeg"
                 alt="Développement local">
             </a>
           </figure>
@@ -361,7 +361,7 @@ Modèle standard">
             <a href="./developing/git.md" title="Intégrer à Git"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3441828/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425718/?format=jpeg"
                 alt="Intégrer à Git">
             </a>
           </figure>
@@ -430,7 +430,7 @@ Modèle standard">
             <a href="./how-to/social-media-sharing.md" title="Partage sur les médias sociaux"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3439439/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425974/?format=jpeg"
                 alt="Partage sur les médias sociaux">
             </a>
           </figure>
@@ -462,7 +462,7 @@ Modèle standard">
             <a href="./how-to/delete-page.md" title="Supprimer des pages"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3438092/?format=jpeg&captions=fre_fr"
+                src="https://video.tv.adobe.com/v/3425973/?format=jpeg"
                 alt="Supprimer des pages">
             </a>
           </figure>

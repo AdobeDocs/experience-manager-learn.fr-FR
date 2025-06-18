@@ -11,9 +11,9 @@ recommendations: noDisplay, noCatalog
 exl-id: 0f41b049-bbbb-47c8-a3f8-25b5c68bdd39
 duration: 515
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '44'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 77%
 
 Découvrez la meilleure manière d’intégrer la recherche tierce à Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452598?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3427040?quality=12&learn=on)
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 saison 3](../cloud5-season-3.md).
+Regardez les vidéos connexes sur la page [Cloud 5 saison 3](../cloud5-season-3.md).

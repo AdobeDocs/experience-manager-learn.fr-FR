@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: 9d11156d-1ea4-42a6-8e0d-cbc4aae4e34c
 duration: 233
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '42'
 ht-degree: 100%
 
@@ -23,4 +23,4 @@ ht-degree: 100%
 
 La définition de dossiers de référence dans AEM Assets permet d’établir une architecture de contenu solide et de poser les bases de la gestion des ressources numériques.
 
->[!VIDEO](https://video.tv.adobe.com/v/37328?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/33496?quality=12&learn=on)

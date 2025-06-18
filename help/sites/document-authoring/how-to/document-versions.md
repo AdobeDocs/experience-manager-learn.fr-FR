@@ -13,7 +13,7 @@ thumbnail: 3425728.jpeg
 duration: 105
 exl-id: 0ef31876-5813-4219-b356-cc581544bac3
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '26'
 ht-degree: 100%
 
@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment contrôler les versions des documents créés à l’aide de la création de documents AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438796/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3425728/?learn=on)

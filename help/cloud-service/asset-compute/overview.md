@@ -13,7 +13,7 @@ last-substantial-update: 2022-08-15T00:00:00Z
 exl-id: 575b12f9-b57f-41f7-bd39-56d242de4747
 duration: 277
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '986'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Alors que dans AEM 6.x, les processus de workflow personnalisés d’AEM étaie
 
 ## Ce que vous devez faire
 
->[!VIDEO](https://video.tv.adobe.com/v/3410021?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/40965?quality=12&learn=on)
 
 Ce tutoriel décrit comment créer un programme de travail simple d’Asset Compute qui crée un rendu de ressource en réduisant la ressource originale à un cercle et en appliquant un contraste et une luminosité configurables. Ce tutoriel utilise le programme de travail lui-même pour explorer la création, le développement et le déploiement d’un programme de travail personnalisé d’Asset Compute à utiliser avec AEM as a Cloud Service.
 

@@ -15,17 +15,17 @@ badgeVersions: label="AEM Headless as a Cloud Service" before-title="false"
 exl-id: be886c64-9b8e-498d-983c-75f32c34be4b
 duration: 1549
 source-git-commit: adc2f352544b4718522073642c6bf971b3600616
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1618'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Intégrer AEM Headless et Target
 
-Découvrez comment intégrer AEM Headless à Adobe Target en exportant des fragments de contenu AEM vers Adobe Target et en les utilisant pour personnaliser les expériences découplées à l’aide du fichier alloy.js du SDK web Adobe Experience Platform. L’[application React WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=fr) est utilisée pour découvrir comment ajouter à l’expérience une activité Target personnalisée à l’aide d’offres de fragments de contenu, afin de promouvoir une aventure WKND.
+Découvrez comment intégrer AEM Headless à Adobe Target en exportant des fragments de contenu AEM vers Adobe Target et en les utilisant pour personnaliser les expériences découplées à l’aide du fichier alloy.js du SDK web Adobe Experience Platform. L’[application React WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html) est utilisée pour découvrir comment ajouter à l’expérience une activité Target personnalisée à l’aide d’offres de fragments de contenu, afin de promouvoir une aventure WKND.
 
->[!VIDEO](https://video.tv.adobe.com/v/3422152/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3416585/?quality=12&learn=on)
 
 Le tutoriel décrit les étapes à suivre pour configurer AEM et Adobe Target :
 
@@ -50,7 +50,7 @@ Un Adobe Target Cloud Service est créé dans AEM pour faciliter l’export de
 
 Lisez [la documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html?lang=fr) pour obtenir des instructions détaillées sur la création d’un Adobe Target Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3422648/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3416499/?quality=12&learn=on)
 
 
 ## Configurer les dossiers de ressources{#configure-asset-folders}
@@ -71,7 +71,7 @@ Adobe Target Cloud Service, dans une configuration contextuelle, doit être ap
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3422656/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3416504/?quality=12&learn=on)
 
 ## Autoriser l’intégration AEM Target{#permission}
 
@@ -90,7 +90,7 @@ L’intégration Adobe Target, qui se manifeste sous la forme d’un projet dev
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3441975/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3416505/?quality=12&learn=on)
 
 ## Exporter les fragments de contenu vers Target{#export-content-fragments}
 
@@ -121,7 +121,7 @@ Les fragments de contenu qui existent sous la [hiérarchie de dossiers AEM Asse
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3422672/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3416506/?quality=12&learn=on)
 
 ## Activité Target nécessitant des offres de fragments de contenu{#activity}
 
@@ -160,11 +160,11 @@ L’activité Adobe Target qui cible l’emplacement `wknd-adventure-promo` peu
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3444783/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3416507/?quality=12&learn=on)
 
 ## Identifiant du train de données Experience Platform{#datastream-id}
 
-Un ID de [train de données Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html?lang=fr) est requis pour que les applications AEM découplées interagissent avec Adobe Target à l’aide du [SDK web d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=fr).
+Un ID de [train de données Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html) est requis pour que les applications AEM découplées interagissent avec Adobe Target à l’aide du [SDK web d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
 
 +++Développer pour obtenir des instructions détaillées
 
@@ -184,13 +184,13 @@ Un ID de [train de données Adobe Experience Platform](https://experienceleagu
       + L’environnement Target peut être défini dans Adobe Target sous __Administration > Hôtes__.
    + Espace de noms de l’ID tiers de Target : __Laisser vide__.
 1. Sélectionnez __Enregistrer__.
-1. Sur le côté droit, copiez l’__ID du train de données__ pour l’utiliser dans l’appel de configuration du [SDK web d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=fr).
+1. Sur le côté droit, copiez l’__ID du train de données__ pour l’utiliser dans l’appel de configuration du [SDK web d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
 
 +++
 
 <br/>
 
->[!VIDEO](https://video.tv.adobe.com/v/3422180/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3416500/?quality=12&learn=on)
 
 ## Personnaliser une application AEM Headless{#code}
 
@@ -198,7 +198,7 @@ Ce tutoriel explique comment personnaliser une application React simple à l’a
 
 Les expériences mobiles Android™ et iOS peuvent être personnalisées en suivant des modèles similaires à l’aide du [SDK mobile d’Adobe](https://developer.adobe.com/client-sdks/documentation/).
 
-### Conditions préalables
+### Prérequis
 
 + Node.js 14
 + Git
@@ -230,7 +230,7 @@ Les expériences mobiles Android™ et iOS peuvent être personnalisées en suiv
    $ npm run start
    ```
 
-1. Installez le [SDK web d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=fr#option-3%3A-using-the-npm-package) sous la forme d’un package NPM.
+1. Installez le [SDK web d’Adobe](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html#option-3%3A-using-the-npm-package) sous la forme d’un package NPM.
 
    ```shell
    $ cd ~/Code/aem-guides-wknd-graphql/personalization-tutorial

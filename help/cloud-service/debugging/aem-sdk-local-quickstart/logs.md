@@ -11,7 +11,7 @@ level: Beginner, Intermediate
 exl-id: 91aa4a10-47fe-4313-acd2-ca753e5484d9
 duration: 411
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '382'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Les journaux du SDK AEM, qu’il s’agisse des fichiers Jar de démarrage rapi
 
 ## Journaux AEM
 
->[!VIDEO](https://video.tv.adobe.com/v/38078?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/34334?quality=12&learn=on)
 
 Les journaux sont en première ligne pour le débogage des applications AEM, mais dépendent d’une journalisation adéquate dans l’application AEM déployée. Adobe recommande, dans la mesure du possible, de ne pas modifier la configuration de la journalisation pour l’environnement de développement local et l’environnement de développement AEM as a Cloud Service, car cela permet de normaliser la visibilité de la journalisation dans les environnements locaux de démarrage rapide du SDK AEM et de développement AEM as a Cloud Service, ce qui réduit le temps de configuration et de redéploiement.
 

@@ -11,7 +11,7 @@ thumbnail: 336963.jpeg
 exl-id: f752df86-27d4-4dbf-a3cb-ee97b7d9a17e
 duration: 1231
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Découvrez les index de recherche d’AEM as a Cloud Service et apprenez à convertir les définitions d’index d’AEM 6 pour qu’elles soient compatibles avec AEM as a Cloud Service ainsi qu’à déployer des index vers AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3454716?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/336963?quality=12&learn=on)
 
 ## Outil convertisseur d’index
 

@@ -11,7 +11,7 @@ index: y
 exl-id: a739462e-3d7a-49a2-a740-5c5c9400ea08
 duration: 75
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
 ht-degree: 100%
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes pour résoudre les problèmes spécifiques à HtmltoPDF dans une configuration Unix (PhantomJS).*
 
->[!VIDEO](https://video.tv.adobe.com/v/3417811?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335546?quality=12&learn=on)

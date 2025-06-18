@@ -11,7 +11,7 @@ doc-type: Article
 exl-id: 461873a1-1edf-43a3-b4a3-14134f855d86
 duration: 520
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2225'
 ht-degree: 100%
 
@@ -175,7 +175,7 @@ Le fichier est donc plus ancien que le fichier `.stat` et il est supprimé. Un n
 
 ## Paramètres du fichier de batterie
 
-La documentation concernant l’ensemble des options de configuration est disponible à l’adresse suivante : [https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr).
+La documentation concernant l’ensemble des options de configuration est disponible à l’adresse suivante : [https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-dispatcher_configuring-the-dispatcher-cache-cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr).
 
 Nous allons décrire certaines options dédiées à la purge du cache.
 

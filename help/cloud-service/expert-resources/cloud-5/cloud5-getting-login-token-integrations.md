@@ -10,9 +10,9 @@ thumbnail: 341277.jpeg
 exl-id: 41d78e6b-7076-4f4f-8d2c-4bf969b61024
 duration: 314
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '115'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 91%
 
 Suivez le guide complet sur la manière d’obtenir un jeton de connexion pour les intégrations Cloud Service et consultez les cas d’utilisation courants.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448639?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/341277?quality=12&learn=on)
 
 ## Contenu couvert par cette vidéo
 
@@ -36,4 +36,4 @@ Pour en savoir plus, suivez le tutoriel sur l’[authentification par jeton](/he
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).
+Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).

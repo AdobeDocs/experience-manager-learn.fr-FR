@@ -11,7 +11,7 @@ index: y
 exl-id: 10b32182-3095-45f5-9edf-3cc4804713ab
 duration: 108
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '40'
 ht-degree: 100%
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit le processus de résolution des problèmes spécifiques à HtmltoPDF dans une configuration Windows.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3417245?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335545?quality=12&learn=on)

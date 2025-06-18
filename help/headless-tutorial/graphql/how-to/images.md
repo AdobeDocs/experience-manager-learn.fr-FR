@@ -12,8 +12,8 @@ last-substantial-update: 2023-04-19T00:00:00Z
 exl-id: 6dbeec28-b84c-4c3e-9922-a7264b9e928c
 duration: 300
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
-source-wordcount: '843'
+workflow-type: ht
+source-wordcount: '830'
 ht-degree: 100%
 
 ---
@@ -99,7 +99,7 @@ La variable `$path` utilisée dans le filtre `_path` nécessite le chemin d’ac
 | Paramètre GraphQL | Description | Requis | Valeurs de variable GraphQL |
 |-------------------|------------------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------|
 | `format` | Format de la ressource image. | ✔ | `GIF`, `PNG`, `PNG8`, `JPG`, `PJPG`, `BJPG`, `WEBP`, `WEBPLL`, `WEBPLY` |
-| `seoName` | Nom du segment de fichier dans l’URL. Si aucun nom n’est fourni, le nom de la ressource image est utilisé. | ✘ | Alphanumérique, `-`, ou `_` |
+| `seoName` | Nom du segment de fichier dans l’URL. Si aucun nom n’est fourni, le nom de la ressource image est utilisé. | ✘ | Alphanumérique, `-` ou `_` |
 | `crop` | Image de recadrage extraite de l’image, doit être de la taille de l’image | ✘ | Entiers positifs définissant une zone de recadrage dans les limites des dimensions de l’image d’origine |
 | `size` | Taille de l’image de sortie (hauteur et largeur) en pixels. | ✘ | Entiers positifs |
 | `rotation` | Rotation de l’image en degrés. | ✘ | `R90`, `R180`, `R270` |

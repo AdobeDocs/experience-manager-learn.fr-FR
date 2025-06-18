@@ -12,7 +12,7 @@ level: Beginner
 exl-id: c91356d4-8f59-498e-bb57-d75906581f6d
 duration: 523
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '49'
 ht-degree: 100%
 
@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment afficher ou gérer l’héritage sur un site ou effectuer des opérations de déploiement à l’aide de la console d’aperçu de la Live Copy.
 
->[!VIDEO](https://video.tv.adobe.com/v/326732?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/36680?quality=12&learn=on)

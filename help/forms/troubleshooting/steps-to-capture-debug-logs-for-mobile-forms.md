@@ -11,7 +11,7 @@ index: y
 exl-id: 0fdfa72d-0e96-4389-86b4-826c37d64982
 duration: 101
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '39'
 ht-degree: 100%
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre afin de capturer les journaux de débogage pour les formulaires mobiles.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3438589?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335516?quality=12&learn=on)

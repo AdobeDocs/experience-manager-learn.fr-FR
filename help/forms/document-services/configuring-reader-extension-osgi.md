@@ -11,7 +11,7 @@ exl-id: 1f16acfd-e8fd-4b0d-85c4-ed860def6d02
 last-substantial-update: 2020-08-01T00:00:00Z
 duration: 308
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Les informations d’identification Reader Extensions sont associées à l’ut
 
 Regardez la vidéo pour ajouter les informations d’identification à l’utilisateur ou l’utilisatrice fd-service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447289?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335849?quality=12&learn=on)
 
 
 La commande permettant de répertorier les détails du fichier PFX est la suivante. La commande suivante implique que vous êtes dans le même répertoire que le fichier PFX.

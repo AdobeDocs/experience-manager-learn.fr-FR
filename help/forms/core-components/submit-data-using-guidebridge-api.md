@@ -1,5 +1,5 @@
 ---
-title: Utilisation de l’API GuideBridge pour publier des données de formulaire
+title: Utilisation de l’API GuideBridge pour envoyer des données de formulaire
 description: Découvrez comment accéder aux données de formulaire et les envoyer à l’aide de l’API GuideBridge pour les formulaires adaptatifs. Enregistrez et récupérez facilement les données de formulaire.
 duration: 68
 feature: Adaptive Forms
@@ -11,22 +11,22 @@ jira: KT-15286
 last-substantial-update: 2024-04-05T00:00:00Z
 exl-id: 099aaeaf-2514-4459-81a7-2843baa1c981
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '132'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
 # Accès et envoi de données de formulaire avec l’API GuideBridge
 
-Découvrez comment utiliser l’API GuideBridge pour accéder aux données de formulaire et les envoyer à un point d’entrée REST pour le stockage et la récupération. Cette fonctionnalité permet aux utilisateurs d’enregistrer et de reprendre facilement la saisie du formulaire.
+Découvrez comment utiliser l’API GuideBridge pour accéder aux données de formulaire et les envoyer à un point d’entrée REST pour le stockage et la récupération. Cette fonctionnalité permet aux utilisateurs et utilisatrices d’enregistrer et de reprendre facilement la saisie du formulaire.
 
 Les données du formulaire sont enregistrées en déclenchant une fonction JavaScript lors d’un clic sur un bouton dans l’éditeur de règles.
 
 ![Éditeur de règles](assets/rule-editor.png)
 
-La fonction JavaScript ci-dessous montre comment envoyer les données de formulaire au point d’entrée spécifié :
+La fonction JavaScript ci-dessous montre comment envoyer les données de formulaire au point d’entrée spécifié :
 
 ```javascript
 /**
@@ -69,7 +69,7 @@ function submitFormDataAndAttachments(endpoint) {
 
 ## Code côté serveur
 
-Le code Java côté serveur suivant gère le traitement des données de formulaire. Cette servlet Java dans AEM est appelée via un appel XHR dans la fonction JavaScript ci-dessus.
+Le code Java côté serveur suivant gère le traitement des données de formulaire. Ce servlet Java dans AEM est appelé via un appel XHR dans la fonction JavaScript ci-dessus.
 
 ```java
 package com.azuredemo.core.servlets;

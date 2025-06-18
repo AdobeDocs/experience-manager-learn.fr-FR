@@ -12,7 +12,7 @@ level: Intermediate, Experienced
 exl-id: 6ece6e82-efe9-41eb-adf8-78d9deed131e
 duration: 432
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1405'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Cas d’utilisation courants :
 
 ## Ce que vous devez faire
 
->[!VIDEO](https://video.tv.adobe.com/v/3437013?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/327313?quality=12&learn=on)
 
 Dans ce tutoriel, nous allons créer un programme de travail de métadonnées Asset Compute qui fournit les couleurs les plus couramment utilisées dans une ressource d’image et qui réécrit les noms des couleurs pour les renvoyer aux métadonnées de la ressource dans AEM. Bien que le programme de travail lui-même soit basique, ce tutoriel l’utilise pour explorer la manière dont les programmes de travail Asset Compute peuvent être utilisés pour écrire des métadonnées sur des ressources dans AEM as a Cloud Service.
 

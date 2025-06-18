@@ -11,7 +11,7 @@ doc-type: Feature Video
 exl-id: 2213d1f2-37ed-4897-a68d-04ef423395a3
 duration: 369
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '189'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Les modèles modifiables permettent à des auteurs et autrices spécialisés de créer et de mettre à jour des modèles de page et de gérer des configurations de politique avancées avec Adobe Experience Manager (AEM) Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449613?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/326784?quality=12&learn=on)
 
 Les modèles modifiables sont ceux recommandés pour la création d’AEM Sites.
 

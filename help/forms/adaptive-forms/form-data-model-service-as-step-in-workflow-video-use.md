@@ -11,7 +11,7 @@ exl-id: 0c77a853-fa71-46ac-8626-99bc69d6222d
 last-substantial-update: 2020-06-09T00:00:00Z
 duration: 205
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 À partir d’AEM Forms 6.4, nous avons la possibilité d’utiliser le modèle de données de formulaire dans le cadre du workflow AEM. La vidéo suivante décrit les étapes nécessaires à la configuration de l’étape Modèle de données de formulaire dans le workflow AEM.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/330116?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/21719?quality=12&learn=on)
 
 Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-dessous.
 * [Téléchargez et déployez le lot setvalue](/help/forms/assets/common-osgi-bundles/SetValueApp.core-1.0-SNAPSHOT.jar). Il s’agit du lot OSGI personnalisé qui définit les propriétés de métadonnées.

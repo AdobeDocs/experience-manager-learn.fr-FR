@@ -14,7 +14,7 @@ doc-type: Tutorial
 exl-id: ec048414-2351-4e3d-b5f1-ade035c07897
 duration: 588
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '544'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Découvrez comment charger, transférer des paramètres à une requête de page et déclencher un appel Target à partir de la page de votre site à l’aide d’une règle de balises. Les informations de page web sont récupérées et transmises en tant que paramètres à l’aide de la couche de données de la clientèle Adobe qui vous permet de collecter et de stocker des données sur l’expérience des visiteurs et des visiteuses sur une page web, puis d’accéder facilement à ces données.
 
->[!VIDEO](https://video.tv.adobe.com/v/328995?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/41243?quality=12&learn=on)
 
 ## Règle de chargement de page
 

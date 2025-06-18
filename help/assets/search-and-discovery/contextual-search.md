@@ -12,7 +12,7 @@ last-substantial-update: 2024-05-08T00:00:00Z
 jira: KT-15377
 exl-id: 34e9186b-890f-4ffe-b158-171c42c563c5
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '85'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Découvrez comment utiliser la recherche contextuelle dans Adobe Experience Manager Assets pour rechercher efficacement des ressources avec des requêtes de langue naturelle.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438952/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3428667/?learn=on)
 
 ## Activation/désactivation de la recherche contextuelle
 

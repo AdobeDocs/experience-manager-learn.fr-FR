@@ -11,7 +11,7 @@ doc-type: Feature Video
 exl-id: c4c1ffe2-d4ea-4b31-b5d5-132fba9d2633
 duration: 274
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '141'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 AEM Assets Dynamic Media intègre des zones réactives de ressources aux fragments d’expérience via les visionneuses Interactive Media. Les marketeurs et marketeuses peuvent créer le fragment d’expérience avec du texte, des images et des liens pour remplir la fenêtre contextuelle personnalisée et l’associer aux zones réactives des bannières, carrousels ou vidéos.
 
->[!VIDEO](https://video.tv.adobe.com/v/40214?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/22115?quality=12&learn=on)
 
 >[!NOTE]
 >

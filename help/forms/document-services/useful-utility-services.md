@@ -10,7 +10,7 @@ exl-id: add06b73-18bb-4963-b91f-d8e1eb144842
 last-substantial-update: 2020-07-07T00:00:00Z
 duration: 35
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '138'
 ht-degree: 100%
 
@@ -50,7 +50,7 @@ aemFormsUtilities.saveDocumentInCrx("/content/xmlfiles",".xml",xmlStringDoc);
 ## Conditions préalables
 
 
-Vous devez déployer [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar?lang=fr) et démarrer le lot.
+Vous devez déployer [DevelopingWithServiceUserBundle](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/DevelopingWithServiceUser.jar) et démarrer le lot.
 
 
 Si vous souhaitez enregistrer des documents dans le référentiel CRX à l’aide de ce service utilitaire, veuillez suivre l’[article sur le développement avec un utilisateur ou une utilisatrice de service](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/service-user-tutorial-develop.html?lang=fr#adaptive-forms). Veillez à fournir les [autorisations requises](http://localhost:4502/useradmin) sur les dossiers CRX appropriés à l’utilisateur ou l’utilisatrice du service fd.

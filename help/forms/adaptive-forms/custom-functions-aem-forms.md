@@ -11,7 +11,7 @@ exl-id: 07fed661-0995-41ab-90c4-abde35a14a4c
 last-substantial-update: 2021-06-09T00:00:00Z
 duration: 286
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '319'
 ht-degree: 100%
 
@@ -85,4 +85,4 @@ Si vous rencontrez des difficultés pour créer des fonctions personnalisées, n
 ## Utiliser des fonctions personnalisées
 
 La vidéo suivante vous guide tout au long des étapes à suivre pour utiliser une fonction personnalisée dans l’éditeur de règles d’un formulaire adaptatif.
->[!VIDEO](https://video.tv.adobe.com/v/3445843?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/340305?quality=12&learn=on)

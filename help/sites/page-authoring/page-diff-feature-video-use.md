@@ -12,7 +12,7 @@ doc-type: Feature Video
 exl-id: 4d365957-9a5a-44f8-a117-95c1c0dd757d
 duration: 502
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '112'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Les fonctionnalités de différence de page d’AEM Sites affichent une vue rap
 
 ## Comparer des versions de page {#comparing-page-versions}
 
->[!VIDEO](https://video.tv.adobe.com/v/36785?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
 
 **Modifications HTML**
 

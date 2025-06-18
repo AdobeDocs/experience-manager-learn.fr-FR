@@ -13,7 +13,7 @@ exl-id: 6e9b91a0-327f-4af1-8308-c938fc9a13b9
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 duration: 430
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '56'
 ht-degree: 100%
 
@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Envoyez une notification par e-mail à un auteur ou à une autrice de formulaires adaptatifs avec Microsoft Power Automate en extrayant les valeurs de champ de l’envoi du formulaire.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431485?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/345957?quality=12&learn=on)

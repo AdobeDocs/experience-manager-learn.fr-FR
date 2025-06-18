@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: 18e600b6-bc4f-4045-a932-ed72d4ed3ef3
 duration: 435
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '37'
 ht-degree: 100%
 
@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Apprenez à charger des ressources, à créer des versions et même à modifier des ressources en utilisant Adobe Photoshop Express.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418450?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335746?quality=12&learn=on)

@@ -10,9 +10,9 @@ doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
 duration: 2516
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '855'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,15 +20,15 @@ ht-degree: 93%
 
 Cette série de vidéos en plusieurs parties présente un aperçu de la gestion et de l’accès au contenu multimédia à l’aide d’Adobe Experience Manager Dynamic Media en tant que service de diffusion de contenu. Dynamic Media vous permet de gérer et de publier des expériences numériques dynamiques : une fonctionnalité propre à Experience Manager Assets. Notre framework et notre suite de composants permettent aux spécialistes marketing de personnaliser et de diffuser des expériences multimédias interactives sur tous les appareils.
 
-## Démo Dynamic Media en direct
+## Démonstration Dynamic Media
 
-[![Démonstration en direct d’AEM Assets Dynamic Media](./assets/overview/live-demo.png)](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+[![Démonstration d’AEM Assets Dynamic Media](./assets/overview/live-demo.png)](https://landing.adobe.com/fr/na/dynamic-media/ctir-2755/live-demos.html)
 
-Explorez les possibilités offertes par Adobe Dynamic Media avec notre [**Démo en direct**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html), qui donne vie à des solutions de pointe. Découvrez comment [**Dynamic Assets**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/dynamic-assets.html) rationalisez les workflows, améliorez la gestion de contenu et découvrez [**les expériences interactives**](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/interactive-experiences.html) qui captivent les audiences sur tous les canaux. [Découvrez comment Dynamic Media peut transformer votre stratégie de contenu](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) !
+Explorez les possibilités offertes par Adobe Dynamic Media avec notre [**Démonstration**](https://landing.adobe.com/fr/na/dynamic-media/ctir-2755/live-demos.html), qui donne vie à des solutions de pointe. Découvrez comment [**Dynamic Assets**](https://landing.adobe.com/fr/na/dynamic-media/ctir-2755/dynamic-assets.html) rationalise les workflows et améliore la gestion de contenu, et découvrez les [**expériences interactives**](https://landing.adobe.com/fr/na/dynamic-media/ctir-2755/interactive-experiences.html) qui captivent les audiences sur tous les canaux. [Découvrez comment Dynamic Media peut transformer votre stratégie de contenu](https://landing.adobe.com/fr/na/dynamic-media/ctir-2755/live-demos.html).
 
 ## Vue d’ensemble de Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/34943?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Cette vidéo décrit la gestion et l’accès au contenu multimédia à l’aide
 
 ## Utilisation avec AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/34953?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Cette vidéo décrit comment gérer le contenu multimédia dans Adobe Experienc
 
 ## Créer une collection de supports variés
 
->[!VIDEO](https://video.tv.adobe.com/v/34954?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Cette vidéo décrit le processus de création simple d’une collection de visi
 
 ## Paramètres prédéfinis d’image
 
->[!VIDEO](https://video.tv.adobe.com/v/34726?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
 Cette vidéo décrit comment créer les paramètres d’image prédéfinis et ce qu’est un paramètre d’image prédéfini, un réducteur d’URL vers une série d’arguments de serveur d’images qui fonctionnent sur une image chaque fois qu’une URL en fait la demande. Découvrez des techniques précieuses pour étendre et modifier les paramètres d’image prédéfinis.
 
@@ -84,7 +84,7 @@ Cette vidéo décrit comment créer les paramètres d’image prédéfinis et ce
 
 ## Modificateurs d’URL avancés
 
->[!VIDEO](https://video.tv.adobe.com/v/34724?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
 Cette vidéo décrit comment, au-delà du redimensionnement des images, tirer parti des fonctionnalités du fichier source lui-même (transparence d’arrière-plan, chemins de détourage et recadrages intégrés et texte sous forme de variables) avec les modificateurs d’URL de Dynamic Media.
 
@@ -96,7 +96,7 @@ Cette vidéo décrit comment, au-delà du redimensionnement des images, tirer pa
 
 ## Gérer la taille des fichiers JPEG
 
->[!VIDEO](https://video.tv.adobe.com/v/35032?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
 
 >[!NOTE]
@@ -107,7 +107,7 @@ Trouvez le juste équilibre entre la qualité de l’image JPEG et la taille du 
 
 ## Sous-titrage
 
->[!VIDEO](https://video.tv.adobe.com/v/34430?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 Ajoutez en toute facilité des sous-titres aux vidéos Dynamic Media. Il vous suffit d’ajouter l’URL de copie pour qu’elle pointe vers un fichier de sous-titrage supplémentaire, un fichier sidecar web.VTT, qui contient les informations de sous-titrage pour n’importe quelle vidéo.
 
@@ -115,4 +115,4 @@ Ajoutez en toute facilité des sous-titres aux vidéos Dynamic Media. Il vous s
 
 Dans cette vidéo, découvrez la relation essentielle entre l’accentuation et la fidélité de l’image et apprenez à utiliser les paramètres avancés pour créer l’image parfaite.
 
->[!VIDEO](https://demos-pub.assetsadobe.com/etc/dam/viewers/s7viewers/html5/VideoViewer.html?asset=%2Fcontent%2Fdam%2Fdm-public-facing-upgrade-portal-video%2F04_DynamicImagery_AdvancedSettings_071917_BH.mp4&amp;config=/etc/dam/presets/viewer/Video_social&amp;serverUrl=https%3A%2F%2Fadobedemo62-h.assetsadobe.com%2Fis%2Fimage%2F&amp;contenturl=%2F&amp;config2=/etc/dam/presets/analytics&amp;videoserverurl=https://gateway-na.assetsadobe.com/DMGateway/public/demoCo&amp;posterimage=/content/dam/dm-public-facing-upgrade-portal-video/04_DynamicImagery_AdvancedSettings_071917_BH.mp4)
+>[!VIDEO](https://demos-pub.assetsadobe.com/etc/dam/viewers/s7viewers/html5/VideoViewer.html?asset=%2Fcontent%2Fdam%2Fdm-public-facing-upgrade-portal-video%2F04_DynamicImagery_AdvancedSettings_071917_BH.mp4&config=/etc/dam/presets/viewer/Video_social&serverUrl=https%3A%2F%2Fadobedemo62-h.assetsadobe.com%2Fis%2Fimage%2F&contenturl=%2F&config2=/etc/dam/presets/analytics&videoserverurl=https://gateway-na.assetsadobe.com/DMGateway/public/demoCo&posterimage=/content/dam/dm-public-facing-upgrade-portal-video/04_DynamicImagery_AdvancedSettings_071917_BH.mp4)

@@ -12,7 +12,7 @@ exl-id: c60d019e-da26-4f67-8579-ef707e2348bb
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 264
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '247'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Le comportement par défaut de ce formulaire consiste à afficher tous les panne
 
 Pour modifier ce comportement par défaut, procédez comme suit :
 
->[!VIDEO](https://video.tv.adobe.com/v/3438633?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
 
 
 Ajoutez le code suivant à l’événement clic du bouton **Suivant** à l’aide de l’éditeur de code.
@@ -57,7 +57,7 @@ Le code ci-dessus vous aidera à naviguer entre les onglets et les panneaux enfa
 
 Utilisez l’éditeur de style pour masquer le titre des panneaux enfants des onglets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3439126?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/338370?quality=12&learn=on)
 
 >[!NOTE]
 >

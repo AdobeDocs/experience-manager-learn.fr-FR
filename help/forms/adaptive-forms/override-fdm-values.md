@@ -12,7 +12,7 @@ exl-id: 570de1e6-7221-4b8d-b226-a43317bfc166
 last-substantial-update: 2019-06-09T00:00:00Z
 duration: 281
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '159'
 ht-degree: 100%
 
@@ -32,4 +32,4 @@ La vidéo suivante présente la fonctionnalité et le cas pratique.
 
 >[!NOTE]
 >La fonctionnalité présentée dans cette vidéo nécessite AEM Forms 6.5.13.
->[!VIDEO](https://video.tv.adobe.com/v/3410228?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/343762?quality=12&learn=on)

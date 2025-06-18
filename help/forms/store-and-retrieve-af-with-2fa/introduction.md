@@ -13,7 +13,7 @@ exl-id: b278652f-6c09-4abc-b92e-20bfaf2e791a
 last-substantial-update: 2020-11-07T00:00:00Z
 duration: 148
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '212'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Ce tutoriel vous guide tout au long des étapes nécessaires à l’enregistreme
 
 ## Démonstration du cas d’utilisation
 
->[!VIDEO](https://video.tv.adobe.com/v/346929?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/327122?quality=12&learn=on)
 
 ## Conditions préalables
 

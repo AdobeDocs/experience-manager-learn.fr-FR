@@ -12,9 +12,9 @@ last-substantial-update: 2022-10-10T00:00:00Z
 exl-id: 66f627e4-863d-45d7-bc68-7ec108a1c271
 duration: 1053
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '96'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -122,7 +122,7 @@ public class ContentStatisticsImpl implements ContentStatistics {
 
 ### org.apache.sling.jcr.repoinit.RepositoryInitializer-wknd-examples-statistics.config
 
-Toutes les directives Sling Repository Initializer ne sont pas prises en charge avec l’extension `.config`, comme `ACLOptions`. Pour utiliser des directives avancées, utilisez le format `.cfg.json`, où chaque ligne de la directive Sling Repository Initializer est un littéral de chaîne distinct.
+Toutes les directives de l’initialiseur du référentiel Sling ne sont pas prises en charge avec l’extension `.config`, par exemple `ACLOptions`. Pour utiliser des directives avancées, utilisez le format `.cfg.json`, où chaque ligne de la directive de l’initialiseur du référentiel Sling est un littéral de chaîne distinct.
 
 `/ui.config/src/main/content/jcr_root/apps/wknd-examples/osgiconfig/config.author/org.apache.sling.jcr.repoinit.RepositoryInitializer-wknd-examples-statistics.config`
 

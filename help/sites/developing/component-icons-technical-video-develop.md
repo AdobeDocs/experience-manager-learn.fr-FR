@@ -10,7 +10,7 @@ doc-type: Technical Video
 exl-id: 37dc26aa-0773-4749-8c8b-4544bd4d5e5f
 duration: 379
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Les icônes de composant permettent aux auteurs et autrices d’identifier rapidement un composant grâce aux icônes ou abréviations explicites. Les auteurs et autrices peuvent désormais trouver plus rapidement que jamais les composants requis pour créer leurs expériences web.
 
->[!VIDEO](https://video.tv.adobe.com/v/38289?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/16778?quality=12&learn=on)
 
 L’explorateur de composants arbore un thème gris cohérent et affiche les éléments suivants :
 

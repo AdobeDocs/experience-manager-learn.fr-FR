@@ -11,9 +11,9 @@ last-substantial-update: 2025-03-11T00:00:00Z
 jira: KT-15930
 exl-id: ffbe2da8-1ffe-4d61-a3fa-c76136933dc2
 source-git-commit: f5453865714eca0273a79f76e4654b889de82ab4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '50'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -21,4 +21,4 @@ ht-degree: 84%
 
 Les sous-titres sont générés automatiquement lorsqu’un fichier vidéo est chargé dans AEM Assets avec Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446389/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3432627/?learn=on)

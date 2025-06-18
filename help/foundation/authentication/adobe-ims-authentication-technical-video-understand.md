@@ -13,7 +13,7 @@ last-substantial-update: 2022-10-01T00:00:00Z
 thumbnail: KT-781.jpg
 duration: 405
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Adobe Experience Manager offre une prise en charge des instances AEM avec Admin Console ainsi qu’une authentification basée sur Adobe IMS (Identity Management System) pour AEM sur Managed Services.   Cette intégration permet aux clientes et clients Managed Services d’AEM de gérer tous les utilisateurs et utilisatrices d’Experience Cloud dans une seule console web unifiée. Les utilisateurs, les utilisatrices et les groupes peuvent être affectés aux profils de produit associés aux instances AEM, ce qui permet d’accorder un accès géré de manière centralisée aux instances AEM spécifiques.
 
->[!VIDEO](https://video.tv.adobe.com/v/327594?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26170?quality=12&learn=on)
 
 * La prise en charge de l’authentification IMS par Adobe Experience Manager est réservée aux utilisateurs et utilisatrices « internes » (auteurs, autrices, réviseurs, réviseuses, administrateurs, administratrices, développeurs, développeuses, etc.) et non aux personnes finales externes qui visitent le site web.
 * L’[Admin Console](https://adminconsole.adobe.com/) représente les clientes et clients d’AEM Managed Services en tant qu’organisations IMS et les instances AEM en tant que contextes de produit. Les administrateurs et administratrices système et produit de l’Admin Console peuvent définir et gérer les différents éléments.

@@ -13,7 +13,7 @@ doc-type: Tutorial
 exl-id: 197444cb-a68f-4d09-9120-7b6603e1f47d
 duration: 572
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1067'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Les développeurs et développeuses qui créent des intégrations nécessitant un accès par programmation à AEM as a Cloud Service ont besoin d’un moyen simple et rapide d’obtenir des jetons d’accès temporaires pour AEM afin de faciliter les activités de développement local. Pour répondre à ce besoin, la Developer Console d’AEM permet aux développeurs et développeuses de générer eux-mêmes des jetons d’accès temporaires qui peuvent être utilisés pour accéder par programmation à AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/345201?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/330477?quality=12&learn=on)
 
 ## Générer un jeton d’accès au développement local
 
@@ -116,7 +116,7 @@ L’élément clé sur lequel repose l’authentification par programmation à A
    /**
    * Returns a list of Assets HTTP API asset URLs that reference the assets in the specified folder.
    * 
-   * https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=fr#retrieve-a-folder-listing
+   * https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=en#retrieve-a-folder-listing
    * 
    * @param {*} folder the Assets HTTP API folder path (less the /content/dam path prefix)
    */
@@ -145,7 +145,7 @@ L’élément clé sur lequel repose l’authentification par programmation à A
    /**
    * Update the metadata of an asset in AEM
    * 
-   * https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=fr#update-asset-metadata
+   * https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=en#update-asset-metadata
    * 
    * @param {*} asset the Assets HTTP API asset URL to update
    * @param {*} metadata the metadata to update the asset with

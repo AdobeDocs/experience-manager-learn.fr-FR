@@ -11,7 +11,7 @@ index: y
 exl-id: ec190f18-1ab8-4fac-adec-3b64caee290a
 duration: 82
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '59'
 ht-degree: 100%
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit le processus de modification du délai d’expiration des transactions d’un serveur d’applications dans le service PDFG de Forms.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3417601?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335555?quality=12&learn=on)

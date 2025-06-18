@@ -10,7 +10,7 @@ doc-type: Feature Video
 exl-id: 45daa8e3-ce3b-43de-b3d6-276107215dd4
 duration: 459
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 L’amélioration du catalogue d’AEM 6.4 permet de créer des pages de catalogue à l’aide de modèles de ressources AEM et d’InDesign Server.  Un utilisateur ou une utilisatrice peut créer une page de catalogue à l’aide du modèle d’InDesign et mapper les propriétés de produit aux champs modifiables, qui peuvent ensuite être utilisés pour créer des pages similaires pour différents produits.
 
->[!VIDEO](https://video.tv.adobe.com/v/39300?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/22540?quality=12&learn=on)
 
 >[!NOTE]
 >

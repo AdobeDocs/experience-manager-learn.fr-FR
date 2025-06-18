@@ -13,7 +13,7 @@ thumbnail: 3425714.jpeg
 duration: 136
 exl-id: e8ec372e-622e-4954-80df-9c4d73265837
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '36'
 ht-degree: 100%
 
@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Prévisualisez et publiez du contenu avec Edge Delivery Services à l’aide du [sidekick AEM](./sidekick.md).
 
->[!VIDEO](https://video.tv.adobe.com/v/3434711/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3425714/?learn=on)

@@ -9,7 +9,7 @@ level: Intermediate
 exl-id: daae6145-5267-4958-9abe-f6b7f469f803
 duration: 441
 source-git-commit: bd0f42fa37b7bbe19bf0d7fc65801198e64cbcd9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1052'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Ce tutoriel couvre les sujets suivants :
 
 La vidéo suivante présente un aperçu général des concepts abordés dans ce tutoriel. Le tutoriel comprend la définition de modèles de fragment de contenu avec des types de données plus avancés, l’imbrication de fragments de contenu et la conservation de requêtes GraphQL dans AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446129?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/340035?quality=12&learn=on)
 
 >[!CAUTION]
 >

@@ -10,7 +10,7 @@ exl-id: 8fbea634-7949-417f-a4d6-9e551fff63f3
 last-substantial-update: 2021-09-10T00:00:00Z
 duration: 337
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '456'
 ht-degree: 100%
 
@@ -67,7 +67,7 @@ Les données envoyées sont les suivantes :
 
 **Ajouter des éléments à l’aide de l’éditeur de règles**
 
->[!VIDEO](https://video.tv.adobe.com/v/36212?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26847?quality=12&learn=on)
 
 **Ajouter des éléments à l’aide de l’éditeur de code**
 

@@ -12,9 +12,9 @@ doc-type: Tutorial
 exl-id: 63c23f22-533d-486c-846b-fae22a4d68db
 duration: 253
 source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '621'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ AEM offre de nombreux points d’entrée HTTP accessibles de manière découplé
 
 Suivez ce tutoriel et découvrez comment une application externe peut s’authentifier par programmation et interagir avec AEM as a Cloud Service via HTTP à l’aide de jetons d’accès.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410078?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/330460?quality=12&learn=on)
 
 ## Prérequis
 

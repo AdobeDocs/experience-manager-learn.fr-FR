@@ -14,9 +14,9 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 5f122412-ab70-4b54-b20b-726bc6138b2b
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '78'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 87%
 
 Explorez les événements déclenchés lors de la publication et de l’annulation de la publication dans Edge Delivery Services, ainsi que des cas d’utilisation et des exemples d’utilisation de ces événements.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446658?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3427681?learn=on)
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 saison 3](../cloud5-season-3.md).
+Regardez les vidéos connexes sur la page [Cloud 5 saison 3](../cloud5-season-3.md).

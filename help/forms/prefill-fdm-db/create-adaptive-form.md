@@ -11,8 +11,8 @@ level: Beginner
 exl-id: c8d4eed8-9e2b-458c-90d8-832fc9e0ad3f
 duration: 124
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
-source-wordcount: '598'
+workflow-type: ht
+source-wordcount: '595'
 ht-degree: 100%
 
 ---
@@ -95,8 +95,8 @@ Enfin, nous devons lier les cellules de ligne aux éléments de modèle de donn�
 ## Tester votre formulaire
 
 Nous devons maintenant ouvrir le formulaire avec l’empID approprié dans l’URL. Les 2 liens suivants renseigneront les formulaires avec des informations de la base de données :
-[Formulaire avec empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=207).
-[Formulaire avec empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&amp;empID=208).
+[Formulaire avec empID=207](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&empID=207).
+[Formulaire avec empID=208](http://localhost:4502/content/dam/formsanddocuments/fdmdemo/jcr:content?wcmmode=disabled&empID=208).
 
 ## Résolution des problèmes
 

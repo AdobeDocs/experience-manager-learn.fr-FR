@@ -13,7 +13,7 @@ exl-id: 3155e0fa-56b7-4a52-8eef-fee488e95f68
 recommendations: noDisplay, noCatalog
 duration: 646
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Dans ce chapitre, deux fichiers Adobe XD sont étudiés : un pour le [modèle 
 
 ## kit d’interface utilisateur du modèle de site standard {#standard-site-template-uikit}
 
->[!VIDEO](https://video.tv.adobe.com/v/3448432?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/338680?quality=12&learn=on)
 
 Étapes de haut niveau :
 
@@ -51,7 +51,7 @@ Dans ce chapitre, deux fichiers Adobe XD sont étudiés : un pour le [modèle 
 
 ## Kit d’interface utilisateur WKND {#wknd-ui-kit}
 
->[!VIDEO](https://video.tv.adobe.com/v/36076?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
 
 Étapes de haut niveau :
 

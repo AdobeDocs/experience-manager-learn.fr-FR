@@ -9,7 +9,7 @@ level: Beginner
 exl-id: f9782684-3a74-4080-9680-589d3f901617
 duration: 561
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '404'
 ht-degree: 100%
 
@@ -47,11 +47,11 @@ Les données du formulaire adaptatif sont stockées sous l’élément de donné
 
 **Mapper une variable XML avec le schéma. Utiliser cette fonctionnalité avec AEM Forms 6.5.1 et versions ultérieures**
 
->[!VIDEO](https://video.tv.adobe.com/v/34826?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/28098?quality=12&learn=on)
 
 #### Utiliser la variable dans l’envoi d’un e-mail
 
->[!VIDEO](https://video.tv.adobe.com/v/34827?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26441?quality=12&learn=on)
 
 Pour que les ressources fonctionnent sur votre système, procédez comme suit :
 

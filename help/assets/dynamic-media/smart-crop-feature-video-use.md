@@ -11,7 +11,7 @@ doc-type: Feature Video
 exl-id: 295bbfb6-241f-41c0-972d-d9688863cea1
 duration: 443
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '239'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Le recadrage intelligent tire parti d’Adobe Sensei pour éliminer les tâches fastidieuses et coûteuses de recadrage de contenu pour la conception réactive.
 
->[!VIDEO](https://video.tv.adobe.com/v/40208?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/21519?quality=12&learn=on)
 
 >[!NOTE]
 >

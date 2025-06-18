@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: 940608db-6e84-441a-b031-e8cf52459597
 duration: 230
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '86'
 ht-degree: 100%
 
@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment créer et utiliser un rendu FPO (For Placement Only) pour les ressources AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/38596?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/34259?quality=12&learn=on)

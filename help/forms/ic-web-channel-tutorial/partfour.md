@@ -11,7 +11,7 @@ level: Beginner
 exl-id: d742d77b-a064-46e8-862a-2d3e1cc56f63
 duration: 799
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '126'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Créer un modèle de document de canal web dans AEM Forms 6.4
 >[!VIDEO](https://video.tv.adobe.com/v/22342?quality=12&learn=on)
 
 Créer un modèle de document de canal web dans AEM Forms 6.5
->[!VIDEO](https://video.tv.adobe.com/v/34432?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/27807?quality=12&learn=on)
 
 Le modèle comportera des zones et des espaces réservés cibles qui contiendront différents types de fragments de documents. Par exemple, un modèle peut comporter des zones cibles pour les logos et une autre zone cible pour le contenu textuel.
 

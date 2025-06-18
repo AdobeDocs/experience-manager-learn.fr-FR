@@ -12,7 +12,7 @@ level: Beginner
 exl-id: b4985c30-3e5e-470e-b68d-0f6c5cbf4690
 duration: 534
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2476'
 ht-degree: 100%
 
@@ -102,7 +102,7 @@ set the 'mergeConfigurations' flag to 'true' if you want to merge multiple confi
 #### Cause 2
 
 + __Cause :__ le projet AEM inclut incorrectement le même package de code deux fois, ce qui entraîne la duplication de toute configuration OSGi contenue dans ce package.
-+ __Résolution :__ examinez tous les fichiers pom.xml des packages incorporés dans l’ensemble du projet et assurez-vous que la [configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=fr&mt=false&amp;lang=fr#cloud-manager-target) `filevault-package-maven-plugin` est définie sur `<cloudManagerTarget>none</cloudManagerTarget>`.
++ __Résolution :__ examinez tous les fichiers pom.xml des packages incorporés dans l’ensemble du projet et assurez-vous que la [configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?mt=false&amp;lang=fr#cloud-manager-target) `filevault-package-maven-plugin` est définie sur `<cloudManagerTarget>none</cloudManagerTarget>`.
 
 ### Script repoinit mal formé
 

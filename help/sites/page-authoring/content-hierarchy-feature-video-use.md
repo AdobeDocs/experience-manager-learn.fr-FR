@@ -12,7 +12,7 @@ doc-type: Feature Video
 exl-id: 51347f65-bed1-44da-ade3-69209fa443c4
 duration: 200
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '37'
 ht-degree: 100%
 
@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment créer et organiser les pages du site de votre entreprise dans AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410348?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/31785?quality=12&learn=on)

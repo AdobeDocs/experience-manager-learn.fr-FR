@@ -10,8 +10,8 @@ doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
 duration: 538
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
-source-wordcount: '2588'
+workflow-type: ht
+source-wordcount: '2576'
 ht-degree: 100%
 
 ---
@@ -84,9 +84,9 @@ Vous trouverez ci-dessous un tableau des principales fonctionnalités de base pr
 
 + [Notes de mise à jour d’AEM de base](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/wcm-platform.html)
 
-***✔<sup>+</sup> : indique que des améliorations importantes ont été apportées à la fonctionnalité dans cette version.***
+***✔<sup>+</sup> améliorations importantes de la fonctionnalité dans cette version.***
 
-***✔<sup>SP</sup> : indique que la fonctionnalité est disponible par le biais d’un pack de services ou de fonctionnalités.***
+***✔<sup>SP</sup> indique que la fonctionnalité est disponible par le biais d’un pack de services ou de fonctionnalités.***
 
 <table>
     <thead>
@@ -136,7 +136,7 @@ Vous trouverez ci-dessous un tableau des principales fonctionnalités de base pr
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/queries-and-indexing.html?lang=fr" target="_blank">Index de recherche personnalisés</a> :</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/queries-and-indexing.html?lang=fr" target="_blank">Index de recherche personnalisés</a> :</strong>
 possibilité d’ajouter des définitions d’index personnalisées pour optimiser les performances des requêtes et la pertinence des recherches.</td>
             <td> </td>
             <td>✔</td>
@@ -158,7 +158,7 @@ effectuez la maintenance du référentiel sans arrêt du serveur.</td>
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/storage-elements-in-aem-6.html?lang=fr&&amp;lang=fr" target="_blank">Stockage du référentiel TarMK ou MongoMK</a> :</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/storage-elements-in-aem-6.html?&amp;lang=fr" target="_blank">Stockage du référentiel TarMK ou MongoMK</a> :</strong>
 <br>options d’utilisation d’un stockage simple et performant basé sur des fichiers de TarMK (version de nouvelle génération de TarPM),
 <br>ou mise à l’échelle horizontale avec un référentiel soutenu par MongoDB avec MongoMK.</td>
             <td> </td>
@@ -170,7 +170,7 @@ effectuez la maintenance du référentiel sans arrêt du serveur.</td>
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/aem-with-mongodb.html?lang=fr&&amp;lang=fr" target="_blank">Performances et stabilité de MongoMK</a> :</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/aem-with-mongodb.html?&amp;lang=fr" target="_blank">Performances et stabilité de MongoMK</a> :</strong>
 des améliorations continues ont été apportées à MongoMK depuis son introduction avec AEM 6.0.</td>
             <td> </td>
             <td> </td>
@@ -278,9 +278,9 @@ Vous trouverez ci-dessous un tableau des principales fonctionnalités de sécuri
 
 + [Notes de mise à jour de sécurité](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/wcm-platform.html#Security)
 
-***✔ : indique que des améliorations importantes ont été apportées à la fonctionnalité dans cette version.***
+***✔indique que des améliorations importantes ont été apportées à la fonctionnalité dans cette version.***
 
-***✔<sup>+</sup> : indique que la fonctionnalité est disponible par le biais d’un pack de services ou de fonctionnalités.***
+***✔<sup>+</sup> indique que la fonctionnalité est disponible par le biais d’un pack de services ou de fonctionnalités.***
 
 <table>
     <thead>
@@ -428,9 +428,9 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités de Sites 
 
 + [Notes de mise à jour d’AEM Sites](https://helpx.adobe.com/jp/experience-manager/6-5/release-notes/sites.html?lang=fr)
 
-***✔<sup>+</sup> : améliorations importantes de la fonctionnalité dans cette version.***
+***✔<sup>+</sup> améliorations importantes de la fonctionnalité dans cette version.***
 
-***✔<sup>SP</sup> : indique que la fonctionnalité est disponible par le biais d’un pack de services ou de fonctionnalités.***
+***✔<sup>SP</sup> indique que la fonctionnalité est disponible par le biais d’un pack de services ou de fonctionnalités.***
 
 <table>
     <thead>
@@ -645,7 +645,7 @@ gérez les expériences relatives à la signalétique numérique et aux kiosques
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/commerce/classic/administering/ecommerce.html?lang=fr&lang-fr" target="_blank"> eCommerce</a> :</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/commerce/classic/administering/ecommerce.html?lang-fr" target="_blank"> eCommerce</a> :</strong>
 permet d’offrir des expériences d’achat personnalisées sur les points de contact web, mobiles et de réseaux sociaux.
             </td>
             <td>✔</td>
@@ -674,11 +674,11 @@ les forums, les commentaires sous forme de threads, les calendriers d’événem
 
 Vous trouverez ci-dessous un tableau avec les principales fonctionnalités d’Assets proposées par AEM. Certaines fonctionnalités ont été introduites dans des versions antérieures et bénéficient d’améliorations à chaque nouvelle version.
 
-+ [Notes de mise à jour d’AEM Assets](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/assets.html?lang=fr)
++ [Notes de mise à jour d’AEM Assets](https://helpx.adobe.com/experience-manager/6-5/release-notes/assets.html?lang=fr)
 
-***✔ : indique que des améliorations importantes ont été apportées à la fonctionnalité dans cette version.***
+***✔indique que des améliorations importantes ont été apportées à la fonctionnalité dans cette version.***
 
-***✔<sup>+</sup> : indique que la fonctionnalité est disponible par le biais d’un pack de services ou de fonctionnalités.***
+***✔<sup>+</sup> indique que la fonctionnalité est disponible par le biais d’un pack de services ou de fonctionnalités.***
 
 <table>
     <thead>
@@ -794,7 +794,7 @@ tirez parti d’Adobe Analytics pour capturer l’interaction client avec les r
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/multilingual-assets.html?lang=fr" target="_blank">Ressources multilingues</a> :</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/multilingual-assets.html?lang=fr" target="_blank">Ressources multilingues</a> :</strong>
             Prise en charge automatique de la traduction des métadonnées de ressources avec des racines linguistiques.</td>
             <td> </td>
             <td> </td>
@@ -827,7 +827,7 @@ tirez parti d’Adobe Analytics pour capturer l’interaction client avec les r
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/indesign.html?lang=fr" target="_blank">Intégration d’Adobe InDesign Server</a> :</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/indesign.html?lang=fr" target="_blank">Intégration d’Adobe InDesign Server</a> :</strong>
             Générez des catalogues de produits. Créez des brochures, dépliants et publicités imprimées à partir de modèles InDesign.</td>
             <td> </td>
             <td> </td>
@@ -889,7 +889,7 @@ tirez parti d’Adobe Analytics pour capturer l’interaction client avec les r
 
 ***✔<sup>+</sup> améliorations importantes de la fonctionnalité dans cette version.***
 
-***✔<sup>SP</sup> indique que la fonctionnalité est disponible par le biais d’un pack de services ou d’un pack de fonctionnalités.***
+***✔<sup>SP</sup> indique que la fonctionnalité est disponible par le biais d’un pack de services ou de fonctionnalités.***
 
 
 <table>
@@ -993,7 +993,7 @@ Vous trouverez ci-dessous une matrice des principales fonctionnalités du module
 
 ***✔<sup>+</sup> améliorations importantes de la fonctionnalité dans cette version.***
 
-***✔<sup>SP</sup> indique que la fonctionnalité est disponible par le biais d’un pack de services ou d’un pack de fonctionnalités.***
+***✔<sup>SP</sup> indique que la fonctionnalité est disponible par le biais d’un pack de services ou de fonctionnalités.***
 
 <table>
     <thead>

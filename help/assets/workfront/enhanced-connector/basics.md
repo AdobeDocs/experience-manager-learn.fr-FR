@@ -15,7 +15,7 @@ doc-type: Feature Video
 exl-id: fe9d1305-7add-4434-a4a9-16e0fb805574
 duration: 911
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '63'
 ht-degree: 100%
 
@@ -31,4 +31,4 @@ Découvrez les principes de base du connecteur amélioré Adobe Workfront et Ex
 + créer des versions des ressources ;
 + publier automatiquement des ressources
 
->[!VIDEO](https://video.tv.adobe.com/v/3454296?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/337575?quality=12&learn=on)

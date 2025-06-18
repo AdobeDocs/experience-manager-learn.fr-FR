@@ -11,7 +11,7 @@ thumbnail: 336962.jpeg
 exl-id: 81397b21-b4f3-4024-a6da-a9b681453eff
 duration: 1618
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Découvrez AEM Dispatcher pour AEM as a Cloud Service en vous concentrant sur les principales différences par rapport au Dispatcher pour AEM 6, sur l’outil de conversion du Dispatcher et sur l’utilisation du SDK des outils du Dispatcher.
 
->[!VIDEO](https://video.tv.adobe.com/v/3455390?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/336962?quality=12&learn=on)
 
 ## Convertisseur du Dispatcher
 

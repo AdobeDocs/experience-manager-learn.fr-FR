@@ -11,7 +11,7 @@ exl-id: 4e69e115-12a6-4a57-90da-b91e345c6723
 last-substantial-update: 2023-08-08T00:00:00Z
 duration: 564
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '448'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Découvrez comment configurer SSL dans Adobe Experience Manager pour qu’il s’exécute via HTTPS à l’aide de l’assistant SSL intégré.
 
->[!VIDEO](https://video.tv.adobe.com/v/33876?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/17993?quality=12&learn=on)
 
 
 >[!NOTE]

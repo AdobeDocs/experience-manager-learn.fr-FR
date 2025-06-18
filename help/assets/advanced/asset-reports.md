@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: 8ac84d4e-59c1-4dde-a06e-a94458664ba7
 duration: 160
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '65'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 AEM Assets fournit une structure de création de rapports au niveau de l’entreprise qui s’adapte aux référentiels volumineux grâce à une expérience client intuitive.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410281?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/22140?quality=12&learn=on)
 
 
 >[!IMPORTANT]

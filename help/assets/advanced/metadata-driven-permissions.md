@@ -12,31 +12,31 @@ last-substantial-update: 2024-05-03T00:00:00Z
 exl-id: 57478aa1-c9ab-467c-9de0-54807ae21fb1
 duration: 158
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '770'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 # Autorisations pilotées par les métadonnées{#metadata-driven-permissions}
 
-Les autorisations basées sur les métadonnées sont une fonctionnalité utilisée pour permettre aux décisions de contrôle d’accès sur l’instance de création AEM Assets de se baser sur le contenu des ressources ou les propriétés des métadonnées plutôt que sur la structure des dossiers. Grâce à cette fonctionnalité, vous pouvez définir des politiques de contrôle d’accès qui évaluent des attributs tels que le statut, le type ou toute propriété personnalisée que vous définissez.
+Les autorisations pilotées par les métadonnées sont une fonctionnalité utilisée pour permettre aux décisions de contrôle d’accès sur l’instance de création AEM Assets d’être basées sur les propriétés de métadonnées des ressources plutôt que sur la structure de dossiers. Grâce à cette fonctionnalité, vous pouvez définir des politiques de contrôle d’accès qui évaluent des attributs tels que le statut et le type de ressource, ou toute propriété de métadonnées personnalisée que vous définissez.
 
-Prenons un exemple. Les personnes membres de l’équipe créative chargent leur travail dans AEM Assets vers le dossier associé à la campagne. Il peut s’agir d’une ressource en cours qui n’a pas été approuvée pour utilisation. Nous voulons nous assurer que les personnes spécialisées dans le marketing ne voient que les ressources approuvées pour cette campagne. Nous pouvons utiliser une propriété de métadonnées pour indiquer qu’une ressource a été approuvée et peut être utilisée par les marketeurs.
+Prenons un exemple. Les personnes membres de l’équipe créative chargent leur travail dans AEM Assets vers le dossier associé à la campagne. Il peut s’agir d’une ressource en cours qui n’a pas été approuvée pour utilisation. Nous voulons nous assurer que les personnes spécialisées dans le marketing ne voient que les ressources approuvées pour cette campagne. Nous pouvons utiliser la propriété de métadonnées pour indiquer qu’une ressource a été approuvée et peut être utilisée par les personnes spécialisées dans le marketing.
 
 ## Fonctionnement
 
-L’activation des autorisations pilotées par les métadonnées implique de définir le contenu de la ressource ou les propriétés de métadonnées qui génèrent des restrictions d’accès, telles que le « statut » ou la « marque ». Ces propriétés peuvent ensuite être utilisées pour créer des entrées de contrôle d’accès qui spécifient quels groupes d’utilisateurs et d’utilisatrices ont accès aux ressources avec des valeurs de propriété spécifiques.
+L’activation des autorisations pilotées par les métadonnées implique de définir quelles propriétés de métadonnées de ressource vont générer des restrictions d’accès, telles que « statut » ou « marque ». Ces propriétés peuvent ensuite être utilisées pour créer des entrées de contrôle d’accès qui spécifient quels groupes d’utilisateurs et d’utilisatrices ont accès aux ressources avec des valeurs de propriété spécifiques.
 
-## Conditions préalables
+## Prérequis
 
 L’accès à un environnement AEM as a Cloud Service mis à jour vers la dernière version est requis pour configurer des autorisations pilotées par les métadonnées.
 
 ## Configuration OSGi {#configure-permissionable-properties}
 
-Pour implémenter des autorisations pilotées par les métadonnées, un développeur doit déployer une configuration OSGi sur AEM as a Cloud Service, qui active un contenu de ressource ou des propriétés de métadonnées spécifiques pour alimenter les autorisations pilotées par les métadonnées.
+Pour implémenter des autorisations pilotées par les métadonnées, un développeur ou une développeuse doit déployer une configuration OSGi sur AEM as a Cloud Service, qui active des propriétés de métadonnées ou de contenu de ressources spécifiques pour alimenter les autorisations pilotées par les métadonnées.
 
-1. Déterminez le contenu de ressource ou les propriétés de métadonnées à utiliser pour le contrôle d’accès. Les noms des propriétés sont les noms des propriétés JCR de la ressource `jcr:content` ou `jcr:content/metadata`. Dans notre cas, il s’agira d’une propriété appelée `status`.
+1. Déterminez quelles propriétés de contenu de ressource ou de métadonnées serviront pour le contrôle d’accès. Les noms des propriétés sont les noms des propriétés JCR sur la ressource `jcr:content` ou `jcr:content/metadata` de la ressource. Dans notre cas, il s’agira d’une propriété appelée `status`.
 1. Créez une configuration OSGi `com.adobe.cq.dam.assetmetadatarestrictionprovider.impl.DefaultRestrictionProviderConfiguration.cfg.json` dans votre projet AEM Maven.
 1. Collez le JSON suivant dans le fichier créé :
 
@@ -91,9 +91,9 @@ Le dossier d’exemple contient quelques ressources.
 
 ![Vue d’administration](./assets/metadata-driven-permissions/admin-view.png)
 
-Une fois que vous avez configuré les autorisations et défini les propriétés de métadonnées de la ressource en conséquence, les utilisateurs (dans notre cas, l’utilisateur ou utilisatrice marketing) verront uniquement la ressource approuvée.
+Une fois que vous avez configuré les autorisations et défini les propriétés de métadonnées de ressource en conséquence, les utilisateurs et utilisatrices (dans notre cas, les spécialistes marketing) ne verront que la ressource approuvée.
 
-![Vue des personnes spécialisées dans le marketing](./assets/metadata-driven-permissions/marketeer-view.png)
+![Vue des personnes spécialistes marketing](./assets/metadata-driven-permissions/marketeer-view.png)
 
 ## Avantages et considérations
 
@@ -107,10 +107,10 @@ Les avantages des autorisations pilotées par les métadonnées sont les suivant
 >
 > Il est important de noter :
 > 
-> - Les propriétés sont évaluées par rapport aux restrictions à l’aide de __égalité des chaînes__ (`=`) (les autres types de données ou opérateurs ne sont pas encore pris en charge, pour les propriétés supérieures à (`>`) ou Date)
+> - Les propriétés sont évaluées par rapport aux restrictions à l’aide de l’__égalité de chaîne__ (`=`) (d’autres types de données ou opérateurs ne sont pas encore pris en charge, pour les propriétés supérieures à (`>`) ou de date).
 > - Pour autoriser plusieurs valeurs pour une propriété de restriction, vous pouvez ajouter des restrictions supplémentaires à l’entrée de contrôle d’accès en sélectionnant la même propriété dans la liste déroulante « Sélectionner un type » et en saisissant une nouvelle valeur de restriction (par exemple, `status=approved`, `status=wip`) et cliquez sur « + » pour ajouter la restriction à l’entrée.
-> ![Autoriser plusieurs valeurs](./assets/metadata-driven-permissions/allow-multiple-values.png)
+>   > ![Autoriser plusieurs valeurs](./assets/metadata-driven-permissions/allow-multiple-values.png)
 > - Les __restrictions AND__ sont prises en charge via plusieurs restrictions dans une seule entrée de contrôle d’accès avec différents noms de propriété (par exemple, `status=approved`, `brand=Adobe`) qui seront évaluées en tant que condition AND, c’est-à-dire que le groupe d’utilisateurs et d’utilisatrices sélectionné se verra accorder un accès en lecture aux ressources avec `status=approved AND brand=Adobe`.
-> ![Autoriser plusieurs restrictions](./assets/metadata-driven-permissions/allow-multiple-restrictions.png)
+>   > ![Autoriser plusieurs restrictions](./assets/metadata-driven-permissions/allow-multiple-restrictions.png)
 > - Les __restrictions OR__ sont prises en charges en ajoutant une nouvelle entrée de contrôle d’accès avec une restriction de propriété de métadonnées qui établit une condition OR pour les entrées, par exemple une seule entrée avec la restriction `status=approved` et une seule entrée avec `brand=Adobe` seront évaluées comme `status=approved OR brand=Adobe`.
-> ![Autoriser plusieurs restrictions](./assets/metadata-driven-permissions/allow-multiple-aces.png)
+>   > ![Autoriser plusieurs restrictions](./assets/metadata-driven-permissions/allow-multiple-aces.png)

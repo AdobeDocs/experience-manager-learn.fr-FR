@@ -12,7 +12,7 @@ level: Intermediate
 exl-id: cdfae631-86d7-438f-9baf-afd621802723
 duration: 186
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '373'
 ht-degree: 100%
 
@@ -70,4 +70,4 @@ Saisissez votre numéro de téléphone portable avec l’indicatif du pays, rens
 
 ## Démonstration du cas d’utilisation
 
->[!VIDEO](https://video.tv.adobe.com/v/346929?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/327122?quality=12&learn=on)

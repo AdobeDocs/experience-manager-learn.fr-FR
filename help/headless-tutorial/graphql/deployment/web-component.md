@@ -11,8 +11,8 @@ thumbnail: kt-10797.jpg
 exl-id: 9d4aab4c-82af-4917-8c1b-3935f19691e6
 duration: 31
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
-source-wordcount: '164'
+workflow-type: ht
+source-wordcount: '155'
 ht-degree: 100%
 
 ---
@@ -29,8 +29,8 @@ La configuration de déploiement suivante doit être en place pour les déploiem
 | L’application composant web et JS se connecte à → | Création AEM | Publication AEM | Prévisualisation AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtres Dispatcher.](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
-| [Partage de ressources entre origines multiples (CORS).](./configurations/cors.md) | ✔ | ✔ | ✔ |
-| [Hôtes AEM.](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [Partage de ressources entre origines multiples (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
+| [Hôtes AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 ## Exemple de composant web
 

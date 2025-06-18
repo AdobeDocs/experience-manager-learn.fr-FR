@@ -11,9 +11,9 @@ jira: KT-17479
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: f1fcc4bb-cc31-45e8-b7bb-688ef6a236bb
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '94'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
@@ -21,20 +21,19 @@ ht-degree: 8%
 
 * Importer le projet
 
-   * Téléchargez et extrayez le [exemple de projet](./assets/formsdocumentservices.zip)
-   * Ouvrez votre **environnement de développement Java** préféré (IntelliJ IDEA, Eclipse ou VS Code) et importez le projet en tant que projet Maven
-* Configuration des informations d’identification
+   * Téléchargez et extrayez l’[exemple de projet](./assets/formsdocumentservices.zip).
+   * Ouvrez votre **environnement de développement Java** préféré (IntelliJ IDEA, Eclipse ou VS Code) et importez le projet en tant que projet Maven.
+* Configurer les informations d’identification
 
-   * Localisez le fichier `resources/credentials/server_credentials.json`
+   * Recherchez le fichier `resources/credentials/server_credentials.json`.
    * Ouvrez-le et **mettez à jour les informations d’identification** spécifiques à votre environnement.
-   * Assurez-vous qu’il comprend des valeurs valides pour :
-
-     `clientId`, `clientSecret`, `adobeIMSV3TokenEndpointURL` et
+   * Assurez-vous qu’il comprend des valeurs valides pour les éléments suivants :
+     `clientId`, `clientSecret`,`adobeIMSV3TokenEndpointURL` et
      `scopes`
 
 * Exécuter la classe principale
 
-   * Accédez à `src/main/java/Main.java` et exécutez la méthode principale .
+   * Accédez à `src/main/java/Main.java` et exécutez la méthode principale.
 
 * Vérifier l’exécution
-   * Vérifiez la sortie dans la fenêtre du terminal
+   * Vérifiez la sortie dans la fenêtre du terminal.

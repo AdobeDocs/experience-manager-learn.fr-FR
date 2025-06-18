@@ -12,9 +12,9 @@ last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
-source-wordcount: '4262'
-ht-degree: 90%
+workflow-type: ht
+source-wordcount: '4233'
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Le flux type d’une intégration SAML de publication AEM est le suivant :
    + Le fournisseur d’identité demande à l’utilisateur ou l’utilisatrice ses informations d’identification.
    + L’utilisateur ou l’utilisatrice est déjà authentifié(e) auprès du fournisseur d’identité et n’a pas à fournir d’informations d’identification supplémentaires.
 1. Le fournisseur d’identité génère une assertion SAML contenant les données de l’utilisateur ou de l’utilisatrice et la signe à l’aide du certificat privé du fournisseur d’identité.
-1. Le fournisseur d’identité envoie l’assertion SAML au service de publication AEM via HTTP POST, par le biais du navigateur web de l’utilisateur (RESPECTIVE_PROTECTED_PATH/saml_login).
+1. Le fournisseur d’identité envoie l’assertion SAML via une requête HTTP POST, par le biais du navigateur web de l’utilisateur ou de l’utilisatrice (RESPECTIVE_PROTECTED_PATH/saml_login), au service de publication AEM.
 1. Le service de publication AEM reçoit l’assertion SAML et valide l’intégrité et l’authenticité de l’assertion SAML à l’aide du certificat public du fournisseur d’identité.
 1. Le service de publication AEM gère l’enregistrement de l’utilisateur ou de l’utilisatrice AEM en fonction de la configuration OSGi SAML 2.0 et du contenu de l’assertion SAML.
    + Crée un utilisateur ou une utilisatrice
@@ -56,11 +56,11 @@ Le flux type d’une intégration SAML de publication AEM est le suivant :
 
 ## Présentation de la configuration
 
->[!VIDEO](https://video.tv.adobe.com/v/3455331?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
 
 Cette vidéo décrit comment configurer l’intégration SAML 2.0 au service de publication AEM as a Cloud Service et utiliser Okta comme fournisseur d’identité.
 
-## Conditions préalables
+## Prérequis
 
 Les éléments suivants sont requis lors de la configuration de l’authentification SAML 2.0 :
 
@@ -447,7 +447,7 @@ Si la réécriture de l’URL sur le serveur web Apache est configurée (`dispat
 
 ## Appartenance à un groupe dynamique
 
-L’appartenance dynamique à un groupe est une fonctionnalité d’[Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html) qui améliore les performances de l’évaluation et de la mise en service des groupes. Cette section décrit comment les utilisateurs et les groupes sont stockés lorsque cette fonctionnalité est activée et comment modifier la configuration du gestionnaire d’authentification SAML pour l’activer pour les environnements nouveaux ou existants.
+L’appartenance à un groupe dynamique est une fonctionnalité d’[Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html) qui améliore les performances de l’évaluation et de la mise en service des groupes. Cette section décrit comment les utilisateurs et utilisatrices et les groupes sont stockés lorsque cette fonctionnalité est activée et comment modifier la configuration du gestionnaire d’authentification SAML pour l’activer pour les environnements nouveaux ou existants.
 
 ### Activation de l’appartenance à un groupe dynamique pour les utilisateurs et utilisatrices SAML dans de nouveaux environnements
 
@@ -522,17 +522,17 @@ Il s’agit du nœud pour une personne membre de ce groupe :
 }
 ```
 
-### Comment activer l’appartenance à un groupe dynamique pour les utilisateurs SAML dans les environnements existants
+### Activer l’appartenance à un groupe dynamique pour les utilisateurs et utilisatrices SAML dans des environnements existants
 
-Comme expliqué dans la section précédente, le format des utilisateurs et des groupes externes est légèrement différent de celui utilisé pour les utilisateurs et groupes locaux. Il est possible de définir une nouvelle liste de contrôle d’accès pour des groupes externes et de configurer de nouveaux utilisateurs externes, ou d’utiliser l’outil de migration comme décrit ci-dessous.
+Comme expliqué dans la section précédente, le format des utilisateurs et utilisatrices et des groupes externes est légèrement différent de celui utilisé pour les utilisateurs et utilisatrices et groupes locaux. Il est possible de définir une nouvelle liste de contrôle d’accès pour des groupes externes et de configurer de nouveaux utilisateurs et utilisatrices externes, ou d’utiliser l’outil de migration comme décrit ci-dessous.
 
-#### Activation de l’appartenance à un groupe dynamique pour les environnements existants comportant des utilisateurs externes
+#### Activer l’appartenance à un groupe dynamique pour les environnements existants comportant des utilisateurs et utilisatrices externes
 
-Le gestionnaire d’authentification SAML crée des utilisateurs externes lorsque la propriété suivante est spécifiée : `"identitySyncType": "idp"`. Dans ce cas, l’appartenance à un groupe dynamique peut être activée en modifiant cette propriété sur : `"identitySyncType": "idp_dynamic"`. Aucune migration n’est requise.
+Le gestionnaire d’authentification SAML crée des utilisateurs et utilisatrices externes lorsque la propriété suivante est spécifiée : `"identitySyncType": "idp"`. Dans ce cas, l’appartenance à un groupe dynamique peut être activée en modifiant cette propriété sur : `"identitySyncType": "idp_dynamic"`. Aucune migration n’est requise.
 
-#### Migration automatique vers l’appartenance à un groupe dynamique pour les environnements existants comprenant des utilisateurs locaux
+#### Migration automatique vers l’appartenance à un groupe dynamique pour les environnements existants avec des utilisateurs et utilisatrices locaux
 
-Le gestionnaire d’authentification SAML crée des utilisateurs locaux lorsque la propriété suivante est spécifiée : `"identitySyncType": "default"`. Il s’agit également de la valeur par défaut lorsque la propriété n’est pas spécifiée. Cette section décrit les étapes de la procédure de migration automatique.
+Le gestionnaire d’authentification SAML crée des utilisateurs et utilisatrices locaux lorsque la propriété suivante est spécifiée : `"identitySyncType": "default"`. Il s’agit également de la valeur par défaut lorsque la propriété n’est pas spécifiée. Cette section décrit les étapes de la procédure de migration automatique.
 
 Lorsque cette migration est activée, elle est réalisée lors de l’authentification de l’utilisateur ou de l’utilisatrice et comprend les étapes suivantes :
 1. La personne locale est migrée vers un profil utilisateur externe tout en conservant le nom d’utilisation d’origine. Cela signifie que les utilisateurs et utilisatrices locaux migrés, agissant désormais en tant qu’utilisateurs et utilisatrices externes, conservent leur nom d’utilisation d’origine au lieu de suivre la syntaxe d’affectation de nom mentionnée dans la section précédente. Une propriété supplémentaire sera ajoutée, appelée : `rep:externalId` avec la valeur `[user name];[idp]`. Le `PrincipalName` de la personne n’est pas modifié.
@@ -547,12 +547,12 @@ Par exemple, si, avant la migration, `user1` est une personne locale et membre d
 `group1;idp` est membre du groupe local : `group1`.
 `user1` est alors membre du groupe local : `group1` par héritage.
 
-L’appartenance à un groupe pour les groupes externes est stockée dans le profil utilisateur dans la `rep:externalPrincipalNames` de propriétés
+L’appartenance à un groupe pour les groupes externes est stockée dans le profil d’utilisation dans la propriété `rep:externalPrincipalNames`.
 
 ### Configuration de la migration automatique vers l’appartenance à un groupe dynamique
 
-1. Activez la propriété `"identitySyncType": "idp_dynamic_simplified_id"` dans le fichier de configuration OSGi SAML : `com.adobe.granite.auth.saml.SamlAuthenticationHandler~...cfg.json` :
-2. Configurez le nouveau service OSGi avec le PID d’usine commençant par : `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~`. Par exemple, un PID peut être : `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~myIdP`. Définissez la propriété suivante :
+1. Activez la propriété `"identitySyncType": "idp_dynamic_simplified_id"` dans le fichier de configuration SAML OSGI : `com.adobe.granite.auth.saml.SamlAuthenticationHandler~...cfg.json` :
+2. Configurez le nouveau service OSGi avec le PID d’usine commençant par : `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~`. Par exemple, un PID peut être : `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration~myIdP`. Définissez la propriété suivante :
 
 ```
 {
@@ -583,7 +583,7 @@ Le flux d’authentification SAML peut être appelé à partir d’une page web 
 
 ## Mise en cache sécurisée lors de l’utilisation de SAML
 
-Sur l’instance de publication AEM, la plupart des pages sont généralement mises en cache. Toutefois, pour les chemins protégés par SAML, la mise en cache doit être désactivée ou la mise en cache sécurisée activée à l’aide de la configuration auth_checker. Pour plus d’informations, reportez-vous aux détails fournis [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/configuring/permissions-cache)
+Sur l’instance de publication AEM, la plupart des pages sont généralement mises en cache. Toutefois, pour les chemins protégés par SAML, la mise en cache doit être soit désactivée soit activée de manière sécurisée à l’aide de la configuration auth_checker. Pour plus d’informations, reportez-vous aux détails fournis [ici](https://experienceleague.adobe.com/fr/docs/experience-manager-dispatcher/using/configuring/permissions-cache).
 
 Gardez à l’esprit que si vous mettez en cache des chemins protégés sans activer auth_checker, vous pouvez rencontrer un comportement imprévisible.
 

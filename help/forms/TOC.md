@@ -9,9 +9,9 @@ sub-product: Experience Manager Forms
 version: Experience Manager 6.4, Experience Manager 6.5
 index: y
 source-git-commit: c4b5a015f1c0d5e3877886052476871548ec9b0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2104'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -22,15 +22,15 @@ ht-degree: 92%
 + [Bonnes pratiques à suivre](adaptive-forms/best-practices-adaptive-forms.md)
 + [Configuration de l’authentification OKTA avec l’instance Création AEM](adaptive-forms/single-sign-on-with-okta.md)
 + Création de votre premier formulaire adaptatif {#creating-your-first-adaptive-form}
-   + [1. Présentation et configuration](creating-your-first-adaptive-form/introduction-and-setup.md)
-   + [2. Créer un modèle de formulaire adaptatif](creating-your-first-adaptive-form/create-adaptive-form-template.md)
-   + [3. Créer un fragment de formulaire](creating-your-first-adaptive-form/create-form-fragment.md)
-   + [4. Créer un formulaire adaptatif](creating-your-first-adaptive-form/create-adaptive-form.md)
-   + [5. Configurer un panneau racine et ajouter des panneaux enfants](creating-your-first-adaptive-form/configuring-root-panel-and-adding-child-panels.md)
-   + [6. Ajouter des composants au panneau Personnes](creating-your-first-adaptive-form/adding-components-to-people-panel.md)
-   + [7. Ajouter un tableau au panneau des revenus](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
-   + [8. Configurer le panneau Ressources](creating-your-first-adaptive-form/configuring-assets-panel.md)
-   + [9. Utiliser des fonctions personnalisées et l’éditeur de code](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
+   + [&#x200B;1. Présentation et configuration](creating-your-first-adaptive-form/introduction-and-setup.md)
+   + [&#x200B;2. Créer un modèle de formulaire adaptatif](creating-your-first-adaptive-form/create-adaptive-form-template.md)
+   + [&#x200B;3. Créer un fragment de formulaire](creating-your-first-adaptive-form/create-form-fragment.md)
+   + [&#x200B;4. Créer un formulaire adaptatif](creating-your-first-adaptive-form/create-adaptive-form.md)
+   + [&#x200B;5. Configurer un panneau racine et ajouter des panneaux enfants](creating-your-first-adaptive-form/configuring-root-panel-and-adding-child-panels.md)
+   + [&#x200B;6. Ajouter des composants au panneau Personnes](creating-your-first-adaptive-form/adding-components-to-people-panel.md)
+   + [&#x200B;7. Ajouter un tableau au panneau des revenus](creating-your-first-adaptive-form/adding-table-to-income-panel.md)
+   + [&#x200B;8. Configurer le panneau Ressources](creating-your-first-adaptive-form/configuring-assets-panel.md)
+   + [&#x200B;9. Utiliser des fonctions personnalisées et l’éditeur de code](creating-your-first-adaptive-form/using-custom-functions-and-code-editor.md)
 + Gestion des envois de formulaire {#handling-af-form-submissions}
    + [Création d’un workflow de révision](handling-form-submissions/creating-a-review-workflow.md)
    + [Configuration d’un formulaire adaptatif pour déclencher un workflow](handling-form-submissions/configuring-adaptive-form-to-trigger-workflow.md)
@@ -50,10 +50,10 @@ ht-degree: 92%
    + [Stocker les données de formulaire dans le stockage Azure](some-useful-integrations/store-form-data-in-azure-storage.md)
    + [Renseigner le formulaire avec Azure Blob](some-useful-integrations/fetch-form-data-from-azure-storage.md)
 + Création d’un bundle OSGi {#creating-your-first-osgi-bundle}
-   + [1. Configurer votre environnement](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
-   + [2. Créer un service OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
-   + [3. Créer un servlet Sling](creating-your-first-osgi-bundle/create-servlet.md)
-   + [4. Inclure des lots tiers](creating-your-first-osgi-bundle/include-third-party-jars.md)
+   + [&#x200B;1. Configurer votre environnement](creating-your-first-osgi-bundle/create-your-first-osgi-bundle.md)
+   + [&#x200B;2. Créer un service OSGi](creating-your-first-osgi-bundle/create-osgi-service.md)
+   + [&#x200B;3. Créer un servlet Sling](creating-your-first-osgi-bundle/create-servlet.md)
+   + [&#x200B;4. Inclure des lots tiers](creating-your-first-osgi-bundle/include-third-party-jars.md)
 + Formulaires adaptatifs {#adaptive-forms}
    + [Installation d’AEM Forms sur Windows](adaptive-forms/installing-aem-form-on-windows-tutorial-use.md)
    + [Installation de packages 32 bits sur Linux](adaptive-forms/installing-aem-form-on-linux.md)
@@ -106,24 +106,24 @@ ht-degree: 92%
    + [Préremplissage des formulaires HTML5](adaptive-forms/prepopulating-html5-forms-in-aem-forms-article.md)
    + [Modèle de données de formulaire avec Salesforce](adaptive-forms/using-adaptive-forms-with-sales-force-integration-tutorial.md)
    + [Ajout dynamique d’éléments au composant Choix](adaptive-forms/choice-group-items-adding-dynamically-article.md)
-+ Remplir un formulaire PDF avec ChatBot{#chatbot-and-aem-forms}
++ Remplir un formulaire PDF avec ChatBot{#chatbot-and-aem-forms}
    + [1 - Présentation](chatbot-and-aem-forms/introduction.md)
-   + [2. Analyse des données de ChatBot](chatbot-and-aem-forms/parse-chat-bot-data.md)
-   + [3. Créer un PDF](chatbot-and-aem-forms/merge-data-with-template.md)
+   + [&#x200B;2. Analyse des données de ChatBot](chatbot-and-aem-forms/parse-chat-bot-data.md)
+   + [&#x200B;3. Créer un PDF](chatbot-and-aem-forms/merge-data-with-template.md)
 + Formulaires basés sur les composants principaux{#core-component-based-forms}
    + [Accéder aux données de formulaire à l’aide de l’API GuideBridge](core-components/submit-data-using-guidebridge-api.md)
 + Sélection et assemblage du contenu du dossier DAM{#select-dam-folder-content}
-   + [1. Présentation](display-and-assemble-dam-folder-contents/introduction.md)
-   + [2. Renseigner le groupe de choix](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
-   + [3. Assembler les ressources sélectionnées](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)
-   + [4. Déployer les ressources localement](display-and-assemble-dam-folder-contents/deploy-on-your-system.md)
-+ Préremplissage du formulaire adaptatif à l’aide du modèle de données de formulaire{#prefill-fdm-db}
+   + [&#x200B;1. Présentation](display-and-assemble-dam-folder-contents/introduction.md)
+   + [&#x200B;2. Renseigner le groupe de choix](display-and-assemble-dam-folder-contents/populating-choice-group-with-dam-folder-content.md)
+   + [&#x200B;3. Assembler les ressources sélectionnées](display-and-assemble-dam-folder-contents/assemble-selected-newsletters.md)
+   + [&#x200B;4. Déployer les ressources localement](display-and-assemble-dam-folder-contents/deploy-on-your-system.md)
++ Préremplir le formulaire adaptatif à l’aide du modèle de données de formulaire{#prefill-fdm-db}
    + [1 - Présentation](prefill-fdm-db/introduction.md)
-   + [2. Créer des tables de base de données](prefill-fdm-db/create-database-tables.md)
-   + [3. Configurer un modèle de données de formulaire](prefill-fdm-db/configuring-form-data-model.md)
-   + [4. Paramètre de requête GET](prefill-fdm-db/get-request-parameter.md)
-   + [5. Créer un formulaire adaptatif](prefill-fdm-db/create-adaptive-form.md)
-+ Conseils et astuces concernant l’interface utilisateur{#ui-tips-and-tricks}
+   + [&#x200B;2. Créer des tables de base de données](prefill-fdm-db/create-database-tables.md)
+   + [&#x200B;3. Configurer un modèle de données de formulaire](prefill-fdm-db/configuring-form-data-model.md)
+   + [&#x200B;4. Paramètre de requête GET](prefill-fdm-db/get-request-parameter.md)
+   + [&#x200B;5. Créer un formulaire adaptatif](prefill-fdm-db/create-adaptive-form.md)
++ Conseils et astuces concernant l’interface d’utilisation{#ui-tips-and-tricks}
    + [Activer/désactiver le texte du champ de mot de passe](ui-tips-tricks/toggle-password.md)
    + [Boutons de la barre d’outils Espace](ui-tips-tricks/toolbar-buttons.md)
    + [Naviguer dans les onglets avec les panneaux imbriqués](ui-tips-tricks/nested-panels.md)
@@ -131,42 +131,42 @@ ht-degree: 92%
    + [Champs de saisie automatique](ui-tips-tricks/auto-complete.md)
 + Personnalisation de la boîte de réception{#inbox-customization}
    + [1 - Présentation](inbox-customization/introduction.md)
-   + [2. Ajouter une colonne personnalisée](inbox-customization/add-married-column.md)
-   + [3. Utiliser un modèle Sightly](inbox-customization/use-sightly-template.md)
+   + [&#x200B;2. Ajouter une colonne personnalisée](inbox-customization/add-married-column.md)
+   + [&#x200B;3. Utiliser un modèle Sightly](inbox-customization/use-sightly-template.md)
 + Pièces jointes du formulaire d’e-mail{#zipping-form-attachments}
    + [1 - Présentation](zipping-form-attachments/introduction.md)
-   + [2. Pièces jointes du formulaire Zip](zipping-form-attachments/custom-process-step.md)
-   + [3. Pièces jointes du formulaire d’e-mail](zipping-form-attachments/populating-list-of-documents.md)
-   + [4. Tester la solution](zipping-form-attachments/test.md)
+   + [&#x200B;2. Pièces jointes du formulaire Zip](zipping-form-attachments/custom-process-step.md)
+   + [&#x200B;3. Pièces jointes du formulaire d’e-mail](zipping-form-attachments/populating-list-of-documents.md)
+   + [&#x200B;4. Tester la solution](zipping-form-attachments/test.md)
 + Préremplissage du formulaire avec des données et des pièces jointes{#prefill-form-with-data-attachments}
    + [1 - Présentation](prefill-form-with-data-attachments/introduction.md)
-   + [2. Créer un envoi personnalisé](prefill-form-with-data-attachments/create-custom-submit.md)
-   + [3. Créer une configuration OSGi](prefill-form-with-data-attachments/create-osgi-configuration.md)
-   + [4. Créer un service de préremplissage](prefill-form-with-data-attachments/create-prefill-service.md)
+   + [&#x200B;2. Créer un envoi personnalisé](prefill-form-with-data-attachments/create-custom-submit.md)
+   + [&#x200B;3. Créer une configuration OSGi](prefill-form-with-data-attachments/create-osgi-configuration.md)
+   + [&#x200B;4. Créer un service de préremplissage](prefill-form-with-data-attachments/create-prefill-service.md)
 + Stockage et récupération d’un formulaire adaptatif{#store-and-retrieve-af-with-2fa}
    + [1 - Présentation](store-and-retrieve-af-with-2fa/introduction.md)
-   + [2. Configurer la source de données](store-and-retrieve-af-with-2fa/configure-data-source.md)
-   + [3. Stocker les pièces jointes d’un formulaire](store-and-retrieve-af-with-2fa/store-form-attachments.md)
-   + [4. Stocker les données d’un formulaire](store-and-retrieve-af-with-2fa/store-form-data.md)
-   + [5. Créer un servlet](store-and-retrieve-af-with-2fa/create-servlet.md)
-   + [6. Rendre un formulaire avec des données enregistrées](store-and-retrieve-af-with-2fa/retrieve-saved-form.md)
-   + [7. Créer une bibliothèque cliente](store-and-retrieve-af-with-2fa/create-client-lib.md)
-   + [8. Intégrer au service OTP](store-and-retrieve-af-with-2fa/verify-users-with-otp.md)
-   + [9. Créer le formulaire principal](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
-   + [10. Créer le formulaire MyAccount](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
-   + [11. Déployer l’exemple](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
+   + [&#x200B;2. Configurer la source de données](store-and-retrieve-af-with-2fa/configure-data-source.md)
+   + [&#x200B;3. Stocker les pièces jointes d’un formulaire](store-and-retrieve-af-with-2fa/store-form-attachments.md)
+   + [&#x200B;4. Stocker les données d’un formulaire](store-and-retrieve-af-with-2fa/store-form-data.md)
+   + [&#x200B;5. Créer un servlet](store-and-retrieve-af-with-2fa/create-servlet.md)
+   + [&#x200B;6. Rendre un formulaire avec des données enregistrées](store-and-retrieve-af-with-2fa/retrieve-saved-form.md)
+   + [&#x200B;7. Créer une bibliothèque cliente](store-and-retrieve-af-with-2fa/create-client-lib.md)
+   + [&#x200B;8. Intégrer au service OTP](store-and-retrieve-af-with-2fa/verify-users-with-otp.md)
+   + [&#x200B;9. Créer le formulaire principal](store-and-retrieve-af-with-2fa/create-the-main-adaptive-form.md)
+   + [&#x200B;10. Créer le formulaire MyAccount](store-and-retrieve-af-with-2fa/create-the-myaccount-form.md)
+   + [&#x200B;11. Déployer l’exemple](store-and-retrieve-af-with-2fa/deploy-this-sample.md)
 + Importer des données d’un fichier PDF{#import-data-from-pdf-form}
    + [1 - Présentation](import-data-from-pdf-form/introduction.md)
-   + [2. Créer un formulaire adaptatif](import-data-from-pdf-form/create-adaptive-form.md)
-   + [3. Créer un service OSGi](import-data-from-pdf-form/create-osgi-service.md)
-   + [4. Renseigner le formulaire adaptatif](import-data-from-pdf-form/populate-adaptive-form.md)
-   + [5. Tester la solution](import-data-from-pdf-form/test-the-solution.md)
-+ Exportation de données envoyées au format CSV{#export-submitted-data-csv-format}
+   + [&#x200B;2. Créer un formulaire adaptatif](import-data-from-pdf-form/create-adaptive-form.md)
+   + [&#x200B;3. Créer un service OSGi](import-data-from-pdf-form/create-osgi-service.md)
+   + [&#x200B;4. Renseigner le formulaire adaptatif](import-data-from-pdf-form/populate-adaptive-form.md)
+   + [&#x200B;5. Tester la solution](import-data-from-pdf-form/test-the-solution.md)
++ Export de données envoyées au format CSV{#export-submitted-data-csv-format}
    + [Exporter les données envoyées](export-submitted-data-csv-format/export-submitted-data-csv.md)
 + Formulaires HTML5{#html5-forms}
    + [Créer un formulaire HTML5](html5-forms/create-html5-form.md)
    + [Gérer l’envoi du formulaire HTML5](html5-forms/handle-html5-form-submission.md)
-+ AEM Forms et Acrobat Sign{#forms-and-sign}
++ AEM Forms et Acrobat Sign{#forms-and-sign}
    + [Présentation](aem-forms-and-adobe-sign/introduction.md)
    + [Configurer le SSL](aem-forms-and-adobe-sign/set-up-ssl.md)
    + [Créer une application d’API Acrobat Sign](aem-forms-and-adobe-sign/create-adobe-sign-api-application.md)
@@ -180,27 +180,27 @@ ht-degree: 92%
    + [Configurer un formulaire adaptatif converti](aem-forms-and-adobe-sign/configure-converted-adaptive-form.md)
    + [Utilisation de modèles XDP avec Acrobat Sign](aem-forms-and-adobe-sign/using-xdp-templates-with-adobe-sign.md)
    + [Utilisation des méthodes d’assistance Acrobat Sign](aem-forms-and-adobe-sign/send-documents-signing-using-sign-api.md)
-+ Signer plusieurs Forms{#sign-multiple-documents}
++ Signer plusieurs formulaires{#sign-multiple-documents}
    + [1 - Présentation](sign-multiple-documents/introduction.md)
-   + [2. Configurer la source de données](sign-multiple-documents/configure-data-source.md)
-   + [3. Créer un service OSGi](sign-multiple-documents/create-osgi-service.md)
-   + [4. Créer un workflow principal](sign-multiple-documents/create-main-workflow.md)
-   + [5. Mettre à jour le workflow du statut de signature](sign-multiple-documents/update-signature-status.md)
-   + [6. Personnaliser le composant Résumé](sign-multiple-documents/customize-summary-component.md)
-   + [7. Créer une bibliothèque cliente](sign-multiple-documents/create-client-lib.md)
-   + [8. Créer un modèle de formulaire](sign-multiple-documents/create-af-template.md)
-   + [9. Créer un formulaire initial](sign-multiple-documents/create-initial-form.md)
-   + [10. Créer des formulaires à signer](sign-multiple-documents/create-forms-for-signing.md)
-   + [11. Tester la solution](sign-multiple-documents/testing-and-trouble-shooting.md)
+   + [&#x200B;2. Configurer la source de données](sign-multiple-documents/configure-data-source.md)
+   + [&#x200B;3. Créer un service OSGi](sign-multiple-documents/create-osgi-service.md)
+   + [&#x200B;4. Créer un workflow principal](sign-multiple-documents/create-main-workflow.md)
+   + [&#x200B;5. Mettre à jour le workflow du statut de signature](sign-multiple-documents/update-signature-status.md)
+   + [&#x200B;6. Personnaliser le composant Résumé](sign-multiple-documents/customize-summary-component.md)
+   + [&#x200B;7. Créer une bibliothèque cliente](sign-multiple-documents/create-client-lib.md)
+   + [&#x200B;8. Créer un modèle de formulaire](sign-multiple-documents/create-af-template.md)
+   + [&#x200B;9. Créer un formulaire initial](sign-multiple-documents/create-initial-form.md)
+   + [&#x200B;10. Créer des formulaires à signer](sign-multiple-documents/create-forms-for-signing.md)
+   + [&#x200B;11. Tester la solution](sign-multiple-documents/testing-and-trouble-shooting.md)
 + Étapes d’un workflow personnalisé{#custom-workflow-steps}
    + [Extraire un nœud du document XML](custom-workflow-steps/extract-xml-node.md)
    + [Enregistrer le document dans le système de fichiers](custom-workflow-steps/write-payload-document.md)
    + [Enregistrer les données envoyées dans la variable string](custom-workflow-steps/save-submitted-data-in-string-variable.md)
    + [Extraire un document de la liste de documents](custom-workflow-steps/extract-document-from-list.md)
 + Composant de workflow personnalisé{#custom-workflow-component}
-   + [1. Présentation](custom-workflow-component/introduction.md)
-   + [2. Écrire le code Java](custom-workflow-component/custom-process-step-aem-workflow.md)
-   + [3. Créer un composant de workflow](custom-workflow-component/custom-workflow-component.md)
+   + [&#x200B;1. Présentation](custom-workflow-component/introduction.md)
+   + [&#x200B;2. Écrire le code Java](custom-workflow-component/custom-process-step-aem-workflow.md)
+   + [&#x200B;3. Créer un composant de workflow](custom-workflow-component/custom-workflow-component.md)
 + Variables dans le workflow AEM{#variables-aem-workflow}
    + [Introduction - Variables dans le workflow](variables-aem-workflow/introduction.md)
    + [Variables XML](variables-aem-workflow/part1.md)
@@ -212,8 +212,8 @@ ht-degree: 92%
    + [Variables du workflow de journal](variables-aem-workflow/part6.md)
 + Vérifier les données de formulaire{#review-form-data}
    + [1 - Présentation](review-form-data/introduction.md)
-   + [2. Créer un composant](review-form-data/create-component.md)
-   + [3. Déployer des ressources](review-form-data/deploy-on-your-system.md)
+   + [&#x200B;2. Créer un composant](review-form-data/create-component.md)
+   + [&#x200B;3. Déployer des ressources](review-form-data/deploy-on-your-system.md)
 + Stockage et récupération des données de formulaire dans la base de données MySQL{#storing-and-retrieving-form-data}
    + [Présentation](storing-retrieving-form-data/introduction.md)
    + [Configurer la source de données](storing-retrieving-form-data/part1.md)
@@ -222,62 +222,62 @@ ht-degree: 92%
    + [Bibliothèque cliente](storing-retrieving-form-data/part4.md)
    + [Modèle de formulaire adaptatif](storing-retrieving-form-data/part5.md)
    + [Déployer des exemples de ressources](storing-retrieving-form-data/part6.md)
-+ Déclenchement du workflow AEM lors de l’envoi du formulaire PDF{#offline-mobile-form-submission}
++ Déclenchement d’un workflow AEM lors de l’envoi du formulaire PDF{#offline-mobile-form-submission}
    + [Partie 1](offline-mobile-form-submission/introduction.md)
    + [Partie 2](offline-mobile-form-submission/custom-profile.md)
    + [Partie 3](offline-mobile-form-submission/handle-form-submission.md)
    + [Partie 4](offline-mobile-form-submission/author-servlet.md)
    + [Partie 5](offline-mobile-form-submission/review-workflow.md)
    + [Partie 6](offline-mobile-form-submission/deploy-assets.md)
-+ Déclencher le workflow AEM lors de l’envoi du formulaire mobile{#trigger-aem-workflow-on-mobile-form-submission}
++ Déclencher un workflow AEM lors de l’envoi du formulaire mobile{#trigger-aem-workflow-on-mobile-form-submission}
    + [Partie 1](trigger-aem-workflow-on-mobile-form-submission/introduction.md)
    + [Partie 2](trigger-aem-workflow-on-mobile-form-submission/handle-form-submission.md)
    + [Partie 3](trigger-aem-workflow-on-mobile-form-submission/author-servlet.md)
    + [Partie 4](trigger-aem-workflow-on-mobile-form-submission/review-workflow.md)
    + [Partie 5](trigger-aem-workflow-on-mobile-form-submission/deploy-assets.md)
-+ Requête sur les envois de formulaire{#query-form-submissions}
++ Interrogation des envois de formulaire{#query-form-submissions}
    + [Présentation](query-form-submissions/introduction.md)
    + [Créer des champs pouvant faire l’objet d’une recherche](query-form-submissions/part1.md)
    + [Créer un envoi personnalisé](query-form-submissions/part2.md)
    + [Créer une interface de requête](query-form-submissions/part3.md)
    + [Écrire un service de préremplissage](query-form-submissions/part4.md)
    + [Déployer l’exemple](query-form-submissions/part5.md)
-+ Liste des types de ressources personnalisés dans le portail Forms{#listing-custom-asset-types}
++ Liste des types de ressources personnalisés dans le portail Formulaires{#listing-custom-asset-types}
    + [Partie 1 - Enregistrement des types de ressources personnalisés](listing-custom-asset-types/part1.md)
    + [Partie 2 - Création d’un modèle personnalisé](listing-custom-asset-types/part2.md)
-+ AEM Forms Avec Marketo{#aem-forms-with-marketo}
++ AEM Forms avec Marketo{#aem-forms-with-marketo}
    + [Partie 1 - Introduction](aem-forms-with-marketo/part1.md)
    + [Partie 2 - Source de données](aem-forms-with-marketo/part2.md)
    + [Partie 3 - Modèle de données de formulaire](aem-forms-with-marketo/part3.md)
    + [Partie 4 - Assemblage](aem-forms-with-marketo/part4.md)
 
-+ AEM Forms avec Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
++ AEM Forms avec Adobe Campaign Standard{#aem-forms-with-adobe-campaign}
    + [1 - Présentation](aem-forms-with-adobe-campaign/aem-forms-with-campaign-standard-getting-started-tutorial.md)
-   + [2. Générer des jetons](aem-forms-with-adobe-campaign/partone.md)
-   + [3. Créer un profil ACS lors de l’envoi du formulaire](aem-forms-with-adobe-campaign/parttwo.md)
-   + [4. Préremplir un formulaire à l’aide des informations de profil ACS](aem-forms-with-adobe-campaign/partthree.md)
-   + [5. Créer un profil ACS à l’aide d’un modèle de données de formulaire](aem-forms-with-adobe-campaign/partfour.md)
+   + [&#x200B;2. Générer des jetons](aem-forms-with-adobe-campaign/partone.md)
+   + [&#x200B;3. Créer un profil ACS lors de l’envoi du formulaire](aem-forms-with-adobe-campaign/parttwo.md)
+   + [&#x200B;4. Préremplir un formulaire à l’aide des informations de profil ACS](aem-forms-with-adobe-campaign/partthree.md)
+   + [&#x200B;5. Créer un profil ACS à l’aide d’un modèle de données de formulaire](aem-forms-with-adobe-campaign/partfour.md)
 
 + Kit de bienvenue {#welcome-kit}
    + [Présentation](welcome-kit/introduction.md)
    + [Créer un composant de kit de bienvenue](welcome-kit/create-welcomekit-component.md)
    + [Créer un composant de workflow](welcome-kit/create-workflow-component.md)
    + [Tester la solution](welcome-kit/testing-the-solution.md)
-+ API de Forms découplé {#embed-form-spa}
++ API Forms découplée {#embed-form-spa}
    + [1 - Présentation](headless-forms/introduction.md)
    + [2 - Installer les dépendances](headless-forms/install-af-react-libraries.md)
-   + [3. Récupérer le formulaire](headless-forms/fetch-the-form.md)
-   + [4. Sélectionner le formulaire à remplir](headless-forms/select-form-from-drop-down-list.md)
-   + [5. Afficher les formulaires au format carte](headless-forms/display-forms-card-view.md)
-   + [6. Afficher le formulaire sélectionné](headless-forms/open-form-card-view.md)
-   + [7. Gérer l’envoi du formulaire](headless-forms/display-thank-you-message.md)
+   + [&#x200B;3. Récupérer le formulaire](headless-forms/fetch-the-form.md)
+   + [&#x200B;4. Sélectionner le formulaire à remplir](headless-forms/select-form-from-drop-down-list.md)
+   + [&#x200B;5. Afficher les formulaires au format carte](headless-forms/display-forms-card-view.md)
+   + [&#x200B;6. Afficher le formulaire sélectionné](headless-forms/open-form-card-view.md)
+   + [&#x200B;7. Gérer l’envoi du formulaire](headless-forms/display-thank-you-message.md)
 
-+ Application React avec Forms et Acrobat Sign {#react-ic-sign}
++ Application React avec Forms et Acrobat Sign {#react-ic-sign}
    + [1 - Présentation](react-ic-sign/introduction.md)
-   + [2. Générer le document](react-ic-sign/create-ic-document.md)
-   + [3. Wrapper d’API Acrobat Sign](react-ic-sign/wrapper-sign-api.md)
-   + [4. Générer le widget de signature](react-ic-sign/create-servlet-to-expose-endpoint.md)
-   + [5. Déployer les exemples de ressources](react-ic-sign/deploy-assets-on-your-server.md)
+   + [&#x200B;2. Générer le document](react-ic-sign/create-ic-document.md)
+   + [&#x200B;3. Wrapper d’API Acrobat Sign](react-ic-sign/wrapper-sign-api.md)
+   + [&#x200B;4. Générer le widget de signature](react-ic-sign/create-servlet-to-expose-endpoint.md)
+   + [&#x200B;5. Déployer les exemples de ressources](react-ic-sign/deploy-assets-on-your-server.md)
 + Document Services {#document-services}
    + [Types de formulaires PDF](document-services/pdf-forms-and-documents.md)
    + [Incorporer le PDF dans le formulaire adaptatif](document-services/embed-pdf-inline.md)
@@ -319,17 +319,17 @@ ht-degree: 92%
 + Communications interactives pour le canal d’impression 
 {#ic-print-channel-tutorial}
    + [1 - Présentation](ic-print-channel-tutorial/introduction.md)
-   + [2. Configurer Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
-   + [3. Créer une source de données](ic-print-channel-tutorial/create-data-source.md)
-   + [4. Créer un modèle de données de formulaire](ic-print-channel-tutorial/create-form-data-model.md)
-   + [5. Créer une disposition XDP à l’aide de Forms Designer](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
-   + [6. Créer un fragment de document](ic-print-channel-tutorial/create-document-fragment.md)
-   + [7. Créer un document de canal d’impression](ic-print-channel-tutorial/create-print-channel-document.md)
-   + [8. Ajouter du contenu aux zones cible](ic-print-channel-tutorial/add-content-to-target-areas.md)
-   + [9. Configurer le graphique linéaire](ic-print-channel-tutorial/configuring-line-chart.md)
-   + [10. Ajouter un tableau au canal d’impression](ic-print-channel-tutorial/adding-table-to-print-channel.md)
-   + [11. Utiliser un dossier de contrôle pour générer des documents](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
-   + [12. Ouvrir l’interface utilisateur de l’agent lors de l’envoi du formulaire](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
+   + [&#x200B;2. Configurer Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
+   + [&#x200B;3. Créer une source de données](ic-print-channel-tutorial/create-data-source.md)
+   + [&#x200B;4. Créer un modèle de données de formulaire](ic-print-channel-tutorial/create-form-data-model.md)
+   + [&#x200B;5. Créer une disposition XDP à l’aide de Forms Designer](ic-print-channel-tutorial/create-xdp-layout-using-forms-designer.md)
+   + [&#x200B;6. Créer un fragment de document](ic-print-channel-tutorial/create-document-fragment.md)
+   + [&#x200B;7. Créer un document de canal d’impression](ic-print-channel-tutorial/create-print-channel-document.md)
+   + [&#x200B;8. Ajouter du contenu aux zones cible](ic-print-channel-tutorial/add-content-to-target-areas.md)
+   + [&#x200B;9. Configurer le graphique linéaire](ic-print-channel-tutorial/configuring-line-chart.md)
+   + [&#x200B;10. Ajouter un tableau au canal d’impression](ic-print-channel-tutorial/adding-table-to-print-channel.md)
+   + [&#x200B;11. Utiliser un dossier de contrôle pour générer des documents](ic-print-channel-tutorial/using-watched-folder-to-generate-document.md)
+   + [&#x200B;12. Ouvrir l’interface utilisateur de l’agent lors de l’envoi du formulaire](ic-print-channel-tutorial/opening-agent-ui-on-form-submission.md)
 + Enregistrer et récupérer des brouillons de lettres {#store-retrieve-letters}
    + [Présentation](store-retrieve-letters/introduction.md)
    + [Implémentation](store-retrieve-letters/save-draft-letters.md)
@@ -343,22 +343,22 @@ ht-degree: 92%
    + [Utilisation du composant Tableau dans le document de canal d’impression AEM Forms](interactive-communications/table-in-print-channel-documents-video-use.md)
    + [Génération d’un document de communication interactive pour le canal d’impression à l’aide de dossiers de contrôle](interactive-communications/generating-interactive-communications-print-document-using-api-tutorial-use.md)
    + [Personnaliser l’éditeur de texte](interactive-communications/customize-text-editor.md)
-+ ExL NewsLetters{#exl-newsletters}
++ Newsletters ExL{#exl-newsletters}
    + [Archives](./newsletters/archives.md)
-+ Communications Interactives Pour Le Canal Web {#ic-web-channel-tutorial}
++ Communication interactive pour canal web {#ic-web-channel-tutorial}
    + [1 - Présentation](ic-web-channel-tutorial/introduction.md)
-   + [2. Configurer Tomcat](ic-web-channel-tutorial/partone.md)
-   + [3. Créer une source de données](ic-web-channel-tutorial/parttwo.md)
-   + [4. Créer un modèle de données de formulaire](ic-web-channel-tutorial/partthree.md)
-   + [5. Créer un modèle de document de canal web](ic-web-channel-tutorial/partfour.md)
-   + [6. Créer un fragment de document](ic-web-channel-tutorial/partfive.md)
-   + [7. Créer un document de communication interactive](ic-web-channel-tutorial/partsix.md)
-   + [8. Ajouter du texte et des images](ic-web-channel-tutorial/partseven.md)
-   + [9. Configurer le graphique linéaire](ic-web-channel-tutorial/parteight.md)
-   + [10. Configurer le tableau](ic-web-channel-tutorial/partnine.md)
-   + [11. Configurer le graphique à colonnes](ic-web-channel-tutorial/partten.md)
-   + [12. Configurer le graphique en secteurs](ic-web-channel-tutorial/parteleven.md)
-   + [13. Diffuser le document de canal web](ic-web-channel-tutorial/parttwelve.md)
+   + [&#x200B;2. Configurer Tomcat](ic-web-channel-tutorial/partone.md)
+   + [&#x200B;3. Créer une source de données](ic-web-channel-tutorial/parttwo.md)
+   + [&#x200B;4. Créer un modèle de données de formulaire](ic-web-channel-tutorial/partthree.md)
+   + [&#x200B;5. Créer un modèle de document de canal web](ic-web-channel-tutorial/partfour.md)
+   + [&#x200B;6. Créer un fragment de document](ic-web-channel-tutorial/partfive.md)
+   + [&#x200B;7. Créer un document de communication interactive](ic-web-channel-tutorial/partsix.md)
+   + [&#x200B;8. Ajouter du texte et des images](ic-web-channel-tutorial/partseven.md)
+   + [&#x200B;9. Configurer le graphique linéaire](ic-web-channel-tutorial/parteight.md)
+   + [&#x200B;10. Configurer le tableau](ic-web-channel-tutorial/partnine.md)
+   + [&#x200B;11. Configurer le graphique à colonnes](ic-web-channel-tutorial/partten.md)
+   + [&#x200B;12. Configurer le graphique en secteurs](ic-web-channel-tutorial/parteleven.md)
+   + [&#x200B;13. Diffuser le document de canal web](ic-web-channel-tutorial/parttwelve.md)
    + [Diffusion par e-mail d’un document de canal web](interactive-communications/delivery-of-web-channel-document-tutorial-use.md)
 
 + Résolution des problèmes {#troubleshooting}

@@ -13,7 +13,7 @@ thumbnail: 3425892.jpeg
 duration: 358
 exl-id: d659fc1e-fb4b-4e15-8167-8b035d92eae1
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '59'
 ht-degree: 100%
 
@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment utiliser les [autorisations personnalisées](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/custom-permissions.html?lang=fr) Cloud Manager dans AEM de gérer stratégiquement l’accès de différentes équipes, en assurant une gestion et un déploiement de projet efficaces et sécurisés.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449806/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3425892/?learn=on)

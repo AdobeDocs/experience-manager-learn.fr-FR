@@ -14,9 +14,9 @@ hidefromtoc: true
 recommendations: noDisplay, noCatalog
 exl-id: 0f74a746-b16e-4b95-97f1-55e3002d7f7f
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '66'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -28,4 +28,4 @@ Découvrez les techniques permettant d’améliorer le LCP (Largest Contentful�
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 saison 3](../cloud5-season-3.md).
+Regardez les vidéos connexes sur la page [Cloud 5 saison 3](../cloud5-season-3.md).

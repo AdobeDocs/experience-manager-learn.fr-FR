@@ -13,7 +13,7 @@ badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 67ccf040-013c-4641-96df-d5e494efdaeb
 duration: 849
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '55'
 ht-degree: 100%
 
@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Lancez les flux Power Automate lors d’un envoi de formulaire adaptatif. La vidéo suivante montre les étapes nécessaires à la configuration et à l’intégration de Forms CS à Microsoft Power Automate.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412130?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/345675?quality=12&learn=on)

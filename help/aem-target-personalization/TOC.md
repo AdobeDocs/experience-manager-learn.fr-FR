@@ -7,7 +7,7 @@ version: Experience Manager 6.5
 index: y
 jira: KT-2214
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '64'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 # Prise en main d’AEM et de Target {#aem-target-tutorial}
 
-+ [Présentation](./overview.md)
++ [Vue d’ensemble](./overview.md)
 + [Personnalisation à l’aide des fragments d’expérience AEM](./personalization-use-case-1.md)
 + [Personnalisation à l’aide du compositeur d’expérience visuelle](./personalization-use-case-3.md)
 + [Personnalisation des expériences de pages web complètes](./personalization-use-case-2.md)

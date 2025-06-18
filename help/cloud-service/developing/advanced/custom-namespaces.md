@@ -12,7 +12,7 @@ last-substantial-update: 2022-12-14T00:00:00Z
 exl-id: e86ddc9d-ce44-407a-a20c-fb3297bb0eb2
 duration: 496
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Les espaces de noms peuvent être utilisés pour indiquer la portée et l’inte
 
 Les espaces de noms personnalisés sont gérés dans les scripts d’[initialisation du référentiel Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html), et déployés vers AEM as a Cloud Service sous forme de configurations OSGi, puis ajoutés au projet `ui.config` de votre [projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr).
 
->[!VIDEO](https://video.tv.adobe.com/v/3416845?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3412319?quality=12&learn=on)
 
 ## Ressources
 

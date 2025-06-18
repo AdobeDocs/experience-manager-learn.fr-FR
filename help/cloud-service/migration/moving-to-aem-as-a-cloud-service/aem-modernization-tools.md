@@ -11,7 +11,7 @@ thumbnail: 336965.jpeg
 exl-id: 310f492c-0095-4015-81a4-27d76f288138
 duration: 2502
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
 ht-degree: 100%
 
@@ -103,7 +103,7 @@ Assurez-vous également d’avoir terminé l’exercice pratique précédent :
 
 + [Télécharger les outils de modernisation d’AEM](https://github.com/adobe/aem-modernize-tools/releases/latest)
 + [Documentation sur les outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/)
-+ [Astuces AEM - Présentation d’AEM Modernization Suite](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
++ [Astuces AEM - Présentation d’AEM Modernization Suite](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/Introducing-the-AEM-Modernization-Suite.html)
 
 1. Déployez le site wknd-legacy récemment modernisé sur le SDK AEM local. AEM ASK peut être téléchargé ici :
    + [Portail de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).

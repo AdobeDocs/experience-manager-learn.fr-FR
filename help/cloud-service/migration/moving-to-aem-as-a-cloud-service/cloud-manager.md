@@ -11,7 +11,7 @@ thumbnail: 336961.jpeg
 exl-id: 9c641a90-be62-49c1-b8c0-d45d26055b94
 duration: 843
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '137'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Découvrez Cloud Manager pour AEM as a Cloud Service et ses différences avec Cloud Manager pour AEM sur Adobe Manage Services (AMS).
 
->[!VIDEO](https://video.tv.adobe.com/v/3453897?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/336961?quality=12&learn=on)
 
 ## Exercice pratique
 

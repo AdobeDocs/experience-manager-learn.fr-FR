@@ -5,7 +5,7 @@ version: Experience Manager 6.4, Experience Manager 6.5
 doc-type: Feature Video
 duration: 373
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '133'
 ht-degree: 100%
 
@@ -18,10 +18,10 @@ Ces vidéos décrivent les améliorations apportées à la recherche de ressourc
 
 ## Optimisation de la recherche avec les métadonnées de ressource {#search-boost-asset}
 
->[!VIDEO](https://video.tv.adobe.com/v/3410336?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/16766?quality=12&learn=on)
 
 ## Configuration avancée des prédicats de recherche de balises et à plusieurs valeurs {#multi-value-tag-predicates}
 
 Le **prédicat de recherche à plusieurs valeurs** permet une correspondance de texte facile dans les résultats de recherche. Plusieurs améliorations ont également été apportées au prédicat de balise pour un filtrage plus efficace des résultats de la recherche de ressources.
 
->[!VIDEO](https://video.tv.adobe.com/v/39500?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/16457?quality=12&learn=on)

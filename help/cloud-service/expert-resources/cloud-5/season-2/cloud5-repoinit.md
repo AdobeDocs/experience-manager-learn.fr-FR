@@ -10,9 +10,9 @@ recommendations: noDisplay, noCatalog
 exl-id: 6428d1c2-8453-449c-9d57-bb860e2e9c1a
 duration: 310
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '62'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -29,4 +29,4 @@ Prise en main de REPOINIT ou de l’initialiseur du référentiel Sling. Découv
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 saison 2](../cloud5-season-2.md).
+Regardez les vidéos connexes sur la page [Cloud 5 saison 2](../cloud5-season-2.md).

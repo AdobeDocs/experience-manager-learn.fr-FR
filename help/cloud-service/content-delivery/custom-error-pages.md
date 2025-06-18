@@ -13,9 +13,9 @@ jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: c3bfbe59-f540-43f9-81f2-6d7731750fc6
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1657'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -50,13 +50,13 @@ La page d’erreur par défaut _est diffusée_ à partir du _type de service AEM
 
 | Page d’erreur diffusée depuis | Détails |
 |---------------------|:-----------------------:|
-| Type de service AEM : création, publication, prévisualisation | Lorsque la requête de page est diffusée par le type de service AEM et que l’un des scénarios d’erreur ci-dessus se produit, la page d’erreur est diffusée à partir du type de service AEM. Par défaut, la page d’erreur 5XX est remplacée par la page d’erreur du réseau CDN géré par Adobe, sauf si l’en-tête `x-aem-error-pass: true` est défini. |
+| Type de service AEM : création, publication, prévisualisation | Lorsque la demande de page est traitée par le type de service AEM et que l’un des scénarios d’erreur ci-dessus se produit, la page d’erreur est diffusée à partir du type de service AEM. Par défaut, la page d’erreur 5XX est remplacée par la page d’erreur du CDN géré par Adobe, sauf si l’en-tête `x-aem-error-pass: true` est défini. |
 | Réseau CDN géré par Adobe | Lorsque le réseau CDN géré par Adobe _ne peut pas atteindre le type de service AEM_ (serveur d’origine), la page d’erreur est diffusée à partir du réseau CDN géré par Adobe. **C’est un événement improbable mais qui mérite d’être planifié.** |
 
 >[!NOTE]
 >
->Dans AEM as a Cloud Service, le réseau CDN diffuse une page d’erreur générique lorsqu’une erreur 5XX est reçue du serveur principal. Pour permettre au serveur principal de transmettre la réponse, vous devez ajouter l’en-tête suivant à la réponse : `x-aem-error-pass: true`.
->Cela ne fonctionne que pour les réponses provenant d’AEM ou de la couche Apache/Dispatcher. D’autres erreurs inattendues provenant des couches d’infrastructure intermédiaires affichent toujours la page d’erreur générique.
+>Dans AEM as a Cloud Service, le réseau CDN diffuse une page d’erreur générique lorsqu’une erreur 5XX est reçue du serveur principal. Pour permettre au back-end de transmettre la réponse réelle, vous devez ajouter l’en-tête suivant à la réponse : `x-aem-error-pass: true`.
+>>Cela ne fonctionne que pour les réponses provenant d’AEM ou de la couche Apache/Dispatcher. D’autres erreurs inattendues provenant des couches d’infrastructure intermédiaires afficheront toujours la page d’erreur générique.
 
 
 Par exemple, les pages d’erreur par défaut diffusées à partir du type de service AEM et du réseau CDN géré par Adobe sont les suivantes :
@@ -76,7 +76,7 @@ Les options suivantes sont disponibles pour personnaliser les pages d’erreur 
 | Réseau CDN géré par Adobe | Pages d’erreur du réseau CDN | Utilisez les pages d’erreur de réseau CDN pour personnaliser les pages d’erreur lorsque le réseau CDN géré par Adobe ne peut pas atteindre le type de service AEM (serveur d’origine). |
 
 
-## Conditions préalables
+## Prérequis
 
 Dans ce tutoriel, vous apprenez à personnaliser les pages d’erreur à l’aide de la directive _ErrorDocument_, du _gestionnaire de page d’erreur ACS AEM Commons_ et des options _Pages d’erreur du réseau CDN_. Les éléments suivants sont requis afin de réaliser ce tutoriel :
 
@@ -167,7 +167,7 @@ Implémentons les pages d’erreur du réseau CDN pour personnaliser les pages d
 Les étapes détaillées pour mettre en œuvre les pages d’erreur du réseau CDN sont les suivantes :
 
 - Développez un contenu de page d’erreur personnalisé en tant qu’application monopage (SPA).
-- Hébergez les fichiers statiques requis pour la page d’erreur du réseau CDN à un emplacement accessible au public.
+- Hébergez les fichiers statiques requis pour la page d’erreur du CDN à un emplacement accessible au public.
 - Configurez la règle du réseau CDN (errorPages) et référencez les fichiers statiques ci-dessus.
 - Déployez la règle du réseau CDN configurée sur l’environnement AEM as a Cloud Service à l’aide du pipeline Cloud Manager.
 - Testez les pages d’erreur du réseau CDN.
@@ -385,7 +385,7 @@ Enfin, déployez la règle du réseau CDN configurée sur l’environnement AEM�
 
 Pour tester les pages d’erreur CDN, procédez comme suit :
 
-- Dans le navigateur, accédez à l’URL de publication d’AEM as a Cloud Service, ajoutez le `cdnstatus?code=404` à l’URL, par exemple [https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404](https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404) ou accédez à l’aide de l’[URL de domaine personnalisé](https://wknd.enablementadobe.com/cdnstatus?code=404)
+- Dans le navigateur, accédez à l’URL de publication d’AEM as a Cloud Service, ajoutez `cdnstatus?code=404` à l’URL, par exemple [https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404](https://publish-p105881-e991000.adobeaemcloud.com/cdnstatus?code=404) ou accédez à l’aide de l’[URL de domaine personnalisé](https://wknd.enablementadobe.com/cdnstatus?code=404).
 
   ![WKND - Page d’erreur du réseau CDN](./assets/wknd-cdn-error-page.png)
 

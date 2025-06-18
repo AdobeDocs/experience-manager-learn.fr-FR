@@ -9,7 +9,7 @@ level: Intermediate
 exl-id: 2122ab13-f9df-4f36-9c7e-8980033c3b10
 duration: 757
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1991'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Il s’agit d’un tutoriel avancé. Avant de passer à ce chapitre, veuillez vo
 
 La vidéo suivante présente brièvement les modèles de fragment de contenu et la manière dont ils sont utilisés dans ce tutoriel.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449521?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/340037?quality=12&learn=on)
 
 ## Créer des modèles de fragment de contenu {#create-models}
 

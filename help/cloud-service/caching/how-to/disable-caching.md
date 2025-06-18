@@ -13,9 +13,9 @@ thumbnail: KT-14224.jpeg
 exl-id: 22b1869e-5bb5-437d-9cb5-2d27f704c052
 duration: 100
 source-git-commit: cf006f24abbc5aa4b91277b91d68538c41d33e15
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '432'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ Ces en-têtes de cache sont généralement définis dans les configurations vhos
 
 ## Comportement de mise en cache par défaut
 
-La mise en cache des réponses HTTP dans le réseau CDN d’AEM as a Cloud Service est contrôlée par les en-têtes de réponse HTTP suivants à partir du `Cache-Control`, du `Surrogate-Control` ou du `Expires` d’origine.  Les réponses d’origine contenant des `private`, des `no-cache` ou des `no-store` dans `Cache-Control` ne sont pas mises en cache.
+La mise en cache des réponses HTTP dans le CDN d’AEM as a Cloud Service est contrôlée par les en-têtes de réponse HTTP suivants à partir des éléments `Cache-Control`, `Surrogate-Control` ou `Expires` d’origine.  Les réponses d’origine contenant des éléments `private`, `no-cache` ou `no-store` dans `Cache-Control` ne sont pas mises en cache.
 
-Examinez le [ comportement de mise en cache par défaut ](./enable-caching.md#default-caching-behavior) pour l’instance de publication et de création AEM lorsqu’un projet AEM basé sur l’archétype de projet AEM est déployé.
+Examinez le [comportement de mise en cache par défaut](./enable-caching.md#default-caching-behavior) pour l’instance de publication et de création AEM lors du déploiement d’un projet AEM basé sur l’archétype de projet AEM.
 
 
 ## Désactiver la mise en cache

@@ -12,7 +12,7 @@ doc-type: Feature Video
 exl-id: 896d378c-c20e-4343-b592-277f4c71065e
 duration: 269
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '320'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 La vidéo suivante présente les opérations de base lors de l’utilisation de l’environnement de création AEM. Il s’appuie sur la console Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/36990?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
 
 Dans cette vidéo, les fonctionnalités suivantes sont abordées :
 

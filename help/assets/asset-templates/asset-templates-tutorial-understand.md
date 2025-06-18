@@ -10,7 +10,7 @@ doc-type: Tutorial
 exl-id: c418e94a-b18e-429a-b41c-2bf32e158598
 duration: 909
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '482'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Ce tutoriel vidéo vous guide tout au long de la définition d’un fichier d’
 
    * **Cliquez avec le bouton droit** et sélectionnez **Ajuster > Options d’ajustement des cadres... > Ajustement du contenu > Remplir le cadre proportionnellement**.
 
-   [En savoir plus sur les options d’ajustement des cadres](https://helpx.adobe.com/fr/indesign/using/frames-objects.html#fitting_objects_to_frames), et sur celles qui conviennent le mieux à votre cas d’utilisation.
+   [En savoir plus sur les options d’ajustement des cadres](https://helpx.adobe.com/indesign/using/frames-objects.html#fitting_objects_to_frames), et sur celles qui conviennent le mieux à votre cas d’utilisation.
 
 5. Copiez l’en-tête (Logo et Nom de l’entreprise) du Modèle de gabarit dans la page via Coller en place.
 

@@ -10,7 +10,7 @@ doc-type: Technical Video
 exl-id: 569069e8-7964-49f1-96ed-7dfa4f8ed96c
 duration: 511
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '162'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Explorez la configuration et l’utilisation du composant Partage sur les réseaux sociaux.
 
->[!VIDEO](https://video.tv.adobe.com/v/328356?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/18897?quality=12&learn=on)
 
 Cette vidéo explore les fonctionnalités suivantes du composant Partage sur les réseaux sociaux (qui fait partie des [composants principaux d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)) en utilisant l’exemple de site web [We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail#weretail).
 

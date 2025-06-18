@@ -12,7 +12,7 @@ doc-type: Tutorial
 thumbnail: aem-local-dev-env.jpg
 duration: 4537
 source-git-commit: 3ad201aad77e71b42d46d69fdda50bcc77316151
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2408'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ Il est également *essentiel* de tester le code sur une instance de ***Publicati
 ### Étapes
 
 1. Assurez-vous que Java™ est installé.
-   * [Java™ JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14) est conseillé pour AEM 6.5 et versions ultérieures.
+   * [Java™ JDK 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14) est conseillé pour AEM 6.5 et versions ultérieures.
    * [Java™ JDK 8](https://www.oracle.com/java/technologies/downloads/) est adapté aux versions AEM antérieures à AEM 6.5.
 1. Récupérez une copie du fichier [Jar de démarrage rapide et du fichier  [!DNL license.properties]](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=fr).
 1. Créez une structure de dossiers sur votre ordinateur comme suit :
@@ -161,7 +161,7 @@ L’**[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** est l’un des IDE le
 1. Téléchargez et installez [!DNL IntelliJ IDEA] : [https://www.jetbrains.com/idea/download](https://www.jetbrains.com/idea/download).
 1. Installez [!DNL Repo] (outil de ligne de commande) : [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation).
 
->[!VIDEO](https://video.tv.adobe.com/v/39739?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
 
 * 00:00 - Import du projet Maven
 * 05:47 - Création et déploiement du code source avec Maven
@@ -179,7 +179,7 @@ L’**[[!DNL Eclipse] IDE](https://www.eclipse.org/ide/)** est l’un des IDE le
 
 * [**Télécharger**](https://code.visualstudio.com/Download) **Visual Studio Code**
 * **[repo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#integration-into-visual-studio-code)** : outil de type FTP pour le contenu JCR.
-* **[Synchroniser AEM](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** : l’extension &#42; prise en charge par la communauté pour Visual Studio Code.
+* **[AEM Sync](https://marketplace.visualstudio.com/items?itemName=Yinkai15.aemsync)** : l’extension &#42; prise en charge par la communauté pour Visual Studio Code.
 * **[Projet WKND](https://github.com/adobe/aem-guides-wknd)** - Exemple de projet AEM présenté dans cette vidéo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25907?quality=12&learn=on)

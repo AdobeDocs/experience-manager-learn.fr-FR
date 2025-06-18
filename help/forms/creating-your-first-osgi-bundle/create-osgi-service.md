@@ -10,7 +10,7 @@ exl-id: 2f15782e-b60d-40c6-b95b-6c7aa8290691
 last-substantial-update: 2021-04-23T00:00:00Z
 duration: 87
 source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
 ht-degree: 100%
 
@@ -80,7 +80,7 @@ public class MyfirstInterfaceImpl implements MyfirstInterface {
 
 L’annotation `@Component(...)` sur la ligne 10 marque cette classe Java en tant que composant OSGi et l’enregistre en tant que service OSGi.
 
-L’annotation `@Reference` fait partie des services déclaratifs OSGi et est utilisée pour injecter une référence du service [Outputservice](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) dans la variable `outputService`.
+L’annotation `@Reference` fait partie des services déclaratifs OSGi et est utilisée pour injecter une référence du service [Outputservice](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html?com/adobe/fd/output/api/OutputService.html) dans la variable `outputService`.
 
 
 ## Créer et déployer le lot

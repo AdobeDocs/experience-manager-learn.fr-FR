@@ -11,7 +11,7 @@ doc-type: Article
 exl-id: 7fe1b4a5-6813-4ece-b3da-40af575ea0ed
 duration: 229
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '796'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Exemple d’entrée de journal :
 
 ```
 Fri Jul 20 03:35:09 2018 W pid 8300 (tid 139937910880384) /etc/httpd/conf/publish-filters.any:5: Allowing requests with globs is considered unsafe.
-Please consult the documentation at 'https://www.adobe.com/go/docs_dispatcher_config_fr' on how to use attributes 
+Please consult the documentation at 'https://www.adobe.com/go/docs_dispatcher_config_en' on how to use attributes 
 method/url/query/protocol/path/selectors/extension/suffix instead.
 ```
 

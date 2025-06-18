@@ -9,7 +9,7 @@ feature-set: Experience Manager Assets
 feature: Assets Essentials
 team: TM
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '69'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ ht-degree: 100%
    + [Collaborer](basics/collaborating.md)
    + [Partage de liens](basics/link-sharing.md)
    + [Rapports](basics/reports.md)
-+ Configurer{#configuring}
++ Configuration{#configuring}
    + [Mon espace de travail](configuring/my-workspace.md)
    + [Formulaires de métadonnées](configuring/metadata-forms.md)
    + [Gestion des autorisations](configuring/permissions-management.md)
@@ -38,9 +38,9 @@ ht-degree: 100%
 
 + [Intégration de Creative Cloud](integrations/creative-cloud.md)
 
-+ Intégration d’Adobe Workfront{#workfront}
++ Intégration à Adobe Workfront{#workfront}
    + [Vue d’ensemble](./integrations/workfront/overview.md)
-   + [Configurer](./integrations/workfront/configure.md)
+   + [Configuration](./integrations/workfront/configure.md)
    + [Mappage des métadonnées](./integrations/workfront/map-metadata.md)
    + [Envoi de documents et liaison de ressources](./integrations/workfront/link-send.md)
    + [Historique des versions](./integrations/workfront/versions.md)

@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: 1df0ffd7-fe22-4eef-9428-b228ed0dcf31
 duration: 94
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '26'
 ht-degree: 100%
 
@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez les rendus dans AEM Assets et comment les prévisualiser.
 
->[!VIDEO](https://video.tv.adobe.com/v/36959?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/32047?quality=12&learn=on)

@@ -11,7 +11,7 @@ thumbnail: 336956.jpeg
 exl-id: d8c044a1-a208-411c-b66f-ce5b0b3a5e2c
 duration: 1016
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '39'
 ht-degree: 100%
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez comment aborder les implémentations d’AEM as a Cloud Service sous un angle différent.
 
->[!VIDEO](https://video.tv.adobe.com/v/3454308?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/336956?quality=12&learn=on)

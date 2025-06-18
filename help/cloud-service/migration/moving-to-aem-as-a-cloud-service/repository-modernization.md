@@ -11,7 +11,7 @@ thumbnail: 336958.jpeg
 exl-id: e9bd9035-1f2d-4a34-a581-9c1ec2c7bc04
 duration: 1305
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Découvrez la modernisation du référentiel, le contenu modifiable et non modifiable, la structure du package et l’outil d’interface de ligne de commande de modernisation du référentiel.
 
->[!VIDEO](https://video.tv.adobe.com/v/3454794?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/336958?quality=12&learn=on)
 
 ## Outil de modernisation du référentiel (Repository Modernizer)
 

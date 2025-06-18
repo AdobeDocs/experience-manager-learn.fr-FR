@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: 6dc66195-f438-4366-a5e2-486145e4b6d7
 duration: 400
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '128'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 AEM Sites propose plusieurs options pour publier et annuler la publication de contenu. Cette vidéo présente les différentes méthodes et leurs fonctionnalités.
 
->[!VIDEO](https://video.tv.adobe.com/v/36711?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/32193?quality=12&learn=on)
 
 AEM Sites fournit plusieurs méthodes pour publier et annuler la publication de contenu, en fonction du workflow de l’auteur ou de l’autrice.
 

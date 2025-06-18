@@ -1,5 +1,5 @@
 ---
-title: Développement d’un bloc avec CSS et JS
+title: Développer un bloc avec CSS et JS
 description: Développez un bloc avec CSS et JavaScript pour Edge Delivery Services, modifiable à l’aide de l’éditeur universel.
 version: Experience Manager as a Cloud Service
 feature: Edge Delivery Services
@@ -11,41 +11,41 @@ jira: KT-15832
 duration: 900
 exl-id: 41c4cfcf-0813-46b7-bca0-7c13de31a20e
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '772'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Développement d’un bloc avec CSS et JavaScript
+# Développer un bloc avec CSS et JavaScript
 
-Dans le [chapitre précédent](./7b-block-js-css.md), la mise en forme d’un bloc à l’aide uniquement de CSS est abordée. Désormais, le focus se déplace vers le développement d’un bloc avec JavaScript et CSS.
+Dans le [chapitre précédent](./7b-block-js-css.md), la mise en forme d’un bloc à l’aide de CSS uniquement a été abordée. Désormais, nous nous concentrons sur le développement d’un bloc avec JavaScript et CSS.
 
-Cet exemple montre comment améliorer un bloc de trois façons :
+Cet exemple montre comment améliorer un bloc de trois façons :
 
 1. Ajout de classes CSS personnalisées.
 1. Utilisation d’écouteurs d’événement pour ajouter du mouvement.
 1. Gestion des conditions générales qui peuvent éventuellement être incluses dans le texte du teaser.
 
-## Cas d’utilisation courants :
+## Cas d’utilisation courants
 
-Cette approche est particulièrement utile dans les scénarios suivants :
+Cette approche est particulièrement utile dans les scénarios suivants :
 
-- **Gestion CSS externe :** lorsque le fichier CSS du bloc est géré en dehors de Edge Delivery Services et ne s’aligne pas sur sa structure HTML.
-- **Attributs supplémentaires :** lorsque des attributs supplémentaires, tels que [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) pour l’accessibilité ou [microdonnées](https://developer.mozilla.org/fr/docs/Web/HTML/Microdata), sont requis.
-- **Améliorations de JavaScript :** lorsque des fonctions interactives, telles que des écouteurs d’événement, sont nécessaires.
+- **Gestion CSS externe :** lorsque le fichier CSS du bloc est géré en dehors d’Edge Delivery Services et ne s’aligne pas sur sa structure HTML.
+- **Attributs supplémentaires :** lorsque des attributs supplémentaires, comme [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) pour l’accessibilité ou [microdonnées](https://developer.mozilla.org/fr/docs/Web/HTML/Microdata), sont requis.
+- **Améliorations de JavaScript :** lorsque des fonctions interactives, comme des écouteurs d’événement, sont nécessaires.
 
-Cette méthode repose sur la manipulation DOM JavaScript native du navigateur, mais requiert de la prudence lors de la modification du DOM, en particulier lors du déplacement d’éléments. Ces modifications peuvent perturber l’expérience de création de l’éditeur universel. Idéalement, le [modèle de contenu](./5-new-block.md#block-model) du bloc doit être soigneusement conçu pour minimiser le besoin de modifications DOM importantes.
+Cette méthode repose sur la manipulation DOM JavaScript native du navigateur, mais requiert de la prudence lors de la modification du DOM, en particulier lors du déplacement d’éléments. Ces modifications peuvent perturber l’expérience de création de l’éditeur universel. Idéalement, le [modèle de contenu](./5-new-block.md#block-model) du bloc doit être soigneusement conçu pour réduire le besoin de modifications DOM importantes.
 
-## Bloquer HTML
+## HTML de bloc
 
-Pour aborder le développement par blocs, commencez par examiner le DOM exposé par Edge Delivery Services. La structure est améliorée avec JavaScript et stylisée avec CSS.
+Pour aborder le développement de blocs, commencez par examiner le DOM fourni par Edge Delivery Services. La structure est améliorée avec JavaScript et stylisée avec CSS.
 
 >[!BEGINTABS]
 
->[!TAB DOM à décorer]
+>[!TAB DOM à mettre en forme]
 
-Voici le DOM du bloc de teaser qui est la cible de la décoration à l’aide de JavaScript et CSS.
+Voici le DOM du bloc de teaser qui est la cible de la mise en forme à l’aide de JavaScript et CSS.
 
 ```html
 ...
@@ -81,28 +81,28 @@ Voici le DOM du bloc de teaser qui est la cible de la décoration à l’aide de
 ...
 ```
 
->[!TAB Comment trouver le DOM ]
+>[!TAB Comment trouver le DOM]
 
-Pour trouver le DOM à décorer, ouvrez la page avec le bloc non décoré dans votre environnement de développement local, sélectionnez le bloc et inspectez le DOM.
+Pour trouver le DOM à décorer, ouvrez la page avec le bloc non mis en forme dans votre environnement de développement local, sélectionnez le bloc et inspectez le DOM.
 
 ![Inspecter le DOM du bloc](./assets/7a-block-css/inspect-block-dom.png)
 
 >[!ENDTABS]
 
 
-## Bloquer le JavaScript
+## JavaScript de bloc
 
 Pour ajouter la fonctionnalité JavaScript à un bloc, créez un fichier JavaScript dans le répertoire du bloc portant le même nom que le bloc, par exemple `/blocks/teaser/teaser.js`.
 
-Le fichier JavaScript doit exporter une fonction par défaut :
+Le fichier JavaScript doit exporter une fonction par défaut :
 
 ```javascript
 export default function decorate(block) { ... }
 ```
 
-La fonction par défaut prend l’élément/l’arborescence DOM représentant le bloc dans l’HTML Edge Delivery Services et contient le JavaScript personnalisé exécuté lors du rendu du bloc.
+La fonction par défaut prend l’élément/l’arborescence DOM représentant le bloc dans l’HTML d’Edge Delivery Services et contient le JavaScript personnalisé exécuté lors du rendu du bloc.
 
-Cet exemple de JavaScript effectue trois actions principales :
+Cet exemple de JavaScript effectue trois actions principales :
 
 1. Ajoute un écouteur d’événement au bouton CTA, avec un zoom sur l’image au survol.
 1. Ajoute des classes CSS sémantiques aux éléments du bloc, ce qui est utile lors de l’intégration de systèmes de conception CSS existants.
@@ -171,15 +171,15 @@ export default function decorate(block) {
 }
 ```
 
-## Bloquer CSS
+## CSS de bloc
 
-Si vous avez créé un `teaser.css` dans le [chapitre précédent](./7a-block-css.md) supprimez-le ou renommez-le en `teaser.css.bak`, car ce chapitre implémente un CSS différent pour le bloc de teaser.
+Si vous avez créé un élément `teaser.css` dans le [chapitre précédent](./7a-block-css.md) supprimez-le ou renommez-le en `teaser.css.bak`, car ce chapitre implémente un CSS différent pour le bloc de teaser.
 
 Créez un fichier `teaser.css` dans le dossier du bloc. Ce fichier contient le code CSS qui définit le style du bloc. Ce code CSS cible les éléments du bloc et les classes CSS sémantiques spécifiques ajoutées par le JavaScript dans `teaser.js`.
 
-Les éléments nus peuvent toujours être stylisés directement ou avec les classes CSS appliquées personnalisées. Pour les blocs plus complexes, l’application de classes CSS sémantiques peut rendre le CSS plus compréhensible et gérable, en particulier lorsque vous travaillez avec de plus grandes équipes sur de plus longues périodes.
+Les éléments nus peuvent toujours être stylisés directement ou avec les classes CSS personnalisées appliquées. Pour les blocs plus complexes, l’application de classes CSS sémantiques peut rendre le CSS plus compréhensible et gérable, en particulier lorsque vous travaillez avec de grandes équipes sur de longues périodes.
 
-[Comme auparavant](./7a-block-css.md#develop-a-block-with-css), définissez la portée du CSS à `.block.teaser` à l’aide de l’[imbrication CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting) pour éviter tout conflit avec d’autres blocs.
+[Comme auparavant](./7a-block-css.md#develop-a-block-with-css), définissez la portée du CSS sur `.block.teaser` à l’aide de l’[imbrication CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting) pour éviter tout conflit avec d’autres blocs.
 
 [!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
@@ -296,9 +296,9 @@ Les éléments nus peuvent toujours être stylisés directement ou avec les clas
 
 ## Ajouter des conditions générales
 
-L’implémentation ci-dessus ajoute la prise en charge du style spécial des paragraphes commençant par le `Terms and conditions:` de texte. Pour valider cette fonctionnalité, dans l’éditeur universel, mettez à jour le contenu textuel du bloc de teaser afin d’inclure des termes et conditions.
+L’implémentation ci-dessus ajoute la prise en charge du style spécial des paragraphes commençant par le texte `Terms and conditions:`. Pour valider cette fonctionnalité, dans l’éditeur universel, mettez à jour le contenu textuel du bloc de teaser afin d’inclure des conditions générales.
 
-Suivez les étapes du paragraphe [créer un bloc](./6-author-block.md) et modifiez le texte pour inclure un **termes et conditions** à la fin :
+Suivez les étapes de l’article [Créer un bloc](./6-author-block.md) et modifiez le texte pour inclure un paragraphe **Conditions générales** à la fin :
 
 ```
 WKND Adventures
@@ -308,17 +308,17 @@ Join us on one of our next adventures. Browse our list of curated experiences an
 Terms and conditions: By signing up, you agree to the rules for participation and booking.
 ```
 
-Vérifiez que le paragraphe est rendu avec le style des termes et conditions dans l’environnement de développement local. N’oubliez pas que ces modifications de code ne sont pas répercutées dans l’éditeur universel tant qu’elles ne sont pas [transmises à une branche sur GitHub](#preview-in-universal-editor) que l’éditeur universel n’a pas été configuré pour utiliser.
+Vérifiez que le paragraphe est rendu avec le style des conditions générales dans l’environnement de développement local. N’oubliez pas que ces modifications de code ne sont pas répercutées dans l’éditeur universel tant qu’elles ne sont pas [transmises à une branche sur GitHub](#preview-in-universal-editor) que l’éditeur universel a été configuré pour utiliser.
 
 ## Aperçu du développement
 
-À mesure que les feuilles CSS et JavaScript sont ajoutées, l’environnement de développement local de l’interface de ligne de commande d’AEM recharge à chaud les modifications, ce qui permet une visualisation rapide et facile de l’impact du code sur le bloc. Pointez sur le CTA et vérifiez que l’image du teaser effectue un zoom avant et arrière.
+À mesure que les codes CSS et JavaScript sont ajoutés, l’environnement de développement local de l’interface de ligne de commande d’AEM recharge à chaud les modifications, ce qui permet une visualisation rapide et facile de l’impact du code sur le bloc. Pointez sur le CTA et vérifiez que l’image du teaser effectue un zoom avant et arrière.
 
 ![Aperçu du développement local du teaser à l’aide de CSS et JS](./assets/7b-block-js-css/local-development-preview.png)
 
-## Étiqueter votre code
+## Appliquer lint à votre code
 
-Veillez à [peindre fréquemment](./3-local-development-environment.md#linting) vos modifications de code pour le garder propre et cohérent. Une liaison régulière permet de détecter les problèmes tôt, ce qui réduit le temps de développement global. N’oubliez pas que vous ne pouvez pas fusionner votre travail de développement dans la branche `main` tant que tous les problèmes de liaison ne sont pas résolus.
+Veillez à [appliquer lint fréquemment](./3-local-development-environment.md#linting) à vos modifications de code pour qu’elles restent claires et cohérentes. Une application régulière de lint permet de détecter les problèmes tôt, ce qui réduit le temps de développement global. N’oubliez pas que vous ne pouvez pas fusionner votre travail de développement dans la branche `main` tant que tous les problèmes de lint ne sont pas résolus.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -340,4 +340,4 @@ $ git push origin teaser
 
 Vous pouvez désormais prévisualiser les modifications dans l’éditeur universel lorsque vous ajoutez le paramètre de requête `?ref=teaser`.
 
-![ Teaser dans l’éditeur universel ](./assets/7b-block-js-css/universal-editor-preview.png)
+![Teaser dans l’éditeur universel](./assets/7b-block-js-css/universal-editor-preview.png)

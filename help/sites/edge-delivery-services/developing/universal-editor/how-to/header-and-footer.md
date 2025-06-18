@@ -11,24 +11,24 @@ jira: KT-17470
 duration: 300
 exl-id: 70ed4362-d4f1-4223-8528-314b2bf06c7c
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1207'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Développer un en-tête et un pied de page
 
-![ En-tête et pied de page ](./assets/header-and-footer/hero.png){align="center"}
+![En-tête et pied de page](./assets/header-and-footer/hero.png){align="center"}
 
-Les en-têtes et pieds de page jouent un rôle unique dans Edge Delivery Services (EDS), car ils sont directement liés aux éléments de `<header>` et de `<footer>` HTML. Contrairement au contenu standard des pages, elles sont gérées séparément et peuvent être mises à jour indépendamment sans avoir à purger l’intégralité du cache de page. Bien que leur implémentation réside dans le projet de code sous la forme de blocs sous `blocks/header` et `blocks/footer`, les auteurs peuvent modifier leur contenu par le biais de pages AEM dédiées qui peuvent contenir n’importe quelle combinaison de blocs.
+Les en-têtes et pieds de page jouent un rôle unique dans Edge Delivery Services (EDS), car ils sont directement liés aux éléments HTML `<header>` et `<footer>`. Contrairement au contenu standard des pages, ils sont gérés séparément et peuvent être mis à jour indépendamment sans avoir à purger l’intégralité du cache de page. Bien que leur implémentation réside dans le projet de code sous la forme de blocs sous `blocks/header` et `blocks/footer`, les personnes chargées de la création peuvent modifier leur contenu par le biais de pages AEM dédiées qui peuvent contenir n’importe quelle combinaison de blocs.
 
 ## Bloc d’en-tête
 
 ![Bloc d’en-tête](./assets/header-and-footer/header-local-development-preview.png){align="center"}
 
-L’en-tête est un bloc spécial lié à l’élément de `<header>` Edge Delivery Services HTML.
-L’élément `<header>` est livré vide et renseigné via XHR (AJAX) sur une page AEM distincte.
+L’en-tête est un bloc spécial lié à l’élément HTML `<header>` Edge Delivery Services.
+L’élément `<header>` est diffusé vide et renseigné via XHR (AJAX) sur une page AEM distincte.
 Cela permet de gérer l’en-tête indépendamment du contenu de la page et de le mettre à jour sans avoir à purger entièrement le cache de toutes les pages.
 
 Le bloc d’en-tête est chargé de demander le fragment de page AEM contenant le contenu de l’en-tête et d’en effectuer le rendu dans l’élément `<header>`.
@@ -58,45 +58,45 @@ export default async function decorate(block) {
 }
 ```
 
-La fonction `loadFragment()` effectue une requête XHR (AJAX) à `${navPath}.plain.html` qui renvoie un rendu EDS HTML de l’HTML de la page AEM qui existe dans la balise `<main>` de la page, traite son contenu avec les blocs qu’il peut contenir et renvoie l’arborescence DOM mise à jour.
+La fonction `loadFragment()` effectue une requête XHR (AJAX) à `${navPath}.plain.html` qui renvoie un rendu EDS HTML du code HTML de la page AEM qui existe dans la balise `<main>` de la page, traite son contenu avec les blocs qui peuvent s’y trouver et renvoie l’arborescence DOM mise à jour.
 
 ## Créer la page d’en-tête
 
-Avant de développer le bloc d’en-tête, vous devez d’abord créer son contenu dans l’éditeur universel pour disposer de quelque chose en fonction duquel le développer.
+Avant de développer le bloc d’en-tête, vous devez d’abord créer son contenu dans l’éditeur universel pour disposer d’une base en fonction de laquelle effectuer le développement.
 
 Le contenu de l’en-tête réside dans une page AEM dédiée nommée `nav`.
 
-![ Page d’en-tête par défaut ](./assets/header-and-footer/header-page.png){align="center"}
+![Page d’en-tête par défaut](./assets/header-and-footer/header-page.png){align="center"}
 
-Pour créer l’en-tête :
+Pour créer l’en-tête, procédez comme suit :
 
 1. Ouvrez la page `nav` dans l’éditeur universel.
-1. Remplacez le bouton par défaut par un **bloc Image** contenant le logo WKND
-1. Mettez à jour le menu de navigation dans le **bloc de texte** en :
+1. Remplacez le bouton par défaut par un **bloc Image** contenant le logo WKND.
+1. Mettez à jour le menu de navigation dans le **bloc de texte** de la manière suivante :
    - Ajout des liens de navigation souhaités
    - Création d’éléments de sous-navigation si nécessaire
    - Définition de tous les liens vers la page d’accueil (`/`) pour l’instant
 
-![Bloc d’en-tête Auteur dans l’éditeur universel](./assets/header-and-footer/header-author.png){align="center"}
+![Création de bloc d’en-tête dans l’éditeur universel](./assets/header-and-footer/header-author.png){align="center"}
 
-### Publier pour prévisualisation
+### Publier en prévisualisation
 
-Avec la page d’en-tête mise à jour, [publiez la page à prévisualiser](../6-author-block.md).
+Avec la page d’en-tête mise à jour, [publiez la page en prévisualisation](../6-author-block.md).
 
 Comme le contenu de l’en-tête réside sur sa propre page (la page `nav`), vous devez publier cette page spécifiquement pour que les modifications d’en-tête prennent effet. La publication d’autres pages qui utilisent l’en-tête ne met pas à jour le contenu de l’en-tête sur Edge Delivery Services.
 
-## Bloquer HTML
+## HTML de bloc
 
-Pour commencer le développement par blocs, commencez par examiner la structure DOM exposée par l’aperçu Edge Delivery Services. Le modèle DOM a été amélioré avec JavaScript et stylisé avec CSS, ce qui fournit la base pour créer et personnaliser le bloc.
+Pour commencer le développement de blocs, commencez par examiner la structure DOM exposée par la prévisualisation Edge Delivery Services. Le modèle DOM a été amélioré avec JavaScript et stylisé avec CSS, ce qui fournit la base pour créer et personnaliser le bloc.
 
-Comme l’en-tête est chargé en tant que fragment, nous devons examiner l’HTML renvoyée par la requête XHR une fois qu’elle a été injectée dans le DOM et décorée via `loadFragment()`. Pour ce faire, inspectez le DOM dans les outils de développement du navigateur.
+Comme l’en-tête est chargé en tant que fragment, nous devons examiner le code HTML renvoyé par la requête XHR une fois l’injection dans le DOM et la mise en forme effectuées via `loadFragment()`. Pour ce faire, inspectez le DOM dans les outils de développement du navigateur.
 
 
 >[!BEGINTABS]
 
->[!TAB DOM à décorer]
+>[!TAB DOM à mettre en forme]
 
-Voici l’HTML de la page d’en-tête après son chargement à l’aide du `header.js` fourni et son injection dans le DOM :
+Voici le code HTML de la page d’en-tête après son chargement à l’aide de l’élément `header.js` fourni et son injection dans le DOM :
 
 ```html
 <header class="header-wrapper">
@@ -139,7 +139,7 @@ Voici l’HTML de la page d’en-tête après son chargement à l’aide du `hea
 </header>
 ```
 
->[!TAB Comment trouver le DOM ]
+>[!TAB Comment trouver le DOM]
 
 Pour rechercher et examiner l’élément `<header>` de la page dans les outils de développement du navigateur web.
 
@@ -148,9 +148,9 @@ Pour rechercher et examiner l’élément `<header>` de la page dans les outils 
 >[!ENDTABS]
 
 
-## Bloquer le JavaScript
+## JavaScript de bloc
 
-Le fichier `/blocks/header/header.js` du modèle de projet [AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk) fournit JavaScript pour la navigation, notamment des menus déroulants et un affichage mobile réactif.
+Le fichier `/blocks/header/header.js` du [modèle de projet AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk) fournit le code JavaScript pour la navigation, notamment des menus déroulants et un affichage mobile réactif.
 
 Bien que le script `header.js` soit souvent fortement personnalisé pour correspondre à la conception d’un site, il est essentiel de conserver les premières lignes dans `decorate()`, qui récupèrent et traitent le fragment de page d’en-tête.
 
@@ -169,19 +169,19 @@ Le code restant peut être modifié en fonction des besoins de votre projet.
 
 Selon les exigences de l’en-tête, le code standard peut être ajusté ou supprimé. Dans ce tutoriel, nous utiliserons le code fourni et l’améliorerons en ajoutant un lien hypertexte autour de la première image créée, afin de la lier à la page d’accueil du site.
 
-Le code du modèle traite le fragment de page d’en-tête, en supposant qu’il se compose de trois sections dans l’ordre suivant :
+Le code du modèle traite le fragment de page d’en-tête, en supposant qu’il se compose de trois sections dans l’ordre suivant :
 
-1. **Section Marque** - Contient le logo et est mis en forme avec la classe `.nav-brand`.
-2. **Section des sections** - Définit le menu principal du site et est stylisé avec des `.nav-sections`.
-3. **Section Outils** - Inclut des éléments tels que la recherche, la connexion/déconnexion et le profil, stylisés avec des `.nav-tools`.
+1. **Section Marque** – Contient le logo et est mise en forme avec la classe `.nav-brand`.
+2. **Section Sections** – Définit le menu principal du site et est mise en forme avec `.nav-sections`.
+3. **Section Outils** – Inclut des éléments tels que la recherche, la connexion/déconnexion et le profil, mise en forme avec `.nav-tools`.
 
-Pour créer un lien hypertexte entre l’image du logo et la page d’accueil, nous mettons à jour le bloc JavaScript comme suit :
+Pour créer un lien hypertexte entre l’image du logo et la page d’accueil, nous mettons à jour le bloc JavaScript comme suit :
 
 >[!BEGINTABS]
 
 >[!TAB JavaScript mis à jour]
 
-Le code mis à jour enveloppant l’image de logo avec un lien vers la page d’accueil du site (`/`) est illustré ci-dessous :
+Le code mis à jour enveloppant l’image de logo avec un lien vers la page d’accueil du site (`/`) est illustré ci-dessous :
 
 [!BADGE /blocks/header/header.js]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
@@ -216,7 +216,7 @@ export default async function decorate(block) {
 
 >[!TAB JavaScript original]
 
-Voici le `header.js` d’origine généré à partir du modèle :
+Voici le `header.js` d’origine généré à partir du modèle :
 
 [!BADGE /blocks/header/header.js]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
@@ -250,13 +250,13 @@ export default async function decorate(block) {
 >[!ENDTABS]
 
 
-## Bloquer CSS
+## CSS de bloc
 
 Mettez à jour le `/blocks/header/header.css` pour le mettre en forme en fonction de la marque WKND.
 
-Nous allons ajouter le CSS personnalisé au bas de la `header.css` pour faciliter la visualisation et la compréhension des modifications du tutoriel. Bien que ces styles puissent être directement intégrés dans les règles CSS du modèle, leur séparation permet d’illustrer ce qui a été modifié.
+Nous allons ajouter le CSS personnalisé au bas du `header.css` pour faciliter la visualisation et la compréhension des modifications du tutoriel. Bien que ces styles puissent être directement intégrés dans les règles CSS du modèle, leur séparation permet d’illustrer ce qui a été modifié.
 
-Puisque nous ajoutons nos nouvelles règles après le jeu d’origine, nous les encapsulerons avec un sélecteur CSS `header .header.block nav` pour nous assurer qu’elles ont priorité sur les règles de modèle.
+Puisque nous ajoutons nos nouvelles règles après le jeu d’origine, nous les encapsulerons avec un sélecteur CSS `header .header.block nav` pour nous assurer qu’elles sont prioritaires sur les règles de modèle.
 
 [!BADGE /blocks/header/header.css]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
@@ -322,13 +322,13 @@ header .header.block nav {
 
 ## Aperçu du développement
 
-Au fur et à mesure du développement du CSS et du JavaScript, l’environnement de développement local de l’interface de ligne de commande d’AEM recharge à chaud les modifications, ce qui permet une visualisation rapide et facile de l’impact du code sur le bloc. Pointez sur le CTA et vérifiez que l’image du teaser effectue un zoom avant et arrière.
+Au fur et à mesure du développement du code CSS et JavaScript, l’environnement de développement local de l’interface de ligne de commande AEM recharge à chaud les modifications, ce qui permet une visualisation rapide et facile de l’impact du code sur le bloc. Pointez sur le CTA et vérifiez que l’image du teaser effectue un zoom avant et arrière.
 
-![Aperçu du développement local de l’en-tête à l’aide de CSS et JS](./assets/header-and-footer/header-local-development-preview.png){align="center"}
+![Prévisualisation du développement local de l’en-tête à l’aide de CSS et JS](./assets/header-and-footer/header-local-development-preview.png){align="center"}
 
-## Étiqueter votre code
+## Appliquer lint à votre code
 
-Veillez à [peindre fréquemment](../3-local-development-environment.md#linting) vos modifications de code pour le garder propre et cohérent. Une liaison régulière permet de détecter les problèmes tôt, ce qui réduit le temps de développement global. N’oubliez pas que vous ne pouvez pas fusionner votre travail de développement dans la branche `main` tant que tous les problèmes de liaison ne sont pas résolus.
+Veillez à [appliquer lint fréquemment](../3-local-development-environment.md#linting) à vos modifications de code afin qu’elles soient claires et cohérentes. Une application régulière de lint permet de détecter les problèmes tôt, ce qui réduit le temps de développement global. N’oubliez pas que vous ne pouvez pas fusionner votre travail de développement avec la branche `main` tant que tous les problèmes de linting ne sont pas résolus.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -355,35 +355,35 @@ Désormais, les modifications sont visibles dans l’éditeur universel lors de 
 
 ## Pied de page
 
-Comme l’en-tête, le contenu du pied de page est créé sur une page AEM dédiée, dans ce cas la page Pied de page (`footer`). Le pied de page suit le même modèle de chargement en tant que fragment et est décoré avec des éléments CSS et JavaScript.
+Comme l’en-tête, le contenu du pied de page est créé sur une page AEM dédiée, dans ce cas la page Pied de page (`footer`). Le pied de page suit le même modèle de chargement en tant que fragment et est mis en forme avec des éléments CSS et JavaScript.
 
 >[!BEGINTABS]
 
 >[!TAB Pied de page]
 
-Le pied de page doit être implémenté avec une disposition à trois colonnes contenant les éléments suivants :
+Le pied de page doit être implémenté avec une disposition à trois colonnes contenant les éléments suivants :
 
 - Une colonne de gauche avec une promotion (image et texte)
 - Une colonne centrale avec des liens de navigation
 - Une colonne de droite avec des liens vers les médias sociaux
-- Une ligne en bas couvrant les trois colonnes avec le copyright
+- Une ligne en bas couvrant la largeur des trois colonnes avec le copyright
 
-![Aperçu du pied de page](./assets/header-and-footer/footer-preview.png){align="center"}
+![Prévisualisations du pied de page](./assets/header-and-footer/footer-preview.png){align="center"}
 
->[!TAB Contenu du pied de page ]
+>[!TAB Contenu du pied de page]
 
-Utilisez le bloc Colonnes de la page Pied de page pour créer l’effet à trois colonnes.
+Utilisez le bloc Colonnes de la page Pied de page pour créer l’effet à trois colonnes.
 
-| Colonne 1 | Colonne 2 | Colonne 3 |
+| Colonne 1 | Colonne 2 | Colonne 3 |
 | ---------|----------------|---------------|
-| Image | En-tête 3 | En-tête 3 |
+| Image | En-tête 3 | En-tête 3 |
 | Texte | Liste des liens | Liste des liens |
 
 ![En-tête DOM](./assets/header-and-footer/footer-author.png){align="center"}
 
->[!TAB Code du pied de page]
+>[!TAB Code de pied de page]
 
-Le code CSS ci-dessous définit le style du bloc de pied de page avec une disposition à trois colonnes, un espacement cohérent et une typographie. L’implémentation du pied de page utilise uniquement le JavaScript fourni par le modèle.
+Le code CSS ci-dessous définit le style du bloc de pied de page avec une disposition à trois colonnes, un espacement cohérent et une typographie. L’implémentation du pied de page utilise uniquement le JavaScript fourni par le modèle.
 
 [!BADGE /blocks/footer/footer.css]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
@@ -462,12 +462,12 @@ footer {
 
 ## Félicitations.
 
-Vous avez maintenant exploré la manière dont les en-têtes et pieds de page sont gérés et développés dans Edge Delivery Services et l’éditeur universel. Vous avez appris comment ils sont :
+Vous avez maintenant exploré la manière dont les en-têtes et pieds de page sont gérés et développés dans Edge Delivery Services et l’éditeur universel. Vous avez appris comment ils sont :
 
-- Créés sur des pages AEM dédiées séparément du contenu principal.
-- Chargement asynchrone en tant que fragments pour activer les mises à jour indépendantes
-- JavaScript et CSS pour des expériences de navigation réactives
-- Intégration transparente à l’éditeur universel pour une gestion de contenu facile
+- créés sur des pages AEM dédiées séparément du contenu principal ;
+- chargés de manière asynchrone en tant que fragments pour activer les mises à jour indépendantes ;
+- mis en forme avec du code JavaScript et CSS pour des expériences de navigation réactive ;
+- intégrés de manière transparente à l’éditeur universel pour une gestion de contenu facile.
 
 Ce modèle offre une approche flexible et gérable pour la mise en œuvre de composants de navigation à l’échelle du site.
 

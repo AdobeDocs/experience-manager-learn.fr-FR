@@ -13,7 +13,7 @@ jira: KT-15053
 thumbnail: 3427620.jpeg
 exl-id: ac482951-9941-4c14-95b2-29d274fa610e
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
 ht-degree: 100%
 
@@ -23,13 +23,13 @@ ht-degree: 100%
 
 Partie 1 : ajouter des titres, des images, des champs de texte et des champs de date
 
->[!VIDEO](https://video.tv.adobe.com/v/3439728/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3427620/?learn=on)
 
 Partie 2 : ajouter et créer des objets personnalisés et des fragments de formulaire
 
->[!VIDEO](https://video.tv.adobe.com/v/3439583/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3427621/?learn=on)
 
 Accéder au contenu d’aide
 
->[!VIDEO](https://video.tv.adobe.com/v/3437234/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3427622/?learn=on)
 

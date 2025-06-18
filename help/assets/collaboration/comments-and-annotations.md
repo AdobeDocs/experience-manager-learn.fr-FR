@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: c3b4366b-cbb2-48d6-b101-78effb35130d
 duration: 81
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '36'
 ht-degree: 100%
 
@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment utiliser les commentaires et les annotations dans AEM pour communiquer et collaborer sur des ressources.
 
->[!VIDEO](https://video.tv.adobe.com/v/36913?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/32049?quality=12&learn=on)

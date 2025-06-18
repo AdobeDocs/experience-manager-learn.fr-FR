@@ -11,7 +11,7 @@ thumbnail: 3419310.jpeg
 exl-id: cf1a3f0b-1d0e-4526-a9eb-013a3c73401f
 duration: 57
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '61'
 ht-degree: 100%
 
@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez comment l’interface utilisateur des fragments de contenu AEM facilite la localisation des fragments de contenu à l’aide du filtrage rapide. Grâce à cette fonctionnalité, la recherche de fragments de contenu spécifiques devient rapide et facile.
 
->[!VIDEO](https://video.tv.adobe.com/v/3436698/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3419310/?learn=on)

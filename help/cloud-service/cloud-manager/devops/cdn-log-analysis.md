@@ -13,7 +13,7 @@ jira: KT-15505
 thumbnail: KT-15505.jpeg
 exl-id: 830c2486-099b-454f-bc07-6bf36e81ac8d
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 # Outil d’analyse des journaux de réseau CDN
 
 Découvrez l’_outil d’analyse des journaux de réseau CDN AEM Cloud Service_ fourni par Adobe et la manière dont il permet d’obtenir des informations sur les performances de votre réseau CDN et l’implémentation d’AEM.
->[!VIDEO](https://video.tv.adobe.com/v/3446107?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3429177?quality=12&learn=on)
 
 ## Vue d’ensemble
 

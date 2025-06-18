@@ -1,5 +1,5 @@
 ---
-title: Utilisation de l’API usagerights
+title: Utilisation de lʼAPI de droits d’utilisation
 description: Exemple de code pour appliquer des droits d’utilisation au PDF fourni
 type: Documentation
 role: Developer
@@ -11,9 +11,9 @@ jira: KT-17479
 badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: a4e2132b-3cfd-4377-8998-6944365edec5
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 Une fois que vous disposez du jeton d’accès, l’étape suivante consiste à effectuer une requête API pour appliquer des droits d’utilisation au PDF spécifié. Cela implique d’inclure le jeton d’accès dans l’en-tête de la requête pour authentifier l’appel, tout en assurant un traitement sécurisé et autorisé du document.
 
-La fonction suivante applique les droits d’utilisation
+La fonction suivante applique les droits d’utilisation.
 
 ```java
 public void applyUsageRights(String accessToken,String endPoint) {
@@ -83,17 +83,17 @@ public void applyUsageRights(String accessToken,String endPoint) {
         }
 ```
 
-## Répartition des fonctions :
+## Répartition des fonctions :
 
 
 
-* **Configuration du point d’entrée de l’API et de la payload**
+* **Configurer le point d’entrée de l’API et le payload**
    * Construit l’URL de l’API à l’aide du `endPoint` fourni et d’un `BUCKET` prédéfini.
-   * Définit une chaîne JSON (`usageRights`) spécifiant les droits à appliquer, tels que :
+   * Définit une chaîne JSON (`usageRights`) spécifiant les droits à appliquer, par exemple :
       * Commentaires
       * Fichiers incorporés
-      * Remplir le formulaire
-      * Exportation de données de formulaire
+      * Remplissage de formulaire
+      * Export de données de formulaire
 
 * **Charger le fichier PDF**
    * Récupère le fichier `withoutusagerights.pdf` dans le répertoire `pdffiles`.
@@ -101,23 +101,23 @@ public void applyUsageRights(String accessToken,String endPoint) {
 
 * **Préparer la requête HTTP**
    * Lit le fichier PDF dans un tableau d’octets.
-   * Utilise `MultipartEntityBuilder` pour créer une requête en plusieurs parties contenant les éléments suivants :
+   * Utilise `MultipartEntityBuilder` pour créer une requête en plusieurs parties contenant les éléments suivants :
       * Le fichier PDF en tant que corps binaire.
-      * Le `usageRights` JSON comme corps de texte.
-   * Configure une requête HTTP `POST` avec des en-têtes :
+      * Le JSON `usageRights` comme corps de texte.
+   * Configure une requête HTTP `POST` avec des en-têtes :
       * `Authorization: Bearer <accessToken>` pour l’authentification.
       * `X-Adobe-Accept-Experimental: 1` (éventuellement requis pour la compatibilité API).
 
 * **Envoyer la requête et gérer la réponse**
    * Exécute la requête HTTP à l’aide de `httpClient.execute(httpPost)`.
    * Lit la réponse (attendue comme étant le PDF mis à jour avec les droits d’utilisation appliqués).
-   * Écrit le contenu PDF reçu dans **« ReaderExtended.pdf »** sur `SAVE_LOCATION`.
+   * Écrit le contenu PDF reçu comme **« ReaderExtended.pdf »** sur `SAVE_LOCATION`.
 
 * **Gestion et nettoyage des erreurs**
    * Capture et consigne toutes les erreurs `IOException`.
    * S’assure que toutes les ressources (flux, client HTTP, réponse) sont correctement fermées dans le bloc `finally`.
 
-Voici le code main.java qui appelle la fonction applyUsageRights
+Voici le code main.java qui appelle la fonction applyUsageRights.
 
 ```java
 package com.aemformscs.communicationapi;
@@ -148,8 +148,8 @@ public class Main {
 
 La méthode `main` s’initialise en appelant `getAccessToken()` depuis `AccessTokenService`, qui doit renvoyer un jeton valide.
 
-* Il appelle ensuite `applyUsageRights()` à partir de la classe `DocumentGeneration`, en transmettant :
-   * L’`accessToken` récupéré
+* Elle appelle ensuite `applyUsageRights()` à partir de la classe `DocumentGeneration`, en transmettant les éléments suivants :
+   * `accessToken` récupéré
    * Point d’entrée de l’API pour l’application des droits d’utilisation.
 
 

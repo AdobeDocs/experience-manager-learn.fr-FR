@@ -14,9 +14,9 @@ jira: KT-14745
 thumbnail: KT-14745.jpeg
 exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1693'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Parfois, vous devez créer des index personnalisés pour répondre à vos besoin
 
 - Comprenez les exigences de recherche et vérifiez si les index prêts à l’emploi peuvent répondre à vos besoins de recherche. Utilisez l’**outil de performances des requêtes**, disponible sur le [SDK local](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) et AEMCS via la Developer Console ou `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`.
 
-- Définissez une requête optimale, utilisez le graphique de flux [optimisation des requêtes](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) et l’[aide-mémoire pour les requêtes JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=fr) à titre de référence.
+- Définissez une requête optimale, utilisez le graphique de flux [optimisation des requêtes](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) et l’[aide-mémoire pour les requêtes JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) à titre de référence.
 
 - Si les index prêts à l’emploi ne répondent pas aux besoins de recherche, vous disposez de deux options. Toutefois, passez en revue les [Conseils pour créer des index efficaces](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing).
    - Personnaliser l’index prêt à l’emploi : option préférée, car il est facile de le gérer et de le mettre à niveau.
@@ -61,7 +61,7 @@ Parfois, vous devez créer des index personnalisés pour répondre à vos besoin
 
 La création d’un index entièrement personnalisé doit être votre dernière option et uniquement si l’option ci-dessus ne fonctionne pas.
 
-- Lors de la création d’un index entièrement personnalisé, utilisez la convention de nommage **\&lt;prefix>.\&lt;customIndexName>-\&lt;version>-custom-\&lt;customVersion>**. Par exemple, `wknd.adventures-1-custom-1`. Cela permet d’éviter les conflits de nommage. Ici, `wknd` est le préfixe et `adventures` est le nom d’index personnalisé. Cette convention s’applique à AEM 6.X et AEMCS et permet de préparer une migration future vers AEMCS.
+- Lors de la création d’un index entièrement personnalisé, utilisez la convention de nommage **\&lt;préfixe>.\&lt;customIndexName>-\&lt;version>-custom-\&lt;customVersion>**. Par exemple, `wknd.adventures-1-custom-1`. Cela permet d’éviter les conflits de nommage. Ici, `wknd` est le préfixe et `adventures` est le nom d’index personnalisé. Cette convention s’applique à AEM 6.X et AEMCS et permet de préparer une migration future vers AEMCS.
 
 - AEMCS ne prend en charge que les index Lucene. Pour préparer une migration ultérieure vers AEMCS, utilisez toujours les index Lucene. Consultez [Index Lucene par rapport aux index de propriété](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing) pour plus d’informations.
 
@@ -164,7 +164,7 @@ L’image ci-dessous affiche un index personnalisé avec le nœud `suggestion` p
 
 ##### Analyse
 
-Il s’agit d’un cas d’utilisation valide pour créer un index personnalisé pour la fonctionnalité de [recherche avancée](https://jackrabbit.apache.org/oak/docs/query/lucene.html#advanced-search-features). Cependant, le nom de l’index doit respecter la convention de nommage **\&lt;prefix>.&lt;customIndexName>-\&lt;version>-custom-\&lt;customVersion>**.
+Il s’agit d’un cas d’utilisation valide pour créer un index personnalisé pour la fonctionnalité de [recherche avancée](https://jackrabbit.apache.org/oak/docs/query/lucene.html#advanced-search-features). Cependant, le nom de l’index doit respecter la convention de nommage **\&lt;préfixe>.&lt;customIndexName>-\&lt;version>-custom-\&lt;customVersion>**.
 
 ## Optimisation de l’index en désactivant Apache Tika
 

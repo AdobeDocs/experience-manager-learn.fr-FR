@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 44540dee-909b-4140-b007-402ef9af58c4
 duration: 309
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
 ht-degree: 100%
 
@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment créer une Live Copy pour votre site à partir d’un plan directeur à l’aide de l’assistant Créer une Live Copy.
 
->[!VIDEO](https://video.tv.adobe.com/v/41579?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/36677?quality=12&learn=on)

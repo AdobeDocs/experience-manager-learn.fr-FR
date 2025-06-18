@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: 0681e2c4-8661-436c-9170-9aa841a6fa27
 duration: 419
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '378'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Découvrez comment utiliser les fonctions d’import et d’export des métadonn
 
 ## Export des métadonnées {#metadata-export}
 
->[!VIDEO](https://video.tv.adobe.com/v/39393?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/22132?quality=12&learn=on)
 
 >[!TIP]
 >
@@ -45,7 +45,7 @@ Découvrez comment utiliser les fonctions d’import et d’export des métadonn
 
 ## Import de métadonnées {#metadata-import}
 
->[!VIDEO](https://video.tv.adobe.com/v/3413318?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/21374?quality=12&learn=on)
 
 >[!NOTE]
 >

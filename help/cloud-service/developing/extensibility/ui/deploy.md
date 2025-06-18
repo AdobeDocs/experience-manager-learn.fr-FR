@@ -12,9 +12,9 @@ last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 2e37165d-c003-4206-8133-54e37ca35b8e
 duration: 166
 source-git-commit: 1049f605eb1c3b68e70e34d4cdad31858b076858
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '847'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -95,21 +95,21 @@ Pour déployer une nouvelle version d’une extension, celle-ci doit d’abord �
 1. Accédez à __Gérer__ > __Applications Créateur d’applications__.
 1. __Révoquez__ l’extension à mettre à jour.
 
-Après la révocation de l’extension, elle reste visible avec le statut révoqué dans le gestionnaire d’extensions. Pour le supprimer complètement, vous devez supprimer le projet .
+Après la révocation de l’extension, elle reste visible avec le statut révoqué dans Extension Manager. Pour la supprimer complètement, vous devez supprimer le projet.
 
-Le bouton permettant de supprimer le projet se trouve en haut à droite :
+Le bouton permettant de supprimer le projet se trouve en haut à droite :
 
 ![Bouton Supprimer](./assets/deploy/extension-delete-button.png){align="center"}
 
-Tant que l’extension n’est pas révoquée, il ne sera pas possible de supprimer le projet :
+Tant que l’extension n’est pas révoquée, il ne sera pas possible de supprimer le projet :
 
 ![Impossible de supprimer le projet](./assets/deploy/extension-can-not-delete-project.png){align="center"}
 
-Lorsque l’extension est révoquée, le projet peut être supprimé :
+Lorsque l’extension est révoquée, le projet peut être supprimé :
 
 ![Impossible de supprimer le projet](./assets/deploy/extension-delete-procject.png){align="center"}
 
-Après la suppression du projet, l’extension n’est plus visible dans Extension Manager.
+Après la suppression du projet, l’extension n’est plus visible dans Extension Manager.
 
 ### Déployer l’extension
 

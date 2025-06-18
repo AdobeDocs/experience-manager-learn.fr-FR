@@ -11,8 +11,8 @@ thumbnail: KT-9356.jpeg
 exl-id: ec9d37cb-70b6-4414-a92b-3b84b3f458ab
 duration: 124
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
-source-wordcount: '295'
+workflow-type: ht
+source-wordcount: '291'
 ht-degree: 100%
 
 ---
@@ -177,7 +177,7 @@ Incluez les dépendances des pilotes de base de données dans le réacteur `pom.
 
 ## Tous les pom.xml
 
-Intégrez les artefacts de dépendance des pilotes de base de données dans le package `all` afin qu’ils soient déployés et disponibles sur AEM as a Cloud Service. Ces artefacts __doivent__ être des lots OSGi qui exportent la classe Java™ du pilote de base de données.
+Incorporez les artefacts de dépendance des pilotes de base de données dans le package `all` afin qu’ils soient déployés et disponibles sur AEM as a Cloud Service. Ces artefacts __doivent__ être des lots OSGi qui exportent la classe Java™ du pilote de base de données.
 
 + `all/pom.xml`
 

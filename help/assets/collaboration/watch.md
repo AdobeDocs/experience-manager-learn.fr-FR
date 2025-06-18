@@ -13,7 +13,7 @@ jira: KT-15000
 thumbnail: 3427646.jpeg
 exl-id: 33531e51-dcbc-4a02-adb1-4abc70a02a28
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '79'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Découvrez comment recevoir des notifications chaque fois qu’une ressource, un dossier ou une collection sous surveillance fait l’objet d’une modification dans AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3439627/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3427646/?learn=on)
 
 >[!TIP]
 >

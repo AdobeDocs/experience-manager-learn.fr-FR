@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: 81e11e51-205d-4233-a10d-551d5041075c
 duration: 319
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
 ht-degree: 100%
 
@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Les schémas de dossiers de métadonnées permettent aux utilisateurs et utilisatrices de gérer et de revoir les métadonnées associées aux dossiers de ressources eux-mêmes, plutôt que directement sur les ressources.
 
->[!VIDEO](https://video.tv.adobe.com/v/37292?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/34071?quality=12&learn=on)

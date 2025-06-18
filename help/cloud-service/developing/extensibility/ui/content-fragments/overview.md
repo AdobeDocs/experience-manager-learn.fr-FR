@@ -13,7 +13,7 @@ last-substantial-update: 2023-06-02T00:00:00Z
 exl-id: 9164423b-a609-4bc5-9777-112d229ae748
 duration: 126
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '773'
 ht-degree: 100%
 
@@ -341,7 +341,7 @@ Voici une collection d’exemples de code d’extensibilité de l’interface ut
       <div class="card-image">
         <figure class="image is-16by9">
           <a href="./examples/editor-custom-field.md" title="Champs personnalisés" tabindex="-1">
-            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3437636?format=jpeg&captions=fre_fr" alt="Champs personnalisés">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3427585?format=jpeg" alt="Champs personnalisés">
           </a>
         </figure>
       </div>

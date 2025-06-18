@@ -5,9 +5,9 @@ user-guide-description: Ensemble de vidéos et de tutoriels d’Adobe Experience
 sub-product: Experience Manager
 index: y
 source-git-commit: bc2f4655631f28323a39ed5b4c7878613296a0ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '248'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

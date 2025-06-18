@@ -12,7 +12,7 @@ level: Beginner
 exl-id: c29f64a3-56cd-4594-9265-692974f4c01a
 duration: 470
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
 ht-degree: 100%
 
@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment mettre à jour, réviser et approuver les modifications dans une copie de langue à l’aide des lancements.
 
->[!VIDEO](https://video.tv.adobe.com/v/41628?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/36683?quality=12&learn=on)

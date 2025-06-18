@@ -13,7 +13,7 @@ thumbnail: 3425712.jpeg
 duration: 409
 exl-id: 290184ea-88cb-401e-b784-77c8322c77de
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '126'
 ht-degree: 100%
 
@@ -33,12 +33,12 @@ Il existe deux référentiels de contenu pris en charge pour la [création de do
 
 Configurez SharePoint comme référentiel de contenu à utiliser avec Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446030/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3425712/?learn=on)
 
 >[!TAB Google Drive]
 
 Configurez Google Drive comme référentiel de contenu à utiliser avec Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3434722/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3425711/?learn=on)
 
 >[!ENDTABS]

@@ -11,9 +11,9 @@ thumbnail: 342133.jpeg
 exl-id: 817ea20d-d902-4497-83d3-5800ed6aaa8f
 duration: 315
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '100'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 90%
 
 Darin et James discutent du Dispatcher AEM en mode cloud, notamment de certaines bonnes pratiques et différences par rapport à AMS/On-Prem. Ils abordent également la migration vers le cloud.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448730?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/342133?quality=12&learn=on)
 
 ## Contenu couvert par cette vidéo
 
@@ -34,4 +34,4 @@ Darin et James discutent du Dispatcher AEM en mode cloud, notamment de certaines
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).
+Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).

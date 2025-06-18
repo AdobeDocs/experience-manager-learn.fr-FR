@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: 19155d51-18a7-42ca-9a73-1b5fa1355d58
 duration: 248
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '285'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Adobe Experience Manager (AEM) Assets vous permet d’identifier les ressource
 
 ## Gestion de fichiers source de ressources de sites multiples {#multisite-asset-source-file-management}
 
->[!VIDEO](https://video.tv.adobe.com/v/38548?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/18331?quality=12&learn=on)
 
 Les ressources associées aident les personnes à mieux gérer les ressources, à les relier à des caractéristiques et des propriétés communes, et à rationaliser les workflows :
 

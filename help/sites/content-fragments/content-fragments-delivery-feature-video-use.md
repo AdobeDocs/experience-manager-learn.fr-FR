@@ -10,7 +10,7 @@ doc-type: Feature Video
 exl-id: 525cd30c-05bf-4f17-b61b-90609ce757ea
 duration: 878
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Cette série de vidéos présente les options de diffusion pour l’utilisation 
 
 ## Utiliser des fragments de contenu dans les pages web {#using-content-fragments-in-web-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/38059?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/22449?quality=12&learn=on)
 
 Les fragments de contenu peuvent être utilisés sur les pages AEM Sites ou, de manière similaire, dans les fragments d’expérience, à l’aide des [Composant de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr) des composants principaux de la gestion de contenu web AEM.
 
@@ -38,7 +38,7 @@ Les composants de fragment de contenu peuvent être stylisés à l’aide du sys
 
 ## Exposer des fragments de contenu au format JSON {#exposing-content-fragments-as-json}
 
->[!VIDEO](https://video.tv.adobe.com/v/38065?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/22448?quality=12&learn=on)
 
 AEM Content Services facilite la création de points d’entrée HTTP basés sur une page AEM qui convertissent le contenu dans un format JSON normalisé.
 
@@ -49,7 +49,7 @@ La vidéo ci-dessus utilise le [Composant de fragment de contenu](https://experi
 
 ## Utiliser l’API HTTP Assets
 
->[!VIDEO](https://video.tv.adobe.com/v/40324?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26390?quality=12&learn=on)
 
 AEM 6.5 comprend la première version d’une prise en charge améliorée des fragments de contenu avec l’API HTTP Assets. Cela permet aux développeurs et aux développeuses d’effectuer facilement des opérations CRUD (création, lecture, mise à jour et suppression) sur des fragments de contenu.
 

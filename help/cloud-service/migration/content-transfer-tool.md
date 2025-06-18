@@ -12,7 +12,7 @@ level: Beginner
 exl-id: 0cefc336-2a46-4a11-a734-ba1cb63c5cbe
 duration: 1062
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '73'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 L’outil de transfert de contenu est la méthode recommandée pour migrer le contenu d’une version On-Premise ou hébergée par AMS d’AEM vers un environnement AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/327069?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/35460?quality=12&learn=on)
 
 ## Ressources supplémentaires {#additional-resources}
 

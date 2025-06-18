@@ -13,7 +13,7 @@ badgeVersions: label="AEM Forms as a Cloud Service" before-title="false"
 exl-id: 08dd141d-9d25-4dd5-a810-70e3835deae4
 duration: 122
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
 ht-degree: 100%
 
@@ -28,4 +28,4 @@ Dans ce cours, nous allons utiliser les microservices de génération de documen
 1. Configurer l’accès au compte technique dans AEM
 1. Lancer des appels HTTP à l’aide du jeton d’accès
 
->[!VIDEO](https://video.tv.adobe.com/v/342219?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/334859?quality=12&learn=on)

@@ -13,7 +13,7 @@ thumbnail: 3425706.jpeg
 duration: 92
 exl-id: e01f08d6-415d-4b15-8d40-cb5b2eb7de8a
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '31'
 ht-degree: 100%
 
@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment la création de documents traite les métadonnées au niveau de la page et comment les auteurs et autrices peuvent les mettre à jour sans aucune expertise technique.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438067/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3425706/?learn=on)

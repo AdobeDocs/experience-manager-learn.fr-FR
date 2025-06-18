@@ -12,7 +12,7 @@ doc-type: Feature Video
 exl-id: 06f2ae4d-c18e-45ed-96d7-ddc6f9c8d829
 duration: 751
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '142'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 Les balises intelligentes personnalisées pour les images permettent d’entraîner le balisage intelligent aux termes spécifiques au client ou à la cliente.
 Les balises intelligentes personnalisées ou les balises intelligentes améliorées peuvent ensuite être utilisées pour améliorer l’expérience de recherche des utilisateurs et utilisatrices et les aider à trouver les ressources au bon moment.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410910?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/22254?quality=12&learn=on)
 
 ## Configurer des balises intelligentes personnalisées pour les images pour AEM 6.x{#set-up}
 
@@ -34,7 +34,7 @@ Les balises intelligentes personnalisées pour les images requièrent des [balis
 
 Découvrez comment configurer l’entraînement des balises intelligentes dans AEM Assets à l’aide du service de contenu dynamique et des balises intelligentes personnalisées pour les images d’Adobe I/O.
 
->[!VIDEO](https://video.tv.adobe.com/v/35546?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/23405?quality=12&learn=on)
 
 ## Ressources supplémentaires
 

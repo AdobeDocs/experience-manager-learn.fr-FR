@@ -11,51 +11,51 @@ jira: KT-17296
 duration: 700
 exl-id: f41dff22-bd47-4ea0-98cc-f5ca30b22c4b
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1961'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Développement d’un bloc avec des options
+# Développer un bloc avec des options
 
-Ce tutoriel s’appuie sur le tutoriel de Edge Delivery Services et de l’éditeur universel, qui vous guide tout au long du processus d’ajout d’options de bloc à un bloc. En définissant les options de bloc, vous pouvez personnaliser l’aspect et la fonctionnalité d’un bloc et permettre différentes variations en fonction des différents besoins du contenu. Cela permet une plus grande flexibilité et réutilisation dans le système de conception de votre site.
+Ce tutoriel s’appuie sur le tutoriel d’Edge Delivery Services et de l’éditeur universel, qui vous guide tout au long du processus d’ajout d’options de bloc à un bloc. En définissant les options de bloc, vous pouvez personnaliser l’aspect et la fonctionnalité d’un bloc et permettre différentes variations en fonction des différents besoins du contenu. Cela permet une plus grande flexibilité et la réutilisation dans le système de conception de votre site.
 
 ![Option de bloc côte à côte](./assets/block-options/main.png){align="center"}
 
-Dans ce tutoriel, vous allez ajouter des options de bloc au bloc Teaser, ce qui permettra aux auteurs de choisir entre deux options d’affichage : **Par défaut** et **Côte à côte**. L’option **Par défaut** affiche l’image au-dessus et derrière le texte, tandis que l’option **Côte à côte** affiche l’image et le texte côte à côte.
+Dans ce tutoriel, vous allez ajouter des options de bloc au bloc Teaser, ce qui permettra aux personnes chargées de la création de choisir entre deux options d’affichage : **Par défaut** et **Côte à côte**. L’option **Par défaut** affiche l’image au-dessus et derrière le texte, tandis que l’option **Côte à côte** affiche l’image et le texte côte à côte.
 
-## Cas d’utilisation courants :
+## Cas d’utilisation courants
 
-Les cas d’utilisation courants pour l’utilisation des **options de bloc** dans le développement de **Edge Delivery Services** et de **l’éditeur universel** incluent, sans s’y limiter :
+Les cas d’utilisation courants pour l’utilisation des **Options de bloc** dans le développement d’**Edge Delivery Services** et de **l’éditeur universel** incluent, sans s’y limiter :
 
-1. **Variantes de disposition :** basculez facilement entre les dispositions. Par exemple, horizontal ou vertical ou grille ou liste.
-2. **Variantes de style :** basculez facilement entre les thèmes ou les traitements visuels. Par exemple, le mode clair ou sombre ou le texte grand ou petit.
-3. **Contrôle de l’affichage du contenu :** basculer la visibilité des éléments ou basculer entre les styles de contenu (compact ou détaillé).
+1. **Variantes de disposition :** basculez facilement entre les dispositions. Par exemple, horizontale/verticale ou grille/liste.
+2. **Variations de style :** basculez facilement entre les thèmes ou les traitements visuels. Par exemple, le mode clair ou sombre ou le texte grand ou petit.
+3. **Contrôle de l’affichage du contenu :** basculez la visibilité des éléments ou basculez entre les styles de contenu (compact ou détaillé).
 
 Ces options offrent flexibilité et efficacité dans la création de blocs dynamiques et adaptables.
 
-Ce tutoriel présente le cas d’utilisation des variations de mise en page, dans lequel le bloc Teaser peut être affiché dans deux mises en page différentes : **Par défaut** et **Côte à côte**.
+Ce tutoriel présente le cas d’utilisation des variations de mise en page, dans lequel le bloc Teaser peut être affiché selon deux dispositions différentes : **Par défaut** et **Côte à côte**.
 
 ## Modèle de bloc
 
 Pour ajouter des options de bloc au bloc Teaser, ouvrez son fragment JSON à l’adresse `/block/teaser/_teaser.json` et ajoutez un nouveau champ à la définition de modèle. Ce champ définit sa propriété `name` sur `classes`, qui est un champ protégé utilisé par AEM pour stocker les options de bloc, qui sont appliquées au HTML Edge Delivery Services du bloc.
 
-### Configurations de champ
+### Configurations du champ
 
-Les onglets ci-dessous illustrent différentes manières de configurer les options de bloc dans le modèle de bloc, y compris la sélection unique avec une seule classe CSS, la sélection unique avec plusieurs classes CSS et la sélection multiple avec plusieurs classes CSS. Ce tutoriel [met en œuvre l’approche plus simple](#field-configuration-for-this-tutorial) utilisée dans **select avec une seule classe CSS**.
+Les onglets ci-dessous illustrent différentes manières de configurer les options de bloc dans le modèle de bloc, y compris la sélection unique avec une seule classe CSS, la sélection unique avec plusieurs classes CSS et la sélection multiple avec plusieurs classes CSS. Ce tutoriel [met en œuvre l’approche plus simple](#field-configuration-for-this-tutorial) utilisée dans la **sélection avec une seule classe CSS**.
 
 >[!BEGINTABS]
 
->[!TAB Sélectionner avec une seule classe CSS]
+>[!TAB Sélection avec une seule classe CSS]
 
-Ce tutoriel explique comment utiliser un type d’entrée `select` (liste déroulante) pour permettre aux auteurs de choisir une option de bloc unique, qui est ensuite appliquée comme une classe CSS unique correspondante.
+Ce tutoriel explique comment utiliser un type d’entrée `select` (liste déroulante) pour permettre aux personnes chargées de la création de choisir une option de bloc unique, qui est ensuite appliquée comme une classe CSS unique correspondante.
 
-![Sélectionner avec une seule classe CSS](./assets/block-options/tab-1.png){align="center"}
+![Sélection avec une seule classe CSS](./assets/block-options/tab-1.png){align="center"}
 
 #### Modèle de bloc
 
-L&#39;option **Default** est représentée par une chaîne vide (`""`), tandis que l&#39;option **Side-by-Side** utilise `"side-by-side"`. Les **nom** et **valeur** de l’option n’ont pas nécessairement à être identiques, mais la **valeur** détermine la ou les classes CSS appliquées à l’HTML du bloc. Par exemple, la valeur de l’option **Côte à côte** peut être `layout-10` au lieu de `side-by-side`. Cependant, il est préférable d’utiliser des noms à la signification sémantique pour les classes CSS, afin d’assurer la clarté et la cohérence des valeurs d’option.
+L’option **Par défaut** est représentée par une chaîne vide (`""`), tandis que l’option **Côte à côte** utilise `"side-by-side"`. Les **nom** et **valeur** de l’option ne doivent pas nécessairement être identiques, mais la **valeur** détermine la ou les classes CSS appliquées au code HTML du bloc. Par exemple, la valeur de l’option **Côte à côte** peut être `layout-10` au lieu de `side-by-side`. Cependant, il est préférable d’utiliser des noms à la signification sémantique pour les classes CSS, afin d’assurer la clarté et la cohérence des valeurs d’option.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
@@ -83,11 +83,11 @@ L&#39;option **Default** est représentée par une chaîne vide (`""`), tandis q
 ...
 ```
 
-#### Bloquer HTML
+#### HTML de bloc
 
-Lorsque l’auteur sélectionne une option, la valeur correspondante est ajoutée en tant que classe CSS à l’HTML du bloc :
+Lorsque la personne chargée de la création sélectionne une option, la valeur correspondante est ajoutée en tant que classe CSS au code HTML du bloc :
 
-- Si **Default** est sélectionné :
+- Si l’option **Par défaut** est sélectionnée :
 
   ```html
   <div class="block teaser">
@@ -95,7 +95,7 @@ Lorsque l’auteur sélectionne une option, la valeur correspondante est ajouté
   </div>
   ```
 
-- Si l’option **Côte à côte** est sélectionnée :
+- Si l’option **Côte à côte** est sélectionnée :
 
   ```html
   <div class="block teaser side-by-side">
@@ -110,7 +110,7 @@ Cela permet d’appliquer un style différent et un JavaScript conditionnel en f
 
 **Cette approche n’est pas utilisée dans ce tutoriel, mais elle illustre une autre méthode et des options de bloc avancées.**
 
-Le type d’entrée `select` permet aux auteurs de choisir une option de bloc unique, qui peut éventuellement être mappée à plusieurs classes CSS. Pour ce faire, répertoriez les classes CSS comme valeurs délimitées par des espaces.
+Le type d’entrée `select` permet aux personnes chargées de la création de choisir une option de bloc unique, qui peut éventuellement être mappée à plusieurs classes CSS. Pour ce faire, répertoriez les classes CSS comme valeurs délimitées par des espaces.
 
 ![Sélection avec plusieurs classes CSS](./assets/block-options/tab-2.png){align="center"}
 
@@ -148,11 +148,11 @@ Par exemple, l’option **Côte à côte** peut prendre en charge les variations
 ...
 ```
 
-#### Bloquer HTML
+#### HTML de bloc
 
-Lorsque l’auteur sélectionne une option, la valeur correspondante est appliquée sous la forme d’un ensemble de classes CSS séparées par des espaces dans l’HTML du bloc :
+Lorsque la personne chargée de la création sélectionne une option, la valeur correspondante est appliquée sous la forme d’un ensemble de classes CSS séparées par des espaces dans le code HTML du bloc :
 
-- Si **Default** est sélectionné :
+- Si l’option **Par défaut** est sélectionnée :
 
   ```html
   <div class="block teaser">
@@ -160,7 +160,7 @@ Lorsque l’auteur sélectionne une option, la valeur correspondante est appliqu
   </div>
   ```
 
-- Si l’option **Côte à côte avec l’image sur la gauche** est sélectionnée :
+- Si l’option **Côte à côte avec image sur la gauche** est sélectionnée :
 
   ```html
   <div class="block teaser side-by-side left">
@@ -168,7 +168,7 @@ Lorsque l’auteur sélectionne une option, la valeur correspondante est appliqu
   </div>
   ```
 
-- Si l’option **Côte à côte avec l’image sur la droite** est sélectionnée :
+- Si l’option **Côte à côte avec image sur la droite** est sélectionnée :
 
   ```html
   <div class="block teaser side-by-side right">
@@ -183,7 +183,7 @@ Cela permet d’appliquer un style différent et un JavaScript conditionnel en f
 
 **Cette approche n’est pas utilisée dans ce tutoriel, mais elle illustre une autre méthode et des options de bloc avancées.**
 
-Le type d’entrée `"component": "multiselect"` permet à l’auteur de sélectionner plusieurs options simultanément. Cela permet des permutations complexes de l’aspect du bloc en combinant plusieurs choix de conception.
+Le type d’entrée `"component": "multiselect"` permet à la personne chargée de la création de sélectionner plusieurs options simultanément. Cela permet des permutations complexes de l’aspect du bloc en combinant plusieurs choix de conception.
 
 ![Sélection multiple avec plusieurs classes CSS](./assets/block-options/tab-3.png){align="center"}
 
@@ -221,11 +221,11 @@ Par exemple, les options **Côte à côte**, **Image à gauche** et **Image à d
 ...
 ```
 
-#### Bloquer HTML
+#### HTML de bloc
 
-Lorsque l’auteur sélectionne plusieurs options, les valeurs correspondantes sont appliquées en tant que classes CSS séparées par des espaces dans l’HTML du bloc :
+Lorsque la personne chargée de la création sélectionne plusieurs options, les valeurs correspondantes sont appliquées en tant que classes CSS séparées par des espaces dans le code HTML du bloc :
 
-- Si les options **Côte à côte** et **Image à gauche** sont sélectionnées :
+- Si les options **Côte à côte** et **Image à gauche** sont sélectionnées :
 
   ```html{highlight="1"}
   <div class="block teaser side-by-side left">
@@ -233,7 +233,7 @@ Lorsque l’auteur sélectionne plusieurs options, les valeurs correspondantes s
   </div>
   ```
 
-- Si les options **Côte à côte** et **Image à droite** sont sélectionnées :
+- Si les options **Côte à côte** et **Image à droite** sont sélectionnées :
 
   ```html{highlight="1"}
   <div class="block teaser side-by-side right">
@@ -241,22 +241,22 @@ Lorsque l’auteur sélectionne plusieurs options, les valeurs correspondantes s
   </div>
   ```
 
-Bien que la sélection multiple offre de la flexibilité, elle ajoute de la complexité à la gestion des permutations de conception. Sans restriction, les sélections en conflit peuvent entraîner des expériences rompues ou hors marque.
+Bien que la sélection multiple offre de la flexibilité, elle ajoute de la complexité à la gestion des permutations de conception. Sans restriction, les sélections en conflit peuvent entraîner des expériences interrompues ou compromettant l’image de marque.
 
 Par exemple :
 
-- **Image à gauche** ou **Image à droite** sans sélectionner **Côte à côte** les applique implicitement à **Par défaut**, qui définit toujours l’image comme arrière-plan. Par conséquent, l’alignement à gauche et à droite n’est pas pertinent.
+- Sélectionner les options **Image à gauche** ou **Image à droite** sans sélectionner l’option **Côte à côte** les applique implicitement à l’option **Par défaut**, qui définit toujours l’image comme arrière-plan. Par conséquent, l’alignement à gauche et à droite n’est pas pertinent.
 - Les options **Image à gauche** et **Image à droite** sont contradictoires.
-- Sélectionner **Côte à côte** sans **Image à gauche** ou **Image à droite** peut être considéré comme ambigu, car la position de l’image n’est pas spécifiée.
+- Sélectionner l’option **Côte à côte** sans les options **Image à gauche** ou **Image à droite** peut être considéré comme ambigu, car la position de l’image n’est pas spécifiée.
 
-Pour éviter les problèmes et créer de la confusion lors de l’utilisation de la sélection multiple, assurez-vous que les options sont bien planifiées et que toutes les permutations sont testées. La sélection multiple fonctionne mieux pour des améliorations simples et sans conflit, comme les options « volumineuses » ou « mises en surbrillance », que pour les choix de modification de la disposition.
+Pour éviter les problèmes et la confusion de la personne chargée de la création lors de l’utilisation de la sélection multiple, assurez-vous que les options sont bien planifiées et que toutes les permutations sont testées. La sélection multiple fonctionne mieux pour des améliorations simples et sans conflit, comme les options « gras » ou « mise en surbrillance », que pour les choix de modification de la disposition.
 
 
 >[!TAB Option par défaut]
 
 **Cette approche n’est pas utilisée dans ce tutoriel, mais elle illustre une autre méthode et des options de bloc avancées.**
 
-Les options de bloc peuvent être définies par défaut lors de l’ajout d’une nouvelle instance de bloc à une page dans l’éditeur universel. Pour ce faire, définissez la valeur par défaut de la propriété `classes` dans la définition du [ bloc ](../5-new-block.md#block-definition).
+Les options de bloc peuvent être définies par défaut lors de l’ajout d’une nouvelle instance de bloc à une page dans l’éditeur universel. Pour ce faire, définissez la valeur par défaut de la propriété `classes` dans la [définition du bloc](../5-new-block.md#block-definition).
 
 #### Définition du bloc
 
@@ -298,9 +298,9 @@ Vous pouvez également définir plusieurs entrées pour le même bloc, chacune a
 ### Configuration de champ pour ce tutoriel
 
 
-Dans ce tutoriel, nous utiliserons l’approche Sélectionner avec une seule classe CSS décrite ci-dessus dans le premier onglet, qui permet deux options de bloc discrètes : **Par défaut** et **Côte à côte**.
+Dans ce tutoriel, nous utiliserons l’approche Sélection avec une seule classe CSS décrite ci-dessus dans le premier onglet, qui permet deux options de bloc discrètes : **Par défaut** et **Côte à côte**.
 
-Dans la définition du modèle au sein du fragment JSON du bloc, ajoutez un seul champ de sélection pour les options de bloc. Ce champ permet aux créateurs et aux créatrices de choisir entre la mise en page par défaut et une mise en page côte à côte.
+Dans la définition du modèle au sein du fragment JSON du bloc, ajoutez un seul champ de sélection pour les options de bloc. Ce champ permet aux personnes chargées de la création de choisir entre la disposition par défaut et une disposition côte à côte.
 
 [!BADGE /blocks/teaser/_teaser.json]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
@@ -373,9 +373,9 @@ Dans la définition du modèle au sein du fragment JSON du bloc, ajoutez un seul
 
 Pour rendre l’entrée des options de bloc mises à jour disponible dans l’éditeur universel, déployez les modifications de code JSON sur GitHub, créez une page, ajoutez et créez le bloc Teaser avec l’option **Côte à côte**, puis publiez la page à prévisualiser. Une fois publiée, chargez la page dans l’environnement de développement local pour le codage.
 
-### Pousser les modifications vers GitHub
+### Transmettre les modifications à GitHub
 
-Pour que l’entrée des options de bloc mises à jour soit disponible dans l’éditeur universel afin de définir les options de bloc et de développer par rapport à l’HTML résultante, le projet doit être lié et les modifications doivent être transmises à une branche GitHub, dans ce cas, la branche `block-options`.
+Pour que l’entrée des options de bloc mises à jour soit disponible dans l’éditeur universel afin de définir les options de bloc et de développer par rapport à au code HTML résultant, le projet doit être lié et les modifications doivent être transmises à une branche GitHub, dans ce cas, la branche `block-options`.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -390,31 +390,31 @@ $ git push origin teaser
 
 ### Créer une page de test
 
-Dans le service de création AEM, créez une page pour ajouter le bloc Teaser pour le développement. En suivant les conventions du chapitre [Créer un bloc](../6-author-block.md) du tutoriel de développement de [Edge Delivery Services et de l’éditeur universel](../0-overview.md), créez une page de test sous une page de `branches`, en lui donnant le nom de la branche Git sur laquelle vous travaillez, dans ce cas, `block-options`.
+Dans le service de création AEM, créez une page pour ajouter le bloc Teaser pour le développement. En suivant les conventions du chapitre [Créer un bloc](../6-author-block.md) du tutoriel de développement d’[Edge Delivery Services et de l’éditeur universel](../0-overview.md), créez une page de test sous une page `branches`, en lui donnant le nom de la branche Git sur laquelle vous travaillez, dans ce cas, `block-options`.
 
 ### Créer le bloc
 
-Modifiez la nouvelle page **Options de bloc** dans l’éditeur universel et ajoutez le bloc **Teaser**. Veillez à ajouter le paramètre de requête `?ref=block-options` à l’URL pour charger la page à l’aide du code de la branche GitHub `block-options`,
+Modifiez la nouvelle page **Options de bloc** dans l’éditeur universel et ajoutez le bloc **Teaser**. Veillez à ajouter le paramètre de requête `?ref=block-options` à l’URL pour charger la page à l’aide du code de la branche GitHub `block-options`.
 
-La boîte de dialogue de bloc comprend désormais une liste déroulante **Options de teaser** avec des sélections **Par défaut** et **Côte à côte**. Sélectionnez **Côte à côte** et effectuez la création de contenu restante.
+La boîte de dialogue de bloc comprend désormais une liste déroulante **Options de teaser** avec les sélections **Par défaut** et **Côte à côte**. Sélectionnez **Côte à côte** et effectuez la création de contenu restante.
 
 ![Teaser avec boîte de dialogue de bloc d’options](./assets/block-options/block-dialog.png){align="center"}
 
-Vous pouvez éventuellement ajouter deux blocs **Teaser**, l’un défini sur **Par défaut** et l’autre sur **Côte à côte**. Cela vous permet de prévisualiser les deux options côte à côte pendant le développement et garantit que l’implémentation de **Côte à côte** n’affecte pas l’option **Par défaut**.
+Vous pouvez éventuellement ajouter deux blocs **Teaser**, l’un défini sur **Par défaut** et l’autre sur **Côte à côte**. Cela vous permet de prévisualiser les deux options côte à côte pendant le développement et garantit que l’implémentation de l’option **Côte à côte** n’affecte pas l’option **Par défaut**.
 
-### Publier pour prévisualisation
+### Publier en prévisualisation
 
-Une fois le bloc de teaser ajouté à la page, [publiez la page à prévisualiser](../6-author-block.md) à l’aide du bouton **Publier** et choisissez Publier sur **Prévisualiser** dans l’éditeur universel.
+Une fois le bloc de teaser ajouté à la page, [publiez la page à prévisualiser](../6-author-block.md) à l’aide du bouton **Publier** et choisissez de publier sur **Prévisualisation** dans l’éditeur universel.
 
-## Bloquer HTML
+## HTML de bloc
 
-Pour commencer le développement par blocs, commencez par examiner la structure DOM exposée par l’aperçu Edge Delivery Services. Le modèle DOM a été amélioré avec JavaScript et stylisé avec CSS, ce qui fournit la base pour créer et personnaliser le bloc.
+Pour commencer le développement de blocs, commencez par examiner la structure DOM exposée par la prévisualisation Edge Delivery Services. Le modèle DOM a été amélioré avec JavaScript et stylisé avec CSS, ce qui fournit la base pour créer et personnaliser le bloc.
 
 >[!BEGINTABS]
 
->[!TAB DOM à décorer]
+>[!TAB DOM à mettre en forme]
 
-Vous trouverez ci-dessous le DOM du bloc Teaser, avec l’option de bloc **Côte à côte** sélectionnée, qui est la cible à décorer à l’aide de JavaScript et CSS.
+Vous trouverez ci-dessous le DOM du bloc Teaser, avec l’option de bloc **Côte à côte** sélectionnée, qui est la cible à mettre en forme à l’aide de JavaScript et CSS.
 
 ```html{highlight="7"}
 ...
@@ -451,17 +451,17 @@ Vous trouverez ci-dessous le DOM du bloc Teaser, avec l’option de bloc **Côte
 ...
 ```
 
->[!TAB Comment trouver le DOM ]
+>[!TAB Comment trouver le DOM]
 
-Pour trouver le DOM à décorer, ouvrez la page avec le bloc dans votre environnement de développement local, sélectionnez le bloc à l’aide des outils de développement de votre navigateur web et inspectez le DOM. Cela vous permettra d&#39;identifier les éléments pertinents à décorer.
+Pour trouver le DOM à mettre en forme, ouvrez la page avec le bloc dans votre environnement de développement local, sélectionnez le bloc à l’aide des outils de développement de votre navigateur web et inspectez le DOM. Cela vous permettra d’identifier les éléments pertinents à mettre en forme.
 
 ![Inspecter le DOM du bloc](./assets/block-options/dom.png){align="center"}
 
 >[!ENDTABS]
 
-## Bloquer CSS
+## CSS de bloc
 
-Modifiez les `blocks/teaser/teaser.css` pour ajouter des styles CSS spécifiques pour l’option **Côte à côte**. Ce fichier contient le CSS par défaut du bloc.
+Modifiez l’élément `blocks/teaser/teaser.css` pour ajouter des styles CSS spécifiques pour l’option **Côte à côte**. Ce fichier contient le CSS par défaut du bloc.
 
 Pour modifier les styles de l’option **Côte à côte**, ajoutez une nouvelle règle CSS étendue dans le fichier `teaser.css` qui cible les blocs de teaser configurés avec la classe `side-by-side`.
 
@@ -469,7 +469,7 @@ Pour modifier les styles de l’option **Côte à côte**, ajoutez une nouvelle 
 .block.teaser.side-by-side { ... }
 ```
 
-Vous pouvez également utiliser l’imbrication CSS pour une version plus concise :
+Vous pouvez également utiliser l’imbrication CSS pour une version plus concise :
 
 ```css
 .block.teaser {
@@ -481,9 +481,9 @@ Vous pouvez également utiliser l’imbrication CSS pour une version plus concis
 }
 ```
 
-Dans la règle de `&.side-by-side`, ajoutez les propriétés CSS nécessaires pour appliquer un style au bloc lorsque la classe `side-by-side` est appliquée.
+Dans la règle `&.side-by-side`, ajoutez les propriétés CSS nécessaires pour appliquer un style au bloc lorsque la classe `side-by-side` est appliquée.
 
-Une approche courante consiste à réinitialiser les styles par défaut en appliquant des `all: initial` aux sélecteurs partagés, puis en ajoutant les styles requis pour la variante `side-by-side`. Si la plupart des styles sont partagés entre les options, le remplacement de propriétés spécifiques peut être plus facile. Cependant, si plusieurs sélecteurs doivent être modifiés, la réinitialisation de tous les styles et la réapplication des seuls styles nécessaires peuvent rendre le code plus clair et plus facile à gérer.
+Une approche courante consiste à réinitialiser les styles par défaut en appliquant `all: initial` aux sélecteurs partagés, puis en ajoutant les styles requis pour la variante `side-by-side`. Si la plupart des styles sont partagés entre les options, le remplacement de propriétés spécifiques peut s’avérer plus facile. Cependant, si plusieurs sélecteurs doivent être modifiés, la réinitialisation de tous les styles et la réapplication des seuls styles nécessaires peuvent rendre le code plus clair et plus facile à gérer.
 [!BADGE /blocks/teaser/teaser.css]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
 ```css
@@ -660,11 +660,11 @@ Une approche courante consiste à réinitialiser les styles par défaut en appli
 ```
 
 
-## Bloquer le JavaScript
+## JavaScript de bloc
 
-L’identification de la ou des options actives du bloc est simple en vérifiant les classes appliquées à l’élément de bloc. Dans cet exemple, nous devons ajuster l’emplacement d’application des styles `.image-wrapper` en fonction de l’option active.
+L’identification de la ou des options actives du bloc se fait simplement en vérifiant les classes appliquées à l’élément de bloc. Dans cet exemple, nous devons ajuster l’emplacement d’application des styles `.image-wrapper` en fonction de l’option active.
 
-La fonction `getOptions` renvoie un tableau de classes appliquées au bloc, à l’exclusion des `block` et des `teaser` (car tous les blocs ont la classe `block`, et tous les blocs Teaser ont la classe `teaser`). Toutes les classes restantes dans le tableau indiquent les options actives. Si le tableau est vide, l’option par défaut est appliquée.
+La fonction `getOptions` renvoie un tableau de classes appliquées au bloc, à l’exclusion de `block` et `teaser` (car tous les blocs ont la classe `block`, et tous les blocs Teaser ont la classe `teaser`). Toutes les classes restantes dans le tableau indiquent les options actives. Si le tableau est vide, l’option par défaut est appliquée.
 
 ```javascript
 function getOptions(block) {
@@ -673,7 +673,7 @@ function getOptions(block) {
 }
 ```
 
-Cette liste d’options peut être utilisée pour exécuter de manière conditionnelle une logique personnalisée dans le JavaScript du bloc :
+Cette liste d’options peut être utilisée pour exécuter de manière conditionnelle une logique personnalisée dans le JavaScript du bloc :
 
 ```javascript
 if (getOptions(block).includes('side-by-side')) {
@@ -685,7 +685,7 @@ if (getOptions(block).includes('side-by-side')) {
 }
 ```
 
-Le fichier JavaScript complet mis à jour pour le bloc de teaser avec les options Par défaut et Côte à côte est le suivant :
+Le fichier JavaScript complet mis à jour pour le bloc de teaser avec les options Par défaut et Côte à côte est le suivant :
 
 [!BADGE /blocks/teaser/teaser.js]{type=Neutral tooltip="Nom de fichier de l’exemple de code ci-dessous."}
 
@@ -756,13 +756,13 @@ export default function decorate(block) {
 
 ## Aperçu du développement
 
-À mesure que les feuilles CSS et JavaScript sont ajoutées, l’environnement de développement local de l’interface de ligne de commande d’AEM recharge à chaud les modifications, ce qui permet une visualisation rapide et facile de l’impact du code sur le bloc. Pointez sur le CTA et vérifiez que l’image du teaser effectue un zoom avant et arrière.
+À mesure que les codes CSS et JavaScript sont ajoutés, l’environnement de développement local de l’interface de ligne de commande d’AEM recharge à chaud les modifications, ce qui permet une visualisation rapide et facile de l’impact du code sur le bloc. Pointez sur le CTA et vérifiez que l’image du teaser effectue un zoom avant et arrière.
 
-![Aperçu du développement local du teaser à l’aide de CSS et JS](./assets/block-options//local-development-preview.png)
+![Prévisualisation du développement local du teaser à l’aide de CSS et JS](./assets/block-options//local-development-preview.png)
 
-## Étiqueter votre code
+## Appliquer lint à votre code
 
-Veillez à [peindre fréquemment](../3-local-development-environment.md#linting) vos modifications de code pour le garder propre et cohérent. Une liaison régulière permet de détecter les problèmes tôt, ce qui réduit le temps de développement global. N’oubliez pas que vous ne pouvez pas fusionner votre travail de développement dans la branche `main` tant que tous les problèmes de liaison ne sont pas résolus.
+Veillez à [appliquer lint fréquemment](../3-local-development-environment.md#linting) à vos modifications de code pour le garder propre et cohérent. Une application régulière de lint permet de détecter les problèmes tôt, ce qui réduit le temps de développement global. N’oubliez pas que vous ne pouvez pas fusionner votre travail de développement dans la branche `main` tant que tous les problèmes de linting ne sont pas résolus.
 
 ```bash
 # ~/Code/aem-wknd-eds-ue
@@ -785,7 +785,7 @@ $ git push origin block-options
 
 Désormais, les modifications sont visibles dans l’éditeur universel lors de l’utilisation du paramètre de requête `?ref=block-options`.
 
-![ Teaser dans l’éditeur universel ](./assets/block-options/universal-editor-preview.png){align="center"}
+![Teaser dans l’éditeur universel](./assets/block-options/universal-editor-preview.png){align="center"}
 
 
 ## Félicitations.

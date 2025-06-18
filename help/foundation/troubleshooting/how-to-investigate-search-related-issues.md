@@ -12,7 +12,7 @@ doc-type: Technical Video
 exl-id: 66571dbe-e5bb-4ced-87a5-33ddc160a69a
 duration: 127
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '36'
 ht-degree: 100%
 
@@ -22,4 +22,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour examiner les problèmes liés à la recherche dans AEM.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3418318?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/335467?quality=12&learn=on)

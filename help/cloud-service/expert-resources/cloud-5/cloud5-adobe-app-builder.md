@@ -11,9 +11,9 @@ recommendations: noDisplay, noCatalog
 exl-id: 799539ba-00aa-40c0-89de-cab38b0066a3
 duration: 312
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '84'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 88%
 
 Amol Anand nous présente les intégrations avec le créateur d’applications Adobe et nous explique où et quand les utiliser.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448752?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/342375?quality=12&learn=on)
 
 ## Contenu couvert par cette vidéo
 
@@ -33,4 +33,4 @@ Amol Anand nous présente les intégrations avec le créateur d’applications 
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).
+Regardez les vidéos connexes sur la page [Cloud 5 saison 1](cloud5-season-1.md).

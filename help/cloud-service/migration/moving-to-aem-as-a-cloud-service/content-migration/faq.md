@@ -12,8 +12,8 @@ thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 399
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
-source-wordcount: '1884'
+workflow-type: ht
+source-wordcount: '1878'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ Obtenez des réponses aux questions fréquentes sur la migration de contenu vers
 
 Veuillez utiliser le modèle ci-dessous pour fournir plus de détails lors de la soumission de tickets d’assistance Adobe liés à CTT.
 
-![Modèle de ticket d’assistance Adobe de migration de contenu](../../assets/faq/adobe-support-ticket-template.png) { align=&quot;center&quot; }
+![Modèle de ticket d’assistance Adobe de migration de contenu](../../assets/faq/adobe-support-ticket-template.png) {align="center"}
 
 ## Questions générales relatives à la migration de contenu
 
@@ -125,7 +125,7 @@ La phase d’extraction est un processus impliqué qui nécessite que plusieurs 
 
 La documentation publique est continuellement améliorée en fonction des enseignements tirés, mais voici quelques catégories de problèmes de haut niveau et leurs éventuelles causes.
 
-![Problèmes d’extraction lors de la migration du contenu AEM as a Cloud Service](../../assets/faq/extraction-issues.jpg) { align=&quot;center&quot; }
+![Problèmes d’extraction lors de la migration du contenu AEM as a Cloud Service](../../assets/faq/extraction-issues.jpg) {align="center"}
 
 ### Q : Quels sont les problèmes attendus lors de l’ingestion ?
 
@@ -133,7 +133,7 @@ La phase d’ingestion se déroule entièrement dans la plateforme Cloud et néc
 
 Voici les catégories de problèmes possibles (cette liste n’est pas exhaustive)
 
-![Problèmes d’ingestion lors de la migration du contenu AEM as a Cloud Service](../../assets/faq/ingestion-issues.jpg) { align=&quot;center&quot; }
+![Problèmes d’ingestion lors de la migration du contenu AEM as a Cloud Service](../../assets/faq/ingestion-issues.jpg) {align="center"}
 
 
 

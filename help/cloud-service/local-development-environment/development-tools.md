@@ -12,9 +12,9 @@ last-substantial-update: 2022-09-03T00:00:00Z
 exl-id: 6fb3199a-02c9-48bc-a6fa-1f767cfd2f2a
 duration: 3508
 source-git-commit: 3ad201aad77e71b42d46d69fdda50bcc77316151
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1302'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Notez que `~` est utilisé comme raccourci pour le répertoire de l’utilisateu
 
 Experience Manager est une application Java qui requiert donc le SDK Java pour prendre en charge le développement et le SDK AEM as a Cloud Service.
 
-1. [Télécharger et installer la dernière version du SDK Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
+1. [Télécharger et installer la dernière version du SDK Java 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14)
 1. Vérifiez que le SDK Oracle Java 11 est installé en exécutant la commande :
 
 >[!BEGINTABS]
@@ -152,7 +152,7 @@ Si vous utilisez Homebrew, suivez les instructions __Installation à l’aide de
 
 ## Installer Maven
 
-Apache Maven est l’outil de ligne de commande Java open source utilisé pour créer des projets AEM générés à partir de l’archétype Maven de projet AEM. Tous les principaux IDE ([IntelliJ IDEA](https://www.jetbrains.com/idea/), [Visual Studio Code](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/), etc.) ont intégré la prise en charge de Maven.
+Apache Maven est l’outil de ligne de commande Java open source utilisé pour créer des projets AEM générés à partir de l’archétype Maven de projet AEM. Tous les principaux IDE ([IntelliJ IDEA](https://www.jetbrains.com/idea/), [Visual Studio Code](https://code.visualstudio.com/), [Eclipse](https://www.eclipse.org/), etc.) ont une prise en charge Maven intégrée.
 
 
 >[!BEGINTABS]
@@ -205,10 +205,10 @@ Pour que l’interface de ligne de commande d’Adobe I/O communique avec Cloud
    + Si vous créez un projet, sélectionnez « Projet vide », le cas échéant (au lieu de « Créer à partir d’un modèle »).
    + Les programmes de console Adobe I/O sont des concepts différents des programmes Cloud Manager.
 1. Créer une intégration d’API Cloud Manager
-   + Sélectionnez le type d’informations d’identification « Oauth serveur à serveur ».
-   + Sélectionnez le profil de produit « Gestionnaire de déploiement - Cloud Service ».
+   + Sélectionnez le type d’informations d’identification « OAuth serveur à serveur ».
+   + Sélectionnez le profil de produit « Responsable de déploiement - Cloud Service ».
    + Enregistrer l’API configurée
-1. Obtenez les informations d’identification nécessaires pour renseigner le fichier [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) de l’interface de ligne de commande d’Adobe I/O en ouvrant les informations d’identification « OAuth serveur à serveur » nouvellement créées, puis en sélectionnant « Télécharger JSON » dans la barre d’actions supérieure droite.
+1. Obtenez les informations d’identification nécessaires pour renseigner le fichier [config.json](https://github.com/adobe/aio-cli-plugin-cloudmanager#authentication) de l’interface de ligne de commande d’Adobe I/O en ouvrant les informations d’identification « OAuth serveur à serveur » nouvellement créées, puis en sélectionnant « Télécharger JSON » dans la barre d’actions supérieure droite.
 1. Ouvrez le fichier JSON téléchargé et renommez toutes les clés en minuscules. Par exemple, `CLIENT_ID` devient `client_id`.
 1. Chargez le fichier `config.json` dans l’interface de ligne de commande d’Adobe I/O.
    + `$ aio config:set ims.contexts.aio-cli-plugin-cloudmanager /path/to/downloaded/json --file --json`
@@ -235,7 +235,7 @@ Le développement AEM consiste principalement en un développement Java et front
 
 __[IntelliJ IDEA](https://www.jetbrains.com/idea/)__ est un IDE puissant pour le développement Java. IntelliJ IDEA est disponible en deux versions, une édition Community gratuite et une version Ultimate commerciale (payante). La version Community gratuite est suffisante pour le développement AEM, mais la version Ultimate [élargit ses fonctionnalités.](https://www.jetbrains.com/idea/download).
 
->[!VIDEO](https://video.tv.adobe.com/v/39739?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26089?quality=12&learn=on)
 
 + [Télécharger IntelliJ IDEA](https://www.jetbrains.com/idea/download)
 + [Télécharger l’outil Repo Tool](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo#installation)

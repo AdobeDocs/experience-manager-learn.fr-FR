@@ -13,17 +13,17 @@ thumbnail: 331755.jpg
 exl-id: e2d56e91-c13e-4787-a97f-255938b5d290
 duration: 173
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '75'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
 # Créer une source de données
 
-Créez une source de données soutenue par REST à l’aide du fichier Swagger créé à l’étape précédente.
+Créez une source de données prise en charge par REST à l’aide du fichier Swagger créé à l’étape précédente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3411550?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/331755?quality=12&learn=on)
 
 | Configuration | Valeur |
 |---------------------|-----------------------------------------------------------------|
@@ -33,4 +33,4 @@ Créez une source de données soutenue par REST à l’aide du fichier Swagger c
 | URL de jeton d’accès | https://newfocus-dev-ed.my.salesforce.com/services/oauth2/token |
 
 
-**Les noms de domaine de l’URL du jeton d’actualisation et d’accès devront changer pour correspondre aux paramètres de votre compte Salesforce**
+**Les noms de domaine de l’URL du jeton d’actualisation et d’accès devront changer pour correspondre aux paramètres de votre compte Salesforce.**

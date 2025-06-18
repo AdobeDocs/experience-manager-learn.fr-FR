@@ -13,7 +13,7 @@ doc-type: Feature Video
 exl-id: 5e423f2c-90d2-474f-8bdc-fa15ae976f18
 duration: 385
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Les workflows à démarrage automatique étendent le traitement des ressources dans AEM as a Cloud Service en appelant automatiquement un workflow personnalisé lors du chargement ou d’un nouveau traitement, une fois que le traitement des ressources est terminé.
 
->[!VIDEO](https://video.tv.adobe.com/v/326760?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/37323?quality=12&learn=on)
 
 >[!NOTE]
 >

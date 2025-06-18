@@ -11,7 +11,7 @@ exl-id: f4af7cb9-cc3b-4bec-9428-ab4f1a3cf41a
 last-substantial-update: 2019-07-07T00:00:00Z
 duration: 430
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '279'
 ht-degree: 100%
 
@@ -29,11 +29,11 @@ Pour créer des graphiques à séries multiples dans AEM Forms, vous devez cré
 
 ## Créer un modèle de données de formulaire pour les graphiques à séries multiples
 
->[!VIDEO](https://video.tv.adobe.com/v/33113?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26352?quality=12&learn=on)
 
 ### Configurer des graphiques à séries linéaires
 
->[!VIDEO](https://video.tv.adobe.com/v/33116?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/26353?quality=12&learn=on)
 
 Pour tester cela sur votre système, veuillez procéder comme suit :
 

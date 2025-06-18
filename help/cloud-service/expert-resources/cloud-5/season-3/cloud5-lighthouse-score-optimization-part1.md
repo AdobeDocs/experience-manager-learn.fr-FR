@@ -14,9 +14,9 @@ last-substantial-update: 2024-09-10T00:00:00Z
 jira: KT-16146
 exl-id: 32ffe5fd-48b6-4bc6-b79c-5b14a335ecfd
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '67'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -28,4 +28,4 @@ Découvrez ce qu’est un score Lighthouse et les techniques pour obtenir le mei
 
 ## Ressources supplémentaires
 
-Regardez les vidéos connexes sur la page [Cloud 5 saison 3](../cloud5-season-3.md).
+Regardez les vidéos connexes sur la page [Cloud 5 saison 3](../cloud5-season-3.md).

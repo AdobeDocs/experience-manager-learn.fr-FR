@@ -11,7 +11,7 @@ doc-type: Feature Video
 exl-id: 9d807f4c-999c-45e6-a9db-6c1776bddda1
 duration: 576
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '325'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Pour les clientes et les clients utilisant Dynamic Media et Adobe Analytics, vous pouvez désormais suivre l’utilisation des visionneuses Dynamic Media sur votre site web à l’aide de l’extension de visionneuse Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/33201?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/29308?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Avec l’introduction de l’extension visionneuse Dynamic Media, Adobe Experi
 
 Si vous disposez déjà d’AEM Assets et de Sites, vous pouvez intégrer votre propriété de balises à votre instance de création d’AEM. Une fois l’intégration de lancement associée à votre site web, vous pouvez ajouter un composant Dynamic Media à votre page en activant le suivi des événements pour les visionneuses.
 
-Pour les clientes et clients utilisant uniquement AEM Assets ou Dynamic Media Classic, il est possible d’obtenir le code incorporé d’une visionneuse et de l’ajouter à la page. Les bibliothèques de script de balises peuvent ensuite être ajoutées manuellement à la page pour le suivi des événements de la visionneuse.
+Pour les clientes et clients utilisant uniquement AEM Assets ou Dynamic Media Classic, il est possible d’obtenir le code intégré d’une visionneuse et de l’ajouter à la page. Les bibliothèques de script de balises peuvent ensuite être ajoutées manuellement à la page pour le suivi des événements de la visionneuse.
 
 Le tableau suivant répertorie les événements de visionneuse Dynamic Media et leurs arguments pris en charge :
 

@@ -12,7 +12,7 @@ last-substantial-update: 2024-05-08T00:00:00Z
 jira: KT-15430
 exl-id: 78ccb394-9341-4acf-a157-f0f7d5578205
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '64'
 ht-degree: 100%
 
@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment utiliser les audiences Adobe Target pour cibler la bonne audience avec le contenu approprié dans la création de documents Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3437757/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3428792/?learn=on)

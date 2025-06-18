@@ -12,9 +12,9 @@ last-substantial-update: 2023-03-14T00:00:00Z
 exl-id: 9320e07f-be5c-42dc-a4e3-aab80089c8f7
 duration: 624
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1620'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_localdev_dispatcher"
->title="Outils du Dispatcher local"
+>title="Outils du dispatcher local"
 >abstract="Le Dispatcher fait partie intégrante de l’architecture globale d’Experience Manager et doit faire partie de la configuration de développement local. Le SDK AEM as a Cloud Service comprend la version recommandée des outils du Dispatcher qui facilite la configuration, la validation et la simulation locale du Dispatcher."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=fr" text="Dispatcher en mode cloud"
 >additional-url="https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr" text="Télécharger le SDK AEM as a Cloud Service"
@@ -44,14 +44,14 @@ Notez que `~` est utilisé comme raccourci pour le répertoire de l’utilisateu
 >
 > Les vidéos de cette page ont été enregistrées sur macOS. Les utilisateurs et utilisatrices de Windows peuvent également suivre leurs indications, mais en utilisant les commandes Windows équivalentes des outils Dispatcher, fournies avec chaque vidéo.
 
-## Conditions préalables
+## Prérequis
 
 1. Les utilisateurs et utilisatrices de Windows doivent disposer de Windows 10 Professionel (ou une version prenant en charge Docker).
 1. Installez le [fichier Jar Quickstart de publication d’Experience Manager](./aem-runtime.md) sur la machine de développement locale.
 
 + Vous pouvez éventuellement installer la dernière version du [site de référence AEM](https://github.com/adobe/aem-guides-wknd/releases) sur le service de publication AEM local. Ce site est utilisé dans ce tutoriel pour visualiser un Dispatcher en cours de fonctionnement.
 
-1. Installez et démarrez la dernière version de [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5+ / Docker Engine v19.03.9+) sur l’ordinateur de développement local.
+1. Installez et démarrez la dernière version de [Docker](https://www.docker.com/) (Docker Desktop 2.2.0.5 ou ultérieure/Docker Engine v19.03.9 ou ultérieure) sur l’ordinateur de développement local.
 
 ## Télécharger les outils du Dispatcher (dans le cadre du SDK AEM)
 
@@ -59,7 +59,7 @@ Le SDK AEM as a Cloud Service, ou SDK AEM, contient les outils du Dispatcher
 
 Si le SDK AEM as a Cloud Service a déjà été téléchargé vers la [configuration de l’exécution d’AEM locale](./aem-runtime.md), il n’est pas nécessaire de le télécharger de nouveau.
 
-1. Connectez-vous à [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&amp;1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1) avec votre Adobe ID.
+1. Connectez-vous à [experience.adobe.com/#/downloads](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+SDK*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=1) avec votre Adobe ID.
    + Votre organisation Adobe __doit__ être configurée pour AEM as a Cloud Service afin de télécharger le SDK AEM as a Cloud Service.
 1. Cliquez sur la dernière ligne de résultats __AEM SDK__ à télécharger.
 
@@ -289,7 +289,7 @@ La version recommandée des outils du Dispatcher est celle qui est fournie avec 
 
 La configuration de base Apache et de Dispatcher est améliorée régulièrement et publiée avec la version du SDK AEM as a Cloud Service. Il est recommandé d’incorporer des améliorations de configuration de base dans votre projet AEM et d’éviter la [validation locale](#validate-configurations) et les échecs du pipeline Cloud Manager. Mettez-les à jour à l’aide du script `update_maven.sh` du dossier `.../dispatcher-sdk-x.x.x/bin`.
 
->[!VIDEO](https://video.tv.adobe.com/v/33558?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3416744?quality=12&learn=on)
 
 *Cette vidéo utilise macOS à des fins d’illustration. Les commandes Windows/Linux équivalentes peuvent être utilisées pour obtenir des résultats similaires.*
 

@@ -11,9 +11,9 @@ jira: KT-15832
 duration: 900
 exl-id: a5cd9906-7e7a-43dd-a6b2-e80f67d37992
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1313'
+ht-degree: 100%
 
 ---
 
@@ -23,16 +23,16 @@ Commencez par configurer l’image de marque globale en mettant à jour les styl
 
 ## Créer un problème GitHub
 
-Pour que tout reste organisé, utilisez GitHub pour effectuer le suivi du travail. Tout d’abord, créez un problème GitHub pour ce travail :
+Pour que tout reste organisé, utilisez GitHub pour effectuer le suivi du travail. Tout d’abord, créez un problème GitHub pour ce travail :
 
-1. Accédez au référentiel GitHub (voir le chapitre [Créer un projet de code](./1-new-code-project.md) pour plus de détails).
+1. Accédez au référentiel GitHub (consultez le chapitre [Créer un projet de code](./1-new-code-project.md) pour plus de détails).
 2. Cliquez sur l’onglet **Problèmes** puis sur **Nouveau problème**.
 3. Rédigez un **titre** et une **description** pour le travail à effectuer.
 4. Cliquez sur **Soumettre le nouveau problème**.
 
 Le problème GitHub est utilisé ultérieurement lors de la [création d’une requête d’extraction](#merge-code-changes).
 
-![GitHub crée un nouveau problème](./assets/4-website-branding/github-issues.png)
+![Création d’un problème GitHub](./assets/4-website-branding/github-issues.png)
 
 ## Créer une branche de travail
 
@@ -48,7 +48,7 @@ $ git checkout -b wknd-styles
 
 ## CSS global
 
-Edge Delivery Services utilise un fichier CSS global, situé à l’adresse `styles/styles.css`, pour configurer les styles communs à l’ensemble du site web. Le `styles.css` contrôle des aspects tels que les couleurs, les polices et l’espacement, en veillant à ce que tout semble cohérent sur l’ensemble du site.
+Edge Delivery Services utilise un fichier CSS global, situé à l’adresse `styles/styles.css`, pour configurer les styles communs à l’ensemble du site web. Le fichier `styles.css` contrôle des aspects tels que les couleurs, les polices et l’espacement, en veillant à ce que tout semble cohérent sur l’ensemble du site.
 
 Le CSS global doit être indépendant des constructions de niveau inférieur telles que les blocs, en se concentrant sur l’aspect général du site et sur les traitements visuels partagés.
 
@@ -56,15 +56,15 @@ Gardez à l’esprit que les styles CSS globaux peuvent être remplacés si néc
 
 ### Variables CSS
 
-Les [variables CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) sont un excellent moyen de stocker les paramètres de conception tels que les couleurs, les polices et les tailles. En utilisant des variables, vous pouvez modifier ces éléments en un seul endroit et les mettre à jour sur l’ensemble du site.
+Les [variables CSS](https://developer.mozilla.org/fr-FR/docs/Web/CSS/Using_CSS_custom_properties) constituent un excellent moyen de stocker les paramètres de conception tels que les couleurs, les polices et les tailles. En utilisant des variables, vous pouvez modifier ces éléments en un seul endroit et les mettre à jour sur l’ensemble du site.
 
-Pour commencer à personnaliser les variables CSS, procédez comme suit :
+Pour commencer à personnaliser les variables CSS, procédez comme suit :
 
-1. Ouvrez le fichier `styles/styles.css` dans l’éditeur de code.
+1. Ouvrez le fichier `styles/styles.css` dans un éditeur de code.
 2. Recherchez la déclaration `:root`, où sont stockées les variables CSS globales.
 3. Modifiez les variables de couleur et de police pour qu’elles correspondent à la marque WKND.
 
-Voici un exemple :
+Voici un exemple :
 
 
 ```css
@@ -90,15 +90,15 @@ Voici un exemple :
 
 Explorez les autres variables de la section `:root` et passez en revue les paramètres par défaut.
 
-Lorsque vous développez un site web et que vous vous trouvez à répéter les mêmes valeurs CSS, pensez à créer de nouvelles variables pour rendre les styles plus faciles à gérer. Voici quelques exemples d’autres propriétés CSS qui peuvent bénéficier des variables CSS : `border-radius`, `padding`, `margin` et `box-shadow`.
+Lorsque vous développez un site web et que vous répétez les mêmes valeurs CSS, pensez à créer de nouvelles variables pour rendre les styles plus faciles à gérer. Voici quelques exemples d’autres propriétés CSS qui peuvent bénéficier des variables CSS : `border-radius`, `padding`, `margin` et `box-shadow`.
 
 ### Éléments nus
 
 Les éléments nus sont stylisés directement par le biais de leur nom d’élément au lieu d’utiliser une classe CSS. Par exemple, plutôt que de mettre en forme une classe CSS `.page-heading`, les styles sont appliqués à l’élément `h1` à l’aide de `h1 { ... }`.
 
-Dans le fichier `styles/styles.css`, un ensemble de styles de base est appliqué aux éléments HTML nus. Les sites web Edge Delivery Services donnent la priorité à l’utilisation d’éléments nus, car ils s’alignent sur l’HTML sémantique native d’Edge Delivery Service.
+Dans le fichier `styles/styles.css`, un ensemble de styles de base est appliqué aux éléments HTML nus. Les sites web Edge Delivery Services donnent la priorité à l’utilisation d’éléments nus, car ils s’alignent sur le code HTML sémantique natif d’Edge Delivery Service.
 
-Pour nous aligner sur le branding WKND, nous allons mettre en forme certains éléments nus en `styles.css` :
+Pour nous aligner sur le branding WKND, nous allons mettre en forme certains éléments nus dans `styles.css` :
 
 ```css
 /* styles/styles.css */
@@ -121,13 +121,13 @@ h2::after {
 
 Ces styles garantissent que les éléments `h2`, sauf s’ils sont remplacés, sont mis en forme de manière cohérente avec la marque WKND, ce qui contribue à créer une hiérarchie visuelle claire. Le soulignement jaune partiel sous chaque `h2` ajoute une touche distinctive aux en-têtes.
 
-### Eléments déduits
+### Éléments déduits
 
-Dans Edge Delivery Services, le code `scripts.js` et `aem.js` du projet améliore automatiquement des éléments HTML nus spécifiques en fonction de leur contexte dans HTML.
+Dans Edge Delivery Services, le code `scripts.js` et `aem.js` du projet améliore automatiquement des éléments HTML nus spécifiques en fonction de leur contexte dans le code HTML.
 
-Par exemple, les éléments d’ancrage (`<a>`) créés sur leur propre ligne (plutôt que sur le texte qui les entoure) sont considérés comme des boutons en fonction de ce contexte. Ces ancres sont automatiquement enveloppées avec un conteneur `div` avec des `button-container` de classe CSS et l’élément d’ancrage dispose d’une classe CSS `button` ajoutée.
+Par exemple, les éléments d’ancrage (`<a>`) créés sur leur propre ligne (plutôt que sur le texte qui les entoure) sont considérés comme des boutons en fonction de ce contexte. Ces ancrages sont automatiquement enveloppés avec un conteneur `div` avec un `button-container` de classe CSS et l’élément d’ancrage dispose d’une classe CSS `button` ajoutée.
 
-Par exemple, lorsqu’un lien est créé sur sa propre ligne, Edge Delivery Services JavaScript met à jour son DOM de la manière suivante :
+Par exemple, lorsqu’un lien est créé sur sa propre ligne, le JavaScript Edge Delivery Services met à jour son DOM de la manière suivante :
 
 ```html
 <p class="button-container">
@@ -135,9 +135,9 @@ Par exemple, lorsqu’un lien est créé sur sa propre ligne, Edge Delivery Serv
 </p>
 ```
 
-Ces boutons peuvent être personnalisés pour correspondre à la marque WKND : les boutons s’affichent sous la forme de rectangles jaunes avec du texte noir.
+Ces boutons peuvent être personnalisés pour correspondre à la marque WKND : les boutons s’affichent sous la forme de rectangles jaunes avec du texte noir.
 
-Voici un exemple de mise en forme des « boutons déduits » dans `styles.css` :
+Voici un exemple de mise en forme des « boutons déduits » dans `styles.css` :
 
 ```css
 /* styles/styles.css */
@@ -176,12 +176,12 @@ Ce CSS définit les styles de bouton de base et inclut des traitements spécifiq
 
 Les projets Edge Delivery Services optimisent l’utilisation des polices web pour maintenir des performances élevées et minimiser l’impact sur les scores Lighthouse. Cette méthode assure un rendu rapide sans compromettre l’identité visuelle du site. Voici comment implémenter efficacement des polices web pour des performances optimales.
 
-### Faces de police
+### Polices
 
-Ajoutez des polices web personnalisées à l’aide des déclarations de `@font-face` CSS dans le fichier `styles/fonts.css`. L’ajout du `@font-faces` à `fonts.css` garantit que les polices web sont chargées au moment optimal, ce qui contribue à la conservation des scores Lighthouse.
+Ajoutez des polices web personnalisées à l’aide des déclarations `@font-face` CSS dans le fichier `styles/fonts.css`. L’ajout de `@font-faces` à `fonts.css` garantit que les polices web sont chargées au moment optimal, ce qui contribue à la conservation des scores Lighthouse.
 
 1. Ouvrez `styles/fonts.css`.
-2. Ajoutez les déclarations de `@font-face` suivantes pour inclure les polices de marque WKND : `Asar` et `Source Sans Pro`.
+2. Ajoutez les déclarations de `@font-face` suivantes pour inclure les polices de marque WKND : `Asar` et `Source Sans Pro`.
 
 ```css
 /* styles/fonts.css */
@@ -250,7 +250,7 @@ Ajoutez des polices web personnalisées à l’aide des déclarations de `@font-
 }
 ```
 
-Les polices utilisées dans ce tutoriel proviennent de Google Fonts, mais vous pouvez les obtenir auprès de n’importe quel fournisseur de polices, y compris [Adobe Fonts](https://fonts.adobe.com/).
+Les polices utilisées dans ce tutoriel proviennent de Google Fonts, mais vous pouvez les obtenir auprès de n’importe quel fournisseur de polices, y compris [Adobe Fonts](https://fonts.adobe.com/).
 
 +++Utilisation de fichiers de polices web locaux
 
@@ -271,7 +271,7 @@ Ce tutoriel utilise les polices web hébergées à distance afin qu’il soit pl
 
 +++
 
-Enfin, mettez à jour les variables CSS `styles/styles.css` pour utiliser les nouvelles polices :
+Enfin, mettez à jour les variables CSS `styles/styles.css` pour utiliser les nouvelles polices :
 
 ```css
 /* styles/styles.css */
@@ -285,17 +285,17 @@ Enfin, mettez à jour les variables CSS `styles/styles.css` pour utiliser les no
 }
 ```
 
-Les `roboto-fallback` et `roboto-condensed-fallback` sont des polices de secours qui sont mises à jour dans la section [Polices de secours](#fallback-fonts) pour s’aligner afin de prendre en charge les polices `Asar` et web `Source Sans Pro` personnalisées.
+Les éléments `roboto-fallback` et `roboto-condensed-fallback` sont des polices de secours mises à jour dans la section [Polices de secours](#fallback-fonts) afin qu’elles s’alignent pour prendre en charge les polices web personnalisées `Asar` et `Source Sans Pro`.
 
-### Polices de remplacement
+### Polices de secours
 
-Les polices web ont souvent un impact sur les performances en raison de leur taille, augmentant potentiellement les scores de décalage de mise en page cumulé (CLS) et réduisant les scores globaux de Lighthouse. Pour garantir un affichage instantané du texte pendant le chargement des polices web, les projets Edge Delivery Services utilisent des polices de remplacement natives dans le navigateur. Cette approche permet de maintenir une expérience utilisateur fluide pendant que la police souhaitée s’applique.
+Les polices web ont souvent un impact sur les performances en raison de leur taille, augmentant potentiellement les scores de décalage de mise en page cumulé (CLS) et réduisant les scores globaux de Lighthouse. Pour garantir un affichage instantané du texte pendant le chargement des polices web, les projets Edge Delivery Services utilisent des polices de secours natives dans le navigateur. Cette approche permet de maintenir une expérience d’utilisation fluide pendant que la police souhaitée s’applique.
 
-Pour sélectionner la meilleure police de secours, utilisez l’extension Adobe [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), qui détermine une police étroitement correspondante que les navigateurs peuvent utiliser avant le chargement de la police personnalisée. Les déclarations de police de secours qui en résultent doivent être ajoutées au fichier `styles/styles.css` pour améliorer les performances et garantir une expérience fluide pour les utilisateurs.
+Pour sélectionner la meilleure police de secours, utilisez l’extension [Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback) d’Adobe, qui détermine une police étroitement correspondante que les navigateurs peuvent utiliser avant le chargement de la police personnalisée. Les déclarations de police de secours qui en résultent doivent être ajoutées au fichier `styles/styles.css` pour améliorer les performances et garantir une expérience fluide pour les utilisateurs et utilisatrices.
 
 ![Extension Helix Font Fallback Chrome](./assets/4-website-branding/font-fallback-chrome-plugin.png){align=center}
 
-Pour utiliser l’extension [Chrome de secours de polices Helix](https://www.aem.live/developer/font-fallback), assurez-vous que les polices web sont appliquées à la page web dans les mêmes variations que celles utilisées sur le site web Edge Delivery Services. Ce tutoriel présente l’extension sur [wknd.site](http://wknd.site/fr.html). Lors du développement d’un site web, appliquez l’extension au site sur lequel vous travaillez plutôt qu’à [wknd.site](http://wknd.site/fr.html).
+Pour utiliser l’[extension Helix Font Fallback Chrome](https://www.aem.live/developer/font-fallback), assurez-vous que les polices web sont appliquées à la page web dans les mêmes variations que celles utilisées sur le site web Edge Delivery Services. Ce tutoriel présente l’extension sur [wknd.site](http://wknd.site/fr.html). Lors du développement d’un site web, appliquez l’extension au site sur lequel vous travaillez plutôt qu’à [wknd.site](http://wknd.site/fr.html).
 
 ```css
 /* styles/styles.css */
@@ -320,7 +320,7 @@ Pour utiliser l’extension [Chrome de secours de polices Helix](https://www.aem
 ...
 ```
 
-Ajoutez les noms de famille de polices de remplacement aux variables CSS des polices dans `styles/styles.css` après les « vrais » noms de famille de polices.
+Ajoutez les noms de famille de polices de remplacement aux variables CSS des polices dans `styles/styles.css` après les « vrais » noms de famille de polices.
 
 ```css
 /* styles/styles.css */
@@ -336,21 +336,21 @@ Ajoutez les noms de famille de polices de remplacement aux variables CSS des pol
 
 ## Aperçu du développement
 
-À mesure que vous ajoutez CSS, l’environnement de développement local de l’interface de ligne de commande d’AEM recharge automatiquement les modifications, ce qui permet de voir rapidement et facilement comment le CSS affecte le bloc.
+À mesure que vous ajoutez du CSS, l’environnement de développement local de l’interface de ligne de commande d’AEM recharge automatiquement les modifications, ce qui permet de voir rapidement et facilement comment le CSS affecte le bloc.
 
 ![Aperçu du développement du CSS de la marque WKND](./assets/4-website-branding/preview.png)
 
 
 ## Télécharger les fichiers CSS finaux
 
-Vous pouvez télécharger les fichiers CSS mis à jour à partir des liens ci-dessous :
+Vous pouvez télécharger les fichiers CSS mis à jour à partir des liens ci-dessous :
 
 * [`styles.css`](https://raw.githubusercontent.com/davidjgonzalez/aem-wknd-eds-ue/refs/heads/main/styles/styles.css)
 * [`fonts.css`](https://raw.githubusercontent.com/davidjgonzalez/aem-wknd-eds-ue/refs/heads/main/styles/fonts.css)
 
-## Afficher les fichiers CSS
+## Appliquer lint aux fichiers CSS
 
-Veillez à [fréquemment pelucher](./3-local-development-environment.md#linting) vos modifications de code pour vous assurer qu’elles sont propres et cohérentes. La liaison régulière permet de détecter les problèmes tôt et de réduire le temps de développement global. N’oubliez pas que vous ne pouvez pas fusionner votre travail dans la branche principale tant que tous les problèmes de liaison ne sont pas résolus.
+Veillez à [fréquemment appliquer lint](./3-local-development-environment.md#linting) à vos modifications de code pour vous assurer qu’elles sont claires et cohérentes. L’application régulière de lint permet de détecter les problèmes tôt et de réduire le temps de développement global. N’oubliez pas que vous ne pouvez pas fusionner votre travail dans la branche principale tant que tous les problèmes de lint ne sont pas résolus.
 
 ```bash
 $ npm run lint:css
@@ -372,7 +372,7 @@ Une fois les modifications transmises à la branche `wknd-styles`, créez une re
 2. Cliquez sur l’onglet **Demandes d’extraction** et sélectionnez **Nouvelle demande d’extraction**.
 3. Définissez `wknd-styles` comme branche source et `main` comme branche cible.
 4. Vérifiez les modifications et cliquez sur **Créer une demande d’extraction**.
-5. Dans les détails de la demande d’extraction, **ajoutez ce qui suit** :
+5. Dans les détails de la demande d’extraction, **ajoutez ce qui suit** :
 
    ```
    Add basic global CSS, CSS variables, and web fonts (including fallback fonts) to support the WKND brand.
@@ -384,11 +384,11 @@ Une fois les modifications transmises à la branche `wknd-styles`, créez une re
    - After: https://wknd-styles--wknd-aem-eds-ue--davidjgonzalez.aem.live/
    ```
 
-   * Le `Fix #1` fait référence au problème GitHub créé précédemment.
-   * Les URL de test indiquent à AEM Code Sync les branches à utiliser pour la validation et la comparaison. L’URL « Après » utilise le `wknd-styles` de branche de travail pour vérifier comment les modifications de code affectent les performances du site web.
+   * L’élément `Fix #1` fait référence au problème GitHub créé précédemment.
+   * Les URL de test indiquent à AEM Code Sync les branches à utiliser pour la validation et la comparaison. L’URL « Après » utilise la branche de travail `wknd-styles` pour vérifier comment les modifications de code affectent les performances du site web.
 
 6. Cliquez sur **Créer une demande d’extraction**.
-7. Attendez que l’application GitHub de synchronisation de code AEM [&#128279;](./1-new-code-project.md) **termine les vérifications de qualité**. En cas d’échec, résolvez les erreurs et réexécutez les vérifications.
-8. Une fois les vérifications effectuées, **fusionnez la requête de tirage** dans `main`.
+7. Attendez que l’[application GitHub AEM Code Synch](./1-new-code-project.md) **termine les vérifications de qualité**. En cas d’échec, résolvez les erreurs et exécutez à nouveau les vérifications.
+8. Une fois les vérifications effectuées, **fusionnez la demande d’extraction** dans `main`.
 
 Une fois les modifications fusionnées dans `main`, elles sont considérées comme déployées en production et le nouveau développement peut se poursuivre en fonction de ces mises à jour.

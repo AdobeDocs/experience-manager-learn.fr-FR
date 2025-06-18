@@ -10,7 +10,7 @@ level: Intermediate
 exl-id: 62a36ab1-3245-43ac-b943-e28ff95661bf
 duration: 108
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '55'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Cette section présente brièvement le nettoyage des révisions en ligne, qui atténue la nécessité de procéder à des nettoyages fréquents des révisions hors ligne.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424583?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/17004?quality=12&learn=on)
 
 ## Documents annexes
 
