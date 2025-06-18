@@ -10,7 +10,7 @@ team: TM
 source-git-commit: 2ffe4706856f0dbf63f2916af010f23bdb7b0045
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 91%
 
 + [Vue d’ensemble](overview.md)
 
-+ Listes de lecture vidéo{#video-playlists}
++ Listes de lectures vidéo{#video-playlists}
    + [Vue Assets](playlists/assets-view.md)
    + [Vue d’administration](playlists/admin-view.md)
 
-+ Configurer{#configuring}
++ Configuration{#configuring}
    + [Dossiers de référence](configuring/baseline-folders.md)
    + [Permissions de référence](configuring/baseline-permissions.md)
    + [Balisage](configuring/tagging.md)
@@ -50,7 +50,7 @@ ht-degree: 91%
    + [Versions](./collaboration/versions.md)
    + [Tâche de révision](./collaboration/review-task.md)
 
-+ Recherche et découverte{#search-and-discovery}
++ Recherche et détection{#search-and-discovery}
    + [Recherche](./search-and-discovery/search.md)
    + [Recherche contextuelle](./search-and-discovery/contextual-search.md)
    + [Intégration d’Adobe Firefly](./search-and-discovery/adobe-firefly.md)
@@ -62,7 +62,7 @@ ht-degree: 91%
    + [Ressources 3D](./advanced/3d-assets.md)
    + [Sortie du PDF d’annotations](./advanced/customizing-annotations-pdf-output.md)
    + [Rapports sur les ressources](./advanced/asset-reports.md)
-   + [Informations d’identification du contenu](./advanced/content-credentials.md)
+   + [Informations de traçabilité du contenu](./advanced/content-credentials.md)
    + [Balises bloquées](./advanced/blocked-tags.md)
    + [Extraire l’archive](./advanced/extract-archive.md)
    + [Autorisations (groupes d’utilisateurs et d’utilisatrices fermés)](./advanced/closed-user-groups.md)
@@ -92,7 +92,7 @@ ht-degree: 91%
 + Edge Delivery Services{#edge-delivery-services}
    + [Plug-in Sidekick](./edge-delivery-services/sidekick-plugin.md)
 
-+ Adobe GenStudio{#adobe-genstudio}
++ Adobe GenStudio{#adobe-genstudio}
    + [AEM Assets et GenStudio for Performance Marketing](https://experienceleague.adobe.com/fr/docs/integrations-learn/experience-cloud/tutorials/genstudio-for-performance-marketing-experience-manager/overview)
 
 + Partage et distribution{#sharing}
@@ -105,13 +105,13 @@ ht-degree: 91%
       + [Configurer l’approvisionnement des ressources](brand-portal/configure-asset-sourcing.md)
       + [Activer les téléchargements de rendu](brand-portal/enable-renditions-download.md)
 
-   + Asset share{#assets-share}
+   + Partage de ressources{#assets-share}
       + [Asset Share Commons](./sharing/asset-share-commons-user-experience-feature-video-understand.md)
       + [Configurer Asset Share Commons sur AEM local](./sharing/asset-share-commons-technical-video-setup.md)
       + [Établir un thème dans Asset Share Commons](./sharing/asset-share-commons-feature-video-theming.md)
       + [Kits de ressources Asset Share Commons](./sharing/asset-share/asset-share-commons-asset-kits.md)
 
-+ Workflows Creative{#creative-workflows}
++ Workflows créatifs{#creative-workflows}
    + [Intégration d’Adobe Express](./creative-workflows/adobe-express.md)
    + [Adobe Express et AEM Assets](./creative-workflows/adobe-express-aem-assets.md)
    + [Application de bureau AEM](./creative-workflows/aem-desktop-app.md)
@@ -141,7 +141,7 @@ ht-degree: 91%
    + [Application de bureau Dynamic Media Classic](dynamic-media/dynamic-media-classic-desktop-application.md)
    + Images {#images}
       + [Automatisation des images](dynamic-media/dynamic-media-image-automation.md)
-      + [Modèles Dynamic Media](dynamic-media/dynamic-media-templates.md)
+      + [Modèles Dynamic Media](dynamic-media/dynamic-media-templates.md)
       + [Instantané Dynamic Media](dynamic-media/dynamic-media-snapshot.md)
       + [Recadrage intelligent](dynamic-media/smart-crop-feature-video-use.md)
       + [Accentuation de l’image](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
@@ -152,13 +152,13 @@ ht-degree: 91%
       + [Streaming adaptatif DASH](dynamic-media/dynamic-media-dash.md)
       + [Vidéo de recadrage intelligent Dynamic Media](dynamic-media/dynamic-media-smart-crop-video.md)
       + [Lecteur vidéo](dynamic-media/dynamic-media-video-player-feature-video-use.md)
-   + Visionneuses {#viewers}
-      + [Visionneuses](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
+   + Lecteurs de contenu {#viewers}
+      + [Lecteurs de contenu](dynamic-media/dynamic-media-viewer-feature-video-understand.md)
       + [Visionneuses d’images panoramiques et verticales](dynamic-media/panorama-vertical-image-viewer-feature-video-use.md)
       + [Visionneuses avec Adobe Analytics](dynamic-media/dynamic-media-viewer-extension-use.md)
    + 3D {#3d}
       + [Dynamic Media 3D](dynamic-media/dynamic-media-3d-feature-video.md)
-   + Utilisation d’avec AEM Sites {#dm-with-aem-sites}
+   + Utilisation avec AEM Sites {#dm-with-aem-sites}
       + [Fragments d’expérience](dynamic-media/dynamic-media-experience-fragments-feature-video-use.md)
       + [Composants principaux de Dynamic Media](dynamic-media/dynamic-media-core-components.md)
 
@@ -178,11 +178,11 @@ ht-degree: 91%
       + [Télécharger des ressources dans l’application Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [API IPS Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
 
-+ Intégration de Workfront{#workfront}
++ Intégration Workfront{#workfront}
    + Connecteur amélioré{#enhanced-connector}
       + [Bases du connecteur amélioré](./workfront/enhanced-connector/basics.md)
       + [Dossiers de projets](./workfront/enhanced-connector/project-folders.md)
-      + Série AEM Experts{#aem-experts-series}
+      + Série d’expertes et experts AEM{#aem-experts-series}
          + [Vue d’ensemble](./workfront/enhanced-connector/aem-experts-series/overview.md)
          + [Configurer](./workfront/enhanced-connector/aem-experts-series/setup.md)
          + [Formulaires Workfront et métadonnées AEM](./workfront/enhanced-connector/aem-experts-series/custom-forms.md)

@@ -9,7 +9,7 @@ version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a
 source-git-commit: 7e13dda1303e33181bdb6845c8274b0e59ea5505
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 92%
    + [Métadonnées en bloc](document-authoring/bulk-metadata.md)
    + [Métadonnées de page](document-authoring/page-metadata.md)
    + [Authentification de création](document-authoring/author-authentication.md)
-   + Comment{#how-to}
+   + Procédures{#how-to}
       + [Audit de documents](./document-authoring/how-to/document-audit.md)
       + [Autorisations de document](./document-authoring/how-to/document-permissions.md)
       + [Versions de document](./document-authoring/how-to/document-versions.md)
@@ -73,7 +73,7 @@ ht-degree: 92%
    + [Système de style](page-authoring/style-system-feature-video-use.md)
    + [Distorsion du temps](page-authoring/timewarp-feature-video-use.md)
    + [Lancements](page-authoring/launches.md)
-   + Apprendre De Vos Pairs {#expert-advice}
+   + Apprendre de vos paires et pairs {#expert-advice}
       + [Conseils sur la hiérarchie du site](page-authoring/expert-advice/site-hierarchy.md)
 + IA générative {#generative-ai}
    + [Générer des variations](./generative-ai/generate-variations.md)
@@ -86,11 +86,11 @@ ht-degree: 92%
 + Fragments d’expérience {#experience-fragments}
    + [Utiliser des fragments d’expérience](experience-fragments/experience-fragments-feature-video-use.md)
    + [Créer des blocs](experience-fragments/building-blocks.md)
-   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr){target=_blank}
+   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Vue d’ensemble](./edge-delivery-services/overview.md)
    + Développement{#developing}
-      + [Conditions préalables](edge-delivery-services/developing/prerequisites.md)
+      + [Prérequis](edge-delivery-services/developing/prerequisites.md)
       + [Modèle standard AEM](edge-delivery-services/developing/aem-boilerplate.md)
       + [Référentiel de contenu](edge-delivery-services/developing/content-repository.md)
       + [Prévisualiser et publier](edge-delivery-services/developing/preview-and-publish.md)
@@ -100,7 +100,7 @@ ht-degree: 92%
       + [Git](edge-delivery-services/developing/git.md)
       + Éditeur universel {#universal-editor}
          + [Vue d’ensemble](./edge-delivery-services/developing/universal-editor/0-overview.md)
-         + [Nouveau projet de code](./edge-delivery-services/developing/universal-editor/1-new-code-project.md)
+         + [Nouveau code de projet](./edge-delivery-services/developing/universal-editor/1-new-code-project.md)
          + [Nouveau site AEM](./edge-delivery-services/developing/universal-editor/2-new-aem-site.md)
          + [Environnement de développement local](./edge-delivery-services/developing/universal-editor/3-local-development-environment.md)
          + [Branding du site web](./edge-delivery-services/developing/universal-editor/4-website-branding.md)
@@ -108,10 +108,10 @@ ht-degree: 92%
          + [Créer le bloc](./edge-delivery-services/developing/universal-editor/6-author-block.md)
          + [Bloquer avec uniquement CSS](./edge-delivery-services/developing/universal-editor/7a-block-css.md)
          + [Bloquer avec CSS et JS](./edge-delivery-services/developing/universal-editor/7b-block-js-css.md)
-         + Comment{#how-to}
+         + Procédure{#how-to}
             + [Options de bloc](./edge-delivery-services/developing/universal-editor/how-to/block-options.md)
             + [En-tête et pied de page](./edge-delivery-services/developing/universal-editor/how-to/header-and-footer.md)
-   + Comment{#how-to}
+   + Procédure{#how-to}
       + [Flux RSS](edge-delivery-services/how-to/rss.md)
       + [Partage sur les médias sociaux](edge-delivery-services/how-to/social-media-sharing.md)
       + [Supprimer des pages](edge-delivery-services/how-to/delete-page.md)
@@ -192,7 +192,7 @@ ht-degree: 92%
       + [Créer une Activity Target à l’aide d’offres de fragments d’expérience](integrations/adobe-target/create-target-activity.md)
       + [Personnalisation à l’aide du compositeur d’expérience visuelle](integrations/adobe-target/personalization-using-vec.md)
       + [Personnaliser l’expérience complète d’une page web](integrations/adobe-target/personalization-web-page.md)
-+ Apprendre De Vos Pairs {#expert-resources}
++ Apprendre de vos paires et pairs {#expert-resources}
    + [Vue d’ensemble](expert-resources/learn-from-your-peers-overview.md)
    + [Création D’Un Guide De Création Dans AEM Sites](expert-resources/authoring-guide-in-sites.md)
    + [Évaluation de la maturité d’AEM Sites](expert-resources/maturity-assessment.md)

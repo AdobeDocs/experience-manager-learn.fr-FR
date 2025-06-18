@@ -73,8 +73,8 @@ Vous trouverez ci-dessous les configurations de déploiement requises pour le d�
 | La SPA se connecte à → | Création AEM | Publication AEM | Prévisualisation AEM |
 |---------------------------------------------------:|:----------:|:-----------:|:-----------:|
 | [Filtres Dispatcher.](./configurations/dispatcher-filters.md) | ✘ | ✔ | ✔ |
-| [Partage de ressources entre origines multiples (CORS).](./configurations/cors.md) | ✔ | ✔ | ✔ |
-| [Hôtes AEM.](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
+| [Partage de ressources entre origines multiples (CORS)](./configurations/cors.md) | ✔ | ✔ | ✔ |
+| [Hôtes AEM](./configurations/aem-hosts.md) | ✔ | ✔ | ✔ |
 
 #### Exemple de déploiement d’une SPA sur différents domaines
 

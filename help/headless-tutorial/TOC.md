@@ -11,7 +11,7 @@ index: y
 source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 + [Présentation d’AEM Headless](./overview.md)
 + GraphQL {#graphql}
    + [Portail de développement d’AEM Headless](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr){target=_blank}
-   + [Présentation](./graphql/overview.md)
+   + [Vue d’ensemble](./graphql/overview.md)
    + Configuration rapide {#quick-setup}
       + [Cloud Service](./graphql/quick-setup/cloud-service.md)
       + [SDK AEM](./graphql/quick-setup/local-sdk.md)
@@ -46,7 +46,7 @@ ht-degree: 94%
       + [3 - Explorer l’API GraphQL d’AEM](/help/headless-tutorial/graphql/advanced-graphql/explore-graphql-api.md)
       + [4 - Requêtes GraphQL persistantes](/help/headless-tutorial/graphql/advanced-graphql/graphql-persisted-queries.md)
       + [5 - Intégration de l’application cliente](/help/headless-tutorial/graphql/advanced-graphql/client-application-integration.md)
-   + Tutoriel initial sur le découplage{#headless-first}
+   + Premier tutoriel Headless{#headless-first}
       + [Vue d’ensemble](./graphql/headless-first-tutorial/overview.md)
       + [&#x200B;1. Modélisation de contenu](./graphql/headless-first-tutorial/1-content-modeling.md)
       + [&#x200B;2. API AEM Headless et React](./graphql/headless-first-tutorial/2-aem-headless-apis-and-react.md)
@@ -61,12 +61,12 @@ ht-degree: 94%
       + [Hôtes AEM](./graphql/deployment/configurations/aem-hosts.md)
       + [CORS](./graphql/deployment/configurations/cors.md)
       + [Filtres Dispatcher](./graphql/deployment/configurations/dispatcher-filters.md)
-+ Comment {#how-to}
++ Procédures {#how-to}
    + [Texte enrichi](./graphql/how-to/rich-text.md)
    + [Images](./graphql/how-to/images.md)
    + [Contenu localisé](./graphql/how-to/localized-content.md)
    + [Jeux de résultats volumineux](./graphql/how-to/large-result-sets.md)
-   + [Prévisualiser](./graphql/how-to/preview.md)
+   + [Prévisualisation](./graphql/how-to/preview.md)
    + [Contenu protégé](./graphql/how-to/protected-content.md)
    + [SDK AEM Headless](./graphql/how-to/aem-headless-sdk.md)
    + [Installer GraphiQL sur AEM 6.5](./graphql/how-to/install-graphiql-aem-6-5.md)
@@ -92,7 +92,7 @@ ht-degree: 94%
       + [3 - Composants fixes](./spa-editor/remote-spa/spa-fixed-component.md)
       + [4 - Composants de conteneur](./spa-editor/remote-spa/spa-container-component.md)
       + [5 - Itinéraires dynamiques](./spa-editor/remote-spa/spa-dynamic-routes.md)
-   + Comment{#how-to}
+   + Procédures{#how-to}
       + [Composants React modifiables v2 d’AEM](./spa-editor/how-to/react-core-components-v2.md)
 + Authentification par jeton {#authentication}
    + [Vue d’ensemble](./authentication/overview.md)
