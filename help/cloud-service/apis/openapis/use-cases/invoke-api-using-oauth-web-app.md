@@ -12,10 +12,10 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
-workflow-type: ht
-source-wordcount: '2213'
-ht-degree: 100%
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
+workflow-type: tm+mt
+source-wordcount: '2262'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Dans cet article, vous apprenez ce qui suit :
 
 Avant de commencer, vérifiez les points suivants :
 
-- Section [Accès aux API Adobe et aux concepts associés](../overview.md#accessing-adobe-apis-and-related-concepts).
+- Section [Accès aux API Adobe et concepts associés](../overview.md#accessing-adobe-apis-and-related-concepts).
 - Article [Configuration des API AEM basées sur OpenAPI](../setup.md).
 
 ## Exemple d’application web : vue d’ensemble et flux fonctionnel de WKND-PIM
@@ -49,7 +49,7 @@ L’application WKND PIM est un exemple d’application web conçue pour gérer 
 
 Le projet Adobe Developer Console (ADC) est configuré pour accéder à l’API de création Assets à l’aide de l’authentification de l’application web OAuth. Il fournit les _client_id_ et _client_secret_ nécessaires à l’application web WKND-PIM pour lancer le flux d’octroi _authorization_code_.
 
->[!VIDEO](https://video.tv.adobe.com/v/3442759?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3442757?quality=12&learn=on)
 
 
 Le diagramme suivant illustre le flux fonctionnel de l’application web WKND-PIM _obtention de jetons d’accès spécifiques à l’utilisateur ou à l’utilisatrice pour interagir avec l’API de création Assets_.
@@ -421,7 +421,7 @@ Configurez et exécutez l’application web WKND-PIM sur votre ordinateur local 
 Les éléments suivants sont requis afin de terminer ce tutoriel :
 
 - Environnement AEM as a Cloud Service modernisé avec les éléments suivants :
-   - AEM `2024.10.18459.20241031T210302Z` ou version ultérieure.
+   - AEM version `2024.10.18459.20241031T210302Z` ou version ultérieure.
    - Profils de produit avec un nouveau style (si l’environnement a été créé avant novembre 2024)
 
   Consultez l’article [Configuration d’API AEM basées sur OpenAPI](../setup.md) pour plus d’informations.
@@ -457,9 +457,13 @@ L’étape Configurer le projet ADC est _répétée_ à partir de la [Configurat
 
    ![Ajouter une API](../assets/s2s/add-api.png)
 
-1. Dans la boîte de dialogue _Ajouter une API_, filtrez par _Experience Cloud_ et sélectionnez la vignette **API de création AEM Assets**, puis cliquez sur **Suivant**.
+1. Dans la boîte de dialogue _Ajouter une API_, filtrez par _Experience Cloud_ et sélectionnez la vignette **API de création AEM Assets** puis cliquez sur **Suivant**.
 
-   ![Ajoutez une API AEM](../assets/s2s/add-aem-api.png)
+   ![Ajout d’une API AEM](../assets/s2s/add-aem-api.png)
+
+   >[!TIP]
+   >
+   >Si la carte d’API AEM **souhaitée est désactivée** et _Pourquoi est-ce désactivé ?_ informations indiquent le message **Licence requise** l’une des raisons peut être que vous n’avez PAS modernisé votre environnement AEM as a Cloud Service. Pour plus d’informations, consultez [Modernisation de l’environnement AEM as a Cloud Service](../setup.md#modernization-of-aem-as-a-cloud-service-environment).
 
 1. Ensuite, dans la boîte de dialogue _Configurer l’API_, sélectionnez l’option d’authentification **Authentification de l’utilisateur ou de l’utilisatrice** et cliquez sur **Suivant**.
 
@@ -481,7 +485,7 @@ L’étape Configurer le projet ADC est _répétée_ à partir de la [Configurat
 
 1. Examinez l’API AEM et la configuration de l’authentification.
 
-   ![Configuration des API AEM](../assets/web-app/aem-api-configuration.png)
+   ![Configuration d’API AEM](../assets/web-app/aem-api-configuration.png)
 
    ![Configuration d’authentification](../assets/web-app/authentication-configuration.png)
 

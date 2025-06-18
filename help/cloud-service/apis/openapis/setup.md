@@ -12,10 +12,10 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 34a22580db6dc32b5c4c5945af83600be2e0a852
-workflow-type: ht
-source-wordcount: '1440'
-ht-degree: 100%
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
+workflow-type: tm+mt
+source-wordcount: '1493'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ Dans cet exemple, l’API AEM Assets utilisant la méthode d’authentification
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
 
-Le processus général de configuration comprend les étapes suivantes :
+Le processus de configuration de haut niveau comprend les étapes suivantes :
 
 1. Modernisation de l’environnement AEM as a Cloud Service.
 1. Activez l’accès aux API AEM.
@@ -40,7 +40,7 @@ Le processus général de configuration comprend les étapes suivantes :
 La modernisation de l’environnement AEM as a Cloud Service est une activité unique par environnement qui comprend les étapes suivantes :
 
 - Mettez à jour vers AEM version **2024.10.18459.20241031T210302Z** ou une version ultérieure.
-- Ajoutez-y de nouveaux profils de produit, si l’environnement a été créé avant la version 2024.10.18459.20241031T210302Z.
+- Ajoutez-y de nouveaux profils de produit si l’environnement a été créé avant la version 2024.10.18459.20241031T210302Z.
 
 ### Mettre à jour l’instance AEM{#update-aem-instance}
 
@@ -70,7 +70,7 @@ Les étapes ci-dessus complètent la modernisation de l’environnement AEM as�
 
 ## Activer l’accès aux API AEM{#enable-aem-apis-access}
 
-La présence des _nouveaux profils de produit_ permet d’activer l’accès à l’API AEM basée sur OpenAPI dans Adobe Developer Console (ADC). Rappelez-vous qu’[Adobe Developer Console (ADC)](./overview.md#accessing-adobe-apis-and-related-concepts) est le hub de développement pour accéder aux API, aux SDK, aux événements en temps réel, aux fonctions sans serveur d’Adobe, etc.
+La présence des _nouveaux profils de produit_ permet d’activer l’accès à l’API AEM basée sur OpenAPI dans Adobe Developer Console (ADC). Rappelez-vous que [Adobe Developer Console (ADC)](./overview.md#accessing-adobe-apis-and-related-concepts) est le hub de développement pour accéder aux API, aux SDK, aux événements en temps réel, aux fonctions sans serveur d’Adobe, etc.
 
 Les profils de produit nouvellement ajoutés sont associés aux _Services_ qui représentent _les groupes d’utilisateurs et d’utilisatrices AEM avec des listes de contrôle d’accès (ACL) prédéfinies_. Les _Services_ sont utilisés pour contrôler le niveau d’accès aux API AEM.
 
@@ -94,7 +94,7 @@ Par exemple, pour activer l’authentification de serveur à serveur pour l’AP
 
 ![Association du développeur ou de la développeuse au profil de produit](./assets/setup/associate-developer-to-product-profile.png)
 
-Après cette association, l’_API de création Asset_ du projet ADC peut configurer l’authentification de serveur à serveur souhaitée et associer le compte d’authentification du projet ADC (créé à l’étape suivante) au profil de produit.
+Après cette association, l’_API de création de ressources_ du projet ADC peut configurer l’authentification de serveur à serveur souhaitée et associer le compte d’authentification du projet ADC (créé à l’étape suivante) au profil de produit.
 
 >[!IMPORTANT]
 >
@@ -133,6 +133,10 @@ Après avoir créé le projet ADC, vous devez ajouter les API AEM souhaitées, c
 1. Dans la boîte de dialogue _Ajouter une API_, filtrez par _Experience Cloud_ et sélectionnez l’API AEM souhaitée. Par exemple, dans ce cas, l’_API de création Asset_ est sélectionnée.
 
    ![Ajout d’une API AEM](./assets/s2s/add-aem-api.png)
+
+   >[!TIP]
+   >
+   >    Si la carte d’API AEM **souhaitée est désactivée** et _Pourquoi est-ce désactivé ?_ informations indiquent le message **Licence requise** l’une des raisons peut être que vous n’avez PAS modernisé votre environnement AEM as a Cloud Service. Pour plus d’informations, consultez [Modernisation de l’environnement AEM as a Cloud Service](#modernization-of-aem-as-a-cloud-service-environment).
 
 1. Ensuite, dans la boîte de dialogue _Configurer l’API_, sélectionnez l’option d’authentification souhaitée. Par exemple, dans ce cas, l’option d’authentification **Serveur à serveur** est sélectionnée.
 
@@ -254,7 +258,7 @@ Une fois l’instance AEM configurée pour activer la communication de projet AD
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="Appeler l’API à l’aide de l’authentification de l’application web">Appeler l’API à l’aide de l’authentification de l’application web</a>
+                        <a href="./use-cases/invoke-api-using-oauth-web-app.md" target="_self" rel="referrer" title="Appeler l’API à l’aide de l’authentification de l’application web">Appeler l’API à l’aide de l’authentification d’application web</a>
                     </p>
                     <p class="is-size-6">Découvrez comment appeler les API AEM basées sur OpenAPI à partir d’une application web personnalisée à l’aide de l’authentification de l’application Web OAuth.</p>
                 </div>

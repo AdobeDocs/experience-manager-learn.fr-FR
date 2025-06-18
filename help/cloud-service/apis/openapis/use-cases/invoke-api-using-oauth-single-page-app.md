@@ -12,10 +12,10 @@ thumbnail: KT-17430.jpg
 last-substantial-update: 2025-03-28T00:00:00Z
 duration: 0
 exl-id: 9fb92127-9dea-4a1d-b1f7-8fb98cabf188
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
-workflow-type: ht
-source-wordcount: '2081'
-ht-degree: 100%
+source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
+workflow-type: tm+mt
+source-wordcount: '2130'
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ Dans cet article, vous apprenez ce qui suit :
 
 Avant de commencer, vérifiez les points suivants :
 
-- Section [Accès aux API Adobe et aux concepts associés](../overview.md#accessing-adobe-apis-and-related-concepts).
+- Section [Accès aux API Adobe et concepts associés](../overview.md#accessing-adobe-apis-and-related-concepts).
 - Article [Configuration des API AEM basées sur OpenAPI](../setup.md).
 
 ## Vue d’ensemble et flux fonctionnel de la SPA WKND{#wknd-spa-overview-and-functional-flow}
@@ -59,7 +59,7 @@ Le projet Adobe Developer Console (ADC) est configuré pour activer l’authen
 >Le projet ADC ne fournit PAS de _client_secret_. Au lieu de cela, la SPA génère un _code_verifier_ et un _code_challenge_ pour échanger en toute sécurité le code d’autorisation contre un _jeton d’accès_. Il n’est plus nécessaire de stocker un secret client côté client, ce qui renforce la sécurité.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3456966?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
 
 
 
@@ -385,6 +385,10 @@ L’étape Configurer le projet ADC est _répétée_ à partir de [Configurer le
 
    ![Ajout d’une API AEM](../assets/spa/add-aem-sites-api.png)
 
+   >[!TIP]
+   >
+   >Si la carte d’API AEM **souhaitée est désactivée** et _Pourquoi est-ce désactivé ?_ informations indiquent le message **Licence requise** l’une des raisons peut être que vous n’avez PAS modernisé votre environnement AEM as a Cloud Service. Pour plus d’informations, consultez [Modernisation de l’environnement AEM as a Cloud Service](../setup.md#modernization-of-aem-as-a-cloud-service-environment).
+
 1. Ensuite, dans la boîte de dialogue _Configurer l’API_, sélectionnez l’option d’authentification **Authentification de l’utilisateur ou de l’utilisatrice** et cliquez sur **Suivant**.
 
    ![Configurer l’API AEM](../assets/spa/configure-aem-api.png)
@@ -409,7 +413,7 @@ L’étape Configurer le projet ADC est _répétée_ à partir de [Configurer le
 
    ![Configuration d’API AEM](../assets/spa/aem-api-configuration.png)
 
-   ![Configuration de l’authentification](../assets/spa/authentication-configuration.png)
+   ![Configuration d’authentification](../assets/spa/authentication-configuration.png)
 
 ### Configurer l’instance AEM pour activer la communication du projet ADC{#configure-aem-instance-to-enable-adc-project-communication}
 
