@@ -29,4 +29,4 @@ Découvrez les dossiers de projet lors de l’utilisation du connecteur amélior
 + Mappage des métadonnées de dossiers
 + Héritage des métadonnées de dossiers
 
->[!VIDEO](https://video.tv.adobe.com/v/337586?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454761?quality=12&learn=on&captions=fre_fr)

@@ -31,7 +31,7 @@ Ce tutoriel vous guide tout au long des étapes nécessaires à l’enregistreme
 
 ## Démonstration du cas d’utilisation
 
->[!VIDEO](https://video.tv.adobe.com/v/327122?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346929?quality=12&learn=on&captions=fre_fr)
 
 ## Conditions préalables
 

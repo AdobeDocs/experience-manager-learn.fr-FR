@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Les lancements dans AEM Sites permettent de créer, de rédiger et de revoir le contenu d’un site web en vue d’une version ultérieure. Pendant la création du lancement, le site web de production peut continuer d’évoluer et de changer quotidiennement, comme il le ferait normalement.
 
->[!VIDEO](https://video.tv.adobe.com/v/331285?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/346838?quality=12&learn=on&captions=fre_fr)

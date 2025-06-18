@@ -26,7 +26,7 @@ La commande d’index [!DNL oak-run.jar] regroupe plusieurs fonctionnalités per
 
 ## Bases de la commande d’index [!DNL oak-run.jar]
 
->[!VIDEO](https://video.tv.adobe.com/v/21475?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40116?quality=12&learn=on&captions=fre_fr)
 
 * La version de [[!DNL oak-run.jar]](https://repository.apache.org/service/local/artifact/maven/redirect?r=releases&amp;g=org.apache.jackrabbit&amp;a=oak-run&amp;v=1.8.0) utilisée doit correspondre à la version d’Oak utilisée sur l’instance AEM.
 * La gestion des index à l’aide de [!DNL oak-run.jar] tire parti de la commande **[!DNL index]** avec différents indicateurs pour prendre en charge différentes opérations.
@@ -35,21 +35,21 @@ La commande d’index [!DNL oak-run.jar] regroupe plusieurs fonctionnalités per
 
 ## Statistiques d’index
 
->[!VIDEO](https://video.tv.adobe.com/v/21477?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39295?quality=12&learn=on&captions=fre_fr)
 
 * `oak-run.jar` vide toutes les définitions d’index, toutes les statistiques d’index importantes et tout le contenu d’index en vue d’une analyse hors ligne.
 * La collecte des statistiques d’index peut s’exécuter en toute sécurité sur les instances AEM en cours d’utilisation.
 
 ## Contrôle de cohérence d’index
 
->[!VIDEO](https://video.tv.adobe.com/v/21476?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36717?quality=12&learn=on&captions=fre_fr)
 
 * `oak-run.jar` détermine rapidement si les index Lucene Oak sont corrompus.
 * Il est recommandé de lancer l’exécution sur une instance AEM en cours d’utilisation pour les niveaux de contrôle de cohérence 1 et 2.
 
 ## Indexation en ligne TarMK avec [!DNL oak-run.jar] {#tarmkonlineindexingwithoakrunjar}
 
->[!VIDEO](https://video.tv.adobe.com/v/21479?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36721?quality=12&learn=on&captions=fre_fr)
 
 * L’indexation en ligne de [!DNL TarMK] avec [!DNL oak-run.jar] est plus rapide que de définir `reindex=true` sur le nœud `oak:queryIndexDefinition`. Malgré cette augmentation des performances, l’indexation en ligne avec [!DNL oak-run.jar] nécessite toujours une fenêtre de maintenance pour effectuer l’indexation.
 
@@ -57,13 +57,13 @@ La commande d’index [!DNL oak-run.jar] regroupe plusieurs fonctionnalités per
 
 ## Indexation hors ligne TarMK avec oak-run.jar
 
->[!VIDEO](https://video.tv.adobe.com/v/21478?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36718?quality=12&learn=on&captions=fre_fr)
 
 * L’indexation hors ligne de [!DNL TarMK] avec [!DNL oak-run.jar] constitue la méthode d’indexation basée sur [!DNL oak-run.jar] la plus simple pour [!DNL TarMK], car elle nécessite une seule commande [!DNL oak-run.jar]. Toutefois, elle requiert l’arrêt de l’instance AEM.
 
 ## Indexation hors bande TarMK avec oak-run.jar
 
->[!VIDEO](https://video.tv.adobe.com/v/21480?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340810?quality=12&learn=on&captions=fre_fr)
 
 * L’indexation hors bande sur [!DNL TarMK] avec [!DNL oak-run.jar] réduit l’impact de l’indexation sur les instances AEM en cours d’utilisation.
 * L’indexation hors bande est l’approche d’indexation recommandée pour les installations AEM où le temps de réindexation/indexation dépasse les fenêtres de maintenance disponibles.

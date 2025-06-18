@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Apprenez à collaborer dans le cadre de la gestion des ressources numériques en utilisant des commentaires, des annotations et des tâches.
 
->[!VIDEO](https://video.tv.adobe.com/v/335856?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418445?quality=12&learn=on&captions=fre_fr)

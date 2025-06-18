@@ -29,7 +29,7 @@ Commencez par créer deux dossiers (FormTemplates et BankingApplication). Ajoute
 
 Pour synchroniser ces ressources dans votre projet AEM à l’aide de l’outil IntelliJ et Repo, regardez la vidéo suivante :
 
->[!VIDEO](https://video.tv.adobe.com/v/336937?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448624?quality=12&learn=on&captions=fre_fr)
 
 ## Étapes suivantes
 

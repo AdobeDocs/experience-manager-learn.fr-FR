@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Découvrez comment rendre les sites web plus rapides avec Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427989/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453446/?learn=on&captions=fre_fr)
 
 Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/edge-delivery/overview) pour obtenir des détails complets sur Edge Delivery Services et ses fonctionnalités.
 
@@ -108,7 +108,7 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
             <a href="./developing/prerequisites.md" title="Prérequis"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425709/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3434586/?format=jpeg&captions=fre_fr"
                 alt="Prérequis">
             </a>
           </figure>
@@ -140,7 +140,7 @@ Consultez la [documentation](https://experienceleague.adobe.com/fr/docs/experien
             <a href="./developing/aem-boilerplate.md" title="Utiliser un modèle standard"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425713/?format=jpeg" alt="Configuration
+                src="https://video.tv.adobe.com/v/3434613/?format=jpeg&captions=fre_fr" alt="Configuration
 Modèle standard">
             </a>
           </figure>
@@ -172,7 +172,7 @@ Modèle standard">
             <a href="./developing/content-repository.md" title="Lier Google Drive"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425711/?format=jpeg" alt="Lier Google Drive">
+                src="https://video.tv.adobe.com/v/3434722/?format=jpeg&captions=fre_fr" alt="Lier Google Drive">
             </a>
           </figure>
         </div>
@@ -202,7 +202,7 @@ Modèle standard">
           <figure class="image is-16by9">
             <a href="./developing/content-repository.md" title="Lier Sharepoint" tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425712/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3446030/?format=jpeg&captions=fre_fr"
                 alt="Lier Sharepoint">
             </a>
           </figure>
@@ -234,7 +234,7 @@ Modèle standard">
             <a href="./developing/preview-and-publish.md" title="Prévisualiser et publier du contenu"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425714/?format=jpeg" alt="Prévisualiser et publier du contenu">
+                src="https://video.tv.adobe.com/v/3434711/?format=jpeg&captions=fre_fr" alt="Prévisualiser et publier du contenu">
             </a>
           </figure>
         </div>
@@ -265,7 +265,7 @@ Modèle standard">
             <a href="./developing/sidekick.md" title="Utiliser le sidekick"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425715/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441284/?format=jpeg&captions=fre_fr"
                 alt="Utiliser le sidekick">
             </a>
           </figure>
@@ -297,7 +297,7 @@ Modèle standard">
             <a href="./developing/document-structure.md" title="Structure des documents"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425716/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3445191/?format=jpeg&captions=fre_fr"
                 alt="Structure des documents">
             </a>
           </figure>
@@ -329,7 +329,7 @@ Modèle standard">
             <a href="./developing/local-development.md" title="Développement local"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425717/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3434733/?format=jpeg&captions=fre_fr"
                 alt="Développement local">
             </a>
           </figure>
@@ -361,7 +361,7 @@ Modèle standard">
             <a href="./developing/git.md" title="Intégrer à Git"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425718/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3441828/?format=jpeg&captions=fre_fr"
                 alt="Intégrer à Git">
             </a>
           </figure>
@@ -430,7 +430,7 @@ Modèle standard">
             <a href="./how-to/social-media-sharing.md" title="Partage sur les médias sociaux"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425974/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3439439/?format=jpeg&captions=fre_fr"
                 alt="Partage sur les médias sociaux">
             </a>
           </figure>
@@ -462,7 +462,7 @@ Modèle standard">
             <a href="./how-to/delete-page.md" title="Supprimer des pages"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3425973/?format=jpeg"
+                src="https://video.tv.adobe.com/v/3438092/?format=jpeg&captions=fre_fr"
                 alt="Supprimer des pages">
             </a>
           </figure>

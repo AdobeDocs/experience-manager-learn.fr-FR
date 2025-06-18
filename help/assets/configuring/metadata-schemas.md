@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Les schémas de métadonnées définissent l’interface dans laquelle les utilisateurs et utilisatrices interagissent avec les métadonnées des ressources dans AEM. Leur définition et leur application aux ressources sont essentielles à la gestion des ressources numériques.
 
->[!VIDEO](https://video.tv.adobe.com/v/33696?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37300?quality=12&learn=on&captions=fre_fr)

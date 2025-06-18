@@ -47,11 +47,11 @@ Les données du formulaire adaptatif sont stockées sous l’élément de donné
 
 **Mapper une variable XML avec le schéma. Utiliser cette fonctionnalité avec AEM Forms 6.5.1 et versions ultérieures**
 
->[!VIDEO](https://video.tv.adobe.com/v/28098?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34826?quality=12&learn=on&captions=fre_fr)
 
 #### Utiliser la variable dans l’envoi d’un e-mail
 
->[!VIDEO](https://video.tv.adobe.com/v/26441?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34827?quality=12&learn=on&captions=fre_fr)
 
 Pour que les ressources fonctionnent sur votre système, procédez comme suit :
 

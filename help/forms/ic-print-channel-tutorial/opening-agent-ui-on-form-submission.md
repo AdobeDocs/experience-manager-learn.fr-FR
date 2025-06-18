@@ -26,7 +26,7 @@ Cet article décrit les étapes à suivre pour ouvrir l’interface utilisateur 
 
 La vidéo suivante présente un cas d’utilisation.
 
->[!VIDEO](https://video.tv.adobe.com/v/40122?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328987?quality=12&learn=on&captions=fre_fr)
 
 ```java
 String accountNumber = request.getParameter("accountnumber"))

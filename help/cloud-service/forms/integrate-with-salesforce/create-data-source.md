@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Créez une source de données prise en charge par REST à l’aide du fichier Swagger créé à l’étape précédente.
 
->[!VIDEO](https://video.tv.adobe.com/v/331755?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411550?quality=12&learn=on&captions=fre_fr)
 
 | Configuration | Valeur |
 |---------------------|-----------------------------------------------------------------|

@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Extrayez des pièces jointes des formulaires et envoyez les pièces jointes dans un e-mail dans le workflow Power Automate.
 La vidéo suivante explique les étapes nécessaires pour former des pièces jointes à partir des données envoyées.
->[!VIDEO](https://video.tv.adobe.com/v/3409017?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413028?quality=12&learn=on&captions=fre_fr)
 
 Voici le schéma d’objet de pièce jointe que vous devez utiliser lors de l’étape de schéma Parse JSON.
 

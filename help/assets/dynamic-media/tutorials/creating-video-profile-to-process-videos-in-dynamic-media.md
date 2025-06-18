@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Cette vidéo décrit le processus de création d’un profil vidéo pour traiter les vidéos dans Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335382?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417801?quality=12&learn=on&captions=fre_fr)

@@ -21,5 +21,5 @@ ht-degree: 100%
 
 Améliorer le cas d’utilisation comme illustré dans cette vidéo
 
->[!VIDEO](https://video.tv.adobe.com/v/335800?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436565?quality=12&learn=on&captions=fre_fr)
 

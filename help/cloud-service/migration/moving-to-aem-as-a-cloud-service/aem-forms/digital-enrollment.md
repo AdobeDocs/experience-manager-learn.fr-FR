@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez comment AEM Forms as a Cloud Service prend en charge le cas d’utilisation de l’inscription numérique.
 
->[!VIDEO](https://video.tv.adobe.com/v/336966?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3455136?quality=12&learn=on&captions=fre_fr)

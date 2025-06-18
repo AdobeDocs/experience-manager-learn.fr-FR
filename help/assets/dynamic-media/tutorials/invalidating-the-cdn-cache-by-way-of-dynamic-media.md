@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Cette vidéo décrit le processus d’invalidation du cache du réseau CDN par le biais de Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335457?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418222?quality=12&learn=on&captions=fre_fr)

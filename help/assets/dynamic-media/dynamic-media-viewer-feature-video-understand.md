@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Les améliorations apportées à la visionneuse AEM Dynamic Media permettent aux et aux créatrices AEM de définir et de personnaliser la présentation des ressources à l’utilisateur ou à l’utilisatrice du site web.
 
->[!VIDEO](https://video.tv.adobe.com/v/17783?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40149?quality=12&learn=on&captions=fre_fr)
 
 Voici quelques améliorations majeures :
 

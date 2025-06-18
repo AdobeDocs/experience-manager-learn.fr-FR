@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Le recadrage intelligent Dynamic Media pour la vidéo utilise Adobe Sensei pour effectuer un suivi intelligent du point d’intérêt de la vidéo, ce qui garantit un rendu optimal sur toutes les tailles d’écran.
 
->[!VIDEO](https://video.tv.adobe.com/v/37958?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326468?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

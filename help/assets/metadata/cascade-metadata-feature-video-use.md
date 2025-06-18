@@ -23,7 +23,7 @@ ht-degree: 100%
 
 La gestion avancée des métadonnées permet de créer des règles de champ en cascade pour créer des relations contextuelles entre les métadonnées dans AEM Assets. La vidéo ci-dessous présente de nouvelles règles dynamiques pour les exigences de champ, la visibilité et les choix contextuels. La vidéo détaille également les étapes nécessaires pour qu’un administrateur ou une administratrice applique ces règles à un schéma de métadonnées personnalisé.
 
->[!VIDEO](https://video.tv.adobe.com/v/20702?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/347042?quality=12&learn=on&captions=fre_fr)
 
 Il existe trois ensembles de règles dynamiques qui peuvent être activés pour un champ de métadonnées spécifique :
 

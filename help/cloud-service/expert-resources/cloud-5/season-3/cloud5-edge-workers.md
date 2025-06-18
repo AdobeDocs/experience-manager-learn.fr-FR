@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Découvrez l’importance des workers Edge dans AEM Sites et Edge Delivery Services et comment les intégrer à vos systèmes back-end.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427589?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448118?learn=on&captions=fre_fr)
 
 ## Ressources supplémentaires
 

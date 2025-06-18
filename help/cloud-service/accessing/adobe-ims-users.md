@@ -28,7 +28,7 @@ ht-degree: 100%
 
 Les utilisateurs et utilisatrices demandant l’accès au service de création AEM sont gérés en tant qu’[utilisateurs et utilisatrices d’Adobe IMS](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html) dans l’[Adobe Admin Console](https://adminconsole.adobe.com). Découvrez la fonction des utilisateurs et utilisatrices d’Adobe IMS, ainsi que leur mode d’accessibilité et de gestion dans l’Admin Console.
 
->[!VIDEO](https://video.tv.adobe.com/v/39149?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327555?quality=12&learn=on&captions=fre_fr)
 
 ## Ressources supplémentaires
 

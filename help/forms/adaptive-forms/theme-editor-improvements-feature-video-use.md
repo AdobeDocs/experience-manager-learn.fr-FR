@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Améliorations de l’éditeur de thème pour les formulaires adaptatifs dans AEM 6.3
 
->[!VIDEO](https://video.tv.adobe.com/v/19497?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39213?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

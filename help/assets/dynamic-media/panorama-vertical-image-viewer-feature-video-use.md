@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Les améliorations apportées à la visionneuse Dynamic Media dans AEM 6.4 incluent l’ajout de plusieurs visionneuses (images panoramiques, images de réalité virtuelle panoramique et images verticales). La visionneuse panoramique procure un moyen simple d’offrir une expérience immersive et attrayante de la pièce, de la propriété, de l’emplacement ou du paysage sans aucun développement personnalisé.
 
->[!VIDEO](https://video.tv.adobe.com/v/24156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40211?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

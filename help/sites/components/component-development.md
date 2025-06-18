@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Présentation du développement de composants avec Adobe Experience Manager Sites. Inclut une introduction aux boîtes de dialogue, aux modèles Sling, aux scripts HTL et aux bibliothèques côté client.
 
->[!VIDEO](https://video.tv.adobe.com/v/32547?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36474?quality=12&learn=on&captions=fre_fr)

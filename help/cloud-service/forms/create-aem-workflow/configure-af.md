@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Configurer un formulaire adaptatif pour déclencher le workflow de révision
 
->[!VIDEO](https://video.tv.adobe.com/v/332435?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446503?quality=12&learn=on&captions=fre_fr)

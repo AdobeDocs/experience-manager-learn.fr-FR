@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Cette vidéo décrit le processus d’exécution du workflow Ressource de mise à jour DAM sur une ressource où Dynamic Media est activé.
 
->[!VIDEO](https://video.tv.adobe.com/v/335456?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418270?quality=12&learn=on&captions=fre_fr)

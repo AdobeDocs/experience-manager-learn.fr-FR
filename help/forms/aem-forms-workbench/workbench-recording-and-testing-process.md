@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Courte vidéo qui décrit le débogage du processus des formulaires dans Workbench
 
->[!VIDEO](https://video.tv.adobe.com/v/3429495/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439817/?learn=on&captions=fre_fr)

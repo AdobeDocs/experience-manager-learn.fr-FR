@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Comprendre les différents états associés à une tâche de traduction ou à un élément de la tâche.
 
->[!VIDEO](https://video.tv.adobe.com/v/36685?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41554?quality=12&learn=on&captions=fre_fr)

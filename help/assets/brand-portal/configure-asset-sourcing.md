@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit le processus de configuration de l’approvisionnement des ressources avec Brand Portal.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335451?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418294?quality=12&learn=on&captions=fre_fr)

@@ -20,7 +20,7 @@ ht-degree: 100%
 
 Dans le première volet d’une série en trois parties, nous allons apprendre les principes de base de Cloud Manager et comment utiliser la fonctionnalité d’audit de l’expérience.
 
->[!VIDEO](https://video.tv.adobe.com/v/343620?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449179?quality=12&learn=on&captions=fre_fr)
 
 ## Contenu couvert par cette vidéo
 

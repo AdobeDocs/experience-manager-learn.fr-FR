@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Les applications AEM Headless prennent en charge la prévisualisation de création intégrée. L’expérience de prévisualisation relie l’éditeur de fragment de contenu de l’instance de création d’AEM à votre application personnalisée (adressable via HTTP), ce qui permet d’insérer un lien profond dans l’application qui effectue le rendu du fragment de contenu en cours de prévisualisation.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416906?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449590?quality=12&learn=on&captions=fre_fr)
 
 Pour utiliser la prévisualisation du fragment de contenu, plusieurs conditions doivent être remplies :
 

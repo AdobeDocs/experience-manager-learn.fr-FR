@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment utiliser les commentaires et les annotations dans AEM pour communiquer et collaborer sur des ressources.
 
->[!VIDEO](https://video.tv.adobe.com/v/32049?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36913?quality=12&learn=on&captions=fre_fr)

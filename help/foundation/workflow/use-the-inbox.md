@@ -22,4 +22,4 @@ ht-degree: 100%
 
 La boîte de réception d’AEM facilite la collaboration et la visibilité des tâches et des workflows. La vue Calendrier de la boîte de réception effectue le suivi des projets et des tâches dans une vue temporelle afin de faciliter la gestion et la planification des projets. En vue Calendrier, la personne dispose d’une visibilité globale sur les tâches et les projets en cours, prévus, en échéance proche et en échéance dépassée.
 
->[!VIDEO](https://video.tv.adobe.com/v/16827?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410097?quality=12&learn=on&captions=fre_fr)

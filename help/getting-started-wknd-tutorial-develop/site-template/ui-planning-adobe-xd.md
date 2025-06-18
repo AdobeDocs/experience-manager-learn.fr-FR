@@ -41,7 +41,7 @@ Dans ce chapitre, deux fichiers Adobe XD sont étudiés : un pour le [modèle 
 
 ## kit d’interface utilisateur du modèle de site standard {#standard-site-template-uikit}
 
->[!VIDEO](https://video.tv.adobe.com/v/338680?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448432?quality=12&learn=on&captions=fre_fr)
 
 Étapes de haut niveau :
 
@@ -51,7 +51,7 @@ Dans ce chapitre, deux fichiers Adobe XD sont étudiés : un pour le [modèle 
 
 ## Kit d’interface utilisateur WKND {#wknd-ui-kit}
 
->[!VIDEO](https://video.tv.adobe.com/v/30214?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36076?quality=12&learn=on&captions=fre_fr)
 
 Étapes de haut niveau :
 

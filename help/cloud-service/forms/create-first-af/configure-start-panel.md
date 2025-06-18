@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Mettez en forme le texte dans le composant de texte statique à l’aide de l’éditeur de texte enrichi.
 
->[!VIDEO](https://video.tv.adobe.com/v/332235?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3440114?quality=12&learn=on&captions=fre_fr)

@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Les [environnements Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/manage-your-environment.html?lang=fr) sont composés des services de création AEM, de publication AEM et du Dispatcher. Différents environnements prennent en charge les rôles et peuvent être utilisés à l’aide de différents pipelines CI/CD. Les environnements Cloud Manager ont généralement un environnement de production, un environnement d’évaluation et un environnement de développement.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34716?quality=12&learn=on&captions=fre_fr)

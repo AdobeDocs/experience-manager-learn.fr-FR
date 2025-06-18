@@ -27,7 +27,7 @@ Les outils et processus de développement d’un projet de site web Edge Deliver
 
 Cette vidéo présente une vue d’ensemble de la topologie de développement d’un projet de site web Edge Delivery Services modifiable avec l’éditeur universel.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443978/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443980/?learn=on&enablevpops&captions=fre_fr)
 
 +++Voir les détails supplémentaires sur la topologie de développement
 

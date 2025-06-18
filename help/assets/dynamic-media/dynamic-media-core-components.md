@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Le composant d’image, qui fait partie des composants principaux d’Experience Manager, offre une prise en charge intégrée de Dynamic Media. Le composant d’image permet à un créateur ou une créatrice de contenu d’utiliser des fonctionnalités de Dynamic Media telles que les paramètres prédéfinis d’image, le recadrage intelligent et les modificateurs d’image sur une page AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/329331?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/341400?quality=12&learn=on&captions=fre_fr)
 
 ## Ressources supplémentaires
 

@@ -22,4 +22,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour examiner les problèmes liés à SAML dans AEM.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335466?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418300?quality=12&learn=on&captions=fre_fr)

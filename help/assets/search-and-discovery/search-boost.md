@@ -21,4 +21,4 @@ ht-degree: 100%
 
 # Amplification de recherche
 
->[!VIDEO](https://video.tv.adobe.com/v/16766?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410336?quality=12&learn=on&captions=fre_fr)

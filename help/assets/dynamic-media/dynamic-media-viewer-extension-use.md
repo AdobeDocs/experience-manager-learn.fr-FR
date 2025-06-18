@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Pour les clientes et les clients utilisant Dynamic Media et Adobe Analytics, vous pouvez désormais suivre l’utilisation des visionneuses Dynamic Media sur votre site web à l’aide de l’extension de visionneuse Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/29308?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33201?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

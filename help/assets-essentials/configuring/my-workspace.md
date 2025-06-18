@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment travailler plus efficacement à l’aide des widgets configurables par l’utilisateur ou l’utilisatrice de Mon espace de travail.
 
->[!VIDEO](https://video.tv.adobe.com/v/3413809?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418579?quality=12&learn=on&captions=fre_fr)

@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Créez un projet Adobe Developer Console qui définit son accès aux autres services Adobe et gère ses déploiements.
 
->[!VIDEO](https://video.tv.adobe.com/v/3412875?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3442016?quality=12&learn=on&captions=fre_fr)
 
 >[!IMPORTANT]
 >

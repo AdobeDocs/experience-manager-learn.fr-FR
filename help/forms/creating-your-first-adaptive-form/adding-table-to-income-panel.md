@@ -23,7 +23,7 @@ Nous allons ajouter un tableau au panneau Revenus. Configurez les lignes du tabl
 
 **Ajouter et configurer un composant Tableau**
 
->[!VIDEO](https://video.tv.adobe.com/v/22198?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326902?quality=12&learn=on&captions=fre_fr)
 
 
 
@@ -44,7 +44,7 @@ Nous allons ajouter un tableau au panneau Revenus. Configurez les lignes du tabl
 ## Créer une règle pour calculer le total général {#create-rule-to-calculate-grand-total}
 
 
->[!VIDEO](https://video.tv.adobe.com/v/22197?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326891?quality=12&learn=on&captions=fre_fr)
 
 ## Étapes suivantes
 

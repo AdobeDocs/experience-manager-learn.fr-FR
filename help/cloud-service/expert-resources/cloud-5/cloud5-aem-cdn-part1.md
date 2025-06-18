@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Il s’agit d’une analyse profonde du réseau CDN fourni dans le cadre d’AEM as a Cloud Service, qui explique notamment ce dont celui-ci est capable et s’il faut que vous apportiez votre propre réseau CDN. Voici la partie 1 sur 2.
 
->[!VIDEO](https://video.tv.adobe.com/v/340760?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447839?quality=12&learn=on&captions=fre_fr)
 
 ## Contenu présenté dans la première partie de cette série
 

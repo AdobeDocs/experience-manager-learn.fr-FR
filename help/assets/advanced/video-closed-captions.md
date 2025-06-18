@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Les sous-titres sont générés automatiquement lorsqu’un fichier vidéo est chargé dans AEM Assets avec Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432627/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446389/?learn=on&captions=fre_fr)

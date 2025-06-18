@@ -28,15 +28,15 @@ En règle générale, une bibliothèque cliente se compose d’un fichier CSS et
 
 ## Fonction pour remplir la liste déroulante {#function-to-populate-drop-down-list}
 
->[!VIDEO](https://video.tv.adobe.com/v/22282?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326875?quality=12&learn=on&captions=fre_fr)
 
 ### Définir le titre de résumé du panneau {#set-the-summary-title-of-panels}
 
->[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33130?quality=12&learn=on&captions=fre_fr)
 
 #### Valider le panneau {#validate-panels-using-rule-editor}
 
->[!VIDEO](https://video.tv.adobe.com/v/28409?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33127?quality=12&learn=on&captions=fre_fr)
 
 Voici le code utilisé pour valider les champs du panneau.
 

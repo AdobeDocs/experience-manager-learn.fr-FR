@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Explorez les événements déclenchés lors de la publication et de l’annulation de la publication dans Edge Delivery Services, ainsi que des cas d’utilisation et des exemples d’utilisation de ces événements.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427681?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446658?learn=on&captions=fre_fr)
 
 ## Ressources supplémentaires
 

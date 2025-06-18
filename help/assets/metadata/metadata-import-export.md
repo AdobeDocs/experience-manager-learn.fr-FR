@@ -25,7 +25,7 @@ Découvrez comment utiliser les fonctions d’import et d’export des métadonn
 
 ## Export des métadonnées {#metadata-export}
 
->[!VIDEO](https://video.tv.adobe.com/v/22132?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39393?quality=12&learn=on&captions=fre_fr)
 
 >[!TIP]
 >
@@ -45,7 +45,7 @@ Découvrez comment utiliser les fonctions d’import et d’export des métadonn
 
 ## Import de métadonnées {#metadata-import}
 
->[!VIDEO](https://video.tv.adobe.com/v/21374?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413318?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

@@ -22,6 +22,6 @@ ht-degree: 100%
 
 Découvrez comment créer et modifier du contenu facilement dans Adobe Experience Manager Assets à l’aide d’Adobe Express. Cette vidéo vous guide dans l’amélioration des workflows de contenu, en présentant à la fois la modification de ressources existantes et la création de nouvelles ressources, le tout simplifié pour plus d’efficacité et de convivialité.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425972/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444078/?learn=on&captions=fre_fr)
 
 Découvrez également comment configurer l’[intégration native d’AEM Assets à Adobe Express](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/integration-adobe-express/native-integration-adobe-express) afin d’accéder facilement à AEM Assets à partir d’Adobe Express.

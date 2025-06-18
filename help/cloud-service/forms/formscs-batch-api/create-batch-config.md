@@ -26,7 +26,7 @@ Pour utiliser une API Batch, créez une configuration par lot et lancez une exé
 >Assurez-vous que l’utilisateur ou l’utilisatrice AEM appartient au groupe ```forms-users``` pour effectuer des appels d’API.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/340241?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343699?quality=12&learn=on&captions=fre_fr)
 
 ## Créer une configuration par lot
 

@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Adobe Asset vous permet d’extraire des ressources AEM directement à partir de l’application de contenu créatif sur laquelle vous travaillez et de commencer immédiatement à apporter des modifications. Vous pouvez facilement archiver les ressources dans AEM Assets avec un contrôle de version et des commentaires appropriés une fois que vous avez fini de les modifier dans votre application Creative Cloud.
 
->[!VIDEO](https://video.tv.adobe.com/v/33886?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38635?quality=12&learn=on&captions=fre_fr)

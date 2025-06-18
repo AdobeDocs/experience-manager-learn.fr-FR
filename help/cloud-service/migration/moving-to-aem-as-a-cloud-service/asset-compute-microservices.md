@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Découvrez comment les microservices Asset Compute d’AEM Assets as a Cloud Service vous permettent de générer automatiquement et efficacement n’importe quel rendu pour vos ressources, en remplaçant ainsi le rôle du workflow AEM habituel.
 
->[!VIDEO](https://video.tv.adobe.com/v/336990?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454286?quality=12&learn=on&captions=fre_fr)
 
 ## Outil de migration des workflows
 

@@ -25,7 +25,7 @@ ht-degree: 100%
 
 Les blocs de création sont une sous-fonctionnalité des fragments d’expérience. Les blocs de création permettent aux créateurs et créatrices de contenu de réutiliser des composants dans différentes variations de fragments d’expérience.
 
->[!VIDEO](https://video.tv.adobe.com/v/331786?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410269?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

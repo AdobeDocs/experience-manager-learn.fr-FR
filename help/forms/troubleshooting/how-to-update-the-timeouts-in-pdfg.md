@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit le processus de mise à jour de la conversion du serveur et du délai d’expiration global du serveur dans le service de formulaires PDFG.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335514?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417606?quality=12&learn=on&captions=fre_fr)

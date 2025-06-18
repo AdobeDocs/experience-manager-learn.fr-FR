@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment AEM vous permet de comparer et de synchroniser facilement le champ de l’éditeur de texte enrichi dans les variations de fragments de contenu. En comparant et en synchronisant ces variations, vous pouvez garantir des messages cohérents sur tous les canaux qui utilisent le fragment de contenu.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419314/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437548/?learn=on&captions=fre_fr)

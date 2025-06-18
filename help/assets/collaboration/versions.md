@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment AEM crée et maintient des versions de ressources.
 
->[!VIDEO](https://video.tv.adobe.com/v/32052?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37132?quality=12&learn=on&captions=fre_fr)

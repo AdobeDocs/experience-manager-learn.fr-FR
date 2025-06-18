@@ -20,4 +20,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes pour activer la journalisation du débogage pour n’importe quelle classe du serveur d’applications JBoss.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335522?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417707?quality=12&learn=on&captions=fre_fr)

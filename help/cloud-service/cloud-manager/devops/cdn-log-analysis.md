@@ -22,7 +22,7 @@ ht-degree: 100%
 # Outil d’analyse des journaux de réseau CDN
 
 Découvrez l’_outil d’analyse des journaux de réseau CDN AEM Cloud Service_ fourni par Adobe et la manière dont il permet d’obtenir des informations sur les performances de votre réseau CDN et l’implémentation d’AEM.
->[!VIDEO](https://video.tv.adobe.com/v/3429177?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446107?quality=12&learn=on&captions=fre_fr)
 
 ## Vue d’ensemble
 

@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour capturer les informations requises afin de résoudre les problèmes de conversion et de validation de PDF/A dans le service Forms Assembler.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335518?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439194?quality=12&learn=on&captions=fre_fr)

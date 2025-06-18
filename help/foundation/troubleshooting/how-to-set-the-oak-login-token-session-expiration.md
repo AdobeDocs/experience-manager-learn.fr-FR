@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo présente les étapes pour définir l’expiration de la session du jeton de connexion Oak.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335468?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418252?quality=12&learn=on&captions=fre_fr)

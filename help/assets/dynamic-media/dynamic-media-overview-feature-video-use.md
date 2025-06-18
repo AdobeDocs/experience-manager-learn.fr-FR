@@ -28,7 +28,7 @@ Explorez les possibilités offertes par Adobe Dynamic Media avec notre [**Démon
 
 ## Vue d’ensemble de Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34943?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Cette vidéo décrit la gestion et l’accès au contenu multimédia à l’aide
 
 ## Utilisation avec AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34953?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Cette vidéo décrit comment gérer le contenu multimédia dans Adobe Experienc
 
 ## Créer une collection de supports variés
 
->[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34954?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Cette vidéo décrit le processus de création simple d’une collection de visi
 
 ## Paramètres prédéfinis d’image
 
->[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34726?quality=12&learn=on&captions=fre_fr)
 
 Cette vidéo décrit comment créer les paramètres d’image prédéfinis et ce qu’est un paramètre d’image prédéfini, un réducteur d’URL vers une série d’arguments de serveur d’images qui fonctionnent sur une image chaque fois qu’une URL en fait la demande. Découvrez des techniques précieuses pour étendre et modifier les paramètres d’image prédéfinis.
 
@@ -84,7 +84,7 @@ Cette vidéo décrit comment créer les paramètres d’image prédéfinis et ce
 
 ## Modificateurs d’URL avancés
 
->[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34724?quality=12&learn=on&captions=fre_fr)
 
 Cette vidéo décrit comment, au-delà du redimensionnement des images, tirer parti des fonctionnalités du fichier source lui-même (transparence d’arrière-plan, chemins de détourage et recadrages intégrés et texte sous forme de variables) avec les modificateurs d’URL de Dynamic Media.
 
@@ -96,7 +96,7 @@ Cette vidéo décrit comment, au-delà du redimensionnement des images, tirer pa
 
 ## Gérer la taille des fichiers JPEG
 
->[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35032?quality=12&learn=on&captions=fre_fr)
 
 
 >[!NOTE]
@@ -107,7 +107,7 @@ Trouvez le juste équilibre entre la qualité de l’image JPEG et la taille du 
 
 ## Sous-titrage
 
->[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34430?quality=12&learn=on&captions=fre_fr)
 
 Ajoutez en toute facilité des sous-titres aux vidéos Dynamic Media. Il vous suffit d’ajouter l’URL de copie pour qu’elle pointe vers un fichier de sous-titrage supplémentaire, un fichier sidecar web.VTT, qui contient les informations de sous-titrage pour n’importe quelle vidéo.
 

@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment les collections offrent une autre perception d’AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/32053?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36861?quality=12&learn=on&captions=fre_fr)

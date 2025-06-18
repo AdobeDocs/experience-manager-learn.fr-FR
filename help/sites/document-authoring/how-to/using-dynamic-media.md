@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment utiliser Dynamic Media dans Edge Delivery Services pour une diffusion d’images et de vidéos optimisée.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429593/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438899/?learn=on&captions=fre_fr)

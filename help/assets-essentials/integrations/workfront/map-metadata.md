@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment configurer le mappage des métadonnées entre les champs de Workfront et les propriétés d’Assets Essentials, et comment configurer Assets Essentials pour afficher les valeurs mappées.
 
->[!VIDEO](https://video.tv.adobe.com/v/336458?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422622?quality=12&learn=on&captions=fre_fr)

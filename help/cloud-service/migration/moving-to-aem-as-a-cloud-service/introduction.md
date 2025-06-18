@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez comment aborder les implémentations d’AEM as a Cloud Service sous un angle différent.
 
->[!VIDEO](https://video.tv.adobe.com/v/336956?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454308?quality=12&learn=on&captions=fre_fr)

@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment utiliser les audiences de fichiers CSV pour cibler la bonne audience avec le contenu approprié dans la création de documents Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428793/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436889/?learn=on&captions=fre_fr)

@@ -28,4 +28,4 @@ Dans ce cours, nous allons utiliser les microservices de génération de documen
 1. Configurer l’accès au compte technique dans AEM
 1. Lancer des appels HTTP à l’aide du jeton d’accès
 
->[!VIDEO](https://video.tv.adobe.com/v/334859?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342219?quality=12&learn=on&captions=fre_fr)

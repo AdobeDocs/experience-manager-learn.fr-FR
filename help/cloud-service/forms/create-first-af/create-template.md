@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Un modèle de formulaire adaptatif est un modèle de page AEM spécialisé avec des propriétés et une structure de contenu qui est utilisé pour créer un formulaire adaptatif. Il possède des dispositions, des styles et une structure de contenu initiale de base préconfigurés. Chaque formulaire adaptatif est basé sur un modèle.
 
->[!VIDEO](https://video.tv.adobe.com/v/332223?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3446151?quality=12&learn=on&captions=fre_fr)

@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment gérer et organiser vos pages web dans Adobe Experience Manager à l’aide du balisage.
 
->[!VIDEO](https://video.tv.adobe.com/v/32150?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36807?quality=12&learn=on&captions=fre_fr)

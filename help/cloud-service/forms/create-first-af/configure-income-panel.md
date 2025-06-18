@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Ajoutez un composant Tableau au panneau Revenus pour capturer les sources de revenus de la personne qui effectue la demande.
 
->[!VIDEO](https://video.tv.adobe.com/v/332233?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3425121?quality=12&learn=on&captions=fre_fr)

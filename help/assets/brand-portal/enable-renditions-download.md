@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour activer le téléchargement des rendus dans Brand Portal.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335449?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417807?quality=12&learn=on&captions=fre_fr)

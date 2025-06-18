@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment l’option Rechercher une image similaire d’AEM Assets vous permet de rechercher facilement la meilleure image en fonction de vos besoins.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426796/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438479/?learn=on&captions=fre_fr)

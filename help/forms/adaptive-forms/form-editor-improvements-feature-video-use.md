@@ -20,7 +20,7 @@ ht-degree: 100%
 
 La version 6.3 d’AEM introduit plusieurs nouvelles fonctionnalités et améliorations pour simplifier la création de formulaires et documents adaptatifs. Les améliorations permettent de réduire le délai de mise sur le marché et permettent aux utilisateurs et utilisatrices professionnels de travailler avec des formulaires et des documents.
 
->[!VIDEO](https://video.tv.adobe.com/v/19500?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38445?quality=12&learn=on&captions=fre_fr)
 
 **Voici quelques-unes des principales améliorations apportées à l’éditeur de formulaire adaptatif :**
 

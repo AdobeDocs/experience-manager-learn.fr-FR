@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Ajoutez des panneaux enfants au panneau racine et configurez la disposition des panneaux enfants.
 
->[!VIDEO](https://video.tv.adobe.com/v/332238?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447278?quality=12&learn=on&captions=fre_fr)

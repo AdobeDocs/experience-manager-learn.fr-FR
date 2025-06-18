@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez les principes fondamentaux de la création d’une structure de dossiers, les opérations de base telles que le déplacement, la copie et le renommage, ainsi que les collections.
 
->[!VIDEO](https://video.tv.adobe.com/v/335733?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3413850?quality=12&learn=on&captions=fre_fr)

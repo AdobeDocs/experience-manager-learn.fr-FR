@@ -22,7 +22,7 @@ ht-degree: 100%
 
 L’instantané de Dynamic Media est un outil de démonstration visuel, conçu pour illustrer la puissance de Dynamic Media pour une diffusion d’images optimisée et dynamique. Entraînez-vous avec des images de test ou des URL Dynamic Media afin d’observer visuellement le résultat de divers modificateurs d’image Dynamic Media et des optimisations de l’imagerie dynamique sur la taille de fichier (avec diffusion WebP et AVIF), le réseau et le rapport de pixels de l’appareil (DPR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3419421/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445565/?learn=on&captions=fre_fr)
 
 <a href="https://snapshot.scene7.com/" class="spectrum-Button spectrum-Button--primary spectrum-Button--sizeM">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Lancer l’instantané de Dynamic Media</span>

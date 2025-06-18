@@ -36,7 +36,7 @@ Le comportement par défaut de ce formulaire consiste à afficher tous les panne
 
 Pour modifier ce comportement par défaut, procédez comme suit :
 
->[!VIDEO](https://video.tv.adobe.com/v/338369?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438633?quality=12&learn=on&captions=fre_fr)
 
 
 Ajoutez le code suivant à l’événement clic du bouton **Suivant** à l’aide de l’éditeur de code.
@@ -57,7 +57,7 @@ Le code ci-dessus vous aidera à naviguer entre les onglets et les panneaux enfa
 
 Utilisez l’éditeur de style pour masquer le titre des panneaux enfants des onglets.
 
->[!VIDEO](https://video.tv.adobe.com/v/338370?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439126?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

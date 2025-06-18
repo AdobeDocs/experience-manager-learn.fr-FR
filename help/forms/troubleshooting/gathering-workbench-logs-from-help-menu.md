@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit le processus de collecte des journaux Workbench à partir du menu Aide.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335501?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417220?quality=12&learn=on&captions=fre_fr)

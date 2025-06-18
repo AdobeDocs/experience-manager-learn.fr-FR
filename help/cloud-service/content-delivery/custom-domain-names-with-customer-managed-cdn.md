@@ -47,7 +47,7 @@ Si vous n’avez pas accès à des services tiers, _collaborez avec votre équip
 
 ## Générer un certificat SSL
 
->[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441473?quality=12&learn=on&captions=fre_fr)
 
 Vous disposez de deux options :
 
@@ -222,7 +222,7 @@ Pour configurer et déployer la règle de réseau CDN de validation d’en-tête
 
 ## Transmettre le secret dans l’en-tête HTTP X-AEM-Edge-Key
 
->[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445047?quality=12&learn=on&captions=fre_fr)
 
 Mettez à jour le réseau CDN du client ou de la cliente pour transmettre le secret dans l’en-tête HTTP `X-AEM-Edge-Key`. Le secret est utilisé par le réseau CDN Adobe pour valider que la demande provient du réseau CDN du client ou de la cliente et transformer la valeur d’en-tête `Host` en valeur de `X-Forwarded-Host` reçue du réseau CDN du client ou de la cliente.
 

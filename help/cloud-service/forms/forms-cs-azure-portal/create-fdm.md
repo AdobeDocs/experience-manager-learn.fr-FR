@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Créer un modèle de données de formulaire hébergé dans l’espace de stockage Azure
 
->[!VIDEO](https://video.tv.adobe.com/v/335385?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419020?quality=12&learn=on&captions=fre_fr)

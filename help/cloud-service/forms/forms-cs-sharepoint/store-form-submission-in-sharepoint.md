@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment configurer et stocker des données de formulaire adaptatif dans Microsoft SharePoint.
 
->[!VIDEO](https://video.tv.adobe.com/v/3415793/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452525/?quality=12&learn=on&captions=fre_fr)

@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment accéder aux métadonnées et interagir avec ces dernières dans AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/32045?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37107?quality=12&learn=on&captions=fre_fr)

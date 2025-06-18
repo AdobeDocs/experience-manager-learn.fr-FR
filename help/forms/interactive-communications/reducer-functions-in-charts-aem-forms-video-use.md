@@ -59,4 +59,4 @@ Par exemple, les fonctions de réducteur peuvent être utilisées pour afficher 
 
 La vidéo suivante décrit les étapes à suivre pour utiliser les fonctions de réducteur.
 
->[!VIDEO](https://video.tv.adobe.com/v/21368?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38214?quality=12&learn=on&captions=fre_fr)

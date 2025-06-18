@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Les développeurs et développeuses qui créent des intégrations nécessitant un accès par programmation à AEM as a Cloud Service ont besoin d’un moyen simple et rapide d’obtenir des jetons d’accès temporaires pour AEM afin de faciliter les activités de développement local. Pour répondre à ce besoin, la Developer Console d’AEM permet aux développeurs et développeuses de générer eux-mêmes des jetons d’accès temporaires qui peuvent être utilisés pour accéder par programmation à AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/330477?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345201?quality=12&learn=on&captions=fre_fr)
 
 ## Générer un jeton d’accès au développement local
 

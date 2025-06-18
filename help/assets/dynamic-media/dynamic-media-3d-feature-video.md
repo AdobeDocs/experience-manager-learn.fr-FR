@@ -22,4 +22,4 @@ ht-degree: 100%
 
 La prise en charge de Dynamic Media 3D pour Adobe Experience Manager vous permet de personnaliser et de diffuser facilement des expériences interactives optimisées en 3D à grande échelle.
 
->[!VIDEO](https://video.tv.adobe.com/v/35156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39522?quality=12&learn=on&captions=fre_fr)

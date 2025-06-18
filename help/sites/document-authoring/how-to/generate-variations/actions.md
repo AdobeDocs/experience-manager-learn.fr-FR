@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez les actions qui peuvent être utilisées sur une variation de contenu générée (enregistrer, copier, évaluer, etc.) dans la création de documents Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428795/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437275/?learn=on&captions=fre_fr)

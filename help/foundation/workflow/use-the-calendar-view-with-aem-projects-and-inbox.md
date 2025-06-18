@@ -20,7 +20,7 @@ ht-degree: 100%
 
 La vue Calendrier d’AEM effectue le suivi des projets et des tâches dans un calendrier afin de faciliter la gestion et la planification des projets. En vue Calendrier, la personne dispose d’une visibilité globale sur les tâches et les projets en cours, prévus, en échéance proche et en échéance dépassée.
 
->[!VIDEO](https://video.tv.adobe.com/v/16804?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37967?quality=12&learn=on&captions=fre_fr)
 
 La vue Calendrier permet de mieux gérer les projets et les tâches grâce aux fonctionnalités suivantes :
 

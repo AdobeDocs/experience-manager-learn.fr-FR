@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment optimiser votre contenu pour le partage sur les médias sociaux à l’aide d’Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425974/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439439/?learn=on&captions=fre_fr)

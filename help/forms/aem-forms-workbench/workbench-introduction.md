@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Vidéo courte présentant l’interface d’utilisation d’AEM Forms Workbench
 
->[!VIDEO](https://video.tv.adobe.com/v/3429493/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439800/?learn=on&captions=fre_fr)

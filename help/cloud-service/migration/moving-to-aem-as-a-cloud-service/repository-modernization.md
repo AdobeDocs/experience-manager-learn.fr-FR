@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Découvrez la modernisation du référentiel, le contenu modifiable et non modifiable, la structure du package et l’outil d’interface de ligne de commande de modernisation du référentiel.
 
->[!VIDEO](https://video.tv.adobe.com/v/336958?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454794?quality=12&learn=on&captions=fre_fr)
 
 ## Outil de modernisation du référentiel (Repository Modernizer)
 

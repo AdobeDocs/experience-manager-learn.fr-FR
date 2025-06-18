@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Un thème contient des détails de style pour les composants et les panneaux, et vous pouvez réutiliser un thème sur différents formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez le thème à votre formulaire, le style spécifié s’applique aux composants correspondants de votre formulaire.
 
->[!VIDEO](https://video.tv.adobe.com/v/332229?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424883?quality=12&learn=on&captions=fre_fr)

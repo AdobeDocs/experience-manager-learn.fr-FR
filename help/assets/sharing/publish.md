@@ -23,6 +23,6 @@ ht-degree: 100%
 
 Découvrez comment publier des ressources et leurs rendus depuis le service de création AEM vers le service de publication AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/330932?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/344739?quality=12&learn=on&captions=fre_fr)
 
 _Assurez-vous que le déploiement AEM Assets dispose d’un service de publication AEM sous licence avant de publier des ressources._

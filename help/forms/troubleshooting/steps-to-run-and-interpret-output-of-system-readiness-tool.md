@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit le processus d’exécution et d’interprétation de la sortie de l’outil de préparation du système AEM Forms PDFG (SRT).*
 
->[!VIDEO](https://video.tv.adobe.com/v/335543?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417235?quality=12&learn=on&captions=fre_fr)

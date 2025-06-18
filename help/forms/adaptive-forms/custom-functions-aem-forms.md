@@ -85,4 +85,4 @@ Si vous rencontrez des difficultés pour créer des fonctions personnalisées, n
 ## Utiliser des fonctions personnalisées
 
 La vidéo suivante vous guide tout au long des étapes à suivre pour utiliser une fonction personnalisée dans l’éditeur de règles d’un formulaire adaptatif.
->[!VIDEO](https://video.tv.adobe.com/v/340305?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445843?quality=12&learn=on&captions=fre_fr)

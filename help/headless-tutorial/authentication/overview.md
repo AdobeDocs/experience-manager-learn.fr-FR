@@ -24,7 +24,7 @@ AEM offre de nombreux points d’entrée HTTP accessibles de manière découplé
 
 Suivez ce tutoriel et découvrez comment une application externe peut s’authentifier par programmation et interagir avec AEM as a Cloud Service via HTTP à l’aide de jetons d’accès.
 
->[!VIDEO](https://video.tv.adobe.com/v/330460?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410078?quality=12&learn=on&captions=fre_fr)
 
 ## Prérequis
 

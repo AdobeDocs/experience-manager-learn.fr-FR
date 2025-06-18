@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Créez un modèle de workflow à l’aide des composants de workflow AEM Forms. Utilisez le composant Or-Split pour orienter le workflow en fonction de la valeur de la variable d’état.
 
->[!VIDEO](https://video.tv.adobe.com/v/332434?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453193?quality=12&learn=on&captions=fre_fr)

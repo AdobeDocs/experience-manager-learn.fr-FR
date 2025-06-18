@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Obtenez votre score Lighthouse de 100 à l’aide de l’optimisation des requêtes et des recherches lorsque vous traitez un grand nombre d’enregistrements. Utilisez des techniques pour optimiser l’index de requête, améliorer la fonctionnalité de recherche et diviser les index de requête pour obtenir les meilleures performances.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440976/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440980/?learn=on&enablevpops&captions=fre_fr)

@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Configuration d’un environnement de développement local pour le développement d’Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425717/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3434733/?learn=on&captions=fre_fr)
 
 
 ## Étapes décrites dans la vidéo

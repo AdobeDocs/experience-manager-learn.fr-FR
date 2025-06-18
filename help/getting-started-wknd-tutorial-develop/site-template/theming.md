@@ -39,7 +39,7 @@ Il s’agit d’un tutoriel en plusieurs parties qui suppose que les étapes dé
 
 Ensuite, apportez des modifications aux sources de thème afin que le site corresponde à l’aspect de la marque WKND.
 
->[!VIDEO](https://video.tv.adobe.com/v/332918?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453622?quality=12&learn=on&captions=fre_fr)
 
 Étapes de haut niveau pour la vidéo :
 

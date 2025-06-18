@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Le rail de recherche d’administration Assets permet de rechercher des ressources à l’aide de critères personnalisés dans l’Omnisearch.
 
->[!VIDEO](https://video.tv.adobe.com/v/35842?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40070?quality=12&learn=on&captions=fre_fr)

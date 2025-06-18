@@ -22,4 +22,4 @@ ht-degree: 100%
 
 La vidéo suivante décrit les étapes à suivre pour créer et configurer un modèle de données de formulaire.
 
->[!VIDEO](https://video.tv.adobe.com/v/340790?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444794?quality=12&learn=on&captions=fre_fr)

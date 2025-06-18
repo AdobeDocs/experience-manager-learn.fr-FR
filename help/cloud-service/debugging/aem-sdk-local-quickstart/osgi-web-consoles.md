@@ -25,7 +25,7 @@ AEM fournit de nombreuses consoles OSGi, chacune fournissant des informations cl
 
 ## Lots
 
->[!VIDEO](https://video.tv.adobe.com/v/34335?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38077?quality=12&learn=on&captions=fre_fr)
 
 La console Lots est un catalogue des lots OSGi déployés sur AEM, et de leurs détails, avec la possibilité ad hoc de les démarrer et de les arrêter.
 
@@ -42,7 +42,7 @@ Cliquer sur chaque lot fournit des détails qui aident à déboguer votre applic
 
 ## Composants
 
->[!VIDEO](https://video.tv.adobe.com/v/34336?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38076?quality=12&learn=on&captions=fre_fr)
 
 La console Composants est un catalogue de tous les composants OSGi déployés sur AEM. Elle fournit toutes les informations les concernant, depuis leur cycle de vie de composant OSGi défini jusqu’aux services OSGi auxquels ils peuvent faire référence.
 
@@ -61,7 +61,7 @@ Principaux aspects qui facilitent les activités de débogage :
 
 ## Modèles Sling
 
->[!VIDEO](https://video.tv.adobe.com/v/34337?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38074?quality=12&learn=on&captions=fre_fr)
 
 La console Modèles Sling se trouve à l’emplacement suivant :
 

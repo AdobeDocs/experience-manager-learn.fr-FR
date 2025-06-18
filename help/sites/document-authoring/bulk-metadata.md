@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment les métadonnées en bloc sont gérées dans la création de documents et comment les auteurs et les autrices peuvent mettre à jour les métadonnées en bloc sans expertise technique.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425705/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438409/?learn=on&captions=fre_fr)

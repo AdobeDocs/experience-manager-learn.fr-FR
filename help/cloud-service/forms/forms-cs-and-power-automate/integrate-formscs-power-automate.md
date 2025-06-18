@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Lancez les flux Power Automate lors d’un envoi de formulaire adaptatif. La vidéo suivante montre les étapes nécessaires à la configuration et à l’intégration de Forms CS à Microsoft Power Automate.
 
->[!VIDEO](https://video.tv.adobe.com/v/345675?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412130?quality=12&learn=on&captions=fre_fr)

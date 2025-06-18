@@ -20,4 +20,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour configurer les localisateurs GemFire dans un cluster et effectuer la configuration correspondante.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335544?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417180?quality=12&learn=on&captions=fre_fr)

@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Les fonctionnalités de filigrane d’AEM as a Cloud Service permettent aux rendus d’image personnalisés d’être marqués en filigrane en utilisant n’importe quelle image PNG.
 
->[!VIDEO](https://video.tv.adobe.com/v/41536?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329452?quality=12&learn=on&captions=fre_fr)

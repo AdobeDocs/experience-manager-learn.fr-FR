@@ -18,6 +18,6 @@ ht-degree: 100%
 
 Découvrez comment installer et exécuter une instance locale d’Adobe Experience Manager en quelques minutes avec le fichier JAR de démarrage rapide d’AEM. Le fichier JAR de démarrage rapide d’AEM est un composant d’exécution AEM qui peut être installé et exécuté sur un ordinateur local.
 
->[!VIDEO](https://video.tv.adobe.com/v/32551?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36926?quality=12&learn=on&captions=fre_fr)
 
 Pour une configuration plus détaillée

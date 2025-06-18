@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment les redirections fonctionnent dans la création de documents et comment les auteurs et les autrices peuvent facilement configurer des redirections sans expertise technique.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425704/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438545/?learn=on&captions=fre_fr)

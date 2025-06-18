@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment mettre à jour, réviser et approuver les modifications dans une copie de langue à l’aide des lancements.
 
->[!VIDEO](https://video.tv.adobe.com/v/36683?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41628?quality=12&learn=on&captions=fre_fr)

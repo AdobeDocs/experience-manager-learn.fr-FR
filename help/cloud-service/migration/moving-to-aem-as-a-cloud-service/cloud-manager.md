@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Découvrez Cloud Manager pour AEM as a Cloud Service et ses différences avec Cloud Manager pour AEM sur Adobe Manage Services (AMS).
 
->[!VIDEO](https://video.tv.adobe.com/v/336961?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453897?quality=12&learn=on&captions=fre_fr)
 
 ## Exercice pratique
 

@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Créez un modèle de données de formulaire back-end dans le stockage Blob Azure.
 
->[!VIDEO](https://video.tv.adobe.com/v/335423?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419010?quality=12&learn=on&captions=fre_fr)

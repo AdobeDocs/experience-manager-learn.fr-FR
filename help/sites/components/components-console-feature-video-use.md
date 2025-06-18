@@ -20,7 +20,7 @@ ht-degree: 100%
 
 La console des composants fournit aux personnes chargées du développement et de l’administration un emplacement central pour gérer tous les différents composants dans une implémentation de Sites. La vidéo suivante présente les fonctionnalités de la console des composants.
 
->[!VIDEO](https://video.tv.adobe.com/v/17417?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38279?quality=12&learn=on&captions=fre_fr)
 
 La console des composants offre les fonctionnalités suivantes :
 

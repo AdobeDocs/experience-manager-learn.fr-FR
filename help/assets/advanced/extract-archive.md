@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment maîtriser une gestion efficace des ressources numériques dans AEM Assets à l’aide de notre vidéo informative, qui présente la fonctionnalité d’extraction de fichiers ZIP pour organiser et charger facilement vos hiérarchies de ressources directement dans la gestion des ressources numériques.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426368/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447144/?learn=on&captions=fre_fr)

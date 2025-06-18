@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment interroger les données de formulaire adaptatif dans le stockage Azure Blob à l’aide du service de métadonnées d’AEM Forms.
 
->[!VIDEO](https://video.tv.adobe.com/v/335717?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419015?quality=12&learn=on&captions=fre_fr)

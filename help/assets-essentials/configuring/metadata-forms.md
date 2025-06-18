@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez comment les formulaires de métadonnées peut être rapidement et facilement configuré pour adapter les métadonnées de ressources disponibles dans AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431686?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452049?quality=12&learn=on&captions=fre_fr)

@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Vous devez créer une application d’API sur votre instance Acrobat Sign pour l’intégrer à votre plateforme Acrobat Sign. L’application d’API agit en tant que représentant d’une application cliente, qui interagit avec la plateforme Acrobat Sign. Vous pouvez créer l’application d’API sur le domaine du client ou du partenaire.
 
->[!VIDEO](https://video.tv.adobe.com/v/332436?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411762?quality=12&learn=on&captions=fre_fr)

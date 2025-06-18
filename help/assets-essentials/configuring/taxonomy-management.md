@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment gérer la taxonomie de balisage dans la vue Assets d’AEM Assets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431081/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447368/?learn=on&captions=fre_fr)

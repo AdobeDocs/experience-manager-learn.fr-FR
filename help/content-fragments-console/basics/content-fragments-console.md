@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez les fonctionnalités de base de la console de création de fragments de contenu d’AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409492?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449333?quality=12&learn=on&captions=fre_fr)

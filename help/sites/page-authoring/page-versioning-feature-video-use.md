@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Le contrôle de version des pages permet aux auteurs et autrices de contenu de suivre les modifications associées à une page en créant une version de page. Il offre également la possibilité de prévisualiser, de restaurer et de comparer une version à la version actuelle d’une page.
 
->[!VIDEO](https://video.tv.adobe.com/v/32151?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36833?quality=12&learn=on&captions=fre_fr)
 
 Le contrôle de version permet de créer un instantané d’une page à un moment donné. Avec le contrôle de version, vous pouvez effectuer les opérations suivantes :
 * Créer une version d’une page

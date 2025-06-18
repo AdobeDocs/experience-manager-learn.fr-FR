@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment ajouter une tâche de traduction à un projet de traduction existant.
 
->[!VIDEO](https://video.tv.adobe.com/v/36488?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41636?quality=12&learn=on&captions=fre_fr)

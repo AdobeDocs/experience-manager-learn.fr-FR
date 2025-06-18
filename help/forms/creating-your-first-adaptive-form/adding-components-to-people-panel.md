@@ -23,15 +23,15 @@ Configurez le panneau Personnes en ajoutant le fragment des informations sur le 
 
 **Configurer le panneau Personnes dans AEM Forms 6.3 et 6.4**
 
->[!VIDEO](https://video.tv.adobe.com/v/22193?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326919?quality=12&learn=on&captions=fre_fr)
 
 **Configurer le panneau Personnes dans AEM Forms 6.5 et les versions ultérieures**
 
->[!VIDEO](https://video.tv.adobe.com/v/28385?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326935?quality=12&learn=on&captions=fre_fr)
 
 **Règles sur les informations du conjoint ou de la conjointe**
 
->[!VIDEO](https://video.tv.adobe.com/v/22195?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326927?quality=12&learn=on&captions=fre_fr)
 
 ## Étapes suivantes
 

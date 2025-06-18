@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Cette vidéo décrit le processus de création de visionneuses d’images avec AEM Dynamic Media.
 
->[!VIDEO](https://video.tv.adobe.com/v/335581?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418210?quality=12&learn=on&captions=fre_fr)

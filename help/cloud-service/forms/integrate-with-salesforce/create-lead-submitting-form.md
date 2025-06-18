@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Créez un formulaire adaptatif basé sur le modèle de données de formulaire de Salesforce et testez la création d’un lead dans Salesforce en envoyant le formulaire.
 
->[!VIDEO](https://video.tv.adobe.com/v/331758?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411562?quality=12&learn=on&captions=fre_fr)

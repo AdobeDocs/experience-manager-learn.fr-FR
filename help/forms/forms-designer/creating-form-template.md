@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Il existe un certain nombre de modèles fournis prêts à l’emploi que vous pouvez utiliser tels quels ou personnaliser à votre guise. Les modèles peuvent également être créés et gérés dans AEM Forms Designer. Vous pouvez commencer avec une page vierge, un modèle, une feuille de calcul, un PDF ou un fichier Microsoft Word. Cette vidéo couvre toutes ces options et ce qui est disponible prêt à l’emploi.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427678/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439149/?learn=on&captions=fre_fr)

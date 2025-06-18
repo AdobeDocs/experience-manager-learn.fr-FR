@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment activer la diffusion d’images optimisée pour le web sur AEM as a Cloud Service Sites à l’aide des composants principaux AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/346064?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449994?quality=12&learn=on&captions=fre_fr)

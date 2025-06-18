@@ -37,7 +37,7 @@ Les informations d’identification Reader Extensions sont associées à l’ut
 
 Regardez la vidéo pour ajouter les informations d’identification à l’utilisateur ou l’utilisatrice fd-service.
 
->[!VIDEO](https://video.tv.adobe.com/v/335849?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447289?quality=12&learn=on&captions=fre_fr)
 
 
 La commande permettant de répertorier les détails du fichier PFX est la suivante. La commande suivante implique que vous êtes dans le même répertoire que le fichier PFX.

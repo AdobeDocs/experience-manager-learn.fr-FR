@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Une courte vidéo qui décrit l’ajout de signatures numériques à AEM Forms.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427623/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439528/?learn=on&captions=fre_fr)

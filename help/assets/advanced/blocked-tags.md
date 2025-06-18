@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment améliorer la gestion des ressources dans AEM as a Cloud Service en utilisant les balises bloquées pour empêcher l’application de balises intelligentes sensibles à la culture, non pertinentes ou controversées.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426839/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3448502/?learn=on&captions=fre_fr)

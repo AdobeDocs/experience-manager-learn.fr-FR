@@ -26,7 +26,7 @@ Les fonctionnalités de différence de page d’AEM Sites affichent une vue rap
 
 ## Comparer des versions de page {#comparing-page-versions}
 
->[!VIDEO](https://video.tv.adobe.com/v/32152?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36785?quality=12&learn=on&captions=fre_fr)
 
 **Modifications HTML**
 

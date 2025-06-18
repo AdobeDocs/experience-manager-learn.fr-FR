@@ -28,7 +28,7 @@ Bases de données relationnelles : MySQL, Microsoft SQL Server, IBM DB2 et Orac
 
 Cette vidéo décrit un workflow qui montre l’utilisation que peut faire AEM Forms de Microsoft Dynamics en tant que source de données d’arrière-plan pour diffuser des communications interactives et personnalisées.
 
->[!VIDEO](https://video.tv.adobe.com/v/20971?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39249?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

@@ -20,4 +20,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour capturer les journaux HAR (archive HTTP).*
 
->[!VIDEO](https://video.tv.adobe.com/v/335488?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417175?quality=12&learn=on&captions=fre_fr)

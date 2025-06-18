@@ -26,7 +26,7 @@ Pour suivre cette vidéo, vous devez avoir déjà [intégré des balises dans Ad
 
 Découvrez comment activer Adobe Target sur votre site web AEM à l’aide de balises.
 
->[!VIDEO](https://video.tv.adobe.com/v/41247?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329003?quality=12&learn=on&captions=fre_fr)
 
 ## Étapes suivantes
 

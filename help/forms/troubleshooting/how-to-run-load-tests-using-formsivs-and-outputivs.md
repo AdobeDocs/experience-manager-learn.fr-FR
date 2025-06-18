@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour exécuter des tests de chargement à partir de l’interface utilisateur à l’aide des exemples FormsIVS et OutputIVS.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335507?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441470?quality=12&learn=on&captions=fre_fr)

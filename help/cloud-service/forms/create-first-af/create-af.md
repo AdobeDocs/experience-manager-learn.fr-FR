@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Créez un formulaire adaptatif et associez-le au thème créé.
 
->[!VIDEO](https://video.tv.adobe.com/v/332237?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424903?quality=12&learn=on&captions=fre_fr)

@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment le [module externe AEM Assets Sidekick](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin) peut être utilisé pour incorporer des ressources gérées dans des expériences à fort impact diffusées par le biais d’Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424615/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3435824/?learn=on&captions=fre_fr)

@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit le processus d’ajustement des paramètres de performances de Workbench.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335511?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417195?quality=12&learn=on&captions=fre_fr)

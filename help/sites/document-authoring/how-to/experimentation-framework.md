@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Explorez le cadre d’expérimentation qui permet aux spécialistes marketing de tester quelles sont les variations de contenu les plus efficaces dans la création de documents Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429061/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437856/?learn=on&captions=fre_fr)

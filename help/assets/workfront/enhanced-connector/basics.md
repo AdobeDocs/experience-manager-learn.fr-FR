@@ -31,4 +31,4 @@ Découvrez les principes de base du connecteur amélioré Adobe Workfront et Ex
 + créer des versions des ressources ;
 + publier automatiquement des ressources
 
->[!VIDEO](https://video.tv.adobe.com/v/337575?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454296?quality=12&learn=on&captions=fre_fr)

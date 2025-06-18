@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Adobe lance une application de bureau pour Dynamic Media Classic qui fournit une expérience similaire à un navigateur et une interface fonctionnellement équivalente qui ne dépend pas du Flash Player d’Adobe.
 
->[!VIDEO](https://video.tv.adobe.com/v/36645?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327757?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

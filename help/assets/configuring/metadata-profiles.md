@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Les profils de métadonnées permettent l’application automatique des métadonnées par défaut aux ressources dans les dossiers de ressources, ce qui permet de réduire la charge de la gestion des métadonnées pour les utilisateurs et utilisatrices d’AEM ainsi que d’accroître la cohérence des métadonnées.
 
->[!VIDEO](https://video.tv.adobe.com/v/33974?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/37277?quality=12&learn=on&captions=fre_fr)

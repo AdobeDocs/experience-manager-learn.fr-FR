@@ -22,7 +22,7 @@ ht-degree: 100%
 Ajoutez des panneaux enfants au panneau racine.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/28536?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326911?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >Lorsque vous ajoutez des panneaux enfants au panneau racine, veuillez **vous assurer que vous êtes en mode de modification. Le bouton Modifier se trouve en haut à droite du navigateur.**

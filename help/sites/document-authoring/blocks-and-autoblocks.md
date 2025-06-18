@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment les blocs et les blocs automatiques sont utilisés dans la création de documents et comment ils peuvent améliorer le site et l’expérience de création.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425703/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439501/?learn=on&captions=fre_fr)

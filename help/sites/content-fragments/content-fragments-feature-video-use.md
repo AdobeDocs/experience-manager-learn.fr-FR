@@ -36,13 +36,13 @@ Cette série de vidéos aborde le cycle de vie de la création de fragments de c
 
 ## Définir des modèles de fragment de contenu {#defining-content-fragment-models}
 
->[!VIDEO](https://video.tv.adobe.com/v/22452?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38045?quality=12&learn=on&captions=fre_fr)
 
 Les modèles de fragments de contenu AEM (les schémas de données des fragments de contenu) doivent être activés via [[!UICONTROL l’Explorateur de configurations]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=fr) d’AEM, qui permet de définir des modèles de fragment de contenu en fonction d’une configuration.
 
 ## Créer des fragments de contenu {#creating-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22451?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38050?quality=12&learn=on&captions=fre_fr)
 
 Les configurations AEM sont appliquées aux hiérarchies de dossiers AEM Assets, afin de permettre la création de leurs modèles de fragments de contenu en tant que fragments de contenu. Les fragments de contenu assurent une expérience de création riche, basée sur des formulaires, et qui permet de modéliser le contenu en tant que collection d’éléments.
 
@@ -53,7 +53,7 @@ Les fragments de contenu peuvent avoir plusieurs variantes, chacune répondant �
 
 ## Télécharger des fragments de contenu {#downloading-content-fragments}
 
->[!VIDEO](https://video.tv.adobe.com/v/22450?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328398?quality=12&learn=on&captions=fre_fr)
 
 Les fragments de contenu AEM peuvent être téléchargés depuis l’instance de création AEM sous forme de fichier Zip contenant des variantes, des éléments et des métadonnées.
 
@@ -62,7 +62,7 @@ Les fragments de contenu AEM peuvent être téléchargés depuis l’instance d
 
 ## Fonctionnalités éditoriales des fragments de contenu {#editorial-capabilities}
 
->[!VIDEO](https://video.tv.adobe.com/v/25891?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/39650?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

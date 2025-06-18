@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Découvrez comment créer et utiliser un rendu FPO (For Placement Only) pour les ressources AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/34259?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38596?quality=12&learn=on&captions=fre_fr)

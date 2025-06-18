@@ -289,7 +289,7 @@ La version recommandée des outils du Dispatcher est celle qui est fournie avec 
 
 La configuration de base Apache et de Dispatcher est améliorée régulièrement et publiée avec la version du SDK AEM as a Cloud Service. Il est recommandé d’incorporer des améliorations de configuration de base dans votre projet AEM et d’éviter la [validation locale](#validate-configurations) et les échecs du pipeline Cloud Manager. Mettez-les à jour à l’aide du script `update_maven.sh` du dossier `.../dispatcher-sdk-x.x.x/bin`.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416744?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33558?quality=12&learn=on&captions=fre_fr)
 
 *Cette vidéo utilise macOS à des fins d’illustration. Les commandes Windows/Linux équivalentes peuvent être utilisées pour obtenir des résultats similaires.*
 

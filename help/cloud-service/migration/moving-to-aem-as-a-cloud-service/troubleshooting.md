@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez comment résoudre les problèmes et déboguer le SDK AEM, AEM as a Cloud Service et le processus de création et de déploiement.
 
->[!VIDEO](https://video.tv.adobe.com/v/336964?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454655?quality=12&learn=on&captions=fre_fr)

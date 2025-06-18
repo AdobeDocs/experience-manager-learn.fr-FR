@@ -23,13 +23,13 @@ ht-degree: 100%
 
 Partie 1 : ajouter des titres, des images, des champs de texte et des champs de date
 
->[!VIDEO](https://video.tv.adobe.com/v/3427620/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439728/?learn=on&captions=fre_fr)
 
 Partie 2 : ajouter et créer des objets personnalisés et des fragments de formulaire
 
->[!VIDEO](https://video.tv.adobe.com/v/3427621/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439583/?learn=on&captions=fre_fr)
 
 Accéder au contenu d’aide
 
->[!VIDEO](https://video.tv.adobe.com/v/3427622/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437234/?learn=on&captions=fre_fr)
 

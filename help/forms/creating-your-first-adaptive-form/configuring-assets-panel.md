@@ -23,10 +23,10 @@ Configurez la disposition en accordéon pour le panneau Ressources. La dispositi
 
 **Configurer le panneau Ressources**
 
->[!VIDEO](https://video.tv.adobe.com/v/22200?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326883?quality=12&learn=on&captions=fre_fr)
 
 **Définir le titre de résumé**
->[!VIDEO](https://video.tv.adobe.com/v/28387?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33130?quality=12&learn=on&captions=fre_fr)
 
 ## Étapes suivantes
 

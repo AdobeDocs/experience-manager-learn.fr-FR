@@ -24,11 +24,11 @@ ht-degree: 100%
 >id="intro_core_components"
 >title="Présentation des composants principaux dans AEM as a Cloud Service"
 >abstract="Dans cet onglet, vous pouvez afficher le contenu qui vous aidera à créer des sites modernes compatibles avec AEM as a Cloud Service. Pour ce faire, vous devez utiliser les composants principaux."
->additional-url="https://video.tv.adobe.com/v/18926/?captions=fre_fr" text="Présentation des composants principaux"
+>additional-url="https://video.tv.adobe.com/v/36955/?captions=fre_fr" text="Présentation des composants principaux"
 
 Les composants principaux AEM sont un ensemble standard de composants à utiliser avec Adobe Experience Manager. Conçus selon les bonnes pratiques et les normes d’Adobe, les composants principaux fournissent un ensemble de fonctionnalités de base pour toute implémentation de Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/18926?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36955?quality=12&learn=on&captions=fre_fr)
 
 ## Ressources supplémentaires {#additional-resources}
 

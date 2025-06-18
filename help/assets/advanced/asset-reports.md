@@ -23,7 +23,7 @@ ht-degree: 100%
 
 AEM Assets fournit une structure de création de rapports au niveau de l’entreprise qui s’adapte aux référentiels volumineux grâce à une expérience client intuitive.
 
->[!VIDEO](https://video.tv.adobe.com/v/22140?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410281?quality=12&learn=on&captions=fre_fr)
 
 
 >[!IMPORTANT]

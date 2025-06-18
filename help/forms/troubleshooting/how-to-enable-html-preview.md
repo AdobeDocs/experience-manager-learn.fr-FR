@@ -22,4 +22,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour activer la prévisualisation HTML dans Designer.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335498?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417215?quality=12&learn=on&captions=fre_fr)

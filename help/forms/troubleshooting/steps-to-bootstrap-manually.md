@@ -20,4 +20,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit le processus de démarrage manuel si l’initialisation de la base de données ne fonctionne pas.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335515?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436271?quality=12&learn=on&captions=fre_fr)

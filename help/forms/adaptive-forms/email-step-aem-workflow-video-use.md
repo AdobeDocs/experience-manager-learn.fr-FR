@@ -20,7 +20,7 @@ ht-degree: 100%
 
 L’étape Envoyer un e-mail a été introduite dans AEM Forms 6.4. Elle permet de créer des processus métier ou un workflow qui vous permettront d’envoyer des e-mails avec ou sans pièces jointes. La vidéo suivante décrit les étapes de configuration du composant Envoyer un e-mail.
 
->[!VIDEO](https://video.tv.adobe.com/v/21499?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/38529?quality=12&learn=on&captions=fre_fr)
 
 Dans le cadre de cet article, nous allons vous présenter les cas d’utilisation suivants :
 

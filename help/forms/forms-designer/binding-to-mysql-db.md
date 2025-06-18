@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Vidéo courte décrivant la liaison d’un formulaire AEM à une base de données MySql
 
->[!VIDEO](https://video.tv.adobe.com/v/3427624/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3439561/?learn=on&captions=fre_fr)

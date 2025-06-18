@@ -39,8 +39,8 @@ L’exemple de formulaire utilisé dans ce workflow est basé sur un modèle de 
 * L’exemple de formulaire adaptatif est placé dans un dossier appelé [Formulaires de l’application](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments/applicationforms).
 
 La vidéo suivante explique comment configurer un formulaire adaptatif pour déclencher un workflow AEM.
->[!VIDEO](https://video.tv.adobe.com/v/40258?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329435?quality=12&learn=on&captions=fre_fr)
 
 La vidéo suivante présente la payload de workflow et d’autres détails dans le référentiel crx.
 
->[!VIDEO](https://video.tv.adobe.com/v/40259?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329444?quality=12&learn=on&captions=fre_fr)

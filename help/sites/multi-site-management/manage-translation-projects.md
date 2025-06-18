@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment créer, modifier et gérer un projet de traduction pour la copie de langue.
 
->[!VIDEO](https://video.tv.adobe.com/v/36486?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/41620?quality=12&learn=on&captions=fre_fr)

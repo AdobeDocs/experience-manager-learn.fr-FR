@@ -21,4 +21,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit le processus de résolution des problèmes spécifiques à Acrobat avec une configuration Windows pour le PDF Generator (PDFG) d’AEM Forms.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335480?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417626?quality=12&learn=on&captions=fre_fr)

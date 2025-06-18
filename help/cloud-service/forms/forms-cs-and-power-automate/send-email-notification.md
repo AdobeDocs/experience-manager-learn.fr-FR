@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Envoyez une notification par e-mail à un auteur ou à une autrice de formulaires adaptatifs avec Microsoft Power Automate en extrayant les valeurs de champ de l’envoi du formulaire.
 
->[!VIDEO](https://video.tv.adobe.com/v/345957?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431485?quality=12&learn=on&captions=fre_fr)

@@ -20,4 +20,4 @@ ht-degree: 100%
 
 *Cette vidéo décrit les étapes à suivre pour générer un certificat auto-signé.*
 
->[!VIDEO](https://video.tv.adobe.com/v/335539?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3417170?quality=12&learn=on&captions=fre_fr)

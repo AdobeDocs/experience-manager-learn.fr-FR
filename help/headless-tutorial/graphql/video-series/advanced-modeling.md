@@ -28,4 +28,4 @@ Dans cette vidéo, vous allez :
 + Découvrir comment créer un lien profond avec d’autres fragments de contenu dans un champ de texte enrichi.
 + Créer des requêtes GraphQL qui renvoient des données dans des fragments de contenu référencés.
 
->[!VIDEO](https://video.tv.adobe.com/v/332859?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3412899?quality=12&learn=on&captions=fre_fr)

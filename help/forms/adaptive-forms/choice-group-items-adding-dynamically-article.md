@@ -67,7 +67,7 @@ Les données envoyées sont les suivantes :
 
 **Ajouter des éléments à l’aide de l’éditeur de règles**
 
->[!VIDEO](https://video.tv.adobe.com/v/26847?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36212?quality=12&learn=on&captions=fre_fr)
 
 **Ajouter des éléments à l’aide de l’éditeur de code**
 
