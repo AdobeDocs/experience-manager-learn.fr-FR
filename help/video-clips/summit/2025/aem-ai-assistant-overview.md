@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment l’Assistant IA AEM simplifie la recherche de connaissances sur les produits et automatise la création de tickets d’assistance.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459225/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461913/?learn=on&enablevpops&captions=fre_fr)

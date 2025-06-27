@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Brett Birschbach, champion d’AEM, partage les bonnes pratiques pour créer un guide de création en direct dans Adobe Experience Manager (AEM) Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459572/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463135/?learn=on&enablevpops&captions=fre_fr)

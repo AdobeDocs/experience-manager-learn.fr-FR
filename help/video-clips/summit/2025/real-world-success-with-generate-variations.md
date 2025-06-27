@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Emily Kellman explique comment Adobe.com a utilisé Générer des variations pour augmenter la vitesse du contenu, réduire les délais et augmenter les conversions.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459232/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462695/?learn=on&enablevpops&captions=fre_fr)

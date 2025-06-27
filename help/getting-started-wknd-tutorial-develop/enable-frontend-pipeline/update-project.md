@@ -30,7 +30,7 @@ Dans ce chapitre, nous apportons des modifications de configuration au __projet 
 
 ## Présentation des modifications de configuration dans le projet AEM full-stack
 
->[!VIDEO](https://video.tv.adobe.com/v/3409419?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3453611?quality=12&learn=on&captions=fre_fr)
 
 ## Prérequis {#prerequisites}
 

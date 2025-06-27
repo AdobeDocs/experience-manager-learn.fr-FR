@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment la recherche sémantique dans AEM Assets vous aide à trouver plus efficacement le contenu qui correspond à votre intention.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459226/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461890/?learn=on&enablevpops&captions=fre_fr)

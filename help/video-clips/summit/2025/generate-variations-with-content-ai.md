@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment l’IA dédiée au contenu vous permet de créer rapidement et efficacement des variations de contenu attrayantes.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459227/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461879/?learn=on&enablevpops&captions=fre_fr)
