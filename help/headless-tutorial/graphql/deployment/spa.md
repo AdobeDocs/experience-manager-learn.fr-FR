@@ -12,9 +12,9 @@ mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
 source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '640'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -114,7 +114,7 @@ Adobe fournit un exemple d’application sur une seule page codée dans React.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="../example-apps/react-app.md" target="_blank" rel="referrer" title="Application React - Exemple AEM Headless">Application React - Exemple AEM Headless</a>
+                        <a href="../example-apps/react-app.md" target="_blank" rel="referrer" title="Application React - Exemple AEM Headless">Application React - Exemple AEM Headless</a>
                     </p>
                     <p class="is-size-6">Découvrez les fonctionnalités découplées d’Adobe Experience Manager (AEM) grâce aux exemples d’applications. Cette application React montre comment interroger le contenu à l’aide des API GraphQL d’AEM en utilisant des requêtes persistantes.</p>
                 </div>

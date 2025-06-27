@@ -1,6 +1,6 @@
 ---
-title: Le rôle de la narration dans GenAI
-description: Découvrez comment les principes de la narration dans la musique country sont liés à la conception d’outils de GenAI pour les expériences digitales.
+title: Rôle de la mise en récit dans l’IA générative
+description: Découvrez comment les principes de la mise en récit dans la musique country sont liés à la conception d’outils d’IA générative pour les expériences numériques.
 cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Assets, Experience Manager Forms, Experience Manager Sites, Sensei
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Forms, Experience Manager Sites
@@ -13,16 +13,16 @@ feature: Generative AI
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 0d93dab6ccdae1420589a00f3a46eef10bc16ec8
-workflow-type: tm+mt
+exl-id: f3902c6e-7f32-49ce-982a-76d264b87fd0
+source-git-commit: b11d9d6844d6f551083c1d8e4a2e7c076965a713
+workflow-type: ht
 source-wordcount: '46'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Rôle de la mise en récit dans l’IA générative
 
-# Le rôle de la narration dans GenAI
+Découvrez comment les principes de la mise en récit dans la musique country sont liés à la conception d’outils d’IA générative pour les expériences numériques.
 
-Découvrez comment les principes de la narration dans la musique country sont liés à la conception d’outils de GenAI pour les expériences digitales.
-
->[!VIDEO](https://video.tv.adobe.com/v/3462011/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3459229/?learn=on&enablevpops)

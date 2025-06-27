@@ -13,7 +13,7 @@ exl-id: 645b6986-830f-4409-b46c-ddf15c33e84c
 duration: 473
 hide: true
 source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Vue d’ensemble vidéo de la création de contenu pour une application monopage
 
 L’éditeur de SPA d’AEM permet aux auteurs et aux autrices de modifier le contenu d’une application monopage (SPA). Les développeurs et développeuses qui utilisent le framework React créent une SPA, puis mappent des zones de la SPA vers des composants AEM, ce qui permet aux auteurs et aux autrices d’utiliser des outils de modification AEM Sites qui leur sont familiers. La vidéo ci-dessous présente des fonctions de modification contextuelle du site d’exemple de la SPA WKND. Le projet SPA WKND comprend une mise en œuvre React.
 
->[!VIDEO](https://video.tv.adobe.com/v/326768?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/22229?quality=12&learn=on)
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
-title: Défis liés à l’adoption de GenAI
-description: Explorez les principaux défis auxquels les entreprises sont confrontées dans l'adoption et la mise à l'échelle de GenAI, y compris le contexte insuffisant, les cas d'utilisation flous et les problèmes de gouvernance.
+title: Défis liés à l’adoption de l’IA générative à grande échelle
+description: Explorez les principaux défis auxquels les entreprises sont confrontées dans l’adoption et la mise à l’échelle de l’IA générative, y compris le contexte insuffisant, les cas d’utilisation flous et les problèmes de gouvernance.
 cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Assets, Experience Manager Forms, Experience Manager Sites, Sensei
 feature-set: Experience Manager, Experience Manager Assets, Experience Manager Forms, Experience Manager Sites
@@ -13,16 +13,16 @@ feature: Generative AI, Integrations, Onboarding
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 0d93dab6ccdae1420589a00f3a46eef10bc16ec8
-workflow-type: tm+mt
+exl-id: 71a64094-efca-400a-a6fa-cc801cbec664
+source-git-commit: b11d9d6844d6f551083c1d8e4a2e7c076965a713
+workflow-type: ht
 source-wordcount: '50'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Défis liés à l’adoption de l’IA générative à grande échelle
 
-# Défis liés à l’adoption de GenAI
-
-Explorez les principaux défis auxquels les entreprises sont confrontées dans l&#39;adoption et la mise à l&#39;échelle de GenAI, y compris le contexte insuffisant, les cas d&#39;utilisation flous et les problèmes de gouvernance.
+Explorez les principaux défis auxquels les entreprises sont confrontées dans l’adoption et la mise à l’échelle de l’IA générative, y compris le contexte insuffisant, les cas d’utilisation flous et les problèmes de gouvernance.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3459230/?learn=on&enablevpops)

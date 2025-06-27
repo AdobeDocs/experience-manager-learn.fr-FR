@@ -5,9 +5,9 @@ hidefromtoc: true
 hide: true
 exl-id: 16133400-b4c6-4d86-9c28-d5e230d55839
 source-git-commit: 39db0fd64d346566a640c94193a90bd8eabc2f20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '47'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,5 +21,5 @@ Nos newsletters mensuelles sur le contenu d’Experience League peuvent être t
 | [Février](assets/Feb-Newsletter.pdf) |
 | [Mars](assets/March-Newsletter.pdf) |
 | [Avril](assets/April-Newsletter.pdf) |
-| [mai](assets/May-Newsletter.pdf) |
+| [Mai](assets/May-Newsletter.pdf) |
 

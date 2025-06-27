@@ -1,19 +1,19 @@
 ---
-user-guide-title: Courts métrages vidéo Adobe Experience Manager
-breadcrumb-title: Courts métrages vidéo
+user-guide-title: Shorts Adobe Experience Manager
+breadcrumb-title: Shorts
 user-guide-description: Collection masquée
 auto-video-transcripts: true
 source-git-commit: 57a207cc492912537be024315119d4a8d9dadebe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '63'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Courts métrages vidéo Adobe Experience Manager {#video-clips}
+# Shorts Adobe Experience Manager {#video-clips}
 
-+ Adobe Summit {#summit}
++ Adobe Summit {#summit}
    + 2025 {#2025}
       + [Clip vidéo](./summit/2025/accelerating-content-activation-with-adobe-experience-manager.md)
       + [Clip vidéo](./summit/2025/adapting-experiences-for-diverse-contexts.md)

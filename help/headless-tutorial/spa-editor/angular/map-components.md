@@ -13,7 +13,7 @@ exl-id: 19a8917c-a1e7-4293-9ce1-9f4c1a565861
 duration: 509
 hide: true
 source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2213'
 ht-degree: 100%
 
@@ -437,7 +437,7 @@ Examinons davantage le conteneur de dispositions.
 
    Le composant de **conteneur de disposition** comporte un `sling:resourceType` de `wcm/foundation/components/responsivegrid` et est reconnu par l’éditeur de SPA avec la propriété `:type`, comme les composants `Text` et `Image`.
 
-   Les mêmes capacités de redimensionnement d’un composant à l’aide du [Mode de disposition](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html?lang=fr#defining-layouts-layout-mode) sont disponibles avec l’éditeur de SPA.
+   Les mêmes capacités de redimensionnement d’un composant à l’aide du [Mode de disposition](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/responsive-layout.html#defining-layouts-layout-mode) sont disponibles avec l’éditeur de SPA.
 
 3. Retournez sur [http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html](http://localhost:4502/editor.html/content/wknd-spa-angular/us/en/home.html). Ajoutez d’autres composant d’**Image** et essayez de les redimensionner via l’option **Disposition** :
 

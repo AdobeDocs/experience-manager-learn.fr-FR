@@ -13,13 +13,13 @@ feature: Generative AI, Search, Tagging
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 0d93dab6ccdae1420589a00f3a46eef10bc16ec8
-workflow-type: tm+mt
+exl-id: c726c62a-d3a9-471f-8091-4fb00010a7d9
+source-git-commit: b11d9d6844d6f551083c1d8e4a2e7c076965a713
+workflow-type: ht
 source-wordcount: '46'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
-
 
 # Recherche sémantique et découverte basée sur l’intention
 

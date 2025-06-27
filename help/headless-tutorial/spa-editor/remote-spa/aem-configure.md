@@ -14,9 +14,9 @@ exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
 duration: 297
 hide: true
 source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1229'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ $ mvn -B archetype:generate \
 $ mv ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/wknd-app ~/Code/aem-guides-wknd-graphql/remote-spa-tutorial/com.adobe.aem.guides.wknd-app
 ```
 
-_La dernière commande renomme simplement le dossier de projet AEM afin qu’il soit clair qu’il s’agit du projet AEM, qui ne doit pas être confondu avec la SPA distante**
+_La dernière commande renomme simplement le dossier de projet AEM afin qu’il soit clair qu’il s’agit du projet AEM, qui ne doit pas être confondu avec la SPA distante.**
 
 Alors que `frontendModule="react"` est spécifié, le projet `ui.frontend` n’est pas utilisé pour le cas d’utilisation de SPA distante. La SPA est développée et gérée en externe sur AEM et utilise uniquement l’API de contenu d’AEM. L’indicateur `frontendModule="react"` est requis pour que le projet inclue les dépendances Java™ AEM `spa-project` et configure les modèles de page de SPA distante.
 

@@ -1,6 +1,6 @@
 ---
-title: BambooHR et AI - Résoudre les backlinks rompus
-description: Découvrez comment BambooHR a utilisé l’IA pour identifier et corriger les liens entrants rompus, ce qui a entraîné une augmentation de 4 % du trafic organique.
+title: BambooHR et l’IA - Résolution des liens entrants rompus
+description: Découvrez comment BambooHR a utilisé l’IA pour identifier et corriger les liens entrants rompus, ce qui a entraîné une augmentation de 4 % du trafic organique.
 cloud: Experience Cloud
 solution: Experience Manager
 feature-set: Experience Manager
@@ -13,16 +13,16 @@ feature: Generative AI
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 0d93dab6ccdae1420589a00f3a46eef10bc16ec8
-workflow-type: tm+mt
+exl-id: 3b3ef9c2-f4e0-45fa-a2a4-3e7130b4d6ce
+source-git-commit: b11d9d6844d6f551083c1d8e4a2e7c076965a713
+workflow-type: ht
 source-wordcount: '50'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# BambooHR et l’IA : résoudre les liens entrants rompus
 
-# BambooHR et AI : résoudre les backlinks rompus
+Découvrez comment BambooHR a utilisé l’IA pour identifier et corriger les liens entrants rompus, ce qui a entraîné une augmentation de 4 % du trafic organique.
 
-Découvrez comment BambooHR a utilisé l’IA pour identifier et corriger les liens entrants rompus, ce qui a entraîné une augmentation de 4 % du trafic organique.
-
->[!VIDEO](https://video.tv.adobe.com/v/3461989/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3459238/?learn=on&enablevpops)

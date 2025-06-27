@@ -1,6 +1,6 @@
 ---
-title: Modèles Dynamic Media pour Personalization
-description: Découvrez comment les modèles Dynamic Media permettent la personnalisation à la volée des bannières, ce qui facilite la création de variations pour différentes audiences.
+title: Modèles Dynamic Media pour la personnalisation
+description: Découvrez comment les modèles Dynamic Media permettent la personnalisation à la volée des bannières, ce qui facilite la création de variations pour différentes audiences.
 cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Assets
 feature-set: Experience Manager, Experience Manager Assets
@@ -13,16 +13,16 @@ feature: Generate Variations, Personalization, Rich Text Editor, Integrations
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 0d93dab6ccdae1420589a00f3a46eef10bc16ec8
-workflow-type: tm+mt
+exl-id: d4458e36-348a-4903-9990-1382443f128b
+source-git-commit: b11d9d6844d6f551083c1d8e4a2e7c076965a713
+workflow-type: ht
 source-wordcount: '48'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Modèles Dynamic Media pour la personnalisation
 
-# Modèles Dynamic Media pour Personalization
-
-Découvrez comment les modèles Dynamic Media permettent la personnalisation à la volée des bannières, ce qui facilite la création de variations pour différentes audiences.
+Découvrez comment les modèles Dynamic Media permettent la personnalisation à la volée des bannières, ce qui facilite la création de variations pour différentes audiences.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3459222/?learn=on&enablevpops)

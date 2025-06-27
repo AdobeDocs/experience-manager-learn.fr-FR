@@ -1,6 +1,6 @@
 ---
-title: Modèles Dynamic Media pour le marketing personnalisé
-description: Découvrez comment les modèles Dynamic Media permettent aux marketeurs de créer du contenu en direct et personnalisable pour des campagnes personnalisées.
+title: Modèles Dynamic Media pour le marketing personnalisé
+description: Découvrez comment les modèles Dynamic Media permettent aux responsables marketing de créer du contenu en direct et personnalisable pour des campagnes personnalisées.
 cloud: Experience Cloud
 solution: Experience Manager Assets, Sensei
 feature-set: Experience Manager Assets
@@ -13,16 +13,16 @@ feature: Dynamic Media, Content Personalization, Templates, Publishing
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 0d93dab6ccdae1420589a00f3a46eef10bc16ec8
-workflow-type: tm+mt
+exl-id: e875feab-bf5b-47ab-b3be-ee0c2e418f50
+source-git-commit: b11d9d6844d6f551083c1d8e4a2e7c076965a713
+workflow-type: ht
 source-wordcount: '42'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# Modèles Dynamic Media pour le marketing personnalisé
 
-# Modèles Dynamic Media pour le marketing personnalisé
+Découvrez comment les modèles Dynamic Media permettent aux responsables marketing de créer du contenu en direct et personnalisable pour des campagnes personnalisées.
 
-Découvrez comment les modèles Dynamic Media permettent aux marketeurs de créer du contenu en direct et personnalisable pour des campagnes personnalisées.
-
->[!VIDEO](https://video.tv.adobe.com/v/3462348/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3459241/?learn=on&enablevpops)

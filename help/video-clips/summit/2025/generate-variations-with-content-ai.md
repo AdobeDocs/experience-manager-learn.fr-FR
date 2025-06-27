@@ -13,16 +13,16 @@ feature: Generate Variations, Generative AI, Publishing
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 0d93dab6ccdae1420589a00f3a46eef10bc16ec8
-workflow-type: tm+mt
+exl-id: 885dd083-79f1-49c4-88cc-7594aaa3fdbf
+source-git-commit: b11d9d6844d6f551083c1d8e4a2e7c076965a713
+workflow-type: ht
 source-wordcount: '38'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
-
 
 # Générer des variations avec l’IA dédiée au contenu
 
 Découvrez comment l’IA dédiée au contenu vous permet de créer rapidement et efficacement des variations de contenu attrayantes.
 
->[!VIDEO](https://video.tv.adobe.com/v/3461879/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3459227/?learn=on&enablevpops)
