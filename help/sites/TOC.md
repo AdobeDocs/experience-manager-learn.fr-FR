@@ -86,7 +86,7 @@ ht-degree: 100%
 + Fragments d’expérience {#experience-fragments}
    + [Utiliser des fragments d’expérience](experience-fragments/experience-fragments-feature-video-use.md)
    + [Créer des blocs](experience-fragments/building-blocks.md)
-   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
+   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Vue d’ensemble](./edge-delivery-services/overview.md)
    + Développement{#developing}

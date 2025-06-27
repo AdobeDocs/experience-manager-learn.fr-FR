@@ -51,7 +51,7 @@ Un composant AEM est défini comme un nœud et des propriétés. Dans le projet,
 
 >[!NOTE]
 >
-> Un bref rappel [des principes de base des composants AEM peut s’avérer utile](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html).
+> Un bref rappel [des principes de base des composants AEM peut s’avérer utile](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=fr).
 
 1. Dans l’IDE de votre choix, ouvrez le dossier `ui.apps`.
 2. Accédez à `ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components` et créez un dossier nommé `open-weather`.
