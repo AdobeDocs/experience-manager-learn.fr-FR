@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Découvrez comment créer des champs personnalisés dans l’éditeur de fragments de contenu AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427585?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437636?learn=on&captions=fre_fr)
 
 Les extensions d’interface utilisateur AEM doivent être développées à l’aide du framework [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html), car il conserve un aspect cohérent avec le reste d’AEM, et dispose également d’une vaste bibliothèque de fonctionnalités prédéfinies, réduisant ainsi le temps de développement.
 
