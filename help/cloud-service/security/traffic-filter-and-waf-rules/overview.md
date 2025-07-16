@@ -52,7 +52,7 @@ Les ensembles de règles aident les clients à prévenir les menaces Web courant
 
 Les règles de filtrage du trafic standard sont utiles pour appliquer des politiques spécifiques à l’entreprise, telles que des limites de débit ou le blocage de régions spécifiques, ainsi que pour bloquer le trafic en fonction des propriétés et des en-têtes de requête tels que l’adresse IP, le chemin d’accès ou l’agent utilisateur.
 Les règles de filtrage du trafic de WAF, en revanche, offrent une protection proactive complète pour les exploits web et les vecteurs d’attaque connus, et disposent d’une intelligence avancée pour limiter les faux positifs (c’est-à-dire bloquer le trafic légitime).
-Pour définir les deux types de règles, utilisez la syntaxe YAML. Pour plus d’informations, voir [Syntaxe des règles de filtrage de trafic](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax).
+Pour définir les deux types de règles, utilisez la syntaxe YAML. Pour plus d’informations, voir [Syntaxe des règles de filtrage de trafic](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax).
 
 ## Quand et pourquoi les utiliser
 
