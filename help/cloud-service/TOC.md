@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 380bd2b3121db5810e4d295a5f7f9d1139d22402
-workflow-type: ht
-source-wordcount: '1385'
-ht-degree: 100%
+source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
+workflow-type: tm+mt
+source-wordcount: '1400'
+ht-degree: 98%
 
 ---
 
@@ -192,11 +192,16 @@ ht-degree: 100%
       + [Service E-mail](./networking/examples/email-service.md)
 + Sécurité {#security}
    + [Blocage d’attaques DoS/DDoS à l’aide de règles de filtrage du trafic](./security/blocking-dos-attack-using-traffic-filter-rules.md)
-   + Règles de filtrage du trafic, y compris les règles WAF{#traffic-filter-and-waf-rules}
-      + [Vue d’ensemble](./security/traffic-filter-rules/overview.md)
-      + [Configuration](./security/traffic-filter-rules/how-to-setup.md)
-      + [Exemples et analyse des résultats](./security/traffic-filter-rules/examples-and-analysis.md)
-      + [Bonnes pratiques](./security/traffic-filter-rules/best-practices.md)
+   + Règles de filtrage du trafic, y compris les règles WAF {#traffic-filter-and-waf-rules}
+      + [Protection des sites web AEM](./security/traffic-filter-and-waf-rules/overview.md)
+      + [Configuration](./security/traffic-filter-and-waf-rules/setup.md)
+      + [Utilisation des règles de filtrage du trafic](./security/traffic-filter-and-waf-rules/use-cases/using-traffic-filter-rules.md)
+      + [Utilisation des règles de WAF](./security/traffic-filter-and-waf-rules/use-cases/using-waf-rules.md)
+      + [Bonnes pratiques](./security/traffic-filter-and-waf-rules/best-practices.md)
+      + Procédures{#how-to}
+         + [Surveillance des requêtes sensibles](./security/traffic-filter-and-waf-rules/how-to/request-logging.md)
+         + [Limitation de l’accès](./security/traffic-filter-and-waf-rules/how-to/request-blocking.md)
+         + [Normalisation des requêtes](./security/traffic-filter-and-waf-rules/how-to/request-transformation.md)
 + AEM Eventing{#aem-eventing}
    + [Vue d’ensemble](./eventing/overview.md)
    + Exemples{#examples}
