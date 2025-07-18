@@ -14,9 +14,9 @@ jira: KT-14745
 thumbnail: KT-14745.jpeg
 exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
 source-git-commit: 7ada3c2e7deb414b924077a5d2988db16f28712c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1693'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Découvrez les bonnes pratiques d’indexation dans Adobe Experience Manager (
 - AEM as a Cloud Service ne prend en charge que les index Oak Lucene.
 - La configuration de l’index doit être gérée dans la base de code de projet AEM et déployée à l’aide des pipelines CI/CD Cloud Manager.
 - Si plusieurs index sont disponibles pour une requête donnée, l’**index dont le coût estimé est le plus bas est utilisé**.
-- Si aucun index n’est disponible pour une requête donnée, l’arborescence de contenu est parcourue pour trouver le contenu correspondant. Cependant, la limite par défaut via `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` est de ne parcourir que 100 000 nœuds.
+- Si aucun index n’est disponible pour une requête donnée, l’arborescence de contenu est parcourue pour trouver le contenu correspondant. Toutefois, la limite par défaut via `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` est de parcourir seulement 100 000 nœuds.
 - Les résultats d’une requête sont **filtrés en dernier lieu** pour s’assurer que la personne actuelle dispose d’un accès en lecture. Cela signifie que les résultats de la requête peuvent être inférieurs au nombre de nœuds indexés.
 - La réindexation du référentiel après les modifications de définition d’index nécessite du temps et dépend de la taille du référentiel.
 
@@ -41,7 +41,7 @@ Parfois, vous devez créer des index personnalisés pour répondre à vos besoin
 
 - Comprenez les exigences de recherche et vérifiez si les index prêts à l’emploi peuvent répondre à vos besoins de recherche. Utilisez l’**outil de performances des requêtes**, disponible sur le [SDK local](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) et AEMCS via la Developer Console ou `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`.
 
-- Définissez une requête optimale, utilisez le graphique de flux [optimisation des requêtes](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) et l’[aide-mémoire pour les requêtes JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=fr) à titre de référence.
+- Définissez une requête optimale, utilisez le graphique de flux [optimisation des requêtes](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) et l’[aide-mémoire pour les requêtes JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) à titre de référence.
 
 - Si les index prêts à l’emploi ne répondent pas aux besoins de recherche, vous disposez de deux options. Toutefois, passez en revue les [Conseils pour créer des index efficaces](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing).
    - Personnaliser l’index prêt à l’emploi : option préférée, car il est facile de le gérer et de le mettre à niveau.
