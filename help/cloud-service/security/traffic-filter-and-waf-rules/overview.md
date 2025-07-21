@@ -10,13 +10,13 @@ doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-13148
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
+exl-id: e6d67204-2f76-441c-a178-a34798fe266d
+source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 1%
 
 ---
-
 
 # Présentation - Protection des sites web AEM
 
@@ -27,6 +27,9 @@ Vous découvrirez également les différences entre les règles de filtrage du t
 >[!IMPORTANT]
 >
 > Les règles de filtrage du trafic WAF nécessitent une licence supplémentaire de **protection WAF-DDoS** ou **sécurité renforcée**. Les règles de filtrage du trafic standard sont disponibles par défaut pour les clients Sites et Forms.
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469394/?quality=12&learn=on)
 
 ## Présentation de la sécurité du trafic dans AEM as a Cloud Service
 
@@ -52,7 +55,7 @@ Les ensembles de règles aident les clients à prévenir les menaces Web courant
 
 Les règles de filtrage du trafic standard sont utiles pour appliquer des politiques spécifiques à l’entreprise, telles que des limites de débit ou le blocage de régions spécifiques, ainsi que pour bloquer le trafic en fonction des propriétés et des en-têtes de requête tels que l’adresse IP, le chemin d’accès ou l’agent utilisateur.
 Les règles de filtrage du trafic de WAF, en revanche, offrent une protection proactive complète pour les exploits web et les vecteurs d’attaque connus, et disposent d’une intelligence avancée pour limiter les faux positifs (c’est-à-dire bloquer le trafic légitime).
-Pour définir les deux types de règles, utilisez la syntaxe YAML. Pour plus d’informations, voir [Syntaxe des règles de filtrage de trafic](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax).
+Pour définir les deux types de règles, utilisez la syntaxe YAML. Pour plus d’informations, voir [Syntaxe des règles de filtrage de trafic](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#rules-syntax).
 
 ## Quand et pourquoi les utiliser
 

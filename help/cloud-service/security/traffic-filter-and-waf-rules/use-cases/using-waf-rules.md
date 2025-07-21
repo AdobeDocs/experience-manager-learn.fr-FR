@@ -11,7 +11,8 @@ last-substantial-update: 2025-06-04T00:00:00Z
 badgeLicense: label="Nécessite une licence" type="positive" before-title="true"
 jira: KT-18308
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
+exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
+source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
 workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 7%
@@ -27,6 +28,9 @@ Les attaques sophistiquées se caractérisent par des taux de demande élevés, 
 >[!IMPORTANT]
 >
 > Les règles de filtrage du trafic WAF nécessitent une licence supplémentaire de **protection WAF-DDoS** ou **sécurité renforcée**. Les règles de filtrage du trafic standard sont disponibles par défaut pour les clients Sites et Forms.
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## Objectifs d’apprentissage
 
@@ -59,7 +63,7 @@ Examinons trois règles de WAF recommandées qui doivent être ajoutées au fich
 
 Cette règle **bloque** les requêtes qui ont l’air suspectes *et* proviennent d’adresses IP signalées comme malveillantes. Ces deux critères étant remplis, nous pouvons être sûrs que le risque de faux positifs (blocage du trafic légitime) est très faible. Les adresses IP erronées connues sont identifiées en fonction des flux de renseignements sur les menaces et d’autres sources.
 
-L’indicateur WAF `ATTACK-FROM-BAD-IP` est utilisé pour identifier ces requêtes. Elle agrège plusieurs indicateurs WAF [répertoriés ici](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list).
+L’indicateur WAF `ATTACK-FROM-BAD-IP` est utilisé pour identifier ces requêtes. Elle agrège plusieurs indicateurs WAF [répertoriés ici](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list).
 
 ```yaml
 kind: "CDN"
@@ -220,7 +224,7 @@ Pour affiner les règles, respectez les étapes suivantes :
 
 - **Surveillance des modèles de trafic** : utilisez les journaux du réseau CDN et le tableau de bord ELK pour surveiller les modèles de trafic et identifier les anomalies ou les pics de trafic. Surveillez la distribution des indicateurs de WAF __ et les panneaux _Principales attaques_ dans le tableau de bord ELK pour comprendre les types d’attaques détectés.
 - **Ajuster wafFlags** : si `ATTACK` indicateurs sont déclenchés trop fréquemment ou
-Si vous devez affiner le vecteur d’attaque, vous pouvez créer des règles personnalisées avec des indicateurs WAF spécifiques. Consultez une liste complète des [indicateurs WAF](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) dans la documentation. Envisagez d’abord de tester de nouvelles règles personnalisées en mode `log`.
+Si vous devez affiner le vecteur d’attaque, vous pouvez créer des règles personnalisées avec des indicateurs WAF spécifiques. Consultez une liste complète des [indicateurs WAF](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list) dans la documentation. Envisagez d’abord de tester de nouvelles règles personnalisées en mode `log`.
 - **Passer aux règles de blocage** : une fois que vous avez validé les modèles de trafic et ajusté les indicateurs WAF, vous pouvez envisager de passer aux règles de blocage.
 
 ## Résumé
@@ -316,5 +320,5 @@ Pour des scénarios plus avancés, vous pouvez explorer les cas d’utilisation 
 
 ## Ressources supplémentaires
 
-- [Règles de démarrage recommandées](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)
-- [liste des indicateurs WAF](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)
+- [Règles de démarrage recommandées](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-nonwaf-starter-rules)
+- [liste des indicateurs WAF](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#waf-flags-list)

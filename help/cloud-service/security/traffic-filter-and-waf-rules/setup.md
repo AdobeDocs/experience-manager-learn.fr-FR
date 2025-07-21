@@ -10,7 +10,8 @@ doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18306
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
+exl-id: 0a738af8-666b-48dc-8187-9b7e6a8d7e1b
+source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 14%
@@ -22,6 +23,8 @@ ht-degree: 14%
 Découvrez **comment configurer** les règles de filtrage du trafic, y compris les règles du pare-feu d’application web (WAF). Dans ce tutoriel, nous avons préparé le terrain pour les tutoriels suivants, où vous allez configurer et déployer des règles, puis tester et analyser les résultats.
 
 Pour démontrer le processus de configuration, le tutoriel utilise le [projet AEM WKND Sites](https://github.com/adobe/aem-guides-wknd).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469396/?quality=12&learn=on)
 
 ## Présentation de la configuration
 
