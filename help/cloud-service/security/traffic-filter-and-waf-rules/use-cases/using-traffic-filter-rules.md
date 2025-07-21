@@ -11,7 +11,7 @@ last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18307
 thumbnail: null
 exl-id: 5e235220-82f6-46e4-b64d-315f027a7024
-source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
+source-git-commit: b7f567da159865ff04cb7e9bd4dae0b140048e7d
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 7%
@@ -23,7 +23,7 @@ ht-degree: 7%
 Découvrez comment protéger les sites web d’AEM contre le déni de service (DoS), le déni de service distribué (DDoS) et les abus de robots à l’aide de _règles de filtrage du trafic standard_ **recommandées par Adobe** dans AEM as a Cloud Service.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469395/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469396/?quality=12&learn=on)
 
 ## Objectifs d’apprentissage
 
@@ -391,4 +391,4 @@ Pour des scénarios plus avancés, vous pouvez explorer les cas d’utilisation 
 
 ## Ressources supplémentaires
 
-- [Règles de démarrage recommandées](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
+- [Règles de démarrage recommandées](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
