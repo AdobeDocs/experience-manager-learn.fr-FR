@@ -391,4 +391,4 @@ Pour des scénarios plus avancés, vous pouvez explorer les cas d’utilisation 
 
 ## Ressources supplémentaires
 
-- [Règles de démarrage recommandées](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
+- [Règles de démarrage recommandées](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf#recommended-starter-rules)
