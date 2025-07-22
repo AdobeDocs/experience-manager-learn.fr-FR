@@ -12,10 +12,10 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14732
 thumbnail: KT-14732.jpeg
 exl-id: 00954d74-c4c7-4dac-8d23-7140c49ae31f
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '520'
-ht-degree: 100%
+source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
+workflow-type: tm+mt
+source-wordcount: '533'
+ht-degree: 84%
 
 ---
 
@@ -23,11 +23,19 @@ ht-degree: 100%
 
 Découvrez comment recevoir des événements AEM sur un webhook et consulter les détails de l’événement tels que la payload, les en-têtes et les métadonnées.
 
->[!VIDEO](https://video.tv.adobe.com/v/3449750?quality=12&learn=on&captions=fre_fr)
 
-Dans cet exemple, en utilisant un _webhook hébergé_ fourni par Adobe, vous pouvez recevoir des événements AEM sans avoir à configurer votre propre webhook. Ce webhook fourni par Adobe est hébergé sur [Glitch](https://glitch.com/), une plateforme connue pour proposer un environnement web propice à la création et au déploiement d’applications web. Cependant, vous pouvez tout de même utiliser votre propre webhook si vous le souhaitez.
+>[!VIDEO](https://video.tv.adobe.com/v/3427051?quality=12&learn=on)
 
-## Conditions préalables
+
+>[!IMPORTANT]
+>
+>Les points d’entrée de démonstration en direct de ce tutoriel étaient auparavant hébergés sur [Glitch](https://glitch.com/). Depuis juillet 2025, Glitch a arrêté son service d’hébergement et les points d’entrée ne sont plus accessibles.
+>>Nous travaillons activement à la migration des démonstrations vers une plateforme alternative. Le contenu du tutoriel reste exact et des liens mis à jour seront bientôt fournis.
+>>Merci de votre compréhension et de votre patience.
+
+Utilisez votre propre webhook jusqu’à ce que les points d’entrée de démonstration en direct soient à nouveau disponibles.
+
+## Prérequis
 
 Les éléments suivants sont requis afin de terminer ce tutoriel :
 
@@ -155,4 +163,4 @@ Vous constatez que les détails de l’événement AEM disposent de toutes les 
 
 ## Ressources supplémentaires
 
-- [Le code source de webhook Glitch](https://glitch.com/edit/#!/lovely-ancient-coaster) est disponible à titre de référence.
+- Le code source [AEM-Eventing Webhook](../assets/examples/webhook/aemeventing-webhook.tgz) est disponible à titre de référence.

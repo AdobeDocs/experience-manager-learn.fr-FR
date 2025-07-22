@@ -12,10 +12,10 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
 exl-id: 33eb0757-f0ed-4c2d-b8b9-fa6648e87640
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '600'
-ht-degree: 100%
+source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 87%
 
 ---
 
@@ -29,9 +29,15 @@ La journalisation est une méthode d’extraction permettant d’utiliser des é
 
 Dans le projet Adobe Developer Console, chaque enregistrement d’événement est automatiquement activé pour la journalisation, ce qui permet une intégration transparente.
 
-Dans cet exemple, en utilisant une _application web hébergée_ fournie par Adobe, vous pouvez récupérer le premier lot d’événements AEM à partir du journal, sans avoir à configurer votre application. Cette application web fournie par Adobe est hébergée sur [Glitch](https://glitch.com/), une plateforme connue pour proposer un environnement web propice à la création et au déploiement d’applications web. Cependant, vous pouvez aussi utiliser votre propre application si vous préférez.
+>[!IMPORTANT]
+>
+>Les points d’entrée de démonstration en direct de ce tutoriel étaient auparavant hébergés sur [Glitch](https://glitch.com/). Depuis juillet 2025, Glitch a arrêté son service d’hébergement et les points d’entrée ne sont plus accessibles.
+>>Nous travaillons activement à la migration des démonstrations vers une plateforme alternative. Le contenu du tutoriel reste exact et des liens mis à jour seront bientôt fournis.
+>>Merci de votre compréhension et de votre patience.
 
-## Conditions préalables
+Utilisez votre propre application jusqu’à ce que les points d’entrée de démonstration en direct soient à nouveau disponibles.
+
+## Prérequis
 
 Les éléments suivants sont requis afin de terminer ce tutoriel :
 
@@ -82,7 +88,5 @@ Pour simplifier les choses, cette application web hébergée récupère uniqueme
   ![Achèvement de la payload d’événement AEM](../assets/examples/journaling/complete-journal-data.png)
 
 ## Ressources supplémentaires
-
-- Le [code source du webhook Glitch](https://glitch.com/edit/#!/indigo-speckle-antler) est disponible à titre de référence. Il s’agit d’une application React simple qui utilise des composants [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) pour effectuer le rendu de l’interface utilisateur.
 
 - L’[API de journalisation des événements Adobe I/O](https://developer.adobe.com/events/docs/guides/api/journaling_api/) fournit des informations détaillées sur l’API, telles que le premier lot d’événements, le suivant et le dernier, la pagination, etc.
