@@ -1,6 +1,6 @@
 ---
 title: Surveillance des requêtes sensibles
-description: Découvrez comment surveiller les requêtes sensibles en les enregistrant à l’aide des règles de filtrage du trafic dans AEM as a Cloud Service.
+description: Découvrez comment surveiller les requêtes sensibles en les journalisant à l’aide des règles de filtrage du trafic dans AEM as a Cloud Service.
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
@@ -10,40 +10,41 @@ doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
 jira: KT-18311
 thumbnail: null
-source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: tm+mt
+exl-id: 8fa0488f-b901-49bf-afa5-5ed29242355f
+source-git-commit: 71454ea9f1302d8d1c08c99e937afefeda2b1322
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
 # Surveillance des requêtes sensibles
 
-Découvrez comment surveiller les requêtes sensibles en les enregistrant à l’aide des règles de filtrage du trafic dans AEM as a Cloud Service.
+Découvrez comment surveiller les requêtes sensibles en les journalisant à l’aide des règles de filtrage du trafic dans AEM as a Cloud Service.
 
-La journalisation vous permet d’observer les schémas de trafic sans affecter les utilisateurs finaux ou les services. Il s’agit d’une première étape cruciale avant d’implémenter des règles de blocage.
+La journalisation vous permet d’observer les modèles de trafic sans affecter les utilisateurs et utilisatrices finaux ou les services. Il s’agit d’une première étape cruciale avant d’implémenter des règles de blocage.
 
-Ce tutoriel explique comment **consigner les requêtes des chemins de connexion et de déconnexion WKND** par rapport au service de publication AEM.
+Ce tutoriel explique comment **journaliser les demandes de connexion et de déconnexion de WKND** sur le service de publication AEM.
 
-## Pourquoi et quand consigner les requêtes
+## Pourquoi et comment journaliser des requêtes
 
-La journalisation de requêtes spécifiques est une pratique à faible risque et à forte valeur ajoutée qui permet de comprendre comment les utilisateurs, et les acteurs potentiellement malveillants, interagissent avec votre application AEM. Il est particulièrement utile avant d’appliquer des règles de blocage, ce qui vous permet d’affiner votre posture de sécurité sans interrompre le trafic légitime.
+La journalisation de requêtes spécifiques est une pratique à faible risque et à forte valeur ajoutée qui permet de comprendre comment les utilisateurs et les utilisatrices, et les personnes potentiellement malveillantes, interagissent avec votre application AEM. Elle s’avère particulièrement utile avant d’appliquer des règles de blocage, ce qui vous permet d’affiner votre posture de sécurité sans interrompre le trafic légitime.
 
-Les scénarios courants de journalisation sont les suivants :
+Les scénarios courants de journalisation sont les suivants :
 
 - Valider l’impact et la portée d’une règle avant de la promouvoir en mode `block`.
-- Surveillance des chemins de connexion/déconnexion et des points d’entrée d’authentification pour détecter les modèles inhabituels ou les tentatives de force brute.
-- Suivi de l’accès haute fréquence aux points d’entrée de l’API pour une utilisation abusive potentielle ou une activité DoS.
+- Surveiller les chemins de connexion/déconnexion et des points d’entrée d’authentification pour détecter les modèles inhabituels ou les tentatives de force brute.
+- Suivre l’accès haute fréquence aux points d’entrée de l’API afin de détecter une utilisation abusive potentielle ou une activité DoS.
 - Établir des références pour le comportement des robots avant d’appliquer des contrôles plus stricts.
-- En cas d’incidents de sécurité, fournir des données médico-légales pour comprendre la nature de l’attaque et les ressources affectées.
+- En cas d’incidents de sécurité, fournir des données forensiques pour comprendre la nature de l’attaque et les ressources affectées.
 
 ## Prérequis
 
-Avant de poursuivre, assurez-vous d’avoir terminé la configuration requise, comme décrit dans le tutoriel [Comment configurer le filtre de trafic et les règles de WAF](../setup.md). En outre, vous avez cloné et déployé le projet [Sites WKND AEM](https://github.com/adobe/aem-guides-wknd) dans votre environnement AEM.
+Avant de poursuivre, assurez-vous d’avoir terminé la configuration requise, comme décrit dans le tutoriel [Configuration du filtre de trafic et des règles WAF](../setup.md). En outre, que vous avez cloné et déployé le [projet WKND AEM Sites](https://github.com/adobe/aem-guides-wknd) dans votre environnement AEM.
 
-## Exemple : consigner les demandes de connexion et de déconnexion WKND
+## Exemple : consigner les requêtes de connexion et de déconnexion WKND
 
-Dans cet exemple, vous créez une règle de filtrage du trafic pour consigner les requêtes effectuées aux chemins de connexion et de déconnexion WKND sur le service de publication AEM. Il vous permet de surveiller les tentatives d’authentification et d’identifier les problèmes de sécurité potentiels.
+Dans cet exemple, vous créez une règle de filtrage du trafic pour consigner les requêtes effectuées aux chemins de connexion et de déconnexion WKND sur le service de publication AEM. Cela vous permet de surveiller les tentatives d’authentification et d’identifier les problèmes de sécurité potentiels.
 
 - Ajoutez la règle suivante au fichier de projet WKND `/config/cdn.yaml`.
 
@@ -70,7 +71,7 @@ data:
 
 - Validez et envoyez les modifications au référentiel Git de Cloud Manager.
 
-- Déployez les modifications dans l’environnement AEM à l’aide du pipeline de configuration Cloud Manager [créé précédemment](../setup.md#deploy-rules-using-adobe-cloud-manager).
+- Déployez les modifications dans l’environnement AEM à l’aide du pipeline de configuration Cloud Manager [créé précédemment](../setup.md#deploy-rules-using-adobe-cloud-manager).
 
 - Testez la règle en vous connectant et en vous déconnectant du site WKND de votre programme (par exemple, `https://publish-pXXXX-eYYYY.adobeaemcloud.com/us/en.html`). Vous pouvez utiliser `asmith/asmith` comme nom d’utilisation et mot de passe.
 
@@ -78,7 +79,7 @@ data:
 
 ## Analyser
 
-Analysons les résultats de la règle `publish-auth-requests` en téléchargeant les journaux CDN AEMCS depuis Cloud Manager et en utilisant l’outil d’analyse de journal [CDN](../setup.md#setup-the-elastic-dashboard-tool).
+Analysons les résultats de la règle `publish-auth-requests` en téléchargeant les journaux de réseau CDN AEMCS depuis Cloud Manager et en utilisant l’[outil d’analyse de journal de réseau CDN AEMCS](../setup.md#setup-the-elastic-dashboard-tool).
 
 - Cliquez sur la vignette **Environnements** de [Cloud Manager](https://my.cloudmanager.adobe.com/) et téléchargez les journaux du réseau CDN du service de **Publication** AEMCS.
 
@@ -104,4 +105,3 @@ Analysons les résultats de la règle `publish-auth-requests` en téléchargeant
 - Consultez les panneaux **Requêtes analysées**, **Requêtes marquées** et **Détails des requêtes marquées**. Pour les entrées de journal du réseau CDN correspondantes, les panneaux doivent afficher les valeurs d’adresse IP du client ou de la cliente (cli_ip), d’hôte, d’url, d’action (waf_action) et de nom de règle (waf_match) de chaque entrée.
 
   ![Tableau de bord de l’outil ELK.](../assets/how-to/elk-tool-dashboard.png)
-

@@ -14,9 +14,9 @@ doc-type: Tutorial
 exl-id: d6da05e4-bd65-4625-b9a4-cad8eae3c9d7
 duration: 225
 source-git-commit: 293157c296676ef1496e6f861ed8c2c24da7e068
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '685'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Renommez le pipeline existant en remplaçant __Déployer vers l’environnement 
 
 Toujours dans l’onglet __Code source__, assurez-vous que les valeurs des champs Référentiel et Branche Git sont correctes et que la branche comporte vos modifications du contrat de pipeline front-end.
 
-Pipeline de configuration du code Source ![](assets/fullstack-wknd-source-code-config.png)
+![Pipeline de configuration du code source](assets/fullstack-wknd-source-code-config.png)
 
 
 ## Créer un pipeline front-end
