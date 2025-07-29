@@ -30,7 +30,7 @@ Les attaques sophistiquées se caractérisent par des taux de demande élevés, 
 > Les règles de filtrage de trafic WAF nécessitent une licence supplémentaire de **protection WAF-DDoS** ou de **sécurité renforcée**. Les règles de filtrage de trafic standard sont disponibles par défaut pour les clientes et clients Sites et Forms.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469432/?quality=12&learn=on&captions=fre_fr)
 
 ## Objectifs d’apprentissage
 
