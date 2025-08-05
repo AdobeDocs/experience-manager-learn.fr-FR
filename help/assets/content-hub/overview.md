@@ -92,7 +92,7 @@ Ces vidéos concernent les fonctionnalités clés d’AEM Assets Content Hub 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/content-hub/add-assets" title="Ajouter des ressources" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432980/?format=jpeg&nocache=1744751769952" alt="Ajouter des ressources"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450284/?format=jpeg&nocache=1744751769952&captions=fre_fr" alt="Ajouter des ressources"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
