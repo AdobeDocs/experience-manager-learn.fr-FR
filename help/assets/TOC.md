@@ -7,9 +7,9 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 2ffe4706856f0dbf63f2916af010f23bdb7b0045
-workflow-type: ht
-source-wordcount: '456'
+source-git-commit: 82437ad5d395c5261b3a913b168e4068abb55206
+workflow-type: tm+mt
+source-wordcount: '458'
 ht-degree: 100%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 100%
    + [Balises intelligentes pour les vidéos](metadata/video-smart-tags.md)
    + [Importer et exporter des métadonnées](metadata/metadata-import-export.md)
 
-+ Content Hub{#content-hub}
++ Content Hub{#content-hub}
    + [Vue d’ensemble](./content-hub/overview.md)
    + [Configurer](./content-hub/set-up.md)
    + [Configurer](./content-hub/configure.md)
@@ -147,6 +147,7 @@ ht-degree: 100%
       + [Accentuation de l’image](dynamic-media/dynamic-media-image-sharpening-feature-video-use.md)
       + [Gestion des couleurs](dynamic-media/dynamic-media-color-management-technical-video-setup.md)
    + Vidéo {#video}
+      + [Bonnes pratiques](dynamic-media/dynamic-media-video-best-practices.md)
       + [Vidéo 360](dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.md)
       + [Miniatures vidéo personnalisées](dynamic-media/dynamic-media-video-thumbnails-feature-video-use.md)
       + [Streaming adaptatif DASH](dynamic-media/dynamic-media-dash.md)
