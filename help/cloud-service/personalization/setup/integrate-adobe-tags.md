@@ -127,5 +127,5 @@ Pour vérifier que la configuration Balises fonctionne correctement, vous pouvez
 
 ## Ressources supplémentaires
 
-- [Vue d’ensemble d’Adobe Experience Platform Debugger](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
+- [Vue d’ensemble d’Adobe Experience Platform Debugger](https://experienceleague.adobe.com/fr/docs/experience-platform/debugger/home)
 - [Vue d’ensemble de Balises](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home)

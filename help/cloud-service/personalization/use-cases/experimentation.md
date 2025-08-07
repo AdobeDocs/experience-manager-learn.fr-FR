@@ -250,7 +250,7 @@ Pour voir le test A/B en action, consultez le [site web de l’activation de WKN
 
 ## Ressources supplémentaires
 
-- [Présentation du test A/B](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab)
-- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)
-- [ Présentation des flux de données ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)
-- [Compositeur d’expérience visuelle (VEC)](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer)
+- [Présentation du test A/B](https://experienceleague.adobe.com/fr/docs/target/using/activities/abtest/test-ab)
+- [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/home)
+- [ Présentation des flux de données ](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overview)
+- [Compositeur d’expérience visuelle (VEC)](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/visual-experience-composer)
