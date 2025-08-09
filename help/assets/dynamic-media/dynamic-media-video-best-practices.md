@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Découvrez les bonnes pratiques relatives à la publication et à l’optimisation des vidéos dans AEM Dynamic Media, notamment la diffusion en continu adaptative, le recadrage intelligent pour différentes tailles d’écran, les paramètres prédéfinis de visionneuse personnalisés et la prise en charge des légendes, des pistes audio et des marqueurs de chapitre. Il explique comment améliorer l’expérience utilisateur, l’accessibilité et l’impact marketing sur tous les appareils.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470634/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470680/?learn=on&enablevpops&captions=fre_fr)
 
 ## Ressources annexes
 
