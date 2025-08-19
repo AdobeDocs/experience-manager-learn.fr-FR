@@ -13,9 +13,9 @@ jira: KT-14734
 thumbnail: KT-14734.jpeg
 exl-id: 33eb0757-f0ed-4c2d-b8b9-fa6648e87640
 source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '579'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ Dans le projet Adobe Developer Console, chaque enregistrement d’événement 
 
 >[!IMPORTANT]
 >
->Les points d’entrée de démonstration en direct de ce tutoriel étaient auparavant hébergés sur [Glitch](https://glitch.com/). Depuis juillet 2025, Glitch a arrêté son service d’hébergement et les points d’entrée ne sont plus accessibles.
->&#x200B;>Nous travaillons activement à la migration des démonstrations vers une plateforme alternative. Le contenu du tutoriel reste exact et des liens mis à jour seront bientôt fournis.
->&#x200B;>Merci de votre compréhension et de votre patience.
+>Les points d’entrée de la démonstration en direct dans ce tutoriel étaient auparavant hébergés sur [Glitch](https://glitch.com/). Depuis juillet 2025, Glitch a mis fin à son service d’hébergement et les points d’entrée ne sont plus accessibles.
+>>Nous travaillons activement à la migration des démonstrations vers une autre plateforme. Le contenu du tutoriel reste exact et des liens mis à jour seront bientôt fournis.
+>>Merci pour votre compréhension et pour votre patience.
 
 Utilisez votre propre application jusqu’à ce que les points d’entrée de démonstration en direct soient à nouveau disponibles.
 
@@ -89,4 +89,4 @@ Pour simplifier les choses, cette application web hébergée récupère uniqueme
 
 ## Ressources supplémentaires
 
-- L’[API de journalisation des événements Adobe I/O](https://developer.adobe.com/events/docs/guides/api/journaling_api/) fournit des informations détaillées sur l’API, telles que le premier lot d’événements, le suivant et le dernier, la pagination, etc.
+- L’[API de journalisation d’Adobe I/O Events](https://developer.adobe.com/events/docs/guides/api/journaling_api/) fournit des informations détaillées sur l’API, telles que le premier lot d’événements, le suivant et le dernier, la pagination, etc.
