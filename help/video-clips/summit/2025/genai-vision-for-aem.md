@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez l’approche d’Adobe pour réduire les barrières à l’entrée, unifier les workflows et optimiser l’impact sur l’entreprise avec les outils d’IA générative.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459231/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462143/?learn=on&enablevpops&captions=fre_fr)

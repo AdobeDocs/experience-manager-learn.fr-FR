@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment les principes de la mise en récit dans la musique country sont liés à la conception d’outils d’IA générative pour les expériences numériques.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459229/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3462011/?learn=on&enablevpops&captions=fre_fr)
