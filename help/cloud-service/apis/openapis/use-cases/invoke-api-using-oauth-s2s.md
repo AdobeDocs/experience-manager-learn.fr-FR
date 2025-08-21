@@ -12,10 +12,10 @@ thumbnail: KT-16516.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 8338a905-c4a2-4454-9e6f-e257cb0db97c
-source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
-workflow-type: ht
-source-wordcount: '1776'
-ht-degree: 100%
+source-git-commit: 57da04874cfb37dcccbf605c65fbcba8f12849fb
+workflow-type: tm+mt
+source-wordcount: '1811'
+ht-degree: 97%
 
 ---
 
@@ -81,7 +81,10 @@ L’étape Configurer le projet ADC est _répétée_ à partir de [Configurer le
 
    ![Ajouter une API](../assets/s2s/add-api.png)
 
-1. Dans la boîte de dialogue _Ajouter une API_, filtrez par _Experience Cloud_ et sélectionnez la vignette **API de création AEM Assets** puis cliquez sur **Suivant**.
+1. Dans la boîte de dialogue _Ajouter une API_, filtrez par _Experience Cloud_ et sélectionnez la vignette **API de création AEM Assets** puis cliquez sur **Suivant**.
+Si vous avez besoin d’une autre API AEM basée sur OpenAPI, reportez-vous à la [Documentation d’Adobe Developer](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) pour trouver celle qui correspond à votre cas d’utilisation.
+
+   L’exemple ci-dessous explique comment ajouter l’API de création AEM Assets ****.
 
    ![Ajout d’une API AEM](../assets/s2s/add-aem-api.png)
 
@@ -480,3 +483,4 @@ Dans le projet ADC, vous avez ajouté les API AEM, configuré son type d’authe
 ## Ressources supplémentaires
 
 - [Guide de mise en œuvre des informations d’identification OAuth serveur à serveur](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+
