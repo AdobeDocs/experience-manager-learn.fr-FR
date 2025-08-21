@@ -84,7 +84,7 @@ L’étape Configurer le projet ADC est _répétée_ à partir de [Configurer le
 1. Dans la boîte de dialogue _Ajouter une API_, filtrez par _Experience Cloud_ et sélectionnez la vignette **API de création AEM Assets** puis cliquez sur **Suivant**.
 Si vous avez besoin d’une autre API AEM basée sur OpenAPI, reportez-vous à la [Documentation d’Adobe Developer](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) pour trouver celle qui correspond à votre cas d’utilisation.
 
-   L’exemple ci-dessous explique comment ajouter l’API de création AEM Assets ****.
+   L’exemple ci-dessous explique comment ajouter l’API de création AEM Assets **&#x200B;**.
 
    ![Ajout d’une API AEM](../assets/s2s/add-aem-api.png)
 
