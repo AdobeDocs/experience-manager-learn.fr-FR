@@ -22,4 +22,4 @@ ht-degree: 40%
 
 Découvrez comment configurer AEM Assets Content Hub pour répondre aux besoins de votre entreprise. Cette vidéo aide les administrateurs et administratrices à comprendre les paramètres de configuration de Content Hub et fournit des instructions détaillées sur la personnalisation de ces paramètres pour obtenir des performances optimales et s’aligner sur les objectifs de l’entreprise.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3472948/?learn=on&enablevpops&captions=fre_fr)
