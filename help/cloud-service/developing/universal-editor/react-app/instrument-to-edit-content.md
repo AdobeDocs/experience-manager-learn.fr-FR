@@ -12,8 +12,8 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 2a25cd44-cbd1-465e-ae3f-d3876e915114
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 252d7045ba43c0998e9bb98fa86c399812ce92e9
+workflow-type: tm+mt
 source-wordcount: '1606'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ Pour ce tutoriel, nous allons utiliser l’approche de la balise de script.
                      Loads the LATEST Universal Editor library
                    */}
                    <script
-                       src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"
+                       src="https://universal-editor-service.adobe.io/cors.js"
                        async
                    />
                </Helmet>
@@ -106,7 +106,7 @@ return (
                     Loads the LATEST Universal Editor library
                 */}
                 <script
-                    src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"
+                    src="https://universal-editor-service.adobe.io/cors.js"
                     async
                 />
                 {/* AEM Universal Editor :: Connection metadata 
@@ -151,7 +151,7 @@ function App() {
               Loads the LATEST Universal Editor library
           */}
           <script
-            src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"
+            src="https://universal-editor-service.adobe.io/cors.js"
             async
           />
           {/* AEM Universal Editor :: Connection metadata 
