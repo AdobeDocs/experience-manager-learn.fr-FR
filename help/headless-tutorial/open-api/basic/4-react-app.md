@@ -113,9 +113,9 @@ Pour obtenir l’application React :
 >   Cette application React est partiellement implémentée. Suivez les étapes de ce tutoriel pour terminer la mise en œuvre. Les fichiers JavaScript qui doivent être implémentés comportent les commentaires suivants. Veillez à ajouter ou mettre à jour le code dans ces fichiers avec le code spécifié dans ce tutoriel.
 >
 >
->  //*********************************
->  >  // Tâche : implémentez ceci en suivant les étapes du tutoriel AEM Headless.
->  >  //*********************************
+>  //**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;***
+>  &#x200B;>  // Tâche : implémentez ceci en suivant les étapes du tutoriel AEM Headless.
+>  &#x200B;>  //**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;***
 >
 
 ## Anatomie de l’application React

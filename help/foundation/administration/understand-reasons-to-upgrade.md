@@ -158,7 +158,7 @@ effectuez la maintenance du référentiel sans arrêt du serveur.</td>
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/storage-elements-in-aem-6.html?&amp;lang=fr" target="_blank">Stockage du référentiel TarMK ou MongoMK</a> :</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/storage-elements-in-aem-6.html?&lang=fr" target="_blank">Stockage du référentiel TarMK ou MongoMK</a> :</strong>
 <br>options d’utilisation d’un stockage simple et performant basé sur des fichiers de TarMK (version de nouvelle génération de TarPM),
 <br>ou mise à l’échelle horizontale avec un référentiel soutenu par MongoDB avec MongoMK.</td>
             <td> </td>
@@ -170,7 +170,7 @@ effectuez la maintenance du référentiel sans arrêt du serveur.</td>
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/aem-with-mongodb.html?&amp;lang=fr" target="_blank">Performances et stabilité de MongoMK</a> :</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/aem-with-mongodb.html?&lang=fr" target="_blank">Performances et stabilité de MongoMK</a> :</strong>
 des améliorations continues ont été apportées à MongoMK depuis son introduction avec AEM 6.0.</td>
             <td> </td>
             <td> </td>
