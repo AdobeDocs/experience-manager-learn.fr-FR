@@ -14,9 +14,9 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="d’AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
 duration: 135
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '667'
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+workflow-type: tm+mt
+source-wordcount: '640'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,6 @@ Cliquez sur le produit Experience Cloud pour obtenir de la documentation sur la
 | [Learning Manager](#adobe-learning-manager) | ✔ |            |          |
 | Marketo Engage |           |            |          |
 | Real-time CDP |           |            |          |
-| [Sensei](#adobe-sensei) | ✔ | ✔ | ✔ |
 | [Target](#adobe-target) | ✔ |            |          |
 | [Workfront](#adobe-workfront) |           | ✔ |          |
 
@@ -124,10 +123,6 @@ Adobe Learning Manager (anciennement Adobe Captivate Prime) offre des format
 ### AEM Sites
 
 + [Intégrer AEM Sites à Adobe Learning Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-learning-manager.html?lang=fr)
-
-## Adobe Sensei
-
-Adobe Sensei fournit des technologies d’IA et d’apprentissage automatique pour transformer le processus de gestion de contenu grâce aux balises intelligentes, au recadrage intelligent, à la recherche visuelle et bien plus encore.
 
 ### AEM Sites
 

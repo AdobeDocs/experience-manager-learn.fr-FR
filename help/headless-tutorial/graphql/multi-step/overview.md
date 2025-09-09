@@ -12,10 +12,10 @@ level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 54
-source-git-commit: 888b00396f1d5d0b2dcb6895affdadf2907162fa
-workflow-type: ht
-source-wordcount: '238'
-ht-degree: 100%
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 91%
 
 ---
 
@@ -46,7 +46,7 @@ Pour suivre ce tutoriel, vous devez suivre les étapes ci-après :
 
 ### Environnement AEM
 
-Pour suivre ce tutoriel, il est recommandé de disposer d’un accès d’administrateur ou d’administratrice AEM à un environnement AEM as a Cloud Service.
+Pour suivre ce tutoriel, il est recommandé de disposer d’un accès administrateur AEM à un environnement AEM as a Cloud Service.
 
 ## Commençons !
 

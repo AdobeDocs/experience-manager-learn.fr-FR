@@ -8,10 +8,10 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
 duration: 173
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '873'
-ht-degree: 100%
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+workflow-type: tm+mt
+source-wordcount: '867'
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ Dans ce guide, nous aborderons les principales fonctionnalités suivantes de Dyn
 
 - **Dynamic Imaging.** : terme générique désignant la modification, le formatage et le dimensionnement en temps réel, ainsi que le zoom et le panoramique interactifs, les nuances de couleurs et de textures, la rotation à 360 degrés, les modèles d’image, et les visionneuses multimédia.
 - **Vidéo.** : chargez les vidéos finales, publiez-les et téléchargez-les progressivement dans des visionneuses vidéo configurables.
-- **Imagerie dynamique.** : technologie qui utilise les fonctionnalités de l’IA d’Adobe Sensei et les « paramètres d’image prédéfinis » existants pour améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images selon les fonctionnalités du navigateur client.
+- **Imagerie dynamique.** Technologie qui fonctionne avec les « paramètres d’image prédéfinis » existants pour améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
 
 Pour découvrir d’autres fonctionnalités de la solution, rendez-vous sur [Documentation pour Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html?lang=fr).
 

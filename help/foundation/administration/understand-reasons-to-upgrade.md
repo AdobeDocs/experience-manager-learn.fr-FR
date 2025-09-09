@@ -9,10 +9,10 @@ level: Beginner
 doc-type: Article
 exl-id: bf4030b0-67c4-4b00-af95-f63e6f79e995
 duration: 538
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+workflow-type: tm+mt
 source-wordcount: '2576'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -136,7 +136,7 @@ Vous trouverez ci-dessous un tableau des principales fonctionnalités de base pr
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/queries-and-indexing.html?lang=fr" target="_blank">Index de recherche personnalisés</a> :</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/queries-and-indexing.html?lang=fr" target="_blank">Index de recherche personnalisés</a> :</strong>
 possibilité d’ajouter des définitions d’index personnalisées pour optimiser les performances des requêtes et la pertinence des recherches.</td>
             <td> </td>
             <td>✔</td>
@@ -158,7 +158,7 @@ effectuez la maintenance du référentiel sans arrêt du serveur.</td>
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/storage-elements-in-aem-6.html?lang=fr&&amp;lang=fr" target="_blank">Stockage du référentiel TarMK ou MongoMK</a> :</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/storage-elements-in-aem-6.html?&amp;lang=fr" target="_blank">Stockage du référentiel TarMK ou MongoMK</a> :</strong>
 <br>options d’utilisation d’un stockage simple et performant basé sur des fichiers de TarMK (version de nouvelle génération de TarPM),
 <br>ou mise à l’échelle horizontale avec un référentiel soutenu par MongoDB avec MongoMK.</td>
             <td> </td>
@@ -170,7 +170,7 @@ effectuez la maintenance du référentiel sans arrêt du serveur.</td>
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/aem-with-mongodb.html?lang=fr&&amp;lang=fr" target="_blank">Performances et stabilité de MongoMK</a> :</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/aem-with-mongodb.html?&amp;lang=fr" target="_blank">Performances et stabilité de MongoMK</a> :</strong>
 des améliorations continues ont été apportées à MongoMK depuis son introduction avec AEM 6.0.</td>
             <td> </td>
             <td> </td>
@@ -645,7 +645,7 @@ gérez les expériences relatives à la signalétique numérique et aux kiosques
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/commerce/classic/administering/ecommerce.html?lang=fr&lang-fr" target="_blank"> eCommerce</a> :</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/commerce/classic/administering/ecommerce.html?lang-fr" target="_blank"> eCommerce</a> :</strong>
 permet d’offrir des expériences d’achat personnalisées sur les points de contact web, mobiles et de réseaux sociaux.
             </td>
             <td>✔</td>
@@ -674,7 +674,7 @@ les forums, les commentaires sous forme de threads, les calendriers d’événem
 
 Vous trouverez ci-dessous un tableau avec les principales fonctionnalités d’Assets proposées par AEM. Certaines fonctionnalités ont été introduites dans des versions antérieures et bénéficient d’améliorations à chaque nouvelle version.
 
-+ [Notes de mise à jour d’AEM Assets](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/assets.html?lang=fr)
++ [Notes de mise à jour d’AEM Assets](https://helpx.adobe.com/experience-manager/6-5/release-notes/assets.html?lang=fr)
 
 ***✔indique que des améliorations importantes ont été apportées à la fonctionnalité dans cette version.***
 
@@ -794,7 +794,7 @@ tirez parti d’Adobe Analytics pour capturer l’interaction client avec les r
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/multilingual-assets.html?lang=fr" target="_blank">Ressources multilingues</a> :</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/multilingual-assets.html?lang=fr" target="_blank">Ressources multilingues</a> :</strong>
             Prise en charge automatique de la traduction des métadonnées de ressources avec des racines linguistiques.</td>
             <td> </td>
             <td> </td>
@@ -805,8 +805,8 @@ tirez parti d’Adobe Analytics pour capturer l’interaction client avec les r
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/enhanced-smart-tags.html" target="_blank">Balises intelligentes et modération</a> :</strong>
-            Tirez parti d’Adobe Sensei pour baliser automatiquement les images avec des métadonnées pertinentes.</td>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/enhanced-smart-tags.html" target="_blank">Balises intelligentes et modération</a>:</strong>
+            Utilisez l’IA d’Adobe pour baliser automatiquement les images avec des métadonnées utiles.</td>
             <td> </td>
             <td></td>
             <td> </td>
@@ -817,7 +817,7 @@ tirez parti d’Adobe Analytics pour capturer l’interaction client avec les r
         </tr>
         <tr>
             <td><strong><a href="https://helpx.adobe.com/experience-manager/kt/assets/using/smart-translation-search-feature-video-use.html?lang=fr" target="_blank">Recherche de traduction intelligente</a> :</strong>
-            Traduisez automatiquement les termes recherchés lors de la recherche dans AEM Assets.</td>
+            Traduisez automatiquement les termes de recherche lors de la recherche dans AEM Assets.</td>
             <td> </td>
             <td> </td>
             <td> </td>
@@ -827,7 +827,7 @@ tirez parti d’Adobe Analytics pour capturer l’interaction client avec les r
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/indesign.html?lang=fr" target="_blank">Intégration d’Adobe InDesign Server</a> :</strong>
+            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/indesign.html?lang=fr" target="_blank">Intégration d’Adobe InDesign Server</a> :</strong>
             Générez des catalogues de produits. Créez des brochures, dépliants et publicités imprimées à partir de modèles InDesign.</td>
             <td> </td>
             <td> </td>
