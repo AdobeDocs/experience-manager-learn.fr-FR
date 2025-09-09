@@ -58,7 +58,7 @@ Avant de poursuivre le cas d’utilisation du ciblage comportemental, assurez-vo
 - [Intégrer Adobe Target](../setup/integrate-adobe-target.md) : permet aux équipes de créer et de gérer du contenu personnalisé de manière centralisée dans AEM et de l’activer en tant qu’offres dans Adobe Target.
 - [Intégrer des balises dans Adobe Experience Platform](../setup/integrate-adobe-tags.md) : permet aux équipes de gérer et de déployer JavaScript pour la personnalisation et la collecte de données sans avoir à redéployer le code AEM.
 
-Familiarisez-vous également avec les concepts de [Adobe Experience Cloud Identity Service (ECID)](https://experienceleague.adobe.com/en/docs/id-service/using/home) et de [Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/home) tels que le schéma, le flux de données, les audiences, les identités et les profils.
+Familiarisez-vous également avec les concepts de [Adobe Experience Cloud Identity Service (ECID)](https://experienceleague.adobe.com/fr/docs/id-service/using/home) et de [Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/home) tels que le schéma, le flux de données, les audiences, les identités et les profils.
 
 Bien que vous puissiez créer des audiences simples dans Adobe Target, Adobe Experience Platform (AEP) offre une approche moderne pour créer et gérer des audiences et créer des profils clients complets à l’aide de diverses sources de données telles que les données comportementales et transactionnelles.
 
@@ -661,6 +661,6 @@ La première audience utilise l’évaluation **Edge** pour la personnalisation 
 - [SDK web d’Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/home)
 - [Vue d’ensemble des flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overview)
 - [Visual Experience Composer (VEC)](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/visual-experience-composer)
-- [segmentation Edge](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/edge-segmentation)
-- [Types d’audience](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/types/overview)
-- [Connexion Adobe Target](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
+- [segmentation Edge](https://experienceleague.adobe.com/fr/docs/experience-platform/segmentation/methods/edge-segmentation)
+- [Types d’audience](https://experienceleague.adobe.com/fr/docs/experience-platform/segmentation/types/overview)
+- [Connexion Adobe Target](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection)
