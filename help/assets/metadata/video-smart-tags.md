@@ -23,4 +23,4 @@ ht-degree: 13%
 
 Experience Manager Assets balisera intelligemment les ressources vidéo avec des mots-clés qui décrivent les éléments clés de la vidéo, ce qui permettra aux utilisateurs d’AEM de les découvrir facilement à l’aide de la recherche par mot-clé.
 
->[!VIDEO](https://video.tv.adobe.com/v/327005?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340531?quality=12&learn=on&captions=fre_fr)

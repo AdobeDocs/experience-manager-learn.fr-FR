@@ -21,7 +21,7 @@ ht-degree: 87%
 
 Le recadrage intelligent élimine les tâches longues et coûteuses de recadrage du contenu pour un design réactif.
 
->[!VIDEO](https://video.tv.adobe.com/v/21519?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40208?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

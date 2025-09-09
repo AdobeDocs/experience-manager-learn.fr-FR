@@ -22,7 +22,7 @@ ht-degree: 48%
 
 Le recadrage intelligent Dynamic Media pour vidéo effectue un suivi intelligent du point ciblé dans la vidéo, en s’assurant que les vidéos ont l’aspect le plus favorable quelle que soit la taille de l’écran.
 
->[!VIDEO](https://video.tv.adobe.com/v/37958?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/326468?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >
