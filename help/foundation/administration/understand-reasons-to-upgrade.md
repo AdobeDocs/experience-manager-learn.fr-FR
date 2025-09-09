@@ -136,7 +136,7 @@ Vous trouverez ci-dessous un tableau des principales fonctionnalités de base pr
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/queries-and-indexing.html?lang=fr" target="_blank">Index de recherche personnalisés</a> :</strong>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/queries-and-indexing.html?lang=fr" target="_blank">Index de recherche personnalisés</a> :</strong>
 possibilité d’ajouter des définitions d’index personnalisées pour optimiser les performances des requêtes et la pertinence des recherches.</td>
             <td> </td>
             <td>✔</td>
@@ -645,7 +645,7 @@ gérez les expériences relatives à la signalétique numérique et aux kiosques
             <td>✔<sup>+</sup></td>
         </tr>
         <tr>
-            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/commerce/classic/administering/ecommerce.html?lang-fr" target="_blank"> eCommerce</a> :</strong>
+            <td><strong><a href="https://experienceleague.adobe.com/docs/experience-manager-65/commerce/classic/administering/ecommerce.html?lang=fr&lang-fr" target="_blank"> eCommerce</a> :</strong>
 permet d’offrir des expériences d’achat personnalisées sur les points de contact web, mobiles et de réseaux sociaux.
             </td>
             <td>✔</td>
@@ -674,7 +674,7 @@ les forums, les commentaires sous forme de threads, les calendriers d’événem
 
 Vous trouverez ci-dessous un tableau avec les principales fonctionnalités d’Assets proposées par AEM. Certaines fonctionnalités ont été introduites dans des versions antérieures et bénéficient d’améliorations à chaque nouvelle version.
 
-+ [Notes de mise à jour d’AEM Assets](https://helpx.adobe.com/experience-manager/6-5/release-notes/assets.html?lang=fr)
++ [Notes de mise à jour d’AEM Assets](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/assets.html?lang=fr)
 
 ***✔indique que des améliorations importantes ont été apportées à la fonctionnalité dans cette version.***
 
@@ -794,7 +794,7 @@ tirez parti d’Adobe Analytics pour capturer l’interaction client avec les r
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/multilingual-assets.html?lang=fr" target="_blank">Ressources multilingues</a> :</strong>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/multilingual-assets.html?lang=fr" target="_blank">Ressources multilingues</a> :</strong>
             Prise en charge automatique de la traduction des métadonnées de ressources avec des racines linguistiques.</td>
             <td> </td>
             <td> </td>
@@ -827,7 +827,7 @@ tirez parti d’Adobe Analytics pour capturer l’interaction client avec les r
             <td>✔</td>
         </tr>
         <tr>
-            <td><strong><a href="https://helpx.adobe.com/experience-manager/6-5/assets/using/indesign.html?lang=fr" target="_blank">Intégration d’Adobe InDesign Server</a> :</strong>
+            <td><strong><a href="https://helpx.adobe.com/fr/experience-manager/6-5/assets/using/indesign.html?lang=fr" target="_blank">Intégration d’Adobe InDesign Server</a> :</strong>
             Générez des catalogues de produits. Créez des brochures, dépliants et publicités imprimées à partir de modèles InDesign.</td>
             <td> </td>
             <td> </td>

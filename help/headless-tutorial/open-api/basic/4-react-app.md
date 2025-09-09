@@ -43,7 +43,7 @@ Découvrez comment :
 
 Cet exemple d’application React s’exécute localement (sur `http://localhost:3000`) et se connecte à la diffusion de fragments de contenu AEM du service de publication AEM avec les API OpenAPI. Pour autoriser cette connexion, CORS (partage de ressources entre origines multiples) doit être configuré sur le service de publication (ou d’aperçu) AEM.
 
-Suivez les [instructions de la section Configuration d’une SPA s’exécutant sur `http://localhost:3000` pour autoriser les requêtes CORS au service de publication AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#different-domains).
+Suivez les [instructions de la section Configuration d’une SPA s’exécutant sur `http://localhost:3000` pour autoriser les requêtes CORS au service de publication AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#different-domains).
 
 ### Proxy CORS local
 
