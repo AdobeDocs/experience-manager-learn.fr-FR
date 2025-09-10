@@ -46,7 +46,7 @@ L’éditeur universel requiert [les attributs HTML et les balises meta](https:/
 Tout d’abord, ajoutez les balises méta nécessaires pour identifier l’application React comme compatible avec l’éditeur universel.
 
 1. Ouvrez `public/index.html` dans votre application React.
-1. Ajoutez les [balises méta de l’éditeur universel et script CORS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) dans la section `<head>` de l’application React :
+1. Ajoutez les [balises méta de l’éditeur universel et script CORS](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) dans la section `<head>` de l’application React :
 
    ```html
    <!DOCTYPE html>
