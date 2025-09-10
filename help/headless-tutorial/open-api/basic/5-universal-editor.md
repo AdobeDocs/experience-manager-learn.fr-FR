@@ -1,5 +1,5 @@
 ---
-title: Rendre l’application React modifiable avec l’éditeur universel | Tutoriel Headless Partie 5
+title: Modifier l’application React avec l’éditeur universel | Tutoriel Headless Partie 5
 description: Découvrez comment rendre votre application React modifiable dans l’éditeur universel d’AEM en ajoutant l’instrumentation et la configuration nécessaires.
 version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
@@ -8,15 +8,15 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 duration: 800
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
+source-git-commit: da3bfa25a424e3176fb7d53189169515db225228
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '759'
 ht-degree: 4%
 
 ---
 
 
-# Rendre l’application React modifiable avec l’éditeur universel
+# Modifier l’application React avec l’éditeur universel
 
 Dans ce chapitre, vous apprenez à rendre l’application React créée dans le [chapitre précédent](./4-react-app.md) modifiable à l’aide de l’éditeur universel d’AEM. L’éditeur universel permet aux personnes en charge de la création de contenu de modifier du contenu directement dans le contexte de l’expérience de l’application React, tout en conservant l’expérience transparente d’une application découplée.
 
@@ -46,7 +46,7 @@ L’éditeur universel requiert [les attributs HTML et les balises meta](https:/
 Tout d’abord, ajoutez les balises méta nécessaires pour identifier l’application React comme compatible avec l’éditeur universel.
 
 1. Ouvrez `public/index.html` dans votre application React.
-1. Ajoutez les [balises méta de l’éditeur universel et script CORS](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) dans la section `<head>` de l’application React :
+1. Ajoutez les [balises méta de l’éditeur universel et script CORS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) dans la section `<head>` de l’application React :
 
    ```html
    <!DOCTYPE html>
