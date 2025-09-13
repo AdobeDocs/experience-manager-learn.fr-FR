@@ -45,7 +45,7 @@ Rendez-vous sur le site Web [Activation WKND](https://wknd.enablementadobe.com/u
 
 - **Page du magazine** : lorsque les utilisateurs lisent _trois articles ou plus_ ils sont classés comme **Lecteurs de magazine** et voient une section personnalisée dédiée aux héros sur la page du magazine.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474001/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474003/?learn=on&enablevpops&captions=fre_fr)
 
 >[!TIP]
 >
