@@ -6,7 +6,7 @@ sub-product: Experience Manager Sites
 topic: Content Management
 doc-type: Catalog
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 14ca2ba3d5b6c116e3fa8b437aa9ed90375ae468
+source-git-commit: 999bbe542e5c71ae537f93a4c89acf6d304a4292
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 38%
@@ -23,7 +23,7 @@ Adobe Experience Manager (AEM) Sites est la plateforme de gestion de l’expéri
 
 AEM Sites propose trois méthodes de génération, de création et de diffusion d’expériences. Que vous créiez des sites web, optimisiez les performances Edge ou optimisiez des applications découplées, AEM Sites offre des options flexibles pour répondre aux besoins de votre projet :
 
-1. **Edge Delivery Services** les expériences utilisent Edge Network d’Adobe pour diffuser du contenu à grande vitesse et à faible latence. Le service optimise automatiquement le contenu pour l’appareil consommateur, les moteurs de recherche et les agents GenAI. Les auteurs créent du contenu à l’aide de l’éditeur universel Adobe ou de la création documentaire.
+1. **Edge Delivery Services** les expériences utilisent Adobe Edge Network pour diffuser du contenu à grande vitesse et à faible latence. Le service optimise automatiquement le contenu pour l’appareil consommateur, les moteurs de recherche et les agents GenAI. Les auteurs créent du contenu à l’aide de l’éditeur universel Adobe ou de la création documentaire.
 1. Les expériences **découplées/API-first** utilisent la publication AEM pour diffuser du contenu sous forme d’API JSON sur HTTP pour les applications mobiles, les applications d’une seule page (SPA) ou d’autres clients découplés. Les auteurs créent du contenu à l’aide de l’éditeur de fragment de contenu ou de l’éditeur universel.
 1. Les expériences **AEM traditionnelles** utilisent l’instance de publication AEM pour diffuser du contenu sous forme de pages web HTML. Les auteurs créent du contenu à l’aide de l’éditeur de page de l’auteur AEM. Cette option est préférable pour les projets existants ou les projets déjà migrés.
 
@@ -31,7 +31,7 @@ Les trois options sont des approches solides, et le meilleur choix dépend de vo
 
 >[!IMPORTANT]
 >
-> **Edge Delivery Services** est la méthode la plus récente et la plus avancée pour diffuser des sites web avec AEM. Il associe la vitesse et l’évolutivité d’Edge Network d’Adobe à des options de création modernes. Bien que Edge Delivery Services soit recommandé pour les nouveaux projets, AEM Sites continue à prendre en charge les approches découplées et traditionnelles, afin que vous puissiez choisir le chemin qui correspond le mieux à vos besoins.
+> **Edge Delivery Services** est la méthode la plus récente et la plus avancée pour diffuser des sites web avec AEM. Il associe la vitesse et l’évolutivité d’Adobe Edge Network à des options de création modernes. Bien que Edge Delivery Services soit recommandé pour les nouveaux projets, AEM Sites continue à prendre en charge les approches découplées et traditionnelles, afin que vous puissiez choisir le chemin qui correspond le mieux à vos besoins.
 
 Le diagramme suivant illustre les différentes options de création d’expériences avec AEM Sites :
 
@@ -67,12 +67,12 @@ Explorez plus en détail les trois approches de création avec AEM Sites. Les tu
   {description = Explore Edge Delivery Services with comprehensive guides. The Build, Publish, and Launch guides cover everything you need to get started with Edge Delivery Services.}
   {image = ./assets/edge-delivery-services.png}
   {target = _blank}
-* https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview
   {title = Headless/API-First - Tutorials}
   {description = Learn how to build headless applications powered by AEM content. Tutorials cover frameworks like iOS, Android, and React—choose what fits your stack.}
   {image = ./assets/headless.png}
   {target = _self}
-* https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
   {title = Traditional AEM - WKND Tutorial}
   {description = Learn how to build a sample AEM Sites project using the WKND tutorial. This guide walks you through project setup, Core Components, Editable Templates, client-side libraries, and component development.}
   {image = ./assets/aem-wknd-spa-editor-tutorial.png}
