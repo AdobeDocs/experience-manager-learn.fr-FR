@@ -6,7 +6,7 @@ sub-product: Experience Manager Sites
 topic: Content Management
 doc-type: Catalog
 exl-id: cde4ce7f-0afe-4632-8c1c-354586f296d5
-source-git-commit: 2b3ff1957f9da313b71a73492777700ddbd79854
+source-git-commit: 14ca2ba3d5b6c116e3fa8b437aa9ed90375ae468
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 38%
@@ -19,7 +19,7 @@ ht-degree: 38%
 
 Adobe Experience Manager (AEM) Sites est la plateforme de gestion de l’expérience d’Adobe qui permet la création, la gestion et la diffusion d’expériences digitales, que ce soit par le biais d’un site web, d’une application mobile ou de tout autre canal numérique.
 
-## Trois façons de diffuser des expériences avec AEM Sites
+## Trois façons de fournir des expériences avec AEM Sites
 
 AEM Sites propose trois méthodes de génération, de création et de diffusion d’expériences. Que vous créiez des sites web, optimisiez les performances Edge ou optimisiez des applications découplées, AEM Sites offre des options flexibles pour répondre aux besoins de votre projet :
 
@@ -67,12 +67,12 @@ Explorez plus en détail les trois approches de création avec AEM Sites. Les tu
   {description = Explore Edge Delivery Services with comprehensive guides. The Build, Publish, and Launch guides cover everything you need to get started with Edge Delivery Services.}
   {image = ./assets/edge-delivery-services.png}
   {target = _blank}
-* https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/overview
   {title = Headless/API-First - Tutorials}
   {description = Learn how to build headless applications powered by AEM content. Tutorials cover frameworks like iOS, Android, and React—choose what fits your stack.}
   {image = ./assets/headless.png}
   {target = _self}
-* https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview
   {title = Traditional AEM - WKND Tutorial}
   {description = Learn how to build a sample AEM Sites project using the WKND tutorial. This guide walks you through project setup, Core Components, Editable Templates, client-side libraries, and component development.}
   {image = ./assets/aem-wknd-spa-editor-tutorial.png}
