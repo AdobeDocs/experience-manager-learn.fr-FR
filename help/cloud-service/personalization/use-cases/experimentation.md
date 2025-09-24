@@ -42,7 +42,7 @@ Rendez-vous sur le site Web [Activation WKND](https://wknd.enablementadobe.com/u
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473005/?learn=on&enablevpops)
 
-## Prérequis
+## Conditions préalables
 
 Avant de poursuivre le cas d’utilisation de l’expérimentation, assurez-vous d’avoir terminé les étapes suivantes :
 

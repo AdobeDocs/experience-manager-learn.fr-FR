@@ -459,7 +459,7 @@ ht-degree: 99%
          + [Planificateur de tâches Sling](./expert-resources/cloud-5/season-2/cloud5-sling-job-scheduler.md)
          + [Correction de votre cache](./expert-resources/cloud-5/season-2/cloud5-fix-your-cache.md)
          + [Correction de vos réécritures](./expert-resources/cloud-5/season-2/cloud5-fix-your-rewrites.md)
-         + [Cloud Manager - Audit de l’expérience](./expert-resources/cloud-5/season-2/cloud5-mocm-experience-audit.md)
+         + [Cloud Manager - Audit d’expérience](./expert-resources/cloud-5/season-2/cloud5-mocm-experience-audit.md)
          + [Cloud Manager - Tests unitaires](./expert-resources/cloud-5/season-2/cloud5-mocm-unit-tests.md)
          + [Cloud Manager - Tests fonctionnels](./expert-resources/cloud-5/season-2/cloud5-mocm-functional-tests.md)
       + Saison 3{#season-3}
