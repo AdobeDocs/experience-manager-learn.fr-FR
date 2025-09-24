@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 source-git-commit: bc1c7a96a3d5dbc23fb7d34343cee0cfc2853be9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '597'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 99%
 + Fragments d’expérience {#experience-fragments}
    + [Utiliser des fragments d’expérience](experience-fragments/experience-fragments-feature-video-use.md)
    + [Créer des blocs](experience-fragments/building-blocks.md)
-   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr){target=_blank}
+   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Vue d’ensemble](./edge-delivery-services/overview.md)
    + Développement{#developing}

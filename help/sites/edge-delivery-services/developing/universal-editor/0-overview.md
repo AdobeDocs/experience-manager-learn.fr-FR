@@ -11,9 +11,9 @@ jira: KT-15832
 duration: 88
 exl-id: aeac08a2-75a0-4adb-b32e-0e7f85e7eb1d
 source-git-commit: f0ad5d66549970337118220156d7a6b0fd30fd57
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '620'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -100,7 +100,7 @@ Découvrez comment configurer votre environnement de développement local pour p
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./3-local-development-environment.md" title="Configurer un environnement de développement local" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443980/?format=jpeg&nocache=1753811862249&captions=fre_fr" alt="Configurer un environnement de développement local"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443978/?format=jpeg&nocache=1753811862249" alt="Configurer un environnement de développement local"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -304,7 +304,7 @@ Maintenant que vous avez terminé ce tutoriel, appuyez-vous sur ce que vous avez
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./how-to/header-and-footer.md" target="_blank" rel="referrer" title="En-tête et pied de page">En-tête et pied de page</a>
                     </p>
-                    <p class="is-size-6">Découvrez comment l’en-tête et les pieds de page sont développés dans Edge Delivery Services et l’éditeur universel.</p>
+                    <p class="is-size-6">Découvrez comment l’en-tête et les pieds de page sont développés dans Edge Delivery Services et l’éditeur universel.</p>
                 </div>
                 <a href="./how-to/header-and-footer.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
@@ -316,8 +316,8 @@ Maintenant que vous avez terminé ce tutoriel, appuyez-vous sur ce que vous avez
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./how-to/local-extension-preview.md" title="Prévisualisation d’une extension de l’éditeur universel" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="./how-to/assets/local-extension-preview/extension-loaded.png" alt="Prévisualisation d’une extension de l’éditeur universel"
+                    <a href="./how-to/local-extension-preview.md" title="Prévisualiser une extension de l’éditeur universel" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="./how-to/assets/local-extension-preview/extension-loaded.png" alt="Prévisualiser une extension de l’éditeur universel"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -325,9 +325,9 @@ Maintenant que vous avez terminé ce tutoriel, appuyez-vous sur ce que vous avez
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./how-to/local-extension-preview.md" target="_blank" rel="referrer" title="Prévisualisation d’une extension de l’éditeur universel">Aperçu d’une extension d’éditeur universel</a>
+                        <a href="./how-to/local-extension-preview.md" target="_blank" rel="referrer" title="Prévisualiser une extension de l’éditeur universel">Prévisualiser une extension de l’éditeur universel</a>
                     </p>
-                    <p class="is-size-6">Découvrez comment prévisualiser une extension d’éditeur universel exécutée localement pendant le développement.</p>
+                    <p class="is-size-6">Découvrez comment prévisualiser une extension de l’éditeur universel exécutée localement pendant le développement.</p>
                 </div>
                 <a href="./how-to/local-extension-preview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">En savoir plus</span>
