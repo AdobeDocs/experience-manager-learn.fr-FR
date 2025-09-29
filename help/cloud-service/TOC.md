@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 5b91e7409ff0735bab40d78ad98410ac2ab006ed
+source-git-commit: 5f135785f9ff696e75d07b6c22442febd3aa35da
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1407'
 ht-degree: 99%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 99%
    + [Cloud Manager](./introduction/cloud-manager.md)
    + Stratégie et leadership de la pensée{#strategy}
       + [Experience Manager - Modèles et archétypes de gouvernance et de dotation en personnel](./introduction/experience-manager-governance-and-staffing-models.md)
++ [Experience Hub](./experience-hub.md)
 + Intégrations Experience Cloud{#integrations}
    + [Intégrations](./integrations/experience-cloud.md)
    + [AEM Headless et Target](./integrations/target.md)
