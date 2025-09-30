@@ -11,10 +11,10 @@ thumbnail: KT-11862.png
 last-substantial-update: 2023-02-15T00:00:00Z
 exl-id: 1d1bcb18-06cd-46fc-be2a-7a3627c1e2b2
 duration: 792
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '792'
-ht-degree: 100%
+source-git-commit: 2f7e10680c7211da836e33fdd241cd7f5d633d5f
+workflow-type: tm+mt
+source-wordcount: '788'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ Découvrez **comment utiliser** l’environnement de développement rapide (RDE)
 
 Utilisez le [projet de sites WKND AEM](https://github.com/adobe/aem-guides-wknd#aem-wknd-sites-project) pour apprendre à déployer divers artefacts AEM sur le RDE en exécutant la commande `install` du RDE d’AEM à partir de votre IDE favori.
 
-- Déploiement du code AEM et du package de contenu (tous, ui.apps)
+- Déploiement du code AEM et du module de contenu (tous, ui.apps)
 - Déploiement du lot OSGi et du fichier de configuration
 - Déploiement de configurations Apache et Dispatcher en tant que fichier zip
 - Déploiement de fichiers individuels tels que HTL, `.content.xml` (boîte de dialogue XML)
@@ -51,7 +51,7 @@ $ mvn clean package
 
 Tout d’abord, vérifiez que le [dernier module de ligne de commande `aio` est installé](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools#aio-cli).
 
-Ensuite, utilisez la commande `aio aem:rde:install` pour déployer divers artefacts AEM. Maintenant que cela est fait, vous devez procéder comme suit :
+Ensuite, utilisez la commande `aio aem:rde:install` pour déployer divers artefacts AEM.
 
 ### Déployer les packages `all` et `dispatcher`.
 
