@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment migrer d’autres solutions d’Adobe vers les nouvelles informations d’identification OAuth serveur à serveur à partir des informations d’identification du compte de service (JWT) obsolètes.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432960/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3449240/?learn=on&captions=fre_fr)
