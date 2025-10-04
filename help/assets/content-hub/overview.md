@@ -208,7 +208,7 @@ Ces vidéos concernent les fonctionnalités clés d’AEM Assets Content Hub 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./attribute-based-access-control.md" title="Contrôle d’accès basé sur les attributs" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475413/?format=jpeg&nocache=1759339175804" alt="Contrôle d’accès basé sur les attributs"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475416/?format=jpeg&nocache=1759339175804&captions=fre_fr" alt="Contrôle d’accès basé sur les attributs"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
