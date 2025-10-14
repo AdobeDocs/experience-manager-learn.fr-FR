@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Le recadrage intelligent élimine les tâches fastidieuses et coûteuses de recadrage de contenu pour le responsive design.
 
->[!VIDEO](https://video.tv.adobe.com/v/21519?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40208?quality=12&learn=on&captions=fre_fr)
 
 >[!NOTE]
 >

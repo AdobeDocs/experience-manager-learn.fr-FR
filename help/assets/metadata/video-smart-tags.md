@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Experience Manager Assets utilise Adobe Sensei pour baliser intelligemment les ressources vidéo avec des mots-clés qui décrivent les éléments clés de la vidéo, ce qui permet aux utilisateurs et aux utilisatrices d’AEM de les trouver facilement à l’aide de la recherche par mots-clés.
 
->[!VIDEO](https://video.tv.adobe.com/v/327005?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340531?quality=12&learn=on&captions=fre_fr)

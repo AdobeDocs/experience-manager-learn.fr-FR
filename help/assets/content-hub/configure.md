@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment configurer le hub de contenus AEM Assets pour répondre aux besoins de votre entreprise. Cette vidéo aide les administrateurs et administratrices à comprendre les paramètres du hub de contenus. Elle fournit des instructions de haut niveau sur leur personnalisation pour des performances optimales et pour garantir l’alignement sur les objectifs de l’entreprise.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472917/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3472948/?learn=on&enablevpops&captions=fre_fr)
