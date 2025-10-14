@@ -11,9 +11,9 @@ last-substantial-update: 2024-03-14T00:00:00Z
 jira: KT-14911
 exl-id: 1055c45c-7f04-4f8e-bca8-a4a085a718c8
 source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '73'
-ht-degree: 100%
+ht-degree: 67%
 
 ---
 
@@ -25,4 +25,4 @@ La fonction Générer des variations dans Adobe Experience Manager est un outi
 
 ## Utilisation de la fonction Générer des variations dans la création AEM
 
-+ __Création de documents :__ découvrez comment utiliser la fonction Générer des variations pour la création de documents dynamiques et personnalisés, pour faire de vos sites web basés sur des documents des expériences plus attrayantes et intéressantes. [Afficher la documentation](https://www.aem.live/docs/sidekick-generate-variations)
++ __Création de documents :__Découvrez comment utiliser la fonction Générer des variations pour créer des documents dynamiques et personnalisés, et faire de vos sites web basés sur des documents des expériences plus attrayantes et attrayantes. [Afficher la documentation](https://www.aem.live/docs/sidekick-generate-variations)
