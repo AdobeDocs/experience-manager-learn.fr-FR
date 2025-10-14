@@ -10,7 +10,7 @@ team: TM
 source-git-commit: 4d17b28ed67d7e5b03caa5fb57701ab7ddbcb77f
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 99%
    + [Filigranes](./advanced/watermarks.md)
 
 + Gestion avancée des métadonnées{#metadata}
-   + [Métadonnées GenAI](metadata/genai-metadata.md)
+   + [Métadonnées à l’aide de l’IA générative](metadata/genai-metadata.md)
    + [Métadonnées en cascade](metadata/cascade-metadata-feature-video-use.md)
    + [Balises intelligentes pour les images](metadata/image-smart-tags.md)
    + [Balises intelligentes personnalisées pour les images](metadata/custom-smart-tags.md)
