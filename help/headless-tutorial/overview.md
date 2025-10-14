@@ -9,9 +9,9 @@ doc-type: Catalog
 recommendations: disable, exclude
 exl-id: 57f88d79-9879-4bb9-a3db-9fec95e3a0bd
 source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Manager (AEM) dispose de plusieurs options pour définir des po
 
 >[!TIP]
 >
->Cette collection de tutoriels est conçue pour ceux qui préfèrent **apprendre par la pratique**. Si vous préférez apprendre les concepts à partir de zéro, consultez le [Parcours de développement AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html?lang=fr). Cet ensemble de tutoriels et de parcours se complètent.
+>Cette collection de tutoriels est conçue pour ceux qui préfèrent **apprendre par la pratique**. Si vous préférez apprendre les concepts à partir de zéro, consultez le [Parcours de développement AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/developer/overview.html). Cet ensemble de tutoriels et de parcours se complètent.
 
 ## Tutoriels par API
 
@@ -50,7 +50,7 @@ Adobe Experience Manager (AEM) dispose de plusieurs options pour définir des po
       </a>
     </div>
     <p>
-    <em>Découvrez comment une application peut utiliser une API REST basée sur OpenAPI pour consommer du contenu.</em>
+    <em>Découvrez comment une application peut utiliser des API REST OpenAPI pour consommer du contenu.</em>
     <p>
   </td>
   <td>
@@ -76,11 +76,11 @@ Découvrez les fonctionnalités découplées d’Adobe Experience Manager (AEM
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/ios-swiftui-app.html?lang=fr">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/ios-swiftui-app.html">
       <img alt="Exemple pour iOS" src="./assets/ios-example.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/ios-swiftui-app.html?lang=fr">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/ios-swiftui-app.html">
     <strong>Exemple avec SwiftUI sous iOS</strong>
     </a>
     </div>
@@ -89,11 +89,11 @@ Découvrez les fonctionnalités découplées d’Adobe Experience Manager (AEM
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/android-app.html?lang=fr">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/android-app.html">
     <img alt="Exemple pour Android" src="./assets/android-example.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/android-app.html?lang=fr">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/android-app.html">
     <strong>Exemple pour Android™</strong>
     </a>
     </div>
@@ -102,11 +102,11 @@ Découvrez les fonctionnalités découplées d’Adobe Experience Manager (AEM
     </p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=fr">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html">
       <img alt="Exemple pour React" src="./assets/react-example.png" />
     </a>
      <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html?lang=fr">
+      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/example-apps/react-app.html">
         <strong>Exemple pour React</strong>
       </a>
     </div>
@@ -150,11 +150,11 @@ Parcourez les tutoriels suivants en fonction de la technologie utilisée. Décou
     <p>
   </td>  
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html?lang=fr">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
     <img alt="React - Éditeur à distance" src="./assets/react-remote.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html?lang=fr">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/remote-spa/overview.html">
     <strong>React - Éditeur à distance</strong>
     </a>
     </div>
@@ -178,11 +178,11 @@ Parcourez les tutoriels suivants en fonction de la technologie utilisée. Décou
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=fr">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
     <img alt="Android - Content Services" src="./assets/android.png" />
     </a>
     <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=fr">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html">
     <strong>Android - Content Services</strong>
     </a>
     </div>

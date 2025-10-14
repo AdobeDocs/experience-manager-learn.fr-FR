@@ -15,7 +15,7 @@ hide: true
 hidefromtoc: true
 exl-id: 193543f3-5200-479b-8735-3b529291ff7c
 source-git-commit: 7c7c9070bb6061dc59530070dd32ca6b8c78bc8d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '46'
 ht-degree: 100%
 
@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez l’approche d’Adobe pour réduire les barrières à l’entrée, unifier les workflows et optimiser l’impact sur l’entreprise avec les outils d’IA générative.
 
->[!VIDEO](https://video.tv.adobe.com/v/3462143/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3459231/?learn=on&enablevpops)

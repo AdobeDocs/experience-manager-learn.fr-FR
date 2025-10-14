@@ -13,9 +13,9 @@ last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 54
 source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Ce tutoriel couvre les sujets suivants :
 * Stocker ou conserver les requêtes GraphQL dans AEM
 * Utiliser des requêtes GraphQL persistantes à partir d’un exemple d’application React
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Pour suivre ce tutoriel, vous devez suivre les étapes ci-après :
 
@@ -46,7 +46,7 @@ Pour suivre ce tutoriel, vous devez suivre les étapes ci-après :
 
 ### Environnement AEM
 
-Pour suivre ce tutoriel, il est recommandé de disposer d’un accès administrateur AEM à un environnement AEM as a Cloud Service.
+Pour suivre ce tutoriel, il est recommandé de disposer d’un accès d’administrateur ou d’administratrice AEM à un environnement AEM as a Cloud Service.
 
 ## Commençons !
 
@@ -54,6 +54,6 @@ Commencez le tutoriel par la section [Définition de modèles de fragment de con
 
 ## Projet GitHub
 
-Le code source et les packages de contenu sont disponibles sur la page [AEM Guides - Projet GitHub WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql).
+Le code source et les modules de contenu sont disponibles sur la page [AEM Guides - Projet GitHub WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql).
 
 Si vous rencontrez un problème avec le tutoriel ou le code, veuillez consigner un [Problème GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).

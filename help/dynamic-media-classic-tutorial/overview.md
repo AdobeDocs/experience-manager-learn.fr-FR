@@ -9,9 +9,9 @@ doc-type: Tutorial
 exl-id: 975b85af-ca6a-419e-ab2a-6e1781bfee4a
 duration: 173
 source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '867'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Dans ce guide, nous aborderons les principales fonctionnalités suivantes de Dyn
 
 - **Dynamic Imaging.** : terme générique désignant la modification, le formatage et le dimensionnement en temps réel, ainsi que le zoom et le panoramique interactifs, les nuances de couleurs et de textures, la rotation à 360 degrés, les modèles d’image, et les visionneuses multimédia.
 - **Vidéo.** : chargez les vidéos finales, publiez-les et téléchargez-les progressivement dans des visionneuses vidéo configurables.
-- **Imagerie dynamique.** Technologie qui fonctionne avec les « paramètres d’image prédéfinis » existants pour améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
+- **Imagerie dynamique.** Technologie qui utilise les « paramètres d’image prédéfinis » existants pour améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images selon les fonctionnalités du navigateur client.
 
 Pour découvrir d’autres fonctionnalités de la solution, rendez-vous sur [Documentation pour Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/introduction.html?lang=fr).
 
@@ -52,7 +52,7 @@ L’IU principale de Dynamic Media Classic se compose de trois zones principal
 
 _IU de Dynamic Media Classic._
 
-**Barre de navigation globale.** : vous pouvez utiliser les boutons de cette barre située en haut de l’écran pour accéder aux principales fonctionnalités et zones de la solution. Par exemple, vous l’utiliserez pour accéder aux fonctionnalités de chargement, ouvrir diverses zones de création de ressources (visionneuse d’images, visionneuse à 360°, etc.), exécuter des tâches importantes telles que la configuration des paramètres d’image prédéfinis et des paramètres de visionneuse prédéfinis, et publier vos ressources. Vous pouvez également surveiller vos tâches, voir les Activities récentes et choisir parmi diverses options d’aide.
+**Barre de navigation globale.** : vous pouvez utiliser les boutons de cette barre située en haut de l’écran pour accéder aux principales fonctionnalités et zones de la solution. Par exemple, vous l’utiliserez pour accéder aux fonctionnalités de chargement, ouvrir diverses zones de création de ressources (ensembles d’images, visionneuse à 360°, etc.), exécuter des tâches importantes telles que la configuration des paramètres d’image prédéfinis et des paramètres de visionneuse prédéfinis, et publier vos ressources. Vous pouvez également surveiller vos tâches, voir les Activities récentes et choisir parmi diverses options d’aide.
 
 **Bibliothèque de ressources.** : le panneau Bibliothèques de ressources est situé dans la partie gauche de l’écran et vous permet d’organiser vos ressources dans les dossiers et sous-dossiers que vous créez. Dans la partie supérieure du panneau, vous trouverez des filtres et des recherches pour vous aider à trouver les ressources. La recherche avancée (Advanced Search) vous permet de rechercher en spécifiant plusieurs options comme critères de recherche, y compris les champs de métadonnées masqués associés à cette ressource. Au bas du panneau, vous pouvez voir les éléments supprimés en cliquant sur l’icône Corbeille. Au départ, vous n’avez pas de dossiers, à l’exception du dossier de niveau supérieur, qui porte le même nom que votre nom de compte.
 

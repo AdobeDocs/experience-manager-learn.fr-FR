@@ -12,9 +12,9 @@ level: Intermediate, Experienced
 exl-id: 766bfaff-ade0-41c8-a395-e79dfb4b3d76
 duration: 115
 source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '401'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Le fichier `manifest.yml`, dans la racine du projet Asset Compute, décrit tous
 
 Les programmes de travail sont définis comme des entrées d’action Adobe I/O Runtime sous `actions`. Ils sont composés d’un ensemble de configurations.
 
-Les programmes de travail accédant à d’autres intégrations Adobe I/O doivent définir la propriété `annotations -> require-adobe-auth` sur `true`, car cela [expose les informations d’identification d’Adobe I/O du programme de travail](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=fr#access-adobe-apis) via l’objet `params.auth`. Cela est généralement requis lorsque le programme de travail appelle les API d’Adobe I/O telles qu’Adobe Photoshop ou Lightroom, et peut être activé/désactivé par programme de travail.
+Les programmes de travail accédant à d’autres intégrations Adobe I/O doivent définir la propriété `annotations -> require-adobe-auth` sur `true`, car cela [expose les informations d’identification d’Adobe I/O du programme de travail](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=fr#access-adobe-apis) via l’objet `params.auth`. Cette directive est généralement obligatoire lorsque le programme de travail appelle des API d’Adobe I/O telles que les API Adobe Photoshop ou Lightroom. L’activation/désactivation est possible pour chaque programme de travail.
 
 1. Ouvrez et examinez le programme de travail `manifest.yml` généré automatiquement. Les projets qui contiennent plusieurs programmes de travail Asset Compute doivent définir une entrée pour chaque programme de travail sous le tableau `actions`.
 
@@ -113,7 +113,7 @@ Pour lancer l’outil de développement d’Asset Compute pour le projet d’As
    $ aio app run
    ```
 
-1. L’outil de développement Asset Compute local s’ouvre dans votre navigateur web par défaut à l’adresse __http://localhost :9000__.
+1. L’outil de développement d’Asset Compute local s’ouvre dans votre navigateur web par défaut à l’adresse __http://localhost :9000__.
 
    ![Exécution de l’application AIO.](assets/environment-variables/aio-app-run.png)
 

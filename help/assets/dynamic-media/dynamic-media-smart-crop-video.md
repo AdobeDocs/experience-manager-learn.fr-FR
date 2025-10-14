@@ -1,6 +1,6 @@
 ---
-title: Utiliser le recadrage intelligent Dynamic Media pour la vidéo
-description: Le recadrage intelligent Dynamic Media pour vidéo effectue un suivi intelligent du point ciblé dans la vidéo, en s’assurant que les vidéos ont l’aspect le plus favorable quelle que soit la taille de l’écran.
+title: Utiliser le recadrage intelligent Dynamic Media pour les vidéos
+description: Le recadrage intelligent Dynamic Media pour les vidéos effectue un suivi intelligent du point d’intérêt de la vidéo, ce qui garantit un rendu optimal sur toutes les tailles d’écran.
 feature: Smart Crop, Video Profiles, Viewer Presets
 version: Experience Manager as a Cloud Service
 jira: KT-5977
@@ -12,17 +12,17 @@ doc-type: Feature Video
 exl-id: 15eb725c-d6f6-4ab9-8d39-dc05fbba1ff3
 duration: 397
 source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '86'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
-# Utiliser le recadrage intelligent Dynamic Media pour la vidéo {#using-smart-crop-video}
+# Utiliser le recadrage intelligent Dynamic Media pour les vidéos {#using-smart-crop-video}
 
-Le recadrage intelligent Dynamic Media pour vidéo effectue un suivi intelligent du point ciblé dans la vidéo, en s’assurant que les vidéos ont l’aspect le plus favorable quelle que soit la taille de l’écran.
+Le recadrage intelligent Dynamic Media pour les vidéos effectue un suivi intelligent du point d’intérêt de la vidéo, ce qui garantit un rendu optimal sur toutes les tailles d’écran.
 
->[!VIDEO](https://video.tv.adobe.com/v/326468?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/37958?quality=12&learn=on)
 
 >[!NOTE]
 >

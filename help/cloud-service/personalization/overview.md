@@ -12,9 +12,9 @@ jira: KT-18717
 thumbnail: null
 exl-id: c4fb11b9-b613-4522-b9da-18d7ae0826ec
 source-git-commit: 5b91e7409ff0735bab40d78ad98410ac2ab006ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 92%
 
 Découvrez comment AEM as a Cloud Service (AEMCS) s’intègre à Adobe Target et Adobe Experience Platform (AEP). Découvrez comment proposer des expériences personnalisées à l’aide des tests A/B, en ciblant des utilisateurs et utilisatrices en fonction de leur comportement ou en personnalisant le contenu à l’aide de profils de clientes et clients.
 
-## Prérequis
+## Conditions préalables
 
 Pour démontrer divers scénarios de personnalisation, ce tutoriel utilise l’exemple de projet [AEM WKND](https://github.com/adobe/aem-guides-wknd/). Pour le suivre, vous avez besoin des éléments suivants :
 
@@ -165,9 +165,9 @@ Explorez les cas d’utilisation courants de la personnalisation ci-dessous pris
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./use-cases/behavioral-targeting.md" target="_self" rel="referrer" title="Ciblage comportemental"> Ciblage comportemental </a>
+                        <a href="./use-cases/behavioral-targeting.md" target="_self" rel="referrer" title="Ciblage comportemental">Ciblage comportemental</a>
                     </p>
-                    <p class="is-size-6">Découvrez comment personnaliser le contenu en fonction du comportement de l’utilisateur à l’aide de Adobe Experience Platform et d’Adobe Target.</p>
+                    <p class="is-size-6">Découvrez comment personnaliser le contenu en fonction du comportement des utilisateurs et des utilisatrices à l’aide d’Adobe Experience Platform et d’Adobe Target.</p>
                 </div>
                 <a href="./use-cases/behavioral-targeting.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Découvrir le ciblage comportemental</span>

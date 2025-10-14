@@ -12,9 +12,9 @@ jira: KT-18720
 thumbnail: KT-18720.jpeg
 exl-id: c8a4f0bf-1f80-4494-abe6-9fbc138e4039
 source-git-commit: 5b91e7409ff0735bab40d78ad98410ac2ab006ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1493'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -34,17 +34,17 @@ Dans ce tutoriel, vous configurez les tests A/B pour le fragment d’expérienc
 
 Les variations s’affichent sur la page d’accueil WKND, ce qui vous permet de mesurer les performances et de déterminer la version qui génère le plus d’engagement et de conversions.
 
-Test ![ A/B ](../assets/use-cases/experiment/view-ab-test-variations.png)
+![Test A/B](../assets/use-cases/experiment/view-ab-test-variations.png)
 
 ### Démonstration en direct
 
-Rendez-vous sur le site Web [Activation WKND](https://wknd.enablementadobe.com/us/en.html) pour voir le test A/B en action. Dans la vidéo ci-dessous, vous pouvez voir les trois variantes de **Camping in Western Australia** affichées sur la page d&#39;accueil via différents navigateurs.
+Rendez-vous sur le [site web de mise en œuvre WKND](https://wknd.enablementadobe.com/us/en.html) pour voir le test A/B en action. Dans la vidéo ci-dessous, vous pouvez voir les trois variantes de **Camping in Western Australia** affichées sur la page d&#39;accueil via différents navigateurs.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3473005/?learn=on&enablevpops)
 
 ## Conditions préalables
 
-Avant de poursuivre le cas d’utilisation de l’expérimentation, assurez-vous d’avoir terminé les étapes suivantes :
+Avant de poursuivre ce cas d’utilisation d’expérimentation, assurez-vous d’avoir effectué les étapes suivantes :
 
 - [Intégrer Adobe Target](../setup/integrate-adobe-target.md) : permet à votre équipe de créer et de gérer du contenu personnalisé de manière centralisée dans AEM et de l’activer en tant qu’offres dans Adobe Target.
 - [Intégrer Tags dans Adobe Experience Platform](../setup/integrate-adobe-tags.md) : permet à votre équipe de gérer et de déployer du JavaScript pour la personnalisation et la collecte de données sans avoir à redéployer de code AEM.

@@ -10,9 +10,9 @@ doc-type: Feature Video
 exl-id: 9ee826cf-389f-4570-bfe1-0d43d3fed3e1
 duration: 574
 source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '298'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 93%
 
 Adobe Experience Manager réinvente le workflow de personnalisation entre AEM et Target. Les expériences créées dans AEM peuvent désormais être diffusées directement dans Adobe Target en tant qu’offres HTML. Cela permet aux personnes chargées du marketing de tester et de personnaliser facilement le contenu sur différents canaux.
 
->[!VIDEO](https://video.tv.adobe.com/v/38081?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/22383?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Adobe Experience Manager réinvente le workflow de personnalisation entre AEM 
 * La principale différence entre les offres de HTML et les offres de fragments d’expérience est que la modification pour la version ultérieure ne peut être effectuée que dans AEM, puis synchronisée avec Adobe Target.
 * La configuration du service Cloud Target appliquée au dossier de fragments d’expérience hérite de tous les fragments d’expérience créés directement sous le dossier parent. Le dossier enfant n’hérite pas de la configuration des services cloud parents.
 * Pour créer une offre personnalisée, nous pouvons désormais facilement exploiter le contenu stocké dans AEM.
-* Vous pouvez créer des types d’activités Target, y compris les activités optimisées par l’IA telles que l’affectation automatique, le ciblage automatique et Automated Personalization
+* Vous pouvez créer des types d’activités Target, y compris les activités optimisées par l’IA telles que l’affectation automatique, le ciblage automatique et la personnalisation automatique (Automated Personalization).
 
 ## Ressources supplémentaires {#additional-resources}
 

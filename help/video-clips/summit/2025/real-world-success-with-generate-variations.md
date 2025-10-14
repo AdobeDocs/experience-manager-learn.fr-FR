@@ -15,7 +15,7 @@ hide: true
 hidefromtoc: true
 exl-id: df0a03c1-d278-4c45-afff-bfbdaffe83bd
 source-git-commit: 7c7c9070bb6061dc59530070dd32ca6b8c78bc8d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '44'
 ht-degree: 100%
 
@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Emily Kellman explique comment Adobe.com a utilisé Générer des variations pour augmenter la vitesse du contenu, réduire les délais et augmenter les conversions.
 
->[!VIDEO](https://video.tv.adobe.com/v/3462695/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3459232/?learn=on&enablevpops)

@@ -12,7 +12,7 @@ last-substantial-update: 2025-09-15T00:00:00Z
 jira: KT-15987
 exl-id: db898193-6075-49c6-87df-0fcc86b5c4b3
 source-git-commit: abed29d87dec79f2240724cf62b83b87f30d1a01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '57'
 ht-degree: 100%
 
@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment partager des ressources et des collections avec les personnes membres de l’équipe dans AEM Assets Content Hub, en promouvant un travail d’équipe efficace et un partage sécurisé des ressources.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474921/?learn=on&enablevpops=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on)

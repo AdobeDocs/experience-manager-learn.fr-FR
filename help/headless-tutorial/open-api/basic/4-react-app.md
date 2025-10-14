@@ -1,6 +1,6 @@
 ---
-title: Créer une application React avec l’OpenAPI AEM | Tutoriel Headless Partie 4
-description: Prise en main de Adobe Experience Manager (AEM) et OpenAPI. Créez une application React qui récupère le contenu et les données des API de diffusion de fragments de contenu basées sur OpenAPI d’AEM.
+title: Créer une application React avec AEM OpenAPI | Tutoriel sur Headless - Partie 4
+description: Commencez avec Adobe Experience Manager (AEM) et OpenAPI. Créez une application React qui récupère le contenu/les données des API de diffusion de fragments de contenu basées sur OpenAPI d’AEM.
 version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments
@@ -8,21 +8,21 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 duration: 900
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
-workflow-type: tm+mt
+exl-id: ced704d4-5098-4553-812f-9734da0c5777
+source-git-commit: e7960fa75058c072b1b52ba1a0d7c99a0280d02f
+workflow-type: ht
 source-wordcount: '874'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
+# Créer une application React avec les OpenAPI de diffusion de fragments de contenu d’AEM
 
-# Créer une application React avec les OpenAPI de diffusion de fragments de contenu AEM
+Dans ce chapitre, vous découvrez comment la diffusion de fragments de contenu AEM avec les API OpenAPI peut améliorer l’expérience sur les applications externes.
 
-Dans ce chapitre, vous découvrirez comment la diffusion de fragments de contenu AEM avec des API OpenAPI peut améliorer l’expérience des applications externes.
+Une application React simple est utilisée pour interroger et afficher du contenu **Équipe** et **Personne** exposé par la diffusion de fragments de contenu AEM avec les API OpenAPI. L’utilisation de React n’est pas vraiment importante, et l’application externe consommatrice peut être écrite dans n’importe quel cadre pour n’importe quelle plateforme tant qu’elle est en mesure d’envoyer des requêtes HTTP à AEM as a Cloud Service.
 
-Une application React simple est utilisée pour demander et afficher du contenu **Équipe** et **Personne** exposé par la diffusion de fragments de contenu AEM avec les API OpenAPI. L’utilisation de React n’est pas vraiment importante, et l’application externe consommatrice peut être écrite dans n’importe quel framework pour n’importe quelle plateforme, à condition qu’elle puisse envoyer des requêtes HTTP à AEM as a Cloud Service.
-
-## Prérequis
+## Conditions préalables
 
 Nous partons du principe que les étapes décrites dans les parties précédentes de ce tutoriel en plusieurs parties ont été terminées.
 
@@ -35,38 +35,38 @@ Les logiciels suivants doivent être installés :
 
 Découvrez comment :
 
-* Téléchargez et démarrez l’exemple d’application React.
-* Appelez la diffusion de fragments de contenu AEM avec les API OpenAPI pour obtenir la liste des équipes et des membres référencés.
-* Appelez la diffusion de fragments de contenu AEM avec les API OpenAPI pour récupérer les détails d’un membre de l’équipe.
+* Télécharger et démarrer l’exemple d’application React.
+* Appeler la diffusion de fragments de contenu AEM avec les API OpenAPI pour obtenir la liste des équipes et de leurs membres référencés.
+* Appeler la diffusion de fragments de contenu AEM avec les API OpenAPI pour récupérer les détails d’un membre de l’équipe.
 
-## Configurer CORS sur AEM as a Cloud Service
+## Configurer CORS sur AEM as a Cloud Service.
 
-Cet exemple d’application React s’exécute localement (sur `http://localhost:3000`) et se connecte à la diffusion de fragments de contenu AEM du service de publication AEM avec les API OpenAPI. Pour autoriser cette connexion, CORS (partage de ressources entre origines multiples) doit être configuré sur le service de publication (ou d’aperçu) AEM.
+Cet exemple d’application React s’exécute localement (sur `http://localhost:3000`) et se connecte à la diffusion de fragments de contenu AEM du service de publication AEM avec les API OpenAPI. Pour autoriser cette connexion, CORS (partage des ressources entre origines multiples) doit être configuré sur le service de publication (ou de prévisualisation) AEM.
 
-Suivez les [instructions de la section Configuration d’une SPA s’exécutant sur `http://localhost:3000` pour autoriser les requêtes CORS au service de publication AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#different-domains).
+Suivez les [instructions de configuration d’une SPA s’exécutant sur `http://localhost:3000` pour autoriser les requêtes CORS au service de publication AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/spa#different-domains).
 
 ### Proxy CORS local
 
-Pour le développement, vous pouvez également exécuter un [proxy CORS local](https://www.npmjs.com/package/local-cors-proxy) qui installe une connexion CORS à AEM.
+Pour le développement, vous pouvez également exécuter un [proxy CORS local](https://www.npmjs.com/package/local-cors-proxy) qui établit une connexion CORS à AEM.
 
 ```bash
 $ npm install --global lcp
 $ lcp --proxyUrl https://publish-p<PROGRAM_ID>-e<ENVIRONMENT_ID>.adobeaemcloud.com
 ```
 
-Mettez à jour la valeur `--proxyUrl` vers votre URL de publication (ou de prévisualisation) AEM.
+Mettez à jour la valeur `--proxyUrl` avec l’URL de votre instance de publication (ou de prévisualisation) AEM.
 
-Une fois le proxy CORS local en cours d’exécution, accédez aux API de diffusion de fragments de contenu d’AEM à l’adresse `http://localhost:8010/proxy` pour éviter les problèmes CORS.
+Une fois le proxy CORS local en cours d’exécution, accédez aux API de diffusion de fragments de contenu AEM sur `http://localhost:8010/proxy` pour éviter les problèmes liés à CORS.
 
-## Clonez l’exemple d’application React
+## Cloner l’exemple d’application React
 
-Un exemple d’application React qui fait l’objet d’un bouchon est implémenté avec le code requis pour interagir avec la diffusion de fragments de contenu AEM avec les API OpenAPI et afficher les données de l’équipe et de la personne obtenues de leur part.
+Un exemple d’application React dérivée est implémenté avec le code requis pour interagir avec la diffusion de fragments de contenu AEM avec les API OpenAPI et afficher les données de l’équipe et de la personne provenant de celles-ci.
 
-L’exemple de code source de l’application React est [disponible sur Github.com](https://github.com/adobe/aem-tutorials/tree/main/headless/open-api/basic).
+Le code source de l’exemple d’application React est [disponible sur Github.com](https://github.com/adobe/aem-tutorials/tree/main/headless/open-api/basic).
 
 Pour obtenir l’application React :
 
-1. Clonez l’exemple d’application React OpenAPI WKND à partir de [Github.com](https://github.com/adobe/aem-tutorials) à partir de la balise [`headless_open-api_basic`](https://github.com/adobe/aem-tutorials/tree/headless_open-api_basic).
+1. Clonez l’exemple d’application React OpenAPI WKND de [Github.com](https://github.com/adobe/aem-tutorials) à partir de la balise [`headless_open-api_basic`](https://github.com/adobe/aem-tutorials/tree/headless_open-api_basic).
 
    ```shell
    $ cd ~/Code
@@ -77,21 +77,21 @@ Pour obtenir l’application React :
    $ git checkout tags/headless_open-api_basic
    ```
 
-1. Accédez au fichier `headless/open-api/basic` et ouvrez-le dans votre IDE.
+1. Accédez au dossier `headless/open-api/basic` et ouvrez-le dans votre IDE.
 
    ```shell
    $ cd ~/Code/aem-tutorials/headless/open-api/basic
    $ code .
    ```
 
-1. Mettez à jour `.env` pour vous connecter au service de publication AEM as a Cloud Service, car c’est là que nos fragments de contenu sont publiés. Cela peut pointer vers le service d’aperçu AEM si vous souhaitez tester l’application avec le service d’aperçu AEM (et les fragments de contenu y sont publiés).
+1. Mettez à jour `.env` pour vous connecter au service de publication AEM as a Cloud Service, car c’est là que nos fragments de contenu sont publiés. Il peut s’agir du service de prévisualisation AEM si vous souhaitez tester l’application avec le service de prévisualisation AEM (et que les fragments de contenu y sont publiés).
 
    ```
    # AEM Publish (or Preview) service that provides Content Fragments
    REACT_APP_HOST_URI=https://publish-p123-e456.adobeaemcloud.com
    ```
 
-   Lors de l’utilisation du [proxy CORS local](#local-cors-proxy), définissez `REACT_APP_HOST_URI` sur `http://localhost:8010/proxy`.
+   Lors de l’utilisation de [Proxy CORS local](#local-cors-proxy), définissez `REACT_APP_HOST_URI` sur `http://localhost:8010/proxy`.
 
    ```
    # AEM Publish (or Preview) service that provides Content Fragments
@@ -106,31 +106,31 @@ Pour obtenir l’application React :
    $ npm start
    ```
 
-1. L’application React démarre en mode de développement le [http://localhost:3000/](http://localhost:3000/). Les modifications apportées à l’application React tout au long du tutoriel sont répercutées immédiatement dans le navigateur web.
+1. L’application React démarre en mode de développement sur [http://localhost:3000/](http://localhost:3000/). Les modifications apportées à l’application React tout au long du tutoriel sont répercutées immédiatement dans le navigateur web.
 
 >[!IMPORTANT]
 >
->   Cette application React est partiellement implémentée. Suivez les étapes de ce tutoriel pour terminer la mise en œuvre. Les fichiers JavaScript qui doivent être implémentés comportent les commentaires suivants. Veillez à ajouter ou mettre à jour le code dans ces fichiers avec le code spécifié dans ce tutoriel.
+>   Cette application React est partiellement implémentée. Suivez les étapes de ce tutoriel pour terminer l’implémentation. Les fichiers JavaScript qui doivent être implémentés comportent les commentaires suivants. Veillez à ajouter ou mettre à jour le code dans ces fichiers avec le code spécifié dans ce tutoriel.
 >
 >
->  //**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;***
->  &#x200B;>  // Tâche : implémentez ceci en suivant les étapes du tutoriel AEM Headless.
->  &#x200B;>  //**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;***
+>  //*********************************
+>  >  // Tâche : implémentez ceci en suivant les étapes du tutoriel sur AEM Headless.
+>  >  //*********************************
 >
 
 ## Anatomie de l’application React
 
-L’exemple d’application React comporte trois parties principales qui doivent être mises à jour.
+L’exemple d’application React comporte trois parties principales qui requièrent une mise à jour.
 
-1. Le fichier `.env` contient l’URL du service de publication AEM (ou de prévisualisation).
-1. La `src/components/Teams.js` affiche une liste des équipes et de leurs membres.
-1. La `src/components/Person.js` affiche les détails d’un seul membre de l’équipe.
+1. Le fichier `.env` contient l’URL du service de publication (ou de prévisualisation) AEM.
+1. Le fichier `src/components/Teams.js` affiche une liste des équipes et de leurs membres.
+1. Le fichier `src/components/Person.js` affiche les détails d’un seul membre de l’équipe.
 
 ## Implémenter la fonctionnalité Équipes
 
 Développez la fonctionnalité pour afficher les équipes et leurs membres sur la vue principale de l’application React. Cette fonctionnalité requiert :
 
-* Un nouveau [hook personnalisé React useEffect](https://react.dev/reference/react/useEffect#useeffect) qui appelle l’API **List all Content Fragments** via une requête de récupération, puis obtient la valeur `fullName` de chaque `teamMember` à afficher.
+* Un nouveau [crochet useEffect React personnalisé](https://react.dev/reference/react/useEffect#useeffect) qui appelle l’API **Répertorier tous les fragments de contenu** via une requête de récupération, puis obtient la valeur `fullName` de chaque `teamMember` à afficher.
 
 Une fois l’opération terminée, la vue principale de l’application est renseignée avec les données de l’équipe provenant d’AEM.
 
@@ -138,11 +138,11 @@ Une fois l’opération terminée, la vue principale de l’application est rens
 
 1. Ouvrez `src/components/Teams.js`.
 
-1. Implémentez le composant **Équipes** pour récupérer la liste des équipes à partir de [Répertorier toutes les API de fragments de contenu](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/#operation/fragments/getFragments) et effectuer le rendu du contenu des équipes. Elle se compose des étapes suivantes :
+1. Implémentez le composant **Équipes** pour récupérer la liste des équipes à partir de l’API [Répertorier tous les fragments de contenu](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/#operation/fragments/getFragments) et générer le rendu du contenu des équipes. Cela implique les étapes suivantes :
 
-1. Créez un hook `useEffect` qui appelle l’API AEM **Liste de tous les fragments de contenu** et stocke les données dans l’état du composant React.
-1. Pour chaque **Équipe** fragment de contenu renvoyé, appelez l’API **Obtenir un fragment de contenu** pour récupérer les détails complets de l’équipe, y compris ses membres et leurs `fullNames`.
-1. Restituer les données des équipes à l’aide de la fonction `Team`
+1. Créez un crochet `useEffect` qui appelle l’API **Répertorier tous les fragments de contenu** d’AEM et stocke les données dans l’état du composant React.
+1. Pour chaque fragment de contenu **Équipe** renvoyé, appelez l’API **Obtenir un fragment de contenu** pour récupérer les détails d’hydratation complets de l’équipe, y compris ses membres et leurs `fullNames`.
+1. Générez le rendu des données d’équipes à l’aide de la fonction `Team`.
 
    ```javascript
    import { useEffect, useState } from "react";
@@ -251,17 +251,17 @@ Une fois l’opération terminée, la vue principale de l’application est rens
    export default Teams;
    ```
 
-## Implémenter la fonctionnalité de personne
+## Implémenter la fonctionnalité Personne
 
-Lorsque la fonctionnalité [ Équipes ](#implement-teams-functionality) terminée, implémentez la fonctionnalité permettant de gérer l’affichage sur les détails d’un ou d’une membre de l’équipe, ou d’une personne.
+Une fois la [fonctionnalité Équipes](#implement-teams-functionality) terminée, implémentez la fonctionnalité permettant de gérer l’affichage des détails d’un ou d’une membre de l’équipe, ou d’une personne.
 
-![Vue Personne](./assets/4/person.png)
+![Vue personne](./assets/4/person.png)
 
 Pour ce faire :
 
 1. Ouvrez `src/components/Person.js`.
-1. Dans le composant React `Person`, analysez le paramètre d’itinéraire `id`. Notez que les Itinéraires de l’application React ont été précédemment configurés pour accepter le paramètre d’URL `id` (voir `/src/App.js`).
-1. Récupérez les données de personne d’AEM à l’aide de l’[API Get Content Fragment](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/#operation/fragments/getFragment).
+1. Dans le composant React `Person`, analysez le paramètre d’itinéraire `id`. Notez que les itinéraires de l’application React ont été précédemment configurés pour accepter le paramètre d’URL `id` (voir `/src/App.js`).
+1. Récupérez les données de personne d’AEM à l’aide de l’API [Obtenir un fragment de contenu](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/#operation/fragments/getFragment).
 
    ```javascript
    import "./Person.scss";
@@ -355,8 +355,8 @@ Vérifiez l’application [http://localhost:3000/](http://localhost:3000/) et cl
 
 ## Ce qui se passe.
 
-Ouvrez la console **Outils de développement > Réseau** du navigateur et **Filtrer** pour récupérer `/adobe/contentFragments` requêtes lorsque vous interagissez avec l’application React.
+Ouvrez la console **Outils de développement > Réseau** du navigateur et **filtrez** les requêtes de récupération de `/adobe/contentFragments` lorsque vous interagissez avec l’application React.
 
 ## Félicitations !
 
-Félicitations. Vous avez créé une application React pour utiliser et afficher des fragments de contenu à partir de la diffusion de fragments de contenu AEM avec les API OpenAPI.
+Félicitations ! Vous avez créé une application React pour consommer et afficher des fragments de contenu à partir de la diffusion de fragments de contenu AEM avec les API OpenAPI.

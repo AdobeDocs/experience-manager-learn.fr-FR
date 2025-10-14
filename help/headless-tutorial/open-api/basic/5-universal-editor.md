@@ -1,6 +1,6 @@
 ---
-title: Modifier l’application React avec l’éditeur universel | Tutoriel Headless Partie 5
-description: Découvrez comment rendre votre application React modifiable dans l’éditeur universel d’AEM en ajoutant l’instrumentation et la configuration nécessaires.
+title: Modifier l’application React avec l’éditeur universel | Tutoriel Headless - Partie 5
+description: Découvrez comment rendre votre application React modifiable dans l’éditeur universel AEM en ajoutant l’instrumentation et la configuration nécessaires.
 version: Experience Manager as a Cloud Service
 mini-toc-levels: 1
 feature: Content Fragments
@@ -8,45 +8,45 @@ topic: Headless, Content Management
 role: Developer
 level: Beginner
 duration: 800
-source-git-commit: da3bfa25a424e3176fb7d53189169515db225228
-workflow-type: tm+mt
+exl-id: de260762-eed4-4c2b-a3a8-e8563a2b7b4a
+source-git-commit: e7960fa75058c072b1b52ba1a0d7c99a0280d02f
+workflow-type: ht
 source-wordcount: '759'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-
 # Modifier l’application React avec l’éditeur universel
 
-Dans ce chapitre, vous apprenez à rendre l’application React créée dans le [chapitre précédent](./4-react-app.md) modifiable à l’aide de l’éditeur universel d’AEM. L’éditeur universel permet aux personnes en charge de la création de contenu de modifier du contenu directement dans le contexte de l’expérience de l’application React, tout en conservant l’expérience transparente d’une application découplée.
+Dans ce chapitre, vous découvrez comment rendre l’application React créée dans le [chapitre précédent](./4-react-app.md) modifiable à l’aide de l’éditeur universel AEM. L’éditeur universel permet aux auteurs et autrices de contenu de modifier du contenu directement dans le contexte de l’expérience de l’application React, tout en conservant l’expérience fluide d’une application découplée.
 
 ![Éditeur universel](./assets/5/main.png)
 
-L’éditeur universel offre un moyen puissant d’activer la modification contextuelle pour n’importe quelle application web, ce qui permet aux créateurs et aux créatrices de modifier le contenu sans basculer entre différentes interfaces de création.
+L’éditeur universel offre un moyen puissant d’activer la modification contextuelle pour n’importe quelle application web, ce qui permet aux auteurs et autrices de modifier du contenu sans basculer entre différentes interfaces de création.
 
-## Prérequis
+## Conditions préalables
 
-* Les étapes précédentes de ce tutoriel ont été terminées, en particulier [Créer une application React qui utilise les OpenAPI de diffusion de fragments de contenu AEM](./4-react-app.md)
-* Une connaissance pratique de [comment utiliser et implémenter l’éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+* Les étapes précédentes de ce tutoriel ont été terminées, et plus particulièrement [Créer une application React qui utilise les OpenAPI de diffusion de fragments de contenu AEM](./4-react-app.md).
+* Une connaissance pratique de [l’utilisation et l’implémentation de l’éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 ## Objectifs
 
 Découvrez comment :
 
-* Ajoutez l’instrumentation de l’éditeur universel à l’application React.
-* Configurez l’application React pour l’éditeur universel.
-* Activez la modification de contenu directement dans l’interface de l’application React à l’aide de l’éditeur universel.
+* Ajouter l’instrumentation de l’éditeur universel à l’application React.
+* Configurer l’application React pour l’éditeur universel.
+* Activer la modification de contenu directement dans l’interface de l’application React à l’aide de l’éditeur universel.
 
 ## Instrumentation de l’éditeur universel
 
-L’éditeur universel requiert [les attributs HTML et les balises meta](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) pour identifier le contenu modifiable et établir la connexion entre l’interface utilisateur et le contenu AEM.
+L’éditeur universel requiert [des attributs HTML et des balises meta](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) pour identifier le contenu modifiable et établir la connexion entre l’interface d’utilisation et le contenu AEM.
 
-### Ajout de balises d’éditeur universel
+### Ajouter des balises d’éditeur universel
 
-Tout d’abord, ajoutez les balises méta nécessaires pour identifier l’application React comme compatible avec l’éditeur universel.
+Tout d’abord, ajoutez les balises meta nécessaires pour identifier l’application React comme étant compatible avec l’éditeur universel.
 
 1. Ouvrez `public/index.html` dans votre application React.
-1. Ajoutez les [balises méta de l’éditeur universel et script CORS](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) dans la section `<head>` de l’application React :
+1. Ajoutez les [balises meta de l’éditeur universel et le script CORS](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started) dans la section `<head>` de l’application React :
 
    ```html
    <!DOCTYPE html>
@@ -73,7 +73,7 @@ Tout d’abord, ajoutez les balises méta nécessaires pour identifier l’appli
    </html>
    ```
 
-1. Mettez à jour le fichier `.env` de l’application React afin d’inclure l’hôte du service de création AEM pour prendre en charge les écritures différées dans l’éditeur universel (utilisé dans la valeur de la balise metat `urn:adobe:aue:system:aemconnection`).
+1. Mettez à jour le fichier `.env` de l’application React afin d’inclure l’hôte du service de création AEM pour prendre en charge les écritures différées dans l’éditeur universel (utilisé dans la valeur de la balise meta `urn:adobe:aue:system:aemconnection`).
 
    ```bash
    # The AEM Publish (or Preview) service
@@ -88,9 +88,9 @@ Tout d’abord, ajoutez les balises méta nécessaires pour identifier l’appli
 Ajoutez maintenant les attributs de l’éditeur universel pour rendre le composant Équipes modifiable.
 
 1. Ouvrez `src/components/Teams.js`.
-1. Mettez à jour le composant `Team` pour inclure [les attributs de données de l’éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) :
+1. Mettez à jour le composant `Team` pour inclure les [attributs de données de l’éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) :
 
-   Lors de la définition de l’attribut `data-aue-resource`, assurez-vous que le chemin d’accès AEM au fragment de contenu, tel que renvoyé par la diffusion de fragment de contenu AEM avec les API OpenAPI, est postfixé avec le sous-chemin d’accès à la variation de fragment de contenu ; dans ce cas, `/jcr:content/data/master`.
+   Lors de la définition de l’attribut `data-aue-resource`, assurez-vous que le chemin AEM au fragment de contenu, tel que renvoyé par la diffusion de fragments de contenu AEM avec les API OpenAPI, est suivi du sous-chemin à la variante de fragment de contenu ; dans ce cas, `/jcr:content/data/master`.
 
    ```javascript
    import { useEffect, useState } from "react";
@@ -211,12 +211,12 @@ Ajoutez maintenant les attributs de l’éditeur universel pour rendre le compos
 
 ### Instrumenter le composant Personne
 
-De même, ajoutez les attributs de l’éditeur universel au composant Personne .
+De la même manière, ajoutez les attributs de l’éditeur universel pour le composant Personne.
 
 1. Ouvrez `src/components/Person.js`.
-1. Mettez à jour le composant pour inclure [les attributs de données de l’éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) :
+1. Mettez à jour le composant pour inclure les [attributs de données de l’éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/attributes-types) :
 
-   Lors de la définition de l’attribut `data-aue-resource`, assurez-vous que le chemin d’accès AEM au fragment de contenu, tel que renvoyé par la diffusion de fragment de contenu AEM avec les API OpenAPI, est postfixé avec le sous-chemin d’accès à la variation de fragment de contenu ; dans ce cas, `/jcr:content/data/master`.
+   Lors de la définition de l’attribut `data-aue-resource`, assurez-vous que le chemin AEM au fragment de contenu, tel que renvoyé par la diffusion de fragments de contenu AEM avec les API OpenAPI, est suivi du sous-chemin à la variante de fragment de contenu ; dans ce cas, `/jcr:content/data/master`.
 
    ```javascript
    import "./Person.scss";
@@ -303,13 +303,13 @@ $ git tag
 $ git checkout tags/headless_open-api_basic_5-end
 ```
 
-## Test de l’intégration de l’éditeur universel
+## Tester l’intégration de l’éditeur universel
 
 Testez maintenant les mises à jour de compatibilité de l’éditeur universel en ouvrant l’application React dans l’éditeur universel.
 
 ### Démarrer l’application React
 
-1. Vérifiez que votre application React est en cours d’exécution :
+1. Vérifiez que votre application React est en cours d’exécution :
 
    ```bash
    $ cd ~/Code/aem-guides-wknd-openapi/basic-tutorial
@@ -317,61 +317,61 @@ Testez maintenant les mises à jour de compatibilité de l’éditeur universel 
    $ npm start
    ```
 
-1. Vérifiez que l’application se charge à l’`http://localhost:3000` et affiche le contenu des équipes et des personnes.
+1. Vérifiez que l’application se charge sur `http://localhost:3000` et affiche le contenu Équipes et Personne.
 
 ### Exécuter le proxy SSL local
 
-L’éditeur universel nécessite que l’application modifiable soit chargée via HTTPS.
+L’éditeur universel requiert que l’application modifiable soit chargée sur HTTPS.
 
-1. Pour exécuter l’application React locale via HTTPS, utilisez le module npm [local-ssl-proxy](https://www.npmjs.com/package/local-ssl-proxy) à partir de la ligne de commande.
+1. Pour exécuter l’application React locale sur HTTPS, utilisez le module npm [local-ssl-proxy](https://www.npmjs.com/package/local-ssl-proxy) à partir de la ligne de commande.
 
    ```bash
    $ npm install -g local-ssl-proxy
    $ local-ssl-proxy --source 3001 --target 3000
    ```
 
-1. Ouvrez `https://localhost:3001` dans votre navigateur web
-1. Accepter le certificat auto-signé.
+1. Ouvrez `https://localhost:3001` dans votre navigateur web.
+1. Acceptez le certificat auto-signé.
 1. Vérifiez que l’application React se charge.
 
 ### Ouvrir dans l’éditeur universel
 
-![Ouvrez l’application dans l’éditeur universel](./assets/5/open-app-in-universal-editor.png)
+![Ouverture de l’application dans l’éditeur universel](./assets/5/open-app-in-universal-editor.png)
 
-1. Accédez à [ Éditeur universel ](https://experience.adobe.com/#/@myOrg/aem/editor/canvas/).
-1. Dans le champ **URL du site**, saisissez l’URL de l’application React HTTPS : `https://localhost:3001`.
-1. Sélectionnez Cliquer **Ouvrir**.
+1. Accédez à l’[éditeur universel](https://experience.adobe.com/#/@myOrg/aem/editor/canvas/).
+1. Dans le champ **URL du site**, saisissez l’URL de l’application React HTTPS : `https://localhost:3001`.
+1. Sélectionnez **Ouvrir**.
 
 L’éditeur universel doit charger votre application React avec les fonctionnalités d’édition activées.
 
 ### Tester la fonctionnalité d’édition
 
-![Modifier dans l’éditeur universel](./assets/5/edit-in-universal-editor.png)
+![Édition dans l’éditeur universel](./assets/5/edit-in-universal-editor.png)
 
-1. Dans l’éditeur universel, passez la souris sur les éléments modifiables de votre application React.
+1. Dans l’éditeur universel, pointez sur les éléments modifiables de votre application React.
 
-1. Pour naviguer dans l’application React, activez le mode **Aperçu** puis désactivez-le pour le modifier. N’oubliez pas que le **Aperçu** n’a rien à voir avec le service d’aperçu AEM. Il active et désactive plutôt la fonction Modifier Chrome dans l’éditeur universel.
+1. Pour naviguer dans l’application React, activez le mode **Prévisualisation** et désactivez-le pour modifier. N’oubliez pas que le mode **Prévisualisation** est totalement différent du service de prévisualisation AEM. Il vise plutôt à activer et désactiver l’édition Chrome dans l’éditeur universel.
 
 1. Vous devriez voir les indicateurs d’édition et être en mesure de cliquer sur les différents éléments modifiables de l’application React.
 
-1. Essayez de modifier le titre d’une équipe :
-   * Clic sur le titre d&#39;une équipe
+1. Essayez de modifier le titre d’une équipe :
+   * Cliquer sur le titre d’une équipe
    * Modifier le texte dans le panneau des propriétés
-   * Enregistrez les modifications.
+   * Enregistrer les modifications
 
-1. Essayez de modifier la photo de profil d’une personne :
+1. Essayez de modifier la photo de profil d’une personne :
    * Cliquer sur la photo de profil d’une personne
-   * Sélectionner une nouvelle image à partir du sélecteur de ressources
-   * Enregistrez les modifications.
+   * Sélectionner une nouvelle image dans le sélecteur de ressources
+   * Enregistrer les modifications
 
-1. Appuyez sur **Publier** dans le coin supérieur droit de l’éditeur universel pour publier les modifications sur le service de Publication AEM (ou Aperçu), afin qu’elles soient répercutées dans l’application React dans l’éditeur universel.
+1. Appuyez sur **Publier** dans le coin supérieur droit de l’éditeur universel pour publier les modifications apportées au service de publication (ou de prévisualisation) AEM afin qu’elles soient répercutées dans l’application React dans l’éditeur universel.
 
 ## Attributs de données de l’éditeur universel
 
-Pour obtenir une documentation complète sur l’instrumentation d’une application pour l’éditeur universel, reportez-vous à la [documentation de l’éditeur universel](https://experience.adobe.com/#/@myOrg/aem/editor/canvas/).
+Pour obtenir la documentation complète sur l’instrumentation d’une application pour l’éditeur universel, reportez-vous à la [documentation de l’éditeur universel](https://experience.adobe.com/#/@myOrg/aem/editor/canvas/).
 
 ## Félicitations !
 
-Félicitations. Vous avez correctement intégré l’éditeur universel à votre application React. Les auteurs de contenu peuvent désormais modifier des fragments de contenu directement dans l’interface de l’application React, offrant ainsi une expérience de création transparente tout en conservant les avantages d’une architecture découplée.
+Félicitations ! Vous avez correctement intégré l’éditeur universel à votre application React. Les auteurs et autrices de contenu peuvent désormais modifier des fragments de contenu directement dans l’interface de l’application React, offrant ainsi une expérience de création transparente tout en conservant les avantages d’une architecture découplée.
 
-N’oubliez pas que vous pouvez toujours obtenir le code source final de ce tutoriel à partir de la branche `main` du référentiel [GitHub.com](https://github.com/adobe/aem-tutorials/tree/main).
+N’oubliez pas que vous pouvez toujours obtenir le code source final de ce tutoriel à partir de la branche `main` du [référentiel GitHub.com](https://github.com/adobe/aem-tutorials/tree/main).

@@ -9,9 +9,9 @@ version: Experience Manager 6.5, Experience Manager as a Cloud Service
 jira: KT-2963
 index: y
 source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 94%
 + OpenAPI {#open-api}
    + Tutoriels de base {#basic}
       + [Vue d’ensemble](./open-api/basic/overview.md)
-      + [1 - Définir des modèles de fragment de contenu](./open-api/basic/1-content-fragment-models.md)
+      + [1 - Définir des modèles de fragments de contenu](./open-api/basic/1-content-fragment-models.md)
       + [2 - Créer des fragments de contenu](./open-api/basic/2-author-content-fragments.md)
       + [3 - Explorer les API OpenAPI](./open-api/basic/3-explore-openapis.md)
       + [4 - Créer une application React](./open-api/basic/4-react-app.md)

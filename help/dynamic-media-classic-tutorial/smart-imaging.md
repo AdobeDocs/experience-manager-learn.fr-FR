@@ -9,9 +9,9 @@ doc-type: Tutorial
 exl-id: 678671c3-af25-4da1-bc14-cbc4cc19be8d
 duration: 130
 source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Les images sont les éléments qui demandent le plus de temps lors du chargement
 
 ## Fonctionnement de l’imagerie dynamique
 
-Comme indiqué précédemment, l’imagerie dynamique fonctionne avec les paramètres d’image prédéfinis existants pour convertir automatiquement les images en formats d’image de nouvelle génération optimaux, tels que WebP, tout en préservant la fidélité visuelle.
+Comme nous l’avons vu précédemment, l’imagerie dynamique utilise les paramètres d’image prédéfinis existants pour convertir automatiquement les images dans les formats d’image optimaux de nouvelle génération, tels que WebP, tout en conservant la fidélité visuelle.
 
 En savoir plus sur le [Fonctionnement de l’imagerie dynamique](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/imaging-faq.html?lang=fr#how-does-smart-imaging-work), notamment les formats d’image pris en charge (et ce qui se passe si vous n’utilisez pas ces formats) et son impact sur les paramètres d’image prédéfinis existants qui sont utilisés.
 
