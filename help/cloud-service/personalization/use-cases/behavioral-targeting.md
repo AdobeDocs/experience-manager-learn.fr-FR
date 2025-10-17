@@ -11,10 +11,10 @@ last-substantial-update: 2025-09-10T00:00:00Z
 jira: KT-19113
 thumbnail: KT-19113.jpeg
 exl-id: fd7204fa-03f2-40df-9f0a-487a5aec2891
-source-git-commit: e7960fa75058c072b1b52ba1a0d7c99a0280d02f
-workflow-type: ht
-source-wordcount: '4180'
-ht-degree: 100%
+source-git-commit: c367564acb6465d5f203e5db943c5470607b63c9
+workflow-type: tm+mt
+source-wordcount: '4185'
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ Rendez-vous sur le [site web WKND Enablement](https://wknd.enablementadobe.com/u
 
 - **Page Magazine** : lorsque les utilisateurs et utilisatrices lisent _trois articles ou plus_, ils sont classés dans l’audience **Magazine Readers** et voient une section principale personnalisée sur la page Magazine.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474003/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3474001/?learn=on&enablevpops)
 
 >[!TIP]
 >
@@ -87,7 +87,7 @@ Le processus de configuration du ciblage comportemental implique des étapes dan
 
 4. **Vérifier l’implémentation du ciblage comportemental sur vos pages AEM**
 
-Les différentes solutions d’AEP sont utilisées pour collecter, gérer et récolter les données comportementales afin de créer des audiences. Ces audiences sont ensuite activées dans Adobe Target. Grâce aux activités dans Adobe Target, des expériences personnalisées sont proposées aux utilisateurs et utilisatrices.
+Les différentes solutions d’AEP sont utilisées pour collecter, gérer et récolter les données comportementales afin de créer des audiences. Ces audiences sont ensuite activées dans Adobe Target. Grâce aux activités dans Adobe Target, des expériences personnalisées sont diffusées aux utilisateurs et utilisatrices qui correspondent aux critères d’audience.
 
 ## Étapes d’Adobe Experience Platform
 
