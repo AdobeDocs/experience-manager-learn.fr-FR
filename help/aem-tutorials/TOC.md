@@ -24,9 +24,9 @@ ht-degree: 53%
 + [AEM Guides](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/overview.html?lang=fr){target=_blank}
 + Tutoriels en plusieurs étapes {#multi}
    + [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr){target=_blank}
-   + [Prise en main de la diffusion de fragments de contenu AEM avec les API OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/open-api/basic/overview){target=_blank}
+   + [Prise en main de la diffusion de fragments de contenu AEM avec les API OpenAPI](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/open-api/basic/overview){target=_blank}
    + [Modification de l’application React à l’aide de l’éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview){target=_blank}
-   + [Prise en main de Personalization](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview){target=_blank}
+   + [Prise en main de Personalization](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/personalization/overview){target=_blank}
    + [Prise en main du RDE](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/overview){target=_blank}
-   + [Prise en main des API AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/overview){target=_blank}
+   + [Prise en main des API AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/overview){target=_blank}
    + [Protection des sites web AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview){target=_blank}
