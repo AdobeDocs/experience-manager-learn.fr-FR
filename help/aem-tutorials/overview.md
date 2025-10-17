@@ -29,9 +29,9 @@ Adobe Experience Manager (AEM) est la principale plateforme de gestion de l’
 
 + [Prise en main d’AEM Sites – Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
 + [Prise en main d’AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr)
-+ [Prise en main de la diffusion de fragments de contenu AEM avec les API OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/open-api/basic/overview)
++ [Prise en main de la diffusion de fragments de contenu AEM avec les API OpenAPI](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/open-api/basic/overview)
 + [Modification de l’application React à l’aide de l’éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/universal-editor/react-app-editing/overview)
-+ [Prise en main de Personalization](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
++ [Prise en main de Personalization](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/personalization/overview)
 + [Prise en main du RDE](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/overview)
-+ [Prise en main des API AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/overview)
++ [Prise en main des API AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/aem-apis/overview)
 + [Protection des sites web AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)
