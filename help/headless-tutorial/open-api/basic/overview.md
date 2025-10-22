@@ -1,6 +1,7 @@
 ---
 title: Tutoriel sur AEM Headless OpenAPI | Diffusion de fragments de contenu
 description: Tutoriel complet illustrant comment développer et exposer du contenu à l’aide des API de diffusion de fragments de contenu basées sur OpenAPI d’AEM.
+short-description: Tutoriel illustrant comment créer et exposer du contenu AEM à l’aide de la diffusion de fragments de contenu avec des API OpenAPI et l’utiliser dans une application externe pour des scénarios CMS découplés.
 doc-type: Tutorial
 mini-toc-levels: 1
 jira: KT-6678
@@ -12,10 +13,10 @@ level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 duration: 54
 exl-id: 1bb7c415-58f8-4f6c-a0bc-38bdbdb521cf
-source-git-commit: e7960fa75058c072b1b52ba1a0d7c99a0280d02f
-workflow-type: ht
-source-wordcount: '365'
-ht-degree: 100%
+source-git-commit: f0b1b906e1ef04b53eca940f191e65d62a2e0bab
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 92%
 
 ---
 
