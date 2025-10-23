@@ -58,7 +58,7 @@ Commencez le tutoriel par la section [Définition de modèles de fragment de con
 
 Le code source et les modules de contenu sont disponibles dans le référentiel GitHub [Tutoriels sur AEM Headless](https://github.com/adobe/aem-tutorials).
 
-La branche [`main` contient le code source final ](https://github.com/adobe/aem-tutorials/tree/main/headless/open-api/basic) de ce tutoriel.
+La branche [`main` contient le code source final &#x200B;](https://github.com/adobe/aem-tutorials/tree/main/headless/open-api/basic) de ce tutoriel.
 Les instantanés du code à la fin de chaque étape sont disponibles sous forme de balises Git.
 
 * Début du chapitre 4 - Application React : [`headless_open-api_basic`](https://github.com/adobe/aem-tutorials/tree/headless_open-api_basic//headless/open-api/basic)
