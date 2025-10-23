@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
-source-git-commit: bc1c7a96a3d5dbc23fb7d34343cee0cfc2853be9
-workflow-type: ht
-source-wordcount: '597'
-ht-degree: 100%
+source-git-commit: e5a1ab5fcc5314bddfbc4ad900127804bc019009
+workflow-type: tm+mt
+source-wordcount: '564'
+ht-degree: 99%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 100%
 + Fragments d’expérience {#experience-fragments}
    + [Utiliser des fragments d’expérience](experience-fragments/experience-fragments-feature-video-use.md)
    + [Créer des blocs](experience-fragments/building-blocks.md)
-   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr){target=_blank}
+   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Vue d’ensemble](./edge-delivery-services/overview.md)
    + Développement{#developing}
@@ -147,23 +147,23 @@ ht-degree: 100%
    + [Utiliser l’éditeur de SPA](spa-editor/spa-editor-framework-feature-video-use.md)
    + [Prise en main de l’éditeur de SPA d’AEM et de React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=fr){target=_blank}
 + Gestion de plusieurs sites {#multi-site-management}
-   + [Présentation de la copie de la langue](./multi-site-management/language-copy-overview.md)
+   + [Présentation de la copie linguistique](./multi-site-management/language-copy-overview.md)
    + [Live Copy et plan directeur](./multi-site-management/live-copy-and-blueprint.md)
    + [Créer une Live Copy](./multi-site-management/create-live-copy.md)
    + [Gérer l’héritage de la Live Copy sur un composant](./multi-site-management/manage-component-inheritance-live-copy.md)
    + [Gérer l’héritage de Live Copy sur une page](./multi-site-management/manage-page-inheritance-live-copy.md)
    + [Console d’aperçu de la Live Copy](./multi-site-management/live-copy-overview-console.md)
-   + [Créer une copie de la langue](./multi-site-management/create-language-copy.md)
+   + [Créer une copie linguistique](./multi-site-management/create-language-copy.md)
    + [Projets de traduction](./multi-site-management/manage-translation-projects.md)
    + [Créer un projet de traduction multilingue](./multi-site-management/create-multinational-translational-project.md)
    + [Tâches de traduction](./multi-site-management/create-translation-job.md)
-   + [Mettre à jour une copie de la langue avec des lancements](./multi-site-management/updating-language-copy.md)
-   + [Créer une page de copie de la langue](./multi-site-management/create-new-page-language-copy.md)
+   + [Mettre à jour une copie linguistique avec des lancements](./multi-site-management/updating-language-copy.md)
+   + [Créer une page de copie linguistique](./multi-site-management/create-new-page-language-copy.md)
    + [Statut des tâches de traduction](./multi-site-management/translation-job-status.md)
-   + [Créer un site national à partir de la copie de langue](./multi-site-management/create-new-site.md)
+   + [Créer un site national à partir de la copie linguistique](./multi-site-management/create-new-site.md)
 + Traduction {#translation}
    + [Utiliser Multi Site Manager](translation/multi-site-manager-feature-video-use.md)
-   + [Utiliser la copie de la langue](translation/language-copy-feature-video-use.md)
+   + [Utiliser la copie linguistique](translation/language-copy-feature-video-use.md)
    + [Configurer les règles de traduction](translation/translation-rules-editor-technical-video-setup.md)
    + [Amélioration des traductions](translation/translation-enhancements-feature-video-use.md)
 + Intégrations {#integrations}
@@ -171,6 +171,7 @@ ht-degree: 100%
       + [Générer des FPID](integrations/platform/fpid.md)
       + [SDK web](integrations/platform/web-sdk.md)
       + [Analyse à l’aide du SDK web Platform](integrations/platform/analytics-using-web-sdk.md)
+      + [Adobe Target](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
    + Balises dans Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Vue d’ensemble](integrations/experience-platform/data-collection/tags/overview.md)
       + [Créer une propriété de balise](integrations/experience-platform/data-collection/tags/create-tag-property.md)
@@ -185,14 +186,9 @@ ht-degree: 100%
       + [Suivre les éléments cliqués avec Adobe Analytics](integrations/analytics/track-clicked-component.md)
       + [Analyser des données avec Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
-      + [Vue d’ensemble](integrations/adobe-target/overview.md)
-      + [Ajouter l’extension Target à la propriété de balises](integrations/adobe-target/add-target-launch-extension.md)
-      + [Charger et déclencher un appel Target](integrations/adobe-target/load-and-fire-target.md)
-      + [Créer un compte Adobe Target as a Cloud Service](integrations/adobe-target/setup-aem-target-cloud-service.md)
-      + [Exporter des fragments d’expérience vers Adobe Target](integrations/adobe-target/export-experience-fragment-target.md)
-      + [Créer une Activity Target à l’aide d’offres de fragments d’expérience](integrations/adobe-target/create-target-activity.md)
-      + [Personnalisation à l’aide du compositeur d’expérience visuelle](integrations/adobe-target/personalization-using-vec.md)
-      + [Personnaliser l’expérience complète d’une page web](integrations/adobe-target/personalization-web-page.md)
+      + [Vue d’ensemble](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [Configuration](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
+      + [Cas d’utilisation](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
 + Apprendre de vos paires et pairs {#expert-resources}
    + [Vue d’ensemble](expert-resources/learn-from-your-peers-overview.md)
    + [Créer un guide de création dans AEM Sites](expert-resources/authoring-guide-in-sites.md)

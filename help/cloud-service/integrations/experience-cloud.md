@@ -14,10 +14,10 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="d’AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
 duration: 135
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
-workflow-type: ht
-source-wordcount: '640'
-ht-degree: 100%
+source-git-commit: e5a1ab5fcc5314bddfbc4ad900127804bc019009
+workflow-type: tm+mt
+source-wordcount: '638'
+ht-degree: 99%
 
 ---
 
@@ -147,14 +147,16 @@ Adobe Target s’intègre à AEM as a Cloud Service afin de fournir une exp
 
 ### AEM Sites
 
-+ [Configurer l’intégration d’Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html?lang=fr)
++ [Configurer l’intégration d’Adobe Target](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-target)
+
++[Cas D’Utilisation De Personalization](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
+
 + Fragments d’expérience vers Target
 
    + [Publier des fragments d’expérience sur Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html?lang=fr)
    + [Publier des fragments d’expérience au format JSON sur Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-target.html?lang=fr)
 
 + [Utiliser AEM Context Hub avec Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/personalization/audiences.html?lang=fr#creating-an-adobe-target-audience-using-the-audience-console)
-+ [Tutoriel sur AEM Sites et Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/target/overview.html?lang=fr)
 
 ## Adobe Workfront
 
