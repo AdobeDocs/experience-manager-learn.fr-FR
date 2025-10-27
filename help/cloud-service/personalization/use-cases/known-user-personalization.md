@@ -10,9 +10,9 @@ doc-type: Tutorial
 last-substantial-update: 2025-10-17T00:00:00Z
 jira: KT-16331
 thumbnail: KT-16331.jpeg
-source-git-commit: 418e61e28e4a03a5b9657e80534926fe40ccefbd
+source-git-commit: a713c282af1dd6c3e947a1b22de53488d7761019
 workflow-type: tm+mt
-source-wordcount: '6447'
+source-wordcount: '6446'
 ht-degree: 25%
 
 ---
@@ -33,9 +33,9 @@ Votre organisation peut avoir différents cas d’utilisation pour la personnali
 
 ## Exemple de cas d’utilisation
 
-![VIDEO](https://video.tv.adobe.com/v/3476111/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476105/?learn=on&enablevpops)
 
-Dans ce tutoriel, à l’aide de l’exemple de site WKND [&#128279;](https://github.com/adobe/aem-guides-wknd), le processus montre comment **les utilisateurs connectés** qui ont acheté une Adventure **Ski** voient un héros personnalisé sur la page d’accueil **WKND**.
+Dans ce tutoriel, à l’aide de l’exemple de site WKND [](https://github.com/adobe/aem-guides-wknd), le processus montre comment **les utilisateurs connectés** qui ont acheté une Adventure **Ski** voient un héros personnalisé sur la page d’accueil **WKND**.
 
 L&#39;expérience du héros tente de _vendre_ l&#39;équipement de ski essentiel aux utilisateurs qui ont acheté toute aventure **Ski**. Les utilisateurs qui n’ont acheté aucune Adventure **Ski** voient le contenu héros par défaut. Ainsi, l’expérience du héros est personnalisée pour les utilisateurs en fonction de leur historique d’achats et de leur statut de connexion. Pour activer cette personnalisation, les données de différents systèmes sont regroupées afin de créer un profil client complet et utilisées pour les activités de personnalisation.
 
@@ -701,7 +701,7 @@ Pour les besoins de ce cas d’utilisation, une politique de fusion est créée.
 
 Ces paramètres garantissent que vos données comportementales et transactionnelles sont correctement unifiées et disponibles pour l’évaluation des audiences en temps réel.
 
-![&#x200B; Politique de fusion &#x200B;](../assets/use-cases/known-user-personalization/merge-policy.png)
+![ Politique de fusion ](../assets/use-cases/known-user-personalization/merge-policy.png)
 
 ### Configurer une destination Adobe Target (V2)
 
@@ -995,14 +995,14 @@ Vérifions que les données comportementales sont collectées et que les profils
 
 - Dans Adobe Experience Platform, cliquez sur **Jeux de données** puis ouvrez le jeu de données **WKND-RDE-Known-User-Personalization-Behavioural**. Assurez-vous que les statistiques des données ingérées sont valides.
 
-  ![&#x200B; Ingérer des statistiques de données &#x200B;](../assets/use-cases/known-user-personalization/ingest-data-stats.png)
+  ![ Ingérer des statistiques de données ](../assets/use-cases/known-user-personalization/ingest-data-stats.png)
 
 - Pour vérifier que les profils sont créés, cliquez sur **Profils** dans le volet de navigation de gauche. Accédez ensuite à l’onglet **Parcourir** et filtrez à l’aide des critères suivants :
    - **Politique de fusion** : $YOUR_MERGE_POLICY_NAME
    - **Espace de noms d’identité** : ECID (identifiant Experience Cloud, un identifiant unique attribué automatiquement par Adobe à chaque navigateur de visiteurs)
    - **Valeur d’identité** : recherchez à l’aide des outils de développement du navigateur ou d’Experience Platform Debugger. Il s’agit de la valeur du cookie AMCV_$NAMESPACE$ sans le préfixe `MCMID|`.
 
-  ![ECID &#x200B;](../assets/use-cases/known-user-personalization/ecid.png)
+  ![ECID ](../assets/use-cases/known-user-personalization/ecid.png)
 
 - Cliquez sur le bouton **Afficher**.
   ![Liste des profils](../assets/use-cases/known-user-personalization/profile-list.png)
@@ -1044,7 +1044,7 @@ Ensuite, vous vérifiez l’assemblage des données comportementales et transact
    - **Espace de noms d’identité** : ECID
    - **Valeur d’identité** : utilisez la même valeur ECID que celle utilisée pour filtrer les données comportementales et le profil associé.
 
-  ![&#x200B; Liste de profils groupés &#x200B;](../assets/use-cases/known-user-personalization/stitched-profile-list.png)
+  ![ Liste de profils groupés ](../assets/use-cases/known-user-personalization/stitched-profile-list.png)
 
 - Cliquez sur le profil, vous devriez voir les détails du profil. Les données transactionnelles sont regroupées avec les données comportementales afin de créer le profil client complet.
 
@@ -1069,7 +1069,7 @@ Il est possible de rechercher le profil à l’aide de l’identifiant utilisate
    - **Espace de noms d’identité** : ID utilisateur WKND.
    - **Valeur d’identité** : `teddy` ou `asmith` ou tout autre identifiant utilisateur que vous avez utilisé.
 
-  ![&#x200B; Liste de profils groupés &#x200B;](../assets/use-cases/known-user-personalization/stitched-profile-list-using-wknd-user-id.png)
+  ![ Liste de profils groupés ](../assets/use-cases/known-user-personalization/stitched-profile-list-using-wknd-user-id.png)
 
 - Cliquez sur le profil. Vous devriez voir les mêmes détails de profil que ceux de l’étape précédente.
   ![Détails du profil assemblé](../assets/use-cases/known-user-personalization/stitched-profile-details-using-wknd-user-id.png)
