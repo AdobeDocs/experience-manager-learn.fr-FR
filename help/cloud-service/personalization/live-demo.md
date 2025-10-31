@@ -26,7 +26,7 @@ Cette page vous guide à travers des démonstrations pratiques de chaque scénar
 >[!IMPORTANT]
 >
 > Ouvrez le site de démonstration dans plusieurs fenêtres de navigateur ou en mode de navigation incognito/privée pour expérimenter différentes variations personnalisées simultanément.
-> > Lors de l’utilisation du mode de navigation privée, Firefox et Safari peuvent bloquer le cookie ECID, ou utiliser le mode de navigation standard ou effacer les cookies avant d’essayer un nouveau scénario de personnalisation.
+> &#x200B;> Lors de l’utilisation du mode de navigation privée, Firefox et Safari peuvent bloquer le cookie ECID, ou utiliser le mode de navigation standard ou effacer les cookies avant d’essayer un nouveau scénario de personnalisation.
 
 ## Cas d’utilisation de démonstration
 
@@ -60,7 +60,7 @@ Ces expériences sont basées sur le comportement historique et s’affichent lo
 | Page | Ce que vous verrez | Test | Expérience |
 |------|-----------------|-------------|------------|
 | [Adventures.](https://wknd.enablementadobe.com/us/en/adventures.html){target="wknd"} | Un héros du surf avec des **planches de surf colorées sous les palmiers** avec un message « Votre Parcours de surf commence ici » et du contenu de destination de surf organisé en fonction de vos intérêts | Visitez plusieurs [aventures liées au surf](https://wknd.enablementadobe.com/us/en/adventures.html#tabs-b4210c6ff3-item-b411b19941-tab){target="wknd"}, puis revenez à la page Adventures le lendemain | ![Aventures - Surfing Hero](./assets/live-demo/behavioral-adventures-surfing-hero.png){width="200" zoomable="yes"} |
-| [Magazine](https://wknd.enablementadobe.com/us/en/magazine.html){target="wknd"} | Une **offre d’abonnement personnalisée à un magazine** proposant des destinations de voyage dans le monde entier avec un van VW classique, mettant l’accent sur « Votre expérience personnalisée de magazine » avec des avantages exclusifs pour les abonnés | [ Lisez 3 articles de magazine ou plus](https://wknd.enablementadobe.com/us/en/magazine.html){target="wknd"} puis revenez à la page de destination du magazine le lendemain | ![Magazine - S&#39;abonner au héros](./assets/live-demo/behavioral-magazine-subscribe-hero.png){width="200" zoomable="yes"} |
+| [Magazine](https://wknd.enablementadobe.com/us/en/magazine.html){target="wknd"} | Une **offre d’abonnement personnalisée à un magazine** proposant des destinations de voyage dans le monde entier avec un van VW classique, mettant l’accent sur « Votre expérience personnalisée de magazine » avec des avantages exclusifs pour les abonnés | [&#x200B; Lisez 3 articles de magazine ou plus](https://wknd.enablementadobe.com/us/en/magazine.html){target="wknd"} puis revenez à la page de destination du magazine le lendemain | ![Magazine - S&#39;abonner au héros](./assets/live-demo/behavioral-magazine-subscribe-hero.png){width="200" zoomable="yes"} |
 
 **En savoir plus :** vous êtes prêt à implémenter le ciblage comportemental sur votre propre site AEM ? Commencez par le [tutoriel sur le ciblage comportemental](./use-cases/behavioral-targeting.md) pour découvrir l’ensemble du processus de configuration.
 
