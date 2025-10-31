@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: c367564acb6465d5f203e5db943c5470607b63c9
+source-git-commit: 055dc7d666d082244d73d3494bac54d7eb4bb886
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1414'
 ht-degree: 99%
 
 ---
@@ -142,9 +142,10 @@ ht-degree: 99%
       + [Developer Console](./debugging/cloud-service/developer-console.md)
       + [Navigateur de référentiel](./debugging/cloud-service/repository-browser.md)
       + Risques{#risks}
-         + [Avertissements transversaux](./debugging/cloud-service/risks/traversals.md)
+         + [Avertissements de traversée](./debugging/cloud-service/risks/traversals.md)
 + Personnalisation {#personalization}
    + [Vue d’ensemble](./personalization/overview.md)
+   + [Démonstration en direct](./personalization/live-demo.md)
    + Configuration{#setup}
       + [Intégrer Adobe Target](./personalization/setup/integrate-adobe-target.md)
       + [Intégrer Tags](./personalization/setup/integrate-adobe-tags.md)
