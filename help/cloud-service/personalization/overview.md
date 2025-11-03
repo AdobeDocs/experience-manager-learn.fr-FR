@@ -11,7 +11,7 @@ last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18717
 thumbnail: null
 exl-id: c4fb11b9-b613-4522-b9da-18d7ae0826ec
-source-git-commit: 055dc7d666d082244d73d3494bac54d7eb4bb886
+source-git-commit: 4d345ba7b10ea21d7bc7eee89157de782e1c4350
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 51%
@@ -38,7 +38,7 @@ Pour démontrer divers scénarios de personnalisation, ce tutoriel utilise l’e
 
 ## Démonstration en direct de cas d’utilisation de Personalization
 
-Faites l’expérience de la personnalisation en action sur le [site Web d’activation de WKND](https://wknd.enablementadobe.com/us/en.html){target="_blank"}. Le site de démonstration présente trois types de personnalisation : les tests A/B, le ciblage comportemental et la personnalisation d’utilisateurs et utilisatrices connus.
+Faites l’expérience de la personnalisation en action sur le [site Web d’activation de WKND](https://wknd.enablementadobe.com/us/en.html){target="wknd"}. Le site de démonstration présente trois types de personnalisation : les tests A/B, le ciblage comportemental et la personnalisation d’utilisateurs et utilisatrices connus.
 
 >[!TIP]
 >
