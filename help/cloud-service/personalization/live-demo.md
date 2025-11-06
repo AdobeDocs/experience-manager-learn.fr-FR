@@ -10,18 +10,18 @@ doc-type: Tutorial
 last-substantial-update: 2025-11-03T00:00:00Z
 jira: KT-19546
 thumbnail: KT-19546.jpeg
-source-git-commit: 9e99936fb03e085f6bc276c7d6ef5cc08e34d1e5
+source-git-commit: ed7af09d747d54a84d2583073d3c731388b5f516
 workflow-type: tm+mt
 source-wordcount: '944'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
-# Démonstration en direct de cas d’utilisation de Personalization
+# Démonstration en direct de cas d’utilisation de la personnalisation
 
 Visitez le [site web d’activation de WKND](https://wknd.enablementadobe.com/us/en.html){target="wknd"} pour consulter des exemples concrets de tests A/B, de ciblage comportemental et de personnalisation d’utilisateurs et utilisatrices connus.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476463/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476461/?learn=on&enablevpops)
 
 Cette page vous guide à travers des démonstrations pratiques de chaque scénario de personnalisation. Utilisez-le pour explorer les possibilités avant de créer ces fonctionnalités sur votre propre site AEM.
 
@@ -55,18 +55,18 @@ Ces expériences s’affichent immédiatement en fonction de votre comportement 
 | [Adventures.](https://wknd.enablementadobe.com/us/en/adventures.html){target="wknd"} | Un thème de camping **héros de la collection d&#39;équipement** mettant en valeur l&#39;équipement de camping essentiel (sacs de couchage, vestes, bottes) avec le message « Votre prochaine aventure commence avec le bon équipement » | Visitez toute aventure liée au camping (par exemple, [Yosemite Backpacking](https://wknd.enablementadobe.com/us/en/adventures/yosemite-backpacking.html){target="wknd"}), puis accédez à la page Adventures . | ![Adventures - Héros de la collection d&#39;engins de camping](./assets/live-demo/behavioral-adventures-camp-hero.png){width="200" zoomable="yes"} |
 | [Magazine](https://wknd.enablementadobe.com/us/en/magazine.html){target="wknd"} | Une **promotion de vente de magazine** sensible au facteur temps, avec des magazines WKND laminés et une « VENTE » bien en vue. badges et prix spéciaux pour les lecteurs sur les numéros et collections extérieures | Lisez un ou plusieurs articles de magazine (par exemple, [Ski de randonnée](https://wknd.enablementadobe.com/us/en/magazine/ski-touring.html){target="wknd"}), puis accédez à la page de destination du magazine | ![Magazine - Sale Hero](./assets/live-demo/behavioral-magazine-sale-hero.png){width="200" zoomable="yes"} |
 
-### Adventures et pages de magazine (lot)
+### Pages Adventures et de magazine (lot)
 
 Ces expériences sont basées sur le comportement historique et s’affichent lors de votre prochaine visite ou plus tard le même jour (personnalisation par lots). Les données sont agrégées et traitées dans des attributs de profil, puis activées dans Adobe Experience Platform Edge Network.
 
 | Page | Ce que vous verrez | Test | Expérience |
 |------|-----------------|-------------|------------|
 | [Adventures.](https://wknd.enablementadobe.com/us/en/adventures.html){target="wknd"} | Un héros du surf avec des **planches de surf colorées sous les palmiers** avec un message « Votre Parcours de surf commence ici » et du contenu de destination de surf organisé en fonction de vos intérêts | Visitez plusieurs [aventures liées au surf](https://wknd.enablementadobe.com/us/en/adventures.html#tabs-b4210c6ff3-item-b411b19941-tab){target="wknd"}, puis revenez à la page Adventures le lendemain | ![Aventures - Surfing Hero](./assets/live-demo/behavioral-adventures-surfing-hero.png){width="200" zoomable="yes"} |
-| [Magazine](https://wknd.enablementadobe.com/us/en/magazine.html){target="wknd"} | Une **offre d’abonnement personnalisée à un magazine** proposant des destinations de voyage dans le monde entier avec un van VW classique, mettant l’accent sur « Votre expérience personnalisée de magazine » avec des avantages exclusifs pour les abonnés | [&#x200B; Lisez 3 articles de magazine ou plus](https://wknd.enablementadobe.com/us/en/magazine.html){target="wknd"} puis revenez à la page de destination du magazine le lendemain | ![Magazine - S&#39;abonner au héros](./assets/live-demo/behavioral-magazine-subscribe-hero.png){width="200" zoomable="yes"} |
+| [Magazine](https://wknd.enablementadobe.com/us/en/magazine.html){target="wknd"} | Une **offre d’abonnement personnalisée à un magazine** proposant des destinations de voyage dans le monde entier avec un van VW classique, mettant l’accent sur « Votre expérience personnalisée de magazine » avec des avantages exclusifs pour les abonnés | [ Lisez 3 articles de magazine ou plus](https://wknd.enablementadobe.com/us/en/magazine.html){target="wknd"} puis revenez à la page de destination du magazine le lendemain | ![Magazine - S&#39;abonner au héros](./assets/live-demo/behavioral-magazine-subscribe-hero.png){width="200" zoomable="yes"} |
 
 **En savoir plus :** vous êtes prêt à implémenter le ciblage comportemental sur votre propre site AEM ? Commencez par le [tutoriel sur le ciblage comportemental](./use-cases/behavioral-targeting.md) pour découvrir l’ensemble du processus de configuration.
 
-## Personalization d’utilisateurs connus
+## Personnalisation d’utilisateurs connus
 
 Expériences personnalisées basées sur des profils client complets créés à partir de données sur plusieurs systèmes, y compris l’historique d’achats et l’étape du cycle de vie du client. Adobe Experience Platform Edge Network est utilisé pour prendre des décisions de personnalisation en temps réel.
 
@@ -76,11 +76,11 @@ La bannière principale de la page d’accueil WKND est personnalisée en foncti
 
 | Page | Ce que vous verrez | Test | Contexte du profil | Expérience |
 |------|-----------------|-------------|-----------------|------------|
-| [Accueil](https://wknd.enablementadobe.com/us/en.html){target="wknd"} | Un intérieur de magasin de ski présentant des équipements de ski **premium avec promotion « EXTRA 25% OFF »**, avec des conseils d&#39;emballage d&#39;experts pour préparer leur prochaine aventure de ski | Connectez-vous avec `teddy/teddy` ou `asmith/asmith` et actualisez la page | Récemment acheté des aventures de ski, ce qui a encouragé la vente de matériel de ski | ![Accueil - Ventes d&#39;équipement de ski](./assets/live-demo/known-user-ski-gear-hero.png){width="200" zoomable="yes"} |
+| [Accueil](https://wknd.enablementadobe.com/us/en.html){target="wknd"} | Un intérieur de magasin de ski présentant des équipements de ski **premium avec promotion « EXTRA 25% OFF »**, avec des conseils d&#39;emballage d&#39;experts pour préparer leur prochaine aventure de ski | Se connecter avec `rwilson/rwilson` et actualiser la page | Récemment acheté des aventures de ski, ce qui a encouragé la vente de matériel de ski | ![Accueil - Ventes d&#39;équipement de ski](./assets/live-demo/known-user-ski-gear-hero.png){width="200" zoomable="yes"} |
 
-**En savoir plus :** êtes-vous prêt à implémenter la personnalisation d’un utilisateur connu sur votre propre site AEM ? Commencez par le [Tutoriel sur Personalization destiné aux utilisateurs connus](./use-cases/known-user-personalization.md) pour découvrir l’ensemble du processus de configuration.
+**En savoir plus :** vous êtes prêt à implémenter la personnalisation d’utilisateurs connus sur votre propre site AEM ? Commencez par le [Tutoriel sur Personalization destiné aux utilisateurs connus](./use-cases/known-user-personalization.md) pour découvrir l’ensemble du processus de configuration.
 
-## Tests A/B (Expérimentation)
+## Tests A/B (expérimentation)
 
 Testez différentes variations de contenu pour déterminer celle qui répond le mieux aux objectifs de votre entreprise. Adobe Target diffuse de manière aléatoire différentes variations aux visiteurs et aux suivis, qui présentent de meilleures performances. On parle généralement d’_expérimentation_.
 
@@ -92,7 +92,7 @@ La page d’accueil WKND exécute un test A/B actif avec trois variantes de l’
 |------|-----------------|-------------|------------|
 | [Accueil](https://wknd.enablementadobe.com/us/en.html){target="wknd"} | L&#39;une des trois variations d&#39;articles vedettes attribuées au hasard dans la section « Nos vedettes » : **« Hors de la grille : des itinéraires de camping épiques à travers l&#39;Australie occidentale »** ou **« Errer dans la nature : des aventures de camping en Australie occidentale »** (ou une troisième variation), chacune avec des images et des messages uniques pour tester celle qui résonne le mieux | Accédez à la page d’accueil dans différents navigateurs, utilisez le mode incognito/privé ou effacez les cookies pour afficher différentes variations | ![Variations de test A/B](./assets/live-demo/ab-test-variations.png){width="200" zoomable="yes"} |
 
-**En savoir plus :** vous êtes prêt à implémenter des tests A/B sur votre propre site AEM ? Commencez par le tutoriel [Expérimentation (tests A/B)](./use-cases/experimentation.md) pour découvrir l’ensemble du processus de configuration.
+**En savoir plus :** vous êtes prêt à mettre en œuvre des tests A/B sur votre propre site AEM ? Commencez par le tutoriel [Expérimentation (tests A/B)](./use-cases/experimentation.md) pour découvrir l’ensemble du processus de configuration.
 
 
 ## Étapes suivantes
