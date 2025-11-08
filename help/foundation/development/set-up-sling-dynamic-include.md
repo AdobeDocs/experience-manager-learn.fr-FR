@@ -131,7 +131,7 @@ Présentation vidéo de l’installation et de l’utilisation d’[!DNL Apache 
 
    >[!TIP]
    >
-   > Laisser l’élément `*` à la fin de la règle `*.nocache.html*` glob ci-dessus peut entraîner des [problèmes dans les demandes de sous-ressources](https://github.com/AdobeDocs/experience-manager-learn.en/issues/16).
+   > Laisser l’élément `*` à la fin de la règle `*.nocache.html*` glob ci-dessus peut entraîner des [problèmes dans les demandes de sous-ressources](https://github.com/AdobeDocs/experience-manager-learn.fr-FR/issues/16).
 
    ```shell
    /cache {
