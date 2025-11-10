@@ -13,10 +13,10 @@ last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
 exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
-source-git-commit: 7ada3c2e7deb414b924077a5d2988db16f28712c
-workflow-type: ht
-source-wordcount: '1693'
-ht-degree: 100%
+source-git-commit: 1048beba42011eccb1ebdd43458591c8e953fb8a
+workflow-type: tm+mt
+source-wordcount: '1706'
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ Parfois, vous devez créer des index personnalisés pour répondre à vos besoin
 
 - Comprenez les exigences de recherche et vérifiez si les index prêts à l’emploi peuvent répondre à vos besoins de recherche. Utilisez l’**outil de performances des requêtes**, disponible sur le [SDK local](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) et AEMCS via la Developer Console ou `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`.
 
-- Définissez une requête optimale, utilisez le graphique de flux [optimisation des requêtes](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) et l’[aide-mémoire pour les requêtes JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=fr) à titre de référence.
+- Définissez une requête optimale, utilisez le graphique de flux [optimisation des requêtes](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) et l’[aide-mémoire pour les requêtes JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) à titre de référence.
 
 - Si les index prêts à l’emploi ne répondent pas aux besoins de recherche, vous disposez de deux options. Toutefois, passez en revue les [Conseils pour créer des index efficaces](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing).
    - Personnaliser l’index prêt à l’emploi : option préférée, car il est facile de le gérer et de le mettre à niveau.
@@ -53,7 +53,7 @@ Parfois, vous devez créer des index personnalisés pour répondre à vos besoin
 
 - Dans **AEM 6.X**, la convention de nommage ci-dessus _ne fonctionne pas_, mais il vous suffit de mettre à jour l’index prêt à l’emploi avec les propriétés nécessaires dans le nœud `indexRules`.
 
-- Copiez toujours la dernière définition d’index prêt à l’emploi de l’instance AEM à l’aide du gestionnaire de packages CRX DE (/crx/packmgr/), renommez-la et ajoutez des personnalisations dans le fichier XML.
+- Copiez toujours la dernière définition d’index prête à l’emploi de l’instance AEM à l’aide du gestionnaire de modules CRX DE (/crx/packmgr/), renommez-la et ajoutez des personnalisations dans le fichier XML.
 
 - Stockez la définition d’index dans le projet AEM à l’adresse `ui.apps/src/main/content/jcr_root/_oak_index` et déployez-la à l’aide des pipelines CI/CD Cloud Manager. Consultez [Déploiement de définitions d’index personnalisé](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/indexing) pour plus d’informations.
 
@@ -112,7 +112,7 @@ La bonne méthode consiste à personnaliser l’index prêt à l’emploi et à 
 
 L’image ci-dessous affiche l’index personnalisé pour le type de nœud `dam:Asset` avec la propriété `includedPaths` définie sur un chemin d’accès spécifique.
 
-![Index sur le type de nœud dam:Asset](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
+![Index sur la gestion des ressources numériques:Asset type de nœud ](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
 
 ##### Analyse
 
@@ -243,13 +243,13 @@ Pour désactiver complètement Apache Tika, procédez comme suit :
 
 Examinons quelques outils qui peuvent vous aider à définir, analyser et optimiser les index.
 
-### Outil de création d’index
+### Outil de création d’index et outils Oak
 
-L’outil [Générateur de définitions d’index Oak](https://oakutils.appspot.com/generate/index) permet de **générer la définition d’index** en fonction des requêtes d’entrée. Il s’agit d’un bon point de départ pour créer un index personnalisé.
+L’outil [Générateur de définitions d’index Oak](https://thomasmueller.github.io/oakTools/indexDefGenerator.html) permet de **générer la définition d’index** en fonction des requêtes d’entrée. Il s’agit d’un bon point de départ pour créer un index personnalisé.
 
-### Outil d’analyse d’index
-
-L’outil [Analyseur de définition d’index](https://oakutils.appspot.com/analyze/index) permet d’**analyser la définition de l’index** et fournit des recommandations pour améliorer la définition de l’index.
+Les [outils Oak](https://thomasmueller.github.io/oakTools/index.html) contiennent également d’autres
+des utilitaires liés à l’indexation et à l’interrogation, par exemple pour convertir des index entre les formats JSON et XML ;
+pour convertir des requêtes XPath en SQL-2 et pour comparer des index.
 
 ### Outil de performance des requêtes
 
