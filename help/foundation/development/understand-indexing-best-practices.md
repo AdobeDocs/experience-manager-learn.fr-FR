@@ -112,7 +112,7 @@ La bonne méthode consiste à personnaliser l’index prêt à l’emploi et à 
 
 L’image ci-dessous affiche l’index personnalisé pour le type de nœud `dam:Asset` avec la propriété `includedPaths` définie sur un chemin d’accès spécifique.
 
-![Index sur la gestion des ressources numériques:Asset type de nœud ](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
+![Index sur la gestion des ressources numériques:Asset type de nœud &#x200B;](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
 
 ##### Analyse
 
