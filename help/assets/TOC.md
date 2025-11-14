@@ -7,10 +7,10 @@ sub-product: Experience Manager Assets
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 feature-set: Experience Manager Assets, Experience Manager Sites, Experience Manager
 team: TM
-source-git-commit: 4d17b28ed67d7e5b03caa5fb57701ab7ddbcb77f
+source-git-commit: bf996405c360c77475d9f76d5de9bcd4fde3c163
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 100%
+source-wordcount: '467'
+ht-degree: 99%
 
 ---
 
@@ -69,6 +69,7 @@ ht-degree: 100%
    + [Autorisations pilotées par les métadonnées](./advanced/metadata-driven-permissions.md)
    + [Sous-titres de vidéos](./advanced/video-closed-captions.md)
    + [Filigranes](./advanced/watermarks.md)
+   + [Chargement de ressources par programme](./advanced/programmatic-asset-upload.md)
 
 + Gestion avancée des métadonnées{#metadata}
    + [Métadonnées à l’aide de l’IA générative](metadata/genai-metadata.md)
@@ -177,7 +178,7 @@ ht-degree: 100%
       + [Générer des URL et des codes intégrés](dynamic-media/tutorials/how-to-generate-public-url-or-embed-code-for-an-asset.md)
       + [Déclencher un traitement d’export](dynamic-media/tutorials/how-to-trigger-export-job-in-dynamic-media-during-submit-job-operation-parameter.md)
       + [Invalider le cache du réseau CDN](dynamic-media/tutorials/invalidating-the-cdn-cache-by-way-of-dynamic-media.md)
-      + [Utilisation de composants principaux de Dynamic Media](dynamic-media/tutorials/using-dm-components-on-site-page.md)
+      + [Utiliser des composants principaux de Dynamic Media](dynamic-media/tutorials/using-dm-components-on-site-page.md)
       + [Supprimer la configuration de Dynamic Media](dynamic-media/tutorials/deleting-dynamic-media-configuration.md)
       + [Télécharger des ressources dans l’application Dynamic Media Classic](dynamic-media/tutorials/how-to-download-asset-in-dynamic-media-classic-app.md)
       + [API IPS Dynamic Media Classic](dynamic-media/tutorials/introduction-to-dynamic-media-classic-ips-api.md)
