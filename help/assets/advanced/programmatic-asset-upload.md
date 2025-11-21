@@ -10,7 +10,7 @@ last-substantial-update: 2025-11-14T00:00:00Z
 doc-type: Tutorial
 jira: KT-19571
 thumbnail: KT-19571.png
-source-git-commit: bf996405c360c77475d9f76d5de9bcd4fde3c163
+source-git-commit: 151a5220ee842ee77ae27e99ded62f8d3dae4612
 workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 2%
@@ -21,6 +21,10 @@ ht-degree: 2%
 # Chargement de ressources par programme vers AEM as a Cloud Service
 
 Découvrez comment charger des ressources dans un environnement AEM as a Cloud Service à l’aide de l’application cliente qui utilise la bibliothèque Node.js [aem-upload](https://github.com/adobe/aem-upload).
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476952?quality=12&learn=on)
+
 
 ## Ce que vous apprenez
 
@@ -50,7 +54,7 @@ La bibliothèque Node.js [aem-upload](https://github.com/adobe/aem-upload) abstr
 
 >[!CAUTION]
 >
->Il n’existe AUCUN équivalent de la bibliothèque [aem-upload](https://github.com/adobe/aem-upload) dans Java. L’application cliente doit être écrite dans Node.js pour utiliser l’approche _chargement binaire direct_. Pour plus d’informations, consultez la page [API et opérations Experience Manager Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#use-cases-and-apis).
+>Il n’existe AUCUN équivalent de la bibliothèque [aem-upload](https://github.com/adobe/aem-upload) dans Java. L’application cliente doit être écrite dans Node.js pour utiliser l’approche _chargement binaire direct_. Pour plus d’informations, consultez la page [API et opérations Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#use-cases-and-apis).
 
 ## Exemple d’application
 
@@ -97,9 +101,9 @@ Avant d’exécuter l’exemple d’application, vous devez le configurer avec l
 
 Il existe _plusieurs méthodes d’authentification_ prises en charge par la bibliothèque Node.js [aem-upload](https://github.com/adobe/aem-upload). Le tableau suivant résume les _méthodes d’authentification_ prises en charge et leur objectif.
 
-| | Authentification de base | [&#x200B; Jeton de développement local &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token) | [Informations d’identification du service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) | [OAuth S2S](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) | [Application web OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential) | [&#x200B; SPA OAuth &#x200B;](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential) |
+| | Authentification de base | [ Jeton de développement local ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/local-development-access-token) | [Informations d’identification du service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) | [OAuth S2S](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/) | [Application web OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-web-app-credential) | [ SPA OAuth ](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation#oauth-single-page-app-credential) |
 |---|---|---|---|---|---|---|
-| Est-il pris en charge ? | &check; | &check; | &check; | &croix; | &croix; | &croix; |
+| Est-il pris en charge ? | &amp;check; | &amp;check; | &amp;check; | &amp;croix; | &amp;croix; | &amp;croix; |
 | Objectif | Développement local | Développement local | Production | S/O | S/O | S/O |
 
 Pour configurer l’exemple d’application, procédez comme suit :
@@ -176,7 +180,7 @@ Pour obtenir les informations d’identification de service, vous devez utiliser
 
 1. Mettez à jour la variable d’environnement `AEM_SERVICE_CREDENTIALS_FILE` avec le chemin d’accès au fichier service-credentials.json.
 
-1. Assurez-vous que l’utilisateur des informations d’identification du service dispose des autorisations nécessaires pour charger des ressources dans l’environnement AEM as a Cloud Service. Pour plus d’informations, voir la page [Configurer l’accès dans AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#configure-access-in-aem).
+1. Assurez-vous que l’utilisateur des informations d’identification du service dispose des autorisations nécessaires pour charger des ressources dans l’environnement AEM as a Cloud Service. Pour plus d’informations, voir la page [Configurer l’accès dans AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#configure-access-in-aem).
 
 >[!ENDTABS]
 
