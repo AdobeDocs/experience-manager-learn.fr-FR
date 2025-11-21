@@ -299,7 +299,7 @@ ht-degree: 0%
    + [Configurer les informations d’identification Reader Extensions](document-services/configuring-reader-extension-osgi.md)
    + [Application des droits d’utilisation au rendu du PDF en XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [Appliquer les droits d’utilisation au PDF téléchargé](document-services/apply-reader-extension-rights-to-pdf.md)
-   + [Certifier des documents ](document-services/certifying-documents-aem-forms-tutorial.md)
+   + [Certifier des documents &#x200B;](document-services/certifying-documents-aem-forms-tutorial.md)
    + [Assembler des pièces jointes de formulaire](document-services/assemble-form-attachments.md)
    + [Services utilitaires utiles](document-services/useful-utility-services.md)
 + Forms Designer{#forms-designer}
