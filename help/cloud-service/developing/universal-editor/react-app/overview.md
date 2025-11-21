@@ -15,8 +15,8 @@ thumbnail: KT-15359.png
 exl-id: 69ed610e-2eff-43b3-98f9-3dc40594e879
 source-git-commit: f0b1b906e1ef04b53eca940f191e65d62a2e0bab
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

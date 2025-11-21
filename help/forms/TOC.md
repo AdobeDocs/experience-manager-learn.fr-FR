@@ -9,9 +9,9 @@ sub-product: Experience Manager Forms
 version: Experience Manager 6.4, Experience Manager 6.5
 index: y
 source-git-commit: c4b5a015f1c0d5e3877886052476871548ec9b0e
-workflow-type: ht
-source-wordcount: '2104'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -313,7 +313,7 @@ ht-degree: 100%
    + [Utiliser une signature numérique](forms-designer/adding-dig-signature-field.md)
    + [Reader d’extension de formulaire](forms-designer/reader-extending-j2ee.md)
 + AEM Forms Workbench{#forms-workbench}
-   + [Présentation du Workbench](aem-forms-workbench/workbench-introduction.md)
+   + [Présentation de Workbench](aem-forms-workbench/workbench-introduction.md)
    + [Création d’un processus de formulaire](aem-forms-workbench/workbench-creating-a-process.md)
    + [Processus de débogage](aem-forms-workbench/workbench-recording-and-testing-process.md)
 + Communications interactives pour le canal d’impression 
@@ -395,7 +395,7 @@ ht-degree: 100%
    + [Document Security : appliquer une politique créée à l’aide du module Document Security dans Acrobat](troubleshooting/how-to-apply-policy-created-using-document-security-module-in-acrobat.md)
    + [User Management : ajouter des utilisateurs et utilisatrices ou des groupes dans AEM Forms JEE](troubleshooting/how-to-add-users-or-groups-in-aem-forms-jee.md)
    + [User Management : augmenter le délai d’expiration de session de User Management](troubleshooting/how-to-increase-um-session-timeout.md)
-   + [Workbench : Se connecter à Workbench via HTTPS](troubleshooting/connecting-workbench-using-https.md)
+   + [Workbench : connexion à Workbench via HTTPS](troubleshooting/connecting-workbench-using-https.md)
    + [Workbench : recueillir les journaux Workbench à partir du menu d’aide](troubleshooting/gathering-workbench-logs-from-help-menu.md)
    + [Workbench : activer la sortie de débogage pour Workbench](troubleshooting/how-to-enable-debug-output-for-workbench.md)
    + [Workbench : ajuster les paramètres de mémoire de Workbench](troubleshooting/how-to-tweak-workbench-memory-parameters.md)
