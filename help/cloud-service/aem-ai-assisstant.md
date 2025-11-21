@@ -20,4 +20,4 @@ ht-degree: 8%
 
 Découvrez comment l’assistant AEM AI [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) simplifie vos workflows Adobe Experience Manager. Qu’il s’agisse de trouver des fonctionnalités, d’en savoir plus sur les bonnes pratiques, de résoudre les problèmes ou même de créer des tickets d’assistance, AEM est votre partenaire intelligent. Stimulez votre productivité grâce aux conseils, informations et assistance optimisés par l’IA, le tout en un seul endroit.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475360/?captions=fre_fr&learn=on&enablevpops)
