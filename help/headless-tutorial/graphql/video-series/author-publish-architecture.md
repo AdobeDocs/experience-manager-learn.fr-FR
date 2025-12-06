@@ -27,4 +27,4 @@ Dans cette vidéo, vous allez :
 + Comprenez l’architecture de création et de publication d’AEM et la manière dont le contenu est publié.
 + Découvrez les bonnes pratiques pour une diffusion découplée avec un environnement de publication AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/333296?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3450951?captions=fre_fr&quality=12&learn=on)

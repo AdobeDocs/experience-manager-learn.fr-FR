@@ -23,4 +23,4 @@ ht-degree: 100%
 
 Cette section présente brièvement l’éditeur de fragments de contenu AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424373/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477329/?captions=fre_fr&learn=on)

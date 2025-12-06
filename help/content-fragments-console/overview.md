@@ -70,7 +70,7 @@ Consultez la section [Documentation](https://experienceleague.adobe.com/docs/exp
             <a href="./basics/content-fragment-editor.md" title="Vue d’ensemble de l’éditeur"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3424373?format=jpeg"
+                src="https://video.tv.adobe.com/v/3477329?captions=fre_fr&format=jpeg"
                 alt="Vue d’ensemble de l’éditeur">
             </a>
           </figure>
@@ -133,7 +133,7 @@ Consultez la section [Documentation](https://experienceleague.adobe.com/docs/exp
             <a href="./editor/new-editor-toggle.md" title="Nouveau bouton (bascule) d’éditeur"
               tabindex="-1">
               <img class="is-bordered-r-small"
-                src="https://video.tv.adobe.com/v/3419312?format=jpeg" alt="Nouveau bouton (bascule) d’éditeur">
+                src="https://video.tv.adobe.com/v/3477318?captions=fre_fr&format=jpeg" alt="Nouveau bouton (bascule) d’éditeur">
             </a>
           </figure>
         </div>

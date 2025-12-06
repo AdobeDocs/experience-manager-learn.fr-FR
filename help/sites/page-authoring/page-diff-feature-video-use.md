@@ -41,7 +41,7 @@ Les fonctionnalités de différence de page d’AEM Sites affichent une vue rap
 
 ## Comparer des pages de lancement {#comparing-launch-pages}
 
->[!VIDEO](https://video.tv.adobe.com/v/17746?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477340?captions=fre_fr&quality=12&learn=on)
 
 La fonction Différence de page peut également être utilisée pour identifier des différences entre les plans directeurs et les Live Copies, ainsi qu’entre les plans directeurs et les copies de langue.
 

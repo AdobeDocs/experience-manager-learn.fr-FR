@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Découvrez comment le nouveau bouton (bascule) de changement d’éditeur vous permet de passer en toute simplicité du nouvel éditeur de fragments de contenu par défaut à l’éditeur classique.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419312/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3477318/?captions=fre_fr&learn=on)
