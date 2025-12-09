@@ -12,10 +12,10 @@ last-substantial-update: 2023-01-12T00:00:00Z
 doc-type: Tutorial
 exl-id: e2922278-4d0b-4f28-a999-90551ed65fb4
 duration: 881
-source-git-commit: bb4f9982263a15f18b9f39b1577b61310dfbe643
-workflow-type: ht
-source-wordcount: '1963'
-ht-degree: 100%
+source-git-commit: dc29a4b7857ee8d1405c9ef8d14f09374c2bfd01
+workflow-type: tm+mt
+source-wordcount: '1962'
+ht-degree: 98%
 
 ---
 
@@ -25,15 +25,15 @@ Les intégrations à Adobe Experience Manager (AEM) as a Cloud Service do
 
 AEM s’intègre à d’autres produits Adobe à l’aide de [S2S OAuth géré via Adobe Developer Console](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service). Pour les intégrations personnalisées avec des comptes de service, les informations d’identification JWT sont utilisées et gérées dans AEM Developer Console.
 
->[!VIDEO](https://video.tv.adobe.com/v/342221?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/330519?quality=12&learn=on)
 
 Bien que les informations d’identification de service puissent apparaître similaires aux [jetons d’accès au développement local](./local-development-access-token.md), elles sont différentes de plusieurs manières importantes :
 
 + Les informations d’identification de service sont associées aux comptes techniques. Plusieurs informations d’identification de service peuvent être actives pour un seul et même compte technique.
 + Les informations d’identification de service _ne sont pas_ des jetons d’accès, mais plutôt des informations d’identification utilisées pour _obtenir_ des jetons d’accès.
 + Les informations d’identification de service sont plus permanentes (leur certificat expire tous les 365 jours) et ne changent pas à moins d’être révoquées, tandis que les jetons d’accès au développement local expirent tous les jours.
-+ Les informations d’identification de service pour un environnement AEM as a Cloud Service sont mappées à une personne utilisatrice de compte technique AEM unique, tandis que les jetons d’accès au développement local s’authentifient en tant que personne utilisatrice ayant généré le jeton d’accès.
-+ Un environnement AEM as a Cloud Service peut comporter jusqu’à dix comptes techniques, chacun disposant de ses propres informations d’identification de service, chacun étant associé à une personne utilisatrice de compte technique AEM distincte.
++ Les informations d’identification de service pour un environnement AEM as a Cloud Service sont mappées à une personne qui utilise un compte technique AEM unique, tandis que les jetons d’accès au développement local s’authentifient en tant qu’utilisateur ou utilisatrice AEM ayant généré le jeton d’accès.
++ Un environnement AEM as a Cloud Service peut comporter jusqu’à dix comptes techniques, chacun disposant de ses propres informations d’identification de service, chacun étant associé à une personne utilisant un compte technique AEM distinct.
 
 Les informations d’identification de service et les jetons d’accès qu’elles génèrent, ainsi que les jetons d’accès au développement local, doivent être gardés secrets. En effet, les trois peuvent être utilisés pour obtenir l’accès à leur environnement AEM as a Cloud Service respectif.
 
@@ -65,7 +65,7 @@ Les comptes techniques sont créés une seule fois, mais les clés privées util
 
 ![AEM Developer Console - Intégrations - Obtention des informations d’identification de service.](./assets/service-credentials/developer-console.png)
 
-Une fois les informations d’identification de service de l’environnement AEM as a Cloud Service initialisées, d’autres personnes développeuses d’AEM de votre organisation Adobe IMS peuvent les télécharger.
+Une fois les informations d’identification de service de l’environnement AEM as a Cloud Service initialisées, d’autres développeurs et développeuses AEM de votre organisation Adobe IMS peuvent les télécharger.
 
 ### Télécharger les informations d’identification de service
 
@@ -124,7 +124,7 @@ Pour accéder à AEM as a Cloud Service à l’aide des informations d’ide
 
 + Lorsque les informations d’identification de service sont présentes, l’application externe utilise ce jeton d’accès au lieu du jeton d’accès au développement local lors de l’accès à AEM as a Cloud Service.
 
-Dans ce tutoriel, le module npm `@adobe/jwt-auth` d’Adobe est utilisé pour 1), générer le jeton JWT à partir des informations d’identification de service et 2), l’échanger contre un jeton d’accès, dans un seul appel de fonction. Si votre application n’est pas basée sur JavaScript, consultez l’[exemple de code dans d’autres langages](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/samples/) pour savoir comment créer un jeton JWT à partir des informations d’identification de service et l’échanger contre un jeton d’accès avec Adobe IMS.
+Dans ce tutoriel, le module npm `@adobe/jwt-auth` d’Adobe est utilisé pour 1), générer le jeton JWT à partir des informations d’identification de service et 2), l’échanger contre un jeton d’accès, dans un seul appel de fonction. Si votre application n’est pas basée sur JavaScript, vous pouvez développer du code personnalisé dans la langue de votre choix qui crée le jeton JWT à partir des informations d’identification de service et l’échange contre un jeton d’accès avec Adobe IMS.
 
 ## Lire les informations d’identification de service
 
@@ -213,7 +213,7 @@ Cet exemple d’application est basé sur Node.js. Il est donc préférable d’
 
 ## Configurer l’accès dans AEM
 
-Le jeton d’accès dérivé des informations d’identification du service utilise un profil d’utilisation de compte technique AEM membre du groupe d’utilisateurs __Contributeurs__ d’AEM.
+Le jeton d’accès dérivé des informations d’identification du service utilise un profil d’utilisation de compte technique AEM membre du groupe d’utilisateurs ou d’utilisatrices __Contributeurs__ d’AEM.
 
 ![Informations d’identification du service - Profil d’utilisation de compte technique AEM.](./assets/service-credentials/technical-account-user.png)
 
