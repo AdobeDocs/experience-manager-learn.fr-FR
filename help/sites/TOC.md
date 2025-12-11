@@ -6,10 +6,10 @@ feature-set: Experience Manager Sites, Experience Manager
 solution: Experience Manager, Experience Manager Sites
 sub-product: Experience Manager Sites
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
-source-git-commit: e5a1ab5fcc5314bddfbc4ad900127804bc019009
+source-git-commit: 6acf7f1d5c91b29a64b372b678f04b7cb880039b
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 99%
+source-wordcount: '566'
+ht-degree: 98%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 99%
 + Fragments d’expérience {#experience-fragments}
    + [Utiliser des fragments d’expérience](experience-fragments/experience-fragments-feature-video-use.md)
    + [Créer des blocs](experience-fragments/building-blocks.md)
-   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr){target=_blank}
+   + [Fragments de contenu par rapport aux fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html){target=_blank}
 + Edge Delivery Services{#edge-delivery-services}
    + [Vue d’ensemble](./edge-delivery-services/overview.md)
    + Développement{#developing}
@@ -98,6 +98,7 @@ ht-degree: 99%
       + [Structure du document](edge-delivery-services/developing/document-structure.md)
       + [Développement local](edge-delivery-services/developing/local-development.md)
       + [Git](edge-delivery-services/developing/git.md)
+      + [Pipeline de configuration](edge-delivery-services/developing/cloud-manager-configuration-pipeline.md)
       + Éditeur universel {#universal-editor}
          + [Vue d’ensemble](./edge-delivery-services/developing/universal-editor/0-overview.md)
          + [Nouveau code de projet](./edge-delivery-services/developing/universal-editor/1-new-code-project.md)
@@ -171,7 +172,7 @@ ht-degree: 99%
       + [Générer des FPID](integrations/platform/fpid.md)
       + [SDK web](integrations/platform/web-sdk.md)
       + [Analyse à l’aide du SDK web Platform](integrations/platform/analytics-using-web-sdk.md)
-      + [Adobe Target](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [Adobe Target](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
    + Balises dans Adobe Experience Platform {#experience-platform-data-collection-tags}
       + [Vue d’ensemble](integrations/experience-platform/data-collection/tags/overview.md)
       + [Créer une propriété de balise](integrations/experience-platform/data-collection/tags/create-tag-property.md)
@@ -186,9 +187,9 @@ ht-degree: 99%
       + [Suivre les éléments cliqués avec Adobe Analytics](integrations/analytics/track-clicked-component.md)
       + [Analyser des données avec Analysis Workspace](integrations/analytics/create-analytics-workspace.md)
    + Adobe Target {#target}
-      + [Vue d’ensemble](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/personalization/overview)
-      + [Configuration](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
-      + [Cas d’utilisation](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
+      + [Vue d’ensemble](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview)
+      + [Configuration](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-tags)
+      + [Cas d’utilisation](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
 + Apprendre de vos paires et pairs {#expert-resources}
    + [Vue d’ensemble](expert-resources/learn-from-your-peers-overview.md)
    + [Créer un guide de création dans AEM Sites](expert-resources/authoring-guide-in-sites.md)
