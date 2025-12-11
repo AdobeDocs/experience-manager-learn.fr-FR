@@ -24,4 +24,4 @@ Découvrez comment créer et exécuter un pipeline de configuration Edge Deliver
 
 >[!VIDEO](https://video.tv.adobe.com/v/3458975/?learn=on&enablevpops)
 
-Consultez la [documentation du pipeline de configuration d’Edge Delivery](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline#yamls-for-eds) pour un aperçu complet des options et des formats de configuration.
+Consultez la [documentation du pipeline de configuration d’Edge Delivery](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/config-pipeline#yamls-for-eds) pour un aperçu complet des options et des formats de configuration.
