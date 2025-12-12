@@ -214,7 +214,7 @@ Suivons les étapes de configuration de l’instance AEM pour activer la communi
 
    ![Déploiement YAML](./assets/setup/config-pipeline.png)
 
-Notez que le fichier `api.yaml` peut également être installé dans un [RDE](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/overview), [à l’aide de l’outil de ligne de commande](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Cela s’avère utile pour tester les modifications de configuration avant de les déployer dans l’environnement de production.
+Notez que le fichier `api.yaml` peut également être installé dans un [RDE](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/overview), [à l’aide de l’outil de ligne de commande](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Cela s’avère utile pour tester les modifications de configuration avant de les déployer dans l’environnement de production.
 
 ## Étapes suivantes
 
