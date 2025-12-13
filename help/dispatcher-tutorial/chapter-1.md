@@ -106,7 +106,7 @@ En principe, si tous les fichiers sont mis en cache et donc stockés de manière
 
 Pour comprendre plus en détail le Dispatcher, examinons la structure d’un simple exemple d’URL.  Prenons l’exemple ci-dessous :
 
-`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&amp;otherparameter=value#fragment`
+`http://domain.com/path/to/resource/pagename.selectors.html/path/suffix.ext?parameter=value&otherparameter=value#fragment`
 
 * `http` indique le protocole.
 
