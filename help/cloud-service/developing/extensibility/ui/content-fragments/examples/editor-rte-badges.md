@@ -12,8 +12,8 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 83acbddb-9168-4d8b-84b5-97577d8a1ead
 duration: 538
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 100%
 
@@ -44,7 +44,7 @@ Pour simplifier les choses, cet exemple utilise le framework [Adobe React Spec
 Cet exemple s’étend jusqu’au point d’extension `rte` pour ajouter un badge au RTE dans l’éditeur de fragment de contenu.
 
 | Interface utilisateur AEM étendue | Points d’extension |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Éditeur de fragments de contenu](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Badges de l’éditeur de texte enrichi](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-badges/) et [Widgets de l’éditeur de texte enrichi](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
 ## Exemple d’extension
@@ -144,7 +144,7 @@ Lors de l’ajout des informations du service clientèle, le code du composant R
 Voici les principaux points forts du code `LargeBookingsCustomerService` :
 
 + L’interface utilisateur est rendue à l’aide des composants React Spectrum, tels que [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html) et [Button](https://react-spectrum.adobe.com/react-spectrum/Button.html).
-+ Le tableau `largeGroupCustomerServiceList` a un mappage codé en dur du nom du représentant ou de la représentante et du numéro de téléphone. Dans un scénario réel, ces données peuvent être récupérées à partir de l’action Adobe AppBuilder ou de systèmes externes, ou de la passerelle API locale ou basée sur le fournisseur cloud.
++ Le tableau `largeGroupCustomerServiceList` a un mappage codé en dur du nom du représentant ou de la représentante et du numéro de téléphone. Dans un scénario réel, ces données peuvent être récupérées à partir de l’action Adobe AppBuilder ou de systèmes externes, ou de la passerelle API locale ou basée sur le fournisseur de services cloud.
 + La fonction `guestConnection` est initialisée à l’aide du `useEffect` [hook React](https://react.dev/reference/react/useEffect) et gérée en tant que statut du composant. Elle est utilisé pour communiquer avec l’hôte AEM.
 + La fonction `handleCustomerServiceChange` obtient le nom du représentant ou de la représentante et le numéro de téléphone, puis met à jour les variables de statut du composant.
 + La fonction `addCustomerServiceDetails` utilisant l’objet `guestConnection` fournit des instructions d’exécution de l’éditeur de texte enrichi. Dans ce cas, l’instruction `insertContent` et l’extrait de code HTML.

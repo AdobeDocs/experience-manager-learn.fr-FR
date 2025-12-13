@@ -4,17 +4,17 @@ description: Découvrez comment configurer l’authentification SAML 2.0 sur le
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9351
 thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '4233'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -48,7 +48,7 @@ Le flux type d’une intégration SAML de publication AEM est le suivant :
 1. Le service de publication AEM gère l’enregistrement de l’utilisateur ou de l’utilisatrice AEM en fonction de la configuration OSGi SAML 2.0 et du contenu de l’assertion SAML.
    + Crée un utilisateur ou une utilisatrice
    + Synchronise les attributs utilisateur
-   + Met à jour l’appartenance à un groupe d’utilisateurs AEM
+   + Met à jour l’appartenance à un groupe d’utilisateurs ou d’utilisatrices AEM
 1. Le service de publication AEM définit le cookie `login-token` AEM sur la réponse HTTP, qui est utilisée pour authentifier les requêtes suivantes vers le service de publication AEM.
 1. Le service de publication AEM redirige l’utilisateur ou utilisatrice vers l’URL sur l’instance de publication AEM, comme indiqué par le cookie `saml_request_path`.
 
@@ -56,7 +56,7 @@ Le flux type d’une intégration SAML de publication AEM est le suivant :
 
 ## Présentation de la configuration
 
->[!VIDEO](https://video.tv.adobe.com/v/3455331?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
 
 Cette vidéo décrit comment configurer l’intégration SAML 2.0 au service de publication AEM as a Cloud Service et utiliser Okta comme fournisseur d’identité.
 
@@ -141,7 +141,7 @@ _La création d’un KeyStore pour le service d’authentification est requise l
 1. Sélectionnez __Enregistrer et fermer__.
 1. Créez un package contenant l’utilisateur ou l’utilisatrice de l’__authentication-service__ mis à jour.
 
-   _Utilisez la solution de contournement temporaire suivante à l’aide de packages :_
+   _Utilisez la solution temporaire suivante à l&#39;aide de packages :_
 
    1. Accédez à __Outils > Déploiement > Packages__.
    1. Créez un package.
@@ -228,7 +228,7 @@ La signature de la requête AuthnRequest et le chiffrement de l’assertion SAML
 1. Sélectionnez __Enregistrer et fermer__.
 1. Créez un package contenant l’utilisateur ou l’utilisatrice de l’__authentication-service__ mis à jour.
 
-   _Utilisez la solution de contournement temporaire suivante à l’aide de packages :_
+   _Utilisez la solution temporaire suivante à l&#39;aide de packages :_
 
    1. Accédez à __Outils > Déploiement > Packages__.
    1. Créez un package.
@@ -335,7 +335,7 @@ Les configurations OSGi par environnement (`config.publish.dev`, `config.publish
 
 Lors du [chiffrement de l’assertion SAML et de la requête AuthnRequest](#encrypting-the-authnrequest-and-saml-assertion), les propriétés suivantes sont requises : `useEncryption`, `spPrivateKeyAlias`, et `keyStorePassword`. Le `keyStorePassword` contient un mot de passe. Par conséquent, la valeur ne doit pas être stockée dans le fichier de configuration OSGi, mais plutôt injectée à l’aide des [valeurs de configuration secrètes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=fr#secret-configuration-values).
 
-+++Vous pouvez éventuellement mettre à jour la configuration OSGi pour utiliser le chiffrement.
++++Vous pouvez éventuellement mettre à jour la configuration OSGi pour utiliser le chiffrement
 
 1. Ouvrez `/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.json` dans votre IDE.
 1. Ajoutez les trois propriétés `useEncryption`, `spPrivateKeyAlias`, et `keyStorePassword` comme illustré ci-dessous.

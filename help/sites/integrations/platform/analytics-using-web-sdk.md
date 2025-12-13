@@ -4,7 +4,7 @@ description: Intégrez AEM Sites et Adobe Analytics à l’aide de l’approch
 version: Experience Manager as a Cloud Service
 feature: Integrations
 topic: Integrations, Architecture
-role: Admin, Architect, Data Architect, Developer
+role: Admin, Developer
 level: Beginner, Intermediate
 doc-type: Tutorial
 last-substantial-update: 2023-05-25T00:00:00Z
@@ -14,8 +14,8 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service, AEM Sites 6.5" before-title="false"
 exl-id: 0cc3d3bc-e4ea-4ab2-8878-adbcf0c914f5
 duration: 2252
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Découvrez l’**approche moderne** de l’intégration d’Adobe Experience M
 
 L’obtention d’informations sur le comportement des utilisateurs et utilisatrices est un objectif essentiel pour chaque équipe marketing. En comprenant comment les utilisateurs et utilisatrices interagissent avec leur contenu, les équipes peuvent prendre des décisions éclairées, optimiser des stratégies et générer de meilleurs résultats. L’équipe marketing WKND, une entité fictive, a défini ses objectifs en implémentant Adobe Analytics sur son site web pour atteindre cet objectif. L’objectif principal est de collecter des données sur deux mesures clés : pages vues et clics CTA sur la page d’accueil.
 
-En suivant les pages vues, l’équipe peut analyser les pages qui reçoivent le plus d’attention de la part des utilisateurs et utilisatrices. En outre, le suivi des clics CTA sur la page d’accueil fournit des informations précieuses sur l’efficacité des éléments d’appel à l’action de l’équipe. Ces données peuvent révéler les CTA qui intéressent les utilisateurs et utilisatrices, ceux qui doivent être ajustés, et potentiellement découvrir de nouvelles opportunités pour améliorer l’interaction client et générer des conversions.
+En suivant les pages vues, l’équipe peut analyser les pages qui reçoivent le plus d’attention de la part des utilisateurs et utilisatrices. En outre, le suivi des clics CTA sur la page d’accueil fournit des informations précieuses sur l’efficacité des éléments d’appel à l’action de l’équipe. Ces données peuvent révéler les CTA qui intéressent les utilisateurs et utilisatrices, ceux qui doivent être ajustés, et potentiellement découvrir de nouvelles opportunités pour améliorer l’engagement client et générer des conversions.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419872?quality=12&learn=on)

@@ -4,15 +4,15 @@ description: Découvrez les différents points à prendre en compte pour le dép
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10794
 thumbnail: kt-10794.jpg
 last-substantial-update: 2022-08-26T00:00:00Z
 exl-id: 6de58ca0-9444-4272-9487-15a9e3c89231
 duration: 59
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Avant d’explorer les points à prendre en compte pour le déploiement, il est 
 
 + Le service de __Création AEM__ permet aux équipes de créer, collaborer et publier des fragments de contenu (et d’autres ressources).
 + Le service de __Publication AEM__ permet aux fragments de contenu publiés (et aux autres ressources) d’être répliqués pour la consommation générale.
-+ Le service de __Prévisualisation AEM__ imite le service de Publication AEM sur le plan du comportement, mais son contenu est publié à des fins de prévisualisation ou de révision. Le service de Prévisualisation AEM est destiné à un public interne, et non à la diffusion générale de contenu. L’utilisation du service de Prévisualisation AEM est facultative, et dépend du workflow souhaité.
++ Le service de __Prévisualisation AEM__ imite le service de Publication AEM sur le plan du comportement, mais son contenu est publié à des fins de prévisualisation ou de révision. Le service de Prévisualisation AEM est destiné à une audience interne, et non à la diffusion générale de contenu. L’utilisation du service de Prévisualisation AEM est facultative, et dépend du workflow souhaité.
 
 ![Architecture de service AEM.](./assets/overview/aem-service-architecture.png)
 

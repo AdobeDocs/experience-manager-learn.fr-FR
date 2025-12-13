@@ -8,8 +8,8 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 15121896-9196-4ce0-aff2-9178563326b4
 duration: 253
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 100%
 
@@ -77,12 +77,12 @@ Il s’agit d’un système très simple, et approprié si vous avez des besoins
 | AA123 | Vues alternatives | AA123_1.tif AA123_2.tif AA123_3.tif | AA123_1 AA123_2 AA123_3 |
 |         | Vues colorées | AA123_BLU.tif AA123_RED.tif AA123_BROWN.tif | AA123_BLU AA123_RED AA123_BROWN |
 |         | Nuanciers | AA123_BLU_SW.tif | AA123_BLU_SW |
-|         | Visionneuse d’images ou de nuanciers |                                             | AA123 ou AA123_SET | -- |
+|         | Ensembles d’images ou nuanciers |                                             | AA123 ou AA123_SET |
 
-Lorsque vous travaillez avec des collections de visionneuses, telles que les visionneuses d’images et de nuanciers, la visionneuse elle-même doit également porter un nom unique. Ainsi, dans ce cas, la visionneuse peut se voir attribuer le SKU de base comme nom, ou le SKU avec une extension « _SET ».
+Lorsque vous travaillez avec des collections de visionneuses, telles que les ensembles d’images et des nuanciers, la visionneuse proprement dite doit également porter un nom unique. Ainsi, dans ce cas, la visionneuse peut se voir attribuer le SKU de base comme nom, ou le SKU avec une extension « _SET ».
 
 ### Convention de nommage et automatisation
 
-Un dernier mot sur l’importance de la convention de nommage. Si vous souhaitez utiliser des visionneuses (telles que des visionneuses d’images ou de nuanciers), une convention de nommage prévisible vous permet d’automatiser leur création. Toute méthode par script, telle qu’un paramètre prédéfini de visionneuses par lots, dont vous allez découvrir les détails dans une autre section de ce tutoriel, peut s’appuyer sur une convention de nommage.
+Un dernier mot sur l’importance de la convention de nommage. Si vous souhaitez utiliser des visionneuses (telles que des ensembles d’images ou des nuanciers), une convention de nommage prévisible vous permet d’automatiser leur création. Toute méthode par script, telle qu’un paramètre prédéfini de visionneuses par lots, dont vous allez découvrir les détails dans une autre section de ce tutoriel, peut s’appuyer sur une convention de nommage.
 
-L’autre méthode consiste à créer manuellement vos visionneuses. Bien que la création manuelle de visionneuses d’images pour 200 images ne soit pas une tâche gigantesque, imaginez que vous ayez plus de 100 000 images. L’automatisation de la création des visionneuses devient alors cruciale.
+L’autre méthode consiste à créer manuellement vos visionneuses. Bien que la création manuelle d’ensembles d’images pour 200 images ne soit pas une tâche gigantesque, imaginez que vous ayez plus de 100 000 images. L’automatisation de la création des visionneuses devient alors cruciale.

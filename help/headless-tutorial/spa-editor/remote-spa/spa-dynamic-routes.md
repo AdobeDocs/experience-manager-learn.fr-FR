@@ -3,7 +3,7 @@ title: Ajouter des composants modifiables à des itinéraires dynamiques de SPA 
 description: Découvrez comment ajouter des composants modifiables aux itinéraires dynamiques dans une SPA distante.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7636
 thumbnail: kt-7636.jpeg
@@ -13,10 +13,10 @@ doc-type: Tutorial
 exl-id: 4accc1ca-6f4b-449e-bf2e-06f19d2fe17d
 duration: 202
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: ht
-source-wordcount: '903'
-ht-degree: 100%
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
+source-wordcount: '902'
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ L’itinéraire de la SPA des détails de l’Adventure est défini sur `/advent
 
 Dans les deux chapitres précédents, nous avons mappé le contenu de composant modifiable de l’affichage d’accueil de la SPA à la page racine de la SPA distante correspondante dans AEM sous `/content/wknd-app/us/en/`.
 
-La définition du mappage pour les composants modifiables pour les itinéraires dynamiques de la SPA est similaire. Toutefois, nous devons établir un schéma de mappage 1:1 entre les instances de l’itinéraire et les pages AEM.
+La définition du mappage pour les composants modifiables pour les itinéraires dynamiques de la SPA est similaire, mais nous devons établir un schéma de mappage 1:1 entre les instances de l’itinéraire et les pages AEM.
 
 Dans ce tutoriel, nous prenons le nom du fragment de contenu WKND Adventure, qui est le dernier segment du chemin d’accès, et nous le mappons à un chemin d’accès simple sous `/content/wknd-app/us/en/adventure`.
 
@@ -166,7 +166,7 @@ Avec le `<ResponsiveGrid...>` en place et son `pagePath` défini dynamiquement e
    ![Création de détails sur l’Adventure à Bali.](./assets/spa-dynamic-routes/adventure-detail-edit.png)
 
 1. __Prévisualiser__ vos modifications dans l’éditeur de page d’AEM
-1. Actualisez l’application WKND s’exécutant localement sur [http://localhost:3000](http://localhost:3000), accédez à l’itinéraire de __Bali Surf Camp__ pour afficher les modifications créées.
+1. Actualisez l’application WKND s’exécutant localement sur [http://localhost:3000](http://localhost:3000), accédez à l’itinéraire __Bali Surf Camp__ pour afficher les modifications créées.
 
    ![SPA distante Bali.](./assets/spa-dynamic-routes/remote-spa-final.png)
 

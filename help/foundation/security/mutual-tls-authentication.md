@@ -4,7 +4,7 @@ description: Découvrez comment effectuer des appels HTTPS à partir d’AEM ver
 feature: Security
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Experienced
 jira: KT-13881
 thumbnail: KT-13881.png
@@ -12,8 +12,8 @@ doc-type: Article
 last-substantial-update: 2023-10-10T00:00:00Z
 exl-id: 7238f091-4101-40b5-81d9-87b4d57ccdb2
 duration: 495
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Découvrez comment effectuer des appels HTTPS à partir d’AEM vers les API web qui nécessitent une authentification Transport Layer Security mutuelle (mTLS).
 
->[!VIDEO](https://video.tv.adobe.com/v/3447861?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3424855?quality=12&learn=on)
 
 L’authentification mTLS ou TLS bidirectionnelle renforce la sécurité du protocole TLS en exigeant une **authentification mutuelle entre le client ou la cliente et le serveur**. Cette authentification est effectuée à l’aide de certificats numériques. Elle est généralement utilisée dans les cas où une sécurité renforcée et une vérification de l’identité sont essentielles.
 

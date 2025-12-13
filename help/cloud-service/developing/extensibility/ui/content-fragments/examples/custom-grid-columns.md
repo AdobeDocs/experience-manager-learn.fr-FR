@@ -12,8 +12,8 @@ doc-type: article
 last-substantial-update: 2023-06-07T00:00:00Z
 exl-id: 87143cf9-e932-4ad6-afe2-cce093c520f4
 duration: 198
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 100%
 
@@ -23,14 +23,14 @@ ht-degree: 100%
 
 ![Colonne de grille personnalisée de la console de fragments de contenu.](./assets/custom-grid-columns/hero.png){align="center"}
 
-Vous pouvez ajouter des colonnes de grille personnalisées à la console de fragments de contenu à l’aide du point d’extension `contentFragmentGrid`. Cet exemple montre comment ajouter, dans un format lisible, une colonne personnalisée qui affiche l’âge des fragments de contenu en fonction de sa date de dernière modification.
+Vous pouvez ajouter des colonnes de grille personnalisées à la console de fragments de contenu à l’aide du point d’extension `contentFragmentGrid`. Cet exemple montre comment ajouter, dans un format lisible, une colonne personnalisée qui affiche l’âge des fragments de contenu en fonction de la date de dernière modification.
 
 ## Point d’extension
 
 Cet exemple s’étend jusqu’au point d’extension `contentFragmentGrid` pour ajouter une colonne personnalisée à la console de fragments de contenu.
 
 | Interface utilisateur AEM étendue | Point d’extension |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Console Fragments de contenu](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Colonnes de grille](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/grid-columns/) |
 
 ## Exemple d’extension
@@ -208,7 +208,7 @@ Si d’autres données sont requises pour remplir la colonne personnalisée, des
 
 >[!IMPORTANT]
 >
-> Assurez-vous que l’instance de creation AEM est configurée pour autoriser les [demandes entre origines multiples](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=fr) à partir des origines de l’application AppBuilder en cours d’exécution. Les origines autorisées incluent `https://localhost:9080`, l’origine de l’évaluation AppBuilder et l’origine de production AppBuilder.
+> Assurez-vous que l’instance de création AEM est configurée pour autoriser les [demandes entre origines multiples](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors.html?lang=fr) à partir des origines de l’application AppBuilder en cours d’exécution. Les origines autorisées incluent `https://localhost:9080`, l’origine de l’évaluation AppBuilder et l’origine de production AppBuilder.
 >
 > L’extension peut également appeler une [action AppBuilder](../../runtime-action.md) personnalisée qui envoie la requête à l’instance de création AEM au nom de l’extension.
 

@@ -10,8 +10,8 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: 69b4e469-52cc-441b-b6e5-2fe7ef18da90
 duration: 247
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ Nous allons décrire le rôle et l’importance de chaque élément.
 
 Pour indiquer si AEM fonctionne, vous devez procéder à une compilation de page de base et diffuser la page.  Adobe Managed Services a créé un package de base contenant la page de test.  La page teste que le référentiel est opérationnel et que les ressources et le modèle de page peuvent être rendus.
 
-![L’image montre le package AMS dans le gestionnaire de packages CRX ](assets/load-balancer-healthcheck/health-check-package.png "healt-check-package").
+![L’image montre le package AMS dans le gestionnaire de modules CRX ](assets/load-balancer-healthcheck/health-check-package.png "healt-check-package").
 
 Voici la page.  Elle affiche l’ID du référentiel de l’installation.
 
@@ -87,7 +87,7 @@ Il s’agit du fichier de configuration Apache `<VirtualHost>` qui permet l’ex
 ```
 Listen 81
 <VirtualHost *:81>
-    ServerName	"health"
+    ServerName "health"
     ...SNIP...
     ScriptAlias /health/ "/var/www/cgi-bin/health/"
 </VirtualHost>
@@ -128,6 +128,7 @@ RELOAD_MODE='author'
 ```
 
 Options valides :
+
 - Création
    - Il s’agit de l’option par défaut.
    - Cela affiche une page de maintenance à l’auteur ou l’autrice si il n’est pas saine ou elle n’est pas saine.
@@ -142,27 +143,27 @@ Lorsque vous observez le paramètre `VirtualHost` pour ces options, il charge le
 
 ```
 <VirtualHost *:80>
-	ServerName	unhealthyauthor
-	ServerAlias	${AUTHOR_DEFAULT_HOSTNAME}
-	ErrorDocument	503 /error.html
-	DocumentRoot	/mnt/var/www/default
-	<Directory />
-		Options FollowSymLinks
-		AllowOverride None
-	</Directory>
-	<Directory "/mnt/var/www/default">
-		AllowOverride None
-		Require all granted
-	</Directory>
-	<IfModule mod_headers.c>
-		Header always add X-Dispatcher ${DISP_ID}
-		Header always add X-Vhost "unhealthy-author"
-	</IfModule>
-	<IfModule mod_rewrite.c>
-		ReWriteEngine   on
-		RewriteCond %{REQUEST_URI} !^/error.html$
-		RewriteRule ^/* /error.html [R=503,L,NC]
-	</IfModule>
+    ServerName    unhealthyauthor
+    ServerAlias    ${AUTHOR_DEFAULT_HOSTNAME}
+    ErrorDocument    503 /error.html
+    DocumentRoot    /mnt/var/www/default
+    <Directory />
+        Options FollowSymLinks
+        AllowOverride None
+    </Directory>
+    <Directory "/mnt/var/www/default">
+        AllowOverride None
+        Require all granted
+    </Directory>
+    <IfModule mod_headers.c>
+        Header always add X-Dispatcher ${DISP_ID}
+        Header always add X-Vhost "unhealthy-author"
+    </IfModule>
+    <IfModule mod_rewrite.c>
+        ReWriteEngine   on
+        RewriteCond %{REQUEST_URI} !^/error.html$
+        RewriteRule ^/* /error.html [R=503,L,NC]
+    </IfModule>
 </VirtualHost>
 ```
 

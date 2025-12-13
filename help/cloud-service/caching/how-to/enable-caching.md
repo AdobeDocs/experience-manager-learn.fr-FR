@@ -4,7 +4,7 @@ description: Découvrez comment activer la mise en cache des réponses HTTP dans
 version: Experience Manager as a Cloud Service
 feature: Operations, CDN Cache
 topic: Administration, Performance
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2023-11-17T00:00:00Z
@@ -12,8 +12,8 @@ jira: KT-14224
 thumbnail: KT-14224.jpeg
 exl-id: 544c3230-6eb6-4f06-a63c-f56d65c0ff4b
 duration: 174
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 100%
 
@@ -99,7 +99,7 @@ Pour augmenter la durée de vie du navigateur web et du cache du réseau CDN du 
    ```
 
    Les fichiers vhost dans le répertoire `dispatcher/src/conf.d/enabled_vhosts` sont des **liens symboliques** vers des fichiers dans le répertoire `dispatcher/src/conf.d/available_vhosts`, veillez donc à créer des liens symboliques s’ils ne sont pas présents.
-1. Déployez les modifications vhost dans l’environnement AEM as a Cloud Service souhaité à l’aide de [Cloud Manager – Pipeline de configuration de niveau web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=fr#web-tier-config-pipelines) ou des [commandes du RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=fr#deploy-apache-or-dispatcher-configuration).
+1. Déployez les modifications vhost dans l’environnement AEM as a Cloud Service souhaité à l’aide de [Cloud Manager – Pipeline de configuration de niveau web](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/introduction-ci-cd-pipelines.html?lang=fr#web-tier-config-pipelines) ou des [Commandes du RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use.html?lang=fr#deploy-apache-or-dispatcher-configuration).
 
 Cependant, pour avoir des valeurs différentes pour la durée de vie du navigateur web et du cache du réseau CDN, vous pouvez utiliser l’en-tête `Surrogate-Control` dans l’exemple ci-dessus. De même, pour que le cache arrive à expiration à une date et une heure spécifiques, vous pouvez utiliser l’en-tête `Expires`. En outre, à l’aide des attributs `stale-while-revalidate` et `stale-if-error`, vous pouvez contrôler le traitement de l’état obsolète du contenu de la réponse. Le projet AEM WKND comporte une configuration du cache du réseau CDN de [traitement de l’état obsolète de référence](https://github.com/adobe/aem-guides-wknd/blob/main/dispatcher/src/conf.d/available_vhosts/wknd.vhost#L150-L155).
 

@@ -4,7 +4,7 @@ description: Découvrez les différentes options dédiées à la redirection des
 version: Experience Manager 6.4, Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Development, Administration
 feature: Operations, Dispatcher
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-11466
 last-substantial-update: 2024-10-22T00:00:00Z
@@ -12,8 +12,8 @@ index: y
 doc-type: Article
 exl-id: 8e64f251-e5fd-4add-880e-9d54f8e501a6
 duration: 164
-source-git-commit: 62887c6251b09ac22664cfeb9c5513363efb555e
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 100%
 

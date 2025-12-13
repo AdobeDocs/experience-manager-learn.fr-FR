@@ -2,7 +2,7 @@
 title: Avertissements transversaux dans AEM as a Cloud Service
 description: Découvrez comment atténuer les avertissements transversaux dans AEM as a Cloud Service.
 feature: Migration
-role: Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-10427
 hidefromtoc: true
@@ -11,30 +11,30 @@ index: false
 thumbnail: kt-10427.jpg
 exl-id: 8fcc9364-b84c-4458-82e2-66b47429cd4b
 duration: 155
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
-# Avertissements transversaux
+# Avertissements de traversée
 
 >[!TIP]
 >Mettez un signet sur cette page pour vous en servir ultérieurement.
 
-_Que sont les avertissements transversaux ?_
+_Que sont les avertissements de traversée ?_
 
-Les avertissements transversaux sont des instructions de journal __aemerror__ indiquant que des requêtes peu performantes sont exécutées sur le service de publication AEM. Les avertissements transversaux se manifestent généralement de deux façons dans AEM :
+Les avertissements de traversée sont des instructions de journal __aemerror__ indiquant que des requêtes peu performantes sont exécutées sur le service de publication AEM. Les avertissements de traversée se manifestent généralement de deux façons dans AEM :
 
 1. Des __requêtes lentes__ qui n’utilisent pas d’index, ce qui entraîne des temps de réponse lents.
 1. Des __requêtes en échec__ qui lance une `RuntimeNodeTraversalException`, ce qui entraîne une interruption de l’expérience.
 
-La non vérification des avertissements transversaux ralentit les performances d’AEM et peut entraîner des interruptions d’expériences pour vos utilisateurs et utilisatrices.
+L’absence de vérification des avertissements de traversée ralentit les performances d’AEM et peut entraîner des interruptions d’expériences pour vos utilisateurs et utilisatrices.
 
-## Comment résoudre les avertissements transversaux
+## Comment résoudre les avertissements de traversée
 
-Il est possible d’aborder la limitation des avertissements transversaux en trois étapes simples : analyser, ajuster et vérifier. Attendez-vous à plusieurs itérations d’ajustement et de vérification avant d’identifier les réglages optimaux.
+Il est possible d’aborder la limitation des avertissements de traversée en trois étapes simples : analyser, ajuster et vérifier. Attendez-vous à plusieurs itérations d’ajustement et de vérification avant d’identifier les réglages optimaux.
 
 <div class="columns is-multiline">
 
@@ -73,7 +73,7 @@ Il est possible d’aborder la limitation des avertissements transversaux en tro
        <div class="card-content is-padded-small">
            <div class="content">
                 <p class="headline is-size-5 has-text-weight-bold">Ajuster le code ou la configuration</p>
-               <p class="is-size-6">Mettez à jour les requêtes et les index pour éviter que les requêtes soient transversales.</p>
+               <p class="is-size-6">Mettez à jour les requêtes et les index pour éviter les traversées de requêtes.</p>
                <a href="#adjust" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Ajuster</span>
 </a>
@@ -95,7 +95,7 @@ Il est possible d’aborder la limitation des avertissements transversaux en tro
        <div class="card-content is-padded-small">
            <div class="content">
                 <p class="headline is-size-5 has-text-weight-bold">Vérifier que les ajustements fonctionnent</p>                       
-               <p class="is-size-6">Vérifiez que les modifications apportées aux requêtes et aux index suppriment les avertissements transversaux.</p>
+               <p class="is-size-6">Vérifiez que les modifications apportées aux requêtes et aux index suppriment les avertissements de traversée.</p>
                <a href="#verify" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM">
 <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Vérifier</span>
 </a>
@@ -108,11 +108,11 @@ Il est possible d’aborder la limitation des avertissements transversaux en tro
 
 ## 1. Analyser{#analyze}
 
-Tout d’abord, identifiez les services de publication AEM qui présentent des avertissements transversaux. Pour ce faire, à partir de Cloud Manager, [téléchargez les journaux `aemerror` des services de publication](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=fr#cloud-manager){target="_blank"} de tous les environnements (développement, évaluation et production) des __trois derniers jours__.
+Tout d’abord, identifiez les services de publication AEM qui présentent des avertissements de traversée. Pour ce faire, à partir de Cloud Manager, [téléchargez les journaux de `aemerror` des services de publication](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=fr#cloud-manager){target="_blank"} depuis tous les environnements (développement, évaluation et production) au cours des __trois derniers jours__.
 
 ![Téléchargement des journaux d’AEM as a Cloud Service.](./assets/traversals/download-logs.jpg)
 
-Ouvrez les fichiers journaux et recherchez la classe Java™ `org.apache.jackrabbit.oak.plugins.index.Cursors$TraversingCursor`. Le journal comprenant des avertissements transversaux contient une série d’instructions qui ressemblent à :
+Ouvrez les fichiers journaux et recherchez la classe Java™ `org.apache.jackrabbit.oak.plugins.index.Cursors$TraversingCursor`. Le journal comprenant des avertissements de traversée contient une série d’instructions qui ressemblent à :
 
 ```log
 24.05.2022 14:18:46.146 [cm-p123-e456-aem-author-9876-edcba] *WARN* [192.150.10.214 [1653401908419] GET /content/wknd/us/en/example.html HTTP/1.1] 
@@ -153,36 +153,36 @@ org.apache.jackrabbit.oak.query.RuntimeNodeTraversalException:
 
 ## 2. Ajuster{#adjust}
 
-Une fois que les requêtes incriminées et leur code d’appel sont découverts, des ajustements doivent être effectués. Deux types d’ajustements peuvent être réalisés pour atténuer les avertissements transversaux :
+Une fois que les requêtes incriminées et leur code d’appel sont découverts, des ajustements doivent être effectués. Deux types d’ajustements peuvent être réalisés pour atténuer les avertissements de traversée :
 
 ### L’ajustement de la requête.
 
 La __modification de la requête__ pour ajouter de nouvelles restrictions de requête qui résolvent les restrictions d’index existantes. Dans la mesure du possible, préférez modifier la requête plutôt que les index.
 
-+ [Découvrir comment optimiser les performances des requêtes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html?lang=fr#query-performance-tuning){target="_blank"}
++ [Découvrez comment affiner les performances des requêtes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html?lang=fr#query-performance-tuning){target="_blank"}
 
 ### Ajuster l’index
 
 __Modifier (ou créer) un index AEM__ de sorte que les restrictions de requête existantes puissent être résolues sur les mises à jour d’index.
 
-+ [Découvrir comment optimiser les index existants](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html?lang=fr#query-performance-tuning){target="_blank"}
-+ [Découvrir comment créer des index](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html?lang=fr#create-a-new-index){target="_blank"}
++ [Découvrez comment ajuster les index existants](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html?lang=fr#query-performance-tuning){target="_blank"}
++ [Découvrez comment créer des index](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/troubleshooting-slow-queries.html?lang=fr#create-a-new-index){target="_blank"}
 
 ## 3. Vérifier{#verify}
 
-Les ajustements effectués sur les requêtes, les index ou les deux doivent être vérifiés pour s’assurer qu’ils atténuent les avertissements transversaux.
+Les ajustements effectués sur les requêtes, les index ou les deux doivent être vérifiés pour s’assurer qu’ils atténuent les avertissements de traversée.
 
 ![Expliquer la requête.](./assets/traversals/verify.gif)
 
-Si seuls des [ajustements de la requête](#adjust-the-query) sont effectués, la requête peut être directement testée sur AEM as a Cloud Service via l’outil [Expliquer la requête](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#queries){target="_blank"} de la Developer Console. L’outil Expliquer la requête s’exécute par rapport au service de création AEM. Toutefois, puisque les définitions d’index sont identiques dans les services de création et de publication, la validation des requêtes par rapport au service de création AEM est suffisante.
+Si seuls des [ajustements de la requête](#adjust-the-query) sont effectués, la requête peut être directement testée sur AEM as a Cloud Service via Developer Console [Expliquer la requête](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#queries){target="_blank"}. L’outil Expliquer la requête s’exécute par rapport au service de création AEM. Toutefois, puisque les définitions d’index sont identiques dans les services de création et de publication, la validation des requêtes par rapport au service de création AEM est suffisante.
 
-Si des [ajustements de l’index](#adjust-the-index) sont effectués, l’index doit être déployé sur AEM as a Cloud Service. Une fois les ajustements d’index déployés, l’outil [Expliquer la requête](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#queries){target="_blank"} de la Developer Console peut être utilisé pour exécuter et affiner davantage la requête.
+Si des [ajustements de l’index](#adjust-the-index) sont effectués, l’index doit être déployé sur AEM as a Cloud Service. Une fois les ajustements d’index déployés, le Developer Console [Expliquer la requête](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#queries){target="_blank"} peut être utilisé pour exécuter et affiner davantage la requête.
 
-Finalement, toutes les modifications (requête et code) sont validées dans Git et déployées vers AEM as a Cloud Service à l’aide de Cloud Manager. Une fois le déploiement effectué, testez les chemins de code associés aux avertissements transversaux d’origine et vérifiez que les avertissements transversaux n’apparaissent plus dans le journal `aemerror`.
+Finalement, toutes les modifications (requête et code) sont validées dans Git et déployées vers AEM as a Cloud Service à l’aide de Cloud Manager. Une fois le déploiement effectué, testez les chemins de code associés aux avertissements de traversée d’origine et vérifiez que les avertissements de traversée n’apparaissent plus dans le journal `aemerror`.
 
 ## Autres ressources
 
-Consultez ces autres ressources utiles pour comprendre les index, la recherche et les avertissements transversaux d’AEM.
+Consultez ces autres ressources utiles pour comprendre les index, la recherche et les avertissements de traversée d’AEM.
 
 <div class="columns is-multiline">
 

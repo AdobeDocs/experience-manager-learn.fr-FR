@@ -3,11 +3,11 @@ title: Tutoriel sur le cache dans AEM Dispatcher
 description: L’objectif de ce tutoriel est de vous aider à mieux comprendre le fonctionnement du Dispatcher et comment l’utiliser.
 feature: Dispatcher
 topic: Architecture
-role: Architect
+role: Developer
 level: Beginner
 doc-type: Catalog
 exl-id: 9780870e-9ac6-46f9-abc4-87c9470ef7e7
-source-git-commit: 30d6120ec99f7a95414dbc31c0cb002152bd6763
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 100%

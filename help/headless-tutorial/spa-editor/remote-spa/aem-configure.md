@@ -3,7 +3,7 @@ title: Configurer AEM pour l’éditeur de SPA et la SPA distante
 description: Un projet AEM est requis pour la configuration et la prise en charge des exigences en matière de contenu afin de permettre à l’éditeur de SPA d’AEM de créer une SPA distante.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7631
 thumbnail: kt-7631.jpeg
@@ -13,8 +13,8 @@ doc-type: Tutorial
 exl-id: 0bdb93c9-5070-483c-a34c-f2b348bfe5ae
 duration: 297
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1229'
 ht-degree: 100%
 

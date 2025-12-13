@@ -4,7 +4,7 @@ description: Découvrez comment intégrer les systèmes AEM Assets et PIM pour 
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 761
@@ -12,8 +12,8 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: ab499385a1df8c4b0ac58b6a382faa29b262e3ba
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 100%
 
@@ -297,7 +297,7 @@ Par défaut, le projet WKND Sites ne dispose pas du schéma de métadonnées de 
 
    ![Vue Assets AEM](../assets/examples/assets-pim-integration/aem-assets-view.png)
 
-1. Accédez à l’option **Paramètres** > **Formulaires de métadonnées** dans le rail de gauche, puis cliquez sur le bouton **Créer**. Dans la boîte de dialogue **Créer un formulaire de métadonnées**, saisissez les détails suivants, puis cliquez sur **Créer**.
+1. Accédez à l’option **Paramètres** > **Formulaires de métadonnées** dans le rail de gauche, puis cliquez sur le bouton **Créer**. Dans la boîte de dialogue **Créer un formulaire de métadonnées**, saisissez les détails suivants, puis cliquez sur **Créer**.
    - Nom : `PIM`
    - Utiliser la structure de formulaire existante comme modèle : `Check`
    - Choisir dans : `default`

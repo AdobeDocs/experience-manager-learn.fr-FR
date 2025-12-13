@@ -4,14 +4,14 @@ description: Découvrez comment personnaliser le contenu en fonction du comporte
 version: Experience Manager as a Cloud Service
 feature: Personalization
 topic: Personalization,Content Management, Integrations
-role: Developer, Architect, Leader
+role: Developer, Leader
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-09-10T00:00:00Z
 jira: KT-19113
 thumbnail: KT-19113.jpeg
 exl-id: fd7204fa-03f2-40df-9f0a-487a5aec2891
-source-git-commit: c367564acb6465d5f203e5db943c5470607b63c9
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '4185'
 ht-degree: 99%
@@ -46,7 +46,7 @@ Rendez-vous sur le [site web WKND Enablement](https://wknd.enablementadobe.com/u
 
 - **Page Magazine** : lorsque les utilisateurs et utilisatrices lisent _trois articles ou plus_, ils sont classés dans l’audience **Magazine Readers** et voient une section principale personnalisée sur la page Magazine.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474003/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474001/?learn=on&enablevpops)
 
 >[!TIP]
 >

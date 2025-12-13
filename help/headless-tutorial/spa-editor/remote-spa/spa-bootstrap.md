@@ -3,7 +3,7 @@ title: Amorcer la SPA distante pour l’éditeur de SPA
 description: Découvrez comment amorcer une SPA distante pour la compatibilité avec l’éditeur de SPA AEM.
 topic: Headless, SPA, Development
 feature: SPA Editor, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7633
 thumbnail: kt-7633.jpeg
@@ -12,10 +12,10 @@ doc-type: Tutorial
 exl-id: b8d43e44-014c-4142-b89c-ff4824b89c78
 duration: 327
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1167'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -129,7 +129,7 @@ Lors de la création d’une SPA modifiable, il est préférable de configurer u
        * @returns true if the SPA request should be re-routed to AEM
        */
        const toAEM = function(path, req) {
-           return path.startsWith('/content') || 
+           return path.startsWith('/content') ||
                path.startsWith('/graphql') ||
                path.endsWith('.model.json')
        }
@@ -320,13 +320,13 @@ Maintenant que la SPA est amorcée pour l’intégration à AEM, nous allons lan
    $ npm run start
    ```
 
-1. Accédez à la SPA à l’adresse [http://localhost:3000](http://localhost:3000). Votre site doit s’afficher, quelle merveille !
+1. Parcourez la SPA sur [http://localhost:3000](http://localhost:3000). Votre site doit s’afficher, quelle merveille !
 
-![La SPA s’exécute à l’adresse http://localhost:3000](./assets/spa-bootstrap/localhost-3000.png).
+![SPA exécutée sur http://localhost:3000](./assets/spa-bootstrap/localhost-3000.png)
 
 ## Ouvrez la SPA dans l’éditeur de SPA AEM.
 
-Maintenant que la SPA est en cours d’exécution à l’adresse [http://localhost:3000](http://localhost:3000), nous allons l’ouvrir à l’aide de l’éditeur de SPA AEM. Aucun élément de la SPA n’est modifiable pour le moment, nous allons seulement valider la SPA dans AEM.
+Maintenant que la SPA s’exécute sur [http://localhost:3000](http://localhost:3000), nous allons l’ouvrir à l’aide de l’éditeur de SPA d’AEM. Aucun élément de la SPA n’est modifiable pour le moment, nous allons seulement valider la SPA dans AEM.
 
 1. Connectez-vous au service de création AEM.
 1. Accédez à __Sites > Application WKND > fr > fr__
@@ -337,7 +337,7 @@ Maintenant que la SPA est en cours d’exécution à l’adresse [http://localho
 1. Passez à l’__aperçu__ en utilisant le sélecteur de mode en haut à droite.
 1. Cliquez sur la SPA.
 
-   ![SPA s’exécutant sur http://localhost:3000](./assets/spa-bootstrap/spa-editor.png)
+   ![SPA exécutée sur http://localhost:3000](./assets/spa-bootstrap/spa-editor.png)
 
 ## Félicitations.
 

@@ -4,15 +4,15 @@ description: Découvrez comment intégrer AEM as a Cloud Service à Adobe T
 version: Experience Manager as a Cloud Service
 feature: Personalization, Integrations
 topic: Personalization, Integrations, Architecture
-role: Developer, Architect, Leader, Data Architect, User
+role: Developer, Leader, User
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18718
 thumbnail: null
 exl-id: 86767e52-47ce-442c-a620-bc9e7ac2eaf3
-source-git-commit: df83c5a6436dba264bad72e485ee152a2a39d513
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 100%
 

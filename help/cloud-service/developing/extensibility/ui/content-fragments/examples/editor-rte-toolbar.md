@@ -12,8 +12,8 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 6fd93d3b-6d56-43c5-86e6-2e2685deecc9
 duration: 345
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Cet exemple montre comment insérer une note ou un conseil en surbrillance à l�
 Cet exemple s’étend au point d’extension `rte` pour ajouter un bouton personnalisé à la barre d’outils de l’éditeur de texte enrichi dans l’éditeur de fragment de contenu.
 
 | Interface utilisateur AEM étendue | Point d’extension |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Éditeur de fragment de contenu](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Barre d’outils de l’éditeur de texte enrichi](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-toolbar/) |
 
 ## Exemple d’extension

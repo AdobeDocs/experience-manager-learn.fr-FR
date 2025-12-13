@@ -3,7 +3,7 @@ title: Prendre en main l’éditeur de SPA et de SPA distante - Présentation
 description: Bienvenue dans ce tutoriel en plusieurs parties destiné aux développeurs et développeuses qui cherchent à améliorer une SPA distante existante avec du contenu AEM modifiable en utilisant l’éditeur de SPA d’AEM.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7630
 thumbnail: 333272.jpeg
@@ -12,8 +12,8 @@ doc-type: Tutorial
 exl-id: c5f933eb-c409-41dc-bb6a-6b2220dfbb47
 duration: 294
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Bienvenue dans ce tutoriel en plusieurs parties destiné aux développeurs et d�
 
 Ce tutoriel s’appuie sur l’[application GraphQL WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr), une application React qui consomme le contenu AEM par fragments de contenu via les API GraphQL d’AEM, mais qui ne fournit pas de créationcontextuelle du contenu de la SPA.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444849?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/333272?quality=12&learn=on)
 
 ## À propos du tutoriel
 

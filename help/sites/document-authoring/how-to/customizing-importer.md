@@ -4,15 +4,15 @@ description: Découvrez comment personnaliser l’importateur d’AEM pour obten
 version: Experience Manager as a Cloud Service
 feature: Migration
 topic: Content Management
-role: Developer, User, Architect
+role: Developer, User
 level: Intermediate, Experienced
 doc-type: Technical Video
 duration: 167
 last-substantial-update: 2024-06-07T00:00:00Z
 jira: KT-15676
 exl-id: db0038f3-2782-4778-a68f-36620697de10
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '43'
 ht-degree: 100%
 
@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment personnaliser l’importateur d’AEM afin d’optimiser l’efficacité et la précision au cours d’une migration de site pour créer des documents avec Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3444247/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3429596/?learn=on)

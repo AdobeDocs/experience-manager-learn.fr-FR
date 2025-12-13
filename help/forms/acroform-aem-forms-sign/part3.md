@@ -1,14 +1,14 @@
 ---
 title: AcroForms avec AEM Forms
 description: Partie 3 d’un tutoriel qui intègre des AcroForms à AEM Forms. Testez le workflow et le formulaire adaptatif sur votre système.
-feature: adaptive-forms
+feature: Adaptive Forms
 doc-type: Tutorial
 version: Experience Manager 6.5
 badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Forms 6.5" before-title="false"
 duration: 45
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 100%
 

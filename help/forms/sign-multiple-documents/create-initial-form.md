@@ -10,8 +10,8 @@ jira: KT-6892
 thumbnail: 6892.jpg
 exl-id: d7c55dc8-d886-4629-bb50-d927308d12e3
 duration: 35
-source-git-commit: 03b68057748892c757e0b5315d3a41d0a2e4fc79
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 100%
 
@@ -22,12 +22,12 @@ ht-degree: 100%
 Le formulaire initial (formulaire de refinancement) est utilisé pour signer plusieurs formulaires en déclenchant le workflow AEM **Signer plusieurs formulaires**. Vous pouvez indiquer les valeurs de votre choix, mais assurez-vous que les champs suivants sont ajoutés au formulaire.
 
 | Type de champ | Nom | Objectif | Masqué | Valeur par défaut |
-| ------------------------|---------------------------------------|--------------------|--------|----------------- |
+|--- |--- |---|--- |--- |
 | TextField | signed | Pour indiquer le statut de signature. | Y | N |
 | TextField | guid | Pour identifier un formulaire de manière unique. | Y | 3889 |
-| TextField | customerName | Pour capturer le nom des clientes et clients. | N |
-| TextField | customerEmail | E-mail du client ou de la cliente pour envoyer une notification. | N |
-| CheckBox | formsToSign | Les éléments identifient les formulaires dans le package. | N |
+| TextField | customerName | Pour capturer le nom des clientes et clients. | N | |
+| TextField | customerEmail | E-mail du client ou de la cliente pour envoyer une notification. | N | |
+| CheckBox | formsToSign | Les éléments identifient les formulaires dans le package. | N | |
 
 Le formulaire initial doit être configuré pour déclencher un workflow AEM appelé **signmultipleforms**.
 Assurez-vous que le chemin d’accès au fichier de données est défini sur **Data.xml**. Cette étape est très importante, car l’exemple de code recherche un fichier appelé Data.xml dans la payload du processus d’envoi du formulaire.

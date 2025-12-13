@@ -4,7 +4,7 @@ description: Découvrez comment récupérer le jeu initial d’événements AEM
 version: Experience Manager as a Cloud Service
 feature: Developing, App Builder
 topic: Development, Architecture, Content Management
-role: Architect, Developer
+role: Developer
 level: Beginner
 doc-type: Tutorial
 duration: 280
@@ -12,8 +12,8 @@ last-substantial-update: 2023-01-29T00:00:00Z
 jira: KT-14734
 thumbnail: KT-14734.jpeg
 exl-id: 33eb0757-f0ed-4c2d-b8b9-fa6648e87640
-source-git-commit: e01eb7ff050321a70d84f8a613705799017dbf5d
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 100%
 
@@ -32,8 +32,8 @@ Dans le projet Adobe Developer Console, chaque enregistrement d’événement 
 >[!IMPORTANT]
 >
 >Les points d’entrée de la démonstration en direct dans ce tutoriel étaient auparavant hébergés sur [Glitch](https://glitch.com/). Depuis juillet 2025, Glitch a mis fin à son service d’hébergement et les points d’entrée ne sont plus accessibles.
->>Nous travaillons activement à la migration des démonstrations vers une autre plateforme. Le contenu du tutoriel reste exact et des liens mis à jour seront bientôt fournis.
->>Merci pour votre compréhension et pour votre patience.
+>Nous travaillons activement à la migration des démonstrations vers une autre plateforme. Le contenu du tutoriel reste exact et des liens mis à jour seront bientôt fournis.
+>Merci pour votre compréhension et pour votre patience.
 
 Utilisez votre propre application jusqu’à ce que les points d’entrée de démonstration en direct soient à nouveau disponibles.
 

@@ -8,10 +8,10 @@ level: Beginner
 doc-type: Tutorial
 exl-id: 5aa32791-861a-48e3-913c-36028373b788
 duration: 311
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -25,21 +25,21 @@ AEM Content Services permet les mêmes abstractions de contenu que celles util
 
 Tutoriel complet illustrant comment créer et exposer du contenu à l’aide d’AEM et utilisé par une application mobile native, dans un scénario CMS découplé.
 
->[!VIDEO](https://video.tv.adobe.com/v/33126?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/28315?quality=12&learn=on)
 
-Ce tutoriel explique comment AEM Content Services peut être utilisé pour alimenter l’expérience d’une application mobile qui affiche des informations sur les événements (musique, performance, art, etc.) et est élaboré par l’équipe WKND.
+Ce tutoriel explique comment AEM Content Services peut être utilisé pour alimenter l’expérience d’une application mobile qui affiche des informations sur les événements (musique, performance, art, etc.) organisées par l’équipe WKND.
 
 Ce tutoriel aborde les sujets suivants :
 
 * Créer du contenu représentant un événement à l’aide de fragments de contenu.
 * Définir des points d’entrée AEM Content Services à l’aide des modèles et des pages d’AEM Sites qui exposent les données d’événement au format JSON.
-* Découvrir comment les composants principaux de gestion de contenu web AEM peuvent être utilisés pour permettre aux personnes spécialisées dans le marketing de créer des points d’entrée JSON.
+* Découvrir comment les composants principaux de gestion de contenu web AEM peuvent être utilisés pour permettre aux spécialistes du marketing de créer des points d’entrée JSON.
 * Utiliser le format JSON d’AEM Content Services à partir d’une application mobile.
    * L’utilisation d’Android est due à la présence d’un émulateur sur plusieurs plateformes, que tous les utilisateurs et utilisatrices (Windows, macOS et Linux) de ce tutoriel peuvent utiliser pour exécuter l’application native.
 
 ## Projet GitHub
 
-Le code source et les packages de contenu sont disponibles sur la page [AEM Guides - Projet GitHub WKND Mobile](https://github.com/adobe/aem-guides-wknd-mobile).
+Le code source et les modules de contenu sont disponibles sur la page [AEM Guides - Projet GitHub WKND Mobile](https://github.com/adobe/aem-guides-wknd-mobile).
 
 Si vous rencontrez un problème avec le tutoriel ou le code, veuillez consigner un [Problème GitHub](https://github.com/adobe/aem-guides-wknd-mobile/issues).
 
@@ -47,7 +47,7 @@ Si vous rencontrez un problème avec le tutoriel ou le code, veuillez consigner 
 
 |                                | API AEM GraphQL | AEM Content Services |
 |--------------------------------|:-----------------|:---------------------|
-| Définition d’un schéma | Modèles structurés de fragment de contenu | Composants AEM |
+| Définition d’un schéma | Modèles de fragment de contenu structuré | Composants AEM |
 | Contenu | Fragments de contenu | Composants AEM |
 | Détection de contenu | Par requête GraphQL | Par Page AEM |
 | Format de diffusion | JSON GraphQL | Exporteur JSON de composant AEM |

@@ -4,7 +4,7 @@ description: Découvrez les intégrations prises en charge par AEM as a Cloud
 version: Experience Manager as a Cloud Service
 feature: Integrations
 topic: Integrations
-role: Leader, Architect, Admin, Developer
+role: Leader, Admin, Developer
 level: Beginner
 jira: KT-10718
 thumbnail: KT-10718.png
@@ -14,7 +14,7 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="d’AEM as a Cloud Service" before-title="false"
 exl-id: 9e856dcc-f042-4e9d-bf97-dd4f72e837e3
 duration: 135
-source-git-commit: e5a1ab5fcc5314bddfbc4ad900127804bc019009
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 99%
@@ -64,8 +64,8 @@ L’intégration d’Adobe Analytics avec AEM as a Cloud Service vous perme
 + [Tutoriel sur AEM Sites et Analytics](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/analytics/collect-data-analytics.html?lang=fr)
 + Couche de données client Adobe (ACDL)
 
-   + [Étendre l’ACDL dans les composants de base du gestionnaire de contenu web AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html?lang=fr)
-   + [Intégrer l’ACDL aux composants de base de la gestion de contenu web AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=fr)
+   + [Étendre l’ACDL dans les composants principaux de la gestion de contenu web AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/extending.html?lang=fr)
+   + [Intégrer l’ACDL aux composants principaux de la gestion de contenu web AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=fr)
    + [Gérer des données pilotée par les événements avec l’ACDL](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/adobe-client-data-layer.html?lang=fr)
    + [Tutoriel sur la couche de données client Adobe (ACDL)](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=fr)
 
@@ -87,7 +87,7 @@ L’intégration d’Adobe Analytics avec AEM as a Cloud Service vous perme
 
 ## Adobe Commerce
 
-L’intégration d’Adobe Commerce à AEM as a Cloud Service permet aux marques de se développer et d’innover comme jamais auparavant, en proposant des expériences commerciales uniques et en captant la croissance des dépenses en ligne. Lorsqu’AEM et Commerce agissent à l’unisson, les expériences immersives, omnicanales et personnalisées d’Experience Manager jouissent de la puissance des solutions de Commerce afin de proposer des expériences uniques, et ce à toutes les étapes du parcours d’achat. À la clé, un gain de temps précieux et un taux de conversion plus élevé.
+L’intégration d’Adobe Commerce à AEM as a Cloud Service permet aux marques de se développer et d’innover comme jamais auparavant, en proposant des expériences commerciales uniques et en captant la croissance des dépenses en ligne. Quand AEM et Commerce agissent à l’unisson, les expériences immersives, omnicanales et personnalisées d’Experience Manager jouissent de la puissance des solutions de commerce afin de proposer des expériences uniques, et ce à toutes les étapes du parcours d’achat. À la clé, un gain de temps précieux et un taux de conversion plus élevé.
 
 ### AEM Sites
 
@@ -147,9 +147,9 @@ Adobe Target s’intègre à AEM as a Cloud Service afin de fournir une exp
 
 ### AEM Sites
 
-+ [Configurer l’intégration d’Adobe Target](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-target)
++ [Configurer l’intégration d’Adobe Target](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/setup/integrate-adobe-target)
 
-+[Cas D’Utilisation De Personalization](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
++[Cas D’Utilisation De Personalization](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/personalization/overview#use-cases)
 
 + Fragments d’expérience vers Target
 

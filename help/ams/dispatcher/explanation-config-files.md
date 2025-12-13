@@ -10,8 +10,8 @@ thumbnail: xx.jpg
 doc-type: Article
 exl-id: ec8e2804-1fd6-4e95-af6d-07d840069c8b
 duration: 379
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ L’extension de fichier n’a pas réellement d’importance pour un serveur we
 | Fichier | Destination du fichier | Description |
 | --- | --- | --- |
 | FILENAME`.any` | `/etc/httpd/conf.dispatcher.d/` | Le module Apache de Dispatcher AEM tire ses paramètres des fichiers `*.any`. Le fichier d’inclusion parent par défaut est : `conf.dispatcher.d/dispatcher.any`. |
-| FILENAME`_farm.any` | Intermédiaire : `/etc/httpd/conf.dispatcher.d/available_farms/`<br>Actif : `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><b>Remarque :</b> ces fichiers de batterie ne doivent pas être copiés dans le dossier `enabled_farms` mais utiliser `symlinks` vers un chemin relatif vers le fichier `available_farms/*_farm.any`. Les fichiers <br/>`*_farm.any` sont inclus dans le fichier `conf.dispatcher.d/dispatcher.any`. Ces fichiers de batterie parents sont destinés à contrôler le comportement du module pour chaque type de rendu ou de site web. Les fichiers sont créés dans le répertoire `available_farms` et activés avec un `symlink` dans le répertoire `enabled_farms`.  <br/>Il les inclut automatiquement par leur nom dans le fichier `dispatcher.any`.Les fichiers de batterie <br/><b>de référence</b> commencent par `000_` pour qu’ils soient toujours chargés en premier.Les fichiers de batterie <br><b>personnalisés</b> doivent être chargés ensuite en démarrant leur modèle de nombre à `100_` pour assurer le comportement d’inclusion approprié. |
+| FILENAME`_farm.any` | Intermédiaire : `/etc/httpd/conf.dispatcher.d/available_farms/`<br>Actif : `/etc/httpd/conf.dispatcher.d/enabled_farms/`<br><br><b>Remarque :</b> ces fichiers de batterie ne doivent pas être copiés dans le dossier `enabled_farms` mais utiliser `symlinks` vers un chemin relatif vers le fichier `available_farms/*_farm.any`. Les fichiers <br/>`*_farm.any` sont inclus dans le fichier `conf.dispatcher.d/dispatcher.any`. Ces fichiers de batterie parents sont destinés à contrôler le comportement du module pour chaque type de rendu ou de site web. Les fichiers sont créés dans le répertoire `available_farms` et activés avec un `symlink` dans le répertoire `enabled_farms`.  <br/>Il les inclut automatiquement par leur nom dans le fichier `dispatcher.any`.Les fichiers de batterie <br/><b>de référence</b> commencent par `000_` pour qu’ils soient toujours chargés en premier.Les fichiers de batterie <br><b>personnalisés</b> doivent être chargés ensuite en démarrant leur modèle de nombre à `100_` pour assurer le comportement d’inclusion approprié. | |
 | FILENAME`_filters.any` | `/etc/httpd/conf.dispatcher.d/filters/` | Les fichiers `*_filters.any` sont inclus dans les fichiers `conf.dispatcher.d/enabled_farms/*_farm.any`. Chaque batterie comporte un ensemble de règles qui indiquent le trafic qui doit être filtré et ne doit pas atteindre les moteurs de rendu. |
 | FILENAME`_vhosts.any` | `/etc/httpd/conf.dispatcher.d/vhosts/` | Les fichiers `*_vhosts.any` sont inclus dans les fichiers `conf.dispatcher.d/enabled_farms/*_farm.any`. Ces fichiers sont une liste de noms d’hôtes ou de chemins d’accès URI à mettre en correspondance avec des objets blob pour déterminer le moteur de rendu à utiliser pour diffuser cette requête. |
 | FILENAME`_cache.any` | `/etc/httpd/conf.dispatcher.d/cache/` | Les fichiers `*_cache.any` sont inclus dans les fichiers `conf.dispatcher.d/enabled_farms/*_farm.any`. Ces fichiers spécifient les éléments qui sont mis en cache et ceux qui ne le sont pas. |

@@ -10,10 +10,10 @@ level: Intermediate
 exl-id: 1f13d82e-c1d0-4c8c-8468-b4a4c5897c71
 last-substantial-update: 2021-02-09T00:00:00Z
 duration: 239
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,9 @@ ht-degree: 100%
 
 À partir d’AEM Forms 6.4, nous avons la possibilité d’utiliser le service de modèle de données de formulaire dans le cadre du workflow AEM. La vidéo suivante décrit les étapes nécessaires à la configuration de l’étape Modèle de données de formulaire dans le workflow AEM.
 
->La fonctionnalité présentée dans cette vidéo nécessite AEM Forms 6.5.1.
+>[!NOTE]
+>
+>Les fonctionnalités présentées dans cette vidéo nécessitent AEM Forms 6.5.1
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28145?quality=12&learn=on)
@@ -30,7 +32,7 @@ Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-
 
 * Configurez Tomcat avec le fichier SampleRest.war comme décrit [ici](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/ic-print-channel-tutorial/set-up-tomcat.html?lang=fr). Le fichier war déployé dans Tomcat contient le code permettant de renvoyer le score de crédit du demandeur ou de la demandeuse. Le score de crédit est un nombre aléatoire compris entre 200 et 800.
 
-* [Importez les ressources dans AEM à l’aide du gestionnaire de packages.](assets/aem65-loanapplication.zip)
+* [Importez les ressources dans AEM à l’aide du gestionnaire de modules.](assets/aem65-loanapplication.zip)
 * Le package contient les éléments suivants :
 
    * Le modèle de workflow qui utilise l’étape Modèle de données de formulaire.
@@ -38,5 +40,6 @@ Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-
    * Le formulaire adaptatif pour déclencher le workflow lors de l’envoi.
 * Ouvrez le formulaire [MortgageApplicationForm](http://localhost:4502/content/dam/formsanddocuments/loanapplication/jcr:content?wcmmode=disabled). Remplissez les informations et envoyez-le. Lors de l’envoi du formulaire, le [workflow loanapplication](http://http://localhost:4502/editor.html/conf/global/settings/workflow/models/LoanApplication2.html) est déclenché.
 
-![Workflow](assets/invokefdm651.PNG).
+![workflow](assets/invokefdm651.PNG).
+
 Le workflow utilise le composant Division OU pour acheminer la demande vers l’administrateur ou l’administratrice si le score de crédit est supérieur à 500. Si le score de crédit est inférieur à 500, la demande est acheminée vers le cavery.

@@ -3,15 +3,15 @@ title: 'Chapitre 1 : concepts, modèles et antimodèles du Dispatcher'
 description: Destinée aux développeurs et développeuses AEM responsables de la conception des composants, cette section succincte présente l’historique et les mécanismes du Dispatcher.
 feature: Dispatcher
 topic: Architecture
-role: Architect
+role: Developer
 level: Beginner
 doc-type: Tutorial
 exl-id: 3bdb6e36-4174-44b5-ba05-efbc870c3520
 duration: 3855
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '17384'
-ht-degree: 100%
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
+source-wordcount: '17382'
+ht-degree: 98%
 
 ---
 
@@ -624,7 +624,7 @@ Un horodatage Unix est suffisant pour une mise en œuvre concrète. Pour une mei
 
 L’empreinte ne doit pas être utilisée comme paramètre de requête, car les URL avec des paramètres de requête ne peuvent pas être mises en cache. Vous pouvez utiliser un sélecteur ou le suffixe pour l’empreinte.
 
-Supposons que le fichier `/content/dam/flower.jpg` a une date `jcr:lastModified` du 31 décembre 2018, 23 h 59. L’URL avec l’empreinte est `/content/home/jcr:content/par/respi.fp-2018-31-12-23-59.jpg`.
+Supposons que le `/content/dam/flower.jpg` de fichier ait une date de `jcr:lastModified` du 31 décembre 2018, soit le 23:59. L’URL avec l’empreinte est `/content/home/jcr:content/par/respi.fp-2018-31-12-23-59.jpg`.
 
 Cette URL reste stable tant que le fichier (`flower.jpg`) de la ressource référencée n’est pas modifié. Elle peut donc être mise en cache pendant une durée indéfinie et ne constitue pas un cache-killer.
 
@@ -632,7 +632,7 @@ Notez que cette URL doit être créée et diffusée par le composant d’image r
 
 C’est le concept de base. Il y a cependant quelques détails qui peuvent facilement être négligés.
 
-Dans notre exemple, le composant a été rendu et mis en cache à 23 h 59. Admettons maintenant que l’image ait été modifiée à 00 h 00.  Le composant _pourrait_ générer une nouvelle empreinte d’URL dans son balisage.
+Dans notre exemple, le composant a été rendu et mis en cache à 23:59. Maintenant l&#39;image a été modifiée, disons à 00:00.  Le composant _pourrait_ générer une nouvelle empreinte d’URL dans son balisage.
 
 Vous pourriez penser qu’il _devrait_ le faire, mais ce n’est pas le cas. Comme seul le fichier binaire de l’image a été modifié et que la page incluse n’a pas été touchée, le rendu du balisage HTML n’est pas nécessaire. Ainsi, Dispatcher diffuse la page avec l’ancienne empreinte, et donc l’ancienne version de l’image.
 
@@ -744,7 +744,7 @@ Nous abusons en quelque sorte d’un sélecteur comme paramètre : fp-2018-31-1
 
 Chaque requête contourne le Dispatcher, ce qui entraîne une charge sur une instance de publication. Et, pire encore, la création d’un fichier conforme sur Dispatcher.
 
-Donc, au lieu de d’utiliser l’empreinte comme simple cache-killer, vous devez vérifier la date jcr:lastModified de l’image et renvoyer une erreur 404 si ce n’est pas la date attendue. Cela prend du temps et des cycles de processeur sur le système de publication... ce que vous souhaitez éviter.
+Donc... au lieu d’utiliser simplement l’empreinte digitale comme un simple cache-killer, vous devez vérifier la date jcr:lastModified de l’image et renvoyer un 404 si ce n’est pas la date attendue. Cela prend du temps et des cycles de processeur sur le système de publication... ce que vous souhaitez éviter.
 
 #### Avertissements d’empreintes d’URL dans les versions haute fréquence
 
@@ -1302,11 +1302,11 @@ Si vous installez une instance de création et de publication AEM prête à l’
 
 Si un client ou une cliente demande ce contenu entre-temps, le Dispatcher demandera et stockera du contenu obsolète.
 
-Une configuration plus fiable consiste à envoyer la demande d’invalidation depuis les systèmes de publication _après_ avoir reçu le contenu. L’article « [Invalidation du cache de Dispatcher depuis une instance de publication](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/page-invalidate.html?lang=fr#InvalidatingDispatcherCachefromaPublishingInstance) » décrit les détails.
+Une configuration plus fiable consiste à envoyer la demande d’invalidation depuis les systèmes de publication _après_ avoir reçu le contenu. L’article « [Invalidation du cache de Dispatcher depuis une instance de publication](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html?lang=fr#InvalidatingDispatcherCachefromaPublishingInstance) » décrit les détails.
 
 **Références**
 
-[helpx.adobe.com. Invalidation du cache de Dispatcher depuis une instance de publication](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/page-invalidate.html?lang=fr#InvalidatingDispatcherCachefromaPublishingInstance)
+[helpx.adobe.com. Invalidation du cache de Dispatcher depuis une instance de publication](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html?lang=fr#InvalidatingDispatcherCachefromaPublishingInstance)
 
 ### Mettre en cache des en-têtes et en-têtes HTTP
 
@@ -1338,7 +1338,7 @@ Vous voulez peut-être mettre en cache toutes les pages et toutes les images en 
   response.setHeader("Pragma: no-cache");
 ```
 
-Cache-Control et Pragma sont des en-têtes HTTP officiels, propagés et interprétés par les couches de mise en cache supérieures, telles qu’un réseau CND. L’en-tête `Dispatcher` n’est qu’un indice pour que le Dispatcher ne mette pas en cache. Il peut être utilisé pour indiquer au Dispatcher de ne pas mettre en cache, tout en permettant aux couches de mise en cache supérieures de le faire. En réalite, il est difficile de trouver un cas où cela pourrait être utile. Mais nous savons que certains existent, quelque part.
+Cache-Control et Pragma sont des en-têtes HTTP officiels, propagés et interprétés par les couches de mise en cache supérieures, telles qu’un CND. L’en-tête `Dispatcher` n’est qu’un indice pour que le Dispatcher ne mette pas en cache. Il peut être utilisé pour indiquer au Dispatcher de ne pas mettre en cache, tout en permettant aux couches de mise en cache supérieures de le faire. En réalite, il est difficile de trouver un cas où cela pourrait être utile. Mais nous savons que certains existent, quelque part.
 
 **Références**
 
@@ -1426,7 +1426,7 @@ Mais ne comptez pas uniquement sur AEM. Si vous le faites, vous aurez des chemin
 
 Nous avons vu un projet qui avait des docroots séparées pour chaque domaine. C’était un cauchemar à déboguer et à entretenir - et en fait, nous ne l’avons jamais vu fonctionner sans erreur.
 
-Nous pourrions résoudre les problèmes en restructurant le cache. Nous avions une docroot unique pour tous les domaines, et les demandes d’invalidation pouvaient être traitées 1:1, car tous les fichiers sur le serveur commençaient par `/content`.
+Nous pourrions résoudre les problèmes en restructurant le cache. Nous avions un docroot unique pour tous les domaines, et les demandes d’invalidation pouvaient être traitées 1:1 car tous les fichiers sur le serveur commençaient par `/content`.
 
 La partie tronquée était aussi très facile.  AEM a généré des liens tronqués en raison d’une configuration appropriée dans `/etc/map`.
 
@@ -1454,7 +1454,7 @@ chose qu’il ne faut pas faire lorsque la charge est élevée.
 
 * [apache.org - Mod Rewrite](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
 
-* [helpx.adobe.com - Mappage des ressources](https://helpx.adobe.com/fr/experience-manager/6-4/sites/deploying/using/resource-mapping.html?lang=fr)
+* [helpx.adobe.com - Mappage des ressources](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/resource-mapping.html?lang=fr)
 
 ### Gestion des erreurs
 
@@ -1506,11 +1506,11 @@ Et bien sûr, vous pouvez appliquer votre propre combinaison des trois approche
 
 **Option 2**. L’absence de mise en cache n’est généralement pas souhaitable. Si vous optez pour cette méthode, assurez-vous que le volume de trafic et le nombre de ressources sensibles qui sont exclues sont faibles. Vous pouvez également vous assurer que le système de publication dispose d’un cache en mémoire installé, afin que les systèmes de publication puissent gérer la charge qui en résulte. Plus de détails sont disponibles dans la partie III de cette série.
 
-**Option 3**. La mise en cache sensible aux autorisations est une approche intéressante. Le Dispatcher met en cache une ressource, mais avant de la diffuser, il demande au système AEM l’autorisation de le faire. Cela crée une requête supplémentaire du Dispatcher vers l’instance de publication, mais évite généralement au système de publication d’afficher à nouveau le rendu d’une page si elle est déjà mise en cache. Cependant, cette approche nécessite une implémentation personnalisée. Pour plus d’informations, reportez-vous à l’article [Mise en cache sensible aux autorisations](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/permissions-cache.html?lang=fr).
+**Option 3**. La mise en cache sensible aux autorisations est une approche intéressante. Le Dispatcher met en cache une ressource, mais avant de la diffuser, il demande au système AEM l’autorisation de le faire. Cela crée une requête supplémentaire du Dispatcher vers l’instance de publication, mais évite généralement au système de publication d’afficher à nouveau le rendu d’une page si elle est déjà mise en cache. Cependant, cette approche nécessite une implémentation personnalisée. Pour plus d’informations, reportez-vous à l’article [Mise en cache sensible aux autorisations](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html?lang=fr).
 
 **Références**
 
-* [helpx.adobe.com - Mise en cache sensible aux autorisations](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/permissions-cache.html?lang=fr)
+* [helpx.adobe.com - Mise en cache sensible aux autorisations](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html?lang=fr)
 
 ### Définir le délai de grâce
 
@@ -1528,7 +1528,7 @@ Pour atténuer le problème de cette « tempête d’invalidation du cache »,
 
 Vous pouvez définir le Dispatcher pour utiliser `grace period` pour l’invalidation automatique. Cela ajouterait en interne du temps à la date de modification de `statfiles`.
 
-Supposons que votre `statfile` ait une heure de modification fixée à aujourd’hui 12 h 00 et que votre `gracePeriod` soit défini à 2 minutes. Alors, tous les fichiers invalidés automatiquement sont considérés comme valides à 12 h 01 et à 12 h 02. Leur nouveau rendu est affiché après 12 h 02.
+Supposons que votre `statfile` ait une heure de modification de 12 :00 aujourd’hui et que votre `gracePeriod` soit fixée à 2 minutes. Tous les fichiers invalidés automatiquement sont alors considérés comme valides à 12 :01 et à 12 :02. Ils sont rendus à nouveau après 12 :02.
 
 La configuration de référence propose un `gracePeriod` de deux minutes pour une bonne raison. Vous pourriez penser « Deux minutes ? C’est presque rien. Je peux facilement attendre 10 minutes que le contenu s’affiche... ».  Vous pouvez donc penser que définir une période plus longue, disons 10 minutes, est préférable, en supposant que le contenu s’affiche au moins après ces 10 minutes.
 
@@ -1540,13 +1540,13 @@ Illustrons le fonctionnement du `gracePeriod` par un exemple :
 
 Imaginons que vous gérez un site multimédia et que votre personnel d’édition mette à jour le contenu toutes les 5 minutes. Pensez à définir le délai de grâce sur 5 minutes.
 
-Nous commencerons par un court exemple à 12 h 00.
+Commençons par un bref exemple à 12 :00.
 
-12 : 00 - Le fichier stat est défini sur 12 : 00. Tous les fichiers mis en cache sont considérés comme valides jusqu’à 12 h 05.
+12:00 - Le fichier statique est défini sur 12:00. Tous les fichiers mis en cache sont considérés comme valides jusqu’au 12:05.
 
-12 : 01 - Une invalidation se produit. Ceci prolonge le délai de grâce à 12 h 06.
+12:01 - Une invalidation se produit. Cela prolonge le temps de grille à 12:06
 
-12 : 05 - Une autre personne publie son article, prolongeant le délai de grâce avec un nouveau délai de grâce à 12 : 10.
+12:05 - Un autre éditeur publie son article - prolongeant le délai de grâce d&#39;un autre gracePeriod à 12:10.
 
 Et ainsi de suite. Le contenu n’est alors jamais invalidé. Chaque invalidation *pendant* le délai de grâce prolonge effectivement le délai de grâce. Le `gracePeriod` est conçu pour résister à la tempête d’invalidation, mais vous devrez malgré tout sortir sous la pluie... alors gardez le `gracePeriod` beaucoup plus court pour éviter de devoir vous abriter pour le restant de votre vie.
 
@@ -1604,7 +1604,7 @@ Grâce à la récupération automatique, vous pouvez atténuer cela dans une cer
 
 Pour activer la récupération, vous devez indiquer au Dispatcher les ressources à récupérer à la suite d’une invalidation automatique. N’oubliez pas que toute page que vous activez invalide également automatiquement toutes les autres pages, y compris les plus consultées.
 
-La récupération signifie en réalité que le Dispatcher doit être informé, dans chaque (!) requête d’invalidation, que vous souhaitez récupérer les pages les plus consultées, et quelles sont les pages les plus consultées.
+La récupération signifie en fait que vous indiquez au Dispatcher de chaque demande d’invalidation (!) que vous souhaitez récupérer les plus populaires - et lesquels sont les plus populaires.
 
 Pour ce faire, placez une liste d’URL de ressources (URL réelles, et pas seulement les chemins) dans le corps des requêtes d’invalidation :
 
@@ -1690,7 +1690,7 @@ Mais nous proposons que vous envisagiez de réduire l’espace URL le plus tôt 
 
 [apache.org - Directive sethandler](https://httpd.apache.org/docs/2.4/mod/core.html#sethandler)
 
-[helpx.adobe.com - Configuration de l’accès au filtre de contenu](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html?lang=fr#ConfiguringAccesstoContentfilter)
+[helpx.adobe.com - Configuration de l’accès au filtre de contenu](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html?lang=fr#ConfiguringAccesstoContentfilter)
 
 ### Filtrage à l’aide d’expressions régulières et de globs
 
@@ -1843,7 +1843,7 @@ Vous ajouterez probablement une nouvelle règle à l’un des groupes, voire vou
 
 **Références**
 
-[helpx.adobe.com - Création de modèles pour les propriétés glob](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html?lang=fr#DesigningPatternsforglobProperties)
+[helpx.adobe.com - Création de modèles pour les propriétés glob](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html?lang=fr#DesigningPatternsforglobProperties)
 
 ### Spécification du protocole
 
@@ -1904,17 +1904,17 @@ Liste des URL que vous souhaitez récupérer immédiatement après l’invalidat
 
 ## Ressources supplémentaires
 
-Vue d’ensemble et présentation de la mise en cache de Dispatcher : [https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html).
+Vue d’ensemble et présentation de la mise en cache de Dispatcher : [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html).
 
-Documentation du Dispatcher avec toutes les directives expliquées : [https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html).
+Documentation du Dispatcher avec toutes les directives expliquées : [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
-Questions fréquentes : [https://helpx.adobe.com/fr/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/fr/experience-manager/using/dispatcher-faq.html?lang=fr).
+Questions fréquentes : [https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html?lang=fr).
 
 Enregistrement d’un webinaire sur l’optimisation de Dispatcher (vivement recommandé) : [https://my.adobeconnect.com/p7th2gf8k43?proto=true](https://my.adobeconnect.com/p7th2gf8k43?proto=true).
 
 Présentation de la conférence « adaptTo() », « Le pouvoir sous-estimé de l’invalidation du contenu » de 2018 à Potsdam [https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html](https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html).
 
-Invalidation de pages mises en cache à partir d’AEM : [https://helpx.adobe.com/fr/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/page-invalidate.html).
+Invalidation de pages mises en cache à partir d’AEM : [https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/page-invalidate.html).
 
 ## Étape suivante
 

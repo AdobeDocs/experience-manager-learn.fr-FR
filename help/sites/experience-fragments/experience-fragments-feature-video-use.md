@@ -4,7 +4,7 @@ description: Les fragments d’expérience permettent aux auteurs et aux autrice
 sub-product: Experience Manager Sites
 feature: Experience Fragments
 topic: Content Management
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 level: Beginner
 doc-type: Feature Video
 version: Experience Manager as a Cloud Service
@@ -13,8 +13,8 @@ thumbnail: 331785.jpg
 last-substantial-update: 2021-06-09T00:00:00Z
 exl-id: 84d2b240-5ecc-4230-97a0-6c2faead8d1a
 duration: 228
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 Les fragments d’expérience permettent aux auteurs et aux autrices de contenu de réutiliser le contenu sur plusieurs canaux, y compris les pages Sites et les systèmes tiers.
 
->[!VIDEO](https://video.tv.adobe.com/v/3445609?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/331785?quality=12&learn=on)
 
 Un fragment d’expérience est un ensemble groupé de composants qui, lorsqu’ils sont combinés, créent une expérience. À titre d’exemple, un *Titre*, une *Image*, une *Description*, et un *Bouton d’appel à l’action* peuvent être combinés pour former une expérience de teaser.
 

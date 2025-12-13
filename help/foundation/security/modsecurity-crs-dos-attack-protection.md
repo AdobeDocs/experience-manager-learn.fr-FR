@@ -4,7 +4,7 @@ description: Découvrez comment activer ModSecurity pour protéger votre site co
 feature: Security
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 topic: Security, Development
-role: Admin, Architect
+role: Admin, Developer
 level: Experienced
 jira: KT-10385
 thumbnail: KT-10385.png
@@ -12,8 +12,8 @@ doc-type: Article
 last-substantial-update: 2023-08-18T00:00:00Z
 exl-id: 9f689bd9-c846-4c3f-ae88-20454112cf9a
 duration: 783
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 Découvrez comment activer ModSecurity pour protéger votre site des attaques par déni de service (DoS) à l’aide de l’ **ensemble de règles de base (CRS) OWASP ModSecurity** sur le Dispatcher de publication d’Adobe Experience Manager (AEM).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3452126?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3422976?quality=12&learn=on)
 
 ## Vue d’ensemble
 

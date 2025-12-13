@@ -8,10 +8,10 @@ breadcrumb-title: Tutoriels d’AEM Forms
 sub-product: Experience Manager Forms
 version: Experience Manager 6.4, Experience Manager 6.5
 index: y
-source-git-commit: c4b5a015f1c0d5e3877886052476871548ec9b0e
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2104'
+ht-degree: 100%
 
 ---
 
@@ -299,7 +299,7 @@ ht-degree: 0%
    + [Configurer les informations d’identification Reader Extensions](document-services/configuring-reader-extension-osgi.md)
    + [Application des droits d’utilisation au rendu du PDF en XDP](document-services/rendering-and-reader-extending-xdp-templates-article.md)
    + [Appliquer les droits d’utilisation au PDF téléchargé](document-services/apply-reader-extension-rights-to-pdf.md)
-   + [Certifier des documents &#x200B;](document-services/certifying-documents-aem-forms-tutorial.md)
+   + [Certifier des documents ](document-services/certifying-documents-aem-forms-tutorial.md)
    + [Assembler des pièces jointes de formulaire](document-services/assemble-form-attachments.md)
    + [Services utilitaires utiles](document-services/useful-utility-services.md)
 + Forms Designer{#forms-designer}
@@ -316,8 +316,7 @@ ht-degree: 0%
    + [Présentation de Workbench](aem-forms-workbench/workbench-introduction.md)
    + [Création d’un processus de formulaire](aem-forms-workbench/workbench-creating-a-process.md)
    + [Processus de débogage](aem-forms-workbench/workbench-recording-and-testing-process.md)
-+ Communications interactives pour le canal d’impression 
-{#ic-print-channel-tutorial}
++ Communications interactives pour le canal d’impression {#ic-print-channel-tutorial}
    + [1 - Présentation](ic-print-channel-tutorial/introduction.md)
    + [&#x200B;2. Configurer Tomcat](ic-print-channel-tutorial/set-up-tomcat.md)
    + [&#x200B;3. Créer une source de données](ic-print-channel-tutorial/create-data-source.md)

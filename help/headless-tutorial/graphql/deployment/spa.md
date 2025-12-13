@@ -4,15 +4,15 @@ description: Découvrez les points à prendre en compte pour le déploiement d�
 version: Experience Manager as a Cloud Service
 feature: GraphQL API
 topic: Headless, Content Management
-role: Developer, Architect
+role: Developer
 level: Intermediate
 jira: KT-10587
 thumbnail: KT-10587.jpg
 mini-toc-levels: 2
 exl-id: 3fe175f7-6213-439a-a02c-af3f82b6e3b7
 duration: 136
-source-git-commit: 6425188da75f789b0661ec9bfb79624b5704c92b
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Une SPA est constituée d’un ensemble de ressources web natives : **HTML, CSS
 
 Plusieurs solutions d’**hébergement** sont proposées pour répondre aux besoins de votre entreprise :
 
-1. **Fournisseurs cloud**, par exemple **Azure** ou **AWS**.
+1. **Fournisseurs de services cloud**, par exemple **Azure** ou **AWS**.
 
 2. Hébergement **On-Premise** dans un **centre de données** d’entreprise.
 

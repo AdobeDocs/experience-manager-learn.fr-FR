@@ -4,7 +4,7 @@ description: Découvrez comment les modèles Dynamic Media permettent aux respo
 cloud: Experience Cloud
 solution: Experience Manager Assets
 feature-set: Experience Manager Assets
-role: User, Leader, Admin, Developer, Architect
+role: User, Leader, Admin, Developer
 level: Beginner, Intermediate, Experienced
 type: Event
 doc-type: Video Clip
@@ -14,8 +14,8 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: e875feab-bf5b-47ab-b3be-ee0c2e418f50
-source-git-commit: 7c7c9070bb6061dc59530070dd32ca6b8c78bc8d
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 100%
 
@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment les modèles Dynamic Media permettent aux responsables marketing de créer du contenu en direct et personnalisable pour des campagnes personnalisées.
 
->[!VIDEO](https://video.tv.adobe.com/v/3462348/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3459241/?learn=on&enablevpops)

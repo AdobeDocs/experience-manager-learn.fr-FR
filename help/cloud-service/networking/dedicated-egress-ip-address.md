@@ -4,15 +4,15 @@ description: Découvrez comment configurer et utiliser une adresse IP de sortie 
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Development, Security
-role: Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-9351
 thumbnail: KT-9351.jpeg
 exl-id: 311cd70f-60d5-4c1d-9dc0-4dcd51cad9c7
 last-substantial-update: 2024-04-26T00:00:00Z
 duration: 891
-source-git-commit: 24d634fd1e62e873bc1dbb3ac0cd18f70129ee86
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1370'
 ht-degree: 100%
 
@@ -86,7 +86,7 @@ Les adresses IP de sortie dédiées peuvent être activées à l’aide des API 
 
 1. Tout d’abord, déterminez la région dans laquelle la mise en réseau avancée est nécessaire à l’aide de l’opération [listRegion](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager. Le `region name` est nécessaire pour effectuer les appels d’API Cloud Manager ultérieurs. En règle générale, la région dans laquelle l’environnement de production réside est utilisée.
 
-   Recherchez la région de votre environnement AEM as a Cloud Service AEM dans [Cloud Manager](https://my.cloudmanager.adobe.com) sous les [détails de l’environnement](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Le nom de région affiché dans Cloud Manager peut être [mappé au code de région](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilisé dans l’API Cloud Manager.
+   Recherchez la région de votre environnement AEM as a Cloud Service dans [Cloud Manager](https://my.cloudmanager.adobe.com) sous les [détails de l’environnement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Le nom de région affiché dans Cloud Manager peut être [mappé au code de région](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilisé dans l’API Cloud Manager.
 
    __Requête HTTP listRegion__
 
@@ -134,7 +134,7 @@ Une fois l’adresse IP de sortie dédiée créée, vous pouvez la configurer à
 
 ## Configurer des proxys d’adresses IP de sorties dédiées par environnement
 
-1. Définissez la configuration de l’__adresse IP de sortie dédiée__ sur chaque environnement AEM as a Cloud Service à l’aide de l’opération [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager.
+1. Définissez la configuration de l’__adresse IP de sortie dédiée__ sur chaque environnement AEM as a Cloud Service à l’aide de l’opération [enableEnvironmentAdvancedNetworkingConfiguration](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager.
 
    __Requête HTTP enableEnvironmentAdvancedNetworkingConfiguration__
 
@@ -204,7 +204,7 @@ Une fois l’adresse IP de sortie dédiée créée, vous pouvez la configurer à
 
    Le nom d’hôte ne peut pas être `pinged`, car il s’agit d’une sortie et _non_ d’une entrée.
 
-   Notez que l’adresse IP de sortie dédiée est partagé par tous les environnements AEM as a Cloud Service du programme.
+   Notez que l’adresse IP de sortie dédiée est partagée par tous les environnements AEM as a Cloud Service du programme.
 
 1. Vous pouvez désormais utiliser l’adresse IP de sortie dédiée dans votre code personnalisé et dans votre configuration AEM. Souvent, lors de l’utilisation d’une adresse IP de sortie dédiée, les services externes auxquels AEM as a Cloud Service se connecte sont configurés pour autoriser uniquement le trafic à partir de cette adresse IP dédiée.
 

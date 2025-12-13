@@ -4,7 +4,7 @@ description: Découvrez comment mettre en œuvre un nom de domaine personnalisé
 version: Experience Manager as a Cloud Service
 feature: Cloud Manager, Operations
 topic: Administration, Architecture
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 0
@@ -12,8 +12,8 @@ last-substantial-update: 2024-06-21T00:00:00Z
 jira: KT-15945
 thumbnail: KT-15945.jpeg
 exl-id: fa9ee14f-130e-491b-91b6-594ba47a7278
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 100%
 
@@ -40,14 +40,14 @@ Les étapes détaillées sont les suivantes :
    - Autorité de certification (CA) : pour demander le certificat signé pour votre domaine de site, comme [DigitCert](https://www.digicert.com/).
    - Réseau CDN géré par le client ou la cliente : pour configurer le réseau CDN géré par le client ou la cliente et ajouter des certificats SSL et des détails de domaine, comme AWS CloudFront, Azure CDN ou Akamai.
    - Service d’hébergement DNS (Domain Name System) : pour ajouter des enregistrements DNS à votre domaine personnalisé, comme Azure DNS ou AWS Route 53.
-- Accédez à [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) pour déployer la règle de réseau CDN de validation d’en-tête HTTP dans l’environnement AEM as a Cloud Service.
+- Accédez à [Adobe Cloud Manager](https://my.cloudmanager.adobe.com/) pour déployer la règle de CDN de validation d’en-tête HTTP dans l’environnement AEM as a Cloud Service.
 - L’exemple de site [AEM WKND](https://github.com/adobe/aem-guides-wknd) est déployé dans l’environnement AEM as a Cloud Service de type [programme de production](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-production-programs).
 
 Si vous n’avez pas accès à des services tiers, _collaborez avec votre équipe en charge de la sécurité ou de l’hébergement pour mener à bien les étapes_.
 
 ## Générer un certificat SSL
 
->[!VIDEO](https://video.tv.adobe.com/v/3441473?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3427908?quality=12&learn=on)
 
 Vous disposez de deux options :
 
@@ -107,7 +107,7 @@ Ce tutoriel ajoute un enregistrement CNAME au DNS Azure pour le domaine personna
 Vérifiez le nom de domaine personnalisé en accédant au site à l’aide du nom de domaine personnalisé.
 Cela peut ou non fonctionner selon la configuration vhhost dans l’environnement AEM as a Cloud Service.
 
-Une étape de sécurité essentielle consiste à déployer la règle de réseau CDN de validation d’en-tête HTTP dans l’environnement AEM as a Cloud Service. La règle garantit que la demande provient du réseau CDN du client ou de la cliente et non d’une autre source.
+Une étape de sécurité essentielle consiste à déployer la règle CDN de validation d’en-tête HTTP dans l’environnement AEM as a Cloud Service. La règle garantit que la demande provient du réseau CDN du client ou de la cliente et non d’une autre source.
 
 ## État de fonctionnement actuel sans règle de réseau CDN de validation d’en-tête HTTP
 
@@ -218,11 +218,11 @@ Pour configurer et déployer la règle de réseau CDN de validation d’en-tête
   ```
 
 - Créez des variables d’environnement de type secret (CDN_EDGEKEY_080124, CDN_EDGEKEY_110124) à l’aide de l’interface d’utilisation de Cloud Manager.
-- Déployez la règle du réseau CDN configurée sur l’environnement AEM as a Cloud Service à l’aide du pipeline Cloud Manager.
+- Déployez la règle CDN de validation d’en-tête HTTP sur l’environnement AEM as a Cloud Service à l’aide du pipeline Cloud Manager.
 
 ## Transmettre le secret dans l’en-tête HTTP X-AEM-Edge-Key
 
->[!VIDEO](https://video.tv.adobe.com/v/3445047?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3432567?quality=12&learn=on)
 
 Mettez à jour le réseau CDN du client ou de la cliente pour transmettre le secret dans l’en-tête HTTP `X-AEM-Edge-Key`. Le secret est utilisé par le réseau CDN Adobe pour valider que la demande provient du réseau CDN du client ou de la cliente et transformer la valeur d’en-tête `Host` en valeur de `X-Forwarded-Host` reçue du réseau CDN du client ou de la cliente.
 

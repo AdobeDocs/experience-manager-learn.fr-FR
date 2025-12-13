@@ -4,7 +4,7 @@ description: Découvrez comment exécuter une tâche sur l’instance principale
 version: Experience Manager as a Cloud Service
 topic: Development
 feature: OSGI, Cloud Manager
-role: Architect, Developer
+role: Developer
 level: Intermediate, Experienced
 doc-type: Article
 duration: 0
@@ -12,8 +12,8 @@ last-substantial-update: 2024-10-23T00:00:00Z
 jira: KT-16399
 thumbnail: KT-16399.jpeg
 exl-id: b8b88fc1-1de1-4b5e-8c65-d94fcfffc5a5
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Découvrez comment exécuter une tâche sur l’instance principale du service de création AEM dans le cadre d’AEM as a Cloud Service et la configurer pour qu’elle ne s’exécute qu’une seule fois.
 
-Les tâches Sling sont des tâches asynchrones qui fonctionnent en arrière-plan, conçues pour gérer les événements déclenchés par le système ou les personnes qui les utilisent. Par défaut, ces tâches sont réparties uniformément entre toutes les instances (capsules) du cluster.
+Les tâches Sling sont des tâches asynchrones qui fonctionnent en arrière-plan, conçues pour gérer les événements déclenchés par le système ou les personnes qui les utilisent. Par défaut, ces tâches sont réparties uniformément entre toutes les instances (pods) du cluster.
 
 Pour plus d’informations, consultez la section [Gestion des tâches et des événements Apache Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html).
 
@@ -128,7 +128,7 @@ Les points clés à noter dans le code ci-dessus sont les suivants :
 
 ### Traitement des tâches par défaut
 
-Lorsque vous déployez le code ci-dessus dans un environnement AEM as a Cloud Service et que vous l’exécutez sur le service de création AEM, qui fonctionne comme un cluster avec plusieurs JVM de création AEM, la tâche s’exécute une fois sur chaque instance de création AEM (capsule), ce qui signifie que le nombre de tâches créées correspondra au nombre de capsules. Le nombre de capsules est toujours supérieur à un (pour les environnements non-RDE), mais fluctue en fonction de la gestion des ressources internes d’AEM as a Cloud Service.
+Lorsque vous déployez le code ci-dessus dans un environnement AEM as a Cloud Service et que vous l’exécutez sur le service de création AEM, qui fonctionne comme un cluster avec plusieurs JVM de création AEM, la tâche s’exécute une fois sur chaque instance (pod) de création AEM, ce qui signifie que le nombre de tâches créées correspondra au nombre de pods. Le nombre de capsules est toujours supérieur à un (pour les environnements non-RDE), mais fluctue en fonction de la gestion des ressources internes d’AEM as a Cloud Service.
 
 La tâche est exécutée sur chaque instance de création AEM (capsule), car la `wknd/simple/job/topic` est associée à la file d’attente principale d’AEM, qui distribue les tâches à toutes les instances disponibles.
 

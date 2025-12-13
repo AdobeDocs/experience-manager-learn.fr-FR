@@ -3,7 +3,7 @@ title: Configuration rapide de l’éditeur de SPA et de la SPA distante
 description: Découvrez comment être à pied d’œuvre avec une SPA distante et l’éditeur de SPA d’AEM en 15 minutes.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7629
 thumbnail: 333181.jpg
@@ -13,10 +13,10 @@ doc-type: Tutorial
 exl-id: ef7a1dad-993a-4c47-a9fb-91fa73de9b5d
 duration: 647
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: ht
-source-wordcount: '726'
-ht-degree: 100%
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 93%
 
 ---
 
@@ -69,7 +69,7 @@ Téléchargez et installez le démarrage rapide du SDK d’AEM sur le port 4502,
    # Provide `admin` as the admin user's password
    ```
 
-Le SDK d’AEM démarre et se lance automatiquement sur [http://localhost:4502](http://localhost:4502). Connectez-vous à l’aide des informations d’identification suivantes :
+AEM SDK démarre et se lance automatiquement sur [http://localhost:4502](http://localhost:4502). Connectez-vous à l’aide des informations d’identification suivantes :
 
 + Nom d’utilisateur : `admin`.
 + Mot de passe : `admin`.
@@ -79,7 +79,7 @@ Le SDK d’AEM démarre et se lance automatiquement sur [http://localhost:4502](
 Ce tutoriel a une dépendance au projet __WKND 2.1.0+__ (pour le contenu).
 
 1. [Télécharger la dernière version de `aem-guides-wknd.all.x.x.x.zip`](https://github.com/adobe/aem-guides-wknd/releases)
-1. Connectez-vous au gestionnaire de packages du SDK d’AEM à l’adresse [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) avec les informations d’identification `admin`.
+1. Connectez-vous au gestionnaire de packages d’AEM SDK à l’adresse [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) avec les informations d’identification `admin`.
 1. __Chargez__ le fichier `aem-guides-wknd.all.x.x.x.zip` téléchargé à l’étape 1.
 1. Appuyez sur le bouton __Installer__ pour l’entrée `aem-guides-wknd.all-x.x.x.zip`.
 
@@ -89,7 +89,7 @@ Pour effectuer une configuration rapide, des packages AEM qui contiennent la con
 
 1. [Télécharger ](./assets/quick-setup/wknd-app.all-1.0.0-SNAPSHOT.zip)
 1. [Télécharger ](./assets/quick-setup/wknd-app.ui.content.sample-1.0.1.zip)
-1. Connectez-vous au gestionnaire de packages du SDK d’AEM à l’adresse [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) avec les informations d’identification `admin`.
+1. Connectez-vous au gestionnaire de packages d’AEM SDK à l’adresse [http://localhost:4502/crx/packmgr](http://localhost:4502/crx/packmgr) avec les informations d’identification `admin`.
 1. __Chargez__ le fichier `wknd-app.all.x.x.x.zip` téléchargé à l’étape 1.
 1. Appuyez sur le bouton __Installer__ pour l’entrée `wknd-app.all.x.x.x.zip`.
 1. __Chargez__ le fichier `wknd-app.ui.content.sample.x.x.x.zip` téléchargé à l’étape 2.
@@ -125,7 +125,7 @@ $ npm install --legacy-peer-deps
 $ npm run start
 ```
 
-Vérifiez que la SPA est en cours d’exécution à l’adresse [http://localhost:3000](http://localhost:3000).
+Vérifiez que la SPA s’exécute à l’adresse [http://localhost:3000](http://localhost:3000).
 
 ## Créer du contenu dans l’éditeur de SPA d’AEM
 

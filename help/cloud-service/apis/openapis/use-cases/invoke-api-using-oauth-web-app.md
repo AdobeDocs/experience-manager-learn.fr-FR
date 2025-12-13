@@ -4,7 +4,7 @@ description: Découvrez comment appeler les API AEM basées sur OpenAPI sur AEM�
 version: Experience Manager as a Cloud Service
 feature: Developing
 topic: Development, Architecture, Content Management
-role: Architect, Developer, Leader
+role: Developer, Leader
 level: Intermediate
 doc-type: Tutorial
 jira: KT-16718
@@ -12,8 +12,8 @@ thumbnail: KT-16718.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 9cf7c318-2be4-4b26-bd6f-0c80d002db45
-source-git-commit: 723c439202b8e00e7b3236a50641ee1f2f6a4d9c
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '2262'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ L’application WKND PIM est un exemple d’application web conçue pour gérer 
 
 Le projet Adobe Developer Console (ADC) est configuré pour accéder à l’API de création Assets à l’aide de l’authentification de l’application web OAuth. Il fournit les _client_id_ et _client_secret_ nécessaires à l’application web WKND-PIM pour lancer le flux d’octroi _authorization_code_.
 
->[!VIDEO](https://video.tv.adobe.com/v/3442759?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3442757?quality=12&learn=on)
 
 
 Le diagramme suivant illustre le flux fonctionnel de l’application web WKND-PIM _obtention de jetons d’accès spécifiques à l’utilisateur ou à l’utilisatrice pour interagir avec l’API de création Assets_.
@@ -507,7 +507,7 @@ Par défaut, le projet WKND Sites ne dispose pas du schéma de métadonnées de 
 
 Créons ensuite le schéma de métadonnées spécifique à l’attribut PIM et appliquons-le au dossier **PIM**.
 
-1. Accédez à l’option **Paramètres** > **Formulaires de métadonnées** dans le rail de gauche, puis cliquez sur le bouton **Créer**.
+1. Accédez à l’option **Paramètres** > **Formulaires de métadonnées** dans le rail de gauche, puis cliquez sur le bouton **Créer**.
 
 1. Dans la boîte de dialogue **Créer un formulaire de métadonnées**, saisissez les détails suivants, puis cliquez sur **Créer**.
    - Nom : `PIM`

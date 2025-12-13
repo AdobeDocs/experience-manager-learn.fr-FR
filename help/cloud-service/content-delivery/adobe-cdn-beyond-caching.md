@@ -4,7 +4,7 @@ description: Découvrez les fonctionnalités avancées du réseau CDN Adobe au-d
 version: Experience Manager as a Cloud Service
 feature: Website Performance, CDN Cache
 topic: Architecture, Performance, Content Management
-role: Developer, Architect, User, Leader
+role: Developer, User, Leader
 level: Beginner
 doc-type: Article
 duration: 0
@@ -12,8 +12,8 @@ last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: 8948a900-01e9-49ed-9ce5-3a057f5077e4
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Outre la mise en cache de contenu, le réseau CDN Adobe propose plusieurs foncti
 
 Ces fonctionnalités sont des fonctionnalités en **libre-service**. Configuré dans le fichier `cdn.yaml` de votre projet AEM et déployé à l’aide du pipeline de configuration Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440271?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
 
 ## Configuration du trafic sur le réseau CDN
 

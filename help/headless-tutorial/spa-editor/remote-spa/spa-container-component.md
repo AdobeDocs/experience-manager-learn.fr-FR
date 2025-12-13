@@ -3,7 +3,7 @@ title: Ajouter des composants de conteneur modifiables React à une SPA distante
 description: Découvrez comment les créateurs et créatrices d’AEM peuvent ajouter des composants de conteneur modifiables à une SPA distante en procédant par glisser-déposer.
 topic: Headless, SPA, Development
 feature: SPA Editor, Core Components, APIs, Developing
-role: Developer, Architect
+role: Developer
 level: Beginner
 jira: KT-7635
 thumbnail: kt-7635.jpeg
@@ -13,10 +13,10 @@ doc-type: Tutorial
 exl-id: e5e6204c-d88c-4e79-a7f4-0cfc140bc51c
 duration: 306
 hide: true
-source-git-commit: 5b008419d0463e4eaa1d19c9fe86de94cba5cb9a
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1112'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -364,7 +364,7 @@ Après la mise à jour de la SPA pour incorporer `<ResponsiveGrid...>` et les wr
    ![Composants de disposition.](./assets/spa-container-component/layout-components.png)
 
 1. __Prévisualisez__ vos modifications dans l’éditeur de page d’AEM.
-1. Actualisez l’application WKND s’exécutant localement sur [http://localhost:3000](http://localhost:3000) pour afficher les modifications.
+1. Actualisez l’application WKND s’exécutant localement sur [http://localhost:3000](http://localhost:3000) pour afficher les modifications créées.
 
    ![Composant de conteneur dans la SPA.](./assets/spa-container-component/localhost-final.png)
 
@@ -375,7 +375,7 @@ Vous avez ajouté un composant de conteneur qui autorise les composants modifiab
 
 * Utiliser le composant `ResponsiveGrid` du composant React modifiable d’AEM dans la SPA
 * Créer et enregistrer des composants React modifiables (texte et image) à utiliser dans la SPA via le composant de conteneur
-* Configurer le modèle de page SPA distante pour autoriser les composants SPA
+* Configurer le modèle de page SPA distante pour autoriser les composants compatibles avec les SPA
 * Ajouter des composants modifiables au composant de conteneur
 * Créer et disposer des composants dans l’éditeur de SPA.
 

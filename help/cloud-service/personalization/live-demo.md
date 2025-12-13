@@ -4,13 +4,13 @@ description: Faites l’expérience de la personnalisation en action sur le site
 version: Experience Manager as a Cloud Service
 feature: Personalization, Integrations
 topic: Personalization, Integrations
-role: Developer, Architect, Leader, User
+role: Developer, Leader, User
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-11-03T00:00:00Z
 jira: KT-19546
 thumbnail: KT-19546.jpeg
-source-git-commit: ed7af09d747d54a84d2583073d3c731388b5f516
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Visitez le [site web d’activation de WKND](https://wknd.enablementadobe.com/us/en.html){target="wknd"} pour consulter des exemples concrets de tests A/B, de ciblage comportemental et de personnalisation d’utilisateurs et utilisatrices connus.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476463/?captions=fre_fr&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476461/?learn=on&enablevpops)
 
 Cette page vous guide à travers des démonstrations pratiques de chaque scénario de personnalisation. Utilisez-le pour explorer les possibilités avant de créer ces fonctionnalités sur votre propre site AEM.
 
@@ -62,7 +62,7 @@ Ces expériences sont basées sur le comportement historique et s’affichent lo
 | Page | Ce que vous verrez | Test | Expérience |
 |------|-----------------|-------------|------------|
 | [Adventures.](https://wknd.enablementadobe.com/us/en/adventures.html){target="wknd"} | Un héros du surf avec des **planches de surf colorées sous les palmiers** avec un message « Votre Parcours de surf commence ici » et du contenu de destination de surf organisé en fonction de vos intérêts | Visitez plusieurs [aventures liées au surf](https://wknd.enablementadobe.com/us/en/adventures.html#tabs-b4210c6ff3-item-b411b19941-tab){target="wknd"}, puis revenez à la page Adventures le lendemain | ![Aventures - Surfing Hero](./assets/live-demo/behavioral-adventures-surfing-hero.png){width="200" zoomable="yes"} |
-| [Magazine](https://wknd.enablementadobe.com/us/en/magazine.html){target="wknd"} | Une **offre d’abonnement personnalisée à un magazine** proposant des destinations de voyage dans le monde entier avec un van VW classique, mettant l’accent sur « Votre expérience personnalisée de magazine » avec des avantages exclusifs pour les abonnés | [&#x200B; Lisez 3 articles de magazine ou plus](https://wknd.enablementadobe.com/us/en/magazine.html){target="wknd"} puis revenez à la page de destination du magazine le lendemain | ![Magazine - S&#39;abonner au héros](./assets/live-demo/behavioral-magazine-subscribe-hero.png){width="200" zoomable="yes"} |
+| [Magazine](https://wknd.enablementadobe.com/us/en/magazine.html){target="wknd"} | Une **offre d’abonnement personnalisée à un magazine** proposant des destinations de voyage dans le monde entier avec un van VW classique, mettant l’accent sur « Votre expérience personnalisée de magazine » avec des avantages exclusifs pour les abonnés | [ Lisez 3 articles de magazine ou plus](https://wknd.enablementadobe.com/us/en/magazine.html){target="wknd"} puis revenez à la page de destination du magazine le lendemain | ![Magazine - S&#39;abonner au héros](./assets/live-demo/behavioral-magazine-subscribe-hero.png){width="200" zoomable="yes"} |
 
 **En savoir plus :** vous êtes prêt à implémenter le ciblage comportemental sur votre propre site AEM ? Commencez par le [tutoriel sur le ciblage comportemental](./use-cases/behavioral-targeting.md) pour découvrir l’ensemble du processus de configuration.
 

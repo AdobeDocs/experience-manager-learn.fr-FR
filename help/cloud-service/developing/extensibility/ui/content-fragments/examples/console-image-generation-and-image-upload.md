@@ -12,8 +12,8 @@ doc-type: article
 last-substantial-update: 2024-01-26T00:00:00Z
 exl-id: f3047f1d-1c46-4aee-9262-7aab35e9c4cb
 duration: 1438
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ Le flux fonctionnel de l’exemple d’extension est le suivant :
 1. L’envoi du formulaire envoie le texte `Image Description` fourni par l’utilisateur ou utilisatrice, le fragment de contenu sélectionné et l’hôte AEM à la fonction [action Adobe I/O Runtime personnalisée](#adobe-io-runtime-action).
 1. L’[action Adobe I/O Runtime](#adobe-io-runtime-action) valide les entrées.
 1. Ensuite, elle appelle l’API [Image generation](https://beta.openai.com/docs/guides/images/image-generation-beta) d’OpenAI et utilise le texte `Image Description` pour spécifier l’image à générer.
-1. Le point d’entrée de [génération d’images](https://beta.openai.com/docs/guides/images/image-generation-beta) crée une image d’origine de taille _1024 x 1024_ pixels utilisant la valeur du paramètre de demande d’invite et renvoie l’URL de l’image générée en tant que réponse.
+1. Le point d’entrée de [génération d’images](https://beta.openai.com/docs/guides/images/image-generation-beta) crée une image d’origine de taille _1024 x 1024_ pixels utilisant la valeur du paramètre de demande de prompt et renvoie l’URL de l’image générée en tant que réponse.
 1. L’[action Adobe I/O Runtime](#adobe-io-runtime-action) télécharge l’image générée sur le runtime du créateur d’applications.
 1. Elle lance ensuite le chargement de l’image à partir du runtime du créateur d’applications vers AEM DAM sous un chemin prédéfini.
 1. AEM as a Cloud Service enregistre l’image dans la gestion des ressources numériques et renvoie les réponses de succès ou d’échec à l’action Adobe I/O Runtime. La réponse de chargement réussie met à jour la valeur de propriété d’image du fragment de contenu sélectionné à l’aide d’une autre requête HTTP à AEM à partir de l’action Adobe I/O Runtime.
@@ -53,7 +53,7 @@ Le flux fonctionnel de l’exemple d’extension est le suivant :
 Cet exemple s’étend jusqu’au point d’extension `actionBar` pour ajouter un bouton personnalisé à la console de fragments de contenu.
 
 | Interface utilisateur AEM étendue | Point d’extension |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Console Fragments de contenu](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/) | [Barre d’actions](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) |
 
 ## Exemple d’extension

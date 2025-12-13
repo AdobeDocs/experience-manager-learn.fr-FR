@@ -4,7 +4,7 @@ description: Découvrez les nouvelles fonctionnalités du hub de contenus, notam
 cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Assets
 feature-set: Experience Manager, Experience Manager Assets
-role: Leader, User, Developer, Admin, Architect
+role: Leader, User, Developer, Admin
 level: Beginner, Intermediate, Experienced
 type: Event
 doc-type: Video Clip
@@ -14,8 +14,8 @@ index: false
 hide: true
 hidefromtoc: true
 exl-id: eac1d731-6860-4af4-aba4-bc93abb40073
-source-git-commit: b11d9d6844d6f551083c1d8e4a2e7c076965a713
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 100%
 
@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez les nouvelles fonctionnalités du hub de contenus, notamment le contrôle d’accès basé sur les attributs, les pages de destination de marque et la recherche unifiée sur toutes les plateformes.
 
->[!VIDEO](https://video.tv.adobe.com/v/3461812/?learn=on&enablevpops&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3459223/?learn=on&enablevpops)

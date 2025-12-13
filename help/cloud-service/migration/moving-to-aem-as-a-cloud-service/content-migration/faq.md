@@ -5,16 +5,16 @@ version: Experience Manager as a Cloud Service
 doc-type: article
 topic: Migration
 feature: Migration
-role: Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-11200
 thumbnail: kt-11200.jpg
 exl-id: bdec6cb0-34a0-4a28-b580-4d8f6a249d01
 duration: 399
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
-source-wordcount: '1878'
-ht-degree: 100%
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
+source-wordcount: '1877'
+ht-degree: 99%
 
 ---
 
@@ -79,7 +79,7 @@ Si des environnements de clonage sont utilisés pour la migration, cela n’a au
 
 ### Q : Que signifient les termes « effacer » et « remplacer » dans le contexte du CTT ?
 
-Dans le contexte de la [phase d’extraction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#extraction-setup-phase), les options sont soit de remplacer les données du conteneur d’évaluation des cycles d’extraction précédents, soit d’y ajouter la différence (ajout/mise à jour/suppression). Le conteneur d’évaluation n’est rien d’autre que le conteneur de stockage d’objets blob associé au jeu de migration. Chaque jeu de migration obtient son propre conteneur d’évaluation.
+Dans le contexte de la [phase d’extraction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#extraction-setup-phase), les options sont soit de remplacer les données du conteneur d’évaluation des cycles d’extraction précédents, soit d’y ajouter la différence (ajout/mise à jour/suppression). Le conteneur d’évaluation n’est rien d’autre que le conteneur de stockage d’objets blob associé à l’ensemble de migration. Chaque ensemble de migration obtient son propre conteneur d’évaluation.
 
 Dans le contexte de la [phase d’ingestion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=fr), les options sont + pour remplacer l’intégralité du référentiel de contenu d’AEMaaCS ou synchroniser le contenu différentiel (ajouté/mis à jour/supprimé) du conteneur de migration d’évaluation.
 
@@ -87,8 +87,8 @@ Dans le contexte de la [phase d’ingestion](https://experienceleague.adobe.com/
 
 Oui c’est possible, mais cela nécessite une bonne planification concernant :
 
-+ La création de jeux de migration en supposant que les sites soient des ressources dans leurs hiérarchies respectives.
-   + Vérifiez s’il est acceptable de migrer toutes les ressources dans le cadre d’un jeu de migration, puis d’importer les sites qui les utilisent par phases.
++ La création d’ensembles de migration en supposant que les sites soient des ressources dans leurs hiérarchies respectives.
+   + Vérifiez s’il est acceptable de migrer toutes les ressources dans le cadre d’un ensemble de migration, puis d’importer les sites qui les utilisent par phases.
 + Dans l’état actuel, le processus d’ingestion de l’instance de création la rend indisponible pour la création de contenu même si le niveau de publication peut toujours diffuser le contenu.
    + Cela signifie que jusqu’à ce que l’ingestion soit terminée dans la création, les activités de création de contenu sont gelées.
 + Les personnes ne sont plus migrées, bien que les groupes le soient.
@@ -99,7 +99,7 @@ Consultez le processus d’extraction et d’ingestion de complément comme docu
 
 Oui. Le trafic des utilisateurs et utilisatrices finaux n’est pas interrompu par l’activité de migration de contenu. Cependant, l’ingestion de l’instance de création gèle la création de contenu jusqu’à ce qu’elle se termine.
 
-### Q : Le rapport BPA affiche les éléments liés aux rendus originaux manquants. Dois-je les nettoyer à la source avant de les extraire ?
+### Q : Le rapport BPA affiche les éléments liés aux rendus originaux manquants. Dois-je les nettoyer à la source avant l’extraction ?
 
 Oui. Le rendu original manquant signifie que le fichier binaire de la ressource n’est pas correctement chargé en premier lieu. Sachant qu’il s’agit de mauvaises données, veuillez les passer en revue et les sauvegarder à l’aide du gestionnaire de modules (selon les besoins) et les supprimer d’AEM source avant d’exécuter l’extraction. Les mauvaises données auront des résultats négatifs sur les étapes de traitement des ressources.
 
@@ -107,7 +107,7 @@ Oui. Le rendu original manquant signifie que le fichier binaire de la ressource 
 
 Lorsque `jcr:content` est absent au niveau du dossier, toute action de propagation des paramètres tels que les traitements de profils. des parents vont rompre à ce niveau. Veuillez consulter la raison de l’absence de `jcr:content`. Même si ces dossiers peuvent être migrés, sachez qu’ils dégradent l’expérience utilisateur et finissent par provoquer des cycles de dépannage inutiles.
 
-### Q : J’ai créé un jeu de migration. Est-il possible de vérifier sa taille ?
+### Q : J’ai créé un ensemble de migration. Est-il possible de vérifier sa taille ?
 
 Oui, il existe une fonction [Vérifier la taille](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#migration-set-size) dans le CTT.
 

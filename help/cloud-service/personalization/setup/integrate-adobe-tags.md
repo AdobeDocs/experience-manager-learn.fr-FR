@@ -4,15 +4,15 @@ description: Découvrez comment intégrer AEM as a Cloud Service à Tags dan
 version: Experience Manager as a Cloud Service
 feature: Personalization, Integrations
 topic: Personalization, Integrations, Architecture, Content Management
-role: Developer, Architect, Leader, Data Architect, User
+role: Developer, Leader, User
 level: Beginner
 doc-type: Tutorial
 last-substantial-update: 2025-08-07T00:00:00Z
 jira: KT-18719
 thumbnail: null
 exl-id: 71cfb9f5-57d9-423c-bd2a-f6940cc0b4db
-source-git-commit: df83c5a6436dba264bad72e485ee152a2a39d513
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 100%
 

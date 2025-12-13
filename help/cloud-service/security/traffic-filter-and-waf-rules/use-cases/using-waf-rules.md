@@ -4,7 +4,7 @@ description: Découvrez comment protéger les sites web AEM contre les menaces s
 version: Experience Manager as a Cloud Service
 feature: Security
 topic: Security, Administration, Architecture
-role: Admin, Architect
+role: Admin, Developer
 level: Intermediate
 doc-type: Tutorial
 last-substantial-update: 2025-06-04T00:00:00Z
@@ -12,8 +12,8 @@ badgeLicense: label="Nécessite une licence." type="positive" before-title="true
 jira: KT-18308
 thumbnail: null
 exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
-source-git-commit: 22a35b008de380bf2f2ef5dfde6743261346df89
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1376'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Les attaques sophistiquées se caractérisent par des taux de demande élevés, 
 > Les règles de filtrage de trafic WAF nécessitent une licence supplémentaire de **protection WAF-DDoS** ou de **sécurité renforcée**. Les règles de filtrage de trafic standard sont disponibles par défaut pour les clientes et clients Sites et Forms.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469432/?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## Objectifs d’apprentissage
 

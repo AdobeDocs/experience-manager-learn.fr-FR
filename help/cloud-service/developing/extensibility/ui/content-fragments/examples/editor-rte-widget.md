@@ -12,8 +12,8 @@ doc-type: article
 last-substantial-update: 2023-06-12T00:00:00Z
 exl-id: 167a4b11-1202-4c7a-b022-f3f996348a4e
 duration: 476
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Découvrez comment ajouter des widgets à l’éditeur de texte enrichi (RTE) dans l’éditeur de fragment de contenu AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447434?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3420822?quality=12&learn=on)
 
 Pour ajouter du contenu dynamique dans l’éditeur de texte enrichi (RTE), utilisez la fonctionnalité **widgets**. Les widgets permettent d’intégrer l’interface utilisateur simple ou complexe à l’éditeur de texte enrichi. Cette interface utilisateur peut être créée à l’aide du framework JS de votre choix. Les widgets sont en quelque sorte des boîtes de dialogue qui sont ouvertes en appuyant sur la touche spéciale `{` dans l’éditeur de texte enrichi.
 
@@ -40,7 +40,7 @@ Pour ne pas rendre l’exemple trop complexe, le framework [Adobe React Spectr
 Cet exemple s’étend jusqu’au point d’extension `rte` pour ajouter un widget à l’éditeur de texte enrichi dans l’éditeur de fragments de contenu.
 
 | Interface utilisateur AEM étendue | Point d’extension |
-| ------------------------ | --------------------- | 
+| ------------------------ | --------------------- |
 | [Éditeur de fragment de contenu](https://developer.adobe.com/uix/docs/services/aem-cf-editor/) | [Widgets de l’éditeur de texte enrichi](https://developer.adobe.com/uix/docs/services/aem-cf-editor/api/rte-widgets/) |
 
 ## Exemple d’extension
@@ -119,7 +119,7 @@ Dans le composant React principal `App.js`, ajoutez l’itinéraire `discountCod
 L’interface utilisateur du widget ou de la boîte de dialogue est créée à l’aide du framework [Adobe React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html). Le code du composant `DiscountCodes` est le suivant, en voici les points essentiels :
 
 + L’interface utilisateur est rendue à l’aide des composants React Spectrum, tels que [ComboBox](https://react-spectrum.adobe.com/react-spectrum/ComboBox.html), [ButtonGroup](https://react-spectrum.adobe.com/react-spectrum/ButtonGroup.html) et [Button](https://react-spectrum.adobe.com/react-spectrum/Button.html).
-+ Le tableau `adventureDiscountCodes` a un mappage codé en dur du nom de l’aventure et du code promotionnel. Dans un scénario réel, ces données peuvent être récupérées à partir d’une action Adobe AppBuilder ou de systèmes externes tels que PIM, OMS ou d’une passerelle API locale ou basée sur un fournisseur cloud.
++ Le tableau `adventureDiscountCodes` a un mappage codé en dur du nom de l’aventure et du code promotionnel. Dans un scénario réel, ces données peuvent être récupérées à partir d’une action Adobe AppBuilder ou de systèmes externes tels que PIM, OMS ou d’une passerelle API locale ou basée sur un fournisseur de services cloud.
 + La fonction `guestConnection` est initialisée à l’aide du [hook React](https://react.dev/reference/react/useEffect) `useEffect` et gérée en tant que statut du composant. Elle est utilisé pour communiquer avec l’hôte AEM.
 + La fonction `handleDiscountCodeChange` récupère le code promotionnel s’appliquant au nom de l’aventure sélectionnée et met à jour la variable de statut.
 + La fonction `addDiscountCode` utilisant l’objet `guestConnection` fournit des instructions d’exécution de l’éditeur de texte enrichi. Dans cet exemple, il s’agit de l’instruction `insertContent` et de l’extrait de code HTML du code promotionnel applicable à insérer dans l’éditeur de texte enrichi.

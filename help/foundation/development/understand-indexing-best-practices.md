@@ -6,14 +6,14 @@ sub-product: Experience Manager, Experience Manager Sites
 feature: Search
 doc-type: Article
 topic: Development
-role: Developer, Architect
+role: Developer
 level: Beginner
 duration: 373
 last-substantial-update: 2024-01-04T00:00:00Z
 jira: KT-14745
 thumbnail: KT-14745.jpeg
 exl-id: 3fd4c404-18e9-44e5-958f-15235a3091d5
-source-git-commit: 1048beba42011eccb1ebdd43458591c8e953fb8a
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 97%
@@ -41,7 +41,7 @@ Parfois, vous devez créer des index personnalisés pour répondre à vos besoin
 
 - Comprenez les exigences de recherche et vérifiez si les index prêts à l’emploi peuvent répondre à vos besoins de recherche. Utilisez l’**outil de performances des requêtes**, disponible sur le [SDK local](http://localhost:4502/libs/granite/operations/content/diagnosistools/queryPerformance.html) et AEMCS via la Developer Console ou `https://author-pXXXX-eYYYY.adobeaemcloud.com/ui#/aem/libs/granite/operations/content/diagnosistools/queryPerformance.html?appId=aemshell`.
 
-- Définissez une requête optimale, utilisez le graphique de flux [optimisation des requêtes](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) et l’[aide-mémoire pour les requêtes JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf?lang=fr) à titre de référence.
+- Définissez une requête optimale, utilisez le graphique de flux [optimisation des requêtes](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices) et l’[aide-mémoire pour les requêtes JCR](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) à titre de référence.
 
 - Si les index prêts à l’emploi ne répondent pas aux besoins de recherche, vous disposez de deux options. Toutefois, passez en revue les [Conseils pour créer des index efficaces](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/implementing/deploying/practices/best-practices-for-queries-and-indexing).
    - Personnaliser l’index prêt à l’emploi : option préférée, car il est facile de le gérer et de le mettre à niveau.
@@ -112,7 +112,7 @@ La bonne méthode consiste à personnaliser l’index prêt à l’emploi et à 
 
 L’image ci-dessous affiche l’index personnalisé pour le type de nœud `dam:Asset` avec la propriété `includedPaths` définie sur un chemin d’accès spécifique.
 
-![Index sur la gestion des ressources numériques:Asset type de nœud &#x200B;](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
+![Index sur la gestion des ressources numériques:Asset type de nœud ](./assets/understand-indexing-best-practices/index-for-damAsset-type.png)
 
 ##### Analyse
 

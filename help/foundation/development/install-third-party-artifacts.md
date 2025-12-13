@@ -4,7 +4,7 @@ description: Découvrez comment installer des artefacts tiers qui ne sont *pas d
 version: Experience Manager 6.5, Experience Manager as a Cloud Service
 feature: OSGI
 topic: Development
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 0
@@ -12,8 +12,8 @@ last-substantial-update: 2024-09-13T00:00:00Z
 jira: KT-16207
 thumbnail: KT-16207.jpeg
 exl-id: 0cec14b3-4be5-4666-a36c-968ea2fc634f
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ En règle générale, vous installez le lot tiers, un package *disponible* dans 
 
 Par exemple :
 
-- Le **lot** [AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components) est ajouté en tant que dépendance dans le fichier `pom.xml` du [projet WKND](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753). Ici, la portée `provided` est utilisée tandis que le lot AEM WCM Core Components est fourni par l’environnement d’exécution AEM. Si le lot n’est pas fourni par l’environnement d’exécution AEM, utilisez alors la portée `compile`, qui est la portée par défaut.
+- Le **lot** [AEM WCM Core Components](https://github.com/adobe/aem-core-wcm-components) est ajouté en tant que dépendance dans le fichier `pom.xml` du [projet WKND](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L747-L753). Ici, la portée `provided` est utilisée tandis que le bundle AEM WCM Core Components est fourni par l’environnement d’exécution AEM. Si le lot n’est pas fourni par l’environnement d’exécution AEM, utilisez alors la portée `compile`, qui est la portée par défaut.
 
 - Le **package** [WKND Shared](https://github.com/adobe/aem-guides-wknd-shared) est ajouté en tant que dépendance dans le fichier `pom.xml` du [projet WKND](https://github.com/adobe/aem-guides-wknd/blob/main/pom.xml#L767-L773).
 
@@ -383,7 +383,7 @@ La première étape consiste à ajouter le package au module `all` du projet WKN
 
 - Vérifiez le package ACS AEM Commons installé :
 
-   - Gestionnaire de packages @ `http://localhost:4502/crx/packmgr/index.jsp`
+   - Gestionnaire de modules @ `http://localhost:4502/crx/packmgr/index.jsp`
 
      ![Package de version ACS AEM Commons SNAPSHOT](./assets/install-third-party-articafcts/acs-aem-commons-snapshot-package.png)
 

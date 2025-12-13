@@ -3,15 +3,15 @@ title: 'Chapitre 3 : Analyse avancée de la mise en cache dans le Dispatcher'
 description: Il s’agit de la partie 3 d’une série en trois parties sur la mise en cache dans AEM. Les deux premières parties portaient sur la mise en cache HTTP simple dans le Dispatcher et leurs limites. Cette partie présente quelques idées sur la manière de surmonter ces limites.
 feature: Dispatcher
 topic: Architecture
-role: Architect
+role: Developer
 level: Intermediate
 doc-type: Tutorial
 exl-id: 7c7df08d-02a7-4548-96c0-98e27bcbc49b
 duration: 1353
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '6172'
-ht-degree: 100%
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
+source-wordcount: '6173'
+ht-degree: 99%
 
 ---
 
@@ -125,7 +125,7 @@ Chacune des couches introduites dans le dernier chapitre apporte une certaine va
 Il existe trois stratégies d’invalidation de base :
 
 * **TTL, Time to Live :** un objet expire après un délai fixe (par exemple, « dans 2 heures »).
-* **Date d’expiration :** l’objet expire au moment défini (par exemple, « 17 h 00 le 10 juin 2019 »).
+* **Date d’expiration :** l’objet expire à une heure définie dans le futur (par exemple, « 17 :00 le 10 juin 2019 »)
 * **Basée sur un événement :** l’objet est invalidé explicitement par un événement qui s’est produit dans la plateforme (par exemple, lorsqu’une page est modifiée et activée).
 
 Vous pouvez maintenant utiliser différentes stratégies sur différentes couches de cache, mais il y en a des « dangereuses ».

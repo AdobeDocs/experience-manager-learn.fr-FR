@@ -12,8 +12,8 @@ jira: KT-13270
 thumbnail: KT-13270.jpeg
 exl-id: 6e5e3cb4-9a47-42af-86af-da33fd80cb47
 duration: 175
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 100%
 
@@ -55,8 +55,8 @@ Tout au long du tutoriel, nous vous proposons des explications, des exemples de 
    | Type de données | Nom | Requis | Options |
    |----------|------|----------|---------|
    | Référence de contenu | Ressource | Oui | Ajoutez une image par défaut si vous le souhaitez. Par exemple : /content/dam/wknd-headless/assets/AdobeStock_307513975.mp4. |
-   | Une seule ligne de texte | Titre | Oui |
-   | Texte monoligne | Pré-titre | Non |
+   | Une seule ligne de texte | Titre | Oui | |
+   | Texte monoligne | Pré-titre | Non | |
    | Texte multiligne | Description | Non | Assurez-vous que le type par défaut est de texte enrichi. |
    | Énumération | Style | Oui | Effectuez le rendu sous forme de liste déroulante. Les options sont Héros -> Héros et En vedette -> En vedette. |
 
@@ -115,9 +115,9 @@ Tout au long du tutoriel, nous vous proposons des explications, des exemples de 
 
 ## Requêtes persistantes GraphQL
 
-1. Testons le nouveau point d’entrée. Accédez à __Outils > Éditeur de requêtes GraphQL__ et sélectionnez notre point d’entrée dans la liste déroulante en haut à droite de la fenêtre.
+1. Testons le nouveau point d’entrée. Accédez à __Outils > Requêteur GraphQL__ et sélectionnez notre point d’entrée dans la liste déroulante en haut à droite de la fenêtre.
 
-1. Dans l’éditeur de requêtes, créez quelques requêtes différentes.
+1. Dans le requêteur, créez quelques requêtes différentes.
 
 
    ```graphql
@@ -132,7 +132,7 @@ Tout au long du tutoriel, nous vous proposons des explications, des exemples de 
 
    Vous devriez obtenir une liste contenant le fragment unique créé [plus haut](#create-content).
 
-   Pour cet exercice, créez une requête complète utilisée par l’application AEM Headless. Créez une requête qui renvoie un seul teaser par chemin d’accès. Dans l’éditeur de requêtes, saisissez la requête suivante :
+   Pour cet exercice, créez une requête complète utilisée par l’application AEM Headless. Créez une requête qui renvoie un seul teaser par chemin d’accès. Dans le requêteur, saisissez la requête suivante :
 
    ```graphql
    query TeaserByPath($path: String!) {

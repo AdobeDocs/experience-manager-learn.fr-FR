@@ -4,7 +4,7 @@ description: Découvrez comment configurer un environnement de développement lo
 version: Experience Manager as a Cloud Service
 feature: Developer Tools, Headless
 topic: Development, Content Management
-role: Architect, Developer
+role: Developer
 level: Intermediate
 doc-type: Tutorial
 duration: 189
@@ -12,8 +12,8 @@ last-substantial-update: 2024-04-19T00:00:00Z
 jira: KT-15359
 thumbnail: KT-15359.png
 exl-id: 47bef697-5253-493a-b9f9-b26c27d2db56
-source-git-commit: 7c58c5cb6a3d99a9577206b3e5e0b8dcd55a850e
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Découvrez comment configurer un environnement de développement local pour modifier le contenu d’une application React à l’aide de l’éditeur universel d’AEM.
 
-## Prérequis
+## Conditions préalables
 
 Pour suivre ce tutoriel, vous devez suivre les étapes ci-après :
 
@@ -45,7 +45,7 @@ Pour installer l’environnement de développement local, procédez comme suit 
 
 Pour fournir le contenu de l’application React WKND Teams, installez les packages suivants dans le SDK AEM local.
 
-- [WKND Teams - Package de contenu](./assets/basic-tutorial-solution.content.zip) : contient les modèles de fragment de contenu, les fragments de contenu et les requêtes GraphQL persistantes.
+- [WKND Teams - Module de contenu](./assets/basic-tutorial-solution.content.zip) : contient les modèles de fragment de contenu, les fragments de contenu et les requêtes GraphQL persistantes.
 - [WKND Teams - Package de configuration](./assets/basic-tutorial-solution.ui.config.zip) : contient les configurations CORS (Cross-Origin Resource Sharing) et de gestionnaire d’authentification du jeton. La norme CORS facilite les propriétés web non AEM pour effectuer des appels côté client basés sur un navigateur vers l’API GraphQL d’AEM et le gestionnaire d’authentification du jeton est utilisé pour authentifier chaque demande vers AEM.
 
   ![WKND Teams - Packages](./assets/wknd-teams-packages.png)

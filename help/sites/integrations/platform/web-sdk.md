@@ -4,7 +4,7 @@ description: Découvrez comment intégrer AEM Sites as a Cloud Service au S
 version: Experience Manager as a Cloud Service
 feature: Integrations
 topic: Integrations, Architecture
-role: Admin, Architect, Data Architect, Developer
+role: Admin, Developer
 level: Beginner, Intermediate
 doc-type: Tutorial
 last-substantial-update: 2023-04-26T00:00:00Z
@@ -14,8 +14,8 @@ badgeIntegration: label="Intégration" type="positive"
 badgeVersions: label="AEM Sites as a Cloud Service" before-title="false"
 exl-id: 47df99e6-6418-43c8-96fe-85e3c47034d6
 duration: 1303
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 100%
 
@@ -190,7 +190,7 @@ Après avoir lié la propriété de balise, le site WKND peut charger la bibliot
 + La version de la bibliothèque SDK web de Platform, l’ID de train de données.
 + L’objet XDM en tant qu’attribut `events` dans le SDK web Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/3454495?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3418897?quality=12&learn=on)
 
 ## Créer un jeu de données - Experience Platform
 
