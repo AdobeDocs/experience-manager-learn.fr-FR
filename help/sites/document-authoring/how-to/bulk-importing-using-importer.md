@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment importer des pages web en masse à l’aide de l’outil Importateur d’AEM lors de la migration de site.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429597/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3445887/?captions=fre_fr&learn=on)

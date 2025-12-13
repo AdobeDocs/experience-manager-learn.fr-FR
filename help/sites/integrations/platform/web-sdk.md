@@ -190,7 +190,7 @@ Après avoir lié la propriété de balise, le site WKND peut charger la bibliot
 + La version de la bibliothèque SDK web de Platform, l’ID de train de données.
 + L’objet XDM en tant qu’attribut `events` dans le SDK web Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418897?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454495?captions=fre_fr&quality=12&learn=on)
 
 ## Créer un jeu de données - Experience Platform
 

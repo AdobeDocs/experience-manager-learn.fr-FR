@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Cette section présente les niveaux de création et de publication au sein de l’architecture d’Adobe Experience Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/32033?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36948?captions=fre_fr&quality=12&learn=on)

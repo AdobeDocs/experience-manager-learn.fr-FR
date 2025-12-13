@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez comment Cloud Acceleration Manager peut vous aider à passer rapidement et facilement à Experience Manager as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336689?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452716?captions=fre_fr&quality=12&learn=on)

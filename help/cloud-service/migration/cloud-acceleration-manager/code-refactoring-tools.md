@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez comment les outils de refactorisation du code d’AEM permettent d’automatiser la conversion des projets AEM existants pour qu’ils soient compatibles avec AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336693?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3444717?captions=fre_fr&quality=12&learn=on)

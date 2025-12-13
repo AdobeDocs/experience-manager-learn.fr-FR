@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez les nouvelles fonctionnalités du hub de contenus, notamment le contrôle d’accès basé sur les attributs, les pages de destination de marque et la recherche unifiée sur toutes les plateformes.
 
->[!VIDEO](https://video.tv.adobe.com/v/3459223/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3461812/?captions=fre_fr&learn=on&enablevpops)

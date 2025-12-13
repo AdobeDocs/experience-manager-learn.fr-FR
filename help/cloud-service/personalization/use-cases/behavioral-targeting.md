@@ -46,7 +46,7 @@ Rendez-vous sur le [site web WKND Enablement](https://wknd.enablementadobe.com/u
 
 - **Page Magazine** : lorsque les utilisateurs et utilisatrices lisent _trois articles ou plus_, ils sont classés dans l’audience **Magazine Readers** et voient une section principale personnalisée sur la page Magazine.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474001/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474003/?captions=fre_fr&learn=on&enablevpops)
 
 >[!TIP]
 >

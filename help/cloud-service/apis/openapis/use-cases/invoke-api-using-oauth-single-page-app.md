@@ -59,7 +59,7 @@ Le projet Adobe Developer Console (ADC) est configuré pour activer l’authen
 >Le projet ADC ne fournit PAS de _client_secret_. Au lieu de cela, la SPA génère un _code_verifier_ et un _code_challenge_ pour échanger en toute sécurité le code d’autorisation contre un _jeton d’accès_. Il n’est plus nécessaire de stocker un secret client côté client, ce qui renforce la sécurité.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3456964?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3456966?captions=fre_fr&quality=12&learn=on)
 
 
 

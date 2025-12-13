@@ -25,7 +25,7 @@ Découvrez comment purger ou supprimer la réponse HTTP mise en cache du réseau
 
 Dans ce tutoriel, découvrez comment configurer et utiliser la fonctionnalité Purger le jeton API pour purger le cache du réseau CDN de l’exemple de site [AEM WKND](https://github.com/adobe/aem-guides-wknd) à l’aide de la fonctionnalité de libre-service.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432948?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3436927?captions=fre_fr&quality=12&learn=on)
 
 ## Invalidation du cache et purge explicite
 

@@ -22,4 +22,4 @@ ht-degree: 100%
 
 Cette section présente le référentiel de contenu Java (JCR) utilisé par Adobe Experience Manager. Le JCR est la pierre angulaire de la pile de technologie d’AEM sur laquelle reposent la persistance du contenu, le stockage, la recherche, le contrôle d’accès sous-jacents, etc.
 
->[!VIDEO](https://video.tv.adobe.com/v/32030?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36951?captions=fre_fr&quality=12&learn=on)

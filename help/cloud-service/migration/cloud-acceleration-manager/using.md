@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Présentation détaillée des outils de Cloud Acceleration Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/336699?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454672?captions=fre_fr&quality=12&learn=on)

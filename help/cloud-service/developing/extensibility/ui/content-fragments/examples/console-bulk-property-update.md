@@ -21,7 +21,7 @@ ht-degree: 100%
 
 # Exemple de mise à jour en bloc de propriété
 
->[!VIDEO](https://video.tv.adobe.com/v/3412296?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3454451?captions=fre_fr&quality=12&learn=on)
 
 Cet exemple d’extensions de la console de fragments de contenu d’AEM est une [barre d’actions](https://developer.adobe.com/uix/docs/services/aem-cf-console-admin/api/action-bar/) qui met à jour en bloc une propriété de fragments de contenu vers une valeur commune.
 

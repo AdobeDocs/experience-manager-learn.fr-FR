@@ -24,7 +24,7 @@ ht-degree: 100%
 
 La vidéo suivante présente les opérations de base lors de l’utilisation de l’environnement de création AEM. Il s’appuie sur la console Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/31784?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36990?captions=fre_fr&quality=12&learn=on)
 
 Dans cette vidéo, les fonctionnalités suivantes sont abordées :
 

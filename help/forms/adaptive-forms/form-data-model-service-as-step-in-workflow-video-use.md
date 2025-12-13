@@ -22,7 +22,7 @@ ht-degree: 93%
 À partir d’AEM Forms 6.4, nous avons la possibilité d’utiliser le modèle de données de formulaire dans le cadre du workflow AEM. La vidéo suivante décrit les étapes nécessaires à la configuration de l’étape Modèle de données de formulaire dans le workflow AEM.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/21719?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330116?captions=fre_fr&quality=12&learn=on)
 
 Pour tester cette fonctionnalité sur votre serveur, suivez les instructions ci-dessous.
 

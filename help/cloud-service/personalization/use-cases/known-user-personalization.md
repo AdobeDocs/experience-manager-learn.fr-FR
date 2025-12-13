@@ -33,7 +33,7 @@ Votre organisation peut avoir différents cas d’utilisation pour la personnali
 
 ## Exemple de cas d’utilisation
 
->[!VIDEO](https://video.tv.adobe.com/v/3476105/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476111/?captions=fre_fr&learn=on&enablevpops)
 
 Dans ce tutoriel, à l’aide de l’exemple de site WKND [&#128279;](https://github.com/adobe/aem-guides-wknd), le processus montre comment **les utilisateurs connectés** qui ont acheté une Adventure **Ski** voient un héros personnalisé sur la page d’accueil **WKND**.
 

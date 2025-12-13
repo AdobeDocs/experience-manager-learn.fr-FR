@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez comment l’outil de migration des workflows de ressources vous aide à migrer vos workflows AEM Assets existants vers AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336697?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438974?captions=fre_fr&quality=12&learn=on)

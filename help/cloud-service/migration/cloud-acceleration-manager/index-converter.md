@@ -21,4 +21,4 @@ ht-degree: 100%
 
 Découvrez comment le convertisseur d’index convertit automatiquement les définitions d’index AEM existantes pour qu’elles soient compatibles avec AEM as a Cloud Service.
 
->[!VIDEO](https://video.tv.adobe.com/v/336696?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443775?captions=fre_fr&quality=12&learn=on)

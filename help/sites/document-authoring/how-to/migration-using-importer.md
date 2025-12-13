@@ -24,4 +24,4 @@ ht-degree: 100%
 
 Découvrez comment utiliser et configurer l’outil Importateur d’AEM pour migrer les sites créés avec la création de documents vers Edge Delivery Services.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429595/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443698/?captions=fre_fr&learn=on)
