@@ -1302,11 +1302,11 @@ Si vous installez une instance de création et de publication AEM prête à l’
 
 Si un client ou une cliente demande ce contenu entre-temps, le Dispatcher demandera et stockera du contenu obsolète.
 
-Une configuration plus fiable consiste à envoyer la demande d’invalidation depuis les systèmes de publication _après_ avoir reçu le contenu. L’article « [Invalidation du cache de Dispatcher depuis une instance de publication](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html?lang=fr#InvalidatingDispatcherCachefromaPublishingInstance) » décrit les détails.
+Une configuration plus fiable consiste à envoyer la demande d’invalidation depuis les systèmes de publication _après_ avoir reçu le contenu. L’article « [Invalidation du cache de Dispatcher depuis une instance de publication](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/page-invalidate.html?lang=fr#InvalidatingDispatcherCachefromaPublishingInstance) » décrit les détails.
 
 **Références**
 
-[helpx.adobe.com. Invalidation du cache de Dispatcher depuis une instance de publication](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html?lang=fr#InvalidatingDispatcherCachefromaPublishingInstance)
+[helpx.adobe.com. Invalidation du cache de Dispatcher depuis une instance de publication](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/page-invalidate.html?lang=fr#InvalidatingDispatcherCachefromaPublishingInstance)
 
 ### Mettre en cache des en-têtes et en-têtes HTTP
 
@@ -1454,7 +1454,7 @@ chose qu’il ne faut pas faire lorsque la charge est élevée.
 
 * [apache.org - Mod Rewrite](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
 
-* [helpx.adobe.com - Mappage des ressources](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/resource-mapping.html?lang=fr)
+* [helpx.adobe.com - Mappage des ressources](https://helpx.adobe.com/fr/experience-manager/6-4/sites/deploying/using/resource-mapping.html?lang=fr)
 
 ### Gestion des erreurs
 
@@ -1506,11 +1506,11 @@ Et bien sûr, vous pouvez appliquer votre propre combinaison des trois approche
 
 **Option 2**. L’absence de mise en cache n’est généralement pas souhaitable. Si vous optez pour cette méthode, assurez-vous que le volume de trafic et le nombre de ressources sensibles qui sont exclues sont faibles. Vous pouvez également vous assurer que le système de publication dispose d’un cache en mémoire installé, afin que les systèmes de publication puissent gérer la charge qui en résulte. Plus de détails sont disponibles dans la partie III de cette série.
 
-**Option 3**. La mise en cache sensible aux autorisations est une approche intéressante. Le Dispatcher met en cache une ressource, mais avant de la diffuser, il demande au système AEM l’autorisation de le faire. Cela crée une requête supplémentaire du Dispatcher vers l’instance de publication, mais évite généralement au système de publication d’afficher à nouveau le rendu d’une page si elle est déjà mise en cache. Cependant, cette approche nécessite une implémentation personnalisée. Pour plus d’informations, reportez-vous à l’article [Mise en cache sensible aux autorisations](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html?lang=fr).
+**Option 3**. La mise en cache sensible aux autorisations est une approche intéressante. Le Dispatcher met en cache une ressource, mais avant de la diffuser, il demande au système AEM l’autorisation de le faire. Cela crée une requête supplémentaire du Dispatcher vers l’instance de publication, mais évite généralement au système de publication d’afficher à nouveau le rendu d’une page si elle est déjà mise en cache. Cependant, cette approche nécessite une implémentation personnalisée. Pour plus d’informations, reportez-vous à l’article [Mise en cache sensible aux autorisations](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/permissions-cache.html?lang=fr).
 
 **Références**
 
-* [helpx.adobe.com - Mise en cache sensible aux autorisations](https://helpx.adobe.com/experience-manager/dispatcher/using/permissions-cache.html?lang=fr)
+* [helpx.adobe.com - Mise en cache sensible aux autorisations](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/permissions-cache.html?lang=fr)
 
 ### Définir le délai de grâce
 
@@ -1690,7 +1690,7 @@ Mais nous proposons que vous envisagiez de réduire l’espace URL le plus tôt 
 
 [apache.org - Directive sethandler](https://httpd.apache.org/docs/2.4/mod/core.html#sethandler)
 
-[helpx.adobe.com - Configuration de l’accès au filtre de contenu](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html?lang=fr#ConfiguringAccesstoContentfilter)
+[helpx.adobe.com - Configuration de l’accès au filtre de contenu](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html?lang=fr#ConfiguringAccesstoContentfilter)
 
 ### Filtrage à l’aide d’expressions régulières et de globs
 
@@ -1843,7 +1843,7 @@ Vous ajouterez probablement une nouvelle règle à l’un des groupes, voire vou
 
 **Références**
 
-[helpx.adobe.com - Création de modèles pour les propriétés glob](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html?lang=fr#DesigningPatternsforglobProperties)
+[helpx.adobe.com - Création de modèles pour les propriétés glob](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html?lang=fr#DesigningPatternsforglobProperties)
 
 ### Spécification du protocole
 
@@ -1904,17 +1904,17 @@ Liste des URL que vous souhaitez récupérer immédiatement après l’invalidat
 
 ## Ressources supplémentaires
 
-Vue d’ensemble et présentation de la mise en cache de Dispatcher : [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html).
+Vue d’ensemble et présentation de la mise en cache de Dispatcher : [https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html).
 
-Documentation du Dispatcher avec toutes les directives expliquées : [https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html).
+Documentation du Dispatcher avec toutes les directives expliquées : [https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
-Questions fréquentes : [https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/experience-manager/using/dispatcher-faq.html?lang=fr).
+Questions fréquentes : [https://helpx.adobe.com/fr/experience-manager/using/dispatcher-faq.html](https://helpx.adobe.com/fr/experience-manager/using/dispatcher-faq.html?lang=fr).
 
 Enregistrement d’un webinaire sur l’optimisation de Dispatcher (vivement recommandé) : [https://my.adobeconnect.com/p7th2gf8k43?proto=true](https://my.adobeconnect.com/p7th2gf8k43?proto=true).
 
 Présentation de la conférence « adaptTo() », « Le pouvoir sous-estimé de l’invalidation du contenu » de 2018 à Potsdam [https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html](https://adapt.to/2018/en/schedule/the-underappreciated-power-of-content-invalidation.html).
 
-Invalidation de pages mises en cache à partir d’AEM : [https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/page-invalidate.html).
+Invalidation de pages mises en cache à partir d’AEM : [https://helpx.adobe.com/fr/experience-manager/dispatcher/using/page-invalidate.html](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/page-invalidate.html).
 
 ## Étape suivante
 

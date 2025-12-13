@@ -87,7 +87,7 @@ Il est possible d’activer la sortie de port flexible à l’aide des API Cloud
 
 1. Tout d’abord, déterminez la région dans laquelle le réseau avancé est configuré à l’aide de l’opération [listRegions](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) de l’API Cloud Manager. Le `region name` est nécessaire pour effectuer les appels d’API Cloud Manager ultérieurs. En règle générale, la région dans laquelle l’environnement de production réside est utilisée.
 
-   Recherchez la région de votre environnement AEM as a Cloud Service dans [Cloud Manager](https://my.cloudmanager.adobe.com) sous les [détails de l’environnement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Le nom de région affiché dans Cloud Manager peut être [mappé au code de région](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilisé dans l’API Cloud Manager.
+   Recherchez la région de votre environnement AEM as a Cloud Service dans [Cloud Manager](https://my.cloudmanager.adobe.com) sous les [détails de l’environnement](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments). Le nom de région affiché dans Cloud Manager peut être [mappé au code de région](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) utilisé dans l’API Cloud Manager.
 
    __Requête HTTP listRegions__
 
@@ -221,7 +221,7 @@ Lors d’appels HTTP/HTTPS à des services externes sur des ports non standard, 
 
 >[!TIP]
 >
-> Consultez la documentation sur la sortie de port flexible d’AEM as a Cloud Service pour connaître [l’ensemble des règles de routage](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
+> Consultez la documentation sur la sortie de port flexible d’AEM as a Cloud Service pour connaître [l’ensemble des règles de routage](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking).
 
 #### Exemples de code
 
