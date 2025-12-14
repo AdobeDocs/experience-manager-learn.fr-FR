@@ -227,7 +227,7 @@ Une fois le VPN créé, vous pouvez le configurer à l’aide des API Cloud Man
 
    Définissez les paramètres JSON dans un fichier `vpn-configure.json` fourni à cURL via `... -d @./vpn-configure.json`.
 
-[Télécharger l’exemple vpn-configure.json](./assets/vpn-configure.json)
+   [Télécharger l’exemple vpn-configure.json](./assets/vpn-configure.json)
 
    ```json
    {
