@@ -9,10 +9,10 @@ level: Beginner
 doc-type: Feature Video
 exl-id: 59462cb4-d379-4e58-b786-ff8dbae6191c
 duration: 2516
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: a43bd7ae4e5b0a6793c52b5a8d0f36e3c1b260b1
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 100%
+source-wordcount: '828'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Explorez les possibilités offertes par Adobe Dynamic Media avec notre [**Démon
 
 ## Vue d’ensemble de Dynamic Media
 
->[!VIDEO](https://video.tv.adobe.com/v/34943?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27144?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Cette vidéo décrit la gestion et l’accès au contenu multimédia à l’aide
 
 ## Utilisation avec AEM Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/34953?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27145?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Cette vidéo décrit comment gérer le contenu multimédia dans Adobe Experienc
 
 ## Créer une collection de supports variés
 
->[!VIDEO](https://video.tv.adobe.com/v/34954?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27146?quality=12&learn=on)
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Cette vidéo décrit le processus de création simple d’une collection de visi
 
 ## Paramètres d’image prédéfinis
 
->[!VIDEO](https://video.tv.adobe.com/v/34726?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27320?quality=12&learn=on)
 
 Cette vidéo décrit comment créer les paramètres d’image prédéfinis et ce qu’est un paramètre d’image prédéfini, un réducteur d’URL vers une série d’arguments de serveur d’images qui fonctionnent sur une image chaque fois qu’une URL en fait la demande. Découvrez de précieuses techniques pour étendre et modifier les paramètres d’image prédéfinis.
 
@@ -84,7 +84,7 @@ Cette vidéo décrit comment créer les paramètres d’image prédéfinis et ce
 
 ## Modificateurs d’URL avancés
 
->[!VIDEO](https://video.tv.adobe.com/v/34724?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27319?quality=12&learn=on)
 
 Cette vidéo décrit comment, au-delà du redimensionnement des images, tirer parti des fonctionnalités du fichier source lui-même (transparence d’arrière-plan, chemins de détourage et recadrages intégrés et texte sous forme de variables) avec les modificateurs d’URL de Dynamic Media.
 
@@ -96,7 +96,7 @@ Cette vidéo décrit comment, au-delà du redimensionnement des images, tirer pa
 
 ## Gérer la taille des fichiers JPEG
 
->[!VIDEO](https://video.tv.adobe.com/v/35032?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27404?quality=12&learn=on)
 
 
 >[!NOTE]
@@ -107,16 +107,7 @@ Trouvez le juste équilibre entre la qualité de l’image JPEG et la taille du 
 
 ## Sous-titrage
 
->[!VIDEO](https://video.tv.adobe.com/v/34430?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28074?quality=12&learn=on)
 
 Ajoutez en toute facilité des sous-titres aux vidéos Dynamic Media. Il vous suffit d’ajouter l’URL de copie pour qu’elle pointe vers un fichier de sous-titrage supplémentaire, un fichier sidecar web.VTT, qui contient les informations de sous-titrage pour n’importe quelle vidéo.
 
-## Accentuation de l’image
-
-Dans cette vidéo, découvrez la relation essentielle entre l’accentuation et la fidélité de l’image et apprenez à utiliser les paramètres avancés pour créer l’image parfaite.
-
-<!--
-This link is broken
-
->[!VIDEO](https://demos-pub.assetsadobe.com/etc/dam/viewers/s7viewers/html5/VideoViewer.html?asset=%2Fcontent%2Fdam%2Fdm-public-facing-upgrade-portal-video%2F04_DynamicImagery_AdvancedSettings_071917_BH.mp4&config=/etc/dam/presets/viewer/Video_social&serverUrl=https%3A%2F%2Fadobedemo62-h.assetsadobe.com%2Fis%2Fimage%2F&contenturl=%2F&config2=/etc/dam/presets/analytics&videoserverurl=https://gateway-na.assetsadobe.com/DMGateway/public/demoCo&posterimage=/content/dam/dm-public-facing-upgrade-portal-video/04_DynamicImagery_AdvancedSettings_071917_BH.mp4)
--->
