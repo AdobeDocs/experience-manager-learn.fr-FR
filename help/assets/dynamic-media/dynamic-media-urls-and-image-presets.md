@@ -23,4 +23,4 @@ Explorez la syntaxe de l’URL Dynamic Media d’AEM Assets et apprenez à optim
 
 >[!VIDEO](https://video.tv.adobe.com/v/3477924/?learn=on&enablevpops)
 
-Regardez cette courte vidéo sur [comment créer des paramètres d’image prédéfinis dans AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/tutorials/creating-image-presets).
+Regardez cette courte vidéo sur [comment créer des paramètres d’image prédéfinis dans AEM Assets](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/assets/dynamic-media/tutorials/creating-image-presets).
