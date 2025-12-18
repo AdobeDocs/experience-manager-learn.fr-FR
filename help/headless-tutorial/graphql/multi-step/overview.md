@@ -12,10 +12,10 @@ level: Beginner
 last-substantial-update: 2022-10-17T00:00:00Z
 exl-id: 41e15a2c-758b-4e7d-9d23-ef671c1dc155
 duration: 54
-source-git-commit: c6213dd318ec4865375c57143af40dbe3f3990b1
-workflow-type: ht
-source-wordcount: '237'
-ht-degree: 100%
+source-git-commit: e7f556737cdf6a92c0503d3b4a52eef1f71c8330
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 88%
 
 ---
 
@@ -48,12 +48,13 @@ Pour suivre ce tutoriel, vous devez suivre les étapes ci-après :
 
 Pour suivre ce tutoriel, il est recommandé de disposer d’un accès d’administrateur ou d’administratrice AEM à un environnement AEM as a Cloud Service.
 
-## Commençons !
+## Commençons.
 
-Commencez le tutoriel par la section [Définition de modèles de fragment de contenu](content-fragment-models.md).
+Commencez le tutoriel par [définition de modèles de fragment de contenu](content-fragment-models.md).
 
 ## Projet GitHub
 
-Le code source et les modules de contenu sont disponibles sur la page [AEM Guides - Projet GitHub WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql).
+Le code source et les packages de contenu sont disponibles dans le dossier `basic-tutorial` du projet GitHub [AEM Guides - WKND GraphQL](https://github.com/adobe/aem-guides-wknd-graphql/tree/main/basic-tutorial).
+
 
 Si vous rencontrez un problème avec le tutoriel ou le code, veuillez consigner un [Problème GitHub](https://github.com/adobe/aem-guides-wknd-graphql/issues).
