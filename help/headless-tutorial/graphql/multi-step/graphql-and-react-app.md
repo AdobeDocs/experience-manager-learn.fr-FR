@@ -37,7 +37,7 @@ Pour suivre ce tutoriel, il est recommandé de disposer d’un accès administra
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr)
 + Configuration locale à l’aide du [SDK d’AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr)
-+ [AEM 6.5 LTS](https://experienceleague.adobe.com/docs/experience-manager-65/content/release-notes/release-notes.html) avec le package d’index GraphQL 1.0.5+[&#x200B; installé](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/graphql-api/graphql-endpoint.html)
++ [AEM 6.5 LTS](https://experienceleague.adobe.com/docs/experience-manager-65/content/release-notes/release-notes.html?lang=fr) avec le package d’index GraphQL 1.0.5+[&#x200B; installé](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/graphql-api/graphql-endpoint.html)
 
 ### Configuration logicielle requise
 
