@@ -37,7 +37,7 @@ Pour suivre ce tutoriel, il est recommandé de disposer d’un accès administra
 
 + [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr)
 + Configuration locale à l’aide du [SDK d’AEM Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr)
-+ [AEM 6.5 LTS](https://experienceleague.adobe.com/docs/experience-manager-65/content/release-notes/release-notes.html) avec le package d’index GraphQL 1.0.5+[ installé](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/graphql-api/graphql-endpoint.html)
++ [AEM 6.5 LTS](https://experienceleague.adobe.com/docs/experience-manager-65/content/release-notes/release-notes.html) avec le package d’index GraphQL 1.0.5+[&#x200B; installé](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/graphql-api/graphql-endpoint.html)
 
 ### Configuration logicielle requise
 
@@ -127,11 +127,11 @@ Pour obtenir l’application React :
 >   Cette application React est partiellement implémentée. Suivez les étapes de ce tutoriel pour terminer la mise en œuvre. Les fichiers JavaScript qui doivent être implémentés comportent les commentaires suivants. Veillez à ajouter ou mettre à jour le code dans ces fichiers avec le code spécifié dans ce tutoriel.
 >
 >
-> //*********************************
+> //**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;***
 >
 >  // Tâche : implémentez ceci en suivant les étapes du tutoriel sur AEM Headless.
 >
->  //*********************************
+>  //**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;***
 >
 
 ## Anatomie de l’application React
@@ -528,7 +528,7 @@ Vérifiez l’application [http://localhost:3000/](http://localhost:3000/) et cl
 
 >[!IMPORTANT]
 >
->Pour vérifier vos modifications d’implémentation ou si vous ne parvenez pas à faire fonctionner l’application après les modifications ci-dessus, reportez-vous à la branche [ ](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial)basic-tutorial`solution`.
+>Pour vérifier vos modifications d’implémentation ou si vous ne parvenez pas à faire fonctionner l’application après les modifications ci-dessus, reportez-vous à la branche [&#x200B; &#x200B;](https://github.com/adobe/aem-guides-wknd-graphql/tree/solution/basic-tutorial)basic-tutorial`solution`.
 
 ## Ce qui se passe
 
