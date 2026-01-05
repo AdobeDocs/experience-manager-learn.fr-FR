@@ -30,7 +30,7 @@ Les attaques sophistiquées se caractérisent par des taux de demande élevés, 
 > Les règles de filtrage du trafic WAF nécessitent une licence supplémentaire de sécurité étendue (anciennement appelée Protection WAF-DDoS) ou de sécurité étendue pour les soins de santé (anciennement appelée Sécurité renforcée). Les règles de filtrage de trafic standard sont disponibles par défaut pour les clientes et clients Sites et Forms.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469432/?captions=fre_fr&quality=12&learn=on)
 
 ## Objectifs d’apprentissage
 
