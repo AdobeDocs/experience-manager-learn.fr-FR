@@ -96,7 +96,7 @@ Associons-le au profil de produit **Utilisateurs et utilisatrices collaborateurs
 
 Pour activer l’authentification de serveur à serveur pour les API AEM basées sur OpenAPI souhaitées, l’utilisateur configurant l’intégration à l’aide de Adobe Developer Console (ADC) doit être ajouté en tant que développeur au _profil de produit_ auquel le _service_ est associé.
 
-Par exemple, pour activer l’authentification de serveur à serveur pour l’API AEM Assets, l’utilisateur doit être ajouté en tant que développeur au **profil de produit**_Utilisateurs collaborateurs AEM Assets - auteur - Programme XXX - Environnement XXX_.
+Par exemple, pour activer l’authentification de serveur à serveur pour l’API AEM Assets, l’utilisateur doit être ajouté en tant que développeur au **profil de produit**&#x200B;_Utilisateurs collaborateurs AEM Assets - auteur - Programme XXX - Environnement XXX_.
 
 ![Association du développeur ou de la développeuse au profil de produit](./assets/setup/associate-developer-to-product-profile.png)
 
