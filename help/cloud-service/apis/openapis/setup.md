@@ -12,10 +12,10 @@ thumbnail: KT-17426.jpeg
 last-substantial-update: 2025-02-28T00:00:00Z
 duration: 0
 exl-id: 1df4c816-b354-4803-bb6c-49aa7d7404c6
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: f4f177f2745cb03c81011679b9d88eaadeb9cae3
 workflow-type: tm+mt
-source-wordcount: '1859'
-ht-degree: 61%
+source-wordcount: '1891'
+ht-degree: 60%
 
 ---
 
@@ -96,7 +96,7 @@ Associons-le au profil de produit **Utilisateurs et utilisatrices collaborateurs
 
 Pour activer l’authentification de serveur à serveur pour les API AEM basées sur OpenAPI souhaitées, l’utilisateur configurant l’intégration à l’aide de Adobe Developer Console (ADC) doit être ajouté en tant que développeur au _profil de produit_ auquel le _service_ est associé.
 
-Par exemple, pour activer l’authentification de serveur à serveur pour l’API AEM Assets, l’utilisateur doit être ajouté en tant que développeur au **profil de produit**&#x200B;_Utilisateurs collaborateurs AEM Assets - auteur - Programme XXX - Environnement XXX_.
+Par exemple, pour activer l’authentification de serveur à serveur pour l’API AEM Assets, l’utilisateur doit être ajouté en tant que développeur au **profil de produit**_Utilisateurs collaborateurs AEM Assets - auteur - Programme XXX - Environnement XXX_.
 
 ![Association du développeur ou de la développeuse au profil de produit](./assets/setup/associate-developer-to-product-profile.png)
 
@@ -179,7 +179,9 @@ Si vous choisissez la méthode d’authentification **Application Web OAuth** ou
 
 ## Configurer l’instance AEM pour activer la communication du projet ADC{#configure-aem-instance}
 
-Ensuite, vous devez configurer l’instance AEM pour activer la communication de projet ADC ci-dessus. Avec cette configuration, le ClientID du projet ADC ne peut PAS communiquer avec l’instance AEM et génère une erreur 403 Forbidden . Considérez cette configuration comme une règle de pare-feu permettant uniquement aux ID client autorisés de communiquer avec l’instance AEM.
+Ensuite, vous devez configurer l’instance AEM pour activer la communication de projet ADC ci-dessus.
+
+Sans cette configuration, l’ID client du projet ADC ne peut PAS communiquer avec l’instance AEM et génère une erreur 403 Interdit. Considérez cette configuration comme une règle de pare-feu permettant uniquement aux ID client autorisés de communiquer avec l’instance AEM.
 
 Suivons les étapes de configuration de l’instance AEM pour activer la communication de projet ADC ci-dessus.
 
@@ -214,7 +216,12 @@ Suivons les étapes de configuration de l’instance AEM pour activer la communi
 
    ![Déploiement YAML](./assets/setup/config-pipeline.png)
 
-Notez que le fichier `api.yaml` peut également être installé dans un [RDE](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/overview), [à l’aide de l’outil de ligne de commande](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Cela s’avère utile pour tester les modifications de configuration avant de les déployer dans l’environnement de production.
+Notez que le fichier `api.yaml` peut également être installé dans un [RDE](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/rde/overview), [à l’aide de l’outil de ligne de commande](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files). Cela s’avère utile pour tester les modifications de configuration avant de les déployer dans l’environnement de production.
+
+>[!CAUTION]
+>
+>Le fichier YAML (`api.yaml`) est le seul moyen de configurer l’instance AEM pour activer la communication avec le projet ADC. D’autres méthodes, telles que l’utilisation de variables d’environnement, ne sont pas prises en charge pour cette configuration.
+
 
 ## Étapes suivantes
 
