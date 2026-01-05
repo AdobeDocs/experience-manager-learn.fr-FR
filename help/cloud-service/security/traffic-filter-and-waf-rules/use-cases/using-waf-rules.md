@@ -12,10 +12,10 @@ badgeLicense: label="Nécessite une licence." type="positive" before-title="true
 jira: KT-18308
 thumbnail: null
 exl-id: b87c27e9-b6ab-4530-b25c-a98c55075aef
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 100%
+source-wordcount: '1386'
+ht-degree: 98%
 
 ---
 
@@ -27,10 +27,10 @@ Les attaques sophistiquées se caractérisent par des taux de demande élevés, 
 
 >[!IMPORTANT]
 >
-> Les règles de filtrage de trafic WAF nécessitent une licence supplémentaire de **protection WAF-DDoS** ou de **sécurité renforcée**. Les règles de filtrage de trafic standard sont disponibles par défaut pour les clientes et clients Sites et Forms.
+> Les règles de filtrage du trafic WAF nécessitent une licence supplémentaire de sécurité étendue (anciennement appelée Protection WAF-DDoS) ou de sécurité étendue pour les soins de santé (anciennement appelée Sécurité renforcée). Les règles de filtrage de trafic standard sont disponibles par défaut pour les clientes et clients Sites et Forms.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3469432/?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3469397/?quality=12&learn=on)
 
 ## Objectifs d’apprentissage
 

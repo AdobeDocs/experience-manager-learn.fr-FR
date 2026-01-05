@@ -12,10 +12,10 @@ last-substantial-update: 2024-08-21T00:00:00Z
 jira: KT-15123
 thumbnail: KT-15123.jpeg
 exl-id: 8948a900-01e9-49ed-9ce5-3a057f5077e4
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 7b29187ef84bebebd4586374abb09ced947dff28
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 100%
+source-wordcount: '555'
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,7 @@ Outre la mise en cache de contenu, le réseau CDN Adobe propose plusieurs foncti
 
 Ces fonctionnalités sont des fonctionnalités en **libre-service**. Configuré dans le fichier `cdn.yaml` de votre projet AEM et déployé à l’aide du pipeline de configuration Cloud Manager.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440271?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3433104?quality=12&learn=on)
 
 ## Configuration du trafic sur le réseau CDN
 
@@ -39,7 +39,7 @@ Découvrez les principales fonctionnalités liées à la _Configuration du trafi
 
 - **Prévention des attaques par déni de service (DoS) :** le réseau CDN Adobe absorbe les attaques par déni de service sur la couche réseau, ce qui les empêche d’atteindre votre serveur d’origine.
 - **Limitation de débit :** pour éviter que votre serveur d’origine ne soit submergé par trop de requêtes, vous pouvez configurer la limitation de débit sur le réseau CDN.
-- **Pare-feu d’applications web (WAF) :** le pare-feu d’application web protège votre site web contre les vulnérabilités d’applications web courantes, telles que l’injection SQL, le cross-site scripting, etc. La licence de sécurité améliorée ou la licence de protection WAF-DDoS est requise pour utiliser cette fonctionnalité.
+- **Pare-feu d’applications web (WAF) :** le pare-feu d’application web protège votre site web contre les vulnérabilités d’applications web courantes, telles que l’injection SQL, le cross-site scripting, etc. Pour utiliser cette fonctionnalité, vous devez disposer d’une licence Extended Security (anciennement appelée Protection WAF-DDoS) ou Extended Security for Healthcare (anciennement appelée Sécurité renforcée).
 - **Transformation de requêtes :** modifiez les requêtes entrantes telles que la définition ou l’annulation de la définition d’en-têtes, la modification des paramètres de requête, les cookies, etc.
 - **Transformation de réponse :** modifiez les réponses sortantes telles que la définition ou l’annulation de la définition d’en-têtes.
 - **Sélection de l’origine :** acheminez le trafic vers différents serveurs d’origine (Adobe et non-Adobe) en fonction de l’URL de la demande.
