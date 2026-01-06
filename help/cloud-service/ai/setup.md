@@ -24,7 +24,7 @@ Pour utiliser l’assistant et les agents AEM AI dans AEM, vous devez configurer
 
 Découvrez comment configurer l’accès à l’assistant AI dans Adobe Experience Manager à l’aide de [Adobe Admin Console](https://adminconsole.adobe.com). Cette étape est nécessaire pour permettre aux utilisateurs d&#39;obtenir des réponses de l&#39;assistant et d&#39;utiliser la création automatique de tickets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3474066/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3474068/?captions=fre_fr&learn=on&enablevpops)
 
 ### Agents dans AEM
 
