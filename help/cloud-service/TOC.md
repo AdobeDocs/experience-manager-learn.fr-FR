@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 055dc7d666d082244d73d3494bac54d7eb4bb886
+source-git-commit: 96719e9f53324469927eee83840356833b5605a0
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1420'
 ht-degree: 99%
 
 ---
@@ -28,7 +28,11 @@ ht-degree: 99%
    + Stratégie et leadership de la pensée{#strategy}
       + [Experience Manager - Modèles et archétypes de gouvernance et de dotation en personnel](./introduction/experience-manager-governance-and-staffing-models.md)
 + [Experience Hub](./experience-hub.md)
-+ [Assistant IA AEM](./aem-ai-assisstant.md)
++ AI {#ai}
+   + [Vue d’ensemble](./ai/overview.md)
+   + [Configuration et approvisionnement](./ai/setup.md)
+   + [Assistant IA](./ai/ai-assistant.md)
+   + [Agents](./ai/agents-in-aem.md)
 + Intégrations Experience Cloud{#integrations}
    + [Intégrations](./integrations/experience-cloud.md)
    + [AEM Headless et Target](./integrations/target.md)
@@ -65,7 +69,7 @@ ht-degree: 99%
    + [Outils du dispatcher local](./local-development-environment/dispatcher-tools.md)
 + Développement{#developing}
    + Extensibilité{#extensibility}
-      + Créateur d’applications{#app-builder}
+      + App Builder{#app-builder}
          + [Générer le jeton d’accès JWT](./developing/extensibility/app-builder/jwt-auth.md)
          + [Générer un jeton d’accès server à serveur](./developing/extensibility/app-builder/server-to-server-auth.md)
          + [Vérification du webhook Github](./developing/extensibility/app-builder/github-webhook-verification.md)
@@ -411,7 +415,7 @@ ht-degree: 99%
    + Configurer{#set-up}
       + [Approvisionnement des comptes et des services](./asset-compute/set-up/accounts-and-services.md)
       + [Environnement de développement local](./asset-compute/set-up/development-environment.md)
-      + [Créateur d’applications](./asset-compute/set-up/app-builder.md)
+      + [App Builder](./asset-compute/set-up/app-builder.md)
    + Développer{#develop}
       + [Créer un projet Asset Compute](./asset-compute/develop/project.md)
       + [Configurer les variables d’environnement](./asset-compute/develop/environment-variables.md)
