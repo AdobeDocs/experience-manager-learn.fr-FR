@@ -28,7 +28,7 @@ Découvrez comment configurer l’accès à l’assistant AI dans Adobe Experien
 
 ### Agents dans AEM
 
-Pour utiliser les agents dans AEM, vous devez d&#39;abord avoir configuré l&#39;accès à [l&#39;assistant IA d&#39;AEM](#aem-ai-assistant). Les agents dans AEM doivent être configurés par Adobe. Pour demander l’accès aux agents dans AEM, contactez votre représentant Adobe ou [l’assistance Adobe](https://experienceleague.adobe.com/en/support).
+Pour utiliser les agents dans AEM, vous devez d&#39;abord avoir configuré l&#39;accès à [l&#39;assistant IA d&#39;AEM](#aem-ai-assistant). Les agents dans AEM doivent être configurés par Adobe. Pour demander l’accès aux agents dans AEM, contactez votre représentant Adobe ou [l’assistance Adobe](https://experienceleague.adobe.com/fr/support).
 
 ## Laboratoire
 
