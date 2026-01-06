@@ -7,7 +7,7 @@ level: Beginner
 doc-type: Catalog
 duration: 30
 last-substantial-update: 2026-01-05T00:00:00Z
-source-git-commit: 96719e9f53324469927eee83840356833b5605a0
+source-git-commit: 9a2b7ee23132b5eac60f3eb2fd416fa26d0312db
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 15%
@@ -27,7 +27,7 @@ Experience Manager as a Cloud Service fournit des fonctionnalités d’IA avanc�
     {title = Set up AI in AEM}
     {description = Learn what access is needed to use AI in AEM.}
     {cta = Set up}
-* ./aem-ai-assistant.md
+* ./ai-assistant.md
     {title = AEM AI Assistant}
     {description = Learn how AI Assistant provides product knowledge and support in AEM.}
     {cta = Watch}
@@ -48,7 +48,7 @@ Experience Manager as a Cloud Service fournit des fonctionnalités d’IA avanc�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./setup.md" title="Configurer l’IA dans AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474068/?captions=fre_fr&format=jpeg&nocache=1767634731991" alt="Configurer l’IA dans AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474066/?format=jpeg&nocache=1767634731991" alt="Configurer l’IA dans AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -71,7 +71,7 @@ Experience Manager as a Cloud Service fournit des fonctionnalités d’IA avanc�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./agents-in-aem.md" title="Agents dans AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475360/?captions=fre_fr&format=jpeg&nocache=1767634731999" alt="Agents dans AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475357/?format=jpeg&nocache=1767634731999" alt="Agents dans AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
