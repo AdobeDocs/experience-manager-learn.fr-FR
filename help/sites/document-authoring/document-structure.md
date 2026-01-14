@@ -1,7 +1,7 @@
 ---
 title: Structure du document pour la création de documents
 description: Découvrez comment la création de document est organisée.
-version: Experience Manager 6.5, Experience Manager as a Cloud Service
+version: Experience Manager as a Cloud Service
 feature: Authoring
 topic: Content Management
 role: User
@@ -12,8 +12,8 @@ jira: KT-14467
 thumbnail: 3425701.jpeg
 duration: 104
 exl-id: 637a2d44-554d-45e4-aad2-a9e64feb511b
-source-git-commit: 48433a5367c281cf5a1c106b08a1306f1b0e8ef4
-workflow-type: ht
+source-git-commit: 8323da7961c4b6ffeaad5f936b7b515bb08a616a
+workflow-type: tm+mt
 source-wordcount: '28'
 ht-degree: 100%
 
@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment la création de documents est organisée à l’aide du contenu par défaut, des blocs, etc.
 
->[!VIDEO](https://video.tv.adobe.com/v/3438809/?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3425701/?learn=on)
