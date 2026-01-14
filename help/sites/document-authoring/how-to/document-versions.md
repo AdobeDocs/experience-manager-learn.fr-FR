@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment contrôler les versions des documents créés à l’aide de la création de documents AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425728/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438796/?captions=fre_fr&learn=on)

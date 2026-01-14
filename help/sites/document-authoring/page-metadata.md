@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment la création de documents traite les métadonnées au niveau de la page et comment les auteurs et autrices peuvent les mettre à jour sans aucune expertise technique.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425706/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438067/?captions=fre_fr&learn=on)

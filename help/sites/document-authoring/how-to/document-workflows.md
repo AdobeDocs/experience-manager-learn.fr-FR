@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment utiliser des workflows de document avec la création de documents AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425720/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438292/?captions=fre_fr&learn=on)

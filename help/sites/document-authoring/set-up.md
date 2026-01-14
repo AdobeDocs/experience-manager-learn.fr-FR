@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Guide sur la configuration de la création de documents pour les auteurs et les autrices.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425699/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438864/?captions=fre_fr&learn=on)

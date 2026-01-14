@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez en détail les concepts de création de documents relatifs aux sections et au contenu par défaut, et comment ces concepts vous aident à améliorer votre site.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425702/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3437977/?captions=fre_fr&learn=on)

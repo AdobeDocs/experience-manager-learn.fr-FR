@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Guide détaillé sur la création et la publication de contenu à l’aide de la création de documents.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425700/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441339/?captions=fre_fr&learn=on)

@@ -25,4 +25,4 @@ ht-degree: 100%
 
 Découvrez comment la création de documents est organisée à l’aide du contenu par défaut, des blocs, etc.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425701/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3438809/?captions=fre_fr&learn=on)
