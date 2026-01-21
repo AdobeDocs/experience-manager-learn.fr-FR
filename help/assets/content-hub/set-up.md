@@ -23,7 +23,7 @@ ht-degree: 56%
 
 Découvrez comment configurer Experience Manager Assets Content Hub à l’aide du module complémentaire Ressources et du programme Adobe Cloud Manager. Découvrez également comment configurer l’accès pour les utilisateurs et utilisatrices qui utilisent des profils de produit.
 
->[!VIDEO](https://video.tv.adobe.com/v/3472918/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3472937/?captions=fre_fr&learn=on)
 
 
 ## Configurer les API ouvertes Dynamic Media AEM Assets
