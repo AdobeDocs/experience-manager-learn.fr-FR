@@ -100,4 +100,4 @@ Découvrez les paramètres avancés du connecteur amélioré Workfront pour AEM,
 
 Si vous utilisez Workfront Fusion pour lier Workfront et AEM Assets afin d’automatiser la création de projets et l’orchestration des workflows, reportez-vous à la documentation sur l’intégration de Workfront Fusion et d’AEM Assets .
 
-[Utilisez Workfront Fusion pour convertir un problème Workfront en projet avec des workflows AEM](https://experienceleague.adobe.com/en/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/use-fusion-to-create-project-with-workflows)
+[Utilisez Workfront Fusion pour convertir un problème Workfront en projet avec des workflows AEM](https://experienceleague.adobe.com/fr/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/use-fusion-to-create-project-with-workflows)
