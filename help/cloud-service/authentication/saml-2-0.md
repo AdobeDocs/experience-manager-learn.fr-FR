@@ -11,10 +11,10 @@ thumbnail: 343040.jpeg
 last-substantial-update: 2024-05-15T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 2ed303e316577363f6d1c265ef7f9cd6d81491d8
 workflow-type: tm+mt
-source-wordcount: '4233'
-ht-degree: 99%
+source-wordcount: '4277'
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ Le flux type d’une intégration SAML de publication AEM est le suivant :
 
 ## Présentation de la configuration
 
->[!VIDEO](https://video.tv.adobe.com/v/3455331?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
 
 Cette vidéo décrit comment configurer l’intégration SAML 2.0 au service de publication AEM as a Cloud Service et utiliser Okta comme fournisseur d’identité.
 
@@ -68,6 +68,7 @@ Les éléments suivants sont requis lors de la configuration de l’authentifica
 + Un accès administratif AEM à l’environnement AEM as a Cloud Service.
 + Accès de l’administrateur ou de l’administratrice au fournisseur d’identité
 + Éventuellement, l’accès à une paire de clés publique/privée utilisée pour le chiffrement des payloads SAML.
++ Pages AEM Sites (ou arborescences de pages), publiées sur l’instance de publication AEM et [protégées par des groupes d’utilisateurs fermés (CUG)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 SAML 2.0 est uniquement pris en charge pour authentifier les utilisateurs et utilisatrices dans le service de publication ou de prévisualisation AEM. Pour gérer l’authentification du service de création AEM à l’aide d’un fournisseur d’identité, [intégrez le fournisseur d’identité à Adobe IMS](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html).
 
@@ -326,7 +327,7 @@ AEM utilise les attributs d’utilisateur ou d’utilisatrice suivants, qui peuv
    }
    ```
 
-1. Mettez à jour les valeurs en fonction de votre projet. Consultez le __glossaire de configuration OSGi du gestionnaire d’authentification SAML 2.0__ ci-dessus pour les descriptions des propriétés de configuration.
+1. Mettez à jour les valeurs en fonction de votre projet. Consultez le __glossaire de configuration OSGi du gestionnaire d’authentification SAML 2.0__ ci-dessus pour obtenir la description des propriétés de configuration. Le `path` doit contenir les arborescences de contenu protégées par des groupes d’utilisateurs fermés (CUG) et nécessitant une authentification, et ce gestionnaire d’authentification doit être chargé de la protection.
 1. Il est recommandé, mais non obligatoire, d’utiliser les variables d’environnement et les secrets OSGi lorsque les valeurs peuvent ne pas être synchronisées avec le cycle de publication de la version ou lorsque les valeurs diffèrent entre des types d’environnements/niveaux de service similaires. Les valeurs par défaut peuvent être définies à l’aide de la syntaxe `$[env:..;default=the-default-value]"` comme illustré ci-dessus.
 
 Les configurations OSGi par environnement (`config.publish.dev`, `config.publish.stage`, et `config.publish.prod`) peuvent être définies avec des attributs spécifiques si la configuration SAML varie entre les environnements.
@@ -457,7 +458,7 @@ Pour ce faire, ajoutez la propriété suivante au fichier de configuration OSGI�
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
 
-Avec cette configuration, les utilisateurs et utilisatrices et les groupes sont créés en tant qu’[&#x200B; utilisateurs et utilisatrices externes d’Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Dans AEM, les utilisateurs et utilisatrices et les groupes externes ont une valeur par défaut `rep:principalName` composée des éléments `[user name];[idp]` ou `[group name];[idp]`.
+Avec cette configuration, les utilisateurs et utilisatrices et les groupes sont créés en tant qu’[ utilisateurs et utilisatrices externes d’Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Dans AEM, les utilisateurs et utilisatrices et les groupes externes ont une valeur par défaut `rep:principalName` composée des éléments `[user name];[idp]` ou `[group name];[idp]`.
 Notez que les listes de contrôle d’accès (ACL) sont associées au PrincipalName des utilisateurs et utilisatrices ou des groupes.
 Lors du déploiement de cette configuration dans un déploiement existant où `identitySyncType` n’a pas été auparavant spécifié ou défini sur `default`, de nouveaux utilisateurs, utilisatrices et groupes sont créés et des listes de contrôle d’accès doivent être appliquées à ces nouveaux utilisateurs, utilisatrices et groupes. Notez que les groupes externes ne peuvent pas contenir d’utilisateurs et d’utilisatrices locaux. [Repoinit](https://sling.apache.org/documentation/bundles/repository-initialization.html) peut être utilisé pour créer des listes de contrôle d’accès pour les groupes externes SAML, même s’ils ne sont créés que lorsque l’utilisateur ou l’utilisatrice effectue une connexion.
 Pour éviter cette refactorisation sur les listes de contrôle d’accès, une [fonctionnalité de migration](#automatic-migration-to-dynamic-group-membership-for-existing-environments) standard a été mise en œuvre.
