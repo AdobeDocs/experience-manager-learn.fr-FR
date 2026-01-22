@@ -68,7 +68,7 @@ Les éléments suivants sont requis lors de la configuration de l’authentifica
 + Un accès administratif AEM à l’environnement AEM as a Cloud Service.
 + Accès de l’administrateur ou de l’administratrice au fournisseur d’identité
 + Éventuellement, l’accès à une paire de clés publique/privée utilisée pour le chiffrement des payloads SAML.
-+ Pages AEM Sites (ou arborescences de pages), publiées sur l’instance de publication AEM et [protégées par des groupes d’utilisateurs fermés (CUG)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ Pages AEM Sites (ou arborescences de pages), publiées sur l’instance de publication AEM et [protégées par des groupes d’utilisateurs fermés (CUG)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 SAML 2.0 est uniquement pris en charge pour authentifier les utilisateurs et utilisatrices dans le service de publication ou de prévisualisation AEM. Pour gérer l’authentification du service de création AEM à l’aide d’un fournisseur d’identité, [intégrez le fournisseur d’identité à Adobe IMS](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html).
 
