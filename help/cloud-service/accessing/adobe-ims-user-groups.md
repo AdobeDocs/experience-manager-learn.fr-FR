@@ -27,4 +27,4 @@ ht-degree: 100%
 
 Les groupes d’utilisateurs et d’utilisatrices Adobe IMS établissent des ensembles logiques d’utilisateurs et d’utilisatrices exposés à AEM, où ils peuvent être utilisés pour définir des autorisations précises pour les utilisateurs et les utilisatrices AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/39150?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327868?captions=fre_fr&quality=12&learn=on)
