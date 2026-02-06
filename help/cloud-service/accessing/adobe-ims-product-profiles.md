@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Les profils de produits Adobe IMS permettent aux utilisateurs et aux utilisatrices de se connecter à un service d’instance de création AEM et fournissent une ligne de base d’accès, en fonction du profil de produits auquel ils appartiennent.
 
->[!VIDEO](https://video.tv.adobe.com/v/39156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327575?captions=fre_fr&quality=12&learn=on)
 
 ## Ressources supplémentaires
 
