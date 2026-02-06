@@ -206,7 +206,7 @@ Vous pouvez appeler l’agent de développement AEM à l’aide de l’assistant
 
 ## Exemples supplémentaires
 
-Le projet Sites WKND comprend d’autres exemples de code rompu et de problèmes de configuration, tels que des dépendances manquantes et une configuration incorrecte. Vous pouvez explorer ces exemples en consultant les branches [ qui commencent par `tutorial/dev-agent/`](https://github.com/adobe/aem-guides-wknd/branches/all?query=tutorial%2Fdev-agent&lastTab=overview). Pour afficher les modifications avec rupture, vous pouvez comparer la branche `tutorial/dev-agent/unit-test-failure` à la branche `main` en cliquant sur le bouton **Comparer**. Recherchez ensuite la section _fichier modifié_.
+Le projet Sites WKND comprend d’autres exemples de code rompu et de problèmes de configuration, tels que des dépendances manquantes et une configuration incorrecte. Vous pouvez explorer ces exemples en consultant les branches [&#x200B; qui commencent par `tutorial/dev-agent/`](https://github.com/adobe/aem-guides-wknd/branches/all?query=tutorial%2Fdev-agent&lastTab=overview). Pour afficher les modifications avec rupture, vous pouvez comparer la branche `tutorial/dev-agent/unit-test-failure` à la branche `main` en cliquant sur le bouton **Comparer**. Recherchez ensuite la section _fichier modifié_.
 
 ![Comparer les branches](./assets/dev-agent/compare-branches.png)
 
