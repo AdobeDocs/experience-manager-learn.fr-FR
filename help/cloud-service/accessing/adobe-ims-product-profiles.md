@@ -7,13 +7,13 @@ role: Admin
 level: Beginner
 jira: KT-5000
 thumbnail: 39156.jpg
-last-substantial-update: 2023-05-19T00:00:00Z
+last-substantial-update: 2026-02-06T00:00:00Z
 exl-id: 089a557c-5155-489c-bccf-0cb97e95840c
 duration: 312
-source-git-commit: f4c621f3a9caa8c2c64b8323312343fe421a5aee
-workflow-type: ht
-source-wordcount: '132'
-ht-degree: 100%
+source-git-commit: fa6f5b0019ae0f965c7ff2738bb942dd30185662
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 Les profils de produits Adobe IMS permettent aux utilisateurs et aux utilisatrices de se connecter à un service d’instance de création AEM et fournissent une ligne de base d’accès, en fonction du profil de produits auquel ils appartiennent.
 
->[!VIDEO](https://video.tv.adobe.com/v/327575?quality=12&learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/39156?quality=12&learn=on)
 
 ## Ressources supplémentaires
 
