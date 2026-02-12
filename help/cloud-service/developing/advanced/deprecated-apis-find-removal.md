@@ -9,13 +9,13 @@ duration: null
 jira: KT-20288
 thumbnail: KT-20288.png
 last-substantial-update: 2026-02-09T00:00:00Z
-source-git-commit: 6c5b911d1d59573338dd1a30eb95289bc1339f19
+exl-id: 287894ea-9cc1-4c27-ac7e-967ad46f4789
+source-git-commit: effacd58725dab502f6fb6a4750646c1ea956de2
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '519'
 ht-degree: 3%
 
 ---
-
 
 # Recherche et suppression des API obsolètes dans AEM as a Cloud Service
 
@@ -23,7 +23,7 @@ Découvrez comment rechercher et supprimer des API obsolètes dans AEM as a Clou
 
 ## Vue d’ensemble
 
-AEM as a Cloud Service **Centre d’action** vous informe de l’existence d’_API obsolètes_ dans votre projet. Pour obtenir les dernières fonctionnalités, mises à jour de sécurité et déploiements fluides de votre code vers AEM as a Cloud Service à l’aide des pipelines Cloud Manager, supprimez les API obsolètes de votre projet.
+AEM as a Cloud Service **Centre d’actions** vous informe de l’existence d’_API obsolètes_ dans votre projet. Pour vous assurer que votre application est sécurisée et performante et que vous pouvez continuer à déployer du code à l’aide des pipelines de Cloud Manager, supprimez les API obsolètes de votre projet.
 
 Dans ce tutoriel, vous apprendrez à rechercher et à supprimer des API obsolètes dans votre environnement AEM as a Cloud Service à l’aide du plug-in Maven [AEM Analyzer](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md).
 
@@ -117,10 +117,10 @@ L’analyseur d’AEM signale **quoi** est obsolète et fournit la **recommandat
 
 | Type d’avertissement de l’analyseur | Ce qu’il indique | Action recommandée | Référence |
 | --------------------- | ----------------- | ------------------ | --------- |
-| API AEM obsolète | API à supprimer d’AEM as a Cloud Service | Remplacer l’utilisation par l’API publique prise en charge | [Guide de suppression des API](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
-| Package ou classe AEM obsolète | Le package ou la classe n’est plus pris en charge | Refactoriser le code pour utiliser l’alternative recommandée | [&#x200B; API obsolètes &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#aem-apis) |
-| Bibliothèque tierce obsolète | La bibliothèque ne sera pas prise en charge dans les futurs SDK | Mise à niveau de la dépendance et utilisation de la refactorisation | [Directives générales](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
-| Modèles Sling/OSGi obsolètes | Annotations ou API héritées détectées | Migration vers les API Sling et OSGi modernes | [Suppression des modèles Sling/OSGi](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| API AEM obsolète | API à supprimer d’AEM as a Cloud Service | Remplacer l’utilisation par l’API publique prise en charge | [Guide de suppression des API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| Package ou classe AEM obsolète | Le package ou la classe n’est plus pris en charge | Refactoriser le code pour utiliser l’alternative recommandée | [ API obsolètes ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#aem-apis) |
+| Bibliothèque tierce obsolète | La bibliothèque ne sera pas prise en charge dans les futurs SDK | Mise à niveau de la dépendance et utilisation de la refactorisation | [Directives générales](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
+| Modèles Sling/OSGi obsolètes | Annotations ou API héritées détectées | Migration vers les API Sling et OSGi modernes | [Suppression des modèles Sling/OSGi](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance) |
 | Suppression prévue (date ultérieure) | L’API fonctionne toujours, mais la suppression est appliquée ultérieurement | Planifier le nettoyage avant l’application du pipeline | [Notes de mise à jour](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/home) |
 
 ### Conseils pratiques
@@ -134,5 +134,4 @@ Une correction précoce des API obsolètes permet de conserver votre projet **s�
 ## Ressources supplémentaires
 
 - [Plug-In Maven AEM Analyzer](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md)
-- [Fonctionnalités et API obsolètes et supprimées](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance)
-
+- [Fonctionnalités et API obsolètes et supprimées](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features#api-removal-guidance)
