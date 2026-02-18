@@ -56,7 +56,7 @@ Le flux type d’une intégration SAML de publication AEM est le suivant :
 
 ## Présentation de la configuration
 
->[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3455331?captions=fre_fr&quality=12&learn=on)
 
 Cette vidéo décrit comment configurer l’intégration SAML 2.0 au service de publication AEM as a Cloud Service et utiliser Okta comme fournisseur d’identité.
 
