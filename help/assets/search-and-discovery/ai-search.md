@@ -22,4 +22,4 @@ ht-degree: 3%
 
 Découvrez comment AEM Assets Recherche optimisée par l&#39;IA transforme votre expérience de recherche en faisant apparaître intelligemment les ressources les plus pertinentes à chaque fois. Découvrez comment activer Recherche optimisée par l&#39;IA dans la vue AEM Assets et la vue Administration pour commencer à bénéficier immédiatement d’une recherche plus intelligente.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479989/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480007/?captions=fre_fr&learn=on&enablevpops)
