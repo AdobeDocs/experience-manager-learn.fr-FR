@@ -52,7 +52,7 @@ ht-degree: 97%
 
 + Recherche et détection{#search-and-discovery}
    + [Recherche](./search-and-discovery/search.md)
-   + [Recherche optimisée par l&#39;IA ](./search-and-discovery/ai-search.md)
+   + [Recherche optimisée par l&#39;IA &#x200B;](./search-and-discovery/ai-search.md)
    + [Intégration d’Adobe Firefly](./search-and-discovery/adobe-firefly.md)
    + [Collections](./search-and-discovery/collections.md)
    + [Amplification de recherche](./search-and-discovery/search-boost.md)
