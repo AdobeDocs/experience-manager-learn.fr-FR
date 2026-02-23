@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Créez des documents de communication interactive à l’aide de modèles prédéfinis et de fragments réutilisables. Cela garantit la cohérence et l’efficacité de la création de documents. Incorporez des données dynamiques en sélectionnant le modèle de données de formulaire (FDM) approprié et en insérant des fragments dans les zones cibles désignées. Testez la sortie finale pour en vérifier la précision et la mise en forme.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480067/?captions=fre_fr&learn=on&enablevpops)
 
 ## Étapes suivantes
 

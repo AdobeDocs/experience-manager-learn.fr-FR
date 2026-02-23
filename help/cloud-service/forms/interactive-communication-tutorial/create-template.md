@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Découvrez comment créer des modèles de communication interactive pour normaliser les communications sortantes. Ces modèles garantissent la cohérence, la gouvernance et l’alignement de la marque dans les communications client. Découvrez le processus de création, de modification et d’activation de modèles pour une utilisation ultérieure à l’aide d’outils tels qu’IC Web Designer et la bibliothèque d’objets.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480029/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480044/?captions=fre_fr&learn=on&enablevpops)
 
 ## Étapes suivantes
 

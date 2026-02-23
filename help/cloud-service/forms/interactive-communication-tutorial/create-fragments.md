@@ -21,7 +21,7 @@ ht-degree: 3%
 
 Découvrez comment développer des fragments réutilisables pour les documents de communication interactive. Optimisez les dispositions et assurez la liaison dynamique des données pour les sections Adresse du client et Corps de lettre. Améliorez la conception du document avec les contrôles de mise en forme, de positionnement et de marge.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480042/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480056/?captions=fre_fr&learn=on&enablevpops)
 
 ## Étapes suivantes
 
