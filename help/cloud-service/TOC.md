@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 6c5b911d1d59573338dd1a30eb95289bc1339f19
+source-git-commit: c2dde214df0dabe8d856751a9d16afb1423e7450
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 98%
+source-wordcount: '1455'
+ht-degree: 97%
 
 ---
 
@@ -325,6 +325,13 @@ ht-degree: 98%
       + [&#x200B;4. Ajout d’icônes](./forms/using-vertical-tabs/icons.md)
    + Utilisation des services Output et Forms{#forms-cs-output-and-forms-service}
       + [Générer des PDF](./forms/forms-cs-output-and-forms-service/outputservice.md)
+   + Tutoriel sur la communication interactive{#interactive-communication-tutorial}
+      + [&#x200B;1. Présentation](./forms/interactive-communication-tutorial/introduction.md)
+      + [&#x200B;2. Créer FDM](./forms/interactive-communication-tutorial/create-form-data-model.md)
+      + [&#x200B;3. Créer un modèle](./forms/interactive-communication-tutorial/create-template.md)
+      + [&#x200B;4. Créer des fragments](./forms/interactive-communication-tutorial/create-fragments.md)
+      + [&#x200B;5. Créer un document IC](./forms/interactive-communication-tutorial/create-ic-document.md)
+      + [&#x200B;6. Générer un document IC](./forms/interactive-communication-tutorial/test-document-generation.md)
    + Génération de documents dans AEM Forms CS{#doc-gen-formscs}
       + [Présentation](./forms/doc-gen-forms-cs/introduction.md)
       + [Créer des informations d’identification de service](./forms/doc-gen-forms-cs/service-credentials.md)
