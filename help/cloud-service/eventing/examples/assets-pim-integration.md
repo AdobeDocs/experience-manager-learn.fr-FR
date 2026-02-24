@@ -12,18 +12,14 @@ last-substantial-update: 2024-02-13T00:00:00Z
 jira: KT-14901
 thumbnail: KT-14901.jpeg
 exl-id: 070cbe54-2379-448b-bb7d-3756a60b65f0
-source-git-commit: 8f3e8313804c8e1b8cc43aff4dc68fef7a57ff5c
+source-git-commit: 60ea92e57f2bd8bcbc204ccb48abea172e61c969
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1482'
 ht-degree: 100%
 
 ---
 
 # Événements AEM Assets pour l’intégration PIM
-
->[!IMPORTANT]
->
->Ce tutoriel utilise des API AEM basées sur OpenAPI. Elles sont disponibles dans le cadre d’un programme d’accès anticipé. Si vous souhaitez y accéder, nous vous encourageons à envoyer un e-mail à l’adresse [aem-apis@adobe.com](mailto:aem-apis@adobe.com) avec une description de votre cas d’utilisation.
 
 Découvrez comment recevoir un événement AEM et agir sur celui-ci pour mettre à jour l’état du contenu dans AEM à l’aide de l’API de création Assets basée sur OpenAPI.
 
@@ -41,7 +37,7 @@ Le flux de haut niveau de l’intégration est le suivant :
 1. L’événement est envoyé au service [Événements Adobe I/O](https://developer.adobe.com/events/).
 1. Le service Événements Adobe I/O transmet l’événement à l’[action Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/) pour traitement.
 1. L’action Adobe I/O Runtime appelle l’API du système PIM pour récupérer des métadonnées supplémentaires telles que le SKU, les informations sur le fournisseur ou d’autres détails.
-1. Les métadonnées supplémentaires extraites du PIM sont ensuite mises à jour dans AEM Assets à l’aide de l’[API de création Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) basée sur OpenAPI.
+1. Les métadonnées supplémentaires récupérées du PIM sont ensuite mises à jour dans AEM Assets à l’aide de l’[API de création Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/) basée sur OpenAPI.
 
 ## Prérequis
 
@@ -231,7 +227,7 @@ Consultez le fichier [WKND-Assets-PIM-Integration.zip](../assets/examples/assets
   module.exports = { updateAEMAssetMetadata };
   ```
 
-  Le fichier `.env` stocke les détails des informations d’identification OAuth de serveur à serveur du projet ADC. Ceux-ci sont transmis en tant que paramètres à l’action à l’aide du fichier `ext.config.yaml`. Consultez également les [fichiers de configuration du créateur d’applications](https://developer.adobe.com/app-builder/docs/guides/configuration/) pour la gestion des secrets et des paramètres d’action.
+  Le fichier `.env` stocke les détails des informations d’identification OAuth de serveur à serveur du projet ADC. Ceux-ci sont transmis en tant que paramètres à l’action à l’aide du fichier `ext.config.yaml`. Consultez également les [fichiers de configuration d’App Builder](https://developer.adobe.com/app-builder/docs/guides/configuration/) pour la gestion des secrets et des paramètres d’action.
 - Le dossier `src/dx-excshell-1/actions/model` contient les fichiers `aemAssetEvent.js` et `errors.js`, qui sont utilisés par l’action pour analyser l’événement reçu et gérer les erreurs, respectivement.
 - Le fichier `src/dx-excshell-1/actions/generic/index.js` utilise les modules mentionnés précédemment pour orchestrer la récupération et la mise à jour des métadonnées.
 
