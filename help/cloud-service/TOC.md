@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: c2dde214df0dabe8d856751a9d16afb1423e7450
+source-git-commit: 6313c25d9f660adc2a76fc8b3baf66ff081d2868
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 97%
+source-wordcount: '1460'
+ht-degree: 96%
 
 ---
 
@@ -32,8 +32,11 @@ ht-degree: 97%
    + [Vue d’ensemble](./ai/overview.md)
    + [Configuration et approvisionnement](./ai/setup.md)
    + [Assistant IA](./ai/ai-assistant.md)
-   + [Agents](./ai/agents-in-aem.md)
-   + [Dépannage du pipeline CI/CD à l’aide de l’agent de développement AEM](./ai/development-agent-troubleshoot-ci-cd-pipeline.md)
+   + Agents #{#agents}
+      + [Vue d’ensemble](./ai/agents/agents-in-aem.md)
+      + [Dépannage de l’agent de développement et de CI/CD](./ai/agents/development-agent-troubleshoot-ci-cd-pipeline.md)
+   + Serveurs MCP {#mcp-server}
+      + [Serveur MCP Cloud Manager](./ai/mcp/cloud-manager.md)
 + Intégrations Experience Cloud{#integrations}
    + [Intégrations](./integrations/experience-cloud.md)
    + [AEM Headless et Target](./integrations/target.md)

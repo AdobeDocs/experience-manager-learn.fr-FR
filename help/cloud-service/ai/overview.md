@@ -7,13 +7,13 @@ level: Beginner
 doc-type: Catalog
 duration: 30
 last-substantial-update: 2026-01-05T00:00:00Z
-source-git-commit: 146cb524c9ff10d6e4a836c0c14bdcabb553ef5d
+exl-id: cc255744-bb86-49cb-88ca-1266d28985a5
+source-git-commit: 6313c25d9f660adc2a76fc8b3baf66ff081d2868
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 19%
 
 ---
-
 
 # L’IA dans Experience Manager
 
@@ -31,7 +31,7 @@ Experience Manager as a Cloud Service fournit des fonctionnalités d’IA avanc�
     {title = AEM AI Assistant}
     {description = Learn how AI Assistant provides product knowledge and support in AEM.}
     {cta = Watch}
-* ./agents-in-aem.md
+* ./agents/agents-in-aem.md
     {title = Agents in AEM}
     {description = Discover how AI-powered agents automate tasks and enhance workflows in AEM.}
     {cta = Watch}
@@ -52,7 +52,7 @@ Experience Manager as a Cloud Service fournit des fonctionnalités d’IA avanc�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./setup.md" title="Configurer l’IA dans AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474068/?captions=fre_fr&format=jpeg&nocache=1771440888392" alt="Configurer l’IA dans AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3474066/?format=jpeg&nocache=1772461889360" alt="Configurer l’IA dans AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -75,7 +75,7 @@ Experience Manager as a Cloud Service fournit des fonctionnalités d’IA avanc�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./ai-assistant.md" title="Assistant IA AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475360/?captions=fre_fr&format=jpeg&nocache=1771440888441" alt="Assistant IA AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475357/?format=jpeg&nocache=1772461889318" alt="Assistant IA AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -95,8 +95,8 @@ Experience Manager as a Cloud Service fournit des fonctionnalités d’IA avanc�
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./agents-in-aem.md" title="Agents dans AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3478457/?captions=fre_fr&format=jpeg&nocache=1771440888404" alt="Agents dans AEM"
+                    <a href="./agents/agents-in-aem.md" title="Agents dans AEM" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3478455/?format=jpeg&nocache=1772461889348" alt="Agents dans AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -104,11 +104,11 @@ Experience Manager as a Cloud Service fournit des fonctionnalités d’IA avanc�
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./agents-in-aem.md" target="_blank" rel="referrer" title="Agents dans AEM"> Agents dans AEM </a>
+                        <a href="./agents/agents-in-aem.md" target="_blank" rel="referrer" title="Agents dans AEM"> Agents dans AEM </a>
                     </p>
                     <p class="is-size-6">Découvrez comment les agents optimisés par IA automatisent les tâches et améliorent les workflows dans AEM.</p>
                 </div>
-                <a href="./agents-in-aem.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>                 </a>
+                <a href="./agents/agents-in-aem.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Regarder</span>                 </a>
             </div>
         </div>
     </div>
@@ -117,7 +117,7 @@ Experience Manager as a Cloud Service fournit des fonctionnalités d’IA avanc�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../sites/generative-ai/generate-variations.md" title="Générer des variations" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3427946/?format=jpeg&nocache=1771440888429" alt="Générer des variations"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3427946/?format=jpeg&nocache=1772461889329" alt="Générer des variations"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -138,7 +138,7 @@ Experience Manager as a Cloud Service fournit des fonctionnalités d’IA avanc�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../assets/search-and-discovery/ai-search.md" title="Recherche IA" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3480007/?captions=fre_fr&format=jpeg&nocache=1771440888416" alt="Recherche IA"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3479989/?format=jpeg&nocache=1772461889339" alt="Recherche IA"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
