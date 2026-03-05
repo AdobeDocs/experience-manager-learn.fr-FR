@@ -40,7 +40,7 @@ Configurez le serveur Content MCP dans Cursor en procédant comme suit.
    ![Paramètres du curseur](../assets/content-mcp-server/cursor-settings.png)
 
 1. Dans la barre latérale gauche, cliquez sur **Outils et MCP** pour ouvrir ce panneau.
-   ![ Outils et MCP ](../assets/content-mcp-server/tools-mcp.png)
+   ![&#x200B; Outils et MCP &#x200B;](../assets/content-mcp-server/tools-mcp.png)
 
 1. Cliquez sur **Ajouter un MCP personnalisé** ou **Nouveau serveur MCP** pour ouvrir le `mcp.json`, puis collez cette configuration :
 
