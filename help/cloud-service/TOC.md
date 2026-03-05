@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: 6313c25d9f660adc2a76fc8b3baf66ff081d2868
+source-git-commit: c5f1c7f57181b1e9de6dd91aa2428f2fe1a04893
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1469'
 ht-degree: 96%
 
 ---
@@ -32,10 +32,12 @@ ht-degree: 96%
    + [Vue d’ensemble](./ai/overview.md)
    + [Configuration et approvisionnement](./ai/setup.md)
    + [Assistant IA](./ai/ai-assistant.md)
-   + Agents #{#agents}
+   + Agents {#agents}
       + [Vue d’ensemble](./ai/agents/agents-in-aem.md)
       + [Dépannage de l’agent de développement et de CI/CD](./ai/agents/development-agent-troubleshoot-ci-cd-pipeline.md)
-   + Serveurs MCP {#mcp-server}
+   + Serveurs MCP {#mcp-servers}
+      + [Vue d’ensemble](./ai/mcp/overview.md)
+      + [Accélérer les opérations de contenu AEM avec le serveur MCP](./ai/mcp/accelerate-content-operations-with-aem-mcp-server.md)
       + [Serveur MCP Cloud Manager](./ai/mcp/cloud-manager.md)
 + Intégrations Experience Cloud{#integrations}
    + [Intégrations](./integrations/experience-cloud.md)
