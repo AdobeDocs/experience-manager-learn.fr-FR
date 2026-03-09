@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager as a Cloud Service
 sub-product: Experience Manager as a Cloud Service
 version: Experience Manager as a Cloud Service
 team: TM
-source-git-commit: c5f1c7f57181b1e9de6dd91aa2428f2fe1a04893
+source-git-commit: bf6a6f467c3ded713552e0077b13c41fb45511cb
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 96%
+source-wordcount: '1481'
+ht-degree: 95%
 
 ---
 
@@ -31,7 +31,11 @@ ht-degree: 96%
 + AI {#ai}
    + [Vue d’ensemble](./ai/overview.md)
    + [Configuration et approvisionnement](./ai/setup.md)
-   + [Assistant IA](./ai/ai-assistant.md)
+   + Assistant IA {#ai-assistant}
+      + [Vue d’ensemble](./ai/ai-assistant/overview.md)
+      + [Qu’est-ce que l’assistant AI ?](./ai/ai-assistant/what-is-ai-assistant.md)
+      + [Pour qui est AI Assistant ?](./ai/ai-assistant/who-is-ai-assistant-for.md)
+      + [Fonctionnalités essentielles](./ai/ai-assistant/key-capabilities.md)
    + Agents {#agents}
       + [Vue d’ensemble](./ai/agents/agents-in-aem.md)
       + [Dépannage de l’agent de développement et de CI/CD](./ai/agents/development-agent-troubleshoot-ci-cd-pipeline.md)
