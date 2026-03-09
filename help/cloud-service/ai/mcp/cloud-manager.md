@@ -24,4 +24,4 @@ Le serveur MCP Cloud Manager permet aux développeurs AEM d’exécuter des pipe
 >
 > Le serveur Cloud Manager MCP est désormais en version bêta. Pour demander l’accès, envoyez un e-mail à [aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com) avec une description de votre cas d’utilisation.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480344/?captions=fre_fr&learn=on&enablevpops)
