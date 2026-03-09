@@ -20,4 +20,4 @@ ht-degree: 0%
 
 AI Assistant accélère les tâches AEM, fournit des réponses instantanées, guide l’utilisation des fonctionnalités, résout les problèmes et crée des tickets d’assistance, le tout à partir de l’interface d’Experience Manager. Il permet aux équipes de diffuser du contenu plus rapidement, de réduire les recherches de documentation et d’améliorer l’efficacité opérationnelle.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480859/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480872/?captions=fre_fr&learn=on&enablevpops)

@@ -55,7 +55,7 @@ Experience Manager as a Cloud Service fournit des fonctionnalités d’IA avanc�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="./ai-assistant/overview.md" title="Assistant IA AEM" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475357/?format=jpeg&nocache=1773082651757" alt="Assistant IA AEM"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475360/?captions=fre_fr&format=jpeg&nocache=1773082651757" alt="Assistant IA AEM"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -122,7 +122,7 @@ Experience Manager as a Cloud Service fournit des fonctionnalités d’IA avanc�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../assets/search-and-discovery/ai-search.md" title="Recherche IA" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3479989/?format=jpeg&nocache=1773082651746" alt="Recherche IA"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3480007/?captions=fre_fr&format=jpeg&nocache=1773082651746" alt="Recherche IA"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

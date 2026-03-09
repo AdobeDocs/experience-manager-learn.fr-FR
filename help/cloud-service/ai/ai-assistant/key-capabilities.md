@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Découvrez comment l’assistant AI accélère les workflows AEM en fournissant des conseils instantanés, des fragments de code et des étapes de dépannage. Cela réduit les efforts d’assistance et permet aux équipes de diffuser du contenu plus rapidement et avec une qualité supérieure.
 
->[!VIDEO](https://video.tv.adobe.com/v/3480858/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480861/?captions=fre_fr&learn=on&enablevpops)
