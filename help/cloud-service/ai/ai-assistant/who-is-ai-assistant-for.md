@@ -20,5 +20,5 @@ ht-degree: 0%
 
 L’assistant AI améliore la productivité pour divers rôles dans Adobe Experience Manager. Les auteurs de contenu rationalisent la création et la diffusion de contenu, les équipes techniques simplifient les workflows et le dépannage et les responsables prennent des décisions plus rapidement et en connaissance de cause. Grâce à des fonctionnalités telles que les conseils détaillés, les réponses instantanées et les invites préconfigurées, l&#39;assistant AI permet aux équipes de travailler efficacement et de garder une longueur d&#39;avance. Regardez pour découvrir comment AI Assistant prend en charge votre rôle et les objectifs de votre équipe.
 
->[!VIDEO](https://video.tv.adobe.com/v/3481163/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3481165/?captions=fre_fr&learn=on&enablevpops)
 
