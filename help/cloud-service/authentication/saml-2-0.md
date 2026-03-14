@@ -8,21 +8,19 @@ role: Developer
 level: Intermediate
 jira: KT-9351
 thumbnail: 343040.jpeg
-last-substantial-update: 2024-05-15T00:00:00Z
+last-substantial-update: 2025-03-11T00:00:00Z
 exl-id: 461dcdda-8797-4a37-a0c7-efa7b3f1e23e
 duration: 2200
-source-git-commit: 4a8d97d8d65f0ff9b256cb233db5dd6a70fd2a8a
+source-git-commit: 34f098de6bd15875e5534250b28c08bdb62e74fa
 workflow-type: tm+mt
-source-wordcount: '5215'
-ht-degree: 80%
+source-wordcount: '4423'
+ht-degree: 94%
 
 ---
 
-# Authentification SAML 2.0{#saml-2-0-authentication}
+# Authentification SAML 2.0
 
 Découvrez comment configurer et authentifier les utilisateurs finaux (et non les auteurs et autrices AEM) sur le fournisseur d’identité compatible avec SAML 2.0 de votre choix.
-
-## Quel SAML pour AEM as a Cloud Service ?
 
 L’intégration de SAML 2.0 au service de publication (ou de prévisualisation) AEM permet aux utilisateurs et utilisatrices finaux d’une expérience web basée sur AEM de s’authentifier auprès d’un fournisseur d’identité hors Adobe et d’accéder à AEM en tant qu’utilisateur autorisé et nommé.
 
@@ -56,7 +54,7 @@ Le flux type d’une intégration SAML de publication AEM est le suivant :
 
 ## Présentation de la configuration
 
->[!VIDEO](https://video.tv.adobe.com/v/3455331?captions=fre_fr&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343040?quality=12&learn=on)
 
 Cette vidéo décrit comment configurer l’intégration SAML 2.0 au service de publication AEM as a Cloud Service et utiliser Okta comme fournisseur d’identité.
 
@@ -68,10 +66,15 @@ Les éléments suivants sont requis lors de la configuration de l’authentifica
 + Un accès administratif AEM à l’environnement AEM as a Cloud Service.
 + Accès de l’administrateur ou de l’administratrice au fournisseur d’identité
 + Éventuellement, l’accès à une paire de clés publique/privée utilisée pour le chiffrement des payloads SAML.
-+ Pages AEM Sites (ou arborescences de pages), publiées sur l’instance de publication AEM et [protégées par des groupes d’utilisateurs fermés (CUG)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ Pages AEM Sites (ou arborescences de pages), publiées sur l’instance de publication AEM et [protégées par des groupes d’utilisateurs fermés (CUG)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 SAML 2.0 est uniquement pris en charge pour authentifier les utilisateurs et utilisatrices dans le service de publication ou de prévisualisation AEM. Pour gérer l’authentification du service de création AEM à l’aide d’un fournisseur d’identité, [intégrez le fournisseur d’identité à Adobe IMS](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html).
 
+### Prise en charge du service d’aperçu AEM as a Cloud Service
+
+SAML 2.0 est pris en charge sur AEM as a Cloud Service, y compris l’aperçu AEM. Toutefois, les configurations SAML dans AEM reposent sur des configurations OSGi et l’aperçu AEM et la publication AEM partagent la même résolution de mode d’exécution OSGi (`config.publish`). Par conséquent, vous ne pouvez pas créer de fichiers de configuration SAML distincts pour la Prévisualisation et la Publication.
+
+Utilisez plutôt des [valeurs de configuration spécifiques à un environnement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#environment-specific-configuration-values) dans vos configurations OSGi et [définissez les valeurs de variable appropriées](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#cloud-manager-api-format-for-setting-properties) pour les environnements de prévisualisation et de publication.
 
 ## Installer le certificat public du fournisseur d’identité sur AEM
 
@@ -458,7 +461,7 @@ Pour ce faire, ajoutez la propriété suivante au fichier de configuration OSGI�
 
 `/apps/example/osgiconfig/config.publish/com.adobe.granite.auth.saml.SamlAuthenticationHandler~example.cfg.json`
 
-Avec cette configuration, les utilisateurs et utilisatrices et les groupes sont créés en tant qu’[&#x200B; utilisateurs et utilisatrices externes d’Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Dans AEM, les utilisateurs et utilisatrices et les groupes externes ont une valeur par défaut `rep:principalName` composée des éléments `[user name];[idp]` ou `[group name];[idp]`.
+Avec cette configuration, les utilisateurs et utilisatrices et les groupes sont créés en tant qu’[ utilisateurs et utilisatrices externes d’Oak](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html). Dans AEM, les utilisateurs et utilisatrices et les groupes externes ont une valeur par défaut `rep:principalName` composée des éléments `[user name];[idp]` ou `[group name];[idp]`.
 Notez que les listes de contrôle d’accès (ACL) sont associées au PrincipalName des utilisateurs et utilisatrices ou des groupes.
 Lors du déploiement de cette configuration dans un déploiement existant où `identitySyncType` n’a pas été auparavant spécifié ou défini sur `default`, de nouveaux utilisateurs, utilisatrices et groupes sont créés et des listes de contrôle d’accès doivent être appliquées à ces nouveaux utilisateurs, utilisatrices et groupes. Notez que les groupes externes ne peuvent pas contenir d’utilisateurs et d’utilisatrices locaux. [Repoinit](https://sling.apache.org/documentation/bundles/repository-initialization.html) peut être utilisé pour créer des listes de contrôle d’accès pour les groupes externes SAML, même s’ils ne sont créés que lorsque l’utilisateur ou l’utilisatrice effectue une connexion.
 Pour éviter cette refactorisation sur les listes de contrôle d’accès, une [fonctionnalité de migration](#automatic-migration-to-dynamic-group-membership-for-existing-environments) standard a été mise en œuvre.
@@ -563,299 +566,11 @@ L’appartenance à un groupe pour les groupes externes est stockée dans le pro
 
 Pour migrer plusieurs configurations SAML, plusieurs configurations d’usine OSGi pour `com.adobe.granite.auth.saml.migration.SamlDynamicGroupMembershipMigration` doivent être créées, chacune spécifiant un `idpIdentifier` à migrer.
 
-## Hooks SAML personnalisés pour les cas d’utilisation avancés
+## Hooks de connexion SAML personnalisés
 
-Si le fournisseur d’identité ne peut pas envoyer les données de profil utilisateur et l’appartenance du groupe d’utilisateurs à l’assertion SAML, ou si les données doivent être transformées avant la synchronisation vers AEM, des hooks SAML personnalisés peuvent être implémentés pour étendre le processus d’authentification SAML. Les hooks SAML permettent de personnaliser l’affectation d’appartenance à un groupe, de modifier les attributs de profil utilisateur et d’ajouter une logique commerciale personnalisée pendant le flux d’authentification.
+Pour les cas d’utilisation avancés, AEM prend en charge le développement de hooks de connexion SAML personnalisés, qui sont des services OSGi mettant en œuvre l’interface `com.adobe.granite.auth.saml.SamlLoginHook`. Ces hooks sont exécutés pendant le processus d’authentification SAML et peuvent être utilisés pour implémenter une logique personnalisée, telle que l’approvisionnement supplémentaire des utilisateurs ou la journalisation personnalisée.
 
->[!NOTE]
->Les hooks SAML personnalisés sont pris en charge sur **AEM as a Cloud Service** et **AEM LTS**. Cette fonctionnalité n’est pas disponible sur les anciennes versions d’AEM.
-
-### Quand utiliser des hooks SAML personnalisés ?
-
-Les hooks SAML personnalisés sont utiles lorsqu’il est nécessaire de :
-
-+ Attribuez de manière dynamique l’appartenance à un groupe en fonction d’une logique commerciale personnalisée au-delà de ce qui est fourni dans les assertions SAML
-+ Transformation ou enrichissement des données de profil utilisateur avant leur synchronisation avec AEM
-+ Mapper des structures d’attributs SAML complexes aux propriétés d’utilisateur AEM
-+ Implémenter des règles d’autorisation personnalisées ou des affectations de groupe conditionnelles
-+ Ajout d’une journalisation ou d’un audit personnalisé lors de l’authentification SAML
-+ Intégration de systèmes externes pendant le processus d’authentification
-
-### Présentation de l’interface SamlHook
-
-L’interface `com.adobe.granite.auth.saml.spi.SamlHook` fournit deux méthodes de hook appelées à différentes étapes du processus d’authentification SAML :
-
-#### 1. postSamlValidationProcess
-
-Cette méthode est appelée **après** la validation de la réponse SAML, mais **avant** le lancement du processus de synchronisation des utilisateurs. Il s’agit de l’emplacement idéal pour modifier les données d’assertion SAML, telles que l’ajout ou la transformation d’attributs.
-
-```java
-public void postSamlValidationProcess(
-    HttpServletRequest request, 
-    Assertion assertion, 
-    Message samlResponse)
-```
-
-**Cas d’utilisation :**
-+ Ajoutez des appartenances de groupe supplémentaires à l’assertion
-+ Transformation des valeurs d’attribut avant leur synchronisation
-+ Enrichir l&#39;assertion avec des données provenant de sources externes
-+ Validation des règles métier personnalisées
-
-#### 2. postSyncUserProcess
-
-Cette méthode est appelée **une fois** le processus de synchronisation des utilisateurs terminé. Ce hook peut être utilisé pour effectuer des opérations supplémentaires après la création ou la mise à jour de l’utilisateur AEM.
-
-```java
-public void postSyncUserProcess(
-    HttpServletRequest request, 
-    HttpServletResponse response, 
-    Assertion assertion,
-    AuthenticationInfo authenticationInfo, 
-    String samlResponse)
-```
-
-**Cas d’utilisation :**
-+ Mettre à jour des propriétés de profil utilisateur supplémentaires non couvertes par la synchronisation standard
-+ Créer ou mettre à jour des ressources personnalisées liées aux utilisateurs dans AEM
-+ Déclencher des workflows ou des notifications après l’authentification de l’utilisateur
-+ Consigner les événements d’authentification personnalisés
-
-**Important :** pour modifier les propriétés de l’utilisateur dans le référentiel, l’implémentation du hook requiert les éléments suivants :
-+ Une référence `SlingRepository` injectée via `@Reference`
-+ Un [utilisateur de service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configuré avec les autorisations appropriées (configuré dans « Modification du service de mappage des utilisateurs du service Apache Sling »)
-+ Gestion appropriée des sessions avec des blocs try-catch-finish
-
-### Mise en œuvre d’un hook SAML personnalisé
-
-Les étapes suivantes décrivent comment créer et déployer un hook SAML personnalisé :
-
-#### Étape 1 : créer l’implémentation du hook SAML
-
-Créez une classe Java dans le projet AEM qui implémente l’interface `com.adobe.granite.auth.saml.spi.SamlHook` :
-
-```java
-package com.mycompany.aem.saml;
-
-import com.adobe.granite.auth.saml.spi.Assertion;
-import com.adobe.granite.auth.saml.spi.Attribute;
-import com.adobe.granite.auth.saml.spi.Message;
-import com.adobe.granite.auth.saml.spi.SamlHook;
-import org.apache.jackrabbit.api.JackrabbitSession;
-import org.apache.jackrabbit.api.security.user.Authorizable;
-import org.apache.jackrabbit.api.security.user.UserManager;
-import org.apache.sling.auth.core.spi.AuthenticationInfo;
-import org.apache.sling.jcr.api.SlingRepository;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.Reference;
-import org.osgi.service.component.annotations.ReferenceCardinality;
-import org.osgi.service.metatype.annotations.AttributeDefinition;
-import org.osgi.service.metatype.annotations.Designate;
-import org.osgi.service.metatype.annotations.ObjectClassDefinition;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import javax.annotation.Nonnull;
-import javax.jcr.RepositoryException;
-import javax.jcr.Session;
-import javax.jcr.ValueFactory;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-@Component
-@Designate(ocd = SampleImpl.Configuration.class, factory = true)
-public class SampleImpl implements SamlHook {
-    @ObjectClassDefinition(name = "Saml Sample Authentication Handler Hook Configuration")
-    @interface Configuration {
-        @AttributeDefinition(
-                name = "idpIdentifier",
-                description = "Identifier of SAML Idp. Match the idpIdentifier property's value configured in the SAML Authentication Handler OSGi factory configuration (com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>) this SAML hook will hook into"
-        )
-        String idpIdentifier();
-
-    }
-
-    private static final String SAMPLE_SERVICE_NAME = "sample-saml-service";
-    private static final String CUSTOM_LOGIN_COUNT = "customLoginCount";
-
-    private final Logger log = LoggerFactory.getLogger(getClass());
-
-    private SlingRepository repository;
-
-    @SuppressWarnings("UnusedDeclaration")
-    @Reference(name = "repository", cardinality = ReferenceCardinality.MANDATORY)
-    public void bindRepository(SlingRepository repository) {
-        this.repository = repository;
-    }
-
-    /**
-     * This method is called after the user sync process is completed.
-     * At this point, the user has already been synchronized in OAK (created or updated).
-     * Example: Track login count by adding custom attributes to the user in the repository
-     *
-     * @param request
-     * @param response
-     * @param assertion
-     * @param authenticationInfo
-     * @param samlResponse
-     */
-    @Override
-    public void postSyncUserProcess(HttpServletRequest request, HttpServletResponse response, Assertion assertion,
-                                    AuthenticationInfo authenticationInfo, String samlResponse) {
-        log.info("Custom Audit Log: user {} successfully logged in", authenticationInfo.getUser());
-
-        // This code executes AFTER the user has been synchronized in OAK
-        // The user object already exists in the repository at this point
-        Session serviceSession = null;
-        try {
-            // Get a service session - requires "sample-saml-service" to be configured as system user
-            // Configure in: "Apache Sling Service User Mapper Service Amendment"
-            serviceSession = repository.loginService(SAMPLE_SERVICE_NAME, null);
-
-            // Get the UserManager to work with users and groups
-            UserManager userManager = ((JackrabbitSession) serviceSession).getUserManager();
-
-            // Get the authorizable (user) that just logged in
-            Authorizable user = userManager.getAuthorizable(authenticationInfo.getUser());
-
-            if (user != null && !user.isGroup()) {
-                ValueFactory valueFactory = serviceSession.getValueFactory();
-
-                // Increment login count
-                long loginCount = 1;
-                if (user.hasProperty(CUSTOM_LOGIN_COUNT)) {
-                    loginCount = user.getProperty(CUSTOM_LOGIN_COUNT)[0].getLong() + 1;
-                }
-                user.setProperty(CUSTOM_LOGIN_COUNT, valueFactory.createValue(loginCount));
-                log.debug("Set {} property to {} for user {}", CUSTOM_LOGIN_COUNT, loginCount, user.getID());
-
-                // Save all changes to the repository
-                if (serviceSession.hasPendingChanges()) {
-                    serviceSession.save();
-                    log.debug("Successfully saved custom attributes for user {}", user.getID());
-                }
-            } else {
-                log.warn("User {} not found or is a group", authenticationInfo.getUser());
-            }
-
-        } catch (RepositoryException e) {
-            log.error("Error adding custom attributes to user repository for user: {}",
-                     authenticationInfo.getUser(), e);
-        } finally {
-            if (serviceSession != null) {
-                serviceSession.logout();
-            }
-        }
-    }
-
-    /**
-     * This method is called after the SAML response is validated but before the user sync process starts.
-     * We can modify the assertion here to add custom attributes.
-     *
-     * @param request
-     * @param assertion
-     * @param samlResponse
-     */
-    @Override
-    public void postSamlValidationProcess(@Nonnull HttpServletRequest request, @Nonnull Assertion assertion, @Nonnull Message samlResponse) {
-        // Add the attribute "memberOf" with value "sample-group" to the assertion
-        // In this example "memberOf" is a multi-valued attribute that contains the groups from the Saml Idp
-        log.debug("Inside postSamlValidationProcess");
-        Attribute groupsAttr = assertion.getAttributes().get("groups");
-        if (groupsAttr != null) {
-            groupsAttr.addAttributeValue("sample-group-from-hook");
-        } else {
-            groupsAttr = new Attribute();
-            groupsAttr.setName("groups");
-            groupsAttr.addAttributeValue("sample-group-from-hook");
-            assertion.getAttributes().put("groups", groupsAttr);
-        }
-    }
-
-}
-```
-
-#### Étape 2 : configurer le hook SAML
-
-Le hook SAML utilise la configuration OSGi pour spécifier à quel fournisseur d’identité il doit s’appliquer. Créez un fichier de configuration OSGi dans le projet sous :
-
-`/ui.config/src/main/content/jcr_root/wknd-examples/osgiconfig/config.publish/com.mycompany.aem.saml.CustomSamlHook~okta.cfg.json`
-
-```json
-{
-  "idpIdentifier": "$[env:SAML_IDP_ID;default=http://www.okta.com/exk4z55r44Jz9C6am5d7]",
-  "service.ranking": 100
-}
-```
-
-Le `idpIdentifier` doit correspondre à la valeur `idpIdentifier` configurée dans la configuration d’usine OSGi du gestionnaire d’authentification SAML correspondant (PID : `com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>.cfg.json`). Cette correspondance est essentielle : le hook SAML ne sera appelé que pour l’instance du gestionnaire d’authentification SAML qui a la même valeur `idpIdentifier`. Le gestionnaire d’authentification SAML est une configuration d’usine, ce qui signifie que vous pouvez avoir plusieurs instances (par exemple, `com.adobe.granite.auth.saml.SamlAuthenticationHandler~okta.cfg.json`, `com.adobe.granite.auth.saml.SamlAuthenticationHandler~azure.cfg.json`) et chaque hook est lié à un gestionnaire spécifique via le `idpIdentifier`. La propriété `service.ranking` contrôle l’ordre d’exécution lorsque plusieurs hooks sont configurés (les valeurs les plus élevées sont exécutées en premier).
-
-#### Étape 3 : ajouter des dépendances Maven
-
-Ajoutez la dépendance SPI SAML requise au `pom.xml` du projet principal AEM Maven.
-
-**Pour les projets AEM as a Cloud Service**, utilisez la dépendance API SDK AEM qui inclut les interfaces SAML :
-
-```xml
-<dependency>
-    <groupId>com.adobe.aem</groupId>
-    <artifactId>aem-sdk-api</artifactId>
-    <version>${aem.sdk.api}</version>
-    <scope>provided</scope>
-</dependency>
-```
-
-L’artefact `aem-sdk-api` contient toutes les interfaces SAML Granite Adobe nécessaires, y compris `com.adobe.granite.auth.saml.spi.SamlHook`.
-
-#### Étape 4 : configurer l’utilisateur du service (si vous modifiez le référentiel)
-
-Si le hook SAML doit modifier les propriétés de l’utilisateur dans le référentiel (comme illustré dans l’exemple `postSyncUserProcess`), un [utilisateur du service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) doit être configuré :
-
-1. Créez un mappage utilisateur de service dans le projet à l’adresse `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~saml.cfg.json` :
-
-```json
-{
-  "user.mapping": [
-    "com.mycompany.aem.core:sample-saml-service=saml-hook-service"
-  ]
-}
-```
-
-1. Créez un script repoinit pour définir l’utilisateur du service et les autorisations au `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.jcr.repoinit.RepositoryInitializer~saml.cfg.json` :
-
-```
-create service user saml-hook-service with path system/saml
-
-set ACL for saml-hook-service
-    allow jcr:read,rep:write,rep:userManagement on /home/users
-end
-```
-
-Cela permet à l’utilisateur du service de lire et de modifier les propriétés de l’utilisateur dans le référentiel.
-
-#### Étape 5 : déploiement sur AEM
-
-Déployez le hook SAML personnalisé vers AEM as a Cloud Service :
-
-1. Créer le projet AEM
-1. Validez le code dans le référentiel Git de Cloud Manager.
-1. Déployer à l’aide d’un pipeline de déploiement Full Stack
-1. Le hook SAML est automatiquement activé lorsqu’un utilisateur s’authentifie via SAML
-
-
-### Considérations importantes
-
-+ **Correspondance d’identifiants IDP** : le `idpIdentifier` configuré dans le hook SAML doit correspondre exactement au `idpIdentifier` dans la configuration d’usine du gestionnaire d’authentification SAML (`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`)
-+ **Noms d’attributs** : assurez-vous que les noms d’attributs référencés dans le hook (`groupMembership`, par exemple) correspondent aux attributs configurés dans le gestionnaire d’authentification SAML
-+ **Performances** : allégez les implémentations de hook car elles sont exécutées lors de chaque authentification SAML
-+ **Gestion des erreurs** : les implémentations de hook SAML doivent être déclenchées en cas d`com.adobe.granite.auth.saml.spi.SamlHookException`erreurs critiques qui doivent faire échouer l’authentification. Le gestionnaire d’authentification SAML interceptera ces exceptions et renverra des `AuthenticationInfo.FAIL_AUTH`. Pour les opérations de référentiel, capturez toujours les `RepositoryException` et consignez les erreurs de manière appropriée. Utilisez des blocs try-catch-finish pour garantir un nettoyage correct des ressources
-+ **Tests** : testez minutieusement les hooks personnalisés dans les environnements inférieurs avant de les déployer en production
-+ **Hooks multiples** : plusieurs implémentations de hook SAML peuvent être configurées ; tous les hooks correspondants sont exécutés. Utilisez la propriété `service.ranking` dans le composant OSGi pour contrôler l’ordre d’exécution (les valeurs de rang supérieur s’exécutent en premier). Pour réutiliser un hook SAML sur plusieurs configurations d’usine du gestionnaire d’authentification SAML (`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`), créez plusieurs configurations de hook (configurations d’usine OSGi), chacune avec un `idpIdentifier` différent correspondant au gestionnaire d’authentification SAML correspondant
-+ **Sécurité** : validez et assainissez toutes les données des assertions SAML avant de les utiliser dans la logique commerciale.
-+ **Accès au référentiel** : lors de la modification des propriétés utilisateur dans `postSyncUserProcess`, utilisez toujours un [utilisateur de service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) avec les autorisations appropriées plutôt que des sessions administratives
-+ **Autorisations d’utilisateur du service** : accordez les autorisations minimales requises à l’[utilisateur du service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (par exemple, uniquement `jcr:read` et `rep:write` sur `/home/users`, et non les droits d’administrateur complets)
-+ **Gestion des sessions** : utilisez toujours des blocs try-catch-finish pour vous assurer que les sessions du référentiel sont correctement fermées, même si des exceptions se produisent
-+ **Synchronisation de l’utilisateur** : le hook `postSyncUserProcess` s’exécute après la synchronisation de l’utilisateur avec OAK. L’objet utilisateur existe donc bien dans le référentiel à ce stade
+Pour plus d’informations sur le développement et l’enregistrement d’un hook de connexion SAML personnalisé, reportez-vous à la documentation [Custom SAML Login Hook](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/custom-saml-login-hook.html).
 
 ## Déployer la configuration SAML
 
