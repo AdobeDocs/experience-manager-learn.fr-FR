@@ -66,7 +66,7 @@ Les éléments suivants sont requis lors de la configuration de l’authentifica
 + Un accès administratif AEM à l’environnement AEM as a Cloud Service.
 + Accès de l’administrateur ou de l’administratrice au fournisseur d’identité
 + Éventuellement, l’accès à une paire de clés publique/privée utilisée pour le chiffrement des payloads SAML.
-+ Pages AEM Sites (ou arborescences de pages), publiées sur l’instance de publication AEM et [protégées par des groupes d’utilisateurs fermés (CUG)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
++ Pages AEM Sites (ou arborescences de pages), publiées sur l’instance de publication AEM et [protégées par des groupes d’utilisateurs fermés (CUG)](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/page-properties#permissions)
 
 SAML 2.0 est uniquement pris en charge pour authentifier les utilisateurs et utilisatrices dans le service de publication ou de prévisualisation AEM. Pour gérer l’authentification du service de création AEM à l’aide d’un fournisseur d’identité, [intégrez le fournisseur d’identité à Adobe IMS](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html).
 
@@ -74,7 +74,7 @@ SAML 2.0 est uniquement pris en charge pour authentifier les utilisateurs et ut
 
 SAML 2.0 est pris en charge sur AEM as a Cloud Service, y compris l’aperçu AEM. Toutefois, les configurations SAML dans AEM reposent sur des configurations OSGi et l’aperçu AEM et la publication AEM partagent la même résolution de mode d’exécution OSGi (`config.publish`). Par conséquent, vous ne pouvez pas créer de fichiers de configuration SAML distincts pour la Prévisualisation et la Publication.
 
-Utilisez plutôt des [valeurs de configuration spécifiques à un environnement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#environment-specific-configuration-values) dans vos configurations OSGi et [définissez les valeurs de variable appropriées](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#cloud-manager-api-format-for-setting-properties) pour les environnements de prévisualisation et de publication.
+Utilisez plutôt des [valeurs de configuration spécifiques à un environnement](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#environment-specific-configuration-values) dans vos configurations OSGi et [définissez les valeurs de variable appropriées](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi#cloud-manager-api-format-for-setting-properties) pour les environnements de prévisualisation et de publication.
 
 ## Installer le certificat public du fournisseur d’identité sur AEM
 

@@ -81,7 +81,7 @@ public void postSyncUserProcess(
 **Important :** pour modifier les propriétés de l’utilisateur dans le référentiel, l’implémentation du hook requiert les éléments suivants :
 
 + Une référence `SlingRepository` injectée via `@Reference`
-+ Un [utilisateur de service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configuré avec les autorisations appropriées (configuré dans « Apache Sling Service User Mapper Service Amendment »)
++ Un [utilisateur de service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) configuré avec les autorisations appropriées (configuré dans « Apache Sling Service User Mapper Service Amendment »)
 + Gestion appropriée des sessions avec des blocs try-catch-finish
 
 ## Implémenter un hook SAML personnalisé
@@ -267,7 +267,7 @@ L’artefact `aem-sdk-api` contient toutes les interfaces SAML Granite Adobe né
 
 ### Configurer l’utilisateur du service (facultatif)
 
-Si le hook SAML doit modifier le contenu du référentiel AEM JCR, tel que les propriétés de l&#39;utilisateur (comme indiqué dans l&#39;exemple `postSyncUserProcess`), un [utilisateur de service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) doit être configuré :
+Si le hook SAML doit modifier le contenu du référentiel AEM JCR, tel que les propriétés de l&#39;utilisateur (comme indiqué dans l&#39;exemple `postSyncUserProcess`), un [utilisateur de service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) doit être configuré :
 
 1. Créer un mappage d&#39;utilisateurs de service dans le projet à `/ui.config/src/main/content/jcr_root/apps/myproject/osgiconfig/config/org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended~saml.cfg.json` :
 
@@ -310,7 +310,7 @@ Déployez le hook SAML personnalisé vers AEM as a Cloud Service :
 + **Tests** : testez minutieusement les hooks personnalisés dans les environnements inférieurs avant de les déployer en production
 + **Hooks multiples** : plusieurs implémentations de hook SAML peuvent être configurées ; tous les hooks correspondants sont exécutés. Utilisez la propriété `service.ranking` dans le composant OSGi pour contrôler l’ordre d’exécution (les valeurs de rang supérieur s’exécutent en premier). Pour réutiliser un hook SAML sur plusieurs configurations d’usine du gestionnaire d’authentification SAML (`com.adobe.granite.auth.saml.SamlAuthenticationHandler~<unique-id>`), créez plusieurs configurations de hook (configurations d’usine OSGi), chacune avec un `idpIdentifier` différent correspondant au gestionnaire d’authentification SAML correspondant
 + **Sécurité** : validez et assainissez toutes les données des assertions SAML avant de les utiliser dans la logique commerciale.
-+ **Accès au référentiel** : lors de la modification des propriétés utilisateur dans `postSyncUserProcess`, utilisez toujours un [utilisateur de service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) avec les autorisations appropriées plutôt que des sessions administratives
-+ **Autorisations utilisateur de service** : accordez les autorisations minimales requises à l&#39;[utilisateur de service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (par exemple, uniquement `jcr:read` et `rep:write` sur `/home/users`, pas les droits d&#39;administrateur complets)
++ **Accès au référentiel** : lors de la modification des propriétés utilisateur dans `postSyncUserProcess`, utilisez toujours un [utilisateur de service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) avec les autorisations appropriées plutôt que des sessions administratives
++ **Autorisations utilisateur de service** : accordez les autorisations minimales requises à l&#39;[utilisateur de service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/developing/advanced/service-users) (par exemple, uniquement `jcr:read` et `rep:write` sur `/home/users`, pas les droits d&#39;administrateur complets)
 + **Gestion des sessions** : utilisez toujours des blocs try-catch-finally pour vous assurer que les sessions du référentiel sont correctement fermées, même en cas d&#39;exception
 + **Synchronisation de l&#39;utilisateur** : le hook `postSyncUserProcess` s&#39;exécute après la synchronisation de l&#39;utilisateur sur OAK. L&#39;objet utilisateur existe donc assurément dans le référentiel à ce stade
